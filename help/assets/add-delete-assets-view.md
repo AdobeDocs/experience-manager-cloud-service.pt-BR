@@ -2,10 +2,9 @@
 title: Fazer upload de ativos para o repositório
 description: Faça upload de ativos para o [!DNL Assets view], visualize o status dos uploads e resolva problemas de upload.
 role: User
-exl-id: a85a4455-4456-48af-aee9-f05300677605
-source-git-commit: df82681338f8ca1a34df6118cbddc6642aa8d4b5
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '825'
 ht-degree: 91%
 
 ---
@@ -82,7 +81,7 @@ Se você tentar fazer upload de ativos duplicados, os ativos não serão carrega
 
 >[!TIP]
 >
->Você pode fazer upload de ativos para o repositório DAM diretamente dos aplicativos de desktop da [!DNL Creative Cloud]. 
+>Você pode fazer upload de ativos para o repositório DAM diretamente de dentro do [!DNL Creative Cloud] aplicativos de desktop.
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -103,7 +102,7 @@ Os usuários podem excluir ativos ou pastas individuais que não são mais neces
 
 * [Assista a um vídeo sobre upload de ativos na visualização de Ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=pt-BR)
 
-* Forneça feedback sobre o produto usando o [!UICONTROL Feedback] opção disponível na interface de exibição do Assets
+* Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 

@@ -2,11 +2,10 @@
 title: Saiba como pesquisar e descobrir ativos no [!DNL Assets view]?
 description: Saiba como pesquisar e descobrir ativos na visualização do AEM Assets. A eficiente funcionalidade de pesquisa permite descobrir rapidamente o ativo apropriado e ajuda a melhorar a velocidade do conteúdo.
 role: User
-exl-id: be9597a3-056c-436c-a09e-15a03567c85a
-source-git-commit: 7b815a83e4e93c024403fab02f9a9b4ba8685007
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '1543'
-ht-degree: 60%
+ht-degree: 91%
 
 ---
 
@@ -120,37 +119,37 @@ Para remover filtros personalizados:
 
 1. Clique em **[!UICONTROL Confirmar]** para remover os filtros da interface.
 
-## Pesquisar ativos usando [!DNL Adobe Firefly] {#search-firefly}
+## Pesquisar ativos usando o [!DNL Adobe Firefly] {#search-firefly}
 
-Pesquise por um ativo que não está disponível em nenhuma das pastas de ativos usando o [!DNL Adobe Firefly] recurso de pesquisa de ativo no [!DNL Experience Manager Assets]. Isso permite gerar ativos em tempo real com eficiência que não estão armazenados nas pastas de ativos.
+Você pode pesquisar um ativo que não está disponível em nenhuma das pastas de ativos utilizando o recurso de pesquisa de ativos do [!DNL Adobe Firefly] no [!DNL Experience Manager Assets]. Isso permite gerar ativos com eficiência em tempo real que não estão armazenados nas pastas de ativos.
 
 ### Antes de começar
 
-Você deve ter um ativo [!DNL Adobe Express] assinatura.
+Você precisa ter uma assinatura do [!DNL Adobe Express] ativa.
 
-### Gerar ativos
+### Geração de ativos
 
 Para gerar novos ativos usando o [!DNL Adobe Firefly]:
 
-1. Navegue até a [!DNL AEM Assets] espaço de trabalho.
+1. Navegue até o espaço de trabalho do [!DNL AEM Assets].
 1. Insira o nome do ativo na barra de pesquisa na parte superior da página.<br>
-Por exemplo, você pode pesquisar um ativo usando a palavra-chave `Bugatti Type 57`. Ao pesquisar pelo ativo, nenhum resultado é encontrado porque o ativo não está presente em nenhuma das pastas de ativos.
-1. Digite o nome do ativo na barra de pesquisa no meio da página e clique em **[!UICONTROL Gerar]**.
-   ![integração de Firefly](assets/firefly-integration.jpg)
-   *Figura: Nenhum resultado encontrado para Bugatti Type 57 na pasta de ativos.* <br>
+Por exemplo, você pode pesquisar um ativo usando a palavra-chave `Bugatti Type 57`. Ao pesquisar o ativo, nenhum resultado é encontrado porque o ativo não existe em nenhuma das pastas de ativos.
+1. Digite o nome do ativo na barra de pesquisa no meio da página e clique em **[!UICONTROL Gerar]**.
+   ![Integração do Firefly](assets/firefly-integration.jpg)
+   *Figura: nenhum resultado encontrado para Bugatti Type 57 na pasta de ativos.* <br>
 Os novos ativos foram gerados com sucesso.
-   ![integração de Firefly](assets/bugatti-type-57.jpg)
-   *Figura: ativos de referência pesquisados usando [!DNL Adobe Firefly] recurso de pesquisa de ativos.* <br>
-Você pode fazer upload desses ativos para sua pasta preferida para facilitar o acesso.
+   ![Integração do Firefly](assets/bugatti-type-57.jpg)
+   *Figura: ativos de referência buscados usando o recurso de pesquisa de ativos do [!DNL Adobe Firefly].* <br>
+Você pode fazer upload desses ativos para a pasta de sua preferência para facilitar o acesso.
 
-### Fazer upload de ativos
+### Upload de ativos
 
 Para fazer upload do ativo gerado para o repositório de ativos:
 
-1. Clique em **[!UICONTROL Carregar]**.
-1. Selecione a pasta de ativos na qual você precisa fazer upload do ativo e clique em **[!UICONTROL Selecionar pasta]**.
-   ![Fazer upload de ativo](assets/upload-asset-firefly.jpg)
-   *Figura: selecione a pasta na qual carregar o ativo.*
+1. Clique em **[!UICONTROL Fazer upload]**.
+1. Selecione a pasta de ativos para a qual você deseja fazer upload do ativo e clique em **[!UICONTROL Selecionar pasta]**.
+   ![Faça o upload do ativo](assets/upload-asset-firefly.jpg)
+   *Figura: selecione a pasta para fazer upload do ativo.*
 
 ## Pesquisas salvas {#saved-search}
 
@@ -177,7 +176,7 @@ When userA is searching and userB add an asset that matches search results, will
 
 Você pode selecionar os ativos exibidos nos resultados da pesquisa e realizar as seguintes ações:
 
-* **Localizar Imagem Semelhante**: encontre ativos de imagem semelhantes na interface do Assets com base nos metadados e nas tags inteligentes.
+* **Localizar imagem semelhante**: encontre ativos de imagem semelhantes na interface do Assets com base nos metadados e nas tags inteligentes.
 
 * **Detalhes**: visualizar e editar as propriedades do ativo.
 
@@ -189,7 +188,7 @@ Você pode selecionar os ativos exibidos nos resultados da pesquisa e realizar a
 
 * **Abrir no Adobe Express**: edite uma imagem no Adobe Express integrado na tela do Experience Manager Assets.
 
-* **Editar**: edite a imagem usando o Adobe Express.
+* **Editar**: editar a imagem usando o Adobe Express.
 
 * **Compartilhar link**: [compartilhar links](share-links-for-assets-view.md) para um ativo com outros usuários, para que possam acessá-lo e baixá-lo.
 
@@ -201,44 +200,44 @@ Você pode selecionar os ativos exibidos nos resultados da pesquisa e realizar a
 
 * **Renomear**: renomear um ativo.
 
-* **Copiar para bibliotecas**: adicione um ativo à Biblioteca.
+* **Copiar para as bibliotecas**: adicionar um ativo à biblioteca.
 
 * **Atribuir tarefas**: atribuir tarefas de um ativo a usuários.
 
 * **Observar**: [monitorar as operações](manage-notifications-assets-view.md) executadas em um ativo.
 
-## Configuração da primeira página inicial de pesquisa {#configuring-search-first-homepage}
+## Configuração da primeira página de pesquisa {#configuring-search-first-homepage}
 
-O Experience Manager Assets permite selecionar a landing page padrão da sua organização. Ao usar a Pesquisa primeiro como página inicial, você também tem opções para personalizar a identidade visual da página, configurando as imagens de plano de fundo e logotipo que correspondem à sua marca.
+O Experience Manager Assets permite selecionar a landing page padrão da sua organização. Ao usar a opção “Pesquisar primeiro” como a página inicial, é possível personalizar a identidade visual da página, através da configuração das imagens de fundo e do logotipo que corresponde à sua marca.
 
-Para configurar a primeira home page de pesquisa, execute as etapas abaixo:
+Para configurar a primeira página de pesquisa, execute as etapas abaixo:
 
-1. Navegue até **[!UICONTROL Configurações]** > **[!UICONTROL Configurações gerais]**.
-1. Selecionar **[!UICONTROL Pesquisar primeiro]**. Ele abre ainda mais a primeira configuração relacionada à pesquisa. Você pode definir [alinhamento](#setting-alignment-search-bar) ou [definir imagem de plano de fundo e logotipo](#setting-background-image-and-logo) da sua página inicial.
+1. Navegue até **[!UICONTROL Configurações]** >; **[!UICONTROL Configurações gerais]**.
+1. Selecione **[!UICONTROL Pesquisar primeiro]**. Isso disponibiliza ainda mais configurações relacionadas à primeira página de pesquisa. Você pode configurar o [alinhamento](#setting-alignment-search-bar) ou [definir a imagem de fundo e o logotipo](#setting-background-image-and-logo) da sua página inicial.
 
-### Definindo alinhamento da barra de pesquisa {#setting-alignment-search-bar}
+### Configuração do alinhamento da barra de pesquisa {#setting-alignment-search-bar}
 
-[!DNL Assets view] permite alterar o alinhamento da barra de pesquisa. Você pode fazer a barra de pesquisa aparecer no centro ou na parte superior. Selecione o alinhamento apropriado e clique em **[!UICONTROL Salvar]**.
+O [!DNL Assets view] permite alterar o alinhamento da barra de pesquisa. Você pode fazer a barra de pesquisa aparecer no centro ou na parte superior. Selecione o alinhamento apropriado e clique em **[!UICONTROL Salvar]**.
 
-![Pesquisar alinhamento da primeira página inicial](assets/search-first-alignment.png)
+![Alinhamento da primeira página de pesquisa](assets/search-first-alignment.png)
 
 ### Configuração da imagem de fundo e logotipo da página inicial {#setting-background-image-and-logo}
 
-Você pode adicionar o logotipo da marca e a imagem de fundo à sua primeira página inicial de pesquisa. Execute as seguintes etapas:
+Você pode adicionar o logotipo da marca e a imagem de fundo à sua primeira página de pesquisa. Execute as seguintes etapas:
 
-1. Navegue até **[!UICONTROL Imagem de plano de fundo e logotipo]** seção em **[!UICONTROL Página inicial]**.
-1. Clique em **[!UICONTROL Substituir]** para navegar por imagens do repositório de ativos existente.
-1. Clique em **[!UICONTROL Salvar]**. [Visualizar](#preview-configured-homepage) as alterações para revisar as modificações.
+1. Navegue até a seção **[!UICONTROL Imagem de fundo e logotipo]** na **[!UICONTROL Página inicial]**.
+1. Clique em **[!UICONTROL Substituir]** para procurar imagens do repositório de ativos existente.
+1. Clique em **[!UICONTROL Salvar]**. [Visualize](#preview-configured-homepage) as alterações para revisar as modificações.
 
-### Visualizar página inicial configurada {#preview-configured-homepage}
+### Visualizar a página inicial configurada {#preview-configured-homepage}
 
-Você pode visualizar para verificar o layout e a formatação da primeira página inicial de pesquisa. Usar **[!UICONTROL Visualizar]**, você pode corrigir o layout ou fazer modificações de acordo com o requisito. Para visualizar a home page configurada, execute as etapas abaixo:
+Você pode visualizar o layout e a formatação da primeira página de pesquisa. Com a opção **[!UICONTROL Visualizar]**, é possível corrigir o layout ou fazer as modificações necessárias. Para visualizar a página inicial configurada, execute as etapas abaixo:
 
 1. Clique em **[!UICONTROL Configurações gerais]** e selecione **[!UICONTROL Pesquisar primeiro]**.
-1. Navegue até **[!UICONTROL Personalizar a primeira página inicial de pesquisa]** e clique em **[!UICONTROL Visualizar]**. Alternar através **[!UICONTROL Tema escuro]** botão para visualizar a página inicial em um tema escuro ou claro.
-1. Clique em **[!UICONTROL Fechar]** para fechar a tela de visualização.
+1. Navegue até **[!UICONTROL Personalizar a primeira página de pesquisa]** e clique em **[!UICONTROL Visualizar]**. Alterne o botão **[!UICONTROL Tema escuro]** para visualizar a página inicial em um tema escuro ou claro.
+1. Clique em **[!UICONTROL Fechar]** para fechar a janela de visualização.
 
-   ![Pesquisar primeira visualização de página inicial](assets/search-first-preview.gif)
+   ![Visualização da primeira página de pesquisa](assets/search-first-preview.gif)
 
 ## Próximas etapas {#next-steps}
 

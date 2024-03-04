@@ -2,11 +2,10 @@
 title: "Interface do [!DNL Assets view] "
 description: Entenda a interface e a navegação no [!DNL Assets view].
 role: User
-exl-id: 534a8084-88f7-410e-b872-719e47e62b10
-source-git-commit: 39166f59eb773a149ba28be2b34d0c1aa6c831b4
+source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 63%
+ht-degree: 89%
 
 ---
 
@@ -24,7 +23,7 @@ Ao fazer logon no [!DNL Assets view], você verá a seguinte interface.
 
 ![[!DNL Assets view]Interface](assets/assets-view-interface.png)
 
-**A**: barra lateral esquerda para navegar pelo repositório e fornecer acesso a algumas outras opções **B**: exibir ou recolher a barra lateral esquerda para aumentar a área de visualização de ativos **C**: filtrar resultados de pesquisa **D**: seleciona todo o conteúdo da pasta selecionada **E**: opções para classificar ativos **F**: Caixa de pesquisa **G**: carregue ou arraste e solte arquivos usando `Add Assets` botão **H**: criar uma nova pasta **I**: alternar entre exibições diferentes
+**A**: barra lateral esquerda para navegar pelo repositório e acessar algumas outras opções **B**: exibir ou recolher a barra lateral esquerda para aumentar a área de visualização de ativos **C**: filtrar os resultados de uma pesquisa **D**: selecionar todo o conteúdo da pasta selecionada **E**: opções de ordenação de ativos **F**: caixa de pesquisa **G**: upload ou arrastar e soltar arquivos com o botão `Add Assets` **H**: criar uma nova pasta **I**: alternar entre diferentes visualizações
 
 <!-- TBD: Need an embedded video here with narration. It has to be hosted on MPC to be embeddable. -->
 
@@ -39,7 +38,7 @@ Você pode navegar pelas pastas da interface do usuário principal ou da barra l
 * [Coleções](/help/assets/manage-collections-assets-view.md): uma coleção é um conjunto de ativos, pastas ou outras coleções na exibição do Adobe Experience Manager Assets. Use coleções para compartilhar ativos entre usuários. Diferente de pastas, uma coleção pode incluir ativos de locais diferentes. Você pode compartilhar várias coleções com um usuário. Cada coleção contém referências a ativos. A integridade referencial dos ativos é mantida entre as coleções.
 
 * [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): no [!DNL Assets view], você pode visualizar insights em tempo real no seu painel. A visualização do Assets permite visualizar dados do seu ambiente da visualização do Assets em tempo real, por meio do painel Insights. Você pode visualizar métricas de evento em tempo real dos últimos 30 dias ou dos últimos 12 meses.
-* **Lixeira**: lista os ativos excluídos da pasta raiz **[!UICONTROL Ativos]**. Você pode selecionar um ativo na pasta Lixeira para restaurá-lo ao seu local original ou excluí-lo permanentemente. Você pode especificar uma palavra-chave ou aplicar filtros, como status do ativo, tipo de arquivo, tipo MIME, tamanho da imagem, criação de ativos, modificação e datas de expiração, bem como filtrar por ativos descartados pelo usuário atual. Também é possível aplicar filtros personalizados para pesquisar ativos apropriados na pasta Lixeira. Para obter mais informações sobre o uso de filtros padrão e personalizados, consulte como [pesquisar ativos na exibição Ativos](/help/assets/search-assets-view.md).
+* **Lixeira**: lista os ativos excluídos da pasta raiz **[!UICONTROL Ativos]**. É possível selecionar um ativo na pasta “Lixeira” e restaurá-lo para o local de origem ou excluí-lo permanentemente. Você pode especificar uma palavra-chave ou aplicar filtros, como status do ativo, tipo de arquivo, tipo de MIME, tamanho da imagem, criação de ativos, datas de modificação e vencimento, bem como filtrar por ativos descartados pelo usuário atual. Também é possível aplicar filtros personalizados para pesquisar ativos apropriados na pasta Lixeira. Para obter mais informações sobre o uso de filtros padrão e personalizados, consulte como [pesquisar ativos na exibição Ativos](/help/assets/search-assets-view.md).
 * **Configurações**: é possível configurar várias opções de exibição de Ativos usando **Configurações**, como Formulários de metadados, Relatórios e Gerenciamento de taxonomia.
 
 <!-- TBD: Not sure if we want to publish these right now. CC Libs are beta as per Greg.
@@ -74,7 +73,7 @@ Para visualizar um ativo, selecione-o e clique em [!UICONTROL Detalhes] ![ícone
 
 ![Visualizar um ativo](assets/preview-asset-2.png)
 
-**A**: retornar à pasta atual ou ao resultado da pesquisa atual no repositório **B**: nome e formato do arquivo que você está visualizando **C**: Atribuir tarefas **D**: Metadados avançados **E**: palavras-chave e tags inteligentes **F**: comentar e anotar **G**: exibir tarefas relacionadas ao ativo selecionado **H**: exibir e gerenciar versões **I**: exibir representações da imagem **J**: Editar imagem **K**: Metadados básicos **L**: Metadados avançados **M**: palavras-chave e tags inteligentes **N**: Visualize mais de perto. Zoom, tela cheia e outras opções **O**: Prosseguir para o ativo anterior ou seguinte na pasta atual sem voltar para a pasta
+**A**: retornar à pasta atual ou ao resultado da pesquisa atual no repositório **B**: nome e formato do arquivo visualizado **C**: atribuir tarefas **D**: metadados avançados **E**: palavras-chave e tags inteligentes **F**: comentários e anotações **G**: visualizar tarefas relacionadas ao ativo selecionado **H**: visualizar e gerenciar versões **I**: visualizar versões da imagem **J**: editar imagem **K**: metadados básicos **L**: metadados avançados **M**: palavras-chave e tags inteligentes **N**: visualizar mais detalhadamente. Zoom, tela cheia e outras opções **O**: prosseguir para o ativo anterior ou passar para o próximo na pasta atual sem voltar à pasta
 
 Você também pode visualizar vídeos.
 
