@@ -4,9 +4,9 @@ description: O serviço de entrega de borda da AEM Forms foi criado para oferece
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+source-git-commit: d63d0f1152d0a23623c197924a44bc6b1e69fb42
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '1120'
 ht-degree: 0%
 
 ---
@@ -89,9 +89,36 @@ Alguns recursos avançados estão disponíveis mediante solicitação:
 * **Enviar notificação por e-mail no envio do formulário**: elimine o incômodo causado pelos acompanhamentos manuais e garanta a comunicação oportuna com nossa automação de email integrada para envios de formulários. Essa solução integrada permite que você notifique facilmente as partes relevantes, incluindo o envio de dados de formulário, sempre que alguém preencher um formulário em seu site. Sem necessidade de configurações complexas ou ferramentas adicionais, ele está pronto para uso imediato.
 
 
-## Fluxo de trabalho
+## Blocos disponíveis do Forms
 
-![Ecossistema de criação baseado em documentos](/help/edge/assets/document-based-authoring-workflow.png)
+O Serviço de entrega de borda da AEM Forms oferece dois tipos de blocos de formulários para atender a necessidades diferentes:
+
+* **Bloco Forms básico**: esta é uma opção versátil adequada para criar formulários simples com funcionalidades essenciais. Ele permite integrar vários tipos de entrada, como campos de texto, menus suspensos e botões de opção, permitindo coletar dados do usuário com eficiência.
+
+* **Bloco Forms adaptável**: este bloco avançado desbloqueia recursos adicionais além do Bloco básico do Forms, permitindo que você crie formulários mais complexos e interativos. Veja um detalhamento de seus principais recursos:
+
+   * Regras: defina ações baseadas em lógica em seus formulários. Você pode usar regras para mostrar ou ocultar condicionalmente seções de formulário, preencher previamente campos com base na entrada do usuário e executar várias validações para garantir a integridade dos dados.
+
+   * Extensibilidade do lado do servidor: estenda as funcionalidades de seus formulários integrando-os à lógica do lado do servidor. Isso permite executar cálculos complexos, interagir com sistemas externos e automatizar tarefas específicas com base nas ações do usuário no formulário.
+
+   * Cross Walk: simplifique os fluxos de trabalho e o gerenciamento de dados: aproveite o poder do AEM para:
+
+      * Crie formulários amigáveis usando editores AEM.
+
+      * Gerar um &quot;Documento de registro&quot; para arquivamento seguro e à prova de adulteração dos dados enviados.
+
+      * Facilite a assinatura eletrônica com o Adobe Sign para obter uma experiência de assinatura perfeita e segura.
+
+      * Automatize processos comerciais por meio de fluxos de trabalho de AEM, acionando ações com base em envios de formulários.
+
+      * Integre-se facilmente a várias fontes de dados, permitindo um fluxo e troca de dados perfeitos.
+
+  O uso do bloco adaptável do Forms requer uma licença adicional.
+
+### Escolha do bloco correto do Forms
+
+A seleção entre os Blocos Básico e Adaptável do Forms depende de suas necessidades específicas. Se você precisa de uma solução simples para coletar informações básicas do usuário, o Bloco Forms básico é a opção ideal. No entanto, se seus formulários exigirem lógica complexa, manipulação de dados, integração com sistemas externos ou fluxos de trabalho simplificados usando recursos de AEM e **você tem a licença necessária**, o Adaptive Forms Block oferece a potência e a flexibilidade necessárias para atingir suas metas.
+
 
 ## Começar a criar formulários
 
