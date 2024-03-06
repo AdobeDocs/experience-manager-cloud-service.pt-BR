@@ -3,9 +3,9 @@ title: Como gerar um documento de registro (DoR) para o AEM Forms?
 description: Saiba como gerar um modelo para um Documento de registro (DoR) do Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
 workflow-type: tm+mt
-source-wordcount: '4124'
+source-wordcount: '4170'
 ht-degree: 2%
 
 ---
@@ -345,13 +345,18 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Modelo**: se você optar por selecionar um modelo personalizado, procure um XDP selecionado em seu [!DNL AEM Forms] servidor. Se quiser usar um modelo que ainda não esteja na sua [!DNL AEM Forms] servidor, primeiro carregue o XDP no seu [!DNL AEM Forms] servidor.
       * **Cor de realce**: A cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no PDF do documento ou do registro.
       * **Família da fonte**: Família de fontes do texto no documento de PDF de registro.
+
+        >[!NOTE]
+        >
+        > O AEM Forms oferece uma variedade de fontes integradas que se integram perfeitamente com arquivos PDF. Para ver a lista de fontes suportadas, [clique aqui](/help/forms/supported-out-of-the-box-fonts.md).
+
       * **Incluir objetos de formulário que não estão vinculados ao modelo de dados**: a configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no Documento de registro.
       * **Excluir campos ocultos do documento de registro**: a configuração da propriedade identifica os campos ocultos para exclusão do Documento de registro.
       * **Ocultar descrição de painéis**: a configuração da propriedade exclui a descrição do painel/tabela do Documento de registro. Aplicável para painel e tabela.
 
       ![Propriedades básicas](/help/forms/assets/basicpropertiesdor.png)
 
-   1. **Propriedades do campo de formulário**:
+   2. **Propriedades do campo de formulário**:
       * **Para os componentes Caixa de seleção e Botão de opções, mostrar apenas os valores selecionados**: a configuração da propriedade exibe somente os valores selecionados da caixa de seleção e do botão de opção no [!UICONTROL Documento do registro].
       * **Separador para vários valores**: é possível escolher qualquer separador, como vírgula ou quebra de linha, para exibir vários valores.
       * **Alinhamento de opções**: Você pode selecionar o alinhamento desejado (Horizontal, Vertical, Igual ao formulário adaptável) para definir o alinhamento dos campos, como caixa de seleção ou botão de opção a ser exibido em [!UICONTROL Documento do registro]. Por padrão, o alinhamento vertical é definido para os campos em [!UICONTROL Documento do registro]. Definir as propriedades do [!UICONTROL Propriedades do campo de formulário] de DoR substitui as propriedades definidas no [!UICONTROL Alinhamento do Item] para os campos em um Formulário adaptável. Caso, selecione [!UICONTROL O mesmo que Formulário adaptável] opção, o alinhamento conforme configurado em uma instância do autor do Formulário adaptável é usado para [!UICONTROL Documento do registro] campos.
@@ -359,7 +364,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
       ![Propriedades do campo de formulário](/help/forms/assets/formfieldpropertiesdor.png)
 
-   1. **Propriedades da página principal**:
+   3. **Propriedades da página principal**:
       * **Imagem de logotipo**: Você pode optar por usar a imagem de logotipo do Formulário adaptável, escolher um do DAM ou fazer upload de um do seu computador.
       * **Título do formulário**: Título do DoR.
       * **Texto do cabeçalho**: texto que aparece na seção de cabeçalho do Documento de registro.
@@ -476,6 +481,11 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as 
 | config/present/pdf/pdfa/conformance | Especifica o nível de conformidade com a especificação PDF/A. |
 | config/present/pdf/version | Especifica a versão do documento PDF a ser gerada |
 | config/present/pdf/version/map | Especifica as fontes de fallback do documento |
+
+>[!NOTE]
+>
+> O AEM Forms oferece uma variedade de fontes integradas que se integram perfeitamente com arquivos PDF. Para ver a lista de fontes suportadas, [clique aqui](/help/forms/supported-out-of-the-box-fonts.md).
+
 
 ### Usar um arquivo XCI personalizado no ambiente as a Cloud Service do Forms
 

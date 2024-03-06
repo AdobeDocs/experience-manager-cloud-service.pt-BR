@@ -3,9 +3,9 @@ title: Como gerar um documento de registro para o Adaptive Forms?
 description: Saiba como gerar um modelo para um Documento de registro (DoR) para os Componentes principais do Adaptive Forms.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3131'
 ht-degree: 1%
 
 ---
@@ -327,6 +327,10 @@ Para localizar as informações de marca inseridas na guia Documento de registro
       * **Modelo**: se quiser selecionar um modelo personalizado, procure e selecione um XDP no [!DNL AEM Forms] servidor. Se quiser usar um modelo que não esteja disponível no [!DNL AEM Forms] servidor, primeiro carregue o XDP no seu [!DNL AEM Forms] servidor.
       * **Cor de realce**: A cor na qual o texto do cabeçalho e as linhas de separador são renderizados no documento do PDF de registro.
       * **Família da fonte**: Família de fontes do texto no documento de PDF de registro.
+
+        >[!NOTE]
+        >
+        > O AEM Forms oferece uma variedade de fontes integradas que se integram perfeitamente com arquivos PDF. Para ver a lista de fontes suportadas, [clique aqui](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Incluir objetos de formulário que não estão vinculados ao modelo de dados**: a configuração da propriedade inclui campos não vinculados do Formulário adaptável baseado em esquema no Documento de registro.
 
