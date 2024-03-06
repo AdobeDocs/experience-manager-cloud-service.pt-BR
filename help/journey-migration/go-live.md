@@ -2,9 +2,9 @@
 title: Publicação
 description: Saiba como executar a migração depois que o código e o conteúdo estiverem prontos para nuvem
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 8baea95d57ce1e92e0e7083c161c9fee395fcb8e
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1771'
 ht-degree: 4%
 
 ---
@@ -156,6 +156,9 @@ Revise esta lista de atividades para garantir que você execute uma migração t
    * Ambientes de desenvolvimento não têm o mesmo tamanho que preparo e produção.
 * Transfira e verifique se a ativação real é realizada sem nenhuma nova implantação ou atualização de conteúdo.
 * Criar perfis de notificação de usuário Admin Console. Consulte [Perfis de notificação](/help/journey-onboarding/notification-profiles.md)
+* Considere a configuração das Regras de filtro de tráfego para controlar qual tráfego não deve ser permitido em seu site.
+   * As regras de filtro de tráfego de limite de taxa podem ser uma ferramenta eficaz contra ataques de DDoS. Uma categoria especial de regras de filtro de tráfego, chamada de regras WAF, requer uma licença separada.
+   * Consulte a documentação para obter alguns [regras de início sugeridas](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 Você sempre pode consultar a lista caso precise recalibrar suas tarefas ao executar a migração.
 
