@@ -3,9 +3,9 @@ title: Migração da configuração do Dispatcher do AMS para o AEM as a Cloud S
 description: Migração da configuração do Dispatcher do AMS para o AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 6023a13eb4ea0533ba2f6cd00fb9f824b08a3f4a
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1499'
 ht-degree: 7%
 
 ---
@@ -19,6 +19,7 @@ A configuração do Apache e do Dispatcher no AEM as a Cloud Service é bastante
 * No AEM as a Cloud Service, algumas diretivas do Apache não podem ser usadas (por exemplo, `Listen` ou `LogLevel`)
 * No AEM as a Cloud Service, somente algumas partes da configuração do Dispatcher podem ser colocadas em arquivos de inclusão e seus nomes são importantes. Por exemplo, as regras de filtro que você deseja reutilizar em diferentes hosts devem ser colocadas em um arquivo chamado `filters/filters.any`. Consulte a página de referência do para obter mais informações.
 * No AEM as a Cloud Service, há validação extra para não permitir regras de filtro gravadas usando `/glob` para evitar problemas de segurança. Porque `deny *` é usado em vez de `allow *` (que não pode ser usado), os clientes se beneficiam da execução local do Dispatcher e da realização de tentativas e erros, observando os registros para saber exatamente quais caminhos os filtros do Dispatcher estão bloqueando para que eles possam ser adicionados.
+* No AEM as a Cloud Service, é atualmente altamente recomendável [aceitar o uso do modo de origem flexível da configuração do dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) por exemplo, usar pipelines de configuração no nível da Web ou ter mais flexibilidade no número e na estrutura de arquivos de configuração.
 
 ## Diretrizes para migrar a configuração do dispatcher do AMS para o AEM as a Cloud Service
 
