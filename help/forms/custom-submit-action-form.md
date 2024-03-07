@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1669'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,7 @@ Uma ação enviar é uma sling:Folder que inclui o seguinte:
 
 * **addfields.jsp**: esse script fornece os campos de ação que são adicionados ao arquivo de HTML durante a representação. Use esse script para adicionar os parâmetros de entrada ocultos necessários durante o envio no script post.POST.jsp.
 * **dialog.xml**: Esse script é semelhante à caixa de diálogo Componente CQ. Ela fornece informações de configuração que o autor personaliza. Os campos são exibidos na guia Enviar Ações na caixa de diálogo Editar formulário adaptável ao selecionar a Ação de envio.
-* **post.POST.jsp**: O servlet Submit chama esse script com os dados enviados e os dados adicionais nas seções anteriores. Qualquer menção de executar uma ação nesta página implica executar o script post.POST.jsp. Para registrar a ação enviar com o Forms adaptável para exibição na caixa de diálogo Editar formulário adaptável, adicione essas propriedades ao sling:Folder:
+* **post.POST.jsp**: O servlet Submit chama esse script com os dados enviados e os dados adicionais nas seções anteriores. Qualquer menção de executar uma ação nesta página implica executar o script post.POST.jsp. Para registrar a Ação de envio com o Forms adaptável a ser exibido na caixa de diálogo Edição do formulário adaptável, adicione essas propriedades à `sling:Folder`:
 
    * **guideComponentType** do tipo String e valor **fd/af/components/guidesubmittype**
    * **guideDataModel** do tipo String que especifica o tipo de Formulário adaptável ao qual a Ação enviar se aplica. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** O é compatível com o Adaptive Forms baseado em XSD. **básico** O é compatível com o Adaptive Forms que não usam XDP ou XSD. Para exibir a ação em vários tipos de Forms adaptável, adicione as cadeias de caracteres correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível em <!--XFA- and -->Forms adaptável baseado em XSD, especifique o valor como <!--**xfa** and--> **xsd**.
