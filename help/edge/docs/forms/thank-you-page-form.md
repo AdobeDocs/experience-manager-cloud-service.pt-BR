@@ -4,13 +4,13 @@ description: Saiba como configurar páginas de agradecimento e redirecionamento 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 1%
 
 ---
-
 
 # Mostrar a página de agradecimento ou o formulário de redirecionamento após o envio
 
@@ -63,9 +63,9 @@ Por padrão, o bloco Adaptive Forms redireciona os usuários para a página &quo
 
    >[!NOTE]
    >
-   > Verifique se existe uma página com o mesmo nome na pasta do projeto do Serviço de entrega de borda no Microsoft SharePoint ou no Google Workspace. Se a página não existir, prossiga para criá-la e publicá-la.
+   > Verifique se existe uma página com o mesmo nome na pasta do projeto do Edge Delivery Services no Microsoft SharePoint ou no Google Workspace. Se a página não existir, prossiga para criá-la e publicá-la.
 
-1. Continue verificando a pasta &#39;form.js&#39; atualizada e seus arquivos subjacentes no projeto do Serviço de entrega de borda no GitHub. Essa atualização garante que o formulário agora redirecione para a página atualizada conforme especificado.
+1. Continue para fazer o check-in da pasta &#39;form.js&#39; atualizada e de seus arquivos subjacentes para o projeto Edge Delivery Services no GitHub. Essa atualização garante que o formulário agora redirecione para a página atualizada conforme especificado.
 
 1. Verifique se a página existe na pasta do projeto EDS e publique-a.
 

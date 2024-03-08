@@ -2,9 +2,9 @@
 title: Teste de qualidade do código
 description: Saiba como funciona o teste de qualidade do código dos pipelines e como ele pode melhorar a qualidade das suas implantações.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1173'
 ht-degree: 96%
 
 ---
@@ -87,7 +87,7 @@ private static final String PROP_SERVICE_PASSWORD = "password";
 O SonarQube identificará uma vulnerabilidade de bloqueador. Porém, depois de revisar o código, você reconhece que isso não é uma vulnerabilidade e pode anotar o código com a ID de regra apropriada.
 
 ```java
-@SuppressWarnings("squid:S2068")
+@SuppressWarnings ("squid:S2068")
 @Property(label = "Service Password")
 private static final String PROP_SERVICE_PASSWORD = "password";
 ```

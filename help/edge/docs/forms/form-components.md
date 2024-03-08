@@ -4,17 +4,17 @@ description: Este documento fornece uma visão geral dos componentes de formulá
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 7d087d41-9313-482a-a905-8955b0999781
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '964'
 ht-degree: 2%
 
 ---
 
-
 # Componentes e propriedades de formulários: serviço de entrega de borda do AEM Forms
 
-O Serviço de entrega de borda da AEM Forms permite criar formulários amigáveis e interativos usando vários componentes. Esses componentes atendem a diferentes tipos de coleção de dados e podem ser facilmente personalizados para atender às suas necessidades específicas.
+O AEM Forms Edge Delivery Services permite criar formulários amigáveis e interativos usando vários componentes. Esses componentes atendem a diferentes tipos de coleção de dados e podem ser facilmente personalizados para atender às suas necessidades específicas.
 
 
 ![Uma amostra de planilha com alguns componentes e propriedades](/help/edge/assets/sample-form-in-spreadsheet.png)

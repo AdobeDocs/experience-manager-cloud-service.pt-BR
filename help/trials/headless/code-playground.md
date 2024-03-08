@@ -4,7 +4,7 @@ description: Explore a busca de conteúdo JSON do seu ambiente de avaliação co
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 96%
@@ -64,7 +64,7 @@ Na linha 6, os detalhes do host de publicação foram lidos no parâmetro de con
 Você configura o AEM Headless Client na linha 12:
 
 ```javascript
-const aemHeadlessClient = new AdobeAemHeadlessClientJs({
+const aemHeadlessClient = new AdobeAemHeadlessClientJs ({
   // Use a proxy to avoid CORS issues
   serviceURL: 'https://102588-505tanocelot.adobeioruntime.net/api/v1/web/aem/proxy',
   headers: {

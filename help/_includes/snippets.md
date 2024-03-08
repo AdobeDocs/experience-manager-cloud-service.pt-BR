@@ -1,7 +1,7 @@
 ---
-source-git-commit: 45b263651f6139b1c7f83ff3485186b272ba1a4f
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '331'
 ht-degree: 14%
 
 ---
@@ -55,8 +55,17 @@ ht-degree: 14%
 * [Enviar para o Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar para o Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Conectar o formulário adaptável ao aplicativo Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
-* [Conectar um formulário adaptável ao Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
+* [Conectar um formulário adaptável ao Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## Criação de AEM com acesso antecipado ao Edge Delivery Services {#aem-authoring-edge-early-access}
 
 [!BADGE TECNOLOGIA DE ACESSO ANTECIPADO - Pergunte-nos sobre esse recurso nos laboratórios da AEM Sites no seu canal de Slack!]{type=Informative url="/help/edge/docs/slack.md" tooltip="A criação do AEM com o Edge Delivery Services é uma tecnologia de acesso antecipado."}
+
+## Consulte também: {#see-also-forms-eds}
+
+* [Componentes de formulários](/help/edge/docs/forms/form-components.md)
+* [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
+* [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
+* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-forms.md)
+* [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
+* [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)

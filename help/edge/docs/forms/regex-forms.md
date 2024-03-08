@@ -1,12 +1,12 @@
 ---
-title: O Serviço de entrega de borda da AEM Forms geralmente usava expressões regex para validar campos de formulário
-description: O Serviço de entrega de borda da AEM Forms geralmente usava expressões regex para validar campos de formulário
+title: Os serviços de entrega de borda da AEM Forms geralmente usavam expressões regex para validar campos de formulário
+description: Os serviços de entrega de borda da AEM Forms geralmente usavam expressões regex para validar campos de formulário
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 78d40574e6fea8dde22414e43fd77215b9e7d2a1
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '191'
 ht-degree: 4%
 
 ---

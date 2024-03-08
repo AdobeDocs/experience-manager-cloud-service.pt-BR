@@ -4,17 +4,16 @@ description: Crie formulários poderosos mais rápido usando planilhas e campos 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: fd2e5df72e965ea6f9ad09b37983f815954f915c
+exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
 
-
 # Preparar sua planilha para aceitar dados
 
-![Ecossistema de criação baseado em documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-forms.md), é hora de permitir que a planilha correspondente comece a receber dados.
 
@@ -33,13 +32,21 @@ Para ativar a planilha:
    >
    > Se a variável `incoming` não estiver presente, o AEM não enviará dados para a planilha.
 
-1. Espelhe os nomes de campos de formulário, os valores de `Name` na`shared-default` para os cabeçalhos no campo `incoming` planilha.
+1. Nesta planilha, insira uma tabela chamada &quot;input_form&quot;. Selecione o número de colunas necessárias para corresponder aos nomes dos campos de formulário. Em seguida, na barra de ferramentas, vá para Insert > Table e clique em OK.
 
-   Cada valor no `Name` coluna da `shared-default` planilha, com exceção do botão enviar, serve como cabeçalho na `incoming` planilha. Por exemplo, considere a seguinte imagem que ilustra cabeçalhos para um formulário &quot;contact-us&quot;:
+1. Altere o nome da tabela para &quot;input_form&quot;. No Microsoft Excel, para alterar o nome da tabela, selecione a tabela e clique em Design da tabela.
+
+1. Em seguida, adicione os nomes dos campos de formulário como cabeçalhos da tabela. Para garantir que os campos sejam exatamente os mesmos, é possível copiá-los e colá-los na planilha &quot;padrão compartilhado&quot;.  Na planilha &quot;shared-default&quot;, selecione e copie as IDs de formulário listadas na coluna &quot;Name&quot;, exceto para o campo submit.
+
+1. Na planilha de &quot;entrada&quot;, selecione Colar especial > Transpor linhas para colunas para copiar as IDs de campo como cabeçalhos de coluna nesta nova planilha. Keep only os campos cujos dados precisam capturar outros podem ser ignorados.
+
+   Cada valor no `Name` coluna da `shared-default` planilha, excluindo o botão enviar, pode servir como cabeçalho na variável `incoming` planilha. Por exemplo, considere a seguinte imagem que ilustra cabeçalhos para um formulário &quot;contact-us&quot;:
 
    ![Campos de um formulário de contato conosco](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-1. Use o sidekick para visualizar a planilha.
+
+
+1. Use a extensão AEM Sidekick para visualizar as atualizações de formulário. Sua planilha está pronta para aceitar os envios de formulários recebidos.
 
    >[!NOTE]
    >
@@ -48,23 +55,11 @@ Para ativar a planilha:
 
 Depois que os nomes dos campos forem adicionados à `incoming` formulário fica pronto para aceitar envios. Você pode visualizar o formulário e enviar dados para a planilha usando-o.
 
+Depois que a planilha for configurada para receber dados, você poderá [visualizar o formulário usando o Bloco de formulário adaptável](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar solicitações POST](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
 
-
-Você também observa as seguintes alterações na planilha:
-
-Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do Excel ou Planilha do Google. Nesta planilha, você pode configurar notificações automáticas para um canal de Slack designado sempre que novos dados forem assimilados em sua planilha. Atualmente, o AEM suporta notificações exclusivamente para a organização AEM Engineering Slack e a organização Adobe Enterprise Support.
-
-1. Para configurar notificações de Slack, digite a &quot;teamId&quot; do espaço de trabalho do Slack e o &quot;channel name&quot; ou &quot;ID&quot;. Você também pode pedir ao slack-bot (com o comando debug) o &quot;teamId&quot; e a &quot;channel ID&quot;. É preferível usar a &quot;ID do canal&quot; em vez do &quot;nome do canal&quot;, pois ela sobrevive à renomeação de canais.
-
-   >[!NOTE]
-   >
-   > Formulários mais antigos não tinham a coluna &quot;teamId&quot;. A &quot;teamId&quot; foi incluída na coluna do canal, separada por um &quot;#&quot; ou &quot;/&quot;.
-
-1. Insira qualquer título que desejar e em campos insira os nomes dos campos que deseja ver na notificação Slack. Cada cabeçalho deve ser separado por vírgula (por exemplo, nome, email).
-
-   >[!WARNING]
-   >
-   >  Nunca as planilhas de &quot;padrão compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
+>[!WARNING]
+>
+>  Nunca as planilhas de &quot;padrão compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
 
 
 ## (Opcional) Use APIs de administrador para permitir que uma planilha aceite dados
@@ -155,6 +150,11 @@ Para usar APIs de administrador para permitir que uma planilha aceite dados:
 
    O formulário agora está habilitado para aceitar dados. Você também observa as seguintes alterações na planilha:
 
+## Alterações automáticas na planilha quando ela estiver ativada para aceitar dados.
+
+
+Depois que a planilha é definida para receber dados, você observa as seguintes alterações em sua planilha:
+
 Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do Excel ou Planilha do Google. Nesta planilha, você pode configurar notificações automáticas para um canal de Slack designado sempre que novos dados forem assimilados em sua planilha. Atualmente, o AEM suporta notificações exclusivamente para a organização AEM Engineering Slack e a organização Adobe Enterprise Support.
 
 1. Para configurar notificações de Slack, digite a &quot;teamId&quot; do espaço de trabalho do Slack e o &quot;channel name&quot; ou &quot;ID&quot;. Você também pode pedir ao slack-bot (com o comando debug) o &quot;teamId&quot; e a &quot;channel ID&quot;. É preferível usar a &quot;ID do canal&quot; em vez do &quot;nome do canal&quot;, pois ela sobrevive à renomeação de canais.
@@ -165,12 +165,10 @@ Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do
 
 1. Insira qualquer título que desejar e em campos insira os nomes dos campos que deseja ver na notificação Slack. Cada cabeçalho deve ser separado por vírgula (por exemplo, nome, email).
 
+   >[!WARNING]
+   >
+   >  Nunca as planilhas de &quot;padrão compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
 
-A planilha agora está configurada para receber dados, você pode [visualizar o formulário usando o Bloco de formulário adaptável](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar solicitações POST](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
-
->[!WARNING]
->
->  Nunca as planilhas de &quot;padrão compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
 
 ## Enviar dados para sua planilha {#send-data-to-your-sheet}
 
@@ -288,10 +286,3 @@ Há algumas maneiras diferentes de formatar os dados de formulário no corpo do 
 
 Em seguida, você pode personalizar a mensagem de agradecimento, [configurar uma página de agradecimento](/help/edge/docs/forms/thank-you-page-form.md)ou [definir redirecionamentos](/help/edge/docs/forms/thank-you-page-form.md).
 
-## Veja mais
-
-* [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
-* [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
-* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-forms.md)
-* [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
-* [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)

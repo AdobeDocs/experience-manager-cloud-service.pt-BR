@@ -2,9 +2,9 @@
 title: Regulamentos de Proteção e Privacidade de Dados - Disponibilidade do Adobe Experience Manager as a Cloud Service Sites
 description: Saiba mais sobre o suporte do Adobe Experience Manager as a Cloud Service Sites a vários Regulamentos de Proteção e Privacidade de Dados, incluindo o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia e como estar em conformidade ao implementar um novo projeto AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1001'
 ht-degree: 96%
 
 ---
@@ -223,10 +223,10 @@ Para limpar a persistência do ContextHub:
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   
   // following call asks all currently loaded stores to clear their data
-  ContextHub.cleanAllStores();
+  ContextHub.cleanAllStores ();
   
   // following call asks all currently loaded stores to set back default values (provided in their configs)
-  ContextHub.resetAllStores();
+  ContextHub.resetAllStores ();
   ```
 
 * Para eliminar uma camada de persistência específica; por exemplo, sessionStorage:

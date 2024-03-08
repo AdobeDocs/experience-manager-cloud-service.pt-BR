@@ -1,12 +1,12 @@
 ---
-title: Componentes do formulário do serviço de entrega de borda do AEM Forms
-description: O serviço de entrega de borda da AEM Forms foi criado para oferecer desempenho máximo, permitindo que você visualize o futuro da coleta de dados simplificada e do envolvimento do usuário. O artigo lista todos os componentes de formulários disponíveis imediatamente para formulários EDD.
+title: Componentes de formulários dos serviços de entrega de borda do AEM Forms
+description: Os serviços de entrega de borda da AEM Forms foram criados para oferecer desempenho máximo, permitindo que você visualize o futuro da coleta de dados simplificada e do envolvimento do usuário. O artigo lista todos os componentes de formulários disponíveis imediatamente para formulários EDD.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 3b24d0cd4099e0b8eb48c977f460b25c168af220
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '870'
 ht-degree: 5%
 
 ---

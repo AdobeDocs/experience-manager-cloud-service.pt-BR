@@ -5,7 +5,7 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 5acbd7a56f18ee4c3d8b8f04ab17ad44fe6f0647
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1931'
 ht-degree: 7%
@@ -76,7 +76,7 @@ Entrada [!DNL Experience Manager] as a [!DNL Cloud Service], você pode fazer up
 
 >[!IMPORTANT]
 >
-Execute as etapas acima em um aplicativo externo e não dentro do [!DNL Experience Manager] JVM.
+>Execute as etapas acima em um aplicativo externo e não dentro do [!DNL Experience Manager] JVM.
 
 A abordagem oferece uma manipulação escalável e mais eficiente de uploads de ativos. As diferenças em comparação com [!DNL Experience Manager] 6.5 são:
 
@@ -85,11 +85,11 @@ A abordagem oferece uma manipulação escalável e mais eficiente de uploads de 
 
 >[!NOTE]
 >
-Consulte o código de cliente para implementar esta abordagem no código aberto [biblioteca aem-upload](https://github.com/adobe/aem-upload).
+>Consulte o código de cliente para implementar esta abordagem no código aberto [biblioteca aem-upload](https://github.com/adobe/aem-upload).
 >
-[!IMPORTANT]
+>[!IMPORTANT]
 >
-Em determinadas circunstâncias, as alterações podem não se propagar totalmente entre as solicitações para o Experience Manager devido à natureza consistente do armazenamento no Cloud Service. Isso faz com que 404 respostas iniciem ou concluam chamadas de upload porque as criações de pasta necessárias não são propagadas. Os clientes devem esperar respostas 404 e lidar com elas implementando uma nova tentativa com uma estratégia de retirada.
+>Em determinadas circunstâncias, as alterações podem não se propagar totalmente entre as solicitações para o Experience Manager devido à natureza consistente do armazenamento no Cloud Service. Isso faz com que 404 respostas iniciem ou concluam chamadas de upload porque as criações de pasta necessárias não são propagadas. Os clientes devem esperar respostas 404 e lidar com elas implementando uma nova tentativa com uma estratégia de retirada.
 
 ### Iniciar upload {#initiate-upload}
 
@@ -159,7 +159,7 @@ Se o upload for bem-sucedido, o servidor responderá a cada solicitação com um
 
 >[!NOTE]
 >
-Para obter mais informações sobre o algoritmo de upload, consulte [documentação oficial de recursos](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) e [Documentação da API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) no projeto Apache Jackrabbit Oak.
+>Para obter mais informações sobre o algoritmo de upload, consulte [documentação oficial de recursos](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) e [Documentação da API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) no projeto Apache Jackrabbit Oak.
 
 ### Carregamento completo {#complete-upload}
 
@@ -179,7 +179,7 @@ Depois que todas as partes de um arquivo binário forem carregadas, envie uma so
 
 >[!NOTE]
 >
-Se o ativo existir e não existir `createVersion` nem `replace` for especificado, então [!DNL Experience Manager] O atualiza a versão atual do ativo com o novo binário.
+>Se o ativo existir e não existir `createVersion` nem `replace` for especificado, então [!DNL Experience Manager] O atualiza a versão atual do ativo com o novo binário.
 
 Assim como no processo inicial, os dados completos da solicitação podem conter informações de mais de um arquivo.
 
@@ -215,7 +215,7 @@ function debug() {
 }
 
 # Function to check if a file exists
-function file_exists() {
+function file_exists () {
     [ -e "$1" ]
 }
 
@@ -431,7 +431,7 @@ Para saber mais sobre os algoritmos de upload ou criar seus próprios scripts e 
 
 >[!NOTE]
 >
-A biblioteca de upload do aem e a ferramenta de linha de comando usam o [biblioteca node-httptransfer](https://github.com/adobe/node-httptransfer/)
+>A biblioteca de upload do aem e a ferramenta de linha de comando usam o [biblioteca node-httptransfer](https://github.com/adobe/node-httptransfer/)
 
 ### APIs de upload de ativos obsoletos {#deprecated-asset-upload-api}
 
@@ -444,9 +444,9 @@ O novo método de upload é compatível somente com o [!DNL Adobe Experience Man
 
 >[!MORELIKETHIS]
 >
-* [Biblioteca de upload do aem de código aberto](https://github.com/adobe/aem-upload).
-* [Ferramenta de linha de comando de código aberto](https://github.com/adobe/aio-cli-plugin-aem).
-* [Documentação do Apache Jackrabbit Oak para upload direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+>* [Biblioteca de upload do aem de código aberto](https://github.com/adobe/aem-upload).
+>* [Ferramenta de linha de comando de código aberto](https://github.com/adobe/aio-cli-plugin-aem).
+>* [Documentação do Apache Jackrabbit Oak para upload direto](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## Fluxos de trabalho de processamento e pós-processamento de ativos {#post-processing-workflows}
 
@@ -551,4 +551,4 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 >[!MORELIKETHIS]
 >
-* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+>* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).

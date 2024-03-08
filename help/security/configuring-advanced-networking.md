@@ -2,7 +2,7 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: dfeeaca8341abec5d4fd518957baf6936a21aea3
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '3540'
 ht-degree: 92%
@@ -88,7 +88,7 @@ String url = "www.example.com:8443"
 String proxyHost = System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel");
 int proxyPort = Integer.parseInt(System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", "3128"));
 HttpClient client = HttpClient.newBuilder()
-      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .proxy(ProxySelector.of(new InetSocketAddress (proxyHost, proxyPort)))
       .build();
  
 HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
@@ -310,7 +310,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 Algumas bibliotecas exigem configuração explícita para usar as propriedades padrão do sistema Java para configurações de proxy.
 
 Um exemplo usando o Apache HttpClient, que requer chamadas explícitas ao
-[`HttpClientBuilder.useSystemProperties()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) ou o uso de
+[`HttpClientBuilder.useSystemProperties ()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClientBuilder.html) ou o uso de
 [`HttpClients.createSystem()`](https://hc.apache.org/httpcomponents-client-4.5.x/current/httpclient/apidocs/org/apache/http/impl/client/HttpClients.html#createSystem()):
 
 ```java
@@ -318,7 +318,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
   String relativeUri = queryString.isEmpty() ? relativePath : (relativePath + '?' + queryString);
   URL finalUrl = endpointUri.resolve(relativeUri).toURL();
 
-  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties().build();
+  HttpClient httpClient = HttpClientBuilder.create().useSystemProperties ().build();
   HttpGet request = new HttpGet(finalUrl.toURI());
   request.setHeader("Accept", "application/json");
   request.setHeader("X-API-KEY", apiKey);

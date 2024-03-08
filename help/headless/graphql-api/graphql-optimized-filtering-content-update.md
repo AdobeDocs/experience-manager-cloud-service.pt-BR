@@ -2,10 +2,10 @@
 title: Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL
 description: Saiba como atualizar os fragmentos de conteúdo para uma filtragem otimizada de GraphQL no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 97a6a7865f696f4d61a1fb4e25619caac7b68b51
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 60%
+source-wordcount: '886'
+ht-degree: 58%
 
 ---
 
@@ -57,7 +57,7 @@ Existem pré-requisitos para esta tarefa:
       <td>Todos </td>
       <td> </td>
       <td>Variável </td>
-      <td>Habilita(!=0) ou desabilita(0) o acionamento do processo de migração do fragmento de conteúdo. </td>
+      <td>Habilita (!=0) ou desativa (0) o acionamento do trabalho de migração do Fragmento de conteúdo. </td>
      </tr>
      <tr>
       <td>2</td>
@@ -211,7 +211,7 @@ Existem pré-requisitos para esta tarefa:
       <td>Todos </td>
       <td> </td>
       <td>Variável </td>
-      <td>Desativa(0) (ou ativa(!=0)) o acionamento do processo de migração do fragmento de conteúdo. </td>
+      <td>Desativa (0) (ou Ativa (!=0)) o acionamento do processo de migração do fragmento de conteúdo. </td>
      </tr>
     </tbody>
    </table>

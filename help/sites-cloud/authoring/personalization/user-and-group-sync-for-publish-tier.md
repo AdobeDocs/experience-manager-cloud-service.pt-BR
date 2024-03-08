@@ -2,7 +2,7 @@
 title: Registro, logon e perfil do usuário
 description: Saiba mais sobre registro, logon, dados do usuário e sincronização de grupos no AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 90%
@@ -37,7 +37,7 @@ Pode-se escrever um código de registro personalizado que contenha, no mínimo, 
 
 1. Exibir um componente personalizado do AEM que coleta informações de registro
 1. Após o envio, um usuário de serviço devidamente provisionado é usado para:
-   1. Verificar se um usuário já não existe, usando um dos métodos `findAuthorizables()` da API do UserManager
+   1. Verificar se um usuário já não existe, usando um dos métodos `findAuthorizables ()` da API do UserManager
    1. Criar um registro de usuário usando um dos métodos `createUser()` da API do UserManager
    1. Armazenar todos os dados de perfil capturados usando os métodos `setProperty()` da interface do Authorizable
 1. Fluxos opcionais, como exigir que o usuário valide seu email.
