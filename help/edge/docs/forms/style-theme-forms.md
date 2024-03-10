@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2b64cc8d2afb7d6064d1f60ba023448171862236
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1819'
 ht-degree: 0%
 
 ---
@@ -69,18 +69,18 @@ Todos os campos de formulário, exceto os detalhamentos, grupos de rádio e grup
 #### Estrutura de HTML
 
 ```HTML
-<div class="form-{Type}-wrapper form-{Name} field-wrapper" data-required={Required}>
-  <label for="{FieldId}" class="field-label">Field Label</label>
-  <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Description of the field.
-  </div>
+<div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <div class="field-description" aria-live="polite" id="{FieldId}-description">
+    Hint - First name should be minimum 3 characters and a maximum of 10 characters.
+   </div>
 </div>
 ```
 
-* Classes: o elemento div tem várias classes para direcionar elementos específicos e estilo. Você exige o `form-{Type}-wrapper` ou `form-{Name}` classes para desenvolver um seletor de CSS para estilizar um campo de formulário:
-   * {Type}: identifica o componente por tipo de campo. Por exemplo, texto (form-text-wrapper), número (form-number-wrapper), data (form-date-wrapper).
-   * {Name}: identifica o componente por nome. O nome do campo pode ter apenas caracteres alfanuméricos, os vários traços consecutivos no nome são substituídos por um único traço `(-)`, e os traços inicial e final em um nome de campo são removidos. Por exemplo, nome (form-first-name field-wrapper).
+* Classes: o elemento div tem várias classes para direcionar elementos específicos e estilo. Você exige o `{Type}-wrapper` ou `field-{Name}` classes para desenvolver um seletor de CSS para estilizar um campo de formulário:
+   * {Type}: identifica o componente por tipo de campo. Por exemplo, texto (invólucro de texto), número (invólucro numérico), data (invólucro de data).
+   * {Name}: identifica o componente por nome. O nome do campo pode ter apenas caracteres alfanuméricos, os vários traços consecutivos no nome são substituídos por um único traço `(-)`, e os traços inicial e final em um nome de campo são removidos. Por exemplo, nome (field-first-name field-wrapper).
    * {FieldId}: é o identificador exclusivo do campo, gerado automaticamente.
    * {Required}: é um booleano que indica se o campo é obrigatório.
 * Label: a variável `label` element fornece um texto descritivo para o campo e o associa ao elemento de entrada usando o `for` atributo.
@@ -135,7 +135,7 @@ Todos os campos de formulário, exceto os detalhamentos, grupos de rádio e grup
 ```CSS
 /*Target all text input fields */
 
-.form-text-wrapper input {
+text-wrapper input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -143,7 +143,7 @@ Todos os campos de formulário, exceto os detalhamentos, grupos de rádio e grup
 
 /*Target all fields with name first-name*/
 
-.form-first-name input {
+first-name input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
@@ -237,43 +237,110 @@ Para menus suspensos, a variável `select` elemento é usado em vez de um `input
 * Cor do plano de fundo: uma cor de fundo consistente é definida para harmonia visual.
 * Personalização de seta: os estilos opcionais ocultam a seta suspensa padrão e criam uma seta personalizada usando um caractere Unicode e o posicionamento.
 
-### Grupos de opções e caixas de seleção
+### Grupos de opções
 
-Semelhante aos componentes suspensos, os grupos de rádio e de caixa de seleção têm sua própria estrutura de HTML e considerações de CSS:
+Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estrutura de HTML e estrutura CSS:
 
 #### Estrutura de HTML do grupo de rádio
 
 ```HTML
-<div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
-  <label class="field-label">{Label Text}</label>
-  <div class="checkbox-group">
-    <input type="checkbox" id="{FieldId}-1" name="{Name}" value="{Value1}">
-    <label for="{FieldId}-1">{Option 1 Text}</label>
-    <input type="checkbox" id="{FieldId}-2" name="{Name}" value="{Value2}">
-    <label for="{FieldId}-2">{Option 2 Text}</label>
-    </div>
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Select multiple options (if applicable).
-  </div>
-</div>
+<fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
+   <% for each radio in Group %>
+   <div class="radio-wrapper field-{Name}">
+      <input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
+   </div>
+   <% end for %>
+</fieldset>
 ```
 
+#### Exemplo de estrutura de HTML
+
+```HTML
+<fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
+  <legend for="color_preference" class="field-label">Favorite Color:</legend>
+  <% for each radio in Group %>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
+      <label for="color_red" class="field-label">Red</label>
+    </div>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
+      <label for="color_green" class="field-label">Green</label>
+    </div>
+    <div class="radio-wrapper field-color">
+      <input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
+      <label for="color_blue" class="field-label">Blue</label>
+    </div>
+  <% end for %>
+</fieldset>
+```
+
+#### Exemplo de seletores CSS para o componente suspenso
+
+* Direcionamento do conjunto de campos
+
+```CSS
+  .radio-group-wrapper {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+```
+
+Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapper. Isso seria útil para aplicar estilos gerais a todo o grupo de rádio.
+
+* Rótulos do botão de opção de direcionamento
+
+```CSS
+.radio-wrapper label {
+    font-weight: normal;
+    margin-right: 10px;
+  }
+```
+
+* Direcionar todos os rótulos de botão de opção em um conjunto de campos específico com base em seu nome
+
+```CSS
+.field-color .radio-wrapper label {
+  /* Your styles here */
+}
+```
+
+### Grupos de caixas de seleção
 
 #### Estrutura de HTML do grupo de caixas de seleção
 
 ```HTML
-<div class="form-checkbox-group-wrapper form-{Name} field-wrapper" data-required={required}>
-  <label class="field-label">{Label Text}</label>
-  <div class="checkbox-group">
-    <input type="checkbox" id="{FieldId}-1" name="{Name}" value="{Value1}">
-    <label for="{FieldId}-1">{Option 1 Text}</label>
-    <input type="checkbox" id="{FieldId}-2" name="{Name}" value="{Value2}">
-    <label for="{FieldId}-2">{Option 2 Text}</label>
-    </div>
-  <div class="field-description" aria-live="polite" id="{FieldId}-description">
-    Hint - Select multiple options (if applicable).
+<fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
+   <% for each radio in Group %>
+   <div class="radio-wrapper field-{Name}">
+      <input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
+   </div>
+   <% end for %>
+</fieldset>
+```
+
+#### Exemplo de estrutura de HTML
+
+```HTML
+<fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
+  <legend for="topping_preference" class="field-label">Pizza Toppings:</legend>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_pepperoni" class="field-label">Pepperoni</label>
   </div>
-</div>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_mushrooms" class="field-label">Mushrooms</label>
+  </div>
+  <div class="checkbox-wrapper field-topping">
+    <input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_onions" class="field-label">Onions</label>
+  </div>
+</fieldset>
 ```
 
 **Exemplo de seletores CSS para grupos de opções e caixas de seleção**
