@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -20,14 +20,14 @@ Depois que um usuário envia um formulário, é crucial fornecer uma experiênci
 
 * **Redirecionar**: um redirecionamento desempenha um papel fundamental ao direcionar os usuários para destinos relevantes, otimizando o engajamento e, em última análise, aumentando as taxas de conversão. Ao orientar os usuários para a próxima etapa da jornada de maneira contínua, o redirecionamento garante uma experiência de navegação tranquila. Por exemplo, redirecionando o usuário para a página de pagamentos após coletar os detalhes iniciais.
 
-No bloco Adaptive Forms, o comportamento padrão é exibir uma página de agradecimento. No entanto, você tem a flexibilidade de personalizar essa experiência para atender às suas necessidades específicas. As opções incluem:
+No bloco do Adaptive Forms, o comportamento padrão é exibir uma página de agradecimento. No entanto, você tem a flexibilidade de personalizar essa experiência para atender às suas necessidades específicas. As opções incluem:
 
 * [Configuração da página de agradecimento e da mensagem para alinhar-se às suas metas de marca e comunicação](#configuring-the-thank-you-page-and-message)
 * [Redirecionar usuários para outra página após o envio para obter mais ações](#redirect-users-to-another-page-post-submission)
 
 ## Configurando a página de agradecimento e a mensagem
 
-O comportamento padrão do bloco Adaptive Forms é exibir a página &quot;obrigado&quot; no envio. Siga estas etapas para configurar a página &quot;obrigado&quot; do bloco Adaptive Forms:
+O comportamento padrão do bloco adaptável do Forms é exibir a página &quot;obrigado&quot; no envio. Siga estas etapas para configurar a página &quot;obrigado&quot; do seu bloco adaptável do Forms:
 
 1. Acesse sua pasta do projeto AEM Edge Delivery no Microsoft SharePoint ou no Google Workspace.
 1. Crie um arquivo do Microsoft Word ou Google Docs chamado &quot;obrigado&quot; no diretório do projeto.
@@ -37,11 +37,11 @@ O comportamento padrão do bloco Adaptive Forms é exibir a página &quot;obriga
 
 1. Use o AEM Sidekick para visualizar e publicar o arquivo &quot;obrigado&quot;.
 
-O bloco Adaptive Forms exibe a página &quot;obrigado&quot; no envio do formulário.
+Seu bloco adaptável do Forms exibe a página &quot;obrigado&quot; no envio do formulário.
 
 ## Redirecionar usuários para outra página após o envio
 
-Por padrão, o bloco Adaptive Forms redireciona os usuários para a página &quot;obrigado&quot;. Para redirecionar usuários para uma página diferente da página padrão &quot;obrigado&quot;, você tem duas opções:
+Por padrão, o bloco adaptável do Forms redireciona os usuários para a página &quot;obrigado&quot;. Para redirecionar usuários para uma página diferente da página padrão &quot;obrigado&quot;, você tem duas opções:
 
 * [Substituir a página de &quot;obrigado&quot; por uma página diferente](#replace-the-existing-thankyou-page)
 * [Use redirecionamentos de site para o redirecionamento de página de agradecimento](#use-website-redirects-for-thankyou-page-redirection)

@@ -1,13 +1,13 @@
 ---
 title: Preparar sua planilha para aceitar dados
-description: Crie formulários poderosos mais rápido usando planilhas e campos de bloco de formulário adaptável!
+description: Crie formulários poderosos mais rápido usando planilhas e campos de bloco adaptáveis do Forms!
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Para ativar a planilha:
 
 Depois que os nomes dos campos forem adicionados à `incoming` formulário fica pronto para aceitar envios. Você pode visualizar o formulário e enviar dados para a planilha usando-o.
 
-Depois que a planilha for configurada para receber dados, você poderá [visualizar o formulário usando o Bloco de formulário adaptável](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar solicitações POST](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
+Depois que a planilha for configurada para receber dados, você poderá [visualizar o formulário usando o bloco adaptável do Forms](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar solicitações POST](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
 
 >[!WARNING]
 >
@@ -172,7 +172,7 @@ Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do
 
 ## Enviar dados para sua planilha {#send-data-to-your-sheet}
 
-Depois que a planilha for definida para receber dados, você poderá [visualizar o formulário usando o Bloco de formulário adaptável](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar APIs de administrador](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
+Depois que a planilha for definida para receber dados, você poderá [visualizar o formulário usando o bloco adaptável do Forms](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar APIs de administrador](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
 
 ### Use APIs de administrador para enviar dados para sua planilha
 
