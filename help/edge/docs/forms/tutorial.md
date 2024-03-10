@@ -4,9 +4,9 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1786'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ O modelo AEM Forms Boilerplate permite iniciar rapidamente com um projeto AEM pr
 
 ### Introdução ao modelo de repositório padronizado do AEM Forms
 
-1. Crie um repositório Github para o projeto AEM. Para criar um repositório:
+1. Crie um repositório GitHub para seu projeto AEM. Para criar um repositório:
    1. Ir para [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
       ![AEM Forms Boilerplate](/help/edge/assets/aem-forms-boilerplate.png)
@@ -65,7 +65,7 @@ O modelo AEM Forms Boilerplate permite iniciar rapidamente com um projeto AEM pr
    >[!NOTE]
    >
    >
-   > Se você estiver usando o Github Enterprise com filtragem de IP, poderá adicionar o seguinte IP à lista de permissões: 3.227.118.73
+   > Se você estiver usando o GitHub Enterprise com filtragem de IP, é possível adicionar o seguinte IP à inclui na lista de permissões: 3.227.118.73
 
    Parabéns! Você tem um novo site em execução `https://<branch>--<repo>--<owner>.hlx.page/`.
 
@@ -119,7 +119,7 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
 
    1. Vá para o repositório GitHub criado anteriormente usando a Matriz do AEM Forms.
    1. Abra o `fstab.yaml` para edição.
-   1. Substitua a referência existente pelo caminho para a pasta compartilhada com o usuário AEM (helix@adobe.com).
+   1. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o usuário AEM (helix@adobe.com).
 
       ![Conteúdo de exemplo no Google Drive](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -168,7 +168,7 @@ Para visualizar conteúdo não publicado:
 
    ![AEM Sidekick - Adicionar um projeto](/help/edge/assets/aem-sidekick-add-a-project.png)
 
-   Assim que a extensão for instalada e o projeto for adicionado, você estará pronto para pré-visualizar e publicar o conteúdo do seu Google Drive.
+   Quando a extensão for instalada e seu projeto for adicionado, você estará pronto para visualizar e publicar seu conteúdo do Google Drive.
 
 1. Selecione todos os documentos na pasta Microsoft SharePoint ou Google Drive. Você pode escolher vários documentos mantendo pressionada a tecla Ctrl (Windows/Linux) ou a tecla Cmd (Mac) enquanto clica em.
 
@@ -233,7 +233,7 @@ Para começar a usar rapidamente um ambiente de desenvolvimento local de AEM:
        npm install -g @adobe/aem-cli
    ```
 
-1. Clonar o projeto do Github: clone o repositório de projetos no GitHub usando o comando a seguir, substituindo <owner> com o proprietário do repositório e <repo> com o nome do repositório:
+1. Clonar o projeto do GitHub: clone o repositório de projetos do GitHub usando o comando a seguir, substituindo <owner> com o proprietário do repositório e <repo> com o nome do repositório:
 
    ```
    git clone https://github.com/<owner>/<repo>
@@ -281,7 +281,7 @@ Verifique se o processo de criação do GitHub está descomplicado, solucionando
 Se você encontrar o erro &quot;Não foi possível resolver o caminho para o módulo &quot;&#39;../../scripts/lib-franklin.js&#39;&quot;, navegue até o [Projeto EDS]arquivo /blocks/forms/form.js. Atualize a instrução de importação substituindo o arquivo lib-franklin.js pelo arquivo aem.js.
 
 * **Manipular erros de impressão:**
-Caso encontre erros de impressão, você pode ignorá-los. Abra o [Projeto EDS]/package.json e modifique o script &quot;lint&quot; de &quot;lint&quot;: &quot;npm run lint:js &amp;&amp; npm run lint:css&quot; para &quot;lint&quot;: &quot;echo &#39;skipping linting for now&#39;&quot;. Salve o arquivo e confirme as alterações no projeto GitHub.
+Caso encontre erros de impressão, você pode ignorá-los. Abra o [Projeto EDS]/package.json e modifique o script &quot;lint&quot; de `"lint": "npm run lint:js && npm run lint:css"` para `"lint": "echo 'skipping linting for now'"`. Salve o arquivo e confirme as alterações no projeto GitHub.
 
 
 ## Consulte também:
@@ -289,9 +289,4 @@ Caso encontre erros de impressão, você pode ignorá-los. Abra o [Projeto EDS]/
 * [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Envie formulários diretamente para o Microsoft Excel ou o Google Sheets](/help/edge/docs/forms/submit-forms.md)
 * [Mudar a aparência dos formulários](/help/edge/docs/forms/style-theme-forms.md)
-
-
-
-
-
 

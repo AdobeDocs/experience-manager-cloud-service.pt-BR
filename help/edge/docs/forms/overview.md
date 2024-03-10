@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '652'
+ht-degree: 4%
 
 ---
 
@@ -31,7 +31,7 @@ O diagrama a seguir ilustra como você pode editar conteúdo no Microsoft Excel 
 
 ![Arquitetura de entrega de borda](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Os serviços de entrega de borda são um conjunto combinável de serviços que permitem um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Como mencionado anteriormente, você pode usar ambos [Gestão de conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) com [Criação no AEM](/help/implementing/universal-editor/introduction.md) bem como [criação baseada em documento](https://www.aem.live/docs/authoring)
+Os serviços de entrega de borda são um conjunto combinável de serviços que permitem um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Você pode usar a gestão de conteúdo do AEM com [Criação no AEM](/help/forms/creating-adaptive-form-core-components.md) bem como [criação baseada em documento](/help/edge/docs/forms/create-forms.md)
 
 Por exemplo, você pode usar o conteúdo diretamente do Microsoft Excel ou do Google Sheets. Isso significa que o conteúdo dessas fontes pode se tornar formulários em seu site. O novo conteúdo é adicionado instantaneamente, sem um processo de reconstrução.
 
