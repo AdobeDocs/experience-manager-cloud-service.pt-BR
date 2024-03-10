@@ -4,9 +4,9 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 2aa70e78764616f41fe64e324c017873cfba1d5b
+source-git-commit: 30dfe0cfd7f845ba7a27699db22f8c4e61a0f7ed
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -198,31 +198,29 @@ Para visualizar conteúdo não publicado:
 
    [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
 
-### Atualizar o formulário
+### Criar um formulário
 
-1. Vá para a pasta Microsoft SharePoint ou Google Drive.
+O conteúdo de amostra inclui uma folha de &quot;consulta&quot; que serve como modelo para o formulário &quot;consulta&quot;. Cada linha da planilha representa um [campo de formulário](/help/edge/docs/forms/form-components.md#available-components)e os cabeçalhos de coluna definem a variável [propriedades do campo](/help/edge/docs/forms/form-components.md#available-components). Este formulário de amostra oferece uma vantagem inicial na criação do formulário.
 
-1. Abra o `enquiry.xlsx` para edição.
+![Formulário de consulta](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-   ![Formulário de consulta](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
+Vamos começar com a atualização de um rótulo de campo. Abra a planilha &quot;consulta&quot; para edição, altere o rótulo do botão enviar para `Let's Chat`e use o sidekick para publicá-lo.
 
-1. Altere o rótulo do botão de envio para `Let's Chat`.
+![Formulário de consulta](/help/edge/assets/enquiry-form-preview-publish.png)
 
-   ![Formulário de consulta](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
-
-1. Use o AEM Sidekick para visualizar e publicar o `enquiry.xlsx` arquivo.
-
-   ![Formulário de consulta](/help/edge/assets/enquiry-form-preview-publish.png)
-
-1. Para visualizar o formulário de pesquisa, vá para o seguinte URL:
+Para visualizar o formulário de consulta atualizado, vá para o seguinte URL:
 
 
-   ```HTML
-   https://<branch>--<repository>--<owner>.hlx.page/enquiry
-   ```
+```HTML
+    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+       
+```
 
-   O rótulo do botão de envio é atualizado. Agora, preencha o formulário e clique no botão enviar, você enfrenta um erro, semelhante ao seguinte, porque a planilha não é [definir para aceitar os dados ainda](/help/edge/docs/forms/submit-forms.md).
+O rótulo do botão de envio é atualizado para `Let's Chat`.
 
+![Formulário de consulta](/help/edge/assets/updated-form.png)
+
+Para obter informações detalhadas sobre como criar e publicar um novo formulário, vá para a [criar um formulário](/help/edge/docs/forms/create-forms.md) guia.
 
 ### Começar a desenvolver estilo e funcionalidade
 
