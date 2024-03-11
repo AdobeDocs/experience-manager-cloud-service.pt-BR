@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -27,21 +27,20 @@ Esses serviços permitem:
 
 ## Visão geral do AEM Forms Edge Delivery Services {#edge-overview}
 
-O diagrama a seguir ilustra como você pode editar formulários no Microsoft Excel ou no Google Sheets (Criação baseada em documento ) e publicar no Edge Delivery Services. Ela também mostra o método de publicação AEM usando o Editor Forms adaptável (criação de AEM).
+Os serviços de entrega de borda da AEM Forms são um conjunto combinável de serviços que permitem um alto grau de flexibilidade na maneira como você cria formulários no seu site. Você pode usar a gestão de conteúdo do AEM com [Criação no AEM](/help/forms/creating-adaptive-form-core-components.md) bem como [Criação baseada em documento](/help/edge/docs/forms/create-forms.md). Os Edge Delivery Services do AEM Forms também fornecem um bloco de formulários, conhecido como [Bloco Forms adaptável](/help/edge/docs/forms/create-forms.md) para adicionar um formulário ao site do Edge Delivery Services.
+
+Por exemplo, você cria formulários diretamente no Microsoft Excel ou no Google Sheets e essas planilhas são transformadas em formulários para seu site. Qualquer novo formulário ou conteúdo de formulário, como um novo campo de formulário, fica disponível instantaneamente em seu site sem exigir um processo de recriação.
+
+O diagrama a seguir ilustra como você pode editar formulários no Microsoft Excel ou no Google Sheets (Criação baseada em documento) e publicar no Edge Delivery Services. Ela também mostra o método de publicação AEM usando o Editor Forms adaptável (criação de AEM).
 
 ![Arquitetura de entrega de borda](/help/edge/assets/AEM-forms-with-EDS-publishing.png)
 
-Os serviços de entrega de borda da AEM Forms são um conjunto combinável de serviços que permitem um alto grau de flexibilidade na maneira como você cria formulários no seu site. Você pode usar a gestão de conteúdo do AEM com [Criação no AEM](/help/forms/creating-adaptive-form-core-components.md) bem como [Criação baseada em documento](/help/edge/docs/forms/create-forms.md).
-
-Por exemplo, você cria formulários diretamente no Microsoft Excel ou no Google Sheets e essas planilhas são transformadas em formulários para seu site. Qualquer novo formulário ou conteúdo de formulário, como um novo campo de formulário, fica disponível instantaneamente em seu site sem exigir um processo de recriação.
 
 O AEM Forms Edge Delivery Services usa o GitHub para que os clientes possam gerenciar e implantar o código diretamente do repositório do GitHub. Por exemplo, você pode escrever formulários em [Google Sheets ou Microsoft Excel](/help/edge/docs/forms/create-forms.md) e os componentes de seus formulários podem ser desenvolvidos usando CSS e JavaScript no GitHub.
 
 Quando estiver pronto, você poderá usar o [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), uma extensão do navegador chrome, para visualizar e publicar atualizações de conteúdo.
 
 ![Instalar o AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
-
-O AEM Forms Edge Delivery Services fornece um bloco de formulários, conhecido como [Bloco Forms adaptável](/help/edge/docs/forms/create-forms.md) para adicionar um formulário ao site do Edge Delivery Services.
 
 A escolha entre as [Criação baseada em documento](#document-based-authoring-features) e [Criação no AEM](#aem-authoring-features) depende de suas necessidades específicas.
 
