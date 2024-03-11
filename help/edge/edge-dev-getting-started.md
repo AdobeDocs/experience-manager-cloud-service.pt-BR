@@ -3,7 +3,7 @@ title: Guia de introdução do desenvolvedor para criação de AEM com o Edge De
 description: Este guia colocará você em funcionamento com um novo site do Adobe Experience Manager usando o Edge Delivery Services e o Editor universal para criação de conteúdo
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: d29e1c588937d18dea2fe851df3818b6438d41c4
 workflow-type: tm+mt
 source-wordcount: '988'
 ht-degree: 0%
