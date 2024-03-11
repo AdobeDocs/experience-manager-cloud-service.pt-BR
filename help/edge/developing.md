@@ -2,13 +2,13 @@
 title: Desenvolvimento do Edge Delivery Services
 description: Saiba como desenvolver blocos e personalizar o projeto AEM para funcionar com Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: 22a791311c618fcbd61f321b8efa79c3a52ec65d
+exl-id: c356c03c-af43-43a1-a14e-45f94ccb3970
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
 
 ---
-
 
 # Desenvolvimento do Edge Delivery Services {#developing-edge}
 
@@ -26,7 +26,7 @@ Consulte a [Criar seção](/help/edge/developer/block-collection.md) da document
 
 O Edge Delivery aproveita o GitHub para que você possa gerenciar e implantar o código diretamente do seu repositório GitHub.
 
-Seus autores podem criar conteúdo usando criação baseada em documento ou conteúdo no AEM com o Universal Editor. Os desenvolvedores podem personalizar a funcionalidade do site usando CSS e JavaScript no GitHub, independentemente de como os autores criam seu conteúdo.
+Seus autores podem criar conteúdo usando a Criação baseada em documento ou conteúdo no AEM com o Universal Editor. Os desenvolvedores podem personalizar a funcionalidade do site usando CSS e JavaScript no GitHub, independentemente de como os autores criam seu conteúdo.
 
 Os sites são criados automaticamente para cada uma de suas ramificações, da pré-visualização de conteúdo à produção. Todos os recursos que você coloca no repositório GitHub estão disponíveis no seu site sem um processo de criação.
 

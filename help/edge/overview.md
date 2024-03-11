@@ -3,7 +3,7 @@ title: Introdução ao AEM e Edge Delivery Services
 description: Entenda como o AEM as a Cloud Service pode se beneficiar do desempenho e das pontuações perfeitas do Lighthouse, oferecidas pelos Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
-source-git-commit: b7b9dbfa7f939828d66a785daecf84c917923c37
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 3%
@@ -18,7 +18,7 @@ Com o Edge Delivery Services, o AEM oferece experiências excepcionais que impul
 Ao usar os Edge Delivery Services, é possível:
 
 * Crie sites rápidos com uma pontuação Lighthouse perfeita e monitore continuamente o desempenho do site por meio do monitoramento de usuários reais (RUM).
-* Aumente a eficiência da criação desvinculando as fontes de conteúdo. Pronto para uso, você pode usar a criação de AEM e a criação baseada em documentos. Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site.
+* Aumente a eficiência da criação desvinculando as fontes de conteúdo. Você pode usar a criação de AEM e a criação baseada em documentos . Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site.
 * Use uma estrutura de experimentação integrada que permita a criação rápida de testes, a execução sem impacto no desempenho e a liberação rápida para a produção de um vencedor de testes.
 
 ## Visão geral do Edge Delivery Services {#edge-overview}
@@ -27,7 +27,7 @@ O diagrama a seguir ilustra como você pode editar conteúdo no Microsoft Word (
 
 ![Arquitetura de entrega de borda](assets/AEM-with-EDS-publishing-simple2.png)
 
-Os serviços de entrega de borda são um conjunto combinável de serviços que permitem um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Como mencionado anteriormente, você pode usar ambos [Gestão de conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) com [Criação no Editor universal](/help/implementing/universal-editor/introduction.md) bem como [criação baseada em documento.](https://www.aem.live/docs/authoring)
+Os serviços de entrega de borda são um conjunto combinável de serviços que permitem um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Como mencionado anteriormente, você pode usar ambos [Gestão de conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) com [Criação no Editor universal](/help/implementing/universal-editor/introduction.md) bem como [Criação baseada em documento.](https://www.aem.live/docs/authoring)
 
 Por exemplo, você pode usar o conteúdo diretamente do Microsoft Word ou do Google Docs. Isso significa que os documentos dessas fontes podem se tornar páginas do site. Além disso, cabeçalhos, listas, imagens e elementos de fonte podem ser transferidos da fonte inicial para o site. O novo conteúdo é adicionado instantaneamente, sem um processo de reconstrução.
 
@@ -63,7 +63,7 @@ O Adobe fornece três canais para ajudá-lo com Edge Delivery Services:
 
 ### Acessar recursos da comunidade {#community-resource}
 
-O Adobe tem o compromisso de capacitá-lo com o melhor envolvimento e suporte da comunidade para o Edge Delivery Services e a Criação baseada em documentos.
+O Adobe tem o compromisso de capacitá-lo com o melhor envolvimento e suporte da comunidade para o Edge Delivery Services e a Criação baseada em documentos .
 
 * Participar de [Comunidade Experience League](https://adobe.ly/3Q6kTKl) fazer perguntas, compartilhar feedback, iniciar discussões, buscar assistência de especialistas em Adobe e AEM Advisors/Champs, e conectar-se com indivíduos que pensam da mesma maneira em tempo real.
 * Associe-se ao nosso [Canal de discórdia,](https://discord.gg/aem-live) uma plataforma mais casual para interações em tempo real e trocas rápidas de ideias.

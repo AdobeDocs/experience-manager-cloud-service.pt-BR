@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.9.0.
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
-source-git-commit: 3bec7e0387a5e04a7748a3b7341c17a993c6feb9
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 21%
@@ -56,7 +56,7 @@ Agora você pode atribuir o formulário de metadados a uma pasta específica na 
 
 ### Novos recursos na exibição do Administrador {#admin-view-features}
 
-* **Integrar o AEM Assets as a Cloud Service com a criação baseada em documentos para Edge Delivery Services**: integre o AEM Assets à criação baseada em documentos para que o Edge Delivery Services permita que os autores de sites [usar imagens disponíveis em repositórios do AEM Assets ao criar documentos no Microsoft Word ou Google Docs](/help/edge/using.md#integrate-assets-edge).
+* **Integrar o AEM Assets as a Cloud Service com a criação baseada em documentos para Edge Delivery Services**: integre o AEM Assets à Criação baseada em documentos para que o Edge Delivery Services permita que os autores de sites [usar imagens disponíveis em repositórios do AEM Assets ao criar documentos no Microsoft Word ou Google Docs](/help/edge/using.md#integrate-assets-edge).
 
 * **Extrair arquivos ZIP**: Capacidade de selecionar arquivos ZIP gerenciados no Experience Manager e [extração de arquivos diretamente no Experience Manager](/help/assets/manage-digital-assets.md#extract-zip-archives) sem baixá-los.
 

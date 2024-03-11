@@ -4,7 +4,7 @@ description: Formas perfeitas de artesanato, rápido!  o AEM Forms Edge Delivery
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Criar um formulário usando a criação com base em documentos para o Serviço de entrega de borda do AEM Forms
 
-Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. A criação com base em documentos do AEM Forms Edge Delivery permite criar formulários usando ferramentas familiares, como o Word ou o Google Docs.Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft Sharepoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho empresarial existente.
+Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. A criação com base em documento do AEM Forms Edge Delivery permite criar formulários usando ferramentas familiares, como o Word ou o Google Docs.Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft Sharepoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho empresarial existente.
 
 Este guia aborda:
 

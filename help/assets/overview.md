@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: b3bfc841f0609e1e529c97dd1f11d16de561701c
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '892'
-ht-degree: 92%
+ht-degree: 86%
 
 ---
 
@@ -54,11 +54,11 @@ Bibliotecários, desenvolvedores e superusuários do DAM podem continuar a usar 
 
 Para obter informações sobre como acessar a visualização de ativos e alguns dos recursos simplificados que ela oferece em relação à visualização de admin, consulte [Introdução à visualização de ativos](/help/assets/assets-view-introduction.md).
 
-## Integração com criação baseada em documentos para Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+## Integração com a criação baseada em documentos para Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
 
 O Edge Delivery permite criar sites rápidos e cativantes, nos quais autores(as) podem atualizar, publicar conteúdo e inicializar novos sites, tudo de maneira rápida.
 
-Integre o AEM Assets com criação baseada em documentos ao Edge Delivery Services para permitir que criadores(as) de sites usem imagens disponíveis em repositórios do AEM Assets ao criar documentos no Microsoft Word ou Google Docs. Para obter mais informações, consulte [Integrar o AEM Assets com a criação baseada em documentos](/help/edge/using.md#integrate-assets-edge).
+Integre o AEM Assets com a Criação baseada em documentos para que o Edge Delivery Services permita que os autores de sites usem imagens disponíveis em repositórios do AEM Assets ao criar documentos no Microsoft Word ou Google Docs. Para obter mais informações, consulte [Integrar o AEM Assets com a criação baseada em documentos](/help/edge/using.md#integrate-assets-edge).
 
 ## Integração com o Adobe Journey Optimizer {#integration-with-ajo}
 

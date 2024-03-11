@@ -2,7 +2,7 @@
 title: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service
 description: Introdução à arquitetura do Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 25af074bcb32e47732b27bacf10c8d3435299440
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 11%
@@ -158,9 +158,9 @@ O nível de Visualização do AEM é composto por um único nó AEM. Isso é usa
 
 Os Edge Delivery Services são operados em cima de uma CDN e infraestrutura sem servidor para montar as páginas da maneira mais eficiente. Quando um recurso é solicitado, a infraestrutura sem servidor é responsável por converter o conteúdo publicado em HTML semântico e serve como origem para o CDN.
 
-A conversão para HTML semântico acontece a partir do conteúdo publicado veiculado a partir do nível de criação AEM ou do ambiente de criação baseado em documento.
+A conversão para HTML semântico acontece a partir do conteúdo publicado veiculado a partir do nível de criação AEM ou do ambiente de Criação baseado em documento.
 
-O diagrama a seguir ilustra como você pode editar o conteúdo de sites no Microsoft Word (criação baseada em documento) e publicar no Edge Delivery. Ele também mostra o método tradicional de publicação do AEM usando os vários editores.
+O diagrama a seguir ilustra como você pode editar o conteúdo de sites no Microsoft Word (Criação baseada em documento ) e publicar no Edge Delivery. Ele também mostra o método tradicional de publicação do AEM usando os vários editores.
 
 ![AEM Sites as a Cloud Service - com Edge Delivery Services](assets/architecture-aem-edge-author-publish.png "AEM Sites as a Cloud Service - com Edge Delivery Services")
 

@@ -2,13 +2,13 @@
 title: Métodos para criar conteúdo no AEM
 description: Saiba mais sobre as diferentes maneiras de criar conteúdo no AEM e como elas são diferentes.
 feature: Authoring
-source-git-commit: faac7c803a5145f4207154bfb3c9aa06274bbb86
+exl-id: ef482843-451b-474e-a8d0-d0bfcc17221b
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Métodos para criar conteúdo no AEM {#authoring-methods}
 
@@ -63,12 +63,12 @@ O Editor universal é acessado por meio do console Sites no AEM, mas oferece a p
 
 Para saber mais sobre o Universal Editor, consulte o documento [Criação de conteúdo com o Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
-## Criação baseada em documento {#document-based}
+## Criação baseada em documento  {#document-based}
 
 Se você usa os serviços de Entrega de borda, pode optar por criar seu conteúdo como documentos convencionais, como documentos do Microsoft Word ou do Google, totalmente fora do [AEM **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
 
 ![Edição de conteúdo baseado em documento](assets/authoring-methods-document.jpg)
 
-Com a criação baseada em documentos, os autores podem usar as ferramentas que já conhecem e ainda se beneficiar da velocidade e do desempenho dos Edge Delivery Services AEM para publicar seu conteúdo. A criação baseada em documentos não requer o uso do console AEM.
+Com a Criação baseada em documentos , os autores podem usar as ferramentas que já conhecem e ainda se beneficiar da velocidade e do desempenho dos Edge Delivery Services AEM para publicar seu conteúdo. A criação baseada em documentos não requer o uso do console AEM.
 
-Para saber mais sobre a criação baseada em documento, consulte o documento [Criação de conteúdo para Edge Delivery Services.](/help/edge/authoring.md)
+Para saber mais sobre a Criação baseada em documento , consulte o documento [Criação de conteúdo para Edge Delivery Services.](/help/edge/authoring.md)

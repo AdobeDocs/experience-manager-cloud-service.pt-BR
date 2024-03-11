@@ -3,7 +3,7 @@ title: Criação de conteúdo para Edge Delivery Services
 description: Saiba como a criação de conteúdo funciona com Edge Delivery Services e como criar conteúdo AEM com Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -17,11 +17,11 @@ Com o Edge Delivery Services, a criação é fácil, rápida e flexível. Há du
 * [Criação baseada em documento](#document-based) - Como o Microsoft Word ou o Google Docs
 * [Editor universal](#universal-editor) - Uma interface moderna para a criação de conteúdo no AEM
 
-## Criação baseada em documento {#document-based}
+## Criação baseada em documento  {#document-based}
 
-No caso da criação baseada em documentos, é possível trabalhar com várias fontes, como o Microsoft Word e o Google Docs. Os documentos dessas fontes se tornam páginas do site. Cabeçalhos, listas, imagens, elementos de fonte, vídeos podem ser transferidos da fonte inicial para o seu site. Você pode adicionar metadados para fins de SEO ou usar blocos para trabalhar com conteúdo estruturado e adicionar funcionalidades.
+No caso da Criação baseada em documento, é possível trabalhar com várias fontes, como o Microsoft Word e o Google Docs. Os documentos dessas fontes se tornam páginas do site. Cabeçalhos, listas, imagens, elementos de fonte, vídeos podem ser transferidos da fonte inicial para o seu site. Você pode adicionar metadados para fins de SEO ou usar blocos para trabalhar com conteúdo estruturado e adicionar funcionalidades.
 
-Para obter mais detalhes sobre a criação baseada em documentos, consulte [este documento na documentação do Edge Delivery Services.](/help/edge/docs/authoring.md)
+Para obter mais detalhes sobre a Criação baseada em documentos, consulte [este documento na documentação do Edge Delivery Services.](/help/edge/docs/authoring.md)
 
 ## Criação no Editor universal {#universal-editor}
 
