@@ -4,9 +4,9 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: 610f9ba3f342b37d0d20a91c337323bffe95d58d
+source-git-commit: 14171647dce7d2f6ce985616035eefa62c6955db
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1878'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
 
       ![Baixar conteúdo de amostra](/help/edge/assets/download-sample-content.png)
 
-      A variável `index`, `nav`, e `footer` os arquivos definem o layout básico de suas páginas e raramente são alterados em um projeto. Eles também têm uma estrutura específica diferente da maioria dos outros arquivos de conteúdo. Ao examinar esses arquivos, você terá uma ideia de como o conteúdo é organizado em projetos AEM.
+      A variável `nav` e `footer` os arquivos definem o layout básico de suas páginas e raramente são alterados em um projeto. Eles também têm uma estrutura específica diferente da maioria dos outros arquivos de conteúdo. Ao examinar esses arquivos, você terá uma ideia de como o conteúdo é organizado em projetos AEM.
 
 
    1. Faça upload desses arquivos para a pasta Microsoft SharePoint ou Google Drive.
@@ -148,7 +148,7 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
 
       Isso conecta sua pasta de conteúdo ao seu site. Depois de atualizar a referência, você pode enfrentar os erros &quot;404 Não encontrado&quot; inicialmente. Isso ocorre porque seu conteúdo ainda não foi visualizado. A próxima seção explica como começar a criar e visualizar seu conteúdo.
 
-      ![Confirmar arquivo fsatab.yaml atualizado](/help/edge/assets/aem-forms-project-folder-error.png)
+
 
 ### Pré-visualizar e publicar seu conteúdo
 
@@ -204,9 +204,22 @@ O conteúdo de amostra inclui uma folha de &quot;consulta&quot; que serve como m
 
 ![Formulário de consulta](/help/edge/assets/enquiry-form-microsoft-sharepoint.png)
 
-Vamos começar com a atualização de um rótulo de campo. Abra a planilha &quot;consulta&quot; para edição, altere o rótulo do botão enviar para `Let's Chat`e use o sidekick para publicá-lo.
+Vamos começar com a atualização de um rótulo de campo. Abra a planilha &quot;consulta&quot; para edição, altere o rótulo do botão enviar para `Let's Chat` e use o AEM Sidekick para visualizar e publicar o arquivo.
 
 ![Formulário de consulta](/help/edge/assets/enquiry-form-preview-publish.png)
+
+Ao visualizar ou publicar o arquivo, uma versão JSON do arquivo é exibida em uma nova guia. Copie o URL de visualização (.hlx.page) ou publicação (.hlx.live) do arquivo.
+
+![JSON da planilha de formulário](/help/edge/assets//preview-and-publish-enquiry-form.png)
+
+Abra o `enquiry` e substitua o URL no bloco de formulário pelo URL do arquivo copiado na etapa anterior. Certifique-se de que o URL seja um hiperlink.
+
+![Arquivo de consulta com o URL .json do URL da planilha](/help/edge/assets/enquiry-doc-to-embed-form.png)
+
+Use o AEM Sidekick para visualizar e publicar o documento de consulta.
+
+![Arquivo de consulta com o URL .json do URL da planilha](/help/edge/assets/preview-and-publish-enquiry-document.png)
+
 
 Para visualizar o formulário de consulta atualizado, vá para o seguinte URL:
 
