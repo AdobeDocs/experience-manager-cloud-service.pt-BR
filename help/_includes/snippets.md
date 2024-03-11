@@ -1,8 +1,8 @@
 ---
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: 5cf8abe43987d145b302228877a38615f21ffd27
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 14%
+source-wordcount: '367'
+ht-degree: 11%
 
 ---
 # Trechos {#snippets}
@@ -61,11 +61,13 @@ ht-degree: 14%
 
 [!BADGE TECNOLOGIA DE ACESSO ANTECIPADO - Pergunte-nos sobre esse recurso nos laboratórios da AEM Sites no seu canal de Slack!]{type=Informative url="/help/edge/docs/slack.md" tooltip="A criação do AEM com o Edge Delivery Services é uma tecnologia de acesso antecipado."}
 
-## Consulte também: {#see-also-forms-eds}
+## Veja mais {#see-more-forms-eds}
 
-* [Componentes de formulários](/help/edge/docs/forms/form-components.md)
-* [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
-* [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
-* [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-forms.md)
-* [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
-* [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)
+* [Introdução ao AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
+* [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
+* [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
+* [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+* [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
+* [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
