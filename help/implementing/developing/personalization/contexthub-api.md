@@ -2,7 +2,7 @@
 title: Referência da API JavaScript do ContextHub
 description: A API JavaScript do ContextHub estará disponível para seus scripts quando o componente ContextHub for adicionado à página
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '4602'
 ht-degree: 2%
@@ -68,7 +68,7 @@ O objeto ContextHub fornece acesso a todos os armazenamentos.
 
 ### Funções (ContextHub) {#functions-contexthub}
 
-#### getAllStores () {#getallstores}
+#### getAllStores() {#getallstores}
 
 Retorna todos os armazenamentos registrados do ContextHub.
 
@@ -83,7 +83,7 @@ Um objeto que contém todos os armazenamentos do ContextHub. Cada armazenamento 
 O exemplo a seguir recupera todos os armazenamentos e, em seguida, recupera o armazenamento de geolocalização:
 
 ```javascript
-var allStores = ContextHub.getAllStores ();
+var allStores = ContextHub.getAllStores();
 var geoloc = allStores.geolocation
 ```
 
@@ -127,7 +127,7 @@ Fornece acesso aos segmentos do ContextHub.
 
 ### Funções (ContextHub.SegmentEngine.SegmentManager) {#functions-contexthub-segmentengine-segmentmanager}
 
-#### getResolvedSegments () {#getresolvedsegments}
+#### getResolvedSegments() {#getresolvedsegments}
 
 Retorna os segmentos resolvidos no contexto atual. Esta função não tem parâmetros.
 
@@ -155,7 +155,7 @@ A `ContextHub.Utils.Persistence` objeto. Para obter informações sobre o valor 
 
 ### Funções (ContextHub.Store.Core) {#functions-contexthub-store-core}
 
-#### addAllItems (árvore, opções) {#addallitems-tree-options}
+#### addAllItems(árvore, opções) {#addallitems-tree-options}
 
 Mescla um objeto de dados ou uma matriz com os dados armazenados. Cada par de chave/valor no objeto ou na matriz é adicionado ao armazenamento (por meio da variável `setItem` ):
 
@@ -193,7 +193,7 @@ A `boolean` valor:
 * Um valor de `true` indica que a referência foi adicionada.
 * Um valor de `false` indica que nenhuma referência foi adicionada.
 
-#### announcementReadiness () {#announcereadiness}
+#### announcementReadiness() {#announcereadiness}
 
 Aciona o `ready` evento para esta loja. Esta função não tem parâmetros e não retorna nenhum valor.
 
@@ -213,7 +213,7 @@ Retorna o valor associado a uma chave.
 
 Um Objeto que representa o valor da chave.
 
-#### getKeys (includeInternals) {#getkeys-includeinternals}
+#### getKeys(includeInternals) {#getkeys-includeinternals}
 
 Recupera as chaves do armazenamento. Como opção, você pode recuperar as chaves usadas internamente pela estrutura do ContextHub.
 
@@ -225,7 +225,7 @@ Recupera as chaves do armazenamento. Como opção, você pode recuperar as chave
 
 Uma matriz de nomes de chave ( `string` valores).
 
-#### getReferences () {#getreferences}
+#### getReferences() {#getreferences}
 
 Recupera as referências do armazenamento.
 
@@ -401,7 +401,7 @@ Retorna a resposta bruta armazenada em cache desde a última chamada para o serv
 
 Um objeto que representa a resposta bruta.
 
-#### getServiceDetails () {#getservicedetails}
+#### getServiceDetails() {#getservicedetails}
 
 Recupera o objeto de serviço para este objeto ContextHub.Store.JSONPStore. O objeto de serviço contém as informações necessárias para criar a URL do serviço.
 
@@ -521,7 +521,7 @@ Uma classe de utilitário para interagir com cookies.
 
 ### Funções (ContextHub.Utils.Cookie) {#functions-contexthub-utils-cookie}
 
-#### existe (chave) {#exists-key}
+#### exists(key) {#exists-key}
 
 Determina se um cookie existe.
 
@@ -536,12 +536,12 @@ A `boolean` valor true indica que o cookie existe.
 ##### Exemplo {#example-exists}
 
 ```javascript
-if (ContextHub.Utils.Cookie.exists ("name")) {
+if (ContextHub.Utils.Cookie.exists("name")) {
    // conditionally-executed code
 }
 ```
 
-#### getAllItems (filtro) {#getallitems-filter}
+#### getAllItems(filtro) {#getallitems-filter}
 
 Retorna todos os cookies com chaves que correspondem a um filtro.
 
@@ -560,7 +560,7 @@ Um objeto de cookies. As propriedades do objeto são chaves de cookie e os valor
 ##### Exemplo {#example-getallitems}
 
 ```javascript
-ContextHub.Utils.Cookie.getAllItems ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### getItem(key) {#getitem-key-1}
@@ -581,7 +581,7 @@ O valor do cookie, ou `null` se nenhum cookie for encontrado para a chave.
 ContextHub.Utils.Cookie.getItem("name");
 ```
 
-#### getKeys (filtro) {#getkeys-filter}
+#### getKeys(filtro) {#getkeys-filter}
 
 Retorna uma matriz das chaves de cookies existentes que correspondem a um filtro.
 
@@ -600,7 +600,7 @@ Uma matriz de strings em que cada string é a chave de um cookie que corresponde
 ##### Exemplo {#example-getkeys-1}
 
 ```javascript
-ContextHub.Utils.Cookie.getKeys ([/^cq-authoring/, /^cq-editor/])
+ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
 #### removeItem(chave, opções) {#removeitem-key-options-1}
@@ -829,7 +829,7 @@ Essa classe facilita a manipulação de objetos de dados que serão armazenados 
 
 ### Funções (ContextHub.Utils.JSON.tree) {#functions-contexthub-utils-json-tree}
 
-#### addAllItems () {#addallitems}
+#### addAllItems() {#addallitems}
 
 Cria uma cópia de um objeto de dados e adiciona a ele a árvore de dados de um segundo objeto. A função retorna a cópia e não modifica nenhum dos objetos originais. Quando as árvores de dados dos dois objetos contêm chaves idênticas, o valor do segundo objeto substitui o valor do primeiro objeto.
 
@@ -911,7 +911,7 @@ Object {
 }
 ```
 
-#### getKeys () {#getkeys}
+#### getKeys() {#getkeys}
 
 Recupera todas as chaves da árvore de dados de um objeto. Como opção, você pode recuperar somente as chaves dos filhos de uma chave específica. Também é possível especificar uma ordem de classificação das chaves recuperadas.
 
@@ -946,7 +946,7 @@ myObject {
 }
 ```
 
-A variável `ContextHub.Utils.JSON.tree.getKeys (myObject);` O script retorna a seguinte matriz:
+A variável `ContextHub.Utils.JSON.tree.getKeys(myObject);` O script retorna a seguinte matriz:
 
 ```javascript
 ["/location", "/location/city", "/location/country", "/location/latitude", "/location/longitude", "/location/weather", "/location/weather/humidity", "/location/weather/precipitation", "/location/weather/temperature", "/location/weather/wind"]
@@ -1072,7 +1072,7 @@ Permite registrar candidatos de armazenamento e obter candidatos registrados.
 
 ### Funções (ContextHub.Utils.storeCandidates) {#functions-contexthub-utils-storecandidates}
 
-#### getRegisteredCandidates (storeType) {#getregisteredcandidates-storetype}
+#### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
 
 Retorna os tipos de armazenamento registrados como candidatos de armazenamento. Recupere os candidatos registrados de um tipo de armazenamento específico ou de todos os tipos de armazenamento.
 
@@ -1084,7 +1084,7 @@ Retorna os tipos de armazenamento registrados como candidatos de armazenamento. 
 
 Um objeto de tipos de armazenamento. As propriedades do objeto são os nomes do tipo de armazenamento e os valores da propriedade são uma matriz de candidatos de armazenamento registrados.
 
-#### getStoreFromCandidates (storeType) {#getstorefromcandidates-storetype}
+#### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
 
 Retorna um tipo de armazenamento dos candidatos registrados. Se mais de um tipo de armazenamento com o mesmo nome estiver registrado, a função retornará o tipo de armazenamento com a prioridade mais alta.
 
@@ -1096,7 +1096,7 @@ Retorna um tipo de armazenamento dos candidatos registrados. Se mais de um tipo 
 
 Um objeto que representa o candidato de armazenamento registrado. Se o Tipo de armazenamento solicitado não estiver registrado, um erro será lançado.
 
-#### getSupportedStoreTypes () {#getsupportedstoretypes}
+#### getSupportedStoreTypes() {#getsupportedstoretypes}
 
 Retorna os nomes dos tipos de armazenamento registrados como candidatos de armazenamento. Esta função não requer parâmetros.
 

@@ -2,7 +2,7 @@
 title: '[!DNL Live Search] Popover CIF component'
 description: Usar componentes do CIF para ativar [!DNL Live Search] Componente Popover em um site AEM
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -404,10 +404,10 @@ Para ativar o componente CIF, os arquivos devem ser editados e criados.
         `${dataServicesStorefrontInstanceContext.store_url}catalogsearch/result`
       );
       // initialize store event after live-search
-      this._initMetrics ();
+      this._initMetrics();
     }
   
-    async _initMetrics () {
+    async _initMetrics() {
       //  Magento Store event
   
       // wait until script is magentoStorefrontEvents is found

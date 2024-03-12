@@ -1,9 +1,9 @@
 ---
 title: O que são expressões de formulário adaptável?
 description: Use expressões adaptáveis do Forms para adicionar validação automática, cálculo e ativar ou desativar a visibilidade de uma seção.
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '2683'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -215,7 +215,7 @@ O GuideBridge é uma coleção de APIs que pode ser usada para interagir com o A
 
 * Para redefinir campos de formulário, é possível acionar `guideBridge.reset()` API na expressão de clique de um botão. Da mesma forma, há uma API de envio que pode ser chamada como uma expressão de clique `guideBridge.submit()`**.**
 
-* Você pode usar o `setFocus ()` API para definir o foco em vários campos ou painéis (para foco do painel, é definido para o primeiro campo automaticamente). `setFocus ()`O fornece uma grande variedade de opções para navegar, como navegar pelos painéis, percorrer antes/depois, definir o foco para um campo específico e muito mais. Por exemplo, para mover para o próximo painel, é possível usar: `guideBridge.setFocus (this.panel.somExpression, 'nextItem').`
+* Você pode usar o `setFocus()` API para definir o foco em vários campos ou painéis (para foco do painel, é definido para o primeiro campo automaticamente). `setFocus()`O fornece uma grande variedade de opções para navegar, como navegar pelos painéis, percorrer antes/depois, definir o foco para um campo específico e muito mais. Por exemplo, para mover para o próximo painel, você pode usar: `guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;).
 
 * Para validar um Formulário adaptável ou seus painéis específicos, use `guideBridge.validate(errorList, somExpression).`
 

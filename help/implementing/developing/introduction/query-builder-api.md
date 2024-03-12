@@ -2,7 +2,7 @@
 title: API do Construtor de consulta
 description: A funcionalidade do Construtor de consultas de compartilhamento de ativos é exposta por meio de uma API Java&trade; e uma API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 0%
@@ -15,7 +15,7 @@ O Query Builder oferece uma maneira fácil de consultar o repositório de conte�
 
 O construtor de consultas do lado do servidor ([`QueryBuilder`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/QueryBuilder.html)) aceita uma descrição de consulta, cria e executa uma consulta XPath, opcionalmente filtra o conjunto de resultados e também extrai facetas, se desejar.
 
-A descrição da consulta é simplesmente um conjunto de predicados ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Os exemplos incluem um predicado de texto completo, que corresponde à variável `jcr:contains ()` no XPath.
+A descrição da consulta é simplesmente um conjunto de predicados ([`Predicate`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/Predicate.html)). Os exemplos incluem um predicado de texto completo, que corresponde à variável `jcr:contains()` no XPath.
 
 Para cada tipo de predicado, há um componente de avaliador ([`PredicateEvaluator`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) que sabe como lidar com esse predicado específico para XPath, filtragem e extração de facetas. É fácil criar avaliadores personalizados, que são conectados por meio do tempo de execução do componente OSGi.
 
@@ -125,7 +125,7 @@ Por padrão, o Query Builder também forneceria o número de ocorrências. Depen
 
 Por exemplo, a interface pode adaptar a seguinte abordagem:
 
-* Obtenha e exiba a contagem precisa do número total de ocorrências ([SearchResult.getTotalMatches ()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) ou total no `querybuilder.json` igual ou inferior a 100;
+* Obtenha e exiba a contagem precisa do número total de ocorrências ([SearchResult.getTotalMatches()](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/result/SearchResult.html#getTotalMatches) ou total no `querybuilder.json` igual ou inferior a 100;
 * Definir `guessTotal` para 100 chamando o Construtor de consultas.
 
 * A resposta pode ter o seguinte resultado:
@@ -381,8 +381,8 @@ Para essas propriedades principais, é possível encurtar a consulta e usar `sim
     SearchResult result = query.getResult();
 
     // paging metadata
-    int hitsPerPage = result.getHits ().size(); // 20 (set above) or lower
-    long totalMatches = result.getTotalMatches ();
+    int hitsPerPage = result.getHits().size(); // 20 (set above) or lower
+    long totalMatches = result.getTotalMatches();
     long offset = result.getStartIndex();
     long numberOfPages = totalMatches / 20;
 
@@ -396,7 +396,7 @@ Para essas propriedades principais, é possível encurtar a consulta e usar `sim
     doc.appendChild( root );
 
     // iterating over the results
-    for (Hit hit : result.getHits ()) {
+for (Hit hit : result.getHits()) {
        String path = hit.getPath();
 
       //Create a result element
@@ -461,7 +461,7 @@ Explicar **all** consultas durante o ciclo de desenvolvimento em relação ao í
    * Navegue até `https://<host>:<port>/system/console/slinglog`. Criar um agente para `com.day.cq.search.impl.builder.QueryImpl` em **DEPURAR**.
 1. Depois que DEBUG é ativado para a classe acima, os logs exibem o XPath gerado pelo Construtor de consultas.
 1. Copie a consulta XPath da entrada de log da consulta associada do Construtor de Consultas. Por exemplo:
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]`
+   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]`
 1. Cole a consulta XPath na Explicar consulta como XPath para que você possa obter o plano de consulta.
 
 ### Obter XPath explicável por meio do depurador do construtor de consultas {#obtain-explain-able-xpath-via-the-query-builder-debugger}
@@ -497,7 +497,7 @@ null=group: limit=20, offset=0[
     {path=path: path=/content}
     {type=type: type=cq:Page}
 ]
-com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains (jcr:content, "WKND") or jcr:contains (jcr:content/@cq:tags, "WKND"))]
+com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "WKND") or jcr:contains(jcr:content/@cq:tags, "WKND"))]
 com.day.cq.search.impl.builder.QueryImpl no filtering predicates
 com.day.cq.search.impl.builder.QueryImpl query execution took 69 ms
 ```

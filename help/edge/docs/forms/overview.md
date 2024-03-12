@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: 8ff0363fbb97aac85733fc9444819fa4d6f12805
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -79,16 +79,20 @@ A Criação de AEM fornece uma interface WYSIWYG (Adaptive Forms Editor) para a 
 
 No essencial, [Criação no AEM](/help/forms/creating-adaptive-form-core-components.md) baseia-se na fundação da [Criação baseada em documento](/help/edge/docs/forms/create-forms.md), fornecendo um kit de ferramentas mais avançado para criar e gerenciar formulários complexos.
 
+>[!NOTE]
+>
+>
+> O recurso de criação de AEM está disponível no programa dos primeiros usuários. Caso esteja interessado, envie um email rápido do seu endereço comercial para aem-forms-ea@adobe.com para solicitar acesso ao recurso.
+
 ### AEM Forms Edge Delivery Services: Criação. Publicação e envio do Forms
 
 Os diagramas a seguir ilustram o processo de criação, publicação e envio de formulários usando a Criação baseada em documento e a Criação por AEM.
 
-
-
-
 ![Criação baseada em documento ](/help/edge/assets/document-based-authoring-workflow.png)
 
 ![Criação no AEM](/help/edge/assets/aem-authoring-workflow.png)
+
+
 
 
 ## Começar a criar formulários
@@ -101,6 +105,17 @@ Os diagramas a seguir ilustram o processo de criação, publicação e envio de 
 * [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

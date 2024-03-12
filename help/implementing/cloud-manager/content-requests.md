@@ -2,7 +2,7 @@
 title: Noções básicas sobre solicitações de conteúdo Cloud Service
 description: Se você adquiriu licenças de solicitação de conteúdo do Adobe, saiba mais sobre os tipos de solicitações de conteúdo que o Adobe Experience Cloud as a Service mede e as variações com as ferramentas de relatório de análise de uma organização.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 5%
@@ -140,7 +140,7 @@ O serviço de monitoramento do usuário real foi projetado para impedir a coleta
 
 * Se você deseja fazer parte de nosso programa de Primeiros usuários, envie um email para `aemcs-rum-adopter@adobe.com`, junto com o nome de domínio para o ambiente de produção, preparo e desenvolvimento a partir do endereço de email associado à Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de usuário real (RUM) para você.
 * Depois de concluído, a equipe de produtos de colaboração do Adobe criará um Canal do cliente.
-* A equipe de produtos do Adobe entrará em contato com você para fornecer a chave de domínio e o URL do painel de dados, onde é possível visualizar as Exibições de página e [Os Componentes principais da Web (CWV)](https://web.dev/vitals/) métricas coletadas pela coleção de serviços de monitoramento do usuário real do lado do cliente.
+* A equipe de produtos do Adobe entrará em contato com você para fornecer a chave de domínio e o URL do painel de dados, onde é possível visualizar as Exibições de página e [Vídeos virtuais principais da Web (CWV)](https://web.dev/vitals/) métricas coletadas pela coleção de serviços de monitoramento do usuário real do lado do cliente.
 * Em seguida, você será orientado sobre como usar a chave de domínio para acessar o url do painel de dados e visualizar as métricas.
 
 ### Como os dados do Real User Monitoring Service estão sendo usados {#how-rum-service-data-is-being-used}

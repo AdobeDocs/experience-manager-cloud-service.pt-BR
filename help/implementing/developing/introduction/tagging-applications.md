@@ -2,7 +2,7 @@
 title: Criação de tags em aplicativos do AEM
 description: Trabalhar programaticamente com tags ou estender tags em um aplicativo AEM personalizado
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: 53a66eac5ca49183221a1d61b825401d4645859e
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
@@ -80,10 +80,10 @@ Resource node = tag.adaptTo(Resource.class);
 
 ```java
 // Getting the tags of a Resource:
-Tag[] tags = tagManager.getTags (resource);
+Tag[] tags = tagManager.getTags(resource);
 
 // Setting tags to a Resource:
-tagManager.setTags (resource, tags);
+tagManager.setTags(resource, tags);
 ```
 
 ### Pesquisando tags {#searching-for-tags}
@@ -144,8 +144,8 @@ A API do lado do servidor localizou `title`Métodos relacionados ao:
 
 * [`com.day.cq.tagging.Tag`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html)
    * `getLocalizedTitle(Locale locale)`
-   * `getLocalizedTitlePaths ()`
-   * `getLocalizedTitles ()`
+   * `getLocalizedTitlePaths()`
+   * `getLocalizedTitles()`
    * `getTitle(Locale locale)`
    * `getTitlePath(Locale locale)`
 * [`com.day.cq.tagging.TagManager`](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/TagManager.html)

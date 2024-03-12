@@ -5,80 +5,127 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: e6c66b22-dc52-49e3-a920-059adb5be22f
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 1%
+source-wordcount: '196'
+ht-degree: 3%
 
 ---
 
 # Mostrar a página de agradecimento ou o formulário de redirecionamento após o envio
 
-Depois que um usuário envia um formulário, é crucial fornecer uma experiência contínua por meio de uma página de agradecimento ou de um redirecionamento. Esses elementos não apenas confirmam o envio bem-sucedido, mas também melhoram a satisfação do usuário e os orientam ainda mais em sua jornada.
+Depois que um usuário envia um formulário, é crucial fornecer uma experiência perfeita por meio de uma mensagem de agradecimento. Isso não só confirma o envio bem-sucedido, como também aumenta a satisfação do usuário e o orienta ainda mais em sua jornada.
 
-* **Página de agradecimento**: uma página de agradecimento é uma pedra angular da experiência do usuário, oferecendo garantia e transmitindo informações importantes, além de reforçar a identidade da marca. Ele serve como um reconhecimento direto da ação do usuário, fomentando uma sensação de conclusão e satisfação.
+## Configuração de uma mensagem de agradecimento personalizada
 
-* **Redirecionar**: um redirecionamento desempenha um papel fundamental ao direcionar os usuários para destinos relevantes, otimizando o engajamento e, em última análise, aumentando as taxas de conversão. Ao orientar os usuários para a próxima etapa da jornada de maneira contínua, o redirecionamento garante uma experiência de navegação tranquila. Por exemplo, redirecionando o usuário para a página de pagamentos após coletar os detalhes iniciais.
+O comportamento padrão do bloco adaptável do Forms é exibir a seguinte mensagem de agradecimento no envio. A mensagem é exibida na parte superior do formulário.
 
-No bloco do Adaptive Forms, o comportamento padrão é exibir uma página de agradecimento. No entanto, você tem a flexibilidade de personalizar essa experiência para atender às suas necessidades específicas. As opções incluem:
+![mensagem de agradecimento padrão](/help/edge/assets/thank-you-message.png)
 
-* [Configuração da página de agradecimento e da mensagem para alinhar-se às suas metas de marca e comunicação](#configuring-the-thank-you-page-and-message)
-* [Redirecionar usuários para outra página após o envio para obter mais ações](#redirect-users-to-another-page-post-submission)
 
-## Configurando a página de agradecimento e a mensagem
+Siga as etapas abaixo para configurar uma mensagem de agradecimento personalizada para o bloco adaptável do Forms:
 
-O comportamento padrão do bloco adaptável do Forms é exibir a página &quot;obrigado&quot; no envio. Siga estas etapas para configurar a página &quot;obrigado&quot; do seu bloco adaptável do Forms:
+1. Acesse o projeto do AEM no computador local ou no repositório do GitHub.
 
-1. Acesse sua pasta do projeto AEM Edge Delivery no Microsoft SharePoint ou no Google Workspace.
-1. Crie um arquivo do Microsoft Word ou Google Docs chamado &quot;obrigado&quot; no diretório do projeto.
-1. Adicione sua mensagem de agradecimento ao arquivo &quot;thankyou&quot;. </br>
+1. Navegue até [Pasta de projeto do AEM]arquivo \blocks\form\submit.js para edição.
 
-   ![Exemplo de página de agradecimento](/help/edge/assets/sample-thankyou-page.png)
-
-1. Use o AEM Sidekick para visualizar e publicar o arquivo &quot;obrigado&quot;.
-
-Seu bloco adaptável do Forms exibe a página &quot;obrigado&quot; no envio do formulário.
-
-## Redirecionar usuários para outra página após o envio
-
-Por padrão, o bloco adaptável do Forms redireciona os usuários para a página &quot;obrigado&quot;. Para redirecionar usuários para uma página diferente da página padrão &quot;obrigado&quot;, você tem duas opções:
-
-* [Substituir a página de &quot;obrigado&quot; por uma página diferente](#replace-the-existing-thankyou-page)
-* [Use redirecionamentos de site para o redirecionamento de página de agradecimento](#use-website-redirects-for-thankyou-page-redirection)
-
-### Substitua a página de &quot;obrigado&quot;
-
-1. Abra o &quot;[Projeto EDS]/blocks/form/form.js&quot; para edição.
-1. Altere o `thankyou` página na linha a seguir para a página de sua escolha:
+1. Localize o seguinte código
 
    ```JavaScript
-   window.location.href = form.dataset?.redirect || 'thankyou';
+       thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
    ```
 
-   Por exemplo,
+1. Substitua a mensagem padrão pela mensagem personalizada. Por exemplo,
+
 
    ```JavaScript
-   window.location.href = form.dataset?.redirect || 'payment';
+       thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Your submission has been received and noted.';
    ```
 
-   >[!NOTE]
-   >
-   > Verifique se existe uma página com o mesmo nome na pasta do projeto do Edge Delivery Services no Microsoft SharePoint ou no Google Workspace. Se a página não existir, prossiga para criá-la e publicá-la.
 
-1. Continue para fazer o check-in da pasta &#39;form.js&#39; atualizada e de seus arquivos subjacentes para o projeto Edge Delivery Services no GitHub. Essa atualização garante que o formulário agora redirecione para a página atualizada conforme especificado.
+1. Salve o arquivo. Confirme o arquivo atualizado no repositório GitHub. Agora, ao enviar um formulário, a mensagem de agradecimento personalizada é exibida. Por exemplo,
 
-1. Verifique se a página existe na pasta do projeto EDS e publique-a.
+![Mensagem de agradecimento personalizada](/help/edge/assets/custom-thank-you-message.png)
+
+<!-- 
+
+* **Thank you message**: A thank you message is a cornerstone of user experience, offering reassurance and conveying important information while reinforcing brand identity. It serves as a direct acknowledgment of the user's action, fostering a sense of completion and satisfaction.
+
+* **Redirect**: A redirect plays a pivotal role in steering users towards relevant destinations, optimizing engagement, and ultimately boosting conversion rates. By seamlessly guiding users to the next step in their journey, a redirect ensures a smooth navigation experience. For example, redirecting user to payments page after collecting initial details. 
+
+In the Adaptive Forms Block, the default behavior is to display a thank you message. However, you have the flexibility to tailor this experience to meet your specific needs. Options include:
+
+* [Configuring a custom thank you message to align with your brand and communication goals](#configuring-the-thank-you-page-and-message) 
+* [Redirecting users to another page post-submission for further action](#redirect-users-to-another-page-post-submission)
+
+## Redirect users to another page post-submission
+
+Redirecting a user to another page after form submission can enhance user experience by providing relevant information, confirming actions, and guiding users towards desired outcomes. For example, 
+
+* after a user completes a purchase form, they are redirected to a payment page to complete the transaction securely. 
+* upon submitting a registration form for an event or webinar, users are redirected to a confirmation page displaying event details, such as date, time, and location.
+
+To redirect the "thankyou" page to a different page, use the [website redirects](https://www.aem.live/docs/redirects) spreadsheet. 
 
 
-### Use redirecionamentos de site para o redirecionamento de página de agradecimento
 
-Redirecionar um usuário para outra página após o envio do formulário pode aprimorar a experiência do usuário fornecendo informações relevantes, confirmando ações e orientando os usuários para os resultados desejados. Por exemplo,
 
-* depois que um usuário conclui um formulário de compra, ele é redirecionado a uma página de pagamento para concluir a transação de forma segura.
-* ao enviar um formulário de inscrição para um evento ou webinário, os usuários são redirecionados para uma página de confirmação exibindo detalhes do evento, como data, hora e local.
 
-Para redirecionar a página &quot;obrigado&quot; para uma página diferente, use o [redirecionamentos do site](https://www.aem.live/docs/redirects) planilha eletrônica.
+1. Access your AEM Edge Delivery project folder on Microsoft SharePoint or Google Workspace.
+1. Create a Microsoft Word or Google Docs file named "thankyou" within your project directory.
+1. Add your thank you message to the "thankyou" file. </br>
+   
+    ![Example thank you page](/help/edge/assets/sample-thankyou-page.png) 
 
+1. Use AEM Sidekick to preview and publish the "thankyou" file.
+
+ Your Adaptive Forms Block displays the "thankyou" page on form submission. 
+
+## Redirect users to another page post-submission
+
+By default, the Adaptive Forms Block redirects the users to the "thankyou" page. To redirect users to a page other than the default "thankyou" page, you have two options: 
+
+* [Replace the "thankyou" page with a different page](#replace-the-existing-thankyou-page) 
+* [Use website redirects for "thankyou" page redirection](#use-website-redirects-for-thankyou-page-redirection) 
+
+### Replace the "thankyou" page
+
+1. Open the "[EDS Project]/blocks/form/form.js" file for editing.
+1. Change the `thankyou` page in the following line to page of your choice:
+
+    ```JavaScript
+
+    window.location.href = form.dataset?.redirect || 'thankyou';
+
+    ```
+
+    For example,
+
+    ```JavaScript
+
+    window.location.href = form.dataset?.redirect || 'payment';
+        
+    ```
+    
+    >[!NOTE]
+    >
+    > Ensure that a page with the same name exists in your Edge Delivery Services project folder on either Microsoft SharePoint or Google Workspace. If the page does not exist, proceed to create and publish it.  
+
+1. Proceed to check in the updated 'form.js' folder and its underlying files to your Edge Delivery Services project on GitHub. This update ensures that the form now redirects to the updated page as specified.
+
+1. Ensure that the page exists in your EDS project folder and publish it.
+
+
+### Use website redirects for "thankyou" page redirection
+
+Redirecting a user to another page after form submission can enhance user experience by providing relevant information, confirming actions, and guiding users towards desired outcomes. For example, 
+
+* after a user completes a purchase form, they are redirected to a payment page to complete the transaction securely. 
+* upon submitting a registration form for an event or webinar, users are redirected to a confirmation page displaying event details, such as date, time, and location.
+
+To redirect the "thankyou" page to a different page, use the [website redirects](https://www.aem.live/docs/redirects) spreadsheet. 
+
+-->
 
 ## Consulte também:
 
