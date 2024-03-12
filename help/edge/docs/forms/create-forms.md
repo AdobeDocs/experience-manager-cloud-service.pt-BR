@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel o
 
 Antes de começar, verifique se você concluiu as seguintes etapas:
 
-* Configurar um [Projeto do AEM usando a placa-padrão do AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [Adição do bloco adaptável do Forms ao seu projeto existente AEM](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clonar o repositório GitHub correspondente no computador local.
+* Configurar um [Projeto do AEM usando a placa-padrão do AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [Adição do bloco adaptável do Forms ao seu projeto AEM existente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clonar o repositório GitHub correspondente no computador local.
 Neste documento, a pasta local do seu projeto Edge Delivery Services (EDS) é chamada de `[EDS Project repository]`.
 * Verifique se você tem acesso ao Google Sheets ou ao Microsoft SharePoint. Para configurar o Microsoft SharePoint como sua fonte de conteúdo, consulte [Como usar o SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
 

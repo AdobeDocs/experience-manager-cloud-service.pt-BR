@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 2%
+source-wordcount: '937'
+ht-degree: 3%
 
 ---
 
@@ -64,3 +64,6 @@ Cada componente de formulário vem com várias propriedades que permitem control
 | Marcado | Caixa de seleção, Rádio | Determina se o campo é selecionado por padrão. O atributo marcado é uma propriedade booleana usada com entradas de caixa de seleção e rádio. Quando definido como true, indica que o campo é selecionado por padrão quando o formulário é carregado. |
 | Fieldset | Todos | Agrupa campos para criar seções visualmente distintas em um formulário. O elemento fieldset agrupa campos relacionados em um formulário, separando-os visualmente para melhorar a organização e a experiência do usuário. </br> Para organizar um conjunto de campos em um conjunto de campos, use o `fieldset` e especifique seu atributo name. No exemplo abaixo, demonstramos como os botões de opção são encapsulados em um único conjunto de campo para melhorar a organização. ![Exemplo de conjunto de campos](/help/edge/assets/fieldset-example.png) |
 
+## Consulte também:
+
+{{see-more-forms-eds}}

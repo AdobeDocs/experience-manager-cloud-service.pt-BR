@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 # Preparar sua planilha para aceitar dados
 
 
-Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-forms.md), é hora de permitir que a planilha correspondente comece a receber dados.
+Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-forms.md), é hora de permitir que a planilha correspondente comece a receber dados. Você pode ativar manualmente a planilha para aceitar dados ou usar APIs de Administração para permitir que uma planilha aceite dados.
 
 ![Ecossistema de criação baseado em documento](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -24,7 +24,10 @@ Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-fo
 
 -->
 
-Para ativar a planilha:
+
+## Habilitar manualmente a planilha para aceitar dados
+
+Para permitir que a planilha aceite dados
 
 1. Abra a planilha que tem seu formulário e anexe uma nova planilha, renomeando-a para `incoming`.
 
@@ -61,8 +64,7 @@ Depois que a planilha for configurada para receber dados, você poderá [visuali
 >
 >  Nunca as planilhas de &quot;padrão compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
 
-
-## (Opcional) Use APIs de administrador para permitir que uma planilha aceite dados
+### Usar APIs de administrador para permitir que uma planilha aceite dados
 
 Você também pode enviar uma solicitação POST para o formulário para permitir que ele aceite dados e configure cabeçalhos para o `incoming` planilha. Ao receber o pedido de POST, o serviço analisa o corpo do pedido e gera de forma autônoma os cabeçalhos e folhas essenciais necessários para a assimilação de dados.
 
@@ -151,7 +153,6 @@ Para usar APIs de administrador para permitir que uma planilha aceite dados:
    O formulário agora está habilitado para aceitar dados. Você também observa as seguintes alterações na planilha:
 
 ## Alterações automáticas na planilha quando ela estiver ativada para aceitar dados.
-
 
 Depois que a planilha é definida para receber dados, você observa as seguintes alterações em sua planilha:
 
@@ -284,7 +285,7 @@ Há algumas maneiras diferentes de formatar os dados de formulário no corpo do 
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-Em seguida, você pode personalizar a mensagem de agradecimento, [configurar uma página de agradecimento](/help/edge/docs/forms/thank-you-page-form.md)ou [definir redirecionamentos](/help/edge/docs/forms/thank-you-page-form.md).
+Em seguida, é possível [personalizar a mensagem de agradecimento](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## Consulte também:
 

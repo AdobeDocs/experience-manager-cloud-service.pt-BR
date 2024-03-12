@@ -5,7 +5,7 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6d4b194d17cc27a6a8596825401dc723bebe7b27
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 0%
@@ -84,7 +84,7 @@ No essencial, [Criação no AEM](/help/forms/creating-adaptive-form-core-compone
 >
 > O recurso de criação de AEM está disponível no programa dos primeiros usuários. Caso esteja interessado, envie um email rápido do seu endereço comercial para aem-forms-ea@adobe.com para solicitar acesso ao recurso.
 
-### AEM Forms Edge Delivery Services: Criação. Publicação e envio do Forms
+### AEM Forms Edge Delivery Services: criação, publicação e envio do Forms
 
 Os diagramas a seguir ilustram o processo de criação, publicação e envio de formulários usando a Criação baseada em documento e a Criação por AEM.
 
