@@ -1,13 +1,13 @@
 ---
 title: Modelagem de conteúdo para criação no AEM com projetos Edge Delivery Services
 description: Saiba como a modelagem de conteúdo funciona para a criação de AEM com projetos Edge Delivery Services e como modelar seu próprio conteúdo.
-source-git-commit: e9c882926baee001170bad2265a1085e03cdbedf
+exl-id: e68b09c5-4778-4932-8c40-84693db892fd
+source-git-commit: 22a631d394de1c0fb934d9703e966c8287aef391
 workflow-type: tm+mt
-source-wordcount: '2097'
+source-wordcount: '2095'
 ht-degree: 0%
 
 ---
-
 
 # Modelagem de conteúdo para criação no AEM com projetos Edge Delivery Services {#content-modeling}
 
@@ -351,7 +351,7 @@ Todo o resto será renderizado como texto simples.
 
 #### Recolher Campo {#field-collapse}
 
-O recolhimento de campo é o mecanismo que combina vários valores de campo em um único elemento semântico com base em uma convenção de nomenclatura usando os sufixos `Title`, `Type`, `Alt`, e `Text` (todas diferenciam maiúsculas de minúsculas). Qualquer propriedade que termine com qualquer um desses sufixos não será considerada um valor, mas como um atributo de outra propriedade.
+O recolhimento de campo é o mecanismo que combina vários valores de campo em um único elemento semântico com base em uma convenção de nomenclatura usando os sufixos `Title`, `Type`, `MimeType`, `Alt`, e `Text` (todas diferenciam maiúsculas de minúsculas). Qualquer propriedade que termine com qualquer um desses sufixos não será considerada um valor, mas como um atributo de outra propriedade.
 
 ##### Imagens {#image-collapse}
 
@@ -624,7 +624,13 @@ Verifique se a planilha foi adicionada ao mapeamento de caminho antes de public�
 
 ### Propriedades da página {#page-properties}
 
-Também é possível definir um modelo de componente para os metadados da página, que serão disponibilizados para o autor como uma guia da caixa de diálogo de propriedades da página do AEM Sites.
+Muitas das propriedades de página padrão disponíveis no AEM são mapeadas para os respectivos metadados de página em um documento. Isso inclui, por exemplo, `title`, `description`, `robots`, `canonical url` ou `keywords`. Algumas propriedades específicas do AEM também estão disponíveis:
+
+* `cq:lastModified` as `modified-time` no formato ISO8601
+* A hora em que o documento foi publicado pela última vez como `published-time` no formato ISO8601
+* `cq:tags` as `cq-tags` como uma lista separada por vírgulas das IDs de tag.
+
+Também é possível definir um modelo de componente para metadados de página personalizados, que será disponibilizado ao autor como uma guia da caixa de diálogo de propriedades da página do AEM Sites.
 
 Para fazer isso, crie um modelo de componente com a ID `page-metadata`.
 
@@ -633,15 +639,10 @@ Para fazer isso, crie um modelo de componente com a ID `page-metadata`.
   "id": "page-metadata",
   "fields": [
     {
-      "component": "text-input",
+      "component": "text",
       "name": "theme",
       "label": "Theme"
     }
   ]
 }
 ```
-
-Há alguns nomes de campo que têm um significado especial e serão ignorados ao servir a interface da caixa de diálogo de criação:
-
-* **`cq:tags`** - Por padrão, `cq:tags` não são adicionados aos metadados. Adicionando-os à `page-metadata` adicionará as IDs de tag como uma lista separada por vírgulas como um `tags` meta tag no cabeçalho.
-* **`cq:lastModified`** - `cq:lastModified` adicionará seus dados como `last-modified` na cabeça.
