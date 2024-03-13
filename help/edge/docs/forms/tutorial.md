@@ -4,7 +4,7 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: d0298f3c15264bfa7421ccf0cde752f164829c02
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 0%
@@ -124,7 +124,7 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
       Se você usar o Microsoft SharePoint, o caminho da pasta usará o seguinte formato:
 
       ```HTML
-      https://<tenant>.SharePoint.com/sites/  <sp-site>/Shared%20Documents/<folder-name>
+      https://<tenant>.SharePoint.com/sites/<sp-site>/Shared%20Documents/<folder-name>
       ```
 
       Por exemplo,
@@ -271,7 +271,7 @@ Parabéns! Você configurou seu ambiente de desenvolvimento local com êxito e i
 
 Se você tiver um projeto AEM existente, é possível integrar o Bloco de Forms adaptável ao seu projeto atual para começar a criar formulários.
 
->
+>[!NOTE]
 >
 >
 > Esta etapa se aplica a projetos criados com o [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). Se você criou seu projeto AEM usando o [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms), você pode ignorar esta etapa.
