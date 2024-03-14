@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1104afb8a990c04e7d6bc2f5690a887218598f4b
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '4794'
+source-wordcount: '4813'
 ht-degree: 86%
 
 ---
@@ -826,21 +826,21 @@ ht-degree: 86%
       + [Visão geral](/help/edge/docs/forms/overview.md)
       + Introdução {#getting-started-eds-forms}
          + [Introdução](/help/edge/docs/forms/tutorial.md)
-         + [Criar e visualizar um formulário](/help/edge/docs/forms/create-forms.md)
-         + [Ativar formulário para enviar dados](/help/edge/docs/forms/submit-forms.md)
-         + [Publicar um formulário na página de sites](/help/edge/docs/forms/publish-forms.md)
+         + [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+         + [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
+         + [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
          + [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
-         + [Alterar temas e estilo de formulário](/help/edge/docs/forms/style-theme-forms.md)
+         + [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [Usar regras para adicionar comportamento dinâmico a um formulário](/help/edge/docs/forms/rules-forms.md)
          + [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário](/help/edge/docs/forms/thank-you-page-form.md)
       + Capacidades {#advanced-features-eds-forms}
          + [Fragmentos de formulário](/help/edge/docs/forms/form-fragments.md)
-         + [Seções repetíveis](/help/edge/docs/forms/repeatable-forms.md)
+         + [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
          + [Tradução](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
       + Referências {#forms-references}
-         + [Lista de componentes de blocos de formulário](/help/edge/docs/forms/form-components.md)
+         + [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
    + Recursos para entrega de borda {#resources}
       + Sidekick {#sidekick}
          + [Utilização do Sidekick](/help/edge/docs/sidekick.md)

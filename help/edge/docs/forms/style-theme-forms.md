@@ -3,26 +3,27 @@ title: Personalizar tema e estilo para um Formulário de serviços de entrega do
 description: Personalizar tema e estilo para um Formulário de serviços de entrega do AEM Forms Edge
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2014'
 ht-degree: 0%
 
 ---
 
-# Campos do formulário de estilo
+
+# Personalizar a aparência dos formulários
 
 O Forms é fundamental para a interação do usuário em sites, permitindo que ele insira dados. Você pode usar as Folhas de estilo em cascata (CSS) para criar estilos de campos de um formulário, aprimorando a apresentação visual de seus formulários e melhorando a experiência do usuário.
 
-O bloco adaptável do Forms produz uma estrutura consistente para todos os campos de formulário. A estrutura consistente facilita o desenvolvimento de seletores de CSS para selecionar e estilizar campos de formulário com base no tipo de campo e nos nomes de campo.
+O bloco adaptável do Forms produz uma estrutura consistente para todos os campos de formulário. A estrutura consistente facilita o desenvolvimento de Seletores de CSS para selecionar e estilizar campos de formulário com base no tipo de campo e nos nomes de campo.
 
-Este documento descreve a estrutura de HTML para vários componentes de formulário e ajuda a criar um entendimento de como criar seletores de CSS para vários campos de formulário para estilizar campos de formulário de um bloco adaptável do Forms.
+Este documento descreve a estrutura de HTML para vários componentes de formulário e ajuda a criar um entendimento de como criar Seletores de CSS para vários campos de formulário para estilizar campos de formulário de um Bloco de Forms adaptável.
 
 Até o final do artigo:
 
 * Você constrói uma compreensão da estrutura do arquivo CSS padrão incluído no Bloco Forms adaptável.
 * Você constrói uma compreensão da estrutura de HTML dos componentes de formulário fornecidos pelo Bloco de Forms adaptável, incluindo componentes gerais e componentes específicos, como listas suspensas, grupos de rádio e grupos de caixas de seleção.
-* Você aprende a estilizar campos de formulário com base no tipo de campo e nos nomes de campo usando seletores CSS, permitindo um estilo consistente ou exclusivo com base nos requisitos.
+* Você aprende a estilizar campos de formulário com base no tipo de campo e nos nomes de campo usando Seletores de CSS, permitindo um estilo consistente ou exclusivo com base nos requisitos.
 
 
 ## Noções básicas sobre tipos de campos de formulário
@@ -39,7 +40,7 @@ Antes de mergulhar no estilo, vamos rever a forma comum [tipos de campo](/help/e
 
 Noções básicas [conceitos fundamentais de CSS](https://www.w3schools.com/css/css_intro.asp) é crucial antes de estilizar campos de formulário específicos:
 
-* [Seletores](https://www.w3schools.com/css/css_selectors.asp): os seletores CSS permitem direcionar elementos de HTML específicos para o estilo. Você pode usar seletores de elemento, seletores de classe ou seletores de ID.
+* [Seletores](https://www.w3schools.com/css/css_selectors.asp): os Seletores de CSS permitem direcionar elementos de HTML específicos para o estilo. Você pode usar seletores de elemento, seletores de classe ou seletores de ID.
 * [Propriedades](https://www.w3schools.com/css/css_syntax.asp): as propriedades CSS definem a aparência visual dos elementos. As propriedades comuns para os campos de formulário de estilo incluem cor, cor de fundo, borda, preenchimento, margem e muito mais.
 * [Modelo de caixa](https://www.w3schools.com/css/css_boxmodel.asp): o modelo de caixa CSS descreve a estrutura dos elementos HTML como uma área de conteúdo cercada por preenchimento, bordas e margens.
 * Flexbox/Grade: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) e [Layouts de grade](https://www.w3schools.com/css/css_grid.asp) são ferramentas eficientes para criar designs responsivos e flexíveis.
@@ -87,7 +88,7 @@ Todos os campos de formulário, exceto os detalhamentos, grupos de rádio e grup
 </div>
 ```
 
-* Classes: o elemento div tem várias classes para direcionar elementos específicos e estilo. Você exige o `{Type}-wrapper` ou `field-{Name}` classes para desenvolver um seletor de CSS para estilizar um campo de formulário:
+* Classes: o elemento div tem várias classes para direcionar elementos específicos e estilo. Você exige o `{Type}-wrapper` ou `field-{Name}` classes para desenvolver um Seletor de CSS para estilizar um campo de formulário:
    * {Type}: identifica o componente por tipo de campo. Por exemplo, texto (invólucro de texto), número (invólucro numérico), data (invólucro de data).
    * {Name}: identifica o componente por nome. O nome do campo pode ter apenas caracteres alfanuméricos, os vários traços consecutivos no nome são substituídos por um único traço `(-)`, e os traços inicial e final em um nome de campo são removidos. Por exemplo, nome (field-first-name field-wrapper).
    * {FieldId}: é o identificador exclusivo do campo, gerado automaticamente.
@@ -144,7 +145,7 @@ Todos os campos de formulário, exceto os detalhamentos, grupos de rádio e grup
 
 
 
-**Exemplo de seletores CSS para Componentes gerais**
+**Exemplo de seletores de CSS para Componentes gerais**
 
 ```CSS
 /*Target all text input fields */
@@ -203,7 +204,7 @@ Para menus suspensos, a variável `select` elemento é usado em vez de um `input
 
 +++ Seletores de CSS para o componente suspenso
 
-O CSS a seguir lista alguns seletores de CSS de exemplo para componentes suspensos.
+O CSS a seguir lista alguns exemplos de Seletores de CSS para componentes suspensos.
 
 ```CSS
 /* Target the outer wrapper */
@@ -262,7 +263,7 @@ O CSS a seguir lista alguns seletores de CSS de exemplo para componentes suspens
 
 Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estrutura de HTML e estrutura CSS:
 
-+++ Estrutura de HTML do grupo de rádio
++++ Estrutura HTML do grupo de rádio
 
 ```HTML
 <fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -300,7 +301,7 @@ Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estr
 
 +++
 
-+++ Seletores de CSS para o componente suspenso
++++ Seletores de CSS para grupos de botões de opção
 
 * Direcionamento do conjunto de campos
 
@@ -370,7 +371,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 
 +++
 
-+++ Exemplo de seletores CSS para grupos de opções e caixas de seleção**
++++ Seletores de CSS para grupos de caixas de seleção
 
 * Direcionamento do Outer Wrapper: esses seletores direcionam os contêineres mais externos dos grupos de rádio e de caixa de seleção, permitindo aplicar estilos gerais a toda a estrutura do grupo. Isso é útil para definir o espaçamento, alinhamento ou outras propriedades relacionadas ao layout.
 
@@ -796,9 +797,9 @@ Esses seletores permitem estilizar várias partes do componente de anexo de arqu
 
 ### Estilo com base no tipo de campo
 
-Você pode usar seletores de CSS para direcionar tipos de campo específicos e aplicar estilos de forma consistente.
+Você pode usar os Seletores de CSS para direcionar tipos de campo específicos e aplicar estilos de forma consistente.
 
-**Estrutura HTML**
++++ Estrutura HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -837,8 +838,10 @@ Você pode usar seletores de CSS para direcionar tipos de campo específicos e a
 * Cada campo tem um rótulo correspondente, elemento de entrada e possíveis elementos adicionais, como espaços reservados e descrições.
 
 
++++
 
-**Exemplo de seletores CSS**
+
++++ Exemplo de seletores CSS
 
 ```CSS
 /* Target all text input fields */
@@ -853,13 +856,13 @@ Você pode usar seletores de CSS para direcionar tipos de campo específicos e a
 }
 ```
 
-
++++
 
 ### Estilo com base no nome do campo
 
 Você também pode direcionar campos individuais por nome para aplicar estilos exclusivos.
 
-**Estrutura HTML**
++++ Estrutura HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -883,7 +886,9 @@ Você também pode direcionar campos individuais por nome para aplicar estilos e
 </div>
 ```
 
-**Exemplo de seletor de CSS**
++++
+
++++ Exemplo de seletor de CSS
 
 ```CSS
 .field-otp input {
@@ -891,7 +896,11 @@ Você também pode direcionar campos individuais por nome para aplicar estilos e
 }
 ```
 
+
+
 Este CSS segmenta todos os elementos de entrada localizados em um elemento que tem a classe `field-otp`. A estrutura de HTML do seu formulário segue as convenções do Bloco de Forms adaptável, isso implica que há um container marcado com a classe &quot;field-otp&quot; que contém o campo com o nome &quot;otp&quot;.
+
++++
 
 ## Consulte também:
 

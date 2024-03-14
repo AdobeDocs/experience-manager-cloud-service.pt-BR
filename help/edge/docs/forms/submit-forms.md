@@ -3,14 +3,14 @@ title: Preparar sua planilha para aceitar dados
 description: Crie formulários poderosos mais rápido usando planilhas e campos de bloco adaptáveis do Forms!
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 5eee563a9a425ef187afed69a8159d8b1298dad7
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
 
-# Preparar sua planilha para aceitar dados
+# Configurar seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados
 
 
 Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-forms.md), é hora de permitir que a planilha correspondente comece a receber dados. Você pode ativar manualmente a planilha para aceitar dados ou usar APIs de Administração para permitir que uma planilha aceite dados.
