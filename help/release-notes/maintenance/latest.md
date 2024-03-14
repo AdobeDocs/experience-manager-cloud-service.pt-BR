@@ -2,9 +2,9 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 87f76de41074debb2acc8ef4f71baf174d0d01ad
+source-git-commit: d16d908d39df3c7d72dc48ac877c1543d2442416
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1240'
 ht-degree: 11%
 
 ---
@@ -102,15 +102,22 @@ A Ativação de recursos 2024.3.0 fornecerá o conjunto completo de recursos par
 
 ### Problemas conhecidos {#known-issues-15262}
 
-#### `UnsupportedClassVersionError` na etapa de build do pipeline CM após a atualização `aem-sdk-api` versão para `2024.2.15262.20240224T002940Z-231200`
+* ASSETS-35923: `UnsupportedClassVersionError` na etapa de build do pipeline CM após a atualização `aem-sdk-api` versão para `2024.2.15262.20240224T002940Z-231200`. **Exige ação do cliente para definir a versão do Java CM como 11**, consulte [Ambiente de compilação / Configuração da versão do JDK Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
+* ASSETS-35860: conversão de fuso horário incorreta na exibição em coluna do AEM Assets.
+* SCRNS-4171: O Windows Screens fica em branco e deixa de funcionar ao atualizar para 15262 e publicar um canal.
+* GRANITE-50774: GraniteContent deve usar a ordem determinística de valores de propriedade no momento da inicialização.
+
+### Aviso de mudança {#change-notice-15262}
+
+**Ações necessárias**
+
+#### Defina a versão do Java CM para 11 {#set-java-version-11}
 
 A nova versão do aem-sdk-api contém classes compiladas com um destino Java 11, que não é compatível com a versão 1.8 do JDK padrão do ambiente de compilação do Cloud Manager. Esta atualização requer que o Maven seja executado usando o JDK 11.
 
 Os clientes são aconselhados a adicionar um `.cloudmanager/java-version` para a raiz do repositório Git com o conteúdo: `11`. [Ambiente de compilação / Configuração da versão do JDK Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/build-environment-details.html?lang=en#alternate-maven-jdk-version)
 
-### Aviso de mudança {#change-notice-15262}
-
-**Ação necessária**
+#### Atualizar aem-cloud-testing-clients para 1.2.1 {#update-aem-cloud-testing-clients}
 
 As próximas alterações exigirão a biblioteca [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) usado em seus testes funcionais personalizados para ser atualizado para pelo menos a versão **1.2.1**
 
