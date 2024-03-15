@@ -2,10 +2,10 @@
 title: Teste de auditoria de experiência
 description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 82%
+source-wordcount: '890'
+ht-degree: 56%
 
 ---
 
@@ -31,15 +31,57 @@ A Auditoria de experiência no Cloud Manager garante que a experiência do usuá
 
 Os resultados da auditoria são informativos e permitem que o gerente de implantação veja as pontuações e as alterações entre as pontuações atual e anterior. Essa informação é valiosa para determinar se foi introduzida uma regressão com a implantação atual.
 
-A auditoria de experiência é disponibilizada pelo Google Lighthouse, uma ferramenta de código aberto do Google, e é habilitada em todos os pipelines de produção do Cloud Manager.
+A Auditoria de experiência é disponibilizada pelo Google Lighthouse, uma ferramenta de código aberto da Google.
 
 >[!INFO]
 >
 >A partir de 31 de agosto de 2023, a Auditoria de experiência fará a transição para mostrar resultados específicos da plataforma móvel. As métricas de desempenho móvel normalmente se registram abaixo do desktop, portanto, você deve antecipar uma mudança no desempenho relatado após essa alteração.
 
->[!TIP]
->
->Você define quais páginas são incluídas na auditoria de experiência ao [configurar seu pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
+## Disponibilidade {#availability}
+
+A Auditoria de experiência está disponível para o Cloud Manager:
+
+* Pipelines de produção de sites, por padrão.
+* Pipelines de desenvolvimento front-end, opcionalmente.
+
+Consulte a [seção Configuração](#configuration) para obter mais informações sobre como configurar a auditoria para os ambientes opcionais.
+
+## Configuração {#configuration}
+
+A Auditoria de experiência está disponível por padrão para pipelines de produção. Ele pode ser ativado opcionalmente para pipelines de desenvolvimento de front-end. Em todos os casos, é necessário definir quais caminhos de conteúdo são avaliados durante a execução do pipeline.
+
+Você configura quais páginas são incluídas na Auditoria de experiência quando configura o pipeline.
+
+1. Dependendo do tipo de pipeline que você deseja configurar, siga as instruções para:
+
+   * Adicionar um novo [pipeline de produção,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) se desejar definir os caminhos que serão avaliados pela auditoria.
+   * Adicionar um novo [pipeline de não produção,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se quiser ativar a auditoria em um pipeline de front-end ou de pilha completa de desenvolvimento.
+   * Ou você pode [editar um pipeline existente,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e atualize as opções existentes.
+
+1. Se você estiver adicionando ou editando um pipeline de não produção para o qual deseja usar a Auditoria de experiência, é necessário selecionar o **Auditoria de experiência** caixa de seleção na **Código-fonte** guia.
+
+   ![Ativar a Auditoria de experiência](assets/experience-audit-enable.jpg)
+
+   * Isso só é necessário para pipelines de não produção.
+   * A variável **Auditoria de experiência** é exibida quando a caixa de seleção é marcada.
+
+1. Para pipelines de produção e não produção, você define os caminhos que devem ser incluídos na Auditoria de experiência no **Auditoria de experiência** guia.
+
+   * Os caminhos da página devem começar com `/` e são relativos ao seu site.
+   * Por exemplo, se o site for `wknd.site` e gostaria de incluir `https://wknd.site/us/en/about-us.html` na Auditoria de experiência, insira o caminho `/us/en/about-us.html`.
+
+   ![Definição de um caminho para a Auditoria de experiência](assets/experience-audit-add-page.png)
+
+1. Toque ou clique **Adicionar página** e o caminho é preenchido automaticamente com o endereço do ambiente e adicionado à tabela de caminhos.
+
+   ![Caminho salvo na tabela](assets/experience-audit-page-added.png)
+
+1. Continue a adicionar caminhos, conforme necessário, repetindo as duas etapas anteriores.
+
+   * É possível adicionar no máximo 25 caminhos.
+   * Se você não definir nenhum caminho, a página inicial do site será incluída na Auditoria de experiência por padrão.
+
+1. Clique em **Salvar** para salvar o pipeline.
 
 ## Noções básicas sobre os resultados da auditoria de experiência {#understanding-experience-audit-results}
 

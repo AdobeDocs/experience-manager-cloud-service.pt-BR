@@ -3,10 +3,10 @@ title: Configuração de pipelines de produção
 description: Saiba como configurar pipelines de produção para compilar e implantar seu código em ambientes de produção.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 72%
+source-wordcount: '1338'
+ht-degree: 67%
 
 ---
 
@@ -93,25 +93,13 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 
    ![Código de pilha completa](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Clique em **Continuar** para avançar para a guia **Auditoria de experiência**, na qual é possível definir os caminhos que devem ser sempre incluídos na Auditoria de experiência.
+1. Toque ou clique **Continuar** para avançar para o **Auditoria de experiência** guia, na qual é possível definir os caminhos que devem ser sempre incluídos na Auditoria de experiência.
 
    ![Adicionar auditoria de experiência](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
-1. Forneça um caminho a ser incluído na Auditoria de experiência.
+1. Forneça caminhos a serem incluídos na Auditoria de experiência.
 
-   * Os caminhos da página devem começar com `/`.
-   * Por exemplo, se você deseja incluir `https://wknd.site/us/en/about-us.html` na Auditoria de experiência, insira o caminho `/us/en/about-us.html`.
-
-   ![Definição de um caminho para a Auditoria de experiência](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
-
-1. Clique em **Adicionar página** e o caminho será preenchido automaticamente com o endereço do ambiente e adicionado à tabela de caminhos.
-
-   ![Caminho salvo na tabela](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
-
-1. Continue a adicionar caminhos, conforme necessário, repetindo as duas etapas anteriores.
-
-   * É possível adicionar no máximo 25 caminhos.
-   * Se você não definir nenhum caminho, a página inicial do site será incluída na Auditoria de experiência por padrão.
+   * Consulte o documento [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obter detalhes.
 
 1. Clique em **Salvar** para salvar o pipeline.
 

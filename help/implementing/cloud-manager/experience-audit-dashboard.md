@@ -2,10 +2,10 @@
 title: Painel de auditoria de experiência
 description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO, por meio de uma interface de painel clara e informativa.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
-source-git-commit: 390faed91889e16d06c5024eaf1b4b1ad1427444
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1957'
-ht-degree: 7%
+source-wordcount: '1958'
+ht-degree: 6%
 
 ---
 
@@ -40,7 +40,7 @@ A Auditoria de experiência está disponível para o Cloud Manager:
 
 * Pipelines de produção de sites, por padrão
 * Desenvolvimento de pipelines de pilha completa, opcionalmente
-* Pipelines de front-end, opcionalmente
+* Pipelines de front-end de desenvolvimento, opcionalmente
 
 Consulte a [seção Configuração](#configuration) para obter mais informações sobre como configurar a auditoria para os ambientes opcionais.
 

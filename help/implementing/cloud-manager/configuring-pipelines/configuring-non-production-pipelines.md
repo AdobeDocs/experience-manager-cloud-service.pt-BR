@@ -3,10 +3,10 @@ title: Configurar pipelines de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 04c65018734f95e8245a6922d5a05c5486a4ffa4
+source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 77%
+source-wordcount: '1371'
+ht-degree: 73%
 
 ---
 
@@ -145,10 +145,16 @@ As etapas para concluir a criação do pipeline de implantação de destino e n�
    * **Ramificação Git**: essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
       * Insira os primeiros caracteres do nome da ramificação e utilize o preenchimento automático deste campo. O recurso encontra as ramificações correspondentes que você pode selecionar.
    * **Localização do código**: essa opção define o caminho na ramificação do repositório selecionado do qual o pipeline deve recuperar o código.
+   * **Pipeline** - Para pipelines de não produção de front-end, você tem a opção de ativar **[Auditoria de experiência.](/help/implementing/cloud-manager/experience-audit-testing.md)**
 
-   ![Configurar pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment.png)
+   ![Configurar pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Clique em **Salvar**.
+1. Se você ativou a Auditoria de experiência, toque ou clique **Continuar** para avançar para o **Auditoria de experiência** guia, na qual é possível definir os caminhos que devem ser sempre incluídos na Auditoria de experiência.
+
+   * Se você ativou **Auditoria de experiência**, consulte o documento [Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obter detalhes sobre como configurar o.
+   * Caso contrário, pule esta etapa.
+
+1. Toque ou clique **Salvar** para salvar o pipeline.
 
 O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa**.
 
