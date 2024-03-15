@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 0411da1113c6bddfa1adcc583b4e53c5daa9bd41
 workflow-type: tm+mt
-source-wordcount: '2584'
-ht-degree: 12%
+source-wordcount: '2568'
+ht-degree: 9%
 
 ---
 
@@ -146,7 +146,7 @@ Agora você pode:
 
 Consulte [Documentação do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para obter mais informações.
 
-**Registros de distribuição**
+**Logs de distribuição**
 
 É possível monitorar os logs do agente de distribuição para o fluxo de trabalho de publicação de ativos.
 
@@ -294,7 +294,8 @@ Execute as seguintes etapas para gerar as credenciais da conta de serviço e a c
 
    >[!NOTE]
    >
-   >Você pode visualizar as credenciais e executar ações como gerar tokens JWT, copiar detalhes da credencial, recuperar segredo do cliente e assim por diante.
+   >* Você pode visualizar as credenciais e executar ações como gerar tokens JWT, copiar detalhes da credencial, recuperar segredo do cliente e assim por diante.
+   >* No momento, somente o tipo de credencial Conta de serviço (JWT) do Console do desenvolvedor do Adobe é compatível. Não use o tipo de credencial OAuth de servidor para servidor até que seja compatível em meados de abril. Leia mais em [Descontinuação de credenciais JWT no console do Adobe Developer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html).
 
 1. No **[!UICONTROL Credenciais do cliente]** , copie o **[!UICONTROL ID do cliente]**.
 
@@ -409,7 +410,7 @@ Os IPs de saída são os seguintes:
 
 | **Região** | **IP de saída** |
 |--- |--- |
-| ND | 130.248.160.68, 20.94.203.130 |
+| ND | 130 248 160 68 20 94 203 130 |
 | EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
 | APAC | 63.140.44.54 |
 
