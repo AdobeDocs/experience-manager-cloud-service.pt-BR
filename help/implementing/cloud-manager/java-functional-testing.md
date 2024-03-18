@@ -2,9 +2,9 @@
 title: Testes funcionais do Java&trade
 description: Saiba como preparar testes funcionais do Java&trade para o AEM as a Cloud Service
 exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
-source-git-commit: e463979df1f705283f29d954f9869d85f0a96465
+source-git-commit: 641690f2eca17bbfb47360282e818b6902a36144
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '878'
 ht-degree: 92%
 
 ---
@@ -128,7 +128,7 @@ Certifique-se de que sua dependência no `it.tests/pom.xml` foi atualizado.
 
 >[!NOTE]
 >
->Essa alteração será necessária após 6 de abril de 2024.
+>Essa alteração precisa ser executada antes de 6 de abril de 2024.
 >Falha ao atualizar a biblioteca de dependências resultará em falhas de pipeline na etapa &quot;Teste funcional personalizado&quot;.
 
 ### Execução local de testes {#local-test-execution}
