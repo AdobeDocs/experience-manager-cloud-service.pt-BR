@@ -2,9 +2,9 @@
 title: Utilização de Planilhas para Gerenciar Dados Tabulares
 description: Saiba como usar planilhas para gerenciar dados tabulares para vários valores, como metadados e redirecionamentos para seu AEM com Edge Delivery Services.
 feature: Edge Delivery Services
-source-git-commit: 0fa88453a7d7c58a3ccb2a4baf7d2b143acf7ad5
+source-git-commit: f872ab4eb891ab4aa634e88c76eedeb0f13cb285
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '958'
 ht-degree: 1%
 
 ---
@@ -81,25 +81,9 @@ Neste exemplo, você criará uma planilha para gerenciar redirecionamentos do AE
    * O editor adiciona novas linhas à planilha conforme necessário.
    * Para excluir ou mover uma linha, use o **Excluir** ícone no final de cada linha e as alças de arrastar no início de cada linha, respectivamente.
 
-1. Quando terminar de definir os redirecionamentos, feche a guia e volte para a guia **Sites** console.
+## Publicar uma planilha em paths.json {#paths-json}
 
-1. Toque ou clique para selecionar a planilha de redirecionamentos criada no console e toque ou clique **Publicação rápida** na barra de ações para publicar a planilha.
-
-   ![Selecione a planilha no console Sites](assets/tabular-data/tabular-data-select-publish.png)
-
-1. No **Publicação rápida** toque ou clique em **Publish**.
-
-   ![Confirmar publicação](assets/tabular-data/tabular-data-quick-publish.png)
-
-1. Um banner confirma a publicação.
-
-   ![Confirmação de banner da publicação](assets/tabular-data/tabular-data-publish-banner.png)
-
-A planilha de redirecionamentos agora está publicada e acessível ao público.
-
-## Atualizar paths.json {#paths-json}
-
-Para que o AEM possa consumir os dados em sua planilha, você também precisa atualizar o `paths.json` arquivo do seu projeto.
+Para que o AEM possa publicar os dados em sua planilha, você também precisa atualizar o `paths.json` arquivo do seu projeto.
 
 1. Abra a raiz do seu projeto no GitHub.
 
@@ -122,7 +106,21 @@ Para que o AEM possa consumir os dados em sua planilha, você também precisa at
 
    * Confirme em `main` ou criar uma solicitação de pull de acordo com seu processo.
 
-Quando as alterações no `paths.json` forem mesclados, os redirecionamentos estarão ativos para o site.
+1. Quando terminar de definir os redirecionamentos e atualizar o mapeamento de caminho, retorne ao **Sites** console.
+
+1. Toque ou clique para selecionar a planilha de redirecionamentos criada no console e toque ou clique **Publicação rápida** na barra de ações para publicar a planilha.
+
+   ![Selecione a planilha no console Sites](assets/tabular-data/tabular-data-select-publish.png)
+
+1. No **Publicação rápida** toque ou clique em **Publish**.
+
+   ![Confirmar publicação](assets/tabular-data/tabular-data-quick-publish.png)
+
+1. Um banner confirma a publicação.
+
+   ![Confirmação de banner da publicação](assets/tabular-data/tabular-data-publish-banner.png)
+
+A planilha de redirecionamentos agora está publicada e acessível ao público.
 
 ## Outros Tipos de Planilha {#other}
 
@@ -134,6 +132,12 @@ Agora que você sabe como criar uma planilha de redirecionamentos, é possível 
 * Configuração
 
 Basta seguir as mesmas etapas nas seções [Criar planilha](#spreadsheet) e [Atualizar paths.json](#paths-json) e escolha o modelo apropriado e atualize o `paths.json` arquivo adequadamente.
+
+Para [Configuração](https://www.aem.live/docs/configuration), [Cabeçalhos](https://www.aem.live/docs/custom-headers) e [Metadados](https://www.aem.live/docs/bulk-metadata) adicione um mapeamento para publicá-los em seus locais padrão:
+
+* Configuração: `/.helix/config.json`
+* Cabeçalhos: `/.helix/headers.json`
+* Metadados: `/metadata.json`
 
 Além disso, você pode [criar sua própria planilha](#own-spreadsheet) com colunas arbitrárias para seu próprio uso.
 
