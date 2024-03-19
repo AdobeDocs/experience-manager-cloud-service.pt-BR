@@ -3,10 +3,10 @@ title: CDN no AEM as a Cloud Service
 description: Saiba como usar a CDN gerenciada pelo AEM e como apontar sua própria CDN para a CDN gerenciada pelo AEM.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
+source-git-commit: 43fdf17ab09fd7a974c32cfd716f65072b678726
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 25%
+source-wordcount: '1118'
+ht-degree: 22%
 
 ---
 
@@ -39,6 +39,14 @@ Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud
 >[!CAUTION]
 >
 >Somente as solicitações dos IPs permitidos são atendidas pelo CDN gerenciado pelo AEM. Se você apontar seu próprio CDN para o CDN gerenciado por AEM, verifique se os IPs do seu CDN estão incluídos no incluo na lista de permissões.
+
+### Configuração do tráfego no CDN {#cdn-configuring-cloud}
+
+As regras para configurar o tráfego e os filtros CDN podem ser declaradas em um arquivo de configuração e implantadas na CDN usando o [Pipeline de configuração do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Para obter mais detalhes, consulte [Configuração do tráfego no CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) e [Regras de Filtro de tráfego, incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md).
+
+### Configuração de páginas de erro do CDN {#cdn-error-pages}
+
+Uma página de erro CDN pode ser configurada para substituir a página padrão, sem marca, fornecida ao navegador no raro evento de não conseguir acessar o AEM. Para obter mais detalhes, consulte [Configuração de páginas de erro do CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ## CDN do cliente apontando para a CDN gerenciada pelo AEM {#point-to-point-CDN}
 
