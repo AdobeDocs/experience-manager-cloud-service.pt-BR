@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Acostume-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 64%
+source-wordcount: '926'
+ht-degree: 63%
 
 ---
 
@@ -36,7 +36,7 @@ Para obter uma boa compreensão do uso básico do AEM, este documento se baseia 
 
 Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Reserve um minuto para fazer uma seleção e obter uma boa visão geral do tratamento básico do AEM.
 
-![Tutorial de navegação](assets/tutorial.png)
+![Tutorial de navegação](assets/basic-handling-tutorial.png)
 
 Selecionar **Próxima** para avançar para a próxima página da visão geral. Selecionar **Fechar** ou selecione fora da caixa de diálogo de visão geral para fechar.
 
@@ -48,7 +48,7 @@ A visão geral será reiniciada na próxima vez que você acessar um console a m
 
 Você pode fechar o painel de navegação global clicando ou tocando em **Fechar** para retornar ao seu local anterior.
 
-![Barra superior do painel Navegação](assets/basic-handling-navigation-bar.png)
+![Barra superior do painel Navegação](assets/basic-handling-navigation-options.png)
 
 A navegação global possui dois painéis, representados por ícones na margem esquerda da tela:
 
@@ -86,31 +86,37 @@ No **Ferramentas** O painel tem um painel lateral que contém um intervalo de ca
 
 O cabeçalho está sempre presente na parte superior da tela. Embora a maioria das opções no cabeçalho permaneça a mesma, independentemente de onde você esteja no sistema, algumas são específicas do contexto.
 
-![Cabeçalho de navegação](/help/sites-cloud/authoring/assets/navigation-bar.png)
+![Cabeçalho de navegação](/help/sites-cloud/authoring/assets/basic-handling-navigation-bar.png)
 
 * [Navegação global](#global-navigation) - Selecione o **Adobe Experience Manager** link para navegar entre consoles.
 
-  ![Navegação global](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Navegação global](/help/sites-cloud/authoring/assets/basic-handling-global-navigation.png)
 
-* [Pesquisar](/help/sites-cloud/authoring/search.md) - Você também pode usar o [tecla de atalho](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
+* Feedback
 
-  ![Ícone de Pesquisa](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Botão Feedback](/help/sites-cloud/authoring/assets/basic-handling-feedback.png)
+
+* Sua organização IMS - selecione para alterar se necessário.
 
 * [Soluções](https://www.adobe.com/br/experience-cloud.html) - Selecione esta opção para acessar suas outras soluções de Adobe.
 
-  ![Botão Soluções](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Botão Soluções](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
+
+* [Pesquisar](/help/sites-cloud/authoring/search.md) - Você também pode usar o [tecla de atalho](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `/` (barra) para invocar a pesquisa em qualquer console.
+
+  ![Ícone de Pesquisa](/help/sites-cloud/authoring/assets/basic-handling-search-icon.png)
 
 * [Ajuda](#accessing-help)
 
-  ![Botão Ajuda](/help/sites-cloud/authoring/assets/help.png)
+  ![Botão Ajuda](/help/sites-cloud/authoring/assets/basic-handling-help-icon.png)
 
 * [Notificação](/help/sites-cloud/authoring/inbox.md) - Esse ícone contém o número de notificações incompletas atribuídas atualmente.
 
-  ![Botão Notificações](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Botão Notificações](/help/sites-cloud/authoring/assets/basic-handling-notifications.png)
 
 * [Propriedades do usuário](/help/sites-cloud/authoring/account-environment.md) - Selecione esta opção para alterar as configurações do usuário.
 
-  ![Botão Propriedades do usuário](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Botão Propriedades do usuário](/help/sites-cloud/authoring/assets/basic-handling-user-properties.png)
 
 ## Acessar ajuda   {#accessing-help}
 
