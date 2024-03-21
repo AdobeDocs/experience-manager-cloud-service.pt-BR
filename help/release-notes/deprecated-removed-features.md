@@ -2,10 +2,10 @@
 title: Recursos obsoletos e removidos
 description: Notas de versão específicas para recursos obsoletos e removidos do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 1da8d9395df3dd2efee7f6a57197aa3f2b27b1a4
+source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 77%
+source-wordcount: '2146'
+ht-degree: 74%
 
 ---
 
@@ -42,6 +42,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 | [!DNL Assets] | Transcodificação FFmpeg de vídeos. | Para gerar miniaturas do FFmpeg, use os [Microserviços de ativos](/help/assets/asset-microservices-overview.md). Para a transcodificação FFmpeg, use o [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Interface de replicação em árvore na guia &quot;Distribuir&quot; do agente de replicação (remoção após 30 de setembro de 2021) | Abordagens [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [fluxo de trabalho Publicar árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) |
 | [!DNL Foundation] | Nem a guia Distribuir da tela do administrador do agente de replicação nem a API de replicação podem ser usadas para replicar pacotes de conteúdo com mais de 10 MB. Em vez disso, use [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Integrações que usam credenciais geradas de projetos do Console do Adobe Developer perderão gradualmente o suporte às credenciais da Conta de serviço (JWT). As novas credenciais da Conta de serviço (JWT) não podem ser criadas no Adobe Developer Console em ou após 1º de maio de 2024, embora as credenciais da Conta de serviço (JWT) existentes ainda possam ser usadas para integrações já configuradas até 1º de janeiro de 2025, momento em que as credenciais da Conta de serviço (JWT) existentes não funcionarão mais e os clientes deverão migrar para as credenciais de Servidor para Servidor do OAuth. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) para credenciais OAuth de servidor para servidor. |
 
 ## Recursos removidos {#removed-features}
 
