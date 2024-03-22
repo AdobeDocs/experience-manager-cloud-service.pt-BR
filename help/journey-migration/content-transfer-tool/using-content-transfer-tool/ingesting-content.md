@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
+source-git-commit: de05abac3620b254343196a283cef198f434cfca
 workflow-type: tm+mt
-source-wordcount: '2534'
-ht-degree: 6%
+source-wordcount: '2752'
+ht-degree: 5%
 
 ---
 
@@ -211,6 +211,14 @@ Consulte a `Node property value in MongoDB` observação em [Pré-requisitos par
 >abstract="A extração que a assimilação estava aguardando não foi concluída com êxito. A assimilação foi rescindida porque não pôde ser executada."
 
 Uma assimilação criada com uma extração em execução, à medida que seu conjunto de migração de origem aguarda pacientemente até que a extração seja bem-sucedida, e nesse ponto começa normalmente. Se a extração falhar ou for interrompida, a assimilação e seu trabalho de indexação não serão iniciados, mas serão rescindidos. Nesse caso, verifique a extração para determinar por que ela falhou, corrija o problema e comece a extrair novamente. Uma vez que a extração fixa estiver em execução, uma nova assimilação pode ser programada.
+
+### O ativo excluído não está presente após executar a assimilação novamente
+
+Em geral, não é recomendado modificar os dados do ambiente de nuvem entre as assimilações.
+
+Quando um ativo é excluído do destino Cloud Service usando a interface para toque do Assets, os dados do nó são excluídos, mas o blob de ativos com a imagem não é excluído imediatamente. Ele é marcado para exclusão para que não apareça mais na interface do usuário; no entanto, permanece no armazenamento de dados até que a coleta de lixo ocorra e o blob seja removido.
+
+No cenário em que um ativo migrado anteriormente é excluído e a próxima assimilação é executada antes que o coletor de lixo conclua a exclusão do ativo, a assimilação do mesmo conjunto de migração não restaurará o ativo excluído. Quando a assimilação verifica o ambiente de nuvem para o ativo, não há dados de nó; portanto, a assimilação copiará os dados do nó para o ambiente de nuvem. No entanto, quando ele verifica o armazenamento de blob, ele vê que o blob está presente e ignora a cópia do blob. É por isso que os metadados estão presentes após a assimilação quando você observa o ativo da interface para toque, mas a imagem não está. Lembre-se de que os conjuntos de migração e a assimilação de conteúdo não foram projetados para lidar com esse caso. Eles têm como objetivo adicionar novo conteúdo ao ambiente de nuvem e não restaurar o conteúdo migrado anteriormente.
 
 ## O que vem a seguir {#whats-next}
 
