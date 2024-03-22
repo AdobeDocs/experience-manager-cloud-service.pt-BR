@@ -2,7 +2,7 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.10.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.10.0.
 exl-id: 81a6cbd2-7101-429b-8572-2650c5bea963
-source-git-commit: 811a8f4d83a1034737c23b1707a24b52742fef55
+source-git-commit: b323fbe3a09de220c61c9b409d8754e43fe0a8d3
 workflow-type: tm+mt
 source-wordcount: '918'
 ht-degree: 25%
@@ -41,7 +41,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2023 que exibe um res
 
 ### Novos recursos {#assets-features}
 
-**Complemento AEM Assets para Adobe Express**: o Experience Manager Assets agora fornece uma [complemento para o Adobe Express](/help/assets/addon-adobe-express.md). O complemento permite acessar diretamente os ativos armazenados no Experience Manager Assets por meio da interface do usuário do Adobe Express. Você pode colocar o conteúdo gerenciado no AEM Assets na tela Express e depois salvar o conteúdo novo ou editado em um repositório do AEM Assets. O complemento oferece os seguintes benefícios principais:
+**Complemento AEM Assets para Adobe Express**: o Experience Manager Assets agora fornece um complemento para o Adobe Express. O complemento permite acessar diretamente os ativos armazenados no Experience Manager Assets por meio da interface do usuário do Adobe Express. Você pode colocar o conteúdo gerenciado no AEM Assets na tela Express e depois salvar o conteúdo novo ou editado em um repositório do AEM Assets. O complemento oferece os seguintes benefícios principais:
 
 * Maior reutilização de conteúdo ao editar e salvar novos ativos no AEM
 
