@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 281523183cecf1e74c33f58ca9ad038bba1a6363
+source-git-commit: 8795d9d2078d9f49699ffa77b1661dbe5451a4a2
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2534'
 ht-degree: 6%
 
 ---
@@ -155,6 +155,12 @@ Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atual
 
 ### Falha na assimilação complementar devido à violação de restrição de exclusividade {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_uuid"
+>title="Violação de restrição de exclusividade"
+>abstract="Uma causa comum de uma falha de assimilação que não exclui o conteúdo é um conflito nas ids do nó. Somente um dos nós em conflito pode existir."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Assimilação complementar"
+
 Uma causa comum de [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) a falha é um conflito nas ids do nó. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: propriedade violada de restrição de exclusividade [jcr:uuid] com valor a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
@@ -169,6 +175,12 @@ Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conte�
 
 ### Falha na assimilação complementar devido à não exclusão do nó referenciado {#top-up-ingestion-failure-due-to-unable-to-delete-referenced-node}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
+>title="Não é possível excluir o nó referenciado"
+>abstract="Uma causa comum de uma falha de assimilação que não exclui o conteúdo é um conflito de versão para um determinado nó na instância de destino. As versões do nó devem ser corrigidas."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html#top-up-ingestion-process" text="Assimilação complementar"
+
 Outra causa comum de uma [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) falha é um conflito de versão para um determinado nó na instância de destino. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: não é possível excluir o nó referenciado: 8a2289f4-b904-4bd0-8410-15e41e0976a8
@@ -181,11 +193,22 @@ As práticas recomendadas indicam que, se uma **Não-apagamento** a assimilaçã
 
 ### Falha de assimilação devido a valores de propriedade de nós grandes {#ingestion-failure-due-to-large-node-property-values}
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_bson"
+>title="Propriedade de nó grande"
+>abstract="Uma causa comum de falha de assimilação é exceder o tamanho máximo dos valores de propriedade do nó. Siga a documentação, incluindo as relacionadas ao relatório do BPA, para corrigir essa situação."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=pt-BR" text="Pré-requisitos de migração"
+
 Os valores de propriedade do nó armazenados no MongoDB não podem exceder 16 MB. Se um valor de nó exceder o tamanho permitido, a assimilação falhará e o log conterá um `BSONObjectTooLarge` e especificar qual nó excedeu o máximo. Essa é uma restrição MongoDB.
 
 Consulte a `Node property value in MongoDB` observação em [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta Oak que pode ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
 
 ### Assimilação cancelada {#ingestion-rescinded}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_rescinded"
+>title="Assimilação cancelada"
+>abstract="A extração que a assimilação estava aguardando não foi concluída com êxito. A assimilação foi rescindida porque não pôde ser executada."
 
 Uma assimilação criada com uma extração em execução, à medida que seu conjunto de migração de origem aguarda pacientemente até que a extração seja bem-sucedida, e nesse ponto começa normalmente. Se a extração falhar ou for interrompida, a assimilação e seu trabalho de indexação não serão iniciados, mas serão rescindidos. Nesse caso, verifique a extração para determinar por que ela falhou, corrija o problema e comece a extrair novamente. Uma vez que a extração fixa estiver em execução, uma nova assimilação pode ser programada.
 
