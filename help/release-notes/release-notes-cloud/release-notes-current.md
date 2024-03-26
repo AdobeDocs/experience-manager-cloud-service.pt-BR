@@ -3,7 +3,7 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d0b7ec258a7a2c1d83f4d9a8983945a81c83aa2f
+source-git-commit: 47e85190c2aacfb4429408ce159fecb9b0646569
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 23%
@@ -26,7 +26,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2024.1.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 25 de janeiro de 2024. O próximo lançamento de recursos (2024.3.0) está planejado para sexta-feira, 4 de abril de 2024.
+A data de lançamento da versão atual (2024.1.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 25 de janeiro de 2024. O próximo lançamento de recursos (2024.3.0) está planejado para sexta-feira, 11 de abril de 2024.
 
 ## Notas da versão de manutenção {#maintenance}
 
