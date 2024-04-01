@@ -1,14 +1,14 @@
 ---
 title: Publicar ativos, pastas e coleções no Brand Portal
 description: Publicar ativos, pastas e coleções no Brand Portal.
-contentOwner: Vishabh Gupta
+contentOwner: Adobe
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 7f806c457f7bef1c5309bbc6f69d3989af1b06d3
+source-git-commit: 56a1c18f4ad700305d3b32f1b24d87ec6321325f
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 90%
+source-wordcount: '1280'
+ht-degree: 85%
 
 ---
 
@@ -75,7 +75,9 @@ Para agendar a publicação dos ativos no Brand Portal para uma data ou hora pos
 
    Selecione **[!UICONTROL Mais tarde]** em **[!UICONTROL Agendamento]**.
 
-   ![publishlaterbp-1](assets/publishlaterbp-1.png)
+   <!--![publishlaterbp-1](assets/publishlaterbp-1.png)-->
+
+   ![publicar mais tarde](assets/publish-later.png)
 
 1. Selecione uma **[!UICONTROL Data de ativação]** e especifique a hora. Clique em **[!UICONTROL Avançar]**.
 
@@ -83,22 +85,20 @@ Para agendar a publicação dos ativos no Brand Portal para uma data ou hora pos
 
 1. Especifique um **[!UICONTROL Título de fluxo de trabalho]** em **[!UICONTROL Fluxos de trabalho]**. Clique em **[!UICONTROL Publicar mais tarde]**.
 
-   ![publishworkflow](assets/publishworkflow.png)
+   <!--![publishworkflow](assets/publishworkflow.png)-->
 
-Faça logon na interface do Brand Portal para ver os ativos publicados (dependendo da data ou hora agendadas).
-
-![bp_landingpage](assets/bp_landingpage.png)
+   ![fluxo de trabalho de publicação](assets/publish-workflow.png)
 
 >[!NOTE]
 >
 > * A parte de usuários existente do grupo Usuários DAM tem acesso de leitura no caminho &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
->* Os novos usuários (ou usuários não administradores) exigem os seguintes direitos para publicar no brand portal.
+> * Os novos usuários (ou usuários não administradores) exigem os seguintes direitos para publicar no brand portal.
 > Caminhos:
-> &quot;/conf/global/settings/cloudconfigs/mediaportal&quot; : jcr:read
->/libs : jcr:read
->/conf : jcr:read
->/content : jcr:read, crx:replicate
->/content/dam/ : jcr:read,modify, crx:replicate
+> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>`/libs : jcr:read`
+>`/conf : jcr:read`
+>`/content : jcr:read, crx:replicate`
+>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Publicar pastas no Brand Portal {#publish-folders-to-brand-portal}
 
@@ -131,8 +131,7 @@ Você pode publicar ou cancelar a publicação de pastas de ativos imediatamente
    Será exibida uma mensagem informando que a pasta foi colocada na fila para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver a pasta publicada.
 
 1. **Publicar pastas mais tarde**
-
-   Para agendar a publicação das pastas de ativos para uma data ou hora posterior:
+Para agendar a publicação das pastas de ativos para uma data ou hora posterior:
 
    1. Selecione as pastas que deseja agendar a publicação e selecione **[!UICONTROL Gerenciar publicação]** na barra de ferramentas na parte superior.
    1. Em **[!UICONTROL Ação]**, selecione **[!UICONTROL Publicar no Brand Portal]**.
@@ -141,13 +140,29 @@ Você pode publicar ou cancelar a publicação de pastas de ativos imediatamente
 
    1. Selecione uma **[!UICONTROL Data de ativação]** e especifique a hora. Clique em **[!UICONTROL Avançar]**.
 
-      ![publishlaterbp](assets/publishlaterbp.png)
+      <!--![publishlaterbp](assets/publishlaterbp.png)-->
+
+   ![publicar pasta mais tarde](assets/publish-later-folder.png)
 
    1. Confirme sua seleção no **[!UICONTROL Escopo]**. Clique em **[!UICONTROL Avançar]**.
 
    1. Especifique um título de Fluxo de trabalho em **[!UICONTROL Fluxos de trabalho]**. Clique em **[!UICONTROL Publicar mais tarde]**.
 
-      ![manageschedulepub](assets/manageschedulepub.png)
+      <!--![manageschedulepub](assets/manageschedulepub.png)-->
+
+   ![fluxo de trabalho de publicação](assets/publish-workflow.png)
+
+### Exibir arquivo ou pasta publicada no Brand Portal {#view-published-file-folder}
+
+1. Faça logon na interface do Brand Portal para ver os ativos publicados (dependendo da data ou hora agendadas).
+
+   ![bp_landingpage](assets/bp_landingpage.png)
+
+1. Alternar para exibição de lista ![Exibição de lista](assets/list-view.svg) para ver o status de publicação atual do ativo.
+
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+
+![status do relatório gerado](assets/report-status.JPG)
 
 ### Cancelar publicação de pastas do Brand Portal {#unpublish-folders-from-brand-portal}
 
