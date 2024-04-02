@@ -1,0 +1,580 @@
+---
+title: Gerar variações
+description: Saiba mais sobre Gerar variações, acessível pela Sidekick de Edge Delivery Services
+source-git-commit: 88d0b0a6dc2dacdf907ab46c804087772ab2e030
+workflow-type: tm+mt
+source-wordcount: '3338'
+ht-degree: 0%
+
+---
+
+
+# Gerar variações {#generate-variations}
+
+Se estiver procurando uma maneira de otimizar seus canais digitais e acelerar a criação de conteúdo, você poderá usar a opção Gerar variações. Gerar variações usa a Inteligência artificial (AI) gerativa para criar variações de conteúdo com base em prompts; esses prompts são fornecidos pela Adobe ou criados e gerenciados pelos usuários. Depois de criar variações, você pode usar o conteúdo em seu site e também medir seu sucesso usando o [Experimentação](https://www.aem.live/docs/experimentation) funcionalidade do [Edge Delivery Services](/help/edge/overview.md).
+
+Você pode [acessar Gerar variações](#access-generate-variations) de:
+
+<!-- 
+* [within Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
+-->
+
+* [o Sidekick do AEM Edge Delivery Services](#access-aem-sidekick)
+
+É possível:
+
+* [Comece já](#get-started) usando um modelo de prompt criado pelo Adobe para um caso de uso específico.
+* Você pode [editar um prompt existente](#edit-the-prompt)
+* Ou [criar e usar seus próprios prompts](#create-prompt):
+   * [Salve seus prompts](#save-prompt) para uso futuro
+   * [Acessar e usar prompts compartilhados](#select-prompt) de toda a organização
+* Defina o [público](#audiences) segmentos a serem usados no prompt quando [geração de conteúdo personalizado específico do público](#generate-copy).
+* Visualize a saída junto com o prompt antes de fazer alterações e refinar os resultados, se necessário.
+* Uso [Adobe Express para gerar imagens](#generate-image) com base nas variações de cópia; usa os recursos de IA gerativa do Firefly.
+* Selecione o conteúdo que deseja usar no site ou em um experimento.
+
+## Aviso legal e de uso {#legal-usage-note}
+
+A IA geradora e a geração de variações para o AEM são ferramentas eficientes, mas **você** são responsáveis pelo uso da saída.
+
+Suas entradas para o serviço devem estar vinculadas a um contexto. Esse contexto pode ser o material de marca, conteúdo do site, dados, esquemas para esses dados, modelos ou outros documentos confiáveis.
+
+Você deve avaliar a precisão de qualquer saída conforme apropriado ao seu caso de uso.
+
+Antes de usar Gerar variações, você deve Concordar com os [Diretrizes do usuário da IA geradora de Adobe](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+
+[Uso de Gerar Variações](#generative-action-usage) está vinculado ao consumo de ações geradoras.
+
+## Visão geral {#overview}
+
+Ao abrir Gerar variações (e expandir o painel esquerdo), você verá:
+
+![Gerar variações - painel principal](assets/generate-variations-main-panel.png)
+
+* Painel direito
+   * Isso depende da seleção feita na navegação à esquerda.
+   * Por padrão, **Modelos de prompt** são exibidas.
+* Navegação à esquerda
+   * À esquerda de **Gerar variações**, há a opção (menu sanduíche) para expandir ou ocultar o painel de navegação esquerdo.
+   * **Modelos de prompt**:
+      * Mostra links para os vários Prompts; eles podem incluir prompts:
+         * Fornecido pelo Adobe para ajudar a gerar conteúdo; sinalizado com o ícone Adobe.
+         * Criado por você mesmo.
+         * Criado em sua organização IMS; sinalizado com um ícone que mostra vários cabeçalhos.
+      * Inclui o [Novo prompt](#create-prompt) link para criar seu próprio prompt.
+      * Você pode **Excluir** prompts criados por você mesmo ou em sua organização IMS. Isso é feito usando o menu acessado com a elipse no cartão apropriado.
+   * [Favoritos](#favorites): mostra os resultados das gerações anteriores que você sinalizou como Favoritos.
+   * [Recentes](#recents): fornece links para prompts e suas entradas, que você usou recentemente.
+   * **Ajuda e Perguntas frequentes**: Links para a documentação, incluindo perguntas frequentes.
+   * **Diretrizes do usuário**: Links para as diretrizes legais.
+
+## Introdução {#get-started}
+
+A interface o orienta pelo processo de geração de conteúdo. Depois de abrir a interface, a primeira etapa é selecionar o prompt que deseja usar.
+
+### Selecionar prompt {#select-prompt}
+
+No painel principal, é possível selecionar:
+
+* um modelo de prompt fornecido pelo Adobe para começar a gerar conteúdo,
+* o [Novo prompt](#create-prompt) para criar seu próprio prompt,
+* um template criado apenas para uso,
+* um modelo que você ou alguém em sua organização criou.
+
+Para diferenciar:
+
+* Os prompts fornecidos pelo Adobe são sinalizados com o ícone de Adobe
+* Os prompts disponíveis em toda a sua organização IMS são sinalizados com um ícone de vários cabeçalhos.
+* Seus prompts particulares não são sinalizados especificamente.
+
+![Gerar variações - modelos de prompt](assets/generate-variations-prompt-templates.png)
+
+### Fornecer entradas {#provide-inputs}
+
+Cada prompt precisa que você forneça determinadas informações para que ele possa obter o conteúdo apropriado de volta da IA gerativa.
+
+Os campos de entrada orientam você sobre quais informações são necessárias. Para ajudar, determinados campos têm valores padrão que podem ser usados ou modificados conforme necessário, além de descrições que explicam os requisitos.
+
+Há vários campos de entrada principais que são comuns a vários prompts (determinados campos nem sempre estão disponíveis):
+
+* **Contagem de**/**Número de**
+   * Você pode selecionar quantas variações de conteúdo deseja criar em uma geração.
+   * Dependendo do prompt, isso pode ter um de vários rótulos; por exemplo, Contagem, Número de variações, Número de ideias e outros.
+* **Audience Source**/**Público-alvo**
+   * Ajuda a gerar conteúdo personalizado para um público-alvo específico.
+   * o Adobe fornece públicos-alvo padrão; ou você pode especificar públicos-alvo adicionais; consulte [Públicos-alvo](#audiences).
+* **Contexto adicional**
+   * Insira conteúdo relevante para ajudar a IA gerativa a criar uma resposta melhor com base na entrada. Por exemplo, se estiver criando um banner da Web para uma página ou produto específico, talvez você queira incluir informações sobre a página/produto.
+* **Temperatura**
+Use para modificar a temperatura do Adobe Generative AI:
+   * Uma temperatura mais alta se desvia do prompt e leva a mais variação, aleatoriedade e criatividade.
+   * Uma temperatura mais baixa é mais determinística e fica mais próxima do que está no momento.
+   * Como padrão, a temperatura é definida como 1. Você pode experimentar temperaturas diferentes se os resultados gerados não forem do seu agrado.
+* **Editar prompt**
+   * A base subjacente [o prompt pode ser editado](#edit-the-prompt) para refinar os resultados gerados.
+
+### Gerar cópia {#generate-copy}
+
+Depois de preencher os campos de entrada e/ou modificar o prompt, você estará pronto para gerar conteúdo e revisar as respostas.
+
+Selecionar **Gerar** para ver as respostas geradas pela IA gerativa. As variações de conteúdo geradas são mostradas no prompt que as gerou.
+
+![Gerar variações - gerar cópia](assets/generate-variations-generate-content.png)
+
+>[!NOTE]
+>
+>A maioria dos modelos de prompt de Adobe inclui um **Fundamentação da IA** na resposta de variação. Isso proporciona transparência sobre por que a IA gerativa gerou essa variação específica.
+
+Quando você seleciona uma única variação, as seguintes ações estão disponíveis:
+
+* **Favorito**
+   * Sinalizar como um **Favorito** para uso futuro (aparecerá em [Favoritos](#favorites)).
+* Polegar para cima/Polegar para baixo
+   * Use os indicadores de polegar para cima/para baixo para notificar o Adobe sobre a qualidade das respostas.
+* **Copiar**
+   * Copie para a área de transferência para uso ao criar conteúdo no seu site ou em um [Experimento](https://www.aem.live/docs/experimentation).
+* **Remover**
+
+Se precisar refinar as entradas ou o prompt, faça ajustes e selecione **Gerar** novamente para obter um conjunto de novas respostas. O novo prompt e a nova resposta são mostrados abaixo do prompt e da resposta iniciais; você pode rolar a tela para cima e para baixo para visualizar os vários conjuntos de conteúdo.
+
+Acima de cada conjunto de variações está o prompt que as criou, juntamente com um **Reutilizar** opção. Se precisar executar novamente um prompt com suas entradas, selecione **Reutilizar** para recarregá-los em **Entradas**.
+
+### Gerar imagem {#generate-image}
+
+Depois de gerar variações de texto, você pode gerar imagens no Adobe Express usando os recursos de IA gerativa do Firefly.
+
+>[!NOTE]
+>
+>**Gerar imagem** O só estará disponível se você tiver um direito de Adobe Express como parte de sua organização IMS e o acesso concedido a você no Admin Console.
+
+Selecione uma variação, seguida de **Gerar imagem**, para abrir diretamente **Texto para imagem** in [Adobe Express](https://www.adobe.com/express/). O prompt é pré-preenchido com base na seleção de variante, e as imagens são geradas automaticamente de acordo com esse prompt.
+
+![Gerar variações - imagens expressas](assets/generate-variations-express-images.png)
+
+Você pode fazer mais alterações:
+
+* [escreva seu próprio prompt no Adobe Express](https://helpx.adobe.com/firefly/using/tips-and-tricks.html) descrevendo o que você gostaria de ver,
+* ajuste o **Texto para imagem** opções,
+* depois **Atualizar** as imagens geradas.
+
+Também é possível usar **Explorar mais** para outras possibilidades.
+
+Quando terminar, selecione a imagem desejada e **Salvar** para fechar o Adobe Express. A imagem é retornada e salva com a variação.
+
+![Gerar variações - imagem expressa salva](assets/generate-variations-express-image-saved.png)
+
+Aqui você pode passar o mouse sobre a imagem para mostrar os itens de ação para:
+
+* **Copiar**: [copiar a imagem para a área de transferência para ser usada em outro lugar](#use-content)
+* **Editar**: abra o Adobe Express para poder fazer alterações na imagem
+* **Baixar**: baixe a imagem no computador local
+* **Excluir**: remova a imagem da variação
+
+>[!NOTE]
+>
+>[Contents credentials](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) não são mantidos quando usados na criação baseada em documento.
+
+### Usar conteúdo {#use-content}
+
+Para usar o conteúdo gerado com a IA gerativa, você deve copiar o conteúdo para a área de transferência para uso em outro lugar.
+
+Isso é feito usando os ícones de cópia:
+
+* Para texto: use o ícone de cópia visível no painel de variações
+* Para a imagem: passe o mouse sobre a imagem para ver o ícone de cópia
+
+Depois de copiada para a área de transferência, você pode colar as informações para uso ao criar conteúdo para o seu site. Você também pode executar um [experimento](https://www.aem.live/docs/experimentation).
+
+## Favoritos {#favorites}
+
+Depois de revisar o conteúdo, você pode salvar as variações selecionadas como favoritos.
+
+Depois de salvos, eles são mostrados em **Favoritos** no painel de navegação esquerdo. Os favoritos são mantidos (até que você **Excluir** ou limpe o cache do navegador).
+
+* Favoritos e variações podem ser copiados/colados na área de transferência para uso no conteúdo do seu site.
+* Os favoritos podem ser **Removido**.
+
+## Recentes {#recents}
+
+Esta seção fornece links para a atividade recente. A **Recente** a entrada é adicionada após selecionar **Gerar**. Ele tem o nome do prompt e um carimbo de data e hora. Se você selecionar um link, ele carregará o prompt, preencherá os campos de entrada conforme apropriado e mostrará as variações geradas.
+
+## Editar o prompt {#edit-the-prompt}
+
+O prompt subjacente pode ser editado. Você pode querer fazer isso:
+
+* Se os resultados gerados que você está obtendo precisarem de mais refinamento
+* Você deseja modificar e [salvar o prompt](#save-prompt) para uso futuro
+
+Selecionar **Editar prompt**:
+
+![Gerar variações - editar prompt](assets/generate-variations-prompt-edit.png)
+
+Isso abre o editor de prompts, onde você pode fazer suas alterações:
+
+![Gerar variações - editor de prompt](assets/generate-variations-prompt-editor.png)
+
+### Adicionar entradas de prompt {#add-prompt-inputs}
+
+Ao criar ou editar um prompt, talvez você queira adicionar campos de entrada. Os campos de entrada atuam como variáveis no prompt e oferecem flexibilidade para usar o mesmo prompt em vários cenários. Eles permitem que os usuários definam elementos específicos do prompt, sem ter que gravar o prompt inteiro.
+
+* Um campo é definido com chaves duplas `{{ }}` delimitando um nome de espaço reservado.
+Por exemplo, `{{tone_of_voice}}`.
+
+  >[!NOTE]
+  >
+  >Não são permitidos espaços entre as chaves duplas.
+
+* Também é definido em `METADATA`, com os seguintes parâmetros:
+   * `label`
+   * `description`
+   * `default`
+   * `type`
+
+#### Exemplo: Adicionar novo campo de texto - Tom de voz {#example-add-new-text-field-tone-of-voice}
+
+Para adicionar um novo campo de texto intitulado **Tom de voz**, use a seguinte sintaxe no prompt:
+
+```prompt
+{{@tone_of_voice, 
+  label="Tone of voice",
+  description="Indicate the desired tone of voice",
+  default="optimistic, smart, engaging, human, and creative",
+  type=text
+}}
+```
+
+![Gerar variações - prompt editado com tom de voz](assets/generate-variations-prompt-edited.png)
+
+#### Exemplo: Adicionar novo campo suspenso - Tipo de página {#example-add-new-dropdown-field-page-type}
+
+Para criar um campo de entrada Tipo de página que fornece uma seleção suspensa:
+
+1. Crie uma planilha com o nome `pagetype.xls` no diretório de nível superior da estrutura de pastas.
+1. Edite a planilha:
+
+   1. Crie duas colunas: **Chave** e **Valor**.
+   1. No **Chave** insira os rótulos que aparecerão na lista suspensa.
+   1. No **Valor** , descreva o valor principal para que a IA gerativa tenha contexto.
+
+1. No prompt, consulte o título da planilha, juntamente com o tipo apropriado.
+
+   ```prompt
+   {{@page_type, 
+     label="Page Type",
+     description="Describes the type of page",
+     spreadsheet=pagetype
+   }}
+   ```
+
+## Criar um prompt {#create-prompt}
+
+Ao selecionar **Novo prompt** de **Modelos de prompt**, um novo painel permitirá que você insira um novo prompt. Em seguida, você pode especificá-los, juntamente com a variável **Temperatura**, para **Gerar** conteúdo.
+
+Consulte [Salvar prompt](#save-prompt) para obter detalhes sobre como salvar o prompt no futuro.
+
+Consulte [Adicionar entradas de prompt](#add-prompt-inputs) para obter detalhes sobre como adicionar suas próprias entradas de prompt.
+
+Se você deseja preservar a formatação na interface do usuário e, quando copiada e colada no fluxo de criação baseado em documento, inclua o seguinte no prompt:
+
+<!-- CHECK - are the double-quotes needed? -->
+
+* `"Format the response as an array of valid, iterable RFC8259 compliant JSON"`
+
+A imagem a seguir mostra as vantagens de fazer isso:
+
+* no primeiro exemplo, a variável `Title` e `Description` são combinados
+* no segundo exemplo, elas são formatadas separadamente: isso foi feito incluindo a solicitação JSON no prompt.
+
+![Gerar variações - prompt com Título e Descrição formatados separadamente](assets/generate-variations-prompt-formatted.png)
+
+## Salvar prompt {#save-prompt}
+
+Depois de editar ou criar prompts, talvez você queira salvá-los para uso futuro; para sua organização IMS ou apenas para você. O prompt salvo aparecerá como um **Modelo de solicitação** cartão.
+
+Quando você tiver editado o prompt, a variável **Salvar** está disponível na parte inferior da seção Entradas, à esquerda de **Gerar**.
+
+Quando selecionado, a variável **Salvar prompt** será aberta:
+
+![Gerar variações - caixa de diálogo para salvar prompt](assets/generate-variations-prompt-save-dialog.png)
+
+1. Adicione um **Nome do prompt**; usado para identificar o prompt no **Modelos de prompt**.
+   1. Um nome novo e exclusivo cria um novo modelo de prompt.
+   1. Um nome existente substitui esse prompt; uma mensagem é exibida.
+1. Opcionalmente, adicione uma descrição.
+1. Ativar ou desativar a opção **Compartilhado entre organizações**, dependendo se o prompt deve ser privado ou disponibilizado em sua organização IMS. Esse status é mostrado na variável [cartão resultante mostrado nos Modelos de prompt](#select-prompt).
+1. **Salvar** o prompt; ou **Cancelar** a ação.
+
+>[!NOTE]
+>
+>Você será informado (avisado) se estiver substituindo/atualizando um prompt existente.
+
+>[!NOTE]
+>
+>De **Modelos de prompt** você pode excluir prompts (usando o menu acessado com a elipse) criados por você mesmo ou em sua organização IMS.
+
+## Públicos-alvo {#audiences}
+
+Para gerar conteúdo personalizado, a IA gerativa deve ter uma compreensão do público-alvo. O Adobe fornece vários públicos-alvo padrão, ou você pode adicionar os seus próprios.
+
+Ao adicionar um público-alvo, você deve descrevê-lo em linguagem natural. Por exemplo:
+
+* para criar um público-alvo:
+   * `Student`
+* você pode dizer:
+   * `The audience consists of students, typically individuals who are pursuing education at various academic levels, such as primary, secondary, or tertiary education. They are engaged in learning and acquiring knowledge in diverse subjects, seeking academic growth, and preparing for future careers or personal development.`
+
+Duas fontes de público-alvo são compatíveis:
+
+* [Adobe Target](#audience-adobe-target)
+* [Arquivo CSV](#audience-csv-file)
+
+![Gerar variações - fontes de público-alvo](assets/generate-variations-audiences.png)
+
+### Público-alvo - Adobe Target {#audience-adobe-target}
+
+Selecionar um **Adobe Target** o audience no prompt permite que a geração de conteúdo seja personalizada para esse público.
+
+>[!NOTE]
+>
+>Para usar essa opção, sua organização de IMS deve ter acesso ao Adobe Target.
+
+1. Selecione **Adobe Target**.
+1. Em seguida, selecione o **Público-alvo**, da lista fornecida.
+
+   >[!NOTE]
+   >
+   >Para usar uma **Adobe Target** público o campo de descrição deve ser preenchido. Caso contrário, o público-alvo será exibido na lista suspensa como indisponível. Para adicionar uma descrição, vá para Target e [adicionar uma descrição do público-alvo](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
+
+   ![Gerar variações - origem do público-alvo - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
+
+#### Adicionar público-alvo do Adobe Target {#add-adobe-target-audience}
+
+Consulte [Criar públicos](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences) para criar um público-alvo no Adobe Target.
+
+### Público-alvo - arquivo CSV {#audience-csv-file}
+
+Selecionar um **Arquivo CSV** o público no prompt permite que a geração de conteúdo seja personalizada para o conteúdo selecionado **Público-alvo**.
+
+O Adobe fornece vários públicos-alvo para usar.
+
+1. Selecionar **Arquivo CSV**.
+1. Em seguida, selecione o **Público-alvo**, da lista fornecida.
+
+   ![Gerar variações - origem do público-alvo - arquivo CSV](assets/generate-variations-audiences-csv-file.png)
+
+#### Adicionar arquivo CSV de público-alvo {#add-audience-csv-file}
+
+Você pode adicionar um arquivo CSV de várias plataformas (por exemplo, Google Drive, Dropbox, Sharepoint) que têm a capacidade de fornecer um URL para o arquivo depois que ele for disponibilizado publicamente.
+
+>[!NOTE]
+>
+>Nas plataformas de compartilhamento, você *deve* Ter a capacidade de tornar o arquivo publicamente acessível.
+
+Por exemplo, para adicionar um público-alvo de um arquivo no Google Drive:
+
+1. No Google Drive, crie um arquivo de planilha com duas colunas:
+   1. A primeira coluna será exibida na lista suspensa.
+   1. A segunda coluna será a descrição do público-alvo.
+1. Publique o arquivo:
+   1. Arquivo -> Compartilhar -> publicar na Web -> CSV
+1. Copie o URL para o arquivo publicado.
+1. Vá para Gerar variações.
+1. Abra o Editor de prompts.
+1. Localizar **Adobe Target** público-alvo nos metadados e substitua o URL.
+
+   >[!NOTE]
+   >
+   >Verifique se as aspas duplas (&quot;) são mantidas em ambas as extremidades do URL.
+
+   Por exemplo:
+
+   ![Gerar variações - adicionar arquivo CSV de público-alvo](assets/generate-variations-audiences-csv-save.png)
+
+## Perguntas frequentes {#faqs}
+
+### Saída formatada {#formatted-outpu}
+
+**A resposta gerada não está me dando a saída formatada de que preciso. Como modificar o formato? ex: Preciso de um título e um subtítulo, mas a resposta é apenas título**
+
+1. Abra o prompt real no modo de edição.
+1. Vá para requisitos.
+1. Você encontrará requisitos que falam sobre o resultado.
+   1. Exemplo: &quot;O texto deve consistir em três partes: um título, um corpo e um rótulo de botão.&quot; ou &quot;Formatar a resposta como uma matriz JSON válida de objetos com atributos &quot;Title&quot;, &quot;Body&quot; e &quot;ButtonLabel&quot;.
+1. Modifique os requisitos de acordo com suas necessidades.
+
+   >[!NOTE]
+   >
+   >Se você tiver restrições de contagem de palavras/caracteres na nova saída inserida, crie um requisito.
+
+   Exemplo: &quot;O texto do título não deve exceder 10 palavras ou 50 caracteres, incluindo espaços.&quot;
+1. Salve o prompt para uso futuro.
+
+### Duração da resposta {#length-of-response}
+
+**A resposta gerada é muito longa ou muito curta. Como alterar o comprimento?**
+
+1. Abra o prompt real no modo de edição.
+1. Vá para requisitos.
+1. Você descobrirá que, para cada saída, há um limite de palavra/caractere correspondente.
+   1. Exemplo: &quot;O texto do título não deve exceder 10 palavras ou 50 caracteres, incluindo espaços.&quot;
+1. Modifique os requisitos de acordo com suas necessidades.
+1. Salve o prompt para uso futuro.
+
+### Melhorar respostas {#improve-responses}
+
+**As respostas que estou recebendo não são exatamente as que estou procurando. O que posso fazer para melhorá-los?**
+
+1. Tente alterar a Temperatura em Advanced settings.
+   1. Uma temperatura mais alta se desvia do prompt e leva a mais variação, aleatoriedade e criatividade.
+   1. Uma temperatura mais baixa é mais determinística e adere ao que está na hora.
+1. Abra o prompt real no modo de edição e revise o prompt. Preste atenção especial à seção de requisitos que descreve o tom de voz e outros critérios importantes.
+
+### Comentários em um prompt {#comments-in-prompt}
+
+**Como posso usar comentários em um prompt?**
+
+Os comentários em um prompt são usados para incluir notas, explicações ou instruções que não devem fazer parte da saída real. Esses comentários são encapsulados em uma sintaxe específica: eles começam e terminam com chaves duplas e começam com um hash (por exemplo, `{{# Comment Here }}`). Os comentários ajudam a esclarecer a estrutura ou a intenção do prompt, sem afetar a resposta gerada.
+
+### Localizar um prompt compartilhado {#find-a-shared-prompt}
+
+**O que devo fazer se não conseguir encontrar um modelo de prompt que alguém compartilhou?**
+
+Nessa situação, há vários detalhes a serem verificados:
+
+1. Use o URL do seu ambiente.
+Por exemplo, https://experience.adobe.com/#/aem/generate-variations
+1. Verifique se a organização IMS selecionada está correta.
+1. Confirme se o prompt foi salvo como Compartilhado.
+
+### Prompts personalizados na v2.0.0 {#custom-prompts-v200}
+
+**Na v.2.0.0, meus prompts personalizados desapareceram. O que posso fazer?**
+
+Mover para a versão v2.0.0 fará com que os modelos de prompt personalizados sejam interrompidos - portanto, eles não estarão disponíveis.
+
+Consulte a [notas de versão para v2.0.0 para obter instruções sobre como recuperá-las](#release-notes-2-0-0-retrieve-prompt-templates).
+
+## Uso de ação gerativa {#generative-action-usage}
+
+O gerenciamento de uso depende da ação tomada:
+
+* Gerar variações
+
+  Uma geração de uma variante de cópia é igual a uma ação gerativa. Como cliente do, você tem um determinado número de ações geradoras que vêm com sua licença de AEM. Depois que o direito base for consumido, você poderá adquirir ações adicionais.
+
+  >[!NOTE]
+  >
+  >Consulte [Adobe Experience Manager: Cloud Service | Descrição do produto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obter mais detalhes sobre direitos básicos e entrar em contato com a equipe de conta se desejar adquirir ações mais geradoras.
+
+* Adobe Express
+
+  O uso da geração de imagens é feito por meio de direitos de Adobe Express e [créditos gerativos](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+
+## Acessar Gerar Variações {#access-generate-variations}
+
+<!--
+### Access from AEM as a Cloud Service {#access-aemaacs}
+
+Generate Variations can be accessed from the [Navigation Panel](/help/sites-cloud/authoring/basic-handling.md#navigation-panel) of AEM as a Cloud Service:
+
+![Navigation panel](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
+-->
+
+### Acessar do AEM Sidekick {#access-aem-sidekick}
+
+Algumas configurações são necessárias antes de você poder acessar Gerar variações no Sidekick (de Edge Delivery Services).
+
+1. Consulte o documento [Instalação do AEM Sidekick](https://www.aem.live/docs/sidekick-extension) para saber como instalar e configurar o Sidekick.
+
+1. Para usar a opção Gerar variações na Sidekick (de Edge Delivery Services), inclua a seguinte configuração nos projetos Edge Delivery Services em:
+
+   * `tools/sidekick/config.json`
+
+   Ele deve ser mesclado com sua configuração existente e, em seguida, implantado.
+
+   Por exemplo:
+
+   ```prompt
+   {
+     // ...
+     "plugins": [
+       // ...
+       {
+         "id": "generate-variations",
+         "title": "Generate Variations",
+         "url": "https://experience.adobe.com/aem/generate-variations",
+         "passConfig": true,
+         "environments": ["preview","live", "edit"],
+         "includePaths": ["**.docx**"]
+       }
+       // ...
+     ]
+   }
+   ```
+
+1. Talvez seja necessário garantir que os usuários tenham [Acesso ao Experience Manager as a Cloud Service com Edge Delivery Services](#access-to-aemaacs-with-edge-delivery-services).
+
+1. Em seguida, você pode acessar o recurso selecionando **Gerar variações** na barra de ferramentas do Sidekick:
+
+   ![Gerar variações - acesso do AEM Sidekicj](assets/generate-variations-sidekick-toolbar.png)
+
+## Acesso ao Experience Manager as a Cloud Service com Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
+
+Os usuários que precisam de acesso para Gerar variações devem ter direito a um ambiente Experience Manager as a Cloud Service com Edge Delivery Services.
+
+>[!NOTE]
+>
+>Se o seu contrato do AEM Sites as a Cloud Service não incluir Edge Delivery Services, será necessário assinar um novo contrato para obter acesso.
+>
+>Entre em contato com a Equipe de conta para discutir como migrar para o AEM Sites as a Cloud Service com o Edge Delivery Services.
+
+Para conceder acesso a usuários específicos, atribua a conta de usuário deles ao respectivo perfil de produto. Consulte [Atribuição de perfis de produto AEM para obter mais detalhes](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+
+## Leitura adicional {#further-reading}
+
+Leia também:
+
+* [Gerar variações no GitHub da GenAI](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
+* [Experimentação do Edge Delivery Services](https://www.aem.live/docs/experimentation)
+
+## Notas de versão {#release-notes}
+
+### 2.0.0  {#release-notes-2-0-0}
+
+* Armazenamento persistente universal introduzido para modelos de prompt.
+* Nova funcionalidade para Públicos-alvo
+   * Os públicos-alvo podem ser lidos diretamente do Adobe Target
+   * Métodos atualizados de adição de arquivos CSV
+* Caixa de diálogo com opções para Salvar prompt
+* Ao gerar imagens, o prompt no Adobe Express é pré-preenchido
+* Os cartões de prompt (na home page) mostram informações adicionais e podem ser excluídos
+
+#### 2.0.0 - Como recuperar modelos de prompt personalizados {#release-notes-2-0-0-retrieve-prompt-templates}
+
+Mover para a versão v2.0.0 faz com que os modelos de prompt personalizados sejam interrompidos - portanto, não estarão disponíveis. Para recuperá-los:
+
+1. Vá para a pasta de modelo de prompt no Sharepoint.
+1. Copie o prompt.
+1. Abra o aplicativo Gerar variações.
+1. Selecione o cartão Novo prompt.
+1. Cole o prompt.
+1. Verifique se o prompt funciona.
+1. Salve o prompt.
+
+### 1.0.5 {#release-notes-1-0-5}
+
+* Integração com o Adobe Express
+* Mover prompt de edição para o painel lateral
+
+### 1.0.4 {#release-notes-1-0-4}
+
+* Melhorias internas
+
+### 1.0.3 {#release-notes-1-0-3}
+
+* Expandir ou ocultar o painel de navegação esquerdo
+* Pequenas melhorias
+
+### 1.0.0 - 1.0.2 {#release-notes-1-0-0-1-0-2}
+
+* Melhorias internas
