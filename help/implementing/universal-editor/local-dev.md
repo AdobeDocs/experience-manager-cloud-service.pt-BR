@@ -2,7 +2,7 @@
 title: Desenvolvimento local do AEM com o editor universal
 description: Saiba como o Editor universal oferece suporte à edição em instâncias locais do AEM para fins de desenvolvimento.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -13,8 +13,6 @@ ht-degree: 0%
 # Desenvolvimento local do AEM com o editor universal {#local-dev-ue}
 
 Saiba como o Editor universal oferece suporte à edição em instâncias locais do AEM para fins de desenvolvimento.
-
-{{universal-editor-status}}
 
 ## Visão geral {#overview}
 

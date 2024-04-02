@@ -2,7 +2,7 @@
 title: Publicação de conteúdo com o Editor universal
 description: Saiba como o Editor universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: 58d85886ef04b548c09e3ef9308fe596dd3eda38
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 69%
@@ -13,8 +13,6 @@ ht-degree: 69%
 # Publicação de conteúdo com o Editor universal {#publishing}
 
 Saiba como o Editor universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
-
-{{universal-editor-status}}
 
 ## Semelhanças com o AEM {#similarities}
 

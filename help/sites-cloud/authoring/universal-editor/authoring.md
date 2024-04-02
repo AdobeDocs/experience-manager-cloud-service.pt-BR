@@ -2,7 +2,7 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 799ca20f8787afffd783c93a2480e096fffb1566
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
 source-wordcount: '2313'
 ht-degree: 35%
@@ -13,8 +13,6 @@ ht-degree: 35%
 # Criação de conteúdo com o Editor universal {#authoring}
 
 Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
-
-{{universal-editor-status}}
 
 ## Introdução {#introduction}
 

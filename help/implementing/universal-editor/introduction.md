@@ -2,10 +2,10 @@
 title: Introdução ao Editor universal
 description: Saiba como o Editor universal habilita a edição "o que você vê é o que você obtém" (WYSIWYG) de qualquer experiência headless e headful. Entenda como ele pode ajudar criadores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor de última geração.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 9d88d9b6d3315f34ca6819820b4b4306ba901390
+source-git-commit: b6548d39ce02006d91f1953c878e08a1c0903563
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 84%
+source-wordcount: '868'
+ht-degree: 83%
 
 ---
 
@@ -13,8 +13,6 @@ ht-degree: 84%
 # Introdução ao Editor universal {#introduction}
 
 Saiba como o Editor universal habilita a edição &quot;o que você vê é o que você obtém&quot; (WYSIWYG) de qualquer experiência headless e headful. Entenda como ele pode ajudar criadores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor de última geração.
-
-{{universal-editor-status}}
 
 ## Segundo plano {#background}
 
@@ -79,12 +77,6 @@ Para um profissional de marketing que deseja criar conteúdo sem precisar se pre
 Para um profissional de marketing que deseja criar um conteúdo adaptado ao layout de um contexto específico, a fim de fornecer uma experiência excepcional.
 
 * O foco é estabelecer uma conexão convincente com os leitores.
-
-## Roteiro {#road-map}
-
-É importante observar que o Editor universal está em constante mudança, por isso, alguns recursos presentes neste documento podem apresentar uma visão do editor final, a qual pode não representar seus recursos atuais.
-
-Fale com seu contato da Adobe para obter detalhes sobre os próximos recursos planejados para o editor universal.
 
 ## Recursos adicionais {#additional-resources}
 

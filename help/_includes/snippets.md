@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4144f9704aaf17ea684be147395adc3aa31641f2
+source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 12%
+source-wordcount: '340'
+ht-degree: 13%
 
 ---
 # Trechos {#snippets}
@@ -14,12 +14,6 @@ ht-degree: 12%
 ## Criação de Edge Delivery Services {#edge-delivery-authoring}
 
 [!BADGE Para criar conteúdo de AEM para Edge Delivery Services, clique aqui.]{type=Positive url="/help/edge/overview.md" tooltip="Criação de conteúdo AEM para Edge Delivery Services"}
-
-## Status do Editor Universal {#universal-editor-status}
-
->[!NOTE]
->
->O Universal Editor ainda está em desenvolvimento e seus recursos estão sujeitos a mudanças e podem ser diferentes do que é detalhado neste documento.
 
 ## Consulte também {#see-also}
 
