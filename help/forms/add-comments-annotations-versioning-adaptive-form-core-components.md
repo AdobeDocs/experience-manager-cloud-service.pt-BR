@@ -1,0 +1,98 @@
+---
+title: Adicionar versões, comentários e anotações a um formulário.
+description: Use os componentes principais do formulário adaptável para adicionar comentários, anotações e versões a um formulário adaptável.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Adaptive Forms, Core Components
+hidefromtoc: true
+source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 0%
+
+---
+
+# Controle de versão, revisão e comentário em um Formulário adaptável
+
+<!--Before you can use versionings, comments, and annotations in an Adaptive Form, you must ensure you have [enabled Adaptive Form Core Components](
+https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components).-->
+
+<!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
+
+<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+
+Os Componentes principais do formulário adaptável fornecem funcionalidade que permite que os autores de formulários incorporem versões, comentários e anotações nos formulários. Esses recursos servem para simplificar o processo de desenvolvimento de formulário, permitindo que os usuários criem e gerenciem várias versões de um formulário, participem de discussões colaborativas por meio de comentários e anexem anotações a componentes de formulário específicos, aprimorando assim a experiência geral de criação de formulários.
+
+
+## Versão do formulário adaptável {#adaptive-form-versioning}
+
+O controle de versão do formulário adaptável ajuda a adicionar versões a um formulário. Os autores de formulários podem criar facilmente várias versões de um formulário e, finalmente, usar aquela que é adequada aos objetivos de negócios. Além disso, os usuários do formulário também podem reverter o formulário para as versões anteriores. Também facilita que os autores comparem duas versões de um formulário, visualizando-as, permitindo que analisem melhor os formulários a partir das perspectivas da interface do usuário. Vamos analisar detalhadamente cada funcionalidade de controle de versão de formulário adaptável:
+
+### Criar uma versão de formulário {#create-a-form-version}
+
+Para criar a versão de um formulário, siga as etapas fornecidas abaixo:
+
+1. Crie um formulário ou use um formulário existente.
+1. Na interface do AEM, navegue até a **[!UICONTROL Formulário]**>>**[!UICONTROL Forms e documentos]** e selecione o **Formulário**.
+1. Na lista suspensa de seleção no painel esquerdo, selecione **[!UICONTROL Versões]**.
+   ![Selecionar um formulário](select-a-form.png)
+1. Clique em **três pontos** localizado no painel inferior à esquerda, clique em **[!UICONTROL Salvar como versão]**.
+1. Agora forneça um rótulo para a versão do formulário e você poderá fornecer informações sobre o formulário por meio do comentário.
+   ![Criar uma versão de formulário](create-a-form-version.png)
+
+### Atualizar uma versão de formulário {#update-a-form-version}
+
+Ao editar e atualizar seu formulário adaptável, você adiciona uma nova versão ao formulário. Siga as etapas fornecidas na última seção para nomear uma nova versão do formulário como mostrado na imagem:
+
+![Atualizar uma versão de formulário](update-a-form-version.png)
+
+### Reverter uma versão de formulário {#revert-a-form-version}
+
+Para reverter uma versão de formulário para a anterior, selecione uma versão de formulário, clique em **[!UICONTROL Reverter para esta versão]**.
+
+![Reverter versão do formulário](revert-form-version.png)
+
+### Comparar versões de formulários {#compare-form-versions}
+
+Os autores de formulário podem comparar duas versões diferentes de um formulário para fins de visualização. Para comparar versões, selecione qualquer versão de formulário e clique em **[!UICONTROL Comparar ao atual]**. Ela mostra duas versões de formulário diferentes no modo de visualização.
+
+![Comparar versões de formulários](compare-form-versions.png)
+
+## Adicionar comentários {#add-comments}
+
+Uma revisão é um mecanismo que permite que um ou mais revisores comentem formulários. Qualquer usuário do formulário pode comentar em um formulário ou revisar um formulário por meio de comentários. Para comentar em um formulário, selecione um **[!UICONTROL Formulário]** e adicionar um **[!UICONTROL Comentário]** ao formulário.
+
+>[!NOTE]
+> Ao usar comentários em componentes principais do formulário adaptável, conforme discutido acima, a funcionalidade de formulário [Criar e gerenciar revisões em formulários](/help/forms/create-reviews-forms.md) está desativado.
+
+
+![Adicionar comentários em um formulário](form-comments.png)
+
+## Adicionar anotações {#adaptive-form-annotations}
+
+Em muitos casos, os usuários do grupo de formulários são solicitados a adicionar anotações em um formulário para fins de revisão, por exemplo, em uma guia específica de um formulário ou em componentes de um formulário. Nesses casos, os autores podem usar anotações. Para adicionar anotações a um formulário, execute as seguintes etapas:
+
+1. Abra um formulário no **[!UICONTROL Editar]** modo.
+
+1. Clique em **ícone adicionar** localizado no painel superior direito, conforme fornecido na imagem.
+   ![Anotação](annotation.png)
+
+1. Clique em **ícone adicionar** localizado no painel superior esquerdo, conforme fornecido na imagem para adicionar a notação.
+   ![Adicionar anotação](add-annotation.png)
+
+1. Agora é possível adicionar comentários, desenhar rascunhos com várias cores, para formar componentes.
+
+1. Para ver todas as anotações adicionadas a um formulário, selecione o formulário e você verá as anotações adicionadas no painel esquerdo, como mostrado na imagem.
+
+   ![Consulte anotações adicionadas](see-annotations.png)
+
+
+
+
+
+
+
+
+
+
+
