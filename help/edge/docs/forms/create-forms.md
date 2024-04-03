@@ -3,7 +3,7 @@ title: Introdução ao Serviço de entrega de borda da AEM Forms. Crie um formul
 description: Formas perfeitas de artesanato, rápido!  criação baseada em documentos do AEM Forms Edge Delivery = velocidade incrível e formulários compatíveis com SEO para usuários e mecanismos de pesquisa mais satisfeitos.
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Antes de começar, verifique se você concluiu as seguintes etapas:
 
 * Configurar um [Projeto do AEM usando a placa-padrão do AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [Adição do bloco adaptável do Forms ao seu projeto AEM existente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clonar o repositório GitHub correspondente no computador local.
 Neste documento, a pasta local do seu projeto Edge Delivery Services (EDS) é chamada de `[EDS Project repository]`.
-* Verifique se você tem acesso ao Google Sheets ou ao Microsoft SharePoint. Para configurar o Microsoft SharePoint como sua fonte de conteúdo, consulte [Como usar o SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
+* Verifique se você tem acesso ao Google Sheets ou ao Microsoft SharePoint. Para configurar o Microsoft SharePoint como sua fonte de conteúdo, consulte [Como usar o SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
 
@@ -80,7 +80,7 @@ Para continuar com a criação do formulário:
 
    ![Conteúdo de exemplo no Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
 
-1. Verifique se a planilha está compartilhada com o usuário AEM apropriado (por exemplo, `helix@adobe.com`) [de acordo com as configurações especificadas para seu projeto](https://www.aem.live/docs/setup-customer-SharePoint). Conceda ao usuário permissão de edição para a planilha.
+1. Verifique se a planilha está compartilhada com o usuário AEM apropriado (por exemplo, `helix@adobe.com`) [de acordo com as configurações especificadas para seu projeto](https://www.aem.live/docs/setup-customer-sharepoint). Conceda ao usuário permissão de edição para a planilha.
 
 1. Abra a planilha criada e renomeie a planilha padrão como &quot;shared-default&quot;.
 

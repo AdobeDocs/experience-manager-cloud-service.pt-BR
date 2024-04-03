@@ -2,13 +2,13 @@
 title: Introdução ao AEM Forms Edge Delivery Services - Tutorial do desenvolvedor
 description: Este tutorial ajuda você a começar a usar um novo projeto do Adobe Experience Manager Forms (AEM). Em dez a vinte minutos, você terá criado seus próprios formulários.
 feature: Edge Delivery Services
-source-git-commit: b32e04dec83992ebfcea7874932a5ab77a1eaa70
+exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
-source-wordcount: '1850'
+source-wordcount: '1848'
 ht-degree: 0%
 
 ---
-
 
 # Introdução - Tutorial do desenvolvedor
 
@@ -19,8 +19,6 @@ Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel o
 O AEM Forms fornece um bloco, conhecido como Bloco adaptável do Forms, para ajudar você a criar formulários facilmente para capturar e armazenar dados capturados. Você pode [criar um novo projeto AEM pré-configurado com o Adaptive Forms Block](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [adicionar o bloco adaptável do Forms a um projeto AEM existente](#add-adaptive-forms-block-to-your-existing-aem-project).
 
 Este tutorial do AEM Forms orienta você na criação, visualização e publicação de seu próprio formulário personalizado com um novo projeto do Adobe Experience Manager (AEM) Forms.
-
-
 
 ## Pré-requisitos
 
@@ -131,8 +129,7 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
       https://adobe.SharePoint.com/sites/wkndforms/Shared%20Documents/wefinance
       ```
 
-      Para obter mais informações sobre como gerenciar arquivos com o Microsoft SharePoint, consulte [Como usar o Adobe SharePoint](https://www.aem.live/docs/setup-customer-SharePoint).
-
+      Para obter mais informações sobre o gerenciamento de arquivos com o Microsoft SharePoint, consulte [Como usar o Adobe SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
 
    1. Confirmar o atualizado `fsatb.yaml` após atualizar a referência e tudo ficará bem. Se encontrar problemas de build, consulte [Solução de problemas de build do GitHub](#troubleshooting-github-build-issues).
@@ -300,4 +297,3 @@ Caso encontre erros de impressão, você pode ignorá-los. Abra o [Projeto EDS]/
 ## Consulte também:
 
 {{see-more-forms-eds}}
-

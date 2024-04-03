@@ -1,13 +1,13 @@
 ---
 title: Gerar variações
 description: Saiba mais sobre Gerar variações, acessível pela Sidekick de Edge Delivery Services
-source-git-commit: 88d0b0a6dc2dacdf907ab46c804087772ab2e030
+exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
+source-git-commit: 984ead39ef8c20f06ac63c88380323e403a08712
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 0%
 
 ---
-
 
 # Gerar variações {#generate-variations}
 
@@ -343,7 +343,7 @@ Selecionar um **Adobe Target** o audience no prompt permite que a geração de c
 
    >[!NOTE]
    >
-   >Para usar uma **Adobe Target** público o campo de descrição deve ser preenchido. Caso contrário, o público-alvo será exibido na lista suspensa como indisponível. Para adicionar uma descrição, vá para Target e [adicionar uma descrição do público-alvo](https://experienceleague.adobe.com/docs/target-learn/tutorials/audiences/create-audiences).
+   >Para usar uma **Adobe Target** público o campo de descrição deve ser preenchido. Caso contrário, o público-alvo será exibido na lista suspensa como indisponível. Para adicionar uma descrição, vá para Target e [adicionar uma descrição do público-alvo](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/audiences/create-audiences).
 
    ![Gerar variações - origem do público-alvo - Adobe Target](assets/generate-variations-audiences-adobe-target.png)
 
