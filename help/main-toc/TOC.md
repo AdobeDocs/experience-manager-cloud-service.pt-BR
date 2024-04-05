@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e60d7315fe7a92d608f0858a7108f7590e9aefa
+source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
 workflow-type: tm+mt
-source-wordcount: '4844'
+source-wordcount: '4842'
 ht-degree: 85%
 
 ---
@@ -803,7 +803,6 @@ ht-degree: 85%
    + Criação de aplicativos de entrega de borda {#build}
       + [Introdução - Tutorial do desenvolvedor](/help/edge/developer/tutorial.md)
       + [Anatomia de um projeto](/help/edge/developer/anatomy-of-a-franklin-project.md)
-      + [Bloquear coleção](/help/edge/developer/block-collection.md)
       + [Planilhas](/help/edge/developer/spreadsheets.md)
       + [Forms](/help/edge/developer/forms.md)
       + [Indexação](/help/edge/developer/indexing.md)
@@ -1179,3 +1178,9 @@ ht-degree: 85%
    + Acessibilidade {#accessibility}
       + [AEM as a Cloud Service e diretrizes de acessibilidade da Web](/help/compliance/accessibility/web-accessibility.md)
       + [Um guia rápido para a WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
+
+
+<!--
+Temporarily remove:
+    + [Block Collection](/help/edge/developer/block-collection.md)
+-->
