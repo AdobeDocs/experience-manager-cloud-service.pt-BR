@@ -3,9 +3,9 @@ title: Consultas persistentes de GraphQL
 description: Saiba como criar consultas persistentes de GraphQL no Adobe Experience Manager as a Cloud Service para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 2fa76dbe93bcf31901ec0422470b05dadfe4f43f
+source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1869'
 ht-degree: 86%
 
 ---
@@ -264,22 +264,28 @@ A codificação UTF-8 `%3B` é para `;` e `%3D` é a codificação de `=`. As va
 Ao usar variáveis em suas consultas, há algumas práticas recomendadas que devem ser seguidas:
 
 * Codificação Como uma abordagem geral, é sempre recomendável codificar todos os caracteres especiais; por exemplo, `;`, `=`, `?`, `&`, entre outros.
+
 * Consultas com ponto e vírgula persistentes que usam várias variáveis (separadas por ponto e vírgula) precisam ter:
-   * o ponto e vírgula codificado (`%3B`); e a codificação do URL também alcançará isso
+   * o ponto e vírgula codificado (`%3B`); a codificação do URL também alcançará isso
    * ou um ponto e vírgula à direita adicionado ao final da consulta
+
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` estiver ativado para o Dispatcher e, em seguida, parâmetros que contenham a variável `/` ou `\` caracteres em seu valor, são codificados duas vezes no nível do Dispatcher.
 Para evitar essa situação:
+
    * Ativar `DispatcherNoCanonURL` no Dispatcher.
 Isso instruirá o Dispatcher a encaminhar o URL original para o AEM, evitando codificações duplicadas.
 No entanto, atualmente, essa configuração só funciona no `vhost` , portanto, se você já tiver configurações do Dispatcher para regravar URLs (por exemplo, ao usar URLs encurtados), poderá precisar de uma `vhost` para URLs de consulta persistentes.
+
    * Enviar `/` ou `\` caracteres não codificados.
 Ao chamar o URL da consulta persistente, verifique se todos `/` ou `\` os caracteres permanecem não codificados no valor das variáveis de consulta persistentes.
      >[!NOTE]
      >
      >Essa opção só é recomendada para quando o `DispatcherNoCanonURL` A solução do não pode ser implementada por qualquer motivo.
+
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` estiver ativado para o Dispatcher e, em seguida, para o `;` O caractere não pode ser usado no valor de uma variável.
+
+  Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` estiver ativado para o Dispatcher e, em seguida, para o `;` O caractere não pode ser usado no valor de uma variável.
 
 ## Armazenamento em cache de consultas persistentes {#caching-persisted-queries}
 
