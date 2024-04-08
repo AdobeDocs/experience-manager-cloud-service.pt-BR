@@ -2,7 +2,7 @@
 title: Desenvolvimento local do AEM com o editor universal
 description: Saiba como o Editor universal oferece suporte à edição em instâncias locais do AEM para fins de desenvolvimento.
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -119,3 +119,4 @@ Com o [Serviço do Editor Universal em execução localmente](#running-ue) e seu
 1. Abra o navegador para `https://localhost:8000/corslib/LATEST`.
 1. Direcione o navegador para aceitar [seu certificado autoassinado.](#ue-https)
 1. Quando o certificado autoassinado for confiável, você poderá editar a página usando o Serviço do Editor Universal local.
+

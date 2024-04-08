@@ -2,7 +2,7 @@
 title: Chamadas do editor universal
 description: Saiba mais sobre os diferentes tipos de chamadas feitas ao seu aplicativo pelo Editor universal para ajudá-lo a depurar.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 1%
@@ -383,3 +383,4 @@ O Universal Editor repete o conteúdo e gera uma lista de referências que tamb�
 ## Recursos adicionais {#additional-resources}
 
 * [Eventos Universais do Editor](/help/implementing/universal-editor/events.md)
+

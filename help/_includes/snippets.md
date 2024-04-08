@@ -1,5 +1,5 @@
 ---
-source-git-commit: 0bb649b91c42f43b852d7fdd54b367c0c5df2c99
+source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 13%
@@ -65,3 +65,4 @@ ht-degree: 13%
 * [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
+
