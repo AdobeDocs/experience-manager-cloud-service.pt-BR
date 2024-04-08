@@ -2,10 +2,10 @@
 title: Replicação
 description: Saiba mais sobre distribuição e solução de problemas de replicação no AEM as a Cloud Service.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 9ab6ac5588b6ca5135e3635cc886ec51207e89d7
 workflow-type: tm+mt
 source-wordcount: '1312'
-ht-degree: 39%
+ht-degree: 38%
 
 ---
 
@@ -196,14 +196,17 @@ O tamanho do conteúdo transmitido por chamada de replicação não deve exceder
 
 Para solucionar problemas de replicação, navegue até as filas de replicação na interface web do serviço do autor do AEM:
 
-1. No menu Iniciar do AEM, navegue até **Ferramentas > Implantação > Distribuição**
-2. Selecione o cartão **publicar**
+1. No menu Iniciar do AEM, navegue até **Ferramentas** > **Implantação** > **Distribuição**
+1. Selecione o cartão **publicar**
+
    ![Status](assets/publish-status.png "Status")
-3. Verifique o status da fila, que deve estar em verde
-4. Você pode testar a conexão com o serviço de replicação
-5. Selecione a guia **Logs**, que mostra o histórico de publicações de conteúdo
+
+1. Verifique o status da fila, que deve estar em verde
+1. Você pode testar a conexão com o serviço de replicação
+1. Selecione a guia **Logs**, que mostra o histórico de publicações de conteúdo
 
 ![Logs](assets/publish-logs.png "Logs")
 
 Se o conteúdo não puder ser publicado, toda a publicação será revertida do serviço de publicação do AEM.
+
 Nesse caso, a fila principal e editável mostra um status vermelho e deve ser revisada para identificar quais itens causaram o cancelamento da publicação. Ao clicar nessa fila, seus itens pendentes são exibidos, a partir dos quais um único item ou todos os itens podem ser apagados, se necessário.
