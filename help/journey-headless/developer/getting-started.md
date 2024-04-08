@@ -2,10 +2,10 @@
 title: Introdução ao AEM Headless as a Cloud Service
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 998651bf0529d6a8aab0cd340a1c171974c405f6
 workflow-type: tm+mt
 source-wordcount: '3057'
-ht-degree: 93%
+ht-degree: 92%
 
 ---
 
