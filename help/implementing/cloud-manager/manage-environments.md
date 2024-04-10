@@ -2,10 +2,10 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+source-git-commit: 8f7ddeea27df8e765a7c83c74af25961748ee26d
 workflow-type: tm+mt
-source-wordcount: '2614'
-ht-degree: 80%
+source-wordcount: '2660'
+ht-degree: 76%
 
 ---
 
@@ -209,9 +209,9 @@ Em qualquer caso, [o tráfego é sempre roteado para a outra região mais próxi
 
 ## Atualização de ambientes {#updating-dev-environment}
 
-Como um serviço de nuvem nativo, as atualizações dos ambientes de preparo e produção nos programas de produção são gerenciadas automaticamente pela Adobe.
+Como um serviço nativo em nuvem, as atualizações dos ambientes de desenvolvimento, preparo e produção nos programas de produção são gerenciadas automaticamente pelo Adobe.
 
-No entanto, as atualizações para ambientes de desenvolvimento e de programas de sandbox são gerenciadas dentro dos programas. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status no cartão **Ambientes** na tela **Visão Geral** do programa mostrará **Atualização Disponível**.
+No entanto, as atualizações para ambientes em programas de sandbox são gerenciadas dentro dos programas. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status no cartão **Ambientes** na tela **Visão Geral** do programa mostrará **Atualização Disponível**.
 
 ![Status de atualização do ambiente](assets/environ-update.png)
 
@@ -228,7 +228,10 @@ O processo de atualização é, portanto, um processo de duas etapas:
 
 ### Atualização dos ambientes {#updating-your-environments}
 
-A opção **Atualizar** estará disponível no cartão **Ambientes** para ambientes de desenvolvimento e de programas de sandbox, clicando no botão de reticências do ambiente.
+>[!NOTE]
+> A partir de 2024, as instâncias de desenvolvimento e alguns programas de sandbox já serão atualizados automaticamente para que não haja necessidade de gerenciar atualizações para eles manualmente. Como resultado dessa transição, a opção para Atualizar o ambiente manualmente para instâncias de desenvolvimento pode não estar disponível para _alguns_ de seus programas.
+
+A variável **Atualizar** está disponível na **Ambientes** para alguns ambientes de desenvolvimento e de programas de sandbox clicando no botão de reticências do ambiente.
 
 ![Opção Atualizar no cartão Ambientes](assets/environ-update2.png)
 
@@ -246,7 +249,7 @@ O comportamento da opção **Atualizar** varia dependendo da configuração e do
 
 * Se o pipeline já tiver sido atualizado, a opção **Atualizar** solicitará que o usuário execute o pipeline.
 * Se o pipeline estiver sendo atualizado, a variável **Atualizar** informará ao usuário que uma atualização já está em execução.
-* Se um pipeline apropriado não existir, a opção **Atualizar** solicitará que o usuário crie um.
+* Se não existir um pipeline apropriado, a variável **Atualizar** A opção solicita que o usuário crie uma.
 
 ## Exclusão de ambientes de desenvolvimento {#deleting-environment}
 
