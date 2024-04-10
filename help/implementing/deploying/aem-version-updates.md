@@ -3,10 +3,10 @@ title: Atualizações de versão do AEM
 description: Saiba como o Adobe Experience Manager (AEM) as a Cloud Service usa integração e entrega contínuas (CI/CD) para manter seus projetos na versão mais recente.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 9bfea65c07da5da044df8f698e409eab5c4320fb
+source-git-commit: 72fc611e006f80fdda672f08b0b795432f5899e2
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 3%
+source-wordcount: '970'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,24 @@ Saiba como o Adobe Experience Manager (AEM) as a Cloud Service usa integração 
 
 O AEM as a Cloud Service usa integração contínua e entrega contínua (CI/CD) para garantir que seus projetos estejam na versão AEM mais atual. Esse processo atualiza com facilidade suas instâncias de produção, preparo e desenvolvimento sem causar interrupções para os usuários.
 
-Antes que suas instâncias sejam atualizadas automaticamente, uma nova versão de manutenção do AEM é publicada com 3 a 5 dias de antecedência. Durante esse período, você pode optar por [acionar atualizações manuais para suas instâncias de desenvolvimento](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). Depois que esse tempo transcorrer, as atualizações de versão serão aplicadas automaticamente primeiro aos ambientes de desenvolvimento. Se a atualização for bem-sucedida, o processo de atualização continuará nas instâncias de estágio e produção. As instâncias de desenvolvimento e de preparo atuam como um quality gate (portal de qualidade) automatizado, em que os testes personalizados são executados antes que a atualização seja aplicada no ambiente de produção.
+>[!NOTE]
+> Como as instâncias de desenvolvimento já são atualizadas automaticamente, as atualizações manuais das instâncias de desenvolvimento podem não estar disponíveis para _alguns_ de seus programas. Este recurso está sendo transferido para atualizações automáticas.
+
+Antes que suas instâncias sejam atualizadas automaticamente, uma nova versão de manutenção do AEM é publicada com 3 a 5 dias de antecedência. Durante esse período, sua instância de desenvolvimento pode ser atualizada automaticamente ou, caso esteja disponível, você pode optar por [acionar a atualização das instâncias de desenvolvimento](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment). As atualizações de versão são aplicadas automaticamente primeiro aos ambientes de desenvolvimento. Se a atualização for bem-sucedida, o processo de atualização continuará nas instâncias de estágio e produção. As instâncias de desenvolvimento e de preparo atuam como um quality gate (portal de qualidade) automatizado, em que os testes personalizados são executados antes que a atualização seja aplicada no ambiente de produção.
+
+### NIMU (Atualizações de manutenção não invasivas) {#nimu}
+
+As Atualizações de manutenção não invasivas são atualizações automáticas aplicadas sem envolver os pipelines do cliente.
+Por meio do NIMU, o cliente pode usar o pipeline a qualquer momento, mesmo se uma atualização de versão de AEM estiver programada ou em andamento e as atualizações de manutenção não aparecerão mais no histórico de execução do pipeline do cliente, facilitando o acompanhamento do histórico de implantações de código.
+
+#### Atualizar atividades
+
+A versão atual do AEM ainda pode ser verificada para cada ambiente, como antes, usando o painel Ambientes de interface do usuário do Cloud Manager. Os mesmos quality gates (portais de qualidade) usados no pipeline são usados pelas atualizações de manutenção não invasivas, incluindo os testes escritos pelo cliente.
+Uma notificação da interface do usuário do Cloud Manager será enviada sempre que uma Atualização de manutenção não invasiva for aplicada aos ambientes do seu programa. Você pode configurá-lo para que também seja enviado ao seu email.
 
 >[!NOTE]
 >
-> Observação: as atualizações automáticas para ambientes de desenvolvimento serão progressivamente habilitadas em 2023 para todos os clientes. Se seus ambientes de desenvolvimento não forem atualizados automaticamente, você poderá usar atualizações manuais para mantê-los sincronizados com seus ambientes de preparo e produção.
+> Observação: as atualizações de manutenção não invasivas serão progressivamente habilitadas para todos os clientes em 2024.
 
 
 ## Tipo de atualizações {#update-types}
@@ -35,7 +48,7 @@ Há dois tipos de atualizações de versão do AEM:
    * Eles são usados principalmente para fins de manutenção, incluindo as correções de erros e atualizações de segurança mais recentes.
    * O impacto é mínimo, pois as alterações são aplicadas regularmente.
 
-* [**Novas atualizações de recursos**](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [**Ativação do recurso AEM**](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
    * Elas são lançadas em um cronograma mensal previsível.
 
@@ -66,7 +79,7 @@ Da mesma forma, se uma atualização automatizada de um ambiente de desenvolvime
    * Pause antes de implantar na produção.
    * Cancelar o pipeline após uma implantação de preparo indica que o código é &quot;um descartável&quot; e não um candidato válido para Produção, consulte [Configuração de um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
 
-* **Pipelines de não produção**
+* **Pipeline de não produção**
    * Configurar um [Pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
    * Acelerar a velocidade/frequência de entrega para falhas de pipeline de produção. Identifique problemas em pipelines de não produção ativando o Teste funcional do produto, o Teste funcional personalizado e o Teste de interface do usuário personalizada.
 
