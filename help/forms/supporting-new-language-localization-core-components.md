@@ -3,7 +3,7 @@ title: Como adicionar suporte para novas localidades a um formulário adaptável
 description: Saiba como adicionar novas localidades para um Formulário adaptável.
 feature: Adaptive Forms, Core Components
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 559b4afa975dcd2204cd06c95f19ed38da00033e
 workflow-type: tm+mt
 source-wordcount: '1333'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 | Componentes de base | [Clique aqui](supporting-new-language-localization.md) |
 | Componentes principais | Este artigo |
 
-<span class="preview"> O recurso de suporte a idiomas da direita para a esquerda está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-early-adopter-program@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso de suporte a idiomas da direita para a esquerda está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). Você também pode adicionar suporte para mais locais, como Hindi(hi_IN). Você também pode apresentar o Adaptive Forms em um idioma da Direita para a Esquerda (RTL), como árabe, persa e urdu, adicionando esses locais.
 
