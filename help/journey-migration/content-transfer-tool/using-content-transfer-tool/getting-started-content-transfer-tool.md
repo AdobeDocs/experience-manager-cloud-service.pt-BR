@@ -62,7 +62,7 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
 >title="Execução do Content Transfer Tool"
 >abstract="Saiba como usar o Content Transfer Tool para migrar o conteúdo para o AEM as a Cloud Service (Autor/Publicação)."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Consulte a demonstração"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Tutorial: utilização do Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=pt-BR#migration" text="Tutorial: utilização do Content Transfer Tool"
 
 A seção a seguir se aplica à nova versão da ferramenta Transferência de conteúdo. Siga esta seção para saber como usar a ferramenta Transferência de conteúdo para migrar o conteúdo para o AEM as a Cloud Service:
 
@@ -72,7 +72,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 >id="aemcloud_ctt_extraction_setup"
 >title="Fase de configuração da extração"
 >abstract="Saiba como criar e gerenciar um conjunto de migração e como copiar a chave de extração."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration" text="Tutorial: utilização do Content Transfer Tool"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=pt-BR#migration" text="Tutorial: utilização do Content Transfer Tool"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" must be added here -->
 
@@ -112,7 +112,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 >id="aemcloud_ctt_populate_migrationset"
 >title="Preencher conjunto de migração"
 >abstract="Depois de criar um conjunto de migração, ele deve ser preenchido com o conteúdo da instância de origem que será movido para o ambiente do AEM as a Cloud Service. Para fazer isso, a Ferramenta de Transferência de Conteúdo precisa estar instalada na instância de origem."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Extrair conteúdo"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=pt-BR" text="Extrair conteúdo"
 
 Para preencher o conjunto de migração criado no Cloud Acceleration Manager, instale a versão mais recente da ferramenta Transferência de conteúdo na sua instância de origem do Adobe Experience Manager (AEM). Para saber como preencher o conjunto de migração, siga esta seção.
 

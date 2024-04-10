@@ -16,7 +16,7 @@ ht-degree: 36%
 >id="aemcloud_ctt_logs"
 >title="Exibir logs"
 >abstract="Após a conclusão da extração da ingestão, verifique os logs em busca de erros/avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o suporte da Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting" text="Resolução de problemas"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=pt-BR#troubleshooting" text="Resolução de problemas"
 >additional-url="https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html" text="Contato com o suporte da Adobe"
 
 Após a conclusão de cada etapa (extração e assimilação), verifique os registros e procure por erros.  Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o suporte da Adobe.

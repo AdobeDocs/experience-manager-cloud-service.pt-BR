@@ -79,7 +79,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestão complementar"
 >abstract="Use o recurso complementar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da assimilação, verifique os logs em busca de erros ou avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Exibição de logs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=pt-BR" text="Exibição de logs"
 
 A ferramenta Transferência de conteúdo tem um recurso que permite a extração de conteúdo diferencial executando uma *complementar* do conjunto de migração. Isso permite que o conjunto de migração seja modificado para incluir somente o conteúdo que foi alterado desde a extração anterior, sem precisar extrair todo o conteúdo novamente.
 
@@ -159,7 +159,7 @@ Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atual
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Violação da restrição de exclusividade"
 >abstract="Uma causa comum da falha de exclusão do conteúdo durante a ingestão é um conflito nas IDs dos nós. Somente um dos nós em conflito pode existir."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingestão complementar"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=pt-BR#top-up-ingestion-process" text="Ingestão complementar"
 
 Uma causa comum de [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) a falha é um conflito nas ids do nó. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
@@ -179,7 +179,7 @@ Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conte�
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Não é possível excluir o nó referenciado"
 >abstract="Uma causa comum da falha de exclusão do conteúdo durante a ingestão é um conflito de versão de um determinado nó na instância de destino. As versões do nó precisam ser corrigidas."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingestão complementar"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=pt-BR#top-up-ingestion-process" text="Ingestão complementar"
 
 Outra causa comum de uma [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) falha é um conflito de versão para um determinado nó na instância de destino. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
@@ -197,7 +197,7 @@ As práticas recomendadas indicam que, se uma **Não-apagamento** a assimilaçã
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Propriedade de nó grande"
 >abstract="Uma causa comum de falha na ingestão é ao exceder o tamanho máximo dos valores de propriedade do nó. Siga a documentação, incluindo as relacionadas ao relatório do BPA, para corrigir essa situação."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Pré-requisitos de migração"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=pt-BR" text="Pré-requisitos de migração"
 
 Os valores de propriedade do nó armazenados no MongoDB não podem exceder 16 MB. Se um valor de nó exceder o tamanho permitido, a assimilação falhará e o log conterá um `BSONObjectTooLarge` e especificar qual nó excedeu o máximo. Essa é uma restrição MongoDB.
 

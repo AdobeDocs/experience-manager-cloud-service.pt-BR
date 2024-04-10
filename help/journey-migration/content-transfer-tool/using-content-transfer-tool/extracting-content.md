@@ -4,8 +4,8 @@ description: Saiba como extrair conteúdo de uma instância do Adobe Experience 
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 28%
+source-wordcount: '728'
+ht-degree: 19%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 28%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction"
 >title="Extração de conteúdo"
->abstract="Extração refere-se ao processo de extrair conteúdo da instância do Adobe Experience Manager (AEM) de origem para uma área temporária chamada de “conjunto de migração”. Um conjunto de migração é uma área de armazenamento em nuvem fornecida pela Adobe para armazenar temporariamente o conteúdo transferido entre a instância do AEM de origem e a instância do AEM Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="Extração complementar"
+>abstract="Extração refere-se ao processo de extrair conteúdo da instância do Adobe Experience Manager (AEM) de origem para uma área temporária chamada de “conjunto de migração”. Um conjunto de migração é uma área de armazenamento na nuvem fornecida pela Adobe para armazenar temporariamente o conteúdo transferido entre a instância do AEM de origem e a instância do AEM Cloud Service."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=pt-BR#top-up-extraction-process" text="Extração complementar"
 
 
 Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Transferência de conteúdo:
@@ -77,7 +77,7 @@ Siga as etapas abaixo:
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. A caixa de diálogo **Extração do conjunto de migração** é exibida. Clique em **Extract**.
+1. A variável **Extração do conjunto de migrações** é exibida. Clique em **Extract**.
 
    >[!IMPORTANT]
    >Você deve desativar a opção **Substituir containercontêiner de preparação durante a extração**.
