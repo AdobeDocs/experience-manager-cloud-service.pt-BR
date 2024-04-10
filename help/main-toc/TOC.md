@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: becba7698afe4aa0629bf54fa0d0d26156784b5f
+source-git-commit: 89f2cd02e8318bd5900bffca752ffab4421c7fdc
 workflow-type: tm+mt
-source-wordcount: '4842'
+source-wordcount: '4855'
 ht-degree: 85%
 
 ---
@@ -833,6 +833,7 @@ ht-degree: 85%
          + [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
          + [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
          + [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
+         + [Carregar opções do URL para um formulário](/help/edge/docs/forms/load-options-from-url.md)
          + [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [Usar regras para adicionar comportamento dinâmico a um formulário](/help/edge/docs/forms/rules-forms.md)
          + [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário](/help/edge/docs/forms/thank-you-page-form.md)
@@ -842,6 +843,7 @@ ht-degree: 85%
          + [Tradução](/help/edge/docs/forms/translate-forms.md)
          + [reCAPTCHA](/help/edge/docs/forms/recaptacha-forms.md)
          + [Componentes personalizados](/help/edge/docs/forms/custom-components-forms.md)
+         + [Monitoramento de usuários em tempo real para formulários](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Referências {#forms-references}
          + [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
    + Recursos para entrega de borda {#resources}
