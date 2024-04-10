@@ -1,19 +1,19 @@
 ---
-title: Notas de versão do Cloud Manager 2024.3.0 no Adobe Experience Manager as a Cloud Service
-description: Estas são as notas de versão do Cloud Manager 2024.3.0 no AEM as a Cloud Service.
+title: Notas de versão do Cloud Manager 2024.4.0 no Adobe Experience Manager as a Cloud Service
+description: Estas são as notas de versão do Cloud Manager 2024.4.0 no AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4bae300f653ae6b84cf798f4fe9e8c9326963718
+source-git-commit: f1d8778f3cfb6868740141d008fd0217839e9103
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 23%
+source-wordcount: '706'
+ht-degree: 21%
 
 ---
 
 
-# Notas de versão do Cloud Manager 2024.3.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de versão do Cloud Manager 2024.4.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta as notas de versão do Cloud Manager 2024.3.0 no AEM as a Cloud Service.
+Esta página documenta as notas de versão do Cloud Manager 2024.4.0 no AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,12 +21,16 @@ Esta página documenta as notas de versão do Cloud Manager 2024.3.0 no AEM as a
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2024.3.0 no AEM as a Cloud Service é 14 de março de 2024. A próxima versão está planejada para 11 de abril de 2024.
+A data de lançamento do Cloud Manager versão 2024.4.0 no AEM as a Cloud Service é 10 de abril de 2024. A próxima versão está planejada para 9 de maio de 2024.
 
 ## Novidades {#what-is-new}
 
-* [Agora você pode criar uma infraestrutura de rede avançada](/help/security/configuring-advanced-networking.md) no programa do Cloud Manager e configure-o nos ambientes de maneira automatizada usando a interface do usuário do Cloud Manager.
-* [Os detalhes da etapa de execução do pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) incluirá qual é a etapa atual da implantação e o que se espera dela.
+* A operação de exclusão foi aprimorada para [Entrega de borda](/help/edge/overview.md) atualizando os mapeamentos de domínio do programa relacionado a esse site.
+   * Se não houver mais sites mapeados, o mapeamento será excluído.
+* O rastreamento da implantação foi aprimorado fornecendo atualizações de status em tempo real durante a fase crítica de inicialização de uma instância do AEM.
+   * Esse recurso garante total visibilidade do progresso da implantação, permitindo uma tomada de decisões mais eficiente e eficiência operacional.
+* A variável [infraestrutura de rede](/help/security/configuring-advanced-networking.md) a listagem foi aprimorada para exibir todos os ambientes conectados sem filtragem baseada em região para fornecer uma visualização mais abrangente.
+* Mensagens de erro aprimoradas para problemas de criação de código permitem identificar com mais facilidade as causas básicas e as próximas etapas acionáveis.
 
 ## Programa de adoção antecipada {#early-adoption}
 
@@ -69,4 +73,4 @@ Interessado em testar o novo painel? Para começar, envie um email para `aem-lig
 
 ## Correções de erros {#bug-fixes}
 
-* Um erro foi corrigido quando um usuário define o `COMMERCE_ENDPOINT` com um espaço à direita, o dispatcher falha ao carregar.
+* Um erro em que o Cloud Manager reutilizava artefatos com o hash de confirmação errado foi corrigido.
