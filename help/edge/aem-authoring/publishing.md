@@ -3,7 +3,7 @@ title: Publicar conteúdo para o Edge Delivery Services
 description: Saiba como a publicação de conteúdo funciona com o Edge Delivery Services e como publicar conteúdo de AEM com o Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 0%
@@ -39,3 +39,4 @@ O fluxo de informações ao publicar é o seguinte. Depois que o autor inicia a 
 >[!NOTE]
 >
 >Por padrão, a API de administrador do Edge Delivery Services não está protegida e pode ser usada para publicar ou desfazer a publicação de documentos sem autenticação. Para configurar a autenticação para a API de administrador, conforme documentado em [Configurando a autenticação para autores](https://www.aem.live/docs/authentication-setup-authoring), seu projeto deve ser provisionado com uma API_KEY, que concede acesso ao serviço de publicação. [Entre em contato com a equipe de Adobe no Slack](/help/edge/docs/slack.md) para obter orientação.
+

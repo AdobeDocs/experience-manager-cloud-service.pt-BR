@@ -3,7 +3,7 @@ title: Utilização de Planilhas para Gerenciar Dados Tabulares
 description: Saiba como usar planilhas para gerenciar dados tabulares para vários valores, como metadados e redirecionamentos para seu AEM com Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
-source-git-commit: 61d65c37d263edef641db42589fc0f28a8eb9078
+source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 1%
@@ -163,3 +163,4 @@ Além disso, você pode [criar sua própria planilha](#own-spreadsheet) com colu
 1. Crie a planilha e publique de acordo com as instruções para a planilha de redirecionamentos.
 
 1. Adicione um mapeamento à `paths.json` arquivo de acordo com as instruções para a planilha de redirecionamentos.
+
