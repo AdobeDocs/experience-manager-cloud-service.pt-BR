@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: aaae2986d0b807b34055a48c810c32167d3715d0
+source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
 workflow-type: tm+mt
-source-wordcount: '4862'
+source-wordcount: '4850'
 ht-degree: 85%
 
 ---
@@ -790,18 +790,25 @@ ht-degree: 85%
    + [PWA Studio do Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migração](/help/commerce-cloud/migration.md)
    + [Perguntas frequentes](/help/commerce-cloud/faq.md)
-+ AEM com Edge Delivery Services {#edge-delivery}
-   + [Introdução ao Edge Delivery Services](/help/edge/overview.md)
-   + [Uso da entrega de borda](/help/edge/using.md)
-   + [Guia de introdução do desenvolvedor](/help/edge/edge-dev-getting-started.md)
-   + [Criação de conteúdo para entrega de borda](/help/edge/authoring.md)
-   + [Conteúdo de publicação para entrega de borda](/help/edge/publishing.md)
-   + [Desenvolvimento para entrega de borda](/help/edge/developing.md)
-   + [Modelagem de conteúdo](/help/edge/content-modeling.md)
-   + [Criando blocos](/help/edge/create-block.md)
-   + [Dados em Tabelas e Planilhas](/help/edge/tabular-data.md)
-   + [Projetos existentes e entrega do Edge](/help/edge/existing-projects.md)
-   + Criação de aplicativos de entrega de borda {#build}
++ Edge Delivery Services {#edge-delivery}
+   + [Visão geral do Edge Delivery Services](/help/edge/overview.md)
+   + [Utilização de Edge Delivery Services com AEM](/help/edge/using.md)
+   + Criação baseada em AEM {#aem-authoring}
+      + [Criação de conteúdo para entrega de borda](/help/edge/aem-authoring/authoring.md)
+      + [Conteúdo de publicação para entrega de borda](/help/edge/aem-authoring/publishing.md)
+      + [Guia de introdução do desenvolvedor](/help/edge/aem-authoring/edge-dev-getting-started.md)
+      + [Criando blocos](/help/edge/aem-authoring/create-block.md)
+      + [Modelagem de conteúdo](/help/edge/aem-authoring/content-modeling.md)
+      + [Dados em Tabelas e Planilhas](/help/edge/aem-authoring/tabular-data.md)
+      + [Projetos existentes e entrega do Edge](/help/edge/aem-authoring/existing-projects.md)
+   + Criação baseada em documento {#document-authoring}
+      + [Criação  ](/help/edge/docs/authoring.md)
+      + [Metadados em massa](/help/edge/docs/bulk-metadata.md)
+      + [Espaços reservados](/help/edge/docs/placeholders.md)
+      + [Mapa do site](/help/edge/developer/sitemap.md)
+      + [Configuração do SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
+      + [Slack Bot](/help/edge/docs/slack.md)
+   + Criação de aplicativos {#build}
       + [Introdução - Tutorial do desenvolvedor](/help/edge/developer/tutorial.md)
       + [Anatomia de um projeto](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [Bloquear coleção](/help/edge/developer/block-collection.md)
@@ -813,21 +820,14 @@ ht-degree: 85%
       + [Favicon](/help/edge/developer/favicon.md)
       + [Cabeçalhos personalizados](/help/edge/docs/custom-headers.md)
       + [Práticas recomendadas para desenvolvedores](/help/edge/docs/dev-collab-and-good-practices.md)
-   + Publicação de aplicativos de entrega de borda {#publish}
-      + [Criação  ](/help/edge/docs/authoring.md)
-      + [Metadados em massa](/help/edge/docs/bulk-metadata.md)
-      + [Espaços reservados](/help/edge/docs/placeholders.md)
-      + [Mapa do site](/help/edge/developer/sitemap.md)
-      + [Configuração do SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
-      + [Slack Bot](/help/edge/docs/slack.md)
-   + Iniciar aplicativos de entrega de borda {#launch}
+   + Iniciando Aplicativos {#launch}
       + [Lista de verificação de ativação](/help/edge/docs/go-live-checklist.md)
       + [Invalidação por push](/help/edge/docs/setup-byo-cdn-push-invalidation.md)
       + [Configuração do Cloud Worker](/help/edge/docs/byo-cdn-cloudflare-worker-setup.md)
       + [Configuração do Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Configuração do Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Redirecionamentos](/help/edge/docs/redirects.md)
-   + Forms de entrega de borda de construção {#build-forms}
+   + Criação de Forms {#build-forms}
       + [Visão geral](/help/edge/docs/forms/overview.md)
       + Introdução {#getting-started-eds-forms}
          + [Introdução](/help/edge/docs/forms/tutorial.md)
@@ -848,7 +848,7 @@ ht-degree: 85%
          + [Monitoramento de usuários em tempo real para formulários](/help/edge/docs/forms/real-time-user-monitoring-for-forms.md)
       + Referências {#forms-references}
          + [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
-   + Recursos para entrega de borda {#resources}
+   + Recursos de entrega de borda {#resources}
       + Sidekick {#sidekick}
          + [Utilização do Sidekick](/help/edge/docs/sidekick.md)
          + [Instalar extensão](/help/edge/docs/sidekick-extension.md)
