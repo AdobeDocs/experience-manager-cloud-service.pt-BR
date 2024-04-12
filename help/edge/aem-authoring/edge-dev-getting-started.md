@@ -3,9 +3,9 @@ title: Guia de introdução do desenvolvedor para criação de AEM com o Edge De
 description: Este guia colocará você em funcionamento com um novo site do Adobe Experience Manager usando o Edge Delivery Services e o Editor universal para criação de conteúdo.
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+source-git-commit: 7cd19f674d3eae2bcbe2b40402e135d4db6e3035
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1297'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ Agora que você tem um projeto GitHub, deve criar um novo site AEM que o projeto
 >
 >Para editar o site usando o Editor universal, é necessário usar um navegador com base em Chromium.
 
-1. Solicite a mais recente criação de AEM com o modelo de site Edge Delivery Services da engenharia de Adobe por meio de [canal Slack do projeto.](/help/edge/docs/slack.md)
+1. Baixe a criação de AEM mais recente com o modelo de site Edge Delivery Services do GitHub em [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk).
 
 1. Faça logon na instância de criação do AEM as a Cloud Service e navegue até o console Sites e toque ou clique **Criar** -> **Site do modelo**.
 
@@ -141,6 +141,8 @@ Agora que você tem um projeto GitHub, deve criar um novo site AEM que o projeto
    ![Importação de modelos](assets/edge-dev-getting-started/site-templates.png)
 
 1. Carregue o AEM Authoring com o modelo de site Edge Delivery Services fornecido pelo Adobe Engineering.
+
+   * O template deve ser carregado apenas uma vez. Depois de carregado, ele pode ser reutilizado para criar sites adicionais.
 
 1. Depois que o modelo for importado, ele aparecerá no assistente. Toque ou clique para selecioná-lo e, em seguida, toque ou clique **Próxima**.
 
