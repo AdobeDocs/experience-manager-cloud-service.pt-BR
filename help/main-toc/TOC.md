@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b940877abff45e2a9ee046aec74af067007f41c3
+source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
 workflow-type: tm+mt
-source-wordcount: '4850'
+source-wordcount: '4881'
 ht-degree: 85%
 
 ---
@@ -31,6 +31,8 @@ ht-degree: 85%
    + [Informações da versão](/help/release-notes/home.md)
    + Notas de versão de recursos do AEMaaCS {#release-notes}
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2024 {#2024}
+         + [Notas da versão 2024.1.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-1-0.md)
       + 2023 {#2023}
          + [Notas da versão 2023.12.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-12-0.md)
          + [Notas da versão 2023.11.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-11-0.md)
@@ -171,6 +173,8 @@ ht-degree: 85%
          + [Notas da versão 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Notas de versão do conector aprimorado do Workfront para Experience Manager{#workfront}
       + [Notas de versão atuais do conector aprimorado do Workfront para Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
+   + Notas de versão para gerar variações {#generate-variations}
+      + [Notas de versão atuais para gerar variações](/help/generative-ai/release-notes-generate-variations.md)
    + [Novidades?](/help/release-notes/what-is-new.md)
    + [Alterações importantes no AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md)
@@ -356,6 +360,7 @@ ht-degree: 85%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Excluir considerações](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Análise de estrutura](/help/sites-cloud/administering/content-fragments/analysis.md)
+         + [Ativos no console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Atalhos de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Criação do site {#site-creation}
          + [Criação de um novo site](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -891,7 +896,8 @@ ht-degree: 85%
       + [Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Exemplo de consultas GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Solução de problemas de consultas do GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [API REST de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=pt-BR)
+   + [Fragmentos de conteúdo e modelos OpenAPIs](/help/headless/content-fragment-openapis.md)
+   + [Suporte a Fragmentos de conteúdo na API HTTP do Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=pt-BR)
    + Segurança {#security}
       + [Permissões](/help/headless/security/permissions.md)
       + [Autenticação](/help/headless/security/authentication.md)

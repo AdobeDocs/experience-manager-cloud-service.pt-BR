@@ -2,10 +2,10 @@
 title: Manuseio básico
 description: Acostume-se com a navegação pelo AEM e seu uso básico
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 7e0ca5dad5cd53c2304e2eba48a5131d587967ef
+source-git-commit: 40759b8c07833b0927fa374b906d4202bf258249
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 63%
+source-wordcount: '954'
+ht-degree: 61%
 
 ---
 
@@ -75,10 +75,11 @@ Em Navegação, os consoles disponíveis são:
 | Ativos | O console de Ativos permite importar e gerenciar [ativos digitais como imagens, vídeos, documentos e arquivos de áudio. ](/help/assets/overview.md) Esses ativos podem ser usados por um site em execução na mesma instância do AEM. Também é possível criar e gerenciar [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) no console de Ativos. |
 | Personalização | Esse console fornece uma estrutura de ferramentas para a [criação de conteúdo direcionado e a apresentação de experiências personalizadas](/help/sites-cloud/authoring/personalization/overview.md). |
 | Fragmentos de conteúdo | [Os fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md) permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem preparar conteúdo estruturado pronto para uso em vários locais/canais e são ideais para a criação de páginas e entrega headless. |
+| Gerar variações | [Gerar variações](/help/generative-ai/generate-variations.md) O usa a Inteligência artificial (AI) gerativa para criar variações de conteúdo com base em prompts. Esses prompts são fornecidos pelo Adobe ou criados e gerenciados pelos usuários. |
 
 ## Painel Ferramentas {#tools-panel}
 
-No **Ferramentas** O painel tem um painel lateral que contém um intervalo de categorias que agrupa consoles semelhantes. A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo. <!--The [Tools consoles](/help/sites-administering/tools-consoles.md) provide access to several specialized tools and consoles that help you administer your websites, digital assets, and other aspects of your content repository.-->
+A variável **Ferramentas** O painel tem um painel lateral que contém um intervalo de categorias que agrupa consoles semelhantes. A variável **Ferramentas** Os consoles fornecem acesso a várias ferramentas e consoles especializados que ajudam a administrar seus sites, ativos digitais e outros aspectos do seu repositório de conteúdo.
 
 ![Painel Ferramentas](assets/basic-handling-tools.png)
 

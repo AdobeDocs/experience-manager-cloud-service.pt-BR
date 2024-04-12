@@ -3,10 +3,10 @@ title: Consultas persistentes de GraphQL
 description: Saiba como criar consultas persistentes de GraphQL no Adobe Experience Manager as a Cloud Service para otimizar o desempenho. As consultas persistentes podem ser solicitadas por aplicativos clientes usando o método GET do HTTP e a resposta pode ser armazenada em cache nas camadas do Dispatcher e do CDN, melhorando, em última análise, o desempenho dos aplicativos clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8b03da83c7f669d9295f7c8a82ce5c97fafe67c8
+source-git-commit: 58a91e0e5d6267caac8210f001f6f963870eb7dd
 workflow-type: tm+mt
-source-wordcount: '1869'
-ht-degree: 86%
+source-wordcount: '1952'
+ht-degree: 79%
 
 ---
 
@@ -408,7 +408,7 @@ A configuração padrão OSGi para instâncias de publicação:
 
 Por padrão, a variável `PersistedQueryServlet` envia uma resposta `200` quando executa uma consulta, independentemente do resultado real.
 
-Você pode [definir as configurações do OSGi](/help/implementing/deploying/configuring-osgi.md) para a **configuração do Serviço de consulta persistente** e controlar o código de status que será retornado pelo ponto de acesso `/execute.json/persisted-query` quando houver um erro na consulta persistente.
+Você pode [definir as configurações de OSGi](/help/implementing/deploying/configuring-osgi.md) para o **Configuração do Serviço de Consulta Persistente** para controlar se os códigos de status mais detalhados são retornados pelo `/execute.json/persisted-query` endpoint, quando houver um erro na consulta persistente.
 
 >[!NOTE]
 >
@@ -417,14 +417,20 @@ Você pode [definir as configurações do OSGi](/help/implementing/deploying/con
 O campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) pode ser definido conforme necessário:
 
 * `false` (valor padrão):
-não importa se a consulta persistente é bem-sucedida ou não. O `/execute.json/persisted-query` retorna o código de status `200` e o cabeçalho `Content-Type` retornado é `application/json`.
+não importa se a consulta persistente é bem-sucedida ou não. A variável `Content-Type` o cabeçalho retornado é `application/json`, e o `/execute.json/persisted-query` *sempre* retorna o código de status `200`.
 
-* `true`:
-o ponto de acesso retornará como `400` ou `500` (dependendo do caso) quando houver qualquer forma de erro ao executar a consulta persistente. Além disso, o `Content-Type` retornado é `application/graphql-response+json`.
+* `true`: O retornado `Content-Type` é `application/graphql-response+json`, e o endpoint retornará o código de resposta apropriado quando houver qualquer forma de erro ao executar a consulta persistente:
+
+  | Código | Descrição |
+  |--- |--- |
+  | 200 | Resposta bem-sucedida |
+  | 400 | Indica que há cabeçalhos ausentes ou um problema com o caminho de consulta persistente. Por exemplo, nome de configuração não especificado, sufixo não especificado e outros.<br>Consulte [Solução de problemas - endpoint do GraphQL não configurado](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | O recurso solicitado não foi encontrado. Por exemplo, o endpoint do Graphql não está disponível no servidor.<br>Consulte [Solução de problemas - Caminho ausente no URL da consulta persistente do GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 500 | Erro interno do servidor. Por exemplo, erros de validação, erro de persistência e outros. |
 
   >[!NOTE]
   >
-  >Consulte https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
+  >Consulte também https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Codificação do URL da consulta para uso por um aplicativo {#encoding-query-url}
 

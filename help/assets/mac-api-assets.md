@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1631'
 ht-degree: 3%
 
 ---
@@ -22,6 +22,10 @@ ht-degree: 3%
 ## Visão geral {#overview}
 
 A variável [!DNL Assets] A API HTTP permite operações create-read-update-delete (CRUD) em ativos digitais, incluindo metadados, representações e comentários, juntamente com conteúdo estruturado usando [!DNL Experience Manager] Fragmentos de conteúdo. É exposta em `/api/assets` e é implementado como REST API. Inclui [suporte para fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>A variável [OpenAPIs de fragmento de conteúdo e modelo de fragmento de conteúdo](/help/headless/content-fragment-openapis.md) também estão disponíveis.
 
 Para acessar a API:
 
@@ -40,9 +44,17 @@ A [Fragmento do conteúdo](/help/assets/content-fragments/content-fragments.md) 
 
 Para obter mais informações, consulte [Suporte a Fragmentos de conteúdo no [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
+>[!NOTE]
+>
+>A variável [OpenAPIs de fragmento de conteúdo e modelo de fragmento de conteúdo](/help/headless/content-fragment-openapis.md) também estão disponíveis.
+
 ## Modelo de dados {#data-model}
 
 A variável [!DNL Assets] A API HTTP expõe dois elementos principais, pastas e ativos (para ativos padrão). Além disso, ele expõe elementos mais detalhados para os modelos de dados personalizados que descrevem o conteúdo estruturado em Fragmentos de conteúdo. Consulte [Modelos de dados do fragmento de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obter mais informações.
+
+>[!NOTE]
+>
+>A variável [OpenAPIs de fragmento de conteúdo e modelo de fragmento de conteúdo](/help/headless/content-fragment-openapis.md) também estão disponíveis.
 
 ### Pastas {#folders}
 
@@ -75,6 +87,10 @@ Entrada [!DNL Experience Manager] um ativo contém os seguintes elementos:
 * Comentários opcionais.
 
 Para obter informações sobre elementos nos Fragmentos de conteúdo, consulte [Suporte a fragmentos de conteúdo na API HTTP do Experience Manager Assets](/help/assets/content-fragments/assets-api-content-fragments.md).
+
+>[!NOTE]
+>
+>A variável [OpenAPIs de fragmento de conteúdo e modelo de fragmento de conteúdo](/help/headless/content-fragment-openapis.md) também estão disponíveis.
 
 Entrada [!DNL Experience Manager] uma pasta tem os seguintes componentes:
 

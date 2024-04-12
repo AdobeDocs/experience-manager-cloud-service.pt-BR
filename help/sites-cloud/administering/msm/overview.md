@@ -4,10 +4,10 @@ description: 'Saiba mais sobre como reutilizar conteúdo com recursos avançados
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 0a4f9edba00e65439a306024c604e6935c8bac47
 workflow-type: tm+mt
-source-wordcount: '2702'
-ht-degree: 93%
+source-wordcount: '2721'
+ht-degree: 92%
 
 ---
 
@@ -141,6 +141,10 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 * **Blueprints** (**Ferramentas** - **Sites**)
 
    * Esse console permite [criar e gerenciar as configurações do blueprint.](creating-live-copies.md#creating-a-blueprint-configuration)
+
+>[!NOTE]
+>
+>O MSM pode ser usado com páginas e [Fragmentos de experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md) já que esses fragmentos fazem parte de uma experiência (página).
 
 >[!NOTE]
 >

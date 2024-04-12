@@ -2,10 +2,10 @@
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
 workflow-type: tm+mt
-source-wordcount: '2035'
-ht-degree: 97%
+source-wordcount: '2083'
+ht-degree: 95%
 
 ---
 
@@ -38,6 +38,7 @@ Sem Fragmentos de experiência, o autor precisaria copiar e colar esse fragmento
 Os fragmentos de experiência eliminam a necessidade de copiar/colar.
 * Para dar suporte ao caso de uso de CMS sem periféricos.
 Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um sistema/ponto de contato de terceiros consumiria essa experiência e depois a entregaria ao usuário.
+* Com [Gerenciamento de vários sites (MSM)](/help/sites-cloud/administering/msm/overview.md); como um Fragmento de experiência faz parte de uma página. Isso se aplica aos fragmentos individuais e às pastas em que eles residem.
 
 >[!NOTE]
 >
@@ -236,6 +237,10 @@ Por exemplo: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 
    * **Variação**
    * **Variação como Live Copy**.
+
+     >[!NOTE]
+     >
+     >Criar uma variação inicial como Live Copy herdará o título usando a Origem da Live Copy como a Variação principal.
 
 1. Defina as propriedades necessárias:
 
