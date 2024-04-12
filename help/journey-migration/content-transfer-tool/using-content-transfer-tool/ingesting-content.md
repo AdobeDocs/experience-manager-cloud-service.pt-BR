@@ -2,9 +2,9 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: de05abac3620b254343196a283cef198f434cfca
+source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
-source-wordcount: '2752'
+source-wordcount: '2876'
 ht-degree: 11%
 
 ---
@@ -60,6 +60,19 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 
    >[!IMPORTANT]
    > Você pode iniciar uma assimilação no ambiente de destino somente se pertencer ao local **Administradores do AEM** grupo no serviço de autor do Cloud Service de destino. Se não conseguir iniciar uma assimilação, consulte [Não foi possível iniciar a assimilação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obter mais detalhes.
+
+1. Após selecionar as opções de assimilação, uma estimativa de sua duração será mostrada. Esta é uma estimativa de melhor esforço com base em dados históricos de assimilações semelhantes.
+
+   * Essa estimativa só será calculada e mostrada se os valores de &quot;Verificar tamanho&quot; da extração tiverem sido coletados e estiverem disponíveis.
+   * Este valor é uma estimativa e, embora calculado inteligentemente, não deve ser considerado exato. Vários fatores podem alterar a duração real.
+   * Enquanto a assimilação estiver em execução, esse valor também estará disponível na caixa de diálogo Durações, acessada por meio da opção &quot;**Exibir durações**&quot;ação da assimilação.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_estimate"
+>title="Estimativa da duração da assimilação"
+>abstract="Uma duração aproximada de uma assimilação específica pode ser exibida para fornecer uma noção geral de quanto tempo levará. Existem limitações para sua precisão."
+
+![imagem](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
 1. Clique em **Assimilar**.
 
