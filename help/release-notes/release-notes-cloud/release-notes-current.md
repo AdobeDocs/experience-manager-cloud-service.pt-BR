@@ -3,7 +3,7 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: af9e30ffb585619d1581db94d3961f561e12df2b
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 8%
@@ -134,22 +134,22 @@ Esses serviços permitem:
 
   Agora é possível simplificar as interações de funções personalizadas ao:
 
-   * Uso de novas anotações para fornecer definições de função mais claras.
-   * Uso de mecanismos de armazenamento em cache para funções personalizadas, resultando em um desempenho de formulário mais rápido.
-   * Trabalhar perfeitamente com objetos globais dentro de funções personalizadas.
-   * Definição e utilização de parâmetros opcionais em funções personalizadas.
+   * [Como aproveitar novas anotações para fornecer definições de função mais claras](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
+   * [Uso de mecanismos de cache para funções personalizadas, resultando em um desempenho de formulário mais rápido](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
+   * [Trabalho contínuo com objetos globais dentro de funções personalizadas](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
+   * [Definição e utilização de parâmetros opcionais em funções personalizadas](/help/forms/create-and-use-custom-functions.md#parameter).
 
   Essa atualização também traz os seguintes aprimoramentos para a funcionalidade do editor de regras. É possível:
 
-   * Implemente uma lógica poderosa do tipo &quot;quando-então-mais&quot; para execução condicional.
+   * Implementar soluções [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) lógica para execução condicional.
    * Aproveite os recursos modernos do JavaScript, como as funções de seta e de esquerda (suporte para ES10).
    * Valide ou redefina não apenas campos, mas também painéis e formulários inteiros, expandindo o controle sobre as interações do usuário.
 
   Esses avanços fornecem uma experiência mais intuitiva e poderosa para criar regras e funções personalizadas no editor visual de regras.
 
-* **Criar várias versões de um Formulário adaptável**: Agora é possível gerenciar facilmente variações de formulários existentes. Isso simplifica o controle de versões e facilita a comparação para a otimização de formulários, tudo em um único fluxo de trabalho simplificado.
+* **[Criar várias versões de um Formulário adaptável](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: Agora é possível gerenciar facilmente variações de formulários existentes. Isso simplifica o controle de versões e facilita a comparação para a otimização de formulários, tudo em um único fluxo de trabalho simplificado.
 
-* **Comparar formulário adaptável**: agora é possível comparar facilmente dois formulários para identificar as diferenças entre dois. Ele facilita a colaboração perfeita, permitindo que os membros da equipe comparem revisões e discutam alterações com eficiência.
+* **[Comparar formulário adaptável](/help/forms/compare-forms.md)**: agora é possível comparar facilmente dois formulários para identificar as diferenças entre dois. Ele facilita a colaboração perfeita, permitindo que os membros da equipe comparem revisões e discutam alterações com eficiência.
 
 * **Aprimoramentos de acessibilidade para o componente de assinatura assinável**: esta atualização traz melhorias significativas de acessibilidade para o componente de Assinatura Escrita:
 
@@ -179,7 +179,7 @@ Essa atualização garante uma experiência mais inclusiva para usuários portad
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Usando o Adobe Workfront Fusion Connector, você pode projetar fluxos de trabalho que são acionados automaticamente no envio de um Formulário adaptável. Por exemplo, preveja um cenário em que um fluxo de trabalho é iniciado para atribuir a um indivíduo específico a tarefa de revisar dados enviados, permitindo a aprovação ou a rejeição de um aplicativo com base nas informações capturadas por meio do formulário adaptável. Essa integração simplificada aumenta a eficiência e traz um novo nível de automação para seus processos de workflow.|
 
-* **Serviço de extensão Reader**: as APIs de comunicação da AEM Forms trouxeram o Serviço de extensão do Reader para permitir que você adicione funcionalidades como preenchimento de formulário e comentários a PDF regulares, tornando-os interativos para usuários com o Adobe Reader gratuito.
+* **[Serviço de extensão Reader](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: as APIs de comunicação da AEM Forms trouxeram o Serviço de extensão do Reader para permitir que você adicione funcionalidades como preenchimento de formulário e comentários a PDF regulares, tornando-os interativos para usuários com o Adobe Reader gratuito.
 
 * [Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md): o Forms adaptável incorporado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diferentes e selecionar mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
 

@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
+source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 77%
+source-wordcount: '1964'
+ht-degree: 55%
 
 ---
 
@@ -186,10 +186,63 @@ Você pode realizar essas tarefas usando as APIs de criptografia:
 
 * Criptografar um documento PDF com uma senha.
 * Remova a criptografia baseada em senha de um documento PDF.
+* Recupere o tipo de segurança aplicada a um documento PDF.
 * Retorne o tipo de segurança aplicado a um documento PDF.
 
 As APIs de assinatura e as APIs de criptografia são [APIs síncronas](#types-of-communications-apis-types).
 
+### Serviço de extensão Reader
+
+<span class="preview"> O recurso Serviço de extensão de Reader está no Programa de adoção antecipada. Você pode escrever para `aem-forms-ea@adobe.com` do seu id de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
+
+O Serviço de extensões do Reader permite que sua organização compartilhe facilmente documentos PDF interativos, estendendo a funcionalidade do Adobe Reader com direitos de uso adicionais. O serviço Reader Extensions funciona com o Adobe Reader. O serviço adiciona direitos de uso a um documento PDF. Essa ação ativa recursos que geralmente não estão disponíveis quando um documento PDF é aberto usando o Adobe Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento.
+
+
+Quando os documentos PDF têm os direitos de uso apropriados adicionados, os recipients podem fazer as seguintes atividades no Adobe Reader:
+
+* Preencha os documentos e formulários do PDF on-line ou off-line, permitindo que os recipients salvem cópias localmente para seus registros e ainda mantenham as informações adicionadas intactas.
+* Salve os documentos de PDF em um disco rígido local para reter o documento original e quaisquer comentários, dados ou anexos adicionais.
+* Anexe arquivos e clipes de mídia a documentos do PDF.
+* Assine, certifique e autentique documentos PDF aplicando assinaturas digitais usando tecnologias de infraestrutura de chave pública (PKI) padrão do setor.
+* Envie eletronicamente documentos de PDF concluídos ou anotados.
+* Use documentos e formulários do PDF como um front-end de desenvolvimento intuitivo para bancos de dados internos e serviços da Web.
+* Compartilhe documentos do PDF com outras pessoas para que os revisores possam adicionar comentários usando ferramentas de marcação intuitivas. Essas ferramentas incluem notas adesivas eletrônicas, carimbos, destaques e tachado de texto. As mesmas funções estão disponíveis no Acrobat.
+* Suporte para decodificação de formulários com código de barras.
+
+Esses recursos de direitos de uso especiais são ativados automaticamente quando um documento de PDF habilitado para direitos é aberto no Adobe Reader. Quando o usuário terminar de trabalhar com um documento habilitado para direitos, essas funções serão novamente desabilitadas no Adobe Reader. Eles permanecem desativados até que o usuário receba outro documento PDF com direitos ativados.
+
+Os vários recursos de direitos de uso com os Serviços de extensão do Reader são:
+
+* **Decodificação de códigos de barras**: Para decodificar códigos de barras dentro do documento PDF.
+
+* **Comentários**: Para comentar offline no documento PDF.
+
+* **Comentários online**: Para comentar on-line no documento PDF.
+
+* **Assinatura digital**: Para adicionar assinaturas digitais a um documento PDF.
+
+* **Campos do formulário dinâmico**: para adicionar campos de formulário a um documento PDF.
+
+* **Páginas do formulário dinâmico**: Para adicionar páginas de formulário a um documento PDF.
+
+* **Arquivos incorporados**: Para incorporar arquivos em um documento PDF.
+
+* **Importação de dados do formulário**: para importar dados de formulário para um documento PDF.
+
+* **Exportação de dados do formulário**: para importar dados de formulário para um documento PDF.
+
+* **Preenchimento de formulário**: para preencher campos de formulário em um documento PDF.
+
+* **Forms Online**: para acessar um serviço Web ou banco de dados de um documento PDF.
+
+* **Enviar autônomo**: para enviar dados de formulário off-line de um documento PDF.
+
+**Outros recursos nos Serviços de extensão do Reader**
+
+* **Mensagem**: a mensagem exibida no Adobe Acrobat Reader ao abrir um documento PDF com um ou mais direitos de uso aplicados.
+* **Desbloquear senha**: A senha necessária para abrir um documento de PDF criptografado. Normalmente, essa é a senha para abrir o documento, mas se o documento PDF também estiver protegido por uma senha de permissões, ele poderá ser usado para abri-lo.
+
+A variável [Documentação de referência da API](https://adobe-aem-document-experimental.redoc.ly/) O fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos por APIs. A documentação de referência da API também está disponível no formato .yaml. Você pode baixar o arquivo .yaml e carregá-lo no Postman para verificar a funcionalidade das APIs.
 
 ## Tipos de APIs de Comunicação {#types}
 
