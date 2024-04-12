@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
-source-wordcount: '1452'
-ht-degree: 75%
+source-wordcount: '1409'
+ht-degree: 77%
 
 ---
 
@@ -171,21 +171,22 @@ O serviço DocAssurance inclui as APIs de Assinatura e Criptografia:
 
 ### APIs de assinatura
 
-As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos. Como os recursos de segurança são aplicados ao próprio documento, o documento permanece seguro e controlado durante todo o ciclo de vida. Um documento permanece seguro além do firewall, quando é baixado offline e quando é enviado de volta à sua organização. Você pode realizar as seguintes tarefas usando as APIs de assinatura:
+As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. <!--This service uses digital signatures and certification to ensure that only intended recipients can alter documents. --> Os recursos de segurança são aplicados ao próprio documento; o documento permanece seguro e controlado durante todo o ciclo de vida. O documento permanece seguro além do firewall, quando é baixado offline e quando é enviado de volta à sua organização. Você pode realizar as seguintes tarefas usando as APIs de assinatura:
 
-* Adicione um campo de assinatura a um documento PDF.
+* Adicione um campo de assinatura visível a um documento PDF.
+* Adicione um campo de assinatura invisível a um documento PDF.
 * Assine o campo de assinatura especificado em um documento PDF.
 * Certificar um documento PDF
 
 ### APIs de criptografia
 
-As APIs de criptografia permitem criptografar e descriptografar documentos. Quando um documento é criptografado, seu conteúdo fica ilegível. Um usuário autorizado pode descriptografar o documento para obter acesso ao conteúdo. Se um documento PDF for criptografado com uma senha, o usuário deverá especificar a senha aberta para que o documento possa ser visualizado no Adobe Reader ou no Adobe Acrobat. Da mesma forma, se um documento PDF for criptografado com um certificado, o usuário deverá descriptografar o documento PDF com a chave pública que corresponde ao certificado (chave privada) usado para criptografar o documento PDF.
+As APIs de criptografia permitem criptografar e descriptografar documentos. Quando um documento é criptografado, seu conteúdo fica ilegível. Um usuário autorizado pode descriptografar o documento para obter acesso ao conteúdo. Se um documento PDF for criptografado com uma senha, o usuário deverá especificar a senha aberta para que o documento possa ser visualizado no Adobe Reader ou no Adobe Acrobat. <!-- Likewise, if a PDF document is encrypted with a certificate, the user must decrypt the PDF document with the public key that corresponds to the certificate (private key) that was used to encrypt the PDF document.-->
 
 Você pode realizar essas tarefas usando as APIs de criptografia:
 
 * Criptografar um documento PDF com uma senha.
 * Remova a criptografia baseada em senha de um documento PDF.
-* Recupere o tipo de segurança aplicada a um documento PDF.
+* Retorne o tipo de segurança aplicado a um documento PDF.
 
 As APIs de assinatura e as APIs de criptografia são [APIs síncronas](#types-of-communications-apis-types).
 

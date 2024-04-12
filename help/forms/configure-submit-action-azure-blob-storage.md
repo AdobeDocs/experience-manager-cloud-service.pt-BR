@@ -3,7 +3,7 @@ Title: How to connect AEM Adaptive Forms with Azure Blob Storage?
 Description: Learn how to create an Azure Blob Storage Configuration in AEM Forms and use it within your Adaptive Forms for efficient data storage.
 keywords: Integração do Armazenamento Azure Blob com o AEM Forms, Envio de dados para o Armazenamento Azure, Criação da configuração de armazenamento do Azure no AEM Forms, Uso do Armazenamento Azure Blob na Ação de envio adaptável do Forms
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+source-git-commit: a22ecddf7c97c5894cb03eb44296e0562ac46ddb
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 1%
@@ -44,6 +44,15 @@ Para conectar o AEM Forms aos seus contêineres de Armazenamento do Azure:
 1. Especifique a **[!UICONTROL Título]**, **[!UICONTROL Conta de armazenamento do Azure]** e **[!UICONTROL Chave de acesso do Azure]**.
 
    * Você pode recuperar `Azure Storage Account` nome e `Azure Access key` a partir das Contas de armazenamento no portal Microsoft® Azure.
+<!--
+
+    >[!NOTE]
+    >
+    > The URL for **[!UICONTROL Azure Blob Endpoint]** is automatically appended to the textbox when a value is entered for **[!UICONTROL Azure Storage Account]**. You can update the Azure Blob End Point URL with your custom domain. Steps to update URL for **[!UICONTROL Azure Blob End Point]**:
+    > 1. [Enable the AEM Advance Networking VPN support](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Enable dedicated egress IP link](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)
+    > 1. [Map custom domain to azure blob storage](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-custom-domain-name?tabs=azure-portal)
+-->
 
 1. Clique em **[!UICONTROL Salvar]**.
 
