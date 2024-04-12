@@ -4,10 +4,10 @@ description: Saiba como gerenciar os fragmentos de conteúdo do AEM no console e
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 3c550a08983ce198a6718d0c2120f1f5001fb28d
+source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
 workflow-type: tm+mt
-source-wordcount: '2629'
-ht-degree: 46%
+source-wordcount: '2643'
+ht-degree: 45%
 
 ---
 
@@ -449,6 +449,7 @@ O painel Filtro oferece:
 * uma seleção de predicados;
    * incluindo modelos de fragmento de conteúdo, localização, tags, campos de status, entre outros
    * um ou mais predicados podem ser selecionados e combinados para criar o filtro
+* **Excluir itens de subpasta**, dando a opção de excluir fragmentos de conteúdo armazenados em subpastas
 * a oportunidade de **Salvar** sua configuração
 * a opção de recuperar um filtro de pesquisa salvo para reutilização
 

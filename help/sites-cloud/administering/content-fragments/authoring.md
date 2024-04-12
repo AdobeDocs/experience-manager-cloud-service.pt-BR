@@ -4,9 +4,9 @@ description: Entenda como criar conteúdo para seus Fragmentos de conteúdo e cr
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: 19685cb952a890731bd7d75a2adf3cfd841a465f
+source-git-commit: 6353bd50c1df43d9ce11616f71a69d8bfb5ab338
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2381'
 ht-degree: 4%
 
 ---
@@ -370,6 +370,27 @@ No **Histórico de versão** do painel direito, detalhes das versões atual e an
 >Uma nova versão é criada quando o fragmento de conteúdo é publicado.
 
 ![Editor de fragmento de conteúdo — Visão geral do histórico de versões](assets/cf-authoring-version-history-overview.png)
+
+### Comparar versão {#compare-version}
+
+Para um fragmento de conteúdo, é possível comparar uma versão anterior com a versão atual.
+
+Para comparar uma versão anterior à atual:
+
+1. Selecione o ícone de três pontos ao lado da versão.
+
+1. Selecionar **Comparar**.
+
+![Editor de fragmento de conteúdo — Comparação do histórico de versões](assets/cf-authoring-version-history-compare.png)
+
+Isso abre uma visualização que mostra as diferenças entre a versão atual do conteúdo e a versão anterior selecionada do fragmento de conteúdo. No **Variações com alterações** , é possível selecionar para ver as diferenças do conteúdo principal e/ou conteúdo de uma variação.
+
+As diferenças são indicadas por cor:
+
+* Verde: indica conteúdo adicionado (à versão atual)
+* Vermelho: indica conteúdo removido (da versão atual)
+
+![Editor de fragmento de conteúdo — Histórico de versões Comparar versões](assets/cf-authoring-version-history-compare-versions.png)
 
 ### Reverter para uma versão {#revert-version}
 
