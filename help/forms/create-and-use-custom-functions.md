@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: bc040f29a8912c5901ddb71bd32ee2d2a97d3eec
+source-git-commit: ee6072b3fc6786905a6610081acb22c708f1eae4
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 0%
@@ -155,7 +155,7 @@ A função personalizada, declarada como privada, não aparece na lista de funç
 
 Para listar as funções personalizadas no editor de regras, você pode usar qualquer um dos seguintes formatos:
 
-### **Instrução Function com ou sem comentários jsdoc**
+### Instrução Function com ou sem comentários jsdoc
 
 Você pode criar uma função personalizada com ou sem comentários jsdoc.
 
@@ -167,7 +167,7 @@ Você pode criar uma função personalizada com ou sem comentários jsdoc.
 ```
 Se o usuário não adicionar anotações JavaScript à função personalizada, ela será listada no editor de regras pelo nome da função. No entanto, é recomendável incluir anotações JavaScript para melhorar a legibilidade das funções personalizadas.
 
-### **Função de seta com anotações ou comentários obrigatórios do JavaScript**
+### Função de seta com anotações ou comentários obrigatórios do JavaScript
 
 É possível criar uma função personalizada com uma sintaxe de função de seta:
 
@@ -191,7 +191,7 @@ Se o usuário não adicionar anotações JavaScript à função personalizada, e
 
 Se o usuário não adicionar anotações JavaScript à função personalizada, a função personalizada não será listada no editor de regras de um Formulário adaptável.
 
-### **Expressão de função com anotações ou comentários obrigatórios do JavaScript**
+### Expressão de função com anotações ou comentários obrigatórios do JavaScript
 
 Para listar funções personalizadas no editor de regras de um Formulário adaptável, crie funções personalizadas no seguinte formato:
 
