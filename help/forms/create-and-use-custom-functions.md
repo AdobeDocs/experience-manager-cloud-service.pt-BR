@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
+source-git-commit: 593a2b2930093d29a22f6c1ff391c11db9bda7dc
 workflow-type: tm+mt
 source-wordcount: '3104'
 ht-degree: 0%
@@ -30,7 +30,6 @@ O AEM Forms é compatível com funções personalizadas, permitindo que os usuá
 ### Usos de funções personalizadas {#uses-of-custom-function}
 
 As vantagens de usar funções personalizadas no Adaptive Forms são:
-
 * **Tratamento de dados**: as funções personalizadas ajudam a processar dados inseridos nos campos de formulários.
 * **Validação de dados**: As funções personalizadas permitem que você execute verificações personalizadas nas entradas do formulário e forneça mensagens de erro especificadas.
 * **Comportamento dinâmico**: as funções personalizadas permitem controlar o comportamento dinâmico dos formulários com base em condições específicas. Por exemplo, você pode mostrar/ocultar campos, modificar valores de campo ou ajustar a lógica do formulário dinamicamente.
