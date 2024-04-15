@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Workfront for Experience Manager enhanced connector]
 description: Notas de versão do [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 411793f140a2a9cf482d820382d41de843a97e87
+source-git-commit: fdac9b4152c61f775769d7ed30be1097db119e2a
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1660'
 ht-degree: 1%
 
 ---
@@ -13,23 +13,21 @@ ht-degree: 1%
 
 A seção a seguir descreve as Notas de versão gerais do [!DNL Workfront for Experience Manager enhanced connector].
 
-A data de lançamento da versão mais recente 1.9.18 do [!DNL Workfront for Experience Manager enhanced connector] O é em 8 de março de 2024.
+A data de lançamento da versão mais recente 1.9.19 do [!DNL Workfront for Experience Manager enhanced connector] é 12 de abril de 2024.
 
 ## Destaques da versão {#release-highlights}
 
 A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] inclui a seguinte correção de erro:
 
-* O processamento de uploads de vários ativos do Workfront encontra problemas.
-* Não adicionar aspas de fechamento ao usar o Workfront para pesquisar pastas no Experience Manager resulta em `SERVER_ERROR`.
+* A falha ao fechar clientes HTTP está causando problemas de memória insuficiente.
 
 >[!NOTE]
 >
 >O AEM 6.4 chegou ao fim do suporte estendido. Consulte nossa [períodos de suporte técnico](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontrar as versões compatíveis [aqui](https://experienceleague.adobe.com/docs/?lang=en).
 
-
 >[!IMPORTANT]
 >
->Adobe recomenda que você [atualização para a versão 1.9.18 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe recomenda que você [atualização para a versão 1.9.19 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conhecidos {#known-issues}
 
@@ -39,13 +37,18 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 ## Versões anteriores {#previous-releases}
 
-### Versão de fevereiro de 2024 {#february-2023-release}
+### Versão de março de 2024 {#march-2024-release}
+
+* O processamento de uploads de vários ativos do Workfront encontra problemas.
+* Não adicionar aspas de fechamento ao usar o Workfront para pesquisar pastas no Experience Manager resulta em `SERVER_ERROR`.
+
+### Versão de fevereiro de 2024 {#february-2024-release}
 
 * Ative o recurso de alternância para permitir que os clientes da AEM Cloud configurem e configurem um conector.
 
 * Fechando o `resourceResolver` sem fechar explicitamente a sessão subjacente, causa vazamentos de sessão em instâncias AEM. É crucial fechar explicitamente a sessão, pois o fechamento automático do Resource Resolver não fecha implicitamente a sessão.
 
-### Versão de janeiro de 2024 {#january-2023-release}
+### Versão de janeiro de 2024 {#january-2024-release}
 
 * A variável [!DNL Workfront] configuração no [!DNL CRX DE] No momento, o não armazena o `project ID`, causando erros ao aplicar a permissão somente leitura. Saiba como [configurar permissões](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
 
@@ -120,7 +123,6 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 * Exclusões de comentários no Workfront agora são refletidas no Experience Manager.
 
 * Capacidade de gerenciar o bloqueio de novos clientes no Experience Manager as a Cloud Service para configurar o conector.
-
 
 ### Versão de janeiro de 2023 {#january-2022-release}
 
