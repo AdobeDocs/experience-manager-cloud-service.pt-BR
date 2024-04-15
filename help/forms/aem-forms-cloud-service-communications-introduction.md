@@ -2,12 +2,11 @@
 title: O que são as APIs de comunicação as a Cloud Service do Forms?
 description: Use APIs de comunicação para assinar, certificar ou proteger seus documentos, automatizar processos de geração de PDF e converter documentos PDF para outro formato.
 Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
-exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
 workflow-type: tm+mt
-source-wordcount: '1964'
+source-wordcount: '1982'
 ht-degree: 55%
 
 ---
@@ -193,10 +192,12 @@ As APIs de assinatura e as APIs de criptografia são [APIs síncronas](#types-of
 
 ### Serviço de extensão Reader
 
-<span class="preview"> O recurso Serviço de extensão de Reader está no Programa de adoção antecipada. Você pode escrever para `aem-forms-ea@adobe.com` do seu id de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso Serviço de extensão de Reader está no Programa de adoção antecipada. Você pode escrever para aem-forms-ea@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
-O Serviço de extensões do Reader permite que sua organização compartilhe facilmente documentos PDF interativos, estendendo a funcionalidade do Adobe Reader com direitos de uso adicionais. O serviço Reader Extensions funciona com o Adobe Reader. O serviço adiciona direitos de uso a um documento PDF. Essa ação ativa recursos que geralmente não estão disponíveis quando um documento PDF é aberto usando o Adobe Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento.
+O Serviço de extensões do Reader permite que sua organização compartilhe facilmente documentos PDF interativos, estendendo a funcionalidade do Adobe Reader com direitos de uso adicionais. O serviço Reader Extensions funciona com o Adobe Reader 7.0 ou posterior. O serviço adiciona direitos de uso a um documento PDF. Essa ação ativa recursos que geralmente não estão disponíveis quando um documento PDF é aberto usando o Adobe Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento.
 
+>[!NOTE]
+>Usuários de terceiros não precisam de software ou plug-ins adicionais para trabalhar com documentos habilitados por direitos.
 
 Quando os documentos PDF têm os direitos de uso apropriados adicionados, os recipients podem fazer as seguintes atividades no Adobe Reader:
 
@@ -242,7 +243,7 @@ Os vários recursos de direitos de uso com os Serviços de extensão do Reader s
 * **Mensagem**: a mensagem exibida no Adobe Acrobat Reader ao abrir um documento PDF com um ou mais direitos de uso aplicados.
 * **Desbloquear senha**: A senha necessária para abrir um documento de PDF criptografado. Normalmente, essa é a senha para abrir o documento, mas se o documento PDF também estiver protegido por uma senha de permissões, ele poderá ser usado para abri-lo.
 
-A variável [Documentação de referência da API](https://adobe-aem-document-experimental.redoc.ly/) O fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos por APIs. A documentação de referência da API também está disponível no formato .yaml. Você pode baixar o arquivo .yaml e carregá-lo no Postman para verificar a funcionalidade das APIs.
+A variável [Documentação de referência da API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) O fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos por APIs. A documentação de referência da API também está disponível no formato .yaml. Você pode baixar o arquivo .yaml e carregá-lo no Postman para verificar a funcionalidade das APIs.
 
 ## Tipos de APIs de Comunicação {#types}
 
