@@ -3,10 +3,11 @@ title: Organize seus ativos digitais
 description: Mover, excluir, copiar, renomear, atualizar e criar versões de seus ativos no [!DNL Assets view].
 role: User,Leader
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
+source-git-commit: e2a0e93a4ff01d9a180fcf1ad097ccbfb354fc0f
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 92%
+source-wordcount: '1062'
+ht-degree: 88%
 
 ---
 
@@ -27,7 +28,8 @@ Use o [!DNL Assets view] para realizar as seguintes tarefas de gerenciamento de 
 * ![ícone de check-out](assets/do-not-localize/checkout-icon.png) Fazer check-out do ativo selecionado.
 * ![ícone de copiar](assets/do-not-localize/copy-icon.png) Copiar o arquivo ou pasta selecionada.
 * ![ícone de mover](assets/do-not-localize/move-icon.png) Mover o ativo ou pasta selecionada para um local diferente na hierarquia do repositório.
-* ![ícone de renomear](assets/do-not-localize/rename-icon.png) Renomear o ativo ou a pasta selecionada. Use um nome exclusivo, caso contrário, a renomeação falhará com um aviso. Você pode tentar novamente com um novo nome.
+* ![ícone de renomear](assets/do-not-localize/rename-icon.png) Renomear o ativo ou a pasta selecionada. Use um nome exclusivo, caso contrário, a renomeação falhará com um aviso. Tente novamente com um novo nome.
+Além disso, você pode clicar no título de um ativo ou em uma pasta para renomeá-lo. Mencione o novo texto no **Renomear ativo** e clique em **Salvar**. Esse recurso está disponível em Grade, Galeria, Cascata e Exibições em lista. <!--in-place rename-->
 * ![ícone de atribuir tarefa](assets/do-not-localize/review-delegate-icon.png) Atribuir tarefas a outros usuários para colaborar em um ativo.
 
 É possível exibir as mesmas opções nas miniaturas de ativos.
