@@ -6,9 +6,9 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 3ed500d0c7a9a445e3417043da3d52632760ccdb
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: '3104'
 ht-degree: 0%
 
 ---
@@ -72,59 +72,61 @@ O parâmetro é uma lista de argumentos usados por funções personalizadas. Uma
    * data[]: representa uma matriz de valores de data.
    * array: representa uma matriz genérica contendo valores de vários tipos.
    * object: representa o objeto de formulário passado para uma função personalizada em vez de passar seu valor diretamente.
-   * scope: representa o objeto global usado pelas funções personalizadas no tempo de execução. Ele é declarado como o último parâmetro nas anotações JavaScript e não está visível no editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário.
+   * escopo: representa o objeto global, que contém variáveis somente leitura, como instâncias de formulário, instâncias de campo de destino e métodos para executar modificações de formulário em funções personalizadas. Ele é declarado como o último parâmetro nas anotações JavaScript e não está visível no editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário. Para obter mais informações sobre o objeto Globals e como usá-lo, [clique aqui](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
-    O tipo de parâmetro não diferencia maiúsculas de minúsculas e espaços não são permitidos no nome do parâmetro.
-    
-    `&lt;parameter description=&quot;&quot;>` contém detalhes sobre a finalidade do parâmetro. Ele pode ter várias palavras.
-    
-    Por padrão, todos os parâmetros são obrigatórios. Você pode definir um parâmetro como opcional adicionando `=` após o tipo de parâmetro ou colocando o nome do parâmetro em `[]`. Os parâmetros definidos como opcionais nas anotações JavaScript são exibidos como opcionais no editor de regras.
-    Para definir uma variável como parâmetro opcional, você pode usar qualquer uma das seguintes sintaxes:
-    
-    * `@param {type=} Input1`
-    
-    Na linha de código acima, &quot;Input1&quot; é um parâmetro opcional sem qualquer valor padrão. Para declarar parâmetro opcional com valor padrão:
-    `@param {string=&lt;value>} input1`
-    
-    &quot;input1&quot; como um parâmetro opcional com o valor padrão definido como &quot;value&quot;.
-    
-    * `@param {type} [Input1]`
-    
-    Na linha de código acima, &quot;Input1&quot; é um parâmetro opcional sem qualquer valor padrão. Para declarar parâmetro opcional com valor padrão:
-    `@param {array} [entrada1=&lt;value>]`
-    &quot;input1&quot; é um parâmetro opcional do tipo de matriz com o valor padrão definido como &quot;value&quot;.
-    Certifique-se de que o tipo de parâmetro esteja entre chaves {} e o nome do parâmetro está entre colchetes [].
-    
-    Considere o seguinte trecho de código, em que input2 é definido como um parâmetro opcional:
-    
-    &quot;javascript
-    
-    /**
-    * função de parâmetro opcional
-    * @name OptionalParameterFunction
-    * @param {string} entrada1
-    * @param {string=} input2
-    * @return {string}
-    */
-    função OptionalParameterFunction(input1, input2) {
-    let result = &quot;Resultado: &quot;;
-    resultado += input1;
-    if (input2 !== null) {
-    result += &quot; &quot; + input2;
-    }
-    resultado de retorno;
-    }
-    &quot;
-    
-    A ilustração a seguir é exibida usando a função personalizada &quot;OptionalParameterFunction&quot; no editor de regras:
-    
-    &lt;!>— ![Parâmetros opcionais ou obrigatórios ](/help/forms/assets/optional-default-params.png) —>
-    
-    Você pode salvar a regra sem especificar um valor para os parâmetros necessários, mas a regra não é executada e exibe uma mensagem de aviso como:
-    
-    &lt;!>— ![aviso de regra incompleta](/help/forms/assets/incomplete-rule.png) —>
-    
-    Quando o usuário deixa o parâmetro opcional vazio, o valor &quot;Indefinido&quot; é passado para a função personalizada do parâmetro opcional.
+O tipo de parâmetro não diferencia maiúsculas de minúsculas e espaços não são permitidos no nome do parâmetro.
+
+`<Parameter Description>` contém detalhes sobre a finalidade do parâmetro. Ele pode ter várias palavras.
+
+**Parâmetros opcionais**
+Por padrão, todos os parâmetros são obrigatórios. Você pode definir um parâmetro como opcional adicionando `=` após o tipo de parâmetro ou ao delimitar o nome do parâmetro em  `[]`. Os parâmetros definidos como opcionais nas anotações JavaScript são exibidos como opcionais no editor de regras.
+Para definir uma variável como parâmetro opcional, você pode usar qualquer uma das seguintes sintaxes:
+
+* `@param {type=} Input1`
+
+Na linha de código acima, `Input1` é um parâmetro opcional sem nenhum valor padrão. Para declarar parâmetro opcional com valor padrão:
+`@param {string=<value>} input1`
+
+`input1` como um parâmetro opcional com o valor padrão definido como `value`.
+
+* `@param {type} [Input1]`
+
+Na linha de código acima, `Input1` é um parâmetro opcional sem nenhum valor padrão. Para declarar parâmetro opcional com valor padrão:
+`@param {array} [input1=<value>]`
+`input1` é um parâmetro opcional do tipo matriz com o valor padrão definido como `value`.
+Certifique-se de que o tipo de parâmetro esteja entre chaves {} e o nome do parâmetro está entre colchetes [].
+
+Considere o seguinte trecho de código, em que input2 é definido como um parâmetro opcional:
+
+```javascript
+        /**
+         * optional parameter function
+         * @name OptionalParameterFunction
+         * @param {string} input1 
+         * @param {string=} input2 
+         * @return {string}
+        */
+        function OptionalParameterFunction(input1, input2) {
+        let result = "Result: ";
+        result += input1;
+        if (input2 !== null) {
+            result += " " + input2;
+        }
+        return result;
+        }
+```
+
+A ilustração a seguir é exibida usando o `OptionalParameterFunction` função personalizada no editor de regras:
+
+![Parâmetros opcionais ou obrigatórios ](/help/forms/assets/optional-default-params.png)
+
+Você pode salvar a regra sem especificar um valor para os parâmetros necessários, mas a regra não é executada e exibe uma mensagem de aviso como:
+
+![aviso de regra incompleta](/help/forms/assets/incomplete-rule.png)
+
+Quando o usuário deixa o parâmetro opcional vazio, o valor &quot;Indefinido&quot; é passado para a função personalizada do parâmetro opcional.
+
+Para saber mais sobre como definir parâmetros opcionais em JSDocs, [clique aqui](https://jsdoc.app/tags-param).
 
 #### Tipo de retorno
 
@@ -150,7 +152,6 @@ O tipo de retorno especifica o tipo de valor que a função personalizada retorn
 
 A função personalizada, declarada como privada, não aparece na lista de funções personalizadas no editor de regras de um formulário adaptável. Por padrão, as funções personalizadas são públicas. A sintaxe para declarar função personalizada como privada é `@private`.
 
-Para saber mais sobre como definir parâmetros opcionais em JSDocs, [clique aqui](https://jsdoc.app/tags-param).
 
 ## Diretrizes ao criar funções personalizadas {#considerations}
 
@@ -190,6 +191,8 @@ Se o usuário não adicionar anotações JavaScript à função personalizada, e
     
 ```
 
+Se o usuário não adicionar anotações JavaScript à função personalizada, a função personalizada não será listada no editor de regras de um Formulário adaptável.
+
 * **Expressão de função com anotações ou comentários obrigatórios do JavaScript**
 
 Para listar funções personalizadas no editor de regras de um Formulário adaptável, crie funções personalizadas no seguinte formato:
@@ -207,6 +210,8 @@ Para listar funções personalizadas no editor de regras de um Formulário adapt
             // code to be executed
         }
 ```
+
+Se o usuário não adicionar anotações JavaScript à função personalizada, a função personalizada não será listada no editor de regras de um Formulário adaptável.
 
 ## Criar uma função personalizada {#create-custom-function}
 
@@ -365,30 +370,33 @@ Você pode usar funções personalizadas para adicionar recursos personalizados 
 
 ### Objetos de escopo de campo e global em funções personalizadas {#support-field-and-global-objects}
 
-Objetos de campo referem-se aos componentes ou elementos individuais em um formulário, como campos de texto e caixas de seleção. Os objetos de escopo global se referem às variáveis ou configurações globais que são acessíveis em todo o formulário. Vamos analisar o seguinte fragmento de código:
+Objetos de campo referem-se aos componentes ou elementos individuais em um formulário, como campos de texto e caixas de seleção. O objeto Globals contém variáveis somente leitura, como instância de formulário, instância de campo de destino e métodos para fazer modificações de formulário em funções personalizadas.
+
+>[!NOTE]
+>
+> A variável `param {scope} globals` deve ser o último parâmetro e não é exibido no editor de regras de um Formulário adaptável.
+
+<!-- Let us look at the following code snippet:
 
 ```JavaScript
+   
     /**
     * updateDateTime
     * @name updateDateTime
     * @param {object} field
-    * @param {scope} globals 
+    * @param {scope} globals
     */
     function updateDateTime(field, globals) {
     // Accessing the Date object from the global scope
     var currentDate = new Date();
     // Formatting the date and time
     var formattedDateTime = currentDate.toLocaleString();
-    // Updating the field value with the formatted date and time
-    field.value = formattedDateTime;
+    // Updating the field value with the formatted date and time using setProperty.
+    globals.functions.setProperty(field, {value: formattedDateTime});
     }
 ```
 
->[!NOTE]
->
-> A variável `param {scope} globals` deve ser o último parâmetro e não é exibido no editor de regras de um Formulário adaptável.
-
-No trecho de código acima, uma função personalizada chamada `updateDateTime` A obtém parâmetros como um objeto de campo e um objeto global. Os objetos de data e hora são acessados usando o escopo global. O campo representa o objeto de caixa de texto em que o valor de data e hora formatado é exibido no formulário.
+In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
 Saiba como as funções personalizadas usam campos e objetos globais com a ajuda de um `Contact Us` formulário usando casos de uso diferentes.
 
@@ -419,7 +427,8 @@ Adicione o seguinte código na função personalizada, conforme explicado na [cr
 
 >[!NOTE]
 >
-> É possível configurar as propriedades do campo usando as propriedades disponíveis localizadas em `[form-path]/jcr:content/guideContainer.model.json`.
+> * É possível configurar as propriedades do campo usando as propriedades disponíveis localizadas em `[form-path]/jcr:content/guideContainer.model.json`.
+> * As modificações feitas no formulário usando o `setProperty` O método do objeto Globals é de natureza assíncrona e não é refletido durante a execução da função personalizada.
 
 Neste exemplo, a validação do `personaldetails` ocorre ao clicar no botão. Se nenhum erro for detectado no painel, outro painel, o `feedback` fica visível ao clicar no botão.
 
@@ -554,7 +563,7 @@ A seguinte linha de código:
 `globals.functions.submitForm(globals.functions.exportData(), false);` é usado para enviar os dados do formulário após manipulação.
 * O primeiro argumento diz respeito aos dados a apresentar.
 * O segundo argumento representa se o formulário deve ser validado antes do envio. É necessário `optional` e definir como `true` por padrão.
-* O terceiro argumento é `contentType` da apresentação, que é igualmente `optional` com o valor padrão como `multipart/form-data`.
+* O terceiro argumento é `contentType` do envio, que também é opcional com o valor padrão como `multipart/form-data`. Os outros valores podem ser `application/json` e `application/x-www-form-urlencoded`.
 
 Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para enviar os dados manipulados no servidor:
 
@@ -565,7 +574,6 @@ Adicione o seguinte código na função personalizada, conforme explicado na [cr
     * @param {object} field
     * @param {scope} globals 
     */
-
     function submitData(globals)
     {
     
