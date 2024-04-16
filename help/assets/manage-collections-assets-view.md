@@ -2,9 +2,9 @@
 title: Gerenciar coleções
 description: Uma coleção é um conjunto de ativos na exibição do Experience Manager Assets. Use coleções para compartilhar ativos entre usuários.
 exl-id: 540dc1d9-eaf4-4e08-8087-dc58da23a6e8
-source-git-commit: 24c92e3a8ea20696cd39a5070f161d45d09d6f69
+source-git-commit: b2144820ad549332e8a921744717a77824f9e099
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '910'
 ht-degree: 77%
 
 ---
@@ -191,11 +191,11 @@ Para excluir uma coleção:
 ## Gerenciar permissões de uma coleção privada{#manage-permissions-private-collection}
 
 Você pode permitir que os administradores gerenciem [níveis de acesso](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions) para coleções privadas disponíveis no repositório. É possível atribuir permissões, como `Can View` e `Can Edit` aos grupos ou usuários. Você também pode delegar privilégios de gerenciamento de permissões a grupos de usuários. Os usuários que criam coleções privadas são os proprietários dessas coleções. Eles podem usar o [!UICONTROL Gerenciar permissões] ação para conceder acesso aos outros usuários. Além disso, os administradores podem visualizar e gerenciar permissões das coleções privadas na [!DNL Experience Manager] repositório.
-
+<!--
 >[!NOTE]
 >
->A Adobe não recomenda atribuir permissões a usuários.
-
+>Adobe does not recommend to assign permissions to users.
+-->
 Para obter informações sobre como atribuir as permissões disponíveis a grupos de usuários, consulte [Adicionar permissões a grupos de usuários](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 Para obter mais informações sobre o fluxo de trabalho completo, consulte [gerenciar permissões](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
