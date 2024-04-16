@@ -4,10 +4,10 @@ description: Mover, excluir, copiar, renomear, atualizar e criar versões de seu
 role: User,Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
-source-git-commit: f7d3e356e4e43d5838a6319f5ead750c149a9b3b
+source-git-commit: 3912f52112b3d9dcb568e477c33d3f4b28064b66
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 88%
+source-wordcount: '1177'
+ht-degree: 89%
 
 ---
 
@@ -22,15 +22,39 @@ Use o [!DNL Assets view] para realizar as seguintes tarefas de gerenciamento de 
 *Figura: Opções disponíveis na barra de ferramentas para uma imagem selecionada.*
 
 * ![ícone de desmarcar](assets/do-not-localize/close-icon.png) Desmarcar a seleção.
+
+* ![ícone localizar semelhante](assets/do-not-localize/find-similar.svg) Encontrar ativos de imagem semelhantes na interface do Assets com base nos metadados e nas tags inteligentes.
+
 * ![ícone de detalhes](assets/do-not-localize/edit-in-icon.png) Clique para visualizar um ativo e exibir os metadados detalhados. Ao visualizar, você pode exibir as versões e editar uma imagem.
+
 * ![ícone de download](assets/do-not-localize/download-icon.png) Baixar o ativo selecionado para o sistema de arquivos local.
+
+* ![ícone adicionar à coleção](assets/do-not-localize/add-collection.svg) Adicionar o ativo selecionado a uma coleção.
+
+* ![ícone fixar ativos](assets/do-not-localize/pin-quick-access.svg) Fixar um ativo para poder acessá-lo rapidamente quando precisar. Todos os itens fixados são exibidos na seção **Acesso rápido** do Meu espaço de trabalho.
+
+* ![ícone editar no Express](assets/do-not-localize/edit-e.svg) Editar uma imagem no Adobe Express integrado no Adobe Experience Manager Assets.
+
+* ![ícone editar ativo](assets/do-not-localize/edit-e.svg) Editar a imagem usando o Adobe Express.
+
+* ![ícone compartilhar link do ativo](assets/do-not-localize/share-link.svg) Compartilhar links para um ativo com outras pessoas, para que possam acessá-lo e baixá-lo.
+
 * ![ícone de excluir](assets/do-not-localize/delete-icon.png) Excluir o ativo ou a pasta selecionada.
-* ![ícone de check-out](assets/do-not-localize/checkout-icon.png) Fazer check-out do ativo selecionado.
+
 * ![ícone de copiar](assets/do-not-localize/copy-icon.png) Copiar o arquivo ou pasta selecionada.
+
 * ![ícone de mover](assets/do-not-localize/move-icon.png) Mover o ativo ou pasta selecionada para um local diferente na hierarquia do repositório.
+
 * ![ícone de renomear](assets/do-not-localize/rename-icon.png) Renomear o ativo ou a pasta selecionada. Use um nome exclusivo, caso contrário, a renomeação falhará com um aviso. Tente novamente com um novo nome.
-Além disso, você pode clicar no título de um ativo ou em uma pasta para renomeá-lo. Mencione o novo texto no **Renomear ativo** e clique em **Salvar**. Esse recurso está disponível em Grade, Galeria, Cascata e Exibições em lista. <!--in-place rename-->
+Além disso, você pode clicar no título de um ativo ou em uma pasta para renomeá-lo. Mencione o novo texto no **Renomear ativo** e clique em **Salvar**. Esse recurso está disponível em Grade, Galeria, Cascata e Exibições em lista.
+
+* ![ícone de exibição em cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Exibição em cascata].
+
+* ![ícone copiar biblioteca](assets/do-not-localize/copy-icon.png) Adicionar um ativo à biblioteca.
+
 * ![ícone de atribuir tarefa](assets/do-not-localize/review-delegate-icon.png) Atribuir tarefas a outros usuários para colaborar em um ativo.
+
+* ![ícone de atribuir tarefa](assets/do-not-localize/watch-asset.svg) Monitorar as operações realizadas em um ativo.
 
 É possível exibir as mesmas opções nas miniaturas de ativos.
 
