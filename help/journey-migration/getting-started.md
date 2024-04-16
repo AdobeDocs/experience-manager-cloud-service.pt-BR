@@ -49,7 +49,7 @@ Você também pode consultar o diagrama abaixo para obter uma visualização mai
 >id="aemcloud_cam_overview"
 >title="Sobre o Cloud Acceleration Manager"
 >abstract="O Cloud Acceleration Manager é um aplicativo na nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, desde o planejamento até a ativação do Cloud Service."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/getting-started#aem-moving-to-aem-guide" text="Migração para o AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/migration-journey/getting-started#aem-moving-to-aem-guide" text="Migração para o AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html?lang=pt-BR" text="Alterações importantes no AEM Sites as a Cloud Service"
 
 Além das etapas descritas nesta jornada, o Adobe fornece o Cloud Acceleration Manager, um aplicativo na nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, desde o planejamento até a ativação do Cloud Service. Configure suas equipes para uma migração bem-sucedida com práticas, dicas, documentação e ferramentas recomendadas pela Adobe, para ajudar em cada fase da jornada para o AEM as a Cloud Service.
