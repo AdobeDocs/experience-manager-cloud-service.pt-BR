@@ -2,9 +2,9 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.6.0.
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: 18f07bab308b707952b8df6b980dd3a6a9e024e9
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1322'
 ht-degree: 95%
 
 ---
@@ -65,12 +65,6 @@ A interface de resultados de pesquisa do Experience Manager Assets agora fornece
 **Visualizações de miniaturas para ativos 3D**
 
 O [!DNL Experience Manager Assets] agora gera [visualizações de miniaturas para formatos de arquivo 3D comuns](/help/assets/file-format-support.md) incluindo gLB, USDz, FBX, 3DS, OBJ e SBSAR. Quando esses arquivos são carregados, as miniaturas são geradas automaticamente por padrão.
-
-**Configuração de compartilhamento de link**
-
-Uma nova experiência de usuário aprimorada para [criar compartilhamentos de links](/help/assets/share-assets.md) e um novo conjunto de configurações que permite que admins personalizem o comportamento padrão desse recurso para seus usuários.
-
-![Gerenciamento de tags](/help/assets/assets/config-email-service.png)
 
 **Dynamic Media: atualização de campos relacionados ao Corte inteligente no perfil de imagem**
 
