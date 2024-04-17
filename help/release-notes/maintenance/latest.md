@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 1dd2eae9201c86d2cdac78ff99634eff8ca57a05
+source-git-commit: 5e216e45a1400299efcc418007ddbe93f0c571a1
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 50%
+source-wordcount: '427'
+ht-degree: 29%
 
 ---
 
@@ -13,46 +13,58 @@ ht-degree: 50%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 15860 {#release-15860}
+## Versão 15939 {#release-15939}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 15860, lançada publicamente em quinta-feira, 10 de abril de 2024. A versão de manutenção anterior era a versão 15787.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 15939, lançada publicamente em quinta-feira, 17 de abril de 2024. A versão de manutenção anterior era a versão 15860.
 
-A Ativação de recursos 2024.3.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
+A Ativação de recursos 2024.4.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
 
-### Aprimoramentos {#enhancements-15860}
+### Aprimoramentos {#enhancements-15939}
+
+* GRANITE-39892: distribuição de atualização para limite de tamanho de fila e publicação pronta.
+* GRANITE-48777: Atualização do QS para com.adobe.granite.security.user-0.4.84 concluída.
+* GRANITE-49421: propriedades adicionadas para a entidade de serviço do segmento.
+* GRANITE-49855: escreva um analisador de modelo de recurso que falhe a build do Quickstart em caso de novo uso do commons.json.
+* GRANITE-47995: permissão para alternar a gravação de cq:isDelivered.
+* GRANITE-36205: atualize a versão interna do oak para a mais recente.
+* GRANITE-50156 Vincular afinidade do AEMCS à ID de usuário do IMS para Universal Editor.
+* GRANITE-50556: Atualização do pacote de travessia para v0.1.18.
+* GRANITE-50728: atualize o FileVault para 3.7.3-T20240308111857-81fa88f1.
+* GRANITE-50957: atualize o QS para com.adobe.granite.repository para 1.8.114.
+* GRANITE-50158: Adicionar suporte ao servidor OAuth para fluxo de credencial do servidor no carregador YAML.
+* GRANITE-51327: atualize o Oak para a versão pública mais recente (1.62.0).
+* SKYOPS-68091 Atualização de imagens em tempo de execução do Java 11 para a versão 3.0.0.
+* SKYOPS-70421: Atualização do pacote org.apache.sling.servlet-helpers
+* SKYOPS-73483: Permitir token de registro no AEM.
+
+### Problemas corrigidos {#fixed-issues-15939}
+
+* GRANITE-46901: Adicione métricas ao cliente de mensagens.
+* GRANITE-48793: atualize o QS para com.adobe.granite.crx-explorer-1.1.28.
+* GRANITE-48937: O Omnisearch não funciona na página aem/start.html.
+* GRANITE-49638: corrija a configuração incorreta do tipo de conteúdo para a fábrica de transformadores RUM.
+* GRANITE-50141: IMSProviderImpl está enviando spam para o log.
+* SITES-20949: falha em ComponentsIT.testEmbed depois que o YouTube adicionou referrerpolicy=&quot;strict-origin-when-cross-origin&quot;.
+* SITES-21233: Atualização dos Componentes principais - Corrigir acordeão para GS1 EUA após a atualização para 15860.
+* SKYOPS-74819: Compatibilidade com versões anteriores quebrada para chaves duplicadas no Apache Commons.
+* SKYOPS-67087: A agregação clientlib não funciona em determinados casos.
+* CQ-4355415: os links de notificações de AEM não estão funcionando no 6.5 SP18.
+
+### Problemas conhecidos {#known-issues-15939}
 
 Nenhum.
 
-### Problemas corrigidos {#fixed-issues-15860}
-
-* Corrige a regressão para exibir o console Inicializações quando uma inicialização se refere a uma página excluída ou movida.
-
-### Problemas conhecidos {#known-issues-15860}
-
-Nenhum.
-
-### Recursos e APIs obsoletos {#deprecated-15860}
+### Recursos e APIs obsoletos {#deprecated-15939}
 
 * [Descontinuação de credenciais JWT no console do Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
 Veja [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md) saber o que foi descontinuado ou removido no AEM as a Cloud Service.
 
-### Aviso de mudança {#change-notice-15860}
-
-**Ações necessárias**
-
-#### Defina a versão do Java CM para 11 {#set-java-version-11}
-
-A nova versão do aem-sdk-api contém classes compiladas com um destino Java 11, que não é compatível com a versão 1.8 do JDK padrão do ambiente de compilação do Cloud Manager. Esta atualização requer que o Maven seja executado usando o JDK 11.
-
-Os clientes são aconselhados a adicionar um `.cloudmanager/java-version` para a raiz do repositório Git com o conteúdo: `11`. Consulte [Ambiente de compilação / Configuração da versão do JDK Maven](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#alternate-maven-jdk-version).
-
-
-### Tecnologias integradas {#embedded-tech-15860}
+### Tecnologias integradas {#embedded-tech-15939}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
-| AEM OAK | 1.60-T20240131102219-0cde853 | [API Oak API 1.60.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.60.0/index.html) |
-| API DO SLING DO AEM | Versão 2.27.2 | [API Apache Sling API 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| HTL do AEM | Versão 1.4.20-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
-| Componentes principais do AEM | Versão 2.24.4 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
+| AEM OAK | 1.62.0 | [API Oak API 1.62.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html) |
+| API DO SLING DO AEM | 2.27.2 | [API Apache Sling API 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| HTL do AEM | 1.4.20-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
+| Componentes principais do AEM | 2.24.6 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
