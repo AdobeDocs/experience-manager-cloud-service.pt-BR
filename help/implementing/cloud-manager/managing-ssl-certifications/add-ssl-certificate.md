@@ -2,10 +2,10 @@
 title: Adicionar um certificado SSL
 description: Saiba como adicionar seu próprio certificado SSL usando as ferramentas de autoatendimento do Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 65aaa732d08cee541153f1b2fb4ea7b44f1f3029
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 78%
+source-wordcount: '612'
+ht-degree: 71%
 
 ---
 
@@ -40,6 +40,7 @@ Siga estas etapas para adicionar um certificado usando o Cloud Manager.
    * Insira um nome para o certificado em **Nome do certificado**.
       * Isso é apenas para fins de informação e pode ser qualquer nome que o ajude a identificar o certificado com facilidade.
    * Cole os valores de **Certificado**, **Chave privada** e **Cadeia de certificado** nos respectivos campos. Todos esses três campos são obrigatórios.
+   * Em alguns casos, o certificado do usuário final pode estar incluído na cadeia e deve ser removido antes de colar a cadeia no campo.
 
    ![Caixa de diálogo Adicionar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -56,6 +57,10 @@ Depois de salvo, o certificado será exibido como uma nova linha na tabela.
 >[!NOTE]
 >
 >É necessário ser um membro com a função **Proprietário da empresa** ou **Gerente de implantação** para instalar um certificado SSL no Cloud Manager.
+
+>[!NOTE]
+>
+>Se você receber um erro semelhante a `The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.`, você provavelmente incluiu o certificado de cliente na cadeia de certificados. Certifique-se de que a cadeia não inclua o certificado de cliente e tente novamente.
 
 ## Erros de certificado {#certificate-errors}
 
