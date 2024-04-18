@@ -1,13 +1,14 @@
 ---
 title: O que são as APIs de comunicação as a Cloud Service do Forms?
 description: Use APIs de comunicação para assinar, certificar ou proteger seus documentos, automatizar processos de geração de PDF e converter documentos PDF para outro formato.
-Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs
+Keywords: How to generate document?, Generate PDF document, Manipulation PDF documents, Assembling PDF documents, Validating PDF document, APIs used in encrypting or decrypting PDFs.
 feature: Adaptive Forms, APIs
 role: Admin, Developer, User
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
+source-git-commit: 126af719cfd2c9361d0e7768b3b65e1149b6a989
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 55%
+source-wordcount: '1988'
+ht-degree: 54%
 
 ---
 
@@ -190,14 +191,11 @@ Você pode realizar essas tarefas usando as APIs de criptografia:
 
 As APIs de assinatura e as APIs de criptografia são [APIs síncronas](#types-of-communications-apis-types).
 
-### Serviço de extensão Reader
+### APIs de direitos de uso
 
-<span class="preview"> O recurso Serviço de extensão de Reader está no Programa de adoção antecipada. Você pode escrever para aem-forms-ea@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso Direitos de uso está no Programa de adoção antecipada. Você pode escrever para aem-forms-ea@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
-O Serviço de extensões do Reader permite que sua organização compartilhe facilmente documentos PDF interativos, estendendo a funcionalidade do Adobe Reader com direitos de uso adicionais. O serviço Reader Extensions funciona com o Adobe Reader 7.0 ou posterior. O serviço adiciona direitos de uso a um documento PDF. Essa ação ativa recursos que geralmente não estão disponíveis quando um documento PDF é aberto usando o Adobe Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento.
-
->[!NOTE]
->Usuários de terceiros não precisam de software ou plug-ins adicionais para trabalhar com documentos habilitados por direitos.
+O recurso Direitos de uso permite que sua organização compartilhe facilmente documentos PDF interativos, estendendo a funcionalidade do Adobe Reader com direitos de uso adicionais. O serviço funciona com o Adobe Reader 7.0 ou posterior e adiciona direitos de uso a um documento PDF. Essa ação ativa recursos que geralmente não estão disponíveis quando um documento PDF é aberto usando o Adobe Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento.
 
 Quando os documentos PDF têm os direitos de uso apropriados adicionados, os recipients podem fazer as seguintes atividades no Adobe Reader:
 
@@ -208,11 +206,13 @@ Quando os documentos PDF têm os direitos de uso apropriados adicionados, os rec
 * Envie eletronicamente documentos de PDF concluídos ou anotados.
 * Use documentos e formulários do PDF como um front-end de desenvolvimento intuitivo para bancos de dados internos e serviços da Web.
 * Compartilhe documentos do PDF com outras pessoas para que os revisores possam adicionar comentários usando ferramentas de marcação intuitivas. Essas ferramentas incluem notas adesivas eletrônicas, carimbos, destaques e tachado de texto. As mesmas funções estão disponíveis no Acrobat.
-* Suporte para decodificação de formulários com código de barras.
+* Suporte à decodificação Forms com código de barras.
 
 Esses recursos de direitos de uso especiais são ativados automaticamente quando um documento de PDF habilitado para direitos é aberto no Adobe Reader. Quando o usuário terminar de trabalhar com um documento habilitado para direitos, essas funções serão novamente desabilitadas no Adobe Reader. Eles permanecem desativados até que o usuário receba outro documento PDF com direitos ativados.
 
-Os vários recursos de direitos de uso com os Serviços de extensão do Reader são:
+#### Ativar ou desativar direitos de uso
+
+Os vários recursos de direitos de uso para estender os serviços do PDF Reader são:
 
 * **Decodificação de códigos de barras**: Para decodificar códigos de barras dentro do documento PDF.
 
@@ -238,7 +238,11 @@ Os vários recursos de direitos de uso com os Serviços de extensão do Reader s
 
 * **Enviar autônomo**: para enviar dados de formulário off-line de um documento PDF.
 
-**Outros recursos nos Serviços de extensão do Reader**
+#### Extrair direitos de uso
+
+Ajuda a recuperar os direitos de uso ativados ou desativados em um documento do PDF para extensibilidade do Adobe Acrobat Reader.
+
+#### Outros recursos
 
 * **Mensagem**: a mensagem exibida no Adobe Acrobat Reader ao abrir um documento PDF com um ou mais direitos de uso aplicados.
 * **Desbloquear senha**: A senha necessária para abrir um documento de PDF criptografado. Normalmente, essa é a senha para abrir o documento, mas se o documento PDF também estiver protegido por uma senha de permissões, ele poderá ser usado para abri-lo.
