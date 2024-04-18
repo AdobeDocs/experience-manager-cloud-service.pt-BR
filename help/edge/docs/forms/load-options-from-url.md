@@ -2,11 +2,9 @@
 title: Carregar opções de lista suspensa do URL
 description: As opções da lista suspensa são incluídas em uma planilha distinta e, em seguida, importadas para a planilha principal por meio do URL fornecido.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -14,14 +12,19 @@ ht-degree: 0%
 
 # Carregar opções de lista suspensa do URL
 
-Nos Edge Delivery Services, os usuários têm a opção de selecionar um valor em um conjunto predefinido de opções. Os autores do formulário usam o `select` elemento, que fornece uma lista de opções.
-Por exemplo, a variável `enquiry` O formulário apresenta um menu suspenso para selecionar países, oferecendo aos usuários uma variedade de países predefinidos para escolher. Esta lista é composta por uma longa lista de países separados por vírgulas.
+O Forms geralmente inclui menus suspensos para que os usuários selecionem entre as opções predefinidas. Normalmente, essas opções são definidas no próprio formulário, mas o gerenciamento de listas longas pode ser complicado. Este guia descreve como melhorar a criação de formulários carregando opções suspensas de uma planilha separada por meio de um URL.
+
+
+Os benefícios de carregar opções suspensas em uma planilha separada são:
+
+* Gerenciamento simplificado: mantenha as opções suspensas em um local centralizado para facilitar atualizações e adições.
+* Maior eficiência: elimine a necessidade de adicionar manualmente longas listas de opções na definição do formulário.
+
+
+
 
 ![Opções suspensas](/help/forms/assets/drop-down-options.png)
 
-O gerenciamento de longas listas de opções para menus suspensos pode ser complicado ao adicioná-los diretamente à planilha que contém a definição do formulário. Criar uma planilha separada para armazenar essas opções suspensas pode simplificar e simplificar o processo. Essa planilha atua como um repositório centralizado para todas as opções suspensas, organizadas em um formato estruturado. Cada opção é listada em sua própria linha, facilitando o gerenciamento e as atualizações.
-
-Vamos explorar a melhoria do processo de criação de formulários carregando a lista de opções de outra planilha por meio de um URL.
 
 No final deste artigo, você aprenderá a:
 
@@ -30,24 +33,26 @@ No final deste artigo, você aprenderá a:
 
 ## Definir opções em uma planilha separada {#define-options}
 
-Crie uma planilha com duas colunas:`Option` e `Value`, para definir as opções:
+Definição de Opções em uma Planilha Separada
 
-1. Vá para a pasta do Projeto AEM na Microsoft® SharePoint ou na pasta Google Drive.
-2. Adicionar uma planilha com nome `shared-country` no site Microsoft® SharePoint ou na pasta Google Drive e adicione o seguinte:
-
-   * **Opção**: representa os valores de exibição das opções no menu suspenso.
-   * **Valor**: representa o valor enviado quando um usuário seleciona a opção.
+1. Criar uma planilha:
+   1. Localize a pasta do projeto AEM no Microsoft® SharePoint ou Google Drive.
+   1. Adicione uma nova planilha. Por exemplo, &quot;país compartilhado&quot;.
+1. Definir colunas de opção: adicione duas colunas: &quot;Option&quot; e &quot;Value&quot;.
+   * &quot;Option&quot; define o texto exibido no menu suspenso.
+   * &quot;Value&quot; define o valor enviado quando um usuário seleciona a opção.
 
    >[!NOTE]
    >
-   > Se o valor e a opção de uma opção suspensa forem iguais, a planilha poderá conter somente o **Opção** coluna.
+   >Se a opção e o valor forem idênticos, somente a coluna &quot;Option&quot; será necessária.
 
-   Vamos adicionar uma nova planilha, [shared-country](/help/forms/assets/enquiry-options.xlsx) para as opções exibidas na guia `Destination` lista suspensa na `enquiry` formulário.
+1. Preencha a Planilha: Informe suas opções de país na coluna &quot;Opção&quot; (e na coluna &quot;Valor&quot;, se necessário).
 
-   Consulte a ilustração abaixo, que descreve o `shared-country` planilha:
+   Consulte o exemplo abaixo para obter uma estrutura.
 
    ![Lista suspensa para país](/help/forms/assets/drop-down-country-options.png)
-3. Pré-visualizar e publicar o `shared-country` planilha usando [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+
+1. Pré-visualizar e publicar o `shared-country` planilha usando [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
    Consulte o URL que mostra a variável `shared-country` planilha: https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
 

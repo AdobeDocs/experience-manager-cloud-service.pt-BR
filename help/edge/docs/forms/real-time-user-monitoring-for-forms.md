@@ -2,14 +2,14 @@
 title: Monitoramento de usuários em tempo real para o Edge Delivery Services Forms
 description: O monitoramento do usuário em tempo real para o Edge Delivery Services Forms envolve o rastreamento e a análise contínuos das interações do usuário com os formulários.
 feature: Edge Delivery Services
-hide: true
-hidefromtoc: true
-source-git-commit: eadfc3d448bd2fadce08864ab65da273103a6212
+exl-id: 184fc7dc-d583-4a63-9e30-80d324ec9d7e
+source-git-commit: 2affe155b285986128487043fcc4f2938fc15842
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 0%
 
 ---
+
 
 # Monitoramento de usuários em tempo real para o Edge Delivery Services Forms
 
@@ -62,4 +62,3 @@ Você pode avaliar as interações do visitante com sites orientados pela Adobe 
    * **Bom**: se a duração entre as ações do usuário for de 200 milissegundos (ms) ou menos.
    * **Ok**: Se a duração for superior a 200 ms, mas igual ou inferior a 500 ms.
    * **Ruim**: Se a duração exceder 500 ms.
-
