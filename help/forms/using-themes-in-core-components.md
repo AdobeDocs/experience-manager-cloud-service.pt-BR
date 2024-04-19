@@ -3,9 +3,9 @@ title: Como podemos criar e usar temas no Adaptive Forms?
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um Formulário adaptável usando componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 159407dfaa5d17caddca2953a5732f0e91eb474c
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2754'
 ht-degree: 3%
 
 ---
@@ -128,7 +128,7 @@ Para clonar um tema, execute as seguintes instruções:
 1. Execute o seguinte comando:
 
    ```
-         code .
+      code .
    ```
 
    ![Abrir a pasta de temas em um editor de texto simples](/help/forms/assets/aem-forms-theme-folder-in-vs-code.png)
@@ -137,14 +137,31 @@ Para clonar um tema, execute as seguintes instruções:
 
 1. Abra o `package.json` arquivo para edição.
 
-1. Defina os valores para o `name` e `description` atributos.
+1. Defina os valores para o `name` e `version` atributos.
 
-   O atributo name é usado para identificar exclusivamente o tema, como &quot;aem-forms-wknd-theme&quot; e exibido no **Estilo** guia de **Assistente de criação de formulário**. O atributo de descrição fornece detalhes adicionais sobre o tema, incluindo a finalidade e os cenários para os quais ele foi projetado. Você também pode especificar a versão, a descrição e a licença do tema.
+   ![Imagem de alteração do nome do tema da tela de desenho](/help/forms/assets/changename_canvastheme.png)
 
-1. Salvar e fechar o arquivo.
+   >[!NOTE]
+   >
+   > * O atributo name é usado para identificar exclusivamente o tema e o nome especificado é exibido no campo **Estilo** guia do **Assistente de criação de formulário**.
+   > * Você tem a opção de selecionar um nome para o tema de acordo com sua escolha, por exemplo, `mytheme` ou `customtheme`. No entanto, nesse caso, especificamos o nome como `aem-forms-wknd-theme`.
 
-![Imagem de alteração do nome do tema da tela de desenho](/help/forms/assets/changename_canvastheme.png)
+1. Abra o `package-lock.json` arquivo para edição.
+1. Defina os valores para o `name` e `version` atributos. Certifique-se de que os valores para o `name` e `version` atributos no `Package-lock`O arquivo .json corresponde àqueles no `Package.json` arquivo.
 
+   ![Imagem de alteração do nome do tema da tela de desenho](/help/forms/assets/changename_canvastheme-package-lock.png)
+
+1. (Opcional) Abra a `ReadMe` arquivo para editar e atualizar o nome do tema.
+
+   ![Imagem de alteração do nome do tema da tela de desenho](/help/forms/assets/changename_canvastheme-readme-file.png)
+
+1. Salve e feche os arquivos.
+
+**Considerações ao definir o nome do tema**
+
+* É obrigatório remover a variável `@aemforms` do nome do tema em `Package.json` arquivo e `Package-lock.json` arquivo. Caso não consiga remover `@aemforms` a partir do nome do tema personalizado, isso resulta na falha do pipeline de front-end durante a implantação do tema.
+* É recomendável atualizar o tema `version` in `Package.json` arquivo e `Package-lock.json` para refletir com precisão as alterações e aprimoramentos ao longo do tempo para o tema.
+* Para obter informações importantes sobre o uso, instruções de instalação e outros detalhes relevantes, é recomendável atualizar o nome do tema no `ReadMe` arquivo.
 
 #### 3. Personalizar um tema {#customize-the-theme}
 
