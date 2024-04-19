@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 36fefbf74a288d60a9529f0c7273dd6b0557177b
+source-git-commit: f15b42e4012385c461b5440b92f53c4e58fb8ac2
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 29%
+source-wordcount: '213'
+ht-degree: 59%
 
 ---
 
@@ -13,54 +13,32 @@ ht-degree: 29%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 15939 {#release-15939}
+## Versão 15977 {#release-15977}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 15939, lançada publicamente em quinta-feira, 17 de abril de 2024. A versão de manutenção anterior era a versão 15860.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 15977, lançada publicamente em sábado, 19 de abril de 2024. A versão de manutenção anterior era a versão 15939.
 
 A Ativação de recursos 2024.4.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para obter mais informações.
 
-### Aprimoramentos {#enhancements-15939}
+### Aprimoramentos {#enhancements-15977}
 
-* GRANITE-39892: distribuição de atualização para limite de tamanho de fila e publicação pronta.
-* GRANITE-48777: Atualização do QS para com.adobe.granite.security.user-0.4.84 concluída.
-* GRANITE-49421: propriedades adicionadas para a entidade de serviço do segmento.
-* GRANITE-49855: escreva um analisador de modelo de recurso que falhe a build do Quickstart em caso de novo uso do commons.json.
-* GRANITE-47995: permissão para alternar a gravação de cq:isDelivered.
-* GRANITE-36205: atualize a versão interna do oak para a mais recente.
-* GRANITE-50156 Vincular afinidade do AEMCS à ID de usuário do IMS para Universal Editor.
-* GRANITE-50556: Atualização do pacote de travessia para v0.1.18.
-* GRANITE-50728: atualize o FileVault para 3.7.3-T20240308111857-81fa88f1.
-* GRANITE-50957: atualize o QS para com.adobe.granite.repository para 1.8.114.
-* GRANITE-50158: Adicionar suporte ao servidor OAuth para fluxo de credencial do servidor no carregador YAML.
-* GRANITE-51327: atualize o Oak para a versão pública mais recente (1.62.0).
-* SKYOPS-68091 Atualização de imagens em tempo de execução do Java 11 para a versão 3.0.0.
-* SKYOPS-70421: Atualização do pacote org.apache.sling.servlet-helpers
-* SKYOPS-73483: Permitir token de registro no AEM.
+* GRANITE-51335: Otimize a verificação de integridade do AEM para aumentar a estabilidade da instância.
 
-### Problemas corrigidos {#fixed-issues-15939}
+### Problemas corrigidos {#fixed-issues-15977}
 
-* GRANITE-46901: Adicione métricas ao cliente de mensagens.
-* GRANITE-48793: atualize o QS para com.adobe.granite.crx-explorer-1.1.28.
-* GRANITE-48937: O Omnisearch não funciona na página aem/start.html.
-* GRANITE-49638: corrija a configuração incorreta do tipo de conteúdo para a fábrica de transformadores RUM.
-* GRANITE-50141: IMSProviderImpl está enviando spam para o log.
-* SITES-20949: falha em ComponentsIT.testEmbed depois que o YouTube adicionou referrerpolicy=&quot;strict-origin-when-cross-origin&quot;.
-* SITES-21233: Atualização dos Componentes principais - Corrigir o Accordion após a atualização para o 15860.
-* SKYOPS-74819: Compatibilidade com versões anteriores quebrada para chaves duplicadas no Apache Commons.
-* SKYOPS-67087: A agregação clientlib não funciona em determinados casos.
-* CQ-4355415: os links de notificações de AEM não estão funcionando no 6.5 SP18.
+* CQ-4357226: corrija a regressão no suporte a configurações IMS para credenciais OAuth.
+* GRANITE-51335: Atualização de Ratelimit para 5.0.4 Corrigidos registros Felix Health Check.
 
-### Problemas conhecidos {#known-issues-15939}
+### Problemas conhecidos {#known-issues-15977}
 
 Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-15939}
+### Recursos e APIs obsoletos {#deprecated-15977}
 
 * [Descontinuação de credenciais JWT no console do Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
 
 Veja [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md) saber o que foi descontinuado ou removido no AEM as a Cloud Service.
 
-### Tecnologias integradas {#embedded-tech-15939}
+### Tecnologias integradas {#embedded-tech-15977}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
