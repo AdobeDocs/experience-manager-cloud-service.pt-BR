@@ -2,9 +2,9 @@
 title: Editar vídeos
 description: Editar vídeos usando [!DNL Adobe Express] opções viabilizadas pelo e salvar vídeos atualizados como versões.
 role: User
-source-git-commit: dd67ce6fd8d0626db5518a39dd5ed472ddfeff93
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '753'
 ht-degree: 19%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 19%
 Transformar um vídeo em um tamanho perfeito é fácil usando o incorporado [!DNL Adobe Express] ações rápidas. Ações rápidas no [!DNL Assets Essentials] powered by [!DNL Adobe Express] O fornece opções de edição de vídeo intuitivas, incluindo cortar vídeo, redimensionar vídeo, aparar vídeo e converter vídeo em GIF.
 
 Após editar um vídeo, você pode salvá-lo como uma nova versão. O controle de versão ajuda você a reverter para o ativo original posteriormente, se necessário. Para editar um vídeo, acesse os detalhes e clique em **[!UICONTROL Editar vídeo]**. Como alternativa, selecione o ativo, clique em detalhes e clique em ![tesoura](assets/do-not-localize/cut.svg) ícone disponível no painel direito.
-
-Saiba mais sobre o [interface de visualização](navigate-assets-view.md).
 
 ## Pré-requisitos {#prerequisites}
 

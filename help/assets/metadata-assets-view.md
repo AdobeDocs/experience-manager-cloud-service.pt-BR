@@ -4,10 +4,10 @@ description: Saiba como gerenciar metadados na visualização de Ativos. Um melh
 role: User,Leader,Admin,Architect,Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
-source-git-commit: 9823bd8af9fce93c8f21495f720673d8b41595ed
+source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
 workflow-type: tm+mt
 source-wordcount: '1783'
-ht-degree: 82%
+ht-degree: 81%
 
 ---
 
@@ -17,7 +17,7 @@ Os metadados são dados ou descrições sobre os dados. Por exemplo, suas imagen
 
 Os metadados ajudam a categorizar os ativos e são úteis à medida que a quantidade de informações digitais cresce. É possível gerenciar algumas centenas de arquivos com base apenas nos nomes de arquivo, miniaturas e memória. No entanto, essa abordagem não é escalável. Ela é limitada quando o número de pessoas envolvidas e o número de ativos gerenciados aumentam.
 
-Com a adição de metadados, o valor de um ativo digital cresce, porque o ativo se torna,
+Com a adição de metadados, o valor de um ativo digital cresce, pois o ativo se torna:
 
 * Mais acessível — os sistemas e usuários podem encontrá-lo facilmente.
 * Mais fácil de gerenciar — é possível encontrar ativos com o mesmo conjunto de propriedades mais facilmente e realizar alterações neles.
