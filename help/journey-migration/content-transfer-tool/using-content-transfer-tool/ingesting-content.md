@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
 workflow-type: tm+mt
 source-wordcount: '2876'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -69,8 +69,8 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
->title="Estimativa da duração da assimilação"
->abstract="Uma duração aproximada de uma assimilação específica pode ser exibida para fornecer uma noção geral de quanto tempo levará. Existem limitações para sua precisão."
+>title="Duração estimada da assimilação"
+>abstract="Uma duração aproximada de uma assimilação específica pode ser exibida para fornecer uma noção geral de quanto tempo ela levará. Sua precisão é limitada."
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
