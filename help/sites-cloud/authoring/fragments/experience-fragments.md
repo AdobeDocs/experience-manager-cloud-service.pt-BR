@@ -2,10 +2,10 @@
 title: Fragmentos de experiência
 description: Use os Fragmentos de experiência do Adobe Experience Manager as a Cloud Service para tornar suas experiências reutilizáveis e flexíveis.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 0784bfc2928b218a566fdd252fee045ca5ae6b9c
+source-git-commit: e9b9ab2dfd5e1a5b204cbec70ec0a46ebb46f9e9
 workflow-type: tm+mt
-source-wordcount: '2083'
-ht-degree: 95%
+source-wordcount: '2098'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ No Adobe Experience Manager as a Cloud Service, um fragmento de experiência:
 Um fragmento de experiência:
 
 * Faz parte de uma experiência (página).
-* Pode ser usado em várias páginas.
+* Pode ser usado em várias páginas (com base em modelos editáveis).
 * É baseado em um modelo (somente editável) para definir a estrutura e os componentes.
 * Esse modelo é usado para criar a *página raiz* do Fragmento de experiência.
 * É composto de um ou mais componentes, com layout, em um sistema de parágrafos.
@@ -262,6 +262,10 @@ Por exemplo: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 Agora você poderá usar seu fragmento de experiência ao criar suas páginas:
 
 1. Abra qualquer página para edição.
+
+   >[!NOTE]
+   >
+   >A página deve ser baseada em um modelo editável.
 
 1. Crie uma instância do componente Fragmento de experiência, no sistema de parágrafos da página:
 
