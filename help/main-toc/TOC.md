@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ff8d04878da521b55121c9460a9d4b159ec617a4
+source-git-commit: f2a3dd21edc2a3b3f4689c1c09184b3cd4268af1
 workflow-type: tm+mt
-source-wordcount: '4881'
+source-wordcount: '4885'
 ht-degree: 85%
 
 ---
@@ -560,6 +560,7 @@ ht-degree: 85%
       + [Pesquisar e descobrir ativos](/help/assets/search-assets-view.md)
       + [Tarefas de gerenciamento de ativos](/help/assets/manage-organize-assets-view.md)
       + [Editar imagens](/help/assets/edit-images-assets-view.md)
+      + [Exibir e gerenciar representações](/help/assets/renditions.md)
       + [Gerenciar metadados de ativos](/help/assets/metadata-assets-view.md)
       + [Compartilhar ativos](/help/assets/share-links-for-assets-view.md)
       + [Gerenciar coleções](/help/assets/manage-collections-assets-view.md)
