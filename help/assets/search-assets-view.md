@@ -2,10 +2,11 @@
 title: Saiba como pesquisar e descobrir ativos no [!DNL Assets view]?
 description: Saiba como pesquisar e descobrir ativos na visualização do AEM Assets. A eficiente funcionalidade de pesquisa permite descobrir rapidamente o ativo apropriado e ajuda a melhorar a velocidade do conteúdo.
 role: User
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
+source-git-commit: bd3835980fcada20fbfe2551a5c15cc7c69a5c37
 workflow-type: tm+mt
-source-wordcount: '1543'
-ht-degree: 91%
+source-wordcount: '1908'
+ht-degree: 74%
 
 ---
 
@@ -238,6 +239,91 @@ Você pode visualizar o layout e a formatação da primeira página de pesquisa.
 1. Clique em **[!UICONTROL Fechar]** para fechar a janela de visualização.
 
    ![Visualização da primeira página de pesquisa](assets/search-first-preview.gif)
+
+## Pesquisa contextual {#contextual-search}
+
+Também é possível pesquisar ativos disponíveis no repositório definindo solicitações de texto. O Experience Manager Assets transforma automaticamente esses prompts de texto em filtros de pesquisa e exibe os resultados da pesquisa. Você pode visualizar e modificar filtros automáticos usando o Painel Filtros para restringir ainda mais os resultados da pesquisa.
+
+### Acessar pesquisa contextual {#access-contextual-search}
+
+Para acessar a Pesquisa contextual no Experience Manager Assets:
+
+1. Clique em **[!UICONTROL Pesquisar]** no painel esquerdo.
+
+   ![Pesquisa contextual](assets/access-contextual-search.png)
+
+1. Defina o prompt de texto na caixa de texto Pesquisar e clique em **[!UICONTROL Pesquisa contextual]**.
+
+   ![Prompt de texto da Pesquisa contextual](assets/contextual-search-text-prompt.png)
+
+   [!DNL Experience Manager Assets] exibe os resultados da pesquisa.
+
+
+### Filtros compatíveis {#supported-filters}
+
+A Pesquisa contextual é compatível com os seguintes filtros prontos para uso. Baseie seus prompts de texto nesses filtros para visualizar os resultados de pesquisa apropriados.
+
+* Altura da imagem
+
+* Largura da imagem
+
+* Tipo de arquivo: imagem, documento, vídeo ou pasta.
+
+* Tipo MIME: JPG, PNG, TIFF, GIF, MP4, PDF, PPTX, DOCX ou XLSX
+
+* Data de criação
+
+* Data de modificação
+
+* Data de vencimento
+
+* Status do ativo: aprovado, rejeitado ou todos
+
+* Ativos expirados
+
+### Exemplos para os prompts de texto {#text-prompts-examples}
+
+**Exemplo 1**
+
+**Prompt de texto**: imagens criadas este mês.
+
+[!DNL Experience Manager Assets] O aplica os seguintes filtros automaticamente e exibe os resultados da pesquisa:
+
+![Exemplo de pesquisa contextual 1](assets/contextual-search-example1.png)
+
+**Exemplo 2**
+
+**Prompt de texto**: Imagens com pelo menos 200px de altura e 100px de largura com praia e céu claro.
+
+[!DNL Experience Manager Assets] O aplica os seguintes filtros automaticamente e exibe os resultados da pesquisa:
+
+![Exemplo de pesquisa contextual 2](assets/contextual-search-example2.png)
+
+**Exemplo 3**
+
+**Prompt de texto**: Preciso de imagens do céu azul com altura de 1500 e 2500 pixels, criadas no mês passado, que não expiraram e não foram aprovadas.
+
+[!DNL Experience Manager Assets] O aplica os seguintes filtros automaticamente e exibe os resultados da pesquisa:
+
+![Exemplo de pesquisa contextual 3](assets/contextual-search-example3.png)
+
+O vídeo a seguir ilustra o processo completo, desde o acesso à Interface do Usuário de Pesquisa Contextual até a definição de solicitações de texto e a visualização dos resultados da pesquisa.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3428407)
+
+### Desativar pesquisa contextual {#disable-contextual-search}
+
+Os administradores também têm a opção de desativar a Pesquisa contextual para os usuários em sua organização. Para fazer isso, execute as seguintes etapas:
+
+1. Navegue até **[!UICONTROL Configurações]** >; **[!UICONTROL Configurações gerais]**.
+
+1. No [!UICONTROL Pesquisa contextual] seção, desative o **[!UICONTROL Habilitar Pesquisa contextual para sua organização]** Alterne para desativar o recurso Pesquisa contextual para todos os usuários em sua organização.
+
+### Feedback da pesquisa contextual {#contextual-search-feedback}
+
+Se precisar fornecer feedback sobre o recurso Pesquisa contextual, clique em ![Ícone de Pesquisa contextual](assets/do-not-localize/contextual-search-icon.png)  e clique no ícone Feedback. Selecione o tipo de feedback, especifique o assunto e a descrição e clique em **[!UICONTROL Enviar]**.
+
+![Feedback da pesquisa contextual](assets/contextual-search-feedback.png)
 
 ## Próximas etapas {#next-steps}
 
