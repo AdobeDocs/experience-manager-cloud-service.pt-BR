@@ -2,9 +2,9 @@
 title: Regras de filtro de tráfego incluindo regras WAF
 description: Configuração das regras de filtro de tráfego incluindo as regras do WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: 3a79de1cccdec1de4902b234dac3120efefdbce8
+source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
 workflow-type: tm+mt
-source-wordcount: '3669'
+source-wordcount: '3788'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Uma subcategoria de regras de filtro de tráfego exige uma licença de Seguranç
 
 As regras de filtro de tráfego podem ser implantadas por meio dos pipelines de configuração do Cloud Manager para desenvolvimento, preparo e tipos de ambiente de produção em programas de produção (que não são de sandbox). O suporte a RDEs virá no futuro.
 
-[Seguir um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) para criar rapidamente conhecimentos concretos sobre esse recurso.
+[Seguir um tutorial](#tutorial) para criar rapidamente conhecimentos concretos sobre esse recurso.
 
 >[!NOTE]
 >Interessado em outras opções para configurar o tráfego na CDN, incluindo modificação da solicitação/resposta, declaração de redirecionamentos e proxy para uma origem não-AEM? [Saiba como e experimente](/help/implementing/dispatcher/cdn-configuring-traffic.md) ingressando no programa de adoção antecipada.
@@ -415,6 +415,8 @@ As regras de limite de taxa não podem fazer referência aos sinalizadores WAF. 
 
 Os limites de taxa são calculados por CDN POP. Como exemplo, suponha que os POPs em Montreal, Miami e Dublin tenham taxas de tráfego de 80, 90 e 120 solicitações por segundo, respectivamente, e que a regra de limite de taxa seja definida como um limite de 100. Nesse caso, apenas o tráfego com destino a Dublim seria limitado em termos tarifários.
 
+Os limites de taxa são avaliados com base no tráfego que atinge a borda, no tráfego que atinge a borda ou no número de erros.
+
 ### Estrutura rateLimit {#ratelimit-structure}
 
 | **Propriedade** | **Tipo** | **Padrão** | **SIGNIFICADO** |
@@ -422,6 +424,7 @@ Os limites de taxa são calculados por CDN POP. Como exemplo, suponha que os POP
 | limite | número inteiro de 10 a 10000 | obrigatório | Taxa de solicitações (por CDN POP) em solicitações por segundo para as quais a regra é acionada. |
 | janela | enumeração de inteiros: 1, 10 ou 60 | 10 | Janela de amostragem em segundos para a qual a taxa de solicitação é calculada. A precisão dos contadores dependerá do tamanho da janela (maior precisão da janela). Por exemplo, pode-se esperar 50% de precisão para a janela de 1 segundo e 90% de precisão para a janela de 60 segundos. |
 | penalidade | número inteiro de 60 a 3600 | 300 (5 minutos) | Um período em segundos para o qual as solicitações correspondentes são bloqueadas (arredondado para o minuto mais próximo). |
+| contagem | all, fetch, error | todas | avalie com base no tráfego de borda (todos), no tráfego de origem (busca) ou no número de erros. |
 | groupBy | matriz[Getter] | nenhum | o contador do limitador de taxa será agregado por um conjunto de propriedades de solicitação (por exemplo, clientIp). |
 
 
@@ -447,6 +450,7 @@ data:
         limit: 60
         window: 10
         penalty: 300
+        count: all
         groupBy:
           - reqProperty: clientIp
       action: block
@@ -468,7 +472,7 @@ data:
         when: { reqProperty: path, equals: /critical/resource }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60 }
+        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
 ```
 
 ## Alertas de regras de filtro de tráfego {#traffic-filter-rules-alerts}
@@ -615,7 +619,7 @@ O Adobe fornece um mecanismo para baixar ferramentas de painel no computador a f
 
 As ferramentas do painel de controle podem ser clonadas diretamente do [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Repositório Github.
 
-[Veja o tutorial](#tutorial) para obter instruções concretas sobre como usar as ferramentas do painel.
+[Tutorials](#tutorial) estão disponíveis para obter instruções concretas sobre como usar as ferramentas do painel.
 
 ## Regras de início recomendadas {#recommended-starter-rules}
 
@@ -700,9 +704,13 @@ data:
           - CMDEXE
 ```
 
-## Tutorial {#tutorial}
+## Tutoriais {#tutorial}
 
-[Trabalhar em um tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) para obter conhecimento prático e experiência em torno das regras de filtro de tráfego.
+Dois tutoriais estão disponíveis.
+
+### Proteção de sites com regras de filtro de tráfego (incluindo regras WAF)
+
+[Trabalhar em um tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html) adquirir conhecimentos e experiência gerais e práticos sobre as regras de filtro de tráfego, incluindo as regras WAF.
 
 O tutorial o guiará por:
 
@@ -711,3 +719,16 @@ O tutorial o guiará por:
 * Regras de filtro de tráfego declarativo, incluindo regras WAF
 * Análise de resultados com ferramentas de painel
 * Práticas recomendadas
+
+### Bloqueio de ataques de DoS e DDoS usando regras de filtro de tráfego
+
+[Detalhamento sobre como bloquear](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Ataques de Negação de serviço (DoS) e Negação de serviço distribuída (DDoS) usando regras de filtro de tráfego de limite de taxa e outras estratégias.
+
+O tutorial o guiará por:
+
+* noções básicas sobre proteção
+* recebendo alertas quando os limites de taxa são excedidos
+* analisar padrões de tráfego usando ferramentas de painel de controle para configurar limites para regras de filtro de tráfego de limite de taxa
+
+
+
