@@ -2,18 +2,19 @@
 title: Editar vídeos
 description: Editar vídeos usando [!DNL Adobe Express] opções viabilizadas pelo e salvar vídeos atualizados como versões.
 role: User
-source-git-commit: ed5303bab864e21100cf6e52e130b4bd17bfcb45
+exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
+source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 19%
+source-wordcount: '779'
+ht-degree: 16%
 
 ---
 
 # Editar vídeos no [!DNL Assets Essentials] {#edit-videos}
 
-Transformar um vídeo em um tamanho perfeito é fácil usando o incorporado [!DNL Adobe Express] ações rápidas. Ações rápidas no [!DNL Assets Essentials] powered by [!DNL Adobe Express] O fornece opções de edição de vídeo intuitivas, incluindo cortar vídeo, redimensionar vídeo, aparar vídeo e converter vídeo em GIF.
+Criar variações de conteúdo de vídeo é fácil para usuários do Assets com o [!DNL Adobe Express] ações rápidas para vídeo. Ações rápidas no [!DNL Assets Essentials] powered by [!DNL Adobe Express] O fornece opções de edição de vídeo intuitivas, incluindo cortar vídeo, redimensionar vídeo, aparar vídeo e converter vídeo em GIF.
 
-Após editar um vídeo, você pode salvá-lo como uma nova versão. O controle de versão ajuda você a reverter para o ativo original posteriormente, se necessário. Para editar um vídeo, acesse os detalhes e clique em **[!UICONTROL Editar vídeo]**. Como alternativa, selecione o ativo, clique em detalhes e clique em ![tesoura](assets/do-not-localize/cut.svg) ícone disponível no painel direito.
+Para editar um vídeo, acesse os detalhes e clique em [!UICONTROL Editar vídeo]. Como alternativa, selecione o ativo, clique em detalhes e clique em ![tesoura](assets/do-not-localize/cut.svg) ícone disponível no painel direito. Após editar um vídeo, você pode salvá-lo como uma nova versão ou como um novo ativo.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -38,7 +39,7 @@ Você pode eliminar partes indesejadas do vídeo usando recursos incorporados [!
 
 ### Redimensionar vídeo {#resize-video-using-express}
 
-Redimensionar um vídeo para um tamanho específico é um caso de uso comum. [!DNL Assets Essentials] O permite redimensionar rapidamente o vídeo para ajustá-lo às dimensões comuns, fornecendo novas resoluções pré-calculadas para tamanhos específicos. Para redimensionar o vídeo usando [!DNL Assets Essentials], siga as etapas abaixo:
+O conteúdo final do vídeo no DAM geralmente precisa ser redimensionado para distribuição em canais específicos. [!DNL Assets Essentials] O permite redimensionar facilmente o vídeo para ajustá-lo às dimensões exigidas pelos canais sociais comuns, além de redimensionar para resoluções personalizadas. Para redimensionar o vídeo usando [!DNL Assets Essentials], execute as etapas abaixo:
 
 1. Selecione um vídeo e clique em **[!UICONTROL Editar]**.
 2. Clique em **[!UICONTROL Redimensionar vídeo]** nas ações rápidas disponíveis no painel esquerdo.
@@ -52,7 +53,7 @@ Seu vídeo redimensionado está disponível para download. É possível salvar o
 
 ### Cortar vídeo {#trim-video-using-express}
 
-Um cortador de vídeo rápido no [!DNL Assets Essentials] powered by [!DNL Adobe Express] permite cortar vídeos sem esforço. Execute as etapas abaixo:
+Se precisar usar um clipe de um vídeo maior, você pode usar o **[!UICONTROL Cortar vídeo]** para selecionar e aparar uma seção do vídeo. Execute as etapas abaixo:
 
 1. Selecione um vídeo e clique em **[!UICONTROL Editar]**.
 2. Clique em **[!UICONTROL Cortar vídeo]** nas ações rápidas disponíveis no painel esquerdo.
@@ -80,11 +81,11 @@ O vídeo está disponível em formato GIF para download. É possível salvar o a
 
 ## Limitações {#limitations-video-adobe-express}
 
-* Somente o tipo de vídeo MP4 é compatível.
+* Somente vídeos no formato MP4 são suportados para edição.
 
-* Tamanho de arquivo máximo aceito: 200 MB
+* O tamanho máximo de arquivo de origem com suporte é 200 MB.
 
-* As dimensões mínima e máxima do vídeo são 46 pixels e 3840 pixels, respectivamente.
+* Os vídeos compatíveis têm mais de 46 pixels e menos de 3840 pixels em qualquer lado.
 
 * Os navegadores da Web compatíveis são Google Chrome, Firefox, Safari e Edge.
 
