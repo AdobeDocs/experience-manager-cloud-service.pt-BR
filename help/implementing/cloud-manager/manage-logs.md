@@ -2,10 +2,10 @@
 title: Acesso e gerenciamento de registros
 description: Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 178af74512e74ff401588b68c73fa4661acec704
+source-git-commit: fa28d2fa83fb35fe80692c5f94661fa4c32a02a9
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 68%
+source-wordcount: '352'
+ht-degree: 67%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 68%
 Saiba como acessar e gerenciar logs para auxiliar seu processo de desenvolvimento no AEM as a Cloud Service.
 
 Você pode acessar uma lista de arquivos de log disponíveis para o ambiente selecionado usando o cartão **Ambientes** na página **Visão geral** ou na página Detalhes do ambiente.
+
+Os registros são retidos por sete dias.
 
 ## Download de logs {#download-logs}
 
