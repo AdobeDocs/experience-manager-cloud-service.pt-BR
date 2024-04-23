@@ -2,9 +2,9 @@
 title: Regras de filtro de tráfego incluindo regras WAF
 description: Configuração das regras de filtro de tráfego incluindo as regras do WAF (Web Application Firewall)
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: d210fed56667b307a7a816fcc4e52781dc3a792d
+source-git-commit: d118cd57370a472dfe752c6ce7e332338606b898
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3817'
 ht-degree: 0%
 
 ---
@@ -142,7 +142,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -251,6 +254,7 @@ A variável `wafFlags` que pode ser usada nas regras de filtro de tráfego WAF l
 | SQLI | Injeção de SQL | A Injeção de SQL é a tentativa de obter acesso a um aplicativo ou obter informações privilegiadas executando consultas arbitrárias ao banco de dados. |
 | BACKDOOR | Backdoor | Um sinal backdoor é uma solicitação que tenta determinar se um arquivo backdoor comum está presente no sistema. |
 | CMDEXE | Execução de comando | Execução de Comando é a tentativa de obter controle ou danificar um sistema alvo através de comandos arbitrários do sistema por meio da entrada do usuário. |
+| CMDEXE-NO-BIN | Execução de Comando exceto em `/bin/` | Fornecer o mesmo nível de proteção que `CMDEXE` ao desabilitar o falso-positivo em `/bin` devido à arquitetura AEM. |
 | XSS | Criação de script entre sites | Cross-Site Scripting é a tentativa de sequestrar a conta de um usuário ou a sessão de navegação na Web por meio de um código JavaScript mal-intencionado. |
 | PASSAGEM | Diretório de passagem | O Diretory Traversal é a tentativa de navegar pelas pastas privilegiadas em todo o sistema, na esperança de obter informações confidenciais. |
 | USERAGENT | Ferramentas de ataque | Ferramentas de ataque é o uso de software automatizado para identificar vulnerabilidades de segurança ou para tentar explorar uma vulnerabilidade detectada. |
@@ -330,7 +334,7 @@ data:
 
 **Exemplo 3**
 
-Essa regra bloqueia solicitações que contêm o parâmetro de consulta `foo`, mas permite todas as solicitações provenientes do IP 192.168.1.1:
+Essa regra bloqueia solicitações na publicação que contêm o parâmetro de consulta `foo`, mas permite todas as solicitações provenientes do IP 192.168.1.1:
 
 ```
 kind: "CDN"
@@ -341,7 +345,10 @@ data:
   trafficFilters:
     rules:
       - name: "block-request-that-contains-query-parameter-foo"
-        when: { queryParam: url-param, equals: foo }
+        when:
+          allOf:
+            - { queryParam: url-param, equals: foo }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "allow-all-requests-from-ip"
@@ -352,7 +359,7 @@ data:
 
 **Exemplo 4**
 
-Essa regra bloqueia solicitações de caminho `/block-me`, e bloqueia cada solicitação que corresponda a um `SQLI` ou `XSS` padrão. Este exemplo inclui regras de filtro de tráfego WAF, que fazem referência a `SQLI` e `XSS` [Sinalizadores do WAF](#waf-flags-list)e, portanto, requer uma licença separada.
+Essa regra bloqueia solicitações de caminho `/block-me` ao publicar, e bloqueia cada solicitação que corresponda a um `SQLI` ou `XSS` padrão. Este exemplo inclui regras de filtro de tráfego WAF, que fazem referência a `SQLI` e `XSS` [Sinalizadores do WAF](#waf-flags-list)e, portanto, requer uma licença separada.
 
 ```
 kind: "CDN"
@@ -363,7 +370,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
       - name: "Enable-SQL-Injection-and-XSS-waf-rules-globally"
@@ -415,7 +425,7 @@ As regras de limite de taxa não podem fazer referência aos sinalizadores WAF. 
 
 Os limites de taxa são calculados por CDN POP. Como exemplo, suponha que os POPs em Montreal, Miami e Dublin tenham taxas de tráfego de 80, 90 e 120 solicitações por segundo, respectivamente, e que a regra de limite de taxa seja definida como um limite de 100. Nesse caso, apenas o tráfego com destino a Dublim seria limitado em termos tarifários.
 
-Os limites de taxa são avaliados com base no tráfego que atinge a borda, no tráfego que atinge a borda ou no número de erros.
+Os limites de taxa são avaliados com base no tráfego que atinge a borda, no tráfego que atinge a origem ou no número de erros.
 
 ### Estrutura rateLimit {#ratelimit-structure}
 
@@ -424,7 +434,7 @@ Os limites de taxa são avaliados com base no tráfego que atinge a borda, no tr
 | limite | número inteiro de 10 a 10000 | obrigatório | Taxa de solicitações (por CDN POP) em solicitações por segundo para as quais a regra é acionada. |
 | janela | enumeração de inteiros: 1, 10 ou 60 | 10 | Janela de amostragem em segundos para a qual a taxa de solicitação é calculada. A precisão dos contadores dependerá do tamanho da janela (maior precisão da janela). Por exemplo, pode-se esperar 50% de precisão para a janela de 1 segundo e 90% de precisão para a janela de 60 segundos. |
 | penalidade | número inteiro de 60 a 3600 | 300 (5 minutos) | Um período em segundos para o qual as solicitações correspondentes são bloqueadas (arredondado para o minuto mais próximo). |
-| contagem | all, fetch, error | todas | avalie com base no tráfego de borda (todos), no tráfego de origem (busca) ou no número de erros. |
+| contagem | tudo, buscas, erros | todas | avalie com base no tráfego de borda (todos), no tráfego de origem (buscas) ou no número de erros (erros). |
 | groupBy | matriz[Getter] | nenhum | o contador do limitador de taxa será agregado por um conjunto de propriedades de solicitação (por exemplo, clientIp). |
 
 
@@ -458,7 +468,7 @@ data:
 
 **Exemplo 2**
 
-Bloquear solicitações no caminho /crítico/recurso para 60s quando ele exceder uma média de 100 req/s (por POP CDN) nos últimos 60 segundos:
+Bloqueie solicitações no caminho /crítico/recurso para 60s quando exceder uma média de 100 solicitações de origem por segundo (por POP CDN) em uma janela de tempo de 10 segundos:
 
 ```
 kind: "CDN"
@@ -469,10 +479,13 @@ data:
   trafficFilters:
     rules:
       - name: rate-limit-example
-        when: { reqProperty: path, equals: /critical/resource }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /critical/resource }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
-        rateLimit: { limit: 100, window: 60, penalty: 60, count: all }
+        rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
 
 ## Alertas de regras de filtro de tráfego {#traffic-filter-rules-alerts}
@@ -497,7 +510,10 @@ data:
   trafficFilters:
     rules:
       - name: "path-rule"
-        when: { reqProperty: path, equals: /block-me }
+        when:
+          allOf:
+            - { reqProperty: path, equals: /block-me }
+            - { reqProperty: tier, equals: publish }
         action:
           type: block
           experimental_alert: true
@@ -633,14 +649,28 @@ metadata:
 data:
   trafficFilters:
     rules:
-    #  Block client for 5m when it exceeds 100 req/sec on a time window of 1sec
-    - name: limit-requests-client-ip
+    #  Block client for 5m when it exceeds an average of 100 req/sec to origin on a time window of 10sec
+    - name: limit-origin-requests-client-ip
       when:
-        reqProperty: path
-        like: '*'
+        reqProperty: tier
+        equals: 'publish'
       rateLimit:
         limit: 100
-        window: 1
+        window: 10
+        count: fetches
+        penalty: 300
+        groupBy:
+          - reqProperty: clientIp
+      action: log
+    #  Block client for 5m when it exceeds an average of 500 req/sec on a time window of 10sec
+    - name: limit-requests-client-ip
+      when:
+        reqProperty: tier
+        equals: 'publish'
+      rateLimit:
+        limit: 500
+        window: 10
+        count: all
         penalty: 300
         groupBy:
           - reqProperty: clientIp
@@ -649,7 +679,7 @@ data:
     - name: block-ofac-countries
       when:
         allOf:
-          - { reqProperty: tier, equals: publish }
+          - { reqProperty: tier, in: ["author", "publish"] }
           - reqProperty: clientCountry
             in:
               - SY
@@ -669,39 +699,23 @@ data:
     - name: block-waf-flags-globally
       when:
         reqProperty: tier
-        matches: "author|publish"
+        in: ["author", "publish"]
       action:
         type: log
         wafFlags:
+          - TRAVERSAL
+          - CMDEXE-NO-BIN
+          - XSS
+          - LOG4J-JNDI
+          - BACKDOOR
+          - USERAGENT
+          - SQLI
           - SANS
           - TORNODE
           - NOUA
           - SCANNER
-          - USERAGENT
           - PRIVATEFILE
-          - ABNORMALPATH
-          - TRAVERSAL
           - NULLBYTE
-          - BACKDOOR
-          - LOG4J-JNDI
-          - SQLI
-          - XSS
-          - CODEINJECTION
-          - CMDEXE
-          - NO-CONTENT-TYPE
-          - UTF8
-    # Disable protection against CMDEXE on /bin (only works if WAF is licensed enabled for your environment)
-    - name: allow-cdmexe-on-root-bin
-      when:
-        allOf:
-          - reqProperty: tier
-            matches: "author|publish"
-          - reqProperty: path
-            matches: "^/bin/.*"
-      action:
-        type: allow
-        wafFlags:
-          - CMDEXE
 ```
 
 ## Tutoriais {#tutorial}
