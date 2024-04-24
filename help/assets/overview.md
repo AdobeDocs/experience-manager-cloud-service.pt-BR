@@ -1,19 +1,19 @@
 ---
-title: Introdução ao Assets as a [!DNL Cloud Service]
-description: Aprenda a usar e administrar o Experience Manager Assets as a Cloud Service.
+title: Adobe Digital Asset Management (DAM) usando AEM
+description: Entenda como usar e administrar o Adobe Digital Asset Management (DAM) usando o Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: d91254b52c257a3758da200a2c74b736ca457884
+source-git-commit: d66d645dd039189b34e6e3c4d937b82a14b8b801
 workflow-type: tm+mt
-source-wordcount: '892'
-ht-degree: 86%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# Introdução ao Assets as a [!DNL Cloud Service] {#assets-cloud-service-introduction}
+# Introdução aos Assets as a [!DNL Cloud Service] para gerenciamento de ativos digitais no AEM {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -23,13 +23,13 @@ A assimilação simultânea de muitos ativos ou ativos complexos é uma tarefa q
 
 As empresas exigem suporte para uma grande variedade de formatos de arquivo e resoluções de conteúdo para uso em multidispositivos, geografia cruzada e multilíngue. Os requisitos de processamento e armazenamento de ativos exigem recursos e capacidades que podem sobrecarregar uma solução tradicional. Por vezes, as limitações técnicas do processamento de ativos não produzem os resultados desejados e, em outras ocasiões, o custo de armazenamento constitui um entrave às margens de lucro.
 
-Para começar, entenda os [benefícios de uma oferta nativa em nuvem](#solution-benefits). Confira as notáveis [alterações no Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) que também afetam o Experience Manager Assets, seguida das significantes [alterações no Assets](/help/assets/assets-cloud-changes.md).
+Para começar, entenda a [benefícios de uma oferta nativa em nuvem](#solution-benefits) para o Gerenciamento de ativos digitais. Confira as notáveis [alterações no Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) que também afetam o Experience Manager Assets, seguida das significantes [alterações no Assets](/help/assets/assets-cloud-changes.md).
 
 Leia para conhecer os [detalhes dos novos recursos do Assets](#whats-new-assets) e [problemas conhecidos](/help/release-notes/maintenance/latest.md). Veja uma lista de [funcionalidades obsoletas ou removidas](/help/release-notes/deprecated-removed-features.md) para saber o que foi removido nesta versão. Finalmente, entenda os termos do Experience Manager com a ajuda desse [glossário](/help/overview/terminology.md).
 
 ## Benefícios da solução {#solution-benefits}
 
-Estes são os principais benefícios do Assets as a [!DNL Cloud Service]. Para saber mais, consulte a [visão geral do Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
+A seguir estão os principais benefícios do Assets as a [!DNL Cloud Service] para o Gerenciamento de ativos digitais. Para saber mais, consulte a [visão geral do Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
 
 * **Serviços em nuvem modernos para processamento de ativos**: Os novos microsserviços de ativos são um serviço de processamento de ativos baseado em nuvem, escalável, confiável e sem complicações.
 * **Altamente escalável**: Escalabilidade elástica em todos os tipos de implantações. Recursos praticamente ilimitados que estão disponíveis sob demanda, conforme e quando necessário. Economiza o custo do over-design em comparação com um sistema tradicional.
@@ -38,13 +38,13 @@ Estes são os principais benefícios do Assets as a [!DNL Cloud Service]. Para s
 * **Monitoramento constante**: O monitoramento do sistema é automatizado e as verificações e acionadores integrados ajudam a manter o desempenho, a disponibilidade e a robustez geral.
 * **Implantações sem complicações**: O Experience Manager nas operações na nuvem é totalmente automatizado e não requer intervenção manual. Para implantações automatizadas, o componente do Cloud Manager (CM) automatiza a criação de imagens implantáveis do Docker que contêm seu código personalizado.
 
-## Experiências disponíveis com base em persona {#persona-based-experiences}
+## Experiências personalizadas disponíveis para o Gerenciamento de ativos digitais {#persona-based-experiences}
 
 A Adobe oferece uma solução robusta de gerenciamento de ativos digitais (DAM) para você aproveitar ao máximo seus ativos digitais. O Adobe Experience Manager Assets tem duas experiências separadas que usam o mesmo repositório do Cloud Services:
 
-* **Visualização de admin**: a interface existente do Assets as a Cloud Service. Use a visualização de admin para todos os recursos avançados de gerenciamento de ativos, incluindo integrações, fluxos de trabalho, automação de conteúdo, publicação, entre outras.
+* **Visualização de admin**: a interface existente do Assets as a Cloud Service. Use a Exibição de administrador para todos os recursos avançados de Gerenciamento de ativos digitais, incluindo integrações, fluxos de trabalho, automação de conteúdo, publicação e muito mais.
 
-* **Visualização de ativos**: a experiência leve de gerenciamento de ativos da Adobe para armazenar, gerenciar, descobrir e usar ativos digitais. Interface simplificada com recursos essenciais de gerenciamento de ativos. Desenvolvida para usuários leves de DAM, com foco no upload, gerenciamento de metadados, pesquisa, download e compartilhamento.
+* **Visualização de ativos**: a experiência leve de gerenciamento de ativos da Adobe para armazenar, gerenciar, descobrir e usar ativos digitais. Interface do usuário simplificada com recursos essenciais de gerenciamento de ativos digitais. Desenvolvida para usuários leves de DAM, com foco no upload, gerenciamento de metadados, pesquisa, download e compartilhamento.
 
 Usuários que possuem acesso à visualização de admin também podem acessar a visualização de ativos. A visualização de ativos oferece uma interface simplificada que facilita o gerenciamento, a descoberta e a distribuição de seus ativos digitais. Um extenso conjunto de usuários com diferentes funções, incluindo equipes criativas, de marketing e de linha de negócios, pode colaborar em ativos e acessar os ativos corretos e aprovados quando e onde for necessário. Muitos usuários casuais de DAM preferem a visualização de ativos, visto que ela contém apenas um subconjunto de recursos. A experiência é direcionada para consumidores de ativos criativos do tipo somente leitura e que não exigem muito do DAM.
 
