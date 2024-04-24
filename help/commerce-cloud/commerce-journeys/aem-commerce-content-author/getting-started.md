@@ -2,9 +2,9 @@
 title: Introdução à criação da CIF
 description: Introdução à criação de CIF.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 6f27c968c347e6b2be8c9bfcf9bb69e531d10ff9
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '781'
 ht-degree: 2%
 
 ---
@@ -15,21 +15,21 @@ Saiba mais sobre a criação do CIF no Adobe Experience Manager (AEM).
 
 ## A história até agora {#story-so-far}
 
-No documento anterior desta jornada de Conteúdo e Comércio do AEM, [Saiba mais sobre o conteúdo e o comércio do AEM](/help/commerce-cloud/introduction.md)No entanto, você aprendeu a teoria básica e os conceitos de CMS headless e AEM Content and Commerce.
+No documento anterior deste Conteúdo AEM e jornada do Commerce, [Saiba mais sobre o conteúdo do AEM e o Commerce](/help/commerce-cloud/introduction.md)No entanto, você aprendeu a teoria e os conceitos básicos de conteúdo headless CMS e AEM e Commerce.
 
 Este artigo se baseia nesses fundamentos.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como usar o CIF para criação específica de conteúdo e comércio. Depois de ler, você deverá:
+Este documento ajuda você a entender como usar o CIF para criação específica de conteúdo e Commerce. Depois de ler, você deverá:
 
-* Entenda os conceitos de criação de CIF usando o Editor universal
+* Entenda os conceitos de criação de CIF usando o Editor de páginas no AEM
 * Como acessar dados do catálogo de produtos no AEM usando seletores de produto e categoria
 * Como acessar dados de conteúdo e comércio usando o cockpit do produto e o AEM Omnisearch
 
-## Criação de CIF no editor universal {#cif-authoring}
+## Criação de CIF no Editor de páginas do AEM {#cif-authoring}
 
-O CIF estende o Editor universal com recursos para acessar os dados do produto em tempo real sem sair do contexto:
+O CIF estende o Editor de páginas no AEM com recursos para acessar os dados do produto em tempo real sem sair do contexto:
 
 Abra o painel lateral e selecione &quot;Produtos&quot; na lista suspensa.
 ![Selecionar tipo de produto](assets/asset-finder-overview.png)
@@ -95,7 +95,7 @@ O Omnisearch executa uma pesquisa de texto completo no back-end de comércio par
 
 Agora que concluiu esta parte da jornada, você deve:
 
-* Entenda os conceitos de criação de CIF usando o Editor universal
+* Entenda os conceitos de criação de CIF usando o Editor de páginas
 * Como acessar o catálogo de produtos no AEM usando seletores de produto e categoria
 * Como acessar dados de conteúdo e comércio usando o cockpit do produto e o AEM Omnisearch
 

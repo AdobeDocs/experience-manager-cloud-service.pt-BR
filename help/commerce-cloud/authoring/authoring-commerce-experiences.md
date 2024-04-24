@@ -1,15 +1,15 @@
 ---
-title: Criação de experiências de comércio
+title: Criação de experiências no Commerce
 description: Saiba como criar e criar experiências relacionadas ao comércio com eficiência obtendo acesso aos dados e ao conteúdo do produto sem sair do contexto.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 77350822c261371e6eda1fd10d02dcd905a5dd6e
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 1%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
-# Criação de experiências de comércio {#authoring-commerce-experiences}
+# Criação de experiências no Commerce {#authoring-commerce-experiences}
 
 ## Visão geral {#overview}
 
@@ -51,9 +51,9 @@ A caixa de diálogo de configuração deste componente requer categorias 1 : n. 
 
 ![Componente Carrossel com seleção](../assets/authoring/carousel_component_with_selection.png)
 
-## Editor universal {#universal-editor}
+## Editor de página {#page-editor}
 
-O Universal Editor é estendido com recursos para acessar os dados do produto em tempo real e o conteúdo do produto associado.
+O Editor de páginas no AEM é estendido com recursos para acessar os dados do produto em tempo real e o conteúdo do produto associado.
 
 ### Acesso aos dados do produto {#access-product-data}
 
@@ -65,7 +65,7 @@ Analogamente aos ativos, os produtos podem ser colocados em uma página (o que c
 
 ### Adição de links em campos de texto usando o RTE {#rte}
 
-Páginas de catálogo de produtos CIF são páginas virtuais que são renderizadas em tempo real. Assim, não é possível incorporar hiperlinks como para páginas AEM comuns. O CIF adiciona uma nova ação &quot;Links de comércio&quot; ao RTE (Rich Text Editor, Editor de Rich Text). Essa ação funciona exatamente como a ação normal de &quot;Hiperlink&quot;, mas permite que os autores selecionem um produto ou categoria usando os seletores.
+Páginas de catálogo de produtos CIF são páginas virtuais que são renderizadas em tempo real. Assim, não é possível incorporar hiperlinks como para páginas AEM comuns. O CIF adiciona uma nova ação &quot;Links da Commerce&quot; ao RTE (Rich Text Editor, Editor de Rich Text). Essa ação funciona exatamente como a ação normal de &quot;Hiperlink&quot;, mas permite que os autores selecionem um produto ou categoria usando os seletores.
 
 ![RTE](../assets/authoring/RTE.png)
 
@@ -77,7 +77,7 @@ Isso cria um link de espaço reservado que é substituído por um link real quan
 
 ### Acesso ao conteúdo de produto associado {#associated-content}
 
-Se o Editor universal reconhecer produtos 1:n em uma página, o painel lateral mostrará automaticamente a guia &quot;Conteúdo de comércio associado&quot;. Essa guia permite que os autores acessem rapidamente o conteúdo de AEM que foi marcado com o produto (Consulte [enriquecer os dados do produto com o conteúdo de AEM associado](./enrich-product-associated-content.md) para obter mais informações). Essa guia oferece listas suspensas para filtrar por tipo de conteúdo e produtos específicos se vários produtos estiverem na página. O uso do conteúdo funciona exatamente como o uso do conteúdo da guia &quot;Ativos&quot;.
+Se o Editor reconhecer produtos 1:n em uma página, o painel lateral mostrará automaticamente a guia &quot;Conteúdo do Commerce associado&quot;. Essa guia permite que os autores acessem rapidamente o conteúdo de AEM que foi marcado com o produto (Consulte [enriquecer os dados do produto com o conteúdo de AEM associado](./enrich-product-associated-content.md) para obter mais informações). Essa guia oferece listas suspensas para filtrar por tipo de conteúdo e produtos específicos se vários produtos estiverem na página. O uso do conteúdo funciona exatamente como o uso do conteúdo da guia &quot;Ativos&quot;.
 
 ![Painel lateral de dados do produto](../assets/authoring/associated-commerce-content-tab.png)
 
@@ -85,7 +85,7 @@ Se o Editor universal reconhecer produtos 1:n em uma página, o painel lateral m
 
 O modo Timewarp no editor permite que os autores visualizem e naveguem em uma experiência de AEM com dados de catálogo de produtos preparados com base na data do Timewarp.
 
-![Timewarp  ](../assets/authoring/timewarp.png)
+![Timewarp](../assets/authoring/timewarp.png)
 
 Os componentes mostrarão um indicador visual se a data usada for preparada.
 
