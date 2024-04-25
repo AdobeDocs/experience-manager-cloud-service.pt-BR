@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 3312aa270c05e506d12ed8a5c1360154bb02b350
 workflow-type: tm+mt
-source-wordcount: '6701'
+source-wordcount: '6700'
 ht-degree: 6%
 
 ---
@@ -591,7 +591,7 @@ Para alterar a configuração das Tags de Experience Platform (incluindo Proprie
 
 As tags Experience Platform podem ter vários ambientes de desenvolvimento, um ambiente de preparo e um ambiente de produção. Por padrão, a configuração da nuvem de tags de Experience Platform no Experience Manager aponta o nó do autor de Experience Manager para o ambiente de preparo das tags da plataforma. O nó Publicação do Experience Manager aponta para o ambiente de Produção das Tags do Experience Platform. Essa organização significa que, com as configurações padrão de Experience Manager, é necessário publicar a biblioteca de tags Experience Platform no ambiente de preparo. Isso permite que você o use no autor do Experience Manager. Em seguida, você pode publicá-lo no ambiente de Produção para que ele possa ser usado na publicação do Experience Manager.
 
-Consulte [Ambientes](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) para obter mais informações sobre ambientes de Tags do Experience Platform.
+Consulte [Ambientes](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR) para obter mais informações sobre ambientes de Tags do Experience Platform.
 
 A publicação de uma biblioteca envolve estas duas etapas:
 
@@ -694,7 +694,7 @@ A configuração de Experience Manager consiste nas duas etapas principais a seg
 
 1. Em uma nova guia do navegador, navegue até o [Console do Adobe Developer](https://developer.adobe.com/console/integrations).
 
-1. No **[!UICONTROL Integrações do console do Adobe I/O]** próximo ao canto superior direito, selecione **[!UICONTROL Nova integração]**.
+1. No **[!UICONTROL Integrações do console do Adobe Developer]** próximo ao canto superior direito, selecione **[!UICONTROL Nova integração]**.
 1. No **[!UICONTROL Criar uma nova integração]** , certifique-se de que **[!UICONTROL Acessar uma API]** for selecionada e, em seguida, selecione **[!UICONTROL Continuar]**.
 
 ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
