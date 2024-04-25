@@ -1,11 +1,11 @@
 ---
 title: Suporte IMS do Adobe Experience Manager as a Cloud Service
-description: Suporte do sistema de gestão de imagens para o Adobe Experience Manager as a Cloud Service
+description: Suporte do Sistema de gerenciamento de imagens para o Adobe Experience Manager as a Cloud Service.
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
 workflow-type: tm+mt
-source-wordcount: '1917'
-ht-degree: 99%
+source-wordcount: '1922'
+ht-degree: 91%
 
 ---
 
@@ -44,23 +44,23 @@ O fluxo de logon do usuário é mostrado abaixo. O usuário será redirecionado 
 
 A integração do cliente ao Adobe Admin Console é um pré-requisito para o uso do Adobe IMS para autenticação do AEM.
 
-Como primeira etapa, os clientes precisam ter uma organização provisionada no Adobe IMS. Os clientes do Adobe Enterprise são representados como Organizações IMS no [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html). Essa área é o portal usado pelos clientes da Adobe para gerenciar os direitos de seus produtos para usuários e grupos.
+Como primeira etapa, os clientes devem ter uma Organização que seja provisionada no Adobe IMS. Os clientes do Adobe Enterprise são representados como Organizações IMS no [Adobe Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html). Essa área é o portal usado pelos clientes da Adobe para gerenciar os direitos de seus produtos para usuários e grupos.
 
-Os clientes do AEM já devem ter uma Organização provisionada e, como parte do provisionamento IMS, as instâncias do cliente serão disponibilizadas no Admin Console para gerenciar os direitos e o acesso do usuário.
+Os clientes do AEM já devem ter uma Organização provisionada e, como parte do provisionamento do IMS, as instâncias do cliente são disponibilizadas no Admin Console para gerenciar os direitos e o acesso do usuário.
 
 Depois que um cliente passa a existir como uma Organização IMS, será necessário configurar o sistema conforme resumido a seguir:
 
 ![Integração do IMS](/help/security/assets/ims2.png)
 
-1. O Administrador do sistema designado recebe um convite para fazer logon no Cloud Manager. Depois de fazer logon no Cloud Manager, os administradores do sistema podem optar por provisionar programas e ambientes do AEM ou navegar até o Admin Console para tarefas Administrativas.
+1. O administrador do sistema designado recebe um convite para fazer logon no Cloud Manager. Depois de fazer logon no Cloud Manager, os administradores do sistema podem optar por provisionar programas e ambientes AEM ou navegar até o Admin Console para tarefas Administrativas.
 1. O Administrador do sistema alega que um domínio confirma a propriedade do respectivo domínio (por exemplo, acme.com)
 1. O Administrador do sistema configura os Diretórios de usuário.
-1. O administrador do sistema faz a configuração do IDP no Admin Console para definir o Logon único.
+1. O Administrador do sistema faz a configuração do IDP no Admin Console para configurar o Logon único.
 1. O Administrador do AEM gerencia os grupos locais, permissões e privilégios, como de costume.
 
 As noções básicas do Adobe Identity Management, incluindo a configuração do IDP, são contempladas [aqui](https://helpx.adobe.com/br/enterprise/using/set-up-identity.html).
 
-O uso do Enterprise Administration e do Admin Console é contemplado [aqui](https://helpx.adobe.com/br/enterprise/admin-guide.html).
+A Administração corporativa e o uso de Admin Console são abordados [aqui](https://helpx.adobe.com/br/enterprise/admin-guide.html).
 
 ### Integração de usuários ao Admin Console {#onboarding-users-in-admin-console}
 
@@ -210,10 +210,10 @@ Como mostrado abaixo, o grupo **AEM-GRP_008** herda as permissões e os privilé
 
 Para acessar o Cloud Manager ou os ambientes do AEM as a Cloud Service, é necessário estar atribuído aos Perfis do produto do Cloud Manager.
 
-Consulte Definições de função para saber mais sobre funções de usuários que controlam a disponibilidade de recursos específicos no Cloud Manager.
+Consulte Definições de função se quiser saber mais sobre funções para usuários que controlam a disponibilidade de recursos específicos no Cloud Manager.
 
 >[!NOTE]
->O Cloud Manager tem funções pré-configuradas com permissões apropriadas. Para saber mais sobre cada uma das funções com permissões específicas, tarefas pré-configuradas ou permissões associadas a cada função, consulte [Permissões baseadas em funções](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html).
+>O Cloud Manager tem funções pré-configuradas com permissões apropriadas. Para saber mais sobre cada uma das funções com permissões específicas, tarefas pré-configuradas ou permissões associadas a cada função, consulte [Permissões baseadas em funções](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions).
 
 **Etapas para adicionar um usuário**
 

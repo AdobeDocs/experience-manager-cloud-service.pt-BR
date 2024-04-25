@@ -1,13 +1,13 @@
 ---
 title: Considerações de segurança do AEM as a Cloud Service
-description: Saiba mais sobre as considerações importantes de segurança ao usar o AEM as a Cloud Service
+description: Saiba mais sobre considerações importantes de segurança ao usar o AEM as a Cloud Service.
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 88%
+source-wordcount: '215'
+ht-degree: 58%
 
 ---
 
@@ -19,7 +19,7 @@ Para permitir operações assimétricas e criptográficas, o AEM armazena certif
 
 ### Características do armazenamento confiável {#truststore-characteristics}
 
-* O armazenamento confiável está localizado abaixo de `/etc/truststore` e consiste em um arquivo de armazenamento de chave Java, a senha do armazenamento de chaves e os metadados do repositório. Tanto a senha quanto o próprio keystore são criptografados por motivos técnicos, mesmo que os certificados contidos sejam acessíveis a todos por padrão por meio da API
+* O armazenamento de confiança está localizado abaixo de `/etc/truststore` e consiste em um arquivo de armazenamento de chaves Java™, a senha do armazenamento de chaves e os metadados do repositório. Tanto a senha quanto o keystore são criptografados por motivos técnicos, mesmo que os certificados contidos sejam acessíveis a todos por padrão por meio da API
 * Prontos para uso, os certificados são usados somente para suporte HTTPS e SAML e o armazenamento deve ser criado manualmente primeiro
 * Os clientes podem usá-lo em seu próprio código por meio da [API de armazenamento de chaves](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * O armazenamento confiável pode ser gerenciado por meio da interface em **Ferramentas** - **Segurança** - **Armazenamento confiável** ou acessando *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, conforme mostrado abaixo:
@@ -30,7 +30,7 @@ Para permitir operações assimétricas e criptográficas, o AEM armazena certif
 
 >[!NOTE]
 >
->O Adobe recomenda que os controles de acesso padrão sejam usados para o Armazenamento confiável, o que significa que ele permanece acessível publicamente. Para a configuração mais segura, você pode usar uma política de recusar jcr:all para todos.
+>A Adobe recomenda que os controles de acesso padrão sejam usados para o Trust Store, o que significa que ele permanece acessível publicamente. Para obter a configuração mais segura, é possível usar uma política de negação `jcr:all` para todos.
 
 <!--
 Commenting out section for now as requested by Lars

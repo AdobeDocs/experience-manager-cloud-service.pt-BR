@@ -1,11 +1,11 @@
 ---
 title: Suporte OAuth2 para o serviço de email
-description: Suporte do Oauth2 para o serviço de email no Adobe Experience Manager as a Cloud Service
+description: Suporte OAuth2 para o serviço de email no Adobe Experience Manager as a Cloud.Service.
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
+source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 83%
+source-wordcount: '679'
+ht-degree: 81%
 
 ---
 
@@ -33,7 +33,7 @@ Para obter mais informações sobre o Serviço de email do AEM as a Cloud Servic
 
    >[!NOTE]
    >
-   >A configuração de permissões pode evoluir com o tempo. Trabalhe com o Microsoft se eles não funcionarem como esperado.
+   >A configuração de permissões pode evoluir com o tempo. Trabalhe com a Microsoft® se eles não funcionarem como esperado.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -111,7 +111,7 @@ Antes de continuar a configurar o OAuth no lado do AEM, valide o accessToken e o
 
 >[!NOTE]
 >
-> Você pode obter a coleção da API do Postman [aqui](https://docs.microsoft.com/pt-br/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+> Você pode obter a coleção da API do Postman [aqui](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow).
 >
 > Consulte [aqui](https://learn.microsoft.com/pt-BR/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) a documentação de OAuth do MSFT para obter mais detalhes.
 
@@ -140,7 +140,7 @@ Antes de continuar a configurar o OAuth no lado do AEM, valide o accessToken e o
 
    >[!NOTE]
    >
-   >Os escopos podem evoluir com o tempo. Trabalhe com o Microsoft se eles não funcionarem como esperado.
+   >Os escopos podem evoluir com o tempo. Trabalhe com a Microsoft® se eles não funcionarem como esperado.
 
    * `https://outlook.office.com/SMTP.Send`
    * `openid`
@@ -148,7 +148,7 @@ Antes de continuar a configurar o OAuth no lado do AEM, valide o accessToken e o
    * `email`
    * `profile`
 1. Criar um arquivo de propriedade OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp.host` e `smtp.port` refletem a configuração avançada de rede, conforme descrito na seção [Tutorial do serviço de email](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html).
+em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp.host` e `smtp.port` refletem a configuração avançada de rede, conforme descrito na seção [Tutorial do serviço de email](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
 
    ```
    {
