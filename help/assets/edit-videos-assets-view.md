@@ -3,22 +3,22 @@ title: Editar vídeos
 description: Editar vídeos usando [!DNL Adobe Express] opções viabilizadas pelo e salvar vídeos atualizados como versões.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 6eb9cfbb463fc976c9101acb434b3b39131c8067
+source-git-commit: 4f3c15d3a103d15c51ddfe4b0c5dbb5e7e18e8b7
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 16%
+ht-degree: 17%
 
 ---
 
-# Editar vídeos no [!DNL Assets Essentials] {#edit-videos}
+# Editar vídeos no [!DNL Assets view] {#edit-videos}
 
-Criar variações de conteúdo de vídeo é fácil para usuários do Assets com o [!DNL Adobe Express] ações rápidas para vídeo. Ações rápidas no [!DNL Assets Essentials] powered by [!DNL Adobe Express] O fornece opções de edição de vídeo intuitivas, incluindo cortar vídeo, redimensionar vídeo, aparar vídeo e converter vídeo em GIF.
+Criar variações de conteúdo de vídeo é fácil para usuários do Assets com o [!DNL Adobe Express] ações rápidas para vídeo. Ações rápidas no [!DNL Assets view] powered by [!DNL Adobe Express] O fornece opções de edição de vídeo intuitivas, incluindo cortar vídeo, redimensionar vídeo, aparar vídeo e converter vídeo em GIF.
 
 Para editar um vídeo, acesse os detalhes e clique em [!UICONTROL Editar vídeo]. Como alternativa, selecione o ativo, clique em detalhes e clique em ![tesoura](assets/do-not-localize/cut.svg) ícone disponível no painel direito. Após editar um vídeo, você pode salvá-lo como uma nova versão ou como um novo ativo.
 
 ## Pré-requisitos {#prerequisites}
 
-Direitos de acesso [!DNL Adobe Express] e pelo menos um ambiente no AEM Assets. O ambiente pode ser qualquer um dos repositórios dentro de [!DNL Assets as a Cloud Service] ou [!DNL Assets Essentials].
+Direitos de acesso [!DNL Adobe Express] e pelo menos um ambiente no AEM Assets. O ambiente pode ser qualquer um dos repositórios dentro de [!DNL Assets as a Cloud Service] ou [!DNL Assets view].
 
 ## Editar vídeos usando o Adobe Express {#edit-video-using-express}
 
@@ -39,7 +39,7 @@ Você pode eliminar partes indesejadas do vídeo usando recursos incorporados [!
 
 ### Redimensionar vídeo {#resize-video-using-express}
 
-O conteúdo final do vídeo no DAM geralmente precisa ser redimensionado para distribuição em canais específicos. [!DNL Assets Essentials] O permite redimensionar facilmente o vídeo para ajustá-lo às dimensões exigidas pelos canais sociais comuns, além de redimensionar para resoluções personalizadas. Para redimensionar o vídeo usando [!DNL Assets Essentials], execute as etapas abaixo:
+O conteúdo final do vídeo no DAM geralmente precisa ser redimensionado para distribuição em canais específicos. [!DNL Assets view] O permite redimensionar facilmente o vídeo para ajustá-lo às dimensões exigidas pelos canais sociais comuns, além de redimensionar para resoluções personalizadas. Para redimensionar o vídeo usando [!DNL Assets view], execute as etapas abaixo:
 
 1. Selecione um vídeo e clique em **[!UICONTROL Editar]**.
 2. Clique em **[!UICONTROL Redimensionar vídeo]** nas ações rápidas disponíveis no painel esquerdo.
@@ -93,7 +93,7 @@ O vídeo está disponível em formato GIF para download. É possível salvar o a
 
 ### Próximas etapas {#next-steps}
 
-* Forneça feedback sobre o produto usando a opção de [!UICONTROL Feedback] disponível na interface do Assets Essentials
+* Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
@@ -101,5 +101,5 @@ O vídeo está disponível em formato GIF para download. É possível salvar o a
 
 >[!MORELIKETHIS]
 >
->* [Editar imagens no Assets Essentials](edit-images-assets-view.md)
+>* [Editar imagens na exibição de Ativos](edit-images-assets-view.md)
 >* [Visualização de um ativo](navigate-assets-view.md)
