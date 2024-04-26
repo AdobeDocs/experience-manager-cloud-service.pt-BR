@@ -1,10 +1,10 @@
 ---
 title: Processo de provisionamento - Visão geral
 description: Processo de provisionamento - Visão geral
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+source-git-commit: eec64a5dc211dc72712989bf6dc81de8004e2a85
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 98%
+source-wordcount: '288'
+ht-degree: 93%
 
 ---
 
@@ -26,13 +26,10 @@ Esta seção contempla os artigos-chave com foco em:
 
 Quando o provisionamento automático for concluído:
 
-* Direitos de acesso concedidos – a Adobe criará uma organização no Identity Management System (IMS)
+* Direitos de acesso concedidos - o Adobe criará uma organização no Adobe Identity Management System (IMS)
 * O Administrador designado terá permissões de administrador por padrão
 * O administrador poderá adicionar usuários e funções para membros de equipe adicionais por meio do Admin Console
 * Revisar as permissões com base em funções para que os usuários determinem quais permissões devem ser atribuídas no Cloud Manager
-
-![processoverview.jpg](assets/processOverview.jpg)
-
 
 Para obter mais informações, consulte [Integração do Experience Manager as a Cloud Service na Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html).
 
@@ -49,8 +46,6 @@ Para obter mais informações, consulte [Integração do Experience Manager as a
 
 ### 2. Integração das organizações no Adobe Admin Console:
 
-![processoverview2.jpg](assets/processOverview2.jpg)
-
 * Administrador do sistema:
    * Provisiona programas e ambientes do AEM.
    * Usa o Admin Console para tarefas administrativas.
@@ -61,8 +56,6 @@ Para obter mais informações, consulte [Integração do Experience Manager as a
    * Gerencia grupos locais, permissões e privilégios.
 
 ### 3. Integração de usuários e gerenciamento do acesso no Admin Console:
-
-![processoverview3.jpg](assets/processOverview3.jpg)
 
 Três métodos para integrar usuários, dependendo do tamanho e da preferência:
 * Criar usuários manualmente no Admin Console

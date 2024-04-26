@@ -2,10 +2,10 @@
 title: Criação de programas do sandbox
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de sandbox para treinamentos, demonstrações, POCs ou outros fins de não produção.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: 558b46f58491dbd6845003827dcf2a0ae1b1d074
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 86%
+source-wordcount: '434'
+ht-degree: 73%
 
 ---
 
@@ -19,9 +19,9 @@ Saiba mais sobre os tipos de programas no documento [Noções sobre programas e 
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** toque ou clique **Adicionar programa** próximo ao canto superior direito da tela.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique em **Adicionar programa** próximo ao canto superior direito da tela.
 
-   ![Página de destino do Cloud Manager](assets/cloud-manager-my-programs.png)
+   ![Página de destino do Cloud Manager](assets/log-in.png)
 
 1. No assistente criar programa, selecione **Configurar uma sandbox** e forneça um nome de programa.
 
@@ -63,12 +63,12 @@ Você pode visualizar os detalhes da configuração da sandbox, bem como acessar
 
 1. Uma vez criado o ambiente de desenvolvimento, você poderá usar o link **Acessar o AEM** para entrar no AEM.
 
-   ![Link Acessar o AEM](assets/create-program-5.png)
+   ![Link Acessar o AEM](assets/create-program5.png)
 
-1. Uma vez concluída a implantação em desenvolvimento do pipeline de não produção, o assistente o orientará a acessar o ambiente de desenvolvimento do AEM ou implantar o código no ambiente de desenvolvimento.
+1. Quando a implantação em desenvolvimento do pipeline de não produção for concluída, o assistente na chamada para ação o orientará a acessar o ambiente de desenvolvimento do AEM ou implantar o código no ambiente de desenvolvimento.
 
    ![Implantar a sandbox](assets/create-program-setup-deploy.png)
 
-Se precisar alternar para outro programa ou retornar à página de visão geral para criar outro programa, clique no nome do seu programa no canto superior esquerdo da tela para exibir a opção **Navegar para**.
-
-![Navegar para](assets/create-program-a1.png)
+>[!TIP]
+>
+>Consulte o documento [Navegação na interface do usuário do Cloud Manager](/help/implementing/cloud-manager/navigation.md) para obter detalhes sobre como navegar no Cloud Manager e entender o **Meus programas** console.

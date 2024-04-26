@@ -2,7 +2,7 @@
 title: Verificação de status do nome de domínio
 description: Saiba como determinar se o nome de domínio personalizado foi verificado com sucesso pelo Cloud Manager.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 84%
@@ -16,7 +16,7 @@ Você pode determinar o status do seu nome de domínio personalizado no Cloud Ma
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 

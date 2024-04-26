@@ -2,10 +2,10 @@
 title: Relatórios de SLA
 description: Saiba como visualizar o desempenho do seu ambiente de produção do AEM em relação ao acordo de nível de serviço (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: f037f47f0b131c87301faf4458658224d1d62a43
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 55%
+source-wordcount: '405'
+ht-degree: 52%
 
 ---
 
@@ -20,9 +20,9 @@ Os dados de relatórios de SLA estão disponíveis para cada programa de produç
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
-1. Navegue até a guia **Relatórios** na página **Visão geral**.
+1. Usando o painel de navegação lateral, navegue até o **Relatórios** na guia **Visão geral** página.
 
 1. Clique no ano desejado para ver os dados de SLA mostrados na forma de um gráfico.
 

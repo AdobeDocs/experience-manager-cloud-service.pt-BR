@@ -1,13 +1,13 @@
 ---
 title: Painel de Desempenho da CDN
 description: Entenda como o Cloud Manager avalia o desempenho da rede de entrega de conteúdo (CDN) e o que você pode aprender com o painel.
-source-git-commit: 0d60c19638707262dab7f290f84fa873b694bc22
+exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 3%
 
 ---
-
 
 # Painel de Desempenho da CDN {#cdn-performance}
 
@@ -25,7 +25,7 @@ O painel CDN está disponível na página de visão geral de cada programa.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** toque ou clique no programa cujo painel CDN você deseja exibir.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique no programa cujo painel CDN você deseja exibir.
 
    ![Página Meus programas](assets/my-programs.png)
 

@@ -2,7 +2,7 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 678e81eb22cc1d7c239ac7a2594b39a3a60c51e2
+source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
 workflow-type: tm+mt
 source-wordcount: '5093'
 ht-degree: 26%
@@ -77,7 +77,7 @@ Esse recurso avançado de rede permite configurar o AEM as a Cloud Service para 
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
 1. No **Visão geral do programa** , navegue até o **Ambientes** e selecione **Infraestrutura de rede** no painel esquerdo.
 
@@ -242,7 +242,7 @@ A configuração do endereço IP de saída dedicado é semelhante a [saída de p
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
 1. No **Visão geral do programa** , navegue até o **Ambientes** e selecione **Infraestrutura de rede** no painel esquerdo.
 
@@ -416,7 +416,7 @@ A maioria dos dispositivos VPN com tecnologia IPSec é compatível. Consulte as 
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
 1. No **Visão geral do programa** , navegue até o **Ambientes** e selecione **Infraestrutura de rede** no painel esquerdo.
 
@@ -631,7 +631,7 @@ Ao habilitar uma configuração avançada de rede para um ambiente, você també
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
 1. No **Visão geral do programa** , navegue até o **Ambientes** e selecione o ambiente no qual deseja ativar a configuração avançada de rede na guia **Ambientes** no painel esquerdo. Em seguida, selecione o **Configuração avançada de rede** do ambiente selecionado e clique em **Habilitar infraestrutura de rede**.
 
@@ -690,7 +690,7 @@ Depois [possibilitando configurações avançadas de rede para ambientes,](#enab
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
 1. No **Visão geral do programa** , navegue até o **Ambientes** e selecione o ambiente no qual deseja ativar a configuração avançada de rede na guia **Ambientes** no painel esquerdo. Em seguida, selecione o **Configuração avançada de rede** e clique no botão de reticências.
 
@@ -728,7 +728,7 @@ Depois que a infraestrutura de rede é criada para um programa, somente as propr
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
 1. No **Visão geral do programa** , navegue até o **Ambientes** e selecione **Infraestrutura de rede** no painel esquerdo. Em seguida, clique no botão de reticências ao lado da infraestrutura que deseja excluir.
 

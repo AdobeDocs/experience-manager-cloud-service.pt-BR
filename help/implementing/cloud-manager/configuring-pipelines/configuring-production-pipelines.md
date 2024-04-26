@@ -3,7 +3,7 @@ title: Configuração de pipelines de produção
 description: Saiba como configurar pipelines de produção para compilar e implantar seu código em ambientes de produção.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3ba5184275e539027728ed134c47f66fa4746d9a
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 67%
@@ -37,7 +37,7 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
 1. Navegue até a **Pipelines** do **Visão geral do programa** e clique em **Adicionar** para selecionar **Adicionar pipeline de produção**.
 

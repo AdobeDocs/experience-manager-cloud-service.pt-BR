@@ -2,10 +2,10 @@
 title: Criação de programas de produção
 description: Saiba como usar o Cloud Manager para criar seu próprio programa de produção para hospedar o tráfego direto.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: a25f1c674534792353cb9b34d4f88a5e32230bc1
+source-git-commit: 418aff3f8519bba4bf5e2459175983633eb664b8
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 33%
+source-wordcount: '1031'
+ht-degree: 34%
 
 ---
 
@@ -22,7 +22,7 @@ Siga estas etapas para criar um programa de produção. Observe que, dependendo 
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** toque ou clique **Adicionar programa** no canto superior direito da tela.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique em **Adicionar programa** no canto superior direito da tela.
 
    ![Página de aterrissagem do Cloud Manager](assets/log-in.png)
 
@@ -48,7 +48,7 @@ Siga estas etapas para criar um programa de produção. Observe que, dependendo 
 
 1. Na guia **Data de publicação**, insira a data em que planeja publicar o programa de produção.
 
-   ![Definir data de publicação planejada](assets/setup-go-live.png)
+   ![Definir data de publicação planejada](assets/set-up-go-live.png)
 
    * Essa data poderá ser editada a qualquer momento.
    * Essa data é somente para fins informativos e aciona o widget de ativação na [**Visão geral do programa** página](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview) para fornecer links no produto para a documentação de práticas recomendadas as a Cloud Service do AEM em tempo hábil, a fim de se alinhar à sua jornada, resultando em uma experiência de ativação bem-sucedida e tranquila.
@@ -117,9 +117,9 @@ Além dos direitos exigidos, 99,99% do SLA tem requisitos adicionais para uso.
 
    ![Visão geral do programa](assets/set-up-prod5.png)
 
-Se, a qualquer momento, você precisar alternar para outro programa ou retornar à página de visão geral para criar outro programa, clique no nome do programa no canto superior esquerdo da tela para revelar a **Navegue até** opção.
-
-![Vá até](assets/create-program-a1.png)
+>[!TIP]
+>
+>Consulte o documento [Navegação na interface do usuário do Cloud Manager](/help/implementing/cloud-manager/navigation.md) para obter detalhes sobre como navegar no Cloud Manager e entender o **Meus programas** console.
 
 >[!NOTE]
 >

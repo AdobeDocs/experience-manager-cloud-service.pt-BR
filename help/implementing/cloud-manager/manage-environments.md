@@ -2,10 +2,10 @@
 title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 8f7ddeea27df8e765a7c83c74af25961748ee26d
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '2660'
-ht-degree: 76%
+source-wordcount: '2365'
+ht-degree: 69%
 
 ---
 
@@ -41,9 +41,9 @@ Para adicionar ou editar um ambiente, o usuário deve ser membro do **Proprietá
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** toque ou clique no programa ao qual deseja adicionar um ambiente.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique no programa ao qual deseja adicionar um ambiente.
 
-1. Na página **[Visão geral do Programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#program-overview)**, clique em **Adicionar Ambiente** no cartão **Ambientes** para adicionar um ambiente.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , clique em **Adicionar ambiente** no **Ambientes** para adicionar um ambiente.
 
    ![Cartão Ambientes](assets/no-environments.png)
 
@@ -123,9 +123,9 @@ Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-n
 
 ## Detalhes do ambiente {#viewing-environment}
 
-É possível usar o cartão **Ambientes** na página de visão geral para acessar os detalhes de um ambiente de duas maneiras.
+No **Visão geral** página, você pode acessar os detalhes de um ambiente de duas maneiras.
 
-1. Na página **Visão Geral**, clique na guia **Ambientes** na parte superior da tela.
+1. No **Visão geral** clique no link **Ambientes** no painel de navegação lateral.
 
    ![Guia Ambientes](assets/environments-tab2.png)
 
@@ -135,9 +135,9 @@ Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-n
 
 1. A tela **Ambientes** abre, listando todos os ambientes do programa.
 
-   ![Guia Ambientes](assets/environment-view-2.png)
+   ![Guia Ambientes](assets/environments-tab2.png)
 
-1. Clique em um ambiente na lista para revelar seus detalhes.
+1. Toque ou clique em um ambiente na lista para que você possa revelar seus detalhes.
 
    ![Detalhes do ambiente](assets/environ-preview1.png)
 
@@ -302,24 +302,11 @@ Além disso, é possível fazer logon localmente na guia **Ambientes** da págin
 
 ## Gerenciar nomes de domínio personalizados {#manage-cdn}
 
-Os nomes de domínio personalizados são suportados nos programas do Sites do Cloud Manager para serviços de publicação e visualização. Cada ambiente do Cloud Manager pode hospedar no máximo 250 domínios personalizados.
+Os nomes de domínio personalizados são suportados nos programas do Sites do Cloud Manager para serviços de publicação e visualização.
 
-Para configurar nomes de domínio personalizados, navegue até a guia **Ambientes** e clique em um ambiente para exibir os detalhes.
-
-O usuário deve ter uma função de **Proprietário da empresa** ou **Gerente de implantação** para adicionar um nome de domínio personalizado no Cloud Manager
-
-![Detalhes do ambiente](assets/domain-names.png)
-
-As ações a seguir podem ser realizadas no serviço de publicação do seu ambiente.
-
-* [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-
-* [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-
-* [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) ou [Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
-
-* [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
-
+>[!TIP]
+>
+>Para obter mais informações, consulte o documento [Introdução a nomes de domínio personalizados.](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 ## Gerenciamento de listas de permissões de IP {#manage-ip-allow-lists}
 
@@ -329,23 +316,8 @@ Para gerenciar listas de permissões de IP, navegue até a guia **Ambientes** da
 
 ### Aplicação de uma lista de permissões de IP {#apply-ip-allow-list}
 
-A aplicação de uma lista de permissões de IP associa todos os intervalos de IPs incluídos na definição da lista de permissões a um serviço de autoria ou publicação em um ambiente. Um usuário com a função **Proprietário da empresa** ou **Gerente de implantação** deve estar conectado para poder aplicar uma lista de permissões de IP.
+A aplicação de uma incluir na lista de permissões inclui na lista de permissões de IP associa todos os intervalos IP incluídos na definição do arquivo a um serviço de autoria ou publicação em um ambiente.
 
-A lista de permissões de IP deve existir no Cloud Manager para ser aplicada a um ambiente. Para saber mais sobre as listas de permissões de IP no Cloud Manager, consulte [Introdução às Listas de permissões de IP no Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
-
-**Para aplicar uma lista de permissões de IP:**
-
-1. Navegue até o ambiente específico na guia **Ambientes** da tela **Visão geral** do programa e acesse a tabela **Listas de permissões de IP**.
-1. Use os campos de entrada na parte superior da tabela de inclui na lista de permissões de IP para poder selecionar o arquivo de inclui na lista de permissões de IP e o serviço de autoria ou publicação ao qual deseja aplicá-lo.
-1. Clique em **Aplicar** e confirme o envio.
-
-### Cancelamento da aplicação de uma lista de permissões de IP {#unapply-ip-allow-list}
-
-O cancelamento da aplicação de uma lista de permissões de IP desassocia todos os intervalos de IPs incluídos na definição da lista de permissões de um serviço de autoria ou publicação em um ambiente. Um usuário com a função **Proprietário da empresa** ou **Gerente de implantação** deve estar conectado para poder cancelar a aplicação de uma lista de permissões de IP.
-
-**Para cancelar a aplicação de uma lista de permissões de IP:**
-
-1. Navegue até o ambiente específico na guia **Ambientes** da tela **Visão geral** do programa e acesse a tabela **Listas de permissões de IP**.
-1. Identifique a linha na qual a regra da lista de permissões de IP que deseja cancelar a aplicação está listada.
-1. Selecione o botão de reticências no final da linha.
-1. Clique em **Cancelar aplicação** e confirme o envio.
+>[!TIP]
+>
+>Para obter mais informações, consulte o documento [Introdução a Listas de permissões de IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)

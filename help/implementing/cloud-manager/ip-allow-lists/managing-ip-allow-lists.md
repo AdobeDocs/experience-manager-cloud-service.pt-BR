@@ -2,7 +2,7 @@
 title: Gerenciamento de listas de permissões de IP
 description: Saiba como exibir, editar, excluir e verificar o status das listas de permissões de IP no Cloud Manager.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 52%
@@ -18,7 +18,7 @@ Saiba como exibir, editar, excluir e verificar o status das listas de permissõe
 Um usuário no **Proprietário da empresa** ou **Gerente de implantação** A função pode seguir essas etapas para exibir e atualizar uma inclui na lista de permissões de IP.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 1. Acesse a página **Listas de permissão de IP** na tela **Ambientes**.
 1. Identifique a linha das incluis na lista de permissões de IP que deseja exibir ou atualizar.

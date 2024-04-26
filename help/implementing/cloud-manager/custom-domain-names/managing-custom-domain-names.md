@@ -2,10 +2,10 @@
 title: Gerenciar nomes de domínio personalizados
 description: Saiba como usar o Cloud Manager para exibir, atualizar, substituir e excluir nomes de domínio personalizados.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 81%
+source-wordcount: '326'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,7 @@ Use o menu **Exibir e atualizar** para exibir os detalhes de qualquer um dos nom
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 
@@ -45,17 +45,13 @@ Um usuário com a função de **Proprietário da empresa** ou **Gerente de impla
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
-
-1. Acesse a página **Configurações de domínio** na tela **Ambientes**.
+1. Navegue até a **Configurações do domínio** página do **Visão geral** tela.
 
 1. Identifique a linha do nome de domínio personalizado que deseja excluir.
 
 1. Clique no botão de reticências localizado na extremidade direita da linha.
 
 1. Selecione **Excluir**.
-
-   ![Exclusão de um nome de domínio personalizado](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Confirme seu envio.
 

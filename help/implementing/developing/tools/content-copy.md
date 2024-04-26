@@ -2,10 +2,10 @@
 title: A ferramenta de cópia de conteúdo
 description: A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mutável sob demanda de seus ambientes de produção no AEM as a Cloud Service para ambientes inferiores para fins de teste.
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
-source-git-commit: 8bc20c66aad7bf4befdd28db2c628a1535ae375b
+source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 34%
+source-wordcount: '1286'
+ht-degree: 33%
 
 ---
 
@@ -49,9 +49,7 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 
 1. Faça logon no Cloud Manager em[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
 
-1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
-
-1. Acesse a página **Conjuntos de conteúdo** na tela **Ambientes**.
+1. Usando o painel de navegação lateral, navegue até o **Conjuntos de conteúdo** na guia **Visão geral** página.
 
 1. Na parte superior direita da tela, clique em **Adicionar conjunto de conteúdo**.
 

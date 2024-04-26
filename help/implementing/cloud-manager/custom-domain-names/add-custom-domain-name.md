@@ -2,10 +2,10 @@
 title: Adicionar um nome de domínio personalizado
 description: Saiba como adicionar um nome de domínio personalizado usando o Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 52466e091cf6e0ab1ac620e15568c04881a3b63a
+source-git-commit: fcb6dd8ec74446643aaef1870685d26bc138bbd7
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 71%
+source-wordcount: '676'
+ht-degree: 70%
 
 ---
 
@@ -29,11 +29,9 @@ Siga estas etapas para adicionar um nome de domínio personalizado no **Configur
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** selecione o programa.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
 
-1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
-
-1. Clique em **Configurações do domínio** no painel de navegação esquerdo.
+1. Navegue até o **Configurações do domínio** no painel de navegação esquerdo.
 
    ![A janela Configurações do domínio](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 

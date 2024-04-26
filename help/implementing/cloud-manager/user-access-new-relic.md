@@ -2,7 +2,7 @@
 title: New Relic One
 description: Saiba mais sobre o serviço de monitoramento de desempenho de aplicativo (APM) da New Relic One para o AEM as a Cloud Service e como você pode acessá-lo.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 90250c13c5074422e24186baf78f84c56c9e3c4f
+source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
 workflow-type: tm+mt
 source-wordcount: '1850'
 ht-degree: 76%
@@ -44,7 +44,7 @@ Para um programa recém-criado, uma subconta do New Relic One é criada para voc
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md#my-programs)** toque ou clique no programa para o qual deseja gerenciar seus usuários do New Relic One.
+1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique no programa para o qual deseja gerenciar os usuários do New Relic One.
 
 1. Na parte inferior do **Ambientes** na página de visão geral do programa, clique no botão de reticências e selecione **Ativar New Relic**.
 
