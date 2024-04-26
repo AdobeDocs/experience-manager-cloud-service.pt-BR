@@ -2,7 +2,7 @@
 title: Introdução ao Editor universal
 description: Saiba como o Editor universal habilita a edição "o que você vê é o que você obtém" (WYSIWYG) de qualquer experiência headless e headful. Entenda como ele pode ajudar criadores de conteúdo a entregar experiências excepcionais, aumentar a velocidade do conteúdo e como ele oferece uma experiência de desenvolvedor de última geração.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: 24496f81313bd58f60aa6d251c46f11fb24d1dbd
+source-git-commit: bbcf44c585e98f75c558d06edc3c1c030adad2cf
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 63%
@@ -90,4 +90,3 @@ Para saber mais sobre o Editor universal, consulte estes documentos.
 * [Arquitetura do Editor universal](architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 * [Atributos e tipos](attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
 * [Autenticação do Editor universal](authentication.md): saiba como funciona a autenticação do Editor universal.
-
