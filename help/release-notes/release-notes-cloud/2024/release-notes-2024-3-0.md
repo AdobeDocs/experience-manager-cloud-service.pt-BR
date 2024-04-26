@@ -1,46 +1,74 @@
 ---
-title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
-mini-toc-levels: 1
-exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5817cc38aab00380256537c9d4a6fe3d431c7591
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2024.3.0.
+source-git-commit: 5b7ae48ad9f11bb43ab32569dd3e5243f2abfb8e
 workflow-type: tm+mt
-source-wordcount: '1989'
-ht-degree: 13%
+source-wordcount: '2268'
+ht-degree: 8%
 
 ---
 
-# Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2024.3.0 {#release-notes}
 
-A seção a seguir descreve as notas da versão de recurso atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as notas da versão de recursos do [!DNL Experience Manager] as a Cloud Service 2024.3.0.
 
 >[!NOTE]
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2021 ou 2022.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
->Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) para obter detalhes de atualizações de documentação não relacionadas diretamente a uma versão.
+>Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=pt-BR) para obter detalhes de atualizações de documentação não relacionadas diretamente a uma versão.
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2024.4.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 25 de abril de 2024. O próximo lançamento de recursos (2024.5.0) está planejado para sexta-feira, 30 de maio de 2024.
+A data de lançamento da versão atual (2024.3.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 11 de abril de 2024. O próximo lançamento de recursos (2024.4.0) está planejado para sexta-feira, 25 de abril de 2024.
 
 ## Notas da versão de manutenção {#maintenance}
 
 Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-notes/maintenance/latest.md).
 
-&lt;— ## Vídeo da versão {#release-video}
+<!-- ## Release Video {#release-video}
 
-Assista ao vídeo Visão geral da versão de abril de 2024 que exibe um resumo dos recursos adicionados na versão 2024.4.0:
+Have a look at the March 2024 Release Overview video for a summary of the features added in the 2024.3.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3425864?quality=12)
 
-—>
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Novos recursos no [!DNL Experience Manager Sites] {#sites-features}
+
+**Criação de AEM para Edge Delivery Services**
+
+O AEM Sites agora pode ser usado como fonte de conteúdo para o Edge Delivery Services. Os autores gerenciam seus sites no AEM usando o novo Universal Editor com criação wysiwyg no contexto. Isso permite que as empresas criem páginas da Web rápidas e de alto desempenho com o Edge Delivery Services e, ao mesmo tempo, aproveitem os poderosos recursos de AEM para o gerenciamento de conteúdo.
+
+![Criação no AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
+
+Para obter mais informações, consulte [documentação](/help/edge/overview.md) e assista ao [Gems do AEM - Introdução à criação e aos Edge Delivery Services do AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
+
+**Editor universal para implementações headless**
+
+O Editor universal também permite que aplicativos web dissociados utilizem a mesma criação intuitiva em contexto WYSIWYG, anteriormente exclusiva de sites tradicionais. Os criadores de conteúdo agora podem compor visualmente layouts usando fragmentos de conteúdo com a mesma facilidade que os componentes dentro das páginas.
+
+O que diferencia o Editor Universal é sua adaptabilidade a diversas arquiteturas da Web, acomodando renderização no lado do servidor e do cliente, mantendo-se independente de estrutura e eliminando a necessidade de hospedagem do AEM. Integrar aplicativos web existentes com o Universal Editor para edição de conteúdo é simples, exigindo principalmente que os desenvolvedores incorporem atributos de dados específicos em suas marcações.
+
+Com isso, o Editor universal garante uma experiência de edição consistente, independentemente da estrutura do conteúdo ou da pilha de tecnologia subjacente. Para obter mais informações, consulte [Introdução ao Universal Editor](/help/implementing/universal-editor/introduction.md).
+
+**OpenAPIs de gerenciamento de conteúdo para fragmentos e modelos de conteúdo**
+
+Agora os desenvolvedores podem interagir programaticamente com os Fragmentos de conteúdo e modelos de Fragmento de conteúdo e executar operações de CruD neles usando as OpenAPIs de gerenciamento de conteúdo. Para obter mais informações, consulte [Documentação da API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
+
+**Suporte de gerenciamento de vários sites para Fragmentos de experiência**
+
+O suporte ao Gerenciamento multisite foi estendido para estruturas de pastas que armazenam fragmentos de experiência, permitindo que os usuários implantem uma estrutura de conteúdo completa com fragmentos de experiência.
+
+**Comparar versões de fragmentos de conteúdo**
+
+O novo Editor de fragmento de conteúdo agora permite que os autores de conteúdo comparem e visualizem diferenças entre a versão atual de um fragmento de conteúdo e uma versão anterior.
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
@@ -58,35 +86,23 @@ Interessado em experimentar o recurso e compartilhar feedback? Envie um email pa
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Novos recursos na visualização de ativos {#assets-view-new-features}
+### Novos recursos na exibição do Administrador {#admin-view}
 
+**Integração nativa com o Adobe Express**
 
-**Pesquisa contextual**
+A AEM Assets integra-se nativamente com o Adobe Express, o que permite acessar diretamente os ativos armazenados no AEM Assets na interface do usuário do Adobe Express. Você pode colocar o conteúdo gerenciado no AEM Assets na tela Express e depois salvar o conteúdo novo ou editado em um repositório do AEM Assets.
 
-Agora, você também pode [pesquisar ativos disponíveis no repositório definindo solicitações de texto](/help/assets/search-assets-view.md#contextual-search). O Experience Manager Assets transforma automaticamente esses prompts de texto em filtros de pesquisa e exibe os resultados da pesquisa. Você pode visualizar e modificar filtros automáticos usando o Painel de filtros para restringir ainda mais os resultados da pesquisa.
+![Incluir ativos do complemento Assets](/help/assets/assets/adobe-express-native-integration.png)
 
-![Pesquisa contextual](/help/assets/assets/contextual-search-text-prompt1.png)
+**Visualizar representações para todos os tipos de vídeo compatíveis**
 
-**Ações rápidas de vídeo expresso**
+O Experience Manager Assets agora gera representações de pré-visualização de todos os tipos de vídeo compatíveis por padrão, sem exigir uma configuração de perfil de processamento.
 
-O Experience Manager Assets agora inclui [ferramentas de edição de vídeo fáceis e intuitivas, viabilizadas pelo Adobe Express](/help/assets/edit-videos-assets-view.md) para aumentar a reutilização de conteúdo e acelerar a velocidade do conteúdo. As opções de edição incluem aparar, cortar, redimensionar um vídeo e também converter um MP4 em um arquivo GIF.
+### Novos recursos na visualização de ativos {#assets-view}
 
-![cortar vídeo com o Adobe Express](/help/assets/assets/adobe-express-crop-video.png)
+**Gerenciar permissões para coleções**
 
-**Representações dinâmicas**
-
-Agora você pode [exibir e baixar representações dinâmicas (incluindo cortes inteligentes)](/help/assets/renditions.md) no Experience Manager Assets. As representações dinâmicas são versões personalizadas de ativos de imagem criados em tempo real para atender a necessidades específicas, como redimensionar imagens com base na resolução do dispositivo ou recortar para se ajustar a diferentes taxas de aspecto. Essas representações permitem que as organizações entreguem experiências personalizadas e otimizadas para diversas necessidades do público-alvo.
-
-![Representações dinâmicas](/help/assets/assets/preset_smart_crop.png)
-
-**Renomeação no local para ativos e pastas**
-
-O Experience Manager Assets agora oferece uma experiência do usuário simplificada ao fornecer [capacidade de renomear um ativo ou uma pasta com um único clique](/help/assets/manage-organize-assets-view.md).
-
-**Atribuir ou remover um formulário de metadados a várias pastas**
-
-Agora você pode [atribuir ou remover formulário de metadados a várias pastas](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
-
+O Assets Essentials permite que os administradores gerenciem os níveis de acesso para coleções privadas disponíveis no repositório. Como administrador, você pode criar grupos de usuários e atribuir permissões a esses grupos para gerenciar níveis de acesso. Você também pode delegar os privilégios de gerenciamento de permissões a grupos de usuários.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -97,28 +113,41 @@ Agora você pode [atribuir ou remover formulário de metadados a várias pastas]
 
 -->
 
+### Novos recursos para o AEM Forms {#forms-new-features}
+
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: o AEM Forms Edge Delivery Services é um conjunto de serviços combináveis que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar, publicar e lançar novos formulários rapidamente. Esses serviços oferecem experiências de formulários excepcionais e de alto impacto que impulsionam o engajamento e as conversões. Essas experiências de formulários são fáceis de criar e desenvolver.
+
+  ![Recursos do EDS Forms](/help/edge/assets/eds-forms-features.png)
+
+Esses serviços permitem:
+
+* Trabalhe com várias fontes de conteúdo no mesmo site de formulários e use suas ferramentas de criação preferidas, como o Microsoft Excel, o Google Sheets ou o Adaptive Forms Editor.
+* Ofereça experiências de Inscrição digital que carregam e renderizam de forma rápida e contínua, monitorando o desempenho de seus formulários por meio do monitoramento real de usuários (RUM).
+* Use HTML simples, CSS moderno e JavaScript padrão para criar experiências excepcionais, evitando a curva de aprendizado íngreme de uma estrutura específica.
+
+
 ### Novos recursos no Pré-lançamento do AEM Forms {#forms-pre-release}
 
 * **Editor de regras visuais aprimorado para Forms adaptável baseado em componentes principais**: esta versão traz uma atualização significativa ao editor visual de regras para formulários adaptáveis com base em componentes principais. Esta versão traz uma atualização significativa para o editor visual de regras para formulários adaptáveis com base em componentes principais. Essa atualização se concentra em simplificar as interações com funções personalizadas, permitindo que você crie formulários mais robustos e eficientes.
 
   Agora é possível simplificar as interações de funções personalizadas ao:
 
-   * [Como aproveitar novas anotações para fornecer definições de função mais claras](/help/forms/create-and-use-custom-functions.md#supported-javascript-annotations-for-custom-function).
-   * [Uso de mecanismos de cache para funções personalizadas, resultando em um desempenho de formulário mais rápido](/help/forms/create-and-use-custom-functions.md#caching-support-for-custom-function).
-   * [Trabalho contínuo com objetos globais dentro de funções personalizadas](/help/forms/create-and-use-custom-functions.md#field-and-global-scope-objects-in-custom-functions).
-   * [Definição e utilização de parâmetros opcionais em funções personalizadas](/help/forms/create-and-use-custom-functions.md#parameter).
+   * Uso de novas anotações para fornecer definições de função mais claras.
+   * Uso de mecanismos de armazenamento em cache para funções personalizadas, resultando em um desempenho de formulário mais rápido.
+   * Trabalhar perfeitamente com objetos globais dentro de funções personalizadas.
+   * Definição e utilização de parâmetros opcionais em funções personalizadas.
 
   Essa atualização também traz os seguintes aprimoramentos para a funcionalidade do editor de regras. É possível:
 
-   * Implementar soluções [&quot;when-then-else&quot;](/help/forms/rule-editor-core-components.md#when) lógica para execução condicional.
+   * Implemente uma lógica poderosa do tipo &quot;quando-então-mais&quot; para execução condicional.
    * Aproveite os recursos modernos do JavaScript, como as funções de seta e de esquerda (suporte para ES10).
    * Valide ou redefina não apenas campos, mas também painéis e formulários inteiros, expandindo o controle sobre as interações do usuário.
 
   Esses avanços fornecem uma experiência mais intuitiva e poderosa para criar regras e funções personalizadas no editor visual de regras.
 
-* **[Criar várias versões de um Formulário adaptável](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)**: Agora é possível gerenciar facilmente variações de formulários existentes. Isso simplifica o controle de versões e facilita a comparação para a otimização de formulários, tudo em um único fluxo de trabalho simplificado.
+* **Criar várias versões de um Formulário adaptável**: Agora é possível gerenciar facilmente variações de formulários existentes. Isso simplifica o controle de versões e facilita a comparação para a otimização de formulários, tudo em um único fluxo de trabalho simplificado.
 
-* **[Comparar formulário adaptável](/help/forms/compare-forms.md)**: agora é possível comparar facilmente dois formulários para identificar as diferenças entre dois. Ele facilita a colaboração perfeita, permitindo que os membros da equipe comparem revisões e discutam alterações com eficiência.
+* **Comparar formulário adaptável**: agora é possível comparar facilmente dois formulários para identificar as diferenças entre dois. Ele facilita a colaboração perfeita, permitindo que os membros da equipe comparem revisões e discutam alterações com eficiência.
 
 * **Aprimoramentos de acessibilidade para o componente de assinatura assinável**: esta atualização traz melhorias significativas de acessibilidade para o componente de Assinatura Escrita:
 
@@ -148,7 +177,7 @@ Essa atualização garante uma experiência mais inclusiva para usuários portad
 
   <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Usando o Adobe Workfront Fusion Connector, você pode projetar fluxos de trabalho que são acionados automaticamente no envio de um Formulário adaptável. Por exemplo, preveja um cenário em que um fluxo de trabalho é iniciado para atribuir a um indivíduo específico a tarefa de revisar dados enviados, permitindo a aprovação ou a rejeição de um aplicativo com base nas informações capturadas por meio do formulário adaptável. Essa integração simplificada aumenta a eficiência e traz um novo nível de automação para seus processos de workflow.|
 
-* **[Serviço de extensão Reader](/help/forms/aem-forms-cloud-service-communications-introduction.md#reader-extension-service)**: as APIs de comunicação da AEM Forms trouxeram o Serviço de extensão do Reader para permitir que você adicione funcionalidades como preenchimento de formulário e comentários a PDF regulares, tornando-os interativos para usuários com o Adobe Reader gratuito.
+* **Serviço de extensão Reader**: as APIs de comunicação da AEM Forms trouxeram o Serviço de extensão do Reader para permitir que você adicione funcionalidades como preenchimento de formulário e comentários a PDF regulares, tornando-os interativos para usuários com o Adobe Reader gratuito.
 
 * [Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md): o Forms adaptável incorporado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diferentes e selecionar mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
 
@@ -163,31 +192,23 @@ O Serviço de dados de monitoramento de usuário real (RUM) oferece um reflexo m
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Configuração de CDN {#cdn-config}
-
-Configure o tráfego no CDN do Adobe das seguintes maneiras:
-
-* [Solicitar transformações](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations) : modifica aspectos de solicitações recebidas, incluindo caminhos, parâmetros de consulta e cabeçalhos HTTP antes que sejam roteados para AEM.
-* [Transformações de resposta](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations) - alterar cabeçalhos HTTP das respostas de saída antes que elas sejam enviadas ao navegador.
-* [Seletores de origem](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations#origin-selectors) - rotear o tráfego pela CDN para sites e aplicativos fora do AEM.
-
-Depois que essas regras forem declaradas no controle do código-fonte (Git), você poderá implantá-las na CDN usando o Pipeline de configuração do Cloud Manager. Consulte também o recurso de redirecionamentos do lado do cliente na seção inicial do adotante abaixo.
-
-### Páginas de erro personalizadas do CDN {#cdn-error-pages}
-
-No caso improvável de o CDN não conseguir rotear o tráfego para a origem do AEM, uma página de erro personalizada pode ser declarada, substituindo a versão genérica. [Saiba mais](/help/implementing/dispatcher/cdn-error-pages.md) sobre como fornecer páginas de erro de marca.
-
 ### Programas de adoção antecipada {#foundation-early-adopter}
-
-#### Redirecionamentos do lado do cliente (Programa de primeiros usuários) {#client-side-redirects-early-adopter}
-
-Configure os redirecionamentos do lado do cliente 301/302 no controle do código-fonte e implante na CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors) e se juntar ao programa de adoção antecipada enviando e-mail **<aemcs-cdn-config-adopter@adobe.com>**.
 
 #### Alertas de regras de filtro de tráfego (Programa de adoção antecipada) {#traffic-filter-rules-alerts-early-adopter}
 
 O recém-lançado [Regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md), que incluem as regras opcionalmente licenciáveis do Web Application Firewall (WAF), permite configurar o tráfego que deve ser permitido ou negado.
 
 Agora você pode enviar um email **<aemcs-cdn-config-adopter@adobe.com>** para participar do programa de adoção antecipada para que você possa ser alertado sempre que as regras de filtro de tráfego forem acionadas. As notificações por email do Centro de ações manterão você informado quando ocorrerem determinadas condições de tráfego para que você possa tomar as medidas apropriadas.
+
+#### Configuração da CDN (Early Adoter Program) {#cdn-config-early-adopter}
+
+Além do recém-lançado [Regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md), que incluem as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de configuração para declarar e implantar outros tipos de configuração de CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md) e se juntar ao programa de adoção antecipada enviando e-mail **<aemcs-cdn-config-adopter@adobe.com>** para obter acesso a:
+
+* Redirecionamentos do lado do cliente 301/302
+* solicitações de proxy na borda para origens arbitrárias (como aplicativos não-AEM)
+* Transformações de URL
+* definindo ou modificando cabeçalhos de solicitação ou resposta
+* páginas de erro personalizadas quando o CDN não consegue acessar o AEM
 
 #### Assimilação de tempo de execução de mapas de regravação do Apache/Dispatcher (Programa de adoção antecipada) {#apache-rewritemaps-early-adopter}
 

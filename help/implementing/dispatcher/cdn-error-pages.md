@@ -2,18 +2,15 @@
 title: Configuração de páginas de erro do CDN
 description: Saiba como substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de blobs do Azure, e fazendo referência a eles em um arquivo de configuração implantado usando o Pipeline de configuração do Cloud Manager.
 feature: Dispatcher
-source-git-commit: 11036c3e95f0444fc5d865232a7dccab5b7f26ae
+exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
+source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 1%
 
 ---
 
-
 # Configuração de páginas de erro do CDN {#cdn-error-pages}
-
->[!NOTE]
->Esse recurso ainda não está disponível para o público geral. Para participar do programa de adoção antecipada, envie um email para `aemcs-cdn-config-adopter@adobe.com` e descreva seu caso de uso.
 
 No caso improvável de a [CDN gerenciada por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) não puder acessar a origem do AEM, o CDN por padrão fornece uma página de erro genérica e sem marca que indica que o servidor não pode ser acessado. Você pode substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de blobs do Azure, e fazendo referência a eles em um arquivo de configuração implantado usando o [Pipeline de configuração do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
@@ -88,4 +85,4 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 
 Os códigos compatíveis são: 403, 404, 406, 500 e 503.
 
-Dessa forma, você aciona diretamente o manipulador de erros do CDN para testar a resposta sintética de determinado código de erro.
+Dessa forma, você aciona diretamente o manipulador de erros do CDN para testar a resposta sintética de um determinado código de erro.
