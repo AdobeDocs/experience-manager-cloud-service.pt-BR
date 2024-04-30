@@ -4,9 +4,9 @@ description: Saiba como gerenciar os fragmentos de conteúdo do AEM no console e
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
-source-git-commit: 404eb317562f974f72820c6e3aa019fbe043d7f7
+source-git-commit: a9a2362903e8eec25393e2ceb307814e1a21f142
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2628'
 ht-degree: 45%
 
 ---
@@ -302,11 +302,7 @@ Você pode publicar os fragmentos de conteúdo nos seguintes serviços:
 
   >[!NOTE]
   >
-  >Para obter mais detalhes sobre os ambientes de Visualização, consulte o seguinte:
-  >
-  >* [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  >* [Configurações do OSGi para o nível de visualização](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
-  >* [Depuração da visualização usando o Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+  >Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 >[!CAUTION]
 >
