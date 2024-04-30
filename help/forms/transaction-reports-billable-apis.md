@@ -6,7 +6,7 @@ exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 source-git-commit: 539f4bf86f0e32057b2228dc44c86120d6e8457b
 workflow-type: tm+mt
 source-wordcount: '1411'
-ht-degree: 28%
+ht-degree: 32%
 
 ---
 
@@ -47,12 +47,12 @@ As APIs de faturamento não levam em conta o número de páginas, o comprimento 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
 >title="Duração média para geração de formulário"
->abstract="O gráfico ilustra o tempo médio necessário para criar um formulário. Cada barra no gráfico representa um formulário específico, e a altura da barra indica a duração média da criação do formulário durante esse período."
+>abstract="O gráfico ilustra o tempo médio necessário para criar um formulário. Cada barra no gráfico representa um formulário específico, e a altura da barra indica a duração média de sua criação durante esse intervalo de tempo."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Duração média da criação de formulário"
->abstract="O gráfico exibe o tempo médio necessário para criar e publicar um formulário, medido a partir do dia inicial em que o formulário foi aberto para edição.O gráfico fornece dados específicos para a instância de autor atual do AEM Forms. Para exibir dados de outras instâncias, acesse o painel de cada respectiva instância."
+>abstract="O gráfico exibe o tempo médio necessário para criar e publicar um formulário, medido a partir do dia inicial em que o formulário foi aberto para edição. O gráfico fornece dados específicos para a instância de autor atual do AEM Forms. Para exibir dados de outras instâncias, acesse o painel de cada respectiva instância."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
