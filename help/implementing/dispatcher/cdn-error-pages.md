@@ -3,9 +3,9 @@ title: Configuração de páginas de erro do CDN
 description: Saiba como substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de blobs do Azure, e fazendo referência a eles em um arquivo de configuração implantado usando o Pipeline de configuração do Cloud Manager.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
-source-git-commit: 8489b40f45e6cbeb98288969bc9f6bd42815e2a6
+source-git-commit: 69ffcccae150a5e49c6344973890733f3e5b74ae
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '376'
 ht-degree: 1%
 
 ---
@@ -18,14 +18,21 @@ No caso improvável de a [CDN gerenciada por Adobe](/help/implementing/dispatche
 
 Antes de substituir a página de erro padrão, é necessário fazer o seguinte:
 
-* Primeiro, crie esta pasta e a estrutura de arquivo na pasta de nível superior do seu projeto Git:
+* Crie esta pasta e estrutura de arquivo na pasta de nível superior do seu projeto Git:
 
 ```
 config/
      cdn.yaml
 ```
 
-* Em segundo lugar, a `cdn.yaml` o arquivo de configuração deve conter metadados e as referências da página de erro, conforme descrito abaixo.
+* A variável `cdn.yaml` o arquivo de configuração deve conter metadados e as regras descritas nos exemplos abaixo. A variável `kind` O parâmetro deve ser definido como `CDN` e a versão deve ser definida como a versão do schema, que está `1`.
+
+* Crie um pipeline de configuração de implantação direcionada no Cloud Manager. Consulte [configuração de pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configuração de pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+
+**Notas**
+
+* Atualmente, os RDEs não oferecem suporte ao pipeline de configuração.
+* Você pode usar `yq` para validar localmente a formatação YAML do seu arquivo de configuração (por exemplo, `yq cdn.yaml`).
 
 ### Configuração {#configuration}
 
