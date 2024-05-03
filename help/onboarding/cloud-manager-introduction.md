@@ -2,10 +2,10 @@
 title: Introdução ao Cloud Manager
 description: Saiba mais sobre como o Cloud Manager dá suporte ao seu projeto do AEM por meio de programas, ambientes e pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 6181b066742357169b67f605ac3970685537bb5e
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 96%
+source-wordcount: '864'
+ht-degree: 94%
 
 ---
 
@@ -58,6 +58,10 @@ Também é possível navegar até a página Programas e produtos do Cloud Manage
 >[!NOTE]
 >
 >Um usuário pode ser atribuído a várias funções. Por exemplo, atribuir ambas funções **Proprietário da empresa** e **Gerente de implantação** a um usuário resultará na soma dessas permissões.
+
+>[!TIP]
+>
+>Perfis de permissão personalizados com permissões configuráveis também estão disponíveis. Consulte o documento [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md) para obter mais detalhes.
 
 ## Programas do Cloud Manager {#cloud-manager-programs}
 
