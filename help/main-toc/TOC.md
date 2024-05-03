@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a5fc1f7e42edc8d41cac687a348dad7fc98742c1
+source-git-commit: 1b5dec707eb63a43a3e6240c785ed9ef00a3a3c4
 workflow-type: tm+mt
-source-wordcount: '4892'
+source-wordcount: '4901'
 ht-degree: 85%
 
 ---
@@ -619,7 +619,7 @@ ht-degree: 85%
          + [Conectar o AEM Forms ao banco de dados ou à fonte de dados](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
          + [Configurar OData do [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Conectar o formulário adaptável ao aplicativo Salesforce usando o fluxo de credenciais do cliente OAuth 2.0](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+         + [Conectar o formulário adaptável ao aplicativo Salesforce usando o fluxo de credenciais do cliente OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
          + [Configurar armazenamento do [!DNL Azure] ](/help/forms/configure-azure-storage.md)
          + [Configurar os serviços em nuvem do [!DNL Microsoft Dynamics 365] e do [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
          + [Criar modelo de dados do formulário](/help/forms/create-form-data-models.md)
@@ -651,6 +651,7 @@ ht-degree: 85%
             + [Adicione uma localidade para o Forms adaptável com base nos Componentes principais](/help/forms/supporting-new-language-localization-core-components.md)
             + [Criar e usar funções personalizadas](/help/forms/create-and-use-custom-functions.md)
             + [Adicionar regras a um Formulário adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components.md)
+            + [Criar esquema JSON para um formulário adaptável (componentes principais)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Adicionar versões, comentários e anotações a um Formulário adaptável](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparar Forms adaptável](/help/forms/compare-forms.md)
       + Componentes de base {#authoring-adaptive-forms-foundation-components}

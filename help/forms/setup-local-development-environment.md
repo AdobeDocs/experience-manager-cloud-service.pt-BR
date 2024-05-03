@@ -4,9 +4,9 @@ description: Configurar um ambiente de desenvolvimento local para o Adobe Experi
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: a86e68f9dd195512a689943b303225a48b5f8a23
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2723'
+source-wordcount: '2726'
 ht-degree: 1%
 
 ---
@@ -249,7 +249,7 @@ Agora você pode usar o ambiente de desenvolvimento local para renderizar o Docu
 
 Use este projeto para criar o Adaptive Forms, implantar atualizações de configuração, sobreposições, criar componentes de Formulário adaptável personalizados, testar e personalizar código no local [!DNL Experience Manager Forms] SDK. Após os testes locais, é possível implantar o projeto em  [!DNL Experience Manager Forms] Ambientes as a Cloud Service de produção e não produção. Quando você implanta o projeto, os seguintes ativos do AEM Forms também são implantados:
 
-| Temas | Modelos | Modelos de dados de formulário |
+| Temas | Modelos | Modelo de dados de formulário (FDM) |
 ---------|----------|---------
 | Canvas 3.0 | Básico | Microsoft® Dynamics 365 |
 | Tranquilo | Em branco | Salesforce |
@@ -259,7 +259,7 @@ Use este projeto para criar o Adaptive Forms, implantar atualizações de config
 
 >[!NOTE]
 >
-> Configure o projeto baseado no Arquétipo AEM versão 30 ou posterior para obter e usar os modelos de dados de formulário do Microsoft® Dynamics 365 e Salesforce com o AEM Forms as a Cloud Service.
+> Configure o Arquétipo AEM versão 30 ou posterior do projeto para obter e usar o Microsoft® Dynamics 365 e o Salesforce Form Data Model (FDM) com o AEM Forms as a Cloud Service.
 > Configure o Arquétipo AEM versão 32 ou posterior do projeto para obter e usar temas Tranquil, Urbane e Ultramarine com o AEM Forms as a Cloud Service.
 
 Para configurar o projeto:
@@ -399,7 +399,7 @@ Para fazer backup e mover ativos do SDK existente para um novo ambiente de SDK:
 
 ### Criar um backup do conteúdo existente {#create-backup-of-your-existing-content}
 
-Faça backup de seu Forms adaptável, modelos, modelo de dados de formulário, tema, configurações e código personalizado. Você pode executar a seguinte ação para criar o backup:
+Faça backup do Forms adaptável, de modelos, do modelo de dados de formulário (FDM), do tema, das configurações e do código personalizado. Você pode executar a seguinte ação para criar o backup:
 
 1. [Baixar](import-export-forms-templates.md#manage-forms-and-related-assets) Forms adaptável, temas e PDF forms.
 1. Exportar modelos de formulário adaptável.

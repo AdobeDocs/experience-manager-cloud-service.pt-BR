@@ -6,10 +6,11 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
 docset: aem65
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2465'
-ht-degree: 94%
+source-wordcount: '2468'
+ht-degree: 92%
 
 ---
 
@@ -26,8 +27,8 @@ ht-degree: 94%
 
 Formulários adaptáveis fornecem uma experiência envolvente, responsiva, dinâmica e adaptável. O [!DNL AEM Forms] oferece uma interface intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo ou esquema de formulário ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atenda não apenas às suas necessidades, mas que amplie seus investimentos de infraestrutura e ativos. Você pode escolher entre as seguintes opções ao criar um formulário adaptável:
 
-* **Usar um modelo de dados de formulário**
-  A [integração de dados](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário que pode ser usado para criar formulários adaptáveis. Escolha a opção Modelo de dados de formulário se o formulário adaptável que você estiver criando envolver a busca e gravação de dados de e para várias fontes de dados.
+* **Uso de um modelo de dados de formulário (FDM)**
+  [Integração de dados](data-integration.md) O permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário (FDM) que você pode usar para criar o Adaptive Forms. Escolha Modelo de dados de formulário (FDM) se o Formulário adaptável que você está criando envolver a busca e a gravação de dados de e para várias fontes de dados.
 
 * **Usar um modelo de formulário XDP**
 Esse é um modelo de formulário ideal se você tiver investido em formulários baseados em XFA ou XDP. Ele fornece uma maneira direta de converter formulários baseados em XFA em formulários adaptáveis. Quaisquer regras de XFA existentes são retidas nos formulários adaptáveis associados. O formulário adaptável resultante oferece suporte a construções em XFA, como validações, eventos, propriedades e padrões.

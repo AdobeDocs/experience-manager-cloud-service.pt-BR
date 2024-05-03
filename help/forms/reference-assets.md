@@ -3,16 +3,16 @@ title: Como obter temas de referência e modelos para formulários adaptáveis?
 description: Use a referência de temas, modelos e modelos de dados de formulário do formulário adaptável fornecidos para começar rapidamente.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 92870b32-e0d5-4cb4-9b88-81f88ca8ff64
-source-git-commit: d33c7278d16a8cce76c87b606ca09aa91f1c3563
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 6%
+source-wordcount: '500'
+ht-degree: 2%
 
 ---
 
 # Ativos de referência para o Forms as a Cloud Service {#reference-themes}
 
-Você pode obter as referências a temas, modelos e modelos de dados de formulário instalando o [Pacote de ativos de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ele ajuda a iniciar e acelerar rapidamente o desenvolvimento do Adaptive Forms. Você pode usar [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=pt-BR) para implantar esse pacote no ambiente as a Cloud Service do Forms.
+É possível obter os temas de referência, os modelos e o modelo de dados de formulário (FDM) instalando o [Pacote de ativos de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ele ajuda a iniciar e acelerar rapidamente o desenvolvimento do Adaptive Forms. Você pode usar [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=pt-BR) para implantar esse pacote no ambiente as a Cloud Service do Forms.
 Os ativos de referência incluídos no pacote são:
 
 ## Temas {#themes}

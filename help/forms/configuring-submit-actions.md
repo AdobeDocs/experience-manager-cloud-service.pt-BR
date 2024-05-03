@@ -3,9 +3,9 @@ title: Como configurar uma ação enviar para um formulário adaptável?
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 8923bfbb0e46961485ff360c0135ebdde6d8cab3
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3901'
+source-wordcount: '3914'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Uma ação enviar é acionada quando um usuário clica no **[!UICONTROL Enviar]*
 
 * [Enviar para endpoint REST](#submit-to-rest-endpoint)
 * [Enviar e-mail](#send-email)
-* [Enviar usando modelo de dados do formulário](#submit-using-form-data-model)
+* [Enviar usando o Modo de dados de formulário (FDM)l](#submit-using-form-data-model)
 * [Chamar um fluxo de trabalho de AEM](#invoke-an-aem-workflow)
 * [Enviar para o SharePoint](#submit-to-sharedrive)
 * [Enviar para o OneDrive](#submit-to-onedrive)
@@ -137,11 +137,11 @@ The **Submit to Forms workflow** submit option sends a data xml and file attachm
 
 For information about how to configure the Submit to forms workflow Submit Action, see [Submitting and processing your form data using forms workflows](submit-form-data-livecycle-process.md). -->
 
-## Enviar usando modelo de dados do formulário {#submit-using-form-data-model}
+## Enviar usando o Modelo de dados de formulário (FDM) {#submit-using-form-data-model}
 
-A variável **[!UICONTROL Enviar usando modelo de dados do formulário]** A ação enviar grava dados de formulário adaptável enviados para o objeto de modelo de dados especificado em um modelo de dados de formulário para sua fonte de dados. Ao configurar a Ação Submeter, você pode escolher um objeto de modelo de dados cujos dados submetidos você deseja gravar na origem de dados.
+A variável **[!UICONTROL Enviar usando modelo de dados do formulário]** A ação enviar grava dados de formulário adaptável enviados para o objeto de modelo de dados especificado em um modelo de dados de formulário (FDM) em sua fonte de dados. Ao configurar a Ação Submeter, você pode escolher um objeto de modelo de dados cujos dados submetidos você deseja gravar na origem de dados.
 
-Além disso, você pode enviar um anexo de formulário usando um Modelo de dados de formulário e um Documento de registro (DoR) para a fonte de dados. Para obter informações sobre o modelo de dados de formulário, consulte [[!DNL AEM Forms] Integração de dados](data-integration.md).
+Além disso, você pode enviar um anexo de formulário usando um Modelo de dados de formulário (FDM) e um Documento de registro (DoR) para a fonte de dados. Para obter informações sobre o modelo de dados de formulário (FDM), consulte [[!DNL AEM Forms] Integração de dados](data-integration.md).
 
 <!--
 ## Forms Portal Submit Action {#forms-portal-submit-action}
@@ -243,7 +243,7 @@ A estrutura de pastas para salvar os dados é `/folder_name/form_name/year/month
 Para usar o [!UICONTROL Enviar para a lista do SharePoint] Enviar ação em um formulário adaptável:
 
 1. [Criar uma configuração de lista do SharePoint](#create-sharepoint-list-configuration): ele conecta o AEM Forms ao seu Armazenamento de lista do Microsoft® Sharepoint.
-1. [Usar o Enviar usando o Modelo de dados de formulário em um Formulário adaptável](#use-submit-using-fdm): ele conecta seu formulário adaptável ao Microsoft® SharePoint configurado.
+1. [Usar o Enviar usando o Modelo de dados de formulário (FDM) em um formulário adaptável](#use-submit-using-fdm): ele conecta seu formulário adaptável ao Microsoft® SharePoint configurado.
 
 #### Criar uma configuração de lista do SharePoint {#create-sharepoint-list-configuration}
 
@@ -267,14 +267,14 @@ Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 1. Selecionar **[!UICONTROL Criar]** para criar a configuração de nuvem do Microsoft® SharePointList.
 
 
-#### Usar o Enviar usando o Modelo de dados de formulário em um Formulário adaptável {#use-submit-using-fdm}
+#### Usar o Enviar usando o Modelo de dados de formulário (FDM) em um formulário adaptável {#use-submit-using-fdm}
 
 Você pode usar a configuração da Lista do SharePoint criada em um Formulário adaptável para salvar dados ou o Documento de registro gerado em uma Lista do SharePoint. Execute as seguintes etapas para usar uma configuração de armazenamento de Lista do SharePoint em um Formulário adaptável como:
 
-1. [Criar um modelo de dados de formulário usando a configuração da lista do Microsoft® SharePoint](/help/forms/create-form-data-models.md)
-1. [Configurar o modelo de dados do formulário para recuperar e enviar dados](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Criar um modelo de dados de formulário (FDM) usando a configuração da Lista do Microsoft® SharePoint](/help/forms/create-form-data-models.md)
+1. [Configurar o Modelo de dados de formulário (FDM) para recuperar e enviar dados](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Criação de um Formulário adaptável](/help/forms/creating-adaptive-form.md)
-1. [Configurar a ação Enviar usando um Modelo de dados de formulário](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+1. [Configurar a ação Enviar usando um Modelo de dados de formulário (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
 
 Ao enviar o formulário, os dados são salvos no Armazenamento de Lista do Microsoft® Sharepoint especificado.
 
@@ -462,7 +462,7 @@ O autor pode configurar a biblioteca JavaScript personalizada por formulário ad
 
 Como parte das diretrizes de segurança e proteção contra AEM, configure páginas de erro personalizadas como 400.jsp, 404.jsp e 500.jsp. Esses manipuladores são chamados quando ao enviar um formulário 400, 404 ou 500 erros são exibidos. Os manipuladores também são chamados quando esses códigos de erro são acionados no nó Publicar. Você também pode criar páginas JSP para outros códigos de erro HTTP.
 
-Ao preencher previamente um modelo de dados de formulário ou um formulário adaptável baseado em esquema com dados XML ou JSON, faça uma reclamação para um esquema cujos dados não contêm `<afData>`, `<afBoundData>`, e `</afUnboundData>` , os dados de campos não vinculados do Formulário adaptável serão perdidos. O esquema pode ser um esquema XML, esquema JSON ou um modelo de dados de formulário. Os campos não limitados são campos do Formulário adaptável sem `bindref` propriedade.
+Quando você preenche um modelo de dados de formulário (FDM) ou um formulário adaptável baseado em esquema com uma reclamação de dados XML ou JSON para um esquema cujos dados não contêm `<afData>`, `<afBoundData>`, e `</afUnboundData>` , os dados de campos não vinculados do Formulário adaptável serão perdidos. O esquema pode ser um esquema XML, esquema JSON ou um Modelo de dados de formulário (FDM). Os campos não limitados são campos do Formulário adaptável sem `bindref` propriedade.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

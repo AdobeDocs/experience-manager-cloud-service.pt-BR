@@ -7,9 +7,10 @@ topic-tags: author
 feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2137'
+source-wordcount: '2139'
 ht-degree: 1%
 
 ---
@@ -173,7 +174,7 @@ Você pode usar um fragmento de formulário baseado em esquema várias vezes em 
 
 >[!NOTE]
 >
-> Se você usar fragmentos de formulário sem base várias vezes em um formulário adaptável, o problema de sincronização de dados entre os campos dos fragmentos ocorrerá. É possível usar um [fragmento](/help/forms/adaptive-form-fragments-core-components.md) de formulário baseado em componente principal que não esteja vinculado a nenhum modelo de dados de formulário, várias vezes em um formulário sem experimentar problemas de sincronização de dados.
+> Se você usar fragmentos de formulário sem base várias vezes em um formulário adaptável, o problema de sincronização de dados entre os campos dos fragmentos ocorrerá. É possível usar um [fragmento](/help/forms/adaptive-form-fragments-core-components.md) de formulário baseado em componente principal que não esteja vinculado a nenhum modelo de dados de formulário (FDM), várias vezes em um formulário sem experimentar problemas de sincronização de dados.
 
 ## mapeamento Automático de fragmentos para vínculo de dados {#auto-mapping-of-fragments-for-data-binding}
 
@@ -251,7 +252,7 @@ Para localizar um Formulário adaptável que contenha Fragmentos de formulário 
 * Certifique-se de que o nome do fragmento seja exclusivo. O fragmento não é criado se houver um fragmento existente com o mesmo nome.
 * Em um Formulário adaptável baseado em XDP, se você salvar um painel como fragmento que inclui outro fragmento XDP, o fragmento resultante será vinculado automaticamente ao fragmento XDP filho. No caso de um Formulário adaptável baseado em XSD, o fragmento resultante é vinculado à raiz do esquema.
 * Ao criar um fragmento de formulário adaptável, um nó de fragmento é criado, o que é semelhante ao nó guideContainer de um formulário adaptável, no CRXDe Lite.
-* Um fragmento em um Formulário adaptável que usa um Modelo de dados de formulário diferente não é compatível. Por exemplo, um fragmento baseado em XDP não é compatível com um Formulário adaptável baseado em XSD e vice-versa.
+* Um fragmento em um Formulário adaptável que usa um Modelo de dados de formulário (FDM) diferente não é compatível. Por exemplo, um fragmento baseado em XDP não é compatível com um Formulário adaptável baseado em XSD e vice-versa.
 * Os fragmentos de formulário adaptáveis estão disponíveis para uso por meio da guia Fragmentos de formulário adaptáveis no localizador de conteúdo do AEM.
 * Qualquer expressão, script ou estilo em um Fragmento de formulário adaptável independente é retido quando inserido por referência ou incorporado em um Formulário adaptável.
 * Não é possível editar um fragmento de formulário adaptável, que é inserido por referência, de um formulário adaptável. Para editar, edite o Fragmento de formulário adaptável independente ou incorpore o fragmento no Formulário adaptável.

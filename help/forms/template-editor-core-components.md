@@ -4,9 +4,9 @@ description: Crie modelos de Formulário adaptável com base no componente princ
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1962'
 ht-degree: 3%
 
 ---
@@ -164,7 +164,7 @@ Os autores podem associar um [!UICONTROL Esquema do modelo de dados de formulár
 1. Selecionar **[!UICONTROL Navegador de conteúdo]** localizado no lado esquerdo.
 1. Ir para o contêiner de formulário **[!UICONTROL Configuração]**.
 1. Selecionar **[!UICONTROL Modelo de dados]**.
-1. Escolher o modelo de dados do formulário por meio de **[!UICONTROL Selecionar modelo de dados do formulário]** e salve a configuração.
+1. Escolha o modelo de dados de formulário (FDM) por meio de **[!UICONTROL Selecionar modelo de dados do formulário]** e salve a configuração.
 
 ![Formulário-Modelo-Dados-Associação-no-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
 

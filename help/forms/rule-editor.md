@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: bbb5e4caef2cb8c44d10a92647401ee86a9326c0
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '6457'
+source-wordcount: '6468'
 ht-degree: 0%
 
 ---
@@ -140,15 +140,15 @@ Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Lim
 
 **[!UICONTROL Desativar]** Desabilita o objeto especificado.
 
-**[!UICONTROL Chamar serviço]** Invoca um serviço configurado em um modelo de dados de formulário. Quando você escolhe a operação Chamar Serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário no [!DNL Experience Manager] instância. Ao escolher um serviço de modelo de dados de formulário, mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado. Consulte o exemplo regra para invocar serviços do modelo de dados de formulário.
+**[!UICONTROL Chamar serviço]** Chama um serviço configurado em um modelo de dados de formulário (FDM). Quando você escolhe a operação Chamar Serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) no [!DNL Experience Manager] instância. Ao escolher um serviço de Modelo de dados de formulário (FDM), mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado. Consulte o exemplo regra para invocar serviços do modelo de dados de formulário.
 
 Além do serviço de modelo de dados de formulário, você pode especificar um URL WSDL direto para chamar um serviço Web. No entanto, um serviço de modelo de dados de formulário tem muitos benefícios e a abordagem recomendada para chamar um serviço.
 
-Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte [[!DNL Experience Manager Forms] Integração de dados](data-integration.md).
+Para obter mais informações sobre como configurar serviços no modelo de dados de formulário (FDM), consulte [[!DNL Experience Manager Forms] Integração de dados](data-integration.md).
 
-**[!UICONTROL Definir valor de]** Calcula e define o valor do objeto especificado. Você pode definir o valor do objeto como uma string, o valor de outro objeto, o valor calculado usando a expressão matemática ou a função, o valor de uma propriedade de um objeto ou o valor de saída de um serviço de Modelo de Dados de Formulário configurado. Quando você escolhe a opção de serviço Web, ela exibe todos os serviços configurados em todos os modelos de dados de formulário no [!DNL Experience Manager] instância. Ao escolher um serviço de modelo de dados de formulário, mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado.
+**[!UICONTROL Definir valor de]** Calcula e define o valor do objeto especificado. Você pode definir o valor do objeto como uma string, o valor de outro objeto, o valor calculado usando a expressão matemática ou a função, o valor de uma propriedade de um objeto ou o valor de saída de um serviço de Modelo de Dados de Formulário configurado. Quando você escolhe a opção de serviço Web, ela exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) no [!DNL Experience Manager] instância. Ao escolher um serviço de modelo de dados de formulário, mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado.
 
-Para obter mais informações sobre como configurar serviços no modelo de dados de formulário, consulte [[!DNL Experience Manager Forms] Integração de dados](data-integration.md).
+Para obter mais informações sobre como configurar serviços no modelo de dados de formulário (FDM), consulte [[!DNL Experience Manager Forms] Integração de dados](data-integration.md).
 
 A variável **[!UICONTROL Definir propriedade]** o tipo de regra permite definir o valor de uma propriedade do objeto especificado com base em uma ação de condição. Você pode definir a propriedade como uma das seguintes opções:
 * visível (Booleano)
@@ -308,7 +308,7 @@ Uma regra Validate típica é estruturada da seguinte maneira:
 
 ### [!UICONTROL Definir Opções De] {#setoptionsof}
 
-A variável **[!UICONTROL Definir Opções De]** O tipo de regra permite definir regras para adicionar caixas de seleção dinamicamente ao Formulário adaptável. Você pode usar um Modelo de dados de formulário ou uma função personalizada para definir a regra.
+A variável **[!UICONTROL Definir Opções De]** O tipo de regra permite definir regras para adicionar caixas de seleção dinamicamente ao Formulário adaptável. Você pode usar um Modelo de dados de formulário (FDM) ou uma função personalizada para definir a regra.
 
 Para definir uma regra com base em uma função personalizada, selecione **[!UICONTROL Saída da função]** na lista suspensa e arraste e solte uma função personalizada do **[!UICONTROL Funções]** guia. O número de caixas de seleção definidas na função personalizada é adicionado ao Formulário adaptável.
 
@@ -316,7 +316,7 @@ Para definir uma regra com base em uma função personalizada, selecione **[!UIC
 
 Para criar uma função personalizada, consulte [funções personalizadas no editor de regras](#custom-functions).
 
-Para definir uma regra baseada em um modelo de dados de formulário:
+Para definir uma regra com base em um modelo de dados de formulário (FDM):
 
 1. Selecionar **[!UICONTROL Saída do serviço]** na lista suspensa.
 1. Selecione o objeto de modelo de dados.
@@ -659,7 +659,7 @@ Para abrir um formulário no modo de edição, selecione um formulário e **[!UI
 
    >[!NOTE]
    >
-   > Para chamar um modelo de dados de formulário do editor de regras usando funções personalizadas, [veja aqui](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
+   > Para chamar um modelo de dados de formulário (FDM) no editor de regras usando funções personalizadas, [veja aqui](/help/forms/using-form-data-model.md#invoke-services-in-adaptive-forms-using-rules-invoke-services).
 
 #### Tipos suportados de declaração de função {#function-declaration-supported-types}
 
@@ -817,7 +817,7 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 ### Invocar serviço de modelo de dados de formulário {#invoke}
 
-Considerar um serviço Web `GetInterestRates` que usa o valor do empréstimo, a estabilidade financeira e a pontuação de crédito do candidato como entrada e retorna um plano de empréstimo incluindo o valor da EMI e a taxa de juros. Você cria um modelo de dados de formulário usando o serviço Web como uma fonte de dados. Você adiciona objetos de modelo de dados e um `get` para o modelo de formulário. O serviço aparece na guia Serviços do modelo de dados de formulário. Em seguida, crie um Formulário adaptável que inclua campos de objetos de modelo de dados para capturar as entradas do usuário para valor do empréstimo, estabilidade e pontuação de crédito. Adicione um botão que aciona o serviço Web para buscar detalhes do plano. A saída é preenchida nos campos apropriados.
+Considerar um serviço Web `GetInterestRates` que usa o valor do empréstimo, a estabilidade financeira e a pontuação de crédito do candidato como entrada e retorna um plano de empréstimo incluindo o valor da EMI e a taxa de juros. Você cria um Modelo de dados de formulário (FDM) usando o serviço Web como uma fonte de dados. Você adiciona objetos de modelo de dados e um `get` para o modelo de formulário. O serviço aparece na guia Serviços do modelo de dados de formulário (FDM). Em seguida, crie um Formulário adaptável que inclua campos de objetos de modelo de dados para capturar as entradas do usuário para valor do empréstimo, estabilidade e pontuação de crédito. Adicione um botão que aciona o serviço Web para buscar detalhes do plano. A saída é preenchida nos campos apropriados.
 
 A regra a seguir mostra como configurar a ação Chamar serviço para realizar o cenário de exemplo.
 

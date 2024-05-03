@@ -4,9 +4,9 @@ description: Use os Componentes principais do formulário adaptável em uma pág
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2071'
 ht-degree: 1%
 
 ---
@@ -110,12 +110,12 @@ No [!UICONTROL Editar contêiner adaptável do Forms] você pode especificar o s
    * **Preencher Serviço**: é possível usar o serviço de preenchimento prévio para preencher automaticamente os campos de um Formulário adaptável usando dados existentes. Quando um usuário abre um formulário, os valores desses campos são preenchidos previamente. Para obter informações sobre o serviço de preenchimento prévio, consulte [Preencher previamente os campos do formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **Categoria da biblioteca cliente**: especifique o [Funções JavaScript](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) que são usados em expressões e são compatíveis com o Adaptive Forms.
 * **Modelo de dados**: um modelo de dados permite integrar entidades e serviços de fontes de dados diferentes a um formulário adaptável. Escolher **[!UICONTROL Modelo de dados do formulário]** se o Formulário adaptável que você está criando envolver a busca e a gravação de dados de e para várias fontes de dados.
-   * **Modelo de dados do formulário**: um modelo de dados de formulário permite que um formulário adaptável se comunique com fontes de dados diferentes. Para obter informações sobre como configurar uma fonte de dados, consulte [Configurar fontes de dados](/help/forms/configure-data-sources.md).
+   * **Modelo de dados do formulário**: um Modelo de dados de formulário (FDM) permite que um Formulário adaptável se comunique com fontes de dados diferentes. Para obter informações sobre como configurar uma fonte de dados, consulte [Configurar fontes de dados](/help/forms/configure-data-sources.md).
    * **Esquema**: o esquema representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. Você pode [associar o esquema a um Formulário adaptável](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) e usar seus elementos para adicionar conteúdo dinâmico a um Formulário adaptável.
 
      >[!NOTE]
      >
-     > Após configurar o modelo de dados de formulário, não é possível alterar o Modelo de formulário associado. No entanto, é possível modificar o schema associado ao modelo de dados de formulário.
+     > Após configurar o Modelo de dados de formulário (FDM), não é possível alterar o Modelo de formulário associado. No entanto, é possível modificar o esquema associado ao Modelo de dados de formulário (FDM).
 
 * **Guia Envio**
 
@@ -125,7 +125,7 @@ No [!UICONTROL Editar contêiner adaptável do Forms] você pode especificar o s
       * **Ação de envio**: uma ação de envio é acionada quando um usuário clica no botão Enviar em um Formulário adaptável. Você pode [configurar a ação enviar no Formulário adaptável](/help/forms/configuring-submit-actions.md). Os formulários adaptáveis fornecem as seguintes ações de envio prontas para uso:
          * Enviar para endpoint REST
          * Enviar e-mail
-         * Enviar usando modelo de dados do formulário
+         * Enviar usando o Modelo de dados de formulário (FDM)
          * Chamar um fluxo de trabalho de AEM
          * Enviar para o SharePoint
          * Enviar para o OneDrive

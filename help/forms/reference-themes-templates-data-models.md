@@ -3,10 +3,10 @@ title: Como obter temas de referência e modelos para formulários AEM?
 description: O AEM Forms fornece exemplos de temas, modelos e modelos de dados de formulário de formulários adaptáveis para ajudá-lo a criar formulários rapidamente.
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '772'
-ht-degree: 6%
+source-wordcount: '778'
+ht-degree: 4%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 6%
 
 <span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-O AEM Forms as a Cloud Service fornece vários temas de referência, modelos de dados de formulário e modelos para ajudar você a começar rapidamente a criar o Adaptive Forms. Você pode baixar o [pacote de conteúdo de referência do portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) e use o [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) para instalar o [pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) no ambiente de produção, desenvolvimento ou desenvolvimento local para obter esses ativos de referência para o ambiente.
+O AEM Forms as a Cloud Service fornece vários temas de referência, modelos e modelo de dados de formulário (FDM) para ajudar você a começar rapidamente a criar o Adaptive Forms. Você pode baixar o [pacote de conteúdo de referência do portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) e use o [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) para instalar o [pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) no ambiente de produção, desenvolvimento ou desenvolvimento local para obter esses ativos de referência para o ambiente.
 
-Os temas, modelos e modelos de dados de formulário incluídos no pacote de conteúdo de referência são:
+Os temas, modelos e modelo de dados de formulário (FDM) incluídos no pacote de conteúdo de referência são:
 
 
-| Temas | Modelos | Modelos de dados de formulário |
+| Temas | Modelos | Modelo de dados de formulário (FDM) |
 ---------|----------|---------
 | Canvas 3.0 | Básico | Microsoft Dynamics 365 |
 | Tranquilo | Em branco | Salesforce |
@@ -112,16 +112,16 @@ O tema FSI enfatiza uma aparência minimalista e funcional para o formulário. A
 O modelo básico ajuda a criar rapidamente um formulário de inscrição. Você também pode usá-lo para visualizar a funcionalidade dos componentes de base do Forms adaptável. Ele fornece um layout de assistente para a apresentação de dados seção a seção. Use o modelo em branco para começar a criar um Formulário adaptável a partir de uma tela em branco.
 
 
-## Modelos de dados de formulário de referência {#reference-models}
+## Modelo de dados do formulário de referência (FDM) {#reference-models}
 
 O Forms adaptável pode interagir com os servidores do Microsoft Dynamics 365 e Salesforce para ativar fluxos de trabalho de negócios. Por exemplo:
 
 * Grave dados no Microsoft Dynamics 365 e Salesforce no envio do Formulário adaptável.
-* Grave dados no Microsoft Dynamics 365 e Salesforce por meio de entidades personalizadas definidas no Modelo de dados de formulário e vice-versa.
+* Grave dados no Microsoft Dynamics 365 e Salesforce por meio de entidades personalizadas definidas no Modelo de dados de formulário (FDM) e vice-versa.
 * Consulte o servidor do Microsoft Dynamics 365 e Salesforce para obter dados e preencher previamente o Forms adaptável.
 * Ler dados do servidor do Microsoft Dynamics 365 e Salesforce.
 
-É possível obter os seguintes Modelos de dados de formulário instalando o [Pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+Você pode obter o seguinte Modelo de dados de formulário (FDM) instalando o [Pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft® Dynamics 365
 * Salesforce

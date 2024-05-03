@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: publish
 discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65s
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Ao selecionar um formulário e publicá-lo, seus ativos e recursos relacionados 
 O Adaptive Forms pode utilizar algumas configurações, configurações e personalizações que não são publicadas automaticamente. É recomendável publicar ou ativar esses recursos antes de publicar um Formulário adaptável.
 
 * Modelos editáveis de formulário adaptável
-* Configurações de Cloud Service para os modelos de dados de formulário, Adobe Sign, Typekit, reCAPTCHA
+* Configurações de Cloud Service para Adobe Sign, Typekit, reCAPTCHA e Form Data Model (FDM)
 * Outras configurações de serviços na nuvem são ativadas somente se o usuário tiver permissões de administrador.
 * Personalizações. Isso inclui, mas não se limita a:
 

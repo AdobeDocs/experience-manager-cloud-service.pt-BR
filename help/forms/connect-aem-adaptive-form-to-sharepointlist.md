@@ -1,21 +1,21 @@
 ---
 title: Como conectar o formulário adaptável do AEM à lista de SharePoint do Microsoft&reg;?
-description: Conectar um Formulário adaptável à Lista de SharePoint do Microsoft&reg;. Saiba como configurar a lista de SharePoint do Microsoft&reg; e criar um Modelo de dados de formulário usando a configuração. Além disso, você aprenderá a integrar o FDM ao seu Formulário adaptável.
+description: Conectar um Formulário adaptável à Lista de SharePoint do Microsoft&reg;. Saiba como configurar a lista de SharePoint do Microsoft&reg; e criar um Modelo de dados de formulário (FDM) usando a configuração. Além disso, você aprenderá a integrar o FDM ao seu Formulário adaptável.
 role: User, Developer
 keywords: conectar o Formulário adaptável do AEM à Lista do Microsoft SharePoint, conectar o Formulário adaptável à Lista do Microsoft SharePoint, integrar o Formulário adaptável à Lista do Microsoft SharePoint, integrar o Formulário adaptável à Lista do AEM, enviar dados de um Formulário adaptável à Lista do Microsoft, enviar fluxo de trabalho para a Lista do SharePoint SharePoint AEM SharePoint.
 hide: true
 hidefromToC: true
-source-git-commit: e2505c0fec1da8395930f131bfc55e1e2ce05881
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 3%
+source-wordcount: '525'
+ht-degree: 2%
 
 ---
 
 
 # Conectar um formulário adaptável à lista Microsoft® SharePoint
 
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
 
 **Microsoft® SharePoint**: O Microsoft® SharePoint habilita a colaboração fornecendo sites de equipe dinâmicos e eficientes para todas as equipes, departamentos e divisões. Ele é usado para armazenar, organizar, compartilhar e acessar informações de qualquer dispositivo usando qualquer navegador da Web, por exemplo, Microsoft® Edge, Internet Explorer, Chrome ou Firefox. Os dois principais componentes do **Microsoft® SharePoint** são:
 
@@ -31,8 +31,8 @@ Para obter instruções sobre como integrar uma **Biblioteca de documentos Micro
 Antes de conectar um formulário adaptável à lista Microsoft® SharePoint, execute as seguintes etapas:
 
 1. [Configurar Microsoft](/help/forms/configure-data-sources.md#configure-microsoft-sharepoint-list)
-1. [Criar um modelo de dados de formulário usando o Microsoft](/help/forms/create-form-data-models.md)
-1. [Configurar o modelo de dados do formulário para recuperar e enviar dados](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Criar um modelo de dados de formulário (FDM) usando o Microsoft](/help/forms/create-form-data-models.md)
+1. [Configurar o Modelo de dados de formulário (FDM) para recuperar e enviar dados](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Criação de um Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
 
 Agora é possível:
@@ -42,18 +42,18 @@ Agora é possível:
 
 ## Conectar um formulário adaptável à lista Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-Para integrar a Lista de SharePoint Microsoft® ao seu Formulário adaptável [configurar um formulário adaptável para usar um modelo de dados de formulário](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+Para integrar a Lista de SharePoint Microsoft® ao seu Formulário adaptável [configurar um Formulário adaptável para usar um Modelo de dados de formulário (FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
-Depois de configurar um formulário adaptável para usar um modelo de dados de formulário, você pode:
+Depois de configurar um Formulário adaptável para usar um Modelo de dados de formulário (FDM), você pode:
 
-* [Configurar a ação Enviar usando um Modelo de dados de formulário](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
-* [Configurar o Editor de regras para chamar um Modelo de dados de formulário](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
+* [Configurar a ação Enviar usando um Modelo de dados de formulário (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
+* [Configurar o Editor de regras para chamar um Modelo de dados de formulário (FDM)](/help/forms/rule-editor.md#invoke-form-data-model-service-invoke)
 
 ## Conectar a lista do Microsoft® SharePoint a um fluxo de trabalho do AEM {#connect-sharepoint-list-workflow}
 
 Para integrar a Lista do Microsoft® SharePoint a um fluxo de trabalho para AEM:
 
-1. [Criar um fluxo de trabalho para chamar um modelo de dados de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR)
+1. [Criar um fluxo de trabalho para chamar um Modelo de dados de formulário (FDM)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR)
 
    <!--
     To create a workflow with the editor:
@@ -84,7 +84,7 @@ Saiba como [usar o fluxo de trabalho do AEM](https://experienceleague.adobe.com/
 
 * [Criar um formulário adaptável baseado em um componente principal](/help/forms/creating-adaptive-form-core-components.md)
 * [Configurar fontes de dados](/help/forms/configuring-submit-actions.md)
-* [Criar modelo de dados de formulário](/help/forms/create-form-data-models.md)
+* [Criar modelo de dados de formulário (FDM)](/help/forms/create-form-data-models.md)
 * [Usar workflows AEM centrados na Forms - referência de etapa para automatizar processos de negócios](/help/forms/aem-forms-workflow-step-reference.md)
 * [Criar uma ação enviar personalizada para o Forms adaptável](/help/forms/custom-submit-action-form.md)
 * [Criar ou adicionar um formulário adaptável a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)

@@ -4,9 +4,9 @@ description: Recupere e salve dados em serviços Web RESTful, serviços Web base
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '550'
 ht-degree: 3%
 
 ---
@@ -32,32 +32,32 @@ Embora um sistema modular e distribuído tenha seus próprios benefícios, o des
 
 ![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] A Integração de dados permite configurar e conectar diferentes fontes de dados com o [!DNL AEM Forms]. Ele fornece uma interface de usuário intuitiva para criar um esquema de representação de dados unificada de entidades e serviços comerciais em fontes de dados conectadas. A representação unificada é conhecida como modelo de dados de formulário, uma extensão do esquema JSON. As entidades em um Modelo de dados de formulário são chamadas de objetos de modelo de dados. Um modelo de dados de formulário permite:
+[!DNL AEM Forms] A Integração de dados permite configurar e conectar diferentes fontes de dados com o [!DNL AEM Forms]. Ele fornece uma interface de usuário intuitiva para criar um esquema de representação de dados unificada de entidades e serviços comerciais em fontes de dados conectadas. A representação unificada é conhecida como modelo de dados de formulário (FDM), uma extensão do esquema JSON. As entidades em um Modelo de dados de formulário (FDM) são chamadas de objetos de modelo de dados. Um Modelo de dados de formulário (FDM) permite:
 
 * Acesse objetos de modelo de dados, propriedades e serviços a partir de fontes de dados conectadas.
 * Criar objetos e propriedades de modelo de dados personalizados
 * Crie associações entre objetos de modelo de dados em e entre fontes de dados.
 * Invoque serviços de objeto de modelo de dados para consultar ou gravar dados de e para fontes de dados.
 
-Depois de criar um modelo de dados de formulário, você pode usá-lo para:
+Depois de criar um modelo de dados de formulário (FDM), você pode usá-lo para:
 
-* Criar Forms adaptável com base em um modelo de dados de formulário
+* Criar Forms adaptável com base em um modelo de dados de formulário (FDM)
 * Preencher previamente o Forms adaptável a partir de fontes de dados configuradas
 * Chamar serviços/operações de fonte de dados usando regras do Formulário adaptável
 * Gravar dados do Formulário adaptável enviados nas fontes de dados
 
 ## Introdução à integração de dados {#get-started-with-data-integration}
 
-A primeira etapa para implementar a integração de dados para enviar o Formulário adaptável a um banco de dados é identificar e configurar fontes de dados que armazenam informações que você deseja usar no Adaptive Forms. Em seguida, você cria um Modelo de dados de formulário que usa objetos de modelo de dados, propriedades e serviços de uma ou mais fontes de dados. Você pode criar Forms adaptável com base em um Modelo de dados de formulário em que os campos de Formulário adaptável estão vinculados às respectivas propriedades da fonte de dados.
+A primeira etapa para implementar a integração de dados para enviar o Formulário adaptável a um banco de dados é identificar e configurar fontes de dados que armazenam informações que você deseja usar no Adaptive Forms. Em seguida, você cria um Modelo de dados de formulário (FDM) que usa objetos de modelo de dados, propriedades e serviços de uma ou mais fontes de dados. Você pode criar o Adaptive Forms com base em um Modelo de dados de formulário (FDM) em que os campos do Formulário adaptável estão vinculados às respectivas propriedades da fonte de dados.
 
-[!DNL AEM Forms] O também permite criar um modelo de dados de formulário independente das fontes de dados e associar ou vincular objetos de modelo de dados e propriedades no modelo de dados de formulário com a fonte de dados posteriormente. Ele elimina qualquer dependência em fontes de dados enquanto você trabalha em um modelo de dados de formulário.
+[!DNL AEM Forms] O também permite criar um Modelo de dados de formulário (FDM) independente das fontes de dados e associar ou vincular objetos e propriedades do modelo de dados no Modelo de dados de formulário (FDM) à fonte de dados posteriormente. Isso elimina quaisquer dependências nas fontes de dados enquanto você trabalha em um modelo de dados de formulário (FDM).
 
 Revise o seguinte para começar, entender e implementar a integração de dados:
 
 * [Configurar fontes de dados](configure-data-sources.md)
-* [Criar modelo de dados de formulário](create-form-data-models.md)
-* [Trabalhar com o modelo de dados de formulário](work-with-form-data-model.md)
-* [Usar modelo de dados de formulário](using-form-data-model.md)
+* [Criar modelo de dados de formulário (FDM)](create-form-data-models.md)
+* [Trabalhar com o modelo de dados de formulário (FDM)](work-with-form-data-model.md)
+* [Usar o modelo de dados de formulário (FDM)](using-form-data-model.md)
 
 >[!NOTE]
 >

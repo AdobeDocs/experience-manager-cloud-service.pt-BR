@@ -6,9 +6,9 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: e81da7414335e00411942adeb41978d39f172b52
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3243'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Para selecionar um Cloud Service e a ordem da assinatura:
 
    >[!NOTE]
    >
-   > Se um formulário adaptável for criado usando um modelo de dados de formulário, o campo de ID do contrato ficará visível na caixa de diálogo.
+   > Se um Formulário adaptável for criado usando um Modelo de dados de formulário (FDM), o campo ID do contrato ficará visível na caixa de diálogo.
 
 1. [Adicionar recipients a um formulário adaptável](working-with-adobe-sign.md#addsignerstoanadaptiveform) e selecione Concluído ![Salvar](assets/save_icon.svg) ícone para salvar as alterações.
 

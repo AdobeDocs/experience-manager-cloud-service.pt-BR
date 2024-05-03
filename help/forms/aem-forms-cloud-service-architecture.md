@@ -4,9 +4,9 @@ description: Entender a arquitetura do [!DNL AEM Forms] as a Cloud Service para 
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1033'
+source-wordcount: '1034'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ A Replicação reversa não está disponível no AEM as a Cloud Service para env
 
 #### Dispatcher
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html) O é a ferramenta de balanceamento de carga e/ou cache do Adobe Experience Manager que pode ser usada com um servidor Web de classe empresarial.
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=pt-BR) O é a ferramenta de balanceamento de carga e/ou cache do Adobe Experience Manager que pode ser usada com um servidor Web de classe empresarial.
 
 ### Serviços da Adobe
 
@@ -84,7 +84,7 @@ Adobe’s PDF Services API lets create, combine, export, and extract data from P
 
 O Forms as a Cloud Service fornece opções para armazenar conteúdo em um sistema de armazenamento externo, como Blob Store, banco de dados ou um serviço de armazenamento. Você também pode armazenar dados de fluxos de trabalho em andamento (dados de variáveis de fluxo de trabalho de AEM) que contêm elementos de Dados pessoais sensíveis (SPD) em um repositório gerenciado pelo cliente para processamento seguro. A Adobe recomenda armazenar dados confidenciais apenas em armazenamentos gerenciados pelo cliente.
 
-Você pode usar o **Conector de armazenamento unificado** para se conectar ao Armazenamento de blobs e **Modelo de dados do formulário** para se conectar a bancos de dados ou serviços de back-end (RESTful, SOAP, Armazenamento Azure Blob e muito mais).
+Você pode usar o **Conector de armazenamento unificado** para se conectar ao Armazenamento de blobs e **Modelo de dados de formulário (FDM)** para se conectar a bancos de dados ou serviços de back-end (RESTful, SOAP, Armazenamento Azure Blob e muito mais).
 
 ### Serviços de documento
 
@@ -118,7 +118,7 @@ Every AEM Forms as a Cloud Service program has access to Fastly CDN service. It 
 +++
 
 +++Adaptive Forms
-Adaptive Forms enable customers to author web-friendly reflowable web forms and fragments that are used by the customers for their data capture needs. This feature enables customers to manage their complex data capture needs easily, by using multiple integrations with Adobe Sign, Document Services, Form Data Model, Automated Forms Conversion service, and more.
+Adaptive Forms enable customers to author web-friendly reflowable web forms and fragments that are used by the customers for their data capture needs. This feature enables customers to manage their complex data capture needs easily, by using multiple integrations with Adobe Sign, Document Services, Form Data Model (FDM), Automated Forms Conversion service, and more.
 
 +++
 
@@ -127,7 +127,7 @@ Automated Forms Conversion service helps accelerate digitization and modernizati
 
 +++
 
-+++Form Data Model
++++Form Data Model (FDM)
 The Form Data Model (FDM) feature is the standard way of creating data integrations with external/internal data sources and using them across the different Forms as a Cloud Service features. FDM provides a rich editor for customers to integrate, define, and manage relationships between the different entities and data sources and perform operations on them. Form data is stored in a data store hosted on the customer premises. Organizations can also use blob store hosted by the cloud provider and Adobe Experince Platform to store data.
 
 +++

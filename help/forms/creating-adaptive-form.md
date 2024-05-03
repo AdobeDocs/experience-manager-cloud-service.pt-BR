@@ -1,14 +1,14 @@
 ---
 title: Como criar o Forms adaptável?
-description: Saiba como criar um formulário adaptável para simplificar a coleta e o processamento de informações. Além disso, aprenda a criar o Formulário adaptável com base em um Modelo de dados de formulário.
+description: Saiba como criar um formulário adaptável para simplificar a coleta e o processamento de informações. Além disso, aprenda a criar o Formulário adaptável com base em um Modelo de dados de formulário (FDM).
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 78%
+source-wordcount: '1500'
+ht-degree: 67%
 
 ---
 
@@ -98,7 +98,7 @@ Você precisará do seguinte para criar um formulário adaptável:
 
 1. (Opcional) Na guia **[!UICONTROL Dados]**, selecione um modelo de dados:
 
-   * **Modelo de dados do formulário**: um [Modelo de dados do formulário](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados a um formulário adaptável. Escolha a opção Modelo de dados de formulário se o formulário adaptável que você está criando envolve a obtenção e gravação de dados de e para várias fontes de dados.
+   * **Modelo de dados do formulário**: um [Modelo de dados do formulário](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados a um formulário adaptável. Escolha Modelo de dados de formulário (FDM) se o Formulário adaptável que você está criando envolver a busca e a gravação de dados de e para várias fontes de dados.
 
    * **Esquema JSON**: o [Esquema JSON](adaptive-form-json-schema-form-model.md) representa a estrutura na qual os dados são produzidos ou consumidos pelo sistema back-end em sua organização. É possível associar o esquema a um formulário adaptável e usar seus elementos para adicionar conteúdo dinâmico ao formulário adaptável. Os elementos do esquema estão disponíveis para uso na guia Objetos do modelo de dados do navegador de conteúdo ao criar o Adaptive Forms e todos os campos também são adicionados ao Formulário adaptável criado.
 
@@ -126,7 +126,7 @@ Você precisará do seguinte para criar um formulário adaptável:
 
 1. Selecione **[!UICONTROL Criar]**. Um Formulário adaptável será criado e aberto no editor de Formulários adaptáveis. O editor exibirá o conteúdo disponível no modelo. Ele também exibe a barra lateral para personalizar o formulário criado de acordo com as necessidades.
 
-   Com base no tipo de formulário adaptável, os elementos de formulário presentes no esquema JSON <!--XFA form template, XML schema or --> associado ou no modelo de dados de formulário são exibidos na guia **[!UICONTROL Objetos do modelo de dados]** do **[!UICONTROL Navegador de conteúdo]** na barra lateral. Também é possível arrastar e soltar esses elementos para criar seu formulário adaptável.
+   Com base no tipo de Formulário adaptável, os elementos de formulário presentes no <!--XFA form template, XML schema or --> O esquema JSON ou o Modelo de dados de formulário (FDM) são exibidos no **[!UICONTROL Objetos do modelo de dados]** guia do **[!UICONTROL Navegador de conteúdo]** na barra lateral. Também é possível arrastar e soltar esses elementos para criar seu formulário adaptável.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -184,8 +184,8 @@ Você pode alterar o modelo de formulário para um formulário adaptável (com b
 1. Selecione o Formulário adaptável e selecione a variável **Propriedades** ícone.
 1. Abra a guia **[!UICONTROL Modelo de Formulário]** e siga um destes procedimentos.
 
-   * Se o formulário adaptável não tiver um modelo de formulário, você poderá escolher outro modelo de formulário e selecionar <!-- a form template, --> Esquema XML ou JSON, ou modelo de dados de formulário.
-   * Se o formulário adaptável for baseado em um modelo de formulário, você poderá escolher outro <!-- form template, --> Esquema XML ou JSON, ou Modelo de dados de formulário para o mesmo modelo de formulário.
+   * Se o formulário adaptável não tiver um modelo de formulário, você poderá escolher outro modelo de formulário e selecionar <!-- a form template, --> Esquema XML ou JSON ou modelo de dados de formulário (FDM).
+   * Se o formulário adaptável for baseado em um modelo de formulário, você poderá escolher outro <!-- form template, --> Esquema XML, JSON ou Modelo de dados de formulário (FDM) para o mesmo modelo de formulário.
 
 1. Selecionar **[!UICONTROL Salvar]** para salvar as propriedades.
 
@@ -195,8 +195,8 @@ Você pode alterar o modelo de formulário para um formulário adaptável (com b
 1. Clique no ![Ícone de Configurar](/help/forms/assets/configure-icon.svg) para abrir as **[!UICONTROL Propriedades]** do container do formulário adaptável.
 1. Selecione a guia **[!UICONTROL Modelo de Dados]** e siga um destes procedimentos:
 
-   * Se o formulário adaptável não tiver um modelo de formulário, você poderá escolher um modelo de formulário e selecionar <!-- a form template, --> Esquema XML ou JSON, ou modelo de dados de formulário.
-   * Se o formulário adaptável for baseado em um modelo de formulário, não será possível alterar o modelo de formulário. Você poderá escolher outro <!-- form template, --> Esquema XML ou JSON, ou Modelo de dados de formulário para o mesmo modelo de formulário conforme aplicável.
+   * Se o formulário adaptável não tiver um modelo de formulário, você poderá escolher um modelo de formulário e selecionar <!-- a form template, --> Esquema XML ou JSON ou modelo de dados de formulário (FDM).
+   * Se o formulário adaptável for baseado em um modelo de formulário, não será possível alterar o modelo de formulário. Você pode escolher outro <!-- form template, --> Esquema XML ou JSON, ou Modelo de dados de formulário (FDM) para o mesmo modelo de formulário, conforme aplicável.
 1. Selecionar ![Salvar](/help/forms/assets/check-button.png) para salvar as propriedades.
 
 ![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)

@@ -4,9 +4,9 @@ description: Saiba como instalar e configurar um [!DNL AEM Forms] ambiente as a 
 role: Admin, Developer, User
 feature: Adaptive Forms
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
-source-git-commit: 7fe779602f52081dc785074bdc0f374665b908e6
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '610'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 6%
 
 * **Designer de Experiência do Usuário (UX)**: um Designer de Experiência do Usuário (UX) define estilo, layout e marca para [!DNL AEM Forms] ativos.
 
-* **Profissional do Forms**: um profissional do Forms cria Forms adaptável, temas e modelos de acordo com o estilo, o layout e a marca fornecidos pelo Designer de UX. O profissional também cria e integra o formulário adaptável a um modelo de dados de formulário e fluxos de trabalho de AEM. Um profissional da Forms normalmente executa tarefas relacionadas ao front-end.
+* **Profissional do Forms**: um profissional do Forms cria Forms adaptável, temas e modelos de acordo com o estilo, o layout e a marca fornecidos pelo Designer de UX. O profissional também cria e integra o formulário adaptável a um modelo de dados de formulário (FDM) e fluxos de trabalho de AEM. Um profissional da Forms normalmente executa tarefas relacionadas ao front-end.
 
 * **Desenvolvedor do Forms**: um desenvolvedor do Forms desenvolve uma solução de formulários personalizada. Um desenvolvedor do Forms normalmente realiza o desenvolvimento de back-end, como desenvolver componentes personalizados, fluxos de trabalho de AEM, serviços de pré-preenchimento e muito mais.
 

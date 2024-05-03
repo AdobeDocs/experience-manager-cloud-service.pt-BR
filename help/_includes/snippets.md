@@ -1,5 +1,5 @@
 ---
-source-git-commit: e71e247f5b6de806b36c5c759b29e7273511f94e
+source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 14%
@@ -29,7 +29,7 @@ ht-degree: 14%
 * [Conectar o formulário adaptável ao Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [Conectar o formulário adaptável ao Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [Conectar o formulário adaptável ao armazenamento de blobs do Microsoft Azure](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
-* [Conectar o formulário adaptável ao Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Conectar o formulário adaptável ao Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Usar o Adobe Sign em um formulário adaptável AEM](/help/forms/working-with-adobe-sign.md)
 * [Adicionar uma nova localidade para um Formulário adaptável](/help/forms/supporting-new-language-localization-core-components.md)
 * [Enviar dados do Formulário adaptável a um banco de dados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
@@ -51,7 +51,7 @@ ht-degree: 14%
 * [Chamar um fluxo de trabalho de AEM](/help/forms/configure-submit-action-workflow.md)
 * [Enviar para o Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar para o Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Conectar o formulário adaptável ao aplicativo Salesforce](/help/forms/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+* [Conectar o formulário adaptável ao aplicativo Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Conectar um formulário adaptável ao Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## Consulte também: {#see-more-forms-eds}

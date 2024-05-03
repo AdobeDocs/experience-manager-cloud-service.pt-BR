@@ -3,13 +3,13 @@ Title: How to send data to a SharePoint storage on submission of an Adaptive For
 Description: Learn how to send data from your Adaptive Form to a SharePoint storage like a SharePoint list or Document library when you submit the form.
 keywords: Como conectar a lista do SharePoint para um formulário adaptável?, Como conectar a biblioteca de documentos do SharePoint para um formulário adaptável, Enviar para o SharePoint, Criar uma configuração da biblioteca de documentos do SharePoint, Usar a ação enviar Enviar para o SharePoint em um formulário adaptável, Conectar um formulário adaptável à lista do Microsoft&reg; SharePoint.
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: e925a750-5fb5-4950-afd3-78551eec985d
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
-
 
 # Conectar um formulário adaptável ao Microsoft® SharePoint
 
@@ -93,7 +93,7 @@ A estrutura de pastas para salvar os dados é `/folder_name/form_name/year/month
 Para usar o [!UICONTROL Enviar para a lista do SharePoint] Enviar ação em um formulário adaptável:
 
 1. [Criar uma configuração de lista do SharePoint](#create-sharepoint-list-configuration): ele conecta o AEM Forms ao seu Armazenamento de lista do Microsoft® Sharepoint.
-1. [Usar o Enviar usando o Modelo de dados de formulário em um Formulário adaptável](#use-submit-using-fdm): ele conecta seu formulário adaptável ao Microsoft® SharePoint configurado.
+1. [Usar o Enviar usando o Modelo de dados de formulário (FDM) em um formulário adaptável](#use-submit-using-fdm): ele conecta seu formulário adaptável ao Microsoft® SharePoint configurado.
 
 ### Criar uma configuração de lista do SharePoint {#create-sharepoint-list-configuration}
 
@@ -117,24 +117,24 @@ Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 1. Selecionar **[!UICONTROL Criar]** para criar a configuração de nuvem do Microsoft® SharePointList.
 
 
-### Usar o Enviar usando o Modelo de dados de formulário em um Formulário adaptável {#use-submit-using-fdm}
+### Usar o Enviar usando o Modelo de dados de formulário (FDM) em um formulário adaptável {#use-submit-using-fdm}
 
 Você pode usar a configuração da Lista do SharePoint criada em um Formulário adaptável para salvar dados ou o Documento de registro gerado em uma Lista do SharePoint. Execute as seguintes etapas para usar uma Lista SharePoint em um Formulário adaptável como:
 
-1. [Criar um modelo de dados de formulário usando o Microsoft](/help/forms/create-form-data-models.md)
-1. [Configurar o modelo de dados do formulário para recuperar e enviar dados](/help/forms/work-with-form-data-model.md#configure-services)
+1. [Criar um modelo de dados de formulário (FDM) usando o Microsoft](/help/forms/create-form-data-models.md)
+1. [Configurar o Modelo de dados de formulário (FDM) para recuperar e enviar dados](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Criação de um Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
-1. [Configurar a ação Enviar usando um Modelo de dados de formulário](/help/forms/using-form-data-model.md)
+1. [Configurar a ação Enviar usando um Modelo de dados de formulário (FDM)](/help/forms/using-form-data-model.md)
 
 Ao enviar o formulário, os dados são salvos no Armazenamento de Lista do Microsoft® Sharepoint especificado.
 
 >[!NOTE]
 >
 > Na Lista do Microsoft® SharePoint, os seguintes tipos de coluna não são suportados:
-* coluna de imagem
-* coluna de metadados
-* coluna de pessoa
-* coluna de dados externos
+> * coluna de imagem
+> * coluna de metadados
+> * coluna de pessoa
+> * coluna de dados externos
 
 ## Artigos relacionados
 

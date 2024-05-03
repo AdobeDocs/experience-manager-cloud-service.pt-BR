@@ -5,9 +5,10 @@ contentOwner: khsingh
 role: User
 feature: Adaptive Forms, FAQ
 index: false
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '992'
 ht-degree: 2%
 
 ---
@@ -75,15 +76,15 @@ Não, a etapa Verificar não está disponível para [!DNL Forms] as a Cloud Serv
 * **Posso adicionar gráficos a um Formulário adaptável?**
 Sim, você pode adicionar gráficos ao Forms adaptável. O Forms adaptável fornece um componente de gráfico. Você pode usá-lo para adicionar gráficos a um Formulário adaptável.
 
-* **Posso conectar um modelo de dados de formulário a um modelo de banco de dados relacional?**
-Você pode conectar um modelo de dados de formulário a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services]e o perfil de usuário Experience Manager como fontes de dados. Não há suporte disponível para conectar um modelo de dados de formulário a um banco de dados relacional.
+* **Posso conectar um Modelo de dados de formulário (FDM) a um modelo de banco de dados relacional?**
+É possível conectar um Modelo de dados de formulário (FDM) ao [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services]e o perfil de usuário Experience Manager como fontes de dados. Não há suporte disponível para conectar um Modelo de dados de formulário (FDM) a um banco de dados relacional.
 
-* **Posso usar certificados personalizados com o Modelo de dados de formulário para autenticação?**
-O modelo de dados de formulário não fornece um método para usar certificados personalizados para autenticação. Portanto, os certificados personalizados como x509 e SSL bidirecional não são compatíveis.
+* **Posso usar certificados personalizados com o Form Data Model (FDM) para autenticação?**
+O Modelo de dados de formulário (FDM) não fornece um método para usar certificados personalizados para autenticação. Portanto, os certificados personalizados como x509 e SSL bidirecional não são compatíveis.
 
 * **Posso usar a ação enviar do Forms Portal no Adaptive Forms?**
 
-  Você pode modificar seu Forms adaptável existente para usar [Enviar para endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Enviar e-mail](configuring-submit-actions.md#send-email), [Enviar usando modelo de dados do formulário](configuring-submit-actions.md#submit-using-form-data-model), e [Chamar um fluxo de trabalho de AEM](configuring-submit-actions.md#invoke-an-aem-workflow) Enviar ações. As ações de envio do Portal do Forms e do Portal do Forms ainda não estão disponíveis. Fique de olho nas notas de versão mensais para a disponibilidade dos recursos.
+  Você pode modificar seu Forms adaptável existente para usar [Enviar para endpoint REST](configuring-submit-actions.md#submit-to-rest-endpoint), [Enviar e-mail](configuring-submit-actions.md#send-email), [Enviar usando o Modelo de dados de formulário (FDM)](configuring-submit-actions.md#submit-using-form-data-model), e [Chamar um fluxo de trabalho de AEM](configuring-submit-actions.md#invoke-an-aem-workflow) Enviar ações. As ações de envio do Portal do Forms e do Portal do Forms ainda não estão disponíveis. Fique de olho nas notas de versão mensais para a disponibilidade dos recursos.
 
 * **Posso usar [!DNL AEM Forms] aplicativo com [!DNL AEM Forms] as a Cloud Service?**
 
@@ -123,5 +124,3 @@ Crie o Formulário adaptável com base no esquema JSON no ambiente Experience Ma
     A sample Service Credential JSON file fields mapped to Adobe Experience Manager connector for Microsoft Power Automate.
 
     -->
-
-

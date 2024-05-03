@@ -4,10 +4,10 @@ description: Descubra como criar ou adicionar um Formulário adaptável à sua p
 feature: Adaptive Forms, Foundation Components, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '3177'
-ht-degree: 3%
+source-wordcount: '3184'
+ht-degree: 1%
 
 ---
 
@@ -204,22 +204,22 @@ Uma ação enviar permite escolher o destino dos dados capturados por meio de um
 1. Selecione e configure uma ação Enviar, com base em seus requisitos. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de envio do formulário adaptável](/help/forms/configuring-submit-actions.md)
 
 
-## Configurar um esquema ou modelo de dados de formulário para um formulário na página do AEM Sites ou Fragmento de experiência {#configure-schema-or-data-model-for-form}
+## Configurar um esquema ou um modelo de dados de formulário (FDM) para um formulário na página do AEM Sites ou no fragmento de experiência {#configure-schema-or-data-model-for-form}
 
-Você pode usar o modelo de dados do formulário e conectar um formulário a uma fonte de dados para enviar e receber dados com base nas ações do usuário. Também é possível conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido. De acordo com os requisitos, conecte o formulário a um esquema JSON ou modelo de dados do formulário:
+Você pode usar o Modelo de dados de formulário (FDM) para conectar um formulário a uma Fonte de dados para enviar e receber dados com base nas ações do usuário. Também é possível conectar um formulário a um esquema JSON para receber os dados enviados em um formato predefinido. Com base no requisito, conecte seu formulário a um esquema JSON ou Modelo de dados de formulário (FDM):
 
 * [Crie um esquema JSON e faça upload para o seu ambiente](/help/forms/adaptive-form-json-schema-form-model.md)  ou,
-* [Criar um modelo de dados do formulário](/help/forms/create-form-data-models.md)
+* [Criar um modelo de dados de formulário (FDM)](/help/forms/create-form-data-models.md)
 
-Para configurar um Esquema JSON ou um Modelo de dados de formulário para seu formulário:
+Para configurar um Esquema JSON ou um Modelo de dados de formulário (FDM) para seu formulário:
 
 1. Abra o Editor de páginas AEM ou o Fragmento de experiência que contém o Formulário adaptável.
 1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner adaptável do Forms]** que hospeda o formulário adaptável. Uma página do AEM Sites pode hospedar vários Forms adaptáveis. Portanto, selecione cuidadosamente o Contêiner adaptável correto do Forms.
 1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
    ![Clique no ícone Chave inglesa para configurar modelos de dados para o formulário adaptável](/help/forms/assets/form-data-model-adaptive-forms-container.png)
-1. Selecione e configure um Esquema JSON ou Modelo de dados de formulário, com base em seus requisitos. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de envio do formulário adaptável](/help/forms/configuring-submit-actions.md).
+1. Selecione e configure um Esquema JSON ou um Modelo de dados de formulário (FDM), com base em seus requisitos. Para obter informações detalhadas sobre Ações de Envio, consulte [Ação de envio do formulário adaptável](/help/forms/configuring-submit-actions.md).
 
-   * Ao selecionar a variável **[!UICONTROL Modelo de formulário]** , use o **[!UICONTROL Selecionar modelo de dados do formulário]** opção para selecionar um modelo de dados de formulário pré-configurado.
+   * Ao selecionar a variável **[!UICONTROL Modelo de formulário]** , use o **[!UICONTROL Selecionar modelo de dados do formulário]** opção para selecionar um Modelo de Dados de Formulário (FDM) pré-configurado.
    * Ao selecionar a variável **[!UICONTROL Esquema]** , use o **[!UICONTROL Esquema]** opção para selecionar um esquema JSON para o formulário.
 
 1. Clique em **[!UICONTROL Concluído]**.

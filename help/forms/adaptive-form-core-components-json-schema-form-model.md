@@ -1,51 +1,43 @@
 ---
-title: Como projetar o esquema JSON para um formulário adaptável?
-description: Saiba como criar um esquema JSON para um Formulário adaptável e criar um Formulário adaptável com base no esquema para produzir dados de reclamação de esquema.
-feature: Adaptive Forms, Foundation Components
+title: Como projetar o esquema JSON para um componente principal do Formulário adaptável?
+description: Saiba como criar um esquema JSON para componentes principais de um formulário adaptável e criar um formulário adaptável (componentes principais) com base no esquema para produzir dados de reclamação de esquema.
+feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
 source-git-commit: 10389af2bce06f95d4d841371b7111340d40edaa
 workflow-type: tm+mt
-source-wordcount: '1343'
-ht-degree: 5%
+source-wordcount: '1301'
+ht-degree: 4%
 
 ---
 
-# Criar um esquema JSON para um Formulário adaptável {#creating-adaptive-forms-using-json-schema}
+# Criar esquema JSON para um formulário adaptável (componentes principais){#creating-adaptive-forms-using-json-schema}
 
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| Componentes principais | [Clique aqui](/help/forms/adaptive-form-core-components-json-schema-form-model.md) |
-| Foundation | Este artigo |
-
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
-
-| Versão | Link do artigo |
-| -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-json-schema-form-model.html) |
-| AEM as a Cloud Service | Este artigo |
+| Foundation | [Clique aqui](/help/forms/adaptive-form-json-schema-form-model.md) |
+| Componentes principais | Este artigo |
 
 
 ## Pré-requisitos {#prerequisites}
 
-A criação de um formulário adaptável usando um Esquema JSON como seu modelo de formulário requer compreensão básica do Esquema JSON. É recomendável ler o conteúdo a seguir antes deste artigo.
+A criação de um formulário adaptável com base em componentes principais usando um Esquema JSON como seu modelo de formulário requer compreensão básica do Esquema JSON. É recomendável ler o conteúdo a seguir antes deste artigo.
 
-* [Criação de um formulário adaptável](creating-adaptive-form.md)
+* [Criação de um formulário adaptável com base nos componentes principais](/help/forms/creating-adaptive-form-core-components.md)
 * [Esquema JSON](https://json-schema.org/)
 
 ## Utilização de um esquema JSON como modelo de formulário  {#using-a-json-schema-as-form-model}
 
-O Adobe Experience Manager Forms oferece suporte à criação de um Formulário adaptável usando um Esquema JSON existente como o modelo de formulário. Esse esquema JSON representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O esquema JSON usado deve ser compatível com [Especificações da v4](https://json-schema.org/draft-04/schema).
+O Adobe Experience Manager Forms oferece suporte à criação de um Formulário adaptável com base em componentes principais, usando um Esquema JSON existente como modelo de formulário. Esse esquema JSON representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O esquema JSON usado deve ser compatível com [Especificações da v4](https://json-schema.org/draft-04/schema).
 
 Os principais recursos do uso de um Esquema JSON são:
 
-* A estrutura do JSON é exibida como uma árvore na guia Localizador de conteúdo no modo de criação de um Formulário adaptável. Você pode arrastar e adicionar elemento da hierarquia JSON ao Formulário adaptável.
+* A estrutura do JSON é exibida como uma árvore na guia Localizador de conteúdo no modo de criação de um Formulário adaptável. Você pode arrastar e adicionar elemento da hierarquia JSON ao Formulário adaptável com base nos componentes principais.
 * Você pode preencher previamente o formulário usando o JSON compatível com o esquema associado.
 * No envio, os dados inseridos pelo usuário são enviados como JSON, que se alinha ao esquema associado.
 
-Um Esquema JSON consiste em tipos de elementos simples e complexos. Os elementos têm atributos que adicionam regras ao elemento. Quando esses elementos e atributos são arrastados para um Formulário adaptável, eles são mapeados automaticamente para o componente de Formulário adaptável correspondente.
+Um Esquema JSON consiste em tipos de elementos simples e complexos. Os elementos têm atributos que adicionam regras ao elemento. Quando esses elementos e atributos são arrastados para um Formulário adaptável, eles são mapeados automaticamente para os componentes de Formulário adaptável correspondentes.
 
 Esse mapeamento de elementos JSON com componentes de Formulário adaptável é o seguinte:
 
@@ -59,12 +51,6 @@ Esse mapeamento de elementos JSON com componentes de Formulário adaptável é o
                 "Date of Birth"
               ],
               "description": "Date of birth in DD MMMM, YYYY",
-              "aem:afProperties": {
-                "displayPictureClause": "date{DD MMMM, YYYY}",
-                "displayPatternType": "date{DD MMMM, YYYY}",
-                "validationPatternType": "date{DD MMMM, YYYY}",
-                "validatePictureClause": "date{DD MMMM, YYYY}",
-                "validatePictureClauseMessage": "Date must be in DD MMMM, YYYY format."
               }
 ```
 
@@ -246,11 +232,7 @@ Este é um exemplo de um Esquema JSON.
      "type": "boolean"
     },
     "phone": {
-     "type": "number",
-     "aem:afProperties": {
-      "sling:resourceType": "/libs/fd/af/components/guidetelephone",
-      "guideNodeClass": "guideTelephone"
-     }
+     "type": "number"
     },
     "address": {
      "type": "string"
@@ -346,9 +328,10 @@ As chaves de definição são usadas para identificar esquemas reutilizáveis. A
 
 O exemplo acima define um registro de cliente, em que cada cliente tem um endereço de entrega e de cobrança. A estrutura de ambos os endereços é a mesma — os endereços têm endereço, cidade e estado — portanto, é uma boa ideia não duplicar os endereços. Também facilita a adição e a exclusão de campos para qualquer alteração futura.
 
-## Pré-configuração de campos na definição do esquema JSON {#pre-configuring-fields-in-json-schema-definition}
+<!--
+## Pre-Configuring fields in JSON Schema Definition {#pre-configuring-fields-in-json-schema-definition}
 
-Você pode usar o **aem:afProperties** propriedade para pré-configurar o campo Esquema JSON para mapear para um componente de Formulário adaptável personalizado. Um exemplo está listado abaixo:
+You can use the **aem:afProperties** property to preconfigure JSON Schema field to map to a custom Adaptive Form component. An example is listed below:
 
 ```json
 {
@@ -356,16 +339,13 @@ Você pode usar o **aem:afProperties** propriedade para pré-configurar o campo 
         "sizeInMB": {
             "type": "integer",
             "minimum": 16,
-            "maximum": 512,
-            "aem:afProperties" : {
-                 "sling:resourceType" : "/apps/fd/af/components/guideTextBox",
-                 "guideNodeClass" : "guideTextBox"
-             }
+            "maximum": 512
         }
     },
     "required": [ "sizeInMB" ],
     "additionalProperties": false
 }
+
 ```
 
 <!--- ## Configure scripts or expressions for form objects  {#configure-scripts-or-expressions-for-form-objects}
@@ -641,7 +621,7 @@ Here is the sample JSON code for previously mentioned examples.
 
 ## Limitar valores aceitáveis para um componente de Formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Você pode adicionar as seguintes restrições aos elementos do Esquema JSON para limitar os valores aceitáveis para um componente de Formulário adaptável:
+Você pode adicionar as seguintes restrições aos elementos do Esquema JSON para limitar os valores aceitáveis para um componente principal do Formulário adaptável:
 
 <table>
  <tbody>
@@ -776,6 +756,10 @@ Você tem duas opções:
 **Qual deve ser a extensão do arquivo de esquema JSON?**
 
 A extensão do arquivo de esquema JSON deve ser .schema.json. Por exemplo, &lt;filename>.schema.json.
+
+**É `aem:afProperties` compatível como parte do esquema JSON no Adaptive Forms com base nos componentes principais?**
+
+Não, `aem:afProperties` não é compatível com os Componentes principais. Essa propriedade só tem suporte para componentes de base.
 
 ## Consulte também {#see-also}
 

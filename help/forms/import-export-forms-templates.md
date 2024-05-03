@@ -4,16 +4,17 @@ description: Saiba como migrar Forms adaptável, PDF forms, temas e outros ativo
 topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
+source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1195'
 ht-degree: 0%
 
 ---
 
 # Importar ou exportar ativos adaptáveis do Forms e do AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
-Você pode mover o Forms adaptável e ativos relacionados, como temas do Formulário adaptável, Modelos de dados de formulário, Modelos de formulários adaptáveis, fragmentos de documentos e PDF forms entre [!DNL AEM Forms] instâncias. Você pode importar e exportar ativos no pacote CRX ou em formatos de arquivo binário.
+Você pode mover o Adaptive Forms e ativos relacionados, como temas do Formulário adaptável, Modelo de dados de formulário (FDM), modelos de Formulário adaptável, fragmentos de documento e PDF forms entre [!DNL AEM Forms] instâncias. Você pode importar e exportar ativos no pacote CRX ou em formatos de arquivo binário.
 
 Ao exportar um Formulário adaptável, as políticas de conteúdo e os modelos não são exportados. Uso [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) para exportar esses ativos.
 
@@ -26,7 +27,7 @@ Para baixar formulários ou ativos relacionados:
 1. Selecione os ativos e selecione a variável **[!UICONTROL Baixar]** ícone.
 1. Em Baixar ativos, escolha uma das seguintes opções e selecione **[!UICONTROL Baixar]**.
 
-   * **Baixar como Pacote CRX:** Use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de uma [!DNL AEM Forms] instância para outra. Ele baixa todos os ativos e pastas como um pacote CRX, incluindo os formulários criados no AEM (Forms adaptável e fragmentos de formulário adaptável), conjuntos de formulários, modelo de dados de formulário, modelos de formulário, documentos PDF e recursos referenciados (XSDs e imagens).
+   * **Baixar como Pacote CRX:** Use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de uma [!DNL AEM Forms] instância para outra. Ele baixa todos os ativos e pastas como um pacote CRX, incluindo os formulários criados no AEM (Forms adaptável e Fragmentos de formulário adaptável), conjuntos de formulários, modelo de dados de formulário (FDM), modelos de formulário, documentos PDF e recursos referenciados (XSDs e imagens).
 A vantagem de baixar ativos como um pacote é que ele também baixa referências por ativos selecionados. Por exemplo, se você tiver um formulário adaptável que usa um modelo de formulário, XSD e uma imagem. Ao selecionar esse Formulário adaptável e baixá-lo como um pacote, o pacote baixado também contém o modelo de formulário, o XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
 
    * **Baixar ativos como arquivos binários:** Use a opção para baixar somente os modelos de formulário (XDP), PDF forms (PDF), documento (PDF) e recursos (imagens, esquemas, folhas de estilos). É possível editar esses ativos com aplicativos externos. Ele baixa os ativos que têm binários, como imagens, PDF e outros formatos compatíveis como um arquivo .zip.
