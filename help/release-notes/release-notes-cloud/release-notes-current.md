@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 00d91be618cd7ce1fb9e78115fbe3d431b20cd34
+source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1963'
 ht-degree: 12%
 
 ---
@@ -97,7 +97,7 @@ Agora você pode [atribuir ou remover formulário de metadados a várias pastas]
 
 -->
 
-### Novos recursos no Pré-lançamento do AEM Forms {#forms-pre-release}
+### Novos recursos no AEM Forms {#forms-new-features}
 
 * **Editor de regras visuais aprimorado para Forms adaptável baseado em componentes principais**: esta versão traz uma atualização significativa ao editor visual de regras para formulários adaptáveis com base em componentes principais. Esta versão traz uma atualização significativa para o editor visual de regras para formulários adaptáveis com base em componentes principais. Essa atualização se concentra em simplificar as interações com funções personalizadas, permitindo que você crie formulários mais robustos e eficientes.
 
