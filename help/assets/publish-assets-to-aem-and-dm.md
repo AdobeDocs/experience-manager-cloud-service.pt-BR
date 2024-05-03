@@ -1,9 +1,9 @@
 ---
 title: Publicação rápida no AEM e no Dynamic Media
-description: A Publicação rápida é um recurso na nova interface do usuário ou exibição de ativos. Esse recurso oferece flexibilidade aos usuários para publicação rápida no AEM e Dynamic Media, simultânea ou individualmente. Isso significa que, após selecionar ativos e pastas, os usuários podem optar por publicar no Dynamic Media ou Publicar no AEM. O recurso Publicação rápida prepara a nova interface para publicar ativos e pastas no Dynamic Media e no AEM.
-source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
+description: A Publicação rápida na exibição de Ativos permite publicar ativos no AEM e no Dynamic Media, de forma simultânea ou separada. Você pode selecionar ativos e pastas e optar por publicar no Dynamic Media ou AEM.
+source-git-commit: d80d794d739a476a937a8e71d114b1e255103b67
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
