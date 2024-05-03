@@ -1,9 +1,9 @@
 ---
 title: Publicação rápida no AEM e no Dynamic Media
 description: A Publicação rápida é um recurso na nova interface do usuário ou exibição de ativos. Esse recurso oferece flexibilidade aos usuários para publicação rápida no AEM e Dynamic Media, simultânea ou individualmente. Isso significa que, após selecionar ativos e pastas, os usuários podem optar por publicar no Dynamic Media ou Publicar no AEM. O recurso Publicação rápida prepara a nova interface para publicar ativos e pastas no Dynamic Media e no AEM.
-source-git-commit: a1069ec278143665c1e17ea1a482589763dd153f
+source-git-commit: f3b600fc3d9c519158b6b90bd9a9f881724934de
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Publicar ativos no AEM e no Dynamic Media{#Publish-Assets-to-AEM-and-Dynamic-Media}
 
-O Experience Manager Assets permite publicar rapidamente ativos no Experience Manager e no Dynamic Media usando a visualização Ativos. Isso garante que você gerencie seus ativos e os publique usando [Exibição de ativos sem alternar para a exibição de Administrador](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/overview#persona-based-experiences).
+O Experience Manager Assets permite publicar rapidamente ativos no Experience Manager e no Dynamic Media usando a visualização Ativos. Isso garante que você gerencie seus ativos e os publique usando [Exibição de ativos sem alternar para a exibição de Administrador](/help/assets/overview.md##persona-based-experiences).
 
 A visualização do Experience Manager Assets oferece a flexibilidade de publicar ativos no AEM, no Dynamic Media ou em ambos ao mesmo tempo. Você pode publicar ativos ao fazer upload, navegar e pesquisar ativos. Todas essas opções para publicar ativos são explicadas em detalhes neste artigo.
 
@@ -21,8 +21,8 @@ Defina essas configurações para exibir as opções de publicação para AEM e 
 
 * Para exibir as opções de publicação do Dynamic Media, defina as seguintes configurações usando a Exibição de administração:
 
-   * [Criar uma configuração de nuvem do Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm#configuring-dynamic-media-cloud-services).
-   * Defina o modo de Publicação do Dynamic Media no nível da pasta. Você também pode definir essas configurações ao criar a configuração da nuvem do Dynamic Media. Para substituir essas configurações no nível da pasta, consulte [Configurar publicação seletiva no nível da pasta no Dynamic Media](https://experienceleague.adobe.com/br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing).
+   * [Criar uma configuração de nuvem do Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+   * Defina o modo de Publicação do Dynamic Media no nível da pasta. Você também pode definir essas configurações ao criar a configuração da nuvem do Dynamic Media. Para substituir essas configurações no nível da pasta, consulte [Configurar publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 * Para exibir as opções de publicação do AEM, você deve configurar o endpoint de publicação do AEM para o seu ambiente.
 
@@ -99,7 +99,7 @@ A opção de publicar no Dynamic Media na página de resultados da pesquisa depe
 
 Para verificar o status de publicação de um ativo ou de uma pasta:
 
-1. Clique em **Assets** no **Gerenciamento de ativos** seção disponível no painel esquerdo.
+1. Clique em **[!UICONTROL Assets]** no **[!UICONTROL Gerenciamento de ativos]** seção disponível no painel esquerdo.
 2. Alterne para a Exibição de lista usando o Alternador de exibição. É possível visualizar as propriedades do ativo, como AEM Publish, Dynamic Media Publish, título, tamanho, dimensões e assim por diante.\
    Se um ativo ou pasta não for publicado, o status para **Publicação no AEM** e **Dynamic Media Publish** colunas é exibida como **N/D**
    ![verificar status de publicação1](/help/assets/assets/check-publish-status1.png)
