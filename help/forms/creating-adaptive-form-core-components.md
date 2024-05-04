@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 619cf91e3d1cc5504d8de0e70eb88e9ae7285af9
 workflow-type: tm+mt
-source-wordcount: '2281'
-ht-degree: 47%
+source-wordcount: '2341'
+ht-degree: 46%
 
 ---
 
@@ -190,6 +190,17 @@ Você pode usar o serviço de preenchimento do modelo de dados de formulário pa
 
 1. Selecionar **[!UICONTROL Salvar]** para salvar as propriedades.
 
+
+## Como renomear um formulário adaptável para AEM? {#rename-an-AEM-Adaptive-Form}
+
+Para renomear um formulário adaptável, execute as seguintes etapas:
+
+1. Selecione um formulário adaptável na interface do usuário do AEM Forms.
+1. Clique no link **Propriedades** localizado no painel superior.
+1. Altere o nome do formulário no campo **Título** conforme mostrado na imagem abaixo.
+1. Clique em **Salvar e fechar**.
+
+![Renomear um formulário adaptável de AEM](/help/forms/assets/change-af-name.png)
 
 <!--
 

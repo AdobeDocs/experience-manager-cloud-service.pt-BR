@@ -5,10 +5,10 @@ contentOwner: khsingh
 feature: Adaptive Forms, Troubleshooting
 role: User
 exl-id: 249ec8f2-4176-428a-bfcf-80b381ec7263
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: a19a3d81652cb17fcd6b11e6047d2ea697bf3041
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 1%
+source-wordcount: '213'
+ht-degree: 0%
 
 ---
 
@@ -53,3 +53,13 @@ If the profile exists and issues still persist, contact Adobe Support. -->
 Os usuários não podem executar a criação de pipeline. O pipeline falha após ser executado por algum tempo.
 
 Para resolver o problema, abra o Cloud Manager e selecione a **[!UICONTROL Atualizar]** para o seu ambiente e execute o pipeline.
+
+
+## Os pacotes não estão no estado ativo {#bundles-inactive-state}
+
+Para resolver o problema, execute as seguintes etapas:
+
+1. Inicie o AEM e aguarde até que todos os pacotes estejam ativos.
+1. Pare o AEM (Ctrl + C).
+1. Coloque o Forms `.far` arquivo na pasta de instalação.
+1. Reinicie o servidor AEM.
