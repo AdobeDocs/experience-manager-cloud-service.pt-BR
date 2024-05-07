@@ -2,7 +2,7 @@
 title: Teste funcional
 description: Saiba mais sobre os três diferentes tipos de testes funcionais integrados ao processo de implantação do AEM as a Cloud Service para garantir a qualidade e a confiabilidade do seu código.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+source-git-commit: b85d43a05c8bb8a6438ab44bd184b7624456ab6a
 workflow-type: tm+mt
 source-wordcount: '1354'
 ht-degree: 9%
@@ -45,9 +45,9 @@ O diagrama a seguir fornece uma exibição detalhada das portas de qualidade dis
 
 |                               | Testes de unidade | Personalizado<br/> Testes funcionais | Personalizado<br/> Testes de IU | Cliente<br/> Validações | Manual<br/> Testes |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|
-| **Pipeline de produção** | Sim<br/>Bloqueio<br/> | Sim<br/>Bloqueio<br/>Tempo limite de 60m | Sim<br/>Bloqueio<br/>Tempo limite de 60m | Não | Não |
-| **Pipeline de não produção** | Sim<br/>Bloqueio<br/> | Opt-In<br/>Bloqueio<br/>Tempo limite de 60m | Opt-In<br/>Bloqueio<br/>Tempo limite de 60m | Não | Não |
-| **Validação interna de Adobe** | Sim<br/>Bloqueio<br/> | Sim<br/>Bloqueio<br/>Tempo limite de 60m | Sim<br/>Bloqueio<br/>Tempo limite de 60m | Não | Não |
+| **Pipeline de produção** | Sim<br/>Bloqueio<br/> | Sim<br/>Bloqueio<br/>Tempo limite de 60m | Sim<br/>Bloqueio<br/>Tempo limite de 30m | Não | Não |
+| **Pipeline de não produção** | Sim<br/>Bloqueio<br/> | Opt-In<br/>Bloqueio<br/>Tempo limite de 60m | Opt-In<br/>Bloqueio<br/>Tempo limite de 30m | Não | Não |
+| **Validação interna de Adobe** | Sim<br/>Bloqueio<br/> | Sim<br/>Bloqueio<br/>Tempo limite de 60m | Sim<br/>Bloqueio<br/>Tempo limite de 30m | Não | Não |
 | **CI/CD do cliente** | Sim | Sim | Sim | Sim | Sim |
 | **Desenvolvedor local do cliente** | Sim | Sim | Sim | Sim | Sim |
 
