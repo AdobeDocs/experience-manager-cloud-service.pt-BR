@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ee16d3a0fe1fc93c215d31f7dea0e9c21e051350
+source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
 workflow-type: tm+mt
-source-wordcount: '1963'
-ht-degree: 12%
+source-wordcount: '2655'
+ht-degree: 9%
 
 ---
 
@@ -210,6 +210,80 @@ Ao depurar o código em um [RDE (Rapid Development Environment, ambiente de dese
 * transmitir vários logs em paralelo
 
 Entre em contato com **<aemcs-rde-support@adobe.com>** para experimentar e fornecer feedback.
+
+
+## [!DNL Experience Manager] Guias {#guides}
+
+
+### Capacidade de traduzir conteúdo em vários idiomas usando grupos de idiomas pré-configurados
+
+O Experience Manager Guides agora permite criar grupos de idiomas e traduzir facilmente seu conteúdo em vários idiomas. Esse recurso ajuda a organizar e gerenciar traduções de acordo com as necessidades da organização.
+
+Por exemplo, se você precisar traduzir o conteúdo para alguns países na Europa, é possível criar um grupo de idiomas para idiomas europeus, como inglês (EN), francês (FR), alemão (DE), espanhol (ES) e italiano (IT).
+
+![painel tradução](../assets/guides/translation-languages-2404.png)
+
+*Selecione os grupos de idiomas ou idiomas para os quais deseja traduzir os documentos.*
+
+>[!NOTE]
+>
+>Se a pasta de destino de um idioma estiver ausente ou se o idioma de destino for o mesmo da origem, ele ficará esmaecido e exibirá um sinal de aviso.
+
+Como administrador, você pode criar grupos de idiomas e configurá-los para vários perfis de pasta. Como autor, você pode exibir os grupos de idiomas configurados no perfil da pasta.
+
+
+De modo geral, a criação de grupos de idiomas aumenta a eficiência e a produtividade dos projetos de tradução, melhorando, em última análise, o processo de localização em vários idiomas.
+
+
+Saiba como [traduzir documentos a partir do Editor da Web](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/translate-documents-web-editor)
+
+### Experiência remodelada para pesquisar e filtrar arquivos na visualização de repositório
+
+Agora, você tem uma experiência aprimorada ao filtrar arquivos. A funcionalidade renovada para filtrar arquivos fornece uma maneira aprimorada de pesquisar e navegar facilmente pelos arquivos.
+
+![pesquisar arquivos na visualização de repositório](../assets/guides/repository-filter-search-2404.png)
+
+*Procurar os arquivos que contêm o texto`general purpose.`*
+
+Aproveite benefícios como acesso mais rápido a arquivos relevantes e uma interface do usuário mais intuitiva, tornando sua experiência de pesquisa mais estável e eficiente.
+
+![filtro de pesquisa rápida ](../assets/guides/repository-filter-search-quick.png)
+
+*Use os filtros rápidos para procurar arquivos DITA e não DITA.*
+
+Saiba mais sobre o **Filtrar pesquisa** recurso no [Painel esquerdo](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) seção.
+
+### Aprimoramentos nos Conectores de origem de dados
+
+Os seguintes aprimoramentos foram feitos nos conectores de fonte de dados da versão 2024.4.0:
+
+#### Conecte-se às Fontes de Dados dos Quadros de Desenvolvimento (ADO) do Salsify, Akeneo e Microsoft Azure
+
+Além dos conectores prontos para uso existentes, o Experience Manager Guides também fornece conectores para fontes de dados do Salsify, Akeneo e Microsoft Azure DevOps Boards (ADO). Como administrador, você pode baixar e instalar esses conectores. Em seguida, configure os conectores instalados.
+
+#### Copie e cole a amostra de consulta para criar um trecho de conteúdo ou tópico
+
+Você pode copiar e colar facilmente uma amostra de consulta de dados no gerador para criar um trecho de conteúdo ou tópico. Com esse recurso, não é necessário lembrar a sintaxe ou criar um query manualmente. Em vez de digitar manualmente a consulta, você pode copiar e colar uma consulta de exemplo, editá-la e usá-la para buscar os dados de acordo com suas necessidades.
+
+![caixa de diálogo inserir trecho de conteúdo](../assets/guides/insert-content-snippet.png)
+
+*Copie e edite um exemplo de consulta para criar o trecho de conteúdo.*
+
+#### Conectar-se a arquivos de dados JSON usando um conector de arquivos
+
+
+Agora, como administrador, você pode configurar um conector de arquivo JSON para usar arquivos de dados JSON como fonte de dados. Use o conector para importar os arquivos JSON do seu computador ou do Adobe Experience Manager Assets. Em seguida, como autor, você pode criar fragmentos de conteúdo ou tópicos usando os geradores.
+
+Esse recurso ajuda você a usar os dados armazenados em seus arquivos JSON e reutilizá-los em vários snippets. O conteúdo também é atualizado dinamicamente sempre que você atualiza os arquivos JSON.
+
+#### Configurar vários URLs de recursos para um conector criar trechos de conteúdo ou tópicos
+
+Como administrador, você pode configurar vários URLs de recursos para alguns conectores, como Cliente REST genérico, Salsify, Akeneo e placas DevOps (ADO) do Microsoft Azure.
+Em seguida, como autor, conecte-se às fontes de dados para criar trechos de conteúdo ou tópicos usando os geradores. Esse recurso é útil, pois você não precisa criar uma fonte de dados para cada URL. Ele ajuda você a buscar dados rapidamente de qualquer um dos recursos de uma fonte de dados específica em um único trecho de conteúdo ou tópico. Exibir mais detalhes sobre os conectores de fonte de dados e como [configurar um conector de fonte de dados na interface do usuário](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools). Saiba como [usar dados da sua fonte de dados](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
+
+Para obter mais informações sobre os novos recursos e aprimoramentos, consulte [Novidades da versão 2024.04.0](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+
+Para obter a lista de problemas corrigidos nessa versão, consulte [Correção de problemas na versão 2024.4.0](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/fixed-issues-2024-04-0).
 
 ## Cloud Manager {#cloud-manager}
 
