@@ -2,7 +2,7 @@
 title: Publicação rápida no AEM e no Dynamic Media
 description: A Publicação rápida na exibição de Ativos permite publicar ativos no AEM e no Dynamic Media, de forma simultânea ou separada. Você pode selecionar ativos e pastas e optar por publicar no Dynamic Media ou AEM.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 0891d58e10e8be746c0be5f55d554174567fcd64
+source-git-commit: a9a94e948ad7d038f28a046c950f2158871ddbb3
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Você pode publicar ativos no AEM e no Dynamic Media enquanto faz upload de ativ
 Para publicar ativos durante o upload em uma pasta com o Modo de publicação do Dynamic Media definido como **Na ativação**:
 
 1. Clique em **Adicionar ativos** > **Procurar** > **Procurar Arquivos** para navegar até a pasta apropriada para fazer upload de ativos. A variável **Opções de publicação** exibe a variável **Modo de publicação do DM** as **Na ativação**.
-   ![Carregar imagem na ativação](/help/assets/assets/upload-upon-activation.png)
+   ![Carregar imagem na ativação](/help/assets/assets/upload-upon-activation1.png)
 2. Selecionar **Publicar no AEM e no Dynamic Media** e clique em **Carregar**. Os ativos são publicados no AEM e no Dynamic Media ao mesmo tempo. Para ver o status de publicação atualizado desses ativos, consulte [Verificar status de publicação](#check-publish-status).
 
 ### Modo de publicação do Dynamic Media definido como Imediato {#dynamic-media-publish-mode-set-to-immediate}
