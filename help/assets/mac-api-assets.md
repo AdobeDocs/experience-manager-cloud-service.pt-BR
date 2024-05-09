@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+source-git-commit: 835aab546896195c3a2a3355b35b81f2cd385676
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1670'
 ht-degree: 3%
 
 ---
@@ -25,7 +25,7 @@ A variável [!DNL Assets] A API HTTP permite operações create-read-update-dele
 
 >[!NOTE]
 >
->A variável [OpenAPIs de fragmento de conteúdo e modelo de fragmento de conteúdo](/help/headless/content-fragment-openapis.md) também estão disponíveis.
+> Uma implementação OpenAPI modernizada da API de gerenciamento de fragmento de conteúdo está disponível. Para obter a documentação completa, consulte [API de gerenciamento de fragmento de conteúdo](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/). É recomendável usar a nova implementação da OpenAPI. O uso existente da API HTTP do Assets para fragmentos de conteúdo deve ser migrado para a nova OpenAPI de gerenciamento de fragmento de conteúdo.
 
 Para acessar a API:
 
@@ -77,7 +77,7 @@ As pastas são como diretórios, como nos sistemas de arquivos tradicionais. A p
 * `parent`: Link para a pasta principal.
 * `thumbnail`: (Opcional) link para uma imagem em miniatura da pasta.
 
-### Assets {#assets}
+### Ativos {#assets}
 
 Entrada [!DNL Experience Manager] um ativo contém os seguintes elementos:
 
