@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Renditions
 exl-id: 869c1c34-6287-4d62-bb7a-aa4df580ac0e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 7%
+source-wordcount: '502'
+ht-degree: 8%
 
 ---
 
@@ -76,3 +76,4 @@ Clique em **[!UICONTROL Representação FPO]** para carregar sua visualização.
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

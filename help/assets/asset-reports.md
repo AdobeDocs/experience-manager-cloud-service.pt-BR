@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 22fc488cd507a3504c472eab3dea8daa7e63b81c
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '942'
 ht-degree: 8%
 
 ---
@@ -33,7 +33,7 @@ Quando um relatório é gerado, você é notificado por meio de <!-- through an 
 
 [!DNL Experience Manager Assets] O gera os seguintes relatórios padrão para você:
 
-* Fazer upload
+* Upload
 * Download
 * Expiração
 * Modificação
@@ -130,7 +130,7 @@ Você pode adicionar colunas personalizadas aos seguintes relatórios para exibi
 * Files
 -->
 
-* Fazer upload
+* Upload
 * Expiração
 * Modificação
 * Publicação
@@ -205,3 +205,4 @@ TBD: How do enable this in CS now? Is it done using some OSGi config now?
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

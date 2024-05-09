@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 8%
+source-wordcount: '820'
+ht-degree: 9%
 
 ---
 
@@ -128,3 +128,4 @@ Depois que o revisor concluir a revisão (aprovar ou rejeitar ativos), você rec
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

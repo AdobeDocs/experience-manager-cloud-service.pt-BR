@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2615'
 ht-degree: 17%
 
 ---
@@ -156,9 +156,9 @@ Se você usar essa opção, o fluxo de trabalho de tradução será executado pa
 Execute este fluxo de trabalho para traduzir qualquer conjunto adicional de ativos e incluí-lo em uma cópia de idioma para uma localidade específica. Nesse caso, os ativos traduzidos são adicionados à pasta de destino que já contém ativos traduzidos anteriormente. Dependendo da escolha de opções, um projeto de tradução é criado ou um projeto de tradução existente é atualizado para os novos ativos. O workflow Atualizar cópias de idioma inclui as seguintes opções:
 
 * Criar um novo projeto de tradução
-* Adicionar ao projeto de tradução existente
+* Adicionar ao projeto existente de tradução
 
-### Adicionar ao projeto de tradução existente {#add-to-existing-translation-project-1}
+### Adicionar ao projeto existente de tradução {#add-to-existing-translation-project-1}
 
 Se você usar essa opção, o conjunto de ativos será adicionado a um projeto de tradução existente para atualizar a cópia de idioma para o local escolhido.
 
@@ -222,7 +222,7 @@ Use o fluxo de trabalho criar e traduzir para gerar cópias de idioma para um id
 
 * Criar somente estrutura
 * Criar um novo projeto de tradução
-* Adicionar ao projeto de tradução existente
+* Adicionar ao projeto existente de tradução
 
 ### Criar somente estrutura {#create-structure-only}
 
@@ -294,3 +294,4 @@ Se quiser aplicar um conector personalizado para os serviços de tradução que 
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

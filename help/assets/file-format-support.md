@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 320967ee4cd5a92639b60b00750343222b307aef
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 33%
+source-wordcount: '1422'
+ht-degree: 34%
 
 ---
 
@@ -36,7 +36,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 
 ## formatos de Adobe {#adobe-formats}
 
-| Formato de arquivo | Geração de miniaturas | Extração de texto completo | Extração de metadados | Largura/altura |
+| Formato do arquivo | Geração de miniaturas | Extração de texto completo | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
 | IA | ✓ | - | ✓ | ✓ |
 | COLAGEM | - | - | ✓ | - |
@@ -55,7 +55,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 
 ## Formatos de imagem {#image-formats}
 
-| Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura | Cortar |
+| Formato do arquivo | Geração de miniaturas | Extração de metadados | Largura/altura | Cortar |
 | ----------- | -------------------- | ------------------- | ------------ | -------- |
 | BMP | ✓ | - | ✓ | ✓ |
 | EPS | ✓ | ✓ | - | - |
@@ -89,7 +89,7 @@ Consulte também [Trabalhar com ativos 3D no Dynamic Media](/help/assets/dynamic
 
 ## [!DNL Camera Raw] formatos {#camera-raw-formats}
 
-| Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
+| Formato do arquivo | Geração de miniaturas | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------ |
 | 3FR | ✓ | ✓ | ✓ |
 | ARW | ✓ | ✓ | ✓ |
@@ -123,7 +123,7 @@ Consulte também [Trabalhar com ativos 3D no Dynamic Media](/help/assets/dynamic
 
 Os formatos de documento compatíveis com os recursos de gerenciamento de ativos são os seguintes.
 
-| Formato de arquivo | Geração de miniaturas | Extração de texto completo | Largura/altura | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) | Visualização completa do documento |
+| Formato do arquivo | Geração de miniaturas | Extração de texto completo | Largura/altura | Gerenciamento de metadados | [Connected Assets](use-assets-across-connected-assets-instances.md) | Visualização completa do documento |
 | ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
 | DOC | - | - | - | ✓ | ✓ | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -147,7 +147,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 ## Formatos de vídeo {#video-formats}
 
-| Formato de arquivo | Geração de miniaturas | Extração de metadados | Largura/altura | Visualização |
+| Formato do arquivo | Geração de miniaturas | Extração de metadados | Largura/altura | Visualização |
 | ----------- | -------------------- | ------------------- | ------------ | ------- |
 | 3G2 | - | ✓ | - | - |
 | 3GP | - | ✓ | - | - |
@@ -258,7 +258,7 @@ Os seguintes subtipos de formatos de arquivos de imagens de varredura *não* com
 
 Consulte também [Formatos 3D compatíveis](/help/assets/file-format-support.md#support-3d-formats)
 
-| Extensão de arquivo 3D | Formato de arquivo | Tipo MIME | Notas |
+| Extensão de arquivo 3D | Formato do arquivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmissão GL Binária | model/gltf-binary | Inclui os materiais e texturas como um único ativo. |
 | OBJ | Arquivo de objeto 3D do WaveFront | application/x-tgif | |
@@ -278,6 +278,7 @@ Consulte também [Formatos 3D compatíveis](/help/assets/file-format-support.md#
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

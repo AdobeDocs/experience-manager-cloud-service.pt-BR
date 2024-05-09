@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: 52a6cb359bfe0d76bdceb3f517e92d78994872c8
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '739'
 ht-degree: 9%
 
 ---
@@ -94,6 +94,7 @@ Alguns casos de uso para exportar metadados em massa são:
 * [Gerenciar metadados](manage-metadata.md)
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

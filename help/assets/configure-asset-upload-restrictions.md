@@ -1,17 +1,17 @@
 ---
 title: Configurar restrições de upload de ativos
-description: Configure o Adobe Experience Manager Assets para restringir os tipos de ativos que os usuários podem fazer upload com base no tipo MIME. Ele ajuda a impedir uploads acidentais de formato indesejado e arquivos mal-intencionados.
+description: Configure o Adobe Experience Manager Assets para restringir os tipos de ativos que os usuários podem carregar com base no tipo MIME. Ele ajuda a impedir uploads acidentais de formato indesejado e arquivos mal-intencionados.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 9%
+source-wordcount: '372'
+ht-degree: 11%
 
 ---
 
 # Configurar restrições de upload de ativos {#configure-asset-upload-restrictions}
 
-Você pode configurar o Adobe Experience Manager Assets para restringir os tipos de ativos que os usuários podem fazer upload com base no tipo de MIME.
+Você pode configurar o Adobe Experience Manager Assets para restringir os tipos de ativos que os usuários podem carregar com base no tipo MIME.
 
 >[!IMPORTANT]
 >
@@ -71,3 +71,4 @@ Com base nas configurações representadas na imagem, você pode fazer upload de
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

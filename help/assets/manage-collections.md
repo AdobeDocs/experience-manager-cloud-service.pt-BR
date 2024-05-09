@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2398'
 ht-degree: 18%
 
 ---
@@ -272,6 +272,7 @@ Você pode executar um fluxo de trabalho para os ativos em uma coleção. Se a c
 * [Gerenciar metadados](manage-metadata.md)
 * [Pesquisar aspectos](search-facets.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

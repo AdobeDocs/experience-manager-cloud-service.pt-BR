@@ -4,10 +4,10 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] as
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 4%
+source-wordcount: '3144'
+ht-degree: 9%
 
 ---
 
@@ -33,7 +33,7 @@ Você também pode optar por concluir o processamento adicional nos ativos carre
 | [[!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html) | Útil quando profissionais de criação e marketing trabalham em ativos dentro da [!DNL Creative Cloud] aplicativos de desktop. | Creative, Profissional de marketing |
 | [Assimilador de ativos em massa](#asset-bulk-ingestor) | Recomendado para migrações em grande escala e assimilações ocasionais em massa. Somente para armazenamentos de dados compatíveis. | Administrador, Desenvolvedor |
 
-## Fazer upload de ativos {#upload-assets}
+## Upload de ativos {#upload-assets}
 
 <!-- #ENGCHECK do we support pausing? I couldn't get pause to show with 1.5GB upload.... If not, this should be removed#
 
@@ -197,7 +197,7 @@ Para configurar a ferramenta Importação em massa, siga estas etapas:
 
 1. Defina um local no DAM onde os ativos devem ser importados usando o campo **[!UICONTROL Pasta de destino do Assets]**. Por exemplo, `/content/dam/imported_assets`.
 
-1. (Opcional) Especifique o arquivo de metadados a ser importado, fornecido no formato CSV na **[!UICONTROL Arquivo de metadados]** campo. Especifique o arquivo CSV no local do blob de origem e consulte o caminho ao configurar a ferramenta Importação em massa. O formato de arquivo CSV referenciado nesse campo é igual ao formato de arquivo CSV quando você [Importar e exportar metadados de ativos em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Se você selecionar a variável **Excluir arquivo de origem após a importação** opção, filtre arquivos CSV usando a variável **Excluir** ou **Incluir tipo de MIME** ou **Filtrar por caminho/arquivo** campos. Você pode usar uma expressão regular para filtrar arquivos CSV nesses campos.
+1. (Opcional) Especifique o arquivo de metadados a ser importado, fornecido em formato CSV no campo **[!UICONTROL Arquivo de metadados]**. Especifique o arquivo CSV no local do blob de origem e consulte o caminho ao configurar a ferramenta Importação em massa. O formato de arquivo CSV referenciado nesse campo é igual ao formato de arquivo CSV quando você [Importar e exportar metadados de ativos em massa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html). Se você selecionar a variável **Excluir arquivo de origem após a importação** opção, filtre arquivos CSV usando a variável **Excluir** ou **Incluir tipo de MIME** ou **Filtrar por caminho/arquivo** campos. Você pode usar uma expressão regular para filtrar arquivos CSV nesses campos.
 
 1. Clique em **[!UICONTROL Salvar]** para salvar a configuração.
 
@@ -225,11 +225,11 @@ Selecione a configuração e clique em **[!UICONTROL Dry Run]** para chamar uma 
 
 ![Resultado do teste](assets/dry-assets-result.png)
 
-### Manipulação de nomes de arquivo durante a importação em massa {#filename-handling-bulkimport}
+### Tratamento de nomes de arquivo durante a importação em massa {#filename-handling-bulkimport}
 
-Ao importar ativos ou pastas em massa, [!DNL Experience Manager Assets] importa toda a estrutura do que existe na fonte de importação. [!DNL Experience Manager] O segue as regras incorporadas para caracteres especiais nos nomes de ativos e pastas, portanto, esses nomes de arquivos precisam de limpeza. Tanto para o nome da pasta quanto para o nome do ativo, o título definido pelo usuário permanece inalterado e é armazenado em `jcr:title`.
+Ao importar ativos ou pastas em massa, o [!DNL Experience Manager Assets] importa toda a estrutura existente na fonte de importação. O [!DNL Experience Manager] segue as regras incorporadas para caracteres especiais em nomes de ativos e pastas, portanto, esses nomes de arquivo precisam de limpeza. Tanto o nome da pasta quanto o nome do ativo definidos pelo usuário permanece inalterado e é armazenado em `jcr:title`.
 
-Durante a importação em massa, [!DNL Experience Manager] procure as pastas existentes para evitar a reimportação de ativos e pastas e também verifique as regras de limpeza aplicadas na pasta principal onde a importação ocorre. Se as regras de limpeza forem aplicadas na pasta principal, as mesmas regras serão aplicadas à origem de importação. Para novas importações, as seguintes regras de limpeza são aplicadas para gerenciar os nomes de arquivos de ativos e pastas.
+Durante a importação em massa, o [!DNL Experience Manager] procura pelas pastas existentes para evitar a reimportação de ativos e pastas e também verifica as regras de limpeza aplicadas na pasta principal onde a importação ocorre. Se as regras de limpeza forem aplicadas na pasta principal, as mesmas regras serão aplicadas à fonte de importação. Para novas importações, as seguintes regras de limpeza são aplicadas para gerenciar os nomes de arquivo de ativos e pastas.
 
 **Nomes não permitidos na importação em massa**
 
@@ -412,6 +412,7 @@ Os detalhes técnicos das APIs e do protocolo de upload, bem como os links para 
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

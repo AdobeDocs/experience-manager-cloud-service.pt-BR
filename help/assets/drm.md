@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 4%
+source-wordcount: '1368'
+ht-degree: 5%
 
 ---
 
@@ -169,3 +169,4 @@ Um ativo é considerado protegido se qualquer uma destas condições for satisfe
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

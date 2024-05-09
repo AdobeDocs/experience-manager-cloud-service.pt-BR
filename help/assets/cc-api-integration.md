@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Upload,Asset Processing,Publishing,Asset Compute Microservices,Workflow
 role: User,Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 3%
+source-wordcount: '772'
+ht-degree: 4%
 
 ---
 
@@ -24,31 +24,31 @@ Os usuários podem criar perfis de processamento para automatizar as seguintes o
 
 * **Direita automática**: usa inteligência artificial para analisar o conteúdo da imagem e corrigir a perspectiva inclinada nas imagens. Por exemplo, para criar horizontes de nível.
 
-   ![tom automático](/help/assets/assets/content-automation-autotone.png)
+  ![tom automático](/help/assets/assets/content-automation-autotone.png)
 
-   *Figura: o tom e o direcionamento automáticos podem ajudar a melhorar imagens distorcidas.*
+  *Figura: o tom e o direcionamento automáticos podem ajudar a melhorar imagens distorcidas.*
 
 * **Predefinições do Lightroom**: aplica uma aparência definida pelo usuário às imagens para obter uma aparência consistente usando predefinições personalizadas.
 
-   ![Predefinição do Lightroom](/help/assets/assets/content-automation-lrpresets.png)
+  ![Predefinição do Lightroom](/help/assets/assets/content-automation-lrpresets.png)
 
-   *Figura: predefinição do Adobe Lightroom para melhorar a qualidade da imagem de forma consistente para muitas imagens.*
+  *Figura: predefinição do Adobe Lightroom para melhorar a qualidade da imagem de forma consistente para muitas imagens.*
 
 * **Recorte de imagem**: usa inteligência artificial para criar seleção em torno de objetos principais e remover o plano de fundo com um único comando.
 
-   ![Remover plano de fundo e recortar uma imagem de uma foto](/help/assets/assets/content-automation-backgroundremove.png)
+  ![Remover plano de fundo e recortar uma imagem de uma foto](/help/assets/assets/content-automation-backgroundremove.png)
 
 * **Máscara de imagem**: usa inteligência artificial para criar máscaras em torno de objetos principais com um único comando.
 
-   ![Mascaramento de uma imagem usando IA](/help/assets/assets/content-automation-mask.png)
+  ![Mascaramento de uma imagem usando IA](/help/assets/assets/content-automation-mask.png)
 
 * **Ações do Photoshop**: aplica uma série de [!DNL Adobe Photoshop] tarefas a um arquivo ou lote de arquivos.
 
-   ![Ações do Photoshop](/help/assets/assets/content-automation-psactions.png)
+  ![Ações do Photoshop](/help/assets/assets/content-automation-psactions.png)
 
 * **Substituição de objeto inteligente**: faz a personalização em escala, permitindo que você troque imagens e, ao mesmo tempo, retenha todos os efeitos e ajustes aplicados em um arquivo PSD.
 
-   ![Substituir objetos com inteligência](/help/assets/assets/content-automation-objectreplace.png)
+  ![Substituir objetos com inteligência](/help/assets/assets/content-automation-objectreplace.png)
 
 ## Habilitar a automação de conteúdo para o programa as a Cloud Service AEM {#enable-content-automation}
 
@@ -115,10 +115,10 @@ Para processar os ativos existentes, selecione os ativos, selecione **[!UICONTRO
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Configurar e usar microsserviços de ativos por meio de perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
->* [ [!DNL Experience Manager] Integrar com a [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [Integrar [!DNL Experience Manager] com [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Assimilação e processamento de ativos com microsserviços de ativos: uma visão geral](/help/assets/asset-microservices-overview.md).
-

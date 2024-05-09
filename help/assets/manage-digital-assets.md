@@ -6,9 +6,9 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4277'
 ht-degree: 10%
 
 ---
@@ -40,7 +40,7 @@ Os seguintes caracteres (lista separada por espaços de) não são suportados:
 * Um nome de arquivo de ativo não pode conter nenhum destes caracteres: `* / : [ \\ ] | # % { } ? &`
 * O nome da pasta de ativos não pode conter nenhum destes caracteres: `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
-## Fazer upload de ativos {#uploading-assets}
+## Upload de ativos {#uploading-assets}
 
 Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md).
 
@@ -675,3 +675,4 @@ Para saber mais, veja como [navegar pelos ativos do DAM usando o aplicativo de d
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

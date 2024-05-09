@@ -1,14 +1,14 @@
 ---
 title: Arquitetura de [!DNL Assets]
-description: Arquitetura dos ativos do Adobe Experience Manager as a [!DNL Cloud Service]
+description: Arquitetura do Adobe Experience Manager Assets as a [!DNL Cloud Service]
 contentOwner: AG
 feature: Asset Management,Asset Compute Microservices
 role: Architect
 exl-id: 0440c6a0-97c7-440e-a96e-629825d34a73
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 23%
+source-wordcount: '125'
+ht-degree: 30%
 
 ---
 
@@ -32,10 +32,10 @@ Para ver a visão geral da arquitetura dos microsserviços de ativos, consulte e
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Visão geral e novidades](/help/assets/overview.md)
 >* [Formatos de arquivo e tipos MIME compatíveis](file-format-support.md)
 >* [Visão geral dos microsserviços de ativos](asset-microservices-overview.md)
-

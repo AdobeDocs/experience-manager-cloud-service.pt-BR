@@ -4,10 +4,10 @@ description: Alterações importantes no [!DNL Adobe Experience Manager Assets] 
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: bd0981b262f645653723f1b35d871808506d47ba
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 11%
+source-wordcount: '998'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ As principais diferenças [!DNL Experience Manager] 6.5 estão nas seguintes ár
 
 * [Assimilação, upload e processamento de ativos](#asset-ingestion).
 * [Microsserviços de ativos para processamento nativo em nuvem](#asset-microservices).
-* [Remoção da interface do usuário clássica](#classic-ui).
+* [Remoção da interface clássica do usuário](#classic-ui).
 
 ## Assimilação, processamento e distribuição de ativos {#asset-ingestion-distribution}
 
@@ -29,7 +29,7 @@ O upload de ativos é otimizado para eficiência, permitindo melhor dimensioname
    * Upload de ativo [com acesso binário direto](/help/assets/asset-microservices-overview.md#asset-upload-with-direct-binary-access).
    * Para obter detalhes técnicos, consulte [APIs e protocolo de upload binário direto](/help/assets/developer-reference-material-apis.md#upload-binary).
    * Para obter uma comparação dos métodos de API disponíveis para operações CRUD básicas, consulte [APIs e operações de ativos](/help/assets/developer-reference-material-apis.md#use-cases-and-apis).
-* O fluxo de trabalho padrão **[!UICONTROL DAM Asset Update]** nas versões anteriores do não está mais disponível. [!DNL Experience Manager] Em vez disso, os microsserviços de ativos fornecem um serviço escalável e prontamente disponível que cobre a maioria do processamento de ativos padrão (representações, extração de metadados e extração de texto para indexação).
+* O workflow padrão **[!UICONTROL Atualização de ativos DAM]** em versões anteriores do [!DNL Experience Manager] O não está mais disponível. Em vez disso, os microsserviços de ativos fornecem um serviço escalável e prontamente disponível que cobre a maioria do processamento de ativos padrão (representações, extração de metadados e extração de texto para indexação).
    * Consulte [configurar e usar microsserviços de ativos](/help/assets/asset-microservices-configure-and-use.md)
    * Para personalizar etapas do fluxo de trabalho no processamento, [fluxos de trabalho de pós-processamento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) pode ser usado.
 
@@ -53,12 +53,12 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 |-----|-----|-----|
 | [Detecção de ativos duplicados](/help/assets/detect-duplicate-assets.md) | Funciona de forma diferente | Consulte [como funcionava no [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html). |
 | [Representações Somente para posicionamento (FPO)](/help/assets/configure-fpo-renditions.md) | Funciona de forma diferente | Os perfis de processamento usam microsserviços de ativos para gerar representações FPO. No Experience Manager 6.5, uma solução de terceiros, como [!DNL ImageMagick] estava disponível para gerar as representações. |
-| Writeback de metadados | Funciona de forma diferente | Desativado por padrão. Ative o iniciador do fluxo de trabalho correspondente, se necessário. O Writeback é manipulado pelos microsserviços de ativos. |
+| Writeback de metadados | Funciona de forma diferente | Desabilitado por padrão. Ative o iniciador do fluxo de trabalho correspondente, se necessário. O Writeback é manipulado pelos microsserviços de ativos. |
 | Processamento de ativos carregados usando o Gerenciador de pacotes | Requer intervenção manual | Reprocessar manualmente usando o **[!UICONTROL Reprocessar ativo]** ação. |
 | Detecção de tipo MIME | Não suportado. | Se você fizer upload de um ativo digital sem uma extensão ou com uma extensão incorreta, talvez ele não seja processado conforme desejado. Os usuários ainda podem armazenar os arquivos binários sem uma extensão no DAM. Consulte [Detecção de tipo MIME em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html). |
 | Geração de subativos para um ativo composto | Não suportado. | Casos de uso dependentes, como anotações, podem não ser cumpridos. Consulte [criação de subativos no [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html#generate-subassets). A visualização de PDF de alguns tipos de arquivos está disponível a partir de [Versão 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
 | Editar imagens | Não suportado | A edição de ativos não é permitida no Experience Manager as a Cloud Service. Consulte [como funcionava no Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#editing-images). |
-| Página inicial | Não suportado | Consulte [[!DNL Assets] Experiência de página inicial no [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
+| Home page | Não suportado | Consulte [[!DNL Assets] Experiência de página inicial no [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html) |
 | Extrair ativos do arquivo ZIP | Não suportado | Consulte [Extração do ZIP em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
 | Classificações de ativos | Não suportado | O widget de classificação no editor de esquema de metadados não é compatível. |
 | Filtro de disposição de conteúdo | Não suportado | Um caso de uso popular de `ContentDispositionFilter` é permitir que os administradores configurem [!DNL Experience Manager] para fornecer arquivos de HTML e abrir arquivos de PDF em linha em vez de baixá-los. Nas instâncias de Publicação, é possível gerenciar o descarte usando a configuração do Dispatcher. Nas instâncias do Autor, o Adobe não recomenda a modificação do cabeçalho Disposição de conteúdo. Consulte [Filtro de Disposição de Conteúdo em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html). |
@@ -81,6 +81,7 @@ Para fazer uma validação completa do código e do processo, incluindo a assimi
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

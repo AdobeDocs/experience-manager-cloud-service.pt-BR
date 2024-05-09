@@ -2,9 +2,9 @@
 title: Tags de cores para imagens
 description: O Adobe Experience Manager Assets permite distinguir cores em uma imagem e aplicá-las automaticamente como tags. Em seguida, você pode usar essas tags para pesquisar e filtrar imagens.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1244'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ A figura a seguir ilustra a sequência de tarefas executada para configurar e ge
 
 ## Formatos de arquivo não compatíveis {#supported-file-formats-color-tags}
 
-| Formato de arquivo | Extensão | Tipo MIME | Espaço de cor de entrada | Tamanho máximo de arquivo de origem com suporte | Resolução máxima de tamanho de arquivo suportada |
+| Formato do arquivo | Extensão | Tipo MIME | Espaço de cor de entrada | Tamanho máximo de arquivo de origem com suporte | Resolução máxima de tamanho de arquivo suportada |
 |---|---|---|---|---|---|
 | JPEG | .jpg e .jpeg | image/jpeg | sRGB | 15 GB | 20000 × 20000 pixels |
 | PNG | .png | image/png | sRGB | 15 GB | 20000 × 20000 pixels |
@@ -196,3 +196,4 @@ Para pesquisar imagens com base em cores:
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -4,9 +4,9 @@ description: Este artigo descreve como criar, modificar e usar os aspectos de pe
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2498'
+source-wordcount: '2505'
 ht-degree: 19%
 
 ---
@@ -171,7 +171,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
    <td>Pesquisar predicado para executar uma pesquisa de texto completo em um nó de ativo inteiro. Ele é mapeado com a variável <code>jcr</code>:<code>contains</code> operador. Você pode especificar um caminho relativo se quiser executar uma pesquisa de texto completo em uma parte específica do nó do ativo.</td>
    <td>
     <ul>
-     <li>Etiqueta</li>
+     <li>Rótulo</li>
      <li>Espaço reservado</li>
      <li>Nome da propriedade</li>
      <li>Descrição</li>
@@ -192,7 +192,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
    <td><p>Use-a para filtrar os resultados no local. Você pode especificar caminhos diferentes como opções.</p> </td>
    <td>
     <ul>
-     <li>Etiqueta</li>
+     <li>Rótulo</li>
      <li>Caminho</li>
      <li>Descrição</li>
     </ul> </td>
@@ -202,7 +202,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
    <td><p>Pesquisar predicado para pesquisar ativos com base no status de publicação</p> </td>
    <td>
     <ul>
-     <li>Etiqueta</li>
+     <li>Rótulo</li>
      <li>Nome da propriedade</li>
      <li>Descrição</li>
     </ul> </td>
@@ -212,7 +212,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
    <td><p>Predicado de pesquisa para pesquisar ativos com base na data relativa de sua criação. Por exemplo, você pode configurar opções, como 2 meses atrás, 3 semanas atrás e assim por diante. </p> </td>
    <td>
     <ul>
-     <li>Etiqueta</li>
+     <li>Rótulo</li>
      <li>Nome da propriedade</li>
      <li>Data relativa</li>
     </ul> </td>
@@ -222,7 +222,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
    <td><p>Pesquisar predicado para pesquisar ativos dentro de um intervalo especificado. No painel Pesquisar, é possível especificar valores mínimos e máximos para o intervalo.</p> </td>
    <td>
     <ul>
-     <li>Etiqueta</li>
+     <li>Rótulo</li>
      <li>Nome da propriedade</li>
      <li>Descrição</li>
     </ul> </td>
@@ -232,7 +232,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
    <td><p>Pesquisar predicado para pesquisar ativos criados em um intervalo especificado para uma propriedade de data. No painel Pesquisar, é possível especificar datas de Início e Término usando seletores de datas.</p> </td>
    <td>
     <ul>
-     <li>Etiqueta</li>
+     <li>Rótulo</li>
      <li>Espaço reservado</li>
      <li>Nome da propriedade</li>
      <li>Intervalo de texto (de)</li>
@@ -245,7 +245,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
    <td><p>Pesquisar predicado para uma pesquisa com base em controle deslizante de ativos com base em uma propriedade de data.</p> </td>
    <td>
     <ul>
-     <li>Etiqueta</li>
+     <li>Rótulo</li>
      <li>Nome da propriedade</li>
      <li>Descrição</li>
     </ul> </td>
@@ -255,7 +255,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
    <td><p>Pesquisar predicado para pesquisar ativos com base em seu tamanho. É um predicado baseado em controle deslizante no qual você seleciona as opções de controle deslizante de um nó configurável. As opções padrão são definidas em /libs/dam/options/predicates/filesize no repositório CRX. O tamanho do arquivo é fornecido em bytes.</p> </td>
    <td>
     <ul>
-     <li>Etiqueta</li>
+     <li>Rótulo</li>
      <li>Nome da propriedade</li>
      <li>Caminho</li>
      <li>Descrição</li>
@@ -276,7 +276,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
    <td>Pesquisar predicado para pesquisar ativos com base no status de publicação </td>
    <td>
     <ul>
-     <li>Etiqueta</li>
+     <li>Rótulo</li>
      <li>Nome da propriedade</li>
      <li>Descrição</li>
     </ul> </td>
@@ -286,7 +286,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
    <td>Pesquisar predicado para pesquisar ativos com base no status de expiração </td>
    <td>
     <ul>
-     <li>Etiqueta</li>
+     <li>Rótulo</li>
      <li>Nome da propriedade</li>
      <li>Descrição</li>
     </ul> </td>
@@ -354,6 +354,7 @@ Se você não recebeu uma função de administrador, esta é uma lista de permis
 * [Gerenciar metadados](manage-metadata.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

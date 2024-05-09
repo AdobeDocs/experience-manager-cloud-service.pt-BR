@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 8%
+source-wordcount: '2460'
+ht-degree: 4%
 
 ---
 
@@ -331,7 +331,7 @@ Uma vez [!DNL Adobe Stock] o ativo é licenciado no [!DNL Experience Manager], e
 
 ![Pesquisar por [!DNL Adobe Stock] ativos e filtrar os resultados do seu [!DNL Adobe Experience Manager] espaço de trabalho](assets/adobe-stock-search-results-workspace.png)
 
-**A.**[!DNL Adobe Stock] Pesquise ativos semelhantes aos ativos cuja ID do é fornecida. **B.** Pesquise ativos que correspondem à seleção de forma ou orientação. **C.** Procure um dos tipos de ativos mais compatíveis **D.** Abra ou recolha o painel Filtros **E.** Licencie e salve o ativo selecionado no [!DNL Experience Manager]**F.**[!DNL Experience Manager] Salve o ativo no com a marca d&#39;água **G.**[!DNL Adobe Stock] Explore os ativos no site do que são semelhantes ao ativo selecionado **H.**[!DNL Adobe Stock] Exiba os ativos selecionados no site do **I.** Número de ativos selecionados dos resultados de pesquisa **J.** Alterne entre a exibição Cartão e a exibição em Lista
+**A.** Pesquisar ativos semelhantes aos ativos cujos [!DNL Adobe Stock] A ID é fornecida. **B.** Pesquise ativos que correspondem à seleção de forma ou orientação. **C** Procure por um ou mais tipos de ativos compatíveis **D.** Abrir ou recolher o painel de filtros **E** Licenciar e salvar o ativo selecionado no [!DNL Experience Manager] **F** Salvar o ativo no [!DNL Experience Manager] com marca d&#39;água **G.** Explorar ativos no [!DNL Adobe Stock] site que são semelhantes ao ativo selecionado **H.** Exibir os ativos selecionados em [!DNL Adobe Stock] site **I.** Número de ativos selecionados nos resultados da pesquisa **J.** Alternar entre exibição de Cartão e exibição de Lista
 
 ### Localizar ativos {#find-assets}
 
@@ -471,6 +471,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
+* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
