@@ -2,10 +2,10 @@
 title: Assimilar conteúdo no Cloud Service
 description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 727fbc49657de752ac6daeb38b5a9d7aba331a5c
+source-git-commit: 6372277adfac0700d80a3e6c013f419892822e55
 workflow-type: tm+mt
-source-wordcount: '2876'
-ht-degree: 12%
+source-wordcount: '2905'
+ht-degree: 11%
 
 ---
 
@@ -215,6 +215,8 @@ As práticas recomendadas indicam que, se uma **Não-apagamento** a assimilaçã
 Os valores de propriedade do nó armazenados no MongoDB não podem exceder 16 MB. Se um valor de nó exceder o tamanho permitido, a assimilação falhará e o log conterá um `BSONObjectTooLarge` e especificar qual nó excedeu o máximo. Essa é uma restrição MongoDB.
 
 Consulte a `Node property value in MongoDB` observação em [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta Oak que pode ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
+
+Para possivelmente evitar essa restrição, execute o [Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sobre o AEM de origem e rever as conclusões que apresenta, em especial a [&quot;Estrutura de repositório não compatível&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) padrão.
 
 ### Ingestão cancelada {#ingestion-rescinded}
 
