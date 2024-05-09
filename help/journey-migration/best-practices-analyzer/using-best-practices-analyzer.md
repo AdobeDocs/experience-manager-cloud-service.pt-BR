@@ -2,10 +2,10 @@
 title: Utilização do Analisador de práticas recomendadas
 description: Saiba como usar o Analisador de práticas recomendadas para entender a disponibilidade da atualização.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+source-git-commit: 077be031da7a610810d398b163676a98fc036f30
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 42%
+source-wordcount: '2661'
+ht-degree: 39%
 
 ---
 
@@ -51,6 +51,13 @@ Siga a seção abaixo para entender considerações importantes na execução do
 >[!NOTE]
 >Baixe o Analisador de práticas recomendadas do [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
 
+## Conectividade do ambiente de origem {#source-environment-connectivity}
+
+A instância do AEM de origem pode estar sendo executada por trás de um firewall, em que ela só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para carregar automaticamente o relatório gerado pelo BPA para o Cloud Acceleration Manager com êxito, os seguintes endpoints precisam estar acessíveis na instância que está executando o AEM:
+
+* O serviço de armazenamento de blobs do Azure: `casstorageprod.blob.core.windows.net`
+
+
 ## Exibição do relatório do Analisador de práticas recomendadas {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 e posterior {#aem-later-versions}
@@ -65,31 +72,40 @@ Siga esta seção para saber como exibir o relatório do Analisador de práticas
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Enquanto o BPA está gerando o relatório, você pode ver o progresso feito pela ferramenta na tela. Ele exibe o número de itens analisados e também o número de descobertas encontradas.
+1. Forneça a chave de upload do BPA para fazer upload automaticamente do relatório do BPA gerado no [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Para obter a chave de upload, navegue até a [Análise de práticas recomendadas no CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
+   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+
+>[!NOTE]
+>Você tem a opção de ignorar o upload automático para o CAM selecionando **Ignorar upload automático do relatório para CAM**. Se você optar por ignorar, será necessário baixar manualmente o relatório do BPA como um arquivo de valor separado por vírgulas e, em seguida, fazer upload do arquivo no CAM. É recomendável usar a opção de chave de upload, pois ela simplifica a operação.
+
+1. A variável **Gerar** fica ativo quando uma chave válida é fornecida. Clique em **Gerar** para iniciar a geração do relatório.
+
+   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
+
+
+1. Enquanto o BPA está gerando o relatório, você pode ver o progresso feito pela ferramenta na tela. Ele exibe o progresso em termos de porcentagem concluída. Ele também exibe o número de itens analisados e o número de descobertas encontradas.
+
+   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+
+>[!NOTE]
+>O carimbo de data e hora de expiração da chave de upload do BPA é exibido no canto superior direito. Você deve renovar a chave de upload do BPA quando estiver próxima de sua expiração. Para renovar a chave, clique em **Renovar** para navegar até o CAM e renovar a chave.
 
 1. Depois que o relatório do BPA é gerado, ele exibe um resumo e o número de conclusões em um formato tabular organizado pelo tipo de descoberta e o nível de importância. Para obter mais detalhes sobre uma descoberta específica, você pode clicar no número que corresponde ao tipo de descoberta na tabela.
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
+   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   A ação acima rolará automaticamente para o local dessa descoberta no relatório.
+1. Você tem a opção de baixar o relatório em um formato CSV (valores separados por vírgula) clicando em **Exportar para CSV**. Você também tem a opção de visualizar o relatório no CAM clicando em **Ir para CAM**. Isso levará você ao [Análise de práticas recomendadas](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) página no CAM.
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic5.png)
+Você pode forçar o BPA a limpar seu cache e gerar novamente o relatório clicando em **Atualizar relatório**.
 
-1. Você tem a opção de baixar o relatório em um formato CSV (valores separados por vírgula) clicando em **Exportar para CSV**, conforme mostrado na figura abaixo.
+![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
-   >[!NOTE]
-   >Você pode forçar o BPA a limpar seu cache e gerar novamente o relatório clicando em **Atualizar relatório**.
+1. Se o cache expirar, você terá a opção de visualizar o último relatório gerado no CAM clicando em **Exibir o último relatório gerado no CAM** ou inicie uma nova geração de relatório clicando em **Gerar novo relatório**.
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
+![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
-   >[!NOTE]
-   >Enquanto o relatório está sendo gerado novamente, ele mostra o progresso em termos de porcentagem concluída como mostrado na imagem abaixo.
-
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
 
 #### Utilização de filtros no relatório do Analisador de práticas recomendadas {#bpa-filters}
 
