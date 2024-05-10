@@ -2,10 +2,10 @@
 title: Utilização do Analisador de práticas recomendadas
 description: Saiba como usar o Analisador de práticas recomendadas para entender a disponibilidade da atualização.
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 077be031da7a610810d398b163676a98fc036f30
+source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
-source-wordcount: '2661'
-ht-degree: 39%
+source-wordcount: '2686'
+ht-degree: 38%
 
 ---
 
@@ -61,6 +61,11 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
 ## Exibição do relatório do Analisador de práticas recomendadas {#viewing-report}
 
 ### Adobe Experience Manager 6.3.0 e posterior {#aem-later-versions}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_bpa_upload_setup"
+>title="Carregar automaticamente o relatório do Analisador de práticas recomendadas para o CAM"
+>abstract="Forneça a chave de upload do BPA para fazer upload automaticamente do relatório do BPA gerado no Cloud Acceleration Manager (CAM)."
 
 Siga esta seção para saber como exibir o relatório do Analisador de práticas recomendadas:
 
