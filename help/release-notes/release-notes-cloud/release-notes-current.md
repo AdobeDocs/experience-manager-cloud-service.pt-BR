@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1a01a18008316c4d02553316020ec0c2a3f3cd57
+source-git-commit: c8b78ec6f1c7ff43950778fdd429a0aefff9856e
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 9%
+source-wordcount: '2696'
+ht-degree: 10%
 
 ---
 
@@ -87,6 +87,13 @@ O Experience Manager Assets agora oferece uma experiência do usuário simplific
 
 Agora você pode [atribuir ou remover formulário de metadados a várias pastas](/help/assets/metadata-assets-view.md#assign-metadata-form-to-a-folder).
 
+### Novos recursos na exibição do Administrador {#admin-view-new-features}
+
+**Configuração de compartilhamento de link**
+
+Uma nova experiência de usuário aprimorada para [criar compartilhamentos de links](/help/assets/share-assets.md) e um novo conjunto de configurações que permite que admins personalizem o comportamento padrão desse recurso para seus usuários.
+
+![Configuração de compartilhamento de link](/help/assets/assets/config-email-service.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
