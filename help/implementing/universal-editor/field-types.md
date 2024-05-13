@@ -2,9 +2,9 @@
 title: Definições de modelo, campos e tipos de componentes
 description: Saiba mais sobre campos e os tipos de componentes que o Editor universal pode editar no painel de propriedades com exemplos. Entenda como você pode instrumentar seu próprio aplicativo criando uma definição de modelo e vinculando ao componente.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: c2dd0ed800739c2194ab20267f72b85461f3c5b8
+source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1146'
 ht-degree: 9%
 
 ---
@@ -95,6 +95,7 @@ A seguir estão os tipos de componentes possíveis para usar em campos de render
 | [Booleano](#boolean) | `boolean` |
 | [Grupo de caixas de seleção](#checkbox-group) | `checkbox-group` |
 | [Container](#container) | `container` |
+| [Fragmento do conteúdo](#content-fragment) | `aem-content-fragment` |
 | [Data e hora](#date-time) | `date-time` |
 | [Multisseleção](#multiselect) | `multiselect` |
 | [Número](#number) | `number` |
