@@ -7,9 +7,9 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 3eb2a7ce311f9e738a95ea5fcf6876f4df1fa648
+source-git-commit: e6c58c835798b16158ab4aca26e381ab8f36afd3
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '918'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Ao final do tutorial, você será capaz de:
 
 O AEM Forms fornece os Componentes de base e os Componentes principais para criar experiências de formulários. Os Componentes principais são a abordagem moderna e recomendada para criar qualquer nova experiência de formulários. Por que usar os Componentes principais? Esses componentes são leves e de código aberto (disponíveis no github), oferecem excelente pontuação no Google Lighthouse e na Web, são compatíveis com acessibilidade e oferecem todos os recursos familiares do AEM Sites (como controle de versão e localização). Além disso, esses componentes são mais fáceis de estilizar, e você pode personalizar facilmente a aparência de acordo com as diretrizes de marca da sua organização. Eles não têm dependências de terceiros. Qualquer desenvolvedor com conhecimento em JavaScript e CSS pode personalizar facilmente esses componentes.
 
-![Por que criar Componentes principais baseados no Forms adaptável? Esses componentes são leves, mais fáceis de estilizar, oferecem alta pontuação mínima, padrões de acessibilidade de suporte, facilmente personalizáveis, de código aberto, disponíveis no github, sem dependência de bibliotecas de terceiros e quase não têm curva de aprendizado para desenvolvedores do AEM e autores do AEM. Além disso, os Componentes principais do AEM Forms têm todos os recursos dos Componentes principais do AEM WCM.](/help/forms/assets/cc-core-components-benefits.png)
+![Por que criar Componentes principais baseados no Forms adaptável? Esses componentes são leves, mais fáceis de estilizar, oferecem alta pontuação mínima, padrões de acessibilidade de suporte, facilmente personalizáveis, de código aberto, disponíveis no github, sem dependência de bibliotecas de terceiros e quase não têm curva de aprendizado para desenvolvedores do AEM e autores do AEM. Além disso, os Componentes principais do AEM Forms têm todos os recursos dos Componentes principais do AEM WCM.](/help/forms/assets/cc-core-components-benefits.png){width="50%"}
 
 ## Caso de uso: pré-qualificação de empréstimo residencial simplificada com o Forms adaptável
 
@@ -55,7 +55,7 @@ Na conclusão do tutorial, seu formulário seria semelhante ao seguinte formulá
 
 ![Adicione um formulário de trabalho aqui](/help/forms/assets/cc-tutorial-final-form.png)
 
-## Configurar um ambiente de desenvolvimento
+## Configurar ambiente de desenvolvimento
 
 Você pode criar e testar o formulário adaptável diretamente no computador local antes de implantá-lo em um ambiente Cloud Service. O Adobe fornece um AEM SDK para o desenvolvimento local que permite
 
@@ -79,10 +79,14 @@ O desenvolvimento local com o SDK do AEM economiza tempo e simplifica o processo
 1. [Adicionar o complemento do AEM Forms](/help/forms/setup-local-development-environment.md#add-forms-archive-to-local-author-and-publish-instances-and-configure-forms-specific-users): Baixe e instale o complemento AEM Forms correspondente à versão do SDK do AEM na [Distribuição de software](https://experience.adobe.com/#/downloads) Portal.
    ![install-aem-forms-add-on](/help/forms/assets/install-aem-forms-add-on.png)
 
-   +++Instalar complemento do AEM Forms
+   +++Instalar complemento do AEM Forms:
 
-       Para instalar o complemento do AEM Forms, pare o AEM SDK, adicione o arquivo do complemento (.far) do AEM Forms AEM AEM à pasta &quot;SDK/crx-quickstart/install&quot; e reinicie o SDK.
-   
+   Para instalar o complemento do AEM Forms:
+
+   1. Pare o SDK do AEM.
+   1. Adicionar o arquivo de complemento (.far) do AEM Forms à `AEM SDK/crx-quickstart/install` pasta,
+   1. Reinicie o SDK do AEM.
+
 +++
 
 1. [Configurar permissões do usuário](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): crie usuários com permissões de desenvolvimento, criação e outras e adicione esses usuários a grupos de formulários predefinidos.
@@ -90,7 +94,9 @@ O desenvolvimento local com o SDK do AEM economiza tempo e simplifica o processo
 
 1. [Adicionar modelos adaptáveis do Forms](/help/forms/setup-local-development-environment.md#set-up-a-development-project-for-forms-based-on-experience-manager-archetype): Use o Arquétipo AEM 48 ou posterior para criar um novo projeto AEM e implantá-lo no SDK do AEM. O projeto adiciona modelos do Adaptive Forms ao AEM SDK.
 
-   +++Adicionar modelos adaptáveis do Forms
+   ![Modelos de formulário adaptável](/help/forms/assets/adaptive-forms-templates.png)
+
+   +++Adicionar modelos do Forms adaptável ao AEM SDK:
 
    1. Execute o comando abaixo para criar um projeto AEM.
 
@@ -108,13 +114,12 @@ O desenvolvimento local com o SDK do AEM economiza tempo e simplifica o processo
       mvn -PautoInstallPackage clean install
       ```
 
-+++
-
    Depois de implantar o projeto AEM, você pode ver os modelos adaptáveis do Forms no seu ambiente.
 
-   ![Modelos de formulário adaptável](/help/forms/assets/adaptive-forms-templates.png)
++++
 
-Para obter um guia passo a passo sobre como configurar o ambiente de desenvolvimento local do AEM Forms, consulte [configurar ambiente de desenvolvimento local para o AEM Forms](/help/forms/setup-local-development-environment.md)
+
+Para obter instruções detalhadas e um guia passo a passo sobre a configuração do ambiente de desenvolvimento local do AEM Forms, consulte o [configurar ambiente de desenvolvimento local para o AEM Forms](/help/forms/setup-local-development-environment.md) artigo.
 
 
 
