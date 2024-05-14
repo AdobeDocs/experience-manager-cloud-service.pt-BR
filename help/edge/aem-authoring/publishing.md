@@ -3,9 +3,9 @@ title: Publicar conteúdo para o Edge Delivery Services
 description: Saiba como a publicação de conteúdo funciona com o Edge Delivery Services e como publicar conteúdo de AEM com o Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: 11f721b4a617c99e30329d7196f42d7b48067f1b
+source-git-commit: c85a82161a7594588290793c89ecbe1f0f60a56d
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ O fluxo de informações ao publicar é o seguinte. Depois que o autor inicia a 
 
 >[!NOTE]
 >
->São permitidos até 5.000 caminhos publicados pela interface do usuário de criação ou por workflows por dia. Integrações que criam cargas de trabalho de publicação em massa não são compatíveis.
+>São permitidos até 5.000 caminhos publicados pela interface do usuário de criação ou por workflows por dia. Integrações que criam cargas de trabalho de publicação em massa não são compatíveis. Se o projeto exigir maior capacidade, proponha-o para o [Programa VIP](https://www.aem.live/vip/intake).
 
 ![O fluxo de informações ao publicar do AEM para o Edge Delivery Services](assets/publishing-flow.png)
 
