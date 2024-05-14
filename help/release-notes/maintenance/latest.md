@@ -2,7 +2,7 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 79dcf8a4e9834beeb466ed9270a3f5c6aa67aa9a
+source-git-commit: 3be366e5fa0a7625203a052426be6a2fd2412cf6
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 15%
@@ -17,7 +17,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 16145, lançada publicamente em quinta-feira, 1 de maio de 2024. A versão de manutenção anterior era a versão 15977.
 
-A Ativação de recursos do 2024.4.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A Ativação de recursos do 2024.5.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-16145}
 
