@@ -2,11 +2,12 @@
 title: Usar conjuntos de regras para transformar URLs
 description: Saiba como implantar conjuntos de regras no Dynamic Media para transformar URLs. Os conjuntos de regras são conjuntos de instruções escritos em uma linguagem de script (como JavaScript) que avaliam dados XML e executam determinadas ações se esses dados atenderem a determinadas condições.
 contentOwner: Rick Brough
+feature: Rulesets,Troubleshooting,Upload
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: ad2b36ffa178d787f50d33ce3393a76811467323
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -18,18 +19,18 @@ ht-degree: 0%
 * Adição de um sufixo de tipo MIME. Muitos serviços e sites exigem sufixos de imagem, como adicionar `.jpg` para um URL.
 * Criar um caminho de pasta para o URL para fins de SEO (Otimização do mecanismo de pesquisa).
 
-   Consulte [Como o Adobe Dynamic Media Classic oferece suporte a SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+  Consulte [Como o Adobe Dynamic Media Classic oferece suporte a SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Adicionar metadados ao URL para fins de SEO (Otimização do mecanismo de pesquisa).
 
-   Consulte [Como o Adobe Dynamic Media Classic oferece suporte a SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
+  Consulte [Como o Adobe Dynamic Media Classic oferece suporte a SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
 * Definir a disposição do conteúdo para acionar um download.
 * Simplifique os URLs de modelo do Servidor de imagens para personalização. Por exemplo, turn `rgb{XX,YY,ZZ}` no formato pronto para RTF `\redXX\greenYY\blueZZ`
 
 * Solicitar que determinados caracteres sejam codificados, como `$`, `{`, e `}`e determinados caracteres a serem decodificados para ImageServer. Por exemplo, o Facebook não funciona bem com URLs que contêm caracteres especiais.
 
-   Consulte [Remover caracteres especiais de URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
+  Consulte [Remover caracteres especiais de URLs](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
 No contexto do Dynamic Media, os sites que usam um sistema baseado em XML para gerenciar informações de ativos podem fazer upload de arquivos XML para o Dynamic Media. Você pode designar um desses arquivos como o arquivo de conjunto de regras de pré-processamento para servir o ativo do Dynamic Media. Esse arquivo reestrutura o formato de protocolo de URL padrão para atender à lógica da empresa de sistemas que estão sendo integrados com o Dynamic Media. Especifique um arquivo XML para servir como o caminho do arquivo de definições do conjunto de regras.
 

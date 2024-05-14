@@ -2,11 +2,12 @@
 title: Solução de problemas do Dynamic Media
 description: Saiba mais sobre dicas de solução de problemas que você pode experimentar ao trabalhar com imagens, conjuntos e visualizadores no Dynamic Media.
 contentOwner: Rick Brough
+feature: Troubleshooting,Image Sets,Viewers
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1141'
 ht-degree: 1%
 
 ---
@@ -138,7 +139,7 @@ Se tiver problemas com o vídeo, consulte a seguinte orientação para solução
     </ul> </td>
    <td>
     <ol>
-     <li>Verifique se a configuração do Dynamic Media em Cloud Services está definida corretamente.</li>
+     <li>Verifique se a configuração do Dynamic Media em Cloud Service está definida corretamente.</li>
      <li>Verifique se a pasta tem um perfil de vídeo. Além disso, verifique o perfil do vídeo.</li>
     </ol> </td>
   </tr>
@@ -215,7 +216,7 @@ Se o trabalho artístico de ativos de amostra ou predefinição do visualizador 
 1. Navegue até o gerenciador de pacotes CRX: `https://localhost:4502/crx/packmgr/`.
 1. Procure o pacote do visualizador na lista; ele começa com `cq-dam-scene7-viewers-content`.
 1. Selecionar **Reinstalar**.
-1. Em Cloud Services, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração da sua configuração Dynamic Media - S7.
+1. Em Cloud Service, navegue até a página Configuração do Dynamic Media e abra a caixa de diálogo de configuração da sua configuração Dynamic Media - S7.
 1. Não fazer alterações, selecione **Salvar**.
 Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ativos de amostra, o CSS de predefinição do visualizador e o trabalho artístico.
 
@@ -236,4 +237,4 @@ Essa ação de salvar aciona a lógica novamente para criar e sincronizar os ati
 1. Exclua o `viewer` pasta.
 1. Próximo ao canto superior esquerdo da página CRXDE Lite, selecione **[!UICONTROL Salvar tudo]**.
 1. No canto superior esquerdo da página CRXDE Lite, selecione a **Voltar ao início** ícone.
-1. Recriar um [Configuração do Dynamic Media no Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+1. Recriar um [Configuração do Dynamic Media no Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).

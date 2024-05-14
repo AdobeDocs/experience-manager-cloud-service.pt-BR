@@ -2,11 +2,12 @@
 title: Usar Imagem inteligente com proporção de pixels do dispositivo no lado do cliente
 description: Saiba como usar a proporção de pixels do dispositivo no lado do cliente com a Imagem inteligente no Adobe Experience Manager as a Cloud Service com o Dynamic Media.
 contentOwner: Rick Brough
+feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 A solução Smart Imaging atual usa strings de agente do usuário para determinar o tipo de dispositivo (desktop, tablet, celular e assim por diante) que está sendo usado.
 
-Os recursos de detecção de dispositivos - DPR com base em sequências de agente do usuário - geralmente são imprecisos, especialmente para dispositivos Apple. Além disso, sempre que um novo dispositivo for iniciado, ele deverá ser validado.
+Os recursos de detecção de dispositivos (DPR com base em sequências de agente do usuário) são imprecisos com frequência, especialmente para dispositivos Apple. Além disso, sempre que um novo dispositivo for iniciado, ele deverá ser validado.
 
 A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer dispositivo, seja o Apple ou qualquer outro novo dispositivo iniciado.
 
@@ -73,4 +74,3 @@ Os seguintes arquivos JavaScript no download são fornecidos a você somente com
 >[!MORELIKETHIS]
 >
 >* [Imagem inteligente](/help/assets/dynamic-media/imaging-faq.md)
-
