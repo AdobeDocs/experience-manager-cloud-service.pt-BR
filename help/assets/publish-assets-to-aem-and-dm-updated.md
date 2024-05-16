@@ -2,7 +2,7 @@
 title: Publicação rápida no AEM e no Dynamic Media
 description: A Publicação rápida na exibição de Ativos permite publicar ativos no AEM e no Dynamic Media, de forma simultânea ou separada. Você pode selecionar ativos e pastas e optar por publicar no Dynamic Media ou AEM.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 1da11f59f891654f04305d2a6a3e536a6beb5e6e
+source-git-commit: cb8a5e5e8ecec2884c061d60f2519ba3e0208f81
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Você pode publicar ativos no AEM e no Dynamic Media enquanto faz upload de ativ
 Para publicar ativos durante o upload em uma pasta com o Modo de publicação do Dynamic Media definido como **Na ativação**:
 
 1. Clique em **Adicionar ativos** > **Procurar** > **Procurar Arquivos** para navegar até a pasta apropriada para fazer upload de ativos. A variável **Opções de publicação** exibe a variável **Modo de publicação do DM** as **Na ativação**.
-   ![Carregar imagem na ativação](/help/assets/assets/upload-upon-activation1.png)
+   ![Carregar imagem na ativação](/help/assets/assets/upload-uactivation.svg)
 2. Selecionar **Publicar no AEM e no Dynamic Media** e clique em **Carregar**. Os ativos são publicados no AEM e no Dynamic Media ao mesmo tempo. Para ver o status de publicação atualizado desses ativos, consulte [Verificar status de publicação](#check-publish-status).
 
 ### Modo de publicação do Dynamic Media definido como Imediato {#dynamic-media-publish-mode-set-to-immediate}
@@ -48,8 +48,10 @@ Para publicar ativos durante o upload em uma pasta com o Modo de publicação do
 Para publicar ativos durante o upload em uma pasta com o Modo de publicação do Dynamic Media definido como **Imediato**:
 
 1. Clique em **Adicionar ativos** > **Procurar** > **Procurar Arquivos** para navegar até a pasta apropriada para fazer upload de ativos. A seção Opções de publicação exibe a **Modo de publicação do DM** as **Imediato**.
-   ![imagem de upload de arquivo - modo imediato](/help/assets/assets/upload-immediate-mode.png)
-Como o Modo de publicação do Dynamic Media é **Imediato**, os ativos carregados são publicados automaticamente no Dynamic Media ao clicar em **Carregar**.
+   ![imagem de upload de arquivo - modo imediato](/help/assets/assets/resized-image-pdf-svg-new.svg)
+
+
+   Como o Modo de publicação do Dynamic Media é **Imediato**, os ativos carregados são publicados automaticamente no Dynamic Media ao clicar em **Carregar**.
 
 2. Selecione Publicar em **AEM para publicar** Adicione os ativos carregados ao AEM e clique em Fazer upload.
 
@@ -62,7 +64,7 @@ Como o Modo de publicação do Dynamic Media é **Imediato**, os ativos carregad
 Para publicar ativos durante o upload em uma pasta com o Modo de publicação do Dynamic Media definido como **Publicação seletiva**:
 
 1. Clique em **Adicionar ativos** > **Procurar** > **Procurar Arquivos** para navegar até a pasta apropriada para fazer upload de ativos. A seção Opções de publicação exibe a **Modo de publicação do DM** as **Publicação seletiva**.
-   ![fazer upload do modo de publicação seletiva de imagem](/help/assets/assets/upload-image-selective-publish-mode.png)
+   ![fazer upload do modo de publicação seletiva de imagem](/help/assets/assets/upload-selective.svg)
 
 2. Selecionar **Publicar no AEM**, **Publicar no Dynamic Media**, ou ambos, de acordo com suas necessidades, e clique em **Carregar**.
 
@@ -77,9 +79,9 @@ Para publicar ativos usando a página de navegação de ativos:
 1. Clique em **Assets** no **Gerenciamento de ativos** seção disponível no painel esquerdo.
 2. Selecione o(s) ativo(s) ou pasta(s) que você precisa publicar e clique em **Publish**.
 3. Selecionar **AEM** e clique em **Publish** para publicar ativos no AEM e no Dynamic Media.
-   ![navegação de ativos](/help/assets/assets/assets-browse-1.png)
+   ![navegação de ativos](/help/assets/assets/browse-uactivation-immediate.svg)
 Não é possível publicar uma pasta que tenha o Modo de publicação do Dynamic Media definido como **Publicação seletiva.** Todas as outras pastas ou ativos selecionados são publicados no AEM e no Dynamic Media após selecionar AEM.
-   ![navegação de ativos](/help/assets/assets/assets-browse-2.png)
+   ![navegação de ativos](/help/assets/assets/browse-selective123.svg)
 
 ## Publicar ativos usando a página de resultados da pesquisa {#publish-assets-using-search-results-page}
 
@@ -88,7 +90,7 @@ Para publicar ativos usando a página de resultados da pesquisa de ativos:
 1. Especifique os critérios na barra de Pesquisa e clique no ícone Pesquisar para exibir os resultados.
 2. Selecione os ativos que precisam ser publicados e clique em **Publicar.**
 3. Selecione AEM, Dynamic Media ou ambos de acordo com suas necessidades e clique em **Publicar.**
-   ![imagem de pesquisa](/help/assets/assets/search-image1.png)
+   ![imagem de pesquisa](/help/assets/assets/search-mode.svg)
 A opção de publicar no Dynamic Media na página de resultados da pesquisa depende do Modo de publicação do Dynamic Media definido na pasta em que o ativo está disponível no repositório.
 
    >[!NOTE]
