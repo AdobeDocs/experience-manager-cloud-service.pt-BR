@@ -2,7 +2,7 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3c0185c1a108f16ce3230aa8e949de3cf436d427
+source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
 workflow-type: tm+mt
 source-wordcount: '5093'
 ht-degree: 26%
@@ -396,7 +396,7 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 ### Considerações sobre depuração {#debugging-considerations}
 
-Para validar se o tráfego está realmente saindo do endereço IP dedicado, como esperado, verifique os logs no serviço de destino, se disponível. Caso contrário, pode ser útil chamar um serviço de depuração como [http://ifconfig.me/ip](http://ifconfig.me/ip), que retorna o endereço IP de chamada.
+Para validar se o tráfego está realmente saindo do endereço IP dedicado, como esperado, verifique os logs no serviço de destino, se disponível. Caso contrário, pode ser útil chamar um serviço de depuração como [https://ifconfig.me/ip](https://ifconfig.me/ip), que retorna o endereço IP de chamada.
 
 ## VPN (Virtual Private Network) {#vpn}
 

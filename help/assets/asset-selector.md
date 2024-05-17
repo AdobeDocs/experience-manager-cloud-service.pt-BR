@@ -3,14 +3,13 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 contentOwner: KK
 role: Admin,User
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: b9fe6f4c2f74d5725575f225f8d9eb2e5fbfceb7
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+source-git-commit: 2ce64892cd5bf414d328a9112c47092b762d3668
 workflow-type: tm+mt
 source-wordcount: '3908'
 ht-degree: 45%
 
 ---
-
 
 # Seletor de ativos de micro front-end {#Overview}
 
@@ -599,7 +598,7 @@ interface SelectedAsset {
     'repo:state': string;
     computedMetadata: Record<string, any>;
     _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
+        'https://ns.adobe.com/adobecloud/rel/rendition': Array<{
             href: string;
             type: string;
             'repo:size': number;
@@ -632,12 +631,12 @@ A tabela a seguir descreve algumas das propriedades importantes do objeto de ati
 | *tiff:imageLength* | número | A altura de um ativo. |
 | *computedMetadata* | `Record<string, any>` | Um objeto que representa um compartimento para todos os metadados do ativo de todos os tipos (repositório, aplicativo ou metadados incorporados). |
 | *_links* | `Record<string, any>` | Links de hipermídia do ativo associado. Inclui links para recursos como metadados e representações. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Matriz de objetos que contém informações sobre representações do ativo. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | O URI da representação. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | O tipo MIME da representação. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | número | O tamanho da representação em bytes. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | número | A largura da representação. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | número | A altura da representação. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Matriz de objetos que contém informações sobre representações do ativo. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | O URI da representação. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | O tipo MIME da representação. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | número | O tamanho da representação em bytes. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | número | A largura da representação. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | número | A altura da representação. |
 
 Para obter uma lista completa das propriedades e um exemplo detalhado, acesse [Exemplo de código do seletor de ativos](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
