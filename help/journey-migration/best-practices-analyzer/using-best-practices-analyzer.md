@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 0c7e38d1973458ef3212e816ced867423bd62e86
 workflow-type: tm+mt
 source-wordcount: '2686'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -64,8 +64,8 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_bpa_upload_setup"
->title="Carregar automaticamente o relatório do Analisador de práticas recomendadas para o CAM"
->abstract="Forneça a chave de upload do BPA para fazer upload automaticamente do relatório do BPA gerado no Cloud Acceleration Manager (CAM)."
+>title="Fazer upload automaticamente do relatório do analisador de práticas recomendadas (BPA) para o CAM"
+>abstract="Forneça a chave de upload do BPA para enviar automaticamente o relatório do BPA gerado para o Cloud Acceleration Manager (CAM)."
 
 Siga esta seção para saber como exibir o relatório do Analisador de práticas recomendadas:
 
@@ -141,11 +141,11 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 >In all versions, the included Pattern Detector may run independently.
 -->
 
-## Interpretação do relatório do Analisador de práticas recomendadas {#cra-report}
+## Interpretação do relatório do analisador de práticas recomendadas {#cra-report}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_bpa_interpreting"
->title="Interpretação do relatório do Analisador de práticas recomendadas"
+>title="Interpretação do relatório do analisador de práticas recomendadas"
 >abstract="Há duas opções para visualizar relatórios do Analisador de Práticas Recomendadas: na interface e CSV. Quando o Analisador de Práticas Recomendadas é executado na instância do AEM, o relatório é exibido como resultado na janela da ferramenta. O formato CSV do relatório inclui informações geradas a partir do output do Detector de padrões, classificadas e organizadas por tipo de categoria, subtipo e nível de importância."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=pt-BR#analysis-report" text="Revisão do relatório do Analisador de práticas recomendadas"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=pt-BR" text="Noções básicas sobre as categorias do relatório do Analisador de Práticas Recomendadas"
