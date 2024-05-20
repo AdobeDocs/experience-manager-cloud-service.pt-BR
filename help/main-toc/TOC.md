@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 300bbbf0af0f0d896bf39f2a4e1fe4ed3d41f09a
+source-git-commit: 02388518f10d5c4bd34ad7d20a24877b468bff72
 workflow-type: tm+mt
-source-wordcount: '4946'
+source-wordcount: '4964'
 ht-degree: 84%
 
 ---
@@ -654,6 +654,8 @@ ht-degree: 84%
             + [Configurar a ação de envio Enviar para o Ponto de extremidade REST para o Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [Configurar a ação de envio Enviar email para um formulário adaptável](/help/forms/configure-submit-action-send-email.md)
             + [Usar o Google reCAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms-core-components.md)
+            + [Usar hCAPTCHA em um formulário adaptável](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Usar a estrutura giratória em um formulário adaptável](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Adicionar manipulador de erros personalizado em um formulário adaptável](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Adicione uma localidade para o Forms adaptável com base nos Componentes principais](/help/forms/supporting-new-language-localization-core-components.md)
             + [Criar e usar funções personalizadas](/help/forms/create-and-use-custom-functions.md)
@@ -676,6 +678,7 @@ ht-degree: 84%
             + [Melhorar o desempenho de formulários grandes com carregamento lento](/help/forms/lazy-loading-adaptive-forms.md)
          + Adicionar componentes a um formulário adaptável {#add-components-to-an-adaptive-form}
             + [Usar CAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms.md)
+            + [Usar o hCaptcha em um formulário adaptável](/help/forms/integrate-adaptive-forms-hcaptcha.md)
             + [Usar componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
             + [Aplicar assinatura escrita](/help/forms/signing-forms-using-scribble.md)
             + [Adicionar uma tabela a um formulário adaptável](/help/forms/adaptive-forms-tables.md)
