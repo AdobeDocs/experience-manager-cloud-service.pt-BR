@@ -5,10 +5,10 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 1%
+source-wordcount: '891'
+ht-degree: 9%
 
 ---
 
@@ -16,15 +16,28 @@ ht-degree: 1%
 
 <span class="preview"> Esse recurso está em Early Adoter Program. Você pode escrever para aem-forms-ea@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
-O Captcha de torniquete da Cloudflare é uma medida de segurança que visa proteger formulários e sites contra bots automatizados, ataques mal-intencionados, spams e tráfego automatizado indesejado. Ele apresenta uma caixa de seleção no envio do formulário para verificar se ele é humano, antes de permitir que ele envie o formulário. O AEM Forms as a Cloud Service é compatível com o Captcha de tarja nos componentes principais adaptáveis do Forms.
+O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
+
+O AEM Forms as a Cloud Service é compatível com as seguintes soluções CAPTCHA:
+
+
+* [Cilindro de nuvens](#integrate-aem-forms-environment-with-turnstile-captcha)
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
+
 
 <!-- ![Turnstile](assets/Turnstile-challenge.png)-->
 
-## Pré-requisitos para integrar o ambiente do AEM Forms com o Captcha giratório {#prerequisite}
+## Integrar o ambiente do AEM Forms com o Captcha de tartaruga
+
+O Captcha de torniquete da Cloudflare é uma medida de segurança que visa proteger formulários e sites contra bots automatizados, ataques mal-intencionados, spams e tráfego automatizado indesejado. Ele apresenta uma caixa de seleção no envio do formulário para verificar se ele é humano, antes de permitir que ele envie o formulário. O AEM Forms as a Cloud Service é compatível com o Captcha de tarja nos componentes principais adaptáveis do Forms.
+
+### Pré-requisitos para integrar o ambiente do AEM Forms com o Captcha giratório {#prerequisite}
 
 Para configurar o Turnstile para os Componentes principais do AEM Forms, é necessário obter [Tecla de site com barra de rotação e chave secreta](https://developers.cloudflare.com/turnstile/get-started/) no site Turnstile.
 
-## Etapas para configurar o Turnstile {#steps-to-configure-hcaptcha}
+### Configurar título {#steps-to-configure-hcaptcha}
 
 Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
 
@@ -57,7 +70,7 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
 
    Depois que o serviço Captcha de tartaruga é configurado, ele é disponibilizado para uso em um [Formulário adaptável com base nos Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
-## Usar a estrutura de rotação em componentes principais adaptáveis do Forms {#using-turnstile-core-components}
+## Usar a estrutura giratória em um formulário adaptável {#using-turnstile-core-components}
 
 1. Abra a instância do AEM Forms as a Cloud Service.
 1. Ir para **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.

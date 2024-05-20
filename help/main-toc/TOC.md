@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 30b9d71890f5d3a1a13e0b570c370a148eb19db6
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '4956'
+source-wordcount: '4962'
 ht-degree: 83%
 
 ---
@@ -678,6 +678,7 @@ ht-degree: 83%
          + Adicionar componentes a um formulário adaptável {#add-components-to-an-adaptive-form}
             + [Usar CAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms.md)
             + [Usar o hCaptcha em um formulário adaptável](/help/forms/integrate-adaptive-forms-hcaptcha.md)
+            + [Usar a estrutura giratória em um formulário adaptável](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Usar componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
             + [Aplicar assinatura escrita](/help/forms/signing-forms-using-scribble.md)
             + [Adicionar uma tabela a um formulário adaptável](/help/forms/adaptive-forms-tables.md)

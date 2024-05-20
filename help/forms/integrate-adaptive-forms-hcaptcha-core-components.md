@@ -1,15 +1,15 @@
 ---
-title: Como usar o hCaptcha® em um componente principal de formulário adaptável para AEM?
-description: Melhore a segurança dos formulários com o serviço hCaptcha® sem esforço. Guia passo a passo no interior!
+title: Como usar o hCaptcha&reg; em um formulário adaptável para AEM dos Componentes principais?
+description: Melhore a segurança dos formulários com o serviço do hCaptcha&reg; sem esforço. Guia passo a passo no interior!
 topic-tags: Adaptive Forms, author
-keywords: Serviço Captcha®, Forms adaptável, Desafio CAPTCHA, Prevenção de bot, Componentes principais, Segurança de envio de formulário, Prevenção de spam de formulário
+keywords: Captcha&reg; serviço, Forms adaptável, desafio de CAPTCHA, Prevenção de bot, Componentes principais, Segurança de envio de formulário, Prevenção de spam de formulário
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: a8a31bae0f937aa8941d258af648d6be030a9fac
+source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 3%
+source-wordcount: '962'
+ht-degree: 11%
 
 ---
 
@@ -17,18 +17,28 @@ ht-degree: 3%
 
 <span class="preview"> Esse recurso está em Early Adoter Program. Você pode escrever para aem-forms-ea@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
+O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
+
+O AEM Forms as a Cloud Service é compatível com as seguintes soluções CAPTCHA:
+
+* [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Cilindro de nuvens](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
+* [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+
+## Integrar o ambiente do AEM Forms com o Captcha Captcha
+
 O serviço de Captcha® protege seus formulários contra bots, spam e abuso automatizado. Ele apresenta um desafio de widget de caixa de seleção e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o formulário. Ele impede que o usuário continue se o teste falhar e ajuda a tornar as transações online seguras, impedindo que os bots publiquem spam ou atividades mal-intencionadas.
 
 O AEM Forms as a Cloud Service suporta o hCaptcha® nos componentes principais adaptáveis do Forms. Você pode usá-lo para apresentar um desafio de widget de caixa de seleção no envio do formulário.
 
-<!-- ![hCaptcha®](assets/hCaptcha®-challenge.png)-->
+<!-- ![hCaptcha&reg;](assets/hCaptcha&reg;-challenge.png)-->
 
 
-## Pré-requisitos para integrar o ambiente do AEM Forms com o Captcha® {#prerequisite}
+### Pré-requisitos para integrar o ambiente do AEM Forms com o Captcha® {#prerequisite}
 
 Para configurar o hCaptcha® com o AEM Forms, é necessário obter a [Chave de site do Captcha® e chave secreta](https://docs.hcaptcha.com/switch/#get-your-hcaptcha-sitekey-and-secret-key) no site do hCaptcha®.
 
-## Etapas para configurar o hCaptcha® {#steps-to-configure-hcaptcha}
+### Configurar o hCaptcha® {#steps-to-configure-hcaptcha}
 
 Para integrar o AEM Forms com o serviço hCaptcha®, execute as seguintes etapas:
 
@@ -79,7 +89,7 @@ Para integrar o AEM Forms com o serviço hCaptcha®, execute as seguintes etapas
    * **[!UICONTROL Nome]:** Especifique o nome do componente Captcha. Você pode identificar facilmente um componente de formulário com seu nome exclusivo no formulário e no editor de regras.
    * **[!UICONTROL Título]:** Especifique o título para o componente Captcha.
    * **[!UICONTROL Configurações]:** Selecione uma Configuração na nuvem configurada para o hCaptcha®.
-   * **Tamanho do Captcha:** Você pode selecionar o tamanho de exibição da caixa de diálogo de desafio do hCaptcha®. Use o **[!UICONTROL Compacto]** opção para exibir um tamanho pequeno e a variável **[!UICONTROL Normal]** opção para exibir uma caixa de diálogo de desafio do hCaptcha® de tamanho relativamente grande.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha® without explicitly rendering the checkbox widget on the user interface. -->
+   * **Tamanho do Captcha:** Você pode selecionar o tamanho de exibição da caixa de diálogo de desafio do hCaptcha®. Use o **[!UICONTROL Compacto]** opção para exibir um tamanho pequeno e a variável **[!UICONTROL Normal]** opção para exibir uma caixa de diálogo de desafio do hCaptcha® de tamanho relativamente grande.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
    * **[!UICONTROL Mensagem de validação]:** Forneça uma mensagem de validação para sua validação de Captcha no envio do formulário.
    * **[!UICONTROL Mensagem de validação de script]**: essa opção permite que você insira uma mensagem que será exibida caso haja falha na validação do script.
      >[!NOTE]
