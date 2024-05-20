@@ -4,10 +4,10 @@ description: Saiba como integrar o Adobe Analytics ao AEM as a Cloud Service usa
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+source-git-commit: 3ac17f1a67f4d952a0206b124d70762b65e1f354
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 93%
+source-wordcount: '588'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,15 @@ Os campos presentes na janela de configuração são os seguintes:
 
 ### Adobe Analytics com autenticação IMS {#configuration-parameters-ims}
 
-Uma configuração IMS é necessária para integrar corretamente o Adobe Analytics com o AEM as a Cloud Service. Essa configuração deve ser criada. Portanto, consulte esta [página](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) para saber como criar a configuração IMS do Analytics.
+A integração do Adobe Experience Manager as a Cloud Service (AEMaaCS) com o Adobe Analytics por meio da API do Analytics Standard requer a configuração do Adobe IMS (Identity Management System).
+
+Consulte [Configuração de integrações IMS para o AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) para saber como criar a configuração IMS.
+
+>[!NOTE]
+>
+>[Agora as integrações IMS estão configuradas com S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>
+>As configurações anteriores foram feitas com [Credenciais JWT que agora estão sujeitas a desativação no console do Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 ### Adicionar uma configuração a um site {#add-configuration}
 

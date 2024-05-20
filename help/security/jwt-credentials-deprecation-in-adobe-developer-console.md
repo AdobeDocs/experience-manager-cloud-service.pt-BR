@@ -2,9 +2,9 @@
 title: Descontinuação de credenciais JWT no console do Adobe Developer
 description: Saiba mais sobre o impacto da descontinuação de credenciais JWT no Console do Adobe Developer no AEM.
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
-source-git-commit: 802e29017d3f1e59ee1676b4172292cb3453648a
+source-git-commit: b6e26ecaa73aaee37b6b824426dc0cd65d459502
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -19,30 +19,30 @@ Clientes do Adobe usam [Console do Adobe Developer](https://developer.adobe.com/
 
 Este artigo fornece contexto adicional sobre como o AEM as a Cloud Service deve lidar com a desativação.
 
-Atualmente, o principal argumento é que os recursos de AEM ainda não oferecem suporte às novas credenciais de servidor para servidor do OAuth. O suporte virá em breve — até meados de maio de 2024 por meio de uma versão do AEM para AEM as a Cloud Service. Você pode ter recebido um email com instruções para migrar suas credenciais do JWT, mas tenha certeza de que pode e deve adiar a migração das credenciais até que o AEM ofereça suporte ao novo tipo de credencial servidor para servidor OAuth.
+O principal argumento é que o AEM agora oferece suporte às novas credenciais de servidor para servidor do OAuth para o AEM as a Cloud Service. Você pode ter recebido um email com instruções para migrar suas credenciais do JWT. Essa migração agora pode ser feita.
 
-As seções abaixo listam os cenários em que os clientes devem (ou às vezes não) substituir suas credenciais da Conta de serviço (JWT) por credenciais de servidor para servidor do OAuth, uma vez que o AEM ofereça suporte a eles em meados de maio. [Saiba como](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) para substituir as credenciais no futuro.
+As seções abaixo listam os cenários em que os clientes devem (ou em alguns casos não) substituir suas credenciais da Conta de serviço (JWT) por credenciais de Servidor para Servidor OAuth, agora que o AEM oferece suporte a eles. [Saiba como](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) para migrar as credenciais.
 
 >[!NOTE]
 >
 >A variável [**AEM** Console do desenvolvedor](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console) (observe o **AEM** no nome, que o distingue da variável **Adobe** Developer Console) fornece um utilitário para gerar [Tokens JWT](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) usado para APIs de servidor para servidor. Essas credenciais não foram substituídas e podem continuar sendo usadas.
 
-
 ## Integração do AEM a outras soluções da Adobe {#integrating-aem-with-other-adobe-solutions}
 
-**Ação**: aguarde para migrar até depois de meados de maio de 2024, quando o AEM permitir (este artigo será atualizado nesse momento)
+**Ação**: migrar sua configuração como AEM agora oferece suporte às credenciais OAuth.
 
 **Versões relevantes do AEM**: AEM AS A CLOUD SERVICE
 
-Os clientes do AEM usam a interface do autor do AEM para configurar integrações com todas as outras soluções de Adobe. Por exemplo, Adobe Target, Adobe Analytics, Adobe Launch, AFCS e muito mais.
+Os clientes do AEM usam o AEM para configurar integrações com muitas outras soluções de Adobe. Por exemplo, Adobe Target, Adobe Analytics e outros.
 
-![Integração do AEM a outras soluções](/help/security/assets/jwt-deprecation.png)
+Consulte [Configuração de integrações IMS para o AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) para obter detalhes sobre como:
 
-Como exemplo, aqui estão [as instruções](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims) para configurar a integração com o Adobe Target. A chave de API na variável [Concluir a configuração do IMS no AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/integrations/integration-adobe-target-ims#completing-the-ims-configuration-in-aem) deve ser migrada para o tipo de credencial servidor para servidor OAuth, uma vez que o AEM ofereça suporte a essas credenciais em meados de maio. Essas instruções serão atualizadas em meados de maio para ajudar você a aplicar as novas credenciais de servidor para servidor do OAuth.
+* criar configurações com credenciais do OAuth
+* migrar configurações, que foram criadas com credenciais JWT, para usar credenciais OAuth
 
 ## APIs do Cloud Manager {#cloud-manager-apis}
 
-**Ação**: migrar para credenciais OAuth de servidor para servidor.
+**Ação**: confirme quando é possível migrá-los do JWT para as credenciais do OAuth.
 
 **Versões relevantes do AEM**: AEM AS A CLOUD SERVICE
 
@@ -54,6 +54,6 @@ Os clientes criam projetos do Adobe Developer Console para que possam invocar [A
 
 **Versões relevantes do AEM**: AEM as a Cloud Service.
 
-Quando o Cloud Manager provisiona o ambiente as a Cloud Service AEM, ele gera automaticamente um projeto do Adobe Developer Console com credenciais JWT. Esse projeto está marcado como somente leitura, como ilustrado na captura de tela abaixo. Os clientes não podem e não devem tentar migrar esses projetos para credenciais de servidor para servidor OAuth. Em vez disso, o Adobe migrará esses projetos por conta própria, antes que as credenciais não possam mais ser usadas.
+Quando o Cloud Manager provisiona ambientes as a Cloud Service AEM, ele gera automaticamente um projeto do Adobe Developer Console com credenciais JWT. Esse projeto está marcado como somente leitura, como ilustrado na captura de tela abaixo. Os clientes não podem e não devem tentar migrar esses projetos para credenciais de servidor para servidor do OAuth. Em vez disso, o Adobe migrará esses projetos por conta própria, antes que as credenciais deixem de ser utilizáveis.
 
 ![Projetos gerados automaticamente](/help/security/assets/jwt-deprecation-autogen-projects.png)
