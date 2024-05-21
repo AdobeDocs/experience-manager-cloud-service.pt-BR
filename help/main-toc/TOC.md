@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
 workflow-type: tm+mt
-source-wordcount: '4962'
+source-wordcount: '4965'
 ht-degree: 83%
 
 ---
@@ -1175,6 +1175,7 @@ ht-degree: 83%
       + [Validação e depuração usando ferramentas do Dispatcher herdadas](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [CDN no AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configuração do tráfego no CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [Inclusões na borda](/help/implementing/dispatcher/edge-side-includes.md)
       + [Configuração de páginas de erro do CDN](/help/implementing/dispatcher/cdn-error-pages.md)
       + [Armazenamento em cache no AEM as a Cloud Service](/help/implementing/dispatcher/caching.md)
 + Conectores {#connectors}
