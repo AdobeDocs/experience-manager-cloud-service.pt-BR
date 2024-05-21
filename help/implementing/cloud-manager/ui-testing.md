@@ -2,10 +2,10 @@
 title: Teste de interface do usuário
 description: Os testes de interface do usuário personalizados são um recurso opcional que permite criar e executar automaticamente testes na interface do usuário para seus aplicativos personalizados.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 305098c7ebcb6145129b146d60538b5177b4f26d
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 98%
+source-wordcount: '2610'
+ht-degree: 79%
 
 ---
 
@@ -45,7 +45,7 @@ Esta seção descreve as etapas necessárias para a configuração dos testes de
 
    * Para Cypress, use o código de exemplo do [repositório de Exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 
-   * Para JavaScript e WDIO, use o código de exemplo que é gerado automaticamente na pasta `ui.tests` do seu repositório do Cloud Manager.
+   * Para JavaScript e WDIO, use o código de amostra gerado automaticamente no `ui.tests` pasta do seu repositório do Cloud Manager.
 
      >[!NOTE]
      >
@@ -146,7 +146,7 @@ Esta execução instrui o Plug-in de compilação Maven a criar um arquivo com b
 </assembly>
 ```
 
-O descritor de compilação instrui o plug-in a criar um arquivamento do tipo `.tar.gz` e atribuir o classificador `ui-test-docker-context` a ele. Além disso, ele lista os arquivos que devem ser incluídos no arquivamento, incluindo os descritos a seguir.
+O descritor de compilação instrui o plug-in a criar um arquivamento do tipo `.tar.gz` e atribuir o classificador `ui-test-docker-context` a ele. Além disso, ele lista os arquivos que devem ser incluídos no arquivamento, incluindo o seguinte:
 
 * Um `Dockerfile`, obrigatório para criar a imagem do Docker
 * O script `wait-for-grid.sh`, cujos objetivos são descritos abaixo
@@ -199,7 +199,7 @@ Se estiver usando os exemplos fornecidos pela Adobe:
   fi
   ```
 
-* Os exemplos de teste do Cypress e do Java Selenium fornecidos pela Adobe já têm o sinalizador de adesão definido.
+* As amostras de teste Cypress e Java Selenium fornecidas pelo Adobe já têm o sinalizador de aceitação definido.
 
 ## Gravação de testes da interface do usuário {#writing-ui-tests}
 
@@ -210,7 +210,7 @@ Esta seção descreve as convenções que a imagem do Docker que contém seus te
 As seguintes variáveis de ambiente são passadas para a imagem do Docker em tempo de execução, dependendo da estrutura.
 
 | Variável | Exemplos | Descrição | Estrutura de testes |
-|---|---|---|---|
+|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | A URL do servidor Selenium | Somente Selenium |
 | `SELENIUM_BROWSER` | `chrome` | A implementação do navegador usada pelo servidor Selenium | Somente Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | O URL da instância do autor do AEM | Todos |
@@ -221,12 +221,19 @@ As seguintes variáveis de ambiente são passadas para a imagem do Docker em tem
 | `AEM_PUBLISH_PASSWORD` | `admin` | A senha para fazer logon na instância de publicação do AEM | Todos |
 | `REPORTS_PATH` | `/usr/src/app/reports` | O caminho onde o relatório XML dos resultados do teste deve ser salvo | Todos |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL no qual o arquivo deve ser enviado para torná-lo acessível à estrutura de teste | Todos |
+| `PROXY_HOST` | `proxy-host` | O nome do host do Proxy HTTP interno a ser usado pela estrutura de teste | Todos, exceto Selenium |
+| `PROXY_HTTPS_PORT` | `8071` | A porta de escuta do servidor proxy para conexões HTTPS (pode estar vazia) | Todos, exceto Selenium |
+| `PROXY_HTTP_PORT` | `8070` | A porta de escuta do servidor proxy para conexões HTTP (pode estar vazia) | Todos, exceto Selenium |
+| `PROXY_CA_PATH` | `/path/to/root_ca.pem` | O caminho para o certificado CA a ser usado pela estrutura de testes | Todos, exceto Selenium |
+| `PROXY_OBSERVABILITY_PORT` | `8081` | A porta de verificação de integridade HTTP do servidor proxy | Todos, exceto Selenium |
+| `PROXY_RETRY_ATTEMPTS` | `12` | Número sugerido de tentativas ao aguardar a prontidão do servidor proxy | Todos, exceto Selenium |
+| `PROXY_RETRY_DELAY` | `5` | Atraso sugerido entre tentativas de repetição ao aguardar a prontidão do servidor proxy | Todos, exceto Selenium |
 
 Os exemplos de teste da Adobe fornecem funções auxiliares para acessar os parâmetros de configuração:
 
 * Cypress: use a função padrão `Cypress.env('VARIABLE_NAME')`
-* JavaScript: consulte o módulo [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js)
-* Java: consulte a classe [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java)
+* JavaScript: consulte o [`lib/config.js`](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests.wdio/test-module/lib/config.js) módulo
+* Java: consulte [`Config`](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) classe
 
 ### Gerar relatórios de teste {#generate-test-reports}
 
@@ -239,6 +246,8 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 >O resultado da etapa de teste da interface é avaliado somente com base nos relatórios de teste. Certifique-se de que o relatório seja gerado adequadamente para a execução do teste.
 >
 >Use asserções em vez de apenas registrar um erro no STDERR ou retornar um código de saída diferente de zero, caso contrário, o pipeline de implantação poderá continuar normalmente.
+>
+>Se um proxy HTTP foi usado durante a execução dos testes, os resultados incluirão um `request.log` arquivo.
 
 ### Pré-requisitos {#prerequisites}
 
@@ -307,7 +316,114 @@ Os testes às vezes devem carregar arquivos no aplicativo que está sendo testad
    * O conteúdo da resposta é um identificador de arquivo opaco.
    * Você pode usar esse identificador no lugar de um caminho de arquivo em um elemento `<input>` para testar os uploads de arquivo em seu aplicativo.
 
-## Execução de testes de interface locais {#run-ui-tests-locally}
+## Detalhes específicos do Cypress
+
+>[!NOTE]
+>
+>Esta seção só se aplica quando o Cypress é a infraestrutura de ensaio escolhida.
+
+### Configurar proxy HTTP
+
+O ponto de entrada do contêiner Docker precisa verificar o valor do `PROXY_HOST` variável de ambiente.
+
+Se esse valor estiver vazio, nenhuma etapa adicional será necessária e os testes deverão ser executados sem o uso do proxy HTTP.
+
+Se não estiver vazio, o script de ponto de entrada precisa:
+
+1. Configure uma conexão proxy HTTP para executar testes de interface. Isso pode ser feito exportando o `HTTP_PROXY` variável de ambiente criada usando os seguintes valores:
+   * Host proxy, que é fornecido por `PROXY_HOST` variável
+   * Porta de proxy, que é fornecida por `PROXY_HTTPS_PORT` ou `PROXY_HTTP_PORT` variável (a variável com um valor não vazio será usada)
+2. Defina o certificado CA que será usado na conexão com o proxy HTTP. Sua localização é fornecida por `PROXY_CA_PATH` variável.
+   * Isso pode ser feito exportando `NODE_EXTRA_CA_CERTS` variável de ambiente.
+3. Aguarde até que o proxy HTTP esteja pronto.
+   * Para verificar a prontidão, as variáveis de ambiente `PROXY_HOST`, `PROXY_OBSERVABILITY_PORT`, `PROXY_RETRY_ATTEMPTS` e `PROXY_RETRY_DELAY` pode ser usado.
+   * Você pode verificar usando uma solicitação cURL, certificando-se de instalar o cURL no `Dockerfile`.
+
+Um exemplo de implementação pode ser encontrado no ponto de entrada do módulo de teste de amostra do Cypress em [GitHub.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/run.sh)
+
+## Detalhes específicos do dramaturgo
+
+>[!NOTE]
+>
+> Esta seção só se aplica quando o dramaturgo é a infraestrutura de teste escolhida.
+
+### Configurar proxy HTTP
+
+>[!NOTE]
+>
+> Nos exemplos apresentados, supomos que o Chrome está sendo usado como um navegador de projeto.
+
+Semelhante ao Cypress, os testes precisam usar o proxy HTTP se um arquivo não vazio `PROXY_HOST` é fornecida.
+
+Para fazer isso, as seguintes modificações precisam ser feitas.
+
+#### Dockerfile
+
+Instalar cURL e `libnss3-tools`, que fornece `certutil.`
+
+```dockerfile
+RUN apt -y update \
+    && apt -y --no-install-recommends install curl libnss3-tools \
+    && rm -rf /var/lib/apt/lists/*
+```
+
+#### Script de ponto de entrada
+
+Inclua um script bash que, no caso `PROXY_HOST` for fornecida, o fará o seguinte:
+
+1. Exportar variáveis relacionadas ao proxy, como `HTTP_PROXY` e `NODE_EXTRA_CA_CERTS`
+2. Uso `certutil` para instalar o certificado de autoridade de certificação proxy para chromium
+3. Aguarde até que o proxy HTTP esteja pronto (ou saia em caso de falha).
+
+Exemplo de implementação:
+
+```bash
+# setup proxy environment variables and CA certificate
+if [ -n "${PROXY_HOST:-}" ]; then
+  if [ -n "${PROXY_HTTPS_PORT:-}" ]; then
+    export HTTP_PROXY="https://${PROXY_HOST}:${PROXY_HTTPS_PORT}"
+  elif [ -n "${PROXY_HTTP_PORT:-}" ]; then
+    export HTTP_PROXY="http://${PROXY_HOST}:${PROXY_HTTP_PORT}"
+  fi
+  if [ -n "${PROXY_CA_PATH:-}" ]; then
+    echo "installing certificate"
+    mkdir -p $HOME/.pki/nssdb
+    certutil -d sql:$HOME/.pki/nssdb -A -t "CT,c,c" -n "EaaS Client Proxy Root" -i $PROXY_CA_PATH
+    export NODE_EXTRA_CA_CERTS=${PROXY_CA_PATH}
+  fi
+  if [ -n "${PROXY_OBSERVABILITY_PORT:-}" ] && [ -n "${HTTP_PROXY:-}" ]; then
+    echo "waiting for proxy"
+    curl --silent  --retry ${PROXY_RETRY_ATTEMPTS:-3} --retry-connrefused --retry-delay ${PROXY_RETRY_DELAY:-10} \
+      --proxy ${HTTP_PROXY} --proxy-cacert ${PROXY_CA_PATH:-""} \
+      ${PROXY_HOST}:${PROXY_OBSERVABILITY_PORT}
+    if [ $? -ne 0 ]; then
+      echo "proxy is not ready"
+      exit 1
+    fi
+  fi
+fi
+```
+
+#### Configuração do dramaturgo
+
+Modifique a configuração do autor de reprodução (por exemplo, em `playwright.config.js`) para usar um proxy no caso de o `HTTP_PROXY` está definida.
+
+Exemplo de implementação:
+
+```javascript
+const proxyServer = process.env.HTTP_PROXY || ''
+```
+
+```javascript
+// enable proxy if set
+if (proxyServer !== '') {
+ cfg.use.proxy = {
+  server: proxyServer,
+ }
+}
+```
+
+## Execução de testes locais de interface {#run-ui-tests-locally}
 
 Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recomendável executá-los localmente no [SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ou em uma instância real do AEM as a Cloud Service.
 
