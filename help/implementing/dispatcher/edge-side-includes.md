@@ -2,9 +2,9 @@
 title: Inclusões na borda
 description: O CDN gerenciado por Adobe agora é compatível com ESI (Edge Side Includes), uma linguagem de marcação para a montagem de conteúdo dinâmico da Web no nível da borda.
 feature: Dispatcher
-source-git-commit: 3aab5d3beb7bedf7a61bc557be349f2aa5ed8a7b
+source-git-commit: fb7c793a975fd725ef1cebcab545e057de78fa9d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '543'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ A sintaxe ESI é a seguinte se uma página principal `/content/page.html` inclui
 
 Consulte a [Especificação ESI](https://www.w3.org/TR/esi-lang/) para obter detalhes.
 
-### Considerações (#esi-syntax-considerations}
+### Considerações {#esi-syntax-considerations}
 
 * As seguintes tags ESI são compatíveis: include, comment, remove.
 * As tags ESI são processadas na CDN sequencialmente em vez de simultaneamente, portanto, muitas tags ESI em uma página com TTLs baixos podem adicionar latência à experiência do usuário final.
