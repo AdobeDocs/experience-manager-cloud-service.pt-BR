@@ -2,7 +2,7 @@
 title: Editar as propriedades da página
 description: Saiba como definir as propriedades necessárias para gerenciar uma página no AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
 source-wordcount: '2268'
 ht-degree: 89%
@@ -52,7 +52,7 @@ As propriedades são distribuídas por várias guias.
 
    * **Título da página** - um título a ser usado na página. Normalmente é usado pelos componentes de título. Se estiver vazio, a variável **Título** é usada.
    * **Título de navegação**: você pode especificar um título separado para uso na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, o **Título** é usado.
-   * **Subtítulo** - um subtítulo para usar na página.
+   * **Legenda** - Um subtítulo para usar na página.
    * **Descrição** - a sua descrição da página, a finalidade dela ou qualquer outro detalhe que desejar adicionar.
 
 * **Horário ligado/desligado**

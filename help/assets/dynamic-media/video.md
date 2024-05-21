@@ -1,13 +1,13 @@
 ---
 title: Vídeo no Dynamic Media
-description: Saiba como trabalhar com vídeo no Dynamic Media. Analise as práticas recomendadas para codificar vídeos, publicar vídeos no YouTube, visualizar relatórios de vídeo e adicionar legendas ocultas, legendas ou marcadores de capítulo aos vídeos.
+description: Saiba como trabalhar com vídeo no Dynamic Media. Analise as práticas recomendadas para codificar vídeos, publicar vídeos no YouTube, visualizar relatórios de vídeo e adicionar legendas ocultas ou marcadores de capítulo a vídeos.
 contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '9350'
+source-wordcount: '9340'
 ht-degree: 1%
 
 ---
@@ -521,7 +521,7 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 
 
-## Habilite o suporte a DASH, legendas múltiplas e faixas de áudio múltiplas na sua conta Dynamic Media {#enable-dash}
+## Habilite o suporte para DASH, legenda múltipla e faixa de áudio múltiplo na sua conta do Dynamic Media {#enable-dash}
 
 **Sobre a ativação do suporte a DASH na sua conta**
 DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre DASH ou HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com alternância automática entre players quando **[!UICONTROL automático]** é selecionado como o tipo de reprodução na predefinição do Visualizador.
@@ -537,15 +537,15 @@ Alguns dos principais benefícios da ativação do DASH em sua conta incluem:
 
 A habilitação do suporte DASH na sua conta é feita por meio de um caso de Suporte ao cliente do Adobe que você cria e envia.
 
-**Sobre como ativar o suporte a faixas de várias legendas e áudio na sua conta**
+**Sobre como ativar o suporte à faixa de multi-legenda e multi-áudio na sua conta**
 
-Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na sua conta, você também pode se beneficiar de ter suporte para faixas de multi-legendas e multi-áudio ativado automaticamente. Após a ativação, todos os vídeos subsequentes que você carregar serão processados com uma nova arquitetura de back-end que inclui suporte para adicionar faixas de várias legendas e áudio aos seus vídeos.
+Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado em sua conta, você também pode se beneficiar de ter suporte para multi-caption e multi-audio track automaticamente ativado. Após a ativação, todos os vídeos subsequentes que você carregar serão processados com uma nova arquitetura de back-end que inclui suporte para adicionar trilhas de várias legendas e áudio aos seus vídeos.
 
 >[!IMPORTANT]
 >
->Qualquer vídeo que você tenha carregado *antes* habilitar suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
+>Qualquer vídeo que você tenha carregado *antes* ativar o suporte à faixa de multi-caption e multi-audio na sua conta Dynamic Media, [deve ser reprocessado](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que a capacidade de faixa de multi-legenda e multi-áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
-**Para ativar o suporte a DASH, legendas múltiplas e faixas de áudio múltiplo na sua conta do Dynamic Media:**
+**Para ativar o suporte a DASH, multi-caption e faixa de áudio múltiplo na sua conta do Dynamic Media:**
 
 1. [Use o Admin Console para iniciar a criação de um novo caso de suporte](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 1. Para criar um caso de suporte, siga as instruções enquanto garante que você forneça as seguintes informações:
@@ -554,7 +554,7 @@ Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na
    * Seu ambiente do Cloud Service (ID do programa e ID do ambiente).
    * O nome da conta da sua empresa Dynamic Media.
    * Sua região do Dynamic Media: América do Norte (NA), Ásia-Pacífico (APAC) ou Europa-Oriente Médio-Ásia (EMEA).
-   * Especifique se deseja que o DASH, as legendas múltiplas e o suporte para faixas de áudio múltiplo estejam habilitados na sua conta do Dynamic Media, no Experience Manager 6.5.
+   * Especifique se deseja que o DASH, a legenda múltipla e o suporte de faixa de áudio múltiplo estejam habilitados em sua conta do Dynamic Media, no Experience Manager 6.5.
 
 1. O Suporte ao cliente do Adobe adiciona você à Lista de espera do cliente com base na ordem em que as solicitações são enviadas.
 1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte ao cliente entrará em contato com você para coordenar e definir uma data limite para ativação.
@@ -562,16 +562,16 @@ Ao mesmo tempo que cria um caso de suporte para Adobe para ter o DASH ativado na
 1. Agora é possível executar um dos seguintes procedimentos:
 
    * Crie seu [predefinição do visualizador de vídeo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costume.
-   * [Adicionar multi-legendas e faixas de áudio](#add-msma) ao seu vídeo.
+   * [Adicionar várias legendas e faixas de áudio](#add-msma) ao seu vídeo.
 
 
-## Sobre o suporte a faixas de várias legendas e áudio para vídeos no Dynamic Media{#about-msma}
+## Sobre o suporte à faixa de multi-legenda e multi-áudio para vídeos no Dynamic Media{#about-msma}
 
 Com o recurso de faixa de várias legendas e áudio no Dynamic Media, é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 
-![A guia Legendas e faixas de áudio no Dynamic Media, juntamente com uma tabela mostrando os arquivos de legenda .VTT carregados e os arquivos de faixa de áudio .MP3 carregados para um vídeo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
+![A guia Legendas e trilhas de áudio no Dynamic Media, juntamente com uma tabela mostrando os arquivos de legenda .VTT e os arquivos de trilha de áudio .MP3 carregados para um vídeo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
 
-Alguns dos casos de uso a serem considerados para adicionar múltiplas legendas e faixas de áudio ao seu vídeo principal incluem:
+Alguns dos casos de uso a serem considerados para adicionar legendas múltiplas e faixas de áudio múltiplas ao seu vídeo principal incluem:
 
 | Tipo | Caso de uso |
 |--- |--- |
@@ -581,28 +581,28 @@ Alguns dos casos de uso a serem considerados para adicionar múltiplas legendas 
 |  | Faixas de comentários |
 |  | Áudio descritivo |
 
-Todos [formatos de vídeo compatíveis com o Dynamic Media](/help/assets/file-format-support.md) e todos os visualizadores de vídeo do Dynamic Media, exceto o Dynamic Media *Video_360* visualizador—são suportados para uso com multi-legendas e faixas de áudio multi.
+Todos [formatos de vídeo compatíveis com o Dynamic Media](/help/assets/file-format-support.md) e todos os visualizadores de vídeo do Dynamic Media, exceto o Dynamic Media *Video_360* visualizador — são compatíveis para uso com legendas múltiplas e faixas de áudio múltiplo.
 
-O recurso de faixa de várias legendas e áudio está disponível para sua conta Dynamic Media por meio de um botão de alternância de recurso que deve ser ativado pelo Suporte ao cliente Adobe.
+A capacidade de rastreamento de várias legendas e áudio está disponível para sua conta Dynamic Media por meio de um botão de alternância de recurso que deve ser ativado pelo Suporte ao cliente Adobe.
 
-### Adicionar multi-legendas e faixas de áudio multi ao seu vídeo {#add-msma}
+### Adicionar várias legendas e faixas de áudio ao seu vídeo {#add-msma}
 
-Antes de adicionar faixas de várias legendas e áudio ao vídeo, verifique se você já tem o seguinte no local:
+Antes de adicionar trilhas de várias legendas e áudio ao vídeo, verifique se você já tem o seguinte no local:
 
 * O Dynamic Media é configurado em um ambiente AEM.
 * A [O perfil Dynamic Media Video é aplicado à pasta em que os vídeos são assimilados](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [As legendas múltiplas e a faixa de áudio múltiplo estão habilitadas em sua conta do Dynamic Media](#enable-dash).
+* [A legenda múltipla e a faixa de áudio múltiplo estão habilitadas em sua conta do Dynamic Media](#enable-dash).
 
 Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E os arquivos de trilha de áudio adicionados são suportados com o formato MP3.
 
 >[!IMPORTANT]
 >
->Qualquer vídeo que você tenha carregado *antes* habilitar suporte a faixas de várias legendas e áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que o recurso de faixa de várias legendas e áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
+>Qualquer vídeo que você tenha carregado *antes* ativar o suporte à faixa de multi-caption e multi-audio na sua conta Dynamic Media, [deve ser reprocessado](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Esta etapa de reprocessamento de vídeo é necessária para que a capacidade de faixa de multi-legenda e multi-áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
-**Para adicionar multi-legendas e faixas de áudio ao seu vídeo:**
+**Para adicionar várias legendas e faixas de áudio ao vídeo:**
 
 1. [Fazer upload do vídeo principal para uma pasta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) que já tem um perfil de vídeo atribuído a ele.
-1. Navegue até o ativo de vídeo carregado que você deseja adicionar faixas de várias legendas e áudio.
+1. Navegue até o ativo de vídeo carregado que você deseja adicionar trilhas de várias legendas e áudio.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
 1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
    ![Ativo de vídeo selecionado com marca de seleção sobre a imagem em miniatura do vídeo e Propriedades de exibição destacadas na barra de ferramentas.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ativo de vídeo selecionado na exibição de Cartão.*
@@ -616,21 +616,21 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
    >
    >Quando tiver concluído uma das tarefas acima, retorne a essas etapas.
 
-   ![Guia Legendas e faixas de áudio na página Propriedades.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*A guia Legendas e faixas de áudio na página Propriedades do vídeo.*
+   ![Guia Legendas e faixas de áudio na página Propriedades.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Guia Legendas e faixas de áudio na página Propriedades do vídeo.*
 
-1. (Opcional) Para adicionar um ou mais arquivos de subtítulo (ou legenda) a um vídeo, faça o seguinte:
-   * Selecionar **[!UICONTROL Carregar Legendas]**.
+1. (Opcional) Para adicionar um ou mais arquivos de legenda a um vídeo, faça o seguinte:
+   * Selecionar **[!UICONTROL Fazer upload de legendas]**.
    * Navegue até um ou mais arquivos .vtt (Video Text Tracks) e selecione-os.
-   * Para que as legendas fiquem visíveis no leitor multimídia, você *deve* adicionar os detalhes necessários (metadados) sobre *cada* arquivo de legenda que você carregou. Selecione o ícone de lápis à direita de um nome de arquivo de legenda. No **Editar Legenda** , insira os seguintes detalhes necessários sobre o arquivo e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de subtítulo que você carregou:
+   * Para que as legendas fiquem visíveis no reprodutor de mídia, você *deve* adicionar os detalhes necessários (metadados) sobre *cada* arquivo de legenda que você carregou. Selecione o ícone de lápis à direita de um nome de arquivo de legenda. No **Editar legenda** , insira os seguintes detalhes necessários sobre o arquivo e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de legenda que você carregou:
 
      | Metadados da legenda | Descrição |
      |--- |--- |
-     | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos de legendas e faixas de áudio adicionais. |
-     | Idioma | Selecione o idioma do subtítulo. |
-     | Tipo | Selecione o tipo de subtítulo que você está usando.<br>**Legenda** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda também inclui ruídos de fundo, diferenciação do alto-falante e outras informações relevantes, juntamente com a tradução ou transcrição do diálogo, tornando o conteúdo mais acessível para indivíduos surdos ou com deficiência auditiva. |
-     | Rótulo | O texto que é exibido para o nome do subtítulo na variável **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou subtítulo. Por exemplo, `English (CC)`. |
+     | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos de legenda e de trilha de áudio adicionais. |
+     | Idioma | Selecione o idioma da legenda. |
+     | Tipo | Selecione o tipo de legenda que você está usando.<br>**Legenda** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda também inclui ruídos de fundo, diferenciação do alto-falante e outras informações relevantes, juntamente com a tradução ou transcrição do diálogo, tornando o conteúdo mais acessível para indivíduos surdos ou com deficiência auditiva. |
+     | Rótulo | O texto exibido para o nome da legenda no campo **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou legenda. Por exemplo, `English (CC)`. |
 
-     É possível alterar ou editar os metadados das legendas posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
+     É possível alterar ou editar os metadados da legenda posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
 
 1. (Opcional) Para adicionar uma ou mais faixas de áudio a um vídeo, faça o seguinte:
    * Selecionar **[!UICONTROL Carregar faixas de áudio]**.
@@ -652,25 +652,25 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
    >
    >Com base nas configurações de cache da sua instância, o processamento de metadados pode levar vários minutos antes de ser refletido na pré-visualização e nos URLs publicados.
 
-1. (Opcional) Se você selecionou **[!UICONTROL Salvar e fechar]** na etapa anterior, em vez de selecionar **[!UICONTROL Salvar]**, você ainda poderá visualizar o status de processamento dos arquivos carregados. Consulte [Visualizar o status do ciclo de vida dos arquivos de legenda e áudio carregados](#lifecycle-status-video).
-1. (Opcional) Visualize o vídeo antes de publicar para garantir que as legendas e o áudio funcionem conforme esperado. Consulte [Visualizar um vídeo com várias legendas e faixas de áudio](#preview-video-audio-subtitle)
+1. (Opcional) Se você selecionou **[!UICONTROL Salvar e fechar]** na etapa anterior, em vez de selecionar **[!UICONTROL Salvar]**, você ainda poderá visualizar o status de processamento dos arquivos carregados. Consulte [Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados](#lifecycle-status-video).
+1. (Opcional) Visualize o vídeo antes da publicação para garantir que as legendas e o áudio funcionem conforme esperado. Consulte [Visualizar um vídeo com várias legendas e faixas de áudio](#preview-video-audio-subtitle)
 1. Publique o vídeo. Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
-#### Sobre a adição de arquivos de legenda e faixa de áudio a um vídeo já publicado
+#### Sobre a adição de arquivos de legenda e trilha de áudio a um vídeo já publicado
 
 Ao fazer upload de arquivos de legenda ou de faixas de áudio adicionais para um vídeo já publicado, significa que esses arquivos terão uma `Processed` após serem preparados, após o upload. Nesse ponto, é possível visualizar o vídeo no Dynamic Media para ver ou ouvir os arquivos recém-carregados.
 
-Após a visualização, no entanto, você deve *publicar* o vídeo novamente para os arquivos de legenda ou faixa de áudio adicionados recentemente para serem publicados também. Após a publicação, as legendas ou o áudio ficam disponíveis com o URL público do Dynamic Media.
+Após a visualização, no entanto, você deve *publicar* o vídeo novamente para os arquivos de legenda ou trilha de áudio recém-adicionados a serem publicados também. Após a publicação, as legendas ou o áudio ficam disponíveis com o URL público do Dynamic Media.
 
 >[!NOTE]
 >
 >Com base nas configurações de armazenamento em cache da sua instância, as atualizações de metadados podem levar vários minutos antes de serem refletidas na pré-visualização e em URLs publicados.
 
-No cenário em que você configurou o Dynamic Media para publicação imediata, o upload de arquivos de subtítulo ou áudio adicionais aciona imediatamente uma publicação do vídeo após o upload de arquivos de subtítulo ou áudio.
+No cenário em que você configurou o Dynamic Media para publicação imediata, o upload de arquivos de legenda ou áudio adicionais aciona imediatamente uma publicação do vídeo após o upload de arquivos de legenda ou áudio.
 
 >[!CAUTION]
 >
->Ao fazer upload de arquivos de legenda ou de áudio para um vídeo publicado ou não, os arquivos serão excluídos se você [*reprocessar*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) o vídeo. Somente o áudio original do vídeo permanece intacto. Nesses casos, você deve fazer upload novamente dos arquivos de legenda e de faixa de áudio para o vídeo.
+>Ao fazer upload de arquivos de legenda ou de áudio para um vídeo publicado ou não, os arquivos serão excluídos se você [*reprocessar*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) o vídeo. Somente o áudio original do vídeo permanece intacto. Nesses casos, você deve fazer upload novamente dos arquivos de legenda e de trilha de áudio para o vídeo.
 
 #### Adicione várias legendas a um vídeo que tenha um URL existente com modificador de legenda
 
@@ -681,30 +681,30 @@ Várias alterações de legenda têm precedência sobre uma legenda adicionada p
 **Para adicionar várias legendas a um vídeo que tenha um URL existente com o modificador de legenda:**
 
 1. Faça upload do arquivo de legenda que já foi adicionado como um modificador ao vídeo para que você possa gerenciar o arquivo explicitamente.
-1. Carregue quaisquer arquivos de legenda/legenda adicionais, conforme necessário.
+1. Carregue quaisquer arquivos de legenda adicionais, conforme necessário.
 1. Publique o vídeo como de costume.
 O URL existente com o modificador de legenda agora pode carregar várias legendas.
 
-### Visualizar o status do ciclo de vida dos arquivos de legenda e áudio carregados{#lifecycle-status-video}
+### Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados{#lifecycle-status-video}
 
-Você pode observar o status do ciclo de vida de qualquer arquivo de legenda ou trilha de áudio carregado no vídeo principal pela **Legendas e faixas de áudio** guia de **Propriedades**.
+Você pode observar o status do ciclo de vida de qualquer legenda ou arquivo de trilha de áudio carregado no vídeo principal pelo **Legendas e faixas de áudio** guia de **Propriedades**.
 
 **Para exibir o status do ciclo de vida de um vídeo:**
 
 1. Navegue até o ativo de vídeo cujo status do ciclo de vida você deseja exibir.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
 1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
-1. Na página Propriedades, selecione a variável **[!UICONTROL Legendas e faixas de áudio]** guia. Na coluna Status, observe o estado de cada subtítulo ou arquivo de áudio.
+1. Na página Propriedades, selecione a variável **[!UICONTROL Legendas e faixas de áudio]** guia. Na coluna Status, observe o estado de cada legenda ou arquivo de áudio.
 
-| Status da faixa de legenda ou áudio | Descrição |
+| Status da legenda ou da faixa de áudio | Descrição |
 | --- | --- |
-| Processamento | Quando um novo arquivo de legenda ou faixa de áudio é adicionado e salvo, ele entra em um estado de &quot;Processamento&quot;. O Dynamic Media processa o arquivo anexando o manifesto de transmissão ao vídeo principal. |
-| Processado | Após a conclusão do processamento, o arquivo de legenda ou trilha de áudio, ou a faixa de áudio original associada ao vídeo principal, é exibido no estado &quot;Processado&quot;. Você pode visualizar os arquivos de legenda e faixa de áudio que aparecem como &quot;Processados&quot; *antes* publique o vídeo em tempo real. |
+| Processamento | Quando um novo arquivo de legenda ou trilha de áudio é adicionado e salvo, ele entra em um estado de &quot;Processamento&quot;. O Dynamic Media processa o arquivo anexando o manifesto de transmissão ao vídeo principal. |
+| Processado | Após a conclusão do processamento, o arquivo de legenda ou trilha de áudio, ou a faixa de áudio original associada ao vídeo principal, é exibido no estado &quot;Processado&quot;. Você pode visualizar arquivos de legenda e faixa de áudio que aparecem como &quot;Processados&quot; *antes* publique o vídeo em tempo real. |
 | Publicado | Um estado &quot;Publicado&quot; representa um estado semelhante a &quot;Publicado&quot; para um vídeo principal. Os ativos são publicados quando o vídeo principal é publicado e ficam disponíveis no URL público do Dynamic Media. |
-| Falhou | Um estado de &quot;falha&quot; significa que o processamento de um arquivo de legenda ou faixa de áudio não foi concluído. Exclua o arquivo de legenda ou faixa de áudio e carregue novamente. |
-| A página não publicada | Quando a publicação de um vídeo principal é cancelada explicitamente, qualquer subtítulo ou arquivo de trilha de áudio adicionado ao vídeo também tem sua publicação cancelada. |
+| Falhou | Um estado &quot;Com falha&quot; significa que o processamento de uma legenda ou faixa de áudio não foi concluído. Exclua a legenda ou o arquivo de trilha de áudio e carregue novamente. |
+| A página não publicada | Quando a publicação de um vídeo principal é cancelada explicitamente, qualquer legenda ou arquivo de trilha de áudio adicionado ao vídeo também tem sua publicação cancelada. |
 
-![Coluna de status realçada para os campos Legendas e Faixas de áudio.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Status do ciclo de vida de cada subtítulo e arquivo de trilha de áudio carregados.*
+![Coluna de status realçada para os campos Legendas e Faixas de áudio.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Status do ciclo de vida de cada legenda e arquivo de rastreamento de áudio carregados.*
 
 ### Definir o áudio padrão de um vídeo com várias faixas de áudio
 
@@ -736,7 +736,7 @@ No **Definir como padrão** caixa de diálogo, selecione **[!UICONTROL Substitui
 
 ### Visualizar um vídeo com várias legendas e faixas de áudio{#preview-video-audio-subtitle}
 
-Depois que os arquivos de legenda e de faixa de áudio forem carregados em um vídeo e processados, você poderá usar o visualizador de vídeo do Dynamic Media para visualizar todas as faixas diferentes. Isso ajuda você a ver a aparência e o som do seu vídeo para os clientes e garante que ele esteja se comportando conforme esperado.
+Depois que os arquivos de legenda e de trilha de áudio são carregados em um vídeo e processados, é possível usar o visualizador de vídeo do Dynamic Media para visualizar todas as faixas diferentes. Isso ajuda você a ver a aparência e o som do seu vídeo para os clientes e garante que ele esteja se comportando conforme esperado.
 
 Quando estiver satisfeito com o vídeo, você poderá [publicar](publishing-dynamicmedia-assets.md) usando qualquer um dos métodos a seguir.
 
@@ -746,7 +746,7 @@ Consulte [Adicionar ativos do Dynamic Media a páginas](/help/assets/dynamic-med
 
 >[!NOTE]
 >
->A aba de visualização de Experience Manager padrão não mostra múltiplas faixas de subtítulo e áudio. Isso ocorre porque essas faixas estão associadas ao Dynamic Media e só podem ser vistas usando a pré-visualização do Dynamic Media Viewer.
+>A guia de visualização de Experience Manager padrão não mostra várias legendas e faixas de áudio. Isso ocorre porque essas faixas estão associadas ao Dynamic Media e só podem ser vistas usando a pré-visualização do Dynamic Media Viewer.
 
 **Para visualizar um vídeo com várias legendas e faixas de áudio:**
 
@@ -760,7 +760,7 @@ Consulte [Adicionar ativos do Dynamic Media a páginas](/help/assets/dynamic-med
 
    ![Seleção do Visualizador de vídeo na lista suspensa Visualizadores.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
 
-1. Próximo ao canto inferior direito, à esquerda do ícone do volume, selecione o ícone de balão de fala e selecione o áudio ou subtítulo que deseja ouvir ou ver, ou ambos. Se desejar, em Legendas, você poderá selecionar **[!UICONTROL Desligado]** para não exibir legendas ou legendas.
+1. Próximo ao canto inferior direito, à esquerda do ícone do volume, selecione o ícone de balão de fala e selecione o áudio ou a legenda que deseja ouvir ou ver, ou ambos. Se desejar, em Legendas, é possível selecionar **[!UICONTROL Desligado]** para não exibir nenhuma legenda ou legenda.
 
    ![A lista pop-up Áudio e legendas no visualizador de Vídeo.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulação de um usuário que seleciona o áudio e a legenda para a reprodução de vídeo.*
 
@@ -768,13 +768,13 @@ Consulte [Adicionar ativos do Dynamic Media a páginas](/help/assets/dynamic-med
 Observe que **[!UICONTROL URL]** e **[!UICONTROL Incorporar]** no canto inferior esquerdo. Use esses botões para [vincule o URL do vídeo ao seu aplicativo web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou para [incorporar o vídeo em uma página da Web](/help/assets/dynamic-media/embed-code.md), respectivamente.
 1. Próximo ao canto superior direito da página de visualização, selecione **[!UICONTROL Fechar]**.
 
-### Excluir arquivos de legendas ou faixas de áudio de um vídeo
+### Excluir arquivos de legenda ou de trilha de áudio de um vídeo
 
-É possível excluir arquivos de legenda ou de faixas de áudio de um vídeo. A exclusão de arquivos de legenda ou faixa de áudio publicados é refletida automaticamente no URL publicado do vídeo.
+É possível excluir arquivos de legenda ou de trilha de áudio de um vídeo. A exclusão de arquivos de legenda ou trilha de áudio publicados é refletida automaticamente no URL publicado do vídeo.
 
 A faixa de áudio original extraída de um vídeo principal não pode ser excluída.
 
-**Para excluir arquivos de legendas ou faixas de áudio de um vídeo:**
+**Para excluir arquivos de legenda ou de trilha de áudio de um vídeo:**
 
 1. Navegue até o ativo de vídeo cuja faixa de áudio padrão você deseja definir.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
@@ -782,19 +782,19 @@ A faixa de áudio original extraída de um vídeo principal não pode ser exclu�
 1. Na página Propriedades, selecione a variável **[!UICONTROL Legendas e faixas de áudio]** guia.
 1. Siga um destes procedimentos:
 
-   * Legendas—Sob a **Legendas** selecione um ou mais arquivos de legenda que deseja excluir do vídeo e selecione **[!UICONTROL Excluir]**.
+   * Legendas - Sob a **Legendas** selecione um ou mais arquivos de legenda que deseja excluir do vídeo e selecione **[!UICONTROL Excluir]**.
    * Faixas de áudio - Sob o **Faixas de áudio** selecione um ou mais arquivos de trilha de áudio que deseja excluir do vídeo e selecione **[!UICONTROL Excluir]**.
 
 1. Na caixa de diálogo Excluir, selecione **[!UICONTROL OK]**.
 1. Publique o vídeo.
 
-### Baixar arquivos de legenda ou faixa de áudio que foram enviados para um vídeo
+### Baixar arquivos de legenda ou de trilha de áudio que foram carregados em um vídeo
 
-É possível baixar um ou mais arquivos de legenda ou trilha de áudio carregados para uso com um vídeo. Você tem a opção de baixar todos os arquivos selecionados como um .zip ou criar uma pasta de download separada para cada arquivo.
+É possível baixar um ou mais arquivos de legenda ou de trilha de áudio carregados para uso com um vídeo. Você tem a opção de baixar todos os arquivos selecionados como um .zip ou criar uma pasta de download separada para cada arquivo.
 
 A faixa de áudio original extraída de um arquivo primário não pode ser baixada.
 
-**Para baixar arquivos de legenda ou trilha de áudio de um vídeo:**
+**Para baixar arquivos de legenda ou de trilha de áudio de um vídeo:**
 
 1. Navegue até o ativo de vídeo cuja faixa de áudio padrão você deseja definir.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
@@ -802,7 +802,7 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
 1. Na página Propriedades, selecione a variável **[!UICONTROL Legendas e faixas de áudio]** guia.
 1. Siga um destes procedimentos:
 
-   * Legendas—Sob a **Legendas** selecione um ou mais arquivos de legenda que deseja baixar do vídeo e selecione **[!UICONTROL Baixar]**.
+   * Legendas - Sob a **Legendas** selecione um ou mais arquivos de legenda que deseja baixar do vídeo e selecione **[!UICONTROL Baixar]**.
    * Faixas de áudio - Sob o **Faixas de áudio** selecione um ou mais arquivos de trilha de áudio que deseja baixar do vídeo e selecione **[!UICONTROL Baixar]**.
 
 1. Na caixa de diálogo Download, defina as seguintes opções:
@@ -810,9 +810,9 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
    | Opção | Descrição |
    |--- |--- |
    | Salvar como | Use o nome de arquivo padrão especificado no campo de texto Salvar como ou especifique seu próprio nome. |
-   | Criar uma pasta separada para cada ativo | Crie uma pasta para cada arquivo de legenda ou de faixa de áudio selecionado para download. |
+   | Criar uma pasta separada para cada ativo | Crie uma pasta para cada arquivo de legenda ou de trilha de áudio selecionado para download. |
    | Email | Use o programa de email padrão para enviar o arquivo .zip para um endereço de email especificado. |
-   | Assets | Especifica o número de arquivos que você está baixando e o tamanho total combinado de todos os arquivos selecionados. Desmarcar essa opção esmaece (desativa) a **[!UICONTROL Baixar]** botão, impedindo o download de qualquer arquivo. |
+   | Ativos | Especifica o número de arquivos que você está baixando e o tamanho total combinado de todos os arquivos selecionados. Desmarcar essa opção esmaece (desativa) a **[!UICONTROL Baixar]** botão, impedindo o download de qualquer arquivo. |
 1. Selecionar **[!UICONTROL Baixar]**.
 1. Publique o vídeo. Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
 
@@ -825,7 +825,7 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
 
 >[!IMPORTANT]
 >
->O Adobe recomenda que você [habilitar o recurso de faixa de várias legendas e de vários áudio](#enable-dash) na sua conta do Dynamic Media. Isso permite que você aproveite a arquitetura de back-end mais recente do Dynamic Media e um fluxo de trabalho simplificado para adicionar legendas, legendas e faixas de áudio aos seus vídeos.
+>O Adobe recomenda que você [habilitar recurso de faixa de multi-caption e multi-audio](#enable-dash) na sua conta do Dynamic Media. Isso permite que você aproveite a arquitetura de back-end mais recente do Dynamic Media e um fluxo de trabalho simplificado para adicionar legendas, legendas e faixas de áudio aos seus vídeos.
 
 Você pode estender o alcance de seus vídeos para mercados globais adicionando legendas ocultas a vídeos únicos ou a Conjuntos de vídeos adaptados. Ao adicionar legendas ocultas, você evita a necessidade de dublar o áudio ou a necessidade de usar alto-falantes nativos para regravar o áudio para cada idioma diferente. O vídeo é reproduzido no idioma em que foi gravado. Legendas em idiomas estrangeiros aparecem para que pessoas de diferentes idiomas ainda possam entender a parte de áudio.
 
@@ -841,15 +841,15 @@ O Dynamic Media pode converter arquivos de legenda para o formato JSON (JavaScri
 
 Consulte [Veiculação de conteúdo estático (não imagem)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) para obter mais informações sobre como usar a função JSON em um URL.
 
-**Para adicionar legendas ou legendas ao vídeo:**
+**Para adicionar legendas ao vídeo:**
 
-1. Use um aplicativo ou serviço de terceiros para criar o arquivo de legenda/subtítulo do vídeo.
+1. Use um aplicativo ou serviço de terceiros para criar o arquivo de legenda de vídeo.
 
    Certifique-se de que o arquivo criado segue o padrão WebVTT (Web Video Text Tracks, Rastreamentos de texto de vídeo na Web). A extensão do nome de arquivo da legenda é .VTT. Você pode obter mais informações sobre o padrão de legendagem WebVTT.
 
    Consulte [WebVTT: o formato de faixas de texto de vídeo da Web](https://w3c.github.io/webvtt/).
 
-   Há muitos sites que oferecem ferramentas e serviços gratuitos e premium que você pode usar para criar arquivos de legenda/legenda WebVTT fora do Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
+   Há muitos sites que oferecem ferramentas e serviços gratuitos e premium que você pode usar para criar arquivos de legenda WebVTT fora do Dynamic Media. <!-- THE FOLLOWING LINK IS NO LONGER LIVE. CHECKED DECEMBER 13, 2023 For example, to create a simple video caption file with no styling, you can use the following free online caption authoring and editing tool: -->
 
    <!-- [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
@@ -861,7 +861,7 @@ Siga as instruções na tela de um site para criar e salvar o arquivo WebVTT. Qu
 
 >[!NOTE]
 >
->Para suporte global de legendas em vídeo em vários idiomas, o padrão WebVTT exige a criação de arquivos .vtt separados e chamadas para cada idioma aceito.
+>Para o suporte global de legendas de vídeo em vários idiomas, o padrão WebVTT exige a criação de arquivos .vtt separados e chamadas para cada idioma ao qual você deseja oferecer suporte.
 
 Geralmente, você deseja nomear o arquivo de legenda VTT com o mesmo nome do arquivo de vídeo e anexá-lo ao idioma local, como -EN, -FR ou -DE. Ao fazer isso, ele pode ajudar você a automatizar a geração dos URLs de vídeo usando seu sistema existente de gerenciamento de conteúdo na Web.
 

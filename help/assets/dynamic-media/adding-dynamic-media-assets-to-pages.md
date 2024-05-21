@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 74254387de1761f25127180787453e681181d97a
+source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
 workflow-type: tm+mt
-source-wordcount: '3166'
+source-wordcount: '3165'
 ht-degree: 5%
 
 ---
@@ -147,7 +147,7 @@ Você pode editar as seguintes configurações do Dynamic Media selecionando o *
 
   Essa opção é a única disponível se você estiver visualizando conjuntos de imagens, conjuntos de rotação ou conjuntos de mídia mista. As predefinições do visualizador exibidas também são predefinições do visualizador relevantes somente para inteligentes.
 
-* **[!UICONTROL Modificadores do visualizador]** - Os modificadores do visualizador tomam a forma de um par nome=valor com um delimitador &amp; e permitem alterar os visualizadores conforme descrito no Guia de referência do visualizador. Um exemplo de um modificador de visualizador é `posterimage=img.jpg&caption=text.vtt,1` que define uma imagem diferente para a miniatura do vídeo e associa um arquivo de legenda oculta/subtítulo ao vídeo.
+* **[!UICONTROL Modificadores do visualizador]** - Os modificadores do visualizador tomam a forma de um par nome=valor com um delimitador &amp; e permitem alterar os visualizadores conforme descrito no Guia de referência do visualizador. Um exemplo de um modificador de visualizador é `posterimage=img.jpg&caption=text.vtt,1` que define uma imagem diferente para a miniatura do vídeo e associa um arquivo de legendas ocultas ao vídeo.
 
 * **[!UICONTROL Predefinição de imagem]** - Selecione uma predefinição de imagem existente na lista suspensa. Se a predefinição de imagem que você está procurando não estiver visível, será necessário torná-la visível. Consulte [Gerenciar predefinições de imagem](/help/assets/dynamic-media/managing-image-presets.md). Não é possível selecionar uma predefinição do visualizador se você estiver usando uma predefinição de imagem e vice-versa.
 
@@ -298,9 +298,9 @@ Você pode editar o seguinte **[!UICONTROL Geral]** configurações selecionando
 
   Você pode editar o seguinte **[!UICONTROL Adicionar ao carrinho]** configurações selecionando **[!UICONTROL Editar]** no componente.
 
-* **[!UICONTROL Mostrar ativo do produto]** - Por padrão, esse valor é selecionado. O ativo do produto mostra uma imagem do produto conforme definido no módulo Comércio. Desmarque a marca de seleção para não mostrar o ativo do produto.
+* **[!UICONTROL Mostrar ativo do produto]** - Por padrão, esse valor é selecionado. O ativo do produto mostra uma imagem do produto conforme definido no módulo Commerce. Desmarque a marca de seleção para não mostrar o ativo do produto.
 
-* **[!UICONTROL Mostrar preço do produto]** - Por padrão, esse valor é selecionado. Preço do produto mostra o preço do item conforme definido no módulo Comércio. Desmarque a marca de seleção para não mostrar o preço do produto.
+* **[!UICONTROL Mostrar preço do produto]** - Por padrão, esse valor é selecionado. Preço do produto mostra o preço do item conforme definido no módulo Commerce. Desmarque a marca de seleção para não mostrar o preço do produto.
 
 * **[!UICONTROL Mostrar formulário do produto]** - Por padrão, esse valor não está selecionado. O Formulário de produto inclui qualquer variante de produto, como tamanho e cor. Desmarque a marca de seleção para não mostrar as grades de produtos.
 
