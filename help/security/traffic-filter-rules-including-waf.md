@@ -2,9 +2,9 @@
 title: Regras de filtro de tráfego incluindo regras WAF
 description: Configuração das regras de filtro de tráfego incluindo as regras do Web Application Firewall (WAF).
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
-source-git-commit: b52da0a604d2c320d046136f5e526e2b244fa6cb
+source-git-commit: c914ae4a0ad3486feb54cbcf91f6659afa1372b8
 workflow-type: tm+mt
-source-wordcount: '3790'
+source-wordcount: '3947'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ As regras de filtro de tráfego podem ser implantadas por meio dos pipelines de 
 [Seguir um tutorial](#tutorial) para criar rapidamente conhecimentos concretos sobre esse recurso.
 
 >[!NOTE]
->Interessado em outras opções para configurar o tráfego na CDN, incluindo edição da solicitação/resposta, declaração de redirecionamentos e proxy para uma origem não-AEM? [Saiba como e experimente](/help/implementing/dispatcher/cdn-configuring-traffic.md) ingressando no programa de adoção antecipada.
+>Para obter opções adicionais relacionadas à configuração do tráfego na CDN, incluindo edição da solicitação/resposta, declaração de redirecionamentos e uso de proxy para uma origem não-AEM, consulte [Configuração do tráfego no CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) artigo.
 
 
 ## Como este artigo está organizado {#how-organized}
@@ -40,6 +40,8 @@ Este artigo está organizado nas seguintes seções:
 * **Sintaxe de regras:** Leia sobre como declarar regras de filtro de tráfego no `cdn.yaml` arquivo de configuração. Isso inclui as regras de filtro de tráfego disponíveis para todos os clientes do Sites e do Forms, e a subcategoria de regras do WAF para aqueles que licenciam esse recurso.
 * **Exemplos de regras:** Veja exemplos de regras declaradas para começar.
 * **Regras de limite de taxa:** Saiba como usar regras de limitação de taxa para proteger seu site contra ataques de alto volume.
+* **Alertas de regras de filtro de tráfego** Configure alertas para serem notificados quando as regras forem acionadas.
+* **Alerta de pico de tráfego padrão no Origin** Receba notificação quando houver um pico de tráfego na origem que sugira um ataque de DDoS.
 * **Logs da CDN:** Veja quais regras e sinalizadores do WAF declarados correspondem ao seu tráfego.
 * **Ferramentas do painel:** Analise seus logs de CDN para criar novas regras de filtro de tráfego.
 * **Regras de Início Recomendadas:** Um conjunto de regras para começar.
@@ -290,7 +292,7 @@ A variável `wafFlags` que pode ser usada nas regras de filtro de tráfego WAF l
 
 ## Exemplos de regras {#examples}
 
-Alguns exemplos de regras se seguem. Consulte a [seção limite de taxa](#rules-with-rate-limits) mais abaixo para exemplos de regras de limite de taxa.
+Alguns exemplos de regras se seguem. Consulte a [seção limite de taxa](#rate-limit-rules) mais abaixo para exemplos de regras de limite de taxa.
 
 **Exemplo 1**
 
@@ -518,6 +520,28 @@ data:
           experimental_alert: true
 ```
 
+## Alerta de pico de tráfego padrão no Origin {#traffic-spike-at-origin-alert}
+
+>[!NOTE]
+>
+>Esse recurso está sendo lançado gradualmente.
+
+Um [Centro de ações](/help/operations/actions-center.md) a notificação por email será enviada quando houver uma quantidade significativa de tráfego enviado à origem, onde um limite alto de solicitações vem do mesmo endereço IP, sugerindo, portanto, um ataque de DDoS.
+
+Se esse limite for atingido, o Adobe bloqueará o tráfego desse endereço IP, mas é recomendável tomar medidas adicionais para proteger sua origem, incluindo a configuração das regras de filtro de tráfego de limite de taxa para bloquear picos de tráfego em limites mais baixos. Consulte a [Tutorial Bloquear ataques de DoS e DDoS usando regras de tráfego](#tutorial-blocking-DDoS-with-rules) para uma apresentação guiada.
+
+Este alerta é ativado por padrão, mas pode ser desativado usando *enable_dos_alerts* propriedade, defina como falso.
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  trafficFilters:
+    enable_ddos_alerts: false
+```
+
 ## Logs CDN {#cdn-logs}
 
 O AEM as a Cloud Service fornece acesso aos logs de CDN, que são úteis para casos de uso, incluindo otimização da taxa de ocorrência do cache e configuração das regras de filtro de tráfego. Os logs do CDN aparecem no Cloud Manager **Baixar logs** , ao selecionar o serviço Autor ou Publicar.
@@ -632,7 +656,7 @@ Veja abaixo uma lista dos nomes de campo usados em logs CDN, juntamente com uma 
 
 O Adobe fornece um mecanismo para baixar ferramentas de painel no computador a fim de assimilar logs CDN baixados pelo Cloud Manager. Com essa ferramenta, você pode analisar o tráfego para ajudar a criar as regras de filtro de tráfego apropriadas a serem declaradas, incluindo regras WAF.
 
-As ferramentas do painel de controle podem ser clonadas diretamente do [AEMCS-CDN-Log-Analysis-ELK-Tool](https://github.com/adobe/AEMCS-CDN-Log-Analysis-ELK-Tool) Repositório GitHub.
+As ferramentas do painel de controle podem ser clonadas diretamente do [AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling) Repositório GitHub.
 
 [Tutorials](#tutorial) estão disponíveis para obter instruções concretas sobre como usar as ferramentas do painel.
 
@@ -721,7 +745,7 @@ data:
 
 Dois tutoriais estão disponíveis.
 
-### Proteção de sites com regras de filtro de tráfego (incluindo regras WAF)
+### Proteção de sites com regras de filtro de tráfego (incluindo regras WAF) {#tutorial-protecting-websites}
 
 [Trabalhar em um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) adquirir conhecimentos e experiência gerais e práticos sobre as regras de filtro de tráfego, incluindo as regras WAF.
 
@@ -733,7 +757,7 @@ O tutorial o guiará por:
 * Análise de resultados com ferramentas de painel
 * Práticas recomendadas
 
-### Bloqueio de ataques de DoS e DDoS usando regras de filtro de tráfego
+### Bloqueio de ataques de DoS e DDoS usando regras de filtro de tráfego {#tutorial-blocking-DDoS-with-rules}
 
 [Detalhamento sobre como bloquear](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) Ataques de Negação de serviço (DoS) e Negação de serviço distribuída (DDoS) usando regras de filtro de tráfego de limite de taxa e outras estratégias.
 

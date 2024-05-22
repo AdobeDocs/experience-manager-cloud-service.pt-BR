@@ -2,10 +2,10 @@
 title: Centro de ações
 description: Aproveite o Centro de ações para agir de forma conveniente em incidentes e outras informações importantes
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+source-git-commit: ddf94262c047ea0210b0759176f51d1220ac9c67
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 73%
+source-wordcount: '783'
+ht-degree: 69%
 
 ---
 
@@ -74,3 +74,4 @@ A tabela a seguir lista os tipos de notificação atualmente aceitos no Centro d
 | Fila de replicação bloqueada | Incidente | Desbloqueie a fila seguindo as instruções da [Documentação de replicação](/help/operations/replication.md#troubleshooting) |
 | Consulta GraphQL persistente inválida | Incidente | Corrija a consulta inválida do GraphQL fazendo referência a [Documentação de solução de problemas de consultas persistentes do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Certificado S2S a expirar | Proativa | Saiba como atualizar uma credencial na documentação [Geração de tokens de acesso para APIs do lado do servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) |
+| Pico de tráfego na origem | Incidente | Protect sua origem configurando regras de filtro de tráfego de limite de taxa que acionam limites inferiores ao alerta de pico de tráfego padrão na origem.  Consulte a [Bloqueio de ataques de DoS e DDoS usando regras de tráfego](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) seção da documentação Regras de filtro de tráfego, que faz referência a um tutorial. |
