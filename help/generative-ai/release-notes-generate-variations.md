@@ -2,10 +2,10 @@
 title: Notas de versão para gerar variações
 description: Notas de versão para Gerar variações, acessíveis a partir do AEM as a Cloud Service e da Sidekick dos Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
-source-git-commit: 28df3ace2933d0fc00742ced9496645fc3dc15da
+source-git-commit: 92b11666a0e5a52f633416090b2bb51bf059c70b
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
+source-wordcount: '218'
+ht-degree: 9%
 
 ---
 
@@ -27,8 +27,6 @@ A versão atual é a 2.2.0.
 * Introdução à capacidade de baixar resultados como arquivos CSV de Favoritos
 * Aprimoramento da lista Recentes com agrupamentos de tempo
 * O suporte à localização foi adicionado para vários idiomas
-
-A versão atual é a 2.0.0.
 
 ### 2.0.0 {#release-notes-2-0-0}
 
