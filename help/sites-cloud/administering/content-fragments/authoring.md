@@ -4,9 +4,9 @@ description: Entenda como criar conteúdo para seus Fragmentos de conteúdo e cr
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: fc97a51bb20bbf0d438d0f27a2246467a480eb71
+source-git-commit: ec0129b0087e86f50c6c1e65d5445693e63278e0
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2668'
 ht-degree: 3%
 
 ---
@@ -196,7 +196,7 @@ Para usar as Variações gerativas no Editor de fragmento de conteúdo:
 
    ![Visualização Gerar variações no fragmento de conteúdo](assets/cfm-generate-variations5.png)
 
-Você pode saber mais sobre Gerar variações [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations).
+Você pode saber mais sobre Gerar variações [aqui](/help/generative-ai/generate-variations.md).
 
 ### Excluir uma variação {#delete-variation}
 
