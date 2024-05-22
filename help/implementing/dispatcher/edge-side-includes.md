@@ -2,9 +2,9 @@
 title: Inclusões na borda
 description: O CDN gerenciado por Adobe agora é compatível com ESI (Edge Side Includes), uma linguagem de marcação para a montagem de conteúdo dinâmico da Web no nível da borda.
 feature: Dispatcher
-source-git-commit: 4523efa659ea2aef28e16d5df39f9793cd35d969
+source-git-commit: 8f9173e45dd802ecced21531dfa161890e4a8af1
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '541'
 ht-degree: 2%
 
 ---
@@ -81,9 +81,8 @@ As propriedades configuradas têm o seguinte comportamento:
 |-----------|--------------------------|
 | **no-gzip** | Se definida como 1, a página de HTML será transmitida do Apache para o CDN descompactado. Isso é necessário para a ESI, pois o conteúdo deve ser enviado para o CDN descompactado para que o CDN possa visualizar e avaliar as tags ESI.<br/><br/>A página principal e os trechos incluídos devem definir no-gzip como 1.<br/><br/>Essa configuração substitui qualquer configuração de compactação que o Apache poderia ter usado de outra forma, com base na solicitação `Accept-Encoding` valores. |
 | **x-aem-esi** | Se definido como &quot;ativado&quot;, o CDN avaliará as tags ESI da página de HTML principal.  Por padrão, o cabeçalho não está definido. |
-| **x-aem-compress** | Se definido como &quot;ativado&quot;, o CDN compactará o conteúdo do CDN para o navegador. Como a transmissão da página principal do Apache para o CDN deve ser descompactada para que o ESI funcione (no-gzip definido como 1), isso pode reduzir a latência.<br/><br/>Se esse cabeçalho não estiver definido, quando o CDN recuperar o conteúdo da origem descompactada, ele também fornecerá conteúdo ao cliente descompactado. Portanto, é necessário definir esse cabeçalho se no-gzip estiver definido como 1 (necessário para ESI) e se desejar veicular conteúdo compactado da CDN no navegador. |
+| **x-aem-compress** | Se definido como &quot;ativado&quot;, o CDN compactará o conteúdo do CDN para o navegador. Como a transmissão da página principal do Apache para o CDN deve ser descompactada para que o ESI funcione (`no-gzip` defina como 1), isso poderá reduzir a latência.<br/><br/>Se esse cabeçalho não estiver definido, quando o CDN recuperar o conteúdo da origem descompactada, ele também fornecerá conteúdo ao cliente descompactado. Portanto, é necessário definir esse cabeçalho se `no-gzip` está definido como 1 (necessário para ESI) e é desejável veicular conteúdo compactado da CDN no navegador. |
 
 ## Sling Dynamic Include {#esi-sdi}
 
 Embora não seja obrigatório, [Sling Dynamic Include](https://sling.apache.org/documentation/bundles/dynamic-includes.html) O (SDI) pode ser usado para gerar snippets ESI que são interpretados na CDN.
-
