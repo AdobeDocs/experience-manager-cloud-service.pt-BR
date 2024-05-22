@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 3be366e5fa0a7625203a052426be6a2fd2412cf6
+source-git-commit: b6fe2a58bb16c70cef48426ec49dda474195c023
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 15%
+source-wordcount: '1612'
+ht-degree: 7%
 
 ---
 
@@ -13,101 +13,134 @@ ht-degree: 15%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 16145 {#release-16145}
+## Versão 16357 {#release-16357}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 16145, lançada publicamente em quinta-feira, 1 de maio de 2024. A versão de manutenção anterior era a versão 15977.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 16357, lançada publicamente em quinta-feira, 22 de maio de 2024. A versão de manutenção anterior era a versão 16145.
 
-A Ativação de recursos do 2024.5.0 fornece o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A Ativação de recursos 2024.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-16145}
+### Aprimoramentos {#enhancements-16357}
 
-* ASSETS-23489: melhorias nos insights do repositório.
-* ASSETS-26926: melhorias na sondagem de upload do Dynamic Media.
-* ASSETS-30351: a caixa de diálogo de download deve carregar os tamanhos de representação do Dynamic Media de forma assíncrona.
-* ASSETS-30379: Melhore a resolução de licenças de DRM no download.
-* ASSETS-31058: Superfície as representações de corte inteligente na interface do usuário de ativos AEM na guia representações e gere imagens cortadas inteligentes quando o usuário clica nessas representações.
-* ASSETS-31218: adicione suporte para smartcrop nomeado na api de entrega de ativos.
-* ASSETS-31979: adicione o indicador visual e desative as funções da interface durante as operações de Ativos assíncronos.
-* ASSETS-32735: melhorias nos metadados de ativos evento atualizado.
-* ASSETS-34661: API para Visualização do DM e/ou URLs de entrega do AEMaaCS Publish.
-* ASSETS-37259: melhorias na análise do XMP.
-* ASSETS-37263: permite o cancelamento de trabalhos assíncronos de Ativos com falha.
-* CNTBF-114: Melhorias no fluxo de retorno de conteúdo.
-* CNTBF-148: Melhorias no fluxo de retorno de conteúdo.
-* CQ-4356992: Últimas traduções para AEM e Granite.
-* SITES-19326: Atualizar links na interface do usuário do Assets para abrir o CF no novo Editor de CF.
-* SITES-20686: GraphQL - Exponha a URL do Dynamic Media via _dmS7Url (para ativos que não são de imagens).
-* SKYOPS-68091: Atualização para Java 11.0.20.
+* SITES-19579: API Java para migrar fragmentos de conteúdo de um modelo para o outro.
+* SITES-19698: [API aberta] Criar operação de leitura para gerenciar um Esquema de interface do usuário por modelo na definição de OpenAPI.
+* SITES-19834: evento Adobe I/O sem ids para publicar/desfazer a publicação.
+* SITES-20146: Ativar a versão de visualização / Comparar para páginas movidas.
+* SITES-19973: Implementação da API de pesquisa CFM.
+* SITES-20333: melhore a validação ao criar fragmentos de conteúdo.
+* SITES-20334: melhore a validação ao editar modelos de fragmento de conteúdo.
+* SITES-20585: Melhore a API de pesquisa do fragmento de conteúdo para filtrar por localidade.
+* SITES-20594: retorna o nome completo do usuário que está criando/modificando/replicando um recurso.
+* SITES-20601: [OpenAPI] Atualize a API de pesquisa do CF para permitir a busca apenas de fragmentos de conteúdo secundários diretos.
+* SITES-20656: [BE] Forneça a opção para corresponder letras maiúsculas e minúsculas ao substituir uma string.
+* SITES-20405: [Xwalk] Suporte a mimeType para o recolhimento de campo.
+* SITES-17854: Suporte UUID para referências de CF e ativos (Pfizer MVP).
+* SITES-19555: API de modelo simples para esquema de interface do usuário.
+* SITES-19611: [API aberta] Criar operação de gravação/atualização para gerenciar um Esquema de interface do usuário por modelo na definição de OpenAPI.
+* SITES-19614: [Xwalk] Paginação da planilha/rolagem infinita.
+* SITES-20005: o pipeline do autor deve ter um atraso de evento configurável.
+* SITES-20121: permitir defaultValue para campos de enumeração.
+* SITES-20342: [Infraestrutura] Publicar no nível da pasta - adicione o filtro para publicar somente os CFs.
+* SITES-20355: remova modelos de fragmento de conteúdo e servlets de API de permissões.
+* SITES-20387: navegar pelo tagadmin sempre calcula o uso da tag.
+* SITES-20495: [BE] Capacidade de obter permissão para publicar no nível da pasta.
+* SITES-20653: [Xwalk] adicione a data de início e a data de término do experimento.
+* SITES-20666: [Xwalk] os experimentos devem ser desativados por padrão na criação.
+* SITES-20752: [cq-wcm-core] Apple Launches para CFs.
+* SITES-20946: adicionar etag como uma propriedade no endpoint de modelos LIST.
+* SITES-20947: [persistência] buscar subtarefa por id de fragmento de conteúdo.
+* SITES-21012: mesclar esquema de metadados do modelo ao produto.
+* SITES-21769: use o prefixo /jcr:id/ path para recuperação de recurso por id.
+* ASSETS-30379: a verificação da licença DRM percorre toda a árvore de ativos que estão sendo baixados.
+* ASSETS-35535: [Erro de adaptador de dados] Downloads de ativos vazios precisam ser ignorados para eventos v1.
+* SITES-21550: [Xwalk] Metadados personalizados: campos de número, data, data e hora.
+* SITES-20149: RTC: [cq-wcm-launches-core] Exportar nova API para Inicializações para CFs.
+* SITES-20150: RTC: [cq-command] Adicione novos métodos à API existente.
+* SITES-20451: Adicionar plug-in do sidecar ao wcm-commons.
+* SITES-20499: [MSM][Async] Extraia o código de AsyncOperationServlet para uma classe de utilitário.
+* SITES-20763: atualizar endpoints da API de entrega na integração de sites.
+* SITES-20583: adicionar etag como propriedade em `LIST`/search fragmentos.
+* CQ-4356445: Produtor de eventos e implementação de esquema.
+* CQ-4356625: melhore a verificação de autorização em languageCopyrendercondition.jsp.
+* CQ-4356629: Melhore a verificação de autorização em isWorkflowUser rendercondition.
+* CQ-4356934: simplifique a API RequestProcessor ao trabalhar com ResponseEntities.
+* CQ-4357214: os processadores de solicitação não devem depender da lógica do servlet.
+* SITES-16392: a criação de inicialização com falha não deve deixar conteúdo de lixo.
+* SITES-20238: [RTC] Pfizer MVP - Adicione a API CF para resolver caminhos CF para IDs e vice-versa.
+* SITES-21043: [CF][launches] Melhorias de desempenho de porta lateral para o Cloud Service.
+* SITES-21044: [CF][launches] Implementação de carga de edição assíncrona de porta lateral para Cloud Service.
+* FORMS-9606: anteriormente, no editor Adaptive Forms, somente valores de campo podiam ser mapeados para a resposta de um serviço de chamada. Agora, os autores podem mapear qualquer propriedade do campo para a resposta de chamada de serviço.
+* FORMS-7483: o Analisador de esquema JSON do AEM Forms agora é compatível com o esquema JSON (2020-12).
+* FORMS-13209: um manipulador é incluído para substituir os manipuladores padrão de envio e falha de envio do Adaptive Forms. Você pode configurar esses manipuladores por meio do Editor de regras adaptáveis do Forms.
+* FORMS-13612: Os leitores de tela agora leem mensagens de erro, descrições curtas e descrições longas para campos no Forms adaptável baseado em componentes principais. Além disso, o suporte foi adicionado para invalidar entradas de formulários adaptáveis quando o formulário contém erros e não é válido para envio.
+* FORMS-12052: Um autor de formulário agora pode aplicar funções personalizadas ao pré-processamento de dados antes do envio.
+* FORMS-11295: Adição de suporte para SHA256 com algoritmo ECDSA para Assinatura digital AEM Forms.
+* FORMS-9432: Um tipo de conteúdo adicional (Ponto de extremidade REST) foi adicionado à configuração da nuvem da fonte de dados. Ele permite o envio de dados em pares de valores chave para um endpoint autenticado.
 
-### Problemas corrigidos {#fixed-issues-16145}
+### Problemas corrigidos {#fixed-issues-16357}
 
-* ASSETS-32321: a resolução do fluxo de trabalho de pós-processamento falha se a pasta antecessora não tiver o subnó &quot;jcr:content&quot;.
-* ASSETS-33856: a predefinição de imagem do JPEG baixa o arquivo como TXT.
-* ASSETS-34096: exibição da interface do usuário para toque de correção para relatório de download assíncrono.
-* ASSETS-34493: falha ao carregar a caixa de diálogo de download após ativar a alternância do recurso multiempresa.
-* ASSETS-34824: Copiar url mostra vazio para pastas desabilitadas do DM.
-* ASSETS-35226: fluxo de trabalho de pós-processamento não resolvido se especificado na raiz do DAM.
-* ASSETS-35559: reduza o log de falha de upload em lote do DM para AVISO.
-* ASSETS-35860: conversão de fuso horário incorreta na exibição em coluna do AEM Assets.
-* ASSETS-35935: navegação de pasta incorreta após o fechamento da revisão da carga.
-* ASSETS-35961: o botão Adicionar recorte não funciona no perfil de imagem.
-* ASSETS-36227: Desative o serviço FolderPreviewUpdaterImpl na publicação.
-* ASSETS-36943: falham colunas alinhadas quando o CF e outros itens não CF estão presentes em uma pasta na exibição de lista.
-* ASSETS-36990: trabalhos de metadados exportados falham/ficam lentos com um grande número de propriedades.
-* ASSETS-37113: o processo Reprocessar Ativos é encerrado imediatamente se a consulta retornar somente os resultados do CF.
-* ASSETS-37260: a exportação de metadados no AEM pode produzir CSV inválido.
-* ASSETS-37261: problema de anotação de PPTx e PDF no AEM Assets.
-* ASSETS-37282: solicitação lenta potencial para abrir uma pasta grande.
-* ASSETS-37330: a importação em massa do OneDrive cria uma estrutura de pasta AEM incorreta.
-* ASSETS-37609: remover a pesquisa de configuração scene7 herdada.
-* ASSETS-38016: algumas atualizações de metadados não são rastreadas corretamente em eventos.
+* SITES-20608: fragmentos de experiência com personalização ativada quando incluídos em um modelo causam um loop infinito.
+* SITES-19554: [Xwalk] Editor de planilhas: não é possível esvaziar uma célula.
+* SITES-19971: corrigir um CFM contendo guias altera a ordem dos campos.
+* SITES-20168: modelo de fragmento de conteúdo `locked` O campo não foi atualizado corretamente.
+* SITES-20522: quebra de fragmentos de conteúdo corrompido /adobe/sites/cf/fragments no ponto de extremidade.
+* SITES-20816: CF OpenAPI - Inconsistência de saída com modelo ausente para o fragmento referenciado.
+* SITES-21239: remover a dependência circular ContentFragmentSearchService.
+* SITES-20582: a pesquisa e a listagem de fragmentos de conteúdo devem permitir profundidade 0.
+* SITES-20559: [MSM][XF][Lufthansa] A implantação de fragmentos de experiência do idioma principal para o idioma/país não atualiza as referências.
+* SITES-17772: AEM: usuário com grupo de administradores não pode desbloquear a página com o que outro usuário bloqueou.
+* SITES-20401: [Xwalk] Os metadados da seção não oferecem suporte a propriedades de vários valores.
+* SITES-21391: [Evento OpenAPI] Nenhum evento foi acionado ao modificar o título ou as tags (propriedades) de um modelo de fragmento de conteúdo.
+* SKYOPS-73234: Aumento da falha do log de erros na atualização do programa AEM Assets Global DAM para AEM versão 15553 e PR Id 35362.
+* SKYOPS-75341: NoSoMethodError no pacote de distribuição Crosswalk.
+* SCRNS-3945: Skyline: cadeia de caracteres &quot;Agendada&quot; não localizada no Screens.
+* SITES-20586: carimbo de data/hora &quot;Publicado&quot; do modelo não atualizado.
+* SITES-16674: a caixa de seleção Herdar configurações de implantação não funciona nas propriedades da live copy.
+* SITES-18680: não é possível obter variações de referência na consulta graphql (Apple).
+* SITES-21233: [CoreCmp] Acordeão quebrado para GS1 US após a atualização para 15860.
+* SITES-20367: problema com a exclusão de inicializações no AEM.
 * CQ-4357161: a tela AEM Inbox Payload está retornando 404.
-* GRANITE-50041: a opção Adicionar representação não funciona quando a resolução tem mais de 1440 px de largura e apenas a opção &quot;Adicionar representação&quot; está na opção suspensa.
-* GRANITE-50279: Nomes de semana desordenados no componente Datepicker Coral.
-* SCRNS-3949: o tempo de solicitação de busca de canal do Screens é muito longo.
-* SCRNS-3981: [Canal de sequência] A tela preta resultou quando a sequência de eventos de carregamento/descarregamento de elemento é distorcida.
-* SCRNS-4180: [Canal de sequência] A sequência para com uma tela em branco para canais com vídeos de duração -1 após a recuperação da miniatura de fallback.
-* SCRNS-4245: [Canal de sequência] Duração limitada da tela em branco quando um vídeo é carregado e alternado da miniatura de fallback.
-* SITES-16055: corrija os links da Live Copy e da Origem da Live Copy nas respectivas páginas de propriedades.
-* SCRNS-4243: botões ausentes no Provedor de conteúdo para usuários não administradores.
+* SITES-20214: problema de sequência de configuração de implantação do AEM ao salvar.
+* SITES-20364: 302 redirecionamentos não funcionam com o seletor no URL.
+* SITES-20547: caminhos truncados na lista de caminhos excluídos da Live Copy no AEM as a Cloud Service.
+* SITES-20691: a restrição do modelo de fragmento de experiência não atende ao cq:allowedTemplates.
+* SITES-21122: Falha do AEM CS Live Copy com fragmentos de conteúdo.
+* ASSETS-38723: NPE lançado por MetadataRulesProviderImpl quando getReadRulesForMetadataChildNodes() é chamado antes da inicialização de this.readRules.
+* SITES-11727: [GQL] A hidratação completa das referências do fragmento de conteúdo não tem dados.
+* SITES-19462: a pesquisa de ativos não está funcionando corretamente na nuvem AEM.
+* SITES-19994: fecha a temporização do botão quando os usuários tentam fechar o fragmento de conteúdo.
+* SITES-20029: as versões do fragmento de conteúdo são criadas logo após o seu fechamento, sem alterar o conteúdo.
+* SITES-21316: Visualização do fragmento: a visualização falha devido a alterações de código do SITES-11727.
+* SITES-20023: o upload de arquivo não está funcionando para ativos remotos (ativos de próxima geração) em vários campos.
+* ASSETS-37611: o fluxo de trabalho &quot;Solicitação para concluir a operação de movimentação&quot; é acionado para o ativo não publicado.
+* CQ-4357278: DispatcherServlet lança NPE se getRequestBodyType retornar nulo.
+* CQ-4357279: o processamento de solicitações falha quando não há pathInfo para uma solicitação.
+* SITES-20496: [Xwalk] Nenhuma opção de propriedades ao selecionar uma planilha no administrador do site.
+* FORMS-13827: no Editor de regras do Forms adaptável, a operação WHEN não é compatível atualmente com diferentes tipos de campos com seletores de data.
+* FORMS-13786: no Editor de regras do Forms adaptável, a funcionalidade arrastar e soltar não funciona para funções personalizadas.
+* FORMS-13587: no Editor Forms adaptável, o recurso Device Emulator não está funcionando corretamente para componentes principais baseados em Forms adaptável.
+* FORMS-14376 Quando um usuário pressiona o botão Redefinir, resulta em erros de console se o texto estático for marcado como desvinculado.
+* FORMS-13801: mesmo que o componente de termos e condições esteja desativado, a caixa de seleção correspondente permanece ativada.
+* FORMS-11952: Quando um formulário é enviado, o URL de envio gerado pelo formulário começa com /content/ em vez de /portale/, fazendo o roteamento incorreto da solicitação. Isso impede que a solicitação chegue aos servidores desejados.
+* FORMS-13616: O seletor de datas está mostrando a data atual como um dia atrasada, provavelmente devido a um problema de fuso horário, e há dificuldade em definir o formato de data correto devido a essa inconsistência e um problema adicional de padrão de exibição.
+* FORMS-13829: a lista suspensa, controlada por regras para imitar a funcionalidade do botão de opção, falha ao ser preenchida corretamente após uma seleção ser limpa e selecionada novamente. O comportamento desejado é que as caixas de seleção individuais atuem como botões de opção, permitindo somente uma seleção por vez e desmarcando todas as opções.
+* FORMS-14244: em um formulário adaptável baseado em um XDP com scripts incorporados em caixas de seleção, os scripts não são executados para elementos após essas caixas de seleção.
+* FORMS-14267: os usuários estão enfrentando erros consistentes de tempo limite ao enviar solicitações de API em ambientes de desenvolvimento, preparo e produção. Essas solicitações estão relacionadas à geração de PDF, às vezes com dados pré-preenchidos usando a vinculação de dados. O problema resulta em um processo de deslocamento que acaba expirando, mas é bem-sucedido ao tentar novamente após o erro.
+* FORMS-11589: para usuários somente com a solução da AEM Forms (sem nenhuma outra solução), o pipeline de front-end não está funcionando.
+* FORMS-13896: Na saída do DoR (Documento de registro), as datas e os números são exibidos em árabe, independentemente de os dados de entrada serem mesclados usando números gregorianos.
 
-### Problemas conhecidos {#known-issues-16145}
+### Problemas conhecidos {#known-issues-16357}
 
 Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-16145}
-
-* [Descontinuação de credenciais JWT no console do Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-
-* A partir de 1 de maio de 2024, o Adobe Dynamic Media encerrará o suporte para o seguinte:
-
-   * SSL (Secure Socket Layer) 2.0
-   * SSL 3.0
-   * TLS (Transport Layer Security) 1.0 e 1.1
-   * As seguintes cifras fracas no TLS 1.2:
-      * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
-      * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
-      * `TLS_RSA_WITH_AES_256_GCM_SHA384`
-      * `TLS_RSA_WITH_AES_256_CBC_SHA256`
-      * `TLS_RSA_WITH_AES_256_CBC_SHA`
-      * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
-      * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
-      * `TLS_RSA_WITH_AES_128_GCM_SHA256`
-      * `TLS_RSA_WITH_AES_128_CBC_SHA256`
-      * `TLS_RSA_WITH_AES_128_CBC_SHA`
-      * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
-      * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
-      * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
-      * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
-
+### Recursos e APIs obsoletos {#deprecated-16357}
 
 Para saber o que está obsoleto ou foi removido no AEM as a Cloud Service, consulte [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Tecnologias integradas {#embedded-tech-16145}
+### Tecnologias integradas {#embedded-tech-16357}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
 | AEM Oak | 1.62.0 | [API Oak API 1.62.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.62.0/index.html) |
 | API DO SLING DO AEM | 2.27.2 | [API Apache Sling API 2.27.2](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
-| HTL do AEM | 1.4.20-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
-| Componentes principais do AEM | 2.24.6 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
+| HTL do AEM | 1.4.22-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
+| Componentes principais do AEM | 2.25.4 | [Componentes principais de WCM do AEM](https://github.com/adobe/aem-core-wcm-components) |
