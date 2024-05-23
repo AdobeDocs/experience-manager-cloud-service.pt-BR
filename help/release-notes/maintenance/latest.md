@@ -2,9 +2,9 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b6fe2a58bb16c70cef48426ec49dda474195c023
+source-git-commit: d107f40c4bc43837db9d8fab3d06627d9e930620
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1574'
 ht-degree: 7%
 
 ---
@@ -68,7 +68,6 @@ A Ativação de recursos 2024.5.0 fornecerá o conjunto completo de recursos par
 * SITES-20238: [RTC] Pfizer MVP - Adicione a API CF para resolver caminhos CF para IDs e vice-versa.
 * SITES-21043: [CF][launches] Melhorias de desempenho de porta lateral para o Cloud Service.
 * SITES-21044: [CF][launches] Implementação de carga de edição assíncrona de porta lateral para Cloud Service.
-* FORMS-9606: anteriormente, no editor Adaptive Forms, somente valores de campo podiam ser mapeados para a resposta de um serviço de chamada. Agora, os autores podem mapear qualquer propriedade do campo para a resposta de chamada de serviço.
 * FORMS-7483: o Analisador de esquema JSON do AEM Forms agora é compatível com o esquema JSON (2020-12).
 * FORMS-13209: um manipulador é incluído para substituir os manipuladores padrão de envio e falha de envio do Adaptive Forms. Você pode configurar esses manipuladores por meio do Editor de regras adaptáveis do Forms.
 * FORMS-13612: Os leitores de tela agora leem mensagens de erro, descrições curtas e descrições longas para campos no Forms adaptável baseado em componentes principais. Além disso, o suporte foi adicionado para invalidar entradas de formulários adaptáveis quando o formulário contém erros e não é válido para envio.
