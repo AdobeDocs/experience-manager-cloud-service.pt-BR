@@ -3,10 +3,10 @@ title: Editar vídeos
 description: Editar vídeos usando [!DNL Adobe Express] opções viabilizadas pelo e salvar vídeos atualizados como versões.
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
-source-git-commit: 4f3c15d3a103d15c51ddfe4b0c5dbb5e7e18e8b7
+source-git-commit: 79e72f967673010b936bd0464a2fcf0a1c068e69
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 17%
+ht-degree: 18%
 
 ---
 
@@ -18,7 +18,7 @@ Para editar um vídeo, acesse os detalhes e clique em [!UICONTROL Editar vídeo]
 
 ## Pré-requisitos {#prerequisites}
 
-Direitos de acesso [!DNL Adobe Express] e pelo menos um ambiente no AEM Assets. O ambiente pode ser qualquer um dos repositórios dentro de [!DNL Assets as a Cloud Service] ou [!DNL Assets view].
+Direitos de acesso [!DNL Adobe Express] e pelo menos um ambiente no AEM Assets. O ambiente pode ser qualquer um dos repositórios dentro do [!DNL Assets as a Cloud Service] ou [!DNL Assets view].
 
 ## Editar vídeos usando o Adobe Express {#edit-video-using-express}
 
@@ -33,7 +33,7 @@ Você pode eliminar partes indesejadas do vídeo usando recursos incorporados [!
 3. Arraste as alças nos cantos do vídeo para criar o recorte desejado ou escolha entre os tamanhos de tela existentes, conforme desejado.
 4. Você pode optar por ativar ou desativar o som do vídeo.
 5. Clique em **[!UICONTROL Aplicar]**.
-   ![recortar vídeo com Adobe Express](assets/adobe-express-crop-video.png)
+   ![cortar vídeo com o Adobe Express](assets/adobe-express-crop-video.png)
 
    O vídeo cortado está disponível para download. Você pode salvar o ativo editado como uma nova versão do mesmo ativo ou salvá-lo como um novo ativo. ![Salvar vídeo com o Adobe Express](assets/adobe-express-save-video.png)
 
@@ -83,7 +83,7 @@ O vídeo está disponível em formato GIF para download. É possível salvar o a
 
 * Somente vídeos no formato MP4 são suportados para edição.
 
-* O tamanho máximo de arquivo de origem com suporte é 200 MB.
+* O tamanho máximo de arquivo de origem com suporte é de 1 GB.
 
 * Os vídeos compatíveis têm mais de 46 pixels e menos de 3840 pixels em qualquer lado.
 
