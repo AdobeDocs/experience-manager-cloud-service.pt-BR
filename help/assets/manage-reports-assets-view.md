@@ -2,10 +2,10 @@
 title: Gerenciar relatórios na visualização do Assets
 description: Acesse os dados na seção de relatórios da visualização do Assets para avaliar o uso de produtos e recursos e obter insights sobre as principais métricas de sucesso.
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
-source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
+source-git-commit: f4944cdb9f4ec51af6169c5cbf1890f469d91781
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 80%
+source-wordcount: '817'
+ht-degree: 89%
 
 ---
 
@@ -59,11 +59,6 @@ Clique na opção **[!UICONTROL Insights]**, disponível no painel de navegaçã
    ![Insights](assets/insights2.png)
    -->
 
-* **Contagem de ativos por tamanho:** Segmenta a contagem total de ativos no ambiente de Exibição de ativos em diferentes intervalos de tamanho, destacando a contagem e a porcentagem de ativos em cada intervalo de tamanho, representados usando um gráfico de rosca.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
-* **Contagem de ativos por tipo de ativo:** Segmenta a contagem total de ativos no ambiente de Exibição de ativos, destacando a contagem e a porcentagem de ativos com base em seus tipos de arquivo, representados pelo gráfico de rosca.
-  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
-
 ## Criar um relatório de downloads {#create-download-report}
 
 Para criar um relatório de downloads:
@@ -82,7 +77,7 @@ Para criar um relatório de downloads:
    >
    > A visualização do Assets converte todos os fusos horários locais para o Tempo Universal Coordenado (UTC).
 
-1. No [!UICONTROL Colunas] selecione os nomes das colunas que devem ser exibidas no relatório.
+1. Na guia [!UICONTROL Colunas], selecione os nomes das colunas que devem ser exibidas no relatório.
 
 1. Clique em **[!UICONTROL Criar]**.
 
