@@ -4,9 +4,9 @@ description: Saiba como adicionar novas localidades para um Formulário adaptáv
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 2658d844036d8ac5759d819f9d19c4528cc4df61
+source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2028'
 ht-degree: 1%
 
 ---
@@ -270,7 +270,7 @@ Agora, vamos incorporar o `clientlib-it-custom-locale` biblioteca no seu AEM as 
 
 
 
-### 5. Adicionar suporte local ao dicionário
+### Adicionar suporte de localidade ao dicionário
 
 Esta etapa se aplica somente às localidades diferentes das seguintes comumente suportadas: inglês (en), alemão (de), espanhol (es), francês (fr), italiano (it), português brasileiro (pt-br), chinês (simplificado - zh_cn), chinês (tradicional - zh_tw), japonês (ja) e coreano (ko_kr).
 
@@ -350,7 +350,7 @@ Agora você está pronto para usar o novo local com sua Forms adaptável. Você 
 
       Acione uma implantação do seu código por meio da [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Isso cria e implanta automaticamente o código atualizado com o novo suporte de localidade.
 
-      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline)..
+      Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
 
 ## Visualizar um formulário adaptável com a localidade recém-adicionada
@@ -358,8 +358,6 @@ Agora você está pronto para usar o novo local com sua Forms adaptável. Você 
 Essas etapas orientam você na pré-visualização de um Formulário adaptável com a localidade recém-adicionada:
 
 1. Faça logon na sua instância do AEM Forms as a Cloud Service.
-
-1. Localize a seção &quot;Forms&quot; e navegue até &quot;Forms e Documentos&quot;.
 1. Ir para **Forms** >  **Forms e documentos**.
 1. Selecione um Formulário adaptável e clique em **Adicionar dicionário** e **Adicionar Dicionário Ao Projeto De Tradução** é exibido.
 1. Especifique a **Título do projeto** e selecione o **Idiomas de destino** no menu suspenso da caixa **Adicionar Dicionário Ao Projeto De Tradução** assistente.
@@ -367,20 +365,6 @@ Essas etapas orientam você na pré-visualização de um Formulário adaptável 
 1. Ir para **Forms** >  **Forms e documentos**.
 1. Selecione o Formulário adaptável e escolha a **Visualizar como HTML** opção.
 1. Anexar `&afAcceptLang=<locale-name>` para exibir o URL de pré-visualização e pressione a tecla Return. Substituir `<locale-name>` com o código do local real. O formulário adaptável é exibido no local especificado.
-
-
-## Visualizar um formulário adaptável com a localidade recém-adicionada {#use-added-locale-in-af}
-
-Execute as seguintes etapas para visualizar um Adaptável com um local recém-adicionado:
-
-1. Faça logon na sua instância do AEM Forms as a Cloud Service.
-1. Ir para **Forms** >  **Forms e documentos**.
-1. Selecione um Formulário adaptável e clique em **Adicionar dicionário** e **Adicionar Dicionário Ao Projeto De Tradução** é exibido.
-1. Especifique a **Título do projeto** e selecione o **Idiomas de destino** no menu suspenso da caixa **Adicionar Dicionário Ao Projeto De Tradução** assistente.
-1. Clique em **Concluído** e execute o projeto de tradução criado.
-1. Selecione um Formulário adaptável e clique em **Visualizar como HTML**.
-1. Adicionar `&afAcceptLang=<locale-name>` no URL de um Formulário adaptável.
-1. Atualizar a página e o Formulário adaptável é renderizado em um local especificado.
 
 ## Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
 
@@ -393,12 +377,11 @@ Execute as seguintes etapas para visualizar um Adaptável com um local recém-ad
 
    * **Tradução humana**: para fluxos de trabalho de tradução humana, exporte o dicionário usando a interface do usuário em `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Atualize o dicionário para os novos campos e faça upload da versão revisada.
 
-## Veja mais
-
-* [Gerar documento de registro para Forms adaptável](/help/forms/generate-document-of-record-core-components.md)
-* [Adição de um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
 
 ## Consulte também {#see-also}
 
 {{see-also}}
+
+* [Gerar documento de registro para Forms adaptável](/help/forms/generate-document-of-record-core-components.md)
+* [Adição de um formulário adaptável a uma página do AEM Sites ou a um fragmento de experiência](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+
