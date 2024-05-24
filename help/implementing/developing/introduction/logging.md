@@ -2,7 +2,7 @@
 title: Registro para AEM as a Cloud Service
 description: Saiba como usar o Logging para AEM as a Cloud Service para configurar parâmetros globais para o serviço de log central, configurações específicas para os serviços individuais ou como solicitar o registro de dados.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 97a1781f0a2d59d2bed7b03c7d4f045c81784f60
+source-git-commit: 0ed0178c2490919cefb46256e07c5b316c5f97ae
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 2%
