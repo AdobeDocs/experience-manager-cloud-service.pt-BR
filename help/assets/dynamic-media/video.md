@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: ea2e82f02e9b5ee1ef64d186516c786d8c264c52
+source-git-commit: 7a80f68f71475b2bdb6b5559354d7248208a3819
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 1%
@@ -642,7 +642,7 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
      | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos de faixa de áudio adicionais ou arquivos de legenda. |
      | Idioma | Selecione o idioma da faixa de áudio. |
      | Tipo | Selecione o tipo de faixa de áudio que você está usando.<br>**Original** - A faixa de áudio originalmente anexada ao vídeo e representada como `[Original]` no rótulo com `English` idioma selecionado por padrão. Enquanto **[!UICONTROL Rótulo]** e **[!UICONTROL Idioma]** pode ser alterado no **[!UICONTROL Editar faixa de áudio]** , o padrão serão os valores originais se o vídeo principal for reprocessado.<br>**Padrão** - Uma faixa de áudio complementar para um idioma diferente do original.<br>**Descrição de áudio** - Uma faixa de áudio que também inclui uma narração descritiva de ações e gestos não verbais no vídeo, tornando o conteúdo mais acessível para indivíduos com deficiência visual. |
-     | Rótulo | O texto que é exibido como o nome da faixa de áudio no **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de áudio. Por exemplo, `English [Original]`. O rótulo do áudio anexado a um vídeo é definido como `[Original|` por padrão. |
+     | Rótulo | O texto que é exibido como o nome da faixa de áudio no **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de áudio. Por exemplo, `English [Original]`. O rótulo do áudio anexado a um vídeo é definido como `[Original]` por padrão. |
 
      Você pode alterar ou editar esses metadados de trilha de áudio posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
 
@@ -815,8 +815,6 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
    | Ativos | Especifica o número de arquivos que você está baixando e o tamanho total combinado de todos os arquivos selecionados. Desmarcar essa opção esmaece (desativa) a **[!UICONTROL Baixar]** botão, impedindo o download de qualquer arquivo. |
 1. Selecionar **[!UICONTROL Baixar]**.
 1. Publique o vídeo. Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
-
-
 
 
 
