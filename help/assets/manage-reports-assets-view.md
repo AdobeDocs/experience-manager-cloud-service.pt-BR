@@ -1,16 +1,17 @@
 ---
 title: Gerenciar relatórios na visualização do Assets
 description: Acesse os dados na seção de relatórios da visualização do Assets para avaliar o uso de produtos e recursos e obter insights sobre as principais métricas de sucesso.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
+source-git-commit: 6dc6b3e4ec9d6a816d92152cb535cd9a5d56a3b0
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 92%
+source-wordcount: '884'
+ht-degree: 80%
 
 ---
 
 # Gerenciamento de relatórios {#manage-reports}
 
-Os relatórios do Assets fornecem à administração a visibilidade das atividades do ambiente de visualização do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto. Todos os(as) usuários(as) podem acessar o painel Insights e aqueles que estiverem atribuídos(as) ao perfil de produto Administrador podem criar relatórios definidos pelo(a) usuário(a).
+Os relatórios de ativos fornecem aos administradores visibilidade sobre as atividades do ambiente de exibição do Adobe Experience Manager Assets. Esses dados fornecem informações úteis sobre como os usuários interagem com o conteúdo e o produto. Todos os(as) usuários(as) podem acessar o painel Insights e aqueles que estiverem atribuídos(as) ao perfil de produto Administrador podem criar relatórios definidos pelo(a) usuário(a).
 
 ## Acessar relatórios {#access-reports}
 
@@ -38,26 +39,30 @@ A visualização do Assets permite visualizar dados do seu ambiente da visualiza
 
 Clique na opção **[!UICONTROL Insights]**, disponível no painel de navegação esquerdo, para exibir os seguintes gráficos gerados automaticamente:
 
-![Insights](assets/insights.png)
-
 * **Downloads**: o número de ativos baixados do ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados usando um gráfico de linhas.
+  ![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
 
 * **Uploads**: o número de ativos carregados para o ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados usando um gráfico de linhas.
-
-<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
 * **Utilização do armazenamento**: o uso do armazenamento, em bytes, para o ambiente de exibição de Ativos representado por meio de um gráfico de barras.
-
-<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Principais Pesquisas**: visualize os principais termos pesquisados junto com o número de vezes que esses termos foram pesquisados no ambiente de visualização do Assets nos últimos 30 dias ou 12 meses representados em formato de tabela.
-
+  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)
    -->
+
+* **Contagem de ativos por tamanho:** Segmenta a contagem total de ativos no ambiente de Exibição de ativos em diferentes intervalos de tamanho, destacando a contagem e a porcentagem de ativos em cada intervalo de tamanho, representados usando um gráfico de rosca.
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assets-count-by-size.svg)
+* **Contagem de ativos por tipo de ativo:** Segmenta a contagem total de ativos no ambiente de Exibição de ativos, destacando a contagem e a porcentagem de ativos com base em seus tipos de arquivo, representados pelo gráfico de rosca.
+  ![insights-assets-count-by-size](/help/assets/assets/insights-assest-count-by-asset-type1.svg)
 
 ## Criar um relatório de downloads {#create-download-report}
 
@@ -77,7 +82,7 @@ Para criar um relatório de downloads:
    >
    > A visualização do Assets converte todos os fusos horários locais para o Tempo Universal Coordenado (UTC).
 
-1. Na guia [!UICONTROL Colunas], selecione os nomes das colunas que devem ser exibidas no relatório.
+1. No [!UICONTROL Colunas] selecione os nomes das colunas que devem ser exibidas no relatório.
 
 1. Clique em **[!UICONTROL Criar]**.
 
