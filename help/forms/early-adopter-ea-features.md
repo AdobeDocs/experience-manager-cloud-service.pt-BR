@@ -1,30 +1,30 @@
 ---
 title: Recursos atuais dos Primeiros usuários do [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 description: Recursos atuais dos Primeiros usuários do [!DNL Adobe Experience Manager Forms] as a Cloud Service.
-hide: true
-hidefromtoc: true
 Feature: Introduction
 Role: developer, user
-source-git-commit: 6d0297f3ab0efd82f994b532e78f8f4d8ee864b3
+source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1600'
 ht-degree: 0%
 
 ---
 
-# Programa de adoção antecipada (EA)
+# Programa de adoção antecipada do AEM Forms
 
 
-O programa Early Adoter oferece uma oportunidade única para você obter acesso exclusivo a recursos de ponta antes de qualquer outra pessoa e ajudar a moldar seu desenvolvimento. O programa Early Adoter oferece uma oportunidade única de:
+O programa AEM Forms Early Adoter Program oferece uma oportunidade única para você obter acesso exclusivo a recursos de ponta antes de qualquer outra pessoa e ajudar a moldar seu desenvolvimento. O programa oferece a você:
 
-* Forneça feedback valioso e influencie o desenvolvimento dos recursos futuros.
-* Seja um dos primeiros a experimentar tecnologia de ponta antes que ela atinja o mainstream.
-* Ajude a identificar e eliminar bugs, resultando em uma experiência do usuário mais suave após o lançamento completo.
+* Esteja entre os primeiros a obter acesso a tecnologia de ponta antes que ela atinja o mainstream.
+* Coinovar com a equipe de produtos, moldando o futuro do produto em conjunto. Use seus casos de uso para orientar o desenvolvimento, garantindo que a inovação seja madura e enfrente seus desafios reais.
+* Forneça feedback e ajude-nos a resolver problemas antes do lançamento, resultando em uma experiência do usuário mais suave após o lançamento completo.
 
-[Junte-se hoje mesmo à nossa comunidade de participantes iniciais](#how-to-join-the-early-adopter-program). Você pode solicitar acesso a todos ou a qualquer recurso futuro específico.
+## Como participar do programa Early Adoter?
+
+Se você estiver interessado em participar do nosso programa Early Adoter para qualquer inovação de Early Adoter, basta enviar um email de seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
 
 
-## Recursos do Early Adoter (EA)
+## Inovações iniciais do adotante
 
 ### IA gerativa do AEM Forms (Gen AI)
 
@@ -46,17 +46,19 @@ Os recursos de IA gerativa disponíveis são:
 * **Criar regras de formulário com Prompts do Generative AI**: use os prompts da IA gerativa para obter ajuda na criação de regras inteligentes que reagem à entrada do usuário. Nossa IA gerativa pode sugerir e até mesmo gerar regras condicionais com base na finalidade do formulário.
 
 
-### Workfront Fusion
+### Conector de fusão do AEM Forms Workfront
 
-A variável [Conector de fusão do AEM Forms Adobe Workfront](/help/forms/submit-adaptive-form-to-workfront-fusion.md) O capacita a integração perfeita entre o Adobe Experience Manager (AEM) Forms e o Adobe Workfront Fusion. O Adobe Workfront serve como um aplicativo de gerenciamento de trabalho, centralizando todo o ciclo de vida do trabalho, enquanto o Workfront Fusion atua como a plataforma de integração facilitando a conectividade entre o Workfront e vários aplicativos de negócios.
+O AEM Forms Workfront Fusion Connector permite uma integração perfeita entre o Adobe Experience Manager (AEM) Forms e o Adobe Workfront Fusion. O Adobe Workfront serve como um aplicativo de gerenciamento de trabalho, centralizando todo o ciclo de vida do trabalho, enquanto o Workfront Fusion atua como a plataforma de integração facilitando a conectividade entre o Workfront e vários aplicativos de negócios.
 
-Usando o AEM Forms Adobe Workfront Fusion Connector, é possível projetar fluxos de trabalho que são acionados automaticamente no envio de um Formulário adaptável. Por exemplo, preveja um cenário em que um fluxo de trabalho é iniciado para atribuir a um indivíduo específico a tarefa de revisar dados enviados, permitindo a aprovação ou a rejeição de um aplicativo com base nas informações capturadas por meio do formulário adaptável. Essa integração simplificada aumenta a eficiência e traz um novo nível de automação para seus processos de fluxo de trabalho.
+Usando o AEM Forms Workfront Fusion Connector, é possível projetar fluxos de trabalho que são acionados automaticamente no envio de um Formulário adaptável. Por exemplo, preveja um cenário em que um fluxo de trabalho é iniciado para atribuir a um indivíduo específico a tarefa de revisar dados enviados, permitindo a aprovação ou a rejeição de um aplicativo com base nas informações capturadas por meio do formulário adaptável. Essa integração simplificada aumenta a eficiência e traz um novo nível de automação para seus processos de fluxo de trabalho.
+
+Pronto para começar? A variável [enviar um formulário adaptável ao Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md) A documentação do fornece um guia passo a passo para usar a inovação.
 
 <!-- <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> -->
 
 ### Forms de conversa
 
-O recurso Conversational Forms permite interagir com formulários, como um chatbot amigável em qualquer página do AEM Sites.
+A inovação do Conversational Forms permite interagir com formulários, como um chatbot amigável em qualquer página do AEM Sites.
 
 Você pode simplesmente arrastar e soltar o componente de Forms de conversação na sua página do AEM Sites e começar. Não é necessário codificar, portanto, qualquer pessoa pode criar rapidamente experiências de Conversação no Forms envolventes e fáceis de usar.
 
@@ -72,20 +74,15 @@ Veja o que mais o Conversational Forms oferece:
 As Forms de conversa são mais do que apenas uma nova aparência - elas são um divisor de águas para a experiência do usuário.  Aumente o engajamento, reduza o abandono de formulários e torne a interação com seu site uma experiência mais agradável para todos.
 
 
-### Criação de AEM para Edge Delivery Services
+### Criação baseada em AEM para Edge Delivery Services
 
-A criação no AEM fornece uma interface WYSIWYG (Adaptive Forms Editor) para criar e publicar esses formulários em Edge Delivery Services para alcançar velocidades de carga incomparáveis e uma pontuação quase perfeita do Google Lighthouse em formulários ativos, garantindo desempenho máximo e experiências do usuário.
-
-![ferramentas de composição da próxima geração para criar formulários](/help/forms/assets/web-vitals.jpeg)
-
-A criação de AEM oferece todos os recursos do [Criação baseada em documento](/help/edge/docs/forms/overview.md#document-based-authoring-features), além de uma grande variedade de recursos adicionais:
+A Criação baseada em AEM fornece uma interface WYSIWYG (Editor Forms adaptável) para criar e publicar esses formulários nos Edge Delivery Services. A criação baseada em AEM oferece todos os recursos do [Criação baseada em documento](/help/edge/docs/forms/overview.md#document-based-authoring-features), além de uma grande variedade de recursos adicionais:
 
 * Editor de regras avançado para criar lógica complexa.
 * Extensibilidade do lado do servidor para funcionalidades personalizadas.
 * Experiência de edição WYSIWYG para facilitar a criação e a visualização de formulários.
 * Funcionalidade de documento de registro para criar arquivos à prova de violação de dados enviados.
 * Integração com o Adobe Sign para assinaturas eletrônicas.
-* Integração com o Adobe Workfront Fusion para acionar cenários do Adobe Workfront Fusion no envio do formulário.
 * Integração com várias fontes de dados para pré-preencher formulários e enviar dados.
 * Modelo de dados de formulário (FDM) para definir a estrutura de dados e as interações com várias fontes de dados.
 * Capacidade de escolher entre várias ações de envio para lidar com envios de formulários, incluindo o envio de dados para o Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e muitas outras fontes de dados.
@@ -104,6 +101,65 @@ Ao simplificar o processo de transferência de dados, o conector pode ajudar voc
 Basicamente, o AEM Forms para o Marketo Connector ajuda você a aproveitar os pontos fortes de ambas as plataformas para criar um funil de marketing mais eficiente e eficaz.
 
 
-## Como participar do programa Early Adoter?
+## Inovações adicionais dos primeiros usuários
 
-Se você estiver interessado em participar do nosso programa Early Adoter para qualquer recurso, basta enviar um email de seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso.
+### Suporte a idiomas da direita para a esquerda (RTL)
+
+O Forms adaptável agora pode ser exibido em uma linguagem da direita para a esquerda (RTL, Right-to-Left), permitindo uma experiência do usuário mais inclusiva e fácil de usar.
+
+Essa funcionalidade atende a idiomas como árabe, hebraico e urdu, que são escritos e lidos da Direita para a Esquerda (RTL), promovendo melhor compreensão e taxas de preenchimento de formulários.
+
+![Suporte a idiomas da direita para a esquerda (RTL)](mobile-responsive.png)
+
+O suporte para idiomas da direita para a esquerda (RTL) no Adaptive Forms ajuda a:
+
+* **Expande a base de usuários**: As empresas agora podem alcançar mais de 2 bilhões de pessoas em todo o mundo que estão mais confortáveis com as linguagens RTL.
+
+* **Oferecer experiência aprimorada ao usuário**: a renderização do Forms é perfeita, com o fluxo de texto natural da direita para a esquerda, alinhamento adequado de elementos da interface do usuário e layouts intuitivos que espelham os hábitos de leitura do usuário. Isso reduz a confusão e aumenta as taxas de preenchimento de formulários.
+
+* **Oferecer experiências responsivas móveis**: o Forms permanece acessível em qualquer dispositivo devido à capacidade de resposta móvel inerente, garantindo uma experiência perfeita em desktops, tablets e smartphones.
+
+Em geral, o suporte à linguagem RTL no Adaptive Forms permite que as empresas projetem formulários realmente globais, aumentando o alcance, o engajamento e a inclusão.
+
+Pronto para começar? [Documentação do Forms RTL adaptável](/help/forms/supporting-new-language-localization-core-components.md) O fornece um guia passo a passo para usar a inovação do RTL.
+
+### Métodos aprimorados de proteção de bot
+
+A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas soluções populares do CAPTCHA: Cloud Turnstile e hCaptcha. Isso adiciona ao já disponível Google reCAPTCHA, fornecendo aos usuários mais opções e flexibilidade na proteção de seus formulários contra bots e envios de spam.
+
+* **Cilindro de nuvens**: esse CAPTCHA sem atrito verifica os usuários por meio de um desafio simples que não requer interação explícita. Ele se integra perfeitamente aos seus formulários, melhorando a experiência do usuário.
+* **Captcha**: esse CAPTCHA com foco na privacidade oferece uma alternativa simples, com foco na privacidade de dados. O objetivo é obter um equilíbrio entre a segurança e a experiência do usuário.
+* **Google reCAPTCHA**: a AEM Forms continua a oferecer suporte ao reCAPTCHA v2 e ao reCAPTCHA Enterprise, oferecendo uma solução confiável e bem estabelecida.
+
+Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
+
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Cilindro de nuvens](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components), e [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+
+### APIs do Doc Assurance
+
+
+As APIs do AEM Forms Doc Assurance são um conjunto de ferramentas nas APIs de comunicação do AEM Forms Cloud Service que permitem gerenciar a segurança e a interação do usuário nos documentos do PDF.
+
+Veja a seguir um detalhamento do que as APIs do Doc Assurance podem fazer:
+
+* **Criptografar e descriptografar documentos**: Protect seus documentos tornando o conteúdo ilegível com criptografia. Você tem controle sobre quais partes do PDF são criptografadas, incluindo todo o documento, conteúdo específico, metadados ou anexos.
+
+* **Assinar documentos digitalmente**: adicione assinaturas digitais aos seus documentos para validação e verificação à prova de violação. Isso pode ser usado para fins de certificação ou para garantir a integridade do documento
+
+* **Reader Estender seus documentos (Aplicar ou editar direitos de uso de documentos PDF)**: permite que sua organização compartilhe facilmente documentos PDF interativos, estendendo a funcionalidade do Adobe Reader com direitos de uso adicionais.
+
+  As APIs de Extensão de Reader (Direitos de uso) adicionam direitos de uso a um documento PDF. Essa ação ativa recursos que geralmente não estão disponíveis quando um documento PDF é aberto usando o Adobe Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento. Usuários de terceiros não precisam de software ou plug-ins adicionais para trabalhar com documentos habilitados por direitos.
+
+  Quando os documentos PDF têm os direitos de uso apropriados adicionados, os recipients podem fazer atividades habilitadas no Adobe Reader.
+
+No geral, [APIs do Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) Ajudar a melhorar a segurança e a conformidade dos documentos, adicionando uma camada extra de controle.
+
+
+
+## Consulte também:
+
+* [Últimas inovações na AEM Forms](/help/forms/latest-innovations.md)
+
+* [Recursos do AEM Forms as a Cloud Service](/help/forms/home.md)
+
+* [Diferença entre o AEM 6.5 Forms (AMS e no local) e o AEM Forms as a Cloud Service AEM (CS Forms)](/help/forms/notable-changes.md)
