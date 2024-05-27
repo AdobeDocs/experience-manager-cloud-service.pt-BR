@@ -2,9 +2,9 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 0cd4a720874c9d4138665f0bfdecbd29468f01e5
+source-git-commit: 3e8a1a8a48fc5ec6bff71062ff740acf98d743d2
 workflow-type: tm+mt
-source-wordcount: '5388'
+source-wordcount: '5332'
 ht-degree: 24%
 
 ---
@@ -803,6 +803,4 @@ O pool de conexões é uma técnica personalizada para criar e manter um reposit
 
 A implementação de uma estratégia apropriada de pool de conexões é uma medida proativa para corrigir uma supervisão comum na configuração do sistema, o que geralmente leva a um desempenho abaixo do ideal. Ao estabelecer corretamente um pool de conexão, o Adobe Experience Manager (AEM) pode melhorar a eficiência das chamadas externas. Isso não apenas reduz o consumo de recursos, mas também diminui o risco de interrupções do serviço e diminui a probabilidade de encontrar solicitações com falha ao se comunicar com servidores upstream.
 
-À luz dessas informações, recomendamos que você reavalie sua configuração atual do AEM e considere a incorporação deliberada do pool de conexões em conjunto com as configurações de rede avançada. Ao implementar essas medidas, a solução é projetada para evitar que proxies fiquem sobrecarregados, reduzindo assim a probabilidade de solicitações não alcançarem endpoints externos.
-
-À luz dessas informações, recomendamos que você reavalie sua configuração atual do AEM e considere a incorporação deliberada do pool de conexões, juntamente com as configurações de rede avançadas. Ao gerenciar o número de conexões paralelas e minimizar a ocorrência de possíveis conexões obsoletas, essas medidas levam a uma redução no risco de os servidores proxy atingirem seus limites de conexão. Consequentemente, essa implementação estratégica foi projetada para diminuir a probabilidade de solicitações não alcançarem endpoints externos.
+À luz dessas informações, o Adobe aconselha a reavaliação da configuração de AEM atual e a consideração da incorporação deliberada do pool de conexões, juntamente com as configurações de rede avançadas. Ao gerenciar o número de conexões paralelas e minimizar a possibilidade de conexões obsoletas, essas medidas levam a uma redução no risco de os servidores proxy atingirem seus limites de conexão. Consequentemente, essa implementação estratégica foi projetada para diminuir a probabilidade de solicitações não alcançarem endpoints externos.
