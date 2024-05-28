@@ -3,15 +3,14 @@ title: Recursos atuais dos Primeiros usuários do [!DNL Adobe Experience Manager
 description: Recursos atuais dos Primeiros usuários do [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1599'
 ht-degree: 0%
 
 ---
 
 # Programa de adoção antecipada do AEM Forms
-
 
 O programa AEM Forms Early Adoter Program oferece uma oportunidade única para você obter acesso exclusivo a recursos de ponta antes de qualquer outra pessoa e ajudar a moldar seu desenvolvimento. O programa oferece a você:
 
@@ -21,7 +20,7 @@ O programa AEM Forms Early Adoter Program oferece uma oportunidade única para v
 
 ## Como participar do programa Early Adoter?
 
-Se você estiver interessado em participar do nosso programa Early Adoter para qualquer inovação de Early Adoter, basta enviar um email de seu endereço oficial para aem-forms-ea@adobe.com para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
+Se você estiver interessado em participar do nosso programa Early Adoter para qualquer inovação de Early Adoter, basta enviar um email do seu endereço oficial para `aem-forms-ea@adobe.com` para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
 
 
 ## Inovações iniciais do adotante
