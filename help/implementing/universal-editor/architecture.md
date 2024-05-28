@@ -2,9 +2,9 @@
 title: Arquitetura do Editor universal
 description: Saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '508'
 ht-degree: 83%
 
 ---
@@ -73,15 +73,3 @@ O Editor universal envia todas as alterações de conteúdo para um serviço cen
 ### Renderização do lado do cliente {#client-side}
 
 ![Renderização do lado do cliente](assets/client-side.png)
-
-## Recursos adicionais {#additional-resources}
-
-Para saber mais sobre o Editor universal, consulte estes documentos.
-
-* [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvimento de última geração.
-* [Criação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md): saiba como é fácil e intuitivo para os autores criarem conteúdo usando o Editor universal.
-* [Publicar conteúdo com o editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md) - Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
-* [Introdução ao Editor universal no AEM](getting-started.md): saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
-* [Atributos e tipos](attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
-* [Autenticação do Editor universal](authentication.md): saiba como funciona a autenticação do Editor universal.
-

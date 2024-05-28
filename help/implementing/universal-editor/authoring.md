@@ -2,10 +2,10 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 37%
+source-wordcount: '2083'
+ht-degree: 35%
 
 ---
 
@@ -71,7 +71,7 @@ Exibe a organização na qual você está conectado no momento. Selecione para a
 
 #### Soluções {#solutions}
 
-Tocar ou clicar no alternador de soluções permite que você vá rapidamente para outras soluções Experience Cloud.
+Tocar ou clicar no alternador de soluções permite acessar rapidamente as outras soluções da Experience Cloud.
 
 ![Alternador de soluções](assets/solutions.png)
 
@@ -89,7 +89,7 @@ Esse ícone é marcado com o número de [notificações](/help/implementing/clou
 
 #### Propriedades do usuário {#user-properties}
 
-Selecione o ícone que representa seu usuário para acessar as configurações do usuário. Se você não tiver uma imagem do usuário configurada, um ícone é atribuído aleatoriamente.
+Clique no ícone que representa seu usuário para acessar as configurações de usuário. Se você não tiver uma imagem de usuário configurada, um ícone será atribuído aleatoriamente.
 
 ![Propriedades do usuário](assets/user-properties.png)
 
@@ -384,9 +384,4 @@ No modo de visualização, tocar ou clicar em um conteúdo reage como faria com 
 
 Para saber mais sobre o Editor universal, consulte estes documentos.
 
-* [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvimento de última geração.
 * [Publicar conteúdo com o editor universal](publishing.md) - Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
-* [Introdução ao Editor universal no AEM](getting-started.md): saiba como obter acesso ao Editor universal e começar a instrumentar seu primeiro aplicativo do AEM para utilizá-lo.
-* [Arquitetura do Editor universal](architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
-* [Atributos e tipos](attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
-* [Autenticação do Editor universal](authentication.md): saiba como funciona a autenticação do Editor universal.
