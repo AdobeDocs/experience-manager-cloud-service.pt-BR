@@ -2,10 +2,10 @@
 title: Centro de ações
 description: Aproveite o Centro de ações para agir de forma conveniente em incidentes e outras informações importantes
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 383d56ccd1e523082c21e58252a7c03a9807c582
+source-git-commit: ae8c5e832134caf4ff6799c601810e9a735f4195
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 65%
+source-wordcount: '842'
+ht-degree: 64%
 
 ---
 
@@ -76,3 +76,4 @@ A tabela a seguir lista os tipos de notificação atualmente aceitos no Centro d
 | Pico de tráfego na origem | Incidente | Protect sua origem configurando regras de filtro de tráfego de limite de taxa que acionam limites inferiores ao alerta de pico de tráfego padrão na origem.  Consulte a [Bloqueio de ataques de DoS e DDoS usando regras de tráfego](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) seção da documentação Regras de filtro de tráfego, que faz referência a um tutorial. |
 | Certificado S2S a expirar | Proativa | Saiba como atualizar uma credencial na documentação [Geração de tokens de acesso para APIs do lado do servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Contagem Alta de Conexões | Proativa | Saiba mais sobre o pool de conexões no [Documentação de Pooling de Conexão junto com a Rede Avançada](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Mapeamento de usuário de serviço obsoleto | Proativa | Saiba como usar o formato de Mapeamento de usuário do Sling Service mais recente, conforme indicado em [Práticas recomendadas para o mapeamento de usuário do serviço Sling e definição do usuário do serviço](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
+| Contagem Alta de Conexões | Proativa | Saiba mais sobre o pool de conexões no [Documentação avançada de rede](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
