@@ -1,0 +1,79 @@
+---
+title: Remoção do cache da CDN
+description: Saiba como remover objetos em cache do cache CDN do Adobe configurando o token de API de limpeza que pode ser usado em chamadas de API.
+feature: Dispatcher
+source-git-commit: 7224db99c29c90fb5e93ac07d7d501e2e9aaf74e
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 1%
+
+---
+
+# Remoção do cache da CDN {#cdn-purge-cache}
+
+>[!NOTE]
+>Esse recurso ainda não está disponível para o público geral. Para participar do programa de adoção antecipada, envie um email para `aemcs-cdn-config-adopter@adobe.com`.
+
+A limpeza remove um objeto do cache CDN do Adobe, resultando em solicitações futuras que prosseguem para a origem como um erro de cache, em vez de serem fornecidas do cache.
+O AEM as a Cloud Service permite configurar um token de API de limpeza, que pode ser usado em chamadas de API. Leia o <!--[Configuring CDN Credentials and Authentication article](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token)--> para saber como configurar esse token usando as diretivas de autenticação de pipeline de configuração do Cloud Manager.
+
+Há três variações de limpeza compatíveis:
+
+* [Limpeza de URL único](#single-purge) - limpar um único recurso por vez.
+* [Limpar por chave substituta](#surrogate-key-purge) - limpe vários recursos de uma vez.
+* [Limpeza completa](#full-purge) - limpar todos os recursos.
+
+Todas as variações de limpeza compartilham o seguinte:
+
+* O método HTTP deve ser definido como `PURGE`.
+* O URL pode ser qualquer domínio associado ao serviço AEM para o qual a solicitação de limpeza se destina.
+* A variável `X-AEM-Purge-Key` deve ser fornecido em um cabeçalho HTTP.
+
+>[!CAUTION]
+>A limpeza do cache CDN, especialmente com o sinalizador de hardware, aumentará o tráfego na origem e poderá causar uma interrupção quando não for executada corretamente.
+
+## Limpeza de URL único {#single-purge}
+
+Você pode expurgar um único recurso de cada vez da seguinte maneira:
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com/resource-path" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H 'X-AEM-Purge: soft'
+```
+
+Como mostrado no exemplo acima, você pode **opcionalmente** especificar se a CDN deve executar uma **rígido** expurgar (padrão) ou um **suave** limpar nos objetos em cache.
+
+A limpeza permanente padrão torna o conteúdo imediatamente inacessível para novas solicitações até que o conteúdo seja recuperado da origem. A limpeza suave marca o conteúdo como obsoleto, mas ainda o envia aos clientes para que eles não precisem aguardar até que o conteúdo seja recuperado da origem.
+
+## Limpeza de chave substituta {#surrogate-key-purge}
+
+Chaves substitutas são identificadores exclusivos que você usa para limpar um conjunto de conteúdo. Eles são aplicados ao conteúdo adicionando um `Surrogate-Key` cabeçalho para a resposta. Uma ou mais chaves substitutas podem ser referenciadas em uma chamada de API de limpeza.
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H "Surrogate-Key: my-surrogate-key"
+-H "X-AEM-Purge: soft" #optional
+```
+
+A variável `Surrogate-Key`s) Sejam separadas por espaços. De modo semelhante à limpeza de URL único, você pode configurar uma limpeza permanente ou flexível.
+
+## Limpeza completa {#full-purge}
+
+Você pode executar uma limpeza completa de todos os recursos em cache da seguinte maneira:
+
+```
+curl
+-X PURGE "https://publish-p1234-e5467.adobeaemcloud.com" \
+-H 'X-AEM-Purge-Key: <my_purge_key>' \
+-H "X-AEM-Purge: all"
+```
+
+Esteja ciente de `X-AEM-Purge` o cabeçalho deve incluir o valor &quot;all&quot;.
+
+## Interações com a camada Apache/Dispatcher {#apache-layer}
+
+Conforme descrito na seção [Artigo sobre Fluxo de entrega de conteúdo](/help/implementing/dispatcher/overview.md), o CDN recuperará o conteúdo da camada do Apache/Dispatcher, se o cache tiver expirado. Isso implica que, antes de limpar um recurso na CDN, você deve garantir que uma nova versão do conteúdo também esteja disponível no Dispatcher. Para obter mais detalhes, consulte também [Invalidação de cache do Dispatcher](/help/implementing/dispatcher/caching.md#disp).
