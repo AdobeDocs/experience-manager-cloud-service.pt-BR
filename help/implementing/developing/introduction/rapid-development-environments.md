@@ -2,9 +2,9 @@
 title: Ambientes de desenvolvimento rápido
 description: Saiba como usar Ambientes de desenvolvimento rápido para iterações de desenvolvimento rápido em um ambiente de nuvem.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: cd74240f59cb3139e425f568828ba9ab1b59147f
+source-git-commit: 4a5b7c671a149d61c60fc86f93a41d52fb4b5468
 workflow-type: tm+mt
-source-wordcount: '4345'
+source-wordcount: '4294'
 ht-degree: 3%
 
 ---
@@ -408,11 +408,12 @@ The analyser found the following errors for publish :
 
 A amostra de código acima ilustra o comportamento se um pacote não resolver. Nesse caso, ele é &quot;preparado&quot; e só será instalado se seus requisitos (nesse caso, importações ausentes) forem atendidos por meio da instalação de outro código.
 
-<u>Implantar código front-end com base em temas de site e modelos de site</u>
+### Implantação de código front-end com base em temas de site e modelos de site {#deploying-themes-to-rde}
 
 >[!NOTE]
 >
->Esse recurso ainda não é GA, mas pode ser usado por participantes antecipados. Entre em contato com **aemcs-rde-support@adobe.com** para experimentar e fornecer feedback.
+> Este recurso ainda não está disponível. Ele será lançado em algum momento de junho.
+>
 
 Os RDEs aceitam código de front-end com base em [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md). Com os RDEs, isso é feito usando uma diretiva de linha de comando para implantar pacotes de front-end, em vez do Cloud Manager [Pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) usado para outros tipos de ambiente.
 
@@ -1011,8 +1012,6 @@ Observe também as seguintes considerações:
 
 * Os RDEs não incluem um nível de visualização
 * Atualmente, os RDEs não oferecem suporte ao canal de pré-lançamento.
-* Embora o suporte a RDE para visualização e depuração do código front-end baseado em [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md) implantado ainda não está pronto para a disponibilidade geral, ele pode ser usado por participantes iniciais. Entre em contato com **aemcs-rde-support@adobe.com** para experimentar e fornecer feedback.
-
 
 
 ## De quantos RDEs preciso? {#how-many-rds-do-i-need}
