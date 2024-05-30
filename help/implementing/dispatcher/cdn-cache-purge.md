@@ -1,8 +1,8 @@
 ---
 title: Remoção do cache da CDN
 description: Saiba como remover objetos em cache do cache CDN do Adobe configurando o token de API de limpeza que pode ser usado em chamadas de API.
-feature: Dispatcher
-source-git-commit: 114098a75d84a3da4cc582288ffa162cd960a0e6
+feature: CDN Cache
+source-git-commit: a10faaecf8f6dcaf53e7c72504b927125b32c0d4
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 1%
