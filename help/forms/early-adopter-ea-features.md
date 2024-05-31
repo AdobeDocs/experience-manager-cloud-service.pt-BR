@@ -3,9 +3,9 @@ title: Recursos atuais dos Primeiros usuários do [!DNL Adobe Experience Manager
 description: Recursos atuais dos Primeiros usuários do [!DNL Adobe Experience Manager Forms] as a Cloud Service.
 Feature: Introduction
 Role: developer, user
-source-git-commit: 2b035e9597518ff64a2b4ce8c18ae31e5deef6f3
+source-git-commit: e6ceb53ee821a1fde5e79c687a4445d6c18faf54
 workflow-type: tm+mt
-source-wordcount: '1599'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,7 @@ O programa AEM Forms Early Adoter Program oferece uma oportunidade única para v
 
 ## Como participar do programa Early Adoter?
 
-Se você estiver interessado em participar do nosso programa Early Adoter para qualquer inovação de Early Adoter, basta enviar um email do seu endereço oficial para `aem-forms-ea@adobe.com` para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
-
+Se você estiver interessado em participar do nosso programa Early Adoter para qualquer inovação de Early Adoter, basta enviar um email do seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com)  para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
 
 ## Inovações iniciais do adotante
 
@@ -154,6 +153,15 @@ Veja a seguir um detalhamento do que as APIs do Doc Assurance podem fazer:
 No geral, [APIs do Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) Ajudar a melhorar a segurança e a conformidade dos documentos, adicionando uma camada extra de controle.
 
 
+### APIs de serviço do Forms
+
+O serviço Forms gera PDF forms interativos para a captura de dados. Ele também pode ser usado para importar/exportar dados de/para um formulário PDF interativo existente e validar os dados enviados. Veja um detalhamento de suas funcionalidades:
+
+* **Renderização do Forms**: gere um formulário PDF interativo a partir de um modelo criado usando o AEM Forms Designer e, opcionalmente, dados XML. Isso produz essencialmente um formulário PDF preenchível opcionalmente pré-preenchido com dados.
+
+* **Extração e importação de dados**: importe dados para um formulário PDF existente, bem como extraia dados de um formulário PDF preenchido. Os formatos de dados XDP e XML são compatíveis, e a importação para PDF forms não XFA (também conhecida como AcroForms) também é compatível com dados FDF e XFDF.
+
+* **Validação de dados**: valide os dados enviados, no formato XDP ou XML, em relação a um modelo criado usando o AEM Forms Designer.
 
 ## Consulte também:
 

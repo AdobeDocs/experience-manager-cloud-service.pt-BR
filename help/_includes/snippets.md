@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8c60b02c1759fc4d0cf66d6c8f1c2edf294fc1ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 14%
+source-wordcount: '516'
+ht-degree: 9%
 
 ---
 # Trechos {#snippets}
@@ -64,4 +64,56 @@ ht-degree: 14%
 * [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
 * [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
+
+
+## Diferença entre o Editor de regras nos Componentes principais e o Editor de regras nos Componentes de base  {#rule-editor-diff}
+
+A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Componentes principais do editor de regras e nos Componentes de base do editor de regras:
+
+<table>
+  <tbody>
+  <tr>
+    <td><strong>Recursos</strong></td>
+    <td><strong>Componentes de base do formulário adaptável</strong></td>
+    <td><strong>Componentes principais do formulário adaptável</strong></td>   
+    </tr>
+  </tr>
+  <tr>
+    <td>Definir as opções da lista suspensa </td>
+    <td>As opções da lista suspensa são definidas usando as tags do Editor de regras <b>Definir Opções de</b> propriedade.</td>
+    <td>As opções suspensas são definidas usando as funções personalizadas. 
+   </td>
+   </tr>
+     </tr>
+   <tr>
+    <td>Executar operações matemáticas no campo repetível do painel </td>
+    <td>As funções Matemática OOTB podem ser aplicadas em campos de painel repetíveis para executar funções como soma, média. </td>
+    <td>As operações matemáticas no campo de painel repetível podem ser executadas usando as funções personalizadas.
+   </td>
+   </tr>
+      <tr>
+    <td>Validar/redefinir campo/painel/regra de formulário em ‘Then’ </td>
+    <td>As funções Validar e Redefinir só oferecem suporte a objetos de formulário no Editor de regras. 
+   </td>
+    <td>As funções Validar e Redefinir oferecem suporte ao objeto de formulário/painel/campo no Editor de regras. 
+   </td>
+   </tr>
+   <tr>
+    <td>Suporte ES10 </td>
+    <td>ES10 ainda não é suportado. </td>
+    <td>Suporte para recursos modernos do JavaScript, como funções de esquerda e seta (suporte para ES10) em funções personalizadas. 
+   </td>
+   </tr>
+   </tr>
+   <tr>
+   <td>Propriedade de saída do serviço</td>
+   <td> A propriedade de saída do Serviço é compatível com o <b>Definir valor de</b> opção do Editor de regras. </td>
+   <td>A variável <b>Definir valor de</b> A opção não suporta a variável <b>Saída do serviço</b> propriedade para chamar APIs no Editor de regras.
+   </td>
+   </tr>
+   </tr>
+   </tr>
+  </tbody>
+  <table>
+  </tbody>
 

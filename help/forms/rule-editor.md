@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '6468'
-ht-degree: 0%
+source-wordcount: '6492'
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,12 @@ ht-degree: 0%
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 | AEM as a Cloud Service | Este artigo |
 
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| Componente principal | [Clique aqui](/help/forms/rule-editor-core-components.md) |
+| Componente de Fundação | Este artigo |
+
 ## Visão geral {#overview}
 
 O recurso do editor de regras permite que usuários e desenvolvedores de negócios de formulários gravem regras em objetos de Formulário adaptável. Essas regras definem as ações a serem acionadas nos objetos de formulário com base nas condições predefinidas, entradas do usuário e ações do usuário no formulário. Isso ajuda a simplificar ainda mais a experiência de preenchimento de formulário, garantindo precisão e velocidade.
@@ -28,20 +34,24 @@ O recurso do editor de regras permite que usuários e desenvolvedores de negóci
 O editor de regras fornece uma interface de usuário intuitiva e simplificada para escrever regras. O editor de regras oferece um editor visual para todos os usuários.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Algumas das ações principais que você pode executar em objetos do Formulário adaptável usando regras são:
 
 * Mostrar ou ocultar um objeto
-* Ativar ou desativar um objeto
+* Habilitar ou desabilitar um objeto
 * Definir um valor para um objeto
 * Validar o valor de um objeto
 * Executar funções para calcular o valor de um objeto
 * Chame um serviço de modelo de dados de formulário e execute uma operação
-* Definir propriedade de um objeto
+* Definir a propriedade de um objeto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
 Os usuários adicionados ao grupo forms-power-users podem criar scripts e editar os existentes. Usuários na [!DNL forms-users] grupo pode usar os scripts, mas não criar ou editar scripts.
 
+## Diferença entre o Editor de regras nos Componentes principais e o Editor de regras nos Componentes de base
+
+{{rule-editor-diff}}
+
 ## Noções básicas sobre uma regra {#understanding-a-rule}
 
-Uma regra é uma combinação de ações e condições. No regra editor, as ações incluem atividades como ocultar, mostrar, ativar, desativar ou calcular o valor de um objeto em um formulário. As condições são expressões booleanas que são avaliadas executando verificações e operações no estado, valor ou propriedade de um objeto de formulário. As ações são executadas com base no valor ( `True` ou `False`) retornado pela avaliação de uma condição.
+Uma regra é uma combinação de ações e condições. No editor de regras, as ações incluem atividades como ocultar, mostrar, habilitar, desabilitar ou calcular o valor de um objeto em um formulário. As condições são expressões booleanas que são avaliadas executando verificações e operações no estado, valor ou propriedade de um objeto de formulário. As ações são executadas com base no valor ( `True` ou `False`) retornado avaliando uma condição.
 
 O editor de regras fornece um conjunto de tipos de regras predefinidos, como Quando, Mostrar, Ocultar, Ativar, Desativar, Definir valor de e Validar, para ajudá-lo a escrever regras. Cada tipo de regra permite definir condições e ações em uma regra. O documento explica detalhadamente cada tipo de regra.
 
@@ -51,7 +61,7 @@ Uma regra normalmente segue uma das seguintes construções:
 
 No editor de regras, a variável **Quando** o tipo de regra impõe a construção condição-ação.
 
-**Condição** de ação Nesta construção, uma regra primeiro define uma ação a ser acionada seguida de condições para avaliação. Outra variação dessa construção é a ação alternativa de condição de ação, que também define uma ação alternativa a ser acionada se a condição retornar False.
+**Condição de ação** Nesta construção, uma regra primeiro define uma ação a ser acionada seguida por condições para avaliação. Outra variação dessa construção é ação-condição-ação alternativa, que também define uma ação alternativa a ser acionada se a condição retornar Falso.
 
 Os tipos de regras Mostrar, Ocultar, Ativar, Desativar, Definir valor de e Validar no editor de regras impõem a construção de regra de condição de ação. Por padrão, a ação alternativa para Mostrar é Ocultar, e para Habilitar é Desabilitar e o oposto. Não é possível alterar a ação alternativa padrão.
 
@@ -104,7 +114,7 @@ O editor de regras fornece um conjunto de tipos de regras predefinidos que você
 
 ### [!UICONTROL Quando] {#whenruletype}
 
-A variável **[!UICONTROL Quando]** o tipo de regra segue a variável **condição-ação-ação alternativa** regra construir, ou às vezes, apenas a variável **condição-ação** construir. Nesse tipo de regra, primeiro especifique uma condição para avaliação seguida por uma ação para acionar se a condição for atendida ( `True`). Ao usar o tipo de regra Quando, é possível usar vários operadores E e OU para criar [expressões aninhadas](#nestedexpressions).
+A variável **[!UICONTROL Quando]** o tipo de regra segue a variável **condição-ação-ação alternativa** regra construir, ou às vezes, apenas a variável **condição-ação** construir. Nesse tipo de regra, primeiro você especifica uma condição para avaliação seguida de uma ação a ser acionada se a condição estiver atendida ( `True`). Ao usar o tipo Quando regra, você pode usar vários operadores AND e OR para criar [expressões](#nestedexpressions) aninhadas.
 
 Ao usar o tipo Quando regra, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
 
@@ -122,13 +132,13 @@ Ação 3 no Objeto C;
 
 _
 
-Quando você tem um componente de vários valores, como botões de opção ou lista, ao criar um regra para esse componente, as opções são recuperadas automaticamente e disponibilizadas ao criador do regra. Não é necessário digitar os valores da opção novamente.
+Quando você tem um componente de vários valores, como botões de opção ou lista, ao criar uma regra para esse componente, as opções são automaticamente recuperadas e disponibilizadas para o criador da regra. Não é necessário digitar os valores da opção novamente.
 
 Por exemplo, uma lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao criar a regra, as opções (botões de opção) são recuperadas automaticamente e disponibilizadas ao criador da regra da seguinte maneira:
 
 ![Vários valores exibem opções](assets/multivaluefcdisplaysoptions1.png)
 
-Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Limpar valor da ação limpa o valor do objeto especificado. Ter a opção Limpar Valor como opção na declaração Quando permite criar condições complexas com vários campos.
+Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Limpar valor da ação limpa o valor do objeto especificado. Ter o valor claro de como uma opção na instrução When permite criar condições complexas com vários campos.
 
 ![Limpar valor de](assets/clearvalueof1.png)
 
@@ -140,7 +150,7 @@ Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Lim
 
 **[!UICONTROL Desativar]** Desabilita o objeto especificado.
 
-**[!UICONTROL Chamar serviço]** Chama um serviço configurado em um modelo de dados de formulário (FDM). Quando você escolhe a operação Chamar Serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) no [!DNL Experience Manager] instância. Ao escolher um serviço de Modelo de dados de formulário (FDM), mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado. Consulte o exemplo regra para invocar serviços do modelo de dados de formulário.
+**[!UICONTROL Chamar serviço]** Chama um serviço configurado em um modelo de dados de formulário (FDM). Quando você escolhe a operação Chamar Serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) no [!DNL Experience Manager] instância. Ao escolher um serviço de Modelo de dados de formulário (FDM), mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado. Consulte exemplo de regra para chamar serviços de Modelo de dados de formulário.
 
 Além do serviço de modelo de dados de formulário, você pode especificar um URL WSDL direto para chamar um serviço Web. No entanto, um serviço de modelo de dados de formulário tem muitos benefícios e a abordagem recomendada para chamar um serviço.
 
@@ -194,7 +204,7 @@ A figura a seguir mostra um exemplo de adição dinâmica de caixas de seleção
 
 **[!UICONTROL Remover Instância]** Remove uma ocorrência da linha de tabela ou painel repetível especificada.
 
-**[!UICONTROL Navegue até]** Navega até outro <!--Interactive Communications,--> Forms adaptável, outros ativos, como imagens ou fragmentos de documentos, ou um URL externo. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navegue para navegar até]** outras <!--Interactive Communications,--> Forms adaptativas, outras ativos como imagens ou fragmentos documento ou um URL externo. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 ### [!UICONTROL Definir valor de] {#set-value-of}
 
@@ -204,11 +214,7 @@ A variável **Definir Valor De** o tipo de regra não está disponível para tod
 
 Defina o valor do Objeto A como:
 
-(sequência de caracteres ABC) OU
-(objeto propriedade X do objeto C) OU
-(valor de uma função) OU
-(valor de uma expressão matemática) OU
-(valor de saída de um serviço de modelo de dados ou de um serviço da Web);
+(cadeia de caracteres ABC) OR (propriedade do objeto X do objeto C) OR (valor de uma função) OR (valor de uma expressão matemática) OR (valor de saída de um serviço de modelo de dados ou serviço Web);
 
 Quando (opcional):
 
@@ -218,7 +224,7 @@ O exemplo a seguir usa o valor em `dependentid` campo como entrada e define o va
 
 ![Definir valor-serviço da Web](assets/set-value-web-service1.png)
 
-Exemplo de Definir Valor regra usando o serviço de modelo de dados de formulário
+Exemplo de regra Definir valor usando o serviço de Modelo de dados de formulário
 
 >[!NOTE]
 >
@@ -356,13 +362,13 @@ A guia Objetos de formulário mostra uma exibição hierárquica de todos os obj
 
 Os objetos de formulário que têm uma ou mais regras válidas aplicadas são marcados com um ponto verde. Se alguma das regras aplicadas a um objeto de formulário for inválida, o objeto de formulário será marcado com um ponto amarelo.
 
-A guia Funções inclui um conjunto de funções incorporadas, como Soma de, Mín de, Máx de, Média de, Número de e Validar formulário. Você pode usar essas funções para calcular valores em painéis e linhas de tabela repetíveis e usá-los em declarações de ação e condição ao escrever regras. No entanto, você pode criar [funções personalizadas](#custom-functions) também.
+A guia Funções inclui um conjunto de funções incorporadas, como Soma de, Mín de, Máx de, Média de, Número de e Validar formulário. Você pode usar essas funções para calcular valores em painéis e linhas de tabela repetíveis e usá-los em declarações de ação e condição ao escrever regras. No entanto, também é possível criar [funções personalizadas](#custom-functions) .
 
-![A guia Funções](assets/functions1.png)
+![As funções guia](assets/functions1.png)
 
 >[!NOTE]
 >
->Você pode executar a pesquisa de texto em nomes de objetos e funções e títulos nas guias Objetos e Funções do Forms.
+>É possível executar pesquisa de texto em nomes e títulos de funções e objetos nas guias Forms Objetos e Funções.
 
 Na árvore esquerda dos objetos de formulário, você pode selecionar os objetos de formulário para exibir as regras aplicadas a cada um dos objetos. Você não só pode navegar pelas regras dos vários objetos de formulário, como também pode copiar e colar regras entre os objetos de formulário. Para obter mais informações, consulte [Copiar e colar regras](rule-editor.md#p-copy-paste-rules-p).
 
@@ -464,13 +470,13 @@ Para gravar regras, execute as seguintes etapas:
 
 1. Em seguida, escreva uma regra para calcular o valor de qualificação de empréstimo, que é 50% do salário total, e exiba-o no campo Elegibilidade do empréstimo. Para alcançar esse resultado, crie **[!UICONTROL Definir valor de]** regras no campo Elegibilidade do empréstimo.
 
-   No modo de criação, selecione a **[!UICONTROL Elegibilidade do empréstimo]** e selecione ![edit-rules](assets/edit-rules-icon.svg). Em seguida, selecione **[!UICONTROL Criar]** para iniciar o editor de regras.
+   No modo de criação, selecione a **[!UICONTROL Elegibilidade do empréstimo]** e selecione ![edit-rules](assets/edit-rules-icon.svg). Próximo, selecione **[!UICONTROL Criar]** para iniciar o regra editor.
 
-1. Selecionar **[!UICONTROL Definir Valor De]** regra no menu suspenso de regras.
+1. Selecione **[!UICONTROL Definir Valor de]** regra no menu suspenso regra.
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
-1. Selecionar **[!UICONTROL Selecionar opção]** e selecione **[!UICONTROL Expressão matemática]**. Um campo para escrever expressão matemática é aberto.
+1. Selecione **[!UICONTROL Selecionar opção]** e selecionar **[!UICONTROL Expressão]** matemática. Um campo para escrever expressão matemática é aberto.
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11.png)
 
@@ -600,7 +606,7 @@ Adiciona informações sobre a função, como seu objetivo.
    1. número
    1. booleano
 
-  Todos os outros tipos de retorno são categorizados em um dos itens acima. Nenhum não é compatível. Selecione um dos tipos acima. Os tipos de retorno não diferenciam maiúsculas de minúsculas.
+  Todos os outros tipos de retorno são categorizados em um dos acima. Nenhum é suportado. Selecione um dos tipos acima. Os tipos de retorno não diferenciam maiúsculas de minúsculas.
 
    * **Este**
 Sintaxe: `@this currentComponent`
@@ -747,11 +753,11 @@ Você pode executar as seguintes ações nas regras:
 
 ## Copiar e colar regras {#copy-paste-rules}
 
-É possível copiar e colar uma regra de um campo para outros campos semelhantes para economizar tempo.
+Você pode copiar e colar uma regra de um campo para outros campos semelhantes para economizar tempo.
 
 Para copiar e colar regras, faça o seguinte:
 
-1. Selecione o objeto de formulário do qual deseja copiar uma regra e, na barra de ferramentas do componente, selecione ![editar regra](assets/edit-rules-icon.svg). A interface do usuário do editor de regras é exibida com o objeto de formulário selecionado e as regras existentes são exibidas.
+1. Selecione o objeto de formulário a partir do qual deseja copiar uma regra e, na barra de ferramentas do componente, selecione ![editar regra](assets/edit-rules-icon.svg). A interface do regra editor usuário aparece com o objeto de formulário selecionado e as regras existentes são exibidas.
 
    ![copiar regra](assets/copyrule.png)
 

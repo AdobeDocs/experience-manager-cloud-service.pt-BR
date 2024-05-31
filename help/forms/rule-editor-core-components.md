@@ -5,19 +5,18 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '5453'
+source-wordcount: '5612'
 ht-degree: 0%
 
 ---
 
 
-<span class="preview"> Este artigo apresenta conteúdo para alguns recursos de pré-lançamento. Esses recursos de pré-lançamento estão acessíveis somente por meio de nossos [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). Os recursos do programa de pré-lançamento são:
-* Suporte para implementar condições aninhadas com a funcionalidade When-then-else
-* Validar ou redefinir painéis e formulários, incluindo campos
-* Suporte para recursos modernos do JavaScript, como funções de esquerda e seta (suporte para ES10) em funções personalizadas.
-</span>
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| Componentes de fundação | [Clique aqui](/help/forms/rule-editor.md) |
+| Componentes principais | Este artigo |
 
 # Adicionar regras a um formulário adaptável (Componentes principais) {#adaptive-forms-rule-editor}
 
@@ -26,16 +25,24 @@ O recurso do editor de regras permite que usuários e desenvolvedores de negóci
 O editor de regras fornece uma interface de usuário intuitiva e simplificada para escrever regras. O editor de regras oferece um editor visual para todos os usuários.<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> Algumas das ações principais que você pode executar em objetos do Formulário adaptável usando regras são:
 
 * Mostrar ou ocultar um objeto
-* Ativar ou desativar um objeto
+* Habilitar ou desabilitar um objeto
 * Definir um valor para um objeto
 * Validar o valor de um objeto
 * Executar funções para calcular o valor de um objeto
-* Invoque um serviço FDM (Form Data Model) e execute uma operação
-* Definir propriedade de um objeto
+* Chamar um serviço de modelo de dados de formulário (FDM) e executar uma operação
+* Definir a propriedade de um objeto
 
 <!-- Rule editor replaces the scripting capabilities in [!DNL Experience Manager 6.1 Forms] and earlier releases. However, your existing scripts are preserved in the new rule editor. For more information about working with existing scripts in the rule editor, see [Impact of rule editor on existing scripts](rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p). -->
 
-Os usuários adicionados aos usuários com poder de formulário grupo podem criar scripts e editar os existentes. Os usuários na [!DNL forms-users] grupo podem usar os scripts, mas não criar ou editar scripts.
+Os usuários adicionados ao grupo forms-power-users podem criar scripts e editar os existentes. Usuários na [!DNL forms-users] grupo pode usar os scripts, mas não criar ou editar scripts.
+
+## Diferença entre o Editor de regras nos Componentes principais e o Editor de regras nos Componentes de base
+
+{{rule-editor-diff}}
+
+>[!NOTE]
+>
+> Para ver como criar e usar funções personalizadas em detalhes, consulte [Funções personalizadas no Adaptive Forms (Componentes principais)](/help/forms/create-and-use-custom-functions.md) artigo.
 
 ## Noções básicas sobre uma regra {#understanding-a-rule}
 
@@ -107,7 +114,7 @@ O editor de regras fornece um conjunto de tipos de regras predefinidos que você
 
 A variável **[!UICONTROL Quando]** o tipo de regra segue a variável **condição-ação-ação alternativa** regra construir, ou às vezes, apenas a variável **condição-ação** construir. Nesse tipo de regra, primeiro especifique uma condição para avaliação seguida por uma ação para acionar se a condição for atendida ( `True`). Ao usar o tipo de regra Quando, é possível usar vários operadores E e OU para criar [expressões aninhadas](#nestedexpressions).
 
-Ao usar o tipo Quando regra, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
+Usando o tipo de regra Quando, é possível avaliar uma condição em um objeto de formulário e executar ações em um ou mais objetos.
 
 Em palavras simples, uma regra When típica é estruturada da seguinte maneira:
 
@@ -117,25 +124,80 @@ Em palavras simples, uma regra When típica é estruturada da seguinte maneira:
 
 `Then, do the following:`
 
-Ação 2 no Objeto B; E Ação 3 no Objeto C;
+`Action 2 on Object B;`
+`AND`
+&quot;Ação 3 sobre o objeto C;
 
 `Else, do the following:`
 
-Ação 2 no objeto C; _
+`Action 2 on Object C;`
+_
 
 Quando você tem um componente de vários valores, como botões de opção ou lista, ao criar uma regra para esse componente, as opções são automaticamente recuperadas e disponibilizadas para o criador da regra. Não é necessário digitar os valores da opção novamente.
 
-Por exemplo, um lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao criar a regra, as opções (botões de opção) são recuperadas e disponibilizadas automaticamente ao regra criador como a seguir:
+Por exemplo, uma lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao criar a regra, as opções (botões de opção) são recuperadas automaticamente e disponibilizadas ao criador da regra da seguinte maneira:
 
-![Opções de exibições de vários valores](assets/multivaluefcdisplaysoptions.png)
+![Vários valores exibem opções](assets/multivaluefcdisplaysoptions.png)
 
-Ao escrever um relatório Quando regra, você pode acionar a ação Limpar Valor de ações. Limpar Valor de ação limpa o valor do objeto especificado. Ter a opção Limpar Valor como opção na declaração Quando permite criar condições complexas com vários campos. É possível adicionar a declaração Restante para adicionar outras condições
+Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Limpar valor da ação limpa o valor do objeto especificado. Ter o valor claro de como uma opção na instrução When permite criar condições complexas com vários campos. Você pode adicionar a instrução Else para adicionar outras condições
 
 ![Limpar valor de](assets/clearvalueof.png)
 
 >[!NOTE]
 >
 > Quando o tipo de regra suporta apenas instruções then-else de nível único.
+
+#### Vários campos permitidos no [!UICONTROL Quando] {#allowed-multiple-fields}
+
+No **Quando** condição, você tem a opção de adicionar outros campos além do campo ao qual a regra é aplicada.
+
+Por exemplo, usando o tipo de regra Quando, é possível avaliar uma condição em diferentes objetos de formulário e executar a ação:
+
+Quando:
+
+(Objeto A Condição 1)
+
+E/OU
+
+(Condição do objeto B 2)
+
+Em seguida, faça o seguinte:
+
+Ação 1 no Objeto A
+
+_
+
+![Permitir vários campos em Quando](/help/forms/assets/allowed-multiple-field-when.png)
+
+##### Considerações ao usar Vários campos permitidos no recurso de condição Quando
+
+* Certifique-se de que o [o componente principal está definido para a versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar esse recurso no editor de regras.
+* Se as regras forem aplicadas a campos diferentes dentro da condição Quando, o regra é acionado mesmo se apenas um desses campos for alterado.
+
+
+<!--
+* It is not possible to add multiple fields in the When condition while applying rules to a button.
+
+##### To enable Allowed Multiple fields in When condition feature
+
+Allowed Multiple fields in When condition feature is disabled by default. To enable this feature, add a custom property at the template policy:
+
+1. Open the corresponding template associated with an Adaptive Form in the template editor.
+1. Select the existing policy as **formcontainer-policy**.
+1. Navigate to the **[!UICONTROL Structure]**  view and, from the **[!UICONTROL Allowed Components]** list, open the **[!UICONTROL Adaptive Forms Container]** policy.
+1. Go to the **[!UICONTROL Custom Properties]** tab and to add a custom property, click **[!UICONTROL Add]**.
+1. Specify the **Group Name** of your choice. For example, in our case, we added the group name as **allowedfeature**.
+1. Add the **key** and **value** pair as follows:
+   * key: fd:changeEventBehaviour
+   * value: deps
+1. Click **[!UICONTROL Done]**. -->
+
+Se os vários campos permitidos no recurso Quando a condição encontrarem problemas, seguir etapas de solução de problemas como:
+
+1. Abra o formulário no modo de edição.
+1. Abra a navegador conteúdo e selecione o **[!UICONTROL componente Contêiner]** de guia do formulário adaptável.
+1. Clique nas propriedades do Container do guia ![Propriedades do guia](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável é aberta.
+1. Clique em Concluído e salve a caixa de diálogo novamente.
 
 **[!UICONTROL Ocultar]** Oculta o objeto especificado.
 
@@ -194,7 +256,7 @@ A figura a seguir representa um exemplo de ativação dinâmica da caixa de sele
 
 **[!UICONTROL Validar]** Valida o formulário ou o objeto especificado.
 
-**[!UICONTROL Adicionar Instância]** Adiciona uma instância do painel ou linha de tabela repetível especificada.
+**[!UICONTROL Adicionar instância]** Adiciona uma ocorrência da linha de tabela ou painel repetível especificada.
 
 **[!UICONTROL Remover Instância]** Remove uma ocorrência da linha de tabela ou painel repetível especificada.
 
@@ -207,7 +269,7 @@ A figura a seguir representa um exemplo de ativação dinâmica da caixa de sele
 
 ### [!UICONTROL Definir valor de] {#set-value-of}
 
-A variável **[!UICONTROL Definir valor de]** o tipo de regra permite definir o valor de um objeto de formulário dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma sequência literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, cadeira de caracteres, propriedade ou valores derivados de uma função ou expressão matemáticos.
+A variável **[!UICONTROL Definir valor de]** o tipo de regra permite definir o valor de um objeto de formulário dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma sequência literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
 
 A variável **Definir Valor De** o tipo de regra não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
 
@@ -225,7 +287,7 @@ O exemplo a seguir seleciona o valor de `Question2` como `True` e define o valor
 
 Exemplo de Definir Valor regra usando o serviço de modelo de dados de formulário.
 
-### [!UICONTROL Programa] {#show}
+### [!UICONTROL Mostrar] {#show}
 
 Usar o **[!UICONTROL Mostrar]** tipo de regra, é possível escrever uma regra para mostrar ou ocultar um objeto de formulário com base no fato de uma condição ser atendida ou não. O tipo de regra Mostrar também aciona a ação Ocultar caso a condição não seja atendida ou retorne `False`.
 
@@ -376,7 +438,7 @@ O botão de alternância, quando tocado, alterna o painel de funções e objetos
 
 ### D. Editor visual de regras {#visual-rule-editor}
 
-Editor visual de regras é a área no modo editor visual da interface do usuário do editor de regras em que você escreve regras. Ele permite selecionar um tipo de regra e definir de acordo as condições e ações. Ao definir condições e ações em uma regra, você pode arrastar e soltar objetos e funções de formulário do painel Objetos de formulário e Funções.
+Editor visual de regras é a área no modo editor visual da interface do usuário do editor de regras em que você escreve regras. Ele permite selecionar um tipo de regra e definir adequadamente condições e ações. Ao definir condições e ações em uma regra, você pode arrastar e soltar objetos e funções de formulário do painel Objetos de formulário e Funções.
 
 Para obter mais informações sobre como usar o editor visual de regras, consulte [Regras de gravação](rule-editor.md#p-write-rules-p).
 <!-- 
@@ -395,13 +457,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E. Botões Concluído e Cancelar {#done-and-cancel-buttons}
 
-A variável **[!UICONTROL Concluído]** é usado para salvar uma regra. Você pode salvar uma regra incompleta. No entanto, incompletos são inválidos e não são executados. As regras salvas em um objeto de formulário são listadas quando você iniciar o regra editor na próxima vez do mesmo objeto de formulário. Você pode gerenciar regras existentes nesse visualização. Para obter mais informações, consulte [Gerenciar regras](rule-editor.md#p-manage-rules-p).
+A variável **[!UICONTROL Concluído]** é usado para salvar uma regra. Você pode salvar uma regra incompleta. No entanto, estão incompletos inválido e não são executados. As regras salvas em um objeto de formulário são listadas quando você iniciar o regra editor na próxima vez do mesmo objeto de formulário. Você pode gerenciar regras existentes nesse visualização. Para obter mais informações, consulte [Gerenciar regras](rule-editor.md#p-manage-rules-p).
 
-A variável **[!UICONTROL Cancelar]** O botão descarta todas as alterações feitas em uma regra e fecha o editor de regras.
+A **[!UICONTROL Cancelar]** botão descarta as alterações feitas em uma regra e fecha a regra editor.
 
 ## Regras de gravação {#write-rules}
 
-Você pode escrever regras usando o editor visual de regras <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+É possível criar regras usando o visual regra editor <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Primeiro, vamos analisar como escrever regras usando o editor visual.
 
@@ -411,7 +473,7 @@ Vamos entender como criar uma regra no editor visual usando o seguinte formulár
 
 ![Criar-regra-exemplo](assets/create-rule-example.png)
 
-A seção Requisitos de Empréstimo no formulário de solicitação de empréstimo de exemplo exige que os candidatos especifiquem seu estado civil, salário e, se forem casados, o salário de seus cônjuges. Com base nas entradas do usuário, a regra calcula o valor de qualificação de empréstimo e é exibida no campo Elegibilidade do empréstimo. Aplique as seguintes regras para implementar o cenário:
+A seção Requisitos de Empréstimo no formulário de solicitação de empréstimo de exemplo exige que os candidatos especifiquem seu estado civil, salário e, se forem casados, o salário de seus cônjuges. Com base nas entradas do usuário, o regra calcula o valor da qualificação do empréstimo e é exibido no campo Elegibilidade de empréstimo. Aplique as seguintes regras para implementar o cenário:
 
 * O campo Salário do Cônjuge é exibido somente quando o Estado Civil é Casado.
 * O valor de qualificação de empréstimo é de 50% do salário total.
@@ -513,11 +575,11 @@ Para gravar regras, execute as seguintes etapas:
 
    >[!NOTE]
    >
-   >Você pode criar expressões complexas usando componentes, funções, expressões matemáticas e valores de propriedade no campo Selecionar opção.
+   >É possível criar expressões complexas usando componentes, funções, expressões matemáticas e valores propriedade do campo Selecionar opção.
 
-   Em seguida, crie uma condição, que quando retorna True, a expressão é executada.
+   Próximo, crie uma condição que, quando retornar True, a expressão for executada.
 
-1. Selecionar **[!UICONTROL Adicionar Condição]** para adicionar uma instrução When.
+1. Selecione **[!UICONTROL Adicionar condição]** para adicionar uma declaração Quando.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -531,7 +593,7 @@ Para gravar regras, execute as seguintes etapas:
 
    A regra finalmente aparece da seguinte maneira no editor de regras.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
-1. Selecionar **[!UICONTROL Concluído]**. Ele salva a regra.
+1. Selecione **[!UICONTROL Concluído]**. Ele salva a regra.
 
 1. Repita as etapas 7 a 14 para definir outra regra para calcular a elegibilidade do empréstimo se o estado civil for Simples. A regra é exibida da seguinte maneira no editor de regras.
 
@@ -802,11 +864,11 @@ Também é possível arrastar e soltar condições em uma regra para editá-la. 
 
 ## Condições de expressão de data {#dateexpression}
 
-O editor de regras permite usar comparações de datas para criar condições.
+A editor de regras permite usar comparações de datas para criar condições.
 
-A seguir está um exemplo de condição que exibe um objeto de texto estático se a hipoteca da casa já estiver sendo feita, o que o usuário significa preenchendo o campo de data.
+A seguir, uma condição de exemplo que exibe um objeto de texto estático se a hipoteca da casa já for tomada, o que o usuário significa preenchendo o campo de data.
 
-Quando a data de hipoteca do imóvel conforme preenchido pelo usuário estiver no passado, o Formulário adaptável exibirá uma nota sobre o cálculo de renda. A regra a seguir compara a data preenchida pelo usuário com a data atual e, se a data preenchida pelo usuário for anterior à data atual, o formulário exibirá a mensagem de texto (chamada de Receita).
+Quando a data da hipoteca da propriedade como preenchida pela usuário estiver no passado, o Formulário Adaptável exibirá uma nota sobre o cálculo de renda. A regra a seguir compara a data preenchida pela usuário com a data atual e se a data preenchida pelo usuário for anterior à data atual, o formulário exibe a mensagem de texto (chamada Renda).
 
 ![Condição de expressão de data](assets/dateexpressioncondition.png)
 
@@ -897,8 +959,6 @@ Rule in the code editor -->
 No form ordem de compra explicado no exemplo anterior, você deseja impedir que o usuário faça pedidos de mais de uma quantidade de qualquer produto com preço superior a 10000. Para fazer essa validação, você pode gravar uma regra Validate como mostrado abaixo.
 
 ![Exemplo-validação](assets/example-validate.png)
-
-Regra no editor visual
 
 <!-- The rule appears as follows in the code editor.
 

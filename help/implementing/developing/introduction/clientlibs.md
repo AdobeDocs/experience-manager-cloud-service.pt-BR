@@ -2,9 +2,9 @@
 title: Uso de bibliotecas do lado do cliente no AEM as a Cloud Service
 description: O AEM fornece Pastas de bibliotecas do lado do cliente, que permitem armazenar o código do lado do cliente (clientlibs) no repositório, organizá-lo em categorias e definir quando e como cada categoria de código deve ser entregue ao cliente
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
 workflow-type: tm+mt
-source-wordcount: '2551'
+source-wordcount: '2497'
 ht-degree: 1%
 
 ---
@@ -345,7 +345,7 @@ Para obter mais detalhes sobre as opções de GCC, consulte [Documentação do G
 
 A interface do usuário é definida como o minificador padrão no AEM. Para alterar isso para GCC, siga estas etapas.
 
-1. Acesse o Apache Felix Config Manager em (`http://<host>:<portY/system/console/configMgr`)
+1. Acesse o Apache Felix Config Manager em (`http://<host>:<port/system/console/configMgr`)
 1. Localize e edite o **Gerenciador de biblioteca de HTML do Adobe Granite**.
 1. Ativar o **Minify** (se ainda não estiver ativada).
 1. Definir o valor **Configurações padrão do processador JS** para `min:gcc`.
