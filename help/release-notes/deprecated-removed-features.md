@@ -2,10 +2,10 @@
 title: Recursos obsoletos e removidos
 description: Notas de versão específicas para recursos obsoletos e removidos do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: b675ff42eeaeb124e8789480a51684d359429d15
+source-git-commit: b071cf1d88e702dfdf38c18dc94488e94fc4bc21
 workflow-type: tm+mt
-source-wordcount: '2146'
-ht-degree: 74%
+source-wordcount: '2193'
+ht-degree: 73%
 
 ---
 
@@ -59,6 +59,8 @@ Esta seção lista os recursos e funcionalidades que foram removidas do [!DNL Ex
 | [!DNL Foundation] | Suporte para modelos de script JST (pacote OSGi org.apache.sling.scripting.jst) | N/A | Removido |
 | [!DNL Foundation] | Suporte para o quadro de permissões Apache Felix Http | OSGi Http Whiteboard | Março de 2022 |
 | [!DNL Foundation] | Suporte para com.adobe.granite.oauth.server | Integração do Adobe IMS | Março de 2023 |
+| [!DNL Foundation] | Suporte para o recurso org.apache.sling.serviceusermapping para [obter a id de usuário do serviço](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 30/08/24 |
+
 
 ## APIs AEM {#aem-apis}
 
@@ -268,6 +270,17 @@ Veja abaixo uma extensa lista de APIs obsoletas do AEM e a data esperada da remo
     <td>15/05/2023</td>
     <td>15/06/2023</td>
   </tr>
+  <tr>
+    <td>org.slf4j.event	</td>
+    <td>Esta API slf4j interna não é compatível com o AEM as a Cloud Service</td>
+    <td>11/04/2022</td>
+    <td>30/08/2024</td>
+  </tr>
+    <td>org.apache.sling.repoinit.jcr<br>org.apache.sling.repoinit.parser.operations</td>
+    <td>O uso desta API não é compatível com o AEM as a Cloud Service.</td>
+    <td>17/05/2024</td>
+    <td>30/06/2024</td>
+  </tr>  
 </tbody>
 </table>
 </details>
