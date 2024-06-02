@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
 workflow-type: tm+mt
 source-wordcount: '3521'
 ht-degree: 0%
@@ -442,7 +442,7 @@ Saiba como as funções personalizadas usam campos e objetos globais com a ajuda
 
 ![Formulário Contate-nos](/help/forms/assets/contact-us-form.png)
 
-+++ **Caso de uso**: mostrar um painel usando o `SetProperty` regra
++++ Caso de uso: mostrar um painel usando o `SetProperty` regra
 
 Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para definir o campo de formulário como `Required`.
 
@@ -484,9 +484,8 @@ Se houver erros nos campos do `personaldetails` são exibidos no nível do campo
 
 ![Definir propriedade para visualização do formulário](/help/forms/assets/set-property-panel.png)
 
-+++
 
-+++ **Caso de uso**: valide o campo.
+#### Caso de uso: valide o campo.
 
 Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para validar o campo.
 
@@ -525,9 +524,9 @@ Se o usuário digitar um número de telefone válido e todos os campos na variá
 
 ![Padrão de validação do endereço de email](/help/forms/assets/validate-form-preview-form.png)
 
-+++
 
-+++ **Caso de uso**: redefinir um painel
+
+#### Caso de uso: redefinir um painel
 
 Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para redefinir o painel.
 
@@ -559,9 +558,9 @@ Consulte a ilustração abaixo para exibir que, se o usuário clicar no ícone `
 
 ![Redefinir formulário](/help/forms/assets/custom-function-reset-form.png)
 
-+++
 
-+++ **Caso de uso**: para exibir uma mensagem personalizada no nível do campo e marcar o campo como inválido
+
+#### Caso de uso: para exibir uma mensagem personalizada no nível do campo e marcar o campo como inválido
 
 Você pode usar o `markFieldAsInvalid()` função para definir um campo como inválido e definir mensagem de erro personalizada em nível de campo. A variável `fieldIdentifier` o valor pode ser `fieldId`ou `field qualifiedName`ou `field dataRef`. O valor do objeto chamado `option` pode ser `{useId: true}`, `{useQualifiedName: true}`ou `{useDataRef: true}`.
 As sintaxes usadas para marcar um campo como inválido e definir uma mensagem personalizada são:
@@ -602,9 +601,9 @@ Se o usuário inserir mais de 15 caracteres na caixa de texto de comentários, o
 
 ![Marcar campo como formulário de Visualização válido](/help/forms/assets/custom-function-validfield-form.png)
 
-+++
 
-+++ **Caso de uso**: Enviar os dados alterados para o servidor
+
+#### Caso de uso: enviar dados alterados para o servidor
 
 A seguinte linha de código:
 `globals.functions.submitForm(globals.functions.exportData(), false);` é usado para enviar os dados do formulário após manipulação.
@@ -647,9 +646,9 @@ Você também pode inspecionar a janela do console para visualizar os dados envi
 
 ![Dados do Inspect na janela do console](/help/forms/assets/custom-function-submit-data-console-data.png)
 
-+++
 
-+++ **Caso de uso**: substituição de manipuladores de erro e de sucesso no envio do formulário
+
+#### Caso de uso: substituição de manipuladores de erro e de sucesso no envio do formulário
 
 Adicione a seguinte linha de código, conforme explicado na [create-custom-function](#create-custom-function) para personalizar a mensagem de envio ou de falha para envios de formulário e exibir as mensagens de envio de formulário em uma caixa modal:
 
@@ -760,9 +759,8 @@ Caso o manipulador de envio personalizado não seja executado conforme esperado 
 
 <!--
 
-+++
 
-+++ **Use Case**:  Perform actions in a specific instance of the repeatable panel 
+#### Use Case:  Perform actions in a specific instance of the repeatable panel 
 
 Rules created using the visual rule editor on a repeatable panel apply to the last instance of the repeatable panel. To write a rule for a specific instance of the repeatable panel, we can use a custom function.
 
@@ -793,9 +791,9 @@ Let us add a button labeled `Hide` to add a rule to hide a specific panel.
 Refer to the video below to demonstrate that when the `Hide` is clicked, the panel in the second repeatable instance hides:
 
 
-+++
 
-+++ **Usecase**: Pre-fill the field with a value when the form loads
+
+#### **Usecase**: Pre-fill the field with a value when the form loads
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to load the pre-filled value in a field when the form is initialized:
 
@@ -820,9 +818,9 @@ Refer to the screenshot below, which demonstrates that when the form loads, the 
 
 ![Import Data Rule](/help/forms/assets/cg)
 
-+++
 
-+++ **Usecase**: Set focus on the specific field
+
+#### **Usecase**: Set focus on the specific field
 
 Add the following line of code, as explained in the [create-custom-function](#create-custom-function) section, to set focus on the specified field when the `Submit` button is clicked.:
 
