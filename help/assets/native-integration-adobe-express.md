@@ -2,9 +2,9 @@
 title: Integração nativa do AEM Assets com o Adobe Express
 description: A integração nativa do AEM Assets com o Adobe Express permite acessar diretamente os ativos armazenados no AEM Assets na interface do usuário do Adobe Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 8bbf9a2ba8f708a5a03d11bc0388d39b32d4c7b3
+source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,15 @@ Execute as seguintes etapas para começar a usar o AEM Assets no editor de Adobe
 
 1. Abra o aplicativo web Adobe Express.
 
-1. Abra uma nova tela em branco carregando um novo modelo ou projeto ou criando um ativo.
+2. Abra uma nova tela em branco carregando um novo modelo ou projeto ou criando um ativo.
 
-1. Clique em **[!UICONTROL Assets]** disponível no painel de navegação esquerdo. Adobe Express exibe a lista de repositórios que você está autorizado a acessar, juntamente com a lista de ativos e pastas disponíveis no nível raiz.
+3. Clique em **[!UICONTROL Assets]** disponível no painel de navegação esquerdo. Adobe Express exibe a lista de repositórios que você está autorizado a acessar, juntamente com a lista de ativos e pastas disponíveis no nível raiz.
 
-1. Navegue ou pesquise ativos no repositório para arrastar e soltar na tela. Você pode filtrar ativos usando vários filtros disponíveis, como tipo de arquivo, tipo MIME e dimensões.
+4. Navegue ou pesquise ativos no repositório para arrastar e soltar na tela. Você pode filtrar ativos usando vários filtros disponíveis, como tipo de arquivo, tipo MIME e dimensões.
+
+   >[!NOTE]
+   >
+   >O filtro por dimensão não se aplica a vídeos.
 
    ![Incluir ativos do complemento Assets](assets/adobe-express-native-integration.png)
 
@@ -45,23 +49,38 @@ Depois de incorporar as modificações apropriadas na tela Express, você pode s
 
    ![Salvar ativos no AEM](assets/adobe-express-share.png)
 
-1. Selecionar **[!UICONTROL AEM Assets]** do **[!UICONTROL Armazenamento]** seção disponível no painel direito. Adobe Express exibe a caixa de diálogo de upload.
-1. Especifique um nome e um formato para o ativo. Você pode salvar o conteúdo da tela de desenho nos tipos de formato PNG ou JPEG.
+2. Na seção Armazenamento do painel direito, selecione, **AEM Assets**. Adobe Express exibe a caixa de diálogo de upload.
+3. Especifique um nome e um formato para o ativo. Você pode salvar o conteúdo da tela nos formatos PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. O formato se ajusta automaticamente com base no(s) ativo(s).
 
-1. Clique no ícone de pasta adjacente ao **[!UICONTROL Localização]** navegue até o local onde precisa salvar o ativo e clique em **[!UICONTROL Selecionar]**. O nome da pasta é exibido no campo **[!UICONTROL Localização]** campo.
+   >[!NOTE]
+   >
+   >Selecionar &quot;Página atual&quot; salva o arquivo na pasta de destino. Selecionar &quot;Todas as páginas&quot; cria uma nova pasta no seu destino para todos os arquivos que não são de PDF e os salva lá, enquanto os arquivos de PDF são salvos como um único arquivo na pasta de destino.
 
-   ![Salvar ativos no AEM](assets/adobe-express-upload.png)
+4. Clique na área de texto em **Pasta de destino** para selecionar um local e salvar o(s) ativo(s).
 
-1. Opcional: é possível adicionar metadados de campanha para upload usando o **[!UICONTROL Nome do projeto ou da campanha]** campo. Você pode usar um nome existente ou criar um novo. Você pode definir vários nomes de Projeto ou Campanha para o upload. Enquanto estiver digitando um nome, clique em qualquer outro lugar na caixa de diálogo ou pressione a tecla `,` (Vírgula) para registrar o nome.
+   ![Salvar ativos no AEM](/help/assets/assets/page-selection-and-destination-folder.png)
 
-   Como prática recomendada, o Adobe recomenda especificar valores no restante dos campos, bem como criar uma experiência de pesquisa aprimorada para os ativos carregados.
-1. Da mesma forma, defina valores para a variável **[!UICONTROL Palavras-chave]** e **[!UICONTROL Canais]** campos.
+5. Opcional: é possível adicionar metadados de campanha para upload usando o **Nome do projeto ou da campanha** campo. Você pode usar um nome existente ou criar um novo. Você pode definir vários nomes de Projeto ou Campanha para o upload. Para registrar o nome, basta digitar o nome e pressionar Enter.
+Como prática recomendada, o Adobe recomenda especificar valores no restante dos campos, bem como criar uma experiência de pesquisa aprimorada para os ativos carregados.
 
-1. Clique em **[!UICONTROL Carregar]** para fazer upload do ativo para o AEM Assets.
+6. Da mesma forma, defina valores para a variável **[!UICONTROL Palavras-chave]** e **[!UICONTROL Canais]** campos.
+
+7. Clique em **[!UICONTROL Carregar]** para fazer upload do ativo para o AEM Assets.
 
 
 
 
 ## Limitações {#limitations}
 
-Há um erro conhecido enfrentado por alguns usuários com acesso a mais de um repositório do Assets ao salvar um documento com ativos de vários repositórios.
+1. Para importar e exportar, o tipo de arquivo de vídeo compatível é MP4.
+
+2. Para importação de vídeo MP4:
+
+   a) O tamanho máximo de arquivo aceito é de 200 MB. Se esse limite for excedido, uma mensagem de alerta será exibida.
+b) A resolução máxima suportada é de 3840 X 3840 pixels.
+c) Vídeos com planos de fundo transparentes (canal alfa) não são compatíveis.
+
+3. Para exportação de vídeo MP4:
+
+   a) O tamanho máximo de arquivo aceito é de 200 MB. Se esse limite for excedido, uma mensagem de alerta será exibida com uma sugestão alternativa, como mostrado na imagem abaixo
+   ![alerta com solução alternativa](/help/assets/assets/alert-with-workaround.png).
