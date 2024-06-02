@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8f33174ac6b699af34ca8af14387eaca5cae969c
+source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
 workflow-type: tm+mt
-source-wordcount: '3522'
+source-wordcount: '3510'
 ht-degree: 0%
 
 ---
@@ -443,7 +443,7 @@ Saiba como as funções personalizadas usam campos e objetos globais com a ajuda
 
 ![Formulário Contate-nos](/help/forms/assets/contact-us-form.png)
 
-#### Caso de uso: mostrar um painel usando a regra SetProperty
+#### Mostrar um painel usando a regra SetProperty
 
 Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para definir o campo de formulário como `Required`.
 
@@ -486,7 +486,7 @@ Se houver erros nos campos do `personaldetails` são exibidos no nível do campo
 ![Definir propriedade para visualização do formulário](/help/forms/assets/set-property-panel.png)
 
 
-#### Caso de uso: valide o campo.
+#### Validar um campo.
 
 Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para validar o campo.
 
@@ -527,7 +527,7 @@ Se o usuário digitar um número de telefone válido e todos os campos na variá
 
 
 
-#### Caso de uso: redefinir um painel
+#### Redefinir um painel
 
 Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para redefinir o painel.
 
@@ -561,7 +561,7 @@ Consulte a ilustração abaixo para exibir que, se o usuário clicar no ícone `
 
 
 
-#### Caso de uso: para exibir uma mensagem personalizada no nível do campo e marcar o campo como inválido
+#### Para exibir uma mensagem personalizada no nível do campo e marcar o campo como inválido
 
 Você pode usar o `markFieldAsInvalid()` função para definir um campo como inválido e definir mensagem de erro personalizada em nível de campo. A variável `fieldIdentifier` o valor pode ser `fieldId`ou `field qualifiedName`ou `field dataRef`. O valor do objeto chamado `option` pode ser `{useId: true}`, `{useQualifiedName: true}`ou `{useDataRef: true}`.
 As sintaxes usadas para marcar um campo como inválido e definir uma mensagem personalizada são:
@@ -604,7 +604,7 @@ Se o usuário inserir mais de 15 caracteres na caixa de texto de comentários, o
 
 
 
-#### Caso de uso: enviar dados alterados para o servidor
+#### Alterar dados capturados antes de enviá-los
 
 A seguinte linha de código:
 `globals.functions.submitForm(globals.functions.exportData(), false);` é usado para enviar os dados do formulário após manipulação.
@@ -649,7 +649,7 @@ Você também pode inspecionar a janela do console para visualizar os dados envi
 
 
 
-#### Caso de uso: substituição de manipuladores de erro e de sucesso no envio do formulário
+#### Substituir mensagens de erro e de sucesso no envio do formulário
 
 Adicione a seguinte linha de código, conforme explicado na [create-custom-function](#create-custom-function) para personalizar a mensagem de envio ou de falha para envios de formulário e exibir as mensagens de envio de formulário em uma caixa modal:
 
