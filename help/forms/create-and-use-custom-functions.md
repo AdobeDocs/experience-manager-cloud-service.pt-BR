@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 mini-toc-levels: 4
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 4cd7924e99809146e111f6b3309db0a8292e61b1
+source-git-commit: 6f50bdf2a826654e0d5b35de5bd50e66981fb56a
 workflow-type: tm+mt
-source-wordcount: '3510'
+source-wordcount: '3513'
 ht-degree: 0%
 
 ---
@@ -649,7 +649,7 @@ Você também pode inspecionar a janela do console para visualizar os dados envi
 
 
 
-#### Substituir mensagens de erro e de sucesso no envio do formulário
+#### Substituir as mensagens de erro e de sucesso do envio para seu formulário adaptável
 
 Adicione a seguinte linha de código, conforme explicado na [create-custom-function](#create-custom-function) para personalizar a mensagem de envio ou de falha para envios de formulário e exibir as mensagens de envio de formulário em uma caixa modal:
 
