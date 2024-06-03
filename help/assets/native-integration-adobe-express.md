@@ -2,9 +2,9 @@
 title: Integração nativa do AEM Assets com o Adobe Express
 description: A integração nativa do AEM Assets com o Adobe Express permite acessar diretamente os ativos armazenados no AEM Assets na interface do usuário do Adobe Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
+source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -49,26 +49,19 @@ Depois de incorporar as modificações apropriadas na tela Express, você pode s
 
    ![Salvar ativos no AEM](assets/adobe-express-share.png)
 
-2. Na seção Armazenamento do painel direito, selecione, **AEM Assets**. Adobe Express exibe a caixa de diálogo de upload.
-3. Especifique um nome e um formato para o ativo. Você pode salvar o conteúdo da tela nos formatos PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. O formato se ajusta automaticamente com base no(s) ativo(s).
-
-   >[!NOTE]
-   >
-   >Selecionar &quot;Página atual&quot; salva o arquivo na pasta de destino. Selecionar &quot;Todas as páginas&quot; cria uma nova pasta no seu destino para todos os arquivos que não são de PDF e os salva lá, enquanto os arquivos de PDF são salvos como um único arquivo na pasta de destino.
-
-4. Clique na área de texto em **Pasta de destino** para selecionar um local e salvar o(s) ativo(s).
+2. Na seção Armazenamento do painel direito, selecione **AEM Assets**. Adobe Express exibe a caixa de diálogo de upload.
+3. Selecione **Página atual** ou **Todas as páginas** opção de gravação. Selecionar **Página atual** O salva o arquivo na pasta de destino. No entanto, ao selecionar **Todas as páginas** O cria uma nova pasta no destino para todos os arquivos que não sejam PDF e os salva como arquivos separados, enquanto os arquivos PDF são salvos como um único arquivo na pasta de destino.
+4. Especifique um nome e um formato para o ativo. Você pode salvar o conteúdo da tela nos formatos PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. O formato se ajusta automaticamente com base no(s) ativo(s).
+5. Clique no ícone de pasta em **Pasta de destino** para selecionar um local e salvar o(s) ativo(s).
 
    ![Salvar ativos no AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. Opcional: é possível adicionar metadados de campanha para upload usando o **Nome do projeto ou da campanha** campo. Você pode usar um nome existente ou criar um novo. Você pode definir vários nomes de Projeto ou Campanha para o upload. Para registrar o nome, basta digitar o nome e pressionar Enter.
+6. Opcional: é possível adicionar metadados de campanha para upload usando o **Nome do projeto ou da campanha** campo. Você pode usar um nome existente ou criar um novo. Você pode definir vários nomes de Projeto ou Campanha para o upload. Para registrar o nome, basta digitar o nome e pressionar Enter.
 Como prática recomendada, o Adobe recomenda especificar valores no restante dos campos, bem como criar uma experiência de pesquisa aprimorada para os ativos carregados.
 
-6. Da mesma forma, defina valores para a variável **[!UICONTROL Palavras-chave]** e **[!UICONTROL Canais]** campos.
+7. Da mesma forma, defina valores para a variável **[!UICONTROL Palavras-chave]** e **[!UICONTROL Canais]** campos.
 
-7. Clique em **[!UICONTROL Carregar]** para fazer upload do(s) ativo(s) no AEM Assets.
-
-
-
+8. Clique em **[!UICONTROL Carregar]** para fazer upload do(s) ativo(s) no AEM Assets.
 
 ## Limitações {#limitations}
 
@@ -76,11 +69,13 @@ Como prática recomendada, o Adobe recomenda especificar valores no restante dos
 
 2. Para importação de vídeo MP4:
 
-   a) O tamanho máximo de arquivo aceito é de 200 MB. Se esse limite for excedido, uma mensagem de alerta será exibida.
-b) A resolução máxima suportada é de 3840 X 3840 pixels.
-c) Vídeos com planos de fundo transparentes (canal alfa) não são compatíveis.
+   1. O tamanho máximo de arquivo aceito é 200 MB. Se esse limite for excedido, uma mensagem de alerta será exibida.
+   2. A resolução máxima suportada é de 3840 X 3840 pixels.
+   3. Vídeos com planos de fundo transparentes (canal alfa) não são compatíveis.
 
 3. Para exportação de vídeo MP4:
 
-   a) O tamanho máximo de arquivo aceito é de 200 MB. Se esse limite for excedido, uma mensagem de alerta será exibida com uma sugestão alternativa, como mostrado na imagem abaixo.
-   ![alerta com solução alternativa](/help/assets/assets/alert-with-workaround.png)
+   1. O tamanho máximo de arquivo aceito é 200 MB. Se esse limite for excedido, um alerta sugere cortar o vídeo para 200 MB ou menos, ou carregá-lo manualmente na pasta de destino do AEM Assets após baixá-lo.
+
+
+
