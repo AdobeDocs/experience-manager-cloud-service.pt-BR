@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: b6061690fa278ccb883656cefd065d06ab924499
+source-git-commit: f8fc51051393ef154e02391843fe1e73e6194e6f
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 11%
+source-wordcount: '1847'
+ht-degree: 10%
 
 ---
 
@@ -211,10 +211,12 @@ Semelhante ao AEM 6.5, o Apache/Dispatcher assimilará mapas de regravação col
 
 O CDN gerenciado por Adobe agora é compatível [ESI (Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para a montagem de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página de HTML geral na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-#### Serviço de dados de monitoramento de uso real (RUM) (Early Adoter Program)
+#### Serviço de dados de monitoramento de usuário real (RUM) (Early Adoter Program)
 
-* **O Serviço de dados de monitoramento de uso real (RUM) agora está em disponibilidade geral (/help/implementing/cloud-manager/content-requests.md#real-use-monitoring-for-aem-as-a-cloud-service)** permitindo a coleta de dados no lado do cliente para o AEM as a Cloud Service.
-O serviço de monitoramento de uso real , a coleção no lado do cliente, oferece um reflexo mais preciso das interações, garantindo uma medida confiável do engajamento do site. Ele permite que os clientes com insights avançados sobre o tráfego e o desempenho da página. É uma ótima oportunidade para saber mais sobre o desempenho da sua página e obter insights para melhorá-la.
+* **[Você pode aproveitar o Serviço de dados de monitoramento de usuário real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para ativar a coleta no lado do cliente para o AEM as a Cloud Service.
+O Serviço de dados de monitoramento de usuário real (RUM) oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. É uma ótima oportunidade para obter insights avançados sobre o desempenho da página. Embora isso seja benéfico para clientes que usam CDN gerenciada por Adobe ou CDN não gerenciada por Adobe. Além disso, para clientes que usam um CDN não gerenciado por Adobe, o relatório de tráfego automatizado agora pode ser ativado para eles, eliminando a necessidade de compartilhar qualquer relatório de tráfego com o Adobe.
+
+  Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-rum-adopter@adobe.com`, juntamente com o nome de domínio para cada um dos ambientes para os quais você deseja habilitar o RUM, a partir do seu endereço de email associado à sua Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de usuário real (RUM) para você.
 
 ## [!DNL Experience Manager] Guias {#guides}
 
