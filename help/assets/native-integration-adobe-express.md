@@ -2,7 +2,7 @@
 title: Integração nativa do AEM Assets com o Adobe Express
 description: A integração nativa do AEM Assets com o Adobe Express permite acessar diretamente os ativos armazenados no AEM Assets na interface do usuário do Adobe Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
+source-git-commit: c6cde0a3f5a1513f8158c654167ec0332e4c42a7
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Depois de incorporar as modificações apropriadas na tela Express, você pode s
 
 4. Clique na área de texto em **Pasta de destino** para selecionar um local e salvar o(s) ativo(s).
 
-   ![Salvar ativos no AEM](/help/assets/assets/page-selection-and-destination-folder.png)
+   ![Salvar ativos no AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
 5. Opcional: é possível adicionar metadados de campanha para upload usando o **Nome do projeto ou da campanha** campo. Você pode usar um nome existente ou criar um novo. Você pode definir vários nomes de Projeto ou Campanha para o upload. Para registrar o nome, basta digitar o nome e pressionar Enter.
 Como prática recomendada, o Adobe recomenda especificar valores no restante dos campos, bem como criar uma experiência de pesquisa aprimorada para os ativos carregados.
@@ -82,5 +82,5 @@ c) Vídeos com planos de fundo transparentes (canal alfa) não são compatíveis
 
 3. Para exportação de vídeo MP4:
 
-   a) O tamanho máximo de arquivo aceito é de 200 MB. Se esse limite for excedido, uma mensagem de alerta será exibida com uma sugestão alternativa, como mostrado na imagem abaixo
-   ![alerta com solução alternativa](/help/assets/assets/alert-with-workaround.png).
+   a) O tamanho máximo de arquivo aceito é de 200 MB. Se esse limite for excedido, uma mensagem de alerta será exibida com uma sugestão alternativa, como mostrado na imagem abaixo.
+   ![alerta com solução alternativa](/help/assets/assets/alert-with-workaround.png)
