@@ -2,9 +2,9 @@
 title: Integração nativa do AEM Assets com o Adobe Express
 description: A integração nativa do AEM Assets com o Adobe Express permite acessar diretamente os ativos armazenados no AEM Assets na interface do usuário do Adobe Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 69d890eaae30468db89b9aff975a2a421f53fcff
+source-git-commit: 9044d5cefe7064a015c18c988e29b8c2e8088bae
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Como prática recomendada, o Adobe recomenda especificar valores no restante dos
 
 6. Da mesma forma, defina valores para a variável **[!UICONTROL Palavras-chave]** e **[!UICONTROL Canais]** campos.
 
-7. Clique em **[!UICONTROL Carregar]** para fazer upload do ativo para o AEM Assets.
+7. Clique em **[!UICONTROL Carregar]** para fazer upload do(s) ativo(s) no AEM Assets.
 
 
 
