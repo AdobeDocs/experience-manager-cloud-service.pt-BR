@@ -2,10 +2,10 @@
 title: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notas da versão de manutenção mais recentes do [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 558babc0124a8ee8c1337b91c5ef016ed238c935
+source-git-commit: 624ba716cb2ec2a45b0ed70516d0b2ad1db94912
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 37%
+source-wordcount: '353'
+ht-degree: 35%
 
 ---
 
@@ -31,11 +31,13 @@ A Ativação de recursos 2024.6.0 fornecerá o conjunto completo de recursos par
 
 ### Problemas corrigidos {#fixed-issues-16544}
 
-* DXML-17171: Guias AEM: a operação de copiar e colar de tópicos que excedem 15 KB falha com um erro inesperado.
-* DXML-17088: Guias AEM: a funcionalidade para alterar o estado do documento de **Propriedades do arquivo** O painel não está funcionando corretamente e as alterações na *Rascunho* estado.
-* DXML-16931: Guias AEM: Imagens vinculadas dos tópicos não aparecem na linha de base após a criação da versão.
-* DXML-16896: Guias AEM: painéis de conteúdo reutilizáveis não listam elementos quando a variável **Preferências do usuário** estão configurados para exibir arquivos por **Nome do arquivo**.
 * GRANITE-51375: idp-sync lança NPE se nenhum caminho intermediário for especificado.
+* GUIDES-17171: A operação de copiar e colar de tópicos que excedem 15 KB falha com um erro inesperado.
+* GUIDES-17088: A funcionalidade para alterar o estado do documento de **Propriedades do arquivo** O painel não está funcionando corretamente e as alterações na *Rascunho* estado.
+* GUIDES-16931: Imagens vinculadas dos tópicos não são exibidas na linha de base após a criação da versão.
+* GUIDES-16896: Painéis de conteúdo reutilizáveis não listam elementos quando o **Preferências do usuário** estão configurados para exibir arquivos por **Nome do arquivo**.
+
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nos Guias do Experience Manager, consulte [Roteiro de versão dos Guias do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conhecidos {#known-issues-16544}
 
