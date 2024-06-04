@@ -3,10 +3,10 @@ title: Saiba como pesquisar e descobrir ativos no [!DNL Assets view]?
 description: Saiba como pesquisar e descobrir ativos na visualização do AEM Assets. A eficiente funcionalidade de pesquisa permite descobrir rapidamente o ativo apropriado e ajuda a melhorar a velocidade do conteúdo.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: e706ee7228aeb08c99567f607a3435d9f687ef34
+source-git-commit: 4313f2bdfe78457204e26069f3af4bda3f5902e7
 workflow-type: tm+mt
-source-wordcount: '1852'
-ht-degree: 91%
+source-wordcount: '1908'
+ht-degree: 92%
 
 ---
 
@@ -311,15 +311,13 @@ O vídeo a seguir ilustra o processo completo, desde o acesso à interface da pe
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428407)
 
-<!--
-### Disable Contextual Search {#disable-contextual-search}
+### Desabilitar pesquisa contextual {#disable-contextual-search}
 
-Administrators also have the option to disable Contextual Search for users in your organization. To do so, execute the following steps:
+Admins também têm a opção de desabilitar a pesquisa contextual para usuários da organização. Para desabilitá-la, siga estas etapas:
 
-1. Navigate to **[!UICONTROL Settings]** > **[!UICONTROL General Settings]**.
+1. Navegue até **[!UICONTROL Configurações]** > **[!UICONTROL Configurações gerais]**.
 
-1. In the [!UICONTROL Contextual Search] section, turn off the **[!UICONTROL Enable Contextual Search for your organization]** toggle to disable the Contextual Search feature for all users in your organization.  
--->
+1. Na seção [!UICONTROL Pesquisa contextual], desative o botão **[!UICONTROL Habilitar pesquisa contextual para a organização]** para desabilitar o recurso de pesquisa contextual para todos os usuários da organização.
 
 ### Feedback da pesquisa contextual {#contextual-search-feedback}
 
