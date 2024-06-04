@@ -3,7 +3,7 @@ title: Saiba como pesquisar e descobrir ativos no [!DNL Assets view]?
 description: Saiba como pesquisar e descobrir ativos na visualização do AEM Assets. A eficiente funcionalidade de pesquisa permite descobrir rapidamente o ativo apropriado e ajuda a melhorar a velocidade do conteúdo.
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
-source-git-commit: 4313f2bdfe78457204e26069f3af4bda3f5902e7
+source-git-commit: f476088e13466e1c41368112fb161bcbeee2c5cd
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 92%
@@ -331,6 +331,6 @@ Se precisar fornecer feedback sobre o recurso Pesquisa contextual, clique em ![�
 
 * Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 
-* Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
+* Forneça feedback sobre a documentação por meio das opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita.
 
 * Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&amp;lang=pt-BR#support)
