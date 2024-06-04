@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 5247a06f15a3edd34a419f9d64aa0590b43c1612
+source-git-commit: fae92c9a41d866fd89ffb6fa10191fae4033037c
 workflow-type: tm+mt
-source-wordcount: '1763'
-ht-degree: 11%
+source-wordcount: '1865'
+ht-degree: 10%
 
 ---
 
@@ -218,7 +218,12 @@ O serviço de monitoramento de uso real , a coleção no lado do cliente, oferec
 
 ## [!DNL Experience Manager] Guias {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2404-release/whats-new-2024-04-0).
+* **Publicar um tópico ou seus elementos em um fragmento de experiência**
+Agora, os Guias de Experience Manager permitem publicar um tópico ou seus elementos em um Fragmento de experiência. Um Fragmento de experiência é uma unidade de conteúdo modular que integra conteúdo e layout.  Fragmentos de experiência são instrumentais e podem ajudar você a criar experiências consistentes e envolventes.
+* **Capacidade de transmitir os metadados de ativo de tópico para saída de PDF nativo**
+Você pode adicionar os metadados do ativo do tópico enquanto gera a saída de PDF nativo. Esse recurso ajuda você a adicionar metadados específicos para diferentes tópicos, como o título do tópico e o autor, aos cabeçalhos e rodapés da página de tópico.
+
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos na versão, consulte o [Roteiro de versão dos Guias do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
