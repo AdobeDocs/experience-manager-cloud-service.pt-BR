@@ -2,9 +2,12 @@
 title: Uso do Git com o Cloud Manager
 description: Saiba como usar os repositórios Git do Cloud Manager e como integrar seu próprio repositório Git local gerenciado pelo cliente com o Cloud Manager.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
-workflow-type: ht
-source-wordcount: '316'
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+workflow-type: tm+mt
+source-wordcount: '309'
 ht-degree: 100%
 
 ---

@@ -2,7 +2,9 @@
 title: Introdução ao SPA no AEM usando o Angular
 description: Este artigo apresenta uma amostra de aplicativo SPA, explica como ele é montado e permite que você comece a usar seu próprio SPA rapidamente usando a estrutura do Angular.
 exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 6%
@@ -88,7 +90,7 @@ module.exports = {
 };
 ```
 
-### Criação {#building}
+### Compilação {#building}
 
 Criar realmente os usos do aplicativo [Webpack](https://webpack.js.org/) para tradução, além do aem-clientlib-generator para criação automática da biblioteca do cliente. Portanto, o comando build será semelhante a:
 

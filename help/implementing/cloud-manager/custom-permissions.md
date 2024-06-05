@@ -2,10 +2,13 @@
 title: Permissões personalizadas
 description: Saiba como você pode usar permissões personalizadas para criar perfis de permissão personalizados com permissões configuráveis para restringir o acesso a programas, pipelines e ambientes para usuários do Cloud Managers.
 exl-id: 167da985-7f19-45b3-90a3-884817907da2
-source-git-commit: 3891a55ff48f48de4e55e0229e9f76e5bf500cb3
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 38%
+ht-degree: 41%
 
 ---
 
@@ -16,7 +19,7 @@ Saiba como você pode usar permissões personalizadas para criar perfis de permi
 
 ## Introdução {#introduction}
 
-O Cloud Manager tem um conjunto de funções predefinidas que controlam o acesso a vários recursos do Cloud Manager:
+O Cloud Manager possui um conjunto de funções predefinidas que controlam o acesso a vários de seus recursos:
 
 * Proprietário da empresa
 * Gerenciador de programas
@@ -83,7 +86,7 @@ Agora que você tem um novo perfil de produto, é possível atribuir permissões
 1. A variável **Editar permissão** é aberta.
    * A permissão selecionada na etapa anterior é selecionada na coluna à esquerda.
    * Os itens de permissão disponíveis para atribuição estão na coluna do meio rotulada **Itens de permissão disponíveis**.
-   * Os itens de permissão atribuídos estão na coluna direita identificada **Itens de permissão incluídos**.
+   * Os itens de permissões atribuídos estão na coluna à direita rotulada **Itens de permissão incluídos**.
 
    ![Editar itens de permissão](assets/edit-permission-items.png)
 
@@ -137,7 +140,7 @@ As seguintes permissões estão disponíveis para criar perfis personalizados.
 | Criar repositório | Permitir que os usuários criem repositórios Git |
 | Exclusão de repositório | Permitir que usuários excluam repositórios Git |
 | Edição de repositório | Permitir que usuários editem repositórios Git |
-| Geração de códigos do repositório | Permitir que os usuários gerem projetos a partir do arquétipo |
+| Geração de códigos do repositório | Permitir que usuários gerem projetos a partir do arquétipo |
 | Gerenciar nome de domínio | Permitir que os usuários criem/editem/excluam nomes de domínio |
 | Gerenciar Inclui na lista de permissões IP | Permitir que os usuários criem/editem/excluam a vinculação de incluir na lista de permissões inclui na lista de permissões de IP e de IP |
 | Gerenciamento de infraestrutura de rede | Permitir que os usuários criem/editem/excluam a infraestrutura de rede |
@@ -201,7 +204,7 @@ Os perfis de produto padrão e as funções do Cloud Manager continuarão funcio
 
 ### Posso editar os perfis de permissão predefinidos?
 
-Não, os perfis padrão não são editáveis. Não é possível adicionar ou remover permissões do perfil de permissão padrão. Você só pode adicionar ou remover usuários de perfis predefinidos.
+Não, os perfis padrão não são editáveis. Não é possível adicionar ou remover permissões do perfil de permissões padrão. Você só pode adicionar ou remover usuários de perfis predefinidos.
 
 ### Devo excluir os perfis de permissão predefinidos, já que os perfis personalizados estão disponíveis?
 

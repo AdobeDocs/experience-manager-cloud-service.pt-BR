@@ -2,10 +2,12 @@
 title: Ferramenta Migração de fluxo de trabalho de ativos
 description: Ferramenta Migração de fluxo de trabalho de ativos
 exl-id: a95caf5e-e6b2-463f-bebd-b791104fd25c
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 73%
+source-wordcount: '262'
+ht-degree: 72%
 
 ---
 

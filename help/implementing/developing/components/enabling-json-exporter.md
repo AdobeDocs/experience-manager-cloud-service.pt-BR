@@ -2,7 +2,9 @@
 title: Ativação de exportação em JSON para um componente
 description: Os componentes podem ser adaptados para gerar a exportação JSON de seu conteúdo com base em uma estrutura de modelador.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 6%

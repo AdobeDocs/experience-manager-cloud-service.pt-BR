@@ -2,7 +2,9 @@
 title: Arquitetura do Editor universal
 description: Saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 83%

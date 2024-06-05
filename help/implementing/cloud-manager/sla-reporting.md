@@ -2,7 +2,10 @@
 title: Relatórios de SLA
 description: Saiba como visualizar o desempenho do seu ambiente de produção do AEM em relação ao acordo de nível de serviço (SLA).
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
-source-git-commit: a0f80a363cb47be9e3d8f7fa96ea3068eb077d42
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 52%

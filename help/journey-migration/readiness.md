@@ -2,7 +2,9 @@
 title: Fase de preparação
 description: Saiba mais sobre as etapas necessárias para garantir que a instalação do AEM esteja pronta para ser movida para a nuvem.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1900'
 ht-degree: 6%
@@ -139,7 +141,7 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   </tr>
   <tr>
     <td>Configurações e armazenamento em cache do Dispatcher</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html">Dispatcher na nuvem</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Gerenciamento de cache<br></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/disp-overview.html?lang=pt-BR">Dispatcher na nuvem</a><br><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/caching.html#other-content">Gerenciamento de cache<br></td>
     <td>As configurações do Dispatcher devem seguir uma estrutura específica.<br>As configurações devem ser gerenciadas como parte do código e implantadas por meio do pipeline do Cloud Manager.</td>
   </tr>
   <tr>

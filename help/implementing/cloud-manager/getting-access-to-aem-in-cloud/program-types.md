@@ -2,7 +2,10 @@
 title: Programas e tipos de programas
 description: Saiba mais sobre a hierarquia do Cloud Manager e como os diferentes tipos de programas se encaixam em sua estrutura e a diferença entre eles.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 91%

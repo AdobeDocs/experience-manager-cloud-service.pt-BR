@@ -2,9 +2,11 @@
 title: Modelo dinâmico para mapeamento de componentes para SPA
 description: Este artigo descreve como o modelo dinâmico para mapeamento de componentes ocorre no SDK SPA do JavaScript para AEM.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---

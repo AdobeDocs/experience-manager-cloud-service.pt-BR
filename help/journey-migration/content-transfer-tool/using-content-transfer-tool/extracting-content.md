@@ -2,7 +2,9 @@
 title: Extrair conteúdo da origem
 description: Saiba como extrair conteúdo de uma instância do Adobe Experience Manager (AEM) de origem para transferi-lo posteriormente para uma instância do Cloud Service AEM.
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 858e10f99e2015a1488bb9e1d0990a553c5f6d04
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 19%

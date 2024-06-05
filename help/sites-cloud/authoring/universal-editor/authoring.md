@@ -2,10 +2,13 @@
 title: Criação de conteúdo com o Editor universal
 description: Saiba como é fácil e intuitivo para os autores criarem conteúdo utilizando o Editor universal.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2313'
-ht-degree: 35%
+ht-degree: 36%
 
 ---
 
@@ -84,7 +87,7 @@ Exibe a organização na qual você está conectado no momento. Selecione para a
 
 #### Soluções {#solutions}
 
-Tocar ou clicar no alternador de soluções permite que você vá rapidamente para outras soluções Experience Cloud.
+Tocar ou clicar no alternador de soluções permite acessar rapidamente as outras soluções da Experience Cloud.
 
 ![Alternador de soluções](assets/solutions.png)
 
@@ -102,7 +105,7 @@ Esse ícone é marcado com o número de [notificações](/help/implementing/clou
 
 #### Propriedades do usuário {#user-properties}
 
-Selecione o ícone que representa seu usuário para acessar as configurações do usuário. Se você não tiver uma imagem do usuário configurada, um ícone é atribuído aleatoriamente.
+Clique no ícone que representa seu usuário para acessar as configurações de usuário. Se você não tiver uma imagem de usuário configurada, um ícone será atribuído aleatoriamente.
 
 ![Propriedades do usuário](assets/user-properties.png)
 

@@ -2,7 +2,10 @@
 title: Saiba mais sobre as noções básicas de criação
 description: Saiba mais sobre os conceitos e os mecanismos de criação de conteúdo para seu CMS headless usando Fragmentos de conteúdo.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1a4c5e618adaef99d82a00e1118d1a0f8536fc14
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 83%

@@ -2,7 +2,10 @@
 title: Definição das configurações de DNS
 description: Saiba como definir configurações de DNS para seus nomes de domínio personalizados.
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 92%

@@ -2,7 +2,9 @@
 title: Configuração de redes avançadas para o AEM as a Cloud Service
 description: Saiba como configurar recursos avançados de rede, como VPN ou um endereço IP de saída flexível ou dedicado para o AEM as a Cloud Service.
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3e8a1a8a48fc5ec6bff71062ff740acf98d743d2
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '5332'
 ht-degree: 24%

@@ -2,7 +2,10 @@
 title: Noções básicas sobre solicitações de conteúdo Cloud Service
 description: Se você adquiriu licenças de solicitação de conteúdo do Adobe, saiba mais sobre os tipos de solicitações de conteúdo que o Adobe Experience Cloud as a Service mede e as variações com as ferramentas de relatório de análise de uma organização.
 exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2688'
 ht-degree: 5%

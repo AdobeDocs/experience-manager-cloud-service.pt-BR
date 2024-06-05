@@ -2,7 +2,10 @@
 title: Hibernação cancelamento da hibernação em ambientes de sandbox
 description: Saiba como os ambientes de um programa de sandbox entram automaticamente em um modo de hibernação e como você pode removê-los.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 84%

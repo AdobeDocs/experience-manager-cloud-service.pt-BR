@@ -2,7 +2,9 @@
 title: Exportador JSON para serviços de conteúdo
 description: Os Serviços de conteúdo AEM são projetados para generalizar a descrição e a entrega de conteúdo de/para AEM além de um foco em páginas da Web. Eles fornecem a entrega de conteúdo para canais que não são páginas da Web tradicionais do AEM, usando métodos padronizados que podem ser consumidos por qualquer cliente.
 exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 17%

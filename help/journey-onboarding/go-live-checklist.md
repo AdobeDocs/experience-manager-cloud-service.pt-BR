@@ -1,13 +1,15 @@
 ---
 title: Lista de verificação de ativação
 description: Saiba mais sobre todos os elementos que precisam estar em vigor para ter uma ativação bem-sucedida com o AEM as a Cloud Service
-source-git-commit: 4a03e2fe3519fd9e0d8d646526ea6c9cc6637f52
+exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 4%
 
 ---
-
 
 # Lista de verificação de ativação {#Go-Live-Checklist}
 

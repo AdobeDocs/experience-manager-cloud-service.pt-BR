@@ -2,10 +2,12 @@
 title: Componente de página SPA
 description: Em um SPA, o componente de página não fornece os elementos de HTML de seus componentes filhos, mas delega isso à estrutura do SPA. Este documento explica como isso torna o componente de página de um SPA exclusivo.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '602'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +30,7 @@ Não se esqueça de limitar a inclusão do `cq.authoring.pagemodel.messaging` ca
 
 O tipo de dados de comunicação é definido como um elemento HTML dentro do componente Página AEM usando o `data-cq-datatype` atributo. Quando o tipo de dados de comunicação é definido como JSON, as solicitações do GET atingem os pontos de extremidade do Modelo Sling de um componente. Depois que uma atualização ocorre no editor de páginas, a representação JSON do componente atualizado é enviada para a biblioteca do Modelo de página. A biblioteca Modelo de página avisa o SPA sobre atualizações.
 
-**Componente de página SPA -`body.html`**
+**Componente de página do SPA -`body.html`**
 
 ```
 <div id="page"></div>
@@ -36,7 +38,7 @@ O tipo de dados de comunicação é definido como um elemento HTML dentro do com
 
 Além de ser uma boa prática para não atrasar a geração de DOM, a estrutura SPA requer que os scripts sejam adicionados ao final do corpo.
 
-**Componente de página SPA -`customfooterlibs.html`**
+**Componente de página do SPA -`customfooterlibs.html`**
 
 ```
 <sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"></sly>
@@ -47,7 +49,7 @@ Além de ser uma boa prática para não atrasar a geração de DOM, a estrutura 
 
 As propriedades do meta recursos que descrevem o conteúdo SPA:
 
-**Componente de página SPA -`customheaderlibs.html`**
+**Componente de página do SPA -`customheaderlibs.html`**
 
 ```
 <meta property="cq:datatype" data-sly-test="${wcmmode.edit || wcmmode.preview}" content="JSON"/>

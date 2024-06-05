@@ -2,7 +2,9 @@
 title: Geração de tokens de acesso para APIs do lado do servidor
 description: Saiba como facilitar a comunicação entre um servidor de terceiros e o AEM as a Cloud Service gerando um token JWT seguro
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%

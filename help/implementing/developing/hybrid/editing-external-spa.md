@@ -2,10 +2,12 @@
 title: Edição de um SPA externo no AEM
 description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2418'
-ht-degree: 2%
+source-wordcount: '2374'
+ht-degree: 1%
 
 ---
 
@@ -153,7 +155,7 @@ A variável `initializationAsync` pode, opcionalmente, aceitar uma `options` obj
 
 Depois que os componentes autoráveis do React forem criados, você poderá usá-los em todo o aplicativo.
 
-Vamos ver um exemplo de página em que você deve adicionar um texto do projeto SPA WKND. Neste exemplo, você deseja exibir o texto &quot;Olá, mundo!&quot; ligado `/content/wknd-spa-react/us/en/home.html`.
+Vamos ver um exemplo de página em que você deve adicionar um texto do projeto SPA WKND. Neste exemplo, você deseja exibir o texto &quot;Olá, mundo!&quot; em `/content/wknd-spa-react/us/en/home.html`.
 
 1. Determine o caminho do nó a ser exibido.
 
@@ -369,7 +371,7 @@ O material de referência a seguir pode ser útil para entender o SPA no context
 * [Headful e Headless no AEM](/help/implementing/developing/headful-headless.md)
 * [O Arquétipo do Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
 * [O projeto SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR)
-* [Introdução a SPAs no AEM usando o React](/help/implementing/developing/hybrid/getting-started-react.md)
+* [Introdução ao SPA no AEM usando o React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Materiais de referência de SPA (referências de API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [Blueprint SPA e PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [Roteamento de modelo SPA](/help/implementing/developing/hybrid/routing.md)

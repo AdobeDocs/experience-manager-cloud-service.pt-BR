@@ -1,13 +1,16 @@
 ---
 title: Configurar o contêiner de layout e o modo de layout
 description: Saiba como configurar o contêiner de layout e o modo de layout para ativar layouts responsivos para seus autores de conteúdo.
-source-git-commit: a868bf4d4acf4fbae7ccaf55b03319ba0617f9a4
+exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
+solution: Experience Manager Sites
+feature: Administering
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
 
 ---
-
 
 # Configurar o contêiner de layout e o modo de layout {#configuring-layout-container-and-layout-mode}
 

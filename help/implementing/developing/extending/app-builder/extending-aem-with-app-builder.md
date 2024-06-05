@@ -2,9 +2,11 @@
 title: Extensão [!DNL Adobe Experience Manager] as a Cloud Service usando o Construtor de aplicativos da Adobe Developer.
 description: Extensão [!DNL Adobe Experience Manager] as a Cloud Service usando o Construtor de aplicativos da Adobe Developer.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---

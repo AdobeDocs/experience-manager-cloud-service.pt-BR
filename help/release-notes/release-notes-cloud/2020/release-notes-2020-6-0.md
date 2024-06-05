@@ -2,10 +2,12 @@
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.6.0
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.6.0."
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 94%
+source-wordcount: '1939'
+ht-degree: 92%
 
 ---
 
@@ -17,7 +19,7 @@ Esta página descreve as Notas de versão gerais do Experience Manager as a Clou
 
 A data de lançamento do [!DNL Experience Manager] as a Cloud Service 2020.6.0 é 4 de junho de 2020.
 
-## Novidades no AEM Sites {#aem-sites}
+## Novidades do AEM Sites {#aem-sites}
 
 Consulte esta seção para saber mais sobre as novidades e atualizações do AEM Sites no AEM as a Cloud Service, versão 2020.6.0.
 
@@ -46,7 +48,7 @@ A versão 2.9.0 dos [Componentes principais](https://experienceleague.adobe.com/
 
 * Melhorias em leitores de tela.
 
-## Novidades nos componentes de base do AEM as a Cloud Service {#foundations}
+## O que há de novo nos componentes de base do AEM as a Cloud Service {#foundations}
 
 Os tempos de criação do projeto AEM melhorarão com a remoção de todas as referências ao repositório remoto no pom.xml do projeto AEM `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 

@@ -2,10 +2,12 @@
 title: Visão geral do Analisador de práticas recomendadas
 description: Saiba como usar o Analisador de práticas recomendadas para avaliar a adesão da implementação do AEM às práticas recomendadas
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 65%
+ht-degree: 61%
 
 ---
 
@@ -22,7 +24,7 @@ Essa ferramenta gera um relatório que identifica áreas de refatoração potenc
 
 ## Relatório do Analisador de práticas recomendadas {#bpa-report}
 
-O relatório do Analisador de Práticas Recomendadas é usado para obter um alto nível de compreensão da preparação geral para a atualização. O relatório consiste em conclusões em categorias de problemas que devem ser abordados antes de uma implantação bem-sucedida no AEM as a Cloud Service.
+O Relatório do Analisador de práticas recomendadas é usado para obter um alto nível de compreensão da disponibilidade geral para atualização. O relatório consiste em conclusões em categorias de problemas que devem ser abordados antes de uma implantação bem-sucedida no AEM as a Cloud Service.
 
 O relatório Analisador de práticas recomendadas inclui as seguintes categorias:
 

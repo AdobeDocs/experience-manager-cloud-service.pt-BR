@@ -2,7 +2,10 @@
 title: Trabalhar com fluxos de trabalho
 description: Os fluxos de trabalho no AEM permitem automatizar uma série de etapas executadas em uma página ou ativo.
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 88%

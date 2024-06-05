@@ -2,7 +2,9 @@
 title: Desenvolvimento de Sites com o pipeline front-end
 description: Com o pipeline de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ganhar velocidade substancial. Este documento descreve algumas considerações específicas do processo de build de front-end que devem ser fornecidas.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 74e4c4cc57dbdc78b6c93efe78c856bdafbae477
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 1%

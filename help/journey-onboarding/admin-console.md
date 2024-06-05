@@ -2,10 +2,12 @@
 title: Acesso ao Admin Console
 description: Depois de entender a preparação necessária para realizar a integração e as noções básicas da estrutura do AEMaaCS, você estará pronto para fazer logon no Admin Console pela primeira vez.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 84%
+source-wordcount: '1071'
+ht-degree: 83%
 
 ---
 

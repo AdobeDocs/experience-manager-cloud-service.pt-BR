@@ -2,10 +2,12 @@
 title: Perfis de produto e de equipe do AEM as a Cloud Service
 description: Descubra como os perfis de produto e de equipe do AEM as a Cloud Service podem conceder e limitar o acesso às suas soluções licenciadas da Adobe.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Onboarding
+role: Admin, User, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '847'
-ht-degree: 81%
+ht-degree: 72%
 
 ---
 
@@ -58,13 +60,13 @@ Cada um dos perfis de produto tem permissões específicas associadas a eles.
 * **Proprietário da empresa**
    * Nesta função, você tem permissão para adicionar um novo programa ou editar um programa, adicionar ou atualizar um ambiente, implantar código no ambiente AEM ou executar verificações de qualidade do código.
    * Esse usuário é responsável por definir KPIs, aprovar implantações de produção e neutralizar falhas de nível 3 importantes, quando necessário.
-* **Gerenciador de implantação**
+* **Gerente de implantação**
    * Nessa função, você tem permissão para adicionar ou atualizar um ambiente, executar pipelines e implantar código no ambiente AEM ou executar verificações de qualidade do código.
    * Esse usuário gerencia operações de implantação e usa o Cloud Manager para executar implantações de preparo/produção, editar os pipelines de CI/CD, aprovar falhas de nível 3 importantes quando necessário e acessar o repositório Git.
 * **Desenvolvedor**
    * Nesta função, você tem permissão para gerar tokens de acesso pessoal para acessar o Git.
    * Esse usuário desenvolve e testa o código de aplicativo personalizado e usa principalmente o Cloud Manager para visualizar o status da implantação e acessar o repositório Git para confirmações de código.
-* **Gerenciador de programas**
+* **Gerente de programa**
    * Nessa função, você tem permissão para agendar pipelines, substituir os quality gates (portais de qualidade) de três níveis e fornecer aprovação de produção.
    * Esse usuário usa o Cloud Manager para executar a configuração da equipe, revisar o status, visualizar KPIs e, quando necessário, pode aprovar falhas de nível 3 importantes.
 

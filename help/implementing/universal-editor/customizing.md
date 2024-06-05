@@ -2,7 +2,9 @@
 title: Personalização e extensão do Editor universal
 description: Saiba mais sobre os diferentes pontos de extensão e outros recursos que permitem personalizar a interface do usuário do Editor universal para atender às necessidades dos autores de conteúdo.
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
-source-git-commit: bdd67fb383bf20399eacaf9b9c086ea8468ea742
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 0%

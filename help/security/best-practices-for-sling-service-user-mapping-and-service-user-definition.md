@@ -1,13 +1,15 @@
 ---
 title: Práticas recomendadas para o mapeamento de usuário do serviço Sling e definição do usuário do serviço
 description: Saiba mais sobre as práticas recomendadas para o mapeamento de usuários do serviço do sling e a definição de usuários do serviço
-source-git-commit: b6f7b6996b377ecfa372742ce1ad22139547ebdd
+exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
+feature: Security
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
 
 ---
-
 
 # Práticas recomendadas para o mapeamento de usuário do serviço Sling e definição do usuário do serviço {#best-practices-for-sling-service-user-mapping-and-service-user-definition}
 
@@ -274,8 +276,3 @@ delete service my-feature-service
 É crucial gravar testes no lado do servidor para usuários de serviço e sua configuração de permissão. Isso não só verifica se a configuração realmente funciona, como também ajuda a detectar regressões e erros não intencionais ao alterar o controle de acesso de usuários de conteúdo ou serviço.
 
 A variável `com.adobe.granite.testing.clients` A biblioteca do fornece vários utilitários que facilitam a gravação de SSTs para usuários de serviço.
-
-
-
-
-

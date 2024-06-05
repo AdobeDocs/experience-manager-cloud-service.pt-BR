@@ -2,9 +2,12 @@
 title: Jornada de criação rápida de site do AEM
 description: Comece aqui uma jornada guiada através da ferramenta fácil de usar de Criação rápida de sites do AEM para simplificar o desenvolvimento de front-end do seu site e personalizá-lo rapidamente sem nenhum conhecimento de back-end no AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1020'
 ht-degree: 89%
 
 ---

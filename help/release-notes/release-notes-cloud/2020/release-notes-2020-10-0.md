@@ -2,10 +2,12 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.10.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.10.0."
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 28%
+source-wordcount: '1103'
+ht-degree: 23%
 
 ---
 
@@ -35,8 +37,8 @@ A versão seguinte (2020.11.0) será lançada em 1 de dezembro de 2020.
 * **Aprimoramentos do Brand Portal**: os novos recursos a seguir e muitos outros estão disponíveis em [!DNL Brand Portal]. Para obter detalhes, consulte [[!DNL Brand Portal] notas de versão](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html).
 
    * [Experiência aprimorada de download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html) para downloads rápidos e simplificados. Configurações adicionais de downloads podem ser configuradas por administradores para uma experiência que atenda às necessidades de usuários e empresas.
-   * Navegação até os Arquivos com um só clique, [Coleções](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html) e Links compartilhados estão agora possibilitados diretamente de qualquer página.
-   * Os usuários agora podem [selecionar e baixar representações específicas](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page). A nova opção de download de representações está disponível no painel Representações na página de detalhes dos Ativos.
+   * Navegação até os Arquivos com um clique, [Coleções](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/share/brand-portal-share-collection.html)O e os Links compartilhados agora são possíveis de qualquer página.
+   * Os usuários podem [selecionar e baixar representações específicas](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html#download-assets-from-asset-details-page) agora. A nova opção de download de representações está disponível no painel Representações na página de detalhes dos Ativos.
    * Um tempo limite de 15 minutos para sessões de usuários visitantes garante uma experiência otimizada a todos os usuários concomitantes.
 
 * **[!DNL Adobe Asset Link]versão 2.1**: uma nova versão do [Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) extensão para [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], e [!DNL Adobe InDesign] está disponível. Ele adiciona compatibilidade com o mais recente [!DNL Adobe Creative Cloud] aplicativos com a versão 2021, lançada em outubro de 2020.
@@ -65,7 +67,7 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
 
 * Lançamento do site de referência CIF Venia - 2020.10.2 que inclui a versão mais recente dos componentes principais CIF v1.4.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.2) para obter mais detalhes.
 
-* Lançamento de componentes principais de CIF v1.4.0. Consulte [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) para obter mais detalhes.
+* Lançamento de componentes principais de CIF v1.4.0. Consulte [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.4.0) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-commerce}
 

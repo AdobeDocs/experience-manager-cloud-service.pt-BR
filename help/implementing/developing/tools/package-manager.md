@@ -1,10 +1,10 @@
 ---
 title: Gerenciador de pacotes
 description: Saiba mais sobre as noções básicas do gerenciamento de pacotes do AEM; com o Gerenciador de pacotes.
-feature: Administering
+feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 422b4d98e2665e332ff65a3638a02282064b2bea
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3769'
 ht-degree: 3%

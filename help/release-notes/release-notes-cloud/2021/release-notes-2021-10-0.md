@@ -2,7 +2,9 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.10.0.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 69%
@@ -23,8 +25,8 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] A versão atual (2021.10.0) é 4 de novembro de 2021.
-A data de lançamento da versão seguinte (2021.11.0) é 2 de dezembro de 2021.
+A data de lançamento da versão atual (2021.10.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 4 de novembro de 2021.
+A versão seguinte (2021.11.0) será lançada em sexta-feira, 2 de dezembro de 2021.
 
 ## Vídeo da versão {#release-video}
 
@@ -44,7 +46,7 @@ Dê uma olhada no [Visão geral da versão de outubro de 2021](https://video.tv.
 
 ### Novo recurso na [!DNL Assets] canal de pré-lançamento {#assets-prerelease-features}
 
-* [!DNL Dynamic Media]O Corte inteligente e a Amostra de imagens do agora são potencializados pelos serviços mais recentes do Sensei, que gera cortes e amostras aprimoradas. Além disso, um aprimoramento foi iniciado para gerar conteúdo de corte diferente, para a mesma proporção, mas em diferentes resoluções. Além disso, as edições manuais são preservadas no reprocessamento, se não houver alteração na largura e na altura do Perfil de imagem.
+* [!DNL Dynamic Media] O Recorte inteligente e a Amostra de imagens agora são potencializados pelos serviços mais recentes da Sensei, que geram melhores recortes e amostras. Além disso, um aprimoramento foi iniciado para gerar conteúdo de corte diferente, para a mesma proporção, mas em diferentes resoluções. Além disso, as edições manuais são preservadas no reprocessamento, se não houver alteração na largura e na altura do Perfil de imagem.
 
 * As Tags inteligentes são aplicadas automaticamente aos ativos usando microsserviços de ativos, em vez dos Serviços de conteúdo inteligente. O modelo subjacente é atualizado para melhorar os resultados da marcação e reduzir a polarização. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 

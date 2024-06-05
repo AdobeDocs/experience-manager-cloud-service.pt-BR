@@ -2,10 +2,12 @@
 title: Visão geral do transformador de conteúdo
 description: Saiba como detectar e corrigir problemas relacionados ao conteúdo relatados pelo BPA usando o Transformador de conteúdo.
 exl-id: aa3397ff-3dd6-4c67-9064-cb9b19bf1c73
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 2%
+source-wordcount: '383'
+ht-degree: 3%
 
 ---
 
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 O Transformador de conteúdo (CT) é uma ferramenta desenvolvida pelo Adobe que pode ser usada para detectar e corrigir automaticamente problemas relacionados ao conteúdo relatados pelo [Analisador de práticas recomendadas (BPA)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) antes de migrar o conteúdo da sua implementação atual do AEM (no local ou Managed Services) para o AEM as a Cloud Service.
 
-O transformador de conteúdo pode ajudar a resolver problemas que se enquadram nas seguintes áreas [Categorias de padrão BPA](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html) (mostrado na tabela abaixo) permitindo que os usuários executem ações em massa, como mover ou excluir. Isso pode reduzir significativamente o tempo e a complexidade associados a um projeto de migração.
+O transformador de conteúdo pode ajudar a resolver problemas que se enquadram nas seguintes áreas [Categorias de padrão BPA](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=pt-BR) (mostrado na tabela abaixo) permitindo que os usuários executem ações em massa, como mover ou excluir. Isso pode reduzir significativamente o tempo e a complexidade associados a um projeto de migração.
 
 ## Categorias de padrões cobertas pelo Transformador de conteúdo e soluções sugeridas {#pattern-categories-and-benefits}
 

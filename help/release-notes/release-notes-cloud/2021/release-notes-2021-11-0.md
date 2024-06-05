@@ -1,11 +1,13 @@
 ---
-title: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.11.0.
-description: Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2021.11.0.
+title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0.
+description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.11.0.
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1053'
-ht-degree: 93%
+source-wordcount: '1058'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +26,7 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 ## Data de lançamento {#release-date}
 
 A data de lançamento da versão atual do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.11.0) é 16 de dezembro de 2021.
-A data de lançamento da versão seguinte (2022.1.0) é 3 de fevereiro de 2022.
+A data de lançamento da versão seguinte (2022.1.0) é sexta-feira, 3 de fevereiro de 2022.
 
 ## Vídeo da versão {#release-video}
 
@@ -84,7 +86,7 @@ A próxima versão está planejada para 9 de dezembro de 2021.
 
 ### Novidades {#what-is-new-cm-nov}
 
-* Os usuários agora podem usar os novos pipelines de front-end para implantar exclusivamente o código de front-end de maneira acelerada. Consulte [Pipelines de front-end do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para saber mais.
+* Os usuários agora podem aproveitar os novos pipelines de front-end para implantar exclusivamente o código de front-end de forma acelerada. Consulte [Pipelines de front-end do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) para saber mais.
 
   >[!IMPORTANT]
   >Você deve estar usando a versão AEM `2021.10.5933.20211012T154732Z` ou superior para usar novos pipelines de front-end.

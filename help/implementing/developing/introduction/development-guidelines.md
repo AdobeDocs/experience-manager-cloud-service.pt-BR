@@ -2,7 +2,9 @@
 title: Diretrizes de desenvolvimento do AEM as a Cloud Service
 description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '2745'
 ht-degree: 4%
@@ -160,7 +162,7 @@ Os níveis de log são os seguintes:
 |---|---|---|
 | 1 | Erro | Falha na ação. A instalação continua, mas uma parte do CRX não foi instalada corretamente e não funcionará. |
 | 2 | Aviso | A ação foi bem-sucedida, mas encontrou problemas. O CRX pode ou não funcionar corretamente. |
-| 3 | Info | A ação foi bem-sucedida. |
+| 3 | Informações | A ação foi bem-sucedida. |
 
 ### Despejos de encadeamento {#thread-dumps}
 

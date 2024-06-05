@@ -2,9 +2,12 @@
 title: Configurar o seu pipeline
 description: Crie um pipeline de front-end para gerenciar a personalização do tema do seu site.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Developing
+role: Admin, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '949'
 ht-degree: 94%
 
 ---

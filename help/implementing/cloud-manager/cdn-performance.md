@@ -2,7 +2,10 @@
 title: Painel de Desempenho da CDN
 description: Entenda como o Cloud Manager avalia o desempenho da rede de entrega de conteúdo (CDN) e o que você pode aprender com o painel.
 exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 3%

@@ -2,7 +2,9 @@
 title: Chamadas do editor universal
 description: Saiba mais sobre os diferentes tipos de chamadas feitas ao seu aplicativo pelo Editor universal para ajudá-lo a depurar.
 exl-id: 00d66e59-e445-4b5c-a5b1-c0a9f032ebd9
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 1%

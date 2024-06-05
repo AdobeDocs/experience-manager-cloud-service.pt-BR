@@ -3,7 +3,10 @@ title: Configuração de pipelines de produção
 description: Saiba como configurar pipelines de produção para compilar e implantar seu código em ambientes de produção.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1338'
 ht-degree: 67%

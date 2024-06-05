@@ -2,7 +2,9 @@
 title: Ferramenta AEM Repo
 description: A ferramenta AEM Repo é uma solução simples para transferir conteúdo JCR entre seu sistema de arquivos local e o servidor AEM por meio da linha de comando comparável ao FTP.
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 2%

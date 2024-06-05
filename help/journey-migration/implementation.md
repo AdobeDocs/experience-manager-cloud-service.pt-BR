@@ -2,7 +2,9 @@
 title: Fase de implementação
 description: Verificar se o código e o conteúdo estão prontos para a migração para a nuvem
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 9%
@@ -61,7 +63,7 @@ A migração de conteúdo é um processo de várias etapas que requer planejamen
 
 Para obter detalhes completos sobre como a ferramenta funciona e como o Adobe recomenda usá-la, consulte o [Documentação da ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md).
 
-## Refatoração do código {#code-refactor}
+## Refatoração de código {#code-refactor}
 
 ### Configurar para desenvolvimento {#set-up-for-development}
 
@@ -72,7 +74,7 @@ Primeiro, observe a documentação que detalha as ferramentas básicas e comece 
 
 * Durante o planejamento, é uma boa ideia ter uma lista de áreas que devem ser refatoradas para serem compatíveis com o AEM as a Cloud Service. Você pode revisar [Diretrizes de desenvolvimento](/help/implementing/developing/introduction/development-guidelines.md) para obter mais detalhes sobre como refatorar e otimizar o código para Cloud Service.
 * Leia sobre como [Gerenciar configurações](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html#what-is-a-configuration) no AEM as a Cloud Service.
-* Saiba como configurar um Ambiente de desenvolvimento local baixando o [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html)
+* Saiba como configurar um Ambiente de desenvolvimento local baixando o [SDK AS A CLOUD SERVICE AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR)
 * Por fim, familiarize-se com o [API Java as a Cloud Service do AEM](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Além disso, também é possível:

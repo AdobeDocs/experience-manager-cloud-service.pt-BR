@@ -2,7 +2,9 @@
 title: Visão geral do editor universal para desenvolvedores do AEM
 description: Se você for um desenvolvedor do AEM interessado em como o Editor universal funciona e como usá-lo no seu projeto, este documento fornecerá uma introdução completa, orientando você pela instrumentação do projeto WKND para trabalhar com o Editor universal.
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
-source-git-commit: 11a244b7dd4810fbfec92b3effc362102e7322dc
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%

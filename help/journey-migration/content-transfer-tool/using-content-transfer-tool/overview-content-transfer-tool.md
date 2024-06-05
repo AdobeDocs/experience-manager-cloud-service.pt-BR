@@ -2,10 +2,12 @@
 title: Visão geral da ferramenta Transferência de conteúdo
 description: Saiba como usar a ferramenta Transferência de conteúdo para transferir conteúdo de uma instância local do AEM para o AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 54%
+source-wordcount: '655'
+ht-degree: 52%
 
 ---
 

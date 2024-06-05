@@ -2,10 +2,12 @@
 title: Uso de adaptadores Sling
 description: O Sling oferece um padrão de adaptador para traduzir convenientemente objetos que implementam a interface adaptável
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2213'
-ht-degree: 1%
+source-wordcount: '1324'
+ht-degree: 2%
 
 ---
 
@@ -304,7 +306,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 |---|---|
 | [RecursoRotulado](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/LabeledResource.html) | Recurso rotulado (== este). |
 | [Nó](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó do componente. |
-| ... | Tudo ao qual o recurso do componente pode ser adaptado. |
+| .. | Tudo ao qual o recurso do componente pode ser adaptado. |
 
 **[Modelo](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Template.html)** adapta-se a:
 
@@ -323,7 +325,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
    <td>Nó deste modelo.</td>
   </tr>
   <tr>
-   <td>...</td>
+   <td>..</td>
    <td>Tudo ao qual o recurso do modelo pode ser adaptado.</td>
   </tr>
  </tbody>
@@ -344,7 +346,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 | [Recurso](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do ativo. |
 |---|---|
 | [Nó](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó do ativo. |
-| ... | Tudo ao qual o recurso do ativo pode ser adaptado. |
+| .. | Tudo ao qual o recurso do ativo pode ser adaptado. |
 
 #### Marcação com tags {#tagging}
 
@@ -353,7 +355,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 | [Recurso](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso da tag. |
 |---|---|
 | [Nó](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nó da tag. |
-| ... | Tudo ao qual o recurso da tag pode ser adaptado. |
+| .. | Tudo ao qual o recurso da tag pode ser adaptado. |
 
 #### Outro {#other}
 

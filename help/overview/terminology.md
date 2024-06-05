@@ -2,7 +2,9 @@
 title: Introdução ao Adobe Experience Manager as a Cloud Service - Terminologia
 description: Introdução ao Adobe Experience Manager as a Cloud Service - Terminologia.
 exl-id: a76f68f1-4f84-4844-a099-0952707cd96d
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 97%

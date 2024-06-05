@@ -3,7 +3,8 @@ title: Publicar conteúdo para o Edge Delivery Services
 description: Saiba como a publicação de conteúdo funciona com o Edge Delivery Services e como publicar conteúdo de AEM com o Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
-source-git-commit: c85a82161a7594588290793c89ecbe1f0f60a56d
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%

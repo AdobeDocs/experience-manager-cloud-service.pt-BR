@@ -2,7 +2,9 @@
 title: Introdução à ferramenta Transferência de conteúdo
 description: Saiba como começar a usar a ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 0161477e5248267224fe6d637a192f409161f6d3
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1362'
 ht-degree: 16%
@@ -18,10 +20,10 @@ ht-degree: 16%
 >id="aemcloud_ctt_download"
 >title="Download"
 >abstract="O Content Transfer Tool pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM). Baixe a versão mais recente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR" text="Notas de versão"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Notas de versão"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portal de distribuição de software"
 
-O Content Transfer Tool pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio de [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) na instância do Adobe Experience Manager (AEM) de origem. Baixe a versão mais recente. Para obter mais detalhes sobre a versão mais recente, consulte [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+O Content Transfer Tool pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio de [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) na instância do Adobe Experience Manager (AEM) de origem. Baixe a versão mais recente. Para obter mais detalhes sobre a versão mais recente, consulte [Notas de versão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html).
 
 Somente a versão 2.0.0 e superior é compatível, e é aconselhável usar a versão mais recente.
 

@@ -2,7 +2,10 @@
 title: Como executar o aplicativo headless
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba como implantar um aplicativo headless, colocando seu código local no Git e movendo-o para o Git do Cloud Manager para o pipeline de CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 91%

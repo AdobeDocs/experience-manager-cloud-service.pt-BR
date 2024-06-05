@@ -2,7 +2,10 @@
 title: Gerenciamento de atividades
 description: O console Atividades permite criar, organizar e gerenciar as atividades de marketing de suas marcas
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1958'
 ht-degree: 85%
@@ -105,7 +108,7 @@ Para adicionar uma atividade:
 1. Se estiver usando o direcionamento do AEM ou o direcionamento de experiência do Adobe Target:
    1. Selecionar **Selecionar público-alvo** e selecione o segmento ao qual a sua experiência está direcionado.
    1. Selecionar **Adicionar experiência**, digite um nome e selecione **OK**.
-   1. Selecione **Próximo**.
+   1. Selecionar **Próxima**.
 Se estiver usando o teste A/B do Adobe Target:
    1. Selecione o lápis na caixa Públicos-alvo para selecionar um público-alvo.
    1. Selecionar **Adicionar experiência**, digite um nome e selecione **OK**.

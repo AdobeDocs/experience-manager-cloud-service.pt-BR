@@ -2,10 +2,13 @@
 title: Gerenciamento de públicos
 description: O console de Públicos permite criar, organizar e gerenciar públicos da sua conta do Adobe Target ou gerenciar segmentos do ContextHub
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 87%
+source-wordcount: '885'
+ht-degree: 86%
 
 ---
 
@@ -73,7 +76,7 @@ Para criar um público-alvo do Adobe Target:
 1. Clique em **Adicionar regra** para adicionar outra regra. Insira quantas regras forem necessárias. As regras são combinadas com o operador boolean AND, o que significa que o público-alvo deve atender a todos os requisitos de cada regra para ser elegível para uma atividade.
 1. Selecione **Próximo**.
 1. Insira um nome para o público e selecione **Salvar**.
-1. Selecione **Salvar**. Seu público-alvo estará na lista de Públicos-alvo.
+1. Selecionar **Salvar**. Seu público-alvo estará na lista de Públicos-alvo.
 
 ### Atributos e suas opções {#attributes-and-their-options}
 

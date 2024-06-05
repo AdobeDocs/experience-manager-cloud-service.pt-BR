@@ -2,7 +2,9 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2023.8.0.
 exl-id: a0ffa6cf-64ae-468c-93f4-ac6805ef907e
-source-git-commit: 02ad83eb9fa9ed3bf06cf7fe0ef10fd9577f66a9
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 18%

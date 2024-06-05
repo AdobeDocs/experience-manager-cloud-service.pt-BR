@@ -2,7 +2,9 @@
 title: Definições de modelo, campos e tipos de componentes
 description: Saiba mais sobre campos e os tipos de componentes que o Editor universal pode editar no painel de propriedades com exemplos. Entenda como você pode instrumentar seu próprio aplicativo criando uma definição de modelo e vinculando ao componente.
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
-source-git-commit: 111ce0c692432d1d0c25f416282bf2dbd655679b
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1146'
 ht-degree: 9%

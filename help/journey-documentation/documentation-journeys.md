@@ -3,7 +3,9 @@ title: Jornadas de documentação do AEM
 description: As jornadas de documentação fornecem uma estrutura narrativa dentro da documentação do AEM, unindo recursos complexos e diferentes para que você possa resolver uma meta empresarial utilizando práticas recomendadas. As jornadas foram desenvolvidas para auxiliar os iniciantes no AEM, apresentando os conceitos e recursos que permitem atingir uma meta de A a Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 96%

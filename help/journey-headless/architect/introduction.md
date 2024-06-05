@@ -2,10 +2,13 @@
 title: 'Modelagem de conteúdo para o AEM as a Headless CMS: uma introdução'
 description: Uma introdução ao uso dos recursos do Adobe Experience Manager as a Cloud Service as a Headless CMS para modelar o conteúdo do seu projeto.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 78%
+source-wordcount: '735'
+ht-degree: 77%
 
 ---
 

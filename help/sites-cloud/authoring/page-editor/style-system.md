@@ -2,7 +2,10 @@
 title: Sistema de estilos
 description: O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando-o mais flexível.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: f6162dcbc5b7937d55922e8c963a402697110329
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '1305'
 ht-degree: 87%

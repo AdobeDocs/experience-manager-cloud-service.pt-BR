@@ -3,10 +3,13 @@ title: Configurar pipelines de não produção
 description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: d1b2226a1deec2e71056c43c84672cb4a358bc8c
+solution: Experience Manager
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1371'
-ht-degree: 73%
+ht-degree: 74%
 
 ---
 
@@ -154,7 +157,7 @@ As etapas para concluir a criação do pipeline de implantação de destino e n�
    * Se você ativou **Auditoria de experiência**, consulte o documento [Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obter detalhes sobre como configurar o.
    * Caso contrário, pule esta etapa.
 
-1. Toque ou clique **Salvar** para salvar o pipeline.
+1. Toque ou clique em **Salvar** para salvar o pipeline.
 
 O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa**.
 

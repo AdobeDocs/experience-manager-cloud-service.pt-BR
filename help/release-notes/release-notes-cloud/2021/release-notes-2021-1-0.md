@@ -2,7 +2,9 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.1.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.1.0."
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: ecf4c06fd290d250c14386b3135250633b26c910
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 21%
@@ -50,7 +52,7 @@ A versão seguinte (2021.2.0) será lançada em 25 de fevereiro de 2021.
 
 ### Novidades {#what-is-new-commerce}
 
-* Gerenciamento da experiência do produto: nova guia de propriedades &quot;Comércio&quot; para Ativos e Fragmentos de experiência. Essa guia permite vincular produtos/categorias a Ativos e Fragmentos de experiência. A guia também mostra dados em tempo real para produtos/categorias vinculados e um link para mostrar detalhes no console do produto.
+* Gerenciamento da experiência do produto: nova guia de propriedades &quot;Commerce&quot; para Ativos e Fragmentos de experiência. Essa guia permite vincular produtos/categorias a Ativos e Fragmentos de experiência. A guia também mostra dados em tempo real para produtos/categorias vinculados e um link para mostrar detalhes no console do produto.
 
 * Lançamento do site de referência CIF Venia - 2021.02.02 que inclui a versão mais recente dos componentes principais CIF v1.7.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) para obter mais detalhes.
 

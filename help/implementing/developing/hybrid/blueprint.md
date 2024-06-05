@@ -2,10 +2,12 @@
 title: Blueprint do SPA
 description: Este documento descreve o contrato geral e independente de estrutura que qualquer estrutura SPA deve cumprir para que você possa implementar componentes SPA editáveis dentro do AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2055'
-ht-degree: 2%
+source-wordcount: '2022'
+ht-degree: 1%
 
 ---
 
@@ -271,7 +273,7 @@ Consulte o artigo [Roteamento de modelo SPA](routing.md) para obter mais informa
 
 Veja como um SPA simples funciona e experimente você mesmo um SPA seguindo para os seguintes documentos:
 
-* [Introdução a SPAs no AEM usando o React](getting-started-react.md).
+* [Introdução ao SPA no AEM usando o React](getting-started-react.md).
 * [Introdução ao SPA no AEM usando o Angular](getting-started-angular.md).
 
 ## Leitura adicional {#further-reading}

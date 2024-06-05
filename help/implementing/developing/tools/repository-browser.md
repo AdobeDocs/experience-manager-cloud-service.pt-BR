@@ -4,10 +4,12 @@ seo-title: Repository Browser
 description: O navegador do repositório fornece uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: a7fa9ecc54bdee394852d765011df2ddd0a4950c
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 2%
+source-wordcount: '854'
+ht-degree: 1%
 
 ---
 

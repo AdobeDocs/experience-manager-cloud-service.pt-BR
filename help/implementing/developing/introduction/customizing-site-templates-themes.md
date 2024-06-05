@@ -1,13 +1,13 @@
 ---
 title: Personalização de modelos e temas do site
 description: Saiba como os modelos de site do AEM podem ser usados para predefinir a estrutura do site e o conteúdo inicial, e como os temas são usados para definir o estilo do site para permitir que você crie sites rapidamente.
-feature: Administering
+feature: Administering, Developing
 role: Admin
 exl-id: dc20f26c-59f0-4244-9797-926f25ed4da3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 22%
+ht-degree: 25%
 
 ---
 
@@ -19,7 +19,7 @@ Saiba como os modelos de site do AEM podem ser usados para predefinir a estrutur
 
 Para permitir que os administradores do AEM criem sites rapidamente adaptados às necessidades comerciais, o AEM oferece suporte à criação de novos sites usando modelos de site e temas de site.
 
-* Um **Modelo de site AEM** geralmente contém o conteúdo básico do site e informações de estrutura e estilo do site, conhecidas como tema do site, para iniciar o novo site rapidamente. Os modelos são eficientes porque são reutilizáveis e personalizáveis. E como é possível ter vários modelos disponíveis na sua instância do AEM, você tem a flexibilidade de criar sites diferentes para atender a várias necessidades comerciais.
+* Um **Modelo de site AEM** geralmente contém o conteúdo básico do site e informações de estrutura e estilo do site, conhecidas como tema do site, para iniciar o novo site rapidamente. Esses modelos são bastante eficientes pois podem ser reutilizados e personalizados. E como é possível ter vários modelos disponíveis na sua instância do AEM, você tem a flexibilidade de criar sites diferentes para atender a várias necessidades comerciais.
 * Um **Tema do site AEM** é um pacote que contém o CSS, o JavaScript e os recursos estáticos que definem o estilo do site do AEM e está em conformidade com a estrutura de um tema de site do AEM.
 
 ## Recursos adicionais {#additional-resources}
@@ -31,4 +31,4 @@ Porque [criação do site](/help/sites-cloud/administering/site-creation/create-
 
 >[!TIP]
 >
->Uma descrição completa do processo de criação de um site a partir de um modelo e personalização de seu tema pode ser encontrada na [Jornada rápida de criação de sites](/help/journey-sites/quick-site/overview.md).
+>Uma descrição completa do processo de criação de um site a partir de um modelo e personalização de seu tema pode ser encontrada na [Jornada de criação rápida de sites](/help/journey-sites/quick-site/overview.md).

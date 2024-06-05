@@ -2,7 +2,9 @@
 title: Atributos e Tipos de Item
 description: Saiba mais sobre os atributos de dados e os tipos de item exigidos pelo Universal Editor.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: b42390dcecb546853380d64808bcf009680c89a3
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 71%

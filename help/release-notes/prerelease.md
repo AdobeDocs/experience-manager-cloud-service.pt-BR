@@ -2,10 +2,12 @@
 title: Canal de pré-lançamento do Adobe Experience Manager as a Cloud Service
 description: Saiba como usar o canal de pré-lançamento para visualizar os recursos futuros do AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
-workflow-type: ht
-source-wordcount: '1304'
-ht-degree: 100%
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+workflow-type: tm+mt
+source-wordcount: '1264'
+ht-degree: 99%
 
 ---
 

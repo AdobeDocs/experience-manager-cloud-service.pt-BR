@@ -2,9 +2,12 @@
 title: Jornada de tradução headless do AEM
 description: Comece aqui uma jornada guiada pela tradução de seu conteúdo headless usando as eficientes ferramentas de tradução do AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1024'
 ht-degree: 87%
 
 ---

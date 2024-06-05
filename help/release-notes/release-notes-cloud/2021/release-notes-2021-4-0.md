@@ -2,10 +2,12 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0.
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.4.0.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 25%
+source-wordcount: '1545'
+ht-degree: 24%
 
 ---
 
@@ -136,7 +138,7 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
 * Indicador visual para dados de catálogo preparados na loja AEM
 
-* O ponto de extremidade de comércio agora pode ser configurado por meio da interface do usuário do Cloud Manager
+* O endpoint do Commerce agora pode ser configurado por meio da interface do usuário do Cloud Manager
 
 ### Correções de erros {#bug-fixes-commerce}
 

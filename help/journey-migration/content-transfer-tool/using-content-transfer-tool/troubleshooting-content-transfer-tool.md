@@ -2,10 +2,12 @@
 title: Solucionar problemas na ferramenta Transferência de conteúdo
 description: Saiba como solucionar problemas da ferramenta Transferência de conteúdo
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+feature: Migration
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 91%
+source-wordcount: '179'
+ht-degree: 88%
 
 ---
 
@@ -40,7 +42,7 @@ Consulte [Jar executável do Oak](https://github.com/apache/jackrabbit-oak/tree/
 Os arquivos criados no *OUT_DIR* especificado acima para fins de consistência podem ser verificados quanto a caminhos com binários ausentes e à ação apropriada a ser realizada, como restauração de um backup, exclusão dos caminhos, reindexação e assim por diante.
 
 
-## Comportamento da interface do usuário {#ui-behavior}
+## Comportamento da interface {#ui-behavior}
 
 Como usuário, você pode ver as seguintes alterações de comportamento na interface do usuário da ferramenta Transferência de conteúdo:
 

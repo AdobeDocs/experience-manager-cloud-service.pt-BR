@@ -2,14 +2,16 @@
 title: Editor de imagem
 description: O Editor de imagens é um componente central do AEM e pode ser usado por componentes para facilitar a manipulação de imagens por autores de conteúdo.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 10%
 
 ---
 
-# Editor de imagem  {#image-editor}
+# Editor de imagem {#image-editor}
 
 O Editor de imagens é um componente central do AEM e pode ser usado por componentes para facilitar a manipulação de imagens por autores de conteúdo.
 

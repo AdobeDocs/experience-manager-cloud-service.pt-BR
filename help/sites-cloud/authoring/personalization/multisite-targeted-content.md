@@ -2,7 +2,10 @@
 title: Trabalhar com conteúdo direcionado em vários sites
 description: Se precisar gerenciar conteúdo direcionado, como atividades, experiências e ofertas entre seus sites, você poderá aproveitar o suporte integrado a vários sites do AEM para conteúdo direcionado
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 89%

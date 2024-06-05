@@ -2,9 +2,12 @@
 title: Criação de conteúdo direcionado usando o modo Direcionar
 description: O modo de direcionamento e o componente do Target fornecem ferramentas para a criação de conteúdo para experiências
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '5302'
+source-wordcount: '5282'
 ht-degree: 87%
 
 ---
@@ -632,6 +635,6 @@ Se você selecionar Adobe Target como mecanismo:
 >
 >Selecione **Adobe Campaign** como mecanismo se estiver integrando o AEM com o Adobe Campaign. Consulte Integrar o AEM com o Adobe Campaign para obter mais informações.
 >
->Selecione **ContextHub** como mecanismo se estiver usando o ContextHub para o direcionamento. Consulte Configurar o ContextHub para obter mais informações.
+>Selecione **ContextHub** como mecanismo se estiver usando o ContextHub para o direcionamento. Consulte Configuração do ContextHub para obter mais informações.
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
 <!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

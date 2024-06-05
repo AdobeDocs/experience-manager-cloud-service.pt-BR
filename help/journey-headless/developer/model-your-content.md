@@ -2,7 +2,10 @@
 title: Como modelar seu conteúdo
 description: Nesta parte da Jornada de desenvolvedores do Adobe Experience Manager (AEM) Headless, saiba como modelar seu conteúdo para entrega do AEM Headless usando a modelagem de conteúdo com modelos de fragmento de conteúdo e fragmentos de conteúdo.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '1814'
 ht-degree: 67%

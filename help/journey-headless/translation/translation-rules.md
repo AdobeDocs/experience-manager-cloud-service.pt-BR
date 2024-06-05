@@ -2,7 +2,10 @@
 title: Configurar regras de tradução para conteúdo headless
 description: Saiba como definir regras de tradução para identificar o conteúdo a ser traduzido.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '912'
 ht-degree: 73%

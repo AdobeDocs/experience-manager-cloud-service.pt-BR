@@ -2,10 +2,13 @@
 title: Caminho para sua primeira experiência usando o AEM Headless
 description: Nesta parte da jornada de desenvolvedor do AEM Headless, você entenderá as etapas para implementar sua primeira experiência headless no AEM, incluindo considerações de planejamento e práticas recomendadas para facilitar ao máximo o seu percurso.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 90%
+source-wordcount: '1956'
+ht-degree: 89%
 
 ---
 

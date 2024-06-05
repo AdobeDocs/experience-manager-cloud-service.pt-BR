@@ -2,10 +2,12 @@
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0.
 description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Release Information
+role: Admin
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 76%
+source-wordcount: '1012'
+ht-degree: 73%
 
 ---
 
@@ -41,7 +43,7 @@ Os conectores do [!DNL Experience Manager] as a Cloud Service para o [!DNL Adobe
 
 * As etapas de fluxo de trabalho que não são compatíveis com uma implantação do Cloud Service agora são marcadas com um aviso no editor de [!UICONTROL modelo de fluxo de trabalho]. Além disso, ao executar os workflows existentes no ambiente do Cloud Service, as etapas do workflow incompatíveis são ignoradas.
 
-* Os modelos de fluxo de trabalho criados pelos clientes implantados em `/conf/global`[!DNL Cloud Manager] no projeto Git associado ao ambiente no são implantados automaticamente em `/var` e, portanto, disponibilizados no [!DNL Experience Manager]. Os modelos de fluxo de trabalho do produto em `/libs` que foram alterados pelo cliente não são implantados automaticamente em `/var`.
+* Os modelos de fluxo de trabalho criados pelos clientes implantados em `/conf/global` no projeto Git associado ao ambiente no [!DNL Cloud Manager] são implantados automaticamente em `/var` e, portanto, disponíveis em [!DNL Experience Manager]. Os modelos de fluxo de trabalho do produto em `/libs` que foram alterados pelo cliente não são implantados automaticamente em `/var`.
 
 ### Erros corrigidos {#assets-bugs-fixed}
 

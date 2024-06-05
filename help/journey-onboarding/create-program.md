@@ -3,10 +3,11 @@ title: Criar um programa
 description: Saiba como usar o Cloud Manager para criar seu primeiro programa.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Onboarding
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 67%
+source-wordcount: '669'
+ht-degree: 66%
 
 ---
 

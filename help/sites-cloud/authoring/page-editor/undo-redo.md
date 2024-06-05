@@ -1,13 +1,16 @@
 ---
 title: Limitações de Desfazer e Refazer
 description: Saiba mais sobre as limitações das opções desfazer e refazer no editor de páginas AEM.
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+exl-id: 87773f47-5116-4966-9ba4-5deedb7c4fa6
+solution: Experience Manager Sites
+feature: Authoring
+role: User
+source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 92%
 
 ---
-
 
 # Limitações de Desfazer e Refazer {#undo-redo}
 

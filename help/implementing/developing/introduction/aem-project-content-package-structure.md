@@ -2,9 +2,11 @@
 title: Estrutura de projetos do AEM
 description: Saiba mais sobre como definir estruturas de pacote para implantação no Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
-source-wordcount: '2918'
+source-wordcount: '2859'
 ht-degree: 4%
 
 ---
@@ -65,7 +67,7 @@ A estrutura de implantação de aplicativo recomendada é a seguinte:
    + JavaScript e CSS (via [Bibliotecas de clientes](/help/implementing/developing/introduction/clientlibs.md))
       + `/apps/my-app/clientlibs`
    + [Sobreposições](/help/implementing/developing/introduction/overlays.md) de `/libs`
-      + `/apps/cq`, `/apps/dam/`, e assim por diante.
+      + `/apps/cq`, `/apps/dam/`e assim por diante.
    + Configurações sensíveis ao contexto de fallback
       + `/apps/settings`
    + ACLs (permissões)
@@ -83,7 +85,7 @@ A estrutura de implantação de aplicativo recomendada é a seguinte:
    + Configurações sensíveis ao contexto
       + `/conf`
    + Estruturas de conteúdo complexas e necessárias (ou seja, criação de conteúdo que se baseia em e estende estruturas de conteúdo de linha de base anteriores definidas na inicialização de repositório).
-      + `/content`, `/content/dam`, e assim por diante.
+      + `/content`, `/content/dam`e assim por diante.
    + Taxonomias de marcação controladas
       + `/content/cq:tags`
    + Nós etc herdados (idealmente, migre esses nós para locais que não são/etc)
@@ -177,7 +179,7 @@ Enquanto os scripts de inicialização do repositório vivem no `ui.config` proj
 + Grupos
 + ACLs
 
-Os scripts de inicialização do repositório são armazenados como `scripts` entradas de `RepositoryInitializer` Configurações de fábrica do OSGi. Dessa forma, eles podem ser direcionados implicitamente pelo modo de execução, permitindo diferenças entre o Autor do AEM e os scripts de Inicialização de repositório do AEM Publish Services ou até mesmo entre ambientes (Desenvolvimento, Preparo e Produção).
+Os scripts de inicialização do repositório são armazenados como `scripts` entradas de `RepositoryInitializer` Configurações de fábrica do OSGi. Dessa forma, eles podem ser direcionados implicitamente pelo modo de execução, permitindo diferenças entre os scripts de inicialização de repositório do AEM Author e AEM Publish Services ou até mesmo entre ambientes (Desenvolvimento, Preparo e Produção).
 
 As configurações de OSGi de inicialização de repositório são melhor gravadas no [`.config` Formato de configuração do OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1) como suportam múltiplas linhas, o que constitui uma exceção às melhores práticas [`.cfg.json` para definir configurações de OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
@@ -207,7 +209,7 @@ Pacotes de conteúdo (`<packageType>content</packageType>`) **não** exigir este
 >
 >Consulte a [Trechos XML POM](#xml-repository-structure-package) abaixo para obter um trecho completo.
 
-## Incorporação de subpacotes no pacote de contêiner{#embeddeds}
+## Incorporação de subpacotes no pacote de container{#embeddeds}
 
 O conteúdo ou os pacotes de código são colocados em uma pasta especial &quot;lateral&quot; e podem ser direcionados para instalação no autor do AEM, na publicação do AEM ou em ambos, usando o plug-in FileVault Maven `<embeddeds>` configuração. Não use o `<subPackages>` configuração.
 
@@ -457,7 +459,7 @@ No `ui.apps/pom.xml` e qualquer outro `pom.xml` que declara um pacote de código
     ...
 ```
 
-### Incorporação de subpacotes no pacote de contêiner {#xml-embeddeds}
+### Incorporação de subpacotes no pacote de container {#xml-embeddeds}
 
 No `all/pom.xml`, adicione o seguinte `<embeddeds>` diretivas para a `filevault-package-maven-plugin` declaração do plug-in. Lembre-se: **não** use o `<subPackages>` configuração. O motivo é porque inclui os subpacotes em `/etc/packages` em vez de `/apps/my-app-packages/<application|content|container>/install(.author|.publish)?`.
 

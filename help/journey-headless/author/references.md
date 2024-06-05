@@ -2,7 +2,10 @@
 title: Saiba mais sobre como usar referências em Fragmentos de conteúdo
 description: Saiba mais sobre como usar referências em Fragmentos de conteúdo para conteúdo, outros fragmentos e outros ativos (mídia). Apresente a necessidade e a mecânica de fragmentos aninhados para a criação de CMS headless.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 6bb7b2d056d501d83cf227adb239f7f40f87d0ce
+solution: Experience Manager
+feature: Headless
+role: Admin, Architect, Developer
+source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 84%
