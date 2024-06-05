@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: b7e8fd902bb2fe98e183b7d987b87fee69e48337
+source-git-commit: 3e63cfc65ea28a481b50f431483a13c2fd80853c
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1903'
 ht-degree: 10%
 
 ---
@@ -234,3 +234,9 @@ Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aq
 ## Ferramentas de migração {#migration-tools}
 
 Você pode encontrar uma lista completa de versões das ferramentas de migração [aqui](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
+## Notas de versão da Experience Cloud {#experience-cloud}
+
+Você pode encontrar informações sobre lançamentos de outros aplicativos Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
+Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine o [Atualização de produtos prioritários para o Adobe](https://www.adobe.com/subscription/priority-product-update.html).
+
