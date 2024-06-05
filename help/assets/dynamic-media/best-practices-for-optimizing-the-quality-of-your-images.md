@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f2701b35c2bc64e7bb049dc49632b7127923970d
 workflow-type: tm+mt
-source-wordcount: '1478'
-ht-degree: 5%
+source-wordcount: '1648'
+ht-degree: 1%
 
 ---
 
@@ -18,16 +18,57 @@ A otimização da qualidade da imagem pode ser um processo demorado, pois muitos
 
 O Adobe Experience Manager inclui mais de 100 comandos de entrega de imagens do Dynamic Media para ajustar e otimizar imagens e renderizar resultados. As diretrizes a seguir podem ajudar você a simplificar o processo e obter bons resultados rapidamente usando alguns comandos essenciais e práticas recomendadas.
 
-## Práticas recomendadas para formato de imagem (`&fmt=`) {#best-practices-for-image-format-fmt}
+<!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
 
-* JPG ou PNG são as melhores opções para fornecer imagens em boa qualidade e com tamanho e peso gerenciáveis.
-* Se nenhum comando format for fornecido no URL, o Dynamic Media Image Delivery assume o padrão JPG para entrega.
-* O JPG é compactado a uma proporção de 10:1 e geralmente produz arquivos de imagem menores. O PNG é compactado em uma proporção de aproximadamente 2:1, exceto quando as imagens contêm um fundo branco. Geralmente, porém, os tamanhos dos arquivos PNG são maiores que os arquivos JPG.
-* O JPG usa compactação com perdas, o que significa que os elementos de imagem (pixels) são descartados durante a compactação. Por outro lado, o PNG usa compactação sem perdas.
-* O JPG geralmente compacta imagens fotográficas com melhor fidelidade do que imagens sintéticas com bordas nítidas e contraste.
-* Se suas imagens contiverem transparência, use PNG porque o JPG não oferece suporte a transparência.
+## Ativar imagem inteligente no Dynamic Media {#bp-enable-smart-imaging}
 
-Como prática recomendada para o formato de imagem, comece com a configuração mais comum `&fmt=JPG`.
+**Imagem inteligente:**
+
+* A ativação da Imagem inteligente no Dynamic Media permite a otimização automática do formato, do tamanho e da qualidade da imagem com base nos recursos do navegador do cliente.
+Quer saber mais? Ir para [Imagem inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq)
+* Ele melhora o desempenho do delivery de imagens ajustando dinamicamente esses parâmetros.
+* É possível avaliar o Smart Imaging usando a ferramenta de autoavaliação [Instantâneo](https://snapshot.scene7.com/)
+
+**Formatos de imagem:**
+
+* Evitar o uso de `fmt=webp` ou `fmt=avif` comandos em um URL, a menos que especificamente necessário para um caso de uso.
+* O Smart Imaging seleciona automaticamente o melhor formato, resultando em ganhos ideais de largura de banda.
+
+**Comportamento padrão:**
+
+* Quando nenhum comando format é especificado no URL e o Smart Imaging não está habilitado, a entrega da imagem Dynamic Media usa o formato JPEG como padrão.
+
+Ao fazer escolhas informadas sobre formatos de imagem e ativar a Imagem inteligente, você pode afetar significativamente o desempenho e a experiência do usuário.
+
+
+<!-- ADDED THE FOLLOWING TOPIC AS PER CQDOC-21594 -->
+
+## Práticas recomendadas para selecionar a imagem de origem {#bp-select-source-image}
+
+Considerações essenciais para trabalhar com imagens de origem:
+
+* **Formato de imagem de origem:**
+   * O uso de formatos sem perda, como PNG, TIFF ou PSD, garante que a qualidade da imagem permaneça alta sem artefatos de compactação.
+   * Esses formatos preservam todos os dados originais, tornando-os ideais para edição e processamento adicional.
+* **Tamanho da imagem de origem:**
+   * Começar com uma imagem de alta resolução fornece mais detalhes e flexibilidade.
+   * Quando as imagens precisam ser exibidas em tamanhos diferentes (por exemplo, em dispositivos ou resoluções de tela), ter uma imagem de origem maior permite um melhor dimensionamento.
+   * Para imagens que oferecem suporte ao zoom (como fotos de produtos), direcione para dimensões de cerca de 2.000 pixels ou mais no lado mais longo.
+   * Os logotipos ou banners que não exigem zoom podem ser carregados no maior tamanho necessário para o uso a que se destinam.
+
+Ao fazer essas escolhas cuidadosas no nível da origem, você pode contribuir significativamente para a qualidade geral do seu conteúdo visual.
+
+<!-- REMOVED TOPIC AS PER CQDOC-21594
+## Best practices for image format (`&fmt=`) {#best-practices-for-image-format-fmt}
+
+* JPG or PNG are the best choices to deliver images in good quality and with manageable size and weight.
+* If no format command is supplied in the URL, Dynamic Media Image Delivery defaults to JPG for delivery.
+* JPG compresses at a ratio of 10:1 and usually produces smaller image file sizes. PNG compresses at a ratio of about 2:1, except when images contain a white background. Typically though, PNG file sizes are larger than JPG files.
+* JPG uses lossy compression, meaning that picture elements (pixels) are dropped during compression. PNG on the other hand uses lossless compression.
+* JPG often compresses photographic images with better fidelity than synthetic images with sharp edges and contrast.
+* If your images contain transparency, use PNG because JPG does not support transparency.
+
+As a best practice for image format, start with the most common setting `&fmt=JPG`. -->
 
 ## Práticas recomendadas para tamanho de imagem {#best-practices-for-image-size}
 
@@ -44,13 +85,13 @@ A nitidez de imagem é o aspecto mais complexo de controlar imagens no seu site 
 
 * White paper de práticas recomendadas [Práticas recomendadas de nitidez e qualidade de imagem do Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) aplica-se ao Experience Manager também.
 
-* Observar [Use a nitidez de imagem com o Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+* Observar [Use a nitidez de imagem com o Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Com o Experience Manager, você pode ajustar a nitidez de imagens na assimilação, no delivery ou em ambos. No entanto, geralmente é melhor ajustar a nitidez de imagens usando apenas um método ou outro, mas não ambos. A nitidez de imagens no delivery, em um URL, normalmente fornece os melhores resultados.
 
 Há dois métodos de nitidez de imagem que podem ser usados:
 
-* Nitidez simples ( `&op_sharpen`) - Semelhante ao filtro de nitidez usado no Photoshop, a nitidez simples aplica a nitidez básica à exibição final da imagem após o redimensionamento dinâmico. No entanto, esse método não é configurável pelo usuário. A prática recomendada é não usar &amp;op_sharpen, a menos que seja necessário.
+* Nitidez simples ( `&op_sharpen`) - Semelhante ao filtro de nitidez usado no Photoshop, a nitidez simples aplica a nitidez básica à exibição final da imagem após o redimensionamento dinâmico. No entanto, esse método não é configurável pelo usuário. A prática recomendada é evitar o uso de `&op_sharpen` a menos que seja necessário.
 * Mascaramento sem nitidez ( `&op_USM`) - Tirar nitidez da máscara é um filtro de nitidez padrão do setor. A prática recomendada é tornar mais nítidas as imagens com mascaramento sem nitidez, seguindo as diretrizes abaixo. O mascaramento sem nitidez permite controlar os três parâmetros a seguir:
 
    * `&op_sharpen=`valor,raio,limite
@@ -58,20 +99,19 @@ Há dois métodos de nitidez de imagem que podem ser usados:
       * **[!UICONTROL quantidade]** (0-5, intensidade do efeito.)
       * **[!UICONTROL raio]** (0-250, largura das &quot;linhas de nitidez&quot; desenhadas ao redor do objeto com nitidez, medida em pixels.)
 
-      Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento da quantidade. O raio permite um controle mais fino, pois um valor mais baixo aplica nitidez apenas aos pixels da borda, enquanto um valor mais alto aplica nitidez a uma faixa mais ampla de pixels.
+     Lembre-se de que o raio e a quantidade dos parâmetros funcionam uns contra os outros. A redução do raio pode ser compensada pelo aumento da quantidade. O raio permite um controle mais fino, pois um valor mais baixo aplica nitidez apenas aos pixels da borda, enquanto um valor mais alto aplica nitidez a uma faixa mais ampla de pixels.
 
       * **[!UICONTROL limite]** (0-255, sensibilidade do efeito.)
-      Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. A variável **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
 
-      Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
+     Esse parâmetro determina como deve ser a diferença dos pixels com nitidez em relação à área ao redor antes de serem considerados pixels de borda e o filtro ajuste a nitidez deles. A variável **[!UICONTROL limite]** ajuda a evitar áreas de nitidez excessiva com cores semelhantes, como tons de pele. Por exemplo, um valor limite de 12 ignora pequenas variações no brilho do tom da pele para evitar a adição de &quot;ruído&quot;, enquanto ainda adiciona o contraste da borda a áreas de alto contraste, como onde as pálpebras tocam a pele.
+
+     Para obter mais informações sobre como você define esses três parâmetros, incluindo as práticas recomendadas para usar com o filtro, consulte os seguintes recursos:
 
       * White paper de práticas recomendadas [Práticas recomendadas de nitidez e qualidade de imagem do Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) aplica-se ao Experience Manager também.
 
-      * Observar [Use a nitidez de imagem com o Experience Manager - Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
+      * Observar [Use a nitidez de imagem com o Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * Experience Manager também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada separadamente a cada componente de cor usando o valor 0 ou ao brilho/intensidade da imagem usando o valor 1.
-
-
 
 Como prática recomendada, comece com o parâmetro Tirar nitidez do raio da máscara. As configurações de raio com as quais você pode começar são as seguintes:
 
@@ -87,7 +127,7 @@ Deixe a configuração de parâmetro monocromático em 0.
 ### Práticas recomendadas para compactação JPEF (`&qlt=`) {#best-practices-for-jpef-compression-qlt}
 
 * Esse parâmetro controla a qualidade da codificação do JPG. Um valor mais alto significa uma imagem de qualidade superior, mas um tamanho de arquivo grande; como alternativa, um valor mais baixo significa uma imagem de qualidade inferior, mas um tamanho de arquivo menor. O intervalo desse parâmetro é de 0 a 100.
-* Para otimizar a qualidade, não defina o valor do parâmetro como 100. A diferença entre uma configuração de 90 ou 95 e 100 é quase imperceptível, mas 100 aumenta desnecessariamente o tamanho do arquivo de imagem. Portanto, para otimizar a qualidade, mas evitar que os arquivos de imagem fiquem muito grandes, defina o `qlt= value` 90 ou 95.
+* Para otimizar a qualidade, não defina o valor do parâmetro como 100. A diferença entre um ajuste de 90 ou 95 e 100 é quase imperceptível. No entanto, 100 aumentam desnecessariamente o tamanho do arquivo de imagem. Portanto, para otimizar a qualidade, mas evitar que os arquivos de imagem fiquem muito grandes, defina o `qlt= value` 90 ou 95.
 * Para otimizar o tamanho de um arquivo de imagem pequeno, mas manter a qualidade da imagem em um nível aceitável, defina o `qlt= value` a 80. Valores abaixo de 70 a 75 resultam em degradação significativa da qualidade da imagem.
 * Como prática recomendada, para ficar no meio, defina o `qlt= value` 85 para ficar no meio.
 * Uso do sinalizador de croma no `qlt=`
@@ -102,7 +142,7 @@ Como prática recomendada para o uso da compactação JPG `&qlt=85,0`.
 O parâmetro `jpegSize` é útil se você deseja garantir que uma imagem não exceda um determinado tamanho para ser entregue a dispositivos que tenham memória limitada.
 
 * Esse parâmetro é definido em quilobytes (`jpegSize=&lt;size_in_kilobytes&gt;`). Ele define o tamanho máximo permitido para a entrega de imagens.
-* `&jpegSize=` O interage com o parâmetro de compactação JPG `&qlt=`. Se a resposta do JPG com o parâmetro de compactação de JPG especificado (`&qlt=`) não exceder o valor ejpegSize, a imagem será retornada com `&qlt=` conforme definido. Caso contrário, `&qlt=` é diminuído gradualmente até que a imagem se ajuste ao tamanho máximo permitido ou até que o sistema determine que não é possível se ajustar e retorne um erro.
+* `&jpegSize=` O interage com o parâmetro de compactação JPG `&qlt=`. Se a resposta do JPG com o parâmetro de compactação de JPG especificado (`&qlt=`) não exceder o valor ejpegSize, a imagem será retornada com `&qlt=` conforme definido. Caso contrário, `&qlt=` é diminuído gradualmente até que a imagem se ajuste ao tamanho máximo permitido. Ou até que o sistema determine que não é possível ajustá-lo e retorne um erro.
 
 Como prática recomendada, defina `&jpegSize=` e adicione o parâmetro `&qlt=` se estiver fornecendo imagens de JPG para dispositivos com memória limitada.
 
@@ -112,7 +152,7 @@ Como prática recomendada, para atingir uma alta qualidade de imagem e um tamanh
 
 `fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0`
 
-Esta combinação de produtos de configurações excelentes resultados na maioria das circunstâncias.
+Essa combinação de configurações produz excelentes resultados na maioria das circunstâncias.
 
 Se a imagem exigir mais otimização, ajuste gradualmente os parâmetros de nitidez (mascaramento sem nitidez), começando com um raio definido como 0,2 ou 0,3. Em seguida, aumente gradualmente o valor de 1,75 para no máximo 4 (equivalente a 400% no Photoshop). Verifique se o resultado desejado foi atingido.
 
