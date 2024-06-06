@@ -1,13 +1,12 @@
 ---
 title: Distribuir e compartilhar ativos, pastas e coleções
 description: Distribua seus ativos digitais usando métodos como compartilhar como um link, baixar e pelo [!DNL Brand Portal], [!DNL desktop app], e [!DNL Asset Link].
-contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: 1b4c5d985c71a84449a13b79fc00adea0443a631
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1847'
 ht-degree: 2%
 
 ---
@@ -107,7 +106,43 @@ Para compartilhar ativos por email:
 
    ![Email de compartilhamento de link](assets/link-sharing-email-notification.png)
 
-### Baixar ativos usando o link do ativo
+### Personalizar modelo de email {#customize-email-template}
+
+Um modelo bem projetado transmite profissionalismo e competência, melhorando a credibilidade da sua mensagem e da sua organização. A variável [!DNL Adobe Experience Manager] permite personalizar o template de email, que é enviado aos recipients que recebem o email contendo o link compartilhado. Além disso, os modelos de email personalizados permitem personalizar o conteúdo de email direcionando os recipients com nomes e fazendo referência a detalhes específicos relevantes. Esse toque pessoal pode fazer com que o recipient se sinta valorizado e aumente o engajamento. Além disso, um modelo personalizado garante que seus emails sejam consistentes com a identidade da marca, incluindo logotipos, cores e fontes. A consistência reforça o reconhecimento da marca e a confiança entre os recipients.
+
+#### Formato de um modelo de email personalizado {#format-of-custom-email-template}
+
+O template de email pode ser personalizado usando texto sem formatação ou HTML. O link do modelo editável padrão pode ser encontrado em `/libs/settings/dam/adhocassetshare/en.txt`. É possível substituir o modelo criando o arquivo `/apps/settings/dam/adhocassetshare/en.txt`. Você pode modificar o template de email quantas vezes forem necessárias.
+
+| Espaços reservados | Descrição |
+|---|-----|
+| ${emailSubject} | Assunto de um email |
+| ${emailInitiator} | ID de email do usuário que criou o email |
+| ${emailMessage} | Corpo do email |
+| ${pagePath} | URL do link compartilhado |
+| ${linkExpiry} | Data de expiração do link compartilhado |
+| ${host.prefix} | Origem do [!DNL Experience Manager] instância, por exemplo `http://www.adobe.com"` |
+
+#### Exemplo de template de email personalizado {#custom-email-template-example}
+
+```
+subject: ${emailSubject}
+
+<!DOCTYPE html>
+<html><body>
+<p><strong>${emailInitiator}</strong> invited you to review assets.</p>
+<p>${emailMessage}</p>
+<p>The shared link will be available until ${linkExpiry}.
+<p>
+    <a href="${pagePath}" target="_blank"><strong>Open</strong></a>
+</p>
+
+Sent from instance: ${host.prefix}
+
+</body></html>
+```
+
+### Baixar ativos usando o link do ativo {#download-assets-using-asset-link}
 
 Qualquer usuário com acesso ao link de ativo compartilhado pode baixar os ativos agrupados em uma pasta zip. O processo de download é o mesmo, quer um usuário esteja acessando o link do ativo copiado ou usando o link do ativo compartilhado por email.
 
@@ -211,7 +246,7 @@ Os usuários podem baixar os ativos necessários e compartilhá-los fora do [!DN
 
 Os profissionais de marketing e usuários de linha de negócios podem compartilhar facilmente ativos aprovados com seus profissionais de criação usando o,
 
-* **aplicativo de desktop do Experience Manager**: o aplicativo funciona no Windows e no Mac. Consulte [visão geral do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR). Para saber como qualquer usuário autorizado do desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários de desktop podem criar ativos e compartilhá-los com seus homólogos que são usuários de Experience Manager, por exemplo, fazendo upload de novas imagens. Consulte [carregar ativos usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **aplicativo de desktop do Experience Manager**: o aplicativo funciona no Windows e no Mac. Consulte [visão geral do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR). Para saber como qualquer usuário autorizado do desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários de desktop podem criar ativos e compartilhá-los com seus homólogos que são usuários de Experience Manager, por exemplo, fazendo upload de novas imagens. Consulte [fazer upload de ativos usando um aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: os profissionais criativos podem pesquisar e usar ativos diretamente de dentro do [!DNL Adobe InDesign], [!DNL Adobe Illustrator], e [!DNL Adobe Photoshop].
 
@@ -266,7 +301,7 @@ De dentro do [!DNL Assets] em um navegador, você pode explorar os locais dos at
 
 ### Configurações a serem usadas [!DNL Adobe Asset Link] {#configure-asset-link}
 
-O Adobe Asset Link simplifica a colaboração entre profissionais de criação e marketing no processo de criação de conteúdo. Ele conecta [!DNL Adobe Experience Manager Assets] com [!DNL Creative Cloud] aplicativos de desktop [!DNL Adobe InDesign], [!DNL Adobe Photoshop], e [!DNL Adobe Illustrator]. A variável [!DNL Adobe Asset Link] permite que os criadores acessem e modifiquem o conteúdo armazenado em [!DNL Assets] sem sair dos aplicativos criativos com os quais estão mais familiarizados.
+O Adobe Asset Link simplifica a colaboração entre profissionais de criação e marketing no processo de criação de conteúdo. Ele conecta [!DNL Adobe Experience Manager Assets] com [!DNL Creative Cloud] aplicativos de desktop, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], e [!DNL Adobe Illustrator]. A variável [!DNL Adobe Asset Link] permite que os criadores acessem e modifiquem o conteúdo armazenado em [!DNL Assets] sem sair dos aplicativos criativos com os quais estão mais familiarizados.
 
 Consulte [como configurar [!DNL Assets] para usá-lo com [!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -300,3 +335,4 @@ Consulte [como configurar [!DNL Assets] para usá-lo com [!DNL Adobe Asset Link]
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
 * [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
