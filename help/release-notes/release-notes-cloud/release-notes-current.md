@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05144cc11c3a3e99e4e76aa6c8720592e9ca7a9f
+source-git-commit: e6de1fc47eb2b9c3ba5b115c74b874016449bc20
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1942'
 ht-degree: 10%
 
 ---
@@ -44,12 +44,28 @@ Assista ao vídeo de visão geral da versão de maio de 2024, que exibe um resum
 
 ### Novos recursos no Sites {#sites-new-features}
 
+#### Integração de tradução com o AEM {#translation-integration}
+
+As ações e os fluxos de trabalho de tradução de conteúdo agora acionam eventos para permitir o rastreamento de etapas e estados de processo relevantes a partir de aplicativos externos. Os eventos a seguir estão sendo gerados. Os usuários poderão assinar eventos usando o Console do Adobe Developer.
+
+* `TRANSLATION_JOB_CREATED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
+* `TRANSLATION_JOB_CONTENT_ADDITION_COMPLETED`
+* `TRANSLATION_JOB_CONTENT_DELETION_STARTED`
+* `TRANSLATION_JOB_CONTENT_DELETION_COMPLETED`
+* `TRANSLATION_JOB_COMMITTED_FOR_TRANSLATION`
+* `TRANSLATION_JOB_READY_FOR_REVIEW`
+* `TRANSLATION_JOB_APPROVED`
+* `TRANSLATION_JOB_COMPLETED`
+* `TRANSLATION_JOB_CANCELLED`
+* `TRANSLATION_JOB_ERROR`
+
 #### Serviço de dados de monitoramento de uso real (RUM) {#real-use-monitoring}
 
 * **[O Serviço de dados de monitoramento de uso real (RUM) agora está disponível](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** permitindo a coleta de dados no lado do cliente para o AEM as a Cloud Service.
-O serviço de monitoramento de uso real , a coleção no lado do cliente, oferece um reflexo mais preciso das interações, garantindo uma medida confiável do engajamento do site. Ele permite que os clientes com insights avançados sobre o tráfego e o desempenho da página. É uma ótima oportunidade para saber mais sobre o desempenho da sua página e obter insights para melhorá-la.
+O serviço de monitoramento de uso real, a coleção do lado do cliente, oferece um reflexo mais preciso das interações, garantindo uma medida confiável do envolvimento do site. Ele permite que os clientes com insights avançados sobre o tráfego e o desempenho da página. É uma ótima oportunidade para saber mais sobre o desempenho da sua página e obter insights para melhorá-la.
 
-### Criação de AEM para Edge Delivery Services
+#### Criação de AEM para Edge Delivery Services {#edge-enhancements}
 
 Estabilidade aprimorada e várias melhorias para uma melhor experiência de criação.
 
@@ -128,7 +144,7 @@ Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? N
 
 ### Serviço do Forms
 
-O serviço Forms gera PDF forms interativos para a captura de dados. Ela também pode ser usada para importar ou exportar dados de e para um formulário PDF interativo existente e validar os dados enviados. Veja um detalhamento de suas funcionalidades:
+O serviço Forms gera PDF forms interativos para a captura de dados. Ele também pode ser usado para importar ou exportar dados de e para um formulário PDF interativo existente e validar os dados enviados. Veja um detalhamento de suas funcionalidades:
 
 * **Renderização do Forms**: gere um formulário PDF interativo a partir de um modelo criado usando o AEM Forms Designer e, opcionalmente, dados XML. Isso produz essencialmente um formulário PDF preenchível opcionalmente pré-preenchido com dados.
 * **Extração e importação de dados**: importe dados para um formulário PDF existente, bem como extraia dados de um formulário PDF preenchido. Os formatos de dados XDP e XML são compatíveis, e a importação para PDF forms não XFA (também conhecida como AcroForms) também é compatível com dados FDF e XFDF.
@@ -239,4 +255,3 @@ Você pode encontrar uma lista completa de versões das ferramentas de migraçã
 
 Você pode encontrar informações sobre lançamentos de outros aplicativos Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
 Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine o [Atualização de produtos prioritários para o Adobe](https://www.adobe.com/subscription/priority-product-update.html).
-
