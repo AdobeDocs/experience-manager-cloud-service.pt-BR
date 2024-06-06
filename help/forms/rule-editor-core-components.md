@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
 workflow-type: tm+mt
-source-wordcount: '5612'
+source-wordcount: '5627'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,9 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| Componentes de fundação | [Clique aqui](/help/forms/rule-editor.md) |
-| Componentes principais | Este artigo |
+| AEM as a Cloud Service (Componentes principais) | Este artigo |
+| AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/rule-editor.md) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
 
 # Adicionar regras a um formulário adaptável (Componentes principais) {#adaptive-forms-rule-editor}
 
@@ -167,11 +168,11 @@ Ação 1 no Objeto A
 
 _
 
-![Permitir vários campos em Quando](/help/forms/assets/allowed-multiple-field-when.png)
+![Vários campos permitidos em Quando](/help/forms/assets/allowed-multiple-field-when.png)
 
-##### Considerações ao usar Vários campos permitidos no recurso de condição Quando
+##### Considerações ao usar vários campos permitidos no recurso Quando a condição
 
-* Certifique-se de que o [o componente principal está definido para a versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar esse recurso no editor de regras.
+* Certifique-se de que o [componente principal esteja definido como a versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar esse recurso no regra editor.
 * Se as regras forem aplicadas a campos diferentes dentro da condição Quando, o regra é acionado mesmo se apenas um desses campos for alterado.
 
 
@@ -192,10 +193,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-Se os vários campos permitidos no recurso Quando a condição encontrarem problemas, seguir etapas de solução de problemas como:
+Se os vários campos permitidos no recurso Quando condição encontrarem problemas, siga as etapas de solução de problemas como:
 
 1. Abra o formulário no modo de edição.
-1. Abra a navegador conteúdo e selecione o **[!UICONTROL componente Contêiner]** de guia do formulário adaptável.
+1. Abra o Navegador de conteúdo e selecione o **[!UICONTROL Contêiner do guia]** componente do seu Formulário adaptável.
 1. Clique nas propriedades do Container do guia ![Propriedades do guia](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável é aberta.
 1. Clique em Concluído e salve a caixa de diálogo novamente.
 
@@ -275,17 +276,21 @@ A variável **Definir Valor De** o tipo de regra não está disponível para tod
 
 Defina o valor do Objeto A como:
 
-(cadeia de caracteres ABC) OR (propriedade do objeto X do objeto C) OR (valor de uma função) OR (valor de uma expressão matemática) OR (valor de saída de um serviço de modelo de dados);
+(sequência de caracteres ABC) OU
+(objeto propriedade X do objeto C) OU
+(valor de uma função) OU
+(valor de uma expressão matemática) OU
+(valor de saída de um serviço de modelo de dados);
 
 Quando (opcional):
 
 (Condição 1 E Condição 2 E Condição 3) é VERDADEIRA;
 
-O exemplo a seguir seleciona o valor de `Question2` como `True` e define o valor de `Result` como `correct`.
+O exemplo a seguir seleciona o valor de `Question2` as `True` e define o valor de `Result` as `correct`.
 
-![Definir valor-serviço da Web](assets/set-value-web-service.png)
+![Set-value-web-service](assets/set-value-web-service.png)
 
-Exemplo de Definir Valor regra usando o serviço de modelo de dados de formulário.
+Exemplo de regra Definir valor usando o serviço de Modelo de dados de formulário.
 
 ### [!UICONTROL Mostrar] {#show}
 
@@ -440,7 +445,7 @@ O botão de alternância, quando tocado, alterna o painel de funções e objetos
 
 Editor visual de regras é a área no modo editor visual da interface do usuário do editor de regras em que você escreve regras. Ele permite selecionar um tipo de regra e definir adequadamente condições e ações. Ao definir condições e ações em uma regra, você pode arrastar e soltar objetos e funções de formulário do painel Objetos de formulário e Funções.
 
-Para obter mais informações sobre como usar o editor visual de regras, consulte [Regras de gravação](rule-editor.md#p-write-rules-p).
+Para obter mais informações sobre o uso de regra editor visuais, consulte [Regras de gravação](rule-editor.md#p-write-rules-p).
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -455,15 +460,15 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. Click **[!UICONTROL Save]**.
 -->
 
-### E. Botões Concluído e Cancelar {#done-and-cancel-buttons}
+### E. botões Concluído e cancelar {#done-and-cancel-buttons}
 
-A variável **[!UICONTROL Concluído]** é usado para salvar uma regra. Você pode salvar uma regra incompleta. No entanto, estão incompletos inválido e não são executados. As regras salvas em um objeto de formulário são listadas quando você iniciar o regra editor na próxima vez do mesmo objeto de formulário. Você pode gerenciar regras existentes nesse visualização. Para obter mais informações, consulte [Gerenciar regras](rule-editor.md#p-manage-rules-p).
+A **[!UICONTROL Concluído]** botão é usada para salvar uma regra. Você pode salvar uma regra incompleta. No entanto, estão incompletos inválido e não são executados. As regras salvas em um objeto de formulário são listadas quando você iniciar o regra editor na próxima vez do mesmo objeto de formulário. Você pode gerenciar regras existentes nesse visualização. Para obter mais informações, consulte [Gerenciar regras](rule-editor.md#p-manage-rules-p).
 
-A **[!UICONTROL Cancelar]** botão descarta as alterações feitas em uma regra e fecha a regra editor.
+A variável **[!UICONTROL Cancelar]** O botão descarta todas as alterações feitas em uma regra e fecha o editor de regras.
 
 ## Regras de gravação {#write-rules}
 
-É possível criar regras usando o visual regra editor <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+Você pode escrever regras usando o editor visual de regras <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 Primeiro, vamos analisar como escrever regras usando o editor visual.
 
@@ -473,7 +478,7 @@ Vamos entender como criar uma regra no editor visual usando o seguinte formulár
 
 ![Criar-regra-exemplo](assets/create-rule-example.png)
 
-A seção Requisitos de Empréstimo no formulário de solicitação de empréstimo de exemplo exige que os candidatos especifiquem seu estado civil, salário e, se forem casados, o salário de seus cônjuges. Com base nas entradas do usuário, o regra calcula o valor da qualificação do empréstimo e é exibido no campo Elegibilidade de empréstimo. Aplique as seguintes regras para implementar o cenário:
+A seção Requisitos de Empréstimo no formulário de solicitação de empréstimo de exemplo exige que os candidatos especifiquem seu estado civil, salário e, se forem casados, o salário de seus cônjuges. Com base nas entradas do usuário, a regra calcula o valor de qualificação de empréstimo e é exibida no campo Elegibilidade do empréstimo. Aplique as seguintes regras para implementar o cenário:
 
 * O campo Salário do Cônjuge é exibido somente quando o Estado Civil é Casado.
 * O valor de qualificação de empréstimo é de 50% do salário total.
@@ -569,17 +574,17 @@ Para gravar regras, execute as seguintes etapas:
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   No campo extended expression, selecione **[!UICONTROL dividido por]** do **[!UICONTROL Selecionar operador]** campo e **[!UICONTROL Número]** do **[!UICONTROL Selecionar opção]** campo. Em seguida, especifique **[!UICONTROL 2]** no campo de número.
+   No campo de expressão estendida, selecione **[!UICONTROL dividido pelo****campo Selecionar operador]** e **[!UICONTROL Número]** do **[!UICONTROL campo Selecionar opção]**. Em seguida, especifique **[!UICONTROL 2]** no campo de número.
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
    >[!NOTE]
    >
-   >É possível criar expressões complexas usando componentes, funções, expressões matemáticas e valores propriedade do campo Selecionar opção.
+   >Você pode criar expressões complexas usando componentes, funções, expressões matemáticas e valores de propriedade no campo Selecionar opção.
 
-   Próximo, crie uma condição que, quando retornar True, a expressão for executada.
+   Em seguida, crie uma condição, que quando retorna True, a expressão é executada.
 
-1. Selecione **[!UICONTROL Adicionar condição]** para adicionar uma declaração Quando.
+1. Selecionar **[!UICONTROL Adicionar Condição]** para adicionar uma instrução When.
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -593,7 +598,7 @@ Para gravar regras, execute as seguintes etapas:
 
    A regra finalmente aparece da seguinte maneira no editor de regras.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
-1. Selecione **[!UICONTROL Concluído]**. Ele salva a regra.
+1. Selecionar **[!UICONTROL Concluído]**. Ele salva a regra.
 
 1. Repita as etapas 7 a 14 para definir outra regra para calcular a elegibilidade do empréstimo se o estado civil for Simples. A regra é exibida da seguinte maneira no editor de regras.
 
@@ -858,7 +863,7 @@ Veja a seguir um exemplo de uma regra aninhada que exibe uma mensagem ao usuári
 
 ![Expressão complexa](assets/complexexpression.png)
 
-Também é possível arrastar e soltar condições em uma regra para editá-la. Selecione e passe o mouse sobre a alça ( ![identificador](assets/drag-handle.svg)) antes de uma condição. Depois que o ponteiro se transformar no símbolo da mão, como mostrado abaixo, arraste e solte a condição em qualquer lugar dentro da regra. A estrutura da regra muda.
+Também é possível arrastar e soltar condições em uma regra para editá-la. Selecione e passe o mouse sobre a alça ( ![identificador](assets/drag-handle.svg)) antes de uma condição. Quando o ponteiro se transformar no símbolo da mão como mostrado abaixo, arraste e solte a condição em qualquer lugar da regra. A estrutura do regra muda.
 
 ![Arrastar e soltar](assets/drag-and-drop.png)
 
@@ -866,9 +871,9 @@ Também é possível arrastar e soltar condições em uma regra para editá-la. 
 
 A editor de regras permite usar comparações de datas para criar condições.
 
-A seguir, uma condição de exemplo que exibe um objeto de texto estático se a hipoteca da casa já for tomada, o que o usuário significa preenchendo o campo de data.
+A seguir está um exemplo de condição que exibe um objeto de texto estático se a hipoteca da casa já estiver sendo feita, o que o usuário significa preenchendo o campo de data.
 
-Quando a data da hipoteca da propriedade como preenchida pela usuário estiver no passado, o Formulário Adaptável exibirá uma nota sobre o cálculo de renda. A regra a seguir compara a data preenchida pela usuário com a data atual e se a data preenchida pelo usuário for anterior à data atual, o formulário exibe a mensagem de texto (chamada Renda).
+Quando a data de hipoteca do imóvel conforme preenchido pelo usuário estiver no passado, o Formulário adaptável exibirá uma nota sobre o cálculo de renda. A regra a seguir compara a data preenchida pelo usuário com a data atual e, se a data preenchida pelo usuário for anterior à data atual, o formulário exibirá a mensagem de texto (chamada de Receita).
 
 ![Condição de expressão de data](assets/dateexpressioncondition.png)
 
