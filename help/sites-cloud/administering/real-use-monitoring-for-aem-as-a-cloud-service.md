@@ -1,19 +1,19 @@
 ---
 title: Monitoramento de uso real para AEM as a Cloud Service
 description: Saiba como usar o Monitoramento de uso real (RUM) para capturar e analisar a experiência do usuário digital de um site ou aplicativo em tempo real.
-source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
+exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
+source-git-commit: 948eb304c17ad86dcbab2b0685428ae51f38f488
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
 
 ---
 
+# Serviço de monitoramento de uso real para AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!NOTE]
 >
 >Estamos animados em anunciar o [Implantação do GA](/help/release-notes/release-notes-cloud/release-notes-current.md#real-use-monitoring) para o serviço de monitoramento de uso real, a coleta de dados do lado do cliente. É um serviço automatizado e não há necessidade de configuração pelo cliente.
-
-# Serviço de monitoramento de uso real para AEM as a Cloud Service {#real-use-monitoring-service-for-aem-as-a-cloud-service}
 
 >[!INFO]
 >
