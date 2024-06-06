@@ -6,10 +6,10 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 67%
+source-wordcount: '1367'
+ht-degree: 65%
 
 ---
 
@@ -86,7 +86,7 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 
    >[!TIP]
    > 
-   >Consulte o documento [Adição e gerenciamento de repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
+   >Consulte o documento [Adição e gerenciamento de repositórios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
 
    * **Ramificação Git** - Essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
       * Insira os primeiros caracteres do nome da ramificação e o recurso de preenchimento automático do campo localizará as ramificações correspondentes para ajudá-lo em sua seleção.
@@ -126,6 +126,10 @@ Uma implantação direcionada implanta o código somente em partes selecionadas 
    * Se existir um pipeline de código da Web para o ambiente selecionado, essa seleção será desabilitada.
    * Se você tiver um pipeline de pilha completa existente implantando em um ambiente, a criação de um pipeline de configuração no nível da Web para o mesmo ambiente fará com que a configuração existente no pipeline de pilha completa seja ignorada.
 
+>[!NOTE]
+>
+>Os pipelines de camada da Web e configuração não são compatíveis com repositórios privados. Consulte o documento [Adição de repositórios privados no Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obter detalhes e a lista completa de limitações.
+
 As etapas para concluir a criação do pipeline de implantação de produção direcionada são as mesmas depois de escolher um tipo de implantação.
 
 1. Escolha o tipo de implantação necessário.
@@ -142,7 +146,7 @@ As etapas para concluir a criação do pipeline de implantação de produção d
 
    >[!TIP]
    > 
-   >Consulte [Adição e gerenciamento de repositórios](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
+   >Consulte [Adição e gerenciamento de repositórios](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para saber como adicionar e gerenciar repositórios no Cloud Manager.
 
    * **Ramificação Git**: essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
       * Insira os primeiros caracteres do nome da ramificação e utilize o preenchimento automático deste campo. O recurso encontra as ramificações correspondentes que você pode selecionar.

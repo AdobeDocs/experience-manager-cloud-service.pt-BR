@@ -2,10 +2,10 @@
 title: Restauração de conteúdo no AEM as a Cloud Service
 description: Saiba como restaurar conteúdo do backup no AEM as a Cloud Service usando o Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 5baeb4012e5aa82a8cd8710b18d9164583ede0bd
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 57%
+source-wordcount: '1339'
+ht-degree: 50%
 
 ---
 
@@ -13,15 +13,6 @@ ht-degree: 57%
 # Restauração de conteúdo no AEM as a Cloud Service {#content-restore}
 
 Saiba como restaurar conteúdo do backup no AEM as a Cloud Service usando o Cloud Manager.
-
->[!NOTE]
->
->Este recurso só está disponível para [o programa pioneiro](/help/implementing/cloud-manager/release-notes/current.md#early-adoption) e tem certas limitações além daquelas documentadas no artigo. Na fase inicial de adoção:
->
->* O recurso só está disponível em ambientes de desenvolvimento.
->* As restaurações de conteúdo são limitadas a duas por mês por programa.
->
->Para obter detalhes sobre o sistema de backup e restauração existente para AEM as a Cloud Service, consulte [Backup e restauração no AEM as a Cloud Service](/help/operations/backup.md).
 
 ## Visão geral {#overview}
 
@@ -40,13 +31,41 @@ Em ambos os casos, a versão do código personalizado e a versão do AEM permane
 >
 >Também é possível restaurar backups [usando a API pública.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
 
+>[!WARNING]
+>
+>* Esse recurso só deve ser usado quando houver problemas graves com código ou conteúdo.
+>* A restauração de um backup resultará na perda de dados recentes entre o momento do backup e o presente. O preparo também é restaurado para a versão antiga.
+>* Antes de iniciar uma restauração de conteúdo, considere outras opções de restauração seletiva de conteúdo.
+
+## Opções de restauração de conteúdo seletivo {#selective-options}
+
+Antes de restaurar para uma restauração completa do conteúdo, considere essas opções para restaurar seu conteúdo com mais facilidade.
+
+* Se um pacote para o caminho excluído estiver disponível, instale-o novamente usando o [Gerenciador de pacotes.](/help/implementing/developing/tools/package-manager.md)
+* Se o caminho excluído era uma página no Sites, use o [Função Restaurar árvore.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* Se o caminho excluído for uma pasta de ativos e os arquivos originais estiverem disponíveis, faça upload deles novamente via [o console Assets.](/help/assets/add-assets.md)
+* Se o conteúdo excluído fosse de ativos, considere [restaurando versões anteriores dos ativos.](/help/assets/manage-digital-assets.md)
+
+Se nenhuma das opções acima funcionar e o conteúdo do caminho excluído for significativo, execute uma restauração de conteúdo, conforme detalhado nas seções a seguir.
+
+## Criar função de usuário {#user-role}
+
+Por padrão, nenhum usuário terá permissão para executar restaurações de conteúdo em ambientes de desenvolvimento, produção ou preparo. Para delegar essa permissão a usuários ou grupos específicos seguindo essas etapas gerais.
+
+1. Crie um perfil de produto com um nome expressivo que se refere à restauração do conteúdo.
+1. Forneça o **Acesso ao programa** permissão no programa necessário.
+1. Forneça o **Restauração de conteúdo** no ambiente necessário ou em todos os ambientes do programa, dependendo do caso de uso.
+1. Atribuir usuários a esse perfil de perfil.
+
+Para obter detalhes sobre o gerenciamento de permissões, consulte [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md) documentação.
+
 ## Restauração de conteúdo {#restoring-content}
 
 Primeiro, determine o intervalo de tempo do conteúdo que você deseja restaurar. Em seguida, para restaurar o conteúdo do ambiente a partir de um backup, execute essas etapas.
 
 >[!NOTE]
 >
->Um usuário com a variável **Proprietário da empresa** ou **Gerente de implantação** A função deve estar conectada para iniciar uma operação de restauração.
+>Um usuário deve ter [permissões apropriadas](#user-role) para iniciar uma operação de restauração.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 

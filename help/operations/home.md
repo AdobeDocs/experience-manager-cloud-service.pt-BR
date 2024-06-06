@@ -3,10 +3,10 @@ title: Operações e manutenção do Adobe Experience Manager as a Cloud Service
 description: Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas dúvidas.
 landing-page-description: Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Service, como tarefas de indexação e manutenção, e obtenha respostas para suas dúvidas.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
-source-git-commit: 1a49bcd5b76e6a3b0d5a3168cef445101dc8d149
+source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 100%
+source-wordcount: '105'
+ht-degree: 98%
 
 ---
 
@@ -19,4 +19,4 @@ Saiba mais sobre as operações de back-end do Experience Manager as a Cloud Ser
 
 * [Replicação de conteúdo](replication.md)
 * [Tarefas de manutenção](maintenance.md)
-* [Backup e restauração](backup.md)
+* [Restauração de autoatendimento](restore.md)

@@ -4,7 +4,7 @@ description: O que é diferente e quais são as novidades - Adobe Experience Man
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73bd693d47f37b453209208816dfed15d65e9e09
 workflow-type: tm+mt
 source-wordcount: '1883'
 ht-degree: 93%
@@ -208,7 +208,7 @@ Para apoiar iterações e desenvolvimento rápidos, também é possível desenvo
 
 >[!NOTE]
 >
->Para obter mais detalhes, comece com [restauração de conteúdo](/help/operations/backup.md), [Indexação](/help/operations/indexing.md), e [outras tarefas de manutenção](/help/operations/maintenance.md).
+>Para obter mais detalhes, comece com [restauração de conteúdo](/help/operations/restore.md), [Indexação](/help/operations/indexing.md), e [outras tarefas de manutenção](/help/operations/maintenance.md).
 
 Com o AEM as a Cloud Service, essas operações são automatizadas de modo que não seja mais necessário qualquer interrupção do serviço.
 

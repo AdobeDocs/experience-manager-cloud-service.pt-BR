@@ -5,7 +5,7 @@ exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 role: Admin, Developer, User
 feature: Adaptive Forms
 contentOwner: khsingh
-source-git-commit: 9d1594e61a3ec79c0e773cac5753885684ac8a21
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 1%
@@ -37,7 +37,7 @@ O Adobe Experience Manager Forms as a Cloud Service traz algumas alterações no
 
 * Antes de usar seus pacotes de clientes com o Forms as a Cloud Service, recompile seu código personalizado com a versão mais recente do adobe-aemfd-docmanager.
 
-* Uso [Utilitário de migração as a Cloud Service do AEM Forms](/help/forms/migrate-to-forms-as-a-cloud-service.md) para preparar e migrar o Forms adaptável, temas, modelos e configurações de nuvem do <!-- AEM 6.3 Forms--> AEM 6.4 Forms no OSGi e AEM 6.5 Forms no OSGi para [!DNL AEM] as a Cloud Service. Use o [Repositório Git do seu programa](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) para importar modelos de Formulário adaptável existentes.
+* Uso [Utilitário de migração as a Cloud Service do AEM Forms](/help/forms/migrate-to-forms-as-a-cloud-service.md) para preparar e migrar o Forms adaptável, temas, modelos e configurações de nuvem do <!-- AEM 6.3 Forms--> AEM 6.4 Forms no OSGi e AEM 6.5 Forms no OSGi para [!DNL AEM] as a Cloud Service. Use o [Repositório Git do seu programa](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para importar modelos de Formulário adaptável existentes.
 
 * Por padrão, o email suporta apenas protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) para permitir que as portas enviem emails e habilitem o protocolo SMTP para o seu ambiente.
 

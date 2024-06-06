@@ -5,7 +5,7 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 94%
@@ -121,5 +121,5 @@ Desenvolva esse conhecimento e prossiga na sua jornada de Criação rápida de s
 Embora seja recomendável seguir para a próxima parte da jornada de Criação rápida de sites revisando o documento [Personalizar o tema do site,](customize-theme.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada.
 
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - Se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
-* [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md): se precisar de mais informações sobre como configurar e gerenciar repositórios Git para seu projeto do AEMaaCS, consulte este documento.
+* [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md): se precisar de mais informações sobre como configurar e gerenciar repositórios Git para seu projeto do AEMaaCS, consulte este documento.
 * [Configurar pipeline de CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md): consulte este documento para saber mais detalhes sobre a configuração de pipelines, tanto de pilha completa quanto de front-end.

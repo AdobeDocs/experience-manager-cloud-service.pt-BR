@@ -5,7 +5,7 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 87%
@@ -109,7 +109,7 @@ Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos me
 * [Documentação técnica do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - se você já conhece bem o AEM, poderá consultar diretamente os documentos técnicos detalhados.
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - se desejar obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
 * [Permissões baseadas em função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=pt_BR) - o Cloud Manager tem funções pré-configuradas com permissões apropriadas. Consulte este documento para obter detalhes sobre estas funções e sobre como administrá-las.
-* [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md): se precisar de mais informações sobre como configurar e gerenciar repositórios Git para seu projeto do AEMaaCS, consulte este documento.
+* [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md): se precisar de mais informações sobre como configurar e gerenciar repositórios Git para seu projeto do AEMaaCS, consulte este documento.
 * [Configurar pipeline de CI/CD - Cloud Services](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md): consulte este documento para saber mais detalhes sobre a configuração de pipelines, tanto de pilha completa quanto de front-end.
 * [Modelo de site padrão do AEM](https://github.com/adobe/aem-site-template-standard) - este é o repositório GitHub do modelo de site padrão do AEM.
 * [Tema de site do AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - este é o repositório GitHub do tema de site do AEM.

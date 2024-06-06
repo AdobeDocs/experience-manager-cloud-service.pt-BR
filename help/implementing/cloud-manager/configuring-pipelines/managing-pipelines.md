@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 52%
+source-wordcount: '1119'
+ht-degree: 48%
 
 ---
 
@@ -110,6 +110,10 @@ Dependendo do tipo de pipeline, talvez seja possível cancelar a execução clic
 >
 >Não é possível editar um pipeline em execução.
 
+>[!NOTE]
+>
+>Os pipelines de camada da Web e configuração não são compatíveis com repositórios privados. Consulte o documento [Adição de repositórios privados no Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obter detalhes e a lista completa de limitações.
+
 ## Exclusão de pipelines {#deleting-pipelines}
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
@@ -143,6 +147,14 @@ Quando uma etapa do pipeline é concluída, um resumo é apresentado.
 Selecione o **Exibir detalhes** link para revelar a **Duração** seção. Isso inclui a duração média do pipeline com base na tendência histórica desse programa.
 
 ![Duração](/help/implementing/cloud-manager/assets/configure-pipeline/duration.png)
+
+Se o pipeline contivesse uma **Varredura de código** etapa, que gerou problemas, toque ou clique no botão **Detalhes de download** botão para exibir uma lista de [testes de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) que não passou.
+
+![Problemas de qualidade do código](assets/managing-pipelines-code-quality-issues.png)
+
+A **Local do Arquivo de Projeto** está disponível no arquivo CSV para indicar o local do código incorreto. Essa coluna é o caminho relativo do projeto, enquanto a variável **Local do arquivo** é gerada por Maven.
+
+![Detalhes do problema de verificação do código do projeto](assets/managing-pipelines-code-quality-details.png)
 
 >[!NOTE]
 >
