@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f52b5f763277c9288d5dd30b01cfb7a4afeddda7
+source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 32%
 
 ---
@@ -47,7 +47,7 @@ Nenhum.
 
 ### Aviso de mudança {#change-notice-16544}
 
-A partir de setembro de 2024, o AEM as a Cloud Service desativará a serialização de Solucionadores de recursos por meio da estrutura do Exportador de modelos do Sling. Consulte [a documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter) para obter mais detalhes.
+A partir de setembro de 2024, o AEM as a Cloud Service desativará a serialização de Solucionadores de recursos por meio da estrutura do Exportador de modelos do Sling. Consulte [a documentação](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) para obter mais detalhes.
 
 ### Recursos e APIs obsoletos {#deprecated-16544}
 
