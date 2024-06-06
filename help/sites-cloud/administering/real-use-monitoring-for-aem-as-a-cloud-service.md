@@ -1,7 +1,7 @@
 ---
 title: Monitoramento de uso real para AEM as a Cloud Service
 description: Saiba como usar o Monitoramento de uso real (RUM) para capturar e analisar a experiência do usuário digital de um site ou aplicativo em tempo real.
-source-git-commit: 17a47bc440f971bcd220846ba31812fb1ee2f12e
+source-git-commit: d2997213d47d398efdb7ce3810fa0959ece072c6
 workflow-type: tm+mt
 source-wordcount: '1409'
 ht-degree: 0%
@@ -114,6 +114,6 @@ Como você analisará os dados de RUM, pode haver variações nas Exibições de
 
 1. **Como posso recusar?**
 
-Recomendamos utilizar o Monitoramento de uso real (RUM) devido aos seus benefícios significativos e que ele possa permitir a otimização das suas experiências digitais. Ele pode oferecer insights valiosos que podem ajudar a melhorar o desempenho do site.O serviço foi projetado para ser perfeito e não tem impacto no desempenho do site.
+   Recomendamos utilizar o Monitoramento de uso real (RUM) devido aos seus benefícios significativos e que ele possa permitir a otimização das suas experiências digitais. Ele pode oferecer insights valiosos que podem ajudar a melhorar o desempenho do site.O serviço foi projetado para ser perfeito e não tem impacto no desempenho do site.
 
-Recusar significa perder esses insights. No entanto, se você encontrar problemas, entre em contato com o Suporte do Adobe.
+   Recusar significa perder esses insights. No entanto, se você encontrar problemas, entre em contato com o Suporte do Adobe.
