@@ -4,10 +4,10 @@ description: Saiba como adicionar novas localidades para um Formulário adaptáv
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 9cb3b52d0cf172c16777eadbc4d78b267c3db513
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '2028'
-ht-degree: 1%
+source-wordcount: '2068'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 | Componentes de fundação | [Clique aqui](supporting-new-language-localization.md) |
 | Componentes principais | Este artigo |
 
-<span class="preview"> O recurso de suporte a idiomas da direita para a esquerda está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso de suporte a idiomas da direita para a esquerda está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). Você também pode adicionar suporte para mais locais, como Hindi(hi_IN). Você também pode apresentar o Adaptive Forms em um idioma da Direita para a Esquerda (RTL), como árabe, persa e urdu, adicionando esses locais.
 
@@ -369,6 +369,7 @@ Essas etapas orientam você na pré-visualização de um Formulário adaptável 
 ## Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
 
 * O Adobe recomenda criar um projeto de tradução após criar um Formulário adaptável. Isso simplifica o processo de localização.
+* Quando os componentes Caixa numérica e Seletor de data são convertidos em um local específico, podem ocorrer problemas de formatação. Para atenuar esse problema, uma **Idioma** A opção foi incorporada na caixa de diálogo Configurar do [Componente do seletor de datas](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/number-input#formats-configure-tab) e [Componente de caixa numérica](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Tratamento de novos campos:

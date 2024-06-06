@@ -1,17 +1,17 @@
 ---
-title: Carregar opções de lista suspensa do URL
+title: Carregar opções de lista suspensa de um URL ou outra planilha para o Edge Delivery Services para AEM Forms as a Cloud Service
 description: As opções da lista suspensa são incluídas em uma planilha distinta e, em seguida, importadas para a planilha principal por meio do URL fornecido.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: 4a534f4335376673c362ef91a877e67a523be560
+source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
 
-# Carregar opções de lista suspensa do URL
+# Opções de um URL ou outra planilha para o Edge Delivery Services para o AEM Forms as a Cloud Service
 
 O Forms geralmente inclui menus suspensos para que os usuários selecionem entre as opções predefinidas. Normalmente, essas opções são definidas no próprio formulário, mas o gerenciamento de listas longas pode ser complicado. Este guia descreve como melhorar a criação de formulários carregando opções suspensas de uma planilha separada por meio de um URL.
 
