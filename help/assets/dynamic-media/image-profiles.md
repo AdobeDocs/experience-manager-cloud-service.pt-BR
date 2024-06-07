@@ -2,10 +2,10 @@
 title: Perfis de imagem Dynamic Media
 description: Saiba como criar Perfis de imagem do Dynamic Media que contêm configurações para Tirar nitidez da máscara e Recorte inteligente, Amostra inteligente ou ambos. Em seguida, aplique o perfil a uma pasta de ativos de imagem.
 contentOwner: Rick Brough
-feature: Asset Management,Image Profiles,Renditions
+feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
 source-wordcount: '3555'
 ht-degree: 5%

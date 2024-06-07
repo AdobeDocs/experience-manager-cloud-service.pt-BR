@@ -2,13 +2,13 @@
 title: Perfis de vídeo do Dynamic Media
 description: O Dynamic Media já vem com um perfil de Codificação de vídeo adaptável predefinido. As configurações desse perfil pronto para uso são otimizadas para fornecer aos clientes a melhor experiência de visualização possível. Você também pode adicionar recorte inteligente aos seus vídeos.
 contentOwner: Rick Brough
-feature: Asset Management,Video Profiles,Renditions
+feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
 workflow-type: tm+mt
-source-wordcount: '3716'
-ht-degree: 7%
+source-wordcount: '3744'
+ht-degree: 6%
 
 ---
 
@@ -20,11 +20,11 @@ Estes são outros fatores que determinam a qualidade dos seus vídeos:
 
 * **Resolução do vídeo de origem principal carregado**
 
-   Se o vídeo MP4 foi gravado em uma resolução mais baixa, como 240p ou 360p, ele não poderá ser transmitido em alta definição.
+  Se o vídeo MP4 foi gravado em uma resolução mais baixa, como 240p ou 360p, ele não poderá ser transmitido em alta definição.
 
 * **Tamanho do reprodutor de vídeo**
 
-   Por padrão, a &quot;Largura&quot; no perfil de Codificação de vídeo adaptável está definida como &quot;Automática&quot;. Novamente, durante a reprodução, a melhor qualidade é usada com base no tamanho do reprodutor.
+  Por padrão, a &quot;Largura&quot; no perfil de Codificação de vídeo adaptável está definida como &quot;Automática&quot;. Novamente, durante a reprodução, a melhor qualidade é usada com base no tamanho do reprodutor.
 
 Consulte [Práticas recomendadas para codificação de vídeo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -33,7 +33,7 @@ Consulte também [Práticas recomendadas para organizar ativos digitais para usa
 
 >[!NOTE]
 >
->Para gerar os metadados de um vídeo e as miniaturas de imagem de vídeo associadas, o próprio vídeo deve passar pelo processo de codificação no Dynamic Media. No Adobe Experience Manager, a variável **[!UICONTROL Codificação de vídeo Dynamic Media]** o fluxo de trabalho codifica o vídeo se você tiver ativado o Dynamic Media e configurado os Cloud Services de vídeo. Esse fluxo de trabalho captura o histórico do processo de fluxo de trabalho e as informações de falha. Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se você tiver ativado o Dynamic Media e configurado os Cloud Services de vídeo, a variável **[!UICONTROL Codificação de vídeo Dynamic Media]** o fluxo de trabalho entra em vigor automaticamente ao fazer upload de um vídeo. (Se você não estiver usando o Dynamic Media, a variável **[!UICONTROL Ativo de atualização DAM]** fluxo de trabalho entra em vigor.)
+>Para gerar os metadados de um vídeo e as miniaturas de imagem de vídeo associadas, o próprio vídeo deve passar pelo processo de codificação no Dynamic Media. No Adobe Experience Manager, a variável **[!UICONTROL Codificação de vídeo Dynamic Media]** o fluxo de trabalho codifica o vídeo se você tiver ativado o Dynamic Media e configurado os Cloud Service de vídeo. Esse fluxo de trabalho captura o histórico do processo de fluxo de trabalho e as informações de falha. Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Se você tiver ativado o Dynamic Media e configurado os Cloud Service de vídeo, a variável **[!UICONTROL Codificação de vídeo Dynamic Media]** o fluxo de trabalho entra em vigor automaticamente ao fazer upload de um vídeo. (Se você não estiver usando o Dynamic Media, a variável **[!UICONTROL Ativo de atualização DAM]** fluxo de trabalho entra em vigor.)
 >
 >Os metadados são úteis ao pesquisar ativos. As miniaturas são imagens de vídeo estáticas geradas durante a codificação. Eles são exigidos pelo sistema Experience Manager e usados na interface do usuário para ajudar a identificar visualmente os vídeos na exibição Cartões, na exibição Resultados da pesquisa e na exibição da Lista de ativos. É possível ver as miniaturas geradas ao selecionar o ícone Representações (uma paleta do Painter) de um vídeo codificado.
 
@@ -323,7 +323,7 @@ Para definir parâmetros de processamento avançado para outros tipos de ativos,
 1. Na página Perfis de vídeo, marque um nome de Perfil de vídeo.
 1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**.
 1. Na página Perfil de codificação de vídeo, edite o nome e a descrição, conforme desejado.
-1. Como prática recomendada, verifique se a caixa de seleção **[!UICONTROL Codificar para transmissão adaptável]** está selecionada.
+1. Como prática recomendada, certifique-se de que o **[!UICONTROL Codificação para transmissão adaptável]** está marcada.
 Selecione o ícone de informações para obter uma descrição da transmissão adaptável da taxa de bits. (Se você estiver editando um Perfil de vídeo progressivo, não marque essa caixa de seleção.)
 1. No cabeçalho Predefinições de codificação de vídeo, adicione, edite ou exclua predefinições de codificação de vídeo que compõem o perfil.
 
@@ -379,7 +379,7 @@ Consulte também [Reprocessar ativos em uma pasta depois de ter editado seu perf
 
 1. Selecione o logotipo do Experience Manager e acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de vídeo]**.
 1. Selecione o Perfil de vídeo que deseja aplicar a uma ou várias pastas.
-1. Selecionar **[!UICONTROL Aplicar perfil às pastas]** e selecione uma ou várias pastas que deseja usar para receber os ativos carregados recentemente e selecione **[!UICONTROL Aplicar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta enquanto estão na **[!UICONTROL Exibição de cartão]**.
+1. Selecionar **[!UICONTROL Aplicar perfil às pastas]** e selecione uma ou várias pastas que deseja usar para receber os ativos carregados recentemente e selecione **[!UICONTROL Aplicar]**. As pastas que têm um perfil já atribuído a elas são indicadas ao exibir do nome do perfil logo abaixo do nome da pasta enquanto estão em **[!UICONTROL Exibição de cartão]**.
 Você pode [monitorar o progresso de um trabalho de processamento do Perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
 #### Aplicar um perfil de vídeo a pastas em Propriedades {#applying-video-profiles-to-folders-from-properties}
@@ -401,7 +401,7 @@ Consulte também [Reprocessar ativos em uma pasta](/help/assets/dynamic-media/ab
 
 * Navegue até o CRXDE Lite para o seguinte nó: `/content/dam/jcr:content`. Adicionar a propriedade `videoProfile:/libs/settings/dam/video/dynamicmedia/<name of video encoding profile>` e selecione **[!UICONTROL Salvar tudo]**.
 
-   ![chlimage_1-519](assets/chlimage_1-519.png)
+  ![chlimage_1-519](assets/chlimage_1-519.png)
 * Você pode [monitorar o progresso de um trabalho de processamento do Perfil de vídeo](#monitoring-the-progress-of-an-encoding-job).
 
 ## Monitorar o progresso de um trabalho de processamento do Perfil de vídeo {#monitoring-the-progress-of-an-encoding-job}
