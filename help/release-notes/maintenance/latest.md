@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: de06178f66c95baef15de19296a654f1ed4a0387
+source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 32%
+source-wordcount: '400'
+ht-degree: 31%
 
 ---
 
@@ -20,6 +20,11 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 16544, lançada para o público em quarta-feira, 4 de junho de 2024. A versão de manutenção anterior era a versão 16461.
 
 A Ativação de recursos 2024.6.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+
+>[!CAUTION]
+>
+>Use o SDK referenciado aqui em, pois uma regressão foi confirmada com o SDK anterior:
+>`AEM SDK v2024.06.16647.20240607T103723Z-240500`
 
 ### Aprimoramentos {#enhancements-16544}
 
