@@ -6,7 +6,7 @@ exl-id: 6dfcac3e-5654-4b4f-9134-0cd8be24332e
 source-git-commit: df4fbe8552ad61df3a8e8b44dcd1427b8f6e9240
 workflow-type: tm+mt
 source-wordcount: '1438'
-ht-degree: 18%
+ht-degree: 33%
 
 ---
 
@@ -37,22 +37,22 @@ As APIs de faturamento não levam em conta o número de páginas, o comprimento 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
 >title="Rastreador de envios de formulários"
->abstract="Este gráfico representa a contagem de envios de formulários adaptáveis durante períodos específicos. O aumento dos envios pode indicar que o formulário está se tornando mais popular ou que é necessário coletar mais dados dos usuários. **Nota:** O gráfico fornece dados específicos para a instância atual, permitindo analisar tendências rapidamente e tomar decisões informadas. Para encontrar dados de envios de outras instâncias, basta acessar o painel de cada respectiva instância."
+>abstract="Este gráfico representa a contagem de envios de formulários adaptáveis durante períodos específicos. O aumento dos envios pode indicar que o formulário está se tornando mais popular ou que é necessário coletar mais dados de usuários. **Observação:** o gráfico fornece dados específicos da instância atual, permitindo analisar tendências rapidamente e tomar decisões informadas. Para encontrar dados de envios de outras instâncias, basta acessar o painel da respectiva instância."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_conversions_graph_en"
 >title="Rastreador de representação do documento"
->abstract="Este gráfico representa a contagem da representação de documentos durante períodos específicos. **Nota:** O gráfico fornece dados específicos para a instância atual, permitindo analisar tendências rapidamente e tomar decisões informadas. Para encontrar dados de envios de outras instâncias, basta acessar o painel de cada respectiva instância."
+>abstract="Este gráfico representa a contagem de representação de documentos durante períodos específicos. **Observação:** o gráfico fornece dados específicos da instância atual, permitindo analisar tendências rapidamente e tomar decisões informadas. Para encontrar dados de envios de outras instâncias, basta acessar o painel da respectiva instância."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_newForms_graph_en"
 >title="Novo rastreador de formulários"
->abstract="O gráfico fornece informações sobre o número de formulários recém-criados durante períodos específicos. **Nota:** O gráfico fornece dados específicos para a instância atual do autor do AEM Forms. Para exibir dados de outras instâncias, acesse o painel de cada respectiva instância."
+>abstract="O gráfico fornece informações sobre o número de formulários recém-criados durante períodos específicos. **Observação:** o gráfico fornece dados específicos da instância atual do autor do AEM Forms. Para exibir dados de outras instâncias, acesse o painel da respectiva instância."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_publishedForms_graph_en"
 >title="Rastreador de formulários publicados"
->abstract="O gráfico fornece informações sobre o número de formulários publicados com êxito durante períodos específicos. **Nota:** O gráfico fornece dados específicos para a instância de publicação atual do AEM Forms. Para exibir dados de conversão de outras instâncias, acesse o painel de cada respectiva instância."
+>abstract="O gráfico fornece informações sobre o número de formulários publicados com sucesso durante períodos específicos. **Observação:** o gráfico fornece dados específicos da instância de publicação atual do AEM Forms. Para exibir dados de conversão de outras instâncias, acesse o painel da respectiva instância."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formCreationAvgDuration_graph_en"
@@ -62,18 +62,18 @@ As APIs de faturamento não levam em conta o número de páginas, o comprimento 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formPublishAvgDuration_en"
 >title="Duração média da criação de formulário"
->abstract="O gráfico exibe o tempo médio necessário para criar e publicar um formulário, medido a partir do dia inicial em que o formulário foi aberto para edição. **Nota:** O gráfico fornece dados específicos para a instância atual do autor do AEM Forms. Para exibir dados de outras instâncias, acesse o painel de cada respectiva instância."
+>abstract="O gráfico exibe o tempo médio necessário para criar e publicar um formulário, medido a partir do dia inicial em que o formulário foi aberto para edição. **Observação:** o gráfico fornece dados específicos da instância atual do autor do AEM Forms. Para exibir dados de outras instâncias, acesse o painel da respectiva instância."
 
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_formFragments_graph_en"
->title="Rastreador de fragmentos do Forms"
->abstract="Este gráfico ajuda a visualizar quantos fragmentos de formulário você está usando em seus formulários. **Nota:** O gráfico fornece dados específicos para a instância de publicação atual do AEM Forms. Para exibir dados de conversão de outras instâncias, acesse o painel de cada respectiva instância."
+>title="Rastreador de fragmentos de formulário"
+>abstract="Este gráfico ajuda a visualizar quantos fragmentos de formulário você está usando em seus formulários. **Observação:** o gráfico fornece dados específicos da instância de publicação atual do AEM Forms. Para exibir dados de conversão de outras instâncias, acesse o painel da respectiva instância."
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_avgFormPerFragments_graph_en"
 >title="Rastreador de tempo médio do fragmento de formulário"
->abstract="O gráfico exibe o tempo médio necessário para criar um fragmento de formulário, medido a partir do dia inicial em que o fragmento de formulário foi aberto para edição. **Nota:** O gráfico fornece dados específicos para a instância de publicação atual do AEM Forms. Para exibir dados de conversão de outras instâncias, acesse o painel de cada respectiva instância."
+>abstract="O gráfico exibe o tempo médio necessário para criar um fragmento de formulário, medido a partir do dia inicial em que o fragmento de formulário foi aberto para edição. **Observação:** o gráfico fornece dados específicos da instância de publicação atual do AEM Forms. Para exibir dados de conversão de outras instâncias, acesse o painel da respectiva instância."
 
 
 <!-- 
