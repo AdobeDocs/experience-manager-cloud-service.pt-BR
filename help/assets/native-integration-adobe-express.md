@@ -2,9 +2,9 @@
 title: Integração nativa do AEM Assets com o Adobe Express
 description: A integração nativa do AEM Assets com o Adobe Express permite acessar diretamente os ativos armazenados no AEM Assets na interface do usuário do Adobe Express.
 exl-id: d43e4451-da2a-444d-9aa4-4282130ee44f
-source-git-commit: 4e33782dd8db0c1185b9a7733e7bcccfbcf3c3ba
+source-git-commit: d7e144d7f7722d4de96b3f85d44432863b350f92
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -50,18 +50,19 @@ Depois de incorporar as modificações apropriadas na tela Express, você pode s
    ![Salvar ativos no AEM](assets/adobe-express-share.png)
 
 2. Na seção Armazenamento do painel direito, selecione **AEM Assets**. Adobe Express exibe a caixa de diálogo de upload.
-3. Selecione **Página atual** ou **Todas as páginas** opção de gravação. Selecionar **Página atual** O salva o arquivo na pasta de destino. No entanto, ao selecionar **Todas as páginas** O cria uma nova pasta no destino para todos os arquivos que não sejam PDF e os salva como arquivos separados, enquanto os arquivos PDF são salvos como um único arquivo na pasta de destino.
-4. Especifique um nome e um formato para o ativo. Você pode salvar o conteúdo da tela nos formatos PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. O formato se ajusta automaticamente com base no(s) ativo(s).
-5. Clique no ícone de pasta em **Pasta de destino** para selecionar um local e salvar o(s) ativo(s).
+3. Selecione **Página atual** ou **Todas as páginas**. Especifique um nome e um formato para o(s) ativo(s) a ser(em) exportado(s). É possível exportar o conteúdo da tela de desenho nos formatos PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. O formato é ajustado automaticamente com base no(s) ativo(s) na(s) página(s) da tela.
+Selecionar **Página atual** O salva o ativo da página atual na pasta de destino. Se você selecionar **Todas as páginas** e o formato de exportação não for PDF, todas as páginas da tela de desenho serão salvas como arquivos separados em uma nova pasta dentro da pasta de destino. Se o formato de exportação for PDF, todas as páginas da tela de desenho serão salvas como um único arquivo PDF na pasta de destino.
+
+4. Clique no ícone de pasta em **Pasta de destino** para selecionar um local e salvar o(s) ativo(s).
 
    ![Salvar ativos no AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-6. Opcional: é possível adicionar metadados de campanha para upload usando o **Nome do projeto ou da campanha** campo. Você pode usar um nome existente ou criar um novo. Você pode definir vários nomes de Projeto ou Campanha para o upload. Para registrar o nome, basta digitar o nome e pressionar Enter.
+5. Opcional: é possível adicionar metadados de campanha para upload usando o **Nome do projeto ou da campanha** campo. Você pode usar um nome existente ou criar um novo. Você pode definir vários nomes de Projeto ou Campanha para o upload. Para registrar o nome, basta digitar o nome e pressionar Enter.
 Como prática recomendada, o Adobe recomenda especificar valores no restante dos campos, bem como criar uma experiência de pesquisa aprimorada para os ativos carregados.
 
-7. Da mesma forma, defina valores para a variável **[!UICONTROL Palavras-chave]** e **[!UICONTROL Canais]** campos.
+6. Da mesma forma, defina valores para a variável **[!UICONTROL Palavras-chave]** e **[!UICONTROL Canais]** campos.
 
-8. Clique em **[!UICONTROL Carregar]** para fazer upload do(s) ativo(s) no AEM Assets.
+7. Clique em **[!UICONTROL Carregar]** para fazer upload do(s) ativo(s) no AEM Assets.
 
 ## Limitações {#limitations}
 
