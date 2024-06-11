@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8f7c2fc175a542df5725693cfc332802d54e1e88
+source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 31%
+source-wordcount: '422'
+ht-degree: 29%
 
 ---
 
@@ -48,7 +48,7 @@ Para obter mais informações sobre recursos e problemas novos e aprimorados cor
 
 ### Problemas conhecidos {#known-issues-16544}
 
-Nenhum.
+* GRANITE-52573: solicitações que contêm uma barra dupla `//` são rejeitados com o código de status 400. Esse comportamento será revertido em uma versão de manutenção subsequente.
 
 ### Aviso de mudança {#change-notice-16544}
 
