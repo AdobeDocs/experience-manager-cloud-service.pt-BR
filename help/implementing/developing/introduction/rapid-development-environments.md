@@ -4,9 +4,9 @@ description: Saiba como usar Ambientes de desenvolvimento rápido para iteraçõ
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
 workflow-type: tm+mt
-source-wordcount: '4294'
+source-wordcount: '4312'
 ht-degree: 3%
 
 ---
@@ -412,11 +412,6 @@ A amostra de código acima ilustra o comportamento se um pacote não resolver. N
 
 ### Implantação de código front-end com base em temas de site e modelos de site {#deploying-themes-to-rde}
 
->[!NOTE]
->
-> Este recurso ainda não está disponível. Ele será lançado em algum momento de junho.
->
-
 Os RDEs aceitam código de front-end com base em [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md). Com os RDEs, isso é feito usando uma diretiva de linha de comando para implantar pacotes de front-end, em vez do Cloud Manager [Pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) usado para outros tipos de ambiente.
 
 Como de costume, crie seu pacote de front-end usando npm:
@@ -460,6 +455,10 @@ Logs:
 >A nomenclatura dos arquivos no pacote de front-end deve seguir as seguintes convenções de nomenclatura:
 > * pasta &quot;dist&quot;, para a pasta do pacote de saída npm build
 > * arquivo &quot;package.json&quot;, para o pacote de dependências npm
+
+>[!TIP]
+>
+> Se você criou seu RDE antes de abril de 2023 e encontrou o erro &quot;UNEXPECTED_API_ERROR&quot; ao tentar o recurso de front-end pela primeira vez, tente excluir seu ambiente e criá-lo novamente.
 
 ### Verificação do Status do RDE {#checking-rde-status}
 
