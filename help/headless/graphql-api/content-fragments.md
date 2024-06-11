@@ -3,9 +3,9 @@ title: API GraphQL do AEM para uso com Fragmentos de conteúdo
 description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: d0814d3feb9ad14ddd3372851a7b2df4b0c81125
+source-git-commit: 07670a532294a4ae8afb9636a206d2a8cbdce2b9
 workflow-type: tm+mt
-source-wordcount: '5365'
+source-wordcount: '5400'
 ht-degree: 81%
 
 ---
@@ -745,7 +745,7 @@ A solução no GraphQL significa que você pode:
 >* `_dynamicUrl` : um ativo DAM
 >* `_dmS7Url` : um ativo do Dynamic Media
 > 
->Se a imagem referenciada for um ativo DAM, o valor para `_dmS7Url` será `null`. Consulte [Entrega de ativos do Dynamic Media por URL em consultas do GraphQL](#dynamic-media-asset-delivery-by-url).
+>Se o ativo referenciado for um ativo DAM, o valor de `_dmS7Url` será `null`. Consulte [Entrega de ativos do Dynamic Media por URL em consultas do GraphQL](#dynamic-media-asset-delivery-by-url).
 
 ### Estrutura da solicitação de transformação {#structure-transformation-request}
 
@@ -925,10 +925,6 @@ As seguintes limitações existem:
 
 O GraphQL para fragmentos de conteúdo AEM permite solicitar um URL para um ativo AEM Dynamic Media (Scene7) (referenciado por um **Referência de conteúdo**).
 
->[!CAUTION]
->
->Somente *imagem* os ativos do Dynamic Media podem ser referenciados.
-
 A solução no GraphQL significa que você pode:
 
 * usar `_dmS7Url` na referência `ImageRef`
@@ -946,12 +942,12 @@ A solução no GraphQL significa que você pode:
 >* `_dmS7Url` : um ativo do Dynamic Media
 >* `_dynamicUrl` : um ativo DAM
 > 
->Se a imagem referenciada for um ativo Dynamic Media, o valor de `_dynamicURL` será `null`. Consulte [entrega de imagens otimizadas para a Web em consultas do GraphQL](#web-optimized-image-delivery-in-graphql-queries).
+>Se o ativo referenciado for um ativo Dynamic Media, o valor de `_dynamicURL` será `null`. Consulte [entrega de imagens otimizadas para a Web em consultas do GraphQL](#web-optimized-image-delivery-in-graphql-queries).
 
-### Exemplo de consulta para entrega de ativos do Dynamic Media por URL {#sample-query-dynamic-media-asset-delivery-by-url}
+### Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Referência da imagem{#sample-query-dynamic-media-asset-delivery-by-url-imageref}
 
 Este é um exemplo de consulta:
-* por vários Fragmentos de conteúdo do tipo `team` e `person`
+* por vários Fragmentos de conteúdo do tipo `team` e `person`, retornando um `ImageRef`
 
 ```graphql
 query allTeams {
@@ -973,6 +969,47 @@ query allTeams {
     }
   }
 } 
+```
+
+### Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Várias referências{#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs}
+
+Este é um exemplo de consulta:
+* por vários Fragmentos de conteúdo do tipo `team` e `person`, retornando um `ImageRef`, `MultimediaRef` e `DocumentRef`:
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      _path
+      title
+      teamMembers {
+        fullName
+        profilePicture {
+          __typename
+          ... on ImageRef{
+            _dmS7Url
+            height
+            width
+          }
+        }
+       featureVideo {
+          __typename
+          ... on MultimediaRef{
+            _dmS7Url
+            size
+          }
+        }
+      about-me {
+          __typename
+          ... on DocumentRef{
+            _dmS7Url
+            _path
+          }
+        }
+      }
+    }
+  }
+}
 ```
 
 ## GraphQL para AEM - resumo das extensões {#graphql-extensions}
@@ -1070,7 +1107,9 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
       * `_dmS7Url`: na guia `ImageRef` referência para a entrega do URL a um [Ativo do Dynamic Media](#dynamic-media-asset-delivery-by-url)
 
-         * Consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL](#sample-query-dynamic-media-asset-delivery-by-url)
+         * Consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL - ImageRef](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+
+         * Consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Várias referências](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
    * `_tags`: para revelar as IDs dos Fragmentos de conteúdo ou Variações que contêm tags; é uma matriz de `cq:tags` identificadores.
 
