@@ -4,9 +4,9 @@ description: Saiba mais sobre como encaminhar logs para o Splunk e outros fornec
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0e166e8549febcf5939e4e6025519d8387231880
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ Os clientes que têm uma licença para um fornecedor de registro ou hospedam um 
 
 O encaminhamento de logs é configurado de maneira automatizada declarando uma configuração no Git e implantando-a por meio do Pipeline de configuração do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção em programas de produção (não sandbox).
 
+Há uma opção para que os registros do AEM e do Apache/Dispatcher sejam roteados por meio de infraestruturas de rede avançadas do AEM, como IP de saída dedicado.
+
 Observe que a largura de banda da rede associada aos registros enviados ao destino de registro é considerada parte do uso de E/S da rede da organização.
 
 
@@ -36,6 +38,7 @@ Este artigo está organizado da seguinte maneira:
 
 * Configuração - comum para todos os destinos de registro
 * Configurações de destino de registro - cada destino tem um formato um pouco diferente
+* Formatos de Entrada de Log - informações sobre os formatos de entrada de log
 * Rede avançada - envio de logs do AEM e do Apache/Dispatcher por meio de uma saída dedicada ou por meio de uma VPN
 
 
@@ -48,7 +51,7 @@ Este artigo está organizado da seguinte maneira:
         logForwarding.yaml
    ```
 
-1. logForwarding.yaml deve conter metadados e uma configuração semelhante ao seguinte formato (usamos o Splunk como exemplo).
+1. `logForwarding.yaml` deve conter metadados e uma configuração semelhante ao seguinte formato (usamos o Splunk como exemplo).
 
    ```
    kind: "LogForwarding"
@@ -64,7 +67,7 @@ Este artigo está organizado da seguinte maneira:
          index: "AEMaaCS"
    ```
 
-   A variável **tipo** deve ser definido como LogForwarding a versão deve ser definida como a versão do schema, que é 1.
+   A variável **tipo** O parâmetro deve ser definido como `LogForwarding` a versão deve ser definida como a versão do schema, que é 1.
 
    Os tokens na configuração (como `${{SPLUNK_TOKEN}}`) representam segredos, que não devem ser armazenados no Git. Em vez disso, declare-os como Cloud Manager  [Variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md) do tipo **segredo**. Selecione **Todos** como o valor suspenso do campo Serviço aplicado, os logs podem ser encaminhados para os níveis de criação, publicação e visualização.
 
@@ -134,14 +137,53 @@ data:
 
 Um token SAS deve ser usado para autenticação. Ela deve ser criada na página Shared access signature, em vez de na página Shared access token, e deve ser configurada com estas configurações:
 
-* Serviços permitidos: o blob deve ser selecionado
-* Recursos permitidos: o objeto deve ser selecionado
-* Permissões permitidas: Gravar, Adicionar, Criar devem ser selecionadas
+* Serviços permitidos: o blob deve ser selecionado.
+* Recursos permitidos: o objeto deve ser selecionado.
+* Permissões permitidas: Gravar, Adicionar, Criar devem ser selecionadas.
 * Uma data/hora de início e expiração válidas.
 
 Esta é uma captura de tela de um exemplo de configuração de token SAS:
 
 ![Configuração do token SAS do Azure Blob](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
+
+#### Logs CDN do Armazenamento de Blobs do Azure {#azureblob-cdn}
+
+Cada um dos servidores de registro distribuídos globalmente produzirá um novo arquivo a cada poucos segundos, no `aemcdn` pasta. Depois de criado, o arquivo não será mais anexado ao. O formato do nome do arquivo é AAAA-MM-DDThh:mm:ss.sss-uniqueid.log. Por exemplo, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
+
+Como exemplo, em algum momento:
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+```
+
+E 30 segundos depois:
+
+```
+aemcdn/
+   2024-03-04T10:00:00.000-abc.log
+   2024-03-04T10:00:00.000-def.log
+   2024-03-04T10:00:30.000-ghi.log
+   2024-03-04T10:00:30.000-jkl.log
+   2024-03-04T10:00:30.000-mno.log
+```
+
+Cada arquivo contém várias entradas de log json, cada uma em uma linha separada. Os formatos de entrada de log estão descritos no [artigo de registro](/help/implementing/developing/introduction/logging.md), e cada entrada de log também inclui as propriedades adicionais mencionadas na variável [Formatos de entrada de log](#log-format) abaixo.
+
+#### Outros logs do Armazenamento Azure Blob {#azureblob-other}
+
+Os logs diferentes dos logs CDN aparecem abaixo de uma pasta com a seguinte convenção de nomenclatura:
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpderror
+
+Em cada pasta, um único arquivo será criado e anexado a. Os clientes são responsáveis pelo processamento e gerenciamento desse arquivo, de modo que ele não fique muito grande.
+
+Consulte os formatos de entrada de log no [artigo de registro](/help/implementing/developing/introduction/logging.md). As entradas de log também incluirão as propriedades adicionais mencionadas na variável [Formatos de entrada de log](#log-formats) abaixo.
 
 
 ### Datadog {#datadog}
@@ -202,6 +244,24 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
+#### Logs HTTPS CDN {#https-cdn}
+
+As solicitações da Web (POSTs) serão enviadas continuamente, com uma carga json que é uma matriz de entradas de log, com o formato de entrada de log descrito na [artigo de registro](/help/implementing/developing/introduction/logging.md#cdn-log). As propriedades adicionais são mencionadas na [Formatos de entrada de log](#log-formats) abaixo.
+
+Também há uma propriedade chamada `sourcetype`, que é definido como o valor `aemcdn`.
+
+#### Outros logs HTTPS {#https-other}
+
+Uma solicitação da Web (POST) separada será enviada para cada entrada de log, com os formatos de entrada de log descritos na [artigo de registro](/help/implementing/developing/introduction/logging.md). As propriedades adicionais são mencionadas na [Formatos de entrada de log](#log-format) abaixo.
+
+Também há uma propriedade chamada `sourcetype`, que é definida como um destes valores:
+
+* aemaccess
+* aemerror
+* aemdispatcher
+* httpdaccess
+* httpderror
+
 ### Splunk {#splunk}
 
 ```
@@ -237,9 +297,38 @@ data:
    ```   
 -->
 
+## Formatos de entrada de log {#log-formats}
+
+Consulte as [artigo de registro](/help/implementing/developing/introduction/logging.md) para o formato de cada tipo de log respectivo (log do Dispatcher, log do CDN etc.).
+
+Como os registros de vários programas e ambientes podem ser encaminhados para o mesmo destino de registro, além da saída descrita no artigo de registro, as seguintes propriedades serão incluídas em cada entrada de registro:
+
+* aem_env_id
+* aem_env_type
+* aem_program_id
+* aem_tier
+
+Como exemplo, as propriedades podem ter os seguintes valores:
+
+```
+aem_env_id: 1242
+aem_env_type: dev
+aem_program_id: 12314
+aem_tier: author
+```
+
 ## Rede avançada {#advanced-networking}
 
-Se você tiver requisitos organizacionais para bloquear o tráfego para o destino de registro, poderá configurar o encaminhamento de registros para passar pelo [rede avançada](/help/security/configuring-advanced-networking.md). Veja os padrões dos três tipos avançados de rede abaixo, que usam uma `port` juntamente com o parâmetro `host` parâmetro.
+>[!NOTE]
+>
+>Esse recurso ainda não está pronto para os participantes iniciais.
+
+
+Algumas organizações escolhem restringir qual tráfego pode ser recebido pelos destinos de registro.
+
+Para o log CDN, é possível adicionar os endereços IP à lista de permissões, conforme descrito em [este artigo](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se essa lista de endereços IP compartilhados for muito grande, considere enviar tráfego para um Azure Blob Store (não Adobe) em que a lógica possa ser gravada para enviar os logouts de um IP dedicado para seu destino final.
+
+Para outros logs, é possível configurar o encaminhamento de logs para passar [rede avançada](/help/security/configuring-advanced-networking.md). Veja os padrões dos três tipos avançados de rede abaixo, que usam uma `port` juntamente com o parâmetro `host` parâmetro.
 
 ### Saída flexível da porta {#flex-port}
 
@@ -249,7 +338,7 @@ Se o tráfego de log for para uma porta diferente da 443 (por exemplo, 8443 abai
 {
     "portForwards": [
         {
-            "name": "mylogging.service.logger.com",
+            "name": "splunk-host.example.com",
             "portDest": 8443, # something other than 443
             "portOrig": 30443
         }    
@@ -265,7 +354,7 @@ version: "1"
 data:
   splunk:
     default:
-      host: "proxy.tunnel"
+      host: "${{AEM_PROXY_HOST}}"
       token: "${{SomeToken}}"
       port: 30443
       index: "index_name"
@@ -273,14 +362,15 @@ data:
 
 ### IP de saída dedicado {#dedicated-egress}
 
+
 Se o tráfego de log precisar vir de um IP de saída dedicado, configure redes avançadas da seguinte maneira:
 
 ```
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443, 
             "portOrig": 30443
         }    
     ]
@@ -290,15 +380,25 @@ Se o tráfego de log precisar vir de um IP de saída dedicado, configure redes a
 e configure o arquivo yaml da seguinte maneira:
 
 ```
+      
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "proxy.tunnel"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443    
 ```
 
 ### VPN {#vpn}
@@ -309,24 +409,29 @@ Se o tráfego de log precisar passar por uma VPN, configure a rede avançada da 
 {
     "portForwards": [
         {
-            "name": "mylogging.service.com",
-            "portDest": 443, # something other than 443
+            "name": "splunk-host.example.com",
+            "portDest": 443,
             "portOrig": 30443
         }    
     ]
 }
-```
 
-e configure o arquivo yaml da seguinte maneira:
-
-```
 kind: "LogForwarding"
 version: "1"
+   metadata:
+     envTypes: ["dev"]
 data:
   splunk:
-    default:
-      host: "mylogging.service.com"
-      token: "${{SomeToken}}"
-      port: 30443
-      index: "index_name"
+     default:
+       enabled: true
+       index: "index_name" 
+       token: "${{SPLUNK_TOKEN}}"  
+     aem:
+       enabled: true
+       host: "${{AEM_PROXY_HOST}}"
+       port: 30443       
+     cdn:
+       enabled: true
+       host: "splunk-host.example.com"
+       port: 443     
 ```
