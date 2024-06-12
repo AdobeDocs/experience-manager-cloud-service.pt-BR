@@ -4,10 +4,10 @@ description: Estas são as notas de versão do Cloud Manager 2024.6.0 no AEM as 
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 958d8fb3526bafeb5a3be9828bddfa3330c05fec
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 29%
+source-wordcount: '548'
+ht-degree: 38%
 
 ---
 
@@ -54,13 +54,13 @@ O Cloud Manager agora permite [o autoatendimento gera e gerencia certificados SS
 
 Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `Grp-aemcs-dv-dert-adopter@adobe.com` do endereço de email associado à sua Adobe ID.
 
-### Coleta do lado do cliente por meio do monitoramento de uso real (RUM) {#rum}
+<!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
 
-Você pode aproveitar o [Serviço de dados de monitoramento de uso real (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) para ativar a coleta no lado do cliente para o AEM as a Cloud Service.
+You can leverage the [Real Use Monitoring (RUM) Data Service](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) to enable client-side collection for AEM as a Cloud Service.
 
-O Serviço de dados de Monitoramento de uso real (RUM) oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. É uma ótima oportunidade para obter insights avançados sobre o desempenho da página. Isso é benéfico para clientes que usam CDN gerenciada por Adobe ou CDN gerenciada por não Adobe. Para clientes que usam um CDN não gerenciado por Adobe, o relatório de tráfego automatizado agora pode ser ativado para eles, eliminando a necessidade de compartilhar qualquer relatório de tráfego com o Adobe.
+Real Use Monitoring (RUM) Data Service offers a more precise reflection of user interactions, ensuring a reliable measure of website engagement. It is a great opportunity to gain advanced insights into your page performance. This is beneficial for customers who use either Adobe-managed CDN or non-Adobe managed CDN. For customers using a non-Adobe managed CDN, automated traffic reporting can now be enabled for them, thus removing the need to share any traffic report with Adobe.
 
-Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-rum-adopter@adobe.com` do endereço de email associado à sua Adobe ID. Inclua o nome de domínio dos ambientes de produção, preparo e desenvolvimento em seu email.  A disponibilidade do programa de adoção antecipada deste recurso é limitada.
+If you are interested in testing this new feature and sharing your feedback, please send an email to `aemcs-rum-adopter@adobe.com` from the email address associated with your Adobe ID. Please include the domain name for production, stage, and dev environments in your email.  Availability of the early adopter program of this feature is limited. -->
 
 ### Painel de auditoria de experiência {#experience-audit-dashboard}
 
