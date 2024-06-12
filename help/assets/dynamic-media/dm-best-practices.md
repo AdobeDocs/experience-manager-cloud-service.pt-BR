@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: e2d9823575f75e4cd38a61a35569cbbe14b30fc6
+source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -91,6 +91,8 @@ Quer saber mais? Ir para [Organizar ativos como coleções](/help/assets/manage-
 * **Organize ativos usando perfis:**
 Um perfil de processamento automatiza o manuseio de ativos em pastas designadas, simplificando a organização. A padronização de metadados, nomes de arquivos e estruturas de pastas permite a aplicação consistente e precisa desses perfis à medida que a sua coleção de ativos digitais se expande.
 Quer saber mais? Ir para [Organizar ativos usando perfis](/help/assets/organize-assets.md#organize-to-use-profiles).
+
+
 
 ### Otimizar a qualidade das imagens
 
