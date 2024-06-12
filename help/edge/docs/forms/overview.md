@@ -4,7 +4,7 @@ description: O AEM Forms Edge Delivery Services foi criado para desempenho máxi
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Esses serviços permitem:
 
 * **Crie experiências de inscrição com ferramentas de sua escolha:** Aumente a eficiência da criação desvinculando as fontes de conteúdo. Você pode usar a Criação baseada em documento (Microsoft SharePoint ou Google Drive) e a Criação de AEM (Adaptive Forms Editor) prontas para uso. Você pode trabalhar com várias fontes de conteúdo no mesmo site de formulários e usar suas ferramentas de criação preferidas, como o Microsoft Excel, o Google Sheets ou o Adaptive Forms Editor.
 
-* **Ofereça experiências excepcionais de inscrição digital:** Ofereça experiências de Inscrição digital que carregam e renderizam de forma rápida e contínua, monitorando o desempenho de seus formulários por meio do monitoramento real de usuários (RUM). Tempos de carregamento mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de conclusão e conversão de formulários.
+* **Ofereça experiências excepcionais de inscrição digital:** Ofereça experiências de Inscrição digital que carregam e renderizam de forma rápida e contínua, monitorando o desempenho de seus formulários por meio do monitoramento de uso real (RUM). Tempos de carregamento mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de conclusão e conversão de formulários.
 
 * **Usar conjunto de ferramentas para desenvolvedores:** O AEM Forms Edge Delivery Services usa HTML simples, CSS moderno e JavaScript padrão para criar experiências excepcionais, evitando a curva de aprendizado íngreme de uma estrutura específica. Um desenvolvedor com habilidades básicas de desenvolvimento na Web pode personalizar e criar facilmente componentes e experiências de formulários. Não há necessidade de aguardar a execução de um pipeline. Basta fazer o check-in do código no GitHub e suas alterações estarão ativas.
 
@@ -61,7 +61,7 @@ A Criação baseada em documento permite criar formulários usando ferramentas f
 * Integração do Google reCAPTCHA para proteção contra spam.
 * Capacidade de criar componentes de formulário personalizados para necessidades específicas.
 * Envie dados de formulário diretamente para o Microsoft Excel ou o Google Sheets ou endereços de email.
-* Monitore o desempenho de seus formulários por meio do monitoramento de usuário real (RUM)
+* Monitore o desempenho de seus formulários por meio do monitoramento de uso real (RUM)
 
 #### Recursos de criação do AEM
 

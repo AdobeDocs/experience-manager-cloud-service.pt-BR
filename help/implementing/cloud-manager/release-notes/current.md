@@ -4,10 +4,10 @@ description: Estas são as notas de versão do Cloud Manager 2024.6.0 no AEM as 
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 5644e6f433b18408780e13057ba469e7c4926f78
+source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 11%
+ht-degree: 29%
 
 ---
 
@@ -27,14 +27,14 @@ A data de lançamento do Cloud Manager versão 2024.6.0 no AEM as a Cloud Servic
 ## Novidades {#what-is-new}
 
 * Agora você pode [usar seus próprios repositórios GitHub](/help/implementing/cloud-manager/managing-code/private-repositories.md) como fontes para pipelines de pilha completa e de front-end.
-   * Além disso, você pode aproveitar os repositórios GitHub com o [submódulos Git,](/help/implementing/cloud-manager/managing-code/git-submodules.md) fornecendo controle aprimorado sobre os pipelines gerados automaticamente usados para validação de solicitação de pull e permitindo definir comportamentos para métricas cruciais durante a fase de verificação de código.
-   * [Você também tem a escolha](/help/implementing/cloud-manager/managing-code/github-check-config.md) para preservar o histórico de relatórios no GitHub, nomeie o pipeline e defina variáveis de pipeline para atender às suas necessidades.
+   * Além disso, é possível aproveitar os repositórios GitHub com [submódulos Git,](/help/implementing/cloud-manager/managing-code/git-submodules.md) fornecendo um controle aprimorado sobre os pipelines gerados automaticamente usados para validação de solicitação de pull e permitindo definir comportamentos para métricas cruciais durante a fase de verificação de código.
+   * [Você também tem a opção](/help/implementing/cloud-manager/managing-code/github-check-config.md) de preservar o histórico do relatório no GitHub, nomear o pipeline e definir variáveis de pipeline para atender às suas necessidades.
 * [Restauração de conteúdo de autoatendimento](/help/operations/restore.md) oferece restauração de backup por até sete dias e recursos:
    * Restauração de backup point-in-time nas últimas 24 horas
    * Restaurações por tempo fixo de até sete dias
 * [Novas regras do OakPal](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) foram adicionados à verificação de qualidade do código do Cloud Manager.
-   * Cada nova regra adicionada a partir de junho de 2024 é uma alteração ininterrupta.
-   * Você é solicitado a resolver isso o mais rápido possível, pois essas novas regras causarão falhas nos pipelines a partir da versão de agosto de 2024 do Cloud Manager.
+   * Todas as nova regras adicionadas até junho de 2024 são alterações secundárias.
+   * Recomendamos que você resolva isso o mais rápido possível, pois essas novas regras causarão falhas nos pipelines a partir da versão de agosto de 2024 do Cloud Manager.
 
 ## Programa de adoção antecipada {#early-adoption}
 
@@ -54,11 +54,11 @@ O Cloud Manager agora permite [o autoatendimento gera e gerencia certificados SS
 
 Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `Grp-aemcs-dv-dert-adopter@adobe.com` do endereço de email associado à sua Adobe ID.
 
-### Coleta do lado do cliente por meio do monitoramento de usuário real (RUM) {#rum}
+### Coleta do lado do cliente por meio do monitoramento de uso real (RUM) {#rum}
 
-Você pode aproveitar o [Serviço de Dados de Monitoramento do Usuário Real (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) para ativar a coleta no lado do cliente para o AEM as a Cloud Service.
+Você pode aproveitar o [Serviço de dados de monitoramento de uso real (RUM)](/help/implementing/cloud-manager/content-requests.md#cliendside-collection) para ativar a coleta no lado do cliente para o AEM as a Cloud Service.
 
-O Serviço de dados de monitoramento de usuário real (RUM) oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. É uma ótima oportunidade para obter insights avançados sobre o desempenho da página. Isso é benéfico para clientes que usam CDN gerenciada por Adobe ou CDN gerenciada por não Adobe. Para clientes que usam um CDN não gerenciado por Adobe, o relatório de tráfego automatizado agora pode ser ativado para eles, eliminando a necessidade de compartilhar qualquer relatório de tráfego com o Adobe.
+O Serviço de dados de Monitoramento de uso real (RUM) oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. É uma ótima oportunidade para obter insights avançados sobre o desempenho da página. Isso é benéfico para clientes que usam CDN gerenciada por Adobe ou CDN gerenciada por não Adobe. Para clientes que usam um CDN não gerenciado por Adobe, o relatório de tráfego automatizado agora pode ser ativado para eles, eliminando a necessidade de compartilhar qualquer relatório de tráfego com o Adobe.
 
 Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-rum-adopter@adobe.com` do endereço de email associado à sua Adobe ID. Inclua o nome de domínio dos ambientes de produção, preparo e desenvolvimento em seu email.  A disponibilidade do programa de adoção antecipada deste recurso é limitada.
 
