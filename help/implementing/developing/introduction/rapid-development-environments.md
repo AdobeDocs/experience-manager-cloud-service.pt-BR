@@ -4,9 +4,9 @@ description: Saiba como usar Ambientes de desenvolvimento rápido para iteraçõ
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1c157af3f7ed4ab3ae4a67d7db200e772cf8b565
+source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
 workflow-type: tm+mt
-source-wordcount: '4312'
+source-wordcount: '4220'
 ht-degree: 3%
 
 ---
@@ -83,81 +83,7 @@ Depois de ter adicionado um RDE para seu programa usando o Cloud Manager, você 
 
 >[!IMPORTANT]
 >
->Verifique se você tem a versão mais recente do [Nó e NPM instalados](https://nodejs.org/en/download/) para que a CLI do Adobe I/O e os plug-ins relacionados funcionem corretamente.
-
-
-1. Instale as ferramentas Adobe I/O CLI seguindo o procedimento [aqui](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
-1. Instale o plug-in Adobe I/O CLI tools do Cloud Manager e configure-o conforme descrito [aqui](https://github.com/adobe/aio-cli-plugin-cloudmanager).
-1. Instale o plug-in AEM RDE das ferramentas de CLI do Adobe I/O executando estes comandos:
-
-   ```
-   aio plugins:install @adobe/aio-cli-plugin-aem-rde
-   aio plugins:update
-   ```
-
-1. Configure o plug-in do Cloud Manager para sua ID da organização:
-
-   `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
-
-   e substitua a sequência alfanumérica pela sua própria ID da organização, que pode ser pesquisada usando a estratégia [aqui](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255).
-
-1. Em seguida, configure a ID do programa:
-
-   `aio config:set cloudmanager_programid 12345`
-
-1. Em seguida, configure a ID de ambiente à qual o RDE será anexado:
-
-   `aio config:set cloudmanager_environmentid 123456`
-
-1. Depois de concluir a configuração do plug-in, faça logon executando
-
-   `aio login`
-
-   A resposta em um logon bem-sucedido deve se parecer com a saída abaixo, mas você pode ignorar os valores exibidos.
-
-   ```
-   ...
-   You are currently in:
-   1. Org: <no org selected>
-   2. Project: <no project selected>
-   3. Workspace: <no workspace selected>
-   ```
-
-   Esta etapa exige que você seja membro do Cloud Manager **Desenvolvedor - Cloud Service** Perfil do produto. Consulte [esta página](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obter mais detalhes.
-
-   Como alternativa, você pode confirmar que tem essa função de desenvolvedor se puder fazer logon no console do desenvolvedor executando este comando:
-
-   `aio cloudmanager:environment:open-developer-console`
-
-   >[!TIP]
-   >
-   >Se você vir a variável `Warning: cloudmanager:list-programs is not a aio command.` erro, você deve instalar o [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) executando o comando abaixo:
-   >
-   >```
-   >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
-   >```
-
-1. Verifique se o logon foi concluído com êxito executando o
-
-   `aio cloudmanager:list-programs`
-
-   Isso deve listar todos os programas na organização configurada.
-
-
-Para obter mais informações e demonstrações, assista ao tutorial em vídeo [como configurar um RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
-
-## Instalação das Ferramentas de Linha de Comando do RDE (com modo interativo) {#installing-the-rde-command-line-tools-interactive}
-
->[!NOTE]
->
-> Este processo de instalação ainda não está disponível. Ele substituirá o processo anterior em algum momento de junho.
-> 
-
-Depois de ter adicionado um RDE para seu programa usando o Cloud Manager, você pode interagir com ele configurando as ferramentas de linha de comando, conforme descrito nas seguintes etapas:
-
->[!IMPORTANT]
->
->Verifique se você tem a versão mais recente do [Nó e NPM instalados](https://nodejs.org/en/download/) para que a CLI do Adobe I/O e os plug-ins relacionados funcionem corretamente.
+>Verifique se você tem a versão 20 do [Nó e NPM instalados](https://nodejs.org/en/download/) para que a CLI do Adobe I/O e os plug-ins relacionados funcionem corretamente.
 
 
 1. Instale as ferramentas da CLI do Adobe I/O de acordo com este [procedimento](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
@@ -177,7 +103,7 @@ Depois de ter adicionado um RDE para seu programa usando o Cloud Manager, você 
 
    A etapa de configuração pode ser ignorada se a intenção for usar um ambiente com script, nesse caso, os valores de organização, programa e ambiente podem ser incluídos em cada comando. [Consulte comandos rde abaixo para obter mais informações](#rde-cli-commands).
 
-### A configuração interativa
+### A configuração interativa {#installing-the-rde-command-line-tools-interactive}
 
 O comando setup perguntará se a configuração fornecida deve ser armazenada local ou globalmente.
 
@@ -214,6 +140,37 @@ Para ver o contexto do ambiente atual, execute:
 O comando responderá com um resultado semelhante a:
 
 ```Current configuration: cm-p1-e1: programName - environmentName (organization: ...@AdobeOrg)```
+
+### Procedimento de configuração manual em um ambiente não interativo {#manual-setup}
+
+Para ambientes em que nenhum usuário pode executar interativamente o comando de configuração conforme descrito acima (como CI/CD ou scripts), os três parâmetros para organização, programa e ambiente podem ser configurados manualmente de acordo com as etapas a seguir.
+
+
+<details>
+  <summary>Expanda para encontrar detalhes sobre como configurar manualmente</summary>
+
+1. Configure a ID da organização e substitua a sequência alfanumérica pela ID da própria organização.
+
+   `aio config:set cloudmanager_orgid 4E03EQC05D34GL1A0B49421C@AdobeOrg`
+
+   * Sua própria ID da organização pode ser pesquisada usando o método [documentado aqui.](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255)
+
+1. Em seguida, configure a ID do programa:
+
+   `aio config:set cloudmanager_programid 12345`
+
+1. Em seguida, configure a ID de ambiente à qual o RDE será anexado:
+
+   `aio config:set cloudmanager_environmentid 123456`
+
+1. Depois de concluir a configuração do plug-in, faça logon executando
+
+   `aio login`
+
+   Essas etapas exigem que você seja membro do Cloud Manager **Desenvolvedor - Cloud Service** Perfil do produto. Consulte [esta página](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obter mais detalhes.
+
+Para obter mais informações e demonstrações, assista ao tutorial em vídeo [como configurar um RDE (06:24)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
+</details>
 
 ## Usar o RDE ao desenvolver um novo recurso {#using-rde-while-developing-a-new-feature}
 
@@ -613,12 +570,12 @@ Para obter mais informações sobre como usar o Cloud Manager para gerenciar seu
 
 A maioria dos comandos oferece suporte ao ```--json``` sinalizador que suprime a saída do console e retorna um json válido para ser processado em scripts. Abaixo estão alguns comandos compatíveis, com exemplos da saída json.
 
-### Status
+### Status {#status}
 
 <details>
   <summary>Expanda para ver exemplos de status</summary>
 
-#### Um RDE limpo
+#### Um RDE limpo {#clean-rde}
 
 ```$ aio aem rde status --json```
 
@@ -638,7 +595,7 @@ A maioria dos comandos oferece suporte ao ```--json``` sinalizador que suprime a
 }
 ```
 
-#### Um RDE com alguns pacotes instalados
+#### Um RDE com alguns pacotes instalados {#rde-installed-bundles}
 
 ```$ aio aem rde status --json```
 
@@ -707,7 +664,7 @@ A maioria dos comandos oferece suporte ao ```--json``` sinalizador que suprime a
 ```
 </details>
 
-### Instalar
+### Instalar {#install}
 
 <details>
   <summary>Expanda para ver exemplos de instalação</summary>
@@ -747,7 +704,7 @@ A maioria dos comandos oferece suporte ao ```--json``` sinalizador que suprime a
 ```
 </details>
 
-### Excluir
+### Excluir {#delete}
 
 <details>
   <summary>Expanda para ver exemplos de exclusão</summary>
@@ -829,7 +786,7 @@ A maioria dos comandos oferece suporte ao ```--json``` sinalizador que suprime a
 
 </details>
 
-### Histórico
+### Histórico {#history}
 
 <details>
   <summary>Expanda para ver exemplos de histórico</summary>
@@ -925,12 +882,12 @@ A maioria dos comandos oferece suporte ao ```--json``` sinalizador que suprime a
 ```
 </details>
 
-### Redefinir
+### Redefinir {#reset}
 
 <details>
   <summary>Expanda para ver exemplos de Redefinição</summary>
 
-#### Disparar e esquecer, Sem espera
+#### Disparar e esquecer, Sem espera {#fire-no-wait}
 
 ```$ aio aem rde reset --no-wait --json```
 
@@ -942,7 +899,7 @@ A maioria dos comandos oferece suporte ao ```--json``` sinalizador que suprime a
 }
 ```
 
-#### Aguardar a Conclusão
+#### Aguardar a Conclusão {#wait}
 
 ```$ aio aem rde reset --json```
 
@@ -955,7 +912,7 @@ A maioria dos comandos oferece suporte ao ```--json``` sinalizador que suprime a
 ```
 </details>
 
-### Reiniciar
+### Reiniciar {#restart}
 
 <details>
   <summary>Expanda para ver exemplos de Reinicialização</summary>
@@ -1043,11 +1000,17 @@ Os desenvolvedores da Forms podem usar o Ambiente de desenvolvimento Cloud Servi
 
 Para saber mais sobre a RDE no AEM as a Cloud Service, veja o tutorial em vídeo que demonstra [como configurá-lo, como usá-lo e o ciclo de vida do desenvolvimento (01:25)](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
 
-# Resolução de problemas
+# Resolução de problemas {#troubleshooting}
 
-## Plug-in aio RDE {#aio-rde-plugin}
+## Solução de problemas de RDE (#rde-troublehooting)
 
-### erros relacionados a permissões insuficientes
+### Como obter a versão mais recente do AEM para um RDE existente {#get-latest-aem-version}
+
+Após a criação, os RDEs são definidos para a versão mais recente do Adobe Experience Manager (AEM). Um [redefinição RDE,](#reset-rde) que pode ser executado usando o Cloud Manager ou o `aio aem:rde:reset` , desloca o RDE e o configura para a versão do AEM mais recente.
+
+## solução de problemas do plug-in aio RDE {#aio-rde-plugin-troubleshooting}
+
+### Erros relacionados a permissões insuficientes {#insufficient-permissions}
 
 Para usar o plug-in RDE, é necessário ser membro do Cloud Manager **Desenvolvedor - Cloud Service** Perfil do produto. Consulte [esta página](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) para obter mais detalhes.
 
