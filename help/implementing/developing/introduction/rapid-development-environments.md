@@ -4,9 +4,9 @@ description: Saiba como usar Ambientes de desenvolvimento rápido para iteraçõ
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c3d16e82702efd73accd1fffdfc4957ceb4509ec
+source-git-commit: 3577db15a276bed253c8fa51cbd100e90ec5ef45
 workflow-type: tm+mt
-source-wordcount: '4220'
+source-wordcount: '4244'
 ht-degree: 3%
 
 ---
@@ -472,11 +472,6 @@ Para obter mais informações e uma demonstração, consulte o tutorial em víde
 
 ## Logs {#rde-logging}
 
->[!NOTE]
->
-> Este recurso ainda não está disponível. Ele será lançado em algum momento de junho.
-> 
-
 Semelhante a outros tipos de ambiente, os níveis de log podem ser definidos modificando as configurações do OSGi, embora, conforme descrito acima, o modelo de implantação para RDEs envolva uma linha de comando em vez de uma implantação do Cloud Manager. Verifique a [documentação de registro](/help/implementing/developing/introduction/logging.md) para obter mais informações sobre como visualizar, baixar e interpretar logs.
 
 A CLI do RDE também tem seu próprio comando de registro que pode ser usado para configurar rapidamente quais classes e pacotes devem ser registrados e em que nível de registro. Essas configurações podem ser visualizadas como efêmeras, pois não modificam as propriedades OSGI no controle de versão. Esse recurso tem como foco rastrear logs em tempo real, em vez de pesquisar logs de um passado distante.
@@ -484,6 +479,14 @@ A CLI do RDE também tem seu próprio comando de registro que pode ser usado par
 O exemplo a seguir ilustra como rastrear a camada do autor, com um pacote definido para um nível de log de depuração e dois pacotes (separados por espaços) definidos para um nível de depuração de informações. Saída que inclui um **auth** O pacote de é realçado.
 
 `aio aem:rde:logs --target=author --debug=org.apache.sling --info=org.apache.sling.commons.threads.impl org.apache.sling.jcr.resource.internal.helper.jcr -H .auth.`
+
+>[!TIP]
+>
+>Se você vir o erro `RDECLI:UNEXPECTED_API_ERROR` ao executar os comandos de logs para o serviço de autoria, redefina o ambiente e tente novamente. Esse erro será lançado se a última operação de redefinição for anterior ao final de maio de 2024.
+>
+```
+>aio aem:rde:reset
+>```
 
 Consulte `aio aem:rde:logs --help` para obter o conjunto completo de opções da linha de comando.
 
