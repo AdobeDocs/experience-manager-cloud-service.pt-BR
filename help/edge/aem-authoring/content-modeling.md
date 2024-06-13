@@ -4,7 +4,7 @@ description: Saiba como a modelagem de conteúdo funciona para a criação de AE
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: ff4a8caf1f4d32bae4e8c776bfcad21a665936d4
 workflow-type: tm+mt
 source-wordcount: '2233'
 ht-degree: 0%
@@ -345,7 +345,7 @@ Para alguns valores, podemos inferir o significado semântico a partir dos próp
 * **Imagens** - Se uma referência a um recurso no AEM for um ativo com um tipo MIME que comece com `image/`, a referência é renderizada como `<picture><img src="${reference}"></picture>`.
 * **Links** - Se uma referência existe no AEM e não é uma imagem, ou se o valor começa com `https?://`  ou `#`, a referência é renderizada como `<a href="${reference}">${reference}</a>` .
 * **Rich Text** - Se um valor aparado começar com um parágrafo (`p`, `ul`, `ol`, `h1`-`h6`, etc.), o valor será renderizado como rich text.
-* **Nomes de classe** - A `classes` é tratada como opções de bloco e renderizada no cabeçalho da tabela para [blocos simples,](#simple) ou como lista de valores para itens em uma [bloco de contêiner.](#container)
+* **Nomes de classe** - A `classes` A propriedade é tratada como [opções de bloqueio](/help/edge/developer/markup-sections-blocks.md#block-options) e renderizado no cabeçalho da tabela para [blocos simples,](#simple) ou como lista de valores para itens em uma [bloco de contêiner.](#container)
 * **Listas de valores** - Se um valor for uma propriedade de vários valores e o primeiro valor não for nenhum dos anteriores, todos os valores serão concatenados como uma lista separada por vírgulas.
 
 Todo o resto será renderizado como texto simples.

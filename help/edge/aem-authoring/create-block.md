@@ -4,9 +4,9 @@ description: Saiba como criar blocos instrumentados para uso com o Editor univer
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 72949b36e7e7f8689365e7cb76a8c491edf23825
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -53,75 +53,99 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 1. Edite o `component-definition.json` arquivo na raiz do projeto, adicione a seguinte definição para o novo bloco de cotação e salve o arquivo.
 
-   ```json
-   {
-     "title": "Quote",
-     "id": "quote",
-     "plugins": {
-       "xwalk": {
-         "page": {
-           "resourceType": "core/franklin/components/block/v1/block",
-           "template": {
-             "name": "Quote",
-             "model": "quote",
-             "quote": "<p>Think, McFly! Think!</p>",
-             "author": "Biff Tannen"
-           }
-         }
-       }
-     }
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Editar o arquivo component-definitions.json para definir o bloco de citação](assets/create-block/component-definitions.png)
+>[!TAB Exemplo de JSON]
+
+```json
+{
+  "title": "Quote",
+  "id": "quote",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "Quote",
+          "model": "quote",
+          "quote": "<p>Think, McFly! Think!</p>",
+          "author": "Biff Tannen"
+        }
+      }
+    }
+  }
+}
+```
+
+>[!TAB Captura de tela]
+
+![Editar o arquivo component-definitions.json para definir o bloco de citação](assets/create-block/component-definitions.png)
+
+>[!ENDTABS]
 
 1. Edite o `component-models.json` na raiz do projeto e adicione o seguinte [definição de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para o novo bloco de cotação e salve o arquivo.
 
    * Consulte o documento [Modelagem de conteúdo para criação no AEM com projetos Edge Delivery Services](/help/edge/aem-authoring/content-modeling.md) para obter mais informações sobre o que é importante considerar ao criar modelos de conteúdo.
 
-   ```json
-   {
-     "id": "quote",
-     "fields": [
-        {
-          "component": "text-area",
-          "name": "quote",
-          "value": "",
-          "label": "Quote",
-          "valueType": "string"
-        },
-        {
-          "component": "text-input",
-          "valueType": "string",
-          "name": "author",
-          "label": "Author",
-          "value": ""
-        }
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Editar o arquivo component-models.json para definir o modelo do bloco de cotação](assets/create-block/component-models.png)
+>[!TAB Exemplo de JSON]
+
+```json
+{
+  "id": "quote",
+  "fields": [
+     {
+       "component": "text-area",
+       "name": "quote",
+       "value": "",
+       "label": "Quote",
+       "valueType": "string"
+     },
+     {
+       "component": "text-input",
+       "valueType": "string",
+       "name": "author",
+       "label": "Author",
+       "value": ""
+     }
+   ]
+}
+```
+
+>[!TAB Captura de tela]
+
+![Editar o arquivo component-models.json para definir o modelo do bloco de cotação](assets/create-block/component-models.png)
+
+>[!ENDTABS]
 
 1. Edite o `component-filters.json` arquivo na raiz do projeto e adicione o bloco de orçamento à [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que o bloco seja adicionado a qualquer seção e salve o arquivo.
 
-   ```json
-   {
-     "id": "section",
-     "components": [
-       "text",
-       "image",
-       "button",
-       "title",
-       "hero",
-       "cards",
-       "columns",
-       "quote"
-      ]
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Editar o arquivo component-filters.json para definir os filtros para o bloco de cotação](assets/create-block/component-filters.png)
+>[!TAB Exemplo de JSON]
+
+```json
+{
+  "id": "section",
+  "components": [
+    "text",
+    "image",
+    "button",
+    "title",
+    "hero",
+    "cards",
+    "columns",
+    "quote"
+   ]
+}
+```
+
+>[!TAB Captura de tela]
+
+![Editar o arquivo component-filters.json para definir os filtros para o bloco de cotação](assets/create-block/component-filters.png)
+
+>[!ENDTABS]
 
 1. Usando o Git, confirme essas alterações no `main` filial.
 
@@ -174,55 +198,70 @@ Agora que você tem um bloco de cotação de trabalho, é possível aplicar o es
 
 1. No novo `quote` pasta, adicione um `quote.js` arquivo para implementar a decoração de blocos, adicionando o seguinte JavaScript e salvando o arquivo.
 
-   ```javascript
-   export default function decorate(block) {
-     const [quoteWrapper] = block.children;
-   
-     const blockquote = document.createElement('blockquote');
-     blockquote.textContent = quoteWrapper.textContent.trim();
-     quoteWrapper.replaceChildren(blockquote);
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Adição de JavaScript para decorar o bloco](assets/create-block/quote-js.png)
+>[!TAB Exemplo de JavaScript]
 
+```javascript
+export default function decorate(block) {
+  const [quoteWrapper] = block.children;
+
+  const blockquote = document.createElement('blockquote');
+  blockquote.textContent = quoteWrapper.textContent.trim();
+  quoteWrapper.replaceChildren(blockquote);
+}
+```
+
+>[!TAB Captura de tela]
+
+![Adição de JavaScript para decorar o bloco](assets/create-block/quote-js.png)
+
+>[!ENDTABS]
 
 1. No `quote` pasta, adicione um `quote.css` arquivo para definir o estilo do bloco, adicionando o seguinte código CSS e salvando o arquivo.
 
-   ```css
-   .block.quote {
-       background-color: #ccc;
-       padding: 0 0 24px;
-       display: flex;
-       flex-direction: column;
-       margin: 1rem 0;
-   }
-   
-   .block.quote blockquote {
-       margin: 16px;
-       text-indent: 0;
-   }
-   
-   .block.quote > div:last-child > div {
-       margin: 0 16px;
-       font-size: small;
-       font-style: italic;
-       position: relative;
-   }
-   
-   .block.quote > div:last-child > div::after {
-       content: "";
-       display: block;
-       position: absolute;
-       left: 0;
-       bottom: -8px;
-       height: 5px;
-       width: 30px;
-       background-color: darkgray;
-   }
-   ```
+>[!BEGINTABS]
 
-   ![Adição de CSS para definir o estilo do bloco](assets/create-block/quote-css.png)
+>[!TAB Exemplo de CSS]
+
+```css
+.block.quote {
+    background-color: #ccc;
+    padding: 0 0 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.block.quote blockquote {
+    margin: 16px;
+    text-indent: 0;
+}
+
+.block.quote > div:last-child > div {
+    margin: 0 16px;
+    font-size: small;
+    font-style: italic;
+    position: relative;
+}
+
+.block.quote > div:last-child > div::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 5px;
+    width: 30px;
+    background-color: darkgray;
+}
+```
+
+>[!TAB Captura de tela]
+
+![Adição de CSS para definir o estilo do bloco](assets/create-block/quote-css.png)
+
+>[!ENDTABS]
 
 1. Usando o Git, confirme essas alterações no `main` filial.
 
@@ -239,6 +278,50 @@ Agora que você tem um bloco de cotação de trabalho, é possível aplicar o es
    ![O bloco de aspas publicado e estilizado](assets/create-block/quote-styled-published.png)
 
 Parabéns! Agora você tem um bloco de cotação totalmente funcional e estilizado. Você pode usar este exemplo como base para criar seus próprios blocos específicos de projeto.
+
+### Opções de bloco {#block-options}
+
+Se você precisar de um bloco para parecer ou se comportar de forma um pouco diferente com base em determinadas circunstâncias, mas não for diferente o suficiente para se tornar um novo bloco em si, poderá deixar que os autores escolham entre [opções de bloqueio.](content-modeling.md#type-inference)
+
+Ao adicionar um `classes` ao bloco, a propriedade renderizada no cabeçalho da tabela para blocos simples ou como lista de valores para itens em um bloco de contêiner.
+
+```json
+{
+  "id": "simpleMarquee",
+  "fields": [
+    {
+      "component": "text",
+      "valueType": "string",
+      "name": "marqueeText",
+      "value": "",
+      "label": "Marquee text",
+      "description": "The text you want shown in your marquee"
+    },
+    {
+      "component": "select",
+      "name": "classes",
+      "value": "",
+      "label": "Background Color",
+      "description": "The marquee background color",
+      "valueType": "string",
+      "options": [
+        {
+          "name": "Red",
+          "value": "bg-red"
+        },
+        {
+          "name": "Green",
+          "value": "bg-green"
+        },
+        {
+          "name": "Blue",
+          "value": "bg-blue"
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## Uso de outras ramificações de trabalho {#other-branches}
 
