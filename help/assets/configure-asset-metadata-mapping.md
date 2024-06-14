@@ -2,7 +2,9 @@
 title: Configurar o mapeamento de metadados de ativos entre o Workfront e o Experience Manager Assets
 description: Mapeie os campos de metadados de ativos entre os aplicativos Adobe Workfront e Experience Manager as a Cloud Service. Como resultado do mapeamento de campos de metadados, ao enviar um ativo do Workfront para o Experience Manager Assets, você pode visualizar os metadados do ativo mapeados no Experience Manager Assets.
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+feature: Metadata, Workfront Integrations and Apps
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1012'
 ht-degree: 3%

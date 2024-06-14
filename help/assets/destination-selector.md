@@ -2,12 +2,13 @@
 title: Seletor de destino para AEM as a Cloud Service
 description: Use o Seletor de destino do AEM para mostrar e selecionar ativos que você pode usar como uma cópia do ativo original.
 contentOwner: Adobe
-role: Admin,User
+role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
-source-git-commit: 96a82439c51c22125c206b4e912e85e0bf603498
+feature: Selectors
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 36%
+source-wordcount: '1887'
+ht-degree: 35%
 
 ---
 
@@ -140,7 +141,7 @@ A tabela a seguir descreve algumas das propriedades importantes do destino selec
 | *repo:modifiedBy* | string | O usuário ou sistema que modificou o ativo pela última vez. |
 | *repo:modifyDate* | string | A data e a hora em que o ativo foi modificado pela última vez. |
 | *dc:format* | string | O formato do ativo. |
-| *_página* | orderBy: string; count: número; | Inclui o número de página do documento. |
+| *_page* | orderBy: string; count: número; | Inclui o número de página do documento. |
 
 Para obter uma lista completa das propriedades e um exemplo detalhado, visite [Exemplo de código do seletor de destino](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
@@ -259,7 +260,7 @@ O Seletor de destino também permite exibir os dados do repositório de sua esco
 
 É um exemplo da `optionsFormSetup` propriedade. Você pode usar isso para confirmar a seleção, ela será transmitida ao `onConfirm` evento.
 
-### Crie uma pasta  {#create-new-folder}
+### Criar uma pasta {#create-new-folder}
 
 Ele permite criar uma pasta na pasta de destino do seu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 

@@ -2,9 +2,9 @@
 title: Distribuir e compartilhar ativos, pastas e coleções
 description: Distribua seus ativos digitais usando métodos como compartilhar como um link, baixar e pelo [!DNL Brand Portal], [!DNL desktop app], e [!DNL Asset Link].
 feature: Asset Management, Collaboration, Asset Distribution
-role: User, Admin
+role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: ec01a1b383160014918ee8c9b81e15f0cc855d02
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 2%

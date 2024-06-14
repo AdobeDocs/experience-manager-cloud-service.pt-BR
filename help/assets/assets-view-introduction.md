@@ -3,10 +3,12 @@ title: Como o Assets visualiza o AEM beneficia você?
 description: Saiba mais sobre os principais benefícios da visualização de Ativos no AEM. O Adobe, usando sua experiência em capacitar profissionais de marketing e criativos, apresenta uma nova experiência de usuário que muda o jogo.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
-source-git-commit: 408a691de8a6fe2801a9907308db43f2050528c3
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
-source-wordcount: '1079'
-ht-degree: 74%
+source-wordcount: '972'
+ht-degree: 69%
 
 ---
 
@@ -121,7 +123,7 @@ Além desses recursos, a visualização do Assets também permite executar os se
 
 * Renomeie ativos e pastas disponíveis no repositório.
 
-A visualização de ativos é personalizada para simplificar fluxos de trabalho, promover a colaboração e acelerar a entrega de ativos. Por acompanhar a velocidade do conteúdo, profissionais de marketing podem explorar todo o potencial de seus ativos digitais e liberar sua criatividade como nunca antes.
+A visualização de ativos é personalizada para simplificar fluxos de trabalho, promover a colaboração e acelerar a entrega de ativos. Ao adotar a velocidade do conteúdo, os profissionais de marketing podem desbloquear todo o potencial de seus ativos digitais e liberar a criatividade como nunca antes.
 
 
 Use estes links para começar a usar a exibição de Ativos rapidamente:

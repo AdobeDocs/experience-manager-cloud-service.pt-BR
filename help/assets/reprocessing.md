@@ -2,7 +2,10 @@
 title: Reprocessamento de ativos digitais
 description: Saiba mais sobre os vários métodos de reprocessamento de ativos digitais
 contentOwner: KK
-source-git-commit: cb8eb56d07163f46aec252c70a3ec3b0273d97cf
+exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
+feature: Asset Processing
+role: User, Leader, Developer
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -91,4 +94,3 @@ Você pode reprocessar ativos em uma pasta que já tenha um Perfil de imagem do 
 ### Fluxos de trabalhos
 
 Leia mais sobre [perfis de processamento e fluxos de trabalho de pós-processamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en).
-

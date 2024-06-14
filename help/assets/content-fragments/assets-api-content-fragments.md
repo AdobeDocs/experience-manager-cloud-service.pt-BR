@@ -1,9 +1,10 @@
 ---
 title: Suporte a Fragmentos de conteúdo do Adobe Experience Manager as a Cloud Service na API HTTP do Assets
 description: Saiba mais sobre o suporte a fragmentos de conteúdo na API HTTP de ativos, uma parte importante do recurso de entrega headless do Adobe Experience Manager.
-feature: Content Fragments,Assets HTTP API
+feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 674db680f46a4fd4772cb10fe7cb396652354dfe
+role: User, Admin
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1804'
 ht-degree: 11%
@@ -223,7 +224,7 @@ A API REST do Assets expõe o acesso às propriedades de uma pasta. Por exemplo,
 >
 >Dependendo do tipo de ativo dos ativos e pastas secundários, a lista de entidades secundárias pode já conter o conjunto completo de propriedades que define a respectiva entidade secundária. Como alternativa, somente um conjunto reduzido de propriedades pode ser exposto para uma entidade nesta lista de entidades filhas.
 
-### Assets {#assets}
+### Ativos {#assets}
 
 Se um ativo for solicitado, a resposta retornará seus metadados; como título, nome e outras informações conforme definido pelo respectivo esquema de ativo.
 

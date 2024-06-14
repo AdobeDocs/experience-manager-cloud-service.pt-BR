@@ -3,9 +3,9 @@ title: Como editar ou adicionar metadados
 description: Saiba mais sobre metadados de ativos no [!DNL Experience Manager Assets] Há várias maneiras de editar metadados de ativos.
 contentOwner: AG
 feature: Metadata
-role: User,Admin
+role: User, Admin
 exl-id: 464a97ce-da3e-47b5-9879-fafaf2f2378c
-source-git-commit: f7f60036088a2332644ce87f4a1be9bae3af1c5e
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 7%

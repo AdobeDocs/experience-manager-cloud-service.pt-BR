@@ -2,7 +2,9 @@
 title: Publicação rápida no AEM e no Dynamic Media
 description: A Publicação rápida na exibição de Ativos permite publicar ativos no AEM e no Dynamic Media, de forma simultânea ou separada. Você pode selecionar ativos e pastas e optar por publicar no Dynamic Media ou AEM.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
-source-git-commit: 8d360b9d3382350c8f78247919c3e3810fe9e58b
+feature: Publishing, Dynamic Media
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '1188'
 ht-degree: 0%

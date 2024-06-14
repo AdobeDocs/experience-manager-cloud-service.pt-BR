@@ -1,9 +1,11 @@
 ---
 title: Formatos de arquivo não compatíveis
 description: Formatos de arquivo compatíveis com os vários casos de uso do  [!DNL Assets view]
-role: User,Leader,Admin,Architect,Developer
+role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 5936ace2-318e-4888-9ad4-23e6f6bfb857
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 100%

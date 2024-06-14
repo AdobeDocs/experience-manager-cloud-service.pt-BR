@@ -1,7 +1,10 @@
 ---
 title: Visualização Meu espaço de trabalho para ativos
 description: Meu espaço de trabalho é uma página que fornece módulos visuais personalizáveis para um acesso conveniente às áreas-chave da interface do Assets e informações mais relevantes para o usuário.
-source-git-commit: c3076ce35128c147ce2056d11d9305d9a9456636
+exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
+feature: Asset Management, Publishing, Collaboration, Asset Processing
+role: User
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '745'
 ht-degree: 84%

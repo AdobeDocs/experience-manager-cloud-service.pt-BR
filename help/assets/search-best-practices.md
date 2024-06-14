@@ -3,7 +3,9 @@ title: Pesquisar práticas recomendadas para [!DNL Adobe Experience Manager] as 
 description: Práticas recomendadas para pesquisar, localizar e recuperar metadados de ativos no aplicativo.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
-source-git-commit: 6397a300de13c5e4f6ee5828de1ba76a1677c227
+feature: Best Practices
+role: User
+source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
 workflow-type: tm+mt
 source-wordcount: '2527'
 ht-degree: 2%

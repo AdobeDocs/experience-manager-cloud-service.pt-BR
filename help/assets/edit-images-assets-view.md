@@ -3,10 +3,11 @@ title: Editar imagens
 description: Editar imagens usando opções viabilizadas pelo [!DNL Adobe Express] e salvar imagens atualizadas como versões.
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
-source-git-commit: 42d3751a4a29149f3b31dbc28555b81aa7ed43cc
+feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
+source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 70%
+ht-degree: 72%
 
 ---
 
@@ -84,9 +85,9 @@ Você pode converter rapidamente uma imagem PNG em um formato JPEG usando Adobe 
 
 ### Limitações {#limitations-adobe-express}
 
-* Resolução de imagem suportada: Mínimo - 50 pixels, Máximo - 6000 pixels por dimensão.
+* Resolução da imagem compatível: mínimo de 50 pixels e máximo de 6.000 pixels por dimensão.
 
-* Tamanho máximo de arquivo aceito: 17 MB.
+* Tamanho máximo do arquivo aceito: 17 MB.
 
 ## Editar imagens usando o editor integrado do Adobe Express {#edit-using-embedded-editor}
 
