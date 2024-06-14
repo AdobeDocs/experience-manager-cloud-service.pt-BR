@@ -4,7 +4,7 @@ description: Saiba como o AEM as a Cloud Service pode ser usado com Edge Deliver
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
@@ -30,24 +30,24 @@ O princípio orientador do Adobe é a simplicidade. Comece com a criação basea
 
 ## Criação   {#authoring-edge}
 
-Com o Edge Delivery Services, a criação é fácil, rápida e flexível. Você pode optar por criar usando a criação com base em documento ou a criação com base em AEM usando o Editor universal.
+Com o Edge Delivery Services, a criação é fácil, rápida e flexível. Você pode optar por criar usando a criação com base em documento ou a criação WYSIWYG usando o Editor universal.
 
-Consulte o documento [Criação de conteúdo para Edge Delivery Services](/help/edge/aem-authoring/authoring.md) para obter mais informações.
+Consulte o documento [Criação de conteúdo para Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md) para obter mais informações.
 
 ## Publicação {#publishing-edge}
 
 Com o Edge Delivery Services, a publicação de conteúdo é contínua, independentemente da sua fonte de conteúdo.
 
-Consulte o documento [Publicar conteúdo para o Edge Delivery Services](/help/edge/aem-authoring/publishing.md) para obter mais informações.
+Consulte o documento [Publicar conteúdo para o Edge Delivery Services](/help/edge/wysiwyg-authoring/publishing.md) para obter mais informações.
 
 ## Desenvolvimento {#developing-edge}
 
 O Edge Delivery Services é baseado em torno do conceito de blocos. O AEM vem com uma biblioteca abrangente de blocos predefinidos, que podem ser estendidos para atender às necessidades do seu projeto. O código para projetos Edge Delivery Services é gerenciado no GitHub.
 
-Consulte o documento [Guia de introdução do desenvolvedor para criação de AEM com o Edge Delivery Services](/help/edge/aem-authoring/edge-dev-getting-started.md) para obter mais informações.
+Consulte o documento [Guia de introdução do desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obter mais informações.
 
 ## Projetos AEM existentes {#existing-projects}
 
 Você não precisa esperar que um novo projeto AEM se beneficie dos Edge Delivery Services. Os Edge Delivery Services podem ser integrados ao projeto AEM existente para que você possa aproveitar seus ganhos de desempenho imediatamente.
 
-Consulte o documento [Uso de Edge Delivery Services com projetos AEM existentes](/help/edge/aem-authoring/existing-projects.md) para obter mais informações.
+Consulte o documento [Uso de Edge Delivery Services com projetos AEM existentes](/help/edge/wysiwyg-authoring/existing-projects.md) para obter mais informações.

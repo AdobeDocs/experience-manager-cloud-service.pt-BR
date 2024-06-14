@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 5b3bc9a8ef1cf1769afcd31935d321ef13bb77cd
+source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
 workflow-type: tm+mt
 source-wordcount: '5034'
 ht-degree: 82%
@@ -823,14 +823,14 @@ ht-degree: 82%
 + Edge Delivery Services {#edge-delivery}
    + [Visão geral do Edge Delivery Services](/help/edge/overview.md)
    + [Utilização de Edge Delivery Services com AEM](/help/edge/using.md)
-   + Criação baseada em AEM {#aem-authoring}
-      + [Criação de conteúdo para entrega de borda](/help/edge/aem-authoring/authoring.md)
-      + [Conteúdo de publicação para entrega de borda](/help/edge/aem-authoring/publishing.md)
-      + [Guia de introdução do desenvolvedor](/help/edge/aem-authoring/edge-dev-getting-started.md)
-      + [Criando blocos](/help/edge/aem-authoring/create-block.md)
-      + [Modelagem de conteúdo](/help/edge/aem-authoring/content-modeling.md)
-      + [Dados em Tabelas e Planilhas](/help/edge/aem-authoring/tabular-data.md)
-      + [Projetos existentes e entrega do Edge](/help/edge/aem-authoring/existing-projects.md)
+   + Criação WYSIWYG {#wysiwyg-authoring}
+      + [Criação de conteúdo para entrega de borda](/help/edge/wysiwyg-authoring/authoring.md)
+      + [Conteúdo de publicação para entrega de borda](/help/edge/wysiwyg-authoring/publishing.md)
+      + [Guia de introdução do desenvolvedor](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+      + [Criando blocos](/help/edge/wysiwyg-authoring/create-block.md)
+      + [Modelagem de conteúdo](/help/edge/wysiwyg-authoring/content-modeling.md)
+      + [Dados em Tabelas e Planilhas](/help/edge/wysiwyg-authoring/tabular-data.md)
+      + [Projetos existentes e entrega do Edge](/help/edge/wysiwyg-authoring/existing-projects.md)
    + Criação baseada em documento {#document-authoring}
       + [Criação  ](/help/edge/docs/authoring.md)
       + [Metadados em massa](/help/edge/docs/bulk-metadata.md)
@@ -987,10 +987,10 @@ ht-degree: 82%
       + Gerenciamento do código {#managing-code}
          + [Manuseio da versão do projeto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gerenciamento de repositórios no Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Adição de repositórios Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Adição de repositórios da Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Adição de repositórios privados](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [Acesso a repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-         + [Suporte a submódulos Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
+         + [Suporte ao submódulo Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Uso do Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
          + [Uso de vários repositórios](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md)
          + [Configuração da equipe de desenvolvimento corporativa](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md)
