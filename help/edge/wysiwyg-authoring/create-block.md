@@ -4,9 +4,9 @@ description: Saiba como criar blocos instrumentados para uso com o Editor univer
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: c6013984e1c47766964e6f8ece76e7793b59308f
+source-git-commit: 364acc6a76261a725a46fe3e1ef173bc03b5a289
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,13 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 ### Criar Definição e Modelo de Bloco {#create-block-model}
 
-1. Clonar o projeto GitHub localmente que você criou na [Guia de introdução do desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guia e abra-o em um editor de sua escolha.
+1&amp;período; Clonar o projeto GitHub localmente que você criou na [Guia de introdução do desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guia e abra-o em um editor de sua escolha.
 
-   * O código Microsoft é usado aqui para fins ilustrativos.
+* O código Microsoft é usado aqui para fins ilustrativos.
 
-   ![Clonagem do projeto](assets/create-block/clone.png)
+![Clonagem do projeto](assets/create-block/clone.png)
 
-1. Edite o `component-definition.json` arquivo na raiz do projeto, adicione a seguinte definição para o novo bloco de cotação e salve o arquivo.
+2&amp;período; Editar o `component-definition.json` arquivo na raiz do projeto, adicione a seguinte definição para o novo bloco de cotação e salve o arquivo.
 
 >[!BEGINTABS]
 
@@ -83,9 +83,9 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 >[!ENDTABS]
 
-1. Edite o `component-models.json` na raiz do projeto e adicione o seguinte [definição de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para o novo bloco de cotação e salve o arquivo.
+3&amp;período; Editar o `component-models.json` na raiz do projeto e adicione o seguinte [definição de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para o novo bloco de cotação e salve o arquivo.
 
-   * Consulte o documento [Modelagem de conteúdo para criação WYSIWYG com projetos Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para obter mais informações sobre o que é importante considerar ao criar modelos de conteúdo.
+* Consulte o documento [Modelagem de conteúdo para criação WYSIWYG com projetos Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para obter mais informações sobre o que é importante considerar ao criar modelos de conteúdo.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 >[!ENDTABS]
 
-1. Edite o `component-filters.json` arquivo na raiz do projeto e adicione o bloco de orçamento à [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que o bloco seja adicionado a qualquer seção e salve o arquivo.
+4&amp;período; Editar o `component-filters.json` arquivo na raiz do projeto e adicione o bloco de orçamento à [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que o bloco seja adicionado a qualquer seção e salve o arquivo.
 
 >[!BEGINTABS]
 
@@ -147,9 +147,9 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 >[!ENDTABS]
 
-1. Usando o Git, confirme essas alterações no `main` filial.
+5&amp;ponto; usando o Git, confirme essas alterações no `main` filial.
 
-   * Submetendo a `main` é apenas para fins ilustrativos. [Seguir as práticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) e use uma solicitação de pull para o trabalho real do projeto.
+* Submetendo a `main` é apenas para fins ilustrativos. [Seguir as práticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) e use uma solicitação de pull para o trabalho real do projeto.
 
 ### Criar conteúdo com o bloco {#create-content}
 
@@ -190,13 +190,13 @@ Agora que o bloco de cotação básico está definido e comprometido com o proje
 
 Agora que você tem um bloco de cotação de trabalho, é possível aplicar o estilo a ele.
 
-1. Retorne ao editor do projeto.
+1&amp;ponto; Retorne ao editor do projeto.
 
-1. Criar um `quote` pasta sob o `blocks` pasta.
+2&amp;período; Criar um `quote` pasta sob o `blocks` pasta.
 
-   ![Criar uma pasta de cotações](assets/create-block/new-folder.png)
+![Criar uma pasta de cotações](assets/create-block/new-folder.png)
 
-1. No novo `quote` pasta, adicione um `quote.js` arquivo para implementar a decoração de blocos, adicionando o seguinte JavaScript e salvando o arquivo.
+3&amp;período; No novo `quote` pasta, adicione um `quote.js` arquivo para implementar a decoração de blocos, adicionando o seguinte JavaScript e salvando o arquivo.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. No `quote` pasta, adicione um `quote.css` arquivo para definir o estilo do bloco, adicionando o seguinte código CSS e salvando o arquivo.
+4&amp;período; No `quote` pasta, adicione um `quote.css` arquivo para definir o estilo do bloco, adicionando o seguinte código CSS e salvando o arquivo.
 
 >[!BEGINTABS]
 
@@ -263,19 +263,19 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-1. Usando o Git, confirme essas alterações no `main` filial.
+5&amp;ponto; usando o Git, confirme essas alterações no `main` filial.
 
-   * Submetendo a `main` é apenas para fins ilustrativos. [Seguir as práticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) e use uma solicitação de pull para o trabalho real do projeto.
+* Submetendo a `main` é apenas para fins ilustrativos. [Seguir as práticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) e use uma solicitação de pull para o trabalho real do projeto.
 
-1. Retorne à guia do navegador do Editor universal, onde você estava editando a página do projeto, e recarregue a página para exibir seu bloco estilizado.
+6&amp;ponto; Retorne à guia do navegador do Editor universal, onde você estava editando a página do projeto, e recarregue a página para exibir seu bloco estilizado.
 
-1. Consulte o bloco de aspas agora estilizado na página.
+&amp;período; Veja o bloco de aspas agora estilizado na página.
 
-   ![O bloco de aspas estilizado no Editor Universal](assets/create-block/quote-styled.png)
+![O bloco de aspas estilizado no Editor Universal](assets/create-block/quote-styled.png)
 
-1. Verifique se as alterações foram enviadas para produção navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;período; verifique se as alterações foram enviadas para produção navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.hlx.page`
 
-   ![O bloco de aspas publicado e estilizado](assets/create-block/quote-styled-published.png)
+![O bloco de aspas publicado e estilizado](assets/create-block/quote-styled-published.png)
 
 Parabéns! Agora você tem um bloco de cotação totalmente funcional e estilizado. Você pode usar este exemplo como base para criar seus próprios blocos específicos de projeto.
 
