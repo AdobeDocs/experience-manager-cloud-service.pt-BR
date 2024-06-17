@@ -3,9 +3,9 @@ title: Solução de problemas de consultas persistentes do GraphQL
 description: Saiba como solucionar problemas com consultas persistentes do GraphQL no Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 220e86f18e4a61304764753d8daecb68503e9fd0
+source-git-commit: 09ef5fb49ba638f888c9c101760ffa3c7d258fda
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -14,23 +14,22 @@ ht-degree: 0%
 
 A variável [Centro de ações](/help/operations/actions-center.md) inclui o **Erro de consulta persistente do GraphQL** alerta. Isso significa que você é informado sempre que uma das consultas persistentes do GraphQL emite um erro.
 
-Para ajudá-lo a solucionar e resolver esses problemas, explicamos a *mais comum* causas de falhas e etapas sobre como corrigi-las.
+Para ajudá-lo a solucionar e resolver esses problemas, esta página aborda a *mais comum* causas de falhas e etapas sobre como corrigi-las.
 
 ## Alterações no modelo de Fragmento de conteúdo {#changes-to-content-fragment-model}
 
 Uma consulta persistente do GraphQL pode falhar quando baseada em tipos de GraphQL obsoletos, geralmente devido a uma alteração nos modelos subjacentes de Fragmento de conteúdo.
 
-Isso pode acontecer por várias razões. Por exemplo, quando um autor de modelo de conteúdo:
+Esses erros podem ocorrer por várias razões. Por exemplo, quando o autor de um modelo de fragmento de conteúdo (a lista não é exaustiva):
 
 * remove ou renomeia um campo
-* atualiza os modelos permitidos definidos para uma referência de fragmento
+* atualiza o **Tipo de modelo** que define os modelos permitidos para a referência do fragmento
 * cancela a publicação de um modelo referenciado por outros modelos
-* outras ações e motivos
 
-Para resolver isso:
+Para resolver esses erros, você deve:
 
-* a consulta persistente que está falhando deve ser atualizada para acomodar a alteração no modelo de Fragmento de conteúdo
-* ou a alteração no modelo que introduziu o problema deve ser revertida
+* atualizar a consulta persistente que não acomoda as alterações feitas no modelo de fragmento de conteúdo
+* reverter a alteração no modelo que introduziu o problema
 
 ## Ponto de extremidade do GraphQL não configurado {#graphql-endpoint-not-configured}
 
@@ -48,7 +47,7 @@ O padrão deve ser `/graphql/execute.json/thePath`.
 
 Nesse caso, a consulta retorna o parâmetro `405` código de erro.
 
-Isso não é algo específico do GraphQL. Consulte o artigo da KB [Erro 405 não permitido](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-20824.html).
+Esse erro não é específico do GraphQL. Consulte o artigo da KB [Erro 405 não permitido](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## Bloqueado pelo Dispatcher {#blocked-dispatcher}
 
