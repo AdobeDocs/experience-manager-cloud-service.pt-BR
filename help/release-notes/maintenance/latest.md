@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: c969b78f5e93e15d1f8f57dd409e58a6275069ce
+source-git-commit: 339dd64c602b2eed163f36f70089a50dd0d4a11c
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 29%
+source-wordcount: '521'
+ht-degree: 23%
 
 ---
 
@@ -49,6 +49,11 @@ Para obter mais informações sobre recursos e problemas novos e aprimorados cor
 ### Problemas conhecidos {#known-issues-16544}
 
 * GRANITE-52573: solicitações que contêm uma barra dupla `//` são rejeitados com o código de status 400. Esse comportamento será revertido em uma versão de manutenção subsequente.
+
+>[!NOTE]
+> A engenharia de AEM identificou uma regressão na funcionalidade Lançamentos que está afetando as versões atuais do AEM a partir de 16461. Devido a essa regressão, novas Inicializações (criadas após a aplicação de novas versões) que incluem páginas não profundas não serão promovidas corretamente devido a configurações ausentes.
+> Caso seus ambientes sejam afetados, um script de shell para identificar e atualizar configurações ausentes estará disponível por meio do suporte ao cliente (referência interna SITES-22457).
+> Uma correção de longo prazo será disponibilizada e garantirá que novos lançamentos sejam criados com todas as configurações certas. Até lá, uma versão de patch interna também estará disponível sob demanda.
 
 ### Aviso de mudança {#change-notice-16544}
 
