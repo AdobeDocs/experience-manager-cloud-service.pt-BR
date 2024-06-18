@@ -4,10 +4,10 @@ description: Esta página fornece uma visão geral sobre como usar e começar a 
 exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d840e0beb8036ed8e543ac85850290e778371bbe
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 22%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -96,6 +96,10 @@ Siga as etapas abaixo para excluir seu projeto:
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
 1. Clique em **Excluir** para confirmar a etapa.
+
+   >[!NOTE]
+   >Os projetos expirarão automaticamente e serão excluídos após 1 ano de inatividade de migração. Os projetos permanecerão ativos ao editar o nome ou a descrição do projeto, fazer upload de um relatório do BPA, criar ou editar um conjunto de migração, executar uma extração ou executar uma assimilação.
+
 
 ## O que vem a seguir {#whats-next}
 
