@@ -4,10 +4,10 @@ description: Saiba como configurar recursos avançados de rede, como VPN ou um e
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 6ae2738bcde05ef546c98cddd23d11f033b2a170
+source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '5744'
+ht-degree: 22%
 
 ---
 
@@ -238,7 +238,7 @@ A configuração do endereço IP de saída dedicado é semelhante a [saída de p
 
 >[!INFO]
 >
->O recurso de encaminhamento do Splunk não é possível em um endereço IP de saída dedicado.
+>Se um IP de saída dedicado for configurado, o encaminhamento do Splunk continuará a usar os intervalos de saída dinâmicos. O encaminhamento do Splunk não pode ser configurado para usar um IP de saída dedicado.
 
 ### Configuração da interface {#configuring-dedicated-egress-provision-ui}
 
