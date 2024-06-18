@@ -4,10 +4,10 @@ description: Saiba como configurar recursos avançados de rede, como VPN ou um e
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6ae2738bcde05ef546c98cddd23d11f033b2a170
 workflow-type: tm+mt
-source-wordcount: '5332'
-ht-degree: 24%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -806,3 +806,49 @@ O pool de conexões é uma técnica personalizada para criar e manter um reposit
 A implementação de uma estratégia apropriada de pool de conexões é uma medida proativa para corrigir uma supervisão comum na configuração do sistema, o que geralmente leva a um desempenho abaixo do ideal. Ao estabelecer corretamente um pool de conexão, o Adobe Experience Manager (AEM) pode melhorar a eficiência das chamadas externas. Isso não apenas reduz o consumo de recursos, mas também diminui o risco de interrupções do serviço e diminui a probabilidade de encontrar solicitações com falha ao se comunicar com servidores upstream.
 
 À luz dessas informações, o Adobe aconselha a reavaliação da configuração de AEM atual e a consideração da incorporação deliberada do pool de conexões, juntamente com as configurações de rede avançadas. Ao gerenciar o número de conexões paralelas e minimizar a possibilidade de conexões obsoletas, essas medidas levam a uma redução no risco de os servidores proxy atingirem seus limites de conexão. Consequentemente, essa implementação estratégica foi projetada para diminuir a probabilidade de solicitações não alcançarem endpoints externos.
+
+#### Perguntas frequentes sobre limites de conexão
+
+Ao usar a Rede avançada, o número de conexões é limitado para garantir a estabilidade entre ambientes e impedir que ambientes mais baixos esgotem as conexões disponíveis.
+
+As conexões são limitadas a 1000 por instância do AEM e os alertas são enviados aos clientes quando o número atinge 750.
+
+##### O limite de conexão é aplicado apenas ao tráfego de saída de portas não padrão ou a todo o tráfego de saída?
+
+O limite é apenas para conexões usando Rede Avançada (saída em portas fora do padrão, usando IP de saída dedicado ou VPN).
+
+##### Não vemos uma diferença significativa no número de conexões de saída. Por que estamos recebendo a notificação agora?
+
+Se o cliente criar conexões dinamicamente (por exemplo, uma ou mais para cada solicitação), um aumento no tráfego pode causar o pico das conexões.
+
+##### É possível que tenhamos vivido uma situação semelhante no passado sem sermos alertados?
+
+Os alertas são enviados somente quando o limite flexível é atingido.
+
+##### O que acontece se o limite máximo for atingido?
+
+Quando o limite rígido é atingido, novas conexões de saída de AEM por meio da rede avançada (saída em portas não padrão, usando IP de saída dedicado ou VPN) serão descartadas para proteger contra um ataque de DoS.
+
+##### O limite pode ser aumentado?
+
+Não, ter um grande número de conexões pode causar um impacto significativo no desempenho e um DoS em pods e ambientes.
+
+##### As conexões são automaticamente fechadas pelo sistema AEM após um determinado período?
+
+Sim, as conexões são fechadas no nível da JVM e em diferentes pontos da infraestrutura de rede. No entanto, será tarde demais para qualquer serviço de produção. As conexões devem ser explicitamente fechadas quando não forem mais necessárias ou retornadas ao pool ao usar o pool de conexões. Caso contrário, o consumo de recursos será muito alto e poderá causar esgotamento de recursos.
+
+##### Se o limite máximo de conexões for atingido, isso afetará as licenças e resultará em custos adicionais?
+
+Não, não há licença ou custo associado a esse limite. É um limite técnico.
+
+##### Quão perto estamos do limite? Qual é o limite máximo?
+
+O alerta é disparado quando as conexões excedem 750. O limite máximo é de 1.000 conexões por instância AEM.
+
+##### Esse limite é aplicável a VPNs?
+
+Sim, o limite se aplica a conexões usando a Rede Avançada, incluindo VPNs.
+
+##### Se usarmos um IP de saída dedicado, esse limite ainda será aplicável?
+
+Sim, o limite ainda é aplicável se estiver usando um IP de saída dedicado.
