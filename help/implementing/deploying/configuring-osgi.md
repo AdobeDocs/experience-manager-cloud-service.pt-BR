@@ -3,9 +3,9 @@ title: Configuração do OSGi para o Adobe Experience Manager as a Cloud Service
 description: Configuração OSGi com valores secretos e valores específicos do ambiente
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: a230efaa58cb00e8a0c0e2b23f0cc07462cc658b
+source-git-commit: b4c87b79c714c408daea08e81fbe719bc9f5adf0
 workflow-type: tm+mt
-source-wordcount: '3269'
+source-wordcount: '3302'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Você pode gerenciar as definições de configuração dos componentes OSGi por 
 
 ## Arquivos de configuração do OSGi {#osgi-configuration-files}
 
-As alterações de configuração são definidas nos pacotes de código do projeto AEM (`ui.apps`) como arquivos de configuração (`.cfg.json`) em pastas de configuração específicas do modo de execução:
+As alterações de configuração são definidas nos pacotes de código do projeto AEM (`ui.config`) como arquivos de configuração (`.cfg.json`) em pastas de configuração específicas do modo de execução:
 
 `/apps/example/config.<runmode>`
 
@@ -44,6 +44,10 @@ após o `cfg.json` Formato de configuração do OSGi.
 >[!NOTE]
 >
 >Versões anteriores do AEM eram compatíveis com arquivos de configuração OSGi usando diferentes formatos de arquivo, como `.cfg`, `.config` e como XML `sling:OsgiConfig` definições de recursos. Esses formatos são substituídos pelo `.cfg.json` Formato de configuração do OSGi.
+
+>[!NOTE]
+>
+>As configurações de OSGi não são armazenadas em /apps como instâncias típicas do AEM na nuvem. Elas são armazenadas em um local externo. Fazer check-in no Cloud Manager [Console do desenvolvedor](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) para exibir as configurações de OSGi.
 
 ## Resolução do modo de execução {#runmode-resolution}
 
