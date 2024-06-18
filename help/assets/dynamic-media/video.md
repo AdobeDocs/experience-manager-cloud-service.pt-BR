@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 03799545e29489a20e71e588f0a9bfac92e753db
 workflow-type: tm+mt
 source-wordcount: '9357'
 ht-degree: 1%
@@ -569,7 +569,7 @@ Ao mesmo tempo em que você cria um caso de suporte para Adobe para ter o DASH a
 
 Com o recurso de várias legendas e faixas de áudio no Dynamic Media, é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 
-![A guia Legendas e trilhas de áudio no Dynamic Media, juntamente com uma tabela mostrando os arquivos de legenda .VTT e os arquivos de trilha de áudio .MP3 carregados para um vídeo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab.png)
+![A guia Legendas e trilhas de áudio no Dynamic Media, juntamente com uma tabela mostrando os arquivos de legenda .VTT e os arquivos de trilha de áudio .MP3 carregados para um vídeo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab2.png)
 
 Alguns dos casos de uso a serem considerados para adicionar várias legendas e faixas de áudio ao vídeo principal incluem:
 
@@ -616,7 +616,7 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
    >
    >Quando tiver concluído uma das tarefas acima, retorne a essas etapas.
 
-   ![Guia Legendas e faixas de áudio na página Propriedades.](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Guia Legendas e faixas de áudio na página Propriedades do vídeo.*
+   ![Guia Legendas e faixas de áudio na página Propriedades.](/help/assets/dynamic-media/assets/msma-audiotracks2.png)*Guia Legendas e faixas de áudio na página Propriedades do vídeo.*
 
 1. (Opcional) Para adicionar um ou mais arquivos de legenda a um vídeo, faça o seguinte:
    * Selecionar **[!UICONTROL Fazer upload de legendas]**.
@@ -628,7 +628,7 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
      | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos de legenda e de trilha de áudio adicionais. |
      | Idioma | Selecione o idioma da legenda. |
      | Tipo | Selecione o tipo de legenda que você está usando.<br>**Legenda** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda também inclui ruídos de fundo, diferenciação do alto-falante e outras informações relevantes, juntamente com a tradução ou transcrição do diálogo, tornando o conteúdo mais acessível para indivíduos surdos ou com deficiência auditiva. |
-     | Rótulo | O texto exibido para o nome da legenda no campo **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou legenda. Por exemplo, `English (CC)`. |
+     | Rótulo | O texto exibido para o nome da legenda no campo **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou subtítulo. Por exemplo, `English (CC)`. |
 
      É possível alterar ou editar os metadados da legenda posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
 
@@ -704,7 +704,7 @@ Você pode observar o status do ciclo de vida de qualquer legenda ou arquivo de 
 | Falhou | Um estado &quot;Com falha&quot; significa que o processamento de uma legenda ou faixa de áudio não foi concluído. Exclua a legenda ou o arquivo de trilha de áudio e carregue novamente. |
 | A página não publicada | Quando a publicação de um vídeo principal é cancelada explicitamente, qualquer legenda ou arquivo de trilha de áudio adicionado ao vídeo também tem sua publicação cancelada. |
 
-![Coluna de status realçada para os campos Legendas e Faixas de áudio.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Status do ciclo de vida de cada legenda e arquivo de rastreamento de áudio carregados.*
+![Coluna de status realçada para os campos Legendas e Faixas de áudio.](/help/assets/dynamic-media/assets/msma-lifecycle-status2.png)*Status do ciclo de vida de cada legenda e arquivo de rastreamento de áudio carregados.*
 
 ### Definir o áudio padrão de um vídeo com várias faixas de áudio
 
@@ -729,7 +729,7 @@ No entanto, todos os arquivos de trilha de áudio carregados podem ser definidos
 1. Selecionar **[!UICONTROL Definir como padrão]**.
 No **Definir como padrão** caixa de diálogo, selecione **[!UICONTROL Substituir]**.
 
-   ![O cabeçalho Faixas de áudio com um nome de arquivo de faixa de áudio selecionado e o botão &quot;Definir como padrão&quot; realçado.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Definindo a faixa de áudio padrão de um vídeo.*
+   ![O cabeçalho Faixas de áudio com um nome de arquivo de faixa de áudio selecionado e o botão &quot;Definir como padrão&quot; realçado.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack2.png)*Definindo a faixa de áudio padrão de um vídeo.*
 
 1. No canto superior direito, selecione **[!UICONTROL Salvar e fechar]**.
 1. Publique o vídeo. Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
