@@ -6,9 +6,9 @@ seo-description: The repository browser provides a read-only view into the repos
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9d1b51b465a148551de93f8180b056b8e7752db5
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '871'
 ht-degree: 1%
 
 ---
@@ -33,15 +33,13 @@ Acessível a partir do [Console do desenvolvedor AEM as a Cloud Service](/help/i
 
 Estas condições devem ser atendidas para acessar o Console do desenvolvedor as a Cloud Service AEM ou o navegador do Repositório
 
-Para acessar o Console do desenvolvedor do AEM as a Cloud Service:
+Para acessar o Console do desenvolvedor do AEM as a Cloud Service, consulte [Acesso ao Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#developer-console-access).
 
-* Para programas de Produção, os usuários devem ter o **Cloud Manager - Função do desenvolvedor** no Adobe Admin Console
-* Para programas de sandbox, está disponível para qualquer usuário com um perfil de produto que dê acesso ao AEM as a Cloud Service.
+Para acessar o Navegador do repositório, os requisitos são os mesmos do Console do desenvolvedor do AEM as a Cloud Service (especificado acima). Para exibir o conteúdo do Navegador do repositório de uma instância específica:
 
-Para acessar o Navegador do repositório:
+* Instâncias do autor: usuários com o AEM usuários Perfil de produto para o **Instância do autor** O pode visualizar o navegador do repositório com acesso mínimo de leitura; as permissões do usuário são respeitadas ao navegar pelo repositório. Os usuários com o Perfil de produto de administradores do AEM podem visualizar o navegador do repositório com acesso de leitura completo.
 
-* Os usuários devem ter o **Cloud Manager - Desenvolvedor** Função no Console do desenvolvedor as a Cloud Service AEM para exibir instâncias de Autor e Publicação.
-* Além disso, para o autor, os usuários com o Perfil de produto de usuários AEM podem visualizar o navegador do repositório com acesso mínimo de leitura; as permissões do usuário são respeitadas ao navegar pelo repositório. Os usuários com o Perfil de produto de administradores do AEM podem visualizar o navegador do repositório com acesso de leitura completo.
+* Instâncias de publicação: usuários com o AEM usuários perfil de produto para o **Publicar instância** O pode visualizar o navegador do repositório com acesso mínimo de leitura. Sem esse conjunto de perfis de produto, os usuários navegarão como um usuário anônimo e alguns caminhos não serão exibidos devido a permissões limitadas.
 
 Para obter mais informações sobre a configuração de permissões de usuário, consulte [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 

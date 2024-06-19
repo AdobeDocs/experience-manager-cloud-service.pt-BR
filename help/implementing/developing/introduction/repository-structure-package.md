@@ -4,7 +4,7 @@ description: Os projetos Maven no Adobe Experience Manager as a Cloud Service ex
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 520ab0229b4f00a1de981209bf26059b0d00c3da
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 2%
@@ -164,7 +164,7 @@ Por exemplo:
 + O pacote de códigos A é implantado em `/apps/a`
 + O pacote de código B é implantado em `/apps/a/b`
 
-Se uma dependência no nível do pacote não for estabelecida no pacote de código B no pacote de código A, o pacote de código B poderá ser implantado primeiro em `/apps/a`. Em seguida, seria seguido pelo pacote de código B, que implanta em `/apps/a`. O resultado é a remoção do instalado anteriormente `/apps/a/b`.
+Se uma dependência no nível do pacote não for estabelecida no pacote de código B no pacote de código A, o pacote de código B poderá ser implantado primeiro em `/apps/a`. Se for seguido pelo pacote de código A, que implanta em `/apps/a`, o resultado será a remoção do instalado anteriormente `/apps/a/b`.
 
 Neste caso:
 
