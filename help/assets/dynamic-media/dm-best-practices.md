@@ -10,7 +10,8 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: c24b017e60363b3b6d79105122bdbaab138c701d
+exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
+source-git-commit: 3375ffbb18c312e5df0050050ae16d75a12243e6
 workflow-type: tm+mt
 source-wordcount: '3574'
 ht-degree: 0%
@@ -142,7 +143,6 @@ Use nomes de arquivo descritivos que refletem o conteúdo da imagem. Por exemplo
   Isso ajuda os mecanismos de pesquisa a entender o contexto da imagem e melhora a SEO. O Google prefere hífens a sublinhados ou espaços no nome do arquivo. Além disso, evite concatenar palavras em um nome de arquivo.
 * **Domínio personalizado:**
 Implemente um domínio personalizado que inclua sua empresa ou nome da marca para reforçar o reconhecimento e a confiança da marca. Por exemplo,
-
    * use `http://images.mycompany.com/is/image/companyname/`
    * *evitar* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **Estrutura de pastas compatível com SEO:**
@@ -351,4 +351,3 @@ Para garantir o melhor formato otimizado para a Web, você pode confiar no Smart
 Com a Smart Imaging, você pode garantir que suas imagens sejam entregues da maneira mais eficiente possível, sob medida para o ambiente de navegação de cada usuário. Essa abordagem simplifica o processo e pode resultar em melhor desempenho em termos de tempo de carregamento de imagem e experiência geral do usuário.
 
 Quer saber mais? Ir para [Imagem inteligente](/help/assets/dynamic-media/imaging-faq.md).
-
