@@ -2,10 +2,12 @@
 title: Definições de função no AEM Screens as a Cloud Service
 description: Esta página descreve as definições de função no AEM Screens as a Cloud Service.
 exl-id: f57a1aaf-8139-4141-90c5-c70ec7a9630c
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 

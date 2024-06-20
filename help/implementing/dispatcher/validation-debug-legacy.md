@@ -4,9 +4,10 @@ description: Validação e depuração usando ferramentas do Dispatcher (herdado
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2337'
 ht-degree: 1%
 
 ---
@@ -313,7 +314,7 @@ Os arquivos incluídos devem ser nomeados da seguinte maneira:
 
 >[!TIP]
 >
-Para poder incluir mais arquivos de maneira muito menos limitada, talvez você queira alternar para o modo de configuração flexível do Dispatcher. Consulte [Validação e depuração usando ferramentas do Dispatcher](/help/implementing/dispatcher/validation-debug.md) para obter mais detalhes sobre o modo flexível.
+>Para poder incluir mais arquivos de maneira muito menos limitada, talvez você queira alternar para o modo de configuração flexível do Dispatcher. Consulte [Validação e depuração usando ferramentas do Dispatcher](/help/implementing/dispatcher/validation-debug.md) para obter mais detalhes sobre o modo flexível.
 
 Como alternativa, inclua a variável **padrão** versão das regras de regravação, cujo nome é `conf.d/rewrites/default_rewrite.rules`.
 Observe que não há versão padrão dos arquivos de variáveis.
@@ -352,7 +353,7 @@ Evite este erro copiando e colando o caminho do Windows Explorer e, em seguida, 
 Essa fase verifica a sintaxe do Apache iniciando o Docker em uma imagem. O Docker deve ser instalado localmente, mas observe que não é necessário que o AEM esteja em execução.
 
 >[!NOTE]
-Os usuários do Windows devem usar o Windows 10 Professional ou outras distribuições que suportem o Docker. Esse pré-requisito é necessário para executar e depurar o Dispatcher em um computador local.
+>Os usuários do Windows devem usar o Windows 10 Professional ou outras distribuições que suportem o Docker. Esse pré-requisito é necessário para executar e depurar o Dispatcher em um computador local.
 
 Essa fase também pode ser executada independentemente por meio de `validator full -d out src/dispatcher`, que gera um diretório &quot;out&quot; necessário para o comando seguinte `bin/docker_run.sh out host.docker.internal:4503 8080`.
 

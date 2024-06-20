@@ -3,7 +3,9 @@ title: Introdução e visão geral
 description: Entenda como usar e administrar o Experience Manager Content and Commerce as a Cloud Service.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: 07db10c4ee9cced7b6a697fe4f41c99eaba6a39f
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 98%

@@ -3,7 +3,8 @@ title: Carregar opções de lista suspensa de um URL ou outra planilha para o Ed
 description: As opções da lista suspensa são incluídas em uma planilha distinta e, em seguida, importadas para a planilha principal por meio do URL fornecido.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

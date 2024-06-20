@@ -2,7 +2,9 @@
 title: Execução de um pipeline
 description: Esta página descreve a execução de um pipeline para o projeto Screens as Cloud Service no Cloud Manager.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: a77e5dc4273736b969e9a4a62fcac75664495ee6
+feature: Screens Deployments
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 4%

@@ -2,7 +2,9 @@
 title: Jornada de autor de conteúdo do AEM Commerce
 description: Comece aqui uma jornada guiada pela criação do AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 81%
@@ -41,7 +43,7 @@ As informações nesta jornada podem ser úteis para outros perfis, mas algumas 
 
 Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico e links para documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo no AEM Content and Commerce, Adobe recomenda que você comece do início e avance sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo no conteúdo AEM e no Commerce, a Adobe recomenda que comece do início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|

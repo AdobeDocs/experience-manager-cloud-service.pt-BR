@@ -1,17 +1,19 @@
 ---
 title: Adição de repositórios privados no Cloud Manager
-description: Saiba como configurar o Cloud Manager para funcionar com seus próprios repositórios GitHub privados.
-source-git-commit: 7f598a623c3003b20a074c31749382df7f5f5ca6
+description: Saiba como configurar o Cloud Manager para trabalhar com os seus repositórios do GitHub.
+exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 48%
+ht-degree: 77%
 
 ---
 
-
 # Adição de repositórios privados no Cloud Manager {#private-repositories}
 
-Ao configurar o Cloud Manager para funcionar com seus próprios repositórios GitHub privados, você pode validar seu código diretamente no repositório GitHub por meio do Cloud Manager, eliminando a necessidade de sincronizar consistentemente seu código com o repositório Adobe.
+Ao configurar o Cloud Manager para funcionar com seus próprios repositórios privados do GitHub, você pode validar seu código diretamente no repositório GitHub por meio do Cloud Manager, eliminando a necessidade de sincronizar consistentemente seu código com o repositório da Adobe.
 
 >[!NOTE]
 >
@@ -90,7 +92,7 @@ Após a validação do repositório do GitHub no Cloud Manager, a integração �
 
    ![Verificações do GitHub](/help/implementing/cloud-manager/assets/repos/github-checks.png)
 
-1. Para cada solicitação de “pull”, um [pipeline de qualidade de código de pilha completa](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) será criado automaticamente. Esse pipeline é iniciado a cada atualização de solicitação de “pull”.
+1. Para cada solicitação de “pull”, um [pipeline de qualidade de código de pilha completa](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) será criado automaticamente. Esse pipeline é iniciado a cada atualização de solicitação de pull.
 
 1. A verificação do GitHub permanece em estado de execução até que as verificações de qualidade do código sejam concluídas. Os resultados de qualidade do código serão propagados para a verificação do GitHub.
 
@@ -104,7 +106,7 @@ Quando a solicitação de “pull” é fechada ou mesclada, o pipeline de quali
 
 >[!TIP]
 >
->Você pode controlar os pipelines criados automaticamente para validar cada solicitação de pull para um repositório privado. Consulte o documento [Verificação de configuração do GitHub para repositórios privados](github-check-config.md) para obter mais informações.
+>Você pode controlar os pipelines criados automaticamente para validar cada solicitação de pull para um repositório privado. Consulte o documento [Configuração de verificação do GitHub para repositórios privados](github-check-config.md) para obter mais informações.
 
 ## Associação de repositórios privados a pipelines {#pipelines}
 
@@ -112,16 +114,16 @@ Repositórios privados validados podem ser associados a [pipelines de pilha comp
 
 >[!NOTE]
 >
->Os pipelines de camada da Web e configuração não são compatíveis com repositórios privados.
+>Os pipelines de nível da Web e de configuração não são compatíveis com repositórios privados.
 
 ## Limitações {#limitations}
 
 Certas limitações se aplicam ao uso de repositórios privados com o Cloud Manager.
 
 * Não é possível pausar a validação da solicitação de pull usando a verificação do GitHub no Cloud Manager.
-   * Se o repositório GitHub for validado no Cloud Manager, o Cloud Manager sempre tentará validar as solicitações de pull criadas para esse repositório.
+   * Se o repositório do GitHub for validado no Cloud Manager, o Cloud Manager sempre tentará validar as solicitações de pull criadas para esse repositório.
 * Se o aplicativo GitHub da Adobe for removido de sua organização do GitHub, o recurso de validação de solicitações de “pull” será removido de todos os repositórios.
-* Os pipelines de camada da Web e configuração não são compatíveis com repositórios privados.
+* Os pipelines de nível da Web e de configuração não são compatíveis com repositórios privados.
 * Nenhuma tag do Git será criada e enviada ao usar repositórios privados em pipelines de pilha completa de produção.
 * Os pipelines que usam repositórios privados e o acionador de build ao confirmar não são iniciados automaticamente quando uma nova confirmação é enviada para a ramificação selecionada.
-* [Funcionalidade de reutilização de artefato](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) não se aplica a repositórios privados.
+* A [Funcionalidade de reutilização de artefato](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) não se aplica a repositórios privados.

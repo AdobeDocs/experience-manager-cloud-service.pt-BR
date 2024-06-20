@@ -2,7 +2,9 @@
 title: Cabeçalhos HTTP personalizados
 description: Saiba como configurar cabeçalhos HTTP personalizados que serão enviados para o mecanismo de comércio, juntamente com aqueles já enviados pelo CIF.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '279'
 ht-degree: 3%

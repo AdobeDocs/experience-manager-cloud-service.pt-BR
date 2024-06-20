@@ -2,9 +2,11 @@
 title: Cockpit do produto
 description: Saiba como trabalhar com o Cockpit de produtos, que fornece uma visão geral unificada de catálogos de produtos vinculados e conteúdo associado.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -59,7 +61,7 @@ Clicar em um produto carrega variações de produto, se disponíveis.
 
 Uma pesquisa de texto completo no catálogo de produtos completo é fornecida na guia de filtro à esquerda para localizar produtos rapidamente.
 
-![pesquisar](../assets/search-cockpit.png)
+![pesquisa](../assets/search-cockpit.png)
 
 ## Catálogo de produtos por etapa de navegação {#staged-product-catalogs}
 
@@ -71,7 +73,7 @@ Por padrão, o cockpit de produtos mostra dados do catálogo de produtos em temp
 
 Clicar no ícone de propriedades de um produto ou categoria abre a visualização de propriedade do objeto selecionado. Abrir propriedades de uma variante de produto é igual a abrir as principais propriedades do produto.
 
-### Guias Comércio {#tabs}
+### Guias do Commerce {#tabs}
 
 As guias geral e variante mostram propriedades de comércio predefinidas que vêm do back-end de comércio. Esses dados (incluindo variantes) são dados somente leitura no AEM, pois o sistema de registro é o back-end de comércio. A guia de variante é exibida apenas para produtos com variantes e mostra uma lista de todas as variantes.
 

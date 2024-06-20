@@ -2,9 +2,11 @@
 title: Regulamentos de proteção e privacidade de dados - Disponibilidade do Adobe Experience Manager as a Cloud Service Foundation
 description: Saiba mais sobre o suporte do Adobe Experience Manager as a Cloud Service Foundation a vários regulamentos de proteção e privacidade de dados. Este artigo inclui o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia, e como estar em conformidade ao implementar um novo projeto do AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
-workflow-type: ht
-source-wordcount: '503'
+feature: Compliance
+role: Admin, Architect, Developer, Leader
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+workflow-type: tm+mt
+source-wordcount: '501'
 ht-degree: 100%
 
 ---

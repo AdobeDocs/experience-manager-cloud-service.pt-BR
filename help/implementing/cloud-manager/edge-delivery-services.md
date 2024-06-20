@@ -1,13 +1,15 @@
 ---
 title: Suporte a Edge Delivery Services no Cloud Manager
 description: Saiba como entregar projetos do Cloud Manager usando o Edge Delivery Services.
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
 
 ---
-
 
 # Suporte a Edge Delivery Services no Cloud Manager {#edge-delivery-services}
 

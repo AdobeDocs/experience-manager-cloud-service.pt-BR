@@ -1,18 +1,20 @@
 ---
-title: Integração de AEM e comércio de terceiros usando a Commerce Integration Framework
-description: Empresas corporativas podem precisar de soluções comerciais adicionais de terceiros para potencializar sua loja. A Commerce Integration Framework (CIF) pode ser usada em tais cenários de integração para conectar uma solução comercial de terceiros à Adobe Experience Manager usando a I/O Runtime.
+title: Integração de AEM e Commerce de terceiros usando o Commerce integration framework
+description: Empresas corporativas podem precisar de soluções comerciais adicionais de terceiros para potencializar sua loja. O Commerce integration framework (CIF) pode ser usado em tais cenários de integração para conectar uma solução comercial de terceiros ao Adobe Experience Manager usando a I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 2%
+source-wordcount: '491'
+ht-degree: 1%
 
 ---
 
-# Integração de AEM e comércio de terceiros usando a Commerce Integration Framework {#aem-third-party}
+# Integração de AEM e Commerce de terceiros usando o Commerce integration framework {#aem-third-party}
 
-A integração de soluções que não sejam da Adobe Commerce é um cenário comum da CIF. Soluções de terceiros com diferentes APIs e esquemas são conectadas por meio de uma camada de integração.
+A integração de soluções que não sejam da Adobe Commerce é um cenário comum para o CIF. Soluções de terceiros com diferentes APIs e esquemas são conectadas por meio de uma camada de integração.
 
 ## Arquitetura {#architecture}
 
@@ -40,7 +42,7 @@ As integrações das APIs de catálogo de produtos são necessárias para desblo
 
 ## Casos de uso de front-end
 
-[Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) recuperar e trocar dados por meio das APIs do Adobe Commerce compatíveis com a CIF. Para reutilizar componentes, as respectivas APIs devem ser implementadas.
+[AEM Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components) recuperar e trocar dados por meio das APIs do Adobe Commerce compatíveis com CIF. Para reutilizar componentes, as respectivas APIs devem ser implementadas.
 
 A recomendação para componentes do lado do cliente de desempenho crítico é se comunicar diretamente com a solução de terceiros para evitar latência.
 
@@ -56,7 +58,7 @@ Essa camada de integração não será necessária se uma camada de terceiros es
 
 Os conectores são um bom ponto de partida para os projetos. Eles vêm com uma conexão específica à solução comercial e mapeamento de API padrão. Esses conectores são criados por terceiros e não são mantidos pela Adobe. Entre em contato com o respectivo parceiro para obter informações.
 
-* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), construído por Diconium
+* [SAP COMMERCE](https://github.com/diconium/commerce-cif-graphql-integration-hybris), construído por Diconium
 * [Ferramentas comerciais](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), construído por Diconium
 
 >[!TIP]

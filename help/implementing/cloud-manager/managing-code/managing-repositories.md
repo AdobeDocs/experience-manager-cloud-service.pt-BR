@@ -2,10 +2,12 @@
 title: Gerenciamento de repositórios no Cloud Manager
 description: Saiba como criar, exibir e excluir repositórios Git no Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: e467c8058531441524fedd37e14b82b7fb255c69
+feature: Cloud Manager, Developing
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
@@ -16,50 +18,50 @@ Saiba como criar, exibir e excluir repositórios Git no Cloud Manager.
 
 ## Visão geral {#overview}
 
-Repositórios são usados para armazenar e gerenciar o código do seu projeto usando o Git. Todos os programas criados no Cloud Manager têm um repositório gerenciado por Adobe criado para eles.
+Repositórios são usados para armazenar e gerenciar o código do seu projeto usando o Git. Todos os programas criados no Cloud Manager têm um repositório gerenciado pela Adobe criado para eles.
 
-Você pode optar por criar repositórios adicionais de gerenciamento de Adobe e também adicionar seus próprios repositórios privados. Todos os repositórios associados ao seu programa podem ser exibidos no **Repositórios** janela.
+Você pode optar por criar repositórios adicionais gerenciados pela Adobe e também adicionar seus próprios repositórios privados. Todos os repositórios associados ao seu programa podem ser exibidos na janela **Repositórios**.
 
 Os repositórios criados no Cloud Manager também estarão disponíveis para seleção ao adicionar ou editar pipelines. Consulte [Pipelines de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) para saber mais.
 
-Há um único repositório principal ou uma ramificação para um determinado pipeline. Com [suporte a submódulos Git,](git-submodules.md) muitas ramificações secundárias podem ser incluídas no momento da criação.
+Há um único repositório principal ou uma ramificação para um determinado pipeline. Com o [suporte ao submódulo git,](git-submodules.md) muitas ramificações secundárias podem ser incluídas no momento da compilação.
 
 ## Janela Repositórios {#repositories-window}
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. No **Visão geral do programa** selecione a **Repositórios** para alternar para a guia **Repositórios** página.
+1. Na página **Visão geral do programa**, selecione a guia **Repositórios** para acessar a página **Repositórios** .
 
-1. A variável **Repositórios** exibe todos os repositórios associados ao seu programa.
+1. A janela **Repositórios** exibe todos os repositórios associados ao seu programa.
 
    ![Janela Repositórios](assets/repositories.png)
 
-A variável **Repositórios** fornece detalhes sobre os repositórios:
+A janela **Repositórios** fornece detalhes sobre os repositórios:
 
 * O tipo de repositório
-   * **Adobe** indica repositórios gerenciados por Adobe
-   * **GitHub** indica repositórios GitHub privados que você gerencia
+   * **Adobe** indica repositórios gerenciados pela Adobe
+   * **GitHub** indica repositórios privados do GitHub que você gerencia
 * Quando foi criado
 * Pipelines associados ao repositório
 
 Você pode selecionar o repositório na janela e clicar no botão de reticências para realizar uma ação no repositório selecionado.
 
-* **[Verificar ramificações/Criar projeto](#check-branches)** (disponível somente para repositórios Adobe)
-* **[Copiar URL de repositório](#copy-url)**
-* **[Exibir e atualizar](#view-update)**
+* **[Verificar ramificações/Criar projeto](#check-branches)** (disponível somente para repositórios da Adobe)
+* **[Copiar URL do repositório](#copy-url)**
+* **[Visualizar e atualizar](#view-update)**
 * **[Excluir](#delete)**
 
 ![Ações do repositório](assets/repository-actions.png)
 
 ## Adicionar repositórios {#adding-repositories}
 
-Toque ou clique no **Adicionar repositório** botão na caixa **Repositórios** janela para iniciar o **Adicionar repositório** assistente.
+Toque ou clique no botão **Adicionar repositório** na janela **Repositórios** para iniciar o assistente **Adicionar repositório**.
 
-![Assistente para adicionar repositório](assets/add-repository-wizard.png)
+![Assistente Adicionar repositório](assets/add-repository-wizard.png)
 
-O Cloud Manager oferece suporte a repositórios gerenciados pelo Adobe (**Repositório Adobe**), bem como seus próprios repositórios autogerenciados (**Repositório privado**). Os campos obrigatórios diferem dependendo do tipo de repositório que você escolher adicionar. Consulte os documentos a seguir para obter mais detalhes.
+O Cloud Manager oferece suporte a repositórios gerenciados pela Adobe (**Repositório da Adobe**), bem como seus próprios repositórios autogerenciados (**Repositório privado**). Os campos obrigatórios diferem dependendo do tipo de repositório que você escolher adicionar. Consulte os documentos a seguir para obter mais detalhes.
 
-* [Adição de repositórios de Adobe no Cloud Manager](adobe-repositories.md)
+* [Adição de repositórios da Adobe no Cloud Manager](adobe-repositories.md)
 * [Adição de repositórios privados no Cloud Manager](private-repositories.md)
 
 >[!NOTE]
@@ -69,34 +71,34 @@ O Cloud Manager oferece suporte a repositórios gerenciados pelo Adobe (**Reposi
 
 ## Acessar informações do repositório {#repo-info}
 
-Ao visualizar os repositórios no **Repositórios** você pode visualizar os detalhes sobre como acessar os repositórios gerenciados pelo Adobe de forma programática tocando ou clicando no link **Acessar informações do repositório** na barra de ferramentas.
+Ao visualizar os repositórios na janela **Repositórios**, você pode visualizar os detalhes sobre como acessar os repositórios gerenciados pela Adobe de forma programática tocando ou clicando no botão **Acessar informações do repositório** na barra de ferramentas.
 
 ![Informações do repositório](assets/repo-info.png)
 
-A variável **Informações do repositório** é aberta com os detalhes. Para obter mais informações sobre o acesso às informações do repositório, consulte o documento [Acessando informações do repositório.](accessing-repos.md)
+A janela **Informações do repositório** é aberta com os detalhes. Para obter mais informações sobre o acesso às informações do repositório, consulte o documento [Acessar informações do repositório.](accessing-repos.md)
 
 ## Verificar ramificações/Criar projeto {#check-branches}
 
-A variável **Verificar ramificações/Criar projeto** A ação executa duas funções dependendo do estado do repositório.
+A ação **Verificar ramificações/Criar projeto** executa duas funções dependendo do estado do repositório.
 
-* Se o repositório for recém-criado, a ação criará um projeto de amostra com base em [o arquétipo do projeto AEM.](https://experienceleague.adobe.com/br/docs/experience-manager-core-components/using/developing/archetype/overview)
-* Se o repositório já tiver criado o projeto de amostra, ele verificará o estado do repositório e suas ramificações e retornará se o projeto de amostra já existir.
+* Se o repositório for recém-criado, a ação criará um projeto de amostra com base no [arquétipo do projeto do AEM.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Se o repositório já tiver criado o projeto de amostra, ele verifica o estado do repositório e de suas ramificações e informa se o projeto de amostra já existe.
 
-![Verificar ação de ramificações](assets/check-branches.png)
+![Verificar a ação de ramificações](assets/check-branches.png)
 
 ## Copiar URL de repositório {#copy-url}
 
-A variável **Copiar URL de repositório** ação copia o URL do repositório selecionado na variável **Repositórios** para a área de transferência a ser usada em outro lugar.
+A ação **Copiar URL do repositório** copia o URL do repositório selecionado na janela **Repositórios** para a área de transferência para ser usada em outro lugar.
 
-## Visualizar e atualizar {#view-update}
+## Exibir e atualizar {#view-update}
 
-A variável **Exibir e atualizar** ação abre a variável **Atualizar repositório** diálogo. Ao usá-lo, você pode visualizar as **Nome** e **Visualização do URL de repositório** e atualizar o **Descrição** do repositório.
+A ação **Exibir e atualizar** abre a caixa de diálogo **Atualizar repositório**. Ao usá-la, você pode ver o **Nome** e a **Visualização do URL do repositório** e atualizar a **Descrição** do repositório.
 
 ![Exibir e atualizar informações do repositório](assets/view-update.png)
 
 ## Excluir {#delete}
 
-A variável **Excluir** A ação remove o repositório do projeto. Um repositório não pode ser excluído se estiver associado a um pipeline.
+A ação **Excluir** remove o repositório do seu projeto. Um repositório não pode ser excluído se estiver associado a um pipeline.
 
 ![Excluir](assets/delete.png)
 

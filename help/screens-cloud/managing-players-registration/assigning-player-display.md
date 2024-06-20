@@ -2,10 +2,12 @@
 title: Atribuição do reprodutor a uma exibição no Screens as a Cloud Service
 description: Saiba como atribuir um reprodutor a uma exibição no Screens as a Cloud Service.
 exl-id: d5f5b087-d17a-427f-9bf2-7451eb4e1df6
-source-git-commit: c31f43986e44099a3a36cc6c9c2f1a7251499ffb
+feature: Developing Screens
+role: Admin, Developer, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -35,6 +37,6 @@ Siga as etapas abaixo para atribuir um reprodutor a uma exibição:
 
 Depois de atribuir uma exibição a um reprodutor, conforme mostrado na seção anterior, você verá a exibição atribuída sob o **EXIBIÇÃO ATRIBUÍDA** painel.
 
-Agora, a exibição é atribuída ao reprodutor e o canal começa a reproduzir o conteúdo. O reprodutor agora deve baixar e começar a reproduzir o conteúdo. **Parabéns.**
+Agora, a exibição é atribuída ao reprodutor e o canal começa a reproduzir o conteúdo. O reprodutor agora deve baixar e começar a reproduzir o conteúdo. **Parabéns!**
 
 ![imagem](/help/screens-cloud/assets/player/output.gif)

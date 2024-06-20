@@ -8,7 +8,8 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 10%
@@ -17,14 +18,14 @@ ht-degree: 10%
 
 # Introdução ao AEM Commerce as a Cloud Service {#start}
 
-Para começar a usar o as a Cloud Service do Adobe Experience Manager (AEM) Commerce, seu Experience Manager Cloud Service deve ser provisionado com o complemento Commerce integration framework CIF (). O complemento CIF é um módulo extra sobre o [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
+Para começar a usar o Adobe Experience Manager (AEM) Commerce as a Cloud Service, seu Experience Manager Cloud Service deve ser provisionado com o add-on Commerce integration framework CIF (). O complemento CIF é um módulo extra sobre o [AEM Sites as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/home.html).
 
 ## Integração {#onboarding}
 
 A integração do AEM Commerce as a Cloud Service é um processo de duas etapas:
 
 1. Ativação do AEM Commerce as a Cloud Service e provisionamento do complemento CIF
-2. Conectar o AEM Commerce as a Cloud Service com sua solução comercial
+2. Conecte o AEM Commerce as a Cloud Service com sua solução comercial
 
 A primeira etapa de integração é feita pelo Adobe. Para obter mais detalhes sobre preços e provisionamento, entre em contato com seu representante de vendas.
 
@@ -32,9 +33,9 @@ Depois de provisionado com o complemento CIF, ele é aplicado a todos os program
 
 A segunda etapa é o autoatendimento para cada ambiente do AEM as a Cloud Service. Há algumas configurações adicionais que você deve fazer após o provisionamento inicial do complemento CIF.
 
-## Conectar o AEM a uma solução comercial {#solution}
+## Conectar o AEM a uma solução da Commerce {#solution}
 
-Para conectar o complemento CIF e a [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) com uma solução comercial, você deve fornecer a URL do endpoint do GraphQL por meio de uma variável de ambiente do Cloud Manager. O nome da variável é `COMMERCE_ENDPOINT`. Deve ser configurada uma conexão segura por meio de HTTPS.
+Para conectar o complemento CIF e a [AEM Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components) com uma solução comercial, você deve fornecer a URL do endpoint do GraphQL por meio de uma variável de ambiente do Cloud Manager. O nome da variável é `COMMERCE_ENDPOINT`. Deve ser configurada uma conexão segura por meio de HTTPS.
 
 Essa variável de ambiente é usada em dois lugares:
 
@@ -51,13 +52,13 @@ Há duas opções para configurar o endpoint:
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-Essa configuração pode ser feita usando uma caixa de diálogo na página Detalhes do ambiente. Ao visualizar esta página para um programa habilitado para comércio, um botão será exibido se o endpoint não estiver configurado no momento:
+Essa configuração pode ser feita usando uma caixa de diálogo na página Detalhes do ambiente. Ao visualizar esta página para um programa habilitado para Commerce, um botão será exibido se o endpoint não estiver configurado no momento:
 
 ![Informações de ambiente do CM](/help/commerce-cloud/assets/commerce-cmui.png)
 
 Clicar nesse botão abre uma caixa de diálogo:
 
-![Ponto de Extremidade de Comércio CM](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
+![Ponto de Extremidade CM Commerce](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
 Depois que o ponto de extremidade e, opcionalmente, um cabeçalho de autorização para suporte ao catálogo em etapas forem definidos, o ponto de extremidade será exibido na página de detalhes. Clicar no ícone Editar para abrir a mesma caixa de diálogo, na qual você pode editar o endpoint, se necessário.
 
@@ -103,7 +104,7 @@ Você está pronto para usar o AEM Commerce as a Cloud Service e pode implantar 
 
 ## Configuração de lojas e catálogos {#catalog}
 
-O complemento CIF e o [Componentes principais da CIF](https://github.com/adobe/aem-core-cif-components) pode ser usado em várias estruturas de site de AEM conectadas a diferentes lojas de comércio (ou visualizações de loja e assim por diante). Por padrão, o complemento CIF é implantado com uma configuração padrão conectada ao armazenamento e catálogo padrão da Adobe Commerce.
+O complemento CIF e o [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components) pode ser usado em várias estruturas de site de AEM conectadas a diferentes lojas de comércio (ou visualizações de loja e assim por diante). Por padrão, o complemento CIF é implantado com uma configuração padrão conectada ao armazenamento e catálogo padrão da Adobe Commerce.
 
 Essa configuração pode ser ajustada para o projeto por meio da configuração de Cloud Service CIF seguindo estas etapas:
 
@@ -141,5 +142,5 @@ Para configurações mais complexas, usando várias estruturas de site AEM combi
 - [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype)
 - [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuração de várias lojas do Commerce](configuring/multi-store-setup.md)
-- [Configurações de sistemas de comércio múltiplos](configuring/multiple-commerce-systems-setup.md)
+- [Várias configurações de sistemas Commerce](configuring/multiple-commerce-systems-setup.md)
 

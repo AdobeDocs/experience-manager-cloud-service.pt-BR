@@ -2,7 +2,9 @@
 title: Remoção do índice Lucene genérico
 description: Saiba mais sobre a remoção planejada de índices Lucene genéricos e como você pode ser afetado.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '1345'
 ht-degree: 0%
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 Adobe pretende eliminar o índice &quot;genérico Lucene&quot; (`/oak:index/lucene-*`) da Adobe Experience Manager as a Cloud Service. Este índice está obsoleto desde o AEM 6.5. Neste documento, o impacto desta decisão é descrito, juntamente com descrições detalhadas sobre como examinar se uma instância do AEM é afetada. Ele também contém maneiras de alterar as consultas para que elas continuem a funcionar sem o índice Lucene genérico.
 
-## Segundo plano {#background}
+## Fundo {#background}
 
 No AEM, as consultas de texto completo são aquelas que usam as seguintes funções:
 

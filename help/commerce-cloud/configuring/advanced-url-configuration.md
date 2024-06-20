@@ -10,10 +10,11 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '2172'
-ht-degree: 11%
+source-wordcount: '2059'
+ht-degree: 9%
 
 ---
 
@@ -29,11 +30,11 @@ Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-
 
 ## Configuração {#configuration}
 
-Para configurar o `UrlProvider` de acordo com os requisitos e necessidades de SEO, um projeto deve fornecer uma configuração OSGI para o _Configuração do provedor de URL da CIF_.
+Para configurar o `UrlProvider` de acordo com os requisitos e necessidades de SEO, um projeto deve fornecer uma configuração OSGI para o _Configuração do provedor de URL do CIF_.
 
 >[!NOTE]
 >
-> Desde a versão 2.0.0 dos Componentes principais da CIF do AEM, a configuração do Provedor de URL fornece apenas formatos de URL predefinidos, em vez dos formatos configuráveis de texto livre conhecidos das versões 1.x. Além disso, o uso de seletores para transmitir dados em URLs foi substituído por sufixos.
+> AEM Desde a versão 2.0.0 dos Componentes principais do CIF, a configuração do Provedor de URL fornece apenas formatos de URL predefinidos, em vez dos formatos configuráveis de texto livre conhecidos das versões 1.x. Além disso, o uso de seletores para transmitir dados em URLs foi substituído por sufixos.
 
 ### Formato do URL da página do produto {#product}
 
@@ -80,17 +81,17 @@ Com os dados de exemplo acima, uma URL de página de categoria formatada usando 
 
 ### Configuração específica do armazenamento {#store-specific-urlformats}
 
-Os formatos de URL de categoria e página do produto em todo o sistema definidos pelo _Configuração do provedor de URL da CIF_ pode ser alterado para cada armazenamento.
+Os formatos de URL de categoria e página do produto em todo o sistema definidos pelo _Configuração do provedor de URL do CIF_ pode ser alterado para cada armazenamento.
 
-Na configuração da CIF, um editor pode selecionar um produto alternativo ou um formato de URL de página de categoria. Se nada for selecionado lá, a implementação voltará para a configuração do sistema geral.
+Na Configuração do CIF, um editor pode selecionar um formato alternativo de URL da página do produto ou da categoria. Se nada for selecionado lá, a implementação voltará para a configuração do sistema geral.
 
 A alteração do formato de URL de um site ativo pode ter um impacto negativo no tráfego orgânico do site. Consulte [Práticas recomendadas](#best-practices) abaixo e planeje com antecedência a alteração do formato do URL.
 
-![Formatos de URL na configuração da CIF](assets/store-specific-url-formats.png)
+![Formatos de URL na configuração do CIF](assets/store-specific-url-formats.png)
 
 >[!NOTE]
 >
-> A configuração específica do armazenamento dos formatos de URL requer [Componentes principais da CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-CIF-components-reator-2.6.0) e a versão mais recente do complemento Adobe Experience Manager Content and Commerce.
+> A configuração específica do armazenamento dos formatos de URL requer [Componentes principais do CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) e a versão mais recente do complemento Adobe Experience Manager Content and Commerce.
 
 ## URLs da página do produto com reconhecimento de categoria {#context-aware-pdps}
 
@@ -107,7 +108,7 @@ Este esquema seleciona o `url_path` com a maioria dos antecessores, com base no 
 
 No entanto, quando um comprador navega de uma página de categoria para uma página de produto ou de uma página de produto para outra página de produto relacionada na mesma categoria, vale a pena manter o contexto de categoria atual. Neste caso, o `url_path` a seleção deve preferir alternativas que estejam dentro do contexto da categoria atual _canônico_ seleção descrita acima.
 
-Esse recurso deve ser ativado na variável _Configuração do provedor de URL da CIF_. Se ativada, a seleção pontua as alternativas como maiores, quando
+Esse recurso deve ser ativado na variável _Configuração do provedor de URL do CIF_. Se ativada, a seleção pontua as alternativas como maiores, quando
 
 * elas correspondem a partes de uma determinada categoria `url_path` do início (correspondência de prefixos difusos)
 * ou eles correspondem a uma determinada categoria `url_key` em qualquer lugar (correspondência parcial exata)
@@ -153,7 +154,7 @@ A alternativa &quot;new-products/new-in-summer-2022/gold-cirque-earrings.html&qu
 
 >[!NOTE]
 >
-> Os URLs de produtos com reconhecimento de categoria exigem [Componentes principais da CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) ou mais recente.
+> Os URLs de produtos com reconhecimento de categoria exigem [Componentes principais do CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) ou mais recente.
 
 ## Categoria específica e páginas de produto {#specific-pages}
 
@@ -180,13 +181,13 @@ Páginas de produto específicas são selecionadas pelo SKU ou pela categoria do
 
 >[!NOTE]
 >
-> A seleção de páginas de produtos específicas por categoria requer [Componentes principais da CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) ou mais recente.
+> A seleção de páginas de produtos específicas por categoria requer [Componentes principais do CIF 2.6.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) ou mais recente.
 
 ### Vinculação profunda {#specific-pages-deep-linking}
 
 A variável `UrlProvider` O é pré-configurado para gerar deep links para páginas de categoria e produto específicas nas instâncias do nível do autor. Essa capacidade é útil para editores que navegam em um site usando o modo de Visualização, navegam até uma página de produto ou categoria específica e voltam ao modo de Edição para editar a página.
 
-Por outro lado, em instâncias do nível de publicação, os URLs de página de catálogo devem ser mantidos estáveis para não perder ganhos nas classificações do mecanismo de pesquisa, por exemplo. Devido a esse nível de publicação, as instâncias não renderizam deep links para páginas de catálogo específicas por padrão. Para alterar esse comportamento, a variável _Estratégia de página específica do provedor de URL da CIF_ O pode ser configurado para sempre gerar URLs de página específicos.
+Por outro lado, em instâncias do nível de publicação, os URLs de página de catálogo devem ser mantidos estáveis para não perder ganhos nas classificações do mecanismo de pesquisa, por exemplo. Devido a esse nível de publicação, as instâncias não renderizam deep links para páginas de catálogo específicas por padrão. Para alterar esse comportamento, a variável _Estratégia de página específica do provedor de URL do CIF_ O pode ser configurado para sempre gerar URLs de página específicos.
 
 ### Várias páginas do catálogo {#multiple-product-pages}
 
@@ -198,7 +199,7 @@ Para esse caso de uso, cada uma das páginas do catálogo pode ter uma referênc
 
 >[!NOTE]
 >
-> O suporte completo para várias páginas de catálogo requer [Componentes principais da CIF 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) ou mais recente.
+> O suporte completo para várias páginas de catálogo requer [Componentes principais do CIF 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) ou mais recente.
 
 ## Personalizações {#customization}
 
@@ -216,7 +217,7 @@ Além do `UrlProvider`, também é possível configurar [Mapeamentos do Sling](h
 
 As substituições de URL também podem ser obtidas usando o servidor HTTP do AEM Dispatcher com `mod_rewrite` módulo. O [Arquétipo de projeto do AEM](https://github.com/adobe/aem-project-archetype) fornece uma configuração de referência do AEM Dispatcher que já inclui [regras de substituição](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) básicas para o tamanho gerado.
 
-## Práticas recomendadas     {#best-practices}
+## Práticas recomendadas {#best-practices}
 
 ### Escolher o melhor formato de URL {#choose-url-format}
 
@@ -224,11 +225,11 @@ Como mencionado antes de selecionar um dos formatos padrão disponíveis, ou mes
 
 _**Use um formato de URL da página do produto que contenha o SKU.**_
 
-Os Componentes principais da CIF usam o SKU como identificador principal em todos os componentes. Se o formato do URL da página do produto não contiver o SKU, uma consulta do GraphQL será necessária para resolvê-lo. Essa resolução pode afetar o tempo até o primeiro byte. Além disso, pode ser desejável que os compradores possam encontrar produtos por SKU usando mecanismos de pesquisa.
+Os Componentes principais do CIF usam o SKU como identificador principal em todos os componentes. Se o formato do URL da página do produto não contiver o SKU, uma consulta do GraphQL será necessária para resolvê-lo. Essa resolução pode afetar o tempo até o primeiro byte. Além disso, pode ser desejável que os compradores possam encontrar produtos por SKU usando mecanismos de pesquisa.
 
 _**Use um formato de URL da página do produto que contenha o contexto da categoria.**_
 
-Alguns recursos do Provedor de URL da CIF só estão disponíveis ao usar formatos de URL de produto, que codificam o contexto da categoria, como a categoria `url_key` ou a categoria `url_path`. Mesmo que esses recursos não sejam necessários para uma nova loja, usar um desses formatos de URL no início ajuda a reduzir os esforços de migração no futuro.
+Alguns recursos do Provedor de URL do CIF só estão disponíveis ao usar formatos de URL de produto, que codificam o contexto da categoria, como a categoria `url_key` ou a categoria `url_path`. Mesmo que esses recursos não sejam necessários para uma nova loja, usar um desses formatos de URL no início ajuda a reduzir os esforços de migração no futuro.
 
 _**Equilíbrio entre comprimento do URL e informações codificadas.**_
 
@@ -242,7 +243,7 @@ Muitos dos formatos de URL padrão são de alguma forma compatíveis entre si, o
 
 Por outro lado, os mecanismos de pesquisa precisam de tempo para rastrear novamente todas as páginas do catálogo com o novo formato de URL. Para dar suporte a esse processo e também melhorar a experiência do usuário final, é recomendável fornecer redirecionamentos que encaminham o usuário dos URLs antigos para os novos.
 
-Uma abordagem para isso pode ser, conectar um ambiente de preparo ao back-end de comércio eletrônico de produção e configurá-lo para usar o novo formato de URL. Posteriormente, obtenha a [mapa de site de produto gerado pelo gerador de mapa de site de produtos da CIF](../../overview/seo-and-url-management.md) para o ambiente de preparo e produção, e usá-los para criar uma [Mapa de reescrita do Apache httpd](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Esse mapa de regravação pode ser implantado no Dispatcher junto com a implantação do novo formato de URL.
+Uma abordagem para isso pode ser, conectar um ambiente de preparo ao back-end de comércio eletrônico de produção e configurá-lo para usar o novo formato de URL. Posteriormente, obtenha a [mapa de site do produto gerado pelo gerador de mapa de site de produtos CIF](../../overview/seo-and-url-management.md) para o ambiente de preparo e produção, e usá-los para criar uma [Mapa de reescrita do Apache httpd](https://httpd.apache.org/docs/2.4/rewrite/rewritemap.html). Esse mapa de regravação pode ser implantado no Dispatcher junto com a implantação do novo formato de URL.
 
 ## Exemplo {#example}
 

@@ -10,10 +10,11 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: d1fa9824375ef739e2fdb90e8fd625b43fbca77b
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 

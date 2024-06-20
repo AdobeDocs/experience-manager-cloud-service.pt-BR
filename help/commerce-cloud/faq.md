@@ -1,15 +1,17 @@
 ---
-title: AEM - Integração de comércio usando as perguntas frequentes do Commerce integration framework
-description: AEM - Integração de comércio usando as perguntas frequentes do Commerce integration framework
+title: AEM - Perguntas frequentes sobre a integração com o Commerce usando o Commerce integration framework
+description: AEM - Perguntas frequentes sobre a integração com o Commerce usando o Commerce integration framework
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: abe5f8a4b19473c3dddfb79674fb5f5ab7e52fbf
+feature: Commerce Integration Framework
+role: Admin, Architect, User
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 26%
 
 ---
 
-# AEM - Integração de comércio usando as perguntas frequentes do Commerce integration framework
+# AEM - Perguntas frequentes sobre a integração com o Commerce usando o Commerce integration framework
 
 ## 1. O CIF GraphQL é usado apenas para comércio ou será disponibilizado para consultar conteúdo criado no AEM JCR?
 

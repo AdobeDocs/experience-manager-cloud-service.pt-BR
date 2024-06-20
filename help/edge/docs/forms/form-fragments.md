@@ -4,12 +4,13 @@ description: Crie formulários avançados mais rapidamente usando os Fragmentos 
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
-source-git-commit: f2752673dcaa0762bb55719cee23765aa8ecde96
+exl-id: ba8c7220-55b3-4731-9e40-ce0c360c508d
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '27'
 ht-degree: 0%
 
 ---
-
 
 # Dominar fragmentos de formulário para o serviço de entrega de borda da AEM Forms

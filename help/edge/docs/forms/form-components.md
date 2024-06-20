@@ -3,7 +3,8 @@ title: Componentes de bloco de formulário adaptável e suas propriedades
 description: Este documento fornece uma visão geral dos componentes de formulário e suas propriedades disponíveis no Serviço de entrega de borda da AEM Forms.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
-source-git-commit: 703a48903c44678f6fe311de740b7c767c886ba5
+role: Admin, Architect, Developer
+source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 3%
@@ -25,7 +26,7 @@ Esta é uma visão geral dos componentes disponíveis:
 
 ### Campos de entrada
 
-* Todos os HTML5 válidos [tipos de entrada](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) e [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea). Por exemplo, botão, caixa de seleção, cor, data, data-hora-local, email, arquivo, oculto, imagem, mês, número, senha, rádio, intervalo, redefinição, enviar, tel, texto, hora, url e semana.
+* Todos os HTML5 válidos [tipos de entrada](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#input_types) e [textarea](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea). Por exemplo, botão, caixa de seleção, cor, data, data-hora-local, email, arquivo, oculto, imagem, mês, número, senha, rádio, intervalo, redefinição, enviar, tel, texto, hora, url e semana.
 
 ### Controles de seleção
 
@@ -45,7 +46,7 @@ Cada componente de formulário vem com várias propriedades que permitem control
 
 | Propriedade | Componentes aplicáveis | Detalhes |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| Tipo | Todos | Especifica o tipo do componente. Essa propriedade determina o comportamento e a aparência do campo de entrada. Por exemplo, para entradas de texto, o tipo pode ser &quot;texto&quot;, &quot;email&quot; para entradas de email, &quot;senha&quot; para entradas de senha. Suporte a bloco adaptável do Forms  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types">todos os tipos de entrada de HTML5 válidos</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecionar</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
+| Tipo | Todos | Especifica o tipo do componente. Essa propriedade determina o comportamento e a aparência do campo de entrada. Por exemplo, para entradas de texto, o tipo pode ser &quot;texto&quot;, &quot;email&quot; para entradas de email, &quot;senha&quot; para entradas de senha. Suporte a bloco adaptável do Forms  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#input_types">todos os tipos de entrada de HTML5 válidos</a>, <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecionar</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
 | Nome | Todos | Identifica o componente para envio de formulário. O atributo name é usado quando os dados de formulário são enviados ao servidor, associando a entrada do usuário a um campo específico. |
 | Rótulo | Todos | Fornece informações contextuais aos usuários. O rótulo é o texto exibido ao lado do componente, fornecendo aos usuários orientação sobre quais informações inserir. |
 | Valor | Texto, Senha, Email, Número, Intervalo, Data e suas variantes (datetime-local, mês, semana, hora), Caixa de seleção, Rádio, Oculto, Enviar, Botão | Especifica o valor inicial do componente. Para entradas de texto, área de texto e elementos de seleção, este é o texto ou opção padrão exibido. Para componentes de rádio e caixa de seleção, este é o valor/dado enviado quando eles são selecionados. O atributo value é opcional, mas deve ser considerado obrigatório para entradas de rádio e caixa de seleção. |

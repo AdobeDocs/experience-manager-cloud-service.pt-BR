@@ -2,9 +2,11 @@
 title: Criação de experiências de produto
 description: Saiba como criar conteúdo de produto que pode ser usado em vários canais para criar uma experiência de compra imersiva.
 exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
-source-git-commit: 78ead5f15c2613d9c3bed3025b43423a66805c59
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1157'
 ht-degree: 2%
 
 ---
@@ -15,7 +17,7 @@ Saiba como gerenciar experiências de produtos.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de conteúdo e comércio do Adobe Experience Manager (AEM), [Gerenciar experiências de catálogo de produtos por etapas](staged-catalog.md), você aprendeu a gerenciar experiências de catálogo de produtos por etapas.
+No documento anterior do conteúdo do Adobe Experience Manager (AEM) e da jornada do Commerce, [Gerenciar experiências de catálogo de produtos por etapas](staged-catalog.md), você aprendeu a gerenciar experiências de catálogo de produtos por etapas.
 
 ## Objetivo {#objective}
 
@@ -27,7 +29,7 @@ O Gerenciamento de experiência do produto é a disciplina para decorar dados do
 
 No AEM, é possível criar vários tipos de conteúdo e vinculá-los ao catálogo de produtos. O conteúdo associado pode ser facilmente descoberto e usado, o que resulta em alta produtividade.
 
-### Assets {#assets}
+### Ativos {#assets}
 
 Em um alto nível, há dois tipos de ativos relacionados aos produtos: produto e marketing. Os ativos do produto são gerenciados pelos comerciantes e se concentram em mostrar o produto (principalmente na frente de um fundo neutro). Os ativos são gerenciados na solução comercial ou na AEM Assets (com uma integração do Assets à solução comercial/pim).
 
@@ -97,22 +99,22 @@ Primeiro, arraste e solte um componente de detalhes do produto na página. Em se
 
 ![página do produto pem](assets/pem-page-product.png)
 
-Se você tiver criado conteúdo associado para esse produto, alterne na barra lateral do Assets para **Conteúdo de comércio associado**. Esta guia mostra todo o conteúdo do AEM associado a este produto. Isso permite que você embeleze rapidamente as páginas com qualquer conteúdo associado.
+Se você tiver criado conteúdo associado para esse produto, alterne na barra lateral do Assets para **Conteúdo Commerce associado**. Esta guia mostra todo o conteúdo do AEM associado a este produto. Isso permite que você embeleze rapidamente as páginas com qualquer conteúdo associado.
 
 ![página enriquecida com pem](assets/pem-page-enriched.png)
 
 ## Fim da jornada? {#end-of-journey}
 
-Parabéns! Você concluiu a jornada para desenvolvedores de conteúdo e comércio do AEM! Agora você deve:
+Parabéns! Você concluiu a jornada do desenvolvedor do Commerce e do conteúdo do AEM! Agora você deve:
 
 * entenda como associar qualquer conteúdo AEM a objetos de catálogo de produtos
 * usar espaços reservados para enriquecer individualmente as páginas de produto e categoria
 * saber como tornar o conteúdo comprável e usar a guia conteúdo associado
 
-Agora você está pronto para gerenciar experiências de produto usando Conteúdo e Comércio AEM. No entanto, o AEM Content and Commerce tem muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis no [Seção Recursos adicionais](#additional-resources) onde você pode saber mais sobre os recursos vistos nesta jornada.
+Agora você está pronto para gerenciar experiências de produto usando Conteúdo AEM e Commerce. No entanto, o Conteúdo AEM e o Commerce têm muitas opções adicionais disponíveis. Confira alguns dos recursos adicionais disponíveis no [Seção Recursos adicionais](#additional-resources) onde você pode saber mais sobre os recursos vistos nesta jornada.
 
 ## Recursos adicionais {#additional-resources}
 
-* [Criação de experiências de comércio](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [Criação de experiências no Commerce](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
 * [Cockpit do produto](/help/commerce-cloud/authoring/product-cockpit.md)
 * [Componente Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

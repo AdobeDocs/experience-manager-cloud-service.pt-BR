@@ -9,11 +9,12 @@ audience: marketer
 feature: Commerce Integration Framework
 kt: 3455
 thumbnail: 28969.jpg
-exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 49%
+source-wordcount: '178'
+ht-degree: 45%
 
 ---
 
@@ -21,7 +22,7 @@ ht-degree: 49%
 
 >[!NOTE]
 >
-> Essa funcionalidade funciona somente para vitrines com base na CIF (por exemplo, Venia).
+> Essa funcionalidade funciona somente para vitrines baseadas em CIF (por exemplo, Venia).
 
 Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) dão aos autores de conteúdo a capacidade de criar páginas adicionais de categoria e do produto. Essas páginas podem ser enriquecidas com conteúdo de marketing adicional e configuradas para direcionar categorias e produtos específicos. O vídeo a seguir apresenta a configuração desse recurso.
 

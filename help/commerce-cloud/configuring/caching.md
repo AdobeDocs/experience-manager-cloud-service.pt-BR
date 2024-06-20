@@ -2,10 +2,12 @@
 title: Armazenamento em cache e desempenho
 description: Saiba mais sobre as diferentes configurações disponíveis para habilitar o GraphQL e o armazenamento em cache de conteúdo para otimizar o desempenho da sua implementação comercial.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 40%
+source-wordcount: '811'
+ht-degree: 39%
 
 ---
 
@@ -54,15 +56,15 @@ O armazenamento em cache para outros componentes deve ser definido de acordo com
 
 O armazenamento em cache de páginas ou fragmentos do AEM no [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) é uma prática recomendada para qualquer projeto do AEM. Normalmente, ele depende de técnicas de invalidação que garantem que qualquer conteúdo alterado no AEM seja atualizado corretamente no Dispatcher. Esse recurso é essencial para a estratégia de armazenamento em cache do AEM Dispatcher.
 
-Além da CIF de conteúdo puro gerenciado pelo AEM, a página pode exibir dados comerciais que são buscados dinamicamente no Adobe Commerce via GraphQL. Embora a estrutura da página em si nunca mude, o conteúdo comercial pode mudar. Por exemplo, se os dados do produto, como nome e preço, forem alterados no Adobe Commerce.
+Além do CIF puro de conteúdo gerenciado por AEM, uma página pode exibir dados comerciais que são buscados dinamicamente no Adobe Commerce via GraphQL. Embora a estrutura da página em si nunca mude, o conteúdo comercial pode mudar. Por exemplo, se os dados do produto, como nome e preço, forem alterados no Adobe Commerce.
 
-Para garantir que as páginas da CIF sejam armazenadas em cache por um tempo limitado no AEM Dispatcher, a Adobe recomenda usar [Invalidação de cache com base no tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (conhecido como armazenamento em cache com base em TTL) ao armazenar páginas da CIF no AEM Dispatcher. Esse recurso pode ser configurado no AEM com o uso do pacote adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
+Para garantir que as páginas do CIF sejam armazenadas em cache por um tempo limitado no AEM Dispatcher, o Adobe recomenda usar [Invalidação de cache com base no tempo](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) (conhecido como armazenamento em cache com base em TTL) ao armazenar páginas CIF no AEM Dispatcher. Esse recurso pode ser configurado no AEM com o uso do pacote adicional [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/).
 
-Com o armazenamento em cache com base em TTL, o desenvolvedor normalmente define uma ou várias durações de armazenamento em cache para determinadas páginas do AEM. Essa duração garante que as páginas da CIF sejam armazenadas em cache somente no AEM Dispatcher pela duração configurada e que o conteúdo seja atualizado com frequência.
+Com o armazenamento em cache com base em TTL, o desenvolvedor normalmente define uma ou várias durações de armazenamento em cache para determinadas páginas do AEM. Essa duração garante que as páginas CIF sejam armazenadas em cache somente no AEM Dispatcher até a duração configurada e que o conteúdo seja atualizado com frequência.
 
 >[!NOTE]
 >
->Embora os dados do lado do servidor possam ser armazenados em cache pelo AEM Dispatcher, alguns componentes da CIF, como o `product`, `productlist`, e `searchresults` normalmente, os componentes sempre buscam novamente os preços do produto em uma solicitação do navegador do lado do cliente quando a página é carregada. Isso garante que o conteúdo dinâmico essencial seja sempre buscado no carregamento da página.
+>Embora os dados do lado do servidor possam ser armazenados em cache pelo AEM Dispatcher, alguns componentes do CIF, como o `product`, `productlist`, e `searchresults` normalmente, os componentes sempre buscam novamente os preços do produto em uma solicitação do navegador do lado do cliente quando a página é carregada. Isso garante que o conteúdo dinâmico essencial seja sempre buscado no carregamento da página.
 
 ## Recursos adicionais {#additional}
 

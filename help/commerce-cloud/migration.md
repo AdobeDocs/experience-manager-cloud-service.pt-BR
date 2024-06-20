@@ -1,11 +1,13 @@
 ---
-title: Migração para o complemento AEM Commerce Integration Framework (CIF)
-description: Como migrar de uma versão antiga para o complemento Estrutura de integração de comércio (CIF) do AEM
+title: Migração para o complemento AEM Commerce integration framework (CIF)
+description: Como migrar de uma versão antiga para o complemento AEM Commerce integration framework (CIF)
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 40%
+source-wordcount: '470'
+ht-degree: 38%
 
 ---
 
@@ -13,17 +15,17 @@ ht-degree: 40%
 
 Este guia ajuda a identificar as áreas que você precisa atualizar para a migração do Experience Manager Cloud Service.
 
-## Complemento CIF
+## complemento CIF
 
 Para o Experience Manager as a Cloud Service, o complemento CIF é a única solução de integração comercial compatível para soluções comerciais da Adobe Commerce e de terceiros. O complemento CIF é implantado automaticamente para clientes no Experience Manager as a Cloud Service; não é necessária implantação manual. Consulte [Introdução ao AEM Commerce as a Cloud Service](getting-started.md).
 
-Para dar suporte a projetos que implantam o Adobe da CIF, forneça [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components).
+Para apoiar projetos que implantam o CIF Adobe, fornecer [AEM Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components).
 
 O complemento CIF está disponível para o AEM 6.5 e por meio do [Portal de distribuição de softwares](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). Ele é compatível e fornece os mesmos recursos do complemento CIF para o Experience Manager as a Cloud Service, não sendo necessário fazer ajustes.
 
-A CIF clássica com suas dependências não está mais disponível. Código que depende dessa versão da CIF usando `com.adobe.cq.commerce.api` As APIs do Java devem ser ajustadas para o complemento CIF e seus princípios.
+A CIF clássica com suas dependências não está mais disponível. Código que depende desta versão do CIF usando `com.adobe.cq.commerce.api` As APIs do Java devem ser ajustadas para o complemento CIF e seus princípios.
 
-O conector da CIF disponível anteriormente não pode mais ser instalado. Códigos que dependem desse conector precisam ser ajustados para o complemento CIF e seus princípios.
+O conector CIF anteriormente disponível não pode mais ser instalado. Códigos que dependem desse conector precisam ser ajustados para o complemento CIF e seus princípios.
 
 ## Estrutura de projeto
 
@@ -39,7 +41,7 @@ Em comparação às implantações do AEM 6.5, há duas diferenças principais:
 
 ## Catálogo de produtos
 
-A importação de dados do catálogo de produtos não é mais suportada. Usando as entidades complementares da CIF, as solicitações de produtos e catálogos são feitas sob demanda por meio de chamadas em tempo real para uma solução de comércio externo. Acesse o capítulo Integração para saber mais sobre a integração de uma solução comercial.
+A importação de dados do catálogo de produtos não é mais suportada. Usando as principais características complementares do CIF, as solicitações de produtos e catálogos são feitas sob demanda por meio de chamadas em tempo real para uma solução de comércio externo. Acesse o capítulo Integração para saber mais sobre a integração de uma solução comercial.
 
 >[!TIP]
 >
@@ -47,7 +49,7 @@ A importação de dados do catálogo de produtos não é mais suportada. Usando 
 
 ## Experiências do catálogo de produtos com renderização por AEM
 
-Se você usa o blueprint do catálogo com a CIF clássica, é necessário atualizar o fluxo de trabalho do catálogo de produtos. O complemento CIF agora renderiza experiências de catálogo de produtos de maneira rápida usando modelos de catálogo AEM. Não é mais necessária a replicação de dados ou páginas de produtos.
+Se você usar o blueprint do catálogo com CIF clássico, será necessário atualizar o fluxo de trabalho do catálogo de produtos. O complemento CIF agora renderiza experiências de catálogo de produtos de maneira instantânea usando modelos de catálogo AEM. Não é mais necessária a replicação de dados ou páginas de produtos.
 
 ## Interação de compra e dados não armazenáveis em cache
 

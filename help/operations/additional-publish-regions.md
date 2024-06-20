@@ -2,7 +2,9 @@
 title: Regiões de publicação adicionais
 description: Saiba como o AEM as a Cloud Service permite regiões de publicação adicionais para aumentar a disponibilidade e reduzir a latência.
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+feature: Operations
+role: Admin
+source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 78%
