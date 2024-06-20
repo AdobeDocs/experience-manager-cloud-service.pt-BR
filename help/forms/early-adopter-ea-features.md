@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 2766a351938062127babb01d5ed35bd37b705c21
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1733'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,9 @@ Veja o que mais o Conversational Forms oferece:
 As Forms de conversa são mais do que apenas uma nova aparência - elas são um divisor de águas para a experiência do usuário.  Aumente o engajamento, reduza o abandono de formulários e torne a interação com seu site uma experiência mais agradável para todos.
 
 
-### Criação baseada em AEM para Edge Delivery Services
+### Criação WYSIWYG para Edge Delivery Services
 
-A Criação baseada em AEM fornece uma interface WYSIWYG (Editor Forms adaptável) para criar e publicar esses formulários nos Edge Delivery Services. A criação baseada em AEM oferece todos os recursos do [Criação baseada em documento](/help/edge/docs/forms/overview.md#document-based-authoring-features), além de uma grande variedade de recursos adicionais:
+A Criação WYSIWYG fornece interfaces WYSIWYG (Editor universal e Editor Forms adaptável) para criar e publicar formulários adaptáveis em Edge Delivery Services. A criação WYSIWYG oferece todos os recursos do [Criação baseada em documento](/help/edge/docs/forms/overview.md#document-based-authoring-features), além de uma grande variedade de recursos adicionais:
 
 * Editor de regras avançado para criar lógica complexa.
 * Extensibilidade do lado do servidor para funcionalidades personalizadas.
