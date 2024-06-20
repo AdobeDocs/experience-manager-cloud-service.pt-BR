@@ -4,10 +4,10 @@ description: O AEM tem APIs abrangentes e poderosas que você pode usar para o s
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: b3405279393be51b805c1129c171bb2249fd5726
 workflow-type: tm+mt
-source-wordcount: '608'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

@@ -4,10 +4,10 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
-source-wordcount: '1146'
-ht-degree: 9%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -103,7 +103,7 @@ A seguir estão os tipos de componentes possíveis para usar em campos de render
 | [Número](#number) | `number` |
 | [Grupo radial](#radio-group) | `radio-group` |
 | [Referência](#reference) | `reference` |
-| [Rich Text](#rich-text) | `rich-text` |
+| [Rich Text](#rich-text) | `richtext` |
 | [Selecionar](#select) | `select` |
 | [Guia](#tab) | `tab` |
 | [Texto](#text) | `text` |
