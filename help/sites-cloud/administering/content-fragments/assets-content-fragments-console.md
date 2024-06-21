@@ -3,7 +3,9 @@ title: Exibição e gerenciamento de ativos no Console de fragmentos de conteúd
 description: Saiba como visualizar e gerenciar ativos no **Console de fragmentos de conteúdo** do Adobe Experience Manager as a Cloud Service.
 feature: Content Fragments
 role: User, Developer, Architect
-source-git-commit: 22ed6c2f6b225435fdd657384d753efdea552a7e
+exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 6%

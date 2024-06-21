@@ -4,10 +4,11 @@ description: Analise essas considerações importantes antes de definir as polí
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: d1726bff-3aa8-4758-bee7-0cacea1f660a
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 57%
+ht-degree: 46%
 
 ---
 
@@ -24,7 +25,7 @@ Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser
 1. **O fragmento do conteúdo como uma única entidade.**
 
    * **Caso de uso**: um usuário que deve editar/atualizar um fragmento de conteúdo - **e excluir um fragmento inteiro**.
-   * **Permissões**: a permissão de exclusão pode ser atribuída por meio do gerenciamento de usuários e/ou de grupos.
+   * **Permissões**: a permissão de exclusão pode ser atribuída por meio do gerenciamento de usuários e/ou grupos.
 
 2. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, nós secundários.**
 

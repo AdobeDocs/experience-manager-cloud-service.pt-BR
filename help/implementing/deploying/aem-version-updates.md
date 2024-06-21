@@ -3,7 +3,8 @@ title: Atualizações de versão do AEM
 description: Saiba como o Adobe Experience Manager (AEM) as a Cloud Service usa integração e entrega contínuas (CI/CD) para manter seus projetos na versão mais recente.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 72fc611e006f80fdda672f08b0b795432f5899e2
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '970'
 ht-degree: 1%

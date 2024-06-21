@@ -1,10 +1,12 @@
 ---
 title: Configuração do filtro referenciador com o AEM Headless
 description: O Filtro referenciador do Adobe Experience Manager permite o acesso de hosts de terceiros. Uma configuração OSGi para o Filtro referenciador é necessária para habilitar o acesso ao endpoint do GraphQL para aplicativos headless.
-feature: GraphQL API
+feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
-workflow-type: ht
+solution: Experience Manager
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 

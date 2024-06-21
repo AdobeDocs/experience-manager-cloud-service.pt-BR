@@ -4,7 +4,8 @@ description: Entenda como criar conteúdo para seus Fragmentos de conteúdo e cr
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
-source-git-commit: ec0129b0087e86f50c6c1e65d5445693e63278e0
+solution: Experience Manager Sites
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '2668'
 ht-degree: 3%
@@ -469,7 +470,7 @@ Para usar esse recurso, primeiro é necessário:
 
 Quando o URL tiver sido definido, a variável **Visualizar** O botão está ativo. Você pode selecionar esse botão para iniciar o aplicativo externo (em uma guia separada) para renderizar o fragmento de conteúdo.
 
-## Publicar seu fragmento {#publish-content-fragment}
+## Publish seu fragmento {#publish-content-fragment}
 
 Você pode **Publish** o fragmento é anexado ao:
 

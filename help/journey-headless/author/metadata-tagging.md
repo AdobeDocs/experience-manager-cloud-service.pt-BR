@@ -3,9 +3,9 @@ title: Saiba mais sobre como definir metadados e marcação para fragmentos de c
 description: Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 92%

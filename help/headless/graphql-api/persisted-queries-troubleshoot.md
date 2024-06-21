@@ -1,11 +1,12 @@
 ---
 title: Solução de problemas de consultas persistentes do GraphQL
 description: Saiba como solucionar problemas com consultas persistentes do GraphQL no Adobe Experience Manager as a Cloud Service.
-feature: Content Fragments,GraphQL API
+feature: Headless, Content Fragments,GraphQL API
 exl-id: 71bd1f68-ca96-4c78-a936-abed250ecec1
-source-git-commit: 736fbc28c800c1c181721df7e0d7feed143642d9
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---

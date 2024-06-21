@@ -3,7 +3,8 @@ title: Implantação do AEM as a Cloud Service
 description: Saiba mais sobre os fundamentos e as práticas recomendadas da implantação no AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: aa032af2ed7ff877b4c9f9cb6d427c84e71c3874
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
 source-wordcount: '3429'
 ht-degree: 98%
@@ -175,7 +176,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Gerenciador de pacotes - Migração de pacotes de conteúdo variável"
 >abstract="Explore o uso do Gerenciador de pacotes para casos de uso nos quais um pacote de conteúdo deve ser instalado “Uma única vez”. A instalação inclui a importação de conteúdo específico da produção até o preparo com a finalidade de depurar um problema de produção, transferindo um pequeno pacote de conteúdo do ambiente local para ambientes da AEM Cloud e muito mais."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html" text="Ferramenta Transferência de conteúdo"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=pt-BR" text="Ferramenta Transferência de conteúdo"
 
 Há casos de uso em que um pacote de conteúdo deve ser instalado como “único”. Por exemplo, importação de conteúdo específico da produção para o preparo a fim de depurar um problema de produção. Para esses cenários, o [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) pode ser usado em ambientes do AEM as a Cloud Service.
 

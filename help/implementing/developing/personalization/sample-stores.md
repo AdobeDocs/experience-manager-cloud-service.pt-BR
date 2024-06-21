@@ -2,9 +2,9 @@
 title: Amostra de candidatos da loja do ContextHub
 description: O ContextHub fornece vários exemplos de candidatos de armazenamento que você pode usar em suas soluções
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
-feature: Developing
+feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 1%

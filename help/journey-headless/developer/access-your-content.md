@@ -3,9 +3,9 @@ title: Como acessar seu conteúdo por meio das APIs de entrega do AEM
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba como usar consultas GraphQL para acessar o conteúdo dos Fragmentos de conteúdo.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 97%

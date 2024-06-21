@@ -3,9 +3,9 @@ title: Introdução ao AEM Headless as a Cloud Service
 description: Nesta parte da Jornada do desenvolvedor headless do AEM, saiba mais sobre pré-requisitos do AEM headless.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '3068'
 ht-degree: 92%

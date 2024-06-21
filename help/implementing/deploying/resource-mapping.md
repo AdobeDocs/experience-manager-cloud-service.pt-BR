@@ -6,10 +6,11 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
-source-git-commit: 5ad33f0173afd68d8868b088ff5e20fc9f58ad5a
+role: Admin
+source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 4%
+source-wordcount: '526'
+ht-degree: 1%
 
 ---
 
@@ -70,7 +71,7 @@ Aciona o:
 
 Para redirecionar uma solicitação:
 
-`https://localhost:4503/welcome` ``
+`https://localhost:4503/welcome` &quot;
 
 Para:
 

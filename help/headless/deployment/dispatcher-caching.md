@@ -1,9 +1,10 @@
 ---
 title: Consultas persistentes do GraphQL - ativação do armazenamento em cache no Dispatcher
 description: O Dispatcher é uma camada de segurança e cache na frente dos ambientes de publicação do Adobe Experience Manager. Você pode ativar o armazenamento em cache de consultas persistentes no AEM Headless.
-feature: Dispatcher, GraphQL API
+feature: Headless, Dispatcher, GraphQL API
 exl-id: 30a97e56-6699-41c4-a4eb-fc6236667f8f
-source-git-commit: 859ea382cce6822da1da7d11213c3f44a25edef3
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 7%

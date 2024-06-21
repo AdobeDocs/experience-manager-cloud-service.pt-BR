@@ -2,7 +2,9 @@
 title: Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL
 description: Saiba como atualizar os fragmentos de conteúdo para uma filtragem otimizada de GraphQL no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+feature: Headless, Content Fragments,GraphQL API
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 59%
@@ -234,9 +236,9 @@ Portanto, a presença dessa propriedade no nó `/content/dam` do JCR, com um val
 
      >[!NOTE]
      >
-     >O procedimento atualiza os Fragmentos de conteúdo nas instâncias Autor e Publicar.
+     >O procedimento atualiza os fragmentos de conteúdo nas instâncias do Autor e do Publish.
      >
-     >Portanto, a Adobe recomenda que você execute a verificação por meio do navegador de repositório para *pelo menos* um autor *e* uma instância Publish.
+     >Portanto, a Adobe recomenda que você execute a verificação por meio do navegador de repositório para *pelo menos* um autor *e* uma instância do Publish.
 
 ## Limitações {#limitations}
 

@@ -3,9 +3,9 @@ title: Opcional - Como criar aplicativos de página única (SPAs) com o Adobe Ex
 description: Nesta seção opcional da jornada de desenvolvedor headless do AEM, você aprenderá como o AEM pode combinar a entrega headless com os recursos tradicionais de CMS de pilha completa e como criar SPAs editáveis usando a estrutura do editor de SPA do AEM.
 exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 100%

@@ -2,10 +2,12 @@
 title: Práticas recomendadas para a configuração e uso do AEM GraphQL com fragmentos de conteúdo
 description: Conheça as Práticas recomendadas para a configuração e uso do AEM GraphQL com Fragmentos de conteúdo.
 exl-id: 4d6a5aaa-c8be-4858-ad07-085dc4fb77e7
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+feature: Headless
+role: Admin, Developer
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 34%
+source-wordcount: '702'
+ht-degree: 23%
 
 ---
 
@@ -61,14 +63,14 @@ O armazenamento em cache de consultas persistentes não é ativado por padrão n
 
 Normalmente, o Dispatcher é configurado para:
 
-* Publicar: produção
+* Publish: produção
 
 ### Configuração do CORS {#cors-setup}
 
 >[!NOTE]
 >Se estiver armazenando em cache na variável [Dispatcher AEM](#dispatcher-caching) estiver ativado, a configuração do CORS não será necessária e, portanto, esta seção pode ser ignorada.
 
-Para acessar o endpoint do GraphQL, uma política do CORS deve ser configurada e adicionada a um projeto do AEM que esteja implantado no AEM via Cloud Manager. Isso é feito adicionando um arquivo de configuração de CORS OSGi apropriado para os endpoints desejados. 
+Para acessar o endpoint do GraphQL, uma política do CORS deve ser configurada e adicionada a um projeto AEM implantado no AEM por meio do Cloud Manager. Isso é feito adicionando um arquivo de configuração de CORS OSGi apropriado para os endpoints desejados.
 
 #### Detalhes {#details-cors-setup}
 
@@ -78,7 +80,7 @@ Para acessar o endpoint do GraphQL, uma política do CORS deve ser configurada e
 
 Normalmente, o CORS é configurado para:
 
-* Publicar: produção
+* Publish: produção
 
 ### Autenticação {#authentication}
 
@@ -135,7 +137,7 @@ As consultas do GraphQL e suas respostas JSON podem ser armazenadas em cache se 
 
 Uma CDN geralmente é configurada para:
 
-* Publicar: produção
+* Publish: produção
 
 ### Configurar e criar fragmentos de conteúdo {#cconfigure-create-content-fragments}
 

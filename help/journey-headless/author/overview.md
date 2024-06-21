@@ -3,9 +3,9 @@ title: Jornada do autor de conteúdo headless do AEM
 description: Comece aqui uma jornada guiada pelos recursos headless eficientes e flexíveis do AEM, suas funcionalidades e como criar conteúdo para seu projeto.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 87%

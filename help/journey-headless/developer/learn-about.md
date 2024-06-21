@@ -3,9 +3,9 @@ title: Saiba mais sobre o desenvolvimento headless do CMS
 description: Nesta parte da Jornada de desenvolvedores headless do AEM, saiba mais sobre a tecnologia headless e por que usá-la.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
-feature: Headless
+feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 86%

@@ -2,7 +2,9 @@
 title: Gerar variações
 description: Saiba mais sobre Gerar variações, acessível pelo AEM as a Cloud Service e a Sidekick dos Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
-source-git-commit: 207778a59e18407831292be9bd00ee7973ade78c
+feature: Generate Variations
+role: Admin, Architect, Developer
+source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
 workflow-type: tm+mt
 source-wordcount: '3262'
 ht-degree: 1%
@@ -380,7 +382,7 @@ Por exemplo, para adicionar um público-alvo de um arquivo no Google Drive:
 1. No Google Drive, crie um arquivo de planilha com duas colunas:
    1. A primeira coluna será exibida na lista suspensa.
    1. A segunda coluna será a descrição do público-alvo.
-1. Publique o arquivo:
+1. Publish o arquivo:
    1. Arquivo -> Compartilhar -> publicar na Web -> CSV
 1. Copie o URL para o arquivo publicado.
 1. Vá para Gerar variações.
