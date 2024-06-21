@@ -4,9 +4,9 @@ description: Saiba como configurar o tráfego de CDN declarando regras e filtros
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1b4297c36995be7a4d305c3eddbabfef24e91559
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
@@ -307,6 +307,42 @@ As conexões com as origens são somente SSL e usam a porta 443.
 | **forwardCookie** (opcional, o padrão é falso) | Se definido como verdadeiro, o cabeçalho &quot;Cookie&quot; da solicitação do cliente será passado para o back-end; caso contrário, o cabeçalho Cookie será removido. |
 | **forwardAuthorization** (opcional, o padrão é falso) | Se definido como verdadeiro, o cabeçalho &quot;Autorização&quot; da solicitação do cliente será passado para o backend; caso contrário, o cabeçalho de Autorização será removido. |
 | **timeout** (opcional, em segundos, o padrão é 60) | Número de segundos que o CDN deve aguardar até que um servidor de back-end forneça o primeiro byte de um corpo de resposta HTTP. Esse valor também é usado como um tempo limite entre bytes para o servidor de back-end. |
+
+### Utilização de proxy para o Edge Delivery Services {#proxying-to-edge-delivery}
+
+Há cenários em que os seletores de origem devem ser usados para direcionar o tráfego pelo AEM Publish para o AEM Edge Delivery Services:
+
+* Parte do conteúdo é entregue por um domínio gerenciado pelo AEM Publish, enquanto outros conteúdos do mesmo domínio são entregues por Edge Delivery Services
+* O conteúdo entregue pelos Edge Delivery Services se beneficiaria das regras implantadas por meio do Pipeline de configuração, incluindo regras de filtro de tráfego ou transformações de solicitação/resposta
+
+Este é um exemplo de uma regra de seletor de origem que pode fazer isso:
+
+```
+kind: CDN
+version: '1'
+data:
+  originSelectors:
+    rules:
+      - name: select-edge-delivery-services-origin
+        when:
+          allOf:
+            - reqProperty: tier
+              equals: publish
+            - reqProperty: domain
+              equals: <Production Host>
+            - reqProperty: path
+              matches: "^^(/scripts/.*|/styles/.*|/fonts/.*|/blocks/.*|/icons/.*|.*/media_.*|/favicon.ico)"
+        action:
+          type: selectOrigin
+          originName: aem-live
+    origins:
+      - name: aem-live
+        domain: main--repo--owner.aem.live
+```
+
+>[!NOTE]
+> Como o CDN gerenciado por Adobe é usado, certifique-se de configurar a invalidação de push no **gerenciado** , seguindo os parâmetros de Edge Delivery Services [Configurar documentação de invalidação por push](https://www.aem.live/docs/byo-dns#setup-push-invalidation).
+
 
 ## Redirecionamentos do lado do cliente {#client-side-redirectors}
 
