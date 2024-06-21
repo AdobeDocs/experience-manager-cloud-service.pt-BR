@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d2f92869204dc0157dcc1f41d9fe88cdf5875965
+source-git-commit: 53b692b9f668387c889c28498bb20c67149e36be
 workflow-type: tm+mt
-source-wordcount: '595'
-ht-degree: 20%
+source-wordcount: '647'
+ht-degree: 19%
 
 ---
 
@@ -25,7 +25,7 @@ A Ativação de recursos 2024.6.0 fornecerá o conjunto completo de recursos par
 
 * ASSETS-31977: operações aprimoradas de movimentação, cópia e exclusão de ativos.
 * ASSETS-33618: recurso de transcrição automática e tradução para vídeos no Dynamic Media.
-* ASSETS-33618: ação de aprovação para ContentHub e DM e adição de propriedades às propriedades damAssetLucene.
+* ASSETS-35185: ação de aprovação para ContentHub e DM e adição de propriedades às propriedades damAssetLucene.
 * ASSETS-35533: adicionar propriedades DRM e CAI ao índice damAssetLucene.
 * ASSETS-37280: manuseio sequencial de trabalhos para tradução quando o subtítulo de origem (vtt) ainda está sendo processado.
 * ASSETS-37559: evento de exclusão de ativo aprimorado.
@@ -59,6 +59,13 @@ A Ativação de recursos 2024.6.0 fornecerá o conjunto completo de recursos par
 > A engenharia de AEM identificou uma regressão na funcionalidade Lançamentos que está afetando as versões atuais do AEM a partir de 16461. Devido a essa regressão, novas Inicializações (criadas após a aplicação de novas versões) que incluem páginas não profundas não serão promovidas corretamente devido a configurações ausentes.
 > Caso seus ambientes sejam afetados, um script de shell para identificar e atualizar configurações ausentes estará disponível por meio do suporte ao cliente (referência interna SITES-22457).
 > Uma correção de longo prazo será disponibilizada e garantirá que novos lançamentos sejam criados com todas as configurações certas. Até lá, uma versão de patch interna também estará disponível sob demanda.
+
+#### Forms
+
+1. Se um usuário baixar o SDK do AEM Forms mais recente (`AEM Forms add-on v2024.05.04.00-240400`), o arquivo em lote não inicia o serviço Docker. Para resolver esse problema:
+   1. Baixe o [pasta](/help/forms/assets/sdk_hotfix.zip).
+   1. Extraia o conteúdo da pasta baixada e copie o `sdk.sh` e `sdk.bat` arquivos.
+   1. Substituir o existente `sdk.sh` e `sdk.bat` no SDK do AEM Forms com os novos arquivos.
 
 ### Aviso de mudança {#change-notice-16799}
 
