@@ -4,7 +4,7 @@ description: Saiba mais sobre as práticas recomendadas para o mapeamento de usu
 exl-id: 72f0dcbf-b4e6-4a73-8232-3574a212ac19
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -189,7 +189,7 @@ Exemplos para `userproperties-copy-service`:
 * Reduzir escopo
 
    * Colocar políticas de controle de acesso em subárvores específicas de recursos
-   * No caso de itens distribuídos: use restrições para limitar o escopo (consulte [a documentação](http://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) para obter a lista de restrições incorporadas).
+   * No caso de itens distribuídos: use restrições para limitar o escopo (consulte [a documentação](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) para obter a lista de restrições incorporadas).
 
 * Garantir a consistência
 

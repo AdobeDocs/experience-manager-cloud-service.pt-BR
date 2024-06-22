@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 29cf9548-e413-4e4f-b233-d6bb04918b22
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
 workflow-type: tm+mt
 source-wordcount: '1322'
 ht-degree: 95%
@@ -128,7 +128,7 @@ A visualização de arquivos agora permite [adicionar componentes de propriedade
 
 * [Métodos de autenticação aprimorados para o modelo de dados de formulário](/help/forms/configure-data-sources.md): Experimente maior segurança com a introdução da autenticação baseada em Credenciais do cliente para conectar o AEM Forms a fontes de dados compatíveis. Esse aprimoramento elimina a necessidade de representação ou logon de usuário, reforçando a proteção de seus dados.
 
-* [Forms adaptável com seções que podem ser repetidas](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=pt-br), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) componentes em um formulário adaptável baseado em Componentes principais para criar seções repetíveis.
+* [Forms adaptável com seções que podem ser repetidas](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) componentes em um formulário adaptável baseado em Componentes principais para criar seções repetíveis.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 

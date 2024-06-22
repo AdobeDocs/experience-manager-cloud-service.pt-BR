@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 7866d94c-e54c-4bb2-aaa6-66c019e46336
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: f28f212574dda0ece2cedb56a714d381e5bd7d3c
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 49%
@@ -84,7 +84,7 @@ Por padrão, o Assets Essentials agora classifica os resultados de pesquisa com 
 
 * **[Componentes do React para o Forms headless](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: agora você pode visualizar e personalizar representações do Formulário adaptável headless com os componentes do React fornecidos imediatamente. Esses componentes usam classes BEM dos Componentes principais do Forms adaptável para estilo, facilitando a personalização da aparência de acordo com suas necessidades específicas.
 
-* [**Criar Forms adaptável com seções que podem ser repetidas**](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=pt-br), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) formulários adaptáveis com base em componentes repetíveis para captura de vários registros de dados.  Essas seções repetíveis permitem fornecer várias entradas de dados facilmente. É útil quando as instâncias de dados necessárias são desconhecidas. Um preenchimento de formulário pode adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências do mesmo registro de dados.
+* [**Criar Forms adaptável com seções que podem ser repetidas**](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) formulários adaptáveis com base em componentes repetíveis para captura de vários registros de dados.  Essas seções repetíveis permitem fornecer várias entradas de dados facilmente. É útil quando as instâncias de dados necessárias são desconhecidas. Um preenchimento de formulário pode adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências do mesmo registro de dados.
 
 
 ### Recursos de pré-lançamento disponíveis em [!DNL Forms] {#pre-release-features-available-in-forms-channel}
