@@ -5,7 +5,7 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
 workflow-type: tm+mt
 source-wordcount: '1197'
 ht-degree: 80%
@@ -90,7 +90,7 @@ O **Teste de preparo** envolve essas etapas.
 
 ![Teste de preparo](assets/stage-testing.png)
 
-## Fase de implantação em produção {#deployment-production}
+## Fase de implantação em produção {#production-deployment}
 
 O processo de implantação em topologias de produção é ligeiramente diferente para minimizar o impacto sobre os visitantes de um site do AEM.
 
