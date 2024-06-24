@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 68e2f6867a2cbcaf52fa6de259fe118e31ee7573
+source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
 workflow-type: tm+mt
 source-wordcount: '1942'
 ht-degree: 10%
@@ -122,12 +122,12 @@ Esta versão traz uma atualização significativa para o editor visual de regras
 
 
 
-### Recursos iniciais do usuário no AEM Forms {#forms-new-early-adopter-features}
+### Recursos de acesso antecipado no AEM Forms {#forms-new-access-adopter-features}
 
-O programa AEM Forms Early Adoter Program oferece uma oportunidade única para você obter acesso exclusivo a inovações de ponta antes de qualquer outra pessoa e ajudar a moldar seu desenvolvimento.
+O programa de acesso antecipado do AEM Forms oferece uma oportunidade única para você obter acesso exclusivo a inovações de ponta antes de qualquer outra pessoa e ajudar a moldar seu desenvolvimento.
 O programa oferece acesso a várias inovações.
 
-Estas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no âmbito do Early Adoter Program, consulte [Documentação do programa AEM Forms Early Adoter](/help/forms/early-adopter-ea-features.md).
+Estas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa das inovações disponíveis no âmbito do programa de acesso antecipado, consulte [Documentação do Programa de acesso antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
 
 #### Métodos aprimorados de proteção de bot
 
@@ -152,7 +152,7 @@ O serviço Forms gera PDF forms interativos para a captura de dados. Ele também
 
 >[!IMPORTANT]
 >
-> Se você estiver interessado em participar do nosso programa Early Adoter para qualquer inovação de Early Adoter, basta enviar um email do seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
+> Se você estiver interessado em participar do nosso programa de acesso antecipado para qualquer inovação de acesso antecipado, basta enviar um email do seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
@@ -174,7 +174,7 @@ O Console do Adobe Developer é usado para gerar credenciais para acessar vária
 
 #### Suporte RDE para código front-end usando temas de site e modelos de site {#rde-frontend}
 
-[Os RDEs agora oferecem suporte ao código front-end](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) baseado em [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md), para os participantes iniciais. Com RDEs, isso é feito usando uma diretiva de linha de comando, em vez de uma [pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+[Os RDEs agora oferecem suporte ao código front-end](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) baseado em [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md), para usuários iniciais. Com RDEs, isso é feito usando uma diretiva de linha de comando, em vez de uma [pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
 #### Logon aprimorado para RDEs {#rde-logging}
 
