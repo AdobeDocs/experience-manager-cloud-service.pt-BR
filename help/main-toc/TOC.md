@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bd0d35c57e333d861072e189d0bef0ba14700664
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '5040'
+source-wordcount: '5073'
 ht-degree: 82%
 
 ---
@@ -194,8 +194,8 @@ ht-degree: 82%
    + [Suporte OAuth2 para o serviço de email](/help/security/oauth2-support-for-mail-service.md)
    + [Regras de filtro de tráfego incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considerações de segurança do AEM as a Cloud Service](/help/security/security-considerations.md)
-   + [Descontinuação de credenciais JWT no console do Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
-   + [Configuração de integrações IMS para o AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
+   + [Descontinuação de credenciais JWT no Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [Configuração de integrações do IMS para o AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Práticas recomendadas para o mapeamento de usuário do serviço Sling e definição do usuário do serviço](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
 + Integração {#onboarding}
    + [Comece aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=pt-BR)
@@ -370,7 +370,7 @@ ht-degree: 82%
          + [Markdown](/help/sites-cloud/administering/content-fragments/markdown.md)
          + [Excluir considerações](/help/sites-cloud/administering/content-fragments/delete-considerations.md)
          + [Análise de estrutura](/help/sites-cloud/administering/content-fragments/analysis.md)
-         + [Ativos no console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+         + [Assets no Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
          + [Atalhos de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md)
       + Criação do site {#site-creation}
          + [Criação de um novo site](/help/sites-cloud/administering/site-creation/create-site.md)
@@ -426,7 +426,7 @@ ht-degree: 82%
       + [Exportar fragmentos de conteúdo para o Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
       + [Exportar Fragmentos de experiência para o Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Integração ao Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
-   + [Monitoramento de uso real para AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
+   + [Monitoramento de uso real do AEM as a Cloud Service](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md)
 + Assets {#assets}
    + [Visão geral e novidades](/help/assets/overview.md)
    + [Alterações importantes no [!DNL Assets] as a [!DNL Cloud Service]](/help/assets/assets-cloud-changes.md)
@@ -503,7 +503,7 @@ ht-degree: 82%
       + [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
       + [Árvore de estrutura](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Visualização - Representação JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
-      + [Reutilizar fragmentos de conteúdo usando o MSM (para ativos)](/help/assets/content-fragments/content-fragments-msm.md)
+      + [Reutilizar fragmentos de conteúdo usando o MSM (para Assets)](/help/assets/content-fragments/content-fragments-msm.md)
    + Dynamic Media {#dynamicmedia}
       + Jornada do Dynamic Media: Noções básicas {#dm-journey}
          + [Parte I: O que é o Dynamic Media — Casos de uso — Como um ativo flui pelo sistema](/help/assets/dynamic-media/dm-journey-part1.md)
@@ -559,6 +559,16 @@ ht-degree: 82%
       + [Perguntas frequentes sobre entrega de conteúdo HTTP2](/help/assets/dynamic-media/http2faq.md)
       + [Fim de vida útil de visualizadores Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fim de vida útil de visualizadores DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+      + Dynamic Media com recursos OpenAPI {#dynamic-media-open-apis}
+         + [Visão geral](/help/assets/dynamic-media-open-apis-overview.md)
+         + [Aprovar ativos](/help/assets/approve-assets.md)
+         + [Integração com aplicativos downstream](/help/assets/integrate-dynamic-media-open-apis.md)
+         + [Pesquisar API de ativos](/help/assets/search-assets-api.md)
+         + [APIs de entrega](/help/assets/deliver-assets-apis.md)
+         + [Restringir a entrega de ativos](/help/assets/restrict-assets-delivery.md)
+         + [Integrar o AEM Assets remoto com o AEM Sites](/help/assets/integrate-remote-approved-assets-with-sites.md)
+         + [Perguntas frequentes](/help/assets/dynamic-media-open-apis-faqs.md)
+         + [Configurar domínio personalizado](/help/assets/configure-custom-domain.md)
    + Trabalho com a exibição Arquivos {#assets-view}
       + [Introdução](/help/assets/assets-view-introduction.md)
       + [Introdução](/help/assets/get-started-assets-view.md)
@@ -578,7 +588,7 @@ ht-degree: 82%
       + [Monitoramento de ativos, pastas e coleções](/help/assets/manage-notifications-assets-view.md)
       + [Gerenciamento de relatórios](/help/assets/manage-reports-assets-view.md)
       + [Gerenciamento de tags](/help/assets/tagging-management-assets-view.md)
-      + [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+      + [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
    + Práticas recomendadas{#best-practices}
       + [Pesquisar práticas recomendadas](/help/assets/search-best-practices.md)
       + [Gerenciamento de metadados e práticas recomendadas](/help/assets/metadata-best-practices.md)
@@ -825,13 +835,13 @@ ht-degree: 82%
    + [Visão geral do Edge Delivery Services](/help/edge/overview.md)
    + [Utilização de Edge Delivery Services com AEM](/help/edge/using.md)
    + Criação WYSIWYG {#wysiwyg-authoring}
-      + [Criação de conteúdo para entrega de borda](/help/edge/wysiwyg-authoring/authoring.md)
-      + [Conteúdo de publicação para entrega de borda](/help/edge/wysiwyg-authoring/publishing.md)
+      + [Criação de conteúdo para o Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+      + [Publicar conteúdo no Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
       + [Guia de introdução do desenvolvedor](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
       + [Criando blocos](/help/edge/wysiwyg-authoring/create-block.md)
       + [Modelagem de conteúdo](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [Dados em Tabelas e Planilhas](/help/edge/wysiwyg-authoring/tabular-data.md)
-      + [Projetos existentes e entrega do Edge](/help/edge/wysiwyg-authoring/existing-projects.md)
+      + [Projetos existentes e Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
    + Criação baseada em documento {#document-authoring}
       + [Criação  ](/help/edge/docs/authoring.md)
       + [Metadados em massa](/help/edge/docs/bulk-metadata.md)
@@ -864,7 +874,7 @@ ht-degree: 82%
          + [Introdução](/help/edge/docs/forms/tutorial.md)
          + [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
          + [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
-         + [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
+         + [Publish seu formulário e comece a coletar dados](/help/edge/docs/forms/publish-forms.md)
          + [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
          + [Carregar opções do URL para um formulário](/help/edge/docs/forms/load-options-from-url.md)
          + [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
@@ -879,7 +889,7 @@ ht-degree: 82%
          + [Monitoramento de uso real para formulários](/help/edge/docs/forms/real-use-monitoring-for-forms.md)
       + Referências {#forms-references}
          + [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
-   + Recursos de entrega de borda {#resources}
+   + Recursos do Edge Delivery {#resources}
       + Sidekick {#sidekick}
          + [Utilização do Sidekick](/help/edge/docs/sidekick.md)
          + [Instalar extensão](/help/edge/docs/sidekick-extension.md)
@@ -930,7 +940,7 @@ ht-degree: 82%
    + Implantação {#deployment}
       + [Arquitetura](/help/headless/deployment/architecture.md)
       + [Dispatcher - Pontos de extremidade](/help/headless/deployment/dispatcher.md)
-      + [Dispatcher - Habilitar armazenamento em cache para consultas persistentes](/help/headless/deployment/dispatcher-caching.md)
+      + [Dispatcher - Ativar o armazenamento em cache para consultas persistentes](/help/headless/deployment/dispatcher-caching.md)
       + [Configuração do CORS](/help/headless/deployment/cross-origin-resource-sharing.md)
       + [Filtro de referenciador](/help/headless/deployment/referrer-filter.md)
    + Jornadas headless {#journeys}
@@ -1194,7 +1204,7 @@ ht-degree: 82%
       + [Validação e depuração usando ferramentas do Dispatcher herdadas](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [CDN no AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configuração do tráfego no CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
-      + [Inclusões na borda](/help/implementing/dispatcher/edge-side-includes.md)
+      + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
       + [Configurando Credenciais e Autenticação da CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [Configuração de páginas de erro do CDN](/help/implementing/dispatcher/cdn-error-pages.md)
       + [Remoção do cache da CDN](/help/implementing/dispatcher/cdn-cache-purge.md)

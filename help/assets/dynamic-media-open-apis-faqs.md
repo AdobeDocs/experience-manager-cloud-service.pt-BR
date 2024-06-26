@@ -2,18 +2,18 @@
 title: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 description: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '1197'
+source-wordcount: '1495'
 ht-degree: 0%
 
 ---
 
 # Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI {#new-dynaminc-media-apis-frequently-asked-questions}
 
-+++**Todos os ativos no repositório do Experience Manager Assets as a Cloud Service estão disponíveis para pesquisa e entrega usando o Dynamic Media com recursos OpenAPI?**
++++**Todos os ativos no repositório as a Cloud Service do Experience Manager Assets estão disponíveis para pesquisa e entrega usando o Dynamic Media com recursos OpenAPI?**
 
-Não, apenas [aprovado e versão mais recente dos ativos](/help/assets/approved-assets.md) estão disponíveis para pesquisa e entrega usando o Dynamic Media com recursos OpenAPI, garantindo a consistência da marca em todos os canais e aplicativos.
+Não, apenas [aprovado e versão mais recente dos ativos](/help/assets/approve-assets.md) estão disponíveis para pesquisa e entrega usando o Dynamic Media com recursos OpenAPI, garantindo a consistência da marca em todos os canais e aplicativos.
 
 +++
 
@@ -27,15 +27,27 @@ O status de um ativo no Experience Manager Assets é regido por `jcr:content/met
 
 * Alterações solicitadas
 
-O Experience Manager Assets distingue o status Aprovado usando ![Aprovar ativos](assets/thumbs-up-icon.svg) disponível no cartão de ativos, conforme ilustrado na imagem a seguir:
+O Experience Manager Assets distingue o status Aprovado usando um ícone de aprovado disponível no cartão de ativos, conforme representado nas imagens a seguir para as visualizações Administração e Ativo:
 
-![Ícone para ativos aprovados](/help/assets/assets/approved-assets-thumbs-up.png)
+**Exibição do administrador**
 
-Para aprovar todos os ativos em uma pasta, consulte as instruções em [como aprovar ativos em massa em uma pasta](/help/assets/approved-assets.md#bulk-approve-assets). Há também um vídeo que mostra todo o processo.
+![Ativos aprovados na exibição do Administrador](/help/assets/assets/approved-assets-thumbs-up.png)
+
+**Visualização do Assets**
+
+![Ativos aprovados na exibição do Assets](/help/assets/assets/approved-assets-thumbs-up-assets-view.png)
+
+
+Para aprovar todos os ativos em uma pasta, consulte as instruções em [como aprovar ativos em massa em uma pasta](/help/assets/approve-assets.md#bulk-approve-assets). Há também um vídeo que mostra todo o processo.
 
 Depois de configurar uma pasta para aprovação em massa, todos os novos ativos adicionados à pasta são aprovados automaticamente. Todos os ativos existentes são aprovados após o reprocessamento de ativos. Consulte [Reprocessamento de ativos digitais](/help/assets/reprocessing.md) para obter instruções sobre como reprocessar ativos. Se você copiar ou mover ativos não aprovados de qualquer outra pasta, será necessário [reprocessar os ativos](/help/assets/reprocessing.md).
 
-O ativo está marcado como `Rejected`, se o administrador especificar `Rejected` ou `Changes requested` valores. O Experience Manager Assets distingue o status Rejeitado usando ![Rejeitar ativos](/help/assets/assets/do-not-localize/reject-assets.svg) disponível no cartão de ativos.
+O ativo está marcado como `Rejected`, se o administrador especificar `Rejected` ou `Changes requested` valores. O Experience Manager Assets distingue o status Rejeitado usando ![Rejeitar Assets](/help/assets/assets/do-not-localize/reject-assets.svg) disponível no cartão de ativos na exibição Administração.
+
+Da mesma forma, o Experience Manager Assets distingue o status Rejeitado na exibição do Assets usando o seguinte status Rejeitado no cartão de ativos:
+
+![Ativos rejeitados na exibição do Assets](/help/assets/assets/rejected-assets-admin-view.png)
+
 
 +++
 
@@ -49,18 +61,27 @@ Os usuários que precisam de acesso ao ambiente de autor do Experience Manager s
 
 Sim, você pode aprovar vários ativos em uma pasta simultaneamente.
 
-Execute as seguintes etapas para aprovar vários ativos simultaneamente no [!DNL Experience Manager Assets]:
+Execute as seguintes etapas para aprovar vários ativos simultaneamente no [!DNL Experience Manager Assets Admin view]:
 
 1. Selecione os ativos e clique em **[!UICONTROL Propriedades]**.
 1. No **[!UICONTROL Básico]** , role para baixo até **[!UICONTROL Status da revisão]**.
 1. Alterar o status da revisão para **[!UICONTROL Aprovado]**.
 1. Clique em **[!UICONTROL Salvar e fechar]**.
 
+Da mesma forma, para aprovar vários ativos simultaneamente em uma pasta na exibição do Assets:
+
+1. Selecione os ativos e clique em **[!UICONTROL Edição de metadados em massa]**.
+
+1. Selecionar **[!UICONTROL Aprovado]** no **[!UICONTROL Status]** campo disponível no [!UICONTROL Propriedades] no painel direito.
+
+1. Clique em **[!UICONTROL Salvar]**.
+
+
 +++
 
 +++**Como posso proteger a entrega de ativos e pesquisar as Dynamic Media OpenAPIs?**
 
-A governança de ativos centrais no Experience Manager permite que os administradores do DAM ou gerentes de marca gerenciem o acesso aos ativos. Eles podem restringir o acesso configurando funções para ativos aprovados no lado da criação, especificamente na instância de autor as a Cloud Service do AEM.
+A governança de ativos centrais no Experience Manager permite que os administradores do DAM ou gerentes de marca gerenciem o acesso aos ativos. Eles podem restringir o acesso definindo funções ou definindo o tempo de ativação e desativação para ativos aprovados no lado da criação, especificamente na instância de autor do AEM as a Cloud Service.
 
 Os usuários finais que pesquisam ou utilizam URLs de entrega podem obter acesso a ativos restritos ao passar com êxito pelo processo de autorização.
 
@@ -70,7 +91,7 @@ Para obter mais informações, consulte [Restringir o acesso a ativos no Experie
 
 +++**Como você pode obter permissões para editar o status de aprovação de um ativo?**
 
-Como usuário do DAM, talvez você não tenha permissões para [aprovar ativos](approved-assets.md#approve-assets). Para obter as permissões para editar o status de aprovação de um ativo, os administradores podem editar o esquema de metadados padrão ou qualquer outro aplicado à pasta de ativos para fornecer permissões de edição ao **[!UICONTROL Status da revisão]** campo. Para obter mais informações, consulte [como desabilitar a edição para o Status de revisão](approved-assets.md#configuration) campo.
+Como usuário do DAM, talvez você não tenha permissões para [aprovar ativos](approve-assets.md#approve-assets). Para obter as permissões para editar o status de aprovação de um ativo, os administradores podem editar o esquema de metadados padrão ou qualquer outro aplicado à pasta de ativos para fornecer permissões de edição ao **[!UICONTROL Status da revisão]** campo. Para obter mais informações, consulte [como desabilitar a edição para o Status de revisão](approve-assets.md#configuration) campo.
 
 +++
 
@@ -78,18 +99,23 @@ Como usuário do DAM, talvez você não tenha permissões para [aprovar ativos](
 
 O Dynamic Media com recursos OpenAPI e o Dynamic Media representam soluções distintas, cada uma oferecendo seus recursos especializados de entrega. É fundamental analisar minuciosamente seus requisitos específicos para determinar a solução mais adequada que se alinha às suas necessidades.
 
+A orientação geral do Adobe é aproveitar o Dynamic Media com a pilha OpenAPI para qualquer caso de uso de integração (aplicativos próprios ou de terceiros). Se já existir uma integração com a pilha do Dynamic Media, a recomendação é não alterá-la, pois os URLs da pilha de OpenAPI são diferentes na estrutura. Somente para qualquer novo caso de uso de integração, use a pilha de OpenAPI. Se o caso de uso exigir modificadores avançados não disponíveis com a pilha de OpenAPI, evite a pilha de OpenAPI até que o Adobe preencha a lacuna. Mesmo para entrega nativa básica do AEM Assets Cloud Service, a pilha de OpenAPI pode ser avaliada, desde que seu caso de uso seja coberto pelos modificadores disponíveis com a pilha de OpenAPI. Concluindo, o Dynamic Media e o Dynamic Media com pilha de OpenAPI podem coexistir, dependendo da natureza do seu caso de uso.
+
 Estas são algumas das principais diferenças entre o Dynamic Media com recursos OpenAPI e o Dynamic Media:
 
 | Dynamic Media com recursos OpenAPI | Dynamic Media |
 |---|---|
-| [Disponível somente com Ativos as a Cloud Service](/help/assets/new-dynamic-media-overview.md#prerequisites-new-dynaminc-media-apis) | Também disponível com Managed Services no local ou Adobe com etapas adicionais de configuração e provisionamento. |
+| [Disponível somente com o Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Também disponível com Managed Services no local ou Adobe com etapas adicionais de configuração e provisionamento. |
 | [Conjunto limitado de modificadores de imagem compatíveis, como largura, altura, rotação, inversão, qualidade e formato](/help/assets/deliver-assets-apis.md) | Conjunto avançado de modificadores de imagem disponíveis |
-| [Entrega de ativos restrita com base em usuários e funções](/help/assets/restrict-assets-delivery.md) | Os ativos publicados no Dynamic Media são acessíveis a todos os usuários |
-| Suporta recorte inteligente de imagem | Oferece suporte a recorte inteligente de imagem e vídeo |
-| Empilhe com base nas especificações da OpenAPI, com as quais a maioria dos desenvolvedores está familiarizada. A extensibilidade do AEM Assets fica muito simples ao usar [Seletor de ativos de front-end micro](/help/assets/asset-selector.md). | APIs baseadas em SOAP, que se tornam uma barreira ao desenvolver personalizações de integração. |
+| [Entrega de ativos restrita com base em usuários, funções, data e hora](/help/assets/restrict-assets-delivery.md) | O Assets publicado no Dynamic Media pode ser acessado por todos os usuários |
+| A maioria dos desenvolvedores está familiarizada com as especificações da OpenAPI. A extensibilidade do AEM Assets fica muito simples ao usar [Seletor de ativos de front-end micro](/help/assets/asset-selector.md). | APIs baseadas em SOAP, que se tornam uma barreira ao desenvolver personalizações de integração. |
 | Quaisquer alterações feitas em ativos aprovados no DAM, incluindo atualizações de versão e modificações de metadados, são refletidas automaticamente nos URLs de entrega. Com um valor curto de TTL (Time-to-Live) de 10 minutos configurado para o Dynamic Media com recursos OpenAPI via CDN, as atualizações ficam visíveis em todas as interfaces de criação e publicação em menos de 10 minutos. | TTL de CDN recomendado de 10 horas. Você pode substituir o valor TTL usando a ação de invalidação de cache. |
-| Somente os ativos aprovados estão disponíveis para entrega de ativos em aplicativos downstream, permitindo ativos aprovados pela marca em experiências digitais. Os ativos entregues respeitam o status de expiração do ativo na instância do autor do repositório as a Cloud Service AEM. | As atualizações em um ativo publicado pela Dynamic Media são publicadas automaticamente sem nenhum fluxo de trabalho de aprovação, o que não garante ativos aprovados pela marca em experiências digitais. Nenhuma expiração de ativo inerente. Um ativo permanece público até ser excluído do repositório as a Cloud Service do AEM. |
-| Relatórios de uso com base no número de ativos entregues. | Os relatórios de uso não estão disponíveis. |
+| Somente os ativos aprovados estão disponíveis para entrega de ativos em aplicativos downstream, permitindo ativos aprovados pela marca em experiências digitais. | As atualizações em um ativo publicado pela Dynamic Media são publicadas automaticamente sem nenhum fluxo de trabalho de aprovação, o que não garante ativos aprovados pela marca em experiências digitais. |
+| Relatórios de uso com base no número de ativos entregues. Esse recurso estará disponível em breve. | Os relatórios de uso não estão disponíveis. Esse recurso estará disponível em breve. |
+| Os Assets marcados como Expirados no as a Cloud Service Assets não estão mais disponíveis para aplicativos downstream. | Nenhuma expiração de ativo inerente. Um ativo permanece público até ser excluído do repositório do AEM as a Cloud Service. |
+| Não suporta predefinições de imagens e recursos de recorte inteligente de vídeo. | Suporta predefinições de imagens e recursos de recorte inteligente de vídeo. |
+| Codificações de vídeo dinâmico, que garantem que as melhores codificações sejam fornecidas com base no vídeo de entrada. Nenhuma configuração é necessária para a entrega de vídeo nativo. | O padrão 3 codifica independentemente do vídeo de entrada (pode afetar o desempenho da entrega de vídeo). Você precisa configurar manualmente diferentes códigos para taxas de bits de vídeo diferentes. |
+| Difícil de adivinhar URLs baseados em UID de ativo (permite ofuscação de URL), mas SEO otimizado. | Ofuscação de URL disponível apenas para parâmetros de consulta de URL. As Assets IDs (nomes de ativos) em URLs são reconhecíveis. |
 
 +++
 
@@ -99,13 +125,12 @@ A tabela abaixo descreve as principais diferenças entre as duas soluções:
 
 | Dynamic Media com recursos OpenAPI | Connected Assets |
 |---|---|
-| Os ativos na implantação remota do DAM estão disponíveis no AEM as a Cloud Service. | Os ativos na implantação remota do DAM podem estar disponíveis no AEM as a Cloud Service ou no Adobe Managed Services. |
+| O Assets na implantação remota do DAM está disponível no AEM as a Cloud Service. | O Assets na implantação remota do DAM pode estar disponível no AEM as a Cloud Service ou no Adobe Managed Services. |
 | Os binários de ativos não são copiados quando os ativos em uma implantação remota do DAM estão disponíveis em uma instância do AEM Sites. | Os binários de ativos são copiados quando os ativos em uma implantação remota do DAM estão disponíveis em uma instância do AEM Sites. |
 | Suporte para todos os tipos de formato de ativos compatíveis com o AEM Assets. | Não há suporte para vídeos. |
-| Suporta recorte inteligente de imagem. | Suporte para recortes inteligentes de imagens e predefinições de imagens do Dynamic Media. |
 | Você pode usar o Dynamic Media na implantação local do Sites enquanto busca ativos da implantação remota do DAM. | A implantação do Dynamic Media no Sites local é somente leitura. |
 | Nenhuma restrição no número de instâncias do AEM Sites conectadas a uma implantação remota do DAM. Você pode [restrinja o acesso a ativos na instância do Sites configurando funções](/help/assets/restrict-assets-delivery.md) para ativos aprovados no DAM remoto. | Restrição para conectar não mais do que quatro instâncias do AEM Sites à implantação remota do DAM. O aumento do número requer testes adicionais. |
-| O Seletor de ativos e o Dynamic Media com recursos OpenAPI são extensíveis para permitir integrações personalizadas. | As APIs do Connected Assets não são extensíveis para permitir integrações personalizadas. |
+| O Seletor de ativos e o Dynamic Media com recursos OpenAPI são extensíveis para permitir integrações personalizadas. | As APIs do Assets conectadas não são extensíveis para permitir integrações personalizadas. |
 | Quaisquer alterações feitas em ativos aprovados disponíveis na implantação remota do DAM, incluindo atualizações de versão e modificações de metadados, são refletidas automaticamente na instância do Sites em um valor curto de Tempo de vida (TTL) de 10 minutos. | As atualizações de ativos na implantação remota do DAM são tratadas por meio de eventos de ciclo de vida automaticamente, mas leva muito mais tempo do que o Dynamic Media com recursos OpenAPI. |
 | Os metadados de ativos no DAM remoto também estão disponíveis na instância do AEM Sites. | Os metadados de ativos no DAM remoto não estão disponíveis na instância do AEM Sites. |
 

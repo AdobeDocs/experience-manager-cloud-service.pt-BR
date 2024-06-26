@@ -2,9 +2,9 @@
 title: Aprovar ativos no Experience Manager
 description: Saiba como aprovar ativos no [!DNL Experience Manager].
 role: User
-source-git-commit: 0ad9f349c997c35862e4f571b4741ed4c0c947e2
+source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,18 @@ Você pode aprovar ativos no AEM Assets para simplificar o gerenciamento de ativ
 
 ## Antes de começar {#pre-requisites}
 
-Você deve ter acesso ao AEM Assets as a Cloud Service e permissões para editar o **[!UICONTROL Status da revisão]** para um ativo.
+Você deve ter acesso ao AEM Assets as a Cloud Service e a permissões para editar o **[!UICONTROL Status da revisão]** para um ativo.
 
 ## Configuração
 
-Você precisa fazer uma atualização única no esquema de metadados aplicável na [!DNL Experience Manager] antes de aprovar um ativo. Você pode ignorar essa configuração para [!DNL Experience Manager Assets]. Siga estas etapas para configurar o esquema de metadados:
+Você precisa fazer uma atualização única no esquema de metadados aplicável na Exibição de administrador antes de aprovar um ativo. Você pode ignorar essa configuração na exibição do Assets. Siga estas etapas para configurar o esquema de metadados:
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados]**.
 1. Selecione o esquema de metadados aplicável e clique em **[!UICONTROL Editar]**. <br>A variável **[!UICONTROL Editor do formulário de esquema de metadados]** abre com a **[!UICONTROL Básico]** guia realçada.
 1. Role para baixo e clique em **[!UICONTROL Status da revisão]**.
 1. Clique em **[!UICONTROL Regras]** no painel do lado direito.
 1. Desmarcar **[!UICONTROL Desativar edição]** e clique em **[!UICONTROL Salvar]**.
+Se você precisar exibir a propriedade que a variável **[!UICONTROL Status da revisão]** o campo é mapeado para, navegue até **[!UICONTROL Configurações]** e visualize a guia `./jcr:content/metadata/dam:status` valor no **[!UICONTROL Mapear para a propriedade]** campo.
 
 >[!NOTE]
 >
@@ -45,7 +46,7 @@ Você pode aprovar ativos em ambos [!DNL Experience Manager] e [!DNL Experience 
 
    >[!VIDEO](https://video.tv.adobe.com/v/3427430)
 
-   Da mesma forma, é possível aprovar ativos usando o [nova visualização de Ativos](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/manage-organize.html?lang=en#manage-asset-status).
+   Da mesma forma, é possível aprovar ativos usando o [nova visualização do Assets](/help/assets/manage-organize-assets-view.md).
 
 ## Aprovar ativos em massa {#bulk-approve-assets}
 
@@ -59,7 +60,7 @@ Simplifique o fluxo de trabalho aprovando rapidamente vários ativos de uma só 
 1. Selecione o perfil de metadados recém-criado e clique em **[!UICONTROL Editar _e)_]**. <br>A variável **[!UICONTROL Editar perfil de metadados]**o formulário é aberto com a variável **[!UICONTROL Básico]**guia realçada.
 1. Arraste e solte uma **[!UICONTROL Campo de texto de uma linha]** do **[!UICONTROL Formulário de criação]** no lado direito à seção Metadados no formulário.
 1. Clique no campo recém-adicionado e faça as seguintes atualizações no **[!UICONTROL Configurações]** painel:
-   1. Altere o **[!UICONTROL Rótulo do campo]** para _Ativos aprovados_.
+   1. Altere o **[!UICONTROL Rótulo do campo]** para _Assets aprovado_.
    1. Atualize o **[!UICONTROL Mapear para a propriedade]** para _./jcr:content/metadata/dam:status_.
    1. Altere o valor padrão para _aprovado_.
 
@@ -74,3 +75,31 @@ Simplifique o fluxo de trabalho aprovando rapidamente vários ativos de uma só 
 >[!NOTE]
 > 
 >Essa abordagem aprova os ativos recém-criados na pasta. Para ativos existentes na pasta, é necessário selecionar e aprovar manualmente. <br> Como alternativa, você pode usar o **[!UICONTROL Reprocessar]** opção para aplicar as alterações do perfil de metadados aos ativos mais antigos.
+
+Da mesma forma, para aprovar ativos em massa em uma pasta na exibição do Assets:
+
+1. Selecione os ativos e clique em **[!UICONTROL Edição de metadados em massa]**.
+
+1. Selecionar **[!UICONTROL Aprovado]** no **[!UICONTROL Status]** campo disponível no [!UICONTROL Propriedades] no painel direito.
+
+1. Clique em **[!UICONTROL Salvar]**.
+
+## Copiar URL de entrega dos ativos aprovados {#copy-delivery-url-approved-assets}
+
+O URL de entrega de todos os ativos aprovados no repositório estará disponível se você tiver [!UICONTROL Dynamic Media com recursos OpenAPI] ativado na sua instância do AEM as a Cloud Service.
+
+Para copiar o URL de entrega de um ativo aprovado no repositório:
+
+1. Selecione o ativo e clique em **[!UICONTROL Detalhes]**.
+
+1. Clique no ícone Representações disponível no painel direito.
+
+1. Selecionar **[!UICONTROL Dynamic Media com OpenAPI]** disponível no **[!UICONTROL Dinâmico]** seção.
+
+1. Clique em **[!UICONTROL Copiar URL]** para copiar o URL de entrega do ativo.
+   ![copiar URL de entrega](/help/assets/assets/copy-delivery-url.png)
+
+   >[!NOTE]
+   >
+   >A opção para copiar o URL de entrega para ativos aprovados está disponível apenas na visualização Assets.
+
