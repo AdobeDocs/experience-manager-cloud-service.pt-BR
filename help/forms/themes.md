@@ -3,7 +3,8 @@ title: Como podemos criar e usar temas para estilizar um formulário adaptável?
 description: Use temas de formulário adaptável para estilizar e fornecer uma identidade visual a um formulário adaptável. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -255,7 +256,7 @@ Os painéis prontos para uso incluem:
 * Guias na esquerda
 * Guias na parte superior
 * Acordeão
-* Receptivo
+* Responsivo
 * Assistente
 * Layout para dispositivo móvel
 
@@ -404,7 +405,7 @@ As opções para personalizar estilos de estado variam para diferentes component
    <td><p>Permite personalizar os estilos de texto no componente do tema.</p> <p>Por exemplo, você deseja alterar a aparência do texto inserido na caixa de texto.</p> <p>Suas opções são família de fontes, peso, cor, tamanho, altura da linha, alinhamento de texto, espaçamento entre letras, recuo de texto, sublinhado, itálico, transformação de texto, alinhamento vertical, linha de base e direção. </p> </td>
   </tr>
   <tr>
-   <td><p>Segundo plano </p> </td>
+   <td><p>Fundo </p> </td>
    <td><p>Permite preencher o plano de fundo do componente com uma imagem ou cor. </p> </td>
   </tr>
   <tr>
@@ -600,7 +601,7 @@ Depois de personalizar o tema, aplique-o ao formulário <!-- or interactive comm
 
 ## Impacto em outros casos de uso do Formulário adaptável {#impact-on-other-adaptive-form-use-cases}
 
-* **Publicar/desfazer a publicação de um formulário:** Ao publicar um formulário, o tema aplicado a também será publicado (se ainda não tiver sido publicado)
+* **Publish/unpublish a form:** Ao publicar um formulário, o tema aplicado a também será publicado (se ainda não tiver sido publicado)
 * **Importar/exportar um formulário:** Ao importar ou exportar um formulário, seu tema associado também é automaticamente importado ou exportado.
 * **Referências de um formulário:** A seção Referências nas referências do formulário contém uma entrada extra para o tema.
 * **Hora da última modificação de um formulário:** Atualizado quando o tema associado é alterado.

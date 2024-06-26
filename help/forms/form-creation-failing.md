@@ -1,9 +1,10 @@
 ---
 title: Como solucionar falhas de criação de formulários?
-description: Solução de problemas de falhas de criação de formulários no ambiente as a Cloud Service do AEM Forms.
-feature: Adaptive Forms, Troubleshooting
+description: Solução de problemas de falhas na criação de formulários no ambiente as a Cloud Service do AEM Forms.
+feature: Adaptive Forms
 role: User
-source-git-commit: 23491130b44147753c5b98f316be5a9e5937afea
+exl-id: 169ea727-0941-4a1d-bc33-d9fe208b27ab
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Problema ao publicar formulários{#form-creation-fails}
 
-Depois que os usuários atualizam para a versão as a Cloud Service do AEM Forms `2024.5.16461`:
+Depois que os usuários atualizarem para a versão as a Cloud Service do AEM Forms `2024.5.16461`:
 
 **Alguns usuários** pode enfrentar problemas ao criar formulários, o problema é que, quando um usuário cria um formulário, a seguinte mensagem de erro aparece na caixa de diálogo de criação:
 
@@ -27,9 +28,9 @@ O problema ocorre porque o autor publica o formulário sem **primeira publicaç�
 Para resolver o problema, execute as seguintes etapas:
 
 1. Certifique-se de que o modelo usado no formulário não tenha o `jcr:uuid` e outras propriedades protegidas geradas pelo sistema no caminho `<template-path>/initial/jcr:content node`.
-1. Publique o template explicitamente usando o console do template.
+1. Publish o modelo usando explicitamente o console de modelo.
 1. Agora, quando o modelo for publicado, tente criar novos formulários usando o modelo.
-1. Se o modelo usado for atualizado nas versões futuras, publique o modelo novamente (conforme fornecido na etapa 2) para evitar problemas de falha na criação de formulários.
+1. Se o modelo usado for atualizado nas próximas versões, Publish o modelo novamente (conforme fornecido na etapa 2) para evitar problemas de falha na criação de formulários.
 
 
 <!--
@@ -55,13 +56,3 @@ To resolve the issue, perform the following workaround steps:
 1. If the template is changed in the future, publish it again as mentioned in the step 1.
 
 -->
-
-
-
-
-
-
-
-
-
-

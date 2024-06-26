@@ -1,20 +1,22 @@
 ---
 title: Como usar o módulo de torção em um AEM Formulário adaptável Componentes principais?
-description: Melhore a segurança dos formulários com o serviço de Tornição sem esforço. Guia passo a passo no interior!
+description: Melhore a segurança dos formulários com o serviço de Tornição sem esforço. Guia passo a passo no interior.
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: d2c6514eb1f38b06dfa58daa03b781920b8928f6
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 9%
+ht-degree: 12%
 
 ---
 
 # Conecte seu ambiente do AEM Forms com o Turnstile {#connect-your-forms-environment-with-turnstile-service}
 
-<span class="preview"> Esse recurso está em Early Adoter Program. Você pode escrever para aem-forms-ea@adobe.com a partir de sua ID de e-mail oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> Esse recurso está em Early Adoter Program. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
@@ -41,8 +43,8 @@ Para configurar o Turnstile para os Componentes principais do AEM Forms, é nece
 
 Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
 
-1. Crie um Contêiner de configuração em seu ambiente as a Cloud Service do AEM Forms. Um Contêiner de configuração contém as Configurações de nuvem usadas para conectar o AEM a serviços externos. Para criar e configurar um Contêiner de configuração para conectar seu ambiente do AEM Forms com o Turnstile:
-   1. Abra a instância do AEM Forms as a Cloud Service.
+1. Crie um contêiner de configuração no ambiente as a Cloud Service do AEM Forms. Um Contêiner de configuração contém as Configurações de nuvem usadas para conectar o AEM a serviços externos. Para criar e configurar um Contêiner de configuração para conectar seu ambiente do AEM Forms com o Turnstile:
+   1. Abra a instância as a Cloud Service do AEM Forms.
    1. Ir para **[!UICONTROL Ferramentas > Geral > Navegador de configuração]**.
    1. No Navegador de configuração, você pode selecionar uma pasta existente ou criar uma pasta. Você pode criar uma pasta e ativar a opção Configurações de nuvem para ela ou Ativar a opção Configurações de nuvem para uma pasta existente:
 
@@ -72,7 +74,7 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
 
 ## Usar a estrutura giratória em um formulário adaptável {#using-turnstile-core-components}
 
-1. Abra a instância do AEM Forms as a Cloud Service.
+1. Abra a instância as a Cloud Service do AEM Forms.
 1. Ir para **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
 1. Selecione um formulário adaptável e **[!UICONTROL Propriedades]**. Para o **[!UICONTROL Contêiner de configuração]** selecione o Contêiner de configuração que contém a Configuração na nuvem que conecta o AEM Forms com o módulo e selecione **[!UICONTROL Salvar e fechar]**.
 

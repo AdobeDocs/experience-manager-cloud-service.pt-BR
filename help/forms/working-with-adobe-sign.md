@@ -3,10 +3,10 @@ title: Como podemos usar o Adobe Sign em um formulário adaptável?
 description: Use o Adobe Sign em um formulário adaptável para permitir que os destinatários do formulário assinem um formulário eletronicamente a partir do dispositivo e do local de sua escolha.
 topic-tags: develop
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Em um [!DNL Adobe Sign] e Adaptive Forms, um usuário preenche um Formulário ad
 
 Antes de usar [!DNL Adobe Sign] em um Formulário adaptável:
 
-* Assegure que [!DNL AEM Forms] O as a Cloud Service está configurado para usar o Adobe Sign. Para obter detalhes, consulte [Integrar o Adobe Sign com o [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+* Assegure que [!DNL AEM Forms] as a Cloud Service configurado para usar o Adobe Sign. Para obter detalhes, consulte [Integrar o Adobe Sign com o [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 * Mantenha a lista de recipients pronta. Você precisa de pelo menos um endereço de email para cada recipient.
 
 ## Configurar [!DNL Adobe Sign] para um Formulário adaptável {#configure-adobe-sign-for-an-adaptive-form}

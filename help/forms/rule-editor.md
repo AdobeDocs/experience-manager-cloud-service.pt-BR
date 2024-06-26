@@ -2,10 +2,10 @@
 title: Como usar o editor de regras para adicionar regras a campos de formulário para adicionar comportamento dinâmico e criar lógica complexa a um formulário adaptável?
 description: O editor de regras Forms adaptável permite adicionar comportamento dinâmico e criar lógica complexa em formulários sem codificação ou script.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 0%
@@ -561,7 +561,7 @@ Acompanhando `jsdoc` é obrigatório:
 * Se desejar configuração e descrição personalizadas
 * Como há várias maneiras de declarar uma função no `JavaScript,` Os comentários do e do permitem rastrear as funções.
 
-O editor de regras é compatível com a sintaxe do JavaScript ES2015 para scripts e funções personalizadas.
+O editor de regras é compatível com a sintaxe JavaScript ES2015 para scripts e funções personalizadas.
 Para obter mais informações, consulte [jsdoc.app](https://jsdoc.app/).
 
 Compatível `jsdoc` tags:
@@ -635,9 +635,9 @@ Sintaxe: `@this currentComponent`
 
 **Adição de uma função personalizada**
 
-Por exemplo, você deseja adicionar uma função personalizada que calcula a área de um quadrado. O comprimento do lado é a entrada do usuário na função personalizada, que é aceita usando uma caixa numérica no formulário. A saída calculada é exibida em outra caixa numérica no formulário. Para adicionar uma função personalizada, primeiro crie uma biblioteca do cliente e, em seguida, adicione-a ao repositório CRX.
+Por exemplo, você deseja adicionar uma função personalizada que calcula a área de um quadrado. O comprimento do lado é a entrada do usuário na função personalizada, que é aceita usando uma caixa numérica no formulário. A saída calculada é exibida em outra caixa numérica no formulário. Para adicionar uma função personalizada, primeiro crie uma biblioteca do cliente e, em seguida, adicione-a ao repositório do CRX.
 
-Para criar uma biblioteca do cliente e adicioná-la ao repositório CRX, execute as seguintes etapas:
+Para criar uma biblioteca do cliente e adicioná-la ao repositório do CRX, execute as seguintes etapas:
 
 1. Crie uma biblioteca do cliente. Para obter mais informações, consulte [Uso de bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 1. No CRXDE, adicione uma propriedade `categories`com valor de tipo de string como `customfunction` para o `clientlib` pasta.
@@ -646,7 +646,7 @@ Para criar uma biblioteca do cliente e adicioná-la ao repositório CRX, execute
    >
    >`customfunction`é uma categoria de exemplo. Você pode escolher qualquer nome para a categoria que criar na `clientlib`pasta.
 
-Depois de ter adicionado a biblioteca do cliente ao repositório CRX, use-a no Formulário adaptável. Ela permite usar sua função personalizada como uma regra em seu formulário. Para adicionar a biblioteca do cliente no formulário adaptável, execute as seguintes etapas:
+Depois de ter adicionado a biblioteca do cliente ao repositório do CRX, use-a no Formulário adaptável. Ela permite usar sua função personalizada como uma regra em seu formulário. Para adicionar a biblioteca do cliente no formulário adaptável, execute as seguintes etapas:
 
 1. Abra o formulário no modo de edição.
 Para abrir um formulário no modo de edição, selecione um formulário e **[!UICONTROL Abertura]**.

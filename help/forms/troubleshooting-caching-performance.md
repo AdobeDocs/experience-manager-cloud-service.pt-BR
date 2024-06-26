@@ -2,10 +2,10 @@
 title: Como podemos solucionar problemas relacionados ao armazenamento em cache do AEM Forms as a Cloud Service?
 description: Solucionar problemas relacionados ao cache do AEM Forms as a Cloud Service.
 contentOwner: khsingh
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms
 role: User
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c
-source-git-commit: 527c9944929c28a0ef7f3e617ef6185bfed0d536
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Você pode encontrar alguns dos seguintes problemas ao configurar ou usar o cach
 
 ## Alguns Forms adaptáveis contendo imagens ou vídeos não são invalidados automaticamente do cache do Dispatcher {#images-videos-not-invalidated}
 
-Você pode selecionar e adicionar imagens ou vídeos do navegador de ativos a um Formulário adaptável. Quando essas imagens são editadas no editor de ativos, a versão em cache de um Formulário adaptável que contém essas imagens não é invalidada. O Formulário adaptável continua mostrando imagens mais antigas.
+Você pode selecionar e adicionar imagens ou vídeos do navegador de ativos a um Formulário adaptável. Quando essas imagens são editadas no editor do Assets, a versão em cache de um Formulário adaptável que contém essas imagens não é invalidada. O Formulário adaptável continua mostrando imagens mais antigas.
 
 Para resolver o problema, após a publicação das imagens e do vídeo, cancele explicitamente a publicação e publique o Forms adaptável que faz referência a esses ativos.
 

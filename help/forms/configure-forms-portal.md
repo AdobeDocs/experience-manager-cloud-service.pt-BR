@@ -3,7 +3,8 @@ title: Como criar um Portal do Forms em uma página do Experience Manager Sites?
 description: Saiba como criar um Portal do Forms e usar componentes principais prontos para uso em uma página do AEM Sites.
 feature: Adaptive Forms, Foundation Components
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1786'
 ht-degree: 1%
@@ -58,11 +59,11 @@ Você pode [importar os componentes prontos para uso do Forms Portal](#import-fo
 
 Para importar componentes prontos para uso do Forms Portal no AEM Forms as a Cloud Service, execute as seguintes etapas:
 
-1. **Clonar o repositório Git do Cloud Manager na instância de desenvolvimento local:**  Seu repositório Git do Cloud Manager contém um projeto AEM padrão. Baseia-se no [Arquétipo AEM](https://github.com/adobe/aem-project-archetype/). Clonar o Repositório Git do Cloud Manager usando o Gerenciamento de conta Git por autoatendimento da interface do usuário do Cloud Manager para trazer o projeto para o ambiente de desenvolvimento local. Para obter detalhes sobre o acesso ao repositório, consulte [Acessar repositórios](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
+1. **Clonar o repositório Git do Cloud Manager na instância de desenvolvimento local:**  Seu repositório Git do Cloud Manager contém um projeto AEM padrão. Baseia-se no [Arquétipo AEM](https://github.com/adobe/aem-project-archetype/). Clonar o Repositório Git da Cloud Manager usando o Gerenciamento de conta Git por autoatendimento da interface do usuário do Cloud Manager para trazer o projeto para o ambiente de desenvolvimento local. Para obter detalhes sobre o acesso ao repositório, consulte [Acessar repositórios](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/accessing-repos.html).
 
 1. **Criar [!DNL Experience Manager Forms] as a [Cloud Service] projeto:** Criar [!DNL Experience Manager Forms] as a [Cloud Service] projeto baseado em [Arquétipo AEM 27](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) ou posteriormente. O arquétipo ajuda os desenvolvedores a iniciar o desenvolvimento facilmente para [!DNL AEM Forms] as a Cloud Service. Ele também inclui alguns exemplos de temas e modelos para ajudá-lo a começar rapidamente.
 
-   Para criar [!DNL Experience Manager Forms] as a Cloud Service projeto, abra o prompt de comando e execute o comando abaixo. Para incluir [!DNL Forms] configurações, temas e modelos específicos, definir `includeForms=y`.
+   Para criar [!DNL Experience Manager Forms] projeto as a Cloud Service, abra o prompt de comando e execute o comando abaixo. Para incluir [!DNL Forms] configurações, temas e modelos específicos, definir `includeForms=y`.
 
    ```shell
    mvn -B archetype:generate -DarchetypeGroupId=com.adobe.aem -DarchetypeArtifactId=aem-project-archetype -DarchetypeVersion=30 -DaemVersion="cloud" -DappTitle="My Site" -DappId="mysite" -DgroupId="com.mysite" -DincludeForms="y"
@@ -78,7 +79,7 @@ Para importar componentes prontos para uso do Forms Portal no AEM Forms as a Clo
 
    Para obter a lista completa de comandos, consulte [Criação e instalação](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing)
 
-1. [Implante o código no seu [!DNL AEM Forms] ambiente as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
+1. [Implante o código no seu [!DNL AEM Forms] Ambiente as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html#embeddeds).
 
 
 ## Configurar o armazenamento do Azure para o Adaptive Forms {#configure-azure-storage-adaptive-forms}

@@ -2,13 +2,14 @@
 title: Como salvar o formulário adaptável baseado em componente principal como um rascunho?
 description: Saiba como salvar o formulário adaptável baseado em componentes principais como um rascunho e criar um portal do Forms e usar os componentes principais prontos para uso em uma página do AEM Sites.
 feature: Adaptive Forms, Core Components
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1072'
 ht-degree: 1%
 
 ---
-
 
 <span class="preview"> Este artigo apresenta conteúdo para o recurso de pré-lançamento do. O recurso de pré-lançamento pode ser acessado somente por meio de [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features).
 

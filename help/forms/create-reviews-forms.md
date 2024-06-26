@@ -4,7 +4,8 @@ description: Use o mecanismo de revisão para adicionar revisores e permitir que
 topic-tags: forms-manager
 feature: Adaptive Forms, Foundation Components
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 2%
@@ -21,7 +22,7 @@ ht-degree: 2%
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
 | AEM as a Cloud Service | Este artigo |
 
-## Análise {#review}
+## Revisar {#review}
 
 Uma revisão é um mecanismo que permite que um ou mais revisores comentem formulários.
 

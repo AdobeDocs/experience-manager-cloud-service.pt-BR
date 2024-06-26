@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 4496c4cc-a5d7-4f34-91f9-13eded77b362
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2332'
 ht-degree: 1%
@@ -197,7 +198,7 @@ Para entender como usar um manipulador de erros padrão usando o [Serviço de ch
 1. Selecione **[!UICONTROL Criar]**.
 1. Crie uma condição no **Quando** seção da regra. Por exemplo, **Quando[Nome do campo de ID do animal de estimação]** foi alterado. Selecione é alterado de **Selecionar Estado** lista suspensa.
 1. No **Depois** , selecione **[!UICONTROL Chamar serviço]** do **Selecionar ação** lista suspensa.
-1. Selecione um **Pós-serviço** e as vinculações de dados correspondentes do **Entrada** seção. Por exemplo, para validar **ID do animal de estimação**, selecione um **Pós-serviço** as **GET /pet/{petId}** e selecione **ID do animal de estimação** no **Entrada** seção.
+1. Selecione um **serviço Post** e as vinculações de dados correspondentes do **Entrada** seção. Por exemplo, para validar **ID do animal de estimação**, selecione um **serviço Post** as **GET /pet/{petId}** e selecione **ID do animal de estimação** no **Entrada** seção.
 1. Selecione as associações de dados na **Output** seção. Selecionar **Nome do animal de estimação** no **Output** seção.
 1. Selecionar **[!UICONTROL Manipulador de erro padrão]** do **Manipulador de erros** seção.
 1. Clique em **[!UICONTROL Concluído]**.
@@ -231,13 +232,13 @@ Para criar uma função de erro personalizada, execute as seguintes etapas:
 
 Para criar uma função de erro personalizada, execute as seguintes etapas:
 
-1. [Clonar o Repositório as a Cloud Service do AEM Forms.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+1. [Clonar o repositório as a Cloud Service do AEM Forms.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
 1. Crie uma pasta em `[AEM Forms as a Cloud Service repository folder]/apps/` pasta. Por exemplo, crie uma pasta chamada como `experience-league`
 1. Navegue até `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` e criar um `ClientLibraryFolder` as `clientlibs`.
 1. Crie uma pasta chamada `js`.
 1. Navegue até a `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` pasta.
-1. Adicione um arquivo JavaScript, por exemplo, `function.js`. O arquivo compreende o código do manipulador de erros personalizado.
-Vamos adicionar o seguinte código ao arquivo JavaScript para exibir a resposta e os cabeçalhos, recebidos do endpoint do serviço REST, no console do navegador.
+1. Adicione um arquivo do JavaScript, por exemplo, `function.js`. O arquivo compreende o código do manipulador de erros personalizado.
+Vamos adicionar o seguinte código ao arquivo JavaScript para exibir a resposta e os cabeçalhos, recebidos do ponto de extremidade do serviço REST, no console do navegador.
 
    ```javascript
        /** 
@@ -305,7 +306,7 @@ Para usar um manipulador de erros personalizado usando o **[!UICONTROL Serviço 
 1. Selecione **[!UICONTROL Criar]**.
 1. Crie uma condição no **Quando** seção da regra. Por exemplo, Quando **[Nome do campo de ID do animal de estimação]** for alterado, selecione **foi alterado** do **Selecionar Estado** lista suspensa.
 1. No **Depois** , selecione **[!UICONTROL Chamar serviço]** do **Selecionar ação** lista suspensa.
-1. Selecione um **Pós-serviço** e as vinculações de dados correspondentes do **Entrada** seção. Por exemplo, para validar **ID do animal de estimação**, selecione um **Pós-serviço** as **GET /pet/{petId}** e selecione **ID do animal de estimação** no **Entrada** seção.
+1. Selecione um **serviço Post** e as vinculações de dados correspondentes do **Entrada** seção. Por exemplo, para validar **ID do animal de estimação**, selecione um **serviço Post** as **GET /pet/{petId}** e selecione **ID do animal de estimação** no **Entrada** seção.
 1. Selecione as associações de dados na **Output** seção. Por exemplo, selecione **Nome do animal de estimação** no **Output** seção.
 1. Selecionar **[!UICONTROL Manipulador de erro personalizado]** do **[!UICONTROL Manipulador de erros]** seção.
 1. Clique em **[!UICONTROL Concluído]**.

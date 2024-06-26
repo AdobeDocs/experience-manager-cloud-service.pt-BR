@@ -1,15 +1,17 @@
 ---
 Title: How to configure submit to Rest Endpoint submit action for an Adaptive Form?
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
-keywords: Endpoint REST do AEM Forms, Enviar para endpoint REST, Postar dados no URL REST, Configurar ação de endpoint REST
+keywords: Endpoint REST do AEM Forms, Enviar para endpoint REST, Dados do Post para URL REST, Configurar ação de endpoint REST
 feature: Adaptive Forms, Core Components
-source-git-commit: 8784c0bcd05eeae41a472faa5ecad03cbdd8a9b6
+exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
+title: "Como configurar uma ação enviar para um formulário adaptável?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 1%
 
 ---
-
 
 # Configurar um formulário adaptável para a ação de envio do ponto de extremidade REST
 
@@ -75,4 +77,3 @@ Para configurar a ação de envio:
 ## Artigos relacionados
 
 {{af-submit-action}}
-

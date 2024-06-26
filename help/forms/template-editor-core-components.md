@@ -4,10 +4,11 @@ description: Crie modelos de Formulário adaptável com base no componente princ
 feature: Adaptive Forms, Core Components
 Keywords: create adaptive form template, create adaptive form template based on core components, Use template to create adpative form.
 exl-id: c1c050d3-953e-4e56-a96b-d84f2ec05e5e
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1962'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -27,7 +28,7 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Pré-requisito
 
-**Ativar os Componentes principais adaptáveis do Forms para o seu ambiente**: ao criar um programa, os Componentes principais adaptáveis do Forms já estão habilitados para o seu ambiente. Se você tiver um ambiente de formulário as a Cloud Service com base em [Arquétipo AEM 39 ou anterior](https://github.com/adobe/aem-project-archetype), [Ativar os Componentes principais adaptáveis do Forms para o seu ambiente](enable-adaptive-forms-core-components.md).
+**Ativar os Componentes principais adaptáveis do Forms para o seu ambiente**: ao criar um programa, os Componentes principais adaptáveis do Forms já estão habilitados para o seu ambiente. Se você tiver um ambiente as a Cloud Service de formulário com base em [Arquétipo AEM 39 ou anterior](https://github.com/adobe/aem-project-archetype), [Ativar os Componentes principais adaptáveis do Forms para o seu ambiente](enable-adaptive-forms-core-components.md).
 
 >[!NOTE]
 >
@@ -67,7 +68,7 @@ Contém as seguintes opções:
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **Seletor de modo:** Permite alterar o modo. Você pode escolher **[!UICONTROL Estrutura]** modo, **[!UICONTROL Conteúdo inicial]**, **[!UICONTROL Controle de layout]** modo. O modo Estrutura permite adicionar e personalizar o cabeçalho e o rodapé. O modo Conteúdo inicial permite personalizar o conteúdo do formulário.
    * **Visualizar:** Permite visualizar a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar entre os modos de edição e visualização.
-* **Barra lateral:** Fornece os navegadores de Conteúdo, Propriedades, Ativos e Componentes.
+* **Barra lateral:** Fornece os navegadores Conteúdo, Propriedades, Assets e Componentes.
 * **Barra de ferramentas do componente:** Ao selecionar um componente, você vê uma barra de ferramentas que permite personalizar o componente.
 * **Página**: a área onde você adiciona conteúdo para criar o template.
 

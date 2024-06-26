@@ -4,7 +4,8 @@ description: Saiba como adicionar novas localidades para um Formulário adaptáv
 feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
-source-git-commit: 7d49be6d4f58078270fb15b10ef34e81dfa790cb
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 2%
@@ -94,7 +95,7 @@ Clonar o repositório dos componentes principais adaptáveis do Forms: você pre
 
 Para adicionar suporte a novos locais a um formulário adaptável com base em componentes principais, siga estas etapas:
 
-### Clonar o repositório Git as a Cloud Service do AEM
+### Clonar o repositório Git do AEM as a Cloud Service
 
 1. Abra a linha de comando e escolha um diretório para armazenar o repositório do AEM as a Cloud Service, como `/cloud-service-repository/`.
 
@@ -106,7 +107,7 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
 
    Para clonar o repositório Git, você precisa de algumas informações:
 
-   * **Nome da organização**: identifica a equipe ou o projeto no Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
+   * **Nome da organização**: identifica a equipe ou o projeto na Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
 
    * **ID do programa**: Especifica o programa associado ao repositório.
 
@@ -118,7 +119,7 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
 
    **Seu projeto está pronto!**
 
-   Quando o comando for concluído com sucesso, você verá uma nova pasta criada no diretório local. Essa pasta é nomeada com base no seu programa (por exemplo, id-do-programa). Esta pasta contém todos os arquivos e códigos baixados do seu repositório Git AEM as a Cloud Service.
+   Quando o comando for concluído com sucesso, você verá uma nova pasta criada no diretório local. Essa pasta é nomeada com base no seu programa (por exemplo, id-do-programa). Esta pasta contém todos os arquivos e códigos baixados do repositório Git da AEM as a Cloud Service.
 
    Neste guia, nos referimos a essa pasta como a `[AEMaaCS project directory]`.
 
@@ -197,7 +198,7 @@ Esse comando baixa o repositório inteiro, incluindo a biblioteca clientlib-it-c
 
 ### Integrar a biblioteca de exemplo do cliente
 
-Agora, vamos incorporar o `clientlib-it-custom-locale` biblioteca no seu AEM as a Cloud Service, [Diretório de projeto do AEMaaCS]:
+Agora, vamos incorporar o `clientlib-it-custom-locale` em sua AEM as a Cloud Service, [Diretório de projeto do AEMaaCS]:
 
 1. Localize a biblioteca de exemplo de cliente:
 
@@ -357,7 +358,7 @@ Agora você está pronto para usar o novo local com sua Forms adaptável. Você 
 
 Essas etapas orientam você na pré-visualização de um Formulário adaptável com a localidade recém-adicionada:
 
-1. Faça logon na sua instância do AEM Forms as a Cloud Service.
+1. Faça logon na instância as a Cloud Service do AEM Forms.
 1. Ir para **Forms** >  **Forms e documentos**.
 1. Selecione um Formulário adaptável e clique em **Adicionar dicionário** e **Adicionar Dicionário Ao Projeto De Tradução** é exibido.
 1. Especifique a **Título do projeto** e selecione o **Idiomas de destino** no menu suspenso da caixa **Adicionar Dicionário Ao Projeto De Tradução** assistente.

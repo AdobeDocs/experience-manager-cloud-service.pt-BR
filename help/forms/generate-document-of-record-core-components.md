@@ -3,7 +3,8 @@ title: Como gerar um documento de registro para o Adaptive Forms?
 description: Saiba como gerar um modelo para um Documento de registro (DoR) para os Componentes principais do Adaptive Forms.
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 54fa7ae32fa2882d844fd1c0eb0962b6b01885a5
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3131'
 ht-degree: 1%
@@ -290,7 +291,7 @@ Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência 
 
 * As propriedades desses campos são aplicadas aos campos no documento de registro. Esses campos devem seguir o `AF_<name of field in all caps>_XFO` convenção de nomenclatura. Por exemplo, o nome do campo da caixa de seleção deve ser `AF_CHECKBOX_XFO`.
 
-Para criar um modelo base, faça o seguinte no Forms Designer.
+Para criar um template base, faça o seguinte no Forms Designer.
 
 1. Clique em **[!UICONTROL Arquivo]** > **[!UICONTROL Novo]**.
 1. Selecione o **[!UICONTROL Com base em um modelo]** opção.

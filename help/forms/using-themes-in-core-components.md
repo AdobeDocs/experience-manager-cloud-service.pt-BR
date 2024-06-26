@@ -4,7 +4,8 @@ description: Você pode usar temas para estilizar e fornecer uma identidade visu
 keywords: formulários adaptáveis com estilo dos Componentes principais. uso do tema nos Componentes principais, estilo do formulário adaptável, personalização de temas
 feature: Adaptive Forms, Core Components
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: aca3508d85a0382f679a8fa0ca986cfd13ee793b
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 3%
@@ -33,7 +34,7 @@ O Forms as Cloud Service fornece os temas listados abaixo para o Adaptive Forms 
 
 ## Compreender a estrutura dos temas
 
-Um tema é um pacote que inclui componentes de estilo, como arquivo CSS, arquivos JavaScript e recursos (como ícones) que definem o estilo do Forms adaptável. Um tema do Formulário adaptável segue uma organização específica, consistindo nos seguintes componentes:
+Um tema é um pacote que inclui componentes de estilo, como arquivo CSS, arquivos JavaScript e recursos (como ícones) que definem o estilo do seu Forms adaptável. Um tema do Formulário adaptável segue uma organização específica, consistindo nos seguintes componentes:
 
 * `src/theme.scss`: essa pasta inclui o arquivo CSS que tem um amplo impacto sobre todo o tema. Ele serve como um local centralizado para definir e gerenciar o estilo e o comportamento do tema. Ao fazer edições nesse arquivo, você pode fazer alterações aplicadas universalmente no tema, influenciando a aparência e a funcionalidade das Páginas adaptáveis do Forms e do AEM Sites.
 
@@ -275,7 +276,7 @@ A personalização de um tema ajuda a projetar as pesquisas personalizadas para 
 
 ###### Testar o tema para formulários hospedados em um ambiente de Cloud Service
 
-Você também pode testar o tema do Formulário adaptável hospedado em sua instância do AEM Forms as a Cloud Service. Para configurar e definir o ambiente local para o teste dos temas com o Forms adaptável hospedado na instância da nuvem, execute as seguintes etapas:
+Você também pode testar o tema do Formulário adaptável hospedado na instância as a Cloud Service do AEM Forms. Para configurar e definir o ambiente local para o teste dos temas com o Forms adaptável hospedado na instância da nuvem, execute as seguintes etapas:
 
 1. Abra a pasta de temas no IDE. Por exemplo, abra `aem-forms-theme-canvas` pasta no editor de código do Visual Studio.
 1. Renomeie o `env_template` arquivo para `.env` e adicione os seguintes parâmetros:
@@ -380,7 +381,7 @@ O tema é implantado usando o [pipeline de front-end.](https://experienceleague.
 1. Selecionar **[!UICONTROL Adicionar pipeline de não produção]** ou **[!UICONTROL Adicionar pipeline de produção]** com base no ambiente Cloud Service. Por exemplo, aqui a variável **[!UICONTROL Adicionar pipeline de produção]** for selecionada.
 1. No **[!UICONTROL Adicionar pipeline de produção]** como parte da **[!UICONTROL Configuração]** , especifique o nome do seu pipeline. Por exemplo, o nome do pipeline é `customcanvastheme`.
 1. Clique em **[!UICONTROL Continuar]**.
-1. Selecione o **[!UICONTROL Implantação direcionada]** > o **[!UICONTROL Código de front-end]** opções, na caixa **[!UICONTROL Código-fonte]** etapas.
+1. Selecione o **[!UICONTROL Implantação direcionada]** > o **[!UICONTROL Código de front-end]** opções, na caixa **[!UICONTROL Código Source]** etapas.
 1. Selecione o **[!UICONTROL Repositório]** e a variável **[!UICONTROL Ramificação Git]** que têm suas alterações mais recentes. Por exemplo, aqui o nome do repositório selecionado é `custom-canvas-theme-repo` e a ramificação Git é `main`.
 1. Selecione o **[!UICONTROL Localização do código]** as `/`, se as alterações estiverem presentes na pasta raiz.
 1. Clique em **[!UICONTROL Salvar]**.
@@ -409,7 +410,7 @@ As etapas para aplicar um tema a um Formulário adaptável são:
 
 1. Clique em **Criar** > **Forms adaptável**. O assistente para criação do Formulário adaptável é aberto.
 
-1. Selecione o modelo do componente principal na **Origem** guia.
+1. Selecione o modelo do componente principal na **Source** guia.
 1. Selecione o tema no campo **Estilo** guia.
 1. Clique em **Criar**.
 

@@ -3,7 +3,8 @@ title: Como configurar uma ação enviar para um formulário adaptável?
 description: Um Formulário adaptável fornece várias Ações de envio. Uma Ação de envio define como um Formulário adaptável é processado após o envio. Você pode usar as Ações de envio integradas ou criar as suas próprias ações.
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '3914'
 ht-degree: 2%
@@ -19,7 +20,7 @@ ht-degree: 2%
 
 **Aplicável a**: ✔️ componentes básicos do formulário adaptável.  [Componentes principais do formulário adaptável](/help/forms/configure-submit-actions-core-components.md). O Adobe recomenda usar os Componentes principais para [adicionar o Adaptive Forms a uma página do AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) ou para [criar Forms adaptável independente](creating-adaptive-form-core-components.md).
 
-Uma ação enviar é acionada quando um usuário clica no **[!UICONTROL Enviar]** em um Formulário adaptável. O Forms as a Cloud Service fornece as seguintes Ações de envio prontas para uso.
+Uma ação enviar é acionada quando um usuário clica no **[!UICONTROL Enviar]** em um Formulário adaptável. O Forms as a Cloud Service fornece as seguintes ações de envio prontas para uso.
 
 * [Enviar para endpoint REST](#submit-to-rest-endpoint)
 * [Enviar e-mail](#send-email)
@@ -117,7 +118,7 @@ Você pode usar o **[!UICONTROL Enviar e-mail]** Ação Enviar para enviar um em
 >[!NOTE]
 >
 > * Todos os campos de formulário devem ter nomes de elementos diferentes, mesmo que os campos sejam colocados em painéis diferentes de um formulário adaptável.
-> * O AEM as a Cloud Service exige que os e-mails de saída sejam criptografados. Por padrão, o email de saída é desativado. Para ativá-lo, envie um tíquete de suporte para [Solicitando acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+> * O AEM as a Cloud Service exige que o email de saída seja criptografado. Por padrão, o email de saída é desativado. Para ativá-lo, envie um tíquete de suporte para [Solicitando acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 
 Também é possível incluir anexos e um Documento de registro (DoR) no email. Para habilitar **[!UICONTROL Anexar documento de registro]** Configurar o formulário adaptável para gerar um Documento de registro (DoR). Você pode ativar a opção para gerar um Documento de registro a partir das propriedades do Formulário adaptável.
 
@@ -400,7 +401,7 @@ Você pode configurar um Formulário adaptável para executar um fluxo da nuvem 
 * Realizar cálculos complexos em dados capturados
 * Salve os dados do Forms adaptável em sistemas de armazenamento em uma programação predefinida
 
-O editor Forms adaptável fornece a **Chamar um fluxo do Microsoft® Power Automate** a ação de envio para enviar dados de formulários adaptáveis, anexos e Documento de registro são enviados para o Fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua instância do Forms as a Cloud Service com o Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
+O editor Forms adaptável fornece a **Chamar um fluxo do Microsoft® Power Automate** a ação de envio para enviar dados de formulários adaptáveis, anexos e Documento de registro são enviados para o Fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua instância as a Cloud Service do Forms com o Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
 
 Após uma configuração bem-sucedida, use o [Chamar um fluxo do Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) ação de envio para enviar dados a um Fluxo do Power Automate.
 
@@ -460,7 +461,7 @@ O autor pode configurar a biblioteca JavaScript personalizada por formulário ad
 
 ## Tratamento de erros na ação enviar {#error-handling-on-submit-action}
 
-Como parte das diretrizes de segurança e proteção contra AEM, configure páginas de erro personalizadas como 400.jsp, 404.jsp e 500.jsp. Esses manipuladores são chamados quando ao enviar um formulário 400, 404 ou 500 erros são exibidos. Os manipuladores também são chamados quando esses códigos de erro são acionados no nó Publicar. Você também pode criar páginas JSP para outros códigos de erro HTTP.
+Como parte das diretrizes de segurança e proteção contra AEM, configure páginas de erro personalizadas como 400.jsp, 404.jsp e 500.jsp. Esses manipuladores são chamados quando ao enviar um formulário 400, 404 ou 500 erros são exibidos. Os manipuladores também são chamados quando esses códigos de erro são acionados no nó do Publish. Você também pode criar páginas JSP para outros códigos de erro HTTP.
 
 Quando você preenche um modelo de dados de formulário (FDM) ou um formulário adaptável baseado em esquema com uma reclamação de dados XML ou JSON para um esquema cujos dados não contêm `<afData>`, `<afBoundData>`, e `</afUnboundData>` , os dados de campos não vinculados do Formulário adaptável serão perdidos. O esquema pode ser um esquema XML, esquema JSON ou um Modelo de dados de formulário (FDM). Os campos não limitados são campos do Formulário adaptável sem `bindref` propriedade.
 

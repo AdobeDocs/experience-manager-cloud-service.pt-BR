@@ -1,12 +1,12 @@
 ---
 title: Perguntas frequentes sobre o AEM Forms as a Cloud Service
-description: Perguntas frequentes as a Cloud Service sobre o Forms
+description: Perguntas frequentes sobre o Forms as a Cloud Service
 contentOwner: khsingh
 role: User
-feature: Adaptive Forms, FAQ
+feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 2%
@@ -19,13 +19,13 @@ ht-degree: 2%
 Você pode usar o Editor visual para criar as regras. O Editor de códigos não está disponível em [!DNL Forms] as a Cloud Service. Se o formulário adaptável usar scripts de regras desenvolvidos com o editor de código, use o [Utilitário de migração](migrate-to-forms-as-a-cloud-service.md) para converter seus scripts de código em funções personalizadas. Você pode usar funções personalizadas com o Editor visual para continuar obtendo os resultados obtidos com o Editor de códigos.
 
 * **Posso criar um formulário adaptável baseado em XFA em instâncias do Cloud Service?**
-Sim, você pode criar um formulário adaptável baseado em XFA na instância do Cloud Service. No entanto, o suporte para o Adaptive Forms baseado em XFA não está disponível para o SDK as a Cloud Service do AEM Forms (Ambiente de desenvolvimento local). Se você pretende usar o Adaptive Forms baseado em XFA com o SDK as a Cloud Service do AEM Forms, entre em contato com o Suporte do Adobe com detalhes do caso de uso e requisitos específicos.
+Sim, você pode criar um formulário adaptável baseado em XFA na instância do Cloud Service. No entanto, o suporte para o Adaptive Forms baseado em XFA não está disponível para o SDK as a Cloud Service do AEM Forms (Ambiente de desenvolvimento local). Se você pretende usar o Adaptive Forms baseado em XFA com o SDK as a Cloud Service da AEM Forms, entre em contato com o Suporte do Adobe com detalhes do caso de uso e requisitos específicos.
 
 <!-- * **Can I use an XDP as a Document of Record (DoR) template? Is Forms Designer included in AEM Forms as a Cloud Service license?** 
 
   Yes, you can use an XDP as a Document of Record template on Cloud Service instances. However, support to use XDP as a Document of Record template is not available for AEM Forms as a Cloud Service SDK (Local development environment). -->
 
-* **Posso migrar o conteúdo de um repositório no local ou [!DNL Adobe-Managed Services] ambientes para [!DNL Forms] as a Cloud Service ambiente?**
+* **Posso migrar o conteúdo de um repositório no local ou [!DNL Adobe-Managed Services] ambientes para [!DNL Forms] Ambiente as a Cloud Service?**
 Sim, você pode migrar seu código personalizado, conteúdo e ativos do no local ou [!DNL Adobe-Managed Services] ambientes para [!DNL Forms] ambiente as a Cloud Service. Para obter instruções detalhadas, consulte [Migrar para o Forms as a Cloud Service](migrate-to-forms-as-a-cloud-service.md).
 
 <!-- You can use package manager or Experience Manager UI to [export and import Forms and related assets](import-export-forms-templates.md), use the migration utility to make your existing assets compatible with [!DNL Forms] as a Cloud Service, use the [Best Practices Analyzer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=en#best-practices-analyzer) tool to find the features and APIs that require changes and updated before migration, and use the [Content Transfer Tools](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/moving/home.html) to move your custom code without refactoring it. -->
@@ -93,7 +93,7 @@ O Modelo de dados de formulário (FDM) não fornece um método para usar certifi
 * **Quais recursos não fazem parte da versão inicial do GA?**
 Forms Portal, [!DNL AEM Forms] aplicativo, integração com o Adobe Analytics e integração com o Adobe Target não fazem parte da versão inicial do GA. Verifique as notas de versão mensais para obter informações sobre novos recursos.
 
-* **Eu criei um [Esquema JSON para criar um formulário adaptável](adaptive-form-json-schema-form-model.md). O esquema JSON define eventos para alguns componentes de formulários adaptáveis. O AEM Forms as a Cloud Service é compatível com eventos?**
+* **Eu criei um [Esquema JSON para criar um formulário adaptável](adaptive-form-json-schema-form-model.md). O esquema JSON define eventos para alguns componentes de formulários adaptáveis. O AEM Forms as a Cloud Service suporta eventos?**
 Crie o Formulário adaptável com base no esquema JSON no ambiente Experience Manager 6.5 Forms e use o [Utilitário de migração](migrate-to-forms-as-a-cloud-service.md) para migrar o Adaptive Forms para o AEM Forms as a Cloud Service. O utilitário converte esses eventos em bibliotecas de clientes e você pode continuar usando o Forms adaptável com eventos em um ambiente Cloud Service.
 
 <!-- 

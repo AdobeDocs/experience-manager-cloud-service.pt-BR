@@ -3,10 +3,11 @@ title: Como podemos gerenciar metadados para o AEM Forms?
 description: Os metadados facilitam a categorização e a organização de ativos e ajudam os usuários que procuram um ativo específico.
 feature: Adaptive Forms, Foundation Components
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1735'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -110,12 +111,12 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
    <td>Um valor somente leitura que especifica a hora em que o formulário foi publicado pela última vez.</td> 
   </tr> 
   <tr> 
-   <td>Publicar hora de ligar/desligar</td> 
+   <td>Horário ligado/desligado do Publish</td> 
    <td>Todos, exceto o recurso</td> 
    <td><p>Hora em que o formulário está agendado para ser publicado/despublicado automaticamente. O usuário define esse valor ao editar metadados.</p> 
     <ul> 
-     <li>A data de ativação e desativação da publicação deve ser posterior à data atual. </li> 
-     <li>Publicar Fora do Tempo deve estar além de publicar No Tempo. </li> 
+     <li>Os horários de ativação e desativação do Publish devem estar após a data atual. </li> 
+     <li>O Tempo de desativação do Publish deve estar além do tempo de ativação da publicação. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -153,8 +154,8 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
    <td><p>Formulário adaptável</p> <p>Modelo de formulário</p> <p>Recurso</p> </td> 
    <td><p>Lista de ativos (outros formulários ou recursos) aos quais este formulário está relacionado. Esses ativos podem estar nas duas categorias a seguir:</p> 
     <ul> 
-     <li>Refere-se: ativos aos quais o formulário atual se refere.</li> 
-     <li>Referenciado por: Ativos que se referem ao ativo atual.</li> 
+     <li>Refere-se: Assets ao qual o formulário atual se refere.</li> 
+     <li>Referenciado por: Assets que se refere ao ativo atual.</li> 
     </ul> <p>Esses ativos são exibidos como links e seus metadados podem ser acessados diretamente clicando neles.<br /> </p> </td> 
   </tr> 
   <tr> 
@@ -177,7 +178,7 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
 
 ## Exibir metadados de formulário {#view-form-metadata}
 
-Os ativos têm valores de propriedade existentes, que podem ser exibidos no modo somente leitura. Esses metadados são originados no momento do upload ou da criação do formulário.
+O Assets tem valores de propriedade existentes, que podem ser exibidos no modo somente leitura. Esses metadados são originados no momento do upload ou da criação do formulário.
 
 1. Navegue até o local do ativo para o qual deseja exibir metadados.
 
@@ -251,7 +252,7 @@ Uma ferramenta (Editor de esquema de metadados) é fornecida para definir o esqu
 
 ### Navegar pelo editor de esquema de metadados {#navigate-the-metadata-schema-editor}
 
-1. Navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**.
+1. Navegue até **[!UICONTROL Ferramentas > Assets > Esquemas de metadados]**.
 
 1. Clique em **[!UICONTROL formulários]** dos formulários de esquema listados.
 

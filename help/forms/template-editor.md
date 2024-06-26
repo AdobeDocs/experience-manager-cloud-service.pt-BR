@@ -3,7 +3,8 @@ title: Como podemos criar um modelo de formulário adaptável?
 description: Crie modelos de Formulário adaptável para definir a estrutura básica e o conteúdo inicial usando o Editor de modelos.
 feature: Adaptive Forms, Foundation Components
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 1%
@@ -59,7 +60,7 @@ Contém as seguintes opções:
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **Seletor de modo:** Permite alterar o modo.Você pode escolher **[!UICONTROL Estrutura]** modo, **[!UICONTROL Conteúdo inicial]**, **[!UICONTROL Controle de layout]** modo. O modo Estrutura permite adicionar e personalizar o cabeçalho e o rodapé. O modo Conteúdo inicial permite personalizar o conteúdo do formulário.
    * **Visualizar:** Permite visualizar a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar entre os modos de edição e visualização.
-* **Barra lateral:** Fornece os navegadores de Conteúdo, Propriedades, Ativos e Componentes.
+* **Barra lateral:** Fornece os navegadores Conteúdo, Propriedades, Assets e Componentes.
 * **Barra de ferramentas do componente:** Ao selecionar um componente, você vê uma barra de ferramentas que permite personalizar o componente.
 * **Página**: a área onde você adiciona conteúdo para criar o template.
 

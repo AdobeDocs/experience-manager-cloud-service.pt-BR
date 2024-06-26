@@ -3,7 +3,8 @@ title: Como adicionar suporte para novos locais a um formulário adaptável base
 description: Para o Adaptive Forms, você pode adicionar localidades para mais idiomas, além do fornecido imediatamente.
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 6821856bd9f1a87a66ba296b3e315c0a4e78cea8
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 1%
@@ -19,7 +20,7 @@ ht-degree: 1%
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
 | Componentes principais | [Clique aqui](supporting-new-language-localization-core-components.md) |
-| Componentes de base | Este artigo |
+| Componentes de fundação | Este artigo |
 
 O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). Você também pode adicionar suporte para mais locais, como Hindi(hi_IN).
 

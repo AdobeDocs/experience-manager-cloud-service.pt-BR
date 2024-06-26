@@ -1,19 +1,19 @@
 ---
-title: O AEM Forms as a Cloud Service oferece suporte a fontes prontas para uso para geração de PDF.
+title: O AEM Forms as a Cloud Service oferece suporte a fontes prontas para uso na geração de PDF.
 description: O AEM Forms as a Cloud Service oferece suporte a fontes prontas para uso para documentos de registro e PDF.
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 67b07bf6-a45c-4a74-8b24-cb2e26c55bc9
-source-git-commit: e8e00d85e5526a3de3a210ee72df07d85bb7d1db
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
 
 ---
 
-# Fontes prontas para uso (OOTB) com suporte para a geração de PDF no Forms as a Cloud Service  {#ootb-supported-fonts-overview}
+# Fontes prontas para uso (OOTB) com suporte para a geração de PDF no as a Cloud Service do Forms  {#ootb-supported-fonts-overview}
 
-O AEM Forms as a Cloud Service oferece várias fontes incorporadas compatíveis com OOTB que podem ser usadas perfeitamente no [APIs de comunicação](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Documento de registro dos Componentes principais](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), e [Documento de Registro para Componentes de Base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+O AEM Forms as a Cloud Service várias fontes incorporadas compatíveis com OOTB que podem ser usadas perfeitamente no [APIs de comunicação](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Documento de registro dos Componentes principais](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), e [Documento de Registro para Componentes de Base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
 <!--
 
@@ -52,5 +52,5 @@ As listas de fontes OOTB suportadas são:
 * eurosign.ttf
 
 
-Além das fontes mencionadas acima, você pode usar fontes personalizadas para dar aos PDF uma aparência específica. Para habilitar fontes personalizadas, você [adicionar fontes personalizadas ao ambiente do Forms as a Cloud Service](/help/forms/use-custom-fonts.md) com uma licença válida.
+Além das fontes mencionadas acima, você pode usar fontes personalizadas para dar aos PDF uma aparência específica. Para habilitar fontes personalizadas, você [adicionar fontes personalizadas ao ambiente as a Cloud Service do Forms](/help/forms/use-custom-fonts.md) com uma licença válida.
 

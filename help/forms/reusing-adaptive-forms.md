@@ -4,7 +4,8 @@ description: Descubra a redefinição de objetivo de um Formulário adaptável e
 seo-description: You can reuse an existing Adaptive Form to create new Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
-source-git-commit: f419883d0e83b5d711e0f594a8e14a8f2133f4b1
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 3%
@@ -53,7 +54,7 @@ Copie um formulário adaptável usando uma das seguintes abordagens:
 
 Clicar na ação de cópia sai automaticamente do modo de seleção e faz a colagem ![Colar](assets/Smock_Paste_18_N.svg) ícone visível. Agora vá para o caminho de pasta desejado e clique no botão ![Colar](assets/Smock_Paste_18_N.svg) ícone para colar o Formulário adaptável copiado.
 
-Se você estiver colando na mesma pasta ou se outro arquivo com o mesmo nome de nó (com o qual ele é armazenado no repositório CRX) existir nessa pasta de destino, 1 será anexado ao sufixo (por exemplo, myaf torna-se myaf1 e se myaf1 existe no mesmo local, myaf torna-se myaf2. Todas as outras propriedades permanecem iguais ao Formulário adaptável original.
+Se você estiver colando na mesma pasta ou se outro arquivo com o mesmo nome de nó (com o qual ele é armazenado no repositório do CRX) existir nessa pasta de destino, 1 será anexado ao sufixo (por exemplo, myaf torna-se myaf1 e se myaf1 existe no mesmo local, myaf torna-se myaf2. Todas as outras propriedades permanecem iguais ao Formulário adaptável original.
 
 Depois de clicar no botão Colar ![Colar](assets/Smock_Paste_18_N.svg) ícone, ele ficará oculto novamente. De uma só vez, só é possível colar uma vez. Para criar uma cópia do mesmo ativo novamente, copie-a novamente.
 

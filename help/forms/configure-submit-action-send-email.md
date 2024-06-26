@@ -3,13 +3,15 @@ Title: How to send an email on submission of an Adaptive Form?
 Description: Explore the process to set up email notifications when submitting an Adaptive Form.
 keywords: como enviar um email para um formulário adaptável, Ação enviar de email, Email do formulário adaptável, Email de envio do formulário, Guia de envio de email
 feature: Adaptive Forms, Core Components
-source-git-commit: f1db04e6cd1f78c1530aefd29f5f036ca5e70873
+exl-id: 70386e57-345b-4edb-97f1-3fd52ea9ff4f
+title: "Como configurar uma ação enviar para um formulário adaptável?"
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 0%
+source-wordcount: '447'
+ht-degree: 1%
 
 ---
-
 
 # Configurar a ação de envio Enviar email para um formulário adaptável
 
@@ -69,5 +71,3 @@ Para configurar a Ação de envio:
 ## Artigos relacionados
 
 {{af-submit-action}}
-
-

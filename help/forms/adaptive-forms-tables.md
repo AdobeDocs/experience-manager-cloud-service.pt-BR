@@ -4,7 +4,8 @@ description: Use o componente Tabela para adicionar tabelas a um Formulário ada
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Foundation Components
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2476'
 ht-degree: 0%
@@ -165,7 +166,7 @@ No tempo de execução ou pré-visualização, você verá **+** e ![Botão Excl
 
 ## Expressões em uma tabela {#expressions-in-a-table}
 
-Tabelas em formulários adaptáveis permitem escrever expressões em JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou uma linha, adicionar todos os números e mostrar o total em uma célula, habilitar ou desabilitar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
+Tabelas em formulários adaptáveis permitem escrever expressões no JavaScript para induzir comportamentos, como mostrar ou ocultar uma tabela ou uma linha, adicionar todos os números e mostrar o total em uma célula, habilitar ou desabilitar uma célula, validar a entrada do usuário e assim por diante. Essas expressões usam APIs de modelo de script de formulários adaptáveis.
 
 Embora tabelas e linhas suportem apenas expressões de visibilidade para controlar sua visibilidade com base no valor retornado por uma expressão, as células suportam as seguintes expressões:
 
@@ -223,7 +224,7 @@ Coluna expandida de uma tabela em um dispositivo móvel
 
 ## Mesclar dados em uma tabela {#merge-data-in-a-table}
 
-Tabelas em formulários adaptáveis permitem preencher a tabela no tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que o servidor do AEM Forms está sendo executado ou no repositório CRX.
+Tabelas em formulários adaptáveis permitem preencher a tabela no tempo de execução usando dados de um arquivo XML. O arquivo XML de dados pode residir no sistema de arquivos local da máquina em que o servidor do AEM Forms está em execução ou no repositório do CRX.
 
 Vamos ver um exemplo da tabela de resumo de transações bancárias a seguir que queremos preencher com dados de um arquivo XML.
 

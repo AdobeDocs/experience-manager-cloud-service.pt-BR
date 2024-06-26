@@ -3,7 +3,9 @@ title: Adicionar versões, comentários e anotações a um formulário.
 description: Use os componentes principais do formulário adaptável para adicionar comentários, anotações e versões a um formulário adaptável.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms, Core Components
-source-git-commit: 31896ce21aa8a6e63657cd3099900803c98657b2
+exl-id: 84b95a19-c804-41ad-8f4b-5868c8444cc0
+role: User, Developer, Admin
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 0%
@@ -17,7 +19,7 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
 
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
 
 
 Os Componentes principais do formulário adaptável fornecem funcionalidade que permite que os autores de formulários incorporem versões, comentários e anotações nos formulários. Esses recursos servem para simplificar o processo de desenvolvimento de formulário, permitindo que os usuários criem e gerenciem várias versões de um formulário, participem de discussões colaborativas por meio de comentários e anexem anotações a componentes de formulário específicos, aprimorando assim a experiência geral de criação de formulários.

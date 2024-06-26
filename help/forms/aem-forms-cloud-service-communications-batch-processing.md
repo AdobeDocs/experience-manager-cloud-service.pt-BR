@@ -1,17 +1,17 @@
 ---
 title: Criação de PDF sem esforço - Domine a arte com processamento em lote - Seu guia de autoajuda para gerar milhões de documentos de PDF!
 description: Como criar comunicações personalizadas e orientadas à marca?
-feature: Adaptive Forms, APIs
+feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 975f767e75a268a1638227ae20a533f82724c80a
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 2%
 
 ---
 
-# Processamento em lote das Comunicações as a Cloud Service do AEM Forms
+# Processamento em lote das comunicações as a Cloud Service do AEM Forms
 
 As comunicações permitem criar, montar e fornecer comunicações personalizadas e orientadas à marca, como correspondências comerciais, documentos, declarações, cartas de processamento de solicitações, avisos de benefícios, faturas mensais e kits de boas-vindas. Você pode usar APIs de comunicações para combinar um modelo (XFA ou PDF) com os dados do cliente para gerar documentos nos formatos PDF, PS, PCL, DPL, IPL e ZPL.
 
@@ -98,7 +98,7 @@ Sua instância do Experience Manager agora está pronta para se conectar ao Arma
 
 ### Criar configuração de armazenamento de dados em lote {#create-batch-data-store-configuration}
 
-A configuração de dados em lote ajuda a configurar containers e pastas para entrada e saída. Você mantém os registros do cliente na Pasta de origem e os documentos gerados são colocados na Pasta de destino.
+A configuração de dados em lote ajuda a configurar containers e pastas para entrada e saída. Você mantém os registros do cliente na Pasta do Source e os documentos gerados são colocados na Pasta de destino.
 
 Para criar a configuração:
 
@@ -106,7 +106,7 @@ Para criar a configuração:
 1. Abra uma pasta para hospedar a configuração e clique em Criar. Você usa a pasta Global ou cria uma pasta.
 1. Especifique o Título e o Nome da configuração. Em Armazenamento, selecione Armazenamento do Microsoft Azure.
 1. Em Caminho de configuração de armazenamento, procure e selecione a Configuração na nuvem que contém credenciais da conta de armazenamento do Azure de propriedade do cliente.
-1. Na Pasta de origem, especifique o nome do contêiner de Armazenamento do Azure e a pasta que contém os registros.
+1. Na Pasta do Source, especifique o nome do contêiner de Armazenamento do Azure e a pasta que contém os registros.
 1. Na Pasta de destino, especifique o caminho do contêiner de Armazenamento do Azure e a pasta para armazenar os documentos gerados.
 1. Clique em Criar.
 
@@ -176,7 +176,7 @@ A documentação de referência da API fornece informações detalhadas sobre to
 
 >[!MORELIKETHIS]
 >
->* [Introdução às Comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Introdução às comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
 >* [Arquitetura as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Processamento de comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

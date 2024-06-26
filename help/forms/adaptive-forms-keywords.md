@@ -2,15 +2,15 @@
 title: O que são palavras-chave reservadas do Adaptive Forms?
 description: Palavras-chave reservadas que não podem ser usadas como identificadores no Adaptive Forms.
 topic-tags: author
-role: Admin, Developer, User
+role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6511c4273ca3d394d98a61e8acb4d3cb03c243d5
+exl-id: 2cd3c322-9c38-42be-9877-a03c9ffc02ae
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 4%
 
 ---
-
 
 # Palavras-chave adaptáveis do Forms {#adaptive-forms-keywords}
 
@@ -54,7 +54,7 @@ As palavras-chave do Forms adaptável são identificadores predefinidos e reserv
    <td><p>instâncias</p> </td>
   </tr>
   <tr>
-   <td><p>título</p> </td>
+   <td><p>cargo</p> </td>
    <td><p>resolveNode</p> </td>
    <td><p>syncXFAProps</p> </td>
   </tr>
@@ -236,4 +236,4 @@ As palavras-chave do Forms adaptável são identificadores predefinidos e reserv
  </tbody>
 </table>
 
-Além das palavras-chave listadas acima, evite usar nomes semelhantes a [APIs JavaScript adaptáveis do Forms](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Além das palavras-chave listadas acima, evite usar nomes semelhantes a [APIs adaptáveis do Forms JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).

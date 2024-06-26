@@ -3,7 +3,8 @@ title: Como gerar um documento de registro (DoR) para o AEM Forms?
 description: Saiba como gerar um modelo para um Documento de registro (DoR) do Adaptive Forms.
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 51d72edcde18503e9e4d83eaf51e28658d9ee5e6
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 2%
@@ -309,7 +310,7 @@ Um modelo base é usado para definir o cabeçalho, rodapé, estilo e aparência 
 
 * As propriedades desses campos são aplicadas aos campos no documento de registro. Esses campos devem seguir o `AF_<name of field in all caps>_XFO` convenção de nomenclatura. Por exemplo, o nome do campo da caixa de seleção deve ser `AF_CHECKBOX_XFO`.
 
-Para criar um modelo base, faça o seguinte no Forms Designer.
+Para criar um template base, faça o seguinte no Forms Designer.
 
 1. Clique em **[!UICONTROL Arquivo]** > **[!UICONTROL Novo]**.
 1. Selecione o **[!UICONTROL Com base em um modelo]** opção.
@@ -508,7 +509,7 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as 
 
 1. Implante o projeto no seu ambiente Cloud Service.
 
-### Usar um arquivo XCI personalizado em seu ambiente de desenvolvimento as a Cloud Service do Forms local
+### Usar um arquivo XCI personalizado no ambiente de desenvolvimento as a Cloud Service do Forms local
 
 1. Carregue o arquivo XCI no ambiente de desenvolvimento local.
 1. Abra o gerenciador de configurações do SDK do Cloud Service. O URL padrão é: <http://localhost:4502/system/console/configMgr>.

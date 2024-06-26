@@ -2,10 +2,10 @@
 title: Como criar uma ação enviar personalizada para um formulário adaptável?
 description: Saiba como criar uma Ação de envio personalizada para um Forms adaptável para atrasar o envio e processar dados antes de enviá-los para um endpoint restante, salvá-los em um armazenamento de dados e executar outras funções personalizadas.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
-source-git-commit: ddf9632c0aad1fd5a3c2fb02fe1c9673ae4eb029
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '1669'
 ht-degree: 1%
@@ -102,13 +102,13 @@ Uma ação enviar é uma sling:Folder que inclui o seguinte:
    * **guideComponentType** do tipo String e valor **fd/af/components/guidesubmittype**
    * **guideDataModel** do tipo String que especifica o tipo de Formulário adaptável ao qual a Ação enviar se aplica. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** O é compatível com o Adaptive Forms baseado em XSD. **básico** O é compatível com o Adaptive Forms que não usam XDP ou XSD. Para exibir a ação em vários tipos de Forms adaptável, adicione as cadeias de caracteres correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível em <!--XFA- and -->Forms adaptável baseado em XSD, especifique o valor como <!--**xfa** and--> **xsd**.
 
-   * **jcr:description** do tipo String. O valor dessa propriedade é exibido na lista Ação de envio na guia Ações de envio da caixa de diálogo Edição do formulário adaptável. As ações OOTB estão presentes no repositório CRX no local **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:description** do tipo String. O valor dessa propriedade é exibido na lista Ação de envio na guia Ações de envio da caixa de diálogo Edição do formulário adaptável. As ações OOTB estão presentes no repositório do CRX no local **/libs/fd/af/components/guidesubmittype**.
 
    * **submitService** do tipo String. Para obter mais informações, consulte [Programar envio do formulário adaptável para ações personalizadas](#schedule-adaptive-form-submission).
 
 ## Criação de uma Ação de envio personalizada {#creating-a-custom-submit-action}
 
-Execute as seguintes etapas para criar uma Ação enviar personalizada que salve os dados no repositório CRX e envie um email a você. O formulário adaptável contém o conteúdo do armazenamento de ação de envio OOTB (desaprovado) que salva os dados no repositório CRX. Além disso, o AEM fornece uma [E-mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API que pode ser usada para enviar emails. Antes de usar a API de email, configure o serviço Day CQ Mail por meio do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (desaprovado) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório CRX.
+Execute as seguintes etapas para criar uma Ação enviar personalizada que salve os dados no repositório do CRX e envie um email para você. O formulário adaptável contém o conteúdo do armazenamento de ação de envio OOTB (desaprovado) que salva os dados no repositório do CRX. Além disso, o AEM fornece uma [E-mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API que pode ser usada para enviar emails. Antes de usar a API de email, configure o serviço Day CQ Mail por meio do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório do CRX.
 
 1. Faça logon no CRXDE Lite no URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Crie um nó com a propriedade sling:Folder e o nome store_and_mail na pasta /apps/custom_submit_action. Crie a pasta custom_submit_action se ela ainda não existir.
 

@@ -1,11 +1,11 @@
 ---
 title: Como criar uma sequência de formulário de várias etapas?
 description: Com [!DNL Experience Manager Forms], é possível definir uma sequência de painéis de formulário para os usuários navegarem e preencherem um Formulário adaptável.
-role: User
+role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 0eac90a8f120a9c7655e68533d4b0a32292621e1
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 81%

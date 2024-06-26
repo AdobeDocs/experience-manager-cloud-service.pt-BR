@@ -6,7 +6,8 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
-source-git-commit: 8730383d26c6f4fbe31a25a43d33bf314251d267
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '4351'
 ht-degree: 0%
@@ -25,7 +26,7 @@ ht-degree: 0%
 
 ## Introdução
 
-O AEM Forms é compatível com funções personalizadas, permitindo que os usuários definam funções JavaScript para implementar regras de negócios complexas. Essas funções personalizadas estendem os recursos dos formulários facilitando a manipulação e o processamento dos dados inseridos para atender a requisitos especificados. Elas também permitem a alteração dinâmica do comportamento do formulário com base em critérios predefinidos.
+O AEM Forms é compatível com funções personalizadas, permitindo que os usuários definam funções do JavaScript para implementar regras de negócios complexas. Essas funções personalizadas estendem os recursos dos formulários facilitando a manipulação e o processamento dos dados inseridos para atender a requisitos especificados. Elas também permitem a alteração dinâmica do comportamento do formulário com base em critérios predefinidos.
 
 >[!NOTE]
 >
@@ -39,11 +40,11 @@ As vantagens de usar funções personalizadas no Adaptive Forms são:
 * **Comportamento dinâmico**: as funções personalizadas permitem controlar o comportamento dinâmico dos formulários com base em condições específicas. Por exemplo, você pode mostrar/ocultar campos, modificar valores de campo ou ajustar a lógica do formulário dinamicamente.
 * **Integração**: você pode usar funções personalizadas para integrar-se a APIs ou serviços externos. Ele ajuda a buscar dados de fontes externas, enviar dados para endpoints Rest externos ou executar ações personalizadas com base em eventos externos.
 
-As funções personalizadas são essencialmente bibliotecas de clientes adicionadas ao arquivo JavaScript. Depois de criar uma função personalizada, ela fica disponível no editor de regras para seleção pelo usuário em um Formulário adaptável. As funções personalizadas são identificadas pelas anotações JavaScript no editor de regras.
+As funções personalizadas são essencialmente bibliotecas de clientes adicionadas ao arquivo do JavaScript. Depois de criar uma função personalizada, ela fica disponível no editor de regras para seleção pelo usuário em um Formulário adaptável. As funções personalizadas são identificadas pelas anotações do JavaScript no editor de regras.
 
-### Anotações JavaScript compatíveis com a função personalizada {#js-annotations}
+### Anotações do JavaScript compatíveis com a função personalizada {#js-annotations}
 
-As anotações JavaScript são usadas para fornecer metadados para o código JavaScript. Inclui comentários que começam com símbolos específicos, por exemplo, /** e @. As anotações fornecem informações importantes sobre funções, variáveis e outros elementos no código. O Formulário adaptável é compatível com as seguintes anotações JavaScript para funções personalizadas:
+As anotações do JavaScript são usadas para fornecer metadados para o código JavaScript. Inclui comentários que começam com símbolos específicos, por exemplo, /** e @. As anotações fornecem informações importantes sobre funções, variáveis e outros elementos no código. O Formulário adaptável é compatível com as seguintes anotações do JavaScript para funções personalizadas:
 
 #### Nome
 
@@ -75,14 +76,14 @@ O parâmetro é uma lista de argumentos usados por funções personalizadas. Uma
    * data[]: representa uma matriz de valores de data.
    * array: representa uma matriz genérica contendo valores de vários tipos.
    * object: representa o objeto de formulário passado para uma função personalizada em vez de passar seu valor diretamente.
-   * escopo: representa o objeto global, que contém variáveis somente leitura, como instâncias de formulário, instâncias de campo de destino e métodos para executar modificações de formulário em funções personalizadas. Ele é declarado como o último parâmetro nas anotações JavaScript e não está visível no editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário. Para obter mais informações sobre o objeto Globals e como usá-lo, [clique aqui](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
+   * escopo: representa o objeto global, que contém variáveis somente leitura, como instâncias de formulário, instâncias de campo de destino e métodos para executar modificações de formulário em funções personalizadas. Ele é declarado como o último parâmetro nas anotações do JavaScript e não está visível no editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário. Para obter mais informações sobre o objeto Globals e como usá-lo, [clique aqui](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
 
 O tipo de parâmetro não diferencia maiúsculas de minúsculas e espaços não são permitidos no nome do parâmetro.
 
 `<Parameter Description>` contém detalhes sobre a finalidade do parâmetro. Ele pode ter várias palavras.
 
 **Parâmetros opcionais**
-Por padrão, todos os parâmetros são obrigatórios. Você pode definir um parâmetro como opcional adicionando `=` após o tipo de parâmetro ou ao delimitar o nome do parâmetro em  `[]`. Os parâmetros definidos como opcionais nas anotações JavaScript são exibidos como opcionais no editor de regras.
+Por padrão, todos os parâmetros são obrigatórios. Você pode definir um parâmetro como opcional adicionando `=` após o tipo de parâmetro ou ao delimitar o nome do parâmetro em  `[]`. Os parâmetros definidos como opcionais nas anotações do JavaScript são exibidos como opcionais no editor de regras.
 Para definir uma variável como parâmetro opcional, você pode usar qualquer uma das seguintes sintaxes:
 
 * `@param {type=} Input1`
@@ -170,7 +171,7 @@ Você pode criar uma função personalizada com ou sem comentários jsdoc.
             // code to be executed
         }
 ```
-Se o usuário não adicionar anotações JavaScript à função personalizada, ela será listada no editor de regras pelo nome da função. No entanto, é recomendável incluir anotações JavaScript para melhorar a legibilidade das funções personalizadas.
+Se o usuário não adicionar anotações do JavaScript à função personalizada, ela será listada no editor de regras pelo nome da função. No entanto, é recomendável incluir anotações do JavaScript para melhorar a legibilidade das funções personalizadas.
 
 ### Função de seta com anotações ou comentários obrigatórios do JavaScript
 
@@ -241,7 +242,7 @@ Antes de começar a adicionar uma função personalizada ao Adaptive Forms, veri
 
 **Clonar o repositório**
 
-Clonar seu [Repositório as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+Clonar seu [as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
 
 1. Abra a linha de comando ou a janela do terminal.
 
@@ -374,7 +375,7 @@ Depois de implantar a biblioteca do cliente no ambiente do Forms CS, use os recu
 
 1. Clique em **[!UICONTROL Concluído]**.
 
-Você pode usar a função personalizada no [editor de regras de um Formulário adaptável](/help/forms/rule-editor-core-components.md) usando o [Anotações JavaScript](##js-annotations).
+Você pode usar a função personalizada no [editor de regras de um Formulário adaptável](/help/forms/rule-editor-core-components.md) usando o [Anotações do JavaScript](##js-annotations).
 
 ## Uso de uma função personalizada em um Formulário adaptável
 
@@ -1011,7 +1012,7 @@ Caso as funções personalizadas sejam modificadas, o armazenamento em cache é 
 * Se o manipulador de envio personalizado não funcionar conforme esperado em projetos ou formulários AEM existentes, execute as seguintes etapas:
    * Certifique-se de que o [a versão dos componentes principais foi atualizada para 3.0.18 e posterior](https://github.com/adobe/aem-core-forms-components). No entanto, para projetos e formulários AEM existentes, há etapas adicionais a seguir:
 
-   * Para o projeto AEM, o usuário deve substituir todas as instâncias de `submitForm('custom:submitSuccess', 'custom:submitError')` com `submitForm()` e implante o projeto por meio do pipeline do Cloud Manager.
+   * Para o projeto AEM, o usuário deve substituir todas as instâncias de `submitForm('custom:submitSuccess', 'custom:submitError')` com `submitForm()` e implante o projeto por meio do pipeline da Cloud Manager.
 
    * Para formulários existentes, se os manipuladores de envio personalizados não estiverem funcionando corretamente, o usuário precisará abrir e salvar o `submitForm` regra no **Enviar** usando o Editor de regras. Essa ação substitui a regra existente de `submitForm('custom:submitSuccess', 'custom:submitError')` com `submitForm()` no formulário.
 

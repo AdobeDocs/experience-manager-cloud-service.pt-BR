@@ -2,10 +2,10 @@
 title: Como aplicar estilos em linha a componentes de formulário adaptáveis?
 description: Saiba como aplicar estilos personalizados em um Formulário adaptável, você também pode aplicar propriedades CSS em linha a componentes individuais de um Formulário adaptável.
 feature: Adaptive Forms, Foundation Components
-role: User
+role: User, Developer
 level: Intermediate
 exl-id: 25adabfb-ff19-4cb2-aef5-0a8086d2e552
-source-git-commit: eaab351460363b83c7d3667e048235506cc71c41
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 3%
@@ -79,7 +79,7 @@ Observe a alteração no estilo da caixa de texto, como mostrado na imagem a seg
    <td><p>Altera a cor de fundo para CornflowerBlue (#6495ED)</p> <p>Observação: você pode especificar um nome de cor ou seu código hexadecimal no campo de valor.</p> </td>
   </tr>
   <tr>
-   <td><p>Etiqueta</p> </td>
+   <td><p>Rótulo</p> </td>
    <td><p>Dimension e Posição &gt; largura</p> </td>
    <td><p>100px</p> </td>
    <td><p>Corrige a largura como 100px para o rótulo</p> </td>

@@ -8,7 +8,8 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: e4d8bcb9-ce1f-425e-b35c-d0a79fa771f3
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+role: User, Developer
+source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt
 source-wordcount: '2150'
 ht-degree: 1%
@@ -130,7 +131,7 @@ Execute as seguintes etapas para mostrar fragmentos completos em formulários:
 1. Vá para a página de configuração do console da Web do AEM em https:[*host*]:[*porta*]/system/console/configMgr
 
 1. Pesquisar e clicar **[!UICONTROL Serviço de configuração de formulário adaptável]** para abri-lo no modo de edição.
-1. Desative **[!UICONTROL Ativar Espaço reservado no lugar da caixa de seleção Fragmento]** para mostrar fragmentos completos em vez da imagem de espaço reservado.
+1. Desativar **[!UICONTROL Ativar espaço reservado no lugar do fragmento]** para mostrar fragmentos completos em vez da imagem de espaço reservado.
 
 ### Inserir um fragmento em um formulário adaptável {#insert-a-fragment-in-an-adaptive-form}
 
@@ -230,7 +231,7 @@ Ao criar um fragmento de formulário adaptável usando um modelo de formulário 
    <td><p>Gera um dicionário para localizar o fragmento selecionado. <!-- For more information, see <a href="lazy-loading-adaptive-forms.md" target="_blank">Localizing Adaptive Forms</a>.<br /> <br /> --> </p> </td>
   </tr>
   <tr>
-   <td><p>Publicar/Desfazer publicação</p> </td>
+   <td><p>Publish / Desfazer publicação</p> </td>
    <td><p>Publica/cancela a publicação do fragmento selecionado.<br /> <br /> </p> </td>
   </tr>
   <tr>
@@ -271,4 +272,4 @@ Reference Adaptive Form Fragments that you can use to create your form are avail
 
 >[!MORELIKETHIS]
 >
->* [Fragmentos de formulário adaptável nos Componentes principais](/help/forms/adaptive-form-fragments-core-components.md)
+>* [Fragmentos de formulário adaptável nos componentes principais](/help/forms/adaptive-form-fragments-core-components.md)
