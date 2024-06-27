@@ -7,15 +7,13 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 52b87073cad84705b5dc0c6530aff44d1e686609
 workflow-type: tm+mt
-source-wordcount: '4351'
+source-wordcount: '4333'
 ht-degree: 0%
 
 ---
 
-
-<span class="preview"> Este artigo contém `Override form submission success and error handlers` como um recurso de pré-lançamento. O recurso de pré-lançamento pode ser acessado somente por meio de [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features).
 
 # Funções personalizadas no Adaptive Forms (Componentes principais)
 

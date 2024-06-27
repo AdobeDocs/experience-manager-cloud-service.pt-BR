@@ -4,10 +4,10 @@ description: Aproveite o Centro de ações para agir de forma conveniente em inc
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 7630481aab89b31057509f23aab334e17c537257
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 64%
+source-wordcount: '988'
+ht-degree: 55%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 64%
 
 O AEM as Cloud Service envia notificações por email do Centro de ações quando ocorrem incidentes críticos que exigem ação imediata, bem como recomendações de otimização proativas. Os exemplos incluem uma fila bloqueada ou um conjunto de credenciais que está expirando. O conjunto completo de tipos de notificação do Centro de ações pode ser visto na [tabela abaixo](#supported-notification-types), que será ampliada ao longo do tempo.
 
-Quando uma notificação por email do Centro de Ações for recebida, é possível clicar nela para abrir o Centro de Ações do AEM as a Cloud Service com um pop-up que exibe um contexto adicional explicando a ação que um cliente deve tomar.
+Quando uma notificação por email do Centro de ações for recebida, é possível clicar nela para abrir o Centro de ações da AEM as a Cloud Service, com um pop-up exibindo um contexto adicional explicando a ação que um cliente deve tomar.
 
 Além de exibir informações sobre a notificação em que você clicou, o Centro de ações serve como um hub onde você pode visualizar e gerenciar as notificações atuais e anteriores. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
@@ -76,6 +76,12 @@ A tabela a seguir lista os tipos de notificação atualmente aceitos no Centro d
 | Fila de replicação bloqueada | Incidente | Desbloqueie a fila seguindo as instruções da [Documentação de replicação](/help/operations/replication.md#troubleshooting) |
 | Consulta GraphQL persistente inválida | Incidente | Corrija a consulta inválida do GraphQL fazendo referência a [Documentação de solução de problemas de consultas persistentes do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Pico de tráfego na origem | Incidente | Protect sua origem configurando regras de filtro de tráfego de limite de taxa que acionam limites inferiores ao alerta de pico de tráfego padrão na origem.  Consulte a [Bloqueio de ataques de DoS e DDoS usando regras de tráfego](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) seção da documentação Regras de filtro de tráfego, que faz referência a um tutorial. |
+| As páginas contêm um grande número de nós | Proativa | Reduza o número total de nós em uma página. Consulte [Documentação de complexidade da página](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
+| Grande número de instâncias de fluxo de trabalho em execução | Proativa | Encerre workflows em execução que não são mais necessários. Saiba como [configurar um trabalho de limpeza](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Certificado S2S a expirar | Proativa | Saiba como atualizar uma credencial na documentação [Geração de tokens de acesso para APIs do lado do servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Contagem Alta de Conexões | Proativa | Saiba mais sobre o pool de conexões no [Documentação de Pooling de Conexão junto com a Rede Avançada](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Mapeamento de usuário de serviço obsoleto | Proativa | Saiba como usar o formato de Mapeamento de usuário do Sling Service mais recente, conforme indicado em [Práticas recomendadas para o mapeamento de usuário do serviço Sling e definição do usuário do serviço](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
-| Contagem Alta de Conexões | Proativa | Saiba mais sobre o pool de conexões no [Documentação avançada de rede](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
+| Contagem Alta de Conexões | Proativa | Saiba mais sobre o pool de conexões no [Documentação avançada de rede](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |  |
+| Usuários adicionados diretamente ao grupo personalizado | Proativa | Os usuários precisam ser adicionados aos Grupos IMS relevantes e esses Grupos IMS precisam ser adicionados como membros de grupos AEM. Alinhar com [Práticas recomendadas do IMS](/help/security/ims-support.md) | |
+| Conteúdo JCR ausente | Proativa | Adicione o nó ausente Conteúdo JCR. Consulte [Documentação do Validador de conteúdo do Assets](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| Fluxos de trabalho concluídos não removidos | Proativa | Minimize o número de instâncias de fluxo de trabalho e melhore o desempenho removendo as instâncias de fluxo de trabalho que têm mais de 90 dias. Saiba como [configurar tarefas de manutenção](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance) | |
+| Tipo de recurso Sling ausente na página | Proativa | Adicione o nó ausente do tipo de recurso Sling. Consulte [Documentação do Validador de conteúdo do Assets](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
