@@ -4,7 +4,7 @@ description: Use o Seletor de ativos para pesquisar, localizar e recuperar metad
 contentOwner: KK
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 60c94071332003312ed9e963bc50e35d3c29baf0
+source-git-commit: 3f2fbdc1fd4087ea4c90b9bbe11aa37a11237ae5
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 36%
@@ -404,8 +404,8 @@ Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos ao Dy
 
 * [Métodos de comunicação](#prereqs)
 * Para acessar o Dynamic Media com recursos OpenAPI, você deve ter licenças para:
-   * Repositório do Assets (por exemplo, Experience Manager Assets as a Cloud Service)
-   * AEM Dynamic Media
+   * Repositório do Assets (por exemplo, Experience Manager Assets as a Cloud Service).
+   * AEM Dynamic Media.
 * Somente [ativos aprovados](#approved-assets.md) estão disponíveis para uso, garantindo a consistência da marca.
 
 ### Integração do Dynamic Media com recursos OpenAPI{#adobe-app-integration-polaris}
