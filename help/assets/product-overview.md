@@ -1,9 +1,9 @@
 ---
 title: Visão geral do Content Hub
 description: Saiba mais sobre o Content Hub, seus principais benefícios, como acessá-lo e como fornecer feedback sobre a opção disponível no Content Hub.
-source-git-commit: 15a266ccb6e4117c769d775a5f579fba943389bf
+source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ As propriedades mais comuns no Content Hub, como filtros de pesquisa, campos dis
 
 **Capacite os não criativos a editar e remixar conteúdo enquanto permanecem na marca**
 
-O Content Hub integra-se ao Adobe Express (se você tiver direitos de Adobe Express) para editar imagens usando o editor Express incorporado para criar variantes de imagens impressionantes e, ao mesmo tempo, permanecer na marca.
+O Content Hub permite criar novo conteúdo com o Adobe Express (se você tiver direitos ao Adobe Express). Você pode editar o conteúdo existente com ferramentas fáceis de usar, produzir variações na marca com modelos e elementos da marca e criar novo conteúdo com os recursos mais recentes da GenAI da Adobe Firefly.
 
 **Obter insights sobre como o conteúdo é usado em equipes**
 
@@ -37,11 +37,11 @@ O Content Hub integra-se ao Adobe Express (se você tiver direitos de Adobe Expr
 
 ## Pré-requisitos {#prerequisites-content-hub}
 
-Versão as a Cloud Service do Experience Manager de junho
+O Content Hub requer um ambiente de autor de produção de Experience Manager as a Cloud Service, versão 2024.6 ou mais recente (a versão mínima é 2024.6.16799).
 
 ## Como acessar o Content Hub? {#access-content-hub}
 
-Depois de adicionar um usuário ao [Perfil de produto do Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), o Content Hub pode ser acessado das seguintes maneiras:
+[Depois de configurar o Content Hub](#deploy-content-hub) e adicionar um usuário à [Perfil de produto do Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), o Content Hub pode ser acessado das seguintes maneiras:
 
 * Acesse o Content Hub usando o seguinte link:
 
@@ -61,6 +61,8 @@ Para recomendar aprimoramentos relacionados ao produto, clique em **[!UICONTROL 
 
 Especifique um assunto, uma descrição da recomendação e anexe arquivos, se necessário. Clique em **[!UICONTROL Enviar]** para enviar o feedback ao Adobe.
 
+![Feedback do Content Hub](assets/content-hub-feedback.png)
+
 ## Configurar o Content Hub para sua equipe {#setup-content-hub}
 
 Siga estas etapas para configurar o Content Hub para sua equipe:
@@ -69,13 +71,13 @@ Siga estas etapas para configurar o Content Hub para sua equipe:
 
 1. [Integrar o administrador do Content Hub](deploy-content-hub.md#onboard-content-hub-administrator).
 
-1. [Adicionar usuários-chave do Content Hub](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [Adicionar usuários-chave do Content Hub](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [Autores ou administradores do DAM para aprovar ativos usando ativos do Experience Manager](approve-assets.md).
 
 1. [Os administradores podem configurar a interface do Content Hub para outros usuários](configure-content-hub-ui-options.md).
 
-1. [Conceder acesso ao Content Hub a mais usuários da equipe](deploy-content-hub.md##onboard-content-hub-consumer-users).
+1. [Conceder acesso ao Content Hub a mais usuários da equipe](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
 1. [Acessar o portal do Content Hub](#access-content-hub).
 
