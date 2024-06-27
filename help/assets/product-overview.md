@@ -1,9 +1,9 @@
 ---
 title: Visão geral do Content Hub
-description: Saiba mais sobre o Content Hub, seus principais benefícios, como acessá-lo e como fornecer feedback sobre a opção disponível no Content Hub.
-source-git-commit: ad6d213b6ecf902ec80c323a686231f21ee13811
+description: Saiba mais sobre o Content Hub, seus principais benefícios, como acessá-lo e como fornecer feedback sobre as opções disponíveis no Content Hub.
+source-git-commit: b29641286919b5becc3982400ea160836531fdc5
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
