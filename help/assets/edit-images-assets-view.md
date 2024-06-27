@@ -4,18 +4,16 @@ description: Editar imagens usando opções viabilizadas pelo [!DNL Adobe Expres
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 9a21c9218e45bb6ce91263c9798e3b1c99f369b4
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 72%
+source-wordcount: '1089'
+ht-degree: 33%
 
 ---
 
-# Editar imagens no [!DNL Assets view] {#edit-images}
+# Editar imagens no [!DNL Assets view] {#edit-images-in-assets-view}
 
-O [!DNL Assets view] fornece opções de edição intuitivas viabilizadas pelo [!DNL Adobe Express]. As ações de edição disponíveis usando [!DNL Adobe Express] são Redimensionar imagem, Remover plano de fundo, Cortar imagem e Converter JPEG em PNG ou vice-versa.
-
-Após editar uma imagem, você pode salvar a nova imagem como uma nova versão. O controle de versão ajuda você a reverter para o ativo original posteriormente, se necessário. Além disso, o controle de versão está disponível apenas para os tipos de arquivo PNG, o que significa que quando você tenta remover o plano de fundo de um tipo de arquivo JPG, o JPG é convertido automaticamente em PNG. Para editar uma imagem, [abra sua visualização](navigate-assets-view.md) e clique em **[!UICONTROL Editar imagem]**.
+A Visualização de ativos permite a edição básica de imagens, incluindo redimensionamento, remoção de plano de fundo, recorte e conversão entre formatos JPEG e PNG. Além disso, permite a edição avançada por meio da integração com o Adobe Express. Após editar uma imagem, você pode salvar a nova imagem como uma nova versão. O controle de versão ajuda você a reverter para o ativo original posteriormente, se necessário. Para editar uma imagem, [abra sua visualização](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) e clique em **Editar imagem**.
 
 >[!NOTE]
 >
@@ -23,101 +21,119 @@ Após editar uma imagem, você pode salvar a nova imagem como uma nova versão. 
 
 <!--The editing actions that are available are Spot healing, Crop and straighten, Resize image, and Adjust image.-->
 
-## Edição de imagens usando o Adobe Express {#edit-using-express}
+## Editar imagem {#edit-image}
 
+Acessar a Exibição de ativo, usando o link - [Exibição do ativo](https://experience.adobe.com/#/assets) e selecionando o repositório correto. Para receber acesso, entre em contato com o administrador da organização.
+Para obter informações de referência adicionais, consulte - [Introdução ao uso do Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Entender a interface de exibição do Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), e [Casos de uso do Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+<!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
->title="Integração do Adobe Express"
->abstract="Ferramentas de edição de imagens fáceis e intuitivas, viabilizadas pelo Adobe Express, disponíveis diretamente no AEM Assets para aumentar a reutilização de conteúdo e acelerar sua velocidade."
+>title="Adobe Express Integration"
+>abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
 
-### Redimensionar imagem {#resize-image-using-express}
+### Editar imagem na visualização Assets usando o Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Redimensionar uma imagem para um tamanho específico é um caso de uso comum. O [!DNL Assets view] permite redimensionar rapidamente a imagem para ajustá-la aos tamanhos de foto comuns, fornecendo novas resoluções pré-calculadas para tamanhos de foto específicos. Para redimensionar a imagem usando o [!DNL Assets view], siga as etapas abaixo:
+Depois de acessar a Exibição do Assets, clique em **Assets**, selecione uma imagem e clique em **Editar** do painel superior. A nova tela exibe as opções de edição disponíveis, incluindo redimensionamento, remoção do plano de fundo, recorte e conversão entre formatos JPEG e PNG.
 
-1. Selecione uma imagem da sua [!DNL Experience Manager] Repositório de ativos e clique em **Editar**.
-2. Clique em **[!UICONTROL Redimensionar imagem]** nas ações rápidas disponíveis no painel esquerdo.
-3. Selecione a plataforma de rede social apropriada na lista suspensa **[!UICONTROL Redimensionar para]** e escolha o tamanho da imagem nas opções exibidas.
-4. Dimensione a imagem, se necessário, usando o campo **[!UICONTROL Dimensionamento de imagem]**.
-5. Clique em **[!UICONTROL Aplicar]** para aplicar as alterações.
+#### Redimensionar imagem {#resize-image-using-express}
+
+Redimensionar uma imagem para um tamanho específico é um caso de uso comum. O Assets View permite redimensionar rapidamente as imagens para ajustá-las aos tamanhos de foto comuns, fornecendo novas resoluções pré-calculadas para tamanhos de foto específicos. Para redimensionar a imagem usando a Exibição do Assets, siga as etapas abaixo:
+
+1. Clique em **Redimensionar imagem** no painel esquerdo.
+1. Selecione a plataforma de rede social apropriada na lista suspensa Redimensionar e selecione o tamanho da imagem nas opções exibidas.
+1. Dimensione a imagem, se necessário, usando o campo **Dimensionamento de imagem**.
+1. Clique em **[!UICONTROL Aplicar]** para aplicar as alterações.
    ![Edição de imagens com o Adobe Express](assets/adobe-express-resize-image.png)
 
    A imagem editada estará disponível para download. É possível salvar o ativo editado como uma nova versão do mesmo ativo ou como um novo ativo.
    ![Salvamento de imagens com o Adobe Express](assets/adobe-express-resize-save.png)
 
-### Remover fundo {#remove-background-using-express}
+#### Remover fundo {#remove-background-using-express}
 
-Você pode remover o fundo de uma imagem em algumas etapas simples, como mencionado abaixo:
+Você pode remover o plano de fundo de uma imagem seguindo as etapas mencionadas abaixo:
 
-1. Selecione uma imagem da sua [!DNL Experience Manager] Repositório de ativos e clique em **Editar**.
-2. Clique em **[!UICONTROL Remover fundo]** nas ações rápidas disponíveis no painel esquerdo. O Experience Manager Assets exibirá a imagem sem o fundo.
-3. Clique em **[!UICONTROL Aplicar]** para aplicar as alterações.
+1. Clique em **Remover plano de fundo** no painel esquerdo. O Experience Manager Assets exibirá a imagem sem o fundo.
+1. Clique em **[!UICONTROL Aplicar]** para aplicar as alterações.
    ![Salvamento de imagens com o Adobe Express](assets/adobe-express-remove-background.png)
 
-### Cortar imagem {#crop-image-using-express}
+   A imagem editada estará disponível para download. É possível salvar o ativo editado como uma nova versão do mesmo ativo ou como um novo ativo.
 
-É fácil transformar uma imagem em um tamanho perfeito usando as ações rápidas do [!DNL Adobe Express] incorporadas.
+#### Cortar imagem {#crop-image-using-express}
 
-1. Selecione uma imagem da sua [!DNL Experience Manager] Repositório de ativos e clique em **Editar**.
-2. Clique em **[!UICONTROL Cortar imagem]** nas ações rápidas disponíveis no painel esquerdo.
-3. Arraste as alças nos cantos da imagem para criar o corte desejado.
-4. Clique em **[!UICONTROL Aplicar]**.
+Transformar uma imagem em um tamanho perfeito é simples usando incorporado [!DNL Adobe Express] ações rápidas.
+
+1. Clique em **[!UICONTROL Cortar imagem]** no painel esquerdo.
+2. Arraste as alças nos cantos da imagem para criar o corte desejado.
+3. Clique em **[!UICONTROL Aplicar]**.
    ![Salvar imagem com o Adobe Express](assets/adobe-express-crop-image.png)
 A imagem cortada estará disponível para download. É possível salvar o ativo editado como uma nova versão do mesmo ativo ou como um novo ativo.
 
-### Converter JPEG em PNG {#convert-jpeg-to-png-using-express}
+#### Converter entre tipos de arquivo de imagem {#convert-image-types-using-express}
 
-É possível converter rapidamente uma imagem JPEG em PNG usando o Adobe Express. Execute as seguintes etapas:
+É possível converter rapidamente entre formatos de imagem JPEG e PNG usando o Adobe Express. Execute as seguintes etapas:
 
-1. Selecione uma imagem da sua [!DNL Experience Manager] Repositório de ativos e clique em **Editar**.
-2. Clique em **[!UICONTROL Converter em PNG]** nas ações rápidas disponíveis no painel esquerdo.
+1. Clique em **JPEG para PNG** ou **PNG para JPEG** no painel esquerdo.
    <!--![Convert to PNG with Adobe Express](/help/using/assets/adobe-express-convert-image.png)-->
-3. Clique em **[!UICONTROL Aplicar]**.
-4. Navegue até **[!UICONTROL Salvar como na parte superior direita]** e clique em **[!UICONTROL Salvar como novo ativo]**.
+1. Clique em **[!UICONTROL Baixar]**.
 
-### Converter PNG em JPEG {#convert-png-to-jpeg-using-express}
-
-Você pode converter rapidamente uma imagem PNG em um formato JPEG usando Adobe Express. Execute as seguintes etapas:
-
-1. Selecione uma imagem da sua [!DNL Experience Manager] Repositório de ativos e clique em **Editar**.
-2. Clique em **[!UICONTROL Converter em JPEG]** nas ações rápidas disponíveis no painel esquerdo.
-3. Clique em **[!UICONTROL Aplicar]**.
-4. Navegue até **[!UICONTROL Salvar como na parte superior direita]** e clique em **[!UICONTROL Salvar como novo ativo]**.
-
-### Limitações {#limitations-adobe-express}
+#### Limitações {#limitations-adobe-express}
 
 * Resolução da imagem compatível: mínimo de 50 pixels e máximo de 6.000 pixels por dimensão.
 
 * Tamanho máximo do arquivo aceito: 17 MB.
 
-## Editar imagens usando o editor integrado do Adobe Express {#edit-using-embedded-editor}
+### Editar imagens no editor incorporado do Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
-As organizações com acesso ao Adobe Express podem usar as ferramentas integradas de edição e criação de imagens do Adobe Express e do Adobe Firefly disponíveis diretamente na visualização de Ativos para melhorar a reutilização do conteúdo e acelerar a velocidade do conteúdo. Você também pode usar elementos predefinidos para que seu ativo tenha uma aparência incrível ou para executar ações de edição rápidas na imagem com apenas alguns cliques.
+Os usuários com direito ao Express podem usar o editor Express incorporado na Exibição do Assets para editar conteúdo facilmente e criar novo conteúdo com GenAI do Adobe Firefly. Isso melhora a reutilização do conteúdo e acelera a velocidade do conteúdo. Você também pode usar elementos predefinidos para que seu ativo tenha uma aparência incrível ou executar ações rápidas para editar sua imagem com apenas alguns cliques.
+![express na interface do usuário do essentials](/help/assets/assets/express-in-essentials-ui.jpg)
+Para editar imagens usando [!DNL Adobe Express] editor incorporado, siga as etapas abaixo:
 
-Para editar imagens usando o editor integrado do [!DNL Adobe Express], siga as etapas abaixo:
+1. Acesse a Exibição do AEM Assets usando o link - [Visualização de ativos no AEM](https://experience.adobe.com/#/assets) e selecione o repositório correto.
+1. Clique em **Assets**, insira uma pasta e selecione uma imagem.
+1. Clique em **Abrir no Adobe Express**. A imagem é aberta em uma tela expressa.
+1. Faça as edições necessárias na imagem.
+1. Se o projeto exigir que você adicione mais páginas, clique em **Adicionar**, selecione Assets, insira uma pasta, selecione uma imagem para trazer para a página da tela e faça as edições necessárias na imagem.
+1. Para salvar as imagens, clique em **Salvar**. A caixa de diálogo Salvar é exibida.
 
-1. Selecione uma imagem do repositório de ativos do [!DNL Experience Manager].
-1. Clique em **[!UICONTROL Abrir no Adobe Express]**.
+   >[!NOTE]
+   >
+   > **1. Para Página Única**
+   >
+   > **Salvar como versão:** Esse recurso suporta salvar apenas um único ativo. Selecione essa opção para exportar a imagem como uma nova versão (mantendo o formato original) e salvá-la na mesma pasta.
+   > **Salvar como novo ativo:** Selecione essa opção para exportar o ativo em um formato diferente do original e salvá-lo em qualquer pasta como um novo ativo.
+   >  
+   > **2. Para várias páginas**
+   >
+   > **Salvar como versão:** Esse recurso suporta salvar apenas um único ativo. Se quiser salvar uma única página de várias páginas, selecione essa opção para salvar o ativo no formato e no local originais.\
+   > **Salvar como novo ativo:** Com essa opção, você exporta vários ativos ou um único ativo para qualquer pasta e os salva como novos ativos com o formato de arquivo original ou diferente.
 
-   ![Editor integrado do Adobe Express](assets/embedded-editor.png)
+1. Na caixa de diálogo Salvar:
+   1. Insira um nome para o arquivo na variável **Salvar como** campo.
+   1. Selecione uma pasta de destino.
+   1. Opcional: forneça detalhes como nome do projeto ou da campanha, palavras-chave, canais, intervalo de tempo e região.
+1. Clique em **Salvar como versão** ou **Salvar como novo ativo** para salvar o(s) ativo(s).
 
-   Você pode aproveitar a funcionalidade do [!DNL Adobe Express] para executar todas as ações relacionadas à edição de imagens, como [redimensionar imagem](https://helpx.adobe.com/br/express/using/resize-image.html), [remover ou alterar a cor do fundo](https://helpx.adobe.com/br/express/using/remove-background.html), [cortar a imagem](https://helpx.adobe.com/br/express/using/crop-image.html) e muito mais.
+#### Limitações da edição de imagens no Express Editor {#limitations-of-editing-images-in-the-express-editor}
 
-1. Após concluir a edição de imagens, você pode baixar um ativo como um novo ativo ou salvá-lo como uma nova versão.
+* Tipo de arquivo suportado: JPEG ou PNG.
+* Tamanho máximo do arquivo aceito: 40 MB.
+* Intervalo de largura e altura compatível: entre 50 e 8000 pixels.
+* Recarregue a página para ver o novo ativo salvo mais recentemente na pasta de origem.
 
-## Criar novos ativos usando o Adobe Express {#create-new-embedded-editor}
+### Criar novos ativos usando o Adobe Express {#create-new-embedded-editor}
 
 O [!DNL Assets view] permite criar um novo modelo do zero usando o editor integrado do [!DNL Adobe Express]. Para criar um novo ativo usando o [!DNL Adobe Express], execute as etapas a seguir:
 
-1. Navegue até **[!UICONTROL Meu espaço de trabalho]** e clique em **[!UICONTROL Criar]** no banner Adobe Express que é exibido na parte superior. A tela em branco do [!DNL Adobe Express] é exibida dentro da interface do [!DNL Assets view].
+1. Navegue até **[!UICONTROL Meu Workspace]** e clique em **[!UICONTROL Criar]** no banner Adobe Express que é exibido na parte superior. A tela em branco do [!DNL Adobe Express] é exibida dentro da interface do [!DNL Assets view].
 1. Crie o conteúdo usando [modelos](https://helpx.adobe.com/br/express/using/work-with-templates.html). Caso contrário, navegue até **[!UICONTROL Seus itens]** para modificar o conteúdo existente.
-1. Após concluir a edição, clique em **[!UICONTROL Salvar como novo ativo]**.
-1. Especifique o caminho de destino do ativo criado e clique em **[!UICONTROL Salvar]**.
+1. Após concluir a edição, clique em **[!UICONTROL Salvar]**.
+1. Especifique o caminho de destino para o ativo criado e clique em **[!UICONTROL Salvar como novo ativo]**.
 
->[!NOTE]
->
->* É possível modificar apenas as imagens com tipos de formato `JPEG` e `PNG`.
->* O tamanho do ativo deve ser inferior a 17 MB.
->* É possível salvar uma imagem no `PDF`, `JPEG`ou `PNG` formatos; considerando que, quando há várias páginas, você pode salvá-las como `PDF`.
+#### Limitações {#limitations}
+
+* É possível modificar apenas as imagens com tipos de formato `JPEG` e `PNG`.
+* O tamanho do ativo deve ser inferior a 40 MB.
+* É possível salvar uma imagem nos formatos `PDF`, `JPEG` ou `PNG`.
 
 <!--
 ## Edit images using [!DNL Adobe Photoshop Express] {#edit-using-photoshop-express}
@@ -179,7 +195,7 @@ TBD: Insert a video of the available social media options.
 
 ### Próximas etapas {#next-steps}
 
-* Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
+* Forneça feedback sobre o produto usando o [!UICONTROL Feedback] opção disponível na interface de usuário de visualização do Assets.
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
