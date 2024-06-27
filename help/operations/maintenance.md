@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de manutenção no AEM as a Cloud Servi
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
+source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
 workflow-type: tm+mt
 source-wordcount: '2106'
 ht-degree: 30%
@@ -46,14 +46,14 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
   <tr>
     <td>Remoção da versão</td>
     <td>Cliente</td>
-    <td>A limpeza de versão está desativada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a> seção.<br/><br/>A limpeza logo será habilitada por padrão, com esses valores substituíveis.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>A limpeza de versão está desativada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a> seção.<br/><br/>A limpeza logo será habilitada por padrão, com esses valores substituíveis.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Limpeza do log de auditoria</td>
     <td>Cliente</td>
-    <td>A limpeza de log de auditoria está desativada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a> seção.<br/><br/>A limpeza logo será habilitada por padrão, com esses valores substituíveis.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>A limpeza de log de auditoria está desativada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a> seção.<br/><br/>A limpeza logo será habilitada por padrão, com esses valores substituíveis.<br>
    </td>
    </td>
   </tr>
@@ -197,7 +197,7 @@ A limpeza de versões e do log de auditoria reduz o tamanho do repositório e, e
 
 >[!NOTE]
 >
->A Adobe recomenda que os clientes não configurem a Limpeza de versão.
+>Os clientes do AEM Guides não devem configurar a Limpeza de versão.
 
 ### Padrões {#defaults}
 
@@ -283,7 +283,7 @@ Consulte [configuração de pipelines de produção](/help/implementing/cloud-ma
 
 >[!NOTE]
 >
->A Adobe recomenda que os clientes não configurem a Limpeza de versão.
+>Os clientes do AEM Guides não devem configurar a Limpeza de versão.
 
 #### Padrões de Expurgação de Versão {#version-purge-defaults}
 
