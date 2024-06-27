@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+source-git-commit: c7c881bb1c235007ba14684959494f08ed27aa67
 workflow-type: tm+mt
-source-wordcount: '5073'
-ht-degree: 82%
+source-wordcount: '5128'
+ht-degree: 81%
 
 ---
 
@@ -589,6 +589,19 @@ ht-degree: 82%
       + [Gerenciamento de relatórios](/help/assets/manage-reports-assets-view.md)
       + [Gerenciamento de tags](/help/assets/tagging-management-assets-view.md)
       + [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+
+   + Gerenciar o Content Hub {#content-hub}
+      + [Visão geral](/help/assets/product-overview.md)
+      + [Implantar o Content Hub](/help/assets/deploy-content-hub.md)
+      + [Configurar a interface do usuário do Content Hub](/help/assets/configure-content-hub-ui-options.md)
+      + [Fazer upload ou importar ativos aprovados pela marca para o Content Hub](/help/assets/upload-brand-approved-assets.md)
+      + [Pesquisar ativos no Content Hub](/help/assets/search-assets-content-hub.md)
+      + [Propriedades do ativo](/help/assets/asset-properties-content-hub.md)
+      + [Compartilhar ativos na Content Hub](/help/assets/share-assets-content-hub.md)
+      + [Baixar ativos usando o Content Hub](/help/assets/download-assets-content-hub.md)
+      + [Gerenciar coleções no Content Hub](/help/assets/collections-content-hub.md)
+      + [Editar imagens usando o Adobe Express no Content Hub](/help/assets/edit-images-content-hub.md)
+      + [Insights de ativos no Content Hub](/help/assets/insights-content-hub.md)
    + Práticas recomendadas{#best-practices}
       + [Pesquisar práticas recomendadas](/help/assets/search-best-practices.md)
       + [Gerenciamento de metadados e práticas recomendadas](/help/assets/metadata-best-practices.md)
