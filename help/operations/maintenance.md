@@ -4,10 +4,10 @@ description: Saiba mais sobre as tarefas de manutenção no AEM as a Cloud Servi
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 4113bb47dee5f3a2c7743f9a79c60654e58cb6bd
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 59%
+source-wordcount: '2106'
+ht-degree: 30%
 
 ---
 
@@ -28,7 +28,7 @@ Em versões anteriores do AEM, você podia configurar as tarefas de manutenção
 >
 >O Adobe reserva o direito de substituir as configurações da tarefa de manutenção de um cliente para atenuar problemas como degradação de desempenho.
 
-A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do lançamento do AEM as a Cloud Service.
+A tabela a seguir ilustra as tarefas de manutenção disponíveis.
 
 <table style="table-layout:auto">
  <tbody>
@@ -45,26 +45,16 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis no momento do 
   </tr>
   <tr>
     <td>Remoção da versão</td>
-    <td>Adobe</td>
-    <td>Para ambientes existentes (aqueles criados antes de uma data ainda a ser determinada em 2024), a limpeza está desativada e será ativada no futuro com um padrão de 7 anos; os clientes poderão configurá-la com valores personalizados mais baixos (como 30 dias).<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->Os novos ambientes (aqueles criados a partir de uma data ainda a ser determinada em 2024) terão a limpeza ativada por padrão com os valores abaixo, com os clientes podendo configurar com valores personalizados.
-     <ol>
-       <li>Versões com mais de 30 dias são removidas</li>
-       <li>As 5 versões mais recentes nos últimos 30 dias são mantidas</li>
-       <li>Independentemente das regras acima, a versão mais recente é preservada.</li>
-       <br>Recomenda-se que os clientes que têm requisitos normativos para renderizar as páginas do site exatamente como aparecem em uma data específica se integrem a serviços externos especializados.
-     </ol></td>
+    <td>Cliente</td>
+    <td>A limpeza de versão está desativada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a> seção.<br/><br/>A limpeza logo será habilitada por padrão, com esses valores substituíveis.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
   </td>
   </tr>
   <tr>
     <td>Limpeza do log de auditoria</td>
-    <td>Adobe</td>
-    <td>Para ambientes existentes (aqueles criados antes de uma data ainda a ser determinada em 2024), a limpeza está desativada e será ativada no futuro com um padrão de 7 anos; os clientes poderão configurá-la com valores personalizados mais baixos (como 30 dias).<br><br> <!-- See above for the two line breaks -->Novos ambientes (aqueles criados a partir de uma data ainda a ser determinada em 2024) terão a limpeza ativada por padrão no <code>/content</code> do repositório de acordo com o seguinte comportamento:
-     <ol>
-       <li>Para auditoria de replicação, os logs de auditoria com mais de 3 dias são removidos</li>
-       <li>Para auditoria do DAM (Assets), os logs de auditoria com mais de 30 dias são removidos</li>
-       <li>Para auditoria de página, os logs com mais de 3 dias são removidos.</li>
-       <br>Recomenda-se que os clientes que têm requisitos normativos para produzir logs de auditoria não editáveis se integrem a serviços externos especializados.
-     </ol></td>
+    <td>Cliente</td>
+    <td>A limpeza de log de auditoria está desativada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a> seção.<br/><br/>A limpeza logo será habilitada por padrão, com esses valores substituíveis.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->
+   </td>
    </td>
   </tr>
   <tr>
@@ -200,3 +190,197 @@ Exemplo de código 3 (mensalmente)
    windowScheduleWeekdays="[5,5]"
    windowStartTime="14:30"/>
 ```
+
+## Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria {#purge-tasks}
+
+A limpeza de versões e do log de auditoria reduz o tamanho do repositório e, em alguns cenários, pode melhorar o desempenho.
+
+>[!NOTE]
+>
+>A Adobe recomenda que os clientes não configurem a Limpeza de versão.
+
+### Padrões {#defaults}
+
+Atualmente, a limpeza não está habilitada por padrão, mas isso será alterado no futuro. Os ambientes criados antes da ativação da limpeza padrão terão um limite mais conservador para que a limpeza não ocorra inesperadamente. Consulte as seções Limpeza de versão e Limpeza de log de auditoria abaixo para obter mais detalhes sobre a política de limpeza padrão.
+<!-- Version purging and audit log purging are on by default, with different default values for environments with ids higher than **TBD** versus those with ids lower than that value. -->
+
+<!-- ### Overriding the default values with a new configuration {#override} -->
+
+Os valores de limpeza padrão podem ser substituídos declarando um arquivo de configuração e implantando-o conforme descrito abaixo.
+
+<!-- The reason for this behavior is to clarify the ambiguity over whether the default purge values would take effect once you remove the declaration. -->
+
+### Aplicar uma configuração {#configure-purge}
+
+Declare um arquivo de configuração e implante-o conforme descrito nas etapas a seguir.
+
+>[!NOTE]
+>Depois de implantar o nó de limpeza de versão no arquivo de configuração, você deve mantê-lo declarado e não removê-lo. O pipeline de configuração falhará se você tentar fazer isso.
+> 
+>Da mesma forma, depois de implantar o nó de expurgação do log de auditoria no arquivo de configuração, você deve mantê-lo declarado e não removê-lo.
+
+**1** : crie a seguinte estrutura de pasta e arquivo na pasta de nível superior do seu projeto no Git:
+
+```
+config/
+     mt.yaml
+```
+
+**2** - Declarar propriedades no arquivo de configuração, que incluem:
+
+* uma propriedade &quot;kind&quot; com o valor &quot;MaintenanceTasks&quot;.
+* uma propriedade &quot;version&quot; (no momento, estamos na versão 1).
+* um objeto &quot;metadata&quot; opcional com a propriedade `envTypes` com uma lista separada por vírgulas do tipo de ambiente (dev, estágio, prod) para o qual essa configuração é válida. Se nenhum objeto de metadados for declarado, a configuração será válida para todos os tipos de ambiente.
+* um objeto de dados com ambos `versionPurge` e `auditLogPurge` objetos.
+
+Consulte as definições e a sintaxe do `versionPurge` e `auditLogPurge` objetos abaixo.
+
+Você deve estruturar a configuração de forma semelhante ao seguinte exemplo:
+
+```
+kind: "MaintenanceTasks"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  versionPurge:
+    maximumVersions: 15
+    maximumAgeDays: 20
+    paths: ["/content"]
+    minimumVersions: 1
+    retainLabelledVersions: false
+  auditLogPurge:
+    rules:
+      - replication:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["Activate", "Deactivate", "Delete", "Test", "Reverse", "Internal Poll"]
+      - pages:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["PageCreated", "PageModified", "PageMoved", "PageDeleted", "VersionCreated", "PageRestored", "PageValid", "PageInvalid"]
+      - dam:
+          maximumAgeDays: 15
+          contentPath: "/content"
+          types: ["ASSET_EXPIRING", "METADATA_UPDATED", "ASSET_EXPIRED", "ASSET_REMOVED", "RESTORED", "ASSET_MOVED", "ASSET_VIEWED", "PROJECT_VIEWED", "PUBLISHED_EXTERNAL", "COLLECTION_VIEWED", "VERSIONED", "ADDED_COMMENT", "RENDITION_UPDATED", "ACCEPTED", "DOWNLOADED", "SUBASSET_UPDATED", "SUBASSET_REMOVED", "ASSET_CREATED", "ASSET_SHARED", "RENDITION_REMOVED", "ASSET_PUBLISHED", "ORIGINAL_UPDATED", "RENDITION_DOWNLOADED", "REJECTED"]
+```
+
+Lembre-se de que para que a configuração seja válida:
+
+* todas as propriedades devem ser definidas. Não há padrões herdados.
+* os tipos (números inteiros, strings, booleanos etc.) nas tabelas de propriedades abaixo devem ser respeitados.
+
+>[!NOTE]
+>Você pode usar `yq` para validar localmente a formatação YAML do seu arquivo de configuração (por exemplo, `yq mt.yaml`).
+
+**3** - Configure os pipelines de configuração de não produção e produção.
+
+Os RDEs (Rapid Development Ambients, ambientes de desenvolvimento rápido) não oferecem suporte à limpeza. Para outros tipos de ambiente em programas de produção (que não sejam de sandbox), crie um pipeline de configuração de implantação direcionada no Cloud Manager.
+
+Consulte [configuração de pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configuração de pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obter mais detalhes.
+
+### Remoção da versão {#version-purge}
+
+>[!NOTE]
+>
+>A Adobe recomenda que os clientes não configurem a Limpeza de versão.
+
+#### Padrões de Expurgação de Versão {#version-purge-defaults}
+
+<!-- For version purging, environments with an id higher than **TBD** have the following default values: -->
+
+Atualmente, a limpeza não está habilitada por padrão, mas isso será alterado no futuro.
+
+Os ambientes criados após a ativação da limpeza padrão terão os seguintes valores padrão:
+
+* Versões com mais de 30 dias são removidas.
+* As cinco versões mais recentes nos últimos 30 dias são mantidas.
+* Independentemente das regras acima, a versão mais recente (além do arquivo atual) é preservada.
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+Os ambientes criados antes da limpeza padrão estarem habilitados terão os valores padrão listados abaixo, no entanto, é recomendável reduzir esses valores para otimizar o desempenho.
+
+* Versões com mais de 7 anos são removidas.
+* Todas as versões nos últimos sete anos são mantidas.
+* Após 7 anos, versões diferentes da versão mais recente (além do arquivo atual) são removidas.
+
+#### Propriedades de limpeza de versão {#version-purge-properties}
+
+As propriedades permitidas estão listadas abaixo.
+
+As colunas que indicam *padrão* Indicar os valores por defeito no futuro, quando os valores por defeito forem aplicados; *TBD* O reflete uma id de ambiente que ainda não foi determinada.
+
+| Propriedades | padrão futuro para envs>TBD | padrão futuro para envs&lt;=TBD | obrigatório | tipo | Valores |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| caminhos | [&quot;/content&quot;] | [&quot;/content&quot;] | Sim | matriz de strings | Especifica em quais caminhos as versões serão removidas quando novas versões forem criadas.  Os clientes devem declarar essa propriedade, mas o único valor permitido é &quot;/content&quot;. |
+| maximumAgeDays | 30 | 2557 (7 anos + 2 dias bissextos) | Sim | Número inteiro | Qualquer versão anterior ao valor configurado é removida. Se o valor for 0, a limpeza não será executada com base na idade da versão. |
+| maximumVersions | 5 | 0 (sem limite) | Sim | Número inteiro | Qualquer versão anterior à n-ésima versão mais recente é removida. Se o valor for 0, a limpeza não será executada com base no número de versões. |
+| minimumVersions | 1 | 1 | Sim | Número inteiro | O número mínimo de versões que são mantidas independentemente da idade. Observe que pelo menos 1 versão é sempre mantida; seu valor deve ser 1 ou superior. |
+| keepLabelledVersioned | falso | falso | Sim | booleano | Determina se as versões rotuladas explicitamente serão excluídas da limpeza. Para obter uma melhor otimização do repositório, é recomendável definir esse valor como false. |
+
+
+**Interações de propriedade**
+
+Os exemplos a seguir ilustram como as propriedades interagem quando combinadas.
+
+Exemplo:
+
+```
+maximumAgeDays = 30
+maximumVersions = 10
+minimumVersions = 2
+```
+
+Se houver 11 versões no dia 23, a versão mais antiga será removida da próxima vez que a tarefa de manutenção de limpeza for executada, já que a `maximumVersions` é definida como 10.
+
+Se houver 5 versões no dia 31, somente 3 serão removidas, pois o `minimumVersions` é definida como 2.
+
+Exemplo:
+
+```
+maximumAgeDays = 30
+maximumVersions = 0
+minimumVersions = 1
+```
+
+Nenhuma versão com mais de 30 dias será removida desde que `maximumVersions` é definida como 0.
+
+Uma versão com mais de 30 dias será mantida.
+
+### Limpeza do log de auditoria {#audit-purge}
+
+#### Padrões de Expurgação de Log de Auditoria {#audit-purge-defaults}
+
+<!-- For audit log purging, environments with an id higher than **TBD** have the following default values: -->
+
+Atualmente, a limpeza não está habilitada por padrão, mas isso será alterado no futuro.
+
+Os ambientes criados após a ativação da limpeza padrão terão os seguintes valores padrão:
+
+* Os logs de auditoria de replicação, DAM e página com mais de 7 dias são removidos.
+* Todos os eventos possíveis são registrados.
+
+<!-- Environments with an id equal or lower than **TBD** will have the following default values: -->
+
+Os ambientes criados antes da limpeza padrão estarem habilitados terão os valores padrão listados abaixo, no entanto, é recomendável reduzir esses valores para otimizar o desempenho.
+
+* Replicação, DAM e logs de auditoria de página com mais de 7 anos são removidos.
+* Todos os eventos possíveis são registrados.
+
+>[!NOTE]
+>Recomenda-se que os clientes que têm requisitos normativos para produzir logs de auditoria não editáveis se integrem a serviços externos especializados.
+
+#### Propriedades de limpeza de log de auditoria {#audit-purge-properties}
+
+As propriedades permitidas estão listadas abaixo.
+
+As colunas que indicam *padrão* Indicar os valores por defeito no futuro, quando os valores por defeito forem aplicados; *TBD* O reflete uma id de ambiente que ainda não foi determinada.
+
+
+| Propriedades | padrão futuro para envs>TBD | padrão futuro para envs&lt;=TBD | obrigatório | tipo | Valores |
+|-----------|--------------------------|-------------|-----------|---------------------|-------------|
+| regras | - | - | Sim | Objeto | Um ou mais dos seguintes nós: replicação, páginas, dam. Cada um desses nós define regras, com as propriedades abaixo. Todas as propriedades devem ser declaradas. |
+| maximumAgeDays | 7 dias | 2557 (7 anos + 2 dias bissextos) | Sim | inteiro | Para replicação, páginas ou DAM: o número de dias que os logs de auditoria são mantidos. Os logs de auditoria anteriores ao valor configurado são removidos. |
+| contentPath | &quot;/content&quot; | &quot;/content&quot; | Sim | String | O caminho sob o qual os logs de auditoria serão removidos para o tipo relacionado. Deve ser definido como &quot;/content&quot;. |
+| tipos | todos os valores | todos os valores | Sim | Matriz de enumeração | Para **replicação**, os valores enumerados são: Ativate, Deactivate, Delete, Test, Reverse, Internal Poll. Para **páginas**, os valores enumerados são: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestore, PageRolled Out, PageValid, PageInvalid. Para **dam**, os valores enumerados são: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET T_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
