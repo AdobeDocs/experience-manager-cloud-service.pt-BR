@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1e5a32625377cb564c859a6fdaf1ecef6ebebe9e
+source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1932'
 ht-degree: 9%
 
 ---
@@ -86,6 +86,14 @@ O Dynamic Media com recursos de OpenAPI estende o DAM aos aplicativos de Adobe e
 **Mais opções estão disponíveis no painel Assets Insights**
 
 A Contagem de ativos por tipo e tamanho de ativo agora está disponível no painel do Assets Insights. Essas opções fornecem dados em tempo real no ambiente de visualização do Assets. Eles detalham a contagem e a porcentagem de ativos por intervalo de tamanho e tipo de ativo.
+
+**Atualizações no editor de Adobe Express incorporado**
+
+* Experiência do usuário aprimorada para salvar como um novo ativo em vez de salvar como uma nova versão.
+
+* Exportação de documentos do Express de várias páginas (anteriormente, apenas uma página era suportada) nos formatos de PDF e imagem de várias páginas. A seleção de formatos de imagem salva cada página como um ativo distinto no DAM para distribuição downstream.
+
+* Suporte para adicionar metadados na caixa de diálogo Salvar ao salvar um ativo.
 
 <!--
 

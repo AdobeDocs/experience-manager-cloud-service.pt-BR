@@ -2,9 +2,9 @@
 title: Fazer upload dos ativos aprovados pela sua marca para [!DNL Content Hub]
 description: Saiba como fazer upload dos ativos aprovados pela sua marca para o Content Hub
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Fazer upload de ativos aprovados pela marca para o Content Hub {#upload-brand-approved-assets-content-hub}
 
-Os administradores podem adicionar ativos ao Content Hub a partir do sistema de arquivos local ou importar ativos de fontes de dados do OneDrive ou do Dropbox. Todos os ativos são exibidos no nível superior do Content Hub, independentemente da estrutura de pastas disponível no sistema de arquivos local ou nas fontes de dados do OneDrive e do Dropbox para aprimorar os recursos de pesquisa.
+[Usuários do Content Hub com direito de adicionar ativos](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) O pode adicionar ativos à Content Hub do sistema de arquivos local ou importar ativos de fontes de dados do OneDrive ou do Dropbox. Todos os ativos são exibidos no nível superior do Content Hub, independentemente da estrutura de pastas disponível no sistema de arquivos local ou nas fontes de dados do OneDrive e do Dropbox para aprimorar os recursos de pesquisa.
 
 Para aprimorar ainda mais a pesquisa de ativos, o Content Hub permite:
 
