@@ -2,10 +2,10 @@
 title: Baixar ativos da Content Hub
 description: Saiba como baixar ativos no portal Content Hub
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 3%
+source-wordcount: '125'
+ht-degree: 4%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 3%
 O Content Hub permite baixar e compartilhar os ativos. Esses ativos podem incluir imagens, vídeos ou qualquer outro conteúdo digital. O Content Hub melhora a acessibilidade e a adaptabilidade para uma distribuição eficiente de ativos.
 
 É possível baixar um único ativo ou vários ativos usando a Content Hub. As versões originais do ativo são baixadas.
+
+## Pré-requisitos {#prerequisites}
+
+[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) O pode executar as ações mencionadas neste artigo.
 
 ## Baixar ativo {#download-single-asset}
 

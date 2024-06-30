@@ -2,9 +2,9 @@
 title: Propriedades do ativo no [!DNL the Content Hub]
 description: Saiba como visualizar e gerenciar propriedades de ativos no [!DNL Content Hub]
 role: User
-source-git-commit: e590c34c177e6b45b6a52370caa88da54b61ebc0
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '599'
 ht-degree: 8%
 
 ---
@@ -21,6 +21,10 @@ A visualização de propriedades de ativos ajuda a categorizar os ativos e é ú
 * Mais acessível — os sistemas e usuários podem encontrá-lo facilmente.
 * Mais fácil de gerenciar — é possível encontrar ativos com o mesmo conjunto de propriedades facilmente e aplicar alterações a eles.
 * Completo — o ativo carrega mais informações e contexto.
+
+## Pré-requisitos {#prerequisites}
+
+[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) O pode executar as ações mencionadas neste artigo.
 
 ## Exibir propriedades de um ativo {#properties-ui}
 

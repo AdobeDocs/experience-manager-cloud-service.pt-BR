@@ -2,9 +2,9 @@
 title: Exibir insights de ativos no Content Hub
 description: Saiba como visualizar insights de ativos no [!DNL Content Hub]
 role: User
-source-git-commit: 788ed1189b21392bd399f7bdee888a3b5e1da117
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 ![Insights do Assets](assets/asset-insights-banner.jpg)
 
 [!DNL Content Hub] O fornece insights valiosos sobre ativos, abordando um desafio comum que as partes interessadas de marketing muitas vezes encontram — estatísticas de uso de ativos usadas em campanhas de marketing, canais e diferentes regiões. Ao obter uma compreensão clara do desempenho e da popularidade dos ativos, ele fornece insights acionáveis essenciais para melhorar a experiência do usuário.
+
+## Pré-requisitos {#prerequisites}
+
+[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) O pode executar as ações mencionadas neste artigo.
 
 ## Exibir estatísticas de ativos carregados{#view-statistics-for-uploaded-assets}
 

@@ -2,9 +2,9 @@
 title: Compartilhar o Assets no [!DNL the Content Hub]
 description: Compartilhar o Assets no [!DNL the Content Hub]
 role: User
-source-git-commit: e20556531a82e42354b642955488bf14b83dab5e
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '454'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 1%
 ![Compartilhar imagem do banner de ativos](assets/share-assets-banner.png)
 
 O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar os recursos para o [!DNL the Content Hub] usuários. A funcionalidade permite que usuários autorizados acessem e baixem os ativos compartilhados com eles. Ao baixar ativos de um link compartilhado, [!DNL the Content Hub] O usa um serviço assíncrono que oferece download mais rápido e ininterrupto.
+
+## Pré-requisitos {#prerequisites}
+
+[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) O pode executar as ações mencionadas neste artigo.
 
 ## Compartilhar um único ativo {#share-a-single-asset}
 

@@ -2,7 +2,7 @@
 title: Fazer upload dos ativos aprovados pela sua marca para [!DNL Content Hub]
 description: Saiba como fazer upload dos ativos aprovados pela sua marca para o Content Hub
 role: User
-source-git-commit: 92c4cd64503653c5d9248c2c3f6952100b03ff86
+source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Certifique-se de fazer upload apenas do [ativos aprovados pela marca para a Cont
 
 ## Pré-requisitos {#prerequisites-add-assets}
 
-[Usuários consumidores do Content Hub Assets com permissões de envio](/help/assets/deploy-content-hub.md#onboard-content-hub-consumer-users-submission-rights) O pode fazer upload de ativos para o Content Hub.
+[Usuários do Content Hub com direito de adicionar ativos](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) O pode fazer upload de ativos para o Content Hub.
 
 ## Adicionar ativos ao Content Hub a partir do sistema de arquivos local {#add-assets-local-file-system}
 
