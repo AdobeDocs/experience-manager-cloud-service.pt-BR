@@ -3,9 +3,9 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais do [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 9d0ef963dfe2d81da09a7195540de87245e71a67
+source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1958'
 ht-degree: 9%
 
 ---
@@ -241,6 +241,14 @@ Você pode encontrar uma lista completa de versões mensais do Cloud Manager [aq
 ## Ferramentas de migração {#migration-tools}
 
 Você pode encontrar uma lista completa de versões das ferramentas de migração [aqui](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+
+## Editor universal {#universal-editor}
+
+Você pode encontrar uma lista completa de versões do Universal Editor [aqui](/help/release-notes/universal-editor/current.md).
+
+## Gerar variações {#generate-variations}
+
+Você pode encontrar uma lista completa de versões de Gerar Variações [aqui](/help/generative-ai/release-notes-generate-variations.md).
 
 ## Notas de versão da Experience Cloud {#experience-cloud}
 
