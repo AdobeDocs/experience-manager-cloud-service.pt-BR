@@ -2,9 +2,9 @@
 title: Implantar [!DNL Content Hub]
 description: Saiba como implantar e ativar o Content Hub e fornecer acesso a usuários com diferentes tipos de privilégios (fazer upload de ativos, usuários de Adobe Express) e como fornecer privilégios de administrador aos usuários.
 role: Admin
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 0d340508823be6a2c6c2beb28c17ddfb2bf6b790
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,11 @@ Para acessar o portal Content Hub, primeiro os administradores precisam ativar o
 1. Clique em **[!UICONTROL Atualizar]**.
 
 O Content Hub agora está ativado para o Experience Manager Assets as a Cloud Service.
+
+>[!NOTE]
+>
+>Você pode acessar e usar o Content Hub com até 250 usuários do Content Hub. Entre em contato com o representante da Adobe em caso de dúvidas adicionais.
+
 
 Se você nunca usou o Experience Manager Assets, clique em **[!UICONTROL Adicionar programa]** e forneça os detalhes do programa (Nome do programa, configurado para produção) e clique em **[!UICONTROL Continuar]**. É possível selecionar **[!UICONTROL Assets]** e **[!UICONTROL Content Hub]** no **[!UICONTROL Soluções e complementos]** guia.
 
