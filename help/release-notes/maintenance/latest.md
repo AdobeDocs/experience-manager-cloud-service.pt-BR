@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
+source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 17%
+source-wordcount: '753'
+ht-degree: 16%
 
 ---
 
@@ -71,10 +71,10 @@ A Ativação de recursos 2024.6.0 fornecerá o conjunto completo de recursos par
 
 #### Forms
 
-1. Se um usuário baixar a versão do SDK do AEM Forms superior a `AEM Forms add-on v2024.05.04.00-240400`, o arquivo em lote falha ao iniciar o serviço Docker. Para resolver esse problema:
-   1. Baixe o [pasta](/help/forms/assets/sdk_hotfix.zip).
-   1. Extraia o conteúdo da pasta baixada e copie o `sdk.sh` e `sdk.bat` arquivos.
-   1. Substituir o existente `sdk.sh` e `sdk.bat` no SDK do AEM Forms com os novos arquivos.
+* Ao instalar o SDK do AEM e adicionar `AEM Forms add-on v2024.05.04.00-240400`, o serviço Docker não é iniciado. O serviço de docker é necessário para gerar o Documento de registro em um ambiente de desenvolvimento local. Para corrigir o problema:
+   1. Baixe o [hotfix](/help/forms/assets/sdk_hotfix.zip). Ao baixar o hotfix, uma variável `.zip` a pasta é baixada.
+   1. Extraia o hotfix baixado para uma pasta.
+   1. Substituir a mais antiga `sdk.sh` e `sdk.bat` arquivos com arquivos mais recentes na pasta extraídos na Etapa 2.
 
 ### Aviso de mudança {#change-notice-16799}
 
