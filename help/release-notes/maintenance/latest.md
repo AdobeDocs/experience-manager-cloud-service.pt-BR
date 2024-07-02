@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fd687498a8c72bf5d47b7b97aadf22d7d1e8dd2b
+source-git-commit: 90b4cf269fc8be36d90f398d1696fc40f89f5142
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 19%
+source-wordcount: '739'
+ht-degree: 17%
 
 ---
 
@@ -26,32 +26,41 @@ A Ativação de recursos 2024.6.0 fornecerá o conjunto completo de recursos par
 * ASSETS-31977: operações aprimoradas de movimentação, cópia e exclusão de ativos.
 * ASSETS-33618: recurso de transcrição automática e tradução para vídeos no Dynamic Media.
 * ASSETS-35185: ação de aprovação para ContentHub e DM e adição de propriedades às propriedades damAssetLucene.
-* ASSETS-35533: adicionar propriedades DRM e CAI ao índice damAssetLucene.
-* ASSETS-37280: manuseio sequencial de trabalhos para tradução quando o subtítulo de origem (vtt) ainda está sendo processado.
+* ASSETS-35533: Adicionar propriedades DRM e CAI ao índice damAssetLucene.
+* ASSETS-37280: manuseio de trabalho sequencial para tradução quando o subtítulo de origem (vtt) ainda está sendo processado.
 * ASSETS-37559: evento de exclusão de ativo aprimorado.
-* ASSETS-37723: Implementar o evento de ativo publicado.
+* ASSETS-37723: Implementar o evento publicado de ativo.
 * ASSETS-37724: Implementar o evento de ativo não publicado.
-* ASSETS-38614: aprimoramentos na interface do usuário do link de compartilhamento.
-* ASSETS-39601: aplique regex de validação automaticamente ao nome da Live Copy do ativo.
-* ASSETS-39454: atualize para visualizadores 2024.5.0 no Quickstart.
+* ASSETS-38614: Compartilhar aprimoramentos da interface do usuário do link.
+* ASSETS-39601: Aplicar regex de validação automaticamente ao nome da Live Copy do ativo.
+* ASSETS-39454: atualização para visualizadores 2024.5.0 no Quickstart.
 * CNTBF-184: Suporte a caminhos abaixo `/conf` em Fluxo de retorno de conteúdo.
 
 ### Problemas corrigidos {#fixed-issues-16799}
 
 * ASSETS-37335: Editar O Painel De Pesquisa No Filtro Desmarca Todas As Caixas.
-* ASSETS-38069: problema de visualização do PDF DAM para AEM na seleção de filtro da linha do tempo.
-* ASSETS-38215: botão de licença do Adobe Stock esmaecido na assinatura AEM as a Cloud Service para corporações.
-* ASSETS-38578: Hiperlinks incorretos no Relatório de compartilhamento de links do Assets.
+* ASSETS-38069: Problema de visualização do PDF AEM DAM na seleção de filtro da linha do tempo.
+* ASSETS-38215: o botão de licença do Adobe Stock está esmaecido na assinatura do AEM as a Cloud Service para corporações.
+* ASSETS-38578: Hiperlinks incorretos no relatório Compartilhamento de links do Assets.
 * ASSETS-38678: as configurações de exibição estão quebradas em Detalhes da coleção.
 * ASSETS-39071: a entrega otimizada para a Web pode gerar uma exceção se o mimetype da representação original for nulo.
 * ASSETS-39316: a classificação por nome não funciona em Coleções.
 * ASSETS-39377: a importação em massa do OneDrive pode falhar ao receber pressão de retorno da API remota.
-* ASSETS-39428: problemas de renderização na interface do usuário do Gerenciamento de direitos autorais.
+* ASSETS-39428: Problemas de renderização na interface do usuário do Gerenciamento de direitos autorais.
 * CQ-4357150: Guava no pacote cq-content-sync.
 * GRANITE-52573: solicitações que contêm uma barra dupla `//` são rejeitados com o código de status 400.
 * SCRNS-4194: Remova a dependência das APIs do Google Guava.
-* SCRNS-4360: Botão Gerenciar publicação e publicação rápida ausente para usuários não administradores no Provedor de conteúdo para canais.
+* SCRNS-4360: Botão Gerenciar publicação e Publish rápido ausente para usuários não administradores no Provedor de conteúdo para canais.
 * SCRNS-4323: Ocultar/desativar inicializações de screens.html.
+
+#### Forms
+
+* FORMS-14844: o Adaptive Forms permite o envio de formulários apesar da falha na verificação do reCAPTCHA.
+* FORMS-14984: O Forms com CAPTCHA ignora a validação se &quot;submitMetaData&quot; estiver ausente nos dados enviados.
+* FORMS-14477: As opções &quot;Is After&quot; e &quot;Is Before&quot; no editor de regras funcionam incorretamente na validação do Seletor de datas.
+* FORMS-14019: A funcionalidade &quot;Chamar serviço&quot; do editor de regras não está funcionando no Editor universal.
+* FORMS-14336: quando nenhum campo de formulário é selecionado, o editor deve ser aberto com foco no elemento de formulário inteiro.
+* FORMS-15061: O círculo do carregador persiste indefinidamente ao usar a opção de invocar serviço no editor de regras.
 
 ### Problemas conhecidos {#known-issues-16799}
 
@@ -75,7 +84,7 @@ A Ativação de recursos 2024.6.0 fornecerá o conjunto completo de recursos par
 
   As versões personalizadas das versões de índice anteriores serão mescladas automaticamente com a nova versão do índice do produto. Aplique mais atualizações personalizadas à versão mesclada.
 
-* A partir de setembro de 2024, o AEM as a Cloud Service desativará a serialização de Solucionadores de recursos por meio da estrutura do Exportador de modelos do Sling. Consulte [a documentação](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) para obter mais detalhes.
+* A partir de setembro de 2024, a AEM as a Cloud Service desativará a serialização de Resource Resolvers por meio da estrutura do Exportador de modelo do Sling. Consulte [a documentação](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) para obter mais detalhes.
 
 ### Recursos e APIs obsoletos {#deprecated-16799}
 
