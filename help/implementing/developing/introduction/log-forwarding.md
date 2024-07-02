@@ -1,12 +1,12 @@
 ---
-title: Encaminhamento de logs para AEM as a Cloud Service
-description: Saiba mais sobre como encaminhar logs para o Splunk e outros fornecedores de registro no AEM as a Cloud Service
+title: Encaminhamento de logs para o AEM as a Cloud Service
+description: Saiba mais sobre como encaminhar logs para o Splunk e outros fornecedores de registro em log na AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e007f2e3713d334787446305872020367169e6a2
+source-git-commit: 29d2a759f5b3fdbccfa6a219eebebe2b0443d02e
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1278'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Esse recurso ainda não foi lançado e alguns destinos de registro podem não estar disponíveis no momento do lançamento. Enquanto isso, você pode abrir um tíquete de suporte para encaminhar logs para **Splunk**, conforme descrito na seção [artigo de registro](/help/implementing/developing/introduction/logging.md).
 
-Os clientes que têm uma licença para um fornecedor de registro ou hospedam um produto de registro em log podem ter registros AEM (incluindo Apache/Dispatcher) e registros CDN encaminhados aos destinos de registro associados. O AEM as a Cloud Service é compatível com os seguintes destinos de registro:
+Os clientes que têm uma licença para um fornecedor de registro ou hospedam um produto de registro podem ter registros AEM (incluindo Apache/Dispatcher) e registros CDN encaminhados aos destinos de registro associados. O AEM as a Cloud Service oferece suporte aos seguintes destinos de registro:
 
 * Armazenamento Azure Blob
 * DataDog
@@ -27,7 +27,7 @@ Os clientes que têm uma licença para um fornecedor de registro ou hospedam um 
 
 O encaminhamento de logs é configurado de maneira automatizada declarando uma configuração no Git e implantando-a por meio do Pipeline de configuração do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção em programas de produção (não sandbox).
 
-Há uma opção para que os registros do AEM e do Apache/Dispatcher sejam roteados por meio de infraestruturas de rede avançadas do AEM, como IP de saída dedicado.
+Há uma opção para que os registros AEM e Apache/Dispatcher sejam roteados por meio da infraestrutura de rede avançada do AEM, como IP de saída dedicado.
 
 Observe que a largura de banda da rede associada aos registros enviados ao destino de registro é considerada parte do uso de E/S da rede da organização.
 
@@ -39,7 +39,7 @@ Este artigo está organizado da seguinte maneira:
 * Configuração - comum para todos os destinos de registro
 * Configurações de destino de registro - cada destino tem um formato um pouco diferente
 * Formatos de Entrada de Log - informações sobre os formatos de entrada de log
-* Rede avançada - envio de logs do AEM e do Apache/Dispatcher por meio de uma saída dedicada ou por meio de uma VPN
+* Rede avançada - envio de registros AEM e Apache/Dispatcher por meio de uma saída dedicada ou por meio de uma VPN
 
 
 ## Configurar {#setup}
@@ -71,7 +71,7 @@ Este artigo está organizado da seguinte maneira:
 
    Os tokens na configuração (como `${{SPLUNK_TOKEN}}`) representam segredos, que não devem ser armazenados no Git. Em vez disso, declare-os como Cloud Manager  [Variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md) do tipo **segredo**. Selecione **Todos** como o valor suspenso do campo Serviço aplicado, os logs podem ser encaminhados para os níveis de criação, publicação e visualização.
 
-   É possível definir valores diferentes entre os logs CDN e logs AEM (incluindo o Apache/Dispatcher), incluindo um **cdn** e/ou **aem** bloco após o **padrão** bloco, em que as propriedades podem substituir as definidas no **padrão** bloco; somente a propriedade enabled é necessária. Um possível caso de uso poderia ser o uso de um índice do Splunk diferente para logs CDN, como ilustra o exemplo abaixo.
+   É possível definir valores diferentes entre os logs CDN e os logs AEM (incluindo o Apache/Dispatcher), incluindo uma variável adicional **cdn** e/ou **aem** bloco após o **padrão** bloco, em que as propriedades podem substituir as definidas no **padrão** bloco; somente a propriedade enabled é necessária. Um possível caso de uso poderia ser o uso de um índice do Splunk diferente para logs CDN, como ilustra o exemplo abaixo.
 
    ```
       kind: "LogForwarding"
@@ -91,7 +91,7 @@ Este artigo está organizado da seguinte maneira:
             index: "AEMaaCS_CDN"   
    ```
 
-   Outro cenário é desativar o encaminhamento dos logs CDN ou AEM (incluindo o Apache/Dispatcher). Por exemplo, para encaminhar apenas os logs CDN, é possível configurar o seguinte:
+   Outro cenário é desabilitar o encaminhamento dos logs CDN ou dos logs AEM (incluindo o Apache/Dispatcher). Por exemplo, para encaminhar apenas os logs CDN, é possível configurar o seguinte:
 
    ```
       kind: "LogForwarding"
@@ -199,12 +199,16 @@ data:
       enabled: true       
       host: "http-intake.logs.datadoghq.eu"
       token: "${{DATADOG_API_KEY}}"
+      tags:
+         tag1: value1
+         tag2: value2
       
 ```
 
 Considerações:
 
 * Crie uma Chave de API sem nenhuma integração com um provedor de nuvem específico.
+* a propriedade tags é opcional
 
 
 ### Elasticsearch e OpenSearch {#elastic}
@@ -221,6 +225,7 @@ data:
       host: "example.com"
       user: "${{ELASTICSEARCH_USER}}"
       password: "${{ELASTICSEARCH_PASSWORD}}"
+      pipeline: "ingest pipeline name"
 ```
 
 Considerações:
@@ -228,6 +233,15 @@ Considerações:
 * Para credenciais, certifique-se de usar as credenciais de implantação, em vez das credenciais de conta. Estas são as credenciais geradas em uma tela que pode se parecer com esta imagem:
 
 ![Credenciais de implantação elástica](/help/implementing/developing/introduction/assets/ec-creds.png)
+
+* A propriedade opcional do pipeline deve ser definida como o nome do pipeline de assimilação de Elasticsearch ou OpenSearch, que pode ser configurado para rotear a entrada de log para o índice apropriado. O tipo de processador do pipeline deve ser definido como *script* e a linguagem de script deve ser definida como *indolor*. Este é um exemplo de trecho de script para rotear entradas de log em um índice, como aemaccess_dev_26_06_2024:
+
+```
+def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
+def sourceType = ctx._index;
+def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
+ctx._index = sourceType + "_" + envType + "_" + date;
+```
 
 ### HTTPS {#https}
 
@@ -333,7 +347,7 @@ Algumas organizações escolhem restringir qual tráfego pode ser recebido pelos
 
 Para o log CDN, é possível adicionar os endereços IP à lista de permissões, conforme descrito em [este artigo](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se essa lista de endereços IP compartilhados for muito grande, considere enviar tráfego para um Azure Blob Store (não Adobe) em que a lógica possa ser gravada para enviar os logouts de um IP dedicado para seu destino final.
 
-Para logs AEM (incluindo Apache/Dispatcher), é possível configurar o encaminhamento de logs para passar [rede avançada](/help/security/configuring-advanced-networking.md). Veja os padrões dos três tipos avançados de rede abaixo, que usam uma `port` juntamente com o parâmetro `host` parâmetro.
+Para logs AEM (incluindo Apache/Dispatcher), é possível configurar o encaminhamento de logs para passar pelo [rede avançada](/help/security/configuring-advanced-networking.md). Veja os padrões dos três tipos avançados de rede abaixo, que usam uma `port` juntamente com o parâmetro `host` parâmetro.
 
 ### Saída flexível da porta {#flex-port}
 
