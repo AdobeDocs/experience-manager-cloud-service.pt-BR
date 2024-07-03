@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 379e5230d27be135b5862cdbfa35abc612f5ca57
+source-git-commit: 4e272fe63ccdc920c58ada780a2087bba1bfcb1f
 workflow-type: tm+mt
-source-wordcount: '5143'
+source-wordcount: '5149'
 ht-degree: 81%
 
 ---
@@ -844,6 +844,7 @@ ht-degree: 81%
          + [Alterar estilo de componentes da CIF](/help/commerce-cloud/customizing/style-cif-component.md)
          + [Personalizar componentes da CIF](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [Usar seletores de catálogo da CIF](/help/commerce-cloud/customizing/use-cif-pickers.md)
+         + [Atributos personalizados para o carrossel de produtos CIF](/help/commerce-cloud/customizing/product-carousel.md)
    + [PWA Studio do Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migração](/help/commerce-cloud/migration.md)
    + [Perguntas frequentes](/help/commerce-cloud/faq.md)
