@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 9defb49b2639aa8945d1fed0332400b8ab5ced8c
 workflow-type: tm+mt
-source-wordcount: '2365'
-ht-degree: 69%
+source-wordcount: '2377'
+ht-degree: 68%
 
 ---
 
@@ -61,6 +61,7 @@ Para adicionar ou editar um ambiente, o usuário deve ser membro do **Proprietá
    * Selecione um [**tipo de ambiente**.](#environment-types)
       * O número de ambientes disponíveis/usados é exibido entre parênteses atrás do nome do tipo de ambiente.
    * Forneça um **nome** de ambiente.
+      * O nome do ambiente não pode ser alterado depois que o ambiente é criado.
    * Forneça uma **descrição** do ambiente.
    * Se estiver adicionando um ambiente de **Produção + Preparo**, é necessário fornecer um nome e uma descrição tanto para o ambiente de produção quanto para o de preparo.
    * Selecione uma **região principal** no menu suspenso.
@@ -178,7 +179,7 @@ Uma vez ativado, será possível publicar conteúdo para o serviço de visualiza
 >
 >Seu ambiente deve estar na versão `2021.05.5368.20210529T101701Z` do AEM, ou mais recente, para usar o serviço de visualização. Certifique-se de que um pipeline de atualização foi executado com sucesso em seu ambiente para poder usar o serviço de visualização.
 
-### Status de regiões de publicação adicionais {#additional-region-status}
+### Status de regiões adicionais do Publish {#additional-region-status}
 
 Se você tiver ativado regiões de publicação adicionais, será possível verificar o status dessas regiões na **Ambientes** cartão.
 
@@ -305,7 +306,7 @@ Além disso, é possível fazer logon localmente na guia **Ambientes** da págin
 
 ## Gerenciar nomes de domínio personalizados {#manage-cdn}
 
-Os nomes de domínio personalizados são suportados nos programas do Sites do Cloud Manager para serviços de publicação e visualização.
+Os nomes de domínio personalizados são suportados nos programas do Cloud Manager para Sites, para serviços de publicação e visualização.
 
 >[!TIP]
 >
