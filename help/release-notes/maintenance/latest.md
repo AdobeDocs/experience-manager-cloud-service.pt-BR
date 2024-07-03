@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 3a4dd9f1d769a9c9da12fdd8febfef481112d18c
+source-git-commit: f4b2ea5dac880738e6412541f06b85a6a83ccf40
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '752'
 ht-degree: 16%
 
 ---
@@ -52,9 +52,6 @@ A Ativação de recursos 2024.6.0 fornecerá o conjunto completo de recursos par
 * SCRNS-4194: Remova a dependência das APIs do Google Guava.
 * SCRNS-4360: Botão Gerenciar publicação e Publish rápido ausente para usuários não administradores no Provedor de conteúdo para canais.
 * SCRNS-4323: Ocultar/desativar inicializações de screens.html.
-
-#### Forms
-
 * FORMS-14844: o Adaptive Forms permite o envio de formulários apesar da falha na verificação do reCAPTCHA.
 * FORMS-14984: O Forms com CAPTCHA ignora a validação se &quot;submitMetaData&quot; estiver ausente nos dados enviados.
 * FORMS-14477: As opções &quot;Is After&quot; e &quot;Is Before&quot; no editor de regras funcionam incorretamente na validação do Seletor de datas.
