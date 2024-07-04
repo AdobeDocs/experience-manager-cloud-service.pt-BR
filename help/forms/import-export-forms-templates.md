@@ -5,48 +5,59 @@ topic-tags: forms-manager
 role: Admin, User
 feature: Adaptive Forms
 exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
-source-git-commit: 81951a9507ec3420cbadb258209bdc8e2b5e2942
+source-git-commit: 6f547bd743932d45e45e0a3c47ff5eb2129cb664
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 0%
+source-wordcount: '1073'
+ht-degree: 3%
 
 ---
 
+
+
+| Versão | Link do artigo |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/manage-administer-aem-forms/import-export-forms-templates) |
+| AEM as a Cloud Service | Este artigo |
+
 # Importar ou exportar ativos adaptáveis do Forms e do AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
-Você pode mover o Adaptive Forms e ativos relacionados, como temas do Formulário adaptável, Modelo de dados de formulário (FDM), modelos de Formulário adaptável, fragmentos de documento e PDF forms entre [!DNL AEM Forms] instâncias. Você pode importar e exportar ativos no pacote CRX ou em formatos de arquivo binário.
-
-Ao exportar um Formulário adaptável, as políticas de conteúdo e os modelos não são exportados. Uso [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#how-rolling-deployments-work) para exportar esses ativos.
+Você pode mover o Adaptive Forms e ativos relacionados, como temas do Formulário adaptável, Modelo de dados de formulário (FDM), Modelos de formulário adaptável, Fragmentos e PDF forms entre [!DNL AEM Forms] instâncias.
 
 ## Baixar o Forms adaptável, o PDF forms ou ativos relacionados {#download-forms-amp-documents-assets}
 
 Para baixar formulários ou ativos relacionados:
 
-1. Faça logon no [!DNL AEM Forms] instância.
-1. Selecionar **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > **[!UICONTROL Navegação]** ![bússola](assets/Smock_Compass_18_N.svg) ícone > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
-1. Selecione os ativos e selecione a variável **[!UICONTROL Baixar]** ícone.
-1. Em Baixar ativos, escolha uma das seguintes opções e selecione **[!UICONTROL Baixar]**.
+1. Faça logon no [!DNL Experience Manager Forms] instância.
+1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
 
-   * **Baixar como Pacote CRX:** Use a opção para baixar e mover todos os ativos selecionados e as dependências relacionadas de uma [!DNL AEM Forms] instância para outra. Ele baixa todos os ativos e pastas como um pacote CRX, incluindo os formulários criados no AEM (Forms adaptável e Fragmentos de formulário adaptável), conjuntos de formulários, modelo de dados de formulário (FDM), modelos de formulário, documentos PDF e recursos referenciados (XSDs e imagens).
-A vantagem de baixar ativos como um pacote é que ele também baixa referências por ativos selecionados. Por exemplo, se você tiver um formulário adaptável que usa um modelo de formulário, XSD e uma imagem. Ao selecionar esse Formulário adaptável e baixá-lo como um pacote, o pacote baixado também contém o modelo de formulário, o XSD e a imagem. Todas as propriedades de metadados (incluindo propriedades personalizadas) associadas ao ativo também são baixadas.
+   ![Selecionar Forms](/help/forms/assets/select-forms.png)
 
-   * **Baixar ativos como arquivos binários:** Use a opção para baixar somente os modelos de formulário (XDP), PDF forms (PDF), documento (PDF) e recursos (imagens, esquemas, folhas de estilos). É possível editar esses ativos com aplicativos externos. Ele baixa os ativos que têm binários, como imagens, PDF e outros formatos compatíveis como um arquivo .zip.
-Não é possível baixar o Forms adaptável, fragmentos de formulário adaptável, temas e conjuntos de formulários com **[!UICONTROL Baixar ativos como arquivos binários]** opção. Para baixar esses ativos, você deve usar **[!UICONTROL Baixar como pacote CRX]** opção.
+1. Selecione os ativos e clique no botão **[!UICONTROL Baixar]** ícone no painel superior.
 
-   Os ativos selecionados são baixados como um arquivo (arquivo .zip).
+   ![Baixar o Forms](/help/forms/assets/download-form.png)
 
-   >[!NOTE]
-   >
-   >O pacote AEM e os arquivos binários são baixados como um arquivo (arquivo .zip). Os modelos dos ativos não são baixados junto com os ativos. É necessário exportar os modelos de ativos separadamente.
+   Ao baixar o formulário, a variável **[!UICONTROL Baixar ativo(s)]** é exibida.
+
+   ![Baixar ativos de formulários](/help/forms/assets/download-form-assets.png)
+
+1. Clique em **[!UICONTROL Baixar]**.
+
+Os ativos selecionados são baixados como um arquivo (arquivo .zip).
 
 ## Fazer upload de ativos adaptáveis do Forms, PDF forms ou relacionados {#upload-forms-amp-documents-assets}
 
 Você pode fazer upload dos tipos de ativos compatíveis individualmente ou como um arquivo ZIP. Para um arquivo ZIP, os caminhos relativos de todos os ativos compatíveis são exibidos. Os ativos incompatíveis dentro do ZIP são ignorados e não são listados. No entanto, se o arquivo ZIP contiver somente os ativos incompatíveis, uma mensagem de erro será exibida em vez da caixa de diálogo pop-up.
 Para carregar um formulário ou um ativo relacionado:
 
-1. Faça logon no [!DNL AEM Forms] instância.
-1. Selecionar **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > **[!UICONTROL Navegação]** ![bússola](assets/Smock_Compass_18_N.svg) ícone > **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
+1. Faça logon no [!DNL Experience Manager Forms] instância.
+1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
+
+   ![Selecionar Forms](/help/forms/assets/select-forms.png)
+
 1. Selecionar **[!UICONTROL Criar]** > **[!UICONTROL Upload de arquivo]**. Uma caixa de diálogo é exibida.
+
+   ![Fazer upload do Forms](/help/forms/assets/form-upload.png)
+
 1. Na caixa de diálogo, navegue e selecione o pacote ou o arquivo a ser importado. Você também pode selecionar outros tipos de arquivos compatíveis. Selecionar **[!UICONTROL Abertura]**. A pasta ou o nome de arquivo selecionado não deve incluir caracteres especiais.
 
    Na caixa de diálogo, verifique os detalhes dos ativos que estão sendo carregados e selecione **[!UICONTROL Carregar]**.
@@ -55,29 +66,185 @@ Para carregar um formulário ou um ativo relacionado:
 
    >[!NOTE]
    >
-   > * Quando um nome entra em conflito com tipos de recursos diferentes, o upload de um pacote não substitui a hierarquia de pastas existente. Por exemplo, se você tiver um formulário adaptável chamado &quot;Treinamento&quot; no local /content/dam/formsanddocuments em um servidor. Você baixou o Formulário adaptável e carregou o formulário em outro servidor. O segundo servidor também tem uma pasta com o nome &#39;Treinamento&#39; no mesmo local /content/dam/formsanddocuments. Falha no upload.
-   > * Somente um membro do `form-power-user` grupo pode carregar arquivos XDP.
+   > Quando um nome entra em conflito com tipos de recursos diferentes, o upload de um pacote não substitui a hierarquia de pastas existente. Por exemplo, se você tiver um formulário adaptável chamado &quot;Treinamento&quot; no local `/content/dam/formsanddocuments` em um servidor. É possível baixar o formulário adaptável e carregá-lo em outro servidor. O segundo servidor também tem uma pasta com o nome &#39;Treinamento&#39; no mesmo local `/content/dam/formsanddocuments`. Falha no upload.
 
-
-## Baixar um tema {#downloading-a-theme}
+## Baixar um tema
 
 É possível exportar temas no [!DNL AEM Forms] que você pode usar em outros projetos ou instâncias. O AEM permite baixar temas como um arquivo zip, que pode ser carregado na instância.
-
 Para baixar um tema:
 
-1. Faça logon no [!DNL AEM Forms] instância.
-1. Selecionar **[!UICONTROL Adobe Experience Manager]** ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > **[!UICONTROL Navegação]** ![bússola](assets/Smock_Compass_18_N.svg) ícone > **[!UICONTROL Forms]** > **[!UICONTROL Temas]**.
-1. Selecione o tema e selecione **[!UICONTROL Baixar]**. O tema é baixado como um arquivo (arquivo .zip).
+1. Faça logon no [!DNL Experience Manager Forms] Instância do autor.
+1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Temas]**.
+
+   ![Selecionar tema](/help/forms/assets/select-theme.png)
+
+1. Na página Temas, selecione o tema e clique no ícone **[!UICONTROL Baixar]** ícone no painel superior.
+
+   ![Baixar tema](/help/forms/assets/download-theme.png)
+
+   Ao baixar o tema, a variável **[!UICONTROL Baixar ativo(s)]** é exibida.
+
+   ![Baixar ativos de tema](/help/forms/assets/download-theme-asset.png)
+
+1. Clique em **[!UICONTROL Baixar]**.
+
+Os ativos selecionados são baixados como um arquivo (arquivo .zip).
 
 ## Carregar um tema {#uploading-a-theme}
 
-Você pode carregar e usar temas que outras pessoas criam em seus formulários. Para fazer upload de um tema:
+Você pode carregar e usar temas que outras pessoas criam em seus formulários.
+Para fazer upload de um tema:
 
+1. Faça logon no [!DNL Experience Manager Forms] instância.
 1. No Experience Manager, navegue até **[!UICONTROL Forms]** > **[!UICONTROL Temas]**.
-1. Na página Temas, clique em **[!UICONTROL Criar]** > **[!UICONTROL Upload de arquivo]**.
-1. No prompt File Upload (Upload de arquivo), procure e selecione um pacote de temas no computador e clique em **[!UICONTROL Carregar]**. O tema carregado está disponível na página de temas.
 
-<!-- ## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
+   ![Selecionar tema](/help/forms/assets/select-theme.png)
+
+1. Na página Temas, clique em **[!UICONTROL Criar]** > **[!UICONTROL Upload de arquivo]**.
+
+   ![Fazer upload de tema](/help/forms/assets/theme-upload.png)
+
+1. Procure e selecione um pacote de tema no seu computador e clique em **[!UICONTROL Carregar]**. O tema carregado fica disponível na página Temas.
+
+## Usar pastas para organizar o Forms adaptável, PDF forms e ativos relacionados  {#folders-and-organizing-assets}
+
+Você pode usar pastas para organizar e organizar ativos. Organizar documentos e ativos em uma pasta permite agrupar os arquivos para facilitar o gerenciamento. Você pode selecionar uma pasta e escolher baixá-la ou excluí-la.
+
+### Criar uma pasta {#create-a-folder}
+
+Para criar uma pasta:
+
+1. Faça logon no [!DNL Experience Manager Forms] instância.
+1. Selecionar **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
+
+   ![Selecionar formulário](/help/forms/assets/select-forms.png)
+
+1. Selecionar **[!UICONTROL Criar]** > **[!UICONTROL Pasta]**.
+
+   ![Criar pasta](/help/forms/assets/create-folder.png)
+
+   A variável **[!UICONTROL Adicionar pasta]** é exibida.
+1. Insira o **[!UICONTROL Título]**. A variável **[!UICONTROL Nome]** é preenchido automaticamente ao digitar o **[!UICONTROL Título]**.
+
+   ![Adicionar pasta](/help/forms/assets/add-folder.png)
+
+1. Clique em **[!UICONTROL Criar]**.
+
+   >[!NOTE]
+   >
+   >Por padrão, o valor do campo de nome é preenchido automaticamente a partir do título. O nome só pode conter caracteres alfanuméricos ou os caracteres especiais de hífen (-) e sublinhado (_). Quaisquer outros caracteres especiais inseridos no título são substituídos automaticamente por um hífen e você será solicitado a confirmar o novo nome. Você pode optar por continuar com o nome sugerido ou fazer mais edições.
+
+Uma nova pasta com o título definido é exibida no local atual na lista de ativos.
+
+Se existir uma pasta com o nome especificado, o envio falha com um erro. Você pode exibir a mensagem de erro passando o cursor do mouse sobre ele ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) ícone que aparece ao lado do campo de nome.
+
+Você pode selecionar a pasta criada para entrar na pasta e criar ativos ou pastas dentro dela. Além disso, você pode selecionar uma pasta e optar por colocá-la na fila para download, excluí-la ou editar seu nome.
+
+### Criar cópias de um ou mais ativos {#create-copies-of-one-or-more-assets-or-letters}
+
+Você pode usar um ativo existente para criar rapidamente um ativo com propriedades, conteúdo e ativos herdados semelhantes.
+
+Para criar cópias de ativos:
+
+1. Faça logon no [!DNL Experience Manager Forms] instância.
+1. Na página de ativos relevantes, selecione um ou mais ativos. A interface do usuário exibe a variável **[!UICONTROL Copiar]** ícone.
+1. Selecionar **[!UICONTROL Copiar]**. A interface do usuário exibe a variável ![Ícone Colar](/help/forms/assets/Smock_Paste_18_N.svg) ícone.
+
+   ![Copiar ativo](/help/forms/assets/copy-asset.png)
+
+   Você também pode escolher ir/navegar dentro de uma pasta antes de colar. Pastas diferentes podem conter ativos com os mesmos nomes. Para obter mais informações sobre pastas, consulte [Pastas e organização de ativos](#folders-and-organizing-assets).
+1. Selecionar **[!UICONTROL Colar]**.
+
+   ![Colar ativo](/help/forms/assets/paste-asset.png)
+
+1. A variável **[!UICONTROL Colar]** será exibida. O sistema gera automaticamente nomes e títulos para as novas cópias de ativos, mas você pode editar os títulos e nomes dos ativos.
+
+   Se você copiar e colar os ativos no mesmo local, um sufixo &quot;-CopyXX&quot; será adicionado ao nome existente do `asset`. Se não houver título para o ativo copiado, o campo de título gerado automaticamente permanecerá em branco.
+
+   ![Colar ativo em novo local](/help/forms/assets/paste-click-asset.png)
+
+   Se necessário, edite o **[!UICONTROL Título]** com o qual você deseja salvar a cópia do ativo. A variável **[!UICONTROL Nome]** é preenchido automaticamente ao digitar o **[!UICONTROL Título]**.
+1. Selecionar **[!UICONTROL Colar]**. Novas cópias dos ativos copiados são criadas.
+
+## Pesquisar {#search-forms}
+
+Quando você tem um grande número de ativos, pesquisar o ativo certo é demorado. Você pode executar uma pesquisa baseada em texto para um ativo específico na página do ativo.
+
+Para pesquisar o ativo:
+
+1. Faça logon no [!DNL Experience Manager Forms] instância.
+1. Clique em ![ícone de pesquisa](assets/folder-search-icon.svg) ícone de pesquisa.
+
+   ![Formulário de pesquisa](/help/forms/assets/search-form.png)
+
+1. Insira o nome do ativo que deseja pesquisar na barra de pesquisa.
+
+1. Uma lista de ativos relacionados é exibida. Selecione o ativo desejado na lista de ativos exibida.
+
+   ![Pesquisar ativos](/help/forms/assets/search-bar.png)
+
+Para obter mais informações e instruções sobre como usar a pesquisa, consulte [Pesquisar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=pt-BR).
+
+<!--
+## Export or create a package {#export-a-workflow-application}
+
+You can use packages to install new content, install new functionality, transfer content between instances, and back up content.
+To export or create a package:
+
+1. Log in to your [!DNL Experience Manager Forms] instance.
+1. Navigate to **[!UICONTROL Tools]** ![hammer](assets/hammer.png) &gt; **[!UICONTROL Deployment]** &gt; **[!UICONTROL Packages]**.
+
+   ![Package Manager](/help/forms/assets/package-manager.png)
+
+1. Click **[!UICONTROL Create Package]**.
+
+   ![Create package](/help/forms/assets/create-package.png)   
+   
+   When **[!UICONTROL Create Package]** is clicked, the **[!UICONTROL New Package]** dialog box appears.
+1. Specify the package name, version, and group for the package. 
+   
+   ![New package](/help/forms/assets/new-package.png)  
+
+   * **Package Name** - Select a descriptive name to help you identify the contents of the package.
+
+   * **Version** - It is a textual field to indicate a version. This is appended to the package name to form the name of the zip file.
+
+   * **Group** - This is the target group (or folder) name. Groups help you organize your packages. A folder is created for the group if it does not already exist. If you leave the group name blank, it creates the package in the main package list.
+
+1. Click **[!UICONTROL OK]**.
+
+   Once the package is created, it appears at the top of the list of packages.
+
+1. Click **[!UICONTROL Edit]**.
+   
+   ![Edit Package](/help/forms/assets/edit-package.png)
+    
+1. Open the **[!UICONTROL Filters]** tab.
+   
+   ![Open filter tab](/help/forms/assets/add-filter-package.png)
+   
+1.  Click **[!UICONTROL Add Filter]**. 
+   
+      ![Add filter](/help/forms/assets/add-filter.png)
+
+      You can specify the path of the package. You can also add rules and other validations for the package.
+
+      ![Add path](/help/forms/assets/add-path.png)
+
+1. Click **[!UICONTROL Save]** after you are finished editing the settings.
+1. Click **[!UICONTROL Build]** to create the package.
+    
+     ![Build path](/help/forms/assets/build-package.png)
+
+   After the package is built, you can download the package and import it to the other server. The workflow application appears on the server where the package is uploaded.
+
+   >[!NOTE]
+   >
+   >For the workflow application to work properly, also export the corresponding Adaptive Form and workflow model with the work application.
+
+   Once a package is uploaded to AEM, you can modify its settings. You can also download or delete the package.
+
+## Import and export assets in Correspondence Management {#import-and-export-assets-in-correspondence-management}
 
 To share assets, such as data dictionaries, letters, and document fragments, between two different implementations of Correspondence Management, you can create and share .cmp files. A .cmp file can include one or more data dictionaries, letters, document fragments, and forms.
 
@@ -147,86 +314,6 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
    >
    >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. -->
 
-## Exportar um aplicativo de fluxo de trabalho {#export-a-workflow-application}
+## Consulte também {#see-also}
 
-Você pode usar o gerenciador de pacotes para exportar aplicativos de workflow. O procedimento é conforme listado abaixo:
-
-1. Abertura [!DNL AEM Forms] gerenciador de pacotes. O URL do gerenciador de pacotes é `https://[server]:[port]/crx/packmgr`.
-1. Clique em **[!UICONTROL Criar pacote]**. A variável **[!UICONTROL Novo pacote]** é exibida.
-1. Especifique o nome, a versão e o grupo do pacote. Clique em **[!UICONTROL OK]**.
-1. Clique em **[!UICONTROL Editar]** e abra o **[!UICONTROL Filtros]** guia. Clique em **[!UICONTROL Adicionar filtro]**. Especifique o caminho do aplicativo de workflow. Por exemplo, /etc/fd/dashboard/startpoints/homemortgage. Clique em **[!UICONTROL Adicionar regra]**.
-
-1. Abra o **[!UICONTROL Avançado]** guia. Selecionar **[!UICONTROL Mesclar]** ou **[!UICONTROL Substituir]** no campo Tratamento de ACL. Clique em **[!UICONTROL Salvar]**.
-1. Clique em **[!UICONTROL Build]** para criar o pacote.
-
-   Depois que o pacote for criado, é possível baixá-lo e importá-lo para o outro servidor. O aplicativo de workflow aparece no servidor onde o pacote é carregado.
-
-   >[!NOTE]
-   >
-   >Para que o aplicativo de fluxo de trabalho funcione corretamente, exporte também o formulário adaptável correspondente e o modelo de fluxo de trabalho com o aplicativo de trabalho.
-
-## Usar pastas para organizar o Forms adaptável, PDF forms e ativos relacionados  {#folders-and-organizing-assets}
-
-Você pode usar pastas para organizar e organizar ativos. Organizar documentos e ativos em uma pasta permite agrupar os arquivos para facilitar o gerenciamento. Você pode selecionar uma pasta e escolher baixá-la ou excluí-la. Para criar uma pasta, conclua as seguintes etapas:
-
-### Criar uma pasta {#create-a-folder}
-
-1. Faça logon no [!DNL AEM Forms] instância.
-1. Selecionar Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) ícone > navegação ![bússola](assets/Smock_Compass_18_N.svg) ícone> **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
-1. Selecionar **[!UICONTROL Criar]** > **[!UICONTROL Pasta]**.
-1. Insira os seguintes detalhes:
-
-   * **[!UICONTROL Título]**: Nome de exibição da pasta
-   * **[!UICONTROL Nome]**: *(Obrigatório)* O nome do nó sob o qual você deseja armazenar a pasta no repositório
-
-   >[!NOTE]
-   >
-   >Por padrão, o valor do campo de nome é preenchido automaticamente a partir do título. O nome só pode conter caracteres alfanuméricos ou os caracteres especiais de hífen (-) e sublinhado (_). Quaisquer outros caracteres especiais inseridos no título são substituídos automaticamente por um hífen e você será solicitado a confirmar o novo nome. Você pode optar por continuar com o nome sugerido ou fazer mais edições.
-
-1. Uma nova pasta com o título definido é exibida no local atual na lista de ativos.
-
-   Se existir uma pasta com o nome especificado, o envio falha com um erro. Você pode exibir a mensagem de erro passando o cursor do mouse sobre ele ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) ícone que aparece ao lado do campo de nome.
-
-   Você pode selecionar a pasta criada para entrar na pasta e criar ativos ou pastas dentro dela. Além disso, você pode selecionar uma pasta e optar por colocá-la na fila para download, excluí-la ou editar seu nome.
-
-
-<!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
-
-You can use an existing assets to quickly create an asset with similar properties, content, and inherited assets.
-
-Complete the following steps to create copies of assets and letters:
-
-1. On the relevant assets page, select one or more assets. The UI displays the Copy icon.
-1. Select **[!UICONTROL Copy]**. The UI displays the **[!UICONTROL Paste]** icon. You can also choose to go/navigate inside a folder before you paste. Different folders can contain assets with same names. For more information on folders, see [Folders and organizing assets](#folders-and-organizing-assets).
-1. Select **[!UICONTROL Paste]**. The **[!UICONTROL Paste]** dialog appears. The system auto generates names and titles to the new copies of assets/letters, but you can edit the titles and names of the assets/letters.
-
-   If you are copying and pasting the assets/letters at the same place, a suffix "-CopyXX" gets added to the existing name of the asset/letter. If no title existed for the copied asset/letter, the auto generated title field remains blank.
-
-1. If necessary, edit the Title and Name with which you want to save the copy of the asset/letter.
-1. Select **[!UICONTROL Paste]**. New copies of the copied assets are created.
-
-## Search {#search-forms}
-
-You ca use the top bar **[A]** to search your content. When you search for assets, a side panel is displayed. You can also select ![assets-browser-content-only](assets/assets-browser-content-only.png) &gt; Filter **[B]** to invoke the side panel. Using the various filters in the side panel, you can narrow down your search. The side panel also lets you save your searches.
-
-![search_topbar](assets/search_topbar.png)
-
-**A.** Search **B.** Filter
-
-![Side panel - Filters](assets/search_sidepanel.png)
-
-Side panel - Filters
-
-On the side panel, you can use the following to narrow down your search results:
-
-* Search Directory
-* Tags
-* Search Criteria; for example, Modified Dates, Publish Status, LiveCopy Status.
-
-The side panel also lets you save your search settings with names of your choice.
-
-For more information and instructions on using search, filters, saved search, and side panel, see [Search](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html). -->
-
->[!MORELIKETHIS]
->
->* [Usar temas nos Componentes principais do formulário adaptável](/help/forms/using-themes-in-core-components.md)
+{{see-also}}
