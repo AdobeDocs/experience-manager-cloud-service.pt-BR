@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 54159c25b60277268ade16b437891f268873fecf
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 90%
+source-wordcount: '1340'
+ht-degree: 66%
 
 ---
 
@@ -23,10 +23,6 @@ Os aplicativos web geralmente fornecem recursos de gerenciamento de conta para o
 * Armazenamento de dados do perfil do usuário
 * Associação de grupo
 * Sincronização de dados
-
->[!IMPORTANT]
->
->Para que as funcionalidades descritas neste artigo funcionem, o recurso de sincronização de dados do usuário deve ser ativado, o que, no momento, requer que uma solicitação indicando o programa e os ambientes apropriados seja feita ao suporte. Se o recurso não estiver ativado, as informações do usuário serão mantidas apenas por um curto período (de 1 a 24 horas) antes de desaparecerem.
 
 ## Registro {#registration}
 
@@ -44,6 +40,10 @@ Pode-se escrever um código de registro personalizado que contenha, no mínimo, 
    1. Criar um registro de usuário usando um dos métodos `createUser()` da API do UserManager
    1. Armazenar todos os dados de perfil capturados usando os métodos `setProperty()` da interface do Authorizable
 1. Fluxos opcionais, como exigir que o usuário valide seu email.
+
+**Pré-requisito:**
+
+Para que a lógica descrita acima funcione corretamente, ative [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
 
 ### Externo {#external-managed-registration}
 
@@ -63,6 +63,10 @@ Os clientes podem gravar seus próprios componentes personalizados. Para saber m
 
 * A [estrutura de autenticação do Sling](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
 * E considere [fazer perguntas na sessão dos especialistas da comunidade do AEM](https://bit.ly/ATACEFeb15) sobre logon.
+
+**Pré-requisito:**
+
+Para que a lógica descrita acima funcione corretamente, ative [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
 
 ### Integração com um provedor de identidade {#integration-with-an-idp}
 
@@ -84,9 +88,15 @@ Consulte a [Documentação de Logon único (SSO)](https://experienceleague.adobe
 
 A interface `com.adobe.granite.auth.oauth.provider` pode ser implementada com o provedor OAuth de sua escolha.
 
+**Pré-requisito:**
+
+Como prática recomendada, sempre confie no idP (Identity Provider, Provedor de identidade) como um único ponto de verdade ao armazenar dados específicos do usuário. Se as informações adicionais do usuário estiverem armazenadas no repositório local, que não faz parte do idP, ative [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados. Além de [sincronização de dados](#data-synchronization-data-synchronization), no caso do provedor de autenticação SAML, verifique se [associação de grupo dinâmico](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) está ativado.
+
 ### Sessões adesivas e tokens encapsulados {#sticky-sessions-and-encapsulated-tokens}
 
-O AEM as a Cloud Service tem sessões adesivas baseadas em cookies habilitadas, o que garante que um usuário final seja roteado para o mesmo nó de publicação em cada solicitação. Para aumentar o desempenho, o recurso de token encapsulado está habilitado por padrão, de modo que o registro do usuário no repositório não precise ser referenciado em cada solicitação. Se o nó de publicação com o qual um usuário final tem afinidade for substituído, seu registro de ID do usuário estará disponível no novo nó de publicação, conforme descrito na seção de sincronização de dados abaixo.
+O AEM as a Cloud Service habilita sessões adesivas baseadas em cookies, garantindo que um usuário final seja roteado para o mesmo nó de publicação em cada solicitação. Em casos específicos, como picos de tráfego do usuário, o recurso de token encapsulado pode aumentar o desempenho, de modo que o registro do usuário no repositório não precise ser referenciado em cada solicitação. Se o nó de publicação com o qual um usuário final tem afinidade for substituído, o registro da ID do usuário estará disponível no novo nó de publicação, conforme descrito na seção [sincronização de dados](#data-synchronization-data-synchronization) abaixo.
+
+Para aproveitar o recurso de token encapsulado, envie uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados. Mais importante, o token encapsulado não pode ser habilitado sem [sincronização de dados](#data-synchronization-data-synchronization) e devem ser ativados juntos. Portanto, analise cuidadosamente o caso de uso antes de ativar e verifique se o recurso é essencial.
 
 ## Perfil de usuário {#user-profile}
 
@@ -99,11 +109,19 @@ As informações do perfil do usuário podem ser escritas e lidas de duas maneir
 * Pelo uso do servidor com a interface `com.adobe.granite.security.user` do UserPropertiesManager, que colocará os dados sob o nó do usuário em `/home/users`. Certifique-se de que as páginas exclusivas por usuário não sejam armazenadas em cache.
 * Pelo lado do cliente usando o ContextHub, conforme descrito na [documentação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/personalization/contexthub.html#personalization).
 
+**Pré-requisito:**
+
+Para que a lógica de persistência de perfil de usuário do lado do servidor funcione corretamente, habilite [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
+
 ### Armazenamento de dados de terceiros {#third-party-data-stores}
 
 Os dados do usuário final podem ser enviados a fornecedores terceirizados, como CRMs, recuperados por meio de APIs após o logon do usuário no AEM, armazenados (ou atualizados) no nó de perfil do usuário e usados pelo AEM conforme necessário.
 
 É possível obter acesso em tempo real a serviços de terceiros para recuperar atributos de perfil. No entanto, é importante garantir que isso não afete diretamente o processamento de solicitações no AEM.
+
+**Pré-requisito:**
+
+Para que a lógica descrita acima funcione corretamente, ative [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
 
 ## Permissões (grupos de usuários fechados) {#permissions-closed-user-groups}
 
@@ -116,13 +134,17 @@ Independentemente do logon, um código personalizado também pode manter e geren
 
 ## Sincronização de dados {#data-synchronization}
 
-Os usuários finais do site têm uma expectativa de experiência consistente em cada solicitação de página da Web ou mesmo ao fazerem logon usando um navegador diferente; mesmo sem o conhecimento deles, eles são trazidos para diferentes nós de servidor da infraestrutura do nível de publicação. O AEM as a Cloud Service consegue isso sincronizando rapidamente o `/home` hierarquia de pastas (informações de perfil do usuário, associação de grupo e assim por diante) em todos os nós do nível de publicação.
+Os usuários finais do site têm uma expectativa de experiência consistente em cada solicitação de página da Web ou mesmo ao fazerem logon usando um navegador diferente; mesmo sem o conhecimento deles, eles são trazidos para diferentes nós de servidor da infraestrutura do nível de publicação. A AEM as a Cloud Service consegue isso sincronizando rapidamente o `/home` hierarquia de pastas (informações de perfil do usuário, associação de grupo e assim por diante) em todos os nós do nível de publicação.
 
 Ao contrário de outras soluções do AEM, a sincronização de usuários e associações de grupos no AEM as a Cloud Service não usa uma abordagem de mensagens ponto a ponto. Em vez disso, ela implementa uma abordagem de assinatura de publicação que não requer configuração de clientes.
 
 >[!NOTE]
 >
 >Por padrão, a sincronização de perfis de usuário e associações de grupos não está habilitada e, portanto, os dados não serão sincronizados ou mantidos permanentemente no nível de publicação. Para habilitar o recurso, envie uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
+
+>[!IMPORTANT]
+>
+>Teste a implementação em escala antes de habilitar a sincronização de dados no ambiente de produção. Dependendo do caso de uso e dos dados persistentes, podem ocorrer alguns problemas de consistência e latência.
 
 ## Considerações sobre cache {#cache-considerations}
 
