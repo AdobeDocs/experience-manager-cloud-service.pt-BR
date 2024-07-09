@@ -1,9 +1,9 @@
 ---
 title: Configurar a interface do usuário do Content Hub
 description: Configurar a interface do usuário do Content Hub
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1119'
 ht-degree: 4%
 
 ---
@@ -97,6 +97,10 @@ O Content Hub permite que os administradores configurem filtros que são exibido
 1. Clique em **[!UICONTROL Confirmar o]**. O novo filtro é exibido na lista dos filtros existentes.
 
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações para que o novo filtro seja exibido na página Pesquisar ao filtrar ativos.
+
+   >[!NOTE]
+   >
+   >O novo filtro é exibido na página Pesquisar somente se houver pelo menos um ativo no repositório que corresponda aos critérios do filtro.
 
 Da mesma forma, você pode clicar em ![Ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada filtro disponível, para editar os rótulos ou clicar no ícone excluir para excluir qualquer filtro existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
 

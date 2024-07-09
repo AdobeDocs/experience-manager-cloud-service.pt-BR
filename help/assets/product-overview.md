@@ -1,7 +1,7 @@
 ---
 title: Visão geral do Content Hub
 description: Saiba mais sobre o Content Hub, seus principais benefícios, como acessá-lo e como fornecer feedback sobre as opções disponíveis no Content Hub.
-source-git-commit: b29641286919b5becc3982400ea160836531fdc5
+source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 0%
@@ -41,7 +41,7 @@ O Content Hub requer um ambiente de autor de produção de Experience Manager as
 
 ## Como acessar o Content Hub? {#access-content-hub}
 
-[Depois de configurar o Content Hub](#deploy-content-hub) e adicionar um usuário à [Perfil de produto do Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), o Content Hub pode ser acessado das seguintes maneiras:
+[Depois de configurar o Content Hub](/help/assets/deploy-content-hub.md) e adicionar um usuário à [Perfil de produto do Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), o Content Hub pode ser acessado das seguintes maneiras:
 
 * Acesse o Content Hub usando o seguinte link:
 
