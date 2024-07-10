@@ -4,10 +4,10 @@ description: Estas são as notas de versão do Cloud Manager 2024.6.0 no AEM as 
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8eaf2b70734cec1fedace64d74059ee161785b39
+source-git-commit: 6ca376bda8055d62e35e13053ff21f861c12b292
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 38%
+ht-degree: 36%
 
 ---
 
@@ -22,7 +22,7 @@ Esta página documenta as notas de versão do Cloud Manager 2024.6.0 no AEM as a
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2024.6.0 no AEM as a Cloud Service é 6 de junho de 2024. A próxima versão está planejada para 11 de julho de 2024.
+A data de lançamento do Cloud Manager versão 2024.6.0 no AEM as a Cloud Service é 6 de junho de 2024. A próxima versão está planejada para 18 de julho de 2024.
 
 ## Novidades {#what-is-new}
 
@@ -32,7 +32,7 @@ A data de lançamento do Cloud Manager versão 2024.6.0 no AEM as a Cloud Servic
 * [Restauração de conteúdo de autoatendimento](/help/operations/restore.md) oferece restauração de backup por até sete dias e recursos:
    * Restauração de backup point-in-time nas últimas 24 horas
    * Restaurações por tempo fixo de até sete dias
-* [Novas regras do OakPal](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) foram adicionados à verificação de qualidade do código do Cloud Manager.
+* [Novas regras do OakPal](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) foram adicionados à verificação de qualidade do código Cloud Manager.
    * Todas as nova regras adicionadas até junho de 2024 são alterações secundárias.
    * Recomendamos que você resolva isso o mais rápido possível, pois essas novas regras causarão falhas nos pipelines a partir da versão de agosto de 2024 do Cloud Manager.
 
