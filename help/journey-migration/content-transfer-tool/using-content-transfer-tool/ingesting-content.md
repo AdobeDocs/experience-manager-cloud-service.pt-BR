@@ -1,6 +1,6 @@
 ---
 title: Assimilar conteúdo no Cloud Service
-description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
+description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância de Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
@@ -23,7 +23,7 @@ ht-degree: 11%
 
 Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud Acceleration Manager:
 
-1. Acesse o Cloud Acceleration Manager. Clique no cartão do projeto e no cartão Transferência de conteúdo. Navegue até **Tarefas de assimilação** e clique em **Nova assimilação**
+1. Vá para o Cloud Acceleration Manager. Clique no cartão do projeto e no cartão Transferência de conteúdo. Navegue até **Tarefas de assimilação** e clique em **Nova assimilação**
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
@@ -33,7 +33,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 
 1. Forneça as informações necessárias para criar uma assimilação.
 
-   * **Conjunto de migração:** Selecione o conjunto de migração que contém os dados extraídos como Origem.
+   * **Conjunto de migração:** Selecione o conjunto de migração que contém os dados extraídos como o Source.
       * Os conjuntos de migração expirarão após um período prolongado de inatividade, de modo que é esperado que a assimilação ocorra relativamente logo após a extração ter sido realizada. Revisão [Expiração do conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obter detalhes.
 
    >[!TIP]
@@ -43,7 +43,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
       * As assimilações não são compatíveis com destinos do tipo RDE (Rapid Development Environment, ambiente de desenvolvimento rápido) ou pré-visualização e não aparecem como uma possível escolha de destino, mesmo que o usuário tenha acesso a elas.
       * Embora um conjunto de migração possa ser assimilado em vários destinos simultaneamente, um destino pode ser o destino de apenas um em execução ou aguardando assimilação por vez.
 
-   * **Camada:** Selecione a camada. (Autor/Publicação).
+   * **Camada:** Selecione a camada. (Autor/Publish).
       * Se a origem foi `Author`, é recomendável assimilá-lo na `Author` no target. Da mesma forma, se a origem foi `Publish`, o target deve ser `Publish` também.
 
    >[!NOTE]
@@ -94,7 +94,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestão complementar"
 >abstract="Use o recurso complementar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da assimilação, verifique os logs em busca de erros ou avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=pt-BR" text="Exibição de logs"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=pt-BR" text="Exibir logs"
 
 A ferramenta Transferência de conteúdo tem um recurso que permite a extração de conteúdo diferencial executando uma *complementar* do conjunto de migração. Isso permite que o conjunto de migração seja modificado para incluir somente o conteúdo que foi alterado desde a extração anterior, sem precisar extrair todo o conteúdo novamente.
 
@@ -145,9 +145,9 @@ Esta mensagem indica que o Cloud Acceleration Manager não conseguiu acessar o s
 > 
 > O campo &quot;Token de migração&quot; é exibido porque, em alguns casos, a recuperação desse token é o que realmente não é permitido. Ao permitir que seja fornecido manualmente, ele pode permitir que o usuário inicie a assimilação rapidamente, sem nenhuma ajuda adicional. Se o token for fornecido e a mensagem ainda for exibida, a recuperação do token não foi o problema.
 
-* O AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, deve reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível no futuro.
+* A AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, deve reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível no futuro.
 * É possível que outro processo esteja sendo executado na instância. Por exemplo, se [Atualizações de versão do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) estiver aplicando uma atualização, o sistema poderá estar ocupado e o serviço de migração poderá ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
-* Se um [A Inclui na lista de permissões IP foi aplicada](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Por meio do Cloud Manager, ele impede que o Cloud Acceleration Manager chegue ao serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é dinâmico. Atualmente, a única solução é desativar a inclui na lista de permissões de IP durante o processo de assimilação e indexação.
+* Se um [A Inclui na lista de permissões IP foi aplicada](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) por meio do Cloud Manager, impede que o Cloud Acceleration Manager chegue ao serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é dinâmico. Atualmente, a única solução é desativar a inclui na lista de permissões de IP durante o processo de assimilação e indexação.
 * Pode haver outros motivos que precisem de investigação. Se a assimilação ou indexação continuar a falhar, entre em contato com o Atendimento ao cliente da Adobe.
 
 ### Atualizações e assimilações de versão do AEM {#aem-version-updates-and-ingestions}
@@ -176,7 +176,7 @@ Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atual
 >abstract="Uma causa comum da falha de exclusão do conteúdo durante a ingestão é um conflito nas IDs dos nós. Somente um dos nós em conflito pode existir."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=pt-BR#top-up-ingestion-process" text="Ingestão complementar"
 
-Uma causa comum de [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) a falha é um conflito nas ids do nó. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
+Uma causa comum de [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) a falha é um conflito nas ids do nó. Para identificar esse erro, baixe o log de assimilação usando a interface do usuário do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: propriedade violada de restrição de exclusividade [jcr:uuid] com valor a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
@@ -196,7 +196,7 @@ Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conte�
 >abstract="Uma causa comum da falha de exclusão do conteúdo durante a ingestão é um conflito de versão de um determinado nó na instância de destino. As versões do nó precisam ser corrigidas."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=pt-BR#top-up-ingestion-process" text="Ingestão complementar"
 
-Outra causa comum de uma [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) falha é um conflito de versão para um determinado nó na instância de destino. Para identificar esse erro, baixe o log de assimilação usando a interface do Cloud Acceleration Manager e procure uma entrada como a seguinte:
+Outra causa comum de uma [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) falha é um conflito de versão para um determinado nó na instância de destino. Para identificar esse erro, baixe o log de assimilação usando a interface do usuário do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
 >java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakIntegrity0001: não é possível excluir o nó referenciado: 8a2289f4-b904-4bd0-8410-15e41e0976a8
 
@@ -216,7 +216,7 @@ As práticas recomendadas indicam que, se uma **Não-apagamento** a assimilaçã
 
 Os valores de propriedade do nó armazenados no MongoDB não podem exceder 16 MB. Se um valor de nó exceder o tamanho permitido, a assimilação falhará e o log conterá um `BSONObjectTooLarge` e especificar qual nó excedeu o máximo. Essa é uma restrição MongoDB.
 
-Consulte a `Node property value in MongoDB` observação em [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta Oak que pode ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
+Consulte a `Node property value in MongoDB` observação em [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta do Oak que pode ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
 
 Para possivelmente evitar essa restrição, execute o [Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) sobre o AEM de origem e rever as conclusões que apresenta, em especial a [&quot;Estrutura de repositório não compatível&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs) padrão.
 

@@ -1796,7 +1796,7 @@ Esta consulta interroga:
 } 
 ```
 
-## Exemplos de consultas para entrega de ativos do DAM e do Dynamic Media {#sample-queries-delivery-DAM-DM}
+## Exemplos de consulta para entrega do DAM e do Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
 
 Para entrega de imagens otimizadas para a Web (de ativos DAM):
 
