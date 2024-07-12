@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
 workflow-type: tm+mt
-source-wordcount: '2668'
+source-wordcount: '2687'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ Ao abrir o Editor de fragmento de conteúdo pela primeira vez, você vê quatro 
    * [Publish](#publish-content-fragment), e [Cancelar publicação](#unpublish-content-fragment) ações
    * uma opção para mostrar tudo **Referências principais** (ícone de link)
    * o fragmento **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** e as últimas informações salvas
-   * uma alternância para alternar para o editor original (baseado em ativos)
+   * um botão para alternar para o editor original (baseado no Assets)
 
      >[!WARNING]
      >
@@ -348,19 +348,26 @@ Entrada **Referência de conteúdo** campos que você pode:
 Para adicionar um ativo, é possível:
 
 * arraste e solte o novo arquivo de ativo diretamente (por exemplo, do seu sistema de arquivos) na **Referência de conteúdo** campo
-* use o **Adicionar ativo** e selecione **Procurar ativos** ou **Carregar** para abrir o seletor apropriado para você usar:
+* use o **Adicionar ativo** e selecione **Procurar no Assets** ou **Carregar** para abrir o seletor apropriado para você usar:
 
   ![Editor de fragmento de conteúdo — Adicionar opções de ativos](assets/cf-authoring-add-asset-options.png)
 
 #### Páginas de referência {#reference-pages}
 
-Para adicionar referências a páginas AEM, Fragmentos de experiência ou outros tipos de conteúdo:
+Para adicionar referências a páginas AEM, Fragmentos de experiência ou outros tipos de conteúdo semelhantes:
 
 1. Selecionar **Adicionar caminho de conteúdo**.
 
 1. Adicione o caminho necessário no campo de entrada.
 
 1. Confirmar com **Adicionar**.
+
+>[!NOTE]
+>
+>Isso não deve ser usado para referências a:
+>
+>* Fragmentos de conteúdo - use um [Referência do fragmento](#fragment-references)
+>* Imagens - usar [Imagens de referência](#reference-images)
 
 ### Exibir Referências Pai {#view-parent-references}
 
@@ -475,7 +482,7 @@ Quando o URL tiver sido definido, a variável **Visualizar** O botão está ativ
 Você pode **Publish** o fragmento é anexado ao:
 
 * Visualizar instância
-* Publicar instância
+* Instância do Publish
 
 Você pode publicar o fragmento no editor ou no console. Consulte [Publicar e visualizar um fragmento](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) para obter detalhes completos.
 
@@ -484,7 +491,7 @@ Você pode publicar o fragmento no editor ou no console. Consulte [Publicar e vi
 Também é possível **Cancelar publicação** o fragmento é proveniente de:
 
 * Visualizar instância
-* Publicar instância
+* Instância do Publish
 
 Você pode desfazer a publicação do fragmento no editor ou no console. Consulte [Desfazer a publicação de um fragmento](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) para obter detalhes completos.
 
