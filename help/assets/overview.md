@@ -13,7 +13,7 @@ ht-degree: 77%
 ---
 
 
-# Introdução aos Assets as a [!DNL Cloud Service] para gerenciamento de ativos digitais no AEM {#assets-cloud-service-introduction}
+# Apresentando o Assets as a [!DNL Cloud Service] para Gerenciamento de ativos digitais no AEM {#assets-cloud-service-introduction}
 
 <!-- Need review information from gklebus -->
 
@@ -23,13 +23,13 @@ A assimilação simultânea de muitos ativos ou ativos complexos é uma tarefa q
 
 As empresas exigem suporte para uma grande variedade de formatos de arquivo e resoluções de conteúdo para uso em multidispositivos, geografia cruzada e multilíngue. Os requisitos de processamento e armazenamento de ativos exigem recursos e capacidades que podem sobrecarregar uma solução tradicional. Por vezes, as limitações técnicas do processamento de ativos não produzem os resultados desejados e, em outras ocasiões, o custo de armazenamento constitui um entrave às margens de lucro.
 
-Para começar, entenda a [benefícios de uma oferta nativa em nuvem](#solution-benefits) para o Gerenciamento de ativos digitais. Confira as notáveis [alterações no Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) que também afetam o Experience Manager Assets, seguida das significantes [alterações no Assets](/help/assets/assets-cloud-changes.md).
+Para começar, entenda os [benefícios de uma oferta nativa em nuvem](#solution-benefits) para o Gerenciamento de ativos digitais. Confira as notáveis [alterações no Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) que também afetam o Experience Manager Assets, seguida das significantes [alterações no Assets](/help/assets/assets-cloud-changes.md).
 
 Leia para conhecer os [detalhes dos novos recursos do Assets](#whats-new-assets) e [problemas conhecidos](/help/release-notes/maintenance/latest.md). Veja uma lista de [funcionalidades obsoletas ou removidas](/help/release-notes/deprecated-removed-features.md) para saber o que foi removido nesta versão. Finalmente, entenda os termos do Experience Manager com a ajuda desse [glossário](/help/overview/terminology.md).
 
 ## Benefícios da solução {#solution-benefits}
 
-A seguir estão os principais benefícios do Assets as a [!DNL Cloud Service] para o Gerenciamento de ativos digitais. Para saber mais, consulte a [visão geral do Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
+Estes são os principais benefícios do Assets as a [!DNL Cloud Service] para o Gerenciamento de ativos digitais. Para saber mais, consulte a [visão geral do Experience Manager as a [!DNL Cloud Service]](/help/overview/introduction.md).
 
 * **Serviços em nuvem modernos para processamento de ativos**: Os novos microsserviços de ativos são um serviço de processamento de ativos baseado em nuvem, escalável, confiável e sem complicações.
 * **Altamente escalável**: Escalabilidade elástica em todos os tipos de implantações. Recursos praticamente ilimitados que estão disponíveis sob demanda, conforme e quando necessário. Economiza o custo do over-design em comparação com um sistema tradicional.
@@ -58,11 +58,11 @@ Para obter informações sobre como acessar a visualização de ativos e alguns 
 
 O Edge Delivery permite criar sites rápidos e cativantes, nos quais autores(as) podem atualizar, publicar conteúdo e inicializar novos sites, tudo de maneira rápida.
 
-Integre o AEM Assets com a Criação baseada em documentos para que o Edge Delivery Services permita que os autores de sites usem imagens disponíveis em repositórios do AEM Assets ao criar documentos no Microsoft Word ou Google Docs. Para obter mais informações, consulte [Integrar o AEM Assets com a criação baseada em documentos](/help/edge/using.md#integrate-assets-edge).
+Integre o AEM Assets com a Criação baseada em documentos para que o Edge Delivery Services permita que os autores de sites usem imagens disponíveis em repositórios do AEM Assets ao criar documentos no Microsoft Word ou Google Docs. Para obter mais informações, consulte [Integrar o AEM Assets com a Criação baseada em documento](/help/edge/using.md#integrate-assets-edge).
 
 ## Integração com o Adobe Journey Optimizer {#integration-with-ajo}
 
-[Adobe Journey Optimizer](https://business.adobe.com/br/products/journey-optimizer/adobe-journey-optimizer.html) O simplifica o gerenciamento de jornadas para que os clientes forneçam campanhas omnicanais com insights e decisões inteligentes. Ao criar mensagens usando o Journey Optimizer, você pode acessar o repositório as a Cloud Service do Assets diretamente de dentro da interface do Journey Optimizer. Os usuários obtêm acesso aos ativos usando a interface incorporada do Experience Manager Assets. Para obter mais informações, consulte [Criar e gerenciar ativos com o Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
+O [Adobe Journey Optimizer](https://business.adobe.com/br/products/journey-optimizer/adobe-journey-optimizer.html) simplifica o gerenciamento de jornadas para que os clientes forneçam campanhas omnicanais com insights e decisões inteligentes. Ao criar mensagens usando o Journey Optimizer, você pode acessar o repositório as a Cloud Service do Assets diretamente de dentro da interface do Journey Optimizer. Os usuários obtêm acesso aos ativos usando a interface incorporada do Experience Manager Assets. Para obter mais informações, consulte [Criar e gerenciar ativos com o Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
 
 ## Novos recursos do Assets {#whats-new-assets}
 
@@ -85,4 +85,4 @@ Os novos recursos significativos são:
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

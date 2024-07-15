@@ -62,13 +62,13 @@ Para proprietários de conteúdo que também são responsáveis pela tradução,
 1. Localize a raiz do idioma do projeto. Por exemplo, se a raiz do idioma for inglês, `/content/<your-project>/en`.
    * Antes da primeira tradução, verifique se as outras pastas de idioma são espaços reservados vazios. Normalmente, estes são criados pelo arquiteto de conteúdo.
 1. Localize a raiz do idioma do projeto.
-1. Selecione o seletor de painéis e exiba as **Referências** painel.
-1. Selecionar **Cópias de idioma**.
+1. Selecione o seletor do painel e exiba o painel **Referências**.
+1. Selecione **Cópias de idioma**.
 1. Marque a caixa de seleção **Cópias de idioma**.
 1. Expanda a seção **Atualizar cópias de Idioma** na parte inferior do painel de referências.
-1. No **Projeto** selecione **Criar projeto(s) de tradução**.
+1. Na lista suspensa **Projeto**, selecione **Criar projeto(s) de tradução**.
 1. Forneça um título apropriado para o projeto de tradução.
-1. Selecionar **Atualizar**.
+1. Selecione **Atualizar**.
 
 ![Criar um novo projeto de tradução](assets/create-translation-project.png)
 
@@ -85,15 +85,15 @@ Você receberá uma mensagem informando que o projeto foi criado.
 Para gerentes de projeto de tradução, geralmente é necessário selecionar manualmente o conteúdo específico para incluir em um projeto de tradução. Para criar esse projeto de tradução manual, você deve começar criando um projeto vazio e depois selecionar o conteúdo a ser adicionado.
 
 1. Navegue até **Navegação** > **Projetos**.
-1. Selecionar **Criar** > **Pasta** para criar uma pasta para seus projetos.
+1. Selecione **Criar** > **Pasta** para criar uma pasta para seus projetos.
    * Isso é opcional, mas útil para organizar seus esforços de tradução.
-1. No **Criar projeto** adicionar uma **Título** para a pasta e selecione **Criar**.
+1. Na janela **Criar Projeto**, adicione um **Título** para a pasta e selecione **Criar**.
 
    ![Criar pasta de projeto](assets/create-project-folder.png)
 
 1. Selecione a pasta para abrir a pasta.
 1. Na nova pasta do projeto, selecione **Criar** > **Projeto**.
-1. Os projetos são baseados em modelos. Selecione o **Projeto de tradução** modelo para selecioná-lo e selecione **Próxima**.
+1. Os projetos são baseados em modelos. Selecione o modelo do **Projeto de tradução** para selecioná-lo e selecione **Próximo**.
 
    ![Selecionar modelo de projeto de tradução](assets/select-translation-project-template.png)
 
@@ -101,11 +101,11 @@ Para gerentes de projeto de tradução, geralmente é necessário selecionar man
 
    ![Guia Básico do projeto](assets/project-basic-tab.png)
 
-1. No **Avançado** , use o **Idioma de destino** para selecionar os idiomas nos quais o conteúdo deve ser traduzido. Selecione **Criar**.
+1. Na guia **Avançado**, use a lista suspensa **Idioma de Destino** para selecionar os idiomas nos quais seu conteúdo deve ser traduzido. Selecione **Criar**.
 
    ![Guia Avançado do projeto](assets/project-advanced-tab.png)
 
-1. Selecionar **Abertura** no diálogo de confirmação.
+1. Selecione **Abrir** no diálogo de confirmação.
 
    ![Caixa de diálogo de confirmação do projeto](assets/project-confirmation-dialog.png)
 
@@ -118,26 +118,26 @@ Os projetos de tradução são projetados para coletar todo o conteúdo e tarefa
 Para exibir o projeto de tradução:
 
 1. Navegue até **Navegação** > **Projetos**.
-1. Selecione o projeto criado na seção anterior (ou [Criação automática de um projeto de tradução com base no caminho do conteúdo](#automatically-creating) ou [Criação manual de um projeto de tradução selecionando o conteúdo](#manually-creating) dependendo da sua situação).
+1. Selecione o projeto criado na seção anterior ([Criação automática de um projeto de tradução com base no caminho do conteúdo](#automatically-creating) ou [Criação manual de um projeto de tradução ao selecionar seu conteúdo](#manually-creating), dependendo da sua situação).
 
 ![Projeto de tradução](assets/translation-project.png)
 
 O projeto é dividido em vários cartões.
 
 * **Resumo** — este cartão mostra as informações básicas do cabeçalho do projeto, incluindo o proprietário, o idioma e o provedor de tradução.
-* **Tarefa de tradução** : esse cartão ou esses cartões apresentam uma visão geral do trabalho de tradução real, incluindo o status, o número de ativos e assim por diante. Geralmente, há uma tarefa por idioma com o código de idioma ISO-2 anexado ao nome da tarefa.
-   * Quando [criação automática de trabalhos de tradução,](#automatically-creating) O AEM cria os trabalhos de forma assíncrona e eles podem não aparecer imediatamente no projeto.
+* **Tarefa de tradução** - Este cartão ou estes cartões apresentam uma visão geral do trabalho de tradução real, incluindo o status, o número de ativos, etc. Geralmente, há uma tarefa por idioma com o código de idioma ISO-2 anexado ao nome da tarefa.
+   * Ao [criar trabalhos de tradução automaticamente,](#automatically-creating) o AEM cria os trabalhos de forma assíncrona e eles podem não aparecer imediatamente no projeto.
 * **Equipe** — este cartão mostra os usuários que estão colaborando neste projeto de tradução. Essa jornada não aborda esse tópico.
 * **Tarefas** — tarefas adicionais associadas à tradução do conteúdo, como itens por fazer ou itens de fluxo de trabalho. Essa jornada não aborda esse tópico.
 
 Para entender melhor o fluxo de tradução no AEM, é útil fazer uma alteração nas configurações do projeto. Essa etapa não é necessária para traduções em produção, mas auxilia na compreensão do processo.
 
-1. No **Resumo** selecione o botão de reticências na parte inferior do cartão.
+1. No cartão **Resumo**, selecione o botão de reticências na parte inferior do cartão.
 1. Na guia **Avançado**, desmarque a opção **Excluir lançamento após promoção**.
 
    ![Excluir lançamento após promoção](assets/delete-launch-option.png)
 
-1. Selecionar **Salvar e fechar**.
+1. Selecione **Salvar e fechar**.
 
 Agora você está pronto para usar seu projeto de tradução. A forma como você usa um projeto de tradução depende de como ele foi criado: automaticamente pelo AEM ou manualmente.
 
@@ -147,7 +147,7 @@ Ao criar automaticamente o projeto de tradução, o AEM avalia o conteúdo no ca
 
 Para ver os detalhes do conteúdo incluído neste projeto:
 
-1. Selecione o botão de reticências na parte inferior da **Tarefa de tradução** cartão.
+1. Selecione o botão de reticências na parte inferior do cartão **Tarefa de tradução**.
 1. A janela **Tarefa de tradução** lista todos os itens na tarefa.
 
    ![Detalhes do trabalho de tradução](assets/translation-job-detail.png)
@@ -159,7 +159,7 @@ Para ver os detalhes do conteúdo incluído neste projeto:
 
 Normalmente, o conteúdo do trabalho de tradução começa no estado de **Rascunho**, conforme indicado pela coluna **Estado** na janela **Tarefa de tradução**.
 
-Para iniciar o trabalho de tradução, volte para a visão geral do projeto de tradução e selecione o botão de divisa na parte superior da **Tarefa de tradução** e selecione **Início**.
+Para iniciar o trabalho de tradução, volte para a visão geral do projeto de tradução e selecione o botão de divisa na parte superior do cartão **Trabalho de tradução** e selecione **Iniciar**.
 
 ![Iniciar tarefa de tradução](assets/start-translation-job.png)
 
@@ -177,7 +177,7 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 >
 >Se você não desativou a opção de projeto **Excluir lançamento após promoção** como [descrito na seção anterior,](#using-translation-project) os itens traduzidos aparecerão com o estado **Excluído**. Isso é normal, pois o AEM descarta automaticamente os registros de tradução quando os itens traduzidos chegam. Os itens traduzidos foram importados como cópias de idioma. Somente os registros de tradução foram excluídos, pois não são mais necessários.
 >
->Não se preocupe se isso não está claro. Este é um detalhamento aprofundado de como o AEM funciona e não afeta sua compreensão da jornada. Se quiser se aprofundar em como o AEM processa traduções, consulte [recursos adicionais](#additional-resources) no final deste artigo.
+>Não se preocupe se isso não está claro. Este é um detalhamento aprofundado de como o AEM funciona e não afeta sua compreensão da jornada. Se quiser se aprofundar em como o AEM processa traduções, consulte a seção [recursos adicionais](#additional-resources) no final deste artigo.
 
 ### Usar um projeto de tradução criado manualmente {#using-manual-project}
 
@@ -185,8 +185,8 @@ Ao criar manualmente um projeto de tradução, o AEM cria as tarefas necessária
 
 Para adicionar conteúdo a uma tarefa de tradução:
 
-1. Selecione o botão de reticências na parte inferior de um dos **Tarefa de tradução** cartões.
-1. Veja se a tarefa não contém conteúdo. Selecione o **Adicionar** na parte superior da janela e, em seguida, **Ativos/páginas** no menu suspenso.
+1. Selecione o botão de reticências na parte inferior de um dos cartões de **Tarefa de tradução**.
+1. Veja se a tarefa não contém conteúdo. Selecione o botão **Adicionar** na parte superior da janela e, em seguida, **Assets/Páginas** no menu suspenso.
 
    ![Tarefa de tradução vazia](assets/empty-translation-job.png)
 
@@ -194,8 +194,8 @@ Para adicionar conteúdo a uma tarefa de tradução:
 
    ![Navegador de caminho](assets/path-browser.png)
 
-1. Selecionar **Selecionar** para adicionar o conteúdo selecionado à tarefa.
-1. No **Traduza** , especifique que deseja **Criar cópia de idioma**.
+1. Selecione **Selecionar** para adicionar o conteúdo selecionado ao trabalho.
+1. Na caixa de diálogo **Traduzir**, especifique que deseja **Criar Cópia de Idioma**.
 
    ![Criar cópia de idioma](assets/translate-copy-master.png)
 
@@ -211,7 +211,7 @@ Para adicionar conteúdo a uma tarefa de tradução:
 
 >[!TIP]
 >
->O navegador de caminho é uma ferramenta poderosa que permite pesquisar, filtrar e navegar pelo seu conteúdo. Selecione o **Somente conteúdo/Filtros** botão para alternar o painel lateral e revelar filtros avançados, como **Data de modificação** ou **Status da tradução**.
+>O navegador de caminho é uma ferramenta poderosa que permite pesquisar, filtrar e navegar pelo seu conteúdo. Selecione o botão **Somente conteúdo/Filtros** para alternar o painel lateral e revelar filtros avançados como **Data de Modificação** ou **Status da Tradução**.
 >
 >Você pode saber mais sobre o navegador de caminho na [seção recursos adicionais.](#additional-resources)
 
@@ -219,7 +219,7 @@ Você pode usar as etapas anteriores para adicionar o conteúdo necessário a to
 
 Normalmente, o conteúdo do trabalho de tradução começa no estado de **Rascunho**, conforme indicado pela coluna **Estado** na janela **Tarefa de tradução**.
 
-Para iniciar o trabalho de tradução, volte para a visão geral do projeto de tradução e selecione o botão de divisa na parte superior da **Tarefa de tradução** e selecione **Início**.
+Para iniciar o trabalho de tradução, volte para a visão geral do projeto de tradução e selecione o botão de divisa na parte superior do cartão **Trabalho de tradução** e selecione **Iniciar**.
 
 ![Iniciar tarefa de tradução](assets/start-translation-job.png)
 
@@ -237,7 +237,7 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 >
 >Se você não desativou a opção de projeto **Excluir lançamento após promoção** como [descrito na seção anterior,](#using-translation-project) os itens traduzidos aparecerão com o estado **Excluído**. Isso é normal, pois o AEM descarta automaticamente os registros de tradução quando os itens traduzidos chegam. Os itens traduzidos foram importados como cópias de idioma. Somente os registros de tradução foram excluídos, pois não são mais necessários.
 >
->Não se preocupe se isso não está claro. Este é um detalhamento aprofundado de como o AEM funciona e não afeta sua compreensão da jornada. Se quiser se aprofundar em como o AEM processa traduções, consulte [recursos adicionais](#additional-resources) no final deste artigo.
+>Não se preocupe se isso não está claro. Este é um detalhamento aprofundado de como o AEM funciona e não afeta sua compreensão da jornada. Se quiser se aprofundar em como o AEM processa traduções, consulte a seção [recursos adicionais](#additional-resources) no final deste artigo.
 
 ## Revisar conteúdo traduzido {#reviewing}
 
@@ -259,7 +259,7 @@ O objetivo do projeto é coletar todos os recursos relacionados a uma tradução
 /content/<your-project>/es
 ```
 
-Se você navegar até esta pasta por meio de **Navegação** > **Sites**, você verá o conteúdo traduzido.
+Se você navegar até esta pasta por meio da **Navegação** > **Sites**, verá o conteúdo traduzido.
 
 ![Estrutura da pasta de conteúdo traduzido](assets/translated-sites-content.png)
 
@@ -281,7 +281,7 @@ Agora que concluiu esta parte da jornada de tradução do AEM Sites, você deve:
 * Ser capaz de criar novos projetos de tradução.
 * Use projetos de tradução para traduzir o conteúdo.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento a seguir [Publicar conteúdo traduzido](publish-content.md) onde você aprende a publicar seu conteúdo traduzido e como atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
+Desenvolva esse conhecimento e prossiga com sua jornada de tradução do AEM Sites revisando a seguir o documento [Conteúdo traduzido do Publish](publish-content.md), no qual você aprenderá a publicar seu conteúdo traduzido e a atualizar essas traduções conforme o conteúdo da raiz do idioma mudar.
 
 ## Recursos adicionais {#additional-resources}
 

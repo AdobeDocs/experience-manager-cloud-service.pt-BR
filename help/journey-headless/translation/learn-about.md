@@ -82,4 +82,4 @@ Embora seja recomendável seguir para a próxima parte da jornada de tradução 
 
 * [MSM e tradução](/help/sites-cloud/administering/msm-and-translation.md) - os detalhes do Gerenciamento de vários sites do AEM e como ele trabalha com ferramentas de tradução
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
-* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)

@@ -1,5 +1,5 @@
 ---
-title: Carregar opções de lista suspensa de um URL ou outra planilha para o Edge Delivery Services para AEM Forms as a Cloud Service
+title: Carregar opções de lista suspensa de um URL ou outra planilha para Edge Delivery Services para AEM Forms as a Cloud Service
 description: As opções da lista suspensa são incluídas em uma planilha distinta e, em seguida, importadas para a planilha principal por meio do URL fornecido.
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
@@ -12,7 +12,7 @@ ht-degree: 0%
 ---
 
 
-# Opções de um URL ou outra planilha para o Edge Delivery Services para o AEM Forms as a Cloud Service
+# Opções de um URL ou outra planilha para Edge Delivery Services para AEM Forms as a Cloud Service
 
 O Forms geralmente inclui menus suspensos para que os usuários selecionem entre as opções predefinidas. Normalmente, essas opções são definidas no próprio formulário, mas o gerenciamento de listas longas pode ser complicado. Este guia descreve como melhorar a criação de formulários carregando opções suspensas de uma planilha separada por meio de um URL.
 
@@ -40,7 +40,8 @@ Definição de Opções em uma Planilha Separada
 1. Criar uma planilha:
    1. Localize a pasta do projeto AEM no Microsoft® SharePoint ou Google Drive.
    1. Adicione uma nova planilha. Por exemplo, &quot;país compartilhado&quot;.
-1. Definir colunas de opção: adicione duas colunas: &quot;Option&quot; e &quot;Value&quot;.
+1. Definir Colunas de Opção:
+Adicione duas colunas: &quot;Option&quot; e &quot;Value&quot;.
    * &quot;Option&quot; define o texto exibido no menu suspenso.
    * &quot;Value&quot; define o valor enviado quando um usuário seleciona a opção.
 
@@ -48,39 +49,41 @@ Definição de Opções em uma Planilha Separada
    >
    >Se a opção e o valor forem idênticos, somente a coluna &quot;Option&quot; será necessária.
 
-1. Preencha a Planilha: Informe suas opções de país na coluna &quot;Opção&quot; (e na coluna &quot;Valor&quot;, se necessário).
+1. Preencha a planilha:
+Insira suas opções de país na coluna &quot;Option&quot; (e na coluna &quot;Value&quot;, se necessário).
 
    Consulte o exemplo abaixo para obter uma estrutura.
 
-   ![Lista suspensa para país](/help/forms/assets/drop-down-country-options.png)
+   ![Lista suspensa do país](/help/forms/assets/drop-down-country-options.png)
 
-1. Pré-visualizar e publicar o `shared-country` planilha usando [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Visualize e publique a planilha `shared-country` usando o [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Consulte o URL que mostra a variável `shared-country` planilha: https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
+   Consulte a URL que mostra a folha `shared-country`:
+https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
 
 >[!NOTE]
 >
-> `?sheet=country` é um parâmetro de consulta anexado ao URL. Esse parâmetro indica o JSON filtrado com base no `shared-country` planilha. Ele redireciona para o arquivo JSON contendo informações relacionadas a diferentes países.
+> `?sheet=country` é um parâmetro de consulta anexado à URL. Este parâmetro indica o JSON filtrado com base na planilha `shared-country`. Ele redireciona para o arquivo JSON contendo informações relacionadas a diferentes países.
 
 ## Adicionar URL para carregar opções da lista suspensa{#add-url}
 
-A variável `Options` propriedade de um `select` aceita um URL. O URL retorna uma matriz JSON usada como opções para a variável `Destination` lista suspensa. Para adicionar as opções da lista suspensa URL to load:
+A propriedade `Options` de um campo `select` aceita uma URL. A URL retorna uma matriz JSON usada como opções para a lista suspensa `Destination`. Para adicionar as opções da lista suspensa URL to load:
 
 1. Vá para a pasta do Projeto AEM no Microsoft® SharePoint ou Google Drive e abra a planilha. Você também pode criar uma nova planilha para um formulário.
-1. Copie o URL de `shared-country` planilha e cole-a na caixa `Options` coluna para a `Destination` campo.
+1. Copie a URL da folha `shared-country` e cole-a na coluna `Options` do campo `Destination`.
 
    ![Planilha de consulta](/help/forms/assets/drop-down-enquiry.png)
 
-1. Visualizar e publicar a planilha usando [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
+1. Visualize e publique a planilha usando o [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
 
-   ![Lista suspensa para país](/help/forms/assets/load-dropdown-options-form.png)
+   ![Lista suspensa do país](/help/forms/assets/load-dropdown-options-form.png)
 
-Você pode consultar a [planilha de consulta](/help/forms/assets/enquiry-options.xlsx) para adicionar as opções da lista suspensa URL to load.
+Você pode consultar a [planilha de consulta](/help/forms/assets/enquiry-options.xlsx) para adicionar a URL para carregar opções de listas suspensas.
 
-Depois de integrar a URL às opções da lista suspensa Definição de formulário a ser carregado, as opções para a `Destination` início da lista suspensa que aparece no URL.
+Depois de integrar a URL à definição de formulário para carregar as opções da lista suspensa, as opções para a lista suspensa `Destination` começam a aparecer na URL.
 
-Consulte o URL abaixo, que exibe a variável `enquiry` formulário exibindo as opções salvas na planilha separada:
+Consulte a URL abaixo, que exibe o formulário `enquiry` exibindo as opções salvas em uma planilha separada:
 
 https://main--wefinance--wkndforms.hlx.live/enquiry-form
 

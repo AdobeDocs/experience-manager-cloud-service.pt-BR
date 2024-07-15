@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # Configuração do Dynamic Media {#setting-up-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) O ajuda você a gerenciar ativos fornecendo merchandising visual avançado e ativos de marketing sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
+O [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ajuda você a gerenciar ativos fornecendo merchandising visual avançado e ativos de marketing sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
 
 <!-- OBSOLETE UNTIL THE INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
@@ -40,6 +40,6 @@ Consulte também os seguintes tópicos:
 
 >[!NOTE]
 >
->**Se você estiver atualizando:**
+>**Se estiver atualizando:**
 >
->* Depois que você tiver o Adobe [!DNL Experience Manager] ativo e em execução, qualquer ativo que você fizer upload tem o Dynamic Media ativado automaticamente (a menos que tenha sido explicitamente desativado pelo administrador do sistema). Se você estiver em uma instância atualizada do [!DNL Experience Manager] e novo no Dynamic Media, você provavelmente deve reprocessar seus ativos para ativá-los para Dynamic Media. Consulte [Reprocessar ativos em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>* Depois que o Adobe [!DNL Experience Manager] estiver em execução, todos os ativos carregados terão o Dynamic Media habilitado automaticamente (a menos que ele tenha sido explicitamente desabilitado pelo administrador do sistema). Se você estiver em uma instância atualizada do [!DNL Experience Manager] e for novo no Dynamic Media, provavelmente precisará reprocessar seus ativos para torná-los habilitados para Dynamic Media. Consulte [Reprocessar ativos em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).

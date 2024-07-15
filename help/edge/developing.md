@@ -20,14 +20,14 @@ Os blocos são a parte mais fundamental de uma página entregue pelo Edge Delive
 
 O AEM fornece blocos padrão como parte do produto dentro da placa do projeto. Esses blocos incluem cabeçalho, texto, imagens, links, listas, etc.
 
-Consulte a [Criar seção](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços de Entrega de borda.
+Consulte a [seção Build](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços da Edge Delivery.
 
 ## Edge Delivery Services e GitHub {#github-edge}
 
-O Edge Delivery aproveita o GitHub para que você possa gerenciar e implantar o código diretamente do seu repositório GitHub.
+O Edge Delivery usa o GitHub para que você possa gerenciar e implantar o código diretamente do seu repositório GitHub.
 
 Seus autores podem criar conteúdo usando a Criação baseada em documento ou conteúdo no AEM com o Universal Editor. Os desenvolvedores podem personalizar a funcionalidade do site usando CSS e JavaScript no GitHub, independentemente de como os autores criam seu conteúdo.
 
 Os sites são criados automaticamente para cada uma de suas ramificações, da pré-visualização de conteúdo à produção. Todos os recursos que você coloca no repositório GitHub estão disponíveis no seu site sem um processo de criação.
 
-Consulte a [Criar seção](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços de Entrega de borda.
+Consulte a [seção Build](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços da Edge Delivery.

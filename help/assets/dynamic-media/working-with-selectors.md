@@ -24,35 +24,35 @@ Por exemplo, neste banner de carrossel, você usa o seletor de produto se estive
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou mapas de imagem são direcionados, você está usando o seletor. O Seletor de sites só funciona se você for um [!DNL Adobe Experience Manager Sites] cliente. O seletor de produtos também exige [!DNL Experience Manager Commerce].
+Ao selecionar (em vez de inserir manualmente) para onde os pontos de acesso ou mapas de imagem são direcionados, você está usando o seletor. O Seletor de sites só funciona se você for um cliente do [!DNL Adobe Experience Manager Sites]. O seletor de produtos também requer [!DNL Experience Manager Commerce].
 
 ## Selecionar produtos no Dynamic Media {#selecting-products}
 
 Use o seletor de produtos para escolher um produto quando quiser um ponto de acesso ou mapa de imagem que forneça uma exibição rápida para um produto específico em seu catálogo de produtos.
 
-1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e selecione a **[!UICONTROL Ações]** guia (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
+1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e selecione a guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
-   O seletor de produto está na **[!UICONTROL Tipo de ação]** área.
+   O seletor de Produto está na área **[!UICONTROL Tipo de Ação]**.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
-1. Selecione o **[!UICONTROL Seletor de produto]** (lupa) e navegue até um produto no catálogo.
+1. Selecione o ícone (lupa) do **[!UICONTROL Seletor de Produto]** e navegue até um produto no catálogo.
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   Você pode filtrar por palavra-chave ou tag tocando **[!UICONTROL Filtro]** e digitando palavras-chave, selecionando tags ou ambos.
+   Você pode filtrar por palavra-chave ou marca tocando em **[!UICONTROL Filtrar]** e inserindo palavras-chave, selecionando marcas ou ambos.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   É possível alterar onde [!DNL Experience Manager] procura dados do produto tocando em **[!UICONTROL Procurar]** e navegar para outra pasta.
+   Você pode alterar o local em que [!DNL Experience Manager] procura dados de produto tocando em **[!UICONTROL Procurar]** e navegando para outra pasta.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Selecionar **[!UICONTROL Classificar por]** para alterar se [!DNL Experience Manager] classifica do mais novo para o mais antigo ou do mais antigo para o mais recente.
+   Selecione **[!UICONTROL Classificar por]** para alterar se [!DNL Experience Manager] classifica do mais novo para o mais antigo ou do mais antigo para o mais recente.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Selecionar **[!UICONTROL Exibir como]** para alterar a exibição de produtos - **[!UICONTROL Exibição de lista]** ou **[!UICONTROL Exibição de cartão]**.
+   Selecione **[!UICONTROL Exibir como]** para alterar a exibição de produtos - **[!UICONTROL Exibição em Lista]** ou **[!UICONTROL Exibição de Cartão]**.
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -60,21 +60,21 @@ Use o seletor de produtos para escolher um produto quando quiser um ponto de ace
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. Quando em **[!UICONTROL Visualizar]** , você pode selecionar o ponto de acesso ou mapa de imagem e ver como o Quickview é exibido.
+1. No modo de **[!UICONTROL Visualização]**, é possível selecionar o ponto de acesso ou mapa de imagem e ver como a exibição rápida é exibida.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
 ## Selecionar sites no Dynamic Media {#selecting-sites}
 
-Use o seletor de sites para escolher uma página da Web quando quiser que um ponto de acesso ou mapa de imagem se vincule a uma página da Web gerenciada no [!DNL Experience Manager] sites.
+Use o seletor de sites para escolher uma página da Web quando quiser que um ponto de acesso ou mapa de imagem seja vinculado a uma página da Web gerenciada em [!DNL Experience Manager] sites.
 
-1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e selecione a **[!UICONTROL Ações]** guia (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
+1. Navegue até o Conjunto de carrosséis, Imagem interativa ou Vídeo interativo e selecione a guia **[!UICONTROL Ações]** (disponível somente se tiver definido um ponto de acesso ou mapa de imagem).
 
    O Seletor de site está na área **[!UICONTROL Tipo de ação]**.
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Selecione o **[!UICONTROL Seletor de sites]** (pasta com lupa) e navegue até uma página no seu [!DNL Experience Manager] sites aos quais você deseja vincular o ponto de acesso ou mapa de imagem.
+1. Selecione o ícone do **[!UICONTROL Seletor de sites]** (pasta com lupa) e navegue até uma página em seus sites do [!DNL Experience Manager] para a qual você deseja vincular o ponto de acesso ou mapa de imagem.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -82,30 +82,30 @@ Use o seletor de sites para escolher uma página da Web quando quiser que um pon
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Quando em **[!UICONTROL Visualizar]** se selecionar o ponto de acesso ou mapa de imagem, você navegará para o [!DNL Experience Manager] página do site especificada.
+1. Se você selecionar o ponto de acesso ou o mapa de imagem no modo **[!UICONTROL Visualização]**, navegue até a página do site [!DNL Experience Manager] especificada.
 
 ## Selecionar ativos no Dynamic Media {#selecting-assets}
 
-Use esse seletor para escolher imagens para usar em um banner de carrossel, um vídeo interativo, conjuntos de imagens, conjuntos de mídia mista e conjuntos de rotação. No Vídeo interativo, o seletor de ativos está disponível ao selecionar **[!UICONTROL Selecionar ativos]** no **[!UICONTROL Conteúdo]** guia. Em Conjuntos de carrossel, o seletor de ativos está disponível ao criar um slide. Em Conjuntos de imagens, Conjuntos de mídias mistas e Conjuntos de rotação, o seletor de ativos fica disponível ao criar um Conjunto de imagens, Conjunto de mídias mistas ou Conjunto de rotação, respectivamente.
+Use esse seletor para escolher imagens para usar em um banner de carrossel, um vídeo interativo, conjuntos de imagens, conjuntos de mídia mista e conjuntos de rotação. No Vídeo interativo, o seletor de ativos está disponível ao selecionar **[!UICONTROL Selecionar Assets]** na guia **[!UICONTROL Conteúdo]**. Em Conjuntos de carrossel, o seletor de ativos está disponível ao criar um slide. Em Conjuntos de imagens, Conjuntos de mídias mistas e Conjuntos de rotação, o seletor de ativos fica disponível ao criar um Conjunto de imagens, Conjunto de mídias mistas ou Conjunto de rotação, respectivamente.
 
 Consulte também [Seletor de ativos](/help/assets/search-assets.md#asset-selector) para obter mais informações.
 
-1. Navegue até o Conjunto de carrosséis e crie um slide. Ou, navegue até o Vídeo interativo, acesse o link **[!UICONTROL Conteúdo]** e, em seguida, selecione assets. Ou crie um Conjunto de mídia mista, Conjunto de imagens ou Conjunto de rotação.
-1. Selecione o **[!UICONTROL Seletor de ativos]** (pasta com lupa) e navegue até um ativo.
+1. Navegue até o Conjunto de carrosséis e crie um slide. Ou navegue até o Vídeo interativo, acesse a guia **[!UICONTROL Conteúdo]** e selecione ativos. Ou crie um Conjunto de mídia mista, Conjunto de imagens ou Conjunto de rotação.
+1. Selecione o ícone **[!UICONTROL Seletor de ativos]** (pasta com lupa) e navegue até um ativo.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
 
-   Filtrar por palavra-chave ou tag tocando **[!UICONTROL Filtro]** e digitando palavras-chave, adicionando critérios ou ambos.
+   Filtre por palavra-chave ou marca tocando em **[!UICONTROL Filtrar]** e inserindo palavras-chave, adicionando critérios ou ambos.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   É possível alterar onde [!DNL Experience Manager] procura ativos ao navegar para outra pasta na **[!UICONTROL Caminho]** campo.
+   Você pode alterar onde [!DNL Experience Manager] procura ativos navegando para outra pasta no campo **[!UICONTROL Caminho]**.
 
-   Selecionar **[!UICONTROL Coleção]** para pesquisar apenas ativos dentro de coleções.
+   Selecione **[!UICONTROL Coleção]** para pesquisar apenas por ativos dentro de coleções.
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Selecionar **[!UICONTROL Exibir como]** para alterar a exibição de produtos - **[!UICONTROL Exibição de lista]**, **[!UICONTROL Exibição de coluna]** ou **[!UICONTROL Exibição de cartão]**.
+   Selecione **[!UICONTROL Exibir como]** para alterar a exibição de produtos - **[!UICONTROL Exibição em Lista]**, **[!UICONTROL Exibição em Coluna]** ou **[!UICONTROL Exibição de Cartão]**.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 

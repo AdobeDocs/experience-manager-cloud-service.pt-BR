@@ -25,7 +25,7 @@ Um programa de sandbox é um dos dois tipos de programas disponíveis no AEM Clo
 
 ## Criação automática {#auto-creation}
 
-Os programas de sandbox incluem criação automática. Ao criar um programa de sandbox, o Cloud Manager automaticamente:
+Os programas de sandbox incluem criação automática. Sempre que você cria um programa de sandbox, o Cloud Manager automaticamente:
 
 * Adiciona o AEM Sites e o AEM Assets como soluções em seu programa.
 * Configura um repositório Git de projeto com um projeto de amostra baseado no [Arquétipo de projetos AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)

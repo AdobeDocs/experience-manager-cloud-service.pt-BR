@@ -17,13 +17,13 @@ ht-degree: 1%
 
 >[!INFO]
 >
->Esta documentação se refere a uma versão obsoleta da ferramenta. Para obter mais informações sobre a versão mais recente, consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
+>Esta documentação se refere a uma versão obsoleta da ferramenta. Para obter mais informações sobre a versão mais recente, consulte [Mapeamento de Usuário e Migração de Entidade de Segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## Casos excepcionais {#exceptional-cases}
 
 Os seguintes casos específicos são registrados:
 
-1. Se um usuário não tiver um endereço de email no `profile/email` do seu *jcr* , o usuário ou grupo em questão é migrado, mas não mapeado. Essa regra ocorre mesmo se o endereço de email for usado como um nome de usuário para fazer logon.
+1. Se um usuário não tiver um endereço de email no campo `profile/email` de seu nó *jcr*, o usuário ou grupo em questão será migrado, mas não será mapeado. Essa regra ocorre mesmo se o endereço de email for usado como um nome de usuário para fazer logon.
 
 1. Se um email não for encontrado no sistema Adobe Identity Management System (IMS) para a ID de organização usada (ou se a ID do IMS não puder ser recuperada), o usuário ou grupo será migrado, mas não será mapeado.
 
@@ -35,7 +35,7 @@ Os seguintes casos específicos são registrados:
 
 ## Considerações adicionais {#additional-considerations}
 
-* Se a configuração **Apagar conteúdo existente na instância da nuvem antes da assimilação** estiver definido, os usuários já transferidos na instância do Cloud Service serão excluídos. O repositório existente inteiro também é excluído e um novo repositório é criado no qual o conteúdo é assimilado. Essa ação também redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino, e é verdadeira para um usuário administrador adicionado à variável **administradores** grupo. O usuário administrador deve ser lido na caixa **administradores** grupo para recuperar o token de acesso para CTT.
+* Se a configuração **Apagar conteúdo existente na instância da nuvem antes de assimilar** estiver definida, os usuários já transferidos na instância do Cloud Service serão excluídos. O repositório existente inteiro também é excluído e um novo repositório é criado no qual o conteúdo é assimilado. Esta ação também redefine todas as configurações, incluindo permissões na instância Cloud Service de destino, e é verdadeira para um usuário administrador adicionado ao grupo **administradores**. O usuário administrador deve ser lido no grupo **administradores** para recuperar o token de acesso para CTT.
 
 * O Adobe recomenda remover qualquer usuário existente da instância do AEM do Cloud Service de destino antes de executar o CTT com o Mapeamento de usuário. Essa ação é necessária para evitar qualquer conflito entre a migração de usuários da instância do AEM de origem para a instância do AEM de destino. Conflitos podem ocorrer durante a assimilação se o mesmo usuário existir na instância de AEM de origem e na instância AEM de destino.
 

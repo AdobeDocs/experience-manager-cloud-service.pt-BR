@@ -1,6 +1,6 @@
 ---
 title: Integração ao Adobe Analytics
-description: Saiba como integrar o Adobe Analytics ao AEM as a Cloud Service usando a interface do usuário de toque e o Adobe Launch.
+description: Saiba como integrar o Adobe Analytics com o AEM as a Cloud Service usando a interface para toque e o Adobe Launch.
 feature: Integration
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
@@ -14,7 +14,7 @@ ht-degree: 81%
 
 # Integração ao Adobe Analytics{#integrating-with-adobe-analytics}
 
-Integrar o Adobe Analytics e o AEM as a Cloud Service permite rastrear a atividade da página da Web. A integração exige:
+A integração do Adobe Analytics e do AEM as a Cloud Service permite rastrear a atividade da página da Web. A integração exige:
 
 * usar a interface de toque para criar uma configuração do Analytics no AEM as a Cloud Service. A autenticação IMS é necessária para integrar o Adobe Analytics com o AEM as a Cloud Service.
 * adicionar e configurar o Adobe Analytics como uma extensão no [Adobe Launch](#analytics-launch). Para obter mais detalhes sobre o Adobe Launch, consulte [esta página](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=pt_BR).
@@ -50,13 +50,13 @@ Os campos presentes na janela de configuração são os seguintes:
 
 A integração do Adobe Experience Manager as a Cloud Service (AEMaaCS) com o Adobe Analytics por meio da API do Analytics Standard requer a configuração do Adobe IMS (Identity Management System).
 
-Consulte [Configuração de integrações IMS para o AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) para saber como criar a configuração IMS.
+Consulte [Configuração de integrações do IMS para AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) para saber como criar a configuração do IMS.
 
 >[!NOTE]
 >
->[Agora as integrações IMS estão configuradas com S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
+>[As integrações IMS agora estão configuradas com S2S OAuth](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md).
 >
->As configurações anteriores foram feitas com [Credenciais JWT que agora estão sujeitas a desativação no console do Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Configurações anteriores foram feitas com [Credenciais JWT que agora estão sujeitas a desativação no Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 ### Adicionar uma configuração a um site {#add-configuration}
 

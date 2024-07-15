@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: d840e0beb8036ed8e543ac85850290e778371bbe
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '555'
+ht-degree: 20%
 
 ---
 
@@ -24,17 +24,17 @@ Este documento ajuda você a entender como começar a usar o Cloud Acceleration 
 
 ## Utilização do Cloud Acceleration Manager {#using-cam}
 
-O Cloud Acceleration Manager (CAM) oferece uma experiência única para migrações. Ele vem na forma de uma jornada guiada, fornecendo uma avaliação inicial, apontando-os para as ferramentas, a documentação e as práticas recomendadas certas, para garantir uma ativação bem-sucedida no AEM as a Cloud Service.
+O Cloud Acceleration Manager (CAM) oferece uma experiência única para migrações. Ele vem na forma de uma jornada guiada, fornecendo uma avaliação inicial, apontando para as ferramentas, a documentação e as práticas recomendadas certas para garantir uma ativação bem-sucedida no AEM as a Cloud Service.
 
 ### Navegação até o Cloud Acceleration Manager {#navigating}
 
 Siga as etapas abaixo para acessar o Cloud Acceleration Manager (CAM):
 
-1. Efetue logon no [Adobe Experience Cloud](https://experience.adobe.com).
+1. Faça logon no [Adobe Experience Cloud](https://experience.adobe.com).
 
-1. Clique em **Experience Manager** cartão.
+1. Clique no cartão **Experience Manager**.
 
-1. Clique em **Launch** do **Cloud Acceleration Manager** para que você possa abrir a landing page.
+1. Clique em **Iniciar** no cartão **Cloud Acceleration Manager** para abrir a página de aterrissagem.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-1.png)
 
@@ -46,22 +46,22 @@ Siga as etapas abaixo para acessar o Cloud Acceleration Manager (CAM):
 >abstract="Crie seu projeto e inicie a jornada para o AEM as a Cloud Service."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/benefits-cam.html?lang=pt-BR" text="Vantagens do uso do Cloud Acceleration Manager"
 
-A landing page do Cloud Acceleration Manager (CAM) permite criar e editar vários projetos.
+A landing page da Cloud Acceleration Manager (CAM) permite criar e editar vários projetos.
 
 Siga as etapas abaixo para criar um projeto:
 
-1. Clique em **Criar projeto** na landing page.
+1. Clique em **Criar projeto** na página de aterrissagem.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-2.png)
 
    >[!NOTE]
    >Os usuários que estão usando o CAM pela primeira vez veem uma caixa de diálogo para criar um projeto. Os usuários que usaram o CAM no passado veem um projeto padrão ou projetos criados anteriormente.
 
-1. Insira o **Nome** e **Descrição** para o seu projeto e clique em **Criar**.
+1. Insira o **Nome** e a **Descrição** do projeto e clique em **Criar**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-3.png)
 
-1. O projeto foi criado e é exibido no **Cloud Acceleration Manager** página de aterrissagem.
+1. O projeto foi criado e é exibido na página de aterrissagem **Cloud Acceleration Manager**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing.png)
 
@@ -81,7 +81,7 @@ Siga as etapas abaixo para editar seu projeto:
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-4.png)
 
-1. É possível editar o nome do projeto, a descrição e até mesmo fazer upload de uma nova imagem ou editar uma imagem existente em **Editar projeto** caixa de diálogo.
+1. Você pode editar o nome do projeto, a descrição e até mesmo carregar uma nova imagem ou editar uma existente na caixa de diálogo **Editar projeto**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/cam-edit.png)
 
@@ -103,4 +103,4 @@ Siga as etapas abaixo para excluir seu projeto:
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como fazer logon no Cloud Acceleration Manager e criar um projeto, você estará pronto para revisar a próxima etapa do [Fase de preparação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+Depois de saber como fazer logon no Cloud Acceleration Manager e criar um projeto, você estará pronto para revisar a próxima etapa da [Fase de preparação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).

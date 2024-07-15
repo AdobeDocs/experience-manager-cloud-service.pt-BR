@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Fontes prontas para uso (OOTB) com suporte para a geração de PDF no as a Cloud Service do Forms  {#ootb-supported-fonts-overview}
 
-O AEM Forms as a Cloud Service várias fontes incorporadas compatíveis com OOTB que podem ser usadas perfeitamente no [APIs de comunicação](/help/forms/aem-forms-cloud-service-communications-introduction.md), [Documento de registro dos Componentes principais](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record), e [Documento de Registro para Componentes de Base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
+O AEM Forms as a Cloud Service várias fontes internas com suporte a OOTB que podem ser usadas com facilidade nas [APIs de Comunicação](/help/forms/aem-forms-cloud-service-communications-introduction.md), no [Documento de Registro dos Componentes Principais](/help/forms/generate-document-of-record-core-components.md#customize-the-branding-information-in-document-of-record) e no [Documento de Registro dos Componentes de Base](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#customize-the-branding-information-in-document-of-record).
 
 <!--
 
@@ -52,5 +52,5 @@ As listas de fontes OOTB suportadas são:
 * eurosign.ttf
 
 
-Além das fontes mencionadas acima, você pode usar fontes personalizadas para dar aos PDF uma aparência específica. Para habilitar fontes personalizadas, você [adicionar fontes personalizadas ao ambiente as a Cloud Service do Forms](/help/forms/use-custom-fonts.md) com uma licença válida.
+Além das fontes mencionadas acima, você pode usar fontes personalizadas para dar aos PDF uma aparência específica. Para habilitar fontes personalizadas, você [adiciona fontes personalizadas ao seu as a Cloud Service do Forms](/help/forms/use-custom-fonts.md) com uma licença válida.
 

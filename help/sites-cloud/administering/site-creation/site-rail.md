@@ -19,7 +19,7 @@ Conheça os recursos avançados do painel Site para ajudá-lo a personalizar e g
 
 ## Visão geral {#overview}
 
-O painel Site permite gerenciar os recursos de tema e modelo do site. [Como outros painéis](/help/sites-cloud/authoring/sites-console/console-side-panel.md) como os painéis Árvore de conteúdo, Referências ou Linha do tempo, o painel Site é exibido mais à esquerda do console de sites, exibindo informações sobre o item selecionado. Ao contrário de outros painéis, o painel Site se aplica somente às raízes do Site.
+O painel Site permite gerenciar os recursos de tema e modelo do site. [Assim como outros painéis](/help/sites-cloud/authoring/sites-console/console-side-panel.md), como os painéis Árvore de Conteúdo, Referências ou Linha do Tempo, o painel Site é exibido mais à esquerda do console de sites, exibindo informações sobre o item selecionado. Ao contrário de outros painéis, o painel Site se aplica somente às raízes do Site.
 
 O painel Site é usado para gerenciar informações relacionadas ao tema e ao modelo do site, incluindo:
 
@@ -34,13 +34,13 @@ O painel Site é usado para gerenciar informações relacionadas ao tema e ao mo
 
 ## Baixar fontes de tema {#downloading-theme-sources}
 
-Ao criar um site no AEM com base em uma [modelo de site,](site-templates.md) você pode baixar o [tema do site](site-themes.md) usando o painel Site.
+Ao criar um site no AEM com base em um [modelo de site](site-templates.md), você pode baixar o [tema de site](site-themes.md) usando o painel Site.
 
 Com o painel Site sendo exibido no console de sites, selecione a raiz do site para revelar informações de tema sobre ele.
 
 ![Baixar fontes de tema](/help/sites-cloud/administering/assets/download-theme-wireframe.png)
 
-Selecionar **Baixar fontes de tema** para baixar uma cópia local do tema do site como `.zip` arquivo para fins de personalização.
+Selecione **Baixar Fontes de Tema** para baixar uma cópia local do tema do site como arquivo `.zip` para fins de personalização.
 
 ## Baixar recursos do modelo {#downloading-template-resources}
 
@@ -62,11 +62,11 @@ Com o painel Site sendo exibido no console de sites, selecione a raiz do site pa
 
 A versão atual do tema é exibida com seu hash de confirmação junto com o carimbo de data e hora da última atualização.
 
-Selecionar **Selecionar versão** para exibir versões anteriores do tema.
+Selecione **Selecionar versão** para exibir versões anteriores do tema.
 
 ![Selecionar versão do tema](/help/sites-cloud/administering/assets/select-theme-versions.png)
 
-Selecione a versão para a qual deseja alterar e selecione **Aplicar** para fazer a alteração.
+Selecione a versão para a qual você deseja alterar e selecione **Aplicar** para fazer a alteração.
 
 Se o AEM detectar que uma versão mais recente do tema foi implantada por meio do pipeline de front-end, mas não aplicada ao site, um ícone de notificação será exibido.
 
@@ -80,7 +80,7 @@ Se o site não foi criado usando um modelo de site, não é possível usar o pip
 
 No entanto, você pode ativar o pipeline de front-end para o site usando o painel Site.
 
-Com o painel Site sendo exibido no console de sites, selecione a raiz do site para revelar informações de tema sobre ele e selecione **Ativar pipeline de front-end**.
+Com o painel Site sendo exibido no console de sites, selecione a raiz do site para revelar informações de tema sobre ele e selecione **Habilitar pipeline de front-end**.
 
 ![Ativação do pipeline de front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 

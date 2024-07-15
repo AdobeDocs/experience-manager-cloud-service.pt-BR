@@ -46,14 +46,14 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
   <tr>
     <td>Remoção da versão</td>
     <td>Cliente</td>
-    <td>A limpeza de versão está desativada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a> seção.<br/><br/>A limpeza logo será habilitada por padrão, com esses valores substituíveis.<br>
+    <td>A limpeza de versão está desabilitada no momento por padrão, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a>.<br/><br/>A limpeza será em breve habilitada por padrão, com esses valores substituíveis.<br>
    </td>
   </td>
   </tr>
   <tr>
     <td>Limpeza do log de auditoria</td>
     <td>Cliente</td>
-    <td>A limpeza de log de auditoria está desativada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a> seção.<br/><br/>A limpeza logo será habilitada por padrão, com esses valores substituíveis.<br>
+    <td>A limpeza de log de auditoria está desabilitada por padrão no momento, mas a política pode ser configurada, conforme descrito na seção <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/maintenance#purge_tasks">Tarefas de Manutenção de Limpeza de Versão e Limpeza de Log de Auditoria</a>.<br/><br/>A limpeza será em breve habilitada por padrão, com esses valores substituíveis.<br>
    </td>
    </td>
   </tr>
@@ -68,7 +68,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
     <td>Cliente</td>
     <td>
     <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>.</p>
-    <p>Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. Ative a tarefa de manutenção adicionando outro nó sob o nó acima. Nomear como <code>granite_TaskPurgeTask</code>, com atributo <code>sling:resourceType</code> definir como <code>granite/operations/components/maintenance/task</code> atributo e <code>granite.maintenance.name</code> definir como <code>TaskPurge</code>. Para configurar as propriedades OSGI, consulte <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> para obter a lista de propriedades.</p>
+    <p>Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração. Ative a tarefa de manutenção adicionando outro nó sob o nó acima. Nomeie-o <code>granite_TaskPurgeTask</code>, com o atributo <code>sling:resourceType</code> definido como <code>granite/operations/components/maintenance/task</code> e o atributo <code>granite.maintenance.name</code> definido como <code>TaskPurge</code>. Para configurar as propriedades OSGI, consulte <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> para obter a lista de propriedades.</p>
   </td>
   </tr>
     <tr>
@@ -118,7 +118,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
     <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção semanal devem começar a ser executadas.</p>
     <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção semanal devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
     <p>Uma tarefa de manutenção não pode ser executada mais de uma vez durante esse período.</p>
-    <p><strong>windowScheduleWeekdays= Matriz de dois valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa será interrompida. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
+    <p><strong>windowScheduleWeekdays= Matriz de dois valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que o trabalho é agendado e o segundo valor é o dia de término em que o trabalho será interrompido. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
     </td>
   </tr>
   <tr>
@@ -126,11 +126,11 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
     <td>Cliente</td>
     <td>Definição de Nó JCR</td>
     <td>
-    <p><strong>windowSchedule=month</strong> (este valor não deve ser alterado)</p>
+    <p><strong>windowSchedule=month</strong> (esse valor não deve ser alterado)</p>
     <p><strong>windowStartTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção mensal devem começar a ser executadas.</p>
     <p><strong>windowEndTime=HH:MM</strong> usando como relógio de 24 horas. Define quando as tarefas de manutenção associadas à Janela de manutenção mensal devem parar de ser executadas se ainda não tiverem sido concluídas.</p>
     <p>Uma tarefa de manutenção não pode ser executada mais de uma vez durante esse período.</p>
-    <p><strong>windowScheduleWeekdays=Matriz de dois valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que a tarefa é agendada e o segundo valor é o dia de término em que a tarefa será interrompida. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
+    <p><strong>windowScheduleWeekdays=Matriz de dois valores de 1 a 7 (por exemplo, [5,5])</strong> O primeiro valor da matriz é o dia de início em que o trabalho é agendado e o segundo valor é o dia de término em que o trabalho será interrompido. A hora exata de início e término é regida pelos parâmetros windowStartTime e windowEndTime, respectivamente.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 para agendar na primeira semana do mês ou 1 para agendar na última semana do mês. A ausência de um valor agendaria trabalhos no dia regido por windowScheduleWeekdays (todos os meses).</p>
     </td>
     </tr>
@@ -219,7 +219,7 @@ Declare um arquivo de configuração e implante-o conforme descrito nas etapas a
 > 
 >Da mesma forma, depois de implantar o nó de expurgação do log de auditoria no arquivo de configuração, você deve mantê-lo declarado e não removê-lo.
 
-**1** : crie a seguinte estrutura de pasta e arquivo na pasta de nível superior do seu projeto no Git:
+**1** - crie a seguinte pasta e estrutura de arquivo na pasta de nível superior do seu projeto no Git:
 
 ```
 config/
@@ -230,10 +230,10 @@ config/
 
 * uma propriedade &quot;kind&quot; com o valor &quot;MaintenanceTasks&quot;.
 * uma propriedade &quot;version&quot; (no momento, estamos na versão 1).
-* um objeto &quot;metadata&quot; opcional com a propriedade `envTypes` com uma lista separada por vírgulas do tipo de ambiente (dev, estágio, prod) para o qual essa configuração é válida. Se nenhum objeto de metadados for declarado, a configuração será válida para todos os tipos de ambiente.
-* um objeto de dados com ambos `versionPurge` e `auditLogPurge` objetos.
+* um objeto &quot;metadata&quot; opcional com a propriedade `envTypes` com uma lista separada por vírgulas do tipo de ambiente (dev, stage, prod) para o qual essa configuração é válida. Se nenhum objeto de metadados for declarado, a configuração será válida para todos os tipos de ambiente.
+* um objeto de dados com objetos `versionPurge` e `auditLogPurge`.
 
-Consulte as definições e a sintaxe do `versionPurge` e `auditLogPurge` objetos abaixo.
+Consulte as definições e a sintaxe dos objetos `versionPurge` e `auditLogPurge` abaixo.
 
 Você deve estruturar a configuração de forma semelhante ao seguinte exemplo:
 
@@ -271,13 +271,13 @@ Lembre-se de que para que a configuração seja válida:
 * os tipos (números inteiros, strings, booleanos etc.) nas tabelas de propriedades abaixo devem ser respeitados.
 
 >[!NOTE]
->Você pode usar `yq` para validar localmente a formatação YAML do seu arquivo de configuração (por exemplo, `yq mt.yaml`).
+>Você pode usar o `yq` para validar localmente a formatação YAML do seu arquivo de configuração (por exemplo, `yq mt.yaml`).
 
-**3** - Configure os pipelines de configuração de não produção e produção.
+**3** - Configurar os pipelines de configuração de não produção e produção.
 
 Os RDEs (Rapid Development Ambients, ambientes de desenvolvimento rápido) não oferecem suporte à limpeza. Para outros tipos de ambiente em programas de produção (que não sejam de sandbox), crie um pipeline de configuração de implantação direcionada no Cloud Manager.
 
-Consulte [configuração de pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configuração de pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obter mais detalhes.
+Consulte [configurando pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configurando pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) para obter mais detalhes.
 
 ### Remoção da versão {#version-purge}
 
@@ -309,11 +309,11 @@ Os ambientes criados antes da limpeza padrão estarem habilitados terão os valo
 
 As propriedades permitidas estão listadas abaixo.
 
-As colunas que indicam *padrão* Indicar os valores por defeito no futuro, quando os valores por defeito forem aplicados; *TBD* O reflete uma id de ambiente que ainda não foi determinada.
+As colunas que indicam *padrão* indicam os valores padrão no futuro, quando os padrões são aplicados; *TBD* reflete uma ID de ambiente que ainda não foi determinada.
 
 | Propriedades | padrão futuro para envs>TBD | padrão futuro para envs&lt;=TBD | obrigatório | tipo | Valores |
 |-----------|--------------------------|-------------|-----------|---------------------|-------------|
-| caminhos | [&quot;/content&quot;] | [&quot;/content&quot;] | Sim | matriz de strings | Especifica em quais caminhos as versões serão removidas quando novas versões forem criadas.  Os clientes devem declarar essa propriedade, mas o único valor permitido é &quot;/content&quot;. |
+| caminhos | [&quot;/conteúdo&quot;] | [&quot;/conteúdo&quot;] | Sim | matriz de strings | Especifica em quais caminhos as versões serão removidas quando novas versões forem criadas.  Os clientes devem declarar essa propriedade, mas o único valor permitido é &quot;/content&quot;. |
 | maximumAgeDays | 30 | 2557 (7 anos + 2 dias bissextos) | Sim | Número inteiro | Qualquer versão anterior ao valor configurado é removida. Se o valor for 0, a limpeza não será executada com base na idade da versão. |
 | maximumVersions | 5 | 0 (sem limite) | Sim | Número inteiro | Qualquer versão anterior à n-ésima versão mais recente é removida. Se o valor for 0, a limpeza não será executada com base no número de versões. |
 | minimumVersions | 1 | 1 | Sim | Número inteiro | O número mínimo de versões que são mantidas independentemente da idade. Observe que pelo menos 1 versão é sempre mantida; seu valor deve ser 1 ou superior. |
@@ -332,9 +332,9 @@ maximumVersions = 10
 minimumVersions = 2
 ```
 
-Se houver 11 versões no dia 23, a versão mais antiga será removida da próxima vez que a tarefa de manutenção de limpeza for executada, já que a `maximumVersions` é definida como 10.
+Se houver 11 versões no dia 23, a versão mais antiga será removida na próxima vez que a tarefa de manutenção de limpeza for executada, já que a propriedade `maximumVersions` está definida como 10.
 
-Se houver 5 versões no dia 31, somente 3 serão removidas, pois o `minimumVersions` é definida como 2.
+Se houver 5 versões no dia 31, somente 3 serão removidas, pois a propriedade `minimumVersions` está definida como 2.
 
 Exemplo:
 
@@ -344,7 +344,7 @@ maximumVersions = 0
 minimumVersions = 1
 ```
 
-Nenhuma versão com mais de 30 dias será removida desde que `maximumVersions` é definida como 0.
+Nenhuma versão com mais de 30 dias será removida, pois a propriedade `maximumVersions` está definida como 0.
 
 Uma versão com mais de 30 dias será mantida.
 
@@ -375,7 +375,7 @@ Os ambientes criados antes da limpeza padrão estarem habilitados terão os valo
 
 As propriedades permitidas estão listadas abaixo.
 
-As colunas que indicam *padrão* Indicar os valores por defeito no futuro, quando os valores por defeito forem aplicados; *TBD* O reflete uma id de ambiente que ainda não foi determinada.
+As colunas que indicam *padrão* indicam os valores padrão no futuro, quando os padrões são aplicados; *TBD* reflete uma ID de ambiente que ainda não foi determinada.
 
 
 | Propriedades | padrão futuro para envs>TBD | padrão futuro para envs&lt;=TBD | obrigatório | tipo | Valores |
@@ -383,4 +383,4 @@ As colunas que indicam *padrão* Indicar os valores por defeito no futuro, quand
 | regras | - | - | Sim | Objeto | Um ou mais dos seguintes nós: replicação, páginas, dam. Cada um desses nós define regras, com as propriedades abaixo. Todas as propriedades devem ser declaradas. |
 | maximumAgeDays | 7 dias | 2557 (7 anos + 2 dias bissextos) | Sim | inteiro | Para replicação, páginas ou DAM: o número de dias que os logs de auditoria são mantidos. Os logs de auditoria anteriores ao valor configurado são removidos. |
 | contentPath | &quot;/content&quot; | &quot;/content&quot; | Sim | String | O caminho sob o qual os logs de auditoria serão removidos para o tipo relacionado. Deve ser definido como &quot;/content&quot;. |
-| tipos | todos os valores | todos os valores | Sim | Matriz de enumeração | Para **replicação**, os valores enumerados são: Ativate, Deactivate, Delete, Test, Reverse, Internal Poll. Para **páginas**, os valores enumerados são: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestore, PageRolled Out, PageValid, PageInvalid. Para **dam**, os valores enumerados são: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET T_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
+| tipos | todos os valores | todos os valores | Sim | Matriz de enumeração | Para **replicação**, os valores enumerados são: Ativar, Desativar, Excluir, Testar, Reverter, Sondagem Interna. Para **páginas**, os valores enumerados são: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestoring, PageRolled Out, PageValid, PageInvalid. Para **dam**, os valores enumerados são: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET ATUALIZADO, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJEITADO. |

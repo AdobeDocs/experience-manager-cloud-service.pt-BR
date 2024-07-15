@@ -24,9 +24,9 @@ Nesta parte da jornada, você aprenderá a planejar e executar a migração assi
 
 Nas fases anteriores da jornada:
 
-* Você aprendeu como começar a migrar para o AEM as a Cloud Service na [Introdução](/help/journey-migration/getting-started.md) página.
-* Determinado se sua implantação está pronta para ser movida para a nuvem lendo o [Fase de preparação](/help/journey-migration/readiness.md)
-* Familiarizou-se com as ferramentas e o processo pelos quais é possível preparar seu código e sua nuvem de conteúdo com o [Fase de implementação](/help/journey-migration/implementation.md).
+* Você aprendeu como começar a mover para o AEM as a Cloud Service na página [Introdução](/help/journey-migration/getting-started.md).
+* Determinado se a sua implantação está pronta para ser movida para a nuvem lendo a [fase de Preparação](/help/journey-migration/readiness.md)
+* Familiarizou-se com as ferramentas e o processo pelos quais você pode preparar seu código e sua nuvem de conteúdo com a [fase de Implementação](/help/journey-migration/implementation.md).
 
 ## Objetivo {#objective}
 
@@ -34,17 +34,17 @@ Este documento ajuda você a entender como executar a migração para o AEM as a
 
 ## Migração de produção inicial {#initial-migration}
 
-Antes de executar a migração de produção, siga as etapas de ajuste e prova de migração descritas na seção [Estratégia e cronograma de migração de conteúdo](/help/journey-migration/implementation.md##strategy-timeline) seção do [Fase de implementação](/help/journey-migration/implementation.md).
+Antes de executar a migração de produção, siga as etapas de ajuste e prova de migração descritas na seção [Estratégia de migração de conteúdo e linha do tempo](/help/journey-migration/implementation.md##strategy-timeline) da [fase de Implementação](/help/journey-migration/implementation.md).
 
-* Inicie a migração da produção com base na experiência adquirida durante a migração do estágio de AEM as a Cloud Service executada em clones:
+* Inicie a migração da produção com base na experiência adquirida durante a migração de estágio do AEM as a Cloud Service executada em clones:
    * Autor-Autor
    * Publish-Publish
 
-* Valide o conteúdo assimilado nos níveis de criação e publicação as a Cloud Service do AEM.
+* Valide o conteúdo assimilado nos níveis de criação e publicação do AEM as a Cloud Service.
 * Instrua a equipe de criação de conteúdo a evitar mover o conteúdo na origem e no destino até que a assimilação seja concluída
 * O novo conteúdo pode ser adicionado, editado ou excluído, mas evite movê-lo. Isso se aplica tanto à origem quanto ao destino.
-* Registre o [tempo decorrido](/help/journey-migration/implementation.md#gathering-data) para que a extração e a assimilação completas tenham uma estimativa dos cronogramas de migração complementar futuros.
-* Criar um [planejador de migração](/help/journey-migration/implementation.md#migration-plan) para autor e publicação.
+* Registre o [tempo gasto](/help/journey-migration/implementation.md#gathering-data) para extração e assimilação completas para ter uma estimativa para futuras linhas do tempo de migração complementares.
+* Crie um [planejador de migração](/help/journey-migration/implementation.md#migration-plan) para o autor e para publicação.
 
 ## Complementos incrementais {#top-up}
 
@@ -69,7 +69,7 @@ Além disso, é necessário planejar um congelamento do conteúdo quando a atual
 
 Ao planejar ou executar a migração, você deve considerar as seguintes diretrizes:
 
-* Migrar de Autor para Autor e Publicar para Publicação
+* Migração de Autor para Autor e Publish para Publish
 * Solicite um clone de produção que possa ser usado para:
    * Capturar estatísticas do repositório
    * Prova de atividades de migração
@@ -79,14 +79,14 @@ Ao planejar ou executar a migração, você deve considerar as seguintes diretri
 
 **Práticas recomendadas da ferramenta Transferência de conteúdo**
 
-Ao entrar em funcionamento, certifique-se de executar a migração de conteúdo na produção em vez de em um clone. Uma boa abordagem é usar [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para a migração inicial e, em seguida, executar extrações complementares com frequência (mesmo diariamente) para extrair partes menores e evitar qualquer carga de longo prazo no AEM de origem.
+Ao entrar em funcionamento, certifique-se de executar a migração de conteúdo na produção em vez de em um clone. Uma boa abordagem é usar o [AZCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para a migração inicial e executar extrações complementares com frequência (até mesmo diariamente) para extrair partes menores e evitar qualquer carga de longo prazo no AEM de origem.
 
 Ao executar a migração de produção, você deve evitar a execução da ferramenta Transferência de conteúdo a partir de um clone, pois:
 
 * Se um cliente solicitar que as versões de conteúdo sejam migradas durante as migrações complementares, a execução da ferramenta Transferência de conteúdo de um clone não migrará as versões. Mesmo que o clone seja recriado frequentemente a partir de um autor ativo, cada vez que um clone é criado, os pontos de verificação usados pela ferramenta Transferência de conteúdo para calcular os deltas são redefinidos.
-* Como um clone não pode ser atualizado como um todo, o pacote de Consulta ACL deve ser usado para empacotar e instalar o conteúdo que está sendo adicionado ou editado de produção para clone. O problema dessa abordagem é que qualquer conteúdo excluído na instância de origem nunca chegará ao clone, a menos que seja excluído manualmente da origem e do clone. Isso introduz a possibilidade de que o conteúdo excluído na produção não seja excluído no clone e no AEM as a Cloud Service.
+* Como um clone não pode ser atualizado como um todo, o pacote de Consulta ACL deve ser usado para empacotar e instalar o conteúdo que está sendo adicionado ou editado de produção para clone. O problema dessa abordagem é que qualquer conteúdo excluído na instância de origem nunca chegará ao clone, a menos que seja excluído manualmente da origem e do clone. Isso introduz a possibilidade de que o conteúdo excluído na produção não será excluído no clone e no AEM as a Cloud Service.
 
-**Otimização da carga na origem do AEM ao executar a migração de conteúdo**
+**Otimizando a carga na origem de AEM ao executar a migração de conteúdo**
 
 Lembre-se, a carga na fonte AEM é maior durante a fase de extração. Esteja ciente do seguinte:
 
@@ -101,22 +101,22 @@ Leve em consideração que toda a assimilação falhará se qualquer uma das seg
 
 * Um Nó JCR que tem um nome com mais de 150 caracteres
 * Um Nó JCR com mais de 16 MB
-* Qualquer usuário/grupo com `rep:AuthorizableID` sendo assimilado que já está presente no AEM as a Cloud Service
+* Qualquer usuário/grupo com `rep:AuthorizableID` sendo assimilado que já esteja presente no AEM as a Cloud Service
 * Se qualquer ativo extraído e assimilado for movido para um caminho diferente na origem ou no destino antes da próxima iteração da migração.
 
 ## Integridade do ativo {#asset-health}
 
-Em comparação à seção acima da assimilação **não** falha devido às seguintes preocupações com ativos. No entanto, é altamente recomendável que você siga as etapas apropriadas nestes cenários:
+Comparada à seção acima, a assimilação **não** falha devido às seguintes preocupações com o ativo. No entanto, é altamente recomendável que você siga as etapas apropriadas nestes cenários:
 
 * Qualquer ativo que tenha a representação original ausente
-* Qualquer pasta que tenha um ausente `jcr:content` nó.
+* Qualquer pasta que tenha um nó `jcr:content` ausente.
 
-Ambos os itens acima são identificados e relatados na variável [Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) relatório.
+Ambos os itens acima são identificados e relatados no relatório do [Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
 ## Lista de verificação de ativação {#Go-Live-Checklist}
 
-Para obter mais informações, consulte o [Lista de verificação de ativação](/help/journey-onboarding/go-live-checklist.md) documentação.
+Para obter mais informações, consulte a documentação da [Lista de verificação da ativação](/help/journey-onboarding/go-live-checklist.md).
 
 ## O que vem a seguir {#what-is-next}
 
-Depois de entender como executar a migração para o AEM as a Cloud Service, você pode verificar o [Pós-ativação](/help/journey-migration/post-go-live.md) página para manter sua instância em execução sem problemas.
+Assim que você entender como executar a migração para o AEM as a Cloud Service, poderá verificar a página [Post-Go-Live](/help/journey-migration/post-go-live.md) para manter sua instância em perfeita execução.

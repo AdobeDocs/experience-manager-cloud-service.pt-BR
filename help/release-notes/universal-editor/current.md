@@ -17,22 +17,22 @@ Estas são as notas de versão do Universal Editor de 28 de junho de 2024.
 
 >[!TIP]
 >
->Para obter as notas de versão atuais do Adobe Experience Manager as a Cloud Service, consulte [nesta página.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>Para obter as notas de versão atuais do Adobe Experience Manager as a Cloud Service, consulte [esta página.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## Novidades {#what-is-new}
 
-* **Início**: as páginas recentes são exibidas como uma lista, sem imagens de pré-visualização.
-* **Barra de localização**: a validação aprimorada do URL foi adicionada, impondo URLs HTTPS e hashes de suporte em URLs para contabilizar aplicativos roteados por hash.
-* **Navegação do teclado**: a seleção de sobreposição de página foi dissociada do foco do painel de propriedades para melhorar a navegação do teclado na página sem perder o foco.
-* **Rótulos de item**: o valor de fallback dos rótulos agora usa `data-aue-prop` em vez de `data-aue-type` para obter uma identificação mais clara nas sobreposições e na árvore de conteúdo.
-* **Modal RTE**: A **Cancelar** Foi adicionado um botão ao modal do editor de rich text ao abri-lo no painel de propriedades.
-* **Serviço UE no nó**: o suporte HTTP para o Universal Editor Service foi reintroduzido, pois todas as conexões HTTPS são encerradas no nível do Dispatcher.
-* **API de cópia interna**: uma API ao Serviço do editor universal para copiar componentes foi adicionada, permitindo a introdução futura de opções da barra de ferramentas para copiar e duplicar conteúdo.
+* **Página inicial**: as páginas recentes são exibidas como uma lista, sem imagens de visualização.
+* **Barra de Localização**: a validação de URL aprimorada foi adicionada, impondo URLs HTTPS e hashes de suporte em URLs para conta de aplicativos roteados por hash.
+* **Navegação pelo teclado**: a seleção de sobreposição de página foi dissociada do foco do painel de propriedades para melhorar a navegação pelo teclado na página sem perder o foco.
+* **Rótulos de Item**: o valor de fallback dos rótulos agora usa `data-aue-prop` em vez de `data-aue-type` para uma identificação mais clara nas sobreposições e na árvore de conteúdo.
+* **Modal de RTE**: um botão **Cancelar** foi adicionado ao modal do editor de rich text ao abri-lo no painel de propriedades.
+* **UE Service no Nó**: o suporte HTTP para o Universal Editor Service foi reintroduzido, pois todas as conexões HTTPS são encerradas no nível do Dispatcher.
+* **API de Cópia Interna**: uma API para o Serviço do Universal Editor para copiar componentes foi adicionada, permitindo a introdução futura de opções da barra de ferramentas para copiar e duplicar conteúdo.
 
 ## Correções de erros {#bug-fixes}
 
-* **Navegação estrutural no painel Propriedades**: o menu de navegação estrutural no painel de propriedades para itens aninhados profundamente, que não permaneciam abertos, foi corrigido.
-* **Seletor de fragmentos de conteúdo**: o seletor de Fragmento de conteúdo foi aprimorado para garantir que respeite as regras definidas no modelo de Fragmento de conteúdo ou na `data-aue-filter`.
+* **Navegação estrutural no Painel de Propriedades**: o menu de navegação estrutural no painel de propriedades para itens profundamente aninhados, que não permaneceram abertos, foi corrigido.
+* **Seletor de fragmentos de conteúdo**: o seletor de fragmentos de conteúdo foi aprimorado para garantir que respeite as regras definidas no modelo de fragmento de conteúdo ou no `data-aue-filter`.
 * **Inserção de componente**: a lista para inserir novos componentes que não foram atualizados com precisão após navegar para outra página foi corrigida.
-* **Status da publicação**: o manuseio dos status de publicação foi aprimorado para funcionar de forma mais consistente.
-* **Correções diversas**: esta versão também contém várias correções secundárias, limpeza de débito de tecnologia, aprimoramentos de segurança e testes consolidados para estabilidade e desempenho gerais.
+* **Status da publicação**: o tratamento dos status de publicação foi aprimorado para funcionar de forma mais consistente.
+* **Várias correções**: esta versão também contém várias correções secundárias, limpeza de débito técnico, aprimoramentos de segurança e testes consolidados para estabilidade e desempenho gerais.

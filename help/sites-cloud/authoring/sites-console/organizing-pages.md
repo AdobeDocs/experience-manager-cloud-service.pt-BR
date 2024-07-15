@@ -30,7 +30,7 @@ Você também pode usar [pastas](#creating-a-new-folder) para ajudar a organizar
 
 A estrutura de um site pode ser considerada como uma árvore que armazena suas páginas de conteúdo. Os nomes dessas páginas de conteúdo são usadas para formar os URLs, ao passo que os títulos são mostrados quando o conteúdo da página é visualizado.
 
-O exemplo a seguir mostra o [Tutorial do WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) site, onde um artigo sobre skateparks (`la-skateparks`) é acessada:
+O exemplo a seguir mostra o site [Tutorial WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR), onde um artigo sobre skateparks (`la-skateparks`) é acessado:
 
 `http://<host>:<port>/editor.html/content/wknd/en/sports/la-skateparks.html`
 
@@ -51,7 +51,7 @@ O exemplo a seguir mostra o [Tutorial do WKND](https://experienceleague.adobe.co
    /...
 ```
 
-Esta estrutura pode ser visualizada do [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) onde você pode navegar pelas páginas do seu site e executar ações nas páginas.
+Esta estrutura pode ser visualizada do console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md), onde você pode navegar pelas páginas do seu site e executar ações nas páginas.
 
 ## Convenções de nomenclatura da página {#page-naming-conventions}
 
@@ -77,7 +77,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs com um limite de comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostos pelo AEM e pelo JCR.
+Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -95,7 +95,7 @@ Detalhes completos sobre todos os caracteres permitidos podem ser encontrados na
 
 ### Título {#title}
 
-Se você fornecer apenas uma página **Título** ao criar uma página, o AEM deriva a página **Nome** desta cadeia de caracteres e [validar o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostos pelo AEM e pelo JCR.
+Se você fornecer apenas uma página **Título** ao criar uma página, o AEM derivará a página **Nome** desta cadeia de caracteres e [validará o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
 
 Um campo de **Título** contendo caracteres inválidos é aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
@@ -106,7 +106,7 @@ Um campo de **Título** contendo caracteres inválidos é aceito, mas o nome der
 
 ### Nome {#name}
 
-Quando você fornece uma página **Nome** ao criar uma página, AEM [valida o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostos pelo AEM e pelo JCR. Não é possível inserir caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é destacado com uma mensagem explicativa.
+Quando você fornece uma página **Nome** ao criar uma página, o AEM [valida o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR. Não é possível inserir caracteres inválidos no campo **Nome**. Quando o AEM detecta caracteres inválidos, o campo é destacado com uma mensagem explicativa.
 
 ![Exemplo de inserção de um nome de página inválido](/help/sites-cloud/authoring/assets/organizing-invalid-name.png)
 
@@ -118,7 +118,7 @@ Quando você fornece uma página **Nome** ao criar uma página, AEM [valida o no
 
 ## Modelos {#templates}
 
-No AEM, uma [modelo](/help/sites-cloud/authoring/sites-console/templates.md) é um tipo especializado de página usado como base para qualquer nova página que está sendo criada.
+No AEM, um [modelo](/help/sites-cloud/authoring/sites-console/templates.md) é um tipo especializado de página usado como base para qualquer nova página que está sendo criada.
 
 O modelo define a estrutura de uma página, incluindo uma imagem em miniatura e outras propriedades. Por exemplo, você pode ter modelos separados para páginas de produtos, mapas de site e informações de contato. Os modelos são compostos de [componentes](#components).
 
@@ -130,7 +130,7 @@ O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem
 
 ## Componentes {#components}
 
-[Componentes](/help/implementing/developing/components/overview.md) são os elementos fornecidos pelo AEM, para que você possa adicionar tipos específicos de conteúdo. O AEM vem com vários componentes prontos para uso, chamados [os Componentes principais,](/help/implementing/developing/components/overview.md#core-components) que oferecem funcionalidade abrangente. Alguns exemplos dos componentes são:
+[Componentes](/help/implementing/developing/components/overview.md) são os elementos fornecidos pelo AEM para que você possa adicionar tipos específicos de conteúdo. O AEM vem com uma variedade de componentes prontos para uso, chamados [Componentes principais](/help/implementing/developing/components/overview.md#core-components), que fornecem funcionalidade abrangente. Alguns exemplos dos componentes são:
 
 * Texto
 * Imagem

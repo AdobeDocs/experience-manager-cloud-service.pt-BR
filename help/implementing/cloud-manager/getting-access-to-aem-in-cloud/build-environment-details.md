@@ -25,7 +25,7 @@ O Cloud Manager compila e testa seu código usando um ambiente de compilação e
 * O Apache Maven 3.9.4 está instalado.
    * A Adobe recomenda [atualizar os repositórios Maven para usar HTTPS em vez de HTTP.](#https-maven)
 * As versões do Java instaladas são Oracle JDK 11.0.22 e Oracle JDK 8u401.
-* **IMPORTANTE**: Por padrão, a variável `JAVA_HOME` a variável de ambiente está definida como `/usr/lib/jvm/jdk1.8.0_401` que contém o JDK 8u401 do Oracle. *_Esse padrão deve ser substituído para Projetos na nuvem AEM para usar o JDK 11_*. Consulte a [Definindo a versão do JDK do Maven](#alternate-maven-jdk-version) para obter mais detalhes.
+* **IMPORTANTE**: por padrão, a variável de ambiente `JAVA_HOME` está definida como `/usr/lib/jvm/jdk1.8.0_401`, que contém o JDK de Oracle 8u401. *_Este padrão deve ser substituído para Projetos na Nuvem AEM para usar o JDK 11_*. Consulte a seção [Definindo a versão do JDK Maven](#alternate-maven-jdk-version) para obter mais detalhes.
 * Há alguns pacotes de sistema adicionais instalados que são necessários.
    * `bzip2`
    * `unzip`
@@ -58,9 +58,9 @@ Por padrão, os projetos são criados pelo processo de compilação do Cloud Man
 
 #### Definindo a versão do JDK do Maven {#alternate-maven-jdk-version}
 
-É recomendável definir a versão do JDK para toda a execução do Maven para `11` em um `.cloudmanager/java-version` arquivo.
+É recomendável definir a versão do JDK para toda a execução do Maven para `11` em um arquivo `.cloudmanager/java-version`.
 
-Para fazer isso, crie um arquivo chamado `.cloudmanager/java-version` na ramificação do repositório Git usada pelo pipeline. Editar o arquivo de forma que ele contenha apenas o texto, `11`. Embora o Cloud Manager também aceite um valor de `8`, esta versão não é mais compatível com projetos do AEM Cloud Service. Qualquer outro valor será ignorado. Quando `11` for especificada, o Oracle 11 será usado e a variável `JAVA_HOME` a variável de ambiente está definida como `/usr/lib/jvm/jdk-11.0.22`.
+Para fazer isso, crie um arquivo chamado `.cloudmanager/java-version` na ramificação do repositório Git usada pelo pipeline. Edite o arquivo de forma que ele contenha apenas o texto, `11`. Embora a Cloud Manager também aceite o valor `8`, essa versão não é mais suportada para projetos AEM Cloud Service. Qualquer outro valor será ignorado. Quando `11` é especificado, o Oracle 11 é usado e a variável de ambiente `JAVA_HOME` é definida como `/usr/lib/jvm/jdk-11.0.22`.
 
 ## Variáveis de ambiente {#environment-variables}
 
@@ -87,7 +87,7 @@ Para permitir isso, o Cloud Manager adiciona essas variáveis de ambiente padrã
 
 Seu processo de compilação pode depender de variáveis de configuração específicas, cuja colocação no repositório Git seria inadequada, ou talvez seja necessário variá-las entre as execuções de pipeline que usam uma mesma ramificação.
 
-Consulte o documento [Configuração de variáveis de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) para obter mais informações
+Consulte o documento [Configurando variáveis de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md) para obter mais informações
 
 ## Instalação de pacotes de sistema adicionais {#installing-additional-system-packages}
 

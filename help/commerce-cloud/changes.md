@@ -21,7 +21,7 @@ Este documento destaca as importantes diferenças entre o complemento Commerce i
 
 AEM O complemento CIF é instalado por meio do Cloud Manager. A instalação requer um crédito de CIF, exceto para sandboxes em que o CIF pode ser instalado sem créditos. Os créditos são recebidos automaticamente por meio do provisionamento do complemento CIF em seu contrato AEM.
 
-O complemento é atualizado automaticamente como parte da atualização as a Cloud Service regular do AEM.
+O complemento é atualizado automaticamente como parte da atualização normal do AEM as a Cloud Service.
 
 **Versões anteriores do CIF**
 
@@ -40,12 +40,12 @@ O endpoint é configurado e atualizado por meio da interface do usuário do Clou
 
 ## Implantação do projeto CIF Venia
 
-Projeto disponível em [Repositório Git do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) e implantação feita via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
+Projeto disponível no [Repositório Git do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) e implantação feita via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
 
 **Versões anteriores do CIF**
 
 * CIF Classic: por meio da instalação do pacote AEM
-* CIF Open-source: Via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR)
+* Fonte aberta do CIF: Via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/introduction.html?lang=pt-BR)
 
 ## Dados do catálogo de produtos
 
@@ -53,7 +53,7 @@ Os dados do catálogo de produtos são solicitados sob demanda por meio de chama
 
 **Versões anteriores do CIF**
 
-* CIF Classic: dados de produtos ao vivo e preparados são importados e mantidos no JCR no AEM Author por meio de importação completa ou delta de produtos. Os dados de produtos em tempo real são replicados para publicação no AEM.
+* CIF Classic: dados de produtos ao vivo e preparados são importados e mantidos no JCR no AEM Author por meio de importação completa ou delta de produtos. Os dados de produtos ao vivo são replicados para o AEM Publish.
 
 ## Experiências do catálogo de produtos com renderização por AEM
 
@@ -61,7 +61,7 @@ O AEM renderiza experiências de catálogo de produtos dinamicamente usando mode
 
 **Versões anteriores do CIF**
 
-* CIF Classic: AEM Author cria uma página do AEM para cada categoria/produto usando a ferramenta de blueprint do catálogo. Essas páginas são replicadas para AEM Publish.
+* CIF Classic: AEM Author cria uma página do AEM para cada categoria/produto usando a ferramenta de blueprint do catálogo. Essas páginas são replicadas para o AEM Publish.
 
 >[!NOTE]
 >

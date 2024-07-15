@@ -23,9 +23,9 @@ Os dados de relatórios de SLA estão disponíveis para cada programa de produç
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
-1. Usando o painel de navegação lateral, navegue até o **Relatórios** na guia **Visão geral** página.
+1. Usando o painel de navegação lateral, navegue até a guia **Relatórios** na página **Visão geral**.
 
 1. Clique no ano desejado para ver os dados de SLA mostrados na forma de um gráfico.
 

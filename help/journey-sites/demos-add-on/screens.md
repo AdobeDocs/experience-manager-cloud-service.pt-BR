@@ -104,7 +104,7 @@ Quando o assistente for concluído, você encontrará o conteúdo implantado no 
 
 Agora que você tem o conteúdo de demonstração da We.Cafe, você tem uma escolha sobre como deseja testar o AEM Screens:
 
-* Se você quiser explorar apenas o conteúdo no console do AEM Sites, basta começar a explorar e descobrir mais no [Recursos adicionais](#additional-resources) seção! nenhuma outra ação é necessária.
+* Se você quiser explorar apenas o conteúdo no console do AEM Sites, basta começar a explorar e descobrir mais na seção [Recursos adicionais](#additional-resources). nenhuma outra ação é necessária.
 * Se quiser experimentar todos os recursos dinâmicos do AEM Screens, continue para a próxima seção, [Alterar dinamicamente o conteúdo do Screens.](#dynamically-change)
 
 ## Alterar dinamicamente o conteúdo do Screens {#dynamically-change}
@@ -147,7 +147,7 @@ Primeiro, será necessário criar uma chave de API do Google para facilitar a tr
 
 Para permitir a troca de dados do Google Sheets usando sua chave de API, é necessário habilitar a API do Google Sheets.
 
-1. Retorne ao Google Cloud Console em `https://console.cloud.google.com` para o seu projeto e, em seguida, use o menu de hambúrguer para selecionar **APIs e serviços > Biblioteca**.
+1. Retorne ao Google Cloud Console em `https://console.cloud.google.com` para o seu projeto e use o menu de hambúrguer para selecionar **APIs e serviços > Biblioteca**.
 
    ![Biblioteca de API](assets/api-library.png)
 
@@ -225,7 +225,7 @@ Para fins de demonstração, os valores na planilha podem ser alterados. O Conte
 
 1. Na instância do autor do AEMaaCS, acesse **Navegação global > Ferramentas > Sites > ContextHub**.
 1. Selecione o contêiner de configuração que tem o mesmo nome que você deu ao projeto quando você criou o projeto do Screens a partir do **Modelo do site We.Cafe**.
-1. Selecionar **Configuração > Configuração do ContextHub > Google Sheets** e clique em **Próxima** no canto superior direito.
+1. Selecione **Configuração > Configuração do ContextHub > Google Sheets** e clique em **Avançar** no canto superior direito.
 1. A configuração já deve ter dados JSON pré-configurados. Há dois valores que precisam ser alterados:
    1. Substitua `[your Google Sheets id]` pela ID de planilha que [você salvou anteriormente](#create-spreadsheet).
    1. Substitua `[your Google API Key]` pela chave de API que [você salvou anteriormente](#create-api-key).
@@ -238,7 +238,7 @@ Agora você pode alterar o valor da temperatura em sua planilha do Google e o Co
 Agora que o AEM Screens e o ContextHub estão conectados ao serviço meteorológico, você pode testá-los para ver como o Screens atualiza o conteúdo de forma dinâmica.
 
 1. Acesse a instância do autor da sandbox.
-1. Navegue até o console Sites por meio de **Navegação global > Sites** e selecione a seguinte página **Screens > &lt;project-name> > Canais > Entrance Morning (Portrait)**.
+1. Navegue até o console Sites por meio de **Navegação Global > Sites** e selecione a seguinte página **Screens > &lt;nome-do-projeto> > Canais > Entrance Morning (Portrait)**.
 
    ![Selecione o conteúdo do projeto de demonstração](assets/project-content.png)
 
@@ -327,7 +327,7 @@ Primeiro, será necessário criar um código de registro para conectar com segur
 
    ![Verifique a organização do Screens](assets/screens-org.png)
 
-1. No painel esquerdo, clique em **Gerenciamento do reprodutor > Códigos de registro** e clique em **Criar código** na parte superior direita da tela.
+1. No painel esquerdo, clique em **Gerenciamento do reprodutor > Códigos de registro** e em **Criar código** na parte superior direita da tela.
 
 ![Códigos de registro](assets/registration-codes.png)
 
@@ -362,7 +362,7 @@ Primeiro, será necessário criar um código de registro para conectar com segur
 
    ![Verifique a organização do Screens](assets/screens-org.png)
 
-1. No painel esquerdo, clique em **Gerenciamento de players > Players** e você verá o reprodutor instalado e registrado anteriormente.
+1. No painel esquerdo, clique em **Gerenciamento de reprodutores > Reprodutores** e você verá o reprodutor instalado e registrado anteriormente.
 
    ![Reprodutores](assets/players.png)
 
@@ -390,7 +390,7 @@ Agora que concluiu esta parte da jornada do complemento de demonstração de ref
 * Entender o conteúdo de demonstração da We.Cafe.
 * Saber como configurar o AEM Screens para a We.Cafe.
 
-Agora você está pronto para explorar os recursos do AEM Screens usando seus próprios sites de demonstração. Prossiga para a próxima seção da jornada, [Gerencie Seus Sites De Demonstração,](manage.md) onde você aprende sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
+Agora você está pronto para explorar os recursos do AEM Screens usando seus próprios sites de demonstração. Prossiga para a próxima seção da jornada, [Gerenciar Sites de Demonstração](manage.md), onde você aprenderá sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
 
 Você também pode conferir alguns dos recursos adicionais disponíveis na [Seção recursos adicionais](#additional-resources) para saber mais sobre os recursos que viu nesta jornada.
 

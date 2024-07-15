@@ -1,6 +1,6 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0.
-description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.7.0."
+description: "[!DNL Adobe Experience Manager] Notas de Versão as a Cloud Service para 2020.7.0."
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 73%
 
 ---
 
-# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
+# Notas de versão para [!DNL Adobe Experience Manager] as a Cloud Service 2020.7.0 {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.7.0.
 
@@ -35,7 +35,7 @@ Os conectores do [!DNL Experience Manager] as a Cloud Service para o [!DNL Adobe
 
 ### Novidades do [!DNL Assets] {#what-is-new-assets}
 
-* O [!DNL Asset Compute Service] é um serviço dimensionável e extensível para processar ativos. Os administradores podem configurar [!DNL Experience Manager] para chamar aplicativos personalizados criados usando o [!DNL Asset Compute Service]. Os desenvolvedores podem usar o serviço para criar aplicativos personalizados especializados que atendam a casos de uso complexos. Esse serviço da Web pode gerar miniaturas para diferentes tipos de arquivos, renderizações de imagem de alta qualidade de formatos de arquivo de Adobe, codificar vídeos (no futuro), extrair metadados, extrair texto completo como precursor para indexação e executar um ativo por meio de todos os disponíveis [!DNL Sensei] serviços. consulte [usar microsserviços de ativos e perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
+* O [!DNL Asset Compute Service] é um serviço dimensionável e extensível para processar ativos. Os administradores podem configurar o [!DNL Experience Manager] para chamar aplicativos personalizados criados com o [!DNL Asset Compute Service]. Os desenvolvedores podem usar o serviço para criar aplicativos personalizados especializados que atendam a casos de uso complexos. Este serviço da Web pode gerar miniaturas para diferentes tipos de arquivos, renderizações de imagem de alta qualidade de formatos de arquivo de Adobe, codificar vídeos (no futuro), extrair metadados, extrair texto completo como precursor para indexação e executar um ativo por meio de todos os serviços do [!DNL Sensei] disponíveis. consulte [usar microsserviços de ativos e perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
 
 * A configuração inicial do [!DNL Dynamic Media] no [!DNL Experience Manager] as a Cloud Service foi aprimorada para ficar mais robusta. Agora, ela informa o progresso dos processos aos administradores.
 
@@ -43,7 +43,7 @@ Os conectores do [!DNL Experience Manager] as a Cloud Service para o [!DNL Adobe
 
 * As etapas de fluxo de trabalho que não são compatíveis com uma implantação do Cloud Service agora são marcadas com um aviso no editor de [!UICONTROL modelo de fluxo de trabalho]. Além disso, ao executar os workflows existentes no ambiente do Cloud Service, as etapas do workflow incompatíveis são ignoradas.
 
-* Os modelos de fluxo de trabalho criados pelos clientes implantados em `/conf/global` no projeto Git associado ao ambiente no [!DNL Cloud Manager] são implantados automaticamente em `/var` e, portanto, disponíveis em [!DNL Experience Manager]. Os modelos de fluxo de trabalho do produto em `/libs` que foram alterados pelo cliente não são implantados automaticamente em `/var`.
+* Os modelos de fluxo de trabalho criados pelos clientes implantados em `/conf/global` no projeto Git associado ao ambiente em [!DNL Cloud Manager] são implantados automaticamente em `/var` e, portanto, disponibilizados em [!DNL Experience Manager]. Os modelos de fluxo de trabalho do produto em `/libs` que foram alterados pelo cliente não são implantados automaticamente em `/var`.
 
 ### Erros corrigidos {#assets-bugs-fixed}
 
@@ -68,7 +68,7 @@ A versão 2.11.0 dos [Componentes principais do AEM](https://experienceleague.ad
 * Introdução de um novo [Visualizador de PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * O suporte para Accelerated Mobile Pages (AMP) dos Componentes principais já está disponível. As páginas AMP ajudam a produzir experiências mais rápidas para o cliente, fazendo a transição da página de maneira instantânea ao entrar no site a partir de um resultado de pesquisa do Google para dispositivos móveis, o que melhora a participação do usuário e o SEO.
-Consulte [Suporte AMP para os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) para obter mais detalhes.
+Consulte [Suporte ao AMP para os Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html) para obter mais detalhes.
 
 * Compatibilidade com a versão 1.0.2 da [Camada de dados do cliente da Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=pt-BR).
 
@@ -123,7 +123,7 @@ Consulte Como utilizar o suporte do Java 11 para obter mais detalhes.
 
 ### Novidades {#what-is-new-foundations}
 
-* [Os logs podem ser encaminhados para contas do Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), que permite que as organizações usem o investimento feito no Splunk.
+* [Os logs podem ser encaminhados para contas do Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), permitindo que as organizações usem o investimento feito no Splunk.
 
 * [Um endereço IP de saída estático e dedicado](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) pode ser atribuído para tráfego externo programado no código Java, que pode ser útil para algumas integrações.
 
@@ -139,7 +139,7 @@ Siga esta seção para saber mais sobre as novidades e as atualizações do Clou
 
 * Não foi possível executar a versão anterior do CRA no Adobe Experience Manager (AEM) 6.1. Foi adicionado suporte direto para permitir usuários no grupo de administradores.
 
-  Consulte [Instalação do CRA no AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) para obter mais detalhes.
+  Consulte [Instalando o CRA no AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html#installing-on-aem61) para obter mais detalhes.
 
 * O carimbo de data e hora de expiração exibido no relatório de resumo estava incorreto.
 

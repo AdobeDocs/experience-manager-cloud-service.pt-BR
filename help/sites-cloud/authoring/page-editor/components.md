@@ -26,7 +26,7 @@ O AEM é disponibilizado com vários componentes prontos para uso que fornecem f
 
 ## Uso geral   {#general-usage}
 
-Os componentes estão disponíveis no **Componentes** do painel lateral do editor de páginas quando [editar uma página.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+Os componentes estão disponíveis na guia **Componentes** do painel lateral do editor de páginas ao [editar uma página.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 Você pode selecionar um componente e arrastá-lo até o local desejado na página. A partir daí é possível editá-lo usando:
 
@@ -34,7 +34,7 @@ Você pode selecionar um componente e arrastá-lo até o local desejado na pági
 * [Editar conteúdo](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Editar conteúdo - Modo de tela cheia](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-Para obter mais informações sobre como adicionar componentes a uma página, consulte [Editar conteúdo da página.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+Para obter mais informações sobre como adicionar componentes a uma página, consulte [Editando Conteúdo da Página.](/help/sites-cloud/authoring/page-editor/edit-content.md)
 
 ## Visão geral de todos os componentes {#overview-of-all-components}
 

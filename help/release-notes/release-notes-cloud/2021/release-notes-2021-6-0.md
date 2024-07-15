@@ -25,23 +25,23 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] O as a Cloud Service 2021.6.0 é 28 de junho de 2021.
+A data de lançamento do [!DNL Adobe Experience Manager] as a Cloud Service 2021.6.0 é 28 de junho de 2021.
 A versão seguinte (2021.7.0) será lançada em 29 de julho de 2021.
 
 ## Vídeo da versão {#release-video}
 
-Dê uma olhada no [Visão geral da versão de junho de 2021](https://video.tv.adobe.com/v/334296) vídeo para obter um resumo dos recursos adicionados.
+Assista ao vídeo [Visão geral da versão de junho de 2021](https://video.tv.adobe.com/v/334296) para ver um resumo dos recursos adicionados.
 
 ## XML Documentation para AEM as a cloud Service {#xml-documentation}
 
 ### Novidades {#what-is-new-xml-documentation}
 
-* O XML Documentation para AEM as a Cloud Service agora está em disponibilidade geral.
+* O XML Documentation para AEM as a Cloud Service agora está disponível.
 * Isso permitirá que os clientes atuais do AEM Cloud Service adquiram o XML Documentation para importar, criar, gerenciar e fornecer conteúdo técnico em vários canais, incluindo sites AEM
 
 ## Cloud Manager {#cloud-manager}
 
-Esta seção descreve as notas de versão do Cloud Manager no AEM as a Cloud Service 2021.6.0 e 2021.5.0.
+Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.6.0 e 2021.5.0.
 
 ### Data de lançamento {#release-date-june-cm}
 
@@ -66,7 +66,7 @@ A próxima versão está planejada para 15 de julho de 2021.
 
 * Para evitar confusão, as linhas de segmento Publicar AEM e Publicar Dispatcher na página Detalhes do ambiente foram consolidadas.
 
-  ![Ambientes do Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
+  ![Ambientes Dispatcher](/help/implementing/cloud-manager/release-notes/assets/aem-dispatcher.png)
 
 * Uma nova regra de qualidade de código foi adicionada para validar a estrutura dos índices `damAssetLucene`. Consulte [Índices Oak Lucene de ativos DAM personalizados](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-damAssetLucene-sanity-check) para obter mais detalhes.
 
@@ -90,25 +90,25 @@ A próxima versão está planejada para 15 de julho de 2021.
 
 ### Novos recursos no [!DNL Assets] {#ga-features-assets}
 
-* A funcionalidade de Automatização de conteúdo permite [!DNL Experience Manager Assets] use o [!DNL Adobe Creative Cloud] APIs para automatizar a produção de ativos em escala. Isso melhora a velocidade do conteúdo diminuindo drasticamente o tempo gasto e as iterações necessárias para criar variações do mesmo ativo. A funcionalidade não requer código e funciona no DAM.
-* [!DNL Adobe Asset Link] v3.0 para [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], e [!DNL Adobe InDesign] e [!DNL Adobe Asset Link] v2.0 para [!DNL Adobe XD] foi lançado. Ele fornece:
+* A funcionalidade de Automatização de Conteúdo permite que o [!DNL Experience Manager Assets] use as APIs do [!DNL Adobe Creative Cloud] para automatizar a produção de ativos em escala. Isso melhora a velocidade do conteúdo diminuindo drasticamente o tempo gasto e as iterações necessárias para criar variações do mesmo ativo. A funcionalidade não requer código e funciona no DAM.
+* O [!DNL Adobe Asset Link] v3.0 para [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] e [!DNL Adobe InDesign] e o [!DNL Adobe Asset Link] v2.0 para [!DNL Adobe XD] foi lançado. Ele fornece:
 
    * Suporte para [!DNL Assets Essentials].
-   * Capacidade de se conectar automaticamente a [!DNL Experience Manager] as a [!DNL Cloud Service] ou [!DNL Assets Essentials].
+   * Capacidade de conectar-se automaticamente a [!DNL Experience Manager] como [!DNL Cloud Service] ou [!DNL Assets Essentials].
 
 <!-- TBD: Checking with PMs if AAE release should be mentioned here.
 -->
 
-### Novos recursos disponíveis na [!DNL Assets] canal de pré-lançamento {#beta-features-assets}
+### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Assets] {#beta-features-assets}
 
 * As configurações de exibição são aprimoradas para permitir que os usuários escolham uma exibição padrão e um parâmetro de classificação padrão.
 * A funcionalidade de download do Linkshare usa downloads assíncronos que aumentam a velocidade de download.
 * Os usuários podem pesquisar e filtrar as pastas com base em predicados de propriedade.
-* [!DNL Experience Manager Assets] incorpora o Visualizador de PDF ativado por [!DNL Adobe Document Cloud] para visualizar os documentos compatíveis. Esse recurso permite que os usuários visualizem o PDF e outros arquivos de várias páginas sem processamento complexo. Isso melhora a paridade de recursos com o [!DNL Experience Manager] 6.5.
+* [!DNL Experience Manager Assets] incorpora o Visualizador de PDF habilitado por [!DNL Adobe Document Cloud] para visualizar os documentos com suporte. Esse recurso permite que os usuários visualizem o PDF e outros arquivos de várias páginas sem processamento complexo. Isso melhora a paridade de recursos com o [!DNL Experience Manager] 6.5.
 
 ### Bugs corrigidos em [!DNL Assets] {#bugs-fixed-assets}
 
-* Ao adicionar um proprietário a uma subpasta, [!DNL Assets] O também adiciona o mesmo usuário como proprietário da pasta principal. (CQ-4323737)
+* Quando você adiciona um proprietário a uma subpasta, o [!DNL Assets] também adiciona o mesmo usuário como proprietário da pasta pai. (CQ-4323737)
 * Ao adicionar ativos a Coleções, se um usuário aplicar um filtro na pesquisa de Coleções, não poderá visualizar as Coleções na exibição em Lista. (CQ-4323181)
 * Ao pesquisar arquivos e pastas, se o usuário aplicar um filtro e selecionar [!UICONTROL Arquivos e pastas], somente os arquivos serão exibidos, mas não a pasta. (CQ-4319543)
 
@@ -116,8 +116,8 @@ A próxima versão está planejada para 15 de julho de 2021.
 
 ### Novos recursos no [!DNL Sites] {#ga-features-sites}
 
-* A camada Publicação para Visualização agora é exibida como status de página na interface de usuário do administrador do Sites
-* A camada Publicação para Visualização agora exibe o URL de visualização no final da ação e mantém o URL nas propriedades da página para referência futura
+* A camada Publish para visualização agora é exibida como status de página na interface de usuário do administrador do Sites
+* A camada Publish para visualização agora exibe o URL de visualização no final da ação e mantém o URL nas propriedades da página para referência futura
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -128,16 +128,16 @@ A próxima versão está planejada para 15 de julho de 2021.
 * Melhoria na velocidade e precisão para detectar automaticamente seções lógicas nos PDF forms de origem e convertê-las em painéis de formulário adaptáveis correspondentes.
 * Adição da ação Mover para mover um arquivo PDF ou XDP de uma pasta para outra.
 
-### Recurso beta do [!DNL Forms] {#what-is-new-forms-prerelease}
+### Recurso Beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: APIs de comunicação ajudam a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
    * Gerar documentos de formulário final preenchendo arquivos de modelo com dados XML.
    * Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
    * Gere PDF de impressão a partir de um PDF de formulário XFA e do formulário Adobe Acrobat (AcroForm).
 
-* **Externalizador de dados variáveis**: é possível salvar dados de variáveis de fluxo de trabalho do AEM em um sistema de armazenamento externo gerenciado por sua organização.
+* **Externalizador de Dados de Variáveis**: você pode salvar dados de variáveis de Fluxo de Trabalho do AEM em um sistema de armazenamento externo gerenciado por sua organização.
 
-Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no programa beta.
+Você pode enviar um email a [!DNL formscsbeta@adobe.com] para se cadastrar no programa beta.
 
 ### Bugs corrigidos em [!DNL Forms] {#forms-bugs-fixed}
 
@@ -155,7 +155,7 @@ A data de lançamento do AEM Screens as a Cloud Service é 24 de junho de 2021.
 ### Novidades {#what-is-new-screens-june}
 
 >[!NOTE]
->Consulte [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) Guia do conhecimento fundamental necessário para instalar, configurar e executar com êxito o Screens as a Cloud Service e link para a documentação técnica de conceitos detalhados.
+>Consulte o Guia [AEM Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/home.html) para obter o conhecimento básico necessário para instalar, configurar e executar o Screens as a Cloud Service com êxito e consulte a documentação técnica de conceitos detalhados.
 
 * O gerenciamento de registro de dispositivos em massa significa que o provisionamento de grandes quantidades de dispositivos de reprodução é mais rápido e eficiente.
 
@@ -184,7 +184,7 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.5.4 é 28 
 
 ### Novidades {#what-is-new-ctt-latest}
 
-* Suporte para um [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) etapa adicionada para uso com CTT. A etapa de pré-cópia pode ser usada para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo quando a instância do AEM de origem for configurada para usar um armazenamento de dados Amazon S3 ou Azure Blob.
+* Suporte para uma etapa [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) opcional adicionada para uso com a CTT. A etapa de pré-cópia pode ser usada para acelerar significativamente as fases de extração e assimilação da atividade de transferência de conteúdo quando a instância do AEM de origem for configurada para usar um armazenamento de dados Amazon S3 ou Azure Blob.
 
 * A grade de proteção foi adicionada à CTT para impedir que os usuários interrompam uma assimilação e corrompam os dados quando eles atingirem o ponto crítico durante a fase de assimilação.
 
@@ -194,7 +194,7 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.5.4 é 28 
 
 ### Correções de erros {#bug-fixes-ctt-latest}
 
-* Ao interromper uma assimilação na instância do autor, a interface substituiu uma assimilação concluída anteriormente na instância de publicação para `STOPPED` de `FINISHED`. Isso foi corrigido.
+* Ao interromper uma assimilação na instância do Autor, a interface substituiu uma assimilação concluída anteriormente na instância do Publish para `STOPPED` de `FINISHED`. Isso foi corrigido.
 
 ## Analisador de práticas recomendadas {#best-practices-analyzer}
 
@@ -204,7 +204,7 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.16 é 30 de j
 
 ### Novidades {#what-is-new-bpa-latest}
 
-* Capacidade de detectar e relatar nós secundários ausentes em pastas em `/content/dam`.
+* Capacidade de detectar e relatar nós filhos ausentes em pastas em `/content/dam`.
 
 * Capacidade de detectar e relatar a versão do Analisador de práticas recomendadas usada.
 

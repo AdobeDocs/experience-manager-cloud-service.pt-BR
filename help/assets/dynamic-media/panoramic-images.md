@@ -18,7 +18,7 @@ Esta seção descreve como trabalhar com o visualizador de imagens panorâmicas 
 
 Consulte também [Gerenciar predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-![panoramic-image2](assets/panoramic-image2.png)
+![imagem panorâmica2](assets/panoramic-image2.png)
 
 ## Fazer upload de ativos para uso com o visualizador de imagens panorâmicas {#uploading-assets-for-use-with-the-panoramic-image-viewer}
 
@@ -27,11 +27,11 @@ Para que um ativo carregado seja qualificado como uma imagem panorâmica esféri
 * Uma taxa de proporção de 2.
 <!--  You can override the default aspect ratio setting of 2 in CRXDE Lite at the following:
   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content` -->
-* Marcado com as palavras-chave `equirectangular`ou `spherical`e `panorama`ou `spherical` e `panoramic`. Consulte [Usar tags](/help/sites-cloud/authoring/sites-console/tags.md).
+* Marcado com as palavras-chave `equirectangular` ou `spherical`e `panorama` ou `spherical` e `panoramic`. Consulte [Usar Tags](/help/sites-cloud/authoring/sites-console/tags.md).
 
-Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos da página de detalhes do ativo e da `Panoramic Media` Componente WCM.
+Tanto a proporção quanto os critérios de palavra-chave se aplicam aos ativos panorâmicos da página de detalhes do ativo e o componente WCM `Panoramic Media`.
 
-Para fazer upload de ativos para uso com o visualizador de imagens panorâmicas, consulte [Fazer upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
+Para carregar ativos para uso com o visualizador de Imagens panorâmicas, consulte [Carregar ativos](/help/assets/manage-digital-assets.md#uploading-assets).
 
 <!--  NEED TO CHECK IF DM CLASSIC PART OF SKYLINE 
 
@@ -80,6 +80,6 @@ If you dropped an image into the Panoramic Media component in your WCM and the c
 
 Consulte [Visualizar ativos](/help/assets/dynamic-media/previewing-assets.md).
 
-## Publicar imagens panorâmicas {#publishing-panoramic-images}
+## Imagens panorâmicas do Publish {#publishing-panoramic-images}
 
-Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulte [ativos do Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

@@ -24,18 +24,18 @@ No Adobe Cloud Manager, você pode destacar seu site adicionando um domínio per
 
 Para configurar um domínio personalizado para o nível de publicação, siga estas etapas:
 
-1. Ir para **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Visão geral do programa]** > **[!UICONTROL Certificados SSL]**e adicione seu certificado SSL.
+1. Acesse **[!UICONTROL Adobe Cloud Manager]** > **[!UICONTROL Visão geral do programa]** > **[!UICONTROL Certificados SSL]** e adicione seu certificado SSL.
    ![imagem](/help/assets/assets/ssl-certificate.png)
-Saiba como adicionar [Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) no Adobe Cloud Manager.
+Saiba como adicionar o [certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) ao Adobe Cloud Manager.
 
-1. Depois de adicionar o certificado SSL, adicione um domínio personalizado. Clique em **[!UICONTROL Configurações do domínio]** e especifique o domínio personalizado em relação ao **[!UICONTROL serviço Publish]** opção.
+1. Depois de adicionar o certificado SSL, adicione um domínio personalizado. Clique em **[!UICONTROL Configurações de Domínio]** e especifique o domínio personalizado em relação à opção de **[!UICONTROL serviço do Publish]**.
 Saiba mais sobre [domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
-1. Adicionar 2 [Registros CNAME](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) no registro DNS correspondente aos domínios de publicação.
+1. Adicione 2 [registros CNAME](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) no registro DNS correspondente aos domínios de publicação.
 A verificação de DNS pode levar algumas horas para ser processada devido a atrasos de propagação de DNS.
 
 1. Registre um caso de suporte para facilitar a configuração do domínio personalizado, garantindo que ele seja direcionado para o nível de entrega.
 
 >[!NOTE]
 >
-> Adicione o domínio personalizado à lista de URLs de redirecionamento permitidos no cliente IMS para o seletor de ativos.<br>Coordene com a respectiva equipe de Adobe para executar essa tarefa fornecendo a cadeia de caracteres do domínio personalizado.
+> Adicione o domínio personalizado à lista de URLs de redirecionamento permitidos no cliente IMS para o seletor de ativos.<br>Coordene com a respectiva equipe de Adobe para executar esta tarefa fornecendo a cadeia de caracteres do domínio personalizado.

@@ -23,7 +23,7 @@ A interface do Cloud Manager é composta principalmente por duas interfaces grá
 
 >[!TIP]
 >
->Verifique também o [integração da jornada de documentação](/help/journey-onboarding/overview.md) para obter uma visão geral completa de como começar a usar o AEM as a Cloud Service usando o Cloud Manager.
+>Verifique também a [jornada de documentação de integração](/help/journey-onboarding/overview.md) para obter uma visão geral completa de como começar a usar o AEM as a Cloud Service usando o Cloud Manager.
 
 ## Console Meus programas {#my-programs}
 
@@ -106,7 +106,7 @@ Cada programa é representado por um cartão (ou linha em uma tabela), o qual fo
 
 * Imagem do programa (se configurada)
 * Nome do programa
-* Tipo de serviço: **Experience Manager Cloud** para programas AEM as a * Cloud Service ou [**Experience Manager** para programas do AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* Tipo de serviço: **Experience Manager Cloud** para programas AEM as a * Cloud Service ou [**Experience Manager** para programas AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
 * [Tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): sandbox ou produção
 * Status
 * Soluções configuradas
@@ -124,7 +124,7 @@ Dependendo das opções escolhidas ao criar o programa, um programa de produçã
 
 * [SLA de 99,99%](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
-  ![Selo de SLA de 99,99%](assets/9999-sla.png)
+  ![99,99% selo de SLA](assets/9999-sla.png)
 
 O ícone de informações também fornece acesso rápido a informações adicionais sobre o programa (útil na exibição de lista).
 
@@ -143,13 +143,13 @@ O ícone de reticências fornece acesso a ações adicionais que você pode real
 >
 >Para obter mais informações sobre programas e sobre como criar e gerenciar programas, consulte os documentos a seguir.
 >
->* [Programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
->* [Criação de programas do sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
->* [Criação de programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
+>* [Programas e Tipos de Programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
+>* [Criando Programas de Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
+>* [Criando Programas de Produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
 #### Guia Licença {#license-tab}
 
-A variável **Licença** fornece acesso rápido à [Painel de licenças.](/help/implementing/cloud-manager/license-dashboard.md)
+A guia **Licença** fornece acesso rápido ao [Painel de Licenças.](/help/implementing/cloud-manager/license-dashboard.md)
 
 ### Links rápidos {#quick-links}
 
@@ -168,7 +168,7 @@ A visão geral do programa fornece acesso a todos os detalhes de um programa do 
 1. Uma [frase de chamariz](#cta) baseada nas últimas ações do programa
 1. Uma [visão geral dos ambientes](#environments) do programa
 1. Uma [visão geral dos pipelines](#pipelines) do programa
-1. Um [visão geral do desempenho](#performance) do programa
+1. Uma [visão geral do desempenho](#performance) do programa
 1. Links para [recursos úteis](#useful-resources)
 
 ### Barras de ferramentas {#program-overview-toolbar}
@@ -237,7 +237,7 @@ Consulte o documento [Gerenciamento de pipelines](/help/implementing/cloud-manag
 
 ### Cartão de desempenho {#performance}
 
-A variável **Desempenho** fornece uma visão geral do **[Painel CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
+O cartão **Desempenho** fornece uma visão geral do **[Painel CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
 
 ![Cartão de desempenho](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

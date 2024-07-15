@@ -75,7 +75,7 @@ A barra de ferramentas oferece acesso a várias opções. Dependendo do contexto
 
 * **Seletor de modo**
 
-  Exibe o atual [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) e permite selecionar outro modo, como editar, layout, timewarp ou direcionamento.
+  Exibe o [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) atual e permite selecionar outro modo, como editar, layout, timewarp ou direcionamento.
 
   ![Botão Seletor de modo](/help/sites-cloud/authoring/assets/mode-selector.png)
 
@@ -151,9 +151,9 @@ O espaço reservado do componente é um indicador para mostrar onde um component
 
      ![Inserir um componente](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
-   * Se você estiver em um dispositivo de desktop, clique duas vezes na guia **Arraste os componentes para cá** caixa.
+   * Se você estiver em um dispositivo de desktop, clique duas vezes na caixa **Arraste componentes aqui**.
 
-   * A variável **Inserir novo componente** caixa de diálogo aberta para permitir selecionar o componente desejado:
+   * A caixa de diálogo **Inserir novo componente** é aberta para permitir que você selecione o componente necessário:
 
      ![Caixa de diálogo Inserir novo componente](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
@@ -173,7 +173,7 @@ Para criar um componente arrastando um dos tipos de ativos acima:
 
    Um componente, apropriado para o tipo de ativo, será criado nesse local e conterá o ativo selecionado.
 
-1. [Editar](#edit-content) o componente, se necessário.
+1. [Edite](#edit-content) o componente, se necessário.
 
 >[!NOTE]
 >
@@ -261,7 +261,7 @@ As ações de fato disponíveis para o usuário serão mostradas conforme apropr
 
 * **Converta em uma variação de fragmento de experiência**
 
-  Isso permite criar um [fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) do componente selecionado ou adicione-o a um fragmento de experiência existente.
+  Isso permite criar um [fragmento de experiência](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) do componente selecionado ou adicioná-lo a um fragmento de experiência existente.
 
   ![Botão Converter para fragmento de experiência](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
@@ -341,7 +341,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 
    ![A barra de ferramentas do componente de um componente de página](/help/sites-cloud/authoring/assets/editing-layout-toolbar.png)
 
-   Selecione o **Layout** ação para ajustar o layout do componente.
+   Selecione a ação **Layout** para ajustar o layout do componente.
 
    ![O botão Layout da barra de ferramentas do componente](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 

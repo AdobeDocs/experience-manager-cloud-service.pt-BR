@@ -63,7 +63,7 @@ Para habilitar o endpoint correspondente:
 
 1. Navegue até **Ferramentas**, **Geral** e, em seguida, selecione **GraphQL**.
 1. Selecione **Criar**.
-1. A variável **Criar novo endpoint do GraphQL** será aberta. Aqui, é possível especificar:
+1. A caixa de diálogo **Criar novo Ponto de Extremidade do GraphQL** é aberta. Aqui, é possível especificar:
    * **Nome**: nome do endpoint; é possível inserir qualquer texto.
    * **Usar esquema do GraphQL fornecido por**: use a lista suspensa para selecionar o site/projeto necessário.
 
@@ -74,7 +74,7 @@ Para habilitar o endpoint correspondente:
    >* *Os endpoints do GraphQL podem apresentar problemas de desempenho e de segurança de dados se não forem gerenciados com cuidado. Certifique-se de que as permissões apropriadas estejam definidas após a criação de um ponto de acesso.*
 
 1. Confirme com **Criar**.
-1. A variável **Próximas etapas** fornecerá um link direto para o console de Segurança, para que você possa garantir que o endpoint criado tenha as permissões adequadas.
+1. A caixa de diálogo **Próximas etapas** fornecerá um link direto para o console de Segurança, para que você possa garantir que o ponto de extremidade criado tenha as permissões adequadas.
 
    >[!CAUTION]
    >
@@ -92,4 +92,4 @@ Selecione o novo endpoint e escolha **Publicar** para disponibilizá-lo completa
 >
 >Isso pode causar uma preocupação de segurança em instâncias de publicação, já que as consultas de GraphQL podem colocar uma carga pesada sobre o servidor.
 >
->Configurar [ACLs apropriadas ao seu caso de uso](/help/headless/security/permissions.md) no endpoint.
+>Configure [ACLs apropriadas ao seu caso de uso](/help/headless/security/permissions.md) no ponto de extremidade.

@@ -40,10 +40,10 @@ Casos de uso típicos para as variáveis de ambiente incluem:
 >Você deve ser membro com a função de [**Gerenciador de implantação** ](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) para adicionar ou modificar variáveis de ambiente.
 
 1. Faça logon no Adobe Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione aquele que deseja gerenciar.
-1. Na barra de navegação lateral, selecione o **Ambientes** para o programa escolhido, selecione o ambiente para o qual deseja criar uma variável de ambiente.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione aquele que deseja gerenciar.
+1. Na barra de navegação lateral, selecione a janela **Ambientes** para o programa escolhido e o ambiente para o qual deseja criar uma variável de ambiente.
 1. Nos detalhes do ambiente, selecione a guia **Configuração** e clique em **Adicionar** para abrir a caixa de diálogo **Configuração do ambiente**.
-   * Se estiver adicionando uma variável de ambiente pela primeira vez, você poderá ver uma **Adicionar configuração** no centro da página. Você pode usar esse botão ou **Adicionar** para abrir a caixa de diálogo **Configuração do ambiente**.
+   * Se você estiver adicionando uma variável de ambiente pela primeira vez, poderá ver o botão **Adicionar configuração** no centro da página. Você pode usar esse botão ou **Adicionar** para abrir a caixa de diálogo **Configuração do ambiente**.
 
    ![Guia Configuração](assets/configuration-tab.png)
 
@@ -68,7 +68,7 @@ Um indicador com o status **Atualizando** é mostrado na parte superior da tabel
 
 >[!TIP]
 >
->Se quiser adicionar várias variáveis, é recomendável adicionar a primeira variável e usar o **Adicionar** botão na caixa **Configuração do ambiente** para adicionar as variáveis adicionais. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
+>Se você quiser adicionar várias variáveis, é recomendável adicionar a primeira variável e usar o botão **Adicionar** na caixa de diálogo **Configuração do ambiente** para adicionar as variáveis adicionais. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
 
 ## Atualização de variáveis de ambiente {#update-variables}
 
@@ -76,7 +76,7 @@ Depois de criar as variáveis de ambiente, você pode atualizá-las usando o bot
 
 1. Faça logon no Adobe Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. O Cloud Manager lista os vários programas disponíveis. Selecione aquele que deseja gerenciar.
-1. No painel de navegação, selecione a variável **Ambientes** para o programa escolhido, selecione o ambiente para o qual deseja modificar uma variável de ambiente.
+1. No painel de navegação, selecione a janela **Ambientes** para o programa escolhido e selecione o ambiente para o qual deseja modificar uma variável de ambiente.
 1. Nos detalhes do ambiente, selecione a guia **Configuração** e clique em **Adicionar/atualizar** no canto superior direito para abrir a caixa de diálogo **Configuração do ambiente**.
 1. Usando o botão de reticências na última coluna da linha da variável que você deseja modificar, selecione **Editar** ou **Excluir**.
 
@@ -94,7 +94,7 @@ Depois de criar as variáveis de ambiente, você pode atualizá-las usando o bot
 
 >[!TIP]
 >
->Se você quiser atualizar várias variáveis, é recomendável usar o **Configuração do ambiente** para atualizar todas as variáveis necessárias de uma só vez antes de tocar ou clicar **Salvar**. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
+>Se você deseja atualizar várias variáveis, é recomendável usar a caixa de diálogo **Configuração do Ambiente** para atualizar todas as variáveis necessárias de uma só vez antes de tocar ou clicar em **Salvar**. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
 
 ## Uso de variáveis de ambiente {#using}
 
@@ -120,7 +120,7 @@ As variáveis e os segredos comuns do ambiente podem ser usados nos ambientes de
 
 Somente variáveis de ambiente comuns podem ser usadas com o [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) Segredos não podem ser usados.
 
-No entanto, as variáveis de ambiente não podem ser usadas no `IfDefine` diretivas.
+No entanto, as variáveis de ambiente não podem ser usadas em diretivas `IfDefine`.
 
 >[!TIP]
 >

@@ -29,7 +29,7 @@ O Experience Manager Assets permite que os administradores configurem as opçõe
 
 ## Pré-requisitos {#prerequisites-configuration-ui}
 
-[Administradores do Content Hub](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) O pode definir as opções de configuração para outros usuários em sua organização.
+[Os administradores do Content Hub](/help/assets/deploy-content-hub.md#step-3-onboard-content-hub-administrator) podem definir as opções de configuração para outros usuários em sua organização.
 
 ## Acessar opções de configuração no Content Hub {#access-configuration-options-content-hub}
 
@@ -37,7 +37,7 @@ Para acessar as opções de configuração no Content Hub:
 
 1. Clique no ícone do usuário no painel direito.
 
-1. No **[!UICONTROL Configurações do produto]** , selecione **[!UICONTROL Configurações]**.
+1. Na seção **[!UICONTROL Configurações do Produto]**, selecione **[!UICONTROL Configurações]**.
 
    ![Acessar opções de configuração no Content Hub](assets/access-content-hub-configuration-ui.png)
 
@@ -61,40 +61,40 @@ Gerencie as seguintes opções de configuração para seus usuários:
 
 Você pode configurar os campos de metadados exibidos para os usuários ao fazer upload ou importar ativos para o portal do Content Hub, como Nome da campanha, Palavras-chave, Canais, Período, Região etc. Para desabilitá-la, siga estas etapas:
 
-1. No [Configurações](#access-configuration-options-content-hub) clique em **[!UICONTROL Importar]**.
+1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Importar]**.
 
 1. Clique em **[!UICONTROL Adicionar metadados]**.
 
-1. Especifique um rótulo para a propriedade, mapeie-o para uma propriedade usando o **[!UICONTROL Metadados]** e selecione o tipo de entrada para os novos metadados do ativo.
+1. Especifique um rótulo para a propriedade, mapeie-o para uma propriedade usando o campo **[!UICONTROL Metadados]** e selecione o tipo de entrada para os novos metadados do ativo.
 
-1. Clique em **[!UICONTROL Campo obrigatório]** alterne para tornar o novo campo de metadados obrigatório para especificar para usuários ao carregar novos ativos.
+1. Clique no botão **[!UICONTROL Campo obrigatório]** para tornar o novo campo de metadados obrigatório para especificação para usuários ao carregar novos ativos.
 
-1. Clique em **[!UICONTROL Confirmar o]**. Os novos metadados são exibidos na lista das propriedades de ativos existentes.
+1. Clique em **[!UICONTROL Confirmar]**. Os novos metadados são exibidos na lista das propriedades de ativos existentes.
 
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações.
 
-Da mesma forma, você pode clicar em ![Ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade disponível, para editar os rótulos, torne esses campos obrigatórios ou não obrigatórios para os usuários enquanto faz upload de ativos usando o **[!UICONTROL Campo obrigatório]** ou clique no ícone Excluir para excluir qualquer propriedade de metadados.
+Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade disponível, para editar os rótulos, tornar esses campos obrigatórios ou não obrigatórios para os usuários ao carregar ativos usando a opção **[!UICONTROL Campo obrigatório]** ou clicar no ícone Excluir para excluir qualquer propriedade de metadados.
 
-Clique em **[!UICONTROL Aprovação automática]** alterne se precisar que todos os ativos adicionados ao repositório do Experience Manager Assets sejam aprovados automaticamente para que estejam disponíveis no Content Hub imediatamente. Os autores ou administradores do DAM precisam aprovar manualmente os ativos para disponibilizá-los no Content Hub. Por padrão, o botão está definido como Desligado.
+Clique na opção **[!UICONTROL Aprovação automática]** se precisar que todos os ativos adicionados ao repositório do Experience Manager Assets sejam aprovados automaticamente para que estejam disponíveis no Content Hub imediatamente. Os autores ou administradores do DAM precisam aprovar manualmente os ativos para disponibilizá-los no Content Hub. Por padrão, o botão está definido como Desligado.
 
 Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
 
-![Detalhes de upload da interface de configuração no Content Hub](assets/configuration-ui-upload-details.png)
+![Detalhes do carregamento da interface de configuração no Content Hub](assets/configuration-ui-upload-details.png)
 
 Metadados ativados na interface do usuário de configuração são exibidos na página de upload de ativos:
 
-![Fazer upload de metadados no Content Hub](assets/configuration-ui-add-assets.png)
+![Carregar metadados no Content Hub](assets/configuration-ui-add-assets.png)
 
 ### Filtros {#configure-filters-content-hub}
 
 O Content Hub permite que os administradores configurem filtros que são exibidos ao pesquisar ativos. Execute as seguintes etapas para adicionar um novo filtro:
 
-1. No [Configurações](#access-configuration-options-content-hub) clique em **[!UICONTROL Filtros]**.
+1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Filtros]**.
 
 1. Clique em **[!UICONTROL Adicionar filtros]**.
 
-1. Especifique um rótulo para o filtro, mapeie-o para uma propriedade usando o **[!UICONTROL Metadados]** e selecione o tipo de entrada para o novo filtro.
-1. Clique em **[!UICONTROL Confirmar o]**. O novo filtro é exibido na lista dos filtros existentes.
+1. Especifique um rótulo para o filtro, mapeie-o para uma propriedade usando o campo **[!UICONTROL Metadados]** e selecione o tipo de entrada para o novo filtro.
+1. Clique em **[!UICONTROL Confirmar]**. O novo filtro é exibido na lista dos filtros existentes.
 
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações para que o novo filtro seja exibido na página Pesquisar ao filtrar ativos.
 
@@ -102,9 +102,9 @@ O Content Hub permite que os administradores configurem filtros que são exibido
    >
    >O novo filtro é exibido na página Pesquisar somente se houver pelo menos um ativo no repositório que corresponda aos critérios do filtro.
 
-Da mesma forma, você pode clicar em ![Ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada filtro disponível, para editar os rótulos ou clicar no ícone excluir para excluir qualquer filtro existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
+Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada filtro disponível, para editar os rótulos ou clicar no ícone excluir para excluir qualquer filtro existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
 
-![Filtros de configuração da interface do usuário no Content Hub](assets/configuration-ui-filters.png)
+![Filtros de configuração de interface do usuário no Content Hub](assets/configuration-ui-filters.png)
 
 Os filtros ativados na Interface do Usuário de Configuração são exibidos na página Pesquisar:
 
@@ -115,74 +115,74 @@ Os filtros ativados na Interface do Usuário de Configuração são exibidos na 
 
 Você também pode configurar as propriedades de ativos exibidas para cada ativo, como nome do arquivo, título, formato, tamanho e assim por diante. Para desabilitá-la, siga estas etapas:
 
-1. No [Configurações](#access-configuration-options-content-hub) clique em **[!UICONTROL Detalhes do ativo]**.
+1. Na interface do usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Detalhes do ativo]**.
 
 1. Clique em **[!UICONTROL Adicionar metadados]**.
 
-1. Especifique um rótulo para a propriedade, mapeie-o para uma propriedade usando o **[!UICONTROL Metadados]** e selecione o tipo de entrada para os novos metadados do ativo.
-1. Clique em **[!UICONTROL Confirmar o]**. Os novos metadados são exibidos na lista das propriedades de ativos existentes.
+1. Especifique um rótulo para a propriedade, mapeie-o para uma propriedade usando o campo **[!UICONTROL Metadados]** e selecione o tipo de entrada para os novos metadados do ativo.
+1. Clique em **[!UICONTROL Confirmar]**. Os novos metadados são exibidos na lista das propriedades de ativos existentes.
 
-1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações para que a nova propriedade seja exibida na página detalhes do ativo.
+1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações para que a nova propriedade seja exibida na página de detalhes do ativo.
 
-Da mesma forma, você pode clicar em ![Ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade disponível, para editar os rótulos ou clicar no ícone excluir para excluir qualquer detalhe de ativo existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
+Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade disponível, para editar os rótulos ou clicar no ícone excluir para excluir qualquer detalhe de ativo existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
 
 ![Detalhes do ativo da interface do usuário de configuração no Content Hub](assets/configuration-ui-asset-details.png)
 
 As propriedades ativadas na Interface do Usuário da Configuração são exibidas na página Detalhes do ativo:
 
-![Propriedades de ativos no Content Hub](assets/config-ui-asset-properties.png)
+![Propriedades do ativo no Content Hub](assets/config-ui-asset-properties.png)
 
 ### Pesquisar {#configure-metadata-search-content-hub}
 
 Os administradores podem definir os campos de metadados que são pesquisados quando um usuário especifica um critério de pesquisa no Content Hub. Execute as seguintes etapas:
 
-1. No [Configurações](#access-configuration-options-content-hub) clique em **[!UICONTROL Adicionar metadados]**.
+1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Adicionar metadados]**.
 
-1. Especifique o campo de metadados e clique em **[!UICONTROL Confirmar o]**.
+1. Especifique o campo de metadados e clique em **[!UICONTROL Confirmar]**.
 
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações para que a nova propriedade de metadados seja exibida na lista de campos de metadados.
 
-Da mesma forma, você pode clicar em ![Ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade de metadados disponível, para editar a propriedade ou clicar no ícone excluir para excluir qualquer propriedade existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
+Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade de metadados disponível, para editar a propriedade ou clicar no ícone excluir para excluir qualquer propriedade existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
 
-![Pesquisa de interface do usuário de configuração no Content Hub](assets/configuration-ui-metadata-search.png)
+![Pesquisa de Interface do Usuário de Configuração no Content Hub](assets/configuration-ui-metadata-search.png)
 
 
 ### Identidade visual {#configure-branding-content-hub}
 
 Os administradores também podem personalizar o título e o texto do corpo no banner do portal do Content Hub, de acordo com seus requisitos de marca. Para desabilitá-la, siga estas etapas:
 
-1. No [Configurações](#access-configuration-options-content-hub) clique em **[!UICONTROL Marcas]**.
+1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Identidade Visual]**.
 
-1. Especificar texto em **[!UICONTROL Texto do título no banner]** e **[!UICONTROL Corpo de texto no banner]** campos.
+1. Especifique o texto no **[!UICONTROL Texto do título no banner]** e **[!UICONTROL Texto do corpo nos campos do banner]**.
 
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações.
 
-![Marca da interface de usuário da configuração no Content Hub](assets/configuration-ui-branding.png)
+![Marca da interface do usuário de configuração no Content Hub](assets/configuration-ui-branding.png)
 
 As atualizações de marca ativadas na interface do usuário de configuração são exibidas no banner do portal do Content Hub:
 
-![Marca da interface de usuário da configuração no Content Hub](assets/configuration-ui-branding-updates.png)
+![Marca da interface do usuário de configuração no Content Hub](assets/configuration-ui-branding-updates.png)
 
 ### Links personalizados {#configure-custom-links-content-hub}
 
-Também é possível adicionar guias personalizadas, além das guias padrão **[!UICONTROL Todos os Assets]**, **[!UICONTROL Coleções]**, e **[!UICONTROL Insights]** no portal do Content Hub logo abaixo do banner. Para desabilitá-la, siga estas etapas:
+Você também pode adicionar guias personalizadas além das guias padrão **[!UICONTROL Todas as Assets]**, **[!UICONTROL Coleções]** e **[!UICONTROL Insights]** no portal do Content Hub logo abaixo do banner. Para desabilitá-la, siga estas etapas:
 
-1. No [Configurações](#access-configuration-options-content-hub) clique em **[!UICONTROL Links personalizados]**.
+1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Links Personalizados]**.
 
 1. Clique em **[!UICONTROL Adicionar link]**.
 
-1. Especificar texto em **[!UICONTROL Rótulo]** e **[!UICONTROL URL]** campos. O rótulo definido é exibido como uma guia e, ao clicar no rótulo, você navega até o URL definido na guia **[!UICONTROL URL]** campo.
+1. Especifique o texto nos campos **[!UICONTROL Rótulo]** e **[!UICONTROL URL]**. O rótulo definido é exibido como uma guia e, quando você clica no rótulo, navega até a URL definida no campo **[!UICONTROL URL]**.
 
-1. Clique em **[!UICONTROL Confirmar o]**.
+1. Clique em **[!UICONTROL Confirmar]**.
 
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações.
 
-Da mesma forma, você pode clicar em ![Ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada URL, para editar os links ou clique no ícone excluir para excluir qualquer URL existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
+Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada URL, para editar os links ou clicar no ícone excluir para excluir qualquer URL existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
 
-![Links personalizados da interface do usuário de configuração no Content Hub](assets/configuration-ui-custom-links.png)
+![Links Personalizados da Interface do Usuário de Configuração no Content Hub](assets/configuration-ui-custom-links.png)
 
 O link personalizado é exibido como uma nova guia ao lado da guia Insights na página inicial do Content Hub.
 
-![Guias de Links personalizados de interface do usuário de configuração no Content Hub](assets/configuration-ui-custom-link-tab.png)
+![Guias de Links Personalizados da Interface do Usuário de Configuração no Content Hub](assets/configuration-ui-custom-link-tab.png)
 
 

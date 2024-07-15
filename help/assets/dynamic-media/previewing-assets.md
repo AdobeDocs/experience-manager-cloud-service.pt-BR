@@ -25,22 +25,22 @@ Além de usar o recurso de Visualização dedicado para vídeo, conjuntos de rot
 
 >[!NOTE]
 >
->Quando você está em uma página da Web (Sites) no Adobe Experience Manager, não pode visualizar ativos no **[!UICONTROL Editar]** modo. Em vez disso, acesse o modo Visualização selecionando **[!UICONTROL Visualizar]** no canto superior direito da página.
+>Quando você está em uma página da Web (Sites) no Adobe Experience Manager, não pode visualizar ativos no modo **[!UICONTROL Editar]**. Em vez disso, vá para o modo de Visualização selecionando **[!UICONTROL Visualizar]** no canto superior direito da página.
 
-Para ativar ou desativar as predefinições do visualizador na interface do usuário, consulte [Gerenciamento de predefinições do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
+Para habilitar ou desabilitar predefinições do visualizador na interface do usuário, consulte [Gerenciamento de Predefinições do Visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
-**Para visualizar ativos:**
+**Para visualizar os ativos:**
 
-1. De **[!UICONTROL Experience Manager]**, no **[!UICONTROL Navegação]** selecione **[!UICONTROL Assets]**, depois **[!UICONTROL Arquivos]** para acessar ativos.
-1. Próximo ao canto superior direito da página, no **[!UICONTROL Exibir]** selecione **[!UICONTROL Exibição de lista]**.
-1. (Opcional) Use o **[!UICONTROL Tipo]** para classificar os ativos pelo tipo que deseja visualizar.
-1. No **[!UICONTROL Título]** selecione o nome do título (não a imagem em miniatura) do ativo que deseja visualizar.
+1. Em **[!UICONTROL Experience Manager]**, na página **[!UICONTROL Navegação]**, selecione **[!UICONTROL Assets]** e depois **[!UICONTROL Arquivos]** para acessar os ativos.
+1. Próximo ao canto superior direito da página, na lista suspensa **[!UICONTROL Exibição]**, selecione **[!UICONTROL Exibição de Lista]**.
+1. (Opcional) Use a coluna **[!UICONTROL Tipo]** para classificar os ativos pelo tipo que deseja visualizar.
+1. Na coluna **[!UICONTROL Título]**, selecione o nome do título (não a imagem em miniatura) do ativo que deseja visualizar.
 1. Dependendo do tipo de ativo selecionado, siga um destes procedimentos:
 
    <table>
     <tbody>
       <tr>
-      <td><strong>Tipo de ativo selecionado</strong><br /> </td>
+      <td><strong>Tipo de ativo que você selecionou</strong><br /> </td>
       <td><strong>É possível visualizar o ativo em uma representação específica?</strong></td>
       <td><strong>É possível visualizar o ativo em um visualizador específico?</strong></td>
       </tr>
@@ -50,16 +50,16 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <td>Sim</td>
       <td><p><strong>Para visualizar um ativo 3D no visualizador Dimensional</strong></p>
       <ul>
-      <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong> na lista e, em seguida, selecione o visualizador Dimensional.</li>
+      <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione <strong>Visualizadores</strong> na lista e selecione o visualizador Dimensional.</li>
       <li>Para retornar a imagem para o zoom original, selecione <strong>Redefinir</strong>.</li>
       <li>Para maximizar o visualizador no dispositivo de exibição, selecione <strong>Tela cheia</strong>.</li>
       </ul>
       <p><strong>Navegar pela cena 3D</strong></p>
       <ul>
-      <li><p><strong>Girar sua câmera 3D</strong> - Gire a visualização em torno da cena 3D e dos objetos.</p> Mouse: clique com o botão esquerdo + arraste.</p> Tela sensível ao toque: pressione + arraste.</p></li>
-      <li><p><strong>Deslocar a câmera</strong> - Desloque sua visualização para a esquerda, direita, para cima e para baixo.</p> Mouse: clique com o botão direito do mouse + arraste.</p> Tela sensível ao toque: pressione dois dedos + arraste.</p></li>
-      <li><p><strong>Aplicar zoom à sua câmera</strong> - Use o zoom da câmera se quiser mover para dentro e para fora das áreas na cena 3D.</p> Mouse: roda de rolagem.</p> Tela sensível ao toque: pinça no dedo.</p></li>
-      <li><p><strong>Recentralize sua câmera</strong> - Gire a visualização em torno da cena 3D e dos objetos.</p> Mouse: clique duas vezes.</p> Tela sensível ao toque: selecione duas vezes.</li></ul></td>
+      <li><p><strong>Gire sua câmera 3D</strong> - Gire a exibição em torno da cena 3D e dos objetos.</p> Mouse: clique com o botão esquerdo + arraste.</p> Tela sensível ao toque: pressione + arraste.</p></li>
+      <li><p><strong>Deslocar sua câmera</strong> - Deslocar sua exibição para a esquerda, direita, para cima e para baixo.</p> Mouse: clique com o botão direito do mouse + arraste.</p> Tela sensível ao toque: pressione dois dedos + arraste.</p></li>
+      <li><p><strong>Aplique zoom à sua câmera</strong> - Aplique zoom à sua câmera se desejar mover para dentro e para fora das áreas na cena 3D.</p> Mouse: roda de rolagem.</p> Tela sensível ao toque: pinça no dedo.</p></li>
+      <li><p><strong>Recentralize sua câmera</strong> - Gire a exibição em torno da cena 3D e de objetos.</p> Mouse: clique duas vezes.</p> Tela sensível ao toque: selecione duas vezes.</li></ul></td>
       </tr>
       <tr>
       <td><p>Imagem</p> </td>
@@ -67,11 +67,11 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <td>Sim</td>
       <td><p><strong>Para visualizar um ativo em uma representação específica</strong></p>
         <ul>
-        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Representações</strong> na lista e selecione uma representação específica que deseja visualizar.</li>
+        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione <strong>Representações</strong> na lista e selecione uma representação específica que deseja visualizar.</li>
         </ul> <p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
-        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
-        </ul><p>Use o <strong>+</strong> e <strong>-</strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br>Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para ampliar por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
+        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
+        </ul><p>Use os ícones <strong>+</strong> e <strong>-</strong> para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br>Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para aumentar o zoom por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
       </tr>
       <tr>
       <td>Multimídia</td>
@@ -79,10 +79,10 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <td>Sim</td>
       <td><p><strong>Para visualizar um ativo em uma representação específica</strong></p>
         <ul>
-        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Representações</strong> na lista e selecione uma representação específica que deseja visualizar.</li>
+        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione <strong>Representações</strong> na lista e selecione uma representação específica que deseja visualizar.</li>
         </ul><p>Selecionar uma representação de vídeo de resolução mais alta para visualizar pode fazer com que o vídeo apareça truncado. O motivo é que a pré-visualização de representação mostra a resolução exata que seus clientes veem, tudo no contexto do visualizador incorporado usado para a pré-visualização.</p><p>Ao visualizar um conjunto de vídeos adaptáveis no nível do Ativo, as representações são agrupadas em uma experiência de reprodução. Ou seja, o vídeo adaptável é dimensionado corretamente para exibição e reprodução usando a melhor resolução no contexto do dispositivo de visualização e da velocidade de conexão.<br /></p><p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
-        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
+        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
         </ul> </td>
       </tr>
       <tr>
@@ -91,8 +91,8 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <td>Sim</td>
       <td><p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
-        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
-        </ul> <p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para ampliar por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p></td>
+        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
+        </ul> <p>Use os ícones <strong>+</strong> e <strong>- </strong> para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para aproximar o zoom por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p></td>
       </tr>
       <tr>
       <td>Grupo de rotação</td>
@@ -100,8 +100,8 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <td>Sim</td>
       <td><p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
-        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
-        </ul><p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para ampliar por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
+        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
+        </ul><p>Use os ícones <strong>+</strong> e <strong>- </strong> para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para aproximar o zoom por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
       </tr>
       <tr>
       <td>Conjunto de mix de mídia</td>
@@ -109,14 +109,14 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <td>Sim</td>
       <td><p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
-        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
-        </ul> <p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para ampliar por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
+        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione <strong>Visualizadores</strong> na lista e selecione um visualizador que deseja aplicar ao ativo.</li>
+        </ul> <p>Use os ícones <strong>+</strong> e <strong>- </strong> para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para aproximar o zoom por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
       </tr>
       <tr>
       <td>Conjunto do Carousel</td>
       <td>Não</td>
       <td>Sim</td>
-      <td><strong>Para visualizar um ativo em um visualizador específico</strong>
+      <td><strong>Para visualizar um ativo em um determinado visualizador</strong>
         <ul>
         <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione um visualizador que você deseja aplicar ao ativo.</li>
         </ul> </td>
@@ -127,11 +127,11 @@ Para ativar ou desativar as predefinições do visualizador na interface do usu�
       <td>Sim</td>
       <td><p><strong>Para visualizar um ativo em uma representação específica</strong></p>
         <ul>
-        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Representações</strong>, em seguida, selecione a representação que deseja visualizar.</li>
+        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione <strong>Representações</strong> e selecione a representação que deseja visualizar.</li>
         </ul> <p><strong>Para visualizar um ativo em um visualizador específico</strong></p>
         <ul>
-        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecionar <strong>Visualizadores</strong>, em seguida, selecione um visualizador que deseja aplicar ao ativo.</li>
-        </ul> <p>Use o <strong>+</strong> e <strong>- </strong>para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para ampliar por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
+        <li>Próximo ao canto superior esquerdo da página, selecione o ícone para que a lista suspensa seja exibida. Selecione <strong>Visualizadores</strong> e, em seguida, selecione um visualizador que você deseja aplicar ao ativo.</li>
+        </ul> <p>Use os ícones <strong>+</strong> e <strong>- </strong> para aumentar ou diminuir o zoom da imagem selecionada, respectivamente. Para retornar a imagem ao zoom original, selecione <strong>Redefinir</strong>.<br /> Se você estiver em uma tela sensível ao toque, selecione duas vezes a imagem para aproximar o zoom por etapas. Ao atingir o zoom máximo, selecione novamente a imagem para redefinir o estado de zoom. Arraste pela imagem para deslocar-se.</p> </td>
       </tr>
     </tbody>
     </table>

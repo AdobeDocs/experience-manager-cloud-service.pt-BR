@@ -20,7 +20,7 @@ ht-degree: 5%
 | Componentes principais | [Clique aqui](/help/forms/adaptive-form-core-components-json-schema-form-model.md) |
 | Foundation | Este artigo |
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -37,14 +37,14 @@ A criação de um formulário adaptável usando um Esquema JSON como seu modelo 
 
 ## Utilização de um esquema JSON como modelo de formulário  {#using-a-json-schema-as-form-model}
 
-O Adobe Experience Manager Forms oferece suporte à criação de um Formulário adaptável usando um Esquema JSON existente como o modelo de formulário. Esse esquema JSON representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O esquema JSON usado deve ser compatível com [Especificações da v4](https://json-schema.org/draft-04/schema).
+O Adobe Experience Manager Forms oferece suporte à criação de um Formulário adaptável usando um Esquema JSON existente como o modelo de formulário. Esse esquema JSON representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização. O Esquema JSON usado deve ser compatível com [especificações v4](https://json-schema.org/draft-04/schema).
 
 Os principais recursos do uso de um Esquema JSON são:
 
 * A estrutura do JSON é exibida como uma árvore na guia Localizador de conteúdo no modo de criação de um Formulário adaptável. Você pode arrastar e adicionar elemento da hierarquia JSON ao Formulário adaptável.
 * Você pode preencher previamente o formulário usando o JSON compatível com o esquema associado.
 * No envio, os dados inseridos pelo usuário são enviados como JSON, que se alinha ao esquema associado.
-* Você também pode criar o formulário com base no esquema JSON de acordo com as especificações do [Versão 2012-20](https://json-schema.org/draft/2020-12/release-notes).
+* Você também pode criar o formulário com base no esquema JSON de acordo com as especificações da [versão 2012-20](https://json-schema.org/draft/2020-12/release-notes).
 
 Um Esquema JSON consiste em tipos de elementos simples e complexos. Os elementos têm atributos que adicionam regras ao elemento. Quando esses elementos e atributos são arrastados para um Formulário adaptável, eles são mapeados automaticamente para o componente de Formulário adaptável correspondente.
 
@@ -97,19 +97,19 @@ Esse mapeamento de elementos JSON com componentes de Formulário adaptável é o
    <td><br /> <br /> Campo de texto<br /> <br /> <br /> </td>
   </tr>
   <tr>
-   <td>propriedade number<br /> </td>
+   <td>propriedade numérica<br /> </td>
    <td>Campo numérico com subtipo definido como flutuante<br /> </td>
   </tr>
   <tr>
-   <td>propriedade integer<br /> </td>
-   <td>Campo numérico com subtipo definido como número inteiro<br /> </td>
+   <td>propriedade inteira<br /> </td>
+   <td>Campo Numérico com subtipo definido como inteiro<br /> </td>
   </tr>
   <tr>
    <td>propriedade booleana<br /> </td>
    <td>Alternar<br /> </td>
   </tr>
   <tr>
-   <td>propriedade do objeto<br /> </td>
+   <td>propriedade de objeto <br /> </td>
    <td>Painel<br /> </td>
   </tr>
   <tr>
@@ -123,17 +123,17 @@ Esse mapeamento de elementos JSON com componentes de Formulário adaptável é o
 
 O Formulário adaptável usa as informações disponíveis no Esquema JSON para mapear cada campo gerado. Em especial:
 
-* A variável `title` propriedade serve como rótulo para os componentes de Formulário adaptável.
-* A variável `description` é definida como descrição longa para um componente de Formulário adaptável.
-* A variável `default` propriedade serve como valor inicial de um campo de Formulário adaptável.
-* A variável `maxLength` é definida como `maxlength` atributo do componente de campo de texto.
-* A variável `minimum`, `maximum`, `exclusiveMinimum`, e `exclusiveMaximum` As propriedades são usadas para o componente Caixa numérica.
-* Para oferecer suporte ao intervalo de `DatePicker component` propriedades adicionais do Esquema JSON `minDate` e `maxDate` são fornecidos.
-* A variável `minItems` e `maxItems` as propriedades são usadas para restringir o número de itens/campos que podem ser adicionados ou removidos de um componente do painel.
-* A variável `readOnly` propriedade define a variável `readonly` atributo de um componente de formulário adaptável.
-* A variável `required` marca o campo Formulário adaptável como obrigatório, enquanto no painel (em que o tipo é objeto), os dados JSON enviados finais têm campos com valor vazio que correspondem a esse objeto.
-* A variável `pattern` é definida como o padrão de validação (expressão regular) no Formulário adaptável.
-* A extensão do arquivo de Esquema JSON deve ser mantida em .schema.json. Por exemplo, &lt;filename>.schema.json.
+* A propriedade `title` serve como rótulo para os componentes do Formulário adaptável.
+* A propriedade `description` é definida como descrição longa para um componente de Formulário adaptável.
+* A propriedade `default` serve como valor inicial de um campo de Formulário adaptável.
+* A propriedade `maxLength` está definida como atributo `maxlength` do componente de campo de texto.
+* As propriedades `minimum`, `maximum`, `exclusiveMinimum` e `exclusiveMaximum` são usadas para o componente de Caixa Numérica.
+* Para dar suporte ao intervalo de `DatePicker component`, são fornecidas as propriedades adicionais do Esquema JSON `minDate` e `maxDate`.
+* As propriedades `minItems` e `maxItems` são usadas para restringir o número de itens/campos que podem ser adicionados ou removidos de um componente do painel.
+* A propriedade `readOnly` define o atributo `readonly` de um componente de Formulário adaptável.
+* A propriedade `required` marca o campo Formulário adaptável como obrigatório, enquanto no painel (em que o tipo é objeto), os dados JSON enviados finais têm campos com valor vazio que correspondem a esse objeto.
+* A propriedade `pattern` é definida como o padrão de validação (expressão regular) no Formulário adaptável.
+* A extensão do arquivo de Esquema JSON deve ser mantida em .schema.json. Por exemplo, &lt;nome do arquivo>.schema.json.
 
 ## Exemplo de esquema JSON {#sample-json-schema}
 
@@ -451,12 +451,12 @@ O Formulário adaptável usa as informações disponíveis no Esquema JSON para 
 >[!ENDTABS]
 
 As principais alterações das especificações do Esquema JSON V4 para a versão 2020-12 são:
-* A ID é declarada como `$id`
-* definições é declarada como `$defs`
+* ID declarada como `$id`
+* definições são declaradas como `$defs`
 
 ### Definições de esquema reutilizáveis {#reusable-schema-definitions}
 
-As chaves de definição são usadas para identificar esquemas reutilizáveis. As definições de esquema reutilizáveis são usadas para criar fragmentos. <!-- It is similar to identifying complex types in XSD.--> Um exemplo de Esquema JSON com definições é fornecido abaixo:
+As chaves de definição são usadas para identificar esquemas reutilizáveis. As definições de esquema reutilizáveis são usadas para criar fragmentos. <!-- It is similar to identifying complex types in XSD.--> Um exemplo de esquema JSON com definições é fornecido abaixo:
 
 ```json
 {
@@ -487,7 +487,7 @@ O exemplo acima define um registro de cliente, em que cada cliente tem um endere
 
 ## Pré-configuração de campos na definição do esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Você pode usar o **aem:afProperties** propriedade para pré-configurar o campo Esquema JSON para mapear para um componente de Formulário adaptável personalizado. Um exemplo está listado abaixo:
+Você pode usar a propriedade **aem:afProperties** para pré-configurar o campo de Esquema JSON para mapear para um componente de Formulário adaptável personalizado. Um exemplo está listado abaixo:
 
 ```json
 {
@@ -881,13 +881,13 @@ Você pode adicionar as seguintes restrições aos elementos do Esquema JSON par
 
 Para permitir que todo o Forms adaptável baseado em esquema JSON gere dados compatíveis com o esquema no envio do formulário, siga estas etapas:
 
-1. Acesse o console da Web do Experience Manager em `https://server:host/system/console/configMgr`.
-1. Localizar **[!UICONTROL Configuração do canal da Web de comunicação adaptável e interativa]**.
+1. Vá para o Experience Manager web console em `https://server:host/system/console/configMgr`.
+1. Localize **[!UICONTROL Configuração de Canal da Web de Comunicação entre Interações e Formulários Adaptáveis]**.
 1. Selecione para abrir a configuração no modo de edição.
-1. Selecione o **[!UICONTROL Gerar dados compatíveis com o esquema]** caixa de seleção
+1. Marque a caixa de seleção **[!UICONTROL Gerar dados compatíveis com o esquema]**.
 1. Salve as configurações.
 
-![configuração do canal web de formulário adaptável e comunicação interativa](/help/forms/assets/af-ic-web-channel-configuration.png)
+![configuração do canal da Web de formulário adaptável e comunicação interativa](/help/forms/assets/af-ic-web-channel-configuration.png)
 
 
 ## Construções não suportadas  {#non-supported-constructs}
@@ -902,11 +902,11 @@ O Forms adaptável não é compatível com as seguintes construções de esquema
 
 ## Perguntas frequentes {#frequently-asked-questions}
 
-**Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (os valores minOccours ou maxOccurs são maiores que 1)?**
+**Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (valores minOccours ou maxOccurs são maiores que 1)?**
 
 Em um subformulário repetível, você deve usar o subformulário completo. Se desejar apenas campos seletivos, use a estrutura inteira e exclua os indesejados.
 
-**Tenho uma estrutura complexa longa no Localizador de conteúdo. Como posso encontrar um elemento específico?**
+**Tenho uma estrutura complexa longa no Localizador de Conteúdo. Como posso encontrar um elemento específico?**
 
 Você tem duas opções:
 
@@ -915,7 +915,7 @@ Você tem duas opções:
 
 **Qual deve ser a extensão do arquivo de esquema JSON?**
 
-A extensão do arquivo de esquema JSON deve ser .schema.json. Por exemplo, &lt;filename>.schema.json.
+A extensão do arquivo de esquema JSON deve ser .schema.json. Por exemplo, &lt;nome do arquivo>.schema.json.
 
 ## Consulte também {#see-also}
 

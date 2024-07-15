@@ -26,11 +26,11 @@ O Adobe recomenda usar os Componentes principais.
 
 >[!CAUTION]
 >
->* **Se você não precisar de [serviços avançados](#definition-of-advanced-services-that-need-configuration)** descrito abaixo, você pode ignorar essa configuração.
+>* **Se você não precisar dos [serviços avançados](#definition-of-advanced-services-that-need-configuration)** descritos abaixo, ignore essa configuração.
 >
->* **Ao estender ou usar componentes prontos para uso**, não é recomendável alterar a configuração do OSGi.
+>* **Ao estender ou usar o(s) componente(s) predefinido(s)**, não é recomendável alterar a configuração do OSGi.
 >
->* **É possível gravar um componente do zero que use somente a API de fragmentos de conteúdo, sem serviços avançados**. No entanto, nesse caso, será necessário desenvolver o componente para que ele manipule o processamento apropriado.
+>* **Você pode gravar um componente do zero que use somente a API de fragmentos de conteúdo, sem serviços avançados**. No entanto, nesse caso, será necessário desenvolver o componente para que ele manipule o processamento apropriado.
 >
 >Portanto, é recomendável usar os Componentes principais.
 
@@ -40,8 +40,8 @@ Os serviços que exigem o registro de um componente são:
 
 * Determinar as dependências corretamente durante a publicação (ou seja, verifique se os fragmentos e modelos podem ser publicados automaticamente com uma página se foram alterados desde a última publicação).
 * Suporte para fragmentos de conteúdo na pesquisa de texto completo.
-* A gestão/gestão dos *conteúdo intermediário.*
-* A gestão/gestão dos *ativos de mídia mista.*
+* O gerenciamento/manuseio de *conteúdo intermediário.*
+* O gerenciamento/manuseio de *ativos de mídia mista.*
 * Limpeza do Dispatcher para fragmentos referenciados (se uma página contendo um fragmento for republicada).
 * Uso da renderização baseada em parágrafo.
 
@@ -49,7 +49,7 @@ Se você precisar de um ou mais desses recursos, (normalmente) é mais fácil us
 
 ## Serviço OSGi - Configuração do componente de fragmento de conteúdo {#osgi-service-content-fragment-component-configuration}
 
-A configuração deve ser associada ao serviço OSGi **Configuração do componente de fragmento de conteúdo**:
+A configuração deve ser associada à **Configuração do componente de fragmento de conteúdo** do serviço OSGi:
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
@@ -59,7 +59,7 @@ A configuração deve ser associada ao serviço OSGi **Configuração do compone
 
 Por exemplo:
 
-![Configuração do componente Fragmento de conteúdo da configuração do OSGi](assets/cf-component-configuration-osgi.png)
+![Configuração do componente de fragmento de conteúdo da configuração OSGi](assets/cf-component-configuration-osgi.png)
 
 A configuração do OSGi é:
 
@@ -95,7 +95,7 @@ A configuração do OSGi é:
  </tbody>
 </table>
 
-Para algumas funcionalidades, seu componente terá que aderir a convenções predefinidas. A tabela a seguir detalha as propriedades que precisam ser definidas, pelo componente, para cada parágrafo (ou seja, `jcr:paragraph` para cada instância do componente) para que os serviços possam detectá-los e processá-los corretamente.
+Para algumas funcionalidades, seu componente terá que aderir a convenções predefinidas. A tabela a seguir detalha as propriedades que precisam ser definidas pelo componente para cada parágrafo (ou seja, `jcr:paragraph` para cada instância de componente) para que os serviços possam detectá-las e processá-las corretamente.
 
 <table>
  <thead>
@@ -107,7 +107,7 @@ Para algumas funcionalidades, seu componente terá que aderir a convenções pre
  <tbody>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>Uma propriedade de sequência de caracteres que define como os parágrafos serão gerados se <em>modo de renderização de elemento único</em>.</p> <p>Valores:</p>
+   <td><p>Uma propriedade de cadeia de caracteres que define como os parágrafos devem ser gerados se estiverem no <em>modo de renderização de elemento único</em>.</p> <p>Valores:</p>
     <ul>
      <li><code>all</code> : para renderizar todos os parágrafos</li>
      <li><code>range</code> : para renderizar o intervalo de parágrafos fornecido por <code>paragraphRange</code></li>
@@ -115,7 +115,7 @@ Para algumas funcionalidades, seu componente terá que aderir a convenções pre
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>Uma propriedade de sequência de caracteres que define o intervalo de parágrafos a ser gerado se em <em>modo de renderização de elemento único</em>.</p> <p>Formato:</p>
+   <td><p>Uma propriedade de cadeia de caracteres que define o intervalo de parágrafos a ser gerado se estiver em <em>modo de renderização de elemento único</em>.</p> <p>Formato:</p>
     <ul>
      <li><code>1</code> ou <code>1-3</code> ou <code>1-3;6;7-8</code> ou <code>*-3;5-*</code>
      <ul>
@@ -124,7 +124,7 @@ Para algumas funcionalidades, seu componente terá que aderir a convenções pre
        <li><code>*</code> curinga</li>
      </ul>
      </li>
-     <li>avaliado somente se <code>paragraphScope</code> está definida como <code>range</code></li>
+     <li>avaliado somente se <code>paragraphScope</code> estiver definido como <code>range</code></li>
     </ul> </td>
   </tr>
   <tr>

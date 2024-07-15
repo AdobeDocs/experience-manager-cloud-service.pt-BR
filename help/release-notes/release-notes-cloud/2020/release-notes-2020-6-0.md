@@ -1,6 +1,6 @@
 ---
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.6.0
-description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.6.0."
+description: "[!DNL Adobe Experience Manager] Notas de Versão as a Cloud Service para 2020.6.0."
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 92%
 
 ---
 
-# Notas de versão do AEM as a Cloud Service 2020.6.0 {#release-notes}
+# Notas da versão para AEM as a Cloud Service 2020.6.0 {#release-notes}
 
 Esta página descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.6.0.
 
@@ -48,11 +48,11 @@ A versão 2.9.0 dos [Componentes principais](https://experienceleague.adobe.com/
 
 * Melhorias em leitores de tela.
 
-## O que há de novo nos componentes de base do AEM as a Cloud Service {#foundations}
+## Novidades nos componentes de base do AEM as a Cloud Service {#foundations}
 
-Os tempos de criação do projeto AEM melhorarão com a remoção de todas as referências ao repositório remoto no pom.xml do projeto AEM `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+Os tempos de compilação de um projeto AEM melhorarão com a remoção de todas as referências ao repositório remoto `https://downloads.experiencecloud.adobe.com/content/maven/public` no pom.xml do projeto AEM.
 
-O Jar da API do SDK as a Cloud Service do AEM, que anteriormente estava hospedado nesse local, agora está localizado no Maven Central, que é o repositório de artefatos padrão do Maven.
+O Jar da API do SDK do AEM as a Cloud Service, que anteriormente estava hospedado nesse local, agora está localizado no Maven Central, que é o repositório de artefatos padrão do Maven.
 
 ## Novidades do Cloud Manager {#cloud-manager}
 
@@ -104,7 +104,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
 * O link direto do Cloud Manager para o Console do desenvolvedor não exibe a opção de cancelar hibernação/hibernar o ambiente de um Programa de sandbox. Para resolver isso, uma vez no Console do desenvolvedor, adicione o padrão `#release-cm-p1234-e5678` ao final do URL, em que *1234* é a ID do programa e *5678* é a ID do ambiente. O problema será resolvido em uma versão futura.
 
-## Novidades da versão [!DNL Adobe Experience Manager Assets] {#aem-assets}
+## Novidades do [!DNL Adobe Experience Manager Assets] {#aem-assets}
 
 **Experiência do usuário guiada para tags inteligentes aprimoradas, viabilizada pelo Adobe Sensei**
 
@@ -178,7 +178,7 @@ A versão oferece as seguintes melhorias adicionais:
 * Capacidade de reprocessar ativos com perfis de processamento de ativos, dando aos usuários controle total sobre o processo (basta executar o processamento completo de ativos, aplicar perfis de processamento específicos e decidir se o fluxo de trabalho de pós-processamento deve ser executado).
 * Agora, as consultas de pesquisa dão resultados com mais rapidez quando a instância de cluster subjacente é reiniciada nos bastidores (antes, a execução de pesquisa inicial podia durar mais tempo nesse caso).
 * Classifique por &quot;Nome&quot; ao visualizar ativos na exibição em lista da interface do Assets e em resultados de pesquisa. Consulte [pesquisar ativos](/help/assets/search-assets.md#sort).
-* Classifique por &quot;Criado&quot; (Data) ao visualizar ativos na exibição em lista da interface do Assets e em resultados de pesquisa. Consulte [pesquisar ativos](/help/assets/search-assets.md#sort).
+* Classifique por &quot;Criado&quot; (Data) ao visualizar ativos na exibição em lista da interface do Assets e nos resultados da pesquisa. Consulte [pesquisar ativos](/help/assets/search-assets.md#sort).
 * Suporte para converter arquivos EPS em imagens usando microsserviços de ativos.
 
 ### Correções de erros {#assets-bug-fixes}

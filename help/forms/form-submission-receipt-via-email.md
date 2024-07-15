@@ -18,15 +18,15 @@ ht-degree: 0%
 
 ## Envio de dados do formulário adaptável {#adaptive-form-data-submission}
 
-O Forms adaptável fornece vários recursos prontos para uso [Ações de envio](configuring-submit-actions.md) fluxos de trabalho para enviar os dados de formulário para diferentes endpoints.
+O Adaptive Forms fornece vários fluxos de trabalho prontos para uso [Ações de Envio](configuring-submit-actions.md) para enviar os dados de formulário para diferentes pontos de extremidade.
 
-Por exemplo, a variável **[!UICONTROL Enviar e-mail]** A Ação de envio envia um email ao enviar um Formulário adaptável com êxito. Ele também pode ser configurado para enviar os dados do formulário e o PDF no email.
+Por exemplo, a Ação de envio **[!UICONTROL Enviar email]** envia um email ao enviar um Formulário adaptável com êxito. Ele também pode ser configurado para enviar os dados do formulário e o PDF no email.
 
 Este artigo detalha as etapas para habilitar a ação de Email em um Formulário adaptável e as diferentes configurações que ele fornece.
 
 >[!NOTE]
 >
->Você também pode usar a variável **[!UICONTROL Enviar PDF por e-mail]** opção para enviar o formulário preenchido por email como um anexo PDF. As opções de configuração disponíveis para esta ação são as mesmas que as opções disponíveis para a **[!UICONTROL Enviar e-mail]** ação. A ação PDF de email está disponível somente para o Adaptive Forms baseado em XFA
+>Você também pode usar a opção **[!UICONTROL Enviar PDF por email]** para enviar o formulário preenchido por email como um anexo de PDF. As opções de configuração disponíveis para esta ação são iguais às opções disponíveis para a ação **[!UICONTROL Enviar email]**. A ação PDF de email está disponível somente para o Adaptive Forms baseado em XFA
 
 ## Enviar ação de email {#email-action}
 
@@ -64,21 +64,21 @@ A ação Enviar email permite que um autor envie email automaticamente para um o
 
 Os nomes de campos em um Formulário adaptável são chamados de espaços reservados que são substituídos pelo valor desse campo depois que um usuário envia o formulário.
 
-No **[!UICONTROL Enviar e-mail]** , é possível usar espaços reservados que são processados quando a ação é executada. Isso implica que os cabeçalhos do email (como **[!UICONTROL Para]**, **[!UICONTROL CC]**, **[!UICONTROL CCO]**, **[!UICONTROL Assunto]**) são gerados quando o usuário envia o formulário.
+Na ação **[!UICONTROL Enviar email]**, você pode usar espaços reservados que são processados quando a ação é executada. Isso implica que os cabeçalhos do email (como **[!UICONTROL To]**, **[!UICONTROL CC]**, **[!UICONTROL BCC]**, **[!UICONTROL Subject]**) são gerados quando o usuário envia o formulário.
 
-Para definir um espaço reservado, especifique `${<field name>}` em um campo depois de selecionar **[!UICONTROL Enviar e-mail]** como a Ação enviar.
+Para definir um espaço reservado, especifique `${<field name>}` em um campo depois de selecionar **[!UICONTROL Enviar email]** como a Ação de Envio.
 
-Por exemplo, se o formulário contiver a variável **[!UICONTROL Endereço de email]** campo, nomeado `email_addr`, para capturar a ID de email de um usuário, você pode especificar o seguinte na **[!UICONTROL Para]**, **[!UICONTROL CC]** ou **[!UICONTROL CCO]** campos.
+Por exemplo, se o formulário contiver o campo **[!UICONTROL Endereço de email]**, denominado `email_addr`, para capturar a ID de email de um usuário, você poderá especificar o seguinte nos campos **[!UICONTROL Para]**, **[!UICONTROL CC]** ou **[!UICONTROL BCC]**.
 
 `${email_addr}`
 
-Quando um usuário envia o formulário, um email é enviado para a ID de email inserida na `email_addr` do formulário.
+Quando um usuário envia o formulário, um email é enviado para a ID de email inserida no campo `email_addr` do formulário.
 
 >[!NOTE]
 >
->É possível encontrar o nome de um campo no **[!UICONTROL Editar]** para o campo.
+>Você pode encontrar o nome de um campo na caixa de diálogo **[!UICONTROL Editar]** para o campo.
 
-Espaços reservados para variáveis também podem ser usados no **[!UICONTROL Assunto]** e **[!UICONTROL Modelo de e-mail]** campos.
+Os espaços reservados para variáveis também podem ser usados nos campos **[!UICONTROL Assunto]** e **[!UICONTROL Modelo de email]**.
 
 Por exemplo:
 

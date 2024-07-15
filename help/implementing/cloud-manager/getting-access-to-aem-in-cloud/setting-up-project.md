@@ -113,7 +113,7 @@ Além disso, se você quiser gerar uma mensagem simples apenas quando a compila�
 
 >[!NOTE]
 >
->Os artefatos de um repositório Maven protegido por senha devem ser usados com cuidado, pois o código implantado por meio desse mecanismo não é executado no momento [regras de qualidade do código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementado nos quality gates (portais de qualidade) do Cloud Manager. Por isso, somente devem ser usados em casos raros e para código não vinculado ao AEM. É aconselhável implantar também as fonte Java e todo o código-fonte do projeto junto com o binário.
+>Os artefatos de um repositório Maven protegido por senha devem ser usados com cuidado, pois o código implantado por meio desse mecanismo não é executado atualmente pelas [regras de qualidade do código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementadas nos quality gates (portais de qualidade) da Cloud Manager. Por isso, somente devem ser usados em casos raros e para código não vinculado ao AEM. É aconselhável implantar também as fonte Java e todo o código-fonte do projeto junto com o binário.
 
 Para usar um repositório do Maven protegido por senha no Cloud Manager:
 
@@ -123,7 +123,7 @@ Para usar um repositório do Maven protegido por senha no Cloud Manager:
 Quando o processo de compilação do Cloud Manager é iniciado:
 
 * O elemento `<servers>` neste arquivo será mesclado ao arquivo padrão `settings.xml` fornecido pelo Cloud Manager.
-   * IDs de servidor que começam com `adobe` e `cloud-manager` são consideradas reservadas. Não os use em servidores personalizados.
+   * IDs de servidor iniciando com `adobe` e `cloud-manager` são consideradas reservadas. Não os use em servidores personalizados.
    * IDs de servidor que não correspondem a um desses prefixos ou ao ID padrão `central` nunca serão espelhados pelo Cloud Manager.
 * Com esse arquivo em vigor, o ID do servidor seria referenciado de dentro de um elemento `<repository>` e/ou `<pluginRepository>` dentro do arquivo `pom.xml`.
 * Geralmente, esses elementos `<repository>` e/ou `<pluginRepository>` ficam contidos dentro de um [Perfil específico do Cloud Manager](#activating-maven-profiles-in-cloud-manager), embora isso não seja estritamente necessário.

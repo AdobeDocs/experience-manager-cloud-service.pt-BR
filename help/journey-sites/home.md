@@ -4,7 +4,7 @@ description: Comece aqui para obter uma visão geral das jornadas guiadas dispon
 exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '409'
 ht-degree: 82%
 
 ---
@@ -19,7 +19,7 @@ O [AEM Sites](https://business.adobe.com/br/products/experience-manager/sites/ae
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio sobre o tópico ou AEM.
+[Uma Jornada de Documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
 
 As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 

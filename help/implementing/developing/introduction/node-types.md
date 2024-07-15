@@ -15,9 +15,9 @@ ht-degree: 6%
 
 Como o AEM é baseado no Sling e usa um repositório JCR, os tipos de nó oferecidos por esses dois padrões estão disponíveis para uso no AEM:
 
-* [Tipos de nó JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
-* [Tipos de nó Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
+* [Tipos de nós JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [Tipos de Nó do Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Além desses. O AEM fornece uma variedade de tipos de nós personalizados. Para a lista mais atual com todas as propriedades associadas, [usar CRXDE](/help/implementing/developing/tools/crxde.md) para procurar o seguinte caminho no repositório AEM:
+Além desses. O AEM fornece uma variedade de tipos de nós personalizados. Para a lista mais atual com todas as propriedades associadas, [use o CRXDE](/help/implementing/developing/tools/crxde.md) para procurar o seguinte caminho no repositório AEM:
 
 `/jcr:system/jcr:nodeTypes`

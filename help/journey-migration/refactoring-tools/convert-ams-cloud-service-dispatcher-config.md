@@ -3,8 +3,8 @@ title: Converter um AMS em uma configuração de Dispatcher do Adobe Experience 
 description: Converter um AMS em uma configuração de Dispatcher do Adobe Experience Manager as a Cloud Service
 source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
 workflow-type: tm+mt
-source-wordcount: '1282'
-ht-degree: 39%
+source-wordcount: '1262'
+ht-degree: 37%
 
 ---
 
@@ -76,7 +76,7 @@ Remova as seções que fazem referência às variáveis denominadas DISP_ID, PUB
 
 1. **Verificar o estado executando o validador**
 
-   Execute o validador do Dispatcher no seu diretório, com o subcomando httpd:
+   Execute o validador do Dispatcher em seu diretório, com o subcomando httpd:
 
    `$ validator httpd`
 Se você encontrar erros sobre a falta de arquivos &quot;include&quot;, verifique se os renomeou corretamente.
@@ -89,7 +89,7 @@ Se você encontrar erros sobre a falta de arquivos &quot;include&quot;, verifiqu
 
 1. **Renomear arquivos de farm**
 
-   Todos os farms em conf.dispatcher.d/enabled_farms devem ser renomeados para corresponder ao padrão *.farm. Por exemplo, renomear `customerX_farm.any` para `customerX.farm`.
+   Todos os farms em conf.dispatcher.d/enabled_farms devem ser renomeados para corresponder ao padrão *.farm. Por exemplo, renomeie `customerX_farm.any` como `customerX.farm`.
 
 1. **Verificar cache**
 
@@ -97,9 +97,9 @@ Se você encontrar erros sobre a falta de arquivos &quot;include&quot;, verifiqu
 
    Remova qualquer arquivo prefixado com `ams_`.
 
-   Se conf.dispatcher.d/cache agora estiver vazio, copie o arquivo `conf.dispatcher.d/cache/rules.any` da configuração padrão do Dispatcher para essa pasta. A configuração padrão do Dispatcher pode ser encontrada na pasta src desse SDK. Não se esqueça de adaptar as instruções $include referentes ao `ams_*_cache.any` arquivos de regras nos arquivos do farm também.
+   Se conf.dispatcher.d/cache agora estiver vazio, copie o arquivo `conf.dispatcher.d/cache/rules.any` da configuração padrão do Dispatcher para essa pasta. A configuração padrão do Dispatcher pode ser encontrada na pasta src desse SDK. Não se esqueça de adaptar também as instruções $include referentes aos arquivos de regras `ams_*_cache.any` nos arquivos de farm.
 
-   Se, em vez disso, conf.dispatcher.d/cache agora contiver um único arquivo com sufixo `_cache.any`, ela deve ser renomeada para `rules.any`. Lembre-se de adaptar também as instruções $include referentes a esse arquivo nos arquivos do farm.
+   Se, em vez disso, conf.dispatcher.d/cache agora contiver um único arquivo com o sufixo `_cache.any`, ele deverá ser renomeado para `rules.any`. Lembre-se de adaptar também as instruções $include referentes a esse arquivo nos arquivos do farm.
 
    Se, no entanto, a pasta contiver vários arquivos específicos do farm com esse padrão, seu conteúdo deverá ser copiado para a instrução $include que fazem referência a eles nos arquivos do farm.
 
@@ -117,13 +117,13 @@ Se você encontrar erros sobre a falta de arquivos &quot;include&quot;, verifiqu
 
    Remova qualquer arquivo prefixado com `ams_`.
 
-   Se conf.dispatcher.d/clientheaders contiver um único arquivo com sufixo `_clientheaders.any`, renomeie-o para `clientheaders.any`. Lembre-se de adaptar também as instruções $include referentes a esse arquivo nos arquivos do farm.
+   Se conf.dispatcher.d/clientheaders contiver um único arquivo com o sufixo `_clientheaders.any`, renomeie-o para `clientheaders.any`. Lembre-se de adaptar também as instruções $include referentes a esse arquivo nos arquivos do farm.
 
    Se, no entanto, a pasta contiver vários arquivos específicos do farm com esse padrão, seu conteúdo deverá ser copiado para a instrução $include que fazem referência a eles nos arquivos do farm.
 
    Copie o arquivo `conf.dispatcher/clientheaders/default_clientheaders.any` da configuração padrão do Dispatcher para esse local.
 
-   Em cada arquivo do farm, substitua qualquer `clientheader` instruções &quot;include&quot; que aparecem como a seguir:
+   Em cada arquivo do farm, substitua qualquer instrução &quot;include&quot; `clientheader` que apareça da seguinte maneira:
 
    `$include "/etc/httpd/conf.dispatcher.d/clientheaders/ams_publish_clientheaders.any"`
 
@@ -186,7 +186,7 @@ pela instrução:
 
 1. **Verificar o estado executando o validador**
 
-   * Execute o validador do Dispatcher no seu diretório, com o subcomando Dispatcher:
+   * Execute o validador do Dispatcher em seu diretório, com o subcomando Dispatcher:
 
      `$ validator dispatcher`
 

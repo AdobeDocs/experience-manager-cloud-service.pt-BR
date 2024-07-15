@@ -23,13 +23,13 @@ Projetar a estrutura necessária é fácil com o Editor de modelos de fragmentos
 
 ## Arquitetura {#architecture}
 
-![Arquitetura headless do PWA](/help/commerce-cloud/assets/PWA-Studio_Architecture.png)
+![arquitetura headless PWA](/help/commerce-cloud/assets/PWA-Studio_Architecture.png)
 
 ## Configurar PWA Studio {#setup-pwa}
 
-Siga o Adobe Commerce [Documentação do PWA Studio](https://developer.adobe.com/commerce/pwa-studio/tutorials/) para configurar seu aplicativo PWA Studio.
+Siga a [documentação do PWA Studio](https://developer.adobe.com/commerce/pwa-studio/tutorials/) do Adobe Commerce para configurar o aplicativo PWA Studio.
 
-Para conectar o PWA Studio com o endpoint GraphQL do AEM, você pode usar o [Extensão AEM para PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions).
+Para conectar o PWA Studio com o ponto de extremidade GraphQL do AEM, você pode usar a Extensão [AEM para o PWA Studio](https://github.com/adobe/aem-pwa-studio-extensions).
 
 1. Verificar o repositório
 
@@ -61,9 +61,10 @@ Para conectar o PWA Studio com o endpoint GraphQL do AEM, você pode usar o [Ext
    }    
    ```
 
-   Você pode encontrar mais detalhes sobre a personalização do componente de Navegação em [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) e no [Estrutura de extensibilidade](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) documentação do PWA Studio.
+   Você pode encontrar mais detalhes sobre a personalização do componente de Navegação em [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) e na documentação [Estrutura de Extensibilidade](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) do PWA Studio.
 
-1. O cliente Apollo esperará o terminal AEM GraphQL em `<https://pwa-studio/endpoint.js>`. Para mapear o endpoint para esse local, personalize a configuração UPWARD do aplicativo PWA Studio: a. Adicione a variável AEM_CFM_GRAPHQL AEM ao pwa-root/.env e adapte-a para apontar para o endpoint do GraphQL de fragmentos de conteúdo do.
+1. O cliente Apollo esperará o ponto de extremidade AEM GraphQL em `<https://pwa-studio/endpoint.js>`. Para mapear o endpoint para esse local, personalize a configuração ASCENDENTE do aplicativo PWA Studio:
+a. Adicione a variável AEM_CFM_GRAPHQL a pwa-root/.env e adapte-a para apontar para o endpoint do AEM Content Fragments GraphQL.
 
    Exemplo: `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
@@ -96,7 +97,7 @@ Siga a documentação dos Fragmentos de conteúdo do AEM para configurar um endp
 
   Defina a propriedade allowedorigin como o nome de host completo do aplicativo PWA.
 
-  Exemplo:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Exemplo: `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtro referenciador do Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 

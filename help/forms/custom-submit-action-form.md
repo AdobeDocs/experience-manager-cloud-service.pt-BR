@@ -21,11 +21,11 @@ ht-degree: 1%
 
 Um Formulário adaptável fornece várias Ações de envio prontas para uso (OOTB). Uma Ação de envio especifica detalhes das ações a serem executadas nos dados coletados por meio do Formulário adaptável. Por exemplo, enviar dados em um email.
 
-Você pode criar uma Ação enviar personalizada para adicionar funcionalidades não incluídas em [Ações de envio prontas para uso](configuring-submit-actions.md) ou não suportado por meio de uma única Ação de envio OOTB. Por exemplo, enviar dados para um fluxo de trabalho, salvar os dados em um armazenamento de dados, enviar uma notificação por email à pessoa que envia o formulário e enviar um email à pessoa responsável pelo processamento do formulário enviado para aprovações e rejeições por meio de uma única Ação de envio.
+Você pode criar uma Ação de Envio personalizada para adicionar funcionalidades não incluídas em [Ações de Envio predefinidas](configuring-submit-actions.md) ou não suportadas por meio de uma única Ação de Envio OOTB. Por exemplo, enviar dados para um fluxo de trabalho, salvar os dados em um armazenamento de dados, enviar uma notificação por email à pessoa que envia o formulário e enviar um email à pessoa responsável pelo processamento do formulário enviado para aprovações e rejeições por meio de uma única Ação de envio.
 
 ## Formato de dados XML {#xml-data-format}
 
-Os dados XML são enviados para o servlet usando o **`jcr:data`** parâmetro de solicitação. As Ações de envio podem acessar o parâmetro para processar os dados. O código a seguir descreve o formato dos dados XML. Os campos vinculados ao modelo de formulário aparecem na variável **`afBoundData`** seção. Os campos não vinculados aparecem no `afUnoundData`seção. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
+Os dados XML são enviados ao servlet usando o parâmetro de solicitação **`jcr:data`**. As Ações de envio podem acessar o parâmetro para processar os dados. O código a seguir descreve o formato dos dados XML. Os campos associados ao modelo de formulário aparecem na seção **`afBoundData`**. Campos não vinculados aparecem na seção `afUnoundData`. <!--For more information about the format of the `data.xml` file, see [Introduction to prepopulating Adaptive Form fields](prepopulate-adaptive-form-fields.md).-->
 
 ```xml
 <?xml ?>
@@ -49,17 +49,17 @@ Os dados XML são enviados para o servlet usando o **`jcr:data`** parâmetro de 
 
 ### Campos de ação {#action-fields}
 
-Uma ação enviar pode adicionar campos de entrada ocultos (usando o HTML [entrada](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input) tag) para o HTML de formulário renderizado. Esses campos ocultos podem conter valores necessários ao processar o envio do formulário. Ao enviar o formulário, esses valores de campo são postados de volta como parâmetros de solicitação que a Ação de envio pode usar durante o manuseio do envio. Os campos de entrada são chamados de campos de ação.
+Uma ação enviar pode adicionar campos de entrada ocultos (usando a tag HTML [input](https://developer.mozilla.org/en/docs/Web/HTML/Element/Input)) ao HTML de formulário renderizado. Esses campos ocultos podem conter valores necessários ao processar o envio do formulário. Ao enviar o formulário, esses valores de campo são postados de volta como parâmetros de solicitação que a Ação de envio pode usar durante o manuseio do envio. Os campos de entrada são chamados de campos de ação.
 
-Por exemplo, uma Ação enviar que também capture o tempo necessário para preencher um formulário pode adicionar os campos de entrada ocultos `startTime` e `endTime`.
+Por exemplo, uma Ação Enviar que também capture o tempo gasto para preencher um formulário pode adicionar os campos de entrada ocultos `startTime` e `endTime`.
 
-Um script pode fornecer os valores de `startTime` e `endTime` campos quando o formulário é renderizado e antes do envio do formulário, respectivamente. O script Enviar Ação `post.jsp` Em seguida, o pode acessar esses campos usando parâmetros de solicitação e calcular o tempo total necessário para preencher o formulário.
+Um script pode fornecer os valores dos campos `startTime` e `endTime` quando o formulário é renderizado e antes do envio do formulário, respectivamente. O script de Ação de Envio `post.jsp` pode então acessar esses campos usando parâmetros de solicitação e calcular o tempo total necessário para preencher o formulário.
 
 ### Anexos de arquivo {#file-attachments}
 
-As Ações de envio também podem usar os anexos de arquivo dos quais você faz upload usando o componente Anexo de arquivo. Os scripts de ação enviar podem acessar esses arquivos usando o sling [API RequestParameter](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). A variável [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) O método da API ajuda a identificar se o parâmetro de solicitação é um campo de arquivo ou de formulário. Você pode iterar sobre os parâmetros da Solicitação em uma Ação de envio para identificar os parâmetros de Anexo de arquivo.
+As Ações de envio também podem usar os anexos de arquivo dos quais você faz upload usando o componente Anexo de arquivo. Os scripts de Ação Enviar podem acessar esses arquivos usando a [API RequestParameter](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html) do sling. O método [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) da API ajuda a identificar se o parâmetro de solicitação é um campo de arquivo ou de formulário. Você pode iterar sobre os parâmetros da Solicitação em uma Ação de envio para identificar os parâmetros de Anexo de arquivo.
 
-O código de exemplo a seguir identifica os anexos de arquivo na solicitação. Em seguida, lê os dados no arquivo usando o [Obter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Por fim, ele cria um objeto Documento usando os dados e o anexa a uma lista.
+O código de exemplo a seguir identifica os anexos de arquivo na solicitação. Em seguida, ele lê os dados no arquivo usando a [Obter API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Por fim, ele cria um objeto Documento usando os dados e o anexa a uma lista.
 
 ```java
 RequestParameterMap requestParameterMap = slingRequest.getRequestParameterMap();
@@ -73,11 +73,11 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Ao anexar arquivos ao Formulário adaptável, o servidor valida os anexos de arquivo após o envio do Formulário adaptável e retorna uma mensagem de erro se:
 
-* Os anexos de arquivo incluem um nome de arquivo que começa com (.) caractere, contém \ / : * ? &quot; &lt; > | ; % $ caracteres ou contém nomes de arquivo especiais reservados para o sistema operacional Windows, como `nul`, `prn`, `con`, `lpt`ou `com`.
+* Os anexos de arquivo incluem um nome de arquivo que começa com (.) caractere, contém \ / : * ? &quot; &lt; > | ; % $ caracteres ou contém nomes de arquivo especiais reservados para o sistema operacional Windows, como `nul`, `prn`, `con`, `lpt` ou `com`.
 
 * O tamanho do anexo de arquivo é de 0 bytes.
 
-* O formato do anexo de arquivo não está definido no [Tipos de arquivo suportados](https://helpx.adobe.com/br/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) ao configurar o componente Anexo de arquivo em um Formulário adaptável.
+* O formato do anexo de arquivo não está definido na seção [Tipos de Arquivo com Suporte](https://helpx.adobe.com/br/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text) ao configurar o componente Anexo de Arquivo em um Formulário Adaptável.
 
 ### Caminho de encaminhamento e URL de redirecionamento {#forward-path-and-redirect-url}
 
@@ -87,7 +87,7 @@ Se a ação não fornecer um caminho de encaminhamento, o servlet Submit redirec
 
 >[!NOTE]
 >
->Um autor fornece o URL de redirecionamento (usando a Configuração da página de agradecimento). [Ações de envio OOTB](configuring-submit-actions.md) use o URL de redirecionamento para redirecionar o navegador a partir do recurso ao qual o caminho de encaminhamento faz referência.
+>Um autor fornece o URL de redirecionamento (usando a Configuração da página de agradecimento). [Ações de Envio de OOTB](configuring-submit-actions.md) use a URL de Redirecionamento para redirecionar o navegador a partir do recurso ao qual o caminho de encaminhamento faz referência.
 >
 >Você pode escrever uma ação enviar personalizada que encaminhe uma solicitação para um recurso ou servlet. A Adobe recomenda que o script que executa o tratamento de recursos para o caminho de encaminhamento redirecione a solicitação para o URL de redirecionamento quando o processamento for concluído.
 
@@ -95,28 +95,28 @@ Se a ação não fornecer um caminho de encaminhamento, o servlet Submit redirec
 
 Uma ação enviar é uma sling:Folder que inclui o seguinte:
 
-* **addfields.jsp**: esse script fornece os campos de ação que são adicionados ao arquivo de HTML durante a representação. Use esse script para adicionar os parâmetros de entrada ocultos necessários durante o envio no script post.POST.jsp.
-* **dialog.xml**: Esse script é semelhante à caixa de diálogo Componente CQ. Ela fornece informações de configuração que o autor personaliza. Os campos são exibidos na guia Enviar Ações na caixa de diálogo Editar formulário adaptável ao selecionar a Ação de envio.
-* **post.POST.jsp**: O servlet Submit chama esse script com os dados enviados e os dados adicionais nas seções anteriores. Qualquer menção de executar uma ação nesta página implica executar o script post.POST.jsp. Para registrar a Ação de envio com o Forms adaptável a ser exibido na caixa de diálogo Edição do formulário adaptável, adicione essas propriedades à `sling:Folder`:
+* **addfields.jsp**: este script fornece os campos de ação que são adicionados ao arquivo HTML durante a representação. Use esse script para adicionar os parâmetros de entrada ocultos necessários durante o envio no script post.POST.jsp.
+* **dialog.xml**: este script é semelhante à caixa de diálogo Componente CQ. Ela fornece informações de configuração que o autor personaliza. Os campos são exibidos na guia Enviar Ações na caixa de diálogo Editar formulário adaptável ao selecionar a Ação de envio.
+* **post.POST.jsp**: o servlet Submit chama esse script com os dados enviados e os dados adicionais nas seções anteriores. Qualquer menção de executar uma ação nesta página implica executar o script post.POST.jsp. Para registrar a Ação de envio com o Forms adaptável a ser exibido na caixa de diálogo Editar formulário adaptável, adicione essas propriedades ao `sling:Folder`:
 
    * **guideComponentType** do tipo String e valor **fd/af/components/guidesubmittype**
-   * **guideDataModel** do tipo String que especifica o tipo de Formulário adaptável ao qual a Ação enviar se aplica. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** O é compatível com o Adaptive Forms baseado em XSD. **básico** O é compatível com o Adaptive Forms que não usam XDP ou XSD. Para exibir a ação em vários tipos de Forms adaptável, adicione as cadeias de caracteres correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível em <!--XFA- and -->Forms adaptável baseado em XSD, especifique o valor como <!--**xfa** and--> **xsd**.
+   * **guideDataModel** do tipo Cadeia de Caracteres que especifica o tipo de Formulário Adaptável ao qual a Ação de Envio se aplica. <!--**xfa** is supported for XFA-based Adaptive Forms while -->**xsd** é compatível com o Adaptive Forms baseado em XSD. Há suporte para **basic** para o Adaptive Forms que não usam XDP ou XSD. Para exibir a ação em vários tipos de Forms adaptável, adicione as cadeias de caracteres correspondentes. Separe cada string por vírgula. Por exemplo, para tornar uma ação visível no <!--XFA- and -->Forms adaptável baseado em XSD, especifique o valor como <!--**xfa** and--> **xsd**.
 
    * **jcr:description** do tipo String. O valor dessa propriedade é exibido na lista Ação de envio na guia Ações de envio da caixa de diálogo Edição do formulário adaptável. As ações OOTB estão presentes no repositório do CRX no local **/libs/fd/af/components/guidesubmittype**.
 
-   * **submitService** do tipo String. Para obter mais informações, consulte [Programar envio do formulário adaptável para ações personalizadas](#schedule-adaptive-form-submission).
+   * **submitService** do tipo Cadeia de caracteres. Para obter mais informações, consulte [Agendar envio do Formulário Adaptável para ações personalizadas](#schedule-adaptive-form-submission).
 
 ## Criação de uma Ação de envio personalizada {#creating-a-custom-submit-action}
 
-Execute as seguintes etapas para criar uma Ação enviar personalizada que salve os dados no repositório do CRX e envie um email para você. O formulário adaptável contém o conteúdo do armazenamento de ação de envio OOTB (desaprovado) que salva os dados no repositório do CRX. Além disso, o AEM fornece uma [E-mail](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) API que pode ser usada para enviar emails. Antes de usar a API de email, configure o serviço Day CQ Mail por meio do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório do CRX.
+Execute as seguintes etapas para criar uma Ação enviar personalizada que salve os dados no repositório do CRX e envie um email para você. O formulário adaptável contém o conteúdo do armazenamento de ação de envio OOTB (desaprovado) que salva os dados no repositório do CRX. Além disso, o AEM fornece uma API de [Email](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) que pode ser usada para enviar emails. Antes de usar a API de email, configure o serviço Day CQ Mail por meio do console do sistema. Você pode reutilizar a ação Armazenar conteúdo (obsoleto) para armazenar os dados no repositório. A ação Armazenar conteúdo (obsoleto) está disponível no local /libs/fd/af/components/guidesubmittype/store no repositório do CRX.
 
 1. Faça logon no CRXDE Lite no URL https://&lt;server>:&lt;port>/crx/de/index.jsp. Crie um nó com a propriedade sling:Folder e o nome store_and_mail na pasta /apps/custom_submit_action. Crie a pasta custom_submit_action se ela ainda não existir.
 
-   ![Captura de tela que representa a criação de um nó com a propriedade sling:Folder](assets/step1.png)
+   ![Captura de tela representando a criação de um nó com a propriedade sling:Folder](assets/step1.png)
 
 1. **Forneça os campos de configuração obrigatórios.**
 
-   Adicione a configuração exigida pela ação Armazenar. Copie o **cq:dialog** nó da ação Armazenar de /libs/fd/af/components/guidesubmittype/store para a pasta de ação em /apps/custom_submit_action/store_and_email.
+   Adicione a configuração exigida pela ação Armazenar. Copie o nó **cq:dialog** da ação Armazenar de /libs/fd/af/components/guidesubmittype/store para a pasta de ações em /apps/custom_submit_action/store_and_email.
 
    ![Captura de tela mostrando a cópia do nó da caixa de diálogo para a pasta de ação](assets/step2.png)
 
@@ -124,29 +124,29 @@ Execute as seguintes etapas para criar uma Ação enviar personalizada que salve
 
    O Formulário adaptável também fornece uma ação Email que envia emails para os usuários. Personalize esta ação com base em suas necessidades. Navegue até /libs/fd/af/components/guidesubmittype/email/dialog. Copie os nós no nó cq:dialog para o nó cq:dialog da sua ação enviar (/apps/custom_submit_action/store_and_email/dialog).
 
-   ![Personalização da ação de email](assets/step3.png)
+   ![Personalizando a ação de email](assets/step3.png)
 
-1. **Disponibilize a ação na caixa de diálogo Edição do formulário adaptável.**
+1. **Disponibilizar a ação na caixa de diálogo Editar Formulário Adaptável.**
 
    Adicione as seguintes propriedades no nó store_and_email:
 
    * **guideComponentType** do tipo **String** e valor **fd/af/components/guidesubmittype**
 
-   * **guideDataModel** do tipo **String** e valor **<!--xfa, -->xsd, básico**
+   * **guideDataModel** do tipo **String** e valor **<!--xfa, -->xsd, basic**
 
-   * **jcr:description** do tipo **String** e valor **Ação de armazenamento e email**
+   * **jcr:description** do tipo **Cadeia de caracteres** e valor **Ação de Email e Armazenamento**
 
-   * **submitService** do tipo **String** e valor **Armazenamento e email**. Para obter mais informações, consulte [Programar envio do formulário adaptável para ações personalizadas](#schedule-adaptive-form-submission).
+   * **submitService** do tipo **cadeia de caracteres** e valor **Armazenamento e email**. Para obter mais informações, consulte [Agendar envio do Formulário Adaptável para ações personalizadas](#schedule-adaptive-form-submission).
 
-1. Abra qualquer Formulário adaptável. Clique em **Editar** botão ao lado de **Início** para abrir o **Editar** do contêiner Formulário adaptável. A nova ação é exibida na janela **Ações de envio** Guia. Selecionar o **Ação de armazenamento e email** exibe a configuração adicionada no nó de diálogo.
+1. Abra qualquer Formulário adaptável. Clique no botão **Editar** ao lado de **Iniciar** para abrir a caixa de diálogo **Editar** do contêiner de Formulário Adaptável. A nova ação é exibida na guia **Enviar Ações**. Selecionar a **Ação de Armazenamento e Email** exibe a configuração adicionada no nó da caixa de diálogo.
 
-   ![Caixa de diálogo de configuração Enviar ação](assets/store_and_email_submit_action_dialog.jpg)
+   ![Caixa de diálogo de configuração Enviar Ação](assets/store_and_email_submit_action_dialog.jpg)
 
 1. **Use a ação para concluir uma tarefa.**
 
    Adicione o script post.POST.jsp à sua ação. (/apps/custom_submit_action/store_and_mail/).
 
-   Execute a ação de armazenamento OOTB (script post.POST.jsp). Use o [FormsHelper.runAction](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction-java.lang.String-java.lang.String-org.apache.sling.api.resource.Resource-org.apache.sling.api.SlingHttpServletRequest-org.apache.sling.api.SlingHttpServletResponse-)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)) API fornecida pelo CQ no código para executar a ação Armazenar. Adicione o seguinte código no arquivo JSP:
+   Execute a ação de armazenamento OOTB (script post.POST.jsp). Use a API [FormsHelper.runAction](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction-java.lang.String-java.lang.String-org.apache.sling.api.resource.Resource-org.apache.sling.api.SlingHttpServletRequest-org.apache.sling.api.SlingHttpServletResponse-)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)) que o CQ fornece no código para executar a ação Armazenar. Adicione o seguinte código no arquivo JSP:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
@@ -156,7 +156,7 @@ Execute as seguintes etapas para criar uma Ação enviar personalizada que salve
 
    `String mailTo = properties.get("mailTo");`
 
-   Por fim, use a API de email do CQ para enviar o email. Use o [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) para criar o Objeto de email conforme representado abaixo:
+   Por fim, use a API de email do CQ para enviar o email. Use a classe [SimpleEmail](https://commons.apache.org/proper/commons-email/apidocs/org/apache/commons/mail/SimpleEmail.html) para criar o Objeto de Email conforme mostrado abaixo:
 
    >[!NOTE]
    >
@@ -204,9 +204,9 @@ Execute as seguintes etapas para criar uma Ação enviar personalizada que salve
 
 ## Usar a propriedade submitService para ações de envio personalizadas {#submitservice-property}
 
-Ao definir a Ação enviar personalizada, que inclui a variável `submitService` propriedade, o formulário aciona a variável [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) no envio. A variável `FormSubmitActionService` usa o `getServiceName` método para recuperar o valor do `submitService` propriedade. Com base no valor de `submitService` propriedade, o serviço chama o método de envio apropriado. Inclua o `FormSubmitActionService` no pacote personalizado que você carregou na [!DNL AEM Forms] servidor.
+Ao definir a Ação de Envio personalizada, que inclui a propriedade `submitService`, o formulário aciona o [FormSubmitActionService](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/service/FormSubmitActionService.html) no envio. O `FormSubmitActionService` usa o método `getServiceName` para recuperar o valor da propriedade `submitService`. Com base no valor da propriedade `submitService`, o serviço invoca o método de envio apropriado. Inclua o `FormSubmitActionService` no pacote personalizado que você carregou para o servidor [!DNL AEM Forms].
 
-Adicione o `submitService` propriedade do tipo string para o `sling:Folder` da sua ação enviar personalizada para habilitar [!DNL Adobe Sign] para o Formulário adaptável. É possível selecionar a variável **[!UICONTROL Ativar o Adobe Sign]** opção no **[!UICONTROL Assinatura eletrônica]** das propriedades do contêiner de Formulário adaptável somente após definir o valor para o `submitService` propriedade da sua Ação de envio personalizada.
+Adicione a propriedade `submitService` do tipo cadeia de caracteres ao `sling:Folder` de sua Ação de Envio personalizada para habilitar [!DNL Adobe Sign] para o Formulário adaptável. Você pode selecionar a opção **[!UICONTROL Habilitar Adobe Sign]** na seção **[!UICONTROL Assinatura Eletrônica]** das propriedades do contêiner de Formulário Adaptável somente após definir o valor da propriedade `submitService` da sua Ação de Envio personalizada.
 
 <!--As a result of setting an appropriate value for the `submitService` property and enabling [!DNL Adobe Sign], you can schedule the submission of an Adaptive Form to ensure that all configured signers have taken an action on the form. [!DNL Adobe Sign] Configuration Service keeps polling [!DNL Adobe Sign] server at regular intervals to verify the status of signatures. If all the signers complete signing the form, the Submit Action service is started and the form is submitted.-->
 
@@ -393,4 +393,4 @@ Perform the following steps to create a custom Submit Action that saves the data
 
 >[!MORELIKETHIS]
 >
->* [Configurar uma ação enviar para um formulário adaptável](/help/forms/configure-submit-actions-core-components.md)
+>* [Configurar uma Ação de Envio para um Formulário Adaptável](/help/forms/configure-submit-actions-core-components.md)

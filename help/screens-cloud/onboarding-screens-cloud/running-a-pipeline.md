@@ -11,12 +11,12 @@ ht-degree: 4%
 
 ---
 
-# Execução de um pipeline para o programa Screens as a Cloud Service no Cloud Manager {#run-pipeline-screens-cloud}
+# Execução de um pipeline para o programa as a Cloud Service do Screens no Cloud Manager {#run-pipeline-screens-cloud}
 
 Esta seção descreve como executar o pipeline e implantar seu código para o programa no Cloud Manager.
 
 >[!NOTE]
->Consulte [Configuração do pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) e [Implante seu código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) para saber como executar o pipeline do seu programa no Cloud Manager.
+>Consulte [Configurando o pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) e [Implantar código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) para saber como executar o pipeline para o seu programa no Cloud Manager.
 
 ## Objetivo {#objective}
 
@@ -24,40 +24,40 @@ A seção a seguir descreve como configurar o pipeline de CI/CD e implantar seu 
 
 ## Etapas para executar um pipeline para seu projeto do Screens no Cloud Manager {#steps-branch-creation}
 
-1. Depois que a configuração do ambiente for concluída com êxito, você verá a atualização do cartão de chamada para ação no Cloud Manager **Visão geral** página.
+1. Depois que a configuração de ambiente for concluída com êxito, você verá a atualização do cartão de chamada para ação na página **Visão geral** da Cloud Manager.
 
    ![imagem](/help/screens-cloud/assets/onboarding/add-environ3.png)
 
-1. Clique em **Configurar pipeline** do **Visão geral** página.
+1. Clique em **Configurar pipeline** na página **Visão geral**.
 
-1. Clique em **Próxima** após selecionar a ramificação.
+1. Clique em **Avançar** depois de selecionar a ramificação.
 
    ![imagem](/help/screens-cloud/assets/onboarding/run-pipeline1.png)
 
-1. Selecione suas opções na **Configurar pipeline** assistente. Clique em **Salvar**.
+1. Selecione suas opções no assistente do **Pipeline de Instalação**. Clique em **Salvar**.
 
    >[!NOTE]
-   >Para saber mais sobre as opções do assistente de Configuração de pipeline, consulte [Definição das configurações de pipeline no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) para obter mais detalhes.
+   >Para saber mais sobre as opções no assistente de Configuração de pipeline, consulte [Definindo as configurações de pipeline do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) para obter mais detalhes.
 
    ![imagem](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Após a conclusão da configuração do pipeline, o cartão de chamada para ação é atualizado.
 
    >[!NOTE]
-   >Para saber mais sobre os estágios na implantação no Cloud Manager, consulte [Implantação do código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) para obter mais detalhes.
+   >Para saber mais sobre os estágios na implantação no Cloud Manager, consulte [Implantando seu Código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) para obter mais detalhes.
 
    ![imagem](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 
 1. Clique em **Implantar**.
 
-1. Clique em **Build** para iniciar o processo de criação.
+1. Clique em **Compilação** para iniciar o processo de compilação.
 
    ![imagem](/help/screens-cloud/assets/onboarding/run-pipeline4.png)
 
-1. Depois que o processo de criação for concluído, você poderá ver um link de autor na **Ambientes** Cartão do Cloud Manager **Visão geral** página.
+1. Depois que o processo de compilação for concluído, você poderá ver um link do autor do cartão **Ambientes** na página **Visão geral** da Cloud Manager.
 
    ![imagem](/help/screens-cloud/assets/onboarding/run-pipeline5.png)
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como configurar um ambiente para seu programa no Cloud Manager, você está pronto para seguir para a próxima etapa do Processo de integração: [Navegar até o provedor de serviços do Screens](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).
+Depois de saber como configurar um ambiente para seu programa no Cloud Manager, você estará pronto para avançar para a próxima etapa do processo de integração: [Navegar até o Provedor de Serviços da Screens](/help/screens-cloud/configuring/navigating-to-screens-services-provider.md).

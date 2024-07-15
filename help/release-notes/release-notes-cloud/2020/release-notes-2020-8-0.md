@@ -1,6 +1,6 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.8.0.
-description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.8.0."
+description: "[!DNL Adobe Experience Manager] Notas de Versão as a Cloud Service para 2020.8.0."
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 34%
 
 ---
 
-# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# Notas de versão para [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
 A seção a seguir descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.8.0.
 
@@ -20,20 +20,20 @@ A seção a seguir descreve as Notas de versão gerais do Experience Manager as 
 
 ### Novidades do [!DNL Sites] {#what-is-new-sites}
 
-* Capacidade para [restaurar páginas e subpáginas (árvores de página) para uma versão anterior](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
+* Capacidade de [restaurar páginas e subpáginas (árvores de página) para uma versão anterior](/help/sites-cloud/authoring/sites-console/page-versions.md#reinstating-versions).
 
-* Capacidade para [criar lançamentos](/help/sites-cloud/authoring/launches/overview.md) no AEM [Editor de SPA](/help/implementing/developing/hybrid/introduction.md).
+* Capacidade de [criar Inicializações](/help/sites-cloud/authoring/launches/overview.md) no [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) do AEM.
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Novidades do [!DNL Assets] {#what-is-new-assets}
 
-* A transcodificação de vídeo agora é compatível com os microsserviços de ativos. Uma nova seção no [!UICONTROL Processamento de perfis] permite definir a taxa de bits e as dimensões do vídeo. O formato de saída é MP4 com codec H.264. Para obter detalhes, consulte [gerenciar ativos de vídeo](/help/assets/manage-video-assets.md#transcode-video). Para obter mais opções de transcodificação e para entrega de vídeo, use [!DNL Dynamic Media] complementar.
+* A transcodificação de vídeo agora é compatível com os microsserviços de ativos. Uma nova seção na configuração [!UICONTROL Processando Perfis] permite definir a taxa de bits e as dimensões do vídeo. O formato de saída é MP4 com codec H.264. Para obter detalhes, consulte [gerenciar ativos de vídeo](/help/assets/manage-video-assets.md#transcode-video). Para obter mais opções de transcodificação e entrega de vídeo, use o complemento [!DNL Dynamic Media].
 
-* No novo [!DNL Experience Manager Assets] , a funcionalidade marcação inteligente agora está configurada por padrão. Não é necessário integrar manualmente ao [!DNL Adobe Developer Console]. Em implantações existentes, os administradores configuram a integração de tags inteligentes como antes.
+* Nas novas implantações do [!DNL Experience Manager Assets], a funcionalidade de marcação inteligente agora está configurada por padrão. Não é necessário integrar manualmente com [!DNL Adobe Developer Console]. Em implantações existentes, os administradores configuram a integração de tags inteligentes como antes.
 
-* Um novo [experiência de download de ativos](/help/assets/download-assets-from-aem.md) permite,
+* Uma nova [experiência de download de ativos](/help/assets/download-assets-from-aem.md) permite,
 
    * Download assíncrono para downloads grandes para que os usuários não precisem aguardar.
    * Uma nova API modular para extensibilidade do desenvolvedor.
@@ -46,16 +46,16 @@ A seção a seguir descreve as Notas de versão gerais do Experience Manager as 
 
 * Visualizações de documentos nativos e de alta fidelidade do PDF agora estão disponíveis no Brand Portal. Consulte [visão geral do visualizador de documentos](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html#doc-viewer).
 
-* Agora você pode invalidar o cache CDN (Content Delivery Network) diretamente do [!DNL Dynamic Media] no AEM as a Cloud Service (em vez de usar [!DNL Dynamic Media Classic]). Ele garante que os ativos mais recentes sejam disponibilizados em minutos em vez de horas. Consulte [Invalidar o cache da CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* Agora você pode invalidar o cache CDN (Content Delivery Network) diretamente do [!DNL Dynamic Media] no AEM as a Cloud Service (em vez de usar [!DNL Dynamic Media Classic]). Ele garante que os ativos mais recentes sejam disponibilizados em minutos em vez de horas. Consulte [Invalidar o cache CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
-* O suporte de acessibilidade aprimorado é adicionado aos controles da interface do usuário, navegação, navegação e experiência de pesquisa no [!DNL Assets].
+* O suporte de acessibilidade aprimorado foi adicionado aos controles da interface do usuário, navegação, navegação e experiência de pesquisa no [!DNL Assets].
 
-   * Se você pressionar a tecla Escape depois de selecionar [!UICONTROL Adicionar representação] , o foco retornará à barra de ferramentas. <!-- via CQ-4293594-->
+   * Se você pressionar a tecla Escape depois de selecionar a opção [!UICONTROL Adicionar representação], o foco retornará à barra de ferramentas. <!-- via CQ-4293594-->
    * O foco do teclado funciona conforme esperado ao usar a caixa de combinação Email. <!-- via CQ-4286215 -->
    * Os elementos de acordeões na seção filtros de pesquisa são interpretados como acordeões expansíveis padrão. <!-- via CQ-4273103 -->
    * Ao aplicar uma tag a um ativo, a caixa de diálogo exibe tags como elementos de árvore. Os atributos ARIA são aplicados adequadamente aos elementos da árvore para torná-los acessíveis agora. <!-- via CQ-4272964 -->
 
-* [!DNL AEM Desktop app] A versão 2.0.3 já está disponível. Melhora a compatibilidade com [!DNL Experience Manager] O 6.5.5 service pack e o têm uma lista atualizada de compatibilidade do SO cliente. [!DNL Windows] 7 e [!DNL macOS] versões anteriores à 10.14 não são compatíveis.
+* A versão 2.0.3 do [!DNL AEM Desktop app] já está disponível. Ele melhora a compatibilidade com o [!DNL Experience Manager] 6.5.5 service pack e tem uma lista atualizada de compatibilidade do SO cliente. Não há suporte para as versões do [!DNL Windows] 7 e do [!DNL macOS] anteriores à 10.14.
 
 ### Bugs corrigidos em [!DNL Assets] {#bugs-fixed}
 
@@ -142,6 +142,6 @@ Siga esta seção para saber mais sobre as novidades e atualizações das Ferram
 
 * Lançamento do plug-in AIO-CLI para unificar as ferramentas de refatoração de código para permitir que os desenvolvedores chamem e executem ferramentas de refatoração de código de um só lugar. Consulte [Recurso do Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) para obter mais detalhes.
 
-* O Conversor do Dispatcher do AEM foi estendido para aceitar conversões de configurações no local e do Managed Services AEM as a Cloud Service Dispatcher do Adobe em configurações do Dispatcher compatíveis com o. Consulte [Recurso do Git: Conversor do Dispatcher do AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obter mais detalhes.
+* O AEM Dispatcher Converter foi estendido para aceitar conversões de configurações no local e do Adobe Managed Services Dispatcher em configurações do AEM as a Cloud Service compatíveis com Dispatcher. Consulte [Recurso do Git: AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) para obter mais detalhes.
 
-* Conversor do Dispatcher do AEM regravado em ` node.js ` e integrado ao plug-in AIO-CLI.
+* O Conversor de Dispatcher para AEM foi regravado em ` node.js ` e integrado ao plug-in AIO-CLI.

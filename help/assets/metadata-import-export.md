@@ -24,23 +24,23 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
 >
 >Para importar metadados em namespaces personalizados, primeiro registre os namespaces.
 
-1. Navegue até [!DNL Assets] interface do usuário, selecione **[!UICONTROL Criar]** na barra de ferramentas e selecione **[!UICONTROL Metadados]** no menu.
-1. No **[!UICONTROL Importação de metadados]** clique em **[!UICONTROL Selecionar arquivo]**. Selecione o arquivo CSV com os metadados.
+1. Navegue até a interface de usuário do [!DNL Assets], selecione **[!UICONTROL Criar]** na barra de ferramentas e selecione **[!UICONTROL Metadados]** no menu.
+1. Na página **[!UICONTROL Importação de metadados]**, clique em **[!UICONTROL Selecionar arquivo]**. Selecione o arquivo CSV com os metadados.
 1. Forneça os seguintes parâmetros:
 
    | Parâmetro | Descrição |
    | ---------------------- | ------- |
    | Tamanho do Lote | Número de ativos em um lote para o qual os metadados devem ser importados. O valor padrão é 50. O valor máximo é 100. |
-   | Separador de campos | O valor padrão é `,` (vírgula). Você pode especificar qualquer outro caractere. |
+   | Separador de campos | O valor padrão é `,` (uma vírgula). Você pode especificar qualquer outro caractere. |
    | Delimitador de vários valores | Separador para valores de metadados. O valor padrão é `|`. |
-   | Inicializar fluxos de trabalho | Falso por padrão. Quando definido como `true` As configurações padrão e estão em vigor para o fluxo de trabalho DAM Metadata WriteBack (que grava metadados nos dados binários do XMP). Habilitar os fluxos de trabalho torna o sistema lento. |
+   | Inicializar fluxos de trabalho | Falso por padrão. Quando definido como `true` e as configurações padrão estão em vigor para o fluxo de trabalho DAM Metadata WriteBack (que grava metadados nos dados binários do XMP). Habilitar os fluxos de trabalho torna o sistema lento. |
    | Nome de coluna do caminho do ativo | Define o nome da coluna do arquivo CSV com ativos. |
 
-1. Selecionar **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados forem importados, uma notificação será enviada para sua caixa de entrada de Notificações. Navegue até a página de propriedades do ativo e verifique se os valores de metadados são importados corretamente para os ativos.
+1. Selecione **[!UICONTROL Importar]** na barra de ferramentas. Depois que os metadados forem importados, uma notificação será enviada para sua caixa de entrada de Notificações. Navegue até a página de propriedades do ativo e verifique se os valores de metadados são importados corretamente para os ativos.
 
-1. Para adicionar data e hora para importar os metadados, use `YYYY-MM-DDThh:mm:ss.fff-00:00` formato para data e hora. A data e a hora são separadas por `T`, `hh` é horas no formato de 24 horas, `fff` é nanossegundos e `-00:00` é deslocamento de fuso horário. Por exemplo, `2020-03-26T11:26:00.000-07:00` é 26 de março de 2020 às 11:26:00.000 PST.
+1. Para adicionar data e carimbo de data e hora para importar os metadados, use o formato `YYYY-MM-DDThh:mm:ss.fff-00:00` para data e hora. A data e a hora são separadas por `T`, `hh` são horas no formato de 24 horas, `fff` são nanossegundos e `-00:00` é deslocamento de fuso horário. Por exemplo, `2020-03-26T11:26:00.000-07:00` é 26 de março de 2020 às 11:26:00.000 AM PST.
 
-   * O formato de data depende do cabeçalho da coluna e do formato nela contido. Por exemplo, se a data for compatível com o formato `yyyy-MM-dd'T'HH:mm:ssXXX` o cabeçalho da respectiva coluna deve ser `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * O formato de data depende do cabeçalho da coluna e do formato nela contido. Por exemplo, se a data for uma reclamação com o formato `yyyy-MM-dd'T'HH:mm:ssXXX` o cabeçalho da respectiva coluna deve ser `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
    * O formato de data padrão é `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
 
 <!-- Hidden via cqdoc-17869>
@@ -52,7 +52,7 @@ A importação de metadados é assíncrona e não impede o desempenho do sistema
 
 ## Exportar metadados {#export-metadata}
 
-É possível exportar metadados de vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, o Experience Manager atravessa as propriedades do nó do ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades de metadados em um arquivo CSV.
+É possível exportar metadados de vários ativos em um formato CSV. Os metadados são exportados de forma assíncrona e não afetam o desempenho do sistema. Para exportar metadados, o Experience Manager percorre as propriedades do nó do ativo `jcr:content/metadata` e seus nós filhos e exporta as propriedades dos metadados em um arquivo CSV.
 
 Alguns casos de uso para exportar metadados em massa são:
 
@@ -63,7 +63,7 @@ Alguns casos de uso para exportar metadados em massa são:
 
 >[!NOTE]
 >
->As Exportações de metadados são limitadas a 1.048.575 ativos, o que corresponde ao tamanho máximo da planilha no Microsoft Excel. Se uma hierarquia exportada contiver mais que esse número de ativos, somente os metadados dos primeiros 1.048.575 ativos serão incluídos no arquivo CSV.
+>As Exportações de metadados são limitadas a 1.048.575 Assets, o que corresponde ao tamanho máximo da planilha no Microsoft Excel. Se uma hierarquia exportada contiver mais que esse número de Assets, somente os metadados dos primeiros 1.048.575 Assets serão incluídos no arquivo CSV.
 
 1. Selecione a pasta de ativos que contém ativos para os quais deseja exportar metadados. Na barra de ferramentas, selecione **[!UICONTROL Exportar metadados]**.
 1. Na caixa de diálogo Exportação de metadados, especifique um nome para o arquivo CSV. Para exportar metadados de ativos em subpastas, selecione **[!UICONTROL Incluir ativos em subpastas]**.
@@ -72,14 +72,14 @@ Alguns casos de uso para exportar metadados em massa são:
 
 1. Selecione as opções desejadas. Forneça um nome de arquivo e se necessário uma data.
 
-1. No **[!UICONTROL Propriedades a serem exportadas]** especifique se deseja exportar todas as propriedades ou propriedades específicas. Se você escolher Propriedades seletivas para serem exportadas, adicione as propriedades desejadas.
+1. No campo **[!UICONTROL Propriedades a serem exportadas]**, especifique se deseja exportar todas as propriedades ou propriedades específicas. Se você escolher Propriedades seletivas para serem exportadas, adicione as propriedades desejadas.
 
 1. Na barra de ferramentas, selecione **[!UICONTROL Exportar]**. Uma mensagem confirma que os metadados foram exportados. Feche a mensagem.
-1. Abra a notificação da caixa de entrada do trabalho de exportação. Selecione o trabalho e clique em **[!UICONTROL Abrir]** na barra de ferramentas. Para baixar o arquivo CSV com os metadados, selecione **[!UICONTROL Download do CSV]** na barra de ferramentas. Clique em **[!UICONTROL Fechar]**.
+1. Abra a notificação da caixa de entrada do trabalho de exportação. Selecione o trabalho e clique em **[!UICONTROL Abrir]** na barra de ferramentas. Para baixar o arquivo CSV com os metadados, selecione **[!UICONTROL Download de CSV]** na barra de ferramentas. Clique em **[!UICONTROL Fechar]**.
 
-   ![Caixa de diálogo para baixar o arquivo CSV que contém metadados exportados em massa](assets/csv_download.png)
+   ![Caixa de diálogo para baixar o arquivo CSV contendo metadados exportados em massa](assets/csv_download.png)
 
-   *Figura: caixa de diálogo para baixar o arquivo CSV que contém metadados exportados em massa.*
+   *Figura: caixa de diálogo para baixar o arquivo CSV contendo metadados exportados em massa.*
 
 **Consulte também**
 
@@ -94,7 +94,7 @@ Alguns casos de uso para exportar metadados em massa são:
 * [Gerenciar metadados](manage-metadata.md)
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

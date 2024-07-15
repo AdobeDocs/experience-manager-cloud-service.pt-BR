@@ -14,7 +14,7 @@ ht-degree: 4%
 
 # Criar um modelo de formulário adaptável com base nos Componentes principais {#adaptive-form-templates}
 
-Ao criar um formulário, você adiciona campos e componentes para definir a estrutura do formulário, o conteúdo e as ações no editor. Adicione campos e componentes na `guideRootPanel` do contêiner de formulário. Com o Editor de modelos, você pode criar um modelo que contenha estrutura básica e conteúdo inicial que os autores possam usar para criar formulários.
+Ao criar um formulário, você adiciona campos e componentes para definir a estrutura do formulário, o conteúdo e as ações no editor. Você adiciona campos e componentes no `guideRootPanel` do contêiner de formulário. Com o Editor de modelos, você pode criar um modelo que contenha estrutura básica e conteúdo inicial que os autores possam usar para criar formulários.
 
 Por exemplo, você deseja que todos os autores de formulários tenham determinadas caixas de texto, botões de navegação e um botão de envio em um formulário de inscrição. Você pode criar um modelo com os componentes que os autores podem usar para criar um formulário consistente com outros formulários de inscrição. Quando os autores usam o modelo para criar um Formulário adaptável, o novo formulário herda a estrutura, a estrutura e os componentes especificados no modelo. O Editor de modelos permite:
 
@@ -28,33 +28,33 @@ You can download and install [!DNL AEM Forms] reference content package from [So
 
 ## Pré-requisito
 
-**Ativar os Componentes principais adaptáveis do Forms para o seu ambiente**: ao criar um programa, os Componentes principais adaptáveis do Forms já estão habilitados para o seu ambiente. Se você tiver um ambiente as a Cloud Service de formulário com base em [Arquétipo AEM 39 ou anterior](https://github.com/adobe/aem-project-archetype), [Ativar os Componentes principais adaptáveis do Forms para o seu ambiente](enable-adaptive-forms-core-components.md).
+**Habilitar os Componentes principais adaptáveis do Forms para o seu ambiente**: quando você cria um programa, os Componentes principais adaptáveis do Forms já estão habilitados para o seu ambiente. Se você tiver um ambiente de Formulário as a Cloud Service com base no [Arquétipo AEM 39 ou anterior](https://github.com/adobe/aem-project-archetype), [Habilite os Componentes principais adaptáveis do Forms para seu ambiente](enable-adaptive-forms-core-components.md).
 
 >[!NOTE]
 >
-> Ao implantar o ambiente as a Cloud Service do Forms com base no Arquétipo 45, o **Forms adaptável (componente principal)** modelos e temas principais baseados em componentes são adicionados ao seu ambiente.
+> Ao implantar o ambiente as a Cloud Service do Forms com base no Arquétipo 45, os modelos **Adaptive Forms (Componente principal)** e os temas baseados em componentes principais são adicionados ao seu ambiente.
 
 ## Trabalhar com modelo {#working-with-templates}
 
-É possível acessar o editor de modelos no menu Ferramentas navegando até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Modelos]**. Aqui, os modelos são organizados em pastas ativadas para modelos editáveis.
+Você pode acessar o editor de modelos no menu Ferramentas navegando até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Modelos]**. Aqui, os modelos são organizados em pastas ativadas para modelos editáveis.
 
 >[!NOTE]
 >
 > Você pode encontrar os modelos editáveis baseados nos componentes principais nas pastas específicas dos componentes principais.
 
-O Experience Manager fornece uma pasta global para organizar modelos. No entanto, não está ativado por padrão. Você pode solicitar que o administrador ative a pasta global ou crie uma pasta para modelos. Para obter mais informações sobre como criar pastas, consulte [Pastas de Modelos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
+O Experience Manager fornece uma pasta global para organizar modelos. No entanto, não está ativado por padrão. Você pode solicitar que o administrador ative a pasta global ou crie uma pasta para modelos. Para obter mais informações sobre como criar pastas, consulte [Pastas de Modelo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-templates-template-authors).
 
 ## Criação de um modelo {#create-template}
 
 Após criar uma pasta, abra-a e execute as seguintes etapas para criar um template:
 
-1. Selecionar **[!UICONTROL Criar]** dentro da pasta que você criou.
-1. No **[!UICONTROL Escolher um tipo de modelo]** , selecione **[!UICONTROL Modelo de formulário adaptável (componente principal)]** e selecione **[!UICONTROL Próxima]**.
+1. Selecione **[!UICONTROL Criar]** dentro da pasta que você criou.
+1. Na seção **[!UICONTROL Escolher um Tipo de Modelo]**, selecione o **[!UICONTROL modelo de Formulário Adaptável (Componente Principal)]** e selecione **[!UICONTROL Próximo]**.
 
-1. No **[!UICONTROL Detalhes do modelo]** seção, forneça uma **Título do modelo** e selecione **[!UICONTROL Criar]**.
+1. Na seção **[!UICONTROL Detalhes do Modelo]**, forneça um **Título do Modelo** e selecione **[!UICONTROL Criar]**.
 Você também pode fornecer uma descrição.
 
-1. Selecionar **[!UICONTROL Concluído]** para retornar ao console ou selecione **[!UICONTROL Abertura]** para abrir o modelo no editor.
+1. Selecione **[!UICONTROL Concluído]** para retornar ao console ou **[!UICONTROL Abrir]** para abrir o modelo no editor.
 
 ## Interface do editor de modelos {#template-editor-ui}
 
@@ -63,14 +63,14 @@ Ao abrir um modelo para edição, você pode ver os seguintes componentes do Edi
 * **Barra de ferramentas da página**
 Contém as seguintes opções:
 
-   * **Ativar/desativar painel lateral**: permite mostrar ou ocultar a barra lateral.
-   * **Informações da página**: permite especificar informações como tempo de publicação/cancelamento de publicação, miniaturas, bibliotecas do lado do cliente, política da página e biblioteca do lado do cliente de design da página.
+   * **Alternar Painel Lateral**: Permite mostrar ou ocultar a barra lateral.
+   * **Informações da página**: permite especificar informações como hora de publicação/cancelamento de publicação, miniaturas, bibliotecas do lado do cliente, política da página e biblioteca do lado do cliente de design da página.
      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Seletor de modo:** Permite alterar o modo. Você pode escolher **[!UICONTROL Estrutura]** modo, **[!UICONTROL Conteúdo inicial]**, **[!UICONTROL Controle de layout]** modo. O modo Estrutura permite adicionar e personalizar o cabeçalho e o rodapé. O modo Conteúdo inicial permite personalizar o conteúdo do formulário.
-   * **Visualizar:** Permite visualizar a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar entre os modos de edição e visualização.
-* **Barra lateral:** Fornece os navegadores Conteúdo, Propriedades, Assets e Componentes.
-* **Barra de ferramentas do componente:** Ao selecionar um componente, você vê uma barra de ferramentas que permite personalizar o componente.
-* **Página**: a área onde você adiciona conteúdo para criar o template.
+   * **Seletor de modo:** permite alterar o modo. Você pode escolher o modo **[!UICONTROL Estrutura]**, **[!UICONTROL Conteúdo inicial]**, **[!UICONTROL Controle de layout]**. O modo Estrutura permite adicionar e personalizar o cabeçalho e o rodapé. O modo Conteúdo inicial permite personalizar o conteúdo do formulário.
+   * **Visualizar:** permite que você visualize a aparência do modelo ao publicá-lo. Você pode usar o Seletor de camada e a Visualização para alternar entre os modos de edição e visualização.
+* **Barra Lateral:** fornece os navegadores de Conteúdo, Propriedades, Assets e Componentes.
+* **Barra de ferramentas do componente:** ao selecionar um componente, você verá uma barra de ferramentas que permite personalizar o componente.
+* **Página**: a área onde você adiciona conteúdo para criar o modelo.
 
 <!-- See [Introduction to authoring Adaptive Forms](introduction-forms-authoring.md) to understand the Touch UI editor. -->
 
@@ -123,7 +123,7 @@ Quando a opção Conteúdo inicial estiver selecionada, o Contêiner de formulá
 
 Os autores de formulários o usam como base para criar um formulário. A estrutura do fluxo de conteúdo é especificada na camada Conteúdo inicial do modelo. Para alternar para a edição do conteúdo inicial do modelo de formulário, antes de Visualizar na barra de ferramentas da página, selecione ![tela suspensa](assets/canvas-drop-down.png) **>** **[!UICONTROL Conteúdo inicial]**.
 
-![Cabeçalho e rodapé adicionados na camada Conteúdo inicial](assets/header-and-footer.png)
+![Cabeçalho e rodapé adicionados à camada Conteúdo Inicial](assets/header-and-footer.png)
 
 Na camada Conteúdo inicial, crie o modelo de Formulário adaptável que seus autores usam como base. A criação de um modelo é semelhante à criação de um formulário. As opções disponíveis na Barra lateral são usadas. A barra lateral fornece conteúdo, propriedades, ativos e componentes nos navegadores.
 
@@ -139,35 +139,35 @@ Ao editar um modelo, é possível definir o layout, isso usa o layout responsivo
 
 ![Contêiner de layout na camada da estrutura](/help/forms/assets/layout-template-core-component.png)
 
-Consulte o artigo [noções básicas sobre layout responsivo](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) para obter informações adicionais.
+Consulte o artigo [noções básicas sobre layout responsivo](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/responsive-layout-feature-video-understand.html?lang=en) para obter mais informações.
 
 ## Habilitação do modelo {#enabling-the-template}
 
 Ao criar um modelo, ele é adicionado como um rascunho. Ative o modelo para usá-lo na criação do Forms adaptável. Para ativar um modelo:
 
-1. Navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Modelos]**e abra a pasta na qual você criou o template.
+1. Navegue até **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Modelos]** e abra a pasta na qual você criou o modelo.
 O modelo criado está marcado como Rascunho.
-1. Selecione o modelo e selecione **[!UICONTROL Ativar]** na barra de ferramentas.
+1. Selecione o modelo e selecione **[!UICONTROL Habilitar]** na barra de ferramentas.
 Ao criar um Formulário adaptável, você pode ver o modelo listado quando é solicitado a escolher um modelo.
 
 ## Importação ou exportação de um template {#importing-or-exporting-a-template}
 
-Um formulário funciona com seu modelo. Ao baixar um Formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Ao importar o formulário para um [!DNL AEM Forms] instância, ela é importada sem seu template. Se um formulário for importado, mas seu template não estiver disponível, o formulário não será renderizado. É possível empacotar o modelo personalizado de `/conf` nó em `https://<server>:<port>/crx/packmgr`e conecte-o à porta no [!DNL AEM Forms] instância na qual você deseja carregar o formulário. Também é possível [Crie um modelo usando o Arquétipo AEM e implante-o na instância do Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
+Um formulário funciona com seu modelo. Ao baixar um Formulário adaptável criado usando um modelo personalizado, o modelo não é baixado. Quando você importa o formulário em uma instância do [!DNL AEM Forms] diferente, ele é importado sem seu modelo. Se um formulário for importado, mas seu template não estiver disponível, o formulário não será renderizado. Você pode empacotar o modelo personalizado do nó `/conf` em `https://<server>:<port>/crx/packmgr` e colocá-lo na porta na instância [!DNL AEM Forms] para onde deseja carregar o formulário. Você também pode [Criar um modelo usando o Arquétipo AEM e implantá-lo em sua instância Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html#prerequisites).
 
 >[!NOTE]
 >
-> * Você também pode configurar as opções [!UICONTROL Documento do registro] modelo diretamente do editor de formulário adaptável ou do editor de modelo de formulário adaptável. Para obter mais informações, consulte [Gerar documento de registro para o Adaptive Forms](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+> * Você também pode configurar o modelo [!UICONTROL Documento de registro] diretamente do editor de modelo de Formulário adaptável ou do editor de modelo de Formulário adaptável. Para obter mais informações, consulte [Gerar documento de registro para Forms adaptável](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
 ## Associar um esquema do modelo de dados de formulário a um modelo {#associating-form-data-model-schema-in-template}
 
-Os autores podem associar um [!UICONTROL Esquema do modelo de dados de formulário] para um modelo de Formulário adaptável no editor de modelos. Ele permite que os autores selecionem um esquema no editor de modelos. Quando você associa um esquema a um modelo e um autor de formulário cria um formulário com base no modelo, o esquema é pré-selecionado para o formulário. Ele ajuda os autores de formulários a regular o uso do esquema e também economiza tempo para os autores de formulários. Para selecionar um esquema de modelo de dados de formulário no editor de modelo:
+Os autores podem associar um [!UICONTROL Esquema de modelo de dados de formulário] a um modelo de formulário adaptável no editor de modelos. Ele permite que os autores selecionem um esquema no editor de modelos. Quando você associa um esquema a um modelo e um autor de formulário cria um formulário com base no modelo, o esquema é pré-selecionado para o formulário. Ele ajuda os autores de formulários a regular o uso do esquema e também economiza tempo para os autores de formulários. Para selecionar um esquema de modelo de dados de formulário no editor de modelo:
 
-1. Selecionar **[!UICONTROL Navegador de conteúdo]** localizado no lado esquerdo.
-1. Ir para o contêiner de formulário **[!UICONTROL Configuração]**.
-1. Selecionar **[!UICONTROL Modelo de dados]**.
-1. Escolha o modelo de dados de formulário (FDM) por meio de **[!UICONTROL Selecionar modelo de dados do formulário]** e salve a configuração.
+1. Selecione o **[!UICONTROL Navegador de Conteúdo]**, localizado no lado esquerdo.
+1. Vá para o contêiner de formulário **[!UICONTROL Configuração]**.
+1. Selecione **[!UICONTROL Modelo de Dados]**.
+1. Escolha o modelo de dados de formulário (FDM) por meio do **[!UICONTROL Selecione Modelo de Dados de Formulário]** e salve a configuração.
 
-![Formulário-Modelo-Dados-Associação-no-Forms](/help/forms/assets/select-form-data-model-img-core-component.png)
+![Associação-no-Forms-do-Modelo-de-Dados-de-Formulário](/help/forms/assets/select-form-data-model-img-core-component.png)
 
 <!--
 
@@ -202,7 +202,7 @@ After you have added fields, you can add buttons such as Submit and Reset.
 
 ### Adicionar propriedades personalizadas aos Componentes de formulário adaptável usando a política de modelo
 
-As propriedades personalizadas permitem associar atributos personalizados (pares de chave e valor) a um componente principal de formulário adaptável usando o modelo de formulário. As propriedades personalizadas são refletidas na variável **[!UICONTROL propriedades]** da representação headless do componente. Isso permite criar um comportamento de formulário dinâmico que se adapta de acordo com os valores de atributos personalizados. Por exemplo, desenvolvedores(as) podem criar várias representações de um componente de formulário headless para plataformas móveis, de desktop ou da web, melhorando significativamente a experiência de usuário em uma grande variedade de dispositivos.
+As propriedades personalizadas permitem associar atributos personalizados (pares de chave e valor) a um componente principal de formulário adaptável usando o modelo de formulário. As propriedades personalizadas são refletidas na seção **[!UICONTROL properties]** da representação headless do componente. Isso permite criar um comportamento de formulário dinâmico que se adapta de acordo com os valores de atributos personalizados. Por exemplo, desenvolvedores(as) podem criar várias representações de um componente de formulário headless para plataformas móveis, de desktop ou da web, melhorando significativamente a experiência de usuário em uma grande variedade de dispositivos.
 
 As etapas para adicionar propriedades personalizadas aos campos do componente principal do Formulário adaptável são:
 
@@ -211,35 +211,35 @@ As etapas para adicionar propriedades personalizadas aos campos do componente pr
 
 #### Adicionar um nome de grupo personalizado na política do editor de modelo {#add-a-custom-group-name}
 
-1. Ir para **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Modelos]**.
+1. Vá para **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Modelos]**.
 1. Selecione o modelo com base nos Componentes principais e abra-o em um modo de edição.
-1. Clique em **[!UICONTROL Política]** ![Política](/help/forms/assets/Smock_FeedManagement_18_N.svg) ícone de um campo Componente principal do formulário adaptável no qual as propriedades personalizadas precisam ser definidas. A variável **[!UICONTROL Campo de formulário adaptável]** será exibida.
-1. Selecione o **[!UICONTROL Propriedades Personalizadas]** guia.
-1. Especifique a **[!UICONTROL Título da política]** no **[!UICONTROL Política]** seção.
-1. Especifique a **[!UICONTROL Nome do grupo]** e adicione o par de valor-chave associado a um grupo específico. O nome do grupo é visível para os autores do formulário na caixa de diálogo de edição de um componente. Se você selecionar o nome do grupo, cada par de valor-chave associado será aplicável a um componente.
+1. Clique no ícone **[!UICONTROL Política]** ![Política](/help/forms/assets/Smock_FeedManagement_18_N.svg) de um campo Componente principal do formulário adaptável no qual as propriedades personalizadas precisam ser definidas. A caixa de diálogo **[!UICONTROL Campo de Formulário Adaptável]** é exibida.
+1. Selecione a guia **[!UICONTROL Propriedades Personalizadas]**.
+1. Especifique o **[!UICONTROL Título da Política]** na seção **[!UICONTROL Política]**.
+1. Especifique o **[!UICONTROL Nome do grupo]** e adicione o par de valor-chave associado a um grupo específico. O nome do grupo é visível para os autores do formulário na caixa de diálogo de edição de um componente. Se você selecionar o nome do grupo, cada par de valor-chave associado será aplicável a um componente.
 1. Clique em **[Concluído]**.
 
-![Adicionar o nome do grupo de propriedades personalizadas no editor de modelo](/help/forms/assets/custom-properties-core-component.png)
+![Adicionando o nome do grupo de propriedades personalizadas no editor de modelo](/help/forms/assets/custom-properties-core-component.png)
 
-Quando você adicionar pelo menos um grupo de propriedades personalizadas usando a política de modelo, a variável **[!UICONTROL Avançado]** fica visível na caixa de diálogo Editar de um componente principal correspondente.
+Quando você adiciona pelo menos um grupo de propriedades personalizadas usando a política de modelo, a guia **[!UICONTROL Avançado]** fica visível na caixa de diálogo Editar de um componente principal correspondente.
 
 #### Selecione um nome de grupo personalizado na caixa de diálogo de edição de um componente principal {#select-a-custom-group-name}
 
 1. Abra um Formulário adaptável em um modo de edição.
-1. Selecione o componente para o qual as propriedades personalizadas foram definidas no editor de modelo e selecione ![settings_icon](assets/configure-icon.svg) para abrir a caixa de diálogo de edição do componente.
-1. Selecione o **[!UICONTROL Avançado]** guia.
-1. Selecione o nome do grupo de propriedades personalizadas em **[!UICONTROL Selecionar propriedade personalizada]** menu suspenso. Todos os nomes de grupos personalizados definidos são preenchidos automaticamente na lista suspensa.
-1. Selecionar **[!UICONTROL Concluído]** para salvar as propriedades.
+1. Selecione o componente cujas propriedades personalizadas foram definidas no editor de modelo e selecione ![settings_icon](assets/configure-icon.svg) para abrir a caixa de diálogo de edição do componente.
+1. Selecione a guia **[!UICONTROL Avançado]**.
+1. Selecione o nome do grupo de propriedades personalizadas no menu suspenso **[!UICONTROL Selecionar propriedade personalizada]**. Todos os nomes de grupos personalizados definidos são preenchidos automaticamente na lista suspensa.
+1. Selecione **[!UICONTROL Concluído]** para salvar as propriedades.
 
 ![selecionar nome do grupo de propriedades personalizadas](/help/forms/assets/select-custom-properties-group-name.png)
 
 >[!NOTE]
 >
-> * A variável **[!UICONTROL Propriedades personalizadas adicionais]** permite adicionar dinamicamente propriedades personalizadas específicas do componente, além daquelas fornecidas na política do modelo. A propriedade personalizada do componente específico tem prioridade sobre a propriedade personalizada definida na política do modelo quando os valores do nome da chave correspondem.
+> * A caixa de seleção **[!UICONTROL Propriedades Personalizadas Adicionais]** permite adicionar dinamicamente propriedades personalizadas específicas do componente, além daquelas fornecidas na política de modelo. A propriedade personalizada do componente específico tem prioridade sobre a propriedade personalizada definida na política do modelo quando os valores do nome da chave correspondem.
 
 ## Criação de um formulário adaptável usando o modelo {#creating-an-adaptive-form-using-the-template}
 
-Depois de criar e ativar um modelo, ele fica disponível no gerenciador de formulários quando você cria um Formulário adaptável. Para usar um modelo e criar um Formulário adaptável, consulte [Criação de um formulário adaptável com base nos Componentes principais](/help/forms/creating-adaptive-form-core-components.md).
+Depois de criar e ativar um modelo, ele fica disponível no gerenciador de formulários quando você cria um Formulário adaptável. Para usar um modelo e criar um Formulário adaptável, consulte [Criação de um Formulário adaptável com base nos Componentes principais](/help/forms/creating-adaptive-form-core-components.md).
 <!--
 ## Change display option of out of the box templates  {#change-display-option-of-out-of-the-box-templates}
 

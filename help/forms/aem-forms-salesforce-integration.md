@@ -12,7 +12,7 @@ ht-degree: 3%
 
 ---
 
-# Integrar o formulário adaptável ao Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
+# Integrar formulário adaptável com o Salesforce {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -27,7 +27,7 @@ Você pode usar as credenciais do cliente OAuth 2.0 para integrar o AEM Forms ao
 
 O AEM Forms troca as credenciais do cliente (chave do consumidor e segredo do consumidor), definidas no aplicativo conectado do Salesforce, para obter um token de acesso.
 
-O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções na [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md) artigo.
+O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
 
 Há vários benefícios de usar credenciais de cliente OAuth 2.0 para autenticação em relação à autenticação de Fluxo de código de autorização:
 
@@ -38,9 +38,9 @@ Há vários benefícios de usar credenciais de cliente OAuth 2.0 para autentica�
 
 Antes de definir a comunicação entre um aplicativo do Salesforce e um ambiente AEM:
 
-* Criar um [Aplicativo conectado do Salesforce com fluxo de credenciais do cliente OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) e um usuário somente de API para sua organização, além de obter a chave do consumidor e o segredo do consumidor para o aplicativo.
+* Crie um [Aplicativo conectado do Salesforce com fluxo de credenciais de cliente OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) e um usuário somente de API para sua organização e obtenha a chave do consumidor e o segredo do consumidor para o aplicativo.
 
-* Verifique se o arquivo do Swagger está configurado corretamente para corresponder às APIs da sua organização. Como alternativa, você pode optar por [criar um arquivo do Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) do zero, personalizado para utilização em seu ambiente AEM.
+* Verifique se o arquivo do Swagger está configurado corretamente para corresponder às APIs da sua organização. Como alternativa, você pode [criar um arquivo Swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) do zero, personalizado para utilização em seu ambiente AEM.
 
 
 ## Configurar o aplicativo Salesforce usando o fluxo de credenciais do cliente OAuth 2.0 {#steps-to-create-aem-datasource-configuration}
@@ -48,35 +48,35 @@ Antes de definir a comunicação entre um aplicativo do Salesforce e um ambiente
 Para conectar o formulário adaptável ao aplicativo Salesforce usando as configurações de autenticação de credencial do cliente OAuth 2.0, execute as seguintes etapas:
 
 1. Faça logon na instância do Author.
-1. Ir para **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Fontes de dados]**.
+1. Vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Fontes de Dados]**.
 1. Selecione a pasta de configuração.
-1. Clique em **[!UICONTROL Criar]** e a variável **[!UICONTROL Criar configuração da fonte de dados]** é exibida.
-1. Especifique a **[!UICONTROL Título]** e selecione o **[!UICONTROL Tipo de serviço]** as **[!UICONTROL Serviço RESTful]**.
+1. Clique em **[!UICONTROL Criar]** e a **[!UICONTROL Criar configuração do Data Source]** será exibida.
+1. Especifique o **[!UICONTROL Título]** e selecione o **[!UICONTROL Tipo de Serviço]** como **[!UICONTROL Serviço RESTful]**.
 1. Clique em **[!UICONTROL Avançar]**.
-1. Selecione o **[!UICONTROL Origem do Swagger]** as **[!UICONTROL Arquivo].**
+1. Selecione o **[!UICONTROL Swagger Source]** como **[!UICONTROL Arquivo].**
 
    >[!NOTE]
    >
    > Quando o arquivo swagger é selecionado, o Esquema, o Nome do host e o Caminho base são preenchidos automaticamente.
 
-1. Faça upload do arquivo Swagger criado no computador local clicando em **[!UICONTROL Procurar]**.
-1. Selecione o **[!UICONTROL Tipo de autenticação]** as **[!UICONTROL OAuth 2.0]** e a variável **[!UICONTROL Configurações de autenticação]** é exibido.
-1. Selecione o **[!UICONTROL Tipo de concessão]** as **[!UICONTROL Credencial do cliente]**.
-1. Especifique a **[!UICONTROL ID do cliente]** e **[!UICONTROL Segredo do cliente]** obtido no aplicativo conectado do Salesforce.
-1. Especifique a **[!UICONTROL URL do token de acesso]** no formato
+1. Carregue o arquivo do Swagger criado do computador local clicando em **[!UICONTROL Procurar]**.
+1. Selecione o **[!UICONTROL Tipo de Autenticação]** como **[!UICONTROL OAuth 2.0]** e o painel **[!UICONTROL Configurações de Autenticação]** será exibido.
+1. Selecione o **[!UICONTROL Tipo de Concessão]** como **[!UICONTROL Credencial do Cliente]**.
+1. Especifique a **[!UICONTROL ID do Cliente]** e o **[!UICONTROL Segredo do Cliente]** obtidos do aplicativo conectado ao Salesforce.
+1. Especifique a **[!UICONTROL URL do Token de Acesso]** no formato
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`.
 
    >[!NOTE]
    >
    > Cada organização tem seu próprio nome de domínio específico.
 
-1. Clique em **[!UICONTROL Testar conexão]**.
-1. Se a conexão for bem-sucedida, clique no link **[!UICONTROL Criar]** botão.
+1. Clique em **[!UICONTROL Testar Conexão]**.
+1. Se a conexão tiver êxito, clique no botão **[!UICONTROL Criar]**.
 
 
-Após configurar o aplicativo Salesforce, você pode usar a configuração ao criar o modelo de dados de formulário (FDM). Para obter mais informações, consulte [Criar modelo de dados de formulário (FDM)](create-form-data-models.md). [Configurar a ação enviar do modelo de dados de formulário](/help/forms/using-form-data-model.md) para um Formulário adaptável para enviar dados aos aplicativos do Salesforce.
+Após configurar o aplicativo Salesforce, você pode usar a configuração ao criar o modelo de dados de formulário (FDM). Para obter mais informações, consulte [Criar modelo de dados de formulário (FDM)](create-form-data-models.md). [Configure a Ação de Envio do Modelo de Dados de Formulário](/help/forms/using-form-data-model.md) para um Formulário Adaptável para enviar dados aos aplicativos do Salesforce.
 
-Para obter mais informações sobre como criar e usar o Form Data Model (FDM) nos fluxos de trabalho de negócios, consulte [Integração de dados](data-integration.md).
+Para obter mais informações sobre como criar e usar o Form Data Model (FDM) nos fluxos de trabalho de negócios, consulte [Integração de Dados](data-integration.md).
 
 ## Artigos relacionados
 

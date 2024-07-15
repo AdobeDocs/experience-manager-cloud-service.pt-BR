@@ -27,7 +27,7 @@ O ContextHub fornece vários exemplos de candidatos a armazenamento que você po
 
 Armazene para segmentos do ContextHub resolvidos e não resolvidos. Recupera automaticamente segmentos do ContextHub SegmentManager.
 
-### Local de origem {#source-location-segmentation}
+### Localização do Source {#source-location-segmentation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
@@ -37,7 +37,7 @@ O candidato do armazenamento de segmentação aem estende [`ContextHub.Store.Per
 
 ### Configuração {#configuration-segmentation}
 
-Ao criar uma `aem.segmentation` armazenamento, não é necessário fornecer uma configuração detalhada. A configuração padrão especifica o local das definições de segmento do ContextHub.
+Ao criar um armazenamento `aem.segmentation`, não é necessário fornecer uma configuração detalhada. A configuração padrão especifica o local das definições de segmento do ContextHub.
 
 ```xml
 {
@@ -51,15 +51,15 @@ Ao criar uma `aem.segmentation` armazenamento, não é necessário fornecer uma 
 
 ## contexthub.geolocation Amostra do candidato da loja {#contexthub-geolocation-sample-store-candidate}
 
-A variável `contexthub.geolocation` exemplo de candidato de armazenamento usa o Google Maps para obter e armazenar informações sobre a localização do cliente.
+O candidato de armazenamento de amostra `contexthub.geolocation` usa o Google Maps para obter e armazenar informações sobre o local do cliente.
 
-### Local de origem {#source-location-geolocation}
+### Localização do Source {#source-location-geolocation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
 ### Implementação base {#base-implementation-geolocation}
 
-A variável `contexthub.geolocation` estender candidato ao armazenamento [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+O candidato de armazenamento `contexthub.geolocation` estende [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuração {#configuration-geolocation}
 
@@ -113,13 +113,13 @@ O armazenamento usa uma árvore de dados semelhante ao seguinte exemplo:
 
 Armazena informações sobre o ambiente atual do cliente, como o dispositivo, a janela, o navegador, a data e a hora.
 
-### Local de origem {#source-location-surferinfo}
+### Localização do Source {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
 ### Implementação base {#base-implementation-surferinfo}
 
-A variável `contexthub.surferinfo` estender candidato ao armazenamento [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+O candidato de armazenamento `contexthub.surferinfo` estende [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuração {#configuration-surferinfo}
 
@@ -178,15 +178,15 @@ Os armazenamentos que usam esse candidato a armazenamento têm uma árvore de da
 
 ## exemplo de candidato a armazenamento de granite.emulators {#granite-emulators-sample-store-candidate}
 
-A variável `granite.emulators` candidato de armazenamento de amostra armazena informações sobre dispositivos cliente.
+O candidato de armazenamento de amostra `granite.emulators` armazena informações sobre dispositivos cliente.
 
-### Local de origem {#source-location-emulators}
+### Localização do Source {#source-location-emulators}
 
 `/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
 ### Implementação base {#base-implementation-emulators}
 
-A variável `granite.emulators` estender candidato ao armazenamento [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
+O candidato de armazenamento `granite.emulators` estende [`ContextHub.Store.PersistedStore`](contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuração {#configuration-emulators}
 
@@ -313,13 +313,13 @@ A árvore de dados do armazenamento é semelhante ao seguinte exemplo:
 
 Armazena informações sobre o usuário atual.
 
-### Local de origem {#source-location-profile}
+### Localização do Source {#source-location-profile}
 
 `/libs/settings/cloudsettings/legacy/contexthub/profile`
 
 ### Implementação base {#base-implementation-profile}
 
-A variável `granite.profile` estender candidato ao armazenamento [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
+O candidato de armazenamento `granite.profile` estende [`ContextHub.Store.PersistedJSONPStore`](contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuração {#configuration-profile}
 

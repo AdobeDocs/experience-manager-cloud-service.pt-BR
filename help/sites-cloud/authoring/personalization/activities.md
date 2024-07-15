@@ -61,12 +61,12 @@ Crie uma marca para a qual deseja gerenciar atividades de marketing.
 
 Ao criar uma marca usando o console Atividades, ela também aparece no [console Ofertas](/help/sites-cloud/authoring/personalization/offers.md), onde é possível criar ofertas para as experiências das suas atividades.
 
-1. No console Navegação, selecione **Personalização**. Selecionar **Atividades**.
+1. No console Navegação, selecione **Personalization**. Selecione **Atividades**.
 
    ![Navegar para atividades](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
-1. No console Atividades, selecione **Criar** depois **Criar marca**.
-1. Selecione o modelo da marca e selecione **Próxima**.
+1. No console Atividades, selecione **Criar** depois **Criar Marca**.
+1. Selecione o modelo de marca e selecione **Próximo**.
 1. Digite um título para a marca conforme desejar que ele seja exibido nos consoles Atividades e Ofertas. Também é possível digitar ou selecionar uma ou mais tags para associar à marca.
 1. Selecione **Criar**. Sua marca aparecerá no console Atividades.
 
@@ -97,21 +97,21 @@ Adicione uma atividade ou edite uma atividade já existente para concentrar seus
 
 Para adicionar uma atividade:
 
-1. Selecione a marca para a qual você está criando a atividade e selecione **Criar** depois **Criar atividade**. Se estiver editando, selecione a atividade na tela Área mestre e clique ou toque em **Editar atividade**.
-1. Forneça as seguintes informações e selecione **Próxima**:
+1. Selecione a marca para a qual você está criando a atividade e selecione **Criar** e **Criar atividade**. Se estiver editando, selecione a atividade na tela Área mestre e clique ou toque em **Editar atividade**.
+1. Forneça as seguintes informações e selecione **Avançar**:
    * Um nome para a atividade.
    * O mecanismo de direcionamento a ser usado. O ContextHub (AEM) é selecionado por padrão. Se precisar usar o Adobe Target, crie a atividade no editor de conteúdo direcionado.
    * Se você selecionou Adobe Target como mecanismo de direcionamento, selecione/edite a configuração de nuvem a ser usada para se conectar ao Adobe Target. (Tenha cuidado para não selecionar uma estrutura que você criou para a sua configuração da nuvem).
    * (Opcional) O objetivo ou uma descrição da atividade.
    * Selecione o Tipo de atividade.
-1. Adicione uma ou mais experiências à atividade. Selecionar **Adicionar experiência**.
+1. Adicione uma ou mais experiências à atividade. Selecione **Adicionar experiência**.
 1. Se estiver usando o direcionamento do AEM ou o direcionamento de experiência do Adobe Target:
-   1. Selecionar **Selecionar público-alvo** e selecione o segmento ao qual a sua experiência está direcionado.
-   1. Selecionar **Adicionar experiência**, digite um nome e selecione **OK**.
-   1. Selecionar **Próxima**.
+   1. Selecione **Selecionar público-alvo** e selecione o segmento ao qual a sua experiência está direcionado.
+   1. Selecione **Adicionar experiência**, digite um nome e selecione **OK**.
+   1. Selecione **Próximo**.
 Se estiver usando o teste A/B do Adobe Target:
    1. Selecione o lápis na caixa Públicos-alvo para selecionar um público-alvo.
-   1. Selecionar **Adicionar experiência**, digite um nome e selecione **OK**.
+   1. Selecione **Adicionar experiência**, digite um nome e selecione **OK**.
    1. Insira a porcentagem de tráfego que exibirá cada experiência.
    1. Selecione **Próximo**.
 1. Para especificar quando a atividade será iniciada, use o menu suspenso **Início** para selecionar um dos seguintes valores:
@@ -143,7 +143,7 @@ Para publicar ou desfazer a publicação de atividades:
 
    ![Publicação através do console de atividades](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Para publicar, selecione **Publish**. Para desfazer a publicação, selecione **Cancelar publicação**. Sua atividade ou atividades serão publicadas ou desfarão a publicação, e o status é alterado no console Atividades (pode ser necessário atualizar a página).
+1. Para publicar, selecione **Publish**. Para desfazer a publicação, selecione **Desfazer publicação**. Sua atividade ou atividades serão publicadas ou desfarão a publicação, e o status é alterado no console Atividades (pode ser necessário atualizar a página).
 
 ## Atividades em instâncias de Autor e de Publicação {#activities-on-author-and-publish-instances}
 
@@ -158,13 +158,13 @@ Quando uma atividade que usa o mecanismo direcionado do Adobe Target é ativada,
 
 Para visualizar o desempenho da atividade e converter experiências vencedoras:
 
-1. Entrada **Personalização**, selecione **Atividades** para navegar até o **Atividades** console.
+1. Em **Personalization**, selecione **Atividades** para navegar até o console **Atividades**.
 1. Selecione a marca cujas atividades você deseja ver.
-1. Selecione a atividade e selecione **Propriedades da exibição** e clique no link **Relatórios** e selecione a atividade na qual deseja exibir o desempenho/converter experiências vencedoras. Os dados de desempenho são exibidos.
+1. Selecione a atividade e selecione **Exibir propriedades**, clique na guia **Relatórios** e selecione a atividade na qual deseja exibir o desempenho/converter experiências vencedoras. Os dados de desempenho são exibidos.
 
    ![Verificar o desempenho da atividade](/help/sites-cloud/authoring/assets/activities-performance.png)
 
-1. Selecione o **Selecionar vencedor** link para promover essa experiência como a experiência padrão.
+1. Selecione o link **Selecionar vencedor do push** para promover esta experiência como a experiência padrão.
 
    A conversão do vencedor faz o seguinte:
 
@@ -175,7 +175,7 @@ Para visualizar o desempenho da atividade e converter experiências vencedoras:
 
    Uma experiência vencedora é a aquela que os relatórios indicam que gerou um aumento maior, com base no índice de conversão.
 
-1. Selecionar **Sim** para confirmar que deseja converter o vencedor, desative a experiência atual e substitua-a pelo conteúdo da experiência vencedora.
+1. Selecione **Sim** para confirmar que deseja converter o vencedor, desabilitando a experiência atual e substituindo-a pelo conteúdo da experiência vencedora.
 
 ## Sincronização de atividades com o Adobe Target {#synchronizing-activities-with-adobe-target}
 

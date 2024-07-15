@@ -21,20 +21,20 @@ ht-degree: 6%
 
 Os autores de formulários podem configurar uma página para cada formulário, para a qual os usuários são redirecionados após enviarem um formulário.
 
-1. No modo de edição, selecione um componente e clique em ![nível de campo](assets/select_parent_icon.svg) > **[!UICONTROL Contêiner de formulário adaptável]** e clique em ![cmppr](assets/configure-icon.svg).
+1. No modo de edição, selecione um componente e clique em ![nível do campo](assets/select_parent_icon.svg) > **[!UICONTROL Contêiner de formulário adaptável]** e clique em ![cmppr](assets/configure-icon.svg).
 
 1. Na barra lateral, clique em **[!UICONTROL Envio]**.
 
-1. Forneça o URL da página de redirecionamento em **[!UICONTROL URL/caminho de redirecionamento]** no **[!UICONTROL Envio]** seção.
+1. Forneça a URL da página de redirecionamento em **[!UICONTROL Redirecionar URL/Caminho]** na seção **[!UICONTROL Envio]**.
 1. Como opção, em Enviar ação, para a ação de endpoint Enviar para REST, é possível configurar o parâmetro a ser transmitido para a página de redirecionamento.
 
    ![Redirecionar configuração de página](assets/redirect-url.png)
 
    Redirecionar configuração de página
 
-Os autores de formulário podem usar os seguintes parâmetros que são passados para a página Thank you. Para todas as ações enviar disponíveis, `status` e `owner` parâmetros são transmitidos. Além desses dois parâmetros, alguns parâmetros adicionais são transmitidos para as seguintes Ações de envio:
+Os autores de formulário podem usar os seguintes parâmetros que são passados para a página Thank you. Para todas as Ações de Envio disponíveis, `status` e `owner` parâmetros são passados. Além desses dois parâmetros, alguns parâmetros adicionais são transmitidos para as seguintes Ações de envio:
 
-* **[!UICONTROL Enviar para endpoint REST]**: os parâmetros adicionados para o mapeamento no campo para o parâmetro são transmitidos. `status` e `owner` Os parâmetros do não são transmitidos nesta Ação de envio. Para obter mais informações, consulte [Configuração da ação enviar Enviar para endpoint REST](configuring-submit-actions.md).
+* **[!UICONTROL Enviar para ponto de extremidade REST]**: os parâmetros adicionados para o campo ao mapeamento de parâmetros são passados. Os parâmetros `status` e `owner` não são passados nesta Ação de Envio. Para obter mais informações, consulte [Configurando a Ação de Envio de Enviar para ponto de extremidade REST](configuring-submit-actions.md).
 
 >[!MORELIKETHIS]
 >

@@ -16,7 +16,7 @@ ht-degree: 82%
 
 O console de **Ofertas** será descontinuado no futuro. Então, a partir de agora, é:
 
-* Disponível somente para clientes que têm *legacy* ofertas já definidas (ou seja, pré-existentes)
+* Disponível somente para clientes que têm *ofertas herdadas* já definidas (ou seja, pré-existentes)
 * Recomendado que qualquer oferta herdada seja convertida em ofertas de fragmento de experiência
    * Assim que a última oferta herdada for convertida/removida, o console de **Ofertas** não estará mais disponível.
 
@@ -84,12 +84,12 @@ Especificar o caminho principal do novo fragmento de experiência
 Selecione o modelo a ser usado para criar o fragmento de experiência.
    * **Título do fragmento**
 Especifique o título.
-   * **Tags de fragmento**
+   * **Marcas de fragmento**
 Adicione tags, se necessário.
 
 1. Confirme com **Concluído**.
 
-   Agora, se você navegar até a janela **Ofertas de fragmento de experiência** console, você pode ver seu novo fragmento de experiência, juntamente com suas variações associadas.
+   Agora, ao navegar até o console **Ofertas de Fragmento de Experiência**, você poderá ver seu novo fragmento de experiência, juntamente com suas variações associadas.
 
 ### Direcionamento com o modelo de ofertas {#targeting-offers-template}
 
@@ -129,12 +129,12 @@ Crie uma marca à qual suas ofertas serão associadas. Abra uma marca no console
 
 Ao criar uma marca usando o console Ofertas, ela também aparece no [Console Atividades](/help/sites-cloud/authoring/personalization/activities.md) onde é possível adicionar e administrar as atividades da marca.
 
-1. No console Navegação, selecione **Personalização** > **Ofertas**.
+1. No console Navegação, selecione **Personalization** > **Ofertas**.
 
    ![Navegação até o console Ofertas](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
-1. Selecionar **Criar** e depois **Criar** **Marca**.
-1. Selecione o modelo da marca e selecione **Próxima**.
+1. Selecione **Criar** e depois **Criar** **Marca**.
+1. Selecione o modelo de marca e selecione **Próximo**.
 1. Digite um título para a marca conforme você queira que ele seja exibido nos consoles de Ofertas e Atividades. Também é possível digitar ou selecionar uma ou mais tags para associar à marca.
 1. Selecione **Criar**.
 
@@ -143,7 +143,7 @@ Ao criar uma marca usando o console Ofertas, ela também aparece no [Console Ati
 Adicione uma pasta à biblioteca de ofertas de uma marca para organizar e armazenar ofertas. É possível criar uma pasta abaixo da marca ou abaixo de outras pastas.
 
 1. No console de Ofertas, abra o local em que deseja criar a pasta. Por exemplo, abra a marca para criar uma pasta de nível superior ou abra outra pasta na biblioteca.
-1. Selecionar **Criar** > **Criar pasta ou oferta**.
+1. Selecione **Criar** > **Criar pasta ou oferta**.
 
    ![Criação da pasta de ofertas](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
@@ -161,12 +161,12 @@ Adicione uma oferta à biblioteca de ofertas de uma marca para que ela possa ser
 Após criar a oferta, você pode abri-la para criar o conteúdo.
 
 1. No console Ofertas, abra o local em que deseja criar a oferta. Por exemplo, abra a marca para criar uma oferta de nível superior ou abra uma pasta na biblioteca.
-1. Selecionar **Criar** > **Criar pasta ou oferta**.
+1. Selecione **Criar** > **Criar pasta ou oferta**.
 
    ![Criação da pasta de ofertas](/help/sites-cloud/authoring/assets/offers-create-folder.png)
 
-1. Selecione o **Página de oferta** e selecione **Próxima**.
-1. Digite um título para a oferta e, opcionalmente, selecione ou digite uma ou mais tags para associar à oferta e, em seguida, selecione **Criar**.
+1. Selecione o modelo **Página de Oferta** e selecione **Avançar**.
+1. Digite um título para a oferta e, opcionalmente, selecione ou digite uma ou mais marcas para associar à oferta e, em seguida, selecione **Criar**.
 1. Na caixa de diálogo de confirmação, para abrir a oferta para edição, selecione **Abrir página**.
 
 ### Edição de uma oferta {#editing-an-offer}
@@ -186,7 +186,7 @@ Exclua uma oferta quando ela não for mais necessária. Ao tentar excluir uma of
 
 1. No console Ofertas, selecione o ícone ao lado da oferta e selecione **Excluir**.
 
-   Selecione a oferta e **Excluir**.
+   Selecione a oferta e selecione **Excluir**.
 
 1. Na caixa de diálogo exibida, selecione **Excluir** para confirmar a exclusão.
 1. Se a oferta for usada em uma ou mais experiências, uma caixa de diálogo será exibida para indicar que a oferta é referenciada:

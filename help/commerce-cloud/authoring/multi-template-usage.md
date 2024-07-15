@@ -37,4 +37,4 @@ Você pode encontrar mais informações sobre esse tópico nos seguintes recurso
 
 ## Recursos relacionados {#related}
 
-Também é possível direcionar dinamicamente regiões específicas de uma página e reutilizar o mesmo modelo. Saiba como [enriquecer os dados do produto com o conteúdo de AEM associado](./enrich-product-associated-content.md).
+Também é possível direcionar dinamicamente regiões específicas de uma página e reutilizar o mesmo modelo. Saiba como [enriquecer dados de produtos com conteúdo de AEM associado](./enrich-product-associated-content.md).

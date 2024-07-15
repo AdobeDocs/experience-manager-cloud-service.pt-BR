@@ -23,7 +23,7 @@ Essas operações incluem:
 * Busca de ativos acima do limite definido a partir de uma implantação remota do Experience Manager
 * Implantação de Live Copy
 
-Você pode visualizar o status de trabalhos assíncronos na **[!UICONTROL Operações em segundo plano]** painel em **Navegação global** > **Ferramentas** > **Geral** > **Tarefas**.
+Você pode exibir o status de trabalhos assíncronos no painel **[!UICONTROL Operações em Segundo Plano]** em **Navegação Global** > **Ferramentas** > **Geral** > **Trabalhos**.
 
 >[!NOTE]
 >
@@ -35,11 +35,11 @@ Você pode visualizar o status de trabalhos assíncronos na **[!UICONTROL Opera�
 
 Sempre que o AEM processar uma operação de modo assíncrono, você receberá uma notificação na sua [caixa de entrada](/help/sites-cloud/authoring/inbox.md) e por email (se ativada essa opção).
 
-Para visualizar o status das operações assíncronas em detalhes, navegue até o **[!UICONTROL Operações em segundo plano]** página.
+Para exibir o status das operações assíncronas em detalhes, navegue até a página **[!UICONTROL Operações em Segundo Plano]**.
 
-1. Na interface do Experience Manager, selecione **Navegação global** > **Ferramentas** > **Geral** > **Tarefas**.
+1. Na interface do Experience Manager, selecione **Navegação Global** > **Ferramentas** > **Geral** > **Trabalhos**.
 
-1. No **[!UICONTROL Operações em segundo plano]** verifique os detalhes das operações.
+1. Na página **[!UICONTROL Operações em Segundo Plano]**, analise os detalhes das operações.
 
    ![Status e detalhes de operações assíncronas](assets/async-operation-status.png)
 
@@ -57,7 +57,7 @@ Para visualizar o status das operações assíncronas em detalhes, navegue até 
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Para exibir detalhes adicionais, por exemplo, descrição e logs, selecione a operação e clique em **[!UICONTROL Abertura]** na barra de ferramentas.
+1. Para exibir detalhes adicionais, por exemplo, descrição e logs, selecione a operação e clique em **[!UICONTROL Abrir]** na barra de ferramentas.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -77,7 +77,7 @@ Há várias opções sobre trabalhos assíncronos que podem ser configuradas. Os
 
 >[!NOTE]
 >
->[Configurações do OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) são considerados conteúdo mutável e qualquer uma dessas configurações deve ser implantada como um pacote de conteúdo para um ambiente de produção.
+>[As configurações de OSGi](/help/implementing/deploying/configuring-osgi.md#creating-osgi-configurations) são consideradas conteúdo mutável e quaisquer dessas configurações devem ser implantadas como um pacote de conteúdo para um ambiente de produção.
 
 ### Limpar trabalhos concluídos {#purging-completed-jobs}
 
@@ -85,7 +85,7 @@ O AEM executa um trabalho de limpeza todos os dias à 1h para excluir trabalhos 
 
 Você pode modificar a programação da limpeza e a duração da retenção dos detalhes dos trabalhos concluídos, antes da sua exclusão. Você também pode configurar, a qualquer momento, o número máximo de trabalhos concluídos cujos detalhes serão retidos.
 
-1. Faça logon no console da Web AEM do AEM do SDK do em `https://<host>:<port>/system/console` como o usuário administrador.
+1. Faça logon no console da Web AEM do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
 1. Navegue até **OSGi** > **Configuração**
 1. Abra o **[!UICONTROL Trabalho agendado de limpeza de trabalhos assíncronos no Adobe Granite]**.
 1. Especifique:
@@ -101,7 +101,7 @@ Você pode modificar a programação da limpeza e a duração da retenção dos 
 
 Se o número de ativos ou pastas que serão excluídos exceder o limite, a operação de exclusão será feita de modo assíncrono.
 
-1. Faça logon no console da Web AEM do AEM do SDK do em `https://<host>:<port>/system/console` como o usuário administrador.
+1. Faça logon no console da Web AEM do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
 1. Navegue até **OSGi** > **Configuração**
 1. No console da Web, abra a **[!UICONTROL Configuração da fila padrão de processo assíncrono.]**
 1. Na caixa **[!UICONTROL Limite de ativos]**, especifique o limite de ativos/pastas para o processamento assíncrono de operações de exclusão.
@@ -115,7 +115,7 @@ Se o número de ativos ou pastas que serão excluídos exceder o limite, a opera
 
 Se o número de ativos/pastas ou referências que serão movidos exceder o limite, a operação de movimentação será feita de modo assíncrono.
 
-1. Faça logon no console da Web AEM do AEM do SDK do em `https://<host>:<port>/system/console` como o usuário administrador.
+1. Faça logon no console da Web AEM do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
 1. Navegue até **OSGi** > **Configuração**
 1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação.]**
 1. Na caixa **[!UICONTROL Limite de ativos/referências]**, especifique o limite de ativos/pastas ou referências para o processamento assíncrono de operações de movimentação.
@@ -127,7 +127,7 @@ Se o número de ativos/pastas ou referências que serão movidos exceder o limit
 
 ### Configurar operações assíncronas do MSM {#configuring-asynchronous-msm-operations}
 
-1. Faça logon no console da Web AEM do AEM do SDK do em `https://<host>:<port>/system/console` como o usuário administrador.
+1. Faça logon no console da Web AEM do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
 1. Navegue até **OSGi** > **Configuração**
 1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação de página.]**
 1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Por exemplo, sucesso, falha.
@@ -138,6 +138,6 @@ Se o número de ativos/pastas ou referências que serão movidos exceder o limit
 
 >[!MORELIKETHIS]
 >
->* [Gerenciamento de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+>* [Gerenciando páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md)
 >* [Importar e exportar metadados de ativos em massa](/help/assets/metadata-import-export.md).
 >* [Usar ativos conectados para compartilhar ativos DAM de implantações remotas](/help/assets/use-assets-across-connected-assets-instances.md).

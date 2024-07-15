@@ -194,7 +194,7 @@ Talvez você queira exibir nomes de página localizados para usuários de conte�
 
 O desafio em traduzir o nome da página é que muitas das ferramentas de tradução disponíveis na plataforma do AEM dependem da correspondência dos nomes das páginas entre os locais para manter o conteúdo sincronizado.
 
-A variável `sling:alias` a propriedade permite ter o bolo e comê-lo também. `sling:alias` pode ser adicionado como uma propriedade a qualquer recurso para permitir um nome de alias para o recurso. No exemplo anterior, você teria:
+A propriedade `sling:alias` permite que você também pegue nosso bolo e coma. `sling:alias` pode ser adicionado como uma propriedade a qualquer recurso para permitir um nome de alias para o recurso. No exemplo anterior, você teria:
 
 * Uma página no JCR em:
   `…/es/home`

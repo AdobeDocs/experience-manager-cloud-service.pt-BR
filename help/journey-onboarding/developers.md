@@ -6,15 +6,15 @@ role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
 workflow-type: tm+mt
-source-wordcount: '1411'
-ht-degree: 90%
+source-wordcount: '1397'
+ht-degree: 89%
 
 ---
 
 
 # Tarefas do desenvolvedor e do gerente de implantação {#developer-deployment-manager}
 
-Nesta parte opcional do [integração do jornada,](overview.md) saiba como desenvolvedores e gerentes de implantação podem acessar o git para desenvolver aplicativos e usar pipelines para implantá-los.
+Nesta parte opcional da [jornada de integração](overview.md), você aprenderá como desenvolvedores e gerentes de implantação podem acessar o Git para desenvolver aplicativos e usar pipelines para implantá-los.
 
 ## A história até agora {#story-so-far}
 
@@ -64,7 +64,7 @@ Você pode acessar e gerenciar os repositórios Git usando o gerenciamento de co
 
    ![Botão Acessar informações do repositório no cartão Ambientes](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Clique em **Exibir informações do repositório** botão para abrir uma caixa de diálogo para exibir:
+1. Clique no botão **Exibir informações do repositório** para abrir uma caixa de diálogo para exibir:
 
    * A URL do repositório Git do Cloud Manager.
    * O nome de usuário do Git.
@@ -119,7 +119,7 @@ Agora que os desenvolvedores adicionaram seu código personalizado aos repositó
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. Navegue até a **Pipelines** do **Visão geral do programa** e clique no botão de reticências ao lado do pipeline criado na seção anterior e selecione **Executar** no menu.
+1. Navegue até o cartão **Pipelines** da página **Visão geral do programa** e clique no botão de reticências ao lado do pipeline criado na seção anterior e selecione **Executar** no menu.
 
 1. A execução do pipeline começa e é indicada pela coluna **Status**.
 
@@ -150,6 +150,6 @@ A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo 
 * [Uso do Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) - Saiba como usar os repositórios Git do Cloud Manager e como integrar seu próprio repositório Git local gerenciado pelo cliente com o Cloud Manager.
 * [Configuração do ambiente de desenvolvimento local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=pt-BR) - Esse tutorial aborda a configuração de um ambiente de desenvolvimento local para o Adobe Experience Manager (AEM) usando o SDK do AEM as a Cloud Service.
 * [Introdução ao AEM Sites - Tutorial WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR) - Esse tutorial dividido em várias partes foi projetado para desenvolvedores novos no Adobe Experience Manager (AEM). Esse tutorial aborda a implementação de um site do AEM para uma marca fictícia de estilo de vida, a WKND. O tutorial abrange tópicos fundamentais como configuração de projetos, componentes principais, modelos editáveis, bibliotecas do lado do cliente e desenvolvimento de componentes com o Adobe Experience Manager Sites.
-* [Introdução ao SPA no AEM usando o React](/help/implementing/developing/hybrid/getting-started-react.md) - Este artigo apresenta uma amostra de aplicação de SPA, explica como ela é montada e permite que você comece a usar seu próprio SPA rapidamente usando a estrutura do React.
-* [Introdução ao SPA no AEM usando o Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - Este artigo apresenta uma amostra de aplicativo SPA, explica como ele é montado e permite que você comece a usar seu próprio SPA rapidamente usando a estrutura do Angular.
+* [Introdução ao SPA no AEM Usando o React](/help/implementing/developing/hybrid/getting-started-react.md) - Este artigo apresenta uma amostra do aplicativo SPA, explica como ele é montado e permite que você comece a usar seu próprio SPA rapidamente usando a estrutura do React.
+* [Introdução ao SPA no AEM Usando o Angular](/help/implementing/developing/hybrid/getting-started-angular.md) - Este artigo apresenta uma amostra do aplicativo, explica como ele é montado e permite que você comece a usar o seu próprio SPA SPA rapidamente usando a estrutura do Angular.
 * [Jornada de desenvolvedores sem periféricos](/help/journey-headless/developer/overview.md) - Inicie aqui um curso orientado para o desenvolvimento de aplicativos sem periféricos com o AEM.

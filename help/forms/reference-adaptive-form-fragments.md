@@ -8,8 +8,8 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 source-git-commit: 92f89243b79c6c2377db3ca2b8ea244957416626
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 2%
+source-wordcount: '396'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Fragmento de formulário adaptável é um grupo de campos ou um painel que contém um grupo de campos que você pode usar ao criar um formulário. Ele permite criar um formulário de maneira fácil e rápida. Você pode arrastar e soltar um fragmento de formulário adaptável em um formulário usando o navegador de ativos na barra lateral e editá-lo no editor de formulários.
 
-Para autores do Forms adaptável, os fragmentos de referência são fornecidos na [!DNL AEM Forms] pacote [[!DNL AEM FORMS] FRAGMENTOS DE REFERÊNCIA](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Inclui os seguintes fragmentos:
+Para autores de Forms adaptáveis, os fragmentos de referência são fornecidos no [!DNL AEM Forms] pacote [[!DNL AEM FORMS] FRAGMENTOS DE REFERÊNCIA](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Inclui os seguintes fragmentos:
 
 * Endereço
 * Informações de contato
@@ -31,7 +31,7 @@ Para autores do Forms adaptável, os fragmentos de referência são fornecidos n
 * Termos e condições
 * Termos e condições com assinatura
 
-Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e documentos. Para instalar um pacote, consulte [Implantação de pacotes de conteúdo pelo Cloud Manager e pelo Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) e [Como trabalhar com pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR).
+Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e documentos. Para instalar um pacote, consulte [Implantação de Pacotes de Conteúdo via Cloud Manager e Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) e [Como Trabalhar com Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
 
 ![Todos os fragmentos listados](assets/ootb-frags.png)
 
@@ -58,7 +58,7 @@ Inclui campos para capturar um número de telefone e endereço de email.
 ## Informações de cartão de crédito {#credit-card-information}
 
 Inclui campos para registrar informações de cartão de crédito que podem ser usadas para processar pagamentos.
-[![Fragmento de informações do cartão de crédito](assets/cc-info.png)](assets/cc-info-1.png)
+[![Fragmento de Informações do Cartão de Crédito](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Emprego Atual {#current-employment}
 
@@ -84,7 +84,7 @@ Inclui campos para especificar informações sobre um ou mais dependentes, como 
 
 Inclui campos para capturar o histórico de emprego. Permite adicionar várias organizações.
 
-![Fragmento do Histórico de Emprego](assets/emp-history.png)
+![Fragmento do histórico de emprego](assets/emp-history.png)
 
 <!--[Click to enlarge
 
@@ -114,7 +114,7 @@ Inclui campos para especificar título, nome, nome do meio e sobrenome.
 
 Especifica os termos e condições que os usuários devem aceitar antes de enviar um formulário.
 
-![Fragmento dos Termos e condições](assets/tnc.png)
+![Fragmento dos Termos e Condições](assets/tnc.png)
 
 <!--[Click to enlarge
 

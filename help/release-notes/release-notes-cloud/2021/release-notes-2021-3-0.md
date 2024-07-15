@@ -1,6 +1,6 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.3.0.
-description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.3.0."
+description: "[!DNL Adobe Experience Manager] Notas de Versão as a Cloud Service para 2021.3.0."
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
 feature: Release Information
 role: Admin
@@ -24,12 +24,12 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] O as a Cloud Service 2021.3.0 é 25 de março de 2021.
+A data de lançamento do [!DNL Adobe Experience Manager] as a Cloud Service 2021.3.0 é 25 de março de 2021.
 A versão seguinte (2021.4.0) será lançada em 29 de abril de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* [Uma versão de aplicativo Web progressivo (PWA) de um site](/help/sites-cloud/authoring/sites-console/enable-pwa.md) O agora pode ser ativado no nível do projeto por meio de uma configuração simples.
+* [Uma versão de aplicativo Web progressivo (PWA) de um site](/help/sites-cloud/authoring/sites-console/enable-pwa.md) agora pode ser habilitada no nível do projeto por meio de uma configuração simples.
 * Extensões do modelo de fragmento de conteúdo: agora é possível definir tipos de dados de texto de várias linhas como listas de vários campos.
 * Aprimoramentos de UX do editor de fragmento de conteúdo: fragmentos secundários aninhados agora são exibidos na navegação estrutural e na visualização aprimorada das ações publicar, salvar e salvar e sair
 
@@ -47,10 +47,10 @@ Ability to select a root path. select if a minimum number of tags is required.
 
 Add a Boolean or radio widget type to metadata schema setup. -->
 
-* [!DNL Experience Manager] estende a funcionalidade Ativos conectados para oferecer suporte ao uso de [!DNL Dynamic Media] nos componentes principais compatíveis. Consulte [usar ativos conectados](/help/assets/use-assets-across-connected-assets-instances.md).
+* O [!DNL Experience Manager] estende a funcionalidade Connected Assets para dar suporte ao uso de [!DNL Dynamic Media] imagens nos componentes principais com suporte. Consulte [usar Assets conectado](/help/assets/use-assets-across-connected-assets-instances.md).
 * Os administradores do Experience Manager podem agendar assimilações de ativos em massa em uma data ou hora específica. Além disso, os administradores podem agendar assimilações recorrentes com base em data e hora. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-### Correções de erros no [!DNL Assets] {#bug-fixes-assets}
+### Correções de erros em [!DNL Assets] {#bug-fixes-assets}
 
 * A página de direitos autorais não é exibida ao tentar baixar vários ativos gerenciados por direitos. (CQ-4314403)
 * Ao optar por editar um arquivo INDD, a resolução é alterada inesperadamente. (CQ-4317376)
@@ -58,13 +58,13 @@ Add a Boolean or radio widget type to metadata schema setup. -->
 * O seletor de tags demora para ser aberto quando faz parte de um esquema complexo de metadados. (CQ-4316426)
 * Ao fazer upload de um ativo com o mesmo nome de arquivo de um existente, a caixa de diálogo de conflito de nomes não é exibida para solicitar que o usuário crie uma versão. (CQ-4315424)
 * As Propriedades de metadados da pasta podem ser definidas e salvas no menu pop-up na página Propriedades de uma pasta. Embora a seleção seja salva no repositório, ela não é exibida quando as Propriedades de metadados da pasta são abertas novamente. (CQ-4314429)
-* Ativos com nomes de arquivo contendo espaços ou caracteres especiais são carregados usando o navegador. (CQ-4318381)
+* O Assets com nomes de arquivo contendo espaços ou caracteres especiais é carregado usando o navegador. (CQ-4318381)
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 A AEM Forms tem ajudado muitas organizações a oferecer excelentes experiências de integração e inscrição ao longo dos anos. Essas experiências têm ajudado organizações a converter leads em vendas, processar dados capturados do cliente, fornecer experiências responsivas com base no perfil do público-alvo e muito mais. Agora, o AEM Forms está disponível como um serviço na nuvem.
 
-Você pode usar [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) para criar formulários digitais, conecte formulários a fontes de dados existentes, integre formulários com o Adobe Sign para adicionar assinaturas eletrônicas a formulários e gere o Documento de registro (DoR) para arquivar formulários enviados como arquivos PDF. O serviço também pode converter seus PDF forms existentes em formulários digitais. Além dos recursos padrão do AEM Forms, o serviço oferece vários recursos nativos em nuvem, como dimensionamento automático, tempo de inatividade zero para atualizações e ambiente de desenvolvimento nativo em nuvem.
+Você pode usar o [AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/home.html) para criar formulários digitais, conectar formulários a fontes de dados existentes, integrar formulários com o Adobe Sign para adicionar assinaturas eletrônicas a formulários e gerar o Documento de Registro (DoR) para arquivar formulários enviados como arquivos PDF. O serviço também pode converter seus PDF forms existentes em formulários digitais. Além dos recursos padrão do AEM Forms, o serviço oferece vários recursos nativos em nuvem, como dimensionamento automático, tempo de inatividade zero para atualizações e ambiente de desenvolvimento nativo em nuvem.
 
 Entre em contato com o representante da Adobe para obter uma demonstração ou para cadastrar-se no serviço.
 
@@ -76,7 +76,7 @@ Entre em contato com o representante da Adobe para obter uma demonstração ou p
 
 * O componente de detalhes do produto agora pode ser usado e configurado em qualquer página de conteúdo
 
-* Lançamento do site de referência CIF Venia - 25/03/2021 que inclui a versão mais recente dos componentes principais CIF v1.9.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) para obter mais detalhes.
+* Lançamento do site de referência CIF Venia - 25/03/2021 que inclui a versão mais recente dos componentes principais CIF v1.9.0. Consulte [Site de referência de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.03.25) para obter mais detalhes.
 
 * Lançamento de componentes principais CIF v1.9.0. Consulte [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.9.0) para obter mais detalhes.
 
@@ -92,15 +92,15 @@ A próxima versão está planejada para sexta-feira, 8 de abril de 2021.
 
 ### Novidades {#what-is-new-march}
 
-* Clientes com ambientes com configurações pré-existentes de nomes de domínio personalizados para [LISTAS DE PERMISSÕES IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) e [Nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) veja uma mensagem sobre as configurações existentes anteriormente e possa realizar o autoatendimento por meio da interface do usuário.
+* Clientes com ambientes com configurações pré-existentes de nomes de domínio personalizados para [Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) e [Nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) veem uma mensagem sobre essas configurações pré-existentes e podem usar o autoatendimento por meio da interface do usuário.
 
 * Os usuários com as permissões necessárias agora podem editar um programa, permitindo fazer o seguinte de maneira automatizada:
 
-   * Adicionar a solução Sites a um programa existente com Assets ou vice-versa.
+   * Adicionar a solução Sites a um programa existente com o Assets ou vice-versa.
    * Remover sites ou ativos de um programa existente usando o Sites e o Assets.
    * Adicionar o segundo direito de solução não utilizado a um programa existente ou como um novo programa.
 
-* **Atualização por push do AEM** O rótulo agora será exibido para ambos *Execução de pipeline* e *Atividade* telas.
+* O rótulo **Atualização por push de AEM** agora será exibido para as telas *Execução de pipeline* e *Atividade*.
 
 * Se um ambiente estiver hibernado, mas também houver uma atualização do AEM disponível, o status **Hibernado** terá precedência sobre a **Atualização disponível**.
 
@@ -148,8 +148,8 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.3.0 é 4 d
 
 ### Novidades da Ferramenta de transferência de conteúdo {#what-is-new-ctt-march}
 
-* A CTT agora instala o em `/apps` em vez de `/libs` Os marcadores do navegador para determinadas páginas podem não ser mais válidos.
-* Quando a CTT estiver instalada, o usuário terá que navegar em um nível adicional para chegar à página Transferência de conteúdo. Consulte [Usar a ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) para obter mais detalhes.
+* A CTT agora instala em `/apps` em vez de `/libs` os marcadores do navegador em determinadas páginas podem não ser mais válidos.
+* Quando a CTT estiver instalada, o usuário terá que navegar em um nível adicional para chegar à página Transferência de conteúdo. Consulte [Usando a Ferramenta de Transferência de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html) para obter mais detalhes.
 
 ### Correções de erros {#bug-fixes-ctt-march}
 

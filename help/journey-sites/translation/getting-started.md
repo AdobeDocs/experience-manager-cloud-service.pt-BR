@@ -104,7 +104,7 @@ Para editar uma página:
 
    ![Selecionar uma página para editar](assets/sites-editor-select-page.png)
 
-1. Selecione o **Editar** opção na barra de ferramentas.
+1. Selecione a opção **Editar** na barra de ferramentas.
 1. O editor de sites é aberto com a página selecionada carregada para edição em uma nova guia do navegador.
 1. Passar o mouse sobre o conteúdo ou tocar nele revela seletores de componentes individuais. Os componentes são os blocos de arrastar e soltar que formam a página.
 
@@ -204,7 +204,7 @@ Agora que concluiu esta parte da jornada de tradução do AEM Sites, você deve:
 * Compreender como o AEM armazena conteúdo.
 * Se familiarizar com as ferramentas de tradução do AEM.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento a seguir [Configurar o conector de tradução](configure-connector.md) onde você aprende a conectar o AEM a um serviço de tradução.|
+Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento [Configurar o conector de tradução](configure-connector.md), onde você aprenderá como conectar o AEM a um serviço de tradução.|
 
 ## Recursos adicionais {#additional-resources}
 

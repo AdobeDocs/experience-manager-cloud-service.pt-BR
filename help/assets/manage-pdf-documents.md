@@ -1,6 +1,6 @@
 ---
 title: Gerencie seus documentos do PDF no [!DNL Adobe Experience Manager].
-description: Gerenciar documentos do PDF no [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+description: Gerenciar documentos do PDF em [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
@@ -21,38 +21,38 @@ O visualizador de PDF Document Cloud beneficia o AEM Assets das seguintes maneir
 * [Suporte para Visualização de Várias Páginas para Documentos em Outros Formatos](#multi-format)
 
 > Dica
-> Se não conseguir obter a visualização de várias páginas de um documento PDF carregado anteriormente, selecione o PDF e clique em **![Reprocessar](/help/assets/assets/Reprocess.svg) Reprocessar ativos**.
+> Se você não conseguir obter a visualização de várias páginas de um documento de PDF carregado anteriormente, selecione o PDF e clique em **![Reprocessar](/help/assets/assets/Reprocess.svg) Reprocessar Assets**.
 >
 
 ## Suporte para componentes do visualizador de Document Cloud do PDF {#pdf-doc-cloud}
 
 O visualizador nativo da PDF Doc Cloud tem os seguintes componentes no AEM Assets:
 
-* **Visualizador de PDF usando miniaturas de página** A exibição em miniatura é uma pequena visualização das páginas de um documento do PDF. Usando miniaturas, você pode ir diretamente para a página desejada. Você pode acessar miniaturas do documento de PDF selecionado por meio do ![miniatura](/help/assets/assets/thumbnail.svg) no painel esquerdo.
+* Visualizador de **PDF usando miniaturas de página** O modo de exibição de miniatura é uma pequena visualização das páginas de um documento PDF. Usando miniaturas, você pode ir diretamente para a página desejada. Você pode acessar miniaturas do documento PDF selecionado por meio da ![miniatura](/help/assets/assets/thumbnail.svg) no painel esquerdo.
 
-* **Visualizador de PDF usando marcadores** Marcador é um link direto que direciona você ao conteúdo no documento. Você pode acessar marcadores do documento PDF selecionado por meio do ![marcador](/help/assets/assets/bookmark.svg) no painel esquerdo.
+* O visualizador de **PDF usando marcadores** é um link direto que direciona você ao conteúdo no documento. Você pode acessar marcadores do documento PDF selecionado por meio de ![marcador](/help/assets/assets/bookmark.svg) no painel esquerdo.
 
-* **Pesquisar no PDF** Você pode usar a pesquisa ![pesquisa](/help/assets/assets/Search.svg) para procurar o texto no documento PDF.
+* **Pesquisar em PDF** Você pode usar a pesquisa ![pesquisar](/help/assets/assets/Search.svg) para pesquisar o texto no documento PDF.
 
-* **Página acima/Página abaixo** Usar Página Acima ![Página acima](/help/assets/assets/ArrowUp.svg) ou Page Down ![Página abaixo](/help/assets/assets/ArrowDown.svg) para rolar pelo documento.
+* **Página Acima/Página Abaixo** Use Página Acima ![Página Acima](/help/assets/assets/ArrowUp.svg) ou Página Abaixo ![Página Abaixo](/help/assets/assets/ArrowDown.svg) para rolar pelo documento.
 
-* **Menos zoom/Mais zoom** Usar menos zoom ![Menos zoom](/help/assets/assets/ZoomOut.svg) ou Ampliar ![Mais zoom](/help/assets/assets/ZoomIn.svg) para distribuir o documento.
+* **Menos Zoom/Mais Zoom** Use Menos Zoom ![Menos Zoom](/help/assets/assets/ZoomOut.svg) ou Menos Zoom ![Mais Zoom](/help/assets/assets/ZoomIn.svg) para distribuir o documento.
 
-* **Ajuste da página** Use dimensões de largura ou altura para ajustar o documento de acordo com o tamanho da tela.
+* **Ajuste da Página** Use dimensões de largura ou altura para ajustar o documento de acordo com o tamanho da tela.
 
-* **Encaixar/Desencaixar PDF** Você pode encaixar ou desencaixar os componentes do visualizador de PDF nativo usando essa opção.
+* **Encaixar/Desencaixar PDF** Você pode encaixar ou desencaixar os componentes do visualizador de PDF nativo usando esta opção.
 
 ## Suporte para visualização de várias páginas e anotações para o ativo PDF {#multi-page}
 
 O Adobe Experience Manager Assets permite a visualização do documento PDF com várias páginas. Para visualizar várias páginas de um documento PDF, considere as seguintes etapas:
 
-1. Siga as etapas para [fazer upload de ativos no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
+1. Siga as etapas para [carregar ativos no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Navegue pelo documento PDF que você deseja carregar e visualizar.
 1. Abra o documento.
 1. O visualizador de documentos do PDF é carregado por padrão. Você também pode selecionar representação de PDF no painel de representação.
 1. No menu suspenso Representações, selecione **Todas as representações**.
 
-Também é possível aplicar [anotações](#pdf-annotations) ao documento PDF em uma visualização de várias páginas.
+Você também pode aplicar [anotações](#pdf-annotations) ao documento PDF em uma visualização de várias páginas.
 
 > OBSERVAÇÃO
 > O tamanho máximo de um Ativo que pode ser visualizado é de até 100 MB.
@@ -79,7 +79,7 @@ Veja a seguir as Anotações que podem ser aplicadas a um documento PDF:
             <th> Descrição </th>
         </tr>
         <tr>
-           <td> <img src="/help/assets/assets/Comment.svg"> Comentário </td>
+           <td> Comentário <img src="/help/assets/assets/Comment.svg"> </td>
             <td> Selecione Comentário para expressar uma observação. </td>
         </tr>
         <tr>
@@ -95,7 +95,7 @@ Veja a seguir as Anotações que podem ser aplicadas a um documento PDF:
             <td> Selecione o texto a ser realçado em cores diferentes. </td>
         </tr>
         <tr>
-            <td> <img src="/help/assets/assets/TextUnderline.svg"> Sublinhado de texto </td>
+            <td> Sublinhado de texto <img src="/help/assets/assets/TextUnderline.svg"> </td>
             <td> Selecione o texto que deseja sublinhar. </td>
         </tr>
         <tr>
@@ -103,7 +103,7 @@ Veja a seguir as Anotações que podem ser aplicadas a um documento PDF:
             <td> Selecione o texto que deseja riscar. </td>
         </tr>
         <tr>
-            <td> <img src="/help/assets/assets/Draw.svg"> Desenho </td>
+            <td> Desenho <img src="/help/assets/assets/Draw.svg"> </td>
             <td> Insira uma arte visual no PDF. </td>
         </tr>
         <tr>
@@ -120,10 +120,10 @@ Veja a seguir as Anotações que podem ser aplicadas a um documento PDF:
 
 Além dos documentos PDF, você também pode visualizar várias páginas de documentos em outros tipos de formato. Os tipos de formato de documento compatíveis são TXT, RTF, DOC, DOCX, PPT, PPTX, XLS e XLSX. O Experience Manager Assets converte automaticamente esses formatos de documento em um formato PDF e os disponibiliza para visualização.
 
-![Visualização de várias páginas de documentos em outros formatos](/help/assets/assets/multi-page-other-formats.png)
+![Visualização de Documentos em Outros Formatos em Várias Páginas](/help/assets/assets/multi-page-other-formats.png)
 
 Para a visualização de várias páginas de outros formatos de documento compatíveis, execute as seguintes etapas:
-1. Siga as etapas para [fazer upload de ativos no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
+1. Siga as etapas para [carregar ativos no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Procure o documento que você deseja carregar e visualizar.
 1. Abra o documento.
 1. Selecione PDF na seção estática, no painel esquerdo. O painel direito mostra a pré-visualização de várias páginas de um ativo. Selecione miniatura, no painel esquerdo, para escolher a página que deseja visualizar.
@@ -147,4 +147,4 @@ Para a visualização de várias páginas de outros formatos de documento compat
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

@@ -12,7 +12,7 @@ ht-degree: 85%
 
 ---
 
-# Publicar ativos no Brand Portal {#publish-assets-to-brand-portal}
+# Ativos do Publish para o Brand Portal {#publish-assets-to-brand-portal}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -25,17 +25,17 @@ No entanto, primeiro você deve configurar o AEM Assets com o Brand Portal. Para
 
 Se fizer modificações subsequentes no ativo, pasta ou coleção original no AEM Assets, as alterações não serão refletidas no Brand Portal até que publique novamente no AEM Assets. Esse recurso garante que as alterações de trabalho em andamento não estejam disponíveis no Brand Portal. Somente as alterações aprovadas publicadas por um administrador são disponibilizadas no Brand Portal.
 
-* [Publicar ativos no Brand Portal](#publish-assets-to-bp)
-* [Publicar pastas no Brand Portal](#publish-folders-to-brand-portal)
-* [Publicar coleções no Brand Portal](#publish-collections-to-brand-portal)
+* [Ativos do Publish para o Brand Portal](#publish-assets-to-bp)
+* [Pastas do Publish para o Brand Portal](#publish-folders-to-brand-portal)
+* [Coleções do Publish para o Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
 >A Adobe recomenda uma publicação escalonada, de preferência durante horários que não sejam de pico, para que o autor do AEM não ocupe recursos excessivos.
->Os ativos devem ser publicados em lotes. A recomendação para o tamanho do lote é de 15K.
-> Para [!DNL Experience Manager Assets] as a [!DNL Cloud Service], a taxa de transferência observada nas condições do laboratório é de 1000 ativos por hora. A taxa é observada com um tamanho médio de ativos de 10 MB.
+>O Assets deve ser publicado em lotes. A recomendação para o tamanho do lote é de 15K.
+> Para [!DNL Experience Manager Assets] as a [!DNL Cloud Service], a taxa de transferência observada em condições de laboratório é de 1000 ativos por hora. A taxa é observada com um tamanho médio de ativos de 10 MB.
 
-## Publicar ativos no Brand Portal {#publish-assets-to-bp}
+## Ativos do Publish para o Brand Portal {#publish-assets-to-bp}
 
 Veja a seguir as etapas para publicar ativos do AEM Assets no Brand Portal:
 
@@ -47,7 +47,7 @@ Veja a seguir as etapas para publicar ativos do AEM Assets no Brand Portal:
    * [Publicar agora](#publish-to-bp-now) (Publicar ativos imediatamente)
    * [Publicar mais tarde](#publish-to-bp-later) (agendar a publicação de ativos)
 
-### Publicar ativos agora {#publish-to-bp-now}
+### Ativos do Publish agora {#publish-to-bp-now}
 
 Para publicar os ativos selecionados no Brand Portal, siga um dos procedimentos a seguir:
 
@@ -65,7 +65,7 @@ Para publicar os ativos selecionados no Brand Portal, siga um dos procedimentos 
 
 Será exibida uma mensagem informando que os ativos foram enfileirados para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver os ativos publicados.
 
-### Publicar ativos mais tarde {#publish-to-bp-later}
+### Ativos do Publish mais tarde {#publish-to-bp-later}
 
 Para agendar a publicação dos ativos no Brand Portal para uma data ou hora posterior:
 
@@ -100,11 +100,11 @@ Para agendar a publicação dos ativos no Brand Portal para uma data ou hora pos
 >`/content : jcr:read, crx:replicate`
 >`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## Publicar pastas no Brand Portal {#publish-folders-to-brand-portal}
+## Pastas do Publish para o Brand Portal {#publish-folders-to-brand-portal}
 
 Você pode publicar ou cancelar a publicação de pastas de ativos imediatamente ou agendar para uma data ou hora posterior.
 
-### Publicar pastas no Brand Portal {#publish-folders-to-bp}
+### Pastas do Publish para o Brand Portal {#publish-folders-to-bp}
 
 1. No console Assets, selecione as pastas que deseja publicar e clique na opção **[!UICONTROL Publicação rápida]** na barra de ferramentas.
 
@@ -130,7 +130,7 @@ Você pode publicar ou cancelar a publicação de pastas de ativos imediatamente
 
    Será exibida uma mensagem informando que a pasta foi colocada na fila para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver a pasta publicada.
 
-1. **Publicar pastas mais tarde**
+1. **pastas do Publish mais tarde**
 Para agendar a publicação das pastas de ativos para uma data ou hora posterior:
 
    1. Selecione as pastas que deseja agendar a publicação e selecione **[!UICONTROL Gerenciar publicação]** na barra de ferramentas na parte superior.
@@ -142,7 +142,7 @@ Para agendar a publicação das pastas de ativos para uma data ou hora posterior
 
       <!--![publishlaterbp](assets/publishlaterbp.png)-->
 
-   ![publicar pasta mais tarde](assets/publish-later-folder.png)
+   ![publicar mais tarde a pasta](assets/publish-later-folder.png)
 
    1. Confirme sua seleção no **[!UICONTROL Escopo]**. Clique em **[!UICONTROL Avançar]**.
 
@@ -158,7 +158,7 @@ Para agendar a publicação das pastas de ativos para uma data ou hora posterior
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
-1. Alternar para exibição de lista ![Exibição de lista](assets/list-view.svg) para ver o status de publicação atual do ativo.
+1. Alterne para o Modo de exibição de lista ![Modo de exibição de lista](assets/list-view.svg) para ver o status de publicação atual do ativo.
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
@@ -210,7 +210,7 @@ Para cancelar a publicação de pastas de ativos do Brand Portal:
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## Publicar coleções no Brand Portal {#publish-collections-to-brand-portal}
+## Coleções do Publish para o Brand Portal {#publish-collections-to-brand-portal}
 
 Você pode publicar ou cancelar a publicação de coleções da instância da nuvem do AEM Assets.
 
@@ -220,7 +220,7 @@ Você pode publicar ou cancelar a publicação de coleções da instância da nu
 >
 >Se as coleções que contêm fragmentos de conteúdo forem publicadas do AEM Assets no Brand Portal, todo o conteúdo da pasta, exceto fragmentos de conteúdo, será replicado para a interface do Brand Portal.
 
-### Publicar coleções {#publish-collections}
+### coleções do Publish {#publish-collections}
 
 Veja a seguir as etapas para publicar coleções do AEM Assets no Brand Portal:
 
@@ -291,4 +291,4 @@ Consulte a [documentação do Brand Portal](https://experienceleague.adobe.com/d
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

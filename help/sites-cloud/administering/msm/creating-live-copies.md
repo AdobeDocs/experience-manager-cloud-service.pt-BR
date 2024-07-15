@@ -111,11 +111,11 @@ Para criar uma Live Copy:
 
    ![Criar Live Copy](../assets/create-live-copy.png)
 
-1. Selecione a página de origem e **Próxima**. Por exemplo:
+1. Selecione a página de origem e depois selecione **Próximo**. Por exemplo:
 
    ![Selecionar a origem da Live Copy](../assets/live-copy-from.png)
 
-1. Especifique o caminho de destino da Live Copy (abra a pasta/página principal da Live Copy) e selecione **Próxima**.
+1. Especifique o caminho de destino da Live Copy (abra a pasta/página principal da Live Copy) e selecione **Avançar**.
 
    ![Selecionar destino da Live Copy](../assets/live-copy-to.png)
 
@@ -170,9 +170,9 @@ Para criar uma Live Copy de um site a partir de uma configuração de blueprint:
 
    ![Criar site a partir de blueprint](../assets/create-site-from-blueprint.png)
 
-1. Use o **Idiomas iniciais** seletor para especificar os idiomas do site do blueprint a serem usados na Live Copy.
+1. Use o seletor **Idiomas iniciais** para especificar os idiomas do site do blueprint a serem usados na Live Copy.
 
-   Todos os idiomas disponíveis estão selecionados por padrão. Para remover um idioma, selecione a **X** que aparece ao lado do idioma.
+   Todos os idiomas disponíveis estão selecionados por padrão. Para remover um idioma, selecione o **X** que aparece ao lado do idioma.
 
    Por exemplo:
 
@@ -306,7 +306,7 @@ Sincronize uma Live Copy para extrair as alterações da origem para a Live Copy
 
 1. No console **Sites**, selecione a página da Live Copy e abra as propriedades.
 1. Abra a guia **Live Copy**.
-1. Selecionar **Sincronizar**.
+1. Selecione **Sincronizar**.
 
    ![Botão Sincronizar](../assets/synchronize.png)
 
@@ -464,7 +464,7 @@ Para especificar ou alterar a profundidade:
    >
    >Consulte [Live Copies — Composição](overview.md#live-copies-composition) para obter mais informações.
 
-1. Selecionar **Salvar** para continuar com suas atualizações.
+1. Selecione **Salvar** para manter suas atualizações.
 
 ### Cancelar herança de um Componente {#cancelling-inheritance-for-a-component}
 
@@ -480,7 +480,7 @@ Cancelar a herança para alterar o conteúdo do componente ou excluir o componen
 
    ![Herança na barra de ferramentas do componente](../assets/inheritance-toolbar.png)
 
-1. Na barra de ferramentas do componente, selecione a **Cancelar herança** ícone.
+1. Na barra de ferramentas do componente, selecione o ícone **Cancelar herança**.
 
    ![Ícone Cancelar herança](../assets/cancel-inheritance-icon.png)
 
@@ -490,7 +490,7 @@ Cancelar a herança para alterar o conteúdo do componente ou excluir o componen
 
 ### Ativar novamente a herança de um componente {#re-enabling-inheritance-for-a-component}
 
-Para habilitar a herança de um componente, selecione o **Reativar herança** ícone na barra de ferramentas do componente.
+Para habilitar a herança de um componente, selecione o ícone **Reabilitar herança** na barra de ferramentas do componente.
 
 ![Ícone Reativar herança](../assets/re-enable-inheritance-icon.png)
 
@@ -535,11 +535,11 @@ Posteriormente, você pode reativar a herança de uma propriedade, se necessári
 
    ![Botão Cancelar herança](../assets/cancel-inheritance-button.png)
 
-1. No **Cancelar herança** caixa de diálogo de confirmação, selecione **Sim**.
+1. Na caixa de diálogo de confirmação **Cancelar Herança**, selecione **Sim**.
 
 ### Reverter propriedades de uma página Live Copy {#revert-properties-of-a-live-copy-page}
 
-Para habilitar a herança de uma propriedade, selecione a variável **Reverter herança** ícone que aparece ao lado da propriedade.
+Para habilitar a herança de uma propriedade, selecione o ícone **Reverter herança** que aparece ao lado da propriedade.
 
 ![Botão Reverter herança](../assets/revert-inheritance-button.png)
 

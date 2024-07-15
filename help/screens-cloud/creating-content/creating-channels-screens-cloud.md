@@ -14,15 +14,15 @@ ht-degree: 1%
 # Criação e gerenciamento de um canal no Screens as a Cloud Service {#creating-channels-screens-cloud}
 
 Depois de criar um projeto do AEM Screens, você deve criar canais.
-***Canais***, exibem uma sequência de conteúdo (imagens e vídeos), um site ou um aplicativo de página única.
+***Canais***, exiba uma sequência de conteúdo (imagens e vídeos), um site ou um aplicativo de página única.
 
 ## Objetivo {#objective}
 
 Este documento ajuda você a entender a criação e o gerenciamento de canais para o seu projeto do AEM Screens no Provedor de conteúdo do Screens. Depois de ler, você deverá:
 
-* entender como criar canais para o provedor de conteúdo do Screens
+* entender como criar canais para o Provedor de conteúdo do Screens
 * gerencie e edite o conteúdo em seus canais
-* gerencie a programação de atribuição e ativação para seus canais no [Provedor de serviços do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
+* gerencie a atribuição e o agendamento de ativação para seus canais no [Provedor de Serviços Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en)
 
 ## Etapas para criar um novo canal de sequência no Screens as a Cloud Service {#create-new-channel}
 
@@ -36,22 +36,22 @@ Siga as etapas abaixo para criar um canal de sequência no Screens as a Cloud Se
 
 1. Navegue até o projeto do AEM Screens, como *FirstDigitalExperience*.
 
-1. Selecione o **Canais** pasta do seu projeto, como **FirstDigitalExperience** —> **Canais** e clique em **Criar** na barra de ações.
+1. Selecione a pasta **Canais** do seu projeto, como **FirstDigitalExperience** —> **Canais** e clique em **Criar** na barra de ações.
 
    ![channel-create1](/help/screens-cloud/assets/create-content/channel-create1.png)
 
-1. Selecione o modelo, como, **Canal de sequência** do **Criar** e clique em **Próxima**.
+1. Selecione o modelo, como, **Canal de sequência** no assistente **Criar** e clique em **Avançar**.
 
    ![channel-create2](/help/screens-cloud/assets/create-content/channel-create2.png)
 
    >[!NOTE]
-   > A variável **Criar** O assistente fornece diferentes tipos de modelos ao criar um canal. Consulte [Modelos disponíveis](#available-templates) em Criar assistente para obter mais detalhes.
+   > O assistente **Criar** fornece diferentes tipos de modelos ao criar um canal. Consulte [Modelos Disponíveis](#available-templates) no Assistente de Criação para obter mais detalhes.
 
-1. Insira o nome do canal de sequência, como, **LoopingChannelOne** e clique em **Criar**.
+1. Insira o nome do canal de sequência, como **LoopingChannelOne** e clique em **Criar**.
 
    ![channel-create3](/help/screens-cloud/assets/create-content/channel-create3.png)
 
-   Agora você verá uma **LoopingChannelOne** na pasta Canais do projeto do AEM Screens.
+   Você verá agora um **LoopingChannelOne** na pasta Canais do projeto AEM Screens.
 
    Depois de criar o canal, você pode adicionar conteúdo ao seu canal. Consulte [Adicionar conteúdo a um canal](#add-content) para saber como adicionar ativos (imagens/vídeos) ao seu canal.
 
@@ -69,21 +69,21 @@ Para adicionar ou editar conteúdo em um canal, siga as etapas abaixo:
 
 1. Selecione o canal que deseja editar, conforme mostrado na figura abaixo. Clique em **Editar** no canto superior esquerdo da barra de ações para abrir o editor.
 
-   ![edit-channel1](/help/screens-cloud/assets/create-content/edit-channel1.png)
+   ![editar-canal1](/help/screens-cloud/assets/create-content/edit-channel1.png)
 
 1. O editor permite adicionar ativos/componentes ao canal que você deseja publicar.
 
 1. Arraste e solte os ativos do painel do lado esquerdo e adicione-os ao editor.
 
-   ![edit-channel2](/help/screens-cloud/assets/create-content/edit-channel2.png)
+   ![editar-canal2](/help/screens-cloud/assets/create-content/edit-channel2.png)
 
    >[!NOTE]
    >Clique em **Visualizar** para visualizar o conteúdo do seu canal.
-   >![edit-channel preview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
+   >![edit-channelpreview](/help/screens-cloud/assets/create-content/edit-channelpreview.png)
 
 ## Modelos disponíveis no Assistente de criação {#available-templates}
 
-Os seguintes modelos estão disponíveis ao usar o **Criar** assistente de canal:
+Os seguintes modelos estão disponíveis durante o uso do assistente de canal **Criar**:
 
 | Modelos disponíveis | Descrição |
 |--- |--- |
@@ -95,12 +95,12 @@ Os seguintes modelos estão disponíveis ao usar o **Criar** assistente de canal
 
 Esse recurso permite definir um agendamento de ativação padrão para um canal e usá-lo por padrão para cada atribuição de uma exibição. Isso fornece um método para que a complicada definição de agendamento não precise ser repetida.
 
-1. Navegue até o provedor de serviços do Screens a partir de [aqui](https://experience.adobe.com/screens).
+1. Navegue até o Provedor de Serviços Screens [aqui](https://experience.adobe.com/screens).
 
 ### Criar detalhes de atribuição padrão para um canal {#create-default}
 
 1. Navegue até a página de detalhes do canal que deseja configurar.
-1. Localize o **Detalhes da atribuição padrão** bloco na página.
+1. Localize o bloco **Detalhes da atribuição padrão** na página.
 
    ![imagem](/help/screens-cloud/assets/display/Assignment1.png)
 
@@ -109,7 +109,7 @@ Esse recurso permite definir um agendamento de ativação padrão para um canal 
 
    ![imagem](/help/screens-cloud/assets/display/Assignments2.png)
 
-1. Observe que os detalhes da atribuição são mostrados na **Detalhes da atribuição padrão** bloco:
+1. Observe que os detalhes da atribuição são mostrados no bloco **Detalhes da atribuição padrão**:
 
    ![imagem](/help/screens-cloud/assets/display/Assignments3.png)
 
@@ -122,8 +122,8 @@ Esse bloco exibe as seguintes informações:
 
 Os canais com detalhes de atribuição padrão podem ser atribuídos a exibições da mesma forma que os canais normais, com a opção adicionada de usar os detalhes de atribuição padrão em vez de definir manualmente os personalizados a cada vez.
 
-1. Navegue até a página de detalhes de exibição à qual deseja atribuir o canal e clique no **Atribuir canal**.
-como alternativa, selecione a exibição desejada no [inventário](https://experience.adobe.com/screens/displays) e clique no link **Atribuir canal**.
+1. Navegue até a página de detalhes de exibição à qual deseja atribuir o canal e clique em **Atribuir canal**.
+como alternativa, selecione a exibição desejada na exibição [inventário](https://experience.adobe.com/screens/displays) e clique em **Atribuir canal**.
 1. A caixa de diálogo de atribuição de canal é aberta.
 
    ![imagem](/help/screens-cloud/assets/display/Assignments4.png)
@@ -137,7 +137,7 @@ como alternativa, selecione a exibição desejada no [inventário](https://exper
 
    ![imagem](/help/screens-cloud/assets/display/Assignments6.png)
 
-1. Observe a **Canais atribuídos** o bloco é atualizado com a nova atribuição:
+1. Observe que o bloco **Canais atribuídos** foi atualizado com a nova atribuição:
 
    ![imagem](/help/screens-cloud/assets/display/Assignments7.png)
 
@@ -146,37 +146,37 @@ como alternativa, selecione a exibição desejada no [inventário](https://exper
 
    ![imagem](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Nota:** Uma atribuição de canal que usa os detalhes de atribuição padrão não será editável no contexto da exibição.
+**Observação:** uma atribuição de canal que usa os detalhes de atribuição padrão não será editável no contexto da exibição.
 
-* Se precisar alterá-la para uma atribuição personalizada, primeiro remova-a e depois adicione-a novamente usando o **Definir detalhes da atribuição personalizada** opção.
+* Se você precisar alterá-la para uma atribuição personalizada, primeiro remova-a e depois adicione-a novamente usando a opção **Definir detalhes de atribuição personalizada**.
 * Se precisar alterar as propriedades dos detalhes da atribuição padrão, faça isso diretamente na página de detalhes do canal.
 
 ### Remover detalhes de atribuição padrão de um canal {#remove-display}
 
 1. Navegue até a página de detalhes do canal para o qual deseja remover os detalhes da atribuição padrão.
-1. Localize o **Detalhes da atribuição padrão** bloco na página
+1. Localize o bloco **Detalhes da atribuição padrão** na página
 1. Clique em **Remover padrão**.
 
    ![imagem](/help/screens-cloud/assets/display/Assignments9.png)
 
 1. Uma caixa de diálogo de confirmação é exibida e os detalhes correspondem a uma das seguintes condições:
-   **a)** O canal não é usado em nenhuma exibição.
+   O canal **a.** não é usado em nenhuma exibição.
 
    ![imagem](/help/screens-cloud/assets/display/Assignments10.png)
 
-**b)** O canal é usado em uma única exibição.
+**b.** Canal usado em uma única exibição.
 
 ![imagem](/help/screens-cloud/assets/display/Assignment11.png)
 
-**c)** O canal é usado em várias exibições.
+**c.** Canal usado em várias exibições.
 
 ![imagem](/help/screens-cloud/assets/display/Assignments12.png)
 
 1. Clique em *Remover* para validar a alteração.
 
-**Nota:** Remover os detalhes de atribuição padrão de um canal removerá as atribuições correspondentes em todas as exibições que os estavam usando.
+**Observação:** a remoção dos detalhes de atribuição padrão de um canal removerá as atribuições correspondentes em todas as exibições que estavam usando esse canal.
 Como consequência, isso pode resultar em telas em branco se não houver nenhum conteúdo alternativo a ser reproduzido nessas exibições.
 
 ## O que vem a seguir {#whats-next}
 
-Agora, que você configurou um canal do AEM Screens em seu projeto, é necessário publicar seu canal. Consulte [Publicação de canais no Screens as a Cloud Service](manage-publish.md) antes de gerenciar seus reprodutores do provedor de serviços do Screens.
+Agora, que você configurou um canal do AEM Screens em seu projeto, é necessário publicar seu canal. Consulte [Canais de publicação no Screens as a Cloud Service](manage-publish.md) antes de gerenciar seus players do Provedor de serviços da Screens.

@@ -21,7 +21,7 @@ A Fase de implementação inclui:
 * [Transferência de conteúdo](#content-transfer)
 
 
-Clique no cartão do projeto para abrir a landing page do projeto e navegar até a **Implementação** conforme mostrado na figura a seguir.
+Clique no cartão do projeto para abrir a página de aterrissagem do projeto e navegue até a seção **Implementação**, conforme mostrado na figura a seguir.
 
 ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
@@ -35,7 +35,7 @@ O cartão Desenvolvimento local fornece todo o conteúdo relevante que pode ajud
 
 Siga esta seção para explorar o cartão de atividade de Desenvolvimento local:
 
-1. Clique em **Exibir** do **Desenvolvimento local** cartão.
+1. Clique em **Exibir** do cartão **Desenvolvimento Local**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
@@ -50,7 +50,7 @@ O cartão de atividade de Refatoração de código fornece todas as informaçõe
 
 Siga esta seção para explorar o cartão de atividade de Refatoração de código:
 
-1. Clique em **Revisão** do **Refatoração do código** Cartão de atividade.
+1. Clique em **Revisar** no cartão de atividade **Refatoração de código**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
@@ -65,22 +65,22 @@ Siga esta seção para explorar o cartão de atividade de Refatoração de códi
 >[!NOTE]
 >Revise o conteúdo nessas guias para entender algumas áreas adicionais que não são cobertas pelo Analisador de práticas recomendadas.
 
-A variável **Dispatcher** A guia fornece informações sobre como estruturar as configurações do AEM as a Cloud Service Apache e Dispatcher e como validá-lo e executá-lo localmente antes de implantar em ambientes da nuvem. Também descreve a depuração em ambientes na nuvem.
+A guia **Dispatcher** fornece informações sobre como estruturar as configurações do AEM as a Cloud Service Apache e do Dispatcher e como validá-lo e executá-lo localmente antes de implantá-lo em ambientes de Nuvem. Também descreve a depuração em ambientes na nuvem.
 
 ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
-A variável **Testes** A guia fornece informações sobre testes funcionais, Auditoria de experiência e interface do usuário.
+A guia **Testes** fornece informações sobre testes funcionais, de Auditoria de Experiência e de Interface do Usuário.
 
 ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
-## Uso da placa de implantação as a Cloud Service do AEM {#aem-as-a-cloud-service-deployment}
+## Usar o cartão de implantação do AEM as a Cloud Service {#aem-as-a-cloud-service-deployment}
 
-O cartão Implantação as a Cloud Service do AEM fornece todo o conteúdo relevante que ajuda a implantar seu código no AEM as a Cloud Service.
+O cartão Implantação do AEM as a Cloud Service fornece todo o conteúdo relevante que ajuda a implantar seu código no AEM as a Cloud Service.
 
-Siga esta seção para explorar o cartão de atividade Cartão de implantação as a Cloud Service AEM:
+Siga esta seção para explorar o cartão de atividade Cartão de implantação do AEM as a Cloud Service:
 
-1. Clique em **Exibir** do **Implantação as a Cloud Service do AEM** Cartão de atividade.
+1. Clique em **Exibir** no cartão de atividade **Implantação do AEM as a Cloud Service**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
@@ -95,7 +95,7 @@ O cartão Transferência de conteúdo permite iniciar e gerenciar a transferênc
 
 Siga esta seção para explorar o cartão de atividade Transferência de conteúdo:
 
-1. Clique em **Revisão** do **Transferência de conteúdo** Cartão de atividade.
+1. Clique em **Revisar** no cartão de atividade **Transferência de conteúdo**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-1.png)
 
@@ -104,14 +104,14 @@ Siga esta seção para explorar o cartão de atividade Transferência de conteú
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-2.png)
 
    >[!NOTE]
-   >Um conjunto de migração expira após um período prolongado de inatividade. Consulte [Expiração do conjunto de migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obter detalhes.
+   >Um conjunto de migração expira após um período prolongado de inatividade. Consulte [Expiração do Conjunto de Migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obter detalhes.
 
    >[!NOTE]
-   >Consulte [pré-requisitos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=pt-BR) e a variável [práticas recomendadas e diretrizes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=pt-BR) antes de usar a ferramenta Transferência de conteúdo.
+   >Consulte os [pré-requisitos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=pt-BR) e as [práticas recomendadas e diretrizes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=pt-BR) antes de usar a Ferramenta de transferência de conteúdo.
 
-1. Baixe e instale a ferramenta Transferência de conteúdo para preencher o conjunto de migração e concluir a fase de Extração da transferência de conteúdo. Revisão [Introdução à ferramenta Transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=pt-BR) para saber como usar a ferramenta Transferência de conteúdo.
+1. Baixe e instale a ferramenta Transferência de conteúdo para preencher o conjunto de migração e concluir a fase de Extração da transferência de conteúdo. Revise [Introdução à ferramenta de transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=pt-BR) para saber como usar a ferramenta de transferência de conteúdo.
 
-1. Para assimilar conteúdo do conjunto de migração em um ambiente no AEM as a Cloud Service, você deve iniciar uma assimilação. Navegue até **Tarefas de assimilação** e clique em **Nova assimilação**. Revisão [Assimilar conteúdo no Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) assim, você pode aprender a concluir a fase de assimilação da transferência de conteúdo.
+1. Para assimilar conteúdo do conjunto de migração em um ambiente no AEM as a Cloud Service, você deve iniciar uma assimilação. Navegue até **Trabalhos de assimilação** e clique em **Nova assimilação**. Revise [Assimilar conteúdo no Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) para que você possa aprender a concluir a fase de Assimilação da transferência de conteúdo.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/contenttransfer-3.png)
 
@@ -130,4 +130,4 @@ You can also estimate the size of specific repository paths by using the `path` 
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como fazer logon no Cloud Acceleration Manager e usar a fase de implementação, você estará pronto para passar a revisar a próxima etapa da [Fase Go Live](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).
+Depois de saber como fazer logon no Cloud Acceleration Manager e usar a fase de Implementação, você estará pronto para revisar a próxima etapa da [Fase de ativação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-golive-phase.html).

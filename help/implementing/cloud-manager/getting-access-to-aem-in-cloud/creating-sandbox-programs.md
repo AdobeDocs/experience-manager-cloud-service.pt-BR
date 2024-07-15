@@ -22,7 +22,7 @@ Saiba mais sobre os tipos de programas no documento [Noções sobre programas e 
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique em **Adicionar programa** próximo ao canto superior direito da tela.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique em **Adicionar Programa** próximo ao canto superior direito da tela.
 
    ![Página de destino do Cloud Manager](assets/log-in.png)
 
@@ -30,11 +30,11 @@ Saiba mais sobre os tipos de programas no documento [Noções sobre programas e 
 
    ![Criação de tipo de programa](assets/create-sandbox.png)
 
-1. Opcionalmente, é possível adicionar uma imagem ao programa arrastando e soltando um arquivo de imagem no destino **Adicionar uma imagem de programa** ou clicando para selecionar uma imagem de um navegador de arquivos. Selecionar **Continuar**.
+1. Opcionalmente, é possível adicionar uma imagem ao programa arrastando e soltando um arquivo de imagem no destino **Adicionar uma imagem de programa** ou clicando para selecionar uma imagem de um navegador de arquivos. Selecione **Continuar**.
 
    * A imagem serve apenas como o bloco na janela de visão geral do programa e ajuda a identificar o programa.
 
-1. No **Configurar sua sandbox** escolha quais soluções você deseja ativar no programa de sandbox, marcando as opções na caixa de diálogo **Soluções e complementos** tabela.
+1. Na caixa de diálogo **Configurar sandbox**, escolha quais soluções você deseja habilitar em seu programa de sandbox, marcando as opções na tabela **Soluções e complementos**.
 
    * Use as divisas ao lado dos nomes das soluções para ver complementos adicionais e opcionais para as soluções.
 
@@ -74,4 +74,4 @@ Você pode visualizar os detalhes da configuração da sandbox, bem como acessar
 
 >[!TIP]
 >
->Consulte o documento [Navegação na interface do usuário do Cloud Manager](/help/implementing/cloud-manager/navigation.md) para obter detalhes sobre como navegar no Cloud Manager e entender o **Meus programas** console.
+>Consulte o documento [Navegando na Interface do Usuário do Cloud Manager](/help/implementing/cloud-manager/navigation.md) para obter detalhes sobre como navegar no Cloud Manager e entender o console **Meus Programas**.

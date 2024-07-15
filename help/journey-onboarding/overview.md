@@ -19,7 +19,7 @@ Parabéns por escolher o AEM as a Cloud Service! Este documento é o seu ponto d
 
 ## Introdução {#introduction}
 
-O Adobe Experience Manager é um conjunto eficiente de serviços de conteúdo de composição que fornecem rapidamente experiências personalizadas e altamente impactantes em qualquer canal, desbloqueando conteúdo para todos. **Edge Delivery Services** O é a mais recente inovação do Adobe Experience Manager, que permite velocidade extrema do conteúdo e fornece experiências excepcionais. Saiba como começar a usar os Edge Delivery Services, acessando [esta página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Para entender como usar os Edge Delivery Services, consulte [Tutorial do desenvolvedor](https://www.hlx.live/developer/tutorial) página.
+O Adobe Experience Manager é um conjunto eficiente de serviços de conteúdo de composição que fornecem rapidamente experiências personalizadas e altamente impactantes em qualquer canal, desbloqueando conteúdo para todos. **Edge Delivery Services** é a mais recente inovação do Adobe Experience Manager, que permite uma velocidade de conteúdo extrema e oferece experiências excepcionais. Saiba como começar a usar o Edge Delivery Services, acessando [esta página](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/edge-delivery/overview.html). Para entender como usar o Edge Delivery Services, consulte a página [Tutorial do desenvolvedor](https://www.hlx.live/developer/tutorial).
 
 A integração é o processo durante o qual um administrador de sistema designado configura o AEM as a Cloud Service para sua organização. O processo inclui o provisionamento inicial de recursos da nuvem e a atribuição de usuários a funções com base em suas responsabilidades de trabalho. Como resultado, cada membro pode fazer logon e acessar os recursos do AEM as a Cloud Service.
 
@@ -105,4 +105,4 @@ Se quiser saber a recomendação da Adobe sobre como integrar sua equipe no novo
 
 A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
 
-* [Integração com o AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - Este vídeo apresenta uma visão geral do processo de integração do Cloud Service para o AEM.
+* [Integração com o AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/onboarding.html) - Este breve vídeo fornece uma visão geral do processo de integração do Cloud Service para o AEM.

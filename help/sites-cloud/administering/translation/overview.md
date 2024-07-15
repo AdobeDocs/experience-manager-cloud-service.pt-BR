@@ -36,7 +36,7 @@ Se o seu provedor de serviços de tradução não fornecer um conector para inte
 
 >[!NOTE]
 >
->Seu usuário deve ser membro do `project-administrators` grupo para usar os recursos de Cópia de idioma.
+>Seu usuário deve ser membro do grupo `project-administrators` para usar os recursos de Cópia de idioma.
 
 ## Práticas recomendadas     {#best-practices}
 

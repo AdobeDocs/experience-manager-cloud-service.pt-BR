@@ -17,7 +17,7 @@ A Importação em massa na visualização do AEM Assets fornece a capacidade de 
 
 >[!NOTE]
 >
->O importador de itens em massa de exibição do Assets usa o mesmo back-end do importador em massa de exibição do administrador. No entanto, ele oferece mais fontes de dados para importar do e uma experiência do usuário mais simplificada.
+>O importador em massa de visualização do Assets usa o mesmo back-end do importador em massa de visualização do administrador. No entanto, ele oferece mais fontes de dados para importar do e uma experiência do usuário mais simplificada.
 
 É possível importar ativos das seguintes fontes de dados:
 
@@ -155,7 +155,7 @@ Ao importar ativos ou pastas em massa, o [!DNL Experience Manager Assets] import
 
 Durante a importação em massa, o [!DNL Experience Manager] procura pelas pastas existentes para evitar a reimportação de ativos e pastas e também verifica as regras de limpeza aplicadas na pasta principal onde a importação ocorre. Se as regras de limpeza forem aplicadas na pasta principal, as mesmas regras serão aplicadas à fonte de importação. Para novas importações, as seguintes regras de limpeza são aplicadas para gerenciar os nomes de arquivo de ativos e pastas.
 
-Para obter mais informações sobre nomes não permitidos, tratamento de nomes de ativos e tratamento de nomes de pastas durante a importação em massa, consulte [Manipulação de nomes de arquivo durante a importação em massa na exibição de Administração](add-assets.md##filename-handling-bulkimport).
+Para obter mais informações sobre nomes não permitidos, tratamento de nomes de ativos e tratamento de nomes de pastas durante a importação em massa, consulte [Tratamento de nomes de arquivos durante a importação em massa no modo de exibição de Administração](add-assets.md##filename-handling-bulkimport).
 
 ## Exibir configurações de importação em massa já existentes {#view-import-configuration}
 
@@ -214,6 +214,6 @@ Clique no ![Ícone mais](assets/do-not-localize/more-icon.svg) correspondente ao
 
 Para exibir o local de destino no Assets onde os ativos são importados após a execução das tarefas de importação em massa, clique no ![Ícone de mais](assets/do-not-localize/more-icon.svg) correspondente ao nome da configuração e clique em **[!UICONTROL Exibir ativos]**.
 
-## Vídeo: importar ativos em massa usando a Exibição de ativos
+## Vídeo: Importar ativos em massa usando a visualização do Assets
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428012)

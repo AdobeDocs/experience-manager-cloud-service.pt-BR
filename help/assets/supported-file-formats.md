@@ -6,8 +6,8 @@ contentOwner: AG
 exl-id: bc44e98d-446e-41ff-b5b4-9dc324834630
 source-git-commit: b4b397a09960f507df1daa0cf6f5dc49d6b286c6
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 96%
+source-wordcount: '515'
+ht-degree: 100%
 
 ---
 
@@ -122,7 +122,7 @@ Usuários do [!DNL Adobe Asset Link] podem fazer upload e check-in (fazer upload
 
 ## Próximas etapas {#next-steps}
 
-* Forneça feedback sobre o produto usando o [!UICONTROL Feedback] opção disponível na interface da Exibição do Assets
+* Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback], disponível na interface da visualização de ativos
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 

@@ -15,11 +15,11 @@ ht-degree: 29%
 
 # Conceitos de criação e publicação {#authoring-publishing}
 
-Para um autor de conteúdo, uma instalação as a Cloud Service do AEM pode ser considerada como três camadas principais em seu nível mais básico
+Para um autor de conteúdo, uma instalação do AEM as a Cloud Service pode ser considerada como três camadas principais em seu nível mais básico
 
 * Nível de criação
 * Camada de visualização
-* Publicar camada
+* Nível do Publish
 
 Esses níveis interagem para permitir que você disponibilize conteúdo no seu site para que os visitantes possam acessá-lo. O fluxo de trabalho básico é:
 
@@ -31,7 +31,7 @@ O conteúdo pode ser de vários tipos diferentes, incluindo páginas, ativos e p
 
 ![Diagrama do autor, editor e despachantes](assets/author-publish.jpg)
 
-Para mais detalhes sobre a arquitetura técnica do AEM as a Cloud Service, consulte o documento [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
+Para obter mais detalhes sobre a arquitetura técnica do AEM as a Cloud Service, consulte o documento [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service.](/help/overview/architecture.md)
 
 {{edge-delivery-authoring}}
 
@@ -54,20 +54,20 @@ Além disso, há tarefas administrativas que ajudam a gerenciar o conteúdo:
 
 O AEM também é administrado no ambiente do autor.
 
-Consulte o documento [Guia de início rápido para criação](/help/sites-cloud/authoring/quick-start.md) para obter uma visão geral do processo de criação.
+Consulte o documento [Guia de Início Rápido para Criação](/help/sites-cloud/authoring/quick-start.md) para obter uma visão geral do processo de criação.
 
 ## Visualização de conteúdo {#previewing-content}
 
 O AEM também oferece um serviço de visualização que permite que desenvolvedores e autores de conteúdo visualizem a experiência final de um site antes que ele chegue ao ambiente de publicação e esteja disponível publicamente.
 
-Consulte o documento [Visualização de conteúdo](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obter mais detalhes.
+Consulte o documento [Visualizando conteúdo](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obter mais detalhes.
 
 ## Ambiente de publicação {#publish-environment}
 
 Quando pronto, o conteúdo do site é publicado no ambiente de publicação do nível de publicação. Aqui, as páginas do site são disponibilizadas para o público desejado de acordo com a aparência do seu modelo de conteúdo.
 
-Consulte o documento [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md) para obter mais informações sobre publicação e cancelamento da publicação de páginas.
+Consulte o documento [Publicando páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md) para obter mais informações sobre publicação e cancelamento de publicação de páginas.
 
 ## Dispatcher {#dispatcher}
 
-Para otimizar o desempenho para os visitantes do seu site, a variável **[Dispatcher](/help/implementing/dispatcher/overview.md)** O implementa o balanceamento de carga e o cache para os níveis de publicação e visualização.
+Para otimizar o desempenho para os visitantes do seu site, o **[Dispatcher](/help/implementing/dispatcher/overview.md)** implementa o balanceamento de carga e o cache para os níveis de publicação e visualização.

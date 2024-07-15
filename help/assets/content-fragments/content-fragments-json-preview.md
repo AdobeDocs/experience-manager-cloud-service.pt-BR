@@ -1,5 +1,5 @@
 ---
-title: Visualização - Representação JSON (Ativos - Fragmentos de conteúdo)
+title: Visualização - Representação JSON (Assets - Fragmentos de conteúdo)
 description: Saiba como visualizar facilmente a representação em JSON dos fragmentos de conteúdo ao implementar sua solução AEM Headless.
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
 feature: Content Fragments
@@ -18,9 +18,9 @@ Ao desenvolver os modelos para fragmentos de conteúdo como parte de sua impleme
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
+>Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
 >
->Existem dois editores para a criação de fragmentos de conteúdo. Esta seção aborda o editor original, acessado principalmente pelo **Assets** console. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes sobre o novo editor (acessado principalmente pelo **Fragmentos de conteúdo** console).
+>Existem dois editores para a criação de fragmentos de conteúdo. Esta seção abrange o editor original, acessado principalmente do console **Assets**. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes do novo editor (acessado principalmente do console **Fragmentos de conteúdo**).
 
 Ao usar o ícone **Visualizar**:
 

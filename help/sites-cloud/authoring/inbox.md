@@ -50,7 +50,7 @@ Para abrir a caixa de entrada de notificação do AEM:
 
 1. Selecione o indicador na barra de ferramentas.
 
-1. Selecione **Exibir todos**. A variável **Caixa de entrada AEM** é aberto. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
+1. Selecione **Exibir todos**. A **Caixa de Entrada do AEM** é aberta. A caixa de entrada mostra itens de fluxos de trabalho, projetos e tarefas.
 1. A exibição padrão é [Exibição em lista](#inbox-list-view), mas você também pode alternar para [Exibição de calendário](#inbox-calendar-view). Isso é feito com o seletor de visualização (barra de ferramentas, parte superior direita).
 
    Para ambas as exibições você também pode definir [Configurações de exibição](#inbox-view-settings). As opções disponíveis dependem da exibição atual.

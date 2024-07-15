@@ -31,24 +31,24 @@ Entender como o AEM Forms seleciona o local para renderizar um Formulário adapt
 
 O AEM Forms prioriza os seguintes métodos para determinar a localidade de um Formulário adaptável:
 
-1. **Seletor de localidade do URL ([localidade])**:
+1. **Seletor de Localidade da URL ([localidade])**:
 
-   O sistema prioriza o local especificado na URL usando o [localidade] seletor. Esse formato permite o armazenamento em cache para melhorar o desempenho.
+   O sistema prioriza a localidade especificada na URL usando o seletor de [localidade]. Esse formato permite o armazenamento em cache para melhorar o desempenho.
 
-   Formato: O URL segue este formato: http:/[URL do servidor do AEM Forms]/content/forms/af/[afName].[localidade].html?wcmmode=disabled.
+   Formato: A URL segue este formato: http:/[URL do AEM Forms Server]/content/forms/af/[afName].[locale].html?wcmmode=disabled.
 
-   Exemplo: https://[server]/content/forms/af/contact-us.hi.html renderiza o formulário em hindi.
+   Exemplo: https://[server]/content/forms/af/contact-us.hi.html renderiza o formulário em híndi.
 
 
-1. **Parâmetro de solicitação afAcceptLang**:
+1. **Parâmetro de Solicitação afAcceptLang**:
 
-   Para substituir o local do navegador do usuário, você pode usar o `afAcceptLang` no URL.
+   Para substituir a localidade do navegador do usuário, você pode usar o parâmetro `afAcceptLang` na URL.
 
    Exemplo: https://[server]/forms/af/survey.ca-fr.html?afAcceptLang=ca-fr força o formulário a ser renderizado em francês canadense.
 
-1. **Localidade do navegador do usuário (Cabeçalho Aceitar idioma)**:
+1. **Localidade do Navegador do Usuário (Cabeçalho Accept-Language)**:
 
-   Se nenhum outro local for especificado, a AEM Forms considerará o local do navegador do usuário enviado usando o `Accept-Language` cabeçalho.
+   Se nenhuma outra localidade for especificada, a AEM Forms considerará a localidade do navegador do usuário enviada usando o cabeçalho `Accept-Language`.
 
 
 ### Mecanismo de fallback:
@@ -58,7 +58,7 @@ O AEM Forms prioriza os seguintes métodos para determinar a localidade de um Fo
 
   Exemplo: se en_ZA (inglês da África do Sul) for solicitado e não houver uma biblioteca en_ZA, ela usará en (inglês), se disponível.
 
-  Se nenhuma biblioteca de cliente adequada for encontrada, o dicionário padrão (principalmente `en`) para que o idioma de criação do formulário seja usado.
+  Se nenhuma biblioteca de cliente adequada for encontrada, o dicionário padrão (principalmente `en`) para a linguagem de criação do formulário será usado.
 
   Na ausência de informações de local, o Formulário adaptável é exibido em seu idioma original usado durante o desenvolvimento.
 
@@ -69,12 +69,12 @@ Antes de começar a adicionar um novo local para o Adaptive Forms, verifique se 
 
 **Software:**
 
-* Editor de texto sem formatação (IDE): embora qualquer editor de texto sem formatação possa funcionar, um ambiente de desenvolvimento integrado (IDE), como [Código do Microsoft Visual Studio](https://code.visualstudio.com/download) O oferece recursos avançados para facilitar a edição.
+* Editor de texto sem formatação (IDE): embora qualquer editor de texto sem formatação possa funcionar, um IDE (Ambiente de Desenvolvimento Integrado) como o [Microsoft Visual Studio Code](https://code.visualstudio.com/download) oferece recursos avançados para facilitar a edição.
 
-* Git: este sistema de controle de versão é necessário para gerenciar alterações de código. Se não tiver instalado, baixe-o de [https://git-scm.com](https://git-scm.com).
+* Git: este sistema de controle de versão é necessário para gerenciar alterações de código. Se você não o instalou, baixe-o de [https://git-scm.com](https://git-scm.com).
 
 
-**Repositório de código:**
+**Repositório de Códigos:**
 
 Clonar o repositório dos componentes principais adaptáveis do Forms: você precisa de uma biblioteca do cliente desse repositório para adicionar um local. Para clonar o repositório:
 
@@ -88,7 +88,7 @@ Clonar o repositório dos componentes principais adaptáveis do Forms: você pre
    git clone https://github.com/adobe/aem-core-forms-components.git
    ```
 
-   Esse comando baixa o repositório e cria uma pasta chamada `aem-core-forms-components` na sua máquina. Neste guia, nos referimos a essa pasta como a `[Adaptive Forms Core Components repository]`
+   Este comando baixa o repositório e cria uma pasta chamada `aem-core-forms-components` no computador. Neste guia, nos referimos a esta pasta como `[Adaptive Forms Core Components repository]`
 
 
 ## Adicionar uma localidade {#add-localization-support-for-non-supported-locales}
@@ -97,7 +97,7 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
 
 ### Clonar o repositório Git do AEM as a Cloud Service
 
-1. Abra a linha de comando e escolha um diretório para armazenar o repositório do AEM as a Cloud Service, como `/cloud-service-repository/`.
+1. Abra a linha de comando e escolha um diretório para armazenar seu repositório do AEM as a Cloud Service, como `/cloud-service-repository/`.
 
 1. Execute o comando abaixo para clonar o repositório:
 
@@ -107,21 +107,21 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
 
    Para clonar o repositório Git, você precisa de algumas informações:
 
-   * **Nome da organização**: identifica a equipe ou o projeto na Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
+   * **Nome da organização**: isso identifica sua equipe ou projeto na Adobe Experience Manager as a Cloud Service (AEM as a Cloud Service).
 
-   * **ID do programa**: Especifica o programa associado ao repositório.
+   * **ID do programa**: especifica o programa associado ao seu repositório.
 
-   * **Credenciais**: Você precisa de um nome de usuário e senha (ou um token de acesso pessoal) para acessar o repositório com segurança.
+   * **Credenciais**: você precisa de um nome de usuário e senha (ou um token de acesso pessoal) para acessar o repositório com segurança.
 
    **Onde encontrar essas informações?**
 
-   Para obter instruções passo a passo sobre como localizar esses detalhes, consulte o artigo da Adobe Experience League &quot;[Acesso ao Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
+   Para obter instruções passo a passo sobre como localizar esses detalhes, consulte o artigo da Adobe Experience League &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
 
    **Seu projeto está pronto!**
 
    Quando o comando for concluído com sucesso, você verá uma nova pasta criada no diretório local. Essa pasta é nomeada com base no seu programa (por exemplo, id-do-programa). Esta pasta contém todos os arquivos e códigos baixados do repositório Git da AEM as a Cloud Service.
 
-   Neste guia, nos referimos a essa pasta como a `[AEMaaCS project directory]`.
+   Neste guia, nos referimos a essa pasta como `[AEMaaCS project directory]`.
 
 
 ### Adicionar a nova localidade ao Serviço de localização do guia
@@ -130,7 +130,7 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
 
    ![Pasta do repositório em um editor](/help/forms/assets/repository-folder-in-an-editor.png)
 
-1. Localize o `Guide Localization Service.cfg.json` arquivo. Esse arquivo controla as localidades compatíveis com seu aplicativo AEM Forms. Você pode editar esse arquivo para adicionar um novo local.
+1. Localize o arquivo `Guide Localization Service.cfg.json`. Esse arquivo controla as localidades compatíveis com seu aplicativo AEM Forms. Você pode editar esse arquivo para adicionar um novo local.
 
    * **Arquivo existente**: se o arquivo já existir, localize-o no diretório do projeto do AEM Forms. A localização típica é:
 
@@ -138,11 +138,11 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
      [AEMaaCS project directory]/ui.config/src/main/content/jcr_root/apps/<appid>/osgiconfig/config`. 
      ```
 
-     Substituir `<appid>` com a ID do aplicativo específico do projeto. Você pode encontrar `<appid>` para seu projeto AEM na `archetype.properties` arquivo.
+     Substitua `<appid>` pela ID do aplicativo específica do seu projeto. Você pode encontrar `<appid>` para seu projeto AEM no arquivo `archetype.properties`.
 
      ![Propriedades do Arquétipo](/help/forms/assets/archetype-properties.png)
 
-   * **Novo arquivo**: se o arquivo não existir, você precisará criá-lo no mesmo local mencionado acima. Não copie e cole o nome do arquivo deste documento. Em vez disso, digite manualmente o nome. O nome do arquivo `Guide Localization Service.cfg.json` inclui espaços. Isso é intencional e não um erro de digitação na documentação.
+   * **Novo arquivo**: se o arquivo não existir, você precisará criá-lo no mesmo local mencionado acima. Não copie e cole o nome do arquivo deste documento. Em vez disso, digite manualmente o nome. O nome de arquivo `Guide Localization Service.cfg.json` inclui espaços. Isso é intencional e não um erro de digitação na documentação.
 
      Um arquivo de amostra com a lista de localidades com suporte para OOTB é:
 
@@ -164,9 +164,9 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
      ```
 
 1. Adicione o código de localidade do idioma desejado ao arquivo.
-   1. Use o [Lista de códigos ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) para encontrar o código de duas letras que representa o idioma desejado.
+   1. Use a [Lista de códigos ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) para localizar o código de duas letras que representa o idioma desejado.
 
-   1. Inclua o código de localidade na variável `Guide Localization Service.cfg.json` arquivo. Veja alguns exemplos:
+   1. Inclua o código de localidade no arquivo `Guide Localization Service.cfg.json`. Veja alguns exemplos:
 
       * Idiomas da esquerda para a direita:
          * Inglês (Estados Unidos): en-US
@@ -177,16 +177,16 @@ Para adicionar suporte a novos locais a um formulário adaptável com base em co
          * Hebraico: ele (ou iw para referência histórica)
          * Farsi: fa
 
-1. Depois de fazer as alterações, verifique se `Guide Localization Service.cfg.json` O arquivo está formatado corretamente como um arquivo JSON válido. Erros na formatação JSON podem impedir que ela funcione corretamente. Salve o arquivo.
+1. Depois de fazer as alterações, verifique se o arquivo `Guide Localization Service.cfg.json` está formatado corretamente como um arquivo JSON válido. Erros na formatação JSON podem impedir que ela funcione corretamente. Salve o arquivo.
 
 
 
 ### Aproveite a biblioteca de exemplo do cliente para facilitar a adição de local
 
-O AEM Forms fornece uma biblioteca de cliente de amostra útil, `clientlib-it-custom-locale`, para simplificar a adição de novos locais. Essa biblioteca faz parte da [Repositório adaptável dos Componentes principais do Forms](https://github.com/adobe/aem-core-forms-components), disponível no GitHub.
+O AEM Forms fornece uma biblioteca de cliente de exemplo útil, `clientlib-it-custom-locale`, para simplificar a adição de novas localidades. Esta biblioteca faz parte do [Repositório dos Componentes principais do Forms Adaptive](https://github.com/adobe/aem-core-forms-components), disponível no GitHub.
 
 
-Antes de começarmos, verifique se você tem uma cópia local do [Repositório adaptável dos Componentes principais do Forms]. Caso contrário, você pode cloná-lo facilmente usando o Git com o seguinte comando:
+Antes de começarmos, verifique se você tem uma cópia local do [Repositório dos Componentes principais do Forms Adaptive]. Caso contrário, você pode cloná-lo facilmente usando o Git com o seguinte comando:
 
 ```SHELL
 git clone https://github.com/adobe/aem-core-forms-components.git
@@ -194,15 +194,15 @@ git clone https://github.com/adobe/aem-core-forms-components.git
 
 Esse comando baixa o repositório inteiro, incluindo a biblioteca clientlib-it-custom-locale, para um diretório chamado aem-core-forms-components na máquina.
 
-![Diretório do repositório dos Componentes principais do Forms adaptável no computador local](/help/forms/assets/core-forms-components-repo-on-local-machine.png)
+![Diretório de repositório dos Componentes Principais do Forms Adaptive no computador local](/help/forms/assets/core-forms-components-repo-on-local-machine.png)
 
 ### Integrar a biblioteca de exemplo do cliente
 
-Agora, vamos incorporar o `clientlib-it-custom-locale` em sua AEM as a Cloud Service, [Diretório de projeto do AEMaaCS]:
+Agora, vamos incorporar a biblioteca `clientlib-it-custom-locale` ao seu AEM as a Cloud Service, [diretório do projeto AEMaaCS]:
 
 1. Localize a biblioteca de exemplo de cliente:
 
-   Em sua cópia local do [Repositório adaptável dos Componentes principais do Forms], navegue até o seguinte caminho:
+   Em sua cópia local do [repositório dos Componentes principais do Forms adaptável], navegue até o seguinte caminho:
 
    ```
        /aem-core-forms-components/it/apps/src/main/content/jcr_root/apps/forms-core-components-it/clientlibs
@@ -210,38 +210,38 @@ Agora, vamos incorporar o `clientlib-it-custom-locale` em sua AEM as a Cloud Ser
 
 1. Copie e cole a biblioteca:
 
-   1. Copie o `clientlib-it-custom-locale` pasta.
+   1. Copie a pasta `clientlib-it-custom-locale`.
 
       ![Copiando clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-copy.png)
 
-   1. Navegue até o seguinte diretório no [Diretório de projeto do AEMaaCS]:
+   1. Navegue até o seguinte diretório no [diretório do projeto AEMaaCS]:
 
       ```
       /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib
       ```
 
-      **Importante**: Substituir `<app-id>` com a ID real do aplicativo.
+      **Importante**: substitua `<app-id>` pela ID real do seu aplicativo.
 
-   1. Cole o copiado `clientlib-it-custom-locale` pasta neste diretório.
+   1. Cole a pasta `clientlib-it-custom-locale` copiada neste diretório.
 
-      ![Colagem de clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
+      ![Colando clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
 
 ### Crie um arquivo para o novo local:
 
 1. Navegue até o Diretório de Localidade:
 
-   Dentro do seu `[AEMaaCS project directory]`, navegue até o seguinte caminho:
+   Em seu `[AEMaaCS project directory]`, navegue até o seguinte caminho:
 
    ```
        /ui.apps/src/main/content/jcr_root/apps/<program-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/
    ```
 
-   **Importante**: Substituir `<program-id>` com a ID real do aplicativo.
+   **Importante**: substitua `<program-id>` pela ID do aplicativo real.
 
 1. Localize o arquivo de amostra no idioma inglês:
 
-   O AEM Forms fornece uma [Exemplo de arquivo de localidade em inglês (.json) no GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json).
+   O AEM Forms fornece um [arquivo de local em inglês de exemplo (.json) no GitHub](https://github.com/adobe/aem-core-forms-components/blob/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/af-clientlibs/core-forms-components-runtime-all/resources/i18n/en.json).
 
    O arquivo de idioma inglês inclui o conjunto padrão de cadeias de caracteres para referência. O arquivo específico de local deve imitar a estrutura do arquivo de idioma inglês.
 
@@ -256,7 +256,7 @@ Agora, vamos incorporar o `clientlib-it-custom-locale` em sua AEM as a Cloud Ser
 
 1. Crie seu arquivo de local:
 
-   1. Crie um novo arquivo .json no `i18n` diretório.
+   1. Crie um novo arquivo .json no diretório `i18n`.
    1. Nomeie o arquivo usando o código de localidade apropriado para o idioma desejado (por exemplo, fr-FR.json para francês e ar-ae.json para árabe). A estrutura desse arquivo deve refletir o arquivo de localidade em inglês.
 
 
@@ -277,7 +277,7 @@ Esta etapa se aplica somente às localidades diferentes das seguintes comumente 
 
 1. Localize a pasta de configuração:
 
-   Navegue até o seguinte diretório no [Diretório de projeto do AEMaaCS]:
+   Navegue até o seguinte diretório no seu [diretório do projeto AEMaaCS]:
 
    ```
    /ui.content/src/main/content/jcr_root/etc
@@ -285,15 +285,15 @@ Esta etapa se aplica somente às localidades diferentes das seguintes comumente 
 
 1. Crie as pastas necessárias (se estiverem ausentes):
 
-   Se a variável `etc` a pasta não existe em `jcr_root` , crie-a. Dentro `etc`, crie outra pasta chamada `languages` se estiver faltando.
+   Se a pasta `etc` não existir na pasta `jcr_root`, crie-a. Dentro de `etc`, crie outra pasta chamada `languages`, se ela estiver ausente.
 
 1. Crie o arquivo de configuração de local:
 
-   No prazo de `languages` , crie um novo arquivo com o nome `.content.xml`. Não copie e cole o nome do arquivo deste documento. Em vez disso, digite manualmente o nome.
+   Na pasta `languages`, crie um novo arquivo chamado `.content.xml`. Não copie e cole o nome do arquivo deste documento. Em vez disso, digite manualmente o nome.
 
-   ![crie um novo arquivo chamado `.content.xml`](etc-content-xml.png)
+   ![criar um novo arquivo chamado `.content.xml`](etc-content-xml.png)
 
-   Abra este arquivo e cole o seguinte conteúdo, substituindo [LOCALE_CODE] com o código de localidade real (por exemplo, ar-ae para árabe).
+   Abra este arquivo e cole o conteúdo a seguir, substituindo [LOCALE_CODE] pelo código de localidade real (Por exemplo, ar-ae para Árabe).
 
 
    ```XML
@@ -311,7 +311,7 @@ Esta etapa se aplica somente às localidades diferentes das seguintes comumente 
 
 1. Incluir as Novas Pastas em filter.xml:
 
-   Navegue até a `/ui.content/src/main/content/meta-inf/vault/filter.xml` arquivo em seu [Diretório de projeto do AEMaaCS].
+   Navegue até o arquivo `/ui.content/src/main/content/meta-inf/vault/filter.xml` no seu [diretório do projeto AEMaaCS].
 
    Abra o arquivo e adicione a seguinte linha no final:
 
@@ -319,7 +319,7 @@ Esta etapa se aplica somente às localidades diferentes das seguintes comumente 
    <filter root="/etc/languages"/>
    ```
 
-   ![Adicione as pastas criadas na `filter.xml` em `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
+   ![Adicionar as pastas criadas em `filter.xml` em `/ui.content/src/main/content/meta-inf/vault/filter.xml`](langauge-filter.png)
 
 1. Salve o arquivo.
 
@@ -327,13 +327,13 @@ Esta etapa se aplica somente às localidades diferentes das seguintes comumente 
 
 Agora você está pronto para usar o novo local com sua Forms adaptável. Você pode
 
-* Implantar o AEM as a Cloud Service, [Diretório de projeto do AEMaaCS], para o ambiente de desenvolvimento local para experimentar a nova configuração de localidade no computador local. Para implantar no ambiente de desenvolvimento local:
+* Implante o AEM as a Cloud Service, [diretório do projeto AEMaaCS], no ambiente de desenvolvimento local para experimentar a nova configuração de localidade no computador local. Para implantar no ambiente de desenvolvimento local:
 
-   1. Certifique-se de que o ambiente de desenvolvimento local esteja em funcionamento. Se você ainda não tiver configurado um ambiente de desenvolvimento local, consulte o manual sobre [Configurar ambiente de desenvolvimento local para o AEM Forms](/help/forms/setup-local-development-environment.md).
+   1. Certifique-se de que o ambiente de desenvolvimento local esteja em funcionamento. Se você ainda não tiver configurado um ambiente de desenvolvimento local, consulte o manual em [Configurar ambiente de desenvolvimento local para o AEM Forms](/help/forms/setup-local-development-environment.md).
 
    1. Abra a janela do terminal ou o prompt de comando.
 
-   1. Navegue até a [Diretório de projeto do AEMaaCS]
+   1. Navegue até o [diretório do projeto AEMaaCS]
 
    1. Execute o seguinte comando:
 
@@ -341,15 +341,15 @@ Agora você está pronto para usar o novo local com sua Forms adaptável. Você 
       mvn -PautoInstallPackage clean install
       ```
 
-* Implantar o AEM as a Cloud Service, [Diretório de projeto do AEMaaCS], para o ambiente de Cloud Service. Para implantar no ambiente de Cloud Service:
+* Implante o AEM as a Cloud Service, [diretório do projeto AEMaaCS], no seu ambiente Cloud Service. Para implantar no ambiente de Cloud Service:
 
    1. Confirme suas alterações:
 
-      Depois de adicionar a nova configuração de local, confirme suas alterações com uma mensagem clara do Git descrevendo a adição do local (por exemplo, &quot;Adicionado suporte para [Nome da localidade]&quot;).
+      Depois de adicionar a nova configuração de localidade, confirme suas alterações com uma mensagem clara do Git descrevendo a adição da localidade (Por exemplo, &quot;Adicionado suporte para [Nome da localidade]&quot;).
 
    1. Implante o código atualizado:
 
-      Acione uma implantação do seu código por meio da [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Isso cria e implanta automaticamente o código atualizado com o novo suporte de localidade.
+      Acione uma implantação do seu código por meio do [pipeline de pilha completa existente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline). Isso cria e implanta automaticamente o código atualizado com o novo suporte de localidade.
 
       Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
@@ -359,23 +359,23 @@ Agora você está pronto para usar o novo local com sua Forms adaptável. Você 
 Essas etapas orientam você na pré-visualização de um Formulário adaptável com a localidade recém-adicionada:
 
 1. Faça logon na instância as a Cloud Service do AEM Forms.
-1. Ir para **Forms** >  **Forms e documentos**.
-1. Selecione um Formulário adaptável e clique em **Adicionar dicionário** e **Adicionar Dicionário Ao Projeto De Tradução** é exibido.
-1. Especifique a **Título do projeto** e selecione o **Idiomas de destino** no menu suspenso da caixa **Adicionar Dicionário Ao Projeto De Tradução** assistente.
+1. Ir para **Forms** > **Forms e Documentos**.
+1. Selecione um formulário adaptável e clique em **Adicionar dicionário** e o assistente **Adicionar dicionário ao projeto de tradução** será exibido.
+1. Especifique o **Título do Projeto** e selecione os **Idiomas de Destino** no menu suspenso do assistente **Adicionar Dicionário ao Projeto de Tradução**.
 1. Clique em **Concluído** e execute o projeto de tradução criado.
-1. Ir para **Forms** >  **Forms e documentos**.
-1. Selecione o Formulário adaptável e escolha a **Visualizar como HTML** opção.
-1. Anexar `&afAcceptLang=<locale-name>` para exibir o URL de pré-visualização e pressione a tecla Return. Substituir `<locale-name>` com o código do local real. O formulário adaptável é exibido no local especificado.
+1. Ir para **Forms** > **Forms e Documentos**.
+1. Selecione o Formulário adaptável e escolha a opção **Visualizar como HTML**.
+1. Anexe `&afAcceptLang=<locale-name>` à URL de visualização e pressione a tecla Return. Substitua `<locale-name>` pelo seu código de localidade atual. O formulário adaptável é exibido no local especificado.
 
 ## Práticas recomendadas para oferecer suporte à nova localização {#best-practices}
 
 * O Adobe recomenda criar um projeto de tradução após criar um Formulário adaptável. Isso simplifica o processo de localização.
-* Quando os componentes Caixa numérica e Seletor de data são convertidos em um local específico, podem ocorrer problemas de formatação. Para atenuar esse problema, uma **Idioma** A opção foi incorporada na caixa de diálogo Configurar do [Componente do seletor de datas](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) e [Componente de caixa numérica](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
+* Quando os componentes Caixa numérica e Seletor de data são convertidos em um local específico, podem ocorrer problemas de formatação. Para atenuar isso, uma opção **Idioma** foi incorporada à caixa de diálogo Configurar do [componente seletor de datas](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/date-picker#format-tab) e do [componente Caixa Numérica](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/numeric-box#formats-configure-tab).
 
 
 * Tratamento de novos campos:
 
-   * **Tradução automática**: se estiver usando tradução automática, será necessário recriar o dicionário e reutilizar o[executar o projeto de tradução](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) depois de adicionar novos campos a um Formulário adaptável existente. Os novos campos adicionados após o projeto de tradução inicial permanecem não traduzidos.
+   * **Tradução Automática**: se estiver usando tradução automática, você precisará recriar o dicionário e executar novamente o projeto de tradução](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md) depois de adicionar novos campos a um Formulário Adaptável existente. [ Os novos campos adicionados após o projeto de tradução inicial permanecem não traduzidos.
 
    * **Tradução humana**: para fluxos de trabalho de tradução humana, exporte o dicionário usando a interface do usuário em `[AEM Forms Server]/libs/cq/i18n/gui/translator.html`. Atualize o dicionário para os novos campos e faça upload da versão revisada.
 

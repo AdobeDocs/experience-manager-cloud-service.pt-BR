@@ -1,5 +1,5 @@
 ---
-title: Modelos de fragmentos do conteúdo (Ativos - Fragmentos de conteúdo)
+title: Modelos de fragmentos do conteúdo (Assets - Fragmentos de conteúdo)
 description: Saiba como os modelos de fragmento de conteúdo servem como base para o conteúdo headless no AEM, permitindo criar fragmentos de conteúdo com conteúdo estruturado.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
@@ -14,7 +14,7 @@ ht-degree: 86%
 
 # Modelos de fragmentos do conteúdo {#content-fragment-models}
 
-Os modelos de fragmento de conteúdo no AEM definem a estrutura do conteúdo para o seu [fragmentos de conteúdo,](/help/assets/content-fragments/content-fragments.md) como base do seu conteúdo headless.
+Os modelos de fragmento de conteúdo no AEM definem a estrutura do conteúdo para os seus [fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md), servindo como base para o seu conteúdo headless.
 
 Para usar modelos de fragmento de conteúdo, você pode:
 
@@ -33,12 +33,12 @@ Para usar modelos de fragmento de conteúdo, você pode:
    >
    >Se o [uso de modelos de fragmento de conteúdo não foi habilitado](/help/assets/content-fragments/content-fragments-configuration-browser.md), a opção **Criar** não estará disponível.
 
-1. Especifique a **Título do modelo**.
-Também é possível definir várias propriedades; por exemplo, adicionar **Tags**, um **Descrição** e selecione **Ativar modelo** para [ativar o modelo](#enabling-disabling-a-content-fragment-model) se necessário.
+1. Especifique o **Título do Modelo**.
+Você também pode definir várias propriedades; por exemplo, adicionar **Marcas**, uma **Descrição** e selecionar **Habilitar modelo** para [habilitar o modelo](#enabling-disabling-a-content-fragment-model) se necessário.
 
    >[!NOTE]
    >
-   >Para obter detalhes sobre o **Padrão de URL de Visualização Padrão** consulte [Modelo de fragmento de conteúdo — Propriedades](#content-fragment-model-properties).
+   >Para obter detalhes sobre o **Padrão de URL de Visualização Padrão**, consulte [Modelo de Fragmento de Conteúdo - Propriedades](#content-fragment-model-properties).
 
    ![título e descrição](assets/cfm-models-02.png)
 
@@ -153,10 +153,10 @@ Muitas propriedades são autoexplicativas. Para certas propriedades, os detalhes
   Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
 * **Renderizar como**
-As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, essa propriedade permite definir se o autor vê uma única instância do campo ou se tem permissão para criar várias instâncias. Quando **Múltiplo campo** é usado você pode definir o número mínimo e máximo de itens - consulte [Validação](#validation) para obter mais detalhes.
+As várias opções para realizar/renderizar o campo em um fragmento. Geralmente, essa propriedade permite definir se o autor vê uma única instância do campo ou se tem permissão para criar várias instâncias. Quando **Vários Campos** for usado, você poderá definir o número mínimo e máximo de itens - consulte [Validação](#validation) para obter mais detalhes.
 
 * **Rótulo do campo**
-Inserir um **Rótulo do campo** gerará automaticamente um **Nome da propriedade**, que pode ser atualizado manualmente se necessário.
+Inserir um **Rótulo de Campo** gerará automaticamente um **Nome de Propriedade**, que pode ser atualizado manualmente se necessário.
 
 * **Validação**
 A validação básica está disponível por meio de mecanismos como a propriedade **Obrigatório**. Alguns tipos de dados têm campos de validação de adição. Consulte [Validação](#validation) para obter mais detalhes.
@@ -188,7 +188,7 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 
   >[!CAUTION]
   >
-  Se você quiser usar o MSM (que cria cópias de Fragmentos de conteúdo), qualquer **Exclusivo** as restrições devem ser removidas de qualquer tipo de dados usado nos respectivos modelos de fragmento de conteúdo.
+  Se você quiser usar o MSM (que cria cópias de Fragmentos de conteúdo), qualquer restrição **única** deverá ser removida de qualquer Tipo de dados usado nos respectivos Modelos de fragmento de conteúdo.
 
 * Consulte **[Referência de conteúdo](#content-reference)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
 
@@ -217,14 +217,14 @@ Vários tipos de dados agora incluem a possibilidade de definir requisitos de va
    * Testar um modelo de fragmento de conteúdo específico.
 * **Número mínimo de itens** / **Número máximo de itens**
 
-  Campos que foram definidos como **Múltiplo campo** (definido com **Renderizar como**) têm as seguintes opções:
+  Os campos que foram definidos como **Vários Campos** (definidos com **Renderizar como**) têm as seguintes opções:
 
    * **Número mínimo de itens**
-   * **Número máximo de itens**
+   * **Número Máximo de Itens**
 
   Eles são validados:
 
-   * O valor máximo é validado na variável [Editor de fragmento do conteúdo original](/help/assets/content-fragments/content-fragments-variations.md).
+   * O valor máximo é validado no [Editor original de fragmento de conteúdo](/help/assets/content-fragments/content-fragments-variations.md).
    * Ambos são validados no [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md).
 
 ## Usar referências para formar conteúdo aninhado {#using-references-to-form-nested-content}
@@ -247,9 +247,11 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 >
 O AEM tem proteção de recorrência para:
 >
-* Referências de conteúdo Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
+* Referências de conteúdo
+Isso impede que o usuário adicione uma referência ao fragmento atual. Isso pode resultar em uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
-* Referências de fragmento no GraphQL Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
+* Referências de fragmento no GraphQL
+Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
 
 ### Referência de conteúdo {#content-reference}
 
@@ -334,7 +336,7 @@ Também há uma proteção de recorrência para referências de fragmento em Gra
 
      >[!NOTE]
      >
-     Isso só é usado pelo *novo* Editor de fragmento de conteúdo. Consulte [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) para obter mais informações.
+     Isto só é usado pelo *novo* Editor de Fragmento de Conteúdo. Consulte [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties) para obter mais informações.
 
 
 ## Ativar ou desativar um modelo de fragmento de conteúdo {#enabling-disabling-a-content-fragment-model}

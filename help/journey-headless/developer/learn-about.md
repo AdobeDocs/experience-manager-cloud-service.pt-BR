@@ -123,13 +123,13 @@ Obrigado por começar a sua jornada headless do AEM. Agora que leu este document
 * Entender por que e quando o headless é necessário.
 * Possuir um conhecimento de alto nível sobre o uso dos conceitos headless e como eles se relacionam.
 
-Aproveite esse conhecimento e continue sua jornada AEM headless revisando o documento a seguir [Introdução ao AEM Headless as a Cloud Service](getting-started.md) onde você aprende a configurar as ferramentas necessárias e como começar a pensar sobre como o AEM se aproxima da entrega de conteúdo headless e seus pré-requisitos.
+Desenvolva esse conhecimento e continue sua jornada sem periféricos de AEM revisando a seguir o documento [Introdução ao AEM as a Cloud Service AEM sem periféricos](getting-started.md), no qual você aprende a configurar as ferramentas necessárias e como começar a pensar sobre como o aborda a entrega de conteúdo sem periféricos e seus pré-requisitos.
 
 ## Recursos adicionais {#additional-resources}
 
 Embora seja recomendado que você siga para a próxima parte da jornada de desenvolvimento headless revisando o documento [Introdução ao AEM Headless as a Cloud Service,](getting-started.md) veja a seguir alguns recursos adicionais que abordam certos conceitos mencionados neste documento em mais detalhes, mas que não são necessários para continuar a jornada headless.
 
 * [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Compreender a estrutura do AEM as a Cloud Service
-* Um [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
-* A variável [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* Uma [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
+* O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 * [Tutoriais AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como utilizar as várias opções para fornecer conteúdo a endpoints headless com o AEM e escolha o que é certo para você.

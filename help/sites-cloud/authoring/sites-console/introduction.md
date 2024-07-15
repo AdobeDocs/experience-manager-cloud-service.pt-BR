@@ -14,20 +14,20 @@ ht-degree: 44%
 
 # O console Sites {#sites-console}
 
-Saiba como usar o **Sites** console para gerenciar e organizar as páginas do AEM.
+Saiba como usar o console **Sites** para gerenciar e organizar suas páginas de AEM.
 
 ## Orientação {#orientation}
 
-A variável **Sites** O console do permite visualizar a hierarquia de páginas.
+O console **Sites** permite exibir a hierarquia de páginas.
 
 ![Exibição de coluna do console Sites com um item selecionado](assets/sites-console-column-view-selected.png)
 
 Ele oferece diferentes exibições e barras de ferramentas para ajudar você a gerenciar e organizar suas páginas.
 
-* [A barra de ferramentas do console](#toolbar) O está sempre presente para ajudá-lo a navegar.
-* [Três visualizações diferentes](#views) O permite localizar e selecionar facilmente a página.
-* [A barra de ferramentas da ação](#action-toolbar) é exibido quando você seleciona um item para executar uma ação nele.
-* [O painel lateral](#side-panel) O tem várias opções para mostrar informações detalhadas em uma página selecionada.
+* [A barra de ferramentas do console](#toolbar) está sempre presente para ajudá-lo a navegar.
+* [Três visualizações diferentes](#views) permitem que você localize e selecione facilmente sua página.
+* [A barra de ferramentas de ações](#action-toolbar) aparece quando você seleciona um item para executar uma ação sobre ele.
+* [O painel lateral](#side-panel) tem várias opções para mostrar informações detalhadas em uma página selecionada.
 
 ## Barra de ferramentas do console {#console-toolbar}
 
@@ -45,7 +45,7 @@ As opções apresentadas dependem do seu console atual. Por exemplo, em **Sites*
 
 ![Exemplo de seletor de painel lateral](assets/sites-console-side-panel-selector.png)
 
-Para obter mais informações sobre o painel lateral, consulte o documento [Painel lateral do console Sites.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+Para obter mais informações sobre o painel lateral, consulte o documento [Painel Lateral do Console do Sites.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
 
 ### Navegações estruturais {#breadcrumbs}
 
@@ -60,22 +60,22 @@ Toque ou clique no texto da navegação estrutural para exibir uma lista suspens
 
 ### Selecionar tudo {#select-all}
 
-Tocar ou clicar no **Selecionar tudo** O botão seleciona todos os itens na exibição atual do console.
+Tocar ou clicar no botão **Selecionar Tudo** seleciona todos os itens na exibição atual do console.
 
 ![Botão Selecionar tudo](assets/sites-console-select-all.png)
 
-Ao selecionar todos os itens, a contagem dos itens selecionados é exibida na parte superior direita da barra de ferramentas, onde a variável **Selecionar tudo** foi exibido.
+Quando você seleciona todos os itens, a contagem dos itens selecionados é exibida na parte superior direita da barra de ferramentas, onde o botão **Selecionar tudo** foi exibido.
 
 Você pode desmarcar todos os itens e sair do modo de seleção ao:
 
-* Ao clicar ou tocar no **X** ao lado da contagem.
-* Usar o **escape** chave.
+* Clicar ou tocar em **X** ao lado da contagem.
+* Usando a tecla **escape**.
 
 ![Desmarcar tudo](assets/sites-console-deselect-all.png)
 
 ### Botão Criar {#create-button}
 
-A variável **Criar** O botão permite adicionar novas páginas ao site, bem como criar objetos Sites adicionais, como Live Copies ou Inicializações.
+O botão **Criar** permite que você adicione novas páginas ao seu site, bem como crie outros objetos do Sites, como Live Copies ou Inicializações.
 
 ![Botão Criar](assets/sites-console-create.png)
 
@@ -92,13 +92,13 @@ Consulte os links para esses recursos para obter detalhes sobre como eles funcio
 
 ## Visualizações e seleção de páginas {#views}
 
-A variável **Sites** O console do oferece três visualizações diferentes da hierarquia de conteúdo. É possível visualizar, navegar e selecionar (para novas ações) os recursos com qualquer uma das exibições disponíveis.
+O console do **Sites** oferece três exibições diferentes da sua hierarquia de conteúdo. É possível visualizar, navegar e selecionar (para novas ações) os recursos com qualquer uma das exibições disponíveis.
 
 * [Exibição de coluna](#column-view)
 * [Exibição de cartão](#card-view)
 * [Exibição de lista](#list-view)
 
-A variável **Exibir** O ícone na extremidade direita da barra de ferramentas do AEM indica a exibição atual selecionada.
+O ícone **Exibir** na extremidade direita da barra de ferramentas do AEM indica a exibição atual selecionada.
 
 Tocar ou clicar nele permite selecionar uma exibição diferente.
 
@@ -181,11 +181,11 @@ Na exibição de cartão, cada item no nível atual na hierarquia é exibido com
    * Se a página estiver bloqueada, oculta ou fizer parte de uma live copy.
    * Indicadores se você precisa agir no item como parte de um fluxo de trabalho.
 
-A exibição de cartão também oferece [ações rápidas](#quick-actions) para os itens, como seleção e ações comuns, como editar.
+A exibição de cartão também oferece [ações rápidas](#quick-actions) para itens como seleção e ações comuns como editar.
 
 ![Ações rápidas](assets/sites-console-quick-actions.png)
 
-É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar tocar nas ações rápidas) ou para cima novamente usando o [navegações estruturais no cabeçalho](#the-header).
+É possível navegar para baixo na árvore tocando/clicando em cartões (com cautela para evitar o toque nas ações rápidas) ou para cima novamente usando a [navegação estrutural no cabeçalho](#the-header).
 
 ### Exibição de lista {#list-view}
 
@@ -194,7 +194,7 @@ A exibição de lista fornece informações para cada recurso no nível atual de
 ![Exibição de lista](assets/sites-console-list-view.png)
 
 * É possível navegar para baixo na árvore tocando/clicando no nome do recurso e fazer backup usando a [navegação estrutural no cabeçalho](#the-header).
-* Para selecionar facilmente todos os itens na lista, use o [**Selecionar tudo** na barra de ferramentas.](#select-all)
+* Para selecionar facilmente todos os itens na lista, use a caixa de seleção [**Selecionar tudo** na barra de ferramentas.](#select-all)
 
 * Selecione as colunas a serem mostradas usando a opção **Configurações de exibição**, localizada abaixo do botão Visualizações. As seguintes colunas estão disponíveis para exibição:
 
@@ -230,30 +230,30 @@ Selecione a barra de seleção vertical e arraste o item para uma nova posição
 
 Sempre que um recurso for selecionado, você poderá realizar várias ações no item selecionado. Essas ações são exibidas na barra de ferramentas de ações.
 
-![Barra de ferramentas Ações](assets/introduction-actions-toolbar.png)
+![Barra de ferramentas de ações](assets/introduction-actions-toolbar.png)
 
 A barra de ferramentas Ações só aparece quando um recurso é selecionado no console. A ação disponível na barra de ferramentas de ações muda para refletir as ações que você pode realizar nos itens específicos selecionados. As ações mais comuns são:
 
-* [**Criar**](#create-action) - Criar novo conteúdo ou ações relacionadas ao conteúdo
-* **Editar** - Dependendo de como a página selecionada foi criada, a variável **Editar** Essa ação abrirá o editor apropriado.
-   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas criadas com o Editor de páginas AEM
-   * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas criadas com o Editor universal
+* [**Criar**](#create-action) - Criar novo conteúdo ou ações relacionadas a conteúdo
+* **Editar** - Dependendo de como a página selecionada foi criada, a ação **Editar** abrirá o editor apropriado.
+   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas criadas com o Editor de Páginas AEM
+   * [Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas criadas com o Editor Universal
 * [**Propriedades**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Abre a janela de propriedades da página
 * [**Bloquear**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Bloquear uma página para impedir que outras pessoas a alterem
 * [**Copiar**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copiar uma página
 * [**Mover**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Mover ou renomear uma página
-* [**Publicação rápida**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publicar uma página ou páginas imediatamente
-* [**Gerenciar publicação**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Agendar uma página ou páginas para publicação
-* [**Restaurar**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restaurar uma versão de uma página ou árvore de página
+* [**Publish rápido**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish uma ou mais páginas imediatamente
+* [**Gerenciar publicação**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Agende uma ou mais páginas para publicação
+* [**Restaurar**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restaura uma versão de uma página ou árvore de páginas
 * [**Excluir**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Excluir uma ou mais páginas
 
-Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Ao clicar ou tocar nas reticências (os três pontos ou **..**) abre um seletor suspenso com todas as ações restantes.
+Devido às restrições de espaço em algumas janelas, a barra de ferramentas pode tornar-se rapidamente maior do que o espaço disponível. Quando isso acontecer, opções adicionais serão exibidas. Clicar ou tocar nas reticências (três pontos ou **...**) abre um seletor suspenso com todas as ações restantes.
 
 ![Opções adicionais](assets/sites-console-additional-options.png)
 
 ### Criar ação {#create-action}
 
-A ação de criação oferece opções semelhantes ao [**Criar** botão da barra de ferramentas](#create-button) para criar novas páginas e itens semelhantes.
+A ação de criação oferece opções semelhantes ao botão [**Criar** da barra de ferramentas](#create-button) para criar novas páginas e itens semelhantes.
 
 Além disso, oferece a capacidade de criar ações relacionadas à página.
 

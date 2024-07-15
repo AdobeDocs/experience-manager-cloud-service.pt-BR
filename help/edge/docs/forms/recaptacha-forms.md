@@ -17,11 +17,11 @@ ht-degree: 1%
 O reCAPTCHA é uma ferramenta popular usada para proteger sites contra atividades fraudulentas, spam e uso indevido. No Edge Delivery Services, o Adaptive Forms Block fornece a capacidade de adicionar o Google reCAPTCHA para distinguir entre humanos e bots. Esse recurso permite que os usuários protejam seu site contra spam e uso indevido.
 Por exemplo, considere um formulário de pesquisa que coleta dados como datas de viagem inicial e final, orçamento de sala, custo de viagem estimado e informações do viajante. Nesses casos, há o risco de usuários mal-intencionados explorarem o formulário para propósitos como enviar emails de phishing ou inundá-lo com conteúdo irrelevante ou prejudicial usando spambots. A integração do reCAPTCHA oferece maior segurança ao verificar se os envios são de usuários genuínos, minimizando efetivamente as entradas de spam.
 
-Os Edge Delivery Services só são compatíveis com o **Baseado em pontuação (v3)-reCAPTCHA** para o bloco de formulário adaptável.
+Os Edge Delivery Services só oferecem suporte a **Score based(v3)-reCAPTCHA** para o Bloco de Formulário Adaptável.
 
 ![Recaptcha V2](/help/forms/assets/recaptcha-v2-invisible.png)
 
-A variável **reCAPTCHA** O recurso está no programa de pré-lançamento. Para solicitar acesso à **reCAPTCHA** recurso para o AEM Forms Edge Delivery Services, envie um email do seu endereço comercial para mailto:aem-forms-ea@adobe.com.
+O recurso **reCAPTCHA** está no programa de pré-lançamento. Para solicitar acesso ao recurso **reCAPTCHA** para o AEM Forms Edge Delivery Services, envie um email do seu endereço comercial para mailto:aem-forms-ea@adobe.com.
 
 <!--
 By the end of this article, you learn to:

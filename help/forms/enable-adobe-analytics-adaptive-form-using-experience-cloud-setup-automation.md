@@ -24,33 +24,33 @@ A Automação de configuração do Experience Cloud ajuda a conectar o Adobe Ana
 ## Vantagens da integração do Adobe Analytics com o Adaptive Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
 * **Insights sobre o comportamento do usuário final**: o Adobe Analytics ajuda a obter insights sobre o comportamento do usuário final, revela ações do usuário, quedas e taxas de conclusão, permitindo uma compreensão mais profunda de como os indivíduos se envolvem com formulários.
-* **Permitir que usuários não técnicos de negócios obtenham insights**: o Adobe Analytics, por meio de sua interface fácil de usar, permite que até usuários não técnicos acessem e interpretem dados de uso de formulário, promovendo decisões orientadas por dados para melhorar as experiências de inscrição.
-* **Otimização da experiência de captura de dados com base no uso**: as organizações identificam facilmente os pontos problemáticos na captura de dados, resultando em melhorias direcionadas que melhoram a usabilidade dos formulários e aumentam os envios bem-sucedidos.
+* **Permitir que usuários empresariais não técnicos obtenham insights**: a Adobe Analytics, por meio de sua interface fácil de usar, permite que até usuários não técnicos acessem e interpretem dados de uso de formulários, promovendo decisões orientadas por dados para aprimorar as experiências de inscrição.
+* **Otimização da experiência de captura de dados com base no uso**: as organizações identificam facilmente pontos problemáticos na captura de dados, resultando em melhorias direcionadas que melhoram a usabilidade dos formulários e aumentam os envios bem-sucedidos.
 
 ## Escopo das métricas de uso adaptáveis do Forms {#scope-of-adaptive-forms-usage-metrics}
 
 O Adobe Analytics oferece uma ampla variedade de métricas de desempenho Adaptive Forms projetadas para fornecer insights valiosos sobre o uso de formulários e oferece uma análise de rastreamento rápido. Essas métricas são:
 
-* **Representações de formulário, Envios de formulário, Erros de validação e Visitantes únicos**, permitindo avaliar o uso e a eficácia dos formulários.
+* **Representações de formulário, envios de formulário, erros de validação e visitantes únicos**, permitindo que você avalie o uso e a eficácia de seus formulários.
 
-* **Insights do visitante** que incluem frequências de visita e envio e contagens de visitantes únicos, oferecendo uma visão abrangente do público-alvo do formulário.
+* **Insights do visitante**, que incluem frequências de visita e envio, e contagens de visitantes únicos, oferecendo uma visão abrangente do público-alvo do seu formulário.
 
-* **Tipo de dispositivo** dados que informam sobre os dispositivos que os usuários utilizam para acessar seus formulários.
+* Dados de **Tipo de dispositivo** que informam sobre os dispositivos que os usuários empregam para acessar seus formulários.
 
-* **Discriminação geográfica** revela a distribuição regional dos usuários do formulário.
+* **A análise geográfica** revela a distribuição regional dos usuários do formulário.
 
-* **Fontes de tráfego** e **Formulários populares** as métricas que consistem nos principais domínios de referência e formulários mais visitados ajudam você a entender onde seu tráfego se origina e quais formulários são os mais populares.
+* As métricas **Fontes de tráfego** e **Formulários populares**, que consistem nos principais domínios de referência e formulários mais visitados, ajudam você a entender onde seu tráfego se origina e quais formulários são os mais populares.
 
-* **Atividade do usuário nos principais formulários** O fornece insights sobre visitas de campo, representações de formulário, erros de validação, formulários abandonados e envios de formulário, permitindo analisar o comportamento do usuário.
+* **A atividade de usuário nos principais formulários** fornece informações sobre visitas de campo, representações de formulários, erros de validação, formulários abandonados e envios de formulários, permitindo que você analise o comportamento do usuário.
 
-* **Linha do tempo gasto em formulários** que oferece uma visualização do engajamento do usuário com seus formulários baseada em linha do tempo.
+* **Linha do tempo gasto em formulários** que oferece uma exibição da linha do tempo do engajamento do usuário com seus formulários.
 
 * **Áreas que exigem assistência do visitante** métricas que incluem exibições de ajuda, instâncias de erro de validação e frequências de visita de campo, destacando onde os usuários podem precisar de assistência para preencher formulários.
 
 ![Relatório do Analytics](assets/analytics-report.png){width="100%"}
 
 
-Para obter informações detalhadas sobre cada métrica, visite [Visualização e noções básicas sobre relatórios do AEM Forms Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)
+Para obter informações detalhadas sobre cada métrica, visite [Exibir e entender os relatórios do AEM Forms Analytics](/help/forms/view-understand-aem-forms-analytics-reports.md)
 
 ## Pré-requisitos {#prerequisites}
 
@@ -58,13 +58,13 @@ Para obter informações detalhadas sobre cada métrica, visite [Visualização 
 Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
 -->
 
-A Automação de configuração do Experience Cloud requer um **Licença do Adobe Analytics**, **Coleta de dados (antigo Adobe Launch)** para gerenciar scripts de rastreamento e **Licença do Experience Manager Forms** para uma agregação de dados e geração de insights simplificadas.
+A Automação da Instalação do Experience Cloud exige uma **licença do Adobe Analytics**, **coleta de dados (antigo Adobe Launch)** para gerenciar scripts de rastreamento e **licença do Experience Manager Forms** para agregação de dados simplificada e geração de insights.
 
-Se você tiver uma licença ativa para **Adobe Analytics** e **Experience Manager Forms**, e você terá integração com **Coleta de dados (antigo Adobe Launch)**, você deve verificar a disponibilidade deles no console do desenvolvedor.
+Se você tiver uma licença ativa para o **Adobe Analytics** e o **Experience Manager Forms** e integração com a **Coleção de dados (antigo Adobe Launch)**, deverá verificar a disponibilidade no console do desenvolvedor.
 
-Para verificar se os itens acima estão disponíveis para o seu ambiente as a Cloud Service do Forms, visite a [console do desenvolvedor](https://developer.adobe.com/console/projects), navegue até o projeto e pesquise seu projeto com a id do programa - id de ambiente, por exemplo, para o ambiente com o URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, id do programa - a id do ambiente é `p45913-e175111`. Verifique se Experience Cloud Setup Automation, Adobe Analytics e Experience Platform Launch API estão listados. Se estiverem listados, você poderá ativar o Adobe Analytics para obter uma análise de rastreamento rápido do seu Forms adaptável.
+Para verificar se os itens mencionados acima estão disponíveis para o seu ambiente as a Cloud Service do Forms, visite o [console do desenvolvedor](https://developer.adobe.com/console/projects), navegue até o projeto e pesquise seu projeto com a ID do programa - ID do ambiente, por exemplo, para o ambiente com a URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, a ID do programa - ID do ambiente é `p45913-e175111`. Verifique se Experience Cloud Setup Automation, Adobe Analytics e Experience Platform Launch API estão listados. Se estiverem listados, você poderá ativar o Adobe Analytics para obter uma análise de rastreamento rápido do seu Forms adaptável.
 
-![Integração de pré-requisito do Forms Analytics](assets/analytics-aem.png){width="100%"}
+![Integração de Pré-requisito do Forms Analytics](assets/analytics-aem.png){width="100%"}
 
 <!-- 
 >[!NOTE]
@@ -93,49 +93,49 @@ Execute as etapas listadas abaixo para habilitar e configurar o Adobe Analytics 
 ### Habilitar o Adobe Analytics com o componente Adaptive Forms for Foundation {#integrate-adobe-analytics-with-aem-forms-for-foundation-component}
 
 1. Criar um contêiner de configuração para os serviços em nuvem:
-   1. Ir para **[!UICONTROL Ferramentas > Geral > Navegador de configuração]**.
-   1. Selecione ou crie um Contêiner de configuração e ative a pasta para **[!UICONTROL Configurações da nuvem]**.
-   1. Selecionar **[!UICONTROL Salvar e fechar]** para salvar a configuração e sair do diálogo.
-1. Na instância do AEM, acesse **[Forms]** >> **[Forms e Documento]**.
-1. Selecione o **[!UICONTROL Formulário]** >> **[!UICONTROL Propriedades]**, No **[!UICONTROL Contêiner de configuração]**, selecione o container de configuração que você criou ou selecionou na **[!UICONTROL Navegador de configuração]** na Etapa 1.
-1. Selecione o Painel de tarefas no painel esquerdo e clique em **Configurar o Analytics** e **Ativar Adobe Analytics**.
-1. Forneça o nome de sua preferência para o conjunto de relatórios, clique em **[!UICONTROL Próxima]** e **[!UICONTROL Salvar]**.
-1. Depois de salvar o projeto, a configuração será executada por algum tempo até a integração do Adobe Analytics com o seu Formulário adaptável. Você também pode verificar o **status da integração**.
+   1. Vá para **[!UICONTROL Ferramentas > Geral > Navegador de Configuração]**.
+   1. Selecione ou crie um Contêiner de Configuração e habilite a pasta para **[!UICONTROL Configurações de Nuvem]**.
+   1. Selecione **[!UICONTROL Salvar e fechar]** para salvar a configuração e sair da caixa de diálogo.
+1. Na sua instância do AEM, vá para **[Forms]** >> **[Forms e Documento]**.
+1. Selecione o **[!UICONTROL Formulário]** >> **[!UICONTROL Propriedades]**, No **[!UICONTROL Contêiner de Configuração]**, selecione o contêiner de configuração que você criou ou selecionou no **[!UICONTROL Navegador de Configuração]** na Etapa 1.
+1. Selecione o Painel de Tarefas no Painel à Esquerda e clique em **Configurar Analytics** e **Ativar Adobe Analytics**.
+1. Forneça o nome de sua preferência para o conjunto de relatórios, Clique em **[!UICONTROL Avançar]** e **[!UICONTROL Salvar]**.
+1. Depois que você salvar o projeto, a configuração será executada por algum tempo até a integração do Adobe Analytics com o seu Formulário adaptável. Você também pode verificar o **status da integração**.
 
    >[!NOTE]
    >
    >Se a configuração demorar mais de 15 minutos, tente habilitar novamente a análise para seus formulários.
 
-1. Na instância do AEM, acesse **[!UICONTROL Forms]** >> **[Forms e Documento]** e selecione o **[!UICONTROL Formulário]**, você verá que o Adobe Analytics está integrado ao seu formulário, como mostrado na imagem abaixo.
-1. Agora você pode visualizar seu [Relatório do Adobe Analytics do formulário adaptável](#view-adobe-analytics-report).
+1. Na sua instância do AEM, vá para **[!UICONTROL Forms]** >> **[Forms e Documento]** e selecione seu **[!UICONTROL Formulário]**. Você verá que o Adobe Analytics está integrado ao seu formulário conforme mostrado na imagem abaixo.
+1. Agora você pode exibir seu [relatório de Adobe Analytics do formulário adaptável](#view-adobe-analytics-report).
 
-![Análise integrada do AEM](assets/analytics-aem-integrated.png){width="100%"}
+![Análise de AEM integrada](assets/analytics-aem-integrated.png){width="100%"}
 
 
 ### Ativar o Adobe Analytics com Forms adaptável para componentes principais {#integrate-adobe-analytics-with-aem-forms-for-core-components}
 
-1. Na instância do AEM, acesse **[!UICONTROL Forms]** >> **[!UICONTROL Forms e Documento]** e selecione o **[!UICONTROL Formulário]**.
-1. Selecione o Painel de tarefas à esquerda e clique em **Configurar o Analytics** e **Ativar Adobe Analytics**.
-1. Forneça o nome de sua preferência para o conjunto de relatórios, clique em **[!UICONTROL Próxima]** e **[!UICONTROL Salvar]**.
-1. Depois de salvar o projeto, a configuração será executada por algum tempo até a integração do Adobe Analytics com o seu Formulário adaptável. Você também pode verificar o **status da integração**.
+1. Na sua instância do AEM, vá para **[!UICONTROL Forms]** >> **[!UICONTROL Forms e Documento]** e selecione seu **[!UICONTROL Formulário]**.
+1. Selecione o Painel de Tarefas à esquerda e clique em **Configurar Analytics** e **Ativar Adobe Analytics**.
+1. Forneça o nome de sua preferência para o conjunto de relatórios, Clique em **[!UICONTROL Avançar]** e **[!UICONTROL Salvar]**.
+1. Depois que você salvar o projeto, a configuração será executada por algum tempo até a integração do Adobe Analytics com o seu Formulário adaptável. Você também pode verificar o **status da integração**.
 
    >[!NOTE]
    >
    >Se a configuração demorar mais de 15 minutos, tente habilitar novamente a análise para seus formulários.
 
-1. Na instância do AEM, acesse **[!UICONTROL Forms]** >> **[!UICONTROL Forms e Documento]** e selecione o **[!UICONTROL Formulário]**, você verá que o Adobe Analytics está integrado ao seu formulário.
-1. Agora você pode visualizar seu [Relatório do Adobe Analytics do formulário adaptável](#view-adobe-analytics-report).
+1. Na sua instância do AEM, vá para **[!UICONTROL Forms]** >> **[!UICONTROL Forms e Documento]** e selecione seu **[!UICONTROL Formulário]**. Você verá que o Adobe Analytics está integrado ao seu formulário.
+1. Agora você pode exibir seu [relatório de Adobe Analytics do formulário adaptável](#view-adobe-analytics-report).
 
 ## Exibir o relatório adaptável do Forms Adobe Analytics {#view-adobe-analytics-report}
 
-1. Na instância do AEM, acesse **[!UICONTROL Forms]** >> **[!UICONTROL Forms e Documento]**.
+1. Na sua instância do AEM, vá para **[!UICONTROL Forms]** >> **[!UICONTROL Forms e Documento]**.
 1. Selecione o formulário e veja que o Adobe Analytics está integrado, como mostrado à esquerda, à Forms ativada para o Adobe Analytics.
 
    ![Exibir Relatório](assets/activ-aa.png){width="100%"}
 
-1. Clique em **Adobe Analytics** para exibir seu relatório e analisar dados de desempenho.
+1. Clique em **Adobe Analytics** para exibir seu relatório e analisar os dados de desempenho.
 
-Para conectar um formulário adaptável ao Adobe Analytics usando o método manual, visite [Integrar o AEM Forms com o Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
+Para conectar um Formulário adaptável ao Adobe Analytics usando o método manual, visite [Integrar o AEM Forms ao Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md).
 
 ## Ativar o Analytics para o Forms adaptável no Sites {#Connect-Analytics-to-Adaptive-Forms-in-Sites}
 
@@ -147,21 +147,21 @@ Para conectar e habilitar o Analytics no Adaptive Forms para AEM Sites, você de
 
 ### Conectar o Adaptive Forms no Sites para ativar o Analytics {#Connect-analytics-to-adaptive-forms}
 
-Para conectar o Formulário adaptável em uma página do AEM Sites e ativar o Analytics para uma análise de rastreamento rápido, inclua a `customfooterlibs` biblioteca do cliente para a página do AEM Sites usando o Arquétipo AEM/Repositório Git e pipeline de implantação.
+Para conectar o Formulário adaptável em uma página do AEM Sites e habilitar o Analytics para uma análise de rastreamento rápido, inclua a biblioteca do cliente `customfooterlibs` na página do AEM Sites usando o Arquétipo AEM/Repositório Git e o pipeline de implantação.
 
-1. Abra o [Arquétipo do AEM Forms ou repositório Git clonado](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) em um editor de texto. Por exemplo, Visual Studio Code.
+1. Abra o projeto [Arquétipo do AEM Forms ou Repositório Git Clonado](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) em um editor de texto. Por exemplo, Visual Studio Code.
 
-1. Navegue até a página dos sites, onde o formulário adaptável existe. Por exemplo, neste projeto de demonstração, temos `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
+1. Navegue até a página dos sites onde o formulário adaptável existe, por exemplo, Neste projeto de demonstração, temos `ui.apps/src/main/content/jcr_root/apps/corecomponents/components/page/.content.xml`.
 
 1. Copie o valor de `sling:resourceSuperType`. Por exemplo, o valor é `core/wcm/components/page/v3/page`.
 
-   ![recurso sling](/help/forms/assets/slingresource.png){width="100%"}
+   ![recurso de sling](/help/forms/assets/slingresource.png){width="100%"}
 
 1. Criar a estrutura semelhante no local `ui.apps/src/main/content/jcr_root/apps` igual a `core/wcm/components/page/v3/page`.
 
    ![estrutura de sobreposição](/help/forms/assets/overlaystructure.png){width="100%"}
 
-1. Adicionar um `customfooterlibs.html` arquivo.
+1. Adicione um arquivo `customfooterlibs.html`.
 
    ```
    // customheaderlibs.html
@@ -170,53 +170,53 @@ Para conectar o Formulário adaptável em uma página do AEM Sites e ativar o An
    </sly>
    ```
 
-   A variável `customfooterlibs.html` é usado para JavaScript.
+   O `customfooterlibs.html` é usado para o JavaScript.
 
-1. [Executar o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) para implantar as alterações.
+1. [Execute o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) para implantar as alterações.
 
 ### Ativar regras do Form Analytics para o Forms no Sites {#bind-forms-analytics-rules-to-forms-in-sites}
 
-1. Visite o **Coleta de dados do Adobe Experience Platform**.
-1. Clique em **Tags** localizado no lado esquerdo.
-1. Pesquise seu projeto com a ID do programa conforme mostrado na imagem abaixo, por exemplo, para o ambiente com URL `https://author-p45921-e175111-cmstg.adobeaemcloud.com/index.html`, a id do programa é `45921`.
+1. Visite a **Coleção de dados da Adobe Experience Platform**.
+1. Clique em **Marcas**, localizado no lado esquerdo.
+1. Pesquise seu projeto com a ID do programa conforme mostrado na imagem abaixo, por exemplo, para o ambiente com URL `https://author-p45921-e175111-cmstg.adobeaemcloud.com/index.html`, a ID do programa é `45921`.
 
-   ![Pesquisar formulário na coleção de dados](/help/forms/assets/aep-data-collection.png){width="100%"}
+   ![Pesquisar-seu-formulário-na-coleção-de-dados](/help/forms/assets/aep-data-collection.png){width="100%"}
 
-1. Adicionar configuração para **Regras de formulário** e **Elementos de dados** conforme indicado a seguir:
+1. Adicione a configuração para **Regras de formulário** e **Elementos de dados** conforme fornecido abaixo:
 
 #### Adicionar regras de formulário {#form-rules}
 
-1. Selecione seu formulário e adicione **Nova propriedade** localizado no canto superior direito ou clique no formulário.
-1. Na página de propriedades, clique em **Regras** e selecione eventos para o seu formulário. No exemplo de imagem abaixo, é **Eventos de formulário**.
+1. Selecione o formulário e adicione a **Nova propriedade**, localizada no canto superior direito, ou clique no formulário.
+1. Na página de propriedades, clique em **Regras** e selecione eventos para o formulário. Na imagem de exemplo abaixo, é **Eventos de Formulário**.
 
-   ![Pesquisar formulário na coleção de dados](/help/forms/assets/aep-form-event-properties.png){width="100%"}
+   ![Pesquisar-seu-formulário-na-coleção-de-dados](/help/forms/assets/aep-form-event-properties.png){width="100%"}
 
-1. Selecione todos os eventos do seu formulário e **copiar** que está localizado no painel superior direito.
-1. Depois de copiar, um **Copiar regra** aparece onde você pesquisa a página Sites com a ID do projeto, para colar as Regras de formulário.
+1. Selecione todos os eventos do seu formulário e **copie** que estão localizados no painel superior direito.
+1. Depois de copiar, um pop-up **Copiar regra** é exibido onde você pesquisa a página Sites com a ID do projeto para colar as Regras de formulário.
 
-   ![Copiar-formulário-regras](/help/forms/assets/copy-form-rules.png){width="100%"}
+   ![Regras de forma de cópia](/help/forms/assets/copy-form-rules.png){width="100%"}
 
 1. Clique em **copiar** para colar as regras de formulário na página Sites.
 
 #### Adicionar elementos de dados {#data-elements}
 
-1. Selecione seu formulário e adicione **Nova propriedade** localizado no canto superior direito ou clique no formulário.
-1. Na página de propriedades, clique em **Elementos de dados** e selecione eventos para o formulário.
-1. Selecione todos os eventos do seu formulário e **copiar** localizado no painel superior direito.
-1. Depois de copiar, um **Copiar regra** aparece onde você pesquisa a página Sites com a ID do projeto, para colar as Regras de formulário.
+1. Selecione o formulário e adicione a **Nova propriedade**, localizada no canto superior direito, ou clique no formulário.
+1. Na página de propriedades, clique em **Elementos de Dados** e selecione eventos para o formulário.
+1. Selecione todos os eventos do formulário e da **cópia** localizados no painel superior direito.
+1. Depois de copiar, um pop-up **Copiar regra** é exibido onde você pesquisa a página Sites com a ID do projeto para colar as Regras de formulário.
 1. Clique em **copiar** para colar as regras de formulário na página Sites.
 
-   ![Elementos de dados de formulário](/help/forms/assets/form-data-elements.png){width="100%"}
+   ![Elementos-dados-formulário](/help/forms/assets/form-data-elements.png){width="100%"}
 
 Depois de vincular as regras de Formulário e Sites por meio das etapas acima, execute as seguintes etapas para habilitar o Analytics para o seu Formulário adaptável na página Sites:
 
 1. Clique em **Fluxo de publicação** à esquerda.
-1. Clique em **Adicionar biblioteca** e digite o nome de sua preferência.
-1. No **Ambiente** à direita, selecione **desenvolvimento**.
-1. Clique em **Adicionar todos os recursos alterados**.
+1. Clique em **Adicionar biblioteca** e digite o nome que você preferir.
+1. No menu suspenso **Ambiente** à direita, selecione **desenvolvimento**.
+1. Clique Em **Adicionar Todos Os Recursos Alterados**.
 1. Clique em **Salvar e criar no desenvolvimento**.
 
-![publicação para desenvolvimento](/help/forms/assets/publish-to-dev.png){width="100%"}
+![publicar para desenvolvimento](/help/forms/assets/publish-to-dev.png){width="100%"}
 
 
 <!--

@@ -17,11 +17,11 @@ ht-degree: 12%
 
 A criação de conteúdo é um processo iterativo. A criação com eficiência requer a capacidade de ver o que foi alterado de uma iteração para outra. Visualizar uma versão da página e, em seguida, a outra é ineficiente e sujeita a erros. Um autor deseja poder comparar a página atual com uma versão anterior lado a lado com as diferenças destacadas.
 
-A comparação de páginas permite que um usuário compare a página atual com inicializações, versões anteriores e assim por diante. Para obter detalhes sobre esse recurso do usuário, consulte [Diferença de página](/help/sites-cloud/authoring/sites-console/page-diff.md).
+A comparação de páginas permite que um usuário compare a página atual com inicializações, versões anteriores e assim por diante. Para obter detalhes sobre este recurso de usuário, consulte [Diferença de Página](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 ## Detalhes da operação {#operation-details}
 
-Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada pelo AEM em segundo plano para facilitar a comparação. Essa versão anterior é necessária para renderizar o conteúdo [para comparação lado a lado](/help/sites-cloud/authoring/sites-console/page-diff.md).
+Ao comparar versões de uma página, a versão anterior que o usuário deseja comparar é recriada pelo AEM em segundo plano para facilitar a comparação. Esta versão anterior é necessária para renderizar o conteúdo [para comparação lado a lado](/help/sites-cloud/authoring/sites-console/page-diff.md).
 
 Essa operação de recreação é feita internamente pelo AEM e é transparente para o usuário e não requer nenhuma intervenção. No entanto, um administrador que visualizasse o repositório, por exemplo, no CRXDE Lite, veria essas versões recriadas na estrutura do conteúdo.
 

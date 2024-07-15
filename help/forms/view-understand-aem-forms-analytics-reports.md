@@ -27,16 +27,16 @@ Ao capturar e rastrear os principais indicadores de desempenho, as empresas pode
 
 ## Configurar Adobe Analytics para Forms adaptável {#setup-adobe-analytics-to-aem-forms}
 
-Para o relatório do AEM Forms Analytics, primeiro você integra o Adobe Analytics ao AEM Forms por meio da Automação de configuração do Experience Cloud. A Automação de configuração do Experience Cloud no Adaptive Forms exige uma licença do Adobe Analytics, Coleção de dados (antigo Adobe Launch) para gerenciar scripts de rastreamento e integração com a API do Experience Platform Launch para agilizar a agregação de dados e a geração de insights. Visita [Ativar o Adobe Analytics para um formulário adaptável usando a automação de configuração do Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) para obter informações completas sobre a configuração.
+Para o relatório do AEM Forms Analytics, primeiro você integra o Adobe Analytics ao AEM Forms por meio da Automação de configuração do Experience Cloud. A Automação de configuração do Experience Cloud no Adaptive Forms exige uma licença do Adobe Analytics, Coleção de dados (antigo Adobe Launch) para gerenciar scripts de rastreamento e integração com a API do Experience Platform Launch para agilizar a agregação de dados e a geração de insights. Visite [Habilitar Adobe Analytics para um Formulário Adaptável usando a Automação de Instalação do Experience Cloud](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md) para obter informações completas sobre a configuração.
 
 ## Exibir o relatório adaptável do Forms Adobe Analytics {#view-adobe-analytics-report}
 
-1. Na instância do AEM, acesse **[!UICONTROL Forms]** >> **[!UICONTROL Forms e Documento]**.
+1. Na sua instância do AEM, vá para **[!UICONTROL Forms]** >> **[!UICONTROL Forms e Documento]**.
 1. Selecione o formulário e veja que o Adobe Analytics está integrado, como mostrado à esquerda, à Forms ativada para o Adobe Analytics.
 
    ![Exibir Relatório](assets/activ-aa.png){width="100%"}
 
-1. Clique em **Adobe Analytics** para exibir seu relatório e analisar dados de desempenho.
+1. Clique em **Adobe Analytics** para exibir seu relatório e analisar os dados de desempenho.
 
 ## Noções básicas sobre o relatório de análise adaptável do Forms {#understanding-aem-forms-analytics-reports}
 
@@ -48,9 +48,9 @@ Ele tem as métricas Representações de formulário, Envios de formulário, Err
 
 * **Representações de formulário**: as representações de formulário revelam o número de vezes que o formulário foi renderizado ou aberto.
 
-* **Envios de formulários**: os envios de formulário indicam o número de vezes que os formulários adaptáveis são concluídos com êxito e enviados pelos usuários.
+* **Envios de formulários**: os envios de formulários indicam o número de vezes que os formulários adaptáveis são concluídos com êxito e enviados pelos usuários.
 
-* **Erros de validação**: Erro de validação exibe o número total de erros relacionados à validação que ocorreram nos campos dos formulários.
+* **Erros de validação**: o erro de validação exibe o número total de erros relacionados à validação que ocorreram nos campos dos formulários.
 
 * **Visitantes únicos**: visitantes únicos representam o número de vezes que o formulário é renderizado por um visitante. Para obter mais informações sobre visitantes únicos, consulte [Visitantes únicos, Visitas e comportamento do cliente](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
 
@@ -60,8 +60,8 @@ Ele tem as métricas Representações de formulário, Envios de formulário, Err
 
 Ele ajuda a obter insights valiosos sobre a atividade de visitantes em seus formulários:
 
-* **Visitas e envios**: descreve a frequência de visitas aos seus formulários em um intervalo de datas e o número correspondente de envios de formulários, para obter mais informações sobre esse clique [Visitas](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
-* **Visitantes únicos e seu total de visitas**: faz a distinção entre usuários novos e recorrentes. Por exemplo, um visitante pode chegar ao seu site todos os dias por um mês, mas ainda assim contam como um visitante único exclusivo. Visita [Visitantes únicos](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) para obter informações detalhadas.
+* **Visitas e envios**: descreve a frequência de visitas aos seus formulários em um intervalo de datas e o número correspondente de envios de formulários. Para obter mais informações sobre este clique, [Visitas](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html).
+* **Visitantes únicos e seu total de visitas**: faz a distinção entre usuários novos e recorrentes. Por exemplo, um visitante pode chegar ao seu site todos os dias por um mês, mas ainda assim contam como um visitante único exclusivo. Visite [Visitantes únicos](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html) para obter informações detalhadas.
 
   ![Visitantes do Forms](assets/forms-visitors.png){width="100%"}
 
@@ -71,17 +71,17 @@ O tipo de dispositivo ajuda a identificar o tipo de dispositivo usado para acess
 
 ![Tipo de dispositivo](assets/device-type.png){width="100%"}
 
-### **Discriminação geográfica** {#geographical-breakdown}
+### **Detalhamento geográfico** {#geographical-breakdown}
 
 Ela mostra o local de onde as Forms são acessadas. Ela fornece informações específicas da região sobre usuários de formulário, por exemplo, você pode ver que as informações específicas da região sobre um usuário de formulário são da Índia, conforme mostrado na imagem.
 
-![Discriminação geográfica](assets/geographical-breakdown.png){width="100%"}
+![Detalhamento geográfico](assets/geographical-breakdown.png){width="100%"}
 
 ### **Principais fontes de tráfego e formulários populares** {#top-sources-of-traffic-and-popular-forms}
 
-Isso ajuda a identificar a fonte primária ou o link de onde seus formulários são referenciados. Por exemplo, na imagem fornecida abaixo, você vê instâncias de pesquisa para seus formulários adaptáveis, onde 18,9% são **Digitado/Marcado**, 70,49% com base em **Mecanismos de pesquisa** e 24% são de **Outros sites**. Você pode definir itens de dimensão com base nos seus requisitos. Além disso, você pode classificar quais são os formulários mais visitados ou populares.
+Isso ajuda a identificar a fonte primária ou o link de onde seus formulários são referenciados. Por exemplo, na imagem fornecida abaixo, você vê instâncias de pesquisa para seus formulários adaptáveis, onde 18,9% são **Digitados/Marcados**, 70,49% com base em **Mecanismos de Pesquisa** e 24% são de **Outros Sites**. Você pode definir itens de dimensão com base nos seus requisitos. Além disso, você pode classificar quais são os formulários mais visitados ou populares.
 
-![Sites indicados](assets/referred-sites.png){width="100%"}
+![Sites referenciados](assets/referred-sites.png){width="100%"}
 
 ### **Atividade do usuário nos principais formulários** {#user-activity-on-top-forms}
 
@@ -97,15 +97,15 @@ Os usuários gastam em seus formulários ao longo do tempo, o que ajuda a identi
 
 ### **Áreas em que os visitantes precisam de assistência para preencher o formulário** {#areas-requiring-assistance}
 
-Métricas como exibições de ajuda, erros de validação e visitas de campo revelam onde os usuários precisam de assistência ou como podemos rastrear erros em campos. Por exemplo, na imagem abaixo, é possível ver isso em um formulário com campos como **Nome completo**, **Número de telefone**, **DoB**. A variável **Nome completo** O campo tem 12 visitas, das 12 visitas, 8 visitas têm erro de validação e 1 clicou no ícone de ajuda para obter uma visualização da ajuda sobre este campo. É possível ver os dados de métricas de outros campos de formulário.
+Métricas como exibições de ajuda, erros de validação e visitas de campo revelam onde os usuários precisam de assistência ou como podemos rastrear erros em campos. Por exemplo, na imagem abaixo, você vê isso em um formulário com campos como **Nome Completo**, **Número de Telefone**, **DoB**. O campo **Nome Completo** tem 12 visitas, das 12 visitas, 8 visitas têm erro de validação e 1 clicou no ícone de ajuda para exibir a ajuda sobre este campo. É possível ver os dados de métricas de outros campos de formulário.
 
 ![Áreas de assistência](assets/assisting-areas.png){width="100%"}
 
 ### **O último campo de formulário que os visitantes visualizaram antes de abandonarem o formulário** {#last-form-field-that-visitors-viewed}
 
-Ele ajuda a analisar os campos de formulário nos quais os usuários passaram tempo antes de abandonar o formulário. Por exemplo, na imagem apresentada abaixo, de 5 formulários abandonados, 2 foram deixados no campo **Nome completo**, 2 à esquerda no campo **Número de telefone**, e 1 esquerda no campo **Entrada de texto**.
+Ele ajuda a analisar os campos de formulário nos quais os usuários passaram tempo antes de abandonar o formulário. Por exemplo, na imagem a seguir, de 5 formulários abandonados, 2 restantes no campo **Nome completo**, 2 restantes no campo **Número de Telefone** e 1 esquerda no Campo **Entrada de Texto**.
 
-![Visitantes de campo](assets/field-visitors.png){width="100%"}
+![Visitantes do campo](assets/field-visitors.png){width="100%"}
 
 ## Consulte também {#see-also}
 

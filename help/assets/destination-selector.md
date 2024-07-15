@@ -14,7 +14,7 @@ ht-degree: 35%
 
 # Seletor de destino de micro front-end {#Overview}
 
-O Seletor de destino de micro front-end fornece uma interface do usuário em seu aplicativo que se integra facilmente ao [!DNL Experience Manager Assets as a Cloud Service] repositório. Você pode pesquisar ou navegar até a pasta apropriada no [!DNL Experience Manager Assets as a Cloud Service] repositório e upload de ativos do seu aplicativo.
+O Seletor de Destino de MicroFront-End fornece uma interface de usuário em seu aplicativo que se integra facilmente ao repositório [!DNL Experience Manager Assets as a Cloud Service]. Pesquise ou navegue até a pasta apropriada no repositório do [!DNL Experience Manager Assets as a Cloud Service] e carregue ativos do seu aplicativo.
 
 A interface de usuário de MicroFront-End é disponibilizada em sua experiência de aplicativo usando o pacote do Seletor de destino. Quaisquer atualizações no pacote são automaticamente importadas e o Seletor de destino implantado mais recente é carregado automaticamente no aplicativo.
 
@@ -28,9 +28,9 @@ O Seletor de destino oferece muitos benefícios, como:
 * Pesquisa de texto completo para navegar rapidamente até pastas para fazer upload de ativos do seu aplicativo.
 * Capacidade de criar pastas, classificar pastas em ordem crescente ou decrescente e exibi-las na exibição de Lista, Grade, Galeria ou Cascata.
 
-O escopo deste artigo é demonstrar como usar o Seletor de destino com uma [!DNL Adobe] aplicativo no Unified Shell ou quando você já tiver um imsToken gerado para autenticação. Esses fluxos de trabalho são chamados de fluxo não SUSI neste artigo.
+O escopo deste artigo é demonstrar como usar o Seletor de destino com um aplicativo [!DNL Adobe] no Unified Shell ou quando você já tiver um imsToken gerado para autenticação. Esses fluxos de trabalho são chamados de fluxo não SUSI neste artigo.
 
-Execute as seguintes tarefas para integrar e usar o Seletor de destino com seu [!DNL Experience Manager Assets as a Cloud Service] repositório:
+Execute as seguintes tarefas para integrar e usar o Seletor de destino com seu repositório [!DNL Experience Manager Assets as a Cloud Service]:
 
 * [Integrar seletor de destino usando o Vanilla JS](#integration-with-vanilla-js)
 * [Definir propriedades de exibição do Seletor de destino](#destination-selector-properties)
@@ -40,7 +40,7 @@ Execute as seguintes tarefas para integrar e usar o Seletor de destino com seu [
 
 É possível integrar qualquer [!DNL Adobe] ou aplicativo fora da Adobe com o repositório [!DNL Experience Manager Assets] as a [!DNL Cloud Service] no aplicativo.
 
-A integração é feita importando o pacote do Seletor de destino e se conectando aos Ativos as a Cloud Service por meio da biblioteca JavaScript do Vanilla. É necessário editar um `index.html` ou qualquer arquivo apropriado em seu aplicativo para -
+A integração é feita importando o pacote do Seletor de destino e se conectando ao Assets as a Cloud Service por meio da biblioteca JavaScript do Vanilla. Você deve editar um `index.html` ou qualquer arquivo apropriado em seu aplicativo para -
 
 * Definir os detalhes de autenticação
 * Acessar o repositório do Assets as a Cloud Service
@@ -61,7 +61,7 @@ Defina os pré-requisitos no arquivo `index.html` ou em um arquivo semelhante na
 
 ## Instalação {#installation}
 
-O Seletor de destino está disponível por meio da CDN do ESM (por exemplo, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) e [UMD](https://github.com/umdjs/umd) versão.
+O Seletor de Destino está disponível por meio da CDN ESM (por exemplo, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) e da versão [UMD](https://github.com/umdjs/umd).
 
 Nos navegadores usando a **Versão UMD** (recomendado):
 
@@ -91,7 +91,7 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ### Destino selecionado {#selected-destination}
 
-O Seletor de destino recebe uma chamada de retorno de `onItemSelect`, `onTreeToggleItem`ou `onTreeSelectionChange` com o diretório selecionado que contém o objeto (diretório, imagem e assim por diante).
+O Seletor de Destino recebe um retorno de chamada de `onItemSelect`, `onTreeToggleItem` ou `onTreeSelectionChange` com o diretório selecionado que contém o objeto (diretório, imagem, etc.).
 
 **Sintaxe do esquema**
 
@@ -141,17 +141,17 @@ A tabela a seguir descreve algumas das propriedades importantes do destino selec
 | *repo:modifiedBy* | string | O usuário ou sistema que modificou o ativo pela última vez. |
 | *repo:modifyDate* | string | A data e a hora em que o ativo foi modificado pela última vez. |
 | *dc:format* | string | O formato do ativo. |
-| *_page* | orderBy: string; count: número; | Inclui o número de página do documento. |
+| *_página* | orderBy: string; count: número; | Inclui o número de página do documento. |
 
-Para obter uma lista completa das propriedades e um exemplo detalhado, visite [Exemplo de código do seletor de destino](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+Para obter uma lista completa de propriedades e um exemplo detalhado, visite [Exemplo de Código do Seletor de Destino](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
 ### Exemplo para o fluxo não SUSI {#non-ims-vanilla}
 
-Este exemplo demonstra como usar o Seletor de destino com um fluxo não SUSI ao executar um [!DNL Adobe] aplicativo no Unified Shell ou quando você já tiver `imsToken` gerado para autenticação.
+Este exemplo demonstra como usar o Seletor de Destino com um fluxo não SUSI ao executar um aplicativo [!DNL Adobe] no Unified Shell ou quando você já tem `imsToken` gerado para autenticação.
 
-Inclua o pacote do Seletor de destino no código usando o `script` tag, conforme mostrado em _linhas 6-15_ do exemplo abaixo. Depois que o script for carregado, a variável `PureJSSelectors` A variável global está disponível para uso. Definir o seletor de destino [propriedades](#destination-selector-properties) conforme mostrado em _linhas 16-23_. As propriedades `imsOrg` e `imsToken` são necessárias para autenticação em um fluxo não SUSI. A propriedade `handleSelection` é usada para manipular os ativos selecionados. Para renderizar o Seletor de destino, chame o `renderDestinationSelector` como mencionado no _linha 17_. O Seletor de destino é exibido no `<div>` elemento de contêiner, conforme mostrado em _linhas 21 e 22_.
+Inclua o pacote do Seletor de destino no código usando a marca `script`, como mostrado nas _linhas 6-15_ do exemplo abaixo. Depois que o script é carregado, a variável global `PureJSSelectors` fica disponível para uso. Defina o Seletor de Destino [propriedades](#destination-selector-properties) conforme mostrado em _linhas 16-23_. As propriedades `imsOrg` e `imsToken` são necessárias para autenticação em um fluxo não SUSI. A propriedade `handleSelection` é usada para manipular os ativos selecionados. Para renderizar o Seletor de Destino, chame a função `renderDestinationSelector`, conforme mencionado em _linha 17_. O Seletor de Destino é exibido no elemento de contêiner `<div>`, conforme mostrado nas _linhas 21 e 22_.
 
-Ao seguir essas etapas, é possível usar o Seletor de destino com um fluxo não SUSI no [!DNL Adobe] aplicação.
+Seguindo essas etapas, você pode usar o Seletor de Destino com um fluxo não SUSI no aplicativo [!DNL Adobe].
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -190,50 +190,50 @@ Você pode usar as propriedades do Seletor de destino para personalizar a forma 
 
 | Propriedade | Tipo | Obrigatório | Padrão | Descrição |
 |---|---|---|---|---|
-| *imsOrg* | string | Sim | | A ID do Adobe Identity Management System (IMS) atribuída durante o provisionamento do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para sua organização. A variável `imsOrg` A chave é necessária para autenticar se a organização que você está acessando está no Adobe IMS ou não. |
+| *imsOrg* | string | Sim | | A ID do Adobe Identity Management System (IMS) atribuída durante o provisionamento do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para sua organização. A chave `imsOrg` é necessária para autenticar se a organização que você está acessando está no Adobe IMS ou não. |
 | *imsToken* | string | Não | | Token de portador IMS usado para autenticação. `imsToken` não é necessário se você estiver usando o fluxo SUSI. No entanto, é obrigatório se você estiver usando o fluxo não-SUSI. |
 | *apiKey* | string | Não | | Chave de API usada para acessar o serviço de Descoberta do AEM. `apiKey` não é necessário se você estiver usando o fluxo SUSI. No entanto, é obrigatório no fluxo não-SUSI. |
-| *rootPath* | string | Não | /content/dam/ | Caminho da pasta onde o Seletor de destino exibe seus ativos. O `rootPath` também pode ser usado na forma de encapsulamento. Por exemplo, dado o seguinte caminho, `/content/dam/marketing/subfolder/`, o Seletor de destino não permite que você percorra qualquer pasta pai, mas exibe apenas as pastas filho. |
+| *rootPath* | string | Não | /content/dam/ | Caminho da pasta onde o Seletor de destino exibe seus ativos. O `rootPath` também pode ser usado na forma de encapsulamento. Por exemplo, dado o seguinte caminho, `/content/dam/marketing/subfolder/`, o Seletor de Destino não permite que você percorra qualquer pasta pai, mas exibe apenas as pastas filho. |
 | *hasMore* | booleano | Não | | Quando o aplicativo tiver mais conteúdo para exibir, você poderá usar essa propriedade para adicionar um carregador que carregue o conteúdo e torná-lo visível no aplicativo. É um indicador que indica que o carregamento do conteúdo está em andamento. |
 | *orgName* | booleano | Não | | É o nome da organização (provavelmente orgID) associada ao AEM |
 | *initRepoID* | string | Não | | É o caminho do repositório de ativos que você deseja usar em uma visualização inicial padrão |
-| *onCreateFolder* | string | Não | | A variável `onCreateFolder` A propriedade permite adicionar um ícone que adiciona uma nova pasta no aplicativo. |
+| *onCreateFolder* | string | Não | | A propriedade `onCreateFolder` permite adicionar um ícone que adiciona uma nova pasta no aplicativo. |
 | *onConfirm* | string | Não | | É um retorno de chamada quando você clica no botão confirmar. |
 | *confirmDisabled* | string | Não | | Esta propriedade controla a alternância do botão de confirmação. |
-| *viewType* | string | Não | | A variável `viewType` A propriedade é usada para especificar as exibições usadas para exibir ativos. |
-| *viewTypeOptions* | string | Não | | Esta propriedade está relacionada com `viewType` propriedade. é possível especificar uma ou mais exibições para exibir ativos. As opções de tipo de exibição disponíveis são: Exibição em lista, Exibição em grade, Exibição em galeria, Exibição em cascata e Exibição em árvore. |
-| *itemNameFormatter* | string | Não | | Essa propriedade permite formatar o nome do item |
+| *viewType* | string | Não | | A propriedade `viewType` é usada para especificar os modos de exibição que você usa para exibir ativos. |
+| *viewTypeOptions* | string | Não | | Esta propriedade está relacionada com a propriedade `viewType`. é possível especificar uma ou mais exibições para exibir ativos. As opções de tipo de exibição disponíveis são: Exibição em lista, Exibição em grade, Exibição em galeria, Exibição em cascata e Exibição em árvore. |
+| *formadordenomeItem* | string | Não | | Essa propriedade permite formatar o nome do item |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Não |  | Se as traduções prontas para uso forem insuficientes para as necessidades do aplicativo, é possível expor uma interface pela qual poderá passar seus próprios valores localizados personalizados pela propriedade `i18nSymbols`. Transmitir um valor por meio dessa interface substitui as traduções padrão fornecidas e usará suas próprias traduções.  Para executar a substituição, deverá transmitir um objeto [Descritor de mensagem](https://formatjs.io/docs/react-intl/api/#message-descriptor) à chave de `i18nSymbols` que deseja substituir. |
-| *inlineAlertSetup* | string | Não | | Ele adiciona uma mensagem de alerta que você deseja passar no aplicativo. Por exemplo, adicionar uma mensagem de alerta de que Você não tem permissão para acessar essa pasta. |
+| *ConfiguraçãoDeAlertaEmLinha* | string | Não | | Ele adiciona uma mensagem de alerta que você deseja passar no aplicativo. Por exemplo, adicionar uma mensagem de alerta de que Você não tem permissão para acessar essa pasta. |
 | *intl* | Objeto | Não | | O Seletor de destino fornece traduções OOTB padrão. Você pode selecionar o idioma de tradução fornecendo uma string de idioma válida por meio da propriedade `intl.locale`. Por exemplo: `intl={{ locale: "es-es" }}` </br></br> As strings de idioma com suporte seguem os padrões [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para a representação de nomes de idiomas. </br></br> Lista de idiomas com suporte: Inglês - “en-us” (padrão) Espanhol - “es-es” Alemão - “de-de” Francês - “fr-fr” Italiano - “it-it” Japonês - “ja-jp” Coreano - “ko-kr” Português - “pt-br” Chinês (Tradicional) - “zh-cn” Chinês (Taiwan) - “zh-tw” |
 
 ## Exemplos para o uso de propriedades do Seletor de destino {#usage-examples}
 
-É possível definir o Seletor de destino [propriedades](#destination-selector-properties) no `index.html` arquivo para personalizar a exibição do Seletor de destino no aplicativo.
+Você pode definir as [propriedades](#destination-selector-properties) do Seletor de Destino no arquivo `index.html` para personalizar a exibição do Seletor de Destino no aplicativo.
 
 ### Exemplo 1: criar uma pasta no Seletor de destino
 
 O Seletor de destino permite criar uma pasta para fazer upload, mover ou copiar ativos no local específico.
 
-![create-folder-destination-seletor](assets/create-folder-destination-selector.png)
+![criar-pasta-seletor-destino](assets/create-folder-destination-selector.png)
 
 ### Exemplo 2: especificar o tipo de exibição do Seletor de destino
 
-O Seletor de destino exibe uma grande variedade de ativos em quatro exibições diferentes, incluindo a Exibição em lista, a Exibição em grade, a Exibição de galeria e a Exibição em cascata. Para especificar o tipo de exibição padrão, é possível usar `viewType` propriedade. A variável `viewTypeOptions` propriedade é usada junto com `viewType` propriedade para estipular outros tipos de exibição para que outras opções de tipo de exibição possam ser exibidas em uma lista suspensa. Um único argumento pode ser usado caso você queira que apenas uma opção seja exibida.
+O Seletor de destino exibe uma grande variedade de ativos em quatro exibições diferentes, incluindo a Exibição em lista, a Exibição em grade, a Exibição de galeria e a Exibição em cascata. Para especificar o tipo de exibição padrão, você pode usar a propriedade `viewType`. A propriedade `viewTypeOptions` é usada com a propriedade `viewType` para estipular outros tipos de exibição para que outras opções de tipo de exibição possam ser exibidas em uma lista suspensa. Um único argumento pode ser usado caso você queira que apenas uma opção seja exibida.
 
 ![viewtype-destination-seletor](assets/viewtype-destination-selector.png)
 
-### Exemplo 3: inicializar o caminho da pasta de ativos
+### Exemplo 3: caminho de inicialização da pasta do Assets
 
-Use o `path` para definir o nome da pasta que é exibido automaticamente quando o Seletor de destino é renderizado.
+Use a propriedade `path` para definir o nome da pasta que é exibido automaticamente quando o Seletor de Destino é renderizado.
 
-![initialize-folder-path](assets/initialize-folder-path.png)
+![inicializar-caminho-pasta](assets/initialize-folder-path.png)
 
 ## Utilização do seletor de destino {#using-destination-selector}
 
-Depois que o Seletor de destino estiver configurado e você estiver autenticado para usar o Seletor de destino com sua [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] , você pode selecionar ativos ou executar várias outras operações para pesquisar seus ativos no repositório.
+Depois que o Seletor de destino estiver configurado e você estiver autenticado para usar o Seletor de destino com seu [!DNL Adobe Experience Manager] como um aplicativo do [!DNL Cloud Service], será possível selecionar ativos ou executar várias outras operações para pesquisar seus ativos no repositório.
 
-![using-destination-seletor](assets/using-destination-selector.png)
+![usando-seletor-de-destino](assets/using-destination-selector.png)
 
 * **A**: [Barra de pesquisa](#search-bar)
 * **B**: [Classificação](#sorting)
@@ -252,17 +252,17 @@ O Seletor de destino permite executar uma pesquisa de texto completo dos ativos 
 
 Você pode classificar ativos no Seletor de destino por nome, dimensão ou tamanho de um ativo. Também é possível classificar os ativos em ordem crescente ou decrescente.
 
-### Repositório de ativos {#assets-repo}
+### Repositório do Assets {#assets-repo}
 
-O Seletor de destino também permite exibir os dados do repositório de sua escolha disponíveis no aplicativo AEM. Você pode usar `repositoryID` propriedade para inicializar o caminho da pasta de destino que você deseja visualizar na primeira instância do Seletor de destino.
+O Seletor de destino também permite exibir os dados do repositório de sua escolha disponíveis no aplicativo AEM. Você pode usar a propriedade `repositoryID` para inicializar o caminho da pasta de destino que deseja exibir na primeira instância do Seletor de Destino.
 
 ### Adicionar sufixo ou prefixo {#add-suffix-or-prefix}
 
-É um exemplo da `optionsFormSetup` propriedade. Você pode usar isso para confirmar a seleção, ela será transmitida ao `onConfirm` evento.
+É um exemplo da propriedade `optionsFormSetup`. Você pode usar isso para confirmar a seleção, ela é passada no evento `onConfirm`.
 
 ### Criar uma pasta {#create-new-folder}
 
-Ele permite criar uma pasta na pasta de destino do seu [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
+Ele permite criar uma pasta na pasta de destino do seu [!DNL Adobe Experience Manager] como [!DNL Cloud Service].
 
 ### Tipos de visualização {#types-of-view}
 
@@ -279,4 +279,4 @@ O ícone de informações ou informações permite visualizar metadados do ativo
 
 ### Selecionar pasta {#select-folder}
 
-O botão Selecionar pasta permite selecionar ativos para executar várias operações associadas a [propriedades](#destination-selector-properties) no seletor de destino.
+O botão Selecionar pasta permite selecionar ativos para executar várias operações associadas às [propriedades](#destination-selector-properties) no seletor de destino.

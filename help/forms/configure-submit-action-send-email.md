@@ -15,13 +15,13 @@ ht-degree: 1%
 
 # Configurar a ação de envio Enviar email para um formulário adaptável
 
-A variável **[!UICONTROL Enviar e-mail]** A ação enviar permite enviar um email para um ou mais recipients após o envio bem-sucedido do formulário. Essa ação de envio permite criar um email que pode incluir dados de formulário em um formato predefinido. Por exemplo, considere o seguinte modelo em que o nome do cliente, o endereço de entrega, o nome do estado e o CEP são recuperados dos dados de formulário enviado:
+A Ação de Envio **[!UICONTROL Enviar Email]** permite enviar um email para um ou mais destinatários após o envio bem-sucedido do formulário. Essa ação de envio permite criar um email que pode incluir dados de formulário em um formato predefinido. Por exemplo, considere o seguinte modelo em que o nome do cliente, o endereço de entrega, o nome do estado e o CEP são recuperados dos dados de formulário enviado:
 
 
     &quot;
-    Olá ${customer_Name},
+    Olá, ${customer_Name},
     
-    O endereço a seguir é definido como o endereço de entrega padrão:
+    Os itens a seguir estão definidos como seu endereço de entrega padrão:
     ${customer_Name},
     ${customer_Shipping_Address},
     ${customer_State},
@@ -45,20 +45,20 @@ Algumas vantagens de configurar um Formulário adaptável com a ação Enviar em
 
 Para configurar a Ação de envio:
 
-1. Abra o Navegador de conteúdo e selecione a variável **[!UICONTROL Contêiner do guia]** componente do seu Formulário adaptável.
-1. Clique nas propriedades do Container do guia ![Propriedades do guia](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável é aberta.
-1. Clique em  **[!UICONTROL Envio]** guia.
-1. No **[!UICONTROL Ação de envio]** selecione **[!UICONTROL Enviar e-mail]**.
+1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
+1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
+1. Clique na guia **[!UICONTROL Envio]**.
+1. Na lista suspensa **[!UICONTROL Enviar Ação]**, selecione **[!UICONTROL Enviar email]**.
 
-   ![Configuração de ação de Enviar email](/help/forms/assets/send-email-action-configuration.gif)
-1. Especificar a ID de email do remetente na **[!UICONTROL De]** caixa de texto.
-1. Adicione a ID de email do recipient na **[!UICONTROL Para]** caixa de texto. É possível adicionar vários destinatários clicando no ícone **[!UICONTROL Adicionar]** botão.
-1. [Opcional] Adicione o recipient para CC e CCO clicando no link **[!UICONTROL Adicionar]** botão.
-1. Especifique uma linha de assunto na **[!UICONTROL Assunto]** caixa de texto.
+   ![Configuração de ação de Enviar Email](/help/forms/assets/send-email-action-configuration.gif)
+1. Especifique a ID de email do remetente na caixa de texto **[!UICONTROL De]**.
+1. Adicionar a ID de email do destinatário na caixa de texto **[!UICONTROL A]**. Você pode adicionar vários destinatários clicando no botão **[!UICONTROL Adicionar]**.
+1. [Opcional] Adicione o destinatário para CC e CCO clicando no botão **[!UICONTROL Adicionar]**.
+1. Especifique uma linha de assunto na caixa de texto **[!UICONTROL Assunto]**.
 1. Adicione um template de email para configurar a ação de envio de email.
-   * Você pode especificar o caminho para o modelo de email externo salvo nos ativos AEM usando o **[!UICONTROL Caminho do modelo externo]** opção.
-   * Você também pode adicionar um modelo de email personalizado para o envio do formulário na **[!UICONTROL Modelo de e-mail]** caixa de texto.
-1. [Opcional] A variável **[!UICONTROL Enviar e-mail]** Submeter Ação fornece a opção de incluir anexos e uma [Documento de registro (DoR)](generate-document-of-record-core-components.md) com o email.
+   * Você pode especificar o caminho para o modelo de email externo salvo nos ativos AEM usando a opção **[!UICONTROL Caminho do Modelo Externo]**.
+   * Você também pode adicionar um modelo de email personalizado para o envio do formulário na caixa de texto **[!UICONTROL Modelo de email]**.
+1. [Opcional] A Ação de Envio **[!UICONTROL Enviar Email]** fornece a opção de incluir anexos e um [Documento de Registro (DoR)](generate-document-of-record-core-components.md) no email.
 1. Clique em **[!UICONTROL Concluído]**.
 
 ## Práticas recomendadas {#best-practices}

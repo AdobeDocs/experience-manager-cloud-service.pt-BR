@@ -361,7 +361,7 @@ Para personalizar o fragmento:
    >
    >* um caminho que contenha um subconjunto dos armazenamentos definidos no ContextHub configurado para a página
    >
-   >A variável **Caminho de segmentos** selecionado na **Personalização** deve ser:
+   >O **Caminho dos Segmentos** selecionado na guia **Personalization** deve ser:
    >
    >* o mesmo caminho que o configurado para a página em que o fragmento é renderizado
    >

@@ -30,13 +30,13 @@ Execute as seguintes etapas para adicionar o complemento AEM Assets ao Adobe Exp
 
 1. Abra uma nova tela em branco carregando um novo modelo ou projeto ou criando um ativo.
 
-1. Clique em **[!UICONTROL Complementos]** disponível no painel de navegação esquerdo.
+1. Clique em **[!UICONTROL Complementos]** disponíveis no painel de navegação esquerdo.
 
-1. Especificar **[!UICONTROL AEM Assets]** na barra de pesquisa disponível na parte superior do [!UICONTROL Complementos] e clique no complemento AEM Assets.
+1. Especifique o **[!UICONTROL AEM Assets]** na barra de pesquisa disponível na parte superior da seção [!UICONTROL Complementos] e clique no complemento AEM Assets.
 
    ![Complemento do AEM Assets](assets/aem-assets-add-on.png)
 
-1. Clique em **[!UICONTROL Adicionar]**. O complemento é exibido na lista de **[!UICONTROL Seus complementos]** seção. Clique no complemento novamente para exibir o conteúdo no painel de navegação direito. O complemento exibe a lista de repositórios que você está autorizado a acessar, juntamente com a lista de ativos e pastas disponíveis no nível raiz.
+1. Clique em **[!UICONTROL Adicionar]**. O complemento é exibido na seção lista de **[!UICONTROL Seus complementos]**. Clique no complemento novamente para exibir o conteúdo no painel de navegação direito. O complemento exibe a lista de repositórios que você está autorizado a acessar, juntamente com a lista de ativos e pastas disponíveis no nível raiz.
 
    Use a barra de pesquisa para pesquisar ativos que você precisa usar na tela.
 
@@ -57,11 +57,11 @@ Depois de adicionar o complemento AEM Assets ao Adobe Express, você pode começ
 
 Depois de incorporar as modificações apropriadas na tela Express, você pode salvá-la no repositório do AEM Assets.
 
-1. Clique em **[!UICONTROL Salvar]** para abrir o **[!UICONTROL Carregar]** diálogo.
+1. Clique em **[!UICONTROL Salvar]** para abrir a caixa de diálogo **[!UICONTROL Carregar]**.
 1. Especifique um nome e um formato para o ativo. Você pode salvar o conteúdo da tela de desenho nos tipos de formato PNG ou JPEG.
 
-1. Clique no ícone de pasta adjacente ao **[!UICONTROL Localização]** navegue até o local onde precisa salvar o ativo e clique em **[!UICONTROL Selecionar]**. O nome da pasta é exibido no campo **[!UICONTROL Localização]** campo.
+1. Clique no ícone de pasta adjacente ao campo **[!UICONTROL Local]**, navegue até o local onde você precisa salvar o ativo e clique em **[!UICONTROL Selecionar]**. O nome da pasta é exibido no campo **[!UICONTROL Local]**.
 
-1. Clique em **[!UICONTROL Carregar]** para fazer upload do ativo para o AEM Assets.
+1. Clique em **[!UICONTROL Carregar]** para carregar o ativo para o AEM Assets.
 
    ![Salvar ativos no AEM](assets/aem-assets-add-on-save.png)

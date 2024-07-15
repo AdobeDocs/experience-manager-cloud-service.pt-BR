@@ -73,4 +73,4 @@ Para resolver o problema, defina o cabeçalho de idade como 0:
    ```
 
 1. Salvar e fechar o arquivo.
-1. Modificar o link flexível para `src\conf.d\enabled_vhosts\default.vhost` para apontar para o novo arquivo.
+1. Modifique o soft link de `src\conf.d\enabled_vhosts\default.vhost` para apontar para o novo arquivo.

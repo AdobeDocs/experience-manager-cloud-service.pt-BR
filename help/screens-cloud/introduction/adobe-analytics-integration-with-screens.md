@@ -26,7 +26,7 @@ Esta seção abrange os seguintes tópicos:
 
 ## Visão geral {#overview}
 
-***AEM Screens*** A utiliza o Adobe Analytics e, com isso, você pode alcançar algo único no mercado: o cross-channel analytics, que ajuda a correlacionar o conteúdo mostrado no local com outras fontes de dados.
+O ***AEM Screens*** aproveita o Adobe Analytics e, com ele, você pode alcançar algo exclusivo no mercado: a análise entre canais, que ajuda a correlacionar o conteúdo mostrado localmente com outras fontes de dados.
 
 O AEM Screens fornece uma integração imediata com o Adobe Analytics e uma prova de atividade.
 
@@ -39,7 +39,7 @@ Esta seção descreve a seguinte funcionalidade envolvida na conexão de um proj
 * Permite a criação de loops de comentários que rastreiam eventos de reprodução ao longo do tempo
 * Permite que o sistema modifique o conteúdo e os layouts com base nos critérios de sucesso definidos pelo autor de conteúdo
 
-A integração do Adobe Analytics com o AEM Screens impõe o seguinte *metas*:
+A Integração do Adobe Analytics com o AEM Screens aplica as seguintes *metas*:
 
 * Habilitar o ROI de implementações de sinalização digital
 * Integre o Analytics como base para viabilização futura da coleta e análise de informações de uso
@@ -63,4 +63,4 @@ Esse cenário invoca a API do Analytics por meio de chamadas REST de um serviço
 Os eventos do Analytics são armazenados offline no indexedDB e, posteriormente, fragmentados e enviados para a nuvem.
 
 >[!NOTE]
->Para saber mais sobre o Sequenciamento e o Modelo de dados padrão para eventos, consulte [Configuração do Adobe Analytics para AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) para obter detalhes.
+>Para saber mais sobre o Sequenciamento e o Modelo de Dados Padrão para Eventos, consulte [Configuração do Adobe Analytics para AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) para obter detalhes.

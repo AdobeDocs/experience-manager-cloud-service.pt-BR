@@ -49,21 +49,21 @@ Siga as etapas abaixo para usar a miniatura em vídeos:
 
 1. Adicione ou edite um componente de vídeo existente, como mostrado na figura abaixo.
 
-   ![Imagem destacada de um ativo de vídeo](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
+   ![Imagem realçada de um ativo de vídeo](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
 
 1. Adicione ou edite um componente de vídeo existente, como mostrado na figura abaixo.
 
-1. Selecione o vídeo e clique no botão Configurar (*chave inglesa*) para abrir as propriedades do vídeo.
+1. Selecione o vídeo e clique no ícone Configurar (*chave inglesa*) para abrir as propriedades do vídeo.
 
    ![Imagem de ativo de vídeo selecionada com seta apontando para o ícone Configurar, retratado como uma chave inglesa. na barra de ferramentas](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
-1. A variável **Vídeo** é aberta, onde você pode exibir a **Miniatura** área de lançamento.
+1. A caixa de diálogo **Vídeo** é aberta, onde você pode exibir a zona de destino **Miniatura**.
 
-   ![Caixa de diálogo Vídeo mostrando a imagem do ativo de vídeo e a caixa de depósito Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
+   ![Caixa de diálogo de vídeo mostrando a imagem do ativo de vídeo e a caixa de depósito de Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
-1. Arraste e solte uma imagem do seletor de ativos para a **Miniatura** área designada e clique em **Concluído**.
+1. Arraste e solte uma imagem do seletor de ativos na zona de destino **Miniatura** e clique em **Concluído**.
 
-   ![O seletor de imagem de ativo é mostrado atrás da caixa de diálogo Vídeo com o ativo de imagem mostrado na caixa de depósito Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
+   ![Seletor de imagem de ativo mostrado atrás da caixa de diálogo Vídeo com ativo de imagem mostrado na caixa de depósito Miniatura](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
 1. Clique em **Visualizar**.
 

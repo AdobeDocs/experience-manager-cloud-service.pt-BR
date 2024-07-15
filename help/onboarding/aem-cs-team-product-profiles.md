@@ -26,7 +26,7 @@ O AEM as a Cloud Service é uma oferta em nuvem totalmente nativa que fornece o 
 
 Os membros da sua equipe do AEM as a Cloud Service são adicionados e atribuídos a um ou mais dos seguintes perfis de produto por meio do Admin Console durante a integração.
 
-* **Administradores de AEM**: um administrador de AEM normalmente é atribuído aos desenvolvedores, especialmente a desenvolvedores que precisam de acesso, por exemplo, aos ambientes de desenvolvimento. O perfil de produto de admin do AEM será usado para conceder privilégios de administração na instância associada do AEM.
+* **Administradores do AEM**: normalmente, um administrador do AEM é atribuído aos desenvolvedores, especialmente a desenvolvedores que precisam de acesso, por exemplo, aos ambientes de desenvolvimento. O perfil de produto de admin do AEM será usado para conceder privilégios de administração na instância associada do AEM.
 
 * **Usuários do AEM**: são os usuários em sua organização que geralmente usam o AEM as a Cloud Service para criar conteúdo. Esses usuários precisam acessar o AEM para realizar suas tarefas. O perfil de produto dos usuários do AEM normalmente é atribuído a um autor de conteúdo do AEM que cria e revisa conteúdo. Esse conteúdo pode ser de vários tipos, como páginas, ativos, publicações etc. O perfil de produto dos usuários do AEM mostrado abaixo é atribuído a esses membros.
 
@@ -44,7 +44,7 @@ Os membros da sua equipe do AEM as a Cloud Service são adicionados e atribuído
 
 >[!TIP]
 >
->* Para saber mais sobre perfis de produto AEM, consulte [Atribuição de perfis de produto do AEM](/help/journey-onboarding/assign-profiles-aem.md).
+>* Para saber mais sobre perfis de produtos AEM, consulte [Atribuir perfis de produtos AEM](/help/journey-onboarding/assign-profiles-aem.md).
 >* Para obter mais informações sobre o processo de integração, consulte a [jornada de integração](/help/journey-onboarding/overview.md).
 
 ## Perfis de produto do Cloud Manager {#cloud-manager-product-profiles}
@@ -66,9 +66,9 @@ Cada um dos perfis de produto tem permissões específicas associadas a eles.
 * **Desenvolvedor**
    * Nesta função, você tem permissão para gerar tokens de acesso pessoal para acessar o Git.
    * Esse usuário desenvolve e testa o código de aplicativo personalizado e usa principalmente o Cloud Manager para visualizar o status da implantação e acessar o repositório Git para confirmações de código.
-* **Gerente de programa**
+* **Gerente de programas**
    * Nessa função, você tem permissão para agendar pipelines, substituir os quality gates (portais de qualidade) de três níveis e fornecer aprovação de produção.
-   * Esse usuário usa o Cloud Manager para executar a configuração da equipe, revisar o status, visualizar KPIs e, quando necessário, pode aprovar falhas de nível 3 importantes.
+   * Esse usuário usa o Cloud Manager para executar a configuração da equipe, revisar o status, visualizar KPIs e pode aprovar falhas de nível 3 importantes, quando necessário.
 
 Um usuário pode ser atribuído a vários perfis de produto. Por exemplo, atribuir as funções **Proprietário da empresa** e **Gerente de implantação** a um usuário fornecerá a ele a soma dessas permissões.
 
@@ -84,5 +84,5 @@ A equipe do Cloud Manager incluirá pelo menos:
 
 >[!TIP]
 >
->* Para saber mais sobre os perfis de produto do Cloud Manager, consulte [Atribuir membros da equipe aos perfis de produto do Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+>* Para saber mais sobre perfis de produtos do Cloud Manager, consulte [Atribuição de membros da equipe aos perfis de produto do Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 >* Para obter mais informações sobre o processo de integração, consulte a [jornada de integração](/help/journey-onboarding/overview.md).

@@ -28,14 +28,14 @@ O AEM Forms é compatível com funções personalizadas, permitindo que os usuá
 
 >[!NOTE]
 >
-> Certifique-se de que o [componente principal](https://github.com/adobe/aem-core-forms-components) está definido com a versão mais recente para usar os recursos mais recentes.
+> Verifique se o [componente principal](https://github.com/adobe/aem-core-forms-components) está definido como a versão mais recente para usar os recursos mais recentes.
 
 ### Usos de funções personalizadas {#uses-of-custom-function}
 
 As vantagens de usar funções personalizadas no Adaptive Forms são:
-* **Tratamento de dados**: as funções personalizadas ajudam a processar dados inseridos nos campos de formulários.
-* **Validação de dados**: As funções personalizadas permitem que você execute verificações personalizadas nas entradas do formulário e forneça mensagens de erro especificadas.
-* **Comportamento dinâmico**: as funções personalizadas permitem controlar o comportamento dinâmico dos formulários com base em condições específicas. Por exemplo, você pode mostrar/ocultar campos, modificar valores de campo ou ajustar a lógica do formulário dinamicamente.
+* **Processamento de dados**: as funções personalizadas ajudam a processar dados inseridos nos campos de formulários.
+* **Validação de dados**: as funções personalizadas permitem que você execute verificações personalizadas nas entradas do formulário e forneça mensagens de erro especificadas.
+* **Comportamento dinâmico**: as funções personalizadas permitem que você controle o comportamento dinâmico de seus formulários com base em condições específicas. Por exemplo, você pode mostrar/ocultar campos, modificar valores de campo ou ajustar a lógica do formulário dinamicamente.
 * **Integração**: você pode usar funções personalizadas para integrar-se a APIs ou serviços externos. Ele ajuda a buscar dados de fontes externas, enviar dados para endpoints Rest externos ou executar ações personalizadas com base em eventos externos.
 
 As funções personalizadas são essencialmente bibliotecas de clientes adicionadas ao arquivo do JavaScript. Depois de criar uma função personalizada, ela fica disponível no editor de regras para seleção pelo usuário em um Formulário adaptável. As funções personalizadas são identificadas pelas anotações do JavaScript no editor de regras.
@@ -52,8 +52,8 @@ O nome é usado para identificar a função personalizada no editor de regras de
 * `@function [functionName] <Function Name>`
 * `@func [functionName] <Function Name>`.
   `functionName` é o nome da função. Espaços não são permitidos.
-  `<Function Name>` é o nome de exibição da função no editor de regras de um Formulário adaptável.
-Se o nome da função for idêntico ao nome da própria função, você poderá omitir `[functionName]` na sintaxe.
+  `<Function Name>` é o nome para exibição da função no editor de regras de um Formulário adaptável.
+Se o nome da função for idêntico ao nome da própria função, você poderá omitir `[functionName]` da sintaxe.
 
 #### Parâmetro
 
@@ -67,11 +67,11 @@ O parâmetro é uma lista de argumentos usados por funções personalizadas. Uma
    * string: representa um único valor de string.
    * number: representa um único valor numérico.
    * booleano: representa um único valor booleano (verdadeiro ou falso).
-   * string[]: representa uma matriz de valores de cadeia de caracteres.
+   * cadeia de caracteres []: representa uma matriz de valores de cadeia de caracteres.
    * número[]: representa uma matriz de valores numéricos.
    * booleano[]: representa uma matriz de valores booleanos.
    * date: representa um único valor de data.
-   * data[]: representa uma matriz de valores de data.
+   * date[]: representa uma matriz de valores de data.
    * array: representa uma matriz genérica contendo valores de vários tipos.
    * object: representa o objeto de formulário passado para uma função personalizada em vez de passar seu valor diretamente.
    * escopo: representa o objeto global, que contém variáveis somente leitura, como instâncias de formulário, instâncias de campo de destino e métodos para executar modificações de formulário em funções personalizadas. Ele é declarado como o último parâmetro nas anotações do JavaScript e não está visível no editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário. Para obter mais informações sobre o objeto Globals e como usá-lo, [clique aqui](/help/forms/create-and-use-custom-functions.md#support-field-and-global-objects).
@@ -80,8 +80,8 @@ O tipo de parâmetro não diferencia maiúsculas de minúsculas e espaços não 
 
 `<Parameter Description>` contém detalhes sobre a finalidade do parâmetro. Ele pode ter várias palavras.
 
-**Parâmetros opcionais**
-Por padrão, todos os parâmetros são obrigatórios. Você pode definir um parâmetro como opcional adicionando `=` após o tipo de parâmetro ou ao delimitar o nome do parâmetro em  `[]`. Os parâmetros definidos como opcionais nas anotações do JavaScript são exibidos como opcionais no editor de regras.
+**Parâmetros Opcionais**
+Por padrão, todos os parâmetros são obrigatórios. Você pode definir um parâmetro como opcional adicionando `=` após o tipo de parâmetro ou delimitando o nome do parâmetro em `[]`. Os parâmetros definidos como opcionais nas anotações do JavaScript são exibidos como opcionais no editor de regras.
 Para definir uma variável como parâmetro opcional, você pode usar qualquer uma das seguintes sintaxes:
 
 * `@param {type=} Input1`
@@ -96,7 +96,7 @@ Na linha de código acima, `Input1` é um parâmetro opcional sem nenhum valor p
 Na linha de código acima, `Input1` é um parâmetro opcional sem nenhum valor padrão. Para declarar parâmetro opcional com valor padrão:
 `@param {array} [input1=<value>]`
 `input1` é um parâmetro opcional do tipo matriz com o valor padrão definido como `value`.
-Certifique-se de que o tipo de parâmetro esteja entre chaves {} e o nome do parâmetro está entre colchetes.
+Verifique se o tipo de parâmetro está entre chaves {} e se o nome do parâmetro está entre colchetes.
 
 Considere o seguinte trecho de código, em que input2 é definido como um parâmetro opcional:
 
@@ -118,9 +118,9 @@ Considere o seguinte trecho de código, em que input2 é definido como um parâm
         }
 ```
 
-A ilustração a seguir é exibida usando o `OptionalParameterFunction` função personalizada no editor de regras:
+A ilustração a seguir é exibida usando a função personalizada `OptionalParameterFunction` no editor de regras:
 
-![Parâmetros opcionais ou obrigatórios ](/help/forms/assets/optional-default-params.png)
+![Parâmetros ](/help/forms/assets/optional-default-params.png) opcionais ou obrigatórios
 
 Você pode salvar a regra sem especificar um valor para os parâmetros necessários, mas a regra não é executada e exibe uma mensagem de aviso como:
 
@@ -140,11 +140,11 @@ O tipo de retorno especifica o tipo de valor que a função personalizada retorn
    * string: representa um único valor de string.
    * number: representa um único valor numérico.
    * booleano: representa um único valor booleano (verdadeiro ou falso).
-   * string[]: representa uma matriz de valores de cadeia de caracteres.
+   * cadeia de caracteres []: representa uma matriz de valores de cadeia de caracteres.
    * número[]: representa uma matriz de valores numéricos.
    * booleano[]: representa uma matriz de valores booleanos.
    * date: representa um único valor de data.
-   * data[]: representa uma matriz de valores de data.
+   * date[]: representa uma matriz de valores de data.
    * array: representa uma matriz genérica contendo valores de vários tipos.
    * object: representa o objeto de formulário diretamente em vez do seu valor.
 
@@ -217,7 +217,7 @@ Se o usuário não adicionar anotações JavaScript à função personalizada, a
 
 ## Criar uma função personalizada {#create-custom-function}
 
-Crie uma biblioteca do cliente para chamar funções personalizadas no editor de regras. Para obter mais informações, consulte [Uso de bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
+Crie uma biblioteca do cliente para chamar funções personalizadas no editor de regras. Para obter mais informações, consulte [Usando bibliotecas do lado do cliente](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 
 As etapas para criar funções personalizadas são:
 1. [Criar uma biblioteca do cliente](#create-client-library)
@@ -230,17 +230,17 @@ Antes de começar a adicionar uma função personalizada ao Adaptive Forms, veri
 
 **Software:**
 
-* **Editor de texto sem formatação (IDE)**: Embora qualquer editor de texto simples possa funcionar, um IDE (Integrated Development Environment, ambiente de desenvolvimento integrado), como o Microsoft Visual Studio Code, oferece recursos avançados para facilitar a edição.
+* **Editor de Texto sem Formatação (IDE)**: embora qualquer editor de texto sem formatação possa funcionar, um IDE (Ambiente de Desenvolvimento Integrado) como o Microsoft Visual Studio Code oferece recursos avançados para facilitar a edição.
 
-* **Git:** Este sistema de controle de versão é necessário para gerenciar alterações de código. Se não estiver instalado, baixe-o de https://git-scm.com.
+* **Git:** este sistema de controle de versão é necessário para gerenciar alterações de código. Se não estiver instalado, baixe-o de https://git-scm.com.
 
 ### Criar uma biblioteca do cliente {#create-client-library}
 
 É possível adicionar funções personalizadas adicionando uma biblioteca do cliente. Para criar uma biblioteca do cliente, execute as seguintes etapas:
 
-**Clonar o repositório**
+**Clonar o Repositório**
 
-Clonar seu [as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
+Clonar o [Repositório as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git):
 
 1. Abra a linha de comando ou a janela do terminal.
 
@@ -250,23 +250,23 @@ Clonar seu [as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/
 
    `git clone [Git Repository URL]`
 
-Este comando faz o download do repositório e cria uma pasta local do repositório clonado no computador. Neste guia, nos referimos a essa pasta como a [Diretório de projeto do AEMaaCS].
+Este comando faz o download do repositório e cria uma pasta local do repositório clonado no computador. Neste guia, nos referimos a essa pasta como o [diretório do projeto AEMaaCS].
 
 **Adicionar uma pasta da biblioteca do cliente**
 
-Para adicionar uma nova pasta da biblioteca do cliente à [Diretório de projeto do AEMaaCS], siga estas etapas:
+Para adicionar uma nova pasta da biblioteca do cliente ao [diretório do projeto AEMaaCS], siga estas etapas:
 
-1. Abra o [Diretório de projeto do AEMaaCS] em um editor.
+1. Abra o [diretório do projeto AEMaaCS] em um editor.
 
    ![estrutura de pasta de função personalizada](/help/forms/assets/custom-library-folder-structure.png)
 
 1. Localizar `ui.apps`.
-1. Adicionar nova pasta. Por exemplo, adicione uma pasta chamada como `experience-league`.
-1. Navegue até `/experience-league/` e adicionar uma `ClientLibraryFolder`. Por exemplo, crie uma pasta da biblioteca do cliente chamada como `customclientlibs`.
+1. Adicionar nova pasta. Por exemplo, adicione uma pasta chamada `experience-league`.
+1. Navegue até a pasta `/experience-league/` e adicione um `ClientLibraryFolder`. Por exemplo, crie uma pasta da biblioteca do cliente chamada `customclientlibs`.
 
    `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/`
 
-**Adicionar arquivos e pastas à pasta Biblioteca do cliente**
+**Adicionar arquivos e pastas à pasta da Biblioteca do Cliente**
 
 Adicione o seguinte à pasta da biblioteca do cliente adicionada:
 
@@ -276,7 +276,7 @@ Adicione o seguinte à pasta da biblioteca do cliente adicionada:
 
 `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
 
-1. No `.content.xml` adicione as seguintes linhas de código:
+1. Em `.content.xml`, adicione as seguintes linhas de código:
 
    ```javascript
    <?xml version="1.0" encoding="UTF-8"?>
@@ -287,15 +287,15 @@ Adicione o seguinte à pasta da biblioteca do cliente adicionada:
 
    >[!NOTE]
    >
-   > Você pode escolher qualquer nome para `client library folder` e `categories` propriedade.
+   > Você pode escolher qualquer nome para a propriedade `client library folder` e `categories`.
 
-1. No `js.txt` adicione as seguintes linhas de código:
+1. Em `js.txt`, adicione as seguintes linhas de código:
 
    ```javascript
          #base=js
        function.js
    ```
-1. No `js` , adicione o arquivo javascript como `function.js` que inclui as funções personalizadas:
+1. Na pasta `js`, adicione o arquivo javascript como `function.js`, o que inclui as funções personalizadas:
 
    ```javascript
     /**
@@ -325,7 +325,7 @@ Adicione o seguinte à pasta da biblioteca do cliente adicionada:
 
 **Incluir a nova pasta no filter.xml**:
 
-1. Navegue até a `/ui.apps/src/main/content/META-INF/vault/filter.xml` arquivo em seu [Diretório de projeto do AEMaaCS].
+1. Navegue até o arquivo `/ui.apps/src/main/content/META-INF/vault/filter.xml` no seu [diretório do projeto AEMaaCS].
 
 1. Abra o arquivo e adicione a seguinte linha no final:
 
@@ -334,9 +334,9 @@ Adicione o seguinte à pasta da biblioteca do cliente adicionada:
 
 ![xml de filtro de função personalizada](/help/forms/assets/custom-function-filterxml.png)
 
-**Implante a pasta da biblioteca do cliente recém-criada no ambiente AEM**
+**Implante a pasta da biblioteca do cliente recém-criada no seu ambiente AEM**
 
-Implantar o AEM as a Cloud Service, [Diretório de projeto do AEMaaCS], para o ambiente de Cloud Service. Para implantar no ambiente de Cloud Service:
+Implante o AEM as a Cloud Service, [diretório do projeto AEMaaCS], no seu ambiente Cloud Service. Para implantar no ambiente de Cloud Service:
 
 1. Confirmar as alterações
 
@@ -354,30 +354,30 @@ Implantar o AEM as a Cloud Service, [Diretório de projeto do AEMaaCS], para o a
 
 Se você ainda não tiver configurado um pipeline, consulte o manual sobre [como configurar um pipeline para o AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline).
 
-Depois que o pipeline for executado com êxito, a função personalizada adicionada à biblioteca do cliente ficará disponível no [Editor de regras do Formulário adaptável](/help/forms/rule-editor-core-components.md).
+Depois que o pipeline for executado com êxito, a função personalizada adicionada à biblioteca do cliente ficará disponível em seu [editor de regras de Formulário adaptável](/help/forms/rule-editor-core-components.md).
 
 ### Adicionar a biblioteca do cliente a um Formulário adaptável{#use-custom-function}
 
 Depois de implantar a biblioteca do cliente no ambiente do Forms CS, use os recursos dela no Formulário adaptável. Para adicionar a biblioteca do cliente no Formulário adaptável
 
-1. Abra o formulário no modo de edição. Para abrir um formulário no modo de edição, selecione um formulário e **[!UICONTROL Editar]**.
-1. Abra o Navegador de conteúdo e selecione a variável **[!UICONTROL Contêiner do guia]** componente do seu Formulário adaptável.
-1. Clique nas propriedades do Container do guia ![Propriedades do guia](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável é aberta.
-1. Abra o **[!UICONTROL Básico]** e selecione o nome da variável **[!UICONTROL categoria da biblioteca do cliente]** na lista suspensa (nesse caso, selecione `customfunctionscategory`).
+1. Abra o formulário no modo de edição. Para abrir um formulário no modo de edição, selecione um formulário e selecione **[!UICONTROL Editar]**.
+1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
+1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
+1. Abra a guia **[!UICONTROL Básico]** e selecione o nome da **[!UICONTROL categoria da biblioteca do cliente]** na lista suspensa (neste caso, selecione `customfunctionscategory`).
 
-   ![Adição da biblioteca de cliente de função personalizada](/help/forms/assets/clientlib-custom-function.png)
+   ![Adicionando a biblioteca cliente de função personalizada](/help/forms/assets/clientlib-custom-function.png)
 
    >[!NOTE]
    >
-   > É possível adicionar várias categorias especificando uma lista separada por vírgulas na **[!UICONTROL Categoria da biblioteca do cliente]** campo.
+   > É possível adicionar várias categorias especificando uma lista separada por vírgulas no campo **[!UICONTROL Categoria da biblioteca do cliente]**.
 
 1. Clique em **[!UICONTROL Concluído]**.
 
-Você pode usar a função personalizada no [editor de regras de um Formulário adaptável](/help/forms/rule-editor-core-components.md) usando o [Anotações do JavaScript](##js-annotations).
+Você pode usar a função personalizada no [editor de regras de um Formulário Adaptável](/help/forms/rule-editor-core-components.md) usando as [anotações do JavaScript](##js-annotations).
 
 ## Uso de uma função personalizada em um Formulário adaptável
 
-Em um Formulário adaptável, é possível usar [funções personalizadas no editor de regras](/help/forms/rule-editor-core-components.md). Vamos adicionar o seguinte código ao arquivo JavaScript (`Function.js` arquivo) para calcular a idade com base na Data de nascimento (AAAA-MM-DD). Criar uma função personalizada como `calculateAge()` que toma a data de nascimento como entrada e retorna a idade:
+Em um Formulário adaptável, você pode usar [funções personalizadas no editor de regras](/help/forms/rule-editor-core-components.md). Vamos adicionar o seguinte código ao arquivo JavaScript (arquivo `Function.js`) para calcular a idade com base na Data de Nascimento (AAAA-MM-DD). Crie uma função personalizada como `calculateAge()` que use a data de nascimento como entrada e retorne a idade:
 
 ```javascript
     /**
@@ -402,9 +402,9 @@ Em um Formulário adaptável, é possível usar [funções personalizadas no edi
     }
 ```
 
-No exemplo acima, quando o usuário insere a data de nascimento no formato (AAAA-MM-DD), a função personalizada `calculateAge` é chamado e retorna a idade.
+No exemplo acima, quando o usuário insere a data de nascimento no formato (AAAA-MM-DD), a função personalizada `calculateAge` é invocada e retorna a idade.
 
-![Função personalizada Calcular idade no Editor de regras](/help/forms/assets/custom-function-calculate-age.png)
+![Função personalizada Calcular Idade no Editor de Regras](/help/forms/assets/custom-function-calculate-age.png)
 
 Vamos visualizar o formulário para observar como as funções personalizadas são implementadas por meio do editor de regras:
 
@@ -412,12 +412,12 @@ Vamos visualizar o formulário para observar como as funções personalizadas s�
 
 >[!NOTE]
 >
-> Você pode consultar o seguinte [função personalizada](/help/forms/assets//customfunctions.zip) pasta. Baixe e instale essa pasta na instância do AEM usando o [Gerenciador de pacotes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
+> Você pode consultar a seguinte pasta [função personalizada](/help/forms/assets//customfunctions.zip). Baixe e instale esta pasta na instância do AEM usando o [Gerenciador de Pacotes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager).
 
 
 ### Definir as opções da lista suspensa usando funções personalizadas
 
-O Editor de regras nos Componentes principais não oferece suporte a **Definir Opções de** propriedade para definir as opções da lista suspensa no tempo de execução. No entanto, é possível definir as opções da lista suspensa usando funções personalizadas.
+O Editor de Regras nos Componentes Principais não oferece suporte à propriedade **Definir Opções de** para definir as opções da lista suspensa no tempo de execução. No entanto, é possível definir as opções da lista suspensa usando funções personalizadas.
 
 Examine o código abaixo para ver como podemos definir as opções da lista suspensa usando funções personalizadas:
 
@@ -439,9 +439,9 @@ Examine o código abaixo para ver como podemos definir as opções da lista susp
     }
 ```
 
-No código acima, `setEnums` é usado para definir o `enum` propriedade e `setEnumNames` é usado para definir o `enumNames` propriedade do menu suspenso.
+No código acima, `setEnums` é usado para definir a propriedade `enum` e `setEnumNames` é usado para definir a propriedade `enumNames` da lista suspensa.
 
-Vamos criar uma regra para o `Next` botão, que define o valor da opção de lista suspensa quando o usuário clica no `Next` botão:
+Vamos criar uma regra para o botão `Next`, que define o valor da opção de lista suspensa quando o usuário clica no botão `Next`:
 
 ![Opções da lista suspensa](/help/forms/assets/drop-down-list-options.png)
 
@@ -486,15 +486,15 @@ Examine o código abaixo para ver como podemos chamar funções assíncronas usa
 }
 ```
 
-No exemplo acima, a função asyncFunction é uma `asynchronous function`. Ele executa uma operação assíncrona tornando um `GET` solicitação para `https://petstore.swagger.io/v2/store/inventory`. Ele aguarda a resposta usando `await`, analisa o corpo da resposta como JSON usando o `response.json()`e retorna os dados. A variável `callAsyncFunction` é uma função personalizada síncrona que chama a variável `asyncFunction` e exibe os dados de resposta no console. Embora a `callAsyncFunction` é síncrona, ela chama a função assíncrona asyncFunction e lida com seu resultado com `then` e `catch` declarações.
+No exemplo acima, a função asyncFunction é um `asynchronous function`. Ele executa uma operação assíncrona fazendo uma solicitação `GET` para `https://petstore.swagger.io/v2/store/inventory`. Ele aguarda a resposta usando `await`, analisa o corpo da resposta como JSON usando `response.json()` e retorna os dados. A função `callAsyncFunction` é uma função personalizada síncrona que chama a função `asyncFunction` e exibe os dados de resposta no console. Embora a função `callAsyncFunction` seja síncrona, ela chama a função asyncFunction assíncrona e manipula seu resultado com instruções `then` e `catch`.
 
 Para ver seu funcionamento, vamos adicionar um botão e criar uma regra para o botão que chama a função assíncrona em um clique de botão.
 
 ![criando regra para função assíncrona](/help/forms/assets/rule-for-async-funct.png)
 
-Consulte a ilustração da janela de console abaixo para demonstrar que, quando o usuário clicar no ícone `Fetch` botão, a função personalizada `callAsyncFunction` é invocado, que por sua vez chama uma função assíncrona `asyncFunction`. Inspect na janela do console para exibir a resposta ao clique de botão:
+Consulte a ilustração da janela de console abaixo para demonstrar que, quando o usuário clica no botão `Fetch`, a função personalizada `callAsyncFunction` é invocada, o que, por sua vez, chama uma função assíncrona `asyncFunction`. Inspect na janela do console para exibir a resposta ao clique de botão:
 
-![Janela do console](/help/forms/assets/async-custom-funct-console.png)
+![Janela de console](/help/forms/assets/async-custom-funct-console.png)
 
 Vamos analisar os recursos de funções personalizadas.
 
@@ -508,7 +508,7 @@ Os objetos Field referem-se aos componentes ou elementos individuais em um formu
 
 >[!NOTE]
 >
-> A variável `param {scope} globals` deve ser o último parâmetro e não é exibido no editor de regras de um Formulário adaptável.
+> O `param {scope} globals` deve ser o último parâmetro e não é exibido no editor de regras de um Formulário adaptável.
 
 <!-- Let us look at the following code snippet:
 
@@ -532,13 +532,13 @@ Os objetos Field referem-se aos componentes ou elementos individuais em um formu
 
 In the above code snippet, a custom function named `updateDateTime` takes parameters such as a field object and a global object. The field represents the textbox object where the formatted date and time value is displayed within the form. -->
 
-Saiba como as funções personalizadas usam campos e objetos globais com a ajuda de um `Contact Us` formulário usando casos de uso diferentes.
+Saiba como as funções personalizadas usam campos e objetos globais com a ajuda de um formulário `Contact Us` usando casos de uso diferentes.
 
 ![Formulário Contate-nos](/help/forms/assets/contact-us-form.png)
 
-+++ **Caso de uso**: mostrar um painel usando o `SetProperty` regra
++++ **Caso de uso**: mostrar um painel usando a regra `SetProperty`
 
-Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para definir o campo de formulário como `Required`.
+Adicione o seguinte código na função personalizada, como explicado na seção [create-custom-function](#create-custom-function), para definir o campo de formulário como `Required`.
 
 ```javascript
     
@@ -561,28 +561,28 @@ Adicione o seguinte código na função personalizada, conforme explicado na [cr
 
 >[!NOTE]
 >
-> * É possível configurar as propriedades do campo usando as propriedades disponíveis localizadas em `[form-path]/jcr:content/guideContainer.model.json`.
-> * As modificações feitas no formulário usando o `setProperty` O método do objeto Globals é de natureza assíncrona e não é refletido durante a execução da função personalizada.
+> * Você pode configurar as propriedades de campo usando as propriedades disponíveis localizadas em `[form-path]/jcr:content/guideContainer.model.json`.
+> * As modificações feitas no formulário usando o método `setProperty` do objeto Globals são de natureza assíncrona e não são refletidas durante a execução da função personalizada.
 
-Neste exemplo, a validação do `personaldetails` ocorre ao clicar no botão. Se nenhum erro for detectado no painel, outro painel, o `feedback` fica visível ao clicar no botão.
+Neste exemplo, a validação do painel `personaldetails` ocorre ao clicar no botão. Se nenhum erro for detectado no painel, outro painel, o painel `feedback`, ficará visível ao clicar no botão.
 
-Vamos criar uma regra para o `Next` botão, que valida a `personaldetails` e torna o `feedback`  painel visível quando o usuário clicar no botão `Next` botão.
+Vamos criar uma regra para o botão `Next`, que valida o painel `personaldetails` e torna o painel `feedback` visível quando o usuário clica no botão `Next`.
 
-![Definir propriedade](/help/forms/assets/custom-function-set-property.png)
+![Definir Propriedade](/help/forms/assets/custom-function-set-property.png)
 
-Consulte a ilustração abaixo para demonstrar onde a variável `personaldetails` for validado ao clicar no link `Next` botão. Caso todos os campos dentro do `personaldetails` forem validados, a variável `feedback` painel fica visível.
+Consulte a ilustração abaixo para demonstrar onde o painel `personaldetails` é validado ao clicar no botão `Next`. Caso todos os campos em `personaldetails` sejam validados, o painel `feedback` ficará visível.
 
-![Definir propriedade para visualização do formulário](/help/forms/assets/set-property-form-preview.png)
+![Definir Propriedade de Visualização de Formulário](/help/forms/assets/set-property-form-preview.png)
 
-Se houver erros nos campos do `personaldetails` são exibidos no nível do campo ao clicar no botão `Next` e o botão `feedback` permanece invisível.
+Se houver erros nos campos do painel `personaldetails`, eles serão exibidos no nível do campo ao clicar no botão `Next` e o painel `feedback` permanecerá invisível.
 
-![Definir propriedade para visualização do formulário](/help/forms/assets/set-property-panel.png)
+![Definir Propriedade de Visualização de Formulário](/help/forms/assets/set-property-panel.png)
 
 +++
 
-+++ **Caso de uso**: valide o campo.
++++ **Caso de uso**: validar o campo.
 
-Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para validar o campo.
+Adicione o seguinte código na função personalizada conforme explicado na seção [create-custom-function](#create-custom-function) para validar o campo.
 
 ```javascript
     /**
@@ -601,29 +601,29 @@ Adicione o seguinte código na função personalizada, conforme explicado na [cr
 
 >[!NOTE]
 >
-> Se nenhum argumento for transmitido na variável `validate()` valida o formulário.
+> Se nenhum argumento for passado na função `validate()`, ele validará o formulário.
 
-Neste exemplo, um padrão de validação personalizado é aplicado à variável `contact` campo. Os usuários devem inserir um número de telefone começando com `10` seguido por `8` dígitos. Se o usuário digitar um número de telefone que não inicia com `10` ou contém mais ou menos que `8` dígitos, uma mensagem de erro de validação é exibida ao clicar no botão:
+Neste exemplo, um padrão de validação personalizado é aplicado ao campo `contact`. Os usuários precisam inserir um número de telefone começando com `10` seguido de `8` dígitos. Se o usuário digitar um número de telefone que não comece com `10` ou contenha mais ou menos de `8` dígitos, uma mensagem de erro de validação será exibida ao clicar no botão:
 
-![Padrão de validação do endereço de email](/help/forms/assets/custom-function-validation-pattern.png)
+![Padrão de Validação de Endereço de Email](/help/forms/assets/custom-function-validation-pattern.png)
 
-Agora, a próxima etapa é criar uma regra para o `Next` botão que valida o `contact` no botão, clique em.
+Agora, a próxima etapa é criar uma regra para o botão `Next` que valide o campo `contact` no clique de botão.
 
 ![Padrão de validação](/help/forms/assets/custom-function-validate.png)
 
-Consulte a ilustração abaixo para demonstrar que, se o usuário digitar um número de telefone que não comece com `10`, uma mensagem de erro é exibida no nível do campo:
+Consulte a ilustração abaixo para demonstrar que, se o usuário digitar um número de telefone que não comece com `10`, uma mensagem de erro será exibida no nível do campo:
 
-![Padrão de validação do endereço de email](/help/forms/assets/custom-function-validate-error-message.png)
+![Padrão de Validação de Endereço de Email](/help/forms/assets/custom-function-validate-error-message.png)
 
-Se o usuário digitar um número de telefone válido e todos os campos na variável `personaldetails` forem validados, a variável `feedback` será exibido na tela:
+Se o usuário digitar um número de telefone válido e todos os campos no painel `personaldetails` forem validados, o painel `feedback` aparecerá na tela:
 
-![Padrão de validação do endereço de email](/help/forms/assets/validate-form-preview-form.png)
+![Padrão de Validação de Endereço de Email](/help/forms/assets/validate-form-preview-form.png)
 
 +++
 
 +++ **Caso de uso**: redefinir um painel
 
-Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para redefinir o painel.
+Adicione o seguinte código na função personalizada, como explicado na seção [create-custom-function](#create-custom-function), para redefinir o painel.
 
 ```javascript
     /**
@@ -643,28 +643,28 @@ Adicione o seguinte código na função personalizada, conforme explicado na [cr
 
 >[!NOTE]
 >
-> Se nenhum argumento for transmitido na variável `reset()` valida o formulário.
+> Se nenhum argumento for passado na função `reset()`, ele validará o formulário.
 
-Neste exemplo, a variável `personaldetails` O painel é redefinido ao clicar no ícone `Clear` botão. A próxima etapa é criar uma regra para o `Clear` botão que redefine o painel no clique de botão.
+Neste exemplo, o painel `personaldetails` é redefinido ao clicar no botão `Clear`. A próxima etapa é criar uma regra para o botão `Clear` que redefina o painel no clique do botão.
 
 ![Botão Limpar](/help/forms/assets/custom-function-reset-field.png)
 
-Consulte a ilustração abaixo para exibir que, se o usuário clicar no ícone `clear` botão, o botão `personaldetails` o painel é redefinido:
+Consulte a ilustração abaixo para mostrar que, se o usuário clicar no botão `clear`, o painel `personaldetails` será redefinido:
 
-![Redefinir formulário](/help/forms/assets/custom-function-reset-form.png)
+![Redefinir Formulário](/help/forms/assets/custom-function-reset-form.png)
 
 +++
 
 +++ **Caso de uso**: para exibir uma mensagem personalizada no nível do campo e marcar o campo como inválido
 
-Você pode usar o `markFieldAsInvalid()` função para definir um campo como inválido e definir mensagem de erro personalizada em nível de campo. A variável `fieldIdentifier` o valor pode ser `fieldId`ou `field qualifiedName`ou `field dataRef`. O valor do objeto chamado `option` pode ser `{useId: true}`, `{useQualifiedName: true}`ou `{useDataRef: true}`.
+Você pode usar a função `markFieldAsInvalid()` para definir um campo como inválido e definir uma mensagem de erro personalizada em nível de campo. O valor `fieldIdentifier` pode ser `fieldId`, `field qualifiedName` ou `field dataRef`. O valor do objeto nomeado `option` pode ser `{useId: true}`, `{useQualifiedName: true}` ou `{useDataRef: true}`.
 As sintaxes usadas para marcar um campo como inválido e definir uma mensagem personalizada são:
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
 * `globals.functions.markFieldAsInvalid(field.$qualifiedName, "[custom message]", {useQualifiedName: true});`
 * `globals.functions.markFieldAsInvalid(field.$dataRef, "[custom message]", {useDataRef: true});`
 
-Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para habilitar uma mensagem personalizada no nível do campo.
+Adicione o seguinte código na função personalizada conforme explicado na seção [create-custom-function](#create-custom-function) para habilitar uma mensagem personalizada no nível do campo.
 
 ```javascript
     /**
@@ -684,11 +684,11 @@ Adicione o seguinte código na função personalizada, conforme explicado na [cr
 
 Neste exemplo, se o usuário inserir menos de 15 caracteres na caixa de texto comentários, uma mensagem personalizada será exibida no nível do campo.
 
-A próxima etapa é criar uma regra para o `comments` campo:
+A próxima etapa é criar uma regra para o campo `comments`:
 
-![Marcar campo como inválido](/help/forms/assets/custom-function-invalid-field.png)
+![Marcar campo como Inválido](/help/forms/assets/custom-function-invalid-field.png)
 
-Consulte a demonstração abaixo para exibir que inserir feedback negativo na `comments` aciona a exibição de uma mensagem personalizada no nível do campo:
+Veja a demonstração abaixo para mostrar que inserir comentários negativos no campo `comments` aciona a exibição de uma mensagem personalizada no nível do campo:
 
 ![Marcar campo como Formulário de visualização inválido](/help/forms/assets/custom-function-invalidfield-form.png)
 
@@ -698,15 +698,15 @@ Se o usuário inserir mais de 15 caracteres na caixa de texto de comentários, o
 
 +++
 
-+++ **Caso de uso**: Enviar os dados alterados para o servidor
++++ **Caso de uso**: enviar dados alterados para o servidor
 
 A seguinte linha de código:
 `globals.functions.submitForm(globals.functions.exportData(), false);` é usado para enviar os dados do formulário após manipulação.
 * O primeiro argumento diz respeito aos dados a apresentar.
-* O segundo argumento representa se o formulário deve ser validado antes do envio. É necessário `optional` e definir como `true` por padrão.
-* O terceiro argumento é `contentType` do envio, que também é opcional com o valor padrão como `multipart/form-data`. Os outros valores podem ser `application/json` e `application/x-www-form-urlencoded`.
+* O segundo argumento representa se o formulário deve ser validado antes do envio. Ele é `optional` e definido como `true` por padrão.
+* O terceiro argumento é o `contentType` do envio, que também é opcional com o valor padrão como `multipart/form-data`. Os outros valores podem ser `application/json` e `application/x-www-form-urlencoded`.
 
-Adicione o seguinte código na função personalizada, conforme explicado na [create-custom-function](#create-custom-function) para enviar os dados manipulados no servidor:
+Adicione o seguinte código na função personalizada, conforme explicado na seção [create-custom-function](#create-custom-function), para enviar os dados manipulados no servidor:
 
 ```javascript
     /**
@@ -727,13 +727,13 @@ Adicione o seguinte código na função personalizada, conforme explicado na [cr
     }
 ```
 
-Neste exemplo, se o usuário deixar a variável `comments` caixa de texto vazia, a variável `NA` é enviado ao servidor no envio do formulário.
+Neste exemplo, se o usuário deixar a caixa de texto `comments` vazia, o `NA` será enviado ao servidor no envio do formulário.
 
-Agora, crie uma regra para o `Submit` botão que envia dados:
+Agora, crie uma regra para o botão `Submit` que envia dados:
 
 ![Enviar dados](/help/forms/assets/custom-function-submit-data.png)
 
-Consulte a ilustração do `console window` abaixo para demonstrar que, se o usuário deixar o `comments` caixa de texto vazia, depois o valor como `NA` é enviado ao servidor:
+Consulte a ilustração da `console window` abaixo para demonstrar que, se o usuário deixar a caixa de texto `comments` vazia, o valor como `NA` será enviado ao servidor:
 
 ![Enviar dados na janela do console](/help/forms/assets/custom-function-submit-data-form.png)
 
@@ -743,9 +743,9 @@ Você também pode inspecionar a janela do console para visualizar os dados envi
 
 +++
 
-+++ **Caso de uso**: substituição de manipuladores de erro e de sucesso no envio do formulário
++++ **Caso de uso**: substituição de manipuladores de erros e de êxito no envio de formulários
 
-Adicione a seguinte linha de código, conforme explicado na [create-custom-function](#create-custom-function) para personalizar a mensagem de envio ou de falha para envios de formulário e exibir as mensagens de envio de formulário em uma caixa modal:
+Adicione a seguinte linha de código, conforme explicado na seção [create-custom-function](#create-custom-function), para personalizar a mensagem de envio ou de falha para envios de formulário e exibir as mensagens de envio de formulário em uma caixa modal:
 
 ```javascript
 /**
@@ -830,7 +830,7 @@ function showModal(type, message) {
 }
 ```
 
-Neste exemplo, quando o usuário usa a variável `customSubmitSuccessHandler` e `customSubmitErrorHandler` funções personalizadas, as mensagens de sucesso e falha são exibidas em uma modal. A função JavaScript `showModal(type, message)` é usado para criar e exibir dinamicamente uma caixa de diálogo modal em uma tela.
+Neste exemplo, quando o usuário usa as funções personalizadas `customSubmitSuccessHandler` e `customSubmitErrorHandler`, as mensagens de êxito e falha são exibidas em uma modal. A função de JavaScript `showModal(type, message)` é usada para criar e exibir dinamicamente uma caixa de diálogo modal em uma tela.
 
 Agora, crie uma regra para o envio bem-sucedido do formulário:
 
@@ -838,7 +838,7 @@ Agora, crie uma regra para o envio bem-sucedido do formulário:
 
 Consulte a ilustração abaixo para demonstrar que, quando o formulário for enviado com êxito, a mensagem de sucesso será exibida em uma modal:
 
-![Mensagem de sucesso de envio de formulário](/help/forms/assets/form-submission-success-message.png)
+![Mensagem de êxito de envio de formulário](/help/forms/assets/form-submission-success-message.png)
 
 Da mesma forma, vamos criar uma regra para envios de formulários com falha:
 
@@ -848,21 +848,21 @@ Consulte a ilustração abaixo para demonstrar que, quando o envio do formulári
 
 ![Mensagem de falha no envio do formulário](/help/forms/assets/form-submission-fail-message.png)
 
-Para exibir o sucesso e a falha no envio do formulário de maneira padrão, a variável `Default submit Form Success Handler` e `Default submit Form Error Handler` As funções do estão disponíveis imediatamente.
+Para exibir o sucesso e a falha no envio de formulários de maneira padrão, as funções `Default submit Form Success Handler` e `Default submit Form Error Handler` estão disponíveis prontas para uso.
 
-Caso o manipulador de envio personalizado não seja executado conforme esperado em projetos ou formulários AEM existentes, consulte [solução de problemas](#troubleshooting) seção.
+Caso o manipulador de envio personalizado não seja executado conforme esperado em projetos ou formulários AEM existentes, consulte a seção [solução de problemas](#troubleshooting).
 
 +++
 
-+++ **Caso de uso**: Execute ações em uma instância específica do painel repetível
++++ **Caso de uso**: executar ações em uma instância específica do painel repetível
 
 As regras criadas usando o editor visual de regras em um painel repetível se aplicam à última instância do painel repetível. Para escrever uma regra para uma instância específica do painel repetível, podemos usar uma função personalizada.
 
-Vamos criar outro formulário para coletar informações sobre os viajantes que estão indo para um destino. Um painel de viagens é adicionado como um painel repetível, em que o usuário pode adicionar detalhes para 5 viajantes usando o `Add Traveler` botão.
+Vamos criar outro formulário para coletar informações sobre os viajantes que estão indo para um destino. Um painel de viagem é adicionado como um painel repetível, em que o usuário pode adicionar detalhes para 5 viajantes usando o botão `Add Traveler`.
 
 ![Informações do viajante](/help/forms/assets/traveler-info-form.png)
 
-Adicione a seguinte linha de código, conforme explicado na [create-custom-function](#create-custom-function) para executar ações em uma instância específica do painel repetível, diferente da última:
+Adicione a seguinte linha de código, conforme explicado na seção [create-custom-function](#create-custom-function), para executar ações em uma instância específica do painel repetível, diferente da última:
 
 ```javascript
 /**
@@ -877,21 +877,21 @@ function hidePanelInRepeatablePanel(globals)
 }  
 ```
 
-Neste exemplo, a variável `hidePanelInRepeatablePanel` a função personalizada executa uma ação em uma instância específica do painel repetível. No código acima, `travelerinfo` representa o painel repetível. A variável `repeatablePanel[1].traveler, {visible: false}` o código do oculta o painel na segunda instância do painel repetível.
+Neste exemplo, a função personalizada `hidePanelInRepeatablePanel` executa uma ação em uma instância específica do painel repetível. No código acima, `travelerinfo` representa o painel repetível. O código `repeatablePanel[1].traveler, {visible: false}` oculta o painel na segunda instância do painel repetível.
 
-Vamos adicionar um botão rotulado `Hide` e adicione uma regra para ocultar a segunda ocorrência de um painel repetível.
+Vamos adicionar um botão rotulado `Hide` e adicionar uma regra para ocultar a segunda instância de um painel repetível.
 
-![Ocultar regra de Painel](/help/forms/assets/custom-function-hidepanel-rule.png)
+![Ocultar regra do Painel](/help/forms/assets/custom-function-hidepanel-rule.png)
 
-Consulte o vídeo abaixo para demonstrar que, quando a variável `Hide` for clicado, o painel na segunda instância repetível ficará oculto:
+Consulte o vídeo abaixo para demonstrar que, quando o `Hide` for clicado, o painel na segunda instância repetível ficará oculto:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429554?quality=12&learn=on)
 
 +++
 
-+++ **Caso de uso**: Preencha previamente o campo com um valor quando o formulário for carregado
++++ **Caso de uso**: preencher previamente o campo com um valor quando o formulário for carregado
 
-Adicione a seguinte linha de código, conforme explicado na seção [create-custom-function](#create-custom-function) para carregar o valor pré-preenchido em um campo quando o formulário for inicializado:
+Adicione a seguinte linha de código, conforme explicado na seção [create-custom-function](#create-custom-function), para carregar o valor pré-preenchido em um campo quando o formulário for inicializado:
 
 ```javascript
 /**
@@ -905,21 +905,21 @@ function testImportData(globals)
 } 
 ```
 
-No código acima referido, a `testImportData` A função preenche o `Booking Amount` campo de caixa de texto quando o formulário é carregado. Vamos supor que o formulário de reserva exige que o valor mínimo de reserva seja `10,000`.
+No código mencionado acima, a função `testImportData` preenche o campo de caixa de texto `Booking Amount` quando o formulário é carregado. Vamos supor que o formulário de reserva exige que o valor mínimo de reserva seja `10,000`.
 
-Vamos criar uma regra na inicialização do formulário, em que o valor no campo `Booking Amount` o campo textbox é pré-preenchido com um valor especificado quando o formulário é carregado:
+Vamos criar uma regra na inicialização do formulário, em que o valor no campo de caixa de texto `Booking Amount` é preenchido previamente com um valor especificado quando o formulário é carregado:
 
-![Importar Regra de Dados](/help/forms/assets/custom-function-import-data.png)
+![Regra de Importação de Dados](/help/forms/assets/custom-function-import-data.png)
 
-Consulte a captura de tela abaixo, que demonstra que, quando o formulário é carregado, o valor na variável `Booking Amount` A caixa de texto é pré-preenchida com um valor especificado:
+Consulte a captura de tela abaixo, que demonstra que, quando o formulário é carregado, o valor na caixa de texto `Booking Amount` é pré-preenchido com um valor especificado:
 
 ![Formulário de Regra de Importação de Dados](/help/forms/assets/custom-function-prefill-form.png)
 
 +++
 
-+++ **Caso de uso**: Defina o foco no campo específico
++++ **Caso de uso**: definir foco no campo específico
 
-Adicione a seguinte linha de código, conforme explicado na seção [create-custom-function](#create-custom-function) para definir o foco no campo especificado quando a variável `Submit` é clicado.:
+Adicione a seguinte linha de código, conforme explicado na seção [create-custom-function](#create-custom-function), para definir o foco no campo especificado quando o botão `Submit` for clicado.:
 
 ```javascript
 /**
@@ -933,23 +933,23 @@ Adicione a seguinte linha de código, conforme explicado na seção [create-cust
     }
 ```
 
-Vamos adicionar uma regra ao `Submit` botão para definir o foco na variável `Email ID` campo de caixa de texto ao clicar:
+Vamos adicionar uma regra ao botão `Submit` para definir o foco no campo de caixa de texto `Email ID` quando ele for clicado:
 
-![Definir regra de foco](/help/forms/assets/custom-function-set-focus.png)
+![Definir Regra de Foco](/help/forms/assets/custom-function-set-focus.png)
 
-Consulte a captura de tela abaixo, que demonstra que, quando a variável `Submit` for clicado, o foco será definido na variável `Email ID` campo:
+Consulte a captura de tela abaixo, que demonstra que, quando o botão `Submit` é clicado, o foco é definido no campo `Email ID`:
 
-![Definir regra de foco](/help/forms/assets/custom-function-set-focus-form.png)
+![Definir Regra de Foco](/help/forms/assets/custom-function-set-focus-form.png)
 
 >[!NOTE]
 >
-> Você pode usar o `$focusOption` parâmetro, se você quiser se concentrar no campo seguinte ou anterior relativo ao `email` campo.
+> Você pode usar o parâmetro `$focusOption` opcional se quiser focalizar no campo seguinte ou anterior relativo ao campo `email`.
 
 +++
 
-+++ **Caso de uso**: adicione ou exclua o painel repetível usando o `dispatchEvent` propriedade
++++ **Caso de uso**: adicionar ou excluir o painel repetível usando a propriedade `dispatchEvent`
 
-Adicione a seguinte linha de código, conforme explicado na seção [create-custom-function](#create-custom-function) para adicionar um painel quando a variável `Add Traveler` é clicado usando o `dispatchEvent` propriedade:
+Adicione a seguinte linha de código, conforme explicado na seção [create-custom-function](#create-custom-function), para adicionar um painel quando o botão `Add Traveler` for clicado usando a propriedade `dispatchEvent`:
 
 ```javascript
 /**
@@ -964,15 +964,15 @@ function testAddInstance(globals)
 }
 ```
 
-Vamos adicionar uma regra ao `Add Traveler` botão para adicionar o painel repetível quando for clicado:
+Vamos adicionar uma regra ao botão `Add Traveler` para adicionar o painel repetível quando ele for clicado:
 
 ![Adicionar regra do painel](/help/forms/assets/custom-function-add-panel.png)
 
-Consulte o gif abaixo, que demonstra que, quando o `Add Traveler` for clicado, o painel será adicionado usando o `dispatchEvent` propriedade:
+Consulte o gif abaixo, que demonstra que, quando o botão `Add Traveler` é clicado, o painel é adicionado usando a propriedade `dispatchEvent`:
 
-![Adicionar painel](/help/forms/assets/custom-function-add-panel.gif)
+![Adicionar Painel](/help/forms/assets/custom-function-add-panel.gif)
 
-Da mesma forma, adicione a seguinte linha de código, conforme explicado na seção [create-custom-function](#create-custom-function) para excluir um painel quando a variável `Delete Traveler` é clicado usando o `dispatchEvent` propriedade:
+Da mesma forma, adicione a seguinte linha de código, como explicado na seção [create-custom-function](#create-custom-function), para excluir um painel quando o botão `Delete Traveler` for clicado usando a propriedade `dispatchEvent`:
 
 ```javascript
 /**
@@ -987,19 +987,19 @@ function testRemoveInstance(globals)
 } 
 ```
 
-Vamos adicionar uma regra ao `Delete Traveler` botão para excluir o painel repetível quando for clicado:
+Vamos adicionar uma regra ao botão `Delete Traveler` para excluir o painel repetível quando ele for clicado:
 
 ![Excluir regra do painel](/help/forms/assets/custom-function-delete-panel.png)
 
-Consulte o gif abaixo, que demonstra que, quando o `Delete Traveler` for clicado, o painel viajante será excluído usando a `dispatchEvent` propriedade:
+Consulte o gif abaixo, que demonstra que, quando o botão `Delete Traveler` é clicado, o painel do viajante é excluído usando a propriedade `dispatchEvent`:
 
-![Excluir painel](/help/forms/assets/custom-function-delete-panel.gif)
+![Excluir Painel](/help/forms/assets/custom-function-delete-panel.gif)
 
 +++
 
 ## Suporte de cache para função personalizada
 
-O Forms adaptável implementa o armazenamento em cache de funções personalizadas para melhorar o tempo de resposta ao recuperar a lista de funções personalizadas no editor de regras. Uma mensagem como `Fetched following custom functions list from cache` aparece na guia `error.log` arquivo.
+O Forms adaptável implementa o armazenamento em cache de funções personalizadas para melhorar o tempo de resposta ao recuperar a lista de funções personalizadas no editor de regras. Uma mensagem como `Fetched following custom functions list from cache` aparece no arquivo `error.log`.
 
 ![função personalizada com suporte a cache](/help/forms/assets/custom-function-cache-error.png)
 
@@ -1008,24 +1008,24 @@ Caso as funções personalizadas sejam modificadas, o armazenamento em cache é 
 ## Resolução de problemas {#troubleshooting}
 
 * Se o manipulador de envio personalizado não funcionar conforme esperado em projetos ou formulários AEM existentes, execute as seguintes etapas:
-   * Certifique-se de que o [a versão dos componentes principais foi atualizada para 3.0.18 e posterior](https://github.com/adobe/aem-core-forms-components). No entanto, para projetos e formulários AEM existentes, há etapas adicionais a seguir:
+   * Verifique se a versão dos [componentes principais foi atualizada para 3.0.18 e posterior](https://github.com/adobe/aem-core-forms-components). No entanto, para projetos e formulários AEM existentes, há etapas adicionais a seguir:
 
-   * Para o projeto AEM, o usuário deve substituir todas as instâncias de `submitForm('custom:submitSuccess', 'custom:submitError')` com `submitForm()` e implante o projeto por meio do pipeline da Cloud Manager.
+   * Para o projeto AEM, o usuário deve substituir todas as instâncias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implantar o projeto por meio do pipeline do Cloud Manager.
 
-   * Para formulários existentes, se os manipuladores de envio personalizados não estiverem funcionando corretamente, o usuário precisará abrir e salvar o `submitForm` regra no **Enviar** usando o Editor de regras. Essa ação substitui a regra existente de `submitForm('custom:submitSuccess', 'custom:submitError')` com `submitForm()` no formulário.
+   * Para formulários existentes, se os manipuladores de envio personalizados não estiverem funcionando corretamente, o usuário precisará abrir e salvar a regra `submitForm` no botão **Enviar** usando o Editor de Regras. Esta ação substitui a regra existente de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` no formulário.
 
 
-* Se o arquivo JavaScript que contém o código para funções personalizadas tiver um erro, as funções personalizadas não serão listadas no editor de regras de um Formulário adaptável. Para verificar a lista de funções personalizadas, você pode navegar até a `error.log` para o erro. No caso de um erro, a lista de funções personalizadas aparece vazia:
+* Se o arquivo JavaScript que contém o código para funções personalizadas tiver um erro, as funções personalizadas não serão listadas no editor de regras de um Formulário adaptável. Para verificar a lista de funções personalizadas, você pode navegar até o arquivo `error.log` para localizar o erro. No caso de um erro, a lista de funções personalizadas aparece vazia:
 
   ![arquivo de log de erros](/help/forms/assets/custom-function-list-error-file.png)
 
-  Caso não haja erro, a função personalizada é buscada e aparece no `error.log` arquivo. Uma mensagem como `Fetched following custom functions list` aparece na guia `error.log` arquivo:
+  Caso não haja erro, as funções personalizadas são buscadas e aparecem no arquivo `error.log`. Uma mensagem como `Fetched following custom functions list` aparece no arquivo `error.log`:
 
-  ![arquivo de log de erros com função personalizada adequada](/help/forms/assets/custom-function-list-fetched-in-error.png)
+  ![arquivo de log de erros com a função personalizada adequada](/help/forms/assets/custom-function-list-fetched-in-error.png)
 
 ## Considerações
 
-* A variável `parameter type` e `return type` não oferecem suporte `None`.
+* O `parameter type` e o `return type` não dão suporte a `None`.
 
 * As funções não suportadas na lista de funções personalizadas são:
    * Funções geradoras

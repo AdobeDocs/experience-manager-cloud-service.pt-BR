@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # Tags de cores para imagens {#color-tag-images}
 
-![Banner de marcação de cores](assets/banner-image.png)
+![Banner de Marcação de Cores](assets/banner-image.png)
 
 O Adobe Experience Manager (AEM) Assets usa os recursos de IA do Adobe Sensei para distinguir cores em uma imagem e aplicá-las automaticamente como tags na assimilação. Essas tags permitem uma experiência de pesquisa aprimorada, com base na composição de cores da imagem.
 
@@ -38,15 +38,15 @@ A figura a seguir ilustra a sequência de tarefas executada para configurar e ge
 
 Para gerenciar as propriedades de marcação de cores para imagens:
 
-1. Navegue até **[!UICONTROL Ferramentas > Ativos > Marcação de cores]**.
+1. Navegue até **[!UICONTROL Ferramentas > Assets > Marcação de cores]**.
 
-   ![Propriedades de marcação de cores](assets/color-tag-settings.png)
+   ![Propriedades de Marcação de Cores](assets/color-tag-settings.png)
 
-1. Especificar um formato de exibição para a marca de cor no **[!UICONTROL Formato de exibição]** campo. As opções possíveis incluem o nome da cor, o formato RGB ou HEX.
+1. Especifique um formato de exibição para a marca de cor no campo **[!UICONTROL Formato de Exibição]**. As opções possíveis incluem o nome da cor, o formato RGB ou HEX.
 
-1. Especifique o número de cores que você deseja marcar para as imagens na **[!UICONTROL Limite]** campo. Essas cores são exibidas quando você exibe as propriedades de uma imagem. Você pode definir um número entre um e 40 nesse campo. O valor padrão desse campo é dez cores.
+1. Especifique o número de cores que deseja marcar para as imagens no campo **[!UICONTROL Limite]**. Essas cores são exibidas quando você exibe as propriedades de uma imagem. Você pode definir um número entre um e 40 nesse campo. O valor padrão desse campo é dez cores.
 
-1. Especifique a porcentagem mínima de cobertura de cor para incluir uma tag de cor nos resultados da pesquisa na **[!UICONTROL Limite de cobertura/domínio %]** campo. Por exemplo, se a cobertura da cor vermelha em uma imagem for de dez por cento e você definir nove por cento nesse campo, a imagem será incluída quando você pesquisar imagens com a cor vermelha. No entanto, se a cobertura da cor vermelha em uma imagem for de dez por cento e você definir 11 por cento nesse campo, a imagem não será incluída quando você pesquisar imagens com cor vermelha.
+1. Especifique a porcentagem mínima de cobertura de cor para incluir uma marca de cor nos resultados da pesquisa no campo **[!UICONTROL Limite de Cobertura/Domínio %]**. Por exemplo, se a cobertura da cor vermelha em uma imagem for de dez por cento e você definir nove por cento nesse campo, a imagem será incluída quando você pesquisar imagens com a cor vermelha. No entanto, se a cobertura da cor vermelha em uma imagem for de dez por cento e você definir 11 por cento nesse campo, a imagem não será incluída quando você pesquisar imagens com cor vermelha.
 
    Você pode especificar qualquer número entre cinco e 100 nesse campo. O valor padrão é 11.
 
@@ -66,11 +66,11 @@ A marcação de cores para imagens é ativada por padrão. Você pode desativar 
 
 Para desativar a marcação de cores no nível da pasta:
 
-1. Navegue até **[!UICONTROL Adobe Experience Manager > Ativos > Arquivos]**.
+1. Navegue até **[!UICONTROL Adobe Experience Manager > Assets > Arquivos]**.
 
 1. Selecione a pasta e clique em **[!UICONTROL Propriedades]**.
 
-1. No **[!UICONTROL Processamento de ativos]** , navegue até o **[!UICONTROL Tags de cores para imagens]** pasta. Selecione um dos seguintes valores na lista suspensa:
+1. Na guia **[!UICONTROL Processamento de ativos]**, navegue até a pasta **[!UICONTROL Marcas de cores para imagens]**. Selecione um dos seguintes valores na lista suspensa:
 
    * Herdada - A pasta herda as opções ativar ou desativar da pasta principal.
 
@@ -78,11 +78,11 @@ Para desativar a marcação de cores no nível da pasta:
 
    * Desativar - Desativa a marcação de cores para a pasta selecionada.
 
-   ![Configurações de marcação de cores](assets/color-tags-folder.png)
+   ![Configurações de Marcação de Cores](assets/color-tags-folder.png)
 
 ## Configurar esquema de metadados para adicionar componente de tags de cores inteligentes {#configure-metadata-schema}
 
-Os esquemas de metadados contêm campos específicos para informações específicas a serem preenchidas. Ele também contém informações de layout para exibir campos de metadados de forma simples. As propriedades de metadados incluem título, descrição, tipos MIME, tags e muito mais. Você pode usar o [!UICONTROL Forms do esquema de metadados] editor para modificar os esquemas existentes ou adicionar esquemas de metadados personalizados.
+Os esquemas de metadados contêm campos específicos para informações específicas a serem preenchidas. Ele também contém informações de layout para exibir campos de metadados de forma simples. As propriedades de metadados incluem título, descrição, tipos MIME, tags e muito mais. Você pode usar o editor [!UICONTROL Forms de Esquema de Metadados] para modificar os esquemas existentes ou adicionar esquemas de metadados personalizados.
 
 >[!NOTE]
 >
@@ -90,15 +90,15 @@ Os esquemas de metadados contêm campos específicos para informações específ
 
 Para adicionar o componente Tags de cores inteligentes ao Editor do formulário de esquema de metadados:
 
-1. Navegue até **[!UICONTROL Ferramentas > Ativos > Esquemas de metadados]**.
+1. Navegue até **[!UICONTROL Ferramentas > Assets > Esquemas de metadados]**.
 
 1. Selecione o nome do esquema e clique em **[!UICONTROL Editar]**.
 
-1. Arrastar **[!UICONTROL Tags de cores inteligentes]** do **[!UICONTROL Formulário de criação]** para a guia **[!UICONTROL Editor do formulário de esquema de metadados]**.
+1. Arraste **[!UICONTROL Marcas de Cores Inteligentes]** da guia **[!UICONTROL Criar Formulário]** para o **[!UICONTROL Editor de Formulário de Esquema de Metadados]**.
 
-1. Clique em **[!UICONTROL Campo de tag de cor inteligente]** no **[!UICONTROL Editor do formulário de esquema de metadados]**.
+1. Clique no **[!UICONTROL Campo de Marca de Cores Inteligentes]** no **[!UICONTROL Editor do Formulário de Esquema de Metadados]**.
 
-1. Especifique um valor apropriado no **[!UICONTROL Rótulo do campo]** no campo **[!UICONTROL Configurações]**  guia.
+1. Especifique um valor apropriado no campo **[!UICONTROL Rótulo do campo]** da guia **[!UICONTROL Configurações]**.
 
 1. Clique em **[!UICONTROL Salvar]**.
 
@@ -106,36 +106,36 @@ Para adicionar o componente Tags de cores inteligentes ao Editor do formulário 
 
 ## Tags de cores para imagens existentes no DAM {#color-tags-existing-images}
 
-As imagens existentes no DAM não são marcadas com tags de cores automaticamente. [!UICONTROL Reprocessar ativos] manualmente para gerar tags de cores para eles.
+As imagens existentes no DAM não são marcadas com tags de cores automaticamente. [!UICONTROL Reprocesse o Assets] manualmente para gerar marcas de cores para eles.
 
 Para colorir imagens de tags ou pastas (incluindo subpastas) de ativos que existem no repositório de ativos, siga estas etapas:
 
-1. Selecione o [!DNL Adobe Experience Manager] e selecione os ativos na lista suspensa [!UICONTROL Navegação] página.
+1. Selecione o logotipo [!DNL Adobe Experience Manager] e selecione os ativos da página [!UICONTROL Navegação].
 
-1. Selecionar [!UICONTROL Arquivos].
+1. Selecione [!UICONTROL Arquivos].
 
 1. Na interface do Assets, navegue até a pasta à qual deseja aplicar tags de cor.
 
 1. Selecione a pasta inteira ou imagens específicas.
 
-1. Selecionar ![Ícone Reprocessar ativos](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocessar ativos] e selecione o [!UICONTROL Processo completo] opção.
+1. Selecione o ícone ![Reprocessar ativos](assets/do-not-localize/reprocess-assets-icon.png) [!UICONTROL Reprocessar Assets] e selecione a opção [!UICONTROL Processo completo].
 
-Quando o processo for concluído, navegue até a [!UICONTROL Propriedades] de qualquer imagem dentro da pasta. As tags adicionadas automaticamente são vistas no [!UICONTROL Tags de cores inteligentes] na seção [!UICONTROL Básico] guia.
+Quando o processo for concluído, navegue até a página [!UICONTROL Propriedades] de qualquer imagem dentro da pasta. As marcas adicionadas automaticamente são vistas na seção [!UICONTROL Tags de Cores Inteligentes] da guia [!UICONTROL Básicas].
 
 
 ## Exibir tags de cores inteligentes para imagens {#view-color-tags}
 
 Para exibir tags de cores inteligentes para imagens:
 
-1. Navegue até **[!UICONTROL Adobe Experience Manager > Ativos > Arquivos]**.
+1. Navegue até **[!UICONTROL Adobe Experience Manager > Assets > Arquivos]**.
 
 1. Clique na pasta apropriada e selecione a imagem.
 
-1. Selecionar **[!UICONTROL Propriedades]** e visualize as tags na variável **[!UICONTROL Tags de cores inteligentes]** campo.
+1. Selecione **[!UICONTROL Propriedades]** e exiba as marcas no campo **[!UICONTROL Marcas de Cores Inteligentes]**.
 
-   ![Exibir tags de cores](assets/view-color-tags.png)
+   ![Exibir Marcas de Cores](assets/view-color-tags.png)
 
-   Passe o mouse sobre uma tag de cor para visualizar as **[!UICONTROL Limite de cobertura/domínio %]** de uma cor em uma imagem.
+   Passe o mouse sobre uma marca de cor para que você possa visualizar o **[!UICONTROL Limite de Cobertura/Domínio %]** de uma cor em uma imagem.
 
 ## Configurar predicado de cor do AEM Assets {#configure-search-predicate}
 
@@ -145,17 +145,17 @@ Para exibir tags de cores inteligentes para imagens:
 >
 >Configure o predicado de cor do AEM Assets somente se não estiver usando o formulário de pesquisa padrão.
 
-Para configurar o filtro de pesquisa, crie um predicado de cor do ativo usando o painel de pesquisa do administrador de ativos.
+Para configurar o filtro de pesquisa, crie um predicado de cor do ativo usando o painel de pesquisa do administrador do Assets.
 
 Para configurar o filtro de pesquisa:
 
-1. Navegue até **[!UICONTROL Ferramentas > Geral > Pesquisar no Forms]**.
+1. Navegue até **[!UICONTROL Ferramentas > Geral > Pesquisar Forms]**.
 
-1. Selecionar **[!UICONTROL Trilho de pesquisa do administrador de ativos]** e clique em **[!UICONTROL Editar]**.
+1. Selecione **[!UICONTROL Painel de pesquisa do administrador do Assets]** e clique em **[!UICONTROL Editar]**.
 
-1. Arrastar **[!UICONTROL Predicado de cor do ativo]** do **[!UICONTROL Selecionar predicado]** para a guia **[!UICONTROL Editor de formulário de pesquisa]**.
+1. Arraste **[!UICONTROL Predicado de cor do ativo]** da guia **[!UICONTROL Selecionar predicado]** para o **[!UICONTROL Editor de formulário de pesquisa]**.
 
-1. Especifique um valor apropriado no **[!UICONTROL Rótulo do campo]** no campo **[!UICONTROL Configurações]**  guia.
+1. Especifique um valor apropriado no campo **[!UICONTROL Rótulo do campo]** da guia **[!UICONTROL Configurações]**.
 
 1. Clique em **[!UICONTROL Concluído]** para salvar as configurações.
 
@@ -165,22 +165,22 @@ Para configurar o filtro de pesquisa:
 
 >[!VIDEO](https://video.tv.adobe.com/v/340761)
 
-Após configurar todas as propriedades de marcação de cores e [configuração do predicado de cor do Assets](#search-images-based-on-colors), você pode pesquisar imagens com base em uma cor como filtro.
+Após configurar todas as propriedades de marcação de cores e [configurar o predicado de cores do Assets](#search-images-based-on-colors), você pode pesquisar imagens com base em uma cor como filtro.
 
 Para pesquisar imagens com base em cores:
 
-1. Navegue até **[!UICONTROL Ativos > Arquivos]**.
+1. Navegue até **[!UICONTROL Assets > Arquivos]**.
 
-1. Selecionar **[!UICONTROL Filtro]** na lista suspensa.
-   ![Filtrar ativos](assets/filter-assets.png)
+1. Selecione **[!UICONTROL Filtro]** na lista suspensa.
+   ![Filtrar Assets](assets/filter-assets.png)
 
-1. Selecione o [Predicado de cores do AEM Assets](#configure-search-predicate).
+1. Selecione o [predicado de cor do AEM Assets](#configure-search-predicate).
 
 1. Arraste o seletor de cores para selecionar a cor apropriada. A cor selecionada é exibida no campo somente leitura disponível abaixo do seletor de cores. Você pode selecionar RGB ou HEX como o formato de exibição da cor.
 
-   ![Seletor de cores](assets/color-picker-color-tags.png)
+   ![Seletor de Cores](assets/color-picker-color-tags.png)
 
-   É possível filtrar imagens com base na seleção de uma cor. As imagens que têm a cor selecionada como uma das tags de cor inteligente e acima da [Limite de cobertura/domínio %](#manage-color-tagging-settings) no painel direito.
+   É possível filtrar imagens com base na seleção de uma cor. As imagens que têm a cor selecionada como uma das marcas de cores inteligentes e acima do [Limite de Cobertura/ Domínio %](#manage-color-tagging-settings) são exibidas no painel direito.
 
 1. Limpe o filtro clicando em X na barra de Pesquisa.
 
@@ -198,4 +198,4 @@ Para pesquisar imagens com base em cores:
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

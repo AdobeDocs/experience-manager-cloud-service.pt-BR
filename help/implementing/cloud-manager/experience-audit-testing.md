@@ -57,25 +57,25 @@ Você configura quais páginas são incluídas na Auditoria de experiência quan
 
 1. Dependendo do tipo de pipeline que você deseja configurar, siga as instruções para:
 
-   * Adicionar um novo [pipeline de produção,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) se desejar definir os caminhos que serão avaliados pela auditoria.
-   * Adicionar um novo [pipeline de não produção,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se quiser ativar a auditoria em um pipeline de front-end ou de pilha completa de desenvolvimento.
-   * Ou você pode [editar um pipeline existente,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e atualize as opções existentes.
+   * Adicione um novo [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) se desejar definir os caminhos a serem avaliados pela auditoria.
+   * Adicione um novo [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desejar habilitar a auditoria em um pipeline de front-end ou de pilha completa de desenvolvimento.
+   * Ou você pode [editar um pipeline existente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e atualizar as opções existentes.
 
-1. Se você estiver adicionando ou editando um pipeline de não produção para o qual deseja usar a Auditoria de experiência, é necessário selecionar o **Auditoria de experiência** caixa de seleção na **Código-fonte** guia.
+1. Se você estiver adicionando ou editando um pipeline de não produção para o qual deseja usar a Auditoria de Experiência, marque a caixa de seleção **Auditoria de Experiência** na guia **Código Source**.
 
-   ![Ativar a Auditoria de experiência](assets/experience-audit-enable.jpg)
+   ![Habilitando a Auditoria de Experiência](assets/experience-audit-enable.jpg)
 
    * Isso só é necessário para pipelines de não produção.
-   * A variável **Auditoria de experiência** é exibida quando a caixa de seleção é marcada.
+   * A guia **Auditoria de experiência** aparece quando a caixa de seleção é marcada.
 
-1. Para pipelines de produção e não produção, você define os caminhos que devem ser incluídos na Auditoria de experiência no **Auditoria de experiência** guia.
+1. Para pipelines de produção e não produção, você define os caminhos que devem ser incluídos na Auditoria de experiência na guia **Auditoria de experiência**.
 
-   * Os caminhos da página devem começar com `/` e são relativos ao seu site.
-   * Por exemplo, se o site for `wknd.site` e gostaria de incluir `https://wknd.site/us/en/about-us.html` na Auditoria de experiência, insira o caminho `/us/en/about-us.html`.
+   * Os caminhos de página devem começar com `/` e são relativos ao seu site.
+   * Por exemplo, se o site for `wknd.site` e quiser incluir `https://wknd.site/us/en/about-us.html` na Auditoria de Experiência, insira o caminho `/us/en/about-us.html`.
 
    ![Definição de um caminho para a Auditoria de experiência](assets/experience-audit-add-page.png)
 
-1. Toque ou clique **Adicionar página** e o caminho é preenchido automaticamente com o endereço do ambiente e adicionado à tabela de caminhos.
+1. Toque ou clique em **Adicionar página** e o caminho é preenchido automaticamente com o endereço do ambiente e adicionado à tabela de caminhos.
 
    ![Caminho salvo na tabela](assets/experience-audit-page-added.png)
 
@@ -107,7 +107,7 @@ A métrica de alteração pode ter um dos valores a seguir.
 
 * **Valor negativo** - as páginas regressaram no teste selecionado desde a última execução do pipeline de produção.
 
-* **Sem alterações** - As páginas tiveram a mesma pontuação da última execução do pipeline de produção.
+* **Nenhuma alteração** - As páginas tiveram a mesma pontuação da última execução do pipeline de produção.
 
 * **N/D** - Não havia pontuação anterior disponível para comparação.
 

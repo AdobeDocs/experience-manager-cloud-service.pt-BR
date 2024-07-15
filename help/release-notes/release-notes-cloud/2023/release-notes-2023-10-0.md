@@ -43,7 +43,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2023 que exibe um res
 
 ### Novos recursos {#assets-features}
 
-**Complemento AEM Assets para Adobe Express**: o Experience Manager Assets agora fornece um complemento para o Adobe Express. O complemento permite acessar diretamente os ativos armazenados no Experience Manager Assets por meio da interface do usuário do Adobe Express. Você pode colocar o conteúdo gerenciado no AEM Assets na tela Express e depois salvar o conteúdo novo ou editado em um repositório do AEM Assets. O complemento oferece os seguintes benefícios principais:
+**Complemento do AEM Assets para Adobe Express**: o Experience Manager Assets agora fornece um complemento para Adobe Express. O complemento permite acessar diretamente os ativos armazenados no Experience Manager Assets por meio da interface do usuário do Adobe Express. Você pode colocar o conteúdo gerenciado no AEM Assets na tela Express e depois salvar o conteúdo novo ou editado em um repositório do AEM Assets. O complemento oferece os seguintes benefícios principais:
 
 * Maior reutilização de conteúdo ao editar e salvar novos ativos no AEM
 
@@ -53,17 +53,17 @@ Assista ao vídeo de Visão geral da versão de outubro de 2023 que exibe um res
 
 ### Novos recursos na visualização de ativos {#assets-view-features}
 
-* **Importar ativos em massa da fonte de dados do OneDrive**: os administradores agora têm a capacidade de [importar um grande número de ativos do OneDrive para o AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). A lista atualizada das fontes de dados com suporte para importação em massa inclui Azure, AWS, Google Cloud, Dropbox e OneDrive.
+* **Importar ativos em massa da fonte de dados do OneDrive**: os administradores agora podem [importar um grande número de ativos do OneDrive para o AEM Assets](/help/assets/bulk-import-assets-view.md#onedrive-developer-application). A lista atualizada das fontes de dados com suporte para importação em massa inclui Azure, AWS, Google Cloud, Dropbox e OneDrive.
 
   ![Atribuir formulário de metadados a uma pasta](/help/assets/assets/bulk-import-source-details-onedrive.png)
 
-* **Suporte a direitos entre organizações para bibliotecas**: o Experience Manager Assets agora permite configurar o acesso às bibliotecas de Creative Cloud em uma Organização IMS diferente. Isso facilita o acesso aos fluxos de trabalho de produtos mais recentes entre a Creative Cloud e o Experience Manager e reduz o tempo e esforço de criação.
+* **Suporte a direitos entre organizações para bibliotecas**: o Experience Manager Assets agora permite que você configure o acesso a bibliotecas Creative Cloud em uma Organização IMS diferente. Isso facilita o acesso aos fluxos de trabalho de produtos mais recentes entre a Creative Cloud e o Experience Manager e reduz o tempo e esforço de criação.
 
 ### Recursos de pré-lançamento disponíveis em [!DNL Experience Manager Assets] {#prerelease-features-assets}
 
-* **Dynamic Media**: [Suporte a várias legendas e trilhas de áudio para vídeos no Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)—Agora é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
+* **Dynamic Media**: [Suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media](/help/assets/dynamic-media/video.md#about-msma)—Agora é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 
-  ![Guia Legendas e faixas de áudio na página Propriedades de um ativo de vídeo selecionado.](/help/release-notes/assets/msma-aem-cs.png)*Guia Legendas e faixas de áudio na página Propriedades de um ativo de vídeo selecionado.*
+  ![Guia Legendas e Faixas de áudio na página Propriedades de um ativo de vídeo selecionado.](/help/release-notes/assets/msma-aem-cs.png)*Guia Legendas e Faixas de áudio na página Propriedades de um ativo de vídeo selecionado.*
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -71,26 +71,26 @@ Assista ao vídeo de Visão geral da versão de outubro de 2023 que exibe um res
 
 * **[Propriedades personalizadas para o Adaptive Forms](/help/forms/template-editor-core-components.md#add-a-custom-group-name-in-the-policy-of-template-editor)**: você pode associar atributos personalizados (pares de valores chave) a um modelo de formulário ou componente de formulários adaptáveis para permitir que os desenvolvedores de formulários forneçam comportamentos de formulário dinâmicos que se adaptam com base nos valores desses atributos personalizados. Por exemplo, os desenvolvedores podem criar diferentes representações de um componente headless do Forms em plataformas móveis, de desktop ou da Web, com base nos valores de atributos personalizados, melhorando significativamente a experiência do usuário em uma grande variedade de dispositivos.
 
-* **Temas e modelos**: Inicie seu processo de criação de formulários com nossos novos temas e modelos, personalizados para capacitar profissionais experientes e novos autores de formulários. Construídos de maneira contínua usando os Componentes principais do Adaptive Forms, esses temas e modelos meticulosamente preparados permitem que você comece a criar formulários rapidamente para casos de uso comuns.
+* **Temas e modelos**: inicie seu processo de criação de formulários com nossos novos temas e modelos, personalizados para capacitar profissionais experientes e novos autores de formulários. Construídos de maneira contínua usando os Componentes principais do Adaptive Forms, esses temas e modelos meticulosamente preparados permitem que você comece a criar formulários rapidamente para casos de uso comuns.
 
-  ![Modelos prontos para uso](/help/forms/assets/form-templates-ootb.png)
+  ![Modelos prontos](/help/forms/assets/form-templates-ootb.png)
 
 
 ### Programa de adoção antecipada {#forms-early-adopter}
 
-* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs do DocAssurance permitem proteger informações confidenciais, assinando e criptografando os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
+* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de Comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs DocAssurance permitem proteger informações confidenciais ao assinar e criptografar os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
 
-  Você pode escrever para `aem-forms-ea@adobe.com` do seu id de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
+  Você pode escrever para `aem-forms-ea@adobe.com` a partir de sua ID de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Regras de filtro de tráfego, incluindo WAF {#traffic-filter-rules-waf}
 
-[Filtrar o tráfego na CDN gerenciada por Adobe](/help/security/traffic-filter-rules-including-waf.md) declarando regras que correspondem ao tráfego do site por propriedades, incluindo url, endereço IP e agente do usuário — ou definindo limites de taxa de tráfego personalizados para proteger contra ataques de DoS. Os clientes também podem licenciar um conjunto de regras avançadas do Web Application Firewall (WAF) para obter proteção extra contra ameaças sofisticadas de sites.
+[Filtre o tráfego na CDN Gerenciada por Adobe](/help/security/traffic-filter-rules-including-waf.md) declarando regras que correspondam ao tráfego do site por propriedades, incluindo URL, endereço IP e agente de usuário — ou defina limites de taxa de tráfego personalizados para proteger contra ataques de DoS. Os clientes também podem licenciar um conjunto de regras avançadas do Web Application Firewall (WAF) para obter proteção extra contra ameaças sofisticadas de sites.
 
-Recomendamos que você se familiarize com as regras de filtro de tráfego ao [experimentar um tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Ele orienta você na configuração de um novo Pipeline de configuração do Cloud Manager, na declaração de regras em um arquivo de configuração e na análise de logs de CDN para tráfego mal-intencionado.
+Recomendamos que você se familiarize com as regras de filtro de tráfego [experimentando um tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Ele orienta você na configuração de um novo Pipeline de configuração do Cloud Manager, declarando regras em um arquivo de configuração e analisando logs de CDN para tráfego mal-intencionado.
 
-As regras de filtro de tráfego estão disponíveis agora em ambientes de desenvolvimento, com uma implantação gradual para ambientes de preparo e produção em novembro. Você pode solicitar acesso antecipado no palco e no prod enviando um email **aemcs-waf-adopter@adobe.com**.
+As regras de filtro de tráfego estão disponíveis agora em ambientes de desenvolvimento, com uma implantação gradual para ambientes de preparo e produção em novembro. Você pode solicitar acesso antecipado no estágio e na produção enviando um email para **aemcs-waf-adopter@adobe.com**.
 
 As regras avançadas de filtro de tráfego do WAF podem ser licenciadas ainda este ano por meio da Segurança aprimorada ou das ofertas de Proteção WAF-DDoS.
 

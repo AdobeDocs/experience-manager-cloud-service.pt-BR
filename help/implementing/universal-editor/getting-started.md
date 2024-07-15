@@ -59,7 +59,7 @@ A versão mais recente é sempre recomendada, mas versões anteriores do serviç
 * `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - A biblioteca UE CORS mais recente
 * `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - A biblioteca UE CORS mais recente na versão 2.x
 * `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - A biblioteca UE CORS mais recente na versão 2.1.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- O UE CORS lib exato versão 2.1.1
+* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- A biblioteca UE CORS exata versão 2.1.1
 
 ## Adicionar as configurações OSGi necessárias {#osgi-configurations}
 
@@ -111,7 +111,7 @@ As conexões usadas no aplicativo são armazenadas como tags de `<meta>` no `<he
 
 * `<category>` - Esta é uma classificação da conexão com duas opções.
    * `system` - Para pontos de extremidade de conexão
-   * `config` - Para [definição de definições de configuração opcionais](#configuration-settings)
+   * `config` - Para [definindo configurações opcionais](#configuration-settings)
 * `<referenceName>`: este é um nome curto que é reutilizado no documento para identificar a conexão. Por exemplo: `aemconnection`
 * `<protocol>`: isso indica qual plug-in do serviço de persistência do Editor universal deve ser utilizado. Por exemplo: `aem`
 * `<url>`: esta é a URL do sistema no qual as alterações devem ser mantidas. Por exemplo: `http://localhost:4502`
@@ -165,7 +165,7 @@ data-aue-resource="urn:<referenceName>:<resource>"
 
 ### Definições de configuração {#configuration-settings}
 
-Você pode usar o `config` prefixo na URN da conexão para definir os pontos de extremidade de serviço e extensão, se necessário.
+Você pode usar o prefixo `config` no URN da conexão para definir pontos de extremidade de serviço e extensão, se necessário.
 
 Se você não quiser usar o Universal Editor Service, que é hospedado pelo Adobe, mas sua própria versão hospedada, poderá defini-lo em uma meta tag. Para substituir o ponto de extremidade de serviço padrão fornecido pelo Editor Universal, defina seu próprio ponto de extremidade de serviço:
 
@@ -197,7 +197,7 @@ Para saber mais sobre o Editor universal, consulte estes documentos.
 
 * [Introdução ao Editor universal](introduction.md): saiba como o Editor universal permite editar qualquer aspecto do conteúdo das implementações, a fim de entregar experiências excepcionais, aumentar a velocidade do conteúdo e fornecer uma experiência de desenvolvimento de última geração.
 * [Criação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md): saiba como é fácil e intuitivo para os autores criarem conteúdo usando o Editor universal.
-* [Publicar conteúdo com o editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md) - Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
+* [Publicando Conteúdo com o Editor Universal](/help/sites-cloud/authoring/universal-editor/publishing.md) - Saiba como o Editor Universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
 * [Arquitetura do Editor universal](architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 * [Atributos e tipos](attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
 * [Autenticação do Editor universal](authentication.md): saiba como funciona a autenticação do Editor universal.

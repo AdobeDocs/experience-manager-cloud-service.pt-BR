@@ -1,6 +1,6 @@
 ---
 title: Configurar o AEM com vários sistemas de comércio
-description: Saiba como configurar o Adobe Experience Manager com vários sistemas de comércio. Isso permite que os projetos sejam compatíveis com uma única camada de gerenciamento de experiência que se conecta a várias infraestruturas de comércio de Adobe ou de terceiros para vitrines de várias marcas e regiões.
+description: Saiba como configurar o Adobe Experience Manager com vários sistemas Commerce. Isso permite que os projetos sejam compatíveis com uma única camada de gerenciamento de experiência que se conecta a várias infraestruturas de comércio de Adobe ou de terceiros para vitrines de várias marcas e regiões.
 sub-product: Commerce
 version: Cloud Service
 doc-type: technical-video
@@ -23,6 +23,6 @@ ht-degree: 0%
 
 O sistema de CIF (Adobe Experience Manager AEM) único pode ser usado para conectar-se a vários sistemas de comércio de Adobe ou de terceiros para oferecer suporte a implantações avançadas. Isso é útil em casos de lojas de várias regiões e marcas, em que a única camada de gerenciamento de experiência simplifica o processo de criação e entrega de conteúdo de comércio. Isso também ajuda as organizações a acelerar o TTV (time-to-value, tempo de implantação) e a diminuir o custo total de propriedade (TCO).
 
-Uma apresentação em vídeo detalhando como configurar o AEM com vários ambientes comerciais de Adobe. O Gerenciamento de vários sites (MSM) do AEM inclui recursos como Live Copy e Language Copy. Esses recursos são usados com o Commerce integration framework (CIF) para criar uma vitrine de várias regiões na qual __Lojas da região da UE__ conectar a __ADOBE COMMERCE UE__ e __Loja da região da América do Norte (NA)__ conectar a __NA ADOBE COMMERCE__ sistema.
+Uma apresentação em vídeo detalhando como configurar o AEM com vários ambientes comerciais de Adobe. O Gerenciamento de vários sites (MSM) do AEM inclui recursos como Live Copy e Language Copy. Esses recursos são usados com o Commerce integration framework (CIF Adobe Commerce) para criar uma vitrine de várias regiões na qual __vitrines de regiões da UE__ se conectam à __vitrines de regiões da UE__ e à __vitrines de regiões da América do Norte (NA)__ se conectam ao sistema __NA Adobe Commerce__.
 
 >[!VIDEO](https://video.tv.adobe.com/v/346811/?quality=12&learn=on)

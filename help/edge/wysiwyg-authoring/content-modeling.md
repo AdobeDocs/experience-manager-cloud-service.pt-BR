@@ -18,7 +18,7 @@ Saiba como a modelagem de conteúdo funciona para a criação WYSIWYG com projet
 
 ## Pré-requisitos {#prerequisites}
 
-Os projetos que usam a criação WYSIWYG com Edge Delivery Services herdam a maioria dos mecanismos de qualquer outro projeto Edge Delivery Services, independentemente da fonte de conteúdo ou [método de criação.](/help/edge/wysiwyg-authoring/authoring.md)
+Projetos que usam a criação WYSIWYG com Edge Delivery Services herdam a maioria dos mecanismos de qualquer outro projeto Edge Delivery Services, independentemente da fonte de conteúdo ou do [método de criação.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Antes de começar a modelar o conteúdo para seu projeto, primeiro leia a documentação a seguir.
 
@@ -30,20 +30,20 @@ Antes de começar a modelar o conteúdo para seu projeto, primeiro leia a docume
 
 ## Conteúdo padrão {#default-content}
 
-**Conteúdo padrão** É um conteúdo que um autor intuitivamente colocaria em uma página sem adicionar nenhuma semântica adicional. Isso inclui texto, cabeçalhos, links e imagens. Esse conteúdo é autoexplicativo em sua função e propósito.
+**O conteúdo padrão** é o conteúdo que um autor intuitivamente colocaria em uma página sem adicionar nenhuma semântica adicional. Isso inclui texto, cabeçalhos, links e imagens. Esse conteúdo é autoexplicativo em sua função e propósito.
 
 No AEM, esse conteúdo é implementado como componentes com modelos muito simples e predefinidos, que incluem tudo o que pode ser serializado no Markdown e no HTML.
 
-* **Texto**: Rich text (incluindo elementos de lista e texto forte ou em itálico)
-* **Título**: Texto, tipo (c1-c6)
-* **Imagem**: Origem, descrição
+* **Texto**: Rich text (incluindo elementos de lista e texto forte ou itálico)
+* **Título**: texto, tipo (h1-h6)
+* **Imagem**: Source, descrição
 * **Botão**: texto, título, url, tipo (padrão, primário, secundário)
 
-O modelo desses componentes faz parte da [Modelo para criação WYSIWYG com Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
+O modelo desses componentes faz parte da [Estrutura para criação WYSIWYG com Edge Delivery Services.](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112)
 
 ## Blocos {#blocks}
 
-Os blocos são usados para criar conteúdo mais rico com estilos e funcionalidades específicas. Ao contrário do conteúdo padrão, os blocos exigem semântica adicional. Blocos podem ser comparados a [componentes no editor de página AEM.](/help/implementing/developing/components/overview.md)
+Os blocos são usados para criar conteúdo mais rico com estilos e funcionalidades específicas. Ao contrário do conteúdo padrão, os blocos exigem semântica adicional. Os blocos podem ser comparados a [ componentes no editor de páginas AEM.](/help/implementing/developing/components/overview.md)
 
 Os blocos são essencialmente pedaços de conteúdo decorados pelo JavaScript e estilizados com uma folha de estilos.
 
@@ -51,7 +51,7 @@ Os blocos são essencialmente pedaços de conteúdo decorados pelo JavaScript e 
 
 Ao usar a criação WYSIWYG com Edge Delivery Services, o conteúdo dos blocos deve ser modelado explicitamente para fornecer ao autor a interface para criar conteúdo. Basicamente, é necessário criar um modelo para que a interface do usuário de criação saiba quais opções apresentar ao autor com base no bloco.
 
-A variável [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) file define o modelo de blocos. Os campos definidos no modelo de componente são mantidos como propriedades no AEM e renderizados como células na tabela que compõe um bloco.
+O arquivo [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json) define o modelo de blocos. Os campos definidos no modelo de componente são mantidos como propriedades no AEM e renderizados como células na tabela que compõe um bloco.
 
 ```json
 {
@@ -82,9 +82,9 @@ A variável [`component-models.json`](https://github.com/adobe-rnd/aem-boilerpla
 }
 ```
 
-Observe que nem todos os blocos devem ter um modelo. Alguns blocos são simplesmente [contêineres](#container) para uma lista de filhos, onde cada filho tem seu próprio modelo.
+Observe que nem todos os blocos devem ter um modelo. Alguns blocos são simplesmente [containers](#container) para uma lista de filhos, onde cada filho tem seu próprio modelo.
 
-Também é necessário definir quais blocos existem e quais podem ser adicionados a uma página usando o Editor universal. A variável [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) arquivo lista os componentes à medida que são disponibilizados pelo Universal Editor.
+Também é necessário definir quais blocos existem e quais podem ser adicionados a uma página usando o Editor universal. O arquivo [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) lista os componentes à medida que eles são disponibilizados pelo Editor Universal.
 
 ```json
 {
@@ -108,12 +108,12 @@ Também é necessário definir quais blocos existem e quais podem ser adicionado
 
 Para cada bloco, o desenvolvedor:
 
-* Deve usar o `core/franklin/components/block/v1/block` tipo de recurso, a implementação genérica da lógica de bloco no AEM.
+* É necessário usar o tipo de recurso `core/franklin/components/block/v1/block`, a implementação genérica da lógica de bloqueio no AEM.
 * É necessário definir o nome do bloco, que será renderizado no cabeçalho da tabela do bloco.
    * O nome do bloco é usado para buscar o estilo e o script corretos para decorar o bloco.
-* Pode definir um [ID do modelo.](/help/implementing/universal-editor/field-types.md#model-structure)
+* Pode definir um [ID de modelo.](/help/implementing/universal-editor/field-types.md#model-structure)
    * A ID do modelo é uma referência ao modelo do componente, que define os campos disponíveis para o autor no painel de propriedades.
-* Pode definir um [ID do filtro.](/help/implementing/universal-editor/customizing.md#filtering-components)
+* Pode definir um [ID de filtro.](/help/implementing/universal-editor/customizing.md#filtering-components)
    * A ID do filtro é uma referência ao filtro do componente, que permite alterar o comportamento de criação, por exemplo, limitando quais filhos podem ser adicionados ao bloco ou seção, ou quais recursos de RTE estão habilitados.
 
 Todas essas informações são armazenadas no AEM quando um bloco é adicionado a uma página. Se o tipo de recurso ou o nome do bloco estiver ausente, o bloco não será renderizado na página.
@@ -122,11 +122,11 @@ Todas essas informações são armazenadas no AEM quando um bloco é adicionado 
 >
 >Embora possível, não é necessário ou recomendado implementar componentes personalizados do AEM. Os componentes para Edge Delivery Services fornecidos pelo AEM são suficientes e oferecem certos painéis de proteção para facilitar o desenvolvimento.
 >
->Os componentes fornecidos pelo AEM renderizam uma marcação que pode ser consumida pelo [helix-html2md](https://github.com/adobe/helix-html2md) ao publicar no Edge Delivery Services e por [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) ao carregar uma página no Editor universal. A marcação é o contrato estável entre o AEM e as outras partes do sistema e não permite personalizações. Por esse motivo, os projetos não devem alterar os componentes e não devem usar componentes personalizados.
+>Os componentes fornecidos pelo AEM renderizam uma marcação que pode ser consumida por [helix-html2md](https://github.com/adobe/helix-html2md) ao publicar no Edge Delivery Services e por [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) ao carregar uma página no Editor Universal. A marcação é o contrato estável entre o AEM e as outras partes do sistema e não permite personalizações. Por esse motivo, os projetos não devem alterar os componentes e não devem usar componentes personalizados.
 
 ### Estrutura de blocos {#block-structure}
 
-As propriedades dos blocos são [definido nos modelos de componente](#model-definition) e persistiu como tal no AEM. As propriedades são renderizadas como células na estrutura semelhante à tabela do bloco.
+As propriedades dos blocos são [definidas nos modelos de componentes](#model-definition) e persistem como tal no AEM. As propriedades são renderizadas como células na estrutura semelhante à tabela do bloco.
 
 #### Blocos simples {#simple}
 
@@ -181,7 +181,7 @@ No exemplo a seguir, a imagem é definida primeiro no modelo e o texto em segund
 
 >[!ENDTABS]
 
-Observe que alguns tipos de valores permitem inferir a semântica na marcação e as propriedades são combinadas em em células únicas. Esse comportamento é descrito na seção [Digite Inferência.](#type-inference)
+Observe que alguns tipos de valores permitem inferir a semântica na marcação e as propriedades são combinadas em em células únicas. Este comportamento é descrito na seção [Inferência de Tipo.](#type-inference)
 
 #### Bloco de valor-chave {#key-value}
 
@@ -189,7 +189,7 @@ Em muitos casos, é recomendável decorar a marcação semântica renderizada, a
 
 Em outros casos, no entanto, o bloco é lido como uma configuração de par de valores chave.
 
-Um exemplo disso é o [metadados da seção.](/help/edge/developer/markup-sections-blocks.md#sections) Nesse caso de uso, o bloco pode ser configurado para renderizar como uma tabela de pares de valores chave. Consulte a seção [Seções e metadados de seção](#sections-metadata) para obter mais informações.
+Um exemplo disso são os [metadados de seção.](/help/edge/developer/markup-sections-blocks.md#sections) Nesse caso de uso, o bloco pode ser configurado para renderizar como tabela de par de valor chave. Consulte a seção [Seções e metadados da seção](#sections-metadata) para obter mais informações.
 
 >[!BEGINTABS]
 
@@ -245,7 +245,7 @@ Um exemplo disso é o [metadados da seção.](/help/edge/developer/markup-sectio
 
 Ambas as estruturas anteriores têm uma única dimensão: a lista de propriedades. Os blocos de contêiner permitem adicionar filhos (geralmente do mesmo tipo ou modelo) e, portanto, são bidimensionais. Esses blocos ainda suportam suas próprias propriedades renderizadas como linhas com uma única coluna primeiro. Mas também permitem adicionar filhos, para os quais cada item é renderizado como linha e cada propriedade como coluna dentro dessa linha.
 
-No exemplo a seguir, um bloco aceita uma lista de ícones vinculados como filhos, onde cada ícone vinculado tem uma imagem e um link. Observe a [ID do filtro](/help/implementing/universal-editor/customizing.md#filtering-components) definido nos dados do bloco para fazer referência à configuração de filtro.
+No exemplo a seguir, um bloco aceita uma lista de ícones vinculados como filhos, onde cada ícone vinculado tem uma imagem e um link. Observe a [ID de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) definida nos dados do bloco para fazer referência à configuração de filtro.
 
 >[!BEGINTABS]
 
@@ -322,9 +322,9 @@ No exemplo a seguir, um bloco aceita uma lista de ícones vinculados como filhos
 
 ### Criação de modelos de conteúdo semântico para blocos {#creating-content-models}
 
-Com o [mecânica da estrutura do bloco explicada,](#block-structure) é possível criar um modelo de conteúdo que mapeie o conteúdo persistente no AEM de um para um para o nível de entrega.
+Com a [mecânica da estrutura de blocos explicada,](#block-structure) é possível criar um modelo de conteúdo que mapeie o conteúdo persistente do AEM de um para um para o nível de entrega.
 
-No início de cada projeto, um modelo de conteúdo deve ser cuidadosamente considerado para cada bloco. Ele deve ser agnóstico em relação à fonte de conteúdo e à experiência de criação para permitir que os autores os alternem ou combinem ao reutilizar implementações e estilos de bloco. Mais detalhes e orientações gerais podem ser encontrados em [Modelo de David (tomada 2).](https://www.aem.live/docs/davidsmodel) Mais especificamente, a [coleção de blocos](/help/edge/developer/block-collection.md) O contém um conjunto abrangente de modelos de conteúdo para casos de uso específicos de padrões comuns de interface do usuário.
+No início de cada projeto, um modelo de conteúdo deve ser cuidadosamente considerado para cada bloco. Ele deve ser agnóstico em relação à fonte de conteúdo e à experiência de criação para permitir que os autores os alternem ou combinem ao reutilizar implementações e estilos de bloco. Mais detalhes e orientações gerais podem ser encontrados no [Modelo de David (tomada 2).](https://www.aem.live/docs/davidsmodel) Mais especificamente, a [coleção de blocos](/help/edge/developer/block-collection.md) contém um conjunto extenso de modelos de conteúdo para casos de uso específicos de padrões comuns da interface do usuário.
 
 Para a criação WYSIWYG com Edge Delivery Services, isso levanta a questão de como fornecer um modelo atraente de conteúdo semântico quando as informações são criadas com formulários compostos por vários campos, em vez de editar a marcação semântica em contexto, como um rich text.
 
@@ -342,17 +342,17 @@ Para resolver esse problema, há três métodos que facilitam a criação de um 
 
 Para alguns valores, podemos inferir o significado semântico a partir dos próprios valores. Esses valores incluem:
 
-* **Imagens** - Se uma referência a um recurso no AEM for um ativo com um tipo MIME que comece com `image/`, a referência é renderizada como `<picture><img src="${reference}"></picture>`.
-* **Links** - Se uma referência existe no AEM e não é uma imagem, ou se o valor começa com `https?://`  ou `#`, a referência é renderizada como `<a href="${reference}">${reference}</a>` .
-* **Rich Text** - Se um valor aparado começar com um parágrafo (`p`, `ul`, `ol`, `h1`-`h6`, etc.), o valor será renderizado como rich text.
-* **Nomes de classe** - A `classes` A propriedade é tratada como [opções de bloqueio](/help/edge/developer/markup-sections-blocks.md#block-options) e renderizado no cabeçalho da tabela para [blocos simples,](#simple) ou como lista de valores para itens em uma [bloco de contêiner.](#container) É útil se você deseja [estilizar um bloco de forma diferente,](/help/edge/wysiwyg-authoring/create-block.md#block-options) mas não precisam criar um bloco totalmente novo.
-* **Listas de valores** - Se um valor for uma propriedade de vários valores e o primeiro valor não for nenhum dos anteriores, todos os valores serão concatenados como uma lista separada por vírgulas.
+* **Imagens** - Se uma referência a um recurso no AEM for um ativo com um tipo MIME começando com `image/`, a referência será renderizada como `<picture><img src="${reference}"></picture>`.
+* **Links** - Se uma referência existir no AEM e não for uma imagem, ou se o valor começar com `https?://` ou `#`, a referência será renderizada como `<a href="${reference}">${reference}</a>`.
+* **Rich Text** - Se um valor aparado começa com um parágrafo (`p`, `ul`, `ol`, `h1`-`h6`, etc.), o valor é renderizado como rich text.
+* **Nomes de Classe** - A propriedade `classes` é tratada como [opções de bloco](/help/edge/developer/markup-sections-blocks.md#block-options) e renderizada no cabeçalho da tabela para [blocos simples](#simple) ou como lista de valores para itens em um bloco de contêiner [.](#container) É útil se você deseja [estilizar um bloco de forma diferente,](/help/edge/wysiwyg-authoring/create-block.md#block-options), mas não precisa criar um bloco totalmente novo.
+* **Listas de Valores** - Se um valor for uma propriedade de vários valores e o primeiro valor não for nenhum dos anteriores, todos os valores serão concatenados como uma lista separada por vírgulas.
 
 Todo o resto será renderizado como texto simples.
 
 #### Recolher Campo {#field-collapse}
 
-O recolhimento de campo é o mecanismo que combina vários valores de campo em um único elemento semântico com base em uma convenção de nomenclatura usando os sufixos `Title`, `Type`, `MimeType`, `Alt`, e `Text` (todas diferenciam maiúsculas de minúsculas). Qualquer propriedade que termine com qualquer um desses sufixos não será considerada um valor, mas como um atributo de outra propriedade.
+O recolhimento de campo é o mecanismo que combina vários valores de campo em um único elemento semântico com base em uma convenção de nomenclatura usando os sufixos `Title`, `Type`, `MimeType`, `Alt` e `Text` (todos diferenciam maiúsculas de minúsculas). Qualquer propriedade que termine com qualquer um desses sufixos não será considerada um valor, mas como um atributo de outra propriedade.
 
 ##### Imagens {#image-collapse}
 
@@ -400,7 +400,7 @@ O recolhimento de campo é o mecanismo que combina vários valores de campo em u
 
 >[!TAB Marcação]
 
-Não `linkType`ou `linkType=default`
+Nenhum `linkType` ou `linkType=default`
 
 ```html
 <a href="https://www.adobe.com" title="Navigate to adobe.com">adobe.com</a>
@@ -461,7 +461,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 #### Agrupamento de elementos {#element-grouping}
 
-Enquanto [recolher campo](#field-collapse) é sobre combinar várias propriedades em um único elemento semântico, o agrupamento de elementos é sobre concatenar vários elementos semânticos em uma única célula. Isso é particularmente útil para casos de uso em que o autor deve ser restrito no tipo e no número de elementos que pode criar.
+Embora o [recolhimento de campo](#field-collapse) seja sobre a combinação de várias propriedades em um único elemento semântico, o agrupamento de elementos é sobre a concatenação de vários elementos semânticos em uma única célula. Isso é particularmente útil para casos de uso em que o autor deve ser restrito no tipo e no número de elementos que pode criar.
 
 Por exemplo, um componente de teaser pode permitir que o autor crie apenas um subtítulo, título e uma única descrição de parágrafo combinada com no máximo dois botões de chamada para ação. O agrupamento desses elementos produz uma marcação semântica que pode ser estilizada sem mais ações.
 
@@ -532,13 +532,13 @@ O agrupamento de elementos usa uma convenção de nomenclatura, em que o nome do
 
 ## Seções e metadados de seção {#sections-metadata}
 
-Da mesma forma que um desenvolvedor pode definir e modelar vários [blocos,](#blocks) eles podem definir diferentes seções.
+Da mesma forma que um desenvolvedor pode definir e modelar vários [blocos](#blocks), eles podem definir seções diferentes.
 
 O modelo de conteúdo do Edge Delivery Services permite deliberadamente apenas um único nível de aninhamento, ou seja, qualquer conteúdo ou bloco padrão contido em uma seção. Isso significa que, para ter componentes visuais mais complexos que possam conter outros componentes, eles precisam ser modelados como seções e combinados juntos usando o bloqueio automático do lado do cliente. Exemplos típicos disso são abas e seções recolhíveis, como acordeões.
 
-Uma seção pode ser definida da mesma forma que um bloco, mas com o tipo de recurso de `core/franklin/components/section/v1/section`. As seções podem ter um nome e um [ID do filtro,](/help/implementing/universal-editor/customizing.md#filtering-components) que são utilizados pela [Editor universal](/help/implementing/universal-editor/introduction.md) apenas, bem como uma [ID do modelo,](/help/implementing/universal-editor/field-types.md#model-structure) que é usado para renderizar os metadados da seção. O modelo é, dessa forma, o modelo do bloco de metadados da seção, que será anexado automaticamente a uma seção como bloco de valor principal se não estiver vazio.
+Uma seção pode ser definida da mesma forma que um bloco, mas com o tipo de recurso `core/franklin/components/section/v1/section`. As seções podem ter um nome e uma [ID de filtro](/help/implementing/universal-editor/customizing.md#filtering-components), que são usadas somente pelo [Editor Universal](/help/implementing/universal-editor/introduction.md), bem como uma [ID de modelo](/help/implementing/universal-editor/field-types.md#model-structure), que é usada para renderizar os metadados da seção. O modelo é, dessa forma, o modelo do bloco de metadados da seção, que será anexado automaticamente a uma seção como bloco de valor principal se não estiver vazio.
 
-A variável [ID do modelo](/help/implementing/universal-editor/field-types.md#model-structure) e [ID do filtro](/help/implementing/universal-editor/customizing.md#filtering-components) da seção padrão é `section`. Ela pode ser usada para alterar o comportamento da seção padrão. O exemplo a seguir adiciona alguns estilos e e uma imagem de plano de fundo ao modelo de metadados da seção.
+A [ID do modelo](/help/implementing/universal-editor/field-types.md#model-structure) e a [ID do filtro](/help/implementing/universal-editor/customizing.md#filtering-components) da seção padrão é `section`. Ela pode ser usada para alterar o comportamento da seção padrão. O exemplo a seguir adiciona alguns estilos e e uma imagem de plano de fundo ao modelo de metadados da seção.
 
 ```json
 {
@@ -595,7 +595,7 @@ O exemplo a seguir define uma seção de guia, que pode ser usada para criar um 
 
 ## Metadados de página {#page-metadata}
 
-Os documentos podem ter uma página [bloco de metadados,](https://www.aem.live/developer/block-collection/metadata) que é usado para definir qual `<meta>` os elementos são renderizados na variável `<head>` de uma página. As propriedades de página das páginas no AEM são mapeadas de forma as a Cloud Service para aquelas que estão disponíveis prontas para uso para Edge Delivery Services, como `title`, `description`, `keywords`, etc.
+Os documentos podem ter um bloco de metadados [ de página, ](https://www.aem.live/developer/block-collection/metadata), que é usado para definir quais elementos `<meta>` são renderizados no `<head>` de uma página. As propriedades de página das páginas no AEM as a Cloud Service são mapeadas para aquelas que estão disponíveis prontas para uso para Edge Delivery Services, como `title`, `description`, `keywords`, etc.
 
 Antes de explorar mais detalhadamente como definir seus próprios metadados, revise os documentos a seguir para entender o conceito de metadados da página primeiro.
 
@@ -606,7 +606,7 @@ Também é possível definir metadados de página adicionais de duas maneiras.
 
 ### Planilhas de metadados {#metadata-spreadsheets}
 
-É possível definir metadados por caminho ou por padrão de caminho de maneira semelhante a uma tabela no AEM as a Cloud Service. Há uma interface de criação para dados semelhantes a tabelas disponíveis semelhante ao Excel ou ao Google Sheets.
+É possível definir metadados por caminho ou por padrão de caminho de uma maneira semelhante a uma tabela no AEM as a Cloud Service. Há uma interface de criação para dados semelhantes a tabelas disponíveis semelhante ao Excel ou ao Google Sheets.
 
 Para criar essa tabela, crie uma página e use o modelo de Metadados no console Sites.
 
@@ -627,9 +627,9 @@ Verifique se a planilha foi adicionada ao mapeamento de caminho antes de public�
 
 Muitas das propriedades de página padrão disponíveis no AEM são mapeadas para os respectivos metadados de página em um documento. Isso inclui, por exemplo, `title`, `description`, `robots`, `canonical url` ou `keywords`. Algumas propriedades específicas do AEM também estão disponíveis:
 
-* `cq:lastModified` as `modified-time` no formato ISO8601
+* `cq:lastModified` como `modified-time` no formato ISO8601
 * A hora em que o documento foi publicado pela última vez como `published-time` no formato ISO8601
-* `cq:tags` as `cq-tags` como uma lista separada por vírgulas das IDs de tag.
+* `cq:tags` como `cq-tags` como uma lista separada por vírgulas das IDs de marcas.
 
 Também é possível definir um modelo de componente para metadados de página personalizados, que será disponibilizado ao autor como uma guia da caixa de diálogo de propriedades da página do AEM Sites.
 
@@ -652,11 +652,11 @@ Para fazer isso, crie um modelo de componente com a ID `page-metadata`.
 
 Agora que você sabe como modelar o conteúdo, é possível criar blocos para seus próprios Edge Delivery Services com o projeto de criação WYSIWYG.
 
-Consulte o documento [Criação de blocos instrumentados para uso com o editor universal](/help/edge/wysiwyg-authoring/create-block.md) para saber como criar blocos instrumentados para uso com o Editor universal na criação WYSIWYG com projetos Edge Delivery Services.
+Consulte o documento [Criando Blocos Instrumentados para uso com o Editor Universal](/help/edge/wysiwyg-authoring/create-block.md) para saber como criar blocos instrumentados para uso com o Editor Universal em criação WYSIWYG com projetos Edge Delivery Services.
 
-Se você já estiver familiarizado com a criação de blocos, consulte o documento [Guia de introdução do desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para começar a usar um novo site do Adobe Experience Manager usando o Edge Delivery Services e o Editor universal para criação de conteúdo.
+Se você já estiver familiarizado com a criação de blocos, consulte o documento [Guia de Introdução do Desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para que você possa começar a usar um novo site do Adobe Experience Manager usando o Edge Delivery Services e o Editor Universal para criação de conteúdo.
 
 >[!TIP]
 >
->Para obter uma apresentação completa da criação de um novo projeto Edge Delivery Services habilitado para criação WYSIWYG com AEM as a Cloud Service como fonte de conteúdo, visualize [este webinário de GEMs AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
+>Para obter uma apresentação completa da criação de um novo projeto Edge Delivery Services habilitado para criação WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery)
 

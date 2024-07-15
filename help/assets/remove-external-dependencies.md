@@ -31,7 +31,7 @@ Para remover as dependências externas:
      </repository>
    ```
 
-1. Remova a seguinte configuração de servidor do `settings.xml` arquivo, disponível em `./cloudmanager/maven/settings.xml`:
+1. Remova a seguinte configuração de servidor do arquivo `settings.xml`, disponível em `./cloudmanager/maven/settings.xml`:
 
    ```XML
          <server>
@@ -47,4 +47,4 @@ Para remover as dependências externas:
          </server>
    ```
 
-1. Execute o [novas etapas de instalação](workfront-connector-install.md).
+1. Execute as [novas etapas de instalação](workfront-connector-install.md).

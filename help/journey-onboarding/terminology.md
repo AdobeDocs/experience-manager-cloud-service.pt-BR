@@ -13,7 +13,7 @@ ht-degree: 81%
 
 # Terminologia do AEM as a Cloud Service {#terminology}
 
-Nesta parte do [integração do jornada,](overview.md) você aprende a terminologia do AEM as a Cloud Service e sua estrutura básica.
+Nesta parte da [jornada de integração](overview.md), você aprenderá a terminologia do AEM as a Cloud Service e sua estrutura básica.
 
 ## Objetivo {#objective}
 
@@ -46,7 +46,7 @@ Geralmente, um exemplo é útil na contextualização dessa hierarquia.
    * Um programa do Assets para a divisão WKND Media
 * Os programas da WKND Magazine e WKND Media teriam **ambientes** de desenvolvimento, preparo e produção.
 * **Repositórios** são usados para manter o código personalizado e os aplicativos da WKND Magazine e da WKND Media.
-* Vários **ferramentas e fluxos de trabalho** trabalhe nos repositórios para implantar código usando pipelines de CI/CD, registros de acesso, acesso ao AEM e assim por diante.
+* Várias **ferramentas e fluxos de trabalho** trabalham nos repositórios para implantar código usando pipelines de CI/CD, logs de acesso, AEM de acesso e assim por diante.
 
 ## O que vem a seguir {#what-is-next}
 
@@ -55,4 +55,4 @@ Agora que concluiu esta parte da jornada de integração do AEM, você deve comp
 * As diferentes camadas que compõem o AEMaaCS.
 * As funções básicas de cada camada.
 
-Desenvolva esse conhecimento e continue sua jornada de integração de AEM lendo o documento a seguir [Acessar o Admin Console](admin-console.md), onde você aprenderá a acessar o console e verificar seu status como administrador do sistema.
+Desenvolva esse conhecimento e continue sua jornada de integração de AEM lendo o documento [Acessando o Admin Console](admin-console.md), no qual você aprenderá como acessar o console e verificar seu status como administrador do sistema.

@@ -24,43 +24,43 @@ A Ativação de recursos 2024.7.0 fornecerá o conjunto completo de recursos par
 ### Aprimoramentos {#enhancements-16971}
 
 * SITES-22948: Remova as referências comerciais no conteúdo básico para AEM CS.
-* SITES-22141: [Fragmentos de conteúdo] SegmentNotFoundException de CFM ModelChangeRepositoryImpl após OnRC.
+* SITES-22141: [Fragmentos de conteúdo] SegmentNotFoundException do CFM ModelChangeRepositoryImpl após OnRC.
 * SITES-21893: problema de corte de imagem na instância do autor.
-* SITES-21788: [Fragmentos de conteúdo] Exibir OBSERVAÇÃO no CF e no editor de modelos CF quando uiSchema estiver habilitado para o modelo.
+* SITES-21788: [Fragmentos de conteúdo] exibem uma OBSERVAÇÃO no editor de modelos CF e CF quando o uiSchema está habilitado para o modelo.
 * SITES-21688: a implantação do MSM não atualiza o caminho do fragmento de experiência (XF) nas páginas de live copy.
 * SITES-21659: Retorna o nome completo do usuário que está criando/modificando/replicando um recurso de Modelo.
 * SITES-21609: endpoint OpenAPI para migrar fragmentos de conteúdo de um modelo para outro.
-* SITES-21598: [API aberta] Criar CFM: retorna um erro se o Caminho de configuração fornecido não existir.
-* SITES-21491: [API aberta] O ponto de extremidade de PATCH CF deve respeitar as relações de vida no nível do campo.
-* SITES-21434: [API aberta] O ponto de acesso do CF GET deve respeitar as relações de vida no nível do campo.
+* SITES-21598: [Abrir API] Criar CFM - retornará um erro se o Caminho de Configuração fornecido não existir.
+* SITES-21491: O ponto de extremidade PATCH CF [Open API] deve respeitar as relações de tempo real no nível do campo.
+* GET SITES-21434: O ponto de extremidade CF da [API aberta] deve respeitar as relações de tempo real no nível do campo.
 * SITES-21415: Editor de CF - suporte a referências UUID.
 * SITES-21326: [API aberta] Forneça informações sobre a presença de referências para um Fragmento de conteúdo.
-* SITES-21310: [API aberta] Adicionar id do fragmento de conteúdo na resposta da API de traduções.
+* SITES-21310: [API aberta] Adicione a ID do fragmento de conteúdo na resposta da API de traduções.
 * SITES-20859: API aberta do CF - Retorna referências ao recuperar um fragmento por caminho.
-* SITES-20687: [API aberta] Endpoint para recuperação de status de processamento em lote.
-* SITES-20657: [API aberta] Fornece a opção para a palavra inteira do match ao substituir uma string usando `FindAndReplace` terminal.
-* SITES-20587: [API aberta] Criar `COPY` endpoint para fragmentos de conteúdo.
-* SITES-20584: [API aberta] Otimizar recuperação de referência.
-* SITES-20308: [API aberta] Ative o processamento em lote na API.
-* SITES-19976: [API aberta] Esquema de interface do usuário genérico para campos condicionais.
-* SITES-19556: [Fragmentos de conteúdo] Atualize o uiSchema, se ele existir, quando o modelo for editado.
-* SITES-18056: [API aberta] Ao publicar um fragmento de conteúdo para Visualização, inclua referências.
-* SITES-16898: [Esquema] Endpoint OpenAPI para migrar fragmentos de conteúdo de um modelo para outro.
+* SITES-20687: [Abrir API] Ponto de extremidade para recuperação de status de processamento em lote.
+* SITES-20657: [Abrir API] Forneça a opção para corresponder a palavra inteira ao substituir uma cadeia de caracteres usando o ponto de extremidade `FindAndReplace`.
+* SITES-20587: [Abrir API] Criar ponto de extremidade `COPY` para fragmentos de conteúdo.
+* SITES-20584: [Abrir API] Otimizar recuperação de referência.
+* SITES-20308: [API aberta] Habilite o processamento em lote na API.
+* SITES-19976: [Esquema de interface genérica de API aberta] para campos condicionais.
+* SITES-19556: [Fragmentos de conteúdo] atualizam o uiSchema se ele existir quando o modelo for editado.
+* SITES-18056: [Abrir API] Ao publicar um fragmento de conteúdo para Pré-visualização, inclua referências.
+* SITES-16898: [Esquema] Ponto de extremidade OpenAPI para migrar fragmentos de conteúdo de um modelo para o outro.
 * SITES-16609: ponto de extremidade de inicializações de lista.
 * SITES-16606: Criar endpoint de inicialização.
-* SITES-21617: [Xwalk] Torne as propriedades/metadados da página editáveis dentro do UE.
+* SITES-21617: [Xwalk] Torne as Propriedades/Metadados de Página editáveis dentro do UE.
 * SITES-19614: [Xwalk] Paginação e rolagem infinita do editor de planilhas.
-* SITES-22163: [Xwalk] Aprimoramento do suporte ao conteúdo veiculado no nível de publicação para o Edge Delivery Sites.
-* SITES-22109: [Xwalk] Manuseio aprimorado de pós-processamento de marcação richtext.
-* SITES-22035: [Xwalk] Manuseio de MSM e inicializações aprimorado.
-* SITES-21839: [Xwalk] Melhoria no mapeamento de caminhos e na limpeza para conteúdo não distribuído pelo Edge Delivery.
+* SITES-22163: [Xwalk] Melhoria no suporte ao conteúdo veiculado pelo nível de publicação para o Edge Delivery Sites.
+* SITES-22109: [Xwalk] Manipulação de pós-processamento de marcação richtext aprimorada.
+* SITES-22035: [Xwalk] Manuseio de MSM e Inicializações aprimorado.
+* SITES-21839: [Xwalk] Melhoria no mapeamento de caminhos e na limpeza de conteúdo não distribuído pelo Edge Delivery.
 
 ### Problemas corrigidos {#fixed-issues-16971}
 
-* CQ-4356898: [Tradução] Erro outOfMemory para CF que contém um número de links excepcionalmente grande.
+* CQ-4356898: [Erro outOfMemory] para CF que contém um número muito grande de links.
 * CQ-4357055: [Tradução] A tradução automática não funciona usando a API Rest.
-* CQ-4353931: [Tradução] Adicione jcr:uuid na página/xf/asset de origem da tradução quando estiver ausente.
-* CQ-4357591: [Tradução] Modifique o workflow &quot;Associate JCR:UUID&quot; para funcionar para Páginas/XF.
+* CQ-4353931: [Tradução] Adicione jcr:uuid na página de origem da tradução/xf/asset quando estiver ausente.
+* CQ-4357591: [Tradução] Modifique o fluxo de trabalho &quot;Associar JCR:UUID&quot; para funcionar para Páginas/XF.
 * FORMS-14844: o Adaptive Forms permite o envio de formulários apesar da falha na verificação do reCAPTCHA.
 * FORMS-14984: O Forms com CAPTCHA ignora a validação se &quot;submitMetaData&quot; estiver ausente nos dados enviados.
 * FORMS-14477: As opções &quot;Is After&quot; e &quot;Is Before&quot; no editor de regras funcionam incorretamente na validação do Seletor de datas.
@@ -68,23 +68,23 @@ A Ativação de recursos 2024.7.0 fornecerá o conjunto completo de recursos par
 * FORMS-14336: quando nenhum campo de formulário é selecionado, o editor deve abrir com foco no elemento de formulário inteiro.
 * FORMS-15061: O círculo do carregador persiste indefinidamente ao usar a opção de invocar serviço no editor de regras.
 * SITES-22457: Promover um lançamento que não seja profundo não atualiza o conteúdo original.
-* SITES-22748: [Fragmentos de conteúdo] Aprimorar o tratamento de erros para o trabalho de atualização do fragmento de conteúdo
-* SITES-22349: [Fragmentos de conteúdo] ContentType para elementos cf vazios de várias linhas não pode ser alterado.
-* SITES-22343: [Fragmentos de conteúdo] O tipo semântico &quot;enumeração&quot; foi interrompido.
+* SITES-22748: [Fragmentos de conteúdo] Aprimore o tratamento de erros para o trabalho de atualização de fragmento de conteúdo
+* SITES-22349: [Content Fragments] O ContentType para elementos cf de várias linhas vazios não pode ser alterado.
+* SITES-22343: [Fragmentos de conteúdo] O tipo semântico &quot;enumeração&quot; foi desfeito.
 * SITES-22194: depois de definir o redirecionamento, model.json não funciona mais.
 * SITES-21953: [API aberta] O Etag é alterado com base na ordem do validationStatus.
-* SITES-21894: [API aberta] Aprimorar a validação do caminho principal ao criar CFs.
+* SITES-21894: [Abrir API] Aprimore a validação do caminho pai ao criar CFs.
 * SITES-21887: [API aberta] ETag inválido retornado pelo ponto de extremidade de variações de POST.
-* SITES-21657: [API aberta] Melhore a validação na propriedade Caminho de pesquisa do CF.
+* SITES-21657: [Abrir API] Melhore a validação na propriedade Caminho de Pesquisa CF.
 * SITES-21949: O cursor inválido das APIs de pesquisa retorna 500.
 * SITES-20927: as APIs de pesquisa retornam 500 quando a consulta está ausente.
-* SITES-20544: [API aberta] Altere a geração de nomes de pacote de publicação para evitar conflitos com o oak.
+* SITES-20544: [Abrir API] Altere a geração de nomes de pacote de publicação para evitar conflitos de oak.
 * SITES-19710: CVE-2022-47937 - Remova todos os usos de org.apache.sling.commons.json do Editor de páginas.
-* SITES-11992: [Acessibilidade] O botão seletor de amostra de anotação não tem um nome acessível.
-* SITES-10979: [Acessibilidade] O rótulo não é persistente.
-* SITES-10962: [Acessibilidade] Botão: o botão não tem uma função.
+* SITES-11992: o botão seletor de amostra de anotação [Acessibilidade] não tem um nome acessível.
+* SITES-10979: o rótulo [Acessibilidade] não é persistente.
+* SITES-10962: Botão [Acessibilidade]: o botão não tem uma função.
 * SITES-10905: [Acessibilidade] O estado do componente ativo não tem uma relação de contraste de 3 para 1.
-* SITES-2974:  [Acessibilidade] - Rolagem horizontal com largura de 320 px.
+* SITES-2974: [Acessibilidade] - Rolagem horizontal à largura de 320px.
 * SITES-22026: Não é possível mover fragmentos de experiência entre pastas no AEM
 * SITES-22106: problema de funcionalidade de alternância de idioma no novo editor de fragmento de conteúdo
 * SITES-21980: tratamento inconsistente para tipos de referência baseados em UUID.
@@ -100,7 +100,7 @@ Nenhum.
 
 ### Recursos e APIs obsoletos {#deprecated-16971}
 
-Para saber o que está obsoleto ou foi removido no AEM as a Cloud Service, consulte [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
+Para saber o que está obsoleto ou removido no AEM as a Cloud Service, consulte [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
 ### Tecnologias integradas {#embedded-tech-16971}
 

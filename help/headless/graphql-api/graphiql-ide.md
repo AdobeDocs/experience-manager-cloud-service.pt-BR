@@ -24,7 +24,7 @@ Uma implementação do [GraphiQL](https://graphql.org/learn/serving-over-http/#g
 >[!NOTE]
 >Você deve [configurar os endpoints](/help/headless/graphql-api/graphql-endpoint.md) no [navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) antes de usar o GraphiQL IDE.
 
-A variável **GraphiQL** A ferramenta permite testar e depurar as consultas do GraphQL, possibilitando:
+A ferramenta **GraphiQL** permite testar e depurar as consultas do GraphQL, permitindo:
 * selecionar o **endpoint** apropriado à configuração de Sites que deseja usar para as consultas
 * inserir diretamente novas consultas
 * criar e acessar **[consultas persistentes](/help/headless/graphql-api/persisted-queries.md)**
@@ -37,7 +37,7 @@ A variável **GraphiQL** A ferramenta permite testar e depurar as consultas do G
 
 É possível acessar o editor de consultas por meio de:
 
-* **Ferramentas** > **Geral** > **Editor de consultas GraphQL**
+* **Ferramentas** > **Geral** > **Editor de Consultas do GraphQL**
 * diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
@@ -83,12 +83,12 @@ Você pode executar uma nova consulta imediatamente ou pode carregar e executar 
 
 Em ambos os casos, a consulta exibida no painel do editor é a que será executada quando você:
 
-* selecione no **Executar consulta** ícone
+* selecione no ícone **Executar Consulta**
 * usar a combinação de teclado `Control-Enter`
 
 ## Variáveis de consulta {#query-variables}
 
-O GraphiQL IDE também permite gerenciar os [Variáveis de consulta](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+O GraphiQL IDE também permite gerenciar suas [Variáveis de consulta](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Por exemplo:
 
@@ -106,7 +106,7 @@ Por exemplo:
 >
 >As regras de regravação personalizadas no Dispatcher podem substituir as configurações de publicação padrão do AEM.
 >
->Caso esteja enviando cabeçalhos de controle de cache com base em TTL do dispatcher, com base em um padrão de correspondência de local, se necessário, você poderá excluir `/graphql/execute.json/*` dos jogos.
+>Caso esteja enviando cabeçalhos de controle de cache com base em TTL do dispatcher, com base em um padrão de correspondência de local, se necessário, você pode excluir `/graphql/execute.json/*` das correspondências.
 
 Ao usar o GraphQL, é possível configurar os cabeçalhos de cache HTTP para controlar esses parâmetros para sua consulta persistente individual.
 
@@ -114,7 +114,7 @@ Ao usar o GraphQL, é possível configurar os cabeçalhos de cache HTTP para con
 
    ![Cabeçalhos de cache HTTP de consulta persistente](assets/cfm-graphqlapi-headers-01.png "Cabeçalhos de cache HTTP de consulta persistente")
 
-1. Selecionar isso abre o **Configuração de cache** caixa de diálogo:
+1. Selecionar essa opção abre a caixa de diálogo **Configuração de Cache**:
 
    ![Configurações do cabeçalho de cache HTTP de consulta persistente](assets/cfm-graphqlapi-headers-02.png "Configurações do cabeçalho de cache HTTP de consulta persistente")
 
@@ -155,7 +155,7 @@ Essa ação desativa a consulta no ambiente selecionado, seja o ambiente de **Pu
 
 ## Copiar o URL para acessar a consulta diretamente {#copy-url}
 
-A variável **Copiar URL** permite simular uma consulta copiando o URL usado para acessar diretamente a consulta persistente e ver os resultados. Essa opção pode ser usada para testes; por exemplo, acessando em um navegador:
+A opção **Copiar URL** permite simular uma consulta copiando a URL usada para acessar diretamente a consulta persistente e ver os resultados. Essa opção pode ser usada para testes; por exemplo, acessando em um navegador:
 
 <!--
   >[!NOTE]

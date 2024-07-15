@@ -49,7 +49,7 @@ Você pode filtrar os resultados da pesquisa com base nos seguintes parâmetros.
 
 * Data de expiração: filtre os resultados da pesquisa com base no status `Expired` de um ativo. Além disso, é possível especificar um intervalo de datas para a expiração dos ativos, permitindo filtrar ainda mais os resultados da pesquisa.
 
-* Filtros personalizados: [Adicionar filtros personalizados](#custom-filters) para exibir a interface do usuário do Assets. Aplique filtros personalizados além dos filtros padrão para refinar os resultados da pesquisa.
+* Filtros Personalizados: [Adicione filtros personalizados](#custom-filters) à interface do usuário de exibição do Assets. Aplique filtros personalizados além dos filtros padrão para refinar os resultados da pesquisa.
 
 Você pode classificar os ativos pesquisados em ordem crescente ou decrescente de `Name`, `Relevancy`, `Size`, `Modified` e `Created`.
 
@@ -57,9 +57,9 @@ Você pode classificar os ativos pesquisados em ordem crescente ou decrescente d
 
 **Permissões necessárias:** `Can Edit`, `Owner` ou Administrador.
 
-A visualização de ativos também permite adicionar filtros personalizados à interface. É possível aplicar esses filtros personalizados além dos [filtros padrão](#refine-search-results) para refinar os resultados da pesquisa.
+A visualização Assets também permite adicionar filtros personalizados à interface. É possível aplicar esses filtros personalizados além dos [filtros padrão](#refine-search-results) para refinar os resultados da pesquisa.
 
-A exibição de Ativos fornece os seguintes filtros personalizados:
+A visualização Assets fornece os seguintes filtros personalizados:
 
 <table>
     <tbody>
@@ -322,13 +322,13 @@ Admins também têm a opção de desabilitar a pesquisa contextual para usuário
 
 ### Feedback da pesquisa contextual {#contextual-search-feedback}
 
-Se precisar fornecer feedback sobre o recurso Pesquisa contextual, clique em ![Ícone de Pesquisa contextual](assets/do-not-localize/Smock_Help_18_N.svg) e clique no ícone Feedback. Selecione o tipo de feedback, especifique o assunto e a descrição e clique em **[!UICONTROL Enviar]**.
+Se precisar fornecer feedback sobre o recurso Pesquisa Contextual, clique em ![Ícone de Pesquisa Contextual](assets/do-not-localize/Smock_Help_18_N.svg) e clique no ícone de Feedback. Selecione o tipo de feedback, especifique o assunto e a descrição e clique em **[!UICONTROL Enviar]**.
 
 ![Feedback da pesquisa contextual](assets/contextual-search-feedback.png)
 
 ## Próximas etapas {#next-steps}
 
-* [Assista a um vídeo sobre pesquisa de ativos na visualização de Ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=pt-BR)
+* [Assista a um vídeo para pesquisar ativos no modo de exibição Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/using.html?lang=pt-BR)
 
 * Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 

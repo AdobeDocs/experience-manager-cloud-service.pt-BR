@@ -19,7 +19,7 @@ https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/cont
 
 <!--Adaptive Form Core Components facilitates to add versionings, comments, and annotations to a form. These features helps form authors and users to enhance the form development process where they can create multiple versions of a form, collaborate and add their comments to a form, and add annotations to form components.-->
 
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
+<span class="preview"> Este é um recurso de pré-lançamento acessível através do nosso [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
 
 
 Os Componentes principais do formulário adaptável fornecem funcionalidade que permite que os autores de formulários incorporem versões, comentários e anotações nos formulários. Esses recursos servem para simplificar o processo de desenvolvimento de formulário, permitindo que os usuários criem e gerenciem várias versões de um formulário, participem de discussões colaborativas por meio de comentários e anexem anotações a componentes de formulário específicos, aprimorando assim a experiência geral de criação de formulários.
@@ -34,10 +34,10 @@ O controle de versão do formulário adaptável ajuda a adicionar versões a um 
 Para criar a versão de um formulário, siga as etapas fornecidas abaixo:
 
 1. Crie um formulário ou use um formulário existente.
-1. Na interface do usuário do AEM, navegue até a **[!UICONTROL Formulário]**>>**[!UICONTROL Forms e documentos]** e selecione o **Formulário**.
+1. Na interface do AEM, navegue até o **[!UICONTROL Formulário]**>**[!UICONTROL Forms e Documentos]** e selecione seu **Formulário**.
 1. Na lista suspensa de seleção no painel esquerdo, selecione **[!UICONTROL Versões]**.
-   ![Selecionar um formulário](select-a-form.png)
-1. Clique em **três pontos** localizado no painel inferior à esquerda, clique em **[!UICONTROL Salvar como versão]**.
+   ![Selecione um formulário](select-a-form.png)
+1. Clique nos **três pontos** localizados no painel inferior à esquerda, e clique em **[!UICONTROL Salvar como Versão]**.
 1. Agora, forneça um rótulo para a versão do formulário e você poderá fornecer informações sobre o formulário por meio do comentário.
    ![Criar uma versão de formulário](create-a-form-version.png)
 
@@ -49,22 +49,22 @@ Ao editar e atualizar seu formulário adaptável, você adiciona uma nova versã
 
 ### Reverter uma versão de formulário {#revert-a-form-version}
 
-Para reverter uma versão de formulário para a anterior, selecione uma versão de formulário, clique em **[!UICONTROL Reverter para esta versão]**.
+Para reverter uma versão de formulário para a anterior, selecione uma versão de formulário, clique em **[!UICONTROL Reverter para esta Versão]**.
 
-![Reverter versão do formulário](revert-form-version.png)
+![Reverter a versão do formulário](revert-form-version.png)
 
 ### Comparar versões de formulários {#compare-form-versions}
 
-Os autores de formulário podem comparar duas versões diferentes de um formulário para fins de visualização. Para comparar versões, selecione qualquer versão de formulário e clique em **[!UICONTROL Comparar ao atual]**. Ela mostra duas versões de formulário diferentes no modo de visualização.
+Os autores de formulário podem comparar duas versões diferentes de um formulário para fins de visualização. Para comparar versões, selecione qualquer versão de formulário e clique em **[!UICONTROL Comparar com atual]**. Ela mostra duas versões de formulário diferentes no modo de visualização.
 
 ![Comparar versões de formulários](compare-form-versions.png)
 
 ## Adicionar comentários {#add-comments}
 
-Uma revisão é um mecanismo que permite que um ou mais revisores comentem formulários. Qualquer usuário do formulário pode comentar em um formulário ou revisar um formulário por meio de comentários. Para comentar em um formulário, selecione um **[!UICONTROL Formulário]** e adicionar um **[!UICONTROL Comentário]** ao formulário.
+Uma revisão é um mecanismo que permite que um ou mais revisores comentem formulários. Qualquer usuário do formulário pode comentar em um formulário ou revisar um formulário por meio de comentários. Para comentar em um formulário, selecione um **[!UICONTROL Formulário]** e adicione um **[!UICONTROL Comentário]** ao formulário.
 
 >[!NOTE]
-> Ao usar comentários em componentes principais do formulário adaptável, conforme discutido acima, a funcionalidade de formulário [Criar e gerenciar revisões em formulários](/help/forms/create-reviews-forms.md) está desativado.
+> Quando você usa comentários em componentes principais do formulário adaptável, como discutido acima, a funcionalidade de formulário [Criação e gerenciamento de revisões para formulários](/help/forms/create-reviews-forms.md) está desabilitada.
 
 
 ![Adicionar comentários em um formulário](form-comments.png)
@@ -73,19 +73,19 @@ Uma revisão é um mecanismo que permite que um ou mais revisores comentem formu
 
 Em muitos casos, os usuários do grupo de formulários são solicitados a adicionar anotações em um formulário para fins de revisão, por exemplo, em uma guia específica de um formulário ou em componentes de um formulário. Nesses casos, os autores podem usar anotações. Para adicionar anotações a um formulário, execute as seguintes etapas:
 
-1. Abra um formulário no **[!UICONTROL Editar]** modo.
+1. Abra um formulário no modo **[!UICONTROL Editar]**.
 
-1. Clique em **ícone adicionar** localizado no painel superior direito, conforme fornecido na imagem.
+1. Clique no **ícone de adição** localizado no painel superior direito, conforme fornecido na imagem.
    ![Anotação](annotation.png)
 
-1. Clique em **ícone adicionar** localizado no painel superior esquerdo, conforme fornecido na imagem para adicionar a anotação.
+1. Clique no **ícone adicionar**, localizado no painel superior esquerdo, conforme fornecido na imagem, para adicionar a anotação.
    ![Adicionar anotação](add-annotation.png)
 
 1. Agora é possível adicionar comentários, desenhar rascunhos com várias cores para formar componentes.
 
 1. Para ver todas as anotações adicionadas a um formulário, selecione o formulário e veja as anotações adicionadas no painel esquerdo, como mostrado na imagem.
 
-   ![Consulte anotações adicionadas](see-annotations.png)
+   ![Ver anotações adicionadas](see-annotations.png)
 
 ## Consulte também {#see-also}
 

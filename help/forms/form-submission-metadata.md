@@ -1,6 +1,6 @@
 ---
 title: Como atualizar metadados de um formulário enviado?
-description: Saiba como adicionar informações aos metadados de um formulário enviado com dados fornecidos pelo usuário. Saiba mais sobre como visualizar os metadados de envio de formulário atualizados no repositório CRX.
+description: Saiba como adicionar informações aos metadados de um formulário enviado com dados fornecidos pelo usuário. Saiba mais sobre como visualizar os metadados de envio de formulário atualizados no repositório do CRX.
 feature: Adaptive Forms
 role: User
 level: Intermediate
@@ -27,13 +27,13 @@ Considere outro exemplo de um formulário que captura a ID de email e o número 
 Execute as seguintes etapas para adicionar um elemento aos metadados:
 
 1. Abra o formulário adaptável no modo de edição.\
-   Para abrir o formulário no modo de edição, no gerenciador de formulários, selecione o formulário e **[!UICONTROL Abertura]**.
-1. No modo de edição, selecione um componente, selecione ![nível de campo](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** e selecione ![cmppr](assets/configure-icon.svg).
+   Para abrir o formulário no modo de edição, no gerenciador de formulários, selecione o formulário e selecione **[!UICONTROL Abrir]**.
+1. No modo de edição, selecione um componente, selecione ![nível do campo](assets/select_parent_icon.svg) > **[!DNL Adaptive Form Container]** e selecione ![cmppr](assets/configure-icon.svg).
 1. Na barra lateral, clique em **[!DNL Metadata]**.
 1. Na seção Metadados, clique em **[!DNL Add]**.
 1. Use o campo Value da guia Metadata para adicionar scripts. Os scripts que você adiciona coletam dados de elementos no formulário e calculam valores que são alimentados para os metadados.
 
-   Por exemplo, **[!DNL true]** é registrado nos metadados se a idade inserida for maior que 21 e **[!DNL false]** é registrado se for menor que 21. Digite o seguinte script na guia Metadados:
+   Por exemplo, **[!DNL true]** será registrado nos metadados se a idade inserida for maior que 21, e **[!DNL false]** será registrado se for menor que 21. Digite o seguinte script na guia Metadados:
 
    `(agebox.value >= 21) ? true : false`
 
@@ -47,18 +47,18 @@ Depois que um usuário insere dados no elemento selecionado como um campo de met
 
 ## Visualização de metadados de envio de formulário atualizados: {#seeing-updated-form-nbsp-submission-metadata}
 
-No exemplo acima, os metadados são armazenados no repositório CRX. Os metadados são como:
+No exemplo acima, os metadados são armazenados no repositório do CRX. Os metadados são como:
 
 ![Metadados](assets/metadata_entry_new.png)
 
-Se você adicionar um elemento de caixa de seleção nos metadados, os valores selecionados serão armazenados como uma string separada por vírgulas. Por exemplo, você adiciona um componente de caixa de seleção no formulário e especifica seu nome como `checkbox1`. Nas propriedades do componente da caixa de seleção, adicione os itens Licença de condução, Número da Previdência social e Passaporte para valores 0, 1 e 2.
+Se você adicionar um elemento de caixa de seleção nos metadados, os valores selecionados serão armazenados como uma string separada por vírgulas. Por exemplo, você adiciona um componente de caixa de seleção em seu formulário e especifica seu nome como `checkbox1`. Nas propriedades do componente da caixa de seleção, adicione os itens Licença de condução, Número da Previdência social e Passaporte para valores 0, 1 e 2.
 
-![Armazenamento de vários valores a partir de uma caixa de seleção](assets/checkbox-metadata.png)
+![Armazenando vários valores de uma caixa de seleção](assets/checkbox-metadata.png)
 
-Selecione o contêiner Formulário adaptável e, nas propriedades do formulário, adicione uma chave de metadados `cb1` que armazena `checkbox1.value`e publique o formulário. Quando um cliente preenche o formulário, ele seleciona as opções Passport e Social Security Number no campo da caixa de seleção. Os valores 1 e 2 são armazenados como 1, 2 no campo cb1 dos metadados de envio.
+Você seleciona o contêiner de Formulário Adaptável e, nas propriedades do formulário, adiciona uma chave de metadados `cb1` que armazena `checkbox1.value` e publica o formulário. Quando um cliente preenche o formulário, ele seleciona as opções Passport e Social Security Number no campo da caixa de seleção. Os valores 1 e 2 são armazenados como 1, 2 no campo cb1 dos metadados de envio.
 
 ![Entrada de metadados para vários valores selecionados em um campo de caixa de seleção](assets/metadata-entry.png)
 
 >[!NOTE]
 >
->O exemplo acima é somente para fins de aprendizado. Certifique-se de procurar metadados no local correto, conforme configurado em [!DNL Experience Manager Forms] execução.
+>O exemplo acima é somente para fins de aprendizado. Certifique-se de procurar metadados no local correto, conforme configurado na implementação do [!DNL Experience Manager Forms].

@@ -40,13 +40,13 @@ Os recursos de ambientes individuais dependem das soluções ativadas no [progra
 
 ## Adição de um ambiente {#adding-environments}
 
-Para adicionar ou editar um ambiente, o usuário deve ser membro do **Proprietário da empresa** função.
+Para adicionar ou editar um ambiente, o usuário deve ser membro da função **Proprietário da empresa**.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique no programa ao qual deseja adicionar um ambiente.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no programa ao qual deseja adicionar um ambiente.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** , clique em **Adicionar ambiente** no **Ambientes** para adicionar um ambiente.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique em **Adicionar Ambiente** no cartão **Ambientes** para adicionar um ambiente.
 
    ![Cartão Ambientes](assets/no-environments.png)
 
@@ -91,9 +91,9 @@ Ao adicionar um novo ambiente, é possível optar por configurar regiões adicio
 1. Selecione a opção **Adicionar regiões de publicação adicionais** e será exibido um novo menu suspenso de **Regiões de publicação adicionais**.
 1. No menu suspenso **Regiões de publicação adicionais**, selecione uma região adicional.
 1. A região selecionada é adicionada abaixo do menu suspenso para indicar sua seleção.
-   * Selecione o `X` ao lado da região selecionada, para que você possa desmarcá-la.
+   * Selecione o `X` ao lado da região selecionada para que você possa desmarcá-la.
 1. Para adicionar outra região, selecione-a no menu suspenso **Regiões de publicação adicionais**.
-1. Selecionar **Salvar** quando estiver pronto para criar seu ambiente.
+1. Selecione **Salvar** quando estiver pronto para criar seu ambiente.
 
 ![Selecionar várias regiões](assets/select-multiple-regions.png)
 
@@ -119,7 +119,7 @@ Você também pode remover regiões de publicação adicionais. No entanto, só 
 
    ![Editar ambiente](assets/edit-environment.png)
 
-1. Selecionar **Salvar** para salvar as alterações.
+1. Selecione **Salvar** para salvar as alterações.
 
 As alterações feitas no ambiente de produção também serão aplicadas no ambiente de preparo. As alterações em várias regiões de publicação podem ser editadas somente no ambiente de produção.
 
@@ -127,9 +127,9 @@ Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-n
 
 ## Detalhes do ambiente {#viewing-environment}
 
-No **Visão geral** página, você pode acessar os detalhes de um ambiente de duas maneiras.
+Na página **Visão geral**, você pode acessar os detalhes de um ambiente de duas maneiras.
 
-1. No **Visão geral** clique no link **Ambientes** no painel de navegação lateral.
+1. Na página **Visão geral**, clique na guia **Ambientes** no painel de navegação lateral.
 
    ![Guia Ambientes](assets/environments-tab2.png)
 
@@ -181,26 +181,26 @@ Uma vez ativado, será possível publicar conteúdo para o serviço de visualiza
 
 ### Status de regiões adicionais do Publish {#additional-region-status}
 
-Se você tiver ativado regiões de publicação adicionais, será possível verificar o status dessas regiões na **Ambientes** cartão.
+Se você tiver ativado regiões de publicação adicionais, poderá verificar o status dessas regiões no cartão **Ambientes**.
 
-1. No **Visão geral** localize a **Ambientes** cartão.
+1. Na página **Visão geral**, localize o cartão **Ambientes**.
 
-1. No **Ambientes** , o **Status** A coluna refletirá se houver problemas com as regiões de publicação adicionais configuradas. Clique em **Informações** ícone para obter detalhes das regiões.
+1. No cartão **Ambientes**, a coluna **Status** refletirá se há problemas com as regiões de publicação adicionais configuradas. Clique no ícone **Info** para obter detalhes sobre as regiões.
 
-   ![Informações adicionais de status de regiões de publicação no cartão Ambientes](assets/additional-publish-region-status-environments-card.png)
+   ![Informações adicionais sobre o status das regiões de publicação no cartão Ambientes](assets/additional-publish-region-status-environments-card.png)
 
-Como alternativa, você pode acessar as mesmas informações no **Ambientes** guia.
+Como alternativa, você pode acessar as mesmas informações na guia **Ambientes**.
 
-1. No **Visão geral** selecione a **Ambientes** guia.
+1. Na página **Visão geral**, selecione a guia **Ambientes**.
 
-1. No **Ambientes** selecione o ambiente que deseja consultar no painel de navegação esquerdo.
+1. Na guia **Ambientes**, selecione o ambiente que deseja consultar no painel de navegação esquerdo.
 
 1. Depois que um ambiente é selecionado:
 
-   * A variável **Informações do ambiente** A tabela mostrará quais regiões estão configuradas para o ambiente selecionado.
-   * A variável **Status** coluna da **Segmentos de ambiente** A tabela refletirá se há problemas com as regiões de publicação adicionais configuradas. Passe o mouse sobre o status para obter detalhes sobre qualquer problema.
+   * A tabela **Informações do Ambiente** mostrará quais regiões estão configuradas para o ambiente selecionado.
+   * A coluna **Status** da tabela **Segmentos de ambiente** refletirá se há problemas com as regiões de publicação adicionais configuradas. Passe o mouse sobre o status para obter detalhes sobre qualquer problema.
 
-   ![Informações adicionais de status de regiões de publicação na guia Ambientes](assets/additional-publish-region-status-environments-tab.png)
+   ![Informações adicionais sobre o status das regiões de publicação na guia Ambientes](assets/additional-publish-region-status-environments-tab.png)
 
 Se houver problemas relatados com regiões de publicação adicionais:
 
@@ -209,7 +209,7 @@ Se houver problemas relatados com regiões de publicação adicionais:
 
 Quanto tempo você esperar até que o sistema se recupere por conta própria antes de tomar medidas adicionais depende do impacto que a falha dessa região tem em seus sistemas.
 
-Em qualquer caso, [o tráfego é sempre roteado para a outra região mais próxima que esteja online.](/help/operations/additional-publish-regions.md) Se o problema persistir, entre em contato com o Atendimento ao cliente da Adobe.
+Em qualquer caso, o tráfego [ é sempre roteado para a outra região mais próxima que esteja online.](/help/operations/additional-publish-regions.md) Se os problemas persistirem, entre em contato com o Atendimento ao cliente da Adobe.
 
 ## Atualização de ambientes {#updating-dev-environment}
 
@@ -235,7 +235,7 @@ O processo de atualização é, portanto, um processo de duas etapas:
 >[!NOTE]
 > A partir de 2024, as instâncias de desenvolvimento e alguns programas de sandbox já serão atualizados automaticamente para que não haja necessidade de gerenciar atualizações para eles manualmente. Como resultado dessa transição, a opção para Atualizar o ambiente manualmente para instâncias de desenvolvimento pode não estar disponível para _alguns_ de seus programas.
 
-A variável **Atualizar** está disponível na **Ambientes** para alguns ambientes de desenvolvimento e de programas de sandbox clicando no botão de reticências do ambiente.
+A opção **Atualizar** está disponível no cartão **Ambientes** para alguns ambientes de desenvolvimento e de programas de sandbox clicando no botão de reticências do ambiente.
 
 ![Opção Atualizar no cartão Ambientes](assets/environ-update2.png)
 
@@ -243,7 +243,7 @@ Essa opção também está disponível selecionando a guia **Ambientes** do prog
 
 ![Opção Atualizar na guia Ambientes](assets/environ-update3.png)
 
-Um usuário com a variável **Gerente de implantação** ou **Proprietário da empresa** A função pode usar essa opção para atualizar o pipeline associado a esse ambiente para a versão mais recente do AEM.
+Um usuário com a função **Gerente de Implantação** ou **Proprietário da Empresa** pode usar essa opção para atualizar o pipeline associado a esse ambiente para a versão mais recente do AEM.
 
 Quando a versão do pipeline é atualizada para a versão mais recente do AEM disponível publicamente, o usuário é solicitado a executar o pipeline associado para implantar a nova versão no ambiente.
 
@@ -253,11 +253,11 @@ O comportamento da opção **Atualizar** varia dependendo da configuração e do
 
 * Se o pipeline já tiver sido atualizado, a opção **Atualizar** solicitará que o usuário execute o pipeline.
 * Se o pipeline estiver sendo atualizado, a variável **Atualizar** informará ao usuário que uma atualização já está em execução.
-* Se não existir um pipeline apropriado, a variável **Atualizar** A opção solicita que o usuário crie uma.
+* Se um pipeline apropriado não existir, a opção **Atualizar** solicitará que o usuário crie um.
 
 ## Exclusão de ambientes de desenvolvimento {#deleting-environment}
 
-Um usuário com a variável **Gerente de implantação** ou **Proprietário da empresa** a função pode excluir um ambiente de desenvolvimento.
+Um usuário com a função **Gerente de Implantação** ou **Proprietário da Empresa** pode excluir um ambiente de desenvolvimento.
 
 Na tela **Visão geral** do programa no cartão **Ambientes**, clique no botão de reticências do ambiente de desenvolvimento que deseja excluir.
 
@@ -296,7 +296,7 @@ Essa opção também está disponível na guia **Ambiente** da janela **Visão g
 
 ## Logon local {#login-locally}
 
-Selecionar **Logon local** no menu de reticências do ambiente no **Ambientes** para fazer logon localmente no Adobe Experience Manager.
+Selecione **Logon local** no menu de reticências do ambiente no cartão **Ambientes** para fazer logon localmente no Adobe Experience Manager.
 
 ![Logon local](assets/environ-login-locally.png)
 
@@ -324,4 +324,4 @@ A aplicação de uma incluir na lista de permissões inclui na lista de permiss�
 
 >[!TIP]
 >
->Para obter mais informações, consulte o documento [Introdução a Listas de permissões de IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>Para obter mais informações, consulte o documento [Introdução às Listas de permissões IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)

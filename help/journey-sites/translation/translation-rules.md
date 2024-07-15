@@ -65,15 +65,15 @@ Para acessá-lo:
 
 O AEM cria automaticamente regras de tradução para todo o conteúdo. Para visualizar essas regras:
 
-1. Selecione o `/content` contexto.
-1. Na barra de ferramentas, selecione o **Editar**.
+1. Selecione o contexto `/content`.
+1. Na barra de ferramentas, selecione **Editar**.
 1. O Editor de regras de tradução é aberto com as regras que o AEM criou automaticamente para o caminho `/content`.
 
    ![Editor de regras de tradução](assets/translation-rules-editor.png)
 
 1. As propriedades das páginas que serão traduzidas estão localizadas na seção **Geral** da lista. Você pode adicionar ou atualizar nomes de propriedades existentes que deseja incluir explicitamente na tradução.
-   1. No **Nova propriedade** insira o nome da propriedade. As opções **Traduzir** e **Herdar** são marcadas automaticamente.
-   1. Selecionar **Adicionar**.
+   1. No campo **Nova Propriedade**, digite o nome da propriedade. As opções **Traduzir** e **Herdar** são marcadas automaticamente.
+   1. Selecione **Adicionar**.
    1. Repita essas etapas para todos os campos que devem ser traduzidos.
    1. Selecione **Salvar**.
 
@@ -100,7 +100,7 @@ Agora que concluiu esta parte da jornada de tradução do AEM Sites, você deve:
 * Entenda o que as regras de tradução fazem.
 * Ser capaz de definir suas próprias regras de tradução.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento a seguir [Traduzir conteúdo](translate-content.md) onde você aprende como o conector e as regras funcionam juntos para traduzir conteúdo.
+Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando a seguir o documento [Traduzir conteúdo](translate-content.md), onde você aprenderá como o conector e as regras funcionam juntos para traduzir conteúdo.
 
 ## Recursos adicionais {#additional-resources}
 

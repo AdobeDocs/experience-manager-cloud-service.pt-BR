@@ -15,9 +15,9 @@ ht-degree: 0%
 
 # Conectar um formulário adaptável ao Microsoft® SharePoint
 
-A variável **[!UICONTROL Enviar para o SharePoint]** A ação enviar permite conectar facilmente o Formulário adaptável com um armazenamento Microsoft® SharePoint. Ele envia os dados do formulário para o armazenamento SharePoint de sua escolha depois que você envia o formulário.
+A ação de envio **[!UICONTROL Enviar para o SharePoint]** permite que você conecte facilmente seu Formulário adaptável a um armazenamento do Microsoft® SharePoint. Ele envia os dados do formulário para o armazenamento SharePoint de sua escolha depois que você envia o formulário.
 
-O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções na [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md)  artigo.
+O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
 
 ## Vantagens
 
@@ -26,46 +26,46 @@ Algumas das vantagens de enviar dados de um Formulário adaptável para o armaze
 * Ele facilita o envio direto de dados de formulário para o SharePoint, fornecendo um local centralizado para armazenar e gerenciar informações.
 * Ao aplicar os recursos de controle de acesso e permissões do SharePoint, ele garante que somente indivíduos autorizados possam visualizar ou modificar os dados enviados.
 
-Usar **[!UICONTROL Enviar para o SharePoint]**, você pode:
+Usando o **[!UICONTROL Enviar para o SharePoint]**, você pode:
 
 * [Conectar um formulário adaptável à biblioteca de documentos do SharePoint](#connect-af-sharepoint-doc-library)
 * [Conectar um formulário adaptável à lista do SharePoint](#connect-af-sharepoint-list)
 
 ## Conectar um formulário adaptável à biblioteca de documentos do SharePoint {#connect-af-sharepoint-doc-library}
 
-Para usar o **[!UICONTROL Enviar para a Biblioteca de documentos da SharePoint]** Enviar ação em um formulário adaptável:
+Para usar a Ação Enviar **[!UICONTROL Enviar para a Biblioteca de Documentos do SharePoint]** em um Formulário adaptável:
 
-1. [Criar uma configuração da biblioteca de documentos da SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): ele conecta o AEM Forms ao seu Microsoft® Sharepoint Storage.
-2. [Usar a ação enviar Enviar para o SharePoint em um Formulário adaptável](#use-sharepoint-configuartion-in-af): ele conecta seu formulário adaptável ao Microsoft® SharePoint configurado.
+1. [Criar uma Configuração da Biblioteca de Documentos da SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): ela conecta o AEM Forms ao Armazenamento do Microsoft® Sharepoint.
+2. [Use a ação enviar para o SharePoint em um Formulário adaptável](#use-sharepoint-configuartion-in-af): ele conecta seu Formulário adaptável ao Microsoft® SharePoint configurado.
 
 ### Criar uma configuração da Biblioteca de documentos da SharePoint {#create-sharepoint-configuration}
 
 Para conectar o AEM Forms ao seu armazenamento da Biblioteca de Documentos do Microsoft® Sharepoint:
 
-1. Vá para o **Autor do AEM Forms** instância > **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. Depois de selecionar a variável **[!UICONTROL Microsoft® SharePoint]**, você será redirecionado para **[!UICONTROL Navegador SharePoint]**.
-1. Selecione um **Contêiner de configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
-1. Clique em **[!UICONTROL Criar]** > **[!UICONTROL Biblioteca de documentos da SharePoint]** na lista suspensa. O assistente de configuração do SharePoint é exibido.
+1. Vá para sua instância do **AEM Forms Author** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**.
+1. Após selecionar o **[!UICONTROL Microsoft® SharePoint]**, você será redirecionado para o **[!UICONTROL Navegador SharePoint]**.
+1. Selecione um **Contêiner de Configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
+1. Clique em **[!UICONTROL Criar]** > **[!UICONTROL Biblioteca de Documentos da SharePoint]** na lista suspensa. O assistente de configuração do SharePoint é exibido.
 
-   ![Configuração do Sharepoint](/help/forms/assets/sharepoint_configuration.png)
-1. Especifique a **[!UICONTROL Título]**, **[!UICONTROL ID do cliente]**, **[!UICONTROL Segredo do cliente]** e **[!UICONTROL URL do OAuth]**. Para obter informações sobre como recuperar a ID do cliente, o Segredo do cliente e a ID do locatário para o URL do OAuth, consulte [Documentação Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * Você pode recuperar a variável `Client ID` e `Client Secret` do seu aplicativo no portal do Microsoft® Azure.
-   * No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Substituir `[author-instance]` com o URL da sua instância do Author.
-   * Adicionar as permissões da API `offline_access` e `Sites.Manage.All` para fornecer permissões de leitura/gravação.
-   * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substituir `<tenant-id>` com o `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
+   ![Configuração do SharePoint](/help/forms/assets/sharepoint_configuration.png)
+1. Especifique o **[!UICONTROL Título]**, **[!UICONTROL ID do Cliente]**, **[!UICONTROL Segredo do Cliente]** e **[!UICONTROL URL do OAuth]**. Para obter informações sobre como recuperar a ID do cliente, o Segredo do cliente e a ID do locatário para a URL do OAuth, consulte a [Documentação da Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * Você pode recuperar os `Client ID` e `Client Secret` de seu aplicativo do portal do Microsoft® Azure.
+   * No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
+   * Adicione as permissões de API `offline_access` e `Sites.Manage.All` para fornecer permissões de leitura/gravação.
+   * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
 
    >[!NOTE]
    >
-   > A variável **segredo do cliente** é obrigatório ou opcional depende da configuração do aplicativo do Azure Ative Diretory. Se o aplicativo estiver configurado para usar um segredo do cliente, é obrigatório fornecer o segredo do cliente.
+   > O campo **segredo do cliente** é obrigatório ou opcional, depende da configuração do aplicativo do Azure Ative Diretory. Se o aplicativo estiver configurado para usar um segredo do cliente, é obrigatório fornecer o segredo do cliente.
 
-1. Clique em **[!UICONTROL Conectar]**. Em uma conexão bem-sucedida, a variável `Connection Successful` é exibida.
+1. Clique em **[!UICONTROL Conectar]**. Em uma conexão bem-sucedida, a mensagem `Connection Successful` é exibida.
 
-1. Agora, selecione **Site do SharePoint** > **Biblioteca de documentos** > **Pasta do SharePoint**, para salvar os dados.
+1. Agora, selecione **Site do SharePoint** > **Biblioteca de Documentos** > **Pasta do SharePoint** para salvar os dados.
 
    >[!NOTE]
    >
    >* Por padrão, `forms-ootb-storage-adaptive-forms-submission` está presente no site do SharePoint selecionado.
-   >* Criar uma pasta como `forms-ootb-storage-adaptive-forms-submission`, se ainda não estiver presente no `Documents` do site do SharePoint selecionado clicando em **Criar pasta**.
+   >* Crie uma pasta como `forms-ootb-storage-adaptive-forms-submission`, se ainda não estiver presente na biblioteca `Documents` do Site do SharePoint selecionado clicando em **Criar Pasta**.
 
 Agora, você pode usar essa configuração do SharePoint Sites para a ação enviar em um Formulário adaptável.
 
@@ -73,50 +73,50 @@ Agora, você pode usar essa configuração do SharePoint Sites para a ação env
 
 Você pode usar a configuração criada da Biblioteca de documentos da SharePoint em um Formulário adaptável para salvar dados ou o Documento de registro gerado em uma pasta do SharePoint. Execute as seguintes etapas para usar uma configuração de armazenamento da Biblioteca de documentos da SharePoint em um Formulário adaptável como:
 
-1. Criar um [Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md).
+1. Crie um [Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md).
 
    >[!NOTE]
    >
-   > * Selecionar o mesmo [!UICONTROL Contêiner de configuração] para um Formulário adaptável, em que você criou o armazenamento da Biblioteca de documentos da SharePoint.
-   > * Se não [!UICONTROL Contêiner de configuração] for selecionada, a variável global [!UICONTROL Configuração de armazenamento] pastas são exibidas na janela de propriedades Submeter Ação.
+   > * Selecione o mesmo [!UICONTROL Contêiner de configuração] para um Formulário adaptável, onde você criou seu armazenamento da Biblioteca de documentos da SharePoint.
+   > * Se nenhum [!UICONTROL Contêiner de Configuração] for selecionado, as pastas de [!UICONTROL Configuração de Armazenamento] globais serão exibidas na janela de propriedades da Ação de Envio.
 
-1. Selecionar **Ação de envio** as **[!UICONTROL Enviar para o SharePoint]**.
+1. Selecione **Enviar Ação** como **[!UICONTROL Enviar para o SharePoint]**.
    ![GIF do Sharepoint](/help/forms/assets/sharedrive-video.gif)
-1. Selecione o **[!UICONTROL Configuração de armazenamento]**, onde deseja salvar os dados.
+1. Selecione a **[!UICONTROL Configuração de Armazenamento]**, onde você deseja salvar seus dados.
 1. Clique em **[!UICONTROL Salvar]** para salvar as configurações de Envio.
 
 Ao enviar o formulário, os dados são salvos no Armazenamento da Biblioteca de Documentos do Microsoft® Sharepoint especificado.
-A estrutura de pastas para salvar os dados é `/folder_name/form_name/year/month/date/submission_id/data`.
+A estrutura de pasta para salvar dados é `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## Conectar um formulário adaptável à lista Microsoft® SharePoint {#connect-af-sharepoint-list}
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
-Para usar o [!UICONTROL Enviar para a lista do SharePoint] Enviar ação em um formulário adaptável:
+Para usar a ação enviar [!UICONTROL Enviar para a Lista do SharePoint] em um formulário adaptável:
 
-1. [Criar uma configuração de lista do SharePoint](#create-sharepoint-list-configuration): ele conecta o AEM Forms ao seu Armazenamento de lista do Microsoft® Sharepoint.
-1. [Usar o Enviar usando o Modelo de dados de formulário (FDM) em um formulário adaptável](#use-submit-using-fdm): ele conecta seu formulário adaptável ao Microsoft® SharePoint configurado.
+1. [Criar uma Configuração de Lista do SharePoint](#create-sharepoint-list-configuration): ela conecta o AEM Forms ao Armazenamento de Lista do Microsoft® Sharepoint.
+1. [Usar o Enviar usando o Modelo de Dados de Formulário (FDM) em um Formulário Adaptável](#use-submit-using-fdm): ele conecta seu Formulário Adaptável ao Microsoft® SharePoint configurado.
 
 ### Criar uma configuração de lista do SharePoint {#create-sharepoint-list-configuration}
 
 Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 
-1. Ir para **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** >  **[!UICONTROL Microsoft® SharePoint]**.
-1. Selecione um **Contêiner de configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
+1. Vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**.
+1. Selecione um **Contêiner de Configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
 1. Clique em **[!UICONTROL Criar]** > **[!UICONTROL Lista do SharePoint]** na lista suspensa. O assistente de configuração do SharePoint é exibido.
-1. Especifique a **[!UICONTROL Título]**, **[!UICONTROL ID do cliente]**, **[!UICONTROL Segredo do cliente]** e **[!UICONTROL URL do OAuth]**. Para obter informações sobre como recuperar a ID do cliente, o Segredo do cliente e a ID do locatário para o URL do OAuth, consulte [Documentação Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * Você pode recuperar a variável `Client ID` e `Client Secret` do seu aplicativo no portal do Microsoft® Azure.
-   * No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Substituir `[author-instance]` com o URL da sua instância do Author.
-   * Adicionar as permissões da API `offline_access` e `Sites.Manage.All` no **Gráfico Microsoft®** para fornecer permissões de leitura/gravação. Adicionar `AllSites.Manage` permissão na **Sharepoint** para interagir remotamente com os dados do SharePoint.
-   * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substituir `<tenant-id>` com o `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
+1. Especifique o **[!UICONTROL Título]**, **[!UICONTROL ID do Cliente]**, **[!UICONTROL Segredo do Cliente]** e **[!UICONTROL URL do OAuth]**. Para obter informações sobre como recuperar a ID do cliente, o Segredo do cliente e a ID do locatário para a URL do OAuth, consulte a [Documentação da Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * Você pode recuperar os `Client ID` e `Client Secret` de seu aplicativo do portal do Microsoft® Azure.
+   * No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepointlist/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
+   * Adicione as permissões de API `offline_access` e `Sites.Manage.All` na guia **Microsoft® Graph** para fornecer permissões de leitura/gravação. Adicione a permissão `AllSites.Manage` na guia **Sharepoint** para interagir remotamente com os dados do SharePoint.
+   * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
 
      >[!NOTE]
      >
-     > A variável **segredo do cliente** é obrigatório ou opcional depende da configuração do aplicativo do Azure Ative Diretory. Se o aplicativo estiver configurado para usar um segredo do cliente, é obrigatório fornecer o segredo do cliente.
+     > O campo **segredo do cliente** é obrigatório ou opcional, depende da configuração do aplicativo do Azure Ative Diretory. Se o aplicativo estiver configurado para usar um segredo do cliente, é obrigatório fornecer o segredo do cliente.
 
-1. Clique em **[!UICONTROL Conectar]**. Em uma conexão bem-sucedida, a variável `Connection Successful` é exibida.
-1. Selecionar **[!UICONTROL Site do SharePoint]** e **[!UICONTROL Lista do SharePoint]** na lista suspensa.
-1. Selecionar **[!UICONTROL Criar]** para criar a configuração de nuvem do Microsoft® SharePointList.
+1. Clique em **[!UICONTROL Conectar]**. Em uma conexão bem-sucedida, a mensagem `Connection Successful` é exibida.
+1. Selecione **[!UICONTROL Site do SharePoint]** e **[!UICONTROL Lista do SharePoint]** na lista suspensa.
+1. Selecione **[!UICONTROL Criar]** para criar a configuração de nuvem do Microsoft® SharePointList.
 
 
 ### Usar o Enviar usando o Modelo de dados de formulário (FDM) em um formulário adaptável {#use-submit-using-fdm}

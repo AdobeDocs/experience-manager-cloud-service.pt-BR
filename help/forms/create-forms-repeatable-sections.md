@@ -31,10 +31,10 @@ No final deste artigo, você aprenderá a:
 * Definir o número mínimo ou máximo de repetições para um componente de Formulário adaptável
 * Usar o editor de regras para configurar ações de adição ou exclusão para seções repetíveis
 
-Você pode usar o [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br), [Guias Verticais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br) componentes para tornar as seções de um Formulário adaptável repetíveis. Você pode adicionar componentes filhos a esses componentes para criar uma seção repetível em um formulário.
+Você pode usar os componentes de [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br), [Guias Verticais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br) para tornar as seções de um Formulário adaptável repetíveis. Você pode adicionar componentes filhos a esses componentes para criar uma seção repetível em um formulário.
 
 
-Os exemplos neste documento são baseados no [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) componente. Você pode executar as etapas idênticas para tornar o [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=pt-br), [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br), [Guias Verticais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br) componentes repetíveis.
+Os exemplos neste documento são baseados no componente [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel). Você pode executar as etapas idênticas para tornar repetíveis os componentes do [Painel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html?lang=pt-br), [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br), [Guias Verticais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs) ou [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br).
 
 ## Adicionar ou excluir seções que podem ser repetidas em um formulário {#add-or-delete-repeatable-section-in-panel-container}
 
@@ -50,9 +50,9 @@ Para repetir um painel no formulário ou remover painéis repetíveis, um autor 
 
 Para tornar um painel repetível, execute as seguintes etapas:
 1. Selecione um contêiner de painel e selecione ![cmppr](/help/forms/assets/cmppr.png).
-1. Clique em **repetir painel** e alterne para **tornar o painel repetível**.
-1. Definir **mínimo de repetições** conforme necessário para seções mínimas repetíveis, é possível definir **mínimo de repetições** a zero para a não repetição de painéis ou para remover os painéis repetidos. Por padrão, o valor de repetição mínima é zero.
-1. Definir **máximo de repetições** para repetir o número de vezes necessário no painel, por padrão, o valor é infinito.
+1. Clique no **painel de repetição** e alterne para **tornar o painel repetível**.
+1. Defina o mínimo de **repetições** conforme necessário para o mínimo de seções que podem ser repetidas. Você pode definir o mínimo de **repetições** como zero para a não-repetição de painéis ou para remover os painéis repetidos. Por padrão, o valor de repetição mínima é zero.
+1. Defina **máximo de repetições** para repetir o número de vezes necessário do painel; por padrão, o valor é infinito.
 
    >[!NOTE]
    >
@@ -64,17 +64,17 @@ Para tornar um painel repetível, execute as seguintes etapas:
 
 O pai do painel que deve ser repetido deve conter um botão adicionar para gerenciar a ocorrência repetida do painel. Execute as seguintes etapas para inserir botões no pai e ativar scripts nos botões:
 
-1. Adicionar um **componente de botão** ao pai do painel. No vídeo de exemplo abaixo, um componente de botão com o nome do rótulo **Adicionar** e nome do campo **AddPanel**, é usada. Selecione o componente e selecione ![edit-rules](/help/forms/assets/edit-rules.png). As regras do componente de botão são abertas no editor de regras.
+1. Adicione um **componente de botão** ao pai do painel. No vídeo de exemplo abaixo, um componente de botão com o nome de rótulo **Add** e nome de campo **AddPanel** é usado. Selecione o componente e selecione ![edit-rules](/help/forms/assets/edit-rules.png). As regras do componente de botão são abertas no editor de regras.
 1. Na janela Editor de regras, clique em **Criar**.
 
-   Selecionar **Editor visual** na linha Objetos de formulário e Funções.
+   Selecione o **Editor Visual** na linha Objetos de Formulário e Funções.
 
-   1. Na área regra, em QUANDO, selecione estado **foi clicado**.
-   1. Em ENTÃO, selecione **Adicionar instância** e arraste e solte o painel usando ![ativar/desativar painel lateral](/help/forms/assets/toggle-side-panel.png) ou selecione-o usando **Solte o objeto ou selecione aqui.**
+   1. Na área de regras, em QUANDO, selecione o estado **é clicado**.
+   1. Em THEN, selecione **Adicionar instância** e arraste e solte o painel usando ![ativar/desativar painel lateral](/help/forms/assets/toggle-side-panel.png) ou selecione-o usando **Soltar objeto ou selecione aqui.**
 
-   Selecionar **Editor de código** na linha Objetos de formulário e Funções. Clique em **Editar regras** e na área de código:
+   Selecione o **Editor de Código** na linha Objetos de Formulário e Funções. Clique em **Editar regras** e na área de código:
 
-   * Para criar um botão Adicionar painel, especifique `this.panel.instanceManager.addInstance()`
+   * Para criar um botão adicionar painel, especifique `this.panel.instanceManager.addInstance()`
 
    Clique em **Concluído**.
 
@@ -85,15 +85,15 @@ O pai do painel que deve ser repetido deve conter um botão adicionar para geren
 
 O pai do painel deve conter um botão Excluir para excluir a instância dos painéis repetíveis. Execute as seguintes etapas para inserir botões ao pai e ativar scripts nos botões para excluir painéis repetíveis:
 
-1. Adicionar um **componente de botão** ao pai do painel, no vídeo abaixo, um componente de botão com o nome do rótulo **excluir** e nome do campo **DeletePanel** é usada. Selecione o componente e selecione ![edit-rules](/help/forms/assets/edit-rules.png). As regras do componente de botão são abertas no editor de regras.
+1. Adicione um **componente de botão** ao pai do painel. No vídeo abaixo, um componente de botão com o nome de rótulo **excluir** e nome de campo **ExcluirPainel** será usado. Selecione o componente e selecione ![edit-rules](/help/forms/assets/edit-rules.png). As regras do componente de botão são abertas no editor de regras.
 1. Na janela Editor de regras, clique em **Criar**.
 
-   Selecionar **Editor visual** na linha Objetos de formulário e Funções.
+   Selecione o **Editor Visual** na linha Objetos de Formulário e Funções.
 
-   1. Na área de regras, em QUANDO **DeletePanel**, selecionar estado **foi clicado**.
-   1. Em ENTÃO, selecione **Remover Instância** e arraste e solte o painel usando ![ativar/desativar painel lateral](/help/forms/assets/toggle-side-panel.png) ou selecione-o usando **Solte o objeto ou selecione aqui.**
+   1. Na área de regras, em QUANDO **ExcluirPainel**, selecione o estado **é clicado**.
+   1. Em THEN, selecione **Remover Instância** e arraste e solte o painel usando ![ativar/desativar painel lateral](/help/forms/assets/toggle-side-panel.png) ou selecione-o usando **Soltar objeto ou selecione aqui.**
 
-   Selecionar **Editor de código** na linha Objetos de formulário e Funções. Clique em **Editar regras** e na área de código:
+   Selecione o **Editor de Código** na linha Objetos de Formulário e Funções. Clique em **Editar regras** e na área de código:
 
    * Para criar um botão de exclusão do painel, especifique `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
@@ -102,7 +102,7 @@ O pai do painel deve conter um botão Excluir para excluir a instância dos pain
 
 >[!NOTE]
 >
->Se um campo pertencer a um painel repetível, você não poderá acessá-lo diretamente usando seu nome nos scripts. Para acessar o campo, especifique a instância repetível à qual o campo pertence usando o `instances` API em `InstanceManager`. A sintaxe para usar o `instances` API em `InstanceManager` é:
+>Se um campo pertencer a um painel repetível, você não poderá acessá-lo diretamente usando seu nome nos scripts. Para acessar o campo, especifique a instância repetível à qual o campo pertence usando a API `instances` em `InstanceManager`. A sintaxe para usar a API `instances` em `InstanceManager` é:
 >
 >
 >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -181,9 +181,9 @@ O arquivo .zip anexado contém uma amostra de subformulário repetível.
 
 ## Usando configurações de repetição de um Esquema XML (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-Você pode criar painéis repetíveis de um Esquema XML e da propriedade minOccours &amp; maxOccurs de qualquer elemento de tipo complexo. Para obter informações detalhadas sobre o Esquema XML, consulte [Criar formulários adaptáveis usando o esquema XML como modelo de formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html).
+Você pode criar painéis repetíveis de um Esquema XML e da propriedade minOccours &amp; maxOccurs de qualquer elemento de tipo complexo. Para obter informações detalhadas sobre o Esquema XML, consulte [Criar formulários adaptáveis usando o Esquema XML como Modelo de Formulário](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adaptive-form-xml-schema-form-model.html).
 
-No código a seguir, a variável `SampleType`O painel usa a propriedade minOccours &amp; maxOccurs.
+No código a seguir, o painel `SampleType` usa a propriedade minOccours &amp; maxOccurs.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

@@ -21,7 +21,7 @@ ht-degree: 5%
 
 Todos os ativos digitais, metadados e conteúdo dos documentos do Microsoft® Office e PDF são extraídos e tornados pesquisáveis. A pesquisa permite uma filtragem sofisticada de ativos e respeita completamente as permissões apropriadas. Os metadados são abordados em detalhes em Metadados no Gerenciamento de ativos digitais.
 
-[!DNL Experience Manager Assets] O oferece suporte a várias maneiras de organizar o conteúdo. Você pode organizá-los de maneira hierárquica usando pastas ou de maneira não ordenada e ad hoc, por exemplo, tags. Os usuários podem editar tags no Editor de ativos DAM, onde subativos, representações e metadados são exibidos.
+O [!DNL Experience Manager Assets] oferece suporte a várias formas de organização de conteúdo. Você pode organizá-los de maneira hierárquica usando pastas ou de maneira não ordenada e ad hoc, por exemplo, tags. Os usuários podem editar tags no Editor de ativos DAM, onde subativos, representações e metadados são exibidos.
 
 <!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}
@@ -66,31 +66,31 @@ A maneira mais básica de organizar ativos é salvá-los em pastas. É análogo 
 
    * **Pastas de desenvolvimento**: contém ativos digitais nos quais você está trabalhando atualmente.
    * **Pastas do cliente**: contém ativos digitais com base em clientes ou nomes de projeto.
-   * **Pastas primárias**: contém ativos digitais originais.
+   * **Pastas primárias**: contém ativos digitais originais e de origem.
    * **Pastas de representação**: contém representações e cópias dos ativos digitais originais e de origem.
-   * **Pastas de tamanho de arquivo**: contém ativos digitais com base no tamanho de arquivos pequeno, médio ou grande.
-   * **Pastas de preparo**: contém ativos digitais prontos para publicar ao vivo no site.
-   * **Pastas do tipo MIME**: contém ativos digitais específicos para tipos MIME, como imagens, documentos e multimídia.
+   * **Pastas de Tamanho de Arquivo**: contém ativos digitais baseados em arquivos pequenos, médios ou grandes.
+   * **Pastas de preparo**: contém ativos digitais que estão prontos para serem publicados em tempo real no seu site.
+   * **pastas do tipo MIME**: contém ativos digitais específicos para tipos MIME, como imagens, documentos e multimídia.
    * **Arquivar pastas**: contém ativos digitais desativados.
    * **Pastas baseadas em data**: contém ativos digitais com base em uma data de criação ou uma data da última modificação.
 
 * Crie um diretório de pastas que provavelmente não serão alteradas para que qualquer personalização ou automação continue a funcionar. Por exemplo, os perfis de processamento atribuídos continuam a funcionar.
-* Se um ativo já estiver publicado, você poderá usar [!DNL Experience Manager] para mover o ativo para outra pasta e republicar de seu novo local. O local do ativo original publicado ainda está disponível junto com o ativo recém-republicado. No entanto, o ativo publicado original é *perdido* para [!DNL Experience Manager] e não podem ter a publicação desfeita. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e, em seguida, mova-o para uma pasta diferente.
+* Se um ativo já estiver publicado, você usará o [!DNL Experience Manager] para movê-lo para outra pasta e republicar a partir do novo local. O local do ativo original publicado ainda está disponível junto com o ativo recém-republicado. No entanto, o ativo original publicado está *perdido* para [!DNL Experience Manager] e não pode ter sua publicação desfeita. Portanto, como prática recomendada, primeiro cancele a publicação de um ativo e, em seguida, mova-o para uma pasta diferente.
 
 ## Organizar ativos usando tags {#use-tags-to-organize-assets}
 
 Adicionar tags aos ativos facilita a recuperação durante uma pesquisa, cria coleções usando os resultados da pesquisa, aumenta a classificação de pesquisa para alguns ativos e aplica algoritmos de IA do Adobe Sensei para a descoberta de ativos.
 
-[!DNL Adobe Experience Manager Assets] O usa um algoritmo de autoaprendizado para criar tags altamente descritivas que permitem encontrar o ativo correto com apenas alguns cliques. A marcação inteligente usa Adobe Sensei, inteligência artificial e estrutura de aprendizado de máquina, que podem ser treinadas para reconhecer e aplicar tags padrão e específicas de negócios a imagens. As Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas aos ativos.
+O [!DNL Adobe Experience Manager Assets] usa um algoritmo de autoaprendizado para criar marcas altamente descritivas que permitem encontrar o ativo correto com apenas alguns cliques. A marcação inteligente usa Adobe Sensei, inteligência artificial e estrutura de aprendizado de máquina, que podem ser treinadas para reconhecer e aplicar tags padrão e específicas de negócios a imagens. As Tags inteligentes também podem identificar conteúdo, palavras individuais ou frases e aplicar automaticamente tags descritivas aos ativos.
 
 Veja a seguir as etapas para adicionar tags a um ativo:
 
-1. Efetue logon no [!DNL Experience Manager Assets].
+1. Faça logon em [!DNL Experience Manager Assets].
 1. Clique em **[!UICONTROL Assets]** > **[!UICONTROL Arquivos]**, selecione o ativo e clique em **[!UICONTROL Propriedades]** para abrir as propriedades do ativo.
-1. No **[!UICONTROL Básico]** clique no ícone de pasta em **[!UICONTROL Tags]** metadados. Uma janela pop-up é aberta.
-1. Pesquise ou selecione as tags apropriadas nas tags existentes em `cq-tags`. É possível atribuir várias tags ao ativo.
+1. Na guia **[!UICONTROL Básico]**, clique no ícone de pasta nos metadados de **[!UICONTROL Marcas]**. Uma janela pop-up é aberta.
+1. Pesquise ou selecione as marcas apropriadas das marcas existentes em `cq-tags`. É possível atribuir várias tags ao ativo.
 
-   Você pode classificar a estrutura de tags em ordem crescente ou decrescente com base na variável **[!UICONTROL Nome]** (ordem alfabética), **[!UICONTROL Criado em]** data ou **[!UICONTROL Modificado]** data. Na ilustração a seguir, a estrutura de tags é classificada em ordem alfabética com base no **[!UICONTROL Nome]**.
+   Você pode classificar a estrutura de marcas em ordem crescente ou decrescente com base na data **[!UICONTROL Nome]** (ordem alfabética), **[!UICONTROL Criada]** ou **[!UICONTROL Modificada]**. Na ilustração a seguir, a estrutura de marcas é classificada em ordem alfabética com base no **[!UICONTROL Nome]**.
 
    ![add-tags](assets/add-tags-to-asset.png)
 
@@ -99,19 +99,19 @@ Veja a seguir as etapas para adicionar tags a um ativo:
 Para obter mais informações, consulte os seguintes artigos:
 
 * [Editar metadados de ativos](meta-edit.md)
-* [Tags inteligentes em ativos](smart-tags.md)
+* [Tags inteligentes no Assets](smart-tags.md)
 * [Adicionar predicado de tags ao painel de pesquisa](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## Organizar como coleções {#organize-as-collections}
 
-Com coleções de ativos em [!DNL Experience Manager Assets], você pode simplificar a capacidade de criar, editar e compartilhar ativos entre usuários. Crie vários tipos de coleções com base na maneira como você as usa, incluindo coleções que contêm uma lista de referência estática de ativos, pastas e coleções e coleções que extraem ativos com base em critérios de pesquisa. Você pode criar coleções com ativos de diferentes locais e compartilhá-las com vários usuários com diferentes níveis de privilégios de acesso, visualização e edição.
+Com as coleções de ativos no [!DNL Experience Manager Assets], você pode simplificar a capacidade de criar, editar e compartilhar ativos entre usuários. Crie vários tipos de coleções com base na maneira como você as usa, incluindo coleções que contêm uma lista de referência estática de ativos, pastas e coleções e coleções que extraem ativos com base em critérios de pesquisa. Você pode criar coleções com ativos de diferentes locais e compartilhá-las com vários usuários com diferentes níveis de privilégios de acesso, visualização e edição.
 
 Para obter mais informações, consulte [gerenciar coleções](manage-collections.md)
 
 
 ## Usar perfis para organizar seus ativos {#organize-to-use-profiles}
 
-Um perfil de processamento contém [!DNL Assets] processar comandos que se aplicam a ativos que são carregados em pastas predefinidas. Os perfis são usados para automatizar o processamento de conteúdo de uma pasta ou de ativos carregados recentemente. Você pode usar perfis para organizar melhor seus ativos.
+Um perfil de processamento contém [!DNL Assets] comandos de processamento que se aplicam a ativos carregados em pastas predefinidas. Os perfis são usados para automatizar o processamento de conteúdo de uma pasta ou de ativos carregados recentemente. Você pode usar perfis para organizar melhor seus ativos.
 
 A padronização do uso de metadados, da nomeação de arquivos e da estrutura de pastas garante que, à medida que seu pool de ativos digitais cresce, você possa aplicar perfis de processamento a pastas com mais precisão e consistência.
 
@@ -129,7 +129,7 @@ A padronização do uso de metadados, da nomeação de arquivos e da estrutura d
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -236,4 +236,4 @@ As palavras-chave do Forms adaptável são identificadores predefinidos e reserv
  </tbody>
 </table>
 
-Além das palavras-chave listadas acima, evite usar nomes semelhantes a [APIs adaptáveis do Forms JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Além das palavras-chave listadas acima, evite usar nomes semelhantes às [APIs adaptáveis do Forms JavaScript](https://adobe.com/go/learn_aemforms_javascript_api_63).

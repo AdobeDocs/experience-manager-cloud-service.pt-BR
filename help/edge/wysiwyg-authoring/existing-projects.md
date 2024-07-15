@@ -20,22 +20,22 @@ Você não precisa esperar que um novo projeto AEM se beneficie dos Edge Deliver
 
 Antes do advento dos Edge Delivery Services, o conteúdo gerenciado no AEM era editado com o uso do AEM Page Editor. Se o projeto começou antes da introdução do Edge Delivery Services, é quase certo que você esteja usando o Editor de páginas.
 
-O Editor de páginas AEM só funciona com [Componentes do AEM](/help/implementing/developing/components/overview.md) como o [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) Estes componentes são incompatíveis com o Edge Delivery Services. Por causa disso, são necessárias duas fases para introduzir Edge Delivery Services em um projeto existente de AEM:
+O Editor de Páginas do AEM só funciona com [componentes do AEM](/help/implementing/developing/components/overview.md), como os [Componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) Estes componentes são incompatíveis com o Edge Delivery Services. Por causa disso, são necessárias duas fases para introduzir Edge Delivery Services em um projeto existente de AEM:
 
 * [Fase 1 - Substituir front-end](#replace-front-end)
 * [Fase 2 - Alternar para o editor universal](#switch-ue)
 
 ## Fase 1 - Substituir front-end {#replace-front-end}
 
-Na fase um, você pode continuar usando a estrutura do site AEM existente, os componentes e as ferramentas de criação. A renderização do site será reconstruída usando blocos com JavaScript e CSS e será entregue via Edge Delivery Services.
+Na fase um, você pode continuar usando a estrutura do site AEM existente, os componentes e as ferramentas de criação. A renderização do site será recriada usando blocos com JavaScript e CSS e será entregue via Edge Delivery Services.
 
-Consulte a [Criar seção](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços de Entrega de borda.
+Consulte a [seção Build](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços da Edge Delivery.
 
-Um conversor no App Builder será necessário para converter a saída de HTML renderizada por AEM e enviá-la para Edge Delivery Services.
+Um conversor no App Builder será necessário para converter a saída de HTML renderizada AEM e enviá-la para o Edge Delivery Services.
 
 ![O conversor de conteúdo no fluxo de publicação](assets/content-converter.png)
 
-A fase dois conclui o processo eliminando a sobreposição de tecnologia: Componentes principais do AEM com HTL e Java no AEM Author, Blocos baseados em JS na entrega da borda e um conversor baseado em nodeJS.
+A fase dois conclui o processo eliminando a sobreposição de tecnologia: Componentes principais do AEM com HTL e Java no AEM Author, Blocos baseados em JS no Edge Delivery e um conversor baseado em nodeJS.
 
 ## Fase 2 - Alternar para o editor universal {#switch-ue}
 

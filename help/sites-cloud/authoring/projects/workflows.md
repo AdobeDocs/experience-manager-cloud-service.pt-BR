@@ -16,7 +16,7 @@ ht-degree: 96%
 
 Os fluxos de trabalho de projeto disponíveis prontos para uso incluem o seguinte:
 
-* **Fluxo de trabalho para aprovação de projeto** - Esse fluxo de trabalho permite atribuir conteúdo a um usuário, analisar esse conteúdo e depois aprová-lo.
+* **Fluxo de trabalho para aprovação de projeto** - Esse fluxo de trabalho permite atribuir conteúdo a um usuário, bem como analisá-lo e aprová-lo.
 * **Solicitar inicialização** - um fluxo de trabalho que solicita uma inicialização.
 * **Solicitar página de aterrissagem** - esse fluxo de trabalho solicita uma página de aterrissagem.
 * **Solicitar email** - Fluxo de trabalho para solicitar um email.

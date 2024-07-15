@@ -20,7 +20,7 @@ experience manager metadata-->
 
 Para destacar sua empresa e atrair mais clientes, é fundamental utilizar recursos visuais de alta qualidade, como imagens, vídeos e outros ativos digitais. Para isso, é necessário um processo que permita adicionar metadados a todos os ativos digitais, tornando-os facilmente pesquisáveis. Os metadados são os dados que fornecem detalhes essenciais sobre ativos digitais, incluindo o nome, o tipo, o local em um repositório, a data de modificação e as tags associadas do ativo. Os metadados simplificam o gerenciamento de ativos, melhoram a pesquisabilidade e a acessibilidade e garantem o controle eficaz de versões.
 
-Saiba como usar metadados no sistema de Gerenciamento de ativos digitais (DAM) para [gerencie metadados de seus ativos digitais](manage-metadata.md).
+Saiba como usar metadados no sistema de Gerenciamento de ativos digitais (DAM) para [gerenciar efetivamente metadados de seus ativos digitais](manage-metadata.md).
 
 ## Tipos de metadados
 
@@ -43,8 +43,8 @@ Os metadados informativos englobam informações descritivas que melhoram a comp
 
 Por exemplo, ao gerenciar um vídeo no Experience Manager Assets, podemos incluir os seguintes metadados informativos:
 
-* **Palavras-chave**: Marketing, Lançamento de produto, Promoção
-* **Legenda**: Apresentando nosso produto mais recente com excelentes recursos
+* **Palavras-chave**: marketing, lançamento de produto, promoção
+* **Legenda**: apresentando nosso produto mais recente com excelentes recursos
 * **Descrição**: uma visão geral detalhada do conteúdo do vídeo.
 
 Os usuários que procuram conteúdo relacionado a marketing podem encontrar e entender facilmente o significado do vídeo acima.
@@ -74,13 +74,13 @@ Criar um esquema de metadados personalizado de acordo com seus requisitos é fun
 
 Sua estratégia de metadados pode incluir a definição do seguinte:
 
-* **Objetivos:** Descreva claramente os objetivos e os resultados esperados dos metadados. Identifique o que você deseja alcançar adicionando os metadados.
+* **Objetivos:** descreva claramente os objetivos e os resultados esperados dos metadados. Identifique o que você deseja alcançar adicionando os metadados.
 
-* **Finalidade:** Defina por que você está capturando metadados. Especifique o valor que ele adiciona aos seus processos, sistemas ou organização.
+* **Propósito:** definir por que você está capturando metadados. Especifique o valor que ele adiciona aos seus processos, sistemas ou organização.
 
-* **Plano de acessibilidade:** Crie um plano para tornar os metadados facilmente acessíveis e detectáveis. Explique quem vai usá-lo e as ferramentas ou métodos a serem usados.
+* **Plano de acessibilidade:** crie um plano para facilitar o acesso e a descoberta dos metadados. Explique quem vai usá-lo e as ferramentas ou métodos a serem usados.
 
-* **Propriedades dos metadados:** Identifique e defina cada propriedade de metadados com cuidado. Certifique-se de que cada propriedade tenha uma razão clara para ser incluída, conectando-se aos objetivos e à finalidade.
+* **Propriedades de metadados:** identifique e defina cada propriedade de metadados com cuidado. Certifique-se de que cada propriedade tenha uma razão clara para ser incluída, conectando-se aos objetivos e à finalidade.
 
 Para garantir resultados consistentes em todo o repositório, planeje cuidadosamente a estratégia. Saiba mais sobre [esquemas de metadados](metadata-schemas.md).
 
@@ -97,7 +97,7 @@ Determine de onde vêm as informações e examine os detalhes da estratégia de 
 
 >[!NOTE]
 >
->Saiba como [gerencie metadados de seus ativos digitais](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
+>Saiba como [gerenciar metadados de seus ativos digitais](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html).
 
 ### Ser consistente com a estratégia de metadados
 
@@ -107,13 +107,13 @@ No gerenciamento de metadados de toda a empresa, a consistência é importante a
 
 Estas são algumas das práticas recomendadas:
 
-* **Evite valores duplicados:** Se você tiver uma coleção de imagens de uma campanha de marketing, use nomes consistentes e evite duplicatas.<br>
-Por exemplo, em vez de usar nomes duplicados como *campaign_image_001* e *campaign_image_002*, implementar uma convenção de nomenclatura sistemática, como *event_promotion* e *product_launch*, garantindo uma identificação clara e ordenada.
+* **Evite valores duplicados:** se você tiver uma coleção de imagens de uma campanha de marketing, use nomes consistentes e evite duplicatas.<br>
+Por exemplo, em vez de usar nomes duplicados como *campaign_image_001* e *campaign_image_002*, implemente uma convenção de nomenclatura sistemática, como *event_promotion* e *product_launch*, garantindo uma identificação clara e ordenada.
 
-* **Usar vocabulários controlados de forma eficaz:** Implemente vocabulários controlados empregando termos padronizados para tags. Saiba como implementar o [Estrutura de marcação AEM](/help/implementing/developing/introduction/tagging-framework.md) eficaz.  <br>
-Por exemplo, use termos consistentes como *product_launch* ou *event_promotion* ao marcar imagens com temas para manter a sequência sistemática.
+* **Usar vocabulários controlados de maneira eficaz:** implemente vocabulários controlados empregando termos padronizados para marcas. Saiba como implementar a [Estrutura de Marcação de AEM](/help/implementing/developing/introduction/tagging-framework.md) de maneira eficaz.  <br>
+Por exemplo, use de maneira consistente termos como *product_launch* ou *event_promotion* ao marcar imagens com temas para manter a sequência sistemática.
 
-* **Manter a precisão e a integridade:** Para manter a consistência dos metadados, a precisão, a integridade e o alinhamento em várias fontes são cruciais.
+* **Manter precisão e integridade:** Para manter a consistência dos metadados, precisão, integridade e alinhamento em várias fontes são cruciais.
 Por exemplo, ao adicionar metadados a um documento PDF, verifique se os detalhes como nomes de autores e palavras-chave são precisos e completos.
 
 #### Vídeo: adicionar metadados em massa aos ativos
@@ -126,24 +126,24 @@ Avalie sua estratégia de metadados para melhorar a capacidade de pesquisa de me
 
 Você pode considerar as seguintes práticas recomendadas para otimizar a capacidade de pesquisa de metadados:
 
-* **Otimização de palavra-chave:** Melhore a capacidade de pesquisa de metadados otimizando palavras-chave associadas a ativos. Você pode melhorar a relevância de palavras-chave para ativos específicos na [!UICONTROL Gerenciador de ativos] seguindo estas etapas:
+* **Otimização de palavra-chave:** melhore a pesquisabilidade de metadados otimizando palavras-chave associadas a ativos. Você pode melhorar a relevância de palavras-chave para ativos específicos no [!UICONTROL Assets Manager] seguindo estas etapas:
 
-   1. Ir para **[!UICONTROL Assets]** > **[!UICONTROL Arquivo]** > **[!UICONTROL [Pasta do ativo]]**.
+   1. Vá para **[!UICONTROL Assets]** > **[!UICONTROL Arquivo]** > **[!UICONTROL [Pasta de ativos]]**.
    1. Selecione o ativo para o qual deseja atualizar os metadados e clique em **[!UICONTROL Propriedades]**.
-   1. Navegue até a **[!UICONTROL Avançado]** e clique em **[!UICONTROL Adicionar]** no **[!UICONTROL Elevar para palavras-chave de pesquisa]**. <br>Você deve usar o esquema de metadados padrão para elevar as palavras-chave de pesquisa.
+   1. Navegue até a guia **[!UICONTROL Avançado]** e clique em **[!UICONTROL Adicionar]** em **[!UICONTROL Elevar para palavras-chave de pesquisa]**. <br>Você deve usar o esquema de metadados padrão para elevar as palavras-chave de pesquisa.
    1. Insira a palavra-chave para a qual deseja impulsionar a pesquisa e clique em **[!UICONTROL Adicionar]**.<br>
 Você pode adicionar várias palavras-chave e organizá-las de acordo com sua prioridade.
    1. Clique em **[!UICONTROL Salvar e fechar]**.
 Pesquise o ativo usando as palavras-chave adicionadas. O ativo aparece entre os principais resultados da pesquisa.
 
-  Saiba como [impulsionar pesquisa no Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
+  Saiba como [impulsionar a pesquisa no Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html).
 
-* **Campos de metadados personalizados:** Personalize os campos de metadados para capturar informações adicionais sobre ativos. Por exemplo, adicione campos específicos para obter detalhes do projeto, informações de direitos autorais ou quaisquer outros dados relevantes que melhorem os recursos de pesquisa. Saiba mais [como editar ou adicionar metadados personalizados](meta-edit.md) no Experience Manager Assets.
+* **Campos de metadados personalizados:** personalize seus campos de metadados para capturar informações adicionais sobre ativos. Por exemplo, adicione campos específicos para obter detalhes do projeto, informações de direitos autorais ou quaisquer outros dados relevantes que melhorem os recursos de pesquisa. Saiba [como editar ou adicionar metadados personalizados](meta-edit.md) no Experience Manager Assets.
 
 
-* **Validação de metadados:** Implemente verificações de validação para entradas de metadados para garantir consistência e precisão. Usar vocabulários controlados torna o processo de validação mais suave e diminui a chance de entradas indefinidas ou inconsistentes. Isso pode envolver a configuração de diretrizes para determinadas propriedades de metadados para evitar informações ambíguas ou inconsistentes.
+* **Validação de metadados:** implemente verificações de validação para entradas de metadados para garantir consistência e precisão. Usar vocabulários controlados torna o processo de validação mais suave e diminui a chance de entradas indefinidas ou inconsistentes. Isso pode envolver a configuração de diretrizes para determinadas propriedades de metadados para evitar informações ambíguas ou inconsistentes.
 
-* **Rastreamento de uso:** Avalie a relevância e o uso de diferentes propriedades de metadados ao longo do tempo. Identifique e priorize metadados usados com frequência ou contribua significativamente para os processos de pesquisa e recuperação.
+* **Rastreamento de uso**: avalie a relevância e o uso de diferentes propriedades de metadados ao longo do tempo. Identifique e priorize metadados usados com frequência ou contribua significativamente para os processos de pesquisa e recuperação.
 
 #### Vídeo: adicionar palavras-chave para melhorar a capacidade de pesquisa
 
@@ -154,16 +154,16 @@ Pesquise o ativo usando as palavras-chave adicionadas. O ativo aparece entre os 
 Simplifique os metadados para melhorar a governança e a adoção pelos usuários. Mantenha-o simples e fácil de entender, incentivando os usuários a adicionar informações essenciais.
 Experimente as seguintes práticas recomendadas para simplificar os metadados:
 
-* **Otimizar opções de propriedade:** Concentre-se em destacar propriedades essenciais sem sobrecarregar os usuários com muitos campos de metadados para preencher. Por exemplo, ao adicionar metadados para uma imagem, inclua apenas campos principais como título, descrição e tags para uma categorização eficaz.
+* **Otimizar opções de propriedade:** concentre-se em realçar propriedades essenciais sem sobrecarregar os usuários com campos de metadados demais para serem preenchidos. Por exemplo, ao adicionar metadados para uma imagem, inclua apenas campos principais como título, descrição e tags para uma categorização eficaz.
 
-* **Eliminar propriedades padrão desnecessárias:** Simplifique o formulário de metadados eliminando propriedades padrão prontas para uso irrelevantes para o seu caso de uso. Remova as propriedades padrão raramente usadas para uma interface e experiência mais limpas.
+* **Elimine propriedades padrão desnecessárias:** simplifique o formulário de metadados eliminando propriedades padrão prontas para uso irrelevantes para o seu caso de uso. Remova as propriedades padrão raramente usadas para uma interface e experiência mais limpas.
 
-* **Revise e atualize os metadados periodicamente:** Atualize os metadados regularmente e adapte-se às necessidades e tecnologias em constante mudança para garantir que os usuários forneçam informações valiosas ao longo do tempo.
+* **Revise e atualize metadados periodicamente:** atualize metadados regularmente e adapte-se às necessidades e tecnologias em constante mudança para garantir que os usuários forneçam informações valiosas ao longo do tempo.
 
 ### Analisar jornada de conteúdo
 
-Examine a cadeia de fornecimento de conteúdo para encontrar fontes de metadados e envolver todas as partes interessadas, começando pelo topo, para obter uma abordagem completa de práticas recomendadas. Envolva diferentes membros da equipe para garantir suporte completo em toda a organização. <br>Incorpore metadados em vários estágios para compartilhar a responsabilidade de fornecer detalhes do ativo durante o upload. Por exemplo, integração [!DNL Experience Manager Assets] e [!DNL Workfront] O oferece benefícios substanciais em termos de gerenciamento de metadados, melhorando a eficiência e a colaboração na criação e no gerenciamento de conteúdo. Essa integração garante a sincronização eficiente de metadados para ativos vinculados, atualizando automaticamente os detalhes do projeto quando alterações são feitas no [!DNL Workfront].
+Examine a cadeia de fornecimento de conteúdo para encontrar fontes de metadados e envolver todas as partes interessadas, começando pelo topo, para obter uma abordagem completa de práticas recomendadas. Envolva diferentes membros da equipe para garantir suporte completo em toda a organização. <br>Incorpore metadados em vários estágios para compartilhar a responsabilidade de fornecer detalhes do ativo durante o carregamento. Por exemplo, a integração do [!DNL Experience Manager Assets] e do [!DNL Workfront] oferece benefícios substanciais em termos de gerenciamento de metadados, aprimorando a eficiência e a colaboração na criação e no gerenciamento de conteúdo. Essa integração garante uma sincronização de metadados eficiente para ativos vinculados, atualizando automaticamente os detalhes do projeto quando alterações são feitas em [!DNL Workfront].
 
 Comunicar antecipadamente os objetivos, os progressos, os marcos e os desafios para receber contribuições e cooperação de todas as partes interessadas. Estimule a colaboração em toda a organização para criar processos eficientes e metadados valiosos.
 
-Saiba mais sobre [metadados e conceitos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) para gerenciar efetivamente os metadados de Experience Manager.
+Saiba mais sobre [metadados e seus conceitos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) para gerenciar efetivamente os metadados Experience Manager.

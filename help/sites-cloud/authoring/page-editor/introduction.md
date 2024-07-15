@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # O editor de páginas AEM {#editing-page-content}
 
-Assim que a página for criada no [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) é possível editar o conteúdo da página usando o editor de página AEM, uma ferramenta poderosa para a criação de conteúdo.
+Depois que a página é criada no console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) você pode editar o conteúdo da página usando o editor de páginas AEM, uma ferramenta avançada de criação de conteúdo.
 
 >[!NOTE]
 >
->Ao editar uma página no [**Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) o console abrirá o editor apropriado para a página [modelo:](/help/sites-cloud/authoring/sites-console/templates.md) o editor de página descrito neste documento ou a variável [Editor universal.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>Ao editar uma página no console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) o console abrirá o editor apropriado ao [modelo](/help/sites-cloud/authoring/sites-console/templates.md) da página: o editor de páginas descrito neste documento ou o [Editor Universal.](/help/sites-cloud/authoring/universal-editor/authoring.md)
 
 >[!NOTE]
 >
@@ -28,9 +28,9 @@ Assim que a página for criada no [**Sites** console,](/help/sites-cloud/authori
 
 O editor de páginas do AEM é composto principalmente por três seções:
 
-1. [A barra de ferramentas](#toolbar) - A barra de ferramentas fornece acesso rápido para alterar o modo de página e acessar configurações de página adicionais.
-1. [O painel lateral](#side-panel) - O painel lateral fornece acesso aos componentes e ativos da página, bem como a outras ferramentas de criação.
-1. [O editor](#editor) - O editor é onde você faz alterações no conteúdo e o visualiza.
+1. [Barra de ferramentas](#toolbar) - A barra de ferramentas fornece acesso rápido para alterar o modo de página e acessar configurações de página adicionais.
+1. [Painel lateral](#side-panel) - O painel lateral fornece acesso aos componentes e ativos da página, bem como a outras ferramentas de criação.
+1. [O editor](#editor) - O editor é onde você faz as alterações ao seu conteúdo e o visualiza.
 
 ![O layout do editor de páginas](assets/page-editor-layout.png)
 
@@ -44,7 +44,7 @@ A barra de ferramentas da página oferece acesso à funcionalidade adequada ao c
 
 #### Painel lateral {#side-panel-button}
 
-Isso abre/fecha o [painel lateral,](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) que contém o Navegador de ativos, Navegador de componentes e Árvore de conteúdo.
+Isso abre/fecha o [painel lateral](/help/sites-cloud/authoring/page-editor/editor-side-panel.md), que contém o Navegador de ativos, o Navegador de componentes e a Árvore de conteúdo.
 
 ![Ativar/desativar painel lateral](assets/page-editor-side-panel-toggle.png)
 
@@ -54,7 +54,7 @@ Isso fornece acesso a informações detalhadas da página, incluindo detalhes da
 
 ![Botão Informações da página](assets/page-editor-page-information-icon.png)
 
-**Informações da página** abre um menu suspenso que fornece detalhes sobre a última edição e a última publicação da página selecionada. Ações adicionais estão disponíveis dependendo das características da página, de seu site e instância.
+**Informações da Página** abre um menu suspenso que fornece detalhes sobre a última edição e a última publicação da página selecionada. Ações adicionais estão disponíveis dependendo das características da página, de seu site e instância.
 
 * [Abrir propriedades](/help/sites-cloud/authoring/sites-console/page-properties.md)
 * [Página de implantação](/help/sites-cloud/administering/msm/overview.md#msm-from-the-ui)
@@ -72,13 +72,13 @@ Além disso, as **Informações da página** podem fornecer acesso a análises e
 
 #### Emulador {#emulator}
 
-Isso alterna o [barra de ferramentas do emulador](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate), que é usado para emular a aparência da página em outro dispositivo. Isso é ativado automaticamente no modo de layout.
+Isto alterna a [barra de ferramentas do emulador](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate), que é usada para emular a aparência da página em outro dispositivo. Isso é ativado automaticamente no modo de layout.
 
 ![Tecla Emulador](assets/page-editor-emulator.png)
 
 #### ContextHub {#context-hub}
 
-Isso abre o [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) Ele só está disponível em **Visualizar** modo.
+Isso abre o [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) Ele só está disponível no modo **Visualização**.
 
 ![Botão ContextHub](assets/page-editor-context-hub.png)
 
@@ -90,19 +90,19 @@ Este é o título da página, renderizado em letras maiúsculas como informaçã
 
 #### Seletor de modo {#mode-selector}
 
-O seletor de modo exibe a variável [modo](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) e permite selecionar outro modo, como editar, layout, timewarp ou direcionamento.
+O seletor de modo exibe o [modo](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) atual e permite selecionar outro modo, como editar, layout, timewarp ou direcionamento.
 
 ![Botão Seletor de modo](assets/page-editor-mode-selector.png)
 
 Há vários modos ao editar uma página o que permite diversas ações:
 
 * [Editar](/help/sites-cloud/authoring/page-editor/edit-content.md) - O modo a ser usado ao editar o conteúdo da página
-* [Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) - Permite criar e editar o layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
+* [Layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md) - Permite que você crie e edite seu layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
 * [Direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md) - Melhora a relevância do conteúdo por meio do direcionamento e da medição em todos os canais
-* [Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - Visualizar um estado de páginas em um momento específico
-* [Status da Live Copy](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - permite uma visão geral rápida do status da live copy e de quais componentes não são herdados
+* [Timewarp](/help/sites-cloud/authoring/sites-console/page-versions.md#timewarp) - Exibir o estado das páginas em determinado momento
+* [Status da Live Copy](/help/sites-cloud/authoring/page-editor/introduction.md#live-copy-status) - Permite uma visão geral rápida do status da live copy e de quais componentes não são herdados
 * [Modo de desenvolvedor](/help/implementing/developing/tools/developer-mode.md)
-* [Visualizar](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) - Visualizar a página como ela é mostrada no ambiente de publicação; ou navegar usando links no conteúdo
+* [Visualização](/help/sites-cloud/authoring/page-editor/introduction.md#previewing-pages) - Visualize a página como ela é mostrada no ambiente de publicação; ou navegar usando os links no conteúdo
 * [Anotar](/help/sites-cloud/authoring/page-editor/annotations.md) - Adicionar ou exibir anotações na página
 
 >[!NOTE]
@@ -110,17 +110,17 @@ Há vários modos ao editar uma página o que permite diversas ações:
 >* Dependendo das características da página, alguns modos podem não estar disponíveis.
 >* O acesso a alguns modos exige as permissões/privilégios apropriados.
 >* O modo de desenvolvedor não está disponível em dispositivos móveis devido a restrições de espaço.
->* Existe uma [atalho de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre **Visualizar** e o modo selecionado no momento (por exemplo, **Editar**, **Layout** e assim por diante).
+>* Há um [atalho de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre a **Visualização** e o modo selecionado no momento (por exemplo, **Editar**, **Layout** e assim por diante).
 
 #### Visualização {#preview}
 
-A variável **Visualizar** botão habilita [modo de visualização.](#preview-mode), exibindo a página como ela será exibida quando publicada.
+O botão **Visualizar** habilita o modo de visualização [.](#preview-mode), exibindo a página como ela aparecerá quando publicada.
 
 ![Botão Visualizar](assets/page-editor-preview.png)
 
 #### Anotar {#annotate}
 
-**Anotar** permite adicionar [anotações](/help/sites-cloud/authoring/page-editor/annotations.md) à página ao revisar uma página. Após a primeira anotação, o ícone alternará para um número que indica o número de anotações na página.
+O modo **Anotar** permite adicionar [anotações](/help/sites-cloud/authoring/page-editor/annotations.md) à página ao revisar uma página. Após a primeira anotação, o ícone alternará para um número que indica o número de anotações na página.
 
 ![Botão Anotar](assets/page-editor-annotations.png)
 
@@ -132,9 +132,9 @@ O painel lateral fornece acesso a três guias diferentes.
 * O navegador de ativos para adicionar novos ativos à sua página
 * A árvore de conteúdo para navegar pela estrutura da página
 
-![O painel lateral do editor de páginas](assets/page-editor-side-panel.png)
+![Painel lateral do editor de páginas](assets/page-editor-side-panel.png)
 
-Consulte o documento [Painel lateral do Editor de páginas](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) para obter mais informações.
+Consulte o documento [Painel Lateral do Editor de Páginas](/help/sites-cloud/authoring/page-editor/editor-side-panel.md) para obter mais informações.
 
 ### Editor {#editor}
 
@@ -146,11 +146,11 @@ O editor é onde você faz as alterações diretamente no conteúdo da página. 
 
 Agora que você entende o editor de página, está pronto para editar seu conteúdo.
 
-Consulte o documento [Editar conteúdo com o editor de páginas AEM](/help/sites-cloud/authoring/page-editor/edit-content.md) para obter mais informações.
+Consulte o documento [Editando Conteúdo com o Editor de Páginas AEM](/help/sites-cloud/authoring/page-editor/edit-content.md) para obter mais informações.
 
 ## Notificação de status {#status-notification}
 
-Se uma página fizer parte de um [fluxo de trabalho](/help/sites-cloud/authoring/workflows/overview.md) Para vários workflows, essas informações são mostradas em uma barra de notificação abaixo da barra de ferramentas ao editar a página.
+Se uma página é parte de um [fluxo de trabalho](/help/sites-cloud/authoring/workflows/overview.md) ou de vários fluxos de trabalho, essas informações serão exibidas em uma barra de notificação abaixo da barra de ferramentas ao editar a página.
 
 ![Notificação do fluxo de trabalho](assets/page-editor-editing-workflow-notification.png)
 
@@ -172,7 +172,7 @@ Se a página estiver sujeita a vários fluxos de trabalho, o número de fluxos d
 
 ## Status da Live Copy   {#live-copy-status}
 
-A variável **Status da Live Copy** o modo de página fornece uma visão geral rápida do status da live copy e de quais componentes não são herdados:
+O modo de página **Status da Live Copy** fornece uma visão geral rápida do status da live copy e de quais componentes não são herdados:
 
 * Borda verde: herdada
 * Borda rosa: a herança foi cancelada
@@ -186,11 +186,11 @@ Por exemplo:
 Existem duas opções para a visualização de uma página:
 
 * [Modo de visualização](#preview-mode) - Uma visualização rápida, no local
-* [Exibir como publicado](#view-as-published) - Uma visualização completa que abre a página em uma nova guia
+* [Exibir como Publicado](#view-as-published) - Uma visualização completa que abre a página em uma nova guia
 
 >[!TIP]
 >
->* Os links no conteúdo estão visíveis, mas não estão acessíveis no **Editar** modo.
+>* Os links no conteúdo estão visíveis, mas não estão acessíveis no modo **Editar**.
 >* Use qualquer uma das opções de visualização, caso deseje navegar usando os links.
 >* Use o [atalho de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `Ctrl-Shift-M` para alternar entre a visualização e o último modo selecionado.
 

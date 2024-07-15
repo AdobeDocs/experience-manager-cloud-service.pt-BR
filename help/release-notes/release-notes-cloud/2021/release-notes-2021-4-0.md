@@ -24,14 +24,14 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] O as a Cloud Service 2021.4.0 é 6 de maio de 2021.
+A data de lançamento do [!DNL Adobe Experience Manager] as a Cloud Service 2021.4.0 é 6 de maio de 2021.
 A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
-## Fundação as a Cloud Service AEM{#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation{#aem-as-a-cloud-service-foundation}
 
 ### Novidades {#what-is-new-foundation}
 
-* [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) - Um novo modelo de fluxo de trabalho e uma nova etapa proporcionam melhor desempenho ao publicar hierarquias profundas de conteúdo.
+* [Fluxo de trabalho da Árvore de Conteúdo do Publish](/help/operations/replication.md#publish-content-tree-workflow) - Um novo modelo de fluxo de trabalho e uma nova etapa proporcionam melhor desempenho ao publicar hierarquias profundas de conteúdo.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -45,7 +45,7 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
 * Modelos de conteúdo, novo tipo de dados Espaço reservado de guia — o novo tipo de dados Espaço reservado de guia permite agrupar tipos de dados em seções que são renderizadas em guias no editor de fragmento de conteúdo.
 
-### Correções de erros no [!DNL Sites] {#bug-fixes-sites}
+### Correções de erros em [!DNL Sites] {#bug-fixes-sites}
 
 * Fragmentos de conteúdo - mover fragmentos ou pastas de conteúdo agora atualiza referências aninhadas dentro do fragmento (CQ-4320815)
 
@@ -55,11 +55,11 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
 ### Novidades do [!DNL Assets] {#what-is-new-assets}
 
-* [!DNL Experience Manager] O não arquiva downloads de ativos únicos em que o arquivo original é baixado. Esse aprimoramento permite downloads mais rápidos.
+* O [!DNL Experience Manager] não arquiva downloads de ativos únicos em que o arquivo original é baixado. Esse aprimoramento permite downloads mais rápidos.
 
 * Quando um ativo é baixado por meio da opção linkshare, agora é possível optar por baixar ou não as representações. Anteriormente, todas as representações de ativos eram baixadas.
 
-* Os administradores podem configurar [!DNL Experience Manager] para excluir a origem de ativos depois de fazer uma assimilação de ativos em massa. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
+* Os administradores podem configurar o [!DNL Experience Manager] para excluir a origem de ativos depois de fazer uma assimilação de ativos em massa. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
 * Ao executar uma verificação de integridade para importar ativos em massa, o Experience Manager agora fornece mais motivos de informações sobre falhas. Consulte [assimilação de ativos em massa](/help/assets/add-assets.md#asset-bulk-ingestor).
 
@@ -75,7 +75,7 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
 * Ao navegar pelos ativos na exibição Coluna, um indicador visual é exibido para ativos expirados.
 
-### Correções de erros no [!DNL Assets] {#bug-fixes-assets}
+### Correções de erros em [!DNL Assets] {#bug-fixes-assets}
 
 * Ao tentar mover vários ativos ou pastas, um erro é registrado no console e a operação de movimentação não é concluída. A operação de movimentação falha se o título não puder ser atualizado. (CQ-4322080)
 
@@ -95,15 +95,15 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
 
-* **Usar o método de autenticação de ID do governo no Adaptive Forms habilitado para Adobe Sign**
+* **Usar o método de autenticação de ID do governo no Adobe Sign habilitado para o Adaptive Forms**
 
   Alimentado por algoritmos avançados de aprendizado de máquina, o processo de ID do governo da Adobe Sign oferece a empresas do mundo todo a capacidade de garantir uma autenticação de alta qualidade da identidade do recipient. Agora, você pode usar o método de autenticação de ID do governo no Adaptive Forms habilitado para Adobe Sign.
 
-  ID do governo é um método de autenticação de identidade premium que instrui o recipient a [carregar a imagem de um documento de identidade emitido pelo governo (CNH, identificação nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)e avalia esse documento para garantir sua autenticidade.
+  A ID do governo é um método de autenticação de identidade premium que instrui o destinatário a [carregar a imagem de um documento de identidade emitido pelo governo (CNH, identificação nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) e, em seguida, avaliar esse documento para garantir sua autenticidade.
 
 * **Suporte para usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis**
 
-  Agora você pode usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Também é possível incorporar um formulário adaptável em uma [!DNL Experience Manager Sites] e use a experiência de assinatura no formulário para envios de formulários adaptáveis.
+  Agora você pode usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Você também pode incorporar um formulário adaptável em uma página [!DNL Experience Manager Sites] e usar a experiência de assinatura no formulário para enviar formulários adaptáveis.
 
 * **Suporte para usar uma variável para especificar um anexo enquanto preenche um formulário adaptável para uma etapa Atribuir tarefa**
 
@@ -113,11 +113,11 @@ A versão seguinte (2021.5.0) será lançada em 27 de maio de 2021.
 
   Você pode usar a opção literal para definir o valor de uma variável do tipo JSON na etapa Definir variável de um fluxo de trabalho AEM. A opção literal permite especificar um JSON no formato de uma string.
 
-* **Usar o ambiente de desenvolvimento local para criar um Documento de registro (DoR)**
+* **Usar o ambiente de desenvolvimento local para criar o Documento de Registro (DoR)**
 
   Você pode usar um XDP como um modelo de Documento de registro em instâncias do Cloud Service e SDK as a Cloud Service do AEM Forms (Ambiente de desenvolvimento local). Anteriormente, o suporte estava limitado apenas a instâncias Cloud Service.
 
-### Correções de erros no [!DNL Forms] {#bug-fixes-forms}
+### Correções de erros em [!DNL Forms] {#bug-fixes-forms}
 
 * Quando um Formulário adaptável configurado para não gerar um Documento de registro é enviado a um Fluxo de trabalho do AEM configurado para gerar Documento de registro, nenhuma mensagem de erro é exibida e a tarefa não é enviada.
 

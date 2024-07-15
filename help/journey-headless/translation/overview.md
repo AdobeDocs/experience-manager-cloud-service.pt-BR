@@ -35,7 +35,7 @@ Se você já está familiarizado com o AEM, headless e tradução, talvez já te
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio sobre o tópico ou AEM.
+[Uma Jornada de Documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
 
 As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 
@@ -69,7 +69,7 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 | 0 | Jornada de tradução headless do AEM | Este documento |
 | 1 | [Saiba mais sobre conteúdo headless e como traduzi-lo no AEM](learn-about.md) | Aprenda conceitos headless, como eles são mapeados no AEM e a teoria de tradução do AEM. |
 | 2 | [Introdução à tradução do AEM headless](getting-started.md) | Saiba como organizar seu conteúdo headless e como funcionam as ferramentas de tradução do AEM. |
-| 3 | [Configurar a integração da tradução](configure-connector.md) | Saiba como conectar o AEM a um serviço de tradução. |
+| 3 | [Configurar a integração de tradução](configure-connector.md) | Saiba como conectar o AEM a um serviço de tradução. |
 | 4 | [Traduzir conteúdo](translate-content.md) | Use a integração e as regras de tradução para traduzir o conteúdo headless. |
 | 5 | [Publicar conteúdo traduzido](publish-content.md) | Saiba como publicar seu conteúdo traduzido e atualizar a tradução quando o conteúdo subjacente for atualizado. |
 
@@ -88,5 +88,5 @@ Como tal, as jornadas são projetadas para se sustentarem sozinhas. No entanto, 
 * [Jornada de desenvolvedores headless do AEM](/help/journey-headless/developer/overview.md): comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e como usá-las em seu primeiro projeto de desenvolvimento.
 * [Documentação técnica do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR) - se você já tiver uma sólida compreensão das tecnologias headless e do AEM, poderá consultar diretamente os nossos documentos técnicos detalhados.
    * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
-* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 * [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - se você prefere aprender na prática e tem conhecimento técnico, utilize nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos incorporados no AEM Headless.

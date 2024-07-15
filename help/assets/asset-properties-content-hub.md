@@ -1,6 +1,6 @@
 ---
-title: Propriedades do ativo no [!DNL the Content Hub]
-description: Saiba como visualizar e gerenciar propriedades de ativos no [!DNL Content Hub]
+title: Propriedades do ativo em  [!DNL the Content Hub]
+description: Saiba como exibir e gerenciar propriedades de ativos no [!DNL Content Hub]
 role: User
 source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
 workflow-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 ![Imagem do banner de metadados](assets/metadata-banner-image.png)
 
-[!DNL The Content Hub] O permite visualizar informações sobre o ativo que é essencial para a distribuição eficiente do ativo. É a coleção de todos os dados disponíveis para um ativo.
+O [!DNL The Content Hub] permite exibir informações sobre o ativo que são essenciais para uma distribuição eficiente do ativo. É a coleção de todos os dados disponíveis para um ativo.
 
 A visualização de propriedades de ativos ajuda a categorizar os ativos e é útil à medida que a quantidade de informações digitais cresce. É possível gerenciar algumas centenas de arquivos com base apenas nos nomes de arquivo, miniaturas e memória. No entanto, essa abordagem não é escalável quando o número de pessoas envolvidas e o número de ativos gerenciados aumentam. Além disso, o valor de um ativo digital cresce à medida que o ativo se torna:
 
@@ -24,30 +24,30 @@ A visualização de propriedades de ativos ajuda a categorizar os ativos e é ú
 
 ## Pré-requisitos {#prerequisites}
 
-[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) O pode executar as ações mencionadas neste artigo.
+[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) podem executar as ações mencionadas neste artigo.
 
 ## Exibir propriedades de um ativo {#properties-ui}
 
-Antes de usar, compartilhar ou baixar um ativo, é possível visualizá-lo mais detalhadamente. O recurso de visualização permite exibir não apenas as imagens, mas alguns outros tipos de ativos compatíveis também. Você pode não apenas visualizar o ativo, mas também visualizar suas informações detalhadas e realizar outras ações. Para exibir informações de um ativo, navegue até o ativo ou [pesquisa](search-assets.md) o ativo e, em seguida, clique no ativo para abrir suas propriedades. A figura a seguir demonstra os campos disponíveis em uma página de propriedades de ativos:
+Antes de usar, compartilhar ou baixar um ativo, é possível visualizá-lo mais detalhadamente. O recurso de visualização permite exibir não apenas as imagens, mas alguns outros tipos de ativos compatíveis também. Você pode não apenas visualizar o ativo, mas também visualizar suas informações detalhadas e realizar outras ações. Para exibir informações de um ativo, navegue até o ativo ou [pesquise](search-assets.md) o ativo e clique nele para abrir suas propriedades. A figura a seguir demonstra os campos disponíveis em uma página de propriedades de ativos:
 
 ![Propriedades de uma interface do usuário do ativo](assets/properties-ui.png)
 
-* **R:** Título de um ativo
-* **B:** Porcentagem de zoom ou ativo de visualização mais próximo ao aumentar ou diminuir o zoom
-* **C:** Desfazer zoom para a porcentagem selecionada anteriormente
+* **A:** Título de um ativo
+* **B:** Porcentagem de zoom ou ativo de visualização mais próxima ao aumentar ou diminuir o zoom
+* **C:** Desfazer zoom até a porcentagem selecionada anteriormente
 * **D:** Prosseguir para o ativo anterior ou seguinte
 * **E:** Contagem de Assets
 * **F:** Baixar o ativo
 * **G:** Editar ativo usando [!DNL Adobe Express]
-* **A:** Recolher ou visualizar informações de um ativo
+* **H:** Recolher ou visualizar informações de um ativo
 * **I:** Compartilhar o ativo
 * **J:** Adicionar ativo a [!DNL Collection]
 * **K:** Fechar tela de visualização
-* **L:** Informações de um ativo que incluem título, formato, tamanho, resolução, tags, tags de cor e tags inteligentes.
+* **L:** Informações de um ativo que inclui título, formato, tamanho, resolução, marcas, marcas de cor e marcas inteligentes.
 
 ## Formatos compatíveis {#supported-formats}
 
-A tabela a seguir demonstra os formatos de arquivo compatíveis com o [!DNL the Content Hub]:
+A tabela a seguir demonstra os formatos de arquivo com suporte em [!DNL the Content Hub]:
 
 <table> 
     <tbody>
@@ -99,13 +99,13 @@ A tabela a seguir demonstra os formatos de arquivo compatíveis com o [!DNL the 
 
 Depois de fazer upload de um ativo, a Content Hub deriva algumas propriedades que são geradas automaticamente. Veja a seguir uma lista de alguns deles:
 
-* **Tamanho:** O tamanho demonstra o valor lógico de um ativo de acordo com suas dimensões. Esclarece o espaço que um ativo está ocupando em um repositório. [!DNL The Content Hub] suporta ativos de até 2 GB.
+* **Tamanho:** O tamanho demonstra o valor lógico de um ativo de acordo com suas dimensões. Esclarece o espaço que um ativo está ocupando em um repositório. O [!DNL The Content Hub] oferece suporte a ativos de até 2 GB.
 
 <!--* **Tags:** Tags help you categorize assets that can be browsed and searched more efficiently. Tagging helps in propagating the appropriate taxonomy to other users and workflows. -->
 
-* **Tags inteligentes:** [!DNL The Content Hub] O usa os serviços de conteúdo inteligente da Adobe Sensei para treinar ativos usando o algoritmo de reconhecimento na estrutura baseada em tags. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. As Tags inteligentes aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente. As tags inteligentes são um exemplo de informações de ativos que não estão contidas na imagem. [!DNL The Content Hub] O aplica tags inteligentes do automaticamente a ativos, por padrão.
+* **Tags inteligentes:** o [!DNL The Content Hub] usa os serviços de conteúdo inteligente da Adobe Sensei para treinar ativos usando o algoritmo de reconhecimento na estrutura baseada em tags. Essa inteligência de conteúdo é usada para aplicar tags relevantes em um conjunto diferente de ativos. As Tags inteligentes aumentam a velocidade do conteúdo de seus projetos, ajudando você a encontrar ativos relevantes rapidamente. As tags inteligentes são um exemplo de informações de ativos que não estão contidas na imagem. O [!DNL The Content Hub] aplica tags inteligentes automaticamente a ativos, por padrão.
 
-* **Tags de cores:** [Tags de cores](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) Ajudar a reconhecer um ativo usando cores identificadas automaticamente em um ativo usando os recursos de IA do Adobe Sensei.
+* **Marcas de cores:** [Marcas de cores](#https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/color-tag-images.html?lang=en) ajudam a reconhecer um ativo usando cores identificadas automaticamente em um ativo por meio dos recursos de IA do Adobe Sensei.
 
 * Data de upload
 

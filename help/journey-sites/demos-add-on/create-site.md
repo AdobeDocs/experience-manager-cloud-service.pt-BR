@@ -45,11 +45,11 @@ Depois que o pipeline tiver implantado o complemento de demonstração de refer�
 
    ![Acessar sites](assets/access-sites.png)
 
-1. No console Sites, selecione **Criar** no canto superior direito da tela e selecione **Site do modelo** no menu suspenso.
+1. No console Sites, selecione **Criar** no canto superior direito da tela e selecione **Site a partir de modelo** no menu suspenso.
 
    ![Criar site a partir de modelo](assets/create-site-from-template.png)
 
-1. O assistente de criação de sites é iniciado. Na coluna da esquerda, é possível ver os modelos de demonstração que o pipeline implantou na instância de criação. Selecione um para selecioná-lo e mostrar detalhes na coluna direita. Se quiser testar ou ver uma demonstração do AEM Screens, certifique-se de escolher a **Modelo de site da We.Cafe**. Selecione **Próximo**.
+1. O assistente de criação de sites é iniciado. Na coluna da esquerda, é possível ver os modelos de demonstração que o pipeline implantou na instância de criação. Selecione um para selecioná-lo e mostrar detalhes na coluna direita. Se quiser testar ou ver uma demonstração do AEM Screens, certifique-se de escolher o **Modelo de Site da We.Cafe**. Selecione **Próximo**.
 
    ![Assistente de criação de site](assets/site-creation-wizard.png)
 
@@ -61,7 +61,7 @@ Depois que o pipeline tiver implantado o complemento de demonstração de refer�
 
    ![Detalhes do site](assets/site-details.png)
 
-1. A criação do site é confirmada com uma caixa de diálogo. Selecionar **Concluído**.
+1. A criação do site é confirmada com uma caixa de diálogo. Selecione **Concluído**.
 
    ![Criação do site concluída](assets/site-creation-complete.png)
 
@@ -83,7 +83,7 @@ Agora que o site de demonstração foi criado, você pode navegar e usá-lo como
 
    ![Estrutura do site](assets/site-structure.png)
 
-1. Selecione uma página para selecioná-la e **Editar** na barra de ferramentas.
+1. Selecione uma página para selecioná-la e, em seguida, selecione **Editar** na barra de ferramentas.
 
    ![Selecionar página](assets/select-page.png)
 
@@ -105,8 +105,8 @@ Agora que concluiu esta parte da jornada do complemento de demonstração de ref
 
 Agora, é possível testar os recursos do AEM usando conteúdo complementar. Você tem duas opções para continuar sua jornada:
 
-* Se quiser ver uma demonstração completa e testar o conteúdo do AEM Screens, certifique-se de implantar um site com base no **Modelo de site da We.Cafe** conforme descrito anteriormente e continuar a [Ative o AEM Screens para seu site de demonstração.](screens.md)
-* Se você deseja apenas ver uma demonstração do conteúdo dos sites, continue para [Gerencie Seus Sites De Demonstração,](manage.md) onde você aprende sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
+* Se quiser ver uma demonstração completa e testar o conteúdo do AEM Screens, certifique-se de implantar um site com base no **Modelo de Site da We.Cafe**, conforme descrito anteriormente, e continue em [Habilitar o AEM Screens para o seu Site de Demonstração.](screens.md)
+* Se você deseja apenas ver uma demonstração do conteúdo dos sites, continue em [Gerenciar seus sites de demonstração](manage.md), onde você aprenderá sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
 
 ## Recursos adicionais {#additional-resources}
 

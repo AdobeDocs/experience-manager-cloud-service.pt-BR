@@ -27,7 +27,7 @@ Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Tran
 >[!NOTE]
 >Se o Amazon S3, o Azure Data Store ou o File Data Store for usado como o tipo de armazenamento de dados, você poderá executar a etapa opcional de pré-cópia para aumentar a velocidade da fase de extração. A etapa de pré-cópia é mais eficaz para a primeira extração e assimilação completas. Consulte [Lidar com grandes repositórios de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) para obter mais detalhes.
 
-1. Selecione um conjunto de migração na lista **Transferência de conteúdo** e clique em **Extract** para iniciar a extração.
+1. Selecione um conjunto de migração no assistente de **Transferência de conteúdo** e clique em **Extrair** para iniciar a extração.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
@@ -36,29 +36,29 @@ Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Tran
 
    >[!IMPORTANT]
    >
-   >Verifique se a chave de extração é válida e se não está próxima de expirar. Se estiver próximo da data de expiração, você poderá renovar a chave de Extração selecionando o conjunto de migração e clicando em Propriedades. Clique em **Renovar**. Isso leva você ao Cloud Acceleration Manager, onde é possível clicar em **Copiar chave de extração**. Sempre que você clicar em **Copiar chave de extração**, uma nova chave de Extração é gerada e é válida por 14 dias a partir do momento da criação.
+   >Verifique se a chave de extração é válida e se não está próxima de expirar. Se estiver próximo da data de expiração, você poderá renovar a chave de Extração selecionando o conjunto de migração e clicando em Propriedades. Clique em **Renovar**. Você será direcionado para a Cloud Acceleration Manager onde pode clicar em **Copiar Chave de Extração**. Toda vez que você clica em **Copiar chave de extração**, é gerada uma nova chave de extração que é válida por 14 dias a partir da data de criação.
    >![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
-1. Isso exibe a caixa de diálogo Extração. Clique em **Extract** para iniciar a fase de extração.
+1. Isso exibe a caixa de diálogo Extração. Clique em **Extrair** para iniciar a fase de extração.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
 
    >[!NOTE]
-   >Opcionalmente, é possível substituir o container de preparo durante a fase de extração. Se **Substituir container de preparo** estiver desativado, poderá acelerar as extrações para migrações subsequentes em que os caminhos de conteúdo ou as configurações de inclusão de versões não tenham sido alterados. No entanto, se os caminhos de conteúdo ou as configurações de inclusão de versões tiverem sido alterados, **Substituir container de preparo** deve ser ativado.
+   >Opcionalmente, é possível substituir o container de preparo durante a fase de extração. Se o **contêiner de preparação de substituição** estiver desabilitado, ele poderá acelerar as extrações para migrações subsequentes em que os caminhos de conteúdo ou as configurações de inclusão de versões não tenham sido alterados. No entanto, se os caminhos de conteúdo ou as configurações de inclusão de versões tiverem sido alterados, o **contêiner de preparação de substituição** deverá ser habilitado.
 
-1. A variável **Extração** O campo agora exibe a variável **EM EXECUÇÃO** status para indicar que a extração está em andamento.
+1. O campo **Extração** agora exibe o status **RUNNING** para indicar que a extração está em andamento.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam15.png)
 
-   Você pode clicar em **Visualizar progresso** para obter uma visualização granular da extração em andamento.
+   Você pode clicar em **Exibir andamento** para obter uma exibição granular da extração em andamento.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   Você também pode monitorar o progresso da fase de Extração no Cloud Acceleration Manager visitando a página Transferência de conteúdo e vê-lo com mais detalhes clicando em **..** > **Exibir detalhes**.
+   Você também pode monitorar o progresso da fase de Extração no Cloud Acceleration Manager visitando a página Transferência de Conteúdo e vê-lo com mais detalhes clicando em **...** > **Exibir detalhes**.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Quando a extração for concluída, analise as outras colunas como **Origem** e **Caminhos** para obter detalhes sobre o conjunto de migração preenchido. Clicando **..** > **Exibir detalhes** para ver detalhes, incluindo a duração de cada etapa da extração. Visualize essa caixa de diálogo durante a extração para que você possa ver o andamento das etapas.
+1. Quando a extração for concluída, revise as outras colunas como **Source** e **Caminhos** para obter detalhes do conjunto de migração preenchido. Clique em **...** > **Exibir detalhes** para ver os detalhes, incluindo a duração de cada etapa da extração. Visualize essa caixa de diálogo durante a extração para que você possa ver o andamento das etapas.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
@@ -75,11 +75,11 @@ Quando o processo de extração estiver concluído, você poderá transferir o c
 
 Siga as etapas abaixo:
 
-1. Navegue até a **Transferência de conteúdo** e selecione o conjunto de migração para o qual você deseja executar a extração complementar. Clique em **Extrair** para iniciar a extração complementar.
+1. Navegue até o assistente de **Transferência de conteúdo** e selecione o conjunto de migração para o qual você deseja realizar a extração complementar. Clique em **Extrair** para iniciar a extração complementar.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam19.png)
 
-1. A variável **Extração do conjunto de migrações** é exibida. Clique em **Extract**.
+1. A caixa de diálogo **Extração do conjunto de migração** é exibida. Clique em **Extrair**.
 
    >[!IMPORTANT]
    >Você deve desativar a opção **Substituir containercontêiner de preparação durante a extração**.
@@ -88,4 +88,4 @@ Siga as etapas abaixo:
 
 ## O que vem a seguir {#whats-next}
 
-Depois de aprender a Extrair conteúdo da origem na ferramenta Transferência de conteúdo, agora você está pronto para aprender o Processo de assimilação na ferramenta Transferência de conteúdo. Consulte [Assimilar conteúdo no Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) onde você pode aprender a assimilar seu conjunto de migração da ferramenta Transferência de conteúdo.
+Depois de aprender a Extrair conteúdo do Source na ferramenta Transferência de conteúdo, agora você está pronto para aprender o Processo de assimilação na ferramenta Transferência de conteúdo. Consulte [Assimilar conteúdo no Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md), onde você pode aprender a assimilar seu conjunto de migração na Ferramenta de transferência de conteúdo.

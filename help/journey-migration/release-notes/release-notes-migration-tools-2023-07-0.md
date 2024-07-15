@@ -13,7 +13,7 @@ ht-degree: 6%
 
 # Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2023.07.0 {#release-notes}
 
-Esta página descreve as notas de versão das ferramentas de migração no AEM as a Cloud Service 2023.07.0.
+Esta página descreve as Notas de versão das Ferramentas de migração no AEM as a Cloud Service 2023.07.0.
 
 ## Analisador de práticas recomendadas {#bpa-release}
 

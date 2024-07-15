@@ -43,12 +43,12 @@ Uma operação síncrona é um processo de geração de documentos de maneira li
 
 As operações de API de locatário único oferecem suporte a dois tipos de autenticação:
 
-* **Autenticação básica**: a autenticação básica é um esquema de autenticação simples incorporado ao protocolo HTTP. O cliente envia solicitações HTTP com o cabeçalho de Autorização que contém a palavra Básico seguida por um espaço e uma string codificada em base64 username:password. Por exemplo, para autorizar como administrador/administrador, o cliente envia Básico [nome de usuário da cadeia de caracteres codificada na base64]: [senha da string codificada na base64].
+* **Autenticação básica**: a autenticação básica é um esquema de autenticação simples incorporado ao protocolo HTTP. O cliente envia solicitações HTTP com o cabeçalho de Autorização que contém a palavra Básico seguida por um espaço e uma string codificada em base64 username:password. Por exemplo, para autorizar como administrador / administrador, o cliente envia o nome de usuário ] da cadeia de caracteres codificada em [base64 Básico: [senha da cadeia de caracteres codificada em base64].
 
-* **Autenticação baseada em token:** A autenticação baseada em token usa um token de acesso (token de autenticação de portador) para fazer solicitações ao Experience Manager as a Cloud Service. O AEM Forms as a Cloud Service fornece APIs para recuperar com segurança o token de acesso. Para recuperar e usar o token para autenticar uma solicitação:
+* **Autenticação baseada em token:** a autenticação baseada em token usa um token de acesso (token de autenticação de portador) para fazer solicitações ao Experience Manager as a Cloud Service. O AEM Forms as a Cloud Service fornece APIs para recuperar com segurança o token de acesso. Para recuperar e usar o token para autenticar uma solicitação:
 
-   1. [Recuperar a credencial as a Cloud Service do Experience Manager do Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [Instalar a credencial as a Cloud Service do Experience Manager em seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Servidor de Aplicativos, Servidor Web ou outros servidores que não sejam AEM) configurados para enviar solicitações ao (efetuar chamadas) Cloud Service.
+   1. Experience Manager [Recupere a credencial as a Cloud Service do Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [Instalar o Experience Manager as a Cloud Service credential em seu ambiente](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Servidor de Aplicativos, Servidor Web ou outros servidores que não sejam AEM) configurados para enviar solicitações ao (efetuar chamadas) Cloud Service.
    1. [Gerar um token JWT e trocá-lo com APIs do Adobe IMS por um token de acesso](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
    1. Execute a API de Experience Manager com o token de acesso como um token de autenticação de portador.
    1. [Defina as permissões apropriadas para o usuário da conta técnica no ambiente de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
@@ -137,7 +137,7 @@ Uma organização normalmente tem vários modelos. Por exemplo, um modelo para d
 
 ### Chamar uma API
 
-A variável [Documentação de referência da API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) O fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos por APIs. A documentação de referência da API também fornece o arquivo de definição de API no formato .yaml. Você pode baixar o arquivo .yaml e carregá-lo no [Postman](https://www.postman.com/) para verificar a funcionalidade das APIs.
+A [documentação de referência da API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos por APIs. A documentação de referência da API também fornece o arquivo de definição de API no formato .yaml. Você pode baixar o arquivo .yaml e carregá-lo no [Postman](https://www.postman.com/) para verificar a funcionalidade das APIs.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
@@ -147,7 +147,7 @@ A variável [Documentação de referência da API](https://developer.adobe.com/e
 
 >[!MORELIKETHIS]
 >
->* [Introdução às comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [Arquitetura as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação](/help/forms/aem-forms-cloud-service-architecture.md)
->* [Processamento de comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [Introdução às Comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Processamento da comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

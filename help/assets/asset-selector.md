@@ -22,7 +22,7 @@ A interface do usuário de micro front-end é disponibilizada em sua experiênci
 
 O Seletor de ativos oferece muitos benefícios, como:
 
-* Facilidade de integração com qualquer um dos [Adobe](#asset-selector-ims) ou [não Adobe](#asset-selector-non-ims) aplicativos usando a biblioteca JavaScript do Vanilla.
+* Facilidade de integração com qualquer um dos aplicativos [Adobe](#asset-selector-ims) ou [não-Adobe](#asset-selector-non-ims) usando a biblioteca JavaScript Vanilla.
 * Manutenção facilitada, pois as atualizações do pacote do Seletor de ativos são implantadas automaticamente no Seletor de ativos disponível para seu aplicativo. Não há atualizações necessárias no aplicativo para carregar as modificações mais recentes.
 * Facilidade de personalização, pois há propriedades disponíveis que controlam a exibição do Seletor de ativos no aplicativo.
 * Filtros de pesquisa de texto completo, prontos para uso e personalizados que navegam rapidamente até os ativos para uso na experiência de criação.
@@ -57,11 +57,11 @@ Use os pré-requisitos acima se você precisar de um fluxo de trabalho de autent
 > Este repositório serve como uma documentação complementar que descreve as APIs disponíveis e exemplos de uso para integração do Seletor de ativos. Antes de tentar instalar ou usar o Seletor de ativos, verifique se sua organização recebeu o acesso ao Seletor de ativos como parte do perfil as a Cloud Service do Experience Manager Assets. Se não tiver sido provisionado, você não poderá integrar ou usar esses componentes. Para solicitar o provisionamento, o administrador do programa deve levantar um tíquete de suporte marcado como P2 do Admin Console e incluir as seguintes informações:
 >
 >* Nomes de domínio em que o aplicativo de integração está hospedado.
->* Após o provisionamento, sua organização receberá `imsClientId`, `imsScope`, e uma `redirectUrl` correspondente ao ambiente solicitado que é essencial para a configuração do Seletor de ativos. Sem essas propriedades válidas, não é possível executar as etapas de instalação.
+>* Após o provisionamento, sua organização receberá `imsClientId`, `imsScope` e um `redirectUrl` correspondentes ao ambiente solicitado que são essenciais para a configuração do Seletor de ativos. Sem essas propriedades válidas, não é possível executar as etapas de instalação.
 
 ## Instalação {#installation}
 
-O Seletor de ativos está disponível por meio da CDN do ESM (por exemplo, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) e [UMD](https://github.com/umdjs/umd) versão.
+O Seletor de ativos está disponível por meio da CDN do ESM (por exemplo, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) e da versão [UMD](https://github.com/umdjs/umd).
 
 Nos navegadores usando a **Versão UMD** (recomendado):
 
@@ -89,9 +89,9 @@ import { AssetSelector } from 'https://experience.adobe.com/solutions/CQ-assets-
 
 ## Integrar o Seletor de ativos usando o Vanilla JS {#integration-using-vanilla-js}
 
-É possível integrar qualquer [!DNL Adobe] ou aplicativo não-Adobe com [!DNL Experience Manager Assets] repositório e selecione os ativos no aplicativo. Consulte [Seletor de ativos Integração com vários aplicativos](#asset-selector-integration-with-apps).
+É possível integrar qualquer aplicativo [!DNL Adobe] ou não-Adobe ao repositório [!DNL Experience Manager Assets] e selecionar ativos no aplicativo. Consulte [Integração do Seletor de ativos com vários aplicativos](#asset-selector-integration-with-apps).
 
-A integração é feita importando o pacote do Seletor de ativos e conectando ao Assets as a Cloud Service usando a biblioteca JavaScript Vanilla. Editar um `index.html` ou qualquer arquivo apropriado em seu aplicativo para:
+A integração é feita importando o pacote do Seletor de ativos e conectando ao Assets as a Cloud Service usando a biblioteca JavaScript Vanilla. Edite um `index.html` ou qualquer arquivo apropriado em seu aplicativo para:
 
 * Definir os detalhes de autenticação
 * Acessar o repositório do Assets as a Cloud Service
@@ -106,7 +106,7 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 É possível integrar o Seletor de ativos a vários aplicativos, como:
 
-* [Integrar o Seletor de ativos a um [!DNL Adobe] aplicativo](#adobe-app-integration-vanilla)
+* [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integrar o Seletor de ativos a um aplicativo não-Adobe](#adobe-non-app-integration)
 * [Integração do Dynamic Media com recursos OpenAPI](#adobe-app-integration-polaris)
 
@@ -118,20 +118,20 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 ### Pré-requisitos{#prereqs-adobe-app}
 
-Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos a um [!DNL Adobe] aplicativo:
+Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos a um aplicativo do [!DNL Adobe]:
 
 * [Métodos de comunicação](#prereqs)
 * imsOrg
 * imsToken
 * apikey
 
-### Integrar o Seletor de ativos a um [!DNL Adobe] aplicativo {#adobe-app-integration-vanilla}
+### Integrar o Seletor de ativos a um aplicativo do [!DNL Adobe] {#adobe-app-integration-vanilla}
 
-O exemplo a seguir demonstra o uso do Seletor de ativos ao executar um [!DNL Adobe] aplicativo no Unified Shell ou quando você já tiver `imsToken` gerado para autenticação.
+O exemplo a seguir demonstra o uso do Seletor de Ativos ao executar um aplicativo [!DNL Adobe] no Unified Shell ou quando você já gerou `imsToken` para autenticação.
 
-Inclua o pacote do Seletor de ativos no código usando o `script` tag, conforme mostrado em _linhas 6-15_ do exemplo abaixo. Depois que o script for carregado, a variável global `PureJSSelectors` estará disponível para uso. Definir o Seletor de ativos [propriedades](#asset-selector-properties) conforme mostrado em _linhas 16-23_. A variável `imsOrg` e `imsToken` as propriedades são necessárias para autenticação no aplicativo Adobe. A propriedade `handleSelection` é usada para manipular os ativos selecionados. Para renderizar o Seletor de ativos, chame a função `renderAssetSelector` como mencionado na _linha 17_. O Seletor de ativos é exibido no elemento de container `<div>`, conforme mostrado nas _linhas 21 e 22_.
+Inclua o pacote do Seletor de ativos no código usando a marca `script`, como mostrado nas _linhas 6-15_ do exemplo abaixo. Depois que o script for carregado, a variável global `PureJSSelectors` estará disponível para uso. Defina o Seletor de ativos [propriedades](#asset-selector-properties) conforme mostrado em _linhas 16-23_. As propriedades `imsOrg` e `imsToken` são necessárias para autenticação no aplicativo Adobe. A propriedade `handleSelection` é usada para manipular os ativos selecionados. Para renderizar o Seletor de ativos, chame a função `renderAssetSelector` como mencionado na _linha 17_. O Seletor de ativos é exibido no elemento de container `<div>`, conforme mostrado nas _linhas 21 e 22_.
 
-Seguindo essas etapas, é possível usar o Seletor de ativos com a [!DNL Adobe] aplicação.
+Seguindo essas etapas, você pode usar o Seletor de ativos com seu aplicativo [!DNL Adobe].
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -165,28 +165,28 @@ Seguindo essas etapas, é possível usar o Seletor de ativos com a [!DNL Adobe] 
 <!--For detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
 
 +++**ImsAuthProps**
-A variável `ImsAuthProps` As propriedades do definem as informações de autenticação e o fluxo que o Seletor de ativos usa para obter uma `imsToken`. Ao definir essas propriedades, é possível controlar como o fluxo de autenticação deve se comportar e registrar ouvintes para vários eventos de autenticação.
+As propriedades `ImsAuthProps` definem as informações de autenticação e o fluxo que o Seletor de ativos usa para obter um `imsToken`. Ao definir essas propriedades, é possível controlar como o fluxo de autenticação deve se comportar e registrar ouvintes para vários eventos de autenticação.
 
 | Nome de propriedade | Descrição |
 |---|---|
 | `imsClientId` | Um valor de string que representa a ID do cliente IMS usada para fins de autenticação. Esse valor é fornecido pelo Adobe e é específico para sua organização de Adobe AEM CS. |
 | `imsScope` | Descreve os escopos usados na autenticação. Os escopos determinam o nível de acesso que o aplicativo tem aos recursos da organização. Vários escopos podem ser separados por vírgulas. |
-| `redirectUrl` | Representa o URL para o qual o usuário é redirecionado após a autenticação. Normalmente, esse valor é definido como o URL atual do aplicativo. Se um `redirectUrl` não é fornecido, `ImsAuthService` usa o redirectUrl usado para registrar o `imsClientId` |
-| `modalMode` | Um booleano que indica se o fluxo de autenticação deve ser exibido em um modal (pop-up) ou não. Se definida como `true`, o fluxo de autenticação é exibido em um pop-up. Se definida como `false`, o fluxo de autenticação é exibido em um recarregamento de página completo. _Nota:_ para obter um UX melhor, é possível controlar dinamicamente esse valor se o usuário tiver o pop-up do navegador desativado. |
-| `onImsServiceInitialized` | Uma função de retorno de chamada que é chamada quando o serviço de autenticação do Adobe IMS é inicializado. Essa função aceita um parâmetro, `service`, que é um objeto que representa o serviço Adobe IMS. Consulte [`ImsAuthService`](#imsauthservice-ims-auth-service) para obter mais detalhes. |
-| `onAccessTokenReceived` | Uma função de retorno de chamada que é chamada quando um `imsToken` é recebida do serviço de autenticação do Adobe IMS. Essa função aceita um parâmetro, `imsToken`, que é uma string que representa o token de acesso. |
+| `redirectUrl` | Representa o URL para o qual o usuário é redirecionado após a autenticação. Normalmente, esse valor é definido como o URL atual do aplicativo. Se um `redirectUrl` não for fornecido, `ImsAuthService` usará o redirectUrl usado para registrar o `imsClientId` |
+| `modalMode` | Um booleano que indica se o fluxo de autenticação deve ser exibido em um modal (pop-up) ou não. Se definido como `true`, o fluxo de autenticação será exibido em um pop-up. Se definido como `false`, o fluxo de autenticação será exibido em um recarregamento de página completo. _Observação:_ para obter um UX melhor, você pode controlar este valor dinamicamente se o usuário tiver o pop-up do navegador desabilitado. |
+| `onImsServiceInitialized` | Uma função de retorno de chamada que é chamada quando o serviço de autenticação do Adobe IMS é inicializado. Essa função recebe um parâmetro, `service`, que é um objeto que representa o serviço Adobe IMS. Consulte [`ImsAuthService`](#imsauthservice-ims-auth-service) para obter mais detalhes. |
+| `onAccessTokenReceived` | Uma função de retorno de chamada que é chamada quando um `imsToken` é recebido do serviço de autenticação do Adobe IMS. Esta função recebe um parâmetro, `imsToken`, que é uma cadeia de caracteres que representa o token de acesso. |
 | `onAccessTokenExpired` | Uma função de retorno de chamada chamada chamada quando um token de acesso expira. Normalmente, essa função é usada para acionar um novo fluxo de autenticação para obter um novo token de acesso. |
 | `onErrorReceived` | Uma função de retorno de chamada que é chamada quando ocorre um erro durante a autenticação. Essa função usa dois parâmetros: o tipo de erro e a mensagem de erro. O tipo de erro é uma cadeia de caracteres que representa o tipo de erro, e a mensagem de erro é uma cadeia de caracteres que representa a mensagem de erro. |
 
 +++
 
 +++**ImsAuthService**
-`ImsAuthService` A classe lida com o fluxo de autenticação do Seletor de ativos. É responsável pela obtenção de um `imsToken` do serviço de autenticação do Adobe IMS. A variável `imsToken` é usado para autenticar o usuário e autorizar o acesso à [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] repositório do Assets. O ImsAuthService usa o `ImsAuthProps` propriedades para controlar o fluxo de autenticação e registrar ouvintes de vários eventos de autenticação. Você pode usar o conveniente [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) função para registrar a _ImsAuthService_ instância com o Seletor de ativos. As seguintes funções estão disponíveis no `ImsAuthService` classe. No entanto, se você estiver usando o _registerAssetsSelectorsAuthService_ não é necessário chamar essas funções diretamente.
+A classe `ImsAuthService` manipula o fluxo de autenticação para o Seletor de ativos. Ele é responsável por obter um `imsToken` do serviço de autenticação do Adobe IMS. O `imsToken` é usado para autenticar o usuário e autorizar o acesso ao [!DNL Adobe Experience Manager] como um repositório do Assets [!DNL Cloud Service]. O ImsAuthService usa as propriedades `ImsAuthProps` para controlar o fluxo de autenticação e registrar ouvintes de vários eventos de autenticação. Você pode usar a conveniente função [`registerAssetsSelectorsAuthService`](#purejsselectorsregisterassetsselectorsauthservice) para registrar a instância _ImsAuthService_ com o Seletor de ativos. As seguintes funções estão disponíveis na classe `ImsAuthService`. No entanto, se você estiver usando a função _registerAssetsSelectorsAuthService_, não será necessário chamar essas funções diretamente.
 
 | Nome da função | Descrição |
 |---|---|
 | `isSignedInUser` | Determina se o usuário está conectado ao serviço no momento e retorna um valor booleano correspondente. |
-| `getImsToken` | Recupera a autenticação `imsToken` para o usuário conectado no momento, que pode ser usado para autenticar solicitações para outros serviços, como gerar _representação de ativos. |
+| `getImsToken` | Recupera a autenticação `imsToken` para o usuário conectado no momento, que pode ser usada para autenticar solicitações para outros serviços, como a geração de _representação de ativos. |
 | `signIn` | Inicia o processo de entrada do usuário. Esta função usa o `ImsAuthProps` para mostrar autenticação em um pop-up ou em um recarregamento de página completo |
 | `signOut` | Desconecta o usuário do serviço, invalidando seu token de autenticação e exigindo que ele entre novamente para acessar recursos protegidos. Chamar essa função recarregará a página atual. |
 | `refreshToken` | Atualiza o token de autenticação do usuário conectado no momento, evitando a expiração e garantindo acesso ininterrupto aos recursos protegidos. Retorna um novo token de autenticação que pode ser usado para solicitações subsequentes. |
@@ -272,40 +272,40 @@ Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos a um 
 * imsOrg
 * apikey
 
-O Seletor de ativos oferece suporte à autenticação para o [!DNL Experience Manager Assets] repositório usando propriedades do Sistema Identity Management (IMS), como `imsScope` ou `imsClientID` quando estiver integrando com um aplicativo não-Adobe.
+O Seletor de ativos oferece suporte à autenticação para o repositório [!DNL Experience Manager Assets] usando propriedades do Sistema Identity Management (IMS) como `imsScope` ou `imsClientID` quando você o integra com um aplicativo que não seja Adobe.
 
 ### Integrar o Seletor de ativos a um aplicativo não-Adobe {#adobe-non-app-integration}
 
 Para integrar o Seletor de ativos a um aplicativo que não seja do Adobe, é necessário executar várias validações, como registrar um tíquete de suporte, integração etc.
 
-+++**Configurar o Seletor de ativos para um aplicativo não-Adobe**
++++**Configurar o Seletor de Ativos para um aplicativo não-Adobe**
 Para configurar o Seletor de ativos para um aplicativo não-Adobe, primeiro registre um tíquete de suporte para provisionamento, seguido das etapas de integração.
 
-**Registro de um tíquete de suporte**
+**Registrando um tíquete de suporte**
 Etapas para registrar um tíquete de suporte pela Admin Console:
 
-1. Adicionar **Seletor de ativos com AEM Assets** no título do ticket.
+1. Adicionar **Seletor de ativos com AEM Assets** no título do tíquete.
 
 1. Na descrição, forneça os seguintes detalhes:
 
-   * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] URL (ID do programa e ID do ambiente).
+   * [!DNL Experience Manager Assets] como uma URL [!DNL Cloud Service] (ID do Programa e ID do Ambiente).
    * Nomes de domínio em que o aplicativo Web não-Adobe está hospedado.
 +++
 
 +++**Etapas de integração**
-Use este exemplo `index.html` arquivo para autenticação ao integrar o Seletor de ativos a um aplicativo não-Adobe.
+Use este exemplo de arquivo `index.html` para autenticação ao integrar o Seletor de ativos a um aplicativo não-Adobe.
 
-Acesse o pacote Seletor de ativos usando o `Script` Tag, conforme mostrado em *linha 9* para *linha 11* do exemplo `index.html` arquivo.
+Acesse o pacote do Seletor de ativos usando a Marca `Script`, conforme mostrado na *linha 9* para a *linha 11* do arquivo de exemplo `index.html`.
 
-*Linha 14* para *linha 38* do exemplo descreve as propriedades de fluxo do IMS, como `imsClientId`, `imsScope`, e `redirectURL`. A função exige a definição de pelo menos um dos `imsClientId` e `imsScope` propriedades. Se você não definir um valor para `redirectURL`, o URL de redirecionamento registrado para a ID do cliente será usado.
+A *Linha 14* a *linha 38* do exemplo descreve as propriedades do fluxo IMS, como `imsClientId`, `imsScope` e `redirectURL`. A função requer a definição de pelo menos uma das propriedades `imsClientId` e `imsScope`. Se você não definir um valor para `redirectURL`, a URL de redirecionamento registrada para a ID do cliente será usada.
 
-Como você não tem um `imsToken` gerada, use o `registerAssetsSelectorsAuthService` e `renderAssetSelectorWithAuthFlow` funções, conforme mostrado nas linhas 40 a 50 do exemplo `index.html` arquivo. Use o `registerAssetsSelectorsAuthService` função antes `renderAssetSelectorWithAuthFlow` para registrar a `imsToken` com o Seletor de ativos. [!DNL Adobe] recomenda chamar `registerAssetsSelectorsAuthService` ao instanciar o componente.
+Como você não tem um `imsToken` gerado, use as funções `registerAssetsSelectorsAuthService` e `renderAssetSelectorWithAuthFlow`, conforme mostrado na linha 40 para a linha 50 do arquivo de exemplo `index.html`. Use a função `registerAssetsSelectorsAuthService` antes de `renderAssetSelectorWithAuthFlow` para registrar `imsToken` com o Seletor de ativos. A [!DNL Adobe] recomenda chamar `registerAssetsSelectorsAuthService` ao instanciar o componente.
 
-Defina a autenticação e outras propriedades relacionadas ao as a Cloud Service do Assets na `const props` conforme mostrado na *linha 54* para *linha 60* do exemplo `index.html` arquivo.
+Defina a autenticação e outras propriedades relacionadas ao as a Cloud Service do Assets na seção `const props`, conforme mostrado na *linha 54* a *linha 60* do arquivo de exemplo `index.html`.
 
-A variável `PureJSSelectors` variável global, mencionada em *linha 65*, é usado para renderizar o Seletor de ativos no navegador da Web.
+A variável global `PureJSSelectors`, mencionada em *linha 65*, é usada para renderizar o Seletor de ativos no navegador da Web.
 
-O Seletor de ativos é renderizado no `<div>` elemento de contêiner, conforme mencionado em *linha 74* para *linha 81*. O exemplo usa uma caixa de diálogo para exibir o Seletor de ativos.
+O Seletor de ativos é renderizado no elemento de contêiner `<div>`, como mencionado na *linha 74* para *linha 81*. O exemplo usa uma caixa de diálogo para exibir o Seletor de ativos.
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
@@ -386,11 +386,11 @@ O Seletor de ativos é renderizado no `<div>` elemento de contêiner, conforme m
 
 +++
 
-+++**Não foi possível acessar o repositório de entrega**
++++**Não é possível acessar o repositório de entrega**
 
 >[!TIP]
 >
->Se você tiver integrado o Seletor de ativos usando o fluxo de trabalho Inscrever-se, mas ainda não conseguir acessar o repositório de entrega, verifique se os cookies do navegador foram limpos. Caso contrário, você acaba conseguindo `invalid_credentials All session cookies are empty` erro no console.
+>Se você tiver integrado o Seletor de ativos usando o fluxo de trabalho Inscrever-se, mas ainda não conseguir acessar o repositório de entrega, verifique se os cookies do navegador foram limpos. Caso contrário, você acaba recebendo o erro `invalid_credentials All session cookies are empty` no console.
 
 +++
 
@@ -414,17 +414,17 @@ A integração do Seletor de ativos com o processo OpenAPI do Dynamic Media envo
 
 +++**Integrar o Seletor de ativos para Dynamic Media com recursos OpenAPI**
 
-A variável `rootPath` e `path` As propriedades não devem fazer parte do Dynamic Media com recursos OpenAPI. Em vez disso, você pode configurar o `aemTierType` propriedade. Veja a seguir a sintaxe da configuração:
+As propriedades `rootPath` e `path` não devem fazer parte do Dynamic Media com recursos OpenAPI. Em vez disso, você pode configurar a propriedade `aemTierType`. Veja a seguir a sintaxe da configuração:
 
 ```
 aemTierType:[1: "delivery"]
 ```
 
-Essa configuração permite visualizar todos os ativos aprovados sem pastas ou como uma estrutura simples. Para obter mais informações, navegue até `aemTierType` propriedade em [Propriedades do Seletor de ativos](#asset-selector-properties)
+Essa configuração permite visualizar todos os ativos aprovados sem pastas ou como uma estrutura simples. Para obter mais informações, navegue até a propriedade `aemTierType` em [Propriedades do Seletor de ativos](#asset-selector-properties)
 
 +++
 
-+++**Criar um URL de entrega dinâmico a partir de ativos aprovados**
++++**Criar uma URL de Entrega Dinâmica a partir de ativos aprovados**
 Depois de configurar o Seletor de ativos, um esquema de objetos será usado para criar um URL de entrega dinâmico dos ativos selecionados.
 Por exemplo, um esquema de um objeto de uma matriz de objetos que é recebido após a seleção de um ativo:
 
@@ -438,7 +438,7 @@ Por exemplo, um esquema de um objeto de uma matriz de objetos que é recebido ap
 }
 ```
 
-Todos os ativos selecionados são carregados por `handleSelection` função que atua como um objeto JSON. Por exemplo, `JsonObj`. O URL dinâmico de entrega é criado pela combinação das seguintes operadoras:
+Todos os ativos selecionados são carregados pela função `handleSelection` que atua como um objeto JSON. Por exemplo, `JsonObj`. O URL dinâmico de entrega é criado pela combinação das seguintes operadoras:
 
 | Objeto | JSON |
 |---|---|
@@ -457,7 +457,7 @@ Onde,
 
 * O host é `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * A raiz da API é `"/adobe/dynamicmedia/deliver"`
-* `<asset-id>` é Identificador de ativo
+* `<asset-id>` é o identificador do ativo
 * `<seo-name>` é o nome de um ativo
 * `<format>` é o formato de saída
 * `<image modification query parameters>` como suporte pela especificação da API de entrega dos ativos aprovados
@@ -468,14 +468,14 @@ O URL do delivery dinâmico possui a seguinte sintaxe:
 `https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, onde,
 
 * O host é `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* A raiz da API para entrega de representação original é `"/adobe/assets/deliver"`
-* `<asset-id>` é identificador de ativo
+* A raiz da API para Entrega de Representação Original é `"/adobe/assets/deliver"`
+* `<asset-id>` é um identificador de ativo
 * `<seo-name>`é o nome do ativo que pode ou não ter uma extensão
 
 +++
 
-+++**Pronto para escolher o URL de entrega dinâmico**
-Todos os ativos selecionados são carregados por `handleSelection` função que atua como um objeto JSON. Por exemplo, `JsonObj`. O URL dinâmico de entrega é criado pela combinação das seguintes operadoras:
++++**Pronto para escolher a URL de entrega dinâmica**
+Todos os ativos selecionados são carregados pela função `handleSelection` que atua como um objeto JSON. Por exemplo, `JsonObj`. O URL dinâmico de entrega é criado pela combinação das seguintes operadoras:
 
 | Objeto | JSON |
 |---|---|
@@ -488,12 +488,13 @@ Abaixo estão duas maneiras de percorrer o objeto JSON:
 
 ![URL de entrega dinâmica](assets/dynamic-delivery-url.png)
 
-* **Miniatura:** Miniaturas podem ser imagens e os ativos são PDF, vídeo, imagens e assim por diante. Embora, você possa usar os atributos de altura e largura da miniatura de um ativo como a representação dinâmica da entrega.
-O seguinte conjunto de representações pode ser usado para os ativos do tipo PDF: depois que um pdf é selecionado no sidekick, o contexto de seleção oferece as informações abaixo. Abaixo está a maneira de percorrer o objeto JSON:
+* **Miniatura:** Miniaturas podem ser imagens e ativos são PDF, vídeo, imagens e assim por diante. Embora, você possa usar os atributos de altura e largura da miniatura de um ativo como a representação dinâmica da entrega.
+O seguinte conjunto de representações pode ser usado para os ativos do tipo PDF:
+Depois que um pdf é selecionado no sidekick, o contexto de seleção oferece as informações abaixo. Abaixo está a maneira de percorrer o objeto JSON:
 
   <!--![Thumbnail dynamic delivery url](image-1.png)-->
 
-  Você pode consultar `selection[0].....selection[4]` para o link matriz de representação na captura de tela acima. Por exemplo, as principais propriedades de uma das representações de miniatura incluem:
+  Consulte `selection[0].....selection[4]` para obter a matriz de link de representação na captura de tela acima. Por exemplo, as principais propriedades de uma das representações de miniatura incluem:
 
   ```
   { 
@@ -506,7 +507,7 @@ O seguinte conjunto de representações pode ser usado para os ativos do tipo PD
 
 Na captura de tela acima, o URL de entrega da representação original do PDF precisa ser incorporado à experiência do público-alvo se o PDF for necessário, e não sua miniatura. Por exemplo, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
 
-* **Vídeo:** Você pode usar o URL do reprodutor de vídeo para os ativos do tipo vídeo que usam um iFrame incorporado. Você pode usar as seguintes representações de matriz na experiência do target:
+* **Vídeo:** Você pode usar a URL do player de vídeo para os ativos do tipo vídeo que usam um iFrame inserido. Você pode usar as seguintes representações de matriz na experiência do target:
   <!--![Video dynamic delivery url](image.png)-->
 
   ```
@@ -518,13 +519,13 @@ Na captura de tela acima, o URL de entrega da representação original do PDF pr
   } 
   ```
 
-  Você pode consultar `selection[0].....selection[4]` para o link matriz de representação na captura de tela acima. Por exemplo, as principais propriedades de uma das representações de miniatura incluem:
+  Consulte `selection[0].....selection[4]` para obter a matriz de link de representação na captura de tela acima. Por exemplo, as principais propriedades de uma das representações de miniatura incluem:
 
-  O trecho de código na captura de tela acima é um exemplo de um ativo de vídeo. Inclui a matriz de links de representações. A variável `selection[5]` no trecho está o exemplo de miniatura de imagem que pode ser usada como o espaço reservado da miniatura de vídeo na experiência do target. A variável `selection[5]` na matriz das representações é para o reprodutor de vídeo. Isso serve um HTML e pode ser definido como `src` do iframe. Suporta transmissão adaptável de taxa de bits, que é a entrega do vídeo otimizada para a Web.
+  O trecho de código na captura de tela acima é um exemplo de um ativo de vídeo. Inclui a matriz de links de representações. O `selection[5]` no trecho é o exemplo de miniatura de imagem que pode ser usada como o espaço reservado da miniatura de vídeo na experiência de destino. O `selection[5]` na matriz das representações é para o reprodutor de vídeo. Isso serve um HTML e pode ser definido como `src` do iframe. Suporta transmissão adaptável de taxa de bits, que é a entrega do vídeo otimizada para a Web.
 
-  No exemplo acima, o URL do reprodutor de vídeo é `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+  No exemplo acima, a URL do reprodutor de vídeo é `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
 
-+++**Interface do usuário do Seletor de ativos para Dynamic Media com recursos OpenAPI**
++++**Interface de usuário do Seletor de ativos para o Dynamic Media com recursos OpenAPI**
 
 Após a integração com o Seletor de ativos de micro front-end do Adobe, é possível visualizar a estrutura somente de ativos de todos os ativos aprovados disponíveis no repositório de ativos do Experience Manager.
 
@@ -535,22 +536,22 @@ Após a integração com o Seletor de ativos de micro front-end do Adobe, é pos
 * **C**: [Classificação](#sorting)
 * **D**: [Filtros](#filters)
 * **E**: [Barra de pesquisa](#search-bar)
-* **F**: [Classificação em ordem crescente ou decrescente](#sorting)
-* **G**: Cancelar seleção
-* **H**: selecione um ou vários ativos
+* **F**: [Classificando em ordem crescente ou decrescente](#sorting)
+* **G**: Cancelar Seleção
+* **H**: selecionar um ou vários ativos
 
 +++
 
 +++**Configurar filtros personalizados**
-O Seletor de ativos para Dynamic Media com recursos OpenAPI permite configurar propriedades personalizadas e filtros com base nelas. A variável `filterSchema` é utilizada para configurar essas propriedades. A personalização pode ser exposta como `metadata.<metadata bucket>.<property name>.` em relação aos quais os filtros podem ser configurados, onde,
+O Seletor de ativos para Dynamic Media com recursos OpenAPI permite configurar propriedades personalizadas e filtros com base nelas. A propriedade `filterSchema` é usada para configurar essas propriedades. A personalização pode ser exposta como `metadata.<metadata bucket>.<property name>.` em relação à qual os filtros podem ser configurados, onde,
 
 * `metadata` são as informações de um ativo
 * `embedded` é o parâmetro estático usado para configuração e
 * `<propertyname>` é o nome do filtro que você está configurando
 
-Para a configuração, as propriedades definidas em `jcr:content/metadata/` são expostos como `metadata.<metadata bucket>.<property name>.` para os filtros que deseja configurar.
+Para a configuração, as propriedades definidas no nível `jcr:content/metadata/` são expostas como `metadata.<metadata bucket>.<property name>.` para os filtros que você deseja configurar.
 
-Por exemplo, no Seletor de ativos para Dynamic Media com recursos OpenAPI, uma propriedade em `asset jcr:content/metadata/client_name:market` é convertido em `metadata.embedded.client_name:market` para configuração de filtro.
+Por exemplo, no Seletor de ativos para Dynamic Media com recursos OpenAPI, uma propriedade em `asset jcr:content/metadata/client_name:market` é convertida em `metadata.embedded.client_name:market` para configuração de filtro.
 
 Para obter o nome, é necessário realizar uma atividade única. Faça uma chamada de API de pesquisa para o ativo e obtenha o nome da propriedade (o bucket, essencialmente).
 
@@ -564,15 +565,15 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 
 | Propriedade | Tipo | Obrigatório | Padrão | Descrição |
 |---|---|---|---|---|
-| *painel* | booleano | Não | falso | Se marcado `true`, o Seletor de ativos é renderizado em uma exibição do painel à esquerda. Se estiver marcado `false`, o Seletor de ativos é renderizado na exibição modal. |
-| *imsOrg* | string | Sim | | A ID do Adobe Identity Management System (IMS) atribuída durante o provisionamento do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para sua organização. A variável `imsOrg` A chave é necessária para autenticar se a organização que você está acessando está no Adobe IMS ou não. |
-| *imsToken* | string | Não | | Token de portador IMS usado para autenticação. `imsToken` é obrigatório se você estiver usando um [!DNL Adobe] aplicativo para a integração. |
-| *apiKey* | string | Não | | Chave de API usada para acessar o serviço de Descoberta do AEM. `apiKey` é obrigatório se você estiver usando um [!DNL Adobe] integração de aplicativos. |
+| *painel* | booleano | Não | falso | Se marcado como `true`, o Seletor de ativos será renderizado em um modo de exibição de painel esquerdo. Se estiver marcado como `false`, o Seletor de ativos será renderizado na exibição modal. |
+| *imsOrg* | string | Sim | | A ID do Adobe Identity Management System (IMS) atribuída durante o provisionamento do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para sua organização. A chave `imsOrg` é necessária para autenticar se a organização que você está acessando está no Adobe IMS ou não. |
+| *imsToken* | string | Não | | Token de portador IMS usado para autenticação. `imsToken` é necessário se você estiver usando um aplicativo [!DNL Adobe] para a integração. |
+| *apiKey* | string | Não | | Chave de API usada para acessar o serviço de Descoberta do AEM. `apiKey` é necessário se você estiver usando uma integração de aplicativos [!DNL Adobe]. |
 | *filterSchema* | matriz | Não | | Modelo usado para configurar propriedades de filtro. Isso é útil quando quiser limitar determinadas opções de filtro no Seletor de ativos. |
 | *filterFormProps* | Objeto | Não | | Especifique as propriedades de filtro que precisam ser usadas para refinar sua pesquisa. Por exemplo, tipo MIME JPG, PNG, GIF. |
 | *selectedAssets* | Matriz `<Object>` | Não |                 | Especifique os ativos selecionados quando o Seletor de ativos for renderizado. É necessária uma matriz de objetos que contenha uma propriedade de id dos ativos. Por exemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Um ativo deve estar disponível no diretório atual. Se precisar usar um diretório diferente, forneça um valor para a propriedade `path` também. |
-| *acvConfig* | Objeto | Não | | A propriedade Exibição da coleção do ativo que contém o objeto com a configuração personalizada para substituir os padrões. Além disso, essa propriedade é usada com `rail` propriedade para ativar a visualização do painel do visualizador de ativos. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Não |                 | Se as traduções OOTB forem insuficientes para as necessidades do aplicativo, você poderá expor uma interface pela qual poderá passar seus próprios valores localizados e personalizados pelo `i18nSymbols` prop Transmitir um valor por meio dessa interface substitui as traduções padrão fornecidas e, em vez disso, usa suas próprias traduções. Para executar a substituição, deverá transmitir um objeto [Descritor de mensagem](https://formatjs.io/docs/react-intl/api/#message-descriptor) à chave de `i18nSymbols` que deseja substituir. |
+| *acvConfig* | Objeto | Não | | A propriedade Exibição da coleção do ativo que contém o objeto com a configuração personalizada para substituir os padrões. Além disso, essa propriedade é usada com a propriedade `rail` para habilitar a exibição do painel do visualizador de ativos. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Não |                 | Se as traduções OOTB forem insuficientes para as necessidades do aplicativo, você poderá expor uma interface pela qual poderá passar seus próprios valores localizados e personalizados pela prop `i18nSymbols`. Transmitir um valor por meio dessa interface substitui as traduções padrão fornecidas e, em vez disso, usa suas próprias traduções. Para executar a substituição, deverá transmitir um objeto [Descritor de mensagem](https://formatjs.io/docs/react-intl/api/#message-descriptor) à chave de `i18nSymbols` que deseja substituir. |
 | *intl* | Objeto | Não | | O Seletor de ativos fornece traduções OOTB padrão. Você pode selecionar o idioma de tradução fornecendo uma string de idioma válida por meio da propriedade `intl.locale`. Por exemplo: `intl={{ locale: "es-es" }}` </br></br> As strings de idioma com suporte seguem os padrões [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para a representação de nomes de idiomas. </br></br> Lista de idiomas com suporte: Inglês - “en-us” (padrão) Espanhol - “es-es” Alemão - “de-de” Francês - “fr-fr” Italiano - “it-it” Japonês - “ja-jp” Coreano - “ko-kr” Português - “pt-br” Chinês (Tradicional) - “zh-cn” Chinês (Taiwan) - “zh-tw” |
 | *repositoryId* | string | Não | &#39;&#39; | Repositório de onde o Seletor de ativos carrega o conteúdo. |
 | *additionalAemSolutions* | `Array<string>` | Não | [ ] | Ela permite adicionar uma lista de repositórios AEM adicionais. Se nenhuma informação for fornecida nessa propriedade, somente a biblioteca de mídia ou os repositórios do AEM Assets serão considerados. |
@@ -586,12 +587,12 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *onFilterSubmit* | Função | Não | | Invocado com itens de filtro à medida que o usuário altera critérios de filtro diferentes. |
 | *selectionType* | string | Não | individual | Configuração para a seleção `single` ou `multiple` de ativos de cada vez. |
 | *arrastarOpções.incluir na lista de permissões* | booleano | Não | | A propriedade é usada para permitir ou negar a ação de arrastar ativos que não podem ser selecionados. |
-| *aemTierType* | string | Não | | Ela permite selecionar se você deseja mostrar ativos do nível de entrega, do nível de criação ou de ambos. <br><br> Sintaxe: `aemTierType:[0: "author" 1: "delivery"` <br><br> Por exemplo, se ambos `["author","delivery"]` forem usados, o alternador de repositório exibirá opções para o autor e o delivery. <br> Além disso, use `["delivery"]` para os ativos relacionados ao delivery no Dynamic Media com recursos OpenAPI. |
+| *aemTierType* | string | Não | | Ela permite selecionar se você deseja mostrar ativos do nível de entrega, do nível de criação ou de ambos. Sintaxe de <br><br>: `aemTierType:[0: "author" 1: "delivery"` <br><br> Por exemplo, se ambos `["author","delivery"]` forem usados, o alternador de repositório exibirá opções para o autor e para a entrega. <br> Além disso, use `["delivery"]` para os ativos relacionados à entrega na Dynamic Media com recursos OpenAPI. |
 | *handleNavigateToAsset* | Função | Não | | É uma função de Retorno de chamada para lidar com a seleção de um ativo. |
-| *noWrap* | booleano | Não | | A variável *noWrap* ajuda a renderizar o Seletor de ativos no painel lateral. Se essa propriedade não for mencionada, ela renderizará o *Exibição da caixa de diálogo* por padrão. |
-| *dialogSize* | controle pequeno, médio, grande, tela cheia ou tela cheia | String | Opcional | Você pode controlar o layout especificando seu tamanho com as opções fornecidas. |
+| *noWrap* | booleano | Não | | A propriedade *noWrap* ajuda a renderizar o Seletor de ativos no painel lateral. Se essa propriedade não for mencionada, ela renderizará a *Exibição da caixa de diálogo* por padrão. |
+| *tamanhoDaCaixaDeDiálogo* | controle pequeno, médio, grande, tela cheia ou tela cheia | String | Opcional | Você pode controlar o layout especificando seu tamanho com as opções fornecidas. |
 | *colorScheme* | claro ou escuro | Não | | Essa propriedade é usada para definir o tema de um aplicativo Seletor de ativos. Você pode escolher entre um tema claro ou escuro. |
-| *filterRepoList* | Função | Não |  | Você pode usar `filterRepoList` função de retorno de chamada que chama o repositório Experience Manager e retorna uma lista filtrada de repositórios. |
+| *filterRepoList* | Função | Não |  | Você pode usar a função de retorno de chamada `filterRepoList` que chama o repositório de Experience Manager e retorna uma lista filtrada de repositórios. |
 
 <!--| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |-->
@@ -604,7 +605,7 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-Se o valor do AssetSelector `rail` está definida como `false` ou não é mencionado nas propriedades, o Seletor de ativos é exibido na visualização Modal por padrão. A variável `acvConfig` A propriedade é usada para ativar a exibição do painel do visualizador de ativos. Visita [habilitar ou desabilitar arrastar e soltar](#enable-disable-drag-and-drop) para compreender o uso do `acvConfig` propriedade.
+Se o valor do AssetSelector `rail` estiver definido como `false` ou não for mencionado nas propriedades, o Seletor de ativos é exibido na exibição Modal por padrão. A propriedade `acvConfig` é usada para habilitar a exibição do painel do visualizador de ativos. Visite [habilitar ou desabilitar a ação de arrastar e soltar](#enable-disable-drag-and-drop) para entender o uso da propriedade `acvConfig`.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -622,7 +623,7 @@ Use várias propriedades para definir os metadados de um ativo que deseja visual
 
 ### Exemplo 3: propriedade de filtro personalizado na exibição do painel
 
-Além da pesquisa facetada, o Seletor de Assets permite personalizar vários atributos para refinar sua pesquisa no [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aplicação. Adicione o código a seguir para adicionar filtros de pesquisa personalizados em seu aplicativo. No exemplo abaixo, a pesquisa `Type Filter` que filtra o tipo de ativo entre Imagens, Documentos ou Vídeos ou o tipo de filtro adicionado para a pesquisa.
+Além da pesquisa facetada, o Seletor de Assets permite personalizar vários atributos para refinar sua pesquisa do [!DNL Adobe Experience Manager] como um aplicativo do [!DNL Cloud Service]. Adicione o código a seguir para adicionar filtros de pesquisa personalizados em seu aplicativo. No exemplo abaixo, a pesquisa `Type Filter` que filtra o tipo de ativo entre Imagens, Documentos ou Vídeos ou o tipo de filtro adicionado para a pesquisa.
 
 ![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
 
@@ -637,11 +638,11 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 
 ## Trechos de código de configuração funcional{#code-snippets}
 
-Defina os pré-requisitos no `index.html` arquivo ou um arquivo semelhante na implementação do aplicativo para definir os detalhes de autenticação para acessar o [!DNL Experience Manager Assets] repositório. Depois de concluído, você pode adicionar trechos de código de acordo com sua exigência.
+Defina os pré-requisitos no arquivo `index.html` ou em um arquivo semelhante na implementação do aplicativo para definir os detalhes de autenticação para acessar o repositório [!DNL Experience Manager Assets]. Depois de concluído, você pode adicionar trechos de código de acordo com sua exigência.
 
 ### Personalizar painel de filtro {#customize-filter-panel}
 
-Você pode adicionar o seguinte fragmento de código no `assetSelectorProps` objeto para personalizar o painel de filtro:
+Você pode adicionar o seguinte trecho de código no objeto `assetSelectorProps` para personalizar o painel de filtro:
 
 ```
 filterSchema: [
@@ -703,7 +704,7 @@ filterSchema: [
 
 ### Personalizar informações na exibição modal {#customize-info-in-modal-view}
 
-É possível personalizar a visualização de detalhes de um ativo ao clicar no botão ![ícone de informações](assets/info-icon.svg) ícone. Execute o código abaixo:
+Você pode personalizar a exibição detalhada de um ativo ao clicar no ícone ![informações](assets/info-icon.svg). Execute o código abaixo:
 
 ```
 // Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
@@ -717,7 +718,7 @@ assetSelectorProps.infoPopoverMap = infoPopoverMap;
 
 ### Ativar ou desativar o modo arrastar e soltar {#enable-disable-drag-and-drop}
 
-Adicione as seguintes propriedades a `assetSelectorProp` para ativar o modo arrastar e soltar. Para desativar a função arrastar e soltar, substitua o `true` parâmetro com `false`.
+Adicione as seguintes propriedades a `assetSelectorProp` para habilitar o modo arrastar e soltar. Para desabilitar arrastar e soltar, substitua o parâmetro `true` por `false`.
 
 ```
 rail: true,
@@ -824,7 +825,7 @@ Desativar seleção é usado para ocultar ou desativar a seleção de ativos ou 
 
 Você pode fornecer à matriz uma lista de tipos MIME (como imagem, pasta, arquivo ou outros tipos MIME, por exemplo, image/jpeg) que deseja desativar. Os tipos MIME declarados são mapeados em `data-card-type` e `data-card-mimetype` atributos de um ativo.
 
-Além disso, o Assets com seleção desativada é arrastável. Para desativar o arrastar e soltar de um tipo de ativo específico, é possível usar `dragOptions.allowList` propriedade.
+Além disso, o Assets com seleção desativada é arrastável. Para desabilitar a ação de arrastar e soltar um tipo de ativo específico, você pode usar a propriedade `dragOptions.allowList`.
 
 A sintaxe de desabilitar seleção é a seguinte:
 

@@ -11,9 +11,9 @@ ht-degree: 80%
 
 # Layout responsivo {#responsive-layout}
 
-O AEM permite que você tenha um layout responsivo para suas páginas usando o **Contêiner de layout** componente.
+O AEM permite ter um layout responsivo para suas páginas usando o componente **Contêiner de layout**.
 
-Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o [**Layout** modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), que permite criar e editar o layout responsivo dependendo do dispositivo.
+Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o modo [**Layout**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), que permite criar e editar seu layout responsivo dependendo do dispositivo.
 
 O container de layout:
 
@@ -49,7 +49,7 @@ Dependendo do projeto, o Contêiner de layout pode ser usado como o sistema de p
 
 >[!TIP]
 >
->Adobe fornece [Documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) do layout responsivo como uma referência que pode ser fornecida para desenvolvedores de front-end permitindo que usem a grade AEM fora do AEM, por exemplo, ao criar modelos de HTML estáticos para um futuro site de AEM.
+>O Adobe fornece a [documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) do layout responsivo como uma referência que pode ser fornecida para desenvolvedores front-end permitindo que usem a grade AEM fora do AEM, por exemplo, ao criar modelos de HTML AEM estáticos para um futuro site.
 
 >[!NOTE]
 >
@@ -136,14 +136,14 @@ Um **Contêiner de layout** é um sistema de parágrafos que:
 >
 >Se ainda não estiver disponível, o **Contêiner de layout** deve ser ativado explicitamente para um sistema/página de parágrafo. <!-- If not already available, the **Layout Container** must be explicitly [activated for a paragraph system/page](/help/sites-administering/configuring-responsive-layout.md).-->
 
-1. O **Contêiner de layout** está disponível como um componente padrão no [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Aqui, você pode arrastá-lo até o local desejado na página, onde poderá ver o **Arraste componentes aqui** espaço reservado.
+1. O **Contêiner de layout** está disponível como um componente padrão no [Navegador de componentes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Aqui, você pode arrastá-lo até o local desejado na página, onde poderá ver o espaço reservado **Arrastar componentes aqui**.
 1. Em seguida, você pode adicionar componentes ao container de layout. Esses componentes conterão o conteúdo real:
 
    ![Contêiner de layout](/help/sites-cloud/authoring/assets/responsive-layout-add-to-layout-container.png)
 
 ## Selecionar e executar ações em um contêiner de layout (modo Editar) {#selecting-and-taking-action-on-a-layout-container-edit-mode}
 
-Assim como em outros componentes, você pode selecionar e atuar em (recortar, copiar ou excluir) um Contêiner de layout (quando estiver no **Editar** modo):
+Assim como em outros componentes, você pode selecionar e atuar em (recortar, copiar ou excluir) um Contêiner de layout (no modo **Editar**):
 
 >[!CAUTION]
 >
@@ -196,13 +196,13 @@ Quando estiver no modo de layout, você poderá executar várias ações em uma 
   >As proporções e as taxas são mantidas quando os componentes como **Imagens** são redimensionados.
 
 * Selecione um componente de conteúdo, a barra de ferramentas permite:
-   * **Pai** - Permite selecionar o componente do contêiner de layout inteiro para executar uma ação em tudo.
+   * **Pai** - Permite que você selecione o componente do contêiner de layout inteiro para executar uma ação em tudo.
    * **Flutuar para a nova linha** - o componente será movido para uma nova linha, dependendo do espaço disponível na grade.
    * **Ocultar componente** - o componente ficará invisível (ele pode ser restaurado na barra de ferramentas do container de layout).
 
   ![Ocultar componente](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* Entrada **Layout** você pode selecionar o modo **Arraste os componentes para cá** para selecionar o componente inteiro. A barra de ferramentas é exibida para esse modo.
+* No modo **Layout**, você pode selecionar **Arrastar componentes aqui** para selecionar o componente inteiro. A barra de ferramentas é exibida para esse modo.
 
   A barra de ferramentas tem opções diferentes dependendo do estado do componente de layout e dos componentes que pertencem a ele. Por exemplo:
 

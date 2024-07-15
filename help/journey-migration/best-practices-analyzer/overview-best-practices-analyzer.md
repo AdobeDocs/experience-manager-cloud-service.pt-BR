@@ -39,4 +39,4 @@ Informações adicionais sobre as categorias e possíveis implicações e soluç
 >[!NOTE]
 >O Relatório do Analisador de práticas recomendadas acelera o processo de estimativa do tempo e o custo necessário para a transição para o AEM as a Cloud Service, fornecendo informações que de outra forma precisariam ser coletadas e avaliadas manualmente.
 
-Você também pode baixar o relatório do Analisador de práticas recomendadas da sua instância do AEM. Consulte [Exibição do relatório do Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obter mais detalhes.
+Você também pode baixar o relatório do Analisador de práticas recomendadas da sua instância do AEM. Consulte [Exibindo o Relatório do Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) para obter mais detalhes.

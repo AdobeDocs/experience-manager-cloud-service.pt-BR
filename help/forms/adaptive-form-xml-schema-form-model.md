@@ -7,8 +7,8 @@ level: Beginner, Intermediate
 exl-id: 5b8ad9a8-77d4-4234-a4d7-c8964b975e96
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 7%
+source-wordcount: '956'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ A criação de um formulário adaptável usando um esquema XML como modelo de fo
 
 ## Usando um esquema XML como modelo de formulário {#using-an-xml-schema-as-form-model}
 
-[!DNL Experience Manager Forms] O oferece suporte à criação de um Formulário adaptável usando um esquema XML existente como modelo de formulário. Esse esquema XML representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização.
+[!DNL Experience Manager Forms] dá suporte à criação de um Formulário Adaptável usando um esquema XML existente como modelo de formulário. Esse esquema XML representa a estrutura em que os dados são produzidos ou consumidos pelo sistema de back-end em sua organização.
 
 Os principais recursos do uso de um esquema XML são:
 
@@ -137,7 +137,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>Marca um campo como obrigatório<br /> </td>
+   <td>Marca um campo obrigatório<br /> </td>
    <td>Atributo</td>
   </tr>
   <tr>
@@ -166,7 +166,7 @@ Você pode adicionar os seguintes atributos aos elementos do Esquema XML para ad
 >* Colocar o primeiro caractere do nome do elemento em maiúsculas
 >* Inserção de espaço em branco nos limites do Camel Case.
 >
->Por exemplo, se você adicionar a variável `userFirstName` elemento de esquema, a legenda gerada no Formulário adaptável é `User First Name`.
+>Por exemplo, se você adicionar o elemento de esquema `userFirstName`, a legenda gerada no Formulário adaptável será `User First Name`.
 
 ## Limitar valores aceitáveis para um componente de Formulário adaptável {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -197,7 +197,7 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
    <td>
     <ul>
      <li>Caixa numérica</li>
-     <li>Escalonador numérico<br /> </li>
+     <li>Escalonador Numérico<br /> </li>
      <li>Seletor de data</li>
     </ul> </td>
   </tr>
@@ -284,7 +284,7 @@ Você pode adicionar as seguintes restrições aos elementos do esquema XML para
 
 ## Perguntas frequentes {#frequently-asked-questions}
 
-**Tenho uma estrutura complexa longa no Localizador de conteúdo. Como posso encontrar um elemento específico?**
+**Tenho uma estrutura complexa longa no Localizador de Conteúdo. Como posso encontrar um elemento específico?**
 
 Você tem duas opções:
 
@@ -293,12 +293,12 @@ Você tem duas opções:
 
 **O que é um bindRef?**
 
-A `bindRef` é a conexão entre um componente de Formulário adaptável e um elemento ou atributo de esquema. Ele dita que `XPath` em que o valor capturado deste componente ou campo está disponível no XML de saída. A `bindRef`também é usado ao preencher previamente um valor de campo do XML preenchido previamente (preenchido previamente).
+`bindRef` é a conexão entre um componente de Formulário adaptável e um elemento ou atributo de esquema. Ele determina o `XPath` onde o valor capturado deste componente ou campo está disponível no XML de saída. Um `bindRef` também é usado ao preencher previamente um valor de campo de XML preenchido (preenchido previamente).
 
-**Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (os valores minOccours ou maxOccurs são maiores que 1)?**
+**Por que não consigo arrastar elementos individuais de um subformulário (estrutura gerada de qualquer tipo complexo) para subformulários repetíveis (valores minOccours ou maxOccurs são maiores que 1)?**
 
 Em um subformulário repetível, você deve usar o subformulário Concluído. Se desejar apenas campos seletivos, use a estrutura inteira e exclua os indesejados.
 
 >[!MORELIKETHIS]
 >
->* [Criar um esquema JSON para um Formulário adaptável](/help/forms/adaptive-form-json-schema-form-model.md)
+>* [Criar esquema JSON para um formulário adaptável](/help/forms/adaptive-form-json-schema-form-model.md)

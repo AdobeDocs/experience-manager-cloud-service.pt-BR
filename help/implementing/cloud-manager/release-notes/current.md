@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 6ca376bda8055d62e35e13053ff21f861c12b292
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
@@ -29,10 +29,10 @@ A data de lançamento do Cloud Manager versão 2024.6.0 no AEM as a Cloud Servic
 * Agora você pode [usar seus próprios repositórios GitHub](/help/implementing/cloud-manager/managing-code/private-repositories.md) como fontes para pipelines de pilha completa e de front-end.
    * Além disso, é possível aproveitar os repositórios GitHub com [submódulos Git,](/help/implementing/cloud-manager/managing-code/git-submodules.md) fornecendo um controle aprimorado sobre os pipelines gerados automaticamente usados para validação de solicitação de pull e permitindo definir comportamentos para métricas cruciais durante a fase de verificação de código.
    * [Você também tem a opção](/help/implementing/cloud-manager/managing-code/github-check-config.md) de preservar o histórico do relatório no GitHub, nomear o pipeline e definir variáveis de pipeline para atender às suas necessidades.
-* [Restauração de conteúdo de autoatendimento](/help/operations/restore.md) oferece restauração de backup por até sete dias e recursos:
+* [A restauração de conteúdo de autoatendimento](/help/operations/restore.md) fornece restauração de backup por até sete dias e recursos:
    * Restauração de backup point-in-time nas últimas 24 horas
    * Restaurações por tempo fixo de até sete dias
-* [Novas regras do OakPal](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) foram adicionados à verificação de qualidade do código Cloud Manager.
+* [Novas regras do OakPal](/help/implementing/cloud-manager/custom-code-quality-rules.md#oakpal-ui-content-package) foram adicionadas à verificação de Qualidade do Código Cloud Manager.
    * Todas as nova regras adicionadas até junho de 2024 são alterações secundárias.
    * Recomendamos que você resolva isso o mais rápido possível, pois essas novas regras causarão falhas nos pipelines a partir da versão de agosto de 2024 do Cloud Manager.
 
@@ -42,17 +42,17 @@ Para testar alguns recursos futuros, faça parte do programa de adoção antecip
 
 ### Suporte a Edge Delivery Services no Cloud Manager {#edge-delivery-services}
 
-Se você tiver licenciado o Edge Delivery Services como parte do Adobe Experience Manager Sites, [agora você pode integrar seu site com o Edge Delivery Services diretamente no Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) e entrar em funcionamento usando uma experiência guiada de autoatendimento.
+Se você tiver licenciado Edge Delivery Services como parte do Adobe Experience Manager Sites, [você pode agora integrar seu site com Edge Delivery Services diretamente no Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) e ativar usando uma experiência guiada de autoatendimento.
 
 Isso permite uma experiência unificada para todas as propriedades do AEM, garantindo a consistência com todos os workflows críticos, incluindo o gerenciamento de nomes de domínio, o gerenciamento de certificados SSL e os mapeamentos de CDN.
 
-Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-cmedgedelsvs-program-adopter@adobe.com` do endereço de email associado à sua Adobe ID.
+Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para `aemcs-cmedgedelsvs-program-adopter@adobe.com` a partir do endereço de email associado à sua Adobe ID.
 
 ### Certificados validados por domínio (DV)
 
-O Cloud Manager agora permite [o autoatendimento gera e gerencia certificados SSL DV (domain validated).](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Isso oferece a solução mais rápida, fácil e econômica para criar um site seguro para sua empresa online.
+O Cloud Manager agora permite que você [gere e gerencie certificados SSL de domínio validado (DV) por autoatendimento.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Isso oferece a solução mais rápida, fácil e econômica para criar um site seguro para sua empresa online.
 
-Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `Grp-aemcs-dv-dert-adopter@adobe.com` do endereço de email associado à sua Adobe ID.
+Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para `Grp-aemcs-dv-dert-adopter@adobe.com` a partir do endereço de email associado à sua Adobe ID.
 
 <!-- RICK: REMOVED THIS SECTION AS PER EMAIL REQUEST TO DL-AEM-DOCS FROM SHWETA DUA, WEDNESDAY, JUNE 12, 2024 ### Client-Side Collection via Real Use Monitoring (RUM) {#rum}
 
@@ -64,8 +64,8 @@ If you are interested in testing this new feature and sharing your feedback, ple
 
 ### Painel de auditoria de experiência {#experience-audit-dashboard}
 
-[O painel de Auditoria de experiência do Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) O inclui uma exibição de tendências das pontuações de desempenho da página, juntamente com insights e recomendações para ajudar você a melhorá-las. A Auditoria de experiência está incluída como uma etapa no pipeline de produção do Cloud Manager.
+[O painel de Auditoria de Experiência do Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) inclui uma exibição de tendências das pontuações de desempenho da página, juntamente com insights e recomendações para ajudá-lo a melhorá-las. A Auditoria de experiência está incluída como uma etapa no pipeline de produção do Cloud Manager.
 
 O painel usa o Google Lighthouse, uma ferramenta de código aberto e automatizada para melhorar a qualidade dos seus aplicativos web. Você pode executá-lo em qualquer página da Web, público ou que exija autenticação. Ele tem auditorias de desempenho, acessibilidade, aplicativos web progressivos, SEO e muito mais.
 
-Interessado em testar o novo painel? Para começar, envie um email para `aem-lighthouse-pilot@adobe.com` do email associado à Adobe ID.
+Interessado em testar o novo painel? Para começar, envie um email para `aem-lighthouse-pilot@adobe.com` a partir do email associado à sua Adobe ID.

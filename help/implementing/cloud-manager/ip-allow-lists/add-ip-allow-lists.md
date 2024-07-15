@@ -21,17 +21,17 @@ Um usuário com função de **Proprietário da empresa** ou **Gerente de implant
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
-1. No **Visão geral** , navegue até o **LISTAS DE PERMISSÕES IP** usando a guia de navegação lateral.
+1. Na página **Visão geral**, navegue até a página **Listas de permissões IP** usando a guia de navegação lateral.
 
    ![Opção de listas de permissões de IP no painel lateral](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
-1. Clique em **Adicionar Lista de permissões de IP**.
+1. Clique em **Adicionar Lista de permissões IP**.
 
    ![A caixa de diálogo Adicionar lista de permissões de IP](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create02.png)
 
-1. No **Adicionar Lista de permissões de IP** incluir na lista de permissões , digite o nome que deseja usar para fazer referência ao arquivo de pesquisa na caixa de diálogo **Nome da Lista de permissões de IP** campo.
+1. Na caixa de diálogo **Adicionar Lista de permissões inclua na lista de permissões de IP**, digite um nome que você deseja usar para fazer referência ao arquivo no campo **Nome da Lista de permissões de IP**.
 
    * Esse nome é apenas informativo e deve fornecer uma descrição que ajude a identificar a lista.
 

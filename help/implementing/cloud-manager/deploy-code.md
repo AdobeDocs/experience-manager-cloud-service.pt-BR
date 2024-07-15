@@ -34,7 +34,7 @@ Depois de [configurar o Pipeline de produção](/help/implementing/cloud-manager
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique no programa para o qual deseja implantar código.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no programa para o qual deseja implantar código.
 
 1. Clique em **Implantar** na chamada à ação na tela **Visão geral** para iniciar o processo de implantação.
 
@@ -154,11 +154,11 @@ Nessas circunstâncias, quando uma reexecução for possível, a página de stat
 
 ### API de reexecução {#reexecute-API}
 
-Além de estar disponível na interface do usuário do, você pode usar [a API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para acionar reexecuções e identificar execuções que foram acionadas como reexecuções.
+Além de estar disponível na interface do usuário, você pode usar a [API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para acionar reexecuções e identificar as execuções que foram acionadas como reexecuções.
 
 #### Acionar uma reexecução {#reexecute-deployment-api}
 
-Para acionar uma reexecução, faça uma solicitação PUT para o link HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` no estado da etapa de implantação em produção.
+Para acionar uma reexecução, faça uma solicitação PUT para o Link HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` no estado da etapa de implantação de produção.
 
 * Se esse link estiver presente, a execução poderá ser reiniciada dessa etapa.
 * Se estiver ausente, a execução não poderá ser reiniciada dessa etapa.

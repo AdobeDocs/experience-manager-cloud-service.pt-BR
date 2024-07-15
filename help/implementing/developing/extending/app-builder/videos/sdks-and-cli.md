@@ -26,6 +26,6 @@ Saiba mais sobre o SDK do Adobe I/O e como ele é usado para desenvolver aplicat
 
 ## CLI
 
-Saiba mais sobre a CLI do Adobe I/O e como usá-la para o desenvolvimento do Construtor de aplicativos.
+Saiba mais sobre a CLI do Adobe I/O e como usá-la para desenvolvimento no App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339167/?quality=12&learn=on)

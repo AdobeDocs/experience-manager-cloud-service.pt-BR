@@ -15,7 +15,7 @@ ht-degree: 3%
 
 # Guia de início rápido para criação {#quick-guide-to-authoring}
 
-Comece aqui para obter um guia rápido de alto nível para começar a criar conteúdo usando o **Sites** console.
+Comece aqui para obter um guia rápido de alto nível para começar a criar conteúdo usando o console do **Sites**.
 
 >[!TIP]
 >
@@ -23,21 +23,21 @@ Comece aqui para obter um guia rápido de alto nível para começar a criar cont
 
 ## Tudo começa no console Sites. {#sites-console}
 
-Se você deseja criar novo conteúdo ou visualizar e gerenciar seu conteúdo existente, a visão geral central é a **Sites** console.
+Se você deseja criar novo conteúdo ou exibir e gerenciar seu conteúdo existente, a visão geral central para você é o console do **Sites**.
 
-Ao fazer logon pela primeira vez no AEM, você chega à tela de navegação global. Basta tocar ou clicar em **Sites** para abrir o **Sites** console.
+Ao fazer logon pela primeira vez no AEM, você chega à tela de navegação global. Basta tocar ou clicar em **Sites** para abrir o console **Sites**.
 
 ![Navegação global](assets/getting-started-global-navigation.png)
 
-Para acessar a navegação global de qualquer outro local no AEM, toque ou clique no link **Adobe Experience Manager** na parte superior esquerda de qualquer tela AEM, o que abre uma sobreposição suspensa da navegação global.
+Para acessar a navegação global a partir de qualquer outro local no AEM, toque ou clique no link **Adobe Experience Manager** na parte superior esquerda de qualquer tela do AEM, que abre uma sobreposição suspensa da navegação global.
 
-Uma vez no **Sites** console, seu conteúdo é simples de navegar e é apresentado em uma exibição de coluna por padrão.
+Uma vez no console do **Sites**, seu conteúdo é simples de navegar e é apresentado em uma exibição de coluna por padrão.
 
 ![O console Sites](assets/getting-started-sites-console.png)
 
 ## Exibições {#views}
 
-Por padrão, a variável **Sites** o console abre em **Coluna** exibição. Cada nível de hierarquia é exibido como uma coluna, que se presta bem ao conteúdo organizado hierarquicamente com base na Web.
+Por padrão, o console **Sites** é aberto na exibição **Coluna**. Cada nível de hierarquia é exibido como uma coluna, que se presta bem ao conteúdo organizado hierarquicamente com base na Web.
 
 ![Exibição de colunas](assets/getting-started-column-view.png)
 
@@ -45,16 +45,16 @@ Toque ou clique em uma entrada em uma coluna para selecioná-la ou abrir o próx
 
 Há duas exibições adicionais disponíveis:
 
-* **Exibição de cartão** - Essa visualização apresenta cada entrada como um cartão facilmente manipulável, tornando as opções adicionais facilmente acessíveis.
-* **Exibição de lista** - Isso apresenta um único nível de uma hierarquia como uma única lista, fornecendo mais detalhes sobre os itens individuais.
+* **Exibição de Cartão** - Este modo de exibição apresenta cada entrada como um cartão facilmente manipulável, facilitando o acesso às opções adicionais.
+* **Exibição de Lista** - Apresenta um único nível de uma hierarquia como uma única lista, fornecendo mais detalhes sobre os itens individuais.
 
 Use o alternador de exibições no canto superior esquerdo da tela para alternar entre exibições. Este documento usa a exibição de colunas padrão.
 
 ## Navegar pelo conteúdo {#navigating}
 
-**Exibição de coluna** O apresenta o conteúdo como uma série de colunas em cascata. Selecionar um item na coluna atual mostra seus detalhes na próxima coluna à direita, se for um documento, ou mostra o conteúdo do próximo nível de hierarquia, se for uma pasta.
+A **Exibição de Coluna** apresenta o conteúdo como uma série de colunas em cascata. Selecionar um item na coluna atual mostra seus detalhes na próxima coluna à direita, se for um documento, ou mostra o conteúdo do próximo nível de hierarquia, se for uma pasta.
 
-![Exibição de colunas em detalhes](assets/getting-started-column-detail.png)
+![Exibição detalhada das colunas](assets/getting-started-column-detail.png)
 
 Dessa forma, você pode percorrer para cima e para baixo sua estrutura de conteúdo.
 
@@ -70,7 +70,7 @@ A pesquisa aparece como uma sobreposição suspensa em todo o console. Insira se
 
 ## Criação de conteúdo {#creating}
 
-Para criar uma nova página, basta navegar até o local em que deseja que ela esteja na hierarquia de conteúdo e tocar ou clicar no **Criar** na barra de ferramentas.
+Para criar uma nova página, basta navegar até o local desejado na hierarquia de conteúdo e tocar ou clicar no botão **Criar** na barra de ferramentas.
 
 ![Criar](assets/getting-started-create.png)
 
@@ -80,23 +80,23 @@ Dependendo do que você selecionar para criar, o assistente apropriado começar�
 
 ## Editar conteúdo {#editing}
 
-Para editar uma página, toque ou clique para selecionar a página no **Sites** console. Em seguida, na barra de ferramentas exibida, toque ou clique no **Editar** ícone.
+Para editar uma página, toque ou clique para selecionar a página no console **Sites**. Em seguida, na barra de ferramentas exibida, toque ou clique no ícone **Editar**.
 
-![Seleção do conteúdo para edição](assets/getting-started-edit.png)
+![Selecionando conteúdo para editar](assets/getting-started-edit.png)
 
 Isso abrirá a página no editor apropriada ao conteúdo.
 
-Se desejar apenas atualizar as propriedades de uma página, como tags ou seu nome, toque ou clique no link **Propriedades** na barra de ferramentas.
+Se quiser simplesmente atualizar as propriedades de uma página, como marcas ou seu nome, toque ou clique no ícone **Propriedades** na barra de ferramentas.
 
 ## Organizar conteúdo {#organizing}
 
-Para mover ou copiar uma página, selecione a página no console e, na barra de ferramentas, toque ou clique em **Mover** ou **Copiar**. Isso inicia um assistente para orientá-lo pelas etapas de movimentação ou cópia, definindo o nome e o local da página resultante.
+Para mover ou copiar uma página, selecione-a no console e, na barra de ferramentas, toque ou clique em **Mover** ou **Copiar**. Isso inicia um assistente para orientá-lo pelas etapas de movimentação ou cópia, definindo o nome e o local da página resultante.
 
 ![Assistente para mover página](assets/getting-started-move-page.png)
 
 ## Publicar conteúdo {#publishing}
 
-Quando terminar de fazer as alterações desejadas no conteúdo usando o **Sites** console, você poderá publicar o conteúdo. Selecione o conteúdo que deseja publicar e toque ou clique no **Publicação rápida** na barra de ferramentas.
+Quando terminar de fazer as alterações desejadas no conteúdo usando o console do **Sites**, você poderá publicar o conteúdo. Selecione o conteúdo que deseja publicar e toque ou clique no ícone **Publish rápido** na barra de ferramentas.
 
 ![Publicação rápida](assets/getting-started-quick-publish.png)
 

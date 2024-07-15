@@ -18,7 +18,7 @@ O ambiente de criação do AEM fornece vários mecanismos para organização e e
 
 ## Gerenciar o site {#managing-your-site}
 
-A variável **Sites** o console permite navegar e gerenciar o site, usando a barra de cabeçalho, a barra de ferramentas, os ícones de ação (aplicáveis ao recurso selecionado), as navegações estruturais e, quando selecionados, os painéis secundários (por exemplo, linha do tempo e referências).
+O console **Sites** permite navegar e gerenciar o site, usando a barra de cabeçalho, a barra de ferramentas, os ícones de ação (aplicáveis ao recurso selecionado), as navegações estruturais e, quando selecionados, os painéis secundários (por exemplo, linha do tempo e referências).
 
 Por exemplo, exibição de coluna:
 
@@ -90,7 +90,7 @@ A aparência e o manuseio real dependem do tipo de dispositivo usado:
    * Filtrar componentes por nome.
    * Limitar a exibição para um grupo específico usando a seleção suspensa.
 
-  Para obter uma descrição mais detalhada do componente, selecione o ícone de informações ao lado do componente na **Componentes** navegador (se disponível). Por exemplo, para o **Fragmento de conteúdo**:
+  Para obter uma descrição mais detalhada do componente, você pode selecionar o ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Fragmento de conteúdo**:
 
   ![Informações do navegador de componentes](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
@@ -108,7 +108,7 @@ O navegador de ativos é um guia no painel lateral juntamente com o [navegador d
 
 ![Ativar/desativar painel lateral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Ao abrir o painel lateral, ele deslizará do lado esquerdo. Selecione o **Assets** se necessário.
+Ao abrir o painel lateral, ele deslizará do lado esquerdo. Selecione a guia **Assets**, se necessário.
 
 ![Botão Navegador de ativos](/help/sites-cloud/authoring/assets/assets-browser-button.png)
 
@@ -120,7 +120,7 @@ Para adicionar um ativo à sua página, selecione-o e arraste-o até o local des
 
 * Um componente existente do tipo apropriado.
    * Por exemplo, você pode arrastar um ativo de imagem para um componente de imagem.
-* A [espaço reservado](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) no sistema de parágrafo para criar um componente do tipo apropriado.
+* Um [espaço reservado](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) no sistema de parágrafo para criar um componente do tipo apropriado.
    * Por exemplo, você pode arrastar um ativo de imagem para o sistema de parágrafo para criar um componente de imagem.
 
 >[!NOTE]
@@ -163,7 +163,7 @@ Se você precisar fazer uma alteração rápida em um ativo, pode iniciar o [edi
 
 ## Árvore de conteúdo {#content-tree}
 
-A variável **Árvore de conteúdo** fornece uma visão geral de todos os componentes na página em uma hierarquia para que você possa ver rapidamente como a página é composta.
+A **Árvore de conteúdo** fornece uma visão geral de todos os componentes da página em uma hierarquia para que você possa ver rapidamente como a página é composta.
 
 A Árvore de conteúdo é uma guia dentro do painel lateral (junto com o navegador de componentes e de ativos). Para abrir (ou fechar) o painel lateral, use o ícone na parte superior esquerda da barra de ferramentas:
 
@@ -224,7 +224,7 @@ Abra o console e navegue até o recurso desejado, e abra **Referências** usando
 
 Selecione o tipo de referência apropriado para obter mais informações. Em determinadas situações, outras ações estarão disponíveis ao selecionar uma referência específica, incluindo:
 
-* **Links de entrada**, fornece uma lista de páginas que fazem referência à página, juntamente com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
+* **Links de Entrada**, fornece uma lista de páginas que fazem referência à página, juntamente com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
 
    * Isso só pode mostrar links estáticos, não links gerados dinamicamente; por exemplo, do componente List.
 
@@ -271,9 +271,9 @@ Além disso, as **Informações da página** podem fornecer acesso a análises e
 Há vários modos ao editar uma página o que permite diversas ações:
 
 * [Editar](/help/sites-cloud/authoring/fundamentals/editing-content.md): o modo a ser usado ao editar o conteúdo da página.
-* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - permite criar e editar o layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
+* [Layout](/help/sites-cloud/authoring/features/responsive-layout.md) - permite que você crie e edite seu layout responsivo dependente do dispositivo (se a página for baseada em um contêiner de layout)
 * [Direcionamento](/help/sites-cloud/authoring/personalization/targeted-content.md): aumente a relevância do conteúdo por meio do direcionamento e da medição em todos os canais.
-* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - permite a exibição do estado das páginas em um momento específico.
+* [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) - permite exibir um estado de páginas em um momento específico.
 * [Status da Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status): permite uma visão geral rápida do status da live copy e de quais componentes são, ou não, herdados.
 * [Modo de desenvolvedor](/help/implementing/developing/tools/developer-mode.md)
 * [Visualização](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages): usado para visualizar a página da forma que será exibida no ambiente de publicação ou navegar usando os links no conteúdo.
@@ -288,7 +288,7 @@ Você pode acessar esses itens usando os ícones no canto superior direito. O í
 >* Dependendo das características da página, alguns modos podem não estar disponíveis.
 >* O acesso a alguns modos exige as permissões/privilégios apropriados.
 >* O modo de desenvolvedor não está disponível em dispositivos móveis devido a restrições de espaço.
->* Existe uma [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre **Visualizar** e o modo selecionado no momento (por exemplo, **Editar**, **Layout** e assim por diante).
+>* Há um [atalho de teclado](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) para alternar entre a **Visualização** e o modo selecionado no momento (por exemplo, **Editar**, **Layout** e assim por diante).
 >
 
 ## Seleção de caminho {#path-selection}
@@ -315,7 +315,7 @@ O navegador de caminho é organizado da mesma maneira que a [exibição de colun
 
 ![Navegador de caminhos](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Após selecionar um recurso, a variável **Selecionar** no canto superior direito da caixa de diálogo se torna ativo. Selecione para confirmar a seleção ou **Cancelar** para suspender.
+* Depois que um recurso é selecionado, o botão **Selecionar** no canto superior direito da caixa de diálogo fica ativo. Selecione para confirmar a seleção ou **Cancelar** para anular.
 * Se o contexto permite a seleção de vários recursos, selecionar um recurso também ativa o botão **Selecionar**, mas, além disso, adiciona uma contagem do número de recursos selecionados no canto superior direito da janela. Clique no **X** ao lado do número para desmarcar tudo.
 * Ao navegar pela árvore, sua localização é refletida na navegação estrutural na parte superior da caixa de diálogo. Essas navegações estruturais também podem ser usadas para saltar rapidamente dentro da hierarquia de recursos.
 * A qualquer momento, você pode usar o campo de pesquisa na parte superior da caixa de diálogo. Clique no **X** no campo de pesquisa para limpar a pesquisa.

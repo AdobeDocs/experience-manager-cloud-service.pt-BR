@@ -23,19 +23,19 @@ ht-degree: 39%
 
 Siga a seção abaixo para entender considerações importantes na execução do Analisador de práticas recomendadas (BPA):
 
-* O relatório BPA é criado usando a saída do Adobe Experience Manager (AEM) [Detector de padrões](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html). A versão do Detector de padrões usada pelo BPA está incluída no pacote de instalação do BPA.
+* O relatório do BPA é criado usando a saída do [Detector de Padrões](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/pattern-detector.html) do Adobe Experience Manager (AEM). A versão do Detector de padrões usada pelo BPA está incluída no pacote de instalação do BPA.
 
-* O BPA só pode ser executado pelo **administrador** usuário ou um usuário no **administradores** grupo.
+* O BPA só pode ser executado pelo usuário **administrador** ou por um usuário do grupo **administradores**.
 
 * BPA é compatível em instâncias AEM com a versão 6.1 e superior.
 
   >[!NOTE]
-  >Consulte [Instalação no AEM 6.1](#installing-on-aem61) para requisitos especiais de instalação do BPA no AEM 6.1.
+  >Consulte [Instalação no AEM 6.1](#installing-on-aem61) para obter os requisitos especiais de instalação do BPA no AEM 6.1.
 
-* O BPA pode ser executado em qualquer ambiente, mas é preferível executá-lo em um *Estágio* ambiente.
+* O BPA pode ser executado em qualquer ambiente, mas é preferível executá-lo em um ambiente *Preparo*.
 
   >[!NOTE]
-  >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o BPA em um *Autor* que esteja o mais próximo possível do ambiente *Produção* nas áreas de personalizações, configurações, conteúdo e aplicativos do usuário. Como alternativa, ele pode ser executado em um clone do ambiente de *Autor* de produção.
+  >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o BPA em um ambiente *Author* o mais próximo possível do ambiente *Production* nas áreas de personalizações, configurações, conteúdo e aplicativos de usuários. Como alternativa, ele pode ser executado em um clone do ambiente de *Autor* de produção.
 
 * A geração de conteúdo do relatório do BPA pode levar um tempo significativo, de vários minutos a algumas horas. O tempo necessário depende muito do tamanho e da natureza do conteúdo do repositório do AEM, da versão do AEM e de outros fatores.
 
@@ -48,12 +48,12 @@ Siga a seção abaixo para entender considerações importantes na execução do
 >title="Baixar o Analisador de práticas recomendadas"
 >abstract="É possível baixar o Analisador de Práticas Recomendadas como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM)."
 
-É possível baixar o Analisador de Práticas Recomendadas como arquivo zip no Portal de distribuição de software. É possível instalar o pacote via [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) na instância do Adobe Experience Manager (AEM) de origem.
+É possível baixar o Analisador de Práticas Recomendadas como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md) na instância do Adobe Experience Manager (AEM) de origem.
 
 >[!NOTE]
->Baixe o Analisador de práticas recomendadas do [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) portal.
+>Baixe o Analisador de Práticas Recomendadas do portal [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
-## Conectividade do ambiente de origem {#source-environment-connectivity}
+## Conectividade de ambiente do Source {#source-environment-connectivity}
 
 A instância do AEM de origem pode estar sendo executada por trás de um firewall, em que ela só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para carregar automaticamente o relatório gerado pelo BPA para o Cloud Acceleration Manager com êxito, os seguintes endpoints precisam estar acessíveis na instância que está executando o AEM:
 
@@ -71,7 +71,7 @@ A instância do AEM de origem pode estar sendo executada por trás de um firewal
 
 Siga esta seção para saber como exibir o relatório do Analisador de práticas recomendadas:
 
-1. Selecione Adobe Experience Manager e navegue até ferramentas > **Operações** > **Analisador de práticas recomendadas**.
+1. Selecione o Adobe Experience Manager e navegue até Ferramentas > **Operações** > **Analisador de práticas recomendadas**.
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
@@ -79,14 +79,14 @@ Siga esta seção para saber como exibir o relatório do Analisador de práticas
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
-1. Forneça a chave de upload do BPA para fazer upload automaticamente do relatório do BPA gerado no [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Para obter a chave de upload, navegue até a [Análise de práticas recomendadas no CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
+1. Forneça a chave de carregamento de BPA para carregar automaticamente o relatório de BPA gerado no [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Para obter a chave de carregamento, navegue até a [Análise de práticas recomendadas no CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
->Você tem a opção de ignorar o upload automático para o CAM selecionando **Ignorar upload automático do relatório para CAM**. Se você optar por ignorar, será necessário baixar manualmente o relatório do BPA como um arquivo de valor separado por vírgulas e, em seguida, fazer upload do arquivo no CAM. É recomendável usar a opção de chave de upload, pois ela simplifica a operação.
+>Você tem a opção de ignorar o carregamento automático para o CAM selecionando **Ignorar carregamento automático do relatório para o CAM**. Se você optar por ignorar, será necessário baixar manualmente o relatório do BPA como um arquivo de valor separado por vírgulas e, em seguida, fazer upload do arquivo no CAM. É recomendável usar a opção de chave de upload, pois ela simplifica a operação.
 
-1. A variável **Gerar** fica ativo quando uma chave válida é fornecida. Clique em **Gerar** para iniciar a geração do relatório.
+1. O botão **Gerar** fica ativo quando uma chave válida é fornecida. Clique em **Gerar** para iniciar a geração do relatório.
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
@@ -96,41 +96,41 @@ Siga esta seção para saber como exibir o relatório do Analisador de práticas
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
->O carimbo de data e hora de expiração da chave de upload do BPA é exibido no canto superior direito. Você deve renovar a chave de upload do BPA quando estiver próxima de sua expiração. Para renovar a chave, clique em **Renovar** para navegar até o CAM e renovar a chave.
+>O carimbo de data e hora de expiração da chave de upload do BPA é exibido no canto superior direito. Você deve renovar a chave de upload do BPA quando estiver próxima de sua expiração. Para renovar a chave, você pode clicar em **Renovar** para navegar até o CAM para renovar a chave.
 
 1. Depois que o relatório do BPA é gerado, ele exibe um resumo e o número de conclusões em um formato tabular organizado pelo tipo de descoberta e o nível de importância. Para obter mais detalhes sobre uma descoberta específica, você pode clicar no número que corresponde ao tipo de descoberta na tabela.
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
-1. Você tem a opção de baixar o relatório em um formato CSV (valores separados por vírgula) clicando em **Exportar para CSV**. Você também tem a opção de visualizar o relatório no CAM clicando em **Ir para CAM**. Isso levará você ao [Análise de práticas recomendadas](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) página no CAM.
+1. Você tem a opção de baixar o relatório em um formato CSV (valores separados por vírgula) clicando em **Exportar para CSV**. Você também tem a opção de exibir o relatório no CAM clicando em **Ir para o CAM**. Você será direcionado à página [Análise de Práticas Recomendadas](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) no CAM.
 
-Você pode forçar o BPA a limpar seu cache e gerar novamente o relatório clicando em **Atualizar relatório**.
+Você pode forçar o BPA a limpar seu cache e gerar novamente o relatório clicando em **Atualizar Relatório**.
 
 ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 
-1. Se o cache expirar, você terá a opção de visualizar o último relatório gerado no CAM clicando em **Exibir o último relatório gerado no CAM** ou inicie uma nova geração de relatório clicando em **Gerar novo relatório**.
+1. Se o cache expirar, você terá a opção de visualizar o último relatório gerado no CAM clicando em **Exibir o último relatório gerado no CAM** ou iniciar uma nova geração de relatórios clicando em **Gerar novo relatório**.
 
 ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
 
 #### Utilização de filtros no relatório do Analisador de práticas recomendadas {#bpa-filters}
 
-Para filtrar descobertas relacionadas a [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), siga as etapas abaixo:
+Para filtrar os achados relacionados ao [ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/), siga as etapas abaixo:
 
-1. Clique no ícone do painel à esquerda no lado esquerdo da página. Isso exibirá a **Filtro ACS Commons**. Clique em **Filtro ACS Commons** para exibir a caixa de seleção interativa como mostrado na imagem abaixo.
+1. Clique no ícone do painel à esquerda no lado esquerdo da página. Isso exibirá o **Filtro ACS Commons**. Clique no **Filtro ACS Commons** para exibir a caixa de seleção interativa como mostrado na imagem abaixo.
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >O ícone do painel esquerdo será exibido somente se o BPA detectar o uso do ACS Commons.
 
-1. Desmarque a caixa para filtrar todos os achados relacionados ao ACS Commons. Você deve ver um **Contagem de Achados Filtrados** no relatório, conforme mostrado na imagem abaixo. O filtro também é aplicado ao relatório quando ele é exportado em um formato CSV (valores separados por vírgula).
+1. Desmarque a caixa para filtrar todos os achados relacionados ao ACS Commons. Você deve ver uma **Contagem de Achados Filtrados** no relatório, como mostrado na imagem abaixo. O filtro também é aplicado ao relatório quando ele é exportado em um formato CSV (valores separados por vírgula).
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >As conclusões do ACS Commons não devem ser ignoradas. Consulte [documentação](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar a compatibilidade com o AEM as a Cloud Service.
+   >As conclusões do ACS Commons não devem ser ignoradas. Consulte a [documentação](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar a compatibilidade com o AEM as a Cloud Service.
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -161,13 +161,13 @@ O formato do relatório é:
    * **Hora de expiração**: quando o cache do conteúdo do relatório expirará.
    * **Período de geração**: o tempo gasto pelo processo de geração de conteúdo do relatório.
    * **Contagem de conclusões**: o número total de conclusões incluídas no relatório.
-* **Visão geral do sistema**: Informações sobre o sistema AEM no qual o BPA foi executado.
+* **Visão geral do sistema**: informações sobre o sistema AEM no qual o BPA foi executado.
 * **Categorias de conclusão**: várias seções que abordam uma ou mais conclusões da mesma categoria. Cada seção inclui o seguinte: nome da categoria, subtipos, contagem e importância das conclusões, resumo, link para a documentação da categoria e informações de conclusões individuais.
 
 Um nível de importância é atribuído a cada conclusão para indicar uma prioridade aproximada de ação.
 
 >[!NOTE]
->Para saber mais sobre cada Categoria de descoberta, consulte [Categorias do Detector de Padrões](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=pt-BR).
+>Para saber mais sobre cada Categoria de Achados, consulte [Categorias do Detector de Padrões](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=pt-BR).
 
 Siga a tabela abaixo para entender os níveis de importância:
 
@@ -180,7 +180,7 @@ Siga a tabela abaixo para entender os níveis de importância:
 
 ## Interpretação do relatório CSV do Analisador de práticas recomendadas {#cra-csv-report}
 
-Ao clicar no botão **CSV** na instância do AEM, o formato CSV do relatório do Analisador de práticas recomendadas é criado a partir do cache de conteúdo e retornado ao navegador. Dependendo das configurações do navegador, esse relatório é baixado automaticamente como um arquivo com o nome padrão de `results.csv`.
+Quando você clica na opção **CSV** da sua instância do AEM, o formato CSV do relatório do Analisador de práticas recomendadas é criado a partir do cache de conteúdo e retornado ao seu navegador. Dependendo das configurações do navegador, esse relatório é baixado automaticamente como um arquivo com o nome padrão de `results.csv`.
 
 Se o cache tiver expirado, o relatório será gerado novamente antes que o arquivo CSV seja criado e baixado.
 
@@ -204,7 +204,7 @@ O valor &quot;\N&quot; em uma coluna para uma conclusão individual indica que n
 
 O BPA fornece uma interface HTTP que pode ser usada como alternativa à interface do usuário no AEM. A interface oferece suporte a comandos HEAD e GET. Ela pode ser usada para gerar o relatório do BPA e retorná-lo em um dos três formatos: JSON, CSV e valores separados por tabulação (TSV).
 
-Os seguintes URLs estão disponíveis para acesso HTTP, em que `<host>` é o nome do host e da porta, se necessário, do servidor no qual o BPA está instalado:
+As seguintes URLs estão disponíveis para acesso HTTP, em que `<host>` é o nome do host e da porta, se necessário, do servidor no qual o BPA está instalado:
 * `http://<host>/apps/best-practices-analyzer/analysis/report.json` para formato JSON
 * `http://<host>/apps/best-practices-analyzer/analysis/report.csv` para formato CSV
 * `http://<host>/apps/best-practices-analyzer/analysis/report.tsv` para formato TSV
@@ -215,7 +215,7 @@ A interface HTTP pode ser usada em diversos métodos.
 
 Uma maneira simples é abrir uma guia do navegador no mesmo navegador no qual você já fez logon no AEM como administrador. Você pode digitar o URL na guia do navegador e fazer com que os resultados sejam exibidos ou baixados pelo navegador.
 
-Você também pode usar uma ferramenta de linha de comando, como `curl` ou `wget` e qualquer aplicativo cliente HTTP. Quando não estiver usando uma guia do navegador com uma sessão autenticada, você deve fornecer um nome de usuário administrativo e uma senha como parte do comentário.
+Você também pode usar uma ferramenta de linha de comando como `curl` ou `wget` e qualquer aplicativo cliente HTTP. Quando não estiver usando uma guia do navegador com uma sessão autenticada, você deve fornecer um nome de usuário administrativo e uma senha como parte do comentário.
 
 Este é um exemplo de como isso pode ser feito:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.
@@ -230,11 +230,11 @@ Os seguintes cabeçalhos HTTP são usados por essa interface:
 
 Os seguintes parâmetros de consulta HTTP estão disponíveis como conveniência para quando cabeçalhos HTTP não puderem ser usados com facilidade:
 
-* `max-age` (número, opcional): especifica o tempo de vida da atualização do cache em segundos. Esse número deve ser 0 ou maior. O tempo de vida da atualização padrão é de 86.400 segundos. Sem esse parâmetro ou o cabeçalho correspondente, um novo cache é usado para atender a solicitações por 24 horas, momento em que o cache deve ser regenerado. Usar `max-age=0` forçará a limpeza do cache e iniciará uma regeneração do relatório, usando o tempo de vida de atualização diferente de zero anterior para o cache recém-gerado.
-* `respond-async` (booleano, opcional): especifica que a resposta deve ser fornecida de forma assíncrona. Usar `respond-async=true` quando o cache estiver obsoleto, fará com que o servidor retorne uma resposta de `202 Accepted` sem esperar que o cache seja atualizado e que o relatório seja gerado. Se o cache estiver atualizado, esse parâmetro não terá efeito. O valor padrão é `false`. Sem esse parâmetro ou o cabeçalho correspondente, o servidor responderá de forma síncrona, o que pode exigir uma quantidade significativa de tempo e um ajuste ao tempo máximo de resposta do cliente HTTP.
-* `may-refresh-cache` (booleano, opcional): especifica que o servidor pode atualizar o cache em resposta a uma solicitação se o cache atual estiver vazio, obsoleto ou prestes a ficar obsoleto. Se `may-refresh-cache=true`ou, se não for especificado, o servidor poderá iniciar uma tarefa em segundo plano que chamará o Detector de padrões e atualizará o cache. Se `may-refresh-cache=false` então, o servidor não iniciará nenhuma tarefa de atualização que teria sido feita se o cache estivesse vazio ou obsoleto, caso em que o relatório estaria vazio. Qualquer tarefa de atualização que já esteja em andamento não será afetada por esse parâmetro.
-* `return-minimal` (booleano, opcional): especifica que a resposta do servidor deve incluir apenas o status que contém a indicação de progresso e o status do cache no formato JSON. Se `return-minimal=true`, o corpo da resposta será limitado ao objeto de status. Se `return-minimal=false`ou, se não for especificado, uma resposta completa será fornecida.
-* `log-findings` (booleano, opcional): especifica que o servidor deve registrar o conteúdo do cache quando ele é criado ou atualizado pela primeira vez. Cada descoberta do cache é registrada como uma cadeia de caracteres JSON. Esse registro só ocorrerá se `log-findings=true` e a solicitação gera um novo cache.
+* `max-age` (número, opcional): especifica o tempo de vida da atualização do cache em segundos. Esse número deve ser 0 ou maior. O tempo de vida da atualização padrão é de 86.400 segundos. Sem esse parâmetro ou o cabeçalho correspondente, um novo cache é usado para atender a solicitações por 24 horas, momento em que o cache deve ser regenerado. O uso de `max-age=0` forçará a limpeza do cache e iniciará uma regeneração do relatório, usando o tempo de vida de atualização diferente de zero anterior para o cache recém-gerado.
+* `respond-async` (booleano, opcional): especifica que a resposta deve ser fornecida de forma assíncrona. Usar `respond-async=true` quando o cache estiver obsoleto fará com que o servidor retorne uma resposta de `202 Accepted` sem esperar a atualização do cache e a geração do relatório. Se o cache estiver atualizado, esse parâmetro não terá efeito. O valor padrão é `false`. Sem esse parâmetro ou o cabeçalho correspondente, o servidor responderá de forma síncrona, o que pode exigir uma quantidade significativa de tempo e um ajuste ao tempo máximo de resposta do cliente HTTP.
+* `may-refresh-cache` (booleano, opcional): especifica que o servidor pode atualizar o cache em resposta a uma solicitação se o cache atual estiver vazio, obsoleto ou prestes a ser obsoleto. Se `may-refresh-cache=true` ou se não for especificado, o servidor poderá iniciar uma tarefa em segundo plano que chamará o Detector de Padrões e atualizará o cache. Se `may-refresh-cache=false`, o servidor não iniciará nenhuma tarefa de atualização que teria sido realizada se o cache estivesse vazio ou obsoleto, caso em que o relatório está vazio. Qualquer tarefa de atualização que já esteja em andamento não será afetada por esse parâmetro.
+* `return-minimal` (booleano, opcional): especifica que a resposta do servidor deve incluir apenas o status contendo a indicação de progresso e o status do cache no formato JSON. Se `return-minimal=true`, o corpo da resposta será limitado ao objeto de status. Se `return-minimal=false` ou se não for especificado, uma resposta completa será fornecida.
+* `log-findings` (booleano, opcional): especifica que o servidor deve registrar o conteúdo do cache quando ele é compilado ou atualizado pela primeira vez. Cada descoberta do cache é registrada como uma cadeia de caracteres JSON. Este log só ocorrerá se `log-findings=true` e a solicitação gerarem um novo cache.
 
 Quando um cabeçalho HTTP e um parâmetro de consulta correspondente estiverem presentes, o parâmetro de consulta terá prioridade.
 
@@ -247,9 +247,9 @@ Depois que uma solicitação é feita, o cliente não precisa permanecer ativo p
 
 Os seguintes valores de resposta são possíveis:
 
-* `200 OK`: indica que a resposta contém conclusões do Detector de padrões que foram geradas dentro do tempo de vida da atualização do cache.
-* `202 Accepted`: usado para indicar que o cache está obsoleto. Quando `respond-async=true` e `may-refresh-cache=true` esta resposta indica que uma tarefa de atualização está em andamento. Quando `may-refresh-cache=false` essa resposta simplesmente indica que o cache está obsoleto.
-* `400 Bad Request`: indica que houve um erro com a solicitação. Uma mensagem no formato de Detalhes do problema (consulte [RFC 7807](https://tools.ietf.org/html/rfc7807)) fornece mais detalhes.
+* `200 OK`: indica que a resposta contém conclusões do Detector de Padrões que foram geradas dentro do tempo de vida da atualização do cache.
+* `202 Accepted`: usado para indicar que o cache está obsoleto. Quando `respond-async=true` e `may-refresh-cache=true` esta resposta indica que uma tarefa de atualização está em andamento. Quando `may-refresh-cache=false` esta resposta simplesmente indica que o cache está obsoleto.
+* `400 Bad Request`: indica que houve um erro com a solicitação. Uma mensagem no formato de Detalhes do Problema (consulte [RFC 7807](https://tools.ietf.org/html/rfc7807)) fornece mais detalhes.
 * `401 Unauthorized`: indica que a solicitação não foi autorizada.
 * `500 Internal Server Error`: indica que ocorreu um erro de servidor interno. Uma mensagem no formato de Detalhes do problema fornece mais detalhes.
 * `503 Service Unavailable`: indica que o servidor está ocupado com outra resposta e não pode atender a essa solicitação em tempo hábil. Isso só pode ocorrer quando forem feitas solicitações síncronas. Uma mensagem no formato de Detalhes do problema fornece mais detalhes.
@@ -267,7 +267,7 @@ O valor dessa propriedade é o tempo de vida do cache em segundos. Um administra
 
 ### Instalação no AEM 6.1 {#installing-on-aem61}
 
-O BPA utiliza uma conta de usuário de serviço do sistema chamada `repository-reader-service` para executar o Detector de padrões. Essa conta está disponível no AEM 6.2 e nas versões posteriores. No AEM 6.1, essa conta deve ser criada *antes de* instalação do BPA, realizando as seguintes etapas:
+O BPA usa uma conta de usuário do serviço do sistema chamada `repository-reader-service` para executar o Detector de Padrões. Essa conta está disponível no AEM 6.2 e nas versões posteriores. No AEM 6.1, essa conta deve ser criada *antes* da instalação do BPA, executando as seguintes etapas:
 
 1. Siga as instruções em [Criar um novo usuário de serviço](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security-service-users.html#creating-a-new-service-user) para criar um usuário. Defina a UserID como `repository-reader-service`, deixe o Caminho intermediário vazio e clique na marca de seleção verde.
 

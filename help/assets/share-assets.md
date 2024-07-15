@@ -1,6 +1,6 @@
 ---
 title: Distribuir e compartilhar ativos, pastas e coleções
-description: Distribua seus ativos digitais usando métodos como compartilhar como um link, baixar e pelo [!DNL Brand Portal], [!DNL desktop app], e [!DNL Asset Link].
+description: Distribua seus ativos digitais usando métodos como compartilhar como link, baixar e via [!DNL Brand Portal], [!DNL desktop app] e [!DNL Asset Link].
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
@@ -18,11 +18,11 @@ ht-degree: 2%
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
-[!DNL Adobe Experience Manager Assets] O permite compartilhar ativos, pastas e coleções com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Use os métodos a seguir para compartilhar ativos do [!DNL Experience Manager Assets] as a [!DNL Cloud Service]:
+O [!DNL Adobe Experience Manager Assets] permite que você compartilhe ativos, pastas e coleções com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Use os métodos a seguir para compartilhar ativos de [!DNL Experience Manager Assets] como [!DNL Cloud Service]:
 
 * [Compartilhar como um link](#sharelink).
-* [Baixar ativos](/help/assets/download-assets-from-aem.md) e compartilhar separadamente.
-* Compartilhar usando [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR).
+* [Baixe ativos](/help/assets/download-assets-from-aem.md) e compartilhe separadamente.
+* Compartilhe usando o [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR).
 * Compartilhar usando [[!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html).
 * Compartilhar usando [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
 
@@ -34,29 +34,29 @@ Você precisa de privilégios de Administrador para [definir configurações par
 
 [!DNL Experience Manager Assets] permite definir as configurações padrão de compartilhamento de link.
 
-1. Clique em [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuração de ativos]** > **[!UICONTROL Compartilhamento de link]**.
+1. Clique no logotipo [!DNL Experience Manager] e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Configuração do Assets]** > **[!UICONTROL Compartilhamento de Links]**.
 1. Configurações iniciais:
 
-   * **Incluir originais:**
+   * **Incluir Originais:**
 
-      * Selecionar `Select Include Originals` para selecionar o `Include Originals` opção por padrão na caixa de diálogo compartilhamento de links.
-      * Selecione como `Include Originals` será apresentada na caixa de diálogo Compartilhamento de links. [!UICONTROL Editável] permite que o usuário altere as configurações definidas aqui em Configurações iniciais. Com `Read-only` a configuração é exibida, mas não pode ser modificada. `Hidden` oculta a configuração e usa o valor configurado aqui nas Configurações iniciais.
+      * Selecione `Select Include Originals` para selecionar a opção `Include Originals` por padrão na caixa de diálogo de compartilhamento de links.
+      * Selecione como a opção `Include Originals` é apresentada a você na caixa de diálogo Compartilhamento de links. [!UICONTROL Editável] permite que o usuário altere as configurações definidas aqui nas Configurações iniciais. Com `Read-only` a configuração é exibida, mas não pode ser modificada. `Hidden` oculta a configuração e usa o valor configurado aqui nas Configurações iniciais.
    * **Incluir representações:**
-      * Selecionar `Select Include Renditions` opção para selecionar a variável `Include Renditions` opção por padrão na caixa de diálogo compartilhamento de links.
-      * Selecione como `Include Renditions` será apresentada na caixa de diálogo Compartilhamento de links. [!UICONTROL Editável] permite que o usuário altere as configurações definidas aqui em Configurações iniciais. Com `Read-only` a configuração é exibida, mas não pode ser modificada. `Hidden` oculta a configuração e usa o valor configurado aqui nas Configurações iniciais.
+      * Selecione a opção `Select Include Renditions` para selecionar a opção `Include Renditions` por padrão na caixa de diálogo de compartilhamento de links.
+      * Selecione como a opção `Include Renditions` é apresentada a você na caixa de diálogo Compartilhamento de links. [!UICONTROL Editável] permite que o usuário altere as configurações definidas aqui nas Configurações iniciais. Com `Read-only` a configuração é exibida, mas não pode ser modificada. `Hidden` oculta a configuração e usa o valor configurado aqui nas Configurações iniciais.
 
-1. Especifique o período de validade padrão para o link na `Validity Period` no campo `Expiration date` seção.
+1. Especifique o período de validade padrão para o link no campo `Validity Period` na seção `Expiration date`.
 
-1. **[!UICONTROL Compartilhamento de link]** botão na barra de ações:
-   * Todos os usuários com `jcr:modifyAccessControl` as permissões podem exibir a [!UICONTROL Compartilhamento de link] opção. É visível para todos os administradores por padrão. A variável [!UICONTROL Compartilhamento de link] fica visível para todos, por padrão. Você pode configurar o para exibir essa opção somente para os grupos definidos ou também pode negar essa opção para grupos específicos. Selecionar `Allow only for groups` se quiser permitir que grupos específicos exibam a variável `Share Link` opção. Selecionar `Deny from groups` para negar o `Share Link` de grupos específicos. Depois de selecionar qualquer uma dessas opções, especifique os nomes dos grupos usando `Select Groups` para adicionar os nomes de grupo que você precisa permitir ou negar.
+1. Botão **[!UICONTROL Compartilhar link]** na barra de ações:
+   * Todos os usuários com permissões `jcr:modifyAccessControl` podem exibir a opção [!UICONTROL Compartilhamento de links]. É visível para todos os administradores por padrão. O botão [!UICONTROL Compartilhamento de links] está visível para todos, por padrão. Você pode configurar o para exibir essa opção somente para os grupos definidos ou também pode negar essa opção para grupos específicos. Selecione `Allow only for groups` se quiser permitir que grupos específicos exibam a opção `Share Link`. Selecione `Deny from groups` para negar a opção `Share Link` a grupos específicos. Depois de selecionar qualquer uma dessas opções, especifique os nomes de grupo usando o campo `Select Groups` para adicionar os nomes de grupo que você precisa permitir ou negar.
 
-Para configurações relacionadas à Configuração de email, visite [Documentação do serviço de e-mail](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+Para configurações relacionadas à Configuração de email, visite [Documentação do Serviço de Email](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
 
-![Configurar serviço de e-mail](/help/assets/assets/config-email-service.png)
+![Configurar Serviço de Email](/help/assets/assets/config-email-service.png)
 
 ## Compartilhar ativos como um link {#sharelink}
 
-O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar os recursos para terceiros, profissionais de marketing e outros [!DNL Experience Manager] usuários. A funcionalidade permite que usuários anônimos acessem e baixem os ativos compartilhados com eles. Ao baixar ativos de um link compartilhado, [!DNL Experience Manager Assets] O usa um serviço assíncrono que oferece download mais rápido e ininterrupto. Os ativos a serem baixados são enfileirados em segundo plano em arquivos ZIP de tamanho de arquivo gerenciável. Para downloads grandes, o download é agrupado em vários arquivos de 100 GB por tamanho de arquivo.
+O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar os recursos para participantes externos, profissionais de marketing e outros usuários do [!DNL Experience Manager]. A funcionalidade permite que usuários anônimos acessem e baixem os ativos compartilhados com eles. Ao baixar ativos de um link compartilhado, o [!DNL Experience Manager Assets] usa um serviço assíncrono que oferece download mais rápido e ininterrupto. Os ativos a serem baixados são enfileirados em segundo plano em arquivos ZIP de tamanho de arquivo gerenciável. Para downloads grandes, o download é agrupado em vários arquivos de 100 GB por tamanho de arquivo.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -65,14 +65,14 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 >[!NOTE]
 >
 >* Você precisa da permissão Editar ACL na pasta ou no ativo que deseja compartilhar como um link.
->* [Ativar emails de saída](/help/implementing/developing/introduction/development-guidelines.md#sending-email) antes de compartilhar um link com os usuários.
+>* [Habilite emails de saída](/help/implementing/developing/introduction/development-guidelines.md#sending-email) antes de compartilhar um link com os usuários.
 
 Há duas maneiras de compartilhar os ativos usando a funcionalidade de compartilhamento de link:
 
-1. Gerar um link compartilhado, [copiar e compartilhar o link do ativo](#copy-and-share-assets-link) com outros usuários.
-1. Gerar um link compartilhado e [compartilhar o link do ativo por email](#share-assets-link-through-email). Você pode modificar os valores padrão, como data e hora de expiração, e permitir o download dos ativos originais e suas representações. Você pode enviar emails para vários usuários adicionando seus endereços de email.
+1. Gere um link compartilhado, [copie e compartilhe o link do ativo](#copy-and-share-assets-link) com outros usuários.
+1. Gere um link compartilhado e [compartilhe o link do ativo por email](#share-assets-link-through-email). Você pode modificar os valores padrão, como data e hora de expiração, e permitir o download dos ativos originais e suas representações. Você pode enviar emails para vários usuários adicionando seus endereços de email.
 
-   ![Caixa de diálogo Compartilhamento de link](assets/share-link.png)
+   ![Caixa de diálogo Compartilhamento de Links](assets/share-link.png)
 
 Em ambos os casos, você pode modificar os valores padrão, como data e hora de expiração, e permitir o download dos ativos originais e suas representações.
 
@@ -80,12 +80,12 @@ Em ambos os casos, você pode modificar os valores padrão, como data e hora de 
 
 Para compartilhar ativos como um URL público:
 
-1. Efetue logon no [!DNL Experience Manager Assets] e navegue até **[!UICONTROL Arquivos]**.
+1. Faça logon em [!DNL Experience Manager Assets] e navegue até **[!UICONTROL Arquivos]**.
 1. Selecione os ativos ou a pasta que contém os ativos. Na barra de ferramentas, clique em **[!UICONTROL Compartilhar link]**.
-1. A variável **[!UICONTROL Compartilhamento de link]** aparece uma caixa de diálogo que contém um link de ativo gerado automaticamente na **[!UICONTROL Compartilhar link]** campo.
+1. A caixa de diálogo **[!UICONTROL Compartilhamento de links]** é exibida e contém um link de ativo gerado automaticamente no campo **[!UICONTROL Compartilhar link]**.
 1. Defina a data de expiração do link compartilhado conforme necessário.
-1. Em **[!UICONTROL Configurações de link]**, marcar ou desmarcar `Include Originals` ou `Include Renditions` para incluir ou excluir qualquer um dos dois. É obrigatório escolher pelo menos uma opção.
-1. Os nomes dos ativos selecionados aparecem na coluna direita do [!DNL Share Link] caixa de diálogo.
+1. Em **[!UICONTROL Configurações de Link]**, marque ou desmarque `Include Originals` ou `Include Renditions` para incluir ou excluir ambos. É obrigatório escolher pelo menos uma opção.
+1. Os nomes do Assets selecionado aparecem na coluna direita da caixa de diálogo [!DNL Share Link].
 1. Copie o link do ativo e compartilhe-o com os usuários.
 
 ### Compartilhar link de ativo por meio de notificação por email {#share-assets-link-through-email}
@@ -93,26 +93,26 @@ Para compartilhar ativos como um URL público:
 Para compartilhar ativos por email:
 
 1. Selecione os ativos ou a pasta que contém os ativos. Na barra de ferramentas, clique em **[!UICONTROL Compartilhar link]**.
-1. A variável **[!UICONTROL Compartilhamento de link]** aparece uma caixa de diálogo que contém um link de ativo gerado automaticamente na **[!UICONTROL Compartilhar link]** campo.
+1. A caixa de diálogo **[!UICONTROL Compartilhamento de links]** é exibida e contém um link de ativo gerado automaticamente no campo **[!UICONTROL Compartilhar link]**.
 
-   * Na caixa de endereço de email, digite o endereço de email do usuário com quem deseja compartilhar o link. Você pode compartilhar o link com vários usuários. Se o usuário for membro da organização, selecione o endereço de email nas sugestões exibidas na lista suspensa. No campo de texto endereço de email, digite o endereço de email do usuário com quem deseja compartilhar o link e clique em [!UICONTROL Enter]. Você pode compartilhar o link com vários usuários.
+   * Na caixa de endereço de email, digite o endereço de email do usuário com quem deseja compartilhar o link. Você pode compartilhar o link com vários usuários. Se o usuário for membro da organização, selecione o endereço de email nas sugestões exibidas na lista suspensa. No campo de texto endereço de email, digite o endereço de email do usuário com quem deseja compartilhar o link e clique em [!UICONTROL Inserir]. Você pode compartilhar o link com vários usuários.
 
-   * No **[!UICONTROL Assunto]** digite um assunto para especificar a finalidade dos ativos compartilhados.
-   * No **[!UICONTROL Mensagem]** digite uma mensagem, se necessário.
-   * No **[!UICONTROL Expiração]** use o seletor de datas para especificar uma data e hora de expiração para o link.
-   * Ativar o **[!UICONTROL Permitir download do arquivo original]** para permitir que os recipients baixem a representação original.
+   * Na caixa **[!UICONTROL Assunto]**, digite um assunto para especificar a finalidade dos ativos compartilhados.
+   * Na caixa **[!UICONTROL Mensagem]**, digite uma mensagem, se necessário.
+   * No campo **[!UICONTROL Expiration]**, use o seletor de datas para especificar uma data e hora de expiração para o link.
+   * Habilite a caixa de seleção **[!UICONTROL Permitir download do arquivo original]** para permitir que os destinatários baixem a representação original.
 
 1. Clique em **[!UICONTROL Compartilhar]**. Uma mensagem confirma que o link é compartilhado com os usuários. Os usuários recebem um email contendo o link compartilhado.
 
-   ![Email de compartilhamento de link](assets/link-sharing-email-notification.png)
+   ![Email de compartilhamento de links](assets/link-sharing-email-notification.png)
 
 ### Personalizar modelo de email {#customize-email-template}
 
-Um modelo bem projetado transmite profissionalismo e competência, melhorando a credibilidade da sua mensagem e da sua organização. A variável [!DNL Adobe Experience Manager] permite personalizar o template de email, que é enviado aos recipients que recebem o email contendo o link compartilhado. Além disso, os modelos de email personalizados permitem personalizar o conteúdo de email direcionando os recipients com nomes e fazendo referência a detalhes específicos relevantes. Esse toque pessoal pode fazer com que o recipient se sinta valorizado e aumente o engajamento. Além disso, um modelo personalizado garante que seus emails sejam consistentes com a identidade da marca, incluindo logotipos, cores e fontes. A consistência reforça o reconhecimento da marca e a confiança entre os recipients.
+Um modelo bem projetado transmite profissionalismo e competência, melhorando a credibilidade da sua mensagem e da sua organização. O [!DNL Adobe Experience Manager] permite personalizar o modelo de email, que é enviado aos recipients que recebem o email contendo o link compartilhado. Além disso, os modelos de email personalizados permitem personalizar o conteúdo de email direcionando os recipients com nomes e fazendo referência a detalhes específicos relevantes. Esse toque pessoal pode fazer com que o recipient se sinta valorizado e aumente o engajamento. Além disso, um modelo personalizado garante que seus emails sejam consistentes com a identidade da marca, incluindo logotipos, cores e fontes. A consistência reforça o reconhecimento da marca e a confiança entre os recipients.
 
 #### Formato de um modelo de email personalizado {#format-of-custom-email-template}
 
-O template de email pode ser personalizado usando texto sem formatação ou HTML. O link do modelo editável padrão pode ser encontrado em `/libs/settings/dam/adhocassetshare/en.txt`. É possível substituir o modelo criando o arquivo `/apps/settings/dam/adhocassetshare/en.txt`. Você pode modificar o template de email quantas vezes forem necessárias.
+O template de email pode ser personalizado usando texto sem formatação ou HTML. O link do modelo editável padrão pode ser encontrado em `/libs/settings/dam/adhocassetshare/en.txt`. Você pode substituir o modelo criando o arquivo `/apps/settings/dam/adhocassetshare/en.txt`. Você pode modificar o template de email quantas vezes forem necessárias.
 
 | Espaços reservados | Descrição |
 |---|-----|
@@ -146,21 +146,21 @@ subject: ${emailSubject}
 
 Qualquer usuário com acesso ao link de ativo compartilhado pode baixar os ativos agrupados em uma pasta zip. O processo de download é o mesmo, quer um usuário esteja acessando o link do ativo copiado ou usando o link do ativo compartilhado por email.
 
-* Clique no link do ativo ou cole o URL no seu navegador. A variável [!UICONTROL Compartilhamento de link] é aberta, onde você pode alternar para a variável [!UICONTROL Exibição de cartão] ou [!UICONTROL Exibição de lista].
+* Clique no link do ativo ou cole o URL no seu navegador. A interface [!UICONTROL Compartilhamento de Link] é aberta, e você pode alternar para a [!UICONTROL Exibição de Cartão] ou a [!UICONTROL Exibição de Lista].
 
-* No [!UICONTROL Exibição de cartão], você pode passar o mouse sobre o ativo compartilhado ou a pasta de ativos compartilhados para selecionar os ativos ou colocá-los na fila para download.
+* Na [!UICONTROL Exibição de cartão], você pode passar o mouse sobre o ativo compartilhado ou a pasta de ativos compartilhados para selecionar os ativos ou colocá-los na fila para download.
 
-* Por padrão, a interface mostra a variável **[!UICONTROL Baixar caixa de entrada]** opção. Ele reflete a lista de todos os ativos ou pastas compartilhados que estão na fila para download, juntamente com seu status.
+* Por padrão, a interface mostra a opção **[!UICONTROL Baixar Caixa de Entrada]**. Ele reflete a lista de todos os ativos ou pastas compartilhados que estão na fila para download, juntamente com seu status.
 
-* Ao selecionar os ativos ou a pasta, uma **[!UICONTROL Download da fila]** será exibida na tela. Clique em **[!UICONTROL Download da fila]** opção para iniciar o processo de download.
+* Ao selecionar os ativos ou a pasta, uma opção **[!UICONTROL Download da fila]** é exibida na tela. Clique na opção **[!UICONTROL Download da Fila]** para iniciar o processo de download.
 
   ![Download da fila](assets/queue-download.png)
 
-* Enquanto o arquivo de download estiver preparado, clique no link **[!UICONTROL Baixar caixa de entrada]** opção para visualizar o status do download. Para downloads grandes, clique no link **[!UICONTROL Atualizar]** botão para atualizar o status.
+* Enquanto o arquivo de download estiver preparado, clique na opção **[!UICONTROL Baixar caixa de entrada]** para exibir o status do download. Para downloads grandes, clique no botão **[!UICONTROL Atualizar]** para atualizar o status.
 
   ![Baixar caixa de entrada](assets/link-sharing-download-inbox.png)
 
-* Quando o processamento estiver concluído, clique no link **[!UICONTROL Baixar]** botão para baixar o arquivo zip.
+* Após concluir o processamento, clique no botão **[!UICONTROL Baixar]** para baixar o arquivo zip.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -240,15 +240,15 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Baixar ativos e compartilhar separadamente {#download-and-share-assets}
 
-Os usuários podem baixar os ativos necessários e compartilhá-los fora do [!DNL Experience Manager]. Para obter mais informações, consulte [como pesquisar ativos](/help/assets/search-assets.md), [como baixar ativos](/help/assets/download-assets-from-aem.md), e [como baixar coleções](manage-collections.md#download-a-collection)
+Os usuários podem baixar os ativos necessários e compartilhá-los fora do [!DNL Experience Manager]. Para obter mais informações, consulte [como pesquisar ativos](/help/assets/search-assets.md), [como baixar ativos](/help/assets/download-assets-from-aem.md) e [como baixar coleções](manage-collections.md#download-a-collection)
 
 ## Compartilhar ativos com profissionais criativos {#share-with-creatives}
 
 Os profissionais de marketing e usuários de linha de negócios podem compartilhar facilmente ativos aprovados com seus profissionais de criação usando o,
 
-* **aplicativo de desktop do Experience Manager**: o aplicativo funciona no Windows e no Mac. Consulte [visão geral do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR). Para saber como qualquer usuário autorizado do desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários de desktop podem criar ativos e compartilhá-los com seus homólogos que são usuários de Experience Manager, por exemplo, fazendo upload de novas imagens. Consulte [fazer upload de ativos usando um aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **aplicativo de desktop Experience Manager**: o aplicativo funciona no Windows e no Mac. Consulte [visão geral do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR). Para saber como qualquer usuário autorizado do desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários de desktop podem criar ativos e compartilhá-los com seus homólogos que são usuários de Experience Manager, por exemplo, fazendo upload de novas imagens. Consulte [carregar ativos usando um aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
 
-* **Adobe Asset Link**: os profissionais criativos podem pesquisar e usar ativos diretamente de dentro do [!DNL Adobe InDesign], [!DNL Adobe Illustrator], e [!DNL Adobe Photoshop].
+* **Link do ativo Adobe**: os profissionais de criação podem pesquisar e usar ativos diretamente do [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop].
 
 ## Configurar compartilhamento de ativos {#configure-sharing}
 
@@ -258,11 +258,11 @@ As diferentes opções para compartilhar os ativos exigem configuração especí
 
 <!-- TBD: Web Console is not there so how to configure Day CQ email service? Or is it not required now? -->
 
-Para gerar o URL para ativos que você deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de link. Usuários com privilégios de administrador ou com permissões de leitura em `/var/dam/share` Os locais podem exibir os links compartilhados com eles. O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para terceiros sem que eles precisem primeiro fazer logon no [!DNL Assets].
+Para gerar o URL para ativos que você deseja compartilhar com os usuários, use a caixa de diálogo Compartilhamento de link. Usuários com privilégios de administrador ou com permissões de leitura no local `/var/dam/share` podem exibir os links compartilhados com eles. O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar recursos para terceiros sem que eles precisem primeiro fazer logon no [!DNL Assets].
 
 >[!NOTE]
 >
->Se quiser compartilhar links da instância do Autor com entidades externas, exponha apenas os seguintes URLs para `GET` solicitações. Bloqueie outros URLs para garantir que sua instância de autor esteja segura.
+>Se quiser compartilhar links da instância do Autor com entidades externas, exponha apenas as seguintes URLs para solicitações `GET`. Bloqueie outros URLs para garantir que sua instância de autor esteja segura.
 >
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
@@ -295,13 +295,13 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Habilitar ações de desktop para usar com o aplicativo de desktop {#desktop-actions}
 
-De dentro do [!DNL Assets] em um navegador, você pode explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas de ações do desktop e, para ativá-las, consulte [ativar ações da área de trabalho no [!DNL Assets] interface da web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+A partir da interface de usuário do [!DNL Assets] em um navegador, você pode explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas de ações de área de trabalho e, para habilitá-las, consulte [habilitar ações de área de trabalho na [!DNL Assets] interface da Web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
 
-![Ativar ações da área de trabalho para usar como atalho ao trabalhar com o aplicativo da área de trabalho](assets/enable_desktop_actions.png)
+![Habilitar ações da área de trabalho para usar como atalho ao trabalhar com o aplicativo da área de trabalho](assets/enable_desktop_actions.png)
 
-### Configurações a serem usadas [!DNL Adobe Asset Link] {#configure-asset-link}
+### Configurações para usar [!DNL Adobe Asset Link] {#configure-asset-link}
 
-O Adobe Asset Link simplifica a colaboração entre profissionais de criação e marketing no processo de criação de conteúdo. Ele conecta [!DNL Adobe Experience Manager Assets] com [!DNL Creative Cloud] aplicativos de desktop, [!DNL Adobe InDesign], [!DNL Adobe Photoshop], e [!DNL Adobe Illustrator]. A variável [!DNL Adobe Asset Link] permite que os criadores acessem e modifiquem o conteúdo armazenado em [!DNL Assets] sem sair dos aplicativos criativos com os quais estão mais familiarizados.
+O Adobe Asset Link simplifica a colaboração entre profissionais de criação e marketing no processo de criação de conteúdo. Ele conecta o [!DNL Adobe Experience Manager Assets] aos aplicativos de desktop [!DNL Creative Cloud], [!DNL Adobe InDesign], [!DNL Adobe Photoshop] e [!DNL Adobe Illustrator]. O painel [!DNL Adobe Asset Link] permite que usuários de criação acessem e modifiquem o conteúdo armazenado em [!DNL Assets] sem sair dos aplicativos de criação com os quais estão mais familiarizados.
 
 Consulte [como configurar [!DNL Assets] para usá-lo com [!DNL Adobe Asset Link]](https://helpx.adobe.com/br/enterprise/using/configure-aem-assets-for-asset-link.html).
 
@@ -309,8 +309,8 @@ Consulte [como configurar [!DNL Assets] para usá-lo com [!DNL Adobe Asset Link]
 
 * As pastas ou coleções de ativos que contêm um espaço em branco em seu nome não podem ser compartilhadas.
 * Se os usuários não conseguirem baixar os ativos compartilhados, verifique com o administrador do Experience Manager quais são os limites de download. O valor padrão é 100 MB.
-* Para que um usuário visualize um vídeo que é compartilhado usando o compartilhamento de link, o vídeo deve ter uma representação de vídeo estática disponível em `/jcr:content/renditions` localização no nó do vídeo no repositório. A pré-visualização não depende da disponibilidade de um [!DNL Dynamic Media] representação.
-* Ao baixar um ativo de vídeo por compartilhamento de link, a variável [!DNL Dynamic Media] as representações não estão incluídas no arquivo baixado.
+* Para que um usuário visualize um vídeo que é compartilhado usando o compartilhamento de link, o vídeo deve ter uma representação de vídeo estática disponível no local `/jcr:content/renditions` no nó do vídeo no repositório. A visualização não depende da disponibilidade de uma representação [!DNL Dynamic Media].
+* Ao baixar um ativo de vídeo por meio do compartilhamento de link, as [!DNL Dynamic Media] representações não são incluídas no arquivo baixado.
 
 <!--
 * If you cannot send email with links to shared assets or if the other users cannot receive your email, check with your Experience Manager administrator if the [email service](/help/assets/configure-asset-sharing.md#configmailservice) is configured or not. 
@@ -334,5 +334,5 @@ Consulte [como configurar [!DNL Assets] para usá-lo com [!DNL Adobe Asset Link]
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 

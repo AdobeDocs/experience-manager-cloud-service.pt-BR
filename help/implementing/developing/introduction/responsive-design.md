@@ -37,7 +37,7 @@ Consulte os seguintes tópicos para obter informações sobre como implementar u
 * [Grades fluídas](#developing-a-fluid-grid)
 * [Imagens adaptáveis](#using-adaptive-images)
 
-Conforme você projeta, use o **Emulador** barra de ferramentas para visualizar as páginas de vários tamanhos de tela.
+Conforme você cria, use a barra de ferramentas **Emulador** para visualizar suas páginas para vários tamanhos de tela.
 
 ## Antes de desenvolver {#before-you-develop}
 
@@ -51,29 +51,29 @@ Antes de desenvolver o aplicativo AEM compatível com suas páginas da Web, vár
 
 A estrutura típica do aplicativo AEM é compatível com todas as implementações de design responsivas:
 
-* Os componentes da página residem abaixo `/apps/<application_name>/components`
-* Os modelos ficam abaixo `/apps/<application_name>/templates`
+* Os componentes da página residem abaixo de `/apps/<application_name>/components`
+* Os modelos residem abaixo de `/apps/<application_name>/templates`
 
 ## Uso de consultas de mídia {#using-media-queries}
 
 As consultas de mídia permitem o uso seletivo de estilos CSS para renderização da página. As ferramentas e os recursos de desenvolvimento do AEM permitem que você implemente de forma eficaz e eficiente as consultas de mídia em seus aplicativos.
 
-O grupo W3C fornece a [Consultas de mídia](https://www.w3.org/TR/css3-mediaqueries/) recomendação que descreve esse recurso CSS3 e a sintaxe.
+O grupo W3C fornece a recomendação [Consultas de Mídia](https://www.w3.org/TR/css3-mediaqueries/) que descreve esse recurso CSS3 e a sintaxe.
 
 ### Criação do arquivo CSS {#creating-the-css-file}
 
 No arquivo CSS, defina consultas de mídia com base nas propriedades dos dispositivos que você está direcionando. A seguinte estratégia de implementação é eficaz para gerenciar estilos para cada consulta de mídia:
 
-* Use um [Pasta Biblioteca do cliente](clientlibs.md) para definir o CSS que é montado quando a página é renderizada.
+* Use uma [pasta da Biblioteca do Cliente](clientlibs.md) para definir o CSS que é montado quando a página é renderizada.
 * Defina cada consulta de mídia e os estilos associados em arquivos CSS separados. É útil usar nomes de arquivo que representem os recursos do dispositivo da query de mídia.
 * Defina estilos comuns a todos os dispositivos em um arquivo CSS separado.
 * No arquivo css.txt da pasta Biblioteca do cliente, ordene os arquivos CSS da lista conforme necessário no arquivo CSS montado.
 
-A variável [Tutorial WKND](develop-wknd-tutorial.md) O usa essa estratégia para definir estilos no design do site. O arquivo CSS usado pela WKND está localizado em `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
+O [tutorial do WKND](develop-wknd-tutorial.md) usa essa estratégia para definir estilos no design do site. O arquivo CSS usado pela WKND está localizado em `/apps/wknd/clientlibs/clientlib-grid/less/grid.less`.
 
 ### Uso de consultas de mídia com páginas AEM {#using-media-queries-with-aem-pages}
 
-[O projeto de amostra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) use o [Componente principal de página,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html) que inclui clientlibs por meio da política da página.
+[O projeto de amostra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e o [Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) usam o [Componente principal de Página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), que inclui as clientlibs por meio da política de página.
 
 Se o seu próprio componente de página não for baseado no Componente principal de página, você também poderá incluir a pasta da biblioteca do cliente no script HTL ou JSP dele. Isso gerará e referenciará o arquivo CSS com as consultas de mídia necessárias para que a grade responsiva funcione.
 
@@ -99,37 +99,37 @@ O script JSP gera o seguinte código de HTML que faz referência às folhas de e
 
 ## Visualização de dispositivos específicos {#previewing-for-specific-devices}
 
-O emulador permite visualizar as páginas em diferentes tamanhos de visor para testar o comportamento do design responsivo. Ao editar uma página no Console Sites, toque ou clique no **Emulador** ícone para revelar o emulador.
+O emulador permite visualizar as páginas em diferentes tamanhos de visor para testar o comportamento do design responsivo. Ao editar uma página no Console de sites, toque ou clique no ícone **Emulador** para revelar o emulador.
 
 ![O ícone de emulador na barra de ferramentas](assets/emulator-icon.png)
 
-Na barra de ferramentas do emulador, toque ou clique no **Dispositivos** ícone para exibir um menu suspenso onde é possível selecionar um dispositivo. Ao selecionar um dispositivo, a página muda para se adaptar ao tamanho do visor.
+Na barra de ferramentas do emulador, toque ou clique no ícone **Dispositivos** para exibir um menu suspenso onde é possível selecionar um dispositivo. Ao selecionar um dispositivo, a página muda para se adaptar ao tamanho do visor.
 
 ![A barra de ferramentas do emulador](assets/emulator.png)
 
 ### Especificando Grupos de Dispositivos {#specifying-device-groups}
 
-Para especificar os grupos de dispositivos que aparecem no **Dispositivos** adicionar uma `cq:deviceGroups` para a propriedade `jcr:content` nó da página de modelo do site. O valor da propriedade é uma matriz de caminhos para os nós do grupo de dispositivos.
+Para especificar os grupos de dispositivos que aparecem na lista **Dispositivos**, adicione uma propriedade `cq:deviceGroups` ao nó `jcr:content` da página de modelo do site. O valor da propriedade é uma matriz de caminhos para os nós do grupo de dispositivos.
 
-Por exemplo, a página de modelo do site WKND é `/conf/wknd/settings/wcm/template-types/empty-page/structure`. E a variável `jcr:content` abaixo dele, inclui a seguinte propriedade:
+Por exemplo, a página de modelo do site WKND é `/conf/wknd/settings/wcm/template-types/empty-page/structure`. E o nó `jcr:content` abaixo dele inclui a seguinte propriedade:
 
 * Nome: `cq:deviceGroups`
 * Tipo: `String[]`
 * Valor: `mobile/groups/responsive`
 
-Os nós do grupo de dispositivos estão no estado `/etc/mobile/groups` pasta.
+Os nós do grupo de dispositivos estão na pasta `/etc/mobile/groups`.
 
 ## Imagens responsivas {#responsive-images}
 
 Páginas responsivas se adaptarão dinamicamente ao dispositivo no qual são renderizadas, oferecendo uma melhor experiência para o usuário. No entanto, também é importante que os ativos sejam otimizados para o ponto de interrupção e o dispositivo para minimizar o tempo de carregamento da página.
 
-[O componente de imagem, dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=pt-BR) recursos como seleção de imagem adaptável.
+[O Componente de Imagem do Componente Principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=pt-BR) apresenta recursos como seleção de imagem adaptável.
 
-* Por padrão, o componente de Imagem usa a variável [Servlet de imagem adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) para entregar a representação adequada.
-* [Entrega de imagens otimizadas para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) O também está disponível por meio de uma caixa de seleção simples em sua política, que fornece ativos de imagem do DAM em formato WebP e pode reduzir o tamanho de download de uma imagem em cerca de 25%, em média.
+* Por padrão, o Componente de imagem usa o [Servlet de imagem adaptável](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/adaptive-image-servlet.html) para fornecer a representação adequada.
+* A [Entrega de imagens otimizadas para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) também está disponível por meio de uma caixa de seleção simples em sua política, que fornece ativos de imagem do DAM em formato WebP e pode reduzir o tamanho de download de uma imagem em cerca de 25%, em média.
 
 ## O Contêiner de layout {#layout-container}
 
-O Contêiner de layout AEM permite implementar com eficiência e eficácia o layout responsivo para adaptar as dimensões da página à janela de visualização do cliente.
+O Contêiner de layout do AEM permite implementar com eficiência e eficácia o layout responsivo para adaptar as dimensões da página à janela de visualização do cliente.
 
-Consulte o documento [Configurar o contêiner de layout e o modo de layout](/help/sites-cloud/administering/responsive-layout.md) para obter mais informações sobre como o Contêiner de layout funciona e como ativar layouts responsivos para o seu conteúdo.
+Consulte o documento [Configuração do Contêiner de Layout e do Modo de Layout](/help/sites-cloud/administering/responsive-layout.md) para obter mais informações sobre como o Contêiner de Layout funciona e como habilitar layouts responsivos para o seu conteúdo.

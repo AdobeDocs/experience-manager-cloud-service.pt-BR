@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Configuração de páginas de erro do CDN {#cdn-error-pages}
 
-No caso improvável de a [CDN gerenciada por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) não puder acessar a origem do AEM, o CDN por padrão fornece uma página de erro genérica e sem marca que indica que o servidor não pode ser acessado. Você pode substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de blobs do Azure, e fazendo referência a eles em um arquivo de configuração implantado usando o [Pipeline de configuração do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+No evento improvável de que o [CDN gerenciado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) não possa atingir a origem AEM, o CDN por padrão fornece uma página de erro genérica e sem marca que indica que o servidor não pode ser alcançado. Você pode substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de Blobs do Azure, e fazendo referência a eles em um arquivo de configuração implantado usando o [Pipeline de Configuração do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 ## Configurar {#setup}
 
@@ -26,7 +26,7 @@ config/
      cdn.yaml
 ```
 
-* A variável `cdn.yaml` o arquivo de configuração deve conter metadados e as regras descritas nos exemplos abaixo. A variável `kind` O parâmetro deve ser definido como `CDN` e a versão deve ser definida como a versão do schema, que está `1`.
+* O arquivo de configuração `cdn.yaml` deve conter metadados e as regras descritas nos exemplos abaixo. O parâmetro `kind` deve ser definido como `CDN` e a versão deve ser definida como a versão do esquema, que atualmente é `1`.
 
 * Crie um pipeline de configuração de implantação direcionada no Cloud Manager. Consulte [configuração de pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configuração de pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 

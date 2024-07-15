@@ -1,5 +1,5 @@
 ---
-title: Entregar ativos do Dynamic Media
+title: Fornecer o Dynamic Media Assets
 description: Saiba como fornecer ativos do Dynamic Media para suas páginas da Web por meio de vídeos e imagens incorporados ou vinculando URLs ao seu aplicativo da Web.
 contentOwner: Rick Brough
 feature: Asset Management
@@ -7,12 +7,12 @@ role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 9%
+source-wordcount: '339'
+ht-degree: 7%
 
 ---
 
-# Entregar ativos do Dynamic Media{#delivering-dynamic-media-assets}
+# Fornecer o Dynamic Media Assets{#delivering-dynamic-media-assets}
 
 A maneira de fornecer os ativos do Dynamic Media, como vídeo e imagens, depende de como o site é implementado.
 
@@ -22,16 +22,16 @@ Com o Dynamic Media, você tem várias opções:
 * Se o site não estiver no Experience Manager, você terá a opção de:
 
    * Incorporar o vídeo ou a imagem no site.
-   * Vincular URLs ao seu aplicativo web. Use a vinculação quando quiser fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
-   * Se o site for responsivo, você poderá [fornecer imagens otimizadas](/help/assets/dynamic-media/responsive-site.md).
+   * Vincule URLs ao aplicativo da Web. Use a vinculação quando quiser fornecer um reprodutor de vídeo como uma janela pop-up ou modal.
+   * Se o seu site é responsivo, você pode [fornecer imagens otimizadas](/help/assets/dynamic-media/responsive-site.md).
 
 >[!NOTE]
 >
->As imagens inteligentes funcionam com as predefinições de imagens existentes. Ele usa inteligência nos últimos milissegundos do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Imagem inteligente](/help/assets/dynamic-media/imaging-faq.md) para obter mais informações.
+>As imagens inteligentes funcionam com as predefinições de imagens existentes. Ele usa inteligência nos últimos milissegundos do delivery para reduzir ainda mais o tamanho do arquivo de imagem com base na velocidade do navegador ou da conexão de rede. Consulte [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) para obter mais informações.
 
 Para obter mais informações, consulte os seguintes tópicos:
 
-* [Adicionar ativos do Dynamic Media a páginas da Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
+* [Adicionar o Dynamic Media Assets às páginas da Web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
 * [Incorporar o visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md)
 * [Ativar proteção de hotlink no Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
 * [Vincular URLs ao aplicativo web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md)

@@ -18,8 +18,8 @@ ht-degree: 52%
 
 Se você estiver enfrentando o que acredita ser um comportamento incorreto ou um erro no MSM, antes de começar e solucionar problemas detalhados, certifique-se de:
 
-* Verifique a [Perguntas frequentes sobre MSM](#faq) porque seus problemas ou dúvidas podem já ter sido abordados lá.
-* Verifique a [Artigo de práticas recomendadas do MSM](best-practices.md) como várias dicas são oferecidas lá, juntamente com esclarecimentos sobre alguns equívocos.
+* Verifique as [Perguntas frequentes sobre o MSM](#faq) porque talvez seus problemas ou dúvidas já tenham sido abordados lá.
+* Verifique o [artigo de práticas recomendadas do MSM](best-practices.md), pois várias dicas são oferecidas lá, juntamente com esclarecimentos sobre alguns equívocos.
 
 ## Encontrar informações avançadas sobre seu blueprint e status da Live Copy {#advanced-info}
 
@@ -43,7 +43,7 @@ Os servlets anteriores retornavam informações computadas com base nos nós e m
 
 * Tipo de mixin `cq:LiveSync`
    * Isso é configurado em nós `jcr:content` e define páginas raiz da Live Copy.
-   * Essas páginas têm um `cq:LiveSyncConfig` nó filho do tipo `cq:LiveCopy` que contém informações básicas e obrigatórias sobre a Live Copy por meio das seguintes propriedades:
+   * Essas páginas têm um nó filho `cq:LiveSyncConfig` do tipo `cq:LiveCopy` que contém informações básicas e obrigatórias sobre a Live Copy por meio das seguintes propriedades:
       * `cq:master` aponta para a página de blueprint da Live Copy.
       * `cq:rolloutConfigs` indica as configurações de implementação ativas aplicadas à Live Copy.
       * `cq:isDeep` é verdadeiro se as páginas secundárias desta página raiz da Live Copy estiverem incluídas na Live Copy.
@@ -72,7 +72,7 @@ Consulte [este artigo](best-practices.md) para obter mais informações sobre es
 
 ### Como posso remover as permissões de implantação de um grupo de autores? {#remove-rollout-permissions}
 
-Não há **implantação** privilégio que pode ser definido ou removido para entidades principais do Adobe Experience Manager (usuários ou grupos).
+Não há privilégio de **implantação** que possa ser definido ou removido para entidades principais do Adobe Experience Manager (usuários ou grupos).
 
 Como alternativa, você pode:
 
@@ -83,12 +83,12 @@ Como alternativa, você pode:
 
 Se uma página de blueprint for implantada, ela atualizará sua página da Live Copy ou criará uma página da Live Copy se ainda não existir. Por exemplo, quando ele é implantado pela primeira vez ou a página da Live Copy é excluída manualmente.
 
-Neste último caso, no entanto, se uma página sem `cq:LiveRelationship` existe com o mesmo nome, essa página é renomeada de modo que, antes que a página da Live Copy seja criada.
+Nesse último caso, no entanto, se uma página sem uma propriedade `cq:LiveRelationship` existir com o mesmo nome, ela será renomeada de modo que, antes que a página da Live Copy seja criada.
 
 Por padrão, a implantação espera uma página vinculada da Live Copy para a qual as atualizações dos blueprints são implantadas. Ou não espera nenhuma página quando uma página de Live Copy é criada.
 
 Se uma página &quot;independente&quot; for encontrada, o MSM optará por renomear esta página e criará uma página separada e vinculada da Live Copy.
 
-Essa página independente, em uma subárvore da Live Copy, geralmente é o resultado de uma **Desanexar** ou a antiga página da Live Copy foi excluída manualmente por um autor e depois recriada com o mesmo nome.
+Essa página independente, em uma subárvore da Live Copy, geralmente é o resultado de uma operação **Desconectar**, ou a antiga página da Live Copy foi excluída manualmente por um autor e depois recriada com o mesmo nome.
 
-Para evitar isso, use a Live Copy **Suspender** recurso em vez de **Desanexar**. Mais detalhes sobre o **Desanexar** a ação pode ser encontrada em [neste artigo.](creating-live-copies.md)
+Para evitar isso, use o recurso **Suspender** da Live Copy, em vez de **Desanexar**. Mais detalhes sobre a ação **Desconectar** podem ser encontrados em [este artigo.](creating-live-copies.md)

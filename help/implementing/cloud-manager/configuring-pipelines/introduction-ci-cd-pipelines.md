@@ -56,7 +56,7 @@ Um pipeline de não produção serve principalmente para executar verificações
 Além de produção e não produção, os pipelines podem ser diferenciados pelo tipo de código que implantam.
 
 * **[Pipelines de pilha completa](#full-stack-pipeline)** - Implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com configurações HTTPD/Dispatcher.
-* **[Configuração de pipelines](#config-deployment-pipeline)** - Configurar e implantar regras de filtro de tráfego, incluindo regras WAF, em minutos
+* **[Configurar pipelines](#config-deployment-pipeline)** - Configure e implante as regras de filtro de tráfego, incluindo as regras WAF, em minutos
 * **[Pipelines de front-end](#front-end)** - Implantam compilações de código de front-end contendo um ou mais aplicativos de interface do usuário do lado do cliente.
 * **[Pipelines de configuração no nível da Web](#web-tier-config-pipelines)** - Implanta configurações HTTPD/Dispatcher.
 
@@ -118,7 +118,7 @@ Para saber como configurar pipelines de pilha completa, consulte os documentos a
 
 Com um pipeline de configuração, você pode configurar e implantar regras de filtro de tráfego, incluindo regras WAF, em minutos.
 
-Consulte [Regras de filtro de tráfego incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md) para saber como gerenciar as configurações no repositório para que sejam implantadas corretamente.
+Consulte [Regras de Filtro de Tráfego incluindo Regras do WAF](/help/security/traffic-filter-rules-including-waf.md) para saber como gerenciar as configurações no repositório para que elas sejam implantadas corretamente.
 
 ### Configuração de pipelines de configuração {#configure-config-deployment}
 

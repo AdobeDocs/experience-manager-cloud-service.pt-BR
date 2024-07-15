@@ -10,43 +10,43 @@ ht-degree: 0%
 ---
 
 
-# Pesquisar no Assets em [!DNL Content Hub] {#search-assets}
+# Pesquisar Assets em [!DNL Content Hub] {#search-assets}
 
 ![Compartilhar imagem do banner de ativos](assets/search.png)
 
-Quando você tem um grande número de ativos no repositório, pesquisar o ativo certo é demorado. [!DNL The Content Hub] a pesquisa fornece a capacidade de procurar os ativos aprovados para que você possa executar ações adicionais neles, como baixar, compartilhar ou criar coleções. Você pode utilizar vários recursos para restringir os resultados da pesquisa, como o, executar pesquisa baseada em texto, usar filtros, executar tags ou pesquisa específica de tags inteligentes, pesquisar um formato de arquivo específico e assim por diante.
+Quando você tem um grande número de ativos no repositório, pesquisar o ativo certo é demorado. A pesquisa do [!DNL The Content Hub] fornece a capacidade de procurar os ativos aprovados para que você possa executar ações adicionais neles, como baixar, compartilhar ou criar coleções. Você pode utilizar vários recursos para restringir os resultados da pesquisa, como o, executar pesquisa baseada em texto, usar filtros, executar tags ou pesquisa específica de tags inteligentes, pesquisar um formato de arquivo específico e assim por diante.
 
 ## Pré-requisitos {#prerequisites}
 
-[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) O pode executar as ações mencionadas neste artigo.
+[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) podem executar as ações mencionadas neste artigo.
 
 ## O que você pode pesquisar  {#what-you-can-search}
 
-A variável [!DNL Content Hub] a pesquisa fornece resultados com base em:
+A pesquisa [!DNL Content Hub] fornece resultados baseados em:
 
-* **Texto correspondente:** A variável [!DNL Content Hub] pesquisar permite procurar um ativo usando seu nome ou descrição. Você pode executar uma pesquisa baseada em palavras-chave, que compara a palavra-chave ao texto disponível nas propriedades de um ativo.
+* **Texto correspondente:** A pesquisa [!DNL Content Hub] permite procurar um ativo usando seu nome ou descrição. Você pode executar uma pesquisa baseada em palavras-chave, que compara a palavra-chave ao texto disponível nas propriedades de um ativo.
 
-* **Contexto correspondente:** [!DNL Content Hub] a lista de resultados da pesquisa contém resultados aproximados de ativos que você obtém com base no contexto correspondente. Por exemplo, se você digitar `cool` na barra de pesquisa, os ativos relacionados a `winter`, `snow`, `cold surroundings`, exibir na lista de pesquisa.
+* **Contexto correspondente:** [!DNL Content Hub] a lista de resultados da pesquisa contém resultados aproximados de ativos que você obtém com base no contexto correspondente. Por exemplo, se você digitar `cool` na barra de pesquisa, os ativos relacionados a `winter`, `snow`, `cold surroundings` serão exibidos na lista de pesquisa.
 
-* **Informações de ativos (título, tags ou tags inteligentes):** [!DNL Content Hub] O usa o algoritmo de pesquisa inteligente para classificar os resultados de pesquisa com precisão e da forma mais relevante possível. [Metadados](#asset-properties.md) é a coleta de todos os dados disponíveis para um ativo, mas que podem não estar necessariamente contidos nesse ativo. [Ele ajuda a categorizar os ativos e é útil à medida que a quantidade de informações digitais cresce](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub).
+* **Informações do ativo (título, marcas ou marcas inteligentes):** [!DNL Content Hub] usa o algoritmo de pesquisa inteligente para classificar os resultados da pesquisa com precisão e da forma mais relevante possível. [Os metadados](#asset-properties.md) são a coleção de todos os dados disponíveis para um ativo, mas eles podem não estar necessariamente contidos nesse ativo. [Isso ajuda a categorizar os ativos e é útil à medida que a quantidade de informações digitais cresce](/help/assets/configure-content-hub-ui-options.md##configure-metadata-search-content-hub).
 
-* **Data da última modificação:** Os ativos que foram modificados recentemente aparecem na parte superior da lista de resultados da pesquisa. Também é possível filtrar o intervalo de datas de acordo com sua necessidade.
+* **Data da última modificação:** os ativos que foram modificados recentemente aparecem no topo da lista de resultados da pesquisa. Também é possível filtrar o intervalo de datas de acordo com sua necessidade.
 
-* **Uso:** Os ativos usados com frequência aparecem na parte superior da lista de pesquisa.
+* **Uso:** os ativos usados com frequência aparecem no topo da lista de pesquisa.
 
-* **Pesquisar histórico:** Clique dentro da caixa de pesquisa sem digitar um caractere para obter seu histórico de pesquisa. Você também pode remover qualquer palavra-chave específica do histórico. O histórico de pesquisa é salvo na memória cache de um navegador da Web, o que significa que, se você acessar o [!DNL Content Hub] pesquisar em um navegador diferente ou limpar a memória cache do navegador, você não pode mais visualizar o histórico de pesquisa.
+* **Histórico de pesquisa:** clique dentro da caixa de pesquisa sem digitar um caractere para obter seu histórico de pesquisa. Você também pode remover qualquer palavra-chave específica do histórico. O histórico de pesquisa é salvo na memória cache de um navegador da Web, o que significa que, se você acessar a pesquisa [!DNL Content Hub] em um navegador diferente ou limpar a memória cache do navegador, não poderá mais exibir o histórico de pesquisa.
 
-* **Pesquisar enquanto digita:** A variável [!DNL Content Hub] a pesquisa aprimora sua experiência de pesquisa ao fornecer sugestões de preenchimento automático quando você começa a digitar.
+* **Pesquise enquanto digita:** A pesquisa do [!DNL Content Hub] aprimora sua experiência de pesquisa ao fornecer sugestões de preenchimento automático quando você começa a digitar.
 
 ## Pesquisa básica {#basic-search}
 
-Para executar a pesquisa básica em [!DNL the Content Hub], navegue até a barra de pesquisa e especifique a palavra-chave que precisa pesquisar. Navegue até os filtros disponíveis no painel esquerdo e aplique-os para restringir os resultados da pesquisa.
+Para realizar uma pesquisa básica no [!DNL the Content Hub], navegue até a barra de pesquisa e especifique a palavra-chave que precisa pesquisar. Navegue até os filtros disponíveis no painel esquerdo e aplique-os para restringir os resultados da pesquisa.
 
-Por exemplo, pesquise por todas as **[!UICONTROL JPEG]** imagens com palavra-chave `architect` nele, que foi modificado no último ano. Para executar esse cenário, execute as seguintes etapas:
+Por exemplo, pesquise por todas as imagens **[!UICONTROL JPEG]** com a palavra-chave `architect`, que foi modificada no último ano. Para executar esse cenário, execute as seguintes etapas:
 
-1. Especificar `architect` como a palavra-chave de pesquisa.
+1. Especifique `architect` como a palavra-chave de pesquisa.
 
-1. Navegue até o painel Filtros > **[!UICONTROL Formato]** > selecionar **[!UICONTROL JPEG]**.
+1. Navegue até o painel Filtros > **[!UICONTROL Formato]** > selecione **[!UICONTROL JPEG]**.
 
 1. Navegue até **[!UICONTROL Modificado]** > especifique o intervalo de datas.
 
@@ -152,4 +152,4 @@ Os filtros padrão incluem formato de arquivo, aprovado por, data de aprovação
 
 ## Faça mais com a pesquisa {#do-more-with-search}
 
-[!DNL The Content Hub] não está limitado à pesquisa, mas permite executar ações adicionais, como [baixar](download-assets-content-hub.md), [compartilhar](share-assets-content-hub.md), e [adicionar ativos à coleção](collections-content-hub.md), diretamente da interface de pesquisa ou visualização. Selecione os ativos na página de resultados da pesquisa para exibir essas opções.
+[!DNL The Content Hub] não está limitado à pesquisa. Em vez disso, permite que você execute ações adicionais, como [baixar](download-assets-content-hub.md), [compartilhar](share-assets-content-hub.md) e [adicionar ativos à coleção](collections-content-hub.md), diretamente da interface de pesquisa ou visualização. Selecione os ativos na página de resultados da pesquisa para exibir essas opções.

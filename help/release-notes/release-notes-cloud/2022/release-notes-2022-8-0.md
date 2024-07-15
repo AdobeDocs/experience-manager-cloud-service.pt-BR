@@ -13,7 +13,7 @@ ht-degree: 59%
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.8.0 {#release-notes}
 
-A seção a seguir descreve as notas de versão de recurso da versão 2022.8.0 do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de versão do recurso para a versão 2022.8.0 do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -39,15 +39,15 @@ Assista ao vídeo Visão geral da versão de agosto de 2022 que exibe um resumo 
 ### Novos recursos no [!DNL Sites] {#sites-features}
 
 * O Componente de email permite a criação de conteúdo no AEM, que é então entregue por email através do Campaign Classic. O Componente principal de email:
-   * baseia-se no [Componente WCM do núcleo](https://github.com/adobe/aem-core-wcm-components) que aceita Modelos editáveis e o Sistema de estilos.
+   * é baseado no [Componente WCM principal](https://github.com/adobe/aem-core-wcm-components), que oferece suporte a Modelos editáveis e ao Sistema de estilos.
    * O fornece 10 componentes de produção otimizados para email (página, contêiner, título, texto, imagem, botão, teaser, fragmento de experiência, fragmento de conteúdo e segmentação).
-   * O oferece personalização e segmentação avançadas, graças à [inserção de variáveis de campanha](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) na maioria dos campos de diálogo, e para a flexibilidade [Componente de segmentação](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
-   * O fornece saída de HTML ideal para email, graças à [Estilos CSS incorporados](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), o [inliner de atributo HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), e o [higienizador de HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * O fornece personalização e segmentação avançadas, graças à [inserção de variáveis do Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) na maioria dos campos de caixa de diálogo e ao [componente de segmentação](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)) flexível.
+   * O fornece uma saída de HTML ideal para email, graças ao [inliner de estilos de CSS](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), ao [inliner de atributo de HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation) e ao [sanitizer de HTML](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * permite a criação de emails em qualquer lugar.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Sites] {#prerelease-features-sites}
 
-* A variável [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) O fornece aos usuários uma opção para exibir o número total de cópias de idioma associadas a um fragmento de conteúdo. Um acesso de 1 clique também foi fornecido para exibir todas as cópias de idioma. Os usuários também podem filtrar a exibição de tabela pela localidade de seu interesse.
+* O [Console do Fragmento do Conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) fornece aos usuários uma opção para exibir o número total de cópias de idioma associadas a um fragmento de conteúdo. Um acesso de 1 clique também foi fornecido para exibir todas as cópias de idioma. Os usuários também podem filtrar a exibição de tabela pela localidade de seu interesse.
 
 ![Idiomas de Fragmentos de conteúdo](/help/release-notes/assets/cfconsole-languages.png)
 

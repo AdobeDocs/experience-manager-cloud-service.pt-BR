@@ -1,5 +1,5 @@
 ---
-title: Configuração de integrações IMS para o AEM as a Cloud Service
+title: Configuração de integrações do IMS para o AEM as a Cloud Service
 description: Saiba como configurar integrações do IMS para o AEM as a Cloud Service
 exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
 feature: Security
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 ---
 
-# Configuração de integrações IMS para o AEM as a Cloud Service {#setting-up-ims-integrations-for-aemaacs}
+# Configuração de integrações do IMS para o AEM as a Cloud Service {#setting-up-ims-integrations-for-aemaacs}
 
 >[!NOTE]
 >
@@ -23,41 +23,41 @@ As integrações usam uma integração IMS, configurada com S2S OAuth.
 
 * Depois de criar:
 
-   * [Credenciais no Console do desenvolvedor](#credentials-in-the-developer-console)
+   * [Credenciais na Developer Console](#credentials-in-the-developer-console)
 
 * Em seguida, é possível:
 
-   * Criar um (novo) [Configuração do OAuth](#creating-oauth-configuration)
+   * Criar uma (nova) [configuração do OAuth](#creating-oauth-configuration)
 
    * [Migrar uma configuração JWT existente para uma configuração OAuth](#migrating-existing-JWT-configuration-to-oauth)
 
 >[!CAUTION]
 >
->Anteriormente, as configurações eram feitas com [Credenciais JWT que agora estão sujeitas a desativação no console do Adobe Developer](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>Anteriormente, as configurações eram feitas com [Credenciais JWT que agora estão sujeitas a desativação no Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md).
 >
 >Essas configurações não podem mais ser criadas ou atualizadas, mas podem ser migradas para configurações OAuth.
 
-## Credenciais no Console do desenvolvedor {#credentials-in-the-developer-console}
+## Credenciais na Developer Console {#credentials-in-the-developer-console}
 
-Como primeira etapa, é necessário configurar as credenciais do OAuth no console do Adobe Developer.
+Como primeira etapa, é necessário configurar as credenciais do OAuth no Adobe Developer Console.
 
-Para obter detalhes sobre como fazer isso, consulte a documentação do Developer Console, dependendo de seus requisitos:
+Para obter detalhes sobre como fazer isso, consulte a documentação do Developer Console, dependendo de suas necessidades:
 
 * Visão geral:
 
-   * [Autenticação de servidor para servidor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
+   * [Autenticação de Servidor para Servidor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/)
 
 * Criação de uma nova credencial OAuth:
 
-   * [Guia de implementação de credenciais do OAuth de servidor para servidor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [Guia de implementação de credenciais de servidor para servidor do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
 
 * Migrar uma credencial JWT existente para uma credencial OAuth:
 
-   * [Migração da credencial de conta de serviço (JWT) para a credencial de servidor para servidor do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * [Migrando da credencial de conta de serviço (JWT) para a credencial de servidor para servidor OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
 
 Por exemplo:
 
-![Credencial OAuth no Console do desenvolvedor](assets/ims-configuration-developer-console.png)
+![Credencial OAuth na Developer Console](assets/ims-configuration-developer-console.png)
 
 ## Criação de uma configuração OAuth {#creating-oauth-configuration}
 
@@ -67,11 +67,11 @@ Para criar uma nova Integração do Adobe IMS usando o OAuth:
 
 1. Selecione **Criar**.
 
-1. Conclua a configuração com base nos detalhes do [Console do desenvolvedor](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Por exemplo:
+1. Conclua a configuração com base nos detalhes da [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Por exemplo:
 
-   ![Criar configuração do OAuth](assets/ims-create-oauth-configuration.png)
+   ![Criar configuração OAuth](assets/ims-create-oauth-configuration.png)
 
-1. **Salvar** suas alterações.
+1. **Salve** suas alterações.
 
 ## Migração de uma configuração JWT existente para uma configuração OAuth {#migrating-existing-JWT-configuration-to-oauth}
 
@@ -83,7 +83,7 @@ Para migrar uma Integração do Adobe IMS existente com base em credenciais JWT:
 
 1. No AEM, navegue até **Ferramentas**, **Segurança**, **Integração do Adobe IMS**.
 
-1. Selecione a configuração JWT que precisa ser migrada. As configurações do JWT são marcadas com o aviso **Credenciais JWT (obsoleto)**.
+1. Selecione a configuração JWT que precisa ser migrada. As configurações JWT estão marcadas com o aviso **Credenciais JWT (obsoletas)**.
 
 1. Selecionar **Propriedades**:
 
@@ -91,15 +91,15 @@ Para migrar uma Integração do Adobe IMS existente com base em credenciais JWT:
 
 1. A configuração será aberta como somente leitura:
 
-   ![Propriedades de configuração - Somente leitura](assets/ims-migrate-jwt-properties-read-only.png)
+   ![Propriedades de Configuração - Somente Leitura](assets/ims-migrate-jwt-properties-read-only.png)
 
-1. Selecionar **OAuth** do **Tipo de autenticação** lista suspensa:
+1. Selecione **OAuth** na lista suspensa **Tipo de Autenticação**:
 
    ![Selecionar tipo de autenticação](assets/ims-migrate-jwt-authentication-type.png)
 
-1. As propriedades disponíveis serão atualizadas. Use os detalhes no Console do desenvolvedor para concluí-los:
+1. As propriedades disponíveis serão atualizadas. Use os detalhes do Developer Console para concluí-los:
 
-   ![Detalhes completos do OAuth](assets/ims-migrate-jwt-complete-oauth-details.png)
+   ![Detalhes de OAuth completos](assets/ims-migrate-jwt-complete-oauth-details.png)
 
-1. Uso **Salvar e fechar** para continuar com suas atualizações.
-Ao retornar ao console, a variável **Credenciais JWT (obsoleto)** o aviso desaparecerá.
+1. Use **Salvar e fechar** para manter suas atualizações.
+Quando você retornar ao console, o aviso **Credenciais JWT (obsoletas)** desaparecerá.

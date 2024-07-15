@@ -34,7 +34,7 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 | `data-aue-filter` | Define quais referências podem ser usadas |
 | `data-aue-label` | Define um rótulo personalizado para um item selecionável que é exibido no editor. <br>Caso`data-aue-model` seja definido, o rótulo será recuperado por meio do modelo |
 | `data-aue-model` | Define um modelo que será utilizado para a edição com base em formulários no painel de propriedades |
-| `data-aue-behavior` | Define o [comportamento de uma instrumentação](#behaviors), por exemplo, texto ou imagem independentes também podem imitar um componente para torná-lo móvel ou excluível |
+| `data-aue-behavior` | Define o [comportamento de uma instrumentação](#behaviors), por exemplo, texto ou imagem autônoma também pode imitar um componente para torná-lo móvel ou excluível |
 
 ## Tipos de item {#item-types}
 

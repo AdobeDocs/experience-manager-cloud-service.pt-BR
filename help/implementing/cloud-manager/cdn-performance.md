@@ -18,9 +18,9 @@ Entenda como o Cloud Manager avalia o desempenho da rede de entrega de conteúdo
 
 ## Visão geral {#overview}
 
-Todos os programas do Cloud Manager têm um painel de desempenho do CDN. Esse painel apresenta uma pontuação geral para o desempenho da CDN, juntamente com tendências, alertas e sugestões de melhoria, conforme necessário.
+Todos os programas do Cloud Manager têm um painel de desempenho CDN. Esse painel apresenta uma pontuação geral para o desempenho da CDN, juntamente com tendências, alertas e sugestões de melhoria, conforme necessário.
 
-![Painel de desempenho do CDN](assets/cdn-performance-dashboard.png)
+![Painel de desempenho da CDN](assets/cdn-performance-dashboard.png)
 
 ## Acessar o painel {#accessing}
 
@@ -28,11 +28,11 @@ O painel CDN está disponível na página de visão geral de cada programa.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique no programa cujo painel CDN você deseja exibir.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no programa cujo painel CDN você deseja exibir.
 
    ![Página Meus programas](assets/my-programs.png)
 
-1. No **Visão geral do programa** do seu programa, role para baixo abaixo da **Ambientes** e **Pipelines** cartões para ver o **Desempenho** cartão.
+1. Na página **Visão geral do programa** do seu programa, role para baixo os cartões **Ambientes** e **Pipelines** para ver o cartão **Desempenho**.
 
    ![Desempenho](assets/cdn-performance-overview.png)
 
@@ -40,15 +40,15 @@ O painel CDN está disponível na página de visão geral de cada programa.
 
 O painel apresenta uma pontuação geral para o desempenho da CDN, juntamente com tendências, alertas e sugestões de melhoria, conforme necessário.
 
-![Painel de desempenho do CDN](assets/cdn-performance-dashboard.png)
+![Painel de desempenho da CDN](assets/cdn-performance-dashboard.png)
 
-Para obter detalhes sobre o desempenho da CDN e sugestões sobre como melhorá-la, toque ou clique **Exibir tendência**.
+Para obter detalhes sobre o desempenho da CDN, bem como sugestões sobre como melhorá-la, toque ou clique em **Exibir tendência**.
 
 ![Tendência de desempenho](assets/cdn-performance-trend.png)
 
-Toque ou clique **Exibir** abaixo do gráfico para alterar o intervalo de tempo do gráfico.
+Toque ou clique em **Exibir** abaixo do gráfico para alterar o período do gráfico.
 
-Para obter sugestões sobre como melhorar o desempenho do CDN, selecione o **Recommendations** guia.
+Para obter sugestões sobre como melhorar o desempenho da CDN, selecione a guia **Recommendations**.
 
 ![Recomendações da CDN](assets/cdn-performance-recommendations.png)
 
@@ -66,13 +66,13 @@ A taxa de ocorrência do cache mede quantas solicitações de conteúdo um cache
 Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 ```
 
-* **Hit** - Os dados são solicitados do cache e são encontrados.
-* **Srta.** - Os dados são solicitados do cache e não são encontrados.
-* **Aprovado** - Os dados são solicitados do cache e estão configurados para não armazená-los em cache.
-* **Outro** - Todas as solicitações de dados do cache que não correspondam a nenhum outro caso.
+* **Ocorrência** - Os dados são solicitados do cache e foram encontrados.
+* **Erro** - Os dados são solicitados do cache e não foram encontrados.
+* **Aprovado** - Os dados são solicitados do cache e está configurado para não armazená-los em cache.
+* **Outros** - Todas as solicitações de dados do cache que não correspondem a nenhum outro caso.
 
 As métricas de cache são atualizadas a cada 24 horas.
 
 >[!TIP]
 >
->Para obter mais detalhes sobre como o Cloud Manager e o CDN interagem com o Dispatcher, consulte o documento [Armazenamento em cache no AEM as a Cloud Service.](/help/implementing/dispatcher/caching.md)
+>Para obter mais detalhes sobre como o Cloud Manager e a CDN interagem com a Dispatcher, consulte o documento [Armazenamento em cache no AEM as a Cloud Service.](/help/implementing/dispatcher/caching.md)

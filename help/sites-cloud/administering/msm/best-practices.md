@@ -67,7 +67,7 @@ Observe que o AEM tem duas abordagens principais para a criação de Live Copies
 
 Estas são algumas considerações que devem ser levadas em conta ao criar um site:
 
-* Para criar um site, você precisa de um [configuração do blueprint](creating-live-copies.md#managing-blueprint-configurations).
+* Para criar um site, você precisa de uma [configuração de blueprint](creating-live-copies.md#managing-blueprint-configurations).
 * Para permitir a seleção de caminhos de idioma para criar em um novo site, as raízes de idioma correspondentes devem existir no blueprint (origem).
 * Uma vez que um [novo site foi criado como uma Live Copy](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (usando **Criar** e, em seguida, **Site**), os dois primeiros níveis desta Live Copy são *superficiais*. Os filhos da página não pertencem ao relacionamento dinâmico, mas uma implantação ainda descerá se um relacionamento dinâmico que corresponda ao acionador for encontrado.
 
@@ -141,7 +141,7 @@ Portanto, recomenda-se apenas utilizar `onModify` acionadores se os benefícios 
 
 ### Tipos/propriedades de nós {#node-types-properties}
 
-Além de personalizar as ações de implantação, o MSM também permite personalizar as propriedades do nó que estão sendo implantadas. A variável [A configuração OSGi do MSM permite excluir tipos de nó](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de ser copiado da origem para a Live Copy.
+Além de personalizar as ações de implantação, o MSM também permite personalizar as propriedades do nó que estão sendo implantadas. A [configuração OSGi do MSM permite excluir tipos de nó](live-copy-sync-config.md#excluding-properties-and-node-types-from-synchronization) de serem copiados da origem para a Live Copy.
 
 ## Informações adicionais {#further-information}
 

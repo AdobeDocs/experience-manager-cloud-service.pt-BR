@@ -19,9 +19,9 @@ Os nós no repositório estão sujeitos às convenções de nomenclatura do Repo
 
 Essas convenções de nomenclatura são implementadas em vários níveis:
 
-* JcrUtil: a implementação do AEM do [Utilitários JCR](#jcr-utilities).
-* PageManager: a [Gerenciador de páginas](#page-manager) O fornece métodos para operações em nível de página.
-* Na interface do AEM {#ui-behavior}
+* JcrUtil: a implementação por AEM dos [utilitários JCR](#jcr-utilities).
+* PageManager: o [Gerenciador de páginas](#page-manager) fornece métodos para operações em nível de página.
+* Na interface do usuário do AEM {#ui-behavior}
 
 ### Utilitários JCR {#jcr-utilities}
 
@@ -36,7 +36,7 @@ Essas convenções de nomenclatura são implementadas em vários níveis:
 
 ### Gerenciador de páginas {#page-manager}
 
-[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) O fornece métodos para operações no nível da página, com base em [JCRUtil](#jcr-utilities).
+[PageManager](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) fornece métodos para operações no nível da página, com base em [JCRUtil](#jcr-utilities).
 
 ### Comportamento da interface do usuário do AEM {#ui-behavior}
 

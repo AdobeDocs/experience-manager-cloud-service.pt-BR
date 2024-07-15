@@ -13,7 +13,7 @@ ht-degree: 85%
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.4.0 {#release-notes}
 
-A seção a seguir descreve as notas de versão de recurso da versão 2022.4.0 do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de versão do recurso para a versão 2022.4.0 do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >

@@ -1,5 +1,5 @@
 ---
-title: Pesquisar práticas recomendadas para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Pesquisar práticas recomendadas do  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Práticas recomendadas para pesquisar, localizar e recuperar metadados de ativos no aplicativo.
 contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Práticas recomendadas de pesquisa do AEM Assets
 
-[!DNL Adobe Experience Manager Assets] O fornece métodos de pesquisa de ativos robustos que ajudam a alcançar maior velocidade do conteúdo. Às vezes, encontrar o ativo certo pode ser árduo e demorado. Portanto, o recurso de pesquisa de ativos no [!DNL Adobe Experience Manager Assets] é fundamental para o uso de um sistema de gerenciamento de ativos digitais - seja para uso posterior por criadores, para o gerenciamento robusto de ativos pelos usuários empresariais e profissionais de marketing ou para administração por administradores de DAM.
+O [!DNL Adobe Experience Manager Assets] fornece métodos de pesquisa de ativos robustos que ajudam a alcançar maior velocidade do conteúdo. Às vezes, encontrar o ativo certo pode ser árduo e demorado. Portanto, o recurso de pesquisa de ativos no [!DNL Adobe Experience Manager Assets] é fundamental para o uso de um sistema de gerenciamento de ativos digitais - seja para uso posterior por criadores, para o gerenciamento robusto de ativos por usuários empresariais e profissionais de marketing ou para administração por administradores do DAM.
 
 Este documento de ajuda contém as práticas recomendadas de pesquisa do AEM com a ajuda de vários cenários para auxiliar os usuários do AEM a realizar pesquisas de nível básico a avançado.
 
@@ -22,48 +22,48 @@ Este documento de ajuda contém as práticas recomendadas de pesquisa do AEM com
 
 A seguir estão as etapas básicas para executar no Experience Manager antes de iniciar sua pesquisa:
 
-* No **Exibição do administrador**, vá para Ativos > Arquivos no Experience Manager e clique no ícone de pesquisa na barra superior. Como alternativa, use uma barra (/) para abrir o campo Omni Search.
-No **Exibição de ativos**, a barra de pesquisa fica visível na parte superior e pode ser acessada diretamente.
-* `Location:Assets` e `Path:/content/dam` são pré-selecionados para limitar o escopo de pesquisa ao repositório do Experience Manager Assets. Se você navegar para qualquer outra pasta, `Path:/content/dam/<folder name>` é exibido no campo Omni Search para limitar o escopo de pesquisa à pasta atual.
+* Na **exibição de Administrador**, vá para Assets > Arquivos no Experience Manager e clique no ícone de pesquisa na barra superior. Como alternativa, use uma barra (/) para abrir o campo Omni Search.
+Na **exibição do Assets**, a barra de pesquisa está visível na parte superior e pode ser acessada diretamente.
+* `Location:Assets` e `Path:/content/dam` são pré-selecionados para limitar o escopo de pesquisa ao seu repositório do Experience Manager Assets. Se você navegar para qualquer outra pasta, `Path:/content/dam/<folder name>` será exibido no campo Pesquisa Omni para limitar o escopo de pesquisa à pasta atual.
 
 ## Pesquisa básica {#basic-search}
 
-**Cenário 1: executar uma pesquisa básica usando um `classic car` como a palavra-chave de pesquisa.**
+**Cenário 1: executar uma pesquisa básica usando `classic car` como palavra-chave de pesquisa.**
 
-A pesquisa por palavra-chave não diferencia maiúsculas de minúsculas e é uma pesquisa de texto completo nos campos de metadados incluídos no Ativo *pesquisa de texto completo* índice (configurável na definição do índice). Se mais de uma palavra-chave for usada, **AND é o operador padrão entre as palavras-chave, portanto, considera uma pesquisa por &quot;carro clássico&quot; como &quot;carro clássico AND&quot;**.
+A pesquisa por palavra-chave não diferencia maiúsculas de minúsculas e é uma pesquisa de texto completo nos campos de metadados incluídos no índice de Ativo *pesquisa de texto completo* (configurável na definição do índice). Se mais de uma palavra-chave for usada, **AND será o operador padrão entre as palavras-chave; portanto, ele considerará uma pesquisa por &#39;carro clássico&#39; como &#39;carro AND clássico&#39;**.
 
 Os resultados da pesquisa que correspondem a todos os termos de pesquisa em campos de metadados são exibidos primeiro, seguido pelos resultados da pesquisa que correspondem a qualquer um dos termos de pesquisa nas tags inteligentes. A ordem aproximada de exibição dos resultados da pesquisa é:
 
-1. Corresponde a `Classic Car` nos vários campos de metadados.
-2. Corresponde a `Classic Car` em tags inteligentes.
-3. Corresponde a `Classic` ou de `Car` em tags inteligentes.
+1. Correspondências de `Classic Car` nos vários campos de metadados.
+2. Correspondências de `Classic Car` em tags inteligentes.
+3. Correspondências de `Classic` ou de `Car` nas marcas inteligentes.
 
-Especificar `classic car` como a palavra-chave de pesquisa e clique em Pesquisar. É possível exibir as sugestões de pesquisa em uma lista suspensa à medida que você digita a palavra-chave. As sugestões de pesquisa se baseiam no conteúdo do índice de pesquisa na implantação do Experience Manager. Se não conseguir exibir os ativos apropriados no menu suspenso, pressione a tecla Enter para exibir a lista de resultados. Os resultados são classificados por relevância, a partir das correspondências mais próximas.
+Especifique `classic car` como a palavra-chave de pesquisa e clique em Pesquisar. É possível exibir as sugestões de pesquisa em uma lista suspensa à medida que você digita a palavra-chave. As sugestões de pesquisa se baseiam no conteúdo do índice de pesquisa na implantação do Experience Manager. Se não conseguir exibir os ativos apropriados no menu suspenso, pressione a tecla Enter para exibir a lista de resultados. Os resultados são classificados por relevância, a partir das correspondências mais próximas.
 
 <!--![Performing basic search method 1](assets/simple-search-1.png)-->
 
-Você pode tornar a pesquisa mais específica adicionando sua palavra-chave de pesquisa entre aspas duplas (&quot; &quot;). Essa pesquisa inclui somente ativos que contêm os termos especificados juntos. Os critérios de pesquisa se parecem com - `"classic car"`. Portanto, os resultados da pesquisa com ambos os termos `classic` e `car` são exibidas.
+Você pode tornar a pesquisa mais específica adicionando sua palavra-chave de pesquisa entre aspas duplas (&quot; &quot;). Essa pesquisa inclui apenas Assets que contêm os termos especificados juntos. Os critérios de pesquisa parecem - `"classic car"`. Portanto, os resultados da pesquisa com os termos `classic` e `car` são mostrados.
 
 <!--![Finding exact match](assets/simple-search-2.png)-->
 
-A pesquisa exibirá resultados semelhantes se você estiver trabalhando na **[!UICONTROL Exibição de ativos]** também.
+A pesquisa exibe resultados semelhantes se você também estiver trabalhando na **[!UICONTROL exibição do Assets]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425489)
 
 ## Arquivos e pastas {#files-folders}
 
-**Cenário 2: pesquisar todos os arquivos usando o `classic car` palavra-chave dentro do `automobile` pasta.**
+**Cenário 2: procure todos os arquivos usando a palavra-chave `classic car` na pasta `automobile`.**
 
-O filtro de arquivos e pastas ajuda a restringir a pesquisa. Use as opções Arquivos, Pastas ou Arquivos e pastas disponíveis na lista suspensa com base em sua necessidade. A opção para escolher entre Arquivos, Pastas ou Arquivos e pastas pode ser acessada na guia **[!UICONTROL Exibição do administrador]** somente. No **[!UICONTROL Exibição de ativos]**, vá para [!UICONTROL Caminho] e navegue pela pasta em que deseja realizar uma pesquisa.
+O filtro de arquivos e pastas ajuda a restringir a pesquisa. Use as opções Arquivos, Pastas ou Arquivos e pastas disponíveis na lista suspensa com base em sua necessidade. A opção para escolher entre Arquivos, Pastas ou Arquivos e Pastas está acessível somente no **[!UICONTROL modo de exibição de Administrador]**. No **[!UICONTROL modo de exibição do Assets]**, vá para [!UICONTROL Caminho] e procure a pasta em que deseja realizar uma pesquisa.
 
-* Use o **[!UICONTROL Arquivos]** opção quando precisar pesquisar especificamente arquivos em um caminho específico no repositório. Não é necessário pesquisar pastas no caminho definido.
-* Use o **[!UICONTROL Pastas]** opção quando precisar limitar sua pesquisa a pastas em um caminho específico.
-* Use o **[!UICONTROL Arquivos e pastas]** opção se precisar pesquisar em todos os ativos disponíveis no caminho especificado no repositório.
+* Use a opção **[!UICONTROL Arquivos]** quando precisar pesquisar especificamente por arquivos em um caminho específico dentro do repositório. Não é necessário pesquisar pastas no caminho definido.
+* Use a opção **[!UICONTROL Pastas]** quando precisar limitar sua pesquisa a pastas em um caminho específico.
+* Use a opção **[!UICONTROL Arquivos e pastas]** se precisar pesquisar todos os ativos disponíveis no caminho especificado no repositório.
 
 Para chegar a esse cenário, execute as etapas abaixo:
 
-1. Especificar `classic car` como a palavra-chave de pesquisa e clique em Pesquisar.
-2. Clique em Filtros e defina o caminho da pasta para a `automobile` pasta. Por exemplo, `/content/dam/multiple-assets/automobile`
+1. Especifique `classic car` como a palavra-chave de pesquisa e clique em Pesquisar.
+2. Clique em Filtros e defina o caminho da pasta `automobile`. Por exemplo, `/content/dam/multiple-assets/automobile`
 Selecione a pasta no caminho e navegue até a pasta desejada se desejar pesquisar na pasta específica.
 3. Selecione Arquivos na lista suspensa para exibir todos os arquivos com a palavra-chave `classic car`.
 
@@ -73,49 +73,49 @@ Selecione a pasta no caminho e navegue até a pasta desejada se desejar pesquisa
 
 ## Operadores {#operators}
 
-**Cenário 3: pesquisar `Classic Car` ou `Car` palavras-chave usando várias combinações de operador para restringir sua pesquisa.**
+**Cenário 3: pesquise por palavras-chave `Classic Car` ou `Car` usando várias combinações de operador para restringir sua pesquisa.**
 
-Para executar o cenário acima no **[!UICONTROL Exibição do administrador]**, você pode usar uma combinação de vários operadores para aprimorar sua experiência de pesquisa. Os operadores compatíveis são:
+Para executar o cenário acima no **[!UICONTROL modo de exibição de Administrador]**, você pode usar uma combinação de vários operadores para aprimorar sua experiência de pesquisa. Os operadores compatíveis são:
 
 ### Operador AND {#and-operator}
 
-O operador AND é o operador padrão entre duas palavras-chave na Pesquisa Omni. Por exemplo, ao digitar `classic car` na barra de pesquisa, os resultados com `classic` e `car` palavras-chave são exibidas nos resultados da pesquisa, por padrão.
+O operador AND é o operador padrão entre duas palavras-chave na Pesquisa Omni. Por exemplo, quando você digita `classic car` na barra de pesquisa, os resultados com as palavras-chave `classic` e `car` aparecem nos resultados da pesquisa, por padrão.
 
 ![Pesquisar usando operador AND](assets/simple-search-1.png)
 
 ### Operador OR {#or-operator}
 
-Quando quiser ser específico com os resultados da pesquisa e quiser uma opção nos resultados da pesquisa, você poderá usar o operador OU. Por exemplo, a variável `classic OR car` palavra-chave fornece resultados de pesquisa com qualquer uma das palavras-chave em seus metadados.
+Quando quiser ser específico com os resultados da pesquisa e quiser uma opção nos resultados da pesquisa, você poderá usar o operador OU. Por exemplo, a palavra-chave `classic OR car` fornece resultados de pesquisa com qualquer uma das palavras-chave em seus metadados.
 
 ![Pesquisar usando operador OR](assets/or-operator.png)
 
 ### Operador NOT {#not-operator}
 
-Quando quiser recuperar os resultados, excluindo algumas palavras-chave, você pode usar o operador NOT. O operador NOT usa o símbolo de hífen (-) para direcionar a pesquisa por AEM sobre o que excluir dos resultados da pesquisa. Por exemplo, a variável `car - classic` consulta de pesquisa que especifica metadados que contêm `car` mas exclui `classic`.
+Quando quiser recuperar os resultados, excluindo algumas palavras-chave, você pode usar o operador NOT. O operador NOT usa o símbolo de hífen (-) para direcionar a pesquisa por AEM sobre o que excluir dos resultados da pesquisa. Por exemplo, a consulta de pesquisa `car - classic` que especifica metadados que contêm `car`, mas exclui `classic`.
 
 ![Pesquisar usando operador NOT](assets/not-operator.png)
 
-Da mesma forma, você pode procurar todos os carros, mas não jipe. A consulta tem a seguinte aparência: `car - jeep`. Ele exibe todos os ativos com metadados `car` mas exclui ativos com metadados `jeep`.
+Da mesma forma, você pode procurar todos os carros, mas não jipe. A consulta tem a seguinte aparência: `car - jeep`. Ele exibe todos os ativos com metadados `car`, mas exclui ativos com metadados `jeep`.
 
 ![Pesquisar usando operador NOT](assets/images-jeep.png)
 
-**[!UICONTROL Exibição de ativos]** não suporta o uso de Operadores.
+**[!UICONTROL O modo de exibição do Assets]** não oferece suporte ao uso de Operadores.
 
 ## Curingas {#wildcards}
 
-Os curingas são usados para substituir um ou mais caracteres na pesquisa. Para executar o cenário acima no **[!UICONTROL Exibição do administrador]**, você pode usar uma combinação de vários curingas para aprimorar sua experiência de pesquisa. Há dois curingas usados para executar a pesquisa - Ponto de interrogação (?) e Asterisco (*). O símbolo de ponto de interrogação é usado para pesquisar um único caractere, enquanto o símbolo de asterisco é usado para pesquisar vários caracteres.
+Os curingas são usados para substituir um ou mais caracteres na pesquisa. Para executar o cenário acima no **[!UICONTROL modo de exibição de Administrador]**, você pode usar uma combinação de vários curingas para aprimorar sua experiência de pesquisa. Há dois curingas usados para executar a pesquisa - Ponto de interrogação (?) e Asterisco (*). O símbolo de ponto de interrogação é usado para pesquisar um único caractere, enquanto o símbolo de asterisco é usado para pesquisar vários caracteres.
 
 ### Ponto de interrogação (?) {#question-mark}
 
 O símbolo de ponto de interrogação pode ser usado como operador condicional para facilitar a pesquisa no Experience Manager.
 
-* `car?` a consulta corresponde a palavra com um caractere após o carro. Por exemplo, carrinho.
-* `?car` a consulta corresponde a palavra com um caractere antes do carro. Por exemplo, cicatriz.
-* `car????` a consulta corresponde a palavra com quatro caracteres após o carro. Por exemplo, lavagem de carro.
+* A consulta `car?` corresponde a palavra com um caractere após o carro. Por exemplo, carrinho.
+* A consulta `?car` corresponde a palavra com um caractere antes do carro. Por exemplo, cicatriz.
+* A consulta `car????` corresponde à palavra com quatro caracteres após o carro. Por exemplo, lavagem de carro.
 
 ### Asterisco (*) {#asterisk}
 
-O asterisco é um operador curinga usado para ampliar sua pesquisa digitando menos caracteres. Quando você conhece os caracteres iniciais do ativo que está pesquisando, mas não sabe o resto, é possível usar o operador asterisco na pesquisa. Por exemplo, a variável `*car` o query retorna todos os ativos com o carro de sufixo disponível em seus metadados. Os resultados podem ser carro clássico, carro esportivo, clássico e carro esportivo, e assim por diante. Abaixo estão alguns exemplos de como usar o operador asterisco de várias maneiras:
+O asterisco é um operador curinga usado para ampliar sua pesquisa digitando menos caracteres. Quando você conhece os caracteres iniciais do ativo que está pesquisando, mas não sabe o resto, é possível usar o operador asterisco na pesquisa. Por exemplo, a consulta `*car` retorna todos os ativos com o carro de sufixo disponível em seus metadados. Os resultados podem ser carro clássico, carro esportivo, clássico e carro esportivo, e assim por diante. Abaixo estão alguns exemplos de como usar o operador asterisco de várias maneiras:
 
 * `*car*` retorna todas as combinações possíveis.
 * `car*` retorna ativos com lavagem de carro, transportadora, transporte e assim por diante.
@@ -123,13 +123,13 @@ O asterisco é um operador curinga usado para ampliar sua pesquisa digitando men
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425488)
 
-**[!UICONTROL Exibição de ativos]** não aceita o uso de curingas.
+**[!UICONTROL O modo de exibição do Assets]** não oferece suporte ao uso de Curingas.
 
 ## Filtros {#filters}
 
-O Adobe Experience Manager fornece vários filtros de pesquisa que você pode usar para refinar e segmentar sua pesquisa usando uma consulta com escopo. Quando não tiver certeza sobre o título ou a metadescrição de um ativo, você pode usar vários filtros de pesquisa para tornar sua pesquisa mais relevante. Você pode usar filtros de pesquisa com ou sem digitar uma palavra-chave. Para abrir o painel Filtros no **[!UICONTROL Exibição do administrador]**, clique no link **GlobalNav** e selecione **[!UICONTROL Filtros]**. Ao passo que, para abrir o painel Filtros no **[!UICONTROL Exibição de ativos]**, clique em [!UICONTROL Filtros] ao lado da barra de pesquisa.
+O Adobe Experience Manager fornece vários filtros de pesquisa que você pode usar para refinar e segmentar sua pesquisa usando uma consulta com escopo. Quando não tiver certeza sobre o título ou a metadescrição de um ativo, você pode usar vários filtros de pesquisa para tornar sua pesquisa mais relevante. Você pode usar filtros de pesquisa com ou sem digitar uma palavra-chave. Para abrir o painel de filtros no **[!UICONTROL modo de exibição de Administrador]**, clique no ícone **GlobalNav** e selecione **[!UICONTROL Filtros]**. Enquanto isso, para abrir o painel de filtros no **[!UICONTROL modo de exibição do Assets]**, clique em [!UICONTROL Filtros] ao lado da barra de pesquisa.
 
-![Painel Filtros](assets/filters.png)
+![Painel de filtros](assets/filters.png)
 
 Você pode selecionar um ou vários filtros para refinar sua pesquisa no Adobe Experience Manager.
 <!--The following filters are available out of the box for all the users of Experience Manager:
@@ -157,37 +157,37 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 ![Filter example 1](assets/filter-1.png)
 -->
 
-**Cenário 4: procure por documentos do tipo PDF não publicados com o `classic car` palavra-chave nela.**
+**Cenário 4: procure por documentos do tipo PDF não publicados com a palavra-chave `classic car`.**
 
-Execute as seguintes etapas no **[!UICONTROL Exibição do administrador]**:
+Execute as seguintes etapas no **[!UICONTROL Modo de exibição de Administração]**:
 
-1. Tipo `classic car` na barra de pesquisa.
-1. Vá para Filtros. Em [!UICONTROL Tipo de arquivo], expandir [!UICONTROL Documentos], expandir ainda mais [!UICONTROL Processamento do Word].
-1. Selecionar [!UICONTROL PDF].
+1. Digite `classic car` na barra de pesquisa.
+1. Vá para Filtros. Em [!UICONTROL Tipo de Arquivo], expanda [!UICONTROL Documentos] e expanda [!UICONTROL Processamento de Texto].
+1. Selecione [!UICONTROL PDF].
 1. Ir para [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Não publicado].
 
 <!--![Filter example 2](assets/filter-2.png)-->
 
-Execute as seguintes etapas no **[!UICONTROL Exibição de ativos]**:
+Execute as seguintes etapas no **[!UICONTROL modo de exibição do Assets]**:
 
-1. Tipo `classic car` na barra de pesquisa.
+1. Digite `classic car` na barra de pesquisa.
 1. Vá para Filtros. Em [!UICONTROL Tipo MIME], selecione [!UICONTROL PDF].
-1. Ir para [!UICONTROL Status do ativo], selecione [!UICONTROL Todos] para incluir todos os ativos publicados e não publicados.
+1. Vá para [!UICONTROL Status do ativo], selecione [!UICONTROL Todos] para incluir todos os ativos publicados e não publicados.
 
 **Cenário 5: pesquisar todas as imagens, exceto PNG**
 
-Quando não tiver certeza sobre o título ou a metadescrição de um ativo, você pode usar vários filtros de pesquisa para tornar sua pesquisa mais relevante. Por exemplo, para pesquisar ativos no **[!UICONTROL Exibição do administrador]**, siga as etapas abaixo:
+Quando não tiver certeza sobre o título ou a metadescrição de um ativo, você pode usar vários filtros de pesquisa para tornar sua pesquisa mais relevante. Por exemplo, para pesquisar ativos no **[!UICONTROL modo de exibição de Administrador]**, siga as etapas abaixo:
 
 1. Ir para filtros de pesquisa.
-1. Vá para Filtros. Em [!UICONTROL Tipo de arquivo], expandir [!UICONTROL Imagens] e selecione [!UICONTROL Habilitado para Web]
+1. Vá para Filtros. Em [!UICONTROL Tipo de Arquivo], expanda [!UICONTROL Imagens] e selecione [!UICONTROL Web habilitado]
 1. Desmarque PNG.
 
 <!--![Search all images except jeep](assets/images-png.png)-->
 
-Para pesquisar ativos usando o cenário mencionado no **[!UICONTROL Exibição de ativos]**, siga as etapas abaixo:
+Para pesquisar ativos usando o cenário mencionado no **[!UICONTROL modo de exibição do Assets]**, siga as etapas abaixo:
 
 1. Ir para filtros de pesquisa.
-1. Vá para Filtros. Em [!UICONTROL Tipo MIME], selecionar todos os tipos MIME fornecidos, mas Desmarcar PNG.
+1. Vá para Filtros. Em [!UICONTROL Tipo MIME], selecione todos os tipos MIME fornecidos, mas desmarque PNG.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425486)
 
@@ -195,29 +195,31 @@ Para pesquisar ativos usando o cenário mencionado no **[!UICONTROL Exibição d
 
 A pesquisa no AEM permite criar consultas de pesquisa complexas com menos esforço. Veja a seguir os vários exemplos para ajudar você a criar consultas de pesquisa complexas:
 
-**Cenário 6: pesquisar todos os documentos no repositório Experience Manager com `classic car` em seus metadados. O conteúdo do documento deve conter `classic car` palavra-chave nela.**
+**Cenário 6: procure todos os documentos no repositório Experience Manager com `classic car` em seus metadados. O conteúdo do documento deve conter a palavra-chave `classic car`.**
 
 O Adobe Experience Manager permite adicionar vários critérios à pesquisa. Você pode usar uma combinação de palavras-chave, operadores e filtros para restringir os resultados da pesquisa.
 
 Para executar uma pesquisa para o cenário 6:
 
-1. Digite o `classic car` palavra-chave na barra de pesquisa.
+1. Digite a palavra-chave `classic car` na barra de pesquisa.
 2. Navegue até o painel Filtros e selecione Documentos em Tipo de arquivo.
-3. Refine sua pesquisa usando o curinga asterisco. Tipo `"classic car"` para pesquisar todos os ativos que contêm a variável `classic car` palavra-chave.
+3. Refine sua pesquisa usando o curinga asterisco. Digite `"classic car"` para pesquisar todos os ativos que contêm a palavra-chave `classic car`.
 
 <!--![Scenario 6](assets/scenario-6.png)-->
 
-O cenário 6 não é possível executar no **[!UICONTROL Exibição de ativos]** como não suporta o uso de curingas.
+Não é possível executar o cenário 6 no **[!UICONTROL modo de exibição do Assets]**, pois ele não oferece suporte ao uso de Curingas.
 
-**Cenário 7: procure todos os documentos no repositório de Experience Manager em que o conteúdo do documento deve incluir `car` mas excluir `classic`. A mesma condição se aplica aos metadados de um ativo.**
+**Cenário 7: procure todos os documentos no repositório de Experience Manager em que o conteúdo do documento deve incluir `car`, mas excluir `classic`. A mesma condição se aplica aos metadados de um ativo.**
 
 Para executar uma pesquisa para o cenário 7:
 
-Digite o `car - classic` palavra-chave na barra de pesquisa. Navegue até o painel Filtros e selecione Documentos em Tipo de arquivo. A ordem de prioridade da pesquisa se baseia no seguinte: Prioridade 1: Prioridade de metadados 2: Tags inteligentes
+Digite a palavra-chave `car - classic` na barra de pesquisa. Navegue até o painel Filtros e selecione Documentos em Tipo de arquivo. A ordem de prioridade da pesquisa é baseada no seguinte:
+Prioridade 1: Metadados
+Prioridade 2: tags inteligentes
 
 <!--![Scenario 7](assets/scenario-7.png)-->
 
-O cenário 7 não pode ser executado no **[!UICONTROL Exibição de ativos]** como não suporta o uso de curingas.
+Não é possível executar o cenário 7 no **[!UICONTROL modo de exibição do Assets]**, pois ele não oferece suporte ao uso de Curingas.
 
 <!--
 **Scenario 9: Search for all images except PNG**
@@ -235,55 +237,56 @@ When you are unsure about the title or meta description of an asset, you can use
 ![Search all images except jeep](assets/images-jeep.png)
 -->
 
-**Cenário 8: pesquisar tags de metadados com jipe de metadados**
+**Cenário 8: pesquisar marcas de metadados com jipe de metadados**
 
-Você pode capturar um critério específico usando vários filtros de pesquisa. Tag é uma palavra-chave atribuída a um ativo para torná-lo identificável entre um grande número de ativos. Por exemplo, neste cenário, pesquise por ativos com *jipe* nela. Para fazer isso, digite `tags:jeep` na barra de pesquisa. Somente os ativos que atendem a esse critério são listados nos resultados da pesquisa.
+Você pode capturar um critério específico usando vários filtros de pesquisa. Tag é uma palavra-chave atribuída a um ativo para torná-lo identificável entre um grande número de ativos. Por exemplo, neste cenário, pesquise por ativos com tags *jeep*. Para fazer isso, digite `tags:jeep` na barra de pesquisa. Somente os ativos que atendem a esse critério são listados nos resultados da pesquisa.
 
 <!--![Search using tags](assets/search-tags.png)-->
 
-A pesquisa exibirá resultados semelhantes se você estiver trabalhando na **[!UICONTROL Exibição de ativos]** também.
+A pesquisa exibe resultados semelhantes se você também estiver trabalhando na **[!UICONTROL exibição do Assets]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425490)
 
-**Cenário 9: encontrar correspondência semelhante para carro de cor vermelha**
+**Cenário 9: encontrar correspondência semelhante para carro vermelho**
 
-Ao realizar sua pesquisa no AEM, você pode filtrar os resultados mostrando ativos semelhantes aos selecionados. Você pode usar o **Localizar semelhante** opção para restringir sua pesquisa à correspondência exata ou semelhante do Ativo pesquisado. Isso ajuda a encontrar ativos que têm tags inteligentes semelhantes ao ativo selecionado. Por exemplo, quando você deseja pesquisar por ativos semelhantes, execute as seguintes etapas:
+Ao realizar sua pesquisa no AEM, você pode filtrar os resultados mostrando ativos semelhantes aos selecionados. Você pode usar a opção **Localizar semelhante** para restringir sua pesquisa à correspondência exata ou semelhante do ativo pesquisado. Isso ajuda a encontrar ativos que têm tags inteligentes semelhantes ao ativo selecionado. Por exemplo, quando você deseja pesquisar por ativos semelhantes, execute as seguintes etapas:
 
 1. Pesquise o ativo de acordo com sua necessidade.
-1. Passe o mouse sobre o ativo > clique nas reticências > selecionar [!UICONTROL Localizar semelhante].
-ou Selecione o ativo > navegue até as reticências na parte superior direita > selecione [!UICONTROL Localizar semelhante].
+1. Passe o mouse sobre o ativo > clique nas reticências > selecione [!UICONTROL Localizar semelhante].
+ou
+Selecione o ativo > navegue até as reticências na parte superior direita > selecione [!UICONTROL Localizar semelhante].
 
    ![Localizar semelhante](assets/find-similar.png)
 
 1. Observe a barra de pesquisa. A miniatura do ativo selecionado aparece na barra de pesquisa, indicando o requisito de pesquisa. Como resultado, ele retorna ativos com tags inteligentes semelhantes.
 
-Execute as seguintes etapas no **[!UICONTROL Exibição de ativos]**:
+Execute as seguintes etapas no **[!UICONTROL modo de exibição do Assets]**:
 
 1. Pesquise o ativo de acordo com sua necessidade.
-1. Selecione a imagem > navegar para [!UICONTROL Localizar Imagem Semelhante] opção na barra de navegação na parte superior.
+1. Selecione a imagem > navegue até a opção [!UICONTROL Localizar imagem semelhante] na barra de navegação na parte superior.
 Isso leva você à coleção de ativos com cores e metadados semelhantes.
 
 ## Aspectos da pesquisa personalizada {#custom-search-facets}
 
-Os aspectos de pesquisa no Adobe Experience Manager permitem pesquisar ativos de várias maneiras, em vez de em uma única ordem pré-determinada ou taxonômica. Você pode personalizar os aspectos de pesquisa e adicionar predicados de acordo com sua necessidade. Ler [Pesquisar aspectos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) para obter o guia passo a passo sobre como adicionar um predicado personalizado.
+Os aspectos de pesquisa no Adobe Experience Manager permitem pesquisar ativos de várias maneiras, em vez de em uma única ordem pré-determinada ou taxonômica. Você pode personalizar os aspectos de pesquisa e adicionar predicados de acordo com sua necessidade. Leia [Aspectos da Pesquisa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) para obter o guia passo a passo sobre como adicionar um predicado personalizado.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
 -->
 
-**Cenário 10: pesquisar ativos específicos com base na última data de modificação ou expiração**
+**Cenário 10: pesquisar ativos específicos com base em sua última data de modificação ou expiração**
 
-Restrições de data permitem restringir a pesquisa personalizada a um período específico, por exemplo, usando os filtros de pesquisa de período. Para pesquisar o requisito acima, digite `classic car` na barra de pesquisa. Selecione o intervalo de datas no [!UICONTROL Data de criação] e [!UICONTROL Última modificação] filtros de data.
+Restrições de data permitem restringir a pesquisa personalizada a um período específico, por exemplo, usando os filtros de pesquisa de período. Para pesquisar o requisito acima, digite `classic car` na barra de pesquisa. Selecione o intervalo de datas nos filtros de data [!UICONTROL Data de Criação] e [!UICONTROL Última Modificação].
 
 ![Filtros de data](assets/date-filters.png)
 
-A pesquisa exibirá resultados semelhantes se você estiver trabalhando na [!UICONTROL Exibição de ativos] também.
+A pesquisa exibe resultados semelhantes se você também estiver trabalhando na [!UICONTROL exibição do Assets].
 
 ## Aumentar a relevância de palavras-chave {#boosting-keywords}
 
 Você pode melhorar a relevância de palavras-chave para ativos específicos para ajudar a impulsionar pesquisas com base nas palavras-chave. Em outras palavras, as imagens para as quais você promove palavras-chave específicas aparecem na parte superior dos resultados da pesquisa quando você pesquisa com base nessas palavras-chave.
 
-1. Na interface do usuário do Assets, abra a página de propriedades do ativo. Clique em [!UICONTROL Avançado] e clique em [!UICONTROL Adicionar] em [!UICONTROL Elevar para palavras-chave de pesquisa].
+1. Na interface do usuário do Assets, abra a página de propriedades do ativo. Clique em [!UICONTROL Avançado] e em [!UICONTROL Adicionar] em [!UICONTROL Elevar para palavras-chave de pesquisa].
 2. Na caixa Pesquisar Promover, especifique uma palavra-chave para a qual deseja impulsionar a pesquisa da imagem e clique em [!UICONTROL Adicionar]. Você pode especificar várias palavras-chave da mesma maneira.
 3. Clique em [!UICONTROL Salvar e fechar]. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
 
@@ -303,7 +306,7 @@ Você pode melhorar a relevância de palavras-chave para ativos específicos par
 The newly added assets are not indexed.
 -->
 
-## Diferenças entre [!UICONTROL Exibição do administrador] e [!UICONTROL Exibição de ativos] Pesquisar {#differences-asset-and-admin-view}
+## Diferenças entre a [!UICONTROL Exibição do administrador] e a [!UICONTROL Exibição do Assets] Pesquisa {#differences-asset-and-admin-view}
 
 <table>
     <tr>
@@ -314,7 +317,7 @@ The newly added assets are not indexed.
     <tr>
         <td> Aspectos personalizados </td>
         <td> Você pode adicionar <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">aspectos de pesquisa personalizados de acordo com o requisito.</td>
-        <td> Os aspectos personalizados são parcialmente compatíveis com a exibição de Ativos. Os aspectos suportados são:
+        <td> Os aspectos personalizados são parcialmente compatíveis com a visualização do Assets. Os aspectos suportados são:
             <ul>
             <li> Tags previstas
             <li> Nome

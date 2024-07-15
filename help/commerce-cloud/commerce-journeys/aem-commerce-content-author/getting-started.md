@@ -17,7 +17,7 @@ Saiba mais sobre a criação do CIF no Adobe Experience Manager (AEM).
 
 ## A história até agora {#story-so-far}
 
-No documento anterior deste Conteúdo AEM e jornada do Commerce, [Saiba mais sobre o conteúdo do AEM e o Commerce](/help/commerce-cloud/introduction.md)No entanto, você aprendeu a teoria e os conceitos básicos de conteúdo headless CMS e AEM e Commerce.
+No documento anterior deste Conteúdo de AEM e jornada do Commerce, [Saiba mais sobre o Conteúdo de AEM e o Commerce AEM](/help/commerce-cloud/introduction.md), você aprendeu a teoria básica e os conceitos de CMS headless e Conteúdo de e Commerce.
 
 Este artigo se baseia nesses fundamentos.
 
@@ -48,13 +48,13 @@ Se os dados de produto e categoria forem necessários em componentes de comérci
 ### Seletor de produtos
 
 Clicar no ícone de pasta abre a interface modal do seletor (por exemplo, teaser de produto)
-![seletor de produto](assets/product-picker-open.png)
+![seletor de produtos](assets/product-picker-open.png)
 
 Os produtos podem ser encontrados navegando pela estrutura do catálogo à esquerda ou pesquisando. A pesquisa de texto completo respeita a categoria selecionada e limita os resultados da pesquisa a essa categoria.
 ![pasta do seletor de produtos](assets/product-picker-folders.png)
 
 Os produtos com variações são marcados com um ícone de pasta que pode ser clicado para mostrar todas as variações.
-![variantes do seletor de produtos](assets/product-picker-variants.png)
+![variantes de seletor de produto](assets/product-picker-variants.png)
 ![grades do seletor de produtos abertas](assets/product-picker-variants-open.png)
 
 ### Seletor de Categoria
@@ -70,28 +70,28 @@ Navegue pela estrutura do catálogo à esquerda e selecione a categoria.
 O cockpit do produto é um local central para acessar rapidamente o catálogo de produtos com todo o conteúdo enriquecido. Você aprenderá em um dos próximos módulos a enriquecer dados do produto com conteúdo. Por enquanto, vamos nos concentrar no acesso aos dados do produto.
 
 No menu principal, clique em commerce para ver uma lista de todos os catálogos de produtos anexados.
-![item de menu comércio](assets/commerce-menu-item.png)
+![item de menu de comércio](assets/commerce-menu-item.png)
 
 Isso mostra uma lista de todos os catálogos de produtos conectados.
-![catálogos integrados do cockpit](assets/cockpit-Integrated-catalogs.png)
+![catálogos integrados da ferramenta cockpit](assets/cockpit-Integrated-catalogs.png)
 
 O catálogo de produtos mostra, por padrão, todas as categorias de primeiro nível com todos os produtos. Clicar em uma categoria abre essa categoria com todos os produtos e subcategorias relacionados, incluindo seus produtos.
-![catálogo de produtos cockpit](assets/cockpit-product-catalog.png)
+![catálogo de produtos da ferramenta cockpit](assets/cockpit-product-catalog.png)
 
 Você pode abrir as propriedades do produto clicando no ícone de propriedade. O ícone é exibido ao passar o mouse sobre um bloco de produto.
 ![propriedades do produto cockpit](assets/cockpit-properties.png)
 
-Todas as propriedades do produto são somente leitura porque os dados são carregados em tempo real do back-end conectado. A alteração das propriedades do produto deve ser feita no sistema de back-end, que é o sistema de registro. A guia **Variantes** só aparecem se o produto tiver variações. Clicar na guia exibe todas as variações com seus atributos.
-![variantes de produto do cockpit](assets/cockpit-properties-variants.png)
+Todas as propriedades do produto são somente leitura porque os dados são carregados em tempo real do back-end conectado. A alteração das propriedades do produto deve ser feita no sistema de back-end, que é o sistema de registro. A guia **Variantes** será exibida somente se o produto tiver variações. Clicar na guia exibe todas as variações com seus atributos.
+![variantes de produtos da ferramenta cockpit](assets/cockpit-properties-variants.png)
 
 As guias restantes mostram todo o conteúdo de AEM associado ao produto. Essas guias são discutidas em um dos módulos a seguir.
 
 ## AEM Omnisearch {#omnisearch}
 
 Usar o Omnisearch é uma maneira fácil de encontrar conteúdo AEM usando a pesquisa de texto completo. O CIF amplia o Omnisearch com a pesquisa em texto completo de catálogos de produtos com seu conteúdo AEM associado.
-![item de menu comércio](assets/omnisearch.png)
+![item de menu de comércio](assets/omnisearch.png)
 
-O Omnisearch executa uma pesquisa de texto completo no back-end de comércio para encontrar todos os produtos relacionados. O resultado está listado em **Ver todos os produtos**. O Omnisearch também pesquisa no AEM o conteúdo associado ao produto pesquisado. Os resultados estão listados nas respectivas categorias de AEM. Neste exemplo, um fragmento de conteúdo está relacionado ao produto.
+O Omnisearch executa uma pesquisa de texto completo no back-end de comércio para encontrar todos os produtos relacionados. O resultado está listado em **Exibir Todos os Produtos**. O Omnisearch também pesquisa no AEM o conteúdo associado ao produto pesquisado. Os resultados estão listados nas respectivas categorias de AEM. Neste exemplo, um fragmento de conteúdo está relacionado ao produto.
 
 ## O que vem a seguir {#what-is-next}
 
@@ -101,10 +101,10 @@ Agora que concluiu esta parte da jornada, você deve:
 * Como acessar o catálogo de produtos no AEM usando seletores de produto e categoria
 * Como acessar dados de conteúdo e comércio usando o cockpit do produto e o AEM Omnisearch
 
-Desenvolva esse conhecimento e continue sua jornada revisando o documento a seguir [Gerenciar páginas e modelos do catálogo de produtos](catalog-templates.md), onde você aprende a criar e personalizar sua primeira experiência de catálogo de produtos.
+Desenvolva esse conhecimento e prossiga com sua jornada revisando a seguir o documento [Gerenciar páginas e modelos do catálogo de produtos](catalog-templates.md), onde você aprenderá a criar e personalizar sua primeira experiência com o catálogo de produtos.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada-[Gerenciar páginas e modelos do catálogo de produtos](catalog-templates.md)-a seguir estão alguns recursos opcionais que aprofundam alguns conceitos mencionados aqui. No entanto, esses recursos opcionais não são necessários para continuar na jornada.
+Embora seja recomendável seguir para a próxima parte da jornada -[Gerenciar páginas e modelos do catálogo de produtos](catalog-templates.md) - os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados aqui. No entanto, esses recursos opcionais não são necessários para continuar na jornada.
 
 * [Configurando lojas e catálogos](/help/commerce-cloud/getting-started.md#catalog)

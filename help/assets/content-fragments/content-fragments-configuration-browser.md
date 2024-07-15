@@ -1,5 +1,5 @@
 ---
-title: Fragmentos de conteúdo - Navegador de configuração (Ativos - Fragmentos de conteúdo)
+title: Fragmentos de conteúdo - Navegador de configuração (Assets - Fragmentos de conteúdo)
 description: Saiba como ativar a funcionalidade de Fragmento de conteúdo no Navegador de configuração.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 feature: Content Fragments
@@ -14,7 +14,7 @@ ht-degree: 80%
 
 # Fragmentos de conteúdo - Navegador de configuração{#content-fragments-configuration-browser}
 
-Saiba como ativar determinadas funcionalidades do Fragmento de conteúdo no Navegador de configuração para usar recursos avançados de entrega headless AEM.
+Saiba como ativar determinadas funcionalidades do fragmento de conteúdo no Navegador de configuração para usar os recursos avançados de entrega headless do AEM.
 
 ## Ativar a funcionalidade de fragmento de conteúdo para sua instância {#enable-content-fragment-functionality-instance}
 
@@ -41,7 +41,7 @@ Para usar determinadas [funcionalidades dos fragmentos de conteúdo](#creating-a
 
 >[!NOTE]
 >
->Consulte [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
+>Consulte [Navegador de Configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Para usar determinadas [funcionalidades dos fragmentos de conteúdo](#creating-a
 
 ### Aplique a configuração à sua pasta de ativos {#apply-the-configuration-to-your-assets-folder}
 
-Quando a configuração **global** está ativado para a funcionalidade de fragmento de conteúdo e se aplica a qualquer pasta de ativos.
+Quando a configuração **global** está habilitada para a funcionalidade de fragmento de conteúdo, ela se aplica a qualquer pasta do Assets.
 
 Para usar outras configurações (com exceção da global) com uma pasta de ativos comparável, é necessário definir a conexão. Está conexão é feita ao selecionar a **configuração** apropriada na guia **Cloud Services** das **Propriedades da pasta** apropriada.
 

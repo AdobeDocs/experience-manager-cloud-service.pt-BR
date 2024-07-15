@@ -62,7 +62,7 @@ Depois que um cliente passa a existir como uma Organização IMS, será necessá
 
 As noções básicas do Adobe Identity Management, incluindo a configuração do IDP, são contempladas [aqui](https://helpx.adobe.com/br/enterprise/using/set-up-identity.html).
 
-A Administração corporativa e o uso de Admin Console são abordados [aqui](https://helpx.adobe.com/br/enterprise/admin-guide.html).
+A Administração e o uso de Admin Console da empresa são abordados [aqui](https://helpx.adobe.com/br/enterprise/admin-guide.html).
 
 ### Integração de usuários ao Admin Console {#onboarding-users-in-admin-console}
 
@@ -160,7 +160,7 @@ O AEM pode continuar a oferecer suporte a logons locais para usuários Admin. A 
 
 <!-- the above image must be updated for skyline -->
 
-**Logon baseado no IMS**
+**Logon baseado em IMS**
 
 Para outros usuários, o logon baseado em IMS é usado após a configuração do IMS na instância. O usuário clica no botão Fazer logon com a Adobe, conforme mostrado abaixo:
 

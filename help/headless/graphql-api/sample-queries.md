@@ -46,7 +46,7 @@ Veja esses exemplos de consultas para obter ilustrações de como criar consulta
 >
 >É possível acessar o editor de consultas por meio de:
 >
->* **Ferramentas** > **Geral** > **Editor de consultas GraphQL**
+>* **Ferramentas** > **Geral** > **Editor de Consultas do GraphQL**
 >* diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 >[!NOTE]
@@ -1808,7 +1808,7 @@ Para a entrega do URL a um ativo do Dynamic Media
 
 * Consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Referência da imagem](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
-* Consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Várias referências](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+* Consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Várias Referências](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
 
 ## Exemplo de estrutura do fragmento de conteúdo (usada com GraphQL) {#content-fragment-structure-graphql}
 

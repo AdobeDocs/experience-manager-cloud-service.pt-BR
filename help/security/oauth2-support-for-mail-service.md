@@ -29,7 +29,7 @@ Para obter mais informações sobre o Serviço de email do AEM as a Cloud Servic
    ![Iniciar processo de registro do aplicativo](assets/oauth-outlook1.png)
 
 1. Preencha as informações de acordo com suas necessidades e clique em **Registrar**.
-1. Acesse o aplicativo criado e selecione **Permissões de API**.
+1. Vá para o aplicativo criado e selecione **Permissões de API**.
 1. Clique em **Adicionar permissão** > **Permissão de gráfico** > **Permissões delegadas**.
 1. Selecione as permissões abaixo para seu aplicativo e clique em **Adicionar permissão**:
 
@@ -61,7 +61,7 @@ Resumindo, você precisará das seguintes informações para configurar o OAuth2
 
 Em seguida, gere o token de atualização, que faz parte da configuração OSGi em uma etapa subsequente, seguindo este método:
 
-1. Abra o seguinte URL no navegador após substituir `clientID` e `tenantID` com os valores específicos da sua conta:
+1. Abra a seguinte URL no navegador depois de substituir `clientID` e `tenantID` pelos valores específicos da sua conta:
 
    ```
    https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
@@ -168,7 +168,7 @@ em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp
    ```
 
 1. Para o Outlook, o valor de configuração do `smtp.host` é `smtp.office365.com`
-1. No tempo de execução, transmita no `refreshToken values` e `clientSecret` usando a API de variáveis do Cloud Manager, conforme descrito [aqui](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) ou usando [Cloud Manager para adicionar variáveis.](/help/implementing/cloud-manager/environment-variables.md) Os valores das variáveis `SECRET_SMTP_OAUTH_REFRESH_TOKEN`  e `SECRET_SMTP_OAUTH_CLIENT_SECRET` deve ser definida.
+1. No tempo de execução, forneça os segredos `refreshToken values` e `clientSecret` usando a API de variáveis do Cloud Manager, conforme descrito [aqui](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) ou usando [Cloud Manager para adicionar variáveis.](/help/implementing/cloud-manager/environment-variables.md) Os valores das variáveis `SECRET_SMTP_OAUTH_REFRESH_TOKEN` e `SECRET_SMTP_OAUTH_CLIENT_SECRET` devem ser definidos.
 
 ### Resolução de problemas {#troubleshooting}
 

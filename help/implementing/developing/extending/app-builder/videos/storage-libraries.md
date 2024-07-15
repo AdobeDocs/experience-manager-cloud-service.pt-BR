@@ -1,6 +1,6 @@
 ---
-title: Bibliotecas de armazenamento do App Builder
-description: Saiba mais sobre as bibliotecas de armazenamento de estado e arquivo para aplicativos do App Builder.
+title: Bibliotecas de armazenamento da App Builder
+description: Saiba mais sobre bibliotecas de armazenamento de estado e arquivos para aplicativos do App Builder.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ---
 
-# Bibliotecas de armazenamento do App Builder
+# Bibliotecas de armazenamento da App Builder
 
 ## Introdução às bibliotecas de armazenamento
 
-Saiba mais sobre as opções de armazenamento do App Builder e por que o armazenamento é importante em um aplicativo do App Builder.
+Saiba mais sobre as opções de armazenamento da App Builder e por que o armazenamento é importante em um aplicativo App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339238/?quality=12&learn=on)
 
@@ -32,6 +32,6 @@ Saiba como instalar a biblioteca de armazenamento de estado no aplicativo App Bu
 
 ## Uso da biblioteca de armazenamento de arquivos
 
-Saiba como instalar a biblioteca de armazenamento de arquivos no aplicativo App Builder para salvar, recuperar e excluir dados.
+Saiba como instalar a biblioteca de armazenamento de arquivos no aplicativo do App Builder para salvar, recuperar e excluir dados.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339239/?quality=12&learn=on)

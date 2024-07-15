@@ -35,7 +35,7 @@ Depois que todos os arquivos forem enfileirados, clique em **[!UICONTROL Fazer u
 
 >[!TIP]
 >
->Caso faça upload de uma estrutura de pastas para a visualização de Ativos, não será necessário criar um arquivo .ZIP com a estrutura de pastas. Você poderá fazer upload das estruturas de pastas diretamente. Um arquivo .ZIP carregado na visualização Ativos é armazenado como um ativo ZIP e não é extraído automaticamente após o upload.
+>Caso faça upload de uma estrutura de pastas para a visualização Assets, não será necessário criar um arquivo .ZIP com a estrutura de pastas. Você poderá fazer upload das estruturas de pastas diretamente. Um arquivo .ZIP carregado na visualização do Assets é armazenado como um ativo ZIP e não é extraído automaticamente após o upload.
 
 ## Visualizar o progresso e o status do upload {#upload-progress}
 
@@ -83,7 +83,7 @@ Se você tentar fazer upload de ativos duplicados, os ativos não serão carrega
 
 >[!TIP]
 >
->Você pode fazer upload de ativos para o repositório DAM diretamente de dentro do [!DNL Creative Cloud] aplicativos de desktop.
+>Você pode carregar ativos para o repositório DAM diretamente dos aplicativos de desktop do [!DNL Creative Cloud].
 <!--TBD
 See how [[!DNL Assets view] integrates with [!DNL Adobe Asset Link]](/help/assets/integration-assets-view.md).
 -->
@@ -102,7 +102,7 @@ Os usuários podem excluir ativos ou pastas individuais que não são mais neces
 
 ## Próximas etapas {#next-steps}
 
-* [Assista a um vídeo sobre upload de ativos na visualização de Ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=pt-BR)
+* [Assista a um vídeo sobre carregamento de ativos no modo de exibição do Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/creating.html?lang=pt-BR)
 
 * Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 

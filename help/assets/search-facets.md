@@ -30,16 +30,16 @@ Por exemplo, se estiver procurando uma imagem, você pode escolher se deseja uma
 
 Os aspectos de pesquisa exibidos no painel Filtros são definidos no formulário de pesquisa subjacente usando predicados. Para exibir mais facetas ou diferentes, adicione predicados ao formulário padrão ou use um formulário personalizado que inclua facetas de sua escolha.
 
-Para pesquisas de texto completo, adicione o `Fulltext` para o formulário. Use o predicado Propriedade para pesquisar ativos que correspondem a uma única propriedade especificada. Use o predicado Opções para pesquisar ativos que correspondem a um ou mais valores de uma propriedade específica. Adicione o predicado Intervalo de datas para pesquisar ativos criados em um intervalo de datas especificado.
+Para pesquisas de texto completo, adicione o predicado `Fulltext` ao formulário. Use o predicado Propriedade para pesquisar ativos que correspondem a uma única propriedade especificada. Use o predicado Opções para pesquisar ativos que correspondem a um ou mais valores de uma propriedade específica. Adicione o predicado Intervalo de datas para pesquisar ativos criados em um intervalo de datas especificado.
 
-1. Clique no logotipo do Experience Manager e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar no Forms]**.
-1. Na página Pesquisar Forms, selecione **[!UICONTROL Trilho de pesquisa do administrador de ativos]** e selecione  **Editar** ![aemassets_edit](assets/aemassets_edit.png).
+1. Clique no logotipo do Experience Manager e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar Forms]**.
+1. Na página Pesquisar Forms, selecione **[!UICONTROL Painel de pesquisa do administrador do Assets]** e **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 
-   ![Localize e selecione o Painel de pesquisa do administrador de ativos](assets/assets_admin_searchrail.png)
+   ![Localize e selecione o Painel de Pesquisa do Administrador do Assets](assets/assets_admin_searchrail.png)
 
-1. Na página Editar Forms de pesquisa, arraste um predicado da **[!UICONTROL Selecionar predicado]** para o painel principal. Por exemplo, arrastar **[!UICONTROL Predicado da propriedade]**.
+1. Na página Editar Forms de Pesquisa, arraste um predicado da guia **[!UICONTROL Selecionar predicado]** para o painel principal. Por exemplo, arraste o **[!UICONTROL Predicado de propriedade]**.
 
-   ![Selecionar e mover um predicado para personalizar os filtros de pesquisa](assets/drag_predicate.png)
+   ![Selecione e mova um predicado para personalizar os filtros de pesquisa](assets/drag_predicate.png)
 
    *Figura: selecione e mova um predicado para personalizar os filtros de pesquisa.*
 
@@ -49,21 +49,21 @@ Para pesquisas de texto completo, adicione o `Fulltext` para o formulário. Use 
 
    *Figura: use a guia Configurações para fornecer as opções necessárias de um predicado.*
 
-1. No campo **[!UICONTROL Nome da propriedade]**, especifique um nome válido para a propriedade de metadados que deseja associar ao predicado. É o nome com base no qual a pesquisa é realizada. Por exemplo, insira `jcr:content/metadata/dc:description` ou `./jcr:content/metadata/dc:description`. Você também pode selecionar um nó existente na caixa de diálogo de seleção.
+1. No campo **[!UICONTROL Nome da propriedade]**, especifique um nome válido para a propriedade de metadados que deseja associar ao predicado. É o nome com base no qual a pesquisa é realizada. Por exemplo, digite `jcr:content/metadata/dc:description` ou `./jcr:content/metadata/dc:description`. Você também pode selecionar um nó existente na caixa de diálogo de seleção.
 
-   ![Associar uma propriedade de metadados a um predicado no campo Nome da propriedade](assets/property_settings.png)
+   ![Associe uma propriedade de metadados a um predicado no campo Nome da Propriedade](assets/property_settings.png)
 
-   *Figura: Associe uma propriedade de metadados a um predicado no campo Nome da propriedade.*
+   *Figura: associe uma propriedade de metadados a um predicado no campo Nome da Propriedade.*
 
-1. Clique em **[!UICONTROL Visualizar]** ![pré-visualização](assets/preview.png) para gerar uma pré-visualização do painel Filtros como ele aparece após a adição do predicado.
+1. Clique em **[!UICONTROL Visualizar]** ![visualizar](assets/preview.png) para gerar uma visualização do painel Filtros como ele aparece após a adição do predicado.
 1. Revise o layout do predicado no modo Visualizar.
 
-   ![Pré-visualizar o formulário de pesquisa antes de enviar as alterações](assets/preview-1.png)
+   ![Visualizar o formulário de pesquisa antes de enviar as alterações](assets/preview-1.png)
 
    Pré-visualizar o formulário de pesquisa antes de enviar as alterações
 
-1. Para fechar a visualização, clique no link **[!UICONTROL Fechar]** ![fechar](assets/do-not-localize/close_icon.png) no canto superior direito da visualização.
-1. Selecionar **[!UICONTROL Concluído]** para salvar as configurações.
+1. Para fechar a visualização, clique em **[!UICONTROL Fechar]** ![fechar](assets/do-not-localize/close_icon.png) no canto superior direito da visualização.
+1. Selecione **[!UICONTROL Concluído]** para salvar as configurações.
 1. Navegue até o painel Pesquisar na interface do usuário do Assets. O predicado Propriedade é adicionado ao painel.
 1. Insira uma descrição para o ativo a ser pesquisado na caixa de texto. Por exemplo, digite &quot;Adobe&quot;. Quando você executa uma pesquisa, os ativos com descrição correspondente a &quot;Adobe&quot; são listados nos resultados da pesquisa.
 
@@ -71,11 +71,11 @@ Para pesquisas de texto completo, adicione o `Fulltext` para o formulário. Use 
 
 O predicado Opções permite adicionar várias opções de pesquisa no painel Filtros. É possível selecionar uma ou mais dessas opções no painel Filtros para procurar ativos. Por exemplo, para pesquisar ativos com base no tipo de arquivo, configure opções como Imagens, Multimídia, Documentos e Arquivos no formulário de pesquisa. Após configurar essas opções, a pesquisa é executada em ativos do tipo GIF, JPEG, PNG e assim por diante, ao selecionar a opção Imagens no painel Filtros.
 
-Para mapear as opções para a respectiva propriedade, crie uma estrutura de nó para as opções e forneça o caminho do nó principal na propriedade Nome da propriedade do predicado Opções. O nó principal deve ser do tipo `sling`: `OrderedFolder`. As opções devem ser do tipo `nt:unstructured`. Os nós de opção devem ter as propriedades `jcr:title` e `value` configurado.
+Para mapear as opções para a respectiva propriedade, crie uma estrutura de nó para as opções e forneça o caminho do nó principal na propriedade Nome da propriedade do predicado Opções. O nó pai deve ser do tipo `sling`: `OrderedFolder`. As opções devem ser do tipo `nt:unstructured`. Os nós de opção devem ter as propriedades `jcr:title` e `value` configuradas.
 
-A variável `jcr:title` propriedade é um nome amigável para a opção que é exibida no painel Filtros. A variável `value` é usado na consulta para corresponder à propriedade especificada.
+A propriedade `jcr:title` é um nome amigável para a opção que é exibida no painel Filtros. O campo `value` é usado na consulta para corresponder à propriedade especificada.
 
-Quando você seleciona uma opção, a pesquisa é executada com base no `value` propriedade do nó da opção e seus nós filhos, se houver. A árvore inteira sob o nó de opção é percorrida e a variável `value` A propriedade de cada nó secundário é combinada usando uma operação OR para formar a consulta de pesquisa.
+Quando você seleciona uma opção, a pesquisa é executada com base na propriedade `value` do nó de opção e seus nós filhos, se houver. A árvore inteira sob o nó de opção é percorrida e a propriedade `value` de cada nó filho é combinada usando uma operação OR para formar a consulta de pesquisa.
 
 Por exemplo, se você selecionar &quot;Imagens&quot; para tipos de arquivos, a consulta de pesquisa dos ativos será criada ao combinar a propriedade `value` usando uma operação OR. Por exemplo, a consulta de pesquisa de imagens é construída combinando os resultados correspondentes de *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* e *image/tiff* da propriedade `jcr:content/metadata/dc:format` usando uma operação OR.
 
@@ -101,14 +101,14 @@ Se quiser usar um nó existente, especifique-o usando a caixa de diálogo de sel
 >
 >O predicado Opções é um invólucro personalizado que inclui predicados de propriedade para demonstrar o comportamento descrito. Atualmente, não há nenhum endpoint REST disponível para oferecer suporte à funcionalidade nativamente.
 
-1. Selecione o logotipo do Experience Manager e vá para **[!UICONTROL Ferramentas > Geral > Pesquisar no Forms]**.
-1. No **[!UICONTROL Pesquisar no Forms]** selecione **[!UICONTROL Trilho de pesquisa do administrador de ativos]** e, em seguida, selecione o ícone Editar.
+1. Selecione o logotipo do Experience Manager e acesse **[!UICONTROL Ferramentas > Geral > Pesquisar Forms]**.
+1. Na página **[!UICONTROL Pesquisar Forms]**, selecione **[!UICONTROL Painel de Pesquisa do Administrador do Assets]** e clique no ícone Editar.
 1. Na página **[!UICONTROL Editar formulário de pesquisa]**, arraste o **[!UICONTROL Predicado de opções]** da guia **[!UICONTROL Selecionar predicado]** até o painel principal.
 1. Na guia **[!UICONTROL Configurações]**, digite um rótulo e um nome para a propriedade. Por exemplo, para pesquisar ativos com base no formato, especifique um nome amigável para o rótulo, por exemplo, **[!UICONTROL Tipo de arquivo]**. Especifique a propriedade com base na qual a pesquisa deve ser realizada no campo de propriedade, por exemplo, `jcr:content/metadata/dc:format.`
 1. Siga uma das seguintes opções:
 
-   * No **[!UICONTROL Nome da propriedade]** mencione o caminho do arquivo JSON onde você define os nós das opções e especifica os pares de valores chave correspondentes.
-   * Selecionar ![Ícone de adição de ativos](assets/do-not-localize/aem_assets_add_icon.png) ao lado do campo Opções para especificar o texto de exibição e o valor das opções que você deseja fornecer no painel Filtros. Para adicionar outra opção, selecione ![Ícone de adição de ativos](assets/do-not-localize/aem_assets_add_icon.png) e repita a etapa.
+   * No campo **[!UICONTROL Nome da Propriedade]**, mencione o caminho do arquivo JSON onde você define os nós das opções e especifica os pares de valores chave correspondentes.
+   * Selecione o ![ícone de adição do Assets](assets/do-not-localize/aem_assets_add_icon.png) ao lado do campo Opções para especificar o texto de exibição e o valor das opções que você deseja fornecer no painel Filtros. Para adicionar outra opção, selecione ![ícone de adição do Assets](assets/do-not-localize/aem_assets_add_icon.png) e repita a etapa.
 
 1. Certifique-se de que **[!UICONTROL Seleção única]** esteja desmarcada para permitir que o usuário selecione várias opções para tipos de arquivos de cada vez (por exemplo, Imagens, Documentos, Multimídia e Arquivos). Se você marcar **[!UICONTROL Seleção única]**, o usuário poderá selecionar apenas uma opção para tipos de arquivo por vez.
 
@@ -116,41 +116,41 @@ Se quiser usar um nó existente, especifique-o usando a caixa de diálogo de sel
 
    Os campos disponíveis no predicado Opções
 
-1. No **Descrição** insira uma descrição opcional e clique em **[!UICONTROL Concluído]**.
-1. Navegue até o painel Pesquisa. O predicado Opções é adicionado à variável **Pesquisar** painel. As opções para **[!UICONTROL Tipo de arquivo]** são exibidos como caixas de seleção.
+1. No campo **Descrição**, insira uma descrição opcional e clique em **[!UICONTROL Concluído]**.
+1. Navegue até o painel Pesquisa. O predicado Opções foi adicionado ao painel **Pesquisar**. As opções para **[!UICONTROL Tipo de Arquivo]** são exibidas como caixas de seleção.
 
 ## Adicionar um predicado Propriedade de vários valores {#adding-a-multi-value-property-predicate}
 
-A variável `Multi Value Property` o predicado permite pesquisar vários valores em ativos. Considere um cenário em que você tem imagens de vários produtos no [!DNL Assets] e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar esse predicado para pesquisar imagens de produtos com base em vários números SKU.
+O predicado `Multi Value Property` permite procurar vários valores em ativos. Considere um cenário em que você tem imagens de vários produtos no [!DNL Assets] e os metadados de cada imagem incluem um número SKU associado ao produto. Você pode usar esse predicado para pesquisar imagens de produtos com base em vários números SKU.
 
-1. Clique no logotipo do Experience Manager e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar no Forms]**.
-1. Na página Pesquisar Forms, selecione **[!UICONTROL Trilho de pesquisa do administrador de ativos]**, selecione **Editar** ![aemassets_edit](assets/aemassets_edit.png).
+1. Clique no logotipo do Experience Manager e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar Forms]**.
+1. Na página Pesquisar Forms, selecione **[!UICONTROL Painel de pesquisa do administrador do Assets]** e selecione **Editar** ![aemassets_edit](assets/aemassets_edit.png).
 1. Na página Editar formulário de pesquisa, arraste um **[!UICONTROL Predicado de propriedades de vários valores]** da guia **[!UICONTROL Selecionar predicado]** para o painel principal.
-1. No **[!UICONTROL Configurações]** insira um rótulo e um texto de espaço reservado para o predicado. Especifique o nome da propriedade com base na qual a pesquisa deve ser realizada no campo de propriedade, por exemplo, `jcr:content/metadata/dc:value`. Você também pode usar a caixa de diálogo de seleção para selecionar um nó.
+1. Na guia **[!UICONTROL Configurações]**, insira um rótulo e um texto de espaço reservado para o predicado. Especifique o nome da propriedade com base na qual a pesquisa deve ser realizada no campo de propriedade, por exemplo, `jcr:content/metadata/dc:value`. Você também pode usar a caixa de diálogo de seleção para selecionar um nó.
 1. Verifique se a opção **[!UICONTROL Suporte a delimitadores]** está selecionada. No campo **[!UICONTROL Delimitadores de entrada]**, especifique delimitadores para separar valores individuais. Por padrão, a vírgula é especificada como delimitador. É possível especificar um delimitador diferente.
-1. No **Descrição** insira uma descrição opcional e selecione **[!UICONTROL Concluído]**.
+1. No campo **Descrição**, insira uma descrição opcional e selecione **[!UICONTROL Concluído]**.
 1. Navegue até o painel Filtros na interface do usuário do Assets. O predicado **[!UICONTROL Propriedade de vários valores]** é adicionado ao painel.
 1. Especifique vários valores no campo Vários valores separados pelos delimitadores e execute a pesquisa. O predicado busca uma correspondência exata de texto para os valores especificados.
 
 ## Adicionar um predicado de tags {#adding-a-tags-predicate}
 
-A variável `Tags` O predicado permite realizar pesquisas por ativos baseadas em tags. Por padrão, [!DNL Assets] O pesquisa ativos para uma ou mais correspondências de tags com base nas tags especificadas. Em outras palavras, a consulta de pesquisa executa uma operação OR usando as tags especificadas. No entanto, você pode usar a opção Corresponder todas as tags para procurar ativos que incluem todas as tags especificadas.
+O predicado `Tags` permite realizar pesquisas baseadas em tags para ativos. Por padrão, [!DNL Assets] pesquisa ativos para uma ou mais correspondências de marcas com base nas marcas especificadas. Em outras palavras, a consulta de pesquisa executa uma operação OR usando as tags especificadas. No entanto, você pode usar a opção Corresponder todas as tags para procurar ativos que incluem todas as tags especificadas.
 
-1. Clique no logotipo do Experience Manager e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar no Forms]**.
-1. Na página Pesquisar Forms, selecione **[!UICONTROL Trilho de pesquisa do administrador de ativos]** e selecione **Editar** ![aemassets_edit](assets/aemassets_edit.png).
-1. Na página Editar formulário de pesquisa, arraste **[!UICONTROL Predicado de tags]** na guia Selecionar predicado até o painel principal.
+1. Clique no logotipo do Experience Manager e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Geral]** > **[!UICONTROL Pesquisar Forms]**.
+1. Na página Pesquisar Forms, selecione **[!UICONTROL Painel de pesquisa do administrador do Assets]** e **Editar** ![aemassets_edit](assets/aemassets_edit.png).
+1. Na página Editar formulário de pesquisa, arraste o **[!UICONTROL Predicado de tags]** da guia Selecionar predicado para o painel principal.
 1. Na guia Configurações, insira um texto de espaço reservado para o predicado. Especifique o nome da propriedade com base na qual a pesquisa deve ser realizada no campo de propriedade, por exemplo, `jcr:content/metadata/cq:tags`. Como alternativa, você pode selecionar um nó no CRXDE na caixa de diálogo de seleção.
 1. Configure a propriedade Root tags path desse predicado para preencher várias tags na lista Tags.
 1. Selecione a opção **[!UICONTROL Mostrar correspondência de todas as tags]** para procurar ativos que incluem todas as tags especificadas.
 
-   ![Configurações típicas do predicado de tags](assets/tags_predicate.png)
+   ![Configurações típicas do predicado de marcas](assets/tags_predicate.png)
 
-1. No **[!UICONTROL Descrição]** insira uma descrição opcional e selecione **[!UICONTROL Concluído]**.
-1. Navegue até o painel Pesquisa. A variável **[!UICONTROL Tags]** O predicado é adicionado ao painel Pesquisar.
+1. No campo **[!UICONTROL Descrição]**, insira uma descrição opcional e selecione **[!UICONTROL Concluído]**.
+1. Navegue até o painel Pesquisa. O predicado **[!UICONTROL Tags]** é adicionado ao painel Pesquisar.
 1. Especifique as tags com base nas quais deseja pesquisar ativos ou selecione na lista de sugestões.
-1. Selecionar **[!UICONTROL Corresponder a todos]** para procurar correspondências que incluem todas as tags especificadas.
+1. Selecione **[!UICONTROL Corresponder todos]** para procurar correspondências que incluam todas as marcas especificadas.
 
-Você pode classificar a estrutura de tags em ordem crescente ou decrescente com base na variável **[!UICONTROL Nome]** (ordem alfabética), **[!UICONTROL Criado em]** data ou **[!UICONTROL Modificado]** data. Na ilustração a seguir, a estrutura de tags é classificada em ordem alfabética com base no **[!UICONTROL Nome]**.
+Você pode classificar a estrutura de marcas em ordem crescente ou decrescente com base na data **[!UICONTROL Nome]** (ordem alfabética), **[!UICONTROL Criada]** ou **[!UICONTROL Modificada]**. Na ilustração a seguir, a estrutura de marcas é classificada em ordem alfabética com base no **[!UICONTROL Nome]**.
 
 ![add-tags](assets/add-tags-to-asset.png)
 
@@ -168,7 +168,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
   </tr>
   <tr>
    <td><p>Texto completo</p> </td>
-   <td>Pesquisar predicado para executar uma pesquisa de texto completo em um nó de ativo inteiro. Ele é mapeado com a variável <code>jcr</code>:<code>contains</code> operador. Você pode especificar um caminho relativo se quiser executar uma pesquisa de texto completo em uma parte específica do nó do ativo.</td>
+   <td>Pesquisar predicado para executar uma pesquisa de texto completo em um nó de ativo inteiro. Está mapeado com o operador <code>jcr</code>:<code>contains</code>. Você pode especificar um caminho relativo se quiser executar uma pesquisa de texto completo em uma parte específica do nó do ativo.</td>
    <td>
     <ul>
      <li>Rótulo</li>
@@ -252,7 +252,7 @@ Semelhante à maneira como você adiciona um predicado de Propriedade ou um pred
   </tr>
   <tr>
    <td><p>Tamanho do arquivo</p> </td>
-   <td><p>Pesquisar predicado para pesquisar ativos com base em seu tamanho. É um predicado baseado em controle deslizante no qual você seleciona as opções de controle deslizante de um nó configurável. As opções padrão são definidas em /libs/dam/options/predicates/filesize no repositório CRX. O tamanho do arquivo é fornecido em bytes.</p> </td>
+   <td><p>Pesquisar predicado para pesquisar ativos com base em seu tamanho. É um predicado baseado em controle deslizante no qual você seleciona as opções de controle deslizante de um nó configurável. As opções padrão são definidas em /libs/dam/options/predicates/filesize no repositório do CRX. O tamanho do arquivo é fornecido em bytes.</p> </td>
    <td>
     <ul>
      <li>Rótulo</li>
@@ -318,14 +318,14 @@ Não remova os seguintes campos ocultos, pois isso causa um problema de desempen
 
 ## Redefinir aspectos de pesquisa padrão {#restoring-default-search-facets}
 
-Por padrão, um ícone Bloquear é exibido antes de **[!UICONTROL Trilho de pesquisa do administrador de ativos]** no **[!UICONTROL Pesquisar no Forms]** página. O ícone Bloquear desaparecerá se você adicionar aspectos de pesquisa ao formulário, indicando que o formulário padrão foi modificado.
+Por padrão, um ícone Bloquear é exibido antes do **[!UICONTROL Painel de Pesquisa do Administrador do Assets]** na página **[!UICONTROL Pesquisar Forms]**. O ícone Bloquear desaparecerá se você adicionar aspectos de pesquisa ao formulário, indicando que o formulário padrão foi modificado.
 
 O ícone de Bloqueio em relação a uma opção na página Pesquisar Forms indica que as configurações padrão estão intactas e não são personalizadas.
 
 Para restaurar o aspecto de pesquisa padrão, execute estas etapas:
 
-1. Selecionar **[!UICONTROL Trilho de pesquisa do administrador de ativos]** no **[!UICONTROL Pesquisar no Forms]** página.
-1. Selecionar **[!UICONTROL Excluir]** ![ícone excluir](assets/do-not-localize/deleteoutline.png) na barra de ferramentas.
+1. Selecione **[!UICONTROL Painel de Pesquisa do Administrador do Assets]** na página **[!UICONTROL Pesquisar Forms]**.
+1. Selecione **[!UICONTROL Excluir]** ![ícone excluir](assets/do-not-localize/deleteoutline.png) na barra de ferramentas.
 1. Na caixa de diálogo de confirmação, selecione **[!UICONTROL Excluir]** para remover as alterações personalizadas.
 
    Após excluir as alterações personalizadas nos aspectos de pesquisa, o ícone Bloquear será exibido novamente antes do **[!UICONTROL Painel de pesquisa do administrador de ativos]** na página **[!UICONTROL Formulários de pesquisa]**.
@@ -336,9 +336,9 @@ Se você não recebeu uma função de administrador, esta é uma lista de permis
 
 | Ação | Permissão |
 |---|---|
-| Editar | Permissões de leitura e gravação no `/apps` no CRX. |
-| Excluir | Permissões de leitura, gravação e exclusão no `/apps` no CRX. |
-| Visualização | Permissões de leitura, gravação e exclusão no `/var/dam/content` no CRX. Além disso, as permissões de leitura e gravação em `/apps` nó. |
+| Editar | Permissões de leitura e gravação no nó `/apps` no CRX. |
+| Excluir | Permissões de leitura, gravação e exclusão no nó `/apps` no CRX. |
+| Visualização | Permissões de leitura, gravação e exclusão no nó `/var/dam/content` no CRX. Além disso, as permissões de leitura e gravação no nó `/apps`. |
 
 **Consulte também**
 
@@ -354,7 +354,7 @@ Se você não recebeu uma função de administrador, esta é uma lista de permis
 * [Gerenciar metadados](manage-metadata.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -1,6 +1,6 @@
 ---
 title: Notas de versão para gerar variações
-description: Notas de versão para Gerar variações, acessíveis a partir do AEM as a Cloud Service e da Sidekick dos Edge Delivery Services
+description: Notas de versão para Gerar variações, acessível no AEM as a Cloud Service e a Sidekick de Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 9%
 
 # Notas de versão para gerar variações {#release-notes-generate-variations}
 
-Esta página documenta as notas de versão para Gerar variações, acessível a partir do AEM as a Cloud Service e da Sidekick do Edge Delivery Services.
+Esta página documenta as notas de versão para Gerar variações, acessível no AEM as a Cloud Service e a Sidekick dos Edge Delivery Services.
 
 >[!NOTE]
 >

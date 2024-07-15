@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Solução de problemas de consultas persistentes do GraphQL {#troubleshoot-persisted-graphql-queries}
 
-A variável [Centro de ações](/help/operations/actions-center.md) inclui o **Erro de consulta persistente do GraphQL** alerta. Isso significa que você é informado sempre que uma das consultas persistentes do GraphQL emite um erro.
+O [Centro de Ações](/help/operations/actions-center.md) inclui o alerta **erro de consulta persistente do GraphQL**. Isso significa que você é informado sempre que uma das consultas persistentes do GraphQL emite um erro.
 
-Para ajudá-lo a solucionar e resolver esses problemas, esta página aborda a *mais comum* causas de falhas e etapas sobre como corrigi-las.
+Para ajudá-lo a solucionar e resolver esses problemas, esta página aborda as *causas mais comuns* das falhas e as etapas sobre como corrigi-las.
 
 ## Alterações no modelo de Fragmento de conteúdo {#changes-to-content-fragment-model}
 
@@ -34,24 +34,24 @@ Para resolver esses erros, você deve:
 
 ## Ponto de extremidade do GraphQL não configurado {#graphql-endpoint-not-configured}
 
-Quando consultas persistentes retornam a variável `404` código de erro, juntamente com as informações `No suitable endpoint found`, isso significa que nenhum endpoint do GraphQL está configurado no ambiente AEM.
+Quando consultas persistentes retornam o código de erro `404`, juntamente com as informações `No suitable endpoint found`, isso significa que nenhum terminal GraphQL está configurado no ambiente AEM.
 
-Para corrigir isso, siga as etapas para ativar e publicar seu endpoint no [Gerenciar endpoints do GraphQL no AEM](/help/headless/graphql-api/graphql-endpoint.md).
+Para corrigir isso, siga as etapas para habilitar e publicar seu ponto de extremidade em [Gerenciar pontos de extremidade do GraphQL no AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Caminho ausente no URL da consulta persistente do GraphQL {#missing-path-query-url}
 
-Se consultas persistentes retornarem a variável `400` código de erro com as informações `Suffix: '/' does not contain a path`, o servlet GraphQL está sendo chamado sem um sufixo de caminho.
+Se consultas persistentes retornarem o código de erro `400` com as informações `Suffix: '/' does not contain a path`, o servlet GraphQL será chamado sem um sufixo de caminho.
 
 O padrão deve ser `/graphql/execute.json/thePath`.
 
 ## Bloqueado devido à lista de permissões de IP {#blocked-due-to-ip-allow-list}
 
-Nesse caso, a consulta retorna o parâmetro `405` código de erro.
+Nesse caso, a consulta retorna o código de erro `405`.
 
-Esse erro não é específico do GraphQL. Consulte o artigo da KB [Erro 405 não permitido](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
+Esse erro não é específico do GraphQL. Consulte o artigo da Base de Dados de Conhecimento [Erro 405 Não Permitido](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## Bloqueado pelo Dispatcher {#blocked-dispatcher}
 
-Se o endpoint do GraphQL retornar o `404` erro ao publicar para `POST` , significa que as consultas do GraphQL são bloqueadas no nível do dispatcher e o endpoint precisa ser ativado manualmente.
+Se o ponto de extremidade do GraphQL retornar o erro `404` ao publicar para `POST` solicitações, significa que as consultas do GraphQL são bloqueadas no nível do dispatcher e o ponto de extremidade precisa ser habilitado manualmente.
 
 Esse não deve ser o caso por padrão, mas uma configuração personalizada do dispatcher pode causar esse problema. Veja mais em [Dispatcher - Configuração de ponto de extremidade com AEM Headless](/help/headless/deployment/dispatcher.md).

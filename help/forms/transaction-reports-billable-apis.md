@@ -31,9 +31,9 @@ O AEM Forms fornece várias APIs para enviar formulários, processar documentos 
 
 As APIs de faturamento não levam em conta o número de páginas, o comprimento de um documento ou formulário ou o formato final do documento renderizado. Um relatório de transações divide as transações em duas categorias: Forms Submetido e Documentos Renderizados.
 
-* **Forms enviado:** Quando os dados são enviados de qualquer tipo de formulário criado com o AEM Forms e os dados são enviados para qualquer repositório ou banco de dados de armazenamento de dados, é considerado o envio do formulário. Por exemplo, o envio de um formulário adaptável ou de um conjunto de formulários é considerado um formulário enviado. Se um conjunto de formulários tiver cinco formulários e quando o conjunto for enviado, o serviço de relatório de transações o contará como cinco envios.
+* **Forms Enviado:** Quando os dados são enviados de qualquer tipo de formulário criado com o AEM Forms e os dados são enviados para qualquer banco de dados ou repositório de armazenamento de dados, é considerado o envio do formulário. Por exemplo, o envio de um formulário adaptável ou de um conjunto de formulários é considerado um formulário enviado. Se um conjunto de formulários tiver cinco formulários e quando o conjunto for enviado, o serviço de relatório de transações o contará como cinco envios.
 
-* **Documentos renderizados:** Gerar um documento combinando um modelo e dados, assinando ou certificando digitalmente um documento, usando APIs de serviços de documento faturáveis para serviços de documento ou convertendo um documento de um formato para outro são considerados documentos renderizados.
+* **Documentos renderizados:** Gerar um documento combinando um modelo e dados, assinando ou certificando digitalmente um documento, usando APIs de serviços de documento faturáveis para serviços de documento ou convertendo um documento de um formato para outro são contabilizados como documentos renderizados.
 
 >[!CONTEXTUALHELP]
 >id="aemforms_cs_transaction_reporting_submission_graph_en"
@@ -495,7 +495,7 @@ O uso da API de chamada é contado como uma transação, quando você executa um
 
 ## APIs de captura de dados faturáveis {#billable-data-capture-apis}
 
-Todos os eventos de envio de formulários adaptáveis são contabilizados como transações. Por padrão, o envio de um Formulário de PDF não é contabilizado como uma transação. Usar o fornecido [API do gravador de transações](record-transaction-custom-implementation.md) para registrar um envio de PDF forms como uma transação.
+Todos os eventos de envio de formulários adaptáveis são contabilizados como transações. Por padrão, o envio de um Formulário de PDF não é contabilizado como uma transação. Use a [API do gravador de transações](record-transaction-custom-implementation.md) fornecida para registrar um envio de PDF forms como uma transação.
 
 ### Adaptive Forms {#adaptive-forms}
 
@@ -647,7 +647,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
 
 ## Registrando APIs faturáveis como transações para código personalizado {#recording-billable-apis-as-transactions-for-custom-code}
 
-Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa, usar o envio de formulários não padrão e implementações personalizadas não são contabilizadas como transações. O AEM Forms fornece uma API para registrar ações como transações. Você pode chamar a API de suas implementações personalizadas para [registrar uma transação](/help/forms/record-transaction-custom-implementation.md).
+Ações como enviar um Formulário PDF, usar a interface do usuário do agente para visualizar uma comunicação interativa, usar o envio de formulários não padrão e implementações personalizadas não são contabilizadas como transações. O AEM Forms fornece uma API para registrar ações como transações. Você pode chamar a API a partir das implementações personalizadas para [registrar uma transação](/help/forms/record-transaction-custom-implementation.md).
 
 ## Artigos relacionados {#related-articles}
 

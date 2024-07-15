@@ -17,13 +17,13 @@ Os componentes do AEM são usados para reter, formatar e renderizar o conteúdo 
 
 ## Criação de canais {#authoring-channels}
 
-O canal é o objeto central do conteúdo entregue a um conjunto de exibições. Portanto, um autor de conteúdo normalmente abriria um canal no editor para adicionar ou modificar conteúdo. Como o Canal é um ***cq:Page*** ele seguirá o mesmo padrão de UX tradicional para adicionar e alterar componentes no canal.
+O canal é o objeto central do conteúdo entregue a um conjunto de exibições. Portanto, um autor de conteúdo normalmente abriria um canal no editor para adicionar ou modificar conteúdo. Como o Canal é um ***cq:Page***, ele seguirá o mesmo padrão de UX tradicional para adicionar e alterar componentes no canal.
 
 No entanto, como os componentes em um canal normalmente são renderizados em tela cheia, a experiência de criação sofrerá ao tentar editar componentes únicos ou compor novos pedidos. Portanto, o canal dependerá de seletores para renderizar diferentes visualizações dos componentes. O ambiente de criação usa o seletor de edição para ativar a renderização do canal personalizado.
 
 Por exemplo, `http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html](http://localhost:4502/editor.html/content/screens/we-retail/channels/idle.edit.html`
 
-O usuário não precisa cuidar da adição do seletor ao URL durante a edição. Uma lógica do lado do cliente escuta o evento de alternância de camadas e adiciona o seletor se o canal tiver o tipo de recurso dedicado *telas/núcleo/componentes/canal.*
+O usuário não precisa cuidar da adição do seletor ao URL durante a edição. Uma lógica do lado do cliente está escutando o evento de troca de camada e adiciona o seletor se o canal tiver o tipo de recurso dedicado *telas/núcleo/componentes/canal.*
 
 ## Componentes de renderização {#rendering-components}
 
@@ -44,4 +44,4 @@ Os componentes integrados usam as seguintes categorias de bibliotecas de cliente
 
 >[!NOTE]
 >
->Para desenvolver componentes personalizados, use o ***[Modelo do componente de amostra do AEM Screens](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)***.
+>Para desenvolver componentes personalizados, use o ***[modelo de componente de amostra do AEM Screens](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template)***.

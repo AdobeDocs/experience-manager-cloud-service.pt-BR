@@ -51,7 +51,7 @@ Consulte a seção [Configuração de rede avançada para regiões de publicaç�
 
 ## Logs {#logging}
 
-Se regiões de publicação adicionais estiverem ativadas, logs separados para cada região serão disponibilizados por meio do Cloud Manager. Para obter mais informações, consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) e [Logs para regiões de publicação adicionais](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
+Se regiões de publicação adicionais estiverem ativadas, logs separados para cada região serão disponibilizados por meio do Cloud Manager. Para obter mais informações, consulte [Acesso e gerenciamento de logs](/help/implementing/cloud-manager/manage-logs.md) e [Logs para regiões adicionais do Publish](/help/implementing/developing/introduction/logging.md#logs-for-additional-publish-regions).
 
 ## Limitações {#limitations}
 

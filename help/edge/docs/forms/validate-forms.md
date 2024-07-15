@@ -19,7 +19,7 @@ O bloco adaptável do Forms tem recursos de validação integrados. Essas valida
 
 ## Noções básicas sobre tipos de campo e validação
 
-O bloco adaptável do Forms é compatível com uma variedade de [tipos de entrada HTML-5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#input_types), incluindo texto, email, número, data e muito mais. Também acomoda [textarea](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea), select e fieldset, juntamente com recursos abrangentes de validação de entrada inerentes ao HTML-5.
+O Bloco Forms Adaptável oferece suporte a uma variedade de [tipos de entrada HTML-5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#input_types), incluindo texto, email, número, data e muito mais. Ele também acomoda [textarea](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea), select e fieldset, juntamente com recursos abrangentes de validação de entrada inerentes ao HTML-5.
 
 O usa tipos de campo HTML para definir o tipo de dados que um usuário pode inserir. Tipos de campos diferentes têm regras de validação integradas diferentes:
 

@@ -18,11 +18,11 @@ ht-degree: 76%
 >title="Atribuir perfis de produto do AEM"
 >abstract="Você não tem autorização para usar o Experience Manager Assets. Entre em contato com a administração."
 
-Nesta parte do [integração do jornada,](overview.md) você aprende a conceder acesso ao AEM para sua equipe usando perfis de produto AEM.
+Nesta parte da [jornada de integração](overview.md), você aprenderá a conceder à sua equipe acesso ao AEM usando perfis de produto do AEM.
 
 ## Objetivo {#objective}
 
-Depois de ler o documento anterior nesta jornada de integração, [Criar ambientes,](create-environments.md) e configurar os recursos de nuvem, conceda à sua equipe acesso ao AEM usando perfis de produto AEM. Como administrador do sistema, faça isso atribuindo perfis de produto do AEM.
+Depois de ler o documento anterior nesta jornada de integração, [Criar ambientes](create-environments.md), e configurar os recursos de nuvem, conceda à sua equipe acesso ao AEM usando perfis de produto do AEM. Como administrador do sistema, faça isso atribuindo perfis de produto do AEM.
 
 Depois de ler este documento, você compreenderá:
 
@@ -74,7 +74,7 @@ Siga estas etapas para ver os perfis de produto do AEM no Admin Console.
 
    ![Selecionar instância](/help/journey-onboarding/assets/cloud-profiles-1.png)
 
-1. Você pode ver a lista de perfis de produtos as a Cloud Service do AEM que podem ser atribuídos a um usuário com base em suas funções.
+1. Você pode ver a lista de perfis de produto do AEM as a Cloud Service que podem ser atribuídos a um usuário com base em suas funções.
 
    ![Perfis de produto](/help/journey-onboarding/assets/cloud-profiles-2.png)
 
@@ -88,11 +88,11 @@ Essas tarefas exigem que você seja um administrador do sistema com o perfil de 
 
    ![Gerenciar acesso](/help/journey-onboarding/assets/add-team1.png)
 
-1. Uma nova guia direciona você para o Admin Console para acessar a instância do autor do ambiente. Selecionar **Administradores de AEM** ou **Usuários do AEM** com base nas permissões que esse indivíduo deve receber.
+1. Uma nova guia direciona você para o Admin Console para acessar a instância do autor do ambiente. Selecione **Administradores do AEM** ou **Usuários do AEM** com base nas permissões que esse indivíduo deve receber.
 
    ![Atribuir acesso](/help/journey-onboarding/assets/add-team2.png)
 
-1. Selecionar `AEM Administrator` ou `AEM User` e clique em **Adicionar usuário** conforme mostrado abaixo e envie os detalhes necessários para concluir a adição do membro da equipe.
+1. Selecione `AEM Administrator` ou `AEM User` e clique em **Adicionar Usuário** como mostrado abaixo e envie os detalhes necessários para concluir a adição do membro da equipe.
 
    ![Adicionar membro da equipe](/help/journey-onboarding/assets/add-team3.png)
 
@@ -107,7 +107,7 @@ Parabéns! Os usuários atribuídos a perfis de produto do AEM as a Cloud Servic
 No entanto, se você quiser entender melhor como os autores e desenvolvedores usam o sistema, continue com as duas partes opcionais desta jornada de integração:
 
 * [Tarefas do desenvolvedor e do gerente de implantação](developers.md) - Onde você aprende como os desenvolvedores acessam o Git para armazenar o código personalizado e implantá-lo usando os pipelines do Cloud Manager.
-* [Tarefas do usuário do AEM](aem-users.md) - Onde você aprende como acessar o ambiente AEM, onde você pode começar a criar conteúdo.
+* [Tarefas do usuário do AEM](aem-users.md) - Onde você aprende a acessar o ambiente AEM para começar a criar conteúdo.
 
 ## Recursos adicionais {#additional-resources}
 

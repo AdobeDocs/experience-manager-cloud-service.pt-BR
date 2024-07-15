@@ -31,59 +31,59 @@ O AEM Forms as a Cloud Service é compatível com as seguintes soluções CAPTCH
 
 ## Conecte seu ambiente do AEM Forms com o serviço reCAPTCHA da Google {#connect-your-forms-environment-with-recaptcha-service-by-google}
 
-Os autores de formulários podem usar o serviço reCAPTCHA pelo Google para implementar o reCAPTCHA no Adaptive Forms. Ele oferece recursos avançados de CAPTCHA para proteger o site. Para obter mais informações sobre como o reCAPTCHA funciona, consulte [Google reCAPTCHA](https://developers.google.com/recaptcha/). [!DNL AEM Forms] as a [!DNL Cloud Service] O é compatível com o Google reCAPTCHA v2 no Adaptive Forms. Você pode usá-lo para apresentar um desafio de CAPTCHA no envio do formulário. Para conectar seu ambiente do AEM Forms com o serviço reCAPTCHA da Google
+Os autores de formulários podem usar o serviço reCAPTCHA pelo Google para implementar o reCAPTCHA no Adaptive Forms. Ele oferece recursos avançados de CAPTCHA para proteger o site. Para obter mais informações sobre como o reCAPTCHA funciona, consulte [Google reCAPTCHA](https://developers.google.com/recaptcha/). O [!DNL AEM Forms] as a [!DNL Cloud Service] oferece suporte ao Google reCAPTCHA v2 no Adaptive Forms. Você pode usá-lo para apresentar um desafio de CAPTCHA no envio do formulário. Para conectar seu ambiente do AEM Forms com o serviço reCAPTCHA da Google
 
-1. Obter [Par de chaves da API do reCAPTCHA](https://www.google.com/recaptcha/admin) do Google. Inclui uma **chave do site** e uma **chave secreta**.
+1. Obtenha o [par de chaves da API do reCAPTCHA](https://www.google.com/recaptcha/admin) da Google. Inclui uma **chave do site** e uma **chave secreta**.
 
-   ![Crie a configuração reCAPTCHA do Google do site da Google para obter as chaves reCAPTCHA](/help/forms/assets/google-captcha.gif)
+   ![Criar configuração do Google reCAPTCHA do site da Google para obter chaves reCAPTCHA](/help/forms/assets/google-captcha.gif)
 1. Crie o contêiner de configuração em seu ambiente as a Cloud Service do AEM Forms. Um Contêiner de configuração contém as Configurações de nuvem usadas para conectar o AEM a serviços externos. Para criar e configurar um Contêiner de configuração para conectar seu ambiente do AEM Forms com o serviço reCAPTCHA do Google:
    1. Abra a instância as a Cloud Service do AEM Forms.
-   1. Ir para **[!UICONTROL Ferramentas > Geral > Navegador de configuração]**. No Navegador de configuração, é possível:
+   1. Vá para **[!UICONTROL Ferramentas > Geral > Navegador de Configuração]**. No Navegador de configuração, é possível:
    1. Selecione uma pasta existente ou crie uma pasta. Você pode criar uma pasta e ativar a opção Configurações de nuvem para ela ou Ativar a opção Configurações de nuvem para uma pasta existente:
 
       * Para criar uma pasta e ativar a opção Configurações de nuvem para ela:
-         1. No Navegador de configuração, clique em **[!UICONTROL Criar]**.
-         1. Na caixa de diálogo Criar configuração, especifique o nome, o título e selecione a **[!UICONTROL Configurações da nuvem]** opção.
+         1. No Navegador de Configuração, clique em **[!UICONTROL Criar]**.
+         1. Na caixa de diálogo Criar Configuração, especifique o nome, o título e selecione a opção **[!UICONTROL Configurações de Nuvem]**.
          1. Clique em **[!UICONTROL Criar]**
       * Para ativar a opção Configurações de nuvem para uma pasta existente:
-         1. No Navegador de configuração, selecione a pasta e selecione **[!UICONTROL Propriedades]**.
-         1. Na caixa de diálogo Propriedades de configuração, ative **[!UICONTROL Configurações da nuvem]**.
-         1. Selecionar **[!UICONTROL Salvar e fechar]** para salvar a configuração e sair do diálogo.
+         1. No Navegador de Configuração, selecione a pasta e selecione **[!UICONTROL Propriedades]**.
+         1. Na caixa de diálogo Propriedades de Configuração, habilite **[!UICONTROL Configurações de Nuvem]**.
+         1. Selecione **[!UICONTROL Salvar e fechar]** para salvar a configuração e sair da caixa de diálogo.
 
 1. Configure o Cloud Service:
-   1. Na instância do autor do AEM, acesse ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** e selecione **[!UICONTROL reCAPTCHA]**.
+   1. Na instância do autor AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** e selecione **[!UICONTROL reCAPTCHA]**.
    1. Selecione um Contêiner de configuração, criado ou atualizado na seção anterior. Selecione **[!UICONTROL Criar]**.
-   1. Especificar **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do site]**, e **[!UICONTROL Chave secreta]** para o serviço reCAPTCHA (Obtido na Etapa 1). Selecione **[!UICONTROL Criar]**.
+   1. Especifique **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do Site]** e **[!UICONTROL Chave Secreta]** para o serviço reCAPTCHA (Obtido na Etapa 1). Selecione **[!UICONTROL Criar]**.
 
-   ![Configure o Cloud Service para conectar seu ambiente AEM Forms com o serviço reCAPTCHA da Google](/help/forms/assets/captcha-configuration.gif)
+   ![Configure o Cloud Service para conectar seu ambiente do AEM Forms com o serviço reCAPTCHA da Google](/help/forms/assets/captcha-configuration.gif)
 
-   Depois que o serviço reCAPTCHA é configurado, ele é disponibilizado para uso em um Formulário adaptável. Para obter mais informações, consulte [uso do Google reCAPTCHA em um formulário adaptável](#using-reCAPTCHA).
+   Depois que o serviço reCAPTCHA é configurado, ele é disponibilizado para uso em um Formulário adaptável. Para obter mais informações, consulte [usando o Google reCAPTCHA em um Formulário adaptável](#using-reCAPTCHA).
 
 ## Usar o Google reCAPTCHA em um formulário adaptável {#using-reCAPTCHA}
 
 Para usar o reCAPTCHA no Adaptive Forms:
 
 1. Abra a instância as a Cloud Service do AEM Forms.
-1. Ir para **[!UICONTROL Forms]** > **[!UICONTROL Forms e documentos]**.
-1. Selecione um Forms adaptável e selecione **[!UICONTROL Propriedades]**. Para o **[!UICONTROL Contêiner de configuração]** selecione o Contêiner de configuração que contém a configuração na nuvem que conecta o AEM Forms com o serviço reCAPTCHA pelo Google e selecione **[!UICONTROL Salvar e fechar]**.
+1. Ir para **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
+1. Selecione um Forms adaptável e selecione **[!UICONTROL Propriedades]**. Para a opção **[!UICONTROL Contêiner de Configuração]**, selecione o Contêiner de Configuração que contém a Configuração na Nuvem que conecta o AEM Forms com o serviço reCAPTCHA pelo Google e selecione **[!UICONTROL Salvar e Fechar]**.
 
-   Se você não tiver um Contêiner de configuração, consulte a seção [Conecte seu ambiente do AEM Forms com o serviço reCAPTCHA da Google](#connect-your-forms-environment-with-recaptcha-service-by-google) para saber como criar esse Contêiner de configuração.
+   Se você não tiver um Contêiner de Configuração como esse, consulte a seção [Conecte seu ambiente do AEM Forms com o serviço reCAPTCHA do Google](#connect-your-forms-environment-with-recaptcha-service-by-google) para saber como criar esse Contêiner de Configuração.
 
-   ![Selecionar contêiner de configuração](/help/forms/assets/captcha-properties.png)
+   ![Selecionar Contêiner de Configuração](/help/forms/assets/captcha-properties.png)
 
 1. Selecione um Forms adaptável e selecione **[!UICONTROL Editar]**. O Formulário adaptável é aberto no Editor Forms adaptável.
-1. No navegador de componentes, arraste e solte a **[!UICONTROL Formulário adaptável reCAPTCHA]** no Formulário adaptável.
+1. No navegador de componentes, arraste e solte o componente **[!UICONTROL Formulário adaptável reCAPTCHA]** no Formulário adaptável.
 
-   A validação do Google reCAPTCHA é sensível ao tempo e expira em cerca de dois minutos. Portanto, a Adobe recomenda colocar a variável **[!UICONTROL Formulário adaptável reCAPTCHA]** componente antes de **[!UICONTROL Enviar]** botão.
+   A validação do Google reCAPTCHA é sensível ao tempo e expira em cerca de dois minutos. Portanto, a Adobe recomenda colocar o componente **[!UICONTROL Formulário adaptável reCAPTCHA]** antes do botão **[!UICONTROL Enviar]**.
 
-1. Selecione o **[!UICONTROL Formulário adaptável reCAPTCHA]** e selecione as propriedades ![Ícone Propriedades](assets/configure-icon.svg) ícone. Ele abre a caixa de diálogo de propriedades. Especifique as seguintes propriedades obrigatórias:
+1. Selecione o componente **[!UICONTROL Formulário adaptável reCAPTCHA]** e selecione o ícone de propriedades ![Propriedades](assets/configure-icon.svg). Ele abre a caixa de diálogo de propriedades. Especifique as seguintes propriedades obrigatórias:
    * **[!UICONTROL Nome]:** É possível identificar facilmente um componente de formulário com seu nome exclusivo no formulário e no editor de regras, mas o nome não deve conter espaços ou caracteres especiais.
-   * **[!UICONTROL Configuração CAPTCHA]:** Selecione uma Configuração na nuvem configurada para apresentar a caixa de diálogo Google reCAPTCHA para o formulário. Você pode ter várias configurações de nuvem no seu ambiente para fins semelhantes. Então, escolha o serviço com cuidado. Se nenhum serviço estiver listado, consulte [Conecte seu ambiente do AEM Forms com o serviço reCAPTCHA da Google](#connect-your-forms-environment-with-recaptcha-service-by-google) para saber como criar um Cloud Service que conecta seu ambiente do AEM Forms com o serviço reCAPTCHA da Google.
-   * **Tamanho do Captcha:** Você pode selecionar o tamanho de exibição da caixa de diálogo de desafio do Google reCAPTCHA. Use o **[!UICONTROL Compacto]** opção para exibir um tamanho pequeno e a variável **[!UICONTROL Normal]** opção para exibir uma caixa de diálogo de desafio do Google reCAPTCHA de tamanho relativamente grande.
+   * **[!UICONTROL Configuração do CAPTCHA]:** Selecione uma Configuração na Nuvem configurada para apresentar a caixa de diálogo do Google reCAPTCHA para o formulário. Você pode ter várias configurações de nuvem no seu ambiente para fins semelhantes. Então, escolha o serviço com cuidado. Se nenhum serviço estiver listado, consulte [Conecte seu ambiente do AEM Forms com o serviço reCAPTCHA do Google](#connect-your-forms-environment-with-recaptcha-service-by-google) para saber como criar um Cloud Service que conecte seu ambiente do AEM Forms com o serviço reCAPTCHA do Google.
+   * **Tamanho do Captcha:** Você pode selecionar o tamanho de exibição da caixa de diálogo de desafio do Google reCAPTCHA. Use a opção **[!UICONTROL Compactar]** para exibir uma opção de tamanho pequeno e a opção **[!UICONTROL Normal]** para exibir uma caixa de diálogo de desafio do Google reCAPTCHA de tamanho relativamente grande.
 
-1. Selecionar **[!UICONTROL Concluído]**.
+1. Selecione **[!UICONTROL Concluído]**.
 
-   Agora, a variável **protegido pelo reCAPTCHA** é exibido no seu Formulário adaptável. Ele é exibido em todas as Forms adaptáveis configuradas para usar o serviço reCAPTCHA do Google.
+   Agora, o **protegido pelo reCAPTCHA** é exibido no Formulário adaptável. Ele é exibido em todas as Forms adaptáveis configuradas para usar o serviço reCAPTCHA do Google.
 
    Agora, somente formulários legítimos, nos quais o preenchimento do formulário apaga com êxito o desafio imposto pelo serviço reCAPTCHA do Google, são permitidos para envio.
    ![Google protegido pelo selo reCAPTCHA](/help/forms/assets/google-recaptcha-v2.png)
@@ -107,7 +107,7 @@ Select the **[!UICONTROL Currency Value]** field in the form and create the foll
 
 ## Perguntas frequentes
 
-**P: Posso usar mais de um componente Captcha em um formulário adaptável?**
+**P: Posso usar mais de um componente Captcha em um Formulário adaptável?**
 **Ans:** Não há suporte para o uso de mais de um componente Captcha em um Formulário adaptável. Além disso, não é recomendável usar o componente Captcha em um fragmento ou painel marcado para carregamento lento.
 
 ## Consulte também {#see-also}

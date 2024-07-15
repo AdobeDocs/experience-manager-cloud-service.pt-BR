@@ -42,20 +42,20 @@ A visualização do Assets permite visualizar dados do seu ambiente da visualiza
 Clique na opção **[!UICONTROL Insights]**, disponível no painel de navegação esquerdo, para exibir os seguintes gráficos gerados automaticamente:
 
 * **Downloads**: o número de ativos baixados do ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados usando um gráfico de linhas.
-  ![insights-downloads](/help/assets/assets/insights-downloads2341.svg)
+  ![downloads-insights](/help/assets/assets/insights-downloads2341.svg)
 
-* **Uploads**: o número de ativos carregados para o ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados usando um gráfico de linhas.
-  ![insights-uploads](/help/assets/assets/insights-uplods2.svg)
+* **Carregamentos**: o número de ativos carregados para o ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados usando um gráfico de linhas.
+  ![uploads-insights](/help/assets/assets/insights-uplods2.svg)
   <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
 
-* **Utilização do armazenamento**: o uso do armazenamento, em bytes, para o ambiente de exibição de Ativos representado por meio de um gráfico de barras.
-  ![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+* **Uso de armazenamento**: o uso de armazenamento, em bytes, para o ambiente de exibição do Assets representado por um gráfico de barras.
+  ![uploads-insights](/help/assets/assets/insights-storage-usage1.svg)
   <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 
 * **Principais Pesquisas**: visualize os principais termos pesquisados junto com o número de vezes que esses termos foram pesquisados no ambiente de visualização do Assets nos últimos 30 dias ou 12 meses representados em formato de tabela.
-  ![insights-uploads](/help/assets/assets/insights-top-search.svg)
+  ![uploads-insights](/help/assets/assets/insights-top-search.svg)
   <!--
    ![Insights](assets/insights1.png)
    ![Insights](assets/insights2.png)

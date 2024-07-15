@@ -30,7 +30,7 @@ A versão seguinte (2021.9.0) será lançada em quinta-feira, 6 de outubro de 20
 
 ## Vídeo da versão {#release-video}
 
-Dê uma olhada no [Visão geral da versão de agosto de 2021](https://video.tv.adobe.com/v/336277) vídeo para obter um resumo dos recursos adicionados.
+Assista ao vídeo [Visão geral da versão de agosto de 2021](https://video.tv.adobe.com/v/336277) para ver um resumo dos recursos adicionados.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -39,42 +39,42 @@ Dê uma olhada no [Visão geral da versão de agosto de 2021](https://video.tv.a
 * Ao compartilhar ativos digitais como um link, o usuário pode copiar o URL para a área de transferência imediatamente. O aprimoramento permite compartilhar ativos de maneira mais rápida e prática. Essa funcionalidade permite um compartilhamento de ativos mais rápido e prático.
 
   ![Opção Copiar URL ao compartilhar um ativo como um link](/help/assets/assets/link-share-copy-URL-option.png)
-  *Figura: ao compartilhar um ativo como um link, agora é possível copiar o URL para compartilhá-lo separadamente.*
+  *Figura: ao compartilhar um ativo como um link, agora é possível copiar a URL para compartilhá-lo separadamente.*
 
 * Ao fazer upload de arquivos TXT, os microsserviços de ativos geram automaticamente uma miniatura. A miniatura de PNG é uma representação de um arquivo TXT que ajuda os usuários a identificar o conteúdo ou os arquivos até certo ponto, sem abrir os arquivos. Essa funcionalidade não requer configuração e funciona por padrão.
 
-  ![Uma representação de um arquivo TXT é gerada automaticamente pelo [!DNL Assets] em formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  ![Uma representação de um arquivo TXT é gerada automaticamente por [!DNL Assets] em formato PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
   *Figura: uma representação de um arquivo TXT é gerada automaticamente para ajudá-lo a identificar o arquivo sem abri-lo.*
 
-### Novo recurso na [!DNL Assets] canal de pré-lançamento {#assets-prerelease-features}
+### Novo recurso no canal de pré-lançamento do [!DNL Assets] {#assets-prerelease-features}
 
 * Agora os usuários podem classificar os ativos exibidos nos resultados da pesquisa nas visualizações de Coluna e Cartão. A classificação funciona nas colunas Nome, Criado, Modificado ou Nenhum.
 
-  ![Classificar os resultados da pesquisa em [!DNL Assets] nas Visualizações de coluna e cartão](/help/assets/assets/sort-searched-assets.png)
-  *Figura: Classificar os resultados da pesquisa em [!DNL Assets] nas Visualizações de coluna e cartão.*
+  ![Classificar os resultados da pesquisa em [!DNL Assets] nos modos de exibição de Coluna e Cartão](/help/assets/assets/sort-searched-assets.png)
+  *Figura: Classifique os resultados da pesquisa em [!DNL Assets] nos modos de exibição Coluna e Cartão.*
 
 ### Bugs corrigidos em [!DNL Assets] {#assets-bugs-fixed}
 
-* Quando um membro do grupo de colaboradores navega até a [!DNL Assets] Console, um extra `POST` é gerada para criar uma coleção. Essa solicitação não é necessária; ela falha devido a problemas de permissão e cria muitos erros nos logs. (CQ-4328856)
-* Quando os usuários visualizam um ativo e selecionam o [!UICONTROL Linha do tempo] no menu pop-up no painel esquerdo, um erro é exibido. Nos logs, muitos avisos são registrados devido a uma consulta inválida. (CQ-4328919)
+* Quando um membro do grupo de colaboradores navega até o Console [!DNL Assets], uma solicitação `POST` extra é gerada para criar uma Coleção. Essa solicitação não é necessária; ela falha devido a problemas de permissão e cria muitos erros nos logs. (CQ-4328856)
+* Quando os usuários visualizam um ativo e selecionam a [!UICONTROL Linha do tempo] no menu pop-up no painel esquerdo, um erro é exibido. Nos logs, muitos avisos são registrados devido a uma consulta inválida. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
 
-* O serviço do Automated forms conversion pode [converter PDF forms em italiano e português](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) para o Forms adaptável.
+* O serviço Automated forms conversion pode [converter PDF forms em italiano e português](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) para o Adaptive Forms.
 
-* **Documento de registro baseado em acroforma**: o AEM Forms as a Cloud Service suporta o uso de [PDF do Adobe Acrobat Form (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-br) como um modelo para o Documento de registro além do modelo de formulário baseado em XFA.
+* **Documento de Registro baseado em acroforma**: o AEM Forms as a Cloud Service suporta o uso do [PDF de Formulário Adobe Acrobat (PDF de acroforma)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-br) como um modelo para Documento de Registro além do modelo de formulário baseado em XFA.
 
-* **Conector do armazenamento de dados do Microsoft® Azure**: Agora você pode [conectar o Modelo de dados do formulário ao Armazenamento do Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft® Azure como um BLOB.
+* **Conector do armazenamento de dados do Microsoft® Azure**: agora é possível [conectar o Modelo de dados do formulário ao Armazenamento do Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft® Azure como um BLOB.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
 
-* **Usar funções do Adobe Sign em um formulário adaptável** - A Adobe Sign para níveis de serviço corporativo e comercial pode, opcionalmente, expandir as funções para os recipients do Contrato, além apenas do Signatário, para melhor atender aos requisitos de fluxo de trabalho. Agora você pode habilitar cada recipient do contrato para configurar sua função em um Formulário adaptável, sendo que Signatário é a função padrão.
+* **Usar funções do Adobe Sign em um Formulário adaptável** - O Adobe Sign para níveis de serviço corporativo e empresarial pode, opcionalmente, expandir as funções para os destinatários do Contrato, além apenas do Signatário, para melhor corresponder aos requisitos de fluxo de trabalho. Agora você pode habilitar cada recipient do contrato para configurar sua função em um Formulário adaptável, sendo que Signatário é a função padrão.
 
-* **Analytics para Forms adaptável** - Agora você pode capturar e rastrear o comportamento do usuário final por meio do Adobe Analytics for Adaptive Forms para coletar insights do usuário final. Ele ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário final.
+* **Analytics para Forms adaptável** - Agora é possível capturar e rastrear o comportamento do usuário final por meio do Adobe Analytics para Forms adaptável para coletar insights do usuário final. Ele ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário final.
 
-* **Conecte facilmente o AEM Forms com o Microsoft® Dynamics e o Salesforce.com** - O serviço fornece configuração de fonte de dados e modelos de dados prontos para uso para o Microsoft® Dynamics e Salesforce.com. Isso torna mais rápido e fácil para os desenvolvedores configurarem o Microsoft® Dynamics e o Salesforce.com como fontes de dados para um formulário adaptável.
+* **Conecte facilmente o AEM Forms com o Microsoft® Dynamics e Salesforce.com** - O serviço fornece configuração de fonte de dados pronta para uso e modelos de dados para o Microsoft® Dynamics e Salesforce.com. Isso torna mais rápido e fácil para os desenvolvedores configurarem o Microsoft® Dynamics e o Salesforce.com como fontes de dados para um formulário adaptável.
 
 ## Complemento CIF {#cloud-services-cif}
 
@@ -88,7 +88,7 @@ Dê uma olhada no [Visão geral da versão de agosto de 2021](https://video.tv.a
 
 ## Cloud Manager {#cloud-manager}
 
-Esta seção descreve as notas de versão do Cloud Manager no AEM as a Cloud Service 2021.8.0 e 2021.7.0.
+Esta seção descreve as Notas de versão do Cloud Manager no AEM as a Cloud Service 2021.8.0 e 2021.7.0.
 
 ## Data de lançamento {#release-date-cm-aug}
 
@@ -100,13 +100,13 @@ A próxima versão está planejada para 9 de setembro de 2021.
 * Os clientes do Cloud Service agora podem visualizar os relatórios do Contrato de Nível de Serviço (SLA) no Cloud Manager. Isso será disponibilizado progressivamente nos próximos meses.
 Consulte [Relatórios de SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/sla-reporting.html?lang=pt-BR).
 
-* O tipo e a gravidade do IndexType e as regras de qualidade `IndexDamAssetLucene` foram alteradas. Esses agora são Bugs do bloqueador *severidade*.
+* O tipo e a gravidade do IndexType e as regras de qualidade `IndexDamAssetLucene` foram alteradas. Estes são agora Bugs de *severidade* do bloqueador.
 
 * Novas regras de qualidade do índice Oak foram introduzidas para abranger configurações assíncronas e do Tika.
 
 * O número máximo de certificados SSL por programa foi aumentado para 50.
 
-* Capacidade de autoatendimento para permitir que os usuários criem e gerenciem vários repositórios por meio da interface do usuário do Cloud Manager.
+* Capacidade de autoatendimento para permitir que os usuários criem e gerenciem vários repositórios por meio da interface do Cloud Manager.
 
 * O SonarQube estava lendo desnecessariamente dados de histórico do Git. Em bases de código grandes, isso poderia resultar em uma penalidade desnecessária no desempenho de compilação.
 
@@ -120,7 +120,7 @@ Consulte [Relatórios de SLA](https://experienceleague.adobe.com/docs/experience
 
 * A integração inicial falhava para novas organizações com nomes longos.
 
-* Ocasionalmente, quando um pipeline é acionado duas vezes por algum motivo, isso resulta na falha de uma das execuções com um *`cannot update pipeline execution status`* erro.
+* Ocasionalmente, quando um pipeline é acionado duas vezes por algum motivo, isso resulta na falha de uma das execuções com um erro *`cannot update pipeline execution status`*.
 
 ## Ferramenta Transferência de conteúdo {#content-transfer-tool}
 
@@ -130,8 +130,8 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.5.6 é 11 
 
 ### Correções de erros {#bug-fixes-ctt}
 
-* Às vezes, nem todos os usuários eram migrados para a instância de destino. Para obter essa correção, a CTT v1.5.6 é necessária junto com o aem-ethos-tools 1.2.354 ou versão posterior na instância AEM as a Cloud Service de destino.
+* Às vezes, nem todos os usuários eram migrados para a instância de destino. Para obter essa correção, a CTT v1.5.6 é necessária junto com o aem-ethos-tools 1.2.354 ou versão posterior na instância do AEM as a Cloud Service de destino.
 
-* A variável **Interromper assimilação** O botão estava sendo desativado durante a assimilação na instância de publicação. Isso não é necessário porque não há etapa de restauração do Mongo durante a assimilação de publicação.
+* O botão **Parar assimilação** estava sendo desativado durante a assimilação na instância do Publish. Isso não é necessário porque não há etapa de restauração do Mongo durante a assimilação do Publish.
 
-* A CTT não limpou o `/tmp` diretório após uma extração bem-sucedida. Isso às vezes levava a problemas de espaço em disco.
+* A CTT não limpou o diretório `/tmp` após uma extração bem-sucedida. Isso às vezes levava a problemas de espaço em disco.

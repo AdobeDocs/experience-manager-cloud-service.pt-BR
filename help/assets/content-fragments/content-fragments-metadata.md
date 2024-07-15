@@ -1,5 +1,5 @@
 ---
-title: Metadados - Propriedades do fragmento (Ativos - Fragmentos de conteúdo)
+title: Metadados - Propriedades do fragmento (Assets - Fragmentos de conteúdo)
 description: Veja como visualizar e editar as propriedades de metadados dos fragmentos de conteúdo.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 feature: Content Fragments
@@ -18,9 +18,9 @@ Veja como visualizar e editar as propriedades de metadados dos fragmentos de con
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
+>Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
 >
->Existem dois editores para a criação de fragmentos de conteúdo. Esta seção aborda o editor original, acessado principalmente pelo **Assets** console. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes sobre o novo editor (acessado principalmente pelo **Fragmentos de conteúdo** console).
+>Existem dois editores para a criação de fragmentos de conteúdo. Esta seção abrange o editor original, acessado principalmente do console **Assets**. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes do novo editor (acessado principalmente do console **Fragmentos de conteúdo**).
 
 ## Edição de propriedades / metadados {#editing-properties-meta-data}
 

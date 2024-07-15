@@ -15,7 +15,7 @@ ht-degree: 90%
 
 # Alterações importantes no AEM Sites as a Cloud Service {#notable-changes}
 
-O AEM Sites as a Cloud Service oferece recursos de gerenciamento de experiência como parte da plataforma AEM as a Cloud Service nativa na nuvem. Além dos principais benefícios do AEM as a Cloud Service, como escalabilidade nativa em nuvem, tempo de atividade e estar sempre atualizado, o AEM Sites as a Cloud Service também fornece várias alterações e adições específicas do Sites.
+O AEM Sites as a Cloud Service oferece recursos de gerenciamento de experiência como parte da plataforma AEM as a Cloud Service nativa na nuvem. Além dos principais benefícios do AEM as a Cloud Service, como escalabilidade nativa em nuvem, tempo de atividade e estar sempre atualizado, o AEM Sites as a Cloud Service também várias alterações e adições específicas do Sites.
 
 >[!NOTE]
 >Este documento destaca as alterações importantes no AEM Sites. Para conhecer as alterações gerais no AEM as a Cloud Service e em outros módulos, consulte:

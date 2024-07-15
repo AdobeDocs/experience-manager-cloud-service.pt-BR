@@ -1,5 +1,5 @@
 ---
-title: Conteúdo associado (Ativos - Fragmentos de conteúdo)
+title: Conteúdo associado (Assets - Fragmentos de conteúdo)
 description: Entenda como o recurso de conteúdo associado para fragmentos de conteúdo AEM fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
 feature: Content Fragments
@@ -14,13 +14,13 @@ ht-degree: 41%
 
 # Conteúdo associado{#associated-content}
 
-Para Fragmentos de conteúdo do Adobe Experience Manager (AEM) as a Cloud Service, o recurso de conteúdo associado (disponível no editor original) fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento. Isso proporciona flexibilidade ao [fornecer uma variedade de ativos para acessar ao usar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado. Esse recurso pode ser usado para a entrega de conteúdo headless e para a criação de páginas.
+Para Fragmentos de conteúdo do Adobe Experience Manager (AEM) as a Cloud Service, o recurso de conteúdo associado (disponível no editor original) fornece a conexão para que os ativos possam ser usados opcionalmente com o fragmento. Isso proporciona flexibilidade ao [fornecer um intervalo de ativos para acessar ao usar o fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md#using-associated-content), além de ajudar a reduzir o tempo necessário para pesquisar o ativo apropriado. Esse recurso pode ser usado para a entrega de conteúdo headless e para a criação de páginas.
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
+>Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
 >
->Existem dois editores para a criação de fragmentos de conteúdo. Esta seção aborda o editor original, acessado principalmente pelo **Assets** console.
+>Existem dois editores para a criação de fragmentos de conteúdo. Esta seção abrange o editor original, acessado principalmente do console **Assets**.
 
 ## Adicionar conteúdo associado {#adding-associated-content}
 
@@ -28,7 +28,7 @@ Para Fragmentos de conteúdo do Adobe Experience Manager (AEM) as a Cloud Servic
 >
 >Existem vários métodos de adicionar [ativos visuais (por exemplo, imagens)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) ao fragmento e/ou página.
 
-Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a uma coleção](/help/assets/manage-collections.md). Depois disso, você pode:
+Para fazer a associação, primeiro você precisa [adicionar seus ativos de mídia a uma coleção](/help/assets/manage-collections.md). Depois disso, você pode:
 
 1. Abrir o fragmento e selecionar **Conteúdo associado** no painel lateral.
 
@@ -36,7 +36,7 @@ Para fazer a associação, primeiro é necessário [adicionar ativos de mídia a
 
 1. Dependendo de alguma coleção já ter sido associada ou não, selecione:
 
-   * **Conteúdo associado** - esta é a primeira coleção associada
+   * **Associar Conteúdo** - esta é a primeira coleção associada
    * **Associar Coleção**: as coleções associadas já estão configuradas
 
 1. Selecione a coleção necessária.

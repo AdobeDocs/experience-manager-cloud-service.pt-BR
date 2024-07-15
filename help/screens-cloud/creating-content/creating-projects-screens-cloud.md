@@ -26,20 +26,20 @@ Siga as etapas abaixo para criar um projeto no Screens as a Cloud Service:
 1. Navegue até Provedor de conteúdo do Screens.
 
    >[!NOTE]
-   >Consulte [Utilização do provedor de conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html) para saber como acessar o Provedor de conteúdo do Screens para criar seu projeto.
+   >Consulte [Usar o Provedor de Conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html) para saber como acessar o Provedor de Conteúdo do Screens para criar seu projeto.
 
 1. Próximo ao canto superior direito da barra de ações, clique em **Criar projeto do Screens**.
 
    ![create-screens-project1](/help/screens-cloud/assets/create-content/create-screens-project1.png)
 
-1. Insira o **Título** do seu projeto no **Criar projeto do Screens** caixa de diálogo. Por exemplo, *FirstDigitalExperience*.
+1. Insira o **Título** do seu projeto na caixa de diálogo **Criar Projeto do Screens**. Por exemplo, *FirstDigitalExperience*.
 
    ![create-screens-project2](/help/screens-cloud/assets/create-content/create-screens-project2.png)
 
    >[!NOTE]
-   >A variável **Nome** O campo é preenchido automaticamente na variável **Criar projeto do Screens** com base no título escolhido.
+   >O campo **Nome** é preenchido automaticamente na caixa de diálogo **Criar projeto do Screens** com base no título escolhido.
 
-1. Clique em **Salvar**. Você verá seu projeto do Screens, intitulado como *FirstDigitalExperience* no provedor de conteúdo do Screens. Você também verá seu projeto no Provedor de conteúdo do Screens, com duas pastas chamadas, **Localizações** e **Canais**.
+1. Clique em **Salvar**. Você verá seu projeto do Screens, intitulado como *FirstDigitalExperience* no Provedor de Conteúdo do Screens. Você também verá seu projeto no Provedor de Conteúdo do Screens, com duas pastas denominadas **Locais** e **Canais**.
 
    ![create-screens-project3](/help/screens-cloud/assets/create-content/create-screens-project3.png)
 
@@ -53,7 +53,7 @@ Os projetos existentes no Screens as a Cloud Service podem ser excluídos.
 1. Selecione o projeto que deseja excluir.
 1. Na barra de ações, clique em **Excluir**.
 
-   ![create-project5](/help/screens-cloud/assets/create-content/create-project5.png)
+   ![criar-projeto5](/help/screens-cloud/assets/create-content/create-project5.png)
 
 1. Clique em **Excluir** para confirmar a exclusão do projeto.
 
@@ -62,4 +62,4 @@ Os projetos existentes no Screens as a Cloud Service podem ser excluídos.
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você configurou um projeto do AEM Screens, é possível criar um canal e adicionar conteúdo aos canais. Consulte [Criação e gerenciamento de um canal](creating-channels-screens-cloud.md) para que você possa aprender a criar e gerenciar conteúdo em Canais.
+Agora que você configurou um projeto do AEM Screens, é possível criar um canal e adicionar conteúdo aos canais. Consulte [Criação e gerenciamento de um canal](creating-channels-screens-cloud.md) para saber como criar e gerenciar conteúdo em Canais.

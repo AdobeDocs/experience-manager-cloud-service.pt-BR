@@ -17,9 +17,9 @@ A ferramenta de cópia de conteúdo permite que os usuários copiem conteúdo mu
 
 ## Introdução {#introduction}
 
-Os dados atuais e reais são valiosos para fins de teste, validação e aceitação do usuário. A ferramenta de cópia de conteúdo permite copiar o conteúdo de um ambiente de produção do AEM as a Cloud Service para um ambiente de preparo, desenvolvimento ou [RDE (Rapid Development Environment, ambiente de desenvolvimento rápido)](/help/implementing/developing/introduction/rapid-development-environments.md) ambiente para esses testes.
+Os dados atuais e reais são valiosos para fins de teste, validação e aceitação do usuário. A ferramenta de cópia de conteúdo permite copiar o conteúdo de um ambiente de produção do AEM as a Cloud Service para um ambiente de preparo, desenvolvimento ou [Ambiente de desenvolvimento rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) para esses testes.
 
-O conteúdo a ser copiado é definido por um conjunto de conteúdo. Um conjunto de conteúdo consiste em uma lista de caminhos JCR que contêm o conteúdo mutável a ser copiado de um ambiente de serviço de autoria de origem para um ambiente de serviço de autoria de destino no mesmo programa do Cloud Manager. Os seguintes caminhos são permitidos em um conjunto de conteúdo.
+O conteúdo a ser copiado é definido por um conjunto de conteúdo. Um conjunto de conteúdo consiste em uma lista de caminhos JCR que contêm o conteúdo mutável a ser copiado de um ambiente de serviço de criação de origem para um ambiente de serviço de criação de destino no mesmo programa Cloud Manager. Os seguintes caminhos são permitidos em um conjunto de conteúdo.
 
 ```text
 /content
@@ -43,7 +43,7 @@ Para usar a ferramenta de cópia de conteúdo, determinadas permissões são nec
 | Criar e modificar [conjuntos de conteúdo](#create-content-set) | Não obrigatório | Obrigatório |
 | Iniciar ou cancelar o [processo de cópia de conteúdo](#copy-content) | Obrigatório | Obrigatório |
 
-Para obter mais detalhes sobre permissões e como defini-las, consulte [Equipe as a Cloud Service do AEM e perfis de produto](/help/onboarding/aem-cs-team-product-profiles.md).
+Para obter mais detalhes sobre permissões e como defini-las, consulte [Perfis de produto e de equipe do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ## Criação de um conjunto de conteúdo {#create-content-set}
 
@@ -51,13 +51,13 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 
 1. Faça logon no Cloud Manager em[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
 
-1. Usando o painel de navegação lateral, navegue até o **Conjuntos de conteúdo** na guia **Visão geral** página.
+1. Usando o painel de navegação lateral, navegue até a guia **Conjuntos de conteúdo** na página **Visão geral**.
 
 1. Na parte superior direita da tela, clique em **Adicionar conjunto de conteúdo**.
 
    ![Conjuntos de conteúdo](assets/content-sets.png)
 
-1. No **Detalhes** do assistente, forneça um nome e uma descrição para o conjunto de conteúdo e selecione **Continuar**.
+1. Na guia **Detalhes** do assistente, forneça um nome e uma descrição para o conjunto de conteúdo e selecione **Continuar**.
 
    ![Detalhes do conjunto de conteúdo](assets/add-content-set-details.png)
 
@@ -72,10 +72,10 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 
 1. Se você precisar refinar ou restringir seu conjunto de conteúdo, os subcaminhos poderão ser excluídos.
 
-   1. Na lista de caminhos incluídos, clique em **Adicionar subcaminhos de exclusão** ao lado do caminho que deseja restringir.
+   1. Na lista de caminhos incluídos, clique em **Adicionar subcaminhos de exclusão** ao lado do caminho que você deseja restringir.
    1. Insira o subcaminho a ser excluído abaixo do caminho selecionado.
-   1. Selecionar **Excluir caminho**.
-   1. Selecionar **Adicionar subcaminhos de exclusão** novamente para adicionar outros caminhos a serem excluídos, conforme necessário.
+   1. Selecione **Excluir Caminho**.
+   1. Selecione **Adicionar subcaminhos de exclusão** novamente para adicionar outros caminhos a serem excluídos conforme necessário.
       * Os caminhos excluídos devem ser relativos ao caminho incluído.
       * Não há limite para o número de caminhos excluídos.
 
@@ -84,17 +84,17 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 1. É possível editar os caminhos especificados, se necessário.
 
    1. Clique no X ao lado dos subcaminhos excluídos para excluí-los.
-   1. Clique no botão de reticências ao lado dos caminhos para que você possa revelar **Editar** e **Excluir** opções.
+   1. Clique no botão de reticências ao lado dos caminhos para poder revelar as opções **Editar** e **Excluir**.
 
    ![Editar lista de caminhos](assets/add-content-set-excluded-paths.png)
 
-1. Selecionar **Criar** para criar o conjunto de conteúdo.
+1. Selecione **Criar** para criar o conjunto de conteúdo.
 
 O conjunto de conteúdo agora pode ser usado para copiar conteúdo entre ambientes.
 
 ## Editar um conjunto de conteúdo {#edit-content-set}
 
-Para esse processo, as etapas são semelhantes às da criação de conteúdo. Em vez de clicar em **Adicionar conjunto de conteúdo**, selecione um conjunto existente no console e selecione **Editar** no menu reticências.
+Para esse processo, as etapas são semelhantes às da criação de conteúdo. Em vez de clicar em **Adicionar conjunto de conteúdo**, selecione um conjunto existente no console e selecione **Editar** no menu de reticências.
 
 ![Editar conjunto de conteúdo](assets/edit-content-set.png)
 
@@ -105,7 +105,7 @@ Ao editar o conjunto de conteúdo, você pode expandir os caminhos configurados 
 Após criar um conjunto de conteúdo, você pode usá-lo para copiar o conteúdo. Siga estas etapas para poder copiar o conteúdo.
 
 >[!NOTE]
-> Não use a Cópia de conteúdo em um ambiente enquanto [transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) a operação está em execução nesse ambiente.
+> Não use a Cópia de Conteúdo em um ambiente enquanto uma operação de [transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) estiver em execução nesse ambiente.
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
@@ -134,9 +134,9 @@ Após criar um conjunto de conteúdo, você pode usá-lo para copiar o conteúdo
       * Estágios
       * Desenvolvimento / RDE
 
-1. Se necessário, também é possível optar por **Incluir listas de controle de acesso** no processo de cópia.
+1. Se necessário, você também pode optar por **Incluir listas de controle de acesso** no seu processo de cópia.
 
-1. Selecionar **Copiar**.
+1. Selecione **Copiar**.
 
 O processo de cópia será iniciado. O status do processo de cópia é exibido no console do conjunto de conteúdo selecionado.
 
@@ -167,9 +167,9 @@ Depois de começar a copiar o conteúdo, o processo poderá ter um dos status a 
 
 Se você precisar abortar uma operação de cópia de conteúdo após iniciá-la, é possível cancelá-la opcionalmente.
 
-Para isso, no **Atividade de cópia de conteúdo** selecione a **Cancelar** ação do menu de reticências do processo de cópia iniciado anteriormente.
+Para fazer isso, na página **Atividade de cópia de conteúdo**, selecione a ação **Cancelar** do menu de reticências do processo de cópia iniciado anteriormente.
 
-![Cancelar cópia de conteúdo](assets/content-copy-cancel.png)
+![Cancelar cópia do conteúdo](assets/content-copy-cancel.png)
 
 >[!NOTE]
 >
@@ -181,9 +181,9 @@ Para isso, no **Atividade de cópia de conteúdo** selecione a **Cancelar** aç�
 
 Você pode verificar os logs dos ambientes de origem e de destino para qualquer processo de cópia de conteúdo concluído.
 
-Para isso, no **Atividade de cópia de conteúdo** selecione a **Logs** no menu de reticências do processo de cópia para o qual você deseja revisar os logs e escolher para qual ambiente.
+Para fazer isso, na página **Atividade de Conteúdo de Cópia**, selecione a ação **Logs** no menu de reticências do processo de cópia para o qual você deseja revisar os logs e escolher para qual ambiente.
 
-![Acessar logs para o processo de cópia de conteúdo](assets/copy-content-logs.png)
+![Acessando logs para o processo de cópia de conteúdo](assets/copy-content-logs.png)
 
 Os logs são baixados no computador local. Se o download não começar, verifique as configurações do bloqueador de pop-ups.
 

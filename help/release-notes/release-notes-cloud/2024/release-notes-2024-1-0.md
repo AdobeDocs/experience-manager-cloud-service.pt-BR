@@ -43,11 +43,11 @@ Assista ao vídeo de Visão geral da versão de janeiro de 2024 que exibe um res
 
 ### Extension Manager no AEM Sites {#sites-extension-manager}
 
-**Explore o novo [Extension Manager no AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** para personalizar a configuração do AEM definindo as extensões da interface do usuário.
+**Explore o novo [Extension Manager no AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/)** para personalizar a instalação do AEM configurando as extensões da interface do usuário.
 
 ![Extension Manager no AEM Sites](/help/assets/sites/extension-manager/homepage.png)
 
-O Extension Manager no AEM Sites permite que desenvolvedores e profissionais acessem, gerenciem e personalizem [Extensões da interface](https://developer.adobe.com/uix/docs/) criado com [Construtor de aplicativos Adobe](https://developer.adobe.com/app-builder/) para aprimorar a funcionalidade do AEM Sites.
+O Extension Manager no AEM Sites permite que desenvolvedores e profissionais acessem, gerenciem e personalizem as [extensões da interface do usuário](https://developer.adobe.com/uix/docs/) criadas com o [Adobe App Builder](https://developer.adobe.com/app-builder/) para aprimorar a funcionalidade do AEM Sites.
 Com o Extension Manager, é possível:
 
 * Ativar ou desativar extensões por instância;
@@ -62,17 +62,17 @@ Estamos buscando ativamente feedback e novos casos de uso para extensões da int
 
 ### Recursos de pré-lançamento da exibição do administrador {#admin-view-prerelease}
 
-**Visualizar representações para todos os tipos de vídeo compatíveis**
+**Visualizar representações para todos os tipos de vídeo com suporte**
 
 O Experience Manager Assets agora gera representações de pré-visualização de todos os tipos de vídeo compatíveis por padrão, sem exigir uma configuração de perfil de processamento
 
-### Exibição de ativos {#assets-view-features}
+### Visualização do Assets {#assets-view-features}
 
 **Tags inteligentes na lista de bloqueios**
 
 O Assets Essentials agora permite definir uma lista de bloqueios que inclui palavras que não devem ser adicionadas como Tags inteligentes aos ativos quando eles são enviados ao repositório. Esse recurso ajuda a manter a conformidade da marca e reduz o esforço para moderar as Tags inteligentes.
 
-![Tags inteligentes do incluo na lista de bloqueios](/help/assets/assets/block-tags.png)
+![inclui na lista de bloqueios de Tags Inteligentes](/help/assets/assets/block-tags.png)
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -85,34 +85,34 @@ O Assets Essentials agora permite definir uma lista de bloqueios que inclui pala
 
 ### Programa de adoção antecipada {#forms-early-adopter}
 
-* **[Enviar um formulário adaptável para o cenário do Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: o Forms as a Cloud Service oferece opções prontas para uso para conectar facilmente um Formulário adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
+* **[Enviar um Formulário Adaptável para o Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: o Forms as a Cloud Service opções prontas para uso para conectar facilmente um Formulário Adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
 
-* **[Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md)**: o Forms adaptável incorporado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diferentes e selecionar mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
+* **[Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md)**: o Forms adaptável integrado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diferentes e selecionar mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
 
   ![Suporte de idioma da direita para a esquerda](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs do DocAssurance permitem proteger informações confidenciais, assinando e criptografando os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
+* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de Comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs DocAssurance permitem proteger informações confidenciais ao assinar e criptografar os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
 
-  Você pode escrever para `aem-forms-early-adopter-program@adobe.com` do seu id de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
+  Você pode escrever para `aem-forms-early-adopter-program@adobe.com` a partir de sua ID de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
 
-* **[Você pode aproveitar o Serviço de dados de monitoramento de uso real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para ativar a coleta no lado do cliente para o AEM as a Cloud Service.
+* **[Você pode aproveitar o Serviço de Dados de Monitoramento de Uso Real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para habilitar a coleta no lado do cliente para o AEM as a Cloud Service.
 O Serviço de dados de Monitoramento de uso real (RUM) oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. É uma ótima oportunidade para obter insights avançados sobre o desempenho da página. Embora isso seja benéfico para clientes que usam CDN gerenciada por Adobe ou CDN não gerenciada por Adobe. Além disso, para clientes que usam um CDN não gerenciado por Adobe, o relatório de tráfego automatizado agora pode ser ativado para eles, eliminando a necessidade de compartilhar qualquer relatório de tráfego com o Adobe.
 
-  Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-rum-adopter@adobe.com`, juntamente com o nome de domínio para cada um dos ambientes para os quais você deseja habilitar o RUM, a partir do seu endereço de email associado à sua Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de uso real (RUM) para você.
+  Se você estiver interessado em testar esse novo recurso e compartilhar seus comentários, envie um email para `aemcs-rum-adopter@adobe.com`, juntamente com o nome de domínio de cada um dos ambientes para os quais você deseja habilitar o RUM no seu endereço de email associado à sua Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de uso real (RUM) para você.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Suporte para Dynatrace {#dynatrace}
 
-Os clientes do Dynatrace podem monitorar o uso do AEM. [Saiba como](/help/implementing/cloud-manager/dynatrace.md) para solicitar conectividade com seu ambiente Dynatrace para monitoramento do desempenho do aplicativo. Observe que o APM do New Relic, que está disponível para todos os clientes, deixará de coletar dados se o Dynatrace estiver ativado.
+Os clientes do Dynatrace podem monitorar o uso do AEM. [Leia como](/help/implementing/cloud-manager/dynatrace.md) para solicitar conectividade com seu ambiente Dynatrace para o monitoramento do desempenho do aplicativo. Observe que o APM do New Relic, que está disponível para todos os clientes, deixará de coletar dados se o Dynatrace estiver ativado.
 
 ### Suporte RDE para código de front-end usando temas de site e modelos de site: programa Early Adoter {#rde-frontend-early-adopter}
 
-[RDEs (Rapid Development Environments, ambientes de desenvolvimento rápido)](/help/implementing/developing/introduction/rapid-development-environments.md) O agora oferece suporte ao código de front-end com base no [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md), para os participantes iniciais. Com RDEs, isso é feito usando uma diretiva de linha de comando, em vez de uma [pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Entre em contato com **aemcs-rde-support@adobe.com** para experimentar e fornecer feedback.
+Os [Ambientes de Desenvolvimento Rápido (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) agora oferecem suporte ao código front-end com base nos [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e nos [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md), para usuários iniciais. Com RDEs, isso é feito usando uma diretiva de linha de comando, em vez de um [pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Entre em contato com **aemcs-rde-support@adobe.com** para experimentar e fornecer feedback.
 
 ### Programa de adoção antecipada da configuração da CDN {#cdn-config-early-adopter}
 
-Além do recém-lançado [Regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md), que inclui as regras do WAF (Web Application Firewall) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de configuração para declarar e implantar [outros tipos de configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Associe-se ao programa de adoção antecipada enviando um email **aemcs-cdn-config-adopter@adobe.com** para obter acesso a:
+Além das [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de Configuração para declarar e implantar [outros tipos de configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md). Participe do programa de adoção antecipada enviando um email para **aemcs-cdn-config-adopter@adobe.com** para obter acesso a:
 * Redirecionamentos do lado do cliente 301/302
 * solicitações de proxy na borda para origens arbitrárias
 * Transformações de URL

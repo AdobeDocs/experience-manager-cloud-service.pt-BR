@@ -47,24 +47,24 @@ Execute as seguintes etapas para começar a usar o AEM Assets no editor de Adobe
 
 Depois de incorporar as modificações apropriadas na tela Express, você pode salvá-la no repositório do AEM Assets.
 
-1. Clique em **[!UICONTROL Compartilhar]** para abrir o **[!UICONTROL Compartilhar]** diálogo.
+1. Clique em **[!UICONTROL Compartilhar]** para abrir a caixa de diálogo **[!UICONTROL Compartilhar]**.
 
    ![Salvar ativos no AEM](assets/adobe-express-share.png)
 
 2. Na seção Armazenamento do painel direito, selecione **AEM Assets**. Adobe Express exibe a caixa de diálogo de upload.
 3. Selecione **Página atual** ou **Todas as páginas**. Especifique um nome e um formato para o(s) ativo(s) a ser(em) exportado(s). É possível exportar o conteúdo da tela de desenho nos formatos PNG, JPEG, PDF, MP4, MP4+PNG ou MP4+JPEG. O formato é ajustado automaticamente com base no(s) ativo(s) na(s) página(s) da tela.
-Selecionar **Página atual** O salva o ativo da página atual na pasta de destino. Se você selecionar **Todas as páginas** e o formato de exportação não for PDF, todas as páginas da tela de desenho serão salvas como arquivos separados em uma nova pasta dentro da pasta de destino. Se o formato de exportação for PDF, todas as páginas da tela de desenho serão salvas como um único arquivo PDF na pasta de destino.
+Selecionar **Página atual** salva o ativo da página atual na pasta de destino. Se você selecionar **Todas as páginas** e o formato de exportação não for PDF, todas as páginas da tela serão salvas como arquivos separados em uma nova pasta dentro da pasta de destino. Se o formato de exportação for PDF, todas as páginas da tela de desenho serão salvas como um único arquivo PDF na pasta de destino.
 
 4. Clique no ícone de pasta em **Pasta de destino** para selecionar um local e salvar o(s) ativo(s).
 
    ![Salvar ativos no AEM](/help/assets/assets/page-selection-and-destination-folder.svg)
 
-5. Opcional: é possível adicionar metadados de campanha para upload usando o **Nome do projeto ou da campanha** campo. Você pode usar um nome existente ou criar um novo. Você pode definir vários nomes de Projeto ou Campanha para o upload. Para registrar o nome, basta digitar o nome e pressionar Enter.
+5. Opcional: Você pode adicionar metadados da campanha para o upload usando o campo **Nome do projeto ou da campanha**. Você pode usar um nome existente ou criar um novo. Você pode definir vários nomes de Projeto ou Campanha para o upload. Para registrar o nome, basta digitar o nome e pressionar Enter.
 Como prática recomendada, o Adobe recomenda especificar valores no restante dos campos, bem como criar uma experiência de pesquisa aprimorada para os ativos carregados.
 
-6. Da mesma forma, defina valores para a variável **[!UICONTROL Palavras-chave]** e **[!UICONTROL Canais]** campos.
+6. Da mesma forma, defina valores para os campos **[!UICONTROL Palavras-chave]** e **[!UICONTROL Canais]**.
 
-7. Clique em **[!UICONTROL Carregar]** para fazer upload do(s) ativo(s) no AEM Assets.
+7. Clique em **[!UICONTROL Carregar]** para carregar o(s) ativo(s) para o AEM Assets.
 
 ## Limitações {#limitations}
 

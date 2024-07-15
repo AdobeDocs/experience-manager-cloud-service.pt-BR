@@ -185,7 +185,7 @@ Também é possível bloquear tags inteligentes para um único ativo. Navegue at
 
 ### Exportar lista de bloqueios{#export-blocklist}
 
-A visualização de ativos permite exportar as tags bloqueadas listadas para o formato CSV. Para exportar a lista de bloqueios, execute as etapas abaixo:
+A visualização do Assets permite exportar as tags bloqueadas listadas para o formato CSV. Para exportar a lista de bloqueios, execute as etapas abaixo:
 
 1. Clique em **[!UICONTROL Exportar como CSV]**.
 1. Escolha o local apropriado para salvar o arquivo CSV. Também é possível renomear o arquivo de acordo com o requisito.
@@ -193,7 +193,7 @@ A visualização de ativos permite exportar as tags bloqueadas listadas para o f
 
 ### Importar lista de bloqueios{#import-blocklist}
 
-A visualização de ativos fornece a capacidade de importar tags bloqueadas de uma fonte de dados (CSV). Para importar uma lista de bloqueios, execute as etapas abaixo:
+A visualização Assets oferece a capacidade de importar tags bloqueadas de uma fonte de dados (CSV). Para importar uma lista de bloqueios, execute as etapas abaixo:
 
 1. Clique em **[!UICONTROL Importar como CSV]**.
 1. Escolha o arquivo CSV do seu dispositivo. Clique em **[!UICONTROL selecionar um arquivo]** para navegar até o arquivo do seu dispositivo. Como alternativa, você pode arrastar e soltar o arquivo CSV do seu dispositivo.

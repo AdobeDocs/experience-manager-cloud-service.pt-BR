@@ -1,6 +1,6 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.2.0.
-description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.2.0."
+description: "[!DNL Adobe Experience Manager] Notas de Versão as a Cloud Service para 2021.2.0."
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
 feature: Release Information
 role: Admin
@@ -12,26 +12,26 @@ ht-degree: 32%
 ---
 
 
-# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de versão para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-A seção a seguir descreve as Notas de versão gerais do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de Versão gerais para [!DNL Experience Manager] as a Cloud Service.
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] O as a Cloud Service 2021.2.0 é 25 de fevereiro de 2021.
+A data de lançamento do [!DNL Adobe Experience Manager] as a Cloud Service 2021.2.0 é 25 de fevereiro de 2021.
 A versão seguinte (2021.3.0) será lançada em 25 de março de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Gerenciamento de conteúdo headless {#headless}
 
-* **[API do GraphQL para entrega de fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)**: capacidade de consultar fragmentos de conteúdo usando sintaxe do GraphQL e esquemas com base em modelos de fragmento de conteúdo para saída no formato JSON.
+* **[API do GraphQL para Entrega de fragmento de conteúdo](/help/headless/graphql-api/content-fragments.md)**: capacidade de consultar Fragmentos de conteúdo usando sintaxe GraphQL e esquemas com base em modelos de Fragmento de conteúdo para saída no formato JSON.
 
-* **[Suporte de autenticação para solicitações de API do GraphQL](/help/headless/security/authentication.md)**: capacidade de autenticar solicitações de API do GraphQL com tokens de acesso para APIs do lado do servidor.
+* **[Suporte de Autenticação para Solicitações da API do GraphQL](/help/headless/security/authentication.md)**: capacidade de autenticar solicitações da API do GraphQL com tokens de acesso para APIs do lado do servidor.
 
-* **[O componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)**: adição de suporte para visualização e edição de SPA externo no AEM usando.
+* **[O componente RemotePage](/help/implementing/developing/hybrid/remote-page.md)**: adição de suporte para exibição e edição de SPA externo no AEM.
 
-* **[Edição de um AEM externo no SPA](/help/implementing/developing/hybrid/editing-external-spa.md)**: adição da capacidade de fazer upload de um aplicativo independente de página única em uma instância do AEM, adicionar seções editáveis de conteúdo e ativar a criação.
+* **[Edição de um SPA externo no AEM](/help/implementing/developing/hybrid/editing-external-spa.md)**: adição da capacidade de carregar um aplicativo independente de página única em uma instância do AEM, adicionar seções editáveis de conteúdo e habilitar a criação.
 
 * Saída JSON aprimorada da API do GraphQL, incluindo a capacidade de produzir rich text no formato JSON e localidades.
 
@@ -55,20 +55,20 @@ A versão seguinte (2021.3.0) será lançada em 25 de março de 2021.
 
 ## Novidades do [!DNL Assets] {#what-is-new-assets}
 
-* Os ativos podem ser obtidos usando [!DNL Experience Manager Assets Brand Portal]. Ele ajuda a obter ativos dos usuários da agência para novas campanhas de marketing, sessões de fotos e projetos.
+* O Assets pode ser originado usando [!DNL Experience Manager Assets Brand Portal]. Ele ajuda a obter ativos dos usuários da agência para novas campanhas de marketing, sessões de fotos e projetos.
 
-* [!DNL Experience Manager Assets] as a [!DNL Cloud Service] O está qualificado para ter um pré-configurado [!DNL Brand Portal] instância. A variável [!DNL Cloud Manager] o usuário pode ativar [!DNL Brand Portal] em [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Consulte [ativar o Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
+* [!DNL Experience Manager Assets] como [!DNL Cloud Service] está qualificado para ter uma instância [!DNL Brand Portal] pré-configurada. O usuário [!DNL Cloud Manager] pode ativar [!DNL Brand Portal] em [!DNL Experience Manager Assets] como [!DNL Cloud Service]. Consulte [ativar Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html).
 
-* Agora, as empresas podem adquirir ativos usando [!DNL Brand Portal]. Usos do recurso de origem do ativo [!DNL Brand Portal] para ajudar os clientes a se envolver com usuários de agências a fim de obter ativos para novas campanhas de marketing, sessões de fotos e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR).
+* Agora, as empresas podem adquirir ativos usando o [!DNL Brand Portal]. O recurso de fornecimento de ativos usa o [!DNL Brand Portal] para ajudar os clientes a se envolver com usuários de agências a fim de obter ativos para novas campanhas de marketing, sessões de fotos e projetos. Consulte [origem do ativo em [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=pt-BR).
 
-* A variável [!DNL Brand Portal] relatório de uso agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cuja conta está atribuída a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
+* O relatório de uso [!DNL Brand Portal] agora exibe somente os usuários ativos. Os usuários inativos não são exibidos agora. Os usuários ativos são aqueles cujas contas estão atribuídas a um perfil de produto no [!DNL Admin Console]. Consulte [[!DNL Brand Portal] relatórios](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html).
 
-* Entrada [!DNL Brand Portal], uma nova configuração de download é introduzida e permite criar uma pasta separada para cada ativo ao baixar pastas, coleções e assim por diante. Consulte [configurações de download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
+* No [!DNL Brand Portal], é introduzida uma nova configuração de download que permite criar uma pasta separada para cada ativo ao baixar pastas, coleções e assim por diante. Consulte [configurações de download](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html).
 
-## Correções de erros no [!DNL Assets] {#bug-fixes-assets}
+## Correções de erros em [!DNL Assets] {#bug-fixes-assets}
 
 * Quando vários ativos são selecionados para atualizar as propriedades, às vezes ocorre um erro ou as propriedades de um ativo desmarcado são atualizadas. (CQ-4316532)
-* Ao tentar abrir o [!UICONTROL Trilho de pesquisa do administrador de ativos], a página permanecerá em branco e clicando em [!UICONTROL Editar] > [!UICONTROL Configurações] gera um erro. (CQ-4315079)
+* Ao tentar abrir o [!UICONTROL Painel de Pesquisa do Administrador do Assets], a página permanece em branco e um clique em [!UICONTROL Editar] > [!UICONTROL Configurações] gera um erro. (CQ-4315079)
 * Quando uma nova versão de um ativo existente é criada após resolver o conflito de nomenclatura, os metadados do ativo original são substituídos. (CQ-4313594)
 * Quando um ativo com texto de anotação longa é impresso, o texto da anotação é cortado, mesmo se houver espaço disponível. (CQ-4314101)
 
@@ -78,9 +78,9 @@ A versão seguinte (2021.3.0) será lançada em 25 de março de 2021.
 
 * Gerenciamento de experiência do produto: enriqueça as páginas do catálogo de produtos individualmente com Fragmentos de experiência.
 
-* Propriedades do console do produto estendido para mostrar Ativos vinculados e Fragmentos de experiência, incluindo ações para navegar rapidamente até o conteúdo associado.
+* Propriedades do console do produto estendido para mostrar Assets vinculados e Fragmentos de experiência, incluindo ações para navegar rapidamente até o conteúdo associado.
 
-* Lançamento do site de referência CIF Venia - 24/02/2021 que inclui a versão mais recente dos componentes principais CIF v1.8.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) para obter mais detalhes.
+* Lançamento do site de referência CIF Venia - 24/02/2021 que inclui a versão mais recente dos componentes principais CIF v1.8.0. Consulte [Site de referência de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) para obter mais detalhes.
 
 * Lançamento de componentes principais de CIF v1.8.0. Consulte [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) para obter mais detalhes.
 

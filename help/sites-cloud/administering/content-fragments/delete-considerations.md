@@ -24,14 +24,14 @@ Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser
 
 1. **O fragmento do conteúdo como uma única entidade.**
 
-   * **Caso de uso**: um usuário que deve editar/atualizar um fragmento de conteúdo - **e excluir um fragmento inteiro**.
+   * **Caso de uso**: um usuário que deve editar/atualizar um Fragmento de conteúdo - **e excluir um fragmento inteiro**.
    * **Permissões**: a permissão de exclusão pode ser atribuída por meio do gerenciamento de usuários e/ou grupos.
 
-2. **As várias subentidades que compõem um fragmento de conteúdo; por exemplo, variações, nós secundários.**
+2. **As várias subentidades que compõem um Fragmento de Conteúdo; por exemplo, variações, subnós.**
 
    A operação básica do editor de Fragmento de conteúdo requer que esses subelementos transitórios possam ser excluídos. Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
-   * **Caso de uso**: um usuário que deve editar/atualizar um fragmento de conteúdo - **sem ter permissão para excluir um fragmento inteiro**.
+   * **Caso de uso**: um usuário que deve editar/atualizar um Fragmento de conteúdo - **sem ter permissão para excluir um fragmento inteiro**.
    * **Permissões**: consulte [Permissões necessárias somente para funcionalidade de edição](#permissions-required-for-editor-functionality-only).
 
 >[!NOTE]
@@ -40,7 +40,7 @@ Com relação às permissões de exclusão, os fragmentos de conteúdo devem ser
 
 ## Permissões necessárias somente para funcionalidade de edição {#permissions-required-for-editor-functionality-only}
 
-Para usuários que precisam editar/atualizar um fragmento de conteúdo, **sem permitir que excluam um fragmento inteiro**, permissões específicas devem ser atribuídas, pois a operação básica do editor de Fragmento de conteúdo requer que subelementos transitórios possam ser excluídos.
+Para usuários que precisam editar/atualizar um fragmento de conteúdo, **sem permitir que excluam um fragmento inteiro**, permissões específicas devem ser atribuídas, já que a operação básica do editor de fragmentos de conteúdo requer que subelementos transitórios possam ser excluídos.
 
 Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar conteúdo associado.
 
@@ -48,7 +48,7 @@ Por exemplo, ao manipular variações; também ao editar metadados ou gerenciar 
 >
 >As permissões de exclusão, necessárias para editar/atualizar um fragmento de conteúdo, estão incluídas na permissão de exclusão atribuída por meio do gerenciamento de usuários e/ou grupos.
 
-As permissões necessárias para editar/atualizar um fragmento devem ser aplicadas ao nó que contém o fragmento de conteúdo ou a um nó principal apropriado (em qualquer nível no `/content/dam`). Quando atribuídas a esse nó principal, as permissões são aplicadas a todos os nós dentro dessa ramificação.
+As permissões necessárias para editar/atualizar um fragmento devem ser aplicadas ao nó que contém o Fragmento de conteúdo ou a um nó principal apropriado (em qualquer nível em `/content/dam`). Quando atribuídas a esse nó principal, as permissões são aplicadas a todos os nós dentro dessa ramificação.
 
 Por exemplo, uma pasta para armazenar todos os fragmentos de conteúdo, como:
 
@@ -56,7 +56,7 @@ Por exemplo, uma pasta para armazenar todos os fragmentos de conteúdo, como:
 
 >[!CAUTION]
 >
->Definir as permissões em `/content/dam` também é possível, pois todos os fragmentos de conteúdo são armazenados aqui.
+>Definir as permissões em `/content/dam` também é possível, pois todos os Fragmentos de conteúdo são armazenados aqui.
 >
 >No entanto, essa ação aplica as mesmas permissões de exclusão a *todos* os outros tipos de ativos também.
 
@@ -72,7 +72,7 @@ Os pré-requisitos de permissões para permitir que um usuário e/ou grupo espec
 
 * Para o nó `jcr:content` de todos os fragmentos de conteúdo:
 
-   * `jcr:addChildNodes`, `jcr:modifyProperties`, e `jcr:removeChildNodes`
+   * `jcr:addChildNodes`, `jcr:modifyProperties` e `jcr:removeChildNodes`
 
 * Para todos os nós abaixo de `jcr:content` de todos os fragmentos de conteúdo:
 

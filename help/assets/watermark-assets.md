@@ -19,36 +19,36 @@ ht-degree: 14%
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/watermarking.html) |
 | AEM as a Cloud Service | Este artigo |
 
-[!DNL Adobe Experience Manager Assets] permite adicionar uma marca d&#39;água digital a imagens e vídeos. [!DNL Assets] O suporta a aplicação de uma imagem como marca d&#39;água a outros arquivos de imagem. As marcas d&#39;água podem ajudar os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. Além disso, uma marca d&#39;água pode ser usada para indicar o estado de um documento como confidencial, rascunho, validade e assim por diante.
+O [!DNL Adobe Experience Manager Assets] permite que você adicione uma marca d&#39;água digital a imagens e vídeos. [!DNL Assets] dá suporte à aplicação de uma imagem como marca d&#39;água a outros arquivos de imagem. As marcas d&#39;água podem ajudar os usuários a verificar a autenticidade e a propriedade de direitos autorais dos ativos. Além disso, uma marca d&#39;água pode ser usada para indicar o estado de um documento como confidencial, rascunho, validade e assim por diante.
 
-Para configurar [!DNL Experience Manager] para criar uma marca d&#39;água nos ativos:
+Para configurar o [!DNL Experience Manager] para ativos de marca d&#39;água:
 
 1. Um arquivo PNG é aplicado como marca d&#39;água. Faça upload desse arquivo para o repositório DAM.
 
-1. Navegue até **[!UICONTROL Ferramentas > Ativos > Configurações de ativos]**.
+1. Navegue até **[!UICONTROL Ferramentas > Assets > Configurações do Assets]**.
 
 1. Clique em **[!UICONTROL Perfil de marca d&#39;água do sistema]**.
 
-1. No [!UICONTROL Página Perfil de marca d&#39;água do sistema], especifique o caminho da imagem carregada no repositório DAM na etapa 1.
+1. Na [!UICONTROL página Perfil de marca d&#39;água do sistema], especifique o caminho da imagem carregada no repositório DAM na etapa 1.
 
-1. Especifique a escala da marca d&#39;água, variando de 0,0 a 1,0, relativa à largura da representação, no **[!UICONTROL Escala]** campo.
+1. Especifique a escala da marca d&#39;água, variando de 0,0 a 1,0, relativa à largura da representação, no campo **[!UICONTROL Escala]**.
 
 1. Clique em **[!UICONTROL Salvar]**.
 
-   ![Detector de duplicação de ativo](assets/system-watermarking-profile.png)
+   ![Detector de duplicação de ativos](assets/system-watermarking-profile.png)
 
    >[!NOTE]
    >
-   >Se você configurou o Perfil de marca d&#39;água do sistema usando `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` arquivo de configuração (configuração OSGi), você pode continuar a usá-lo, no entanto, o Adobe recomenda o uso do novo método.
+   >Se você tiver configurado o Perfil de Marcas D&#39;Água do Sistema usando o arquivo de configuração `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` (configuração OSGi), poderá continuar a usá-lo. No entanto, a Adobe recomenda o uso do novo método.
 
 
-1. [Criar um perfil de processamento](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) para usar microsserviços de ativos para aplicar a marca d&#39;água.
+1. [Crie um perfil de processamento](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) para usar microsserviços de ativos para aplicar a marca d&#39;água.
 
    ![Perfil de processamento de ativo para criar marca d&#39;água](assets/watermark-processing-profile.png)
 
-   Certifique-se de ativar o **[!UICONTROL Marca d&#39;água]** alternar ao criar o perfil de processamento.
+   Certifique-se de habilitar a opção de alternância **[!UICONTROL Marca d&#39;água]** ao criar o perfil de processamento.
 
-1. [Aplicar os perfis de processamento a uma pasta](/help/assets/asset-microservices-configure-and-use.md#use-profiles) para criar ativos com marca d&#39;água.
+1. [Aplique os perfis de processamento a uma pasta](/help/assets/asset-microservices-configure-and-use.md#use-profiles) para criar ativos com marca d&#39;água.
 
 ## Dicas e limitações {#tips-limitations-bestpractices}
 
@@ -70,7 +70,7 @@ Para configurar [!DNL Experience Manager] para criar uma marca d&#39;água nos a
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

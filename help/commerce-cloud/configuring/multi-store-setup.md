@@ -34,13 +34,13 @@ Para conectar um site de AEM AEM e os Componentes principais do CIF a uma exibi�
 
 ## Configuração {#configuration}
 
-1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
 2. Verifique se a conexão entre AEM e Adobe Commerce está funcionando.
 
 3. Crie uma configuração secundária da configuração do CIF Cloud Service seguindo estas etapas:
 
-   * No AEM, acesse Ferramentas > Geral > [Navegador de configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * No AEM, vá para Ferramentas > Geral > [Navegador de Configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Selecione a configuração básica que você criou
    * Crie uma configuração usando as etapas descritas no ponto 2 acima
 
@@ -56,11 +56,11 @@ Para conectar um site de AEM AEM e os Componentes principais do CIF a uma exibi�
    * Navegue até a raiz de região ou idioma da estrutura do site. Por exemplo, `/content/venia/us _or_ /content/venia/us/en` para a página de exemplo Venia
    * Selecione a página e abra as propriedades dela
    * Selecione a guia Avançado
-   * No `Configuration` selecione a configuração que você criou na etapa 3
+   * Na seção `Configuration`, selecione a configuração criada na etapa 3
 
 ## Recursos adicionais
 
-* [Sites, lojas e visualizações do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [Sites, Lojas e Exibições do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 * [Componentes principais da CIF do AEM — Configuração de várias lojas/sites](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [Usar o gerenciamento de vários sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
 * [Reutilizar conteúdo: gerenciador de vários sites e Live Copy](/help/sites-cloud/administering/msm/overview.md)

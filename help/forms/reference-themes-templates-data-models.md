@@ -19,9 +19,9 @@ ht-degree: 4%
 | Formulário adaptável com base nos Componentes principais | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
 | Formulário adaptável baseado em componentes de base | Este artigo |
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
-O AEM Forms as a Cloud Service fornece vários temas de referência, modelos e modelo de dados de formulário (FDM) para ajudar você a começar rapidamente a criar o Adaptive Forms. Você pode baixar o [pacote de conteúdo de referência do portal de distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) e use o [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) para instalar o [pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) no ambiente de produção, desenvolvimento ou desenvolvimento local para obter esses ativos de referência para o ambiente.
+O AEM Forms as a Cloud Service fornece vários temas de referência, modelos e modelo de dados de formulário (FDM) para ajudar você a começar rapidamente a criar o Adaptive Forms. Você pode baixar o [pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) do portal de distribuição de softwares e usar o [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md) para instalar o [pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) no seu ambiente de produção, desenvolvimento ou desenvolvimento local para obter esses ativos de referência para o seu ambiente.
 
 Os temas, modelos e modelo de dados de formulário (FDM) incluídos no pacote de conteúdo de referência são:
 
@@ -38,7 +38,7 @@ Os temas, modelos e modelo de dados de formulário (FDM) incluídos no pacote de
 
 ## Temas de referência {#reference-themes}
 
-[Temas](/help/forms/themes.md) As permitem criar estilos de formulários sem um conhecimento profundo de CSS. Você pode obter os seguintes temas instalando o [Pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+[Os temas](/help/forms/themes.md) permitem estilizar os formulários sem um conhecimento profundo de CSS. Você pode obter os seguintes temas instalando o [pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Berilo
 * Canvas 3.0
@@ -50,11 +50,11 @@ Os temas, modelos e modelo de dados de formulário (FDM) incluídos no pacote de
 
 Cada tema contém um estilo único e elegante que você pode usar para criar formulários adaptáveis deliciosos para seus usuários. Ele contém um estilo exclusivo para seletores, como painel, caixa de texto, caixa numérica, botão de opção, tabela e switch. Os estilos nesses temas são baseados na exigência. Por exemplo, em um cenário específico, você precisa de um tema minimalista com fontes limpas. O tema da liberdade permite que você realize esse olhar.
 
-![Temas de referência](assets/ref-themes.png)
+![Temas de Referência](assets/ref-themes.png)
 
 Os temas incluídos neste pacote são responsivos e o estilo nesses temas é definido para exibições móveis e em desktop. A maioria dos navegadores modernos em uma variedade de dispositivos pode renderizar formulários aplicados com um desses temas sem qualquer problema.
 
-Para obter mais informações sobre a instalação do pacote, consulte [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md).
+Para obter mais informações sobre como instalar o pacote, consulte [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md).
 
 ## Berilo {#beryl}
 
@@ -73,14 +73,14 @@ O Canvas 3.0 é o tema padrão para o Adaptive Forms e enfatiza o uso de cores b
 
 O tema Tranquil fornece tons claros e escuros do esquema de cores Tranquil para destacar diferentes componentes de um formulário. Por exemplo, botões de opção, painéis e guias obtêm um tom diferente de verde.
 
-![Tema tranquilo](assets/tranquil.png)
+![Tema simples](assets/tranquil.png)
 
 
 ## Urbana {#urbane}
 
 O tema Urbane enfatiza uma aparência minimalista e funcional para o seu formulário. Ao aplicar o tema Urbane ao formulário, você pode ver que os componentes são planos. Os painéis têm contornos finos para criar uma aparência moderna.
 
-![Tema Urbane](assets/urbane.png)
+![Tema urbano](assets/urbane.png)
 
 
 ## Ultramarina {#ultramarine}
@@ -105,7 +105,7 @@ O tema FSI enfatiza uma aparência minimalista e funcional para o formulário. A
 ## Modelos de referência {#reference-templates}
 
 
-[Modelos](/help/forms/themes.md) As permitem definir a estrutura do formulário inicial, o conteúdo e as ações para seus formulários. Você pode obter os seguintes modelos instalando o [Pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+[Os modelos](/help/forms/themes.md) permitem definir a estrutura do formulário inicial, o conteúdo e as ações para seus formulários. Você pode obter os seguintes modelos instalando o [pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Básico
 * Em branco
@@ -122,12 +122,12 @@ O Forms adaptável pode interagir com os servidores do Microsoft Dynamics 365 e 
 * Consulte o servidor do Microsoft Dynamics 365 e Salesforce para obter dados e preencher previamente o Forms adaptável.
 * Ler dados do servidor do Microsoft Dynamics 365 e Salesforce.
 
-Você pode obter o seguinte Modelo de dados de formulário (FDM) instalando o [Pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+Você pode obter o seguinte Modelo de Dados de Formulário (FDM) instalando o [pacote de conteúdo de Referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft® Dynamics 365
 * Salesforce
 
-Para obter informações sobre como usar esses modelos, consulte [Configurar os serviços em nuvem do Microsoft Dynamics 365 e Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Para obter informações sobre como usar esses modelos, consulte [Configurar o Microsoft Dynamics 365 e os serviços de nuvem do Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
 
 
 ## Consulte também {#see-also}

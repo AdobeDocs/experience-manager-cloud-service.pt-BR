@@ -27,7 +27,7 @@ Para baixar os logs, faça o seguinte:
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
 1. Navegue até o cartão **Ambientes** na página **Visão geral**.
 
@@ -39,7 +39,7 @@ Para baixar os logs, faça o seguinte:
 
    ![Caixa de diálogo Baixar logs](assets/download-preview.png)
 
-   No caso [Regiões de publicação adicionais](/help/operations/additional-publish-regions.md) estiverem habilitados para o seu ambiente, você poderá selecionar cada região e baixar os registros separadamente, conforme mostrado abaixo:
+   Caso [Regiões adicionais do Publish](/help/operations/additional-publish-regions.md) estejam habilitadas para o seu ambiente, você poderá selecionar cada região e baixar seus logs separadamente, conforme mostrado abaixo:
 
    ![Baixar logs para regiões de publicação adicionais](assets/download-publish-region-logs.png)
 
@@ -92,7 +92,7 @@ Environment Id Service    Name
 
 >[!TIP]
 >
->Confira [este recurso de vídeo](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) para saber mais sobre depuração do AEM as a Cloud Service.
+>Confira [este recurso de vídeo](https://app.frame.io/reviews/28cdf463-b7fc-443b-a54a-93cb7da6567e/dbf158f1-568b-4efc-8fbc-3b241561cbab) para saber mais sobre como depurar o AEM as a Cloud Service.
 
 Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud Manager e a CLI do Adobe I/O:
 
@@ -101,5 +101,5 @@ Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud M
 
 Consulte os seguintes recursos adicionais para saber mais sobre arquivos de log no AEM as a Cloud Service:
 
-* [Arquivos de registro AEM da nuvem 5](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
-* [Depuração do AEM as a Cloud Service usando logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=pt-BR)
+* [Arquivos de log AEM da nuvem 5](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Depurando o AEM as a Cloud Service usando logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=pt-BR)

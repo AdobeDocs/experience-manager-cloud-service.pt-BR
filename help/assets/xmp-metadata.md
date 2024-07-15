@@ -21,13 +21,13 @@ ht-degree: 16%
 
 XMP (Extensible Metadata Platform) é o padrão de metadados usado pelo Experience Manager Assets para todo o gerenciamento de metadados. O XMP fornece um formato padrão para a criação, processamento e intercâmbio de metadados para uma grande variedade de aplicativos.
 
-Além de oferecer codificação de metadados universal que pode ser incorporada em todos os formatos de arquivo, o XMP fornece uma [modelo de conteúdo](#xmp-core-concepts) e está [suportado pelo Adobe](#advantages-of-xmp) e outras empresas, de modo que os utilizadores de XMP em combinação com [!DNL Assets] ter uma plataforma poderosa para utilizar.
+Além de oferecer codificação de metadados universal que pode ser incorporada em todos os formatos de arquivo, o XMP fornece um [modelo de conteúdo](#xmp-core-concepts) avançado e tem [suporte do Adobe](#advantages-of-xmp) e de outras empresas, para que os usuários do XMP em combinação com o [!DNL Assets] tenham uma plataforma eficiente com base na qual possam se basear.
 
 ## Visão geral e ecossistema do XMP {#xmp-ecosystem}
 
-[!DNL Assets] suporta nativamente o padrão de metadados XMP. O XMP é um padrão para processar e armazenar metadados padronizados e proprietários em ativos digitais. O XMP foi projetado para ser o padrão comum que permite que vários aplicativos funcionem efetivamente com metadados.
+[!DNL Assets] nativamente oferece suporte ao padrão de metadados XMP. O XMP é um padrão para processar e armazenar metadados padronizados e proprietários em ativos digitais. O XMP foi projetado para ser o padrão comum que permite que vários aplicativos funcionem efetivamente com metadados.
 
-Os profissionais de produção, por exemplo, usam o suporte integrado para XMP em vários aplicativos Adobe para transmitir informações entre vários formatos de arquivo. A variável [!DNL Assets] O repositório extrai os metadados XMP e os usa para gerenciar o ciclo de vida do conteúdo e oferece a capacidade de criar workflows de automação.
+Os profissionais de produção, por exemplo, usam o suporte integrado para XMP em vários aplicativos Adobe para transmitir informações entre vários formatos de arquivo. O repositório do [!DNL Assets] extrai os metadados do XMP e os usa para gerenciar o ciclo de vida do conteúdo e oferece a capacidade de criar workflows de automação.
 
 O XMP padroniza como os metadados são definidos, criados e processados fornecendo um modelo de dados, um modelo de armazenamento e esquemas. Todos esses conceitos são abordados nesta seção.
 
@@ -58,9 +58,10 @@ O padrão XMP é projetado para ser extensível, permitindo adicionar tipos pers
 
 **Namespaces e esquemas**
 
-Um esquema XMP é um conjunto de nomes de propriedades em um namespace XML comum que inclui o tipo de dados e as informações descritivas. Um esquema XMP é identificado por seu URI de namespace XML. O uso de namespaces impede conflitos entre propriedades em esquemas diferentes que têm o mesmo nome, mas um significado diferente.
+Um esquema XMP é um conjunto de nomes de propriedades em um namespace XML comum que inclui
+o tipo de dados e as informações descritivas. Um esquema XMP é identificado por seu URI de namespace XML. O uso de namespaces impede conflitos entre propriedades em esquemas diferentes que têm o mesmo nome, mas um significado diferente.
 
-Por exemplo, a variável **Criador** propriedade em dois esquemas criados de forma independente pode significar a pessoa que criou o ativo ou pode significar o aplicativo que criou o ativo (por exemplo, Adobe Photoshop).
+Por exemplo, a propriedade **Creator** em dois esquemas criados de forma independente pode significar a pessoa que criou o ativo ou pode significar o aplicativo que criou o ativo (por exemplo, Adobe Photoshop).
 
 **Propriedades e valores de XMP**
 
@@ -68,48 +69,48 @@ O XMP pode incluir propriedades de um ou mais esquemas. Por exemplo, um subconju
 
 * Esquema principal de Dublin: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`
 * Esquema básico do XMP: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
-* Esquema de gestão de direitos de XMP: `xmpRights:WebStatement`, `xmpRights:Marked`
+* Esquema de gerenciamento de direitos XMP: `xmpRights:WebStatement`, `xmpRights:Marked`
 * Esquema de gerenciamento de mídia XMP: `xmpMM:DocumentID`
 
 **Alternativas de idioma**
 
-O XMP oferece a capacidade de adicionar um `xml:lang` para propriedades de texto para especificar o idioma do texto.
+O XMP oferece a capacidade de adicionar uma propriedade `xml:lang` às propriedades de texto para especificar o idioma do texto.
 
 ## Writeback XMP para representações {#xmp-writeback-to-renditions}
 
-Esse recurso de writeback XMP no [!DNL Adobe Experience Manager Assets] O replica as alterações nos metadados nas representações do ativo original.
-Quando você altera os metadados de um ativo dentro do [!DNL Assets] ou ao fazer upload do ativo, as alterações são inicialmente armazenadas no nó de metadados na hierarquia do ativo. O recurso de write-back permite propagar as alterações de metadados para todas as representações ou representações específicas do ativo. O recurso grava somente as propriedades de metadados que usam `jcr` namespace, ou seja, uma propriedade chamada `dc:title` é gravado de volta, mas uma propriedade chamada `mytitle` não é.
+Esse recurso de writeback XMP no [!DNL Adobe Experience Manager Assets] replica as alterações de metadados nas representações do ativo original.
+Quando você altera os metadados de um ativo a partir do [!DNL Assets] ou ao carregar o ativo, as alterações são inicialmente armazenadas no nó de metadados na hierarquia do ativo. O recurso de write-back permite propagar as alterações de metadados para todas as representações ou representações específicas do ativo. O recurso grava somente as propriedades de metadados que usam o namespace `jcr`, ou seja, uma propriedade chamada `dc:title` é gravada, mas uma propriedade chamada `mytitle` não.
 
-Por exemplo, considere um cenário em que você modifica a variável [!UICONTROL Título] propriedade do ativo intitulada `Classic Leather` para `Nylon`.
+Por exemplo, considere um cenário em que você modifica a propriedade [!UICONTROL Title] do ativo intitulado `Classic Leather` para `Nylon`.
 
 ![metadados](assets/metadata.png)
 
-Nesse caso, [!DNL Assets] salva as alterações no **[!UICONTROL Título]** propriedade na `dc:title` para os metadados de ativos armazenados na hierarquia de ativos.
+Nesse caso, [!DNL Assets] salva as alterações na propriedade **[!UICONTROL Title]** no parâmetro `dc:title` para os metadados de ativos armazenados na hierarquia de ativos.
 
 ![metadados armazenados no nó do ativo no repositório](assets/metadata_stored.png)
 
 >[!IMPORTANT]
 >
->O recurso de write-back não é habilitado por padrão no [!DNL Assets]. Veja como [habilitar write-back de metadados](#enable-xmp-writeback). O MSM para ativos digitais não funciona com o write-back de metadados habilitado. No write-back, a herança é interrompida.
+>O recurso de write-back não está habilitado por padrão em [!DNL Assets]. Veja como [habilitar write-back de metadados](#enable-xmp-writeback). O MSM para ativos digitais não funciona com o write-back de metadados habilitado. No write-back, a herança é interrompida.
 
 ### Ativar writeback XMP {#enable-xmp-writeback}
 
-[!UICONTROL Writeback de metadados DAM] O fluxo de trabalho é usado para dar write-back dos metadados de um ativo. Para ativar o write-back, siga um dos três métodos a seguir:
+O fluxo de trabalho [!UICONTROL Writeback de metadados DAM] é usado para write-back de metadados de um ativo. Para ativar o write-back, siga um dos três métodos a seguir:
 
 * Use Iniciadores.
-* Iniciar manualmente `DAM MetaData Writeback` fluxo de trabalho.
+* Inicie manualmente o fluxo de trabalho `DAM MetaData Writeback`.
 * Configure o workflow para fazer parte do pós-processamento.
 
 Para usar Iniciadores, siga estas etapas:
 
 1. Como administrador, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Iniciadores]**.
-1. Selecione o [!UICONTROL Iniciador] para o qual o **[!UICONTROL Fluxo de trabalho]** exibições de coluna **[!UICONTROL Writeback de metadados DAM]**. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas.
+1. Selecione o [!UICONTROL Iniciador] para o qual a coluna **[!UICONTROL Fluxo de Trabalho]** exibe o **[!UICONTROL Writeback de Metadados DAM]**. Clique em **[!UICONTROL Propriedades]** na barra de ferramentas.
 
-   ![Selecione o iniciador de writeback de metadados DAM para modificar suas propriedades e ativá-lo](assets/launcher-properties-metadata-writeback1.png)
+   ![Selecione o iniciador de write-back de metadados do DAM para modificar suas propriedades e ativá-lo](assets/launcher-properties-metadata-writeback1.png)
 
-1. Selecionar **[!UICONTROL Ativar]** no **[!UICONTROL Propriedades do iniciador]** página. Clique em **[!UICONTROL Salvar e fechar]**.
+1. Selecione **[!UICONTROL Ativar]** na página **[!UICONTROL Propriedades do inicializador]**. Clique em **[!UICONTROL Salvar e fechar]**.
 
-Para aplicar manualmente o workflow a um ativo apenas uma vez, aplique [!UICONTROL Writeback de metadados DAM] fluxo de trabalho no painel esquerdo.
+Para aplicar manualmente o fluxo de trabalho a um ativo apenas uma vez, aplique o fluxo de trabalho [!UICONTROL Writeback de metadados DAM] a partir do painel esquerdo.
 
 Para aplicar o fluxo de trabalho a todos os ativos carregados, adicione o fluxo de trabalho a um perfil de pós-processamento.
 
@@ -159,4 +160,4 @@ The metadata changes are propagated to the renditions renditions thumbnail.140.1
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

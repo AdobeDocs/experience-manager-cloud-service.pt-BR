@@ -96,7 +96,7 @@ Para remover ativos de uma coleção:
 
 ## Gerenciar uma coleção inteligente {#manage-smart-collection}
 
-Salve os resultados da pesquisa como uma coleção inteligente para atualizar dinamicamente o conteúdo da coleção. Se houver ativos adicionados ao repositório de visualizações do Assets que se encaixem nos critérios de pesquisa definidos na criação da coleção inteligente, o conteúdo da coleção inteligente será atualizado automaticamente ao abri-la.
+Salve os resultados da pesquisa como uma coleção inteligente para atualizar dinamicamente o conteúdo da coleção. Se houver ativos adicionados ao repositório do Assets View que se encaixem nos critérios de pesquisa definidos na criação da coleção inteligente, o conteúdo da coleção inteligente será atualizado automaticamente ao abri-la.
 
 ### Criar uma coleção inteligente {#create-smart-collection}
 

@@ -33,7 +33,7 @@ Para acessar seus segmentos, na navegação global, selecione **Navegação > Pe
 ## Editor do segmento  {#segment-editor}
 
 <!--The **Segment Editor** lets you easily modify a segment. To edit a segment, select a segment in the [list of segments](/help/sites-administering/segmentation.md#accessing-segments) and click the **Edit** button.-->
-A variável **Editor de segmentos** O permite modificar facilmente um segmento. Para editar um segmento, selecione-o na lista de segmentos e clique no botão **Editar**.
+O **Editor de segmentos** permite modificar facilmente um segmento. Para editar um segmento, selecione-o na lista de segmentos e clique no botão **Editar**.
 
 ![Editor de segmento](../assets/contexthub-segment-editor.png)
 
@@ -91,7 +91,7 @@ Para definir seu novo segmento:
 
 1. Depois de [acessar os segmentos](#accessing-segments), [navegue até a pasta](#organizing-segments) onde deseja criar o segmento.
 
-1. Selecione o **Criar** e selecione **Criar segmento do ContextHub**.
+1. Selecione o botão **Criar** e selecione **Criar segmento do ContextHub**.
 
    ![Adicionar segmento](../assets/contexthub-create-segment.png)
 
@@ -196,7 +196,7 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Criar uma nova pasta {#create-folder}
 
-1. Depois [acesso aos segmentos](#accessing-segments), selecione o **Criar** e selecione **Pasta**.
+1. Depois de [acessar os segmentos](#accessing-segments), clique no botão **Criar** e selecione **Pasta**.
 
    ![Adicionar pasta](../assets/contexthub-create-segment.png)
 
@@ -219,11 +219,11 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Modificar pastas existentes {#modify-folders}
 
-1. Depois [acesso aos segmentos](#accessing-segments), selecione a pasta que deseja modificar para selecioná-la.
+1. Depois de [acessar os segmentos](#accessing-segments), selecione a pasta que deseja modificar para selecioná-la.
 
    ![Selecionar pasta](../assets/contexthub-select-folder.png)
 
-1. Selecionar **Renomear** na barra de ferramentas para renomear a pasta.
+1. Selecione **Renomear** na barra de ferramentas para renomear a pasta.
 
 1. Forneça um novo **Título da pasta** e selecione **Salvar**.
 
@@ -235,25 +235,25 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 
 ### Excluir uma pasta
 
-1. Depois [acesso aos segmentos](#accessing-segments), selecione a pasta que deseja modificar para selecioná-la.
+1. Depois de [acessar os segmentos](#accessing-segments), selecione a pasta que deseja modificar para selecioná-la.
 
    ![Selecionar pasta](../assets/contexthub-select-folder.png)
 
-1. Selecionar **Excluir** na barra de ferramentas para excluir a pasta.
+1. Selecione **Excluir** na barra de ferramentas para excluir a pasta.
 
 1. Uma caixa de diálogo apresenta uma lista de pastas selecionadas para exclusão.
 
    ![Confirmar exclusão](../assets/contexthub-confirm-segment-delete.png)
 
-   * Selecionar **Excluir** para confirmar.
-   * Selecionar **Cancelar** para suspender.
+   * Selecione **Excluir** para confirmar.
+   * Selecione **Cancelar** para anular.
 
 1. Se qualquer uma das pastas selecionadas contiver subpastas ou segmentos, sua exclusão deverá ser confirmada.
 
    ![Confirmar exclusão de filhos](../assets/contexthub-confirm-segment-child-delete.png)
 
-   * Selecionar **Forçar Exclusão** para confirmar.
-   * Selecionar **Cancelar** para suspender.
+   * Selecione **Forçar Exclusão** para confirmar.
+   * Selecione **Cancelar** para anular.
 
 >[!NOTE]
 >

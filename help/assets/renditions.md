@@ -22,43 +22,43 @@ As representações são classificadas como estáticas e dinâmicas, cada tipo a
 ## Representações estáticas {#static-renditions}
 
 As representações estáticas são versões pré-geradas de ativos digitais, geralmente criadas durante a assimilação ou modificação de ativos. Essas representações são otimizadas para fins e plataformas específicos, como miniaturas da Web, formatos amigáveis para dispositivos móveis para design responsivo ou versões de alta resolução para impressão, garantindo uma experiência eficiente e consistente.
-Saiba mais [como visualizar e baixar](#view-dynamic-renditions) representações estáticas no [!DNL Experience Manager Assets].
+Saiba [como exibir e baixar](#view-dynamic-renditions) representações estáticas em [!DNL Experience Manager Assets].
 
 ## Representações dinâmicas {#dynamic-renditions}
 
 As representações dinâmicas são versões personalizadas de ativos criadas em tempo real para atender a necessidades específicas, como redimensionar imagens com base na resolução do dispositivo ou recortar para se ajustar a diferentes taxas de aspecto.
-Essas representações permitem que as organizações entreguem experiências personalizadas e otimizadas para diversas necessidades do público-alvo. É possível visualizar e baixar representações dinâmicas no [!DNL Experience Manager Assets].
+Essas representações permitem que as organizações entreguem experiências personalizadas e otimizadas para diversas necessidades do público-alvo. Você pode exibir e baixar representações dinâmicas em [!DNL Experience Manager Assets].
 
 ### Antes de começar
 
 * Você deve ser um usuário licenciado do AEM Dynamic Media.
 
-* Uso [!UICONTROL Exibição do administrador] para configurar:
+* Use o [!UICONTROL modo de exibição de Administração] para configurar:
    * [Perfis de imagem de corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [Predefinições de imagem](/help/assets/dynamic-media/managing-image-presets.md)
 
-  Você pode [alternar a exibição](/help/assets/assets-view-introduction.md#how-to-access-assets-view) posteriormente para visualizar representações dinâmicas na visualização de Ativos.
+  Você pode [alternar o modo de exibição](/help/assets/assets-view-introduction.md#how-to-access-assets-view) posteriormente para visualizar representações dinâmicas no modo de exibição do Assets.
 
 ### Exibir e baixar representações dinâmicas {#view-renditions}
 
 Para exibir ou baixar representações dinâmicas de imagens no [!DNL Experience Manager Assets], siga estas etapas:
 
-1. Ir para **[!UICONTROL Gerenciamento de ativos]** > **[!UICONTROL Assets]**.
+1. Vá para **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
 
 1. Navegue até a pasta de ativos aplicável.
 
-1. Clique na imagem que precisa visualizar e clique em **[!UICONTROL Detalhes]**.
+1. Clique na imagem que você precisa exibir e em **[!UICONTROL Detalhes]**.
 
-1. No menu direito, clique em **[!UICONTROL Representações]**. <br> A variável **[!UICONTROL Representações]** O painel é aberto com as **[!UICONTROL Dinâmico]** e **[!UICONTROL Corte inteligente]** representações.
+1. No menu direito, clique em **[!UICONTROL Representações]**. <br> O painel **[!UICONTROL Representações]** é aberto com as representações **[!UICONTROL Dinâmicas]** e **[!UICONTROL Recorte inteligente]** disponíveis.
 
    ![representações dinâmicas](assets/preset_smart_crop.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
 1. Clique na representação que precisa exibir ou baixar.
 
-1. Clique em ![ícone de download](assets/do-not-localize/download-icon.png) ícone ao lado da representação dinâmica que você precisa baixar. <br> Como alternativa, selecione a representação da imagem e clique em **[!UICONTROL Baixar representação]** na parte inferior.
+1. Clique no ícone de ![download](assets/do-not-localize/download-icon.png) ao lado da representação dinâmica que você precisa baixar. <br> Como alternativa, você pode selecionar a representação da imagem e clicar na opção **[!UICONTROL Baixar representação]** na parte inferior.
 
-   Você pode clicar no link ![ícone de download](assets/do-not-localize/download-icon.png) ícone disponível na parte superior de **[!UICONTROL Corte inteligente]** representações para baixar todas as representações de Corte inteligente disponíveis para esse ativo.
+   Você pode clicar no ícone de ![download](assets/do-not-localize/download-icon.png) disponível na parte superior da seção de representações do **[!UICONTROL Recorte inteligente]** para baixar todas as representações de Recorte inteligente disponíveis para esse ativo.
 
 >[!NOTE]
 >

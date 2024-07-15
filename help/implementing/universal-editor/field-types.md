@@ -6,8 +6,8 @@ feature: Developing
 role: Admin, Architect, Developer
 source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1146'
+ht-degree: 9%
 
 ---
 
@@ -24,7 +24,7 @@ Este documento fornece uma visão geral de uma definição de modelo e dos campo
 
 >[!TIP]
 >
->Se você não estiver familiarizado com como instrumentar seu aplicativo para o Universal Editor, consulte o documento [Visão geral do editor universal para desenvolvedores do AEM.](/help/implementing/universal-editor/developer-overview.md)
+>Se você não estiver familiarizado com como instrumentar seu aplicativo para o Universal Editor, consulte o documento [Visão geral do Universal Editor para desenvolvedores do AEM.](/help/implementing/universal-editor/developer-overview.md)
 
 ## Estrutura de definição do modelo {#model-structure}
 
@@ -41,9 +41,9 @@ A definição do modelo é uma estrutura JSON, que começa com uma matriz de mod
 ]
 ```
 
-Consulte a **[Campos](#fields)** seção deste documento para obter mais informações sobre como definir `fields` matriz.
+Consulte a seção **[Campos](#fields)** deste documento para obter mais informações sobre como definir a matriz `fields`.
 
-Para usar a definição do modelo com um componente, a variável `data-aue-model` atributo pode ser usado.
+Para usar a definição de modelo com um componente, o atributo `data-aue-model` pode ser usado.
 
 ```html
 <div data-aue-resource="urn:datasource:/content/path" data-aue-type="component"  data-aue-model="model-id">Click me</div>
@@ -81,7 +81,7 @@ Um objeto de campo tem a seguinte definição de tipo.
 | `required` | `boolean` | O campo é obrigatório? | Não |
 | `readOnly` | `boolean` | O campo é somente leitura | Não |
 | `hidden` | `boolean` | O campo está oculto por padrão? | Não |
-| `condition` | `RulesLogic` | Regra para mostrar ou ocultar o campo com base em um [condição](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Não |
+| `condition` | `RulesLogic` | Regra para mostrar ou ocultar o campo com base em uma [condição](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Não |
 | `multi` | `boolean` | O campo é um campo múltiplo? | Não |
 | `validation` | `ValidationType` | Regra ou regras de validação para o campo | Não |
 | `raw` | `unknown` | Dados brutos que podem ser usados pelo componente | Não |
@@ -92,8 +92,8 @@ A seguir estão os tipos de componentes possíveis para usar em campos de render
 
 | Descrição | Tipo de componente |
 |---|---|
-| [Tag AEM](#aem-tag) | `aem-tag` |
-| [Conteúdo AEM](#aem-content) | `aem-content` |
+| [Marca AEM](#aem-tag) | `aem-tag` |
+| [Conteúdo do AEM](#aem-content) | `aem-content` |
 | [Booleano](#boolean) | `boolean` |
 | [Grupo de caixas de seleção](#checkbox-group) | `checkbox-group` |
 | [Container](#container) | `container` |
@@ -101,7 +101,7 @@ A seguir estão os tipos de componentes possíveis para usar em campos de render
 | [Data e hora](#date-time) | `date-time` |
 | [Multisseleção](#multiselect) | `multiselect` |
 | [Número](#number) | `number` |
-| [Grupo radial](#radio-group) | `radio-group` |
+| [Grupo de opções](#radio-group) | `radio-group` |
 | [Referência](#reference) | `reference` |
 | [Rich Text](#rich-text) | `richtext` |
 | [Selecionar](#select) | `select` |
@@ -132,7 +132,7 @@ Um tipo de componente de tag AEM habilita um seletor de tags AEM, que pode ser u
 
 >[!TAB Captura de tela]
 
-![Captura de tela do tipo de componente da tag AEM](assets/component-types/aem-tag-picker.png)
+![Captura de tela do tipo de componente da marca AEM](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
 
@@ -291,13 +291,13 @@ Um tipo de componente de contêiner permite o agrupamento de componentes. Ela of
 
 >[!TAB Captura de tela]
 
-![Captura de tela do tipo de componente do contêiner](assets/component-types/container.png)
+![Captura de tela do tipo de componente de contêiner](assets/component-types/container.png)
 
 >[!ENDTABS]
 
 #### Fragmento de conteúdo {#content-fragment}
 
-O seletor de Fragmento de conteúdo pode ser usado para selecionar um [Fragmento do conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md) e suas variações (se necessário). Ela oferece uma configuração adicional.
+O seletor de Fragmento de Conteúdo pode ser usado para selecionar um [Fragmento de Conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md) e suas variações (se necessário). Ela oferece uma configuração adicional.
 
 | Configuração | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|
@@ -343,7 +343,7 @@ Também oferece um tipo de validação adicional.
 
 | Tipo de validação | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|
-| `customErrorMsg` | `string` | Mensagem que será exibida se `valueFormat` não foi atendido | Não |
+| `customErrorMsg` | `string` | Mensagem que será exibida se `valueFormat` não for atendida | Não |
 
 >[!BEGINTABS]
 
@@ -533,7 +533,7 @@ Um tipo de componente numérico permite a entrada de um número. Ela oferece tip
 |---|---|---|---|
 | `numberMin` | `number` | Número mínimo permitido | Não |
 | `numberMax` | `number` | Número máximo permitido | Não |
-| `customErrorMsg` | `string` | Mensagem que será exibida se `numberMin` ou `numberMax` não foi atendido | Não |
+| `customErrorMsg` | `string` | Mensagem que será exibida se `numberMin` ou `numberMax` não for atendido | Não |
 
 >[!BEGINTABS]
 
@@ -580,7 +580,7 @@ Um tipo de componente numérico permite a entrada de um número. Ela oferece tip
 
 >[!TAB Captura de tela]
 
-![Captura de tela do tipo de componente número](assets/component-types/number.png)
+![Captura de tela do tipo de componente de número](assets/component-types/number.png)
 
 >[!ENDTABS]
 
@@ -612,7 +612,7 @@ Um tipo de componente Grupo de opções permite uma seleção mutuamente exclusi
 
 >[!TAB Captura de tela]
 
-![Captura de tela do tipo de componente Grupo de opções](assets/component-types/radio.png)
+![Captura de tela do tipo de componente do grupo de opções](assets/component-types/radio.png)
 
 >[!ENDTABS]
 
@@ -651,7 +651,7 @@ Rich text permite entrada de rich text com várias linhas. Ela oferece tipos de 
 | Tipo de validação | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|
 | `maxSize` | `number` | Número máximo de caracteres permitido | Não |
-| `customErrorMsg` | `string` | Mensagem que será exibida se `maxSize` é excedido | Não |
+| `customErrorMsg` | `string` | Mensagem que será exibida se `maxSize` for excedido | Não |
 
 >[!BEGINTABS]
 
@@ -733,7 +733,7 @@ Um tipo de componente de seleção permite selecionar uma única opção em uma 
 
 Um tipo de componente de guia permite agrupar outros campos de entrada em várias guias para melhorar a organização do layout dos autores.
 
-A `tab` definição pode ser considerada como um separador na matriz de `fields`. Tudo que vem depois de um `tab` será colocado nessa guia até que um novo `tab` for encontrada, em que os itens a seguir serão colocados na nova guia.
+Uma definição `tab` pode ser considerada como um separador na matriz de `fields`. Tudo que vem após um `tab` será colocado nessa guia até que um novo `tab` seja encontrado, após o qual os itens a seguir serão colocados na nova guia.
 
 Se desejar que itens sejam exibidos acima de todas as guias, eles deverão ser definidos antes de qualquer guia.
 
@@ -773,7 +773,7 @@ Se desejar que itens sejam exibidos acima de todas as guias, eles deverão ser d
 
 >[!TAB Captura de tela]
 
-![Captura de tela do tipo de componente guia](assets/component-types/tab.png)
+![Captura de tela do tipo de componente de guia](assets/component-types/tab.png)
 
 >[!ENDTABS]
 
@@ -786,7 +786,7 @@ O texto permite uma única linha de entrada de texto.  Inclui tipos de validaç�
 | `minLength` | `number` | Número mínimo de caracteres permitidos | Não |
 | `maxLength` | `number` | Número máximo de caracteres permitidos | Não |
 | `regExp` | `string` | Expressão regular à qual o texto de entrada deve corresponder | Não |
-| `customErrorMsg` | `string` | Mensagem que será exibida se `minLength`, `maxLength`, e/ou `regExp` é/são violado(s) | Não |
+| `customErrorMsg` | `string` | Mensagem que será exibida se `minLength`, `maxLength` e/ou `regExp` for/forem violado(s) | Não |
 
 >[!BEGINTABS]
 
@@ -832,6 +832,6 @@ O texto permite uma única linha de entrada de texto.  Inclui tipos de validaç�
 
 >[!TAB Captura de tela]
 
-![Imagem do tipo de componente de texto](assets/component-types/simpletext.png)
+![Captura de tela do tipo de componente de texto](assets/component-types/simpletext.png)
 
 >[!ENDTABS]

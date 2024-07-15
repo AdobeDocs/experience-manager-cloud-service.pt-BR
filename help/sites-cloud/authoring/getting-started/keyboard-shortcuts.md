@@ -80,7 +80,7 @@ Você pode desativar atalhos de teclado em dois locais:
 
 ## Atalhos de teclado para o Editor de páginas {#keyboard-shortcuts-for-the-page-editor}
 
-Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns se aplicam ao uso de consoles, outros para [edição de página](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns se aplicam ao uso dos consoles, outros para [edição de página](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 ## Atalhos de teclado para o console de fragmentos de conteúdo {#keyboard-shortcuts-for-the-content-fragments-console}
 

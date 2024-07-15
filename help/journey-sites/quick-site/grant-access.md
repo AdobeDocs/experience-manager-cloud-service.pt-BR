@@ -68,7 +68,7 @@ Primeiro, é necessário adicionar o desenvolvedor de front-end como usuário, u
 
    ![Perfis de produto](assets/product-profiles.png)
 
-1. Para atribuir o desenvolvedor de front-end aos perfis corretos, selecione o **Usuários** e depois a guia **Adicionar usuário** botão.
+1. Para atribuir o desenvolvedor front-end aos perfis corretos, selecione a guia **Usuários** e, em seguida, o botão **Adicionar usuário**.
 
    ![Adicionar usuário](assets/add-user.png)
 
@@ -76,11 +76,11 @@ Primeiro, é necessário adicionar o desenvolvedor de front-end como usuário, u
 
    ![Adicionar usuário à equipe](assets/add-to-team.png)
 
-1. No **Produto** selecione o sinal de mais e selecione **Adobe Experience Manager as a Cloud Service** e atribua a **Gerente de implantação** e **Desenvolvedor** perfis de produto para o usuário.
+1. Na seleção do **Produto**, selecione o sinal de adição e o **Adobe Experience Manager as a Cloud Service** e atribua os perfis de produto **Gerente de Implantação** e **Desenvolvedor** ao usuário.
 
    ![Atribuir perfis de equipe](assets/assign-team.png)
 
-1. Selecionar **Salvar** e um email de boas-vindas será enviado ao desenvolvedor front-end que você adicionou como usuário.
+1. Selecione **Salvar** e um email de boas-vindas será enviado ao desenvolvedor front-end que você adicionou como usuário.
 
 O desenvolvedor de front-end convidado pode acessar o Cloud Manager clicando no link do email de boas-vindas e fazendo logon usando sua Adobe ID.
 

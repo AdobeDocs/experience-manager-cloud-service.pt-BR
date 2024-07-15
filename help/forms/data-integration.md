@@ -1,6 +1,6 @@
 ---
-title: Como conectar um banco de dados ao [!DNL AEM Forms] as a Cloud Service?
-description: Recupere e salve dados em serviços Web RESTful, serviços Web baseados em SOAP e serviços OData de um formulário adaptável ou de um fluxo de trabalho AEM.
+title: Como conectar um banco de dados ao  [!DNL AEM Forms] as a Cloud Service?
+description: Recupere e salve dados em serviços Web RESTful, serviços Web baseados em SOAP e serviços OData de um Formulário adaptável ou um Fluxo de trabalho AEM.
 feature: Adaptive Forms, Form Data Model
 role: Admin, User
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
@@ -32,7 +32,7 @@ Embora um sistema modular e distribuído tenha seus próprios benefícios, o des
 
 ![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
-[!DNL AEM Forms] A Integração de dados permite configurar e conectar diferentes fontes de dados com o [!DNL AEM Forms]. Ele fornece uma interface de usuário intuitiva para criar um esquema de representação de dados unificada de entidades e serviços comerciais em fontes de dados conectadas. A representação unificada é conhecida como modelo de dados de formulário (FDM), uma extensão do esquema JSON. As entidades em um Modelo de dados de formulário (FDM) são chamadas de objetos de modelo de dados. Um Modelo de dados de formulário (FDM) permite:
+A Integração de Dados do [!DNL AEM Forms] permite configurar e conectar fontes de dados diferentes ao [!DNL AEM Forms]. Ele fornece uma interface de usuário intuitiva para criar um esquema de representação de dados unificada de entidades e serviços comerciais em fontes de dados conectadas. A representação unificada é conhecida como modelo de dados de formulário (FDM), uma extensão do esquema JSON. As entidades em um Modelo de dados de formulário (FDM) são chamadas de objetos de modelo de dados. Um Modelo de dados de formulário (FDM) permite:
 
 * Acesse objetos de modelo de dados, propriedades e serviços a partir de fontes de dados conectadas.
 * Criar objetos e propriedades de modelo de dados personalizados
@@ -50,7 +50,7 @@ Depois de criar um modelo de dados de formulário (FDM), você pode usá-lo para
 
 A primeira etapa para implementar a integração de dados para enviar o Formulário adaptável a um banco de dados é identificar e configurar fontes de dados que armazenam informações que você deseja usar no Adaptive Forms. Em seguida, você cria um Modelo de dados de formulário (FDM) que usa objetos de modelo de dados, propriedades e serviços de uma ou mais fontes de dados. Você pode criar o Adaptive Forms com base em um Modelo de dados de formulário (FDM) em que os campos do Formulário adaptável estão vinculados às respectivas propriedades da fonte de dados.
 
-[!DNL AEM Forms] O também permite criar um Modelo de dados de formulário (FDM) independente das fontes de dados e associar ou vincular objetos e propriedades do modelo de dados no Modelo de dados de formulário (FDM) à fonte de dados posteriormente. Isso elimina quaisquer dependências nas fontes de dados enquanto você trabalha em um modelo de dados de formulário (FDM).
+O [!DNL AEM Forms] também permite criar um Modelo de Dados de Formulário (FDM) independente das fontes de dados e associar ou associar objetos e propriedades de modelo de dados no Modelo de Dados de Formulário (FDM) à fonte de dados posteriormente. Isso elimina quaisquer dependências nas fontes de dados enquanto você trabalha em um modelo de dados de formulário (FDM).
 
 Revise o seguinte para começar, entender e implementar a integração de dados:
 
@@ -61,4 +61,4 @@ Revise o seguinte para começar, entender e implementar a integração de dados:
 
 >[!NOTE]
 >
->[!UICONTROL Experience Manager Forms] não dá suporte a banco de dados relacional.
+>[!UICONTROL O Experience Manager Forms] não oferece suporte ao banco de dados relacional.

@@ -47,7 +47,7 @@ Antes de começar o guia de início rápido, veja uma pequena coleção de dicas
       * [Modo de visualização](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode)
       * [Exibir como publicado](/help/sites-cloud/authoring/fundamentals/editing-content.md#view-as-published)
 
-* As versões não são iniciadas/criadas pelo editor de páginas. Isso agora é feito a partir do **Sites** console (por meio de **Criar** ou [Linha do tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) para um recurso selecionado).
+* As versões não são iniciadas/criadas pelo editor de páginas. Isso agora é feito no console **Sites** (através da **Criação** ou da [Linha do Tempo](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) de um recurso selecionado).
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Há vários aspectos para localizar uma página. Você pode navegar e/ou pesquis
 
    ![Exibir lista suspensa de seleção](/help/sites-cloud/authoring/assets/views.png)
 
-1. Navegue até a árvore usando [a navegação estrutural no cabeçalho](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), que permite retornar ao local selecionado:
+1. Navegue até a árvore usando [a navegação estrutural do cabeçalho](/help/sites-cloud/authoring/getting-started/basic-handling.md#the-header), o que permite retornar ao local selecionado:
 
    ![Lista suspensa de navegação estrutural](/help/sites-cloud/authoring/assets/breadcrumb.png)
 
@@ -114,7 +114,7 @@ Como selecionar uma página depende da exibição usada no console:
 
 As [ações rápidas](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) estão disponíveis:
 
-1. [Navegue até a página](#finding-your-page) você deseja agir.
+1. [Navegue até a página](#finding-your-page) na qual deseja agir.
 1. Passe o mouse sobre o cartão que representa o recurso desejado. As ações rápidas serão exibidas:
 
    ![Ações do cartão](/help/sites-cloud/authoring/assets/card-actions.png)
@@ -160,11 +160,11 @@ Para editar sua página:
    * [Mover um componente](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component):
 
       * Arrastando o componente desejado para o novo local.
-      * Abra a barra de ferramentas do componente com os botões Selecionar. Use o **Recortar** depois **Colar** ícones, quando necessário.
+      * Abra a barra de ferramentas do componente com os botões Selecionar. Use os ícones **Cortar** e **Colar** quando necessário.
 
    * [Copiar (e Colar)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) um componente:
 
-      * Abra a barra de ferramentas do componente com os botões Selecionar. Use o **Copiar** depois **Colar** ícones, conforme necessário.
+      * Abra a barra de ferramentas do componente com os botões Selecionar. Use os ícones **Copiar** e **Colar** conforme necessário.
 
    >[!NOTE]
    >
@@ -172,7 +172,7 @@ Para editar sua página:
 
    * [Excluir](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) um componente:
 
-      * Abra a barra de ferramentas do componente com selecione e, em seguida, use o **Excluir** ícone.
+      * Abra a barra de ferramentas do componente com um dos botões selecionar, em seguida, use o ícone **Excluir**.
 
    * [Adicionar anotações](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) à página:
 
@@ -302,7 +302,7 @@ Para criar uma [versão](/help/sites-cloud/authoring/features/page-versions.md) 
 
    ![Opção Exibir linha do tempo](/help/sites-cloud/authoring/assets/timeline.png)
 
-1. Selecione as reticências na parte inferior direita da coluna Linha do tempo para exibir os botões extras, incluindo **Salvar como versão**.
+1. Selecione as reticências na parte inferior direita da coluna Linha do Tempo para exibir os botões extras, incluindo **Salvar como versão**.
 
    ![Exibir linha do tempo](/help/sites-cloud/authoring/assets/timeline-view.png)
 

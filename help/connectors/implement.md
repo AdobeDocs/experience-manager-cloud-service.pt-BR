@@ -17,7 +17,7 @@ Implementação de um conector do AEM
 
 As referências úteis para a criação de [Conectores do AEM](https://www.adobe.io/apis/experiencecloud/aem/aemconnectors.html) são fornecidas a seguir e devem ser lidas em conjunto com orientações sobre [envio](submit.md) e [manutenção](maintain.md) de conectores.
 
-Uma licença de desenvolvedor para AEM pode ser obtida por meio do [Programa Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
+Uma licença de desenvolvedor para AEM pode ser obtida através do [Programa Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 
 Padrões comuns de integração
 ---------------------------

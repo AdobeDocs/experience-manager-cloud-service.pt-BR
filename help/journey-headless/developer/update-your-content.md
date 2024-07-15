@@ -44,7 +44,7 @@ No estágio anterior da jornada headless, você aprendeu como usar a API GraphQL
 
 Então, por que é necessária outra API?
 
-A API HTTP do Assets não permite **Ler** seu conteúdo, mas também permite **Criar**, **Atualizar** e **Excluir** conteúdo - ações que não são possíveis com a API do GraphQL.
+A API HTTP do Assets permite **Ler** o seu conteúdo, mas também permite **Criar**, **Atualizar** e **Excluir** conteúdo - ações que não são possíveis com a API do GraphQL.
 
 A API REST de ativos está disponível em cada instalação pronta para uso de versões recentes do Adobe Experience Manager as a Cloud Service.
 
@@ -57,7 +57,7 @@ A API HTTP de ativos abrange:
 
 A implementação atual da API HTTP de ativos é baseada no estilo de arquitetura **REST** e permite que você acesse o conteúdo (armazenado no AEM) por meio de operações **CRUD** (criar, ler, atualizar, excluir).
 
-Com essas operações, a API permite operar o Adobe Experience Manager as a Cloud Service como um CMS (Content Management System, Sistema de gerenciamento de conteúdo) headless, fornecendo Serviços de conteúdo a um aplicativo front-end JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
+Com essas operações, a API permite operar o Adobe Experience Manager as a Cloud Service como um CMS (Content Management System, sistema de gerenciamento de conteúdo) headless, fornecendo serviços de conteúdo a um aplicativo front-end do JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
 
 <!--
 >[!NOTE]
@@ -257,9 +257,9 @@ O uso pode ser diferente dependendo se você está usando um ambiente de autor o
 
 >[!NOTE]
 >
->Consulte a referência da API [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
+>Consulte a Referência da API [API do Adobe Experience Manager Assets - Fragmentos de conteúdo](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
 >
->A variável [OpenAPIs de fragmento de conteúdo e modelo de fragmento de conteúdo](/help/headless/content-fragment-openapis.md) também estão disponíveis.
+>As [OpenAPIs](/help/headless/content-fragment-openapis.md) de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo também estão disponíveis.
 
 ### Leitura/entrega {#read-delivery}
 
@@ -336,6 +336,6 @@ Você deve continuar a jornada headless do AEM revisando o documento [Como unir 
 * [Explicação sobre o CORS/AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html?lang=pt-BR)
 * [Vídeo - Desenvolvimento do CORS com o AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html?lang=pt-BR)
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
-* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
-* A variável [OpenAPIs de fragmento de conteúdo e modelo de fragmento de conteúdo](/help/headless/content-fragment-openapis.md) também estão disponíveis.
+* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* As [OpenAPIs](/help/headless/content-fragment-openapis.md) de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo também estão disponíveis.

@@ -1,5 +1,5 @@
 ---
-title: Como conectar o formulário adaptável do AEM à lista de SharePoint do Microsoft&reg;?
+title: Como conectar o formulário adaptável do AEM à lista do Microsoft&reg; SharePoint?
 description: Conectar um Formulário adaptável à Lista de SharePoint do Microsoft&reg;. Saiba como configurar a lista de SharePoint do Microsoft&reg; e criar um Modelo de dados de formulário (FDM) usando a configuração. Além disso, você aprenderá a integrar o FDM ao seu Formulário adaptável.
 role: User, Developer
 keywords: conectar o Formulário adaptável do AEM à Lista do Microsoft SharePoint, conectar o Formulário adaptável à Lista do Microsoft SharePoint, integrar o Formulário adaptável à Lista do Microsoft SharePoint, integrar o Formulário adaptável à Lista do AEM, enviar dados de um Formulário adaptável à Lista do Microsoft, enviar fluxo de trabalho para a Lista do SharePoint SharePoint AEM SharePoint.
@@ -15,14 +15,14 @@ ht-degree: 2%
 
 # Conectar um formulário adaptável à lista Microsoft® SharePoint
 
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
+<span class="preview"> Este é um recurso de pré-lançamento acessível através do nosso [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
 
-**Microsoft® SharePoint**: O Microsoft® SharePoint habilita a colaboração fornecendo sites de equipe dinâmicos e eficientes para todas as equipes, departamentos e divisões. Ele é usado para armazenar, organizar, compartilhar e acessar informações de qualquer dispositivo usando qualquer navegador da Web, por exemplo, Microsoft® Edge, Internet Explorer, Chrome ou Firefox. Os dois principais componentes do **Microsoft® SharePoint** são:
+**Microsoft® SharePoint**: a Microsoft® SharePoint habilita a colaboração fornecendo sites de equipe dinâmicos e eficientes para todas as equipes, departamentos e divisões. Ele é usado para armazenar, organizar, compartilhar e acessar informações de qualquer dispositivo usando qualquer navegador da Web, por exemplo, Microsoft® Edge, Internet Explorer, Chrome ou Firefox. Os dois componentes principais do **Microsoft® SharePoint** são:
 
-* **Biblioteca de documentos Microsoft® SharePoint**: A Biblioteca de documentos da Microsoft® SharePoint exibe uma lista de arquivos e pastas, juntamente com suas informações principais, como a data da última modificação e o proprietário de um arquivo. Esse recurso facilita a organização e a navegação de arquivos.
-Para obter instruções sobre como integrar uma **Biblioteca de documentos Microsoft® SharePoint** com um Formulário adaptável, consulte a [Ação de envio do formulário adaptável](/help/forms/configuring-submit-actions.md#submit-to-sharepoint) artigo.
+* **Biblioteca de documentos da Microsoft® SharePoint**: a Biblioteca de documentos da Microsoft® SharePoint exibe uma lista de arquivos e pastas, juntamente com suas principais informações, como a data da última modificação e o proprietário de um arquivo. Esse recurso facilita a organização e a navegação de arquivos.
+Para obter instruções sobre como integrar uma **Biblioteca de Documentos do Microsoft® SharePoint** a um Formulário adaptável, consulte o artigo [Ação de envio do formulário adaptável](/help/forms/configuring-submit-actions.md#submit-to-sharepoint).
 
-* **Lista Microsoft® SharePoint**: a Lista do Microsoft® SharePoint é uma coleção de dados. É possível adicionar colunas para diferentes tipos de dados e criar visualizações para exibir dados de maneira eficaz. É possível agrupar, filtrar, classificar e formatar as listas facilmente.
+* **Lista do Microsoft® SharePoint**: a Lista do Microsoft® SharePoint é uma coleção de dados. É possível adicionar colunas para diferentes tipos de dados e criar visualizações para exibir dados de maneira eficaz. É possível agrupar, filtrar, classificar e formatar as listas facilmente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424820/connect-aem-adaptive-form-to-sharepointlist/?quality=12&learn=on)
 
@@ -42,7 +42,7 @@ Agora é possível:
 
 ## Conectar um formulário adaptável à lista Microsoft® SharePoint {#connect-af-sharepoint-list}
 
-Para integrar a Lista de SharePoint Microsoft® ao seu Formulário adaptável [configurar um Formulário adaptável para usar um Modelo de dados de formulário (FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
+Para integrar a Lista do Microsoft® SharePoint ao seu Formulário adaptável [configure um Formulário adaptável para usar um Modelo de Dados de Formulário (FDM)](/help/forms/creating-adaptive-form-core-components.md#configure-a-schema-or-form-data-model-for-an-adaptive-formconfigure-schema-or-data-model-for-form)
 
 Depois de configurar um Formulário adaptável para usar um Modelo de dados de formulário (FDM), você pode:
 
@@ -53,7 +53,7 @@ Depois de configurar um Formulário adaptável para usar um Modelo de dados de f
 
 Para integrar a Lista do Microsoft® SharePoint a um fluxo de trabalho para AEM:
 
-1. [Criar um fluxo de trabalho para chamar um Modelo de dados de formulário (FDM)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR)
+1. [Criar um fluxo de trabalho para invocar um Modelo de Dados de Formulário (FDM)](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR)
 
    <!--
     To create a workflow with the editor:
@@ -69,7 +69,7 @@ Para integrar a Lista do Microsoft® SharePoint a um fluxo de trabalho para AEM:
 1. [Configurar a ação Enviar para invocar um fluxo de trabalho do AEM](/help/forms/configuring-submit-actions.md#invoke-an-aem-workflow)
 
 
-Saiba como [usar o fluxo de trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html) para colaborar, gerenciar e processar conteúdo em um Formulário adaptável.
+Saiba como [usar o Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/workflow/use-workflow.html) para colaborar, gerenciar e processar conteúdo em um Formulário adaptável.
 
 ## Práticas recomendadas {#best-practices}
 

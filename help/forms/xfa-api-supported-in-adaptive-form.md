@@ -72,7 +72,7 @@ Quando um formulário adaptável é criado usando um arquivo XDP, você pode arr
   </tr>
   <tr>
    <td><p>Campo de senha </p> </td>
-   <td><p>Caixa Senha</p> </td>
+   <td><p>Caixa de senha</p> </td>
   </tr>
   <tr>
    <td><p>Imagem</p> </td>
@@ -140,23 +140,23 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade de título no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>displayFormat<em> (todos os tipos de campos)</em></p> </td>
+   <td><p>displayFormat<em> (todos os tipos de Campos)</em></p> </td>
    <td><p>Mapeado para o padrão de exibição no formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>rawValue<em> (todos os tipos de campos)</em></p> </td>
+   <td><p>rawValue<em> (todos os tipos de campo)</em></p> </td>
    <td><p>Mapeado para a propriedade de valor no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>itens<em> (Caixa de listagem, Caixa de seleção)</em></p> </td>
+   <td><p>itens<em> (Caixa de Listagem, Caixa de Seleção)</em></p> </td>
    <td><p>Mapeado para a propriedade de opções no Formulário adaptável. Você pode substituí-lo usando a expressão Options.</p> </td>
   </tr>
   <tr>
-   <td><p>maxChar<em> (Campo de texto)</em></p> </td>
+   <td><p>maxChar<em> (Campo de Texto)</em></p> </td>
    <td><p>Mapeado para a propriedade Máximo de caracteres permitidos no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>multilinha<em> (Campo de texto)</em></p> </td>
+   <td><p>multilinha<em> (Campo de Texto)</em></p> </td>
    <td><p>Mapeado para a propriedade Permitir várias linhas no Formulário adaptável.</p> </td>
   </tr>
   <tr>
@@ -168,7 +168,7 @@ A tabela a seguir captura como vários scripts XFA definidos nos arquivos XDP se
    <td><p>Mapeado para a propriedade de dígitos de cliente potencial no Formulário adaptável.</p> </td>
   </tr>
   <tr>
-   <td><p>multiSelect<em> (Caixa de listagem)</em></p> </td>
+   <td><p>multiSelect<em> (Caixa de Listagem)</em></p> </td>
    <td><p>Mapeado para a propriedade Permite seleção múltipla no Formulário adaptável.</p> </td>
   </tr>
  </tbody>
@@ -198,7 +198,7 @@ A tabela a seguir captura como vários scripts XFA definidos no arquivo XDP se c
   </tr>
   <tr>
    <td><p>validationState </p> </td>
-   <td><p>Esse script é executado no tempo de execução e não pode ser substituído no Formulário adaptável.<br /> </p> </td>
+   <td><p>Este script é executado no tempo de execução e não pode ser substituído no Formulário Adaptável.<br /> </p> </td>
   </tr>
   <tr>
    <td><p>sair </p> </td>

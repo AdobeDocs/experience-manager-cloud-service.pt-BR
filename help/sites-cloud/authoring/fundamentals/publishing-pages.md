@@ -52,7 +52,7 @@ Dependendo do seu local, é possível publicar:
 
 >[!NOTE]
 >
->Se quiser preservar a ordem das páginas, é necessário usar [Gerenciar publicação](#manage-publication) para publicar a página principal junto com qualquer página secundária - em uma única ação.
+>Para preservar a ordem das páginas, use a opção [Gerenciar publicação](#manage-publication) para publicar a página pai junto com qualquer página filho, em uma única ação.
 >
 >A ordem das páginas não é garantida:
 >* se apenas as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal)
@@ -74,7 +74,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
    * A página é publicada diretamente se não houver referências a serem publicadas.
    * Se a página tiver referências que precisem ser publicadas, elas serão listadas no assistente de **Publicação**, onde você poderá:
-      * Especifique quais dos ativos, ou tags etc., você deseja publicar junto com a página. Em seguida, use **Publish** para concluir o processo.
+      * Especifique quais dos ativos, ou tags etc., você deseja publicar junto com a página. Em seguida, use o **Publish** para concluir o processo.
       * Usar a opção **Cancelar** para suspender a ação.
 
    ![Publicação de referências com a página](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -93,7 +93,7 @@ Se você estiver editando uma página, ela poderá ser publicada diretamente do 
 
 >[!NOTE]
 >
->Páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não pode ser publicado. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+>Páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não podem ser publicadas. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
 ### Publicação por meio do Console {#publishing-from-the-console}
 
@@ -108,7 +108,7 @@ A **Publicação rápida** serve para casos simples e publica as páginas seleci
 
 Para publicar uma página com a Publicação rápida:
 
-1. Selecione as páginas no console de sites e clique no link **Publicação rápida** botão.
+1. Selecione as páginas no console de sites e clique no botão **Publish Rápido**.
 
    ![Seleção de páginas para publicação](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -128,7 +128,7 @@ Para publicar uma página com a Publicação rápida:
 
 >[!NOTE]
 >
->Se quiser preservar a ordem das páginas, é necessário usar **Gerenciar publicação** para publicar a página principal junto com qualquer página secundária em uma única ação.
+>Para preservar a ordem das páginas, use a opção **Gerenciar publicação** para publicar a página pai junto com qualquer página filho em uma única ação.
 >
 >A ordem das páginas não é garantida:
 >* se apenas as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal)
@@ -136,7 +136,7 @@ Para publicar uma página com a Publicação rápida:
 
 Para publicar ou desfazer a publicação de uma página usando Gerenciar publicação:
 
-1. Selecione as páginas no console de sites e clique no link **Gerenciar publicação** botão.
+1. Selecione as páginas no console de sites e clique no botão **Gerenciar publicação**.
 
    ![Seleção de páginas para publicação](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -240,17 +240,17 @@ De uma [maneira semelhante à publicação](#publishing-pages), uma ou mais pág
 
 ### Desfazer a publicação por meio do editor    {#unpublishing-from-the-editor}
 
-Ao editar uma página, se quiser desfazer a publicação, selecione **Cancelar publicação da página** no **Informações da página** menu, da mesma maneira que você [publicar a página](#publishing-from-the-editor).
+Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a publicação da página** no menu **Informações da página**, da mesma forma que faria para [publicar a página](#publishing-from-the-editor).
 
 >[!NOTE]
 >
->Páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não pode ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
+>Páginas acessadas por [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) no editor não podem ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
 
 ### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
 
 Da mesma forma que você [usa a opção Gerenciar publicação para publicar](#manage-publication), também pode usá-la para desfazer a publicação.
 
-1. Selecione as páginas no console de sites e clique no link **Gerenciar publicação** botão.
+1. Selecione as páginas no console de sites e clique no botão **Gerenciar publicação**.
 1. O assistente para **Gerenciar publicação** é iniciado. Na primeira etapa, **Opções**, selecione **Desfazer a publicação** em vez da opção padrão **Publicar**.
 
    ![Desfazer publicação - Opções](/help/sites-cloud/authoring/assets/publishing-unpublish.png)
@@ -274,7 +274,7 @@ Quando você tiver inserido ou atualizado um número considerável de páginas d
 
 É possível usar a opção [Gerenciar publicação](#manage-publication) no console do Sites para fazer isso.
 
-1. No console Sites, selecione a página raiz da árvore que deseja publicar ou cancelar a publicação e selecione **Gerenciar publicação**.
+1. No console Sites, selecione a página raiz da árvore que deseja publicar ou desfazer a publicação e selecione **Gerenciar Publicação**.
 1. O assistente para **Gerenciar publicação** é iniciado. Escolha publicar ou desfazer a publicação e quando isso deve ocorrer e selecione **Próximo** para continuar.
 1. Na etapa **Escopo**, selecione a página raiz e selecione **Incluir tarefas derivadas**.
 

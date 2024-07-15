@@ -47,16 +47,16 @@ Have a look at the December 2023 Release Overview video for a summary of the fea
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
-**Você pode aproveitar o [Serviço de dados de monitoramento de uso real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para ativar a coleta no lado do cliente para o AEM as a Cloud Service.
+**Você pode aproveitar o [Serviço de Dados de Monitoramento de Uso Real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para habilitar a coleta no lado do cliente para o AEM as a Cloud Service.
 
 O Serviço de dados de Monitoramento de uso real (RUM) oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. É uma ótima oportunidade para obter insights avançados sobre o desempenho da página. Embora isso seja benéfico para clientes que usam CDN gerenciada por Adobe ou CDN não gerenciada por Adobe. Além disso, para clientes que usam um CDN não gerenciado por Adobe, o relatório de tráfego automatizado agora pode ser ativado para eles, eliminando a necessidade de compartilhar qualquer relatório de tráfego com o Adobe.
 
-Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-rum-adopter@adobe.com`, junto com o nome de domínio para o ambiente de produção, preparo e desenvolvimento a partir do endereço de email associado à Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de uso real (RUM) para você.
+Se você estiver interessado em testar esse novo recurso e compartilhar seus comentários, envie um email para `aemcs-rum-adopter@adobe.com`, juntamente com o nome de domínio, para o ambiente de produção, preparo e desenvolvimento pelo seu endereço de email associado à sua Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de uso real (RUM) para você.
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Novos recursos na exibição de Ativos {#assets-view-features}
+### Novos recursos na exibição do Assets {#assets-view-features}
 
 **Criar imagens de IA generativa com o Adobe Firefly**
 
@@ -81,9 +81,9 @@ Agora é possível encontrar conteúdo com facilidade selecionando uma imagem e 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Novos recursos em [!DNL Experience Manager Forms] {#forms-features}
+### Novos Recursos em [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Conectar um Forms adaptável com a lista Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: o AEM Forms fornece uma integração OOTB para enviar dados de formulários diretamente para a Lista do SharePoint, permitindo que você use os recursos de Listas do SharePoint. Você pode configurar a Lista de SharePoint do Microsoft como uma fonte de dados para um Modelo de dados de formulário e usar o **Enviar usando modelo de dados do formulário** enviar ação para conectar um Formulário adaptável à Lista do SharePoint.
+* **[Conecte um Forms adaptável com a Lista do Microsoft® SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharepoint)**: o AEM Forms fornece uma integração OOTB para enviar dados de formulários diretamente para a Lista do SharePoint, permitindo que você use os recursos de Listas do SharePoint. Você pode configurar a Lista de SharePoint do Microsoft como uma fonte de dados para um Modelo de dados de formulário e usar a ação de envio **Enviar usando o Modelo de dados de formulário** para conectar um Formulário adaptável à Lista de SharePoint.
 
 <!-- 
 
@@ -93,21 +93,21 @@ Agora é possível encontrar conteúdo com facilidade selecionando uma imagem e 
 
 ### Programa de adoção antecipada {#forms-early-adopter}
 
-* **[Enviar um formulário adaptável para o cenário do Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: o Forms as a Cloud Service oferece opções prontas para uso para conectar facilmente um Formulário adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
+* **[Enviar um Formulário Adaptável para o Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: o Forms as a Cloud Service opções prontas para uso para conectar facilmente um Formulário Adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
 
-* **[Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md)**: o Forms adaptável incorporado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diferentes e selecionar mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
+* **[Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md)**: o Forms adaptável integrado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diferentes e selecionar mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
 
   ![Suporte de idioma da direita para a esquerda](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs do DocAssurance permitem proteger informações confidenciais, assinando e criptografando os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
+* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de Comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs DocAssurance permitem proteger informações confidenciais ao assinar e criptografar os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
 
-  Você pode escrever para `aem-forms-ea@adobe.com` do seu id de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
+  Você pode escrever para `aem-forms-ea@adobe.com` a partir de sua ID de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Programa de adoção antecipada da configuração da CDN {#cdn-config-early-adopter}
 
-Além do recém-lançado [Regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md), que inclui as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de configuração para declarar e implantar outros tipos de configuração de CDN. Adoraríamos saber sobre seus casos de uso, incluindo:
+Além das [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de Configuração para declarar e implantar outros tipos de configuração de CDN. Adoraríamos saber sobre seus casos de uso, incluindo:
 * Redirecionamentos do lado do cliente 301/302
 * solicitações de proxy na borda para origens arbitrárias
 * Transformações de URL
@@ -116,7 +116,7 @@ Além do recém-lançado [Regras de filtro de tráfego](/help/security/traffic-f
 * autenticação por nome de usuário/senha
 * qualquer outra configuração útil do CDN
 
-Enviar um email para **aemcs-cdn-config-adopter@adobe.com** da sua ID de email oficial com o seu feedback.
+Envie um email para **aemcs-cdn-config-adopter@adobe.com** a partir da sua ID de email oficial com seus comentários.
 
 ## Cloud Manager {#cloud-manager}
 

@@ -18,7 +18,7 @@ O editor de rich text (RTE) é um elemento básico fundamental para adicionar co
 
 ## Edição no local {#in-place-editing}
 
-Selecionar um componente baseado em texto com um único clique para revelar a [componente.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+Selecione um componente baseado em texto com um único clique para exibir a [barra de ferramentas do componente.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
 
 ![A barra de ferramentas do componente](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 

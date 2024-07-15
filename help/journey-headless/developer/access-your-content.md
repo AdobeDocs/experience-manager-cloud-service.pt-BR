@@ -272,7 +272,7 @@ Os modelos de fragmento são usados:
 
 As consultas podem ser inseridas na interface do GraphiQL. É possível acessar o editor de consultas por meio de:
 
-* **Ferramentas** > **Geral** > **Editor de consultas GraphQL**
+* **Ferramentas** > **Geral** > **Editor de Consultas do GraphQL**
 * diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/graphiql-interface.png "Interface GraphiQL")

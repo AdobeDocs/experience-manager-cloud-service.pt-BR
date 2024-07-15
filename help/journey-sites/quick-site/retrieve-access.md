@@ -91,7 +91,7 @@ Você está vendo uma visão geral do seu programa. Sua página será diferente,
 
 ## Recuperar informações de acesso do repositório  {#repo-access}
 
-1. No **Pipelines** da página do Cloud Manager, selecione a variável **Acessar informações do repositório** botão.
+1. Na seção **Pipelines** da página do Cloud Manager, selecione o botão **Acessar informações do repositório**.
 
    ![Pipelines](assets/pipelines-repo-info.png)
 
@@ -99,13 +99,13 @@ Você está vendo uma visão geral do seu programa. Sua página será diferente,
 
    ![Informações do repositório](assets/repo-info.png)
 
-1. Selecione o **Gerar senha** botão para criar uma senha para você mesmo.
+1. Selecione o botão **Gerar senha** para criar uma senha para você mesmo.
 
 1. Salve a senha gerada em um gerenciador de senhas seguro. A senha nunca será exibida novamente.
 
 1. Copie também os campos **username** e **linha de comando Git**. Você usará essas informações posteriormente para acessar o repositório.
 
-1. Selecionar **Fechar**.
+1. Selecione **Fechar**.
 
 ## O que vem a seguir {#what-is-next}
 
@@ -114,7 +114,7 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Entender, em nível superior, o que é o Cloud Manager.
 * Recuperar suas credenciais para acessar o Git do AEM e poder confirmar as personalizações.
 
-Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites de AEM revisando o documento a seguir [Personalizar o tema do site,](customize-theme.md) onde você aprende como o tema do site é criado, como personalizá-lo e como testá-lo usando conteúdo dinâmico de AEM.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação Rápida de Sites de AEM revisando a seguir o documento [Personalizar o Tema do Site](customize-theme.md), onde você aprenderá como o tema do site é criado, como personalizá-lo e como testá-lo usando conteúdo dinâmico de AEM.
 
 ## Recursos adicionais {#additional-resources}
 

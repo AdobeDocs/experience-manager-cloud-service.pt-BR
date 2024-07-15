@@ -13,7 +13,7 @@ ht-degree: 83%
 
 # Acesso ao Admin Console {#accessing-admin-console}
 
-Nesta parte do [integração do jornada,](overview.md) saiba mais sobre a preparação necessária antes de fazer logon no sistema pela primeira vez.
+Nesta parte da [jornada de integração](overview.md), você aprenderá sobre a preparação necessária antes de fazer logon no sistema pela primeira vez.
 
 ## Objetivo {#objective}
 
@@ -52,11 +52,11 @@ Antes de usar o Admin Console para administrar os usuários da sua equipe, você
 
 1. Como administrador do sistema, você receberá vários emails da Adobe como parte do processo de integração. Procure o email de boas-vindas que fornece informações sobre o nome da organização à qual você recebeu acesso.
 
-1. Clique em **Comece já** clique no email de boas-vindas para acessar o Admin Console. Se não conseguir encontrar o email, abra um navegador diretamente no Admin Console em [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
+1. Clique no link **Introdução** no email de boas-vindas para acessar o Admin Console. Se você não conseguir localizar o email, abra um navegador diretamente no Admin Console em [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
    ![Email de boas-vindas](/help/journey-onboarding/assets/get-started-email.png)
 
-1. Faça logon usando sua Adobe ID. Após o logon bem-sucedido, você verá a **Visão geral** página da Adobe Admin Console.
+1. Faça logon usando sua Adobe ID. Depois de fazer logon, você verá a página **Visão geral** da Adobe Admin Console.
 
    ![O Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
@@ -68,7 +68,7 @@ Antes de usar o Admin Console para administrar os usuários da sua equipe, você
 
    ![Revisar administradores](/help/journey-onboarding/assets/get-started2.png)
 
-1. Depois de clicar em **Administradores** do **Usuários** , você pode pesquisar inserindo seu email, nome de usuário, nome ou sobrenome do Adobe ID.
+1. Depois de clicar em **Administradores** no cartão **Usuários**, você poderá pesquisar inserindo seu email (Adobe ID), nome de usuário, nome ou sobrenome.
 
    ![Pesquisar usuários](/help/journey-onboarding/assets/get-started3.png)
 

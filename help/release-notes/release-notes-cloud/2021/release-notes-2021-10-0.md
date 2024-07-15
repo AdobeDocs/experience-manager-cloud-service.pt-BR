@@ -30,11 +30,11 @@ A versão seguinte (2021.11.0) será lançada em sexta-feira, 2 de dezembro de 2
 
 ## Vídeo da versão {#release-video}
 
-Dê uma olhada no [Visão geral da versão de outubro de 2021](https://video.tv.adobe.com/v/338253) vídeo para obter um resumo dos recursos adicionados.
+Assista ao vídeo [Visão geral da versão de outubro de 2021](https://video.tv.adobe.com/v/338253) para ver um resumo dos recursos adicionados.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Novo recurso no [!DNL Sites] {#sites-features}
+### Novo recurso em [!DNL Sites] {#sites-features}
 
 * Os modelos de Fragmento de conteúdo agora são definidos automaticamente no estado somente leitura depois de publicados, para evitar a quebra involuntária de consultas de API ativas após a republicação de um modelo editado. Os usuários recebem um aviso ao tentar editar um modelo publicado. A edição é possível ao aceitar o aviso.
 
@@ -42,11 +42,11 @@ Dê uma olhada no [Visão geral da versão de outubro de 2021](https://video.tv.
 
 ### Novos recursos no [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] O agora é compatível com a geração automática de transcrições de texto dos ativos de áudio e vídeo compatíveis, usando um conector integrado para [!DNL Azure Media Services]. A variável [tipos de arquivo compatíveis](/help/assets/file-format-support.md#audio-video-transcription-formats) são automaticamente transcritas e o texto é armazenado no formato WebVTT. As legendas WebVTT são usadas para pesquisa, legendagem ou tradução mais eficientes. Além disso, o recurso melhora a acessibilidade, a descoberta e a localização dos ativos.
+* O [!DNL Experience Manager] agora oferece suporte à geração automática de transcrições de texto dos ativos de áudio e vídeo com suporte, usando um conector integrado para [!DNL Azure Media Services]. Os [tipos de arquivos suportados](/help/assets/file-format-support.md#audio-video-transcription-formats) são transcritos automaticamente e o texto é armazenado no formato WebVTT. As legendas WebVTT são usadas para pesquisa, legendagem ou tradução mais eficientes. Além disso, o recurso melhora a acessibilidade, a descoberta e a localização dos ativos.
 
-### Novo recurso na [!DNL Assets] canal de pré-lançamento {#assets-prerelease-features}
+### Novo recurso no canal de pré-lançamento do [!DNL Assets] {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] O Recorte inteligente e a Amostra de imagens agora são potencializados pelos serviços mais recentes da Sensei, que geram melhores recortes e amostras. Além disso, um aprimoramento foi iniciado para gerar conteúdo de corte diferente, para a mesma proporção, mas em diferentes resoluções. Além disso, as edições manuais são preservadas no reprocessamento, se não houver alteração na largura e na altura do Perfil de imagem.
+* O Recorte inteligente e a Amostra de imagens do [!DNL Dynamic Media] agora são potencializados pelos serviços mais recentes da Sensei, que geram melhores recortes e amostras. Além disso, um aprimoramento foi iniciado para gerar conteúdo de corte diferente, para a mesma proporção, mas em diferentes resoluções. Além disso, as edições manuais são preservadas no reprocessamento, se não houver alteração na largura e na altura do Perfil de imagem.
 
 * As Tags inteligentes são aplicadas automaticamente aos ativos usando microsserviços de ativos, em vez dos Serviços de conteúdo inteligente. O modelo subjacente é atualizado para melhorar os resultados da marcação e reduzir a polarização. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -60,20 +60,20 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-* **Analytics para Forms adaptável**: agora é possível capturar e rastrear o comportamento de logado e não conectado (anônimo) por meio do Adobe Analytics for Adaptive Forms para coletar insights do usuário. Ele ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário.
+* **Analytics para Forms adaptável**: agora é possível capturar e rastrear o comportamento de logado e não conectado (anônimo) por meio do Adobe Analytics para Forms adaptável para coletar insights do usuário. Ele ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
 * **Externalizar dados do fluxo de trabalho do AEM para processamento seguro**: Você pode armazenar dados de fluxos de trabalho em andamento do AEM (dados de variáveis de fluxo de trabalho do AEM) que contêm elementos de Dados pessoais sensíveis (SPD) em um repositório gerenciado pelo cliente para processamento seguro. Os elementos de dados e as variáveis de fluxo de trabalho não são armazenados no repositório do AEM e são buscados sob demanda de um repositório gerenciado pelo cliente durante o processamento do fluxo de trabalho.
 
-### Recursos beta do [!DNL Forms] {#what-is-new-forms-oct2021-beta}
+### Recursos do Beta de [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=pt-BR) ajudam a combinar um modelo e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modos síncronos e em lote. As APIs permitem criar aplicativos que possibilitam a você:
 
    * Gerar documentos preenchendo arquivos de modelo (PDF e XDP) com dados XML.
    * Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
 
-Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no programa beta.
+Você pode enviar um email a [!DNL formscsbeta@adobe.com] para se cadastrar no programa beta.
 
 ## Complemento CIF {#cloud-services-cif}
 

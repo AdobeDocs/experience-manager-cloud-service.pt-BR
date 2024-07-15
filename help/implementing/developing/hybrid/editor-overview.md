@@ -27,9 +27,9 @@ A compatibilidade com SPA no AEM apresenta uma camada de JS sutil que interage c
 
 Para obter mais detalhes sobre o AEM no SPA, consulte o seguinte:
 
-* [Blueprint SPA](blueprint.md) requisitos técnicos de um SPA.
-* [Introdução ao SPA no AEM usando o React](getting-started-react.md) para um tour rápido por um SPA simples usando o React.
-* [Introdução ao SPA no AEM usando o Angular](getting-started-angular.md) para um rápido tour por um SPA simples usando o Angular.
+* [Blueprint do SPA](blueprint.md) para os requisitos técnicos de um SPA.
+* [Introdução ao SPA no AEM usando o React](getting-started-react.md) para um tour rápido de um SPA simples usando o React.
+* [Introdução ao SPA no AEM usando o Angular](getting-started-angular.md) para um rápido tour de um SPA simples usando o Angular.
 
 ## Design {#design}
 

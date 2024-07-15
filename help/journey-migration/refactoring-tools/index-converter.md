@@ -1,6 +1,6 @@
 ---
 title: Conversor de índice
-description: Saiba como migrar as Definições de índice em preparação para a mudança para o AEM as a Cloud Service.
+description: Saiba como migrar as Definições de índice em preparação para a migração para o AEM as a Cloud Service.
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
 feature: Migration
 role: Admin
@@ -13,30 +13,30 @@ ht-degree: 1%
 
 # Conversor de índice {#index-converter}
 
-O Conversor de índice é um utilitário desenvolvido para migrar as Definições de índice de um cliente em preparação para a mudança para o AEM as a Cloud Service.
+O Conversor de índice é um utilitário desenvolvido para migrar as Definições de índice de um cliente, em preparação para a migração para o AEM as a Cloud Service.
 
 ## Introdução {#introduction}
 
-O Conversor de índice permite que os desenvolvedores do AEM migrem as definições de índice Oak personalizado existentes para definições de índice Oak personalizado compatíveis com AEM as a Cloud Service.
+O Conversor de índice permite que os desenvolvedores do AEM migrem as definições de índice Oak personalizadas existentes para definições de índice Oak personalizadas compatíveis com o AEM as a Cloud Service.
 
 >[!NOTE]
->Somente o Conversor de índice transforma *lucene* Definições de índice Oak personalizado do tipo presentes em `/apps` ou `/oak:index`. Não transforma *lucene* índices do tipo criados para `nt:base`.
+>O Conversor de Índice transforma apenas as Definições de Índice Oak Personalizado do tipo *lucene* presentes em `/apps` ou `/oak:index`. Ele não transforma índices do tipo *lucene* que são criados para `nt:base`.
 
-Há duas maneiras de criar definições de índice Oak personalizadas:
+Há duas maneiras de criar Definições de índice Oak personalizadas:
 
 * `under /apps` (por meio de qualquer pacote de conteúdo personalizado)
-* diretamente em `/oak:index` caminho
+* diretamente no caminho `/oak:index`
 
-Se [Garantir índice do Oak](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) foi usada, Verifique se as definições não são compatíveis com o AEM as a Cloud Service. Dessa forma, eles devem ser convertidos primeiro para Definições de índice Oak e, em seguida, migrados para Definições de índice Oak personalizadas compatíveis com o AEM as a Cloud Service, de acordo com as diretrizes abaixo:
+Se [Verificar se o Índice Oak](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) foi usado, verificar se não há suporte para Definições no AEM as a Cloud Service. Dessa forma, eles devem ser convertidos primeiro para Definições de índice do Oak e depois migrados para Definições de índice do Oak personalizadas compatíveis com o AEM as a Cloud Service, de acordo com as diretrizes abaixo:
 
-* Se a propriedade ignorar estiver definida como `true`, ignorar ou ignorar a Definição de Garantia
-* Atualize o `jcr:primaryType` para `oak:QueryIndexDefinition`
+* Se a propriedade ignore estiver definida como `true`, ignore ou ignore a Definição de Verificação
+* Atualizar o `jcr:primaryType` para `oak:QueryIndexDefinition`
 * Remova todas as propriedades que devem ser ignoradas, conforme mencionado nas configurações do OSGi
-* Remover subárvore `/facets/jcr:content` em Garantir definição
+* Remover subárvore `/facets/jcr:content` de Assegurar Definição
 
 ## Uso do Conversor de índice {#using-index-converter}
 
-* Por meio da CLI do Adobe I/O : o Adobe recomenda usar o Conversor de Índice por meio de `aio-cli-plugin-aem-cloud-service-migration` (Plug-in de refatoração de código as a Cloud Service AEM para a CLI do Adobe I/O).
+* Por meio da CLI do Adobe I/O : o Adobe recomenda o uso do Conversor de índice por meio do `aio-cli-plugin-aem-cloud-service-migration` (plug-in de refatoração de código AEM as a Cloud Service para a CLI do Adobe I/O).
 
   Consulte **[Recurso do Git: aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** para saber como instalar e usar o plug-in.
 

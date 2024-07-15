@@ -43,7 +43,8 @@ Pode-se escrever um código de registro personalizado que contenha, no mínimo, 
 
 **Pré-requisito:**
 
-Para que a lógica descrita acima funcione corretamente, ative [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
+Para que a lógica descrita acima funcione corretamente, habilite a [sincronização de dados](#data-synchronization-data-synchronization) enviando
+uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
 
 ### Externo {#external-managed-registration}
 
@@ -66,7 +67,8 @@ Os clientes podem gravar seus próprios componentes personalizados. Para saber m
 
 **Pré-requisito:**
 
-Para que a lógica descrita acima funcione corretamente, ative [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
+Para que a lógica descrita acima funcione corretamente, habilite a [sincronização de dados](#data-synchronization-data-synchronization) enviando
+uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
 
 ### Integração com um provedor de identidade {#integration-with-an-idp}
 
@@ -90,13 +92,13 @@ A interface `com.adobe.granite.auth.oauth.provider` pode ser implementada com o 
 
 **Pré-requisito:**
 
-Como prática recomendada, sempre confie no idP (Identity Provider, Provedor de identidade) como um único ponto de verdade ao armazenar dados específicos do usuário. Se as informações adicionais do usuário estiverem armazenadas no repositório local, que não faz parte do idP, ative [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados. Além de [sincronização de dados](#data-synchronization-data-synchronization), no caso do provedor de autenticação SAML, verifique se [associação de grupo dinâmico](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) está ativado.
+Como prática recomendada, sempre confie no idP (Identity Provider, Provedor de identidade) como um único ponto de verdade ao armazenar dados específicos do usuário. Se as informações adicionais do usuário forem armazenadas no repositório local, que não faz parte do idP, habilite a [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao Cliente indicando o programa e os ambientes apropriados. Além da [sincronização de dados](#data-synchronization-data-synchronization), no caso do provedor de autenticação SAML, verifique se a [associação de grupo dinâmico](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0) está habilitada.
 
 ### Sessões adesivas e tokens encapsulados {#sticky-sessions-and-encapsulated-tokens}
 
 O AEM as a Cloud Service habilita sessões adesivas baseadas em cookies, garantindo que um usuário final seja roteado para o mesmo nó de publicação em cada solicitação. Em casos específicos, como picos de tráfego do usuário, o recurso de token encapsulado pode aumentar o desempenho, de modo que o registro do usuário no repositório não precise ser referenciado em cada solicitação. Se o nó de publicação com o qual um usuário final tem afinidade for substituído, o registro da ID do usuário estará disponível no novo nó de publicação, conforme descrito na seção [sincronização de dados](#data-synchronization-data-synchronization) abaixo.
 
-Para aproveitar o recurso de token encapsulado, envie uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados. Mais importante, o token encapsulado não pode ser habilitado sem [sincronização de dados](#data-synchronization-data-synchronization) e devem ser ativados juntos. Portanto, analise cuidadosamente o caso de uso antes de ativar e verifique se o recurso é essencial.
+Para aproveitar o recurso de token encapsulado, envie uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados. Mais importante ainda, o token encapsulado não pode ser habilitado sem a [sincronização de dados](#data-synchronization-data-synchronization) e deve ser habilitado em conjunto. Portanto, analise cuidadosamente o caso de uso antes de ativar e verifique se o recurso é essencial.
 
 ## Perfil de usuário {#user-profile}
 
@@ -111,7 +113,8 @@ As informações do perfil do usuário podem ser escritas e lidas de duas maneir
 
 **Pré-requisito:**
 
-Para que a lógica de persistência de perfil de usuário do lado do servidor funcione corretamente, habilite [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
+Para que a lógica de persistência de perfil de usuário do lado do servidor funcione corretamente, habilite a [sincronização de dados](#data-synchronization-data-synchronization) enviando
+uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
 
 ### Armazenamento de dados de terceiros {#third-party-data-stores}
 
@@ -121,7 +124,8 @@ Os dados do usuário final podem ser enviados a fornecedores terceirizados, como
 
 **Pré-requisito:**
 
-Para que a lógica descrita acima funcione corretamente, ative [sincronização de dados](#data-synchronization-data-synchronization) enviando uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
+Para que a lógica descrita acima funcione corretamente, habilite a [sincronização de dados](#data-synchronization-data-synchronization) enviando
+uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apropriados.
 
 ## Permissões (grupos de usuários fechados) {#permissions-closed-user-groups}
 
@@ -134,7 +138,7 @@ Independentemente do logon, um código personalizado também pode manter e geren
 
 ## Sincronização de dados {#data-synchronization}
 
-Os usuários finais do site têm uma expectativa de experiência consistente em cada solicitação de página da Web ou mesmo ao fazerem logon usando um navegador diferente; mesmo sem o conhecimento deles, eles são trazidos para diferentes nós de servidor da infraestrutura do nível de publicação. A AEM as a Cloud Service consegue isso sincronizando rapidamente o `/home` hierarquia de pastas (informações de perfil do usuário, associação de grupo e assim por diante) em todos os nós do nível de publicação.
+Os usuários finais do site têm uma expectativa de experiência consistente em cada solicitação de página da Web ou mesmo ao fazerem logon usando um navegador diferente; mesmo sem o conhecimento deles, eles são trazidos para diferentes nós de servidor da infraestrutura do nível de publicação. O AEM as a Cloud Service consegue isso sincronizando rapidamente a hierarquia de pastas `/home` (informações de perfil do usuário, associação de grupo etc.) em todos os nós do nível de publicação.
 
 Ao contrário de outras soluções do AEM, a sincronização de usuários e associações de grupos no AEM as a Cloud Service não usa uma abordagem de mensagens ponto a ponto. Em vez disso, ela implementa uma abordagem de assinatura de publicação que não requer configuração de clientes.
 

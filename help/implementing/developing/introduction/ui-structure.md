@@ -97,21 +97,21 @@ O quadro do editor é um container (abstrato) para todos os elementos de criaç�
 
 ### Painel lateral {#side-panel}
 
-Contém três guias padrão. A variável **Assets** e **Componentes** As guias permitem selecionar esses elementos, arrastá-los do painel e soltá-los na página. A variável **Árvore de conteúdo** permite inspecionar a hierarquia do conteúdo na página.
+Contém três guias padrão. As guias **Assets** e **Componentes** permitem selecionar esses elementos e arrastá-los do painel e soltá-los na página. A guia **Árvore de conteúdo** permite inspecionar a hierarquia de conteúdo na página.
 
 O painel lateral fica oculto por padrão. Quando selecionada, ela é exibida no lado esquerdo ou quando a largura da janela é inferior a 1024 pixels, ela desliza para cobrir a janela inteira como, por exemplo, em um dispositivo móvel.
 
 ![Painel lateral](assets/ui-side-panel.png)
 
-### Painel lateral - Ativos {#side-panel-assets}
+### Painel lateral - Assets {#side-panel-assets}
 
-Na guia Ativos, é possível selecionar dentre uma variedade de ativos. Além disso, você pode filtrar por um termo específico ou selecionar um grupo.
+Na guia Assets, é possível selecionar dentre uma variedade de ativos. Além disso, você pode filtrar por um termo específico ou selecionar um grupo.
 
-![Guia Ativos](assets/ui-side-panel-assets.png)
+![guia Assets](assets/ui-side-panel-assets.png)
 
 ### Painel lateral - Grupos de ativos {#side-panel-asset-groups}
 
-Na guia Ativos, há uma lista suspensa que você pode usar para selecionar os grupos de ativos específicos.
+Na guia Assets, há uma lista suspensa que você pode usar para selecionar os grupos de ativos específicos.
 
 ![Grupos de ativos](assets/ui-side-panel-asset-groups.png)
 
@@ -129,7 +129,7 @@ Na guia Árvore de conteúdo, é possível visualizar a hierarquia do conteúdo 
 
 ### Sobreposições {#overlays}
 
-Sobrepõe o quadro de conteúdo e são usados pelo [camadas](#layer) para conhecer os mecanismos de como você pode interagir de forma transparente com os componentes e seu conteúdo.
+Sobrepõe o quadro de conteúdo e são usados pelas [camadas](#layer) para compreender os mecanismos de como você pode interagir de forma transparente com os componentes e seu conteúdo.
 
 As sobreposições ficam no quadro do editor (com todos os outros elementos de criação de página), embora elas realmente sobreponham os componentes apropriados no quadro de conteúdo.
 
@@ -156,7 +156,7 @@ O alternador de camadas permite escolher a camada que deseja usar. Quando fechad
 
 O alternador de camadas está disponível como uma lista suspensa na barra de ferramentas (na parte superior da janela, dentro do quadro do editor).
 
-![Seletor de camadas](assets/ui-layer-switcher.png)
+![Alternador de camada](assets/ui-layer-switcher.png)
 
 ### Component Toolbar {#component-toolbar}
 
@@ -170,4 +170,4 @@ Dependendo do espaço disponível, as barras de ferramentas do componente são p
 
 <!--For more details about the concepts around the touch-enabled UI, continue to the article [Concepts of the AEM Touch-Enabled UI](/help/sites-developing/touch-ui-concepts.md).-->
 
-Para obter mais informações técnicas, consulte a [Conjunto de documentação JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para o editor de páginas.
+Para obter mais informações técnicas, consulte o [conjunto de documentação JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html) para o editor de páginas.

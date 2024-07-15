@@ -14,9 +14,9 @@ ht-degree: 1%
 # Configurar seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados
 
 
-Depois de ter [criou e visualizou o formulário](/help/edge/docs/forms/create-forms.md), é hora de permitir que a planilha correspondente comece a receber dados. Você pode ativar manualmente a planilha para aceitar dados ou usar APIs de Administração para permitir que uma planilha aceite dados.
+Depois de [criar e visualizar o formulário](/help/edge/docs/forms/create-forms.md), é hora de habilitar a planilha correspondente para começar a receber dados. Você pode ativar manualmente a planilha para aceitar dados ou usar APIs de Administração para permitir que uma planilha aceite dados.
 
-![Ecossistema de criação baseado em documento](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
+![Ecossistema de criação baseado em documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 <!-- 
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
@@ -32,7 +32,7 @@ Para permitir que a planilha aceite dados
 
    >[!WARNING]
    >
-   > Se a variável `incoming` não estiver presente, o AEM não enviará dados para a planilha.
+   > Se a planilha `incoming` não estiver presente, o AEM não enviará dados para a planilha.
 
 1. Nesta planilha, insira uma tabela chamada &quot;input_form&quot;. Selecione o número de colunas necessárias para corresponder aos nomes dos campos de formulário. Em seguida, na barra de ferramentas, vá para Insert > Table e clique em OK.
 
@@ -42,9 +42,9 @@ Para permitir que a planilha aceite dados
 
 1. Na planilha de &quot;entrada&quot;, selecione Colar especial > Transpor linhas para colunas para copiar as IDs de campo como cabeçalhos de coluna nesta nova planilha. Keep only os campos cujos dados precisam capturar outros podem ser ignorados.
 
-   Cada valor no `Name` coluna da `shared-default` planilha, excluindo o botão enviar, pode servir como cabeçalho na variável `incoming` planilha. Por exemplo, considere a seguinte imagem que ilustra cabeçalhos para um formulário &quot;contact-us&quot;:
+   Cada valor na coluna `Name` da folha `shared-default`, excluindo o botão enviar, pode servir como um cabeçalho na folha `incoming`. Por exemplo, considere a seguinte imagem que ilustra cabeçalhos para um formulário &quot;contact-us&quot;:
 
-   ![Campos de um formulário de contato conosco](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+   ![Campos de um formulário contact-us](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
 
 
@@ -52,12 +52,12 @@ Para permitir que a planilha aceite dados
 
    >[!NOTE]
    >
-   >Mesmo que você tenha visualizado a planilha antes, é necessário visualizá-la novamente depois de criar a `incoming` pela primeira vez.
+   >Mesmo que você tenha visualizado a planilha antes, você deve visualizá-la novamente depois de criar a planilha `incoming` pela primeira vez.
 
 
-Depois que os nomes dos campos forem adicionados à `incoming` formulário fica pronto para aceitar envios. Você pode visualizar o formulário e enviar dados para a planilha usando-o.
+Depois que os nomes de campos forem adicionados à planilha `incoming`, o formulário estará pronto para aceitar envios. Você pode visualizar o formulário e enviar dados para a planilha usando-o.
 
-Depois que a planilha for configurada para receber dados, você poderá [visualizar o formulário usando o bloco adaptável do Forms](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar solicitações POST](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
+Depois que a planilha for configurada para receber dados, você poderá [visualizar o formulário usando o Bloco de Forms Adaptável](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar solicitações de POST](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
 
 >[!WARNING]
 >
@@ -65,7 +65,7 @@ Depois que a planilha for configurada para receber dados, você poderá [visuali
 
 ### Usar APIs de administrador para permitir que uma planilha aceite dados
 
-Você também pode enviar uma solicitação POST para o formulário para permitir que ele aceite dados e configure cabeçalhos para o `incoming` planilha. Ao receber o pedido de POST, o serviço analisa o corpo do pedido e gera de forma autônoma os cabeçalhos e folhas essenciais necessários para a assimilação de dados.
+Você também pode enviar uma solicitação POST para o formulário para permitir que ele aceite dados e configure cabeçalhos para a folha `incoming`. Ao receber o pedido de POST, o serviço analisa o corpo do pedido e gera de forma autônoma os cabeçalhos e folhas essenciais necessários para a assimilação de dados.
 
 Para usar APIs de administrador para permitir que uma planilha aceite dados:
 
@@ -74,17 +74,17 @@ Para usar APIs de administrador para permitir que uma planilha aceite dados:
 
    >[!WARNING]
    >
-   > Se a variável `incoming` a planilha não existe, o AEM não enviará dados para esta pasta de trabalho.
+   > Se a planilha `incoming` não existir, o AEM não enviará dados para esta pasta de trabalho.
 
 1. Visualize a planilha no sidekick.
 
    >[!NOTE]
    >
-   >Mesmo que você tenha visualizado a planilha antes, é necessário visualizá-la novamente depois de criar a `incoming` pela primeira vez.
+   >Mesmo que você tenha visualizado a planilha antes, você deve visualizá-la novamente depois de criar a planilha `incoming` pela primeira vez.
 
-1. Envie a solicitação de POST para gerar os cabeçalhos apropriados no `incoming` e adicione a `shared-default` planilhas à sua planilha, se ela ainda não existir.
+1. Envie a solicitação POST para gerar os cabeçalhos apropriados na planilha `incoming` e adicione as planilhas `shared-default` à planilha, se ela ainda não existir.
 
-   Para entender como formatar a solicitação POST para configurar sua planilha, consulte o [Documentação da API de administração](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Você pode observar o exemplo fornecido abaixo:
+   Para entender como formatar a solicitação POST para configurar sua planilha, consulte a [Documentação da API de Administração](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Você pode observar o exemplo fornecido abaixo:
 
    **Solicitação**
 
@@ -172,7 +172,7 @@ Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do
 
 ## Enviar dados para sua planilha {#send-data-to-your-sheet}
 
-Depois que a planilha for definida para receber dados, você poderá [visualizar o formulário usando o bloco adaptável do Forms](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar APIs de administrador](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
+Depois que a planilha for definida para receber dados, você poderá [visualizar o formulário usando o Bloco de Forms Adaptável](/help/edge/docs/forms/create-forms.md#preview-the-form-using-your-edge-delivery-service-eds-page) ou [usar APIs de Administrador](#use-admin-apis-to-send-data-to-your-sheet) para começar a enviar dados para a planilha.
 
 ### Use APIs de administrador para enviar dados para sua planilha
 
@@ -270,7 +270,7 @@ Há algumas maneiras diferentes de formatar os dados de formulário no corpo do 
   }'
   ```
 
-* Codificação de URL (`x-www-form-urlencoded`) corpo (com `content-type` cabeçalho definido como `application/x-www-form-urlencoded`)
+* Corpo (`x-www-form-urlencoded`) codificado por URL (com cabeçalho `content-type` definido como `application/x-www-form-urlencoded`)
 
   ```Shell
   'Email=kent%40wknd.com&Name=clark&Subject=Regarding+Product+Inquiry&Message=I   +have+some+questions+about+your+products.&Phone=123-456-7890&Company=Adobe+Inc.&   Country=United+States&PreferredContactMethod=Email&SubscribeToNewsletter=true'
@@ -284,7 +284,7 @@ Há algumas maneiras diferentes de formatar os dados de formulário no corpo do 
     https://main--portal--wkndforms.hlx.live/contact-us
   ```
 
-Em seguida, é possível [personalizar a mensagem de agradecimento](/help/edge/docs/forms/thank-you-page-form.md).
+Em seguida, você pode [personalizar a mensagem de agradecimento](/help/edge/docs/forms/thank-you-page-form.md).
 
 ## Consulte também:
 

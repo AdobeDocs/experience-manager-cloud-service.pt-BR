@@ -6,7 +6,7 @@ role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1520'
 ht-degree: 92%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 # Atribuir membros da equipe aos perfis de produto do Cloud Manager {#assign-team-members}
 
-Nesta parte do [integração do jornada,](overview.md) você aprende a atribuir membros da equipe aos perfis de produto do Cloud Manager.
+Nesta parte da [jornada de integração](overview.md), você aprenderá a atribuir membros da equipe aos perfis de produto do Cloud Manager.
 
 ## Objetivo {#objective}
 
@@ -177,7 +177,7 @@ Nesta parte da jornada de integração você aprendeu a atribuir perfis aos memb
 * Conhecer os três importantes perfis de produto do Cloud Manager: **Proprietário da empresa**, **Gerente de implantação** e **Desenvolvedor**.
 * Poder atribuir membros da equipe aos perfis de produto do Cloud Manager.
 
-Agora você está pronto para continuar sua jornada de integração revisando em seguida o documento [Acessar o Cloud Manager,](cloud-manager.md) onde você aprende a acessar o Cloud Manager e criar os recursos do projeto.
+Agora você está pronto para continuar sua jornada de integração revisando em seguida o documento [Acessar o Cloud Manager](cloud-manager.md), no qual você aprenderá a acessar o Cloud Manager e criar os recursos do projeto.
 
 ## Recursos adicionais {#additional-resources}
 

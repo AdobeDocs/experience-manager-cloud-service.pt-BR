@@ -57,7 +57,7 @@ O Cloud Manager é usado para administrar os recursos de nuvem que dão suporte 
 
 >[!TIP]
 >
->Se quiser conhecer o Cloud Manager em detalhes, consulte [Recursos adicionais](#additional-resources) deste artigo para obter links para mais informações.
+>Se quiser conhecer o Cloud Manager em detalhes, consulte a seção [Recursos adicionais](#additional-resources) deste artigo e obtenha links para mais informações.
 
 ### Programas {#programs}
 

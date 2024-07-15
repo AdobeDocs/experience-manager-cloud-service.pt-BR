@@ -41,7 +41,7 @@ Sem Fragmentos de experiência, o autor precisaria copiar e colar esse fragmento
 Os fragmentos de experiência eliminam a necessidade de copiar/colar.
 * Para dar suporte ao caso de uso de CMS sem periféricos.
 Os autores desejam usar o AEM somente para criação, não para entrega ao cliente. Um sistema/ponto de contato de terceiros consumiria essa experiência e depois a entregaria ao usuário.
-* Com [Gerenciamento de vários sites (MSM)](/help/sites-cloud/administering/msm/overview.md); como um Fragmento de experiência faz parte de uma página. Isso se aplica aos fragmentos individuais e às pastas em que eles residem.
+* Com o [Gerenciamento de vários sites (MSM)](/help/sites-cloud/administering/msm/overview.md); o como um Fragmento de experiência faz parte de uma página. Isso se aplica aos fragmentos individuais e às pastas em que eles residem.
 
 >[!NOTE]
 >
@@ -243,7 +243,7 @@ Por exemplo: `http://<host>:<port>/editor.html/content/experience-fragments/wknd
 
      >[!NOTE]
      >
-     >Criar uma variação inicial como Live Copy herdará o título usando a Origem da Live Copy como a Variação principal.
+     >Criar uma variação inicial como Live Copy herdará o título usando a Source da Live Copy como a variação principal.
 
 1. Defina as propriedades necessárias:
 
@@ -373,7 +373,7 @@ Para personalizar o fragmento:
    >
    >* um caminho que contenha um subconjunto dos armazenamentos definidos no ContextHub configurado para a página
    >
-   >A variável **Caminho de segmentos** selecionado na **Personalização** deve ser:
+   >O **Caminho dos Segmentos** selecionado na guia **Personalization** deve ser:
    >
    >* o mesmo caminho que o configurado para a página em que o fragmento é renderizado
    >

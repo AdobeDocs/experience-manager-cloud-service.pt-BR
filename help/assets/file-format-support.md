@@ -1,6 +1,6 @@
 ---
 title: Formatos de arquivo e tipos MIME compatíveis
-description: Formatos de arquivo e tipos MIME aceitos pelo [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
+description: Formatos de arquivo e tipos MIME com suporte no  [!DNL Experience Manager Assets] as a [!DNL Cloud Service].
 contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
@@ -12,19 +12,19 @@ ht-degree: 34%
 
 ---
 
-# [!DNL Assets] formatos de arquivo compatíveis {#supported-file-formats}
+# [!DNL Assets] formatos de arquivo com suporte {#supported-file-formats}
 
-[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] O oferece suporte a recursos básicos de gerenciamento de conteúdo — armazenamento, gerenciamento de metadados on-line, controle de versão, upload e download etc. — para qualquer arquivo binário, independentemente de seu formato. [!DNL Adobe Experience Manager Assets] O é compatível com uma grande variedade de formatos de arquivo e cada recurso do produto oferece suporte para diferentes formatos.
+O [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] oferece suporte a recursos básicos de gerenciamento de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download, etc. — para qualquer arquivo binário, independentemente de seu formato. O [!DNL Adobe Experience Manager Assets] é compatível com uma grande variedade de formatos de arquivo e cada recurso do produto oferece suporte para diferentes formatos.
 
-Além disso, [!DNL Experience Manager Assets] O oferece suporte estendido para gerar visualizações e representações e extrair metadados e texto para indexação de texto completo. Esse suporte estendido é fornecido usando [microsserviços de ativos](asset-microservices-configure-and-use.md).
+Além disso, o [!DNL Experience Manager Assets] oferece suporte estendido para gerar visualizações e representações e para extrair metadados e texto para indexação de texto completo. Este suporte estendido é fornecido usando os [microsserviços de ativos](asset-microservices-configure-and-use.md).
 
 Os destaques da conversão de ativos usando microsserviços de ativos incluem:
 
-* Chave [formatos de arquivo Adobe](#adobe-formats) produzidos por aplicações e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension], e [!DNL Adobe Acrobat] ou PDF.
-* Chave [formatos de arquivo de imagem](#image-formats).
-* [Formatos de arquivo Camera Raw](#camera-raw-formats) para uma ampla variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (equipados pela Adobe Camera Raw).
-* Comum [formatos de documento](#document-formats), incluindo os formatos Microsoft® Office e Open Document.
-* Ampla variedade de [vídeo](#video-formats) e [áudio](#audio-formats) formatos.
+* Formatos de arquivo [Adobe](#adobe-formats) de chave produzidos por aplicativos e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] ou PDF.
+* [formatos de arquivo de imagem](#image-formats) da chave.
+* [Formatos Camera Raw](#camera-raw-formats) para uma grande variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (com tecnologia da Adobe Camera Raw).
+* Formatos de documento [comuns](#document-formats), incluindo os formatos Microsoft® Office e Open Document.
+* Ampla variedade de formatos de [vídeo](#video-formats) e [áudio](#audio-formats).
 
 A legenda a seguir descreve o nível de suporte para cada formato.
 
@@ -51,7 +51,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Para [!DNL Adobe InDesign] (INDD), o tamanho das representações é determinado pela pré-visualização incorporada no arquivo INDD. Configure as preferências no [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de arquivo > Sempre salvar imagens de visualização com documentos, Tamanho da visualização]**) para que você possa incorporar representações maiores.
+\* Para arquivos [!DNL Adobe InDesign] (INDD), o tamanho das representações é determinado pela pré-visualização incorporada ao arquivo INDD. Configure as preferências em [!DNL InDesign] (**[!UICONTROL Preferências > Manuseio de Arquivo > Sempre Salvar Imagens de Visualização com Documentos, Tamanho de Visualização]**) para que você possa incorporar representações maiores.
 
 ## Formatos de imagem {#image-formats}
 
@@ -175,7 +175,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 ## Formatos de áudio {#audio-formats}
 
-[!DNL Assets] as a [!DNL Cloud Service] O fornece suporte à extração de metadados de XMP para os formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
+O [!DNL Assets] as a [!DNL Cloud Service] fornece suporte para extração de metadados XMP para os formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
 
 ## Formatos de entrada compatíveis com a transcrição de áudio e vídeo {#audio-video-transcription-formats}
 
@@ -229,23 +229,23 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 | Formato | Upload (formato de entrada) | Criar predefinição de imagem (Formato de saída) | Visualizar representação dinâmica | Entregar representação dinâmica | Baixar representação dinâmica | Definir tipos que oferecem suporte a este formato |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | − | − | − | ✓ | − | − |
-| BMP | ✓ | − | − | − | − | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mix de mídia](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | − | − | − | − | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md) e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
 | [EPS](/help/assets/dynamic-media/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | HEIC | − | − | − | ✓ | − | − |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mix de mídia](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md) e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mix de mídia](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md) e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
 | PSD ‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mix de mídia](/help/assets/dynamic-media/mixed-media-sets.md), e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Imagem](/help/assets/dynamic-media/image-sets.md), [Mídia mista](/help/assets/dynamic-media/mixed-media-sets.md) e [Rotação](/help/assets/dynamic-media/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
-‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e está incluído no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
+‡ A imagem mesclada é extraída do arquivo PSD. É uma imagem gerada por [!DNL Adobe Photoshop] e incluída no arquivo PSD. Dependendo das configurações, a imagem mesclada pode ou não ser a imagem real.
 
 ## Dynamic Media - Formatos de imagem rasterizada não aceitos {#unsupported-raster-image-formats-dm}
 
-Os seguintes subtipos de formatos de arquivos de imagens de varredura *não* compatível com o [!DNL Dynamic Media]:
+Os seguintes subtipos de formatos de arquivo de imagem rasterizada que *não* têm suporte no [!DNL Dynamic Media]:
 
 * Arquivos PNG com tamanho de bloco IDAT maior que 100 MB.
 * Arquivos PSB.
@@ -256,14 +256,14 @@ Os seguintes subtipos de formatos de arquivos de imagens de varredura *não* com
 
 ## Dynamic Media - Formatos de arquivo 3D compatíveis {#support-3d-formats-dynamic-media}
 
-Consulte também [Formatos 3D compatíveis](/help/assets/file-format-support.md#support-3d-formats)
+Consulte também [formatos 3D compatíveis](/help/assets/file-format-support.md#support-3d-formats)
 
 | Extensão de arquivo 3D | Formato do arquivo | Tipo MIME | Notas |
 |---|---|---|---|
 | GLB | Transmissão GL Binária | model/gltf-binary | Inclui os materiais e texturas como um único ativo. |
 | OBJ | Arquivo de objeto 3D do WaveFront | application/x-tgif | |
 | STL | Estereolitografia | application/vnd.ms-pki.stl | |
-| USDZ | Arquivo Zip de Descrição de Cena Universal | model/vnd.usdz+zip | *Suporte para geração de assimilação e miniatura; visualizações 3D ainda não compatíveis.* USDZ é um formato 3D que pode ser visualizado nativamente pelo Safari ou iOS. |
+| USDZ | Arquivo Zip de Descrição de Cena Universal | model/vnd.usdz+zip | *Suporte para assimilação e geração de miniaturas; ainda não há suporte para visualizações 3D.* USDZ é um formato 3D que pode ser visualizado nativamente pelo Safari ou iOS. |
 
 **Consulte também**
 
@@ -278,9 +278,9 @@ Consulte também [Formatos 3D compatíveis](/help/assets/file-format-support.md#
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Processamento de ativos usando microsserviços de ativos](asset-microservices-overview.md).
->* [Formatos de arquivo compatíveis com a marcação inteligente de ativos baseados em texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Formatos de arquivo com suporte para marcação inteligente de ativos baseados em texto](/help/assets/smart-tags.md#smart-tags-supported-file-formats)

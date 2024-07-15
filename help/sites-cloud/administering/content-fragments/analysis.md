@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Análise da estrutura do fragmento de conteúdo {#analyzing-content-fragments-structure}
 
-Os fragmentos de conteúdo foram criados para [Entrega headless usando o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). Isso significa que eles podem ter uma estrutura de várias camadas.
+Os Fragmentos de conteúdo foram criados para [entrega headless usando o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md). Isso significa que eles podem ter uma estrutura de várias camadas.
 
 O Experience Manager (AEM) fornece vários métodos de visualização e análise da estrutura dos fragmentos.
 
@@ -29,8 +29,8 @@ A estrutura de várias camadas é criada usando Referências:
 
 ## Árvore de estrutura {#structure-tree}
 
-Abra o **Árvore de estrutura** na barra de ferramentas do editor para mostrar a estrutura hierárquica do fragmento de conteúdo e suas referências. Use o ícone de link para abrir referências.
+Abra a guia **Árvore de estrutura** na barra de ferramentas do editor para mostrar a estrutura hierárquica do fragmento de conteúdo e suas referências. Use o ícone de link para abrir referências.
 
 Por exemplo:
 
-![Editor de fragmento de conteúdo — Árvore de estrutura](assets/cf-authoring-structure-tree.png)
+![Editor de fragmento de conteúdo - Árvore de estrutura](assets/cf-authoring-structure-tree.png)

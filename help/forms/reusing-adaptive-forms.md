@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Reutilizar propriedades de metadados de um Formulário adaptável {#reusing-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 
 | Versão | Link do artigo |
@@ -32,7 +32,7 @@ Se você quiser usar algumas das propriedades de um Formulário adaptável exist
 
 Copie um formulário adaptável usando uma das seguintes abordagens:
 
-1. Clique em copiar ![aem6forms_copy](assets/aem6forms_copy.png) ícone de Ações rápidas.
+1. Clique no ícone copiar ![aem6forms_copy](assets/aem6forms_copy.png) de Ações rápidas.
 
    >[!NOTE]
    >
@@ -40,7 +40,7 @@ Copie um formulário adaptável usando uma das seguintes abordagens:
 
 1. Selecione o Formulário adaptável. O processo de seleção é diferente para diferentes exibições.
 
-   Se você estiver na exibição de cartão, acesse o modo de seleção clicando na seleção ![aem6forms_check-circle](assets/aem6forms_check-circle.png) e clique em todas as Forms adaptáveis que deseja copiar.
+   Se você estiver na exibição de cartão, vá para o modo de seleção clicando no ícone de seleção ![aem6forms_check-circle](assets/aem6forms_check-circle.png) e clique em todas as Forms adaptáveis que deseja copiar.
 
    Se você estiver na exibição em lista, clique nas caixas de seleção de todas as Forms adaptáveis para selecioná-las.
 
@@ -48,15 +48,15 @@ Copie um formulário adaptável usando uma das seguintes abordagens:
    >
    >Todos os ativos selecionados devem ser do Adaptive Forms, pois a funcionalidade de copiar e colar é compatível somente com o Adaptive Forms, e todos os ativos selecionados devem estar presentes na mesma pasta.
 
-   Depois de selecionar os ativos, clique na cópia ![aem6forms_copy](assets/aem6forms_copy.png) ícone presente na barra de ferramentas para copiar o formulário adaptável selecionado.
+   Depois de selecionar os ativos, clique no ícone copiar ![aem6forms_copy](assets/aem6forms_copy.png) presente na barra de ferramentas para copiar o formulário adaptável selecionado.
 
 ## Colar um formulário adaptável {#paste-an-adaptive-form}
 
-Clicar na ação de cópia sai automaticamente do modo de seleção e faz a colagem ![Colar](assets/Smock_Paste_18_N.svg) ícone visível. Agora vá para o caminho de pasta desejado e clique no botão ![Colar](assets/Smock_Paste_18_N.svg) ícone para colar o Formulário adaptável copiado.
+Clicar na ação de cópia sai automaticamente do modo de seleção e torna visível o ícone Colar ![Colar](assets/Smock_Paste_18_N.svg). Agora vá para o caminho de pasta desejado e clique no ícone Colar ![Colar](assets/Smock_Paste_18_N.svg) para colar o Formulário adaptável copiado.
 
 Se você estiver colando na mesma pasta ou se outro arquivo com o mesmo nome de nó (com o qual ele é armazenado no repositório do CRX) existir nessa pasta de destino, 1 será anexado ao sufixo (por exemplo, myaf torna-se myaf1 e se myaf1 existe no mesmo local, myaf torna-se myaf2. Todas as outras propriedades permanecem iguais ao Formulário adaptável original.
 
-Depois de clicar no botão Colar ![Colar](assets/Smock_Paste_18_N.svg) ícone, ele ficará oculto novamente. De uma só vez, só é possível colar uma vez. Para criar uma cópia do mesmo ativo novamente, copie-a novamente.
+Depois de clicar no ícone Colar ![Colar](assets/Smock_Paste_18_N.svg), ele ficará oculto novamente. De uma só vez, só é possível colar uma vez. Para criar uma cópia do mesmo ativo novamente, copie-a novamente.
 
 ## Alterar conteúdo do novo Formulário adaptável {#change-contents-of-new-adaptive-form}
 
@@ -64,11 +64,11 @@ O conteúdo de um Forms adaptável colado pode ser alterado usando as seguintes 
 
 1. **Alterar propriedades de metadados:**
 
-   É possível alterar as propriedades de metadados do Formulário adaptável, por exemplo, título e descrição. Para obter mais detalhes sobre as propriedades de metadados e como elas podem ser alteradas, consulte [Gerenciamento de metadados de formulário](manage-form-metadata.md)
+   É possível alterar as propriedades de metadados do Formulário adaptável, por exemplo, título e descrição. Para obter mais detalhes sobre as propriedades dos metadados e como eles podem ser alterados, consulte [Gerenciando Metadados de Formulário](manage-form-metadata.md)
 
 1. **Alterar XFA/XSD para Forms adaptável baseado em XFA/XSD:**
 
-   Você pode alterar o XFA/XSD usado no Adaptive Forms. Para saber como esses Forms adaptáveis podem ser alterados, consulte [Gerenciamento de metadados de formulário](manage-form-metadata.md)
+   Você pode alterar o XFA/XSD usado no Adaptive Forms. Para saber como essas Forms adaptáveis podem ser alteradas, consulte [Gerenciamento de metadados de formulário](manage-form-metadata.md)
 
 1. **Republicar:**
 

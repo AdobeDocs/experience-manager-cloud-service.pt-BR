@@ -19,7 +19,7 @@ Você pode determinar o status do seu nome de domínio personalizado no Cloud Ma
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 
@@ -87,7 +87,7 @@ O erro é corrigido da seguinte maneira:
 
 ## Configurações de CDNs pré-existentes para nomes de domínio personalizados {#pre-existing-cdn}
 
-Se você tiver uma configuração de CDN pré-existente para seus nomes de domínio personalizados, há uma mensagem informativa no **Nomes de domínio personalizados** e **Ambiente** , incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
+Se você tiver uma configuração de CDN pré-existente para seus nomes de domínio personalizados, há uma mensagem informativa nas páginas **Nomes de domínio personalizados** e **Ambiente** incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
 
 A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário. Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 

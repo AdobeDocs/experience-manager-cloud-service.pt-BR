@@ -38,4 +38,4 @@ Para contornar isso, defina o atributo de cookie SameSite como `None` para o tok
 1. Gere as configurações de formato JSON para essa configuração específica seguindo as etapas descritas em [Gerar configurações OSGi usando o Quickstart do SDK do AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)
 1. Aplique as configurações seguindo as etapas da documentação do OSGi [Formato de API do Cloud Manager para propriedades de configuração](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties).
 
-Depois que esta configuração for atualizada e os usuários forem desconectados e conectados novamente, `login-token` os cookies têm o `None` atributo definido e incluído em solicitações entre sites.
+Depois que esta configuração for atualizada e os usuários forem desconectados e conectados novamente, os cookies do `login-token` terão o atributo `None` definido e serão incluídos em solicitações entre sites.

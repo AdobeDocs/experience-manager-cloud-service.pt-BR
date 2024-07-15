@@ -27,7 +27,7 @@ Este guia aborda os tópicos mais importantes de criação do AEM Content and Co
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio sobre o tópico ou AEM.
+[Uma Jornada de Documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
 
 As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 

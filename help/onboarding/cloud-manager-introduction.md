@@ -34,7 +34,7 @@ Também é possível navegar até a página Programas e produtos do Cloud Manage
 
 1. Selecione **Experience Manager**.
 
-1. No **Cloud Manager** , clique em **Launch**
+1. No cartão **Cloud Manager**, clique em **Iniciar**
 
 ## Permissões com base em funções no Cloud Manager {#role-based-permissions}
 

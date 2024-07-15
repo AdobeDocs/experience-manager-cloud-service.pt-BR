@@ -23,7 +23,7 @@ Você pode usar um dos seguintes métodos para criar painéis repetíveis:
 
 ## Usando o Instance Manager por meio de scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. No modo de edição, selecione um painel e, em seguida, ![cmppr](assets/cmppr.png). Na barra lateral, em Propriedades, ative **[!UICONTROL Tornar o painel repetível]**. Especifique valores para o **[!UICONTROL Máximo]** e **[!UICONTROL Mínimo]** campos.
+1. No modo de edição, selecione um painel e, em seguida, selecione ![cmppr](assets/cmppr.png). Na barra lateral, em Propriedades, habilite **[!UICONTROL Tornar o Painel Repetível]**. Especifique valores para os campos **[!UICONTROL Máximo]** e **[!UICONTROL Mínimo]**.
 
    O campo Máximo especifica o número máximo de vezes que um painel pode aparecer na página. Você pode especificar -1 no campo Contagem máxima para permitir que o painel apareça por um número infinito de vezes.
 
@@ -38,24 +38,24 @@ Você pode usar um dos seguintes métodos para criar painéis repetíveis:
    1. Na barra lateral, arraste e solte um componente de botão no pai do painel. Selecione o componente e selecione ![edit-rules](assets/edit-rules.png). As regras do botão são abertas no editor de regras.
    1. Na janela Editor de regras, clique em **Criar**.
 
-      Selecionar **Editor visual** na linha Objetos de formulário e Funções.
+      Selecione o **Editor Visual** na linha Objetos de Formulário e Funções.
 
-      1. Na área regra, em QUANDO, selecione estado **foi clicado**.
+      1. Na área de regras, em QUANDO, selecione o estado **é clicado**.
       1. Em THEN:
 
-         * Para criar um botão adicionar painel, selecione **Adicionar instância** e arraste e solte o painel usando ![ativar/desativar painel lateral](assets/toggle-side-panel.png) ou selecione-o usando **Solte o objeto ou selecione aqui.**
-         * Para criar um botão de exclusão do painel, selecione **Remover Instância** e arraste e solte o painel usando ![ativar/desativar painel lateral](assets/toggle-side-panel.png) ou selecione-o usando **Solte o objeto ou selecione aqui.**
+         * Para criar um botão adicionar painel, selecione **Adicionar Instância** e arraste e solte o painel usando ![alternar painel lateral](assets/toggle-side-panel.png) ou selecione-o usando **Soltar objeto ou selecione aqui.**
+         * Para criar um botão de exclusão do painel, selecione **Remover instância** e arraste e solte o painel usando ![alternar painel lateral](assets/toggle-side-panel.png) ou selecione-o usando **Soltar objeto ou selecione aqui.**
 
-      Selecionar **Editor de código** na linha Objetos de formulário e Funções. Clique em **Editar regras** e na área de código:
+      Selecione o **Editor de Código** na linha Objetos de Formulário e Funções. Clique em **Editar regras** e na área de código:
 
-      * Para criar um botão Adicionar painel, especifique `this.panel.instanceManager.addInstance()`
+      * Para criar um botão adicionar painel, especifique `this.panel.instanceManager.addInstance()`
       * Para criar um botão de exclusão do painel, especifique `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
 
       Clique em **Concluído**.
 
       >[!NOTE]
       >
-      >Se um campo pertencer a um painel repetível, você não poderá acessá-lo diretamente usando seu nome nos scripts. Para acessar o campo, especifique a instância repetível à qual o campo pertence usando o `instances` API em `InstanceManager`. A sintaxe para usar o `instances` API em `InstanceManager` é:
+      >Se um campo pertencer a um painel repetível, você não poderá acessá-lo diretamente usando seu nome nos scripts. Para acessar o campo, especifique a instância repetível à qual o campo pertence usando a API `instances` em `InstanceManager`. A sintaxe para usar a API `instances` em `InstanceManager` é:
       >
       >
       >`<panelName>.instanceManager.instances[<instanceNumber>].<fieldname>`
@@ -85,7 +85,7 @@ Você pode usar um dos seguintes métodos para criar painéis repetíveis:
       >`Panel1.instanceManager.instances[1].textbox.value`
       >
       >
-      >Para obter mais informações, consulte: Classe: InstanceManager#instances em [Referência da API Java do AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63).
+      >Para obter mais informações, consulte: Classe: InstanceManager#instances em [Referência à API Java do AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63).
 
       >[!NOTE]
       >
@@ -95,14 +95,14 @@ Você pode usar um dos seguintes métodos para criar painéis repetíveis:
 
 Um painel tem várias opções de layout. A opção Layout para design do Accordion tem suporte pronto para uso para painéis repetíveis. Execute as seguintes etapas para repetir o painel com a opção Layout para design de acordeão:
 
-1. No pai do painel a ser repetido, selecione ![cmppr](assets/cmppr.png). Você pode ver as propriedades na barra lateral. No **Layout** selecione **Acordeão**.
-1. Em um painel, que deve ser repetido, selecione ![cmppr](assets/cmppr.png). Você pode ver as propriedades do painel na barra lateral. Ativar o **Tornar o painel repetível** e especifique os valores para a variável **Máximo** e **Mínimo** campos.
+1. No pai do painel a ser repetido, selecione ![cmppr](assets/cmppr.png). Você pode ver as propriedades na barra lateral. No menu suspenso **Layout**, selecione **Acordeão**.
+1. Em um painel a ser repetido, selecione ![cmppr](assets/cmppr.png). Você pode ver as propriedades do painel na barra lateral. Habilite a guia **Tornar o Painel Repetível** e especifique valores para os campos **Máximo** e **Mínimo**.
 
-   Agora, você pode usar o sinal de mais (+) e excluir ( ![delete-panel](assets/delete-panel.png)) para adicionar e remover os painéis.
+   Agora, você pode usar os botões de adição (+) e exclusão ( ![delete-panel](assets/delete-panel.png)) para adicionar e remover os painéis.
 
 ## Uso de subformulários repetidos do Modelo de formulário (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
-O subformulário repetível é semelhante aos painéis repetíveis no Adaptive Forms. Entrada [!DNL AEM Forms] Designer, execute as seguintes etapas para criar um subformulário repetitivo:
+O subformulário repetível é semelhante aos painéis repetíveis no Adaptive Forms. No Designer [!DNL AEM Forms], execute as seguintes etapas para criar um subformulário de repetição:
 
 1. Na paleta Hierarquia, selecione o subformulário pai do subformulário que deseja repetir.
 1. Na paleta Objeto, clique na guia Subformulário e, na lista Conteúdo, selecione Fluxo.
@@ -113,7 +113,7 @@ O subformulário repetível é semelhante aos painéis repetíveis no Adaptive F
 1. Para especificar o número máximo de repetições do subformulário, selecione Máximo e digite um número na caixa associada. Se você não especificar um valor na caixa Máx., o número de repetições de subformulário será ilimitado.
 1. Para especificar um número definido de repetições de subformulário, independentemente da quantidade de dados, selecione Contagem inicial e digite um número na caixa associada. Se você selecionar essa opção e não houver dados disponíveis ou houver menos entradas de dados do que o valor de Contagem inicial especificado, instâncias vazias do subformulário ainda serão colocadas no formulário.
 1. Adicione dois botões no subformulário pai — um para adicionar instância e outro para excluir a instância de um subformulário repetível. Para obter etapas detalhadas, consulte [Criar uma ação](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
-1. Agora, vincule o Modelo de formulário ao Formulário adaptável. Para obter etapas detalhadas, consulte [Criar um formulário adaptável com base em um modelo](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
+1. Agora, vincule o Modelo de formulário ao Formulário adaptável. Para obter etapas detalhadas, consulte [Criar um Formulário adaptável com base em um modelo](creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Use os botões criados na etapa 9 para adicionar e remover subformulários.
 
 O arquivo .zip anexado contém uma amostra de subformulário repetível.
@@ -122,9 +122,9 @@ O arquivo .zip anexado contém uma amostra de subformulário repetível.
 
 ## Usando configurações de repetição de um Esquema XML (XSD) {#using-repeat-settings-of-an-xml-schema-xsd-br}
 
-Você pode criar painéis repetíveis de um Esquema XML e da propriedade minOccours &amp; maxOccurs de qualquer elemento de tipo complexo. Para obter informações detalhadas sobre o Esquema XML, consulte [Criar Forms adaptável usando o esquema XML como modelo de formulário](adaptive-form-xml-schema-form-model.md).
+Você pode criar painéis repetíveis de um Esquema XML e da propriedade minOccours &amp; maxOccurs de qualquer elemento de tipo complexo. Para obter informações detalhadas sobre o Esquema XML, consulte [Criar Forms Adaptável usando Esquema XML como Modelo de Formulário](adaptive-form-xml-schema-form-model.md).
 
-No código a seguir, a variável `SampleType`O painel usa a propriedade minOccours &amp; maxOccurs.
+No código a seguir, o painel `SampleType` usa a propriedade minOccours &amp; maxOccurs.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -173,4 +173,4 @@ No código a seguir, a variável `SampleType`O painel usa a propriedade minOccou
 
 >[!MORELIKETHIS]
 >
->* [Criar formulários com seções repetíveis nos Componentes principais do formulário adaptável](/help/forms/create-forms-repeatable-sections.md)
+>* [Criar formulários com seções repetíveis nos Componentes principais do Formulário Adaptável](/help/forms/create-forms-repeatable-sections.md)

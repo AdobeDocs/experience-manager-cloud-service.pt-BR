@@ -1,23 +1,23 @@
 ---
-title: Notas de versão as a Cloud Service do AEM Forms
+title: Notas de versão do AEM Forms as a Cloud Service
 description: Saiba mais sobre novos recursos, versões beta, informações de pré-lançamento e muito mais sobre o AEM Forms as a Cloud Service.
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
 workflow-type: tm+mt
-source-wordcount: '2024'
+source-wordcount: '2003'
 ht-degree: 16%
 
 ---
 
 
-# [!DNL Experience Manager Forms] Nota de versão as a Cloud Service {#overview}
+# Nota de versão as a Cloud Service do [!DNL Experience Manager Forms] {#overview}
 
-Adobe Experience Manager [!DNL AEM Forms] O as a Cloud Service recebe melhorias continuamente. Para se manter atualizado com os desenvolvimentos mais recentes, visite esta página regularmente. Esta página fornece informações sobre:
+O Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service recebe melhorias continuamente. Para se manter atualizado com os desenvolvimentos mais recentes, visite esta página regularmente. Esta página fornece informações sobre:
 
 - Novos recursos
 - Melhorias
 - Recursos de pré-lançamento
-- Recursos beta
+- Recursos do Beta
 - Correções de erros
 - Funcionalidade obsoleta
 - Instruções especiais
@@ -25,50 +25,50 @@ Adobe Experience Manager [!DNL AEM Forms] O as a Cloud Service recebe melhorias 
 
 >[!NOTE]
 >
->Para obter as notas de versão de todos os outros componentes de lançamento as a Cloud Service do AEM, consulte [Notas de versão atuais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+>Para obter as notas de versão de todos os outros componentes da versão do AEM as a Cloud Service, consulte [Notas de versão atuais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
 
 ## 2021.10.0 {#sep-2021-10-0}
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms-oct-2021}
 
-- **Analytics para Forms adaptável**: agora é possível capturar e rastrear o comportamento de conectado e não conectado (anônimo) por meio do Adobe Analytics para Adaptive Forms para coletar insights do usuário. Ele ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário.
+- **Analytics para Adaptive Forms**: agora é possível capturar e rastrear o comportamento de logado e não conectado (Anônimo) via Adobe Analytics para Adaptive Forms para coletar insights do usuário. Ele ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
 - **Externalizar dados do fluxo de trabalho do AEM para processamento seguro**: Você pode armazenar dados de fluxos de trabalho em andamento do AEM (dados de variáveis de fluxo de trabalho do AEM) que contêm elementos de Dados pessoais sensíveis (SPD) em um repositório gerenciado pelo cliente para processamento seguro. Os elementos de dados e as variáveis de fluxo de trabalho não são armazenados no repositório do AEM e são buscados sob demanda de um repositório gerenciado pelo cliente durante o processamento do fluxo de trabalho.
 
-### Recursos beta do [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
+### Recursos do Beta de [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](aem-forms-cloud-service-communications.md) ajudam a combinar um modelo e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modos síncronos e em lote. As APIs permitem criar aplicativos que possibilitam a você:
 
    - Gerar documentos preenchendo arquivos de modelo (PDF e XDP) com dados XML.
    - Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
 
-Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no programa beta.
+Você pode enviar um email a [!DNL formscsbeta@adobe.com] para se cadastrar no programa beta.
 
 ## 2021.9.0 {#sep-2021-09-0}
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms-sep-2021}
 
-- **Usar funções do Adobe Sign em um formulário adaptável**: a Adobe Sign para níveis de serviço corporativo e comercial tem a opção de expandir as funções para os recipients do Contrato, além apenas do Signatário, para melhor corresponder aos requisitos de fluxo de trabalho. Agora você pode [habilitar cada destinatário do contrato para configurar sua função em um Formulário adaptável](working-with-adobe-sign.md#addsignerstoanadaptiveform), sendo Signatário a função padrão.
+- **Usar funções do Adobe Sign em um Formulário adaptável**: os níveis de serviço corporativo e empresarial do Adobe Sign têm a opção de expandir as funções para os destinatários do Contrato, além apenas do Signatário, para melhor corresponder aos requisitos de fluxo de trabalho. Agora você pode [habilitar cada destinatário do contrato para configurar sua função em um Formulário Adaptável](working-with-adobe-sign.md#addsignerstoanadaptiveform), sendo que Signatário é a função padrão.
 
-- **Analytics para Forms adaptável**: Agora você pode capturar e [rastrear o comportamento do usuário por meio do Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) para o Adaptive Forms para coletar insights do usuário. Ele ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário.
+- **Analytics para Forms Adaptável**: agora você pode capturar e [rastrear o comportamento do usuário por meio do Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) para Forms Adaptável para coletar insights do usuário. Ele ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário.
 
-- **Conecte facilmente o AEM Forms com o Microsoft Dynamics e o Salesforce**: o serviço fornece configuração de fonte de dados pronta para uso e modelos de dados para o Microsoft Dynamics e Salesforce, tornando-o [para os desenvolvedores, mais rápido e fácil configurar o Microsoft Dynamics e o Salesforce como fontes de dados para um formulário adaptável](configure-msdynamics-salesforce.md).
+- **Conecte facilmente o AEM Forms com o Microsoft Dynamics e o Salesforce**: o serviço fornece configuração de fonte de dados pronta para uso e modelos de dados para o Microsoft Dynamics e o Salesforce, tornando [mais rápido e fácil para os desenvolvedores configurarem o Microsoft Dynamics e o Salesforce como fontes de dados para um formulário adaptável](configure-msdynamics-salesforce.md).
 
 - **Assine eletronicamente um formulário adaptável usando o DocuSign:** [Você pode usar o DocuSign para assinar eletronicamente um formulário adaptável](integrate-docusign-adaptive-forms.md). O serviço fornece uma ação de envio personalizada para usar o DocuSign com um formulário adaptável.
 
-### Recursos beta do [!DNL Forms] {#sep-what-is-new-forms-prerelease}
+### Recursos do Beta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-- **Conector de armazenamento unificado:** Use o Conector de armazenamento unificado para externalizar dados em processamento em repositórios gerenciados pelo cliente. Por exemplo, você pode armazenar dados de fluxos de trabalho de AEM em andamento (dados de variáveis de fluxo de trabalho de AEM) que contenham Dados pessoais confidenciais (SPD) em um repositório gerenciado pelo cliente.
+- **Conector de armazenamento unificado:** use o Conector de armazenamento unificado para externalizar dados em processamento para repositórios gerenciados pelo cliente. Por exemplo, você pode armazenar dados de fluxos de trabalho de AEM em andamento (dados de variáveis de fluxo de trabalho de AEM) que contenham Dados pessoais confidenciais (SPD) em um repositório gerenciado pelo cliente.
   <!--* Enable Forms Portal's save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](aem-forms-cloud-service-communications.md) Ajudar a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](aem-forms-cloud-service-communications.md) ajudam a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
    - Gerar documentos preenchendo arquivos de modelo com dados XML.
    - Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
    - Gere arquivos de PDF de impressão a partir de um PDF de formulário XFA e do formulário Adobe Acrobat.
 
-Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no programa beta.
+Você pode enviar um email a [!DNL formscsbeta@adobe.com] para se cadastrar no programa beta.
 
 ### Limitações {#limitations}
 
@@ -100,52 +100,52 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-- O projeto do Arquétipo AEM para o Forms as a Cloud Service agora inclui [modelos de dados de formulário do Microsoft Dynamics e Salesforce](setup-local-development-environment.md).
+- O projeto do Arquétipo AEM para Forms as a Cloud Service inclui [modelos de dados de formulário para o Microsoft Dynamics e o Salesforce](setup-local-development-environment.md).
 
-- **Documento de registro baseado em acroforma**: o AEM Forms as a Cloud Service suporta o uso de [PDF do Adobe Acrobat Form (Acroform PDF)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) como um modelo para o Documento de registro além do modelo de formulário baseado em XFA.
+- **Documento de Registro baseado em acroforma**: o AEM Forms as a Cloud Service suporta o uso do [PDF de Formulário Adobe Acrobat (PDF de acroforma)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) como um modelo para Documento de Registro além do modelo de formulário baseado em XFA.
 
-- **Conector do armazenamento de dados do Microsoft Azure**: Agora você pode [conectar o Modelo de dados do formulário ao Armazenamento do Microsoft Azure](configure-azure-storage.md). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft Azure como um BLOB.
+- **Conector do armazenamento de dados do Microsoft Azure**: agora é possível [conectar o Modelo de Dados de Formulário ao Armazenamento do Microsoft Azure](configure-azure-storage.md). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft Azure como um BLOB.
 
-### Recurso beta do [!DNL Forms] {#aug-what-is-new-forms-prerelease}
+### Recurso Beta de [!DNL Forms] {#aug-what-is-new-forms-prerelease}
 
-- **Conector de armazenamento unificado:** Use o Conector de armazenamento unificado para externalizar dados em processamento em repositórios gerenciados pelo cliente. Por exemplo, você pode
+- **Conector de armazenamento unificado:** use o Conector de armazenamento unificado para externalizar dados em processamento para repositórios gerenciados pelo cliente. Por exemplo, você pode
 
    - Habilite a funcionalidade de salvar e retomar do Forms Portal e armazene rascunhos de formulários adaptáveis em um repositório de dados gerenciado pelo cliente.
    - Armazene dados de fluxos de trabalho em andamento do AEM (dados de variáveis do fluxo de trabalho AEM) que contenham Dados pessoais confidenciais (SPD) em um repositório gerenciado pelo cliente.
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](aem-forms-cloud-service-communications.md) Ajudar a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](aem-forms-cloud-service-communications.md) ajudam a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
    - Gerar documentos preenchendo arquivos de modelo com dados XML.
    - Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
    - Gere arquivos de PDF de impressão a partir de um PDF de formulário XFA e do formulário Adobe Acrobat.
 
-Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no programa beta.
+Você pode enviar um email a [!DNL formscsbeta@adobe.com] para se cadastrar no programa beta.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms-aug-2021}
 
-- **Usar funções do Adobe Sign em um formulário adaptável**: a Adobe Sign para níveis de serviço corporativo e comercial tem a opção de expandir as funções para os recipients do Contrato, além apenas do Signatário, para melhor corresponder aos requisitos de fluxo de trabalho. Agora você pode [habilitar cada destinatário do contrato para configurar sua função em um Formulário adaptável](working-with-adobe-sign.md#addsignerstoanadaptiveform), sendo Signatário a função padrão.
+- **Usar funções do Adobe Sign em um Formulário adaptável**: os níveis de serviço corporativo e empresarial do Adobe Sign têm a opção de expandir as funções para os destinatários do Contrato, além apenas do Signatário, para melhor corresponder aos requisitos de fluxo de trabalho. Agora você pode [habilitar cada destinatário do contrato para configurar sua função em um Formulário Adaptável](working-with-adobe-sign.md#addsignerstoanadaptiveform), sendo que Signatário é a função padrão.
 
-- **Analytics para Forms adaptável**: agora é possível capturar e rastrear o comportamento do usuário por meio do Adobe Analytics para Adaptive Forms para coletar insights do usuário. Ele ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário.
+- **Analytics para Forms adaptável**: agora é possível capturar e rastrear o comportamento do usuário por meio do Adobe Analytics para Forms adaptável para coletar insights do usuário. Ele ajuda a tomar decisões informadas com base em dados para melhorar a experiência do usuário.
 
-- **Conecte facilmente o AEM Forms com o Microsoft Dynamics e o Salesforce**: o serviço fornece configuração de fonte de dados pronta para uso e modelos de dados para o Microsoft Dynamics e Salesforce, tornando-o [para os desenvolvedores, mais rápido e fácil configurar o Microsoft Dynamics e o Salesforce como fontes de dados para um formulário adaptável](configure-msdynamics-salesforce.md).
+- **Conecte facilmente o AEM Forms com o Microsoft Dynamics e o Salesforce**: o serviço fornece configuração de fonte de dados pronta para uso e modelos de dados para o Microsoft Dynamics e o Salesforce, tornando [mais rápido e fácil para os desenvolvedores configurarem o Microsoft Dynamics e o Salesforce como fontes de dados para um formulário adaptável](configure-msdynamics-salesforce.md).
 
 ## 2021.7.0 {#july-2021-07-0}
 
 ### Novidades do [!DNL Forms] {#july-what-is-new-forms}
 
-- Agora você pode usar o serviço Automated forms conversion para [converter PDF forms em francês, alemão e espanhol](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) aos formulários adaptáveis.
+- Agora você pode usar o serviço Automated forms conversion para [converter PDF forms em francês, alemão e espanhol](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) para formulários adaptáveis.
 - Adição de um painel separado ao editor de modelo para exibir erros relacionados aos componentes de formulário adaptáveis. Ele ajuda a consolidar todos os erros de formulário adaptável em um local e a reduzir o tempo de resolução.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#july-prerelease-features-forms}
 
-- **Documento de registro baseado em acroforma**: também é possível [usar o PDF do Adobe Acrobat Form (Acroform PDF)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) como um modelo para o Documento de registro além do modelo de formulário baseado em XFA.
+- **Documento de registro baseado em acroforma**: você também pode [usar o PDF do formulário do Adobe Acrobat (PDF de acroforma)](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/create-an-adaptive-form/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) como um modelo para Documento de registro além do modelo de formulário baseado em XFA.
 
-- **Conector do armazenamento de dados do Microsoft Azure**: Agora você pode [conectar o Modelo de dados do formulário ao Armazenamento do Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft Azure como um BLOB.
+- **Conector do armazenamento de dados do Microsoft Azure**: agora é possível [conectar o Modelo de Dados de Formulário ao Armazenamento do Microsoft Azure](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft Azure como um BLOB.
 
-- **Externalizador de dados variáveis**: é possível salvar dados de variáveis de fluxo de trabalho do AEM em um sistema de armazenamento externo gerenciado por sua organização.
+- **Externalizador de Dados de Variáveis**: você pode salvar dados de variáveis de Fluxo de Trabalho do AEM em um sistema de armazenamento externo gerenciado por sua organização.
 
-### Recurso beta do [!DNL Forms] {#july-what-is-new-forms-prerelease}
+### Recurso Beta de [!DNL Forms] {#july-what-is-new-forms-prerelease}
 
-- **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](aem-forms-cloud-service-communications.md) Ajudar a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
+- **[!DNL AEM Forms as a Cloud Service - Communications]**: [APIs de comunicação](aem-forms-cloud-service-communications.md) ajudam a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
    - Gerar documentos preenchendo arquivos de modelo com dados XML.
    - Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
    - Gere arquivos de PDF de impressão a partir de um PDF de formulário XFA e do formulário Adobe Acrobat.
@@ -159,7 +159,7 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
 - Melhoria na velocidade e precisão para detectar automaticamente seções lógicas nos PDF forms de origem e convertê-las em painéis de formulário adaptáveis correspondentes.
 - Adição da ação Mover para mover um arquivo PDF ou XDP de uma pasta para outra.
 
-### Recurso beta do [!DNL Forms] {#june-what-is-new-forms-prerelease}
+### Recurso Beta de [!DNL Forms] {#june-what-is-new-forms-prerelease}
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]**: APIs de comunicação ajudam a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo síncrono. As APIs permitem criar aplicativos que possibilitam a você:
 
@@ -167,9 +167,9 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
    - Gerar formulários de saída em vários formatos, incluindo fluxos de impressão de PDF não interativos.
    - Gere PDF de impressão a partir de um PDF de formulário XFA e do formulário Adobe Acrobat (AcroForm).
 
-- **Externalizador de dados variáveis**: é possível salvar dados de variáveis de fluxo de trabalho do AEM em um sistema de armazenamento externo gerenciado por sua organização.
+- **Externalizador de Dados de Variáveis**: você pode salvar dados de variáveis de Fluxo de Trabalho do AEM em um sistema de armazenamento externo gerenciado por sua organização.
 
-Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no programa beta.
+Você pode enviar um email a [!DNL formscsbeta@adobe.com] para se cadastrar no programa beta.
 
 ### Bugs corrigidos em [!DNL Forms] {#june-forms-bugs-fixed}
 
@@ -182,10 +182,10 @@ Você pode escrever para [!DNL formscsbeta@adobe.com] para se inscrever no progr
 
 ### Novidades do [!DNL Forms] {#may-what-is-new-forms}
 
-- **Ajuda contextual**: adição de ajuda contextual para o editor de formulários adaptáveis, editor de modelo e editor de tema para ajudar os autores a entender melhor vários recursos dos editores.
-- **Mensagens de erro no navegador de propriedades**: Adição de mensagens de erro para cada propriedade no navegador Propriedades adaptáveis do Forms. Essas mensagens ajudam a entender os valores permitidos para um campo.
+- **Ajuda contextual**: adição de ajuda contextual para o editor de formulários adaptáveis, editor de modelos e editor de temas para ajudar os autores a entender melhor vários recursos dos editores.
+- **Mensagens de erro no Navegador de propriedades**: foram adicionadas mensagens de erro para cada propriedade no navegador Propriedades adaptáveis do Forms. Essas mensagens ajudam a entender os valores permitidos para um campo.
 
-### Futuro recurso beta do [!DNL Forms] {#may-what-is-new-forms-prerelease}
+### Próximo recurso beta de [!DNL Forms] {#may-what-is-new-forms-prerelease}
 
 Output as a Cloud Service: o serviço de saída ajuda a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo de lote síncrono e assíncrono. O serviço de saída permite criar aplicativos que permitem:
 
@@ -205,15 +205,15 @@ Você pode enviar um email a formscsbeta@adobe.com para se cadastrar no programa
 
 ### Novidades do [!DNL Forms] {#april-what-is-new-forms}
 
-- **Usar o método de autenticação de ID do governo no Adaptive Forms habilitado para Adobe Sign**
+- **Usar o método de autenticação de ID do governo no Adobe Sign habilitado para o Adaptive Forms**
 
   Alimentado por algoritmos avançados de aprendizado de máquina, o processo de ID do governo da Adobe Sign oferece a empresas do mundo todo a capacidade de garantir uma autenticação de alta qualidade da identidade do recipient. Agora, você pode usar o método de autenticação de ID do governo no Adaptive Forms habilitado para Adobe Sign.
 
-  ID do governo é um método de autenticação de identidade premium que instrui o recipient a [carregar a imagem de um documento de identidade emitido pelo governo (CNH, identificação nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html)e avalia esse documento para garantir sua autenticidade.
+  A ID do governo é um método de autenticação de identidade premium que instrui o destinatário a [carregar a imagem de um documento de identidade emitido pelo governo (CNH, identificação nacional, passaporte)](https://helpx.adobe.com/in/sign/using/adobesign-authentication-government-id.html) e, em seguida, avaliar esse documento para garantir sua autenticidade.
 
 - **Suporte para usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis**
 
-  Agora você pode usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Também é possível incorporar um formulário adaptável em uma [!DNL Experience Manager Sites] e use a experiência de assinatura no formulário para envios de formulários adaptáveis.
+  Agora você pode usar a experiência de assinatura no formulário para envios assíncronos de formulários adaptáveis. Você também pode incorporar um formulário adaptável em uma página [!DNL Experience Manager Sites] e usar a experiência de assinatura no formulário para enviar formulários adaptáveis.
 
 - **Suporte para usar uma variável para especificar um anexo enquanto preenche um formulário adaptável para uma etapa Atribuir tarefa**
 
@@ -223,10 +223,10 @@ Você pode enviar um email a formscsbeta@adobe.com para se cadastrar no programa
 
   Você pode usar a opção literal para definir o valor de uma variável do tipo JSON na etapa Definir variável de um fluxo de trabalho AEM. A opção literal permite especificar um JSON no formato de uma string.
 
-- **Usar o ambiente de desenvolvimento local para criar um Documento de registro (DoR)**
+- **Usar o ambiente de desenvolvimento local para criar o Documento de Registro (DoR)**
 
   Você pode usar um XDP como um modelo de Documento de registro em instâncias do Cloud Service e SDK as a Cloud Service do AEM Forms (Ambiente de desenvolvimento local). Anteriormente, o suporte estava limitado apenas a instâncias Cloud Service.
 
-### Correções de erros no [!DNL Forms] {#april-bug-fixes-forms}
+### Correções de erros em [!DNL Forms] {#april-bug-fixes-forms}
 
 - Quando um Formulário adaptável configurado para não gerar um Documento de registro é enviado a um Fluxo de trabalho do AEM configurado para gerar Documento de registro, nenhuma mensagem de erro é exibida e a tarefa não é enviada.

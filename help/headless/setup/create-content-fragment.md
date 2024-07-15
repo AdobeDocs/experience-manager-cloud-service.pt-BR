@@ -29,7 +29,7 @@ Os autores de conteúdo criarão qualquer quantidade de fragmentos de conteúdo 
 
 1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Navegação** > **Fragmentos de conteúdo**.
 
-1. Selecione o [pasta criada anteriormente.](create-assets-folder.md)
+1. Selecione a [pasta criada anteriormente.](create-assets-folder.md)
 1. Selecione **Criar**.
 1. A criação de um fragmento de conteúdo é apresentada como uma caixa de diálogo.
 Selecione o local e o modelo que deseja usar para criar o fragmento de conteúdo.
@@ -41,7 +41,7 @@ Selecione o local e o modelo que deseja usar para criar o fragmento de conteúdo
 
    ![Caixa de diálogo Criar novo fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. Selecionar **Criar** ou  **Criar e abrir**.
+1. Selecione **Criar** ou **Criar e abrir**.
 
 Os fragmentos de conteúdo podem fazer referência a outros fragmentos de conteúdo, permitindo uma estrutura de conteúdo aninhada, se necessário.
 

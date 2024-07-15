@@ -22,14 +22,14 @@ Juntamente com o exportador JSON atualizado, os fragmentos de conteúdo estrutur
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo são um **Sites** recurso, mas são armazenados como **Assets**.
+>Os fragmentos de conteúdo são um recurso do **Sites**, mas são armazenados como **Assets**.
 >
->Agora, eles são gerenciados principalmente com o **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)** console, embora ainda possam ser gerenciados no **[Assets](/help/assets/content-fragments/content-fragments-managing.md)** console.
+>Agora eles são gerenciados principalmente com o console **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, embora ainda possam ser gerenciados no console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
 >Existem dois editores para a criação de fragmentos de conteúdo:
 >
->* O novo editor para [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), é acessado principalmente pelo **Fragmentos de conteúdo** console.
->* A variável [editor original](/help/assets/content-fragments/content-fragments-variations.md) é acessado principalmente pelo **Assets** console.
+>* O novo editor de [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md) é acessado principalmente do console **Fragmentos de conteúdo**.
+>* O [editor original](/help/assets/content-fragments/content-fragments-variations.md) é acessado principalmente do console **Assets**.
 
 >[!NOTE]
 >
@@ -129,12 +129,12 @@ Na caixa de diálogo de configuração apropriada, é possível selecionar os pa
 
 Quando um fragmento de conteúdo específico for adicionado à página, haverá um espaço reservado para **Arraste os componentes aqui** entre cada parágrafo HTML (e na parte superior/inferior) do fragmento.
 
-Isso permite adicionar conteúdo extra [intermediário (ou seja, conteúdo intermediário)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) o conteúdo do fragmento (em qualquer um dos pontos disponíveis), sem precisar alterar o fragmento raiz.
+Isso permite adicionar conteúdo extra [ao meio (ou seja, conteúdo intermediário)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) ao conteúdo do fragmento (em qualquer um dos pontos disponíveis), sem precisar alterar o fragmento raiz.
 
 Quanto ao conteúdo intermediário, é possível:
 
 * Adicionar componentes do [Navegador de componentes.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Adicionar ativos do [Navegador de ativos.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Adicionar ativos do [navegador Assets.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * Usar [Conteúdo associado](#using-associated-content) como uma origem de conteúdo intermediário.
 
 >[!CAUTION]

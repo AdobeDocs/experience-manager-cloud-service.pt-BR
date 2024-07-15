@@ -31,12 +31,12 @@ Este documento descreve cada um desses blocos de construção e como eles trocam
 
 >[!TIP]
 >
->Para ver o Universal Editor e sua arquitetura em ação, consulte [Introdução ao editor universal no AEM](getting-started.md) para saber como obter acesso ao Universal Editor e como começar a instrumentar seu primeiro aplicativo AEM para usá-lo.
+>Para ver o Editor Universal e sua arquitetura em ação, consulte [Introdução ao Editor Universal no AEM](getting-started.md) para saber como obter acesso ao Editor Universal e como começar a instrumentar seu primeiro aplicativo AEM para usá-lo.
 
 ### Editores {#editors}
 
 * **Editor universal**: o Editor universal usa um DOM instrumentado para permitir a edição local do conteúdo. Consulte o documento [Atributos e tipos](attributes-types.md) para obter detalhes sobre os metadados necessários. Consulte o documento [Introdução ao Editor universal no AEM](getting-started.md) para obter um exemplo da instrumentação no AEM.
-* **Painel Propriedades** - Algumas propriedades dos componentes não podem ser editadas no contexto, por exemplo, o tempo de rotação de um carrossel ou qual guia do acordeão deve ser sempre aberta ou fechada. Para permitir a edição dessas informações de componente, um editor baseado em formulário é fornecido no painel lateral do editor.
+* **Painel de propriedades** - Algumas propriedades dos componentes não podem ser editadas no contexto, por exemplo, o tempo de rotação de um carrossel ou qual guia do acordeão deve ser sempre aberta ou fechada. Para permitir a edição dessas informações de componente, um editor baseado em formulário é fornecido no painel lateral do editor.
 
 ### Aplicativo remoto {#remote-app}
 
@@ -52,7 +52,7 @@ O Editor universal busca manter um SDK simples, portanto, a instrumentação é 
 ### Camada de persistência {#persistence-layer}
 
 * **Modelo de fragmento de conteúdo**: para que o painel permita a edição das propriedades de fragmentos de conteúdo, do Editor de fragmento de conteúdo e dos editores baseados em formulário, são necessários modelos por componente e fragmento de conteúdo.
-* **Conteúdo** - O conteúdo pode ser armazenado em qualquer lugar, como em AEM, Magento e assim por diante.
+* **Conteúdo** - O conteúdo pode ser armazenado em qualquer lugar, por exemplo, em AEM, Magento e assim por diante.
 
 ![Camada de persistência](assets/persistence-layer.png)
 

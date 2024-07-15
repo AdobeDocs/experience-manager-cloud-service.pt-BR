@@ -192,12 +192,12 @@ Em seguida, confirme com **Criar** ou **Criar e abrir**.
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
+>Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
 >
 >Existem dois editores para a criação de fragmentos de conteúdo.
 >
->* O novo editor, acessado principalmente pelo **Fragmentos de conteúdo** console.
->* O editor original, acessado principalmente pelo **Assets** console.
+>* O novo editor, acessado principalmente pelo console **Fragmentos de conteúdo**.
+>* O editor original, acessado principalmente pelo console **Assets**.
 
 Quando o editor for aberto pela primeira vez, você verá:
 
@@ -205,17 +205,17 @@ Quando o editor for aberto pela primeira vez, você verá:
    * um link para o Console de fragmentos de conteúdo (ícone Início)
    * informações sobre o modelo e a pasta
    * links para Visualização; se o Padrão de URL de Visualização Padrão estiver configurado para o modelo
-   * Publicar e Desfazer publicação de ações
-   * uma opção para mostrar tudo **Referências principais** (ícone de link)
+   * Ações do Publish e Cancelar publicação
+   * uma opção para mostrar todas as **Referências principais** (ícone de link)
    * o fragmento **Status** e as últimas informações salvas
-   * uma alternância para alternar para o editor original (baseado em ativos)
-* painel esquerdo: mostra o **Variações** para o Fragmento de conteúdo e suas **Campos**:
+   * um botão para alternar para o editor original (baseado no Assets)
+* painel esquerdo: mostra as **Variações** do fragmento de conteúdo e seus **Campos**:
    * esses links podem ser usados para navegar pela estrutura do fragmento de conteúdo
 * painel direito: apresenta guias mostrando as propriedades (metadados) e tags, informações sobre o histórico de versões e informações relacionadas a quaisquer cópias de idioma
-   * no **Propriedades** guia, é possível atualizar a guia **Título** e **Descrição** para o fragmento ou **Variação**
+   * na guia **Propriedades**, é possível atualizar o **Título** e a **Descrição** do fragmento ou a **Variação**
 * painel central: mostra os campos reais e o conteúdo da variação selecionada
    * permite editar o conteúdo
-   * se **Espaço reservado da guia** Os campos são definidos no modelo mostrado aqui e podem ser usados para navegação
+   * se os campos **Espaço Reservado para Guia** forem definidos no modelo, eles serão mostrados aqui e poderão ser usados para navegação
 
 Por exemplo, um fragmento pode:
 
@@ -316,7 +316,7 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre refer�
 
       * [Modelos de fragmentos de conteúdo: permitir modelos de fragmento de conteúdo na pasta Ativos](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
-* [Fragmentos de conteúdo - editor original, no console de Ativos](/help/assets/content-fragments/content-fragments-variations.md)
+* [Fragmentos de conteúdo - editor original, no console do Assets](/help/assets/content-fragments/content-fragments-variations.md)
 
 * Guias de introdução
    * [Criação de uma Pasta de ativos Configuração do Headless](/help/headless/setup/create-assets-folder.md)

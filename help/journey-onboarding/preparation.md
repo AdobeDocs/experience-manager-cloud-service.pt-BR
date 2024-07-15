@@ -90,4 +90,4 @@ Agora você deve ter uma compreensão básica sobre:
 * Como esse contrato afeta o processo de integração.
 * Como se preparar para sua chamada de integração.
 
-Agora que está familiarizado com essas etapas de preparação, você está quase pronto para entrar no sistema por conta própria. Mas primeiro você precisa de uma breve visão geral de como o AEM as a Cloud Service é estruturado do ponto de vista de um administrador de sistema e conhecer terminologias importantes. Avance para a próxima parte da jornada, a [Terminologia do AEM as a Cloud Service](terminology.md).
+Agora que está familiarizado com essas etapas de preparação, você está quase pronto para entrar no sistema por conta própria. Mas primeiro você precisa ter uma breve visão geral de como o AEM as a Cloud Service é estruturado do ponto de vista de um administrador de sistema e conhecer terminologias importantes. Avance para a próxima parte da jornada, a [Terminologia do AEM as a Cloud Service](terminology.md).

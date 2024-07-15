@@ -34,7 +34,7 @@ Siga estas etapas para hibernar manualmente os ambientes dos programas de sandbo
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique no programa que deseja hibernar para exibir seus detalhes.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no programa que deseja hibernar para exibir seus detalhes.
 
 1. No cartão **Ambientes**, clique no botão de reticências e selecione **Console do desenvolvedor**.
 
@@ -50,11 +50,11 @@ Siga estas etapas para hibernar manualmente os ambientes dos programas de sandbo
 
    ![Confirmar hibernação](assets/hibernate-2.png)
 
-Quando a hibernação for bem-sucedida, você verá a notificação de conclusão do processo de hibernação para o seu ambiente na **Console do desenvolvedor** tela.
+Quando a hibernação for bem-sucedida, você verá a notificação de conclusão do processo de hibernação para o seu ambiente na tela **Developer Console**.
 
 ![Confirmação de hibernação](assets/hibernate-4.png)
 
-No Console do desenvolvedor, também é possível clicar no link **Ambientes** na navegação estrutural acima do **Pod** lista suspensa para obter uma lista dos ambientes que devem ser hibernados.
+Na Developer Console, você também pode clicar no link **Ambientes** na navegação estrutural acima da lista suspensa **Pod** para obter uma lista dos ambientes que devem ser hibernados.
 
 ![Lista de ambientes que devem ser hibernados](assets/hibernate-1b.png)
 
@@ -68,7 +68,7 @@ Você pode hibernar manualmente seu programa de sandbox no Console do desenvolve
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique no programa que deseja cancelar hibernação para exibir os detalhes.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no programa que deseja cancelar a hibernação para exibir seus detalhes.
 
 1. No cartão **Ambientes**, clique no botão de reticências e selecione **Console do desenvolvedor**.
 
@@ -91,7 +91,7 @@ Você pode hibernar manualmente seu programa de sandbox no Console do desenvolve
    ![Cancelamento da hibernação concluído](assets/de-hibernation-img4.png)
 
 
-No Console do desenvolvedor, também é possível clicar no link **Ambientes** na navegação estrutural acima do **Pod** lista suspensa para obter uma lista dos ambientes que devem ter a hibernação cancelada.
+Na Developer Console, você também pode clicar no link **Ambientes** na navegação estrutural acima da lista suspensa **Pod** para obter uma lista dos ambientes que devem ter a hibernação cancelada.
 
 ![Lista de pods hibernados](assets/de-hibernate-1b.png)
 

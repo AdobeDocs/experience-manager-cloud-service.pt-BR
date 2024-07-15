@@ -18,12 +18,12 @@ Saiba como criar perfis de usuários no Admin Console para gerenciar o recebimen
 
 ## Visão geral {#overview}
 
-Periodicamente, o Adobe entra em contato com os usuários sobre seus ambientes as a Cloud Service com AEM. Além das notificações no produto, a Adobe também usa ocasionalmente emails para notificações. Há dois tipos de notificações por email:
+Periodicamente, o Adobe entra em contato com os usuários com relação aos ambientes do AEM as a Cloud Service. Além das notificações no produto, a Adobe também usa ocasionalmente emails para notificações. Há dois tipos de notificações por email:
 
 * **Notificação de Incidente** - Estas notificações são enviadas durante um incidente ou quando a Adobe identificou um problema potencial de disponibilidade com seu ambiente do AEM as a Cloud Service.
 * **Notificação proativa** - Estas notificações são enviadas quando um membro da equipe de suporte da Adobe deseja fornecer orientação sobre uma possível otimização ou recomendação que pode beneficiar seu ambiente do AEM as a Cloud Service.
 
-Os usuários também podem receber essas notificações para programas específicos com base em seus [permissões de grupo personalizadas.](/help/implementing/cloud-manager/custom-permissions.md)
+Os usuários também podem receber essas notificações para programas específicos com base em suas [permissões de grupo personalizadas.](/help/implementing/cloud-manager/custom-permissions.md)
 
 Além disso, a atribuição de grupos à notificação proativa é suportada, e usuários e grupos podem ser atribuídos diretamente aos perfis de produto.
 
@@ -63,7 +63,7 @@ Para configurar corretamente o recebimento de notificações, crie dois perfis d
 
    * **Nome do perfil do produto**: `Incident Notification - Cloud Service`
    * **Nome de exibição**: `Incident Notification - Cloud Service`
-   * **Descrição**: Perfil do Cloud Manager para os usuários que receberão notificações durante um incidente ou quando o Adobe identificar um possível problema de disponibilidade com seu ambiente as a Cloud Service AEM.
+   * **Descrição**: perfil do Cloud Manager para os usuários que receberão notificações durante um incidente ou quando o Adobe identificar um possível problema de disponibilidade com seu ambiente do AEM as a Cloud Service.
       * Os usuários com permissões de LEITURA personalizadas em programas específicos receberão notificações somente desses programas se optarem por usar permissões personalizadas.
 
 1. Clique em **Salvar**.
@@ -157,4 +157,4 @@ Repita essas etapas para os usuários de sua equipe que você gostaria que receb
 
 A seguir estão recursos adicionais e opcionais se quiser ir além do conteúdo da jornada de integração.
 
-* [Centro de ações](/help/operations/actions-center.md) - Aproveite o Centro de ações para agir de forma conveniente em incidentes e outras informações importantes.
+* [Centro de Ações](/help/operations/actions-center.md) - Utilize o Centro de Ações para agir de forma conveniente em incidentes e outras informações importantes.

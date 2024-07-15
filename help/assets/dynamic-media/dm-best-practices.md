@@ -37,14 +37,14 @@ As organizações enfrentam uma explosão de canais e dispositivos para se envol
 
 Alguns dos principais princípios do Dynamic Media incluem o seguinte:
 
-* **Abordagem de arquivo único:** Com o Dynamic Media, você armazena um arquivo de origem principal, e todas as variações de tamanho e efeitos visuais são criados e otimizados dinamicamente no momento do delivery. Essa abordagem economiza custos de armazenamento e elimina a complexidade do fluxo de trabalho.
-* **Verdadeiramente global:** A imagem inteligente, aplicada durante a entrega do conteúdo, reduz significativamente o tamanho da imagem e o peso da página sem comprometer a qualidade visual. Ele é otimizado para largura de banda de rede e proporções de pixel de dispositivo.
-* **Alimentado por IA:** O Recorte inteligente, um recurso orientado por IA, automatiza o recorte de pontos de interesse de imagem e vídeo. Ele elimina o esforço manual e pode ser dimensionado com eficiência para uso corporativo.
-* **Vídeo fácil:** Carregue vídeos de origem primária no Dynamic Media e transmita-os adaptativamente em vários idiomas com áudio descritivo.
-* **Biblioteca do visualizador de experiência:** Personalize e visualize a experiência da marca para imagens e vídeos. Esses visualizadores se integram perfeitamente às suas experiências digitais.
-* **Suporte a formatos emergentes:** O Dynamic Media permite a entrega de experiências 3D e panorâmicas.
+* **Abordagem de arquivo único:** Com o Dynamic Media, você armazena um arquivo de origem principal, e todas as variações de tamanho e efeitos visuais são dinamicamente criados e otimizados no momento da entrega. Essa abordagem economiza custos de armazenamento e elimina a complexidade do fluxo de trabalho.
+* **Verdadeiramente global:** a Smart Imaging, aplicada durante a entrega do conteúdo, reduz significativamente o tamanho da imagem e o peso da página sem comprometer a qualidade visual. Ele é otimizado para largura de banda de rede e proporções de pixel de dispositivo.
+* **IA ativada:** o Recorte inteligente, um recurso orientado por IA, automatiza o recorte de pontos de interesse de imagem e vídeo. Ele elimina o esforço manual e pode ser dimensionado com eficiência para uso corporativo.
+* **Vídeo simples:** carregue vídeos de origem primária no Dynamic Media e transmita-os de forma adaptável em vários idiomas com áudio descritivo.
+* **Biblioteca do visualizador de experiência**: personalize visualizadores de experiência da marca e imagens e vídeos. Esses visualizadores se integram perfeitamente às suas experiências digitais.
+* **Suporte a formatos emergentes:** o Dynamic Media habilita a entrega de experiências panorâmicas e 3D.
 
-À medida que você explora a [Jornada Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), a revisão da lista consolidada de práticas recomendadas abaixo pode ajudá-lo a aproveitar ao máximo seus recursos. Adapte essas práticas recomendadas do Dynamic Media aos requisitos específicos do contexto e do projeto para que você possa otimizar suas experiências em canais e dispositivos.
+À medida que você explora a [Jornada do Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dm-journey/dm-journey-part1), revisar a lista consolidada de práticas recomendadas abaixo pode ajudá-lo a aproveitar ao máximo seus recursos. Adapte essas práticas recomendadas do Dynamic Media aos requisitos específicos do contexto e do projeto para que você possa otimizar suas experiências em canais e dispositivos.
 
 <!-- In Dynamic Media on AEM, there are sets of methods, techniques, and guidelines that can help you maximize the potential of your rich media content. These best practices can lead to optimal results and increase efficiency in your use of Dynamic Media. They represent the most efficient and effective courses of action in a particular situation. They also unlock high value for your audience and deliver high-quality, engaging content. -->
 
@@ -55,39 +55,39 @@ Alguns dos principais princípios do Dynamic Media incluem o seguinte:
 
 ## Assimilar ativos na Dynamic Media
 
-**Plano de Negócio:** *Gerencie com eficiência grandes volumes de ativos e garanta que somente conteúdo relevante e aprovado seja entregue aos usuários finais.*
+**Business case:** *Gerencie com eficiência grandes volumes de ativos e garanta que somente conteúdo relevante e aprovado seja entregue aos usuários finais.*
 
-Simplifique o gerenciamento de grandes números de ativos com eficiência. Dynamic Media Certifique-se de que somente o conteúdo apropriado e autorizado chegue aos usuários finais usando o **Sincronização seletiva** e **Publicação seletiva** recursos.
+Simplifique o gerenciamento de grandes números de ativos com eficiência. Certifique-se de que somente o conteúdo autorizado e apropriado chegue aos usuários finais usando os recursos **Sincronização Seletiva** e **Publish Seletiva** da Dynamic Media.
 
 * **Sincronização seletiva:**
 Um recurso pró-ativo que permite escolher quais ativos sincronizar com o Dynamic Media. Por exemplo, você pode decidir sincronizar somente as pastas que contêm ativos que receberam aprovação final. Esse fluxo de trabalho ajuda você a manter o controle sobre quais ativos estão sendo preparados para entrega aos clientes.
 
 * **Publicação seletiva:**
-Após sincronizar os ativos, a Publicação seletiva oferece controle sobre quais ativos ficam visíveis para os clientes. Essa capacidade significa que você pode controlar quais ativos aprovados são realmente entregues por meio de seus canais, garantindo que seus clientes vejam apenas o melhor e mais relevante conteúdo.
+Após sincronizar os ativos, o Publish seletivo oferece controle sobre quais ativos ficam visíveis para os clientes. Essa capacidade significa que você pode controlar quais ativos aprovados são realmente entregues por meio de seus canais, garantindo que seus clientes vejam apenas o melhor e mais relevante conteúdo.
 
 Essas duas práticas recomendadas o ajudarão a obter melhor controle, governança e produtividade do seu conteúdo de mídia avançada.
 
-Quer saber mais? Ir para [Configurar publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+Quer saber mais? Ir para [Configurar Publish Seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
 
 ## Preparar ativos para entrega
 
 ### Organize seus ativos
 
-**Plano de Negócio:** *Organize ativos com eficiência para simplificar fluxos de trabalho.*
+**Business case:** *Organize ativos com eficiência para simplificar fluxos de trabalho.*
 
 Para uma organização de ativos eficiente que simplifica os fluxos de trabalho, use uma ou mais das seguintes práticas recomendadas:
 
 * **Organizar ativos em pastas:**
 A organização de ativos envolve categorizá-los em pastas, de modo semelhante à organização de arquivos em um computador. Nomeação adequada, estruturação de subpastas e gerenciamento de arquivos nessas pastas são cruciais para o processamento eficiente de ativos. A implementação de convenções de nomenclatura e práticas de metadados sistemáticas maximiza a utilidade do repositório de ativos digitais.
 Quer saber mais? Ir para [Organizar ativos em pastas](/help/assets/organize-assets.md#organize-using-folders).
-* **Organize ativos usando tags:**
+* **Organizar ativos usando marcas:**
 Marcar ativos melhora a capacidade de pesquisa, a criação de coleções e a classificação de pesquisa. A IA da Adobe Sensei emprega um algoritmo de autoaprendizado para marcação precisa, permitindo a recuperação rápida de ativos. A Adobe Sensei também reconhece e atribui tags relevantes, incluindo tags personalizadas, aos ativos, simplificando o gerenciamento de ativos com marcação descritiva automática.
-Quer saber mais? Ir para [Organizar ativos usando tags](/help/assets/organize-assets.md#use-tags-to-organize-assets).
+Quer saber mais? Ir para [Organizar ativos usando marcas](/help/assets/organize-assets.md#use-tags-to-organize-assets).
 * **Organizar ativos como coleções:**
 O Dynamic Media, juntamente com o Experience Manager Assets, permite a criação, edição e compartilhamento eficientes de coleções de ativos entre usuários. Você pode estabelecer vários tipos de coleções, incluindo listas estáticas e compilações dinâmicas baseadas em pesquisa. Esses tipos de coleção podem ser compartilhados em vários locais com direitos de acesso e edição personalizáveis.
-Quer saber mais? Ir para [Organizar ativos como coleções](/help/assets/manage-collections.md).
-* **Organize ativos usando perfis:**
+Quer saber mais? Vá para [Organizar ativos como coleções](/help/assets/manage-collections.md).
+* **Organizar ativos usando perfis:**
 Um perfil de processamento automatiza o manuseio de ativos em pastas designadas, simplificando a organização. A padronização de metadados, nomes de arquivos e estruturas de pastas permite a aplicação consistente e precisa desses perfis à medida que a sua coleção de ativos digitais se expande.
 Quer saber mais? Ir para [Organizar ativos usando perfis](/help/assets/organize-assets.md#organize-to-use-profiles).
 
@@ -95,23 +95,23 @@ Quer saber mais? Ir para [Organizar ativos usando perfis](/help/assets/organize-
 
 ### Otimizar a qualidade das imagens
 
-**Plano de Negócio:** *Obtenha imagens de boa qualidade do Dynamic Media.*
+**Caso de negócios:** *Obter imagens de boa qualidade do Dynamic Media.*
 
 O aprimoramento da qualidade da imagem requer uma consideração cuidadosa de vários fatores. Pode ser um processo que exige muito tempo. No entanto, existem algumas práticas testadas e verdadeiras que podem ajudá-lo a alcançar os resultados desejáveis. Algumas dessas práticas recomendadas incluem como obter o dimensionamento e a nitidez ideais da imagem e os melhores formatos de imagem a serem usados.
 
-Quer saber mais? Ir para [Práticas recomendadas para otimização da qualidade de imagens](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
+Quer saber mais? Vá para [Práticas recomendadas para otimizar a qualidade das imagens](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md).
 
 Como a percepção da qualidade da imagem varia de pessoa para pessoa, às vezes, uma abordagem sistemática da experimentação é essencial para alcançar resultados desejáveis. O Adobe Experience Manager auxilia nesse processo com mais de 100 comandos Dynamic Media para aprimoramento de imagem.
 
-Quer saber mais? Observar [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos, 17 segundos).
+Quer saber mais? Assista ao [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot) (3 minutos, 17 segundos).
 
 Para avaliar o impacto desses diferentes comandos na qualidade da imagem, você pode fazer upload de uma imagem no Dynamic Media, usar a interface da ferramenta no URL especificado e aplicar os comandos que deseja experimentar.
 
-Quer experimentar? Launch [Instantâneo do Dynamic Media](https://snapshot.scene7.com/)
+Quer experimentar? Iniciar [Instantâneo do Dynamic Media](https://snapshot.scene7.com/)
 
 ### Padronizar estilos aplicados a imagens
 
-**Plano de Negócio:** *Padronizar com eficiência o estilo e a transformação aplicados aos ativos de imagem.*
+**Business case:** *Padronize com eficiência o estilo e a transformação aplicados aos meus ativos de imagem.*
 
 Use as Predefinições de imagem regularmente no Dynamic Media para ajustar de forma consistente e dinâmica os tamanhos, formatos e propriedades da imagem. Pense em uma Predefinição de imagem como uma macro: é um conjunto nomeado de comandos para dimensionamento e formatação. Por exemplo, se seu site precisa de imagens de produtos em vários tamanhos e formatos, com compactação específica para desktop e dispositivos móveis, as Predefinições de imagem automatizam esse processo com eficiência.
 
@@ -119,21 +119,21 @@ Quer experimentar? Ir para [Princípios básicos da criação de predefinições
 
 ### Ajustar o foco e o enquadramento de imagens e vídeos
 
-**Plano de Negócio:** *Verifique se o principal ponto de interesse das minhas imagens ou vídeos permanece em foco em todos os dispositivos.*
+**Caso de negócios:** *Verifique se o principal ponto de interesse das minhas imagens ou vídeos permanece em foco em todos os dispositivos.*
 
 O Recorte inteligente é um recurso no Dynamic Media que usa o Adobe Sensei, a API do Adobe e a estrutura de aprendizado de máquina para automatizar o recorte de imagens e vídeos. Ele detecta e focaliza de forma inteligente o assunto principal ou ponto de interesse em uma imagem ou vídeo. Essa inteligência garante que o ponto focal seja mantido em vários tamanhos de tela em computadores desktop e dispositivos móveis.
 
 Uma prática recomendada é criar um Perfil de imagem com Recorte inteligente. No perfil, é possível definir vários tamanhos de tela e permitir que o Adobe Sensei faça o resto, garantindo que suas imagens e vídeos sejam sempre otimizados para o dispositivo do visualizador.
 
-Quer saber mais? Observar [Uso do Corte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos) e [Utilização do Dynamic Media Smart Crop para vídeo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutos, 22 segundos).
+Quer saber mais? Assista ao [Uso do Recorte Inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos) e [Uso do Recorte Inteligente do Dynamic Media para Vídeo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video) (6 minutos, 22 segundos).
 
 ### Melhorar as classificações da SEO
 
-**Plano de Negócio:** *Configure o Dynamic Media para melhorar as classificações de SEO.*
+**Caso de negócios:** *Configure o Dynamic Media para obter melhores classificações de SEO.*
 
 Use as recomendações a seguir regularmente para garantir que suas imagens contribuam de maneira eficaz para a sua estratégia geral de SEO.
 
-* **Nomes significativos dos arquivos de imagem:**
+* **Nomes significativos de arquivos de imagem:**
 Use nomes de arquivo descritivos que refletem o conteúdo da imagem. Por exemplo,
    * use `myCompany-Silver-Wrist-Watch`
    * *evitar* `myCompany_Silver_Wrist_Watch` ou `myCompanySilverWristWatch`
@@ -144,22 +144,22 @@ Implemente um domínio personalizado que inclua sua empresa ou nome da marca par
    * use `http://images.mycompany.com/is/image/companyname/`
    * *evitar* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
 * **Estrutura de pastas compatível com SEO:**
-Organize as imagens em uma estrutura de pastas que inclua o nome da empresa ou a marca para uma melhor indexação, como `http://images.mycompany.com/is/image/companyname/`.
+Organize as imagens em uma estrutura de pastas que inclua o nome da empresa ou a marca para melhorar a indexação, como `http://images.mycompany.com/is/image/companyname/`.
 * **Conjuntos de regras do Dynamic Media:**
 Saiba como você pode transformar condicionalmente URLs com base em vários fatores, aprimorando o SEO e a experiência do usuário.
 Quer saber mais? Ir para [Usar conjuntos de regras para transformar URLs](/help/assets/dynamic-media/using-rulesets-to-transform-urls.md).
-* **Imagem inteligente e recorte inteligente:**
+* **Imagem Inteligente e Recorte Inteligente:**
 Use os recursos de Imagem inteligente e Recorte inteligente no Dynamic Media para fornecer imagens otimizadas e responsivas. Isso não só melhora o tempo de carregamento da página, como também contribui positivamente para as classificações de SEO.
-Quer saber mais? Ir para [Imagem inteligente](/help/assets/dynamic-media/imaging-faq.md)ou assista [Uso do Corte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos).
+Quer saber mais? Vá para [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md) ou assista [Usando o Smart Crop com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use) (6 minutos, 35 segundos).
 
 Lembre-se de que essas práticas recomendadas se alinham bem com as práticas recomendadas de SEO de imagem da Google. Essas práticas enfatizam a importância de fornecer contexto e clareza aos mecanismos de pesquisa por meio de convenções de nomenclatura adequadas, dados estruturados e entrega de imagem otimizada.
 
-Quer saber mais? Ir para [Práticas recomendadas de estrutura de URL do Google](https://developers.google.com/search/docs/crawling-indexing/url-structure) e [Práticas recomendadas da SEO para imagens do Google](https://developers.google.com/search/docs/appearance/google-images)
+Quer saber mais? Ir para [Práticas recomendadas da estrutura de URL do Google](https://developers.google.com/search/docs/crawling-indexing/url-structure) e [Práticas recomendadas do Google image SEO](https://developers.google.com/search/docs/appearance/google-images)
 
 
 ### Aprimorar dinamicamente imagens e criar efeitos visuais usando comandos
 
-**Plano de Negócio:** *Aplique efeitos visuais avançados a imagens.*
+**Caso de negócios:** *Aplicar efeitos visuais avançados a imagens.*
 
 O Dynamic Media oferece um conjunto de comandos para aprimorar imagens e criar efeitos visuais dinamicamente, sem a necessidade de vários ativos estáticos. Veja a seguir algumas explicações resumidas de alguns desses processos e alguns exemplos para orientá-lo:
 
@@ -167,19 +167,19 @@ O Dynamic Media oferece um conjunto de comandos para aprimorar imagens e criar e
 
 | Tarefa | O que fazer |
 | --- | --- |
-| **Fazer upload e publicar sua imagem original** | · Comece fazendo upload da imagem original no Dynamic Media.<br>· Certifique-se de que ele seja publicado e acessível por meio de um URL.<br>· Neste exemplo, uma imagem de stock de um relógio com um fundo branco (vamos chamá-lo de &quot;Imagem X&quot;) é carregada no Dynamic Media.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer) |
-| **Criar uma máscara** | · Desenvolva uma máscara que defina o assunto (a área onde deseja aplicar efeitos) e o plano de fundo (a área que deseja alterar).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)<br>· As máscaras são normalmente imagens em tons de cinza, onde o branco representa o assunto e o preto representa o plano de fundo. É possível criar máscaras usando ferramentas como o Adobe Photoshop.<br>Quer saber mais? Ir para [Criação e edição de uma máscara rápida no Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>· Para a &quot;Imagem X&quot;, crie uma máscara que descreva com precisão o assunto que você deseja aprimorar. Por exemplo, uma pessoa, um objeto e assim por diante. |
-| **Aplicar comandos do URL do Dynamic Media para efeitos** | Depois de ter sua máscara, use comandos de URL para aplicar efeitos como sombras projetadas ou altere a cor do plano de fundo para &quot;Imagem X&quot;. Veja dois exemplos:<br><br> · **Efeito sombra:**<br> Para adicionar um efeito de sombra ao longo do limite do assunto, edite o URL da seguinte maneira:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>Neste URL, a variável `$shadow$` cria o efeito de sombra e `color=0,0,0` define a cor da sombra como preto.<br>· **Alteração da cor do plano de fundo:**<br> Para alterar a cor do plano de fundo, use o URL com um valor de cor de plano de fundo diferente:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> Neste exemplo, `color=255,255,0` define a cor do plano de fundo como amarelo. Edite o plano de fundo com uma cor específica para impacto visual. |
+| **Carregar e publicar sua imagem original** | · Comece fazendo upload da imagem original no Dynamic Media.<br>· Verifique se ele foi publicado e se está acessível através de uma URL.<br>· Neste exemplo, uma imagem de stock de um relógio com um fundo branco (vamos chamá-lo de &quot;Imagem X&quot;) é carregada para o Dynamic Media.<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer) |
+| **Criar uma máscara** | · Desenvolva uma máscara que defina o assunto (a área onde deseja aplicar efeitos) e o plano de fundo (a área que deseja alterar).<br>[https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps](https://s7g2.scene7.com/is/image/genaibeta/watch-silver-offer-maskps)<br>· As máscaras normalmente são imagens em tons de cinza, em que o branco representa o assunto e o preto representa o plano de fundo. É possível criar máscaras usando ferramentas como o Adobe Photoshop.<br>Deseja saber mais? Ir para [Criação e edição de uma máscara rápida no Photoshop](https://helpx.adobe.com/in/photoshop/using/create-temporary-quick-mask.html).<br>· Para &quot;Imagem X&quot;, crie uma máscara que contorne com precisão o assunto que você deseja aprimorar. Por exemplo, uma pessoa, um objeto e assim por diante. |
+| **Aplicar comandos de URL do Dynamic Media para efeitos** | Depois de ter sua máscara, use comandos de URL para aplicar efeitos como sombras projetadas ou altere a cor do plano de fundo para &quot;Imagem X&quot;. Dois exemplos: <br><br> · **Efeito de sombra projetada:**<br> Para adicionar um efeito de sombra projetada ao longo do limite do assunto, edite a URL da seguinte maneira:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;effect=-1&amp;pos=100,100&amp;op_blur=75&amp;op_grow=1&amp;opac=25)<br>Nesta URL, o parâmetro `$shadow$` cria o efeito de sombra e `color=0,0,0` define a cor da sombra como preto.<br>· **Alteração da cor do plano de fundo:**<br> Para alterar a cor do plano de fundo, use a URL com um valor de cor de plano de fundo diferente:<br>[https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0](https://s7g10.scene7.com/is/image/genaibeta/watch-silver-offer?mask=watch-silver-offer-maskps&amp;maskUse=invert&amp;maskUse=invert&amp;color=255,255,0)<br> Neste exemplo, o `color=255,255,0` define a cor do plano de fundo como amarela. Edite o plano de fundo com uma cor específica para impacto visual. |
 
 #### Adicionar uma borda de imagem
 
-O Dynamic Media permite manipular imagens diretamente por meio de URLs, tornando-as uma ferramenta poderosa para criar experiências digitais dinâmicas. Veja a seguir alguns exemplos. Vamos começar com o seguinte URL da imagem original: [https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
+O Dynamic Media permite manipular imagens diretamente por meio de URLs, tornando-as uma ferramenta poderosa para criar experiências digitais dinâmicas. Veja a seguir alguns exemplos. Vamos começar com a seguinte URL da imagem original: [https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel).
 
 | Tarefa | O que fazer |
 | --- | --- |
-| **Borda branca** | Para adicionar uma borda branca, use o seguinte URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10)<br>Neste URL, a variável `extend=10,10,10,10` especifica o tamanho da borda de dez pixels em todos os lados. |
-| **Desfoque ao longo da borda branca** | Para adicionar um efeito de desfoque ao longo da borda branca, edite o URL da seguinte maneira:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0)<br>Neste URL, a variável `effect=-1` aplica o efeito de desfoque e `op_blur=60` controla a intensidade do desfoque. |
-| **Efeito de sombra projetada ao longo do limite externo** | Para adicionar um efeito de sombra projetada ao longo do limite externo, use este URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0)<br>A variável `$shadow$` cria o efeito de sombra e `color=0,0,0` define a cor da sombra como preto. |
+| **Borda branca** | Para adicionar uma borda branca, use a seguinte URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10)<br>Nessa URL, o parâmetro `extend=10,10,10,10` especifica o tamanho da borda de dez pixels em todos os lados. |
+| **Desfoque ao longo da borda branca** | Para adicionar um efeito de desfoque ao longo da borda branca, edite a URL da seguinte maneira:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;op_blur=60&amp;color=0,0,0)<br>Nessa URL, o parâmetro `effect=-1` aplica o efeito de desfoque e `op_blur=60` controla a intensidade do desfoque. |
+| **Efeito de sombra projetada ao longo do limite externo** | Para adicionar um efeito de sombra projetada ao longo do limite externo, use esta URL:<br>[https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0](https://s7g2.scene7.com/is/image/genaibeta/ocean-facing-hotel?size=400,400&amp;extend=10,10,10,10&amp;effect=-1&amp;$shadow$&amp;color=0,0,0)<br>O parâmetro `$shadow$` cria o efeito de sombra e `color=0,0,0` define a cor da sombra como preto. |
 
 Experimente esses URLs para obter os efeitos visuais desejados.
 
@@ -189,11 +189,11 @@ Se você quiser sobrepor um logotipo ou ícone em uma imagem existente, o Dynami
 
 | Etapa | O que fazer |
 | --- | --- |
-| **Fazer upload e publicar a imagem base** | Primeiro, carregue e publique a imagem base na qual você deseja sobrepor o logotipo ou ícone. Você pode usar qualquer imagem como base.<br>Por exemplo, esta é uma imagem base:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
-| **Fazer upload e publicar o logotipo ou a imagem do ícone** | Em seguida, faça upload e publique a imagem que deseja sobrepor sobre a imagem base. Esta imagem deve ser um PNG transparente com o logotipo ou ícone que você deseja sobrepor.<br>Esta é a imagem PNG transparente de um objeto estrela com efeitos de transparência que será sobreposta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Aplicar o URL do Dynamic Media** | Agora, crie um URL do Dynamic Media que combine a imagem base e o logotipo ou a imagem do ícone. Você pode usar comandos de URL para obter esse efeito.<br>A estrutura do URL é semelhante a esta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>onde<br>· `hotspotRetailBaseImage` é a imagem base.<br>· `starxp` é a imagem do logotipo/ícone.<br>· `layer=1` especifica que o logotipo ou ícone deve ser colocado sobre a imagem base.<br>· `scale=1.25` ajusta o tamanho do logotipo/ícone.<br>· `posN=0.33,-.25` determina a posição do logotipo/ícone em relação à imagem base.<br>· `fmt=png` garante que a saída esteja no formato PNG. |
+| **Carregar e publicar a imagem base** | Primeiro, carregue e publique a imagem base na qual você deseja sobrepor o logotipo ou ícone. Você pode usar qualquer imagem como base.<br>Por exemplo, aqui está uma imagem base:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
+| **Carregar e publicar o logotipo ou a imagem de ícone** | Em seguida, faça upload e publique a imagem que deseja sobrepor sobre a imagem base. Esta imagem deve ser um PNG transparente com o logotipo ou ícone que você deseja sobrepor.<br>Esta é a imagem PNG transparente de um objeto estrela com efeitos de transparência que será sobreposta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
+| **Aplicar a URL do Dynamic Media** | Agora, crie um URL do Dynamic Media que combine a imagem base e o logotipo ou a imagem do ícone. Você pode usar comandos de URL para obter esse efeito.<br>A estrutura da URL é semelhante a esta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>onde<br>· `hotspotRetailBaseImage` é a imagem base.<br>· `starxp` é a imagem de logotipo/ícone.<br>· `layer=1` especifica que o logotipo ou ícone deve ser colocado sobre a imagem base.<br>· `scale=1.25` ajusta o tamanho do logotipo/ícone.<br>· `posN=0.33,-.25` determina a posição do logotipo/ícone em relação à imagem base.<br>· `fmt=png` garante que a saída esteja no formato PNG. |
 
-O que aprender mais? Ir para [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) para obter mais detalhes sobre o `src` e outros comandos de URL do Dynamic Media.
+O que aprender mais? Vá para [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) para obter mais detalhes sobre o comando `src` e outros comandos de URL do Dynamic Media.
 
 
 #### Sobreposição de texto promocional
@@ -202,8 +202,8 @@ A seguir estão as etapas para sobrepor uma mensagem de texto promocional em uma
 
 | Etapa | O que fazer |
 | --- | --- |
-| **Fazer upload e publicar a imagem base** | Primeiro, carregue e publique a imagem base na qual você deseja sobrepor o texto. Você pode usar qualquer imagem que desejar. Por exemplo, esta é uma amostra de imagem base:<br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
-| **Aplicar operadores de texto do Dynamic Media** | Com o Dynamic Media, é possível aplicar operadores de texto para sobrepor texto dinâmico diretamente na imagem. O exemplo de URL a seguir demonstra essa capacidade:<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600) |
+| **Carregar e publicar a imagem base** | Primeiro, carregue e publique a imagem base na qual você deseja sobrepor o texto. Você pode usar qualquer imagem que desejar. Por exemplo, esta é uma amostra de imagem base:<br>[https://s7g2.scene7.com/is/image/genaibeta/leather-sofa](https://s7g2.scene7.com/is/image/genaibeta/leather-sofa)<br> |
+| **Aplicar operadores de texto do Dynamic Media** | Com o Dynamic Media, é possível aplicar operadores de texto para sobrepor texto dinâmico diretamente na imagem. O exemplo de URL a seguir demonstra essa capacidade:<br>[https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF333&amp;wid=600&amp;hei=600](https://s7g10.scene7.com/is/image/genaibeta/leather-sofa?layer=1&amp;posN=-0.3,-0.455&amp;text=%7b\rtf1\ansi%7b\fonttbl%7b\f0+Arial;%7d%7d%7b\colortbl+\red255\green255\blue255;%7d\copyfit1000\vertalc\qc%7b\cf0\fs42+New+Collection%7d%7d&amp;size=370,70&amp;textAttr=130&amp;bgcolor=FF3333&amp;wid=600&amp;hei=600) |
 
 #### Redimensionamento e corte para vários casos de uso
 
@@ -211,7 +211,7 @@ A seguir estão as etapas para sobrepor uma mensagem de texto promocional em uma
 
 O redimensionamento da imagem envolve a alteração das dimensões, da resolução e do tamanho do arquivo de uma imagem. Estes são alguns pontos principais a serem considerados:
 
-* **Composição em pixels:**
+* **Composição de pixels:**
 As imagens digitais consistem em pequenos pontos chamados pixels. Quando uma imagem é criada, ela tem um número específico de pixels. O redimensionamento envolve a adição ou subtração de pixels para alterar as dimensões, a resolução e o tamanho do arquivo da imagem.
 * **Taxa de proporção:**
 Manter a taxa de proporção (a relação entre largura e altura) é fundamental para evitar distorções. Independentemente de você estar fazendo uma imagem maior (upscaling) ou menor (downscaling), preservar a proporção garante a consistência visual.
@@ -222,94 +222,94 @@ O redimensionamento pode afetar a qualidade da imagem. Evite um aumento drástic
 
 Recortar e redimensionar são técnicas no Dynamic Media que permitem transformar imagens para atender a vários casos de uso, seja criando miniaturas, imagens de exibição de produto ou banners.
 
-* **Corte:**
+* **Recorte:**
 Envolve a remoção de parte de uma imagem para alterar sua composição e enquadramento. Ela não altera as dimensões gerais, mas se concentra em uma área específica.
-* **Redimensionamento:**
+* **Redimensionando:**
 Ajusta as dimensões, a resolução e o tamanho do arquivo da imagem inteira, mantendo a proporção.
 
 Vamos explorar um caso de uso que envolve a seguinte imagem de sala de estar:
 
 * **Imagem original da sala de estar:**
   [https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa)
-* **Miniatura (200 x 200 px):**
+* **Miniatura (200 px x 200 px):**
 Uma versão menor adequada para carregamento ou exibição rápidos.
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;fit=crop)
 * **Miniatura com recorte (200 px x 200 px):**
 Recortado para focalizar na área do sofá.
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=200&amp;hei=200&amp;cropN=.24,.24,.6,.72&amp;fit=crop)
-* **Imagem de exibição do produto (800 px x 600 px):**
+* **Imagem para exibição do produto (800 px x 600 px):**
 Recortado e redimensionado para exibir o sofá.
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=800&amp;hei=600&amp;cropN=.24,.24,.6,.72&amp;fit=crop)
-* **Banner (1720 x 820 x):**
+* **Banner (1720 px x 820 px):**
 Derivado da imagem original, enfatizando a sala.
   [https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop](https://s7g10.scene7.com/is/image/genaibeta/decorative-room-sofa?wid=1720&amp;hei=820&amp;cropN=0,.1,1,1&amp;fit=crop)
 
 Fique à vontade para explorar essas variações de acordo com suas necessidades específicas.
-Deseja saber mais sobre os comandos disponíveis em um URL? Ir para [Referência de comando](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+Deseja saber mais sobre os comandos disponíveis em um URL? Vá para [Referência de comando](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
 
-### Publicar um vídeo para meu site
+### Publish um vídeo para meu site
 
-**Plano de Negócio:** *Publique rapidamente um vídeo para um site de marketing.*
+**Caso de negócios:** *Publique rapidamente um vídeo para um site de marketing.*
 
 * **Selecione um perfil de vídeo:**
-Primeiro, no Dynamic Media, você deve selecionar um perfil de vídeo adequado. Você pode optar pela *Codificação de vídeo adaptável* perfil disponível no AEM Assets em Perfis de vídeo. Essas configurações de codificação predefinidas garantem que o vídeo seja otimizado para reprodução em vários dispositivos e condições de largura de banda. Como alternativa, você pode criar seu próprio perfil de Vídeo adaptável.
+Primeiro, no Dynamic Media, você deve selecionar um perfil de vídeo adequado. Você pode optar pelo perfil *Codificação de vídeo adaptável* disponível no AEM Assets em Perfis de vídeo. Essas configurações de codificação predefinidas garantem que o vídeo seja otimizado para reprodução em vários dispositivos e condições de largura de banda. Como alternativa, você pode criar seu próprio perfil de Vídeo adaptável.
 * **Atribuir o perfil:**
 Atribua o perfil de vídeo escolhido às pastas onde o vídeo será carregado. Essa etapa garante que as configurações de codificação corretas sejam aplicadas durante o processo de upload.
-* **Carregue o vídeo original:**
+* **Carregar o vídeo original:**
 Carregue o arquivo de vídeo original. Verifique se é um vídeo de alta resolução com boa qualidade. Quanto melhor o vídeo de origem, melhor o resultado final.
-* **Pré-visualizar e publicar:**
+* **Visualizar e publicar:**
 Visualize o vídeo para garantir que tudo fique com a aparência esperada. Depois de satisfeito, publique-o. Essa etapa torna o vídeo acessível ao seu público-alvo.
 * **Vincular ou incorporar:**
 Após a publicação, você tem duas opções.
    * **Vincular diretamente:**
 Use o URL fornecido para vincular diretamente ao vídeo. Use o hiperlink adequado no site de marketing.
-   * **Incorporar o vídeo:**
+   * **Inserir o vídeo:**
 Copie o código incorporado fornecido e cole-o no HTML da página da Web onde deseja que o vídeo apareça. Isso permite que o vídeo seja reproduzido diretamente no site.
 
 Quer saber mais? Ir para [Vídeo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/video).
 
 ### Configurar vídeos para obter qualidade e engajamento ideais
 
-**Plano de Negócio:** *Configure vídeos para obter a melhor qualidade e envolvimento.*
+**Caso de negócios:** *Configure vídeos para obter a melhor qualidade e participação.*
 
 Para garantir a melhor qualidade e o melhor envolvimento para seus vídeos, considere implementar uma combinação das seguintes estratégias de práticas recomendadas:
 
-* **Use o visualizador de vídeo HTML5 integrado:**
+* **Usar o Visualizador de Vídeo HTML5 interno:**
 As predefinições do visualizador de vídeo Dynamic Media HTML5 são players de vídeo robustos. Use-os para evitar problemas comuns associados à reprodução de vídeo HTML5 e dispositivos móveis.
 Essas predefinições abordam desafios como a entrega adaptável da transmissão da taxa de bits e o alcance limitado do navegador do desktop.
-Quer saber mais? Ir para [Prática recomendada: uso do visualizador de vídeo do HTML 5](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
+Quer saber mais? Vá para [Prática recomendada: usar o visualizador de vídeo HTML 5](/help/assets/dynamic-media/video.md#best-practice-using-the-html-video-viewer).
 
-* **Usar perfis de vídeo do Dynamic Media:**
+* **Usar Perfis de Vídeo do Dynamic Media:**
 Os perfis de vídeo no Dynamic Media ajudam no gerenciamento eficiente de vídeos, na qualidade consistente e na transmissão adaptável.
-Quer saber mais? Ir para [Perfis de vídeo do Dynamic Media](/help/assets/dynamic-media/video-profiles.md).
+Quer saber mais? Vá para [Perfis de Vídeo do Dynamic Media](/help/assets/dynamic-media/video-profiles.md).
 
-* **Seguir as práticas recomendadas para codificação de vídeo:**
+* **Siga as Práticas Recomendadas para Codificação de Vídeo:**
 Aplique perfis de codificação de vídeo que mantêm a qualidade original do vídeo sem redução excessiva durante a codificação.
 Quer saber mais? Ir para [Práticas recomendadas para codificação de vídeos](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
-* **Adote a transmissão adaptável em vez da transmissão progressiva:**
+* **Adotar transmissão adaptável em vez de transmissão progressiva:**
 O fluxo adaptável ajusta a qualidade do vídeo com base na velocidade de conexão da Internet do visualizador e nos recursos do dispositivo.
 Ele usa protocolos como HLS (HTTP Live Streaming) ou DASH (`Dynamic Adaptive Streaming over HTTP`) para garantir a melhor qualidade de reprodução.
 Ao contrário da transmissão progressiva, que fornece vídeos linearmente, a transmissão adaptável minimiza o buffer e oferece uma experiência de visualização contínua.
 
-* **Habilite o DASH na sua conta (Digital Adaptive Streaming via HTTP):**
+* **Habilitar DASH na sua conta (Transmissão Adaptável Digital via HTTP):**
 O DASH serve dinamicamente conteúdo de vídeo por meio de transmissão adaptável.
 Para ativar o DASH, crie um tíquete de suporte para o seu ambiente.
-Quer saber mais? Ir para [Habilite o DASH na sua conta do Dynamic Media](/help/assets/dynamic-media/video.md#enable-dash).
+Quer saber mais? Vá para [Habilitar DASH na sua conta do Dynamic Media](/help/assets/dynamic-media/video.md#enable-dash).
 
 ### Internacionalizar vídeos para consumo multilíngue
 
-**Plano de Negócio:** *Prepare vídeos para consumo multilíngue.*
+**Caso de negócios:** *Prepare vídeos para consumo multilíngue.*
 
 Internacionalizar vídeos para consumo multilíngue é essencial para alcançar um público global. O Dynamic Media fornece recursos que podem ajudar você a alcançar essa meta.
 
-* **Carregue seus vídeos:**
+* **Carregar seus vídeos:**
    * Primeiro, crie um perfil de codificação de vídeo. Você pode usar o perfil Codificação de vídeo adaptável predefinido que acompanha o Dynamic Media ou criar seu próprio perfil personalizado.
    * Associe o perfil de processamento de vídeo a uma ou mais pastas nas quais você faz upload dos vídeos de origem primária.
    * Faça upload dos vídeos de origem principal para essas pastas. O Dynamic Media os codifica com base no perfil de processamento de vídeo atribuído.
    * O Dynamic Media suporta principalmente vídeos de forma curta (até 30 minutos) com uma resolução mínima superior a 25 × 25. Arquivos de vídeo de até 15 GB podem ser carregados1.
 
-* **Gerencie seus vídeos:**
+* **Gerenciar seus vídeos:**
    * Organize, navegue e pesquise ativos de vídeo no AEM.
    * Pré-visualizar e publicar ativos de vídeo.
    * Visualize o vídeo de origem e suas representações codificadas junto com miniaturas associadas.
@@ -324,28 +324,28 @@ Internacionalizar vídeos para consumo multilíngue é essencial para alcançar 
    * Se você estiver usando o AEM como o sistema de Gerenciamento de conteúdo na Web (WCM), poderá adicionar vídeos diretamente às suas páginas da Web.
    * Se você estiver usando um sistema WCM de terceiros, é possível vincular ou incorporar vídeos nas páginas da Web usando URLs ou códigos incorporados.
 
-Quer saber mais? Ir para [Sobre o suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) ou assista [Adicionar várias legendas e faixas de áudio a um vídeo](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minuto, 41 segundos).
+Quer saber mais? Vá para [Sobre o suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) ou assista a [Adicionar várias legendas e faixas de áudio a um vídeo](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minuto, 41 segundos).
 
 
 ## Entregar ativos aos clientes
 
 ### Otimizar tamanhos de imagem e minimizar o tempo de carregamento da página
 
-**Plano de Negócio:** *Otimize o tamanho das imagens para qualquer navegador ou tela e reduza o tempo de carregamento da página.*
+**Business case:** *Otimize o tamanho das imagens para qualquer navegador ou tela e reduza o tempo de carregamento da página.*
 
 O Dynamic Media Smart Imaging é uma ferramenta poderosa que aumenta o desempenho do delivery de imagens, otimizando automaticamente o formato, o tamanho e a qualidade da imagem com base nos recursos do navegador do cliente.
 
-A Adobe recomenda que você use os recursos de Imagens inteligentes, em vez de configurar manualmente o formato da imagem para `webp` ou `avif`. Veja o porquê:
+A Adobe recomenda que você use os recursos de Imagem Inteligente, em vez de definir manualmente o formato da imagem como `webp` ou `avif`. Veja o porquê:
 
 * **Compatibilidade do navegador:**
 A Smart Imaging garante que o formato de imagem entregue seja compatível com o navegador do usuário.
 * **Compactação ideal:**
 Ele seleciona o melhor formato para compactação com base no navegador específico, nas condições de rede e na resolução da tela.
 * **Formatos modernos:**
-Enquanto `avif` O é um formato mais novo que oferece melhor compactação. Ele ainda não é universalmente compatível com todos os navegadores.
+Embora o `avif` seja um formato mais novo que oferece melhor compactação, ele ainda não tem suporte universal em todos os navegadores.
 * **Práticas recomendadas:**
-Para garantir o melhor formato otimizado para a Web, você pode confiar no Smart Imaging para fazer a seleção do formato em vez de usar manualmente os comandos `fmt=webp` ou `fmt=avif`.
+Para garantir o melhor formato otimizado para a Web, você pode confiar no Smart Imaging para fazer a seleção de formato, em vez de usar manualmente os comandos `fmt=webp` ou `fmt=avif`.
 
 Com a Smart Imaging, você pode garantir que suas imagens sejam entregues da maneira mais eficiente possível, sob medida para o ambiente de navegação de cada usuário. Essa abordagem simplifica o processo e pode resultar em melhor desempenho em termos de tempo de carregamento de imagem e experiência geral do usuário.
 
-Quer saber mais? Ir para [Imagem inteligente](/help/assets/dynamic-media/imaging-faq.md).
+Quer saber mais? Vá para [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md).

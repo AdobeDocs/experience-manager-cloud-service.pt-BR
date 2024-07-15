@@ -17,7 +17,7 @@ ht-degree: 92%
 
 # Editor de formulários adaptáveis {#introduction-to-authoring-adaptive-forms}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -28,8 +28,8 @@ ht-degree: 92%
 
 Formulários adaptáveis fornecem uma experiência envolvente, responsiva, dinâmica e adaptável. O [!DNL AEM Forms] oferece uma interface intuitiva e componentes prontos para uso para criar e trabalhar com formulários adaptáveis. É possível optar por criar um formulário adaptável com base em um modelo ou esquema de formulário ou sem um modelo de formulário. É importante escolher cuidadosamente o modelo de formulário que atenda não apenas às suas necessidades, mas que amplie seus investimentos de infraestrutura e ativos. Você pode escolher entre as seguintes opções ao criar um formulário adaptável:
 
-* **Uso de um modelo de dados de formulário (FDM)**
-  [Integração de dados](data-integration.md) O permite integrar entidades e serviços de diferentes fontes de dados em um modelo de dados de formulário (FDM) que você pode usar para criar o Adaptive Forms. Escolha Modelo de dados de formulário (FDM) se o Formulário adaptável que você está criando envolver a busca e a gravação de dados de e para várias fontes de dados.
+* **Usando um modelo de dados de formulário (FDM)**
+  A [integração de dados](data-integration.md) permite integrar entidades e serviços de diferentes fontes de dados em um Modelo de Dados de Formulário (FDM) que você pode usar para criar o Adaptive Forms. Escolha Modelo de dados de formulário (FDM) se o Formulário adaptável que você está criando envolver a busca e a gravação de dados de e para várias fontes de dados.
 
 * **Usar um modelo de formulário XDP**
 Esse é um modelo de formulário ideal se você tiver investido em formulários baseados em XFA ou XDP. Ele fornece uma maneira direta de converter formulários baseados em XFA em formulários adaptáveis. Quaisquer regras de XFA existentes são retidas nos formulários adaptáveis associados. O formulário adaptável resultante oferece suporte a construções em XFA, como validações, eventos, propriedades e padrões.
@@ -98,7 +98,7 @@ Ela permite arrastar e soltar elementos do modelo de formulário no Formulário 
 
   Permite editar as propriedades de um componente. As propriedades mudam de acordo com um componente. Para ver as propriedades do container do Formulário adaptável:
 
-  Selecione um componente e ![nível de campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contêiner de formulário adaptável]** e selecione ![propriedades](assets/Smock_Wrench_18_N.svg).
+  Selecione um componente e, em seguida, selecione ![nível do campo](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Contêiner de formulário adaptável]** e selecione ![propriedades](assets/Smock_Wrench_18_N.svg).
 
 * **Navegador de ativos**
 
@@ -309,7 +309,7 @@ A barra de ferramentas da página na parte superior fornece opções que permite
 
 Ao selecionar um componente, você visualiza uma barra de ferramentas que permite trabalhar nele. Há opções para recortar, colar, mover e especificar as propriedades dos componentes. As opções são:
 
-A.**Configurar**: Ao selecionar **[!UICONTROL Configurar]**, as propriedades do componente ficam visíveis na barra lateral. A configuração dessas propriedades permite personalizar a experiência de captura de dados. Você pode alterar o nome do elemento do componente, especificar o texto do rótulo no campo Título do componente. O nome do elemento permite capturar valores inseridos pelos usuários usando o componente. Nas propriedades do componente, especifique o comportamento do componente e gerencie a entrada do usuário. Configure as propriedades na barra lateral para capturar os dados do usuário e usá-los para processamento adicional. As propriedades do container de Formulário adaptável permitem especificar as bibliotecas do cliente, os Layouts, os Temas, as configurações de Documento de registro, salvar configurações, as configurações de envio e as configurações de metadados.
+A.**Configurar**: ao selecionar **[!UICONTROL Configurar]**, as propriedades do componente ficam visíveis na barra lateral. A configuração dessas propriedades permite personalizar a experiência de captura de dados. Você pode alterar o nome do elemento do componente, especificar o texto do rótulo no campo Título do componente. O nome do elemento permite capturar valores inseridos pelos usuários usando o componente. Nas propriedades do componente, especifique o comportamento do componente e gerencie a entrada do usuário. Configure as propriedades na barra lateral para capturar os dados do usuário e usá-los para processamento adicional. As propriedades do container de Formulário adaptável permitem especificar as bibliotecas do cliente, os Layouts, os Temas, as configurações de Documento de registro, salvar configurações, as configurações de envio e as configurações de metadados.
 
 B.**Copiar**: você pode usar a opção de copiar para copiar um componente e colá-lo em outros lugares do formulário. Quando você cola um componente, o componente colado obtém um novo nome de elemento, mas retém as propriedades do componente copiado.
 
@@ -327,7 +327,7 @@ H. **Grupo**: permite selecionar vários componentes se você deseja cortar, cop
 
 I. **Página principal**: permite selecionar a página principal de um componente. Por exemplo, um campo de texto está em uma subseção, que fica em uma seção. A seção encontra-se no guide root panel e o container de formulário adaptável é o principal de um guide root panel. Para um componente, você pode observar todas as opções com a hierarquia classificada de baixo para cima.
 
-Por exemplo, se você selecionar **[!UICONTROL Pai]** para uma caixa de texto, você pode ver:
+Por exemplo, se você selecionar **[!UICONTROL Pai]** para uma caixa de texto, poderá ver:
 
 * Subseção
 * Seção

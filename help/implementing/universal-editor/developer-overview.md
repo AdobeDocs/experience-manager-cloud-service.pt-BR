@@ -26,24 +26,24 @@ Ele faz isso tomando um exemplo padrão com o qual a maioria dos desenvolvedores
 >
 >Este documento contém etapas extras para ilustrar como o Universal Editor funciona e tem como objetivo aprofundar a compreensão do desenvolvedor sobre o editor. Portanto, não é preciso a rota mais direta para instrumentar um aplicativo, mas o mais ilustrativo do Editor universal e como ele funciona.
 >
->Se quiser começar a usar o o mais rápido possível, consulte o [Introdução ao editor universal no AEM](/help/implementing/universal-editor/getting-started.md) documento.
+>Se você quiser começar a usar o mais rápido possível, consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md).
 
 ## Pré-requisitos {#prerequisites}
 
 Para acompanhar essa visão geral, você precisa do seguinte disponível.
 
 * [Uma instância de desenvolvimento local do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br)
-   * Sua instância de desenvolvimento local deve ser [configurado com HTTPS para fins de desenvolvimento em `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=pt-BR)
-   * [O site de demonstração do WKND deve ser instalado.](https://github.com/adobe/aem-guides-wknd)
+   * Sua instância de desenvolvimento local deve ser [configurada com HTTPS para fins de desenvolvimento em `localhost`.](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=pt-BR)
+   * [O site de demonstração do WKND deve estar instalado.](https://github.com/adobe/aem-guides-wknd)
 * [Acesso ao Editor Universal](/help/implementing/universal-editor/getting-started.md#onboarding)
-* [Um serviço do Editor Universal local](/help/implementing/universal-editor/local-dev.md) execução para fins de desenvolvimento
-   * Não deixe de direcionar seu navegador para [aceite o certificado autoassinado dos serviços locais.](/help/implementing/universal-editor/local-dev.md#editing)
+* [Um serviço do Editor Universal local](/help/implementing/universal-editor/local-dev.md) que está sendo executado para fins de desenvolvimento
+   * Não deixe de direcionar seu navegador para [aceitar o certificado autoassinado dos serviços locais.](/help/implementing/universal-editor/local-dev.md#editing)
 
-Além da familiaridade geral com o desenvolvimento na web, este documento presume a familiaridade básica com o desenvolvimento do AEM. Se você não tiver experiência com desenvolvimento de AEM, considere revisar [Clique no tutorial do WKND antes de continuar.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+Além da familiaridade geral com o desenvolvimento na web, este documento presume a familiaridade básica com o desenvolvimento do AEM. Se você não tiver experiência com desenvolvimento de AEM, considere revisar [o tutorial do WKND antes de continuar.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
 
 ## Iniciar AEM e Entrar no Editor Universal {#sign-in}
 
-Se ainda não tiver feito isso, você deve ter sua instância de desenvolvimento local do AEM em execução com o WKND instalado e o HTTPS ativado como [detalhado nos pré-requisitos.](#prerequisites) Essa visão geral pressupõe que sua instância está em execução em `https://localhost:8443`.
+Se ainda não tiver feito isso, você deve ter sua instância de desenvolvimento local do AEM em execução com o WKND instalado e o HTTPS habilitado, conforme [detalhado nos pré-requisitos.](#prerequisites) Esta visão geral presume que sua instância está em execução em `https://localhost:8443`.
 
 1. Abra a página principal de idioma inglês da WKND no Editor de AEM.
 
@@ -51,7 +51,7 @@ Se ainda não tiver feito isso, você deve ter sua instância de desenvolvimento
    https://localhost:8443/editor.html/content/wknd/language-masters/en.html
    ```
 
-1. No **Informações da página** do editor, selecione **Exibir como publicado**. Isso abre a mesma página em uma nova guia com o Editor de AEM desativado.
+1. No menu do editor **Informações da página**, selecione **Exibir como Publicado**. Isso abre a mesma página em uma nova guia com o Editor de AEM desativado.
 
    ```text
    https://localhost:8443/content/wknd/language-masters/en.html?wcmmode=disabled
@@ -65,9 +65,9 @@ Se ainda não tiver feito isso, você deve ter sua instância de desenvolvimento
    https://experience.adobe.com/#/aem/editor
    ```
 
-1. Cole o link copiado anteriormente do conteúdo WKND na **URL do site** do Editor Universal e clique em **Abertura**.
+1. Cole o link copiado anteriormente do conteúdo WKND no campo **URL do Site** do Universal Editor e clique em **Abrir**.
 
-   ![Abrir a página WKND no Editor universal](assets/dev-ue-open.png)
+   ![Abrir a página WKND no Editor Universal](assets/dev-ue-open.png)
 
 ## O Editor Universal Tenta Carregar o Conteúdo {#sameorigin}
 
@@ -83,11 +83,11 @@ A opção X-Frame `sameorigin` impede a renderização de páginas AEM dentro de
    https://localhost:8443/system/console/configMgr
    ```
 
-1. Editar a configuração do OSGi `org.apache.sling.engine.impl.SlingMainServlet`
+1. Editar a configuração OSGi `org.apache.sling.engine.impl.SlingMainServlet`
 
    ![Propriedade OSGi para SAMEORIGIN](assets/dev-sameorigin-osgi.png)
 
-1. Excluir a propriedade `X-Frame-Options=SAMEORIGIN` da propriedade **Cabeçalhos de resposta adicionais**.
+1. Exclua a propriedade `X-Frame-Options=SAMEORIGIN` da propriedade **Cabeçalhos de resposta adicionais**.
 
 1. Salve as alterações.
 
@@ -95,8 +95,8 @@ Agora, se você recarregar o Editor universal, verá que sua página AEM é carr
 
 >[!TIP]
 >
->* Consulte o documento [Introdução ao editor universal no AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) para obter mais detalhes sobre essa configuração do OSGi.
->* Consulte o documento [Configuração do OSGi para o Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter detalhes sobre OSGi no AEM.
+>* Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) para obter mais detalhes sobre essa configuração OSGi.
+>* Consulte o documento [Configuração de OSGi para Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter detalhes sobre OSGi no AEM.
 
 ## Manipular cookies do mesmo site {#samesite-cookies}
 
@@ -114,11 +114,11 @@ O cookie do token de logon é enviado ao AEM como um domínio de terceiros. Port
    https://localhost:8443/system/console/configMgr
    ```
 
-1. Editar a configuração do OSGi `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
+1. Editar a configuração OSGi `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 
    ![Propriedade OSGi para cookies do mesmo site](assets/dev-cross-origin-osgi.png)
 
-1. Alterar a propriedade **Atributo SameSite para o cookie de token de logon** para `None`.
+1. Altere a propriedade **atributo SameSite do cookie de token de logon** para `None`.
 
 1. Salve as alterações.
 
@@ -126,12 +126,12 @@ Agora, se você recarregar o Editor universal, poderá entrar no AEM e sua pági
 
 >[!TIP]
 >
->* Consulte o documento [Introdução ao editor universal no AEM](/help/implementing/universal-editor/getting-started.md#samesite-cookies) para obter mais detalhes sobre essa configuração do OSGi.
->* Consulte o documento [Configuração do OSGi para o Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter detalhes sobre OSGi no AEM.
+>* Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md#samesite-cookies) para obter mais detalhes sobre essa configuração OSGi.
+>* Consulte o documento [Configuração de OSGi para Adobe Experience Manager as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) para obter detalhes sobre OSGi no AEM.
 
 ## O Editor Universal Conecta-se ao Quadro Remoto {#ue-connect-remote-frame}
 
-Com a página carregada no Editor universal e você conectado ao AEM, o Editor universal tenta se conectar ao quadro remoto. Isso é feito por meio de uma biblioteca JavaScript que deve ser carregada no quadro remoto. Se a biblioteca JavaScript do não estiver presente, a página criará um erro de tempo limite no console.
+Com a página carregada no Editor universal e você conectado ao AEM, o Editor universal tenta se conectar ao quadro remoto. Isso é feito por meio de uma biblioteca JavaScript que deve ser carregada no quadro remoto. Se a biblioteca do JavaScript não estiver presente, a página criará um erro de tempo limite no console.
 
 ![Erro de tempo limite](assets/dev-timeout.png)
 
@@ -145,26 +145,26 @@ Você deve adicionar a biblioteca JavaScript necessária ao componente Página d
 
 1. Em `/apps/wknd/components/page`, edite o arquivo `customheaderlibs.html`.
 
-   ![Edição do arquivo customheaderlibs.html](assets/dev-customheaderlibs.png)
+   ![Editando o arquivo customheaderlibs.html](assets/dev-customheaderlibs.png)
 
-1. Adicione a biblioteca JavaScript ao final do arquivo.
+1. Adicione a biblioteca do JavaScript ao final do arquivo.
 
    ```html
    <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
    ```
 
-1. Clique em **Salvar tudo** e, em seguida, recarregue o Universal Editor.
+1. Clique em **Salvar tudo** e recarregue o Editor Universal.
 
-A página agora é carregada com a biblioteca JavaScript adequada para permitir que o Editor universal se conecte à página e o erro de tempo limite não é mais exibido no console.
+A página agora é carregada com a biblioteca JavaScript adequada para permitir que o Editor universal se conecte à sua página e o erro de tempo limite não é mais exibido no console.
 
 >[!TIP]
 >
 >* A biblioteca pode ser carregada no cabeçalho ou no rodapé.
->* A variável `universal-editor-embedded.js` biblioteca [está disponível no NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors) e você mesmo pode hospedá-lo se necessário ou colocá-lo diretamente em seu aplicativo.
+>* A biblioteca `universal-editor-embedded.js` [ está disponível no NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors) e você mesmo pode hospedá-la, se necessário, ou colocá-la diretamente no aplicativo.
 
 ## Definição de uma Conexão para Persistir Alterações {#connection}
 
-A página WKND agora é carregada com sucesso no Editor universal e a biblioteca JavaScript é carregada para conectar o editor ao seu aplicativo.
+A página WKND agora é carregada com sucesso no Editor universal, e a biblioteca do JavaScript é carregada para conectar o editor ao seu aplicativo.
 
 No entanto, você provavelmente notou que não é possível interagir com a página no Editor universal. O Editor universal não pode realmente editar sua página. Para que o Editor universal possa editar seu conteúdo, é necessário definir uma conexão para que ele saiba onde escrever o conteúdo. Para desenvolvimento local, você precisa gravar na sua instância de desenvolvimento local do AEM em `https://localhost:8443`.
 
@@ -176,7 +176,7 @@ No entanto, você provavelmente notou que não é possível interagir com a pág
 
 1. Em `/apps/wknd/components/page`, edite o arquivo `customheaderlibs.html`.
 
-   ![Edição do arquivo customheaderlibs.html](assets/dev-instrument-app.png)
+   ![Editando o arquivo customheaderlibs.html](assets/dev-instrument-app.png)
 
 1. Adicione os metadados necessários para a conexão com sua instância de AEM local ao final do arquivo.
 
@@ -184,7 +184,7 @@ No entanto, você provavelmente notou que não é possível interagir com a pág
    <meta name="urn:adobe:aue:system:aem" content="aem:https://localhost:8443">
    ```
 
-   * A versão mais recente da biblioteca é sempre recomendada. Se você precisar de uma versão anterior, consulte o documento [Introdução ao Editor universal no AEM.](/help/implementing/universal-editor/getting-started.md#alternative)
+   * A versão mais recente da biblioteca é sempre recomendada. Se você precisar de uma versão anterior, consulte o documento [Introdução ao Editor Universal no AEM.](/help/implementing/universal-editor/getting-started.md#alternative)
 
 1. Adicione os metadados necessários para a conexão com o serviço local do Universal Editor ao final do arquivo.
 
@@ -192,21 +192,21 @@ No entanto, você provavelmente notou que não é possível interagir com a pág
    <meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
    ```
 
-1. Clique em **Salvar tudo** e, em seguida, recarregue o Universal Editor.
+1. Clique em **Salvar tudo** e recarregue o Editor Universal.
 
 Agora, o Universal Editor não só pode carregar seu conteúdo com êxito da instância de desenvolvimento local do AEM, como também sabe onde persistir qualquer alteração feita usando o serviço local do Universal Editor. Esta é a primeira etapa na instrumentação do aplicativo para que ele seja editável com o Editor universal.
 
 >[!TIP]
 >
->* Consulte o documento [Introdução ao editor universal no AEM](/help/implementing/universal-editor/getting-started.md#connection) para obter mais detalhes sobre os metadados de conexão.
->* Consulte o documento [Arquitetura do editor universal](/help/implementing/universal-editor/architecture.md#service) para obter mais detalhes sobre a estrutura do Editor universal.
->* Consulte o documento [Desenvolvimento local do AEM com o editor universal](/help/implementing/universal-editor/local-dev.md) para obter mais detalhes sobre como se conectar a uma versão auto-hospedada do Universal Editor.
+>* Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md#connection) para obter mais detalhes sobre os metadados de conexão.
+>* Consulte o documento [Arquitetura do Editor Universal](/help/implementing/universal-editor/architecture.md#service) para obter mais detalhes sobre a estrutura do Editor Universal.
+>* Consulte o documento [Desenvolvimento local de AEM com o Universal Editor](/help/implementing/universal-editor/local-dev.md) para obter mais detalhes sobre como se conectar a uma versão auto-hospedada do Universal Editor.
 
 ## Componentes de instrumentação {#instrumenting-components}
 
 No entanto, você provavelmente percebe que ainda pode fazer pouco com o Editor universal. Se você tentar clicar no teaser na parte superior da página WKND no Editor universal, não será possível realmente selecioná-lo (ou qualquer outra coisa na página).
 
-Seus componentes também devem ser instrumentados para serem editados com o Editor universal. Para fazer isso, edite o componente de teaser. Portanto, é necessário sobrepor os Componentes principais, pois eles estão em `/libs`, que é imutável.
+Seus componentes também devem ser instrumentados para serem editados com o Editor universal. Para fazer isso, edite o componente de teaser. Portanto, é necessário sobrepor os Componentes Principais, pois os Componentes Principais estão em `/libs`, que é imutável.
 
 1. Abra o CRXDE Lite.
 
@@ -214,21 +214,21 @@ Seus componentes também devem ser instrumentados para serem editados com o Edit
    https://localhost:8443/crx/de
    ```
 
-1. Selecione o nó `/libs/core/wcm/components` e clique em **Sobrepor nó** na barra de ferramentas.
+1. Selecione o nó `/libs/core/wcm/components` e clique em **Sobrepor Nó** na barra de ferramentas.
 
-1. Com `/apps/` selecionado como **Local de sobreposição**, clique em **OK**.
+1. Com `/apps/` selecionado como **Local de Sobreposição**, clique em **OK**.
 
    ![Sobrepor o teaser](assets/dev-overlay-teaser.png)
 
-1. Selecione o `teaser` nó em `/libs/core/wcm/components` e clique em **Copiar** na barra de ferramentas.
+1. Selecione o nó `teaser` em `/libs/core/wcm/components` e clique em **Copiar** na barra de ferramentas.
 
 1. Selecione o nó sobreposto em `/apps/core/wcm/components` e clique em **Colar** na barra de ferramentas.
 
 1. Clique duas vezes no arquivo `/apps/core/wcm/components/teaser/v2/teaser/teaser.html` para editá-lo.
 
-   ![Editar o arquivo teaser.html](assets/dev-edit-teaser.png)
+   ![Editando o arquivo teaser.html](assets/dev-edit-teaser.png)
 
-1. No final do primeiro `div` na linha 26, adicione os detalhes da instrumentação do componente.
+1. No final do primeiro `div`, aproximadamente na linha 26, adicione os detalhes de instrumentação do componente.
 
    ```text
    data-aue-resource="urn:aem:${resource.path}"
@@ -236,17 +236,17 @@ Seus componentes também devem ser instrumentados para serem editados com o Edit
    data-aue-label="Teaser"
    ```
 
-1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor universal.
+1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor Universal.
 
 1. No Editor universal, clique no componente Teaser na parte superior da página e veja que agora você pode selecioná-lo.
 
-1. Se você clicar no botão **Árvore de conteúdo** ícone no painel de propriedades do Editor universal, é possível ver que o editor reconheceu todos os teasers da página agora que você o instrumentou. O teaser selecionado é o que está destacado.
+1. Se você clicar no ícone **Árvore de conteúdo** no painel de propriedades do Editor universal, verá que o editor reconheceu todos os teasers da página agora que você os instrumentou. O teaser selecionado é o que está destacado.
 
-   ![Seleção do componente de teaser instrumentado](assets/dev-select-teaser.png)
+   ![Selecionando o componente de teaser instrumentado](assets/dev-select-teaser.png)
 
 >[!TIP]
 >
->Consulte o documento [Uso da Fusão de recursos do Sling no Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) para obter mais detalhes sobre sobreposição de nós.
+>Consulte o documento [Uso da Sling Resource Merger no Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) para obter mais detalhes sobre a sobreposição de nós.
 
 ## Subcomponentes de instrumento do teaser {#subcomponents}
 
@@ -258,11 +258,11 @@ Agora é possível selecionar o teaser, mas ainda não editá-lo. Isso ocorre po
    https://localhost:8443/crx/de
    ```
 
-1. Selecione o nó `/apps/core/wcm/components/teaser/v2/teaser/` e clique duas vezes na guia `title.html` arquivo.
+1. Selecione o nó `/apps/core/wcm/components/teaser/v2/teaser/` e clique duas vezes no arquivo `title.html`.
 
    ![Editar o arquivo title.html](assets/dev-edit-title.png)
 
-1. Insira as seguintes propriedades no final da `h2` (próximo à linha 17).
+1. Insira as seguintes propriedades no final da marca `h2` (próximo à linha 17).
 
    ```text
    data-aue-prop="jcr:title"
@@ -270,7 +270,7 @@ Agora é possível selecionar o teaser, mas ainda não editá-lo. Isso ocorre po
    data-aue-label="Title"
    ```
 
-1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor universal.
+1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor Universal.
 
 1. Clique no título do mesmo componente de teaser na parte superior da página e veja que agora você pode selecioná-lo. A árvore de conteúdo também mostra o título como parte do componente de teaser selecionado.
 
@@ -285,12 +285,12 @@ Agora que você pode editar o título do teaser, vamos analisar o que você real
 Você identificou o componente de teaser para o Editor universal ao instrumentá-lo.
 
 * `data-aue-resource` identifica o recurso no AEM que está sendo editado.
-* `data-aue-type` O define que os itens devem ser tratados como um componente de página (em vez de, um contêiner).
-* `data-aue-label` O exibe um rótulo amigável na interface do usuário para o teaser selecionado.
+* `data-aue-type` define que os itens devem ser tratados como um componente de página (em vez de um contêiner).
+* `data-aue-label` exibe um rótulo amigável na interface do usuário para o teaser selecionado.
 
 Você também instrumentou o componente de título dentro do componente de teaser.
 
-* `data-aue-prop` é o atributo JCR que é gravado.
+* `data-aue-prop` é o atributo JCR que está gravado.
 * `data-aue-type` é como o atributo deve ser editado. Nesse caso, com o editor de texto, pois é um título (em vez de dizer, o editor de rich text).
 
 ## Definindo Cabeçalhos de Autenticação {#auth-header}
@@ -301,7 +301,7 @@ Agora é possível editar o título do teaser em linha e as alterações são pe
 
 No entanto, se você recarregar o navegador, o título anterior será recarregado. Isso ocorre porque, embora o Editor universal saiba como se conectar à instância do AEM, ele ainda não pode se autenticar na instância do AEM para gravar as alterações no JCR.
 
-Se você exibir a guia de rede das ferramentas de desenvolvedor do navegador e pesquisar por `update`No entanto, você pode ver que há um erro 401 ao tentar editar o título.
+Se você exibir a guia rede das ferramentas de desenvolvedor do navegador e pesquisar por `update`, verá que há um erro 401 ao tentar editar o título.
 
 ![Erro ao tentar editar o título](assets/dev-edit-error.png)
 
@@ -309,19 +309,19 @@ Ao usar o Editor universal para editar o conteúdo AEM de produção, o Editor u
 
 Quando você está desenvolvendo localmente, não é possível usar o provedor de identidade AEM, pois os tokens IMS são passados apenas para domínios de propriedade de Adobe. Você precisa fornecer manualmente uma maneira de autenticar, definindo explicitamente um cabeçalho de autenticação.
 
-1. Na interface do Editor universal, clique na guia **Cabeçalhos de autenticação** na barra de ferramentas.
+1. Na interface do Universal Editor, clique no ícone **Cabeçalhos de Autenticação** na barra de ferramentas.
 
-1. Copie no cabeçalho de autenticação necessário para autenticar em sua instância de AEM local e clique em **Salvar**.
+1. Copie no cabeçalho de autenticação necessário para autenticar na instância de AEM local e clique em **Salvar**.
 
-   ![Configuração de cabeçalhos de autenticação](assets/dev-authentication-headers.png)
+   ![Configurando cabeçalhos de autenticação](assets/dev-authentication-headers.png)
 
 1. Recarregue o Editor universal e edite o título do teaser.
 
 Não há mais erros relatados no console do navegador e as alterações são persistentes de volta à instância de desenvolvimento local do AEM.
 
-Se você investigar o tráfego nas ferramentas de desenvolvedor do navegador e procurar pelo `update` poderá ver os detalhes da atualização.
+Se você investigar o tráfego nas ferramentas de desenvolvedor do navegador e procurar os eventos `update`, poderá ver os detalhes da atualização.
 
-![Título do teaser editado com sucesso](assets/dev-edit-title-successfully.png)
+![Edição bem-sucedida do título do teaser](assets/dev-edit-title-successfully.png)
 
 ```json
 {
@@ -341,7 +341,7 @@ Se você investigar o tráfego nas ferramentas de desenvolvedor do navegador e p
 }
 ```
 
-* `connections` é a conexão com sua instância de AEM local
+* `connections` é a conexão com sua instância local do AEM
 * `target` é o nó exato e as propriedades atualizadas no JCR
 * `value` é a atualização que você fez.
 
@@ -353,7 +353,7 @@ Você pode ver a alteração persistida no JCR.
 >
 >Há muitas ferramentas disponíveis online para gerar os cabeçalhos de autenticação necessários para fins de teste e desenvolvimento.
 >
->O exemplo do cabeçalho básico de autenticação `Basic YWRtaW46YWRtaW4=` é para a combinação usuário/senha de `admin:admin` como é comum para o desenvolvimento local do AEM.
+>O exemplo de cabeçalho de autenticação básica `Basic YWRtaW46YWRtaW4=` é para a combinação usuário/senha de `admin:admin`, como é comum para o desenvolvimento local do AEM.
 
 ## Instrumentação do aplicativo para o painel Propriedades {#properties-rail}
 
@@ -371,7 +371,7 @@ Para atualizar seu aplicativo para usar o painel de propriedades para edição, 
 
 1. Em `/apps/wknd/components/page`, edite o arquivo `customheaderlibs.html`.
 
-   ![Edição do arquivo customheaderlibs.html](assets/dev-instrument-properties-rail.png)
+   ![Editando o arquivo customheaderlibs.html](assets/dev-instrument-properties-rail.png)
 
 1. Ao final do arquivo, adicione o script necessário para definir os componentes.
 
@@ -462,10 +462,10 @@ Para atualizar seu aplicativo para usar o painel de propriedades para edição, 
 
 ## O que tudo isso significa? {#what-does-it-mean-2}
 
-Para serem editáveis usando o painel de propriedades, os componentes devem ser atribuídos a `groups`, cada definição começa como uma lista de grupos contendo os componentes.
+Para serem editáveis usando o painel de propriedades, os componentes devem ser atribuídos a `groups`, de modo que cada definição comece como uma lista de grupos contendo os componentes.
 
 * `title` é o nome do grupo.
-* `id` é o identificador exclusivo do grupo, neste caso, componentes gerais que compõem o conteúdo da página em vez de componentes avançados para o layout da página, por exemplo.
+* `id` é o identificador exclusivo do grupo, neste caso, componentes gerais que compõem o conteúdo da página em oposição a componentes avançados para o layout da página, por exemplo.
 
 Cada grupo tem uma matriz de `components`.
 
@@ -474,17 +474,17 @@ Cada grupo tem uma matriz de `components`.
 
 Cada componente tem uma definição de plug-in que define como o componente é mapeado para AEM.
 
-* `aem` é o plug-in que lida com a edição. Isso pode ser considerado o serviço que processa o componente.
-* `page` define que tipo de componente é, neste caso um componente página padrão.
+* `aem` é o plug-in que gerencia a edição. Isso pode ser considerado o serviço que processa o componente.
+* `page` define que tipo de componente é, neste caso um componente de página padrão.
 * `resourceType` é o mapeamento para o componente AEM real.
 
 Cada componente deve ser mapeado para um `model` para definir os campos editáveis individuais.
 
-* `id` é o identificador exclusivo do modelo, que deve corresponder à ID do componente.
-* `fields` é uma matriz dos campos individuais.
+* `id` é o identificador exclusivo do modelo, que deve corresponder à identificação do componente.
+* `fields` é uma matriz de campos individuais.
 * `component` é o tipo de entrada, como texto ou área de texto.
 * `name` é o nome do campo no JCR para o qual o campo está mapeado.
-* `label` é a descrição do campo que aparece na interface do editor.
+* `label` é a descrição do campo que aparece na interface do usuário do editor.
 * `valueType` é o tipo de dados.
 
 ## Instrumentar o componente para o painel de propriedades {#properties-rail-component}
@@ -499,15 +499,15 @@ Você também precisa definir no nível do componente, qual modelo o componente 
 
 1. Clique duas vezes no arquivo `/apps/core/wcm/components/teaser/v2/teaser/teaser.html` para editá-lo.
 
-   ![Editar o arquivo teaser.html](assets/dev-edit-teaser.png)
+   ![Editando o arquivo teaser.html](assets/dev-edit-teaser.png)
 
-1. No final do primeiro `div` aproximadamente na linha 32, depois das propriedades adicionadas anteriormente, adicione os detalhes de instrumentação do modelo que o componente de teaser usará.
+1. No final do primeiro `div`, aproximadamente na linha 32, depois das propriedades adicionadas anteriormente, adicione os detalhes de instrumentação do modelo que o componente de teaser usará.
 
    ```text
    data-aue-model="teaser"
    ```
 
-1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor universal.
+1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor Universal.
 
 Agora você está pronto para testar o painel de propriedades instrumentado para o seu componente.
 
@@ -515,7 +515,7 @@ Agora você está pronto para testar o painel de propriedades instrumentado para
 
 1. Clique no painel de propriedades para mostrar a guia de propriedades e ver os campos que você acabou de instrumentar.
 
-   ![O painel de propriedades instrumentadas](assets/dev-properties-rail-instrumented.png)
+   ![Painel de propriedades instrumentado](assets/dev-properties-rail-instrumented.png)
 
 Agora é possível editar o título do teaser em linha, como anteriormente, ou no painel de propriedades. Em ambos os casos, as alterações são persistentes de volta à instância de desenvolvimento local do AEM.
 
@@ -533,9 +533,9 @@ Por exemplo, é possível adicionar um campo para ajustar o estilo do componente
 
 1. Em `/apps/wknd/components/page`, edite o arquivo `customheaderlibs.html`.
 
-   ![Edição do arquivo customheaderlibs.html](assets/dev-instrument-styles.png)
+   ![Editando o arquivo customheaderlibs.html](assets/dev-instrument-styles.png)
 
-1. No script de definição de modelo, adicione um item adicional à variável `fields` matriz para o campo de estilo. Lembre-se de adicionar uma vírgula após o último campo antes de inserir o novo.
+1. No script de definição de modelo, adicione um item adicional à matriz `fields` para o campo de estilo. Lembre-se de adicionar uma vírgula após o último campo antes de inserir o novo.
 
    ```json
    {
@@ -551,7 +551,7 @@ Por exemplo, é possível adicionar um campo para ajustar o estilo do componente
    }
    ```
 
-1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor universal.
+1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor Universal.
 
 1. Clique no título do teaser para editá-lo mais uma vez.
 
@@ -570,7 +570,7 @@ Ao começar a instrumentar seu próprio aplicativo, lembre-se das etapas básica
 1. [Você configura seu ambiente de desenvolvimento.](#prerequisites)
    * AEM executado localmente em HTTPS com WKND instalado
    * Serviço do Editor Universal executado localmente em HTTPS
-1. Você atualizou as configurações do AEM OSGi para permitir que o conteúdo seja carregado remotamente.
+1. Você atualizou as configurações OSGi do AEM para permitir que o conteúdo seja carregado remotamente.
    * [&quot;org.apache.sling.engine.impl.SlingMainServlet&quot;](#sameorigin)
    * [&quot;com.day.crx.security.token.impl.impl.TokenAuthenticationHandler&quot;](#samesite-cookies)
 1. [Você adicionou o ](#ue-connect-remote-frame)
@@ -589,10 +589,10 @@ Você pode seguir essas mesmas etapas para instrumentar seu próprio aplicativo 
 
 Consulte os seguintes documentos para obter mais informações e detalhes sobre os recursos do Universal Editor.
 
-* Se quiser começar a usar o o mais rápido possível, consulte o [Introdução ao editor universal no AEM](/help/implementing/universal-editor/getting-started.md) documento.
-* Consulte o documento [Introdução ao editor universal no AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) para obter mais detalhes sobre as configurações OSGi necessárias.
-* Consulte o documento [Introdução ao editor universal no AEM](/help/implementing/universal-editor/getting-started.md#connection) para obter mais detalhes sobre os metadados de conexão.
-* Consulte o documento [Arquitetura do editor universal](/help/implementing/universal-editor/architecture.md#service) para obter mais detalhes sobre a estrutura do Editor universal.
-* Consulte o documento [Desenvolvimento local do AEM com o editor universal](/help/implementing/universal-editor/local-dev.md) para obter mais detalhes sobre como se conectar a uma versão auto-hospedada do Universal Editor.
-* Consulte o documento [Uso da Fusão de recursos do Sling no Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) para obter mais detalhes sobre sobreposição de nós.
+* Se você quiser começar a usar o mais rápido possível, consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md).
+* Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md#sameorigin) para obter mais detalhes sobre as configurações OSGi necessárias.
+* Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md#connection) para obter mais detalhes sobre os metadados de conexão.
+* Consulte o documento [Arquitetura do Editor Universal](/help/implementing/universal-editor/architecture.md#service) para obter mais detalhes sobre a estrutura do Editor Universal.
+* Consulte o documento [Desenvolvimento local de AEM com o Universal Editor](/help/implementing/universal-editor/local-dev.md) para obter mais detalhes sobre como se conectar a uma versão auto-hospedada do Universal Editor.
+* Consulte o documento [Uso da Sling Resource Merger no Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/sling-resource-merger.md) para obter mais detalhes sobre a sobreposição de nós.
 

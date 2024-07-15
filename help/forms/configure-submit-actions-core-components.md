@@ -15,7 +15,7 @@ ht-degree: 8%
 
 # Ação de envio do formulário adaptável {#configuring-the-submit-action}
 
-<span class="preview"> O Adobe recomenda usar os Componentes principais para [adicionar o Adaptive Forms a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou para [criar Forms adaptável independente](/help/forms/creating-adaptive-form-core-components.md). </span>
+O Adobe <span class="preview"> recomenda usar os Componentes Principais para [adicionar o Adaptive Forms a uma Página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou para [criar o Adaptive Forms](/help/forms/creating-adaptive-form-core-components.md) independente. </span>
 
 
 | Versão | Link do artigo |
@@ -23,7 +23,7 @@ ht-degree: 8%
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Este artigo |
 
-Uma ação enviar permite escolher o destino dos dados capturados por meio de um formulário adaptável. É acionado quando um usuário clica na variável **[!UICONTROL Enviar]** em um Formulário adaptável. O Forms as a Cloud Service, para o Adaptive Forms baseado em Componentes principais, oferece uma variedade de Ações de envio pré-criadas. Essas ações de envio prontas para uso permitem:
+Uma ação enviar permite escolher o destino dos dados capturados por meio de um formulário adaptável. É acionado quando um usuário clica no botão **[!UICONTROL Enviar]** em um Formulário adaptável. O Forms as a Cloud Service, para o Adaptive Forms baseado em Componentes principais, oferece uma variedade de Ações de envio pré-criadas. Essas ações de envio prontas para uso permitem:
 
 * Envie dados de formulário por email sem esforço.
 * Iniciar fluxos do Microsoft® Power Automate ou fluxos de trabalho do AEM ao transmitir os dados.
@@ -31,9 +31,9 @@ Uma ação enviar permite escolher o destino dos dados capturados por meio de um
 * Envie os dados com facilidade para uma fonte de dados configurada usando o Modelo de dados de formulário (FDM).
 * Envie convenientemente os dados para um endpoint REST.
 
-Você pode [estender as ações enviar padrão](custom-submit-action-form.md). Você também pode personalizar as Ações de envio para requisitos específicos da organização.
+Você pode [estender as Ações de Envio padrão](custom-submit-action-form.md). Você também pode personalizar as Ações de envio para requisitos específicos da organização.
 
-Para definir uma ação Enviar para um Adaptável, use a Caixa de diálogo Configurar de um **Contêiner de formulário adaptável** componente. A caixa de diálogo de configuração de um **Contêiner de formulário adaptável** O componente inclui:
+Para definir uma ação Enviar para um Adaptável, use a Caixa de Diálogo Configurar de um componente **Contêiner de formulário adaptável**. A caixa de diálogo de configuração de um componente **Contêiner de formulário adaptável** inclui:
 * Guia Básico
 * Guia Modelo de dados de formulário
 * Guia Enviar
@@ -44,17 +44,17 @@ Você pode definir as propriedades do Contêiner de formulário usando a caixa d
 
 Para selecionar e configurar uma Ação de envio para o formulário:
 
-1. Abra o Navegador de conteúdo e selecione a variável **[!UICONTROL Contêiner do guia]** componente do seu Formulário adaptável.
-1. Clique nas propriedades do Container do guia ![Propriedades do guia](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável é aberta.
+1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
+1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
 
-1. Clique em  **[!UICONTROL Envio]** guia.
+1. Clique na guia **[!UICONTROL Envio]**.
 
    ![Clique no ícone de chave inglesa para abrir a caixa de diálogo Contêiner de formulário adaptável para configurar uma ação de envio](/help/forms/assets/adaptive-forms-submit-message.png)
 
-1. Selecionar e configurar um **[!UICONTROL Enviar ação]**, com base nas suas necessidades.
+1. Selecione e configure uma **[!UICONTROL Ação de envio]**, com base em suas necessidades.
 
 Você também pode configurar diferentes ações para envios de um Formulário adaptável.
-* **URL/caminho de redirecionamento** - Essa opção permite que o usuário configure uma página para cada formulário, para a qual os usuários do formulário são redirecionados após enviar um Formulário adaptável.
+* **Redirecionar URL/Caminho** - Essa opção permite que o usuário configure uma página para cada formulário, para o qual os usuários do formulário são redirecionados após enviarem um Formulário adaptável.
 * **Mostrar mensagem**: essa opção permite que os usuários adicionem uma mensagem que é exibida quando o formulário adaptável é enviado com sucesso. O texto predefinido é incluído na caixa de diálogo e pode ser modificado pelo usuário.
 
 Para obter informações detalhadas sobre as seguintes Ações de Submissão, consulte:
@@ -74,7 +74,7 @@ Também é possível enviar um Formulário adaptável para outras configuraçõe
 * [Conectar o formulário adaptável ao aplicativo Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Conectar um formulário adaptável ao Microsoft® Dynamics OData](/help/forms/ms-dynamics-odata-configuration.md)
 
-Você pode [personalizar as ações enviar padrão](custom-submit-action-form.md). Além disso, você pode personalizar as Ações de envio para alinhá-las a requisitos organizacionais específicos.
+Você pode [personalizar as Ações de Envio padrão](custom-submit-action-form.md). Além disso, você pode personalizar as Ações de envio para alinhá-las a requisitos organizacionais específicos.
 
 
 <!--
@@ -213,7 +213,7 @@ If end-user bypass those validations and submit the forms, the server again perf
 
 Como parte das diretrizes de segurança e proteção contra AEM, configure páginas de erro personalizadas como 400.jsp, 404.jsp e 500.jsp. Esses manipuladores são chamados quando ao enviar um formulário 400, 404 ou 500 erros são exibidos. Os manipuladores também são chamados quando esses códigos de erro são acionados no nó do Publish. Você também pode criar páginas JSP para outros códigos de erro HTTP.
 
-Quando você preenche um modelo de dados de formulário (FDM) ou um formulário adaptável baseado em esquema com uma reclamação de dados XML ou JSON para um esquema cujos dados não contêm `<afData>`, `<afBoundData>`, e `</afUnboundData>` , os dados de campos não vinculados do Formulário adaptável serão perdidos. O esquema pode ser um esquema XML, esquema JSON ou um Modelo de dados de formulário (FDM). Os campos não limitados são campos do Formulário adaptável sem `bindref` propriedade.
+Quando você preenche um modelo de dados de formulário (FDM) ou um formulário adaptável baseado em esquema com reclamação de dados XML ou JSON para um esquema cujos dados não contêm as tags `<afData>`, `<afBoundData>` e `</afUnboundData>`, os dados de campos não vinculados do formulário adaptável são perdidos. O esquema pode ser um esquema XML, esquema JSON ou um Modelo de dados de formulário (FDM). Campos não limitados são campos de Formulário adaptável sem a propriedade `bindref`.
 
 <!-- For more information, see [Customizing Pages shown by the Error Handler](/help/sites-developing/customizing-errorhandler-pages.md). -->
 

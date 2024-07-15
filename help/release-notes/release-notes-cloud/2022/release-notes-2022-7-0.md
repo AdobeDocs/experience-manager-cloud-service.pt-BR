@@ -13,7 +13,7 @@ ht-degree: 81%
 
 # Notas de versão 202278.0 para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-A seção a seguir descreve as notas de versão de recurso da versão 2022.7.0 do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de versão do recurso para a versão 2022.7.0 do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Assista ao vídeo Visão geral da versão de julho de 2022 para ver um resumo do
 
 * O [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) agora é compatível com [atalhos de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md).
 
-* AEM como Cloud Service [entrega de imagens otimizadas para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) O permite melhorar significativamente a velocidade da página, fornecendo formatos como o WebP. Esse novo serviço também oferece opções mais flexíveis de redimensionamento e transformação de imagem. Todas as versões do [Componente de imagem principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR) Permitem usar este serviço e fornecer imagens em formato WebP clicando em uma opção na política do componente de imagem.
+* O AEM Cloud Service como a [entrega de imagem otimizada para a Web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=pt-BR) permite melhorar significativamente a velocidade da página, fornecendo formatos como o WebP. Esse novo serviço também oferece opções mais flexíveis de redimensionamento e transformação de imagem. Todas as versões do [Componente de imagem principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=pt-BR) permitem usar este serviço e fornecer imagens em formato WebP clicando em uma opção na política do componente de imagem.
 
 * As atividades de personalização do AEM agora podem usar fragmentos de experiência no lugar de nossas ofertas herdadas. Este recurso:
    * permite um caminho de migração, onde o conteúdo do AEM promoveria ofertas de fragmentos de experiência, em vez de ofertas de bibliotecas herdadas, para fornecer conteúdo com estilo adequado e alinhado com a personalização em escala a partir de agora.
@@ -104,8 +104,8 @@ Agora é possível configurar o Adobe Experience Manager Assets para [restringir
 ### Novidades {#what-is-new-foundation}
 
 * Agora, o [Navegador do repositório](/help/implementing/developing/tools/repository-browser.md) tem um campo de entrada de caminho, permitindo navegar diretamente para uma pasta específica na hierarquia do repositório
-* A Distribuição de conteúdo do Sling (SCD) agora é compatível com uma ação de &quot;invalidação&quot; explícita para invalidar o conteúdo sem que ele seja publicado. Consulte [Armazenamento em cache no AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obter mais detalhes.
-* O módulo mod_macro agora está disponível no AEM as a Cloud Service. Consulte [esta tabela](/help/implementing/dispatcher/disp-overview.md) para obter uma lista de módulos compatíveis do Apache.
+* A Distribuição de conteúdo do Sling (SCD) agora é compatível com uma ação de &quot;invalidação&quot; explícita para invalidar o conteúdo sem que ele seja publicado. Consulte a página [Armazenamento em cache no AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) para obter mais detalhes.
+* O módulo mod_macro agora está disponível no AEM as a Cloud Service. Consulte [esta tabela](/help/implementing/dispatcher/disp-overview.md) para obter uma lista de módulos Apache compatíveis.
 
 ### Aprimoramentos das ferramentas do Dispatcher do SDK do AEM as a Cloud Service {#dispatcher-tools-enhancements}
 
@@ -114,7 +114,7 @@ Agora é possível configurar o Adobe Experience Manager Assets para [restringir
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Experience Manager] {#prerelease-features-foundation}
 
-* O AEM as a Cloud Service agora está integrado ao shell unificado para melhorar a experiência do usuário e unificá-la com todos os outros aplicativos da Experience Cloud. Consulte [AEM as a Cloud Service no shell unificado](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
+* O AEM as a Cloud Service agora está integrado ao shell unificado para melhorar a experiência do usuário e unificá-la com todos os outros aplicativos da Experience Cloud. Consulte [AEM as a Cloud Service no Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
 
 ## Conectores do Adobe Learning Manager {#learn-manage}
 

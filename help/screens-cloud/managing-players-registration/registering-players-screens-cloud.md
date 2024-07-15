@@ -13,22 +13,22 @@ ht-degree: 1%
 
 # Registro de players no Screens as a Cloud Service {#registering-players-screens-cloud}
 
-Depois de instalar e configurar reprodutores para o Screens as a Cloud Service, você deve registrar os reprodutores.
+Depois de instalar e configurar reprodutores para o Screens as a Cloud Service, você deve registrá-los.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender o registro de players no provedor de serviços do Screens. Depois de ler, você deverá ser capaz de:
+Este documento ajuda você a entender o registro de players no Screens Services Provider. Depois de ler, você deverá ser capaz de:
 
 * entender como registrar players
-* como concluir o processo de registro do provedor de serviços Screens
+* como concluir o processo de registro do Provedor de Serviços Screens
 
 ## Etapas para registrar um reprodutor do Screens {#register-players}
 
-Depois de instalar o reprodutor no Screens as a Cloud Service, você estará pronto para registrá-lo no provedor de serviços do Screens.
+Depois de instalar o reprodutor no Screens as a Cloud Service, você estará pronto para registrá-lo no Provedor de serviços da Screens.
 
 Siga as etapas abaixo para registrar seu reprodutor:
 
-1. Faça logon no provedor de serviços do Screens.
+1. Faça logon no Provedor de Serviços Screens.
 
 1. Navegue até **Códigos de registro** em **Gerenciamento de players** no painel de navegação esquerdo e clique em **Criar código**.
 
@@ -37,22 +37,22 @@ Siga as etapas abaixo para registrar seu reprodutor:
 
    ![imagem](/help/screens-cloud/assets/player/register-player1.png)
 
-1. Preencha os seguintes campos em **Criar um código de registro** caixa de diálogo:
+1. Preencha os seguintes campos na caixa de diálogo **Criar um código de registro**:
 
    ![imagem](/help/screens-cloud/assets/player/register-player2.png)
 
-   1. **Nome do código de registro**: Nome do código de registro
-   1. **Expiração do código de registro**: Data de expiração do código de registro
-   1. **Limitar uso**: Alterne o botão para desativar o limite de uso do código de registro. Por padrão, a opção Limitar uso está desativada.
-   1. **Limite de uso**: escolha o número para o seu limite de uso
+   1. **Nome do Código de Registro**: Nome para seu código de registro
+   1. **Expiração do código de registro**: data de expiração do código de registro
+   1. **Limitar Uso**: Ative o botão para desativar o limite de uso do seu código de registro. Por padrão, a opção Limitar uso está desativada.
+   1. **Limite de uso**: escolha o número para seu limite de uso
 
 1. Clique em **Criar** para criar o código de registro. Você pode ver seu reprodutor com o código de registro na lista.
 
    ![imagem](/help/screens-cloud/assets/player/register-player3.png)
 
-1. Clique no valor abaixo da coluna **CÓDIGO DE REGISTRO**  para copiar o valor para a área de transferência.
+1. Clique no valor na coluna **CÓDIGO DE REGISTRO** para copiar o valor para a área de transferência.
 
-1. Cole esse valor no **Inserir código** no campo **Registro do reprodutor** na interface de usuário do Administrador do reprodutor do AEM Screens e clique em **Registrar**.
+1. Cole esse valor no campo **Inserir código** da guia **Registro do player** da interface do Administrador do reprodutor do AEM Screens e clique em **Registrar**.
 
    ![imagem](/help/screens-cloud/assets/player/register-player4.png)
 
@@ -61,7 +61,7 @@ Siga as etapas abaixo para registrar seu reprodutor:
 
    ![imagem](/help/screens-cloud/assets/player/register-player5.png)
 
-1. Você deve ver este player agora aparecer em **Reprodutores** no painel de navegação esquerdo. O código exibido no Provedor de serviços do Screens corresponde ao **Informações do sistema** da interface do Administrador em Código do player.
+1. Você deve ver este player agora em **Players** no painel de navegação esquerdo. O código exibido no Provedor de Serviços Screens corresponde ao painel **Informações do Sistema** da interface do usuário do Administrador em Código do player.
 
    ![imagem](/help/screens-cloud/assets/player/register-player6.png)
 
@@ -72,4 +72,4 @@ Siga as etapas abaixo para registrar seu reprodutor:
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você instalou e configurou o reprodutor no modo Nuvem, continue sua jornada as a Cloud Service do Screens revisando o documento em seguida, [Atribuição do reprodutor a uma exibição no Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) do provedor de serviços Screens.
+Agora que você instalou e configurou o reprodutor no modo Nuvem, continue sua jornada do Screens as a Cloud Service revisando o documento, [Atribuindo o reprodutor a uma exibição no Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) do Provedor de Serviços Screens.

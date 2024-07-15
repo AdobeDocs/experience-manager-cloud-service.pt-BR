@@ -82,13 +82,13 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
 
-* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
 
 * Jornada do desenvolvedor AEM headless
    * [Saiba mais sobre o desenvolvimento headless do CMS](/help/journey-headless/developer/learn-about.md)
    * [Saiba como modelar seu conteúdo](/help/journey-headless/developer/model-your-content.md)
 
-* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 
 * [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
 

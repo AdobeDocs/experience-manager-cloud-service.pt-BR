@@ -13,43 +13,43 @@ ht-degree: 3%
 
 # Criação e gerenciamento de exibições no Screens as a Cloud Service {#create-displays-screens-cloud}
 
-Depois de publicar seu canal, agora é hora de criar sua exibição no Provedor de serviços do Screens.
+Depois de publicar seu canal, é hora de criar sua exibição no Provedor de Serviços Screens.
 
 Uma Exibição é um agrupamento virtual de telas que geralmente são posicionadas uma ao lado da outra. O visor é geralmente permanente em relação a uma instalação. Esse conteúdo de objeto é com o que os autores trabalham e sempre se referem como exibição lógica em vez de suas contrapartes físicas.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como criar e gerenciar exibições no provedor de serviços do Screens. Depois de ler esse documento, você deverá:
+Este documento ajuda você a entender como criar e gerenciar exibições no Provedor de serviços da Screens. Depois de ler esse documento, você deverá:
 
 * Saiba como criar e excluir exibições
 * Saiba como organizar exibições em pastas
 
 ## Etapas para criar uma exibição {#create-display}
 
-Siga as etapas abaixo para criar a exibição a partir do provedor de serviços do Screens:
+Siga as etapas abaixo para criar a exibição do Provedor de Serviços Screens:
 
-1. Navegue até o provedor de serviços do Screens a partir da instância do AEM Cloud Service.
-1. Selecionar **Exibições** no painel de navegação esquerdo e clique em **Criar** no canto superior direito da tela.
+1. Navegue até o Provedor de serviços da Screens na sua instância do AEM Cloud Service.
+1. Selecione **Exibições** no painel de navegação esquerdo e clique em **Criar** no canto superior direito da tela.
 
    ![imagem](/help/screens-cloud/assets/display/disp-1.png)
 
-1. Selecionar **Exibir** na barra de ações.
+1. Selecione **Exibir** na barra de ações.
 
    ![imagem](/help/screens-cloud/assets/display/disp-2.png)
 
-1. Insira o título como **LoopingChannelDisplay** in **Nome de exibição** e clique em **Criar**.
+1. Insira o título como **LoopingChannelDisplay** em **Nome de Exibição** e clique em **Criar**.
 
    ![imagem](/help/screens-cloud/assets/display/disp3.png)
 
-1. A exibição intitulada como **LoopingChannelDisplay** agora estarão visíveis na lista de exibição.
+1. A exibição denominada **LoopingChannelDisplay** agora estará visível na lista de exibição.
 
    ![imagem](/help/screens-cloud/assets/display/disp-4.png)
 
 ### Excluir uma exibição {#deleting-display}
 
-Você pode excluir uma exibição do provedor de serviços do Screens.
+Você pode excluir uma exibição do Provedor de Serviços Screens.
 
-Selecione a exibição e clique em **Excluir** na parte inferior do painel, como mostrado na figura abaixo.
+Selecione a exibição e clique em **Excluir** na parte inferior do painel, conforme mostrado na figura abaixo.
 
 ![imagem](/help/screens-cloud/assets/display/disp-5.png)
 
@@ -67,7 +67,7 @@ Você pode alternar o painel de pastas da exibição de todas as pastas para pas
 
    ![imagem](/help/screens-cloud/assets/display/toggle-rail.png)
 
-1. Selecionar **Ocultar pastas** para fechá-la novamente.
+1. Selecione **Ocultar Pastas** para fechá-lo novamente.
 
 ## Como criar uma pasta {#create-folder}
 
@@ -78,9 +78,9 @@ Você pode criar pastas para organizar melhor suas exibições.
 
    ![imagem](/help/screens-cloud/assets/display/verify-view.png)
 
-   Nota: **Todas as exibições** deve ser selecionado no painel lateral da pasta e a navegação estrutural deve mostrar apenas **Exibições**.
+   Observação: **Todas as Exibições** devem ser selecionadas no painel lateral da pasta e a navegação estrutural deve mostrar apenas **Exibições**.
 
-1. Clique no botão &quot;Criar&quot; no canto superior direito e selecione a **Pasta** opção.
+1. Clique no botão &quot;Criar&quot; na parte superior direita e selecione a opção **Pasta**.
 
    ![imagem](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -100,7 +100,7 @@ Você pode criar pastas para organizar melhor suas exibições.
    * A pasta deve ser selecionada no painel lateral da pasta.
    * A navegação estrutural deve mostrar o nome da pasta atual ao lado de **Exibições**.
 
-1. Clique em  **Criar**  na parte superior direita e selecione a **Pasta** opção.
+1. Clique em **Criar** no canto superior direito e selecione a opção **Pasta**.
 
    ![imagem](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -120,7 +120,7 @@ Você pode mover o conteúdo para suas novas pastas para organizar melhor suas e
 
 ![imagem](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Nota**: a pasta deve ser selecionada no painel lateral da pasta. Além disso, a navegação estrutural deve mostrar o nome da pasta atual ao lado de **Exibições**.
+**Observação**: a pasta deve ser selecionada no painel lateral da pasta. Além disso, a navegação estrutural deve mostrar o nome da pasta atual ao lado de **Exibições**.
 
 ## Como excluir conteúdo de uma pasta {#delete-folder}
 
@@ -130,9 +130,9 @@ Todas as operações de pastas podem ser acessadas pela barra de ação de sele�
 
 1. Na visualização de inventário, selecione a pasta secundária que você deseja excluir e certifique-se de que ela esteja vazia.
 
-1. Clique em **Excluir** ação na barra de ação da seleção. A ação será desativada se a pasta não estiver vazia.
+1. Clique na ação **Excluir** na barra de ações de seleção. A ação será desativada se a pasta não estiver vazia.
 
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar a jornada as a Cloud Service do Screens revisando o documento em seguida [Atribuição de canal a uma Exibição no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).
+Agora que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar a as a Cloud Service jornada do Screens revisando o documento [Atribuição de canal a uma exibição no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).

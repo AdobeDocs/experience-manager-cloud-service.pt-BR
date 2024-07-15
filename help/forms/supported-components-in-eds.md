@@ -7,18 +7,18 @@ hidefromtoc: true
 source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
 
 
 
-# Componentes de HTML compatíveis com a Entrega de borda de bloco de formulário
+# Componentes de HTML compatíveis com o Edge Delivery de bloco de formulário
 
-O AEM Forms Edge Delivery inclui um bloco de formulário. O Bloco de formulário ajuda a criar formulários facilmente para capturar e armazenar dados capturados.
+O AEM Forms Edge Delivery inclui um bloco Formulário. O Bloco de formulário ajuda a criar formulários facilmente para capturar e armazenar dados capturados.
 
-O bloco Formulário é compatível com componentes HTML-5 OOTB, como texto, email, número, data e muito mais. Ele também suporta elementos de área de texto, seleção e conjunto de campos, e inclui recursos de validação de entrada que são nativos do HTML-5. O Bloco de formulário cria estrutura de HTML uniforme para todos os tipos de campo e containers, garantindo a consistência. Você também [estilo dos tipos de campo](https://adobe-rnd.github.io/form-block/customization/styling_form) usando o `form.css` arquivo.
+O bloco Formulário é compatível com componentes HTML-5 OOTB, como texto, email, número, data e muito mais. Ele também suporta elementos de área de texto, seleção e conjunto de campos, e inclui recursos de validação de entrada que são nativos do HTML-5. O Bloco de formulário cria estrutura de HTML uniforme para todos os tipos de campo e containers, garantindo a consistência. Você também [estiliza os tipos de campo](https://adobe-rnd.github.io/form-block/customization/styling_form) usando o arquivo `form.css`.
 
 ## Tipos de entrada de HTML 5 compatíveis no bloco de formulário
 

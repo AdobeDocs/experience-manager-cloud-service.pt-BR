@@ -1,5 +1,5 @@
 ---
-title: Visualização Meu espaço de trabalho para ativos
+title: Visualização Meu Workspace para Assets
 description: Meu espaço de trabalho é uma página que fornece módulos visuais personalizáveis para um acesso conveniente às áreas-chave da interface do Assets e informações mais relevantes para o usuário.
 exl-id: 4ffba974-6e8e-48e2-aa57-7d4041032226
 feature: Asset Management, Publishing, Collaboration, Asset Processing
@@ -46,7 +46,7 @@ Para fixar um ativo, uma pasta ou uma coleção:
 
 1. Selecione o item e clique em **[!UICONTROL Fixar no Acesso rápido]**.
 
-1. Selecione se precisa fixar o item apenas para você, para toda a organização ou para grupos selecionados. Se você selecionar **[!UICONTROL Para grupos]**, escolha nomes de grupos existentes na **[!UICONTROL Fixar para grupos]** campo.
+1. Selecione se precisa fixar o item apenas para você, para toda a organização ou para grupos selecionados. Se você selecionar **[!UICONTROL Para grupos]**, escolha um nome de grupo existente no campo **[!UICONTROL Fixar para grupos]**.
 
    ![Fixação de itens para grupos](assets/pin-items-for-groups.png)
 1. Clique em **[!UICONTROL Fixar]**.
@@ -58,13 +58,13 @@ Para fixar um ativo, uma pasta ou uma coleção:
 
 Os administradores podem exibir um resumo do número de downloads e uploads executados no ambiente do Assets durante os últimos 30 dias. Você pode clicar em **[!UICONTROL Exibir tudo]** para navegar rapidamente até a página Insights para painéis mais detalhados.
 
-Você também pode visualizar os principais termos pesquisados junto com o número de vezes que esses termos são pesquisados na implantação de exibição do Assets usando o **Insights** seção do Meu espaço de trabalho. Você também pode navegar até os Insights detalhados para exibir as principais pesquisas durante os últimos 30 dias ou 12 meses.
+Você também pode exibir os principais termos pesquisados, juntamente com o número de vezes que esses termos são pesquisados na sua implantação de exibição do Assets, usando a seção **Insights** do My Workspace. Você também pode navegar até os Insights detalhados para exibir as principais pesquisas durante os últimos 30 dias ou 12 meses.
 
 ![Insights no Espaço de trabalho](assets/insights.png)
 
 **Tarefas**
 
-Exibe a lista de tarefas atualmente atribuídas a você na **[!UICONTROL Minhas Tarefas]** , criado por você na **[!UICONTROL Tarefas atribuídas]** e as tarefas já concluídas por você na **[!UICONTROL Tarefas concluídas]** guia. Selecione uma tarefa e clique em **[!UICONTROL Concluir tarefa]** para aprovar ou rejeitar uma tarefa. Você também pode selecionar uma tarefa e clicar em **[!UICONTROL Abrir detalhes da tarefa]** para exibir a tarefa e aprová-la, rejeitá-la, editá-la ou excluí-la.
+Exibe a lista de tarefas atualmente atribuídas a você na guia **[!UICONTROL Minhas Tarefas]**, criada por você na guia **[!UICONTROL Tarefas atribuídas]**, e as tarefas já concluídas por você na guia **[!UICONTROL Tarefas concluídas]**. Você pode selecionar uma tarefa e clicar em **[!UICONTROL Concluir tarefa]** para aprovar ou rejeitar uma tarefa. Você também pode selecionar uma tarefa e clicar em **[!UICONTROL Abrir detalhes da tarefa]** para exibir a tarefa e aprová-la, rejeitá-la, editá-la ou excluí-la.
 
 ![Tarefas no Espaço de trabalho](assets/tasks-workspace.png)
 
@@ -76,7 +76,7 @@ Exibe a lista de tarefas atualmente atribuídas a você na **[!UICONTROL Minhas 
 
 Exibe exibições variadas de ativos, incluindo a lista de ativos que você visualizou recentemente. Você pode optar por exibir ativos no widget em uma Exibição de lista, Exibição de grade, Exibição de galeria ou Exibição de cascata e classificar os ativos por nome, tamanho e data de modificação. Você também pode selecionar um ativo para exibir os detalhes do ativo ou removê-lo da lista de ativos visualizados recentemente.
 
-A variável **[!UICONTROL Principais downloads]** A guia exibe os dez ativos mais baixados disponíveis no ambiente de exibição do Assets. É possível optar por exibir os ativos no formato de exibição de lista ou de grade. Ambas as exibições mostram o tipo de formato e o número de downloads para cada ativo. Também é possível selecionar um ativo e clicar em **[!UICONTROL Detalhes]** para exibir suas propriedades.
+A guia **[!UICONTROL Principais downloads]** exibe os dez principais ativos mais baixados disponíveis no seu ambiente de exibição do Assets. É possível optar por exibir os ativos no formato de exibição de lista ou de grade. Ambas as exibições mostram o tipo de formato e o número de downloads para cada ativo. Também é possível selecionar um ativo e clicar em **[!UICONTROL Detalhes]** para exibir suas propriedades.
 
 ![Widget de Conteúdo no Espaço de trabalho](assets/workspace-content.png)
 

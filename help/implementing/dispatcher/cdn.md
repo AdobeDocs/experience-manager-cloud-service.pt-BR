@@ -26,14 +26,14 @@ A CDN gerenciada por AEM atende à maioria dos requisitos de desempenho e segura
 
 ## CDN gerenciada por AEM  {#aem-managed-cdn}
 
-Siga as seções abaixo para usar a interface de autoatendimento do Cloud Manager para se preparar para a entrega de conteúdo usando o CDN pronto para uso com AEM:
+Siga as seções abaixo para usar a interface de autoatendimento do Cloud Manager para se preparar para a entrega de conteúdo usando a CDN pronta para uso do AEM:
 
 1. [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
-**Restrição de tráfego**
+**Restringindo o tráfego**
 
-Por padrão, para uma configuração de CDN gerenciada pelo AEM, todo o tráfego público pode chegar ao serviço de publicação para ambientes de produção e não produção (desenvolvimento e preparo). É possível limitar o tráfego para o serviço de publicação de um determinado ambiente (por exemplo, limitando o preparo por um intervalo de endereços IP) por meio da interface do Cloud Manager.
+Por padrão, para uma configuração de CDN gerenciada pelo AEM, todo o tráfego público pode chegar ao serviço de publicação para ambientes de produção e não produção (desenvolvimento e preparo). É possível limitar o tráfego para o serviço de publicação de um determinado ambiente (por exemplo, limitação de preparo por um intervalo de endereços IP) por meio da interface do usuário do Cloud Manager.
 
 Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) para saber mais.
 
@@ -43,11 +43,11 @@ Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud
 
 ### Configuração do tráfego no CDN {#cdn-configuring-cloud}
 
-As regras para configurar o tráfego e os filtros CDN podem ser declaradas em um arquivo de configuração e implantadas na CDN usando o [Pipeline de configuração do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Para obter mais detalhes, consulte [Configuração do tráfego no CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) e [Regras de Filtro de tráfego, incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md).
+As regras para configurar o tráfego e os filtros CDN podem ser declaradas em um arquivo de configuração e implantadas na CDN, usando o [Pipeline de Configuração do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Para obter mais detalhes, consulte [Configurando o Tráfego na CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) e [Regras de Filtro de Tráfego, incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Configuração de páginas de erro do CDN {#cdn-error-pages}
 
-Uma página de erro CDN pode ser configurada para substituir a página padrão, sem marca, fornecida ao navegador no raro evento de não conseguir acessar o AEM. Para obter mais detalhes, consulte [Configuração de páginas de erro do CDN](/help/implementing/dispatcher/cdn-error-pages.md).
+Uma página de erro CDN pode ser configurada para substituir a página padrão, sem marca, fornecida ao navegador no raro evento de não conseguir acessar o AEM. Para obter mais detalhes, consulte [Configurando páginas de erro da CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ## CDN do cliente apontando para a CDN gerenciada pelo AEM {#point-to-point-CDN}
 
@@ -60,7 +60,7 @@ Se um cliente precisar usar sua CDN existente, ele poderá gerenciá-la e apont�
 
 * O cliente deve ter uma CDN existente que seria onerosa para substituir.
 * O cliente deve gerenciá-lo.
-* O cliente deve ser capaz de configurar o CDN para funcionar com o AEM as a Cloud Service - consulte as instruções de configuração apresentadas abaixo.
+* O cliente deve ser capaz de configurar a CDN para funcionar com a AEM as a Cloud Service - consulte as instruções de configuração apresentadas abaixo.
 * O cliente deve ter especialistas em CDN de engenharia que estejam à disposição para o caso de surgirem problemas relacionados.
 * O cliente deve executar e passar com êxito em um teste de carga antes de ir para a produção.
 
@@ -69,13 +69,13 @@ Instruções de configuração:
 1. Aponte seu CDN para o ingresso do CDN do Adobe como seu domínio de origem. Por exemplo, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Defina SNI para o ingresso do CDN do Adobe.
 1. Defina o cabeçalho Host para o domínio de origem. Por exemplo: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
-1. Defina o `X-Forwarded-Host` com o nome de domínio, para que o AEM possa determinar o cabeçalho do host. Por exemplo: `X-Forwarded-Host:example.com`.
-1. Definir `X-AEM-Edge-Key`. O valor deve vir do Adobe.
+1. Defina o cabeçalho `X-Forwarded-Host` com o nome de domínio para que o AEM possa determinar o cabeçalho do host. Por exemplo: `X-Forwarded-Host:example.com`.
+1. Defina `X-AEM-Edge-Key`. O valor deve vir do Adobe.
 
-   * Necessário para que o CDN do Adobe possa validar a origem das solicitações e transmitir a `X-Forwarded-*` cabeçalhos para o aplicativo AEM. Por exemplo,`X-Forwarded-For` é usado para determinar o IP do cliente. Portanto, torna-se a responsabilidade do chamador confiável (ou seja, a CDN gerenciada pelo cliente) garantir a correção do `X-Forwarded-*` (consulte a nota abaixo).
-   * Opcionalmente, o acesso ao ingresso do CDN do Adobe pode ser bloqueado quando um `X-AEM-Edge-Key` não está presente. Informe o Adobe se precisar de acesso direto ao ingresso do CDN do Adobe (para ser bloqueado).
+   * Necessário para que o CDN do Adobe possa validar a origem das solicitações e transmitir os cabeçalhos `X-Forwarded-*` para o aplicativo AEM. Por exemplo, `X-Forwarded-For` é usado para determinar o IP do cliente. Portanto, torna-se responsabilidade do chamador confiável (ou seja, a CDN gerenciada pelo cliente) garantir a exatidão dos cabeçalhos `X-Forwarded-*` (consulte a observação abaixo).
+   * Opcionalmente, o acesso ao ingresso da CDN do Adobe pode ser bloqueado quando um `X-AEM-Edge-Key` não estiver presente. Informe o Adobe se precisar de acesso direto ao ingresso do CDN do Adobe (para ser bloqueado).
 
-Consulte a [Configurações de exemplo de fornecedor de CDN](#sample-configurations) para obter exemplos de configuração dos principais fornecedores de CDN.
+Consulte a seção [Configurações de exemplo de fornecedor de CDN](#sample-configurations) para obter exemplos de configuração dos principais fornecedores de CDN.
 
 Antes de aceitar o tráfego ativo, você deve validar com o suporte ao cliente do Adobe se o roteamento de tráfego de ponta a ponta está funcionando corretamente.
 
@@ -95,12 +95,12 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Ao usar sua própria CDN, não é necessário instalar domínios e certificados no Cloud Manager. O roteamento no CDN do Adobe é feito usando o domínio padrão `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` que deve ser enviado na solicitação `Host` cabeçalho. Substituição da solicitação `Host` com um nome de domínio personalizado pode fazer com que a solicitação seja roteada incorretamente pelo CDN do Adobe.
+>Ao usar seu próprio CDN, não é necessário instalar domínios e certificados no Cloud Manager. O roteamento no CDN Adobe é feito usando o domínio padrão `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` que deve ser enviado no cabeçalho da solicitação `Host`. Substituir o cabeçalho da solicitação `Host` por um nome de domínio personalizado pode fazer com que a solicitação seja roteada incorretamente pelo CDN Adobe.
 
 
 >[!NOTE]
 >
->Os clientes que gerenciam seu próprio CDN devem garantir a integridade dos cabeçalhos enviados para o CDN AEM. Por exemplo, é recomendável que os clientes limpe todas as `X-Forwarded-*` cabeçalhos e defina-os como valores conhecidos e controlados. Por exemplo, `X-Forwarded-For` deve conter o endereço IP do cliente, enquanto `X-Forwarded-Host` deve conter o host do site.
+>Os clientes que gerenciam seu próprio CDN devem garantir a integridade dos cabeçalhos enviados para o CDN do AEM. Por exemplo, é recomendável que os clientes limpem todos os cabeçalhos `X-Forwarded-*` e os definam como valores conhecidos e controlados. Por exemplo, `X-Forwarded-For` deve conter o endereço IP do cliente, enquanto `X-Forwarded-Host` deve conter o host do site.
 
 >[!NOTE]
 >
@@ -152,4 +152,4 @@ Os valores para os códigos de continente são:
 * Oceânia OC
 * SA América do Sul
 
-Essas informações podem ser úteis para casos de uso, como o redirecionamento para um url diferente com base na origem (país) da solicitação. Use o cabeçalho Vary para armazenar em cache respostas que dependem das informações geográficas. Por exemplo, os redirecionamentos para uma página de aterrissagem de país específico devem sempre conter `Vary: x-aem-client-country`. Se necessário, você pode usar `Cache-Control: private` para impedir o armazenamento em cache. Consulte também [Armazenamento em cache](/help/implementing/dispatcher/caching.md#html-text).
+Essas informações podem ser úteis para casos de uso, como o redirecionamento para um url diferente com base na origem (país) da solicitação. Use o cabeçalho Vary para armazenar em cache respostas que dependem das informações geográficas. Por exemplo, os redirecionamentos para uma página de aterrissagem de país específico sempre devem conter `Vary: x-aem-client-country`. Se necessário, você pode usar `Cache-Control: private` para impedir o armazenamento em cache. Consulte também [Cache](/help/implementing/dispatcher/caching.md#html-text).

@@ -18,11 +18,11 @@ Seu processo de compilação pode depender de variáveis de configuração espec
 
 ## Variáveis de pipeline {#pipeline-variables}
 
-Usando o Cloud Manager, você pode configurar variáveis de pipeline de várias maneiras diferentes.
+Com o Cloud Manager, você pode configurar variáveis de pipeline de várias maneiras diferentes.
 
-* [Pela interface do Cloud Manager](#ui)
+* [Pela interface do usuário do Cloud Manager](#ui)
 * [Uso da CLI do Cloud Manager](#cli)
-* [Uso da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
+* [Usando a API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Variables/operation/getPipelineVariables)
 
 As variáveis podem ser armazenadas como texto simples ou criptografadas em repouso. Em ambos os casos, as variáveis são disponibilizadas no ambiente de compilação como variáveis de ambiente que podem ser referenciadas no arquivo `pom.xml` ou em outros scripts de compilação.
 
@@ -35,53 +35,53 @@ Os nomes das variáveis devem observar as convenções a seguir.
 * Há um limite de 200 variáveis por pipeline.
 * Cada nome deve ter 100 caracteres ou menos.
 * Cada valor de variável `string` deve ter menos de 2048 caracteres.
-* Each `secretString` o valor da variável de tipo deve ter 500 caracteres ou menos.
+* Cada valor de tipo de variável `secretString` deve ter 500 caracteres ou menos.
 
-## Pela interface do Cloud Manager {#ui}
+## Pela interface do usuário do Cloud Manager {#ui}
 
-As variáveis de pipeline podem ser configuradas e gerenciadas por meio da interface do usuário do Cloud Manager. Você deve ter permissões para editar o pipeline a fim de adicionar, editar e excluir variáveis de pipeline.
+As variáveis de pipeline podem ser configuradas e gerenciadas por meio da interface do Cloud Manager. Você deve ter permissões para editar o pipeline a fim de adicionar, editar e excluir variáveis de pipeline.
 
 Se um pipeline estiver em execução, o gerenciamento de variáveis será bloqueado.
 
 ### Adição de variáveis de pipeline {#add-ui}
 
-1. Quando [gerenciar seus pipelines,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) toque ou clique no botão de reticências do pipeline para o qual deseja criar variáveis de pipeline e selecione **Exibir/editar variáveis** no menu de contexto.
+1. Ao [gerenciar seus pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), toque ou clique no botão de reticências do pipeline para o qual deseja criar variáveis de pipeline e selecione **Exibir/editar variáveis** no menu de contexto.
 
    ![Exibir/editar variáveis de pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. A variável **Configuração de variáveis** é aberta. Insira os detalhes da variável na primeira linha da tabela e toque ou clique **Adicionar**.
+1. A janela **Configuração de variáveis** é aberta. Insira os detalhes da variável na primeira linha da tabela e toque ou clique em **Adicionar**.
 
-   * **Nome da configuração** é um identificador exclusivo para a variável, que deve [convenções de nomenclatura de variáveis de pipeline.](#naming-conventions)
+   * **O Nome da Configuração** é um identificador exclusivo para sua variável, que deve chefiar [convenções de nomenclatura de variáveis de pipeline.](#naming-conventions)
    * **Valor** é o valor que a variável contém.
-   * **Etapa aplicada** é a etapa no pipeline à qual a variável se aplica. É obrigatório.
-      * **Build**
+   * **Etapa Aplicada** é a etapa no pipeline à qual a variável se aplica. É obrigatório.
+      * **Compilação**
       * **Teste funcional**
-      * **Teste da interface do usuário**
-   * **Tipo** define se a variável é texto simples ou criptografada como um segredo.
+      * **Testes de interface**
+   * **Type** define se a variável é texto simples ou criptografada como um segredo.
 
    ![Adicionar variável](/help/implementing/cloud-manager/assets/pipeline-variables-add-variable.png)
 
-1. O é adicionado à tabela. Adicione variáveis adicionais conforme necessário e toque ou clique **Salvar** para salvar as variáveis adicionadas ao pipeline.
+1. O é adicionado à tabela. Adicione mais variáveis conforme necessário e toque ou clique em **Salvar** para salvar as variáveis adicionadas ao pipeline.
 
 ### Edição de variáveis de pipeline {#edit-ui}
 
-1. Quando [gerenciar seus pipelines,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) toque ou clique no botão de reticências do pipeline para o qual deseja criar variáveis de pipeline e selecione **Exibir/editar variáveis** no menu de contexto.
+1. Ao [gerenciar seus pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), toque ou clique no botão de reticências do pipeline para o qual deseja criar variáveis de pipeline e selecione **Exibir/editar variáveis** no menu de contexto.
 
    ![Exibir/editar variáveis de pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. A variável **Configuração de variáveis** é aberta. Toque ou clique no botão de reticências da variável que deseja editar e selecione **Editar**.
+1. A janela **Configuração de variáveis** é aberta. Toque ou clique no botão de reticências da variável que deseja editar e selecione **Editar**.
 
    ![Editar variável](/help/implementing/cloud-manager/assets/pipeline-variables-edit.png)
 
-1. Atualize o valor da variável conforme necessário e toque ou clique **Aplicar** (a marca de seleção no final da linha) para aplicar a alteração ou **Descartar** (a seta para trás) para reverter a alteração.
+1. Atualize o valor da variável conforme necessário e toque ou clique em **Aplicar** (a marca de seleção no final da linha) para aplicar a alteração ou em **Descartar** (a seta para trás) para reverter a alteração.
 
    * Somente o valor da variável pode ser editado.
 
-   ![Edição de uma variável](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
+   ![Editando uma variável](/help/implementing/cloud-manager/assets/pipeline-variables-edit-save.png)
 
-1. Toque ou clique **Salvar** para salvar as alterações feitas nas variáveis no pipeline.
+1. Toque ou clique em **Salvar** para salvar as alterações feitas nas variáveis no pipeline.
 
-Se desejar excluir uma variável, selecione **Excluir** em vez de **Editar** no menu de reticências da variável de pipeline no **Configuração de variáveis** janela.
+Se desejar excluir uma variável, selecione **Excluir** em vez de **Editar** no menu de reticências da variável de pipeline na janela **Configuração de variáveis**.
 
 ## Uso da CLI do Cloud Manager {#cli}
 

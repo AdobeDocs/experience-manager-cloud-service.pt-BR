@@ -1,5 +1,5 @@
 ---
-title: Markdown (Ativos - Fragmentos de conteúdo)
+title: Markdown (Assets - Fragmentos de conteúdo)
 description: Entenda como o editor de Fragmento de conteúdo usa a sintaxe de Markdown para permitir que você crie conteúdo headless facilmente.
 feature: Content Fragments
 role: User
@@ -14,15 +14,15 @@ ht-degree: 78%
 
 # Markdown {#markdown}
 
-Quando você estiver [criação](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa *markdown* sintaxe para permitir que você grave conteúdo facilmente para entrega headless ou criação de página:
+Quando você está [criando](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content), o editor de fragmento de conteúdo usa a sintaxe *markdown* para permitir que você grave conteúdo facilmente para entrega headless ou criação de página:
 
 >[!NOTE]
 >
->Os fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
+>Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
 >
->Existem dois editores para a criação de fragmentos de conteúdo. Esta seção aborda o editor original, acessado principalmente pelo **Assets** console. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes sobre o novo editor (acessado principalmente pelo **Fragmentos de conteúdo** console).
+>Existem dois editores para a criação de fragmentos de conteúdo. Esta seção abrange o editor original, acessado principalmente do console **Assets**. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes do novo editor (acessado principalmente do console **Fragmentos de conteúdo**).
 
-![Editor de Markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
+![Editor do Markdown](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 
 Você pode definir:
 

@@ -103,9 +103,9 @@ A **[Referência do fragmento](/help/sites-cloud/administering/content-fragments
 
 ## Análise da estrutura do fragmento de conteúdo {#analyzing-content-fragments-structure}
 
-Para ajudar na análise, o AEM fornece vários métodos de visualização da estrutura dos fragmentos do [Editor de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md).
+Para ajudar na análise, o AEM fornece vários métodos de visualização da estrutura dos fragmentos no [editor de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md).
 
-Consulte [Análise da estrutura do fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/analysis.md) para obter mais detalhes:
+Consulte [Analisando a estrutura do fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/analysis.md) para obter mais detalhes:
 
 * [Árvore de estrutura](/help/sites-cloud/administering/content-fragments/analysis.md#structure-tree)
 

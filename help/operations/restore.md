@@ -24,7 +24,7 @@ O processo de restauração afeta apenas o conteúdo, deixando o código e a ver
 
 O Cloud Manager fornece dois tipos de backups, a partir dos quais você pode restaurar o conteúdo.
 
-* **Ponto no tempo (PIT):** Esse tipo restaura a partir de backups de sistema contínuos das últimas 24 horas, contadas a partir da hora atual.
+* **Ponto no Tempo (PIT):** esse tipo restaura a partir de backups de sistema contínuos das últimas 24 horas, contadas a partir da hora atual.
 * **Semana passada:** esse tipo restaura a partir de backups de sistema dos últimos sete dias, exceto as últimas 24 horas.
 
 Em ambos os casos, a versão do código personalizado e a versão do AEM permanecem inalteradas.
@@ -43,10 +43,10 @@ Em ambos os casos, a versão do código personalizado e a versão do AEM permane
 
 Antes de restaurar para uma restauração completa do conteúdo, considere essas opções para restaurar seu conteúdo com mais facilidade.
 
-* Se um pacote para o caminho excluído estiver disponível, instale-o novamente usando o [Gerenciador de pacotes.](/help/implementing/developing/tools/package-manager.md)
-* Se o caminho excluído era uma página no Sites, use o [Função Restaurar árvore.](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* Se o caminho excluído for uma pasta de ativos e os arquivos originais estiverem disponíveis, faça upload deles novamente via [o console Assets.](/help/assets/add-assets.md)
-* Se o conteúdo excluído fosse de ativos, considere [restaurando versões anteriores dos ativos.](/help/assets/manage-digital-assets.md)
+* Se um pacote para o caminho excluído estiver disponível, instale-o novamente usando o [Gerenciador de Pacotes.](/help/implementing/developing/tools/package-manager.md)
+* Se o caminho excluído era uma página no Sites, use a função [Restaurar Árvore.](/help/sites-cloud/authoring/sites-console/page-versions.md)
+* Se o caminho excluído era uma pasta de ativos e os arquivos originais estão disponíveis, carregue-os novamente via [console do Assets.](/help/assets/add-assets.md)
+* Se o conteúdo excluído fosse de ativos, considere [restaurar versões anteriores dos ativos.](/help/assets/manage-digital-assets.md)
 
 Se nenhuma das opções acima funcionar e o conteúdo do caminho excluído for significativo, execute uma restauração de conteúdo, conforme detalhado nas seções a seguir.
 
@@ -55,11 +55,11 @@ Se nenhuma das opções acima funcionar e o conteúdo do caminho excluído for s
 Por padrão, nenhum usuário terá permissão para executar restaurações de conteúdo em ambientes de desenvolvimento, produção ou preparo. Para delegar essa permissão a usuários ou grupos específicos seguindo essas etapas gerais.
 
 1. Crie um perfil de produto com um nome expressivo que se refere à restauração do conteúdo.
-1. Forneça o **Acesso ao programa** permissão no programa necessário.
-1. Forneça o **Restauração de conteúdo** no ambiente necessário ou em todos os ambientes do programa, dependendo do caso de uso.
+1. Forneça a permissão **Acesso ao Programa** no programa necessário.
+1. Forneça a permissão de **Restauração de Conteúdo** no ambiente necessário para todos os ambientes do programa, dependendo do seu caso de uso.
 1. Atribuir usuários a esse perfil de perfil.
 
-Para obter detalhes sobre o gerenciamento de permissões, consulte [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md) documentação.
+Para obter detalhes sobre o gerenciamento de permissões, consulte a documentação de [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md).
 
 ## Restauração de conteúdo {#restoring-content}
 
@@ -73,19 +73,19 @@ Primeiro, determine o intervalo de tempo do conteúdo que você deseja restaurar
 
 1. Clique no programa para o qual deseja iniciar uma restauração.
 
-1. No **Visão geral do programa** página, no campo **Ambientes** clique no botão de reticências ao lado do ambiente para o qual deseja iniciar uma restauração e selecione **Restaurar conteúdo**.
+1. Na página **Visão geral do programa**, no cartão **Ambientes**, clique no botão de reticências ao lado do ambiente para o qual deseja iniciar uma restauração e selecione **Restaurar conteúdo**.
 
    ![Opção de restauração](assets/backup-option.png)
 
    * Como alternativa, você pode navegar diretamente para a guia **Restaurar conteúdo** da página de detalhes de um ambiente específico.
 
-1. No **Restaurar conteúdo** da página detalhes do ambiente, selecione primeiro o intervalo de tempo da restauração na **Tempo de restauração** lista suspensa.
+1. Na guia **Restaurar conteúdo** da página de detalhes do ambiente, selecione primeiro o período da restauração na lista suspensa **Tempo para restaurar**.
 
-   1. Se você selecionar **Últimas 24 horas** o vizinho **Hora** permite especificar a hora exata a ser restaurada dentre as últimas 24 horas.
+   1. Se você selecionar **Últimas 24 horas**, o campo **Hora** ao lado permitirá que você especifique a hora exata a ser restaurada dentre as últimas 24 horas.
 
       ![Últimas 24 horas](assets/backup-time.png)
 
-   1. Se você selecionar **Semana passada** o vizinho **Dia** permite selecionar uma data dentre os últimos sete dias, exceto as 24 horas anteriores.
+   1. Se você selecionar **Semana passada**, o campo **Dia** ao lado permitirá selecionar uma data dentre os últimos sete dias, exceto as 24 horas anteriores.
 
       ![Semana passada](assets/backup-date.png)
 
@@ -93,19 +93,19 @@ Primeiro, determine o intervalo de tempo do conteúdo que você deseja restaurar
 
    ![Backups disponíveis](assets/backup-available.png)
 
-1. Encontre o backup que deseja restaurar usando o ícone de informações para exibir informações sobre a versão do código e do AEM incluídas nesse backup e considere as implicações de uma restauração quando [escolhendo o backup.](#choosing-the-right-backup)
+1. Encontre o backup que deseja restaurar usando o ícone de informações para exibir informações sobre a versão do código e do AEM incluídas nesse backup e considere as implicações de uma restauração ao [escolher o backup.](#choosing-the-right-backup)
 
    ![Informações de backup](assets/backup-info.png)
 
    * O carimbo de data e hora exibido nas opções de restauração é baseado no fuso horário do computador do usuário.
 
-1. Clique em **Restaurar** ícone na extremidade direita da linha que representa o backup que você deseja restaurar para iniciar o processo de restauração.
+1. Clique no ícone **Restaurar** na extremidade direita da linha que representa o backup que você deseja restaurar para iniciar o processo de restauração.
 
 1. Revise os detalhes na caixa de diálogo **Restaurar conteúdo** antes de confirmar sua solicitação clicando em **Restaurar**.
 
    ![Confirmar restauração](assets/backup-restore.png)
 
-O processo de backup é iniciado e você pode visualizar seu status no **[Atividades de restauração](#restore-activity)** lista. O tempo necessário para a conclusão de uma operação de restauração depende do tamanho e do perfil do conteúdo que está sendo restaurado.
+O processo de backup foi iniciado e você pode visualizar seu status na lista **[Atividade de Restauração](#restore-activity)**. O tempo necessário para a conclusão de uma operação de restauração depende do tamanho e do perfil do conteúdo que está sendo restaurado.
 
 Quando a restauração for concluída com sucesso, o ambiente:
 
@@ -128,7 +128,7 @@ Além disso, lembre-se de que uma restauração pode fazer com que seus ambiente
 
 ## Atividades de restauração {#restore-activity}
 
-A variável **Atividades de restauração** A lista mostra o status das dez solicitações de restauração mais recentes, incluindo quaisquer operações de restauração ativas.
+A lista **Atividade de Restauração** mostra o status das dez solicitações de restauração mais recentes, incluindo quaisquer operações de restauração ativas.
 
 ![Atividades de restauração](assets/backup-activity.png)
 

@@ -38,7 +38,7 @@ Existem diferenças intrínsecas entre estas abordagens anteriores e o AEM as a 
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre as versões no local e o Managed Service, consulte a [Documentação do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR) .
+>Para obter mais detalhes sobre as versões no local e o Managed Service, consulte a [documentação do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=pt-BR).
 
 ## Arquitetura {#architecture}
 
@@ -89,7 +89,7 @@ Há dois tipos de atualizações de versão do AEM:
 
 >[!TIP]
 >
->Para obter mais detalhes, consulte [Atualizações de versão do AEM](/help/implementing/deploying/aem-version-updates.md).
+>Para obter mais detalhes, consulte [Atualizações de Versão do AEM](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -184,7 +184,7 @@ Outro requisito comum para desenvolvedores é o acesso rápido aos arquivos de l
 
 Devido à clara separação de código e conteúdo, os desenvolvedores podem usar um processo específico para atualizar o conteúdo como parte de uma implantação. Os casos de uso típicos de conteúdo mutável são:
 
-* Padrão *padrão* conteúdo que faz parte do projeto do cliente (por exemplo, pastas, modelos, fluxos de trabalho e assim por diante)
+* Conteúdo *padrão* padrão que faz parte do projeto do cliente (por exemplo, pastas, modelos, fluxos de trabalho, etc.)
 
 * Definições de índice de pesquisa
 
@@ -208,7 +208,7 @@ Para apoiar iterações e desenvolvimento rápidos, também é possível desenvo
 
 >[!NOTE]
 >
->Para obter mais detalhes, comece com [restauração de conteúdo](/help/operations/restore.md), [Indexação](/help/operations/indexing.md), e [outras tarefas de manutenção](/help/operations/maintenance.md).
+>Para obter mais detalhes, comece com [restauração de conteúdo](/help/operations/restore.md), [Indexação](/help/operations/indexing.md) e [outras Tarefas de Manutenção](/help/operations/maintenance.md).
 
 Com o AEM as a Cloud Service, essas operações são automatizadas de modo que não seja mais necessário qualquer interrupção do serviço.
 
@@ -242,7 +242,7 @@ Isso combina os benefícios de:
 
 >[!NOTE]
 >
->Para obter mais detalhes, a [Manuseio básico](/help/sites-cloud/authoring/basic-handling.md) é um bom ponto de partida.
+>Para obter mais detalhes, o [Manuseio básico](/help/sites-cloud/authoring/basic-handling.md) é um bom ponto de partida.
 
 Os princípios básicos da interface do usuário (UI) de criação, tanto para o Sites quanto para o Assets, serão reconhecíveis a qualquer pessoa que tenha usado o AEM no passado.
 
@@ -276,6 +276,6 @@ Para obter mais informações, consulte:
 
 >[!TIP]
 >
->Quando você tiver uma visão geral do AEM as a Cloud Service, poderá integrar-se rapidamente revisando o [Jornada integrada](/help/journey-onboarding/overview.md).
+>Quando tiver uma visão geral do AEM as a Cloud Service, você poderá integrar-se rapidamente revisando a [Jornada de integração](/help/journey-onboarding/overview.md).
 >
 >Já integrado ou pronto para mergulhar nos recursos de AEM de teste? Instale o [Complemento de demonstrações de referência do AEM](/help/journey-sites/demos-add-on/overview.md) para explorar recursos avançados do AEM usando exemplos bem colocados.

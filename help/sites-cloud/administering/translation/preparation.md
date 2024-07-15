@@ -53,7 +53,7 @@ O [site do tutorial do WKND](/help/implementing/developing/introduction/develop-
 
 A cópia de idioma para a qual você criou originalmente o conteúdo do site é o idioma principal. O idioma principal é a fonte, que é traduzida para outros idiomas.
 
-Cada ramificação de idioma de um site é chamada de cópia de idioma. A página raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/wknd/fr` é a raiz de idioma para a cópia em francês. As cópias de idioma devem usar um [raiz de idioma configurada corretamente](preparation.md#creating-a-language-root) para que o idioma correto seja escolhido quando as traduções de um site de origem forem executadas.
+Cada ramificação de idioma de um site é chamada de cópia de idioma. A página raiz de uma cópia de idioma, conhecida como raiz de idioma, identifica o idioma do conteúdo na cópia de idioma. Por exemplo, `/content/wknd/fr` é a raiz de idioma para a cópia em francês. As cópias de idioma devem usar uma [raiz de idioma configurada corretamente](preparation.md#creating-a-language-root) para que o idioma correto seja escolhido quando as traduções de um site de origem forem executadas.
 
 Use as seguintes etapas para preparar seu site para tradução:
 
@@ -69,23 +69,23 @@ Crie uma raiz de idioma como a página raiz de uma cópia de idioma que identifi
 
 Para criar a raiz do idioma, crie uma página e use um código de idioma ISO como o valor da propriedade **Nome**. O código de idioma deve estar em um dos seguintes formatos:
 
-* `<language-code>` - O código de idioma compatível é um código de duas letras, conforme definido pela ISO-639-1, por exemplo, `en`.
-* `<language-code>_<country-code>` ou `<language-code>-<country-code>` - O código do país compatível é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>` - O código de idioma com suporte é um código de duas letras, conforme definido pela ISO-639-1, como por exemplo, `en`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>` - O código do país aceito é um código de duas letras em minúsculas ou maiúsculas, conforme definido pela norma ISO 3166, por exemplo, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global. Por exemplo, a página raiz da cópia em francês do site do WKND tem `fr` como a propriedade **Nome**. A variável **Nome** é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+É possível usar qualquer um dos formatos, de acordo com a estrutura escolhida para o site global. Por exemplo, a página raiz da cópia em francês do site do WKND tem `fr` como a propriedade **Nome**. A propriedade **Name** é usada como o nome do nó da página no repositório e, portanto, determina o caminho da página (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Navegue até Sites.
 1. Selecione o site para o qual deseja criar uma cópia de idioma.
-1. Selecionar **Criar** e selecione **Página**.
+1. Selecione **Criar** e **Página**.
 
    ![Criar página](../assets/create-page.png)
 
-1. Selecione o modelo de página e, em seguida, **Próxima**.
-1. No **Nome** digite o código do país no formato de `<language-code>` ou `<language-code>_<country-code>`, por exemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digite um título para a página.
+1. Selecione o modelo de página e, em seguida, selecione **Próximo**.
+1. No campo **Nome**, digite o código do país no formato de `<language-code>` ou `<language-code>_<country-code>`, por exemplo, `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Digite um título para a página.
 
    ![Criar página da raiz de idioma](../assets/create-language-root.png)
 
-1. Selecione **Criar**. Na caixa de diálogo de confirmação, selecione **Concluído** para retornar ao console Sites ou **Abertura** para abrir a cópia de idioma.
+1. Selecione **Criar**. Na caixa de diálogo de confirmação, selecione **Concluído** para retornar ao console de Sites ou **Abrir** para abrir a cópia de idioma.
 
 ## Ver o status das raízes de idioma {#seeing-the-status-of-language-roots}
 
@@ -95,7 +95,7 @@ O AEM fornece um painel de **Referências** que mostra uma lista de raízes de i
 
 Use o procedimento a seguir para exibir as cópias de idioma de uma página usando o [seletor do painel](/help/sites-cloud/authoring/basic-handling.md#rail-selector).
 
-1. No console Sites, selecione uma página do site e selecione **Referências**.
+1. No console de sites, selecione uma página do site e selecione **Referências**.
 
    ![Abrir painel de referências](../assets/opening-references-rail.png)
 

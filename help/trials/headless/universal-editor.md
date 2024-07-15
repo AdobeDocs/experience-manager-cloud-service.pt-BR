@@ -43,11 +43,11 @@ Com o Editor universal, você tem uma maneira ágil de editar seu texto no conte
 
 1. Clique duas vezes para selecionar o título do artigo mais recente e editá-lo.
 
-   ![O Editor universal](assets/do-not-localize/ue-component-mode.png)
+   ![O Editor Universal](assets/do-not-localize/ue-component-mode.png)
 
 1. O componente é selecionado conforme indicado por uma borda azul com uma guia indicando que é um componente de texto. Há um cursor na borda aguardando a entrada de texto. Alterar o texto para `Aloha Spirit in Lofoten`.
 
-   ![Edição de texto no Editor universal](assets/do-not-localize/ue-edit-text-2.png)
+   ![Editando texto no Editor Universal](assets/do-not-localize/ue-edit-text-2.png)
 
 1. Selecione fora do componente de texto e suas alterações serão salvas automaticamente.
 
@@ -59,15 +59,15 @@ Você também pode trocar imagens enquanto ainda permanece no contexto do conte�
 
 1. Selecione a imagem do surfer para selecioná-la.
 
-1. No painel de componentes, é possível ver os detalhes do ativo. Selecione o **Imagem em destaque** miniatura.
+1. No painel de componentes, é possível ver os detalhes do ativo. Selecione a miniatura da **Imagem em destaque**.
 
-   ![Seleção de uma imagem para edição](assets/do-not-localize/ue-edit-media.png)
+   ![Selecionando uma imagem para editar](assets/do-not-localize/ue-edit-media.png)
 
-1. No **Selecionar ativos** , role para baixo e selecione o `surfer-wave-02.JPG` imagem para selecioná-la.
+1. Na janela **Selecionar Assets**, role para baixo e selecione a imagem `surfer-wave-02.JPG` para selecioná-la.
 
-1. Selecionar **Selecionar** no **Selecionar ativos** janela.
+1. Selecione **Selecionar** na janela **Selecionar Assets**.
 
-   ![Uso da janela Selecionar ativo para selecionar uma imagem](assets/do-not-localize/ue-select-asset.png)
+   ![Usando a janela Selecionar ativo para selecionar uma imagem](assets/do-not-localize/ue-select-asset.png)
 
 A imagem é substituída pela que você selecionou.
 
@@ -93,17 +93,17 @@ Você também pode especificar dimensões exatas para o emulador e girar o dispo
 
 Como é necessário selecionar o conteúdo para modificá-lo no editor, o editor não permite que você siga links ou interaja com o conteúdo tocando ou clicando. Usando o modo de visualização, você pode seguir os links no seu conteúdo e experimentá-lo como seus usuários fariam antes de publicar.
 
-1. Na barra de ferramentas do Editor universal, selecione **Visualizar**.
+1. Na barra de ferramentas do Editor Universal, selecione **Visualizar**.
 
-1. Agora selecione a variável **Leia mais** para o artigo principal.
+1. Agora selecione o link **Leia mais** para o artigo principal.
 
    ![Modo de visualização](assets/do-not-localize/ue-preview-publish-1.png)
 
-1. Navegue pelo artigo e use o **Voltar** para retornar à página principal.
+1. Procure o artigo e use o link **Voltar** para retornar à página principal.
 
    ![Retornar à página principal usando o link Voltar](assets/do-not-localize/ue-preview-publish-3.png)
 
-1. Agora selecione a variável **Publish** botão na parte superior direita do editor para publicar seu conteúdo.
+1. Agora selecione o botão **Publish** na parte superior direita do editor para publicar seu conteúdo.
 
    ![Os itens de menu de visualização e publicação](assets/do-not-localize/ue-preview-publish-4.png)
 
@@ -113,19 +113,19 @@ Seu conteúdo foi publicado.
 
 Para acelerar sua experiência de criação de conteúdo quando a edição estruturada de conteúdo headless for mais vantajosa do que a edição no local, o Editor universal também oferece acesso rápido ao editor de fragmentos de conteúdo.
 
-1. Desative o modo de visualização tocando no **Visualizar** na barra de ferramentas do Editor universal.
+1. Desative o modo de visualização tocando no botão **Visualizar** na barra de ferramentas do Editor Universal.
 
    ![Desativar modo de visualização](assets/do-not-localize/ue-toggle-off-preview.png)
 
-1. Role mais para baixo na página até a **Aventuras** seção.
+1. Role para baixo na página até a seção **Aventuras**.
 
-1. Selecione uma das aventuras, como **Campo de Surf de Bali** para selecioná-la.
+1. Selecione uma das aventuras, como o **Campo de Surfe de Bali**, para selecioná-la.
 
-   * Observe o contorno azul do componente selecionado. A guia deve exibir o nome do fragmento de conteúdo quando um fragmento de conteúdo for selecionado. Nesse caso **Campo de Surf de Bali**.
+   * Observe o contorno azul do componente selecionado. A guia deve exibir o nome do fragmento de conteúdo quando um fragmento de conteúdo for selecionado. Neste caso, **Campo de Surf de Bali**.
    * Como o Editor universal permite selecionar qualquer objeto na página, os componentes que fazem parte de um fragmento de conteúdo também podem ser selecionados individualmente. Selecione onde indicado na ilustração para selecionar o componente Fragmento de conteúdo inteiro.
 
-1. A variável **Editar** ícone é exibido no painel de componentes. Selecione o **Editar** ícone para abrir o editor de Fragmento de conteúdo em uma nova guia.
+1. O ícone **Editar** aparece no painel de componentes. Selecione o ícone **Editar** para abrir o editor de Fragmento de conteúdo em uma nova guia.
 
-![Seleção de fragmentos de conteúdo no editor universal](assets/do-not-localize/ue-content-fragments.png)
+![Selecionando Fragmentos de Conteúdo no Editor Universal](assets/do-not-localize/ue-content-fragments.png)
 
 Na nova guia, agora é possível editar o fragmento de conteúdo selecionado no Editor universal.

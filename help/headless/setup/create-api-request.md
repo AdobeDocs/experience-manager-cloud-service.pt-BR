@@ -21,11 +21,11 @@ Saiba como usar a API GraphQL para a entrega headless do conteúdo do Fragmento 
 
 * A [API GraphQL](/help/headless/graphql-api/content-fragments.md) permite criar solicitações para acessar e fornecer Fragmentos de conteúdo. Essa API oferece o conjunto mais robusto de recursos para consultar e consumir conteúdo de Fragmentos de conteúdo.
    * Para usar a API, [defina e habilite os pontos de acesso no AEM](/help/headless/graphql-api/graphql-endpoint.md)e, se necessário, na [Interface GraphiQL instalada](/help/headless/graphql-api/graphiql-ide.md).
-* [A API REST do Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permite criar e modificar fragmentos de conteúdo (e outros ativos).
+* [A API REST do Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permite criar e modificar Fragmentos de conteúdo (e outros ativos).
 
 >[!NOTE]
 >
->A variável [OpenAPIs de fragmento de conteúdo e modelo de fragmento de conteúdo](/help/headless/content-fragment-openapis.md) também estão disponíveis.
+>As [OpenAPIs](/help/headless/content-fragment-openapis.md) de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo também estão disponíveis.
 
 O restante deste guia terá como foco o acesso ao GraphQL e a entrega de Fragmentos de conteúdo.
 
@@ -57,7 +57,7 @@ GraphiQL é um IDE, incluído no seu ambiente do AEM; ele se torna acessível/vi
 
    É possível acessar o editor de consultas por meio de:
 
-   * **Ferramentas** > **Geral** > **Editor de consultas GraphQL**
+   * **Ferramentas** > **Geral** > **Editor de Consultas do GraphQL**
    * diretamente; por exemplo, `http://localhost:4502/aem/graphiql.html`
 
 1. O GraphiQL IDE é um editor de consultas no navegador para GraphQL. Você pode usá-lo para criar consultas para recuperar fragmentos de conteúdo e entregá-los como JSON sem periféricos.
@@ -108,4 +108,4 @@ Pronto! Agora você tem uma compreensão básica do gerenciamento de conteúdo h
 
 >[!NOTE]
 >
->A variável [OpenAPIs de fragmento de conteúdo e modelo de fragmento de conteúdo](/help/headless/content-fragment-openapis.md) também estão disponíveis.
+>As [OpenAPIs](/help/headless/content-fragment-openapis.md) de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo também estão disponíveis.

@@ -45,25 +45,25 @@ Assista ao vídeo Visão geral da versão de março de 2024 que exibe um resumo 
 
 **Criação de AEM para Edge Delivery Services**
 
-O AEM Sites agora pode ser usado como fonte de conteúdo para o Edge Delivery Services. Os autores gerenciam seus sites no AEM usando o novo Universal Editor com criação wysiwyg no contexto. Isso permite que as empresas criem páginas da Web rápidas e de alto desempenho com o Edge Delivery Services e, ao mesmo tempo, aproveitem os poderosos recursos de AEM para o gerenciamento de conteúdo.
+O AEM Sites agora pode ser usado como fonte de conteúdo para o Edge Delivery Services. Os autores gerenciam seus sites no AEM usando o novo Universal Editor com criação wysiwyg no contexto. Isso permite que as empresas criem páginas da Web rápidas e de alto desempenho com o Edge Delivery Services, aproveitando ao mesmo tempo os poderosos recursos do AEM para o gerenciamento de conteúdo.
 
-![Criação no AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
+![Criação de AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Para obter mais informações, consulte [documentação](/help/edge/overview.md) e assista ao [Gems do AEM - Introdução à criação e aos Edge Delivery Services do AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
+Para obter mais informações, consulte a [documentação](/help/edge/overview.md) e assista aos [Gems AEM - Introdução à Criação de AEM e aos Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
-**Editor universal para implementações headless**
+**Editor Universal para Implementações Headless**
 
 O Editor universal também permite que aplicativos web dissociados utilizem a mesma criação intuitiva em contexto WYSIWYG, anteriormente exclusiva de sites tradicionais. Os criadores de conteúdo agora podem compor visualmente layouts usando fragmentos de conteúdo com a mesma facilidade que os componentes dentro das páginas.
 
 O que diferencia o Editor Universal é sua adaptabilidade a diversas arquiteturas da Web, acomodando renderização no lado do servidor e do cliente, mantendo-se independente de estrutura e eliminando a necessidade de hospedagem do AEM. Integrar aplicativos web existentes com o Universal Editor para edição de conteúdo é simples, exigindo principalmente que os desenvolvedores incorporem atributos de dados específicos em suas marcações.
 
-Com isso, o Editor universal garante uma experiência de edição consistente, independentemente da estrutura do conteúdo ou da pilha de tecnologia subjacente. Para obter mais informações, consulte [Introdução ao Universal Editor](/help/implementing/universal-editor/introduction.md).
+Com isso, o Editor universal garante uma experiência de edição consistente, independentemente da estrutura do conteúdo ou da pilha de tecnologia subjacente. Para obter mais informações, consulte a [Introdução ao Editor Universal](/help/implementing/universal-editor/introduction.md).
 
 **OpenAPIs de gerenciamento de conteúdo para fragmentos e modelos de conteúdo**
 
 Agora os desenvolvedores podem interagir programaticamente com os Fragmentos de conteúdo e modelos de Fragmento de conteúdo e executar operações de CruD neles usando as OpenAPIs de gerenciamento de conteúdo. Para obter mais informações, consulte [Documentação da API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
 
-**Suporte de gerenciamento de vários sites para Fragmentos de experiência**
+**Suporte de Gerenciamento de vários sites para Fragmentos de experiência**
 
 O suporte ao Gerenciamento multisite foi estendido para estruturas de pastas que armazenam fragmentos de experiência, permitindo que os usuários implantem uma estrutura de conteúdo completa com fragmentos de experiência.
 
@@ -73,11 +73,11 @@ O novo Editor de fragmento de conteúdo agora permite que os autores de conteúd
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
-**Gerar variações**
+**Gerar Variações**
 
 Aproveite a GenAI por meio do novo recurso AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta do Adobe para consideração no programa.
 
-**Navegação de ativos no Console de fragmentos de conteúdo**
+**Navegação de ativos no Console de Fragmentos de Conteúdo**
 
 Os autores de conteúdo agora podem navegar, visualizar e realizar ações em imagens e outros ativos sem precisar sair do Console de fragmentos de conteúdo.
 
@@ -95,7 +95,7 @@ A AEM Assets integra-se nativamente com o Adobe Express, o que permite acessar d
 
 ![Incluir ativos do complemento Assets](/help/assets/assets/adobe-express-native-integration.png)
 
-**Visualizar representações para todos os tipos de vídeo compatíveis**
+**Visualizar representações para todos os tipos de vídeo com suporte**
 
 O Experience Manager Assets agora gera representações de pré-visualização de todos os tipos de vídeo compatíveis por padrão, sem exigir uma configuração de perfil de processamento.
 
@@ -116,9 +116,9 @@ O Assets Essentials permite que os administradores gerenciem os níveis de acess
 
 ### Novos recursos para o AEM Forms {#forms-new-features}
 
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: o AEM Forms Edge Delivery Services é um conjunto de serviços combináveis que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar, publicar e lançar novos formulários rapidamente. Esses serviços oferecem experiências de formulários excepcionais e de alto impacto que impulsionam o engajamento e as conversões. Essas experiências de formulários são fáceis de criar e desenvolver.
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: o AEM Forms Edge Delivery Services é um conjunto de serviços combináveis que permite um ambiente de desenvolvimento rápido em que os autores podem atualizar, publicar e iniciar novos formulários rapidamente. Esses serviços oferecem experiências de formulários excepcionais e de alto impacto que impulsionam o engajamento e as conversões. Essas experiências de formulários são fáceis de criar e desenvolver.
 
-  ![Recursos do EDS Forms](/help/edge/assets/eds-forms-features.png)
+  ![Recursos Do EDS Forms](/help/edge/assets/eds-forms-features.png)
 
 Esses serviços permitem:
 
@@ -129,7 +129,7 @@ Esses serviços permitem:
 
 ### Novos recursos no Pré-lançamento do AEM Forms {#forms-pre-release}
 
-* **Editor de regras visuais aprimorado para Forms adaptável baseado em componentes principais**: esta versão traz uma atualização significativa ao editor visual de regras para formulários adaptáveis com base em componentes principais. Esta versão traz uma atualização significativa para o editor visual de regras para formulários adaptáveis com base em componentes principais. Essa atualização se concentra em simplificar as interações com funções personalizadas, permitindo que você crie formulários mais robustos e eficientes.
+* **Editor de regras visuais aprimorado para Forms adaptável baseado em componentes principais**: esta versão traz uma atualização significativa para o editor de regras visuais no que se refere a formulários adaptáveis baseados em componentes principais. Esta versão traz uma atualização significativa para o editor visual de regras para formulários adaptáveis com base em componentes principais. Essa atualização se concentra em simplificar as interações com funções personalizadas, permitindo que você crie formulários mais robustos e eficientes.
 
   Agora é possível simplificar as interações de funções personalizadas ao:
 
@@ -146,50 +146,50 @@ Esses serviços permitem:
 
   Esses avanços fornecem uma experiência mais intuitiva e poderosa para criar regras e funções personalizadas no editor visual de regras.
 
-* **Criar várias versões de um Formulário adaptável**: Agora é possível gerenciar facilmente variações de formulários existentes. Isso simplifica o controle de versões e facilita a comparação para a otimização de formulários, tudo em um único fluxo de trabalho simplificado.
+* **Criar várias versões de um Formulário adaptável**: agora é possível gerenciar facilmente variações de formulários existentes. Isso simplifica o controle de versões e facilita a comparação para a otimização de formulários, tudo em um único fluxo de trabalho simplificado.
 
-* **Comparar formulário adaptável**: agora é possível comparar facilmente dois formulários para identificar as diferenças entre dois. Ele facilita a colaboração perfeita, permitindo que os membros da equipe comparem revisões e discutam alterações com eficiência.
+* **Comparar formulário adaptável**: agora é possível comparar facilmente dois formulários para identificar as diferenças entre dois formulários. Ele facilita a colaboração perfeita, permitindo que os membros da equipe comparem revisões e discutam alterações com eficiência.
 
-* **Aprimoramentos de acessibilidade para o componente de assinatura assinável**: esta atualização traz melhorias significativas de acessibilidade para o componente de Assinatura Escrita:
+* **Aprimoramentos de Acessibilidade para o Componente de Assinatura Escrita**: esta atualização traz melhorias significativas de acessibilidade para o componente de Assinatura Escrita:
 
-  **Navegação do teclado aprimorada:**
+  **Navegação do Teclado Aprimorada:**
    * Pressionar a tecla Tab permite que os usuários naveguem por todos os elementos interativos na caixa de diálogo de assinatura.
    * Assinar com um pincel ou teclado e pressionar Enter fecha a caixa de diálogo.
    * O foco permanece no controle de assinatura após assinar e clicar em &quot;OK&quot;.
 
-  **Limpar funcionalidade de assinatura:**
+  **Limpar Funcionalidade de Assinatura:**
 
    * Um ícone de cruz claro para apagar a assinatura é acessível através da tecla Tab.
    * A caixa de diálogo &quot;Limpar confirmação de assinatura&quot; também pode ser acessada por meio da navegação de guias.
 
-  **Rótulos e controles aprimorados:**
+  **Rótulos e Controles Aprimorados:**
    * O rótulo do botão de assinatura do teclado agora está mais claro, usando &quot;aria-label&quot; para anunciar a funcionalidade (como &quot;aria-label=&#39;Sign using Keyboard&#39;&quot;).
    * O contraste aprimorado garante que todos os controles dentro da assinatura de rabisco sejam facilmente distinguíveis.
    * O botão OK/marca de seleção agora indica visualmente quando está inativo.
 
-  **Feedback de assinatura para Reader de tela:**
+  **Feedback de Assinatura para Reader de Tela:**
    * Quando uma assinatura é digitada, os usuários de leitores de tela podem ouvir o texto usado para criar a assinatura.
 
 Essa atualização garante uma experiência mais inclusiva para usuários portadores de deficiências, melhorando a navegação, a clareza e o feedback do componente Assinatura Escrita.
 
 ### Programa de adoção antecipada {#forms-early-adopter}
 
-* **[Enviar um formulário adaptável para o cenário do Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: o Forms as a Cloud Service oferece uma opção pronta para uso para conectar facilmente um Formulário adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
+* **[Enviar um Formulário Adaptável para o Adobe Workfront Fusion Scenario](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: o Forms as a Cloud Service uma opção pronta para uso para conectar facilmente um Formulário Adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
 
-  <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Usando o Adobe Workfront Fusion Connector, você pode projetar fluxos de trabalho que são acionados automaticamente no envio de um Formulário adaptável. Por exemplo, preveja um cenário em que um fluxo de trabalho é iniciado para atribuir a um indivíduo específico a tarefa de revisar dados enviados, permitindo a aprovação ou a rejeição de um aplicativo com base nas informações capturadas por meio do formulário adaptável. Essa integração simplificada aumenta a eficiência e traz um novo nível de automação para seus processos de workflow.|
+  <br/> ![Adobe Workfront](/help/forms/assets/adobe-workfront.png) <br/> Usando o Adobe Workfront Fusion Connector, você pode criar fluxos de trabalho que são acionados automaticamente no envio de um Formulário adaptável. Por exemplo, preveja um cenário em que um fluxo de trabalho é iniciado para atribuir a um indivíduo específico a tarefa de revisar dados enviados, permitindo a aprovação ou a rejeição de um aplicativo com base nas informações capturadas por meio do formulário adaptável. Essa integração simplificada aumenta a eficiência e traz um novo nível de automação para seus processos de workflow.|
 
-* **Serviço de extensão Reader**: as APIs de comunicação da AEM Forms trouxeram o Serviço de extensão do Reader para permitir que você adicione funcionalidades como preenchimento de formulário e comentários a PDF regulares, tornando-os interativos para usuários com o Adobe Reader gratuito.
+* **Serviço de Extensão de Reader**: as APIs de Comunicação da AEM Forms trouxeram o Serviço de Extensão de Reader para permitir que você adicione funcionalidades como preenchimento de formulário e comentários a PDF regulares, tornando-as interativas para usuários com o Adobe Reader gratuito.
 
-* [Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md): o Forms adaptável incorporado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diferentes e selecionar mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
+* [Suporte de idiomas da direita para a esquerda](/help/forms/supporting-new-language-localization-core-components.md): o Forms adaptável integrado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diferentes e selecionar mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
 
-* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs do DocAssurance permitem proteger informações confidenciais, assinando e criptografando os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
+* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de Comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs DocAssurance permitem proteger informações confidenciais ao assinar e criptografar os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
 
-  Você pode escrever para `aem-forms-ea@adobe.com` do seu id de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
+  Você pode escrever para `aem-forms-ea@adobe.com` a partir de sua ID de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
 
-* **[Você pode aproveitar o Serviço de dados de monitoramento de uso real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para ativar a coleta no lado do cliente para o AEM as a Cloud Service.
+* **[Você pode aproveitar o Serviço de Dados de Monitoramento de Uso Real (RUM)](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)** para habilitar a coleta no lado do cliente para o AEM as a Cloud Service.
 O Serviço de dados de Monitoramento de uso real (RUM) oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. É uma ótima oportunidade para obter insights avançados sobre o desempenho da página. Embora isso seja benéfico para clientes que usam CDN gerenciada por Adobe ou CDN não gerenciada por Adobe. Além disso, para clientes que usam um CDN não gerenciado por Adobe, o relatório de tráfego automatizado agora pode ser ativado para eles, eliminando a necessidade de compartilhar qualquer relatório de tráfego com o Adobe.
 
-  Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para `aemcs-rum-adopter@adobe.com`, juntamente com o nome de domínio para cada um dos ambientes para os quais você deseja habilitar o RUM, a partir do seu endereço de email associado à sua Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de uso real (RUM) para você.
+  Se você estiver interessado em testar esse novo recurso e compartilhar seus comentários, envie um email para `aemcs-rum-adopter@adobe.com`, juntamente com o nome de domínio de cada um dos ambientes para os quais você deseja habilitar o RUM no seu endereço de email associado à sua Adobe ID. A equipe de produtos do Adobe habilitará o Serviço de dados de monitoramento de uso real (RUM) para você.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -197,13 +197,13 @@ O Serviço de dados de Monitoramento de uso real (RUM) oferece um reflexo mais p
 
 #### Alertas de regras de filtro de tráfego (Programa de adoção antecipada) {#traffic-filter-rules-alerts-early-adopter}
 
-O recém-lançado [Regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md), que incluem as regras opcionalmente licenciáveis do Web Application Firewall (WAF), permite configurar o tráfego que deve ser permitido ou negado.
+As [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras do WAF (Firewall de Aplicativo Web) opcionalmente licenciáveis, permitem que você configure qual tráfego deve ser permitido ou negado.
 
-Agora você pode enviar um email **<aemcs-cdn-config-adopter@adobe.com>** para participar do programa de adoção antecipada para que você possa ser alertado sempre que as regras de filtro de tráfego forem acionadas. As notificações por email do Centro de ações manterão você informado quando ocorrerem determinadas condições de tráfego para que você possa tomar as medidas apropriadas.
+Agora você pode enviar um email a **<aemcs-cdn-config-adopter@adobe.com>** para ingressar no programa de adoção antecipada, para que possa ser alertado sempre que suas regras de filtro de tráfego forem acionadas. As notificações por email do Centro de ações manterão você informado quando ocorrerem determinadas condições de tráfego para que você possa tomar as medidas apropriadas.
 
 #### Configuração da CDN (Early Adoter Program) {#cdn-config-early-adopter}
 
-Além do recém-lançado [Regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md), que incluem as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de configuração para declarar e implantar outros tipos de configuração de CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md) e se juntar ao programa de adoção antecipada enviando e-mail **<aemcs-cdn-config-adopter@adobe.com>** para obter acesso a:
+Além das [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de Configuração para declarar e implantar outros tipos de configuração de CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md) e participe do programa de adoção antecipada enviando um email para **<aemcs-cdn-config-adopter@adobe.com>** para obter acesso a:
 
 * Redirecionamentos do lado do cliente 301/302
 * solicitações de proxy na borda para origens arbitrárias (como aplicativos não-AEM)
@@ -211,21 +211,21 @@ Além do recém-lançado [Regras de filtro de tráfego](/help/security/traffic-f
 * definindo ou modificando cabeçalhos de solicitação ou resposta
 * páginas de erro personalizadas quando o CDN não consegue acessar o AEM
 
-#### Assimilação de tempo de execução de mapas de regravação do Apache/Dispatcher (Programa de adoção antecipada) {#apache-rewritemaps-early-adopter}
+#### Assimilação de mapas de regravação no tempo de execução do Apache/Dispatcher (Programa de adoção antecipada) {#apache-rewritemaps-early-adopter}
 
-Semelhante ao AEM 6.5, o Apache/Dispatcher assimilará mapas de regravação colocados em um local específico no repositório de publicação e os carregará, sem exigir uma execução de pipeline no nível da Web. Isso abre oportunidades para que um usuário empresarial declare redirecionamentos usando uma interface do usuário, como a oferecida pelo ACS Commons Redirect Map Manager. Entre em contato com **<aemcs-cdn-config-adopter@adobe.com>** para obter mais informações.
+Semelhante ao AEM 6.5, o Apache/Dispatcher assimilará mapas de regravação colocados em um local específico no repositório de publicação e os carregará, sem exigir uma execução de pipeline no nível da Web. Isso abre oportunidades para que um usuário empresarial declare redirecionamentos usando uma interface do usuário, como a oferecida pelo ACS Commons Redirect Map Manager. Contate **<aemcs-cdn-config-adopter@adobe.com>** para obter mais informações.
 
-#### Edge Side Includes (ESI) para o carregamento de conteúdo dinâmico (Early Adoter Program) {#esi-early-adopter}
+#### O Edge Side Includes (ESI) para Carregar Conteúdo Dinâmico (Early Adoter Program) {#esi-early-adopter}
 
-O CDN gerenciado por Adobe agora é compatível com ESI (Edge Side Includes), uma linguagem de marcação para a montagem de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página de HTML geral na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). Entre em contato com **<aemcs-cdn-config-adopter@adobe.com>** para obter mais informações.
+O CDN do Adobe Managed agora é compatível com o Edge Side Includes (ESI), uma linguagem de marcação para a montagem de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página de HTML geral na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). Contate **<aemcs-cdn-config-adopter@adobe.com>** para obter mais informações.
 
 #### Suporte RDE para código de front-end usando temas de site e modelos de site (programa de adoção antecipada) {#rde-frontend-early-adopter}
 
-[RDEs (Rapid Development Environments, ambientes de desenvolvimento rápido)](/help/implementing/developing/introduction/rapid-development-environments.md) O agora oferece suporte ao código de front-end com base no [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md), para os participantes iniciais. Com RDEs, isso é feito usando uma diretiva de linha de comando, em vez de uma [pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Entre em contato com **<aemcs-rde-support@adobe.com>** para experimentar e fornecer feedback.
+Os [Ambientes de Desenvolvimento Rápido (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) agora oferecem suporte ao código front-end com base nos [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e nos [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md), para usuários iniciais. Com RDEs, isso é feito usando uma diretiva de linha de comando, em vez de um [pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Entre em contato com **<aemcs-rde-support@adobe.com>** para experimentar e fornecer feedback.
 
 #### Melhoria no registro para RDEs (Early Adoter Program, programa de adoção antecipada) {#rde-logging-early-adopter}
 
-Ao depurar o código em um [RDE (Rapid Development Environment, ambiente de desenvolvimento rápido)](/help/implementing/developing/introduction/rapid-development-environments.md), os desenvolvedores agora podem configurar e transmitir logs com mais eficiência, usando a linha de comando e sem modificar as propriedades OSGI no controle de versão. Os recursos incluem:
+Ao depurar o código em um [Ambiente de Desenvolvimento Rápido (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md), os desenvolvedores agora podem configurar e transmitir logs com mais eficiência, usando a linha de comando e sem modificar as propriedades OSGI no controle de versão. Os recursos incluem:
 
 * declarar níveis de log em um nível por pacote ou classe
 * personalizar o formato de saída do registro

@@ -43,9 +43,9 @@ Assista ao vídeo Visão geral da versão de julho de 2023 para ver um resumo do
 
 ### Novos recursos no pré-lançamento do [!DNL Experience Manager Sites] {#prerelease-sites}
 
-* A variável [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) O agora permite que os usuários visualizem tags e pesquisem por tags aplicadas como metadados aos fragmentos de conteúdo. Os usuários não precisarão mais alternar para a interface do Assets para esse recurso, reduzindo a alternância de contexto e melhorando a eficiência.
+* O [Console de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=pt-BR) agora permite que os usuários exibam marcas e pesquisem por marcas aplicadas como metadados aos fragmentos de conteúdo. Os usuários não precisarão mais alternar para a interface do Assets para esse recurso, reduzindo a alternância de contexto e melhorando a eficiência.
 
-![Marcação no Console de fragmentos de conteúdo](/help/assets/content-fragments-console-tags.png)
+![Marcação no Console de Fragmentos de Conteúdo](/help/assets/content-fragments-console-tags.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -80,16 +80,16 @@ Por padrão, o Assets Essentials agora classifica os resultados de pesquisa com 
 
 ### Novos recursos disponíveis em [!DNL Forms] {#new-features-available-in-forms-channel}
 
-* [**Temas prontos para uso**](/help/forms/using-themes-in-core-components.md) **e modelos**: Inicie seu processo de criação de formulários com nossos temas e modelos OOTB prontos para uso, personalizados para capacitar profissionais experientes e novos autores de formulários. Construídos de maneira contínua usando os Componentes principais do Adaptive Forms, esses temas e modelos meticulosamente preparados permitem que você comece a criar formulários rapidamente para casos de uso comuns.
+* [**Temas**](/help/forms/using-themes-in-core-components.md) **e modelos** prontos: inicie seu processo de criação de formulários com nossos temas e modelos prontos para uso, personalizados para capacitar profissionais experientes e novos autores de formulários. Construídos de maneira contínua usando os Componentes principais do Adaptive Forms, esses temas e modelos meticulosamente preparados permitem que você comece a criar formulários rapidamente para casos de uso comuns.
 
-* **[Componentes do React para o Forms headless](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: agora você pode visualizar e personalizar representações do Formulário adaptável headless com os componentes do React fornecidos imediatamente. Esses componentes usam classes BEM dos Componentes principais do Forms adaptável para estilo, facilitando a personalização da aparência de acordo com suas necessidades específicas.
+* **[React Components do Headless Forms](https://github.com/adobe/aem-forms-headless-components/tree/main/packages/react-vanilla-components)**: agora é possível visualizar e personalizar   Representações do formulário adaptável headless com os componentes do React fornecidos imediatamente. Esses componentes usam classes BEM dos Componentes principais do Forms adaptável para estilo, facilitando a personalização da aparência de acordo com suas necessidades específicas.
 
-* [**Criar Forms adaptável com seções que podem ser repetidas**](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel), e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) formulários adaptáveis com base em componentes repetíveis para captura de vários registros de dados.  Essas seções repetíveis permitem fornecer várias entradas de dados facilmente. É útil quando as instâncias de dados necessárias são desconhecidas. Um preenchimento de formulário pode adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências do mesmo registro de dados.
+* [**Criar Forms Adaptável com seções que podem ser repetidas**](/help/forms/create-forms-repeatable-sections.md): Agora você pode fazer com que os componentes de [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) e [Guias Horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) baseados em Formulário Adaptável sejam repetidos para captura de vários registros de dados.  Essas seções repetíveis permitem fornecer várias entradas de dados facilmente. É útil quando as instâncias de dados necessárias são desconhecidas. Um preenchimento de formulário pode adicionar ou remover seções facilmente, tornando os formulários adaptáveis a diferentes cenários de entrada de dados e simplificando a coleta de várias ocorrências do mesmo registro de dados.
 
 
 ### Recursos de pré-lançamento disponíveis em [!DNL Forms] {#pre-release-features-available-in-forms-channel}
 
-* [**Suporte corporativo ao Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): use o Google reCAPTCHA Enterprise em um formulário adaptável para fornecer proteção aprimorada contra atividades fraudulentas e spam, proporcionando uma experiência mais segura ao usuário. Com a análise de risco avançada e a integração perfeita, os usuários genuínos podem enviar formulários facilmente, enquanto os bots são bloqueados de maneira eficaz.
+* [**Suporte empresarial para o Google reCAPTCHA**](/help/forms/captcha-adaptive-forms.md): use o Google reCAPTCHA Enterprise em um Formulário adaptável para fornecer proteção aprimorada contra atividades fraudulentas e spam, proporcionando uma experiência mais segura para o usuário. Com a análise de risco avançada e a integração perfeita, os usuários genuínos podem enviar formulários facilmente, enquanto os bots são bloqueados de maneira eficaz.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3422097/adaptive-forms-recaptcha-core-components-captcha/?quality=12&learn=on)
 
@@ -108,9 +108,9 @@ Você pode enviar um email para `aem-forms-headless@adobe.com` utilizando sua ID
 
 ### Centro de ações {#actions-center}
 
-Assine notificações por email que o alertam quando ocorrem incidentes críticos que exigem ação imediata, e também com recomendações personalizadas para otimizar seu site. [Centro de ações](/help/operations/actions-center.md) serve como um hub onde você pode revisar esses alertas, como filas de replicação bloqueadas ou credenciais com expiração, e marcá-los como resolvidos.
+Assine notificações por email que o alertam quando ocorrem incidentes críticos que exigem ação imediata, e também com recomendações personalizadas para otimizar seu site. [Centro de Ações](/help/operations/actions-center.md) serve como um hub onde você pode examinar esses alertas, como filas de replicação bloqueadas ou credenciais com expiração, e marcá-los como resolvidos.
 
-![Captura de tela do Centro de ações](/help/assets/assets/actions-center.png)
+![Captura de tela do Centro de Ações](/help/assets/assets/actions-center.png)
 
 ### Programa de adoção antecipada das regras CDN e WAF {#waf-early-adopter}
 
@@ -118,7 +118,7 @@ Filtrar o tráfego na CDN com base em:
 * cabeçalhos e propriedades de solicitação (por exemplo, endereço IP)
 * padrões de tráfego conhecidos por estarem associados a tráfego mal-intencionado
 
-Interessado em experimentar o recurso e compartilhar feedback? Enviar um email para **aemcs-waf-adopter@adobe.com** da sua ID de e-mail oficial para saber mais sobre o programa dos participantes antecipados. O espaço é limitado.
+Interessado em experimentar o recurso e compartilhar feedback? Envie um email para **aemcs-waf-adopter@adobe.com** a partir da sua ID de email oficial para saber mais sobre o programa de adoção antecipada. O espaço é limitado.
 
 Saiba mais sobre o recurso no artigo [aqui](/help/security/traffic-filter-rules-including-waf.md).
 

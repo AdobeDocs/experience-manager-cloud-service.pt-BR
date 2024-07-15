@@ -39,15 +39,15 @@ Neste módulo, você cria um Fragmento de conteúdo com base nesse modelo usando
 
 O console de Fragmentos de conteúdo é usado para criar e editar conteúdo headless em canais de entrega e independentemente do contexto, que pode ser o método mais eficaz em muitos casos de criação. Em um módulo posterior, exploraremos a edição de conteúdo headless no contexto e no local.
 
-1. Selecione o **Criar** na parte superior direita do console.
+1. Selecione o botão **Criar** na parte superior direita do console.
 
-1. A variável **Novo fragmento de conteúdo** é aberta, onde você pode começar a criar um fragmento de conteúdo. O **Local** é automaticamente preenchido com a seção na qual o novo conteúdo será salvo.
+1. A caixa de diálogo **Novo fragmento de conteúdo** é aberta, onde você pode começar a criar um fragmento de conteúdo. O **Local** é automaticamente preenchido com a seção na qual o novo conteúdo será salvo.
 
 1. No menu suspenso **Modelo de Fragmentos de conteúdo**, selecione o modelo de Fragmento de conteúdo **Aventura** criado anteriormente.
 
 1. Adicione `Tuscany` como um **Título** descritivo para o fragmento de conteúdo. Isso é para identificar o seu fragmento no console.
 
-1. Selecionar **Criar e abrir**.
+1. Selecione **Criar e abrir**.
 
 ![Criar um novo fragmento de conteúdo](assets/do-not-localize/create-content.png)
 
@@ -73,7 +73,7 @@ Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos d
 
 1. Forneça uma **Imagem** que seja representativa da viagem tocando ou clicando em **Adicionar ativo** no campo **Imagem**.
 
-1. Na janela pop-up de ativos, selecione **Procurar ativos** para selecionar de um ativo existente na biblioteca de ativos.
+1. Na janela pop-up de ativos, selecione **Procurar no Assets** para selecionar um ativo existente na biblioteca de ativos.
 
    ![Adicionar ativo](assets/do-not-localize/add-asset.png)
 
@@ -81,17 +81,17 @@ Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos d
 
 1. O conteúdo da pasta **cycling-tuscany** será exibido à direita. Selecione a imagem `ADOBESTOCK_141786166.JPEG`.
 
-1. Selecionar **Selecionar**.
+1. Selecione **Selecionar**.
 
    ![Selecionar ativo](assets/do-not-localize/select-asset.png)
 
 1. A imagem selecionada será mostrada no fragmento de conteúdo. O editor salvará as alterações automaticamente.
 
-1. Quando terminar de adicionar o conteúdo, selecione o **Publish** na parte superior direita do editor. Isso disponibiliza o fragmento de conteúdo para ser consumido por aplicativos externos. Em seguida, selecione **Agora** no menu suspenso. Também é possível agendar sua publicação para um momento posterior.
+1. Quando terminar de adicionar o conteúdo, selecione o botão **Publish** na parte superior direita do editor. Isso disponibiliza o fragmento de conteúdo para ser consumido por aplicativos externos. Em seguida, selecione **Agora** no menu suspenso. Também é possível agendar sua publicação para um momento posterior.
 
    ![Publicar conteúdo](assets/do-not-localize/publish.png)
 
-1. A caixa de diálogo **Publicar fragmentos de conteúdo** será exibida. O AEM executa automaticamente uma verificação de referência para garantir que todos os recursos necessários sejam publicados para o fragmento de conteúdo. Nesse caso, também será necessário publicar o modelo criado. Selecionar **Publish**.
+1. A caixa de diálogo **Publicar fragmentos de conteúdo** será exibida. O AEM executa automaticamente uma verificação de referência para garantir que todos os recursos necessários sejam publicados para o fragmento de conteúdo. Nesse caso, também será necessário publicar o modelo criado. Selecione **Publish**.
 
    ![Publicação e verificação de referência](assets/do-not-localize/publish-confirm.png)
 

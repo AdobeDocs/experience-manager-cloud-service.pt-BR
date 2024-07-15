@@ -17,9 +17,9 @@ Saiba mais sobre os diferentes eventos que o Editor universal envia que você po
 
 ## Introdução {#introduction}
 
-Os aplicativos podem ter requisitos diferentes para atualizações de páginas ou componentes. Portanto, o Editor universal envia eventos definidos para aplicativos remotos. Caso a aplicação remota não tenha um ouvinte de evento personalizado para o evento enviado, uma [ouvinte de eventos de fallback](#fallback-listeners) fornecido pelo `universal-editor-cors` o pacote é executado.
+Os aplicativos podem ter requisitos diferentes para atualizações de páginas ou componentes. Portanto, o Editor universal envia eventos definidos para aplicativos remotos. Caso o aplicativo remoto não tenha um ouvinte de evento personalizado para o evento enviado, um [ouvinte de evento de fallback](#fallback-listeners) fornecido pelo pacote `universal-editor-cors` será executado.
 
-Todos os eventos são chamados no elemento DOM afetado da página remota. Bolha de eventos para o `BODY` elemento em que o ouvinte de eventos default fornecido pelo `universal-editor-cors` o pacote está registrado. Há eventos para o conteúdo e eventos para a interface do usuário.
+Todos os eventos são chamados no elemento DOM afetado da página remota. Os eventos propagam para o elemento `BODY` onde o ouvinte de eventos padrão fornecido pelo pacote `universal-editor-cors` está registrado. Há eventos para o conteúdo e eventos para a interface do usuário.
 
 Todos os eventos seguem uma convenção de nomenclatura.
 
@@ -27,13 +27,13 @@ Todos os eventos seguem uma convenção de nomenclatura.
 
 Por exemplo, `aue:content-update` e `aue:ui-select`
 
-Os eventos incluem a carga da solicitação e da resposta e são acionados assim que a chamada correspondente é bem-sucedida. Para obter mais detalhes sobre chamadas e exemplos de suas cargas, consulte o documento [Chamadas do editor universal.](/help/implementing/universal-editor/calls.md)
+Os eventos incluem a carga da solicitação e da resposta e são acionados assim que a chamada correspondente é bem-sucedida. Para obter mais detalhes sobre chamadas e exemplos de cargas, consulte o documento [Chamadas do Universal Editor.](/help/implementing/universal-editor/calls.md)
 
 ## Eventos de atualização de conteúdo {#content-events}
 
 ### aue:adição de conteúdo {#content-add}
 
-A variável `aue:content-add` evento é acionado quando um novo componente é adicionado a um contêiner.
+O evento `aue:content-add` é disparado quando um novo componente é adicionado a um contêiner.
 
 A carga é o conteúdo do serviço do Universal Editor, com conteúdo de fallback da definição do componente.
 
@@ -55,7 +55,7 @@ A carga é o conteúdo do serviço do Universal Editor, com conteúdo de fallbac
 
 ### aue:content-details {#content-details}
 
-A variável `aue:content-details` o evento é acionado quando um componente é carregado no painel de propriedades.
+O evento `aue:content-details` é disparado quando um componente é carregado no painel de propriedades.
 
 A carga é o conteúdo do componente e, opcionalmente, seu schema.
 
@@ -72,7 +72,7 @@ A carga é o conteúdo do componente e, opcionalmente, seu schema.
 
 ### aue:movimentação de conteúdo {#content-move}
 
-A variável `aue:content-move` o evento é acionado quando um componente é movido.
+O evento `aue:content-move` é disparado quando um componente é movido.
 
 A carga é o componente, contêiner de origem e contêiner de destino.
 
@@ -91,7 +91,7 @@ A carga é o componente, contêiner de origem e contêiner de destino.
 
 ### aue:content-patch {#content-patch}
 
-A variável `aue:content-patch` o evento é acionado quando os dados de um componente são atualizados no painel de propriedades.
+O evento `aue:content-patch` é disparado quando os dados de um componente são atualizados no painel de propriedades.
 
 A carga é uma correção JSON das propriedades atualizadas.
 
@@ -110,7 +110,7 @@ A carga é uma correção JSON das propriedades atualizadas.
 
 ### aue:remoção de conteúdo {#content-remove}
 
-A variável `aue:content-remove` evento é acionado quando um componente é removido de um container.
+O evento `aue:content-remove` é disparado quando um componente é removido de um contêiner.
 
 A carga é a ID do item do componente removido.
 
@@ -126,7 +126,7 @@ A carga é a ID do item do componente removido.
 
 ### aue:atualização de conteúdo {#content-update}
 
-A variável `aue:content-update` O evento é acionado quando as propriedades de um componente são atualizadas no contexto.
+O evento `aue:content-update` é disparado quando as propriedades de um componente são atualizadas no contexto.
 
 O payload é o valor atualizado.
 
@@ -182,13 +182,13 @@ Carga de resposta
 
 ### aue:ui-publish {#ui-publish}
 
-A variável `aue:ui-publish` evento é acionado quando o conteúdo é publicado (com invocação no `BODY` nível da UE).
+O evento `aue:ui-publish` é acionado quando o conteúdo é publicado (com invocação no nível `BODY`).
 
 A carga é uma lista de IDs de item e seus status de publicação.
 
 ### aue:ui-select {#ui-select}
 
-A variável `aue:ui-select` evento é acionado quando um componente é selecionado.
+O evento `aue:ui-select` é disparado quando um componente é selecionado.
 
 A carga é a ID do item, as propriedades do item e o tipo do componente selecionado.
 
@@ -205,7 +205,7 @@ A carga é a ID do item, as propriedades do item e o tipo do componente selecion
 
 ### aue:ui-preview {#ui-preview}
 
-A variável `aue:ui-preview` evento é acionado quando o modo de edição da página é alterado para **Visualizar**.
+O evento `aue:ui-preview` é disparado quando o modo de edição da página é alterado para **Visualização**.
 
 A carga está vazia para este evento.
 
@@ -217,7 +217,7 @@ A carga está vazia para este evento.
 
 ### aue:ui-edit {#ui-edit}
 
-A variável `aue:ui-edit` evento é acionado quando o modo de edição da página é alterado para **Editar**.
+O evento `aue:ui-edit` é disparado quando o modo de edição da página é alterado para **Editar**.
 
 A carga está vazia para este evento.
 
@@ -229,7 +229,7 @@ A carga está vazia para este evento.
 
 ### aue:ui-viewport-change {#ui-viewport-change}
 
-A variável `aue:ui-viewport-change` O evento é acionado quando o tamanho do visor é alterado.
+O evento `aue:ui-viewport-change` é acionado quando o tamanho do visor é alterado.
 
 A carga são as dimensões da janela de visualização.
 
@@ -244,7 +244,7 @@ A carga são as dimensões da janela de visualização.
 
 ### aue:inicializado {#initialized}
 
-A variável `aue:initialized` O evento é acionado para informar à página remota que ele foi carregado com êxito no Editor universal.
+O evento `aue:initialized` é disparado para informar à página remota que ele foi carregado com êxito no Editor Universal.
 
 A carga está vazia para este evento.
 
@@ -265,7 +265,7 @@ A carga está vazia para este evento.
 | `aue:content-move` | Mover o conteúdo/estrutura do componente para a área de destino |
 | `aue:content-patch` | Recarregamento de página |
 | `aue:content-remove` | Remover o elemento DOM |
-| `aue:content-update` | Atualize o `innerHTML` com a carga útil |
+| `aue:content-update` | Atualizar o `innerHTML` com a carga |
 
 ### Eventos da interface do usuário {#ui-event-fallbacks}
 
@@ -273,8 +273,8 @@ A carga está vazia para este evento.
 |---|---|
 | `aue:ui-publish` | Não fazer nada |
 | `aue:ui-select` | Rolar até o elemento selecionado |
-| `aue:ui-preview` | Adicionar `class="adobe-ue-preview"` para tag HTML |
-| `aue:ui-edit` | Adicionar `class=adobe-ue-edit"` para tag HTML |
+| `aue:ui-preview` | Adicionar `class="adobe-ue-preview"` à tag HTML |
+| `aue:ui-edit` | Adicionar `class=adobe-ue-edit"` à tag HTML |
 | `aue:ui-viewport-change` | Não fazer nada |
 | `aue:initialized` | Não fazer nada |
 

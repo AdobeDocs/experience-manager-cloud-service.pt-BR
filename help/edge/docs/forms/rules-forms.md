@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Um dos recursos avançados de criação de formulários usando uma planilha é a capacidade de usar funções de planilha integradas para criar regras, permitindo exibir ou ocultar condicionalmente campos de formulário, automatizar cálculos com base na entrada do usuário e criar uma experiência do usuário mais dinâmica.
 
-Este artigo mostra como usar várias propriedades de Bloco de formulário adaptável principalmente [`Visible`](#visible-property), [`Visibility Expression`](#visible-expression-property) e [`Value Expression`](#value-expression-property) propriedades junto com [funções de planilha](#spreadsheet-functions-for-rules) para criar regras eficazes para seus formulários. Também exploraremos alguns exemplos para ilustrar como essas regras podem ser implementadas na prática.
+Este artigo mostra como usar várias propriedades de Bloco de Formulário Adaptável, principalmente as propriedades [`Visible`](#visible-property), [`Visibility Expression`](#visible-expression-property) e [`Value Expression`](#value-expression-property), juntamente com as [funções de planilha](#spreadsheet-functions-for-rules), para criar regras eficazes para seus formulários. Também exploraremos alguns exemplos para ilustrar como essas regras podem ser implementadas na prática.
 
 ## Compreender os construtores de uma regra
 
@@ -28,18 +28,18 @@ Regras são como instruções que nos dizem o que fazer em diferentes situaçõe
 
 Por exemplo, para exibir uma caixa de email, quando uma caixa de seleção estiver marcada:
 
-* Condição: a mensagem &quot;Você gosta de se inscrever para Revista e Atividades?&quot; está marcada. (Sim ou não?). Essa condição é definida na variável `Visible` propriedade do formulário.
-* Ação (True): a caixa de email é exibida. (O que acontece se a resposta for sim). A variável `Visibility Expression`  usar a condição definida para o `visible` propriedade para mostrar campos dinamicamente.
-* Ação (False): a caixa de email está oculta. (O que acontece se não houver). A variável `Visibility Expression`  usar a condição definida para o `Value` para ocultar campos dinamicamente.
+* Condição: a mensagem &quot;Você gosta de se inscrever para Revista e Atividades?&quot; está marcada. (Sim ou não?). Essa condição é definida na propriedade `Visible` do formulário.
+* Ação (True): a caixa de email é exibida. (O que acontece se a resposta for sim). O `Visibility Expression` usa a condição definida para a propriedade `visible` para mostrar campos dinamicamente.
+* Ação (False): a caixa de email está oculta. (O que acontece se não houver). O `Visibility Expression` usa a condição definida para o `Value` para ocultar campos dinamicamente.
 
-Para obter instruções detalhadas, consulte o [mostrar/ocultar campo de email com base em uma condição](#example-1-conditional-email-field)
+Para obter instruções detalhadas passo a passo, consulte o [campo mostrar/ocultar email com base em uma condição](#example-1-conditional-email-field)
 
 
 ## Noções básicas sobre valor, visível, expressão de visibilidade e propriedades de expressão de valor
 
 ### Propriedade visível
 
-Imagine um interruptor para o seu campo de formulário. A variável `Visible` é como esse switch, controlando se o campo está inicialmente visível no formulário quando é carregado pela primeira vez.
+Imagine um interruptor para o seu campo de formulário. A propriedade `Visible` é como essa opção, controlando se o campo está inicialmente visível no formulário quando carregado pela primeira vez.
 
 * True (como a opção de luz &quot;ligada&quot;): o campo é mostrado no formulário.
 * False (como o botão luminoso estar &quot;desligado&quot;): o campo fica oculto no formulário.
@@ -48,17 +48,17 @@ Você pode usar a Fórmula de Planilha (incluindo a tag = ) para escrever uma f�
 
 ### Propriedade de expressão visível (mostrar/ocultar um campo)
 
-A variável `Visible Expression` permite usar a regra adicionada a `Visible` para decidir se exibe ou oculta o campo com base nas interações do usuário.
+A propriedade `Visible Expression` permite usar a regra adicionada à propriedade `Visible` para decidir se o campo deve ser exibido ou ocultado com base nas interações do usuário.
 
-Use o `=FORMULATEXT("Address of the corresponding Visible property)` para trazer a fórmula mencionada no `Visible` Propriedade como uma cadeia de caracteres para o `Visible Expression` campo de propriedade. Isso é necessário para mostrar/ocultar campos dinamicamente em um formulário publicado.
+Use o `=FORMULATEXT("Address of the corresponding Visible property)` para trazer a fórmula mencionada na Propriedade `Visible` como uma cadeia de caracteres para o campo de propriedade `Visible Expression`. Isso é necessário para mostrar/ocultar campos dinamicamente em um formulário publicado.
 
-![Forumaltext](/help/edge/assets/aem-forms-formulatext.png)
+![Textodefórmula](/help/edge/assets/aem-forms-formulatext.png)
 
 ### Propriedade do valor (definir os dados iniciais)
 
-Imagine um valor predefinido em um interruptor regulador para a luz da sala. A variável `Value` é semelhante, determinando o estado inicial dos dados que um usuário vê no campo.  Ele define ou recupera os dados atuais exibidos no campo de formulário.
+Imagine um valor predefinido em um interruptor regulador para a luz da sala. A propriedade `Value` é semelhante, determinando o estado inicial dos dados que um usuário vê no campo.  Ele define ou recupera os dados atuais exibidos no campo de formulário.
 
-Quando o formulário for carregado pela primeira vez, a variável `Value` determina o que o usuário vê no campo antes de fazer qualquer alteração. Ao contrário `Visible` e `Visible Expression` que controlam a visibilidade, a propriedade Value afeta diretamente os próprios dados. Os usuários podem modificar esse valor digitando, selecionando opções (menus suspensos) ou interagindo com o campo.
+Quando o formulário é carregado pela primeira vez, a propriedade `Value` determina o que o usuário vê no campo antes de fazer qualquer alteração. Ao contrário das propriedades `Visible` e `Visible Expression` que controlam a visibilidade, a propriedade Value afeta diretamente os dados em si. Os usuários podem modificar esse valor digitando, selecionando opções (menus suspensos) ou interagindo com o campo.
 
 Você pode usar Fórmula do Excel (incluindo a tag = ) para escrever uma fórmula usando uma lógica semelhante a uma planilha para determinar o valor mostrado no campo. Você pode usar os valores de outros campos no formulário dentro desta fórmula. Por exemplo, você pode calcular um desconto automaticamente com base no valor do pedido inserido em outro campo.
 
@@ -67,9 +67,9 @@ Você pode usar Fórmula do Excel (incluindo a tag = ) para escrever uma fórmul
 
 Essa propriedade permite controlar o valor exibido em um campo com base em uma fórmula, semelhante à Expressão visível. Imagine uma calculadora feita em campo.
 
-Use o `=FORMULATEXT("Address of the corresponding Value property)` para trazer a fórmula mencionada no `Value` Propriedade como uma cadeia de caracteres para o `Value Expression` campo de propriedade. Isso é necessário para calcular dinamicamente e mostrar valores calculados em um formulário publicado.
+Use o `=FORMULATEXT("Address of the corresponding Value property)` para trazer a fórmula mencionada na Propriedade `Value` como uma cadeia de caracteres para o campo de propriedade `Value Expression`. Isso é necessário para calcular dinamicamente e mostrar valores calculados em um formulário publicado.
 
-![Forumaltext](/help/edge/assets/aem-forms-formulatext-value.png)
+![Textodefórmula](/help/edge/assets/aem-forms-formulatext-value.png)
 
 Veja uma analogia para solidificar esses conceitos:
 
@@ -78,7 +78,7 @@ Veja uma analogia para solidificar esses conceitos:
 * Valor: é como um interruptor de regulador predefinido para a luz (dados iniciais no campo). Os usuários podem ajustar o brilho (modificar o valor).
 * Expressão de valor: é como uma calculadora sofisticada criada na etiqueta de preço de um produto na casa (formulário). A etiqueta de preço (campo) mostra o preço final com base em uma fórmula (por exemplo, adicionar imposto ao preço base) que usa outras informações como o preço base (valor de outro campo).
 
-Ao combinar essas propriedades com [funções de planilha](#spreadsheet-functions-for-rules), você pode obter uma grande variedade de comportamentos dinâmicos em seus formulários.
+Ao combinar essas propriedades com as [funções da planilha](#spreadsheet-functions-for-rules), é possível obter uma grande variedade de comportamentos dinâmicos em seus formulários.
 
 ## Funções de Planilha para Regras
 
@@ -87,7 +87,7 @@ O bloco adaptável do Forms suporta uma variedade de funções de planilha que p
 ### Funções lógicas
 
 * [NOT()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#__RefHeading__1018452_715980110): reverte o estado lógico (TRUE torna-se FALSE e vice-versa).
-* [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): retornará TRUE somente se todas as condições especificadas forem TRUE.
+* [AND()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#AND): retorna TRUE somente se todas as condições especificadas forem TRUE.
 * [OR()](https://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part2.html#OR): retornará TRUE se pelo menos uma das condições especificadas for TRUE.
 
 ### Funções condicionais
@@ -115,22 +115,22 @@ Crie um formulário com uma caixa de seleção e uma caixa de email, conforme ex
 
 Veja a seguir como usar uma regra para mostrar o campo de email na seleção de uma caixa de seleção:
 
-1. Defina o `Value` propriedade do campo de caixa de seleção para `TRUE`.
-1. Defina o `Checked` propriedade do campo de caixa de seleção para `FALSE`. Isso garante que a caixa de seleção não esteja selecionada, por padrão.
-1. Defina o `Visible` propriedade do campo de email para `=[address of Checked property of the checkbox field] = true()`. Por exemplo `=Q11=TRUE()`. A fórmula é avaliada se a caixa de seleção estiver marcada ou não. Se a caixa de seleção estiver marcada, a fórmula será avaliada como TRUE. Se a caixa de seleção não estiver marcada, a fórmula será avaliada como FALSE.
+1. Defina a propriedade `Value` do campo de caixa de seleção como `TRUE`.
+1. Defina a propriedade `Checked` do campo de caixa de seleção como `FALSE`. Isso garante que a caixa de seleção não esteja selecionada, por padrão.
+1. Defina a propriedade `Visible` do campo de email como `=[address of Checked property of the checkbox field] = true()`. Por exemplo `=Q11=TRUE()`. A fórmula é avaliada se a caixa de seleção estiver marcada ou não. Se a caixa de seleção estiver marcada, a fórmula será avaliada como TRUE. Se a caixa de seleção não estiver marcada, a fórmula será avaliada como FALSE.
 
 
 
-   A variável `TRUE()` retorna o valor lógico ao defini-lo para apontar para `Checked` propriedade, se a variável `checked = false` retorna falso. Se `checked=true`, retorna `true`. Isso garante que o campo de email fique oculto, por padrão.
+   A função `TRUE()` retorna o valor lógico quando você o define para apontar para a propriedade `Checked`, se `checked = false` ela retorna falso. Se `checked=true`, retorna `true`. Isso garante que o campo de email fique oculto, por padrão.
 
 
-1. Defina o `Visible Expression` propriedade do campo de caixa de seleção para `=FORMULATEXT ((address of Visible property of the checkbox field))`. Por exemplo, `=FORMULATEXT((G12))`. A função FORMULATEXT () pega uma fórmula como entrada e retorna a fórmula em si como um texto. Ajuda a usar a fórmula no formulário.
+1. Defina a propriedade `Visible Expression` do campo de caixa de seleção como `=FORMULATEXT ((address of Visible property of the checkbox field))`. Por exemplo, `=FORMULATEXT((G12))`. A função FORMULATEXT () pega uma fórmula como entrada e retorna a fórmula em si como um texto. Ajuda a usar a fórmula no formulário.
 
    ![Campo de email condicional](/help/edge/assets/aem-forms-visible-expression-formula-text.png)
 
 1. Visualize e publique seu formulário. Agora, ao marcar a caixa de seleção, o campo de email é revelado e, ao desmarcá-lo, o campo fica oculto, o que fornece uma experiência do usuário dinâmica.
 
-   ![Email condicional](/help/edge/assets/aem-forms-coditional-email.gif)
+   ![Email Condicional](/help/edge/assets/aem-forms-coditional-email.gif)
 
 
 ## Exemplo 2: Cálculo automático
@@ -143,11 +143,11 @@ Crie um formulário com um campo de data, orçamento de sala, campos Custo estim
 
 Veja como usar um cálculo automático para mostrar o Custo Estimado do Percurso:
 
-1. Defina o `Value` propriedade do `amount` campo para `=F6*DAYS(F3,F2)`. Esta fórmula calcula o número de dias a partir de `Start Date`  e `End Date`, multiplica o número de dias com o orçamento da sala e exibe o resultado em `Estimated Trip Cost` campo.
+1. Defina a propriedade `Value` do campo `amount` como `=F6*DAYS(F3,F2)`. Esta fórmula calcula o número de dias de `Start Date` e `End Date`, multiplica o número de dias com orçamento de sala e exibe o resultado no campo `Estimated Trip Cost`.
 
-1. Defina o `Value Expression` propriedade do `Estimated Trip Cost` campo para `=FORMULATEXT ((address of value property of the amount field))`. Por exemplo, `=FORMULATEXT(F7)`. A função FORMULATEXT () pega uma fórmula como entrada e retorna a fórmula em si como um texto. Ajuda a usar a fórmula no formulário.
+1. Defina a propriedade `Value Expression` do campo `Estimated Trip Cost` como `=FORMULATEXT ((address of value property of the amount field))`. Por exemplo, `=FORMULATEXT(F7)`. A função FORMULATEXT () pega uma fórmula como entrada e retorna a fórmula em si como um texto. Ajuda a usar a fórmula no formulário.
 
-1. Visualize e publique seu formulário. Agora, ao especificar um `Start Date`, `End Date`e Orçamento da sala. A variável `Estimated Trip Cost` é calculado automaticamente.
+1. Visualize e publique seu formulário. Agora, sobre a especificação de um `Start Date`, `End Date` e Orçamento de Sala. O `Estimated Trip Cost` é calculado automaticamente.
 
 ## Exemplos de funções da planilha
 
@@ -160,9 +160,9 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
   Exemplo: ocultar um campo &quot;Confirmar email&quot; se o campo de email ficar em branco.
 
-   1. Defina o `Visible` propriedade do campo &quot;Confirmar email&quot; para `=NOT(if('address of email field'=""))`.
+   1. Defina a propriedade `Visible` do campo &quot;Confirmar email&quot; como `=NOT(if('address of email field'=""))`.
 
-      ![AEM Forms oculta o campo de confirmação de email](/help/edge/assets/aem-forms-not-function-hide-email-field.png)
+      ![Campo para ocultar e confirmar email do AEM Forms](/help/edge/assets/aem-forms-not-function-hide-email-field.png)
 
 
    1. Defina a expressão visível do campo &quot;Confirmar email&quot; para `=FORMULATEXT ((address of visible property of the Confirm Email field))`
@@ -174,7 +174,7 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
    * Exemplo: habilitar um botão &quot;enviar&quot; somente se todos os campos obrigatórios estiverem preenchidos.
 
-   1. Defina o `Visible` propriedade do botão &quot;enviar&quot; para:
+   1. Defina a propriedade `Visible` do botão &quot;enviar&quot; como:
 
 
 
@@ -206,7 +206,7 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
    * Exemplo: Aplicar um desconto se um usuário inserir qualquer um dos códigos de cupom de desconto aplicáveis.
 
-   1. Defina o `Visible` propriedade do campo &quot;valor final&quot; para:
+   1. Defina a propriedade `Visible` do campo &quot;valor final&quot; como:
 
 
   ```JavaScript
@@ -233,9 +233,9 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
    * Exemplo: exibição de uma mensagem personalizada com base em uma categoria de produto escolhida.
 
-   1. Defina o `Value` propriedade do `message` campo para `Only upto 7 kg check-in lagguage is allowed!`:
+   1. Defina a propriedade `Value` do campo `message` como `Only upto 7 kg check-in lagguage is allowed!`:
 
-   1. Defina o `Visible` propriedade do `message` campo para:
+   1. Defina a propriedade `Visible` do campo `message` como:
 
 
       ```JavaScript
@@ -248,7 +248,7 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
       =if(F5="Economy", TRUE(), FALSE())
       ```
 
-   1. Defina a expressão de valor de `message` campo para
+   1. Defina a expressão de valor do campo `message` como
 
       ```JavaScript
       =FORMULATEXT ((address of value property of the final amount field))
@@ -268,7 +268,8 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
   Exemplo: cálculo do custo total de itens em um carrinho de compras.
 
-  Na expressão de valor do campo &quot;custo total&quot;: SUM(preço * quantidade)
+  Na expressão de valor do campo &quot;custo total&quot;:
+SUM(preço * quantidade)
 
   Essa fórmula supõe que você tenha campos separados para &quot;preço&quot; e &quot;quantidade&quot; de cada item. Ele os multiplica e usa SUM() para somar o custo total de todos os itens no carrinho.
 
@@ -276,7 +277,8 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
   Exemplo: Arredondamento de um valor de desconto calculado para duas casas decimais.
 
-  Na expressão de valor do campo &quot;valor de desconto&quot; (supondo que um desconto seja calculado em outro lugar): ROUND(desconto, 2)
+  Na expressão de valor do campo &quot;valor de desconto&quot; (supondo que um desconto seja calculado em outro lugar):
+ROUND(desconto, 2)
 
   Esta fórmula arredonda o valor do desconto para duas casas decimais.
 
@@ -284,22 +286,23 @@ Estes são alguns exemplos das funções de planilha comumente usadas:
 
   Exemplo: localização da idade mínima necessária para um formulário de inscrição com base em um país selecionado.
 
-  Na expressão de valor de um campo &quot;idade mínima&quot;: MIN(ageLimits[&quot;US&quot;], ageLimits[&quot;UK&quot;], ageLimits[&quot;França&quot;])
+  Na expressão de valor de um campo &quot;idade mínima&quot;:
+MIN(ageLimits[&quot;EUA&quot;], ageLimits[&quot;Reino Unido&quot;], ageLimits[&quot;França&quot;])
 
   Essa fórmula pressupõe que você tenha uma tabela chamada &quot;ageLimits&quot; que armazena requisitos de idade mínima para países diferentes. Ele usa MIN() para encontrar o menor valor entre eles.
 
 
-Além disso, o bloco adaptável do Forms permite que você assuma o controle total dos formulários criando [funções personalizadas](#creating-custom-functions). As funções personalizadas permitem definir suas próprias regras e lógicas, fornecendo controle total sobre como os formulários se comportam.
+Além disso, o bloco Adaptive Forms permite que você assuma o controle total dos seus formulários ao criar [funções personalizadas](#creating-custom-functions). As funções personalizadas permitem definir suas próprias regras e lógicas, fornecendo controle total sobre como os formulários se comportam.
 
 
 ## Criação e implantação de Funções personalizadas
 
-O bloco pronto para uso do Adaptive Forms (OOTB) fornece implementações para muitos [funções comuns de planilha](#spreadsheet-functions-for-rules). No entanto, para obter um controle mais granular sobre seus formulários, é possível usar qualquer uma das funções OOTB disponíveis no Microsoft® Excel ou no Google Sheets dentro dos blocos do Adaptive Forms. O bloco adaptável do Forms não contém implementação para todas as funções OOTB disponíveis no Microsoft® Excel ou no Google Sheets. Se você precisar de qualquer uma dessas funções, é possível desenvolver uma função personalizada com sintaxe semelhante para obter a funcionalidade fornecida pelo Microsoft® Excel ou pelo Google Sheets. Por exemplo, é possível implementar a variável [Função Year() do Microsoft® Excel](https://support.microsoft.com/en-us/office/calculate-age-113d599f-5fea-448f-a4c3-268927911b37#) para calcular a idade a partir da data de nascimento.
+O bloco OOTB (pronto para uso) do Adaptive Forms fornece implementações para muitas [funções comuns de planilha](#spreadsheet-functions-for-rules). No entanto, para obter um controle mais granular sobre seus formulários, é possível usar qualquer uma das funções OOTB disponíveis no Microsoft® Excel ou no Google Sheets dentro dos blocos do Adaptive Forms. O bloco adaptável do Forms não contém implementação para todas as funções OOTB disponíveis no Microsoft® Excel ou no Google Sheets. Se você precisar de qualquer uma dessas funções, é possível desenvolver uma função personalizada com sintaxe semelhante para obter a funcionalidade fornecida pelo Microsoft® Excel ou pelo Google Sheets. Por exemplo, você pode implementar a [função Year() do Microsoft® Excel](https://support.microsoft.com/en-us/office/calculate-age-113d599f-5fea-448f-a4c3-268927911b37#) para calcular a idade a partir da data de nascimento.
 
 
 ### Criar uma função personalizada
 
-As funções personalizadas residem no `[Adaptive form block]/functions.js` arquivo. O processo de criação geralmente envolve as seguintes etapas:
+As funções personalizadas residem no arquivo `[Adaptive form block]/functions.js`. O processo de criação geralmente envolve as seguintes etapas:
 
 * Declaração de função: defina o nome da função e seus parâmetros (as entradas que ela aceita).
 * Implementação lógica: escreva o código que descreve os cálculos ou manipulações específicos executados pela função.
@@ -348,8 +351,8 @@ export { now, year };
 
 Para usar a função personalizada no formulário:
 
-1. **Adicione a função**: inclua a função personalizada no `[Adaptive form block]/functions.js` arquivo. Lembre-se de adicioná-lo à instrução de exportação no arquivo.
-1. **Implantar o arquivo**: Implante o atualizado `functions.js` para o projeto GitHub e verifique se a compilação foi bem-sucedida.
-1. **Uso da função**: acesse a função na planilha do formulário usando o `Value`, `Value Expression`, `Visible`ou `Visible Expression` propriedades, semelhante a qualquer outra função de planilha compatível com OOTB.
-1. **Visualizar o formulário**: Use AEM Sidekick para visualizar seu formulário com a função recém-implementada.
+1. **Adicionar a Função**: inclua sua função personalizada no arquivo `[Adaptive form block]/functions.js`. Lembre-se de adicioná-lo à instrução de exportação no arquivo.
+1. **Implantar o arquivo**: implante o arquivo `functions.js` atualizado em seu projeto GitHub e verifique se a compilação foi bem-sucedida.
+1. **Uso da Função**: acesse a função na planilha do formulário usando as propriedades `Value`, `Value Expression`, `Visible` ou `Visible Expression`, semelhantes a qualquer outra função de planilha com suporte para OOTB.
+1. **Visualizar o Formulário**: use o AEM Sidekick para visualizar seu formulário com a função recém-implementada.
 

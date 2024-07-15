@@ -32,17 +32,17 @@ Leia para obter detalhes sobre o envio assíncrono no Adaptive Forms.
 Para configurar o envio assíncrono para um Formulário adaptável:
 
 1. No modo de criação do Formulário adaptável, selecione o objeto Contêiner de formulário e selecione ![cmppr1](assets/configure-icon.svg) para abrir suas propriedades.
-1. No **[!UICONTROL Envio]** seção de propriedades, ativar **[!UICONTROL Usar envio assíncrono]**.
-1. No **[!UICONTROL Ao enviar]** selecione uma das seguintes opções a serem executadas no envio bem-sucedido do formulário.
+1. Na seção de propriedades **[!UICONTROL Envio]**, habilite **[!UICONTROL Usar envio assíncrono]**.
+1. Na seção **[!UICONTROL Ao Enviar]**, selecione uma das seguintes opções para executar no envio bem-sucedido do formulário.
 
-   * **[!UICONTROL Redirecionar para URL]**: redireciona para a URL ou página especificada no envio do formulário. Você pode especificar um URL ou procurar para escolher o caminho para uma página no **[!UICONTROL URL/caminho de redirecionamento]** campo.
-   * **[!UICONTROL Mostrar mensagem]**: exibe uma mensagem no envio do formulário. Você pode escrever uma mensagem no campo de texto abaixo de **[!UICONTROL Mostrar mensagem]** opção. O campo de texto é compatível com a formatação de rich text.
+   * **[!UICONTROL Redirecionar para URL]**: redireciona para a URL ou página especificada no envio do formulário. Você pode especificar uma URL ou procurar para escolher o caminho para uma página no campo **[!UICONTROL Redirecionar URL/Caminho]**.
+   * **[!UICONTROL Mostrar Mensagem]**: Exibe uma mensagem no envio do formulário. Você pode escrever uma mensagem no campo de texto abaixo da opção **[!UICONTROL Mostrar mensagem]**. O campo de texto é compatível com a formatação de rich text.
 
-1. Selecionar ![botão de seleção1](assets/save_icon.svg) para salvar as propriedades.
+1. Selecione ![check-button1](assets/save_icon.svg) para salvar as propriedades.
 
 ## Como o envio assíncrono funciona {#how-asynchronous-submission-works}
 
-[!DNL Experience Manager Forms] O fornece manipuladores de sucesso e erro prontos para uso para envios de formulários. Os manipuladores são funções do lado do cliente executadas com base na resposta do servidor. Quando um formulário é enviado, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou com erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função.
+[!DNL Experience Manager Forms] fornece manipuladores de sucesso e erro prontos para uso para envio de formulários. Os manipuladores são funções do lado do cliente executadas com base na resposta do servidor. Quando um formulário é enviado, os dados são transmitidos ao servidor para validação, o que retorna uma resposta ao cliente com informações sobre o evento bem-sucedido ou com erro para o envio. As informações são passadas como parâmetros para o manipulador relevante para executar a função.
 
 Além disso, os autores e desenvolvedores de formulários podem escrever regras no nível do formulário para substituir os manipuladores padrão. Para obter mais informações, consulte [Substituir manipuladores padrão usando regras](#custom).
 
@@ -108,11 +108,11 @@ Desenvolvedores de formulários e autores podem escrever regras, no nível do fo
 
 Execute as seguintes etapas para escrever regras para lidar com eventos bem-sucedidos e errados.
 
-1. Abra o Formulário adaptável no modo de criação, selecione qualquer objeto de formulário e ![edit-rules1](assets/edit-rules-icon.svg) para abrir o editor de regras.
-1. Selecionar **[!UICONTROL Formulário]** na árvore Objetos de formulário e selecione **[!UICONTROL Criar]**.
-1. Escolher **[!UICONTROL foi enviado com sucesso]** ou **[!UICONTROL falha no envio]** do **[!UICONTROL Selecionar estado]** lista suspensa.
-1. Definir um **[!UICONTROL Depois]** ação para o estado selecionado. Por exemplo, selecione **[!UICONTROL Navegar para]** e, em seguida, digite ou cole um URL. Você também pode arrastar qualquer função usando o **[!UICONTROL Funções]** para a regra.
+1. Abra o Formulário adaptável no modo de criação, selecione qualquer objeto de formulário e selecione ![edit-rules1](assets/edit-rules-icon.svg) para abrir o editor de regras.
+1. Selecione **[!UICONTROL Formulário]** na árvore Objetos de Formulário e selecione **[!UICONTROL Criar]**.
+1. Escolha **[!UICONTROL foi enviado com êxito]** ou **[!UICONTROL falha no envio]** na lista suspensa **[!UICONTROL Selecionar estado]**.
+1. Defina uma ação **[!UICONTROL Then]** para o estado selecionado. Por exemplo, selecione **[!UICONTROL Navegar até]** e digite ou cole uma URL. Você também pode arrastar qualquer função usando a guia **[!UICONTROL Funções]** para a regra.
 
    ![manipulador de envio bem-sucedido](assets/form-submission-handler.png)
 
-1. Selecionar **[!UICONTROL Concluído]** para salvar a regra.
+1. Selecione **[!UICONTROL Concluído]** para salvar a regra.

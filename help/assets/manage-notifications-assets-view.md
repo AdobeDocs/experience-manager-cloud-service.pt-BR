@@ -1,6 +1,6 @@
 ---
 title: Gerenciar notificações
-description: Monitore as operações realizadas nos ativos ou pastas disponíveis no repositório usando as notificações de visualização de Ativos.
+description: Monitore as operações realizadas nos ativos ou pastas disponíveis no repositório usando as notificações de exibição do Assets.
 exl-id: 1fe6a845-37d5-43c2-bb96-c5b149c238ab
 feature: Assets Essentials
 role: User, Leader
@@ -13,11 +13,11 @@ ht-degree: 70%
 
 # Monitorar ativos, pastas e coleções {#watch-assets-folders}
 
-As notificações de exibição de ativos permitem monitorar as operações realizadas nos ativos, pastas ou coleções disponíveis no repositório. Você precisa selecionar e assinar o conteúdo sobre o qual deseja receber notificações. Você também pode configurar as categorias para as quais receberá notificações.
+As notificações de exibição do Assets permitem monitorar as operações realizadas nos ativos, pastas ou coleções disponíveis no repositório. Você precisa selecionar e assinar o conteúdo sobre o qual deseja receber notificações. Você também pode configurar as categorias para as quais receberá notificações.
 
 ## Assinar categorias de notificação {#subscribe-to-notification-categories}
 
-Você pode assinar e escolher dentre uma lista de categorias para as quais receberá notificações. A exibição Ativos envia notificações somente para as categorias selecionadas entre as opções disponíveis:
+Você pode assinar e escolher dentre uma lista de categorias para as quais receberá notificações. A visualização Assets envia notificações somente para as categorias selecionadas dentre as opções disponíveis:
 
 <table>
     <tbody>
@@ -62,18 +62,18 @@ Você pode assinar e escolher dentre uma lista de categorias para as quais receb
 
 Para assinar as categorias de notificação:
 
-1. Clique em ![ícone de sino](assets/bell-icon.svg) na extremidade direita da barra de menus da interface de usuário da Exibição de ativos.
+1. Clique em ![ícone de sino](assets/bell-icon.svg) na extremidade direita da barra de menus da interface de usuário do Assets View.
 
 1. Clique no ![ícone de configurações](assets/settings-icon.svg) para visualizar a página [!UICONTROL Preferências da Experience Cloud].
 
 1. Clique na opção **[!UICONTROL Notificações]** disponível no painel esquerdo.
 
-1. No **[!UICONTROL Notificação]** , navegue até o [!UICONTROL Exibição de ativos] e certifique-se de que a opção está no estado ON.
+1. Na seção **[!UICONTROL Notificações]**, navegue até a seção [!UICONTROL Modo de Exibição do Assets] e verifique se a opção está definida como ATIVADO.
 
-   ![Notificações na exibição de Ativos](assets/enable-notifications.png)
+   ![Notificações no modo de exibição Assets](assets/enable-notifications.png)
 
 1. Clique em **[!UICONTROL Personalizar]** para visualizar as categorias de notificação.
-   ![Notificações na exibição de Ativos](assets/enable-notification-categories.png)
+   ![Notificações no modo de exibição Assets](assets/enable-notification-categories.png)
 
 1. Selecione as categorias de notificação sobre as quais você precisa ser notificado.
 
@@ -84,22 +84,22 @@ Depois de [assinar as categorias de notificação](#subscribe-to-notification-ca
 >[!NOTE]
 >
 >* Para as categorias de notificação **[!UICONTROL Solicitações]** e **[!UICONTROL Atribuído a mim]**, não é necessário assinar o conteúdo após ter assinado as categorias de notificação. Você recebe notificações automaticamente sobre solicitações que criou e quando uma tarefa é atribuída a você.
->* A exibição de Ativos envia notificações somente quando outros usuários executam ações no conteúdo assinado. Você não recebe notificações para ações que você executou no conteúdo assinado.
+>* A exibição do Assets envia notificações somente quando outros usuários executam ações no conteúdo assinado. Você não recebe notificações para ações que você executou no conteúdo assinado.
 
 Para assinar o conteúdo, selecione a pasta, ativo ou coleção que você precisa assinar e clique em **[!UICONTROL Observar]**.
 
-A exibição de Ativos exibe uma mensagem de sucesso. Você pode clicar em **[!UICONTROL Ir para as preferências de notificação]** disponível na mensagem de sucesso para editar a [assinatura de categorias de notificação](#subscribe-to-notification-categories).
+A visualização do Assets exibe uma mensagem de sucesso. Você pode clicar em **[!UICONTROL Ir para as preferências de notificação]** disponível na mensagem de sucesso para editar a [assinatura de categorias de notificação](#subscribe-to-notification-categories).
 
-![Notificações na exibição de Ativos](assets/watch-assets.png)
+![Notificações no modo de exibição Assets](assets/watch-assets.png)
 
-A exibição Ativos agora envia notificações para as categorias que você assinou. Você também pode selecionar vários ativos, pastas ou coleções e clicar em **[!UICONTROL Observar]** para economizar tempo. No entanto, se você selecionar várias entidades, dentre as quais algumas você já assinou algumas, a opção **[!UICONTROL Observar]** não é exibida.
+A exibição do Assets agora envia notificações para as categorias que você assinou. Você também pode selecionar vários ativos, pastas ou coleções e clicar em **[!UICONTROL Observar]** para economizar tempo. No entanto, se você selecionar várias entidades, dentre as quais algumas você já assinou algumas, a opção **[!UICONTROL Observar]** não é exibida.
 
 De maneira similar, para cancelar a assinatura, selecione o ativo, pasta ou coleção que você assinou e clique em **[!UICONTROL Deixar de observar]**.
 
 ## Visualizar notificações {#view-notifications}
 
-As notificações são exibidas na extremidade direita da barra de menus da interface do usuário de visualização de Ativos.
+As notificações são exibidas na extremidade direita da barra de menus da interface de usuário de visualização do Assets.
 
-![Notificações na exibição de Ativos](assets/notifications-assets-essentials.png)
+![Notificações no modo de exibição Assets](assets/notifications-assets-essentials.png)
 
-Ao clicar em uma notificação, a visualização Ativos navega até o ativo ou pasta apropriada que é mencionada na notificação.
+Ao clicar em uma notificação, a visualização Assets navega até o ativo ou pasta apropriada que é referenciado na notificação.

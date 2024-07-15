@@ -42,7 +42,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Criar Modelos de fragmentos do conteúdo {#creating-content-fragment-models}
 
-Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em **Ferramentas** > **Geral** > **Modelos de fragmentos do conteúdo**.
+Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em **Ferramentas** > **Geral** > **Modelos de fragmentos de conteúdo**.
 
 ![Modelos de fragmentos de conteúdo em Ferramentas](assets/cfm-tools.png)
 

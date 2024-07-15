@@ -13,7 +13,7 @@ ht-degree: 35%
 
 # Ferramentas de Modernização do AEM {#aem-moderization-tools}
 
-As ferramentas de Modernização do AEM fornecem um conjunto de utilitários que podem ser usados para converter os recursos legados do AEM às capacidades modernas e compatíveis do AEM as a Cloud Service.
+As ferramentas de Modernização do AEM fornecem um conjunto de utilitários que podem ser usados para converter os recursos legados do AEM para as funcionalidades modernas e compatíveis do AEM as a Cloud Service.
 
 
 ## Introdução {#introduction}
@@ -28,8 +28,8 @@ As ferramentas de Modernização do AEM permitem a fácil conversão de:
 >[!NOTE]
 >As ferramentas de Modernização do AEM são um esforço da comunidade e não são suportadas ou garantidas pela Adobe.
 
-Consulte **[Introdução às ferramentas de modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)** para saber mais sobre o planejamento, a configuração e o desenvolvimento do conjunto de ferramentas de modernização do AEM.
+Consulte **[Introdução às Ferramentas de Modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/)** para saber mais sobre o planejamento, a configuração e o desenvolvimento do conjunto de ferramentas de Modernização do AEM.
 
 ## Instalação e implementação do Conjunto de ferramentas de modernização do AEM {#installing-implementing}
 
-Consulte **[Recurso do Git: AEM Modernizar conjunto de ferramentas](https://github.com/adobe/aem-modernize-tools)** para saber mais sobre instalação e implementação.
+Consulte **[Recurso do Git: AEM Modernizar Conjunto de Ferramentas](https://github.com/adobe/aem-modernize-tools)** para saber mais sobre instalação e implementação.

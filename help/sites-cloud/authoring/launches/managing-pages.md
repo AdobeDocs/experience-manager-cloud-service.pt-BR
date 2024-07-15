@@ -50,7 +50,7 @@ Todos esses pontos de entrada abrem a inicialização no console Sites, onde é 
 
 * Navegar,
 * **Criar** novas páginas,
-* Selecione páginas e atos existentes; por exemplo, **Editar**, abrir **Propriedades**, **Bloquear**, **Copiar**, **Colar** e **Excluir**
+* Selecionar páginas e atos existentes; por exemplo, **Editar**, abrir **Propriedades**, **Bloquear**, **Copiar**, **Colar** e **Excluir**
   ![Navegar pelo lançamento no console Sites a partir de Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-manage-content.png)
 * Usar o painel **Referências** para retornar às páginas de **Origem do lançamento**:
   ![Console Sites — Origem de lançamento](/help/sites-cloud/authoring/assets/launches-navigate-launch-source.png)

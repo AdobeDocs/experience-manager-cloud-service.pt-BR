@@ -21,7 +21,7 @@ Essas diretrizes são fornecidas para ajudar a evitar problemas de desempenho co
 
 ## Lista de verificação do GraphQL {#graphql-checklist}
 
-A lista de verificação a seguir tem como objetivo ajudar você a otimizar a configuração e o uso do GraphQL no Adobe Experience Manager (AEM) as a Cloud Service.
+A lista de verificação a seguir tem como objetivo ajudar você a otimizar a configuração e o uso do GraphQL no as a Cloud Service do Adobe Experience Manager (AEM).
 
 ### Primeiros princípios {#first-principles}
 
@@ -33,11 +33,11 @@ O uso de consultas persistentes do GraphQL é altamente recomendado.
 
 As consultas persistentes do GraphQL ajudam a reduzir o desempenho da execução da consulta utilizando a Rede de entrega de conteúdo (CDN). Os aplicativos clientes solicitam consultas persistentes com solicitações GET para execução habilitada para fast edge.
 
-**Referência adicional**
+**Mais referências**
 
 Consulte:
 
-* [Consultas persistentes do GraphQL](/help/headless/graphql-api/persisted-queries.md).
+* [Consultas GraphQL persistentes](/help/headless/graphql-api/persisted-queries.md).
 * [Saiba como usar o GraphQL com o AEM - Exemplos de conteúdo e consultas](/help/headless/graphql-api/sample-queries.md)
 
 ### Estratégia de cache {#cache-strategy}
@@ -48,9 +48,9 @@ Vários métodos de armazenamento em cache também podem ser usados para otimiza
 
 **Recomendação**
 
-[Dispatcher AEM](/help/implementing/dispatcher/overview.md) é o cache de primeiro nível no serviço AEM, antes do cache CDN.
+O [AEM Dispatcher](/help/implementing/dispatcher/overview.md) é o cache de primeiro nível no serviço AEM, antes do cache CDN.
 
-**Referência adicional**
+**Mais referências**
 
 Consulte:
 
@@ -60,9 +60,9 @@ Consulte:
 
 **Recomendação**
 
-As consultas do GraphQL e suas respostas JSON podem ser armazenadas em cache se direcionadas como `GET` solicitações ao usar um CDN. Por outro lado, as solicitações não armazenadas em cache podem ser muito caras (recursos) e de processamento lento, com potencial para efeitos prejudiciais adicionais nos recursos da origem.
+As consultas do GraphQL e suas respostas JSON podem ser armazenadas em cache se direcionadas como solicitações `GET` ao usar um CDN. Por outro lado, as solicitações não armazenadas em cache podem ser muito caras (recursos) e de processamento lento, com potencial para efeitos prejudiciais adicionais nos recursos da origem.
 
-**Referência adicional**
+**Mais referências**
 
 Consulte:
 
@@ -74,9 +74,9 @@ Consulte:
 
 Ao usar consultas persistentes do GraphQL com um CDN, é recomendável definir cabeçalhos de controle de cache HTTP apropriados.
 
-Cada consulta persistente pode ter seu próprio conjunto específico de cabeçalhos de controle de cache. Os cabeçalhos podem ser definidos no [API do GraphQL](/help/headless/graphql-api/content-fragments.md) ou o [IDE GraphiQL do AEM](/help/headless/graphql-api/graphiql-ide.md).
+Cada consulta persistente pode ter seu próprio conjunto específico de cabeçalhos de controle de cache. Os cabeçalhos podem ser definidos na [API GraphQL](/help/headless/graphql-api/content-fragments.md) ou no [AEM GraphiQL IDE](/help/headless/graphql-api/graphiql-ide.md).
 
-**Referência adicional**
+**Mais referências**
 
 Consulte:
 
@@ -89,7 +89,7 @@ Consulte:
 
 Esse recurso permite que o AEM armazene em cache ainda mais o conteúdo no escopo de consultas do GraphQL, que pode ser montado como blocos na saída JSON em vez de linha por linha.
 
-**Referência adicional**
+**Mais referências**
 
 Entre em contato com o Adobe para ativar esse recurso para seu programa e ambientes AEM Cloud Service.
 
@@ -110,7 +110,7 @@ O AEM fornece duas abordagens para a otimização de consultas de GraphQL:
 
    * A [Classificação](#use-graphql-sorting) não está diretamente relacionada à otimização, mas à paginação
 
-Cada abordagem tem seus próprios casos de uso e limitações. Esta seção fornece informações sobre Filtragem e Paginação Híbrida, juntamente com alguns dos [práticas recomendadas](#best-practices) para uso na otimização de consultas do GraphQL.
+Cada abordagem tem seus próprios casos de uso e limitações. Esta seção fornece informações sobre a Filtragem e Paginação Híbridas, juntamente com algumas das [práticas recomendadas](#best-practices) para uso na otimização de consultas do GraphQL.
 
 #### Usar filtragem híbrida do AEM GraphQL {#use-aem-graphql-hybrid-filtering}
 
@@ -130,7 +130,7 @@ Essa técnica mantém a flexibilidade que os filtros de GraphQL oferecem e deleg
 >
 >A filtragem híbrida de AEM requer a atualização dos fragmentos de conteúdo existentes
 
-**Referência adicional**
+**Mais referências**
 
 Consulte:
 
@@ -161,7 +161,7 @@ Na consulta, você especifica o cursor do último item da página anterior, alé
   >
   >A paginação para trás (usando os parâmetros `before`/`last`) não é compatível.
 
-**Referência adicional**
+**Mais referências**
 
 Consulte:
 
@@ -181,7 +181,7 @@ Se a ordem de classificação incluir um ou mais campos localizados em um fragme
 >
 >A classificação em campos de nível superior também tem um impacto (embora pequeno) no desempenho.
 
-**Referência adicional**
+**Mais referências**
 
 Consulte:
 
@@ -290,7 +290,7 @@ O aninhamento profundo também pode ter efeitos adversos na governança de conte
 
 ### Não produzir todos os formatos (elementos de texto multilinha) {#do-not-output-all-formats}
 
-O AEM GraphQL pode retornar texto, criado no **[Texto multilinha](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)** tipo de dados, em vários formatos: Rich Text, Texto simples e Markdown.
+O AEM GraphQL pode retornar texto, criado no tipo de dados **[Texto de várias linhas](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)**, em vários formatos: Rich Text, Texto Simples e Markdown.
 
 A saída de todos os três formatos aumenta o tamanho da saída de texto em JSON por um fator de três. Isso, combinado com conjuntos de resultados geralmente grandes de consultas muito amplas, pode produzir respostas JSON muito grandes que, portanto, levam muito tempo para serem computadas. É melhor limitar a saída somente aos formatos de texto necessários para renderizar o conteúdo.
 

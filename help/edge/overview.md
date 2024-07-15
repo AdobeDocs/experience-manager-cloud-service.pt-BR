@@ -24,11 +24,11 @@ Ao usar os Edge Delivery Services, é possível:
 
 ## Visão geral {#overview}
 
-O Edge Delivery Services é um conjunto de serviços combináveis que permite um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Você pode usar ambos [Gestão de conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) e criação WYSIWYG usando o [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) bem como [criação baseada em documento.](https://www.aem.live/docs/authoring)
+O Edge Delivery Services é um conjunto de serviços combináveis que permite um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Você pode usar a [criação de conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) e WYSIWYG, usando o [Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md) e a [criação baseada em documentos.](https://www.aem.live/docs/authoring)
 
 O diagrama a seguir ilustra como você pode editar conteúdo no Microsoft Word (criação baseada em documento) e publicar no Edge Delivery Services. Ele também mostra a edição WYSIWYG usando o editor universal.
 
-![Arquitetura de entrega de borda](assets/AEM-with-EDS-publishing-simple2.png)
+![Arquitetura do Edge Delivery](assets/AEM-with-EDS-publishing-simple2.png)
 
 Você pode usar o conteúdo diretamente do Microsoft Word ou do Google Docs, de modo que essas fontes se tornem páginas no seu site. Além disso, cabeçalhos, listas, imagens e elementos de fonte podem ser transferidos da fonte inicial para o site. O novo conteúdo é adicionado instantaneamente, sem um processo de reconstrução.
 
@@ -36,38 +36,38 @@ O Edge Delivery Services usa o GitHub para que você possa gerenciar e implantar
 
 Leitura adicional na documentação do Edge Delivery Services:
 
-* Para obter detalhes sobre como começar a usar o Edge Delivery, consulte o [Criar seção.](https://www.aem.live/docs/#build)
-* Para entender como criar e publicar conteúdo usando o Edge Delivery, consulte [Seção de publicação.](https://www.aem.live/docs/authoring)
-* Para entender como iniciar corretamente o projeto do seu site, consulte [Lançar seção.](https://www.aem.live/docs/#launch)
+* Para obter detalhes sobre como começar a usar o Edge Delivery, consulte a seção [Build.](https://www.aem.live/docs/#build)
+* Para entender como criar e publicar conteúdo usando o Edge Delivery, consulte a [seção Publish.](https://www.aem.live/docs/authoring)
+* Para entender como iniciar corretamente o projeto do seu site, consulte a [seção Iniciar.](https://www.aem.live/docs/#launch)
 
 ## Edge Delivery Services e outros produtos da Adobe Experience Cloud {#edge-other-products}
 
 Edge Delivery Services fazem parte do Adobe Experience Manager e, como tal, os sites Edge Delivery Services e AEM podem coexistir no mesmo domínio, que é um caso de uso comum para sites maiores. Além disso, o conteúdo dos Edge Delivery Services pode ser facilmente consumido pelas páginas do AEM Sites e vice-versa.
 
-Consulte a [Guia de introdução do desenvolvedor para WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para saber como iniciar seu próprio projeto para criar com AEM e Edge Delivery Services.
+Consulte o [Guia de Introdução do Desenvolvedor para WYSIWYG com Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para saber como iniciar seu próprio projeto para criar com AEM e Edge Delivery Services.
 
-Também é possível usar o Edge Delivery Services com [Adobe Target,](https://www.aem.live/developer/target-integration) [Monitoramento de uso real (RUM)](https://www.aem.live/developer/rum) para diagnosticar o uso e o desempenho de seus sites e [Iniciar.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+Você também pode usar Edge Delivery Services com o [Adobe Target](https://www.aem.live/developer/target-integration) [RUM (Monitoramento de Uso Real)](https://www.aem.live/developer/rum) para diagnosticar o uso e o desempenho de seus sites e o [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Introdução aos Edge Delivery Services. {#getting-started}
 
-É fácil começar a usar o Edge Delivery Services seguindo o [Introdução - Tutorial do desenvolvedor.](https://www.aem.live/developer/tutorial)
+É fácil começar a usar o Edge Delivery Services seguindo o [Guia de Introdução - Tutorial do Desenvolvedor.](https://www.aem.live/developer/tutorial)
 
 ## Obtendo ajuda do Adobe {#getting-help}
 
 O Adobe fornece três canais para ajudá-lo com Edge Delivery Services:
 
 * Interagir com [recursos da comunidade](#community-resources) para consultas gerais.
-* Acessar o [canal de colaboração do produto](#collaboration-channel) para perguntas específicas.
-* [Registrar um tíquete de suporte](#support-ticket) para resolver problemas importantes e críticos.
+* Acesse seu [canal de colaboração do produto](#collaboration-channel) para perguntas específicas.
+* [Registre um tíquete de suporte](#support-ticket) para resolver problemas graves e críticos.
 
 ### Acessar recursos da comunidade {#community-resources}
 
 O Adobe tem o compromisso de capacitá-lo com o melhor envolvimento e suporte da comunidade para o Edge Delivery Services, o WYSIWYG e a criação baseada em documentos.
 
-* Participar de [Comunidade Experience League](https://adobe.ly/3Q6kTKl) fazer perguntas, compartilhar feedback, iniciar discussões, buscar assistência de especialistas em Adobe e AEM Advisors/Champs, e conectar-se com indivíduos que pensam da mesma maneira em tempo real.
-* Associe-se ao nosso [Canal de discórdia,](https://discord.gg/aem-live) uma plataforma mais casual para interações em tempo real e trocas rápidas de ideias.
+* Participe da [Comunidade Experience League](https://adobe.ly/3Q6kTKl) para fazer perguntas, compartilhar feedback, iniciar discussões, buscar assistência de especialistas em Adobe e consultores/campistas do AEM, e conectar-se com indivíduos que pensam da mesma maneira em tempo real.
+* Junte-se ao nosso [canal Discord](https://discord.gg/aem-live), uma plataforma mais casual para interações em tempo real e trocas rápidas de ideias.
 
-### Como acessar o canal de colaboração do produto {#collaboration-channel}
+### Como acessar o canal do Collaboration do seu produto {#collaboration-channel}
 
 Dado o valor do canal de comunicação direta com os usuários, todos os projetos AEM no lançamento estabelecerão um canal Slack para velocidade, atualizações críticas e relatórios dimensionados sobre a qualidade da experiência. Você receberá um convite do Adobe para se associar a um canal de Slack específico da sua organização.
 
@@ -79,8 +79,8 @@ Você pode entrar em contato com as equipes de produtos Adobe por meio do canal 
 
 Se um problema do produto exigir investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte seguindo esse processo usando o Admin Console:
 
-1. [Seguindo o processo de suporte padrão,](https://experienceleague.adobe.com/?support-tab=home&amp;lang=pt-BR#support) e criar um ticket.
-1. Adicionar **Entrega de borda** no título do ticket.
+1. [Após o processo de suporte padrão](https://experienceleague.adobe.com/?support-tab=home&amp;lang=pt-BR#support), crie um tíquete.
+1. Adicionar **Edge Delivery** no título do tíquete.
 1. Na descrição, forneça os seguintes detalhes além da descrição do problema:
 
    * URL do site ativo. Por exemplo: `www.mydomain.com`.
@@ -88,4 +88,4 @@ Se um problema do produto exigir investigação e solução de problemas adicion
 
 ## O que vem a seguir {#whats-next}
 
-Introdução à revisão [Utilização do Edge Delivery Services.](/help/edge/using.md)
+Comece revisando [Usando Edge Delivery Services.](/help/edge/using.md)

@@ -32,11 +32,11 @@ Além da funcionalidade padrão, os manipuladores de conflito personalizados pod
 
 ### Exemplo de cenário {#example-scenario}
 
-Nas seções a seguir, há um exemplo de uma nova página `b` é usada, criada no blueprint e na ramificação da Live Copy (criada manualmente), para ilustrar os vários métodos de resolução de conflitos:
+Nas seções a seguir, um exemplo de uma nova página `b` é usada, criada na ramificação do blueprint e da Live Copy (criada manualmente), para ilustrar os vários métodos de resolução de conflitos:
 
 * blueprint: `/b`
 
-  Uma página principal com uma página secundária, `bp-level-1`
+  Uma página mestra com uma página secundária, `bp-level-1`
 
 * Live Copy: `/b`
 
@@ -78,9 +78,9 @@ O AEM fornece:
 O manipulador de conflito padrão é o `ResourceNameRolloutConflictHandler`
 
 * Com esse manipulador, a página do blueprint recebe prioridade.
-* A classificação de serviço para este manipulador está baixa. Ou seja, abaixo do valor padrão para o `service.ranking` propriedade porque se presume que os manipuladores personalizados precisam de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessária.
+* A classificação de serviço para este manipulador está baixa. Ou seja, abaixo do valor padrão para a propriedade `service.ranking` porque se presume que os manipuladores personalizados precisam de uma classificação mais alta. No entanto, a classificação não é o mínimo absoluto para garantir flexibilidade quando necessária.
 
-Esse manipulador de conflitos dá prioridade ao blueprint. Por exemplo, a página Live Copy `/b` é movido dentro da ramificação da Live Copy para `/b_msm_moved`.
+Esse manipulador de conflitos dá prioridade ao blueprint. Por exemplo, a página da Live Copy `/b` é movida dentro da ramificação da Live Copy para `/b_msm_moved`.
 
 * Live Copy: `/b`
 
@@ -112,7 +112,7 @@ Os manipuladores de conflito personalizados podem:
 * Ser nomeados de acordo com suas necessidades.
 * Ser desenvolvidos/configurados de acordo com suas necessidades.
    * Por exemplo, é possível desenvolver um manipulador para que a página da Live Copy tenha prioridade.
-* Ela pode ser configurada usando o [Configuração OSGi](/help/implementing/deploying/configuring-osgi.md). Em especial:
+* Ele pode ser configurado usando a [configuração OSGi](/help/implementing/deploying/configuring-osgi.md). Em especial:
    * A **Classificação do serviço** define a ordem relacionada a outros manipuladores de conflito ( `service.ranking`).
       * O valor padrão é `0`.
 

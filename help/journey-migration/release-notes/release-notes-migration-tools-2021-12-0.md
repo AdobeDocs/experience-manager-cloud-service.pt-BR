@@ -13,7 +13,7 @@ ht-degree: 45%
 
 # Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2021.12.0 {#release-notes}
 
-Esta página descreve as notas de versão das ferramentas de migração no AEM as a Cloud Service 2021.12.0.
+Esta página descreve as Notas de versão das Ferramentas de migração no AEM as a Cloud Service 2021.12.0.
 
 >[!NOTE]
 >Para ver as notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
@@ -44,5 +44,5 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.7.10 é 8 
 
 ### Novidades {#what-is-new-ctt}
 
-* Alternância adicionada à fase de assimilação na ferramenta Transferência de conteúdo para permitir que os usuários desativem [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante a assimilação. Para velocidades de assimilação ideais, a pré-cópia durante a assimilação deve ser desativada para pequenos conjuntos de migração ou se apenas alguns blobs tiverem sido adicionados desde a última assimilação.
+* Alternância adicionada à fase de assimilação na Ferramenta de transferência de conteúdo para permitir que os usuários desativem a [pré-cópia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html) durante a assimilação. Para velocidades de assimilação ideais, a pré-cópia durante a assimilação deve ser desativada para pequenos conjuntos de migração ou se apenas alguns blobs tiverem sido adicionados desde a última assimilação.
 * Mapeamento de usuários atualizado para usar a API de gerenciamento de usuários aprimorada, que permite obter 2000 usuários de cada vez, melhorando significativamente o desempenho.

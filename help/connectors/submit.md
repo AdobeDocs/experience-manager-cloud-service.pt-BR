@@ -13,7 +13,7 @@ ht-degree: 32%
 
 # Envio de um conector do AEM
 
-As informações fornecidas abaixo são úteis para o envio de Conectores do Adobe Experience Manager (AEM) e devem ser lidas com artigos sobre [implementação](implement.md) e  [manutenção](maintain.md) conectores.
+As informações fornecidas abaixo são úteis para o envio dos Conectores do Adobe Experience Manager (AEM) e devem ser lidas com artigos sobre a [implementação](implement.md) e a [manutenção](maintain.md) dos conectores.
 
 Os Conectores do AEM estão listados no [Adobe Exchange](https://partners.adobe.com/technologyprogram/experiencecloud.html).
 
@@ -38,7 +38,7 @@ Independentemente de onde eles estejam hospedados, os pacotes devem ser referenc
 </dependency>
 ```
 
-Se o parceiro ISV hospeda o conector em um repositório do Maven acessível pela Internet (acessível como o Cloud Manager), o ISV deve fornecer a configuração do repositório, em que o `pom.xml` podem ser colocados. Isso ocorre porque as dependências do conector (acima) podem ser resolvidas no momento da criação, localmente e pelo Cloud Manager.
+Se o parceiro ISV hospeda o conector em um repositório do Maven acessível pela Internet (acessível pela Cloud Manager), o ISV deve fornecer a configuração do repositório, onde o `pom.xml` pode ser colocado. O motivo é que as dependências do conector (acima) podem ser resolvidas no momento da criação, localmente e pelo Cloud Manager.
 
 ```xml
 <repository>
@@ -55,4 +55,4 @@ Se o parceiro ISV hospeda o conector em um repositório do Maven acessível pela
 </repository>
 ```
 
-Se o parceiro ISV optar por distribuir o conector como arquivos para download, o ISV deve fornecer instruções. A instrução deve descrever como os arquivos podem ser implantados em um repositório do Maven de sistema de arquivos local que deve ser verificado no Git como parte do projeto AEM. Isso garante que o Cloud Manager possa resolver essas dependências.
+Se o parceiro ISV optar por distribuir o conector como arquivos para download, o ISV deve fornecer instruções. A instrução deve descrever como os arquivos podem ser implantados em um repositório do Maven de sistema de arquivos local que deve ser verificado no Git como parte do projeto AEM. Isso garante que a Cloud Manager possa resolver essas dependências.

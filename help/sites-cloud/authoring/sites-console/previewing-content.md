@@ -21,7 +21,7 @@ Ele facilita a visualização de experiências de página que de outra forma nã
 
 >[!NOTE]
 >
->Como o conteúdo é *publicado* no ambiente de pré-visualização, ele é acessível por URL (portanto, o não precisa de acesso ao AEM).
+>Como o conteúdo é *publicado* no ambiente de visualização, ele é acessível por URL (portanto, não precisa de acesso ao AEM).
 
 Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
@@ -29,7 +29,7 @@ Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenci
 
 É possível publicar conteúdo no serviço de visualização usando a interface de **Publicação gerenciada**.
 
-1. No console do Sites, selecione a(s) página(s) que deseja enviar para visualização e clique no link **Gerenciar publicação** botão.
+1. No console Sites, selecione a(s) página(s) que deseja enviar para visualização e clique no botão **Gerenciar publicação**.
 1. No assistente a seguir, selecione **Visualizar** como destino.
 
    ![publicação gerenciada](/help/sites-cloud/authoring/assets/previewmanagedpublication.png)
@@ -40,7 +40,7 @@ Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenci
 
    >[!NOTE]
    >
-   >Como o conteúdo é *publicado* no ambiente de pré-visualização, ele é acessível por URL (portanto, o não precisa de acesso ao AEM).
+   >Como o conteúdo é *publicado* no ambiente de visualização, ele é acessível por URL (portanto, não precisa de acesso ao AEM).
 
 Como alternativa ao uso dos URLs exibidos no assistente para ver o conteúdo da visualização, você também pode anexar `preview-` ao URL de publicação da sua instância de produção.
 

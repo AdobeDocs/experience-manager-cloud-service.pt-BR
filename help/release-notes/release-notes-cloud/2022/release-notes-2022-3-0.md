@@ -13,7 +13,7 @@ ht-degree: 83%
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.3.0 {#release-notes}
 
-A seção a seguir descreve as notas de versão de recurso da versão 2022.3.0 do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de versão do recurso para a versão 2022.3.0 do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -93,11 +93,11 @@ Assista ao vídeo [Visão geral da versão de março de 2022](https://video.tv.a
 
 ### Novidades {#what-is-new-foundation}
 
-* Para uma solução de problemas mais eficiente e eficaz de recursos personalizados em ambientes na nuvem, lançamos uma nova ferramenta de desenvolvedor — [o Navegador do repositório](/help/implementing/developing/tools/repository-browser.md). É um navegador de HTML leve, somente para leitura, que pode ser iniciado no Console do desenvolvedor. Obtenha visibilidade do repositório de conteúdo nos níveis de editor, autor e pré-visualização e de todos os ambientes, incluindo produção, preparo e desenvolvimento. Navegue pela estrutura do conteúdo, visualize as propriedades e pré-visualize e baixe binários.
+* Para uma solução de problemas mais eficiente e eficaz de recursos personalizados em ambientes na nuvem, lançamos uma nova ferramenta de desenvolvedor - [o Navegador do repositório](/help/implementing/developing/tools/repository-browser.md). É um navegador de HTML leve, somente para leitura, que pode ser iniciado no Developer Console. Obtenha visibilidade do repositório de conteúdo nos níveis de editor, autor e pré-visualização e de todos os ambientes, incluindo produção, preparo e desenvolvimento. Navegue pela estrutura do conteúdo, visualize as propriedades e pré-visualize e baixe binários.
 
   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* As credenciais usadas para autenticar chamadas de API de servidor para servidor (por exemplo, para solicitações de API do GraphQL) agora podem ser atualizadas antes da expiração por autoatendimento no Console do desenvolvedor. Consulte a [documentação](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) para obter mais informações.
+* As credenciais usadas para autenticar chamadas de API de servidor para servidor (por exemplo, para solicitações de API do GraphQL) agora podem ser atualizadas antes da expiração por meio do autoatendimento no Developer Console. Consulte a [documentação](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) para obter mais informações.
 
 * As tarefas de manutenção com limpeza de versão e limpeza de log de auditoria, que não tinham sido habilitadas anteriormente, agora estão habilitadas para novos ambientes. Consulte os valores associados no artigo [Tarefa de manutenção](/help/operations/maintenance.md).
 
@@ -115,7 +115,7 @@ A data de lançamento da Ferramenta de transferência de conteúdo v1.9.0 é 28 
 
 ### Novidades {#what-is-new-ctt}
 
-* Proteções de verificação de tamanho - O recurso de verificação de tamanho da Ferramenta de transferência de conteúdo ajuda a reduzir as falhas nas transferências de conteúdo. Com o recurso de verificação de tamanho, os usuários podem: 1) determinar se têm espaço em disco suficiente na `crx-quickstart` subdiretório antes da extração e 2) estime o tamanho do conjunto de migração e verifique se ele é compatível. Se uma ou ambas as verificações forem violadas, os usuários verão avisos na interface da CTT. Com essa proteção, é possível evitar falhas de transferência de conteúdo e discutir proativamente as opções de migração com o Atendimento ao cliente da Adobe. Consulte [Determinação do tamanho do conjunto de migração e do espaço em disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) para obter mais detalhes.
+* Proteções de verificação de tamanho - O recurso de verificação de tamanho da Ferramenta de transferência de conteúdo ajuda a reduzir as falhas nas transferências de conteúdo. Com o recurso de verificação de tamanho, os usuários podem: 1) determinar se têm espaço em disco suficiente no subdiretório `crx-quickstart` antes da extração e 2) estimar o tamanho do conjunto de migração e verificar se ele é compatível. Se uma ou ambas as verificações forem violadas, os usuários verão avisos na interface da CTT. Com essa proteção, é possível evitar falhas de transferência de conteúdo e discutir proativamente as opções de migração com o Atendimento ao cliente da Adobe. Consulte [Determinando o tamanho do conjunto de migração e o espaço em disco](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#migration-set-size) para obter mais detalhes.
 
 ## Analisador de práticas recomendadas {#bpa-release}
 

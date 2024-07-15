@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Uso de adaptadores Sling {#using-sling-adapters}
 
-[Sling](https://sling.apache.org) oferece um [Padrão do adaptador](https://sling.apache.org/documentation/the-sling-engine/adapters.html) para traduzir convenientemente objetos que implementam a [Adaptável](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) interface. Essa interface fornece uma interface [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) método que traduz o objeto para o tipo de classe que está sendo transmitido como argumento.
+O [Sling](https://sling.apache.org) oferece um [Padrão de adaptador](https://sling.apache.org/documentation/the-sling-engine/adapters.html) para traduzir convenientemente objetos que implementam a interface [Adaptável](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29). Esta interface fornece um método [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) genérico que traduz o objeto para o tipo de classe que está sendo passado como argumento.
 
 Por exemplo, para traduzir um objeto Resource para o objeto Node correspondente, você pode simplesmente fazer:
 
@@ -27,11 +27,11 @@ Existem os seguintes casos de uso:
 
 * Obter objetos específicos de implementação.
 
-  Por exemplo, uma implementação baseada em JCR do genérico [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) fornece acesso ao JCR subjacente [`Node`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
+  Por exemplo, uma implementação baseada em JCR da interface genérica [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) fornece acesso ao JCR subjacente [`Node`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * Criação de atalhos de objetos que exigem que objetos de contexto interno sejam passados.
 
-  Por exemplo, a variável baseada em JCR [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) mantém uma referência à solicitação do [`JCR Session`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html), que por sua vez é necessário para muitos objetos que funcionam com base nessa sessão de solicitação, como o [`PageManager`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) ou [`UserManager`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/security/UserManager.html).
+  Por exemplo, o [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) baseado em JCR contém uma referência ao [`JCR Session`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html) da solicitação, que por sua vez é necessária para muitos objetos que funcionam com base nessa sessão de solicitação, como o [`PageManager`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageManager.html) ou [`UserManager`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/security/UserManager.html).
 
 * Atalho para serviços.
 
@@ -52,26 +52,26 @@ Há vários motivos para o retorno nulo, incluindo o seguinte:
 
 ### Armazenamento em cache {#caching}
 
-Para melhorar o desempenho, as implementações estão livres para armazenar em cache o objeto retornado de uma `obj.adaptTo()` chame. Se a variável `obj` for o mesmo, o objeto retornado será o mesmo.
+Para melhorar o desempenho, as implementações estão livres para armazenar em cache o objeto retornado de uma chamada `obj.adaptTo()`. Se o `obj` for o mesmo, o objeto retornado será o mesmo.
 
-Esse armazenamento em cache é executado para todos `AdapterFactory` casos baseados.
+Este cache é executado para todos os casos baseados em `AdapterFactory`.
 
-No entanto, não há uma regra geral: o objeto pode ser uma nova instância ou uma existente. Dessa forma, significa que você não pode confiar em nenhum dos comportamentos. Por isso, é importante, especialmente dentro `AdapterFactory`, de que os objetos são reutilizáveis nesse cenário.
+No entanto, não há uma regra geral: o objeto pode ser uma nova instância ou uma existente. Dessa forma, significa que você não pode confiar em nenhum dos comportamentos. Portanto, é importante, especialmente dentro de `AdapterFactory`, que os objetos sejam reutilizáveis nesse cenário.
 
 ### Como funciona {#how-it-works}
 
-Há várias maneiras de `Adaptable.adaptTo()` pode ser implementado:
+Há várias maneiras de implementar o `Adaptable.adaptTo()`:
 
 * Pelo próprio objeto; implementando o próprio método e mapeando para determinados objetos.
-* Por um [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), que podem mapear objetos arbitrários.
+* Por um [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), que pode mapear objetos arbitrários.
 
-  Os objetos ainda devem implementar o `Adaptable` e deve estender [`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (que passa o `adaptTo` chamada para um gerenciador de adaptador central).
+  Os objetos ainda devem implementar a interface `Adaptable` e devem estender [`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (que passa a chamada `adaptTo` para um gerenciador de adaptador central).
 
-  Esse método permite ganchos na `adaptTo` para classes existentes, como `Resource`.
+  Este método permite ganchos no mecanismo `adaptTo` para classes existentes, como `Resource`.
 
 * Uma combinação de ambos.
 
-Para o primeiro caso, os documentos Java™ podem indicar o que `adaptTo-targets` são possíveis. No entanto, para subclasses específicas, como o Recurso baseado em JCR, essa instrução geralmente não é possível. Neste último caso, as `AdapterFactory` normalmente fazem parte das classes privadas de um pacote e, portanto, não estão expostas em uma API do cliente, nem listadas em documentos Java™. Teoricamente, é possível acessar todos os `AdapterFactory` implementações do [OSGi](/help/implementing/deploying/configuring-osgi.md) tempo de execução do serviço e observar as configurações (fontes e destinos) de &quot;adaptáveis&quot;, mas não mapeá-las entre si. No final, depende da lógica interna, que deve ser documentada. Daí esta referência.
+Para o primeiro caso, os documentos Java™ podem indicar o que `adaptTo-targets` é possível. No entanto, para subclasses específicas, como o Recurso baseado em JCR, essa instrução geralmente não é possível. No último caso, as implementações de `AdapterFactory` normalmente fazem parte das classes privadas de um pacote e, portanto, não são expostas em uma API cliente, nem listadas em documentos Java™. Teoricamente, é possível acessar todas as implementações de `AdapterFactory` do tempo de execução do serviço [OSGi](/help/implementing/deploying/configuring-osgi.md) e examinar suas configurações (fontes e destinos) &quot;adaptáveis&quot;, mas não mapeá-las entre si. No final, depende da lógica interna, que deve ser documentada. Daí esta referência.
 
 ## Referência {#reference}
 
@@ -99,11 +99,11 @@ Para o primeiro caso, os documentos Java™ podem indicar o que `adaptTo-targets
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>Retorna um mapa conveniente de propriedades se for um recurso baseado em nó JCR (ou outro recurso que suporte mapas de valor). Também pode ser obtida (de forma mais simples) utilizando<br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> (trata maiúsculas e minúsculas e assim por diante)</td>
+   <td>Retorna um mapa conveniente de propriedades se for um recurso baseado em nó JCR (ou outro recurso que suporte mapas de valor). Também pode ser obtido (de forma mais simples) usando <br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> (processa maiúsculas e minúsculas e assim por diante)</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
-   <td>Extensão do <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> que permite que a hierarquia de recursos seja contabilizada ao procurar propriedades</td>
+   <td>Extensão de <a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a> que permite que a hierarquia de recursos seja contabilizada ao procurar propriedades</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModisibleValueMap</a></td>
@@ -111,7 +111,7 @@ Para o primeiro caso, os documentos Java™ podem indicar o que `adaptTo-targets
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td>
-   <td>Retorna o conteúdo binário de um recurso de arquivo (se for um recurso baseado em nó JCR e o tipo de nó for <code>nt:file</code> ou <code>nt:resource</code>; se for um recurso agrupado; conteúdo do arquivo, se for um recurso do sistema de arquivos). Ou retorna os dados de um recurso de propriedade JCR binário.</td>
+   <td>Retorna o conteúdo binário de um recurso de arquivo (se for um recurso baseado em nó JCR e o tipo de nó for <code>nt:file</code> ou <code>nt:resource</code>; se for um recurso de pacote; conteúdo de arquivo, se for um recurso do sistema de arquivos). Ou retorna os dados de um recurso de propriedade JCR binário.</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/net/URL.html">URL</a></td>
@@ -130,7 +130,7 @@ Para o primeiro caso, os documentos Java™ podem indicar o que `adaptTo-targets
    <td>Se o recurso for um script (por exemplo, arquivo jsp) para o qual um mecanismo de script está registrado com sling, ou se for um recurso servlet</td>
   </tr>
   <tr>
-   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Booleano</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Longo</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html">Duplo</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendário</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Valor</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Booleano[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendário[]</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Valor[]</a></td>
+   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">Cadeia de caracteres</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Booleano</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Longo</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html">Duplo</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendário</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Valor</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">Cadeia de caracteres[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Booleano[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Longo[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendário[]</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Valor[]</a></td>
    <td>Retorna os valores se for um recurso baseado em propriedades JCR (e o valor se ajustar)</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ Para o primeiro caso, os documentos Java™ podem indicar o que `adaptTo-targets
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/components/Component.html">Componente</a></td>
-   <td>Se for um <code>cq:Component</code> recurso de nó</td>
+   <td>Se for um recurso de nó <code>cq:Component</code></td>
   </tr>  
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/designer/Design.html">Design</a></td>
@@ -151,11 +151,11 @@ Para o primeiro caso, os documentos Java™ podem indicar o que `adaptTo-targets
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/Template.html">Modelo</a></td>
-   <td>Se for um <code>cq:Template</code> recurso de nó</td>
+   <td>Se for um recurso de nó <code>cq:Template</code></td>
   </tr>  
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blueprint</a></td>
-   <td>Se for um <code>cq:Template</code> recurso de nó</td>
+   <td>Se for um recurso de nó <code>cq:Template</code></td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/dam/api/Asset.html">Ativo</a></td>
@@ -167,7 +167,7 @@ Para o primeiro caso, os documentos Java™ podem indicar o que `adaptTo-targets
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/Tag.html">Tag</a></td>
-   <td>Se for um <code>cq:Tag</code> recurso de nó</td>
+   <td>Se for um recurso de nó <code>cq:Tag</code></td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/security/UserManager.html">UserManager</a></td>
@@ -199,11 +199,11 @@ Para o primeiro caso, os documentos Java™ podem indicar o que `adaptTo-targets
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/contentsync/config/package-summary.html">Configuração</a></td>
-   <td>Se for um <code>cq:ContentSyncConfig</code> recurso de nó</td>
+   <td>Se for um recurso de nó <code>cq:ContentSyncConfig</code></td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
-   <td>Se estiver abaixo de um <code>cq:ContentSyncConfig</code> recurso de nó</td>
+   <td>Se estiver abaixo de um recurso de nó <code>cq:ContentSyncConfig</code></td>
   </tr>
  </tbody>
 </table>
@@ -255,7 +255,7 @@ Para o primeiro caso, os documentos Java™ podem indicar o que `adaptTo-targets
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/Externalizer.html">Externalizador</a></td>
-   <td>Para externalizar URLs absolutos, mesmo sem o objeto de solicitação<br /> </td>
+   <td>Para externalizar URLs absolutas, mesmo sem o objeto de solicitação<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -300,7 +300,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
  </tbody>
 </table>
 
-**[Componente](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/components/Component.html)** adapta-se a:
+**[O componente](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/components/Component.html)** se adapta a:
 
 | [Recurso](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do componente. |
 |---|---|
@@ -333,15 +333,15 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 
 #### Segurança {#security}
 
-**Autorizável**, **Usuário**, e **Grupo** adaptar a:
+**Autorizável**, **Usuário** e **Grupo** adaptam-se a:
 
 | [Nó](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Retorna o nó inicial do usuário/grupo. |
 |---|---|
-| [StatusReplicação](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/ReplicationStatus.html) | Retorna o status de replicação do nó inicial do usuário/grupo. |
+| [StatusDaReplicação](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/ReplicationStatus.html) | Retorna o status de replicação do nó inicial do usuário/grupo. |
 
 #### DAM {#dam}
 
-**Ativo** adapta-se a:
+**O ativo** se adapta a:
 
 | [Recurso](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso do ativo. |
 |---|---|
@@ -350,7 +350,7 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 
 #### Marcação com tags {#tagging}
 
-**Tag** adapta-se a:
+**A marca** se adapta a:
 
 | [Recurso](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Recurso da tag. |
 |---|---|
@@ -359,4 +359,4 @@ Ainda sem destinos, mas implementa Adaptable e pode ser usado como origem em um 
 
 #### Outro {#other}
 
-Além disso, o Sling/JCR/OCM também fornece uma [`AdapterFactory`](https://sling.apache.org/documentation/the-sling-engine/adapters.html) para OCM personalizado ([Mapeamento de conteúdo do objeto](https://jackrabbit.apache.org/jcr/object-content-mapping.html)) objetos.
+Além disso, o Sling/JCR/OCM também fornece um [`AdapterFactory`](https://sling.apache.org/documentation/the-sling-engine/adapters.html) para objetos OCM personalizados ([Mapeamento de Conteúdo de Objeto](https://jackrabbit.apache.org/jcr/object-content-mapping.html)).

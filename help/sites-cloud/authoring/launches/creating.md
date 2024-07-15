@@ -30,7 +30,7 @@ Como opção, especifique a **Data de inicialização** (e a hora) para definir 
 >
 >Essas páginas não podem ser editadas. Você verá a mensagem:
 >
->* **Esta página não faz parte do lançamento. Ir para a página de produção**
+>* **Esta página não faz parte da inicialização. Ir para a página de produção**
 
 ## Criação de um lançamento {#creating-a-launch}
 

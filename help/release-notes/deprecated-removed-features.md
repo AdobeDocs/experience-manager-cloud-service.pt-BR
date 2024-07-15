@@ -39,12 +39,12 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 | [!DNL Sites] | Propriedades dos Fragmentos de experiência para **Status da rede social**. | O recurso será removido em breve. |
 | [!DNL Sites] | Fragmentos de conteúdo simples baseados em modelo. | [Fragmentos de conteúdo estruturado com base em modelo](/help/assets/content-fragments/content-fragments-models.md) agora. |
 | [!DNL Assets] | fluxo de trabalho `DAM Asset Update` para processar imagens ingeridas. | A assimilação de ativos usa [microsserviços de ativos](/help/assets/asset-microservices-overview.md) agora. |
-| [!DNL Assets] | Fazer upload de ativos diretamente no [!DNL Experience Manager]. Consulte [APIs de upload de ativos obsoletos](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Use [Upload binário direto](/help/assets/add-assets.md). Para obter detalhes técnicos, consulte [APIs de upload direto](/help/assets/developer-reference-material-apis.md#upload-binary). |
+| [!DNL Assets] | Carregar ativos diretamente no [!DNL Experience Manager]. Consulte [APIs de carregamento de ativos obsoletos](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Use [Upload binário direto](/help/assets/add-assets.md). Para obter detalhes técnicos, consulte [APIs de upload direto](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Determinadas etapas do fluxo de trabalho](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) `DAM Asset Update` não são compatíveis, incluindo a chamada de ferramentas de linha de comando, como o [!DNL ImageMagick]. | Os [microsserviços de ativos](/help/assets/asset-microservices-overview.md) oferecem uma substituição para muitos fluxos de trabalho. Para processamento personalizado, use [fluxos de trabalho de pós-processamento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodificação FFmpeg de vídeos. | Para gerar miniaturas do FFmpeg, use os [Microserviços de ativos](/help/assets/asset-microservices-overview.md). Para a transcodificação FFmpeg, use o [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Interface de replicação em árvore na guia &quot;Distribuir&quot; do agente de replicação (remoção após 30 de setembro de 2021) | Abordagens [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [fluxo de trabalho Publicar árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) |
 | [!DNL Foundation] | Nem a guia Distribuir da tela do administrador do agente de replicação nem a API de replicação podem ser usadas para replicar pacotes de conteúdo com mais de 10 MB. Em vez disso, use [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Integrações que usam credenciais geradas de projetos do Console do Adobe Developer perderão gradualmente o suporte às credenciais da Conta de serviço (JWT). As novas credenciais da Conta de serviço (JWT) não podem ser criadas no Adobe Developer Console em ou após 1º de maio de 2024, embora as credenciais da Conta de serviço (JWT) existentes ainda possam ser usadas para integrações já configuradas até 1º de janeiro de 2025, momento em que as credenciais da Conta de serviço (JWT) existentes não funcionarão mais e os clientes deverão migrar para as credenciais de Servidor para Servidor do OAuth. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) para credenciais OAuth de servidor para servidor. |
+| [!DNL Foundation] | Integrações que usam credenciais geradas de projetos da Adobe Developer Console perderão gradualmente o suporte às credenciais da Conta de serviço (JWT). As novas credenciais da Conta de serviço (JWT) não podem ser criadas na Adobe Developer Console em ou após 1º de maio de 2024, embora as credenciais da Conta de serviço (JWT) existentes ainda possam ser usadas para integrações já configuradas até 1º de janeiro de 2025, momento em que as credenciais da Conta de serviço (JWT) existentes não funcionarão mais e os clientes deverão migrar para as credenciais de Servidor para Servidor do OAuth. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) para credenciais OAuth de servidor para servidor. |
 
 ## Recursos removidos {#removed-features}
 
@@ -61,7 +61,7 @@ Esta seção lista os recursos e funcionalidades que foram removidas do [!DNL Ex
 | [!DNL Foundation] | Suporte para modelos de script JST (pacote OSGi org.apache.sling.scripting.jst) | N/A | Removido |
 | [!DNL Foundation] | Suporte para o quadro de permissões Apache Felix Http | OSGi Http Whiteboard | Março de 2022 |
 | [!DNL Foundation] | Suporte para com.adobe.granite.oauth.server | Integração do Adobe IMS | Março de 2023 |
-| [!DNL Foundation] | Suporte para o recurso org.apache.sling.serviceusermapping para [obter a id de usuário do serviço](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 30/08/24 |
+| [!DNL Foundation] | Suporte para o recurso org.apache.sling.serviceusermapping para [obter a ID de usuário do serviço](https://sling.apache.org/apidocs/sling12/org/apache/sling/serviceusermapping/ServiceUserMapper.html#getServiceUserID-org.osgi.framework.Bundle-java.lang.String-) | N/A | 30/08/24 |
 
 
 ## APIs AEM {#aem-apis}
@@ -289,27 +289,27 @@ Veja abaixo uma extensa lista de APIs obsoletas do AEM e a data esperada da remo
 
 ## Configuração OSGI {#osgi-configuration}
 
-As duas listas abaixo refletem a superfície de configuração OSGi as a Cloud Service do AEM, descrevendo o que os clientes podem configurar.
+As duas listas abaixo refletem a superfície de configuração OSGi do AEM as a Cloud Service, descrevendo o que os clientes podem configurar.
 
 1. Uma lista de configurações OSGi que não devem ser definidas pelo código do cliente
 1. Uma lista de configurações OSGi cujas propriedades podem ser configuradas, mas devem obedecer às regras de validação indicadas. Essas regras incluem se a declaração da propriedade é obrigatória, seu tipo e, em alguns casos, seu intervalo permitido de valores.
 
 Se uma configuração OSGI não estiver listada, ela poderá ser configurada pelo código do cliente.
 
-Essas regras são validadas durante o processo de criação do Cloud Manager. Regras adicionais podem ser adicionadas ao longo do tempo e a data de aplicação esperada é anotada na tabela. Espera-se que os clientes cumpram essas regras até a data de aplicação prevista. Não seguir as regras após a data de remoção gerará erros no processo de compilação do Cloud Manager. Os projetos Maven devem incluir a [Plug-in Maven Analisador de build do SDK as a Cloud Service do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR) para sinalizar erros de configuração OSGI durante o desenvolvimento do SDK local.
+Essas regras são validadas durante o processo de criação do Cloud Manager. Regras adicionais podem ser adicionadas ao longo do tempo e a data de aplicação esperada é anotada na tabela. Espera-se que os clientes cumpram essas regras até a data de aplicação prevista. Não seguir as regras após a data de remoção gerará erros no processo de criação do Cloud Manager. Os projetos Maven devem incluir o [Plug-in Maven Build Analyzer do SDK da AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR) para sinalizar erros de configuração OSGI durante o desenvolvimento do SDK local.
 
 Informações adicionais sobre a configuração OSGI podem ser encontradas em [este local](/help/implementing/deploying/configuring-osgi.md).
 
 +++Configurações OSGi que não podem ser modificadas.
-* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Data do anúncio: 30/4/2021, Data de execução: 31/7/2021)
-* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Data do anúncio: 30/4/2021, Data de execução: 31/7/2021)
-* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Data do anúncio: 30/4/2021, Data de execução: 31/7/2021)
-* **`org.apache.felix.http (Factory)`** (Data do anúncio: 30/4/2021, Data de execução: 31/7/2021)
-* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Data do anúncio: 25/8/2021, Data de execução: 26/11/2021)
+* **`org.apache.felix.webconsole.internal.servlet.OsgiManager`** (Data do Anúncio: 30/4/2021, Data de Imposição: 31/7/2021)
+* **`com.day.cq.auth.impl.cug.CugSupportImpl`** (Data do Anúncio: 30/4/2021, Data de Imposição: 31/7/2021)
+* **`com.day.cq.jcrclustersupport.ClusterStartLevelController`** (Data do Anúncio: 30/4/2021, Data de Imposição: 31/7/2021)
+* **`org.apache.felix.http (Factory)`** (Data do Anúncio: 30/4/2021, Data de Imposição: 31/7/2021)
+* **`org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`** (Data do Anúncio: 25/8/2021, Data de Imposição: 26/11/2021)
 +++
 
 +++Configurações OSGi sujeitas às regras de validação de compilação.
-* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Data do anúncio: 30/4/2021, Data de execução: 31/7/2021)
+* **`org.apache.felix.eventadmin.impl.EventAdmin`** (Data do Anúncio: 30/4/2021, Data de Imposição: 31/7/2021)
 * `org.apache.felix.eventadmin.ThreadPoolSize`
    * Tipo: número inteiro
    * Intervalo obrigatório: 2-100
@@ -322,10 +322,10 @@ Informações adicionais sobre a configuração OSGI podem ser encontradas em [e
 * `org.apache.felix.eventadmin.IgnoreTimeout`
    * Obrigatório
    * Tipo: matriz de cadeias de caracteres
-   * Intervalo obrigatório: deve incluir pelo menos todos `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
+   * Intervalo obrigatório: deve incluir pelo menos todos os `org.apache.felix*`, `org.apache.sling*`, `come.day*`, `com.adobe*`
 * `org.apache.felix.eventadmin.IgnoreTopic`
    * Tipo: matriz de cadeias de caracteres
-* **`org.apache.felix.http`** (Data do anúncio: 30/4/2021, Data de execução: 31/7/2021)
+* **`org.apache.felix.http`** (Data do Anúncio: 30/4/2021, Data de Imposição: 31/7/2021)
    * `org.apache.felix.http.timeout`
       * Tipo: número inteiro
    * `org.apache.felix.http.session.timeout`
@@ -388,7 +388,7 @@ Informações adicionais sobre a configuração OSGI podem ser encontradas em [e
       * Tipo: matriz de cadeias de caracteres
    * `org.apache.felix.http.session.uniqueid`
       * Tipo: booleano
-* **`org.apache.sling.scripting.cache`** (Data do anúncio: 30/4/2021, Data de execução: 31/7/2021)
+* **`org.apache.sling.scripting.cache`** (Data do Anúncio: 30/4/2021, Data de Imposição: 31/7/2021)
    * `org.apache.sling.scripting.cache.size`
       * Tipo: número inteiro
       * Intervalo obrigatório: >= 2048
@@ -396,7 +396,7 @@ Informações adicionais sobre a configuração OSGI podem ser encontradas em [e
       * Obrigatório
       * Tipo: matriz de cadeias de caracteres
       * Intervalo obrigatório: deve incluir js
-* **`com.day.cq.mailer.DefaultMailService`** (Data do anúncio: 30/4/2021, Data de execução: 31/7/2021)
+* **`com.day.cq.mailer.DefaultMailService`** (Data do Anúncio: 30/4/2021, Data de Imposição: 31/7/2021)
    * `smtp.host`
       * Tipo: sequência de caracteres
    * `smtp.port`
@@ -418,7 +418,7 @@ Informações adicionais sobre a configuração OSGI podem ser encontradas em [e
       * Tipo: booleano
    * `oauth.flow`
       * Tipo: booleano
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (Data do anúncio: 16/11/21, Data de execução: 16/2/21)
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Data do Anúncio: 16/11/21, Data de Imposição: 16/2/21)
    * `org.apache.sling.commons.log.level`
       * Tipo: enumeração
       * Intervalo obrigatório: INFO, DEBUG ou TRACE

@@ -14,45 +14,45 @@ ht-degree: 3%
 
 # Estilo em linha dos componentes do formulário adaptável {#inline-styling-of-adaptive-form-components}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/inline-style-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artigo |
 
-Você pode definir a aparência geral e o estilo de um Formulário adaptável especificando estilos usando [editor de tema](themes.md). Além disso, você pode aplicar estilos CSS em linha a componentes individuais do Formulário adaptável e visualizar as alterações em tempo real. Os estilos embutidos substituem o estilo fornecido no tema.
+Você pode definir a aparência geral e o estilo de um Formulário adaptável especificando estilos com o [editor de temas](themes.md). Além disso, você pode aplicar estilos CSS em linha a componentes individuais do Formulário adaptável e visualizar as alterações em tempo real. Os estilos embutidos substituem o estilo fornecido no tema.
 
 ## Aplicar propriedades CSS em linha {#apply-inline-css-properties}
 
 Para adicionar estilos em linha a um componente:
 
 1. Abra o formulário no editor de formulários e altere o modo para o modo de estilo. Para alterar o modo para o modo de estilo, na barra de ferramentas da página, selecione ![tela suspensa](assets/Smock_ChevronDown.svg) > **[!UICONTROL Estilo]**.
-1. Selecione um componente na página e clique no botão editar ![botão editar](assets/edit.svg). As propriedades de estilo são abertas na barra lateral.
+1. Selecione um componente na página e selecione o botão de edição ![botão de edição](assets/edit.svg). As propriedades de estilo são abertas na barra lateral.
 
    Você também pode selecionar componentes da árvore de hierarquia de formulários na barra lateral. A árvore de hierarquia de formulários está disponível como Objetos de formulário na barra lateral.
 
-   No [!UICONTROL Estilo] você pode ver os componentes listados em Objetos de formulário. No entanto, a lista Objetos de formulário na barra lateral lista componentes como campos e painéis. Campos e painéis são componentes genéricos que podem conter componentes como caixa de texto e botões de opção.
+   No modo [!UICONTROL Style], é possível ver os componentes listados em Objetos de formulário. No entanto, a lista Objetos de formulário na barra lateral lista componentes como campos e painéis. Campos e painéis são componentes genéricos que podem conter componentes como caixa de texto e botões de opção.
 
    Ao selecionar um componente na barra lateral, você verá todos os subcomponentes listados e as propriedades do componente selecionado. É possível selecionar um subcomponente específico e estilizá-lo.
 
 1. Clique em uma guia na barra lateral para especificar as propriedades de CSS. É possível especificar propriedades como:
 
-   * [!UICONTROL Dimension e Posição] (Configuração de exibição, preenchimento, altura, largura, margem, posição, índice z, flutuação, limpar, estouro)
+   * [!UICONTROL Dimension e Posição] (Exibir configuração, preenchimento, altura, largura, margem, posição, índice z, flutuante, limpar, estouro)
    * [!UICONTROL Texto] (Família da fonte, peso, cor, tamanho, altura da linha e alinhamento)
-   * [!UICONTROL Histórico] (Imagem e gradiente, cor do plano de fundo)
+   * [!UICONTROL Plano de fundo] (imagem e gradiente, cor do plano de fundo)
    * [!UICONTROL Borda] (Largura, estilo, cor, raio)
    * [!UICONTROL Efeitos] (Sombra, Opacidade)
-   * [!UICONTROL Avançado] (Permite escrever CSS personalizado para o componente)
+   * [!UICONTROL Avançado] (Permite gravar CSS personalizado para o componente)
 
-1. Da mesma forma, é possível aplicar estilos a outras partes de um componente, como [!UICONTROL Widget], [!UICONTROL Legenda], e [!UICONTROL Ajuda].
-1. Selecionar **[!UICONTROL Concluído]** para confirmar as alterações ou **[!UICONTROL Cancelar]** para descartar as alterações.
+1. Da mesma forma, você pode aplicar estilos a outras partes de um componente, como o [!UICONTROL Widget], [!UICONTROL Legenda] e [!UICONTROL Ajuda].
+1. Selecione **[!UICONTROL Concluído]** para confirmar as alterações ou **[!UICONTROL Cancelar]** para descartar as alterações.
 
 ## Exemplo: estilos em linha para um componente de campo {#example-inline-styles-for-a-field-component}
 
 As imagens a seguir representam um campo de texto antes e depois que estilos em linha são aplicados a ele.
 
-![Componente de caixa de texto antes da aplicação do estilo em linha](assets/no-style.png)
+![Componente de caixa de texto antes da aplicação do estilo embutido](assets/no-style.png)
 
 Componente Caixa de texto antes de aplicar propriedades de estilo em linha
 
@@ -99,7 +99,7 @@ Observe a alteração no estilo da caixa de texto, como mostrado na imagem a seg
  </tbody>
 </table>
 
-![Estilo da caixa de texto após a aplicação do estilo em linha](assets/applied-style.png)
+![Estilo da caixa de texto após a aplicação do estilo incorporado](assets/applied-style.png)
 
 Componente Caixa de texto após aplicar propriedades de estilo em linha
 
@@ -111,25 +111,25 @@ Seguindo as etapas acima, você pode selecionar e estilizar outros componentes, 
 
 ## Copiar e colar estilos {#copy-paste-styles}
 
-Também é possível copiar e colar um estilo de um componente para outro em um Formulário adaptável. No **[!UICONTROL Estilo]** , selecione o componente e selecione o ícone Copiar ![Copiar](assets/property-copy-icon.svg).
+Também é possível copiar e colar um estilo de um componente para outro em um Formulário adaptável. No modo **[!UICONTROL Estilo]**, selecione o componente e o ícone Copiar ![Copiar](assets/property-copy-icon.svg).
 
-Selecione o outro componente do mesmo tipo e selecione o ícone Colar ![Copiar](assets/Smock_Paste_18_N.svg) para colar o estilo copiado. Também é possível selecionar o ícone Limpar estilo ![Copiar](assets/clear-style-icon.svg) para limpar o estilo aplicado.
+Selecione o outro componente do mesmo tipo e selecione o ícone Colar ![Copiar](assets/Smock_Paste_18_N.svg) para colar o estilo copiado. Você também pode selecionar o ícone Limpar Estilo ![Copiar](assets/clear-style-icon.svg) para limpar o estilo aplicado.
 
 ## Definir estilos para diferentes estados de um componente {#set-styles-for-states}
 
-É possível definir estilos para diferentes estados de um tipo de componente. Os diferentes estados incluem: [!UICONTROL Foco], [!UICONTROL Desabilitado], [!UICONTROL Hover], [!UICONTROL Erro], [!UICONTROL Sucesso], e [!UICONTROL Obrigatório].
+É possível definir estilos para diferentes estados de um tipo de componente. Os diferentes estados incluem: [!UICONTROL Foco], [!UICONTROL Desabilitado], [!UICONTROL Foco], [!UICONTROL Erro], [!UICONTROL Sucesso] e [!UICONTROL Obrigatório].
 
 Para definir o estilo para o estado de um componente:
 
-1. No **[!UICONTROL Estilo]** , selecione o componente e selecione o ícone Editar ![Editar](assets/Smock_Edit_18_N.svg).
+1. No modo **[!UICONTROL Estilo]**, selecione o componente e o ícone Editar ![Editar](assets/Smock_Edit_18_N.svg).
 
-1. Selecione o estado do componente usando a variável **[!UICONTROL Estado]** lista suspensa.
+1. Selecione o estado do componente usando a lista suspensa **[!UICONTROL Estado]**.
 
    ![Selecionar estado](assets/select-state.png)
 
 1. Defina o estilo para o estado selecionado do componente e selecione ![Salvar](assets/save_icon.svg) para salvar as propriedades.
 
-Também é possível simular os estados de sucesso e erro. Selecione o ícone Expandir para exibir a **[!UICONTROL Simular o sucesso]** e **[!UICONTROL Simular Erro]** opções.
+Também é possível simular os estados de sucesso e erro. Selecione o ícone Expandir para exibir as opções **[!UICONTROL Simular Êxito]** e **[!UICONTROL Simular Erro]**.
 
 ![Simular estados](assets/simulate-states.png)
 

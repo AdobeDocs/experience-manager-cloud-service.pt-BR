@@ -1,6 +1,6 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.1.0.
-description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2021.1.0."
+description: "[!DNL Adobe Experience Manager] Notas de Versão as a Cloud Service para 2021.1.0."
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 feature: Release Information
 role: Admin
@@ -12,22 +12,22 @@ ht-degree: 21%
 ---
 
 
-# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notas de versão para [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-A seção a seguir descreve as Notas de versão gerais do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de Versão gerais para [!DNL Experience Manager] as a Cloud Service.
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] O as a Cloud Service 2021.1.0 é 3 de fevereiro de 2021.
+A data de lançamento do [!DNL Adobe Experience Manager] as a Cloud Service 2021.1.0 é 3 de fevereiro de 2021.
 A versão seguinte (2021.2.0) será lançada em 25 de fevereiro de 2021.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-* **[API HTTP do fragmento de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md)**: adicione a capacidade de adicionar/atualizar e excluir variações de Fragmento de conteúdo usando a API HTTP.
+* **[API HTTP de fragmento de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md)**: adicione a capacidade de adicionar/atualizar e excluir variações de Fragmento de conteúdo usando a API HTTP.
 
-* **[API do GraphQL para entrega de fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)**: capacidade de consultar fragmentos de conteúdo usando sintaxe do GraphQL e esquemas com base em modelos de fragmento de conteúdo para saída no formato JSON.
+* **[API do GraphQL para Entrega de fragmento de conteúdo](/help/headless/graphql-api/content-fragments.md)**: capacidade de consultar Fragmentos de conteúdo usando sintaxe GraphQL e esquemas com base em modelos de Fragmento de conteúdo para saída no formato JSON.
 
-* **[Suporte de autenticação para solicitações de API do GraphQL](/help/headless/security/authentication.md)**: capacidade de autenticar solicitações de API do GraphQL com tokens de acesso para APIs do lado do servidor.
+* **[Suporte de Autenticação para Solicitações da API do GraphQL](/help/headless/security/authentication.md)**: capacidade de autenticar solicitações da API do GraphQL com tokens de acesso para APIs do lado do servidor.
 
 * Saída JSON aprimorada da API do GraphQL, incluindo a capacidade de produzir rich text no formato JSON e localidades.
 
@@ -44,7 +44,7 @@ A versão seguinte (2021.2.0) será lançada em 25 de fevereiro de 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-* [!DNL Experience Manager] as a [!DNL Cloud Service] A estende a funcionalidade Tags inteligentes para oferecer suporte à identificação de palavras-chave e entidades em ativos baseados em texto. O texto é identificado, indexado e disponibilizado como metadados para melhorar a experiência de pesquisa sem a necessidade de qualquer configuração. Consulte [Tags inteligentes](/help/assets/smart-tags.md).
+* O [!DNL Experience Manager] as a [!DNL Cloud Service] estende a funcionalidade de Tags inteligentes para oferecer suporte à identificação de palavras-chave e entidades em ativos baseados em texto. O texto é identificado, indexado e disponibilizado como metadados para melhorar a experiência de pesquisa sem a necessidade de qualquer configuração. Consulte [Tags inteligentes](/help/assets/smart-tags.md).
 
 * O formato de arquivo MXF agora é compatível. Consulte [formatos de arquivo compatíveis](/help/assets/file-format-support.md#video-formats).
 
@@ -52,9 +52,9 @@ A versão seguinte (2021.2.0) será lançada em 25 de fevereiro de 2021.
 
 ### Novidades {#what-is-new-commerce}
 
-* Gerenciamento da experiência do produto: nova guia de propriedades &quot;Commerce&quot; para Ativos e Fragmentos de experiência. Essa guia permite vincular produtos/categorias a Ativos e Fragmentos de experiência. A guia também mostra dados em tempo real para produtos/categorias vinculados e um link para mostrar detalhes no console do produto.
+* Gerenciamento da experiência do produto: nova guia de propriedades &quot;Commerce&quot; para Assets e Fragmentos de experiência. Essa guia permite vincular produtos/categorias à Assets e aos Fragmentos de experiência. A guia também mostra dados em tempo real para produtos/categorias vinculados e um link para mostrar detalhes no console do produto.
 
-* Lançamento do site de referência CIF Venia - 2021.02.02 que inclui a versão mais recente dos componentes principais CIF v1.7.0. Consulte [Site de referência CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) para obter mais detalhes.
+* Lançamento do site de referência CIF Venia - 2021.02.02 que inclui a versão mais recente dos componentes principais CIF v1.7.0. Consulte [Site de referência de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) para obter mais detalhes.
 
 * Lançamento de componentes principais de CIF v1.7.0. Consulte [Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) para obter mais detalhes.
 
@@ -78,19 +78,19 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.1.0 é 14 
 
 * Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui correções de erros para o AEM Dispatcher Converter e o Repository Modernizer, além de oferecer suporte a um novo utilitário: Conversor de índice. Consulte [Experiência unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) para saber mais sobre este plug-in.
 
-* O Conversor de índice é um utilitário que pode ser usado para transformar as Definições de índice OAK personalizado de um cliente em Definições de índice OAK compatíveis com AEM as a Cloud Service. Consulte [Conversor de índice](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obter mais detalhes.
+* O Conversor de índice é um utilitário que pode ser usado para transformar as Definições de índice OAK personalizadas de um cliente em Definições de índice OAK compatíveis com AEM as a Cloud Service. Consulte [Conversor de Índice](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obter mais detalhes.
 
-* Novo recurso adicionado a [Modernizador de repositório](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) que cria um pacote separado `ui.config` para conter todas as configurações de OSGi.
+* Novo recurso adicionado ao [Modernizador de repositório](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) que cria um pacote separado `ui.config` para conter todas as configurações OSGi.
 
 ### Correções de erros {#crt-bug-fixes}
 
-* Várias correções de erros feitas nas ferramentas Conversor do Dispatcher do AEM e Modernizador do repositório. Consulte [Conversor do Dispatcher do AEM](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) e [Modernizador de repositório](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Várias correções de bugs feitas nas ferramentas AEM Dispatcher Converter e Repository Modernizer. Consulte [Conversor de Dispatcher do AEM](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) e [Modernizador de repositório](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
-## Fundação as a Cloud Service AEM {#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
 ### Novidades {#what-is-new-foundation}
 
-* Chamadas de API autenticadas de servidor para servidor - Gere os tokens de acesso apropriados para fazer chamadas autenticadas de API de servidor para servidor entre seus aplicativos externos e ambientes as a Cloud Service de AEM. Saiba mais lendo [a documentação](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultando o [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication).
+* Chamadas de API autenticadas de servidor para servidor - gere os tokens de acesso apropriados para fazer chamadas de API autenticadas de servidor para servidor entre os aplicativos externos e os ambientes do AEM as a Cloud Service. Saiba mais lendo [a documentação](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultando o [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication).
 
 ### Analisadores de build do SDK {#sdk-build-analyzers}
 

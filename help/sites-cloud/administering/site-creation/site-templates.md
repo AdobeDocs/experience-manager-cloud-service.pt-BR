@@ -38,11 +38,11 @@ Esses modelos são bastante eficientes pois podem ser reutilizados e personaliza
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Selecionar **Criar** no canto superior direito da tela e no menu suspenso, selecione **Site do modelo**.
+1. Selecione **Criar** no canto superior direito da tela e, no menu suspenso, selecione **Site do modelo**.
 
    ![Criação de um site a partir de um modelo](../assets/create-site-from-template.png)
 
-1. No assistente Criar site, selecione **Importar** na parte superior da coluna à esquerda.
+1. No assistente Criar Site, selecione **Importar** na parte superior da coluna à esquerda.
 
    ![Assistente de criação de site](../assets/site-creation-wizard.png)
 
@@ -62,7 +62,7 @@ Os modelos de site são pacotes com uma estrutura lógica que reflete claramente
 
 * `files`: pasta com o kit de interface, arquivo XD e, possivelmente, outros arquivos
 * `previews`: pasta com capturas de tela do modelo de site
-* `site`: pacote do conteúdo que é copiado para cada site criado a partir deste modelo, como modelos de página, páginas e assim por diante.
+* `site`: pacote de conteúdo do conteúdo que é copiado para cada site criado a partir deste modelo, como modelos de página, páginas, etc.
 * `theme`: Fontes do [tema do site](site-themes.md) para modificar a aparência do site, incluindo CSS, JavaScript e assim por diante.
 
 ## Modelo de site padrão {#standard-site-template}

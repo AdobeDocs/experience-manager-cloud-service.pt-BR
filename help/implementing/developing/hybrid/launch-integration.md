@@ -17,10 +17,10 @@ O Adobe Experience Platform Launch é a maneira recomendada de implementar o Ana
 
 ## Tutorial {#tutorial}
 
-Para entender como integrar o SPA ao Adobe Experience Platform Launch, consulte esta [artigo e tutorial da knowledge base](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR). Ele pode orientá-lo pela configuração do Launch e pela implementação do Experience Cloud criado com o Angular ou o React.
+Para entender como integrar seu SPA ao Adobe Experience Platform Launch, consulte este [artigo e tutorial da base de dados de conhecimento](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR). Ele pode orientá-lo pela configuração do Launch e pela implementação do Experience Cloud criado com o Angular ou o React.
 
 >[!NOTE]
 >
 >A base de conhecimento referenciada foi criada para permitir a integração do Adobe Experience Platform Launch com SPA que não usa o editor de AEM SPA. Esses métodos também devem permitir que a integração do Adobe Experience Platform Launch coexista com o SPA, que é criado para usar o Editor de SPA.
 >
->O uso do Redux junto com as bibliotecas JavaScript SPA ainda não foi totalmente explorado. O suporte ao Redux está planejado em uma versão futura do Editor de SPA.
+>O uso do Redux junto com as bibliotecas SPA da JavaScript ainda não foi totalmente explorado. O suporte ao Redux está planejado em uma versão futura do Editor de SPA.

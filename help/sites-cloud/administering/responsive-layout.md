@@ -14,20 +14,20 @@ ht-degree: 3%
 
 # Configurar o contêiner de layout e o modo de layout {#configuring-layout-container-and-layout-mode}
 
-[Layout responsivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) é um mecanismo para realizar [web design responsivo.](https://en.wikipedia.org/wiki/Responsive_web_design) Isso permite que o autor de conteúdo crie páginas da Web com um layout e dimensões dependentes dos dispositivos que seus usuários usam.
+O [Layout responsivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) é um mecanismo para realizar o [design responsivo da Web.](https://en.wikipedia.org/wiki/Responsive_web_design) Isso permite que o autor de conteúdo crie páginas da Web com layout e dimensões dependentes dos dispositivos que seus usuários utilizam.
 
 O AEM permite um layout responsivo para suas páginas usando uma combinação de mecanismos:
 
-* **[Contêiner de layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Esse componente fornece um sistema de parágrafo de grade que permite adicionar e posicionar componentes em uma grade responsiva.
+* **[Contêiner de layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)** - Este componente fornece um sistema de parágrafo de grade que permite adicionar e posicionar componentes em uma grade responsiva.
    * Ela pode ser usada como o parsys padrão da página e/ou disponibilizada aos autores no navegador de componentes.
-   * O padrão **Contêiner de layout** o componente é definido em `/libs/wcm/foundation/components/responsivegrid`.
+   * O componente **Contêiner de Layout** padrão é definido em `/libs/wcm/foundation/components/responsivegrid`.
    * É possível definir contêineres de layout:
       * Como um componente que o usuário pode adicionar a uma página.
       * Como o parsys padrão da página.
       * Como componente e parsys padrão.
          * Você pode ter o contêiner de layout como padrão para a página, permitindo que o usuário adicione mais contêineres de layout aqui; por exemplo, para obter o controle da coluna.
-* **[Modo de layout](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Depois que o container de layout é posicionado na página, você pode usar o **Layout** para posicionar o conteúdo na grade responsiva.
-* **[Emulador](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Isso permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. Usuários podem ver como o conteúdo é renderizado usando o emulador.
+* **[Modo de layout](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)** - Depois que o contêiner de layout é posicionado na página, você pode usar o modo **Layout** para posicionar conteúdo na grade responsiva.
+* **[Emulador](/help/sites-cloud/authoring/page-editor/responsive-layout.md#selecting-a-device-to-emulate)** - Permite criar e editar sites responsivos que reorganizam o layout de acordo com o tamanho do dispositivo ou da janela, redimensionando componentes interativamente. Usuários podem ver como o conteúdo é renderizado usando o emulador.
 
 Com esses mecanismos de grade responsivos, você pode:
 
@@ -38,19 +38,19 @@ Com esses mecanismos de grade responsivos, você pode:
 
 >[!NOTE]
 >
->Ao criar um site a partir da [Arquétipo de projeto](#addlink) ou do [Modelo de site padrão](#addlink), o layout responsivo é geralmente configurado. Caso contrário, você deverá [ativar o componente de Contêiner de layout](#enable-the-layout-container-component-for-page) para suas páginas.
+>Ao criar um site a partir do [Arquétipo de Projeto](#addlink) ou do [Modelo de Site Padrão](#addlink), o layout responsivo geralmente é configurado. Caso contrário, você deve [ativar o componente Contêiner de layout](#enable-the-layout-container-component-for-page) para suas páginas.
 
 ## Ativar o emulador {#enabling-emulator}
 
-A variável [Arquétipo de projeto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) e a variável [Modelo de site padrão](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) já estão habilitados para usar o emulador. Se você desenvolveu seu próprio conteúdo não baseado nos Componentes principais ou no arquétipo, consulte o documento [Design responsivo](/help/implementing/developing/introduction/responsive-design.md) para obter detalhes sobre como desenvolver seus componentes enquanto aproveita esses recursos.
+O [Arquétipo de Projeto](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) e o [Modelo de Site Padrão](/help/sites-cloud/administering/site-creation/site-templates.md#standard-site-template) já estão habilitados para usar o emulador. Se você desenvolveu seu próprio conteúdo não baseado nos Componentes principais ou no arquétipo, consulte o documento [Design responsivo](/help/implementing/developing/introduction/responsive-design.md) para obter detalhes sobre como desenvolver seus componentes enquanto aproveita esses recursos.
 
 ## Ativar modo de layout para o site {#activate-layout-mode-for-your-site}
 
-**Layout** permite usar o emulador para ajustar o layout do conteúdo para dispositivos diferentes. O site de amostra do WKND já está habilitado para **Layout** modo. Siga estas etapas para ativar seu próprio site.
+O modo **Layout** permite usar o emulador para ajustar o layout do conteúdo para diferentes dispositivos. O site de exemplo WKND já está habilitado para o modo **Layout**. Siga estas etapas para ativar seu próprio site.
 
 ### Configurar pontos de interrupção {#configure-breakpoints}
 
-Os pontos de interrupção são essenciais para um design responsivo e definem como e quando o conteúdo é ajustado ao dispositivo de destino. No entanto, tenha cuidado, pois cada ponto de interrupção introduzido gerará trabalho adicional para os autores acomodarem o conteúdo. Muitas vezes, dois pontos de interrupção podem ser suficientes, incluindo o ponto de interrupção padrão que está sempre lá. O Adobe recomenda não criar mais de três pontos de interrupção, incluindo o padrão, ou seja, não mais de dois nós abaixo `cq:responsive/breakpoint`.
+Os pontos de interrupção são essenciais para um design responsivo e definem como e quando o conteúdo é ajustado ao dispositivo de destino. No entanto, tenha cuidado, pois cada ponto de interrupção introduzido gerará trabalho adicional para os autores acomodarem o conteúdo. Muitas vezes, dois pontos de interrupção podem ser suficientes, incluindo o ponto de interrupção padrão que está sempre lá. A Adobe recomenda não criar mais de três pontos de interrupção, incluindo o padrão, ou seja, não mais de dois nós abaixo de `cq:responsive/breakpoint`.
 
 * Os pontos de interrupção têm um título e uma largura:
    * O título descreve o agrupamento genérico de dispositivos, com orientação se necessário.
@@ -79,9 +79,9 @@ Por causa da herança, você só precisa fazer isso para a página raiz do seu c
 1. Usando o CRXDE Lite, navegue até:
 
    * A definição do modelo.
-   * A variável `jcr:content` da sua página.
+   * O nó `jcr:content` da página.
 
-1. Em `jcr:content` crie o nó:
+1. Em `jcr:content`, crie o nó:
 
    * Nome: `cq:responsive`
    * Tipo: `nt:unstructured`
@@ -96,11 +96,11 @@ Por causa da herança, você só precisa fazer isso para a página raiz do seu c
    * Nome: `<descriptive name>`
    * Tipo: `nt:unstructured`
    * Título: `String <descriptive title seen in Emulator>`
-   * Largura `Decimal <value of breakpoint>`
+   * Largura: `Decimal <value of breakpoint>`
 
 #### Configurar pontos de interrupção usando XML {#configuring-breakpoints-using-xml}
 
-Os pontos de interrupção estão localizados dentro do `<jcr:content>` seção do `.context.html` na pasta de modelo (ou conteúdo) apropriada.
+Os pontos de interrupção estão localizados dentro da seção `<jcr:content>` de `.context.html` na pasta de modelo (ou conteúdo) apropriada.
 
 Um exemplo de definição:
 
@@ -115,7 +115,7 @@ Um exemplo de definição:
 
 ## Ativar o redimensionamento de componentes para a página {#enable-component-resizing-for-the-page}
 
-Redimensionamento de componentes no **Layout** O modo é uma parte importante do design responsivo, que pode ser usado no site de amostra WKND. Siga estas etapas para ativar seu próprio site.
+Redimensionar componentes no modo **Layout** é uma parte importante do design responsivo, que pode ser usado no site de amostra WKND. Siga estas etapas para ativar seu próprio site.
 
 ### Definir contêiner de layout como parsys principal {#set-layout-container-as-main-parsys}
 
@@ -148,7 +148,7 @@ Os dois exemplos a seguir ilustram a definição:
 
 O AEM usa MENOS para gerar partes do CSS necessário, que precisam ser incluídas em seus projetos.
 
-Você deve criar um [biblioteca do cliente](/help/implementing/developing/introduction/clientlibs.md) para fornecer configurações adicionais e chamadas de função. A seguinte extração MENOS é um exemplo do mínimo que você deve adicionar ao seu projeto:
+Você deve criar uma [biblioteca do cliente](/help/implementing/developing/introduction/clientlibs.md) para fornecer configurações adicionais e chamadas de função. A seguinte extração MENOS é um exemplo do mínimo que você deve adicionar ao seu projeto:
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -203,7 +203,7 @@ Qualquer redimensionamento de um componente na grade acionará os seguintes ouvi
 * `afteredit`
 * `afterchildedit`
 
-Para redimensionar e atualizar corretamente o conteúdo de uma imagem adaptável incluída em uma grade responsiva, é necessário adicionar um `afterEdit` definir como `REFRESH_PAGE` listener na variável `EditConfig` arquivo de cada componente contido.
+Para redimensionar e atualizar corretamente o conteúdo de uma imagem adaptável incluída em uma grade responsiva, é necessário adicionar um conjunto `afterEdit` definido como ouvinte `REFRESH_PAGE` no arquivo `EditConfig` de cada componente contido.
 
 Por exemplo:
 
@@ -223,9 +223,9 @@ Para um layout responsivo eficaz, o autor de conteúdo deve ser capaz de arrasta
 
 Para permitir que os autores adicionem outras grades responsivas às páginas de conteúdo, é necessário ativar o componente Contêiner de layout para a página. Você pode fazer isso usando:
 
-* **Por meio do ambiente do autor** - [Editar seus modelos de página](/help/sites-cloud/authoring/sites-console/templates.md) para ativar o Contêiner de layout de uma página.
-* **Definição de componente** - Utilização `allowedComponent` ou uma inclusão estática ao definir o componente.
+* **Através do Ambiente de Autor** - [Edite seus modelos de página](/help/sites-cloud/authoring/sites-console/templates.md) para habilitar o Contêiner de Layout de uma página.
+* **Definição de Componente** - Use `allowedComponent` ou uma inclusão estática ao definir o componente.
 
 ### Configurar a grade do contêiner de layout {#configure-the-grid-of-the-layout-container}
 
-Você pode configurar o número de colunas disponíveis para cada instância específica do container de layout [editando seus modelos de página.](/help/sites-cloud/authoring/sites-console/templates.md)
+Você pode configurar o número de colunas disponíveis para cada instância específica do contêiner de layout [ editando seus modelos de página.](/help/sites-cloud/authoring/sites-console/templates.md)

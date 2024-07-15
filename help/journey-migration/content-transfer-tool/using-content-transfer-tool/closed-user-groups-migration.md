@@ -31,16 +31,16 @@ As principais (incluindo grupos) são incluídas automaticamente em uma migraç�
 
 A verificação da existência do grupo e de seus membros deve ser feita antes da ativação. O Relatório principal, baixado por meio da visualização de Tarefa de assimilação, pode ser usado para ver se o grupo em questão foi incluído ou não porque não estava em uma ACL ou em uma política CUG.
 
-Em seguida, os processos devem ser acionados e as propriedades devem ser definidas para ativar CUGs. Para fazer isso, publique novamente todas as páginas associadas a uma política CUG. Isso calibra a instância de Publicação para rastrear as políticas.
+Em seguida, os processos devem ser acionados e as propriedades devem ser definidas para ativar CUGs. Para fazer isso, publique novamente todas as páginas associadas a uma política CUG. Isso calibra a instância do Publish para rastrear as políticas.
 
-Isso ativa as políticas CUG em Publicar, e o conteúdo só é acessível aos usuários autenticados que são membros do grupo associado às políticas.
+Isso ativa as políticas CUG no Publish e o conteúdo só é acessível aos usuários autenticados que são membros do grupo associado às políticas.
 
 ## Resumo
 
 Em resumo, estas são as etapas para habilitar o CUG após uma migração:
 
-1. Verifique se cada grupo usado nas políticas CUG existe em Publicar após a migração.
+1. Verifique se cada grupo usado nas políticas CUG existe no Publish após a migração.
    - Um grupo pode existir se for incluído em uma política CUG de conteúdo migrado ou na ACL desse conteúdo.
-   - Caso contrário, use Pacotes para instalá-lo na instância de destino (ou criá-lo manualmente) e ativá-lo e seus membros. Em seguida, verifique se ele existe em Publicar.
+   - Caso contrário, use Pacotes para instalá-lo na instância de destino (ou criá-lo manualmente) e ativá-lo e seus membros. Em seguida, verifique se ele existe no Publish.
 1. Republicar todas as páginas associadas a uma política CUG, garantindo que ela seja publicada, por exemplo, editando a página primeiro. É importante republicar todos eles.
    - Depois que todas as páginas forem republicadas, verifique a funcionalidade de cada página protegida por CUG.

@@ -43,7 +43,7 @@ Este documento ajuda você a entender como gerenciar os sites de demonstração 
 
 Agora que tem seus próprios sites de demonstração, você provavelmente gostaria de saber como gerenciá-los. O pipeline não só implantou os modelos do site para fornecer conteúdo aos sites de demonstração, como também implantou um conjunto de utilitários para gerenciar esses sites.
 
-1. Na barra de navegação global do AEM, selecione **Ferramentas** > **Demonstrações de referência** > **Utilitários de demonstração de referência**.
+1. Na barra de navegação global do AEM, selecione **Ferramentas** > **Demonstrações de Referência** > **Utilitários de Demonstração de Referência**.
 
    ![Utilitários de demonstração de autoatendimento](assets/demo-utilities.png)
 
@@ -64,7 +64,7 @@ Os Utilitários de demonstração de autoatendimento fornecem várias ferramenta
 
 Depois de testar um conjunto de funcionalidades do AEM, talvez você não precise mais do seu site de demonstração ou mesmo do modelo no qual ele se baseia. É fácil excluir sites de demonstração e modelos de site.
 
-1. Acesse o **Utilitários de demonstração de referência** e selecione **Excluir Sites**.
+1. Acesse os **Utilitários de demonstração de referência** e selecione **Excluir sites**.
 
    ![Excluir sites](assets/delete-sites.png)
 

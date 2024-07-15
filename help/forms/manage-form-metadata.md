@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Adicionar, remover ou editar metadados de um Formulário adaptável {#manage-form-metadata}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 
 | Versão | Link do artigo |
@@ -23,17 +23,17 @@ ht-degree: 3%
 
 Os metadados facilitam a categorização e a organização de ativos e ajudam os usuários que procuram um ativo específico.
 
-[!DNL AEM Forms]O, por padrão, fornece um conjunto definido de metadados para cada tipo de ativo. Além dos metadados padrão, é possível adicionar metadados personalizados a cada um dos tipos de ativos. [!DNL AEM Forms] O também fornece o meio certo de criar, gerenciar e trocar todos esses metadados de forma eficiente para seus formulários.
+[!DNL AEM Forms], por padrão, fornece um conjunto definido de metadados para cada tipo de ativo. Além dos metadados padrão, é possível adicionar metadados personalizados a cada um dos tipos de ativos. O [!DNL AEM Forms] também fornece o meio certo de criar, gerenciar e trocar todos esses metadados de forma eficiente para seus formulários.
 
 <!-- If you are a developer or a site owner, you can customize Forms Portal, the end-user interface for [!DNL AEM Forms] to reflect the metadata you are using in your organization. For more information abouts Forms Portal, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md). -->
 
 ## Metadados no [!DNL AEM Forms] {#metadata-in-aem-forms}
 
-Entrada [!DNL AEM Forms], a lista de propriedades de metadados associada a um ativo depende do seu tipo. Além disso, se você adicionar qualquer propriedade de metadados personalizada, ela será adicionada em todos os ativos do tipo em que os metadados personalizados foram adicionados.
+Em [!DNL AEM Forms], a lista de propriedades de metadados associada a um ativo depende de seu tipo. Além disso, se você adicionar qualquer propriedade de metadados personalizada, ela será adicionada em todos os ativos do tipo em que os metadados personalizados foram adicionados.
 
 ### Tipos de ativos {#asset-types}
 
-Os seguintes tipos de ativos são compatíveis com o [!DNL AEM Forms]:
+Os seguintes tipos de ativos têm suporte no [!DNL AEM Forms]:
 
 * Modelos de formulário (formulários XFA)
 * PDF forms
@@ -44,7 +44,7 @@ Os seguintes tipos de ativos são compatíveis com o [!DNL AEM Forms]:
 
 #### Ampla lista de metadados {#extensive-list-of-metadata}
 
-Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o [!DNL AEM Forms]:
+Esta é uma lista extensa de propriedades de metadados com suporte no [!DNL AEM Forms]:
 
 <table>
  <tbody> 
@@ -56,12 +56,12 @@ Veja a seguir uma extensa lista de propriedades de metadados compatíveis com o 
   <tr> 
    <td>Título</td> 
    <td>Todos, exceto o recurso</td> 
-   <td>Nome de exibição do ativo.<br /> </td> 
+   <td>Nome para exibição do ativo.<br /> </td> 
   </tr> 
   <tr> 
    <td>Descrição</td> 
    <td>Todos, exceto o recurso</td> 
-   <td>Descrição do ativo. O usuário pode especificar esse valor.<br /> </td> 
+   <td>Descrição do ativo. O usuário pode especificar este valor.<br /> </td> 
   </tr> 
   <tr> 
    <td>Tipo</td> 
@@ -184,14 +184,14 @@ O Assets tem valores de propriedade existentes, que podem ser exibidos no modo s
 
 1. Abra a página de propriedades usando uma das seguintes maneiras:
 
-   * Clique em **[!UICONTROL Propriedades]** ![Propriedades](assets/Smock_Info_18_N.svg) ícone de Ações rápidas.
+   * Clique no ícone **[!UICONTROL Propriedades]** ![Propriedades](assets/Smock_Info_18_N.svg) de Ações rápidas.
 
      >[!NOTE]
      >
      >As Ações rápidas são itens de ação exibidos ao passar o mouse sobre uma miniatura.
 
-   * Selecione o formulário e clique no botão **[!UICONTROL Propriedades]** ![Propriedades](assets/Smock_Info_18_N.svg) ícone que aparece na barra de ferramentas.
-   * Navegue até a página de detalhes do formulário clicando na miniatura do formulário quando não estiver no modo de seleção. Agora, clique no link ![Propriedades](assets/Smock_Info_18_N.svg) ícone de olho no canto superior direito e, em seguida, clique em Propriedades na lista abaixo.
+   * Selecione o formulário e clique no ícone **[!UICONTROL Propriedades]** ![Propriedades](assets/Smock_Info_18_N.svg) que aparece na barra de ferramentas.
+   * Navegue até a página de detalhes do formulário clicando na miniatura do formulário quando não estiver no modo de seleção. Agora, clique no ícone do olho ![Propriedades](assets/Smock_Info_18_N.svg) no canto superior direito e clique em Propriedades na lista abaixo.
 
 1. A página de propriedades que é aberta exibe um esquema que contém apenas as propriedades de metadados que têm algum valor.
 
@@ -232,9 +232,9 @@ O Assets tem valores de propriedade existentes, que podem ser exibidos no modo s
 
 O painel esquerdo na página de propriedades exibe a miniatura do formulário. Por padrão, a miniatura exibida é a gerada no momento da criação do formulário (Formulário adaptável) ou no momento do upload do formulário.
 
-Para todos os tipos de formulário, você tem a opção de carregar uma imagem clicando em **[!UICONTROL Fazer upload de imagem]** e procure um arquivo de imagem no diretório local. A imagem selecionada é usada como uma miniatura em vez da padrão.
+Para todos os tipos de formulário, você tem a opção de carregar uma imagem clicando em **[!UICONTROL Carregar Imagem]** e procurando um arquivo de imagem no diretório local. A imagem selecionada é usada como uma miniatura em vez da padrão.
 
-Para o Adaptive Forms, é fornecida uma funcionalidade adicional, que permite que o usuário gere uma miniatura como um instantâneo da visualização atual do Formulário adaptável. Desde [!DNL AEM Forms] O também oferece suporte à criação do Adaptive Forms, a visualização do Formulário adaptável pode mudar sempre que você alterar o Formulário adaptável. Essa funcionalidade de gerar uma miniatura ajuda a obter uma nova miniatura do Formulário adaptável com base no status de visualização atual. Clique em **[!UICONTROL Gerar visualização]** para executar esta ação.
+Para o Adaptive Forms, é fornecida uma funcionalidade adicional, que permite que o usuário gere uma miniatura como um instantâneo da visualização atual do Formulário adaptável. Como o [!DNL AEM Forms] também oferece suporte à criação do Adaptive Forms, a visualização do Formulário adaptável pode mudar sempre que você alterar o Formulário adaptável. Essa funcionalidade de gerar uma miniatura ajuda a obter uma nova miniatura do Formulário adaptável com base no status de visualização atual. Clique em **[!UICONTROL Gerar visualização]** para realizar esta ação.
 
 >[!NOTE]
 >
@@ -244,17 +244,17 @@ Para o Adaptive Forms, é fornecida uma funcionalidade adicional, que permite qu
 
 ## Adicionar metadados personalizados {#add-custom-metadata}
 
-Além dos metadados fornecidos imediatamente, [!DNL AEM Forms] O oferece suporte aos novos metadados personalizados.
+Além dos metadados fornecidos prontos para uso, o [!DNL AEM Forms] oferece suporte aos novos metadados personalizados.
 
-Uma ferramenta (Editor de esquema de metadados) é fornecida para definir o esquema para o layout de metadados; ou seja, o layout do que aparece no **[!UICONTROL Propriedades]** página de um formulário. O Editor de esquema de metadados permite adicionar ou modificar um esquema personalizado para seus ativos.
+Uma ferramenta (Editor de Esquema de Metadados) é fornecida para definir o esquema para o layout de metadados; ou seja, o layout do que aparece na página **[!UICONTROL Propriedades]** de um formulário. O Editor de esquema de metadados permite adicionar ou modificar um esquema personalizado para seus ativos.
 
-[!DNL AEM Forms] expõe os esquemas de metadados dos tipos de formulários compatíveis nesta ferramenta. Dessa forma, você pode acessar esses esquemas e usar a funcionalidade fornecida no editor de esquema de metadados para adicionar propriedades personalizadas.
+[!DNL AEM Forms] expõe os esquemas de metadados dos tipos de formulários com suporte nesta ferramenta. Dessa forma, você pode acessar esses esquemas e usar a funcionalidade fornecida no editor de esquema de metadados para adicionar propriedades personalizadas.
 
 ### Navegar pelo editor de esquema de metadados {#navigate-the-metadata-schema-editor}
 
 1. Navegue até **[!UICONTROL Ferramentas > Assets > Esquemas de metadados]**.
 
-1. Clique em **[!UICONTROL formulários]** dos formulários de esquema listados.
+1. Clique em **[!UICONTROL formulários]** nos formulários de esquema listados.
 
 1. Na lista aberta, clique no tipo de ativo ao qual deseja adicionar metadados personalizados.
 
@@ -262,9 +262,9 @@ Uma ferramenta (Editor de esquema de metadados) é fornecida para definir o esqu
    >
    >Esses esquemas contêm propriedades de metadados que são fornecidas prontas para uso e não devem ser alteradas/editadas (marque a caixa de seleção e clique em editar na barra de ferramentas) para evitar problemas funcionais.
 
-1. Qualquer tipo de ativo clicado abre uma lista contendo o `extendedmetadata` opção. Editar este esquema.
+1. Qualquer tipo de ativo clicado abre uma lista contendo a opção `extendedmetadata`. Editar este esquema.
 
-1. Marque a caixa de seleção ao lado de `extendedmetadata` e, em seguida, clique no botão Editar ![Editar](assets/Smock_Edit_18_N.svg) ícone que aparece na barra de ferramentas.
+1. Marque a caixa de seleção ao lado de `extendedmetadata` e clique no ícone Editar ![Editar](assets/Smock_Edit_18_N.svg) que aparece na barra de ferramentas.
 
 1. [!DNL AEM Forms] abre o editor de esquema de metadados/construtor de formulários do tipo de ativo selecionado (neste caso, Formulário adaptável).
 
@@ -276,14 +276,14 @@ Uma ferramenta (Editor de esquema de metadados) é fornecida para definir o esqu
 
    1. Você pode adicionar guias adicionais clicando no símbolo +.
 
-   1. Você pode adicionar um campo personalizado do tipo desejado arrastando o componente de campo da **[!UICONTROL Formulário de criação]** na página do esquema.
-   1. As especificações desse campo podem ser fornecidas no **[!UICONTROL Configurações]** depois de clicar no campo.
+   1. Você pode adicionar um campo personalizado do tipo desejado arrastando o componente de campo da seção **[!UICONTROL Criar formulário]** para a página de esquema.
+   1. As especificações desse campo podem ser fornecidas na seção **[!UICONTROL Configurações]** depois de clicar no campo.
 
 ### Adicionar propriedade de metadados personalizada no editor de esquema {#add-custom-metadata-property-in-schema-editor}
 
 1. Navegue até a guia (existente ou nova) onde deseja adicionar a propriedade personalizada.
 
-1. Arraste um componente do tipo desejado da **[!UICONTROL Formulário de criação]** seção para o painel esquerdo e coloque-o em um local conveniente.
+1. Arraste um componente do tipo desejado da seção **[!UICONTROL Criar Formulário]** para o painel esquerdo e coloque-o em um local conveniente.
 
    >[!NOTE]
    >
@@ -292,7 +292,7 @@ Uma ferramenta (Editor de esquema de metadados) é fornecida para definir o esqu
 1. Clique em um componente que você acabou de arrastar. Na guia Configurações que é aberta no painel direito, preencha as informações dos seguintes campos:
 
    1. Especifique um Rótulo de campo para usar como um nome de exibição acima do campo colocado no esquema (Por exemplo: Departamento)
-   1. No campo Mapear para propriedade, é possível ver um valor pré-preenchido **&#39;./jcr:content/metadata/default&#39;**. Altere o &#39;**padrão**&#39; para um nome de propriedade desejado, que é usado para armazenar a propriedade no repositório crx (Por exemplo: &#39;./jcr:content/metadata/department&#39;)
+   1. Em Mapear para campo de propriedade, você pode ver um valor pré-preenchido **&#39;./jcr:content/metadata/default&#39;**. Altere o &#39;**padrão**&#39; para um nome de propriedade desejado, que é usado para armazenar a propriedade no repositório crx (Por exemplo: &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
@@ -301,14 +301,14 @@ Uma ferramenta (Editor de esquema de metadados) é fornecida para definir o esqu
       >Além disso, o nome da propriedade deve ser exclusivo para evitar a gravação de valores para duas ou mais propriedades no mesmo local no repositório. Portanto, é recomendável alterar o valor &quot;padrão&quot;.
 
    1. Preencha outras configurações com base no requisito. Por exemplo: selecione a opção Obrigatório se desejar tornar o campo obrigatório.
-   1. Para excluir um campo adicionado, selecione-o e clique no link excluir ![Excluir](assets/Smock_Delete_18_N.svg) ícone.
+   1. Para excluir um campo adicionado, selecione-o e clique no ícone excluir ![Excluir](assets/Smock_Delete_18_N.svg).
 
 1. Se necessário, siga as etapas 1 a 3 para adicionar outra propriedade.
 1. Clique em **[!UICONTROL Salvar]** depois de fazer todas as alterações.
 
    Você adicionou uma propriedade de metadados personalizada com êxito.
 
-Todo o Forms adaptável em [!DNL AEM Forms] agora contêm essa propriedade de metadados adicional. Você pode editá-lo na página de propriedades.
+Todos os Forms adaptáveis em [!DNL AEM Forms] agora contêm essa propriedade de metadados adicional. Você pode editá-lo na página de propriedades.
 
 
 ## Consulte também {#see-also}

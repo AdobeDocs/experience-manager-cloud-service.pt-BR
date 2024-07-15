@@ -15,10 +15,10 @@ ht-degree: 11%
 
 ## Introdução {#introduction}
 
-A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado ao assimilar conteúdo em um ambiente de publicação. Qualquer conteúdo especificado no conjunto de migração é assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância de Autor ou instância de Publicação, ou ambos.
+A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente do Publish. Qualquer conteúdo especificado no conjunto de migração é assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância do Autor ou do Publish, ou em ambas.
 
 >[!NOTE]
->É recomendável que, ao mover o conteúdo para uma instância de Produção, a Ferramenta de transferência de conteúdo seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino e, de forma semelhante, instalar a Ferramenta de transferência de conteúdo na instância de Publicação de origem para mover o conteúdo para a instância de Publicação de destino. Consulte [Abordagem recomendada](#recommended-approach) abaixo para obter mais detalhes.
+>É recomendável que, ao mover o conteúdo para uma instância de Produção, a Ferramenta de transferência de conteúdo seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino e, de forma semelhante, instalar a Ferramenta de transferência de conteúdo na instância do Publish de origem para mover o conteúdo para a instância do Publish de destino. Consulte a seção [Abordagem recomendada](#recommended-approach) abaixo para obter mais detalhes.
 
 ## Abordagem recomendada {#recommended-approach}
 
@@ -32,5 +32,5 @@ Siga a abordagem recomendada conforme descrito abaixo:
 
   >[!IMPORTANT]
   >Como precaução, evite quaisquer operações de gravação iniciadas pelo usuário, como:
-  > * Distribuição de conteúdo do autor do AEM as a Cloud Service para publicação nesse ambiente
+  > * Distribuição de conteúdo do autor do AEM as a Cloud Service para o Publish nesse ambiente
   > * Sincronização de usuários entre instâncias de publicação

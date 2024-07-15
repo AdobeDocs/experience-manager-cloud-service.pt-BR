@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Depois que os usuários atualizarem para a versão as a Cloud Service do AEM Forms `2024.5.16461`:
 
-**Alguns usuários** pode enfrentar problemas ao criar formulários, o problema é que, quando um usuário cria um formulário, a seguinte mensagem de erro aparece na caixa de diálogo de criação:
+**Alguns usuários** podem enfrentar problemas ao criar formulários. O problema é que, quando um usuário cria um formulário, a seguinte mensagem de erro aparece na caixa de diálogo de criação:
 
 `A server error occurred. Try again after sometime.`
 
 ## Causa {#cause-form-creation-fails}
 
-O problema ocorre porque o autor publica o formulário sem **primeira publicação do template** utilizado nela. Isso resulta na adição da variável `jcr:uuid` e outras propriedades protegidas e geradas pelo sistema para o `<template-path>/initial/jcr:content` causa falhas na criação subsequente do formulário.
+O problema ocorre porque o autor publica o formulário sem **publicar primeiro o modelo** usado nele. Isso resulta na adição de `jcr:uuid` e outras propriedades protegidas e geradas pelo sistema ao nó `<template-path>/initial/jcr:content`, causando falhas na criação subsequente do formulário.
 
 ## Solução alternativa {#resolution-form-creation-fails}
 

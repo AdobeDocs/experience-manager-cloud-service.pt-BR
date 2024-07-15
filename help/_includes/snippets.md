@@ -13,14 +13,14 @@ ht-degree: 9%
 
 ## Criação de Edge Delivery Services {#edge-delivery-authoring}
 
-[!BADGE Para criar conteúdo de AEM para Edge Delivery Services, clique aqui.]{type=Positive url="/help/edge/overview.md" tooltip="Criação de conteúdo AEM para Edge Delivery Services"}
+[!BADGE Para criar conteúdo AEM para Edge Delivery Services, clique aqui.]{type=Positive url="/help/edge/overview.md" tooltip="Criação de conteúdo AEM para Edge Delivery Services"}
 
 ## Consulte também {#see-also}
 
 * [Criar um formulário adaptável de AEM](/help/forms/creating-adaptive-form-core-components.md)
 * [Adicionar um formulário adaptável de AEM à página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Aplicar temas a um formulário adaptável de AEM](/help/forms/using-themes-in-core-components.md)
-* [Adicionar componentes a um formulário adaptável de AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR#components)
+* [Adicionar componentes a um Formulário adaptável para AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR#components)
 * [Usar CAPTCHA em um formulário adaptável de AEM](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Gerar versão do PDF (DoR) de um formulário adaptável AEM](/help/forms/generate-document-of-record-core-components.md)
 * [Traduzir um formulário adaptável de AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -32,7 +32,7 @@ ht-degree: 9%
 * [Conectar o formulário adaptável ao Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Usar o Adobe Sign em um formulário adaptável AEM](/help/forms/working-with-adobe-sign.md)
 * [Adicionar uma nova localidade para um Formulário adaptável](/help/forms/supporting-new-language-localization-core-components.md)
-* [Enviar dados do Formulário adaptável a um banco de dados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
+* [Enviar dados do Formulário adaptável a um banco de dados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html?lang=pt-BR)
 * [Enviar dados do formulário adaptável para um endpoint REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Enviar dados do formulário adaptável para o fluxo de trabalho do AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Usar o Forms Portal para listar AEM Adaptive Forms em um site de AEM](/help/forms/configure-forms-portal.md)
@@ -59,7 +59,7 @@ ht-degree: 9%
 * [Introdução ao AEM Forms Edge Delivery Services](/help/edge/docs/forms/tutorial.md)
 * [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
+* [Publish seu formulário e comece a coletar dados](/help/edge/docs/forms/publish-forms.md)
 * [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
@@ -80,7 +80,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
   </tr>
   <tr>
     <td>Definir as opções da lista suspensa </td>
-    <td>As opções da lista suspensa são definidas usando as tags do Editor de regras <b>Definir Opções de</b> propriedade.</td>
+    <td>As opções da lista suspensa são definidas usando a propriedade <b>Definir Opções de</b> do Editor de Regras.</td>
     <td>As opções suspensas são definidas usando as funções personalizadas. 
    </td>
    </tr>
@@ -101,14 +101,14 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
    <tr>
     <td>Suporte ES10 </td>
     <td>ES10 ainda não é suportado. </td>
-    <td>Suporte para recursos modernos do JavaScript, como funções de esquerda e seta (suporte para ES10) em funções personalizadas. 
+    <td>Suporte para recursos modernos do JavaScript, como funções de esquerda e seta (suporte para ES10), em funções personalizadas. 
    </td>
    </tr>
    </tr>
    <tr>
    <td>Propriedade de saída do serviço</td>
-   <td> A propriedade de saída do Serviço é compatível com o <b>Definir valor de</b> opção do Editor de regras. </td>
-   <td>A variável <b>Definir valor de</b> A opção não suporta a variável <b>Saída do serviço</b> propriedade para chamar APIs no Editor de regras.
+   <td> A propriedade Service output tem suporte na opção <b>Set Value of</b> do Editor de Regras. </td>
+   <td>A opção <b>Definir Valor de</b> não dá suporte à propriedade <b>Saída de serviço</b> para invocar APIs no Editor de Regras.
    </td>
    </tr>
    </tr>

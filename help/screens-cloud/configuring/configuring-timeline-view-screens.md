@@ -40,7 +40,7 @@ Os comentários fornecem uma maneira bem consolidada para os usuários de AEM di
 
 1. Navegue até o canal ao qual deseja adicionar um comentário.
 1. Selecione o canal.
-1. Abra o **Linha do tempo** coluna.
+1. Abra a coluna **Linha do Tempo**.
 1. Adicione seu comentário e pressione **Enter**.
 
 ![Adicionar um comentário](/help/screens-cloud/assets/configure/screen-timeline3.jpg)
@@ -63,17 +63,17 @@ O controle de versão cria um &quot;instantâneo&quot; de um canal em um ponto e
 
 1. Navegue até o canal ao qual deseja adicionar um comentário.
 1. Selecione o canal.
-1. Abra o **Linha do tempo** coluna.
+1. Abra a coluna **Linha do Tempo**.
 1. Clique no botão (três pontos) ao lado do campo de comentário na parte inferior da página.
 
    ![Adicionar um comentário](/help/screens-cloud/assets/configure/screens-timeline5.jpg)
 
 1. Selecione **Salvar como versão**.
-1. Insira um **Rótulo** e **Comentário** para a versão.
+1. Insira um **Rótulo** e um **Comentário** para a versão.
 
    ![Adicionar um comentário](/help/screens-cloud/assets/configure/screens-timeline6.jpg)
 
-1. Confirme a nova versão selecionando **Criar** As informações na linha do tempo são atualizadas para indicar a nova versão.
+1. Confirme a nova versão selecionando **Criar**. As informações na linha do tempo são atualizadas para indicar a nova versão.
 
 #### Reverter para uma versão {#revertversion}
 
@@ -81,7 +81,7 @@ Para Reverter a página selecionada para uma versão anterior:
 
 1. Navegue até o canal para adicionar um comentário.
 1. Selecione o canal.
-1. Abra o **Linha do tempo** coluna.
+1. Abra a coluna **Linha do Tempo**.
 1. Selecione **Mostrar tudo** ou **Versões** na lista suspensa de filtros. As versões de canal do canal selecionado são listadas.
 1. Selecione a versão para a qual deseja reverter. As opções possíveis são mostradas:
 
@@ -95,11 +95,11 @@ Para Reverter a página selecionada para uma versão anterior:
 
 1. Navegue até o canal para adicionar um comentário.
 1. Selecione o canal.
-1. Abra o **Linha do tempo** coluna.
+1. Abra a coluna **Linha do Tempo**.
 1. Selecione **Mostrar tudo** ou **Versões** na lista suspensa de filtros. As versões de canal do canal selecionado são listadas.
 1. Selecione a versão que deseja visualizar. As opções possíveis são mostradas:
 
-   ![Versão de visualização](/help/screens-cloud/assets/configure/screens-timeline8.jpg)
+   ![Versão de Visualização](/help/screens-cloud/assets/configure/screens-timeline8.jpg)
 
 1. Selecione **Visualizar**. O canal é mostrado em uma nova guia.
 
@@ -109,11 +109,11 @@ Para Reverter a página selecionada para uma versão anterior:
 
 1. Navegue até o canal ao qual deseja adicionar um comentário.
 1. Selecione o canal.
-1. Abra o **Linha do tempo** coluna
+1. Abra a coluna **Linha do tempo**
 1. Selecione **Mostrar tudo** ou **Versões** na lista suspensa de filtros. As versões de canal do canal selecionado são listadas.
 1. Selecione a versão que deseja comparar. As opções possíveis são mostradas:
 
-   ![Comparar versão](/help/screens-cloud/assets/configure/screens-timeline9.jpg)
+   ![Comparar Versão](/help/screens-cloud/assets/configure/screens-timeline9.jpg)
 
 1. Selecione **Comparar com a atual**. O pop-up é aberto para exibir as diferenças.
 
@@ -130,26 +130,26 @@ Ao aplicar o fluxo de trabalho, especifique as seguintes informações:
 
 1. Navegue até o canal ao qual deseja adicionar um comentário.
 1. Selecione o canal.
-1. Abra o **Linha do tempo** coluna.
+1. Abra a coluna **Linha do Tempo**.
 1. Clique no botão (três pontos) ao lado do campo de comentário na parte inferior.
 
-   ![Iniciar fluxo de trabalho](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
+   ![Iniciar Fluxo de Trabalho](/help/screens-cloud/assets/configure/screens-timeline10.jpg)
 
-1. Selecionar **Iniciar fluxo de trabalho**.
+1. Selecione **Iniciar Fluxo de Trabalho**.
 1. O assistente Criar workflow será aberto para especificar os detalhes do workflow.
-1. Selecionar **Modelo de fluxo de trabalho** na lista suspensa e insira o título Workflow.
+1. Selecione **Modelo de fluxo de trabalho** na lista suspensa e insira o título do Fluxo de trabalho.
 
-   ![Iniciar fluxo de trabalho](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
+   ![Iniciar Fluxo de Trabalho](/help/screens-cloud/assets/configure/screens-timeline11.jpg)
 
-1. Continue clicando em **Próxima**.
+1. Continue clicando em **Avançar**.
 1. Na etapa escopo, você pode:
-   * **Adicionar conteúdo** para adicionar recursos extras ao workflow.
-   * **Incluir filhos** para especificar que os filhos desse recurso serão incluídos no workflow.
+   * **Adicionar conteúdo** para adicionar recursos ao fluxo de trabalho.
+   * **Incluir filhos** para especificar que os filhos desse recurso serão incluídos no fluxo de trabalho.
    * A opção **Remover seleção** remove o recurso do fluxo de trabalho.
 
-   ![Iniciar fluxo de trabalho](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
+   ![Iniciar Fluxo de Trabalho](/help/screens-cloud/assets/configure/screens-timeline12.jpg)
 
-1. Selecionar **Criar** para fechar o assistente e criar a instância do workflow.
+1. Selecione **Criar** para fechar o assistente e criar a instância do fluxo de trabalho.
 1. Talvez seja necessário executar algumas ações adicionais para concluir o fluxo de trabalho, dependendo do modelo de fluxo de trabalho selecionado.
 
-   ![Iniciar fluxo de trabalho](/help/screens-cloud/assets/configure/screens-timeline13.jpg)
+   ![Iniciar Fluxo de Trabalho](/help/screens-cloud/assets/configure/screens-timeline13.jpg)

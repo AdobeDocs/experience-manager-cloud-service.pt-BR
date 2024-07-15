@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # Integrar o formulário adaptável de AEM ao fluxo de trabalho de AEM: simplificando os processos de negócios
 
-A variável **[!UICONTROL Chamar um fluxo de trabalho de AEM]** A ação enviar associa um formulário adaptável a um fluxo de trabalho de AEM. Quando um formulário é enviado, o fluxo de trabalho associado é iniciado automaticamente na instância do Autor. É possível salvar os arquivos de dados, anexos e Documentos de Registro no local da carga útil do fluxo de trabalho ou em uma variável. Se o workflow estiver marcado para armazenamento de dados externo e configurado para um armazenamento de dados externo, então somente a opção de variável estará disponível. É possível selecionar na lista de variáveis disponíveis para o modelo de fluxo de trabalho. Se o workflow estiver marcado para armazenamento de dados externo em um estágio posterior e não no momento da criação do workflow, verifique se as configurações de variável necessárias estão em vigor.
+A Ação de Envio **[!UICONTROL Chamar um Fluxo de Trabalho de AEM]** associa um Formulário adaptável a um Fluxo de Trabalho de AEM. Quando um formulário é enviado, o fluxo de trabalho associado é iniciado automaticamente na instância do Autor. É possível salvar os arquivos de dados, anexos e Documentos de Registro no local da carga útil do fluxo de trabalho ou em uma variável. Se o workflow estiver marcado para armazenamento de dados externo e configurado para um armazenamento de dados externo, então somente a opção de variável estará disponível. É possível selecionar na lista de variáveis disponíveis para o modelo de fluxo de trabalho. Se o workflow estiver marcado para armazenamento de dados externo em um estágio posterior e não no momento da criação do workflow, verifique se as configurações de variável necessárias estão em vigor.
 
 >[!NOTE]
 >
->  Saiba como [criar um modelo de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para definir a série de etapas executadas quando um usuário inicia o workflow. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos.
+>  Saiba como [criar um modelo de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para definir a série de etapas executadas quando um usuário inicia o fluxo de trabalho. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos.
 
-O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções na [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md)  artigo.
+O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
 
 ## Vantagens
 
@@ -44,31 +44,31 @@ Before using the **[!UICONTROL Invoke an AEM Workflow]** Submit Action configure
 
 ## Integrar o fluxo de trabalho do AEM ao Forms adaptável {#steps-to-integrate-workflow-with-af}
 
-Para configurar o processo automatizado com o [Fluxo de trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para um Formulário adaptável, execute as seguintes etapas:
+Para configurar o processo automatizado com o [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem) para um Formulário adaptável, execute as seguintes etapas:
 
-1. Abra o Navegador de conteúdo e selecione a variável **[!UICONTROL Contêiner do guia]** componente do seu Formulário adaptável.
-1. Clique nas propriedades do Container do guia ![Propriedades do guia](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável é aberta.
-1. Clique em  **[!UICONTROL Envio]** guia.
-1. No **[!UICONTROL Ação de envio]** selecione **[!UICONTROL Chamar um fluxo de trabalho de AEM]** .
-   ![Configuração de ação de Enviar email](/help/forms/assets/configure-invoke-aem-workflow.png)
+1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
+1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
+1. Clique na guia **[!UICONTROL Envio]**.
+1. Na lista suspensa **[!UICONTROL Enviar Ação]**, selecione **[!UICONTROL Chamar um Fluxo de Trabalho do AEM]**.
+   ![Configuração de ação de Enviar Email](/help/forms/assets/configure-invoke-aem-workflow.png)
 
-1. Selecione o modelo de fluxo de trabalho na **[!UICONTROL Modelo de fluxo de trabalho]** lista suspensa.
-1. Selecione a opção no **[!UICONTROL Armazenar arquivo de dados usando]** lista suspensa.
+1. Selecione o modelo de fluxo de trabalho na lista suspensa **[!UICONTROL Modelo de fluxo de trabalho]**.
+1. Selecione a opção na lista suspensa **[!UICONTROL Armazenar arquivo de dados usando]**.
 
-   **Arquivo de dados**: contém dados enviados para o Formulário adaptável. Você pode usar o **[!UICONTROL Caminho do arquivo de dados]** opção para especificar o nome do arquivo e o caminho do arquivo relativo à carga útil. Por exemplo, a variável `/addresschange/data.xml` caminho cria uma pasta chamada `addresschange` e o coloca em relação à carga útil. Também é possível especificar somente `data.xml` para enviar somente dados enviados sem criar uma hierarquia de pastas. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
+   **Arquivo de dados**: contém dados enviados para o Formulário adaptável. Você pode usar a opção **[!UICONTROL Caminho do Arquivo de Dados]** para especificar o nome do arquivo e o caminho do arquivo relativo à carga. Por exemplo, o caminho `/addresschange/data.xml` cria uma pasta chamada `addresschange` e a coloca em relação à carga. Você também pode especificar apenas `data.xml` para enviar apenas dados enviados sem criar uma hierarquia de pastas. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
 
-1. Selecione a opção no **[!UICONTROL Armazenar anexos usando]** lista suspensa.
+1. Selecione a opção na lista suspensa **[!UICONTROL Armazenar anexos usando]**.
 
-   **Anexos**: Você pode usar o **[!UICONTROL Caminho do anexo]** opção para especificar o nome da pasta para armazenar os anexos carregados no Formulário adaptável. A pasta é criada em relação à carga útil. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
+   **Anexos**: você pode usar a opção **[!UICONTROL Caminho do Anexo]** para especificar o nome da pasta para armazenar os anexos carregados no Formulário Adaptável. A pasta é criada em relação à carga útil. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
 
-1. Selecione a opção no **[!UICONTROL Documentos de registro usando]** lista suspensa.
+1. Selecione a opção na lista suspensa **[!UICONTROL Documentos de registro usando]**.
 
-   **Documento do registro**: contém o Documento de registro gerado para o Formulário adaptável. Você pode usar o **[!UICONTROL Caminho do documento de registro]** opção para especificar o nome do documento de registro e o caminho do arquivo relativo à carga útil. Por exemplo, a variável `/addresschange/DoR.pdf` caminho cria uma pasta chamada `addresschange` relativo à carga útil e coloca o `DoR.pdf` em relação à carga útil. Também é possível especificar somente `DoR.pdf` para salvar somente o Documento de registro sem criar uma hierarquia de pastas. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
+   **Documento de Registro**: contém o Documento de Registro gerado para o Formulário Adaptável. Você pode usar a opção **[!UICONTROL Caminho do Documento de Registro]** para especificar o nome do arquivo do Documento de Registro e o caminho do arquivo relativo à carga útil. Por exemplo, o caminho `/addresschange/DoR.pdf` cria uma pasta chamada `addresschange` relativa à carga e coloca a `DoR.pdf` relativa à carga. Você também pode especificar apenas `DoR.pdf` para salvar apenas o documento de registro sem criar uma hierarquia de pastas. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
 1. Clique em **[!UICONTROL Concluído]**.
 
 >[!NOTE]
 >
-> Saiba mais sobre [Workflows AEM centrados na Forms - referência de etapa para automatizar processos de negócios](/help/forms/aem-forms-workflow-step-reference.md).
+> Saiba mais sobre os [Fluxos de trabalho AEM centrados no Forms - Referência de etapa para automatizar processos comerciais](/help/forms/aem-forms-workflow-step-reference.md).
 
 <!--
 ## Best Practices

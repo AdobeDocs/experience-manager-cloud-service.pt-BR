@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.9.0 {#release-notes}
 
-Esta página descreve as notas de versão das ferramentas de migração no AEM as a Cloud Service 2022.9.0.
+Esta página descreve as Notas de versão das Ferramentas de migração no AEM as a Cloud Service 2022.9.0.
 
 ## Analisador de práticas recomendadas {#bpa-release}
 
@@ -23,7 +23,7 @@ A data de lançamento do Analisador de práticas recomendadas v2.1.34 é 12 de s
 
 ### Novidades {#what-is-new-bpa}
 
-* Agora, o BPA pode detectar e relatar se o cliente adicionou uma configuração de agente personalizada. O AEM as a Cloud Service não suporta arquivos de registro personalizados. Todos os arquivos de log precisam ser canalizados para `error.log`
+* Agora, o BPA pode detectar e relatar se o cliente adicionou uma configuração de agente personalizada. O AEM as a Cloud Service não oferece suporte a arquivos de log personalizados. Todos os arquivos de log precisam ser canalizados para `error.log`
 * Agora, o BPA pode relatar os diferentes tipos MIME binários presentes no repositório do cliente e as contagens associadas a eles.
 
 ### Correções de erros {#bug-fixes-bpa}

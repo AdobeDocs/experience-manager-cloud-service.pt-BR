@@ -13,7 +13,7 @@ ht-degree: 79%
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.6.0 {#release-notes}
 
-A seção a seguir descreve as notas de versão de recurso da versão 2022.6.0 do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de versão do recurso para a versão 2022.6.0 do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Assista ao vídeo de Visão geral da versão de junho de 2022 para ver um resumo
 
 ### Novos recursos no [!DNL Sites] {#sites-features}
 
-* Um novo [interface do usuário](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) O agora está disponível para administradores de conteúdo e autores de conteúdo gerenciarem com eficiência (como publicar, desfazer a publicação, copiar, mover etc.), pesquisar/filtrar e criar fragmentos de conteúdo para casos de uso headless.
+* Uma nova [interface de usuário](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) está disponível para que administradores e autores de conteúdo possam gerenciar (como publicar, desfazer a publicação, copiar, mover etc.), pesquisar/filtrar e criar fragmentos de conteúdo com eficiência para casos de uso Headless.
 
   ![Console de fragmentos de conteúdo](/help/release-notes/assets/cf-ui.png)
 
@@ -96,7 +96,7 @@ Agora, o Experience Manager Assets usa os recursos de IA do Adobe Sensei para [d
 
 ### Novidades {#what-is-new-foundation}
 
-* Conforme mencionado nas notas de versão de maio (2022.5.0), a opção &quot;Adicionar árvore&quot; na tela do administrador do agente de replicação **Distribuir** foi removida. Os pacotes com uma hierarquia de árvore de conteúdo devem ser replicados usando o fluxo de trabalho [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Publicar árvore de conteúdo](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
+* Conforme mencionado nas notas de versão de maio (2022.5.0), a opção &quot;Adicionar árvore&quot;, na guia **Distribuir** da tela do administrador do agente de replicação, foi removida. Os pacotes com uma hierarquia de árvore de conteúdo devem ser replicados usando o fluxo de trabalho [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Publicar árvore de conteúdo](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
 
 ## Cloud Manager {#cloud-manager}
 

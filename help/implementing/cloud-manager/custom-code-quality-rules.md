@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: ceaa3b075953e9bdbcc0ae8c47106150be9a52d7
 workflow-type: tm+mt
 source-wordcount: '4482'
-ht-degree: 82%
+ht-degree: 88%
 
 ---
 
@@ -525,27 +525,27 @@ No entanto, há casos em que uma API é descontinuada no contexto do Experience 
 ### Não use a anotação @Inject com @Optional nos Modelos Sling {#sonarqube-slingmodels-inject-optional}
 
 * **Chave**: InjectAnnotationWithOptionalInjectionCheck
-* **Tipo**: Qualidade do software
-* **Severidade**: Baixa
+* **Tipo**: qualidade do software
+* **Severidade**: baixa
 * **Desde**: Versão 2023.11
 
-O projeto Apache Sling desencoraja o uso da variável `@Inject` anotação no contexto de Modelos Sling, pois pode levar a um desempenho inadequado quando combinado com o `DefaultInjectionStrategy.OPTIONAL` (no nível de campo ou de classe). Em vez disso, injeções mais `@ValueMapValue` ou `@OsgiInjector` anotações) devem ser usadas.
+O projeto Apache Sling não incentiva o uso da anotação `@Inject` no contexto de Modelos Sling, pois pode resultar em baixo desempenho quando combinado com `DefaultInjectionStrategy.OPTIONAL` (no nível de campo ou de classe). Em vez disso, injeções mais específicas (como `@ValueMapValue` ou `@OsgiInjector` anotações) devem ser usadas.
 
-Verifique a [Documentação do Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) para obter mais informações sobre as anotações recomendadas e por que essa recomendação foi feita em primeiro lugar.
+Consulte a [Documentação do Apache Sling](https://sling.apache.org/documentation/bundles/models.html#discouraged-annotations-1) para obter mais informações sobre as anotações recomendadas e por que essa recomendação foi feita.
 
 
 ### Reutilizar instâncias de um HTTPClient {#sonarqube-reuse-httpclient}
 
 * **Chave**: AEMSRE-870
-* **Tipo**: Qualidade do software
-* **Severidade**: Baixa
+* **Tipo**: qualidade do software
+* **Severidade**: baixa
 * **Desde**: Versão 2023.11
 
 Os aplicativos do AEM muitas vezes alcançam outros aplicativos usando o protocolo HTTP, e o Apache HttpClient é uma biblioteca frequentemente usada para fazer isso. Mas a criação desse objeto HttpClient vem com alguma sobrecarga, de modo que esses objetos devem ser reutilizados o máximo possível.
 
-Essa regra verifica se esse objeto HttpClient não é privado em um método, mas global em um nível de classe, para que possa ser reutilizado. Nesse caso, o campo httpClient deve ser definido no construtor da classe ou na variável `activate()` (se essa classe for um componente/serviço OSGi).
+Essa regra verifica se esse objeto HttpClient não é privado em um método, mas global em um nível de classe, para que possa ser reutilizado. Nesse caso, o campo httpClient deve ser definido no construtor da classe ou no método `activate()` (se essa classe for um componente/serviço OSGi).
 
-Verifique a [Guia de otimização](https://hc.apache.org/httpclient-legacy/performance.html) do HttpClient para obter algumas práticas recomendadas relacionadas ao uso do HttpClient.
+Consulte o [Guia de Otimização](https://hc.apache.org/httpclient-legacy/performance.html) do HttpClient para obter algumas práticas recomendadas relacionadas ao uso do HttpClient.
 
 #### Código não compatível  {#non-compliant-code-14}
 
@@ -989,14 +989,15 @@ O Experience Manager as a Cloud Service proíbe que as definições do índice d
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
-O Experience Manager as a Cloud Service proíbe que as definições do índice de pesquisa personalizado (ou seja, nós do tipo `oak:QueryIndexDefinition`) contenham uma propriedade chamada `reindex`. A indexação usando essa propriedade deve ser atualizada antes da migração para o Experience Manager as a Cloud Service. Consulte o documento [Pesquisa e indexação de conteúdo](/help/operations/indexing.md#how-to-use) para obter mais informações.
+O Experience Manager as a Cloud Service proíbe que as definições do índice de pesquisa personalizado (ou seja, nós do tipo `oak:QueryIndexDefinition`) contenham uma propriedade chamada `reindex`. A indexação usando essa propriedade deve ser atualizada antes da migração para o Experience Manager as a
+Cloud Service. Consulte o documento [Pesquisa e indexação de conteúdo](/help/operations/indexing.md#how-to-use) para obter mais informações.
 
 ### Os nós Lucene do ativo DAM personalizado não devem especificar &#39;queryPaths&#39; {#oakpal-damAssetLucene-queryPaths}
 
 * **Chave**: IndexDamAssetLucene
 * **Tipo**: Erro
 * **Severidade**: Limitante
-* **Desde**: Versão 2022.1.0
+* **Desde**: versão 2022.1.0
 
 #### Código não compatível  {#non-compliant-code-damAssetLucene-queryPaths}
 
@@ -1031,7 +1032,7 @@ O Experience Manager as a Cloud Service proíbe que as definições do índice d
 * **Chave**: IndexCompatVersion
 * **Tipo**: Code Smell
 * **Severidade**: Alta
-* **Desde**: Versão 2022.1.0
+* **Desde**: versão 2022.1.0
 
 
 ### O nó de índice que especifica &#39;includedPaths&#39; também deve especificar &#39;queryPaths&#39; com os mesmos valores {#oakpal-included-paths-without-query-paths}
@@ -1039,19 +1040,19 @@ O Experience Manager as a Cloud Service proíbe que as definições do índice d
 * **Chave**: IndexIncludedPathsWithoutQueryPaths
 * **Tipo**: Code Smell
 * **Severidade**: Baixa
-* **Desde**: Versão 2023.1.0
+* **Desde**: versão 2023.1.0
 
-Para índices personalizados, ambos `includedPaths` e `queryPaths` O deve ser configurado com valores idênticos. Se um for especificado, o outro deverá corresponder a ele. No entanto, há um caso especial para índices de `damAssetLucene`, incluindo suas versões personalizadas. Para eles, você só deve fornecer `includedPaths`.
+Para índices personalizados, `includedPaths` e `queryPaths` devem ser configurados com valores idênticos. Se um for especificado, o outro deverá corresponder a ele. No entanto, há um caso especial para índices de `damAssetLucene`, incluindo suas versões personalizadas. Para eles, você deve fornecer apenas `includedPaths`.
 
 ### Nó de índice especificando nodeScopeIndex no tipo de nó genérico também deve especificar includedPaths e queryPaths {#oakpal-full-text-on-generic-node-type}
 
 * **Chave**: IndexFulltextOnGenericType
 * **Tipo**: Code Smell
 * **Severidade**: Baixa
-* **Desde**: Versão 2023.1.0
+* **Desde**: versão 2023.1.0
 
-Ao definir a variável `nodeScopeIndex` em um tipo de nó &quot;genérico&quot; como `nt:unstructured` ou `nt:base`, você também deve especificar o `includedPaths` e `queryPaths` propriedades.
-`nt:base` pode ser considerado &quot;genérico&quot;, pois todos os tipos de nó herdam dele. Portanto, definir um `nodeScopeIndex` em `nt:base` O fará indexar todos os nós no repositório. Da mesma forma, `nt:unstructured` também é considerado &quot;genérico&quot;, pois há muitos nós em repositórios desse tipo.
+Ao definir a propriedade `nodeScopeIndex` em um tipo de nó &quot;genérico&quot; como `nt:unstructured` ou `nt:base`, você também deve especificar as propriedades `includedPaths` e `queryPaths`.
+`nt:base` pode ser considerado &quot;genérico&quot;, já que todos os tipos de nó herdam dele. Portanto, definir um `nodeScopeIndex` em `nt:base` fará com que ele indexe todos os nós no repositório. Da mesma forma, `nt:unstructured` também é considerado &quot;genérico&quot;, pois há muitos nós em repositórios desse tipo.
 
 #### Código não compatível  {#non-compliant-code-full-text-on-generic-node-type}
 
@@ -1094,7 +1095,7 @@ Ao definir a variável `nodeScopeIndex` em um tipo de nó &quot;genérico&quot; 
 * **Chave**: OverrideOfQueryLimitReads
 * **Tipo**: Code Smell
 * **Severidade**: Baixa
-* **Desde**: Versão 2023.1.0
+* **Desde**: versão 2023.1.0
 
 Substituir o valor padrão pode resultar em leituras de página muito lentas, especialmente quando mais conteúdo é adicionado.
 
@@ -1103,7 +1104,7 @@ Substituir o valor padrão pode resultar em leituras de página muito lentas, es
 * **Chave**: IndexDetectMultipleActiveVersionsOfSameIndex
 * **Tipo**: Code Smell
 * **Severidade**: Baixa
-* **Desde**: Versão 2023.1.0
+* **Desde**: versão 2023.1.0
 
 #### Código não compatível  {#non-compliant-code-multiple-active-versions}
 
@@ -1130,7 +1131,7 @@ Substituir o valor padrão pode resultar em leituras de página muito lentas, es
 * **Chave**: IndexValidFullyCustomName
 * **Tipo**: Code Smell
 * **Severidade**: Baixa
-* **Desde**: Versão 2023.1.0
+* **Desde**: versão 2023.1.0
 
 O padrão esperado para nomes de índice totalmente personalizados é: `[prefix].[indexName]-custom-[version]`. Mais informações podem ser encontradas no documento [Pesquisa e indexação de conteúdo](/help/operations/indexing.md).
 
@@ -1191,57 +1192,57 @@ Se a propriedade analisada não tiver sido explicitamente definida, seu valor pa
 * **Chave**: IndexHasValidTagsProperty
 * **Tipo**: Code Smell
 * **Severidade**: Baixa
-* **Desde**: Versão 2023.1.0
+* **Desde**: versão 2023.1.0
 
 Para índices específicos, certifique-se de manter a propriedade das tags e seus valores atuais. Embora a adição de novos valores à propriedade de tags seja permitida, a exclusão de qualquer valor existente (ou da propriedade completamente) pode levar a resultados inesperados.
 
-### Os nós de definição de índice não devem ser implantados no pacote de conteúdo da interface do usuário {#oakpal-ui-content-package}
+### Os nós de definição de índice não devem ser implantados no pacote de conteúdo da interface {#oakpal-ui-content-package}
 
 * **Chave**: IndexNotUnderUIContent
 * **Tipo**: melhoria
-* **Severidade**: Baixa
-* **Desde**: Versão 2024.6.0
+* **Severidade**: baixa
+* **Desde**: versão 2024.6.0
 
-O AEM Cloud Service proíbe definições de índice de pesquisa personalizada (nós do tipo `oak:QueryIndexDefinition`) de serem implantados no pacote de conteúdo da interface do usuário.
+O AEM Cloud Service proíbe que definições de índice de pesquisa personalizadas (nós do tipo `oak:QueryIndexDefinition`) sejam implantadas no pacote de conteúdo da interface.
 
 >[!WARNING]
 >
->Você é solicitado a resolver isso o mais rápido possível, pois isso causará falhas nos pipelines, começando com o [Versão de agosto de 2024 do Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Recomendamos que você resolva esse problema o mais rápido possível, pois isso causará falhas nos pipelines a partir da [versão de agosto de 2024 do Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
 
-### A Definição De Índice De Texto Completo Personalizado Do Tipo damAssetLucene Deve Receber O Prefixo Correto De &#39;damAssetLucene&#39; {#oakpal-dam-asset-lucene}
+### Uma definição de índice de texto completo personalizada do tipo damAssetLucene deve receber o prefixo correto de “damAssetLucene” {#oakpal-dam-asset-lucene}
 
 * **Chave**: CustomFulltextIndexesOfTheDamAssetCheck
 * **Tipo**: melhoria
-* **Severidade**: Baixa
-* **Desde**: Versão 2024.6.0
+* **Severidade**: baixa
+* **Desde**: versão 2024.6.0
 
-O AEM Cloud Service proíbe definições de índice de texto completo personalizadas do tipo `damAssetLucene` de receber o prefixo de qualquer coisa diferente de `damAssetLucene`.
+O AEM Cloud Service proíbe que definições de índice de texto completo personalizadas do tipo `damAssetLucene` sejam prefixadas com qualquer item diferente de `damAssetLucene`.
 
 >[!WARNING]
 >
->Você é solicitado a resolver isso o mais rápido possível, pois isso causará falhas nos pipelines, começando com o [Versão de agosto de 2024 do Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Recomendamos que você resolva esse problema o mais rápido possível, pois isso causará falhas nos pipelines a partir da [versão de agosto de 2024 do Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
 
-### Os Nós De Definição De Índice Não Devem Conter Propriedades Com O Mesmo Nome {#oakpal-index-property-name}
+### Os nós de definição de índice não devem conter propriedades com o mesmo nome {#oakpal-index-property-name}
 
 * **Chave**: DuplicateNameProperty
 * **Tipo**: melhoria
-* **Severidade**: Baixa
-* **Desde**: Versão 2024.6.0
+* **Severidade**: baixa
+* **Desde**: versão 2024.6.0
 
-O AEM Cloud Service proíbe definições de índice de pesquisa personalizada (ou seja, nós do tipo `oak:QueryIndexDefinition`) de conter propriedades com o mesmo nome
+O AEM Cloud Service proíbe que definições de índice de pesquisa personalizadas (ou seja, nós do tipo `oak:QueryIndexDefinition`) contenham propriedades com o mesmo nome
 
 >[!WARNING]
 >
->Você é solicitado a resolver isso o mais rápido possível, pois isso causará falhas nos pipelines, começando com o [Versão de agosto de 2024 do Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Recomendamos que você resolva esse problema o mais rápido possível, pois isso causará falhas nos pipelines a partir da [versão de agosto de 2024 do Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
 
-### A Personalização De Determinadas Definições De Índice OOTB É Proibida {#oakpal-customizing-ootb-index}
+### A personalização de determinadas definições de índice prontas para uso é proibida {#oakpal-customizing-ootb-index}
 
 * **Chave**: RestrictIndexCustomization
 * **Tipo**: melhoria
-* **Severidade**: Baixa
-* **Desde**: Versão 2024.6.0
+* **Severidade**: baixa
+* **Desde**: versão 2024.6.0
 
-O AEM Cloud Service proíbe modificações não autorizadas nos seguintes índices OOTB:
+O AEM Cloud Service proíbe modificações não autorizadas nos seguintes índices protos para uso:
 
 * `nodetypeLucene`
 * `slingResourceResolver`
@@ -1252,17 +1253,17 @@ O AEM Cloud Service proíbe modificações não autorizadas nos seguintes índic
 
 >[!WARNING]
 >
->Você é solicitado a resolver isso o mais rápido possível, pois isso causará falhas nos pipelines, começando com o [Versão de agosto de 2024 do Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Recomendamos que você resolva esse problema o mais rápido possível, pois isso causará falhas nos pipelines a partir da [versão de agosto de 2024 do Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
 
-### A Configuração Dos Tokenizers Nos Analisadores Deve Ser Criada Com O Nome &quot;tokenizer&quot; {#oakpal-tokenizer}
+### A configuração dos tokenizadores nos analisadores deve ser criada com o nome “tokenizer” {#oakpal-tokenizer}
 
 * **Chave**: AnalyzerTokenizerConfigCheck
 * **Tipo**: melhoria
-* **Severidade**: Baixa
-* **Desde**: Versão 2024.6.0
+* **Severidade**: baixa
+* **Desde**: versão 2024.6.0
 
-O AEM Cloud Service proíbe a criação de tokenizers com nomes incorretos em analisadores. Os tokenizers devem ser sempre definidos como `tokenizer`.
+O AEM Cloud Service proíbe a criação de tokenizers com nomes incorretos em analisadores. Os tokenizadores devem ser sempre definidos como `tokenizer`.
 
 >[!WARNING]
 >
->Você é solicitado a resolver isso o mais rápido possível, pois isso causará falhas nos pipelines, começando com o [Versão de agosto de 2024 do Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)
+>Recomendamos que você resolva esse problema o mais rápido possível, pois isso causará falhas nos pipelines a partir da [versão de agosto de 2024 do Cloud Manager.](/help/implementing/cloud-manager/release-notes/current.md)

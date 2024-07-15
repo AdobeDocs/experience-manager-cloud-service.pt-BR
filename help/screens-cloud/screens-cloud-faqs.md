@@ -1,6 +1,6 @@
 ---
 title: Perguntas frequentes sobre o Screens as a Cloud Service
-description: Esta página descreve as perguntas mais frequentes sobre o Screens as a Cloud Service.
+description: Esta página descreve as perguntas as a Cloud Service do Screens.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
 feature: Administering Screens
 role: Admin, Developer, User
@@ -13,20 +13,20 @@ ht-degree: 2%
 
 # Perguntas frequentes sobre o Screens as a Cloud Service {#screens-cloud-faqs}
 
-A seção a seguir fornece respostas às perguntas frequentes relacionadas ao projeto do Screens as a Cloud Service.
+A seção a seguir fornece respostas às perguntas frequentes relacionadas ao projeto Screens as a Cloud Service.
 
 ## O que devo fazer se o AEM Screens Player que aponta para o Screens as a Cloud Service não escolher as clientlibs personalizadas com o formato /etc.clientlibs/xxx/clientlibs/clientlib-site.lc-813643788974b0f89d686d9591526d63-lc.min.css?
 
-O AEM as a Cloud Service altera as longas chaves de cache a cada implantação. O AEM Screens gera os caches offline quando o conteúdo é modificado, em vez de quando o Cloud Manager executa a implantação. Essas chaves de cache longas nos manifestos são inválidas, portanto, o reprodutor não baixa o *clientlibs*.
+O AEM as a Cloud Service altera as longas chaves de cache a cada implantação. O AEM Screens gera os caches offline quando o conteúdo é modificado, em vez de quando o Cloud Manager executa a implantação. Essas chaves de cache longas nos manifestos são inválidas, portanto, o player não pode baixar o *clientlibs*.
 
-Usar `longCacheKey="none"` no seu `clientlib` A pasta remove as chaves de cache longas completamente para o *clientlibs*.
+Usar o `longCacheKey="none"` na pasta `clientlib` remove as chaves de cache longas juntas para o *clientlibs*.
 
 
 ## O que devo fazer se o manifesto offline não incluir todos os recursos conforme esperado? {#offline-manifest}
 
-Os caches offline são gerados usando **bulk-offline-update-screens-service** usuário do serviço. Determinados caminhos, não acessíveis pelo `bulk-offline-update-screens-service`, levam a conteúdo ausente em manifestos offline.
+Os caches offline são gerados usando o usuário do serviço **bulk-offline-update-screens-service**. Determinados caminhos, não acessíveis por `bulk-offline-update-screens-service`, levam a conteúdo ausente em manifestos offline.
 
-Em seu código, ou seja, `ui.config or ui.apps`, crie uma configuração OSGi na pasta de configuração, com o seguinte conteúdo e nomeie o arquivo como `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config`
+Em seu código, ou seja, `ui.config or ui.apps`, crie uma configuração OSGi na pasta de configuração, com o conteúdo a seguir, e nomeie o arquivo como `org.apache.sling.jcr.repoinit.RepositoryInitializer-serviceusersandacls-content.config`
 
 ```
 scripts=[
@@ -40,12 +40,12 @@ scripts=[
 
 ## Quais formatos de imagem são recomendados para a representação contínua de imagens em um canal as a Cloud Service do AEM Screens?{#screens-cloud-image-format}
 
-O Adobe recomenda usar imagens no formato `.png` e `.jpeg` em um canal AEM Screens as a Cloud Service, para obter a melhor experiência de sinalização digital.
-As imagens no formato `*.tif` (Formato de arquivo de imagem de tag) não são compatíveis com o AEM Screens as a Cloud Service. Se um canal tiver esse formato de imagem, no lado do reprodutor, a imagem não será renderizada.
+A Adobe recomenda usar imagens no formato `.png` e `.jpeg` em um canal as a Cloud Service AEM Screens, para obter a melhor experiência de sinalização digital.
+As imagens no formato `*.tif` (formato de Arquivo de Imagem de Marca) não têm suporte no AEM Screens as a Cloud Service. Se um canal tiver esse formato de imagem, no lado do reprodutor, a imagem não será renderizada.
 
 ## O que devo fazer se um Canal no modo de Desenvolvedor (online) não estiver sendo renderizado no AEM Screens Player?{#screens-cloud-online-channel-blank-iframe}
 
-A Adobe recomenda que você use os recursos de cache do AEM Screens. No entanto, se você precisar executar o Canal no modo Desenvolvedor e o AEM Screens Player mostrar uma tela em branco, verifique as ferramentas do desenvolvedor do Player e procure `X-Frame-Options` ou `frame-ancestors` erros. A resolução é configurar o Dispatcher para permitir a execução de conteúdo em iFrames. Normalmente, a seguinte configuração funciona:
+A Adobe recomenda que você use os recursos de cache do AEM Screens. No entanto, se você precisar executar o Canal no modo de Desenvolvedor e o AEM Screens Player mostrar uma tela em branco, verifique as ferramentas de desenvolvedor do Player e procure por erros `X-Frame-Options` ou `frame-ancestors`. A resolução é configurar o Dispatcher para permitir a execução de conteúdo em iFrames. Normalmente, a seguinte configuração funciona:
 
 ```
 Header set Content-Security-Policy "frame-ancestors 'self' file: localhost:*;"

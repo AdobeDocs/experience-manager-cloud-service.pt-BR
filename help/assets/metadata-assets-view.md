@@ -1,6 +1,6 @@
 ---
-title: Como gerenciar metadados na visualização de Ativos?
-description: Saiba como gerenciar metadados na visualização de Ativos. Um melhor gerenciamento de metadados torna um ativo mais acessível, fácil de gerenciar e completo.
+title: Como gerenciar metadados na visualização do Assets?
+description: Saiba como gerenciar metadados na visualização do Assets. Um melhor gerenciamento de metadados torna um ativo mais acessível, fácil de gerenciar e completo.
 role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
@@ -69,18 +69,18 @@ As tags também podem ser aninhadas em uma hierarquia para permitir relacionamen
 >title="Formulários de metadados"
 >abstract="O [!DNL Experience Manager Assets] fornece vários campos padrão de metadados, por padrão. As organizações têm necessidades adicionais de metadados e precisam de mais campos para adicionar metadados específicos de negócios. Os formulários de metadados permitem que as empresas adicionem campos de metadados personalizados à página Detalhes de um ativo. Os metadados específicos de negócios melhoram a governança e a descoberta de ativos."
 
-A exibição Ativos fornece vários campos de metadados padrão por padrão. As organizações têm necessidades adicionais de metadados e precisam de mais campos para adicionar metadados específicos de negócios. Os formulários de metadados permitem que as empresas adicionem campos de metadados personalizados à página [!UICONTROL Detalhes] de um ativo. Os metadados específicos de negócios melhoram a governança e a descoberta de ativos. É possível criar formulários do zero ou redefinir a finalidade de um formulário existente.
+A visualização Assets fornece muitos campos de metadados padrão por padrão. As organizações têm necessidades adicionais de metadados e precisam de mais campos para adicionar metadados específicos de negócios. Os formulários de metadados permitem que as empresas adicionem campos de metadados personalizados à página [!UICONTROL Detalhes] de um ativo. Os metadados específicos de negócios melhoram a governança e a descoberta de ativos. É possível criar formulários do zero ou redefinir a finalidade de um formulário existente.
 
-É possível configurar formulários de metadados para diferentes tipos de ativos (diferentes tipos de MIME). Use o mesmo nome de formulário como o tipo de MIME do arquivo. A visualização de ativos corresponde automaticamente os ativos carregados do tipo MIME ao nome do formulário e atualiza os metadados dos ativos carregados com base nos campos de formulário.
+É possível configurar formulários de metadados para diferentes tipos de ativos (diferentes tipos de MIME). Use o mesmo nome de formulário como o tipo de MIME do arquivo. A visualização do Assets corresponde automaticamente os ativos carregados do tipo MIME ao nome do formulário e atualiza os metadados dos ativos carregados com base nos campos de formulário.
 <!--
 For example, if a metadata form by the name `PDF` or `pdf` exists, then the uploaded PDF documents contain metadata fields as defined in the form.
 -->
-A exibição de Ativos usa a seguinte sequência para pesquisar nomes de formulário de metadados existentes a fim de aplicar os campos de metadados aos ativos carregados de um tipo específico:
+A visualização Assets usa a seguinte sequência para pesquisar nomes de formulário de metadados existentes a fim de aplicar os campos de metadados aos ativos carregados de um tipo específico:
 
 Subtipo MIME > Tipo MIME > Formulário `default` > Formulário pronto para uso
 
-Por exemplo, se um formulário de metadados chamado `PDF` ou `pdf` existir, os documentos PDF carregados contêm campos de metadados conforme definidos no formulário. Se for um formulário de metadados chamado `PDF` ou `pdf` não existir, a exibição Ativos corresponderá se houver um formulário de metadados chamado `application`. Se houver um formulário de metadados chamado `application`, os documentos PDF carregados conterão campos de metadados conforme definido no formulário. Se a visualização de Ativos ainda não encontrar um formulário de metadados correspondente, ela pesquisará pelo `default` formulário de metadados para aplicar campos de metadados definidos no formulário aos documentos PDF carregados. Se nenhuma dessas etapas funcionar, a exibição Assets aplicará campos de metadados definidos no formulário pronto para uso a todos os documentos de PDF carregados.
-No entanto, se você quiser atribuir um formulário de metadados a uma pasta, [consulte](#assign-metadata-form-folder).
+Por exemplo, se um formulário de metadados chamado `PDF` ou `pdf` existir, os documentos PDF carregados contêm campos de metadados conforme definidos no formulário. Se não existir um formulário de metadados chamado `PDF` ou `pdf`, o modo de exibição Assets corresponderá se houver um formulário de metadados chamado `application`. Se houver um formulário de metadados chamado `application`, os documentos PDF carregados conterão campos de metadados conforme definido no formulário. Se o modo de exibição do Assets ainda não encontrar um formulário de metadados correspondente, ele pesquisará pelo formulário de metadados `default` para aplicar campos de metadados definidos no formulário aos documentos PDF carregados. Se nenhuma dessas etapas funcionar, a visualização Assets aplicará campos de metadados definidos no formulário pronto para uso a todos os documentos PDF carregados.
+Porém, se você deseja atribuir um formulário de metadados a uma pasta [consulte](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
 >
@@ -170,7 +170,7 @@ Além disso, é possível navegar até a página de detalhes da pasta e selecion
 
 ## Próximas etapas {#next-steps}
 
-* [Assista a um vídeo sobre gerenciamento de formulários de metadados na visualização de Ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=pt-BR)
+* [Assista a um vídeo sobre gerenciamento de formulários de metadados no modo de exibição do Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/configuring/metadata-forms.html?lang=pt-BR)
 
 * Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 

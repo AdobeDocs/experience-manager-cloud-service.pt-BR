@@ -24,7 +24,7 @@ As propriedades são distribuídas por várias guias.
 
 * **Título e tags**
 
-   * **Título** - O título da página é exibido em vários locais. Por exemplo, a variável **Sites** lista de guias e o **Sites** exibições de cartão/lista.
+   * **Título** - O título da página é exibido em vários locais. Por exemplo, a lista de guias **Sites** e as exibições de cartão/lista **Sites**.
       * Este campo é obrigatório.
    * **Tags**: aqui você pode adicionar ou remover as tags da página, atualizando a lista na caixa de seleção.
       * Após selecionar uma tag, ela é listada abaixo da caixa de seleção. Você pode remover uma tag dessa lista usando o ícone “x”.
@@ -55,7 +55,7 @@ As propriedades são distribuídas por várias guias.
 
    * **Título da página** - um título a ser usado na página. Normalmente é usado pelos componentes de título. Se estiver vazio, a variável **Título** é usada.
    * **Título de navegação**: você pode especificar um título separado para uso na navegação (por exemplo, se desejar algo mais conciso). Se estiver vazio, o **Título** é usado.
-   * **Legenda** - Um subtítulo para usar na página.
+   * **Legenda** - Uma legenda para usar na página.
    * **Descrição** - a sua descrição da página, a finalidade dela ou qualquer outro detalhe que desejar adicionar.
 
 * **Horário ligado/desligado**
@@ -92,7 +92,7 @@ As propriedades são distribuídas por várias guias.
 
    * **Adicionar** - Selecione para mostrar um campo e definir uma URL personalizada para a página.
       * Selecione novamente para adicionar vários.
-      * Selecione o **Remover** ícone para excluir o URL personalizado.
+      * Selecione o ícone **Remover** para excluir a URL personalizada.
    * **Redirecionar URL personalizado** - indica se você deseja que a página use o URL personalizado.
 
 ### Avançado  {#advanced}
@@ -101,7 +101,7 @@ As propriedades são distribuídas por várias guias.
 
    * **Idioma** - o idioma da página
    * **Raiz de idioma** - deve ser marcado se a página for a raiz de uma cópia de idioma
-   * **Redirecionar** - Indica a página de redirecionamento automático com um HTML `302 Found` status.
+   * **Redirecionar** - Indica a página para a qual esta página deve ser redirecionada automaticamente com o status HTML `302 Found`.
       * **Redirecionamento permanente** — quando marcado, a página redireciona para o caminho de destino fornecido junto com um status HTML `301 Moved Permanently`.
    * **Design** - indica se a página está visível ou oculta na navegação de página do site resultante
    * **Pseudônimo** - especifica um pseudônimo para ser usado com esta página
@@ -240,7 +240,7 @@ Por meio de uma configuração simples, um autor de conteúdo agora pode ativar 
 
 >[!NOTE]
 >
->Consulte [Habilitar Recursos Progressivos do Aplicativo Web](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
+>Consulte [Habilitando Recursos Progressivos do Aplicativo Web](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
 
 * **Configurar experiência instalável**
 
@@ -289,7 +289,7 @@ Ao editar uma página, você pode usar as **Informações da página** para defi
 
 1. Abra a página na qual deseja editar as propriedades.
 1. Selecione o ícone **Informações da página** para abrir o menu de seleção:
-1. Selecionar **Abrir propriedades** e uma caixa de diálogo é aberta, permitindo que você edite as propriedades, classificadas pela guia apropriada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
+1. Selecione **Abrir propriedades** e uma caixa de diálogo será aberta, permitindo que você edite as propriedades, classificadas pela guia apropriada. Os seguintes botões também estão disponíveis à direita da barra de ferramentas:
    * **Cancelar**
    * **Salvar e fechar**
 1. Use o botão **Salvar e fechar** para salvar as alterações.
@@ -326,7 +326,7 @@ Depois de entrar na edição de itens em massa é possível:
       * Se você reduzir a seleção de página para uma página, em seguida, todas as propriedades ficarão visíveis.
    * Propriedades comuns com um valor comum
       * Apenas as propriedades com um valor comum são mostradas no modo de Exibição.
-      * Quando o campo tem vários valores (por exemplo, Tags), eles só serão exibidos quando *all* são comuns. Se apenas algumas forem comuns, elas só serão exibidas durante a edição.
+      * Quando o campo tem vários valores (por exemplo, Marcas), eles só serão exibidos quando *todos* forem comuns. Se apenas algumas forem comuns, elas só serão exibidas durante a edição.
       * Quando não existirem propriedades com um valor comum, uma mensagem será exibida.
 
 * **Editar**

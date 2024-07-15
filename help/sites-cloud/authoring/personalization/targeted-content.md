@@ -75,7 +75,7 @@ Para alternar para o modo de direcionamento:
 
    ![Modo Direcionar](../assets/targeted-mode.png)
 
-1. Selecionar **Direcionamento**. As opções de direcionamento são exibidas na parte superior da página.
+1. Selecione **Direcionamento**. As opções de direcionamento são exibidas na parte superior da página.
 
    ![Barra de ferramentas de direcionamento](../assets/targeted-toolbar.png)
 
@@ -100,7 +100,7 @@ Para adicionar uma atividade:
    >
    >Se você criar uma marca de qualquer outra maneira, faça com que o nó `/campaigns/<brand>/master` exista ou ocorrerá um erro ao tentar criar uma atividade.
 
-1. Selecione + ao lado de **Atividade** menu suspenso.
+1. Selecione + ao lado do menu suspenso **Atividade**.
 1. Digite um nome para a atividade.
 
    >[!NOTE]
@@ -136,7 +136,7 @@ Para adicionar uma atividade:
 
 1. No menu suspenso **Marca**, selecione a marca que contém a atividade em que você está trabalhando.
 1. No menu suspenso **Atividade**, selecione a atividade para a qual você está criando conteúdo direcionado.
-1. Para revelar os controles que orientam você pelo processo de direcionamento, selecione **Iniciar o direcionamento**.
+1. Para revelar os controles que guiarão você pelo processo de direcionamento, selecione **Iniciar o Direcionamento**.
 
    ![Iniciar o direcionamento](../assets/targeted-start-targeting.png)
 
@@ -194,8 +194,8 @@ Usando a etapa Criar [do processo de direcionamento](#the-targeting-process-crea
 
 Para adicionar uma experiência:
 
-1. Para adicionar uma experiência, selecione **+** **Adicionar direcionamento de experiência** que aparece abaixo das experiências existentes na **Públicos-alvo** painel.
-1. Selecione o público-alvo. Por padrão, esse será o nome da experiência. Você pode digitar outro nome, se desejar. Selecionar **OK**.
+1. Para adicionar uma experiência, selecione **+** **Adicionar Direcionamento de Experiência**, que aparece abaixo das experiências existentes no painel **Públicos-alvo**.
+1. Selecione o público-alvo. Por padrão, esse será o nome da experiência. Você pode digitar outro nome, se desejar. Selecione **OK**.
 
 #### Remoção de experiências usando o modo de direcionamento {#removing-experiences-using-targeting-mode}
 
@@ -295,7 +295,7 @@ Quando você adiciona um componente ao componente de direcionamento, ele fornece
 
 Você pode adicionar um componente de direcionamento à página no modo de edição ou de direcionamento. Você pode adicionar componentes ao componente de direcionamento somente no modo de direcionamento. O componente de direcionamento pertence ao grupo de componentes de personalização.
 
-Se estiver editando o conteúdo direcionado, você deve selecionar **Iniciar o direcionamento** antes que você possa fazer isso.
+Se estiver editando o conteúdo direcionado, você deve selecionar **Iniciar o direcionamento** antes de fazer isso.
 
 1. Arraste o componente de direcionamento até a página onde deseja que a oferta apareça.
 1. Por padrão, nenhuma ID de localização está definida. Selecione o botão de configuração cog wheel para definir o local.
@@ -356,11 +356,11 @@ Não é possível adicionar ofertas de biblioteca à experiência padrão.
 
    O seletor de ofertas permite procurar ou filtrar ofertas. Ao procurar ou filtrar, você também pode classificar as ofertas e alterar a forma como as visualiza. O número no canto superior direito indica quantas ofertas estão disponíveis na biblioteca atual.
 
-   * Selecionar **Procurar** para navegar para outra pasta. O painel de navegação é aberto e você clica na seta para mostrar o detalhamento das pastas. Selecionar **Procurar** novamente para fechar o painel de navegação.
+   * Selecione **Procurar** para navegar para outra pasta. O painel de navegação é aberto e você clica na seta para mostrar o detalhamento das pastas. Selecione **Procurar** novamente para fechar o painel de navegação.
 
    ![Procurar conteúdo](../assets/targeted-select-content-browse.png)
 
-   * Selecionar **Filtro** para filtrar as ofertas por palavras-chave ou tags. Digite as palavras-chave e selecione as tags no menu suspenso. Selecionar **Filtro** novamente para fechar o painel de filtragem.
+   * Selecione **Filtro** para filtrar as ofertas com base em palavras-chave ou marcas. Digite as palavras-chave e selecione as tags no menu suspenso. Selecione **Filtro** novamente para fechar o painel de filtragem.
 
    ![Filtrar conteúdo](../assets/targeted-filter.png)
 
@@ -368,7 +368,7 @@ Não é possível adicionar ofertas de biblioteca à experiência padrão.
 
    ![Filtrar ordem de classificação](../assets/targeted-filter-sort.png)
 
-   Selecione o ícone ao lado de **Exibir como** para exibir ofertas como blocos ou como uma lista.
+   Selecione o ícone ao lado de **Exibir como** para exibir as ofertas como mosaicos ou como uma lista.
 
    ![Botão Exibir como](../assets/targeted-view-as-button.png)
 
@@ -379,7 +379,7 @@ Adicione uma oferta personalizada à [biblioteca de ofertas](/help/sites-cloud/a
 Para obter informações sobre como usar o console Ofertas para criar uma oferta reutilizável, consulte [Adicionar uma oferta a uma biblioteca de ofertas](/help/sites-cloud/authoring/personalization/offers.md#add-an-offer-to-an-offer-library).
 
 1. Selecione a experiência para exibir a oferta personalizada.
-1. Selecione a oferta personalizada para exibir o menu de ofertas e selecione a **Salvar oferta na biblioteca de ofertas** ícone.
+1. Selecione a oferta personalizada para exibir o menu de ofertas e selecione o ícone **Salvar oferta na biblioteca de ofertas**.
 
    ![Salvar oferta na biblioteca de ofertas](../assets/targeted-save-offer-library-button.png)
 
@@ -428,7 +428,7 @@ Use o procedimento a seguir para associar uma experiência a um público-alvo ao
 
 1. Selecione a seta suspensa ao lado na caixa de público-alvo que está mapeada para a experiência.
 1. (Opcional) Selecione **Editar** e digite uma palavra-chave para pesquisar pelo segmento desejado.
-1. Na lista de públicos, selecione o público e **OK**.
+1. Na lista de públicos, selecione o público e selecione **OK**.
 
 ### Se estiver usando o Teste A/B (Adobe Target) {#if-you-are-using-a-b-testing-adobe-target}
 
@@ -442,7 +442,7 @@ Se tiver uma atividade de teste A/B, os públicos-alvo estarão à esquerda, a p
 
 1. Selecione a caixa suspensa ao lado do público-alvo mapeado para a experiência.
 1. (Opcional) Clique em **Editar** e digite uma palavra-chave para pesquisar pelo segmento desejado.
-1. Selecionar **OK.**
+1. Selecione **OK.**
 1. Insira porcentagens para configurar como o tráfego de público-alvo será roteado para cada experiência. O número total precisa ser igual a 100.
 1. (Opcional) Edite o nome da experiência clicando no menu suspenso ao lado do nome da experiência.
 
@@ -577,7 +577,7 @@ Para simular a experiência do visitante, use as seguintes ferramentas:
 * A simulação da atividade no modo Direcionamento: a página exibe as ofertas para o usuário que está selecionado no Context Hub. É possível editar as ofertas direcionadas ao usuário.
 * Modo de visualização: use o Context Hub para selecionar os usuários e locais que atendem aos critérios dos segmentos nos quais suas experiências se baseiam. Quando suas seleções do Context Hub são alteradas, o conteúdo direcionado é alterado de acordo.
 
-1. Para alternar para o modo de Visualização, selecione na barra de ferramentas **Visualizar**.
+1. Para alternar para o modo de Visualização, selecione **Visualização** na barra de ferramentas.
 1. Na barra de ferramentas, selecione o ícone do Context Hub.
 
    ![Botão ContextHub](../assets/targeted-contexthub-button.png)

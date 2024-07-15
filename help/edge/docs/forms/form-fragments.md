@@ -1,5 +1,5 @@
 ---
-title: De planilhas para Forms - dominação de fragmentos de formulário para o Forms de entrega de borda
+title: De planilhas para Forms - dominação de fragmentos de formulário para o Edge Delivery Forms
 description: Crie formulários avançados mais rapidamente usando os Fragmentos de formulário
 feature: Edge Delivery Services
 hide: true
@@ -13,4 +13,4 @@ ht-degree: 0%
 
 ---
 
-# Dominar fragmentos de formulário para o serviço de entrega de borda da AEM Forms
+# Dominar fragmentos de formulário para o serviço AEM Forms Edge Delivery

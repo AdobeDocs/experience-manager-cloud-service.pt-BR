@@ -15,36 +15,36 @@ ht-degree: 30%
 
 # Programas de edição {#editing-programs}
 
-Para gerenciar e editar programas, inicie no [**Meus programas** console.](/help/implementing/cloud-manager/navigation.md) A variável **Meus programas** fornece uma visão geral de todos os programas aos quais você tem acesso. Ao selecionar um programa individual, a variável **Visão geral do programa** A página fornece detalhes do programa em uma rápida visualização.
+Para gerenciar e editar programas, inicie no console [**Meus Programas**.](/help/implementing/cloud-manager/navigation.md) A página **Meus Programas** fornece uma visão geral de todos os programas aos quais você tem acesso. Ao selecionar um programa individual, a página **Visão geral do programa** fornece detalhes sobre o programa rapidamente.
 
-No **Visão geral do programa**, os usuários com as permissões necessárias poderão editar [programas de produção criados em sua organização](creating-production-programs.md) e [programas de sandbox criados em sua organização.](creating-sandbox-programs.md) Ao editar um programa, você pode:
+Na **Visão Geral do Programa**, os usuários com as permissões necessárias podem editar [programas de produção criados em sua organização](creating-production-programs.md) e [programas de sandbox criados em sua organização.](creating-sandbox-programs.md) Ao editar um programa, você pode:
 
-* Adicionar a solução Sites a um programa existente com Assets e vice-versa.
+* Adicionar a solução Sites a um programa existente com o Assets e vice-versa.
 * Remover sites ou ativos de um programa existente usando o Sites e o Assets.
 * Adicionar um segundo direito de solução não utilizado a um programa existente ou como um novo programa.
 * Excluir programas de sandbox.
 
 ## Permissões {#permissions}
 
-Você deve ser um membro do **Proprietário da empresa** para editar ou excluir programas de sandbox, bem como para acessar o Painel de licenças.
+Você deve ser um membro da função **Proprietário da empresa** para editar ou excluir programas de sandbox, e também para acessar o Painel de Licenças.
 
 ## Edição de um programa {#editing}
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](#my-programs)** clique no programa que deseja editar para exibir seus detalhes.
+1. Na página **[Meus Programas](#my-programs)**, clique no programa que você deseja editar para exibir seus detalhes.
 
 1. Clique no nome do programa no canto superior esquerdo da página e selecione **Editar programa**.
 
    ![Opção Editar programa](assets/edit-program-overview.png)
 
-1. A variável **Editar programa** abre para a **Geral** guia.
+1. A página **Editar Programa** é aberta na guia **Geral**.
 
    ![Guia Geral](assets/edit-program-prod1.png)
 
 1. As opções disponíveis para editar o programa são as mesmas que estão na criação do programa.
-   * Consulte os documentos [Criação de programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) e [Criação de programas do sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obter detalhes sobre as opções individuais.
-   * [Opções adicionais](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) pode estar disponível para seu programa de produção, dependendo dos direitos da sua organização.
+   * Consulte os documentos [Criação de programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) e [Criação de programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obter detalhes sobre as opções individuais.
+   * [Opções adicionais](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) podem estar disponíveis para o programa de produção, dependendo dos direitos da sua organização.
 
 1. Clique em **Atualizar** para salvar as alterações no programa.
 
@@ -66,7 +66,7 @@ Para excluir um programa de sandbox, faça o seguinte.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](#my-programs)** clique no programa que deseja editar para exibir seus detalhes.
+1. Na página **[Meus Programas](#my-programs)**, clique no programa que você deseja editar para exibir seus detalhes.
 
 1. Clique no nome do programa no canto superior esquerdo da página e selecione **Excluir programa**.
 

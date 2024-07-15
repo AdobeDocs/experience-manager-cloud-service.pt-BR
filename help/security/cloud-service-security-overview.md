@@ -16,6 +16,6 @@ ht-degree: 70%
 
 ## Introdução {#introduction}
 
-A abordagem pró-ativa da AEM as a Cloud Service à segurança e os procedimentos rigorosos ajudam a proteger a segurança da solução AEM as a Cloud Service e os dados confidenciais dos clientes. A segurança da experiência digital é continuamente monitorada para se manter à frente de atividades mal-intencionadas e ajudar a garantir a segurança dos dados do cliente.
+A abordagem proativa da AEM as a Cloud Service à segurança e os procedimentos rigorosos ajudam a proteger a segurança da solução da AEM as a Cloud Service e os dados confidenciais dos clientes. A segurança da experiência digital é continuamente monitorada para se manter à frente de atividades mal-intencionadas e ajudar a garantir a segurança dos dados do cliente.
 
 Consulte o white paper [Segurança do Adobe Experience Manager Cloud Service](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-cloud-service-security-overview.pdf) para obter uma visão geral detalhada sobre a segurança do AEM as a Cloud Service.

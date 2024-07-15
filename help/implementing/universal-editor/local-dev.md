@@ -32,17 +32,17 @@ Em um quadro externo protegido com HTTPS, um quadro HTTP não seguro não pode s
 
 Para fazer isso, é necessário configurar o AEM para ser executado em HTTPS. Para fins de desenvolvimento, é possível usar o certificado autoassinado.
 
-[Consulte este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=pt-BR) sobre como configurar o AEM em HTTPS, incluindo um certificado autoassinado que você pode usar.
+[Consulte este documento](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=pt-BR) sobre como configurar o AEM em execução em HTTPS, incluindo um certificado autoassinado que você pode usar.
 
 ## Instalar o Universal Editor Service {#install-ue-service}
 
 O Universal Editor Service não é uma cópia inteira do Universal Editor, mas apenas um subconjunto de seus recursos para garantir que as chamadas do seu ambiente local do AEM não sejam roteadas pela Internet, mas de um terminal definido sob seu controle.
 
-[NodeJS versão 16](https://nodejs.org/en/download/releases) é necessário para executar uma cópia local do Universal Editor Service.
+[A versão 16](https://nodejs.org/en/download/releases) do NodeJS é necessária para executar uma cópia local do Serviço Universal Editor.
 
-O Universal Editor Service está disponível por meio da Distribuição de software. Consulte a [Documentação de Distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br) para obter detalhes sobre como acessá-lo.
+O Universal Editor Service está disponível por meio da Distribuição de software. Consulte a [documentação de Distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br) para obter detalhes sobre como acessá-la.
 
-Salve o `universal-editor-service.cjs` de Distribuição de software para o ambiente de desenvolvimento local.
+Salve o arquivo `universal-editor-service.cjs` da Distribuição de software no ambiente de desenvolvimento local.
 
 ## Criar um certificado para executar o Universal Editor Service com HTTPS {#ue-https}
 
@@ -54,13 +54,13 @@ Execute o seguinte comando.
 $ openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certificate.pem
 ```
 
-O comando gera um `key.pem` e uma `certificate.pem` arquivo. Salve esses arquivos no mesmo caminho do `universal-editor-service.cjs` arquivo.
+O comando gera um arquivo `key.pem` e `certificate.pem`. Salve esses arquivos no mesmo caminho do arquivo `universal-editor-service.cjs`.
 
 ## Definição da configuração do Serviço do Editor Universal {#setting-up-service}
 
 Várias variáveis de ambiente devem ser definidas no NodeJS para executar o Universal Editor Service localmente.
 
-No mesmo caminho que o `universal-editor-service.cjs`, `key.pem` e `certificate.pem` arquivos, crie um `.env` com o seguinte conteúdo.
+No mesmo caminho dos arquivos `universal-editor-service.cjs`, `key.pem` e `certificate.pem`, crie um arquivo `.env` com o conteúdo a seguir.
 
 ```text
 EXPRESS_PORT=8000
@@ -72,9 +72,9 @@ NODE_TLS_REJECT_UNAUTHORIZED=0
 A variável tem os seguintes significados:
 
 * `EXPRESS_PORT`: define em qual porta o Serviço do Editor Universal escuta
-* `EXPRESS_PRIVATE`: aponta para o seu [chave privada criada anteriormente,](#ue-https) `key.pem`
+* `EXPRESS_PRIVATE`: aponta para sua [chave privada criada anteriormente,](#ue-https) `key.pem`
 * `EXPRESS_CERT`: aponta para o seu [certificado criado anteriormente,](#ue-https) `certificate.pem`
-* `NODE_TLS_REJECT_UNAUTHORIZED=0`: aceita certificados autoassinados
+* `NODE_TLS_REJECT_UNAUTHORIZED=0`: Aceita certificados autoassinados
 
 ## Execução do Serviço do Editor Universal {#running-ue}
 
@@ -102,23 +102,23 @@ Para que uma página seja editada usando seu Universal Editor Service local, a s
 <meta name="urn:adobe:aue:config:service" content="https://localhost:8000">
 ```
 
-Depois de definido, você deve ver cada chamada de atualização de conteúdo ir para `https://localhost:8000` em vez do Universal Editor Service padrão.
+Depois de definido, você deve ver todas as chamadas de atualização de conteúdo indo para `https://localhost:8000` em vez do Universal Editor Service padrão.
 
 >[!NOTE]
 >
->Tentando acessar diretamente `https://localhost:8000` resulta em uma `404` erro. Esse é o comportamento esperado.
+>A tentativa de acessar diretamente `https://localhost:8000` resulta em um erro `404`. Esse é o comportamento esperado.
 >
 >Para testar o acesso ao Universal Editor Service local, use `https://localhost:8000/corslib/LATEST`. Consulte a [próxima seção](#editing) para obter detalhes.
 
 >[!TIP]
 >
->Para obter mais detalhes sobre como as páginas são instrumentadas para usar o Global Universal Editor Service, consulte o documento [Introdução ao editor universal no AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
+>Para obter mais detalhes sobre como as páginas são instrumentadas para usar o Serviço Global Universal Editor, consulte o documento [Introdução ao Universal Editor no AEM](/help/implementing/universal-editor/getting-started.md#instrument-page)
 
 ## Editar uma página com o serviço do Editor universal local {#editing}
 
-Com o [Serviço do Editor Universal em execução localmente](#running-ue) e seu [página de conteúdo instrumentada para usar o serviço local,](#using-loca-ue) agora você pode iniciar o editor.
+Com o [Serviço do Editor Universal sendo executado localmente](#running-ue) e sua [página de conteúdo instrumentada para usar o serviço local](#using-loca-ue), agora você pode iniciar o editor.
 
-1. Abra o navegador para `https://localhost:8000/corslib/LATEST`.
-1. Direcione o navegador para aceitar [seu certificado autoassinado.](#ue-https)
+1. Abra o navegador no `https://localhost:8000/corslib/LATEST`.
+1. Instrua o navegador a aceitar [o certificado autoassinado.](#ue-https)
 1. Quando o certificado autoassinado for confiável, você poderá editar a página usando o Serviço do Editor Universal local.
 

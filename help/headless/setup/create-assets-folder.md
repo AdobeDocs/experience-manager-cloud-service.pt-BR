@@ -27,8 +27,8 @@ As pastas de ativos são usadas para [organizar ativos de conteúdo tradicionais
 
 Um administrador só precisaria criar pastas ocasionalmente para organizar o conteúdo, conforme ele fosse criado. Para os propósitos deste guia de introdução, precisamos criar apenas uma pasta.
 
-1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Navegação > Ativos > Arquivos**.
-1. Selecionar **Criar > Pasta**.
+1. Faça logon no AEM as a Cloud Service e, no menu principal, selecione **Navegação > Assets > Arquivos**.
+1. Selecione **Criar > Pasta**.
 1. Forneça um **Título** e um **Nome** para sua pasta.
    * O **Título** deve ser descritivo.
    * O **Nome** se tornará o nome do nó no repositório.
@@ -40,8 +40,8 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
 1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
 1. Para a **Configuração na nuvem**, selecione a [configuração criada anteriormente.](create-configuration.md)
    ![Configurar pasta de ativos](../assets/assets-folder-configure.png)
-1. Selecionar **Salvar e fechar**.
-1. Selecionar **OK** na janela de confirmação.
+1. Selecione **Salvar e fechar**.
+1. Selecione **OK** na janela de confirmação.
 
    ![Janela de confirmação](../assets/assets-folder-confirmation.png)
 

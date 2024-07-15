@@ -50,7 +50,7 @@ Clique nas reticências (...) no bloco de Tarefas para exibir a lista das tarefa
 
 #### Detalhes da tarefa {#task-details}
 
-Para obter mais informações sobre uma tarefa específica, na Lista de Tarefas, selecione a tarefa e **Abertura**.
+Para obter mais informações sobre uma tarefa específica, na Lista de Tarefas, selecione a tarefa e **Abrir**.
 
 ![Detalhes da tarefa](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
@@ -66,7 +66,7 @@ Em Detalhes da tarefa, é possível editar ou adicionar comentários. Além diss
 
 Para adicionar uma tarefa:
 
-1. No projeto, no **Tarefas** selecione o ícone +. A janela **Adicionar tarefa** é aberta.
+1. No projeto, no bloco **Tarefas**, selecione o ícone +. A janela **Adicionar tarefa** é aberta.
 1. Insira informações sobre a tarefa. O título da tarefa e o grupo ao qual está atribuída são obrigatórios. Informações adicionais como caminho de conteúdo, descrição, prioridade da tarefa e prazo são opcionais. Além disso, você pode selecionar a guia **Avançado** para inserir o nome da tarefa, que é usado para nomear o URL.
 
    ![Adicionar uma tarefa](/help/sites-cloud/authoring/assets/projects-add-task.png)

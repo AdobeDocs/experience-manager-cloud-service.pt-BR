@@ -23,8 +23,8 @@ A visualização Assets permite a edição básica de imagens, incluindo redimen
 
 ## Editar imagem {#edit-image}
 
-Acessar a Exibição do Assets, usando o link - [Visualização do Assets](https://experience.adobe.com/#/assets) e selecionando o repositório correto. Para receber acesso, entre em contato com a administração da organização.
-Para obter informações de referência adicionais, consulte - [Introdução ao uso do Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Entender a interface de exibição do Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation), e [Casos de uso do Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
+Acesse a Exibição do Assets, usando o link - [Exibição do Assets](https://experience.adobe.com/#/assets) e selecionando o repositório correto. Para receber acesso, entre em contato com a administração da organização.
+Para obter informações de referência adicionais, consulte - [Introdução ao Adobe Experience Manager Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view), [Entenda a interface de usuário do Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/navigate-assets-view#understand-interface-navigation) e [Casos de uso do Assets View](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/get-started-assets-view#use-cases).
 <!--
 >[!CONTEXTUALHELP]
 >id="assets_express_integration"
@@ -33,7 +33,7 @@ Para obter informações de referência adicionais, consulte - [Introdução ao 
 
 ### Editar imagem na visualização Assets usando o Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
-Depois de acessar a Exibição do Assets, clique em **Assets**, selecione uma imagem e clique em **Editar** do painel superior. A nova tela exibe as opções de edição disponíveis, incluindo redimensionar, remover o fundo, cortar e converter entre formatos JPEG e PNG.
+Depois de entrar no Modo de Exibição do Assets, clique em **Assets**, selecione uma imagem e clique em **Editar** no painel superior. A nova tela exibe as opções de edição disponíveis, incluindo redimensionar, remover o fundo, cortar e converter entre formatos JPEG e PNG.
 
 #### Redimensionar imagem {#resize-image-using-express}
 
@@ -86,9 +86,9 @@ A imagem cortada estará disponível para download. É possível salvar o ativo 
 
 Os usuários com direito ao Express podem usar o editor Express incorporado na Exibição do Assets para editar conteúdo facilmente e criar novo conteúdo com GenAI do Adobe Firefly. Isso melhora a reutilização do conteúdo e acelera a sua velocidade. Você também pode usar elementos predefinidos para que seu ativo tenha uma aparência incrível ou para executar ações de edição rápidas na imagem com apenas alguns cliques.
 ![express na interface do usuário do essentials](/help/assets/assets/express-in-essentials-ui.jpg)
-Para editar imagens usando [!DNL Adobe Express] editor incorporado, siga as etapas abaixo:
+Para editar imagens usando o editor inserido do [!DNL Adobe Express], siga as etapas abaixo:
 
-1. Acesse a Exibição do AEM Assets usando o link - [Visualização do AEM Assets](https://experience.adobe.com/#/assets) e selecione o repositório correto.
+1. Acesse a Exibição do AEM Assets usando o link - [Exibição do AEM Assets](https://experience.adobe.com/#/assets) e selecione o repositório correto.
 1. Clique em **Ativos**, escolha uma pasta e selecione uma imagem.
 1. Clique em **Abrir no Adobe Express**. A imagem abre em uma tela do Express.
 1. Faça as edições necessárias na imagem.
@@ -124,7 +124,7 @@ Para editar imagens usando [!DNL Adobe Express] editor incorporado, siga as etap
 
 O [!DNL Assets view] permite criar um novo modelo do zero usando o editor integrado do [!DNL Adobe Express]. Para criar um novo ativo usando o [!DNL Adobe Express], execute as etapas a seguir:
 
-1. Navegue até **[!UICONTROL Meu Workspace]** e clique em **[!UICONTROL Criar]** no banner Adobe Express que é exibido na parte superior. A tela em branco do [!DNL Adobe Express] é exibida dentro da interface do [!DNL Assets view].
+1. Navegue até **[!UICONTROL Minha Workspace]** e clique em **[!UICONTROL Criar]** dentro do banner Adobe Express que é exibido na parte superior. A tela em branco do [!DNL Adobe Express] é exibida dentro da interface do [!DNL Assets view].
 1. Crie o conteúdo usando [modelos](https://helpx.adobe.com/br/express/using/work-with-templates.html). Caso contrário, navegue até **[!UICONTROL Seus itens]** para modificar o conteúdo existente.
 1. Após concluir a edição, clique em **[!UICONTROL Salvar]**.
 1. Especifique o caminho de destino para o ativo criado e clique em **[!UICONTROL Salvar como novo ativo]**.
@@ -195,7 +195,7 @@ TBD: Insert a video of the available social media options.
 
 ### Próximas etapas {#next-steps}
 
-* Forneça feedback sobre o produto usando o [!UICONTROL Feedback] opção disponível na interface de usuário de visualização do Assets.
+* Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface do usuário do Assets view.
 
 * Forneça feedback sobre a documentação por meio das opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita.
 

@@ -1,6 +1,6 @@
 ---
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.5.0
-description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.5.0."
+description: "[!DNL Adobe Experience Manager] Notas de Versão as a Cloud Service para 2020.5.0."
 exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
 feature: Release Information
 role: Admin
@@ -11,7 +11,7 @@ ht-degree: 92%
 
 ---
 
-# Notas de versão para AEM 2020.5.0 as a Cloud Service {#release-notes}
+# Notas de versão do AEM as a Cloud Service 2020.5.0 {#release-notes}
 
 Esta página descreve as Notas de versão gerais do Experience Manager as a Cloud Service 2020.5.0.
 

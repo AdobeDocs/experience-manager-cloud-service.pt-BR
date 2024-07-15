@@ -1,5 +1,5 @@
 ---
-title: Detectar ativos duplicados para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Detectar ativos duplicados de  [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Saiba como detectar ativos duplicados
 contentOwner: KK
 mini-toc-levels: 3
@@ -21,30 +21,30 @@ ht-degree: 7%
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
-Se um usuário do DAM carregar um ou mais ativos que já existem no repositório, [!DNL Experience Manager] O detecta a duplicação e notifica o usuário. A detecção de duplicatas está desativada por padrão, pois pode ter impacto no desempenho, dependendo do tamanho do repositório e do número de ativos carregados.
+Se um usuário do DAM carregar um ou mais ativos que já existem no repositório, [!DNL Experience Manager] detectará a duplicação e notificará o usuário. A detecção de duplicatas está desativada por padrão, pois pode ter impacto no desempenho, dependendo do tamanho do repositório e do número de ativos carregados.
 
 Para ativar o recurso:
 
-1. Navegue até **[!UICONTROL Ferramentas > Ativos > Configurações de ativos]**.
+1. Navegue até **[!UICONTROL Ferramentas > Assets > Configurações do Assets]**.
 
-1. Clique em **[!UICONTROL Detector de duplicação de ativo]**.
+1. Clique em **[!UICONTROL Detector de duplicação de ativos]**.
 
-1. No [!UICONTROL Página do Detector de duplicação de ativos], clique em **[!UICONTROL Ativado]**.
+1. Na página [!UICONTROL Detector de duplicação de ativos], clique em **[!UICONTROL Habilitado]**.
 
-   `dam:sha1` O valor do campo Detectar metadados garante que ativos duplicados sejam detectados mesmo se os nomes de arquivo forem diferentes.
+   O valor `dam:sha1` do campo Detectar metadados garante que os ativos duplicados sejam detectados mesmo que os nomes de arquivo sejam diferentes.
 
 1. Clique em **[!UICONTROL Salvar]**.
 
-   ![Detector de duplicação de ativo](assets/asset-duplication-detector.png)
+   ![Detector de duplicação de ativos](assets/asset-duplication-detector.png)
 
 >[!NOTE]
 >
->Se você configurou o Detector de duplicação usando `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` arquivo de configuração (configuração OSGi), você pode continuar a usá-lo, no entanto, o Adobe recomenda o uso do novo método.
+>Se você tiver configurado o Detector de Duplicação usando o arquivo de configuração `/apps/example/config.author/com.adobe.cq.assetcompute.impl.assetprocessor.AssetDuplicationDetector.cfg.json` (configuração OSGi), poderá continuar a usá-lo. No entanto, o Adobe recomenda o uso do novo método.
 
 
 Depois de ativado, o Experience Manager envia notificações de ativos duplicados para a Caixa de entrada do Experience Manager. É um resultado agregado para várias duplicatas. Os usuários podem optar por remover os ativos com base nos resultados.
 
-![Notificação da caixa de entrada para ativos duplicados](assets/duplicate-detect-inbox-notification.png)
+![Notificação da Caixa de entrada para ativos duplicados](assets/duplicate-detect-inbox-notification.png)
 
 >[!NOTE]
 >

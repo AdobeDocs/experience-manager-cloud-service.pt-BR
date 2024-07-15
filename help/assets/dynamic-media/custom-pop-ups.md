@@ -38,15 +38,15 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     </tr>
     <tr>
     <td>Imagens interativas</td>
-    <td><a href="/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">Adicionar pontos de acesso a um banner de imagem</a>.</td>
+    <td><a href="/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner" target="_blank">Adicionando hotspots a um banner de imagem</a>.</td>
     </tr>
     <tr>
     <td>Vídeos interativos</td>
-    <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Adicionar interatividade ao vídeo</a>.</td>
+    <td><a href="/help/assets/dynamic-media/interactive-videos.md#adding-interactivity-to-your-video" target="_blank">Adicionando interatividade ao seu vídeo</a>.</td>
     </tr>
     <tr>
     <td>Banners em carrossel</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Adicionar pontos de acesso ou mapas de imagem a um banner</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner" target="_blank">Adicionando pontos de acesso ou mapas de imagem a um banner</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -61,15 +61,15 @@ Embora a funcionalidade de cada visualizador seja diferente, o processo de cria�
     </tr>
     <tr>
     <td>Imagem interativa</td>
-    <td><a href="/help/assets/dynamic-media/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">Integração de uma imagem interativa ao seu site</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/interactive-images.md#integrating-an-interactive-image-with-your-website" target="_blank">Integrando uma imagem interativa com seu site</a>.<br /> </td>
     </tr>
     <tr>
     <td>Vídeo interativo<br /> </td>
-    <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Integração de um vídeo interativo ao seu site</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/interactive-videos.md#integrating-an-interactive-video-with-your-website" target="_blank">Integrando um vídeo interativo ao seu site</a>.<br /> </td>
     </tr>
     <tr>
     <td>Banner do carrossel</td>
-    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adicionar um banner de carrossel à página do site</a>.<br /> </td>
+    <td><a href="/help/assets/dynamic-media/carousel-banners.md#adding-a-carousel-banner-to-your-website-page" target="_blank">Adicionando um banner de carrossel à página do seu site</a>.<br /> </td>
     </tr>
     </tbody>
    </table>
@@ -100,14 +100,14 @@ Suponha que você estava usando o seguinte exemplo de código incorporado na pá
    })
    ```
 
-   Saiba mais sobre `setHandlers()` no seguinte endereço:
+   Saiba mais sobre o método `setHandlers()` em:
 
-   * Visualizador de imagem interativo - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
-   * Visualizador de vídeo interativo - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
+   * Visualizador de imagens interativo - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
+   * Visualizador de Vídeo Interativo - [sethandlers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. Agora, configure o `quickViewActivate` manipulador.
+1. Agora configure o manipulador `quickViewActivate`.
 
-   A variável `quickViewActivate` O manipulador controla o Quickview no visualizador. O manipulador contém a lista de variáveis e chamadas de função para uso com o Quickview. O código incorporado fornece o mapeamento para a variável SKU definida na visualização rápida. Também cria uma amostra `loadQuickView` função.
+   O manipulador `quickViewActivate` controla o Quickview no visualizador. O manipulador contém a lista de variáveis e chamadas de função para uso com o Quickview. O código incorporado fornece o mapeamento para a variável SKU definida na visualização rápida. Também faz uma chamada de função de exemplo `loadQuickView`.
 
    **Mapeamento de variáveis**
 Mapeie as variáveis a serem usadas na página da Web para o valor SKU e as variáveis genéricas contidas na exibição rápida:
@@ -130,22 +130,22 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
 
    `loadQuickView(sku)`
 
-   A chamada de função de amostra assume a função `loadQuickView()` existe e está acessível.
+   A chamada de função de exemplo presume que a função `loadQuickView()` existe e está acessível.
 
-   Saiba mais sobre `quickViewActivate` no seguinte endereço:
+   Saiba mais sobre o método `quickViewActivate` em:
 
-   * Visualizador de imagem interativo - [Retornos de chamada de evento](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
-   * Visualizador de vídeo interativo - [Retornos de chamada de evento](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
-   * Suporte a dados interativos no visualizador de vídeo interativo - [Suporte a dados interativos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
+   * Visualizador de imagens interativo - [Retornos de chamada de evento](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html)
+   * Visualizador de Vídeo Interativo - [Retornos de chamada de evento](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
+   * Suporte a dados interativos no visualizador de Vídeo Interativo - [Suporte a dados interativos](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
 1. Faça o seguinte:
 
    * Remova o comentário da seção setHandlers do código incorporado.
    * Mapeie quaisquer variáveis adicionais contidas na Quickview.
 
-      * Atualize o `loadQuickView(sku,*var1*,*var2*)` chame se você adicionar mais variáveis.
+      * Atualize a chamada `loadQuickView(sku,*var1*,*var2*)` se você adicionar mais variáveis.
 
-   * Criar uma `loadQuickView` () na página, fora do visualizador.
+   * Crie uma função simples `loadQuickView` () na página, fora do visualizador.
 
      Por exemplo, o código a seguir grava o valor do SKU no console do navegador:
 
@@ -160,7 +160,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
      As variáveis do Quickview são mapeadas. A chamada de função está em vigor. E o console do navegador grava o valor da variável no console do navegador. Ele faz isso usando a função de amostra fornecida.
 
 1. Agora você pode usar uma função para chamar um pop-up simples no Quickview. O exemplo a seguir usa um `DIV` para um pop-up.
-1. Estilo do pop-up `DIV` da seguinte forma. Adicione um estilo extra, conforme desejado.
+1. Estilize o pop-up `DIV` da seguinte maneira. Adicione um estilo extra, conforme desejado.
 
    ```xml {.line-numbers}
    <style type="text/css">
@@ -172,7 +172,7 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
    </style>
    ```
 
-1. Inserir o pop-up `DIV` no corpo da página do HTML.
+1. Coloque o pop-up `DIV` no corpo da página de HTML.
 
    Um dos elementos é definido com uma ID que é atualizada com o valor da SKU quando o usuário chama uma Quickview. O exemplo também inclui um botão simples para ocultar o pop-up novamente depois que ele se tornar visível.
 
@@ -203,15 +203,15 @@ O manipulador também requer uma chamada de função para que o Quickview funcio
 
    Para que a janela pop-up seja exibida nos modos padrão e de tela cheia, anexe a janela pop-up ao contêiner do visualizador. Nesse caso, use um segundo método de manipulador, `initComplete`.
 
-   A variável `initComplete` é chamado depois que o visualizador é inicializado.
+   O manipulador `initComplete` é chamado depois que o visualizador é inicializado.
 
    ```xml {.line-numbers}
    "initComplete":function() { code block }
    ```
 
-   Saiba mais sobre `init()` no seguinte endereço:
+   Saiba mais sobre o método `init()` em:
 
-   * Visualizador de imagem interativo - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
+   * Visualizador de imagens interativo - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html)
    * Visualizador de vídeo interativo - [init](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html)
 
 1. Para anexar o pop-up, descrito nas etapas anteriores, ao visualizador, use o seguinte código:

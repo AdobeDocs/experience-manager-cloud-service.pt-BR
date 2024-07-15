@@ -22,7 +22,7 @@ Use o menu **Exibir e atualizar** para exibir os detalhes de qualquer um dos nom
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 
@@ -48,7 +48,7 @@ Um usuário com a função de **Proprietário da empresa** ou **Gerente de impla
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. Navegue até a **Configurações do domínio** página do **Visão geral** tela.
+1. Navegue até a página **Configurações de Domínio** a partir da tela **Visão Geral**.
 
 1. Identifique a linha do nome de domínio personalizado que deseja excluir.
 

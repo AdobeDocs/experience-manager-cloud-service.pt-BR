@@ -13,7 +13,7 @@ ht-degree: 66%
 
 O console Componentes permite navegar em todos os componentes definidos para a instância e exibir as principais informações de cada componente.
 
-Ele pode ser acessado de **Ferramentas >** **Geral >** **Componentes**. Como não há uma estrutura de árvore para componentes, somente a visualização de lista está disponível.
+Ele pode ser acessado em **Ferramentas >** **Geral >** **Componentes**. Como não há uma estrutura de árvore para componentes, somente a visualização de lista está disponível.
 
 ![O console Componentes](/help/sites-cloud/authoring/assets/components-console.png)
 
@@ -40,7 +40,7 @@ Para exibir detalhes sobre um componente específico, selecione o recurso deseja
    * Veja as propriedades gerais do componente.
       * Visualizar como o ícone ou a abreviação foi definida para o componente. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
       * Clicar na origem do ícone levará você ao componente.
-   * Exibir o **Tipo de recurso** e **Supertipo do recurso** (se definido) para o componente.
+   * Exiba o **Tipo de Recurso** e o **Supertipo de Recurso** (se definido) do componente.
       * Clicar no Supertipo de recurso levará você a esse componente.
 
   >[!NOTE]

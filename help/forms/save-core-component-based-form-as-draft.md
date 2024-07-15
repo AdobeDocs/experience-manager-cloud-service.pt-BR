@@ -14,20 +14,20 @@ ht-degree: 1%
 
 # Salvar o formulário adaptável baseado no componente principal como um rascunho {#save-af-form}
 
-Salvar o formulário adaptável como um rascunho é um recurso essencial que melhora a eficiência e a precisão do usuário. Essa funcionalidade permite que os usuários salvem o progresso e retornem para concluir as tarefas posteriormente sem perder nenhuma informação inserida. Fornecer uma  `save-as-draft` A opção garante flexibilidade no gerenciamento de tempo, reduz o risco de perda de dados e mantém a precisão dos envios. Você pode salvar formulários como rascunhos para preenchê-los posteriormente.
+Salvar o formulário adaptável como um rascunho é um recurso essencial que melhora a eficiência e a precisão do usuário. Essa funcionalidade permite que os usuários salvem o progresso e retornem para concluir as tarefas posteriormente sem perder nenhuma informação inserida. Fornecer uma opção `save-as-draft` garante flexibilidade no gerenciamento de tempo, reduz o risco de perda de dados e mantém a precisão dos envios. Você pode salvar formulários como rascunhos para preenchê-los posteriormente.
 
 ## Considerações
 
 * [Ativar os componentes principais adaptáveis do Forms para o seu ambiente.](/help/forms/enable-adaptive-forms-core-components.md)
 
-* Certifique-se de que o [o componente principal está definido para a versão 3.0.24 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar este recurso.
-* Certifique-se de que você tenha um [Conta de armazenamento do Azure e uma chave de acesso](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) para autorizar o acesso à conta de armazenamento do Azure.
+* Verifique se o componente principal [está definido como versão 3.0.24 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar este recurso.
+* Verifique se você tem uma [conta de armazenamento do Azure e uma chave de acesso](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal) para autorizar o acesso à conta de armazenamento do Azure.
 
 ## Salvar um formulário adaptável como rascunho
 
-[!DNL Experience Manager Forms] A Integração de dados (data-integration.md) oferece [!DNL Azure] configuração de armazenamento para integrar formulários com o [!DNL Azure] serviços de armazenamento. O Modelo de dados de formulário (FDM) pode ser usado para criar o Forms adaptável que interage com o [!DNL Azure] servidor para habilitar workflows de negócios.
+A Integração de Dados do [!DNL Experience Manager Forms] (data-integration.md) fornece a configuração de armazenamento do [!DNL Azure] para integrar formulários com serviços de armazenamento do [!DNL Azure]. O Modelo de Dados de Formulário (FDM) pode ser usado para criar o Forms Adaptável que interage com o servidor [!DNL Azure] para habilitar fluxos de trabalho de negócios.
 
-Para salvar o formulário como rascunho, verifique se você tem uma conta de armazenamento do Azure e uma chave de acesso para autorizar o acesso ao [!DNL Azure] conta de armazenamento. Para salvar um formulário como rascunho, execute as seguintes etapas:
+Para salvar o formulário como rascunho, verifique se você tem uma conta de armazenamento do Azure e uma chave de acesso para autorizar o acesso à conta de armazenamento [!DNL Azure]. Para salvar um formulário como rascunho, execute as seguintes etapas:
 
 1. [Criar configuração de armazenamento do Azure](#create-azure-storage-configuration)
 1. [Configurar o Conector de armazenamento unificado para o Forms Portal](#configure-usc-forms-portal)
@@ -36,64 +36,64 @@ Para salvar o formulário como rascunho, verifique se você tem uma conta de arm
 
 ### 1. Criar configuração de armazenamento do Azure {#create-azure-storage-configuration}
 
-Uma vez, você tem uma conta de armazenamento do Azure e uma chave de acesso para autorizar o acesso ao [!DNL Azure] conta de armazenamento, execute as seguintes etapas para criar a configuração de Armazenamento do Azure:
+Depois de ter uma conta de armazenamento do Azure e uma chave de acesso para autorizar o acesso à conta de armazenamento [!DNL Azure], execute as seguintes etapas para criar a configuração de Armazenamento do Azure:
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Armazenamento do Azure]**.
 
-   ![Seleção do Cartão de Armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
+   ![Seleção de Cartão de Armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Selecione uma pasta de configuração para criar a configuração e selecione **[!UICONTROL Criar]**.
 
    ![Selecionar pasta de configuração de armazenamento do Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
-1. Especifique um título para a configuração no campo **[!UICONTROL Título]** campo.
-1. Especifique o nome do [!DNL Azure] conta de armazenamento na **[!UICONTROL Conta de armazenamento do Azure]** e **[!UICONTROL Chave de Acesso do Azure]** campos.
+1. Especifique um título para a configuração no campo **[!UICONTROL Título]**.
+1. Especifique o nome da conta de armazenamento [!DNL Azure] nos campos **[!UICONTROL Conta de Armazenamento do Azure]** e **[!UICONTROL Chave de Acesso do Azure]**.
 
-   ![Configuração de armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
+   ![Configuração de Armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
 1. Clique em **Salvar**.
 
 >[!NOTE]
 >
-> Você pode recuperar a variável **[!UICONTROL Conta de armazenamento do Azure]** e **[!UICONTROL Chave de Acesso do Azure]** do [Portal do Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
+> Você pode recuperar a **[!UICONTROL Conta de Armazenamento do Azure]** e a **[!UICONTROL Chave de Acesso do Azure]** no [Portal do Microsoft Azure](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal).
 
 
 ### 2. Configurar o Conector de armazenamento unificado para o Forms Portal {#configure-usc-forms-portal}
 
 Depois de criar com êxito a Configuração de Armazenamento do Azure, configure o Conector de Armazenamento Unificado para o Forms Portal, usando as seguintes etapas:
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Conector de armazenamento unificado]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Conector de Armazenamento Unificado]**.
 
    ![Armazenamento de conector unificado](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
-1. No **[!UICONTROL Portal Forms]** , selecione **[!UICONTROL Azure]** do **[!UICONTROL Armazenamento]** lista suspensa.
-1. Especifique a [caminho de configuração para a configuração de armazenamento do Azure](#create-azure-storage-configuration) no **[!UICONTROL Caminho de configuração de armazenamento]** campo.
+1. Na seção **[!UICONTROL Portal do Forms]**, selecione **[!UICONTROL Azure]** na lista suspensa **[!UICONTROL Armazenamento]**.
+1. Especifique o [caminho de configuração para a configuração de armazenamento do Azure](#create-azure-storage-configuration) no campo **[!UICONTROL Caminho de Configuração de Armazenamento]**.
 
-   ![Configuração de armazenamento de conector unificado](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
+   ![Configuração de armazenamento do conector unificado](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
-1. Selecionar **[!UICONTROL Salvar]** e selecione **[!UICONTROL Publish]** para publicar a configuração.
+1. Selecione **[!UICONTROL Salvar]** e **[!UICONTROL Publish]** para publicar a configuração.
 
 ### 3. Criar regras para salvar um Formulário adaptável como rascunho {#rule-to-save-adaptive-form-as-draft}
 
-Para salvar um formulário como Rascunho, crie um **Salvar formulário** regra em um componente de formulário, como um botão. Quando o botão é clicado, a regra é acionada e o formulário é salvo como rascunho. Execute as seguintes etapas para criar **Salvar formulário** regra em um componente de botão:
+Para salvar um formulário como Rascunho, crie uma regra **Salvar Formulário** em um componente de formulário, como um botão. Quando o botão é clicado, a regra é acionada e o formulário é salvo como rascunho. Execute as seguintes etapas para criar a regra **Salvar formulário** em um componente de botão:
 
 1. Na instância do Autor, abra um Formulário adaptável em um modo de edição.
-1. No painel esquerdo, selecione ![Ícone Componentes](assets/components_icon.png) e arraste o **[!UICONTROL Botão]** componente ao formulário.
-1. Selecione o **[!UICONTROL Botão]** e selecione o ![Ícone Configurar](assets/configure_icon.png).
-1. Selecione o **[!UICONTROL Editar regras]** ícone para abrir o Editor de regras.
-1. Selecionar **[!UICONTROL Criar]** para configurar e criar a regra.
-1. No **[!UICONTROL Quando]** , selecione **foi clicado** e no **[!UICONTROL Depois]** , selecione a **Salvar formulário** opção.
-1. Selecionar **[!UICONTROL Concluído]** para salvar a regra.
+1. No painel esquerdo, selecione ![ícone Componentes](assets/components_icon.png) e arraste o componente **[!UICONTROL Botão]** para o formulário.
+1. Selecione o componente **[!UICONTROL Botão]** e selecione o ![ícone Configurar](assets/configure_icon.png).
+1. Selecione o ícone **[!UICONTROL Editar Regras]** para abrir o Editor de Regras.
+1. Selecione **[!UICONTROL Criar]** para configurar e criar a regra.
+1. Na seção **[!UICONTROL Quando]**, selecione **está clicado** e na seção **[!UICONTROL Depois]**, selecione a opção **Salvar Formulário**.
+1. Selecione **[!UICONTROL Concluído]** para salvar a regra.
 
 ![Criar regra para o botão](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
-Ao visualizar um Formulário adaptável, preencha-o e clique em **Salvar formulário** for salvo como rascunho para uso posterior.
+Ao visualizar um formulário adaptável, preencha-o e clique no botão **Salvar formulário**, ele será salvo como rascunho para uso posterior.
 
 ## Componente Rascunhos e envios para listar rascunhos na página do AEM Sites
 
-A AEM Forms fornece a **Rascunhos e envios** componente de portal pronto para uso para exibir formulários salvos em páginas do AEM Sites. A variável **Rascunhos e envios** O componente mostra formulários salvos como rascunhos para conclusão posterior, bem como formulários enviados. Este componente oferece uma experiência personalizada para qualquer usuário conectado, listando os rascunhos e envios relacionados ao Forms adaptável criado pelo usuário.
+A AEM Forms fornece o componente de portal **Rascunhos e envios** pronto para uso para exibir formulários salvos em páginas do AEM Sites. O componente **Rascunhos e Envios** mostra formulários que são salvos como rascunhos para conclusão posterior, bem como formulários enviados. Este componente oferece uma experiência personalizada para qualquer usuário conectado, listando os rascunhos e envios relacionados ao Forms adaptável criado pelo usuário.
 
-Você pode usar componentes prontos para uso do Forms Portal para listar rascunhos de formulário na página do AEM Sites. Execute as seguintes etapas para usar o **Rascunhos e envios** componente do portal:
+Você pode usar componentes prontos para uso do Forms Portal para listar rascunhos de formulário na página do AEM Sites. Execute as seguintes etapas para usar o componente de portal **Rascunhos e Envios**:
 
 1. [Ativar Componente de Rascunhos e Envios do Forms Portal](#enable-component)
 2. [Adicionar componente de Rascunhos e Envios na página do AEM Sites](#Add-drafts-submissions-component)
@@ -101,15 +101,15 @@ Você pode usar componentes prontos para uso do Forms Portal para listar rascunh
 
 ### 1. Ativar rascunhos e envios para o Forms Portal Component{#enable-component}
 
-Para ativar o **[!UICONTROL Rascunhos e envios]** componente na política de modelo, execute as seguintes etapas:
+Para habilitar o componente **[!UICONTROL Rascunhos e Envios]** na política de modelo, execute as seguintes etapas:
 
-1. Abra a página do AEM Sites em um **Editar** modo.
-1. Vá para a **[!UICONTROL Informações da página]** > **[!UICONTROL Editar modelo]**
+1. Abra a página do AEM Sites no modo **Editar**.
+1. Vá para as **[!UICONTROL Informações da Página]** > **[!UICONTROL Editar Modelo]**
    ![Editar política de modelo](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. Clique em **[!UICONTROL Política]** e selecione o **[!UICONTROL Rascunhos e envios]**  na caixa de seleção **[Nome do projeto do arquétipo AEM] - Forms e Portal de comunicações**.
+1. Clique na **[!UICONTROL Política]** e marque a caixa de seleção **[!UICONTROL Rascunhos e Envios]** sob o **[Nome do Projeto do Arquétipo AEM] - Forms e Portal de Comunicações**.
 
-   ![Seleção de política](/help/forms/assets/save-form-as-draft-enable-policy.png)
+   ![Seleção de Política](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Clique em **[!UICONTROL Concluído]**.
 
@@ -117,32 +117,32 @@ Depois que um componente de portal é ativado, você pode usá-lo na instância 
 
 ### 2. Adicionar componente Rascunhos e Envios na página do AEM Sites{#Add-drafts-submissions-component}
 
-Você pode criar e personalizar o Forms Portal em sites criados usando AEM adicionando e configurando os componentes do portal. Certifique-se de que o [O componente Rascunhos e Envios está ativado](#enable-component) antes de usá-los na página do AEM Sites.
+Você pode criar e personalizar o Forms Portal em sites criados usando AEM adicionando e configurando os componentes do portal. Verifique se o [Componente Rascunhos e Envios está habilitado](#enable-component) antes de usá-los na página do AEM Sites.
 
-Para adicionar um componente, arraste e solte o componente da **Rascunhos e envios** painel de componentes ao contêiner de layout na página ou selecione o ícone adicionar no contêiner de layout e adicione o componente na **[!UICONTROL Inserir novo componente]** diálogo.
+Para adicionar um componente, arraste e solte o componente do painel de componentes **Rascunhos e Envios** no contêiner de layout da página ou selecione o ícone adicionar no contêiner de layout e adicione o componente da caixa de diálogo **[!UICONTROL Inserir novo componente]**.
 
-![Adicionar Componente de Rascunho e Submissão](/help/forms/assets/save-form-as-draft-add-dns.png)
+![Adicionar rascunho e componente de envio](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 ### 3. Configurar o componente Rascunhos e Envios {#configure-drafts-submissions-component}
 
-A variável **Rascunhos e envios** O componente exibe os formulários salvos como rascunho para preencher formulários e enviados posteriormente. Para configurar **Rascunhos e envios**, execute as seguintes etapas:
-1. Selecione o **Rascunhos e envios** componente.
-1. Clique em ![Ícone Configurar](assets/configure_icon.png) e a caixa de diálogo é exibida.
-1. No **[!UICONTROL Rascunhos e envios]** especifique o seguinte:
-   * **Título** Para identificar um componente em uma página de Sites e, por padrão, o título é exibido na parte superior do componente.
-   * **Tipo**: Para indicar a listagem do form como forms preliminares ou submetidos.
-   * **Layout**: para exibir a lista de formulários de rascunho ou formulários enviados no formato de cartão ou lista.
+O componente **Rascunhos e Envios** exibe formulários que são salvos como rascunho para conclusão posterior e formulários enviados. Para configurar **Rascunhos e Envios**, execute as seguintes etapas:
+1. Selecione o componente de **Rascunhos e Envios**.
+1. Clique no ![ícone Configurar](assets/configure_icon.png) e a caixa de diálogo será exibida.
+1. Na caixa de diálogo **[!UICONTROL Rascunhos e Envios]**, especifique o seguinte:
+   * **Título** Para identificar um componente em uma página do Sites e, por padrão, o título aparece na parte superior do componente.
+   * **Tipo**: para indicar a listagem de formulários como rascunho ou formulários enviados.
+   * **Layout**: para exibir formulários de rascunho de lista ou formulários enviados no formato de cartão ou lista.
 
-   ![Propriedades do componente de Rascunho e Submissão](/help/forms/assets/save-form-as-draft-dns-properties.png)
+   ![Propriedades dos componentes de Rascunho e Envio](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 1. Clique em **Concluído**.
 
-Quando **[!UICONTROL Selecionar tipo]** está selecionado como **Forms de rascunho**, os formulários salvos como rascunhos serão exibidos:
+Quando **[!UICONTROL Selecionar tipo]** é selecionado como **Rascunho do Forms**, os formulários salvos como rascunhos são exibidos:
 ![Ícone Rascunhos](assets/drafts-component.png)
 
-Quando **[!UICONTROL Selecionar tipo]** está selecionado como **Forms enviado**, os formulários enviados aparecem:
+Quando **[!UICONTROL Selecionar Tipo]** é selecionado como **Forms Enviada**, os formulários enviados são exibidos:
 
-![Ícone Envios](assets/submission-listing.png)
+![Ícone de envios](assets/submission-listing.png)
 
 Você pode abrir o formulário clicando no respectivo formulário.
 

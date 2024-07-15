@@ -11,7 +11,7 @@ ht-degree: 7%
 
 # Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2024.01.0 {#release-notes}
 
-Esta página descreve as notas de versão das ferramentas de migração no AEM as a Cloud Service 2024.01.0.
+Esta página descreve as Notas de versão das Ferramentas de migração no AEM as a Cloud Service 2024.01.0.
 
 ## Ferramenta Transferência de conteúdo {#ctt-release}
 

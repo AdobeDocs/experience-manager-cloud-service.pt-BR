@@ -8,8 +8,8 @@ discoiquuid: 71d1aa10-d191-49bc-a50f-1098324f1cfe
 docset: aem65
 source-git-commit: 57e421a865b664c0adb7af93b33bd4b6b32049ab
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -30,8 +30,8 @@ Para associar um grupo de revisores a um formulário, edite o esquema de metadad
 
 Para editar o esquema de metadados:
 
-1. No modo de autor, em Experience Manager, clique em **Ferramentas** > **Assets** > **Esquemas de metadados**.
-1. Na página Schema Forms, navegue até **Forms** > **Forms Criado no AEM.**
+1. No modo de autor, em Experience Manager, clique em **Ferramentas** > **Assets** > **Esquemas de Metadados**.
+1. Na página Forms de Esquema, navegue até **Forms** > **Forms AEM Criado no.**
 
    O URL da página é:
 
@@ -40,12 +40,12 @@ Para editar o esquema de metadados:
     schemalist.html/forms/aem-authored
    ```
 
-1. Selecionar **Formulário adaptável** e clique em **Editar**.
+1. Selecione **Formulário adaptável** e clique em **Editar**.
 1. Na página Editar formulário, clique em **Avançado**.
-1. Na guia Avançado, arraste e solte a **Texto em linha única** componente disponível em Criar formulário.
+1. Na guia Avançado, arraste e solte o componente **Texto de linha única**, disponível em Criar formulário.
 1. Selecione o componente de texto adicionado para ver suas configurações.
 
-   Em Configurações, insira `./jcr:content/metadata/form-submission-reviewer-group` no campo Mapear para a propriedade.
+   Em Configurações, digite `./jcr:content/metadata/form-submission-reviewer-group` no campo Mapear para a Propriedade.
 
    O campo do grupo de revisores de envio nas propriedades Avançadas do Formulário adaptável está ativado com o nome especificado em Rótulo do campo.
 
@@ -57,15 +57,15 @@ Os grupos de usuários permitem associar diferentes conjuntos de revisores de en
 Antes de executar as etapas a seguir, consulte [Pré-requisito](adding-reviewers-form.md#prerequisite).
 
 Para criar um grupo e adicionar membros a ele, navegue até **Ferramentas** > **Operações** > **Segurança** > **Grupos**.
-Para obter mais informações, consulte [Administração e serviços do usuário](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR).
-Adicione o grupo criado como membro do grupo de usuários predefinido: **formulários-envio-revisores**. Este grupo de usuários foi enviado com [!DNL AEM Forms]e garante que os usuários sejam adicionados como revisores de envio.
+Para obter mais informações, consulte [Serviços e Administração de Usuários](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+Adicione o grupo que você cria como membro do grupo de usuários predefinido: **forms-submit-reviewers**. Este grupo de usuários é fornecido com [!DNL AEM Forms] e garante que os usuários sejam adicionados como revisores de envio.
 
 Para associar grupos de usuários a um Formulário adaptável:
 
-1. No modo de criação, navegue até **Forms** > **Forms e documentos**.
-1. Use a opção **Selecionar **para selecionar um Formulário adaptável e clique em **Propriedades da exibição**.
-1. Na janela Propriedades do formulário, clique em **Editar** e clique em **AVANÇADO**.
-1. Insira o grupo no campo Submeter grupo de revisores e clique em **Concluído**.
+1. No modo de criação, navegue até **Forms** > **Forms e Documentos**.
+1. Use a opção **Selecionar **para selecionar um Formulário adaptável e clique em **Exibir propriedades**.
+1. Na janela Propriedades do formulário, clique em **Editar** e em **AVANÇADO**.
+1. Insira o grupo no campo de grupo de revisores de envio e clique em **Concluído**.
 
    O campo de grupo do revisor de envio aparece com o nome especificado no esquema de metadados editado do Adaptive Forms.
 
@@ -77,5 +77,5 @@ Para associar grupos de usuários a um Formulário adaptável:
 
 >[!MORELIKETHIS]
 >
->* [Criar e gerenciar revisões em formulários](/help/forms/create-reviews-forms.md)
+>* [Criando e gerenciando revisões em formulários](/help/forms/create-reviews-forms.md)
 >* [Criar e gerenciar revisões para um Formulário adaptável](/help/forms/review-adaptiveforms-in-sites-page.md)

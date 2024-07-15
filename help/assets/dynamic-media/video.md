@@ -27,28 +27,28 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
 >* Consulte [Configurar o Dynamic Media Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) em Configuração do Dynamic Media e [Solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 >
 
-1. **Fazer upload de vídeos do Dynamic Media** fazendo o seguinte:
+1. **Carregue seus vídeos do Dynamic Media** fazendo o seguinte:
 
-   * Crie seu próprio perfil de codificação de vídeo. Ou você pode simplesmente usar a predefinição _Codificação de vídeo adaptável_ que vem com o Dynamic Media.
+   * Crie seu próprio perfil de codificação de vídeo. Ou você pode simplesmente usar o perfil _Codificação de vídeo adaptável_ predefinido que vem com o Dynamic Media.
 
       * [Criar um perfil de codificação de vídeo](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
-      * Saiba mais sobre [Práticas recomendadas para codificação de vídeo](#best-practices-for-encoding-videos).
+      * Saiba mais sobre as [Práticas recomendadas para codificação de vídeo](#best-practices-for-encoding-videos).
 
    * Associe o perfil de processamento de vídeo a uma ou mais pastas nas quais você fará upload dos vídeos de origem primária.
 
-      * [Aplicar um perfil de vídeo a pastas](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+      * [Aplicar um perfil de vídeo às pastas](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * Saiba mais sobre [Organizar ativos digitais](/help/assets/organize-assets.md).
 
    * Faça upload dos vídeos de origem principal para as pastas. Quando você adiciona vídeos à pasta, eles são codificados de acordo com o perfil de processamento de vídeo atribuído à pasta.
 
       * O Dynamic Media suporta principalmente vídeos de formato curto com duração máxima de 30 minutos e resolução mínima superior a 25 x 25.
       * Você pode carregar arquivos de vídeo de até 15 GB cada.
-      * [Fazer upload de vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
-      * Saiba mais sobre [Formatos de arquivo de entrada compatíveis](/help/assets/file-format-support.md).
+      * [Carregue seus vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+      * Saiba mais sobre [Formatos de arquivo de entrada com suporte](/help/assets/file-format-support.md).
 
-   * Monitorar como [a codificação de vídeo está em andamento](#monitoring-video-encoding-and-youtube-publishing-progress) na exibição ativo ou fluxo de trabalho.
+   * Monitore o andamento da [codificação de vídeo](#monitoring-video-encoding-and-youtube-publishing-progress) na exibição do ativo ou do fluxo de trabalho.
 
-1. **Gerenciar vídeos do Dynamic Media** executando qualquer um dos procedimentos a seguir:
+1. **Gerencie seus vídeos do Dynamic Media** seguindo um destes procedimentos:
 
    * Organize, navegue e pesquise ativos de vídeo
 
@@ -67,14 +67,14 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
    * Trabalhar com metadados de vídeo
 
       * Edite as propriedades do vídeo, como título, descrição, tags e campos de metadados personalizados:
-        [Edição de propriedades do vídeo](/help/assets/manage-digital-assets.md#editing-properties)
+        [Editando propriedades de vídeo](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gerenciamento de metadados para ativos digitais](/help/assets/manage-metadata.md)
       * [Esquemas de metadados](/help/assets/metadata-schemas.md)
 
    * Revise, aprove e anote vídeos e mantenha o controle total de versão
 
-      * [Anotação em vídeos](/help/assets/manage-video-assets.md#annotate-video-assets) ou [Anotação de ativos](/help/assets/manage-digital-assets.md#annotating)
+      * [Anotar vídeos](/help/assets/manage-video-assets.md#annotate-video-assets) ou [Anotar ativos](/help/assets/manage-digital-assets.md#annotating)
 
       * [Criação de uma versão](/help/assets/manage-digital-assets.md#asset-versioning)
       * [Iniciar um fluxo de trabalho em um ativo](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
@@ -82,7 +82,7 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
       * [Revisar ativos da pasta](/help/assets/bulk-approval.md)
       * [Projetos](/help/sites-cloud/authoring/projects/overview.md)
 
-1. **Publicar seus vídeos do Dynamic Media** executando um dos procedimentos a seguir:
+1. **Publish seus vídeos do Dynamic Media** seguindo um destes procedimentos:
 
    * Se você usa o Experience Manager como seu sistema WCM (Web Content Management, gerenciamento de conteúdo da Web), é possível adicionar vídeos diretamente às páginas da Web.
 
@@ -91,7 +91,7 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
    * Se você estiver usando um sistema de gerenciamento de conteúdo da Web de terceiros, é possível vincular ou incorporar vídeos às suas páginas da Web.
 
       * Integrar vídeo usando o URL:
-        [Vincular URLs ao aplicativo da Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+        [Vincular URLs ao aplicativo Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integrar vídeo usando o código incorporado na página da Web:
         [Incorporar o visualizador de vídeo em uma página da Web](/help/assets/dynamic-media/embed-code.md).
@@ -123,13 +123,13 @@ Para gerenciar vídeos únicos e Conjuntos de vídeos adaptados, o seguinte é s
 * Fazer upload de vídeo de vários formatos de vídeo e formatos de áudio suportados e codificar vídeo para o formato MP4 H.264 para reprodução em várias telas. Você pode usar predefinições predefinidas de vídeos adaptáveis, predefinições de codificação de vídeos únicos ou personalizar sua própria codificação para controlar a qualidade e o tamanho do vídeo.
 
    * Quando um conjunto de vídeos adaptáveis é gerado, ele inclui vídeos MP4.
-   * **Nota**: vídeos primários/de origem não são adicionados a um Conjunto de vídeos adaptados.
+   * **Observação**: vídeos primários/de origem não são adicionados a um Conjunto de Vídeos Adaptáveis.
 
 * Legendagem de vídeo em todos os visualizadores de vídeo HTML5.
 * Organize, navegue e pesquise vídeos com suporte completo a metadados para obter um gerenciamento eficiente dos ativos de vídeo.
 * Forneça Conjuntos de vídeos adaptados para a Web e para desktops, tablets e dispositivos móveis.
 
-O streaming de vídeo adaptável é suportado em várias plataformas iOS. Consulte [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
+O streaming de vídeo adaptável é suportado em várias plataformas iOS. Consulte o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html).
 
 <!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry&reg; devices that support this video format at the following: [Supported video formats on BlackBerry&reg;](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
@@ -143,9 +143,9 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * Configure players de vídeo para atender às suas necessidades de marca.
 * Integre vídeo ao seu site, site móvel ou aplicativo móvel com um URL simples ou código integrado.
 
-Consulte [Reprodução dinâmica de vídeo](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480) amostra.
+Consulte a amostra [Reprodução dinâmica de vídeo](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
 
-Consulte também [Visualizadores para Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) e [Visualizadores somente para o Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) no [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+Consulte também [Visualizadores do Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc) e [Visualizadores do Experience Manager Assets somente](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) no [Guia de Referência do Dynamic Media Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 ## Prática recomendada: uso do visualizador de vídeo HTML5 {#best-practice-using-the-html-video-viewer}
 
@@ -161,7 +161,7 @@ No lado da reprodução do visualizador, ele detecta automaticamente o recurso d
 
 Você pode combinar em um único player a capacidade de projetar os componentes de reprodução usando HTML5 e CSS. Ele pode ter reprodução integrada e usar transmissão adaptável e progressiva, dependendo da capacidade do navegador. Toda essa funcionalidade significa que você pode estender o alcance do seu conteúdo de mídia avançada para usuários de desktop e dispositivos móveis e garantir uma experiência de vídeo simplificada.
 
-Consulte também [Visualizadores somente para o Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) no [Guia de referência de visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+Consulte também [Somente visualizadores para Experience Manager Assets](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only) no [Guia de Referência do Dynamic Media Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
 
 
 ### Reprodução de vídeo em computadores desktop e dispositivos móveis usando o visualizador de vídeo HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
@@ -181,7 +181,7 @@ DASH é o padrão internacional e HLS é um padrão da Apple. Ambos são usados 
 
 O vídeo progressivo é fornecido ao baixar e armazenar o vídeo localmente no sistema de desktop de um usuário ou dispositivo móvel.
 
-A tabela a seguir descreve o dispositivo, o navegador e o método de reprodução de vídeos em computadores desktop e dispositivos móveis que usam o [Visualizador de vídeo Dynamic Media HTML5](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video).
+A tabela a seguir descreve o dispositivo, o navegador e o método de reprodução de vídeos em computadores desktop e dispositivos móveis usando o [Dynamic Media HTML5 Video Viewer](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video.html#interactive-video).
 
 <table>
  <tbody>
@@ -198,7 +198,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>No Windows® 8 e Windows® 10 - Forçar o uso de HTTPS sempre que DASH ou HLS for solicitado. Limitação conhecida: HTTP no DASH ou HLS não funciona nesta combinação de navegador/sistema operacional<br /> <br /> No Windows® 7 - Download progressivo. Usa lógica padrão para selecionar protocolo HTTP versus HTTPS.</td>
+   <td>No Windows® 8 e Windows® 10 - Forçar o uso de HTTPS sempre que DASH ou HLS for solicitado. Limitação conhecida: HTTP no DASH ou HLS não funciona nesta combinação de navegador/sistema operacional<br /> <br /> no Windows® 7 - Download progressivo. Usa lógica padrão para selecionar protocolo HTTP versus HTTPS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -212,7 +212,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   </tr>
   <tr>
    <td>Desktop</td>
-   <td>Cromo</td>
+   <td>Chrome</td>
    <td>Transmissão da taxa de bits adaptável HLS ou DASH*</td>
   </tr>
   <tr>
@@ -271,7 +271,7 @@ O gráfico a seguir mostra o fluxo de trabalho geral de criação de vídeos que
 
 ## Práticas recomendadas para codificação de vídeos {#best-practices-for-encoding-videos}
 
-A variável **Codificação de vídeo Dynamic Media** o fluxo de trabalho codifica o vídeo se você tiver ativado o Dynamic Media e configurado os Cloud Service de vídeo. Esse fluxo de trabalho captura o histórico do processo de fluxo de trabalho e as informações de falha. Se você tiver ativado o Dynamic Media e configurado os Cloud Service de vídeo, a variável **[!UICONTROL Codificação de vídeo Dynamic Media]** o fluxo de trabalho entra em vigor automaticamente ao fazer upload de um vídeo. (Se você não estiver usando o Dynamic Media, a variável **[!UICONTROL Ativo de atualização DAM]** fluxo de trabalho entra em vigor.)
+O fluxo de trabalho **Codificação de vídeo do Dynamic Media** codifica o vídeo se você tiver habilitado o Dynamic Media e configurado os Cloud Service de vídeo. Esse fluxo de trabalho captura o histórico do processo de fluxo de trabalho e as informações de falha. Se você habilitou o Dynamic Media e configurou Cloud Service de vídeo, o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]** será aplicado automaticamente quando você carregar um vídeo. (Se você não estiver usando o Dynamic Media, o fluxo de trabalho **[!UICONTROL Ativo de atualização do DAM]** entrará em vigor.)
 
 Veja a seguir dicas de práticas recomendadas para a codificação de arquivos de vídeo de origem.
 
@@ -280,7 +280,7 @@ Veja a seguir dicas de práticas recomendadas para a codificação de arquivos d
 * [Streaming 101: The Basics — Codecs, Bandwidth, Data Rate, and Resolution](https://www.adobe.com/go/learn_s7_streaming101_en).
 * [Video Encoding Basics](https://www.adobe.com/go/learn_s7_encoding_en). -->
 
-### Arquivos de vídeo de origem {#source-video-files}
+### Arquivos de vídeo do Source {#source-video-files}
 
 Ao codificar um arquivo de vídeo, use um arquivo de vídeo de origem com a mais alta qualidade possível. Evite usar arquivos de vídeo codificados anteriormente, pois esses arquivos já estão compactados, e codificações adicionais criam um vídeo de qualidade inferior.
 
@@ -299,7 +299,7 @@ A tabela a seguir descreve o tamanho recomendado, a taxa de proporção e a taxa
 
 Você pode obter os metadados de um arquivo visualizando os metadados usando uma ferramenta de edição para vídeos ou usando um aplicativo projetado para obter metadados. A seguir estão as instruções para usar o MediaInfo, um aplicativo de terceiros, para obter os metadados de um arquivo de vídeo:
 
-1. Ir para [Download de MediaInfo](https://mediaarea.net/en/MediaInfo/Download).
+1. Vá para [Download de MediaInfo](https://mediaarea.net/en/MediaInfo/Download).
 1. Selecione e baixe o instalador para a versão da GUI e siga as instruções de instalação.
 1. Após a instalação, clique com o botão direito no arquivo de vídeo (somente Windows®) e selecione MediaInfo, ou abra MediaInfo e arraste o arquivo de vídeo para o aplicativo. Você verá todos os metadados associados ao arquivo de vídeo, incluindo largura, altura e fps.
 
@@ -333,9 +333,9 @@ Taxa de bits é a quantidade de dados codificados para compor um segundo da repr
 Ao selecionar uma codificação de taxa de bits, há dois tipos que você pode escolher:
 
 * **[!UICONTROL Codificação de taxa de bits constante]** (CBR) - Durante a codificação do CBR, a taxa de bits ou o número de bits por segundo é mantido o mesmo durante todo o processo de codificação. A codificação CBR persiste na taxa de definição de dados para sua configuração ao longo de todo o vídeo. Além disso, a codificação CBR não otimiza os arquivos de mídia para melhorar a qualidade, mas economiza espaço de armazenamento.
-Use o CBR se o vídeo tiver um nível de movimento semelhante em todo o vídeo. O CBR é usado com mais frequência para streaming de conteúdo de vídeo. Consulte também [Usar parâmetros de codificação de vídeo adicionados personalizados](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
+Use o CBR se o vídeo tiver um nível de movimento semelhante em todo o vídeo. O CBR é usado com mais frequência para streaming de conteúdo de vídeo. Consulte também [Usar parâmetros de codificação de vídeo personalizados](/help/assets/dynamic-media/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Codificação de taxa de bits variável]** (VBR) - A codificação VBR ajusta a taxa de dados para baixo e para o limite superior definido, com base nos dados exigidos pelo compactador. Essa funcionalidade significa que, durante um processo de codificação de VBR, a taxa de bits do arquivo de mídia aumenta ou diminui dinamicamente, dependendo das necessidades de taxa de bits dos arquivos de mídia.
+* **[!UICONTROL Codificação de taxa de bits variável]** (VBR) - A codificação de VBR ajusta a taxa de dados para baixo e para o limite superior definido, com base nos dados exigidos pelo compactador. Essa funcionalidade significa que, durante um processo de codificação de VBR, a taxa de bits do arquivo de mídia aumenta ou diminui dinamicamente, dependendo das necessidades de taxa de bits dos arquivos de mídia.
 O VBR demora mais para codificar, mas produz os resultados mais favoráveis; a qualidade do arquivo de mídia é superior. O VBR é usado com mais frequência para entrega progressiva de conteúdo de vídeo http.
 
 Quando você usa VBR versus CRB?
@@ -379,7 +379,7 @@ Ao escolher (ou criar) uma predefinição de codificação de vídeo para o arqu
 | 240p | 240 | Tela pequena |
 | 300p | 300 | Tela pequena normalmente para dispositivos móveis |
 | 360p | 360 | Tela pequena |
-| 480p | 480 | Tela média |
+| 480p | 480 | Tela do Medium |
 | 720p | 720 | Tela grande |
 | 1080p | 1080 | Tela grande de alta definição |
 
@@ -416,7 +416,7 @@ A Dynamic Media recomenda usar predefinições de codificação de vídeo MP4 H.
 >
 >Os relatórios de vídeo só estão disponíveis quando você executa o Dynamic Media - Modo híbrido.
 
-Os Relatórios de vídeo exibem várias métricas agregadas em um período especificado para ajudar você a monitorar isso *publicado* vídeos individuais e agregados são executados conforme esperado. Os dados das principais métricas a seguir são agregados para todos os vídeos publicados em todo o site:
+Os Relatórios de vídeo exibem várias métricas agregadas em um período especificado para ajudar você a monitorar se os vídeos individuais e agregados *publicados* estão apresentando o desempenho esperado. Os dados das principais métricas a seguir são agregados para todos os vídeos publicados em todo o site:
 
 * Vídeos iniciados
 * Taxa de Conclusão
@@ -424,7 +424,7 @@ Os Relatórios de vídeo exibem várias métricas agregadas em um período espec
 * Tempo total em vídeo
 * Vídeos por visita
 
-Uma tabela de todos *publicado* os vídeos também são listados para que você possa rastrear os vídeos mais visualizados do seu site com base no total de inícios de vídeo.
+Uma tabela de todos os vídeos *publicados* também está listada para que você possa acompanhar os vídeos mais vistos no seu site com base no total de vídeos iniciados.
 
 Ao selecionar um nome de vídeo na lista, ele mostra o relatório de retenção de público-alvo (drop-off) do vídeo no formato de um gráfico de linhas. O gráfico exibe o número de visualizações em um determinado momento durante a reprodução do vídeo. Ao reproduzir o vídeo, a barra vertical é rastreada em sincronização com o indicador de tempo no reprodutor. Quedas nos dados do gráfico de linhas indicam onde o público-alvo cai de desinteresse.
 
@@ -436,20 +436,20 @@ Se o vídeo foi codificado fora do Adobe Experience Manager Dynamic Media, o gr�
 
 Por padrão, na primeira vez que você insere Relatórios de vídeo, o relatório exibe os dados de vídeo começando no primeiro dia do mês atual e termina com a data do mês atual. No entanto, é possível substituir o intervalo de datas padrão especificando seu próprio intervalo de datas. Na próxima vez que você inserir Relatórios de vídeo, o intervalo de datas especificado será usado.
 
-Para que os relatórios de vídeo funcionem corretamente, uma ID do conjunto de relatórios é criada automaticamente quando o Dynamic Media Cloud Service é configurado. Ao mesmo tempo, a ID do conjunto de relatórios é enviada para o servidor de publicação para que fique disponível para o recurso Copiar URL ao visualizar ativos. No entanto, essa funcionalidade exige que o servidor de publicação já esteja configurado. Se o servidor de publicação não estiver configurado, ainda será possível publicar para ver o relatório de vídeo. No entanto, retorne à Configuração da nuvem do Dynamic Media e selecione **[!UICONTROL OK]**.
+Para que os relatórios de vídeo funcionem corretamente, uma ID do conjunto de relatórios é criada automaticamente quando o Dynamic Media Cloud Service é configurado. Ao mesmo tempo, a ID do conjunto de relatórios é enviada para o servidor do Publish para que fique disponível para o recurso Copiar URL ao visualizar ativos. No entanto, essa funcionalidade exige que o servidor do Publish já esteja configurado. Se o servidor do Publish não estiver configurado, ainda será possível publicar para ver o relatório de vídeo. No entanto, você deve retornar à Configuração na Nuvem do Dynamic Media e selecionar **[!UICONTROL OK]**.
 
 **Para exibir relatórios de vídeo:**
 
-1. No canto superior esquerdo do Experience Manager, selecione o logotipo do Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Assets]** > **[!UICONTROL Relatórios de vídeo]**.
+1. No canto superior esquerdo do Experience Manager, selecione o logotipo Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Assets]** > **[!UICONTROL Relatórios de vídeo]**.
 1. Na página Relatórios de vídeo, siga um destes procedimentos:
 
-   * Próximo ao canto superior direito, selecione a **[!UICONTROL Atualizar relatório de vídeo]** ícone.
+   * Próximo ao canto superior direito, selecione o ícone **[!UICONTROL Atualizar relatório de vídeo]**.
 Você usa Atualizar somente se a data final do relatório for o dia atual. Esse recurso garante que você veja o rastreamento de vídeo que ocorreu desde a última vez que executou o relatório.
 
-   * Próximo ao canto superior direito, selecione a **[!UICONTROL Seletor de data]** ícone.
-Especifique o intervalo de datas inicial e final para o qual deseja dados de vídeo e selecione **[!UICONTROL Executar relatório]**.
+   * Próximo ao canto superior direito, selecione o ícone **[!UICONTROL Seletor de datas]**.
+Especifique o intervalo de datas inicial e final para o qual deseja dados de vídeo e selecione **[!UICONTROL Executar Relatório]**.
 
-   A caixa de grupo Métricas Principais identifica várias medidas agregadas para todas *publicado* vídeos em seu site.
+   A caixa de grupo Métricas principais identifica várias medidas agregadas para todos os vídeos *publicados* do site.
 
 1. Na tabela que lista os principais vídeos publicados, selecione um nome de vídeo para reproduzir o vídeo e também veja o relatório de retenção de público-alvo (drop-off) do vídeo.
 
@@ -523,8 +523,8 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
 
 ## Habilite o suporte para DASH, legenda múltipla e faixa de áudio múltiplo na sua conta do Dynamic Media {#enable-dash}
 
-**Sobre a ativação do suporte a DASH na sua conta**
-DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre DASH ou HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com alternância automática entre players quando **[!UICONTROL automático]** é selecionado como o tipo de reprodução na predefinição do Visualizador.
+**Sobre a habilitação do suporte a DASH na sua conta**
+DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre DASH ou HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com a alternância automática entre players quando **[!UICONTROL auto]** estiver selecionado como o tipo de reprodução na predefinição do Visualizador.
 
 Alguns dos principais benefícios da ativação do DASH em sua conta incluem:
 
@@ -537,15 +537,15 @@ Alguns dos principais benefícios da ativação do DASH em sua conta incluem:
 
 A habilitação do suporte DASH na sua conta é feita por meio de um caso de Suporte ao cliente do Adobe que você cria e envia.
 
-**Sobre a ativação do suporte a várias legendas e faixas de áudio na sua conta**
+**Sobre a habilitação do suporte a legendas múltiplas e faixas de áudio em sua conta**
 
 Ao mesmo tempo em que você cria um caso de suporte para Adobe para ter o DASH ativado em sua conta, você também pode se beneficiar de ter o suporte a várias legendas e faixas de áudio ativado automaticamente. Após a ativação, todos os vídeos subsequentes carregados serão processados com uma nova arquitetura de back-end que inclui suporte para adicionar várias legendas e faixas de áudio aos vídeos.
 
 >[!IMPORTANT]
 >
->Qualquer vídeo que você tenha carregado *antes* ativação do suporte a várias legendas e faixas de áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Essa etapa de reprocessamento de vídeo é necessária para que o recurso de várias legendas e faixas de áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
+>Qualquer vídeo que você tenha carregado *antes* de habilitar o suporte a várias legendas e faixas de áudio na sua conta da Dynamic Media, [deverá ser reprocessado](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Essa etapa de reprocessamento de vídeo é necessária para que o recurso de várias legendas e faixas de áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
-**Para ativar o suporte a DASH, multi-caption e faixa de áudio múltiplo na sua conta do Dynamic Media:**
+**Para habilitar o suporte a faixas de áudio múltiplas, legendas e DASH na sua conta da Dynamic Media:**
 
 1. [Use o Admin Console para iniciar a criação de um novo caso de suporte](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 1. Para criar um caso de suporte, siga as instruções enquanto garante que você forneça as seguintes informações:
@@ -561,15 +561,15 @@ Ao mesmo tempo em que você cria um caso de suporte para Adobe para ter o DASH a
 1. Você será notificado após a conclusão pelo Suporte ao cliente.
 1. Agora é possível executar um dos seguintes procedimentos:
 
-   * Crie seu [predefinição do visualizador de vídeo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costume.
-   * [Adicionar várias legendas e faixas de áudio](#add-msma) ao seu vídeo.
+   * Crie sua [predefinição do visualizador de vídeo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costume.
+   * [Adicione várias legendas e faixas de áudio](#add-msma) ao vídeo.
 
 
 ## Sobre o suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media{#about-msma}
 
 Com o recurso de várias legendas e faixas de áudio no Dynamic Media, é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 
-![A guia Legendas e trilhas de áudio no Dynamic Media, juntamente com uma tabela mostrando os arquivos de legenda .VTT e os arquivos de trilha de áudio .MP3 carregados para um vídeo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab2.png)
+![Guia Legendas e faixas de áudio no Dynamic Media, juntamente com uma tabela que mostra arquivos de legenda .VTT carregados e arquivos de faixa de áudio .MP3 carregados para um vídeo.](/help/assets/dynamic-media/assets/msma-subtitle-audiotracks-tab2.png)
 
 Alguns dos casos de uso a serem considerados para adicionar várias legendas e faixas de áudio ao vídeo principal incluem:
 
@@ -581,7 +581,7 @@ Alguns dos casos de uso a serem considerados para adicionar várias legendas e f
 |  | Faixas de comentários |
 |  | Áudio descritivo |
 
-Todos [formatos de vídeo compatíveis com o Dynamic Media](/help/assets/file-format-support.md) e todos os visualizadores de vídeo do Dynamic Media, exceto o Dynamic Media *Video_360* visualizador — são compatíveis com o uso de várias legendas e faixas de áudio.
+Todos os [formatos de vídeo com suporte no Dynamic Media](/help/assets/file-format-support.md) e todos os visualizadores de vídeo do Dynamic Media, exceto o visualizador do *Video_360* do Dynamic Media, têm suporte para uso com várias legendas e faixas de áudio.
 
 A capacidade de rastreamento de várias legendas e áudio está disponível para sua conta Dynamic Media por meio de um botão de alternância de recurso que deve ser ativado pelo Suporte ao cliente Adobe.
 
@@ -590,77 +590,77 @@ A capacidade de rastreamento de várias legendas e áudio está disponível para
 Antes de adicionar várias legendas e faixas de áudio ao vídeo, verifique se você já tem o seguinte no local:
 
 * O Dynamic Media é configurado em um ambiente AEM.
-* A [O perfil Dynamic Media Video é aplicado à pasta em que os vídeos são assimilados](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [A legenda múltipla e a faixa de áudio múltiplo estão habilitadas em sua conta do Dynamic Media](#enable-dash).
+* Um [perfil de Vídeo do Dynamic Media é aplicado à pasta em que seus vídeos são assimilados](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+* [A multilegenda e a faixa de áudio estão habilitadas em sua conta da Dynamic Media](#enable-dash).
 
 Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E os arquivos de trilha de áudio adicionados são suportados com o formato MP3.
 
 >[!IMPORTANT]
 >
->Qualquer vídeo que você tenha carregado *antes* ativação do suporte a várias legendas e faixas de áudio na sua conta do Dynamic Media, [deve ser reprocessado](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Essa etapa de reprocessamento de vídeo é necessária para que o recurso de várias legendas e faixas de áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
+>Qualquer vídeo que você tenha carregado *antes* de habilitar o suporte a várias legendas e faixas de áudio na sua conta da Dynamic Media, [deverá ser reprocessado](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Essa etapa de reprocessamento de vídeo é necessária para que o recurso de várias legendas e faixas de áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
-**Para adicionar várias legendas e faixas de áudio ao vídeo:**
+**Para adicionar várias legendas e faixas de áudio ao seu vídeo:**
 
-1. [Fazer upload do vídeo principal para uma pasta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) que já tem um perfil de vídeo atribuído a ele.
+1. [Carregue seu vídeo principal em uma pasta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) que já tenha um perfil de vídeo atribuído a ela.
 1. Navegue até o ativo de vídeo carregado que você deseja adicionar várias legendas e faixas de áudio.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
 1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
-   ![Ativo de vídeo selecionado com marca de seleção sobre a imagem em miniatura do vídeo e Propriedades de exibição destacadas na barra de ferramentas.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ativo de vídeo selecionado na exibição de Cartão.*
-1. Na página Propriedades do vídeo, selecione a **[!UICONTROL Legendas e faixas de áudio]** guia.
+   ![Ativo de vídeo selecionado com marca de seleção sobre a imagem em miniatura do vídeo e as Propriedades de exibição realçadas na barra de ferramentas.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ativo de vídeo selecionado no modo de exibição Cartão.*
+1. Na página Propriedades do vídeo, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
 
    >[!TIP]
-   >Se você não vir a variável **[!UICONTROL Legendas e faixas de áudio]** significa uma destas duas coisas:
+   >Se você não vir a guia **[!UICONTROL Legendas e faixas de áudio]**, isso significa uma destas duas coisas:
    >
    >* A pasta em que o vídeo selecionado reside não tem um perfil de vídeo atribuído a ele. Nesse caso, consulte [Aplicar um perfil de vídeo à pasta](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
    >* Ou o vídeo deve ser reprocessado pelo Dynamic Media. Nesse caso, consulte [Reprocessar ativos do Dynamic Media em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
    >
    >Quando tiver concluído uma das tarefas acima, retorne a essas etapas.
 
-   ![Guia Legendas e faixas de áudio na página Propriedades.](/help/assets/dynamic-media/assets/msma-audiotracks2.png)*Guia Legendas e faixas de áudio na página Propriedades do vídeo.*
+   ![Guia Legendas e Faixas de Áudio na página Propriedades.](/help/assets/dynamic-media/assets/msma-audiotracks2.png)*Guia Legendas e Faixas de Áudio na página Propriedades do vídeo.*
 
 1. (Opcional) Para adicionar um ou mais arquivos de legenda a um vídeo, faça o seguinte:
-   * Selecionar **[!UICONTROL Fazer upload de legendas]**.
+   * Selecione **[!UICONTROL Carregar Legendas]**.
    * Navegue até um ou mais arquivos .vtt (Video Text Tracks) e selecione-os.
-   * Para que as legendas fiquem visíveis no reprodutor de mídia, você *deve* adicionar os detalhes necessários (metadados) sobre *cada* arquivo de legenda que você carregou. Selecione o ícone de lápis à direita de um nome de arquivo de legenda. No **Editar legenda** , insira os seguintes detalhes necessários sobre o arquivo e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de legenda que você carregou:
+   * Para que as legendas fiquem visíveis no reprodutor de mídia, você *deve* adicionar os detalhes necessários (metadados) sobre cada *arquivo de legenda que você carregou.* Selecione o ícone de lápis à direita de um nome de arquivo de legenda. Na caixa de diálogo **Editar Legenda**, insira os seguintes detalhes necessários sobre o arquivo e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de legenda que você carregou:
 
      | Metadados da legenda | Descrição |
      |--- |--- |
-     | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos de legenda e de trilha de áudio adicionais. |
+     | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos de legenda e de faixa de áudio adicionais. |
      | Idioma | Selecione o idioma da legenda. |
-     | Tipo | Selecione o tipo de legenda que você está usando.<br>**Legenda** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda também inclui ruídos de fundo, diferenciação do alto-falante e outras informações relevantes, juntamente com a tradução ou transcrição do diálogo, tornando o conteúdo mais acessível para indivíduos surdos ou com deficiência auditiva. |
-     | Rótulo | O texto exibido para o nome da legenda no campo **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou subtítulo. Por exemplo, `English (CC)`. |
+     | Tipo | Selecione o tipo de legenda que você está usando.<br>**Subtítulo** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda também inclui ruídos de fundo, diferenciação do alto-falante e outras informações relevantes, juntamente com a tradução ou transcrição da caixa de diálogo, tornando o conteúdo mais acessível para indivíduos surdos ou com deficiência auditiva. |
+     | Rótulo | O texto exibido para o nome da legenda na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou subtítulo. Por exemplo, `English (CC)`. |
 
      É possível alterar ou editar os metadados da legenda posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
 
 1. (Opcional) Para adicionar uma ou mais faixas de áudio a um vídeo, faça o seguinte:
-   * Selecionar **[!UICONTROL Carregar faixas de áudio]**.
+   * Selecione **[!UICONTROL Carregar Faixas De Áudio]**.
    * Navegue até um ou mais arquivos .mp3, selecione-os e abra-os.
-   * Para que as faixas de áudio fiquem visíveis no **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia, você *deve* adicionar detalhes necessários sobre *cada* arquivo de faixa de áudio que você adicionou. Selecione o ícone de lápis à direita de um nome de arquivo de faixa de áudio. No **Editar faixa de áudio** , insira os detalhes necessários a seguir e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de trilha de áudio que você carregou.
+   * Para que as faixas de áudio fiquem visíveis na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia, você *deve* adicionar os detalhes necessários sobre *cada* arquivo de faixa de áudio adicionado. Selecione o ícone de lápis à direita de um nome de arquivo de faixa de áudio. Na caixa de diálogo **Editar Faixa de Áudio**, insira os seguintes detalhes necessários e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de trilha de áudio que você carregou.
 
      | Metadados da faixa de áudio | Descrição |
      |--- |--- |
-     | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos de faixa de áudio adicionais ou arquivos de legenda. |
+     | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos adicionais de faixa de áudio ou de legenda. |
      | Idioma | Selecione o idioma da faixa de áudio. |
-     | Tipo | Selecione o tipo de faixa de áudio que você está usando.<br>**Original** - A faixa de áudio originalmente anexada ao vídeo e representada como `[Original]` no rótulo com `English` idioma selecionado por padrão. Enquanto **[!UICONTROL Rótulo]** e **[!UICONTROL Idioma]** pode ser alterado no **[!UICONTROL Editar faixa de áudio]** , o padrão serão os valores originais se o vídeo principal for reprocessado.<br>**Padrão** - Uma faixa de áudio complementar para um idioma diferente do original.<br>**Descrição de áudio** - Uma faixa de áudio que também inclui uma narração descritiva de ações e gestos não verbais no vídeo, tornando o conteúdo mais acessível para indivíduos com deficiência visual. |
-     | Rótulo | O texto que é exibido como o nome da faixa de áudio no **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de áudio. Por exemplo, `English [Original]`. O rótulo do áudio anexado a um vídeo é definido como `[Original]` por padrão. |
+     | Tipo | Selecione o tipo de faixa de áudio que você está usando.<br>**Original** - A faixa de áudio originalmente anexada ao vídeo e representada como `[Original]` no rótulo com o idioma `English` selecionado por padrão. Embora seja possível alterar o **[!UICONTROL Rótulo]** e o **[!UICONTROL Idioma]** na caixa de diálogo **[!UICONTROL Editar Faixa de Áudio]**, o padrão serão os valores originais se o vídeo principal for reprocessado.<br>**Padrão** - Uma faixa de áudio complementar para um idioma diferente do original.<br>**Descrição de áudio** - Uma faixa de áudio que também inclui uma narração descritiva de ações e gestos não verbais no vídeo, tornando o conteúdo mais acessível para indivíduos com deficiências visuais. |
+     | Rótulo | O texto que é exibido como o nome da faixa de áudio na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de áudio. Por exemplo, `English [Original]`. O rótulo do áudio anexado a um vídeo é definido como `[Original]` por padrão. |
 
      Você pode alterar ou editar esses metadados de trilha de áudio posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
 
-1. No canto superior direito da página, na guia **[!UICONTROL Salvar e fechar]** selecione **[!UICONTROL Salvar]**. Os arquivos são carregados e o processamento de metadados é iniciado, como visto na **Status** coluna da interface.
+1. No canto superior direito da página, na lista suspensa **[!UICONTROL Salvar e fechar]**, selecione **[!UICONTROL Salvar]**. Os arquivos são carregados e o processamento de metadados é iniciado, como visto na coluna **Status** da interface.
 
    >[!NOTE]
    >
    >Com base nas configurações de cache da sua instância, o processamento de metadados pode levar vários minutos antes de ser refletido na pré-visualização e nos URLs publicados.
 
-1. (Opcional) Se você selecionou **[!UICONTROL Salvar e fechar]** na etapa anterior, em vez de selecionar **[!UICONTROL Salvar]**, você ainda poderá visualizar o status de processamento dos arquivos carregados. Consulte [Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados](#lifecycle-status-video).
+1. (Opcional) Se você selecionou **[!UICONTROL Salvar e fechar]** na etapa anterior, em vez de selecionar **[!UICONTROL Salvar]**, ainda poderá ver o status de processamento dos arquivos carregados. Consulte [Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados](#lifecycle-status-video).
 1. (Opcional) Visualize o vídeo antes da publicação para garantir que as legendas e o áudio funcionem conforme esperado. Consulte [Visualizar um vídeo com várias legendas e faixas de áudio](#preview-video-audio-subtitle)
-1. Publique o vídeo. Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
+1. Publish o vídeo. Consulte [ativos do Publish](publishing-dynamicmedia-assets.md).
 
 #### Sobre a adição de arquivos de legenda e trilha de áudio a um vídeo já publicado
 
-Ao fazer upload de arquivos de legenda ou de faixas de áudio adicionais para um vídeo já publicado, significa que esses arquivos terão uma `Processed` após serem preparados, após o upload. Nesse ponto, é possível visualizar o vídeo no Dynamic Media para ver ou ouvir os arquivos recém-carregados.
+Ao carregar arquivos de legenda adicionais ou arquivos de rastreamento de áudio para um vídeo já publicado, significa que esses arquivos terão um status `Processed` após serem preparados, após o upload. Nesse ponto, é possível visualizar o vídeo no Dynamic Media para ver ou ouvir os arquivos recém-carregados.
 
-Após a visualização, no entanto, você deve *publicar* o vídeo novamente para os arquivos de legenda ou trilha de áudio recém-adicionados a serem publicados também. Após a publicação, as legendas ou o áudio ficam disponíveis com o URL público do Dynamic Media.
+Após a visualização, no entanto, você deve *publicar* o vídeo novamente para que os arquivos de legenda ou trilha de áudio recém-adicionados também sejam publicados. Após a publicação, as legendas ou o áudio ficam disponíveis com o URL público do Dynamic Media.
 
 >[!NOTE]
 >
@@ -670,7 +670,7 @@ No cenário em que você configurou o Dynamic Media para publicação imediata, 
 
 >[!CAUTION]
 >
->Ao fazer upload de arquivos de legenda ou de áudio para um vídeo publicado ou não, os arquivos serão excluídos se você [*reprocessar*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) o vídeo. Somente o áudio original do vídeo permanece intacto. Nesses casos, você deve fazer upload novamente dos arquivos de legenda e de trilha de áudio para o vídeo.
+>Ao carregar arquivos de legenda ou de áudio para um vídeo publicado ou não, os arquivos serão excluídos se você [*reprocessar*](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets) o vídeo. Somente o áudio original do vídeo permanece intacto. Nesses casos, você deve fazer upload novamente dos arquivos de legenda e de trilha de áudio para o vídeo.
 
 #### Adicione várias legendas a um vídeo que tenha um URL existente com modificador de legenda
 
@@ -678,39 +678,39 @@ O Dynamic Media permite a adição de uma única legenda com vídeo por meio de 
 
 Várias alterações de legenda têm precedência sobre uma legenda adicionada por meio de um modificador de URL para vídeos publicados.
 
-**Para adicionar várias legendas a um vídeo que tenha um URL existente com o modificador de legenda:**
+**Para adicionar várias legendas a um vídeo que tenha uma URL existente com o modificador de legenda:**
 
 1. Faça upload do arquivo de legenda que já foi adicionado como um modificador ao vídeo para que você possa gerenciar o arquivo explicitamente.
 1. Carregue quaisquer arquivos de legenda adicionais, conforme necessário.
-1. Publique o vídeo como de costume.
+1. Publish o vídeo como de costume.
 O URL existente com o modificador de legenda agora pode carregar várias legendas.
 
 ### Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados{#lifecycle-status-video}
 
-Você pode observar o status do ciclo de vida de qualquer legenda ou arquivo de trilha de áudio carregado no vídeo principal pelo **Legendas e faixas de áudio** guia de **Propriedades**.
+Você pode observar o status do ciclo de vida de qualquer legenda ou arquivo de trilha de áudio carregado no vídeo principal na guia **Legendas e faixas de áudio** das **Propriedades**.
 
 **Para exibir o status do ciclo de vida de um vídeo:**
 
 1. Navegue até o ativo de vídeo cujo status do ciclo de vida você deseja exibir.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
 1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
-1. Na página Propriedades, selecione a variável **[!UICONTROL Legendas e faixas de áudio]** guia. Na coluna Status, observe o estado de cada legenda ou arquivo de áudio.
+1. Na página Propriedades, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**. Na coluna Status, observe o estado de cada legenda ou arquivo de áudio.
 
 | Status da legenda ou da faixa de áudio | Descrição |
 | --- | --- |
 | Processamento | Quando um novo arquivo de legenda ou trilha de áudio é adicionado e salvo, ele entra em um estado de &quot;Processamento&quot;. O Dynamic Media processa o arquivo anexando o manifesto de transmissão ao vídeo principal. |
-| Processado | Após a conclusão do processamento, o arquivo de legenda ou trilha de áudio, ou a faixa de áudio original associada ao vídeo principal, é exibido no estado &quot;Processado&quot;. Você pode visualizar arquivos de legenda e faixa de áudio que aparecem como &quot;Processados&quot; *antes* publique o vídeo em tempo real. |
-| Publicado | Um estado &quot;Publicado&quot; representa um estado semelhante a &quot;Publicado&quot; para um vídeo principal. Os ativos são publicados quando o vídeo principal é publicado e ficam disponíveis no URL público do Dynamic Media. |
+| Processado | Após a conclusão do processamento, o arquivo de legenda ou trilha de áudio, ou a faixa de áudio original associada ao vídeo principal, é exibido no estado &quot;Processado&quot;. Você pode visualizar os arquivos de legenda e faixa de áudio que aparecem como &quot;Processados&quot; *antes* de publicar o vídeo ao vivo. |
+| Publicado | Um estado &quot;Publicado&quot; representa um estado semelhante a &quot;Publicado&quot; para um vídeo principal. Os Assets são publicados quando o vídeo principal é publicado e ficam disponíveis no URL público do Dynamic Media. |
 | Falhou | Um estado &quot;Com falha&quot; significa que o processamento de uma legenda ou faixa de áudio não foi concluído. Exclua a legenda ou o arquivo de trilha de áudio e carregue novamente. |
 | A página não publicada | Quando a publicação de um vídeo principal é cancelada explicitamente, qualquer legenda ou arquivo de trilha de áudio adicionado ao vídeo também tem sua publicação cancelada. |
 
-![Coluna de status realçada para os campos Legendas e Faixas de áudio.](/help/assets/dynamic-media/assets/msma-lifecycle-status2.png)*Status do ciclo de vida de cada legenda e arquivo de rastreamento de áudio carregados.*
+![Coluna de status realçada para os campos Legendas e Faixas de Áudio.](/help/assets/dynamic-media/assets/msma-lifecycle-status2.png)*Status do ciclo de vida de cada legenda e arquivo de trilha de áudio carregados.*
 
 ### Definir o áudio padrão de um vídeo com várias faixas de áudio
 
 Por padrão, o áudio original de um vídeo é definido como o áudio padrão a ser reproduzido.
 
-No entanto, todos os arquivos de trilha de áudio carregados podem ser definidos como o áudio padrão a ser reproduzido depois que um vídeo é carregado no visualizador. Na interface do usuário Propriedades, no **Legendas e faixas de áudio** , a guia `Default` O rótulo é aplicado à direita do arquivo de trilha de áudio para reprodução de vídeo.
+No entanto, todos os arquivos de trilha de áudio carregados podem ser definidos como o áudio padrão a ser reproduzido depois que um vídeo é carregado no visualizador. Na interface do usuário Propriedades, na guia **Legendas e faixas de áudio**, o rótulo `Default` é aplicado à direita do arquivo de faixa de áudio para reprodução de vídeo.
 
 >[!NOTE]
 >
@@ -719,30 +719,30 @@ No entanto, todos os arquivos de trilha de áudio carregados podem ser definidos
 >* Chrome — O áudio padrão definido no vídeo é reproduzido.
 >* Safari — Se o idioma padrão estiver definido no Safari, o áudio será reproduzido com o idioma padrão definido, se disponível com o manifesto do vídeo. Caso contrário, o áudio padrão definido como parte das propriedades de um vídeo será reproduzido.
 
-**Para definir o áudio padrão de um vídeo com várias faixas de áudio:**
+**Para definir o áudio padrão de um vídeo que tenha várias faixas de áudio:**
 
 1. Navegue até o ativo de vídeo cuja faixa de áudio padrão você deseja definir.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
 1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
-1. Na página Propriedades, selecione a variável **[!UICONTROL Legendas e faixas de áudio]** guia.
-1. No **Faixas de áudio** selecione o arquivo de faixa de áudio que deseja definir como padrão do vídeo.
-1. Selecionar **[!UICONTROL Definir como padrão]**.
-No **Definir como padrão** caixa de diálogo, selecione **[!UICONTROL Substituir]**.
+1. Na página Propriedades, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
+1. No cabeçalho **Faixas de áudio**, selecione o arquivo de faixa de áudio que deseja definir como padrão do vídeo.
+1. Selecione **[!UICONTROL Definir como padrão]**.
+Na caixa de diálogo **Definir como padrão**, selecione **[!UICONTROL Substituir]**.
 
-   ![O cabeçalho Faixas de áudio com um nome de arquivo de faixa de áudio selecionado e o botão &quot;Definir como padrão&quot; realçado.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack2.png)*Definindo a faixa de áudio padrão de um vídeo.*
+   ![O cabeçalho Faixas de Áudio com um nome de arquivo de faixa de áudio selecionado e o botão &quot;Definir como padrão&quot; realçado.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack2.png)*Definindo a faixa de áudio padrão para um vídeo.*
 
 1. No canto superior direito, selecione **[!UICONTROL Salvar e fechar]**.
-1. Publique o vídeo. Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
+1. Publish o vídeo. Consulte [ativos do Publish](publishing-dynamicmedia-assets.md).
 
 ### Visualizar um vídeo com várias legendas e faixas de áudio{#preview-video-audio-subtitle}
 
 Depois que os arquivos de legenda e de trilha de áudio são carregados em um vídeo e processados, é possível usar o visualizador de vídeo do Dynamic Media para visualizar todas as faixas diferentes. Isso ajuda você a ver a aparência e o som do seu vídeo para os clientes e garante que ele esteja se comportando conforme esperado.
 
-Quando estiver satisfeito com o vídeo, você poderá [publicar](publishing-dynamicmedia-assets.md) usando qualquer um dos métodos a seguir.
+Quando estiver satisfeito com o vídeo, você poderá [publicá-lo](publishing-dynamicmedia-assets.md) usando qualquer um dos métodos a seguir.
 
-Consulte [Incorporar o visualizador de vídeo ou imagem em uma página da Web](/help/assets/dynamic-media/embed-code.md).
-Consulte [Vincular URLs ao aplicativo da Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
-Consulte [Adicionar ativos do Dynamic Media a páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Consulte [Incorporar o Visualizador de Vídeo ou Imagem a uma Página da Web](/help/assets/dynamic-media/embed-code.md).
+Consulte [Vincular URLs ao aplicativo Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). O método de vinculação baseado em URL não é possível se o conteúdo interativo tiver links com URLs relativos, principalmente links para páginas do Experience Manager Sites.
+Consulte [Adicionar o Dynamic Media Assets às páginas](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 >[!NOTE]
 >
@@ -750,22 +750,22 @@ Consulte [Adicionar ativos do Dynamic Media a páginas](/help/assets/dynamic-med
 
 **Para visualizar um vídeo com várias legendas e faixas de áudio:**
 
-1. Entrada **[!UICONTROL Assets]**, navegue até um vídeo existente no qual você adicionou várias legendas e faixas de áudio.
+1. No **[!UICONTROL Assets]**, navegue até um vídeo existente no qual você tenha adicionado várias legendas e faixas de áudio.
 1. Clique no ativo de vídeo para abri-lo no modo de visualização.
-1. Na página de visualização, próximo ao canto superior esquerdo da página, selecione a lista suspensa e, em seguida, **[!UICONTROL Visualizadores]**.
+1. Na página de visualização, próximo ao canto superior esquerdo da página, selecione a lista suspensa e, em seguida, selecione **[!UICONTROL Visualizadores]**.
 
-   ![Lista suspensa que mostra a opção Visualizadores.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
+   ![Lista suspensa mostrando a opção Visualizadores.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. Na lista Visualizadores, selecione um visualizador que deseja usar para a pré-visualização do vídeo. Como exemplo, a captura de tela a seguir mostra o **[!UICONTROL Vídeo]** visualizador sendo selecionado.
+1. Na lista Visualizadores, selecione um visualizador que deseja usar para a pré-visualização do vídeo. Como exemplo, a seguinte captura de tela mostra o visualizador de **[!UICONTROL Vídeo]** que está sendo selecionado.
 
-   ![Seleção do Visualizador de vídeo na lista suspensa Visualizadores.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
+   ![Seleção do visualizador de vídeo a partir da lista suspensa Visualizadores.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
 
-1. Próximo ao canto inferior direito, à esquerda do ícone do volume, selecione o ícone de balão de fala e selecione o áudio ou a legenda que deseja ouvir ou ver, ou ambos. Se desejar, em Legendas, é possível selecionar **[!UICONTROL Desligado]** para não exibir nenhuma legenda ou legenda.
+1. Próximo ao canto inferior direito, à esquerda do ícone do volume, selecione o ícone de balão de fala e selecione o áudio ou a legenda que deseja ouvir ou ver, ou ambos. Se desejar, em Legendas, você pode selecionar **[!UICONTROL Desativado]** para não exibir legendas ou legendas.
 
-   ![A lista pop-up Áudio e legendas no visualizador de Vídeo.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulação de um usuário que seleciona o áudio e a legenda para a reprodução de vídeo.*
+   ![A lista pop-up Áudio e Legendas no visualizador de Vídeo.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulação de um usuário selecionando o áudio e a legenda para reprodução de vídeo.*
 
-1. Para iniciar a reprodução, selecione o nome do vídeo **[!UICONTROL Reproduzir]** botão.
-Observe que **[!UICONTROL URL]** e **[!UICONTROL Incorporar]** no canto inferior esquerdo. Use esses botões para [vincule o URL do vídeo ao seu aplicativo web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou para [incorporar o vídeo em uma página da Web](/help/assets/dynamic-media/embed-code.md), respectivamente.
+1. Para iniciar a reprodução, selecione o botão **[!UICONTROL Reproduzir]** do vídeo.
+Anote os botões **[!UICONTROL URL]** e **[!UICONTROL Incorporar]** no canto inferior esquerdo. Use esses botões para [vincular a URL do vídeo ao seu aplicativo Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou para [incorporar o vídeo em uma Página da Web](/help/assets/dynamic-media/embed-code.md), respectivamente.
 1. Próximo ao canto superior direito da página de visualização, selecione **[!UICONTROL Fechar]**.
 
 ### Excluir arquivos de legenda ou de trilha de áudio de um vídeo
@@ -779,14 +779,14 @@ A faixa de áudio original extraída de um vídeo principal não pode ser exclu�
 1. Navegue até o ativo de vídeo cuja faixa de áudio padrão você deseja definir.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
 1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
-1. Na página Propriedades, selecione a variável **[!UICONTROL Legendas e faixas de áudio]** guia.
+1. Na página Propriedades, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
 1. Siga um destes procedimentos:
 
-   * Legendas - Sob a **Legendas** selecione um ou mais arquivos de legenda que deseja excluir do vídeo e selecione **[!UICONTROL Excluir]**.
-   * Faixas de áudio - Sob o **Faixas de áudio** selecione um ou mais arquivos de trilha de áudio que deseja excluir do vídeo e selecione **[!UICONTROL Excluir]**.
+   * Legendas — No cabeçalho **Legendas**, selecione um ou mais arquivos de legenda que deseja excluir do vídeo e selecione **[!UICONTROL Excluir]**.
+   * Faixas de Áudio — No cabeçalho **Faixas de Áudio**, selecione um ou mais arquivos de faixas de áudio que deseja excluir do vídeo e selecione **[!UICONTROL Excluir]**.
 
 1. Na caixa de diálogo Excluir, selecione **[!UICONTROL OK]**.
-1. Publique o vídeo.
+1. Publish o vídeo.
 
 ### Baixar arquivos de legenda ou de trilha de áudio que foram carregados em um vídeo
 
@@ -799,11 +799,11 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
 1. Navegue até o ativo de vídeo cuja faixa de áudio padrão você deseja definir.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
 1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
-1. Na página Propriedades, selecione a variável **[!UICONTROL Legendas e faixas de áudio]** guia.
+1. Na página Propriedades, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
 1. Siga um destes procedimentos:
 
-   * Legendas - Sob a **Legendas** selecione um ou mais arquivos de legenda que deseja baixar do vídeo e selecione **[!UICONTROL Baixar]**.
-   * Faixas de áudio - Sob o **Faixas de áudio** selecione um ou mais arquivos de trilha de áudio que deseja baixar do vídeo e selecione **[!UICONTROL Baixar]**.
+   * Legendas — No cabeçalho **Legendas**, selecione um ou mais arquivos de legenda que deseja baixar do vídeo e selecione **[!UICONTROL Baixar]**.
+   * Faixas de Áudio — No cabeçalho **Faixas de Áudio**, selecione um ou mais arquivos de faixas de áudio que você deseja baixar do vídeo e selecione **[!UICONTROL Baixar]**.
 
 1. Na caixa de diálogo Download, defina as seguintes opções:
 
@@ -812,9 +812,9 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
    | Salvar como | Use o nome de arquivo padrão especificado no campo de texto Salvar como ou especifique seu próprio nome. |
    | Criar uma pasta separada para cada ativo | Crie uma pasta para cada arquivo de legenda ou de trilha de áudio selecionado para download. |
    | Email | Use o programa de email padrão para enviar o arquivo .zip para um endereço de email especificado. |
-   | Ativos | Especifica o número de arquivos que você está baixando e o tamanho total combinado de todos os arquivos selecionados. Desmarcar essa opção esmaece (desativa) a **[!UICONTROL Baixar]** botão, impedindo o download de qualquer arquivo. |
-1. Selecionar **[!UICONTROL Baixar]**.
-1. Publique o vídeo. Consulte [Publicar ativos](publishing-dynamicmedia-assets.md).
+   | Ativos | Especifica o número de arquivos que você está baixando e o tamanho total combinado de todos os arquivos selecionados. Desmarcar esta opção esmaece (desativa) o botão **[!UICONTROL Baixar]**, impedindo que você baixe qualquer arquivo. |
+1. Selecione **[!UICONTROL Baixar]**.
+1. Publish o vídeo. Consulte [ativos do Publish](publishing-dynamicmedia-assets.md).
 
 
 
@@ -823,7 +823,7 @@ A faixa de áudio original extraída de um arquivo primário não pode ser baixa
 
 >[!IMPORTANT]
 >
->O Adobe recomenda que você [habilitar o recurso de múltiplas legendas e faixas de áudio](#enable-dash) na sua conta do Dynamic Media. Isso permite que você aproveite a arquitetura de back-end mais recente do Dynamic Media e um fluxo de trabalho simplificado para adicionar legendas, legendas e faixas de áudio aos seus vídeos.
+>A Adobe recomenda que você [habilite o recurso de várias legendas e faixas de áudio](#enable-dash) na sua conta da Dynamic Media. Isso permite que você aproveite a arquitetura de back-end mais recente do Dynamic Media e um fluxo de trabalho simplificado para adicionar legendas, legendas e faixas de áudio aos seus vídeos.
 
 Você pode estender o alcance de seus vídeos para mercados globais adicionando legendas ocultas a vídeos únicos ou a Conjuntos de vídeos adaptados. Ao adicionar legendas ocultas, você evita a necessidade de dublar o áudio ou a necessidade de usar alto-falantes nativos para regravar o áudio para cada idioma diferente. O vídeo é reproduzido no idioma em que foi gravado. Legendas em idiomas estrangeiros aparecem para que pessoas de diferentes idiomas ainda possam entender a parte de áudio.
 
@@ -837,7 +837,7 @@ Consulte também [Acessibilidade no Dynamic Media](/help/assets/dynamic-media/ac
 
 O Dynamic Media pode converter arquivos de legenda para o formato JSON (JavaScript Object Notation). Essa conversão significa que você pode incorporar o texto JSON em uma página da Web como uma transcrição oculta, mas completa, do vídeo. Os mecanismos de pesquisa podem rastrear/indexar o conteúdo para facilitar a descoberta dos vídeos e fornecer aos clientes mais detalhes sobre o conteúdo do vídeo.
 
-Consulte [Veiculação de conteúdo estático (não imagem)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) para obter mais informações sobre como usar a função JSON em um URL.
+Consulte [Veiculação de conteúdo estático (não imagem)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) para obter mais informações sobre como usar a função JSON em uma URL.
 
 **Para adicionar legendas ao vídeo:**
 
@@ -864,25 +864,25 @@ Siga as instruções na tela de um site para criar e salvar o arquivo WebVTT. Qu
 Geralmente, você deseja nomear o arquivo de legenda VTT com o mesmo nome do arquivo de vídeo e anexá-lo ao idioma local, como -EN, -FR ou -DE. Ao fazer isso, ele pode ajudar você a automatizar a geração dos URLs de vídeo usando seu sistema existente de gerenciamento de conteúdo na Web.
 
 1. No Experience Manager, carregue seu arquivo de legenda WebVTT no DAM.
-1. Navegue até a *publicado* o ativo de vídeo que deseja associar ao arquivo de legenda carregado.
+1. Navegue até o ativo de vídeo *publicado* que você deseja associar ao arquivo de legenda carregado.
 
    Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez.
 
-   Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+   Consulte [ativos do Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 1. Siga uma das seguintes opções:
 
-   * Para obter uma experiência de visualizador de vídeo pop-up, selecione **[!UICONTROL URL]**. Na caixa de diálogo URL, selecione e copie o URL para a Área de transferência e, em seguida, cole o URL em um editor de texto simples. Anexe o URL copiado do vídeo com a seguinte sintaxe:
+   * Para uma experiência de visualizador de vídeo pop-up, selecione **[!UICONTROL URL]**. Na caixa de diálogo URL, selecione e copie o URL para a Área de transferência e, em seguida, cole o URL em um editor de texto simples. Anexe o URL copiado do vídeo com a seguinte sintaxe:
 
      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-     Observe que `,1` no final do caminho da legenda. Imediatamente após a extensão de nome de arquivo VTT no caminho, você pode, como opção, ativar ou desativar o botão de legendas ocultas na barra do reprodutor de vídeo, definindo como `,1` ou `,0`, respectivamente.
+     Observe o `,1` no final do caminho da legenda. Imediatamente após a extensão de nome de arquivo VTT no caminho, você pode, como opção, ativar ou desativar o botão de legendas ocultas na barra do reprodutor de vídeo, definindo-o como `,1` ou `,0`, respectivamente.
 
-   * Para obter uma experiência de visualizador de vídeo incorporado, selecione **[!UICONTROL Código de inserção]**. Na caixa de diálogo Incorporar código, selecione e copie o código incorporado na Área de transferência e, em seguida, cole o código em um editor de texto simples. Anexe o código incorporado copiado com a seguinte sintaxe:
+   * Para uma experiência de visualizador de vídeo incorporado, selecione **[!UICONTROL Código incorporado]**. Na caixa de diálogo Incorporar código, selecione e copie o código incorporado na Área de transferência e, em seguida, cole o código em um editor de texto simples. Anexe o código incorporado copiado com a seguinte sintaxe:
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-     Observe que `,1` no final do caminho da legenda. Imediatamente após a extensão de nome de arquivo VTT no caminho, você pode, como opção, ativar ou desativar o botão de legendas ocultas na barra do reprodutor de vídeo, definindo como `,1` ou `,0`, respectivamente.
+     Observe o `,1` no final do caminho da legenda. Imediatamente após a extensão de nome de arquivo VTT no caminho, você pode, como opção, ativar ou desativar o botão de legendas ocultas na barra do reprodutor de vídeo, definindo-o como `,1` ou `,0`, respectivamente.
 
 ## Adicionar marcadores de capítulo ao vídeo {#adding-chapter-markers-to-video}
 
@@ -916,7 +916,7 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-No exemplo acima, `Chapter 1` é o identificador de sinalização e é opcional. A hora da indicação de `00:00:000 --> 01:04:364` especifica a hora de início e de término do capítulo, em `00:00:000` formato. Os últimos três dígitos são milissegundos e podem ser deixados como `000`, se preferir. O título do capítulo de `The bicycle store behind it all` é a descrição real do conteúdo do capítulo. O identificador de sinalização, o tempo de sinalização inicial e o título do capítulo são exibidos em um pop-up no reprodutor de vídeo quando um usuário passa o ponteiro do mouse sobre um ponto de sinalização visual na linha do tempo.
+No exemplo acima, `Chapter 1` é o identificador de sinalização e é opcional. A hora de sinalização de `00:00:000 --> 01:04:364` especifica a hora inicial e final do capítulo, no formato `00:00:000`. Os últimos três dígitos são milissegundos e podem ser deixados como `000`, se preferir. O título do capítulo de `The bicycle store behind it all` é a descrição real do conteúdo do capítulo. O identificador de sinalização, o tempo de sinalização inicial e o título do capítulo são exibidos em um pop-up no reprodutor de vídeo quando um usuário passa o ponteiro do mouse sobre um ponto de sinalização visual na linha do tempo.
 
 Como você está usando um visualizador de vídeo HTML5, certifique-se de que o arquivo de capítulo criado segue o padrão WebVTT (Rastreamento de texto de vídeo da Web). A extensão de nome de arquivo do capítulo é .VTT. Você pode obter mais informações sobre o padrão de legendagem WebVTT.
 
@@ -929,7 +929,7 @@ Consulte [WebVTT: o formato de faixas de texto de vídeo da Web](https://w3c.git
    Geralmente, você deseja nomear o arquivo de VTT do capítulo com o mesmo nome do arquivo de vídeo e anexá-lo com capítulos. Ao fazer isso, ele pode ajudar você a automatizar a geração dos URLs de vídeo usando seu sistema existente de gerenciamento de conteúdo na Web.
 1. No Experience Manager, carregue o arquivo de capítulo WebVTT.
 
-   Consulte [Fazer upload de ativos](/help/assets/manage-digital-assets.md#uploading-assets).
+   Consulte [Carregar ativos](/help/assets/manage-digital-assets.md#uploading-assets).
 
 1. Siga uma das seguintes opções:
 
@@ -939,19 +939,19 @@ Consulte [WebVTT: o formato de faixas de texto de vídeo da Web](https://w3c.git
        <td>Para uma experiência de visualizador de vídeo pop-up</td>
        <td>
        <ol>
-       <li>Navegue até a <i>publicado </i>ativo de vídeo que você deseja associar ao arquivo de capítulo carregado. Lembre-se de que os URLs só estão disponíveis para cópia <i>depois</i> que você <i>publicou</i> os ativos pela primeira vez. Consulte <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publicação de ativos.</a></li>
+       <li>Navegue até o <i>ativo de vídeo </i> publicado que você deseja associar ao arquivo de capítulo que você carregou. Lembre-se de que os URLs só estão disponíveis para cópia <i>depois</i> que você <i>publicou</i> os ativos pela primeira vez. Consulte <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publicação de Assets.</a></li>
        <li>No menu suspenso, selecione <strong>Visualizadores</strong>.</li>
        <li>No painel à esquerda, selecione o nome da predefinição do visualizador de vídeo. Uma visualização do vídeo é aberta em uma página separada.</li>
        <li>No painel esquerdo, na parte inferior, selecione <strong>URL</strong>.</li>
        <li>Na caixa de diálogo URL, selecione e copie o URL para a Área de transferência e, em seguida, cole o URL em um editor de texto simples.</li>
-       <li>Anexe o URL copiado do vídeo com a seguinte sintaxe para que você possa associá-lo ao URL copiado para o arquivo de capítulo:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
+       <li>Anexe a URL copiada do vídeo com a seguinte sintaxe para que você possa associá-la à URL copiada para o seu arquivo de capítulo:<br /> <br /> <code>&navigation=<<i>full_copied_URL_path_to_chapter_file</i>.vtt></code><br /> </li>
        </ol> </td>
       </tr>
       <tr>
-       <td>Para uma experiência de visualizador de vídeo incorporado<br /> </td>
+       <td>Para uma experiência de visualizador de vídeo inserido<br /> </td>
        <td>
        <ol>
-       <li>Navegue até a <i>publicado </i>ativo de vídeo que você deseja associar ao arquivo de capítulo carregado. Lembre-se de que os URLs só estão disponíveis para cópia <i>depois</i> que você <i>publicou</i> os ativos pela primeira vez. Consulte <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publicação de ativos.</a></li>
+       <li>Navegue até o <i>ativo de vídeo </i> publicado que você deseja associar ao arquivo de capítulo que você carregou. Lembre-se de que os URLs só estão disponíveis para cópia <i>depois</i> que você <i>publicou</i> os ativos pela primeira vez. Consulte <a href="/help/assets/dynamic-media/publishing-dynamicmedia-assets.md">Publicação de Assets.</a></li>
        <li>No menu suspenso, selecione <strong>Visualizadores</strong>.</li>
        <li>No painel à esquerda, selecione o nome da predefinição do visualizador de vídeo. Uma visualização do vídeo é aberta em uma página separada.</li>
        <li>No painel esquerdo, na parte inferior, selecione <strong>Incorporar</strong>.</li>
@@ -968,9 +968,9 @@ Consulte [WebVTT: o formato de faixas de texto de vídeo da Web](https://w3c.git
 
 Uma miniatura de vídeo é uma versão em tamanho reduzido de um quadro de vídeo ou um ativo de imagem que representa o vídeo para o cliente. A miniatura deve servir para incentivar o cliente a selecionar o vídeo.
 
-Todos os vídeos no Experience Manager devem ter uma miniatura associada; não é possível excluir uma miniatura sem substituí-la. Por padrão, ao carregar um vídeo no Experience Manager, o primeiro quadro é usado como miniatura. Entretanto, é possível personalizar a miniatura para fins de marca ou pesquisa visual, por exemplo. Ao personalizar uma miniatura do vídeo, você pode reproduzi-lo e pausá-lo no quadro que deseja usar. Ou você pode selecionar um ativo de imagem que já tenha sido carregado e *publicado* no gerenciador de ativos digitais.
+Todos os vídeos no Experience Manager devem ter uma miniatura associada; não é possível excluir uma miniatura sem substituí-la. Por padrão, ao carregar um vídeo no Experience Manager, o primeiro quadro é usado como miniatura. Entretanto, é possível personalizar a miniatura para fins de marca ou pesquisa visual, por exemplo. Ao personalizar uma miniatura do vídeo, você pode reproduzi-lo e pausá-lo no quadro que deseja usar. Ou você pode selecionar um ativo de imagem que já tenha carregado e *publicado* no gerenciador de ativos digitais.
 
-Quando a miniatura de um vídeo é alterada, a geração da miniatura por meio do Serviço do Asset compute no reprocessamento do vídeo é ignorada.
+Quando a miniatura de um vídeo é alterada, a geração da miniatura por meio do Serviço do Asset Compute no reprocessamento do vídeo é ignorada.
 
 A capacidade de personalizar uma miniatura de vídeo só estará disponível após você ter aplicado um perfil de vídeo à pasta em que o vídeo está localizado.
 
@@ -981,25 +981,25 @@ A capacidade de personalizar uma miniatura de vídeo só estará disponível ap�
    * Criada uma pasta para seus ativos de vídeo.
    * [Aplicado um perfil de vídeo à pasta](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   * [Seus vídeos foram carregados para a pasta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
+   * [Carregou seus vídeos para a pasta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
 1. Navegue até um ativo de vídeo carregado cuja imagem em miniatura você deseja alterar.
-1. No modo de seleção de ativos, **[!UICONTROL Exibição de lista]** ou **[!UICONTROL Exibição de cartão]**, selecione o ativo de vídeo.
-1. Na barra de ferramentas, selecione o **[!UICONTROL Propriedades]** ícone (um círculo com um &quot;i&quot;).
+1. No modo de seleção de ativos, em **[!UICONTROL Exibição em lista]** ou **[!UICONTROL Exibição de cartão]**, selecione o ativo de vídeo.
+1. Na barra de ferramentas, selecione o ícone **[!UICONTROL Propriedades]** (um círculo contendo um &quot;i&quot;).
 1. Na página Propriedades do vídeo, selecione **[!UICONTROL Alterar miniatura]**.
 1. Na página Alterar miniatura, siga um destes procedimentos:
 
    * Para usar um quadro do vídeo como a nova miniatura:
 
-      * Na barra de ferramentas, selecione **[!UICONTROL Selecionar quadro a partir do vídeo]**.
+      * Na barra de ferramentas, selecione **[!UICONTROL Selecionar quadro do vídeo]**.
       * Selecione o botão Reproduzir e, em seguida, o botão Pausar no quadro que você deseja capturar como a nova miniatura do vídeo.
 
    * Para usar um ativo de imagem como a nova miniatura:
 
-      * Na barra de ferramentas, selecione **[!UICONTROL Selecionar miniatura dos ativos]**.
-      * Selecionar **[!UICONTROL Selecionar miniatura]**.
+      * Na barra de ferramentas, selecione **[!UICONTROL Selecionar miniatura do Assets]**.
+      * Selecione **[!UICONTROL Selecionar miniatura]**.
       * Navegue até um ativo de imagem carregado e publicado anteriormente que você deseja usar. O ativo é redimensionado automaticamente para servir como uma imagem em miniatura do vídeo.
-      * Selecione o ativo de imagem e **[!UICONTROL Selecionar]**.
+      * Selecione o ativo de imagem e selecione **[!UICONTROL Selecionar]**.
 
 1. Na página Alterar miniatura, selecione **[!UICONTROL Salvar alteração]**.
 1. Na página Propriedades do vídeo, no canto superior direito, selecione **[!UICONTROL Salvar e fechar]**.
@@ -1101,7 +1101,7 @@ Os vídeos processados no Dynamic Media podem ser usados por meio de visualizado
 
 ### Sobre a API getVideoManifestURI
 
-A variável `getVideoManifestURI`A API é exposta por meio de c`q-scene7-api:com.day.cq.dam.scene7.api` e podem ser usados para gerar os seguintes URLs de manifesto:
+A API `getVideoManifestURI`é exposta por meio de c`q-scene7-api:com.day.cq.dam.scene7.api` e pode ser usada para gerar as seguintes URLs de manifesto:
 
 ```java
 /**   
@@ -1127,7 +1127,7 @@ Essa API inclui os três parâmetros a seguir:
 | `manifestType` | Pode ser `ManifestType.DASH` ou `ManifestType.HLS` |
 | `onlyIfPublished` | Definido como verdadeiro caso o uri de manifesto seja gerado somente se for publicado e estiver disponível no nível de entrega. |
 
-Para buscar os URLs de manifesto para vídeos usando o método acima, adicione um [perfil de codificação de vídeo](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) para uma pasta &quot;upload videos&quot;. O Dynamic Media processa esses vídeos com base nas codificações encontradas no arquivo de codificação de vídeo atribuído à pasta. Agora é possível invocar a API acima para buscar URLs de manifesto para os vídeos carregados.
+Para buscar as URLs de manifesto para vídeos usando o método acima, adicione um [perfil de codificação de vídeo](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) a uma pasta &quot;carregar vídeos&quot;. O Dynamic Media processa esses vídeos com base nas codificações encontradas no arquivo de codificação de vídeo atribuído à pasta. Agora é possível invocar a API acima para buscar URLs de manifesto para os vídeos carregados.
 
 ### Cenários de erro
 
@@ -1135,14 +1135,14 @@ A API retorna nulo se houver erros. As exceções são registradas em logs de er
 
 * Um `IllegalArgumentException` é registrado para qualquer um dos seguintes:
 
-   * A variável `resource` o parâmetro transmitido é nulo.
-   * A variável `resource` o parâmetro transmitido não é um vídeo.
-   * A variável `manifestType` o parâmetro transmitido é nulo.
-   * A variável `onlyIfPublished` é passado como true, mas o vídeo não é publicado.
+   * O parâmetro `resource` passado é nulo.
+   * O parâmetro `resource` passado não é um vídeo.
+   * O parâmetro `manifestType` passado é nulo.
+   * O parâmetro `onlyIfPublished` é passado como true, mas o vídeo não foi publicado.
    * O vídeo não foi assimilado usando um conjunto de vídeos adaptáveis do Dynamic Media.
 
-* `IOException` é registrado quando há um problema de conexão com o Dynamic Media.
-* `UnsupportedOperationException` é registrado quando um `manifestType` o parâmetro transmitido é `ManifestType.DASH`, enquanto o vídeo não tiver sido processado usando o formato DASH.
+* O `IOException` é registrado quando há um problema de conexão com o Dynamic Media.
+* `UnsupportedOperationException` é registrado quando um parâmetro `manifestType` passado é `ManifestType.DASH`, enquanto o vídeo não foi processado usando o formato DASH.
 
 <!-- THE REMAINING SECTION IS FOR 6.5 ONLY 
 

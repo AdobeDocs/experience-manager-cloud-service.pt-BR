@@ -21,7 +21,7 @@ ht-degree: 52%
 
 A ferramenta Transferência de conteúdo é uma ferramenta desenvolvida pelo Adobe que pode ser usada para iniciar a migração do conteúdo existente de uma instância de AEM de origem (no local ou AMS) para a instância do AEM Cloud Service de destino.
 
-Essa ferramenta também transfere entidades principais (usuários ou grupos) automaticamente.  Consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obter mais informações.
+Essa ferramenta também transfere entidades principais (usuários ou grupos) automaticamente.  Consulte [Mapeamento de Usuário e Migração de Entidade de Segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obter mais informações.
 
 A ferramenta Transferência de conteúdo integra o processo de transferência de conteúdo ao Cloud Acceleration Manager. Isso capacita o usuário com todos os benefícios que oferece:
 
@@ -39,7 +39,7 @@ Existem duas fases associadas à transferência de conteúdo:
    Consulte [Processo de extração na transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para obter mais detalhes.
 
    >[!NOTE]
-   >O Mapeamento de usuário agora é executado automaticamente como parte da fase de Extração no autor (mas pode, opcionalmente, ser desativado no autor ou ativado na publicação). Consulte [Mapeamento de usuários e migração de entidade de segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obter mais detalhes.
+   >O Mapeamento de usuário agora é executado automaticamente como parte da fase de Extração no autor (mas pode, opcionalmente, ser desativado no autor ou ativado na publicação). Consulte [Mapeamento de Usuário e Migração de Entidade de Segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obter mais detalhes.
 
 1. **Assimilação**: refere-se à assimilação de conteúdo do *conjunto de migração* na instância de destino do Cloud Service.
 

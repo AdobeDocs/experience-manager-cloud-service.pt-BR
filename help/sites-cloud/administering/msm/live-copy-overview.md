@@ -95,7 +95,7 @@ Quando você seleciona uma página de Live Copy, as seguintes ações estão dis
 * **[Sincronizar](overview.md#rollout-and-synchronize)** — sincroniza uma Live Copy para extrair as alterações da origem para a Live Copy.
 * **[Redefinir](creating-live-copies.md#resetting-a-live-copy-page)** — redefine uma página de Live Copy para remover todos os cancelamentos de herança e retornar a página ao mesmo estado que a página de origem.
 * **[Suspender](overview.md#suspending-and-cancelling-inheritance-and-synchronization)** — desativa temporariamente a relação ativa entre uma Live Copy e sua página do blueprint.
-* **[Retomar](creating-live-copies.md#resuming-inheritance-for-a-page)** - Resume permite que você restaure uma relação suspensa.
+* **[Retomar](creating-live-copies.md#resuming-inheritance-for-a-page)** - Retomar permite que você restaure uma relação suspensa.
 * **[Destacar](overview.md#detaching-a-live-copy)** — remove permanentemente a relação ativa entre uma Live Copy e sua página de blueprint.
 
 ## Status do relacionamento {#relationship-status}

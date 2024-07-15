@@ -10,15 +10,15 @@ ht-degree: 1%
 
 ---
 
-# Ativos de referência para o Forms as a Cloud Service {#reference-themes}
+# Assets de referência para o Forms as a Cloud Service {#reference-themes}
 
-É possível obter os temas de referência, os modelos e o modelo de dados de formulário (FDM) instalando o [Pacote de ativos de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ele ajuda a iniciar e acelerar rapidamente o desenvolvimento do Adaptive Forms. Você pode usar [Gerenciador de pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=pt-BR) para implantar esse pacote no ambiente as a Cloud Service do AEM Forms.
+Você pode obter temas de referência, modelos e modelo de dados de formulário (FDM) instalando o [pacote Assets de Referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Ele ajuda a iniciar e acelerar rapidamente o desenvolvimento do Adaptive Forms. Você pode usar o [Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=pt-BR) para implantar este pacote no ambiente as a Cloud Service do AEM Forms.
 
 Os ativos de referência incluídos no pacote são:
 
 ## Temas {#themes}
 
-[Temas](/help/forms/themes.md) As permitem criar estilos de formulários sem um conhecimento profundo de CSS. Os seguintes temas estão incluídos:
+[Os temas](/help/forms/themes.md) permitem estilizar os formulários sem um conhecimento profundo de CSS. Os seguintes temas estão incluídos:
 
 * Berilo
 * Tranquilo
@@ -28,11 +28,11 @@ Os ativos de referência incluídos no pacote são:
 
 Cada tema contém um estilo único e elegante que você pode usar para criar formulários adaptáveis deliciosos para seus usuários. Ele contém um estilo exclusivo para seletores, como painel, caixa de texto, caixa numérica, botão de opção, tabela e switch. Os estilos nesses temas são baseados na exigência. Por exemplo, em um cenário específico, você precisa de um tema minimalista com fontes limpas. O tema Urbane permite alcançar esse olhar.
 
-![Temas de referência](/help/forms/assets/ref-themes.png)
+![Temas de Referência](/help/forms/assets/ref-themes.png)
 
 Os temas incluídos neste pacote são responsivos e o estilo nesses temas é definido para exibições móveis e em desktop. A maioria dos navegadores modernos em uma variedade de dispositivos pode renderizar formulários aplicados com um desses temas sem qualquer problema.
 
-Para obter mais informações sobre a instalação do pacote, consulte [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md).
+Para obter mais informações sobre como instalar o pacote, consulte [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md).
 
 ### Berilo {#beryl}
 
@@ -75,7 +75,7 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 O tema Tranquil fornece tons claros e escuros do esquema de cores Tranquil para destacar diferentes componentes de um formulário. Por exemplo, botões de opção, painéis e guias obtêm um tom diferente de verde.
 
-![Tema tranquilo](/help/forms/assets/tranquil.png)
+![Tema simples](/help/forms/assets/tranquil.png)
 
 <!--[Click to enlarge](assets/tranquil-1.png)-->
 
@@ -90,7 +90,7 @@ O tema ultramarino usa sombras azuis profundas para realçar componentes como gu
 
 O tema Urbane enfatiza uma aparência minimalista e funcional para o seu formulário. Ao aplicar o tema Urbane ao formulário, você pode ver que os componentes são planos. Os painéis têm contornos finos para criar uma aparência moderna.
 
-![Tema Urbane](/help/forms/assets/urbane.png)
+![Tema urbano](/help/forms/assets/urbane.png)
 <!--[Click to enlarge](assets/urbane-1.png)-->
 
 <!-- ## U.S. Web Design Standards {#u-s-web-design-standards}
@@ -127,4 +127,4 @@ O Modelo de dados do Microsoft Dynamics 365 ajuda a usar o Microsoft Dynamics 36
 
 O modelo de dados do Salesforce ajuda a usar o Salesforce como uma fonte de dados. Ele também fornece serviços de exemplo para ler, atualizar, excluir e adicionar dados ao Salesforce.
 
-![Modelo de dados do formulário do Salesforce](/help/forms/assets/salesforce-fdm.png)
+![Modelo de dados de formulário do Salesforce](/help/forms/assets/salesforce-fdm.png)

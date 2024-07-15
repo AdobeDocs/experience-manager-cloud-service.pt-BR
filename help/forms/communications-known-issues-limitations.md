@@ -19,7 +19,7 @@ Antes de começar a usar as APIs de comunicação, analise as seguintes consider
 
 ### Dados de formulário {#form-data}
 
-As APIs de comunicação aceitam um design de formulário que normalmente é criado no Designer e dados de formulário XML como entrada. Para preencher um documento com dados, um elemento XML deve existir nos dados de formulário XML para cada campo de formulário que você deseja preencher. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML será ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos. O fator importante é que os elementos XML são especificados com valores correspondentes.
+As APIs de comunicação aceitam um design de formulário que normalmente é criado em dados de formulário Designer e XML como entrada. Para preencher um documento com dados, um elemento XML deve existir nos dados de formulário XML para cada campo de formulário que você deseja preencher. O nome do elemento XML deve corresponder ao nome do campo. Um elemento XML será ignorado se não corresponder a um campo de formulário ou se o nome do elemento XML não corresponder ao nome do campo. Não é necessário corresponder à ordem em que os elementos XML são exibidos. O fator importante é que os elementos XML são especificados com valores correspondentes.
 
 Considere o exemplo de formulário de aplicativo de empréstimo a seguir:
 
@@ -73,16 +73,16 @@ Use sempre o arquivo XDC correto para a impressora. Por exemplo, evite escolher 
 
 ### Scripts somente para formulários XFA (XDP/PDF) {#scripts}
 
-Um design de formulário usado com as APIs de comunicações pode conter scripts executados no servidor. Certifique-se de que um design de formulário não contenha scripts que sejam executados no cliente. Para obter informações sobre como criar scripts de design de formulário, consulte [Ajuda do Designer](use-forms-designer.md).
+Um design de formulário usado com as APIs de comunicações pode conter scripts executados no servidor. Certifique-se de que um design de formulário não contenha scripts que sejam executados no cliente. Para obter informações sobre como criar scripts de design de formulário, consulte a [Ajuda do Designer](use-forms-designer.md).
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
 
 ### Mapeamento de fontes {#font-mapping}
 
-Para criar um formulário que use fontes residentes na impressora, escolha um nome de fonte no Designer que corresponda às fontes disponíveis na impressora. Uma lista de fontes compatíveis com PCL ou PostScript está localizada nos perfis de dispositivo correspondentes (arquivos XDC). Como alternativa, o mapeamento de fontes pode ser criado para mapear fontes não residentes na impressora para fontes residentes na impressora de um nome de fonte diferente. Por exemplo, em um cenário PostScript, as referências à fonte Arial® podem ser mapeadas para a fonte Helvetica® residente na impressora.
+Para criar um formulário que use fontes residentes na impressora, escolha no Designer um nome de fonte que corresponda às fontes disponíveis na impressora. Uma lista de fontes compatíveis com PCL ou PostScript está localizada nos perfis de dispositivo correspondentes (arquivos XDC). Como alternativa, o mapeamento de fontes pode ser criado para mapear fontes não residentes na impressora para fontes residentes na impressora de um nome de fonte diferente. Por exemplo, em uma situação PostScript, as referências à fonte Arial® podem ser mapeadas para a fonte Helvetica® residente na impressora.
 
-Se uma fonte estiver instalada em um computador cliente, ela estará disponível na lista suspensa no Designer. Se a fonte não estiver instalada, será necessário especificar o nome da fonte manualmente. A opção &quot;Substituir permanentemente fontes indisponíveis&quot; no Designer pode estar desativada. Caso contrário, quando o arquivo XDP é salvo no Designer, o nome da fonte de substituição é gravado no arquivo XDP. Isso significa que a fonte residente na impressora não é usada.
+Se uma fonte estiver instalada em um computador cliente, ela estará disponível na lista suspensa no Designer. Se a fonte não estiver instalada, será necessário especificar o nome da fonte manualmente. A opção &quot;Substituir permanentemente fontes indisponíveis&quot; no Designer pode estar desativada. Caso contrário, quando o arquivo XDP for salvo no Designer, o nome da fonte de substituição será gravado no arquivo XDP. Isso significa que a fonte residente na impressora não é usada.
 
 Existem dois tipos de fontes OpenType®. Um tipo é uma fonte TrueType OpenType® suportada por PCL. O outro é o CFF OpenType®. A saída de PDF e PostScript suporta fontes Type-1, TrueType e OpenType® incorporadas. A saída PCL suporta fontes TrueType incorporadas.
 
@@ -181,7 +181,7 @@ A tabela a seguir especifica as opções de XCI.
 
 No momento, você pode usar o Armazenamento do Microsoft Azure para salvar dados de entrada e documentos gerados. O armazenamento do Microsoft Azure fornece várias opções para [automatizar operações de movimentação de dados](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
 
-**Uma conta de Armazenamento do Microsoft Azure está incluída na licença do Cloud Service da Experience Manager Forms?**
+**Uma conta de Armazenamento do Microsoft Azure está incluída na licença do Cloud Service Experience Manager Forms?**
 
 A conta de Armazenamento do Microsoft Azure é independente da licença Cloud Service do Experience Manager Forms.
 
@@ -189,7 +189,7 @@ A conta de Armazenamento do Microsoft Azure é independente da licença Cloud Se
 
 Os dados de entrada e saída são salvos somente no Armazenamento do Microsoft Azure.
 
-**As APIs de comunicação estão disponíveis apenas para o Experience Manager Forms Cloud Service? É possível obter funcionalidade semelhante no ambiente local?**
+**As APIs de comunicação estão disponíveis apenas para o Experience Manager Forms Cloud Service? É possível obter funcionalidade semelhante em um ambiente local?**
 
 Você pode usar o serviço AEM Forms Output para combinar um modelo (XFA ou PDF) com os dados do cliente para gerar documentos nos formatos PDF, PS, PCL e ZPL.
 
@@ -203,13 +203,13 @@ Em comparação com o ambiente local, o Cloud Service oferece benefícios adicio
 
 **Where is data hosted?** -->
 
-**Posso executar várias operações em lote simultaneamente?**
+**É possível executar várias operações em lote simultaneamente?**
 Sim, você pode executar várias operações em lote simultaneamente. Sempre use pastas de origem e destino diferentes para cada operação para evitar conflitos.
 
 >[!MORELIKETHIS]
 >
 >* [Introdução às Comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [Arquitetura as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação](/help/forms/aem-forms-cloud-service-architecture.md)
->* [Processamento de comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
+>* [as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Processamento da comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
 

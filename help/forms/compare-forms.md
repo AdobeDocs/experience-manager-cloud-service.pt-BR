@@ -14,11 +14,11 @@ ht-degree: 1%
 
 # Comparar Forms adaptável {#compare-two-forms}
 
-<span class="preview"> Esse é um recurso de pré-lançamento acessível por meio de nossa [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
+<span class="preview"> Este é um recurso de pré-lançamento acessível através do nosso [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
 
 Quando os autores de formulários precisam comparar dois formulários distintos com base nos campos, conteúdo e componentes de formulário, eles comparam os dois formulários. O autor do formulário deve verificar se os dois formulários estão no mesmo diretório ou pasta para compará-los. Para comparar dois formulários adaptáveis distintos, execute as seguintes etapas:
 
-1. Selecione formulários adaptáveis e clique em **[!UICONTROL Comparar]**.
+1. Selecione os formulários adaptáveis e clique em **[!UICONTROL Comparar]**.
 
    ![Comparar formulários adaptáveis](compare-two-forms.png)
 

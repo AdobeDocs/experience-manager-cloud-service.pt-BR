@@ -21,7 +21,7 @@ ht-degree: 90%
 >
 >O recurso para download e o destino padrão do seu navegador são usados.
 
-A variável **Criar exportação de arquivos CSV** permite selecionar:
+O assistente **Criar exportação de arquivos CSV** permite selecionar:
 
 * Propriedades para exportar
    * Metadados
@@ -46,7 +46,7 @@ O arquivo `export.csv` resultante pode ser aberto no Excel ou qualquer outro apl
 
 Para criar uma exportação de arquivos CSV:
 
-1. Abra o **Sites** navegue até o local desejado, se necessário.
+1. Abra o console **Sites** e navegue até o local desejado, se necessário.
    * A opção Criar **relatório de CSV** está disponível ao navegar pelo console **Sites** (na exibição de Lista)
    * É uma opção do menu suspenso **Criar**:
 

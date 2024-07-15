@@ -1,5 +1,5 @@
 ---
-title: Fragmentos de conteúdo - Excluir considerações (Ativos - Fragmentos de conteúdo)
+title: Fragmentos de conteúdo - Excluir considerações (Assets - Fragmentos de conteúdo)
 description: Analise essas considerações importantes antes de definir as políticas de exclusão de fragmentos de conteúdo no AEM. Os fragmentos de conteúdo são uma ferramenta eficiente para fornecer conteúdo headless, e as implicações de excluí-los devem ser cuidadosamente consideradas.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 feature: Content Fragments

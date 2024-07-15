@@ -1,6 +1,6 @@
 ---
-title: Como o Assets visualiza o AEM beneficia você?
-description: Saiba mais sobre os principais benefícios da visualização de Ativos no AEM. O Adobe, usando sua experiência em capacitar profissionais de marketing e criativos, apresenta uma nova experiência de usuário que muda o jogo.
+title: Como a Assets vê o AEM beneficia você?
+description: Saiba mais sobre os principais benefícios da visualização do Assets no AEM. O Adobe, usando sua experiência em capacitar profissionais de marketing e criativos, apresenta uma nova experiência de usuário que muda o jogo.
 mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
@@ -12,13 +12,13 @@ ht-degree: 69%
 
 ---
 
-# Apresentação da visualização de Ativos {#assets-view}
+# Apresentação da visualização do Assets {#assets-view}
 
 ![Implantar o Assets Essentials](assets/banner-image.jpg)
 
 No atual cenário digital de ritmo acelerado, onde a criação e a entrega de conteúdo em tempo real são essenciais, uma experiência de Gerenciamento de ativos digitais (DAM) desenvolvida para oferecer velocidade de marketing downstream é fundamental. O Adobe, usando sua experiência em capacitar profissionais de marketing e criativos, apresenta uma nova experiência de usuário que muda o jogo. Essa abordagem de fluxo de trabalho revoluciona a maneira como as empresas lidam com seus ativos digitais dinâmicos, capacitando profissionais de marketing a maximizar a eficiência de localização, colaboração, personalização e entrega de ativos. Esses fluxos de trabalho simplificados aumentam a velocidade do conteúdo e impulsionam suas iniciativas de marketing para novos patamares.
 
-Para saber mais sobre as experiências com base em persona disponíveis para o Assets as a Cloud Service, consulte [Apresentação do Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
+Para saber mais sobre as experiências com base em persona disponíveis para o Assets as a Cloud Service, consulte [Introdução ao Assets as a Cloud Service](/help/assets/overview.md#persona-based-experiences).
 
 ## Como acessar a visualização do Assets? {#access-assets-view}
 
@@ -49,7 +49,7 @@ Para saber mais sobre as experiências com base em persona disponíveis para o A
 
 ## Por que usar a visualização do Assets?
 
-A exibição de Ativos fornece os seguintes benefícios principais que não estão disponíveis na exibição de Administrador:
+A visualização Assets oferece os seguintes benefícios principais que não estão disponíveis na visualização de Administrador:
 
 * [Painel Meu espaço de trabalho para fornecer experiências otimizadas](#my-workspace-for-streamlined-experience)
 * [Abordagem com foco na pesquisa para aumentar a eficiência](#search-first)
@@ -69,7 +69,7 @@ Dê as boas-vindas a uma solução de gerenciamento de ativos digitais que compr
 
 ### Insights para tomar decisões orientadas por dados {#insights-data}
 
-Para acompanhar a velocidade do conteúdo, os insights acionáveis são essenciais. A visualização de Ativos oferece insights avançados no Meu espaço de trabalho, fornecendo dados valiosos sobre o desempenho dos ativos, o uso do público-alvo e os envolvimentos. Profissionais de marketing podem tomar decisões orientadas por dados, otimizar estratégias de conteúdo e melhorar a entrega downstream para alcançar resultados ideais. Com acesso a insights significativos, as empresas podem se manter à frente da concorrência e gerar resultados excepcionais.
+Para acompanhar a velocidade do conteúdo, os insights acionáveis são essenciais. A visualização do Assets oferece insights avançados no My Workspace, fornecendo dados valiosos sobre o desempenho do ativo, o uso do público-alvo e os envolvimentos. Profissionais de marketing podem tomar decisões orientadas por dados, otimizar estratégias de conteúdo e melhorar a entrega downstream para alcançar resultados ideais. Com acesso a insights significativos, as empresas podem se manter à frente da concorrência e gerar resultados excepcionais.
 
 ![Visão geral dos insights](assets/insights-overview.gif)
 
@@ -85,7 +85,7 @@ Assista a este vídeo para entender o potencial da integração da visualizaçã
 
 [![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
 
-As próximas versões do Assets as a Cloud Service também incluirão [integração de Adobe Firefly via Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
+As próximas versões para o Assets as a Cloud Service também incluirão a integração do [Adobe Firefly via Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
 
 ### Uploads de pasta para configurar a estrutura hierárquica da organização {#folder-uploads}
 
@@ -103,7 +103,7 @@ Explore o potencial da biblioteca de ativos digitais da sua organização com um
 
 ### Assinatura do conteúdo do repositório para um gerenciamento de ativos eficiente {#subscribe-content}
 
-A visualização de Ativos fornece a capacidade de monitorar as operações realizadas nos ativos, pastas ou coleções disponíveis no repositório. Você precisa selecionar e assinar o conteúdo sobre o qual deseja receber notificações. Você também pode configurar os tipos de evento, como exclusão do conteúdo assinado, modificações no conteúdo assinado etc. As notificações são enviadas a você somente para esses tipos de evento.
+A visualização do Assets fornece a capacidade de monitorar as operações realizadas nos ativos, pastas ou coleções disponíveis no repositório. Você precisa selecionar e assinar o conteúdo sobre o qual deseja receber notificações. Você também pode configurar os tipos de evento, como exclusão do conteúdo assinado, modificações no conteúdo assinado etc. As notificações são enviadas a você somente para esses tipos de evento.
 
 ![Receber notificações](assets/notifications.gif)
 
@@ -123,10 +123,10 @@ Além desses recursos, a visualização do Assets também permite executar os se
 
 * Renomeie ativos e pastas disponíveis no repositório.
 
-A visualização de ativos é personalizada para simplificar fluxos de trabalho, promover a colaboração e acelerar a entrega de ativos. Ao adotar a velocidade do conteúdo, os profissionais de marketing podem desbloquear todo o potencial de seus ativos digitais e liberar a criatividade como nunca antes.
+A visualização do Assets é personalizada para simplificar os fluxos de trabalho, promover a colaboração e acelerar a entrega de ativos. Ao adotar a velocidade do conteúdo, os profissionais de marketing podem desbloquear todo o potencial de seus ativos digitais e liberar a criatividade como nunca antes.
 
 
-Use estes links para começar a usar a exibição de Ativos rapidamente:
+Use estes links para começar rapidamente a usar a visualização do Assets:
 
 * [Meu espaço de trabalho](/help/assets/my-workspace-assets-view.md)
-* [Introdução ao uso da visualização de Ativos](/help/assets/get-started-assets-view.md)
+* [Introdução à visualização do Assets](/help/assets/get-started-assets-view.md)

@@ -111,7 +111,7 @@ Se [adicionar uma configuração OSGi de RepositoryInitializer](#cloud-manager-d
    * Siga estas etapas para simular o problema em uma configuração local.
       1. Instale uma instância de criação e publicação localmente usando os jars mais recentes do SDK do AEM.
       1. Faça logon na instância de criação.
-      1. Ir para **Ferramentas** > **Implantação** > **Distribuição**.
+      1. Vá para **Ferramentas** > **Implantação** > **Distribuição**.
       1. Distribua os pacotes de conteúdo que fazem parte da base de código e veja se a fila é bloqueada com um erro.
 
 ## Não consigo definir uma variável usando um comando aio. O que posso fazer? {#set-variable}

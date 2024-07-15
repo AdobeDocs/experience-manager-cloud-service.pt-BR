@@ -33,7 +33,7 @@ Esta página fornece uma visão geral da reutilização de conteúdo com o MSM. 
 
 >[!NOTE]
 >
->O MSM também pode ser usado para ativos, inclusive fragmentos de conteúdo. Consulte [Reutilizar fragmentos de conteúdo usando o MSM para ativos](/help/assets/reuse-assets-using-msm.md) (disponível somente por meio do console de Ativos ).
+>O MSM também pode ser usado para ativos, inclusive fragmentos de conteúdo. Consulte [Reutilizar fragmentos de conteúdo usando o MSM para Assets](/help/assets/reuse-assets-using-msm.md) (disponível somente por meio do console do Assets).
 
 ## Cenários possíveis {#possible-scenarios}
 
@@ -122,7 +122,7 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 * **Criar Live Copy** (**Sites**)
 
-   * O MSM permite [crie uma Live Copy ad-hoc (única) de uma página individual ou sub-ramificação de um site.](creating-live-copies.md#creating-a-live-copy-of-a-page) Por exemplo, duplicar uma sub-ramificação para fornecer informações sobre uma versão nova/atualizada de um produto. Criar uma Live Copy dessa maneira:
+   * O MSM permite [criar uma Live Copy ad-hoc (única) de uma página individual ou sub-ramificação de um site.](creating-live-copies.md#creating-a-live-copy-of-a-page) Por exemplo, duplicar uma sub-ramificação para fornecer informações sobre uma versão nova/atualizada de um produto. Criar uma Live Copy dessa maneira:
       * Cria uma Live Copy ad-hoc (nenhuma configuração do blueprint é necessária).
       * Pode ser usado para criar (imediatamente) uma Live Copy de qualquer página/ramificação.
       * Requer **sincronização** (não fornece o botão **Implantação**).
@@ -137,15 +137,15 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 * **Visão geral da Live Copy** (**Sites**)
 
-   * Esse console permite [visualizar e gerenciar o blueprint e suas Live Copies.](live-copy-overview.md)
+   * Este console permite que você [exiba e gerencie seu blueprint e suas Live Copies.](live-copy-overview.md)
 
 * **Blueprints** (**Ferramentas** - **Sites**)
 
-   * Esse console permite [criar e gerenciar as configurações do blueprint.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Este console permite [criar e gerenciar as configurações do blueprint.](creating-live-copies.md#creating-a-blueprint-configuration)
 
 >[!NOTE]
 >
->O MSM pode ser usado com páginas e [Fragmentos de experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md) já que esses fragmentos fazem parte de uma experiência (página).
+>O MSM pode ser usado com páginas e [Fragmentos de experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md), pois esses fragmentos fazem parte de uma experiência (página).
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ Como introdução, a tabela a seguir fornece uma visão geral dos principais ter
 
 >[!TIP]
 >
->Consulte [Extensão do gerenciador de vários sites](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) para os nomes dos objetos.
+>Consulte [Estendendo o Gerenciador de Vários Sites](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) para obter os nomes dos objetos.
 
 ## Live Copies {#live-copies}
 
@@ -194,7 +194,7 @@ No exemplo anterior, `/content/wknd/language-masters/en` é o site principal glo
 
 * O conteúdo abaixo de `/content/wknd/language-masters/en` é a origem.
 * O conteúdo abaixo de `/content/wknd/language-masters/en` é copiado abaixo dos nós `/content/wknd/us/en/` e `/content/wknd/ca/en`. Estas são as Live Copies.
-* Os autores alteram as páginas abaixo `/content/wknd/language-masters/en`.
+* Os autores alteram as páginas abaixo de `/content/wknd/language-masters/en`.
 * Quando acionado, o MSM sincroniza essas alterações nas Live Copies.
 
 ### Live Copies - Composição {#live-copies-composition}
@@ -324,11 +324,11 @@ As etapas a seguir descrevem o procedimento padrão de uso do MSM para reutiliza
 1. Desenvolva o conteúdo do site de origem.
 1. Determine a configuração de implantação a ser usada.
 
-   1. MSM [instala várias configurações de implantação](live-copy-sync-config.md#installed-rollout-configurations) que podem atender a vários casos de uso.
-   1. Opcionalmente, é possível [criar uma configuração de implantação](live-copy-sync-config.md#creating-a-rollout-configuration) se necessário.
+   1. O MSM [instala várias configurações de implantação](live-copy-sync-config.md#installed-rollout-configurations) que podem atender a vários casos de uso.
+   1. Opcionalmente, você pode [criar uma configuração de implantação](live-copy-sync-config.md#creating-a-rollout-configuration), se necessário.
 
 1. Determine onde você precisa [especificar as configurações de implantação a serem usadas](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) e configure conforme necessário.
-1. Se necessário, [criar uma configuração de blueprint](creating-live-copies.md#creating-a-blueprint-configuration) que identifica o conteúdo original da Live Copy.
+1. Se necessário, [crie uma configuração de blueprint](creating-live-copies.md#creating-a-blueprint-configuration) que identifique o conteúdo original da Live Copy.
 1. [Crie uma Live Copy.](creating-live-copies.md#creating-a-live-copy)
 1. Faça alterações no conteúdo original, conforme necessário. Você deve utilizar o processo normal de revisão e aprovação de conteúdo estabelecido pela organização.
 1. [Implante](creating-live-copies.md#rolling-out-a-blueprint) o blueprint ou [sincronize a Live Copy](creating-live-copies.md#synchronizing-a-live-copy) com as alterações.

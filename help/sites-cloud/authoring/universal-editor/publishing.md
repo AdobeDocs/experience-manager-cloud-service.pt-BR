@@ -31,7 +31,7 @@ Quando hospedado externamente, o objetivo do aplicativo web é garantir que o co
 
 Para determinar se a camada do autor ou de publicação deve ser acessada, uma simples declaração condicional pode ser utilizada no aplicativo ao detectar que seu conteúdo está sendo aberto no editor, a fim de escolher o ponto de acesso apropriado do autor ou da publicação.
 
-Outra opção é implantar o aplicativo em dois ambientes configurados de forma diferente, para que um recupere o conteúdo da camada do autor e o outro o recupere da camada de publicação. Para permitir que os autores abram o URL publicado no Editor universal, um pequeno script pode ser criado para &quot;converter&quot; o URL do lado da publicação para seu equivalente no ambiente do autor (por exemplo, anexando um `author` subdomínio), para que os autores sejam automaticamente redirecionados.
+Outra opção é implantar o aplicativo em dois ambientes configurados de forma diferente, para que um recupere o conteúdo da camada do autor e o outro o recupere da camada de publicação. Para permitir que os autores abram a URL publicada no Editor Universal, um pequeno script pode ser criado para &quot;converter&quot; a URL do lado da publicação para seu equivalente no ambiente do autor (por exemplo, anexando um subdomínio `author`), para que os autores sejam automaticamente redirecionados.
 
 ## Resumo {#summary}
 

@@ -26,7 +26,7 @@ As regras de tradução descritas neste documento se aplicam aos fragmentos de c
 
 Se a opção **Habilitar campos do modelo de conteúdo para tradução** estiver ativa, o AEM usará o campo **Traduzível** nos [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar se o campo deve ser traduzido e criará as devidas regras de tradução automaticamente. Essa opção substitui qualquer regra de tradução criada e não requer nenhuma intervenção ou etapas adicionais.
 
-Se você quiser usar regras de tradução para traduzir os fragmentos de conteúdo, a variável **Ativar campos do modelo de conteúdo para tradução** a opção na configuração da estrutura de integração de tradução deve estar desativada, e você precisa seguir as etapas descritas abaixo para criar suas regras.
+Se você quiser usar regras de tradução para traduzir os fragmentos de conteúdo, a opção **Habilitar campos do modelo de conteúdo para tradução** na configuração da estrutura de integração de tradução deve estar desabilitada, e você precisa seguir as etapas descritas abaixo para criar suas regras.
 
 ## Visão geral {#overview}
 
@@ -168,7 +168,7 @@ Na interface das regras de tradução, é possível:
 
    ![Adicionar contexto de tradução](../assets/add-translation-context.png)
 
-1. Use o navegador de caminho para selecionar o contexto necessário e selecione a variável **Confirmar o** botão para salvar.
+1. Use o navegador de caminho para selecionar o contexto necessário e selecione o botão **Confirmar** para salvar.
 
    ![Selecionar contexto](../assets/select-context.png)
 

@@ -31,7 +31,7 @@ Esta jornada aborda as noções básicas do Dynamic Media, como ele funciona, o 
 * Noções básicas sobre ferramentas de design, como Adobe Illustrator, Adobe Photoshop, Adobe XD
 * O acesso ao Dynamic Media no Experience Manager é útil, mas não é necessário
 
-**_O que você pode esperar para aprender_**
+**_O que você pode esperar saber_**
 
 _Parte I_
 
@@ -73,14 +73,14 @@ Um dos principais pontos para entender sobre o Dynamic Media é o conceito de _U
 
 Para entender melhor esse conceito, pense na maneira como você trabalha tradicionalmente com um único ativo, como uma imagem ou vídeo. Normalmente, você cria um ativo principal. Em seguida, você cria manualmente versões desse mesmo ativo para cada experiência, cada dispositivo necessário, cada página da Web e cada propriedade onde é usado. Com o tempo, esse único ativo pode crescer para 20, 30 ou mais versões, sem nenhum histórico de versões anexado a ele. Agora, imagine fazer isso para cada imagem ou vídeo que você tem. O número de versões de ativos rapidamente se tornaria enorme para manter e atualizar, sem mencionar o aumento nos custos de armazenamento.
 
-No entanto, o Dynamic Media é fundamentalmente diferente de outros sistemas, pois você o usa para fornecer sua mídia _dinamicamente_ de ativos únicos e principais e de chamadas de URL. Os caminhos de URL do Dynamic Media solicitados incluem instruções que informam ao servidor de publicação do Adobe como exibir o ativo quando ele é entregue à tela de um cliente. Por exemplo, usando o mesmo único ativo principal, você pode fornecê-lo instantaneamente em representações ilimitadas, alterando o tamanho, o formato, a resolução, o peso, a cor, o recorte e os efeitos, como uma exibição de zoom.
+No entanto, o Dynamic Media é fundamentalmente diferente de outros sistemas, pois você o usa para fornecer sua mídia _dinamicamente_ de ativos únicos e primários e de chamadas de URL. Os caminhos de URL do Dynamic Media solicitados incluem instruções que informam ao servidor de publicação do Adobe como exibir o ativo quando ele é entregue à tela de um cliente. Por exemplo, usando o mesmo único ativo principal, você pode fornecê-lo instantaneamente em representações ilimitadas, alterando o tamanho, o formato, a resolução, o peso, a cor, o recorte e os efeitos, como uma exibição de zoom.
 
 Esse método de entrega exclusivo garante que experiências de qualidade consistentes sejam enviadas para qualquer tela, independentemente do tamanho ou da largura de banda. Vídeos em tamanho normal também são otimizados para todos os tipos de tela e transmitidos de maneira adaptável para garantir uma experiência do usuário consistente e de qualidade.
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![O Adobe Dynamic Media fornece a mesma imagem principal a mídias diferentes em tamanhos e formatos diferentes](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
-_O Adobe Dynamic Media garante experiências consistentes e de qualidade em qualquer tela, independentemente do tamanho ou da largura de banda._
+O ![Adobe Dynamic Media fornece a mesma imagem principal a mídias diferentes, em tamanhos e formatos diferentes](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+O _Adobe Dynamic Media garante experiências consistentes e de qualidade em qualquer tela, independentemente do tamanho ou da largura de banda._
 
 À medida que você lê, aprenderá mais sobre por que esse conceito de &quot;um arquivo de ativo principal, infinitas possibilidades&quot; é importante.
 
@@ -92,13 +92,13 @@ No sistema CDN, o conteúdo da Web é armazenado em caches da Web na Internet. E
 
 <!-- USE AN IMAGE HERE? ![Content delivery network](/help/assets/assets-dm/cdn.png) -->
 
-Historicamente, a CDN fornece 3,5 petabytes de tráfego para os clientes todos os meses. O sistema pode entregar 52 bilhões de ativos em um único dia. Esse número equivale a 864.000 imagens e vídeos entregues com sucesso aos clientes, _a cada segundo_.
+Historicamente, a CDN fornece 3,5 petabytes de tráfego para os clientes todos os meses. O sistema pode entregar 52 bilhões de ativos em um único dia. Esse número equivale a 864.000 imagens e vídeos entregues com êxito aos clientes, _a cada segundo_.
 
 ### Imagem inteligente
 
 A Dynamic Media já faz um excelente trabalho de otimização de ativos e garantia de que cada ativo seja carregado rapidamente em sistemas móveis e desktop, por meio da CDN. Para fazer isso, as predefinições de imagem são usadas no Dynamic Media para definir a qualidade da sua imagem. Elas também definem o tipo de imagem que você está enviando, sua nitidez e outras partes para várias partes das suas experiências ou páginas.
 
-Mas, para adicionar valor ao Dynamic Media além das predefinições de imagem, há _Imagem inteligente_.
+Mas para adicionar valor ao Dynamic Media além das predefinições de imagem, há _Imagem inteligente_.
 
 A Imagem inteligente oferece um desempenho ainda melhor do delivery de ativos de imagem, otimizando automaticamente o formato e o tamanho do arquivo de uma imagem com base no recurso de navegador do cliente. Ela funciona com suas predefinições de imagem existentes (as predefinições de imagem são discutidas na Parte II desta jornada) e usa inteligência no delivery.
 
@@ -110,8 +110,8 @@ Essa inteligência reduz ainda mais o tamanho do arquivo de imagem com base na v
 
 Em geral, com a geração inteligente de imagens, você pode esperar uma melhoria de desempenho de 22% a 47%, dependendo das configurações de predefinição de imagem existentes e das características específicas do usuário final. Tudo isso mantendo a qualidade da imagem como se ela nunca tivesse sido tocada.
 
-![Imagem inteligente](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
-_A Smart Imaging otimiza automaticamente o formato e o tamanho do arquivo de uma imagem com base no recurso de navegador do cliente e na velocidade da rede._
+![Imagens inteligentes](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
+_O Smart Imaging otimiza automaticamente o formato e o tamanho do arquivo de uma imagem com base na capacidade do navegador do cliente e na velocidade da rede._
 
 A geração inteligente de imagens não está ativada por padrão porque requer um esforço coordenado entre você e o suporte técnico do Adobe Dynamic Media. Além disso, a ativação do Smart Imaging requer a limpeza completa do cache da CDN, que é então reabastecido com tempo. Se você estiver interessado em usar Imagem inteligente, poderá trabalhar com o Adobe para ativá-la enviando um tíquete de suporte técnico. O suporte técnico fornece um parâmetro de URL que permite experimentar, antecipadamente, imagens inteligentes. Você pode experimentá-lo em qualquer uma de suas páginas da web ou imagens para que você possa ver o desempenho que você tem, e a economia. Você pode ativar a geração inteligente de imagens para seu site completo.
 
@@ -123,7 +123,7 @@ Para resolver esse problema, o Dynamic Media oferece a capacidade de criar _Conj
 
 Um Conjunto de vídeos adaptados agrupa versões do mesmo vídeo codificadas em taxas de bits e formatos diferentes.
 
-Você começa com seu vídeo original, o qual você carrega no sistema. o Dynamic Media dimensiona automaticamente ou _transcodes_, esse vídeo em vários vídeos. Em seguida, no momento do delivery, ele determina de forma inteligente qual tela de vídeo, qual qualidade e qual formato usar, além de fornecê-la ao telefone, tablet ou computador desktop.
+Você começa com seu vídeo original, o qual você carrega no sistema. O Dynamic Media dimensiona automaticamente, ou _transcodifica_, esse vídeo em vários vídeos. Em seguida, no momento do delivery, ele determina de forma inteligente qual tela de vídeo, qual qualidade e qual formato usar, além de fornecê-la ao telefone, tablet ou computador desktop.
 
 Por exemplo, em um dispositivo móvel iOS, ele detecta uma largura de banda como 4G, 5G ou Wi-Fi. Em seguida, ele seleciona automaticamente o vídeo codificado correto entre as várias taxas de bits de vídeo no Conjunto de vídeos adaptados. O vídeo é transmitido para dispositivos móveis, tablets ou computadores de mesa.
 
@@ -144,14 +144,14 @@ Veja a seguir uma experiência típica ou uma página da Web. Cerca de 90% de um
 ![Peso da página de conteúdo](/help/assets/dynamic-media/assets/dm-content-page-weight.png)
 _Peso da página de conteúdo de uma página da Web típica._
 
-Os 10% restantes são HTML, código CSS e tags específicas. Você deseja otimizar o peso de 90% dessa página, e a Dynamic Media ajuda nesse esforço. Anteriormente, você leu sobre o conceito de _um arquivo principal de ativos com inúmeras possibilidades_. Essa abordagem é significativa na redução do peso geral da página. A capacidade de pegar um ativo principal e usá-lo em uma página de detalhes do produto, uma página de miniatura, seu carrinho de compras e sua grade de pesquisa economiza tempo. E também garante a consistência entre as experiências.
+Os 10% restantes são HTML, código CSS e tags específicas. Você deseja otimizar o peso de 90% dessa página, e a Dynamic Media ajuda nesse esforço. Você leu anteriormente sobre o conceito de _um arquivo de ativo principal com infinitas possibilidades_. Essa abordagem é significativa na redução do peso geral da página. A capacidade de pegar um ativo principal e usá-lo em uma página de detalhes do produto, uma página de miniatura, seu carrinho de compras e sua grade de pesquisa economiza tempo. E também garante a consistência entre as experiências.
 
 ![Abordagem de arquivo principal](/help/assets/dynamic-media/assets/dm-onefile.png)
-_O observador é um arquivo de ativo principal, mas com várias representações dele, não cópias, criadas em tempo real._
+_A observação é um arquivo de ativo principal, mas com várias representações - não cópias - criado em tempo real._
 
 Vamos analisar mais detalhadamente os problemas que a Dynamic Media está resolvendo com um arquivo e algumas das soluções para essa abordagem.
 
-| **Problema** | **Solução da Dynamic Media** |
+| **Problema** | **solução da Dynamic Media** |
 |---|---|
 | Crie e armazene cada ativo. | Use um único arquivo de imagem, criando automaticamente as representações necessárias somente no momento do delivery. |
 | Altos custos de armazenamento. | Elimina a necessidade de criar e armazenar várias cópias de um ativo. |
@@ -172,7 +172,7 @@ Com a abordagem de um arquivo, você usa um único arquivo principal. Em seguida
 
 Outro caso de uso para o qual o Dynamic Media resolve é o vídeo. O vídeo é complexo. É difícil de gerenciar. Os arquivos de vídeo são desafiadores para armazenar e movimentar-se por causa de seus tamanhos de arquivo inerentes.
 
-| **Problema** | **Solução da Dynamic Media** |
+| **Problema** | **solução da Dynamic Media** |
 |---|---|
 | Difícil de gerenciar e fornecer vídeo otimizado para vários dispositivos. | Use um único vídeo que seja dimensionado automaticamente para todos os dispositivos. |
 | Os vídeos param ou são reproduzidos em baixa qualidade devido à largura de banda disponível do usuário. | Envie vídeos por meio de um reprodutor de HTML que detecta automaticamente a largura de banda disponível e adapta a qualidade para garantir alta fidelidade e reprodução sem problemas. |
@@ -181,7 +181,7 @@ Outro caso de uso para o qual o Dynamic Media resolve é o vídeo. O vídeo é c
 
 Os clientes chegam à Dynamic Media com os seguintes problemas que esperam resolver:
 
-&quot;_Minha empresa tem o vídeo, e o departamento gastou uma grande quantia de dinheiro criando-o, mas evitou colocá-lo em páginas, ou entregá-lo. A razão era que, a partir de testes, a qualidade do vídeo não poderia ser garantida, ou mesmo se ele fosse realmente ir para a reprodução. E, em última análise, isso afeta a marca da empresa e, possivelmente, sua função na conversão._&quot;
+&quot;_Minha empresa tem o vídeo, e o departamento gastou uma grande quantidade de dinheiro criando-o, mas evitou colocá-lo em páginas ou entregá-lo. A razão era que, a partir de testes, a qualidade do vídeo não poderia ser garantida, ou mesmo se ele fosse realmente ir para a reprodução. E, em última análise, isso afeta a marca da empresa e potencialmente sua função na conversão._&quot;
 
 A solução da Dynamic Media é pegar esse arquivo de vídeo principal e permitir que a Dynamic Media faça todos os tamanhos através de seu processo de transcodificação. Em seguida, combine-o com o player de vídeo inteligente da Dynamic Media. Esse fluxo de trabalho garante que você esteja usando esse vídeo na sua página de aterrissagem principal ou em uma categoria ou página de detalhes do produto, ele seja consistente e entregue com alta qualidade.
 
@@ -189,15 +189,15 @@ Estes são vários outros casos de uso a serem considerados.
 
 ### Caso de uso: única fonte da verdade
 
-| **Problema** | **Solução da Dynamic Media** |
+| **Problema** | **solução da Dynamic Media** |
 |---|---|
 | Ativos digitais espalhados pela organização, em silos em diferentes equipes ou unidades de negócios. | Armazene e gerencie todos os ativos digitais em um local central. |
-| Os membros da equipe baixam e criam versões locais. | Os membros da equipe usam um único arquivo principal para criar _e_ O fornece todas as versões necessárias em vários tamanhos de tela e dispositivos. |
+| Os membros da equipe baixam e criam versões locais. | Os membros da equipe usam um único arquivo primário para criar _e_ entregar todas as versões necessárias em vários dispositivos e tamanhos de tela. |
 | Ativos de uso único criados para cada experiência e dispositivo. | Elimina ativos de uso único, economizando tempo e dinheiro para criá-los. |
 
 ### Caso de uso: corte inteligente alimentado por IA para mídia avançada
 
-| **Problema** | **Solução da Dynamic Media** |
+| **Problema** | **solução da Dynamic Media** |
 |---|---|
 | É demorado e trabalhoso desenhar, medir e cortar manualmente imagens ou vídeos para destacar o ponto focal e exibir adequadamente em todos os tamanhos de tela e dispositivos. | O usa o Corte inteligente no Dynamic Media, um recurso de IA do Adobe Sensei, para detectar automaticamente o ponto focal em qualquer imagem ou vídeo e recortar para mantê-lo. |
 | Tempo perdido que poderia ser mais bem gasto na criação de experiências de alto impacto. | Registra o ponto de interesse pretendido, independentemente do tamanho da tela. |
@@ -205,7 +205,7 @@ Estes são vários outros casos de uso a serem considerados.
 
 ### Caso de uso: criação de mídia interativa
 
-| **Problema** | **Solução da Dynamic Media** |
+| **Problema** | **solução da Dynamic Media** |
 |---|---|
 | Experiências estáticas e planas do cliente que não envolvem, geram fidelidade ou impulsionam a conversão. | Permite que usuários não técnicos adicionem elementos interativos de maneira fácil e contínua, como pontos de acesso, carrosséis e conjuntos de rotação, para proporcionar experiências mais dinâmicas e envolventes. |
 | Retorno limitado sobre o investimento de ativos digitais e experiências de cliente pouco atraentes. | Impulsiona a conversão e o retorno sobre o investimento de experiências de mídia avançada. |
@@ -215,7 +215,7 @@ Estes são vários outros casos de uso a serem considerados.
 A seguir, é mostrado um fluxo de trabalho típico do Dynamic Media.
 
 ![Fluxo de trabalho do Dynamic Media](/help/assets/dynamic-media/assets/dm-workflow.png)
-_Como um ativo flui pelo sistema da Dynamic Media._
+_Como um ativo flui pelo sistema Dynamic Media._
 
 Você começa com a fase de criação com a meta principal de ter seu ativo principal no final. Esses ativos principais podem vir de sessões de fotos, de fornecedores de vídeo ou de alguns arquivos de áudio que você criou. Você pode usar os aplicativos de Creative Suite do Adobe, como o Adobe InDesign, Adobe Photoshop e Adobe Illustrator para ajudar a trabalhar o conteúdo.
 
@@ -227,10 +227,10 @@ E, finalmente, você otimiza todo esse conteúdo e o publica nos servidores da D
 
 Ao terminar de criar um ativo principal, faça upload dele para o Dynamic Media. O tipo de arquivo que você faz upload e o formato e tamanho do arquivo são atributos importantes para o Dynamic Media. É no momento do upload que você deseja garantir que obtenha o valor máximo de um arquivo compatível.
 
-Por exemplo, a imagem do relógio abaixo tem 4560 x 3020 pixels. E mesmo que você nunca use uma imagem desse tamanho, você ainda pode carregá-la. Quanto maior a imagem, melhor a qualidade que o Dynamic Media pode oferecer, mesmo que seja uma representação em miniatura. Lembre-se: você pode facilmente _diminuir_ a resolução de uma imagem existente. Mas se você tentar _aumentar_ Na resolução de uma imagem, o resultado provavelmente não será satisfatório.
+Por exemplo, a imagem do relógio abaixo tem 4560 x 3020 pixels. E mesmo que você nunca use uma imagem desse tamanho, você ainda pode carregá-la. Quanto maior a imagem, melhor a qualidade que o Dynamic Media pode oferecer, mesmo que seja uma representação em miniatura. Lembre-se: você pode facilmente _diminuir_ a resolução de uma imagem existente. Mas se você tentar _aumentar_ a resolução de uma imagem, o resultado provavelmente não será satisfatório.
 
-![Formatos recomendados para upload no Dynamic Media](/help/assets/dynamic-media/assets/dm-upload-formats.png)
-_Considerações para uploads de ativos._
+![Formatos recomendados para carregar no Dynamic Media](/help/assets/dynamic-media/assets/dm-upload-formats.png)
+_Considerações para carregamentos de ativos._
 
 A Adobe recomenda que você faça upload de ativos em um formato sem perdas. Geralmente, é melhor evitar o JPEG, pois quando você fornece o JPEG ou quando continua a salvar o JPEG, começa a perder a qualidade da imagem com o tempo. Você deseja começar com as imagens de maior resolução em um formato sem perdas com o qual possa viver. Normalmente, esse formato é um arquivo TIFF ou PNG.
 
@@ -238,27 +238,27 @@ Em relação ao espaço de cores, ao pensar em um canal digital ou visualizaçã
 
 A maioria nunca pensaria em fornecer algo em CMYK ou por que você poderia querer fornecer em CMYK. Isso ocorre porque esse espaço de cor é usado com mais frequência para entregar itens impressos. Mas o Dynamic Media pode oferecer em ambos os espaços de cores.
 
-Há muitos clientes que ainda fazem impressão, como clubes de atacado de armazém. E há supermercados que muitas vezes imprimem folhetos semanalmente. Esses clientes exigem que suas imagens estejam em ambos os espaços de cores. Tradicionalmente, isso exigiria duas imagens diferentes: uma em RGB e outra em CMYK. No entanto, você pode fazer upload de ativos CMYK diretamente no Dynamic Media e fazer com que o Dynamic Media forneça ativos RGB por meio de uma predefinição de imagem ou por meio de um perfil de cores, automaticamente. Não há necessidade de criar várias versões de um arquivo, mantendo assim o conceito de _um arquivo principal de ativos com inúmeras possibilidades_.
+Há muitos clientes que ainda fazem impressão, como clubes de atacado de armazém. E há supermercados que muitas vezes imprimem folhetos semanalmente. Esses clientes exigem que suas imagens estejam em ambos os espaços de cores. Tradicionalmente, isso exigiria duas imagens diferentes: uma em RGB e outra em CMYK. No entanto, você pode fazer upload de ativos CMYK diretamente no Dynamic Media e fazer com que o Dynamic Media forneça ativos RGB por meio de uma predefinição de imagem ou por meio de um perfil de cores, automaticamente. Não há necessidade de criar várias versões de um arquivo, mantendo assim o conceito de _um arquivo de ativo principal com infinitas possibilidades_.
 
 <!-- **The Value of Renditioning??? or Demo portion** -->
 
-### Publicar e visualizar ativos
+### Publish e pré-visualização de ativos
 
-Depois de fazer upload de ativos para o Dynamic Media, é uma boa prática _publicar_ selecionando os ativos e clicando em **[!UICONTROL Publish]** ou **[!UICONTROL Publicação rápida]** no Dynamic Media. A publicação de ativos é necessária se você pretende usá-los em qualquer experiência. Após a publicação, os ativos ficam disponíveis para inclusão em uma página da Web usando um URL gerado pela Dynamic Media que você copia ou por meio da incorporação de código na página.
+Após carregar os ativos na Dynamic Media, é recomendável _publicá-los_ selecionando-os e clicando em **[!UICONTROL Publish]** ou **[!UICONTROL Quick Publish]** no Dynamic Media. A publicação de ativos é necessária se você pretende usá-los em qualquer experiência. Após a publicação, os ativos ficam disponíveis para inclusão em uma página da Web usando um URL gerado pela Dynamic Media que você copia ou por meio da incorporação de código na página.
 
 Além de publicar ativos manualmente, você pode configurar o Dynamic Media para publicar ativos instantaneamente, sem qualquer intervenção do usuário, no momento do upload.
 
-Após o upload, há diferentes maneiras de pré-visualizar as representações de um ativo no Dynamic Media. Visualizar representações pode ajudar a fornecer uma ideia do que um cliente vê. Um método de visualização comum é selecionar um ativo e, em seguida, visualizar suas representações selecionando um _predefinição de imagem_ como visto a seguir.
+Após o upload, há diferentes maneiras de pré-visualizar as representações de um ativo no Dynamic Media. Visualizar representações pode ajudar a fornecer uma ideia do que um cliente vê. Um método de visualização comum é selecionar um ativo e exibir suas representações ao selecionar uma _predefinição de imagem_, como visto a seguir.
 
-![Pré-visualização de uma representação de um ativo com base na predefinição Imagem grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
-_Pré-visualização de uma representação de um ativo com base na predefinição de imagem &quot;Grande&quot; selecionada. O botão URL foi clicado. O caminho do URL resultante contém o nome da predefinição de imagem &quot;Grande&quot; e pode ser usado em uma página da Web._
+![Visualização de uma representação de um ativo com base na predefinição de imagem grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
+_Pré-visualização de uma representação de um ativo com base na predefinição de imagem &quot;Grande&quot; selecionada. O botão URL foi clicado. O caminho de URL resultante contém o nome de predefinição de imagem &quot;Grande&quot; e pode ser usado em uma página da Web._
 
 O URL acima está ativo. [Experimente](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
-Outro método para visualizar um ativo é selecionar o ativo de imagem e depois selecionar um _Visualizadores_ como visto a seguir.
+Outro método para visualizar um ativo é selecionar o ativo da imagem e, em seguida, selecionar uma predefinição de _Visualizadores_, como visto a seguir.
 
-![Visualização de um ativo com base na predefinição do visualizador Zoom vertical claro](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
-_Visualizar um ativo com base na predefinição do visualizador &quot;ZoomVertical_light&quot; selecionada. O ponteiro do mouse (`+`) foi movido sobre o relógio para ampliar. Observe os botões URL e Incorporar._
+![Visualizando um ativo com base na predefinição do visualizador Zoom Vertical Light](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
+_Visualizando um ativo com base na predefinição do visualizador &quot;ZoomVertical_light&quot; selecionada. O ponteiro do mouse (`+`) foi movido sobre a inspeção para ampliar. Observe os botões URL e Incorporar._
 
 A representação acima está ativa. [Experimente](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
@@ -275,23 +275,23 @@ _Tópicos da Ajuda do Dynamic Media_
 * [Como fazer upload de ativos](/help/assets/add-assets.md#upload-assets)
 * [Como visualizar ativos](/help/assets/dynamic-media/previewing-assets.md)
 * [Como visualizar ativos 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Como fornecer ativos do Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
+* [Como fornecer o Dynamic Media Assets](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
 * [Como publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
 * [Trabalhar com publicação seletiva no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md)
 
 _Tutoriais do Dynamic Media_
 
 * [Usar o Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar em _Dynamic Media_)
+* [biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar no _Dynamic Media_)
 
 _Visualizadores do Dynamic Media_
 
-* [Demonstrações ao vivo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) de cada visualizador
+* [Demonstrações ao Vivo](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) de cada visualizador
 
 ## O que vem a seguir nesta Jornada do Dynamic Media {#whats-next}
 
 Na parte II desta jornada, você examina detalhadamente os URLs do Dynamic Media para entender melhor o que está acontecendo quando um ativo é entregue. Você também aprenderá mais sobre os fundamentos da criação de predefinições de imagens para renderizar ativos e sobre conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista, e como eles são criados.
 
-Leve-me para [Jornada do Dynamic Media: Noções básicas, Parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
+Leve-me até [Dynamic Media Jornada: Noções básicas, Parte II](/help/assets/dynamic-media/dm-journey-part2.md#dm-journey-d).
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->

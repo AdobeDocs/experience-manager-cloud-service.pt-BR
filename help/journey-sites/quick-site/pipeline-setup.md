@@ -74,7 +74,7 @@ Observe o nome do programa que você acessou ou copie o URL. Você precisa forne
 
 Agora que você acessou o Cloud Manager, é possível criar um pipeline para implantação de front-end.
 
-1. No **Pipelines** da página do Cloud Manager, selecione a variável **Adicionar** botão.
+1. Na seção **Pipelines** da página do Cloud Manager, selecione o botão **Adicionar**.
 
    ![Pipelines](assets/pipelines-add.png)
 
@@ -86,7 +86,7 @@ Agora que você acessou o Cloud Manager, é possível criar um pipeline para imp
 
    ![Adicionar configuração de pipeline](assets/add-pipeline-configuration.png)
 
-1. Selecionar **Continuar**.
+1. Selecione **Continuar**.
 
 1. Na guia **Código-fonte**:
    * Selecione **Código de front-end** como o tipo de código a ser implantado.

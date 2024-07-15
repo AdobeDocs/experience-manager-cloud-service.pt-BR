@@ -1,5 +1,5 @@
 ---
-title: Atribuição de canal a uma Exibição no Screens as a Cloud Service
+title: Atribuição de canal a uma exibição no Screens as a Cloud Service
 description: Esta página descreve como atribuir um canal a uma exibição no Screens as a Cloud Service.
 exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
 feature: Authoring Screens
@@ -11,13 +11,13 @@ ht-degree: 2%
 
 ---
 
-# Atribuição de canal a uma Exibição no Screens as a Cloud Service {#assign-channel-displays-screens-cloud}
+# Atribuição de canal a uma exibição no Screens as a Cloud Service {#assign-channel-displays-screens-cloud}
 
 Após a conclusão da configuração do projeto, é necessário atribuir o canal a uma exibição para exibir o conteúdo.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como atribuir um canal a uma exibição, quando a exibição estiver pronta e você tiver adicionado conteúdo ao canal e publicado. Depois de ler, você poderá entender como atribuir um canal a uma exibição do Provedor de serviços do Screens.
+Este documento ajuda você a entender como atribuir um canal a uma exibição, quando a exibição estiver pronta e você tiver adicionado conteúdo ao canal e publicado. Depois de ler, você poderá entender como atribuir um canal a uma exibição do Provedor de serviços da Screens.
 
 ## Pré-requisitos {#prerequisites}
 
@@ -30,13 +30,13 @@ Antes de executar as etapas abaixo para atribuir um canal a uma exibição, é n
 
 Siga as etapas abaixo para atribuir um canal a uma exibição:
 
-1. Navegue até o Provedor de serviços do Screens e selecione **Exibições** no painel de navegação esquerdo.
+1. Navegue até Provedor de Serviços da Screens e selecione **Exibições** no painel de navegação esquerdo.
 
-1. Clique em **Atribuir canal** para a exibição.
+1. Clique em **Atribuir canal** à exibição.
 
    ![imagem](/help/screens-cloud/assets/display/assignchannel-1.png)
 
-1. Preencha os seguintes campos em **Atribuir um canal** caixa de diálogo.
+1. Preencha os seguintes campos da caixa de diálogo **Atribuir um canal**.
 
    ![imagem](/help/screens-cloud/assets/display/assignchannel-2.png)
 
@@ -46,9 +46,9 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
       >[!NOTE]
       >A prioridade é usada para ordenar as atribuições caso várias correspondam aos critérios de reprodução. Aquele com o valor mais alto sempre tem prioridade sobre valores mais baixos. Por exemplo, se houver dois canais A e B. A tem uma prioridade 1 e B tem uma prioridade 2, então o canal B é exibido, pois tem uma prioridade mais alta que A.
 
-   1. Selecionar a data inicial e a data final de **Ativação**.
+   1. Selecione a data de início e a data de término em **Ativation**.
 
-1. Clique em **+ Adicionar recorrência** para adicionar um cronograma de recorrência para seu canal.
+1. Clique em **+ Adicionar recorrência** para adicionar uma agenda de recorrência para seu canal.
 
    ![imagem](/help/screens-cloud/assets/create-content/recurrence-1.png)
 
@@ -57,12 +57,12 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
 
    É possível definir as seguintes opções:
 
-   * **Nome**: Título do cronograma recorrente.
-   * **Repetir**: escolha se a programação é executada Diariamente, Semanalmente, Mensalmente ou Anualmente.
-   * **Início**: a hora de início da sua programação.
-   * **Fim**: a hora de término do cronograma. Você pode defini-lo por tempo ou duração.
-   * **Hora**: A programação termina em um horário especificado.
-   * **Duração**: A programação é executada por uma duração de tempo específica em horas ou minutos.
+   * **Nome**: título do cronograma recorrente.
+   * **Repetir**: escolha se o agendamento é executado Diariamente, Semanalmente, Mensalmente ou Anualmente.
+   * **Início**: a hora inicial da sua agenda.
+   * **Fim**: a hora de término de seu cronograma. Você pode defini-lo por tempo ou duração.
+   * **Hora**: a agenda termina em um horário especificado.
+   * **Duração**: o agendamento é executado para uma duração de tempo específica em horas ou minutos.
 
 1. Clique em **Criar**. Você pode ver que um canal é atribuído para essa exibição, como mostrado na figura abaixo.
 
@@ -71,4 +71,4 @@ Siga as etapas abaixo para atribuir um canal a uma exibição:
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você atribuiu o canal a uma exibição, deve continuar sua jornada as a Cloud Service do Screens revisando o documento em seguida [Instalação e configuração do reprodutor do Screens para AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).
+Agora que você atribuiu o canal a uma exibição, deve continuar a as a Cloud Service jornada do Screens revisando o documento [Instalação e configuração do Screens Player para AEM as a Cloud Service](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md).

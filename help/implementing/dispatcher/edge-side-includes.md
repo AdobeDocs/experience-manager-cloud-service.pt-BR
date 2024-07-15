@@ -1,6 +1,6 @@
 ---
-title: Inclusões na borda
-description: O CDN gerenciado por Adobe agora é compatível com ESI (Edge Side Includes), uma linguagem de marcação para a montagem de conteúdo dinâmico da Web no nível da borda.
+title: Edge Side Includes
+description: O CDN do Adobe Managed agora é compatível com o Edge Side Includes (ESI), uma linguagem de marcação para a montagem de conteúdo dinâmico da Web no nível da borda.
 feature: Dispatcher
 exl-id: 35093477-2788-4f69-80a9-899f43567cae
 role: Admin
@@ -11,21 +11,21 @@ ht-degree: 2%
 
 ---
 
-# Inclusões na borda {#edge-side-includes}
+# Edge Side Includes {#edge-side-includes}
 
 >[!NOTE]
 >Esse recurso ainda não está disponível para o público geral. Para participar do programa de adoção antecipada, envie um email para `aemcs-cdn-config-adopter@adobe.com` e descreva seu caso de uso.
 
-A velocidade de entrega de conteúdo se beneficia do armazenamento de páginas em cache de forma agressiva, obtida por meio da configuração de cabeçalhos de cache com valores de TTL (high time to live). Isso pode ser desafiador quando as páginas incluem conteúdo dinâmico, que precisa ser atualizado com frequência ou potencialmente não pode ser armazenado em cache. Felizmente, há estratégias em que a página de HTML pode ser armazenada em cache com um TTL alto, adiando a busca dos trechos de conteúdo mais dinâmicos para um momento posterior, por meio do Javascript do lado do cliente ou no CDN. A última abordagem é um padrão chamado ESI (Edge Side Includes), compatível com sites renderizados com a publicação do AEM. O HTML inclui tags ESI instruindo o CDN a adiar a veiculação da página no navegador até que ele avalie essas tags, recuperando conteúdo adicional e mais dinâmico (TTL mais baixo) da origem (ou cache CDN se o TTL não tiver expirado).
+A velocidade de entrega de conteúdo se beneficia do armazenamento de páginas em cache de forma agressiva, obtida por meio da configuração de cabeçalhos de cache com valores de TTL (high time to live). Isso pode ser desafiador quando as páginas incluem conteúdo dinâmico, que precisa ser atualizado com frequência ou potencialmente não pode ser armazenado em cache. Felizmente, há estratégias em que a página de HTML pode ser armazenada em cache com um TTL alto, adiando a busca dos trechos de conteúdo mais dinâmicos para um momento posterior, por meio do Javascript do lado do cliente ou no CDN. A última abordagem é um padrão chamado Edge Side Includes (ESI), que é compatível com sites renderizados com a publicação do AEM. O HTML inclui tags ESI instruindo o CDN a adiar a veiculação da página no navegador até que ele avalie essas tags, recuperando conteúdo adicional e mais dinâmico (TTL mais baixo) da origem (ou cache CDN se o TTL não tiver expirado).
 
-Alguns casos de uso em que Inclusões do lado da borda podem ser úteis:
+Alguns casos de uso em que as Inclusões do Edge Side podem ser úteis:
 
 * Exibir o nome de um usuário final ou outras informações exclusivas de um usuário final.
 * Exibir uma lista de informações recentes, como artigos de notícias ou preços de ações.
 
 ## Sintaxe ESI {#esi-syntax}
 
-A sintaxe ESI é a seguinte se uma página principal `/content/page.html` inclui um trecho `content/snippets/mysnippet.html`.
+A sintaxe ESI é a seguinte se uma página pai `/content/page.html` incluir um trecho `content/snippets/mysnippet.html`.
 
 ```
 <html>
@@ -40,7 +40,7 @@ A sintaxe ESI é a seguinte se uma página principal `/content/page.html` inclui
 </html>
 ```
 
-Consulte a [Especificação ESI](https://www.w3.org/TR/esi-lang/) para obter detalhes.
+Consulte a [especificação ESI](https://www.w3.org/TR/esi-lang/) para obter detalhes.
 
 ### Considerações {#esi-syntax-considerations}
 
@@ -81,10 +81,10 @@ As propriedades configuradas têm o seguinte comportamento:
 
 | Propriedade | Comportamento |
 |-----------|--------------------------|
-| **no-gzip** | Se definida como 1, a página de HTML será transmitida do Apache para o CDN descompactado. Isso é necessário para a ESI, pois o conteúdo deve ser enviado para o CDN descompactado para que o CDN possa visualizar e avaliar as tags ESI.<br/><br/>A página principal e os trechos incluídos devem definir no-gzip como 1.<br/><br/>Essa configuração substitui qualquer configuração de compactação que o Apache poderia ter usado de outra forma, com base na solicitação `Accept-Encoding` valores. |
+| **no-gzip** | Se definida como 1, a página de HTML será transmitida do Apache para o CDN descompactado. Isso é necessário para a ESI, pois o conteúdo deve ser enviado para o CDN descompactado para que o CDN possa visualizar e avaliar as tags ESI.<br/><br/>A página pai e os trechos incluídos devem definir no-gzip como 1.<br/><br/>Essa configuração substitui qualquer configuração de compactação que o Apache tenha usado de outra forma, com base nos valores `Accept-Encoding` da solicitação. |
 | **x-aem-esi** | Se definido como &quot;ativado&quot;, o CDN avaliará as tags ESI da página de HTML principal.  Por padrão, o cabeçalho não está definido. |
-| **x-aem-compress** | Se definido como &quot;ativado&quot;, o CDN compactará o conteúdo do CDN para o navegador. Como a transmissão da página principal do Apache para o CDN deve ser descompactada para que o ESI funcione (`no-gzip` defina como 1), isso poderá reduzir a latência.<br/><br/>Se esse cabeçalho não estiver definido, quando o CDN recuperar o conteúdo da origem descompactada, ele também fornecerá conteúdo ao cliente descompactado. Portanto, é necessário definir esse cabeçalho se `no-gzip` está definido como 1 (necessário para ESI) e é desejável veicular conteúdo compactado da CDN no navegador. |
+| **x-aem-compress** | Se definido como &quot;ativado&quot;, o CDN compactará o conteúdo do CDN para o navegador. Como a transmissão da página pai do Apache para o CDN deve ser descompactada para que o ESI funcione (`no-gzip` definido como 1), isso pode reduzir a latência.<br/><br/>Se esse cabeçalho não estiver definido, quando o CDN recuperar o conteúdo da origem descompactada, ele também fornecerá conteúdo ao cliente descompactado. Portanto, é necessário definir esse cabeçalho se `no-gzip` estiver definido como 1 (necessário para ESI) e se desejar veicular conteúdo compactado da CDN para o navegador. |
 
 ## Sling Dynamic Include {#esi-sdi}
 
-Embora não seja obrigatório, [Sling Dynamic Include](https://sling.apache.org/documentation/bundles/dynamic-includes.html) O (SDI) pode ser usado para gerar snippets ESI que são interpretados na CDN.
+Embora não seja obrigatório, o [Sling Dynamic Include](https://sling.apache.org/documentation/bundles/dynamic-includes.html) (SDI) pode ser usado para gerar trechos ESI que são interpretados na CDN.

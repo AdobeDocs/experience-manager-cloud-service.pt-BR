@@ -21,7 +21,7 @@ A barra de ferramentas consiste em uma série de modos de interface que contêm 
 * Os modos da interface são ícones exibidos no lado esquerdo da barra de ferramentas. Ao selecionar um ícone, a barra de ferramentas revela os módulos de interface do usuário que ele contém.
 * Os módulos de interface exibem dados de um ou mais armazenamentos do ContextHub. Alguns módulos de interface também permitem manipular dados de armazenamento.
 
-O ContextHub instala vários modos de interface e módulos de interface do usuário. Seu administrador pode ter [ContextHub configurado](/help/implementing/developing/personalization/configuring-contexthub.md) para exibir diferentes.
+O ContextHub instala vários modos de interface e módulos de interface do usuário. O administrador pode ter [configurado o ContextHub](/help/implementing/developing/personalization/configuring-contexthub.md) para exibir outros.
 
 ## Revelação da barra de ferramentas do ContextHub {#revealing-the-contexthub-toolbar}
 

@@ -258,35 +258,37 @@ Esta consulta pode ser persistida em um caminho `wknd/adventures-by-activity`. P
 <AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
 ```
 
-A codificação UTF-8 `%3B` é para `;` e `%3D` é a codificação de `=`. As variáveis de consulta e quaisquer caracteres especiais devem ser [corretamente codificados](#encoding-query-url) para que a consulta persistente seja executada.
+A codificação UTF-8 `%3B` é para `;` e `%3D` é a codificação para `=`. As variáveis de consulta e quaisquer caracteres especiais devem ser [corretamente codificados](#encoding-query-url) para que a consulta persistente seja executada.
 
 ### Uso de variáveis de consulta - Práticas recomendadas {#query-variables-best-practices}
 
 Ao usar variáveis em suas consultas, há algumas práticas recomendadas que devem ser seguidas:
 
-* Codificação Como uma abordagem geral, é sempre recomendável codificar todos os caracteres especiais; por exemplo, `;`, `=`, `?`, `&`, entre outros.
+* Codificação
+Como uma abordagem geral, é sempre recomendável codificar todos os caracteres especiais; por exemplo, `;`, `=`, `?`, `&`, entre outros.
 
-* Consultas com ponto e vírgula persistentes que usam várias variáveis (separadas por ponto e vírgula) precisam ter:
-   * o ponto e vírgula codificado (`%3B`); a codificação do URL também alcançará isso
+* Ponto e vírgula
+As consultas persistentes que usam várias variáveis (separadas por ponto e vírgula) precisam ter:
+   * o ponto e vírgula codificado (`%3B`); a codificação da URL também alcançará isso
    * ou um ponto e vírgula à direita adicionado ao final da consulta
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
-Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` estiver ativado para o Dispatcher e, em seguida, parâmetros que contenham a variável `/` ou `\` caracteres em seu valor, são codificados duas vezes no nível do Dispatcher.
+Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` é habilitado para a Dispatcher, os parâmetros que contêm os caracteres `/` ou `\` em seus valores são codificados duas vezes no nível da Dispatcher.
 Para evitar essa situação:
 
-   * Ativar `DispatcherNoCanonURL` no Dispatcher.
-Isso instruirá o Dispatcher a encaminhar o URL original para o AEM, evitando codificações duplicadas.
-No entanto, atualmente, essa configuração só funciona no `vhost` , portanto, se você já tiver configurações do Dispatcher para regravar URLs (por exemplo, ao usar URLs encurtados), poderá precisar de uma `vhost` para URLs de consulta persistentes.
+   * Habilitar `DispatcherNoCanonURL` no Dispatcher.
+Isso instruirá o Dispatcher a encaminhar o URL original para AEM, evitando codificações duplicadas.
+No entanto, no momento, essa configuração só funciona no nível `vhost`, portanto, se você já tiver configurações do Dispatcher para regravar URLs (por exemplo, ao usar URLs encurtadas), talvez precise de um `vhost` separado para URLs de consulta persistente.
 
-   * Enviar `/` ou `\` caracteres não codificados.
-Ao chamar o URL da consulta persistente, verifique se todos `/` ou `\` os caracteres permanecem não codificados no valor das variáveis de consulta persistentes.
+   * Enviar `/` ou `\` caracteres sem codificação.
+Ao chamar a URL da consulta persistente, certifique-se de que todos os `/` ou `\` caracteres permaneçam não codificados no valor das variáveis de consulta persistente.
      >[!NOTE]
      >
-     >Essa opção só é recomendada para quando o `DispatcherNoCanonURL` A solução do não pode ser implementada por qualquer motivo.
+     >Essa opção só é recomendada para quando a solução `DispatcherNoCanonURL` não puder ser implementada por algum motivo.
 
 * `CACHE_GRAPHQL_PERSISTED_QUERIES`
 
-  Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` estiver ativado para o Dispatcher e, em seguida, para o `;` O caractere não pode ser usado no valor de uma variável.
+  Quando `CACHE_GRAPHQL_PERSISTED_QUERIES` está habilitado para a Dispatcher, o caractere `;` não pode ser usado no valor de uma variável.
 
 ## Armazenamento em cache de consultas persistentes {#caching-persisted-queries}
 
@@ -409,7 +411,7 @@ A configuração padrão OSGi para instâncias de publicação:
 
 Por padrão, a variável `PersistedQueryServlet` envia uma resposta `200` quando executa uma consulta, independentemente do resultado real.
 
-Você pode [definir as configurações de OSGi](/help/implementing/deploying/configuring-osgi.md) para o **Configuração do Serviço de Consulta Persistente** para controlar se os códigos de status mais detalhados são retornados pelo `/execute.json/persisted-query` endpoint, quando houver um erro na consulta persistente.
+Você pode [definir as configurações de OSGi](/help/implementing/deploying/configuring-osgi.md) para a **Configuração do Serviço de Consulta Persistente** para controlar se códigos de status mais detalhados são retornados pelo ponto de extremidade `/execute.json/persisted-query` quando há um erro na consulta persistente.
 
 >[!NOTE]
 >
@@ -418,15 +420,16 @@ Você pode [definir as configurações de OSGi](/help/implementing/deploying/con
 O campo `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) pode ser definido conforme necessário:
 
 * `false` (valor padrão):
-não importa se a consulta persistente é bem-sucedida ou não. A variável `Content-Type` o cabeçalho retornado é `application/json`, e o `/execute.json/persisted-query` *sempre* retorna o código de status `200`.
+não importa se a consulta persistente é bem-sucedida ou não. O cabeçalho `Content-Type` retornado é `application/json`, e o `/execute.json/persisted-query` *sempre* retorna o código de status `200`.
 
-* `true`: O retornado `Content-Type` é `application/graphql-response+json`, e o endpoint retornará o código de resposta apropriado quando houver qualquer forma de erro ao executar a consulta persistente:
+* `true`:
+O `Content-Type` retornado é `application/graphql-response+json`, e o ponto de extremidade retornará o código de resposta apropriado quando houver qualquer forma de erro ao executar a consulta persistente:
 
   | Código | Descrição |
   |--- |--- |
   | 200 | Resposta bem-sucedida |
-  | 400 | Indica que há cabeçalhos ausentes ou um problema com o caminho de consulta persistente. Por exemplo, nome de configuração não especificado, sufixo não especificado e outros.<br>Consulte [Solução de problemas - endpoint do GraphQL não configurado](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
-  | 404 | O recurso solicitado não foi encontrado. Por exemplo, o endpoint do Graphql não está disponível no servidor.<br>Consulte [Solução de problemas - Caminho ausente no URL da consulta persistente do GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
+  | 400 | Indica que há cabeçalhos ausentes ou um problema com o caminho de consulta persistente. Por exemplo, nome de configuração não especificado, sufixo não especificado e outros.<br>Consulte [Solução de problemas - Ponto de extremidade do GraphQL não configurado](/help/headless/graphql-api/persisted-queries-troubleshoot.md#missing-path-query-url). |
+  | 404 | O recurso solicitado não foi encontrado. Por exemplo, o endpoint do Graphql não está disponível no servidor.<br>Consulte [Solução de problemas - Caminho ausente na URL de consulta persistente do GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md#graphql-endpoint-not-configured). |
   | 500 | Erro interno do servidor. Por exemplo, erros de validação, erro de persistência e outros. |
 
   >[!NOTE]
@@ -478,8 +481,8 @@ Para criar um pacote:
 1. Em **Geral** na caixa de diálogo Definição do pacote, insira um **Nome** como “wknd-persistent-queries”.
 1. Insira um número de versão como “1.0”.
 1. Em **Filtros**, adicione um novo **Filtro**. Use o Localizador de caminhos para selecionar a pasta `persistentQueries`, abaixo da configuração. Por exemplo, para a configuração `wknd`, o caminho completo será `/conf/wknd/settings/graphql/persistentQueries`.
-1. Selecionar **Salvar** para salvar a nova definição de pacote e fechar a caixa de diálogo.
-1. Selecione o **Build** na definição de pacote criada.
+1. Selecione **Salvar** para salvar a nova definição de pacote e fechar a caixa de diálogo.
+1. Selecione o botão **Criar** na definição de pacote criada.
 
 Depois que o pacote tiver sido criado, você poderá:
 

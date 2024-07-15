@@ -26,13 +26,13 @@ A seção a seguir descreve como criar um ambiente para seu programa no Cloud Ma
 
 Depois que a criação do projeto for concluída com êxito, você poderá ver a atualização do cartão de chamada para ação na página Visão geral do Cloud Manager.
 
-1. Navegue até o Cloud Manager e selecione o ícone para acessar o Cloud Manager **Visão geral** página.
+1. Navegue até o Cloud Manager e selecione o ícone para acessar a página **Visão geral** do Cloud Manager.
 
-1. Clique em **Adicionar ambiente** do Cloud Manager **Visão geral** página.
+1. Clique em **Adicionar ambiente** na página **Visão geral** da Cloud Manager.
 
    ![imagem](/help/screens-cloud/assets/onboarding/add-environ1.png)
 
-1. Selecione os detalhes do ambiente na **Adicionar ambiente** e clique em **Salvar**.
+1. Selecione os detalhes do ambiente na caixa de diálogo **Adicionar ambiente** e clique em **Salvar**.
 
    ![imagem](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
@@ -42,4 +42,4 @@ Depois que a criação do projeto for concluída com êxito, você poderá ver a
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como configurar um ambiente para seu programa no Cloud Manager, você está pronto para seguir em frente. A próxima etapa do processo de integração é [Execução do pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
+Depois de saber como configurar um ambiente para seu programa no Cloud Manager, você está pronto para seguir em frente. A próxima etapa do processo de integração é [Executar o pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).

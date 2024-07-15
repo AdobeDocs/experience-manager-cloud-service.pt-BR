@@ -14,7 +14,7 @@ ht-degree: 93%
 
 # Tarefas do usuário do AEM {#aem-user-tasks}
 
-Nesta parte opcional do [integração do jornada,](overview.md) você aprende como usuários de AEM podem acessar AEM as a Cloud Service para criar conteúdo.
+Nesta parte opcional da [jornada de integração](overview.md), você aprenderá como os usuários de AEM podem acessar o AEM as a Cloud Service para criar conteúdo.
 
 ## A história até agora {#story-so-far}
 
@@ -52,7 +52,7 @@ Como um autor, é necessário fazer logon no AEM para começar a criar conteúdo
 
 1. Selecione o programa apropriado na página **Programas e produtos** para abrir a página **Visão geral**. Se não tiver certeza de qual programa acessar, pergunte ao administrador do sistema.
 
-1. No **Visão geral** no Cloud Manager, clique no link do autor na **Ambientes** cartão.
+1. Na página **Visão geral** do Cloud Manager, clique no link do autor no cartão **Ambientes**.
 
    ![Cartão Ambientes](/help/journey-onboarding/assets/author-environ.png)
 

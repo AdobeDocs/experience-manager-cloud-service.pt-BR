@@ -1,6 +1,6 @@
 ---
-title: Ações do Construtor de aplicativos
-description: Saiba mais sobre as ações de Tempo de execução do Adobe e como usá-las nos aplicativos do App Builder.
+title: Ações do App Builder
+description: Saiba mais sobre as ações do Adobe Runtime e como usá-las em aplicativos App Builder.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ---
 
-# Ações do Construtor de aplicativos
+# Ações do App Builder
 
 ## Introdução às ações
 

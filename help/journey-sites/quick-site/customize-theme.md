@@ -67,7 +67,7 @@ Quando estiver confortável com a estrutura do projeto de tema, inicie o proxy l
 
    ![npm run live](assets/npm-run-live.png)
 
-1. Quando o servidor proxy é iniciado, ele abre automaticamente um navegador para `http://localhost:7001/`. Selecionar **FAZER LOGON LOCALMENTE (SOMENTE TAREFAS DE ADMINISTRADOR)** e faça logon com as credenciais de usuário proxy fornecidas pelo administrador do AEM.
+1. Quando o servidor proxy é iniciado, ele abre automaticamente um navegador para `http://localhost:7001/`. Selecione **ENTRAR LOCALMENTE (SOMENTE TAREFAS DE ADMINISTRADOR)** e entre com as credenciais de usuário proxy fornecidas pelo administrador do AEM.
 
    ![Fazer logon localmente](assets/sign-in-locally.png)
 
@@ -138,7 +138,7 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Compreender como testar as personalizações de tema usando conteúdo real do AEM por meio de um proxy local.
 * Saber como confirmar as alterações no repositório Git do AEM.
 
-Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites de AEM revisando o documento a seguir [Implante Seu Tema Personalizado,](deploy-theme.md) onde você aprende a implantar o tema usando o pipeline de front-end.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação Rápida de Sites de AEM revisando a seguir o documento [Implante seu Tema Personalizado](deploy-theme.md), onde você aprenderá a implantar o tema usando o pipeline de front-end.
 
 ## Recursos adicionais {#additional-resources}
 

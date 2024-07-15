@@ -56,19 +56,19 @@ Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site,
 
    * `https://<your-author-environment>.adobeaemcloud.com/sites.html/content`
 
-1. Selecionar **Criar** no canto superior direito da tela e no menu suspenso, selecione **Site do modelo**.
+1. Selecione **Criar** no canto superior direito da tela e, no menu suspenso, selecione **Site do modelo**.
 
    ![Criação de um site a partir de um modelo](../assets/create-site-from-template.png)
 
-1. No assistente Criar site, selecione um modelo existente no painel esquerdo ou no **Importar** na parte superior da coluna à esquerda para importar um novo template.
+1. No assistente Criar Site, selecione um modelo existente no painel esquerdo ou em **Importar** na parte superior da coluna à esquerda para importar um novo modelo.
 
    ![Assistente de criação de site](../assets/site-creation-wizard.png)
 
-   1. Se optar por importar, no navegador de arquivos, localize o modelo que deseja usar e selecione **Carregar**.
+   1. Se você optar por importar, no navegador de arquivos, localize o modelo que deseja usar e selecione **Carregar**.
 
    1. Depois que o upload for concluído, ele aparece na lista de modelos disponíveis.
 
-1. Ao selecionar um modelo, informações sobre ele são reveladas na coluna da direita. Com o modelo desejado selecionado, selecione **Próxima**.
+1. Ao selecionar um modelo, informações sobre ele são reveladas na coluna da direita. Com o modelo desejado selecionado, selecione **Próximo**.
 
    ![Selecione um modelo](../assets/select-site-template.png)
 
@@ -78,7 +78,7 @@ Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site,
    * O nome do site se torna parte do URL.
    * O nome do site deve estar em conformidade com as [convenções de nomenclatura de páginas do AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
 
-1. Selecionar **Criar** e o site é criado a partir do modelo de site.
+1. Selecione **Criar** e o site é criado a partir do modelo de site.
 
    ![Detalhes do novo site](../assets/create-site-details.png)
 

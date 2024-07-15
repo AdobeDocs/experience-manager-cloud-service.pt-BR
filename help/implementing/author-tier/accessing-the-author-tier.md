@@ -1,6 +1,6 @@
 ---
 title: Acesso à camada do autor
-description: Saiba como acessar o nível de criação de um ambiente as a Cloud Service de AEM.
+description: Saiba como acessar o nível de criação de um ambiente do AEM as a Cloud Service.
 exl-id: 4143a125-3d46-4c44-b52c-f55c5194fb9c
 feature: Configuring
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 13%
 
 # Acesso à camada do autor {#accessing-the-author-tier}
 
-O acesso à camada do autor de um ambiente as a Cloud Service AEM é feito por meio de um URL padrão e não personalizável.
+O acesso à camada do autor de um ambiente do AEM as a Cloud Service é feito por meio de um URL padrão e não personalizável.
 
 O formato do URL é o seguinte:
 

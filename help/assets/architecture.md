@@ -12,11 +12,11 @@ ht-degree: 30%
 
 ---
 
-# Arquitetura de ativos as a [!DNL Cloud Service] solução {#assets-architecture}
+# Arquitetura do Assets como uma solução [!DNL Cloud Service] {#assets-architecture}
 
-[!DNL Experience Manager Assets] as a [!DNL Cloud Service] é baseado em [!DNL Adobe Experience Manager] e compara bem com a oferta mais recente [!DNL Experience Manager] 6.5. O [!DNL Cloud Service] A oferta do tem uma oferta ajustada de arquitetura e funcionalidade para ser um serviço nativo em nuvem. As alterações na arquitetura subjacente não permitem que toda a funcionalidade do Experience Manager 6.5 faça parte do [!DNL Cloud Service].
+O [!DNL Experience Manager Assets] as a [!DNL Cloud Service] é baseado em [!DNL Adobe Experience Manager] e se compara bem com a oferta mais recente [!DNL Experience Manager] 6.5. A oferta [!DNL Cloud Service] tem uma oferta ajustada de arquitetura e funcionalidade para ser um serviço nativo em nuvem. Alterações na arquitetura subjacente não permitem que toda a funcionalidade do Experience Manager 6.5 faça parte do [!DNL Cloud Service].
 
-Para ver a visão geral da arquitetura dos microsserviços de ativos, consulte este [visão geral dos microsserviços de ativos](asset-microservices-overview.md#asset-microservices-architecture).
+Para ver a visão geral da arquitetura dos microsserviços de ativos, consulte esta [visão geral dos microsserviços de ativos](asset-microservices-overview.md#asset-microservices-architecture).
 
 **Consulte também**
 
@@ -32,10 +32,10 @@ Para ver a visão geral da arquitetura dos microsserviços de ativos, consulte e
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Visão geral e novidades](/help/assets/overview.md)
->* [Formatos de arquivo e tipos MIME compatíveis](file-format-support.md)
+>* [Formatos de arquivo e tipos MIME com suporte](file-format-support.md)
 >* [Visão geral dos microsserviços de ativos](asset-microservices-overview.md)

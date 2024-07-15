@@ -1,6 +1,6 @@
 ---
-title: Criar um formulário usando a criação com base em documentos para o Serviço de entrega de borda do AEM Forms
-description: Formas perfeitas de artesanato, rápido!  o AEM Forms Edge Delivery + criação baseada em documentos = velocidade incrível e formulários compatíveis com SEO para usuários e mecanismos de pesquisa mais satisfeitos.
+title: Criar um formulário usando a criação com base em documento para o AEM Forms Edge Delivery Service
+description: Formas perfeitas de artesanato, rápido! AEM Forms Edge Delivery + criação baseada em documentos = velocidade incrível e formulários compatíveis com SEO para usuários e mecanismos de pesquisa mais satisfeitos.
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
@@ -12,9 +12,9 @@ ht-degree: 0%
 ---
 
 
-# Criar um formulário usando a criação com base em documentos para o Serviço de entrega de borda do AEM Forms
+# Criar um formulário usando a criação com base em documento para o AEM Forms Edge Delivery Service
 
-Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. A criação com base em documentos do AEM Forms Edge Delivery permite criar formulários usando ferramentas familiares, como o Word ou o Google Docs.Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft Sharepoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho empresarial existente.
+Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. A criação baseada em documentos do AEM Forms Edge Delivery permite criar formulários usando ferramentas familiares, como o Word ou o Google Docs.Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft Sharepoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho comercial existente.
 
 Este guia aborda:
 
@@ -30,7 +30,7 @@ Seja você um novato ou um profissional, este guia permite que você crie formas
 
 ## Prepare sua planilha para receber dados
 
-1. Crie uma Pasta de Trabalho do Microsoft Excel ou uma Planilha do Google em qualquer lugar no diretório do projeto de Entrega da borda do AEM no Microsoft OneDrive ou no Google Drive. Este documento usa uma Planilha do Google chamada `contact-us.xlsx`, localizado na raiz de um projeto Adobe Experience Manager (AEM).
+1. Crie uma Planilha do Microsoft Excel ou Google em qualquer lugar no diretório do projeto AEM Edge Delivery no Microsoft OneDrive ou no Google Drive. Este documento usa uma Planilha Google chamada `contact-us.xlsx`, localizada na raiz de um projeto Adobe Experience Manager (AEM).
 
 1. Verifique se o usuário do AEM (por exemplo helix@adobe.com) configurado para seu projeto tem permissões de edição para a planilha.
 
@@ -48,11 +48,11 @@ Seja você um novato ou um profissional, este guia permite que você crie formas
 
 1. Prepare a planilha adicionando cabeçalhos que correspondam aos dados inseridos. O exemplo a seguir exibe campos para um formulário &quot;contact-us&quot;:
 
-   ![Campos de um formulário de contato conosco](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
+   ![Campos de um formulário contact-us](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
    Você pode fazer isso manualmente ou usando uma solicitação POST para a rota do formulário no serviço de Admin AEM. O serviço de administração examinará os dados no corpo da POST e gerará os cabeçalhos, tabelas e planilhas apropriados necessários para assimilar dados com eficiência e aproveitar ao máximo o serviço de formulários.
 
-   Para entender como formatar a solicitação POST para configurar sua planilha, consulte o [Documentação da API de administração](https://www.hlx.live/docs/admin.html#tag/form). Além disso, consulte o exemplo fornecido abaixo:
+   Para entender como formatar a solicitação POST para configurar sua planilha, consulte a [Documentação da API de Administração](https://www.hlx.live/docs/admin.html#tag/form). Além disso, consulte o exemplo fornecido abaixo:
 
    **Solicitação**
 
@@ -116,7 +116,7 @@ Seja você um novato ou um profissional, este guia permite que você crie formas
 
 A solicitação POST acima fornece dados de amostra, incluindo campos de formulário e seus respectivos valores de amostra. Esses dados são usados pelo serviço de Administração para configurar o formulário.
 
-Embora o serviço de Administração tenha recomendado a configuração da sua planilha, se preferir criar os cabeçalhos manualmente, consulte o documento intitulado [Configuração Manual do Forms Sheet](https://www.hlx.live/docs/manual-forms-sheet-setup).
+Embora o serviço de Administração tenha recomendado configurar a planilha, se preferir criar os cabeçalhos manualmente, consulte o documento intitulado [Configuração Manual da Planilha do Forms](https://www.hlx.live/docs/manual-forms-sheet-setup).
 
 Ao enviar a solicitação do POST para o serviço de administração, você observará as seguintes alterações em sua pasta de trabalho:
 
@@ -209,7 +209,8 @@ Há algumas maneiras diferentes de formatar os dados de formulário no corpo do 
       }
   ```
 
-* `x-www-form-urlencoded` corpo (`content-type` o cabeçalho deve ser definido como `application/x-www-form-urlencoded`) &#39;firstname=bruce&amp;lastname=banner&amp;email=bruce%40example.com&#39;
+* O corpo `x-www-form-urlencoded` (`content-type` cabeçalho deve ser definido como `application/x-www-form-urlencoded`)
+&#39;firstname=bruce&amp;lastname=banner&amp;email=bruce%40example.com&#39;
 
 
 

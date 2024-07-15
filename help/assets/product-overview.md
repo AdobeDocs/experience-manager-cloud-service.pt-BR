@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Visão geral do Content Hub {#overview-content-hub}
 
-![Visão geral do Content Hub](assets/content-hub-overview.png)
+![visão geral do Content Hub](assets/content-hub-overview.png)
 
 O Content Hub está disponível como parte do Experience Manager Assets as a Cloud Service para democratizar o acesso a conteúdo sobre a marca para organizações e seus parceiros de negócios. Ele se concentra na distribuição de ativos para ativação em escala e criação de variantes de conteúdo na marca para melhorar a agilidade de marketing.
 
@@ -19,21 +19,21 @@ O Content Hub está disponível como parte do Experience Manager Assets as a Clo
 
 A Content Hub oferece os seguintes benefícios principais:
 
-**Encontre e compartilhe todos os ativos aprovados pela marca disponíveis em um portal intuitivo**
+**Localize e compartilhe todos os ativos aprovados pela marca disponíveis em um portal intuitivo**
 
 O AEM Assets serve como uma única fonte da verdade e todos os ativos aprovados são disponibilizados automaticamente no Content Hub em uma hierarquia simples para melhorar a experiência de pesquisa.
 
-**Interface do usuário configurável**
+**Interface de usuário configurável**
 
 As propriedades mais comuns no Content Hub, como filtros de pesquisa, campos disponíveis ao adicionar ou importar ativos, propriedades de ativos, conteúdo de banner para marca são configuráveis e um administrador pode configurar facilmente a interface do usuário do Content Hub com base em seus requisitos.
 
-**Capacite os não criativos a editar e remixar conteúdo enquanto permanecem na marca**
+**Capacite os usuários não criativos a editar e remixar conteúdo enquanto permanecem na marca**
 
 O Content Hub permite criar novo conteúdo com o Adobe Express (se você tiver direitos ao Adobe Express). Você pode editar o conteúdo existente com ferramentas fáceis de usar, produzir variações na marca com modelos e elementos da marca e criar novo conteúdo com os recursos mais recentes da GenAI da Adobe Firefly.
 
-**Obter insights sobre como o conteúdo é usado em equipes**
+**Obter insights sobre como o conteúdo é usado entre equipes**
 
-[!DNL Content Hub] O fornece insights valiosos sobre ativos, abordando um desafio comum que as partes interessadas de marketing muitas vezes encontram — estatísticas de uso de ativos usadas em campanhas de marketing, canais e diferentes regiões. Ao obter uma compreensão clara do desempenho e da popularidade dos ativos, ele fornece insights acionáveis essenciais para melhorar a experiência do usuário.
+O [!DNL Content Hub] fornece informações valiosas sobre ativos, abordando um desafio comum que as partes interessadas de marketing geralmente enfrentam: as estatísticas de uso de ativos usadas em campanhas de marketing, canais e diferentes regiões. Ao obter uma compreensão clara do desempenho e da popularidade dos ativos, ele fornece insights acionáveis essenciais para melhorar a experiência do usuário.
 
 ## Pré-requisitos {#prerequisites-content-hub}
 
@@ -41,47 +41,47 @@ O Content Hub requer um ambiente de autor de produção de Experience Manager as
 
 ## Como acessar o Content Hub? {#access-content-hub}
 
-[Depois de configurar o Content Hub](/help/assets/deploy-content-hub.md) e adicionar um usuário à [Perfil de produto do Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), o Content Hub pode ser acessado das seguintes maneiras:
+[Após configurar o Content Hub](/help/assets/deploy-content-hub.md) e adicionar um usuário ao [perfil de produto do Content Hub](/help/assets/deploy-content-hub.md#content-hub-instance-product-profile), o Content Hub pode ser acessado das seguintes maneiras:
 
 * Acesse o Content Hub usando o seguinte link:
 
   `https://experience.adobe.com/#/assets/contenthub`
 
-* Faça logon em experience.adobe.com e clique em **[!UICONTROL Experience Manager Assets Content Hub]** disponível no **[!UICONTROL Acesso rápido]** seção:
+* Faça logon em experience.adobe.com e clique em **[!UICONTROL Experience Manager Assets Content Hub]**, disponível na seção **[!UICONTROL Acesso rápido]**:
   ![Acesso ao Content Hub](assets/access-content-hub.png)
 
-* Faça logon em experience.adobe.com e clique em **[!UICONTROL Experience Manager Assets Content Hub]** disponível no alternador de produtos:
-  ![Método de acesso 3 do Content Hub](assets/access-content-hub-alternate.png)
+* Faça logon em experience.adobe.com e clique em **[!UICONTROL Experience Manager Assets Content Hub]**, disponível no alternador de produto:
+  ![Método de acesso Content Hub 3](assets/access-content-hub-alternate.png)
 
 
 
 ## Fornecer feedback sobre o Content Hub {#provide-content-hub-feedback}
 
-Para recomendar aprimoramentos relacionados ao produto, clique em **[!UICONTROL Feedback]** ao lado do nome da organização, na parte superior da interface do usuário do Content Hub.
+Para recomendar melhorias relacionadas ao produto, clique em **[!UICONTROL Feedback]**, ao lado do nome da sua Organização, na parte superior da interface do usuário do Content Hub.
 
-Especifique um assunto, uma descrição da recomendação e anexe arquivos, se necessário. Clique em **[!UICONTROL Enviar]** para enviar o feedback ao Adobe.
+Especifique um assunto, uma descrição da recomendação e anexe arquivos, se necessário. Clique em **[!UICONTROL Enviar]** para enviar o feedback para o Adobe.
 
-![Feedback do Content Hub](assets/content-hub-feedback.png)
+![Comentários sobre o Content Hub](assets/content-hub-feedback.png)
 
 ## Configurar o Content Hub para sua equipe {#setup-content-hub}
 
 Siga estas etapas para configurar o Content Hub para sua equipe:
 
-1. [Ativar o Content Hub para Experience Manager Assets usando o Cloud Manager](deploy-content-hub.md#enable-content-hub).
+1. [Habilite o Content Hub para Experience Manager Assets usando o Cloud Manager](deploy-content-hub.md#enable-content-hub).
 
 1. [Integrar o administrador do Content Hub](deploy-content-hub.md#onboard-content-hub-administrator).
 
 1. [Adicionar usuários-chave do Content Hub](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
-1. [Autores ou administradores do DAM para aprovar ativos usando ativos do Experience Manager](approve-assets.md).
+1. [Autores ou administradores do DAM para aprovar ativos usando ativos de Experience Manager](approve-assets.md).
 
-1. [Os administradores podem configurar a interface do Content Hub para outros usuários](configure-content-hub-ui-options.md).
+1. [Os administradores podem configurar a interface de usuário do Content Hub para outros usuários](configure-content-hub-ui-options.md).
 
-1. [Conceder acesso ao Content Hub a mais usuários da equipe](deploy-content-hub.md#onboard-content-hub-consumer-users).
+1. [Conceder acesso à Content Hub a mais usuários da equipe](deploy-content-hub.md#onboard-content-hub-consumer-users).
 
-1. [Acessar o portal do Content Hub](#access-content-hub).
+1. [Acessar o portal Content Hub](#access-content-hub).
 
-1. [Fornecer feedback sobre o Content Hub](#provide-content-hub-feedback).
+1. [Forneça comentários sobre o Content Hub](#provide-content-hub-feedback).
 
 
 ## Saiba mais sobre os principais recursos {#key-capabilities-content-module}
@@ -121,7 +121,7 @@ Siga estas etapas para configurar o Content Hub para sua equipe:
    </a>
    <div>
       <a href="/help/assets/edit-images-content-hub.md">
-      <strong>Editar imagens usando o Adobe Express</strong>
+      <strong>Editar imagens usando Adobe Express</strong>
       </a>
    </div>
    <p>
@@ -140,7 +140,7 @@ Siga estas etapas para configurar o Content Hub para sua equipe:
       </a>
    </div>
    <p>
-      <em>Saiba como compartilhar um ou vários ativos como um link e acessá-los.</em>
+      <em>Saiba como compartilhar um ou vários ativos como um link e depois acessá-los.</em>
    </p>
 </td>
 <td>
@@ -166,7 +166,7 @@ Siga estas etapas para configurar o Content Hub para sua equipe:
       </a>
    </div>
    <p>
-      <em> O módulo de conteúdo fornece insights valiosos sobre ativos, abordando um desafio comum que as partes interessadas de marketing muitas vezes encontram</em>
+      O módulo de conteúdo <em> fornece informações valiosas sobre ativos, abordando um desafio comum que as partes interessadas de marketing encontram com frequência</em>
    </p>
 </td>
 </table>

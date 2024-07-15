@@ -19,17 +19,17 @@ Este guia ajuda a identificar as áreas que você precisa atualizar para a migra
 
 Para o Experience Manager as a Cloud Service, o complemento CIF é a única solução de integração comercial compatível para soluções comerciais da Adobe Commerce e de terceiros. O complemento CIF é implantado automaticamente para clientes no Experience Manager as a Cloud Service; não é necessária implantação manual. Consulte [Introdução ao AEM Commerce as a Cloud Service](getting-started.md).
 
-Para apoiar projetos que implantam o CIF Adobe, fornecer [AEM Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components).
+Para dar suporte a projetos que implantam o Adobe CIF, forneça [componentes principais do AEM CIF](https://github.com/adobe/aem-core-cif-components).
 
 O complemento CIF está disponível para o AEM 6.5 e por meio do [Portal de distribuição de softwares](https://experience.adobe.com/#/downloads/content/software-distribution/br/aem.html). Ele é compatível e fornece os mesmos recursos do complemento CIF para o Experience Manager as a Cloud Service, não sendo necessário fazer ajustes.
 
-A CIF clássica com suas dependências não está mais disponível. Código que depende desta versão do CIF usando `com.adobe.cq.commerce.api` As APIs do Java devem ser ajustadas para o complemento CIF e seus princípios.
+A CIF clássica com suas dependências não está mais disponível. Códigos que dependam dessa versão do CIF usando as APIs do Java `com.adobe.cq.commerce.api` devem ser ajustados para o complemento CIF e seus princípios.
 
 O conector CIF anteriormente disponível não pode mais ser instalado. Códigos que dependem desse conector precisam ser ajustados para o complemento CIF e seus princípios.
 
 ## Estrutura de projeto
 
-Saiba mais sobre [Estrutura de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) e as características do AEM as a Cloud Service. Adapte a configuração do seu projeto ao layout do AEM as a Cloud Service.
+Conheça a [Estrutura de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR) e as características do AEM as a Cloud Service. Adapte a configuração do seu projeto ao layout do AEM as a Cloud Service.
 Em comparação às implantações do AEM 6.5, há duas diferenças principais:
 
 * O pacote OSGI do cliente GraphQL **não** deve mais ser incluído nos projetos AEM, agora ele é implantado por meio do complemento CIF.

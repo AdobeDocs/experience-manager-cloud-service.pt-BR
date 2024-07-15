@@ -24,24 +24,24 @@ A seção a seguir descreve as Notas de versão gerais da versão atual (mais re
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] O as a Cloud Service 2021.5.0 é 27 de maio de 2021.
+A data de lançamento do [!DNL Adobe Experience Manager] as a Cloud Service 2021.5.0 é 27 de maio de 2021.
 A versão seguinte (2021.6.0) será lançada em 28 de junho de 2021.
 
-## Fundação as a Cloud Service AEM {#foundation}
+## AEM as a Cloud Service Foundation {#foundation}
 
-### Novidades da Fundação AEM as a Cloud Service {#what-is-new-foundation}
+### Novidades do AEM as a Cloud Service Foundation {#what-is-new-foundation}
 
 * [Canal de pré-lançamento](/help/release-notes/prerelease.md): visualize os recursos futuros por um mês inteiro antes de eles entrarem em produção.
 
-* [Descontinuação de API](/help/release-notes/deprecated-removed-features.md): uma lista das APIs obsoletas mais recentes para o AEM as a Cloud Service está disponível.
+* [Descontinuação de API](/help/release-notes/deprecated-removed-features.md): uma lista das APIs descontinuadas mais recentes para o AEM as a Cloud Service está disponível.
 
-* [Plug-in Maven Analisador de build do SDK as a Cloud Service do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR): atualize os projetos maven para a versão mais recente, o que inclui uma verificação de API Java descontinuada e outras melhorias.
+* [Plug-in Maven AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR): atualize os projetos maven para a versão mais recente, o que inclui uma verificação de API Java descontinuada e outras melhorias.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Novidades do [!DNL Sites] {#what-is-new-sites}
 
-* Em breve, você poderá verificar o conteúdo em um novo [Camada de visualização](/help/sites-cloud/authoring/sites-console/previewing-content.md) para simular a aparência e a experiência finais como você faria na camada de Publicação. Isso é ativado pelo assistente de Publicação gerenciada do AEM Sites, que agora permite escolher um destino de publicação entre Publicar ou Pré-visualizar. As experiências na Pré-visualização podem ser acessadas por meio de um URL dedicado. Após a validação em Pré-visualizar, o conteúdo pode ser publicado de Autor para Publicar como de costume. A habilitação do serviço de Pré-visualização em ambientes as a Cloud Service AEM será liberada gradualmente nas próximas semanas.
+* Em breve você poderá verificar o conteúdo em um novo [Camada de visualização](/help/sites-cloud/authoring/sites-console/previewing-content.md) para simular a aparência e a experiência finais como faria na camada do Publish. Isso é ativado pelo assistente de Publicação gerenciada do AEM Sites, que agora permite escolher um destino de publicação entre o Publish ou Pré-visualização. As experiências na Pré-visualização podem ser acessadas por meio de um URL dedicado. Após a validação na Pré-visualização, o conteúdo pode ser publicado de Autor para Publish como de costume. A habilitação do serviço de Pré-visualização em ambientes AEM as a Cloud Service será liberada gradualmente nas próximas semanas.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -61,26 +61,26 @@ A versão seguinte (2021.6.0) será lançada em 28 de junho de 2021.
 
 * As melhorias na experiência do usuário exibem o número de ativos presentes em uma pasta. Para mais de 1000 ativos em uma pasta, [!DNL Assets] exibe mais de 1000.
 
-  ![O número de ativos em uma pasta é exibido na interface](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![Número de ativos em uma pasta exibidos na interface](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Bugs corrigidos em [!DNL Assets] {#assets-bugs-fixed}
 
-* O upload de arquivos muito grandes trava o [!DNL Experience Manager desktop app]. (CQ-4320942)
+* O carregamento de arquivos muito grandes trava o [!DNL Experience Manager desktop app]. (CQ-4320942)
 * As opções da barra de ferramentas são diferentes quando a mesma coleção é selecionada em uma pasta e quando é selecionada em um resultado de pesquisa. (CQ-4321406)
 
 #### Novidades do Dynamic Media {#what-is-new-dm}
 
-* A DPR (Relação de pixels do dispositivo) da imagem inteligente e a otimização da largura de banda da rede permitem que você forneça imagens com mais eficiência, em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter mais informações, consulte [Perguntas frequentes sobre imagens inteligentes](/help/assets/dynamic-media/imaging-faq.md) e [Otimização de imagem com formatos de imagem de próxima geração WebP e AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* A DPR (Relação de pixels do dispositivo) da imagem inteligente e a otimização da largura de banda da rede permitem que você forneça imagens com mais eficiência, em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter mais informações, consulte [Perguntas frequentes sobre imagens inteligentes](/help/assets/dynamic-media/imaging-faq.md) e [Otimização de imagens com formatos de imagem de próxima geração WebP e AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 * Introdução do suporte para o formato de imagem AVIF de próxima geração na entrega do Dynamic Media (modificador de URL fmt).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
 
-* **Ajuda contextual**: adição de ajuda contextual para o editor de formulários adaptáveis, editor de modelo e editor de tema para ajudar os autores a entender melhor vários recursos dos editores.
-* **Mensagens de erro no navegador de propriedades**: Adição de mensagens de erro para cada propriedade no navegador Propriedades adaptáveis do Forms. Essas mensagens ajudam a entender os valores permitidos para um campo.
+* **Ajuda contextual**: adição de ajuda contextual para o editor de formulários adaptáveis, editor de modelos e editor de temas para ajudar os autores a entender melhor vários recursos dos editores.
+* **Mensagens de erro no Navegador de propriedades**: foram adicionadas mensagens de erro para cada propriedade no navegador Propriedades adaptáveis do Forms. Essas mensagens ajudam a entender os valores permitidos para um campo.
 
-### Futuro recurso beta do [!DNL Forms] {#what-is-new-forms-prerelease}
+### Próximo recurso beta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
 Output as a Cloud Service: o serviço de saída ajuda a combinar modelos XDP e dados XML para gerar documentos de impressão em vários formatos. O serviço permite gerar documentos em modo de lote síncrono e assíncrono. O serviço de saída permite criar aplicativos que permitem:
 
@@ -150,7 +150,7 @@ A data de lançamento da ferramenta de transferência de conteúdo v1.4.6 é 27 
 
 * Uma nova instrução de registro foi adicionada ao registro de erros do início rápido se o usuário não tiver permissão de execução no executável Java.
 
-* Quando um usuário exclui um conjunto de migração da interface da CTT, onde uma extração foi executada, a variável `tmp` a pasta associada a esse conjunto de migração é excluída para economizar espaço.
+* Quando um usuário exclui um conjunto de migração da interface de usuário da CTT, em que uma extração foi executada, a pasta `tmp` associada a esse conjunto de migração é excluída para economizar espaço.
 
 ### Correções de erros {#bug-fixes-ctt-latest}
 
@@ -170,7 +170,7 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.4.0 é 11 
 ### Correções de erros {#bug-fixes-ctt-may}
 
 * Várias correções de erros relacionadas ao recurso de atualização automática na interface do usuário da ferramenta Transferência de conteúdo.
-* Ferramenta Transferência de conteúdo com `wipe=true` resultou em índice de contador incorreto no destino. Isso foi corrigido.
+* A Ferramenta de Transferência de Conteúdo com `wipe=true` resultou em índice de contador incorreto no destino. Isso foi corrigido.
 
 ## Complemento do Commerce {#cloud-services-commerce}
 

@@ -82,7 +82,7 @@ Para criar uma configuração de tradução:
 
    ![Local da configuração de tradução](assets/translation-configuration-location.png)
 
-1. Selecionar **Criar** na barra de ferramentas para criar a nova configuração.
+1. Selecione **Criar** na barra de ferramentas para criar a nova configuração.
 1. Forneça as seguintes informações nos campos e selecione **Criar**.
    1. Selecione o **Tipo de configuração** no menu suspenso. Selecione **Integração de tradução** na lista.
    1. Insira um **Título** para sua configuração. O **Título** identifica a configuração no console dos **Cloud Services**, bem como nas listas suspensas de propriedades da página.
@@ -90,9 +90,9 @@ Para criar uma configuração de tradução:
 
    ![Criar configuração de tradução](assets/create-translation-configuration.png)
 
-1. Selecionar **Criar** e a variável **Editar configuração** é exibida, onde você pode definir as propriedades de configuração.
+1. Selecione **Criar** e a janela **Editar Configuração** será exibida, onde você poderá definir as propriedades de configuração.
 
-1. Como o conteúdo é gerenciado como um site, selecione o **Sites** guia.
+1. Como seu conteúdo é gerenciado como um site, selecione a guia **Sites**.
 
 ![Propriedades de configuração de tradução](assets/translation-configuration.png)
 
@@ -106,7 +106,7 @@ Para criar uma configuração de tradução:
    1. **Traduzir tags** - marque essa opção para traduzir tags associadas à página.
    1. **Executar tradução automaticamente** - marque essa propriedade se desejar que as traduções sejam enviadas automaticamente para o serviço de tradução.
 
-1. Selecionar **Salvar e fechar**.
+1. Selecione **Salvar e fechar**.
 
 Você concluiu a configuração do conector para o serviço de tradução.
 
@@ -120,12 +120,12 @@ Para fazer isso, navegue até a raiz do idioma do conteúdo. Para os fins do nos
 /content/<your-project>/en
 ```
 
-1. Vá para a navegação global e acesse **Navegação** > **Assets** > **Arquivos**.
+1. Vá para a navegação global e vá para **Navegação** > **Assets** > **Arquivos**.
 1. No console de ativos, selecione a raiz do idioma a ser configurada e selecione **Propriedades**.
 1. Selecione a guia **Cloud Services**.
-1. Em **Configurações do Cloud Service** no **Adicionar configuração** selecione seu conector. Ele deve aparecer na lista suspensa quando você tiver instalado o pacote como [descrito anteriormente.](#connect-translation-provider)
-1. Em **Configurações do Cloud Service** no **Adicionar configuração** também selecione sua configuração.
-1. Selecionar **Salvar e fechar**.
+1. Em **Configurações de Cloud Service**, na lista suspensa **Adicionar configuração**, selecione o conector. Ele deverá aparecer na lista suspensa quando você tiver instalado o pacote, conforme [descrito anteriormente.](#connect-translation-provider)
+1. Em **Configurações de Cloud Service**, na lista suspensa **Adicionar configuração**, selecione também a sua configuração.
+1. Selecione **Salvar e fechar**.
 
 ![Selecionar configurações do Cloud Service](assets/select-cloud-service-configurations.png)
 
@@ -136,7 +136,7 @@ Agora que concluiu esta parte da jornada de tradução do AEM Sites, você deve:
 * Compreender os parâmetros fundamentais da estrutura de integração de tradução no AEM.
 * Ser capaz de configurar sua própria conexão com o serviço de tradução.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando o documento a seguir [Configurar regras de tradução,](translation-rules.md) onde você aprende a definir qual conteúdo traduzir.
+Desenvolva esse conhecimento e continue sua jornada de tradução do AEM Sites revisando a seguir o documento [Configurar regras de tradução](translation-rules.md), onde você aprenderá a definir qual conteúdo traduzir.
 
 ## Recursos adicionais {#additional-resources}
 

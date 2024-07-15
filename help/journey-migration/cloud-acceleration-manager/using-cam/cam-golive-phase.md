@@ -11,11 +11,11 @@ ht-degree: 2%
 
 ---
 
-# Fase de ativação no Cloud Acceleration Manager {#golive-phase-cam}
+# Fase Go Live no Cloud Acceleration Manager {#golive-phase-cam}
 
-A placa Go Live fornece todo o conteúdo relevante que destaca a preparação, as ações específicas a serem tomadas e a consideração completa para garantir uma publicação tranquila e bem-sucedida no AEM as a Cloud Service.
+A placa de ativação fornece todo o conteúdo relevante que destaca a preparação, as ações específicas a serem tomadas e a consideração completa para garantir uma ativação tranquila e bem-sucedida no AEM as a Cloud Service.
 
-Clique no cartão do projeto para abrir a landing page do projeto e navegue até a **Go Live** conforme mostrado na figura abaixo.
+Clique no cartão do projeto para abrir a página de aterrissagem do projeto e navegue até a seção **Ativar**, conforme mostrado na figura abaixo.
 
 ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 
@@ -27,7 +27,7 @@ Clique no cartão do projeto para abrir a landing page do projeto e navegue até
 
 Siga esta seção para explorar o cartão de atividade Ativação:
 
-1. Clique em **Exibir** botão no **Go Live** cartão.
+1. Clique no botão **Exibir** do cartão **Ativar**.
 
    ![imagem](/help/journey-migration/cloud-acceleration-manager/assets/golive-1.png)
 

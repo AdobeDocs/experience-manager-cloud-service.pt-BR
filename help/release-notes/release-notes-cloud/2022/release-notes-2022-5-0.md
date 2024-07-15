@@ -13,7 +13,7 @@ ht-degree: 67%
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2022.5.0 {#release-notes}
 
-A seção a seguir descreve as notas de versão de recurso da versão 2022.5.0 do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as Notas de versão do recurso para a versão 2022.5.0 do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Assista ao vídeo de visão geral da versão de maio de 2022, que exibe um resum
 
 * O recurso [Imagem inteligente do Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) agora é compatível com o formato de arquivo AVIF — melhore ainda mais o Google Core Web Vital (maior renderização de conteúdo) com o AVIF, que fornece 20% de redução de tamanho em relação ao WebP. No total, o AVIF fornece uma redução média de até 41% no tamanho do JPEG (em algumas imagens, esse valor pode chegar a 76%).
 
-* [!UICONTROL Experience Manager Assets Brand Portal] O agora executa processos automáticos a cada 12 horas para excluir todos os ativos do Brand Portal publicados no AEM. Como resultado, não é necessário excluir manualmente os ativos na pasta Contribuição para manter o tamanho da pasta abaixo do limite. Consulte [Novidades no Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR).
+* O [!UICONTROL Experience Manager Assets Brand Portal] agora executa trabalhos automáticos a cada 12 horas para excluir todos os ativos do Brand Portal AEM publicados no. Como resultado, não é necessário excluir manualmente os ativos na pasta Contribuição para manter o tamanho da pasta abaixo do limite. Consulte [Novidades no Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR).
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Assets] {#prerelease-features-assets}
 
@@ -60,7 +60,7 @@ Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [dist
 
 * **Integrar formulários adaptáveis com o Microsoft® Power Automate**: agora é possível configurar um formulário adaptável para executar um fluxo da nuvem do Microsoft® Power Automate no envio. O formulário adaptável configurado envia dados capturados, anexos e documentos de registro para processamento no fluxo da nuvem do Power Automate. Ele ajuda você a criar uma experiência personalizada de captura de dados, aproveitando o poder do Microsoft® Power Automate para criar lógicas de negócios sobre dados capturados e automatizar os fluxos de trabalho do cliente.
 
-* **Assistente para criar um formulário adaptável**: você pode usar o assistente empresarial para criar rapidamente o Forms adaptável. O assistente fornece uma navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável.
+* **Assistente para criar um Formulário Adaptável**: você pode usar o assistente empresarial para criar rapidamente o Forms Adaptável. O assistente fornece uma navegação rápida por guias para selecionar facilmente o modelo pré-configurado, o estilo, os campos e as opções de envio para criar um formulário adaptável.
 
   ![Assistente para criar um formulário adaptável](/help/release-notes/assets/wizard.png)
 
@@ -81,13 +81,13 @@ Agora, o Experience Manager Assets usa recursos de IA do Adobe Sensei para [dist
 
 ### Novidades {#what-is-new-foundation}
 
-* A opção &quot;Adicionar árvore&quot; na tela do administrador do agente de replicação **Guia Distribuir**, que foi anunciado anteriormente como obsoleto, foi removido em 20 de junho de 2022 ou logo depois. Os pacotes com uma hierarquia de árvore de conteúdo devem ser replicados usando [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow).
+* A opção &quot;Adicionar árvore&quot;, na **guia Distribuir** da tela de administrador do agente de replicação, que foi anunciada anteriormente como obsoleta, foi removida em 20 de junho de 2022 ou logo após essa data. Os pacotes com uma hierarquia de árvore de conteúdo devem ser replicados usando [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow).
 
-* O uso da tela de administrador do agente de replicação ou da API de replicação para distribuir pacotes de conteúdo maiores que 10 MB (nós com propriedades, sem incluir binários) foi descontinuado e aplicado em 12 de setembro de 2022 ou logo em seguida. Em vez disso, [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) deve ser usado para replicar esses pacotes de conteúdo grandes. Em julho, uma mensagem de aviso será exibida na tela do administrador do agente de replicação **Guia Distribuir** se estiver tentando replicar esses pacotes de conteúdo grandes e também no log de erros do AEM sempre que a API de replicação for usada para replicar esses pacotes de conteúdo grandes. Em setembro, os avisos foram substituídos por erros. Ajuste seus processos de acordo.
+* O uso da tela de administrador do agente de replicação ou da API de replicação para distribuir pacotes de conteúdo maiores que 10 MB (nós com propriedades, sem incluir binários) foi descontinuado e aplicado em 12 de setembro de 2022 ou logo em seguida. Em vez disso, [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou o [Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) deve ser usado para replicar esses pacotes de conteúdo grandes. Em julho, uma mensagem de aviso será exibida na **guia Distribuir** da tela do administrador do agente de replicação ao tentar replicar esses pacotes de conteúdo grandes e também no log de erros do AEM sempre que a API de replicação for usada para replicar esses pacotes de conteúdo grandes. Em setembro, os avisos foram substituídos por erros. Ajuste seus processos de acordo.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Experience Manager] {#prerelease-features-foundation}
 
-* O AEM as a Cloud Service agora está integrado ao shell unificado para melhorar a experiência do usuário e unificá-la com todos os outros aplicativos da Experience Cloud. Consulte [AEM as a Cloud Service no shell unificado](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
+* O AEM as a Cloud Service agora está integrado ao shell unificado para melhorar a experiência do usuário e unificá-la com todos os outros aplicativos da Experience Cloud. Consulte [AEM as a Cloud Service no Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) para obter mais detalhes.
 
 ## Segurança do [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation-security}
 

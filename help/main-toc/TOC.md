@@ -181,9 +181,9 @@ ht-degree: 81%
          + [Notas da versão 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Notas de versão do conector aprimorado do Workfront para Experience Manager{#workfront}
       + [Notas de versão atuais do conector aprimorado do Workfront para Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
-   + Notas de versão para gerar variações {#generate-variations}
+   + Notas de Versão para Gerar Variações {#generate-variations}
       + [Notas de versão atuais para gerar variações](/help/generative-ai/release-notes-generate-variations.md)
-   + Notas de versão do Universal Editor {#univeral-editor}
+   + Notas de Versão do Editor Universal {#univeral-editor}
       + [Notas de versão atuais do Universal Editor](/help/release-notes/universal-editor/current.md)
    + [Novidades?](/help/release-notes/what-is-new.md)
    + [Alterações importantes no AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -604,7 +604,7 @@ ht-degree: 81%
       + [Baixar ativos usando o Content Hub](/help/assets/download-assets-content-hub.md)
       + [Gerenciar coleções no Content Hub](/help/assets/collections-content-hub.md)
       + [Editar imagens usando o Adobe Express no Content Hub](/help/assets/edit-images-content-hub.md)
-      + [Insights de ativos no Content Hub](/help/assets/insights-content-hub.md)
+      + [Insights do ativo no Content Hub](/help/assets/insights-content-hub.md)
    + Práticas recomendadas{#best-practices}
       + [Pesquisar práticas recomendadas](/help/assets/search-best-practices.md)
       + [Gerenciamento de metadados e práticas recomendadas](/help/assets/metadata-best-practices.md)
@@ -694,10 +694,10 @@ ht-degree: 81%
             + [Adicionar regras a um Formulário adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components.md)
             + [Criar esquema JSON para um formulário adaptável (componentes principais)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Adicionar versões, comentários e anotações a um Formulário adaptável](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
-            + [Comparar Forms adaptável](/help/forms/compare-forms.md)
+            + [Comparar Forms Adaptável](/help/forms/compare-forms.md)
             + [Conversão de Forms adaptável com base em componentes de base em formulários baseados em Componentes principais usando a ferramenta utilitário de migração](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Salvar um formulário adaptável como rascunho](/help/forms/save-core-component-based-form-as-draft.md)
-      + Componentes de base {#authoring-adaptive-forms-foundation-components}
+      + Componentes de Fundação {#authoring-adaptive-forms-foundation-components}
          + Converter formulários em PDF em Formulários adaptáveis {#afcs}
             + [Introdução ao serviço de conversão automática de formulários](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR)
             + [Converter um Formulário PDF existente em um Formulário adaptável](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=pt-BR)
@@ -790,7 +790,7 @@ ht-degree: 81%
       + [Utilização do provedor de conteúdo do Screens](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Criação das representações de vídeo do Screens](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Configuração do Dispatcher para o Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [Configuração das exibições de linha do tempo para o Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [Configurando Modos de Exibição de Linha do Tempo para Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + Criação de conteúdo {#create-content}
       + [Criação e gerenciamento de um projeto no provedor de conteúdo do Screens](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Criação e gerenciamento de um canal no provedor de conteúdo do Screens](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -859,14 +859,14 @@ ht-degree: 81%
       + [Modelagem de conteúdo](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [Dados em Tabelas e Planilhas](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Projetos existentes e Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
-   + Criação baseada em documento {#document-authoring}
+   + Criação Baseada em Documento {#document-authoring}
       + [Criação  ](/help/edge/docs/authoring.md)
       + [Metadados em massa](/help/edge/docs/bulk-metadata.md)
       + [Espaços reservados](/help/edge/docs/placeholders.md)
       + [Mapa do site](/help/edge/developer/sitemap.md)
       + [Configuração do SharePoint](/help/edge/docs/setup-customer-sharepoint.md)
       + [Slack Bot](/help/edge/docs/slack.md)
-   + Criação de aplicativos {#build}
+   + Criando Aplicativos {#build}
       + [Introdução - Tutorial do desenvolvedor](/help/edge/developer/tutorial.md)
       + [Anatomia de um projeto](/help/edge/developer/anatomy-of-a-franklin-project.md)
       + [Bloquear coleção](/help/edge/developer/block-collection.md)
@@ -885,7 +885,7 @@ ht-degree: 81%
       + [Configuração do Akamai](/help/edge/docs/byo-cdn-akamai-setup.md)
       + [Configuração do Fastly](/help/edge/docs/byo-cdn-fastly-setup.md)
       + [Redirecionamentos](/help/edge/docs/redirects.md)
-   + Criação de Forms {#build-forms}
+   + Compilando o Forms {#build-forms}
       + [Visão geral](/help/edge/docs/forms/overview.md)
       + Introdução {#getting-started-edge-delivery-services-forms}
          + [Introdução](/help/edge/docs/forms/tutorial.md)
@@ -897,7 +897,7 @@ ht-degree: 81%
          + [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
          + [Usar regras para adicionar comportamento dinâmico a um formulário](/help/edge/docs/forms/rules-forms.md)
          + [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário](/help/edge/docs/forms/thank-you-page-form.md)
-      + Capacidades {#advanced-features-edge-delivery-services-forms}
+      + Recursos {#advanced-features-edge-delivery-services-forms}
          + [Usar fragmentos de formulário](/help/edge/docs/forms/form-fragments.md)
          + [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
          + [Traduzir o formulário](/help/edge/docs/forms/translate-forms.md)
@@ -917,7 +917,7 @@ ht-degree: 81%
       + [Status do AEM](https://www.aemstatus.net)
       + Ferramentas {#tools}
          + [Extensão do AEM Sidekick Chrome](https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)
-         + [Github Bot](https://github.com/apps/aem-code-sync)
+         + [Bot Github](https://github.com/apps/aem-code-sync)
          + [Log de auditoria](/help/edge/docs/auditlog.md)
 + Headless {#headless}
    + [O que é um CMS headless?](/help/headless/what-is-headless.md)
@@ -937,7 +937,7 @@ ht-degree: 81%
       + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação {#authoring}
          + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
-         + [Editor de Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
       + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
       + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + API GraphQL {#graphql-api}
@@ -1126,7 +1126,7 @@ ht-degree: 81%
          + [Definições de modelo, campos e tipos de componentes](/help/implementing/universal-editor/field-types.md)
          + [Aplicativo de amostra do SecurBank](/help/implementing/universal-editor/securbank.md)
          + [Eventos](/help/implementing/universal-editor/events.md)
-         + [Personalização](/help/implementing/universal-editor/customizing.md)
+         + [Personalizando](/help/implementing/universal-editor/customizing.md)
          + [Arquitetura](/help/implementing/universal-editor/architecture.md)
          + [Autenticação](/help/implementing/universal-editor/authentication.md)
          + [Introdução](/help/implementing/universal-editor/getting-started.md)

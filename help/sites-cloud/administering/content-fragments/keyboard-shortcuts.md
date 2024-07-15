@@ -16,7 +16,7 @@ ht-degree: 88%
 
 Uma seleção de atalhos do teclado está disponível para uso no console de fragmentos de conteúdo.
 
-Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns se aplicam quando [editar páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), outros para o [uso geral de consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
+Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplicáveis ao [editar páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md), outros para o [uso geral dos consoles](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md).
 
 >[!NOTE]
 >

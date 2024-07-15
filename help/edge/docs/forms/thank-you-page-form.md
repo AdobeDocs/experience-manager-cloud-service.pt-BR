@@ -26,7 +26,7 @@ Siga as etapas abaixo para configurar uma mensagem de agradecimento personalizad
 
 1. Acesse o projeto do AEM no computador local ou no repositório do GitHub.
 
-1. Navegue até [Pasta de projeto do AEM]arquivo \blocks\form\submit.js para edição.
+1. Navegue até [Pasta do projeto AEM]\blocks\form\submit.js para editar.
 
 1. Localize o seguinte código
 

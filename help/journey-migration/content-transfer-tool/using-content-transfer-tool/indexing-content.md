@@ -20,13 +20,13 @@ ht-degree: 7%
 >title="Indexação de conteúdo"
 >abstract="A indexação do AEM refere-se à indexação do conteúdo na instância do Cloud Service após migrar o conteúdo para ele. A indexação é necessária para oferecer suporte à pesquisa de conteúdo nessa instância."
 
-Depois que o Cloud Acceleration Manager concluir a assimilação de conteúdo na instância do Cloud Service, ele estará pronto para ser usado. Inicialmente, o conteúdo não é indexado, o que provavelmente resulta em um ambiente instável, em que podem ser esperados problemas como conteúdo não pesquisável e desempenho degradado. Para obter o desempenho ideal na instância, o processo de migração iniciará automaticamente a indexação do conteúdo. Não há nada a ser feito, exceto para monitorar o progresso da indexação.
+Depois que o Cloud Acceleration Manager concluir a assimilação do conteúdo na instância do Cloud Service, ele estará pronto para ser usado. Inicialmente, o conteúdo não é indexado, o que provavelmente resulta em um ambiente instável, em que podem ser esperados problemas como conteúdo não pesquisável e desempenho degradado. Para obter o desempenho ideal na instância, o processo de migração iniciará automaticamente a indexação do conteúdo. Não há nada a ser feito, exceto para monitorar o progresso da indexação.
 
 > Para obter informações sobre como iniciar uma assimilação, consulte [Assimilar conteúdo no Cloud Service](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md).
 
 As etapas a seguir mostram o fluxo geral que você pode esperar ver na interface do usuário durante a indexação. Alguns rótulos fornecem contexto útil em dicas de ferramentas, portanto, passe o mouse sobre os itens para saber mais sobre o status de indexação atual.
 
-Para começar, acesse o Cloud Acceleration Manager. Clique no cartão do projeto e depois no cartão Transferência de conteúdo. Navegue até **Tarefas de assimilação** e consulte os trabalhos listados.
+Para começar, acesse o Cloud Acceleration Manager. Clique no cartão do projeto e depois no cartão Transferência de conteúdo. Navegue até **Trabalhos de assimilação** e veja os trabalhos listados.
 
 >[!NOTE]
 >Você pode visualizar ou baixar os logs de indexação usando as ações do trabalho de assimilação com a lista suspensa .... Os logs estarão disponíveis no
@@ -56,7 +56,7 @@ A indexação da instância de Cloud Service de destino provavelmente terá êxi
 
 >[!TIP]
 >
-> Se a tarefa de indexação parecer estar sendo executada por muito tempo, verifique se [A Inclui na lista de permissões IP não foi aplicada](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) por meio do Cloud Manager, pois impede que o Cloud Acceleration Manager chegue ao serviço de migração.
+> Se o trabalho de indexação parecer estar sendo executado por muito tempo, verifique se uma [Inclui na lista de permissões de IP não foi aplicada](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) por meio do Cloud Manager, pois ela impede que o Cloud Acceleration Manager acesse o serviço de migração.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-indexing/failed.png)
 

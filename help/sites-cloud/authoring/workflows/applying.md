@@ -119,7 +119,7 @@ Você pode especificar detalhes:
 
 1. Na etapa **Escopo**, você pode selecionar:
 
-   * **Adicionar conteúdo** para abrir o [navegador de caminho](/help/sites-cloud/authoring/path-selection.md) e selecione recursos adicionais; quando estiver no navegador, selecione **Selecionar** para adicionar o conteúdo à instância do workflow.
+   * **Adicionar Conteúdo** para abrir o [navegador de caminhos](/help/sites-cloud/authoring/path-selection.md) e selecionar recursos adicionais. Quando estiver no navegador, selecione **Selecionar** para adicionar o conteúdo à instância do fluxo de trabalho.
 
    * Um recurso existente para ver ações adicionais:
 

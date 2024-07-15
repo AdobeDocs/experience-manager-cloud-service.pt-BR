@@ -18,7 +18,7 @@ Saiba como definir regras de tradução para identificar o conteúdo a ser tradu
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de tradução AEM headless, [Configurar integração de tradução](configure-connector.md) você aprendeu a instalar e configurar sua integração de tradução e agora deve:
+No documento anterior da jornada de tradução do AEM headless, [Configurar integração de tradução](configure-connector.md), você aprendeu a instalar e configurar sua integração de tradução e agora deve:
 
 * Compreender os parâmetros fundamentais da estrutura de integração de tradução no AEM.
 * Ser capaz de configurar sua própria conexão com o serviço de tradução.
@@ -57,7 +57,7 @@ Visto que os modelos de fragmentos de conteúdo, que definem a estrutura dos fra
 
 >[!TIP]
 >
->Geralmente, o arquiteto de conteúdo fornece ao especialista em tradução a **Nome da propriedade** s de todos os campos necessários para tradução. Esses nomes são necessários para configurar as regras de tradução. Como especialista em tradução, você [pode encontrar esses **Nomes de propriedade** por conta própria](getting-started.md#content-modlels), conforme descrito anteriormente nesta jornada.
+>Geralmente, o arquiteto de conteúdo fornece ao especialista em tradução o **Nome da Propriedade** s de todos os campos necessários para tradução. Esses nomes são necessários para configurar as regras de tradução. Como especialista em tradução, você [pode encontrar esses **Nomes de propriedade** por conta própria](getting-started.md#content-modlels), conforme descrito anteriormente nesta jornada.
 
 ## Criar regras de tradução {#creating-rules}
 
@@ -70,18 +70,18 @@ Existe um console de **Configuração de tradução** disponível para configura
 1. Navegue até **Ferramentas** > **Geral**.
 1. Selecione **Configurações de tradução**.
 
-No **Configuração de tradução** Há várias opções disponíveis para suas regras de tradução. Aqui destacamos as etapas mais necessárias e típicas de uma configuração básica de localização headless.
+Na interface de usuário da **Configuração de tradução**, há várias opções disponíveis para suas regras de tradução. Aqui destacamos as etapas mais necessárias e típicas de uma configuração básica de localização headless.
 
-1. Selecionar **Adicionar contexto** para adicionar um caminho. Esse é o caminho do conteúdo que deve ser afetado pela regra.
+1. Selecione **Adicionar Contexto** para adicionar um caminho. Esse é o caminho do conteúdo que deve ser afetado pela regra.
    ![Adicionar contexto](assets/add-translation-context.png)
-1. Use o navegador de caminho para selecionar o caminho necessário e selecione **Confirmar o** para salvar. Lembre-se, os fragmentos de conteúdo, que possuem conteúdo headless, geralmente estão localizados em `/content/dam/<your-project>`.
+1. Use o navegador de caminho para selecionar o caminho necessário e selecione **Confirmar** para salvar. Lembre-se, os fragmentos de conteúdo, que possuem conteúdo headless, geralmente estão localizados em `/content/dam/<your-project>`.
    ![Selecione o caminho](assets/select-context.png)
-1. Selecione o contexto que você criou e selecione **Editar**. Isso abre o **editor de regras de tradução** para configurar as propriedades.
+1. Selecione o contexto criado e selecione **Editar**. Isso abre o **editor de regras de tradução** para configurar as propriedades.
    ![Editor de regras de tradução](assets/translation-rules-editor.png)
 1. Por padrão, todas as configurações são herdadas do caminho principal, neste caso: `/content/dam`. Desmarque a opção **Herdar de`/content/dam`** para adicionar novos campos à configuração.
-1. Quando desmarcada, em **Geral** adicionar os nomes das propriedades dos Modelos de fragmento de conteúdo que você [anteriormente identificados como campos para tradução.](getting-started.md#content-models)
-   1. No **Nova propriedade** insira o nome da propriedade. Observe que as **Traduza** e **Herdar** são verificadas automaticamente.
-   1. Selecionar **Adicionar**.
+1. Quando desmarcada, na seção **Geral** da lista, adicione os nomes de propriedade dos Modelos de fragmento de conteúdo que você [identificou anteriormente como campos para tradução.](getting-started.md#content-models)
+   1. No campo **Nova Propriedade**, digite o nome da propriedade. Observe que as opções **Traduzir** e **Herdar** são verificadas automaticamente.
+   1. Selecione **Adicionar**.
    1. Repita essas etapas para todos os campos que devem ser traduzidos.
    1. Selecione **Salvar**.
       ![Adicionar propriedade](assets/add-property.png)
@@ -101,7 +101,7 @@ Agora que você concluiu esta parte da jornada de tradução headless, você dev
 * Entenda o que as regras de tradução fazem.
 * Ser capaz de definir suas próprias regras de tradução.
 
-Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando o documento a seguir [Traduzir conteúdo](translate-content.md) onde você aprende como a integração e as regras funcionam juntas para traduzir conteúdo headless.
+Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless revisando a seguir o documento [Traduzir conteúdo](translate-content.md), onde você aprende como a integração e as regras funcionam juntas para traduzir conteúdo headless.
 
 ## Recursos adicionais {#additional-resources}
 

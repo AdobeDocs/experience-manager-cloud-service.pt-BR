@@ -1,6 +1,6 @@
 ---
 title: Implantação de aplicativos do App Builder
-description: Saiba como implantar aplicativos do App Builder para o Adobe Experience Manager (AEM) as a Cloud Service.
+description: Saiba como implantar aplicativos do App Builder para Adobe Experience Manager (AEM) as a Cloud Service.
 version: Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Implantação de aplicativos do App Builder
 
-Saiba o que a implantação significa para o App Builder e como implantar seu aplicativo do App Builder usando a CLI do Adobe I/O.
+Saiba o que a implantação significa para o App Builder e como implantar seu aplicativo App Builder usando a CLI do Adobe I/O.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339250/?quality=12&learn=on)

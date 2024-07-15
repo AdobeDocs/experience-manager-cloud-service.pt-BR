@@ -13,7 +13,7 @@ ht-degree: 5%
 
 # Notas de versão das Ferramentas de migração no AEM as a Cloud Service versão 2022.5.0 {#release-notes}
 
-Esta página descreve as notas de versão das ferramentas de migração no AEM as a Cloud Service 2022.5.0.
+Esta página descreve as Notas de versão das Ferramentas de migração no AEM as a Cloud Service 2022.5.0.
 
 ## Analisador de práticas recomendadas {#bpa-release}
 
@@ -41,7 +41,7 @@ A data de lançamento da ferramenta de Transferência de conteúdo v2.0.10 é 2 
 
 ### Novidades {#what-is-new-ctt}
 
-* A ferramenta de transferência de conteúdo (CTT) foi desenvolvida para funcionar com o Cloud Acceleration Manager para simplificar todo o processo de transferência de conteúdo. A CTT agora se concentra em executar extrações de conteúdo. O serviço de assimilação de CTT agora está integrado ao Cloud Acceleration Manager. Os benefícios fornecidos por meio dessa evolução são:
+* A ferramenta de transferência de conteúdo (CTT) foi desenvolvida para funcionar com o Cloud Acceleration Manager a fim de simplificar todo o processo de transferência de conteúdo. A CTT agora se concentra em executar extrações de conteúdo. O serviço de assimilação da CTT agora está integrado ao Cloud Acceleration Manager. Os benefícios fornecidos por meio dessa evolução são:
    * Forma de autoatendimento para extrair um conjunto de migração uma vez e assimilá-lo em vários ambientes simultaneamente.
    * Experiência do usuário aprimorada por meio de melhores estados de carregamento, medidas de proteção e manipulação de erros.
    * Os registros de assimilação são mantidos e estão sempre disponíveis para solução de problemas.
@@ -54,4 +54,4 @@ A data de lançamento do Cloud Acceleration Manager é 2 de junho de 2022.
 
 ### Novidades {#what-is-new-cam}
 
-* O Cloud Acceleration Manager agora fornece aos usuários iniciar e gerenciar transferências de conteúdo para mover o conteúdo da instância do AEM de um cliente (No local ou Adobe Managed Services AEM as a Cloud Service) para o como parte de um projeto de migração. Consulte [Usar o cartão de transferência de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) para obter mais detalhes.
+* O Cloud Acceleration Manager agora fornece aos usuários iniciar e gerenciar transferências de conteúdo para mover o conteúdo da instância AEM de um cliente (no local ou Managed Services Adobe) para o AEM as a Cloud Service como parte de um projeto de migração. Consulte [Usando o Cartão de Transferência de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html#content-transfer) para obter mais detalhes.

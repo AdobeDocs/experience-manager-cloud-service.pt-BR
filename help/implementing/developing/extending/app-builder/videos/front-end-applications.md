@@ -1,5 +1,5 @@
 ---
-title: Aplicativos de front-end para o App Builder
+title: Aplicativos de front-end para App Builder
 description: Saiba como criar aplicativos front-end do App Builder.
 version: Cloud Service
 feature: App Builder, Developing
@@ -16,16 +16,16 @@ ht-degree: 0%
 
 ---
 
-# Aplicativos de front-end para o App Builder
+# Aplicativos de front-end para App Builder
 
 ## Introdução aos aplicativos front-end do App Builder
 
-Saiba mais sobre os aplicativos front-end do Construtor de aplicativos, incluindo opções de inicialização de projeto e Espectro de Adobe.
+Saiba mais sobre os aplicativos de front-end do App Builder, incluindo as opções de inicialização de projeto e o Espectro de Adobe.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339247/?quality=12&learn=on)
 
 ## Criação de aplicativos front-end do App Builder
 
-Saiba como criar um aplicativo front-end do App Builder usando o React e usando ações de tempo de execução do Adobe no aplicativo.
+Saiba como criar um aplicativo front-end do App Builder usando o React e as ações de Tempo de execução de Adobe no aplicativo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339248/?quality=12&learn=on)

@@ -9,7 +9,7 @@ role: Admin, Architect, Developer
 source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
 workflow-type: tm+mt
 source-wordcount: '1367'
-ht-degree: 65%
+ht-degree: 68%
 
 ---
 
@@ -38,11 +38,11 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 >
 >Antes de configurar um pipeline de front-end, consulte a [jornada de Criação rápida de sites do AEM](/help/journey-sites/quick-site/overview.md) para obter um guia completo sobre a ferramenta simples de Criação rápida de sites do AEM. Essa jornada ajudará você a simplificar o desenvolvimento de front-end do seu site do AEM, permitindo personalizar rapidamente o site sem conhecimento de back-end no AEM.
 
-1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
-1. Navegue até a **Pipelines** do **Visão geral do programa** e clique em **Adicionar** para selecionar **Adicionar pipeline de produção**.
+1. Navegue até o cartão **Pipelines** da página **Visão geral do programa** e clique em **Adicionar** para selecionar **Adicionar pipeline de produção**.
 
    ![O cartão Pipelines na visão geral do Gerenciador de programas](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-1.png)
 
@@ -61,7 +61,7 @@ Depois de configurar seu programa e ter pelo menos um ambiente usando a interfac
 
    ![Configuração do pipeline de produção](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
-1. No **Código-fonte** guia, é necessário selecionar o tipo de código que o pipeline deve processar.
+1. Na guia **Código Source**, você deve selecionar o tipo de código que o pipeline deve processar.
 
    * **[Código de pilha completa](#full-stack-code)**
    * **[Implantação direcionada](#targeted-deployment)**
@@ -96,7 +96,7 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 
    ![Código de pilha completa](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-fullstack.png)
 
-1. Toque ou clique **Continuar** para avançar para o **Auditoria de experiência** guia, na qual é possível definir os caminhos que devem ser sempre incluídos na Auditoria de experiência.
+1. Toque ou clique em **Continuar** para avançar para a guia **Auditoria de Experiência**, na qual é possível definir os caminhos que devem ser sempre incluídos na Auditoria de Experiência.
 
    ![Adicionar auditoria de experiência](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit.png)
 
@@ -112,23 +112,23 @@ O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipel
 
 ### Implantação direcionada {#targeted-deployment}
 
-Uma implantação direcionada implanta o código somente em partes selecionadas do aplicativo AEM. Nessa implantação, você pode optar por **Incluir** Um dos seguintes tipos de código:
+Uma implantação direcionada implanta o código somente em partes selecionadas do aplicativo AEM. Nessa implantação, você pode optar por **Incluir** um dos seguintes tipos de código:
 
-* **Configuração** - Definir configurações para regras de filtro de tráfego no ambiente AEM.
-   * Consulte o documento [Regras de filtro de tráfego incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md) para saber como gerenciar as configurações no repositório para que sejam implantadas corretamente.
-   * Ao executar um pipeline de implantação direcionada, [Configurações do WAF](/help/security/traffic-filter-rules-including-waf.md) serão implantados, desde que sejam salvos no ambiente, repositório e ramificação definidos no pipeline.
+* **Configuração** - Defina as configurações das regras de filtro de tráfego no seu ambiente AEM.
+   * Consulte o documento [Regras de filtro de tráfego incluindo Regras do WAF](/help/security/traffic-filter-rules-including-waf.md) para saber como gerenciar as configurações no repositório para que elas sejam implantadas corretamente.
+   * Ao executar um pipeline de implantação direcionada, as [configurações do WAF](/help/security/traffic-filter-rules-including-waf.md) serão implantadas, desde que sejam salvas no ambiente, repositório e ramificação definidos no pipeline.
    * Em um dado momento, somente pode haver um pipeline de configuração por ambiente.
-* **Código de front-end** - Configurar JavaScript e CSS para o front-end do aplicativo AEM.
+* **Código de front-end** - Configure o JavaScript e o CSS para o front-end do aplicativo AEM.
    * Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.
    * Consulte o documento [Desenvolvimento de sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) para saber como esse processo funciona, além de algumas considerações a serem feitas para aproveitar ao máximo o potencial desse processo.
-* **Configuração no nível da Web** - Configurar propriedades do dispatcher para armazenar, processar e entregar páginas da Web ao cliente.
+* **Configuração da Camada da Web** - Configure as propriedades do Dispatcher para armazenar, processar e entregar páginas da Web ao cliente.
    * Consulte o documento [Pipelines de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) para obter mais detalhes.
    * Se existir um pipeline de código da Web para o ambiente selecionado, essa seleção será desabilitada.
    * Se você tiver um pipeline de pilha completa existente implantando em um ambiente, a criação de um pipeline de configuração no nível da Web para o mesmo ambiente fará com que a configuração existente no pipeline de pilha completa seja ignorada.
 
 >[!NOTE]
 >
->Os pipelines de camada da Web e configuração não são compatíveis com repositórios privados. Consulte o documento [Adição de repositórios privados no Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obter detalhes e a lista completa de limitações.
+>Os pipelines de nível da Web e de configuração não são compatíveis com repositórios privados. Consulte o documento [Adição de repositórios privados no Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obter detalhes e a lista completa de limitações.
 
 As etapas para concluir a criação do pipeline de implantação de produção direcionada são as mesmas depois de escolher um tipo de implantação.
 
@@ -136,11 +136,11 @@ As etapas para concluir a criação do pipeline de implantação de produção d
 
 ![Opções de implantação direcionada](/help/implementing/cloud-manager/assets/configure-pipeline/prod-pipeline-targeted-deployment.png)
 
-1. Defina o **Ambientes de implantação qualificados**.
+1. Defina os **Ambientes de implantação qualificados**.
 
    * Se o pipeline for um pipeline de implantação, você deverá selecionar em quais ambientes ele deve ser implantado.
 
-1. Em **Código-fonte**, defina as seguintes opções:
+1. Em **Source Code**, defina as seguintes opções:
 
    * **Repositório**: essa opção define de qual repositório Git o pipeline deve recuperar o código.
 

@@ -21,7 +21,7 @@ Vários atalhos de teclado estão disponíveis em todo o AEM. Alguns são aplic�
 
 | Local | Atalho | Descrição |
 |---|---|---|
-| Qualquer modo de Editar janela | `Ctrl-Shift-m` | Alternar entre **Visualizar** e os selecionados no momento [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (por exemplo, **Editar**, **Layout** e assim por diante)* |
+| Qualquer modo de Editar janela | `Ctrl-Shift-m` | Alternar entre a **Visualização** e o [modo](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> atualmente selecionado (por exemplo, **Editar**, **Layout** e assim por diante)* |
 | Modo de **Edição** | `Ctrl-z` | [Desfazer a última alteração](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Refazer a última alteração](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Selecionar parágrafos múltiplos |

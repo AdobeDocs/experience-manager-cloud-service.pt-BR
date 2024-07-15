@@ -44,7 +44,7 @@ Para pesquisar e filtrar os recursos:
 
    ![Local de pesquisa](/help/sites-cloud/authoring/assets/search-term-location.png)
 
-1. Se necessário, é possível remover o filtro de localização (selecione **X** no filtro que deseja remover) para pesquisar em todos os consoles/tipos de recursos.
+1. Se necessário, você pode remover o filtro de localização (selecione **X** no filtro que deseja remover) para pesquisar em todos os tipos de consoles/recursos.
 1. Os resultados são mostrados, agrupados de acordo com o console e o tipo de recurso relacionado.
 
    Você pode selecionar um recurso específico (para a ação adicional) ou detalhar selecionando o tipo de recurso desejado; por exemplo, **Exibir todos os sites**:
@@ -62,7 +62,7 @@ Para pesquisar e filtrar os recursos:
    * Pesquisas salvas
    * Diretório de pesquisa
    * Tags
-   * Critérios de pesquisa, por exemplo, datas modificadas, status de publicação, status da Live Copy
+   * Critérios de pesquisa, por exemplo, Datas modificadas, Status do Publish, Status da Live Copy
 
    >[!NOTE]
    >

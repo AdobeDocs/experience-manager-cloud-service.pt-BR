@@ -27,7 +27,7 @@ Estes são alguns casos de uso para os quais você pode definir metadados em cas
 * Altere as opções exibidas para um campo específico com base no valor especificado em outro campo.
 * Defina o valor de metadados padrão em um campo específico com base no valor especificado em outro campo.
 
-## Configurar metadados em cascata no [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
+## Configurar metadados em cascata em [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
 Considere um cenário em que você deseja exibir metadados em cascata com base no tipo de ativo selecionado. Alguns exemplos
 
@@ -36,30 +36,30 @@ Considere um cenário em que você deseja exibir metadados em cascata com base n
 
 Independentemente do tipo de ativo escolhido, exiba as informações de direitos autorais como um campo obrigatório.
 
-1. Selecione o [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados]**.
-1. No **[!UICONTROL Schema Forms]** , selecione um formulário de esquema e, em seguida, **[!UICONTROL Editar]** na barra de ferramentas para editar o esquema.
+1. Selecione o logotipo [!DNL Experience Manager] e vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de Metadados]**.
+1. Na página **[!UICONTROL Forms de Esquema]**, selecione um formulário de esquema e, em seguida, selecione **[!UICONTROL Editar]** na barra de ferramentas para editar o esquema.
 
-   ![select_form](assets/select_form.png)
+   ![selecionar_formulário](assets/select_form.png)
 
-1. (Opcional) No editor de esquema de metadados, crie um campo para condicionar. Especifique um nome e um caminho de propriedade na variável **[!UICONTROL Configurações]** guia.
+1. (Opcional) No editor de esquema de metadados, crie um campo para condicionar. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Configurações]**.
 
-   Para criar uma guia, selecione `+` para adicionar uma guia e depois adicionar um campo de metadados.
+   Para criar uma guia, selecione `+` para adicionar uma guia e, em seguida, adicione um campo de metadados.
 
    ![add_tab](assets/add_tab.png)
 
-1. Adicione um campo suspenso para o tipo de ativo. Especifique um nome e um caminho de propriedade na variável **[!UICONTROL Configurações]** guia. Adicione uma descrição opcional.
+1. Adicione um campo suspenso para o tipo de ativo. Especifique um nome e um caminho de propriedade na guia **[!UICONTROL Configurações]**. Adicione uma descrição opcional.
 
-   ![asset_type_field](assets/asset_type_field.png)
+   ![campo_tipo_de_ativo](assets/asset_type_field.png)
 
 1. Pares de valores-chave são as opções fornecidas a um usuário de formulário. Você pode fornecer os pares de valor-chave manualmente ou a partir de um arquivo JSON.
 
-   * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar manualmente]** e selecione **[!UICONTROL Adicionar seleção]** e especifique a opção text e value. Por exemplo, especifique os tipos de ativos de Vídeo, PDF, Word e Imagem.
+   * Para especificar os valores manualmente, selecione **[!UICONTROL Adicionar manualmente]**, **[!UICONTROL Adicionar opção]** e especifique o texto e o valor da opção. Por exemplo, especifique os tipos de ativos de Vídeo, PDF, Word e Imagem.
 
-   * Para buscar os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar por meio do caminho JSON]** e fornecem o caminho do arquivo JSON. [!DNL Experience Manager] O busca os pares chave-valor em tempo real quando o formulário é apresentado ao usuário.
+   * Para buscar os valores de um arquivo JSON dinamicamente, selecione **[!UICONTROL Adicionar por meio do caminho JSON]** e forneça o caminho do arquivo JSON. [!DNL Experience Manager] busca os pares chave-valor em tempo real quando o formulário é apresentado ao usuário.
 
    Ambas as opções se excluem mutuamente. Não é possível importar as opções de um arquivo JSON e editar manualmente.
 
-   ![add_choice](assets/add_choice.png)
+   ![adicionar_escolha](assets/add_choice.png)
 
    >[!NOTE]
    >
@@ -73,16 +73,16 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
    Da mesma forma, adicione campos dependentes para outros tipos de ativos. Por exemplo, adicione campos contagem de páginas e autor para ativos de documento, como arquivos PDF e Word.
 
-   ![video_dependent_fields](assets/video_dependent_fields.png)
+   ![campos_dependentes_do_vídeo](assets/video_dependent_fields.png)
 
-1. Para criar uma dependência entre o campo do tipo de ativo e outros campos, escolha o campo dependente e abra o **[!UICONTROL Regras]** guia.
+1. Para criar uma dependência entre o campo de tipo de ativo e outros campos, escolha o campo dependente e abra a guia **[!UICONTROL Regras]**.
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. Em **[!UICONTROL Requisito]**, escolha o **[!UICONTROL Obrigatório, com base na nova regra]** opção.
-1. Selecionar **[!UICONTROL Adicionar regra]** e escolha o **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Selecionar **[!UICONTROL Concluído]** para salvar as alterações.
+1. Em **[!UICONTROL Requisito]**, escolha a opção **[!UICONTROL Obrigatório, com base na nova regra]**.
+1. Selecione **[!UICONTROL Adicionar regra]** e escolha o campo **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Selecione **[!UICONTROL Concluído]** para salvar as alterações.
 
-   ![define_rule](assets/define_rule.png)
+   ![definir_regra](assets/define_rule.png)
 
    >[!NOTE]
    >
@@ -90,7 +90,7 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 
 1. Em **[!UICONTROL Visibilidade]**, escolha **[!UICONTROL Visível, com base na nova opção de regra]**.
 
-1. Selecionar **[!UICONTROL Adicionar regra]** e escolha o **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Selecionar **[!UICONTROL Concluído]** para salvar as alterações.
+1. Selecione **[!UICONTROL Adicionar regra]** e escolha o campo **[!UICONTROL Tipo de ativo]** para criar uma dependência. Também escolha o valor do campo no qual criar a dependência. Nesse caso, escolha **[!UICONTROL Vídeo]**. Selecione **[!UICONTROL Concluído]** para salvar as alterações.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -103,16 +103,16 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
    >É possível aplicar as condições de **[!UICONTROL Requisito]** e **[!UICONTROL Visibilidade]** independentemente umas das outras.
 
 1. Da mesma forma, crie uma dependência entre o valor Vídeo no campo Tipo de ativo e outros campos, como Codec e Duração.
-1. Repita as etapas para criar dependência entre ativos de documento (PDF e Word) no [!UICONTROL Tipo de ativo] campo e campos como [!UICONTROL Contagem de páginas] e [!UICONTROL Autor].
+1. Repita as etapas para criar dependência entre ativos de documentos (PDF e Word) no campo [!UICONTROL Tipo de ativo] e em campos como [!UICONTROL Contagem de páginas] e [!UICONTROL Autor].
 1. Clique em **[!UICONTROL Salvar]**. Aplicar o esquema de metadados a uma pasta.
 
 1. Navegue até a pasta à qual você aplicou o esquema de metadados e abra a página de propriedades de um ativo. Dependendo da sua escolha no campo Tipo de ativo, os campos de metadados em cascata pertinentes são exibidos.
 
-   ![Metadados em cascata para ativo de vídeo](assets/video_asset.png)
-   *Figura: Metadados em cascata para o ativo de vídeo*
+   ![Metadados em cascata para Ativo de vídeo](assets/video_asset.png)
+   *Figura: metadados em cascata para ativo de vídeo*
 
-   ![Metadados em cascata para ativo de documento](assets/doc_type_fields.png)
-   *Figura: Metadados em cascata para o ativo de documento*
+   ![Metadados em cascata para o ativo de documento](assets/doc_type_fields.png)
+   *Figura: metadados em cascata para o ativo de documento*
 
 **Consulte também**
 
@@ -128,4 +128,4 @@ Independentemente do tipo de ativo escolhido, exiba as informações de direitos
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

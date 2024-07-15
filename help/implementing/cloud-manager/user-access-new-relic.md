@@ -23,7 +23,7 @@ A Adobe atribui grande importância ao monitoramento, disponibilidade e desempen
 
 Este documento descreve como gerenciar o acesso aos recursos de monitoramento de desempenho de aplicativo (APM) da New Relic One habilitados em seus ambientes do AEM as a Cloud Service para ajudar a oferecer suporte ao desempenho e permitir que você aproveite ao máximo o AEM as a Cloud Service.
 
-Quando um novo programa de produção é criado, a subconta do New Relic One associada ao seu Programa AEM as a Cloud Service é criada automaticamente. [Esta subconta deve ser ativada](#activate-sub-account) para começar a assimilar dados.
+Quando um novo programa de produção é criado, a subconta do New Relic One associada ao seu programa do AEM as a Cloud Service é criada automaticamente. [Esta subconta deve ser ativada](#activate-sub-account) para começar a assimilar dados.
 
 ## Recursos {#transaction-monitoring}
 
@@ -43,19 +43,19 @@ Para um programa recém-criado, uma subconta do New Relic One é criada para voc
 
 >[!NOTE]
 >
->Um usuário em **Proprietário da empresa** ou **Gerente de implantação** A função deve estar conectada para gerenciar a subconta da New Relic One.
+>Um usuário na função de **Proprietário da empresa** ou **Gerente de implantação** deve estar conectado para gerenciar a subconta do New Relic One.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** toque ou clique no programa para o qual deseja gerenciar os usuários do New Relic One.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no programa para o qual deseja gerenciar seus usuários do New Relic One.
 
-1. Na parte inferior do **Ambientes** na página de visão geral do programa, clique no botão de reticências e selecione **Ativar New Relic**.
+1. Na parte inferior do cartão **Ambientes** na página de visão geral do programa, clique no botão de reticências e selecione **Ativar New Relic**.
 
    ![Gerenciar usuários](assets/newrelic-activate-sub-account.png)
 
    * Também é possível acessar a opção **Gerenciar usuários** usando do botão de reticências na parte superior da tela **Ambientes** do seu programa.
 
-1. [Executar um pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) para que o mesmo ambiente seja concluído com êxito para concluir a ativação da subconta.
+1. [Execute um pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) para o mesmo ambiente até a conclusão bem-sucedida para concluir a ativação da subconta.
 
 Quando a subconta é desativada, não há assimilação de dados.
 
@@ -77,7 +77,7 @@ Siga estas etapas para definir os usuários da sua subconta da New Relic One ass
 
    * Também é possível acessar a opção **Gerenciar usuários** usando do botão de reticências na parte superior da tela **Ambientes** do seu programa.
 
-1. No **Gerenciar usuários do New Relic** digite o nome e o sobrenome do usuário que deseja adicionar e clique no link **Adicionar** botão. Repita essa etapa para todos os usuários que deseja adicionar.
+1. Na caixa de diálogo **Gerenciar usuários do New Relic**, digite o nome e o sobrenome do usuário que deseja adicionar e clique no botão **Adicionar**. Repita essa etapa para todos os usuários que deseja adicionar.
 
    ![Adicionar usuários](assets/newrelic-add-users.png)
 
@@ -145,7 +145,7 @@ Para obter mais ajuda, abra um tíquete de suporte por meio do [Portal de suport
 
 ## Solução de problemas de acesso do usuário ao New Relic One {#troubleshooting}
 
-Se você foi adicionado como um usuário do New Relic One, conforme descrito na seção [Gerenciar usuários do New Relic One](#manage-users) e não puderem localizar o email de confirmação da conta original, siga essas etapas.
+Se você foi adicionado como um usuário do New Relic One, conforme descrito na seção [Gerenciar usuários do New Relic One](#manage-users), e não puder localizar o email de confirmação da conta original, siga essas etapas.
 
 1. Acesse a página de logon do New Relic em [`login.newrelic.com/login`](https://login.newrelic.com/login).
 
@@ -179,9 +179,9 @@ As seguintes limitações se aplicam à adição de usuários à New Relic One:
 >
 >Se nenhuma atividade for detectada na subconta da New Relic One por 90 dias ou mais, o agente APM será interrompido.
 >
->Siga as mesmas etapas no [Ativar a subconta do New Relic One](#activate-sub-account) seção deste documento para reativar a subconta do New Relic One.
+>Siga as mesmas etapas na seção [Ativar a subconta do New Relic One](#activate-sub-account) deste documento para reativar a subconta do New Relic One.
 
-Para obter mais ajuda ou orientação sobre as ofertas da New Relic One para o seu programa AEM as a Cloud Service, abra um tíquete de suporte no [Portal de suporte do AEM.](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html)
+Para obter mais ajuda ou orientação sobre as ofertas do New Relic One para o seu programa AEM as a Cloud Service, abra um tíquete de suporte no [Portal de suporte do AEM.](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html)
 
 ## Perguntas frequentes sobre a New Relic One {#faqs}
 
@@ -203,7 +203,7 @@ Observação:
 
 ### O Adobe envia notificações de alerta do New Relic One? {#alerting-new-relic}
 
-O Adobe fornece acesso ao New Relic One somente para fins de observação e não o utiliza para alertas de clientes ou alertas operacionais internos. As notificações para incidentes são enviadas usando [perfis de notificação do usuário.](/help/journey-onboarding/notification-profiles.md)
+O Adobe fornece acesso ao New Relic One somente para fins de observação e não o utiliza para alertas de clientes ou alertas operacionais internos. As notificações para qualquer incidente são enviadas usando [perfis de notificação de usuário.](/help/journey-onboarding/notification-profiles.md)
 
 ### Quem pode acessar os dados do serviço de nuvem da New Relic One? {#access-new-relic-cloud}
 
@@ -227,4 +227,4 @@ Embora o suporte da Adobe monitore o aplicativo do AEM as a Cloud Service usando
 
 ### O agente APM da minha conta do New Relic One foi interrompido. O que aconteceu? {#deactivated}
 
-[Agentes APM são interrompidos](#limitations) se nenhuma atividade for detectada por 90 dias ou mais. Siga as mesmas etapas no [Ativar a subconta do New Relic One](#activate-sub-account) seção deste documento para reativar a subconta do New Relic One.
+[Os agentes APM serão interrompidos](#limitations) se nenhuma atividade for detectada por 90 dias ou mais. Siga as mesmas etapas na seção [Ativar a subconta do New Relic One](#activate-sub-account) deste documento para reativar a subconta do New Relic One.

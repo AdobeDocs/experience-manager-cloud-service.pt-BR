@@ -1,5 +1,5 @@
 ---
-title: Criar um aplicativo App Builder
+title: Criar um aplicativo do App Builder
 description: Saiba como criar e inicializar um novo aplicativo do App Builder.
 version: Cloud Service
 feature: App Builder, Developing
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 ---
 
-# Criar um aplicativo App Builder
+# Criar um aplicativo do App Builder
 
 ## Configurar o primeiro projeto
 
-Saiba mais sobre os fundamentos da criação do seu primeiro projeto do App Builder.
+Aprenda os fundamentos para criar seu primeiro projeto do App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339168/?quality=12&learn=on)
 
@@ -38,6 +38,6 @@ Saiba como inicializar um projeto do App Builder.
 
 ## Criar, executar e testar o aplicativo
 
-Saiba como criar, executar e testar o aplicativo App Builder.
+Saiba como criar, executar e testar seu aplicativo do App Builder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339171/?quality=12&learn=on)

@@ -1,6 +1,6 @@
 ---
 title: Como criar uma sequência de formulário de várias etapas?
-description: Com [!DNL Experience Manager Forms], é possível definir uma sequência de painéis de formulário para os usuários navegarem e preencherem um Formulário adaptável.
+description: Com o  [!DNL Experience Manager Forms], você pode definir uma sequência de painéis de formulário para os usuários navegarem e preencherem um Formulário adaptável.
 role: User, Developer
 level: Intermediate
 feature: Adaptive Forms, Foundation Components
@@ -14,7 +14,7 @@ ht-degree: 81%
 
 # Introdução à sequência de formulários em várias etapas {#introduction-to-multi-step-form-sequence}
 
-<span class="preview"> O Adobe recomenda o uso da captura de dados moderna e extensível [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) para [criação de um novo Forms adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adição de Forms adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |

@@ -40,7 +40,7 @@ O console de projetos é onde você acessa e gerencia os projetos no AEM.
 ![O console de projetos](/help/sites-cloud/authoring/assets/projects-console.png)
 
 * Selecione **Linha do tempo** e, em seguida, um projeto para exibir sua linha do tempo.
-* Selecionar **Selecionar** para entrar no modo de seleção.
+* Selecione **Selecionar** para entrar no modo de seleção.
 * Clique em **Criar** para adicionar projetos.
 * **O botão projetos ativos** permite alternar entre todos os projetos e somente aqueles que estão ativos.
 * **Exibir visualização de estatísticas** permite ver estatísticas do projeto relacionadas às conclusões de tarefas.

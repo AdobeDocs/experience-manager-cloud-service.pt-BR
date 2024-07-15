@@ -17,7 +17,7 @@ Quando a configuração do projeto for concluída, você deverá atribuir o repr
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como atribuir um reprodutor a uma exibição no provedor de serviços do Screens. Essas são as etapas finais obrigatórias antes que o conteúdo comece a ser reproduzido no reprodutor as a Cloud Service do Screens.
+Este documento ajuda você a entender como atribuir um reprodutor a uma exibição no Provedor de serviços da Screens. Essas são as etapas finais obrigatórias antes de o conteúdo começar a ser reproduzido no Screens as a Cloud Service.
 
 ## Etapas para atribuir um reprodutor a uma exibição {#create-display}
 
@@ -25,17 +25,17 @@ Depois de registrar o player, é obrigatório atribuir um player à exibição n
 
 Siga as etapas abaixo para atribuir um reprodutor a uma exibição:
 
-1. Selecionar **Reprodutores** em Painel de administração de rede, no painel de navegação esquerdo, selecione o reprodutor. Clique em **Atribuir exibição**
+1. Selecione **Players** no Painel de administração de rede, no painel de navegação esquerdo, e selecione o player. Clique em **Atribuir exibição**
 
    ![imagem](/help/screens-cloud/assets/player/register-player7.png)
 
-1. **Atribuir uma exibição** é aberta. Selecione a exibição na lista e clique em **Selecionar**.
+1. **A caixa de diálogo Atribuir uma exibição** é aberta. Selecione a exibição na lista e clique em **Selecionar**.
 
    ![imagem](/help/screens-cloud/assets/player/register-player8.png)
 
 ## Reprodução de conteúdo {#content-playback}
 
-Depois de atribuir uma exibição a um reprodutor, conforme mostrado na seção anterior, você verá a exibição atribuída sob o **EXIBIÇÃO ATRIBUÍDA** painel.
+Depois de atribuir uma exibição a um reprodutor, conforme mostrado na seção anterior, você verá a exibição atribuída abaixo do painel **EXIBIÇÃO ATRIBUÍDA**.
 
 Agora, a exibição é atribuída ao reprodutor e o canal começa a reproduzir o conteúdo. O reprodutor agora deve baixar e começar a reproduzir o conteúdo. **Parabéns!**
 

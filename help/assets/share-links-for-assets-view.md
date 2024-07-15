@@ -45,7 +45,7 @@ Para baixar todos os ativos de uma só vez, alterne para a **[!UICONTROL Exibiç
 
 ## Próximas etapas {#next-steps}
 
-* [Assista a um vídeo sobre compartilhamento de links de ativos na visualização de Ativos](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=pt-BR)
+* [Assista a um vídeo sobre compartilhamento de links de ativos no modo de exibição do Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/link-sharing.html?lang=pt-BR)
 
 * Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 

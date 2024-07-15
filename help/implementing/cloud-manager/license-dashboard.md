@@ -29,11 +29,11 @@ Para acessar o painel de licenças, siga estas etapas.
 
 >[!NOTE]
 >
->Um usuário no **Proprietário da empresa** A função deve estar conectada para exibir o Painel de licenças.
+>Um usuário com a função **Proprietário da empresa** deve estar conectado para exibir o Painel de Licenças.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** console, alterne para a guia **Licença** guia.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, alterne para a guia **Licença**.
 
 ![Painel de licenças](assets/license-dashboard.png)
 
@@ -45,14 +45,14 @@ O painel é dividido em três seções que mostram:
 
 Cada seção resume o que está disponível e como é usado, se for o caso. Atualmente, somente as soluções do Sites são exibidas, mesmo se outras soluções existirem no locatário.
 
-* A variável **Status** exibe o número de direitos não utilizados em relação ao total disponível para o locatário.
+* A coluna **Status** exibe o número de direitos não utilizados em relação ao total disponível para o locatário.
 * A coluna **Configurado em** indica os programas nos quais o direito da solução foi aplicado.
    * Um direito será considerado usado somente quando um ambiente de produção for criado ou, se existir, quando um pipeline de atualização for executado nele.
 * A coluna **Uso** exibe as solicitações de conteúdo consumidas nos últimos 12 meses na forma de um gráfico quando clicadas.
 
 >[!TIP]
 >
->Para saber como gerenciar os direitos de Adobe em toda a organização pelo Admin Console, consulte [visão geral do Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html).
+>Para saber como gerenciar os direitos de Adobe em toda a organização usando o Admin Console, consulte a [visão geral sobre Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html).
 
 ## Perguntas frequentes {#faq}
 
@@ -64,7 +64,7 @@ Uma solicitação de conteúdo é contabilizada para cada exibição de página 
 
 As solicitações de conteúdo excluem solicitações ou atividades iniciadas pelo Adobe ou em nome dele com o único objetivo de fornecer produtos e serviços. O tráfego de agente de usuário identificado pela Adobe como bots, crawlers e spiders relacionados a mecanismos de pesquisa comuns e serviços de redes sociais também são excluídos.
 
-Consulte também [Noções básicas sobre solicitações de conteúdo Cloud Service](/help/implementing/cloud-manager/content-requests.md).
+Consulte também [Entendendo as solicitações de conteúdo do Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 
 ### Como o Adobe Experience Manager mede as solicitações de conteúdo? {#how-are-content-requests-measured}
 
@@ -72,11 +72,11 @@ As solicitações de conteúdo são rastreadas nos servidores de borda do AEM as
 
 O AEM também tem regras em vigor para excluir bots conhecidos, incluindo serviços conhecidos que acessam o site regularmente para atualizar seu índice de pesquisa ou serviço.
 
-Consulte também [Noções básicas sobre solicitações de conteúdo Cloud Service](/help/implementing/cloud-manager/content-requests.md).
+Consulte também [Entendendo as solicitações de conteúdo do Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 
 ### Por que meu relatório de Analytics mostra resultados diferentes das solicitações de conteúdo do AEM? {#why-are-reports-different}
 
-As solicitações de conteúdo podem ter variações entre as ferramentas de relatório de Analytics de uma organização. Para obter mais informações, consulte [Noções básicas sobre solicitações de conteúdo Cloud Service](/help/implementing/cloud-manager/content-requests.md).
+As solicitações de conteúdo podem ter variações entre as ferramentas de relatório de Analytics de uma organização. Para obter mais informações, consulte [Entendendo as Solicitações de Conteúdo Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 
 ### E se eu quiser saber mais sobre o volume de solicitação de conteúdo? {#current-request-volumes}
 

@@ -1,6 +1,6 @@
 ---
-title: Como configurar [!DNL Microsoft Dynamics] OData para AEM Forms?
-description: Saiba como criar o Modelo de dados de formulário (FDM) com base nas entidades, atributos e serviços definidos em [!DNL Microsoft Dynamics] serviço.
+title: Como configurar o  [!DNL Microsoft Dynamics] OData para o AEM Forms?
+description: Saiba como criar o Modelo de dados de formulário (FDM) com base nas entidades, atributos e serviços definidos no serviço  [!DNL Microsoft Dynamics] .
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 ---
 
-# [!DNL Microsoft Dynamics] Configuração OData {#microsoft-dynamics-odata-configuration}
+# Configuração OData de [!DNL Microsoft Dynamics] {#microsoft-dynamics-odata-configuration}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -21,11 +21,11 @@ ht-degree: 2%
 
 ![integração de dados](assets/data-integeration.png)
 
-[!DNL Microsoft Dynamics] O é um software de CRM (Customer Relationship Management, gerenciamento de relacionamento com o cliente) e ERP (Enterprise Resource Planning, planejamento de recursos corporativos) que fornece soluções corporativas para criar e gerenciar contas, contatos, clientes potenciais, oportunidades e casos de clientes. [[!DNL Experience Manager Forms] Integração de dados](data-integration.md) O fornece uma configuração do serviço de nuvem OData para integrar o Forms com o local e online [!DNL Microsoft Dynamics] servidor. Ela permite criar o Modelo de dados de formulário (FDM) com base nas entidades, atributos e serviços definidos em [!DNL Microsoft Dynamics] serviço. O Modelo de dados de formulário (FDM) pode ser usado para criar o Forms adaptável que interage com o [!DNL Microsoft Dynamics] servidor para habilitar workflows de negócios. Por exemplo:
+O [!DNL Microsoft Dynamics] é um software de CRM (relacionamento com o cliente) e ERP (planejamento de recursos corporativos) que fornece soluções corporativas para criar e gerenciar contas, contatos, clientes potenciais, oportunidades e casos de clientes. [[!DNL Experience Manager Forms] A Integração de Dados](data-integration.md) fornece uma configuração do serviço de nuvem OData para integrar o Forms ao servidor [!DNL Microsoft Dynamics] local e online. Ela permite criar o Modelo de Dados de Formulário (FDM) com base nas entidades, atributos e serviços definidos no serviço [!DNL Microsoft Dynamics]. O Modelo de Dados de Formulário (FDM) pode ser usado para criar o Forms Adaptável que interage com o servidor [!DNL Microsoft Dynamics] para habilitar fluxos de trabalho de negócios. Por exemplo:
 
-* Query [!DNL Microsoft Dynamics] servidor para dados e pré-popular o Adaptive Forms
-* Gravar dados em [!DNL Microsoft Dynamics] no envio do Formulário adaptável
-* Gravar dados em [!DNL Microsoft Dynamics] por meio de entidades personalizadas definidas no Modelo de dados de formulário (FDM) e vice-versa
+* Consultar o servidor [!DNL Microsoft Dynamics] para obter dados e pré-popular o Adaptive Forms
+* Gravar dados em [!DNL Microsoft Dynamics] no envio do Formulário Adaptável
+* Gravar dados em [!DNL Microsoft Dynamics] por meio de entidades personalizadas definidas no Modelo de Dados de Formulário (FDM) e vice-versa
 
 <!--[!DNL Experience Manager Forms] add-on package also includes reference OData configuration that you can use to quickly integrate [!DNL Microsoft Dynamics] with [!DNL Experience Manager Forms].-->
 
@@ -34,32 +34,32 @@ ht-degree: 2%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  O Cloud Service OData (serviço OData) do MS Dynamics está disponível com todos os modos de execução. Para obter mais informações sobre a configuração dos modos de execução para um [!DNL Experience Manager] instância, consulte [Modos de execução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  O Cloud Service OData (serviço OData) do MS Dynamics está disponível com todos os modos de execução. Para obter mais informações sobre como configurar os modos de execução para uma instância [!DNL Experience Manager], consulte [Modos de Execução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#runmodes).
 
-O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções na [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md)  artigo.
+O AEM as a Cloud Service oferece várias ações de envio prontas para uso para manipular envios de formulários. Você pode saber mais sobre essas opções no artigo [Ação de envio do formulário adaptável](/help/forms/configure-submit-actions-core-components.md).
 
 
 ## Pré-requisitos {#prerequisites}
 
-Antes de começar a instalar e configurar [!DNL Microsoft Dynamics], verifique se você tem:
+Antes de começar a instalar e configurar o [!DNL Microsoft Dynamics], verifique se você tem:
 
 <!--* Installed the [[!DNL Experience Manager Forms] add-on package](installing-configuring-aem-forms-osgi.md) -->
-* Configurado [!DNL Microsoft Dynamics] 365 on-line ou instalou uma instância de um dos seguintes [!DNL Microsoft Dynamics] versões:
+* [!DNL Microsoft Dynamics] 365 online configurado ou instalado uma instância de uma das [!DNL Microsoft Dynamics] versões a seguir:
 
    * [!DNL Microsoft Dynamics] 365 no local
    * [!DNL Microsoft Dynamics] 2016 no local
 
-* [Registrou o aplicativo para [!DNL Microsoft Dynamics] serviço online com [!DNL Microsoft Azure] Ative Diretory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Anote os valores da ID do cliente (também chamada de ID do aplicativo) e o segredo do cliente para o serviço registrado. Esses valores são usados enquanto [configuração do cloud service para o [!DNL Microsoft Dynamics] serviço](#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Registrou o aplicativo para o [!DNL Microsoft Dynamics] serviço online [!DNL Microsoft Azure] Ative Diretory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Anote os valores da ID do cliente (também chamada de ID do aplicativo) e o segredo do cliente para o serviço registrado. Estes valores são usados ao [configurar o serviço de nuvem para o seu [!DNL Microsoft Dynamics] serviço](#configure-cloud-service-for-your-microsoft-dynamics-service).
 
-## Definir URL de resposta para registrado [!DNL Microsoft Dynamics] aplicativo {#set-reply-url-for-registered-microsoft-dynamics-application}
+## Definir URL de Resposta para o aplicativo [!DNL Microsoft Dynamics] registrado {#set-reply-url-for-registered-microsoft-dynamics-application}
 
-Faça o seguinte para definir o URL de resposta para registrado [!DNL Microsoft Dynamics] aplicativo:
+Faça o seguinte para definir a URL de resposta para o aplicativo [!DNL Microsoft Dynamics] registrado:
 
 >[!NOTE]
 >
->Use este procedimento somente durante a integração [!DNL Experience Manager Forms] com on-line [!DNL Microsoft Dynamics] servidor.
+>Use este procedimento somente durante a integração do [!DNL Experience Manager Forms] com o servidor [!DNL Microsoft Dynamics] online.
 
-1. Ir para [!DNL Microsoft Azure] Conta do Ative Diretory e adicione a seguinte URL de configuração do serviço de nuvem em **[!UICONTROL URLs de resposta]** configurações para seu aplicativo registrado:
+1. Vá para a conta do Ative Diretory [!DNL Microsoft Azure] e adicione a seguinte URL de configuração do serviço de nuvem nas configurações de **[!UICONTROL URLs de resposta]** para o aplicativo registrado:
 
    `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
@@ -69,14 +69,14 @@ Faça o seguinte para definir o URL de resposta para registrado [!DNL Microsoft 
 
 ## Configurar [!DNL Microsoft Dynamics] para IFD {#configure-microsoft-dynamics-for-ifd}
 
-[!DNL Microsoft Dynamics] O usa autenticação baseada em declarações para fornecer acesso a dados em [!DNL Microsoft Dynamics] Servidor do CRM para usuários externos. Para habilitar isso, faça o seguinte para configurar [!DNL Microsoft Dynamics] para implantação na Internet (IFD) e definir configurações de declaração.
+[!DNL Microsoft Dynamics] usa autenticação baseada em declarações para fornecer acesso aos dados no servidor do CRM [!DNL Microsoft Dynamics] para usuários externos. Para habilitar isso, faça o seguinte para configurar o [!DNL Microsoft Dynamics] para IFD e definir as configurações de declaração.
 
 >[!NOTE]
 >
-> Use este procedimento somente durante a integração [!DNL Experience Manager Forms] com local [!DNL Microsoft Dynamics] servidor.
+> Use este procedimento somente durante a integração do [!DNL Experience Manager Forms] com o servidor [!DNL Microsoft Dynamics] local.
 
-1. Configurar [!DNL Microsoft Dynamics] local para o IFD, tal como descrito no anexo I, parte A, do Regulamento (CE) [Configurar IFD para [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
-1. Execute os seguintes comandos usando o Windows PowerShell para definir as configurações de declaração no IFD habilitado [!DNL Microsoft Dynamics]:
+1. Configure a instância local [!DNL Microsoft Dynamics] para o IFD conforme descrito em [Configurar o IFD para [!DNL Microsoft Dynamics]](https://technet.microsoft.com/en-us/library/dn609803.aspx).
+1. Execute os seguintes comandos usando o Windows PowerShell para definir as configurações de declaração no [!DNL Microsoft Dynamics] habilitado para IFD:
 
    ```shell
    Add-PSSnapin Microsoft.Crm.PowerShell
@@ -93,7 +93,7 @@ Faça o seguinte para registrar um cliente OAuth em um computador do Ative Diret
 
 >[!NOTE]
 >
->Use este procedimento somente durante a integração [!DNL Experience Manager Forms] com local [!DNL Microsoft Dynamics] servidor.
+>Use este procedimento somente durante a integração do [!DNL Experience Manager Forms] com o servidor [!DNL Microsoft Dynamics] local.
 
 1. Execute o seguinte comando:
 
@@ -102,7 +102,7 @@ Faça o seguinte para registrar um cliente OAuth em um computador do Ative Diret
    Em que:
 
    * `Client-ID` é uma ID de cliente que você pode gerar usando qualquer gerador de GUID.
-   * `redirect-uri` é o URL para o [!DNL Microsoft Dynamics] Serviço de nuvem OData ativado [!DNL Experience Manager Forms]. O serviço de nuvem padrão instalado com o [!DNL Experience Manager Forms] é implantado no seguinte URL:
+   * `redirect-uri` é a URL para o serviço de nuvem OData [!DNL Microsoft Dynamics] em [!DNL Experience Manager Forms]. O serviço de nuvem padrão instalado com o [!DNL Experience Manager Forms] é implantado na seguinte URL:
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Execute o seguinte comando para conceder acesso à máquina do AD FS:
@@ -111,39 +111,39 @@ Faça o seguinte para registrar um cliente OAuth em um computador do Ative Diret
 
    Em que:
 
-   * `resource` é o [!DNL Microsoft Dynamics] URL da organização.
+   * `resource` é a URL da organização [!DNL Microsoft Dynamics].
 
-1. [!DNL Microsoft Dynamics] usa o protocolo HTTPS. Para chamar pontos de extremidade do AD FS de [!DNL Forms] servidor, instalar [!DNL Microsoft Dynamics] certificado do site para o armazenamento de certificados Java usando o `keytool` no computador que está executando [!DNL Experience Manager Forms].
+1. [!DNL Microsoft Dynamics] usa o protocolo HTTPS. Para invocar pontos de extremidade do AD FS do servidor [!DNL Forms], instale o certificado do site [!DNL Microsoft Dynamics] no armazenamento de certificados Java usando o comando `keytool` no computador que executa o [!DNL Experience Manager Forms].
 
-## Configurar o serviço em nuvem para o seu [!DNL Microsoft Dynamics] serviço {#configure-cloud-service-for-your-microsoft-dynamics-service}
+## Configurar o serviço de nuvem para o serviço [!DNL Microsoft Dynamics] {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-Um serviço OData é identificado por sua URL raiz de serviço. Para configurar um serviço OData no [!DNL Experience Manager] as a Cloud Service, verifique se você tem um URL raiz de serviço para o serviço e faça o seguinte:
+Um serviço OData é identificado por sua URL raiz de serviço. Para configurar um serviço OData em [!DNL Experience Manager] as a Cloud Service, verifique se você tem uma URL raiz de serviço para o serviço e faça o seguinte:
 
 <!--The **MS Dynamics OData Cloud Service (OData Service)** configuration comes with default OData configuration. To configure it to connect with your [!DNL Microsoft Dynamics] service, do the following.-->
 
 >[!NOTE]
 >
->Para obter um guia passo a passo para configurar o [!DNL Microsoft Dynamics 365]on-line ou no local, consulte [[!DNL Microsoft Dynamics] Configuração OData](ms-dynamics-odata-configuration.md).
+>Para obter o guia passo a passo para configurar o [!DNL Microsoft Dynamics 365], online ou no local, consulte [[!DNL Microsoft Dynamics] Configuração OData](ms-dynamics-odata-configuration.md).
 
-1. Ir para **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Selecione para selecionar a pasta na qual deseja criar uma configuração de nuvem.
+1. Acesse **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Selecione para selecionar a pasta na qual deseja criar uma configuração de nuvem.
 
-   Consulte [Configurar pasta para configurações do serviço em nuvem](#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do cloud service.
+   Consulte [Configurar pasta para configurações do serviço de nuvem](#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do serviço de nuvem.
 
-1. Selecionar **[!UICONTROL Criar]** para abrir o **[!UICONTROL Assistente para Criar Configuração da Fonte de Dados]**. Especifique um nome e, opcionalmente, um título para a configuração, selecione **[!UICONTROL Serviço OData]** do **[!UICONTROL Tipo de serviço]** opção, procure e selecione uma imagem em miniatura para a configuração e **[!UICONTROL Próxima]**.
-No **[!UICONTROL Configurações de autenticação]** guia:
+1. Selecione **[!UICONTROL Criar]** para abrir o **[!UICONTROL Assistente de Criação de Configuração de Source de Dados]**. Especifique um nome e, opcionalmente, um título para a configuração, selecione **[!UICONTROL Serviço OData]** na lista suspensa **[!UICONTROL Tipo de Serviço]**, opcionalmente, procure e selecione uma imagem em miniatura para a configuração e selecione **[!UICONTROL Próximo]**.
+Na guia **[!UICONTROL Configurações de autenticação]**:
 
-   1. Insira o valor para o **[!UICONTROL Raiz do serviço]** campo. Acesse a instância do Dynamics e navegue até **[!UICONTROL Recursos do desenvolvedor]** para exibir o valor do campo Raiz do Serviço. Por exemplo, https://&lt;tenant-name>/api/data/v9.1/
+   1. Insira o valor para o campo **[!UICONTROL Raiz de Serviço]**. Vá para a instância do Dynamics e navegue até **[!UICONTROL Recursos do Desenvolvedor]** para exibir o valor do campo Raiz do Serviço. Por exemplo, https://&lt;tenant-name>/api/data/v9.1/
 
-   1. Selecionar **[!UICONTROL OAuth 2.0]** como o tipo de autenticação.
+   1. Selecione **[!UICONTROL OAuth 2.0]** como o tipo de autenticação.
 
-   1. Substitua os valores padrão no **[!UICONTROL ID do cliente]** (também referido como **ID do aplicativo**), **[!UICONTROL Segredo do cliente]**, **[!UICONTROL URL do OAuth]**, **[!UICONTROL URL do token de atualização]**, **[!UICONTROL URL do token de acesso]**, e **[!UICONTROL Recurso]** campos com valores do seu [!DNL Microsoft Dynamics] configuração do serviço. É obrigatório especificar o URL da instância do dynamics na variável **[!UICONTROL Recurso]** campo a ser configurado [!DNL Microsoft Dynamics] com um modelo de dados de formulário (FDM). Use o URL raiz do serviço para derivar o URL da instância dinâmica. Por exemplo, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Substitua os valores padrão nos campos **[!UICONTROL ID do Cliente]** (também conhecido como **ID do Aplicativo**), **[!UICONTROL Segredo do Cliente]**, **[!UICONTROL URL do OAuth]**, **[!UICONTROL URL do Token de Atualização]**, **[!UICONTROL URL do Token de Acesso]** e **[!UICONTROL URL]** por valores da configuração do serviço [!DNL Microsoft Dynamics]. É obrigatório especificar a URL da instância do Dynamics no campo **[!UICONTROL Recurso]** para configurar [!DNL Microsoft Dynamics] com um modelo de dados de formulário (FDM). Use o URL raiz do serviço para derivar o URL da instância dinâmica. Por exemplo, [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
-   1. Especificar **[!UICONTROL openid]** no **[!UICONTROL Escopo da autorização]** campo para processo de autorização em [!DNL Microsoft Dynamics].
+   1. Especifique **[!UICONTROL openid]** no campo **[!UICONTROL Escopo de Autorização]** para o processo de autorização em [!DNL Microsoft Dynamics].
 
       ![Configurações de autenticação](assets/dynamics_authentication_settings_new.png)
 Modelo de dados de formulário (FDM)
-1. Clique em **[!UICONTROL Conectar-se ao OAuth]**. Você será redirecionado para [!DNL Microsoft Dynamics] página de logon.
-1. Faça logon com o [!DNL Microsoft Dynamics] e aceite para permitir que a configuração do serviço de nuvem se conecte a [!DNL Microsoft Dynamics] serviço. É uma tarefa única estabelecer o Modelo de dados de formulário (FDM) entre o serviço em nuvem e o serviço.
+1. Clique em **[!UICONTROL Conectar ao OAuth]**. Você é redirecionado à página de logon [!DNL Microsoft Dynamics].
+1. Faça logon com suas credenciais do [!DNL Microsoft Dynamics] e aceite para permitir que a configuração do serviço de nuvem se conecte ao serviço [!DNL Microsoft Dynamics]. É uma tarefa única estabelecer o Modelo de dados de formulário (FDM) entre o serviço em nuvem e o serviço.
 
    Você é a página Modelo de dados de formulário Configuração do serviço de nuvem, que exibe uma mensagem de que a configuração OData foi salva com êxito.
 
@@ -165,15 +165,15 @@ Após configurar o serviço de nuvem MS Dynamics OData, você pode usá-lo ao cr
 
 Em seguida, você pode criar um Modelo de dados de formulário (FDM) baseado no Formulário adaptável e usá-lo em vários casos de uso do Formulário adaptável, como:
 
-* Preencha previamente o formulário adaptável consultando informações do [!DNL Microsoft Dynamics] entidades e serviços
-* Chamar [!DNL Microsoft Dynamics] operações do servidor definidas em um Modelo de dados de formulário (FDM) usando regras de Formulário adaptável
-* Gravar dados do formulário enviado em [!DNL Microsoft Dynamics] entidades
+* Preencha previamente o formulário adaptável consultando informações de [!DNL Microsoft Dynamics] entidades e serviços
+* Invocar operações do servidor [!DNL Microsoft Dynamics] definidas em um Modelo de Dados de Formulário (FDM) usando regras de Formulário Adaptável
+* Gravar dados de formulário enviados em [!DNL Microsoft Dynamics] entidades
 
 <!--It is recommended to create a copy of the Form Data Model provided with the [!DNL Experience Manager Forms] package and configure data models and services to suit your requirements. It will ensure that any future updates to the package do not override your form data model.-->
 
-Você pode [configurar a ação enviar do modelo de dados de formulário](/help/forms/using-form-data-model.md) para um Formulário adaptável para enviar dados ao Microsoft Dynamics OData.
+Você pode [configurar a Ação de Envio do Modelo de Dados de Formulário](/help/forms/using-form-data-model.md) para um Formulário Adaptável para enviar dados para o Microsoft Dynamics OData.
 
-Para obter mais informações sobre como criar e usar o Form Data Model (FDM) nos fluxos de trabalho de negócios, consulte [Integração de dados](data-integration.md).
+Para obter mais informações sobre como criar e usar o Form Data Model (FDM) nos fluxos de trabalho de negócios, consulte [Integração de Dados](data-integration.md).
 
 ## Artigos relacionados
 

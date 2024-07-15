@@ -37,9 +37,9 @@ A guia **Avisos** inclui avisos de produto da Adobe. Os avisos dizem respeito ao
 
 Clique em uma notificação ou anúncio para exibir seus detalhes. As notificações vinculadas a atividades como implantações de pipeline levam você aos detalhes dessa atividade, como a janela de execução do pipeline.
 
-Clique em **Exibir todos** opção na parte inferior do painel para exibir todos os anúncios na caixa de entrada.
+Clique na opção **Exibir tudo** na parte inferior do painel para exibir todos os avisos na caixa de entrada.
 
-Clique em **Marcar tudo como lido** opção na parte inferior do painel para marcar todas as notificações não lidas como lidas e limpar o símbolo do ícone de sino.
+Clique na opção **Marcar tudo como lido** na parte inferior do painel para marcar todas as notificações não lidas como lidas e limpar o símbolo do ícone de sino.
 
 ## Configuração de notificação {#configuration}
 

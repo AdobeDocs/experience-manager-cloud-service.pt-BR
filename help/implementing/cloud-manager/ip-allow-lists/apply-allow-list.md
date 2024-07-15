@@ -23,7 +23,7 @@ Um usuário com a função **Proprietário da empresa** ou **Gerente de implanta
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 1. Acesse a página de detalhes do ambiente específico na tela **Ambientes** e navegue até a tabela **Lista de permissões de IP**.
 1. Use os campos de entrada na parte superior da tabela para poder selecionar a lista de permissões IP e o serviço de autoria ou publicação ao qual deseja aplicá-la.

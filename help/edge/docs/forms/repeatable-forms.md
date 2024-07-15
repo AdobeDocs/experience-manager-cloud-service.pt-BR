@@ -26,26 +26,26 @@ No final deste artigo, você aprenderá a:
 
 A criação de uma seção repetível em um formulário oferece aos usuários a capacidade de inserir várias instâncias do mesmo conjunto de dados, permitindo a coleta eficiente de informações repetitivas. Para criar uma seção repetível em um formulário:
 
-1. Acesse a pasta do projeto Edge Deliver no Microsoft SharePoint ou no Google Workspace e abra a planilha.
+1. Vá para a pasta do projeto do Edge Deliver no Microsoft SharePoint ou Google Workspace e abra a planilha.
 
-1. Adicionar um campo de formulário com o `type` propriedade definida como `fieldset`
-1. Especificar `Name` do campo. A propriedade name é usada para criar uma seção repetível.
-1. Ativar repetibilidade por configuração `repeatable` para `true`.
-1. Especificar um descritivo `label` para o campo. Ele serve como o cabeçalho da seção repetível.
+1. Adicionar um campo de formulário com a propriedade `type` definida como `fieldset`
+1. Especifique `Name` do campo. A propriedade name é usada para criar uma seção repetível.
+1. Habilite a repetibilidade definindo `repeatable` como `true`.
+1. Especifique um `label` descritivo para o campo. Ele serve como o cabeçalho da seção repetível.
 
    Consulte a imagem abaixo para obter uma ilustração de uma seção de histórico de emprego em um formulário de requisição de cargo.
 
    ![](/help/edge/assets/repeatable-section-example-job-application-form.png)
 
-1. Para cada campo que deseja incluir na seção, defina seu `Fieldset` com o mesmo nome que você escolheu na etapa 3.
+1. Para cada campo que você deseja incluir na seção, defina sua propriedade `Fieldset` com o mesmo nome que você escolheu na etapa 3.
 
-   Por exemplo, designe `experience` na propriedade Fieldset de todos os campos relevantes a serem incluídos na variável `employment history` seção.
+   Por exemplo, designe `experience` na propriedade Fieldset de todos os campos relevantes a serem incluídos na seção `employment history`.
 
    ![exemplo de um campo de seção repetível e suas propriedades](/help/edge/assets/repeatable-section--mention-fieldset-name-example-job-application-form.png)
 
-1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar e publicar a planilha. A seção repetível é adicionada ao formulário.
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar e publicar a planilha. A seção repetível é adicionada ao formulário.
 
-   Abaixo da seção repetível, os usuários encontram uma **Adicionar** botão, facilitando a adição de várias seções com facilidade.
+   Abaixo da seção repetível, os usuários encontram um botão intuitivo **Adicionar**, que facilita a adição de várias seções com facilidade.
 
    ![seção repetível, botão Adicionar, para adicionar várias seções ](/help/edge/assets/repeatable-section-example.png)
 
@@ -54,19 +54,19 @@ A criação de uma seção repetível em um formulário oferece aos usuários a 
 
 No design do formulário, é benéfico definir repetições mínimas e máximas para seções repetíveis. Ao fazer isso, você estabelece controle e consistência e, ao mesmo tempo, orienta os usuários com eficiência. Para definir o número mínimo ou máximo de repetições:
 
-1. Acesse a pasta do projeto Edge Deliver no Microsoft SharePoint ou no Google Workspace e abra a planilha.
+1. Vá para a pasta do projeto do Edge Deliver no Microsoft SharePoint ou Google Workspace e abra a planilha.
 
-1. Para um campo de `type` `fieldset` e `repeatable` propriedade definida como `true`:
+1. Para um campo de `type` `fieldset` e propriedade `repeatable` definida como `true`:
 
-   * defina o `min` para especificar o número mínimo de vezes que a seção pode ser repetida.
+   * defina a propriedade `min` para especificar o número mínimo de vezes que a seção pode ser repetida.
 
-   * defina o `max` para especificar o número máximo de vezes que a seção pode ser repetida.
+   * defina a propriedade `max` para especificar o número máximo de vezes que a seção pode ser repetida.
 
    ![Defina as propriedades min e max para especificar o número de vezes que a seção pode ser repetida](/help/edge/assets/repeatable-section-set-min-max.png)
 
-1. Uso [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar e publicar a planilha.
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar e publicar a planilha.
 
-   Ao adicionar uma seção repetível, os usuários acham uma **Excluir** ícone, facilitando a remoção de seções repetíveis. Depois de adicionadas, essas seções não podem ser reduzidas a menos instâncias do que o especificado pelo `min` propriedade. Isso garante a adesão ao requisito mínimo definido para o preenchimento do formulário.
+   Ao adicionar uma seção repetível, os usuários encontram um ícone intuitivo **Excluir**, facilitando a remoção de seções repetíveis. Depois de adicionadas, essas seções não podem ser diminuídas para menos instâncias do que o especificado pela propriedade `min`. Isso garante a adesão ao requisito mínimo definido para o preenchimento do formulário.
 
 <!--
 

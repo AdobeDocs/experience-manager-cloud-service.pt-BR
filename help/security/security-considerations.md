@@ -32,7 +32,7 @@ Para permitir operações assimétricas e criptográficas, o AEM armazena certif
 
 >[!NOTE]
 >
->A Adobe recomenda que os controles de acesso padrão sejam usados para o Trust Store, o que significa que ele permanece acessível publicamente. Para obter a configuração mais segura, é possível usar uma política de negação `jcr:all` para todos.
+>A Adobe recomenda que os controles de acesso padrão sejam usados para o Trust Store, o que significa que ele permanece acessível publicamente. Para obter a configuração mais segura, você pode usar uma política de negar `jcr:all` para todos.
 
 <!--
 Commenting out section for now as requested by Lars

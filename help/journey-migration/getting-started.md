@@ -13,31 +13,31 @@ ht-degree: 22%
 
 # Introdução à Jornada de migração para o AEM as a Cloud Service {#getting-started}
 
-Nesta parte da Jornada de migração as a Cloud Service do AEM, você aprenderá sobre as noções básicas para mover sua instalação local ou Adobe Managed Services AEM do para a nuvem.
+Nesta parte da Jornada de migração do AEM as a Cloud Service, você aprenderá sobre as noções básicas para mover sua instalação local ou do Adobe Managed Services AEM do para a nuvem.
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender por que deve usar uma versão nativa em nuvem do AEM e as diferentes fases de migração para o AEM as a Cloud Service. Depois de ler, você deverá:
+Este documento ajuda você a entender por que usar uma versão nativa em nuvem do AEM e as diferentes fases da migração para o AEM as a Cloud Service. Depois de ler, você deverá:
 
-* Compreender os benefícios de mover o AEM as a Cloud Service
+* Entender os benefícios de mover o AEM as a Cloud Service
 * Familiarize-se com as etapas amplas que devem ser seguidas para fazer a transição para a nuvem
 
 ## Benefícios da migração para o AEM as a Cloud Service {#benefits-of-moving-to-aem-as-a-cloud-service}
 
-O AEM as a Cloud Service fornece uma base de tecnologia escalável, segura e ágil para Experience Manager Assets, Forms e Screens, permitindo que profissionais de marketing e TI se concentrem em fornecer experiências de impacto em escala.
+A AEM as a Cloud Service oferece uma base tecnológica escalável, segura e ágil para Experience Manager Assets, Forms e Screens, permitindo que profissionais de marketing e TI se concentrem em fornecer experiências de impacto em escala.
 
 Com o AEM as a Cloud Service, suas equipes podem se concentrar em inovar em vez de planejar atualizações de produtos. Os novos recursos do produto são totalmente testados e entregues às suas equipes, sem interrupção, para que elas sempre tenham acesso à versão mais recente do AEM.
 
-## Compreender a transição para o AEM as a Cloud Service {#understanding-transition-to-aem-as-a-cloud-service}
+## Noções básicas sobre a transição para o AEM as a Cloud Service {#understanding-transition-to-aem-as-a-cloud-service}
 
 A jornada de migração para o Cloud Service envolve as seguintes fases:
 
-* Comece determinando se sua implantação está pronta para ser transferida para o AEM as a Cloud Service com o [Fase de preparação](/help/journey-migration/readiness.md). Nessa fase, você também deve se familiarizar com as mudanças introduzidas pelo AEM as a Cloud Service.
-* Em seguida, prepare seu código e sua nuvem de conteúdo com o [Fase de implementação](/help/journey-migration/implementation.md). Nesta fase, você explorará o Adobe de ferramentas que o fornece para facilitar a mudança para a nuvem.
-* Depois que tudo estiver configurado, é possível executar a migração com o [Fase Go-Live](/help/journey-migration/go-live.md).
-* Por fim, certifique-se de monitorar problemas e melhorar o desempenho após a conclusão da migração, na [Fase de pós-ativação](/help/journey-migration/post-go-live.md).
+* Comece determinando se a implantação está pronta para ser movida para a AEM as a Cloud Service com a [Fase de preparação](/help/journey-migration/readiness.md). Nesta fase, você também deve se familiarizar com as alterações introduzidas pelo AEM as a Cloud Service.
+* Em seguida, prepare sua nuvem de código e conteúdo com a [Fase de implementação](/help/journey-migration/implementation.md). Nesta fase, você explorará o Adobe de ferramentas que o fornece para facilitar a mudança para a nuvem.
+* Depois que tudo estiver configurado, você poderá executar a migração com a [Fase de ativação](/help/journey-migration/go-live.md).
+* Finalmente, certifique-se de monitorar problemas e melhorar o desempenho após a conclusão da migração, na [Fase de ativação do Post](/help/journey-migration/post-go-live.md).
 
-A figura abaixo mostra uma representação de alto nível da jornada de transição recomendada para AEM as a Cloud Service.
+A figura abaixo mostra uma representação de alto nível da jornada de transição recomendada para o AEM as a Cloud Service.
 
 ![imagem](/help/journey-migration/assets/move-aemcloud-process.png)
 
@@ -56,8 +56,8 @@ Você também pode consultar o diagrama abaixo para obter uma visualização mai
 
 Além das etapas descritas nesta jornada, o Adobe fornece o Cloud Acceleration Manager, um aplicativo na nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, desde o planejamento até a ativação do Cloud Service. Configure suas equipes para uma migração bem-sucedida com práticas, dicas, documentação e ferramentas recomendadas pela Adobe, para ajudar em cada fase da jornada para o AEM as a Cloud Service.
 
-Você pode consultar a [Documentação do Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) ou assista a um [vídeo de introdução](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) para iniciar sua jornada de migração.
+Você pode consultar a [documentação do Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) ou assistir a um [vídeo de introdução](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) para iniciar sua jornada de migração.
 
 ## O que vem a seguir {#what-is-next}
 
-Obrigado por começar a usar a jornada de migração do AEM Cloud Service. Agora que você leu este documento, deve se familiarizar com o [Fase de preparação](/help/journey-migration/readiness.md), que ajudarão você a determinar se a implantação está pronta para ser movida para o AEM as a Cloud Service.
+Obrigado por começar a usar a jornada de migração do AEM Cloud Service. Agora que você leu este documento, deve se atualizar com a [Fase de preparação](/help/journey-migration/readiness.md), que ajudará a determinar se sua implantação está pronta para ser movida para o AEM as a Cloud Service.

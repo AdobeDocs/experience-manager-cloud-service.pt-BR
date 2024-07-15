@@ -114,7 +114,7 @@ Você também pode criar versões na linha do tempo de versões. Selecione a ver
 
 **Permissões necessárias:** `Can Edit`, `Owner` ou permissões de administrador em um ativo.
 
-A visualização de ativos permite que você defina o status em ativos disponíveis no repositório. Defina um status de ativo para melhor administrar e gerenciar o consumo downstream de ativos digitais.
+A visualização do Assets permite que você defina o status em ativos disponíveis no repositório. Defina um status de ativo para melhor administrar e gerenciar o consumo downstream de ativos digitais.
 
 Você pode definir o seguinte status em ativos:
 
@@ -130,14 +130,14 @@ Para definir o status do ativo:
 
 1. Selecione o ativo e clique em **[!UICONTROL Detalhes]** na barra de ferramentas.
 
-1. No **[!UICONTROL Básico]** selecione o status do ativo na guia **[!UICONTROL Status]** lista suspensa. Os valores possíveis incluem Aprovado, Rejeitado e Sem status (padrão).
+1. Na guia **[!UICONTROL Básico]**, selecione o status do ativo na lista suspensa **[!UICONTROL Status]**. Os valores possíveis incluem Aprovado, Rejeitado e Sem status (padrão).
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
 
 ### Definir data de expiração do ativo {#set-asset-expiration-date}
 
-A visualização de Ativos também permite definir a data de expiração dos ativos disponíveis no repositório. Você pode [filtrar os resultados da pesquisa](search-assets-view.md#refine-search-results) com base no status `Expired` de um ativo. Além disso, é possível especificar um intervalo de datas para a expiração dos ativos, permitindo filtrar ainda mais os resultados da pesquisa.
+A visualização Assets também permite definir a data de expiração dos ativos disponíveis no repositório. Você pode [filtrar os resultados da pesquisa](search-assets-view.md#refine-search-results) com base no status `Expired` de um ativo. Além disso, é possível especificar um intervalo de datas para a expiração dos ativos, permitindo filtrar ainda mais os resultados da pesquisa.
 
 Para definir a data de expiração do ativo:
 
@@ -147,13 +147,13 @@ Para definir a data de expiração do ativo:
 
 O indicador `Expired` do cartão de ativos substitui o indicador `Approved` ou `Rejected` definido para um ativo.
 
-Também é possível filtrar ativos com base em um status de ativo. Para obter mais informações, consulte [Pesquisar ativos na exibição de Ativos](search-assets-view.md).
+Também é possível filtrar ativos com base em um status de ativo. Para obter mais informações, consulte [Pesquisar ativos no modo de exibição Assets](search-assets-view.md).
 
 ## Personalizar formulários de metadados para incluir o campo de status do ativo {#customize-asset-status-metadata-form}
 
 **Permissões necessárias:** Administrador
 
-A exibição Ativos fornece vários campos de metadados padrão por padrão. As organizações têm necessidades adicionais de metadados e precisam de mais campos para adicionar metadados específicos de negócios. Os formulários de metadados permitem que as empresas adicionem campos de metadados personalizados à página [!UICONTROL Detalhes] de um ativo. Os metadados específicos de negócios melhoram a governança e a descoberta de ativos.
+A visualização Assets fornece muitos campos de metadados padrão por padrão. As organizações têm necessidades adicionais de metadados e precisam de mais campos para adicionar metadados específicos de negócios. Os formulários de metadados permitem que as empresas adicionem campos de metadados personalizados à página [!UICONTROL Detalhes] de um ativo. Os metadados específicos de negócios melhoram a governança e a descoberta de ativos.
 
 Para mais informações sobre como adicionar campos de metadados adicionais ao formulário de metadados, consulte [Formulários de metadados](metadata-assets-view.md#metadata-forms).
 
@@ -167,7 +167,7 @@ Para adicionar o campo de metadados Data de expiração ao formulário, arraste 
 
 ## Próximas etapas {#next-steps}
 
-* [Assista a um vídeo sobre gerenciamento de ativos na visualização de Ativos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets-essentials/basics/managing)
+* [Assista a um vídeo sobre gerenciamento de ativos no modo de exibição do Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets-essentials/basics/managing)
 
 * Forneça feedback sobre o produto usando a opção [!UICONTROL Feedback] disponível na interface de visualização do Assets
 

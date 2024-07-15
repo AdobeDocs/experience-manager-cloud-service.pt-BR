@@ -12,45 +12,45 @@ ht-degree: 4%
 
 ---
 
-# Gerar variações de ativos usando [!DNL Adobe Creative Cloud] integração {#content-automation}
+# Gerar variações de ativos usando a integração do [!DNL Adobe Creative Cloud] {#content-automation}
 
-O complemento de automação de conteúdo é integrado [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] e [!DNL Adobe Creative Cloud] APIs para processar criativamente seus ativos em escala. [!DNL Experience Manager] usa baseados em nuvem [microsserviços de ativos](/help/assets/asset-microservices-overview.md) para usar o [!DNL Adobe Creative Cloud] recursos e automatizar a criação de ativos e o manuseio de mídia.
+O complemento de automação de conteúdo integra o [!DNL Adobe Experience Manager Assets] como APIs do [!DNL Cloud Service] e do [!DNL Adobe Creative Cloud] para processar seus ativos de forma criativa e em escala. O [!DNL Experience Manager] usa os [microsserviços de ativos](/help/assets/asset-microservices-overview.md) baseados na nuvem para usar os recursos do [!DNL Adobe Creative Cloud] e automatizar a criação de ativos e o manuseio de mídia.
 
-Para editar ativos no [!DNL Adobe Photoshop] e [!DNL Adobe Lightroom], não é necessário baixar os ativos do [!DNL Experience Manager Assets], edite e faça upload deles novamente. Crie e configure um perfil de processamento no [!DNL Experience Manager], aplique o perfil a uma pasta e faça upload dos ativos para a pasta. Os ativos carregados são reprocessados com base nos perfis de processamento e você obtém variações desses ativos. O processamento em massa consistente e sem esforços economiza esforços manuais e aumenta a velocidade do conteúdo, também sem a necessidade de habilidades criativas excepcionais. Além disso, os desenvolvedores e os parceiros podem estender os microsserviços de ativos com acesso direto a essas APIs e incluir lógica personalizada.
+Para editar ativos em [!DNL Adobe Photoshop] e [!DNL Adobe Lightroom], não é necessário baixar ativos de [!DNL Experience Manager Assets], editá-los e carregá-los novamente. Você cria e configura um perfil de processamento no [!DNL Experience Manager], aplica o perfil a uma pasta e carrega os ativos na pasta. Os ativos carregados são reprocessados com base nos perfis de processamento e você obtém variações desses ativos. O processamento em massa consistente e sem esforços economiza esforços manuais e aumenta a velocidade do conteúdo, também sem a necessidade de habilidades criativas excepcionais. Além disso, os desenvolvedores e os parceiros podem estender os microsserviços de ativos com acesso direto a essas APIs e incluir lógica personalizada.
 
 Os usuários podem criar perfis de processamento para automatizar as seguintes operações criativas em seus ativos:
 
-* **Tom automático**: usa inteligência artificial para analisar o conteúdo da imagem e fazer correções de luz e cores de forma inteligente com base nos atributos exclusivos da imagem.
+* **AutoTom**: usa a inteligência artificial para analisar o conteúdo da imagem e, de forma inteligente, faz correções de luz e cores com base nos atributos exclusivos da imagem.
 
-* **Direita automática**: usa inteligência artificial para analisar o conteúdo da imagem e corrigir a perspectiva inclinada nas imagens. Por exemplo, para criar horizontes de nível.
+* **Vertical automática**: usa a inteligência artificial para analisar o conteúdo da imagem e corrigir a perspectiva inclinada em imagens. Por exemplo, para criar horizontes de nível.
 
   ![tom automático](/help/assets/assets/content-automation-autotone.png)
 
-  *Figura: o tom e o direcionamento automáticos podem ajudar a melhorar imagens distorcidas.*
+  *Figura: o ajuste e o ajuste automáticos podem ajudar a melhorar imagens distorcidas.*
 
-* **Predefinições do Lightroom**: aplica uma aparência definida pelo usuário às imagens para obter uma aparência consistente usando predefinições personalizadas.
+* **Predefinições do Lightroom**: aplica uma aparência definida pelo usuário a imagens para obter uma aparência consistente usando predefinições personalizadas.
 
   ![Predefinição do Lightroom](/help/assets/assets/content-automation-lrpresets.png)
 
   *Figura: predefinição do Adobe Lightroom para melhorar a qualidade da imagem de forma consistente para muitas imagens.*
 
-* **Recorte de imagem**: usa inteligência artificial para criar seleção em torno de objetos principais e remover o plano de fundo com um único comando.
+* **Recorte de imagem**: usa a inteligência artificial para criar seleção em torno de objetos principais e remover o plano de fundo com um único comando.
 
   ![Remover plano de fundo e recortar uma imagem de uma foto](/help/assets/assets/content-automation-backgroundremove.png)
 
-* **Máscara de imagem**: usa inteligência artificial para criar máscaras em torno de objetos principais com um único comando.
+* **Máscara de Imagem**: usa inteligência artificial para criar máscaras em torno de objetos importantes com um único comando.
 
-  ![Mascaramento de uma imagem usando IA](/help/assets/assets/content-automation-mask.png)
+  ![Mascarar uma imagem usando IA](/help/assets/assets/content-automation-mask.png)
 
-* **Ações do Photoshop**: aplica uma série de [!DNL Adobe Photoshop] tarefas a um arquivo ou lote de arquivos.
+* **Ações do Photoshop**: aplica uma série de tarefas [!DNL Adobe Photoshop] a um arquivo ou lote de arquivos.
 
   ![Ações do Photoshop](/help/assets/assets/content-automation-psactions.png)
 
-* **Substituição de objeto inteligente**: faz a personalização em escala, permitindo que você troque imagens e, ao mesmo tempo, retenha todos os efeitos e ajustes aplicados em um arquivo PSD.
+* **Substituição de Objeto Inteligente**: faz personalização em escala permitindo que você troque imagens enquanto mantém todos os efeitos e ajustes aplicados em um arquivo PSD.
 
   ![Substituir objetos com inteligência](/help/assets/assets/content-automation-objectreplace.png)
 
-## Habilitar a automação de conteúdo para o programa as a Cloud Service AEM {#enable-content-automation}
+## Habilitar a automação de conteúdo para o programa AEM as a Cloud Service {#enable-content-automation}
 
 Para ativar o complemento de Automatização de Conteúdo para o programa AEM as a Cloud Service usando o Cloud Manager:
 
@@ -58,48 +58,48 @@ Para ativar o complemento de Automatização de Conteúdo para o programa AEM as
 1. Acesse o Cloud Manager e alterne para sua organização usando o seletor de organização.
 1. Clique em **[!UICONTROL Adicionar programa]** e especifique um nome de programa.
 1. Clique em **[!UICONTROL Continuar]**.
-1. Expandir **[!UICONTROL Assets]** e selecione **[!UICONTROL Automação de conteúdo]**.
+1. Expanda **[!UICONTROL Assets]** e selecione **[!UICONTROL Automação de Conteúdo]**.
 1. Clique em **[!UICONTROL Criar]**.
-1. Executar o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
-Se você precisar adicionar um complemento de Automação de conteúdo a um programa as a Cloud Service AEM existente no Cloud Manager:
+Se você precisar adicionar um complemento de Automação de conteúdo a um programa existente do AEM as a Cloud Service no Cloud Manager:
 
 1. Clique em ... no cartão do programa.
 
-1. Selecionar **[!UICONTROL Editar programa]** e selecione **[!UICONTROL Soluções e complementos]** guia.
+1. Selecione **[!UICONTROL Editar programa]** e depois selecione a guia **[!UICONTROL Soluções e complementos]**.
 
-1. Expandir **[!UICONTROL Assets]** e selecione **[!UICONTROL Automação de conteúdo]**.
+1. Expanda **[!UICONTROL Assets]** e selecione **[!UICONTROL Automação de Conteúdo]**.
 1. Clique em **[!UICONTROL Atualizar]**.
-1. Executar o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 ## Use um perfil de processamento para editar seus ativos criativos em massa {#process-assets}
 
 Para usar perfis de processamento para criar variações automaticamente, siga estas etapas:
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Processamento de perfis]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Processando Perfis]**.
 
-1. Selecionar **[!UICONTROL Criar]** e especifique um **[!UICONTROL Nome]**.
+1. Selecione **[!UICONTROL Criar]** e especifique um **[!UICONTROL Nome]**.
 
-1. Selecione o **[!UICONTROL Creative]** especifique a pasta de saída e selecione **[!UICONTROL Adicionar novo]** para adicionar uma configuração criativa.
+1. Selecione a guia **[!UICONTROL Criativo]**, especifique a pasta de saída e selecione **[!UICONTROL Adicionar novo]** para adicionar uma configuração criativa.
 
-1. Fornecer **[!UICONTROL Nome da representação]** (ou nome de saída), **[!UICONTROL Extensão]** (ou tipo de arquivo), selecione **[!UICONTROL Qualidade]** (ou parâmetros de saída), selecione **[!UICONTROL Inclui]** e **[!UICONTROL Exclui]** Listas de tipo MIME (ou filtro de ativo de entrada) e selecione a operação de criação necessária.
+1. Forneça o **[!UICONTROL Nome da Representação]** (ou o nome de saída), a **[!UICONTROL Extensão]** (ou o tipo de arquivo), selecione a **[!UICONTROL Qualidade]** (ou os parâmetros de saída), selecione as listas de tipos MIME **[!UICONTROL Inclusões]** e **[!UICONTROL Exclusões]** (ou o filtro de ativos de entrada) e selecione a operação de criação necessária.
 
-   ![[!UICONTROL Creative] guia em [!UICONTROL Processando perfil]](assets/creative-processing-profile.png)
+   Guia ![[!UICONTROL Criativo] em [!UICONTROL Processando Perfil]](assets/creative-processing-profile.png)
 
 1. Algumas operações exigem parâmetros extras (ativo). Forneça valores para esses parâmetros adicionais, se necessário.
 
 1. Adicione mais operações criativas como parte do mesmo perfil de processamento ou Salve o perfil.
 
-1. Aplicar o perfil de processamento a uma pasta. Em uma pasta **[!UICONTROL Propriedades]** selecione **[!UICONTROL Processamento de ativos]** e selecione o perfil de processamento a ser aplicado.
+1. Aplicar o perfil de processamento a uma pasta. Na página **[!UICONTROL Propriedades]** de uma pasta, selecione **[!UICONTROL Processamento de ativos]** e selecione o perfil de processamento a ser aplicado.
 
 Depois de aplicar o perfil de processamento a uma pasta do DAM, todos os ativos carregados ou atualizados nessa pasta executam as operações definidas, além do processamento padrão. As subpastas herdam os mesmos perfis que os aplicados às pastas principais. Os usuários podem substituir essa herança.
 
-Para processar os ativos existentes, selecione os ativos, selecione **[!UICONTROL Reprocessar]** e selecione o perfil de processamento necessário.
+Para processar os ativos existentes, selecione os ativos, selecione a opção **[!UICONTROL Reprocessar]** e selecione o perfil de processamento necessário.
 
 ## Dicas e limitações {#limitations-best-practices}
 
-* [!DNL Experience Manager] o limita o processamento de ativos a 300 solicitações por minuto por ambiente e 700 solicitações por minuto por organização.
-* O tamanho do arquivo é limitado a 4 GB para [!DNL Adobe Photoshop] operações de API e 1 GB para [!DNL Adobe Lightroom] operações.
+* [!DNL Experience Manager] limita o processamento de ativos a 300 solicitações por minuto por ambiente e 700 solicitações por minuto por organização.
+* O tamanho do arquivo é limitado a 4 GB para operações de API [!DNL Adobe Photoshop] e 1 GB para operações [!DNL Adobe Lightroom].
 
 **Consulte também**
 
@@ -115,10 +115,10 @@ Para processar os ativos existentes, selecione os ativos, selecione **[!UICONTRO
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publicar ativos no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Configurar e usar microsserviços de ativos por meio de perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).
->* [Integrar [!DNL Experience Manager] com [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
+>* [Integrar [!DNL Experience Manager] a [!DNL Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md).
 >* [Assimilação e processamento de ativos com microsserviços de ativos: uma visão geral](/help/assets/asset-microservices-overview.md).

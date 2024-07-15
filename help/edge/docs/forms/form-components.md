@@ -1,6 +1,6 @@
 ---
 title: Componentes de bloco de formulário adaptável e suas propriedades
-description: Este documento fornece uma visão geral dos componentes de formulário e suas propriedades disponíveis no Serviço de entrega de borda da AEM Forms.
+description: Este documento fornece uma visão geral dos componentes de formulário e suas propriedades disponíveis no AEM Forms Edge Delivery Service.
 feature: Edge Delivery Services
 exl-id: 7d087d41-9313-482a-a905-8955b0999781
 role: Admin, Architect, Developer
@@ -16,9 +16,9 @@ ht-degree: 3%
 O AEM Forms Edge Delivery Services permite criar formulários amigáveis e interativos usando vários componentes. Esses componentes atendem a diferentes tipos de coleção de dados e podem ser facilmente personalizados para atender às suas necessidades específicas.
 
 
-![Uma amostra de planilha com alguns componentes e propriedades](/help/edge/assets/sample-form-in-spreadsheet.png)
+![Uma planilha de exemplo com alguns componentes e propriedades](/help/edge/assets/sample-form-in-spreadsheet.png)
 
-O bloco adaptável do Forms gera um [estrutura de HTML uniforme](/help/edge/docs/forms/style-theme-forms.md) para todos os tipos de campo e containers (painéis), garantindo a consistência. Essa estrutura consistente facilita a [estilizar um formulário](/help/edge/docs/forms/style-theme-forms.md).
+O bloco Adaptive Forms gera uma [estrutura de HTML uniforme](/help/edge/docs/forms/style-theme-forms.md) para todos os tipos de campos e containers (painéis), garantindo a consistência. Essa estrutura consistente facilita [estilizar um formulário](/help/edge/docs/forms/style-theme-forms.md).
 
 ## Componentes disponíveis
 
@@ -26,17 +26,17 @@ Esta é uma visão geral dos componentes disponíveis:
 
 ### Campos de entrada
 
-* Todos os HTML5 válidos [tipos de entrada](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#input_types) e [textarea](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea). Por exemplo, botão, caixa de seleção, cor, data, data-hora-local, email, arquivo, oculto, imagem, mês, número, senha, rádio, intervalo, redefinição, enviar, tel, texto, hora, url e semana.
+* Todos os [tipos de entrada](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#input_types) e [textarea](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea) de HTML5 válidos. Por exemplo, botão, caixa de seleção, cor, data, data-hora-local, email, arquivo, oculto, imagem, mês, número, senha, rádio, intervalo, redefinição, enviar, tel, texto, hora, url e semana.
 
 ### Controles de seleção
 
-* [Grupos de caixas de seleção](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): Para selecionar várias opções.
-* [Grupos de opções](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): Para selecionar uma única opção de um grupo.
+* [Grupos de caixas de seleção](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox): para selecionar várias opções.
+* [Grupos de opções](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio): para selecionar uma única opção de um grupo.
 * [Menus suspensos](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select): para exibir um menu de opções. Por exemplo, a caixa suspensa.
 
 ### Contêineres
 
-* Painéis/Contêineres: para agrupar elementos de formulário relacionados para obter uma melhor organização. Trata-se de uma combinação das [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) e [legenda](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
+* Painéis/Contêineres: para agrupar elementos de formulário relacionados para obter uma melhor organização. É uma combinação do [fieldset](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset) e [legend](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend).
 
 
 ## Propriedades dos componentes
@@ -46,7 +46,7 @@ Cada componente de formulário vem com várias propriedades que permitem control
 
 | Propriedade | Componentes aplicáveis | Detalhes |
 |--------------|------------------------------|----------------------------------------------------------------------|
-| Tipo | Todos | Especifica o tipo do componente. Essa propriedade determina o comportamento e a aparência do campo de entrada. Por exemplo, para entradas de texto, o tipo pode ser &quot;texto&quot;, &quot;email&quot; para entradas de email, &quot;senha&quot; para entradas de senha. Suporte a bloco adaptável do Forms  <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#input_types">todos os tipos de entrada de HTML5 válidos</a>, <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">selecionar</a>, e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
+| Tipo | Todos | Especifica o tipo do componente. Essa propriedade determina o comportamento e a aparência do campo de entrada. Por exemplo, para entradas de texto, o tipo pode ser &quot;texto&quot;, &quot;email&quot; para entradas de email, &quot;senha&quot; para entradas de senha. O Bloco Forms Adaptável oferece suporte a <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input#input_types">todos os tipos de entrada de HTML5 válidos</a>, <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/textarea">textarea</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select">select</a> e <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">fieldset</a> como tipo. |
 | Nome | Todos | Identifica o componente para envio de formulário. O atributo name é usado quando os dados de formulário são enviados ao servidor, associando a entrada do usuário a um campo específico. |
 | Rótulo | Todos | Fornece informações contextuais aos usuários. O rótulo é o texto exibido ao lado do componente, fornecendo aos usuários orientação sobre quais informações inserir. |
 | Valor | Texto, Senha, Email, Número, Intervalo, Data e suas variantes (datetime-local, mês, semana, hora), Caixa de seleção, Rádio, Oculto, Enviar, Botão | Especifica o valor inicial do componente. Para entradas de texto, área de texto e elementos de seleção, este é o texto ou opção padrão exibido. Para componentes de rádio e caixa de seleção, este é o valor/dado enviado quando eles são selecionados. O atributo value é opcional, mas deve ser considerado obrigatório para entradas de rádio e caixa de seleção. |
@@ -60,8 +60,8 @@ Cada componente de formulário vem com várias propriedades que permitem control
 | Múltiplas | Arquivo | Permite várias seleções. O atributo multiple é uma propriedade booleana usada com campos de entrada de arquivo. Quando definido como verdadeiro, permite que os usuários selecionem mais de um arquivo. |
 | Opções | Lista suspensa | Especifica opções para menus suspensos. A propriedade options é uma lista separada por vírgulas de opções para menus suspensos que define as opções selecionáveis exibidas para o usuário. |
 | Marcado | Caixa de seleção, Rádio | Determina se o campo é selecionado por padrão. O atributo marcado é uma propriedade booleana usada com entradas de caixa de seleção e rádio. Quando definido como true, indica que o campo é selecionado por padrão quando o formulário é carregado. |
-| Fieldset | Todos | Agrupa campos para criar seções visualmente distintas em um formulário. O elemento fieldset agrupa campos relacionados em um formulário, separando-os visualmente para melhorar a organização e a experiência do usuário. </br> Para organizar um conjunto de campos em um conjunto de campos, use o `fieldset` e especifique seu atributo name. No exemplo abaixo, demonstramos como os botões de opção são encapsulados em um único conjunto de campo para melhorar a organização. ![Exemplo de conjunto de campos](/help/edge/assets/fieldset-example.png) |
-| Repetível | Todos | Uma propriedade booleana para `fieldset` indicando que um conjunto de campos específico pode ser repetido para `Min` e `Max` vezes. A variável `Min` deve ser definido como 1 ou superior, não defina a `Min` para 0. |
+| Fieldset | Todos | Agrupa campos para criar seções visualmente distintas em um formulário. O elemento fieldset agrupa campos relacionados em um formulário, separando-os visualmente para melhorar a organização e a experiência do usuário. </br> Para organizar um conjunto de campos em um conjunto de campos, use a propriedade `fieldset` e especifique seu atributo de nome. No exemplo abaixo, demonstramos como os botões de opção são encapsulados em um único conjunto de campo para melhorar a organização. ![Exemplo de conjunto de campos](/help/edge/assets/fieldset-example.png) |
+| Repetível | Todos | Uma propriedade booleana para `fieldset` indicando que um conjunto de campos específico pode ser repetido por `Min` e `Max` vezes especificados. A propriedade `Min` deve ser definida como 1 ou superior, não defina a propriedade `Min` como 0. |
 | Expressão visível | Todos | Uma expressão visível se refere a uma fórmula de planilha, indicada pela tag &#39;=&#39;, usada para controlar a visibilidade de um campo. Nesta fórmula, somente a propriedade value de outros campos pode ser empregada, permitindo o gerenciamento direto da visibilidade do campo dentro do sistema. |
 | Expressão de valor | Todos | Uma expressão de valor refere-se a uma fórmula de planilha, indicada pela tag &#39;=&#39;, usada para controlar o valor de um campo. Nesta fórmula, somente a propriedade value de outros campos pode ser empregada, permitindo o gerenciamento direto do valor do campo no sistema. |
 

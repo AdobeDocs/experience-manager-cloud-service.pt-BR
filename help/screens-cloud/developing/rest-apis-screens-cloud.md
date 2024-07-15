@@ -1,6 +1,6 @@
 ---
 title: APIs REST
-description: O Screens as a Cloud Service fornece uma API RESTful simples que segue a especificação do Siren. Siga esta página para saber como navegar na estrutura de conteúdo e enviar comandos para dispositivos no ambiente.
+description: O Screens as a Cloud Service fornece uma API RESTful simples que segue a especificação Siren. Siga esta página para saber como navegar na estrutura de conteúdo e enviar comandos para dispositivos no ambiente.
 exl-id: 2c52583f-0dd9-4fa3-880b-7671442989ae
 feature: Developing Screens
 role: Admin, Developer
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # APIs REST {#rest-apis}
 
-O AEM Screens fornece uma API RESTful simples que segue o [Sirene](https://github.com/kevinswiber/siren) especificação. Ele permite navegar pela estrutura do conteúdo e enviar comandos para dispositivos no ambiente.
+O AEM Screens fornece uma API RESTful simples que segue a especificação [Siren](https://github.com/kevinswiber/siren). Ele permite navegar pela estrutura do conteúdo e enviar comandos para dispositivos no ambiente.
 
-A API pode ser acessada em [*http://localhost:4502/api/screens.json*](http://localhost:4502/api/screens.json).
+A API está acessível em [*http://localhost:4502/api/screens.json*](http://localhost:4502/api/screens.json).
 
 ## Navegar pela estrutura do conteúdo {#navigating-content-structure}
 
@@ -99,7 +99,7 @@ Host: http://localhost:4502
 
 O JSON retornado pelas chamadas de API pode conter uma lista de ações que estão disponíveis no recurso.
 
-A exibição, por exemplo, lista um *broadcast-command* ação que permite enviar um comando para todos os dispositivos atribuídos a essa exibição.
+A exibição, por exemplo, lista uma ação *broadcast-command* que permite enviar um comando para todos os dispositivos atribuídos a essa exibição.
 
 ```xml
 GET /api/screens/content/screens/we-retail/locations/demo/flagship/single.json HTTP/1.1

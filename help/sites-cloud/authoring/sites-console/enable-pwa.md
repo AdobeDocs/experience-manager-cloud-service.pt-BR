@@ -31,9 +31,9 @@ Por meio de uma configuração simples, um autor de conteúdo agora pode ativar 
 
 Os [Aplicativos web progressivos (PWAs)](https://developer.mozilla.org/pt-BR/docs/Web/Progressive_web_apps) habilitam experiências imersivas semelhantes a aplicativos no AEM Sites, permitindo que eles sejam armazenados localmente no computador de um usuário e acessíveis offline. Um usuário pode navegar em um site de qualquer lugar, mesmo sem conexão com a Internet. Os PWA permitem uma experiência perfeita, mesmo que a rede seja perdida ou instável.
 
-Em vez de exigir qualquer gravação do site, um autor de conteúdo pode configurar as propriedades do PWA como uma guia adicional no [propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md) de um site.
+Em vez de exigir qualquer gravação do site, um autor de conteúdo pode configurar as propriedades de PWA como uma guia adicional nas [propriedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md) de um site.
 
-* Quando salva ou publicada, essa configuração aciona um manipulador de eventos que grava a variável [arquivos manifest](https://developer.mozilla.org/pt-BR/docs/Web/Manifest) e uma [trabalhador de serviço](https://developer.mozilla.org/pt-BR/docs/Web/API/Service_Worker_API) que habilitam recursos de PWA no site.
+* Quando salva ou publicada, esta configuração aciona um manipulador de eventos que grava os [arquivos manifest](https://developer.mozilla.org/pt-BR/docs/Web/Manifest) e um [service worker](https://developer.mozilla.org/pt-BR/docs/Web/API/Service_Worker_API) que habilita recursos de PWA no site.
 * Os mapeamentos Sling também são mantidos, para garantir que o service worker seja disponibilizado a partir da raiz do aplicativo e ative o conteúdo de proxy, permitindo recursos offline no aplicativo.
 
 Com o PWA, o usuário tem uma cópia local do site, dando uma experiência semelhante a um aplicativo mesmo sem conexão com a Internet.
@@ -47,7 +47,7 @@ Com o PWA, o usuário tem uma cópia local do site, dando uma experiência semel
 Para poder usar os recursos de PWA no seu site, há dois requisitos para o ambiente do projeto:
 
 1. [Usar componentes principais](#adjust-components) para aproveitar esse recurso
-1. [Ajustar seu Dispatcher](#adjust-dispatcher) regras para expor os arquivos necessários
+1. [Ajuste as regras do Dispatcher](#adjust-dispatcher) para expor os arquivos necessários
 
 Essas são etapas técnicas que o autor deve coordenar com a equipe de desenvolvimento. Elas são necessárias apenas uma vez em cada site.
 
@@ -102,11 +102,11 @@ RewriteCond %{REQUEST_URI} (.html|.jpe?g|.png|.svg|.webmanifest)$
 
 ## Ativar o PWA no seu site {#enabling-pwa-for-your-site}
 
-Com [os pré-requisitos](#prerequisites) satisfeito, é fácil para um autor de conteúdo habilitar os recursos do PWA em um site. Veja a seguir um esboço básico de como fazer isso. As opções individuais são detalhadas na seção [Opções detalhadas.](#detailed-options)
+Com [os pré-requisitos](#prerequisites) atendidos, é fácil para um autor de conteúdo habilitar os recursos de PWA para um site. Veja a seguir um esboço básico de como fazer isso. As opções individuais são detalhadas na seção [Opções Detalhadas.](#detailed-options)
 
 1. Faça logon no AEM.
 1. No menu principal, selecione **Navegação** > **Sites**.
-1. Selecione o projeto do site e selecione [**Propriedades**](/help/sites-cloud/authoring/sites-console/page-properties.md) ou use a tecla de atalho `p`.
+1. Selecione o projeto do seu site e selecione [**Propriedades**](/help/sites-cloud/authoring/sites-console/page-properties.md) ou use a tecla de atalho `p`.
 1. Selecione a guia **Aplicativo web progressivo** e configure as propriedades aplicáveis. No mínimo, você deseja:
    1. Selecionar a opção **Ativar o PWA**.
    1. Definir o **URL de inicialização**.
@@ -126,7 +126,7 @@ Com [os pré-requisitos](#prerequisites) satisfeito, é fácil para um autor de 
 
       ![Definir caminhos offline do PWA](../assets/pwa-offline.png)
 
-1. Selecionar **Salvar e fechar**.
+1. Selecione **Salvar e fechar**.
 
 Seu site agora está configurado e você pode [instalá-lo como um aplicativo local.](#using-pwa-enabled-site)
 
@@ -134,7 +134,7 @@ Seu site agora está configurado e você pode [instalá-lo como um aplicativo lo
 
 Agora que [configurou o site para oferecer suporte a PWA,](#enabling-pwa-for-your-site) você pode experimentá-lo por conta própria.
 
-1. Acessar o site em um [navegador compatível](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
+1. Acesse o site em um [navegador com suporte](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Tutorials/js13kGames/Installable_PWAs#summary).
 1. Você vê um novo ícone na barra de endereços do navegador, indicando que o site pode ser instalado como um aplicativo local.
    * Dependendo do navegador, o ícone pode variar e o navegador também pode exibir uma notificação (como um banner ou caixa de diálogo), indicando que é possível instalá-lo como um aplicativo local.
 1. Instale o aplicativo.
@@ -149,15 +149,15 @@ A seção a seguir fornece mais detalhes sobre as opções disponíveis ao [conf
 
 Essas configurações permitem que o site se comporte como um aplicativo nativo, tornando-o instalável na tela inicial dos visitantes e disponível offline.
 
-* **Habilitar PWA** - Este é o principal botão de alternância para ativar o PWA no site.
-* **URL de inicialização** - Este é o [URL inicial preferencial](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) que o aplicativo é aberto quando o usuário carrega o aplicativo instalado localmente.
+* **Habilitar PWA** - Este é o principal botão de alternância para habilitar PWA para o site.
+* **URL de inicialização** - Esta é a [URL inicial preferencial](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url) que o aplicativo abre quando o usuário carrega o aplicativo instalado localmente.
    * Pode ser qualquer caminho na estrutura do conteúdo.
    * Não precisa ser a raiz e geralmente é uma página de boas-vindas dedicada do aplicativo.
    * Se esse URL for relativo, o URL do manifest será usado como URL base para resolvê-lo.
    * Quando deixado em branco, o recurso usa o endereço da página da Web da qual o aplicativo foi instalado.
    * É recomendável definir um valor.
 * **Modo de exibição** — um aplicativo habilitado para PWA ainda é um site do AEM fornecido por um navegador. [Essas opções de exibição](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) definem como o navegador deve ser oculto ou apresentado ao usuário no dispositivo local.
-   * **Independente** - O navegador é oculto do usuário e aparece como um aplicativo nativo. Este é o valor padrão.
+   * **Independente** - O navegador está oculto do usuário e parece ser um aplicativo nativo. Este é o valor padrão.
       * Com essa opção, a navegação do aplicativo deve ser totalmente possível por meio do conteúdo, usando links e componentes nas páginas do site, sem usar os controles de navegação do navegador.
    * **Navegador** — o navegador é exibido como normalmente seria ao visitar o site.
    * **Interface mínima** — o navegador é parcialmente escondido, como em um aplicativo nativo, mas os controles básicos de navegação ficam expostos.
@@ -185,7 +185,7 @@ Essas configurações disponibilizam partes do site de forma offline e local no 
 * **Estratégia de armazenamento em cache e frequência de atualização de conteúdo** — essa configuração define o modelo de armazenamento em cache do seu PWA.
    * **Moderadamente** — [esta configuração](https://web.dev/stale-while-revalidate/) é o caso da maioria dos sites e é o valor padrão.
       * Com essa configuração, o conteúdo visualizado pela primeira vez pelo usuário é carregado do cache e, enquanto o usuário está consumindo esse conteúdo, o restante do conteúdo no cache é revalidado.
-   * **Frequentemente** - É o caso dos sites que necessitam de atualizações rápidas, como casas de leilões.
+   * **Frequentemente** - Este é o caso para sites que necessitam de atualizações rápidas, como casas de leilões.
       * Com essa configuração, o aplicativo busca o conteúdo mais recente por meio da rede primeiro e, se não estiver disponível, retorna ao cache local.
    * **Raramente** — esse é o caso para sites quase estáticos, como páginas de referência.
       * Com essa configuração, o aplicativo procura primeiro o conteúdo no cache e, se não estiver disponível, retorna à rede para recuperá-lo.

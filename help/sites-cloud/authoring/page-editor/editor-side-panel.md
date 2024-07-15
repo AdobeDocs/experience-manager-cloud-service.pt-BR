@@ -18,25 +18,25 @@ Saiba como usar o painel lateral no editor de sites AEM para adicionar component
 
 ## Modos do painel lateral {#modes}
 
-O painel lateral é sempre acessível no editor de páginas tocando ou clicando no **Ativar/desativar painel lateral** ícone na barra de ferramentas do editor de páginas.
+O painel lateral é sempre acessível no editor de páginas tocando ou clicando no ícone **Alternar painel lateral** na barra de ferramentas do editor de páginas.
 
 ![Ativar/desativar painel lateral](assets/editor-side-panel-side-panel-toggle.png)
 
 Ao abrir o painel lateral, ele deslizará do lado esquerdo e você poderá selecionar entre três guias importantes:
 
-* [O navegador de componentes](#components-browser) para adicionar conteúdo novo à sua página
+* [O navegador de componentes](#components-browser) para adicionar novo conteúdo à sua página
 * [O navegador de ativos](#assets-browser) para adicionar novos ativos à sua página
-* [A árvore de conteúdo](#content-tree) para navegar pela estrutura da página
+* [A árvore de conteúdo](#content-tree) para navegar pela estrutura da sua página
 
 ## Navegador de componentes   {#components-browser}
 
-[Componentes](/help/implementing/developing/components/overview.md) são os blocos de construção usados para criar conteúdo com o editor de página AEM. Você coloca vários componentes em uma página e configura as opções para criar a página de conteúdo.
+[Componentes](/help/implementing/developing/components/overview.md) são os blocos de construção usados para criar conteúdo com o editor de páginas AEM. Você coloca vários componentes em uma página e configura as opções para criar a página de conteúdo.
 
 O navegador de componentes mostra todos os componentes que estão disponíveis para uso em sua página atual. Elas podem ser arrastadas para o local apropriado e, em seguida, editadas para adicionar o conteúdo.
 
-Toque ou clique no **Componentes** no painel lateral para acessar a guia **Componentes** navegador.
+Toque ou clique na guia **Componentes** no painel lateral para acessar o navegador **Componentes**.
 
-![Ícone do navegador Componentes no painel lateral](assets/editor-side-panel-components-browser.png)
+![Ícone de navegador Componentes no painel lateral](assets/editor-side-panel-components-browser.png)
 
 A aparência e o manuseio real dependem do tipo de dispositivo usado.
 
@@ -62,7 +62,7 @@ Para adicionar um componente à página, clique no componente desejado e arraste
 
 ### Uso do navegador de componentes {#using-component-browser}
 
-Componentes na **Componentes** navegador são representados por:
+Os componentes no navegador **Componentes** são representados por:
 
 * Nome do componente
 * Grupo do componente (em cinza)
@@ -75,17 +75,17 @@ Na barra de ferramentas superior, no navegador **Componentes**, é possível:
 * Filtrar componentes por nome.
 * Limitar a exibição para um grupo específico usando a seleção suspensa.
 
-Para obter uma descrição mais detalhada do componente, selecione o ícone de informações ao lado do componente na **Componentes** navegador (se disponível). Por exemplo, para o **Fragmento de conteúdo**:
+Para obter uma descrição mais detalhada do componente, você pode selecionar o ícone de informações ao lado do componente no navegador **Componentes** (se disponível). Por exemplo, para o **Fragmento de conteúdo**:
 
 ![Informações do navegador de componentes](assets/editor-side-panel-component-description.png)
 
-Para obter informações mais detalhadas sobre os componentes disponíveis para você, consulte [Console de componentes.](/help/sites-cloud/authoring/components-console.md)
+Para obter informações mais detalhadas sobre os componentes disponíveis para você, consulte o [Console de Componentes.](/help/sites-cloud/authoring/components-console.md)
 
 ## Navegador de ativos {#assets-browser}
 
-A variável **Assets** o navegador mostra tudo [ativos](/help/assets/overview.md) que estão disponíveis para uso na sua página atual.
+O navegador **Assets** mostra todos os [ativos](/help/assets/overview.md) disponíveis para uso na sua página atual.
 
-Toque ou clique no **Assets** no painel lateral para navegar pelos ativos.
+Toque ou clique na guia **Assets** no painel lateral para navegar pelos ativos.
 
 ![Botão Navegador de ativos](assets/editor-side-panel-assets-browser-tab.png)
 
@@ -115,13 +115,13 @@ Para adicionar um ativo à página, selecione o ativo necessário e arraste-o pa
 
 ![Navegador de ativos no desktop](assets/editor-side-panel-assets-browser-desktop.png)
 
-### Uso do navegador de ativos {#using-assets-browser}
+### Uso do navegador Assets {#using-assets-browser}
 
 Para adicionar um ativo à sua página, selecione-o e arraste-o até o local desejado. Pode ser:
 
 * Um componente existente do tipo apropriado.
    * Por exemplo, você pode arrastar um ativo de imagem para um componente de imagem.
-* A [espaço reservado](/help/sites-cloud/authoring/page-editor/edit-content.md#component-placeholder) no sistema de parágrafo para criar um componente do tipo apropriado.
+* Um [espaço reservado](/help/sites-cloud/authoring/page-editor/edit-content.md#component-placeholder) no sistema de parágrafo para criar um componente do tipo apropriado.
    * Por exemplo, você pode arrastar um ativo de imagem para o sistema de parágrafo para criar um componente de imagem.
 
 >[!NOTE]
@@ -142,13 +142,13 @@ Se você precisar fazer uma alteração rápida em um ativo, pode iniciar o [edi
 
 ## Árvore de conteúdo {#content-tree}
 
-A variável **Árvore de conteúdo** fornece uma visão geral de todos os componentes na página em uma hierarquia para que você possa ver rapidamente como a página é composta.
+A **Árvore de conteúdo** fornece uma visão geral de todos os componentes da página em uma hierarquia para que você possa ver rapidamente como a página é composta.
 
 >[!NOTE]
 >
 >A Árvore de conteúdo não ficará disponível se você estiver editando uma página em um dispositivo móvel (se a largura do navegador for menor do que 1024px).
 
-Toque ou clique no **Árvore de conteúdo** para acessar a árvore de conteúdo.
+Toque ou clique na guia **Árvore de conteúdo** para acessar a árvore de conteúdo.
 
 ![Botão Árvore de conteúdo](assets/editor-side-panel-content-tree-tab.png)
 
@@ -178,8 +178,8 @@ Se o componente que você clicar na árvore for editável, um ícone de chave in
 
 ### Uma Live Copy {#live-copy}
 
-Uma página que faz parte de um [livecopy](/help/sites-cloud/administering/msm/overview.md), em que os componentes são herdados de outra página, terão opções diferentes.
+Uma página que faz parte de uma [livecopy](/help/sites-cloud/administering/msm/overview.md), em que os componentes são herdados de outra página, terá opções diferentes.
 
 ## Navegador de conteúdo associado {#associated-content-browser}
 
-Se a página contiver Fragmentos do conteúdo, você também terá acesso à [navegador para Conteúdo associado.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)
+Se a página contiver Fragmentos do conteúdo, você também terá acesso ao navegador [para o conteúdo associado.](/help/sites-cloud/authoring/fragments/content-fragments.md#using-associated-content)

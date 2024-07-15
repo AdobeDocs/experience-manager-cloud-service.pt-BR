@@ -147,12 +147,12 @@ As áreas podem abranger atividades e ofertas. Depois de criar uma área em qual
 
 >[!NOTE]
 >
->A área padrão chamada Área mestre é recolhida por padrão ao selecionar o nome de uma marca **até** você cria outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
+>A área padrão chamada Área mestre é recolhida por padrão quando você seleciona o nome de uma marca **até** criar outra área. Em seguida, ao selecionar uma marca no console **Atividade** ou **Ofertas**, você verá o console **Área**.
 
 Para criar uma área:
 
 1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
-1. Selecionar **Criar área**.
+1. Selecione **Criar Área**.
 
    ![Criar área](/help/sites-cloud/authoring/assets/multisite-create-area.png)
 
@@ -171,7 +171,7 @@ Você cria uma área como uma live copy para herdar o conteúdo direcionado nas 
 Para criar uma área como uma live copy:
 
 1. Navegue até **Personalização** > **Atividades** ou **ofertas** e, em seguida, acesse sua marca.
-1. Selecionar **Criar área como Live Copy**.
+1. Selecione **Criar área como Live Copy**.
 
    ![Criar área como Live Copy](/help/sites-cloud/authoring/assets/multisite-area-as-livecopy.png)
 
@@ -212,13 +212,13 @@ Ao vincular, somente as atividades, experiências e ofertas da área selecionada
 Para vincular um site a uma área:
 
 1. Navegue até o site (ou página) que deseja vincular a uma área.
-1. Selecione o site ou a página e selecione **Propriedades da exibição**.
-1. Selecione o **Personalização** guia.
+1. Selecione o site ou a página e selecione **Exibir Propriedades**.
+1. Selecione a guia **Personalization**.
 1. No menu **Marca**, selecione a marca à qual deseja vincular sua área. Após selecionar a marca, as áreas disponíveis estarão no menu **Referência da área**.
 
    ![Vincular sites](/help/sites-cloud/authoring/assets/multisite-english.png)
 
-1. Selecione a área na **Referência da área** e selecione **Salvar**.
+1. Selecione a área no menu suspenso **Referência da área** e selecione **Salvar**.
 
    ![Referência da área](/help/sites-cloud/authoring/assets/multisite-area-reference.png)
 
@@ -242,7 +242,7 @@ Uma atividade que está herdando de outro site é marcada em verde ao lado do no
 
 Para suspender ou desconectar a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página em que deseja desanexar ou suspender a herança e selecione **Direcionamento** no menu suspenso do modo.
+1. Navegue até a página onde deseja desanexar ou suspender a herança e selecione **Direcionamento** no menu suspenso de modo.
 1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Selecione **Iniciar o direcionamento**.
 1. Para suspender uma atividade, siga um destes procedimentos:
 
@@ -251,7 +251,7 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
    ![Suspender Live Copy](/help/sites-cloud/authoring/assets/multisite-suspend-livecopy.png)
 
-1. Selecionar **Suspender** para suspender a atividade. Atividades suspensas são marcadas em vermelho.
+1. Selecione **Suspender** para suspender a atividade. Atividades suspensas são marcadas em vermelho.
 
    ![Live Copy suspensa](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
@@ -259,10 +259,10 @@ Para suspender ou desconectar a herança do conteúdo direcionado em uma ativida
 
 Para interromper a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página onde deseja desanexar a live copy da página-mestre e selecione **Direcionamento** no menu suspenso do modo.
+1. Navegue até a página onde deseja desanexar a live copy do conteúdo principal e selecione **Direcionamento** no menu suspenso de modo.
 1. Se a página estiver vinculada a uma área que seja uma live copy, o status da herança será exibido. Selecione **Iniciar o direcionamento**.
 1. Selecione **Desanexar Live Copy** no menu suspenso na barra de ferramentas. O AEM confirma que você deseja desanexar a live copy.
-1. Selecionar **Desanexar** para desanexar a live copy da atividade. Após a desconexão, o menu suspenso relativo à herança não será mais exibido. A atividade agora passará a ser uma atividade local.
+1. Selecione **Desanexar** para desanexar a live copy da atividade. Após a desconexão, o menu suspenso relativo à herança não será mais exibido. A atividade agora passará a ser uma atividade local.
 
    ![Atividade local](/help/sites-cloud/authoring/assets/multisite-winter.png)
 
@@ -272,13 +272,13 @@ Caso tenha suspendido a herança do conteúdo direcionado em uma atividade, é p
 
 Para restaurar a herança do conteúdo direcionado em uma atividade:
 
-1. Navegue até a página em que deseja restaurar a herança e selecione **Direcionamento** no menu suspenso do modo.
+1. Navegue até a página onde deseja restaurar a herança e selecione **Direcionamento** no menu suspenso de modo.
 1. Selecione **Iniciar o direcionamento**.
 1. Selecione **Retomar Live Copy** no menu suspenso da barra de ferramentas.
 
    ![Retomar a Live Copy](/help/sites-cloud/authoring/assets/multisite-resume.png)
 
-1. Selecionar **Retomar** para confirmar se deseja retomar a herança da live copy. Quaisquer modificações feitas na atividade atual serão perdidas se você retomar a herança.
+1. Selecione **Retomar** para confirmar que deseja retomar a herança da live copy. Quaisquer modificações feitas na atividade atual serão perdidas se você retomar a herança.
 
 ## Excluindo áreas {#deleting-areas}
 
@@ -288,4 +288,4 @@ Para excluir uma área:
 
 1. Navegue até **Personalização** > **Atividades** ou **Ofertas** e, em seguida, acesse sua marca.
 1. Selecione o ícone ao lado da área que você deseja excluir.
-1. Selecionar **Excluir** e confirme se deseja excluir a área.
+1. Selecione **Excluir** e confirme se deseja excluir a área.

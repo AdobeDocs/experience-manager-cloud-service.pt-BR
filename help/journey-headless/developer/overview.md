@@ -92,7 +92,7 @@ As jornadas de documentação mostram como o AEM soluciona um problema empresari
 
 Confira essas jornadas adicionais para obter mais informações sobre como os eficientes recursos do AEM funcionam juntos.
 
-* A variável [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 * [Tutoriais do AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Se quiser aprender na prática e já tiver conhecimento sobre o AEM, acompanhe nossos tutoriais práticos organizados por API e estrutura, que exploram a criação e o uso de aplicativos do AEM Headless.
 * [Jornada de tradução do AEM headless](/help/journey-headless/translation/overview.md) - essa jornada de documentação oferece uma ampla compreensão sobre a tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 * [Jornada de criação headless](/help/journey-headless/author/overview.md) - comece aqui para obter uma jornada guiada pelos recursos headless avançados e flexíveis do AEM, suas funcionalidades e aprenda a modelar o conteúdo em seu primeiro projeto headless.

@@ -13,50 +13,50 @@ ht-degree: 0%
 
 # Personalização de exibições das propriedades da página{#customizing-views-of-page-properties}
 
-Cada página tem um conjunto de [propriedades](/help/sites-cloud/authoring/sites-console/page-properties.md) que podem ser visualizadas e editadas pelos usuários. Algumas são necessárias ao criar a página (criar exibição), outras podem ser visualizadas e editadas (editar exibição) em um estágio posterior. Essas propriedades da página são definidas e disponibilizadas pela caixa de diálogo (`cq:dialog`) do componente de página apropriado.
+Cada página tem um conjunto de [propriedades](/help/sites-cloud/authoring/sites-console/page-properties.md) que podem ser visualizadas e editadas pelos usuários. Algumas são necessárias ao criar a página (criar exibição), outras podem ser visualizadas e editadas (editar exibição) em um estágio posterior. Essas propriedades de página são definidas e disponibilizadas pela caixa de diálogo (`cq:dialog`) do componente de página apropriado.
 
 O estado padrão de cada propriedade de página é:
 
-* Oculto na visualização de criação (por exemplo, **Criar página** assistente)
+* Oculto na exibição de criação (por exemplo, **Criar página** assistente)
 
-* Disponível na visualização de edição (por exemplo, **Propriedades da exibição**)
+* Disponível na exibição de edição (por exemplo, **Propriedades de exibição**)
 
 Os campos devem ser configurados especificamente se qualquer alteração for necessária. Isso é feito usando as propriedades apropriadas do nó:
 
-* A propriedade da página que estará disponível na visualização de criação (por exemplo, **Criar página** assistente):
+* Propriedade da página a ser disponibilizada no modo de exibição de criação (por exemplo, assistente **Criar Página**):
 
    * Nome: `cq:showOnCreate`
    * Tipo: `Boolean`
 
-* A propriedade da página a estar disponível na visualização de edição, como a **Exibir**/**Editar**  **Propriedades** opção:
+* Propriedade da página a ser disponibilizada no modo de exibição de edição, como a opção **Exibir**/**Editar** **Propriedades**:
 
    * Nome: `cq:hideOnEdit`
    * Tipo: `Boolean`
 
 >[!TIP]
 >
->Consulte a [Tutorial de extensão das propriedades da página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obter um guia sobre como personalizar as propriedades da página.
+>Consulte o [tutorial Extensão das propriedades de página](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) para obter um guia sobre como personalizar as propriedades de página.
 
 ## Configuração das propriedades da página {#configuring-your-page-properties}
 
 Você também pode configurar os campos disponíveis configurando a caixa de diálogo do componente de página e aplicando as propriedades de nó apropriadas.
 
-Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) mostra os campos agrupados em **Mais títulos e descrições**. Para ocultá-los, você configura:
+Por exemplo, por padrão, o assistente [**Criar página**](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page) mostra os campos agrupados em **Mais títulos e descrições**. Para ocultá-los, você configura:
 
 1. Crie seu componente de página em `/apps`.
-1. Criar uma substituição (usando *diff da caixa de diálogo* fornecido pelo [Fusão de recursos do Sling](/help/implementing/developing/introduction/sling-resource-merger.md)) para o `basic` do seu componente de página; por exemplo:
+1. Crie uma substituição (usando a *diff de caixa de diálogo* fornecida pelo [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md)) para a seção `basic` do seu componente de página; por exemplo:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
    ```
 
-1. Defina o `path` propriedade em `basic` para apontar para a substituição da guia básica (consulte a próxima etapa também). Por exemplo:
+1. Defina a propriedade `path` em `basic` para apontar para a substituição da guia básica (veja a próxima etapa também). Por exemplo:
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Criar uma substituição de `basic` - `moretitles` no caminho correspondente; por exemplo:
+1. Crie uma substituição da seção `basic` - `moretitles` no caminho correspondente; por exemplo:
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -68,14 +68,14 @@ Por exemplo, por padrão, a variável [**Criar página** assistente](/help/sites
    * **Tipo**: `Boolean`
    * **Valor**: `false`
 
-   A variável **Mais títulos e descrições** A seção não será mais exibida na **Criar página** assistente.
+   A seção **Mais Títulos e Descrição** não será mais exibida no assistente **Criar Página**.
 
 >[!NOTE]
 >
->Ao configurar propriedades de página para uso com live copies, consulte [Extensão do gerenciador de vários sites](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) para obter mais detalhes.
+>Ao configurar propriedades de página para uso com live copies, consulte [Estendendo o Gerenciador de Vários Sites](/help/implementing/developing/extending/msm.md#configuring-msm-locks-on-page-properties) para obter mais detalhes.
 
 ## Exemplo de configuração das propriedades da página {#sample-configuration-of-page-properties}
 
-Esta amostra demonstra a técnica de diálogo diff do [Fusão de recursos do Sling](/help/implementing/developing/introduction/sling-resource-merger.md) incluindo a utilização de [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Ilustra igualmente a utilização de `cq:showOnCreate` e `cq:hideOnEdit`.
+Este exemplo demonstra a técnica de diálogo diff do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md), incluindo o uso de [`sling:orderBefore`](/help/implementing/developing/introduction/sling-resource-merger.md#properties). Também ilustra o uso de `cq:showOnCreate` e `cq:hideOnEdit`.
 
 Você pode encontrar o código desta página em [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog).

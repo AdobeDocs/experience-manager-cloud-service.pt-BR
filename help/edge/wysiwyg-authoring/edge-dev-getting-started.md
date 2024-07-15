@@ -20,18 +20,18 @@ Este guia colocará você em funcionamento com um novo site do Adobe Experience 
 
 Antes de começar este guia, você já deve estar familiarizado com as noções básicas do e ter acesso ao Edge Delivery Services, incluindo:
 
-* Você concluiu o [Tutorial do Edge Delivery Service.](/help/edge/developer/tutorial.md)
-* Você tem acesso a um [sandbox AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* Você tem [ativou o Editor universal no mesmo ambiente de sandbox.](/help/implementing/universal-editor/getting-started.md)
+* Você concluiu o [tutorial do Edge Delivery Service.](/help/edge/developer/tutorial.md)
+* Você tem acesso a uma [sandbox da AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+* Você [habilitou o Editor Universal no mesmo ambiente de sandbox.](/help/implementing/universal-editor/getting-started.md)
 
 ## Escolha o editor direito {#editor-choice}
 
 O AEM oferece dois editores de conteúdo diferentes e a escolha de qual usar depende da sua situação.
 
-* **Editor universal** - Essa deve ser a opção padrão para novos sites.
-* **Editor de página AEM** - Essa opção deve ser escolhida para uma migração existente do AEM Sites para o Edge Delivery Services.
+* **Editor Universal** - Esta deve ser a opção padrão para novos sites.
+* **Editor de páginas do AEM** - Isso deve ser escolhido para uma migração existente do AEM Sites para o Edge Delivery Services.
 
-Este guia tem como foco projetos AEM em Edge Delivery Services usando o Editor universal. Consulte o documento [Utilização de Edge Delivery Services com AEM](/help/edge/using.md) para obter mais detalhes sobre a escolha do editor correto e a migração dos sites de AEM existentes para o Edge Delivery Services.
+Este guia tem como foco projetos AEM em Edge Delivery Services usando o Editor universal. Consulte o documento [Uso do Edge Delivery Services com AEM](/help/edge/using.md) para obter mais detalhes sobre a escolha do editor correto e a migração de sites de AEM existentes para o Edge Delivery Services.
 
 ## Conceitos principais ao desenvolver para Edge Delivery Services {#core-concepts}
 
@@ -45,11 +45,11 @@ O AEM fornece blocos padrão como parte do produto dentro da placa do projeto. E
 
 >[!TIP]
 >
->Consulte a [Criar seção](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços de Entrega de borda.
+>Consulte a [seção Build](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços da Edge Delivery.
 
 ### Edge Delivery Services e GitHub {#github-edge}
 
-O Edge Delivery aproveita o GitHub para que você possa gerenciar e implantar o código diretamente do seu repositório GitHub.
+O Edge Delivery usa o GitHub para que você possa gerenciar e implantar o código diretamente do seu repositório GitHub.
 
 Seus autores podem criar conteúdo usando a Criação baseada em documento ou conteúdo no AEM com o Universal Editor. Os desenvolvedores podem personalizar a funcionalidade do site usando CSS e JavaScript no GitHub, independentemente de como os autores criam seu conteúdo.
 
@@ -57,11 +57,11 @@ Os sites são criados automaticamente para cada uma de suas ramificações, da p
 
 >[!TIP]
 >
->Consulte a [Criar seção](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços de Entrega de borda.
+>Consulte a [seção Build](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços da Edge Delivery.
 
 ## Introdução à criação e aos Edge Delivery Services WYSIWYG {#getting-started}
 
-Depois de ter cumprido [os pré-requisitos](#prerequisites) e tenham feito [a opção de usar o Editor universal,](#editor-choice) você pode começar com seu próprio projeto.
+Depois de atender aos [pré-requisitos](#prerequisites) e ter optado por [usar o Editor Universal](#editor-choice), você poderá começar a usar o seu próprio projeto.
 
 ### Criar seu projeto do GitHub {#create-github-project}
 
@@ -71,44 +71,44 @@ Primeiro, será necessário criar um novo projeto no GitHub, com base no modelo 
 
    * Você precisará fazer logon no GitHub para ver essa opção.
 
-   ![Copiar projeto do repositório](assets/edge-dev-getting-started/use-template-project.png)
+   ![Copiar projeto de repositório](assets/edge-dev-getting-started/use-template-project.png)
 
-1. Por padrão, o repositório será atribuído a você. Altere isso conforme necessário, forneça um nome de repositório e uma descrição e clique em **Criar repositório**.
+1. Por padrão, o repositório será atribuído a você. Altere isso conforme necessário, forneça um nome e descrição do repositório e clique em **Criar repositório**.
 
-   ![Criação do repositório](assets/edge-dev-getting-started/create-repo.png)
+   ![Criando o repositório](assets/edge-dev-getting-started/create-repo.png)
 
 1. Em uma nova guia no mesmo navegador, navegue até [`https://github.com/apps/aem-code-sync`](https://github.com/apps/aem-code-sync) e clique em **Configurar**.
 
    ![Sincronização de código](assets/edge-dev-getting-started/configure-code-sync.png)
 
-1. Clique em **Configurar** para a organização em que você criou o novo repositório na etapa anterior.
+1. Clique em **Configurar** para a organização em que você criou seu novo repositório na etapa anterior.
 
-   ![Escolha da organização para sincronização de código](assets/edge-dev-getting-started/code-sync-org.png)
+   ![Escolhendo a organização para sincronização de código](assets/edge-dev-getting-started/code-sync-org.png)
 
-1. Na página GitHub de sincronização de código do AEM, em **Acesso ao repositório**, selecione **Selecionar apenas repositórios**, selecione o repositório criado na etapa anterior e clique em **Salvar**.
+1. Na página GitHub da Sincronização de Código AEM em **Acesso ao repositório**, selecione **Somente selecionar repositórios**, selecione o repositório criado na etapa anterior e clique em **Salvar**.
 
-   ![Conceder acesso à Sincronização de código AEM](assets/edge-dev-getting-started/grant-code-sync-acces.png)
+   ![Concedendo acesso à Sincronização de Código AEM](assets/edge-dev-getting-started/grant-code-sync-acces.png)
 
 1. Depois que a Sincronização de código AEM estiver instalada, você receberá uma tela de confirmação. Retorne à guia do navegador do novo repositório.
 
-   ![Confirmação de instalação da Sincronização de código](assets/edge-dev-getting-started/confirmation.png)
+   ![Confirmação de instalação da Sincronização de Código](assets/edge-dev-getting-started/confirmation.png)
 
-1. Clique em `fstab.yaml` para abri-lo e, em seguida, o **Editar este arquivo** ícone para editá-lo.
+1. Clique no arquivo `fstab.yaml` para abri-lo e, em seguida, no ícone **Editar este arquivo** para editá-lo.
 
    ![fstab.yaml](assets/edge-dev-getting-started/fstab.png)
 
-1. Edite o `fstab.yaml` arquivo para atualizar o ponto de montagem do projeto. Substitua o URL padrão dos documentos do Google pelo URL da sua instância de criação do AEM as a Cloud Service e clique em **Confirmar alterações...**.
+1. Edite o arquivo `fstab.yaml` para atualizar o ponto de montagem do projeto. Substitua a URL padrão dos documentos do Google pela URL da sua instância de criação do AEM as a Cloud Service e clique em **Confirmar alterações...**.
 
    * `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
    * Alterar o ponto de montagem informa ao Edge Delivery Services onde localizar o conteúdo do site.
 
    ![Atualizando fstab](assets/edge-dev-getting-started/fstab-update.png)
 
-1. Adicione uma mensagem de confirmação conforme desejado e clique em **Confirmar alterações**, comprometendo-os diretamente com a `main` filial.
+1. Adicione uma mensagem de confirmação conforme desejado e clique em **Confirmar alterações**, confirmando-as diretamente na ramificação `main`.
 
    ![Confirmando alterações](assets/edge-dev-getting-started/commit-fstab-changes.png)
 
-1. Retorne à raiz do repositório e clique em `paths.json` e, em seguida, o **Editar este arquivo** ícone.
+1. Retorne à raiz do seu repositório, clique em `paths.json` e depois no ícone **Editar este arquivo**.
 
    ![paths.json](assets/edge-dev-getting-started/paths.png)
 
@@ -117,9 +117,9 @@ Primeiro, será necessário criar um novo projeto no GitHub, com base no modelo 
    * Forneça o seu próprio `<site-name>`. Você precisará dele em uma etapa posterior.
    * Os mapeamentos informam ao Edge Delivery Services como mapear o conteúdo no repositório AEM para o URL do site.
 
-   ![Atualização de paths.json](assets/edge-dev-getting-started/paths-update.png)
+   ![Atualizando paths.json](assets/edge-dev-getting-started/paths-update.png)
 
-1. Adicione uma mensagem de confirmação conforme desejado e clique em **Confirmar alterações**, comprometendo-os diretamente com a `main` filial.
+1. Adicione uma mensagem de confirmação conforme desejado e clique em **Confirmar alterações**, confirmando-as diretamente na ramificação `main`.
 
    ![Confirmando alterações](assets/edge-dev-getting-started/commit-paths-changes.png)
 
@@ -133,53 +133,53 @@ Agora que você tem um projeto GitHub, deve criar um novo site AEM que o projeto
 
 1. Baixe a criação WYSIWYG mais recente com o modelo de site Edge Delivery Services do GitHub em [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
-1. Faça logon na instância de criação do AEM as a Cloud Service e navegue até o console Sites e toque ou clique **Criar** -> **Site do modelo**.
+1. Entre na sua instância de criação do AEM as a Cloud Service e navegue até o console Sites e toque ou clique em **Criar** -> **Site a partir de modelo**.
 
-   ![Criar um novo site por meio do console](assets/edge-dev-getting-started/create-site-console.png)
+   ![Criar um novo site a partir do console](assets/edge-dev-getting-started/create-site-console.png)
 
-1. No **Selecionar um modelo de site** do assistente criar site, clique na guia **Importar** botão para importar um novo template.
+1. Na guia **Selecionar um modelo de site** do assistente de criação de site, clique no botão **Importar** para importar um novo modelo.
 
-   ![Importação de modelos](assets/edge-dev-getting-started/site-templates.png)
+   ![Importando modelos](assets/edge-dev-getting-started/site-templates.png)
 
 1. Faça upload da criação WYSIWYG com o modelo de site Edge Delivery Services que você baixou do GitHub.
 
    * O template deve ser carregado apenas uma vez. Depois de carregado, ele pode ser reutilizado para criar sites adicionais.
 
-1. Depois que o modelo for importado, ele aparecerá no assistente. Toque ou clique para selecioná-lo e, em seguida, toque ou clique **Próxima**.
+1. Depois que o modelo for importado, ele aparecerá no assistente. Toque ou clique para selecioná-lo e, em seguida, toque ou clique em **Avançar**.
 
    ![Selecionar modelo](assets/edge-dev-getting-started/select-template.png)
 
-1. Forneça os seguintes campos e toque ou clique **Criar**.
+1. Forneça os campos a seguir e toque ou clique em **Criar**.
 
    * **Título do site** - Adicione um título descritivo para o site.
-   * **Título do site** - Use o `<site-name>` definido na variável [etapa anterior.](#create-github-project)
-   * **URL do GitHub** - Use o URL do projeto GitHub criado na etapa anterior.
+   * **Título do site** - Use o `<site-name>` que você definiu na [etapa anterior.](#create-github-project)
+   * **URL do GitHub** - Use a URL do projeto GitHub criado na etapa anterior.
 
    ![Detalhes do site](assets/edge-dev-getting-started/create-site-details.png)
 
-1. O AEM confirma a criação do site com uma caixa de diálogo. Toque ou clique **OK** de indeferimento.
+1. O AEM confirma a criação do site com uma caixa de diálogo. Toque ou clique em **OK** para ignorar.
 
    ![Confirmação de criação do site](assets/edge-dev-getting-started/site-creation-confirmation.png)
 
-1. No console Sites, navegue até a `index.html` do site recém-criado e toque ou clique **Editar** na barra de ferramentas.
+1. No console de sites, navegue até o `index.html` do site recém-criado e toque ou clique em **Editar** na barra de ferramentas.
 
-   ![Edição do novo site](assets/edge-dev-getting-started/new-site.png)
+   ![Editando o novo site](assets/edge-dev-getting-started/new-site.png)
 
-1. O Editor universal é aberto em uma nova guia. Talvez seja necessário tocar ou clicar **Entrar com o Adobe** para autenticar e editar sua página.
+1. O Editor universal é aberto em uma nova guia. Talvez seja necessário tocar ou clicar em **Entrar com o Adobe** para autenticar e editar sua página.
 
-   ![Editor universal](assets/edge-dev-getting-started/universal-editor.png)
+   ![Editor Universal](assets/edge-dev-getting-started/universal-editor.png)
 
-Agora você pode editar seu site usando o Editor universal. Consulte a [Documentação do Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) para obter mais informações.
+Agora você pode editar seu site usando o Editor universal. Consulte a [documentação do Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) para obter mais informações.
 
 ### Publicar seu novo site {#publishing}
 
 Quando terminar de editar o novo site usando o Editor universal, você poderá publicar o conteúdo.
 
-1. No console Sites, selecione todas as páginas criadas para o novo site e toque ou clique **Publicação rápida** na barra de ferramentas.
+1. No console de sites, selecione todas as páginas criadas para o novo site e toque ou clique em **Publicação rápida** na barra de ferramentas.
 
-   ![Seleção de páginas para publicação](assets/edge-dev-getting-started/publishing.png)
+   ![Selecionando páginas para publicação](assets/edge-dev-getting-started/publishing.png)
 
-1. Toque ou clique **Publish** no diálogo de confirmação para iniciar o processo.
+1. Toque ou clique em **Publish** na caixa de diálogo de confirmação para iniciar o processo.
 
    ![Caixa de diálogo Publicar](assets/edge-dev-getting-started/publish-confirmation.png)
 
@@ -195,8 +195,8 @@ Quando terminar de editar o novo site usando o Editor universal, você poderá p
 
 Agora que você tem um projeto WYSIWYG em funcionamento com o Edge Delivery Services, pode começar a criar e estilizar seus próprios blocos.
 
-Consulte o guia [Criação de blocos instrumentados para uso com o editor universal](/help/edge/wysiwyg-authoring/create-block.md) para obter mais informações.
+Consulte o guia [Criação de Blocos Instrumentados para uso com o Editor Universal](/help/edge/wysiwyg-authoring/create-block.md) para obter mais informações.
 
 >[!TIP]
 >
->Para obter uma apresentação completa da criação de um novo projeto Edge Delivery Services habilitado para criação WYSIWYG com AEM as a Cloud Service como fonte de conteúdo, visualize [este webinário de GEMs AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para obter uma apresentação completa da criação de um novo projeto Edge Delivery Services habilitado para criação WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)

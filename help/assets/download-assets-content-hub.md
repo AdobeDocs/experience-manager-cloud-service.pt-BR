@@ -20,7 +20,7 @@ O Content Hub permite baixar e compartilhar os ativos. Esses ativos podem inclui
 
 ## Pré-requisitos {#prerequisites}
 
-[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) O pode executar as ações mencionadas neste artigo.
+[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) podem executar as ações mencionadas neste artigo.
 
 ## Baixar ativo {#download-single-asset}
 

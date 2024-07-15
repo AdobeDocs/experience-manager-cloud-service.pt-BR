@@ -17,7 +17,7 @@ Este documento foi criado para apresentar uma visão geral do manuseio básico a
 >[!NOTE]
 >
 >* Algumas funcionalidades podem ou não estar disponíveis dependendo do console. Informações específicas sobre os consoles individuais e suas funcionalidades relacionadas são abordadas com mais detalhes em outras páginas.
->* Atalhos de teclado estão disponíveis em todo o AEM. Em especial, quando [uso de consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e [editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
+>* Atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) e [editar páginas](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 {{edge-delivery-authoring}}
 
@@ -31,7 +31,7 @@ Logo após o logon, você acessa o [painel de Navegação](#navigation-panel). S
 
 ![Painel Navegação](/help/sites-cloud/authoring/assets/navigation.png)
 
-Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites.** Selecionar em **Sites** para começar.
+Para obter uma boa compreensão do uso básico do AEM, este documento se baseia no console de **Sites.** Selecione em **Sites** para começar.
 
 ## Navegação do produto   {#product-navigation}
 
@@ -39,7 +39,7 @@ Sempre que um usuário acessa um console pela primeira vez, um tutorial de naveg
 
 ![Tutorial de navegação](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Selecionar **Próxima** para avançar para a próxima página da visão geral. Selecionar **Fechar** ou selecione fora da caixa de diálogo de visão geral para fechar.
+Selecione **Avançar** para avançar para a próxima página da visão geral. Selecione **Fechar** ou fora da caixa de diálogo de visão geral para fechar.
 
 A visão geral será reiniciada na próxima vez que você acessar um console a menos que visualize todos os slides ou marque a opção **Não mostrar esta mensagem novamente**.
 
@@ -171,7 +171,7 @@ Há vários recursos de ajuda disponíveis:
 
 * **Barra de ferramentas do console**
 
-  Dependendo da sua localização, a variável **Ajuda** ícone abre os recursos apropriados:
+  Dependendo da sua localização, o ícone **Ajuda** abre os recursos apropriados:
 
   ![Ícone da ajuda](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -475,6 +475,6 @@ Consulte o documento [Usar o painel do site para gerenciar o tema do site](/help
 
 ### Filtro {#filter}
 
-Isso abre um painel semelhante a [pesquisa](/help/sites-cloud/authoring/getting-started/search.md) com os filtros de localização apropriados já definidos, permitindo filtrar ainda mais o conteúdo que deseja exibir.
+Isso abre um painel semelhante a [pesquisar](/help/sites-cloud/authoring/getting-started/search.md) com os filtros de localização apropriados já definidos, que permitem filtrar ainda mais o conteúdo que você deseja exibir.
 
 ![Exemplo de filtro](/help/sites-cloud/authoring/assets/filter.png)

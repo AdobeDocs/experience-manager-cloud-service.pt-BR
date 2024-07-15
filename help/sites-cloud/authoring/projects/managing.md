@@ -16,7 +16,7 @@ ht-degree: 82%
 
 O console de projetos permite organizar o projeto agrupando recursos em uma única entidade.
 
-No **Projetos** console, você acessa e age em seus projetos:
+No console **Projetos**, você acessa e age em seus projetos:
 
 ![O console de Projetos](/help/sites-cloud/authoring/assets/projects-console.png)
 
@@ -36,12 +36,12 @@ O AEM fornece esses modelos desde o início para você escolher ao criar um proj
 
 O procedimento de criação de um projeto é o mesmo em todos os projetos. A diferença entre os tipos de projetos inclui [funções de usuário](/help/sites-cloud/authoring/projects/overview.md) e [fluxos de trabalho](/help/sites-cloud/authoring/projects/workflows.md) disponíveis.  Para criar um projeto:
 
-1. Entrada **Projetos**, selecione **Criar** para abrir o **Criar projeto** assistente:
+1. Em **Projetos**, selecione **Criar** para abrir o assistente **Criar Projeto**:
 1. Selecione um modelo e clique em **Próximo**.
 
    ![Criação de um projeto](/help/sites-cloud/authoring/assets/projects-create.png)
 
-1. Defina o **Título** e **Descrição** e adicionar um **Miniatura** imagem, se necessário. Também é possível adicionar ou excluir usuários, bem como sua associação com um grupo. Além disso, você pode clicar em **Avançado** para adicionar um nome usado no URL.
+1. Defina o **Título** e a **Descrição** e adicione uma imagem de **Miniatura**, se necessário. Também é possível adicionar ou excluir usuários, bem como sua associação com um grupo. Além disso, você pode clicar em **Avançado** para adicionar um nome usado no URL.
 
    ![Adicionar detalhes do projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -54,7 +54,7 @@ Visto que os projetos permitem agrupar recursos em uma única entidade, você de
 Para associar recursos ao projeto:
 
 1. Abra o projeto no console **Projetos**.
-1. Selecionar **Adicionar mosaico** e selecione o bloco que deseja vincular ao projeto. É possível selecionar vários tipos de mosaicos.
+1. Selecione **Adicionar mosaico** e selecione o mosaico que deseja vincular ao seu projeto. É possível selecionar vários tipos de mosaicos.
 
    ![Adicionar um bloco a um projeto](/help/sites-cloud/authoring/assets/projects-add-tile.png)
 
@@ -76,7 +76,7 @@ O mesmo método é usado para excluir um projeto do console ou um recurso vincul
 1. Entre no modo de seleção clicando em **Selecionar** e selecionando o vínculo do projeto ou do recurso.
 1. Selecione **Excluir**.
 
-1. Você precisa confirmar a exclusão na caixa de diálogo. Se confirmado, o link do projeto ou do recurso será excluído. Selecionar **Desmarcar** para sair do modo de seleção.
+1. Você precisa confirmar a exclusão na caixa de diálogo. Se confirmado, o link do projeto ou do recurso será excluído. Selecione **Desmarcar** para sair do modo de seleção.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Talvez você queira adicionar mais de um item em alguns blocos. Por exemplo, voc
 
 Para adicionar itens a um bloco:
 
-1. Entrada **Projetos**, navegue até o projeto e selecione a divisa para baixo no bloco ao qual deseja adicionar um item.
+1. Em **Projetos**, navegue até o projeto e selecione a divisa para baixo no bloco ao qual deseja adicionar um item.
 
    ![Adicionar item a um bloco](/help/sites-cloud/authoring/assets/project-workflows.png)
 
@@ -114,7 +114,7 @@ Você pode exibir as estatísticas do projeto no console de **Projetos**.
 
 ### Visualizar uma linha do tempo do projeto {#viewing-a-project-timeline}
 
-A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para exibir a linha do tempo do projeto, selecione **Linha do tempo**, entre no modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Selecionar **Linha do tempo** para retornar ao **Projetos** console.
+A linha do tempo do projeto fornece informações sobre quando os ativos do projeto foram usados pela última vez. Para exibir a linha do tempo do projeto, selecione **Linha do Tempo**, entre no modo de seleção e selecione o projeto. Os ativos são exibidos no painel esquerdo. Selecione **Linha do Tempo** para retornar ao console **Projetos**.
 
 ![Linha do tempo do projeto](/help/sites-cloud/authoring/assets/projects-timeline.png)
 
@@ -141,8 +141,8 @@ Para inativar (ou ativar) um projeto:
    Talvez seja necessário adicionar esse bloco se ele ainda não estiver no projeto. Consulte [Adicionar blocos](#adding-items-to-a-tile).
 
 1. Selecione **Editar**.
-1. Alterar o seletor de **Ativo** para **Inativo** (ou inversamente).
+1. Alterar o seletor de **Ativo** para **Inativo** (ou vice-versa).
 
    ![Ativar um projeto](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
-1. Selecionar **Concluído** para salvar as alterações.
+1. Selecione **Concluído** para salvar suas alterações.

@@ -14,18 +14,18 @@ ht-degree: 0%
 
 # Configuração da página de redirecionamento {#configuring-redirect-page}
 
-Aquando da apresentação de uma [Formulário adaptável baseado em Componentes principais](creating-adaptive-form-core-components.md), você pode redirecionar o usuário para outra página da Web ou mostrar uma mensagem. Para configurar a página de redirecionamento ou a mensagem de agradecimento:
+No envio de um [Formulário adaptável baseado em Componentes principais](creating-adaptive-form-core-components.md), você pode redirecionar o usuário para outra página da Web ou mostrar uma mensagem. Para configurar a página de redirecionamento ou a mensagem de agradecimento:
 
 1. Abra o Formulário adaptável para edição.
-1. Abra a Árvore de conteúdo e selecione a **[!UICONTROL Contêiner do guia]**.
-1. Clique nas propriedades do Contêiner de formulário adaptável ![Propriedades do contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg) ícone. A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
-1. Abra o **[!UICONTROL Envio]** guia. As opções para configurar uma página de redirecionamento ou uma mensagem são exibidas:
+1. Abra a Árvore de conteúdo e selecione o **[!UICONTROL Contêiner do guia]**.
+1. Clique no ícone de propriedades do Contêiner de formulário adaptável ![propriedades do Contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável para configurar os Modelos de dados é aberta.
+1. Abra a guia **[!UICONTROL Envio]**. As opções para configurar uma página de redirecionamento ou uma mensagem são exibidas:
 
-   ![Caixa de diálogo de envio do Contêiner do guia para configurar uma página de redirecionamento ou uma mensagem](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
+   ![Caixa de diálogo de envio do Contêiner do Guia para configurar uma página de redirecionamento ou uma mensagem](/help/forms/assets/adaptive-forms-core-components-redirect-page-or-thank-you-message.png)
 
-   * Para configurar um URL de redirecionamento, para na opção Enviar, selecione o **[!UICONTROL Opção Redirecionar para URL]** e fornecem um endereço absoluto, um URL de redirecionamento ou um caminho relativo de uma página do AEM Sites.
+   * Para configurar uma URL de Redirecionamento, para a opção Enviar, selecione a **[!UICONTROL opção Redirecionar para URL]** e forneça um endereço absoluto, uma URL de Redirecionamento ou um caminho relativo de uma página do AEM Sites.
 
-   * Para configurar uma mensagem personalizada ou de agradecimento, selecione o **[!UICONTROL Mostrar mensagem]** e forneça uma mensagem na caixa Message content. É uma caixa de rich text, você pode usar a opção de tela cheia para exibir todos os itens de rich text disponíveis.
+   * Para configurar uma mensagem personalizada ou de agradecimento, selecione a opção **[!UICONTROL Mostrar Mensagem]** e forneça uma mensagem na caixa Conteúdo da mensagem. É uma caixa de rich text, você pode usar a opção de tela cheia para exibir todos os itens de rich text disponíveis.
 
 Os autores de formulários podem configurar uma página para cada formulário, para a qual os usuários são redirecionados após enviarem um formulário.
 

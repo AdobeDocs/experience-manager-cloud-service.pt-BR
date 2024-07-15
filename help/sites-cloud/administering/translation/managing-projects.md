@@ -82,7 +82,7 @@ Depois de traduzir, é possível [revisar a tradução](#reviewing-and-promoting
    ![Referências](../assets/references.png)
 
 1. Selecione **Cópias de idioma** e, em seguida, selecione as cópias de idioma para as quais você está traduzindo as páginas de origem.
-1. Selecionar **Criar e traduzir** e configure o trabalho de tradução:
+1. Selecione **Criar e traduzir** e configure o trabalho de tradução:
 
    * Use a lista suspensa **Idiomas** para selecionar uma cópia de idioma para a qual deseja traduzir. Selecione idiomas adicionais, conforme necessário. Os idiomas exibidos na lista correspondem às [raízes de idioma que você criou](preparation.md#creating-a-language-root).
       * Selecionar vários idiomas cria um projeto com um trabalho de tradução para cada idioma.
@@ -104,7 +104,7 @@ Depois de traduzir, é possível [revisar a tradução](#reviewing-and-promoting
    ![Referências](../assets/references.png)
 
 1. Selecione **Cópias de idioma** e, em seguida, selecione as cópias de idioma para as quais você está traduzindo as páginas de origem.
-1. Selecionar **Atualizar cópias de idioma** e configure o trabalho de tradução:
+1. Selecione **Atualizar Cópias de Idioma** e configure o trabalho de tradução:
 
    * Para traduzir a página selecionada e todas as páginas secundárias, selecione **Selecionar todas as subpáginas**. Para traduzir apenas a página selecionada, desmarque a opção.
    * Em **Projeto**, selecione **Criar projeto(s) de tradução**.
@@ -133,7 +133,7 @@ Assim como ao criar um projeto, ao adicionar páginas, cópias das páginas são
 
    ![Atualizar cópias de idioma no painel de Referências](../assets/update-language-copies-references.png)
 
-1. Selecionar **Atualizar cópias de idioma** e, em seguida, configure as propriedades:
+1. Selecione **Atualizar Cópias de Idioma** e configure as propriedades:
 
    * Para traduzir a página selecionada e todas as páginas secundárias, selecione **Selecionar todas as subpáginas**. Para traduzir apenas a página selecionada, desmarque a opção.
    * Em **Projeto**, selecione **Adicionar a um projeto de tradução existente**.
@@ -143,7 +143,7 @@ Assim como ao criar um projeto, ao adicionar páginas, cópias das páginas são
    >
    >O idioma de destino definido no projeto de tradução deve corresponder ao caminho da cópia de idioma, conforme mostrado no painel de Referências.
 
-1. Selecionar **Atualizar**.
+1. Selecione **Atualizar**.
 
 ### Criar a estrutura de uma cópia de idioma {#creating-the-structure-of-a-language-copy}
 
@@ -160,14 +160,14 @@ Preencha sua cópia de idioma para que ela tenha conteúdo do idioma principal q
 
    ![Selecionar cópias de idioma](../assets/language-copy-structure-select.png)
 
-1. Selecionar **Atualizar cópias de idioma** para revelar as ferramentas de tradução e configurar as propriedades:
+1. Selecione **Atualizar Cópias de Idioma** para revelar as ferramentas de tradução e configurar as propriedades:
 
    * Selecione a opção **Selecionar todas as subpáginas**.
    * Para **Projeto**, selecione **Criar apenas estrutura**.
 
    ![Somente estrutura](../assets/language-copy-structure-only.png)
 
-1. Selecionar **Atualizar**.
+1. Selecione **Atualizar**.
 
 ### Atualização da memória de tradução {#updating-translation-memory}
 
@@ -198,8 +198,8 @@ As atualizações da memória de tradução podem ser interceptadas e enviadas a
 Uma propriedade pode ser selecionada na exibição de lista do console de sites que mostra se uma página foi traduzida, está em tradução ou ainda não foi traduzida.
 
 1. No console do site, alterne para [exibição em lista](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Selecionar, **Configurações de exibição** no menu suspenso exibição.
-1. Na caixa de diálogo, marque a opção **Traduzido** e selecione **Atualizar**.
+1. Selecione, **Exibir configurações** no menu suspenso exibição.
+1. Na caixa de diálogo, verifique a propriedade **Traduzido** e selecione **Atualização**.
 
 O console Sites agora exibe a coluna **Traduzido** mostrando o status de tradução das páginas listadas.
 
@@ -245,10 +245,10 @@ Ao criar manualmente um projeto de tradução, você deve fornecer valores para 
 * **Método de tradução:** Selecione **Tradução humana** para indicar que a tradução deve ser executada manualmente.
 
 1. Na barra de ferramentas do console de projetos, selecione **Criar**.
-1. Selecione o **Projeto de tradução** e selecione **Próxima**.
+1. Selecione o modelo do **Projeto de tradução** e selecione **Próximo**.
 1. Insira valores na guia de propriedades **Básico**.
-1. Selecionar **Avançado** e fornecem valores para as propriedades relacionadas à tradução.
-1. Selecione **Criar**. Na caixa de confirmação, selecione **Concluído** para retornar ao console de projetos, ou selecione **Abrir projeto** para abrir e começar a gerenciar o projeto.
+1. Selecione **Avançado** e forneça valores para as propriedades relacionadas à tradução.
+1. Selecione **Criar**. Na caixa de confirmação, selecione **Concluído** para retornar ao console de projetos ou selecione **Abrir projeto** para abrir e começar a gerenciar o projeto.
 
 ### Adicionar páginas e ativos a um trabalho de tradução {#adding-pages-assets-to-a-translation-job}
 
@@ -258,7 +258,7 @@ Ao criar manualmente um projeto de tradução, você deve fornecer valores para 
 
    ![Bloco de trabalho de tradução](../assets/translation-job.png)
 
-1. Na próxima janela, selecione o **Adicionar** na barra de ferramentas e selecione **Ativos/páginas**.
+1. Na próxima janela, selecione o botão **Adicionar** na barra de ferramentas e selecione **Assets/Páginas**.
 
    ![Adicionar páginas](../assets/add-to-project.png)
 
@@ -339,7 +339,7 @@ Especifique a data antes da qual seu fornecedor de tradução deve retornar os a
 
    ![Propriedades do projeto de tradução](../assets/translation-project-properties-basic.png)
 
-1. Selecionar **Salvar e fechar**.
+1. Selecione **Salvar e fechar**.
 
 ### Escopo de um trabalho de tradução {#scoping-a-translation-job}
 
@@ -356,8 +356,8 @@ Ao determinar o escopo de um trabalho de tradução, o status do trabalho é **E
 O escopo funciona corretamente somente quando o fornecedor de tradução que você está usando aceita esse recurso.
 
 1. No console de projetos, abra o projeto de tradução.
-1. No título do trabalho de tradução, selecione o menu de comandos e, em seguida, **Solicitar escopo**.
-1. Quando o status do trabalho muda para **Escopo concluído**, selecione o menu de comandos e selecione **Mostrar Escopo**.
+1. No título do trabalho de tradução, selecione o menu de comandos e **Solicitar Escopo**.
+1. Quando o status do trabalho for alterado para **Escopo Concluído**, selecione o menu de comandos e selecione **Mostrar Escopo**.
 
 ### Iniciar trabalhos de tradução {#starting-translation-jobs}
 
@@ -366,7 +366,7 @@ Inicie um trabalho de tradução para traduzir as páginas de origem para o idio
 Você pode iniciar um trabalho individual dentro do projeto.
 
 1. No console de projetos, abra o projeto de tradução.
-1. No bloco do trabalho de tradução, selecione o menu de comandos e, em seguida, **Início**.
+1. No bloco do trabalho de tradução, selecione o menu de comandos e, em seguida, selecione **Iniciar**.
 1. Na caixa de diálogo de ação que confirma o início da tradução, selecione **Fechar**.
 
 Depois de iniciar o trabalho de tradução, o bloco de trabalho de tradução mostra a tradução com o status **Em progresso**.
@@ -374,7 +374,7 @@ Depois de iniciar o trabalho de tradução, o bloco de trabalho de tradução mo
 Você também pode iniciar todos os trabalhos de tradução de um projeto.
 
 1. No console de projetos, selecione o projeto de tradução.
-1. Na barra de ferramentas, selecione **Iniciar tarefa(s) de tradução**.
+1. Na barra de ferramentas, selecione **Iniciar trabalhos de tradução**.
 1. Na caixa de diálogo, revise a lista de trabalhos iniciados e, em seguida, confirme clicando em **Iniciar** ou interrompa clicando em **Cancelar**.
 
 ### Cancelar um trabalho de tradução {#canceling-a-translation-job}
@@ -382,7 +382,7 @@ Você também pode iniciar todos os trabalhos de tradução de um projeto.
 Cancele um trabalho de tradução para interromper o processo e impedir que o fornecedor realize mais traduções. Você pode cancelar um trabalho quando ele tiver o status **Enviado para tradução** ou **Tradução em andamento**.
 
 1. No console de projetos, abra o projeto de tradução.
-1. No bloco do trabalho de tradução, selecione o menu de comandos e, em seguida, **Cancelar**.
+1. No bloco do trabalho de tradução, selecione o menu de comandos e **Cancelar**.
 1. Na caixa de diálogo da ação que confirma o cancelamento da tradução, selecione **OK**.
 
 ### Aceitar e rejeitar fluxo de trabalho {#accept-reject-workflow}
@@ -398,7 +398,7 @@ Se o conteúdo for rejeitado, ele será enviado de volta ao fornecedor da tradu�
 Conclua um trabalho de tradução depois de ter revisado os arquivos traduzidos do fornecedor.
 
 1. No console de projetos, abra o projeto de tradução.
-1. No bloco do trabalho de tradução, selecione o menu de comandos e, em seguida, **Concluído**.
+1. No bloco do trabalho de tradução, selecione o menu de comandos e **Concluído**.
 1. O trabalho agora está com o status **Concluído**.
 
 Para fluxos de trabalho de tradução humana, concluir uma tradução indica ao fornecedor que o contrato de tradução foi cumprido e que ele deve salvar a tradução na sua memória de tradução.
@@ -406,7 +406,7 @@ Para fluxos de trabalho de tradução humana, concluir uma tradução indica ao 
 Arquive um trabalho de tradução depois que ele estiver concluído e você não precisar mais ver os detalhes de status.
 
 1. No console de projetos, abra o projeto de tradução.
-1. No bloco do trabalho de tradução, selecione o menu de comandos e, em seguida, **Arquivar**.
+1. No bloco do trabalho de tradução, selecione o menu de comandos e, em seguida, selecione **Arquivar**.
 
 Ao arquivar o trabalho, o bloco do trabalho de tradução é removido do projeto.
 
@@ -420,18 +420,18 @@ Quando o conteúdo for traduzido para uma cópia de idioma existente, revise as 
 
 ![Trabalho pronto para revisão](../assets/job-ready-for-review.png)
 
-1. Selecione a página no idioma principal e, em seguida, **Referências** e selecione **Cópias de idioma**.
+1. Selecione a página no idioma principal, selecione **Referências** e **Cópias de idioma**.
 1. Selecione a cópia de idioma para revisão.
 
    ![Cópia de idioma pronta para revisão](../assets/language-copy-ready-for-review.png)
 
-1. Selecionar **Launch** para revelar os comandos relacionados ao lançamento.
+1. Selecione **Inicialização** para revelar os comandos relacionados à inicialização.
 
    ![Inicialização](../assets/language-copy-launch.png)
 
 1. Para abrir a cópia de inicialização da página com o objetivo de revisar e editar o conteúdo, clique em **Abrir página**.
 1. Para promover a cópia de inicialização após ter revisado o conteúdo e feito as alterações necessárias, clique em **Promover**.
-1. No **Promover lançamento** especifique quais páginas serão promovidas e selecione **Promover**.
+1. Na página **Promover inicialização**, especifique quais páginas serão promovidas e selecione **Promover**.
 
 ### Comparação de cópias de idioma {#comparing-language-copies}
 
@@ -449,24 +449,24 @@ Para comparar cópias de idioma ao idioma principal:
 
 ## Mover ou renomear uma página de origem {#move-source}
 
-Se uma página de origem já traduzida precisar ser [renomeado ou movido](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), traduzindo a página novamente depois da movimentação, cria uma cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda existe. Para evitar isso, você pode usar a funcionalidade de cópia de idioma de atualização após a movimentação:
+Se uma página de origem já traduzida precisar ser [renomeada ou movida](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page), a tradução da página novamente depois da movimentação criará uma cópia de idioma com base no novo nome/local da página. A cópia de idioma antiga baseada no nome/local anterior ainda existe. Para evitar isso, você pode usar a funcionalidade de cópia de idioma de atualização após a movimentação:
 
 1. Mova uma página que tenha uma cópia de idioma.
 1. Selecione a raiz da cópia de idioma.
-1. Abra o **Referências** painel.
-1. Selecionar **Cópias de idiomas**.
+1. Abra o painel **Referências**.
+1. Selecione **Cópias de Idiomas**.
 1. Selecione os idiomas de destino que deseja atualizar.
-1. Selecionar **Atualizar cópias de idioma**.
+1. Selecione **Atualizar cópias de idioma**.
 
-   ![update-language-copies](../assets/translation-move-to.png)
+   ![atualizando-cópias-de-idioma](../assets/translation-move-to.png)
 
-1. Clique em **Atualizar**. A [Launch](/help/sites-cloud/authoring/launches/promoting.md) será criado.
+1. Clique em **Atualizar**. Uma [Inicialização](/help/sites-cloud/authoring/launches/promoting.md) será criada.
 1. Navegue até a raiz de idioma necessária e selecione-a.
-1. Usar o **Referências** , selecione **Lançamentos**.
+1. Usando o painel **Referências**, selecione **Inicializações**.
 
    ![promote-launch-translation](../assets/promote-launch-translation.png)
 
-1. Clique no lançamento criado e clique em **Promover lançamento**.
+1. Clique na Inicialização criada e em **Promover inicialização**.
 
 Agora, a página de origem foi movida e a cópia de idioma associada.
 

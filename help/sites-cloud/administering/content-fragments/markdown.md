@@ -14,7 +14,7 @@ ht-degree: 88%
 
 # Markdown {#markdown}
 
-Quando você estiver [criação](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) seus Fragmentos de conteúdo que você pode ter [Campos de texto multilinha](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) definido com o **Tipo padrão** de **Markdown**. O editor de fragmento de conteúdo usa *markdown* sintaxe para permitir que você grave conteúdo facilmente para a criação de páginas e a entrega headless:
+Quando você está [criando](/help/sites-cloud/administering/content-fragments/authoring.md#edit-multi-line-text-fields-plaintext-markdown) os fragmentos de conteúdo, talvez tenha [campos de texto de várias linhas](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) definidos com o **Tipo Padrão** do **Markdown**. O editor de fragmento de conteúdo usa a sintaxe *markdown* para permitir que você grave conteúdo facilmente para a criação de páginas e entrega headless:
 
 ![Campo de texto de várias linhas do Markdown no editor](/help/sites-cloud/administering/content-fragments/assets/cf-markdown-field-edit.png)
 

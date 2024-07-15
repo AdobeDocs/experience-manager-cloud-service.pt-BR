@@ -56,7 +56,7 @@ A única diferença é que o repositório Git remoto faz parte do Cloud Manager,
 
 ## Tipos de programas {#program-types}
 
-Um usuário pode criar um **produção** programa ou um **sandbox** programa.
+Um usuário pode criar um programa **produção** ou um programa **sandbox**.
 
 * Um **programa de produção** é criado para permitir o tráfego direto em seu site.
    * Consulte [Introdução aos programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais detalhes.

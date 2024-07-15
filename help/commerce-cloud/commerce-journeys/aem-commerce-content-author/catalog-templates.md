@@ -17,7 +17,7 @@ Saiba como gerenciar páginas e modelos do catálogo de produtos.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de criação do Conteúdo do AEM e do Commerce, [AEM Introdução às noções básicas de criação do CIF](getting-started.md), você aprendeu o básico da criação de CIF.
+No documento anterior da jornada de criação do Conteúdo do AEM e do Commerce, [Introdução às noções básicas de criação do AEM CIF CIF](getting-started.md), você aprendeu as noções básicas de criação do.
 
 Este artigo se baseia nesses fundamentos.
 
@@ -37,7 +37,7 @@ AEM Páginas de catálogo são criadas dinamicamente usando um modelo de catálo
 ![estrutura do catálogo](assets/catalog-structure.png)
 
 O componente de navegação mostra as páginas de conteúdo e catálogo. É possível mostrar a landing page do catálogo ou as categorias de primeiro nível na navegação. Passar o mouse sobre uma categoria mostrará categorias de segundo nível como uma segunda linha.
-![navegação do catálogo](assets/catalog-navigation.png)
+![navegação no catálogo](assets/catalog-navigation.png)
 
 Clicar em uma categoria abre a página de categoria (ou a página de lista de produtos).
 
@@ -55,7 +55,7 @@ O modelo de catálogo Venia genérico usa o componente principal da lista de pro
 ![modelo de categoria](assets/category-template.png)
 
 O modelo de produto genérico Venia usa o Componente principal de Detalhes do produto. Este componente exibe informações do produto para vários tipos de produtos e ações complementares ao carrinho.
-![modelo do produto](assets/product-template.png)
+![modelo de produto](assets/product-template.png)
 
 ### Editar Modelos {#edit-templates}
 
@@ -63,7 +63,7 @@ Os modelos podem ser editados abrindo diretamente a página de modelo ou alterna
 
 ### Modelos de Categoria ou Produto Específicos {#specific}
 
-O CIF é compatível com vários modelos com apenas alguns cliques. Para criar outro modelo, selecione o modelo genérico na respectiva categoria e crie uma página usando o **Criar** ação.
+O CIF é compatível com vários modelos com apenas alguns cliques. Para criar outro modelo, selecione o modelo genérico na respectiva categoria e crie uma página usando a ação **Criar**.
 
 ![criar página de modelo](assets/create-template-page.png)
 
@@ -73,7 +73,7 @@ Selecione o respectivo modelo de produto ou categoria.
 
 Insira o título e crie a página.
 
-![criar modelo inserir](assets/create-template-enter.png)
+![criar entrada de modelo](assets/create-template-enter.png)
 
 Observe que agora você tem um template específico sob o genérico.
 
@@ -87,15 +87,15 @@ Adicione qualquer imagem na parte superior da página.
 
 ![criar atualização de modelo](assets/create-template-update.png)
 
-O modelo pode ser visualizado com qualquer categoria/produto. Abertura **Informações da página** e selecione **Exibir com categoria/produto**. Selecione o produto/categoria do seletor para obter uma visualização com este produto/categoria. Selecionar **Comprar A Aparência** categoria para obter uma visualização do modelo atualizado.
+O modelo pode ser visualizado com qualquer categoria/produto. Abra **Informações da Página** e selecione **Exibir com categoria/produto**. Selecione o produto/categoria do seletor para obter uma visualização com este produto/categoria. Selecione a categoria **Comprar a aparência** para obter uma visualização do modelo atualizado.
 
 ![criar modelo ](assets/create-template-picker.png)
 
-Agora é necessário atribuir esse template à categoria específica. Abra as propriedades na **Informações da página** e alterne para a guia commerce. Clique no ícone de pasta para selecionar a **Comprar A Aparência** categoria do seletor de categorias. É possível atribuir várias categorias a um modelo e também incluir subcategorias ativando a caixa de seleção.
+Agora é necessário atribuir esse template à categoria específica. Abra as propriedades no menu **Informações da página** e alterne para a guia Comércio. Clique no ícone de pasta para selecionar a categoria **Comprar a aparência** no seletor de categorias. É possível atribuir várias categorias a um modelo e também incluir subcategorias ativando a caixa de seleção.
 
 ![criar associação de modelo](assets/create-template-associate.png)
 
-Volte para a página inicial principal e clique em **Comprar A Aparência** categoria para ver o template específico. Todas as outras categorias ainda usam o template genérico.
+Volte para a página inicial principal e clique na categoria **Shop The Look** para ver o modelo específico. Todas as outras categorias ainda usam o template genérico.
 
 ![criar resultado do modelo](assets/create-template-result.png)
 
@@ -109,11 +109,11 @@ Agora que concluiu esta parte da jornada, você deve:
 * como os modelos genéricos funcionam
 * criou um modelo individual
 
-Desenvolva esse conhecimento e continue sua jornada revisando o documento a seguir [Gerenciar experiências de catálogo de produtos por etapas](staged-catalog.md), onde você aprende a trabalhar com dados de produtos preparados e lançamentos de AEM.
+Desenvolva esse conhecimento e prossiga com sua jornada revisando a seguir o documento [Gerenciar experiências de catálogo de produtos preparados](staged-catalog.md), onde você aprenderá a trabalhar com dados de produto preparados e inicializações de AEM.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada revisando o documento [Gerenciar experiências de catálogo de produtos por etapas](staged-catalog.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless:
+Embora seja recomendável seguir para a próxima parte da jornada revisando o documento [Gerenciar experiências de catálogo de produtos em etapas](staged-catalog.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless:
 
 * [Criação de várias categorias e páginas de produto](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Guia de migração para o Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Como migrar de uma versão antiga para o complemento AEM Commerce integration framework (CIF)
+* [Guia de migração para o Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Como migrar de uma versão antiga para o complemento AEM Commerce integration framework CIF ()

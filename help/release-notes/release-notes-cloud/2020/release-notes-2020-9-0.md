@@ -1,6 +1,6 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2020.9.0.
-description: "[!DNL Adobe Experience Manager] Notas de versão as a Cloud Service para 2020.9.0."
+description: "[!DNL Adobe Experience Manager] Notas de Versão as a Cloud Service para 2020.9.0."
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 feature: Release Information
 role: Admin
@@ -11,19 +11,19 @@ ht-degree: 15%
 
 ---
 
-# Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
+# Notas de versão para [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-A seção a seguir descreve as Notas de versão gerais do [!DNL Experience Manager] as a Cloud Service 2020.9.0.
+A seção a seguir descreve as Notas de Versão gerais do [!DNL Experience Manager] as a Cloud Service 2020.9.0.
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do [!DNL Adobe Experience Manager] O as a Cloud Service 2020.9.0 é 24 de setembro de 2020.
+A Data de Lançamento do [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 é 24 de setembro de 2020.
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Novidades do [!DNL Sites] {#what-is-new-sites}
 
-* O SDK JavaScript do editor de Aplicativos de Página Única (SPA) [agora é open source](/help/implementing/developing/hybrid/reference-materials.md).
+* O SDK JavaScript do Editor de Aplicativos de Página Única (SPA) [ agora é open source](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -31,12 +31,12 @@ A data de lançamento do [!DNL Adobe Experience Manager] O as a Cloud Service 20
 
 * Arquivos de imagem de marca d&#39;água são aceitos para representações geradas com microsserviços de ativos. Ele pode ser configurado como um Perfil de processamento e usa um arquivo PNG como uma marca d&#39;água. Consulte [marca d&#39;água em seus ativos](/help/assets/watermark-assets.md).
 
-* Aprimoramentos no [!DNL Dynamic Media]
+* Aprimoramentos em [!DNL Dynamic Media]
 
-   * Publicação seletiva - agora as equipes de marketing podem acessar [!DNL Dynamic Media] imagens de recorte inteligente e representações dinâmicas que são sincronizadas com o [!DNL Dynamic Media] para que possam criar materiais promocionais, tudo sem a necessidade de publicar esses ativos no [!DNL Dynamic Media] para entrega global. [!DNL Experience Manager] e [!DNL Dynamic Media] a publicação é dissociada e pode ocorrer separadamente. Consulte [publicação seletiva](/help/assets/dynamic-media/selective-publishing.md).
-   * Agora, os administradores podem redefinir [!DNL Dynamic Media] Senha Cloud Service recebida no provisionamento. A redefinição pode ser feita em [!DNL Experience Manager] sem a necessidade de utilizar a interface [!DNL Dynamic Media Classic] aplicativo de desktop.
+   * Publish seletiva - agora as equipes de marketing podem acessar imagens de recorte inteligente do [!DNL Dynamic Media] e execuções dinâmicas que são sincronizadas com o [!DNL Dynamic Media] para que possam criar materiais promocionais, tudo sem precisar publicar esses ativos no [!DNL Dynamic Media] para entrega global. A publicação de [!DNL Experience Manager] e [!DNL Dynamic Media] está dissociada e pode ocorrer separadamente. Consulte [publicação seletiva](/help/assets/dynamic-media/selective-publishing.md).
+   * Os administradores agora podem redefinir a senha do Cloud Service [!DNL Dynamic Media] recebida no provisionamento. A redefinição pode ser feita na interface do usuário [!DNL Experience Manager], sem a necessidade de usar o aplicativo de desktop [!DNL Dynamic Media Classic].
 
-* Para saber mais sobre os seguintes aprimoramentos, consulte [novidades do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR).
+* Para saber mais sobre os seguintes aprimoramentos, consulte [novidades no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=pt-BR).
 
    * Pré-visualização de PDF aprimorada com a integração do SDK com o Adobe Document Cloud View.
    * Funcionalidade de download de clique único.
@@ -88,7 +88,7 @@ Consulte esta seção para saber mais sobre as novidades e atualizações do Clo
 
 ### Novidades {#what-is-new-cra}
 
-* O CRA (Cloud Readiness Analyzer) tem um console de estado de início que exibe uma **Gerar relatório** botão para o usuário clicar e executar o CRA.
+* O CRA (Cloud Readiness Analyzer) tem um console de estado de início que exibe um botão **Gerar relatório** explícito para o usuário clicar e executar o CRA.
 
 * A interface do usuário do CRA exibe o progresso enquanto está em execução. Ele exibe itens que estão sendo analisados e descobertas encontradas durante a execução.
 
@@ -108,9 +108,9 @@ Siga esta seção para saber mais sobre as novidades e atualizações da Ferrame
 
 * A interface do usuário da CTT tem um recurso de recarregamento automático que recarrega a página de visão geral a cada 30 segundos.
 
-* Adição de um botão à interface do usuário da CTT para recuperar *Token de acesso* facilmente.
+* Adição de um botão à interface de usuário da CTT para recuperar facilmente o *Token de acesso*.
 
-* Adição de mensagem de validação descritiva para *URL* e *Nome do conjunto de migrações*.
+* Adição de mensagem de validação descritiva para *URL* e *Nome do Conjunto de Migração*.
 
 ## Ferramentas de refatoração de código {#code-refactoring}
 

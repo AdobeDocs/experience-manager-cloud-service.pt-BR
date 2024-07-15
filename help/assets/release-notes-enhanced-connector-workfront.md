@@ -1,6 +1,6 @@
 ---
-title: Notas de versão do [!DNL Workfront for Experience Manager enhanced connector]
-description: Notas de versão do [!DNL Workfront for Experience Manager enhanced connector]
+title: Notas de versão para  [!DNL Workfront for Experience Manager enhanced connector]
+description: Notas de versão para  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 1%
 
 ---
 
-# Notas de versão do [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
+# Notas de versão para [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
-A seção a seguir descreve as Notas de versão gerais do [!DNL Workfront for Experience Manager enhanced connector].
+A seção a seguir descreve as Notas de Versão gerais do [!DNL Workfront for Experience Manager enhanced connector].
 
 A data de lançamento da versão mais recente 1.9.19 do [!DNL Workfront for Experience Manager enhanced connector] é 12 de abril de 2024.
 
@@ -25,42 +25,42 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 >[!NOTE]
 >
->O AEM 6.4 chegou ao fim do suporte estendido. Consulte nossa [períodos de suporte técnico](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontrar as versões compatíveis [aqui](https://experienceleague.adobe.com/docs/?lang=en).
+>O AEM 6.4 chegou ao fim do suporte estendido. Consulte nossos [períodos de suporte técnico](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões [aqui](https://experienceleague.adobe.com/docs/?lang=en) compatíveis.
 
 >[!IMPORTANT]
 >
->Adobe recomenda que você [atualização para a versão 1.9.19 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
+>A Adobe recomenda [atualizar para a versão 1.9.19 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conhecidos {#known-issues}
 
-* Ao configurar pastas vinculadas ao projeto com AEM 6.4, o Experience Manager não salva os valores para **[!UICONTROL subpastas]** e **[!UICONTROL Criar pasta vinculada em projetos com portfólio]** campos. O valor para a variável **[!UICONTROL subpastas]** atualizações de campo para **[!UICONTROL indefinido]** e o valor para o **[!UICONTROL Criar pasta vinculada em projetos com portfólio]** atualizações de campo para **[!UICONTROL Portfolio padrão]** automaticamente após salvar a configuração.
+* Ao configurar pastas vinculadas do projeto com AEM 6.4, o Experience Manager não salva os valores de **[!UICONTROL subpastas]** e **[!UICONTROL Criar pasta vinculada em projetos com campos de portfólio]**. O valor do campo **[!UICONTROL subpastas]** atualiza para **[!UICONTROL indefinido]** e o valor para a **[!UICONTROL Criar pasta vinculada em projetos com portfólio]** atualiza o campo para **[!UICONTROL Portfolio padrão]** automaticamente após salvar a configuração.
 
-* Ao usar a experiência clássica do Workfront, a variável **[!UICONTROL Enviar para]** opção disponível no **[!UICONTROL Mais]** lista suspensa não permite selecionar o destino dentro do Experience Manager. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente usando o **[!UICONTROL Ações do documento]** lista suspensa. A variável **[!UICONTROL Enviar para]** A opção funciona corretamente para **[!UICONTROL Mais]** lista suspensa e a variável **[!UICONTROL Ações do documento]** disponível na nova experiência do Workfront.
+* Quando você usa a experiência clássica do Workfront, a opção **[!UICONTROL Enviar para]**, disponível na lista suspensa **[!UICONTROL Mais]**, não permite selecionar o destino dentro do Experience Manager. A opção **[!UICONTROL Enviar para]** funciona corretamente usando a lista suspensa **[!UICONTROL Ações de Documento]**. A opção **[!UICONTROL Enviar para]** funciona corretamente nas listas suspensas **[!UICONTROL Mais]** e **[!UICONTROL Ações de Documentos]**, disponíveis na nova experiência do Workfront.
 
 ## Versões anteriores {#previous-releases}
 
 ### Versão de março de 2024 {#march-2024-release}
 
 * O processamento de uploads de vários ativos do Workfront encontra problemas.
-* Não adicionar aspas de fechamento ao usar o Workfront para pesquisar pastas no Experience Manager resulta em `SERVER_ERROR`.
+* Não adicionar aspas de fechamento ao usar o Workfront para procurar pastas nos resultados do Experience Manager em `SERVER_ERROR`.
 
 ### Versão de fevereiro de 2024 {#february-2024-release}
 
 * Ative o recurso de alternância para permitir que os clientes da AEM Cloud configurem e configurem um conector.
 
-* Fechando o `resourceResolver` sem fechar explicitamente a sessão subjacente, causa vazamentos de sessão em instâncias AEM. É crucial fechar explicitamente a sessão, pois o fechamento automático do Resource Resolver não fecha implicitamente a sessão.
+* Fechar o `resourceResolver` sem fechar explicitamente a sessão subjacente causa vazamentos na sessão em instâncias AEM. É crucial fechar explicitamente a sessão, pois o fechamento automático do Resource Resolver não fecha implicitamente a sessão.
 
 ### Versão de janeiro de 2024 {#january-2024-release}
 
-* A variável [!DNL Workfront] configuração no [!DNL CRX DE] No momento, o não armazena o `project ID`, causando erros ao aplicar a permissão somente leitura. Saiba como [configurar permissões](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+* A configuração [!DNL Workfront] em [!DNL CRX DE] atualmente não armazena `project ID`, causando erros ao aplicar a permissão somente leitura. Saiba como [configurar permissões](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
 
-* Nenhuma documentação pública sobre como adicionar uma propriedade personalizada à definição de índice pronta para uso. Saiba mais sobre [adicionar propriedade personalizada](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+* Nenhuma documentação pública sobre como adicionar uma propriedade personalizada à definição de índice pronta para uso. Saiba mais sobre [adição de propriedade personalizada](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
 
 * A exclusão de configurações de conexão no conector aprimorado afeta significativamente as assinaturas de eventos e outras configurações salvas, fazendo com que elas apontem para um URL antigo.
 
-* A instalação do pacote complementar do Forms não instala o **[!UICONTROL Alternar roteador]**, conduzindo ao fracasso da [!DNL WFEC AMS environment Toggle] recurso.
+* A instalação do pacote complementar de formulários não instala o **[!UICONTROL Alternar Roteador]**, resultando na falha do recurso [!DNL WFEC AMS environment Toggle].
 
-* A ativação de assinaturas de evento na configuração do EWC resulta em falhas repetidas de chamada de API com `HTTP 400` erro ao configurar [!DNL Workfront] conector aprimorado pela primeira vez.
+* A habilitação de assinaturas de evento na configuração do EWC resulta em falhas repetidas de chamada de API com erro `HTTP 400` ao configurar o conector aprimorado [!DNL Workfront] pela primeira vez.
 
 * A exclusão de comentários em ativos de pastas vinculadas no Workfront não consegue encontrar o caminho de pasta vinculada no AEM.
 
@@ -71,11 +71,11 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 ### Versão de novembro de 2023 {#november-2023-release}
 
 * Ao visualizar a lista de pastas AEM, a caixa de diálogo demora mais de um minuto para carregar.
-* Autorizado [!DNL Workfront] os usuários do recebem consistentemente logs de erro de falha de autenticação.
+* [!DNL Workfront] usuários autorizados estão recebendo consistentemente logs de erro de falha de autenticação.
 
 ### Versão de outubro de 2023 {#october-2023-release}
 
-* Quando assinaturas de evento estiverem desativadas em Configurações avançadas, ainda será possível selecionar as opções para **Inscrever-se em eventos de atualização de documento para atualizar metadados de ativos AEM**, **Publicar todos os ativos do projeto no Brand Portal após a conclusão do projeto**, e **Ativar a sincronização de comentários**.
+* Quando assinaturas de evento estiverem desabilitadas nas Configurações Avançadas, você ainda poderá selecionar as opções para **Assinar eventos de atualização de documento para atualizar metadados de ativos AEM**, **Publish todos os ativos de projeto para Brand Portal após a conclusão do projeto** e **Habilitar a Sincronização de Comentários**.
 
 * Alguns dos ativos armazenados no Experience Manager não são renderizados adequadamente ao visualizá-los no Workfront.
 
@@ -87,7 +87,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 * O conector aprimorado do Experience Manager busca todas as assinaturas de evento do Workfront enquanto exclui uma assinatura de evento para um projeto, o que resulta em um impacto no desempenho do aplicativo.
 
-* Quando um ativo é enviado do Workfront para o Experience Manager, o tipo MIME do ativo não é definido como `dc:format` atributo no Experience Manager.
+* Quando um ativo é enviado do Workfront para o Experience Manager, o tipo MIME do ativo não é definido para o atributo `dc:format` no Experience Manager.
 
 * As IDs de projeto do Workfront armazenadas no conector aprimorado do Experience Manager incluem duplicatas.
 
@@ -99,7 +99,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 ### Versão de junho de 2023 {#june-2023-release}
 
-* Quando você tem uma rede avançada configurada, há problemas ao enviar conteúdo do Adobe Workfront para o AEM as a Cloud Service.
+* Quando a rede avançada está configurada, há problemas ao enviar conteúdo do Adobe Workfront para o AEM as a Cloud Service.
 
 
 ### Versão de maio de 2023 {#may-2023-release}
@@ -108,9 +108,9 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 ### Versão de abril de 2023 {#april-2023-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.9, lançada em 10 de abril de 2023, inclui as seguintes atualizações:
+A versão 1.9.9 do [!DNL Workfront for Experience Manager enhanced connector], lançada em 10 de abril de 2023, inclui as seguintes atualizações:
 
-* Experience Manager exibe um `DateTimeParseException` exceção quando recebe a data da última modificação do Workfront durante a criação da pasta vinculada.
+* O Experience Manager exibe uma exceção `DateTimeParseException` quando recebe a data da última modificação do Workfront durante a criação da pasta vinculada.
 
 * Problemas ao criar várias pastas de projeto vinculadas em uma curta duração.
 
@@ -118,7 +118,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 ### Versão de março de 2023 {#march-2023-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.8, lançada em 3 de março de 2023, inclui as seguintes atualizações:
+A versão 1.9.8 do [!DNL Workfront for Experience Manager enhanced connector], lançada em 3 de março de 2023, inclui as seguintes atualizações:
 
 * Melhorias de desempenho no Experience Manager ao criar pastas vinculadas ao projeto no Workfront.
 
@@ -128,15 +128,15 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 ### Versão de janeiro de 2023 {#january-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.7, lançada em 2 de fevereiro de 2023, inclui as seguintes atualizações:
+A versão 1.9.7 do [!DNL Workfront for Experience Manager enhanced connector], lançada em 2 de fevereiro de 2023, inclui as seguintes atualizações:
 
 * O editor de metadados não lista as propriedades de formulários personalizados do Workfront após instalar a versão 1.9.6.
 
-* O console de desenvolvimento é exibido `/content/dam/jcr:content/metadata/wfProjectURL not found` após instalar o conector aprimorado do Workfront e abrir a página inicial do Assets.
+* O console de desenvolvimento exibe uma mensagem de erro `/content/dam/jcr:content/metadata/wfProjectURL not found` após a instalação do conector aprimorado do Workfront e a abertura da página inicial do Assets.
 
 ### Versão de dezembro de 2022 {#december-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.6, lançada em 9 de dezembro, inclui as seguintes atualizações:
+A versão 1.9.6 do [!DNL Workfront for Experience Manager enhanced connector], lançada em 9 de dezembro, inclui as seguintes atualizações:
 
 **Aprimoramento**
 
@@ -156,49 +156,49 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 ### Versão de novembro de 2022 {#november-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.5, lançada em 11 de novembro, inclui as seguintes atualizações:
+A versão 1.9.5 do [!DNL Workfront for Experience Manager enhanced connector], lançada em 11 de novembro, inclui as seguintes atualizações:
 
 * Quando você define apenas um valor para um campo de vários valores no Workfront, o valor do campo não é mapeado corretamente para o Experience Manager.
 
-* Experience Manager exibe a variável `SERVER_ERROR` no **[!UICONTROL Vincular pastas e arquivos externos]** ao acessar as pastas de ativos devido a permissões inválidas no `/content/dam/collections`.
+* O Experience Manager exibe `SERVER_ERROR` na tela **[!UICONTROL Vincular pastas e arquivos externos]** ao acessar as pastas de ativos devido a permissões inválidas no `/content/dam/collections`.
 
-* Habilitando o **[!UICONTROL Publicar ativos no Brand Portal]** na página de configuração avançada do conector do Workfront, cria um evento incorreto. O evento não é excluído mesmo depois de desabilitar a opção.
+* Habilitar a opção **[!UICONTROL Publish Assets para Brand Portal]** na página de configuração avançada do conector do Workfront cria um evento incorreto. O evento não é excluído mesmo depois de desabilitar a opção.
 
   Para resolver o problema:
 
    1. Atualize para a versão 1.9.5 do conector aprimorado.
 
-   1. Desative o **[!UICONTROL Publicar ativos no Brand Portal]** em configurações avançadas.
+   1. Desabilite a opção **[!UICONTROL Publish Assets para Brand Portal]** nas configurações avançadas.
 
-   1. Ativar o **[!UICONTROL Publicar ativos no Brand Portal]** opção.
+   1. Habilitar a opção **[!UICONTROL Publish Assets to Brand Portal]**.
 
    1. Exclua as assinaturas de evento incorretas.
 
-      1. Executar chamadas para o GET `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
+      1. Executar chamadas de GET para `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
 
          Execute uma chamada de API para cada número de página.
 
-      1. Procure o texto a seguir para localizar assinaturas de evento que correspondam ao seguinte URL e não tenham um `objId`:
+      1. Procure o texto a seguir para encontrar assinaturas de evento que correspondam à URL a seguir e não tenham um `objId`:
 
          ```
               "objId": "",
              "url": "<your-aem-domain>/bin/workfront-tools/events/linkedfolderprojectupdate<your-aem-domain>/
          ```
 
-         Verifique se o conteúdo entre `"objId": "",` e `"url"` corresponde à resposta JSON. O método recomendado para fazer isso é copiar de qualquer Assinatura de Evento que tenha um `objId` e exclua o número.
+         Verifique se o conteúdo entre `"objId": "",` e `"url"` corresponde à resposta JSON. O método recomendado para fazer isso é copiar de qualquer Assinatura de Evento que tenha um `objId` e, em seguida, excluir o número.
 
       1. Observe a ID de assinatura do evento.
 
-      1. Exclua a inscrição no evento errada. Efetuar uma chamada de API de exclusão para `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
+      1. Exclua a inscrição no evento errada. Efetuar uma chamada de API de Exclusão para `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
 
-         `200` já que o código de resposta significa exclusão bem-sucedida de assinaturas de evento incorretas.
+         `200` como código de resposta significa exclusão bem-sucedida de assinaturas de evento incorretas.
   >[!NOTE]
   >
   >Se você já tiver excluído as assinaturas de evento incorretas antes de executar as etapas mencionadas neste procedimento, ignore a última etapa deste procedimento.
 
 ### Versão de outubro de 2022 {#october-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.4, lançada em outubro de 2007, inclui as seguintes atualizações:
+A versão 1.9.4 do [!DNL Workfront for Experience Manager enhanced connector], lançada em 7 de outubro, inclui as seguintes atualizações:
 
 * Não é possível exibir a guia Assinaturas de Eventos na página de configuração avançada do conector devido a muitos eventos.
 
@@ -206,7 +206,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 ### Versão de setembro de 2022 {#september-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.3, lançada em 16 de setembro, inclui as seguintes atualizações:
+A versão 1.9.3 do [!DNL Workfront for Experience Manager enhanced connector], lançada em 16 de setembro, inclui as seguintes atualizações:
 
 * Não é possível carregar um arquivo com mais de 8 GB.
 * Problemas ao publicar automaticamente ativos enviados do Workfront para o AEM.
@@ -217,33 +217,33 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 ### Versão de agosto de 2022 {#august-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.2, lançada em 3 de agosto, inclui as seguintes atualizações:
+A versão 1.9.2 do [!DNL Workfront for Experience Manager enhanced connector], lançada em 3 de agosto, inclui as seguintes atualizações:
 
-* A variável **[!UICONTROL Carregar documento]** a etapa de fluxo de trabalho não anexa um documento ao Workfront.
+* A etapa de fluxo de trabalho **[!UICONTROL Carregar Documento]** falha ao anexar um documento ao Workfront.
 
-* A variável **[!UICONTROL Carregar documento]** a etapa de fluxo de trabalho não anexa um documento a tarefas e problemas no Workfront. A etapa do fluxo de trabalho anexa um documento aos Projetos com êxito.
+* A etapa de fluxo de trabalho **[!UICONTROL Carregar Documento]** falha ao anexar um documento a Tarefas e Problemas no Workfront. A etapa do fluxo de trabalho anexa um documento aos Projetos com êxito.
 
 ### Versão de julho de 2022 {#july-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] A versão 1.9.1 inclui as seguintes atualizações:
+A versão 1.9.1 do [!DNL Workfront for Experience Manager enhanced connector] inclui as seguintes atualizações:
 
 * Adição de suporte para autenticação entre aplicativos Experience Manager e Workfront usando a chave de API do Workfront para instâncias que são migradas para o Adobe IMS.
 
-* Ao vincular arquivos ou pastas externos, o aplicativo do Workfront exibe a variável `SERVER_ERROR` mensagem de erro. A mensagem de erro se refere a uma exceção não autorizada devido a uma incompatibilidade nas chaves de API.
+* Ao vincular arquivos ou pastas externas, o aplicativo Workfront exibe a mensagem de erro `SERVER_ERROR`. A mensagem de erro se refere a uma exceção não autorizada devido a uma incompatibilidade nas chaves de API.
 
 * Quando você executa um workflow Criar tarefa para um ativo, a exceção Ponteiro nulo é exibida nas mensagens de log.
 
-* Quando você habilita o `Replace Spaces with DASH` opção de configuração em Configurações avançadas no Experience Manager, resulta na criação de pastas duplicadas no Workfront.
+* Quando você habilita a opção de configuração `Replace Spaces with DASH` em Configurações avançadas no Experience Manager, ela resulta na criação de pastas duplicadas no Workfront.
 
 ### Versão de junho de 2022 {#june-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] O agora inclui as seguintes atualizações:
+[!DNL Workfront for Experience Manager enhanced connector] agora inclui as seguintes atualizações:
 
-* Ao fazer upload por meio de uma pasta vinculada ou usar o `Send To` ação disponível no Workfront para carregar ativos no Experience Manager as a Cloud Service; os ativos são corrompidos e não podem ser abertos no Adobe Photoshop.
+* Ao carregar por meio de uma pasta vinculada ou usar a ação `Send To` disponível no Workfront para carregar ativos no Experience Manager as a Cloud Service, os ativos são corrompidos e não podem ser abertos no Adobe Photoshop.
 
 ### Versão de março de 2022 {#march-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] O agora inclui as seguintes atualizações:
+[!DNL Workfront for Experience Manager enhanced connector] agora inclui as seguintes atualizações:
 
 * Agora é possível criar pastas vinculadas entre o Adobe Workfront e o AEM Assets as a Cloud Service, mesmo se houver várias configurações de pastas vinculadas do projeto.
 

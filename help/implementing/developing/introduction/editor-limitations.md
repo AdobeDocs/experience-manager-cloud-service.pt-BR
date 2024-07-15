@@ -21,13 +21,13 @@ Um autor pode encontrar as seguintes limitações funcionais ao usar o editor pa
 
 ### Links não ativos {#links-not-active}
 
-Quando [editar uma página](/help/sites-cloud/authoring/page-editor/edit-content.md), os links não estão ativos.
+Ao [editar uma página](/help/sites-cloud/authoring/page-editor/edit-content.md), os links não ficam ativos.
 
-* [Alternar para **Visualizar** modo](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) para navegar usando os links no seu conteúdo.
+* [Alterne para o **modo de Visualização**](/help/sites-cloud/authoring/page-editor/introduction.md#preview-mode) para navegar usando os links no seu conteúdo.
 
 ### Páginas de estrutura {#structure-pages}
 
-Páginas não podem ser nomeadas `structure`. Páginas nomeadas `structure` não serão editáveis no editor de páginas.
+Páginas não podem ser nomeadas como `structure`. As páginas com o nome `structure` não serão editáveis no editor de páginas.
 
 ## Limitações de CSS {#css-limitations}
 
@@ -41,13 +41,13 @@ Elementos posicionados de forma absoluta podem causar problemas na posição da 
 
 ### Unidades de vh {#vh-units}
 
-`vh` unidades não são suportadas porque a altura do iframe deve ser ajustada automaticamente pelo AEM.
+Não há suporte para `vh` unidades porque a altura do iframe deve ser ajustada automaticamente pelo AEM.
 
 ### Imagens de fundo fixas {#fixed-background-images}
 
 Imagens de fundo fixas podem não ser exibidas como fixas ao rolar a tela devido ao fato de que elas estão incorporadas em um iframe.
 
-* Selecionar **Exibir página como publicada** nas ações da barra de cabeçalho, o exibe a página corretamente.
+* Selecionar **Exibir página como publicada** nas ações da barra de cabeçalho exibe a página corretamente.
 
 ### Altura de 100% {#height}
 

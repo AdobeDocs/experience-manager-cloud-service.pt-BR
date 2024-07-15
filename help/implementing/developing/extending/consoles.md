@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # Personalização de Consoles {#customizing-consoles}
 
-O AEM fornece opções para personalizar os consoles (e o [funcionalidade de criação de página](/help/implementing/developing/extending/page-authoring.md)) da sua instância de criação.
+O AEM fornece opções para personalizar os consoles (e a [funcionalidade de criação de página](/help/implementing/developing/extending/page-authoring.md)) da sua instância de criação.
 
 ## Clientlibs {#clientlibs}
 
-As clientlibs permitem estender a implementação padrão para oferecer uma nova funcionalidade, ao mesmo tempo em que reutiliza funções, objetos e métodos padrão. Ao personalizar com clientlibs, você pode criar sua própria clientlib em `/apps.` Por exemplo, ele pode conter o código necessário para o componente personalizado.
+As clientlibs permitem estender a implementação padrão para oferecer uma nova funcionalidade, ao mesmo tempo em que reutiliza funções, objetos e métodos padrão. Ao personalizar com clientlibs, você pode criar sua própria clientlib em `/apps.`. Por exemplo, ela pode conter o código necessário para seu componente personalizado.
 
-Consulte [Uso de bibliotecas do lado do cliente no AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
+Consulte [Usando Bibliotecas do Lado do Cliente no AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Sobreposições {#overlays}
 
-As sobreposições se baseiam nas definições de nó e permitem sobrepor a funcionalidade padrão encontrada em `/libs` com sua própria funcionalidade personalizada em `/apps`. Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, pois [Fusão de recursos do Sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite a herança.
+As sobreposições são baseadas nas definições de nó e permitem sobrepor a funcionalidade padrão encontrada em `/libs` com sua própria funcionalidade personalizada em `/apps`. Ao criar uma sobreposição, uma cópia 1:1 do original não é necessária, pois [a fusão de recursos de sling](/help/implementing/developing/introduction/sling-resource-merger.md) permite a herança.
 
 As sobreposições podem ser usadas de várias maneiras para estender os consoles AEM. Vários exemplos são fornecidos nas seções a seguir.
 
-Consulte também [Sobreposições para o Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
+Consulte também [Sobreposições para Adobe Experience Manager as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 >[!TIP]
 >
->Se estiver interessado em opções para personalizar a experiência de criação, consulte [Personalização da criação de página](/help/implementing/developing/extending/page-authoring.md).
+>Se você estiver interessado nas opções para personalizar a experiência de criação, consulte [Personalização da criação de páginas](/help/implementing/developing/extending/page-authoring.md).
 
 ## Personalizando a View Default para uma Console {#customizing-the-default-view-for-a-console}
 
@@ -63,7 +63,7 @@ Consulte também [Sobreposições para o Adobe Experience Manager as a Cloud Ser
 
 Você pode criar seus próprios componentes e incluir as bibliotecas de clientes correspondentes para ações personalizadas.
 
-* Por exemplo, talvez você queira criar um **Promover para redes sociais** ação em:
+* Por exemplo, talvez você queira criar uma ação **Promover para redes sociais** em:
 
    * `/apps/wcm/core/clientlibs/sites/js/socialmedia.js`
 
@@ -83,7 +83,7 @@ Por exemplo, você pode criar um componente para controlar as condições de ren
 
 * `/apps/myapp/components/renderconditions/group`
 
-Para aplicá-los ao **Criar site** ação no console sites:
+Para aplicá-los à ação **Criar Site** no console de sites:
 
 * `/libs/wcm/core/content/sites`
 
@@ -95,7 +95,7 @@ Para aplicá-los ao **Criar site** ação no console sites:
 
    * `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-Usando propriedades nesse nó, você pode definir a variável `groups` autorizado a executar a ação específica; por exemplo, `administrators`
+Usando propriedades neste nó, você pode definir o `groups` permitido para executar a ação específica; por exemplo, `administrators`
 
 ### Personalização de Colunas na Exibição de Lista {#customizing-columns-in-list-view}
 
@@ -109,14 +109,14 @@ Para personalizar as colunas na exibição de lista:
 
 1. Adicione novas colunas ou remova as existentes.
 
-Se quiser inserir dados adicionais, é necessário escrever um [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com um `pageInfoProviderType` propriedade.
+Para inserir dados adicionais, é necessário gravar um [PageInfoProvider](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) com uma propriedade `pageInfoProviderType`.
 
 >[!NOTE]
 >
->Esse recurso é otimizado para colunas de campos de texto. Para outros tipos de dados, é possível sobrepor `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Esse recurso é otimizado para colunas de campos de texto. Para outros tipos de dados é possível sobrepor `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` em `/apps`.
 
 ### Filtrar recursos {#filtering-resources}
 
 Ao usar um console, o usuário geralmente precisa selecionar entre recursos como páginas, componentes ou ativos. Isso pode tomar a forma de uma lista na qual o autor deve escolher um item.
 
-Para manter a lista em um tamanho razoável e também relevante para o caso de uso, um filtro pode ser implementado no formato de um predicado personalizado. Consulte [Personalização da criação de página](/help/implementing/developing/extending/page-authoring.md#filtering-resources) para obter detalhes.
+Para manter a lista em um tamanho razoável e também relevante para o caso de uso, um filtro pode ser implementado no formato de um predicado personalizado. Consulte [Personalizando a criação de página](/help/implementing/developing/extending/page-authoring.md#filtering-resources) para obter detalhes.

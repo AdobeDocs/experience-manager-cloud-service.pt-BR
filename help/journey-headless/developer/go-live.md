@@ -70,7 +70,7 @@ Depois de verificar se tudo foi testado e está funcionando corretamente, você 
 
 Depois que as atualizações forem carregadas no Cloud Manager, elas poderão ser implantadas no AEM as a Cloud Service usando o [pipeline de CI/CD do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR).
 
-Você pode começar a implantar seu código usando o pipeline CI/CD do Cloud Manager, que é amplamente coberto [aqui](/help/implementing/deploying/overview.md).
+Você pode começar a implantar seu código usando o pipeline CI/CD do Cloud Manager, que é amplamente abordado [aqui](/help/implementing/deploying/overview.md).
 
 ## Monitoramento de desempenho {#performance-monitoring}
 
@@ -127,15 +127,15 @@ Ou você já lançou seu primeiro projeto Headless do AEM ou agora tem todo o co
 
 ### Explore os Aplicativos de página única {#explore-spa}
 
-No entanto, isso não é tudo que o armazenamento headless do AEM oferece. Talvez você se lembre no [Introdução como parte da jornada](getting-started.md#integration-levels) discutimos brevemente como o AEM não só suporta a entrega headless e os modelos de pilha completa tradicionais, como também pode suportar modelos híbridos que combinam as vantagens de ambos.
+No entanto, isso não é tudo que o armazenamento headless do AEM oferece. Talvez você se lembre na [Parte de introdução da jornada](getting-started.md#integration-levels), discutimos brevemente como o AEM não só suporta entrega headless e modelos tradicionais de pilha completa, como também pode suportar modelos híbridos que combinam as vantagens de ambos.
 
 Se esse tipo de flexibilidade é algo que você precisa para o seu projeto, continue para a parte adicional opcional da jornada, [Como criar Aplicativos de página única (SPAs) com o AEM.](create-spa.md)
 
 ## Recursos adicionais {#additional-resources}
 
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
-* [Portal do desenvolvedor de AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
-* [Tutorials para headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
 * [Uma visão geral da implantação do AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [Use o Cloud Manager para implantar seu código](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=pt-BR)
 * [Integre o repositório Git do Cloud Manager a um repositório Git externo e implante um projeto para o AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=pt-BR)

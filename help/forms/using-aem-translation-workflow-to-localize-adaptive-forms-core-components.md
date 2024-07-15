@@ -13,26 +13,26 @@ ht-degree: 4%
 
 # Usar tradução automática ou tradução humana para traduzir um Formulário adaptável baseado em Componentes principais {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-Os formulários localizados ajudam você a atender um público-alvo maior em todas as regiões geográficas. O fluxo de trabalho de tradução do Adobe Experience Manager ajuda a localizar o Adaptive Forms e seus documentos de registro. Você pode usar **tradução automática** ou **tradutores humanos** para localizar um Formulário adaptável.
+Os formulários localizados ajudam você a atender um público-alvo maior em todas as regiões geográficas. O fluxo de trabalho de tradução do Adobe Experience Manager ajuda a localizar o Adaptive Forms e seus documentos de registro. Você pode usar a **tradução automática** ou os **tradutores humanos** para localizar um Formulário adaptável.
 
 ## Traduzir um formulário adaptável e um documento de registro usando a tradução automática {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-O serviço de tradução automática traduz imediatamente seu conteúdo no formato adaptável e [Documento do registro](/help/forms/generate-document-of-record-core-components.md). O AEM Forms as a Cloud Service é pré-configurado para usar uma versão de avaliação do Microsoft Translator para tradução automática. Execute as seguintes etapas para habilitar a tradução automática para o Forms adaptável e o Documento de registro:
+O serviço de tradução automática traduz imediatamente seu conteúdo no Formulário adaptável e no [Documento de registro](/help/forms/generate-document-of-record-core-components.md). O AEM Forms as a Cloud Service é pré-configurado para usar uma versão de avaliação do Microsoft Translator para tradução automática. Execute as seguintes etapas para habilitar a tradução automática para o Forms adaptável e o Documento de registro:
 
-1. Na interface do usuário do AEM Forms, selecione um formulário e selecione a **[!UICONTROL Adicionar dicionário]** opção.
-1. Na tela Adicionar dicionário ao projeto de tradução, para o **[!UICONTROL Projeto]** opção
+1. Na interface do usuário do AEM Forms, selecione um formulário e a opção **[!UICONTROL Adicionar dicionário]**.
+1. Na tela Adicionar Dicionário ao Projeto de Tradução, para a opção **[!UICONTROL Projeto]**
 
-   * Para criar um projeto de tradução, selecione a **[!UICONTROL Criar um novo projeto de tradução]** e no campo **Título do projeto** especifique o título. Por exemplo, `Government Reference Site - German locale.`
-   * Para adicionar um novo dicionário a um projeto de tradução existente, selecione **[!UICONTROL Adicionar a um projeto de tradução existente]** e selecione uma **[!UICONTROL Projeto de tradução existente]**.
-1. No **Idiomas de destino** especifique um local (Por exemplo, `German(de)`). Você pode especificar várias localidades. O formulário é traduzido para todas as localidades especificadas no **Idiomas de destino** campo. Clique em **Concluído**.
-1. Na caixa de diálogo Dicionário adicionado, clique em **Abrir Projetos**.
-1. Na tela Projetos, clique no projeto criado. Por exemplo, clique no link **Site de referência do governo - Local na Alemanha** bloco.
-1. No **Tarefa de tradução** lado a lado, clique no link ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Início**. O status do bloco muda para Rascunho. Na conclusão da tradução, o status muda para **Aprovado**. Atualize a página após alguns minutos e verifique o status.
+   * Para criar um projeto de tradução, selecione a opção **[!UICONTROL Criar um novo projeto de tradução]** e, no campo **Título do projeto**, especifique o título. Por exemplo, `Government Reference Site - German locale.`
+   * Para adicionar um novo dicionário a um projeto de tradução existente, selecione a opção **[!UICONTROL Adicionar a um projeto de tradução existente]** e selecione um **[!UICONTROL Projeto de tradução existente]**.
+1. No campo **Idiomas de Destino**, especifique uma localidade (por exemplo, `German(de)`). Você pode especificar várias localidades. O formulário é traduzido para todas as localidades especificadas no campo **Idiomas de Destino**. Clique em **Concluído**.
+1. Na caixa de diálogo Dicionário Adicionado, clique em **Abrir Projetos**.
+1. Na tela Projetos, clique no projeto criado. Por exemplo, clique no bloco **Site de Referência do Governo - Local alemão**.
+1. No bloco **Trabalho de Tradução**, clique no ícone ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Iniciar**. O status do bloco muda para Rascunho. Na conclusão da tradução, o status muda para **Aprovado**. Atualize a página após alguns minutos e verifique o status.
 
    ![Iniciar tradução](/help/forms/assets/adaptive-forms-core-components-start-translation.png)
-1. Depois que o status for alterado para **Aprovado** no **Tarefa de tradução** lado a lado, clique no link ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Concluído**.
+1. Depois que o status for alterado para **Aprovado** no bloco **Trabalho de Tradução**, clique no ícone ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Concluído**.
 
-1. Para visualizar o formulário localizado, na interface do usuário do AEM Forms, selecione o formulário localizado. Clique em **[!UICONTROL Visualizar]** >**[!UICONTROL Visualizar como HTML]**. Reabra o formulário depois de adicionar o `afAcceptLang=<locale code>` ao URL do formulário. Por exemplo, adicione `afAcceptLang=de`para abrir a versão em alemão do formulário.
+1. Para visualizar o formulário localizado, na interface do usuário do AEM Forms, selecione o formulário localizado. Clique em **[!UICONTROL Visualizar]** >**[!UICONTROL Visualizar como HTML]**. Reabra o formulário depois de adicionar o `afAcceptLang=<locale code>` à URL do formulário. Por exemplo, adicione `afAcceptLang=de` para abrir a versão em alemão do formulário.
 
 
    >[!NOTE]
@@ -62,28 +62,28 @@ Para tradução, um dicionário contendo arquivos no formato XLIFF é compartilh
 
 Execute as seguintes etapas para localizar um formulário e seu documento de registro usando Tradutores Humanos:
 
-1. Na interface do usuário do AEM Forms, selecione um formulário e selecione a **[!UICONTROL Adicionar dicionário]** opção.
-1. Na tela Adicionar dicionário ao projeto de tradução, para o **[!UICONTROL Projeto]** opção
+1. Na interface do usuário do AEM Forms, selecione um formulário e a opção **[!UICONTROL Adicionar dicionário]**.
+1. Na tela Adicionar Dicionário ao Projeto de Tradução, para a opção **[!UICONTROL Projeto]**
 
-   * Para criar um projeto de tradução, selecione a **[!UICONTROL Criar um novo projeto de tradução]** e no campo **Título do projeto** especifique o título. Por exemplo, `Government Reference Site - German locale.`
-   * Para adicionar um novo dicionário a um projeto de tradução existente, selecione **[!UICONTROL Adicionar a um projeto de tradução existente]** e selecione uma **[!UICONTROL Projeto de tradução existente]**.
-1. No **Idiomas de destino** especifique um local (Por exemplo, `German(de)`). Você pode especificar várias localidades. O formulário é traduzido para todas as localidades especificadas no **Idiomas de destino** campo. Clique em **Concluído**.
-1. Na caixa de diálogo Dicionário adicionado, clique em **Abrir Projetos**.
-1. Na tela Projetos, clique no projeto criado. Por exemplo, clique no link **Site de referência do governo - Local na Alemanha** bloco.
-1. Na parte inferior do **Resumo** lado a lado, clique no link **reticências**. A tela Propriedades do projeto de tradução é aberta.
-1. Abra o **[!UICONTROL Avançado]** na parte superior da **Propriedades do projeto de tradução** tela. Para o **[!UICONTROL Campo de tradução]**, selecione **[!UICONTROL Tradução humana]**. Clique em **Salvar e fechar** na parte superior da tela.
-1. No **Tarefa de tradução** lado a lado, clique no link ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Exportar**. Na caixa de diálogo Exportar, clique na opção Baixar arquivo exportado. Ele baixa um arquivo .zip.
+   * Para criar um projeto de tradução, selecione a opção **[!UICONTROL Criar um novo projeto de tradução]** e, no campo **Título do projeto**, especifique o título. Por exemplo, `Government Reference Site - German locale.`
+   * Para adicionar um novo dicionário a um projeto de tradução existente, selecione a opção **[!UICONTROL Adicionar a um projeto de tradução existente]** e selecione um **[!UICONTROL Projeto de tradução existente]**.
+1. No campo **Idiomas de Destino**, especifique uma localidade (por exemplo, `German(de)`). Você pode especificar várias localidades. O formulário é traduzido para todas as localidades especificadas no campo **Idiomas de Destino**. Clique em **Concluído**.
+1. Na caixa de diálogo Dicionário Adicionado, clique em **Abrir Projetos**.
+1. Na tela Projetos, clique no projeto criado. Por exemplo, clique no bloco **Site de Referência do Governo - Local alemão**.
+1. Na parte inferior do bloco **Resumo**, clique nas **reticências**. A tela Propriedades do projeto de tradução é aberta.
+1. Abra a guia **[!UICONTROL Avançado]** na parte superior da tela **Propriedades do projeto de tradução**. Para o **[!UICONTROL Campo de tradução]**, selecione **[!UICONTROL Tradução humana]**. Clique em **Salvar e fechar** na parte superior da tela.
+1. No bloco **Trabalho de Tradução**, clique no ícone ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Exportar**. Na caixa de diálogo Exportar, clique na opção Baixar arquivo exportado. Ele baixa um arquivo .zip.
    ![Exportar arquivo de tradução](/help/forms/assets/adaptive-forms-core-components-start-translation-export.png)
 1. Extraia o arquivo .zip baixado. A pasta extraída tem dois arquivos:
    * Translation_export_summary.xml
-   * [formulário-campos-arquivo].xml.
-1. Abra o [formulário-campos-arquivo].xml para edição. Adicione as cadeias de caracteres e mensagens localizadas para campos de formulário. Salvar e fechar o arquivo.
-1. Compactar os arquivos de Translation_export_summary.xml e [formulário-campos-arquivo].xml.
-1. No **Tarefa de tradução** lado a lado, clique no link ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Importar**. Selecione o arquivo contendo [formulário-campos-arquivo].xml. com strings e mensagens localizadas para campos de formulário.
+   * [arquivo-campos-formulário].xml.
+1. Abra o [arquivo-campos-formulário].xml para edição. Adicione as cadeias de caracteres e mensagens localizadas para campos de formulário. Salvar e fechar o arquivo.
+1. Compacte os arquivos de Translation_export_summary.xml e [form-fields-file].xml.
+1. No bloco **Trabalho de Tradução**, clique no ícone ![aem62forms_downarrow](assets/aem62forms_downarrow.png) e clique em **Importar**. Selecione o arquivo contendo [form-fields-file].xml. com strings e mensagens localizadas para campos de formulário.
 
    ![Importar arquivo de tradução](/help/forms/assets/adaptive-forms-core-components-start-translation-import.png)
 
-1. Para visualizar o formulário localizado, na interface do usuário do AEM Forms, selecione o formulário localizado. Clique em **[!UICONTROL Visualizar]** >**[!UICONTROL Visualizar como HTML]**. Reabra o formulário depois de adicionar o `afAcceptLang=<locale code>` ao URL do formulário. Por exemplo, adicione `afAcceptLang=de`para abrir a versão em alemão do formulário.
+1. Para visualizar o formulário localizado, na interface do usuário do AEM Forms, selecione o formulário localizado. Clique em **[!UICONTROL Visualizar]** >**[!UICONTROL Visualizar como HTML]**. Reabra o formulário depois de adicionar o `afAcceptLang=<locale code>` à URL do formulário. Por exemplo, adicione `afAcceptLang=de` para abrir a versão em alemão do formulário.
 
 ## Consulte também {#see-also}
 

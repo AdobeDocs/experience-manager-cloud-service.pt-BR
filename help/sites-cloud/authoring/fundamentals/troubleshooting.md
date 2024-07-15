@@ -18,7 +18,7 @@ A seção a seguir aborda alguns problemas que você poderá enfrentar ao usar o
 * **Problema**:
    * Você fez alterações em uma página e a publicou no site de publicação, mas a versão *antiga* da página está sendo mostrada no site de publicação.
 * **Motivo**:
-   * Isso pode ter várias causas, mais frequentemente o cache (seu navegador local ou o Dispatcher), embora possa, às vezes, ser um problema com a fila de replicação.
+   * Isso pode ter várias causas, mais frequentemente o cache (o navegador local ou o Dispatcher), embora possa, às vezes, ser um problema com a fila de replicação.
 * **Soluções**:
    * Há várias possibilidades aqui:
    * Confirme se a página foi replicada corretamente. Verifique o status da página e, se necessário, o estado da fila de replicação.

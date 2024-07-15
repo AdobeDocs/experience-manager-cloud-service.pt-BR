@@ -21,7 +21,7 @@ Quando uma inicialização é criada para uma página (ou conjunto de páginas),
 1. Acesse [Inicialização a partir de Referências (console Sites)](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console) para mostrar as ações disponíveis.
 1. Selecionar **Ir para a página** para abrir a página para edição.
 
-Ao editar a página, você pode ver uma indicação na barra de ferramentas superior, junto com o **Sair** e **Navegar** opções:
+Ao editar a página, você pode ver uma indicação na barra de ferramentas superior, junto com as opções **Sair** e **Navegar**:
 
 ![Sair e navegar lançamento no editor de páginas](/help/sites-cloud/authoring/assets/launches-edit-01.png)
 

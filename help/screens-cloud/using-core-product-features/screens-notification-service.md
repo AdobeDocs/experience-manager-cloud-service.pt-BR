@@ -35,4 +35,4 @@ Na AEM Screens Cloud, os clientes podem solicitar um relatório sobre o status d
 
 ### Exemplo de caso de uso
 
-Se você definir a hora do relatório como 5 am e o tempo limite de ping como 1 hora, se o dispositivo Screens não executar ping entre 4:00 e 5:00 am, você receberá uma notificação por email confirmando a inatividade do dispositivo.
+Se você definir a hora do relatório como 5 am e o tempo limite de ping como 1 hora, e seu dispositivo Screens não executar ping entre 4:00 am e 5:00 am, você receberá uma notificação por email confirmando a inatividade do dispositivo.

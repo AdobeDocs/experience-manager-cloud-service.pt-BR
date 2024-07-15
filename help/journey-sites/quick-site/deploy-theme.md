@@ -39,9 +39,9 @@ Essa parte da jornada se aplica ao desenvolvedor de front-end.
 
 ## Iniciar o pipeline {#start-pipeline}
 
-Depois de confirmar as alterações de personalização de tema no repositório Git do AEM, você pode executar [o pipeline que o administrador criou](pipeline-setup.md) para implantar as alterações.
+Depois de confirmar as alterações de personalização de tema no repositório Git do AEM, você poderá executar [o pipeline que o administrador criou](pipeline-setup.md) para implantar as alterações.
 
-1. Faça logon no Cloud Manager [como você fez para recuperar as informações de acesso do Git](retrieve-access.md) e acesse seu programa. No **Visão geral** , você verá um cartão para **Pipelines**.
+1. Faça logon no Cloud Manager [como você fez para recuperar as informações de acesso do Git](retrieve-access.md) e acesse seu programa. Na guia **Visão geral**, você verá um cartão para **Pipelines**.
 
    ![Visão geral do Cloud Manager](assets/cloud-manager-overview.png)
 
@@ -49,7 +49,7 @@ Depois de confirmar as alterações de personalização de tema no repositório 
 
    ![Executar pipeline](assets/run-pipeline.png)
 
-1. No **Executar pipeline** caixa de diálogo de confirmação, selecione **Sim**.
+1. Na caixa de diálogo de confirmação **Executar pipeline**, selecione **Sim**.
 
    ![Confirmar execução do pipeline](assets/pipeline-confirm.png)
 
@@ -71,7 +71,7 @@ Depois de confirmar as alterações de personalização de tema no repositório 
 
 >[!TIP]
 >
->Na janela de detalhes do pipeline, você pode selecionar **Baixar log** para qualquer etapa do pipeline para fins de depuração, se qualquer etapa falhar. A depuração do pipeline está fora do escopo dessa jornada. Consulte os documentos técnicos do Cloud Manager na seção [Recursos adicionais](#additional-resources) desta página.
+>Na janela de detalhes do pipeline, você pode selecionar **Baixar log** para qualquer etapa do pipeline para fins de depuração, caso haja falha em alguma etapa. A depuração do pipeline está fora do escopo dessa jornada. Consulte os documentos técnicos do Cloud Manager na seção [Recursos adicionais](#additional-resources) desta página.
 
 ## Validar as personalizações implantadas {#view-customizations}
 
@@ -115,9 +115,9 @@ Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos me
 * [Tema de site do AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - este é o repositório GitHub do tema de site do AEM.
 * [npm](https://www.npmjs.com) - temas do AEM usados para criar sites rapidamente se baseiam em npm.
 * [webpack](https://webpack.js.org) - temas do AEM usados para criar sites rapidamente dependem do webpack.
-* [Organizar páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Este guia detalha como organizar páginas do seu site AEM.
-* [Criação de páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Este guia detalha como adicionar novas páginas ao site.
-* [Gerenciamento de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Este guia detalha como gerenciar as páginas do site, incluindo movimentação, cópia e exclusão.
+* [Organizando páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Este guia detalha como organizar páginas do seu site AEM.
+* [Criando Páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Este guia detalha como adicionar novas páginas ao site.
+* [Gerenciando Páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Este guia detalha como gerenciar as páginas do site, incluindo movimentação, cópia e exclusão.
 * [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md) - Os pacotes permitem a importação e exportação de conteúdo do repositório. Este documento explica como trabalhar com pacotes no AEM 6.5, o que também se aplica ao AEMaaCS.
 * [Jornada de integração](/help/journey-onboarding/overview.md) - este guia serve como ponto de partida para garantir que suas equipes estejam preparadas e tenham acesso ao AEM as a Cloud Service.
 * [Documentação do Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) - explore a documentação do Cloud Manager para obter detalhes completos sobre seus recursos.

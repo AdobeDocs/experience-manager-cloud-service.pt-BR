@@ -22,18 +22,18 @@ Este guia fornece instruções passo a passo sobre como criar blocos instrumenta
 
 Este guia requer necessariamente conhecimento existente de criação WYSIWYG com projetos Edge Delivery Services, bem como o editor universal. Antes de começar este guia, você já deve ter acesso aos Edge Delivery Services e estar familiarizado com as suas noções básicas, incluindo:
 
-* Você concluiu o [Tutorial do Edge Delivery Service.](/help/edge/developer/tutorial.md)
-* Você tem acesso a um [sandbox AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* Você tem [ativou o Editor universal no mesmo ambiente de sandbox.](/help/implementing/universal-editor/getting-started.md)
-* Você concluiu o [Guia de introdução do desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guia.
+* Você concluiu o [tutorial do Edge Delivery Service.](/help/edge/developer/tutorial.md)
+* Você tem acesso a uma [sandbox da AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+* Você [habilitou o Editor Universal no mesmo ambiente de sandbox.](/help/implementing/universal-editor/getting-started.md)
+* Você concluiu o [Guia de Introdução do Desenvolvedor para criação WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
-Este guia tem como base o trabalho realizado na [Guia de introdução do desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guia.
+Este guia se baseia no trabalho realizado no [Guia de Introdução do Desenvolvedor para criação WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Adicionar um novo bloco ao seu projeto {#add-block}
 
 Neste guia, você criará um bloco para renderizar uma cotação memorável em sua página.
 
-Para simplificar este exemplo, todas as alterações são feitas no `main` ramificação do repositório do projeto. É claro que para o seu projeto real, [você deve seguir as práticas recomendadas de desenvolvimento](https://www.aem.live/docs/dev-collab-and-good-practices) desenvolvendo em uma ramificação diferente e revisando todas as alterações por meio de uma solicitação de pull antes de mesclar com `main`.
+Para simplificar este exemplo, todas as alterações são feitas na ramificação `main` do repositório do projeto. É claro que, para seu projeto real, [você deve seguir as práticas recomendadas de desenvolvimento](https://www.aem.live/docs/dev-collab-and-good-practices) desenvolvendo em uma ramificação diferente e revisando todas as alterações por meio de uma solicitação de pull antes de mesclar com o `main`.
 
 A Adobe recomenda que você desenvolva blocos em uma abordagem de três fases:
 
@@ -45,13 +45,13 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 ### Criar Definição e Modelo de Bloco {#create-block-model}
 
-1&amp;período; Clonar o projeto GitHub localmente que você criou na [Guia de introdução do desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) guia e abra-o em um editor de sua escolha.
+1&amp;ponto; Clona o projeto GitHub localmente criado no [Guia de Introdução do Desenvolvedor para criação WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e o abre em um editor de sua escolha.
 
 * O código Microsoft é usado aqui para fins ilustrativos.
 
-![Clonagem do projeto](assets/create-block/clone.png)
+![Clonando o projeto](assets/create-block/clone.png)
 
-2&amp;período; Editar o `component-definition.json` arquivo na raiz do projeto, adicione a seguinte definição para o novo bloco de cotação e salve o arquivo.
+2&amp;ponto; Edite o arquivo `component-definition.json` na raiz do projeto e adicione a seguinte definição para seu novo bloco de aspas e salve o arquivo.
 
 >[!BEGINTABS]
 
@@ -79,11 +79,11 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 >[!TAB Captura de tela]
 
-![Editar o arquivo component-definitions.json para definir o bloco de citação](assets/create-block/component-definitions.png)
+![Editar o arquivo component-definitions.json para definir o bloco de aspas](assets/create-block/component-definitions.png)
 
 >[!ENDTABS]
 
-3&amp;período; Editar o `component-models.json` na raiz do projeto e adicione o seguinte [definição de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para o novo bloco de cotação e salve o arquivo.
+3&amp;ponto; Edite o arquivo `component-models.json` na raiz do projeto e adicione a seguinte [definição de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para seu novo bloco de aspas e salve o arquivo.
 
 * Consulte o documento [Modelagem de conteúdo para criação WYSIWYG com projetos Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para obter mais informações sobre o que é importante considerar ao criar modelos de conteúdo.
 
@@ -115,11 +115,11 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 >[!TAB Captura de tela]
 
-![Editar o arquivo component-models.json para definir o modelo do bloco de cotação](assets/create-block/component-models.png)
+![Editando o arquivo component-models.json para definir o modelo do bloco de aspas](assets/create-block/component-models.png)
 
 >[!ENDTABS]
 
-4&amp;período; Editar o `component-filters.json` arquivo na raiz do projeto e adicione o bloco de orçamento à [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que o bloco seja adicionado a qualquer seção e salve o arquivo.
+4&amp;ponto; Edite o arquivo `component-filters.json` na raiz do projeto e adicione o bloco de aspas à [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que o bloco seja adicionado a qualquer seção e salve o arquivo.
 
 >[!BEGINTABS]
 
@@ -143,44 +143,44 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 >[!TAB Captura de tela]
 
-![Editar o arquivo component-filters.json para definir os filtros para o bloco de cotação](assets/create-block/component-filters.png)
+![Editar o arquivo component-filters.json para definir os filtros para o bloco de aspas](assets/create-block/component-filters.png)
 
 >[!ENDTABS]
 
-5&amp;ponto; usando o Git, confirme essas alterações no `main` filial.
+5&amp;ponto; Usando o Git, confirme essas alterações na ramificação `main`.
 
-* Submetendo a `main` é apenas para fins ilustrativos. [Seguir as práticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) e use uma solicitação de pull para o trabalho real do projeto.
+* A confirmação de `main` é apenas para fins ilustrativos. [Siga as práticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) e use uma solicitação de pull para o trabalho real do projeto.
 
 ### Criar conteúdo com o bloco {#create-content}
 
 Agora que o bloco de cotação básico está definido e comprometido com o projeto de amostra, é possível adicionar um bloco de cotação a uma página existente.
 
-1. Em um navegador, entre no AEM as a Cloud Service. [Usando o console Sites,](/help/sites-cloud/authoring/basic-handling.md) navegue até o site que você criou na [Guia de introdução do desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e selecione uma página.
+1. Em um navegador, faça logon no AEM as a Cloud Service. [Usando o console Sites](/help/sites-cloud/authoring/basic-handling.md), navegue até o site criado no [Guia de Introdução do Desenvolvedor para criação WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e selecione uma página.
 
-   * Nesse caso, `index` é utilizada para fins ilustrativos.
+   * Neste caso, `index` é usado para fins ilustrativos.
 
-   ![Seleção da página de índice no console Sites](assets/create-block/sites-console.png)
+   ![Selecionando a página de índice no console Sites](assets/create-block/sites-console.png)
 
-1. Toque ou clique **Editar** na barra de ferramentas do console e no Editor universal se abre.
+1. Toque ou clique em **Editar** na barra de ferramentas do console e o Editor universal será aberto.
 
-   * Para carregar a página, talvez seja necessário tocar ou clicar em **Entrar com o Adobe** para autenticar no AEM no Editor universal.
+   * Para carregar a página, talvez seja necessário tocar ou clicar em **Entrar com o Adobe** para autenticar para AEM no Editor Universal.
 
-1. No Editor universal, selecione uma seção. No painel de propriedades, toque ou clique no **Adicionar** e selecione o novo **Aspas** bloquear no menu.
+1. No Editor universal, selecione uma seção. No painel de propriedades, toque ou clique no ícone **Adicionar** e selecione o novo bloco **Cotação** no menu.
 
-   * A variável **Adicionar** O ícone é um símbolo de mais.
+   * O ícone **Adicionar** é um símbolo de mais.
    * Você sabe que selecionou uma seção se o contorno azul do objeto selecionado tiver uma guia rotulada **Seção**.
-   * Neste exemplo, tocar ou clicar um pouco acima do **Lorem Ipsum** cabeçalho seleciona uma seção que contém o cabeçalho e o texto lorem ipsum.
+   * Neste exemplo, tocar ou clicar um pouco acima do cabeçalho **Lorem Ipsum** seleciona uma seção que contém o cabeçalho e o texto lorem ipsum.
 
-   ![Selecionar uma seção no Editor universal](assets/create-block/add-quote-block.png)
+   ![Selecione uma seção no Editor Universal](assets/create-block/add-quote-block.png)
 
-1. A página é recarregada e o bloco de aspas é adicionado à parte inferior da seção selecionada com o conteúdo padrão especificado no `component-definitions.json` arquivo.
+1. A página é recarregada e o bloco de aspas é adicionado à parte inferior da seção selecionada com o conteúdo padrão especificado no arquivo `component-definitions.json`.
 
    * O bloco de aspas pode ser selecionado e editado como qualquer outro bloco no local ou no painel de propriedades.
    * O estilo será aplicado em outra etapa.
 
    ![A página com o novo bloco de aspas na seção selecionada](assets/create-block/quote-added.png)
 
-1. Quando estiver satisfeito com o conteúdo da sua cotação, você poderá publicar a página tocando ou clicando no **Publish** na barra de ferramentas do Editor universal.
+1. Quando estiver satisfeito com o conteúdo da sua cotação, você poderá publicar a página tocando ou clicando no botão **Publish** na barra de ferramentas do Editor Universal.
 
 1. Verifique se o conteúdo foi publicado navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.hlx.page`
 
@@ -190,13 +190,13 @@ Agora que o bloco de cotação básico está definido e comprometido com o proje
 
 Agora que você tem um bloco de cotação de trabalho, é possível aplicar o estilo a ele.
 
-1&amp;ponto; Retorne ao editor do projeto.
+1&amp;ponto; Retornar ao editor do seu projeto.
 
-2&amp;período; Criar um `quote` pasta sob o `blocks` pasta.
+2&amp;ponto; Crie uma pasta `quote` na pasta `blocks`.
 
-![Criar uma pasta de cotações](assets/create-block/new-folder.png)
+![Criar uma pasta de cotação](assets/create-block/new-folder.png)
 
-3&amp;período; No novo `quote` pasta, adicione um `quote.js` arquivo para implementar a decoração de blocos, adicionando o seguinte JavaScript e salvando o arquivo.
+3&amp;ponto; Na nova pasta `quote`, adicione um arquivo `quote.js` para implementar a decoração de blocos, adicionando o seguinte JavaScript e salvando o arquivo.
 
 >[!BEGINTABS]
 
@@ -214,11 +214,11 @@ export default function decorate(block) {
 
 >[!TAB Captura de tela]
 
-![Adição de JavaScript para decorar o bloco](assets/create-block/quote-js.png)
+![Adicionando JavaScript para decorar o bloco](assets/create-block/quote-js.png)
 
 >[!ENDTABS]
 
-4&amp;período; No `quote` pasta, adicione um `quote.css` arquivo para definir o estilo do bloco, adicionando o seguinte código CSS e salvando o arquivo.
+4&amp;ponto; Na pasta `quote`, adicione um arquivo `quote.css` para definir o estilo do bloco, adicionando o seguinte código CSS e salvando o arquivo.
 
 >[!BEGINTABS]
 
@@ -259,21 +259,21 @@ export default function decorate(block) {
 
 >[!TAB Captura de tela]
 
-![Adição de CSS para definir o estilo do bloco](assets/create-block/quote-css.png)
+![Adicionando CSS para definir o estilo do bloco](assets/create-block/quote-css.png)
 
 >[!ENDTABS]
 
-5&amp;ponto; usando o Git, confirme essas alterações no `main` filial.
+5&amp;ponto; Usando o Git, confirme essas alterações na ramificação `main`.
 
-* Submetendo a `main` é apenas para fins ilustrativos. [Seguir as práticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) e use uma solicitação de pull para o trabalho real do projeto.
+* A confirmação de `main` é apenas para fins ilustrativos. [Siga as práticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) e use uma solicitação de pull para o trabalho real do projeto.
 
-6&amp;ponto; Retorne à guia do navegador do Editor universal, onde você estava editando a página do projeto, e recarregue a página para exibir seu bloco estilizado.
+6&amp;ponto; Retorne à guia do navegador do Editor universal, onde você estava editando a página do projeto, e recarregue a página para visualizar seu bloco estilizado.
 
-&amp;período; Veja o bloco de aspas agora estilizado na página.
+7&amp;ponto; veja o bloco de aspas agora estilizado na página.
 
 ![O bloco de aspas estilizado no Editor Universal](assets/create-block/quote-styled.png)
 
-8&amp;período; verifique se as alterações foram enviadas para produção navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;ponto; Verifique se as alterações foram enviadas para produção navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.hlx.page`
 
 ![O bloco de aspas publicado e estilizado](assets/create-block/quote-styled-published.png)
 
@@ -281,9 +281,9 @@ Parabéns! Agora você tem um bloco de cotação totalmente funcional e estiliza
 
 ### Opções de bloco {#block-options}
 
-Se você precisar de um bloco para parecer ou se comportar de forma um pouco diferente com base em determinadas circunstâncias, mas não for diferente o suficiente para se tornar um novo bloco em si, poderá deixar que os autores escolham entre [opções de bloqueio.](content-modeling.md#type-inference)
+Se você precisar de um bloco para ter aparência ou comportamento um pouco diferente com base em determinadas circunstâncias, mas não for diferente o suficiente para se tornar um novo bloco, poderá permitir que os autores escolham entre [opções de bloco.](content-modeling.md#type-inference)
 
-Ao adicionar um `classes` ao bloco, a propriedade renderizada no cabeçalho da tabela para blocos simples ou como lista de valores para itens em um bloco de contêiner.
+Ao adicionar uma propriedade `classes` ao bloco, a propriedade é renderizada no cabeçalho da tabela para blocos simples ou como lista de valores para itens em um bloco de contêiner.
 
 ```json
 {
@@ -325,19 +325,19 @@ Ao adicionar um `classes` ao bloco, a propriedade renderizada no cabeçalho da t
 
 ## Uso de outras ramificações de trabalho {#other-branches}
 
-Este guia exigia que você se comprometesse diretamente com a `main` por simplicidade. Para experimentação em um repositório de amostra, isso geralmente não é um problema. Para trabalho real do projeto, [você deve seguir as práticas recomendadas de desenvolvimento](https://www.aem.live/docs/dev-collab-and-good-practices) desenvolvendo em uma ramificação diferente e revisando todas as alterações por meio de uma solicitação de pull antes de mesclar com `main`.
+Por questões de simplicidade, este guia fez você confirmar diretamente na ramificação `main`. Para experimentação em um repositório de amostra, isso geralmente não é um problema. Para o trabalho real do projeto, [você deve seguir as práticas recomendadas de desenvolvimento](https://www.aem.live/docs/dev-collab-and-good-practices) desenvolvendo em uma ramificação diferente e revisando todas as alterações via solicitação de pull antes de mesclar com `main`.
 
-Quando você não estiver desenvolvendo no `main` ramificação, é possível anexar `?ref=<branch>` na barra de localização do Editor universal para carregar a página da sua ramificação. `<branch>` é o nome da ramificação como seria usado para a visualização do seu projeto ou URLs ativos, por exemplo, `https://<branch>--<repo>--<owner>.hlx.page`.
+Quando você não estiver desenvolvendo na ramificação `main`, poderá anexar `?ref=<branch>` na barra de localização do Editor Universal para carregar a página da ramificação. `<branch>` é o nome da ramificação como seria usado para a visualização do seu projeto ou URLs ativas, por exemplo, `https://<branch>--<repo>--<owner>.hlx.page`.
 
-A publicação de conteúdo com um novo modelo só é permitida quando o modelo é mesclado com a variável `main` filial.
+Só há suporte para a publicação de conteúdo com um novo modelo quando o modelo é mesclado à ramificação `main`.
 
 ## Próximas etapas {#next-steps}
 
 Agora que você sabe como criar blocos, é essencial entender como modelar o conteúdo de uma maneira semântica para alcançar uma experiência simplificada do desenvolvedor.
 
-Consulte o documento [Modelagem de conteúdo para criação WYSIWYG com projetos Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para saber como a modelagem de conteúdo funciona para a criação WYSIWYG com projetos Edge Delivery Services.
+Consulte o documento [Modelagem de conteúdo para criação WYSIWYG com projetos Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para saber como funciona a modelagem de conteúdo para criação WYSIWYG com projetos Edge Delivery Services.
 
 >[!TIP]
 >
->Para obter uma apresentação completa da criação de um novo projeto Edge Delivery Services habilitado para criação WYSIWYG com AEM as a Cloud Service como fonte de conteúdo, visualize [este webinário de GEMs AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para obter uma apresentação completa da criação de um novo projeto Edge Delivery Services habilitado para criação WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
 

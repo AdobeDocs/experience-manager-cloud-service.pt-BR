@@ -85,7 +85,7 @@ Se as ações instaladas não atenderem aos seus requisitos, você poderá [Cria
 
 ### Criação de uma configuração de implantação {#creating-a-rollout-configuration}
 
-Você pode [criar uma configuração de implantação](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) quando as configurações de implantação instaladas não atenderem aos requisitos do aplicativo, execute as etapas a seguir.
+Você pode [criar uma configuração de implantação](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) quando as configurações instaladas não atenderem aos requisitos do aplicativo, executando as etapas a seguir.
 
 1. [Crie a configuração de implantação-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
 1. [Adicione ações de sincronização à configuração de implantação.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
@@ -96,7 +96,7 @@ A nova configuração de implantação está então disponível ao definir confi
 
 Você pode configurar vários serviços OSGi que suportam ações de sincronização correspondentes para que eles não afetem tipos de nó e propriedades específicos. Por exemplo, muitas propriedades e nós secundários relacionados ao funcionamento interno do AEM não devem ser incluídos em uma Live Copy. Somente o conteúdo relevante para o usuário da página deve ser copiado.
 
-Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços. Consulte [Configuração do OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços. Consulte [Configurar OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 A tabela a seguir lista as ações de sincronização para as quais você pode especificar os nós a serem excluídos. A tabela fornece os nomes dos serviços a serem configurados usando o console da Web e o PID para configurar usando um nó de repositório.
 
@@ -135,7 +135,7 @@ Por exemplo, se você quiser que o **Título** da página seja incluído nas alt
 
 Você pode configurar vários serviços OSGi que oferecem suporte às ações de sincronização correspondentes relacionadas à atualização de referências.
 
-Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços. Consulte [Configuração do OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
+Ao trabalhar com o AEM, há vários métodos de gerenciamento das definições de configuração desses serviços. Consulte [Configurar OSGi](/help/implementing/deploying/configuring-osgi.md) para obter mais detalhes e as práticas recomendadas.
 
 A tabela a seguir lista as ações de sincronização para as quais você pode especificar a atualização de referência. A tabela fornece os nomes dos serviços a serem configurados usando o console da Web e o PID para configurar usando um nó de repositório.
 
@@ -175,7 +175,7 @@ Também é possível definir as configurações de implantação para uma págin
 
    ![Herança da Live Copy da página principal](../assets/live-copy-inherit.png)
 
-1. Se necessário, ajuste a variável **Herança da Live Copy** sinalizador. Se essa opção for marcada, a configuração da Live Copy terá efeito em todas as tarefas derivadas.
+1. Se necessário, ajuste o sinalizador **Herança da Live Copy**. Se essa opção for marcada, a configuração da Live Copy terá efeito em todas as tarefas derivadas.
 
 1. Limpe a propriedade **Herdar configurações de implantação da página principal** e selecione uma ou mais configurações de implantação na lista.
 
@@ -183,7 +183,7 @@ Também é possível definir as configurações de implantação para uma págin
 
    ![Substituição da herança de configuração da Live Copy](../assets/live-copy-inherit-override.png)
 
-1. Selecionar **Salvar e fechar**.
+1. Selecione **Salvar e fechar**.
 
 ### Definir a configuração de implantação de uma página do blueprint {#setting-the-rollout-configuration-for-a-blueprint-page}
 

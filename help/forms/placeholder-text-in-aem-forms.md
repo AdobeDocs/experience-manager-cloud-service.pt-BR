@@ -21,15 +21,15 @@ O texto de espaço reservado representa uma palavra ou frase curta. Tem como obj
 
 **A.** Componente de data com texto de espaço reservado **B.** Componente de data sem texto de espaço reservado
 
-[!DNL AEM Forms] suporte a texto de espaço reservado para campos de caixa Senha, Seletor de data, caixa Numérica e caixa de texto.\
+O [!DNL AEM Forms] oferece suporte ao texto de espaço reservado para campos de caixa de senha, seletor de datas, caixa numérica e caixa de texto.\
 Os textos de marcadores de posição não são suportados para o widget de data nativo do HTML5. Para especificar um texto de Espaço Reservado:
 
-1. Clique com o botão direito do mouse em um componente que suporte Texto para espaço reservado e clique **Editar**. A caixa de diálogo Editar componente é exibida.
+1. Clique com o botão direito do mouse em um componente que ofereça suporte ao Texto do Espaço Reservado e clique em **Editar**. A caixa de diálogo Editar componente é exibida.
 
-1. Abra o **Título e texto** guia.
-1. Especifique uma palavra ou uma frase curta na variável **Caixa de texto Espaço reservado**. Clique em **OK**.
+1. Abra a guia **Título e texto**.
+1. Especifique uma palavra ou uma frase curta na **caixa de texto Espaço Reservado**. Clique em **OK**.
 
 >[!NOTE]
 >
->O texto do espaço reservado não é suportado no [!DNL Microsoft Internet Explorer 9].
+>Não há suporte para texto de espaço reservado em [!DNL Microsoft Internet Explorer 9].
 

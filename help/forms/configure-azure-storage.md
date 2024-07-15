@@ -11,47 +11,47 @@ ht-degree: 1%
 
 ---
 
-# Configurar [!DNL Azure] armazenamento {#configure-azure-storage}
+# Configurar armazenamento do [!DNL Azure] {#configure-azure-storage}
 
 
 ![integração de dados](assets/data-integeration.png)
 
-[[!DNL Experience Manager Forms] Integração de dados](data-integration.md) fornece um [!DNL Azure] configuração de armazenamento para integrar formulários com o [!DNL Azure] serviços de armazenamento. O Modelo de dados de formulário (FDM) pode ser usado para criar o Forms adaptável que interage com o [!DNL Azure] servidor para habilitar workflows de negócios. Por exemplo:
+A [[!DNL Experience Manager Forms] Integração de Dados](data-integration.md) fornece uma configuração de armazenamento [!DNL Azure] para integrar formulários com serviços de armazenamento [!DNL Azure]. O Modelo de Dados de Formulário (FDM) pode ser usado para criar o Forms Adaptável que interage com o servidor [!DNL Azure] para habilitar fluxos de trabalho de negócios. Por exemplo:
 
-* Gravar dados em [!DNL Azure] no envio do Formulário adaptável.
-* Gravar dados em [!DNL Azure] por meio de entidades personalizadas definidas no Modelo de dados de formulário (FDM) e vice-versa.
-* Query [!DNL Azure] servidor para dados e pré-popular o Adaptive Forms.
-* Ler dados de [!DNL Azure] servidor.
+* Gravar dados em [!DNL Azure] no envio do Formulário Adaptável.
+* Grave dados em [!DNL Azure] por meio de entidades personalizadas definidas no Modelo de Dados de Formulário (FDM) e vice-versa.
+* Consulte o servidor [!DNL Azure] para obter dados e popular previamente o Forms Adaptável.
+* Ler dados do servidor [!DNL Azure].
 
-## Criar [!DNL Azure] configuração de armazenamento {#create-azure-storage-configuration}
+## Criar configuração de armazenamento [!DNL Azure] {#create-azure-storage-configuration}
 
-Antes de executar essas etapas, verifique se você tem uma [!DNL Azure] conta de armazenamento e uma chave de acesso para autorizar o acesso à [!DNL Azure] conta de armazenamento.
+Antes de executar essas etapas, verifique se você tem uma conta de armazenamento [!DNL Azure] e uma chave de acesso para autorizar o acesso à conta de armazenamento [!DNL Azure].
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Armazenamento do Azure]**.
 1. Selecione uma pasta para criar a configuração e selecione **[!UICONTROL Criar]**.
-1. Especifique um título para a configuração no campo **[!UICONTROL Título]** campo.
-1. Especifique o nome do [!DNL Azure] conta de armazenamento na **[!UICONTROL Conta de armazenamento do Azure]** campo.
-1. Especifique a chave para acessar a conta de armazenamento do Azure no **[!UICONTROL Chave de Acesso do Azure]** e selecione **[!UICONTROL Salvar]**.
+1. Especifique um título para a configuração no campo **[!UICONTROL Título]**.
+1. Especifique o nome da conta de armazenamento [!DNL Azure] no campo **[!UICONTROL Conta de Armazenamento do Azure]**.
+1. Especifique a chave para acessar a conta de armazenamento do Azure no campo **[!UICONTROL Chave de Acesso do Azure]** e selecione **[!UICONTROL Salvar]**.
 
 ## Criar modelo de dados do formulário {#create-azure-form-data-model}
 
-Depois de criar o [!DNL Azure] configuração de armazenamento, você pode [criar o modelo de dados do formulário](create-form-data-models.md). Especifique a pasta que contém o [!DNL Azure] configuração no **[!UICONTROL Configuração da fonte de dados]** ao criar o Modelo de dados de formulário (FDM). Em seguida, você pode selecionar a configuração na lista de configurações que existem no nome da pasta especificada.
+Depois de criar a configuração de armazenamento [!DNL Azure], você pode [criar o Modelo de Dados de Formulário](create-form-data-models.md). Especifique a pasta que contém a configuração [!DNL Azure] no campo **[!UICONTROL Configuração do Data Source]** ao criar o Modelo de Dados de Formulário (FDM). Em seguida, você pode selecionar a configuração na lista de configurações que existem no nome da pasta especificada.
 
-### Adicionar [!DNL Azure] serviços para o modelo de dados do formulário {#add-azure-services}
+### Adicionar serviços do [!DNL Azure] ao modelo de dados de formulário {#add-azure-services}
 
-Depois de criar o Modelo de dados de formulário (FDM) e os objetos de modelo de dados, você pode adicionar [!DNL Azure] para o Modelo de dados de formulário (FDM).
+Depois de criar o Modelo de dados de formulário (FDM) e objetos de modelo de dados, você pode adicionar [!DNL Azure] serviços ao Modelo de dados de formulário (FDM).
 
-Para adicionar [!DNL Azure] serviços:
+Para adicionar serviços do [!DNL Azure]:
 
-1. No modo Editar, selecione os serviços na **[!UICONTROL Serviços]** no painel esquerdo e selecione **[!UICONTROL Adicionar selecionado]**. Os serviços selecionados são exibidos no **[!UICONTROL Serviços]** do Modelo de dados de formulário (FDM).
+1. No modo de Edição, selecione os serviços na seção **[!UICONTROL Serviços]** no painel esquerdo e selecione **[!UICONTROL Adicionar Selecionados]**. Os serviços selecionados são exibidos na guia **[!UICONTROL Serviços]** do Form Data Model (FDM).
 
-   ![Adicionar serviços selecionados](assets/select-services.png)
+   ![Adicionar Serviços Selecionados](assets/select-services.png)
 
-1. No **[!UICONTROL Serviços]** , selecione o serviço e **[!UICONTROL Editar propriedades]**. Com base no serviço, defina os objetos de modelo de entrada ou saída do serviço.
+1. Na guia **[!UICONTROL Serviços]**, selecione o serviço e **[!UICONTROL Editar Propriedades]**. Com base no serviço, defina os objetos de modelo de entrada ou saída do serviço.
 
-1. Selecionar **[!UICONTROL Salvar]** para salvar o modelo de dados de formulário (FDM).
+1. Selecione **[!UICONTROL Salvar]** para salvar o modelo de dados de formulário (FDM).
 
-   A tabela a seguir descreve as opções disponíveis [!DNL Azure] serviços:
+   A tabela a seguir descreve os serviços [!DNL Azure] disponíveis:
 
    <table>
     <tbody>
@@ -94,9 +94,9 @@ Para adicionar [!DNL Azure] serviços:
 
 Para definir uma propriedade de objeto de modelo de dados como uma chave de pesquisa:
 
-1. No **[!UICONTROL Modelo]** , selecione a propriedade do objeto de modelo de dados e selecione **[!UICONTROL Editar propriedades]**.
-1. Alterne a **[!UICONTROL Chave de pesquisa]** alternar para o estado ATIVADO. Essa opção está disponível somente para tipos de dados primários.
-1. Selecionar **[!UICONTROL Concluído]** e selecione **[!UICONTROL Salvar]** para salvar o Modelo de dados de formulário (FDM).
+1. Na guia **[!UICONTROL Modelo]**, selecione a propriedade do objeto de modelo de dados e selecione **[!UICONTROL Editar Propriedades]**.
+1. Alterne a opção de alternância **[!UICONTROL Chave de Pesquisa]** para o estado ATIVADO. Essa opção está disponível somente para tipos de dados primários.
+1. Selecione **[!UICONTROL Concluído]** e **[!UICONTROL Salvar]** para salvar o Modelo de Dados de Formulário (FDM).
 
 Depois de definir as propriedades do objeto de modelo de dados como chaves de pesquisa, os valores de hash são armazenados nas tags de índice do Azure e os valores codificados na Base64 são armazenados nos metadados do Azure.
 

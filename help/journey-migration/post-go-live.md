@@ -24,11 +24,11 @@ Esta jornada é a última parte, para que você aprenda a monitorar problemas e 
 
 ## A história até agora {#story-so-far}
 
-Na etapa anterior da jornada, você aprendeu a executar a migração e [Ativação](/help/journey-migration/go-live.md) quando o código e o conteúdo estavam prontos para serem transferidos para o AEM as a Cloud Service.
+Na etapa anterior da jornada, você aprendeu a executar a migração e a [ativação](/help/journey-migration/go-live.md) depois que o código e o conteúdo estivessem prontos para serem transferidos para o AEM as a Cloud Service.
 
 ## Objetivo {#objective}
 
-Este documento descreve as ferramentas disponíveis para solucionar problemas de ambientes as a Cloud Service AEM:
+Este documento descreve as ferramentas disponíveis para solucionar problemas em ambientes do AEM as a Cloud Service:
 
 * **Console do desenvolvedor**
 * **CRXDE Lite**
@@ -36,7 +36,7 @@ Este documento descreve as ferramentas disponíveis para solucionar problemas de
 
 ## Console do desenvolvedor {#developer-console}
 
-A depuração de ambientes de desenvolvedor do AEM as a Cloud Service está disponível no Console do desenvolvedor para ambientes de desenvolvimento, preparo e produção.
+A depuração de ambientes de desenvolvedor do AEM as a Cloud Service está disponível na Developer Console para ambientes de desenvolvimento, preparo e produção.
 
 Consulte [Implementação do AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) para saber mais sobre ferramentas de desenvolvimento.
 
@@ -45,15 +45,15 @@ Consulte [Implementação do AEM as a Cloud Service](/help/implementing/developi
 Como usuário, você pode acessar o CRXDE Lite no ambiente de desenvolvimento, mas não no ambiente de preparo ou produção.
 
 >[!IMPORTANT]
->Gravação em repositórios imutáveis, como `/libs` e `/apps` no tempo de execução resulta em erros. Além disso, você não tem acesso a ferramentas de desenvolvedor para ambientes de preparo e produção.
+>A gravação em repositórios imutáveis, como `/libs` e `/apps` em tempo de execução, resulta em erros. Além disso, você não tem acesso a ferramentas de desenvolvedor para ambientes de preparo e produção.
 
-Consulte [Desenvolvimento com o CRXDE Lite](/help/implementing/developing/tools/crxde.md) para obter mais informações sobre como desenvolver seu aplicativo AEM usando o CRXDE Lite.
+Consulte [Desenvolvimento com o CRXDE Lite](/help/implementing/developing/tools/crxde.md) para obter mais informações sobre como desenvolver o aplicativo AEM usando o CRXDE Lite.
 
 ## Gerenciamento de logs {#managing-logs}
 
 Os usuários podem acessar uma lista de arquivos de log disponíveis para o ambiente selecionado.
 
-Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md) para saber como acessar e gerenciar logs por meio da interface do usuário ou da API por meio do Cloud Manager.
+Consulte [Acessando e Gerenciando Logs](/help/implementing/cloud-manager/manage-logs.md) para saber como acessar e gerenciar logs por meio da interface do usuário ou da API por meio da Cloud Manager.
 
 ## Contato com o suporte {#contacting-support}
 
@@ -63,7 +63,7 @@ Consulte [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/
 >abstract="Entre em contato com a equipe de suporte do AEM para obter esclarecimentos ou tirar dúvidas."
 >additional-url="https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html" text="Suporte para a Experience Cloud"
 
-Em caso de dúvidas sobre o acesso ao Cloud Service, entre em contato com o representante da Adobe ou [Suporte para Experience Cloud](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para obter mais detalhes.
+Em caso de dúvidas sobre o acesso ao Cloud Service, entre em contato com o representante da Adobe ou com o [Suporte para o Experience Cloud](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para obter mais detalhes.
 
 ## Aprendizados de documento {#document-learnings}
 
@@ -77,7 +77,7 @@ Compartilhe esses aprendizados pós-migração com as partes interessadas e as e
 
 ## A jornada termina - Será? {#journey-ends}
 
-Parabéns! Você concluiu a Jornada de migração as a Cloud Service do AEM! Você deve entender como:
+Parabéns! Você concluiu a Jornada de migração do AEM as a Cloud Service. Você deve entender como:
 
 * Introdução à migração para o AEM as a Cloud Service
 * Determine se sua implantação está pronta para ser movida para o AEM as a Cloud Service

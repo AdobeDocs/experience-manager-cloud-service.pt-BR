@@ -33,8 +33,8 @@ O status dos certificados SSL pode ser entendido rapidamente na página de certi
 
 Quando um certificado expira, todos os domínios que usem o certificado expirado deixam de funcionar. Atualizar os certificados de acordo com as etapas a seguir garante que o domínio continue a funcionar conforme desejado.
 
-1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
-1. No **[Meus programas](/help/implementing/cloud-manager/navigation.md#my-programs)** selecione o programa.
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 1. Navegue até a tela **Certificados SSL** da tela **Ambientes**.
 1. Você pode ver uma tabela com uma linha para cada certificado SSL que foi instalado com êxito em seu programa. Clique no botão de reticências na extremidade direita da linha do certificado que deseja atualizar e selecione **Exibir e atualizar**.
@@ -70,7 +70,7 @@ Siga estas etapas para excluir um certificado SSL.
 
 ## Configurações pré-existentes de CDN {#pre-existing-cdn}
 
-Se você tiver uma configuração de CDN pré-existente para seu certificado SSL, haverá uma mensagem informativa no **Certificados SSL** incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
+Se você tiver uma configuração de CDN pré-existente para seu certificado SSL, há uma mensagem informativa na página **Certificados SSL** incentivando você a adicionar essas configurações por meio da interface do usuário, para que fiquem visíveis e possam ser definidas no Cloud Manager.
 
 A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário. Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 

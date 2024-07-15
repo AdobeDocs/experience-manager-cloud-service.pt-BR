@@ -1,6 +1,6 @@
 ---
 title: AEM as a Cloud Service no shell unificado
-description: Saiba mais sobre os benefícios do AEM as a Cloud Service no Unified Shell
+description: Saiba mais sobre os benefícios do AEM as a Cloud Service no shell unificado
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin

@@ -33,7 +33,7 @@ Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviços 
 Os seguintes fornecedores de tradução oferecem uma implementação da API do AEM para projetos de tradução.
 
 * [Microsoft](connect-ms-translator.md)
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
+* [Traduções.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -70,13 +70,13 @@ Após configurar uma estrutura de integração de tradução, é possível [asso
 
 Uma única configuração da estrutura controla como o conteúdo e os ativos da página são traduzidos. Para criar uma configuração de tradução:
 
-1. No [menu de navegação global,](/help/sites-cloud/authoring/basic-handling.md#global-navigation) selecionar **Ferramentas > Cloud Service e Cloud Service de tradução**.
+1. No [menu de navegação global](/help/sites-cloud/authoring/basic-handling.md#global-navigation), selecione **Ferramentas > Cloud Service e Cloud Service de Tradução**.
 1. Navegue até o local em que deseja criar a configuração na estrutura de conteúdo. Isso é geralmente baseado em um site específico, mas pode ser global.
 1. Forneça as seguintes informações nos campos e selecione **Criar**.:
    1. Selecione o **Tipo de configuração** no menu suspenso.
    1. Insira um **Título** para sua configuração. O **Título** identifica a configuração no console dos **Cloud Services**, bem como nas listas suspensas de propriedades da página.
    1. Opcionalmente, insira um **Nome** para o nó do repositório que armazena a configuração.
-1. No **Editar configuração** , configure as propriedades no campo **Sites** e **Assets** e selecione **Salvar e fechar**.
+1. Na janela **Editar Configuração**, configure as propriedades nas guias **Sites** e **Assets** e selecione **Salvar e Fechar**.
 
 ### Propriedades de configuração de sites {#sites-configuration-properties}
 
@@ -110,7 +110,7 @@ As propriedades de ativos controlam como configurar ativos. Para obter mais info
 | Traduzir tags | Ative essa propriedade para que você possa traduzir tags associadas ao ativo. |
 | Executar a tradução automaticamente | Selecione essa propriedade para executar trabalhos de tradução automaticamente após a criação de projetos de tradução. Você não terá a oportunidade de revisar ou analisar o trabalho de tradução ao selecionar essa opção. |
 | Desabilitar tradução somente de atualização | Quando essa opção é marcada, a atualização do projeto de tradução envia todos os campos traduzíveis para tradução, não apenas os campos alterados desde a última tradução. |
-| Habilitar campos do modelo de conteúdo para tradução | Habilitar essa opção usa o **Traduzível** campo em [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar se o campo é traduzido e cria automaticamente [regras de tradução](rules.md) em conformidade. Essa opção substitui qualquer regra de tradução criada. |
+| Habilitar campos do modelo de conteúdo para tradução | Habilitar essa opção usa o campo **Traduzível** em [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar se o campo é traduzido e cria automaticamente [regras de tradução](rules.md). Essa opção substitui qualquer regra de tradução criada. |
 
 ## Configuração de páginas para tradução {#configuring-pages-for-translation}
 
@@ -121,7 +121,7 @@ Para configurar a tradução das páginas de origem para outros idiomas, associe
 
 A configuração da nuvem da estrutura de integração de tradução identifica a configuração da nuvem a ser usada para a conexão com o provedor de serviços. Quando você associa uma página de origem a uma configuração de nuvem da estrutura, a página deve ser associada à configuração de nuvem do provedor de serviços definido na configuração da estrutura.
 
-Quando você associa uma página a uma configuração de nuvem, os descendentes da página herdam a associação. Por exemplo, se você associou a variável `/content/wknd/language-masters/en/magazine` com uma estrutura de integração de tradução, a variável `magazine` As páginas e as páginas secundárias abaixo dele são traduzidas de acordo com a estrutura.
+Quando você associa uma página a uma configuração de nuvem, os descendentes da página herdam a associação. Por exemplo, se você associou a página `/content/wknd/language-masters/en/magazine` a uma estrutura de integração de tradução, a página `magazine` e as páginas secundárias abaixo dela serão traduzidas de acordo com a estrutura.
 
 Quando necessário, é possível sobrepor a associação em uma página descendente. Por exemplo, o conteúdo de um site é principalmente sobre viagens e estilo de vida. No entanto, uma ramificação de páginas descreve a empresa. Nesse caso, a página raiz do site pode ser associada a uma estrutura de integração de tradução que especifica o uso da tradução automática na categoria Estilo de vida. A ramificação que descreve a empresa usaria uma estrutura que executa a tradução automática usando a categoria Geral.
 
@@ -129,16 +129,16 @@ Quando necessário, é possível sobrepor a associação em uma página descende
 
 Associe uma página ao provedor de tradução que você está usando para traduzir a página e suas páginas descendentes.
 
-1. No console Sites, selecione a página que deseja configurar e selecione **Propriedades da exibição**.
+1. No console de sites, selecione a página a ser configurada e selecione **Exibir Propriedades**.
 1. Selecione a guia **Cloud Services**.
-1. No **Adicionar configuração** selecione a configuração.
-1. Selecionar **Salvar e fechar**.
+1. Na lista suspensa **Adicionar configuração**, selecione a configuração.
+1. Selecione **Salvar e fechar**.
 
 ### Associar páginas a uma estrutura de integração de tradução {#associating-pages-with-a-translation-integration-framework}
 
 Associe uma página à estrutura de integração de tradução que define como você deseja executar a tradução da página e de suas páginas descendentes.
 
-1. No console Sites, selecione a página que deseja configurar e selecione **Propriedades da exibição**.
+1. No console de sites, selecione a página a ser configurada e selecione **Exibir Propriedades**.
 1. Selecione a guia **Cloud Services**.
-1. No **Adicionar configuração** selecione a configuração.
-1. Selecionar **Salvar e fechar**.
+1. Na lista suspensa **Adicionar configuração**, selecione a configuração.
+1. Selecione **Salvar e fechar**.

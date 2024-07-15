@@ -120,7 +120,7 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Entenda como o AEM Sites e o Cloud Manager trabalham juntos para facilitar o desenvolvimento de front-end
 * Veja como a etapa de personalização de front-end é totalmente dissociada do AEM e não requer conhecimento sobre ele.
 
-Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites de AEM revisando o documento a seguir [Criar site a partir de modelo,](create-site.md) onde você aprende a criar rapidamente um novo site de AEM usando um modelo.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação Rápida de Sites de AEM revisando a seguir o documento [Criar Site a partir de Modelo](create-site.md), onde você aprenderá a criar rapidamente um novo site de AEM usando um modelo.
 
 ## Recursos adicionais {#additional-resources}
 

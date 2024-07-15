@@ -22,7 +22,7 @@ Saiba como gerenciar as páginas do seu site no AEM, incluindo movimentação, c
 
 >[!TIP]
 >
->Há vários [atalhos de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) que você pode usar no console sites, que torna a organização das suas páginas mais eficiente.
+>Há vários [atalhos de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) que você pode usar no console Sites que tornam a organização das suas páginas mais eficiente.
 
 ## Privilégios de Acesso {#access-privileges}
 
@@ -32,40 +32,40 @@ Caso encontre algum problema, sugerimos que você entre em contato com o adminis
 
 ## Abrir uma página para edição {#opening-a-page-for-editing}
 
-Depois [criação de uma página](/help/sites-cloud/authoring/sites-console/creating-pages.md) ou navegar para uma página existente usando [o **Sites** console,](/help/sites-cloud/authoring/sites-console/introduction.md) você pode abri-lo para edição.
+Depois de [criar uma página](/help/sites-cloud/authoring/sites-console/creating-pages.md) ou navegar para uma página existente usando o [console **Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) você poderá abri-lo para edição.
 
-1. Abertura [o **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navegue para localizar a página que deseja editar.
 1. Selecione sua página usando:
 
    * [Ações rápidas](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) e a barra de ferramentas
 
-1. Toque ou clique no **Editar** ícone.
+1. Toque ou clique no ícone **Editar**.
 
    ![Botão Editar](/help/sites-cloud/authoring/assets/edit.png)
 
-1. A página é aberta e você pode editá-la conforme necessário. Dependendo de como a página selecionada foi criada, a variável **Editar** Essa ação abrirá o editor apropriado.
-   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas criadas com o Editor de páginas AEM
-   * [Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas criadas com o Editor universal
+1. A página é aberta e você pode editá-la conforme necessário. Dependendo de como a página selecionada foi criada, a ação **Editar** abrirá o editor apropriado.
+   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas criadas com o Editor de Páginas AEM
+   * [Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas criadas com o Editor Universal
 
 ## Copiar e colar uma página      {#copying-and-pasting-a-page}
 
 É possível copiar uma página e todas as respectivas subpáginas para um novo site:
 
-1. Abertura [o **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navegue para localizar a página que deseja copiar.
 1. Selecione sua página usando:
 
    * [Ações rápidas](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) e a barra de ferramentas
 
-1. Toque ou clique no **Copiar** ícone da página.
+1. Toque ou clique no ícone de página **Copiar**.
 
    ![Copiar](/help/sites-cloud/authoring/assets/copy.png)
 
 1. Navegue até o local para a nova cópia da página.
-1. Selecione o **Colar** ícone que ficou disponível.
+1. Selecione o ícone **Colar** que ficou disponível.
 
    ![Colar](/help/sites-cloud/authoring/assets/paste.png)
 
@@ -75,7 +75,7 @@ Depois [criação de uma página](/help/sites-cloud/authoring/sites-console/crea
 
    ![Caixa de diálogo Colar](/help/sites-cloud/authoring/assets/paste-dialog.png)
 
-1. Selecione o **Colar** botão para confirmar a transação de colagem e criar a(s) nova(s) página(s).
+1. Selecione o botão **Colar** para confirmar a transação de colagem e criar a(s) nova(s) página(s).
 
 >[!NOTE]
 >
@@ -95,20 +95,20 @@ O procedimento para mover ou renomear uma página é basicamente o mesmo e é re
 
 O AEM oferece a funcionalidade de atualizar todos os links internos que se referem à página que está sendo renomeada/movida. Isso pode ser feito página por página para proporcionar total flexibilidade.
 
-1. Abertura [o **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navegue para localizar a página que deseja mover.
 1. Selecione sua página usando:
 
    * [Ações rápidas](/help/sites-cloud/authoring/basic-handling.md#quick-actions)
    * [Modo de seleção](/help/sites-cloud/authoring/basic-handling.md#selecting-resources) e a barra de ferramentas
 
-1. Toque ou clique no **Mover** ícone de página para abrir o assistente para mover página.
+1. Toque ou clique no ícone de página **Mover** para abrir o assistente para mover página.
 
    ![Botão Mover](/help/sites-cloud/authoring/assets/move.png)
 
-1. No **Renomear** etapa do assistente, é possível:
+1. Na etapa **Renomear** do assistente, é possível:
 
-   * Especifique o nome que deseja para a página após movê-la, depois selecione **Próxima** para continuar.
+   * Especifique o nome que você deseja para a página após movê-la, em seguida, selecione **Avançar** para continuar.
    * **Cancelar** para suspender o processo.
 
    ![Mover e renomear página](/help/sites-cloud/authoring/assets/move-page-rename.png)
@@ -119,7 +119,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
    >
    >Se você mover uma página para um local onde uma página com o mesmo nome já existe, o sistema gera automaticamente uma variação do nome ao anexar um número. Por exemplo, se `beach` já existir, uma nova página com o nome `beach` se tornará `beach1`.
 
-1. No **Selecionar destino** etapa do assistente, é possível:
+1. Na etapa **Selecionar destino** do assistente, é possível:
 
    * Use a [exibição de coluna](/help/sites-cloud/authoring/basic-handling.md#column-view) para navegar até o novo local da página:
 
@@ -148,14 +148,14 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
    ![Republicar página ao mover](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
-1. Toque ou clique **Mover** para definir quando a ação de mover deve ocorrer.
+1. Toque ou clique em **Mover** para definir quando a ação de movimentação deve ocorrer.
 
    * **Agora** acionará um [trabalho assíncrono](#asynchronous-actions) para mover a página imediatamente.
-   * **Mais tarde** permitirá que você programe uma data para a movimentação ser processada.
+   * **Mais tarde** permitirá que você programe uma data para a movimentação a ser processada.
 
-   ![Definição de quando mover](assets/managing-pages-move-page-now-later.png)
+   ![Definindo quando mover](assets/managing-pages-move-page-now-later.png)
 
-1. Toque ou clique **Continuar** para concluir a movimentação da página.
+1. Toque ou clique em **Continuar** para concluir a movimentação da página.
 
 >[!NOTE]
 >
@@ -173,7 +173,7 @@ O AEM oferece a funcionalidade de atualizar todos os links internos que se refer
 
 As ações de movimentação de página são sempre processadas de forma assíncrona, permitindo que o usuário continue a criação na interface do usuário desimpedida.
 
-O status de trabalhos assíncronos pode ser verificado no campo [**Status de trabalhos assíncronos** painel](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação global** > **Ferramentas** > **Operações** > **Tarefas**
+O status de trabalhos assíncronos pode ser verificado no painel [**Status de Trabalhos Assíncronos**](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) em **Navegação Global** > **Ferramentas** > **Operações** > **Trabalhos**
 
 >[!TIP]
 >
@@ -181,7 +181,7 @@ O status de trabalhos assíncronos pode ser verificado no campo [**Status de tra
 
 ### Excluir uma página {#deleting-a-page}
 
-1. Abertura [o **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navegue até a página que deseja excluir.
 1. Use o [modo de seleção](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) para selecionar a página pretendida, em seguida, use **Excluir** na barra de ferramentas:
 
@@ -194,9 +194,9 @@ O status de trabalhos assíncronos pode ser verificado no campo [**Status de tra
    * **Você deseja arquivar as páginas antes de excluir?** - Se marcada, as versões das páginas selecionadas para exclusão serão criadas na exclusão.
       * [As versões podem ser restauradas em uma data posterior](/help/sites-cloud/authoring/sites-console/page-versions.md).
       * As páginas excluídas sem versões anteriores não podem ser restauradas.
-1. Toque ou clique **Cancelar** para suspender a ação ou **Excluir** para confirmar a ação
+1. Toque ou clique em **Cancelar** para suspender a ação ou **Excluir** para confirmar a ação.
    * Se a página não tiver referências, a página será excluída.
-   * Se a página tiver referências, uma caixa de mensagem informará que **Uma ou mais páginas são mencionadas.** É possível selecionar **Forçar Exclusão** ou **Cancelar**.
+   * Se a página tiver referências, uma caixa de mensagem informará que **Uma ou mais páginas são mencionadas.** Você pode selecionar **Forçar Exclusão** ou **Cancelar**.
 
 >[!NOTE]
 >
@@ -213,7 +213,7 @@ O status de trabalhos assíncronos pode ser verificado no campo [**Status de tra
 
 Você pode criar pastas para ajudar a organizar seus arquivos e páginas.
 
-1. Abertura [o **Sites** console.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
 1. Navegue até o local necessário.
 1. Para abrir a lista de opções, selecione **Criar** na barra de ferramentas
 1. Selecione **Pasta** para abrir a caixa de diálogo. Aqui você pode inserir o **Nome** e o **Título**:

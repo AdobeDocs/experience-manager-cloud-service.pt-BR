@@ -24,7 +24,7 @@ Este documento ajuda você a entender como configurar seu reprodutor antes de re
 
 ## Etapas para definir o reprodutor para o modo Nuvem {#cloud-mode-setup}
 
-Depois de baixar o player mais recente de [Downloads do AEM Screens Player](https://download.macromedia.com/screens/), você está pronto para atualizar seu reprodutor para o modo Nuvem.
+Depois de baixar o player mais recente em [Downloads do AEM Screens Player](https://download.macromedia.com/screens/), você estará pronto para atualizar seu player para o modo Nuvem.
 
 Siga as etapas abaixo para atualizar seu reprodutor:
 
@@ -33,21 +33,21 @@ Siga as etapas abaixo para atualizar seu reprodutor:
    >[!NOTE]
    >Você pode optar por testar com dispositivos de hardware dedicados ou com uma extensão da Web no seu próprio reprodutor.
 
-1. Clique em **Configuração** e clique em **Para a fábrica** botão em **Redefinir** opção.
+1. Clique na guia **Configuração** e clique no botão **Para Fábrica** na opção **Redefinir**.
 
    ![imagem](/help/screens-cloud/assets/player/installplayer-2.png)
 
-1. Clique em **Confirmar o** para redefinir seu reprodutor.
+1. Clique em **Confirmar** para redefinir o player.
 
-1. Novamente do **Configuração** e clique em **Alterar para o modo Nuvem** botão em **Alternar modo de execução** opção.
+1. Novamente na guia **Configuração** e clique no botão **Alterar para Modo de Nuvem** na opção **Alternar Modo de Execução**.
 
    ![imagem](/help/screens-cloud/assets/player/installplayer-1.png)
 
-1. Clique em **Confirmar o** que avisa ao alternar para o modo de nuvem cancela o registro do reprodutor.
+1. Clique em **Confirmar** que avisa ao alternar para o modo de nuvem para cancelar o registro do reprodutor.
 
 ## Monitoramento básico de reprodução {#playback-monitoring}
 
-O reprodutor relata várias métricas de reprodução com cada `ping` que o padrão é 30 segundos. Com base nessas métricas, o Adobe pode detectar vários casos de borda, como experiência travada, tela em branco e problemas de agendamento. Essa detecção nos permite compreender e solucionar problemas no dispositivo e, portanto, agiliza uma investigação e medidas corretivas com você.
+O player relata várias métricas de reprodução a cada `ping` que assume o padrão de 30 segundos. Com base nessas métricas, o Adobe pode detectar vários casos de borda, como experiência travada, tela em branco e problemas de agendamento. Essa detecção nos permite compreender e solucionar problemas no dispositivo e, portanto, agiliza uma investigação e medidas corretivas com você.
 
 O monitoramento básico da reprodução em um reprodutor AEM Screens permite:
 
@@ -74,7 +74,7 @@ As seguintes propriedades estão incluídas em cada `ping`:
 >Como opção, você pode ativar uma propriedade mais avançada nas preferências do reprodutor (Ativar monitoramento de reprodução):
 >|Propriedade|Descrição|
 >|—|—|
->|isContentRendering {boolean}|true se a GPU puder confirmar que está reproduzindo o conteúdo real (com base na análise de pixels)|
+>|isContentRendering {boolean}|true se a GPU puder confirmar que está reproduzindo conteúdo real (com base na análise de pixels)|
 
 ### Limitações {#limitations}
 
@@ -82,7 +82,7 @@ Algumas limitações do monitoramento básico de reprodução estão listadas ab
 
 * O reprodutor relata seu próprio estado de reprodução ao servidor, portanto, requer uma conexão ativa.
 
-* A variável `isContentRendering` propriedade que verifica se a GPU exige muitos recursos para ser habilitada por padrão e requer aceitação explícita das preferências do reprodutor. É recomendável não usá-lo com vídeos em produção.
+* A propriedade `isContentRendering` que verifica a GPU usa muitos recursos para ser habilitada por padrão e requer aceitação explícita das preferências do reprodutor. É recomendável não usá-lo com vídeos em produção.
 
 * Esse recurso é compatível apenas com canais de sequência e ainda não abrange o caso de uso de canais interativos (SPA).
 
@@ -90,4 +90,4 @@ Algumas limitações do monitoramento básico de reprodução estão listadas ab
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você instalou e configurou o reprodutor no modo Nuvem, continue sua jornada as a Cloud Service do Screens. Consulte [Registro de players no Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) do provedor de serviços Screens.
+Agora que você instalou e configurou o reprodutor no modo Nuvem, continue a as a Cloud Service jornada do Screens. Consulte [Registrando players no Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) do provedor de serviços da Screens.

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Mapeamento de usuário de serviço {#service-user-mapping}
 
-Para adicionar um mapeamento de seu serviço ao(s) usuário(s) do sistema correspondente(s), é necessário criar uma configuração de fábrica para o `ServiceUserMapper` serviço. Para manter essa modular, essas configurações podem ser fornecidas usando o mecanismo Sling &quot;mend&quot; (consulte [SLING-3578](https://issues.apache.org/jira/browse/SLING-3578) para obter mais detalhes). A maneira recomendada de instalar essas configurações com seu pacote é adicionando-o ao modelo de provisionamento Quickstart, conforme descrito no exemplo a seguir:
+Para adicionar um mapeamento de seu serviço ao(s) usuário(s) do sistema correspondente(s), é necessário criar uma configuração de fábrica para o serviço `ServiceUserMapper`. Para manter essa modular, essas configurações podem ser fornecidas usando o mecanismo Sling &quot;mend&quot; (consulte [SLING-3578](https://issues.apache.org/jira/browse/SLING-3578) para obter mais detalhes). A maneira recomendada de instalar essas configurações com seu pacote é adicionando-o ao modelo de provisionamento Quickstart, conforme descrito no exemplo a seguir:
 
 ```
 org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-my-mapping
@@ -32,23 +32,23 @@ A partir do AEM 6.4, o formato de mapeamento é definido da seguinte maneira:
 
 >[!NOTE]
 >
->A variável `userName` está obsoleto e não deve mais ser usado.
+>O `userName` está obsoleto e não deve ser mais usado.
 
 ```
 bundleId [:subserviceName] = userName | [principalNames]   
 ```
 
-`bundleId` e `subserviceName` identificar o serviço, `userName/principalNames` identificar o usuário do serviço e `principalNames` é uma lista separada por vírgulas.
+`bundleId` e `subserviceName` identificam o serviço, `userName/principalNames` identificam o usuário do serviço e `principalNames` é uma lista separada por vírgulas.
 
-Observe também que `principalNames` é a lista de nomes principais de usuários de serviço que são iguais à id e prontos para uso.
+Além disso, observe que `principalNames` é a lista de nomes principais de usuários de serviço que, prontos para uso, são iguais à ID.
 
 
 **Prática recomendada**
 
-* Nomes de subserviços para tarefas diferentes - se os serviços do seu pacote executarem tarefas diferentes, é recomendável identificar `subserviceNames` para agrupá-los por tarefas
-* Se um determinado serviço executar operações diferentes (por exemplo, ler o conteúdo do ativo e atualizar as informações abaixo de uma subárvore de `/var`), é recomendável refletir isso agregando diferentes entidades de serviço que refletem a operação individual, como agregando o `dam-reader-service` com seu recurso específico `assetreport-writer-service`
+* Nomes de subserviços para tarefas diferentes - se os serviços do seu conjunto executam tarefas diferentes, é recomendável identificar `subserviceNames` para agrupá-los por tarefas
+* Se um determinado serviço executar operações diferentes (por exemplo, ler o conteúdo do ativo e atualizar as informações abaixo de uma subárvore de `/var`), é recomendável refletir isso agregando entidades de serviço diferentes que refletem a operação individual, como agregar o `dam-reader-service` comum com o `assetreport-writer-service` específico do recurso
 * Idealmente, cada serviço está vinculado a um conjunto muito específico e limitado de operações
-* O novo formato com `[one,or,multiple,principalNames]` O é a maneira recomendada de definir os mapeamentos de usuário do serviço a partir do AEM 6.4.
+* O novo formato com `[one,or,multiple,principalNames]` é a maneira recomendada de definir mapeamentos de usuários de serviço a partir do AEM 6.4.
 
 Veja abaixo uma lista dos motivos para alterar o formato e por que o Adobe recomenda usá-lo em vez do mapeamento de versão apenas para uma única ID de usuário:
 
@@ -64,25 +64,25 @@ Veja abaixo uma lista dos motivos para alterar o formato e por que o Adobe recom
 
 A sequência de chamadas para resolver o mapeamento de serviço descrito abaixo:
 
-1. Pesquisar por ativos `principalNames` mapeamento para o dado `bundleId` e `subserviceName`
-1. `principalNames` mapeamento para o `bundleId` e nulo `subserviceName`
-1. `userName` mapeamento para o `bundleId` e `subserviceName`
-1. `userName` mapeamento para `bundleId` e nulo `subserviceName`
+1. Pesquisar mapeamento `principalNames` ativo para o `bundleId` e `subserviceName` especificados
+1. `principalNames` mapeamento para `bundleId` e `subserviceName` nulo
+1. Mapeamento de `userName` para `bundleId` e `subserviceName`
+1. `userName` mapeamento para `bundleId` e `subserviceName` nulo
 1. Mapeamento padrão
 1. Usuário padrão
 
 ### SlingRepository - logon do serviço {#slingrepository-servicelogin}
 
-A sequência para obter um serviço `Session/ResourceResolver` funciona da seguinte forma:
+A sequência para obter um serviço `Session/ResourceResolver` funciona da seguinte maneira:
 
-1. Obter nomes principais de `ServiceUserMapper` => logon de repositório de pré-autenticação conforme descrito abaixo
+1. Obtenha nomes principais de `ServiceUserMapper` => logon de repositório de pré-autenticação conforme descrito abaixo
 1. Recuperar ID de usuário de `ServiceUserMapper`
 1. Verificar 1ServiceUserConfiguration` obsoleto para a id do usuário atual
-1. Logon de serviço do Sling padrão com a ID do usuário (por exemplo, uma sequência de `createAdministrativeSession` e representar para a id de usuário do serviço)
+1. Logon padrão do serviço Sling com a ID de usuário (por exemplo, uma sequência de `createAdministrativeSession` e representação da ID de usuário do serviço)
 
 O novo mapeamento com nomes principais resulta no seguinte logon de repositório simplificado:
 
-* O conjunto de nomes principais é tratado como o principal ou principais efetivos a serem usados para preencher o `Subject`
+* O conjunto de nomes de entidade é tratado como a(s) entidade(s) de segurança efetiva(s) a ser(em) usada(s) para preencher o `Subject`
 * Consequentemente, o logon no repositório pode ser pré-autenticado
 * Nenhuma resolução de associação de grupo
 
@@ -90,11 +90,11 @@ O novo mapeamento com nomes principais resulta no seguinte logon de repositório
   >
   >Todas as permissões necessárias precisam ser declaradas para os usuários do serviço. &#39;todos&#39; e outras permissões do Grupo não serão mais herdadas.
 
-* Não é necessário fazer logon administrativo adicional para que o serviço-`Session/ResourceResolver` são criados.
+* Nenhum login de administrador adicional para que o serviço-`Session/ResourceResolver` seja criado.
 
 ### ServiceUserConfiguration obsoleto {#deprecated-serviceUserConfiguration}
 
-Observe que especificar um único nome de usuário no mapeamento é equivalente ao nome `ServiceUserConfiguration.simpleSubjectPopulation`. Com o novo formato, a solução alternativa fornecida pelo `ServiceUserConfiguration` pode ser refletido diretamente no mapeamento do usuário do serviço. A variável `ServiceUserConfiguration` foi, portanto, descontinuado para AEM e todos os usos existentes foram substituídos.
+Observe que especificar um único nome de usuário no mapeamento é equivalente ao `ServiceUserConfiguration.simpleSubjectPopulation` existente. Com o novo formato, a solução alternativa fornecida pelo `ServiceUserConfiguration` pode ser refletida diretamente no mapeamento de usuário do serviço. O `ServiceUserConfiguration` foi, portanto, descontinuado para AEM e todos os usos existentes foram substituídos.
 
 ## Usuários de serviço {#service-users}
 
@@ -116,7 +116,7 @@ Não reutilizar usuários de serviço existentes se:
 
 Depois de verificar que nenhum usuário de serviço existente no AEM é aplicável ao seu caso de uso e que os problemas de RTC correspondentes foram aprovados, você pode adicionar o novo usuário ao conteúdo padrão. Idealmente, um membro da equipe de segurança estendida está envolvido na votação do RTC, portanto, certifique-se de envolver também as partes interessadas apropriadas.
 
-**Convenção de nomeação**
+**Convenção de Nomenclatura**
 
 A equipe de segurança do AEM definiu a seguinte convenção de nomenclatura para os usuários de serviço, a fim de adicionar consistência aos novos usuários de serviço e melhorar sua legibilidade e manutenção.
 
@@ -124,7 +124,7 @@ Um nome de usuário de serviço consiste em 3 elementos separados por um traço 
 
 1. A entidade/recurso lógico que é direcionado pelas operações de serviço (evite caminhos de elementos que podem ser alterados)
 1. A tarefa que os serviços vão executar
-1. À Direita **&#39;serviço&#39;** para poder detectar facilmente, a partir da id e do nome principal, que o usuário é um usuário de serviço
+1. **&#39;serviço&#39;** à direita para poder detectar facilmente, a partir da ID e do nome principal, que o usuário é um usuário de serviço
 
 **Práticas recomendadas**
 
@@ -145,34 +145,34 @@ No final, o nome de usuário do serviço deve revelar:
 
    * A entidade lógica precisa corresponder à configuração de permissão:
 
-      * A `content-foo-service` deve ser associado apenas a operações no conteúdo. A concessão de permissões para operar em outras entidades, como configuração ou usuários, seria incorreta
-      * Um serviço específico como `personalization-foo-service` O também deve ser fornecido com permissões específicas. Se você acabar concedendo permissões em todo o conteúdo, ele não será mais específico. Refletir isso no nome ou reutilizar um usuário comum na agregação
-      * Um serviço específico de recursos, como o `msm-xyz-service` deve ter somente permissões relacionadas ao msm. Não expanda as permissões para recursos não relacionados, como gerenciar configurações de comunidades ou usuários do Screens.
+      * Um `content-foo-service` deve ser associado somente a operações no conteúdo. A concessão de permissões para operar em outras entidades, como configuração ou usuários, seria incorreta
+      * Um serviço específico como o `personalization-foo-service` também deve ser fornecido com permissões específicas. Se você acabar concedendo permissões em todo o conteúdo, ele não será mais específico. Refletir isso no nome ou reutilizar um usuário comum na agregação
+      * Um serviço específico de recurso como `msm-xyz-service` deve ter somente permissões relacionadas ao msm. Não expanda as permissões para recursos não relacionados, como gerenciar configurações de comunidades ou usuários do Screens.
 
    * A tarefa precisa corresponder às permissões:
 
-      * A `foo-reader-service` O só deve ser capaz de ler itens comuns. Nunca conceder permissões de gravação
-      * A `foo-writer-service` executar operações de gravação. No entanto, não deve receber permissões para ler/modificar o conteúdo do controle de acesso
-      * A `foo-replicator-service` espera-se que o `crx:replicate` concedido.
+      * Um `foo-reader-service` deve ser capaz de ler apenas itens regulares. Nunca conceder permissões de gravação
+      * É esperado que `foo-writer-service` execute operações de gravação. No entanto, não deve receber permissões para ler/modificar o conteúdo do controle de acesso
+      * Espera-se que `foo-replicator-service` tenha `crx:replicate` concedido.
 
 **Exemplos**
 
 Exemplos para `configuration-reader-service`:
 
-* O nome indica que se refere às configurações em geral e não à configuração de um recurso específico, como a configuração da integração do DM. Um usuário de serviço direcionado especificamente para a configuração de leitura dessa integração preferiria ser nomeado `dmconfig-reader-service` ou `s7config-reader-service`
+* O nome indica que se refere às configurações em geral e não à configuração de um recurso específico, como a configuração da integração do DM. Um usuário de serviço especificamente direcionado para a leitura da configuração dessa integração preferiria ser nomeado como `dmconfig-reader-service` ou `s7config-reader-service`
 
   >[!NOTE]
   >
-  >Nenhuma informação de caminho está incluída na nomeação. As configurações foram movidas de `/etc` para `/conf`.
+  >Nenhuma informação de caminho está incluída na nomeação. Configurações movidas de `/etc` para `/conf`.
 
 * O elemento tarefa indica que os serviços vinculados a esse usuário só executarão operações de leitura.
 
 Exemplos para `userproperties-copy-service`:
 
 * Os serviços vinculados a este usuário de serviço operarão nas propriedades do usuário/grupo, como perfis ou preferências
-* Ele é direcionado especificamente para apenas copiar essas informações, ao contrário de um nome como `userproperties-writer-service` que incluiria qualquer tipo de operação de gravação. Portanto, seria possível que a configuração de permissão dessas tarefas de cópia só permitisse adicionar itens em um local e remover itens em outro local.
+* Ela é direcionada especificamente para apenas copiar essas informações, ao contrário de um nome como `userproperties-writer-service`, que incluiria qualquer tipo de operação de gravação. Portanto, seria possível que a configuração de permissão dessas tarefas de cópia só permitisse adicionar itens em um local e remover itens em outro local.
 
-**Práticas recomendadas para configuração de permissões**
+**Práticas recomendadas para a instalação de permissões**
 
 * Sempre usar a configuração do controle de acesso baseado na entidade de segurança para usuários do serviço. Para obter mais detalhes, consulte os exemplos abaixo:
 
@@ -183,23 +183,23 @@ Exemplos para `userproperties-copy-service`:
 * Limitar permissões
 
    * Conceda somente o conjunto mínimo de permissões necessárias
-   * Para obter mais informações, consulte o [Mapeando Privilégios a Itens](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoitems.html) e [Mapeamento de chamadas de API para privilégios](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoprivileges.html) documentação
+   * Para obter mais informações, consulte a documentação [Mapeando Privilégios para Itens](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoitems.html) e [Mapeando Chamadas de API para Privilégios](https://jackrabbit.apache.org/oak/docs/security/privilege/mappingtoprivileges.html)
    * Não conceder permissão para `jcr:all`. Esse provavelmente não é o conjunto mínimo.
 
 * Reduzir escopo
 
    * Colocar políticas de controle de acesso em subárvores específicas de recursos
-   * No caso de itens distribuídos: use restrições para limitar o escopo (consulte [a documentação](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) para obter a lista de restrições incorporadas).
+   * No caso de itens distribuídos: use restrições para limitar o escopo (consulte [a documentação](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html) para obter uma lista de restrições internas).
 
 * Garantir a consistência
 
    * Tornar as permissões consistentes com a entidade e a tarefa usadas no nome de usuário do serviço
-   * Evite adicionar permissões não relacionadas. Por exemplo, seria estranho ter uma variável `workflow-administration-service` e conceder permissões de ti para executar operações de gerenciamento de usuários em `/home/users/screens` ou deixe ler s7-config.
+   * Evite adicionar permissões não relacionadas. Por exemplo, seria estranho ter um `workflow-administration-service` e conceder a ele permissões para executar operações de gerenciamento de usuário em `/home/users/screens` ou deixá-lo ler s7-config.
 
 * Integralidade
 
    * Verifique se o serviço tem todas as permissões necessárias para executar as tarefas para as quais foi projetado. Seu serviço precisa funcionar imediatamente também em ambientes do cliente.
-   * Nunca espere/peça aos clientes para expandir a configuração de permissão (por exemplo, abaixo `/apps`)
+   * Nunca espere/peça aos clientes para expandir a configuração de permissão (por exemplo, abaixo de `/apps`)
 
 * Evitar duplicação da configuração de permissão
 
@@ -214,21 +214,21 @@ Exemplos para `userproperties-copy-service`:
    * Desempenho de logon e avaliação
    * Não funciona com a configuração AC baseada em entidade
 
-* O acesso ao nó user-home (ou qualquer subárvore contida nele), que não tem um caminho previsível, é obtido no repo init usando home(`userId`). Consulte a inicialização do sling repo [documentação](https://sling.apache.org/documentation/bundles/repository-initialization.html) para obter detalhes.
+* O acesso ao nó user-home (ou qualquer subárvore contida nele), que não tem um caminho previsível, é obtido na inicialização do repositório usando home(`userId`). Consulte a [documentação](https://sling.apache.org/documentation/bundles/repository-initialization.html) da inicialização do sling repo para obter detalhes.
 * RTC: crie um problema de RTC dedicado se você alterar as permissões de um usuário de serviço existente e garantir que você o analise pela equipe de segurança.
 
-**Criação com inicialização de repositório**
+**Criação com Inicialização de Repositório**
 
-Sempre usar `repo-init` para definir os usuários de serviço e a configuração de suas permissões, coloque ambos na seção correta do modelo de recurso Quickstart:
+Sempre use o `repo-init` para definir usuários de serviço e suas permissões para configurar e colocar ambos na seção correta do modelo de recurso Quickstart:
 
 **Práticas recomendadas**
 
 * Sempre usar `repo-init` para criar o usuário do serviço
 * Sempre especificar um caminho intermediário para a criação do usuário de serviço
-* Todos os usuários do serviço integrado para AEM devem estar localizados abaixo `system/cq:services/internal`
+* Todos os usuários do serviço interno para AEM devem estar localizados abaixo de `system/cq:services/internal`
 * Além disso, anexe ao caminho relativo intermediário para agrupar usuários de serviço por recurso: `system/cq:services/internal/<your-feature>`
-* Os usuários do serviço definido pelo cliente devem estar localizados abaixo `system/cq:services/<customer-intermediate-rel-path>` e nunca abaixo da árvore interna
-* Uso **com caminho forçado** em vez de **com caminho** se um usuário já existia e precisa ser movido para o novo local que suporta a autorização baseada em principal.
+* Os usuários do serviço definido pelo cliente devem estar localizados abaixo de `system/cq:services/<customer-intermediate-rel-path>` e nunca abaixo da árvore interna
+* Use **com o caminho forçado** em vez de **com o caminho** se um usuário já existir e precisar ser movido para o novo local que dá suporte à autorização baseada em entidade de segurança.
 
 **Exemplos**
 
@@ -275,4 +275,4 @@ delete service my-feature-service
 
 É crucial gravar testes no lado do servidor para usuários de serviço e sua configuração de permissão. Isso não só verifica se a configuração realmente funciona, como também ajuda a detectar regressões e erros não intencionais ao alterar o controle de acesso de usuários de conteúdo ou serviço.
 
-A variável `com.adobe.granite.testing.clients` A biblioteca do fornece vários utilitários que facilitam a gravação de SSTs para usuários de serviço.
+A biblioteca `com.adobe.granite.testing.clients` fornece vários utilitários que facilitam a gravação de SSTs para usuários de serviço.

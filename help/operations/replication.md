@@ -13,7 +13,7 @@ ht-degree: 38%
 
 # Replicação {#replication}
 
-O Adobe Experience Manager as a Cloud Service usa o [Distribuição de conteúdo do Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) capacidade de mover o conteúdo para replicar para um serviço de pipeline executado no Adobe Developer que está fora do tempo de execução do AEM.
+O Adobe Experience Manager as a Cloud Service usa o recurso [Distribuição de Conteúdo do Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover o conteúdo e replica-lo em um serviço de pipeline executado no Adobe Developer, que está fora do tempo de execução do AEM.
 
 >[!NOTE]
 >
@@ -23,11 +23,11 @@ O Adobe Experience Manager as a Cloud Service usa o [Distribuição de conteúdo
 
 >[!NOTE]
 >
->Se você estiver interessado em publicar conteúdo em massa, use o [Fluxo de trabalho da árvore de conteúdo de publicação](#publish-content-tree-workflow).
+>Se você estiver interessado em publicar conteúdo em massa, use o [Fluxo de trabalho da Árvore de Conteúdo do Publish](#publish-content-tree-workflow).
 >Essa etapa do fluxo de trabalho é criada especificamente para o Cloud Service e pode lidar com cargas grandes de maneira eficiente.
 >Não é recomendável criar seu próprio código personalizado de publicação em massa.
 >Se precisar personalizar por qualquer motivo, você poderá acionar essa etapa de fluxo de trabalho/fluxo de trabalho usando APIs de fluxo de trabalho existentes.
->É sempre uma boa prática publicar somente conteúdo que deve ser publicado. Seja prudente ao não tentar publicar grandes números de conteúdo, se não for necessário. No entanto, não há limites para o conteúdo que você pode enviar por meio do Fluxo de trabalho de publicação da árvore de conteúdo.
+>É sempre uma boa prática publicar somente conteúdo que deve ser publicado. Seja prudente ao não tentar publicar grandes números de conteúdo, se não for necessário. No entanto, não há limites para o conteúdo que você pode enviar por meio do Fluxo de trabalho da árvore de conteúdo do Publish.
 
 ### Publicação/Cancelamento de publicação rápidos — Publicação/Cancelamento de publicação planejados {#publish-unpublish}
 
@@ -39,15 +39,15 @@ Para obter mais informações, consulte [Gerenciar publicação](/help/sites-clo
 
 As possibilidades adicionais de **Tempo de ativação** e **Tempo de desativação** estão disponíveis na [guia Básico das propriedades de página](/help/sites-cloud/authoring/sites-console/page-properties.md#basic).
 
-Para efetuar a replicação automática para esse recurso, ative **Replicação automática** no [Configuração OSGi](/help/implementing/deploying/configuring-osgi.md) **Configuração do acionador ativado/desativado**:
+Para efetuar a replicação automática deste recurso, habilite **Replicação Automática** na [Configuração OSGi](/help/implementing/deploying/configuring-osgi.md) **Configuração do Acionador Ligado/Desligado**:
 
 ![Configuração do acionador ativado/desativado do OSGi](/help/operations/assets/replication-on-off-trigger.png)
 
 ### Gerenciar publicação    {#manage-publication}
 
-Gerenciar publicação oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação posterior.
+Gerenciar publicação oferece mais opções do que o Quick Publish, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação posterior.
 
-A inclusão dos filhos de uma pasta na opção &quot;publicar mais tarde&quot; chama o fluxo de trabalho Publicar árvore de conteúdo, descrito neste artigo.
+A inclusão dos filhos de uma pasta na opção &quot;publicar mais tarde&quot; chama o fluxo de trabalho da Árvore de conteúdo do Publish, descrito neste artigo.
 
 Você pode encontrar informações mais detalhadas sobre Gerenciar publicação na [Documentação sobre princípios básicos de publicação](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
@@ -55,24 +55,24 @@ Você pode encontrar informações mais detalhadas sobre Gerenciar publicação 
 
 Você pode acionar uma replicação em árvore ao escolher **Ferramentas - Fluxo de trabalho - Modelos** e copiar o modelo de fluxo de trabalho pronto para uso **Publicar árvore de conteúdo**, conforme mostrado abaixo:
 
-![O cartão de Fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/assets/publishcontenttreeworkflow.png)
+![O Cartão de Fluxo de Trabalho da Árvore de Conteúdo do Publish](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Não chame o modelo original. Em vez disso, primeiro copie o modelo e chame essa cópia.
 
 Como todos os fluxos de trabalho, também é possível chamá-lo por meio da API. Para obter mais informações, consulte [Interação programática com fluxos de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
-Como alternativa, você pode criar um Modelo de fluxo de trabalho que use a variável `Publish Content Tree` etapa do processo:
+Como alternativa, você pode criar um Modelo de Fluxo de Trabalho que use a etapa de processo `Publish Content Tree`:
 
 1. Na página inicial do AEM as a Cloud Service, acesse **Ferramentas - Fluxo de trabalho - Modelos**.
 1. Na página Modelos de fluxo de trabalho, pressione **Criar** no canto superior direito da tela.
-1. Adicione um título e um nome ao modelo. Para obter mais informações, consulte [Criação de modelos de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR).
+1. Adicione um título e um nome ao modelo. Para obter mais informações, consulte [Criando Modelos de Fluxo de Trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR).
 1. Selecione o modelo criado na lista e pressione **Editar**
 1. Na janela a seguir, arraste e solte a etapa do processo no fluxo do modelo atual:
 
    ![Etapa do processo](/help/operations/assets/processstep.png)
 
-1. Selecione a etapa Processo no fluxo e selecione **Configurar** pressionando o ícone da chave inglesa.
-1. Selecione o **Processo** e selecione `Publish Content Tree` na lista suspensa, verifique a **Avanço do manipulador** caixa de seleção
+1. Selecione a etapa do processo no fluxo e selecione **Configurar** pressionando o ícone de chave inglesa.
+1. Selecione a guia **Processo**, selecione `Publish Content Tree` na lista suspensa e marque a caixa de seleção **Avanço do manipulador**
 
    ![Treeactivation](/help/operations/assets/newstep.png)
 
@@ -89,11 +89,11 @@ Como alternativa, você pode criar um Modelo de fluxo de trabalho que use a vari
 
 **Parâmetros**
 
-* `includeChildren` (valor booleano, padrão: `false`). O valor `false` significa que apenas o caminho é publicado; `true` significa que os filhos também são publicados.
+* `includeChildren` (valor booleano, padrão: `false`). O valor `false` significa que somente o caminho é publicado; `true` significa que os filhos também são publicados.
 * `replicateAsParticipant` (valor booleano, padrão: `false`). Se configurado como `true`, a replicação está usando o `userid` do principal que executou a etapa do participante.
 * `enableVersion` (valor booleano, padrão: `false`). Esse parâmetro determina se uma nova versão será criada na replicação.
-* `agentId` (valor da string; o valor padrão significa que apenas os agentes para publicação são usados). É recomendado ser explícito sobre o agentId; por exemplo, definir o valor como: publicar. Configurando o agente para `preview` publica no serviço de visualização.
-* `filters` (valor da string; o valor padrão significa que todos os caminhos são ativados). Os valores disponíveis são:
+* `agentId` (valor da string; o valor padrão significa que apenas os agentes para publicação são usados). É recomendado ser explícito sobre o agentId; por exemplo, definir o valor como: publicar. Definir o agente como `preview` publica no serviço de visualização.
+* `filters` (valor da cadeia de caracteres; o valor padrão significa que todos os caminhos estão ativados). Os valores disponíveis são:
    * `onlyActivated` - ativar somente as páginas que (já) foram ativadas. Atua como uma forma de reativação.
    * `onlyModified` - ativar apenas os caminhos que já estejam ativados e tenham uma data de modificação posterior à data de ativação.
    * O conteúdo acima pode ser ORed com uma barra vertical “|”. Por exemplo, `onlyActivated|onlyModified`.
@@ -106,7 +106,7 @@ Uma declaração INFO final é registrada depois que a etapa do fluxo de trabalh
 
 Além disso, você pode aumentar o nível de log dos registradores abaixo de `com.day.cq.wcm.workflow.process.impl` para DEBUG/TRACE para obter ainda mais informações de log.
 
-Se houver erros, a etapa do fluxo de trabalho será encerrada com uma `WorkflowException`, que envolve a exceção subjacente.
+Se houver erros, a etapa do fluxo de trabalho será encerrada com um `WorkflowException`, que envolve a Exceção subjacente.
 
 A seguir estão exemplos de logs gerados durante um exemplo de fluxo de trabalho de publicação da árvore de conteúdo:
 
@@ -180,16 +180,16 @@ ReplicationStatus previewStatus = afterStatus.getStatusForAgent(PREVIEW_AGENT); 
 
 Caso você não forneça esse filtro e use apenas o agente “publicar”, o agente “visualizar” não será usado e a ação de replicação não afetará o nível de visualização.
 
-O `ReplicationStatus` geral de um recurso só será modificado se a ação de replicação incluir pelo menos um agente que esteja ativo por padrão. No exemplo acima, esse fluxo não era o caso. A replicação estava usando apenas o agente &quot;visualização&quot;. Portanto, você deve usar o novo `getStatusForAgent()` método, que permite consultar o status de um agente específico. Esse método também funciona para o agente “publicar”. Ele retorna um valor não nulo se houver alguma ação de replicação feita usando o agente fornecido.
+O `ReplicationStatus` geral de um recurso só será modificado se a ação de replicação incluir pelo menos um agente que esteja ativo por padrão. No exemplo acima, esse fluxo não era o caso. A replicação estava usando apenas o agente &quot;visualização&quot;. Portanto, você deve usar o novo método `getStatusForAgent()`, que permite consultar o status de um agente específico. Esse método também funciona para o agente “publicar”. Ele retorna um valor não nulo se houver alguma ação de replicação feita usando o agente fornecido.
 
 ### Métodos de invalidação de conteúdo {#invalidating-content}
 
-Você pode invalidar o conteúdo diretamente usando a Invalidação de conteúdo do Sling (SCD) a partir do autor (o método preferencial) ou usando a API de replicação para chamar o agente de replicação de limpeza do Dispatcher de publicação. Consulte [Armazenamento em cache](/help/implementing/dispatcher/caching.md) para obter mais detalhes.
+Você pode invalidar o conteúdo diretamente usando a Invalidação de conteúdo do Sling (SCD) a partir do autor (o método preferencial) ou usando a API de replicação para chamar o agente de replicação de limpeza do Dispatcher de publicação. Consulte a página [Armazenamento em cache](/help/implementing/dispatcher/caching.md) para obter mais detalhes.
 
 **Limites de capacidade da API de replicação**
 
-Replicar menos de 100 caminhos de cada vez, sendo 500 o limite. Acima do limite, uma variável `ReplicationException` é lançado.
-Se a lógica do aplicativo não exigir uma replicação precisa, esse limite poderá ser ultrapassado definindo o `ReplicationOptions.setUseAtomicCalls` para false, que aceita qualquer número de caminhos, mas cria compartimentos internamente para permanecer abaixo desse limite.
+Replicar menos de 100 caminhos de cada vez, sendo 500 o limite. Acima do limite, um `ReplicationException` é lançado.
+Se a lógica do aplicativo não exigir uma replicação precisa, esse limite poderá ser ultrapassado definindo `ReplicationOptions.setUseAtomicCalls` como false, o que aceita qualquer número de caminhos, mas cria compartimentos internamente para permanecer abaixo desse limite.
 
 O tamanho do conteúdo transmitido por chamada de replicação não deve exceder `10 MB`. Essa regra inclui os nós e as propriedades, mas não os binários (pacotes de fluxo de trabalho e de conteúdo são considerados binários).
 
@@ -209,6 +209,6 @@ Para solucionar problemas de replicação, navegue até as filas de replicação
 
 ![Logs](assets/publish-logs.png "Logs")
 
-Se o conteúdo não puder ser publicado, toda a publicação será revertida do serviço de publicação do AEM.
+Se o conteúdo não puder ser publicado, toda a publicação será revertida do serviço AEM Publish.
 
 Nesse caso, a fila principal e editável mostra um status vermelho e deve ser revisada para identificar quais itens causaram o cancelamento da publicação. Ao clicar nessa fila, seus itens pendentes são exibidos, a partir dos quais um único item ou todos os itens podem ser apagados, se necessário.

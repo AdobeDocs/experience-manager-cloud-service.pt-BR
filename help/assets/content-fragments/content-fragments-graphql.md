@@ -1,5 +1,5 @@
 ---
-title: Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL (ativos - fragmentos de conteúdo)
+title: Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL (Assets - fragmentos de conteúdo)
 description: Saiba mais sobre os conceitos básicos da criação de um CMS headless no AEM usando fragmentos de conteúdo com GraphQL para entrega de conteúdo headless.
 feature: Content Fragments
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
@@ -51,7 +51,7 @@ O GraphQL é:
 
   Consulte [GraphQL.org](https://graphql.org)
 
-A variável [API GraphQL do AEM](#aem-graphql-api) O permite executar consultas (complexas) no [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md); sendo que cada query está de acordo com um tipo de modelo específico. O conteúdo retornado pode ser usado pelos seus aplicativos.
+A [API GraphQL do AEM](#aem-graphql-api) permite executar consultas (complexas) nos seus [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md); com cada consulta sendo de acordo com um tipo de modelo específico. O conteúdo retornado pode ser usado pelos seus aplicativos.
 
 ## API GraphQL do AEM {#aem-graphql-api}
 
