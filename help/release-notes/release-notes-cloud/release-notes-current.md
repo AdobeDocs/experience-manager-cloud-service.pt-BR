@@ -3,10 +3,10 @@ title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud S
 description: Notas de versão atuais para  [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 1566963898fb7f6999e3fad796b938128521bcce
+source-git-commit: 445d15c1449b968325c77becce8b0a547ba151d6
 workflow-type: tm+mt
-source-wordcount: '1957'
-ht-degree: 9%
+source-wordcount: '1941'
+ht-degree: 8%
 
 ---
 
@@ -22,7 +22,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 >[!NOTE]
 >
->Consulte [Atualizações recentes na documentação](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates) para obter detalhes de atualizações de documentação não relacionadas diretamente a uma versão.
+>Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização de Produto Prioritária do Adobe](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Data de lançamento {#release-date}
 
@@ -253,4 +253,3 @@ Você pode encontrar uma lista completa de versões de Gerar Variações [aqui](
 ## Notas de versão da Experience Cloud {#experience-cloud}
 
 Você pode encontrar informações sobre lançamentos de outros aplicativos Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
-Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização de Produto Prioritária do Adobe](https://www.adobe.com/subscription/priority-product-update.html).
