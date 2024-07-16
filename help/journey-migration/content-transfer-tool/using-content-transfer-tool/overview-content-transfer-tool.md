@@ -4,7 +4,7 @@ description: Saiba como usar a ferramenta Transferência de conteúdo para trans
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 52%
@@ -68,7 +68,7 @@ Na fase de assimilação, para aplicar o conteúdo delta sobre o conteúdo atual
 >title="Expiração de um conjunto de migração"
 >abstract="Saiba mais sobre a expiração de um conjunto de migração."
 
-Todos os conjuntos de migração expiram após um período prolongado de inatividade de aproximadamente 90 dias. Depois que os indicadores forem exibidos no cartão do projeto e nas linhas da tabela de trabalhos de migração por um período, o conjunto de migração expirará e seus dados não estarão mais disponíveis. O tempo de expiração pode ser facilmente estendido atuando sobre a migração definida por:
+Todos os conjuntos de migração acabarão expirando após um período prolongado de inatividade de aproximadamente 45 dias. Depois que os indicadores forem exibidos no cartão do projeto e nas linhas da tabela de trabalhos de migração por um período, o conjunto de migração expirará e seus dados não estarão mais disponíveis. O tempo de expiração pode ser facilmente estendido atuando sobre a migração definida por:
 
 * editar sua descrição
 * obtendo a chave de extração
