@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 46cd7d689c6cbc453720b5798ffb552da58f66e7
+source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
 workflow-type: tm+mt
-source-wordcount: '5627'
+source-wordcount: '5735'
 ht-degree: 0%
 
 ---
@@ -168,12 +168,12 @@ Ação 1 no Objeto A
 
 _
 
-![Vários campos permitidos em Quando](/help/forms/assets/allowed-multiple-field-when.png)
+![Campos múltiplos permitidos em Quando](/help/forms/assets/allowed-multiple-field-when.png)
 
-##### Considerações ao usar vários campos permitidos no recurso Quando a condição
+##### Considerações ao usar múltiplos campos permitidos no recurso Quando condição
 
-* Certifique-se de que o [componente principal esteja definido como a versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar esse recurso no regra editor.
-* Se as regras forem aplicadas a campos diferentes dentro da condição Quando, o regra é acionado mesmo se apenas um desses campos for alterado.
+* Certifique-se de que o [componente principal esteja definido para a versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar esse recurso no editor de regras.
+* Se as regras forem aplicadas a campos diferentes dentro da condição Quando, a regra é acionada mesmo que apenas um desses campos seja alterado.
 
 
 <!--
@@ -274,17 +274,17 @@ O tipo de regra **[!UICONTROL Definir Valor de]** permite que você defina o val
 
 O tipo de regra **Definir Valor de** não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
 
-Defina o valor do Objeto A como:
+Defina o valor do objeto A para:
 
 (sequência de caracteres ABC) OU
-(objeto propriedade X do objeto C) OU
+(propriedade X do objeto C) OU
 (valor de uma função) OU
 (valor de uma expressão matemática) OU
 (valor de saída de um serviço de modelo de dados);
 
 Quando (opcional):
 
-(Condição 1 E Condição 2 E Condição 3) é VERDADEIRA;
+(Condição 1 E Condição 2 e Condição 3) são VERDADEIRAS;
 
 O exemplo a seguir seleciona o valor de `Question2` como `True` e define o valor de `Result` como `correct`.
 
@@ -445,7 +445,7 @@ O botão de alternância, quando tocado, alterna o painel de funções e objetos
 
 Editor visual de regras é a área no modo editor visual da interface do usuário do editor de regras em que você escreve regras. Ele permite selecionar um tipo de regra e definir adequadamente condições e ações. Ao definir condições e ações em uma regra, você pode arrastar e soltar objetos e funções de formulário do painel Objetos de formulário e Funções.
 
-Para obter mais informações sobre o uso de regra editor visuais, consulte [Regras de gravação](rule-editor.md#p-write-rules-p).
+Para obter mais informações sobre como usar o editor de regras visuais, consulte [Escrever regras](rule-editor.md#p-write-rules-p).
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -460,9 +460,9 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. Click **[!UICONTROL Save]**.
 -->
 
-### E. botões Concluído e cancelar {#done-and-cancel-buttons}
+### E. Botões concluídos e de cancelamento {#done-and-cancel-buttons}
 
-A **[!UICONTROL Concluído]** botão é usada para salvar uma regra. Você pode salvar uma regra incompleta. No entanto, estão incompletos inválido e não são executados. As regras salvas em um objeto de formulário são listadas quando você iniciar o regra editor na próxima vez do mesmo objeto de formulário. Você pode gerenciar regras existentes nesse visualização. Para obter mais informações, consulte [Gerenciar regras](rule-editor.md#p-manage-rules-p).
+O **[!UICONTROL botão Concluído]** é usado para salvar uma regra. Você pode salvar uma regra incompleta. No entanto, os incompletos são inválidos e não são executados. As regras salvas em um objeto de formulário são listadas quando você iniciar o editor de regras na próxima vez a partir do mesmo objeto de formulário. Você pode gerenciar as regras existentes nessa visualização. Para obter mais informações, consulte [Gerenciar regras](rule-editor.md#p-manage-rules-p).
 
 O botão **[!UICONTROL Cancelar]** descarta todas as alterações feitas em uma regra e fecha o editor de regras.
 
@@ -574,7 +574,7 @@ Para gravar regras, execute as seguintes etapas:
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   No campo de expressão estendida, selecione **[!UICONTROL dividido pelo****campo Selecionar operador]** e **[!UICONTROL Número]** do **[!UICONTROL campo Selecionar opção]**. Em seguida, especifique **[!UICONTROL 2]** no campo de número.
+   No campo de expressão estendido, selecione dividido por ]**um dos**[!UICONTROL  campos Selecionar operador ]**e**[!UICONTROL  Número ]**no campo Selecionar opção****.**[!UICONTROL  Em seguida, especifique **[!UICONTROL 2]** no campo numérico.
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
@@ -592,7 +592,7 @@ Para gravar regras, execute as seguintes etapas:
 
    * Selecione ou arraste e solte na guia Objeto do Forms o campo **[!UICONTROL Estado civil]** no primeiro campo **[!UICONTROL Soltar objeto ou selecione aqui]**.
 
-   * Selecione **[!UICONTROL é igual a]** no campo **[!UICONTROL Selecionar Operador]**.
+   * A opção Selecionar **[!UICONTROL é igual ao]** **[!UICONTROL campo Selecionar operador]** .
 
    * Selecione a string no outro objeto **[!UICONTROL Soltar ou selecione aqui]** e especifique **[!UICONTROL Casado]** no campo **[!UICONTROL Inserir uma string]**.
 
@@ -863,13 +863,13 @@ Veja a seguir um exemplo de uma regra aninhada que exibe uma mensagem ao usuári
 
 ![Expressão complexa](assets/complexexpression.png)
 
-Também é possível arrastar e soltar condições em uma regra para editá-la. Selecione e passe o mouse sobre o identificador ( ![identificador](assets/drag-handle.svg)) antes de uma condição. Quando o ponteiro se transformar no símbolo da mão como mostrado abaixo, arraste e solte a condição em qualquer lugar da regra. A estrutura do regra muda.
+Também é possível arrastar e soltar condições em uma regra para editá-la. Selecione e passe o mouse sobre o identificador ( ![identificador](assets/drag-handle.svg)) antes de uma condição. Quando o ponteiro se transformar no símbolo de mão conforme mostrado abaixo, arraste e solte a condição em qualquer lugar dentro da regra. A estrutura de regras é alterada.
 
 ![Arrastar e soltar](assets/drag-and-drop.png)
 
-## Condições de expressão de data {#dateexpression}
+## Condições da expressão de data e data {#dateexpression}
 
-A editor de regras permite usar comparações de datas para criar condições.
+O editor de regras permite que você use comparações de data para criar condições.
 
 A seguir está um exemplo de condição que exibe um objeto de texto estático se a hipoteca da casa já estiver sendo feita, o que o usuário significa preenchendo o campo de data.
 
@@ -900,6 +900,15 @@ In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.
 Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
 
 ## Exemplo de regras {#example}
+
+### Simplifique cálculos complexos em painéis repetíveis com funções integradas
+
+O editor de regras permite usar funções prontas para uso, como Sum, Min, Max e Join diretamente em campos dentro de painéis repetíveis. Isso libera uma automação eficiente, permitindo que você implemente uma lógica de negócios complexa sem código personalizado.
+Imagine uma forma com um painel repetível. Cada instância do painel pode coletar dados como quantidades de produto. Você pode usar a função Soma para calcular automaticamente a quantidade total em todos os painéis, eliminando cálculos manuais e possíveis erros.
+
+![Suporte para campos de painel repetíveis em funções OOTB](/help/forms/assets/ootb-function-support-repeatable-panel.png)
+
+Este é apenas um exemplo! Explore as [funções](#b-form-objects-and-functions-br) disponíveis para simplificar fluxos de trabalho e melhorar a precisão dos dados em seus formulários.
 
 ### Invocar serviço de modelo de dados de formulário {#invoke}
 

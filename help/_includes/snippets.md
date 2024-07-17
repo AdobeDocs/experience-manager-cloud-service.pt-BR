@@ -1,8 +1,8 @@
 ---
-source-git-commit: 494e90bd5822495f0619e8ebf55f373a26a3ffe6
+source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
 workflow-type: tm+mt
-source-wordcount: '516'
-ht-degree: 9%
+source-wordcount: '564'
+ht-degree: 8%
 
 ---
 # Trechos {#snippets}
@@ -87,8 +87,8 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
      </tr>
    <tr>
     <td>Executar operações matemáticas no campo repetível do painel </td>
-    <td>As funções Matemática OOTB podem ser aplicadas em campos de painel repetíveis para executar funções como soma, média. </td>
-    <td>As operações matemáticas no campo de painel repetível podem ser executadas usando as funções personalizadas.
+    <td>As funções Matemática OOTB podem ser aplicadas em campos de painel repetíveis para executar funções como soma, média usando o editor de regras. Dois argumentos precisam ser fornecidos: o primeiro especifica o painel repetível que contém o campo, enquanto o segundo especifica o campo dentro do painel repetível correspondente. </td>
+    <td>As operações matemáticas no campo de painel repetível podem ser executadas usando as funções personalizadas. Também é possível aplicar as funções matemáticas diretamente aos campos do painel repetível usando o editor de regras.
    </td>
    </tr>
       <tr>
