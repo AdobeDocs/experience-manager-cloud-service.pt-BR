@@ -4,7 +4,7 @@ description: Configuração das regras de filtro de tráfego incluindo as regras
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 23d532f70e031608855bb9fc768aae5398c81e0f
+source-git-commit: b8fc132e7871a488cad99440d320e72cd8c31972
 workflow-type: tm+mt
 source-wordcount: '3938'
 ht-degree: 1%
@@ -207,7 +207,7 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 | reqHeader | `string` | Retorna o cabeçalho da solicitação com o nome especificado |
 | queryParam | `string` | Retorna o parâmetro de consulta com o nome especificado |
 | reqCookie | `string` | Retorna o cookie com o nome especificado |
-| postParam | `string` | Retorna o Parâmetro Post com o nome especificado do corpo da Solicitação. Funciona somente quando o corpo é do tipo de conteúdo `application/x-www-form-urlencoded` |
+| postParam | `string` | Retorna o parâmetro Post com o nome especificado do corpo da Solicitação. Funciona somente quando o corpo é do tipo de conteúdo `application/x-www-form-urlencoded` |
 
 **Predicado**
 
@@ -531,7 +531,7 @@ Uma notificação por email do [Centro de Ações](/help/operations/actions-cent
 
 Se esse limite for atingido, o Adobe bloqueará o tráfego desse endereço IP, mas é recomendável tomar medidas adicionais para proteger sua origem, incluindo a configuração das regras de filtro de tráfego de limite de taxa para bloquear picos de tráfego em limites mais baixos. Consulte o [tutorial Bloqueando ataques de DoS e DDoS usando regras de tráfego](#tutorial-blocking-DDoS-with-rules) para obter uma apresentação guiada.
 
-Este alerta é habilitado por padrão, mas pode ser desabilitado usando a propriedade *enable_dos_alerts*, definida como false. Quando o alerta for acionado, ele não será disparado novamente até o dia seguinte (UTC).
+Este alerta é habilitado por padrão, mas pode ser desabilitado usando a propriedade *defaultTrafficAlerts*, definida como false. Quando o alerta for acionado, ele não será disparado novamente até o dia seguinte (UTC).
 
 ```
 kind: "CDN"
@@ -540,7 +540,7 @@ metadata:
   envTypes: ["dev"]
 data:
   trafficFilters:
-    enable_ddos_alerts: false
+   defaultTrafficAlerts: false
 ```
 
 ## Logs CDN {#cdn-logs}
