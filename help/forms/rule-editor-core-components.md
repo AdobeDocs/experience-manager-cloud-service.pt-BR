@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: cf69db380097992ba8adfe1ac07b3ffa26217a07
+source-git-commit: 46a6f413be2ba41df8ca72bd7751ec453ae438ec
 workflow-type: tm+mt
 source-wordcount: '5735'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 ---
 
 
+# Adicionar regras a um formulário adaptável (Componentes principais) {#adaptive-forms-rule-editor}
+
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componentes principais) | Este artigo |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/rule-editor.md) |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
-
-# Adicionar regras a um formulário adaptável (Componentes principais) {#adaptive-forms-rule-editor}
 
 O recurso do editor de regras permite que usuários e desenvolvedores de negócios de formulários gravem regras em objetos de Formulário adaptável. Essas regras definem as ações a serem acionadas nos objetos de formulário com base nas condições predefinidas, entradas do usuário e ações do usuário no formulário. Isso ajuda a simplificar ainda mais a experiência de preenchimento de formulário, garantindo precisão e velocidade.
 
@@ -168,12 +168,12 @@ Ação 1 no Objeto A
 
 _
 
-![Campos múltiplos permitidos em Quando](/help/forms/assets/allowed-multiple-field-when.png)
+![Vários campos permitidos em Quando](/help/forms/assets/allowed-multiple-field-when.png)
 
-##### Considerações ao usar múltiplos campos permitidos no recurso Quando condição
+##### Considerações ao usar vários campos permitidos no recurso Quando a condição
 
-* Certifique-se de que o [componente principal esteja definido para a versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar esse recurso no editor de regras.
-* Se as regras forem aplicadas a campos diferentes dentro da condição Quando, a regra é acionada mesmo que apenas um desses campos seja alterado.
+* Certifique-se de que o [componente principal esteja definido como a versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar esse recurso no regra editor.
+* Se as regras forem aplicadas a campos diferentes dentro da condição Quando, o regra é acionado mesmo se apenas um desses campos for alterado.
 
 
 <!--
@@ -274,17 +274,17 @@ O tipo de regra **[!UICONTROL Definir Valor de]** permite que você defina o val
 
 O tipo de regra **Definir Valor de** não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
 
-Defina o valor do objeto A para:
+Defina o valor do Objeto A como:
 
 (sequência de caracteres ABC) OU
-(propriedade X do objeto C) OU
+(objeto propriedade X do objeto C) OU
 (valor de uma função) OU
 (valor de uma expressão matemática) OU
 (valor de saída de um serviço de modelo de dados);
 
 Quando (opcional):
 
-(Condição 1 E Condição 2 e Condição 3) são VERDADEIRAS;
+(Condição 1 E Condição 2 E Condição 3) é VERDADEIRA;
 
 O exemplo a seguir seleciona o valor de `Question2` como `True` e define o valor de `Result` como `correct`.
 
@@ -445,7 +445,7 @@ O botão de alternância, quando tocado, alterna o painel de funções e objetos
 
 Editor visual de regras é a área no modo editor visual da interface do usuário do editor de regras em que você escreve regras. Ele permite selecionar um tipo de regra e definir adequadamente condições e ações. Ao definir condições e ações em uma regra, você pode arrastar e soltar objetos e funções de formulário do painel Objetos de formulário e Funções.
 
-Para obter mais informações sobre como usar o editor de regras visuais, consulte [Escrever regras](rule-editor.md#p-write-rules-p).
+Para obter mais informações sobre o uso de regra editor visuais, consulte [Regras de gravação](rule-editor.md#p-write-rules-p).
 <!-- 
 ### E. Visual-code editors switcher {#e-visual-code-editors-switcher}
 
@@ -460,9 +460,9 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. Click **[!UICONTROL Save]**.
 -->
 
-### E. Botões concluídos e de cancelamento {#done-and-cancel-buttons}
+### E. botões Concluído e cancelar {#done-and-cancel-buttons}
 
-O **[!UICONTROL botão Concluído]** é usado para salvar uma regra. Você pode salvar uma regra incompleta. No entanto, os incompletos são inválidos e não são executados. As regras salvas em um objeto de formulário são listadas quando você iniciar o editor de regras na próxima vez a partir do mesmo objeto de formulário. Você pode gerenciar as regras existentes nessa visualização. Para obter mais informações, consulte [Gerenciar regras](rule-editor.md#p-manage-rules-p).
+A **[!UICONTROL Concluído]** botão é usada para salvar uma regra. Você pode salvar uma regra incompleta. No entanto, estão incompletos inválido e não são executados. As regras salvas em um objeto de formulário são listadas quando você iniciar o regra editor na próxima vez do mesmo objeto de formulário. Você pode gerenciar as regras existentes nessa visualização. Para obter mais informações, consulte [Gerenciar regras](rule-editor.md#p-manage-rules-p).
 
 O botão **[!UICONTROL Cancelar]** descarta todas as alterações feitas em uma regra e fecha o editor de regras.
 
@@ -574,7 +574,7 @@ Para gravar regras, execute as seguintes etapas:
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   No campo de expressão estendido, selecione dividido por ]**um dos**[!UICONTROL  campos Selecionar operador ]**e**[!UICONTROL  Número ]**no campo Selecionar opção****.**[!UICONTROL  Em seguida, especifique **[!UICONTROL 2]** no campo numérico.
+   No campo de expressão estendida, selecione **[!UICONTROL dividido pelo****campo Selecionar operador]** e **[!UICONTROL Número]** do **[!UICONTROL campo Selecionar opção]**. Em seguida, especifique **[!UICONTROL 2]** no campo de número.
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
@@ -592,7 +592,7 @@ Para gravar regras, execute as seguintes etapas:
 
    * Selecione ou arraste e solte na guia Objeto do Forms o campo **[!UICONTROL Estado civil]** no primeiro campo **[!UICONTROL Soltar objeto ou selecione aqui]**.
 
-   * A opção Selecionar **[!UICONTROL é igual ao]** **[!UICONTROL campo Selecionar operador]** .
+   * A seleção **[!UICONTROL é igual ao]** campo **[!UICONTROL Selecionar operador]** .
 
    * Selecione a string no outro objeto **[!UICONTROL Soltar ou selecione aqui]** e especifique **[!UICONTROL Casado]** no campo **[!UICONTROL Inserir uma string]**.
 
@@ -863,13 +863,13 @@ Veja a seguir um exemplo de uma regra aninhada que exibe uma mensagem ao usuári
 
 ![Expressão complexa](assets/complexexpression.png)
 
-Também é possível arrastar e soltar condições em uma regra para editá-la. Selecione e passe o mouse sobre o identificador ( ![identificador](assets/drag-handle.svg)) antes de uma condição. Quando o ponteiro se transformar no símbolo de mão conforme mostrado abaixo, arraste e solte a condição em qualquer lugar dentro da regra. A estrutura de regras é alterada.
+Também é possível arrastar e soltar condições em uma regra para editá-la. Selecione e passe o mouse sobre o identificador ( ![identificador](assets/drag-handle.svg)) antes de uma condição. Quando o ponteiro se transformar no símbolo da mão como mostrado abaixo, arraste e solte a condição em qualquer lugar da regra. A estrutura do regra muda.
 
 ![Arrastar e soltar](assets/drag-and-drop.png)
 
-## Condições da expressão de data e data {#dateexpression}
+## Condições de expressão de data {#dateexpression}
 
-O editor de regras permite que você use comparações de data para criar condições.
+A editor de regras permite usar comparações de datas para criar condições.
 
 A seguir está um exemplo de condição que exibe um objeto de texto estático se a hipoteca da casa já estiver sendo feita, o que o usuário significa preenchendo o campo de data.
 
