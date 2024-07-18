@@ -5,10 +5,10 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 98%
+source-wordcount: '488'
+ht-degree: 90%
 
 ---
 
@@ -48,7 +48,15 @@ Os ambientes criados em um programa de sandbox não estão configurados para dim
 
 ### Sem domínios personalizados ou listas de permissões de IP {#ip-allow}
 
-Domínios personalizados e listas de permissões IP não estão disponíveis em programas de sandbox.
+[Domínios personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md) e [listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) não estão disponíveis em programas de sandbox.
+
+### Nenhuma região adicional do Publish {#additional-publish-regions}
+
+[Regiões de publicação adicionais](/help/operations/additional-publish-regions.md) não estão disponíveis em programas de sandbox.
+
+### Nenhum SLA de 99,99% {#999-sla}
+
+O [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) não se aplica a programas de sandbox.
 
 ### Sem rede avançada {#advanced-networking}
 

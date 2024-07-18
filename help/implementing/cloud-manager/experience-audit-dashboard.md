@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '1958'
+source-wordcount: '1995'
 ht-degree: 6%
 
 ---
@@ -112,7 +112,7 @@ Além do resumo apresentado nos detalhes de uma execução de pipeline, você ta
 
 Tocar ou clicar em **Exibir páginas mais lentas** abre a caixa de diálogo **5 páginas mais lentas**, mostrando as cinco páginas de menor desempenho que você [configurou para auditoria.](#configuration)
 
-![Cinco mais lentos](assets/experience-audit-slowest-five.jpg)
+![Cinco mais lentos](assets/experience-audit-slowest-five.png)
 
 As pontuações são detalhadas por **Desempenho**, **Acessibilidade**, **Práticas recomendadas** e **SEO**, juntamente com o desvio de cada métrica em relação à última auditoria.
 
@@ -166,7 +166,7 @@ A seção **Recommendations** mostra um conjunto agregado de insights. Por padr�
 
 Toque ou clique na divisa de qualquer recomendação para revelar detalhes sobre ela.
 
-![Detalhes da recomendação](assets/experience-audit-recommendation-details.png)
+![Detalhes da recomendação](assets/experience-audit-recommendations-details.png)
 
 Quando disponíveis, os detalhes expandidos da recomendação também contêm a porcentagem do impacto das recomendações para ajudar a se concentrar nas alterações mais impactantes.
 
@@ -184,7 +184,7 @@ Tocar ou clicar no link de uma página específica atualiza o filtro **Seleciona
 
 ![Resultados da página](assets/experience-audit-page-results.png)
 
-A guia **Relatórios brutos** fornece pontuações para cada auditoria da página. Toque ou clique no ícone **Baixar** para recuperar um arquivo JSON dos dados brutos.
+A guia **Relatórios brutos** fornece pontuações para cada auditoria da página. Toque ou clique na data do relatório na coluna **Relatório de Farol** para recuperar um arquivo JSON dos dados brutos.
 
 ![Relatório bruto](assets/experience-audit-raw-reports.png)
 
@@ -200,6 +200,10 @@ Para executar uma varredura por solicitação, navegue até a guia **Relatórios
 
 ![Varredura por solicitação](assets/experience-audit-on-demand.png)
 
+O botão **Executar verificação** fica indisponível e está marcado com um ícone de relógio quando uma verificação por solicitação já está em execução.
+
+![Varredura por solicitação em execução](assets/experience-audit-on-demand-running.png)
+
 As varreduras por solicitação acionam uma Auditoria de experiência para as 25 [páginas configuradas](#configuration) mais recentes e normalmente são concluídas em alguns minutos.
 
 Após a conclusão, o gráfico de pontuações será atualizado automaticamente e você poderá inspecionar os resultados exatamente como em uma verificação de execução de pipeline.
@@ -214,15 +218,15 @@ Você pode filtrar o gráfico de pontuações com base no tipo de acionador usan
 
 ## A Auditoria de experiência encontra problemas {#issues}
 
-Se [as páginas que você configurou](#configuration) para serem auditadas não estiverem disponíveis, a Auditoria de experiência refletirá isso.
+Se [as páginas que você configurou](#configuration) para serem auditadas não estivessem disponíveis ou houvesse outros erros na auditoria, a Auditoria de experiência refletirá isso.
 
 O pipeline mostra uma seção de erro expansível para exibir os caminhos de URL relativos que não podia acessar.
 
 ![Problemas encontrados pela Auditoria de Experiência](assets/experience-audit-issues.jpg)
 
-Se estiver exibindo o relatório completo, os detalhes serão mostrados na seção **[Resultados da verificação de auditoria da experiência](#results)**.
+Se estiver exibindo o relatório completo, os detalhes serão mostrados na seção **[Resultados da verificação de auditoria da experiência](#results)**, que também é expansível.
 
-![Problemas completos com o relatório](assets/experience-audit-issues-reports.jpeg)
+![Problemas completos com o relatório](assets/experience-audit-issues-report.png)
 
 Alguns motivos pelos quais as páginas podem não estar disponíveis são:
 
@@ -253,8 +257,7 @@ Estes podem ser melhorados através de:
 
 Os detalhes a seguir fornecem informações adicionais sobre como a Auditoria de experiência avalia o site. Eles não são necessários para o uso geral do recurso e são fornecidos aqui para fins de integridade.
 
-* Embora os [caminhos de página da Auditoria de Experiência configurados](#configuration) mostrem o domínio `.com` do editor, a auditoria verifica o domínio de origem (`.net`) para garantir que os problemas introduzidos durante o desenvolvimento sejam detectados.
-   * O domínio `.com` usa um CDN e pode gerar pontuações melhores ou conter resultados em cache.
+* A auditoria verifica o domínio de origem (`.com`) conforme definido nos [caminhos configurados da página Auditoria de Experiência](#configuration) do editor para simular experiências de usuário reais com mais precisão e ajuda a tomar decisões mais conscientes sobre como gerenciar e otimizar seus sites.
 * Em pipelines de pilha completa de produção, o ambiente de preparo é verificado.
    * Para garantir que a auditoria forneça detalhes relevantes durante a auditoria, o conteúdo do ambiente de preparo deve estar o mais próximo possível do ambiente de produção.
 * As páginas exibidas na lista suspensa **Selecionar** na seção [**Pontuações de páginas - tendência**](#trend) são todas páginas conhecidas que foram digitalizadas no passado pela Auditoria de Experiência.

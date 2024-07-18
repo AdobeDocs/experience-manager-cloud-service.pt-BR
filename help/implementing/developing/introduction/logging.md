@@ -4,7 +4,7 @@ description: Saiba como usar o Logging para AEM as a Cloud Service a fim de conf
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
 source-wordcount: '2797'
 ht-degree: 2%
@@ -561,9 +561,9 @@ Os logs do AEM as a Cloud Service para serviços em nuvem podem ser acessados ba
 
 ### Logs para regiões adicionais do Publish {#logs-for-additional-publish-regions}
 
-Se Regiões Publish adicionais estiverem ativadas para um ambiente específico, os logs de cada região estarão disponíveis para download no Cloud Manager, conforme mencionado acima.
+Se regiões de publicação adicionais estiverem habilitadas para um ambiente específico, os logs de cada região estarão disponíveis para download no Cloud Manager, conforme mencionado acima.
 
-Os logs do AEM e os logs do Dispatcher para as Regiões adicionais do Publish especificarão a região nas primeiras 3 letras após a ID do ambiente, como exemplificado por **nld2** na amostra abaixo, que se refere a uma instância de publicação do AEM adicional localizada na Holanda:
+Os logs do AEM e os logs do Dispatcher para as regiões de publicação adicionais especificarão a região nas primeiras 3 letras após a ID do ambiente, como exemplificado por **nld2** na amostra abaixo, que se refere a uma instância de publicação adicional do AEM localizada na Holanda:
 
 ```
 cm-p7613-e12700-nld2-aem-publish-bcbb77549-5qmmt 127.0.0.1 - 07/Nov/2023:23:57:11 +0000 "HEAD /libs/granite/security/currentuser.json HTTP/1.1" 200 - "-" "Java/11.0.19"

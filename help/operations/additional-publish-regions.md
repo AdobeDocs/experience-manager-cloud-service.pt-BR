@@ -4,12 +4,13 @@ description: Saiba como o AEM as a Cloud Service permite regiões de publicaçã
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 78%
+source-wordcount: '663'
+ht-degree: 71%
 
 ---
+
 
 # Regiões de publicação adicionais {#additional-publish-regions}
 
@@ -22,7 +23,9 @@ As organizações podem licenciar até três regiões de publicação adicionais
 
 >[!NOTE]
 >
->No momento, esse recurso está disponível apenas para o AEM Sites. Ele também não pode ser aplicado a programas de sandbox. Além disso, o recurso de regiões de publicação adicionais requer que seu programa seja atualizado para a versão do AEM 12142 ou superior.
+>* Esse recurso está disponível para as soluções Sites e Forms.
+>* Este recurso não pode ser aplicado a [programas de sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* Este recurso requer que seu programa seja atualizado para AEM versão 12142 ou superior.
 
 ## Casos de uso {#use-cases}
 
@@ -57,7 +60,9 @@ Se regiões de publicação adicionais estiverem ativadas, logs separados para c
 
 Lembre-se das limitações a seguir ao considerar o uso de regiões de publicação adicionais.
 
-* Regiões de publicação adicionais só podem ser adicionadas ao AEM Sites. Regiões de publicação adicionais não se estendem a outras soluções de AEM ou funcionalidades relacionadas implantadas no mesmo programa (por exemplo, AEM Forms ou Adobe Learning Manager).
+* Regiões de publicação adicionais só podem ser adicionadas ao AEM Sites ou AEM Forms.
+   * Regiões de publicação adicionais não se estendem a outras soluções de AEM ou funcionalidades relacionadas implantadas no mesmo programa (por exemplo, AEM Assets ou Adobe Learning Manager).
+   * No entanto, essas soluções podem ser adicionadas a um programa, desde que ele tenha pelo menos uma solução do Sites ou do Forms aplicável.
 * Regiões adicionais só podem ser adicionadas se os direitos associados estiverem disponíveis e sem uso no locatário.
 * É possível adicionar no máximo três regiões de publicação adicionais a qualquer ambiente individual.
 * Regiões adicionais estão disponíveis somente em programas de produção. O recurso não está disponível em programas de sandbox.

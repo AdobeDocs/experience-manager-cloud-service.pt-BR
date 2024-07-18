@@ -5,10 +5,10 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 88b0479c44f6431a9f254551e51b1ce86af91d0f
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 34%
+source-wordcount: '1040'
+ht-degree: 33%
 
 ---
 
@@ -87,7 +87,7 @@ O Adobe HIPAA Compliant e o Web Application Firewall (WAF) facilitam a seguranç
 
 Se você tiver os direitos necessários, a guia **SLA** será exibida como a segunda ou terceira guia na caixa de diálogo **Configurar para Produção**.
 
-A AEM Sites oferece um contrato de nível de serviço (SLA) padrão de 99,9%. A opção **99,99% do Contrato de Nível de Serviço** habilita uma porcentagem mínima de 99,99% do tempo de atividade para seus ambientes de produção.
+A AEM Sites e a Forms oferecem um contrato de nível de serviço (SLA) padrão de 99,9%. A opção **Contrato de Nível de Serviço de 99,99%** habilita uma porcentagem mínima de 99,99% de tempo de atividade para seus ambientes de produção para Sites e/ou Forms.
 
 O SLA de 99,99% oferece benefícios, incluindo maior disponibilidade e menor latência, e requer que uma [região de publicação adicional](/help/implementing/cloud-manager/manage-environments.md#multiple-regions) seja aplicada ao ambiente de produção no programa.
 
@@ -105,7 +105,7 @@ Além dos direitos exigidos, 99,99% do SLA tem requisitos adicionais para uso.
 * Para que o SLA de 99,99% e os relatórios sejam ativados, o [ambiente de produção/preparo](/help/implementing/cloud-manager/manage-environments.md#adding-environments) deve ter sido criado e pelo menos uma região de publicação adicional deve ter sido aplicada no ambiente de produção/preparo.
    * Se estiver usando a [rede avançada](/help/security/configuring-advanced-networking.md), verifique o documento [Adicionando várias regiões do Publish a um novo ambiente](/help/implementing/cloud-manager/manage-environments.md#adding-regions) para obter recomendações para que a conectividade seja mantida no caso de falha regional.
 * Pelo menos uma região de publicação adicional deve permanecer em seu programa de SLA de 99,99%. Os usuários não têm permissão para excluir a última região de publicação adicional do seu programa de SLA de 99,99%.
-* O SLA de 99,99% é compatível com programas de produção que têm a solução do Sites ativada.
+* O SLA de 99,99% é compatível com programas de produção que têm a solução Sites ou Forms ativada.
 * Você deve executar um [pipeline de pilha completa](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para ativar (ou, ao editar um programa, desativar) o SLA de 99,99%.
 
 ## Acessar o programa {#accessing}
