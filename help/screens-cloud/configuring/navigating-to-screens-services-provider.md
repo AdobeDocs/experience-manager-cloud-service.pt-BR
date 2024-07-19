@@ -4,10 +4,10 @@ description: Esta página descreve como navegar até o Provedor de Serviços Scr
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: f91166ca0349636386aa8721ded5b3bbda1cdb51
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 6%
+source-wordcount: '430'
+ht-degree: 4%
 
 ---
 
@@ -33,11 +33,11 @@ Siga as etapas abaixo para configurar o Provedor de Serviços Screens:
    >[!CAUTION]
    >Se você tiver acesso a várias organizações, verifique se fez logon na Organização correta. Para alterar a organização, clique no nome da organização no canto superior direito da tela e escolha a organização correta que você precisa acessar.
 
-2. Clique no ícone de engrenagem ao lado de Projeto (canto superior esquerdo)
+1. Clique no ícone de engrenagem ao lado de Projeto (canto superior esquerdo)
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens0.png)
 
-3. Insira os seguintes detalhes na caixa de diálogo Editar configurações.
+1. Insira os seguintes detalhes na caixa de diálogo Editar configurações.
    * **URL do Publish** - AEM publicar URL (por exemplo, `https://publish-p12345-e12345.adobeaemcloud.com`)
    * **URL do Autor** - URL do autor do AEM (por exemplo, `https://author-p12345-e12345.adobeaemcloud.com`)
 
@@ -46,13 +46,49 @@ Siga as etapas abaixo para configurar o Provedor de Serviços Screens:
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens4.png)
 
-4. Clique em **Salvar** para se conectar ao provedor de conteúdo do Screens
+1. Clique em **Salvar** para se conectar ao provedor de conteúdo do Screens.
 
-5. Selecione **Canais** na barra de navegação à esquerda e clique em **abrir no provedor de conteúdo**.
+1. Ao configurar a instância de publicação AEM para permitir o acesso somente a endereços IP confiáveis pelo recurso de Inclui na lista de permissões de IP do Cloud Manager, é necessário configurar um cabeçalho com um valor principal na caixa de diálogo de configurações, como mostrado abaixo.
+Os IPs que precisam ser colocados na lista de permissões também precisam ser movidos para o arquivo de configuração e precisam ser [desaplicados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) das configurações do Cloud Manager.
+
+   ![imagem](/help/screens-cloud/assets/configure/configure-screens20.png)
+
+A mesma chave precisa ser configurada na configuração do CDN do AEM.  É recomendável não colocar o valor do cabeçalho diretamente no GITHub e usar uma [referência secreta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets).
+Um exemplo de [configuração de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) é fornecido abaixo:
+
+incluir na lista de permissões     kind: &quot;CDN&quot;
+    version: &quot;1&quot;
+    metadata:
+    envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
+    data:
+    trafficFilters:
+    rules:
+    - name: &quot;block-request-from-not-allowed-ips&quot;
+    when:
+    allOf:
+    - reqProperty: clientIp
+    notIn: [&quot;101.41.112.0/24&quot;]
+    - req Propriedade: camada
+    igual a: publicar
+    ação: bloco
+    - nome: &quot;allow-requests-with-header&quot;
+    quando:
+    allOf:
+    - reqProperty: camada
+    igual a: publicar
+    - reqProperty: caminho
+    igual a: /screens/channels.json
+    }- reqHeader: x-screens-search-key
+    é igual a: ${\
+    {22 
+    ação:
+    tipo: permitir
+{CDN_HEADER_KEY}
+1. Selecione **Canais** na barra de navegação à esquerda e clique em **abrir no provedor de conteúdo**.
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-6. O Provedor de conteúdo do Screens é aberto em outra guia que permite criar o conteúdo.
+1. O Provedor de conteúdo do Screens é aberto em outra guia que permite criar o conteúdo.
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens2.png)
 
