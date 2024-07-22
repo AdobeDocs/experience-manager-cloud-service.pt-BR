@@ -4,7 +4,7 @@ description: Esta página descreve como navegar até o Provedor de Serviços Scr
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: f91166ca0349636386aa8721ded5b3bbda1cdb51
+source-git-commit: ea374f6e521d3b94d1d38af5c8f6780275ae2cb4
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 4%
@@ -52,38 +52,36 @@ Siga as etapas abaixo para configurar o Provedor de Serviços Screens:
 Os IPs que precisam ser colocados na lista de permissões também precisam ser movidos para o arquivo de configuração e precisam ser [desaplicados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) das configurações do Cloud Manager.
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens20.png)
-
 A mesma chave precisa ser configurada na configuração do CDN do AEM.  É recomendável não colocar o valor do cabeçalho diretamente no GITHub e usar uma [referência secreta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets).
 Um exemplo de [configuração de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) é fornecido abaixo:
+tipo: &quot;CDN&quot;
+versão: &quot;1&quot;
+metadados:
+envTypes: [&quot;dev&quot;, &quot;estágio&quot;, &quot;prod&quot;]
+dados:
+trafficFilters:
+regras:
+- name: &quot;block-request-from-not-allowed-ips&quot;
+quando:
+allOf:
+- reqProperty: clientIp
+notIn: [&quot;101.41.112.0/24&quot;]
+- reqProperty: tier
+é igual a: publicar
+action: block
+- name: &quot;allow-requests-with-header&quot;
+quando:
+allOf:
+- reqProperty: tier
+é igual a: publicar
+- reqProperty: path
+é igual a: /screens/channels.json
+- reqHeader: x-screens-tecla de inclui na lista de permissões
+é igual a: ${\
+   {CDN_HEADER_KEY}
+ação:
+type: allow
 
-incluir na lista de permissões     kind: &quot;CDN&quot;
-    version: &quot;1&quot;
-    metadata:
-    envTypes: [&quot;dev&quot;, &quot;stage&quot;, &quot;prod&quot;]
-    data:
-    trafficFilters:
-    rules:
-    - name: &quot;block-request-from-not-allowed-ips&quot;
-    when:
-    allOf:
-    - reqProperty: clientIp
-    notIn: [&quot;101.41.112.0/24&quot;]
-    - req Propriedade: camada
-    igual a: publicar
-    ação: bloco
-    - nome: &quot;allow-requests-with-header&quot;
-    quando:
-    allOf:
-    - reqProperty: camada
-    igual a: publicar
-    - reqProperty: caminho
-    igual a: /screens/channels.json
-    }- reqHeader: x-screens-search-key
-    é igual a: ${\
-    {22 
-    ação:
-    tipo: permitir
-{CDN_HEADER_KEY}
 1. Selecione **Canais** na barra de navegação à esquerda e clique em **abrir no provedor de conteúdo**.
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens1.png)
@@ -91,6 +89,10 @@ incluir na lista de permissões     kind: &quot;CDN&quot;
 1. O Provedor de conteúdo do Screens é aberto em outra guia que permite criar o conteúdo.
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens2.png)
+
+
+
+
 
 ## O que vem a seguir {#whats-next}
 
