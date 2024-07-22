@@ -4,9 +4,9 @@ description: Saiba mais sobre as tarefas de manutenção no AEM as a Cloud Servi
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: f8ef7e36ad602af96c3a6055db31ac328da808e6
+source-git-commit: b8bed4acf895f1cf04ea92ae27b87c7bfb38863d
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2110'
 ht-degree: 30%
 
 ---
@@ -84,7 +84,7 @@ A tabela a seguir ilustra as tarefas de manutenção disponíveis.
     <td>Cliente</td>
     <td>
     <p>Deve ser feito no Git. Substitua o nó de configuração da janela de manutenção pronto para uso em <code>/libs</code> criando propriedades na pasta <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consulte a tabela Janela de manutenção abaixo para obter mais detalhes sobre a configuração.</p>
-    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades apropriadas. Consulte a lista de propriedades OSGI em "Configuração de limpeza de projetos Adobe".</p>
+    <p>Ative a tarefa de manutenção adicionando outro nó sob o nó acima (nomeie-o como <code>granite_ProjectPurgeTask</code>) com as propriedades apropriadas. Consulte a lista de [propriedades OSGI](/help/implementing/deploying/configuring-osgi.md) em **Configuração de limpeza de projetos Adobe**.</p>
   </td>
   </tr>
   </tbody>
