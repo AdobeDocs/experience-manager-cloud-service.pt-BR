@@ -2,7 +2,7 @@
 title: APIs de entrega
 description: Saiba como usar as APIs de entrega.
 role: User
-source-git-commit: 6fdc44b93e11a20b6859419813fd7eadbefd95c1
+source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
@@ -23,7 +23,7 @@ A tabela a seguir ilustra o uso das várias APIs de entrega disponíveis:
 
 | API de entrega | Descrição |
 |---|---|
-| [Representação binária otimizada para a Web do ativo no formato de saída solicitado](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Retorna a representação binária otimizada para a Web do ativo no formato de saída solicitado com base na ID do ativo enviada na solicitação. Além disso, você pode definir vários modificadores de imagem, como largura, altura, rotação, inversão, qualidade, recorte, formato e [recorte inteligente](/help/assets/dynamic-media/image-profiles.md). Consulte os [detalhes da API](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/getAssetSeoFormat) para obter os formatos e modificadores de imagem compatíveis.O <br>Adobe recomenda usar esta API para todos os tipos de formato de imagem. |
+| [Representação binária otimizada para a Web do ativo no formato de saída solicitado](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Retorna a representação binária otimizada para a Web do ativo no formato de saída solicitado com base na ID do ativo enviada na solicitação. Além disso, você pode definir vários modificadores de imagem, como largura, altura, rotação, inversão, qualidade, recorte, formato e [recorte inteligente](/help/assets/dynamic-media/image-profiles.md). Consulte os [detalhes da API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) para obter os formatos e modificadores de imagem compatíveis.O <br>Adobe recomenda usar esta API para todos os tipos de formato de imagem. |
 | [Representação binária otimizada para a Web do ativo](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | A API de conveniência que aplica padrões à representação binária otimizada para a Web do ativo retornado na resposta. Os padrões incluem um formato JPEG/WEBP padrão, qualidade => 65 e largura => 1024. |
 | [Binário original carregado do ativo](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | Retorna os binários carregados originalmente para o ativo. O Adobe recomenda usar essa API para tipos de formato de documento e imagens SVG. |
 | [Representação pré-gerada do ativo disponível no ambiente de criação do AEM Assets](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | Retorna o fluxo de bits da representação de ativos disponível no ambiente de criação do AEM Assets com base na ID do ativo e no nome da representação enviados na solicitação. |
