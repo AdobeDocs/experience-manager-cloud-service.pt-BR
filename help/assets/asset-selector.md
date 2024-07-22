@@ -5,10 +5,10 @@ contentOwner: KK
 role: Admin,User
 feature: Selectors
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: d12aba19a8f166afcaa071478c1cb6d995010cd8
+source-git-commit: 61647c0f190c7c71462f034a131f5a7c13fd7162
 workflow-type: tm+mt
-source-wordcount: '4725'
-ht-degree: 36%
+source-wordcount: '4871'
+ht-degree: 35%
 
 ---
 
@@ -812,6 +812,60 @@ A tabela a seguir descreve algumas das propriedades importantes do objeto de ati
 | *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | número | A altura da representação. |
 
 Para obter uma lista completa das propriedades e um exemplo detalhado, acesse [Exemplo de código do seletor de ativos](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+
+### Filtro de invocação contextual{#contextual-invocation-filter}
+
+O Seletor de ativos permite adicionar um filtro seletor de tags. Ela é compatível com um grupo de tags que combina todas as tags relevantes a um grupo de tags específico. Além disso, permite selecionar tags adicionais correspondentes ao ativo que você está procurando. Além disso, você também pode definir os grupos de tags padrão no filtro de chamada contextual que são usados principalmente por você para que sejam acessíveis a você em qualquer lugar.
+
+> 
+>
+> * É necessário adicionar um trecho de código de invocação contextual para ativar o filtro de marcação na pesquisa.
+> * É obrigatório usar a propriedade de nome correspondente ao tipo de grupo de marcas `(property=xcm:keywords.id=)`.
+
+Sintaxe:
+
+```
+const filterSchema=useMemo(() => {
+    return: [
+        {
+            element: 'taggroup',
+            name: 'property=xcm:keywords.id='
+        },
+    ];
+}, []);
+```
+
+Para adicionar grupos de tags no painel Filtros, é obrigatório adicionar pelo menos um grupo de tags como padrão. Além disso, use o trecho de código abaixo para adicionar as tags padrão pré-selecionadas do grupo de tags.
+
+```
+export const WithAssetTags = (props) = {
+const [selectedTags, setSelectedTags] = useState (
+new Set(['orientation', 'color', 'facebook', 'experience-fragments:', 'dam', 'monochrome'])
+const handleSelectTags = (selected) => {
+setSelectedTags (new Set (selected)) ;
+};
+const filterSchema = useMemo ((); => {
+    return {
+        schema: [
+            ｛
+                fields: [
+                    {
+                    element: 'checkbox', 
+                    name: 'property=xcm:keywords=', 
+                    defaultValue: Array. from(selectedTags), 
+                    options: assetTags, 
+                    orientation: 'vertical',
+                    },
+                ],
+    header: 'Asset Tags', 
+    groupkey: 'AssetTagsGroup',
+        ],
+    },
+｝；
+}, [selectedTags]);
+```
+
+![filtro de grupo de marcas](assets/tag-group.gif)
 
 ## Lidar com a seleção de ativos usando o esquema de objeto {#handling-selection}
 
