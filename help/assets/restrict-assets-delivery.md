@@ -2,7 +2,8 @@
 title: Restringir a entrega de ativos no Experience Manager
 description: Saiba como restringir a entrega de ativos no [!DNL Experience Manager].
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
+source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -19,7 +20,7 @@ Os usuários [pesquisando](search-assets-api.md) ou utilizando [URLs de entrega]
 
 ## Entrega restrita usando um token IMS {#restrict-delivery-ims-token}
 
-No Experience Manager, a entrega restrita via IMS envolve dois estágios principais:
+No Experience Manager Assets, a entrega restrita via IMS envolve dois estágios principais:
 
 * Criação  
 * Entrega
@@ -43,7 +44,7 @@ Se o campo não estiver disponível, use as seguintes etapas para adicionar o ca
       1. Atualize o **[!UICONTROL Mapear para a propriedade]** para _./jcr:content/metadata/dam:roles_.
 
 1. Obtenha os grupos IMS que serão adicionados aos metadados de funções do ativo. Para buscar os grupos IMS, siga estas etapas:
-   1. Faça logon em https://adminconsole.adobe.com/.
+   1. Entrar em `https://adminconsole.adobe.com/.`
    1. Vá para sua respectiva organização e navegue até **[!UICONTROL Grupos de Usuários]**.
    1. Selecione o **[!UICONTROL Grupo de Usuários]** que você precisa adicionar e extraia a **[!UICONTROL orgID]** e a **[!UICONTROL userGroupID]** da URL ou use sua ID da Organização, como `{orgID}@AdobeOrg:{usergroupID}`.
 
