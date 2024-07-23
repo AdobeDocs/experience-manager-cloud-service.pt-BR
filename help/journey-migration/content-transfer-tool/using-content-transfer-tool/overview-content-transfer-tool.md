@@ -4,7 +4,7 @@ description: Saiba como usar a ferramenta Transferência de conteúdo para trans
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: 67bc538fe174034c05808d4a62c51c404dfaf38c
+source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 52%
@@ -49,7 +49,7 @@ Existem duas fases associadas à transferência de conteúdo:
 
 Um conjunto de migração possui os seguintes atributos:
 
-* Com a nova versão, é possível criar no máximo vinte conjuntos de migração em um projeto criado no Cloud Acceleration Manager.
+* Com a nova versão, você pode criar no máximo dez conjuntos de migração em um projeto criado no Cloud Acceleration Manager.
 * Cada conjunto de migração deve ter um nome exclusivo.
 
 A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior.
