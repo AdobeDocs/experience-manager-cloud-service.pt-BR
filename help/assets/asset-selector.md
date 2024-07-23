@@ -3,15 +3,13 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 contentOwner: KK
 role: Admin,User
-feature: Selectors
-exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: 61647c0f190c7c71462f034a131f5a7c13fd7162
+exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
+source-git-commit: e357dd0b9b2e67d4989a34054737a91743d0933a
 workflow-type: tm+mt
-source-wordcount: '4871'
-ht-degree: 35%
+source-wordcount: '4550'
+ht-degree: 36%
 
 ---
-
 
 # Seletor de ativos de micro front-end {#Overview}
 
@@ -48,7 +46,7 @@ O Seletor de ativos oferece muitos benefícios, como:
 Você deve garantir os seguintes métodos de comunicação:
 
 * O aplicativo está sendo executado em HTTPS.
-* O URL do aplicativo na lista de permissões de URLs de redirecionamento do cliente IMS.
+* O URL do aplicativo está na lista de permissões de URLs de redirecionamento do cliente IMS.
 * O fluxo de logon do IMS é configurado e renderizado usando um pop-up no navegador da Web. Portanto, os pop-ups devem ser ativados ou permitidos no navegador de destino.
 
 Use os pré-requisitos acima se você precisar de um fluxo de trabalho de autenticação IMS do Seletor de ativos. Como alternativa, se você já estiver autenticado com o fluxo de trabalho do IMS, é possível adicionar as informações do IMS.
@@ -58,7 +56,7 @@ Use os pré-requisitos acima se você precisar de um fluxo de trabalho de autent
 > Este repositório serve como uma documentação complementar que descreve as APIs disponíveis e exemplos de uso para integração do Seletor de ativos. Antes de tentar instalar ou usar o Seletor de ativos, verifique se sua organização recebeu o acesso ao Seletor de ativos como parte do perfil as a Cloud Service do Experience Manager Assets. Se não tiver sido provisionado, você não poderá integrar ou usar esses componentes. Para solicitar o provisionamento, o administrador do programa deve levantar um tíquete de suporte marcado como P2 do Admin Console e incluir as seguintes informações:
 >
 >* Nomes de domínio em que o aplicativo de integração está hospedado.
->* Após o provisionamento, sua organização receberá `imsClientId`, `imsScope` e um `redirectUrl` correspondentes ao ambiente solicitado que são essenciais para a configuração do Seletor de ativos. Sem essas propriedades válidas, não é possível executar as etapas de instalação.
+>* Após o provisionamento, sua organização receberá `imsClientId`, `imsScope` e um `redirectUrl` correspondentes aos ambientes solicitados que são essenciais para a configuração do Seletor de ativos. Sem essas propriedades válidas, não é possível executar as etapas de instalação.
 
 ## Instalação {#installation}
 
@@ -109,7 +107,6 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 * [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integrar o Seletor de ativos a um aplicativo não-Adobe](#adobe-non-app-integration)
-* [Integração do Dynamic Media com recursos OpenAPI](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -194,7 +191,7 @@ A classe `ImsAuthService` manipula o fluxo de autenticação para o Seletor de a
 
 +++
 
-+++**Validação do token IMS**
++++**Validação com o token IMS fornecido**
 
 ```
 <script>
@@ -228,28 +225,28 @@ A classe `ImsAuthService` manipula o fluxo de autenticação para o Seletor de a
 ```
 // object `imsProps` to be defined as below 
 let imsProps = {
-imsClientId: <IMS Client Id>,
-imsScope: "openid",
-redirectUrl: window.location.href,
-modalMode: true,
-adobeImsOptions: {
-modalSettings: {
-allowOrigin: window.location.origin,
+    imsClientId: <IMS Client Id>,
+        imsScope: "openid",
+        redirectUrl: window.location.href,
+        modalMode: true,
+        adobeImsOptions: {
+            modalSettings: {
+            allowOrigin: window.location.origin,
 },
-useLocalStorage: true,
+        useLocalStorage: true,
 },
 onImsServiceInitialized: (service) => {
-console.log("onImsServiceInitialized", service);
+            console.log("onImsServiceInitialized", service);
 },
 onAccessTokenReceived: (token) => {
-console.log("onAccessTokenReceived", token);
+            console.log("onAccessTokenReceived", token);
 },
 onAccessTokenExpired: () => {
-console.log("onAccessTokenError");
+            console.log("onAccessTokenError");
 // re-trigger sign-in flow
 },
 onErrorReceived: (type, msg) => {
-console.log("onErrorReceived", type, msg);
+            console.log("onErrorReceived", type, msg);
 },
 }
 ```
@@ -274,10 +271,6 @@ Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos a um 
 * apikey
 
 O Seletor de ativos oferece suporte à autenticação para o repositório [!DNL Experience Manager Assets] usando propriedades do Sistema Identity Management (IMS) como `imsScope` ou `imsClientID` quando você o integra com um aplicativo que não seja Adobe.
-
-### Integrar o Seletor de ativos a um aplicativo não-Adobe {#adobe-non-app-integration}
-
-Para integrar o Seletor de ativos a um aplicativo que não seja do Adobe, é necessário executar várias validações, como registrar um tíquete de suporte, integração etc.
 
 +++**Configurar o Seletor de Ativos para um aplicativo não-Adobe**
 Para configurar o Seletor de ativos para um aplicativo não-Adobe, primeiro registre um tíquete de suporte para provisionamento, seguido das etapas de integração.
@@ -393,171 +386,6 @@ O Seletor de ativos é renderizado no elemento de contêiner `<div>`, como menci
 >
 >Se você tiver integrado o Seletor de ativos usando o fluxo de trabalho Inscrever-se, mas ainda não conseguir acessar o repositório de entrega, verifique se os cookies do navegador foram limpos. Caso contrário, você acaba recebendo o erro `invalid_credentials All session cookies are empty` no console.
 
-+++
-
-<!--Integration with Polaris application content starts here-->
-
->[!TAB Integração do Dynamic Media com recursos OpenAPI]
-
-### Pré-requisitos {#prereqs-polaris}
-
-Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos ao Dynamic Media com recursos OpenAPI:
-
-* [Métodos de comunicação](#prereqs)
-* Para acessar o Dynamic Media com recursos OpenAPI, você deve ter licenças para:
-   * Repositório do Assets (por exemplo, Experience Manager Assets as a Cloud Service).
-   * AEM Dynamic Media.
-* Somente [ativos aprovados](#approved-assets.md) estão disponíveis para uso, garantindo a consistência da marca.
-
-### Integração do Dynamic Media com recursos OpenAPI{#adobe-app-integration-polaris}
-
-A integração do Seletor de ativos com o processo OpenAPI do Dynamic Media envolve várias etapas que incluem a criação de um URL de mídia dinâmica personalizado ou pronto para escolher o URL de mídia dinâmica etc.
-
-+++**Integrar o Seletor de ativos para Dynamic Media com recursos OpenAPI**
-
-As propriedades `rootPath` e `path` não devem fazer parte do Dynamic Media com recursos OpenAPI. Em vez disso, você pode configurar a propriedade `aemTierType`. Veja a seguir a sintaxe da configuração:
-
-```
-aemTierType:[1: "delivery"]
-```
-
-Essa configuração permite visualizar todos os ativos aprovados sem pastas ou como uma estrutura simples. Para obter mais informações, navegue até a propriedade `aemTierType` em [Propriedades do Seletor de ativos](#asset-selector-properties)
-
-+++
-
-+++**Criar uma URL de Entrega Dinâmica a partir de ativos aprovados**
-Depois de configurar o Seletor de ativos, um esquema de objetos será usado para criar um URL de entrega dinâmico dos ativos selecionados.
-Por exemplo, um esquema de um objeto de uma matriz de objetos que é recebido após a seleção de um ativo:
-
-```
-{
-"dc:format": "image/jpeg",
-"repo:assetId": "urn:aaid:aem:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
-"repo:name": "image-7.jpg",
-"repo:repositoryId": "delivery-pxxxx-exxxxxx.adobe.com",
-...
-}
-```
-
-Todos os ativos selecionados são carregados pela função `handleSelection` que atua como um objeto JSON. Por exemplo, `JsonObj`. O URL dinâmico de entrega é criado pela combinação das seguintes operadoras:
-
-| Objeto | JSON |
-|---|---|
-| Host | `assetJsonObj["repo:repositoryId"]` |
-| Raiz da API | `/adobe/dynamicmedia/deliver` |
-| asset-id | `assetJsonObj["repo:assetId"]` |
-| seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
-| formato | `.jpg` |
-
-**Especificação da API de entrega de ativos aprovada**
-
-Formato de URL:
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
-
-Onde,
-
-* O host é `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* A raiz da API é `"/adobe/dynamicmedia/deliver"`
-* `<asset-id>` é o identificador do ativo
-* `<seo-name>` é o nome de um ativo
-* `<format>` é o formato de saída
-* `<image modification query parameters>` como suporte pela especificação da API de entrega dos ativos aprovados
-
-**API de entrega de ativos aprovada**
-
-O URL do delivery dinâmico possui a seguinte sintaxe:
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, onde,
-
-* O host é `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* A raiz da API para Entrega de Representação Original é `"/adobe/assets/deliver"`
-* `<asset-id>` é um identificador de ativo
-* `<seo-name>`é o nome do ativo que pode ou não ter uma extensão
-
-+++
-
-+++**Pronto para escolher a URL de entrega dinâmica**
-Todos os ativos selecionados são carregados pela função `handleSelection` que atua como um objeto JSON. Por exemplo, `JsonObj`. O URL dinâmico de entrega é criado pela combinação das seguintes operadoras:
-
-| Objeto | JSON |
-|---|---|
-| Host | `assetJsonObj["repo:repositoryId"]` |
-| Raiz da API | `/adobe/assets/deliver` |
-| asset-id | `assetJsonObj["repo:assetId"]` |
-| seo-name | `assetJsonObj["repo:name"]` |
-
-Abaixo estão duas maneiras de percorrer o objeto JSON:
-
-![URL de entrega dinâmica](assets/dynamic-delivery-url.png)
-
-* **Miniatura:** Miniaturas podem ser imagens e ativos são PDF, vídeo, imagens e assim por diante. Embora, você possa usar os atributos de altura e largura da miniatura de um ativo como a representação dinâmica da entrega.
-O seguinte conjunto de representações pode ser usado para os ativos do tipo PDF:
-Depois que um pdf é selecionado no sidekick, o contexto de seleção oferece as informações abaixo. Abaixo está a maneira de percorrer o objeto JSON:
-
-  <!--![Thumbnail dynamic delivery url](image-1.png)-->
-
-  Consulte `selection[0].....selection[4]` para obter a matriz de link de representação na captura de tela acima. Por exemplo, as principais propriedades de uma das representações de miniatura incluem:
-
-  ```
-  { 
-      "height": 319, 
-      "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
-      "type": "image/webp" 
-  } 
-  ```
-
-Na captura de tela acima, o URL de entrega da representação original do PDF precisa ser incorporado à experiência do público-alvo se o PDF for necessário, e não sua miniatura. Por exemplo, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
-
-* **Vídeo:** Você pode usar a URL do player de vídeo para os ativos do tipo vídeo que usam um iFrame inserido. Você pode usar as seguintes representações de matriz na experiência do target:
-  <!--![Video dynamic delivery url](image.png)-->
-
-  ```
-  { 
-      "height": 319, 
-      "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
-      "type": "image/webp" 
-  } 
-  ```
-
-  Consulte `selection[0].....selection[4]` para obter a matriz de link de representação na captura de tela acima. Por exemplo, as principais propriedades de uma das representações de miniatura incluem:
-
-  O trecho de código na captura de tela acima é um exemplo de um ativo de vídeo. Inclui a matriz de links de representações. O `selection[5]` no trecho é o exemplo de miniatura de imagem que pode ser usada como o espaço reservado da miniatura de vídeo na experiência de destino. O `selection[5]` na matriz das representações é para o reprodutor de vídeo. Isso serve um HTML e pode ser definido como `src` do iframe. Suporta transmissão adaptável de taxa de bits, que é a entrega do vídeo otimizada para a Web.
-
-  No exemplo acima, a URL do reprodutor de vídeo é `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
-
-+++**Interface de usuário do Seletor de ativos para o Dynamic Media com recursos OpenAPI**
-
-Após a integração com o Seletor de ativos de micro front-end do Adobe, é possível visualizar a estrutura somente de ativos de todos os ativos aprovados disponíveis no repositório de ativos do Experience Manager.
-
-![Dynamic Media com interface de recursos OpenAPI](assets/polaris-ui.png)
-
-* **A**: [Ocultar/Mostrar painel](#hide-show-panel)
-* **B**: [Assets](#repository)
-* **C**: [Classificação](#sorting)
-* **D**: [Filtros](#filters)
-* **E**: [Barra de pesquisa](#search-bar)
-* **F**: [Classificando em ordem crescente ou decrescente](#sorting)
-* **G**: Cancelar Seleção
-* **H**: selecionar um ou vários ativos
-
-+++
-
-+++**Configurar filtros personalizados**
-O Seletor de ativos para Dynamic Media com recursos OpenAPI permite configurar propriedades personalizadas e filtros com base nelas. A propriedade `filterSchema` é usada para configurar essas propriedades. A personalização pode ser exposta como `metadata.<metadata bucket>.<property name>.` em relação à qual os filtros podem ser configurados, onde,
-
-* `metadata` são as informações de um ativo
-* `embedded` é o parâmetro estático usado para configuração e
-* `<propertyname>` é o nome do filtro que você está configurando
-
-Para a configuração, as propriedades definidas no nível `jcr:content/metadata/` são expostas como `metadata.<metadata bucket>.<property name>.` para os filtros que você deseja configurar.
-
-Por exemplo, no Seletor de ativos para Dynamic Media com recursos OpenAPI, uma propriedade em `asset jcr:content/metadata/client_name:market` é convertida em `metadata.embedded.client_name:market` para configuração de filtro.
-
-Para obter o nome, é necessário realizar uma atividade única. Faça uma chamada de API de pesquisa para o ativo e obtenha o nome da propriedade (o bucket, essencialmente).
-
-+++
-
 >[!ENDTABS]
 
 ## Propriedades do Seletor de ativos {#asset-selector-properties}
@@ -566,37 +394,43 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 
 | Propriedade | Tipo | Obrigatório | Padrão | Descrição |
 |---|---|---|---|---|
-| *painel* | booleano | Não | falso | Se marcado como `true`, o Seletor de ativos será renderizado em um modo de exibição de painel esquerdo. Se estiver marcado como `false`, o Seletor de ativos será renderizado na exibição modal. |
-| *imsOrg* | string | Sim | | A ID do Adobe Identity Management System (IMS) atribuída durante o provisionamento do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para sua organização. A chave `imsOrg` é necessária para autenticar se a organização que você está acessando está no Adobe IMS ou não. |
-| *imsToken* | string | Não | | Token de portador IMS usado para autenticação. `imsToken` é necessário se você estiver usando um aplicativo [!DNL Adobe] para a integração. |
-| *apiKey* | string | Não | | Chave de API usada para acessar o serviço de Descoberta do AEM. `apiKey` é necessário se você estiver usando uma integração de aplicativos [!DNL Adobe]. |
-| *filterSchema* | matriz | Não | | Modelo usado para configurar propriedades de filtro. Isso é útil quando quiser limitar determinadas opções de filtro no Seletor de ativos. |
-| *filterFormProps* | Objeto | Não | | Especifique as propriedades de filtro que precisam ser usadas para refinar sua pesquisa. Por exemplo, tipo MIME JPG, PNG, GIF. |
+| *painel* | Booleano | Não | Falso | Se marcado como `true`, o Seletor de ativos será renderizado em um modo de exibição de painel esquerdo. Se estiver marcado como `false`, o Seletor de ativos será renderizado na exibição modal. |
+| *imsOrg* | String | Sim | | A ID do Adobe Identity Management System (IMS) atribuída durante o provisionamento do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para sua organização. A chave `imsOrg` é necessária para autenticar se a organização que você está acessando está no Adobe IMS ou não. |
+| *imsToken* | String | Não | | Token de portador IMS usado para autenticação. `imsToken` é necessário se você estiver usando um aplicativo [!DNL Adobe] para a integração. |
+| *apiKey* | String | Não | | Chave de API usada para acessar o serviço de Descoberta do AEM. `apiKey` é necessário se você estiver usando uma integração de aplicativos [!DNL Adobe]. |
+| *rootPath* | String | Não | /content/dam/ | Caminho da pasta na qual o Seletor de ativos exibe seus ativos. O `rootPath` também pode ser usado na forma de encapsulamento. Por exemplo, dado o seguinte caminho, `/content/dam/marketing/subfolder/`, o Seletor de ativos não permite que você percorra qualquer pasta pai, mas exibe apenas as pastas filho. |
+| *caminho* | String | Não | | Caminho usado para navegar para um diretório específico de ativos quando o Seletor de ativos é renderizado. |
+| *filterSchema* | Matriz | Não | | Modelo usado para configurar propriedades de filtro. Isso é útil quando quiser limitar determinadas opções de filtro no Seletor de ativos. |
+| *filterFormProps* | Objeto | Não | | Especifique as propriedades de filtro que precisam ser usadas para refinar sua pesquisa. Para! exemplo, tipo MIME JPG, PNG, GIF. |
 | *selectedAssets* | Matriz `<Object>` | Não |                 | Especifique os ativos selecionados quando o Seletor de ativos for renderizado. É necessária uma matriz de objetos que contenha uma propriedade de id dos ativos. Por exemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Um ativo deve estar disponível no diretório atual. Se precisar usar um diretório diferente, forneça um valor para a propriedade `path` também. |
 | *acvConfig* | Objeto | Não | | A propriedade Exibição da coleção do ativo que contém o objeto com a configuração personalizada para substituir os padrões. Além disso, essa propriedade é usada com a propriedade `rail` para habilitar a exibição do painel do visualizador de ativos. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Não |                 | Se as traduções OOTB forem insuficientes para as necessidades do aplicativo, você poderá expor uma interface pela qual poderá passar seus próprios valores localizados e personalizados pela prop `i18nSymbols`. Transmitir um valor por meio dessa interface substitui as traduções padrão fornecidas e, em vez disso, usa suas próprias traduções. Para executar a substituição, deverá transmitir um objeto [Descritor de mensagem](https://formatjs.io/docs/react-intl/api/#message-descriptor) à chave de `i18nSymbols` que deseja substituir. |
 | *intl* | Objeto | Não | | O Seletor de ativos fornece traduções OOTB padrão. Você pode selecionar o idioma de tradução fornecendo uma string de idioma válida por meio da propriedade `intl.locale`. Por exemplo: `intl={{ locale: "es-es" }}` </br></br> As strings de idioma com suporte seguem os padrões [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para a representação de nomes de idiomas. </br></br> Lista de idiomas com suporte: Inglês - “en-us” (padrão) Espanhol - “es-es” Alemão - “de-de” Francês - “fr-fr” Italiano - “it-it” Japonês - “ja-jp” Coreano - “ko-kr” Português - “pt-br” Chinês (Tradicional) - “zh-cn” Chinês (Taiwan) - “zh-tw” |
-| *repositoryId* | string | Não | &#39;&#39; | Repositório de onde o Seletor de ativos carrega o conteúdo. |
+| *repositoryId* | String | Não | &#39;&#39; | Repositório de onde o Seletor de ativos carrega o conteúdo. |
 | *additionalAemSolutions* | `Array<string>` | Não | [ ] | Ela permite adicionar uma lista de repositórios AEM adicionais. Se nenhuma informação for fornecida nessa propriedade, somente a biblioteca de mídia ou os repositórios do AEM Assets serão considerados. |
-| *hideTreeNav* | booleano | Não |  | Especifica se deve mostrar ou ocultar a barra lateral de navegação da árvore de ativos. Usada apenas na exibição modal e, portanto, não há efeito dessa propriedade na exibição de painel. |
+| *hideTreeNav* | Booleano | Não |  | Especifica se deve mostrar ou ocultar a barra lateral de navegação da árvore de ativos. Usada apenas na exibição modal e, portanto, não há efeito dessa propriedade na exibição de painel. |
 | *onDrop* | Função | Não | | A propriedade permite a funcionalidade soltar de um ativo. |
 | *dropOptions* | `{allowList?: Object}` | Não | | Configura as opções de soltar usando “allowList”. |
-| *colorScheme* | string | Não | | Configure o tema (`light` ou `dark`) do Seletor de ativos. |
+| *colorScheme* | String | Não | | Configure o tema (`light` ou `dark`) do Seletor de ativos. |
 | *handleSelection* | Função | Não | | Chamado com a matriz de itens do ativo quando os ativos são selecionados e o botão `Select` no modal é clicado. Essa função só é invocada na exibição modal. Para exibição do painel, use as funções `handleAssetSelection` ou `onDrop`. Exemplo: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Consulte [Tipo de ativo selecionado](#selected-asset-type) para obter detalhes. |
 | *handleAssetSelection* | Função | Não | | Invocado com uma matriz de itens enquanto os ativos estão sendo selecionados ou desmarcados. É útil quando você deseja acompanhar os ativos à medida que o usuário os seleciona. Exemplo: <pre>handleSelection=(assets: Asset[])=> {...}</pre> Consulte [Tipo de ativo selecionado](#selected-asset-type) para obter detalhes. |
 | *onClose* | Função | Não | | Invocado quando o botão `Close` na exibição modal é pressionado. Somente é chamado na exibição `modal` e desconsiderado na exibição `rail`. |
 | *onFilterSubmit* | Função | Não | | Invocado com itens de filtro à medida que o usuário altera critérios de filtro diferentes. |
-| *selectionType* | string | Não | individual | Configuração para a seleção `single` ou `multiple` de ativos de cada vez. |
+| *selectionType* | String | Não | Solteiro | Configuração para a seleção `single` ou `multiple` de ativos de cada vez. |
 | *arrastarOpções.incluir na lista de permissões* | booleano | Não | | A propriedade é usada para permitir ou negar a ação de arrastar ativos que não podem ser selecionados. |
-| *aemTierType* | string | Não | | Ela permite selecionar se você deseja mostrar ativos do nível de entrega, do nível de criação ou de ambos. Sintaxe de <br><br>: `aemTierType:[0: "author" 1: "delivery"` <br><br> Por exemplo, se ambos `["author","delivery"]` forem usados, o alternador de repositório exibirá opções para o autor e para a entrega. <br> Além disso, use `["delivery"]` para os ativos relacionados à entrega na Dynamic Media com recursos OpenAPI. |
+| *aemTierType* | String | Não |  | Ela permite selecionar se você deseja mostrar ativos do nível de entrega, do nível de criação ou de ambos. Sintaxe de <br><br>: `aemTierType:[0]: "author" 1: "delivery"` <br><br> Por exemplo, se ambos `["author","delivery"]` forem usados, o alternador de repositório exibirá opções para o autor e para a entrega. |
 | *handleNavigateToAsset* | Função | Não | | É uma função de Retorno de chamada para lidar com a seleção de um ativo. |
-| *noWrap* | booleano | Não | | A propriedade *noWrap* ajuda a renderizar o Seletor de ativos no painel lateral. Se essa propriedade não for mencionada, ela renderizará a *Exibição da caixa de diálogo* por padrão. |
+| *noWrap* | Booleano | Não | | A propriedade *noWrap* ajuda a renderizar o Seletor de ativos no painel lateral. Se essa propriedade não for mencionada, ela renderizará a *Exibição da caixa de diálogo* por padrão. |
 | *tamanhoDaCaixaDeDiálogo* | controle pequeno, médio, grande, tela cheia ou tela cheia | String | Opcional | Você pode controlar o layout especificando seu tamanho com as opções fornecidas. |
-| *colorScheme* | claro ou escuro | Não | | Essa propriedade é usada para definir o tema de um aplicativo Seletor de ativos. Você pode escolher entre um tema claro ou escuro. |
+| *colorScheme* | Claro ou escuro | Não | | Essa propriedade é usada para definir o tema de um aplicativo Seletor de ativos. Você pode escolher entre um tema claro ou escuro. |
 | *filterRepoList* | Função | Não |  | Você pode usar a função de retorno de chamada `filterRepoList` que chama o repositório de Experience Manager e retorna uma lista filtrada de repositórios. |
-
-<!--| *rootPath* | string | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
-| *path* | string | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |-->
+| *getExpiryStatus* | Função | Não | | Ela fornece o status de um ativo expirado. A função retorna `EXPIRED`, `EXPIRING_SOON` ou `NOT_EXPIRED` com base na data de expiração de um ativo fornecido. Consulte [personalizar ativos expirados](#customize-expired-assets). |
+| *allowSelectionAndDrag* | Booleano | Não | Falso | O valor da função pode ser `true` ou `false`. Quando o valor é definido como `false`, o ativo expirado não pode ser selecionado ou arrastado na tela. |
+| *mostrarNotificação* | | Não | | Ele permite que o Seletor de ativos mostre uma mensagem em caixa de informações personalizada para o ativo expirado. |
+<!--
+| *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
+| *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
+-->
 
 ## Exemplos de uso das propriedades do Seletor de ativos {#usage-examples}
 
@@ -606,7 +440,7 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 
 ![rail-view-example](assets/rail-view-example-vanilla.png)
 
-Se o valor do AssetSelector `rail` estiver definido como `false` ou não for mencionado nas propriedades, o Seletor de ativos é exibido na exibição Modal por padrão. A propriedade `acvConfig` é usada para habilitar a exibição do painel do visualizador de ativos. Visite [habilitar ou desabilitar a ação de arrastar e soltar](#enable-disable-drag-and-drop) para entender o uso da propriedade `acvConfig`.
+Se o valor do AssetSelector `rail` estiver definido como `false` ou não for mencionado nas propriedades, o Seletor de ativos é exibido na exibição Modal por padrão. A propriedade `acvConfig` permite algumas configurações detalhadas, como Arrastar e Soltar. Visite [habilitar ou desabilitar a ação de arrastar e soltar](#enable-disable-drag-and-drop) para entender o uso da propriedade `acvConfig`.
 
 <!--
 ### Example 2: Use selectedAssets property in addition to the path property
@@ -684,7 +518,7 @@ filterSchema: [
     ],
     header: 'Mime Types',
     groupKey: 'MimeTypeGroup',
-    },
+    }},
     {
     fields: [
     {
@@ -771,7 +605,7 @@ interface SelectedAsset {
     'repo:state': string;
     computedMetadata: Record<string, any>;
     _links: {
-        'http://ns.adobe.com/adobecloud/rel/rendition': Array<{
+        'https://ns.adobe.com/adobecloud/rel/rendition': Array<{
             href: string;
             type: string;
             'repo:size': number;
@@ -804,14 +638,108 @@ A tabela a seguir descreve algumas das propriedades importantes do objeto de ati
 | *tiff:imageLength* | número | A altura de um ativo. |
 | *computedMetadata* | `Record<string, any>` | Um objeto que representa um compartimento para todos os metadados do ativo de todos os tipos (repositório, aplicativo ou metadados incorporados). |
 | *_links* | `Record<string, any>` | Links de hipermídia do ativo associado. Inclui links para recursos como metadados e representações. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Matriz de objetos que contém informações sobre representações do ativo. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | O URI da representação. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | O tipo MIME da representação. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].'repo:size>&#39;* | número | O tamanho da representação em bytes. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].width>* | número | A largura da representação. |
-| *_links.<http://ns.adobe.com/adobecloud/rel/rendition[].height>* | número | A altura da representação. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Matriz de objetos que contém informações sobre representações do ativo. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | O URI da representação. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | O tipo MIME da representação. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>&#39;* | número | O tamanho da representação em bytes. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | número | A largura da representação. |
+| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | número | A altura da representação. |
 
-Para obter uma lista completa das propriedades e um exemplo detalhado, acesse [Exemplo de código do seletor de ativos](https://github.com/adobe/aem-assets-selectors-mfe-examples).
+<!--For a complete list of properties and detailed example, visit [Asset Selector Code Example](https://github.com/adobe/aem-assets-selectors-mfe-examples).-->
+
+### Personalizar ativos expirados {#customize-expired-assets}
+
+O Seletor de ativos permite controlar o uso de um ativo expirado. Você pode personalizar o ativo expirado com um selo **Expirando em breve** que pode ajudá-lo a saber com antecedência sobre os ativos que expirarão em 30 dias a partir da data atual. Além disso, isso pode ser personalizado de acordo com a exigência. Você também pode permitir a seleção de um ativo expirado na tela ou vice-versa. A personalização de um ativo expirado pode ser feita usando alguns snippets de código de várias maneiras:
+
+<!--{
+    getExpiryStatus: function, // to control Expired/Expiring soon badges of the asset
+    allowSelectionAndDrag: boolean, // set true to allow the selection of expired assets on canvas, set false, otherwise.
+}-->
+
+```
+expiryOptions: {
+    getExpiryStatus: getExpiryStatus;
+}
+```
+
+#### Seleção de um ativo expirado {#selection-of-expired-asset}
+
+Você pode personalizar o uso de um ativo expirado para torná-lo selecionável ou não selecionável. É possível personalizar se deseja permitir ou não o arrastar e soltar de um ativo expirado na tela Seletor de ativos. Para fazer isso, use os seguintes parâmetros para tornar um ativo não selecionável na tela:
+
+```
+expiryOptions:{
+    allowSelectionAndDrop: false;
+}
+```
+<!--
+Additionally, To do this, navigate to **[!UICONTROL Disable default expiry behavior]** under the [!UICONTROL Controls] tab and set the boolean value to `true` or `false` as per the requirement. If `true` is selected, you can see the select box over the expired asset, otherwise it remains unselected. You can hover to the info icon of an asset to know the details of an expired asset. 
+
+![Disable default expiry behavior](assets/disable-default-expiry-behavior.png)-->
+
+#### Configuração da duração de um ativo expirado {#set-duration-of-expired-asset}
+
+O trecho de código a seguir ajuda a definir o selo **Expirando em Breve** para os ativos que expiram nos próximos cinco dias: <!--The `expirationDate` property is used to set the expiration duration of an asset. Refer to the code snippet below:-->
+
+```
+/**
+  const getExpiryStatus = async (asset) => {
+  if (!asset.expirationDate) {
+    return null;
+  }
+  const currentDate = new Date();
+  const millisecondsInDay = 1000 * 60 * 60 * 24;
+  const fiveDaysFromNow = new Date(value: currentDate.getTime() + 5 * millisecondsInDay);
+  const expirationDate = new Date(asset.expirationDate);
+  if (expirationDate.getTime() < currentDate.getTime()) {
+    return 'EXPIRED';
+  } else if (expirationDate.getTime() < fiveDaysFromNow.getTime()) {
+    return 'EXPIRING_SOON';
+  } else {
+    return 'NOT_EXPIRED';
+  }
+};
+```
+
+<!--In the above code snippet, the `getExpiryStatus` function is used to show the **Expiring soon** badge that have expiration date stored in `customExpirationDate`. Additionally, it sets the expiration date of an asset to five days from the current date. The `millisecondsInDay` helps you set expiry of an asset by specifying the time range in milliseconds. You can replace milliseconds with hours directly or customize function as per the requirement. Whereas, the `getTime()` function returns the number of milliseconds for the mentioned date. See [properties](#asset-selector-properties) to know about `expirationDate` property.-->
+
+Consulte o exemplo a seguir para entender como a propriedade funciona para buscar a data e hora atuais:
+
+```
+const currentData = new Date();
+currentData.getTime(),
+```
+
+retorna `1718779013959` que é o formato de data 2024-06-19T06:36:53.959Z.
+
+#### Personalizar mensagem em caixa de informações de um ativo expirado {#customize-toast-message}
+
+A propriedade `showToast` é usada para personalizar a mensagem do sistema que você deseja mostrar em um ativo expirado.
+
+Sintaxe:
+
+```
+{
+    type: 'ERROR', 'NEUTRAL', 'INFO', 'SUCCESS',
+    message: '<message to be shown>',
+    timeout: optional,
+}
+```
+
+O tempo limite padrão é de 500 milissegundos. Ao passo que, você pode modificá-lo de acordo com o requisito. Além disso, passar o valor `timeout: 0` mantém a janela aberta até que você clique no botão cruzado.
+
+Veja abaixo um exemplo para mostrar uma mensagem em caixa de informações quando é necessário proibir a seleção de uma pasta e mostrar uma mensagem correspondente:
+
+```
+const showToast = {
+    type: 'ERROR',
+    message: 'Folder cannot be selected',
+    timeout: 5000,
+}
+```
+
+Use o seguinte trecho de código para mostrar uma mensagem do sistema para o uso de um ativo expirado:
+
+![mensagem em caixa de informações](assets/toast-message.png)
 
 ### Filtro de invocação contextual{#contextual-invocation-filter}
 
@@ -924,9 +852,6 @@ Para ocultar pastas na navegação à esquerda, clique no ícone **[!UICONTROL O
 ### Alternador de repositório {#repository-switcher}
 
 O Seletor de ativos também permite alternar repositórios para seleção de ativos. Você pode selecionar o repositório de sua escolha no menu suspenso disponível no painel esquerdo. As opções de repositório disponíveis na lista suspensa se baseiam na propriedade `repositoryId` definida no arquivo `index.html`. Ela se baseia no ambiente da organização IMS selecionada que é acessado pelo usuário conectado. Os consumidores podem transmitir um `repositoryID` de sua preferência e, nesse caso, o Seletor de ativos interrompe a renderização do alternador de repositório e renderiza ativos somente do repositório especificado.
-<!--
-It is based on the `imsOrg` that is provided in the application. If you want to see the list of repositories, then `repositoryId` is required to view those specific repositories in your application.
--->
 
 ### Repositório de ativos
 
@@ -936,9 +861,16 @@ It is based on the `imsOrg` that is provided in the application. If you want to 
 
 O Seletor de ativos também fornece opções de filtro prontas para uso para refinar os resultados da pesquisa. Os filtros disponíveis são os seguintes:
 
-* `File type`: inclui pasta, arquivo, imagens, documentos ou vídeo
-* `MIME type`: inclui JPG, GIF, PPTX, PNG, MP4, DOCX, TIFF, PDF, XLSX
-* `Image Size`: inclui largura mínima/máxima, altura mínima/máxima da imagem
+* **[!UICONTROL Status]:** inclui o estado atual do ativo entre `all`, `approved`, `rejected` ou `no status`.
+* **[!UICONTROL Tipo de arquivo]:** inclui `folder`, `file`, `images`, `documents` ou `video`.
+* **[!UICONTROL Status de expiração]:** menciona os ativos com base em sua duração de expiração. Você pode marcar a caixa de seleção `[!UICONTROL Expired]` para filtrar ativos que expiraram ou definir `[!UICONTROL Expiration Duration]` de um ativo para exibir ativos com base em sua duração de expiração. Quando um ativo já expirou ou está prestes a expirar, um selo é exibido representando o mesmo. Além disso, você pode controlar se deseja permitir o uso (ou arrastar e soltar) de um ativo expirado. Veja mais sobre [personalizar ativos expirados](#customize-expired-assets). Por padrão, o selo **Expirando em breve** é exibido para ativos que expiram nos próximos 30 dias. No entanto, você pode configurar a expiração usando a propriedade `expirationDate`.
+
+  >[!TIP]
+  >
+  > Para visualizar ou filtrar ativos com base em suas datas de expiração futuras, mencione o intervalo de datas futuro no campo `[!UICONTROL Expiration Duration]`. Ele exibe os ativos com o selo **expirando em breve** neles.
+
+* **[!UICONTROL Tipo MIME]:** inclui `JPG`, `GIF`, `PPTX`, `PNG`, `MP4`, `DOCX`, `TIFF`, `PDF`, `XLSX`.
+* **[!UICONTROL Tamanho da Imagem]:** inclui largura mínima/máxima, altura mínima/máxima da imagem.
 
   ![rail-view-example](assets/filters-asset-selector.png)
 
@@ -962,17 +894,23 @@ Você pode classificar ativos no Seletor de ativos por nome, dimensões ou taman
 
 O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
 
-* **![exibição em lista](assets/do-not-localize/list-view.png) [!UICONTROL Exibição em lista]**: a exibição em lista exibe arquivos e pastas roláveis em uma única coluna.
-* **![exibição em grade](assets/do-not-localize/grid-view.png) [!UICONTROL Exibição em grade]**: a exibição em grade exibe arquivos e pastas roláveis em uma grade de linhas e colunas.
-* **![exibição em galeria](assets/do-not-localize/gallery-view.png) [!UICONTROL Exibição em galeria]**: a exibição em galeria exibe arquivos ou pastas em uma lista horizontal com bloqueio central.
-* **![exibição em cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Exibição em cascata]**: a exibição em cascata exibe arquivos ou pastas no formato de uma ponte.
+* **![exibição de lista](assets/do-not-localize/list-view.png) [!UICONTROL Exibição de Lista]** A exibição de lista exibe arquivos e pastas roláveis em uma única coluna.
+* **![exibição de grade](assets/do-not-localize/grid-view.png) [!UICONTROL Exibição de grade]** A exibição de grade exibe arquivos e pastas com rolagem em uma grade de linhas e colunas.
+* **![exibição de galeria](assets/do-not-localize/gallery-view.png) [!UICONTROL exibição de galeria]** A exibição de galeria exibe arquivos ou pastas em uma lista horizontal bloqueada no centro.
+* **![exibição em cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL exibição em cascata]** A exibição em cascata exibe arquivos ou pastas no formato de uma Bridge.
 
 <!--
-### Support for multiple instances
+### Modes to view Asset Selector
 
-The micro front-end design supports the display of multiple instances of Asset Selector on a single screen.
+Asset Selector supports two types of out of the box views:
 
-![multiple-instance](assets/multiple-instance.png)
+**  Modal view or Inline view:** The modal view or inline view is the default view of Asset Selector that represents Assets folders in the front area. The modal view allows users to view assets in a full screen to ease the selection of multiple assets for import. Use `<AssetSelector rail={false}>` to enable modal view.
+
+    ![modal-view](assets/modal-view.png)
+
+**  Rail view:** The rail view represents Assets folders in a left panel. The drag and drop of assets can be performed in this view. Use `<AssetSelector rail={true}>` to enable rail view.
+
+    ![rail-view](assets/rail-view.png)
 -->
 <!--
 
@@ -983,6 +921,14 @@ Asset Selector is flexible and can be integrated within your existing [!DNL Adob
 *   **Perfect fit** Asset selector easily fits in your existing [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application and choose the way you want to view. The mode of view can be inline, rail, or modal view.
 *   **Accessible** With Asset Selector, you can reach the desired asset in an easy manner.
 *   **Localize** Assets can be availed for the various locales available as per Adobe's localization standards.
+-->
+<!--
+
+### Support for multiple instances
+
+The micro front-end design supports the display of multiple instances of Asset Selector on a single screen.
+
+![multiple-instance](assets/multiple-instance.png)
 -->
 
 <!--
