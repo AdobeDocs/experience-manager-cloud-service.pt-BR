@@ -4,7 +4,7 @@ description: Esta página descreve como navegar até o Provedor de Serviços Scr
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: ea374f6e521d3b94d1d38af5c8f6780275ae2cb4
+source-git-commit: 093cd62f282bd9842ad74124bb9bd4d5a33ef1c5
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 4%
@@ -66,7 +66,7 @@ quando:
 allOf:
 - reqProperty: clientIp
 notIn: [&quot;101.41.112.0/24&quot;]
-- reqProperty: tier
+reqProperty: tier
 é igual a: publicar
 action: block
 - name: &quot;allow-requests-with-header&quot;
@@ -77,7 +77,7 @@ allOf:
 - reqProperty: path
 é igual a: /screens/channels.json
 - reqHeader: x-screens-tecla de inclui na lista de permissões
-é igual a: ${\
+é igual a: $\
    {CDN_HEADER_KEY}
 ação:
 type: allow
