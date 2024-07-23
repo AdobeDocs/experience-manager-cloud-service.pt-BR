@@ -4,7 +4,7 @@ description: Use o Seletor de ativos para pesquisar, localizar e recuperar metad
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: e357dd0b9b2e67d4989a34054737a91743d0933a
+source-git-commit: a2646fa72788cb887066751efb171e92b597f4f5
 workflow-type: tm+mt
 source-wordcount: '4550'
 ht-degree: 36%
@@ -745,7 +745,7 @@ Use o seguinte trecho de código para mostrar uma mensagem do sistema para o uso
 
 O Seletor de ativos permite adicionar um filtro seletor de tags. Ela é compatível com um grupo de tags que combina todas as tags relevantes a um grupo de tags específico. Além disso, permite selecionar tags adicionais correspondentes ao ativo que você está procurando. Além disso, você também pode definir os grupos de tags padrão no filtro de chamada contextual que são usados principalmente por você para que sejam acessíveis a você em qualquer lugar.
 
-> 
+>
 >
 > * É necessário adicionar um trecho de código de invocação contextual para ativar o filtro de marcação na pesquisa.
 > * É obrigatório usar a propriedade de nome correspondente ao tipo de grupo de marcas `(property=xcm:keywords.id=)`.
