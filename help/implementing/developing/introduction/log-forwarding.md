@@ -4,9 +4,9 @@ description: Saiba mais sobre como encaminhar logs para o Splunk e outros fornec
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4116f63c4a19b90849e4b55f0c10409530be7d3e
+source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Este artigo está organizado da seguinte maneira:
             enabled: false
    ```
 
-1. Para tipos de ambiente diferentes de RDE (que não é compatível no momento), crie um pipeline de configuração de implantação direcionada no Cloud Manager.
+1. Para tipos de ambiente diferentes do RDE (que não é compatível no momento), crie um pipeline de configuração de implantação direcionada no Cloud Manager; observe que os pipelines de Empilhamento completo e de Camada da Web não implantam o arquivo de configuração.
 
    * [Consulte configuração de pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
    * [Consulte configuração de pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
@@ -254,10 +254,15 @@ data:
   https:
     default:
       enabled: true
-      url: "https://example.com/aem_logs/aem"
+      url: "https://example.com:8443/aem_logs/aem"
       authHeaderName: "X-AEMaaCS-Log-Forwarding-Token"
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
+
+Considerações:
+
+* A cadeia de caracteres da URL deve incluir **https://** ou a validação falhará. Se nenhuma porta for incluída na string do URL, a porta 443 (a porta HTTPS padrão) será considerada.
+* Se você quiser usar uma porta diferente de 443, forneça-a como parte do URL.
 
 #### Logs HTTPS CDN {#https-cdn}
 
@@ -267,8 +272,7 @@ Também existe uma propriedade chamada `sourcetype`, que é definida como o valo
 
 >[!NOTE]
 >
-> Antes de enviar a primeira entrada de log CDN, o servidor HTTP deve concluir com êxito um desafio único: uma solicitação enviada ao caminho ``wellknownpath`` deve responder com ``*``.
-
+> Antes de enviar a primeira entrada de log CDN, o servidor HTTP deve concluir com êxito um desafio único: uma solicitação enviada para o caminho ``/.well-known/fastly/logging/challenge`` deve responder com um asterisco ``*`` no corpo e código de status 200.
 
 #### Logs AEM HTTPS {#https-aem}
 
