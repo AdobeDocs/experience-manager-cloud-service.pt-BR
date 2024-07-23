@@ -1,8 +1,8 @@
 ---
-source-git-commit: 2acaafab86c0552e63e7b38b2a774c3c6afd6f9c
+source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 8%
+source-wordcount: '656'
+ht-degree: 7%
 
 ---
 # Trechos {#snippets}
@@ -117,3 +117,13 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
   <table>
   </tbody>
 
+## Editor de regras Consulte também {#see-also-rule-editor}
+
+* [Introdução ao Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components.md)
+* [Tipos de operadores e eventos no editor de regras de um Formulário adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-events-operators.md)
+* [Interface do usuário do Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-user-interface.md)
+* [Casos de uso diferentes do Editor de regras para um formulário adaptável baseado em componentes principais](/help/forms/rule-editor-core-components-user-interface.md)
+* [Diferença em várias edições do editor de regras](/help/forms/rule-editor-core-components-difference-tables.md)
+* [Introdução às funções personalizadas para o Forms adaptável com base nos Componentes principais](/help/forms/create-and-use-custom-functions.md)
+* [Criar uma função personalizada para um formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md)
+* [Exemplos de desenvolvimento e uso de função personalizada](/help/forms/custom-function-core-components-use-cases.md)

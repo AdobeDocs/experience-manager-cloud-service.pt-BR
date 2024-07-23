@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2814a61976d1815e0f0deff2e35ccad4731cfb09
+source-git-commit: 11624bc35020247494e3ae66c9601c1da505c8bf
 workflow-type: tm+mt
-source-wordcount: '5160'
-ht-degree: 81%
+source-wordcount: '5265'
+ht-degree: 79%
 
 ---
 
@@ -692,13 +692,21 @@ ht-degree: 81%
             + [Usar a estrutura giratória em um formulário adaptável](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Adicionar manipulador de erros personalizado em um formulário adaptável](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Adicione uma localidade para o Forms adaptável com base nos Componentes principais](/help/forms/supporting-new-language-localization-core-components.md)
-            + [Criar e usar funções personalizadas](/help/forms/create-and-use-custom-functions.md)
-            + [Adicionar regras a um Formulário adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components.md)
             + [Criar esquema JSON para um formulário adaptável (componentes principais)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
             + [Adicionar versões, comentários e anotações a um Formulário adaptável](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparar Forms Adaptável](/help/forms/compare-forms.md)
             + [Conversão de Forms adaptável com base em componentes de base em formulários baseados em Componentes principais usando a ferramenta utilitário de migração](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Salvar um formulário adaptável como rascunho](/help/forms/save-core-component-based-form-as-draft.md)
+            + Introdução ao Editor de Regras para Forms Adaptável com base nos Componentes Principais{#rule-editor-core-components}
+               + [Introdução ao Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components.md)
+               + [Interface do usuário do Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-user-interface.md)
+               + [Diferença entre o Editor de Regras do Foundation e o Editor de Regras do Componente Principal](/help/forms/rule-editor-core-components-difference-tables.md)
+               + [Operador e tipos de eventos disponíveis no editor de regras para um Formulário adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-events-operators.md)
+               + [Exemplos de um Editor de regras para um formulário adaptável com base nos componentes principais](/help/forms/rule-editor-core-components-usecases.md)
+            + Introdução às Funções personalizadas para o Forms adaptável com base nos Componentes principais{#create-and-use-custom-function-core-component}
+               + [Introdução às funções personalizadas para o Forms adaptável com base nos Componentes principais](/help/forms/create-and-use-custom-functions.md)
+               + [Criar e usar uma Função personalizada para um Formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md)
+               + [Exemplos de funções personalizadas para um formulário adaptável com base nos componentes principais](/help/forms/custom-function-core-components-use-cases.md)
       + Componentes de Fundação {#authoring-adaptive-forms-foundation-components}
          + Converter formulários em PDF em Formulários adaptáveis {#afcs}
             + [Introdução ao serviço de conversão automática de formulários](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR)
