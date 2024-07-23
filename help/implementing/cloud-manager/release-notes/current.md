@@ -4,10 +4,10 @@ description: Estas são as notas de versão do Cloud Manager 2024.7.0 no AEM as 
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: a5cd55bcdc6044dd8db26f009b955216cda5daee
+source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 13%
+source-wordcount: '633'
+ht-degree: 18%
 
 ---
 
@@ -26,7 +26,7 @@ A data de lançamento do Cloud Manager versão 2024.7.0 no AEM as a Cloud Servic
 
 ## Novidades {#what-is-new}
 
-* O [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) e o [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) acionam **Sobre Alterações do Git** para iniciar o pipeline em uma confirmação agora estão disponíveis para [repositórios privados.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
+* O acionador **Sobre alterações do Git** do [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) e do [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) para iniciar o pipeline em uma confirmação agora estão disponíveis para [repositórios privados.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
    * Ele será lançado em fases e concluído em meados de agosto.
 * Ao adicionar um [certificado DV gerenciado por Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md), agora é possível adicionar um único certificado que cubra vários domínios, em vez de criar um certificado para cada domínio.
 * As soluções que não têm [regiões de publicação adicionais](/help/operations/additional-publish-regions.md) agora podem ser adicionadas a um programa, desde que ele tenha pelo menos uma solução do Sites ou do Forms.
@@ -39,6 +39,7 @@ A data de lançamento do Cloud Manager versão 2024.7.0 no AEM as a Cloud Servic
       * O link do relatório bruto do Lighthouse agora está visível de uma maneira mais intuitiva, diretamente no painel de detalhes do instantâneo da verificação.
       * A seção Recomendações do farol foi aprimorada.
    * A métrica de PWA foi removida de acordo com a versão 12.0.0 do Lighthouse, que eliminou essa métrica.
+* [O Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) foi atualizado para a [versão 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
 
 ## Programa de adoção antecipada {#early-adoption}
 
