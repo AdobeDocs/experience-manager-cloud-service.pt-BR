@@ -5,12 +5,13 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83c9c6a974b427317aa2f83a3092d0775aac1d53
+source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 73%
+source-wordcount: '664'
+ht-degree: 63%
 
 ---
+
 
 # Adicionar um certificado SSL {#adding-an-ssl-certificate}
 
@@ -18,7 +19,7 @@ Saiba como adicionar seu próprio certificado SSL usando as ferramentas de autoa
 
 >[!TIP]
 >
->Um certificado pode levar alguns dias para ser provisionado. A Adobe recomenda que o certificado seja provisionado com bastante antecedência.
+>Um certificado pode levar alguns dias para ser provisionado. A Adobe recomenda, portanto, que o certificado seja provisionado bem antes de qualquer prazo ou data de ativação.
 
 ## Requisitos de certificado {#certificate-requirements}
 
@@ -42,7 +43,8 @@ Siga estas etapas para adicionar um certificado usando o Cloud Manager.
 
    * Insira um nome para o certificado em **Nome do certificado**.
       * Isso é apenas para fins de informação e pode ser qualquer nome que o ajude a identificar o certificado com facilidade.
-   * Cole os valores de **Certificado**, **Chave privada** e **Cadeia de certificado** nos respectivos campos. Todos esses três campos são obrigatórios.
+   * Cole os valores de **Certificado**, **Chave privada** e **Cadeia de certificados** nos respectivos campos.
+      * Todos esses três campos são obrigatórios.
 
    ![Caixa de diálogo Adicionar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
@@ -63,6 +65,32 @@ Depois de salvo, o certificado será exibido como uma nova linha na tabela.
 ## Erros de certificado {#certificate-errors}
 
 Certos erros podem ocorrer se um certificado não for instalado corretamente ou atender aos requisitos do Cloud Manager.
+
+### Ordem correta de certificados {#correct-certificate-order}
+
+O motivo mais comum para uma falha na implantação de um certificado é os certificados intermediários ou em cadeia não estarem na ordem correta.
+
+Os arquivos de certificado intermediários devem terminar com o certificado raiz ou o certificado mais próximo da raiz. Eles devem estar em ordem decrescente, do `main/server` certificado à raiz.
+
+Você pode determinar a ordem dos arquivos intermediários usando o comando a seguir.
+
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
+
+Você pode verificar se a chave privada e o certificado `main/server` correspondem usando os comandos a seguir.
+
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
+
+>[!NOTE]
+>
+>A saída desses dois comandos deve ser exatamente a mesma. Se você não conseguir localizar uma chave privada correspondente ao seu certificado `main/server`, será necessário rechavear o certificado gerando uma nova CSR e/ou solicitando um certificado atualizado do seu fornecedor de SSL.
 
 ### Remover Certificados de Cliente {#client-certificates}
 
@@ -124,32 +152,13 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
 
-### Ordem correta de certificados {#correct-certificate-order}
-
-O motivo mais comum para uma falha na implantação de um certificado é os certificados intermediários ou em cadeia não estarem na ordem correta.
-
-Os arquivos de certificado intermediários devem terminar com o certificado raiz ou o certificado mais próximo da raiz. Eles devem estar em ordem decrescente, do `main/server` certificado à raiz.
-
-Você pode determinar a ordem dos arquivos intermediários usando o comando a seguir.
-
-```shell
-openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
-```
-
-Você pode verificar se a chave privada e o certificado `main/server` correspondem usando os comandos a seguir.
-
-```shell
-openssl x509 -noout -modulus -in certificate.pem | openssl md5
-```
-
-```shell
-openssl rsa -noout -modulus -in ssl.key | openssl md5
-```
-
->[!NOTE]
->
->A saída desses dois comandos deve ser exatamente a mesma. Se você não conseguir localizar uma chave privada correspondente ao seu certificado `main/server`, será necessário rechavear o certificado gerando uma nova CSR e/ou solicitando um certificado atualizado do seu fornecedor de SSL.
-
 ### Datas de validade do certificado {#certificate-validity-dates}
 
 O Cloud Manager espera que o certificado SSL seja válido por pelo menos 90 dias a partir da data atual. Você deve verificar a validade da cadeia de certificados.
+
+## Próximas etapas {#next-steps}
+
+Parabéns! Agora você tem um certificado SSL de trabalho para o seu projeto. Geralmente, essa é uma primeira etapa para configurar um nome de domínio personalizado.
+
+* Consulte o documento [Adicionando um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para continuar configurando um nome de domínio personalizado.
+* Consulte o documento [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) para saber mais sobre como atualizar e gerenciar seus certificados SSL no Cloud Manager.

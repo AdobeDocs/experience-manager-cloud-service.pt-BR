@@ -5,15 +5,25 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 0c9328dc5be8f0a5e0924d0fc2ec59c9fce4141b
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 84%
+source-wordcount: '826'
+ht-degree: 61%
 
 ---
 
 
 # Verificação de status do nome de domínio {#check-status}
+
+Saiba como determinar se o nome de domínio personalizado foi verificado com sucesso pelo Cloud Manager.
+
+## Requisitos {#requirements}
+
+Você deve atender a esses requisitos antes de verificar o status do nome de domínio no Cloud Manager.
+
+* Primeiro, adicione um registro TXT para o domínio personalizado conforme descrito no documento [Adicionando um registro TXT.](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
+
+## Como verificar o status do seu nome de domínio personalizado {#how-to}
 
 Você pode determinar o status do seu nome de domínio personalizado no Cloud Manager.
 
@@ -27,16 +37,25 @@ Você pode determinar o status do seu nome de domínio personalizado no Cloud Ma
 
 1. Clique no ícone de **Status** do nome do domínio.
 
-O Cloud Manager verificará a propriedade do domínio por meio do valor TXT e exibirá uma das mensagens de status a seguir.
+Os detalhes do status são mostrados. Seu domínio personalizado está pronto para ser usado quando o status **Domínio verificado e implantado** for exibido. Consulte a [próxima seção](#statuses) para obter detalhes sobre os diferentes status e o seu significado.
+
+>[!NOTE]
+>
+>O Cloud Manager disparará automaticamente a verificação quando você selecionar **Criar** na etapa de verificação do assistente **Adicionar domínio personalizado** ao [adicionar um novo nome de domínio personalizado ao Cloud Manager.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) Para as verificações subsequentes, você deverá selecionar ativamente o ícone verificar novamente ao lado do status.
+
+## Noções básicas sobre status de verificação {#statuses}
+
+O Cloud Manager verificará a propriedade do domínio por meio do [valor TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) e exibirá uma das mensagens de status a seguir.
 
 * **Falha ao verificar o domínio** - O valor TXT está ausente ou erros foram detectados.
 
-   * Siga as instruções fornecidas para resolver o problema.
+   * Siga as instruções fornecidas na mensagem de status para resolver o problema.
    * Quando estiver pronto, você deverá selecionar o ícone **Verificar novamente** ao lado do status.
 
 * **Verificação de domínio em andamento** - A verificação está em andamento.
 
    * Normalmente, esse status é exibido depois de selecionar o ícone **Verificar novamente** ao lado do status.
+   * A verificação de DNS pode levar algumas horas para ser processada devido a atrasos de propagação de DNS.
 
 * **Verificado, Falha na implantação** - A verificação TXT foi bem-sucedida, mas a implantação do CDN falhou.
 
@@ -53,11 +72,9 @@ O Cloud Manager verificará a propriedade do domínio por meio do valor TXT e ex
 
    * Consulte [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para saber mais.
 
-O Cloud Manager acionará automaticamente uma verificação TXT quando você selecionar **Salvar** na etapa de verificação do assistente **Adicionar domínio personalizado**. Para as verificações subsequentes, você deverá selecionar ativamente o ícone Verificar novamente ao lado do status.
-
 ## Erros de nome de domínio {#domain-error}
 
-A seguir estão alguns erros comuns de nome de domínio e suas resoluções típicas.
+A seguir estão alguns erros comuns de verificação de nome de domínio e suas resoluções típicas.
 
 ### Erro de domínio não Instalado {#domain-not-installed}
 
@@ -92,3 +109,7 @@ Se você tiver uma configuração de CDN pré-existente para seus nomes de domí
 A mensagem desaparece assim que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário. Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 
 Consulte [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para obter mais detalhes.
+
+## Próximas etapas {#next-steps}
+
+Depois de verificar o status do domínio no Cloud Manager, será necessário definir as configurações de DNS adicionando registros CNAME ou APEX de DNS que apontem para o AEM as a Cloud Service. Prossiga para o documento [Definindo as Configurações de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) para continuar configurando seu nome de domínio personalizado.
