@@ -4,10 +4,10 @@ description: Saiba como o Adobe Experience Manager (AEM) as a Cloud Service inte
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
 workflow-type: tm+mt
-source-wordcount: '970'
-ht-degree: 1%
+source-wordcount: '997'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,7 @@ Por meio do NIMU, o cliente pode usar o pipeline a qualquer momento, mesmo se um
 #### Atualizar atividades
 
 A versão atual do AEM ainda pode ser verificada para cada ambiente, como antes, usando o painel Ambientes de interface do usuário do Cloud Manager. Os mesmos quality gates (portais de qualidade) usados no pipeline são usados pelas atualizações de manutenção não invasivas, incluindo os testes escritos pelo cliente.
-Uma notificação da interface do usuário do Cloud Manager será enviada sempre que uma Atualização de manutenção não invasiva for aplicada aos ambientes do seu programa. Você pode configurá-lo para que também seja enviado ao seu email.
+Uma [notificação da interface do usuário do Cloud Manager](/help/implementing/cloud-manager/notifications.md) será enviada sempre que uma Atualização de manutenção não invasiva for aplicada aos ambientes do seu programa. Você pode configurá-lo para que também seja enviado ao seu email.
 
 >[!NOTE]
 >
@@ -102,3 +102,11 @@ Geralmente, as atualizações incorrem em tempo de inatividade zero, inclusive p
 Esse recurso permite que o AEM faça referência a vários repositórios simultaneamente. Em uma [implantação em andamento](/help/implementing/deploying/overview.md#how-rolling-deployments-work), a nova versão do AEM contém seu próprio `/libs` (o repositório imutável baseado em TarMK). É diferente da versão mais antiga do AEM, embora ambos façam referência a um repositório mutável compartilhado baseado em DocumentMK que contém áreas como `/content` , `/conf` , `/etc` e outras.
 
 Como as versões antigas e as novas têm suas próprias versões do `/libs`, elas podem estar ativas durante a atualização contínua. E ambos podem assumir o tráfego até que o antigo seja totalmente substituído pelo novo.
+
+## Informações adicionais {#further-information}
+
+Para obter mais detalhes sobre temas relacionados:
+
+* [Pipelines de CI/CD do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+* [Notificação da interface do usuário do Cloud Manager](/help/implementing/cloud-manager/notifications.md)
+* [a arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md)
