@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1292f729-c6eb-4e1b-b84c-c66c89dc53ae
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+source-git-commit: 8585ec309b04e04b9a8dcaa43063369d1c9d5d24
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 4%
 
 ---
@@ -91,8 +91,6 @@ Embora seja possível obter a maioria dos casos de uso usando qualquer construç
 * Se uma regra verificar uma condição e executar uma ação imediatamente ao fornecer um valor em um campo ou ao sair de um campo, é recomendável gravar uma regra com uma construção de condição-ação ou o tipo de regra Quando no campo em que a condição é avaliada.
 * A condição na regra Quando é avaliada quando um usuário altera o valor do objeto no qual a regra Quando é aplicada. No entanto, se você quiser que a ação seja acionada quando o valor for alterado no lado do servidor, como para preencher previamente o valor, é recomendável gravar uma regra When que aciona a ação quando o campo é inicializado.
 * Ao escrever regras para objetos de menus suspensos, botões de opção ou caixas de seleção, as opções ou os valores desses objetos de formulário no formulário são preenchidos previamente no editor de regras.
-
-## Próxima etapa
 
 Para entender como usar a interface de usuário para gravar e gerenciar regras em um Editor de regras, consulte o artigo [Interface de usuário do Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-user-interface.md).
 

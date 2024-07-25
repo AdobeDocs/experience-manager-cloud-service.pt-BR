@@ -4,13 +4,13 @@ description: O artigo descreve vários casos de uso para um editor de regras em 
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: c600af3f2e866483cda2426e188dbc104b07688e
+exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
+source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
-
 
 # Diferentes casos de uso do Editor de regras
 
@@ -18,9 +18,10 @@ O artigo fornece exemplos detalhados de um Editor de regras para um Formulário 
 Agora, vamos discutir as diferentes implementações de um editor de regras.
 
 
-## Simplifique cálculos complexos em painéis repetíveis com funções integradas
+## Simplificar cálculos complexos em painéis repetíveis com funções
 
-O editor de regras permite usar funções prontas para uso, como Sum, Min, Max e Join diretamente em campos dentro de painéis repetíveis. Isso libera uma automação eficiente, permitindo que você implemente uma lógica de negócios complexa sem código personalizado.
+O editor de regras permite usar funções prontas para uso, como Sum, Min, Max e Join diretamente em campos dentro de painéis repetíveis. Você também pode passar um valor de campo de painel repetível para a função que aceita matriz de números, matriz de sequência, matriz booleana, etc. Isso libera uma automação eficiente, permitindo que você implemente uma lógica de negócios complexa sem código personalizado.
+
 Imagine um formulário com um painel repetível, em que cada instância do painel coleta informações sobre o valor declarado dos ativos.
 
 ![Formulário repetível](/help/forms/assets/ootb-function-support-repeatable-panel-form.png)
@@ -32,6 +33,10 @@ Você pode usar a função `Sum` para calcular automaticamente o valor total dos
 Quando você preenche um formulário, adicionando instâncias para declarar os valores do ativo, o botão `Calculate Asset Value` calcula a soma total de todos os valores do ativo declarados e exibe o resultado no total na caixa de texto `assetvalue`.
 
 ![Suporte para campos de painel repetíveis em funções OOTB](/help/forms/assets/ootb-function-support-repeatable-panel-form-preview.png)
+
+>[!NOTE]
+>
+> Se o valor do campo do painel repetível for passado para uma função que não aceite uma matriz, o valor do campo da última instância do painel repetível será passado para a função.
 
 Este é apenas um exemplo! Explore as [funções](#b-form-objects-and-functions-br) disponíveis para simplificar fluxos de trabalho e melhorar a precisão dos dados em seus formulários.
 

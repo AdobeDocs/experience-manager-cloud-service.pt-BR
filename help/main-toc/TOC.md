@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
+source-git-commit: f6b4ca55d69de3bb20e2232dbc29d1aadae2cd10
 workflow-type: tm+mt
-source-wordcount: '5283'
+source-wordcount: '5297'
 ht-degree: 79%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 79%
    + Notas de versão de recursos do AEMaaCS {#release-notes}
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Notas da versão 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
          + [Notas da versão 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
          + [Notas da versão 2024.4.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-4-0.md)
          + [Notas da versão 2024.3.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-3-0.md)
@@ -686,6 +687,7 @@ ht-degree: 79%
             + [Enviar um formulário adaptável para o Armazenamento de blobs do Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
             + [Enviar um formulário adaptável ao Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Conectar um formulário adaptável ao Microsoft](/help/forms/configure-submit-action-sharepoint.md)
+            + [Configurar o site do SharePoint com acesso limitado usando o escopo de autorização](/help/forms/configure-sharepoint-site-limited-access.md)
             + [Integrar o formulário adaptável de AEM ao fluxo de trabalho de AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configurar a ação de envio Enviar para o Ponto de extremidade REST para o Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [Configurar a ação de envio Enviar email para um formulário adaptável](/help/forms/configure-submit-action-send-email.md)

@@ -6,9 +6,9 @@ feature: Adaptive Forms, Core Components
 exl-id: e925a750-5fb5-4950-afd3-78551eec985d
 title: "Como configurar uma ação enviar para um formulário adaptável?"
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5e1d08e82cafc3a8a715653727f42ce0048f2b1f
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,12 @@ Para conectar o AEM Forms ao seu armazenamento da Biblioteca de Documentos do Mi
 1. Especifique o **[!UICONTROL Título]**, **[!UICONTROL ID do Cliente]**, **[!UICONTROL Segredo do Cliente]** e **[!UICONTROL URL do OAuth]**. Para obter informações sobre como recuperar a ID do cliente, o Segredo do cliente e a ID do locatário para a URL do OAuth, consulte a [Documentação da Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
    * Você pode recuperar os `Client ID` e `Client Secret` de seu aplicativo do portal do Microsoft® Azure.
    * No portal do Microsoft® Azure, adicione o URI de redirecionamento como `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Substitua `[author-instance]` pela URL da sua instância de Autor.
-   * Adicione as permissões de API `offline_access` e `Sites.Manage.All` para fornecer permissões de leitura/gravação.
+   * Adicione as permissões de API `offline_access` e `Sites.Manage.All` para fornecer permissões de leitura/gravação. O `Sites.Manage.All` é um escopo de permissão na API Graph do Microsoft que concede a um aplicativo a capacidade de gerenciar todos os aspectos dos Sites do SharePoint, como excluir ou modificar Sites.
+
+     >[!NOTE]
+     >
+     > Você também pode [configurar os Sites do SharePoint com acesso limitado](/help/forms/configure-sharepoint-site-limited-access.md) usando o escopo de permissão `Sites.Selected` na API gráfica do Microsoft. O `Sites.Selected` é um escopo de permissão na API gráfica do Microsoft que permite acesso mais granular e restrito aos sites do SharePoint.
+
    * Usar URL do OAuth: `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Substitua `<tenant-id>` pelo `tenant-id` do seu aplicativo no portal do Microsoft® Azure.
 
    >[!NOTE]

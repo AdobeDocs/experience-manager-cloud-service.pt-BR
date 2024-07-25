@@ -1,7 +1,7 @@
 ---
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '662'
 ht-degree: 7%
 
 ---
@@ -100,7 +100,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
    </tr>
    <tr>
     <td>Suporte ES10 </td>
-    <td>ES10 ainda não é suportado. </td>
+    <td>ES10 ainda não é suportado. É compatível apenas com os recursos do ES5 JavaScript. </td>
     <td>Suporte para recursos modernos do JavaScript, como funções de esquerda e seta (suporte para ES10), em funções personalizadas. 
    </td>
    </tr>
