@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1405'
 ht-degree: 74%
 
 ---
@@ -115,9 +115,9 @@ O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipel
 
 Uma implantação direcionada implanta o código somente em partes selecionadas do aplicativo AEM. Nessa implantação, você pode optar por **Incluir** um dos seguintes tipos de código:
 
-* **Configuração** - Defina as configurações das regras de filtro de tráfego no seu ambiente AEM.
-   * Consulte o documento [Regras de filtro de tráfego incluindo Regras do WAF](/help/security/traffic-filter-rules-including-waf.md) para saber como gerenciar regras de filtro de tráfego no repositório para que elas sejam implantadas corretamente.
-   * Ao executar um pipeline de implantação de destino, as configurações [como as configurações do WAF](/help/security/traffic-filter-rules-including-waf.md) serão implantadas, desde que sejam salvas no ambiente, repositório e ramificação definidos no pipeline.
+* **Configuração** - Define as configurações de vários recursos no seu ambiente AEM.
+   * Consulte o artigo [Usar Pipelines de Configuração](/help/operations/config-pipeline.md) para obter uma lista de configurações com suporte, que inclui encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN, além de gerenciá-las no repositório para que sejam implantadas corretamente.
+   * Ao executar um pipeline de implantação direcionada, as configurações serão implantadas, desde que sejam salvas no ambiente, repositório e ramificação definidos no pipeline.
    * Em um dado momento, somente pode haver um pipeline de configuração por ambiente.
 * **Código de front-end** - Configure o JavaScript e o CSS para o front-end do aplicativo AEM.
    * Com os pipelines de front-end, é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ser acelerado.

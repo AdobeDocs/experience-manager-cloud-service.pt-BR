@@ -1,15 +1,16 @@
 ---
 title: Configuração do tráfego no CDN
-description: Saiba como configurar o tráfego CDN declarando regras e filtros em um arquivo de configuração e implantando-os no CDN usando o Pipeline de configuração do Cloud Manager.
+description: Saiba como configurar o tráfego CDN declarando regras e filtros em um arquivo de configuração e implantando-os no CDN usando um pipeline de configuração do Cloud Manager.
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c34aa4ad34d3d22e1e09e9026e471244ca36e260
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1319'
 ht-degree: 1%
 
 ---
+
 
 # Configuração do tráfego no CDN {#cdn-configuring-cloud}
 
@@ -20,11 +21,11 @@ O AEM as a Cloud Service oferece uma coleção de recursos configuráveis na cam
 * [Redirecionamentos do lado do cliente](#client-side-redirectors) - acione um redirecionamento de navegador. Esse recurso ainda não está disponível para disponibilidade geral, mas para os participantes iniciais.
 * [Seletores de origem](#origin-selectors) - proxy para um back-end de origem diferente.
 
-Também podem ser configuradas na CDN as Regras de filtro de tráfego (incluindo o WAF), que controlam qual tráfego é permitido ou negado pela CDN. Este recurso já foi lançado e você pode saber mais sobre ele na página [Regras de filtro de tráfego, incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md).
+Também podem ser configuradas na CDN as Regras de filtro de tráfego (incluindo o WAF), que controlam qual tráfego é permitido ou negado pela CDN. Este recurso já foi lançado e você pode saber mais sobre ele na página [Regras de filtro de tráfego, incluindo regras de WAF](/help/security/traffic-filter-rules-including-waf.md).
 
 Além disso, se a CDN não puder entrar em contato com sua origem, você poderá escrever uma regra que faça referência a uma página de erro personalizada auto-hospedada (que é renderizada). Saiba mais sobre isso lendo o artigo [Configurando páginas de erro de CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
-Todas essas regras, declaradas em um arquivo de configuração no controle do código-fonte, são implantadas usando o [Pipeline de Configuração do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Observe que o tamanho cumulativo do arquivo de configuração, incluindo as regras de filtro de tráfego, não pode exceder 100 KB.
+Todas essas regras, declaradas em um arquivo de configuração no controle do código-fonte, são implantadas usando o pipeline de configuração [ do Cloud Manager.](/help/operations/config-pipeline.md) Esteja ciente de que o tamanho cumulativo do arquivo de configuração, incluindo regras de filtro de tráfego, não pode exceder 100KB.
 
 ## Ordem de avaliação {#order-of-evaluation}
 
@@ -36,23 +37,24 @@ Funcionalmente, os vários recursos mencionados anteriormente são avaliados na 
 
 Antes de configurar o tráfego na CDN, é necessário fazer o seguinte:
 
-* Crie esta pasta e estrutura de arquivo na pasta de nível superior do seu projeto Git:
+1. Crie um arquivo com o nome `cdn.yaml` ou semelhante, referenciando os vários trechos de configuração nas seções abaixo.
 
-```
-config/
-     cdn.yaml
-```
+   Todos os trechos têm essas propriedades comuns, que estão descritas no [artigo sobre o Pipeline de configuração](/help/operations/config-pipeline.md#common-syntax). O valor da propriedade `kind` deve ser *CDN* e a propriedade `version` deve ser definida como *1*.
 
-* O arquivo de configuração `cdn.yaml` deve conter metadados e as regras descritas nos exemplos abaixo. O parâmetro `kind` deve ser definido como `CDN` e a versão deve ser definida como a versão do esquema, que atualmente é `1`.
+   ```
+   kind: "CDN"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   ```
 
-* Crie um pipeline de configuração de implantação direcionada no Cloud Manager. Consulte [configuração de pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configuração de pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+1. Coloque o arquivo em uma pasta de nível superior chamada *config* ou similar, conforme descrito no [artigo sobre o Pipeline de configuração](/help/operations/config-pipeline.md#folder-structure).
 
-**Notas**
+1. Crie um Pipeline de configuração no Cloud Manager, conforme descrito no [artigo sobre Pipeline de configuração](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
-* Atualmente, os RDEs não oferecem suporte ao pipeline de configuração.
-* Você pode usar `yq` para validar localmente a formatação YAML do seu arquivo de configuração (por exemplo, `yq cdn.yaml`).
+1. Implante a configuração.
 
-## Sintaxe {#configuration-syntax}
+## Sintaxe de regras {#configuration-syntax}
 
 Os tipos de regra nas seções abaixo compartilham uma sintaxe comum.
 
@@ -313,7 +315,7 @@ As conexões com as origens são somente SSL e usam a porta 443.
 Há cenários em que os seletores de origem devem ser usados para direcionar o tráfego pelo AEM Publish para o AEM Edge Delivery Services:
 
 * Parte do conteúdo é entregue por um domínio gerenciado pelo AEM Publish, enquanto outros conteúdos do mesmo domínio são entregues por Edge Delivery Services
-* O conteúdo entregue pelos Edge Delivery Services se beneficiaria das regras implantadas por meio do Pipeline de configuração, incluindo regras de filtro de tráfego ou transformações de solicitação/resposta
+* O conteúdo entregue pelos Edge Delivery Services se beneficiaria das regras implantadas por meio do pipeline de configuração, incluindo regras de filtro de tráfego ou transformações de solicitação/resposta
 
 Este é um exemplo de uma regra de seletor de origem que pode fazer isso:
 

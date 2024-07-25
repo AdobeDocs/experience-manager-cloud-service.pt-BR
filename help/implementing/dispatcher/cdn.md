@@ -4,12 +4,13 @@ description: Saiba como usar a CDN gerenciada pelo AEM e como apontar sua própr
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1128'
 ht-degree: 22%
 
 ---
+
 
 # CDN no AEM as a Cloud Service {#cdn}
 
@@ -43,7 +44,7 @@ Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud
 
 ### Configuração do tráfego no CDN {#cdn-configuring-cloud}
 
-As regras para configurar o tráfego e os filtros CDN podem ser declaradas em um arquivo de configuração e implantadas na CDN, usando o [Pipeline de Configuração do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline). Para obter mais detalhes, consulte [Configurando o Tráfego na CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) e [Regras de Filtro de Tráfego, incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md).
+As regras para configurar o tráfego e os filtros CDN podem ser declaradas em um arquivo de configuração e implantadas na CDN usando os [pipelines de configuração do Cloud Manager.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline) Para obter mais detalhes, consulte [Configurando o Tráfego na CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md) e [Regras de Filtro de Tráfego, incluindo regras do WAF](/help/security/traffic-filter-rules-including-waf.md).
 
 ### Configuração de páginas de erro do CDN {#cdn-error-pages}
 
@@ -70,7 +71,7 @@ Instruções de configuração:
 1. Defina SNI para o ingresso do CDN do Adobe.
 1. Defina o cabeçalho Host para o domínio de origem. Por exemplo: `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Defina o cabeçalho `X-Forwarded-Host` com o nome de domínio para que o AEM possa determinar o cabeçalho do host. Por exemplo: `X-Forwarded-Host:example.com`.
-1. Defina `X-AEM-Edge-Key`. O valor deve vir do Adobe.
+1. Defina `X-AEM-Edge-Key`. O valor deve ser configurado usando um pipeline de configuração do Cloud Manager, conforme descrito em [este artigo.](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token#CDN-HTTP-value)
 
    * Necessário para que o CDN do Adobe possa validar a origem das solicitações e transmitir os cabeçalhos `X-Forwarded-*` para o aplicativo AEM. Por exemplo, `X-Forwarded-For` é usado para determinar o IP do cliente. Portanto, torna-se responsabilidade do chamador confiável (ou seja, a CDN gerenciada pelo cliente) garantir a exatidão dos cabeçalhos `X-Forwarded-*` (consulte a observação abaixo).
    * Opcionalmente, o acesso ao ingresso da CDN do Adobe pode ser bloqueado quando um `X-AEM-Edge-Key` não estiver presente. Informe o Adobe se precisar de acesso direto ao ingresso do CDN do Adobe (para ser bloqueado).
@@ -79,7 +80,7 @@ Consulte a seção [Configurações de exemplo de fornecedor de CDN](#sample-con
 
 Antes de aceitar o tráfego ativo, você deve validar com o suporte ao cliente do Adobe se o roteamento de tráfego de ponta a ponta está funcionando corretamente.
 
-Após obter o `X-AEM-Edge-Key`, você poderá testar se a solicitação é roteada corretamente da seguinte maneira.
+Depois de configurar o `X-AEM-Edge-Key`, você pode testar se a solicitação é roteada corretamente da seguinte maneira.
 
 No Linux®:
 

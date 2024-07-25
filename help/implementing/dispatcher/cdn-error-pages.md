@@ -1,41 +1,34 @@
 ---
 title: Configuração de páginas de erro do CDN
-description: Saiba como substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de blobs do Azure, e fazendo referência a eles em um arquivo de configuração implantado usando o Pipeline de configuração do Cloud Manager.
+description: Saiba como substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de blobs do Azure, e fazendo referência a eles em um arquivo de configuração implantado usando o pipeline de configuração do Cloud Manager.
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '365'
 ht-degree: 1%
 
 ---
 
+
 # Configuração de páginas de erro do CDN {#cdn-error-pages}
 
-No evento improvável de que o [CDN gerenciado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) não possa atingir a origem AEM, o CDN por padrão fornece uma página de erro genérica e sem marca que indica que o servidor não pode ser alcançado. Você pode substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de Blobs do Azure, e fazendo referência a eles em um arquivo de configuração implantado usando o [Pipeline de Configuração do Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
+No evento improvável de que o [CDN gerenciado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) não possa atingir a origem AEM, o CDN por padrão fornece uma página de erro genérica e sem marca que indica que o servidor não pode ser alcançado. Você pode substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de Blob do Azure, e fazendo referência a eles em um arquivo de configuração implantado usando o pipeline de configuração [do Cloud Manager.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ## Configurar {#setup}
 
 Antes de substituir a página de erro padrão, é necessário fazer o seguinte:
 
-* Crie esta pasta e estrutura de arquivo na pasta de nível superior do seu projeto Git:
+1. Crie um arquivo com o nome `cdn.yaml` ou similar, fazendo referência à seção de sintaxe abaixo.
 
-```
-config/
-     cdn.yaml
-```
+1. Coloque o arquivo em algum lugar em uma pasta de nível superior chamada *config* ou similar, conforme descrito no [artigo sobre o pipeline de configuração](/help/operations/config-pipeline.md#folder-structure).
 
-* O arquivo de configuração `cdn.yaml` deve conter metadados e as regras descritas nos exemplos abaixo. O parâmetro `kind` deve ser definido como `CDN` e a versão deve ser definida como a versão do esquema, que atualmente é `1`.
+1. Crie um pipeline de configuração no Cloud Manager, conforme descrito no [artigo sobre configuração de pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
-* Crie um pipeline de configuração de implantação direcionada no Cloud Manager. Consulte [configuração de pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [configuração de pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+1. Implante a configuração.
 
-**Notas**
-
-* Atualmente, os RDEs não oferecem suporte ao pipeline de configuração.
-* Você pode usar `yq` para validar localmente a formatação YAML do seu arquivo de configuração (por exemplo, `yq cdn.yaml`).
-
-### Configuração {#configuration}
+### Sintaxe {#syntax}
 
 A página de erro é implementada como um aplicativo de página única (SPA) e faz referência a algumas propriedades, como mostrado no exemplo abaixo.  Os arquivos estáticos referenciados pelos urls devem ser hospedados por você em um serviço acessível pela Internet, como o Amazon S3 ou o Armazenamento de blobs do Azure.
 
@@ -54,6 +47,8 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
+Consulte o [artigo sobre configuração de pipeline](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição das propriedades acima do nó de dados. O valor da propriedade kind deve ser *CDN* e a propriedade `version` deve ser definida como *1*.
+
 
 | Nome | Propriedades permitidas | Significado |
 |-----------|--------------------------|-------------|

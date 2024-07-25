@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 585c934465215c48b9441a95c03e4c116859103e
 workflow-type: tm+mt
-source-wordcount: '1418'
-ht-degree: 89%
+source-wordcount: '1500'
+ht-degree: 84%
 
 ---
 
@@ -56,7 +56,8 @@ Um pipeline de não produção serve principalmente para executar verificações
 Além de produção e não produção, os pipelines podem ser diferenciados pelo tipo de código que implantam.
 
 * **[Pipelines de pilha completa](#full-stack-pipeline)** - Implanta simultaneamente compilações de código de back-end e front-end contendo um ou mais aplicativos de servidor do AEM, juntamente com configurações HTTPD/Dispatcher.
-* **[Configurar pipelines](#config-deployment-pipeline)** - Configure e implante as regras de filtro de tráfego, incluindo as regras WAF, em minutos
+* **[Configurar Pipelines](#config-deployment-pipeline)** - Implante rapidamente configurações para recursos como encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN, como regras de filtro de tráfego (incluindo regras WAF), transformações de solicitação e resposta, seletores de origem, redirecionamentos do lado do cliente, páginas de erro, chaves de CDN gerenciadas pelo cliente, chaves de API de limpeza e autenticação básica.
+   * Consulte o documento [Usando Pipelines de Configuração](/help/operations/config-pipeline.md) para obter detalhes.
 * **[Pipelines de front-end](#front-end)** - Implantam compilações de código de front-end contendo um ou mais aplicativos de interface do usuário do lado do cliente.
 * **[Pipelines de configuração no nível da Web](#web-tier-config-pipelines)** - Implanta configurações HTTPD/Dispatcher.
 
@@ -71,11 +72,10 @@ A tabela a seguir resume os pipelines disponíveis no Cloud Manager e seus usos.
 | Produção ou não produção | Implantação | Pilha completa | Implanta simultaneamente compilações de código back-end e front-end, juntamente com configurações HTTPD/Dispatcher | Quando o código de front-end deve ser implantado simultaneamente com o código de servidor do AEM.<br>Quando os pipelines de front-end ou de configuração no nível da Web ainda não tiverem sido adotados. |
 | Produção ou não produção | Implantação | Front-end | Implanta a compilação do código de front-end contendo um ou mais aplicativos de interface do usuário do lado do cliente | Suporta vários pipelines de front-end simultâneos <br>com muito mais rapidez do que implantações de pilha completa |
 | Produção ou não produção | Implantação | Configuração no nível da Web | Implanta configurações HTTPD/Dispatcher | Implantações em minutos |
-| Produção ou não produção | Implantação | Configuração | Implanta regras de filtragem de tráfego | Implantações em minutos |
+| Produção ou não produção | Implantação | Configuração | Implanta a [configuração para vários recursos](/help/operations/config-pipeline.md) relacionados às tarefas de manutenção de CDN, encaminhamento de logs e limpeza | Implantações em minutos |
 | Não produção | Qualidade do código | Pilha completa | Executa verificações de qualidade do código de pilha completa sem uma implantação | Oferece suporte a vários pipelines |
 | Não produção | Qualidade do código | Front-end | Executa verificações de qualidade do código de front-end sem uma implantação | Oferece suporte a vários pipelines |
 | Não produção | Qualidade do código | Configuração no nível da Web | Executa verificações de qualidade do código em configurações de dispatcher sem uma implantação | Oferece suporte a vários pipelines |
-| Não produção | Qualidade do código | Configuração | Implanta regras de filtragem de tráfego |  |
 
 O diagrama a seguir ilustra as configurações de pipeline do Cloud Manager com o repositório de front-end único tradicional ou configurações de repositório de front-end independente.
 
@@ -116,9 +116,9 @@ Para saber como configurar pipelines de pilha completa, consulte os documentos a
 
 ## Configuração de pipelines {#config-deployment-pipeline}
 
-Com um pipeline de configuração, você pode configurar e implantar regras de filtro de tráfego, incluindo regras WAF, em minutos.
+Com um pipeline de configuração, você pode implantar rapidamente configurações para encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN, como regras de filtro de tráfego (incluindo regras do WAF), transformações de solicitação e resposta, seletores de origem, redirecionamentos do lado do cliente, páginas de erro, chaves de CDN gerenciadas pelo cliente, chaves de API de limpeza e autenticação básica.
 
-Consulte [Regras de Filtro de Tráfego incluindo Regras do WAF](/help/security/traffic-filter-rules-including-waf.md) para saber como gerenciar as configurações no repositório para que elas sejam implantadas corretamente.
+Consulte o documento [Uso dos Pipelines de Configuração](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para obter uma lista abrangente dos recursos com suporte e para saber como gerenciar as configurações no repositório para que elas sejam implantadas corretamente.
 
 ### Configuração de pipelines de configuração {#configure-config-deployment}
 
