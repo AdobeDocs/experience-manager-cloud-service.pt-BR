@@ -4,10 +4,10 @@ description: Use o Seletor de ativos para pesquisar, localizar e recuperar metad
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 04560cd5b15ceb79b6a480c60e78e061276a39eb
+source-git-commit: cdb35a56c1337012fa099135470b91e162e8e902
 workflow-type: tm+mt
-source-wordcount: '4561'
-ht-degree: 36%
+source-wordcount: '5339'
+ht-degree: 30%
 
 ---
 
@@ -107,6 +107,7 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 * [Integrar o Seletor de ativos a um aplicativo do  [!DNL Adobe] ](#adobe-app-integration-vanilla)
 * [Integrar o Seletor de ativos a um aplicativo não-Adobe](#adobe-non-app-integration)
+* [Integração do Dynamic Media com recursos OpenAPI](#adobe-app-integration-polaris)
 
 >[!BEGINTABS]
 
@@ -386,6 +387,171 @@ O Seletor de ativos é renderizado no elemento de contêiner `<div>`, como menci
 >
 >Se você tiver integrado o Seletor de ativos usando o fluxo de trabalho Inscrever-se, mas ainda não conseguir acessar o repositório de entrega, verifique se os cookies do navegador foram limpos. Caso contrário, você acaba recebendo o erro `invalid_credentials All session cookies are empty` no console.
 
++++
+
+<!--Integration with Polaris application content starts here-->
+
+>[!TAB Integração do Dynamic Media com recursos OpenAPI]
+
+### Pré-requisitos {#prereqs-polaris}
+
+Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos ao Dynamic Media com recursos OpenAPI:
+
+* [Métodos de comunicação](#prereqs)
+* Para acessar o Dynamic Media com recursos OpenAPI, você deve ter licenças para:
+   * Repositório do Assets (por exemplo, Experience Manager Assets as a Cloud Service).
+   * AEM Dynamic Media.
+* Somente [ativos aprovados](#approved-assets.md) estão disponíveis para uso, garantindo a consistência da marca.
+
+### Integração do Dynamic Media com recursos OpenAPI{#adobe-app-integration-polaris}
+
+A integração do Seletor de ativos com o processo OpenAPI do Dynamic Media envolve várias etapas que incluem a criação de um URL de mídia dinâmica personalizado ou pronto para escolher o URL de mídia dinâmica etc.
+
++++**Integrar o Seletor de ativos para Dynamic Media com recursos OpenAPI**
+
+As propriedades `rootPath` e `path` não devem fazer parte do Dynamic Media com recursos OpenAPI. Em vez disso, você pode configurar a propriedade `aemTierType`. Veja a seguir a sintaxe da configuração:
+
+```
+aemTierType:[1: "delivery"]
+```
+
+Essa configuração permite visualizar todos os ativos aprovados sem pastas ou como uma estrutura simples. Para obter mais informações, navegue até a propriedade `aemTierType` em [Propriedades do Seletor de ativos](#asset-selector-properties)
+
++++
+
++++**Criar uma URL de Entrega Dinâmica a partir de ativos aprovados**
+Depois de configurar o Seletor de ativos, um esquema de objetos será usado para criar um URL de entrega dinâmico dos ativos selecionados.
+Por exemplo, um esquema de um objeto de uma matriz de objetos que é recebido após a seleção de um ativo:
+
+```
+{
+"dc:format": "image/jpeg",
+"repo:assetId": "urn:aaid:aem:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+"repo:name": "image-7.jpg",
+"repo:repositoryId": "delivery-pxxxx-exxxxxx.adobe.com",
+...
+}
+```
+
+Todos os ativos selecionados são carregados pela função `handleSelection` que atua como um objeto JSON. Por exemplo, `JsonObj`. O URL dinâmico de entrega é criado pela combinação das seguintes operadoras:
+
+| Objeto | JSON |
+|---|---|
+| Host | `assetJsonObj["repo:repositoryId"]` |
+| Raiz da API | `/adobe/dynamicmedia/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
+| formato | `.jpg` |
+
+**Especificação da API de entrega de ativos aprovada**
+
+Formato de URL:
+`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+
+Onde,
+
+* O host é `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* A raiz da API é `"/adobe/dynamicmedia/deliver"`
+* `<asset-id>` é o identificador do ativo
+* `<seo-name>` é o nome de um ativo
+* `<format>` é o formato de saída
+* `<image modification query parameters>` como suporte pela especificação da API de entrega dos ativos aprovados
+
+**API de entrega de ativos aprovada**
+
+O URL do delivery dinâmico possui a seguinte sintaxe:
+`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, onde,
+
+* O host é `https://delivery-pxxxxx-exxxxxx.adobe.com`
+* A raiz da API para Entrega de Representação Original é `"/adobe/assets/deliver"`
+* `<asset-id>` é um identificador de ativo
+* `<seo-name>`é o nome do ativo que pode ou não ter uma extensão
+
++++
+
++++**Pronto para escolher a URL de entrega dinâmica**
+Todos os ativos selecionados são carregados pela função `handleSelection` que atua como um objeto JSON. Por exemplo, `JsonObj`. O URL dinâmico de entrega é criado pela combinação das seguintes operadoras:
+
+| Objeto | JSON |
+|---|---|
+| Host | `assetJsonObj["repo:repositoryId"]` |
+| Raiz da API | `/adobe/assets/deliver` |
+| asset-id | `assetJsonObj["repo:assetId"]` |
+| seo-name | `assetJsonObj["repo:name"]` |
+
+Abaixo estão duas maneiras de percorrer o objeto JSON:
+
+![URL de entrega dinâmica](assets/dynamic-delivery-url.png)
+
+* **Miniatura:** Miniaturas podem ser imagens e ativos são PDF, vídeo, imagens e assim por diante. Embora, você possa usar os atributos de altura e largura da miniatura de um ativo como a representação dinâmica da entrega.
+O seguinte conjunto de representações pode ser usado para os ativos do tipo PDF:
+Depois que um pdf é selecionado no sidekick, o contexto de seleção oferece as informações abaixo. Abaixo está a maneira de percorrer o objeto JSON:
+
+  <!--![Thumbnail dynamic delivery url](image-1.png)-->
+
+  Consulte `selection[0].....selection[4]` para obter a matriz de link de representação na captura de tela acima. Por exemplo, as principais propriedades de uma das representações de miniatura incluem:
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+Na captura de tela acima, o URL de entrega da representação original do PDF precisa ser incorporado à experiência do público-alvo se o PDF for necessário, e não sua miniatura. Por exemplo, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+
+* **Vídeo:** Você pode usar a URL do player de vídeo para os ativos do tipo vídeo que usam um iFrame inserido. Você pode usar as seguintes representações de matriz na experiência do target:
+  <!--![Video dynamic delivery url](image.png)-->
+
+  ```
+  { 
+      "height": 319, 
+      "width": 319, 
+      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "type": "image/webp" 
+  } 
+  ```
+
+  Consulte `selection[0].....selection[4]` para obter a matriz de link de representação na captura de tela acima. Por exemplo, as principais propriedades de uma das representações de miniatura incluem:
+
+  O trecho de código na captura de tela acima é um exemplo de um ativo de vídeo. Inclui a matriz de links de representações. O `selection[5]` no trecho é o exemplo de miniatura de imagem que pode ser usada como o espaço reservado da miniatura de vídeo na experiência de destino. O `selection[5]` na matriz das representações é para o reprodutor de vídeo. Isso serve um HTML e pode ser definido como `src` do iframe. Suporta transmissão adaptável de taxa de bits, que é a entrega do vídeo otimizada para a Web.
+
+  No exemplo acima, a URL do reprodutor de vídeo é `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+
++++**Interface de usuário do Seletor de ativos para o Dynamic Media com recursos OpenAPI**
+
+Após a integração com o Seletor de ativos de micro front-end do Adobe, é possível visualizar a estrutura somente de ativos de todos os ativos aprovados disponíveis no repositório de ativos do Experience Manager.
+
+![Dynamic Media com interface de recursos OpenAPI](assets/polaris-ui.png)
+
+* **A**: [Ocultar/Mostrar painel](#hide-show-panel)
+* **B**: [Assets](#repository)
+* **C**: [Classificação](#sorting)
+* **D**: [Filtros](#filters)
+* **E**: [Barra de pesquisa](#search-bar)
+* **F**: [Classificando em ordem crescente ou decrescente](#sorting)
+* **G**: Cancelar Seleção
+* **H**: selecionar um ou vários ativos
+
++++
+
++++**Configurar filtros personalizados**
+O Seletor de ativos para Dynamic Media com recursos OpenAPI permite configurar propriedades personalizadas e filtros com base nelas. A propriedade `filterSchema` é usada para configurar essas propriedades. A personalização pode ser exposta como `metadata.<metadata bucket>.<property name>.` em relação à qual os filtros podem ser configurados, onde,
+
+* `metadata` são as informações de um ativo
+* `embedded` é o parâmetro estático usado para configuração e
+* `<propertyname>` é o nome do filtro que você está configurando
+
+Para a configuração, as propriedades definidas no nível `jcr:content/metadata/` são expostas como `metadata.<metadata bucket>.<property name>.` para os filtros que você deseja configurar.
+
+Por exemplo, no Seletor de ativos para Dynamic Media com recursos OpenAPI, uma propriedade em `asset jcr:content/metadata/client_name:market` é convertida em `metadata.embedded.client_name:market` para configuração de filtro.
+
+Para obter o nome, é necessário realizar uma atividade única. Faça uma chamada de API de pesquisa para o ativo e obtenha o nome da propriedade (o bucket, essencialmente).
+
++++
+
 >[!ENDTABS]
 
 ## Propriedades do Seletor de ativos {#asset-selector-properties}
@@ -398,8 +564,6 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *imsOrg* | String | Sim | | A ID do Adobe Identity Management System (IMS) atribuída durante o provisionamento do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] para sua organização. A chave `imsOrg` é necessária para autenticar se a organização que você está acessando está no Adobe IMS ou não. |
 | *imsToken* | String | Não | | Token de portador IMS usado para autenticação. `imsToken` é necessário se você estiver usando um aplicativo [!DNL Adobe] para a integração. |
 | *apiKey* | String | Não | | Chave de API usada para acessar o serviço de Descoberta do AEM. `apiKey` é necessário se você estiver usando uma integração de aplicativos [!DNL Adobe]. |
-| *rootPath* | String | Não | /content/dam/ | Caminho da pasta na qual o Seletor de ativos exibe seus ativos. O `rootPath` também pode ser usado na forma de encapsulamento. Por exemplo, dado o seguinte caminho, `/content/dam/marketing/subfolder/`, o Seletor de ativos não permite que você percorra qualquer pasta pai, mas exibe apenas as pastas filho. |
-| *caminho* | String | Não | | Caminho usado para navegar para um diretório específico de ativos quando o Seletor de ativos é renderizado. |
 | *filterSchema* | Matriz | Não | | Modelo usado para configurar propriedades de filtro. Isso é útil quando quiser limitar determinadas opções de filtro no Seletor de ativos. |
 | *filterFormProps* | Objeto | Não | | Especifique as propriedades de filtro que precisam ser usadas para refinar sua pesquisa. Para! exemplo, tipo MIME JPG, PNG, GIF. |
 | *selectedAssets* | Matriz `<Object>` | Não |                 | Especifique os ativos selecionados quando o Seletor de ativos for renderizado. É necessária uma matriz de objetos que contenha uma propriedade de id dos ativos. Por exemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Um ativo deve estar disponível no diretório atual. Se precisar usar um diretório diferente, forneça um valor para a propriedade `path` também. |
@@ -427,6 +591,8 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *OpçõesDeExpiração* | Função | | | Você pode usar entre as duas propriedades a seguir: **getExpiryStatus** que fornece o status de um ativo expirado. A função retorna `EXPIRED`, `EXPIRING_SOON` ou `NOT_EXPIRED` com base na data de expiração de um ativo fornecido. Consulte [personalizar ativos expirados](#customize-expired-assets). Além disso, você pode usar **allowSelectionAndDrag**, no qual o valor da função pode ser `true` ou `false`. Quando o valor é definido como `false`, o ativo expirado não pode ser selecionado ou arrastado na tela. |
 | *mostrarNotificação* | | Não | | Ele permite que o Seletor de ativos mostre uma mensagem em caixa de informações personalizada para o ativo expirado. |
 <!--
+| *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
+| *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](#customize-expired-assets). |
 -->
