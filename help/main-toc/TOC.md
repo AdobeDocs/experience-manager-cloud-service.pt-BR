@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 83cf953853c88c1f4b7149bc63c7f07b1e73faf3
 workflow-type: tm+mt
-source-wordcount: '5273'
+source-wordcount: '5283'
 ht-degree: 79%
 
 ---
@@ -330,8 +330,10 @@ ht-degree: 79%
          + [Sistema de estilos](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [Desfazer Limitações de Refazer](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Editor universal {#universal-editor}
+         + [Navegar pelo Editor universal](/help/sites-cloud/authoring/universal-editor/navigation.md)
          + [Criação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Publicação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [Herança de conteúdo no editor universal](/help/sites-cloud/authoring/universal-editor/inheritance.md)
       + Fragmentos {#fragments}
          + [Fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Fragmentos de experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md)
