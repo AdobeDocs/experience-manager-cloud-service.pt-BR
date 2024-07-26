@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a1b0d37b2f2f4e58b491651cb8e6504a6909393e
+source-git-commit: af2985f29cb867162061bbac465b19637aa0ecad
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1405'
 ht-degree: 9%
 
 ---
@@ -57,7 +57,7 @@ Há regras em vigor para excluir bots conhecidos, incluindo serviços conhecidos
 | --- | --- | --- |
 | Código HTTP 100-299 | Incluído | Essas são solicitações regulares que fornecem conteúdo total ou parcial. |
 | Bibliotecas HTTP para automação | Incluído | Exemplos:<br>· Amazon CloudFront<br>· Apache Http Client<br>· Axios<br>· Azureus<br>· Curl<br>· Busca de Nó GitHub<br>· Guzzle<br>· Go-http-client<br>· Chrome Headless<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Solicitações Python<br>· Reator <br>· Wget<br>· WinHTTP<br> |
-| Ferramentas de monitoramento e verificação de integridade | Incluído | Elas são configuradas pelo cliente para monitorar um determinado aspecto do site. Por exemplo, disponibilidade ou desempenho real do usuário. Use o ponto de extremidade `/system/probes/health` e não as páginas de HTML reais do site.<br>Exemplos:<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatível; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon 2.0.0 |
+| Ferramentas de monitoramento e verificação de integridade | Incluído | Elas são configuradas pelo cliente para monitorar um determinado aspecto do site. Por exemplo, disponibilidade ou desempenho de usuário real. Se esses direcionam endpoints específicos como /system/probes/health para verificações de integridade, recomendamos que você use o endpoint `/system/probes/health` e não as páginas de HTML reais do site.[Veja abaixo](#excluded-content-request)<br>Exemplos:<br>· Amazon-Route53-Health-Check-Service<br>· EyeMonIT_bot_version_0.1_[(https://www.eyemon.it/)](https://www.eyemon.it/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatible; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">` solicitações | Incluído | Para aumentar a velocidade de carregamento da próxima página, os clientes podem fazer com que o navegador carregue um conjunto de páginas antes que o usuário clique no link, de modo que já estejam no cache. *Mente: isso está aumentando significativamente o tráfego*, dependendo de quantas dessas páginas são buscadas previamente. |
 | Tráfego que bloqueia relatórios do Adobe Analytics ou Google Analytics | Incluído | É mais comum que os visitantes de sites tenham software de privacidade instalado (bloqueadores de anúncios e assim por diante) que afetam a precisão do Google Analytics ou do Adobe Analytics. O AEM as a Cloud Service conta as solicitações no primeiro ponto de entrada na infraestrutura operada pelo Adobe e não no lado do cliente. |
 
@@ -73,7 +73,7 @@ Consulte também [Painel de licenças](/help/implementing/cloud-manager/license-
 | Solicitações em /libs/* | Excluído | Solicitações JSON internas de AEM, como o token CSRF que não é faturável. |
 | Tráfego de ataques de DDOS | Excluído | Proteção DDOS. O AEM detecta automaticamente alguns dos ataques de DDOS e os bloqueia. Ataques de DDOS, se detectados, não são faturáveis. |
 | Monitoramento do AEM as a Cloud Service New Relic | Excluído | Monitoramento global da AEM as a Cloud Service. |
-| URL para clientes monitorarem o programa Cloud Service | Excluído | URL recomendada para monitorar a disponibilidade externamente.<br><br>`/system/probes/health` |
+| URL para clientes monitorarem o programa Cloud Service | Excluído | Recomendamos usar a URL para monitorar externamente a verificação de disponibilidade ou integridade.<br><br>`/system/probes/health` |
 | Serviço de aquecimento do pod do AEM as a Cloud Service | Excluído |
 | Agente: skyline-service-warmup/1.* |
 | Mecanismos de pesquisa, redes sociais e bibliotecas HTTP conhecidos (marcados pelo Fastly) | Excluído | Serviços conhecidos que visitam o site regularmente para atualizar seu índice de pesquisa ou serviço:<br><br>Exemplos:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot Google<br>· AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· MJ12bot<br>· PKingdom<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot |
