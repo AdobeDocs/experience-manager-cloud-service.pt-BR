@@ -4,10 +4,10 @@ description: Entenda a interface e a navegação no [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: b8ee421c5105c95dc4a509d3b2e32fa43b1adc0b
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 88%
+source-wordcount: '966'
+ht-degree: 81%
 
 ---
 
@@ -31,7 +31,8 @@ Ao fazer logon no [!DNL Assets view], você verá a seguinte interface.
 
 ## Procurar e exibir ativos e pastas {#browse-repository}
 
-Você pode navegar pelas pastas da interface do usuário principal ou da barra lateral esquerda. Ao navegar, você pode usar a interface para exibir miniaturas de ativos para navegar visualmente pelo repositório ou exibir detalhes do ativo para encontrar rapidamente o ativo que deseja. As opções disponíveis na barra lateral esquerda são:
+Você pode navegar pelas pastas da interface do usuário principal ou da barra lateral esquerda. O Experience Manager Assets agora exibe visualizações visuais do conteúdo da pasta na miniatura da pasta ao navegar ou pesquisar conteúdo, o que melhora a descoberta de ativos disponíveis no repositório do AEM Assets. Essa miniatura de pasta economiza seu tempo gasto na pesquisa de ativos específicos em uma pasta no repositório do AEM Assets.
+Ao navegar pelos ativos em uma pasta, você pode usar a interface para exibir miniaturas de ativos para navegar visualmente pelo repositório ou exibir detalhes do ativo para encontrar rapidamente o ativo que deseja. As opções disponíveis na barra lateral esquerda são:
 
 * [Meu espaço de trabalho](/help/assets/my-workspace-assets-view.md): o Assets agora inclui um espaço de trabalho personalizável, que fornece widgets para acesso conveniente às principais áreas da interface do Assets, bem como as informações mais relevantes para você. Esta página serve como uma solução única para fornecer uma visão geral dos itens de trabalho e fornecer acesso rápido aos principais fluxos de trabalho. Um acesso mais conveniente a essas opções aumenta a eficiência e a velocidade do conteúdo.
 * [Tarefas](/help/assets/my-workspace-assets-view.md): você pode visualizar as tarefas atribuídas a você na guia **Minhas tarefas**. Ao passo que as tarefas criadas por você podem ser visualizadas na guia **Tarefas atribuídas**. Além disso, as tarefas que você conclui estão localizadas na guia **Tarefas concluídas**.
