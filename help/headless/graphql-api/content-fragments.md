@@ -4,10 +4,10 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 4492536120989423b639bbb75105568a9c328507
 workflow-type: tm+mt
-source-wordcount: '5400'
-ht-degree: 81%
+source-wordcount: '5469'
+ht-degree: 80%
 
 ---
 
@@ -1154,6 +1154,14 @@ Para acessar o endpoint do GraphQL a partir de um site externo, é necessário c
 ## Autenticação {#authentication}
 
 Consulte [Autenticação para consultas de GraphQL remotas do AEM sobre fragmentos de conteúdo](/help/headless/security/authentication.md).
+
+## Teste automatizado {#automated-testing}
+
+Ao executar um pipeline de implantação no AEM Cloud Manager, os testes automatizados são executados durante a execução do pipeline.
+
+Para fornecer resultados precisos, o ambiente do AEM as a Cloud Service **Stage** deve refletir o máximo possível seu ambiente de **Produção**. Isso é especialmente importante para o conteúdo.
+
+Você pode fazer isso usando a [Ferramenta de cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) do AEM as a Cloud Service para copiar o conteúdo de produção para o ambiente de preparo.
 
 ## Limitações {#limitations}
 
