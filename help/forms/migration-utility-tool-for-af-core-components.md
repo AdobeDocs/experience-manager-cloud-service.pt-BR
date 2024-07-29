@@ -8,14 +8,16 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 5d8f4d5d628b090b8bf54de0f2d9d62c02544522
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 1%
+source-wordcount: '991'
+ht-degree: 3%
 
 ---
 
 # Introdução
+
+<span class="preview"> O recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O Utilitário de conversão do Forms, parte do conjunto da [Ferramenta de modernização do AEM](https://opensource.adobe.com/aem-modernize-Tools/), ajuda a converter facilmente o Adaptive Forms criado com componentes fundamentais herdados em formulários que aproveitam os recursos modernos e compatíveis dos Componentes principais.
 
