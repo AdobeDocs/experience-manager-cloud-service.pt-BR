@@ -1,5 +1,5 @@
 ---
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
 workflow-type: tm+mt
 source-wordcount: '662'
 ht-degree: 7%
@@ -122,7 +122,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 * [Introdução ao Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components.md)
 * [Tipos de operadores e eventos no editor de regras de um Formulário adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-events-operators.md)
 * [Interface do usuário do Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-user-interface.md)
-* [Casos de uso diferentes do Editor de regras para um formulário adaptável baseado em componentes principais](/help/forms/rule-editor-core-components-user-interface.md)
+* [Casos de uso diferentes do Editor de regras para um formulário adaptável baseado em componentes principais](/help/forms/rule-editor-core-components-usecases.md)
 * [Diferença em várias edições do editor de regras](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introdução às funções personalizadas para o Forms adaptável com base nos Componentes principais](/help/forms/create-and-use-custom-functions.md)
 * [Criar uma função personalizada para um formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md)
