@@ -4,20 +4,17 @@ description: Saiba como remover objetos em cache do cache CDN do Adobe configura
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 1%
+source-wordcount: '437'
+ht-degree: 0%
 
 ---
 
 # Remoção do cache da CDN {#cdn-purge-cache}
 
->[!NOTE]
->Esse recurso ainda não está disponível para o público geral. Para participar do programa de adoção antecipada, envie um email para `aemcs-cdn-config-adopter@adobe.com`.
-
 A limpeza remove um objeto do cache CDN do Adobe, resultando em solicitações futuras que prosseguem para a origem como um erro de cache, em vez de serem fornecidas do cache.
-O AEM as a Cloud Service permite configurar um Token de API de limpeza, que pode ser usado em chamadas de API. Leia o [artigo sobre Configuração de Credenciais e Autenticação da CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) para saber como configurar este token usando as diretivas de Autenticação de Pipeline de Configuração do Cloud Manager.
+O AEM as a Cloud Service permite configurar um Token de API de limpeza, que pode ser usado em chamadas de API de limpeza. Leia o [artigo sobre Configuração de Credenciais e Autenticação da CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) para saber como configurar este token usando as diretivas de Autenticação de Pipeline de Configuração do Cloud Manager.
 
 Há três variações de limpeza compatíveis:
 
