@@ -4,7 +4,7 @@ description: Distribua seus ativos digitais usando métodos como compartilhar co
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 2%
@@ -121,6 +121,7 @@ O template de email pode ser personalizado usando texto sem formatação ou HTML
 | `${emailMessage}` | Corpo do email |
 | `${pagePath}` | URL do link compartilhado |
 | `${linkExpiry}` | Data de expiração do link compartilhado |
+
 <!--| `${host.prefix}` | Origin of the [!DNL Experience Manager] instance, for example `http://www.adobe.com"` |-->
 
 #### Exemplo de template de email personalizado {#custom-email-template-example}

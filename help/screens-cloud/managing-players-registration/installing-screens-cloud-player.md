@@ -4,7 +4,7 @@ description: Esta página descreve como instalar e configurar players no Screens
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 1%
@@ -71,10 +71,12 @@ As seguintes propriedades estão incluídas em cada `ping`:
 | lastContentChange {string} | carimbo de data e hora da última alteração de conteúdo |
 
 >[!NOTE]
+>
 >Como opção, você pode ativar uma propriedade mais avançada nas preferências do reprodutor (Ativar monitoramento de reprodução):
->|Propriedade|Descrição|
->|—|—|
->|isContentRendering {boolean}|true se a GPU puder confirmar que está reproduzindo conteúdo real (com base na análise de pixels)|
+>
+>| Propriedade | Descrição |
+>|---|---|
+>| isContentRendering {boolean} | true se a GPU puder confirmar que está reproduzindo o conteúdo real (com base na análise de pixels) |
 
 ### Limitações {#limitations}
 
