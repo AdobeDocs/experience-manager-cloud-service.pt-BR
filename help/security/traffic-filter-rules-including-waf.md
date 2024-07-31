@@ -4,9 +4,9 @@ description: Configuração das regras de filtro de tráfego incluindo as regras
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
 workflow-type: tm+mt
-source-wordcount: '3939'
+source-wordcount: '3932'
 ht-degree: 1%
 
 ---
@@ -506,10 +506,6 @@ data:
 ```
 
 ## Alerta de pico de tráfego padrão no Origin {#traffic-spike-at-origin-alert}
-
->[!NOTE]
->
->Esse recurso está sendo lançado gradualmente.
 
 Uma notificação por email do [Centro de Ações](/help/operations/actions-center.md) será enviada quando houver uma quantidade significativa de tráfego enviado à origem, onde um alto limite de solicitações vem do mesmo endereço IP, sugerindo assim um ataque de DDoS.
 
