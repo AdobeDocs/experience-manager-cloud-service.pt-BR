@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas do Dynamic Media
-description: Saiba mais sobre as práticas recomendadas do Dynamic Media para trabalhar com imagens e vídeo.
+description: Saiba mais sobre as práticas recomendadas do Dynamic Media para trabalhar com imagens e vídeos e as práticas recomendadas para visualizadores do Dynamic Media.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: de1116ee39024d30e14838f8b36f9ab087a45f85
+source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '4105'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,23 @@ Após sincronizar os ativos, o Publish seletivo oferece controle sobre quais ati
 Essas duas práticas recomendadas o ajudarão a obter melhor controle, governança e produtividade do seu conteúdo de mídia avançada.
 
 Quer saber mais? Ir para [Configurar Publish Seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+
+
+## Visualizadores do Dynamic Media
+
+As práticas recomendadas do visualizador do Dynamic Media são diretrizes essenciais projetadas para otimizar o desempenho, a funcionalidade e a experiência do usuário do Dynamic Media Assets no AEM. Essas práticas garantem que os ativos sejam sincronizados, publicados e configurados corretamente para usar todos os recursos do Dynamic Media.
+
+Seguindo essas práticas recomendadas, você pode obter integração perfeita, gerenciamento eficiente de ativos e interações aprimoradas do visualizador. Sincronizar ativos, usar o recorte inteligente e seguir as diretrizes de inclusão de arquivos do JavaScript são práticas importantes. Essas recomendações ajudam a manter a integridade e a confiabilidade da entrega de mídia em várias plataformas e dispositivos.
+
+* **Sincronizar Assets do Visualizador:** verifique se todos os ativos do visualizador estão sincronizados com o Dynamic Media antes de usar o reprodutor. Para obter o visualizador de solução de problemas, vá para o artigo [Solução de problemas do Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
+* **Página do Gerenciador de Exemplo:** Acesse a página do gerenciador de exemplo em `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+* **Publish Assets:** verifique se os ativos foram publicados antes de visualizá-los nos visualizadores de entrega.
+* **Vídeos de reprodução automática sem áudio:** Para a funcionalidade de reprodução automática em vídeos, use as configurações de vídeo sem áudio porque os navegadores restringem a reprodução de vídeos com volume.
+* **Recorte inteligente:** use o componente de Imagem v3 para recorte inteligente a fim de aprimorar a apresentação do ativo de imagem.
+* **Inclusão de arquivo do JavaScript:** inclua somente o arquivo JavaScript do visualizador primário na sua página. Evite fazer referência a arquivos JavaScript adicionais que a lógica de tempo de execução do visualizador pode baixar. Especificamente, não vincule diretamente à biblioteca `Utils.js` do SDK do HTML5 do caminho de contexto `/s7viewers` (conhecido como inclusão de SDK consolidada). A lógica do visualizador gerencia o local de `Utils.js` ou bibliotecas de visualizadores de tempo de execução semelhantes, que podem mudar entre versões. O Adobe não retém versões anteriores do visualizador secundário do no servidor, portanto, referenciá-las diretamente pode quebrar a funcionalidade do visualizador em atualizações futuras.
+* **Diretrizes de Incorporação:** Use a documentação para incorporar diretrizes específicas a cada visualizador.
+Quer saber mais? Ir para [Visualizadores do AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
+* **Tutorial e Exemplos de SDK:** Revise o [Tutorial do Visualizador de SDK](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) e os [exemplos de aplicativos do SDK do HTML](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obter um entendimento completo das APIs de componentes do SDK.
 
 
 ## Preparar ativos para entrega
@@ -156,7 +173,6 @@ Lembre-se de que essas práticas recomendadas se alinham bem com as práticas re
 
 Quer saber mais? Ir para [Práticas recomendadas da estrutura de URL do Google](https://developers.google.com/search/docs/crawling-indexing/url-structure) e [Práticas recomendadas do Google image SEO](https://developers.google.com/search/docs/appearance/google-images)
 
-
 ### Aprimorar dinamicamente imagens e criar efeitos visuais usando comandos
 
 **Caso de negócios:** *Aplicar efeitos visuais avançados a imagens.*
@@ -191,7 +207,7 @@ Se você quiser sobrepor um logotipo ou ícone em uma imagem existente, o Dynami
 | --- | --- |
 | **Carregar e publicar a imagem base** | Primeiro, carregue e publique a imagem base na qual você deseja sobrepor o logotipo ou ícone. Você pode usar qualquer imagem como base.<br>Por exemplo, aqui está uma imagem base:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa). |
 | **Carregar e publicar o logotipo ou a imagem de ícone** | Em seguida, faça upload e publique a imagem que deseja sobrepor sobre a imagem base. Esta imagem deve ser um PNG transparente com o logotipo ou ícone que você deseja sobrepor.<br>Esta é a imagem PNG transparente de um objeto estrela com efeitos de transparência que será sobreposta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorate-star](https://s7g2.scene7.com/is/image/genaibeta/decorate-star) |
-| **Aplicar a URL do Dynamic Media** | Agora, crie um URL do Dynamic Media que combine a imagem base e o logotipo ou a imagem do ícone. Você pode usar comandos de URL para obter esse efeito.<br>A estrutura da URL é semelhante a esta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>onde<br>· `hotspotRetailBaseImage` é a imagem base.<br>· `starxp` é a imagem de logotipo/ícone.<br>· `layer=1` especifica que o logotipo ou ícone deve ser colocado sobre a imagem base.<br>· `scale=1.25` ajusta o tamanho do logotipo/ícone.<br>· `posN=0.33,-.25` determina a posição do logotipo/ícone em relação à imagem base.<br>· `fmt=png` garante que a saída esteja no formato PNG. |
+| **Aplicar a URL do Dynamic Media** | Agora, crie um URL do Dynamic Media que combine a imagem base e o logotipo ou a imagem do ícone. Você pode usar comandos de URL para obter esse efeito.<br>A estrutura da URL é semelhante a esta:<br>[https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png](https://s7g2.scene7.com/is/image/genaibeta/decorative-room-sofa?layer=1&amp;src=decorate-star&amp;scale=1.25&amp;posN=0.33,-.25&amp;fmt=png)<br>onde o ativo<br>· `hotspotRetailBaseImage` é a imagem base.<br>· `starxp` é a imagem de logotipo/ícone.<br>· `layer=1` especifica que o logotipo ou ícone deve ser colocado sobre a imagem base.<br>· `scale=1.25` ajusta o tamanho do logotipo/ícone.<br>· `posN=0.33,-.25` determina a posição do logotipo/ícone em relação à imagem base.<br>· `fmt=png` garante que a saída esteja no formato PNG. |
 
 O que aprender mais? Vá para [src](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-src) para obter mais detalhes sobre o comando `src` e outros comandos de URL do Dynamic Media.
 
@@ -246,6 +262,28 @@ Derivado da imagem original, enfatizando a sala.
 
 Fique à vontade para explorar essas variações de acordo com suas necessidades específicas.
 Deseja saber mais sobre os comandos disponíveis em um URL? Vá para [Referência de comando](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference).
+
+### Entregar imagens GIF
+
+**Caso de negócios:** *Transmitir GIF usando o Dynamic Media*
+
+Você pode fazer upload e entregar GIF por meio do Dynamic Media. Para renderizar um GIF animado, substitua `is/image` por `is/content` na URL. Por exemplo, se você carregou `abc.gif`, use o seguinte:
+
+* Esse caminho de URL renderiza uma exibição estática do GIF:
+
+  ```
+  https://your.domain.com/is/image/yourfolder/abc
+  ```
+
+* Esse caminho de URL renderiza a visualização de animação do GIF:
+
+  ```
+  https://your.domain.com/is/content/yourfolder/abc
+  ```
+
+>[!NOTE]
+>
+>Ao usar `is/content` no caminho da URL, os comandos de transformação de imagem não são aplicados ao ativo.
 
 ### Publish um vídeo para meu site
 
@@ -349,3 +387,11 @@ Para garantir o melhor formato otimizado para a Web, você pode confiar no Smart
 Com a Smart Imaging, você pode garantir que suas imagens sejam entregues da maneira mais eficiente possível, sob medida para o ambiente de navegação de cada usuário. Essa abordagem simplifica o processo e pode resultar em melhor desempenho em termos de tempo de carregamento de imagem e experiência geral do usuário.
 
 Quer saber mais? Vá para [Smart Imaging](/help/assets/dynamic-media/imaging-faq.md).
+
+### Pós-entrega de ativos aos clientes
+
+**Business case:** *Depois de publicar novo conteúdo ou substituir conteúdo existente, como é possível garantir que as alterações apareçam imediatamente na CDN?*
+
+A CDN (Content Delivery Network) armazena em cache os ativos do Dynamic Media para entrega rápida aos clientes. Quando são feitas atualizações nesses ativos, é importante que as alterações entrem em vigor imediatamente no site. Ao limpar ou invalidar o cache da CDN, os ativos entregues pelo Dynamic Media podem ser atualizados rapidamente. Essa abordagem elimina a necessidade de aguardar a expiração do cache com base no valor TTL (Time To Live), que normalmente é definido como dez horas. Em vez disso, uma solicitação pode ser enviada de dentro da interface do usuário do Dynamic Media para expirar o cache em minutos.
+
+Quer saber mais? Ir para [Invalidar o cache CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
