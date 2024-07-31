@@ -4,7 +4,7 @@ description: Use o Seletor de ativos para pesquisar, localizar e recuperar metad
 contentOwner: KK
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: cdb35a56c1337012fa099135470b91e162e8e902
+source-git-commit: c9cdbf85b5ebdda0ccd1a7858943f65f9175bde9
 workflow-type: tm+mt
 source-wordcount: '5339'
 ht-degree: 30%
@@ -590,6 +590,7 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *filterRepoList* | Função | Não |  | Você pode usar a função de retorno de chamada `filterRepoList` que chama o repositório de Experience Manager e retorna uma lista filtrada de repositórios. |
 | *OpçõesDeExpiração* | Função | | | Você pode usar entre as duas propriedades a seguir: **getExpiryStatus** que fornece o status de um ativo expirado. A função retorna `EXPIRED`, `EXPIRING_SOON` ou `NOT_EXPIRED` com base na data de expiração de um ativo fornecido. Consulte [personalizar ativos expirados](#customize-expired-assets). Além disso, você pode usar **allowSelectionAndDrag**, no qual o valor da função pode ser `true` ou `false`. Quando o valor é definido como `false`, o ativo expirado não pode ser selecionado ou arrastado na tela. |
 | *mostrarNotificação* | | Não | | Ele permite que o Seletor de ativos mostre uma mensagem em caixa de informações personalizada para o ativo expirado. |
+
 <!--
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
