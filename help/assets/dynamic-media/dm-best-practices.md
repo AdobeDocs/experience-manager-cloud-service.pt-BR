@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: fca8b4b34718bd7d22186740fac383b87e968cdb
+source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 0%
@@ -76,15 +76,23 @@ As práticas recomendadas do visualizador do Dynamic Media são diretrizes essen
 
 Seguindo essas práticas recomendadas, você pode obter integração perfeita, gerenciamento eficiente de ativos e interações aprimoradas do visualizador. Sincronizar ativos, usar o recorte inteligente e seguir as diretrizes de inclusão de arquivos do JavaScript são práticas importantes. Essas recomendações ajudam a manter a integridade e a confiabilidade da entrega de mídia em várias plataformas e dispositivos.
 
-* **Sincronizar Assets do Visualizador:** verifique se todos os ativos do visualizador estão sincronizados com o Dynamic Media antes de usar o reprodutor. Para obter o visualizador de solução de problemas, vá para o artigo [Solução de problemas do Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
-* **Página do Gerenciador de Exemplo:** Acesse a página do gerenciador de exemplo em `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
-* **Publish Assets:** verifique se os ativos foram publicados antes de visualizá-los nos visualizadores de entrega.
-* **Vídeos de reprodução automática sem áudio:** Para a funcionalidade de reprodução automática em vídeos, use as configurações de vídeo sem áudio porque os navegadores restringem a reprodução de vídeos com volume.
-* **Recorte inteligente:** use o componente de Imagem v3 para recorte inteligente a fim de aprimorar a apresentação do ativo de imagem.
-* **Inclusão de arquivo do JavaScript:** inclua somente o arquivo JavaScript do visualizador primário na sua página. Evite fazer referência a arquivos JavaScript adicionais que a lógica de tempo de execução do visualizador pode baixar. Especificamente, não vincule diretamente à biblioteca `Utils.js` do SDK do HTML5 do caminho de contexto `/s7viewers` (conhecido como inclusão de SDK consolidada). A lógica do visualizador gerencia o local de `Utils.js` ou bibliotecas de visualizadores de tempo de execução semelhantes, que podem mudar entre versões. O Adobe não retém versões anteriores do visualizador secundário do no servidor, portanto, referenciá-las diretamente pode quebrar a funcionalidade do visualizador em atualizações futuras.
-* **Diretrizes de Incorporação:** Use a documentação para incorporar diretrizes específicas a cada visualizador.
+* **Sincronizar Assets do Visualizador:**
+Verifique se todos os ativos do visualizador estão sincronizados com o Dynamic Media antes de usar o reprodutor. Para obter o visualizador de solução de problemas, vá para o artigo [Solução de problemas do Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
+* **Página do Gerenciador de Exemplo:**
+Acesse a página do gerenciador de exemplo em `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+* **Publish Assets:**
+Verifique se os ativos foram publicados antes de visualizá-los nos visualizadores de entrega.
+* **Vídeos de Reprodução Automática sem áudio:**
+Para a funcionalidade de reprodução automática em vídeos, use configurações de vídeo sem áudio porque os navegadores restringem a reprodução de vídeos com volume.
+* **Corte inteligente:**
+Use o componente de Imagem v3 para recorte inteligente para aprimorar a apresentação do ativo de imagem.
+* **Inclusão de arquivo do JavaScript:**
+Inclua somente o arquivo JavaScript do visualizador primário na página. Evite fazer referência a arquivos JavaScript adicionais que a lógica de tempo de execução do visualizador pode baixar. Especificamente, não vincule diretamente à biblioteca `Utils.js` do SDK do HTML5 do caminho de contexto `/s7viewers` (conhecido como inclusão de SDK consolidada). A lógica do visualizador gerencia o local de `Utils.js` ou bibliotecas de visualizadores de tempo de execução semelhantes, que podem mudar entre versões. O Adobe não retém versões anteriores do visualizador secundário do no servidor, portanto, referenciá-las diretamente pode quebrar a funcionalidade do visualizador em atualizações futuras.
+* **Diretrizes de Inserção:**
+Use a documentação para incorporar diretrizes específicas a cada visualizador.
 Quer saber mais? Ir para [Visualizadores do AEM Assets](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers).
-* **Tutorial e Exemplos de SDK:** Revise o [Tutorial do Visualizador de SDK](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) e os [exemplos de aplicativos do SDK do HTML](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obter um entendimento completo das APIs de componentes do SDK.
+* **Tutorial e exemplos do SDK:**
+Revise o [Tutorial do visualizador do SDK](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/c-tutorial) e os [exemplos de aplicativos do SDK do HTML](https://s7d9.scene7.com/s7sdk/2024.5/docs/jsdoc/index.html) para obter um entendimento completo das APIs de componentes do SDK.
 
 
 ## Preparar ativos para entrega
