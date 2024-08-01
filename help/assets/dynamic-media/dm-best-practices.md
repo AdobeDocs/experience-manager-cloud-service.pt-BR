@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 57c5b886b5964e13219b2525c7ed0073292277a0
+source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
 workflow-type: tm+mt
-source-wordcount: '4105'
+source-wordcount: '4118'
 ht-degree: 0%
 
 ---
@@ -77,9 +77,11 @@ As práticas recomendadas do visualizador do Dynamic Media são diretrizes essen
 Seguindo essas práticas recomendadas, você pode obter integração perfeita, gerenciamento eficiente de ativos e interações aprimoradas do visualizador. Sincronizar ativos, usar o recorte inteligente e seguir as diretrizes de inclusão de arquivos do JavaScript são práticas importantes. Essas recomendações ajudam a manter a integridade e a confiabilidade da entrega de mídia em várias plataformas e dispositivos.
 
 * **Sincronizar Assets do Visualizador:**
-Verifique se todos os ativos do visualizador estão sincronizados com o Dynamic Media antes de usar o reprodutor. Para obter o visualizador de solução de problemas, vá para o artigo [Solução de problemas do Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
-* **Página do Gerenciador de Exemplo:**
-Acesse a página do gerenciador de exemplo em `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`.
+Verifique se todos os ativos do visualizador estão sincronizados com o Dynamic Media antes de usar o reprodutor.
+
+   * Acesse a página do gerenciador de exemplo em `/libs/dam/gui/content/s7dam/samplemanager/samplemanager`. Essa página permite ressincronizar os ativos de um visualizador, incluindo ícones prontos para uso, arquivos CSS e predefinições.
+   * Se você encontrar problemas com o visualizador, vá para o artigo [Solução de problemas do Dynamic Media Viewers](/help/assets/dynamic-media/troubleshoot-dm.md#viewers).
+
 * **Publish Assets:**
 Verifique se os ativos foram publicados antes de visualizá-los nos visualizadores de entrega.
 * **Vídeos de Reprodução Automática sem áudio:**
@@ -400,6 +402,7 @@ Quer saber mais? Vá para [Smart Imaging](/help/assets/dynamic-media/imaging-faq
 
 **Business case:** *Depois de publicar novo conteúdo ou substituir conteúdo existente, como é possível garantir que as alterações apareçam imediatamente na CDN?*
 
-A CDN (Content Delivery Network) armazena em cache os ativos do Dynamic Media para entrega rápida aos clientes. Quando são feitas atualizações nesses ativos, é importante que as alterações entrem em vigor imediatamente no site. Ao limpar ou invalidar o cache da CDN, os ativos entregues pelo Dynamic Media podem ser atualizados rapidamente. Essa abordagem elimina a necessidade de aguardar a expiração do cache com base no valor TTL (Time To Live), que normalmente é definido como dez horas. Em vez disso, uma solicitação pode ser enviada de dentro da interface do usuário do Dynamic Media para expirar o cache em minutos.
+A CDN (Content Delivery Network) armazena em cache os ativos do Dynamic Media para entrega rápida aos clientes. Quando são feitas atualizações nesses ativos, é importante que as alterações entrem em vigor imediatamente no site. Ao limpar ou invalidar o cache da CDN, os ativos entregues pelo Dynamic Media podem ser atualizados rapidamente. Essa abordagem elimina a necessidade de aguardar a expiração do cache com base no valor TTL (Time To Live), que normalmente é definido como dez horas.
+Dependendo do caso de uso específico, é possível atualizar as configurações de CDN TTL (Time to Live) de acordo.
 
 Quer saber mais? Ir para [Invalidar o cache CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
