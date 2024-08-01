@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
 workflow-type: tm+mt
-source-wordcount: '10491'
+source-wordcount: '9406'
 ht-degree: 1%
 
 ---
@@ -524,7 +524,7 @@ Você pode ativar o suporte no Dynamic Media para:
 
 * TRAÇO
 * Legendas múltiplas e faixas de áudio
-* Legendas geradas por IA
+* Legendas geradas por IA (Acesso antecipado)
 
 Por meio de um caso de Suporte ao cliente do Adobe que você cria e envia.
 
@@ -534,7 +534,7 @@ Ativar qualquer um dos três recursos acima ativa todos eles. Portanto, se você
 | --- | --- |
 | TRAÇO | DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre DASH ou HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com a alternância automática entre players quando **[!UICONTROL auto]** estiver selecionado como o tipo de reprodução na predefinição do Visualizador.<br>Alguns dos principais benefícios da habilitação de DASH em sua conta são:<br>·Vídeo de fluxo de pacote DASH para transmissão adaptável da taxa de bits. Esse método leva a uma maior eficiência do delivery. A transmissão adaptável garante a melhor experiência de visualização para seus clientes.<br>·A transmissão otimizada do navegador com Dynamic Media players alterna entre a transmissão HLS e DASH para garantir a melhor qualidade do serviço. O reprodutor de vídeo alterna automaticamente para HLS quando um navegador Safari é usado.<br>·Você pode configurar seu método de streaming preferido (HLS ou DASH) editando a predefinição do visualizador de vídeo.<br>·A codificação de vídeo otimizada garante que nenhum armazenamento adicional seja usado ao habilitar o recurso DASH. Um único conjunto de codificações de vídeo é criado para HLS e DASH para otimizar os custos de armazenamento de vídeo.<br>·Ajuda a tornar a entrega de vídeo mais acessível para seus clientes.<br>·Obter o URL de transmissão por meio de APIs também. |
 | Legendas múltiplas e faixas de áudio | Você pode se beneficiar com o suporte a múltiplas legendas e faixas de áudio ativadas automaticamente. Após a ativação, todos os vídeos subsequentes carregados serão processados com uma nova arquitetura de back-end que inclui suporte para adicionar várias legendas e faixas de áudio aos vídeos. |
-| Legendas geradas por IA | Crie legendas para seus vídeos viabilizados pela IA. Com a IA, ele cria a transcrição do vídeo e a converte em legendas. Até mesmo a linha do tempo está definida. |
+| Legendas geradas por IA (Acesso antecipado) | Crie legendas para seus vídeos viabilizados pela IA. Com a IA, ele cria a transcrição do vídeo e a converte em legendas. Até mesmo a linha do tempo está definida. |
 
 >[!IMPORTANT]
 >
@@ -549,7 +549,7 @@ Ativar qualquer um dos três recursos acima ativa todos eles. Portanto, se você
    * Seu ambiente do Cloud Service (ID do programa e ID do ambiente).
    * O nome da conta da sua empresa Dynamic Media.
    * Sua região do Dynamic Media: América do Norte (NA), Ásia-Pacífico (APAC) ou Europa-Oriente Médio-Ásia (EMEA).
-   * Especifique se deseja que o DASH, as legendas múltiplas e as faixas de áudio múltiplas, e o suporte às legendas geradas por IA, sejam ativados na sua conta do Dynamic Media, no AEM as a Cloud Service.
+   * Especifique se deseja que o suporte a DASH, legendas múltiplas e faixas de áudio múltiplas e legendas geradas por IA (acesso antecipado) esteja habilitado na sua conta do Dynamic Media, no AEM as a Cloud Service.
 
 1. O Suporte ao cliente do Adobe adiciona você à Lista de espera do cliente com base na ordem em que as solicitações são enviadas.
 1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte ao cliente entrará em contato com você para coordenar e definir uma data limite para ativação.
@@ -560,31 +560,23 @@ Ativar qualquer um dos três recursos acima ativa todos eles. Portanto, se você
    * Crie seu [perfil de vídeo](/help/assets/dynamic-media/video-profiles.md) como de costume.
    * [Adicione várias legendas e faixas de áudio](#add-msma) ao vídeo.
 
-
 ## Sobre o suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media{#about-msma}
 
-Com o recurso de várias legendas e faixas de áudio no Dynamic Media, você pode adicionar várias faixas de áudio com facilidade. Você também pode adicionar vários arquivos de legenda usando seus próprios arquivos `.vtt` (faixa de texto do vídeo) ou arquivos de legenda gerados por IA. As legendas geradas por IA no Dynamic Media foram projetadas para aprimorar a acessibilidade e o engajamento do vídeo, gerando automaticamente legendas precisas e sincronizadas. Essa tecnologia usa algoritmos avançados de IA para transcrever o conteúdo falado em texto, que é exibido como legendas no vídeo. Alguns recursos importantes dessa tecnologia incluem:
-
-* **Transcrição automática:** o sistema de IA transcreve palavras faladas em texto em tempo real, garantindo que as legendas sejam geradas de forma rápida e precisa.
-* **Suporte Multilíngue:** As legendas podem ser entregues automaticamente em mais de 60 idiomas, facilitando o acesso a um público global.
-* **Acessibilidade aprimorada:** ao fornecer legendas, os vídeos se tornam mais acessíveis para espectadores surdos ou com deficiência auditiva ou para pessoas que preferem assistir a vídeos com o som desativado.
-* **Envolvimento aprimorado**: as legendas podem ajudar a manter a atenção do visualizador e melhorar a compreensão, especialmente em ambientes ruidosos ou quando o idioma nativo do visualizador é diferente do idioma do vídeo.
-
-Esses recursos fazem das legendas alimentadas por IA uma ferramenta valiosa para criadores de conteúdo que buscam aprimorar a acessibilidade e o envolvimento do conteúdo de vídeo.
+Com o recurso de várias legendas e faixas de áudio no Dynamic Media, é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 
 ![Guia Legendas e faixas de áudio no Dynamic Media, juntamente com uma tabela que mostra arquivos de legenda .VTT carregados e arquivos de faixa de áudio .MP3 carregados para um vídeo.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
+
 Alguns dos casos de uso a serem considerados para adicionar várias legendas e faixas de áudio ao vídeo principal incluem:
 
-| Tipo | Caso de uso |
-|--- |--- |
-| **Legendas** | Suporte a vários idiomas |
-|  | Texto descritivo para acessibilidade |
-| **Faixas de áudio** | Suporte a vários idiomas |
-|  | Faixas de comentários |
-|  | Áudio descritivo |
 
-Todos os [formatos de vídeo com suporte no Dynamic Media](/help/assets/file-format-support.md) e todos os visualizadores de vídeo do Dynamic Media, exceto o visualizador do *Video_360* do Dynamic Media, têm suporte para uso com várias legendas e faixas de áudio.
+| Tipo | Caso de uso |
+| --- | --- |
+| Legendas | Suporte a vários idiomas<br>Texto descritivo para acessibilidade |
+| Faixas de áudio | Suporte a vários idiomas<br>Faixas de comentários<br>Áudio descritivo |
+
+
+Todos os [formatos de vídeo com suporte no Dynamic Media](/help/assets/file-format-support.md) e em todos os visualizadores de vídeo do Dynamic Media, exceto o visualizador do Dynamic Media Video_360, têm suporte para uso com várias legendas e faixas de áudio.
 
 A capacidade de rastreamento de várias legendas e áudio está disponível para sua conta Dynamic Media por meio de um botão de alternância de recurso que deve ser ativado pelo Suporte ao cliente Adobe.
 
@@ -594,161 +586,272 @@ Antes de adicionar várias legendas e faixas de áudio ao vídeo, verifique se v
 
 * O Dynamic Media é configurado em um ambiente AEM.
 * Um [perfil de Vídeo do Dynamic Media é aplicado à pasta em que seus vídeos são assimilados](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
-* [As faixas de áudio/múltiplas legendas e as legendas geradas por IA estão habilitadas em sua conta da Dynamic Media](#enable-dash).
+* [A multilegenda e a faixa de áudio estão habilitadas em sua conta da Dynamic Media](/help/assets/dynamic-media/video.md#enable-dash).
 
-As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E os arquivos de trilha de áudio adicionados são suportados com o formato MP3.
+Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E os arquivos de trilha de áudio adicionados são suportados com o formato MP3.
 
 >[!IMPORTANT]
 >
->Para vídeos carregados *antes*, habilite o suporte a várias legendas/faixas de áudio ou legendas geradas por IA na sua conta da Dynamic Media, [é necessário reprocessá-las](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Essa etapa de reprocessamento garante que esses vídeos possam usar os recursos de várias legendas/faixas de áudio e legendas geradas por IA. Após o reprocessamento, os URLs do vídeo continuam a funcionar e são reproduzidos como de costume.
+>Qualquer vídeo carregado antes da habilitação do suporte a várias legendas e faixas de áudio na sua conta da Dynamic Media, [deve ser reprocessado](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Essa etapa de reprocessamento de vídeo é necessária para que o recurso de várias legendas e faixas de áudio esteja disponível para eles. Os URLs do vídeo continuam funcionando e sendo reproduzidos como de costume, após o reprocessamento.
 
 **Para adicionar várias legendas e faixas de áudio ao seu vídeo:**
 
 1. [Carregue seu vídeo principal em uma pasta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) que já tenha um perfil de vídeo atribuído a ela.
 1. Navegue até o ativo de vídeo carregado que você deseja adicionar várias legendas e faixas de áudio.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
-1. Na barra de ferramentas, clique no ícone Propriedades (um círculo com um &quot;i&quot;).
-   ![Ativo de vídeo selecionado com marca de seleção sobre a imagem em miniatura do vídeo e as Propriedades de exibição realçadas na barra de ferramentas.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ativo de vídeo selecionado no Modo de Exibição de Cartão.*
+1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
+
+   ![Botão de propriedades do ativo.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ativo de vídeo selecionado no modo de exibição Cartão.*
+
 1. Na página Propriedades do vídeo, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
 
+
    >[!TIP]
-   >Se você não vir a guia **[!UICONTROL Legendas e faixas de áudio]**, isso significa uma destas duas coisas:
-   >
+   >Se você não vir a guia [!UICONTROL Legendas e faixas de áudio], isso significa uma destas duas coisas:
    >* A pasta em que o vídeo selecionado reside não tem um perfil de vídeo atribuído a ele. Nesse caso, consulte [Aplicar um perfil de vídeo à pasta](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* Ou o Dynamic Media deve reprocessar o vídeo. Nesse caso, consulte [Reprocessar ativos do Dynamic Media em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >* Ou o vídeo deve ser reprocessado pelo Dynamic Media. Nesse caso, consulte [Reprocessar ativos do Dynamic Media em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+
+   Quando tiver concluído uma das tarefas acima, retorne a essas etapas.
+
+   ![Propriedades do ativo ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Guia Legendas e Faixas de Áudio na página Propriedades do vídeo.*
+
+1. (Opcional) Para adicionar um ou mais arquivos de legenda a um vídeo, faça o seguinte:
+
+   * Selecione **[!UICONTROL Carregar Legendas]**.
+   * Navegue até um ou mais arquivos .vtt (Video Text Tracks) e selecione-os.
+   * Para que as legendas fiquem visíveis no reprodutor de mídia, você deve adicionar os detalhes necessários (metadados) sobre cada arquivo de legenda carregado. Selecione o ícone de lápis à direita de um nome de arquivo de legenda. Na caixa de diálogo Editar Legenda, insira os seguintes detalhes necessários sobre o arquivo e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de legenda que você carregou:
+
+
+   | Metadados da legenda | Descrição |
+   | --- | --- | 
+   | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos de legenda e de faixa de áudio adicionais. |
+   | Idioma | Selecione o idioma da legenda. |
+   | Tipo | Selecione o tipo de legenda que você está usando.<br>**Subtítulo** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda também inclui ruídos de fundo, diferenciação do alto-falante e outras informações relevantes, juntamente com a tradução ou transcrição da caixa de diálogo, tornando o conteúdo mais acessível para indivíduos surdos ou com deficiência auditiva. |
+   | Rótulo | O texto exibido para o nome da legenda na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou subtítulo. Por exemplo, inglês (CC). |
+
+   É possível alterar ou editar os metadados da legenda posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
+
+1. (Opcional) Para adicionar uma ou mais faixas de áudio a um vídeo, faça o seguinte:
+
+   * Selecione **[!UICONTROL Carregar Faixas De Áudio]**.
+   * Navegue até um ou mais arquivos .mp3, selecione-os e abra-os.
+   * Para que as faixas de áudio fiquem visíveis na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia, você deve adicionar os detalhes necessários sobre cada faixa de áudio adicionada. Selecione o ícone de lápis à direita de um nome de arquivo de faixa de áudio. Na caixa de diálogo Editar faixa de áudio, digite os seguintes detalhes necessários e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de trilha de áudio que você carregou.
+
+   | Metadados da faixa de áudio | Descrição |
+   | --- | --- |
+   | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos adicionais de faixa de áudio ou de legenda. |
+   | Idioma | Selecione o idioma da faixa de áudio. |
+   | Tipo | Selecione o tipo de faixa de áudio que você está usando.<br>**Original** - A faixa de áudio originalmente anexada ao vídeo e representada como `[Original]` no rótulo com o idioma inglês selecionado por padrão. Embora seja possível alterar o **[!UICONTROL Rótulo]** e o **[!UICONTROL Idioma]** na caixa de diálogo **[!UICONTROL Editar Faixa de Áudio]**, o padrão serão os valores originais se o vídeo principal for reprocessado.<br>**Padrão** - Uma faixa de áudio complementar para um idioma diferente do original.<br>**Descrição de áudio** - Uma faixa de áudio que também inclui uma narração descritiva de ações e gestos não verbais no vídeo, tornando o conteúdo mais acessível para indivíduos com deficiências visuais. |
+   | Rótulo | O texto que é exibido como o nome da faixa de áudio na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de áudio. Por exemplo, `English [Original]`. O rótulo do áudio anexado a um vídeo é definido como `[Original]` por padrão. |
+
+   Você pode alterar ou editar esses metadados de trilha de áudio posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
+
+1. No canto superior direito da página, na lista suspensa **[!UICONTROL Salvar e fechar]**, selecione **[!UICONTROL Salvar]**. Os arquivos são carregados e o processamento de metadados é iniciado, como visto na coluna Status da interface.
+
+   >[!NOTE]
    >
-   >Quando tiver concluído uma das tarefas acima, retorne a essas etapas.
+   >Com base nas configurações de cache da sua instância, o processamento de metadados pode levar vários minutos antes de ser refletido na pré-visualização e nos URLs publicados.
 
-   ![Guia Legendas e Faixas de Áudio na página Propriedades.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
-   *Guia Legendas e faixas de áudio na página Propriedades do vídeo.*
+1. (Opcional) Se você selecionou **[!UICONTROL Salvar e fechar]** na etapa anterior, em vez de selecionar **[!UICONTROL Salvar]**, ainda poderá ver o status de processamento dos arquivos carregados. Consulte [Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados](/help/assets/dynamic-media/video.md#lifecycle-status-video).
 
-1. Para adicionar uma ou mais faixas de áudio a um vídeo, faça o seguinte:
-   1. Selecione **[!UICONTROL Carregar Faixas De Áudio]**.
-   1. Navegue até um ou mais arquivos .mp3, selecione-os e abra-os.
-   1. Para que as faixas de áudio fiquem visíveis na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia, você deve adicionar os detalhes necessários sobre cada arquivo de faixa de áudio. Isso garante que todas as faixas de áudio sejam listadas e acessíveis corretamente. Selecione o ícone de lápis à direita de um nome de arquivo de faixa de áudio. Na caixa de diálogo **Editar faixa de áudio**, insira os seguintes detalhes necessários:
+1. (Opcional) Visualize o vídeo antes da publicação para garantir que as legendas e o áudio funcionem conforme esperado. Consulte [Visualizar um vídeo com várias legendas e faixas de áudio](/help/assets/dynamic-media/video.md#preview-video-audio-subtitle).
 
-      | Metadados da faixa de áudio | Descrição |
+1. Publish o vídeo. Consulte [ativos do Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+
+
+
+<!--
+
+## About multiple caption and audio track support for videos in Dynamic Media{#about-msma}
+
+With multiple caption and audio track capability in Dynamic Media, you can easily add multiple audio tracks. You can also add multiple caption files using either your own `.vtt` (Video Text Track) files or AI-generated caption files. AI-generated captions in Dynamic Media are designed to enhance video accessibility and engagement by automatically generating accurate and synchronized subtitles. This technology uses advanced AI algorithms to transcribe spoken content into text, which is then displayed as captions on the video. Some key features of this technology include the following:
+
+* **Automatic Transcription:** The AI system transcribes spoken words into text in real-time, ensuring that captions are generated quickly and accurately.
+* **Multilingual Support:** Captions can be automatically delivered in more than 60 languages, making it easier to reach a global audience.
+* **Enhanced Accessibility:** By providing captions, videos become more accessible to viewers who are deaf or hard of hearing, or people who prefer to watch videos with the sound off.
+* **Improved Engagement:** Captions can help retain viewer attention and improve comprehension, especially in noisy environments or when the viewer's native language is different from the video's language.
+
+These features make AI-powered captions a valuable tool for content creators looking to enhance their video content's accessibility and engagement. 
+
+![Captions and audio tracks tab in Dynamic Media along with a table showing uploaded .VTT caption files and uploaded .MP3 audio track files for a video.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
+
+Some of the use cases to consider for adding multiple captions and audio tracks to your primary video include the following:
+
+| Type | Use case |
+|--- |--- |
+| **Captions** | Multiple language support |
+|  | Descriptive text for accessibility |
+| **Audio tracks** | Multiple language support  |
+|  | Commentary tracks |
+|  | Descriptive audio |
+
+All [video formats supported in Dynamic Media](/help/assets/file-format-support.md) and all Dynamic Media video viewers - except the Dynamic Media *Video_360* viewer - are supported for use with multiple captions and audio tracks.
+
+Multi-caption and multi-audio track capability is available for your Dynamic Media account by way of a feature toggle that must be enabled (turned on) by Adobe Customer Support.
+
+### Add multiple captions and audio tracks to your video {#add-msma}
+
+Before you add multiple caption and audio tracks to your video, be sure you already have the following in-place:
+
+* Dynamic Media is set up in an AEM environment.
+* A [Dynamic Media Video profile is applied to the folder where your videos are ingested](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
+* [Multi-caption/audio tracks and AI-generated captions are enabled on your Dynamic Media account](#enable-dash).
+
+Added captions are supported with WebVTT and Adobe VTT formats. And, added audio track files are supported with MP3 format.
+
+>[!IMPORTANT]
+>
+>For videos uploaded *before* enabling multiple caption/audio track support or AI-generated captions on your Dynamic Media account, [you need to reprocess them](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). This reprocessing step ensures that these videos can use the multiple caption/audio track and AI-generated caption features. After reprocessing, the video URLs continue to function and play as usual.
+
+**To add multiple captions and audio tracks to your video:**
+
+1. [Upload your primary video to a folder](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) that already has a video profile assigned to it.
+1. Navigate to the uploaded video asset that you want to add multiple caption and audio tracks.
+1. In asset selection mode, either from the List View or the Card View, select the video asset.
+1. On the toolbar, click the Properties icon (a circle with an "i" in it).
+![Selected video asset with checkmark over video thumbnail image and View Properties highlighted on the toolbar.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Selected video asset in Card View.*
+1. On the video's Properties page, select the **[!UICONTROL Captions & Audio Tracks]** tab.
+
+   >[!TIP]
+   >If you do not see the **[!UICONTROL Captions & Audio Tracks]** tab, it means either one of two things:
+   >
+   >* The folder in which the selected video resides does not have a video profile assigned to it. In which case, see [Apply a video profile to the folder](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
+   >* Or, Dynamic Media must reprocess the video. In which case, see [Reprocess Dynamic Media assets in a folder](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >
+   >When you have completed either one of the above tasks, return to these steps.
+  
+   ![Captions and Audio Tracks tab on the Properties page.](/help/assets/dynamic-media/assets/msma-audiotracks.png)
+   *Captions and audio tracks tab on the video's Properties page.*
+
+1. To add one or more audio tracks to a video, do the following:
+   1. Select **[!UICONTROL Upload Audio Tracks]**.
+   1. Navigate to, and select, one or more .mp3 files and open them.
+   1. For audio tracks to be visible in the **[!UICONTROL Select audio or caption]** pop-up list on the media player, you must add required details about each audio track file. Doing so ensures that all audio tracks are properly listed and accessible. Select the pencil icon to the right of an audio track file name. In the **Edit Audio Track** dialog box, enter the following required details:
+    
+      | Audio Track metadata | Description |
       |--- |--- |
-      | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos adicionais de faixa de áudio ou de legenda. |
-      | Idioma | Selecione o idioma correto da faixa de áudio. |
-      | Tipo | Selecione o tipo de faixa de áudio que você está usando.<br>**Original** - A faixa de áudio originalmente anexada ao vídeo e representada como `[Original]` no rótulo com o idioma `English` selecionado por padrão. Embora seja possível alterar o **[!UICONTROL Rótulo]** e o **[!UICONTROL Idioma]** na caixa de diálogo **[!UICONTROL Editar Faixa de Áudio]**, o padrão serão os valores originais se o vídeo principal for reprocessado.<br>**Padrão** - Uma faixa de áudio complementar para um idioma diferente do original.<br>**Descrição de áudio** - Uma faixa de áudio que também inclui uma narração descritiva de ações e gestos não verbais no vídeo, tornando o conteúdo mais acessível para indivíduos com deficiências visuais. |
-      | Rótulo | O texto que é exibido como o nome da faixa de áudio na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de áudio. Por exemplo, `English [Original]`. O rótulo do áudio anexado a um vídeo é definido como `[Original]` por padrão. |
+      | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional audio track files or caption files. |
+      | Language | Select the correct language of the audio track. |
+      | Type | Select the type of audio track that you are using.<br>**Original** - The audio track originally attached to the video and represented as `[Original]` in the label with `English` language selected by default. While **[!UICONTROL Label]** and **[!UICONTROL Language]** can be changed in the **[!UICONTROL Edit Audio Track]** dialog box, it defaults to the original values if the primary video is reprocessed.<br>**Standard** - An add-on audio track for a language other than the original.<br>**Audio description** - An audio track that also includes a descriptive narration of non-verbal actions and gestures in the video, making content more accessible for individuals who are visually impaired. |
+      | Label | The text that is displayed as the audio track's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to an audio track. For example, `English [Original]`. The label of audio attached to a video is set to `[Original]` by default. |
 
-      Você pode alterar ou editar esses metadados de trilha de áudio posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
+      You can change or edit this audio track metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
-   1. Próximo ao canto superior direito da página, no menu suspenso **[!UICONTROL Salvar e fechar]**, clique em **[!UICONTROL Salvar]**.
-   1. Siga uma das seguintes opções:
-      * Repita esse processo para cada arquivo de trilha de áudio que você carrega.
-      * Continue com a próxima etapa para adicionar legendas a um vídeo.
+   1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**.
+   1. Do one of the following:
+        * Repeat this process for each audio track file that you upload.
+        * Continue to the next step to add captions to a video.
 
-1. Para adicionar um ou mais arquivos de legenda a um vídeo, escolha um dos seguintes casos de uso que melhor se encaixam no seu cenário:
-
-   |  | Caso de uso | Opção Criar legenda para usar |
+1. To add one or more caption files to a video, choose which one of the following use cases best fits your scenario:
+   
+   |  | Use case | Create Caption option to use |
    | --- | --- | --- |
-   | **Opção 1** | Tenho meus próprios arquivos de legenda pré-existentes que estão nos idiomas que desejo usar.<br>Consulte a **Opção 1** abaixo. | **[!UICONTROL Carregar arquivos]** |
-   | **Opção 2** | Quero que a IA gere meus arquivos de legenda em vários idiomas.<br>Consulte a **Opção 2** abaixo. | **[!UICONTROL Converter faixas de áudio]** |
-   | **Opção 3** | O texto em um arquivo de legenda (`.vtt`) precisa ser corrigido, recarregado para substituir o arquivo `.vtt` antigo e depois fazer com que a IA traduza o arquivo corrigido.<br>Consulte a **Opção 3** abaixo. | **[!UICONTROL Traduzir legenda]** |
+   | **Option 1** | I have my own pre-existing caption files that are in the languages that I want to use.<br>See **Option 1** below. | **[!UICONTROL Upload Files]** |
+   | **Option 2** | I want AI to generate my caption files in multiple languages.<br>See **Option 2** below. | **[!UICONTROL Convert audio tracks]** |
+   | **Option 3** | Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file.<br>See **Option 3** below. | **[!UICONTROL Translate caption]** |
 
-   ![Criar opções de Legendas.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-   *O menu suspenso Criar Legendas oferece três opções: Carregar Arquivos, Converter faixas de áudio e Traduzir legenda.*
+    ![Create Captions options.](/help/assets/dynamic-media/assets/msma-createcaption.png)
+    *The Create Captions drop-down menu gives you three options: Upload Files, Convert audio tracks, and Translate caption.*
 
-+++**Opção 1:** *Tenho meus próprios arquivos de legenda pré-existentes que estão nos idiomas que desejo usar* (opção **[!UICONTROL Carregar Arquivos]**)
+    +++**Option 1:** *I have my own pre-existing caption files that are in the languages that I want to use* (**[!UICONTROL Upload Files]** option)
 
-   1. Próximo ao lado superior direito da página, clique em **[!UICONTROL Criar Legenda]** > **[!UICONTROL Carregar arquivos]**.
-   1. Navegue até um ou mais arquivos `.vtt` preexistentes e selecione-os.
-   1. Para que as legendas fiquem visíveis no reprodutor de mídia, você *deve* adicionar os detalhes necessários sobre *cada* arquivo de legenda que você carrega. Selecione o ícone de lápis à direita de um nome de arquivo de legenda. Na caixa de diálogo **Editar Legenda**, insira os seguintes detalhes necessários sobre o arquivo:
+    1. Near the upper-right side of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Upload files]**.
+    1. Navigate to, and select, one or more of your pre-existing `.vtt` files and open them.
+    1. For captions to be visible on the media player, you *must* add the required details about *each* caption file that you upload. Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, enter the following required details about the file:
+    
+        | Caption metadata | Description |
+        |--- |--- |
+        | Filename | The default filename is derived from the original filename. The filename can be changed only while uploading and cannot be changed later. Filename character requirements are the same as for AEM Assets.<br>The same filename cannot be used for additional caption files and audio track files. |
+        | Language | Select the language of the caption. After a caption file is processed, this language field becomes uneditable (dimmed) |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises, speaker differentiation, and other relevant details, along with dialogue translation or transcription, enhancing accessibility for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
-      | Metadados da legenda | Descrição |
-      |--- |--- |
-      | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos de legenda e de faixa de áudio adicionais. |
-      | Idioma | Selecione o idioma da legenda. Depois que um arquivo de legenda é processado, esse campo de idioma se torna não editável (esmaecido) |
-      | Tipo | Selecione o tipo de legenda que você está usando.<br>**Subtítulo** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda inclui ruídos de fundo, diferenciação de alto-falantes e outros detalhes relevantes, além de tradução ou transcrição do diálogo, melhorando a acessibilidade para indivíduos surdos ou com deficiência auditiva. |
-      | Rótulo | O texto exibido para o nome da legenda na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou subtítulo. Por exemplo, `English (CC)`. |
+        You can change or edit caption metadata later, if necessary. When the video is published, these details are reflected on public URLs in published videos.
 
-      É possível alterar ou editar os metadados da legenda posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. The files are uploaded and metadata processing begins, as seen in the **Status** column of the interface.
 
-   1. Próximo ao canto superior direito da página, no menu suspenso **[!UICONTROL Salvar e fechar]**, clique em **[!UICONTROL Salvar]**. Os arquivos são carregados e o processamento de metadados é iniciado, como visto na coluna **Status** da interface.
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-      >[!NOTE]
-      >
-      >Com base nas configurações de cache da sua instância, o processamento de metadados pode levar vários minutos antes de ser refletido na pré-visualização e nos URLs publicados.
+    1. If you selected **[!UICONTROL Save & Close]** in the previous step, instead of selecting **[!UICONTROL Save]**, you can still view the processing status of the uploaded files. See [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
+    1. Continue to step 8.
 
-   1. Se você selecionou **[!UICONTROL Salvar e fechar]** na etapa anterior, em vez de selecionar **[!UICONTROL Salvar]**, ainda poderá ver o status de processamento dos arquivos carregados. Consulte [Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados](#lifecycle-status-video).
-   1. Continue com a etapa 8.
+    +++
 
-+++
+    +++**Option 2:** *I want AI to generate my caption files in multiple languages* (**[!UICONTROL Convert audio tracks]** option)
 
-+++**Opção 2:** *Desejo que a IA gere meus arquivos de legenda em vários idiomas* (opção **[!UICONTROL Converter faixas de áudio]**)
+    1. Near the upper-right corner of the page, click **[!UICONTROL Create Caption]** > **[!UICONTROL Convert audio tracks]**.
 
-   1. Próximo ao canto superior direito da página, clique em **[!UICONTROL Criar legenda]** > **[!UICONTROL Converter faixas de áudio]**.
+        ![Convert audio tracks dialog box.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
+        *The Convert Audio Tracks dialog box uses AI to generate caption files in multiple languages.*
 
-      ![Caixa de diálogo Converter faixas de áudio.](/help/assets/dynamic-media/assets/msma-convertaudiotracks.png)
-      *A caixa de diálogo Converter Faixas de Áudio usa a IA para gerar arquivos de legenda em vários idiomas.*
+    1. In the **Convert Audio Tracks** dialog box, set the following options:
+    
+        | Option | Description |
+        |--- |--- |
+        | Audio track to convert | In the drop-down list, choose the uploaded audio track file from which you want captions generated using AI.  |
+        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
 
-   1. Na caixa de diálogo **Converter faixas de áudio**, defina as seguintes opções:
+    1. Click **[!UICONTROL Done]**.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
+    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
 
-      | Opção | Descrição |
-      |--- |--- |
-      | Faixa de áudio a ser convertida | Na lista suspensa, escolha o arquivo de faixa de áudio carregado a partir do qual deseja que as legendas sejam geradas usando IA. |
-      | Idiomas de saída | Na lista suspensa, selecione um ou mais idiomas nos quais deseja que o arquivo de legenda seja exibido.<br>Para remover um idioma selecionado, clique em **X**.<br>Durante a reprodução do vídeo, a lista de idiomas aparece no reprodutor de mídia na ordem em que você os seleciona aqui. |
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-   1. Clique em **[!UICONTROL Concluído]**.
-   1. Próximo ao canto superior direito da página, no menu suspenso **[!UICONTROL Salvar e fechar]**, clique em **[!UICONTROL Salvar]**.
-   1. Clique novamente na guia **[!UICONTROL Legendas e faixas de áudio]**. Um ou mais arquivos de legenda são criados e o processamento é iniciado, como visto na coluna **Status** da interface. Consulte também [Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados](#lifecycle-status-video).
+    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
 
-      >[!NOTE]
-      >
-      >Com base nas configurações de cache da sua instância, o processamento de metadados pode levar vários minutos antes de ser refletido na pré-visualização e nos URLs publicados.
+        | Caption metadata | Description |
+        | --- | --- |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text includes background noises and speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
-   1. (Opcional) Selecione o ícone de lápis à direita de um nome de arquivo de legenda. Na caixa de diálogo **Editar Legenda**, você pode editar os seguintes detalhes sobre o arquivo:
+        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
+    1. Continue to step 8.
 
-      | Metadados da legenda | Descrição |
-      | --- | --- |
-      | Tipo | Selecione o tipo de legenda que você está usando.<br>**Subtítulo** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda inclui ruídos de fundo e diferenciação do alto-falante. Inclui também outras informações relevantes, juntamente com a tradução ou transcrição do diálogo. Essa abordagem torna o conteúdo mais acessível para indivíduos surdos ou com deficiência auditiva. |
-      | Rótulo | O texto exibido para o nome da legenda na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou subtítulo. Por exemplo, `English (CC)`. |
+    +++
 
-      É possível alterar ou editar determinados metadados de legenda posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes de metadados são refletidos em URLs públicos em vídeos publicados.
-   1. Continue com a etapa 8.
+    +++**Option 3:** *Text in a caption file (`.vtt`) needs to be corrected, reuploaded to replace the old `.vtt` file, then have AI translate the corrected file* (**[!UICONTROL Translate captions]** option)
 
-+++
+    1. Click **[!UICONTROL Create Caption]** > **[!UICONTROL Translate captions]**. This option is available if one or more caption files were already added and processed.
 
-+++**Opção 3:** *O texto em um arquivo de legenda (`.vtt`) precisa ser corrigido, recarregado para substituir o arquivo `.vtt` antigo e, em seguida, fazer com que o AI traduza o arquivo corrigido* (opção **[!UICONTROL Traduzir legendas]**)
+        ![Translate Captions dialog box.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
+        *The Translate Captions dialog box lets you use an existing caption file to have AI generate new caption files in multiple languages.*
 
-   1. Clique em **[!UICONTROL Criar legenda]** > **[!UICONTROL Traduzir legendas]**. Essa opção estará disponível se um ou mais arquivos de legenda já tiverem sido adicionados e processados.
+    1. In the **Translate caption** dialog box, set the following options:
 
-      ![Caixa de diálogo Traduzir Legendas.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
-      *A caixa de diálogo Traduzir Legendas permite usar um arquivo de legenda existente para que a IA gere novos arquivos de legenda em vários idiomas.*
+        | Option | Description |
+        |--- |--- |
+        | Caption to translate | In the drop-down list, choose a caption file from which you want the captions generated using AI. |
+        | Output languages | In the drop-down list, select one or more languages in which you want the caption file to appear.<br>To remove a selected language, click **X**.<br>During video playback, the list of languages appears in the media player in the order that you select them here. |
 
-   1. Na caixa de diálogo **Traduzir legenda**, defina as seguintes opções:
+    1. Click **[!UICONTROL Done]**.
+    1. Near the upper-right corner of the page, in the **[!UICONTROL Save & Close]** drop-down, click **[!UICONTROL Save]**. 
+    1. Click the **[!UICONTROL Captions & Audio tracks]** tab again. One or more caption files are created and processing begins, as seen in the **Status** column of the interface. See also [View the lifecycle status of uploaded caption and audio track files](#lifecycle-status-video).
 
-      | Opção | Descrição |
-      |--- |--- |
-      | Legenda a ser traduzida | Na lista suspensa, escolha um arquivo de legenda do qual deseja que as legendas sejam geradas usando IA. |
-      | Idiomas de saída | Na lista suspensa, selecione um ou mais idiomas nos quais deseja que o arquivo de legenda seja exibido.<br>Para remover um idioma selecionado, clique em **X**.<br>Durante a reprodução do vídeo, a lista de idiomas aparece no reprodutor de mídia na ordem em que você os seleciona aqui. |
+        >[!NOTE]
+        >
+        >Based on the caching settings of your instance, the metadata processing can take several minutes before it is reflected in preview and in published URLs.
 
-   1. Clique em **[!UICONTROL Concluído]**.
-   1. Próximo ao canto superior direito da página, no menu suspenso **[!UICONTROL Salvar e fechar]**, clique em **[!UICONTROL Salvar]**.
-   1. Clique novamente na guia **[!UICONTROL Legendas e faixas de áudio]**. Um ou mais arquivos de legenda são criados e o processamento é iniciado, como visto na coluna **Status** da interface. Consulte também [Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados](#lifecycle-status-video).
+    1. (Optional) Select the pencil icon to the right of a caption file name. In the **Edit Caption** dialog box, you can edit the following details about the file:
 
-      >[!NOTE]
-      >
-      >Com base nas configurações de cache da sua instância, o processamento de metadados pode levar vários minutos antes de ser refletido na pré-visualização e nos URLs publicados.
+        | Caption metadata | Description |
+        | --- | --- |
+        | Type | Select the type of caption that you are using.<br>**Subtitle** - The caption text displayed with the video that translates or transcribes the dialogue.<br>**Caption** - The caption text also includes background noises, speaker differentiation. It also includes other relevant information, along with the translation or transcription of the dialogue. This approach makes the content more accessible for individuals who are deaf or hard of hearing. |
+        | Label | The text that is displayed for the caption's name in the **[!UICONTROL Select audio or caption]** pop-up list in the media player. The label is what a customer sees that corresponds to a subtitle or caption track. For example, `English (CC)`. |
 
-   1. (Opcional) Selecione o ícone de lápis à direita de um nome de arquivo de legenda. Na caixa de diálogo **Editar Legenda**, você pode editar os seguintes detalhes sobre o arquivo:
+        You can change or edit certain caption metadata later, if necessary. When the video is published, these metadata details are reflected on public URLs in published videos.
 
-      | Metadados da legenda | Descrição |
-      | --- | --- |
-      | Tipo | Selecione o tipo de legenda que você está usando.<br>**Subtítulo** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda também inclui ruídos de fundo e diferenciação de alto-falante. Inclui também outras informações relevantes, juntamente com a tradução ou transcrição do diálogo. Essa abordagem torna o conteúdo mais acessível para indivíduos surdos ou com deficiência auditiva. |
-      | Rótulo | O texto exibido para o nome da legenda na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou subtítulo. Por exemplo, `English (CC)`. |
+    1. Continue to step 8.
 
-      É possível alterar ou editar determinados metadados de legenda posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes de metadados são refletidos em URLs públicos em vídeos publicados.
+    +++
 
-   1. Continue com a etapa 8.
+1. (Optional) Preview the video before publishing to ensure the captions and audio work as expected. See [Preview a video that has multiple captions and audio tracks](#preview-video-audio-subtitle).
+1. Publish the video. See [Publish assets](publishing-dynamicmedia-assets.md).
 
-+++
-
-1. (Opcional) Visualize o vídeo antes da publicação para garantir que as legendas e o áudio funcionem conforme esperado. Consulte [Visualizar um vídeo com várias legendas e faixas de áudio](#preview-video-audio-subtitle).
-1. Publish o vídeo. Consulte [ativos do Publish](publishing-dynamicmedia-assets.md).
+-->
 
 #### Sobre a adição de arquivos de legenda e trilha de áudio a um vídeo já publicado
 
@@ -779,7 +882,7 @@ Várias alterações de legenda têm precedência sobre uma legenda adicionada p
 1. Publish o vídeo como de costume.
 O URL existente com o modificador de legenda agora pode carregar várias legendas.
 
-### Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados{#lifecycle-status-video}
+### Exibir o status do ciclo de vida dos arquivos de legenda e trilha de áudio carregados {#lifecycle-status-video}
 
 Você pode observar o status do ciclo de vida de qualquer legenda ou arquivo de trilha de áudio carregado no vídeo principal. Você pode fazer isso na guia **Legendas e faixas de áudio** das **Propriedades**.
 
