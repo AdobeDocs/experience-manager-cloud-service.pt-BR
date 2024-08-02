@@ -3,9 +3,9 @@ title: Restringir a entrega de ativos no Experience Manager
 description: Saiba como restringir a entrega de ativos no [!DNL Experience Manager].
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 16b313a4fb79f915613044d12d29e618209113ec
+source-git-commit: 65f0018a25c57189229fc56332ad874ebd0deef4
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Se o campo não estiver disponível, use as seguintes etapas para adicionar o ca
    1. Selecione o **[!UICONTROL Grupo de Usuários]** que você precisa adicionar e extraia a **[!UICONTROL orgID]** e a **[!UICONTROL userGroupID]** da URL ou use sua ID da Organização, como `{orgID}@AdobeOrg:{usergroupID}`.
 
 1. Adicione a ID do grupo ao campo **[!UICONTROL Funções]** das propriedades do ativo. <br>
-As IDs de grupo definidas no campo **[!UICONTROL Funções]** são os únicos usuários que podem acessar o ativo. Você também pode adicionar a ID do cliente IMS e a ID do perfil IMS no campo **[!UICONTROL Funções]**. Por exemplo, `{orgId}@AdobeOrg:{profileId}`.
+As IDs de grupo definidas no campo **[!UICONTROL Funções]** são os únicos usuários que podem acessar o ativo. Além da ID do grupo IMS, também é possível adicionar a ID de usuário IMS e a ID de perfil IMS no campo **[!UICONTROL Funções]**. Por exemplo, `{orgId}@AdobeOrg:{profileId}`.
 
    >[!NOTE]
    >
