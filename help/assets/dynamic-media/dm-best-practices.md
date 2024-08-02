@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: ce5f9fc101c86ffdfb685ff493e8f5e508f45e37
+source-git-commit: 5e028e99b472dc10ecd739ee5e5c70ea4daa2078
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -162,14 +162,17 @@ Use as recomendações a seguir regularmente para garantir que suas imagens cont
 
 * **Nomes significativos de arquivos de imagem:**
 Use nomes de arquivo descritivos que refletem o conteúdo da imagem. Por exemplo,
+
    * use `myCompany-Silver-Wrist-Watch`
    * *evitar* `myCompany_Silver_Wrist_Watch` ou `myCompanySilverWristWatch`
 
   Isso ajuda os mecanismos de pesquisa a entender o contexto da imagem e melhora a SEO. O Google prefere hífens a sublinhados ou espaços no nome do arquivo. Além disso, evite concatenar palavras em um nome de arquivo.
 * **Domínio personalizado:**
 Implemente um domínio personalizado que inclua sua empresa ou nome da marca para reforçar o reconhecimento e a confiança da marca. Por exemplo,
+
    * use `http://images.mycompany.com/is/image/companyname/`
    * *evitar* `https://s7d1.scene7.com/is/image/folder/AdobeStock_28563982`
+
 * **Estrutura de pastas compatível com SEO:**
 Organize as imagens em uma estrutura de pastas que inclua o nome da empresa ou a marca para melhorar a indexação, como `http://images.mycompany.com/is/image/companyname/`.
 * **Conjuntos de regras do Dynamic Media:**
@@ -309,6 +312,7 @@ Carregue o arquivo de vídeo original. Verifique se é um vídeo de alta resolu�
 Visualize o vídeo para garantir que tudo fique com a aparência esperada. Depois de satisfeito, publique-o. Essa etapa torna o vídeo acessível ao seu público-alvo.
 * **Vincular ou incorporar:**
 Após a publicação, você tem duas opções.
+
    * **Vincular diretamente:**
 Use o URL fornecido para vincular diretamente ao vídeo. Use o hiperlink adequado no site de marketing.
    * **Inserir o vídeo:**
