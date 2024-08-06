@@ -4,7 +4,7 @@ description: Editar imagens usando opções viabilizadas pelo [!DNL Adobe Expres
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: 610da7c1e8f20156b165d819a4bb91ec5ffcad80
+source-git-commit: af5ca9c436dce1929f310d40369abf05e60836f8
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 59%
@@ -86,6 +86,7 @@ A imagem cortada estará disponível para download. É possível salvar o ativo 
 ### Editar imagens usando o editor integrado do Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
 Os usuários com direito ao Express podem usar o editor Express incorporado na Exibição do Assets para editar conteúdo facilmente e criar novo conteúdo com GenAI do Adobe Firefly. Esse recurso melhora a reutilização do conteúdo e acelera a velocidade do conteúdo. Você também pode usar elementos predefinidos para que seu ativo tenha uma aparência incrível ou para executar ações de edição rápidas na imagem com apenas alguns cliques.
+
 ![express na interface do usuário do essentials](/help/assets/assets/express-in-essentials-ui.jpg)
 Para editar imagens usando o editor inserido do [!DNL Adobe Express], siga as etapas abaixo:
 
