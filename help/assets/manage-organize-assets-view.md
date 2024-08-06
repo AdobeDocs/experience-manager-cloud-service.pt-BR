@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7ec5d5e3ca487ff84bc0b1f7f040aec9475059e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 93%
+source-wordcount: '1204'
+ht-degree: 90%
 
 ---
 
@@ -131,6 +131,7 @@ Para definir o status do ativo:
 1. Selecione o ativo e clique em **[!UICONTROL Detalhes]** na barra de ferramentas.
 
 1. Na guia **[!UICONTROL Básico]**, selecione o status do ativo na lista suspensa **[!UICONTROL Status]**. Os valores possíveis incluem Aprovado, Rejeitado e Sem status (padrão).
+Se você tiver o Dynamic Media com recursos OpenAPI provisionados para o seu ambiente, o Experience Manager Assets gera uma URL pública assim que você marca o ativo como `Approved`.
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
