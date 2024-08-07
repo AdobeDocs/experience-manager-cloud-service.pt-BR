@@ -67,7 +67,7 @@ Leia sobre [configuração de um token de API de limpeza](/help/implementing/dis
 
 Para casos de uso de autenticação simples, incluindo participantes de negócios que revisam o conteúdo, proteja o conteúdo exibindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md) e participe do programa de adoção antecipada.
 
-## O cliente CDN aponta para o CDN gerenciado pelo AEM {#point-to-point-CDN}
+## CDN do cliente apontando para a CDN gerenciada pelo AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
