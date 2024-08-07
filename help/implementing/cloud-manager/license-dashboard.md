@@ -5,16 +5,23 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
 workflow-type: tm+mt
-source-wordcount: '661'
-ht-degree: 58%
+source-wordcount: '1101'
+ht-degree: 31%
 
 ---
+
 
 # Painel de licenças {#license-dashboard}
 
 O Cloud Manager fornece um painel para facilitar a visualização dos direitos de produto do AEMaaCS disponíveis para sua organização ou locatário.
+
+>[!IMPORTANT]
+>
+>O painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no painel de licenças.
+>
+>Para determinar o tipo de serviço que seu programa tem (AMS ou AEMaaCS), consulte o documento [Navegação na interface do usuário do Cloud Manager.](/help/implementing/cloud-manager/navigation.md#program-cards)
 
 ## Visão geral {#overview}
 
@@ -32,8 +39,8 @@ Para acessar o painel de licenças, siga estas etapas.
 >Um usuário com a função **Proprietário da empresa** deve estar conectado para exibir o Painel de Licenças.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
-
-1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, alterne para a guia **Licença**.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no botão de menu de hambúrguer no Cabeçalho do Cloud Manager [.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) Isso revela as guias.
+1. Toque ou clique na opção **Licença** na guia.
 
 ![Painel de licenças](assets/license-dashboard.png)
 
@@ -41,18 +48,56 @@ O painel é dividido em três seções que mostram:
 
 * **Soluções** - Essa seção resume quais soluções você licenciou, como Sites ou Assets.
 * **Complementos** - Essa seção resume quais complementos estão disponíveis para suas soluções licenciadas.
-* **Ambientes de sandbox e desenvolvimento** - Essa seção resume quais ambientes estão disponíveis para você.
+* **Outros direitos** - Esta seção resume qual ambiente de sandbox e desenvolvimento, bem como outros direitos que podem ser consumidos em seu locatário.
 
-Cada seção resume o que está disponível e como é usado, se for o caso. Atualmente, somente as soluções do Sites são exibidas, mesmo se outras soluções existirem no locatário.
+Cada seção resume o que está disponível e como é usado, se for o caso. Atualmente, somente as soluções do Sites e do Assets são exibidas, mesmo se outras soluções existirem no locatário.
 
 * A coluna **Status** exibe o número de direitos não utilizados em relação ao total disponível para o locatário.
 * A coluna **Configurado em** indica os programas nos quais o direito da solução foi aplicado.
    * Um direito será considerado usado somente quando um ambiente de produção for criado ou, se existir, quando um pipeline de atualização for executado nele.
-* A coluna **Uso** exibe as solicitações de conteúdo consumidas nos últimos 12 meses na forma de um gráfico quando clicadas.
+   * Somente um número limitado de programas é listado individualmente na coluna com o restante representado por uma entrada `+x`.
+   * Passe o mouse sobre a entrada `+x` para obter um pop-up com os detalhes de todos os programas.
+* A coluna **Uso** exibe um botão **[Exibir detalhes de uso](#view-usage-details)** para mostrar estatísticas de uso da solução.
 
 >[!TIP]
 >
 >Para saber como gerenciar os direitos de Adobe em toda a organização usando o Admin Console, consulte a [visão geral sobre Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html).
+
+## Exibir detalhes de uso {#view-usage-details}
+
+O botão **Exibir detalhes de uso** dá acesso à janela **Detalhes de Uso** da solução escolhida. Essa janela fornece um detalhamento detalhado, incluindo gráficos para mostrar o uso da solução. A forma como essa utilização é medida depende da solução escolhida.
+
+### Detalhes de uso dos sites {#sites-usage-details}
+
+A janela **Detalhes de uso do Sites** apresenta gráficos com uma visão geral do uso das licenças do Sites com base em [solicitações de conteúdo.](#what-is-a-content-request)
+
+![Janela de detalhes de uso do Sites](assets/sites-usage-details.png)
+
+O lado esquerdo da janela apresenta um gráfico de pizza que mostra o detalhamento do contrato para o ano do contrato selecionado na lista suspensa **Exibir ano do contrato**.
+
+O lado direito da janela apresenta um gráfico de área que mostra o uso detalhado por programa ao longo do tempo para o ano do contrato selecionado. Um cursor do mouse revela um pop-up com detalhes por programa para o ponto no tempo selecionado.
+
+### Detalhes de uso do Assets {#assets-usage-details}
+
+A janela **detalhes de uso do Assets** apresenta gráficos que fornecem uma visão geral do uso de suas licenças do Assets com base no [armazenamento](#storage) e nos [usuários padrão.](#standard-users) Selecione a guia apropriada para alternar entre os modos de exibição.
+
+Para exibições de armazenamento e usuários padrão, você pode usar a lista suspensa **Tipo de ambiente** para alternar a exibição entre ambientes de produção, preparo e desenvolvimento.
+
+#### Armazenamento {#storage}
+
+![Janela de detalhes de uso do Assets para armazenamento](assets/assets-usage-details-storage.png)
+
+O lado esquerdo da janela apresenta um gráfico de pizza que mostra o detalhamento do contrato para o ano do contrato selecionado na lista suspensa **Exibir ano do contrato**.
+
+O lado direito da janela apresenta um gráfico de área que mostra o uso detalhado por programa ao longo do tempo para o ano do contrato selecionado. Um cursor do mouse revela um pop-up com detalhes por programa para o ponto no tempo selecionado.
+
+#### Usuários padrão {#standard-users}
+
+![Janela de detalhes de uso do Assets para usuários padrão](assets/assets-usage-details-standard-users.png)
+
+O lado esquerdo da janela apresenta um gráfico de pizza que mostra o detalhamento do contrato para o ano do contrato selecionado na lista suspensa **Exibir ano do contrato**.
+
+O lado direito da janela apresenta um gráfico de área que mostra o uso detalhado por programa ao longo do tempo para o ano do contrato selecionado. Um cursor do mouse revela um pop-up com detalhes por programa para o ponto no tempo selecionado.
 
 ## Perguntas frequentes {#faq}
 

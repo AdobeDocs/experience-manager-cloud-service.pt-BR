@@ -5,12 +5,13 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
 workflow-type: tm+mt
-source-wordcount: '1381'
-ht-degree: 89%
+source-wordcount: '1500'
+ht-degree: 80%
 
 ---
+
 
 # Navegar pela interface do Cloud Manager {#navigation}
 
@@ -18,14 +19,14 @@ Saiba como a interface do Cloud Manager é organizada e como encontrar e gerenci
 
 A interface do Cloud Manager é composta principalmente por duas interfaces gráficas:
 
-* [O console Meus programas](#my-programs), onde é possível exibir e gerenciar todos os seus programas.
+* [O console Meus programas](#my-programs-console), onde é possível exibir e gerenciar todos os seus programas.
 * [A janela Visão geral do programa](#program-overview), onde é possível ver os detalhes e gerenciar um programa individual.
 
 >[!TIP]
 >
 >Verifique também a [jornada de documentação de integração](/help/journey-onboarding/overview.md) para obter uma visão geral completa de como começar a usar o AEM as a Cloud Service usando o Cloud Manager.
 
-## Console Meus programas {#my-programs}
+## Console Meus programas {#my-programs-console}
 
 Ao fazer logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecionar a organização apropriada, você acessará o console **Meus programas**.
 
@@ -34,9 +35,13 @@ Ao fazer logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudm
 O console Meus programas fornece uma visão geral de todos os programas aos quais você tem acesso na organização selecionada. Ele é composto por várias partes.
 
 1. [Barras de ferramentas](#toolbars-my-programs-toolbars) para seleção de organização, alertas e configurações da conta
+1. Guias que permitem alternar a exibição atual dos seus programas.
+   * Exibição da **Página Inicial** (padrão) que seleciona a exibição de **Meus programas** com uma visão geral de todos os programas
+   * **Licença** que acessa o [Painel de Licenças.](/help/implementing/cloud-manager/license-dashboard.md)
+   * Observe que as guias ficam fechadas por padrão e podem ser reveladas por meio do menu de opções no [cabeçalho do Cloud Manager.](#cloud-manager-header)
 1. [As estatísticas e a frase de chamariz](#statistics) que fornecem uma visão geral das atividades recentes
-1. [Programas e licenças](#programs-license) que permitem entender o status atual da licença e gerenciar programas
-1. [Links rápidos](#quick-links) para acessar facilmente os recursos relacionados
+1. Seção [**Meus programas**](#my-programs-section) que fornece uma visão geral de todos os seus programas
+1. [Links rápidos](#quick-links-section) para acessar facilmente os recursos relacionados
 
 >[!TIP]
 >
@@ -52,6 +57,7 @@ A primeira é o cabeçalho do Cloud Manager, que permanece fixo ao navegar pelo 
 
 ![O cabeçalho da Experience Cloud](assets/experience-cloud-header.png)
 
+1. O menu de hambúrguer que dá acesso a guias que podem levá-lo a partes específicas de um programa individual ou alternar entre o [Painel de Licenças](/help/implementing/cloud-manager/license-dashboard.md) e o console **[Meus Programas](#my-programs-console)**, dependendo do contexto.
 1. O botão Cloud Manager leva de volta ao console Meus programas, independentemente de onde você estiver no Cloud Manager.
 1. Toque ou clique no botão Feedback para enviar feedback à Adobe sobre o Cloud Manager.
 1. O seletor de organização exibe a organização que você está utilizando no momento (neste exemplo, Foundation Internal). Toque ou clique para alternar para outra organização se a Adobe ID estiver associada a mais do que uma.
@@ -70,9 +76,9 @@ A barra de ferramentas do programa fornece links para alternar entre programas e
 1. O link de introdução fornece acesso à [jornada de integração à documentação](/help/journey-onboarding/overview.md) para que você possa começar a usar o Cloud Manager.
 1. O botão de ação oferece ações adequadas ao contexto, como a criação de um novo programa.
 
-### Estatísticas {#statistics}
+### Estatísticas e frases de chamariz {#statistics}
 
-A seção de estatísticas fornece dados agregados para sua organização. Por exemplo, se você tiver configurado seus programas com êxito, é possível ver as estatísticas das atividades nos últimos 90 dias, incluindo:
+A seção de estatísticas e frase de chamariz fornece dados agregados para sua organização, por exemplo, se você tiver configurado seus programas com êxito, as estatísticas de suas atividades nos últimos 90 dias poderão ser exibidas, incluindo:
 
 * Número de [implantações](/help/implementing/cloud-manager/deploy-code.md)
 * Número de [problemas de qualidade de código](/help/implementing/cloud-manager/code-quality-testing.md) identificados
@@ -80,13 +86,15 @@ A seção de estatísticas fornece dados agregados para sua organização. Por e
 
 Ou se você estiver apenas começando a configurar a organização, encontrará dicas sobre as próximas etapas ou recursos de documentação.
 
-### Programas e licença {#programs-license}
+### Seção “Meus programas” {#my-programs-section}
 
-O conteúdo principal do console Meus programas é a lista de programas e o status da sua licença.
+O conteúdo principal do console **Meus Programas** é a lista de programas na seção **Meus Programas**.
 
-#### Guia Programas {#programs}
+A seção **Meus Programas** lista os cartões que representam cada programa. Toque ou clique em um cartão para acessar a página **Visão geral do programa** e obter detalhes sobre ele.
 
-A guia **Programas** lista os cartões que representam cada programa ao qual você tem acesso. Toque ou clique em um cartão para acessar a página **Visão geral do programa** e obter detalhes sobre ele.
+>[!NOTE]
+>
+>Dependendo dos seus privilégios, talvez não seja possível selecionar determinados programas.
 
 Use as opções de classificação para encontrar mais facilmente o programa necessário.
 
@@ -100,14 +108,20 @@ Use as opções de classificação para encontrar mais facilmente o programa nec
 * Exibição de grade (padrão)
 * Exibição de lista
 
+#### Cartões de programa {#program-cards}
+
 Cada programa é representado por um cartão (ou linha em uma tabela), o qual fornece uma visão geral do programa e links rápidos para realizar ações.
 
 ![Cartão do programa](assets/program-card.png)
 
 * Imagem do programa (se configurada)
 * Nome do programa
-* Tipo de serviço: **Experience Manager Cloud** para programas AEM as a * Cloud Service ou [**Experience Manager** para programas AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
-* [Tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md): sandbox ou produção
+* Tipo de serviço:
+   * **Experience Manager Cloud** para programas do AEM as a Cloud Service
+   * **Experience Manager** para [programas do AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction)
+* [Tipo de programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md):
+   * Sandbox
+   * Produção
 * Status
 * Soluções configuradas
 * Data de criação
@@ -124,7 +138,7 @@ Dependendo das opções escolhidas ao criar o programa, um programa de produçã
 
 * [SLA de 99,99%](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla)
 
-  ![99,99% selo de SLA](assets/9999-sla.png)
+  ![99,99% selo SLA](assets/9999-sla.png)
 
 O ícone de informações também fornece acesso rápido a informações adicionais sobre o programa (útil na exibição de lista).
 
@@ -147,21 +161,17 @@ O ícone de reticências fornece acesso a ações adicionais que você pode real
 >* [Criando Programas de Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
 >* [Criando Programas de Produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
-#### Guia Licença {#license-tab}
-
-A guia **Licença** fornece acesso rápido ao [Painel de Licenças.](/help/implementing/cloud-manager/license-dashboard.md)
-
-### Links rápidos {#quick-links}
+### Seção Links Rápidos {#quick-links-section}
 
 A seção de links rápidos fornece acesso aos recursos relacionados usados com frequência.
 
 ## Janela Visão geral do programa {#program-overview}
 
-Depois de selecionar um programa no console Meus programas, há um redirecionamento para a Visão geral do programa.
+Depois de selecionar um programa no console **[Meus Programas](#my-programs-console)**, você será direcionado à janela **Visão Geral do Programa**.
 
 ![Visão geral do programa](assets/program-overview.png)
 
-A visão geral do programa fornece acesso a todos os detalhes de um programa do Cloud Manager. Assim como o console Meus programas, essa seção é composta de várias partes.
+A visão geral do programa fornece acesso a todos os detalhes de um programa do Cloud Manager. Assim como o console **Meus Programas**, ele é composto de várias partes.
 
 1. [Barras de ferramentas](#program-overview-toolbar) que permitem voltar rapidamente ao console Meus programas e navegar pelo programa
 1. [Guias](#program-tabs) para alternar entre diferentes aspectos do programa
@@ -201,8 +211,12 @@ Cada programa tem muitas opções e dados associados. Esses dados são coletados
 * [Repositórios](/help/implementing/cloud-manager/managing-code/managing-repositories.md): todos os repositórios configurados para o programa
 * [Relatórios](/help/implementing/cloud-manager/sla-reporting.md): métricas, como dados de SLA
 * [Ambientes](/help/implementing/cloud-manager/manage-environments.md): todos os ambientes configurados para o programa
+* [Configurações de Domínio](/help/implementing/cloud-manager/custom-domain-names/introduction.md) - Gerenciar nomes de domínio personalizados para o programa
+* [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) - Gerenciar certificados SSL para o programa
+* [Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) - Defina listas de permissões para determinados endereços IP
 * [Conjuntos de conteúdo](/help/implementing/developing/tools/content-copy.md): conjuntos de conteúdo criados para fins de cópia
 * [Atividade de cópia de conteúdo](/help/implementing/developing/tools/content-copy.md): atividades de cópia de conteúdo
+* [Infraestrutura de Rede](/help/security/configuring-advanced-networking.md) - Gerenciar opções avançadas de rede para o programa
 * Caminhos de aprendizagem: recursos de aprendizagem adicionais sobre o Cloud Manager
 
 Por padrão, ao abrir um programa, você acessa a guia **Visão geral**. A guia atual está realçada. Selecione outra guia para exibir seus detalhes.
