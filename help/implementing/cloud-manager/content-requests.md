@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96bf1d56d24da851ad4713e3cb0728fd7a18da18
+source-git-commit: f8b058549162b7ae3d57b1a7dd3461f738b75320
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1269'
 ht-degree: 10%
 
 ---
@@ -28,7 +28,7 @@ For customers that bring their own CDN on top of AEM as a Cloud Service, server-
 
 ### Variações de solicitações de conteúdo Cloud Service {#content-requests-variances}
 
-As solicitações de conteúdo podem ter variações nas ferramentas de relatório de Analytics de uma organização, conforme resumido na tabela a seguir. Em geral, o *não* usa as ferramentas de análise que reúnem dados por meio da instrumentação do lado do cliente para relatar o número de solicitações de conteúdo para um determinado site, simplesmente porque elas geralmente dependem do consentimento do usuário para serem acionadas, perdendo uma fração significativa do tráfego. As ferramentas do Analytics que reúnem dados do lado do servidor em arquivos de log ou relatórios CDN para clientes que adicionam seu próprio CDN sobre o AEM as a Cloud Service fornecerão contagens melhores. Para relatar exibições de página e seu desempenho associado, o [Serviço de Dados de Adobe RUM](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) é a opção Adobe recomendada.
+As solicitações de conteúdo podem ter variações nas ferramentas de relatório de Analytics de uma organização, conforme resumido na tabela a seguir. Em geral, o *não* usa as ferramentas de análise que reúnem dados por meio da instrumentação do lado do cliente para relatar o número de solicitações de conteúdo para um determinado site, simplesmente porque elas geralmente dependem do consentimento do usuário para serem acionadas, perdendo uma fração significativa do tráfego. As ferramentas do Analytics que reúnem dados do lado do servidor em arquivos de log ou relatórios CDN para clientes que adicionam seu próprio CDN sobre o AEM as a Cloud Service fornecerão contagens melhores.
 
 | Motivo da variação | Explicação |
 |---|---|
