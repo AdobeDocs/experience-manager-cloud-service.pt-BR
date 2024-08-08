@@ -4,7 +4,7 @@ description: Saiba como usar o Logging para AEM as a Cloud Service a fim de conf
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6cb2665f2a2e61216608dfe9c3444adeb472395f
+source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
 workflow-type: tm+mt
 source-wordcount: '2829'
 ht-degree: 2%
@@ -617,9 +617,9 @@ Os logs de CDN serão encaminhados ao Splunk para novas solicitações de tíque
 
 >[!NOTE]
 >
->Logs específicos e logs de usuário específicos não podem ser encaminhados para o Splunk.
+>Logs *específicos* e *específicos* do usuário não podem ser encaminhados para o Splunk.
 >
->Todos os registros serão encaminhados ao Splunk, onde qualquer outra filtragem poderá ser feita pelo cliente com base nos requisitos.
+>**Todos** os logs serão encaminhados para o Splunk, onde qualquer filtragem adicional poderá ser feita pelo cliente com base em suas necessidades.
 
 ### Ativando o encaminhamento do Splunk {#enabling-splunk-forwarding}
 
