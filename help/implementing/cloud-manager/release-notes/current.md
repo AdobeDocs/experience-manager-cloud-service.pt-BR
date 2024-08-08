@@ -4,7 +4,7 @@ description: Estas são as notas de versão do Cloud Manager 2024.7.0 no AEM as 
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 12e19fe771c0b70ec471949944141f4d6858cbfd
+source-git-commit: 8d9f5296a2e79ee5560d1ede967b3eb2155cd151
 workflow-type: tm+mt
 source-wordcount: '633'
 ht-degree: 18%
@@ -22,7 +22,7 @@ Esta página documenta as notas de versão do Cloud Manager 2024.7.0 no AEM as a
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2024.7.0 no AEM as a Cloud Service é 18 de julho de 2024. A próxima versão está planejada para 8 de agosto de 2024.
+A data de lançamento do Cloud Manager versão 2024.7.0 no AEM as a Cloud Service é 18 de julho de 2024. A próxima versão está planejada para 12 de agosto de 2024.
 
 ## Novidades {#what-is-new}
 
@@ -39,7 +39,7 @@ A data de lançamento do Cloud Manager versão 2024.7.0 no AEM as a Cloud Servic
       * O link do relatório bruto do Lighthouse agora está visível de uma maneira mais intuitiva, diretamente no painel de detalhes do instantâneo da verificação.
       * A seção Recomendações do farol foi aprimorada.
    * A métrica de PWA foi removida de acordo com a versão 12.0.0 do Lighthouse, que eliminou essa métrica.
-* [O Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) foi atualizado para a [versão 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+* [O arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) foi atualizado para a [versão 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
 
 ## Programa de adoção antecipada {#early-adoption}
 
