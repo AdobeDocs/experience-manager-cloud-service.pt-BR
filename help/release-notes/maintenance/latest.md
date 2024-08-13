@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7150c6ce971aa6f89fa24f7ca387cbb28db1f2
+source-git-commit: f12e60cdfce24dd2f6c1400157180d16b1b98653
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 34%
+source-wordcount: '998'
+ht-degree: 11%
 
 ---
 
@@ -16,41 +16,95 @@ ht-degree: 34%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 17258 {#release-17258}
+## Versão 17393 {#release-17393}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 17258, lançada publicamente em quarta-feira, 30 de julho de 2024. A versão de manutenção anterior era a versão 17098.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 17393, lançada publicamente em quarta-feira, 13 de agosto de 2024. A versão de manutenção anterior era a versão 17258.
 
 A ativação de recursos do 2024.8.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-17258}
+### Aprimoramentos {#enhancements-17393}
 
-* ASSETS-31445 - Recursos iniciais de modelos do Dynamic Media
-* ASSETS-40399 - Configurações atualizadas da fila de transcrição automática do DM
-* ASSETS-40873 - Permitir que linhas máximas de exportação de metadados sejam definidas por meio da configuração OSGI
+* FORMS-15436 - Manipule normalmente a exceção no Adobe Sign Status scheduler.
+* FORMS-15362 - Adicione a configuração do forms-foundation no aemds para ativar o logon.
+* FORMS-15261 - O SPA não é renderizado no editor do Forms.
+* FORMS-15138 - Manuseio da compatibilidade retroativa de dados duplos devido à atualização do sling commons json.
+* FORMS-15113 - Alteração do nome da chave para sid de visitorId para rastreamento de RUM.
+* FORMS-15103 - Assets anexados em um formulário não são publicados na entrega de borda.
+* FORMS-15082 - Esquema JSON para mapear para componentes de formulário adaptáveis personalizados.
+* FORMS-15002 - Registro de tipo de modelo de fragmentos v1.
+* FORMS-14845 - Suporte para xdpRef no formulário de bases dos componentes principais via gerenciador de formulários.
+* FORMS-14840 - Erros do serviço de preenchimento prévio do Forms.
+* FORMS-14836 - Melhore a interface do usuário do Forms Manager para listar modelos de fragmento AF1.
+* FORMS-14834 - Suporte de modelo para fragmentos em AF1.
+* FORMS-14275 - Substituição da página de agradecimento e da mensagem de agradecimento no contêiner incorporado.
+* FORMS-13623 - Ativar a funcionalidade baseada em tempo de salvamento automático para V2.
+* FORMS-8651 - Caixa de diálogo de aviso sobre alteração da configuração do modelo de dados na página de propriedades do formulário.
+* SITES-23310 - API REST de fragmentos de conteúdo: Evitar dependências circulares em referências aninhadas para fragmentos de conteúdo.
+* SITES-23285 - API REST de fragmentos de conteúdo: crie um endpoint para listar todos os idiomas disponíveis.
+* SITES-22857 - API REST de fragmentos de conteúdo: os campos de enumeração de caixa de seleção não devem permitir que várias propriedades sejam definidas como false.
+* SITES-22813 - API REST de fragmentos de conteúdo: defina propriedades mín/máx para campos de enumeração.
+* SITES-22031 - API REST de fragmentos de conteúdo: obtenha modelos de fragmento de conteúdo permitidos para uma pasta do fragmento.
+* SITES-17640 - API REST de fragmentos de conteúdo: validação da operação Publish de fragmento de conteúdo.
+* SITES-22677 - API REST de fragmentos de conteúdo: Recuperar uma lista simples de referências descendentes
+* SITES-22207 - Modelo duplicado na criação de Fragmento de conteúdo.
+* SITES-23093 - Evento: adicione tags às cargas para eventos de modelo de fragmento de conteúdo.
+* SITES-23092 - Evento: adicione tags às cargas para eventos de fragmento de conteúdo.
+* SITES-22447 - Adicione o suporte à herança de propriedades do fragmento de experiência à guia de propriedades Básicas.
+* SITES-12209 - Melhora o desempenho do Editor de políticas adicionando cq:policy ao índice.
 
-### Problemas corrigidos {#fixed-issues-17258}
+### Problemas corrigidos {#fixed-issues-17393}
 
-* ASSETS-30613 - Substituir ativo não exclui e adiciona ativo no novo nível de entrega
-* ASSETS-31882 - É proibido acessar o arquivo de manifesto de streaming no autor
-* ASSETS-39598 - A importação em massa não pode excluir ativos com caracteres especiais no nome do back-end do S3
-* CNTBF-209 - Melhorias no cancelamento de trabalhos de backflow
-* SCRNS-3762 - Melhore o playerLogger no canal de sequência para colocar registros no console ao visualizar o canal no navegador
-* SCRNS-4455 - Ausência do botão &quot;Gerenciar publicação&quot; e &quot;Publish rápido&quot; para usuários NÃO ADMINISTRADORES no Provedor de conteúdo para canais
-* SITES-22940 - Não é possível exibir o fragmento de conteúdo como carga de fluxo de trabalho
+* CQ-4358028 - Falha ao criar projeto se a miniatura for carregada.
+* CQ-4357891 - Problema de sequência do XLIFF exportado.
+* CQ-4357059 - O trabalho de tradução leva horas para ser concluído, causando o tempo limite 503 no AEMaaCS.
+* FORMS-15320 - O envio de email não está funcionando no formulário baseado no componente principal.
+* FORMS-15272 - AEM Forms - Grupo de caixas de seleção que envia apenas 1 valor.
+* FORMS-15269 - Enfrentando problemas relacionados ao produto após a versão de manutenção 16461.
+* FORMS-15174 - Problema de JsonSchemaParser isValid.
+* FORMS-15095 - A caixa de texto de várias linhas pode ser ampliada para além de conter painéis no AEM Forms.
+* FORMS-15057 - Lista do FDM Sharepoint gerando erro de anexo para envio > 999.
+* FORMS-15011 - O Editor principal está causando erro no console ao abrir um Formulário no editor.
+* FORMS-14809 - A pasta do SDK não é criada automaticamente no diretório temporário compartilhado.
+* FORMS-14327 - APIs de serviço do Forms : extrair dados: - fornece um código de resposta 500 quando um pdf não interativo é fornecido na entrada.
+* FORMS-7475 - A classificação não está funcionando na página de criação do Formulário adaptável.
+* FORMS-3309 - Se várias opções forem selecionadas ao enviar um formulário, em um DoR gerado, apenas uma opção será exibida.
+* SITES-23646 - O endpoint de modelos do GraphQL falha para modelos criados com OpenAPI se os campos contiverem informações exclusivas.
+* SITES-23637 - API REST de fragmentos de conteúdo: OpenAPI não usa o tipo de valor correto para enumerações.
+* SITES-23573 - API REST de fragmentos de conteúdo: os relacionamentos dinâmicos não são respeitados nos fragmentos de conteúdo do GET pelo uuid.
+* SITES-23535 - API REST de fragmentos de conteúdo: a enumeração de vários campos do modelo de fragmento de conteúdo tem valores vazios.
+* SITES-23534 - API REST de fragmentos de conteúdo: ClassCastException de validação de fragmento de conteúdo.
+* SITES-23524 - Adapte o endpoint dos modelos BFF do GraphQL para suportar campos de enumeração de vários campos.
+* SITES-23467 - API REST de fragmentos de conteúdo: a pesquisa de modelos falha devido ao problema do cursor.
+* SITES-23327 - ArrayIndexOutOfBoundsException em AuditLogTimelineEventProvider durante a Descrição do processamento de evento de linha do tempo.
+* SITES-23277 - API REST de fragmentos de conteúdo: a verificação de relacionamento dinâmico do campo de fragmento de conteúdo deve ser feita somente para live copies.
+* SITES-23232 - A validação personalizada não funciona na nova interface do Editor de CF.
+* SITES-23090 - API REST de fragmentos de conteúdo: não é possível atualizar o título de um fragmento de conteúdo bloqueado.
+* SITES-22981 - Promover uma inicialização aninhada que não é profunda não é uma publicação.
+* SITES-22870 - PathAttributesHandler.processSrcAttr ArrayIndexOutOfBoundsException.
+* SITES-22814 - API REST de fragmentos de conteúdo: os valores dos campos de fragmento de enumeração de caixa de seleção devem ser ordenados pelas chaves definidas no modelo.
+* SITES-22716 - Problema com a lista de uso ativo de componentes OOTB.
+* SITES-22457 - Promover um lançamento que não seja profundo não atualiza o conteúdo original.
+* SITES-22449 - Não é possível salvar alterações em fragmentos de conteúdo após a atualização do AEM P20.
+* SITES-22279 - API REST de fragmentos de conteúdo: o atributo exclusivo para tipos de enumeração está ausente no fragmento de conteúdo.
+* SITES-22203 - API REST de fragmentos de conteúdo: Alinhe as APIs de gerenciamento para responder da mesma forma para a mesma situação.
+* SITES-21973 - API REST de fragmentos de conteúdo: o modelo não tem o atributo exclusivo para os tipos de Enumeração.
+* SITES-20364 - 302 redirecionamentos não funcionam com o seletor no URL.
+* SITES-21198 - VersionPreviewServlet: a limpeza é executada simultaneamente em todos os nós de cluster, causando conflitos de mesclagem e bloqueando confirmações
+* GRANITE-53094 - Objetos Use do JS baseado em repositório não podem ser localizados ao usar caminhos relativos.
 
-### Problemas conhecidos {#known-issues-17258}
+### Problemas conhecidos {#known-issues-17393}
 
-Nenhum
+Nenhum.
 
-### Aviso de mudança {#change-notice-17258}
+### Aviso de mudança {#change-notice-17393}
 
 * A partir de setembro de 2024, a AEM as a Cloud Service desativará a serialização de Resource Resolvers por meio da estrutura do Exportador de modelo do Sling. Consulte [a documentação](/help/implementing/developing/hybrid/disallow-the-serialization-of-resourceresolvers-via-sling-model-exporter.md) para obter mais detalhes.
 
-### Recursos e APIs obsoletos {#deprecated-17258}
+### Recursos e APIs obsoletos {#deprecated-17393}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Tecnologias integradas {#embedded-tech-17258}
+### Tecnologias integradas {#embedded-tech-17393}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
