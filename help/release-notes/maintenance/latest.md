@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 8c1bad70a82775c1c99b0c35f07e0d1cae602230
+source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1176'
 ht-degree: 9%
 
 ---
@@ -93,7 +93,7 @@ A ativação de recursos do 2024.8.0 fornecerá o conjunto completo de recursos 
 
 ### Problemas conhecidos {#known-issues-17465}
 
-* ASSETS-40875 - NullPointerException em AssetDeleteHandler e o Manipulador está sendo acionado para páginas.
+* ASSETS-40875 - A classe AssetDeleteHandler acompanha eventos de exclusão de ativos e executa ações específicas com base no tipo de evento de exclusão (PRE_DELETE ou POST_DELETE). Em determinados cenários, o tipo de evento POST_DELETE causa uma exceção de ponteiro nulo.
 * FORMS-14340 - Erro na instanciação de FormsAndDocumentOmniSearchHandler e CloudStorageSubmitActionInserter. Estas são instruções de registro inofensivas.
 * FORMS-15818 - Entrada do descritor de componente &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; não encontrou instruções nos logs do servidor. Estas são instruções de registro inofensivas.
 * 
