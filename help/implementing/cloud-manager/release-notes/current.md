@@ -1,20 +1,19 @@
 ---
-title: Notas de versão do Cloud Manager 2024.7.0 no Adobe Experience Manager as a Cloud Service
-description: Estas são as notas de versão do Cloud Manager 2024.7.0 no AEM as a Cloud Service.
+title: Notas de versão do Cloud Manager 2024.8.0 no Adobe Experience Manager as a Cloud Service
+description: Saiba mais sobre as notas de versão do Cloud Manager 2024.8.0 no AEM as a Cloud Service.
 feature: Release Information
-exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 role: Admin
-source-git-commit: 8d9f5296a2e79ee5560d1ede967b3eb2155cd151
+source-git-commit: bf8bab5a195dde6cf15a2fd52e51d58c0215fdf3
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 18%
+source-wordcount: '465'
+ht-degree: 14%
 
 ---
 
 
-# Notas de versão do Cloud Manager 2024.7.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de versão do Cloud Manager 2024.8.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Esta página documenta as notas de versão do Cloud Manager 2024.7.0 no AEM as a Cloud Service.
+Esta página documenta as notas de versão do Cloud Manager 2024.8.0 no AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -22,47 +21,40 @@ Esta página documenta as notas de versão do Cloud Manager 2024.7.0 no AEM as a
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager versão 2024.7.0 no AEM as a Cloud Service é 18 de julho de 2024. A próxima versão está planejada para 12 de agosto de 2024.
+A data de lançamento do Cloud Manager 2024.8.0 no AEM as a Cloud Service é terça-feira, 12 de agosto de 2024. A próxima versão está planejada para 14 de setembro de 2024.
 
 ## Novidades {#what-is-new}
 
-* O acionador **Sobre alterações do Git** do [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline) e do [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline) para iniciar o pipeline em uma confirmação agora estão disponíveis para [repositórios privados.](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-   * Ele será lançado em fases e concluído em meados de agosto.
-* Ao adicionar um [certificado DV gerenciado por Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md), agora é possível adicionar um único certificado que cubra vários domínios, em vez de criar um certificado para cada domínio.
-* As soluções que não têm [regiões de publicação adicionais](/help/operations/additional-publish-regions.md) agora podem ser adicionadas a um programa, desde que ele tenha pelo menos uma solução do Sites ou do Forms.
-* Soluções que não têm [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) agora podem ser adicionadas a um programa, desde que o programa tenha pelo menos uma solução do Sites ou do Forms aplicável a ele.
-* O [Painel de Auditoria de Experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md) foi aprimorado de várias maneiras.
-   * As auditorias agora são executadas em relação aos pontos de extremidade `.com` por meio da CDN, substituindo a abordagem `.net` anterior.
-      * Essa alteração simula com mais precisão as experiências reais do usuário e ajuda você a tomar decisões mais conscientes sobre como gerenciar e otimizar seu site.
-   * Várias melhorias foram feitas na interface do usuário da Auditoria de experiência, incluindo:
-      * Uma exibição de tendências de desempenho, práticas recomendadas, SEO e acessibilidade foi adicionada.
-      * O link do relatório bruto do Lighthouse agora está visível de uma maneira mais intuitiva, diretamente no painel de detalhes do instantâneo da verificação.
-      * A seção Recomendações do farol foi aprimorada.
-   * A métrica de PWA foi removida de acordo com a versão 12.0.0 do Lighthouse, que eliminou essa métrica.
-* [O arquétipo de projeto do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) foi atualizado para a [versão 49.](https://github.com/adobe/aem-project-archetype/tree/aem-project-archetype-49)
+* [Regiões de publicação adicionais](/help/operations/additional-publish-regions.md) e um [99.99% SLA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#sla) (Contrato de Nível de Serviço) agora estão disponíveis para o AEM Forms as a Cloud Service.
+   * Esse aprimoramento permite que você obtenha SLAs mais altos com mais tempo de atividade e menos latência, garantindo as melhores experiências para seus usuários distribuídos globalmente.
 
 ## Programa de adoção antecipada {#early-adoption}
 
 Para testar alguns recursos futuros, faça parte do programa de adoção antecipada do Adobe.
 
-### Suporte a Edge Delivery Services no Cloud Manager {#edge-delivery-services}
+### Suporte para Edge Delivery Services no Cloud Manager {#edge-delivery-services}
 
-Se você tiver licenciado Edge Delivery Services como parte do Adobe Experience Manager Sites, [você pode agora integrar seu site com Edge Delivery Services diretamente no Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) e ativar usando uma experiência guiada de autoatendimento.
+Se você tiver licenciado Edge Delivery Services como parte do AEM Sites, [você pode agora integrar seu site com Edge Delivery Services diretamente no Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md) e ativar usando uma experiência guiada de autoatendimento.
 
-Isso permite uma experiência unificada para todas as propriedades do AEM, garantindo a consistência com todos os workflows críticos, incluindo o gerenciamento de nomes de domínio, o gerenciamento de certificados SSL e os mapeamentos de CDN.
+Esse recurso fornece uma experiência unificada para todas as propriedades do AEM. Ele garante a consistência em fluxos de trabalho críticos, como gerenciamento de nomes de domínio, gerenciamento de certificados SSL e mapeamentos de CDN.
 
 Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para `aemcs-cmedgedelsvs-program-adopter@adobe.com` a partir do endereço de email associado à sua Adobe ID.
 
-### Certificados validados por domínio (DV)
+### Certificados de domínio validado (DV)
 
-O Cloud Manager agora permite que você [gere e gerencie certificados SSL de domínio validado (DV) por autoatendimento.](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md) Isso oferece a solução mais rápida, fácil e econômica para criar um site seguro para sua empresa online.
+Com o Cloud Manager, agora é possível [gerar e gerenciar certificados SSL de domínio validado (DV) por autoatendimento](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md). Esse recurso oferece a solução mais rápida, fácil e econômica para criar um site seguro para sua empresa online.
 
-Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para `Grp-aemcs-dv-dert-adopter@adobe.com` a partir do endereço de email associado à sua Adobe ID.
+Se você quiser testar esse novo recurso e fornecer seu feedback, envie um email para `Grp-aemcs-dv-dert-adopter@adobe.com` usando o endereço de email vinculado à sua Adobe ID.
 
 ### Painel de auditoria de experiência {#experience-audit-dashboard}
 
 [O painel de Auditoria de Experiência do Cloud Manager](/help/implementing/cloud-manager/experience-audit-dashboard.md) inclui uma exibição de tendências das pontuações de desempenho da página, juntamente com insights e recomendações para ajudá-lo a melhorá-las. A Auditoria de experiência está incluída como uma etapa no pipeline de produção do Cloud Manager.
 
-O painel usa o Google Lighthouse, uma ferramenta de código aberto e automatizada para melhorar a qualidade dos seus aplicativos web. Você pode executá-lo em qualquer página da Web, público ou que exija autenticação. Ele tem auditorias de desempenho, acessibilidade, aplicativos web progressivos, SEO e muito mais.
+O painel usa o Google Lighthouse, uma ferramenta de código aberto e automatizada para melhorar a qualidade dos seus aplicativos web. Você pode usá-lo para auditar qualquer página da Web, seja pública ou que exija autenticação. Ele fornece avaliações de desempenho, acessibilidade, aplicativos web progressivos, SEO e muito mais.
 
-Interessado em testar o novo painel? Para começar, envie um email para `aem-lighthouse-pilot@adobe.com` a partir do email associado à sua Adobe ID.
+Quer experimentar o novo painel? Para começar, envie um email para `aem-lighthouse-pilot@adobe.com` usando o email vinculado à sua Adobe ID.
+
+## Correção de erros
+
+* Um problema raro foi corrigido em que as etapas do pipeline eram executadas após a exclusão do pipeline.
+* Correção de um problema com pipelines de configuração mostrando incorretamente um status `FAILED` em casos raros.
