@@ -1,19 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2024.06.28
-description: Estas são as notas de versão do Universal Editor de 2024.06.28.
+title: Notas de versão do Universal Editor 2024.08.13
+description: Estas são as notas de versão do Universal Editor de 2024.08.13.
 feature: Release Information
 role: Admin
-source-git-commit: cc94ad2ba42707bb7541217f0225b995f64ad84f
+exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
+source-git-commit: d71d3481004f2429c018c536b3e12784cf597f85
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 1%
+source-wordcount: '369'
+ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2024.06.28 {#release-notes}
+# Notas de versão do Universal Editor 2024.08.13 {#release-notes}
 
-Estas são as notas de versão do Universal Editor de 28 de junho de 2024.
+Estas são as notas de versão da versão de 13 de agosto de 2024 do Universal Editor.
 
 >[!TIP]
 >
@@ -21,18 +22,19 @@ Estas são as notas de versão do Universal Editor de 28 de junho de 2024.
 
 ## Novidades {#what-is-new}
 
-* **Página inicial**: as páginas recentes são exibidas como uma lista, sem imagens de visualização.
-* **Barra de Localização**: a validação de URL aprimorada foi adicionada, impondo URLs HTTPS e hashes de suporte em URLs para conta de aplicativos roteados por hash.
-* **Navegação pelo teclado**: a seleção de sobreposição de página foi dissociada do foco do painel de propriedades para melhorar a navegação pelo teclado na página sem perder o foco.
-* **Rótulos de Item**: o valor de fallback dos rótulos agora usa `data-aue-prop` em vez de `data-aue-type` para uma identificação mais clara nas sobreposições e na árvore de conteúdo.
-* **Modal de RTE**: um botão **Cancelar** foi adicionado ao modal do editor de rich text ao abri-lo no painel de propriedades.
-* **UE Service no Nó**: o suporte HTTP para o Universal Editor Service foi reintroduzido, pois todas as conexões HTTPS são encerradas no nível do Dispatcher.
-* **API de Cópia Interna**: uma API para o Serviço do Universal Editor para copiar componentes foi adicionada, permitindo a introdução futura de opções da barra de ferramentas para copiar e duplicar conteúdo.
+* **Tipos de dados personalizados**: adapte o editor às suas necessidades de dados exclusivas com a capacidade de criar campos personalizados dentro do painel de propriedades.
+   * Independentemente de você estar desenvolvendo um seletor de produto personalizado para casos de uso de comércio ou preenchendo uma lista suspensa com valores de seus back-end, esse recurso oferece o controle necessário sobre os dados que os autores usam para compor conteúdo.
+* **Arrastar e soltar entre contêineres**: aproveite a maior flexibilidade na composição de layout com a capacidade de mover componentes entre diferentes contêineres ao arrastar e soltar no [painel Árvore de Conteúdo.](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode)
+* **Integração otimizada do GitHub**: o armazenamento em cache das respostas do GitHub foi introduzido, acelerando significativamente a recuperação de tags e o `universal-editor-cors-library`, resultando em uma experiência do usuário mais rápida e suave.
+* **Pacote RPM do Managed Services**: o Adobe agora oferece um pacote RPM para simplificar a implantação e o gerenciamento do Universal Editor Service, simplificando a manutenção e reduzindo a sobrecarga operacional dos serviços gerenciados.
+* **Validação de token IMS configurável**: para aumentar a flexibilidade no gerenciamento de token, a validação de token IMS agora é opcional.
+   * Essa opção de configuração permite desabilitar a validação conforme necessário, simplificando as configurações do gateway de nuvem.
+* **Integração do Splunk**: o log do Splunk foi integrado ao Universal Editor Service Express, aprimorando o monitoramento e o diagnóstico.
+   * Essa integração garante um rastreamento eficiente de registros, operações ininterruptas e solução de problemas mais rápida.
 
 ## Correções de erros {#bug-fixes}
 
-* **Navegação estrutural no Painel de Propriedades**: o menu de navegação estrutural no painel de propriedades para itens profundamente aninhados, que não permaneceram abertos, foi corrigido.
-* **Seletor de fragmentos de conteúdo**: o seletor de fragmentos de conteúdo foi aprimorado para garantir que respeite as regras definidas no modelo de fragmento de conteúdo ou no `data-aue-filter`.
-* **Inserção de componente**: a lista para inserir novos componentes que não foram atualizados com precisão após navegar para outra página foi corrigida.
-* **Status da publicação**: o tratamento dos status de publicação foi aprimorado para funcionar de forma mais consistente.
-* **Várias correções**: esta versão também contém várias correções secundárias, limpeza de débito técnico, aprimoramentos de segurança e testes consolidados para estabilidade e desempenho gerais.
+* **Feedback de Publicação Aprimorado**: se a publicação falhar devido a permissões insuficientes, o feedback para o usuário durante a publicação foi aprimorado para exibir um aviso claro em vez de simplesmente indicar uma falha.
+* **Tratamento de URLs aprimorado**: foram corrigidos problemas de codificação/decodificação de URLs incorretos que causavam falhas de publicação.
+* **Tratamento preciso de dados**: um problema no qual os números flutuantes eram armazenados incorretamente como números inteiros foi resolvido, garantindo um tratamento preciso de dados em todo o seu conteúdo.
+* **Segurança e Estabilidade**: as vulnerabilidades de segurança nas imagens do Docker foram corrigidas e a cobertura de testes para componentes críticos, como o Seletor de Componentes e Navegação Estrutural, foi implementada, resultando em uma experiência do editor mais segura, estável e confiável.
