@@ -4,10 +4,10 @@ description: AEM - Perguntas frequentes sobre a integração com o Commerce usan
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 feature: Commerce Integration Framework
 role: Admin, Architect, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 26%
+source-wordcount: '965'
+ht-degree: 25%
 
 ---
 
@@ -77,4 +77,4 @@ Sim, o Questionário de autoavaliação D e o Atestado de conformidade estão di
 
 ## 16. Como posso solicitar uma licença de avaliação da I/O Runtime?
 
-Você pode solicitar uma licença de avaliação para usar a I/O Runtime [aqui](https://developer.adobe.com/app-builder/trial/).
+Consulte [Obtendo Acesso](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/) para obter detalhes sobre como solicitar uma licença de avaliação para usar a I/O Runtime.

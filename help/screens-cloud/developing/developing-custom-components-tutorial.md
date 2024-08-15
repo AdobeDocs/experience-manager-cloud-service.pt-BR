@@ -4,7 +4,7 @@ description: O tutorial a seguir percorre as etapas para criar um componente per
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 2%
@@ -35,7 +35,7 @@ As etapas e capturas de tela do tutorial são executadas usando **CRXDE Lite**. 
 
 ## Configuração do projeto {#project-setup}
 
-O código-fonte de um projeto Screens geralmente é gerenciado como um projeto Maven de vários módulos. Para acelerar o tutorial, um projeto foi pré-gerado usando o [Arquétipo de Projeto AEM 13](https://github.com/adobe/aem-project-archetype). Mais detalhes sobre [a criação de um projeto com o Arquétipo de Projeto Maven AEM podem ser encontrados aqui](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html).
+O código-fonte de um projeto Screens geralmente é gerenciado como um projeto Maven de vários módulos. Para acelerar o tutorial, um projeto foi pré-gerado usando o [Arquétipo de Projeto AEM 13](https://github.com/adobe/aem-project-archetype). Consulte [Configuração do projeto](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html) para obter mais detalhes sobre como criar um projeto com o Arquétipo de projeto AEM Maven.
 
 1. Baixe e instale os seguintes pacotes usando o [Gerenciador de Pacotes do CRX](http://localhost:4502/crx/packmgr/index.jsp):
 

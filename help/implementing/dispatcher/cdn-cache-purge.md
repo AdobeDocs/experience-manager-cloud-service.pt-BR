@@ -4,9 +4,9 @@ description: Saiba como remover objetos em cache do cache CDN do Adobe configura
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 3b55f3094b7154b7723ef7ae2230d7ae01eb4abc
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Remoção do cache da CDN {#cdn-purge-cache}
 
 A limpeza remove um objeto do cache CDN do Adobe, resultando em solicitações futuras que prosseguem para a origem como um erro de cache, em vez de serem fornecidas do cache.
-O AEM as a Cloud Service permite configurar um Token de API de limpeza, que pode ser usado em chamadas de API de limpeza. Leia o [artigo sobre Configuração de Credenciais e Autenticação da CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) para saber como configurar este token usando as diretivas de Autenticação de Pipeline de Configuração do Cloud Manager.
+O AEM as a Cloud Service permite configurar um Token de API de limpeza, que pode ser usado em chamadas de API de limpeza. Leia [Configurando Credenciais e Autenticação de CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) para saber como configurar este token usando as diretivas de Autenticação de Pipeline de Configuração do Cloud Manager.
 
 Há três variações de limpeza compatíveis:
 
@@ -75,4 +75,4 @@ Esteja ciente de que o cabeçalho `X-AEM-Purge` deve incluir o valor &quot;all&q
 
 ## Interações com a camada Apache/Dispatcher {#apache-layer}
 
-Conforme descrito no [artigo sobre Fluxo de entrega de conteúdo](/help/implementing/dispatcher/overview.md), a CDN recupera o conteúdo da camada Apache/Dispatcher, se o cache tiver expirado. Isso implica que, antes de limpar um recurso na CDN, você deve garantir que uma nova versão do conteúdo também esteja disponível na Dispatcher. Para obter mais detalhes, consulte também [Invalidação de cache do Dispatcher](/help/implementing/dispatcher/caching.md#disp).
+Conforme descrito em [Fluxo de entrega de conteúdo](/help/implementing/dispatcher/overview.md), a CDN recupera o conteúdo da camada do Apache/Dispatcher, se o cache tiver expirado. Isso implica que, antes de limpar um recurso na CDN, você deve garantir que uma nova versão do conteúdo também esteja disponível na Dispatcher. Para obter mais detalhes, consulte também [Invalidação de cache do Dispatcher](/help/implementing/dispatcher/caching.md#disp).

@@ -4,9 +4,9 @@ description: Não permitir a serialização de ResourceResolvers por meio do Exp
 exl-id: 63972c1e-04bd-4eae-bb65-73361b676687
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 O recurso Exportador de modelo Sling permite serializar objetos Modelos Sling em um formato JSON. Esse recurso é amplamente usado, pois permite que o SPA (aplicativos de página única) acesse facilmente os dados do AEM. No lado da implementação, a biblioteca de ligação de dados Jacson é usada para serializar esses objetos.
 
-A serialização é uma operação recursiva. Começando por um &quot;objeto raiz&quot;, ele repete recursivamente todos os objetos elegíveis e os serializa e seus filhos. Você pode encontrar uma descrição de quais campos estão serializados em [este artigo](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
+A serialização é uma operação recursiva. Começando por um &quot;objeto raiz&quot;, ele repete recursivamente todos os objetos elegíveis e os serializa e seus filhos. Você pode encontrar uma descrição de quais campos são serializados no artigo [Jackson - Decidir quais campos são serializados/desserializados](https://www.baeldung.com/jackson-field-serializable-deserializable-or-not).
 
 Essa abordagem serializa todos os tipos de objetos no JSON e, naturalmente, também pode serializar um objeto Sling `ResourceResolver`, se estiver coberto pelas regras de serialização. Isso é problemático, pois o serviço `ResourceResolver` (e, portanto, também o objeto de serviço que o representa) retém informações potencialmente confidenciais, que não devem ser divulgadas. Por exemplo:
 

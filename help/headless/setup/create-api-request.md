@@ -4,10 +4,10 @@ description: Saiba como usar a API GraphQL para a entrega headless do conteúdo 
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 89%
+source-wordcount: '677'
+ht-degree: 87%
 
 ---
 
@@ -45,7 +45,7 @@ Para que as APIs GraphQL possam ser usadas, é necessário criar um endpoint Gra
    /content/cq:graphql/<configuration-name>/endpoint
    ```
 
-Mais detalhes sobre como ativar [endpoints GraphQL podem ser encontrados aqui](/help/headless/graphql-api/graphql-endpoint.md).
+Para obter mais detalhes sobre como habilitar endpoints do GraphQL, consulte [Gerenciar endpoints do GraphQL no AEM](/help/headless/graphql-api/graphql-endpoint.md).
 
 ## Consultar conteúdo usando GraphQL com o GraphiQL
 

@@ -4,9 +4,9 @@ description: Suporte OAuth2 para o serviço de email no Adobe Experience Manager
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '675'
 ht-degree: 81%
 
 ---
@@ -115,7 +115,7 @@ Antes de continuar a configurar o OAuth no lado do AEM, valide o accessToken e o
 >
 > Você pode obter a coleção da API do Postman [aqui](https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow).
 >
-> Consulte [aqui](https://learn.microsoft.com/pt-BR/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) a documentação de OAuth do MSFT para obter mais detalhes.
+> Consulte a [documentação do MSFT OAuth](https://learn.microsoft.com/pt-BR/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) para obter mais detalhes.
 
 ### Integração com o AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
@@ -168,7 +168,7 @@ em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp
    ```
 
 1. Para o Outlook, o valor de configuração do `smtp.host` é `smtp.office365.com`
-1. No tempo de execução, forneça os segredos `refreshToken values` e `clientSecret` usando a API de variáveis do Cloud Manager, conforme descrito [aqui](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) ou usando [Cloud Manager para adicionar variáveis.](/help/implementing/cloud-manager/environment-variables.md) Os valores das variáveis `SECRET_SMTP_OAUTH_REFRESH_TOKEN` e `SECRET_SMTP_OAUTH_CLIENT_SECRET` devem ser definidos.
+1. No tempo de execução, forneça os segredos `refreshToken values` e `clientSecret` usando a [API de variáveis do Cloud Manager](/help/implementing/deploying/configuring-osgi.md#setting-values-via-api) ou o [Cloud Manager para adicionar variáveis](/help/implementing/cloud-manager/environment-variables.md). Os valores das variáveis `SECRET_SMTP_OAUTH_REFRESH_TOKEN` e `SECRET_SMTP_OAUTH_CLIENT_SECRET` devem ser definidos.
 
 ### Resolução de problemas {#troubleshooting}
 

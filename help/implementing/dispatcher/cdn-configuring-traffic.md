@@ -4,9 +4,9 @@ description: Saiba como configurar o tráfego CDN declarando regras e filtros em
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 3c546a05cf91dd8dcba39e42cd0f19857713f130
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1314'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Antes de configurar o tráfego na CDN, é necessário fazer o seguinte:
 
 1. Crie um arquivo com o nome `cdn.yaml` ou semelhante, referenciando os vários trechos de configuração nas seções abaixo.
 
-   Todos os trechos têm essas propriedades comuns, que estão descritas no [artigo sobre o Pipeline de configuração](/help/operations/config-pipeline.md#common-syntax). O valor da propriedade `kind` deve ser *CDN* e a propriedade `version` deve ser definida como *1*.
+   Todos os trechos têm estas propriedades comuns, que estão descritas em [Pipeline de configuração](/help/operations/config-pipeline.md#common-syntax). O valor da propriedade `kind` deve ser *CDN* e a propriedade `version` deve ser definida como *1*.
 
    ```
    kind: "CDN"
@@ -48,9 +48,9 @@ Antes de configurar o tráfego na CDN, é necessário fazer o seguinte:
      envTypes: ["dev"]
    ```
 
-1. Coloque o arquivo em uma pasta de nível superior chamada *config* ou similar, conforme descrito no [artigo sobre o Pipeline de configuração](/help/operations/config-pipeline.md#folder-structure).
+1. Coloque o arquivo em algum lugar em uma pasta de nível superior chamada *config* ou similar, conforme descrito em [Pipeline de configuração](/help/operations/config-pipeline.md#folder-structure).
 
-1. Crie um Pipeline de configuração no Cloud Manager, conforme descrito no [artigo sobre Pipeline de configuração](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Crie um Pipeline de configuração no Cloud Manager, conforme descrito em [Pipeline de configuração](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Implante a configuração.
 

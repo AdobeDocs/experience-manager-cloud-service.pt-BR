@@ -5,10 +5,10 @@ exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 solution: Experience Manager Sites
 feature: Authoring, Personalization
 role: User
-source-git-commit: 54159c25b60277268ade16b437891f268873fecf
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 66%
+source-wordcount: '1343'
+ht-degree: 64%
 
 ---
 
@@ -129,7 +129,7 @@ uma solicitação ao Suporte ao cliente indicando o programa e os ambientes apro
 
 ## Permissões (grupos de usuários fechados) {#permissions-closed-user-groups}
 
-As políticas de acesso do nível de publicação, também chamadas de Grupos de usuários fechados (CUGs), são definidas no autor do AEM, conforme [descrito aqui](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Para restringir determinadas seções ou páginas de um site para alguns usuários, aplique os CUGs conforme necessário usando o autor do AEM, conforme descrito aqui, e replique-os no nível de publicação.
+As políticas de acesso da camada Publish, também chamadas de Grupos de Usuários Fechados (CUGs), são definidas no autor AEM, consulte [Criação de um Grupo de Usuários Fechado](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html#applying-your-closed-user-group-to-content-pages). Para restringir determinadas seções ou páginas de um site para alguns usuários, aplique os CUGs conforme necessário usando o autor do AEM, conforme descrito aqui, e replique-os no nível de publicação.
 
 * Se os usuários fizerem logon com autenticação através de um provedor de identidade (IdP) usando SAML, o manipulador de autenticação identificará as associações de grupo do usuário (que devem corresponder aos CUGs no nível de publicação) e manterá a associação entre o usuário e o grupo por meio de um registro de repositório
 * Se o logon for realizado sem a integração de um IdP, um código personalizado poderá aplicar os mesmos relacionamentos de estrutura do repositório.

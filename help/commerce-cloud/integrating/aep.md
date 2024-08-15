@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: bae9a5178c025b3bafa8ac2da75a1203206c16e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '1868'
 ht-degree: 1%
 
 ---
@@ -329,7 +329,7 @@ Para inicializar os componentes principais do Peregrine e do CIF baseados no Rea
    - inicializa com uma determinada configuração para Experience Platform e/ou ACDS
    - assina todos os eventos do Peregrine e os encaminha para o SDK de eventos
 
-   Você pode revisar os detalhes de implementação de `EventCollectorContext` [aqui](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
+   Você pode revisar os detalhes de implementação de `EventCollectorContext`. Consulte [aem-core-CIF-components no GitHub](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
 
 ### Criar e implantar o projeto AEM atualizado
 

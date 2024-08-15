@@ -4,9 +4,9 @@ description: Saiba como configurar cabeçalhos HTTP personalizados que serão en
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ Os componentes que usam a configuração do Cloud Service acima enviarão esses 
 
 ## Restrições {#restrictions}
 
-Embora o serviço permita a definição de qualquer nome de cabeçalho, incluindo os padrão, eles não estarão disponíveis para configuração. Em outras palavras, não é possível substituir os cabeçalhos HTTP padrão usando esse recurso. Uma lista de nomes de cabeçalho restritos pode ser encontrada [aqui](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Além desses, há mais dois cabeçalhos que não podem ser usados:
+Embora o serviço permita a definição de qualquer nome de cabeçalho, incluindo os padrão, eles não estarão disponíveis para configuração. Em outras palavras, não é possível substituir os cabeçalhos HTTP padrão usando esse recurso. Uma lista de nomes de cabeçalho restritos pode ser encontrada em [mdn web docs - HTTP headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). Além desses, há mais dois cabeçalhos que não podem ser usados:
 
 * &quot;Loja&quot; - usado pelo CIF para identificar a loja da Adobe Commerce
 * &quot;Versão de visualização&quot; - usado pelo CIF para recuperar produtos preparados

@@ -4,9 +4,9 @@ description: Saiba mais sobre como encaminhar logs para o Splunk e outros fornec
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cb4299be4681b24852a7e991c123814d31f83cad
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '1349'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Esse recurso ainda não foi lançado e alguns destinos de registro podem não estar disponíveis no momento do lançamento. Enquanto isso, você pode abrir um tíquete de suporte para encaminhar logs para o **Splunk**, conforme descrito no [artigo de log](/help/implementing/developing/introduction/logging.md).
+>Esse recurso ainda não foi lançado e alguns destinos de registro podem não estar disponíveis no momento do lançamento. Enquanto isso, você pode abrir um tíquete de suporte para encaminhar logs para o **Splunk**, conforme descrito em [Logon no AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md).
 
 Os clientes que têm uma licença para um fornecedor de registro ou hospedam um produto de registro podem ter registros AEM (incluindo Apache/Dispatcher) e registros CDN encaminhados aos destinos de registro associados. O AEM as a Cloud Service oferece suporte aos seguintes destinos de registro:
 
@@ -169,7 +169,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Cada arquivo contém várias entradas de log json, cada uma em uma linha separada. Os formatos de entrada de log estão descritos no [artigo de log](/help/implementing/developing/introduction/logging.md), e cada entrada de log também inclui as propriedades adicionais mencionadas na seção [Formatos de Entrada de Log](#log-format) abaixo.
+Cada arquivo contém várias entradas de log json, cada uma em uma linha separada. Os formatos de entrada de log estão descritos em [Logs para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md), e cada entrada de log também inclui as propriedades adicionais mencionadas na seção [Formatos de Entrada de Log](#log-format) abaixo.
 
 #### Logs AEM do Armazenamento Azure Blob {#azureblob-aem}
 
@@ -183,7 +183,7 @@ Os logs de AEM (incluindo o Apache/Dispatcher) aparecem abaixo de uma pasta com 
 
 Em cada pasta, um único arquivo será criado e anexado a. Os clientes são responsáveis pelo processamento e gerenciamento desse arquivo, de modo que ele não fique muito grande.
 
-Consulte os formatos de entrada de log no [artigo de log](/help/implementing/developing/introduction/logging.md). As entradas de log também incluirão as propriedades adicionais mencionadas na seção [Formatos de Entrada de Log](#log-formats) abaixo.
+Consulte os formatos de entrada de log em [Log para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). As entradas de log também incluirão as propriedades adicionais mencionadas na seção [Formatos de Entrada de Log](#log-formats) abaixo.
 
 
 ### Datadog {#datadog}
@@ -266,7 +266,7 @@ Considerações:
 
 #### Logs HTTPS CDN {#https-cdn}
 
-As solicitações da Web (POSTs) serão enviadas continuamente, com uma carga json que é uma matriz de entradas de log, com o formato de entrada de log descrito no [artigo de log](/help/implementing/developing/introduction/logging.md#cdn-log). Propriedades adicionais são mencionadas na seção [Formatos de Entrada de Log](#log-formats) abaixo.
+As solicitações da Web (POSTs) serão enviadas continuamente, com uma carga json que é uma matriz de entradas de log, com o formato de entrada de log descrito em [Logon para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md#cdn-log). Propriedades adicionais são mencionadas na seção [Formatos de Entrada de Log](#log-formats) abaixo.
 
 Também existe uma propriedade chamada `sourcetype`, que é definida como o valor `aemcdn`.
 
@@ -276,7 +276,7 @@ Também existe uma propriedade chamada `sourcetype`, que é definida como o valo
 
 #### Logs AEM HTTPS {#https-aem}
 
-Para logs AEM (incluindo apache/dispatcher), as solicitações da Web (POSTs) serão enviadas continuamente, com uma carga json que é uma matriz de entradas de log, com os vários formatos de entrada de log conforme descrito no [artigo de log](/help/implementing/developing/introduction/logging.md). Propriedades adicionais são mencionadas na seção [Formatos de Entrada de Log](#log-format) abaixo.
+Para logs AEM (incluindo apache/dispatcher), as solicitações da Web (POSTs) serão enviadas continuamente, com uma carga json que é uma matriz de entradas de log, com os vários formatos de entrada de log, conforme descrito em [Logs para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Propriedades adicionais são mencionadas na seção [Formatos de Entrada de Log](#log-format) abaixo.
 
 Também há uma propriedade chamada `sourcetype`, que é definida como um destes valores:
 
@@ -323,7 +323,7 @@ data:
 
 ## Formatos de entrada de log {#log-formats}
 
-Consulte o [artigo de log](/help/implementing/developing/introduction/logging.md) geral para o formato de cada tipo de log respectivo (logs CDN e logs AEM, incluindo Apache/Dispatcher).
+Consulte [Logs para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md) para o formato de cada respectivo tipo de log (logs CDN e logs AEM, incluindo Apache/Dispatcher).
 
 Como os registros de vários programas e ambientes podem ser encaminhados para o mesmo destino de registro, além da saída descrita no artigo de registro, as seguintes propriedades serão incluídas em cada entrada de registro:
 
@@ -350,7 +350,7 @@ aem_tier: author
 
 Algumas organizações escolhem restringir qual tráfego pode ser recebido pelos destinos de registro.
 
-Para o log CDN, você pode adicionar os endereços IP à lista de permissões, conforme descrito em [este artigo](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se essa lista de endereços IP compartilhados for muito grande, considere enviar tráfego para um Azure Blob Store (não Adobe) em que a lógica possa ser gravada para enviar os logouts de um IP dedicado para seu destino final.
+Para o log CDN, você pode adicionar os endereços IP à lista de permissões, conforme descrito em [Documentação rápida - Lista de IP Públicos](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se essa lista de endereços IP compartilhados for muito grande, considere enviar tráfego para um Azure Blob Store (não Adobe) em que a lógica possa ser gravada para enviar os logouts de um IP dedicado para seu destino final.
 
 Para logs AEM (incluindo Apache/Dispatcher), você pode configurar o encaminhamento de logs para passar pela [rede avançada](/help/security/configuring-advanced-networking.md). Consulte os padrões dos três tipos avançados de rede abaixo, que usam um parâmetro `port` opcional, juntamente com o parâmetro `host`.
 

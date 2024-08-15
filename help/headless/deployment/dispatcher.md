@@ -4,10 +4,10 @@ description: O Dispatcher é uma camada de segurança e cache na frente dos ambi
 feature: Headless, Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 94%
+source-wordcount: '222'
+ht-degree: 85%
 
 ---
 
@@ -40,4 +40,4 @@ A solicitação de consultas persistentes é feita em um ponto de acesso diferen
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Consultas persistentes podem ser solicitadas usando `GET`, armazenando a resposta em cache no nível do Dispatcher e do CDN. Mais detalhes sobre armazenamento em cache e invalidação de cache podem ser encontrados [aqui](/help/implementing/dispatcher/caching.md).
+Consultas persistentes podem ser solicitadas usando `GET`, armazenando a resposta em cache no nível do Dispatcher e do CDN. Mais detalhes sobre armazenamento em cache e invalidação de cache podem ser encontrados em [a Introdução ao armazenamento em cache no AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).

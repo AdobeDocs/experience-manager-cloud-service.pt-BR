@@ -5,10 +5,10 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 99%
+source-wordcount: '974'
+ht-degree: 94%
 
 ---
 
@@ -21,7 +21,7 @@ Este documento fornece respostas para as perguntas mais frequentes sobre o Cloud
 
 Sim. Adicione o `maven-toolchains-plugin` com configurações adequadas para Java™ 11.
 
-O processo está documentado [aqui](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
+O processo está documentado - consulte [Assistente de Criação de Projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md#getting-started).
 
 Por exemplo, consulte o [código do projeto de amostra do wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
@@ -33,7 +33,7 @@ Sua compilação do AEM Cloud Manager pode falhar ao tentar alternar a compilaç
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 > [Help 1]
 ```
 
-Para obter instruções sobre como remover esse plug-in, consulte [esta](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/) página.
+Para obter instruções sobre como remover este plug-in, consulte [De anotações SCR para anotações OSGI](https://cqdump.joerghoh.de/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
 ## Minha compilação falha com um erro sobre RequireJavaVersion após mudar do Java™ 8 para o Java™ 11. O que posso fazer? {#build-fails-requirejavaversion}
 
@@ -61,11 +61,11 @@ Esse valor permite que a implantação subsequente ainda seja instalada quando a
 
 Você também pode definir a versão como `-SNAPSHOT` para compilações ou implantações de preparo ou de produção. O Cloud Manager define automaticamente um número de versão adequado e cria uma tag para você no Git. Se necessário, essa tag pode ser consultada posteriormente.
 
-Mais detalhes sobre o manuseio de versão estão [documentados aqui](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Para obter mais detalhes sobre o manuseio de versão, consulte [Manuseio de Versão de Projeto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Como funciona o controle de versão dos pacotes para implantações de preparo e produção? {#snapshot-version}
 
-Em implantações de preparo e produção, uma versão automática é gerada conforme [documentado aqui](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
+Em implantações de preparo e produção, uma versão automática é gerada - consulte [Manuseio de versão do projeto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Para o controle de versão personalizado em implantações de preparo e produção, defina uma versão maven adequada com três partes como `1.0.0`. Aumente a versão sempre que implantar na produção.
 

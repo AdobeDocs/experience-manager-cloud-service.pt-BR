@@ -4,9 +4,9 @@ description: Saiba mais sobre as etapas necessárias para garantir que a instala
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1900'
+source-wordcount: '1907'
 ht-degree: 6%
 
 ---
@@ -38,7 +38,7 @@ O AEM as a Cloud Service traz muitos novos recursos e possibilidades para gerenc
 
 Juntamente com essas melhorias, foram introduzidas várias diferenças entre as instalações locais do AEM e do Adobe Managed Services, em comparação com o AEM as a Cloud Service.
 
-A lista de itens na tabela abaixo é o subconjunto das alterações mais relevantes para uma migração para o AEM as a Cloud Service. Você pode consultar a lista completa de alterações importantes [aqui](/help/release-notes/aem-cloud-changes.md).
+A lista de itens na tabela abaixo é o subconjunto das alterações mais relevantes para uma migração para o AEM as a Cloud Service. Você pode consultar a lista completa de [Alterações importantes no Adobe Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 <table>
 <thead>
@@ -117,7 +117,7 @@ A lista de itens na tabela abaixo é o subconjunto das alterações mais relevan
   <tr>
     <td>Inicializadores do fluxo de trabalho</td>
     <td></td>
-    <td>Remova todos os Iniciadores de fluxo de trabalho que estão acionando o fluxo de trabalho de ativos de atualização do DAM pronto para uso ou personalizado do seu código. <br>Todos os ativos carregados na AEM as a Cloud Service serão processados pelo Serviço de Processamento de Ativos. Para ver etapas personalizadas, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> Fluxos de trabalho de processamento do Post</a> sobre como configurar fluxos de trabalho de pós-processamento.</td>
+    <td>Remova todos os Iniciadores de fluxo de trabalho que estão acionando o fluxo de trabalho de ativos de atualização do DAM pronto para uso ou personalizado do seu código. <br>Todos os ativos carregados na AEM as a Cloud Service serão processados pelo Serviço de Processamento de Ativos. Para ver etapas personalizadas, consulte <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html#post-processing-workflows"> Fluxos de Trabalho de Pós-Processamento</a> sobre como configurar fluxos de trabalho de pós-processamento.</td>
   </tr>
   <tr>
     <td>Etapas de representação personalizadas</td>

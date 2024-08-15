@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 52%
+source-wordcount: '762'
+ht-degree: 51%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 52%
 Se você estiver enfrentando o que acredita ser um comportamento incorreto ou um erro no MSM, antes de começar e solucionar problemas detalhados, certifique-se de:
 
 * Verifique as [Perguntas frequentes sobre o MSM](#faq) porque talvez seus problemas ou dúvidas já tenham sido abordados lá.
-* Verifique o [artigo de práticas recomendadas do MSM](best-practices.md), pois várias dicas são oferecidas lá, juntamente com esclarecimentos sobre alguns equívocos.
+* Verifique as [Práticas recomendadas do MSM](best-practices.md) para obter várias dicas, juntamente com esclarecimentos sobre determinados equívocos.
 
 ## Encontrar informações avançadas sobre seu blueprint e status da Live Copy {#advanced-info}
 
@@ -68,7 +68,7 @@ Aqui estão algumas perguntas frequentes relacionadas ao MSM e Live Copy.
 
 As ações de sincronização do MSM são altamente configuráveis. Quais propriedades ou componentes são modificados durante as implantações dependem diretamente das propriedades dessas configurações.
 
-Consulte [este artigo](best-practices.md) para obter mais informações sobre este tópico.
+Consulte [Práticas recomendadas do MSM](best-practices.md) para obter mais informações sobre este tópico.
 
 ### Como posso remover as permissões de implantação de um grupo de autores? {#remove-rollout-permissions}
 

@@ -4,9 +4,9 @@ description: Configuração OSGi com valores secretos e valores específicos do 
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '3302'
+source-wordcount: '3321'
 ht-degree: 1%
 
 ---
@@ -322,7 +322,7 @@ Se uma propriedade OSGi exigir valores diferentes para autor e publicação:
 * Separe as pastas OSGi `config.author` e `config.publish`, conforme descrito na [seção Resolução do Modo de Execução](#runmode-resolution).
 * Há duas opções para criar os nomes de variáveis independentes que devem ser usadas:
    * a primeira opção, que é recomendada: em todas as pastas OSGi (como `config.author` e `config.publish`) declaradas para definir valores diferentes, use o mesmo nome de variável. Por exemplo
-     `$[env:ENV_VAR_NAME;default=<value>]`, onde o padrão corresponde ao valor padrão para essa camada (autor ou publicação). Ao definir a variável de ambiente por meio da [API do Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou por meio de um cliente, diferencie as camadas usando o parâmetro &quot;service&quot;, conforme descrito nesta [documentação de referência da API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). O parâmetro &quot;service&quot; vinculará o valor da variável ao nível OSGi apropriado. Pode ser &quot;autor&quot; ou &quot;publicar&quot; ou &quot;pré-visualização&quot;.
+     `$[env:ENV_VAR_NAME;default=<value>]`, onde o padrão corresponde ao valor padrão para essa camada (autor ou publicação). Ao definir a variável de ambiente por meio da [API do Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou por meio de um cliente, diferencie as camadas usando o parâmetro &quot;service&quot;, conforme descrito na [documentação de referência da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/). O parâmetro &quot;service&quot; vinculará o valor da variável ao nível OSGi apropriado. Pode ser &quot;autor&quot; ou &quot;publicar&quot; ou &quot;pré-visualização&quot;.
    * a segunda opção, que é declarar variáveis distintas usando um prefixo como `author_<samevariablename>` e `publish_<samevariablename>`
 
 ### Exemplos de configuração {#configuration-examples}
@@ -515,14 +515,15 @@ config.dev
 
 ## Formato de API do Cloud Manager para propriedades de configuração {#cloud-manager-api-format-for-setting-properties}
 
-Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) sobre como a API deve ser configurada.
+Consulte [Adobe Cloud Manager no site da Adobe Developer](https://developer.adobe.com/experience-cloud/cloud-manager/docs/) para obter informações sobre a API do Cloud Manager e como configurá-la.
+
 >[!NOTE]
 >
 >Certifique-se de que a API Cloud Manager usada atribuiu a função &quot;Gerente de implantação - Cloud Service&quot;. Outras funções não podem executar todos os comandos abaixo.
 
 >[!TIP]
 >
->Você também pode usar o Cloud Manager para configurar variáveis de ambiente. Para obter mais informações, consulte a documentação [aqui.](/help/implementing/cloud-manager/environment-variables.md)
+>Você também pode usar o Cloud Manager para configurar variáveis de ambiente. Para obter mais informações, consulte [Variáveis de ambiente do Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
 ### Configuração de valores por meio da API {#setting-values-via-api}
 
@@ -550,7 +551,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 >[!NOTE]
 >As variáveis padrão não são definidas por meio da API, mas na própria propriedade OSGi.
 >
->Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) para obter mais informações.
+>Consulte [API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) para obter mais informações.
 
 ### Obtenção de valores por meio da API {#getting-values-via-api}
 
@@ -558,7 +559,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 GET /program/{programId}/environment/{environmentId}/variables
 ```
 
-Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) para obter mais informações.
+Consulte [API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) para obter mais informações.
 
 ### Exclusão de valores por meio da API {#deleting-values-via-api}
 
@@ -568,7 +569,7 @@ PATCH /program/{programId}/environment/{environmentId}/variables
 
 Para excluir uma variável, inclua-a com um valor vazio.
 
-Consulte [esta página](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/) para obter mais informações.
+Consulte [API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/) para obter mais informações.
 
 ### Obtendo valores por meio da linha de comando {#getting-values-via-cli}
 
@@ -594,7 +595,7 @@ $ aio cloudmanager:set-environment-variables ENVIRONMENT_ID --delete MY_VAR1 MY_
 
 >[!NOTE]
 >
->Consulte [esta página](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) para obter mais informações sobre como configurar valores usando o plug-in do Cloud Manager para a CLI do Adobe I/O.
+>Consulte [o aio-cli-plugin-cloudmanager no GitHub](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) para obter mais informações sobre como configurar valores usando o plug-in do Cloud Manager para a CLI do Adobe I/O.
 
 ### Número de variáveis {#number-of-variables}
 

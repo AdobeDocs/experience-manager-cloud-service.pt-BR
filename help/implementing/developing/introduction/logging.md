@@ -4,9 +4,9 @@ description: Saiba como usar o Logging para AEM as a Cloud Service a fim de conf
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f658c5e991c89ff4129352444ba9960d83c8884
+source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2831'
 ht-degree: 2%
 
 ---
@@ -628,7 +628,7 @@ Na solicitação de suporte, os clientes devem indicar:
 * Endereço do ponto de extremidade HEC do Splunk. Esse endpoint deve ter um certificado SSL válido e estar acessível publicamente.
 * O índice do Splunk
 * A porta do Splunk
-* O token de HEC do Splunk. Consulte [esta página](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) para obter mais informações.
+* O token de HEC do Splunk. Consulte [exemplos do Coletor de Eventos HTTP](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) para obter mais informações.
 
 As propriedades acima devem ser especificadas para cada combinação relevante de programa/tipo de ambiente. Por exemplo, se um cliente quiser ambientes de desenvolvimento, armazenamento temporário e produção, ele deverá fornecer três conjuntos de informações, conforme indicado abaixo.
 

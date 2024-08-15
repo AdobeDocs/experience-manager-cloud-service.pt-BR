@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: f81ea2b58cfa68542df957b54b1c0233b6096810
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '2687'
+source-wordcount: '2685'
 ht-degree: 3%
 
 ---
@@ -197,7 +197,7 @@ Para usar as Variações gerativas no Editor de fragmento de conteúdo:
 
    ![Exibir e gerar variações no fragmento de conteúdo](assets/cfm-generate-variations5.png)
 
-Você pode saber mais sobre como Gerar Variações [aqui](/help/generative-ai/generate-variations.md).
+Consulte [Gerar variações](/help/generative-ai/generate-variations.md) para saber mais.
 
 ### Excluir uma variação {#delete-variation}
 

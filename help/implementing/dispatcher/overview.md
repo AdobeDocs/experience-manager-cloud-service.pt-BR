@@ -4,10 +4,10 @@ description: Saiba mais sobre o fluxo de dados de entrega de conteúdo e como pu
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 93%
+ht-degree: 87%
 
 ---
 
@@ -36,4 +36,4 @@ As seções a seguir fornecem mais detalhes sobre a entrega de conteúdo:
 * [Armazenamento em cache](/help/implementing/dispatcher/caching.md)
 
 
-Informações sobre replicação do serviço de autor para o serviço de publicação estão disponíveis [aqui](/help/operations/replication.md).
+Para obter informações sobre a replicação do serviço de autoria para o serviço de publicação, consulte [Replicação](/help/operations/replication.md).

@@ -4,10 +4,10 @@ description: Notas de versão das Ferramentas de migração no AEM as a Cloud Se
 feature: Release Information
 exl-id: 668c0c66-88f5-4d74-9a2a-3bdc63b0bba7
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '149'
-ht-degree: 16%
+ht-degree: 4%
 
 ---
 
@@ -16,7 +16,8 @@ ht-degree: 16%
 Esta página descreve as Notas de versão das Ferramentas de migração no AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Para ver as notas de versão atuais do Adobe Experience Manager as a Cloud Service, clique [aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+>
+>Consulte as [Notas de versão atuais do Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md) para obter as notas de versão mais recentes.
 
 ## Ferramenta Transferência de conteúdo {#ctt-release}
 

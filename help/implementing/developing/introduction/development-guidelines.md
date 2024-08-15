@@ -4,7 +4,7 @@ description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Servi
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2745'
 ht-degree: 4%
@@ -184,7 +184,7 @@ No desenvolvimento local (usando o SDK), `/apps` e `/libs` podem ser gravados di
 
 Os clientes podem acessar o CRXDE lite no ambiente de desenvolvimento do nível do autor, mas não no ambiente de preparo ou produção. O repositório imutável (`/libs`, `/apps`) não pode ser gravado no tempo de execução, portanto, tentar fazer isso resultará em erros.
 
-Em vez disso, o Navegador do repositório pode ser iniciado no AEM as a Cloud Service Developer Console, fornecendo uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização. Leia mais sobre o Navegador do Repositório [aqui](/help/implementing/developing/tools/repository-browser.md).
+Em vez disso, o Navegador do repositório pode ser iniciado no AEM as a Cloud Service Developer Console, fornecendo uma visualização somente leitura no repositório para todos os ambientes nos níveis de criação, publicação e visualização. Para obter mais informações, consulte o [Navegador do Repositório](/help/implementing/developing/tools/repository-browser.md).
 
 Um conjunto de ferramentas para depurar ambientes de desenvolvedor do AEM as a Cloud Service está disponível no AEM as a Cloud Service Developer Console para ambientes de RDE, desenvolvimento, preparo e produção. O URL pode ser determinado ajustando os URLs de serviço do Autor ou do Publish da seguinte maneira:
 
@@ -194,7 +194,7 @@ Como atalho, o seguinte comando da CLI do Cloud Manager pode ser usado para inic
 
 `aio cloudmanager:open-developer-console <ENVIRONMENTID> --programId <PROGRAMID>`
 
-Consulte [esta página](/help/release-notes/home.md) para obter mais informações.
+Consulte as [Informações da versão](/help/release-notes/home.md) para obter mais informações.
 
 Os desenvolvedores podem gerar informações de status e resolver vários recursos.
 

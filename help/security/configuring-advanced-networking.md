@@ -4,9 +4,9 @@ description: Saiba como configurar recursos avançados de rede, como VPN ou um e
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: a21a0cda116077a3752f33aaff6dc6c180b855aa
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '5744'
+source-wordcount: '5743'
 ht-degree: 22%
 
 ---
@@ -787,7 +787,7 @@ Se uma configuração de rede avançada já estiver habilitada na região princi
 O procedimento é basicamente semelhante às instruções anteriores. No entanto, se o ambiente de produção ainda não tiver sido habilitado para redes avançadas, haverá uma oportunidade de testar a configuração, primeiro habilitando-a em um ambiente de preparo:
 
 1. Criar uma infraestrutura de rede para todas as regiões por meio de uma chamada POST para a [API de criação de infraestrutura de rede do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Network-infrastructure/operation/createNetworkInfrastructure). A única diferença na configuração JSON do conteúdo em relação à região principal será a propriedade de região.
-1. Para o ambiente de preparo, habilite e configure a rede avançada com escopo de ambiente executando `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Para obter mais informações, consulte a documentação da API [aqui](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
+1. Para o ambiente de preparo, habilite e configure a rede avançada com escopo de ambiente executando `PUT api/program/{programId}/environment/{environmentId}/advancedNetworking`. Para obter mais informações, consulte [a documentação da API](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Environment-Advanced-Networking-Configuration/operation/enableEnvironmentAdvancedNetworkingConfiguration)
 1. Se necessário, bloqueie a infraestrutura externa, de preferência por FQDN (por exemplo, `p1234.external.adobeaemcloud.com`). Caso contrário, você pode fazer isso por meio do endereço IP
 1. Se o ambiente de preparo funcionar como esperado, habilite e defina a configuração de rede avançada com escopo de ambiente para produção.
 

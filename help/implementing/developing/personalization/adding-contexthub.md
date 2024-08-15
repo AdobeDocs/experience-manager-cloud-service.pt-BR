@@ -4,9 +4,9 @@ description: Adicione o ContextHub às suas páginas para ativar os recursos do 
 exl-id: 8bfe2cff-3944-4e86-a95c-ebf1cb13913c
 feature: Developing, Personalization
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Os candidatos de armazenamento personalizado podem definir funções adicionais 
 >
 >Por padrão, o ContextHub não reconhece o logon atual usado em servidores de publicação e esses usuários são considerados pelo ContextHub como &quot;Anônimos&quot;.
 >
->Você pode tornar o ContextHub ciente dos usuários conectados ao carregar o armazenamento de perfil. Consulte [código de amostra no GitHub aqui](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
+>Você pode tornar o ContextHub ciente dos usuários conectados ao carregar o armazenamento de perfil. Consulte o código de exemplo: [aem-sample-we-retail no GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Eventos do ContextHub {#contexthub-eventing}
 

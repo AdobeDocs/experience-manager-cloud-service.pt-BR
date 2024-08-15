@@ -4,9 +4,9 @@ description: Saiba como substituir a página de erro padrão hospedando arquivos
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 3a10a0b8c89581d97af1a3c69f1236382aa85db0
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '364'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ Antes de substituir a página de erro padrão, é necessário fazer o seguinte:
 
 1. Crie um arquivo com o nome `cdn.yaml` ou similar, fazendo referência à seção de sintaxe abaixo.
 
-1. Coloque o arquivo em algum lugar em uma pasta de nível superior chamada *config* ou similar, conforme descrito no [artigo sobre o pipeline de configuração](/help/operations/config-pipeline.md#folder-structure).
+1. Coloque o arquivo em algum lugar em uma pasta de nível superior chamada *config* ou similar, conforme descrito em [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#folder-structure).
 
-1. Crie um pipeline de configuração no Cloud Manager, conforme descrito no [artigo sobre configuração de pipeline](/help/operations/config-pipeline.md#managing-in-cloud-manager).
+1. Crie um pipeline de configuração no Cloud Manager, conforme descrito em [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 1. Implante a configuração.
 
@@ -47,7 +47,7 @@ data:
       cssUrl: https://www.example.com/error.css
       jsUrl: https://www.example.com/error.js
 ```
-Consulte o [artigo sobre configuração de pipeline](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição das propriedades acima do nó de dados. O valor da propriedade kind deve ser *CDN* e a propriedade `version` deve ser definida como *1*.
+Consulte [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição das propriedades acima do nó de dados. O valor da propriedade kind deve ser *CDN* e a propriedade `version` deve ser definida como *1*.
 
 
 | Nome | Propriedades permitidas | Significado |

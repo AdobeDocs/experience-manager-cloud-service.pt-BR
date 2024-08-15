@@ -4,9 +4,9 @@ description: Saiba como usar a CDN gerenciada pelo AEM e como apontar sua própr
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 655b92f0fd3c6fb69bdd9343719537d6328fa7be
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1555'
 ht-degree: 16%
 
 ---
@@ -178,7 +178,7 @@ O CDN gerenciado pelo AEM adiciona cabeçalhos a cada solicitação com:
 >
 >Se houver uma CDN gerenciada pelo cliente, esses cabeçalhos refletirão a localização do servidor proxy CDN do cliente em vez do cliente real. Portanto, para CDN gerenciada pelo cliente, os cabeçalhos de geolocalização devem ser gerenciados pela CDN do cliente.
 
-Os valores para os códigos de países são os códigos Alpha-2 descritos [aqui](https://en.wikipedia.org/wiki/ISO_3166-1).
+Os valores para os códigos de país são os códigos Alpha-2 descritos em [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-1).
 
 Os valores para os códigos de continente são:
 

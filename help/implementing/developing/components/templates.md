@@ -4,9 +4,9 @@ description: Os modelos de página são usados ao criar uma página que é usada
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3267'
+source-wordcount: '3268'
 ht-degree: 4%
 
 ---
@@ -357,7 +357,7 @@ When creating an editable template, the value is copied from the template type t
 
 Se você tiver criado um modelo que possa servir como base de outros modelos, poderá copiá-lo como um tipo de modelo.
 
-1. Crie um modelo como faria com qualquer Modelo de página [conforme documentado aqui](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author), que servirá como base para o seu tipo de modelo.
+1. Crie um modelo como faria com qualquer Modelo de página. Consulte [Criação de Modelos de Página](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author). Isso servirá como base para o tipo de template.
 1. Usando o CRXDE Lite, copie o modelo criado do nó `templates` para o nó `template-types` na [pasta de modelo](#template-folders).
 1. Exclua o modelo do nó `templates` na [pasta de modelo](#template-folders).
 1. Na cópia do modelo que está sob o nó `template-types`, exclua todas as propriedades `cq:template` e `cq:templateType` de todos os nós `jcr:content`.

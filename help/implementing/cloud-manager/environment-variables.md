@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ed166aa753d4fb5c6fb1573032186e3e14f375df
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 77%
+source-wordcount: '988'
+ht-degree: 76%
 
 ---
 
@@ -132,4 +132,4 @@ As variáveis e os segredos comuns do ambiente podem ser usados nas [configuraç
 
 ### Variáveis de pipeline {#pipeline}
 
-Além das variáveis de ambiente, também há variáveis de pipeline, que são expostas durante a fase de criação. [Saiba mais sobre variáveis de pipeline aqui](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
+Além das variáveis de ambiente, também há variáveis de pipeline, que são expostas durante a fase de criação. Saiba mais sobre as variáveis de pipeline em [Ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

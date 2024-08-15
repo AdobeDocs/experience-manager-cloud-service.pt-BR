@@ -4,9 +4,9 @@ description: Esta página descreve como navegar até o Provedor de Serviços Scr
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 feature: Administering Screens
 role: Admin, Developer, User
-source-git-commit: 5452a02ed20d70c09728b3e34f248c7d37fc4668
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '382'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ A seção a seguir mostra como configurar e configurar o Provedor de Serviços S
 
 Siga as etapas abaixo para configurar o Provedor de Serviços Screens:
 
-1. Navegue até o Provedor de Serviços Screens [aqui](https://experience.adobe.com/screens).
+1. Navegue até o [Provedor de Serviços da Screens](https://experience.adobe.com/screens).
 
    >[!CAUTION]
    >Se você tiver acesso a várias organizações, verifique se fez logon na Organização correta. Para alterar a organização, clique no nome da organização no canto superior direito da tela e escolha a organização correta que você precisa acessar.

@@ -4,9 +4,9 @@ description: Esta página descreve como criar e gerenciar canais no Screens as a
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 feature: Authoring Screens
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1102'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ Os seguintes modelos estão disponíveis durante o uso do assistente de canal **
 
 Esse recurso permite definir um agendamento de ativação padrão para um canal e usá-lo por padrão para cada atribuição de uma exibição. Isso fornece um método para que a complicada definição de agendamento não precise ser repetida.
 
-1. Navegue até o Provedor de Serviços Screens [aqui](https://experience.adobe.com/screens).
+1. Navegue até o [Provedor de Serviços da Screens](https://experience.adobe.com/screens).
 
 ### Criar detalhes de atribuição padrão para um canal {#create-default}
 

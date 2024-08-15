@@ -4,10 +4,10 @@ description: Saiba mais sobre os conectores, o que eles podem fazer e como imple
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 96%
+source-wordcount: '936'
+ht-degree: 94%
 
 ---
 
@@ -60,7 +60,7 @@ Para dar suporte a implantações contínuas, os pacotes do AEM as a Cloud Servi
 * `/apps`
 * `/content` e `/conf`
 
-Os conectores devem seguir essas diretrizes de pacotes, descritas [neste artigo](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Os conectores existentes também devem ser alterados para estarem em conformidade.
+Os conectores devem seguir essas diretrizes de pacotes, que estão descritas em [Estrutura de projeto do AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md). Os conectores existentes também devem ser alterados para estarem em conformidade.
 
 Além disso, somente a Adobe deve gravar código no `/libs`, com clientes e parceiros escrevendo em `/apps`.
 

@@ -4,7 +4,7 @@ description: Saiba como facilitar a comunicação entre um servidor de terceiros
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2089'
 ht-degree: 0%
@@ -25,7 +25,7 @@ O fluxo de servidor para servidor é descrito abaixo, juntamente com um fluxo si
 
 ## O fluxo de servidor para servidor {#the-server-to-server-flow}
 
-Usuários com uma função de administrador da organização IMS e que são membros do Perfil de produto Usuários do AEM ou Administradores do AEM no AEM Author podem gerar um conjunto de credenciais do AEM as a Cloud Service. Cada credencial é uma carga JSON que inclui um certificado (a chave pública), uma chave privada e uma conta técnica que consiste em um `clientId` e `clientSecret`. Essas credenciais podem ser recuperadas posteriormente por um usuário com a função de administrador de ambiente do AEM as a Cloud Service e devem ser instaladas em um servidor não AEM e tratadas cuidadosamente como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar a uma API do AEM as a Cloud Service. Os dados são usados para criar um token JWT assinado, que é substituído pelo Adobe Identity Management Services (IMS) por um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação de portador para fazer solicitações à AEM as a Cloud Service. Por padrão, o certificado nas credenciais expira após um ano, mas elas podem ser atualizadas quando necessário, conforme descrito [aqui](#refresh-credentials).
+Usuários com uma função de administrador da organização IMS e que são membros do Perfil de produto Usuários do AEM ou Administradores do AEM no AEM Author podem gerar um conjunto de credenciais do AEM as a Cloud Service. Cada credencial é uma carga JSON que inclui um certificado (a chave pública), uma chave privada e uma conta técnica que consiste em um `clientId` e `clientSecret`. Essas credenciais podem ser recuperadas posteriormente por um usuário com a função de administrador de ambiente do AEM as a Cloud Service e devem ser instaladas em um servidor não AEM e tratadas cuidadosamente como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar a uma API do AEM as a Cloud Service. Os dados são usados para criar um token JWT assinado, que é substituído pelo Adobe Identity Management Services (IMS) por um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação de portador para fazer solicitações à AEM as a Cloud Service. Por padrão, o certificado nas credenciais expira após um ano, mas elas podem ser atualizadas quando necessário. Consulte [Atualizar Credenciais](#refresh-credentials).
 
 O fluxo de servidor para servidor envolve as seguintes etapas:
 

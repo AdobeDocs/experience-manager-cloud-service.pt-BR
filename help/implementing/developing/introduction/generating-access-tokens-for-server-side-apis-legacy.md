@@ -5,7 +5,7 @@ hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1359'
 ht-degree: 0%
@@ -25,7 +25,7 @@ O fluxo de servidor para servidor é descrito abaixo, juntamente com um fluxo si
 
 ## O fluxo de servidor para servidor {#the-server-to-server-flow}
 
-Um usuário com uma função de administrador da organização IMS e que também é membro do Perfil de produto Usuários do AEM ou Administradores do AEM no AEM Author pode gerar uma credencial do AEM as a Cloud Service. Essa credencial pode ser recuperada posteriormente por um usuário com a função de administrador do Ambiente AEM as a Cloud Service e deve ser instalada no servidor e precisa ser tratada cuidadosamente como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar a uma API do AEM as a Cloud Service. Os dados são usados para criar um token JWT assinado, que é substituído pelo IMS por um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação de portador para fazer solicitações à AEM as a Cloud Service. As credenciais expiram após um ano por padrão, mas podem ser atualizadas quando necessário, conforme descrito [aqui](#refresh-credentials).
+Um usuário com uma função de administrador da organização IMS e que também é membro do Perfil de produto Usuários do AEM ou Administradores do AEM no AEM Author pode gerar uma credencial do AEM as a Cloud Service. Essa credencial pode ser recuperada posteriormente por um usuário com a função de administrador do Ambiente AEM as a Cloud Service e deve ser instalada no servidor e precisa ser tratada cuidadosamente como uma chave secreta. Esse arquivo de formato JSON contém todos os dados necessários para integrar a uma API do AEM as a Cloud Service. Os dados são usados para criar um token JWT assinado, que é substituído pelo IMS por um token de acesso IMS. Esse token de acesso pode ser usado como um token de autenticação de portador para fazer solicitações à AEM as a Cloud Service. As credenciais expiram após um ano por padrão, mas podem ser atualizadas quando necessário. Consulte [Atualizar Credenciais](#refresh-credentials).
 
 O fluxo de servidor para servidor envolve as seguintes etapas:
 

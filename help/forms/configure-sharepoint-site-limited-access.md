@@ -4,9 +4,9 @@ Description: Learn how to configure SharePoint Site with limited access using th
 keywords: Como configurar o SharePoint Site com acesso limitado?, Configurar o SharePoint com acesso limitado, Usar escopo de autorização para limitar o acesso ao SharePoint Site.
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 4962c058e2cc2135dd3626655ba7b21dbdcbd455
+source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '817'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ Para obter informações sobre como recuperar `Client ID`, `Client Secret` e `Te
 
 Para usar a permissão de API `Sites.Selected`, é necessário um aplicativo registrado no portal do Azure com as permissões apropriadas definidas para o SharePoint Online Sites. Essa configuração garante que o aplicativo tenha a autorização necessária para interagir com o site do SharePoint dentro do escopo definido, fornecendo assim o acesso limitado necessário.
 
-Consulte o [artigo](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) para obter instruções sobre como desenvolver aplicativos que usam permissões `Sites.Selected` para o SharePoint Online Sites.
+Consulte o [artigo do blog - Desenvolver aplicativos que usam Sites.Permissões selecionadas para sites SPO](https://techcommunity.microsoft.com/t5/microsoft-sharepoint-blog/develop-applications-that-use-sites-selected-permissions-for-spo/ba-p/3790476) para obter instruções sobre como desenvolver aplicativos que usam `Sites.Selected` permissões para o SharePoint Online Sites.
 
 ### Definir o escopo de autorização na instância do AEM
 

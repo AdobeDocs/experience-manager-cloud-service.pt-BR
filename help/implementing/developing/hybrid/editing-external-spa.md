@@ -4,7 +4,7 @@ description: Este documento descreve as etapas recomendadas para fazer upload de
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 1%
@@ -362,7 +362,7 @@ Para habilitar a edição no AEM para este exemplo SPA, as seguintes etapas são
 
 ## Limitações da estrutura {#framework-limitations}
 
-O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [encontrado aqui](https://github.com/shellscape/webpack-manifest-plugin). O componente RemotePage, no entanto, só foi testado para funcionar com a estrutura React (e Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
+O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [webpack-manifest-plugin no GitHub](https://github.com/shellscape/webpack-manifest-plugin). O componente RemotePage, no entanto, só foi testado para funcionar com a estrutura React (e Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
 
 ## Recursos adicionais {#additional-resources}
 

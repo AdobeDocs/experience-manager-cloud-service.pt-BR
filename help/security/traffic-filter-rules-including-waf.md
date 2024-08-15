@@ -1,12 +1,12 @@
 ---
-title: Regras de filtro de tráfego incluindo regras WAF
-description: Configuração das regras de filtro de tráfego incluindo as regras do Web Application Firewall (WAF).
+title: Regras de filtro de tráfego, incluindo regras do WAF
+description: Configuração das regras de filtro de tráfego, incluindo as regras do Web Application Firewall (WAF).
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 7ce397b2564373a006d7f413409d29265c74d768
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '3932'
+source-wordcount: '3937'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ As regras de filtro de tráfego podem ser usadas para bloquear ou permitir solic
 
 A maioria dessas regras de filtro de tráfego está disponível para todos os clientes do AEM as a Cloud Service Sites e do Forms. Eles operam principalmente em propriedades de solicitação e cabeçalhos de solicitação, incluindo IP, nome do host, caminho e agente do usuário.
 
-Uma subcategoria de regras de filtro de tráfego requer uma licença de Segurança aprimorada ou uma licença WAF-DDoS Protection. Essas regras poderosas são conhecidas como regras de filtro de tráfego do WAF (Firewall do Aplicativo Web) (ou regras do WAF abreviadas) e têm acesso aos [Sinalizadores do WAF](#waf-flags-list) descritos mais adiante neste artigo.
+Uma subcategoria de regras de filtro de tráfego requer uma licença de Segurança aprimorada ou uma licença de Proteção WAF-DDoS. Essas regras poderosas são conhecidas como regras de filtro de tráfego do WAF (Firewall do Aplicativo Web) (ou regras do WAF abreviadas) e têm acesso aos [Sinalizadores do WAF](#waf-flags-list) descritos mais adiante neste artigo.
 
 As regras de filtro de tráfego podem ser implantadas por meio dos pipelines de configuração do Cloud Manager para desenvolvimento, preparo e tipos de ambiente de produção em programas de produção (que não são de sandbox). O suporte a RDEs virá no futuro.
 
@@ -101,16 +101,16 @@ Veja a seguir um processo completo recomendado de alto nível para criar as regr
          action: block
    ```
 
-   Consulte o [artigo sobre configuração de pipeline](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição das propriedades acima do nó `data`. O valor da propriedade `kind` deve ser definido como *CDN* e a versão, como `1`.
+   Consulte [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição das propriedades acima do nó `data`. O valor da propriedade `kind` deve ser definido como *CDN* e a versão, como `1`.
 
 
-1. Se as regras do WAF estiverem licenciadas, você deverá habilitar o recurso no Cloud Manager, conforme descrito abaixo, para os cenários de programa novo e existente.
+1. Se as regras do WAF estiverem licenciadas, você deverá ativar o recurso no Cloud Manager, conforme descrito abaixo, para os cenários de programa novo e existente.
 
    1. Para configurar o WAF em um novo programa, marque a caixa de seleção **Proteção do WAF-DDOS** na guia **Segurança** ao [adicionar um programa de produção.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md)
 
    1. Para configurar o WAF em um programa existente, [edite seu programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) e, na guia **Segurança**, desmarque ou marque a opção **WAF-DDOS** a qualquer momento.
 
-1. Crie um pipeline de configuração no Cloud Manager, conforme descrito no artigo [configurar pipeline.](/help/operations/config-pipeline.md#managing-in-cloud-manager) O pipeline referenciará uma pasta `config` de nível superior com o arquivo `cdn.yaml` colocado em algum lugar abaixo, como [descrito aqui](/help/operations/config-pipeline.md#folder-structure).
+1. Crie um pipeline de configuração no Cloud Manager, conforme descrito no artigo [configurar pipeline.](/help/operations/config-pipeline.md#managing-in-cloud-manager) O pipeline referenciará uma pasta `config` de nível superior com o arquivo `cdn.yaml` colocado em algum lugar abaixo, consulte [Uso de Pipelines de Configuração](/help/operations/config-pipeline.md#folder-structure).
 
 ## Sintaxe das regras de filtro de tráfego {#rules-syntax}
 
@@ -215,7 +215,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* A Adobe recomenda o uso de [regex101](https://regex101.com/) e [Fastly Fiddle](https://fiddle.fastly.dev/) ao trabalhar com regex. Você também pode saber mais sobre como o Fastly lida com regex neste [artigo](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* A Adobe recomenda o uso de [regex101](https://regex101.com/) e [Fastly Fiddle](https://fiddle.fastly.dev/) ao trabalhar com regex. Você também pode saber mais sobre como o Fastly lida com o regex no [fastly documentation - Regular expressions in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Estrutura de ação {#action-structure}
@@ -232,7 +232,7 @@ As ações são priorizadas de acordo com seus tipos na tabela a seguir, que é 
 | **bloco** | `status, wafFlags` (opcional e mutuamente exclusivo), `alert` (opcional) | se wafFlags não estiver presente, retorna o erro HTTP ignorando todas as outras propriedades, o código de erro é definido pela propriedade de status ou o padrão é 406. Se wafFlags estiver presente, ele ativará as proteções especificadas do WAF e continuará o processamento de regras. <br>Se um alerta for especificado, uma notificação da Central de Ações será enviada se a regra for acionada 10 vezes em uma janela de 5 minutos. Quando um alerta for acionado para uma regra específica, ele não será acionado novamente até o dia seguinte (UTC). |
 | **log** | `wafFlags` (opcional), `alert` (opcional) | registra o fato de que a regra foi acionada, caso contrário, não afeta o processamento. wafFlags não tem efeito. <br>Se um alerta for especificado, uma notificação da Central de Ações será enviada se a regra for acionada 10 vezes em uma janela de 5 minutos. Quando um alerta for acionado para uma regra específica, ele não será acionado novamente até o dia seguinte (UTC). |
 
-### Lista de Sinalizadores do WAF {#waf-flags-list}
+### Lista de sinalizadores do WAF {#waf-flags-list}
 
 A propriedade `wafFlags`, que pode ser usada nas regras de filtro de tráfego licenciáveis do WAF, pode fazer referência ao seguinte:
 
@@ -545,7 +545,7 @@ As regras se comportam da seguinte maneira:
 
 * O nome de regra declarado pelo cliente de qualquer regra correspondente está listado no atributo `match`.
 * O atributo `action` determina se as regras bloqueiam, permitem ou registram em log.
-* Se o WAF estiver licenciado e habilitado, o atributo `waf` listará todos os sinalizadores do WAF (por exemplo, SQLI) que foram detectados. Isso é verdade independentemente de os sinalizadores do WAF terem sido listados em alguma regra. Isso é para fornecer insight sobre novas regras em potencial a serem declaradas.
+* Se o WAF estiver licenciado e habilitado, o atributo `waf` listará todos os sinalizadores do WAF (por exemplo, SQLI) que foram detectados. Isso é verdadeiro independentemente de os sinalizadores do WAF terem sido listados em alguma regra. Isso é para fornecer insight sobre novas regras em potencial a serem declaradas.
 * Se nenhuma regra declarada pelo cliente for correspondente e nenhuma regra waf for correspondente, a propriedade `rules` ficará em branco.
 
 Como observado anteriormente, as correspondências de regras do WAF só aparecem nos logs CDN para erros e passagens de CDN, não para ocorrências.
@@ -734,7 +734,7 @@ O tutorial o guiará por:
 
 * Definição do pipeline de configuração do Cloud Manager
 * Uso de ferramentas para simular tráfego mal-intencionado
-* Regras de filtro de tráfego declarativo, incluindo regras WAF
+* Declaração de regras de filtro de tráfego, incluindo regras do WAF
 * Análise de resultados com ferramentas de painel
 * Práticas recomendadas
 

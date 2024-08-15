@@ -4,10 +4,10 @@ description: Entenda a autenticação necessária para consultas remotas de Grap
 feature: Headless, Content Fragments,GraphQL API
 exl-id: dfeae661-06a1-4001-af24-b52ae12d625f
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '231'
+ht-degree: 96%
 
 ---
 
@@ -41,4 +41,4 @@ Todas as solicitações feitas usando o token de acesso serão realizadas *pela 
 
 Isso significa que é necessário verificar se a conta tem as permissões necessárias para executar consultas de GraphQL.
 
-É possível verificar essas permissões usando o GraphiQL na instância local. Mais detalhes sobre [permissões podem ser encontrados aqui](/help/headless/security/permissions.md).
+É possível verificar essas permissões usando o GraphiQL na instância local. Para obter mais detalhes, consulte [Considerações de permissão para conteúdo headless](/help/headless/security/permissions.md).
