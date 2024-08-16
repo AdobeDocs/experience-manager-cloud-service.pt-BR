@@ -9,7 +9,7 @@ role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ O editor de modelos de fragmento de conteúdo é onde você configura os tipos d
 
 Dessa forma, é possível adicionar quantos campos forem necessários ao seu modelo para dar suporte a qualquer estrutura de dados necessária. Os tipos de campos de dados variam, mas o processo de adicioná-los ao modelo permanece o mesmo.
 
-Avançe para a próxima seção e adicione os campos necessários para concluir e salvar o modelo **Aventura**
+Avance para a próxima seção e adicione os campos necessários para concluir e salvar o modelo **Aventura**
 
 ![Etapas um, dois e três da adição de campos ao modelo](assets/do-not-localize/define-model-fields.png)
 
@@ -100,7 +100,7 @@ Siga as mesmas etapas descritas acima para acrescentar esses campos adicionais. 
 
    * **Renderizar como:** **Referência de conteúdo** - Ao criar uma aventura, esse campo aponta para o ativo de imagem que representa essa viagem.
    * **Rótulo do campo:** `Image` - O rótulo que é exibido para esse campo ao criar uma aventura.
-   * **Caminho raiz:** `/content/dam/aem-demo-assets/en` - Especifica um caminho de ponto inicial ao procurar ativos com o Seletor de ativos.
+   * **Caminho raiz:** `/content/dam/aem-demo-assets/en` - especifica um caminho de ponto de partida ao navegar por ativos com o Seletor de ativos.
 
 1. Após adicionar os campos necessários para o modelo de fragmento de conteúdo, clique em **Salvar** na parte superior direita da janela.
 
