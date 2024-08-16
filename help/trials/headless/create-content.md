@@ -7,9 +7,9 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -35,13 +35,13 @@ ht-degree: 81%
 
 Os fragmentos de conteúdo representam o conteúdo headless e são baseados em estruturas predefinidas, chamadas de modelos de fragmento de conteúdo. Você já criou um modelo em um módulo anterior.
 
-Neste módulo, você cria um Fragmento de conteúdo com base nesse modelo usando o console de Fragmentos de conteúdo. Pense no console de fragmentos de conteúdo como uma biblioteca de conteúdo headless. Use-o para criar novos fragmentos de conteúdo e gerenciar fragmentos existentes.
+Neste módulo, você criará um fragmento de conteúdo com base nesse modelo, usando o console de Fragmento de conteúdo. Pense no console de fragmentos de conteúdo como uma biblioteca de conteúdo headless. Use-o para criar novos fragmentos de conteúdo e gerenciar fragmentos existentes.
 
-O console de Fragmentos de conteúdo é usado para criar e editar conteúdo headless em canais de entrega e independentemente do contexto, que pode ser o método mais eficaz em muitos casos de criação. Em um módulo posterior, exploraremos a edição de conteúdo headless no contexto e no local.
+O console de Fragmento de conteúdo é usado para criar e editar conteúdo headless em canais de entrega e independentemente do contexto, que pode ser o método mais eficaz em muitos casos de criação. Em um módulo posterior, exploraremos a edição de conteúdo headless no contexto e no local.
 
-1. Selecione o botão **Criar** na parte superior direita do console.
+1. Selecione o botão **Criar** no canto superior direito do console.
 
-1. A caixa de diálogo **Novo fragmento de conteúdo** é aberta, onde você pode começar a criar um fragmento de conteúdo. O **Local** é automaticamente preenchido com a seção na qual o novo conteúdo será salvo.
+1. A caixa de diálogo **Novo fragmento de conteúdo** será aberta e você poderá começar a criar um Fragmento de conteúdo. O **Local** é automaticamente preenchido com a seção na qual o novo conteúdo será salvo.
 
 1. No menu suspenso **Modelo de Fragmentos de conteúdo**, selecione o modelo de Fragmento de conteúdo **Aventura** criado anteriormente.
 
@@ -73,7 +73,7 @@ Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos d
 
 1. Forneça uma **Imagem** que seja representativa da viagem tocando ou clicando em **Adicionar ativo** no campo **Imagem**.
 
-1. Na janela pop-up de ativos, selecione **Procurar no Assets** para selecionar um ativo existente na biblioteca de ativos.
+1. No pop-up do ativo, selecione **Procurar ativos** para selecionar um ativo existente na biblioteca de ativos.
 
    ![Adicionar ativo](assets/do-not-localize/add-asset.png)
 
@@ -81,17 +81,17 @@ Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos d
 
 1. O conteúdo da pasta **cycling-tuscany** será exibido à direita. Selecione a imagem `ADOBESTOCK_141786166.JPEG`.
 
-1. Selecione **Selecionar**.
+1. Clique em **Selecionar**.
 
    ![Selecionar ativo](assets/do-not-localize/select-asset.png)
 
 1. A imagem selecionada será mostrada no fragmento de conteúdo. O editor salvará as alterações automaticamente.
 
-1. Quando terminar de adicionar o conteúdo, selecione o botão **Publish** na parte superior direita do editor. Isso disponibiliza o fragmento de conteúdo para ser consumido por aplicativos externos. Em seguida, selecione **Agora** no menu suspenso. Também é possível agendar sua publicação para um momento posterior.
+1. Quando terminar de adicionar conteúdo, selecione o botão **Publicar** no canto superior direito do editor. Isso disponibiliza o fragmento de conteúdo para ser consumido por aplicativos externos. Em seguida, selecione **Agora** no menu suspenso. Também é possível agendar sua publicação para um momento posterior.
 
    ![Publicar conteúdo](assets/do-not-localize/publish.png)
 
-1. A caixa de diálogo **Publicar fragmentos de conteúdo** será exibida. O AEM executa automaticamente uma verificação de referência para garantir que todos os recursos necessários sejam publicados para o fragmento de conteúdo. Nesse caso, também será necessário publicar o modelo criado. Selecione **Publish**.
+1. A caixa de diálogo **Publicar fragmentos de conteúdo** será exibida. O AEM executa automaticamente uma verificação de referência para garantir que todos os recursos necessários sejam publicados para o fragmento de conteúdo. Nesse caso, também será necessário publicar o modelo criado. Selecione **Publicar**.
 
    ![Publicação e verificação de referência](assets/do-not-localize/publish-confirm.png)
 

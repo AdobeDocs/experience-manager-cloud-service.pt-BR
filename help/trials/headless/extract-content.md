@@ -7,9 +7,9 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1069'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 89%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
->title="Iniciar o Explorer GraphQL"
+>title="Iniciar o GraphQL Explorer"
 >abstract="O GraphQL fornece uma API baseada em consultas que permite que os aplicativos clientes externos consultem apenas o conteúdo necessário no AEM, usando uma única chamada de API. Siga este módulo para saber como executar dois tipos diferentes de consultas. Em seguida, saiba como recuperar o conteúdo do fragmento de conteúdo criado no módulo anterior.<br><br>Inicie esse módulo em uma nova guia clicando abaixo."
 
 >[!CONTEXTUALHELP]
@@ -33,7 +33,7 @@ ht-degree: 89%
 
 ## Consultar uma lista de conteúdo de amostra {#list-query}
 
-O Explorer GraphQL é iniciado em uma nova guia. Aqui, é possível criar e validar consultas com o seu conteúdo headless antes de usá-las para fornecer conteúdo ao seu aplicativo ou site.
+O GraphQL Explorer é iniciado em uma nova guia. Aqui, é possível criar e validar consultas com o seu conteúdo headless antes de usá-las para fornecer conteúdo ao seu aplicativo ou site.
 
 1. Sua avaliação do AEM Headless vem com um ponto de acesso pré-carregado com fragmentos de conteúdo, do qual você pode extrair conteúdo para fins de teste. Certifique-se de que o ponto de acesso **Ativos de demonstração do AEM** esteja selecionado no menu suspenso **Ponto de acesso** no canto superior direito do editor.
 
@@ -72,7 +72,7 @@ Você acabou de validar uma consulta de lista que contém uma lista completa de 
 
 ## Consultar uma parte específica do conteúdo de amostra {#bypath-query}
 
-A execução de uma consulta byPath permite recuperar o conteúdo de um Fragmento de conteúdo específico. As páginas de detalhes do produto e as que se concentram em um conjunto específico de conteúdo normalmente exigem esse tipo de consulta.
+A execução de uma consulta byPath permite recuperar o conteúdo de um fragmento de conteúdo específico. As páginas de detalhes do produto e as que se concentram em um conjunto específico de conteúdo normalmente exigem esse tipo de consulta.
 
 1. Copie o seguinte trecho de código para uma consulta byPath do ponto de acesso pré-carregado **Ativos de demonstração do AEM**.
 
@@ -121,9 +121,9 @@ Agora que executou os dois tipos principais de consulta, você está pronto para
 
 1. Defina os itens que a consulta deve conter para o modelo de fragmento de conteúdo selecionado. Novamente, insira um colchete de abertura `{` e pressione Ctrl+Barra de espaço ou Option+Barra de espaço para obter uma lista de preenchimento automático. Selecione `items` nas opções.
 
-1. Selecione o botão **Adornar** para formatar automaticamente seu código para facilitar a leitura.
+1. Selecione o botão **Adornar** para formatar automaticamente o seu código e facilitar a leitura.
 
-1. Após a conclusão, selecione o botão **Reproduzir** na parte superior esquerda do editor para executar a consulta. O editor preenche automaticamente os `items`, que são brevemente destacados em amarelo, e a consulta é executada.
+1. Depois de concluir, selecione o botão **Reproduzir** no canto superior esquerdo do editor para executar a consulta. O editor preenche automaticamente os `items`, que são brevemente destacados em amarelo, e a consulta é executada.
 
 1. Os resultados são exibidos no painel direito, ao lado do editor de consultas.
 
@@ -165,7 +165,7 @@ Você criará uma consulta persistente que incluirá dados que gostaria de consu
 
    >[!NOTE]
    >
-   >Se você não usou as mesmas descrições de campo descritas nos módulos anteriores, atualize os nomes de campo nesta consulta.
+   >Se não tiver usado as mesmas descrições de campo descritas nos módulos anteriores, atualize os nomes de campo nesta consulta.
    >
    >Use o recurso de preenchimento automático (Ctrl+Espaço ou Option+Espaço) do GraphQL conforme descrito anteriormente para ajudar a identificar as propriedades disponíveis.
 
@@ -185,7 +185,7 @@ Você criará uma consulta persistente que incluirá dados que gostaria de consu
 
 1. A consulta é persistida como confirmado por uma mensagem em banner na parte inferior da tela. A consulta também aparece agora no painel esquerdo de consultas persistentes na janela.
 
-1. Para que a consulta persistente esteja disponível publicamente, ela deve ser publicada, de modo semelhante a como os fragmentos de conteúdo precisam ser publicados. Clique em **Publish** na parte superior direita do editor de consulta para publicar a consulta.
+1. Para que a consulta persistente esteja disponível publicamente, ela precisará ser publicada, assim como seus fragmentos de conteúdo precisam ser publicados. Clique em **Publicar** no canto superior direito do editor de consultas para publicar a consulta.
 
 1. A publicação é confirmada por uma notificação em banner.
 
