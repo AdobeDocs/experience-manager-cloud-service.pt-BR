@@ -1,27 +1,27 @@
 ---
 title: Painel de auditoria de experiência
-description: Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO, por meio de uma interface de painel clara e informativa.
+description: Descubra como a Auditoria de experiência valida seu processo de implantação, garantindo que as alterações atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO. Ele fornece uma interface de painel clara e informativa para rastrear essas métricas.
 exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
+source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
 workflow-type: tm+mt
-source-wordcount: '1995'
-ht-degree: 6%
+source-wordcount: '1927'
+ht-degree: 7%
 
 ---
 
 
 # Painel de auditoria de experiência {#experience-audit-dashboard}
 
-Saiba como a Auditoria de experiência valida seu processo de implantação e ajuda a garantir que as alterações implantadas atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO, por meio de uma interface de painel clara e informativa.
+Descubra como a Auditoria de experiência valida seu processo de implantação, garantindo que as alterações atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO. Ele fornece uma interface de painel clara e informativa para rastrear essas métricas.
 
 >[!NOTE]
 >
->Este recurso só está disponível por meio do [programa de adoção antecipada.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Este recurso só está disponível para [o programa de adoção antecipada](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
 >
->Para obter detalhes sobre o recurso existente de Auditoria de experiência do AEM as a Cloud Service, consulte o documento [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
+>Para obter detalhes sobre o recurso Auditoria de experiência existente para o AEM as a Cloud Service, consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ## Visão geral {#overview}
 
@@ -41,9 +41,9 @@ A Auditoria de experiência é disponibilizada pelo [Google Lighthouse](https://
 
 A Auditoria de experiência está disponível para o Cloud Manager:
 
-* Pipelines de produção de sites, por padrão
-* Desenvolvimento de pipelines de pilha completa, opcionalmente
-* Pipelines de front-end de desenvolvimento, opcionalmente
+* (Padrão) Pipelines de produção de sites
+* (Opcional) Desenvolvimento de pipelines de pilha completa
+* (Opcional) Desenvolvimento de pipelines de front-end
 
 Consulte a [seção Configuração](#configuration) para obter mais informações sobre como configurar a auditoria para os ambientes opcionais.
 
@@ -51,19 +51,19 @@ As auditorias são executadas como parte do pipeline. As auditorias também pode
 
 ## Configuração {#configuration}
 
-A Auditoria de experiência está disponível por padrão para pipelines de produção. Ele pode ser ativado opcionalmente para pipelines de pilha completa e front-end de desenvolvimento. Em todos os casos, é necessário definir quais caminhos de conteúdo são avaliados durante a execução do pipeline.
+A Auditoria de experiência está disponível por padrão para pipelines de produção. Ele pode ser ativado opcionalmente para o desenvolvimento de pipelines de pilha completa e front-end. Em todos os casos, é necessário definir quais caminhos de conteúdo são avaliados durante a execução do pipeline.
 
 1. Dependendo do tipo de pipeline que você deseja configurar, siga as instruções para:
 
-   * Adicione um novo [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) se desejar definir os caminhos a serem avaliados pela auditoria.
+   * Adicione um novo [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para definir os caminhos que você deseja que a auditoria avalie.
    * Adicione um novo [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desejar habilitar a auditoria em um pipeline de front-end ou de pilha completa de desenvolvimento.
    * Ou você pode [editar um pipeline existente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e atualizar as opções existentes.
 
-1. Se você estiver adicionando ou editando um pipeline de não produção para o qual deseja usar a Auditoria de Experiência, marque a caixa de seleção **Auditoria de Experiência** na guia **Código Source**.
+1. Para usar o Experience Audit ao adicionar ou editar um pipeline de não produção, marque a caixa de seleção **Auditoria de experiência**. Você pode encontrar essa opção na guia **Código Source**.
 
    ![Habilitando a Auditoria de Experiência](assets/experience-audit-enable.jpg)
 
-   * Isso só é necessário para pipelines de não produção.
+   * Necessário apenas para pipelines de não produção.
    * A guia **Auditoria de experiência** aparece quando a caixa de seleção é marcada.
 
 1. Para pipelines de produção e não produção, você define os caminhos que devem ser incluídos na Auditoria de experiência na guia **Auditoria de experiência**.
@@ -73,7 +73,7 @@ A Auditoria de experiência está disponível por padrão para pipelines de prod
 
    ![Definição de um caminho para a Auditoria de experiência](assets/experience-audit-add-page.png)
 
-1. Toque ou clique em **Adicionar página** e o caminho é preenchido automaticamente com o endereço do ambiente e adicionado à tabela de caminhos.
+1. Clique em **Adicionar página** e o caminho será preenchido automaticamente com o endereço do ambiente e adicionado à tabela de caminhos.
 
    ![Caminho salvo na tabela](assets/experience-audit-page-added.png)
 
@@ -82,11 +82,11 @@ A Auditoria de experiência está disponível por padrão para pipelines de prod
    * É possível adicionar no máximo 25 caminhos.
    * Se você não definir nenhum caminho, a página inicial do site será incluída na Auditoria de experiência por padrão.
 
-1. Clique em **Salvar** para salvar o pipeline.
+1. Clique em **Salvar**.
 
 ## Resultados da auditoria de experiência {#results}
 
-Os resultados da Auditoria de Experiência são apresentados na fase **Teste de preparo** do pipeline de produção através da [página de execução do pipeline de produção.](/help/implementing/cloud-manager/deploy-code.md)
+Os resultados da Auditoria de Experiência são apresentados na fase **Teste de preparo** do pipeline de produção através da [página de execução do pipeline de produção](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Painel no pipeline](assets/experience-audit-dashboard.jpg)
 
@@ -94,66 +94,66 @@ A Auditoria de Experiência fornece as pontuações medianas do Google Lighthous
 
 Nesta exibição resumida, na fase **Teste de Preparo** do pipeline, você tem duas opções:
 
-* **[Exibir páginas mais lentas](#view-slowest-pages)**
-* **[Exibir relatório completo](#view-full-report)**
+* **[Exibir as páginas mais lentas](#view-slowest-pages)**
+* **[Exibir o relatório completo](#view-full-report)**
 
-Além do resumo apresentado nos detalhes de uma execução de pipeline, você também pode acessar diretamente os resultados completos da auditoria usando a guia **Relatórios** do painel do Cloud Manager para acessar [o relatório completo](#view-full-report) diretamente.
+Você pode acessar os resultados completos da auditoria clicando na guia **Relatórios** no painel do Cloud Manager. Além do resumo mostrado nos detalhes de execução do pipeline, você pode visualizar [o relatório completo](#view-full-report) diretamente.
 
 >[!TIP]
 >
 >As seções a seguir descrevem como exibir os resultados da Auditoria de experiência.
 >
->* Se desejar detalhes sobre como a auditoria funciona, consulte a seção [Detalhes da avaliação da auditoria de experiência.](#details)
->* Se você quiser saber como executar uma auditoria de experiência sob demanda, consulte a seção [Relatórios de auditoria sob demanda.](#on-demand)
->* Se você tiver problemas com a auditoria, consulte a seção [Problemas de Encontros de Auditoria de Experiência.](#issues)
->* Para obter dicas gerais de desempenho, consulte a seção [Dicas Gerais de Desempenho.](#performance-tips)
+>* Para saber mais detalhes sobre como a auditoria funciona, consulte [Detalhes da avaliação da auditoria de experiência](#details).
+>* Para saber como executar uma Auditoria de experiência sob demanda, consulte [Relatórios de auditoria sob demanda](#on-demand).
+>* Se você tiver problemas com a auditoria, consulte [Problemas de Encontros de Auditoria de Experiência](#issues).
+>* Para obter dicas gerais de desempenho, consulte [Dicas Gerais de Desempenho](#performance-tips).
 
-### Exibir páginas mais lentas {#view-slowest-pages}
+### Exibir as páginas mais lentas {#view-slowest-pages}
 
-Tocar ou clicar em **Exibir páginas mais lentas** abre a caixa de diálogo **5 páginas mais lentas**, mostrando as cinco páginas de menor desempenho que você [configurou para auditoria.](#configuration)
+Clique em **Exibir páginas mais lentas** para abrir a caixa de diálogo **5 páginas mais lentas**. As cinco páginas de menor desempenho que você [configurou para auditar](#configuration) são mostradas.
 
 ![Cinco mais lentos](assets/experience-audit-slowest-five.png)
 
-As pontuações são detalhadas por **Desempenho**, **Acessibilidade**, **Práticas recomendadas** e **SEO**, juntamente com o desvio de cada métrica em relação à última auditoria.
+A Cloud Manager detalha as pontuações por **Desempenho**, **Acessibilidade**, **Práticas recomendadas** e **SEO**, mostrando o desvio de cada métrica em relação à auditoria anterior.
 
-Por padrão, a caixa de diálogo é aberta com as pontuações dos dispositivos móveis. Você pode alterar isso para pontuações da área de trabalho usando a opção **Dispositivos** na parte superior da caixa de diálogo.
+Por padrão, a caixa de diálogo é aberta com as pontuações para dispositivos móveis. Você pode ver as pontuações da área de trabalho usando a opção **Dispositivos** próxima à parte superior da caixa de diálogo.
 
-A caixa de diálogo tem como objetivo fornecer uma visão geral rápida. Para obter detalhes completos, toque ou clique em **Exibir relatório completo**.
+A caixa de diálogo tem como objetivo fornecer uma visão geral rápida. Para obter detalhes completos, clique em **Exibir relatório completo**.
 
-### Exibir Relatório Completo {#view-full-report}
+### Exibir o relatório completo {#view-full-report}
 
-É possível exibir o relatório completo de Auditoria de experiência por:
+Você pode exibir o relatório completo de Auditoria de experiência fazendo o seguinte:
 
-* Tocando ou clicando em **Exibir relatório completo** na caixa de diálogo **[5 páginas mais lentas](#view-slowest-pages)**.
-* Tocando ou clicando em **Exibir relatório completo** ao exibir a [execução de um pipeline.](#results)
-* Tocando ou clicando na guia **Relatórios** no Cloud Manager.
+* Clique em **`View full report`** na caixa de diálogo **[5 páginas mais lentas](#view-slowest-pages)**.
+* Clique em **`View full report`** ao visualizar a [execução de um pipeline](#results).
+* Clique na guia **Relatórios** no Cloud Manager.
 
-A guia **Relatórios** do Cloud Manager está aberta, mostrando a **Auditoria de experiência**.
+A guia **Relatórios** do Cloud Manager está aberta, mostrando a **Auditoria de Experiência**.
 
 ![Relatórios de auditoria de experiência](assets/experience-audit-reports.png)
 
 O relatório divide-se em duas áreas:
 
-* **[Pontuações de páginas - tendência](#trend)**
-* **[Resultados da verificação de auditoria de experiência](#results)**
+* **[Pontuações de páginas — tendência](#trend)**
+* **[Resultados da verificação da Auditoria de Experiência](#results)**
 
-#### Pontuações de páginas: tendência {#trend}
+#### Pontuações de página — tendência {#trend}
 
-Por padrão, a exibição selecionada para **Pontuações de página - tendência** é **pontuações medianas** para os **Últimos 6 meses**.
+Por padrão, a exibição selecionada para **Pontuações de página — tendência** é **pontuações medianas** para os **Últimos 6 meses**.
 
-Use os menus suspensos **Selecionar** e **Exibir** na parte superior e inferior do botão do gráfico para selecionar detalhes específicos da página e diferentes intervalos de tempo, respectivamente. Toque ou clique no e no botão **atualizar tendência** na parte superior do gráfico para aplicar as seleções e atualizar o gráfico.
+Use os menus suspensos **Selecionar** e **Exibir** na parte superior e inferior do botão do gráfico para selecionar detalhes específicos da página e diferentes intervalos de tempo, respectivamente. Clique em **atualizar tendência** na parte superior do gráfico para aplicar as seleções e atualizar o gráfico.
 
 Ao mover o mouse sobre o gráfico, uma dica de ferramenta exibe os valores das categorias do Google Lighthouse em pontos específicos do tempo.
 
 ![Detalhes da tendência](assets/experience-audit-trend-details.png)
 
-Se você tocar ou clicar no gráfico em um ponto no tempo, um popover será aberto com detalhes dessa verificação. Toque ou clique em **abrir verificação de auditoria de experiência** para carregar os resultados dessa verificação na seção **[Resultados da verificação de auditoria de experiência](#scan-results)**.
+Se você clicar no gráfico em um ponto no tempo, um popover será aberto com detalhes dessa verificação. Clique em **abrir verificação de auditoria de experiência** para carregar os resultados da verificação na seção **[Resultados da verificação de Auditoria de Experiência](#scan-results)**.
 
 ![Selecionar verificação diferente](assets/experience-audit-open-scan.png)
 
-#### Resultados da verificação de auditoria de experiência {#scan-results}
+#### Resultados da busca da auditoria de experiência {#scan-results}
 
-A seção **Resultados da verificação de auditoria da experiência** fornece recomendações sobre como melhorar sua pontuação e os detalhes de todas as páginas digitalizadas. Ele está dividido em duas seções:
+A seção **Resultados da verificação da Auditoria de Experiência** fornece recomendações sobre como melhorar sua pontuação e detalhes de todas as páginas digitalizadas. Ele está dividido em duas seções:
 
 * **[Recommendations](#recommendations)**
 * **[Páginas digitalizadas](#scanned-pages)**
@@ -164,39 +164,39 @@ A seção **Recommendations** mostra um conjunto agregado de insights. Por padr�
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-Toque ou clique na divisa de qualquer recomendação para revelar detalhes sobre ela.
+Clique na divisa de qualquer recomendação para revelar detalhes sobre ela.
 
 ![Detalhes da recomendação](assets/experience-audit-recommendations-details.png)
 
 Quando disponíveis, os detalhes expandidos da recomendação também contêm a porcentagem do impacto das recomendações para ajudar a se concentrar nas alterações mais impactantes.
 
-Toque ou clique no link **exibir páginas** na exibição de detalhes para ver as páginas às quais a recomendação se aplica.
+Clique no link **exibir páginas** na exibição de detalhes para ver as páginas às quais a recomendação se aplica.
 
 ![Páginas para obter detalhes da recomendação](assets/experience-audit-details-pages.png)
 
 ##### Páginas digitalizadas {#scanned-pages}
 
-A seção **Páginas digitalizadas** fornece pontuações detalhadas em todas as páginas digitalizadas. Você pode usar os botões **Anterior** e **Avançar** para percorrer os resultados e escolher em quantos a exibição deve paginar.
+A seção **Páginas digitalizadas** fornece detalhes das pontuações em todas as páginas digitalizadas. Use os botões **Anterior** e **Avançar** para percorrer os resultados e escolher quantos a exibição deve paginar.
 
 ![Páginas digitalizadas](assets/experience-audit-scanned-pages.png)
 
-Tocar ou clicar no link de uma página específica atualiza o filtro **Selecionar** da seção [**Pontuações da página - tendência**](#trend) e mostra a guia **Pontuações e recomendações** da página selecionada.
+Clique no link de uma página específica para atualizar o filtro **Selecionar** das [**Pontuações da página — tendência** seção](#trend) e mostrar a guia **Pontuações e recomendações** da página selecionada.
 
 ![Resultados da página](assets/experience-audit-page-results.png)
 
-A guia **Relatórios brutos** fornece pontuações para cada auditoria da página. Toque ou clique na data do relatório na coluna **Relatório de Farol** para recuperar um arquivo JSON dos dados brutos.
+A guia **Relatórios brutos** fornece pontuações para cada auditoria da página. Clique na data do relatório na coluna **Relatório de Farol** para recuperar um arquivo JSON dos dados brutos.
 
 ![Relatório bruto](assets/experience-audit-raw-reports.png)
 
-Uma nova guia será aberta no navegador, apontando para `https://googlechrome.github.io/lighthouse/viewer/` com uma URL assinada do relatório Lighthouse raw JavaScript Object Notation (JSON) da página selecionada, que será aberta automaticamente para sua inspeção detalhada
+Uma nova guia é aberta no navegador, direcionando você para `https://googlechrome.github.io/lighthouse/viewer/`. Ele carrega automaticamente um URL assinado contendo o relatório JSON bruto do Lighthouse para a página selecionada, permitindo a inspeção detalhada.
 
 ![Exibindo relatório bruto](assets/experience-audit-view-raw-report.png)
 
-## Relatórios de auditoria por solicitação {#on-demand}
+## Relatórios de auditoria da varredura por solicitação {#on-demand}
 
-Além de serem executados durante a execução do pipeline, os relatórios da Auditoria de experiência também podem ser gerados sob demanda. Essa é uma boa solução para digitalizar rapidamente suas páginas, sem precisar executar um pipeline.
+Além de serem executados durante a execução do pipeline, os relatórios da Auditoria de experiência também podem ser gerados sob demanda. Essa opção é uma boa solução para digitalizar suas páginas rapidamente, sem precisar executar um pipeline.
 
-Para executar uma varredura por solicitação, navegue até a guia **Relatórios** para ver o relatório de auditoria completo e toque ou clique no botão **Executar verificação**.
+Para executar uma varredura por solicitação, navegue até a guia **Relatórios** para ver o relatório de auditoria completo e clique no botão **Executar varredura**.
 
 ![Varredura por solicitação](assets/experience-audit-on-demand.png)
 
@@ -206,7 +206,7 @@ O botão **Executar verificação** fica indisponível e está marcado com um í
 
 As varreduras por solicitação acionam uma Auditoria de experiência para as 25 [páginas configuradas](#configuration) mais recentes e normalmente são concluídas em alguns minutos.
 
-Após a conclusão, o gráfico de pontuações será atualizado automaticamente e você poderá inspecionar os resultados exatamente como em uma verificação de execução de pipeline.
+Após a conclusão, o gráfico de pontuações é atualizado automaticamente e você pode inspecionar os resultados exatamente como para uma verificação de execução de pipeline.
 
 Você pode filtrar o gráfico de pontuações com base no tipo de acionador usando o seletor **Acionador**.
 
@@ -218,13 +218,13 @@ Você pode filtrar o gráfico de pontuações com base no tipo de acionador usan
 
 ## A Auditoria de experiência encontra problemas {#issues}
 
-Se [as páginas que você configurou](#configuration) para serem auditadas não estivessem disponíveis ou houvesse outros erros na auditoria, a Auditoria de experiência refletirá isso.
+Se [as páginas que você configurou](#configuration) para serem auditadas não estavam disponíveis ou havia outros erros na auditoria, a Auditoria de experiência reflete esse fato.
 
 O pipeline mostra uma seção de erro expansível para exibir os caminhos de URL relativos que não podia acessar.
 
 ![Problemas encontrados pela Auditoria de Experiência](assets/experience-audit-issues.jpg)
 
-Se estiver exibindo o relatório completo, os detalhes serão mostrados na seção **[Resultados da verificação de auditoria da experiência](#results)**, que também é expansível.
+Se estiver exibindo o relatório completo, os detalhes serão mostrados na seção **[Resultados da verificação da Auditoria de experiência](#results)**, que também pode ser expandida.
 
 ![Problemas completos com o relatório](assets/experience-audit-issues-report.png)
 
@@ -244,9 +244,9 @@ Alguns motivos pelos quais as páginas podem não estar disponíveis são:
 
 Dois dos problemas de impacto mais comuns que são fáceis de corrigir estão relacionados com as mudanças cumulativas de layout (CLS) e a maior tinta de conteúdo (LCP).
 
-Estes podem ser melhorados através de:
+Você pode melhorar essas áreas fazendo o seguinte:
 
-* O carregamento das imagens acima da dobra não é lento (o conteúdo é visível no navegador sem a necessidade de rolagem para baixo).
+* Não é um carregamento lento das imagens acima da dobra — o conteúdo que é visível no navegador sem precisar rolar para baixo.
 * Priorizar corretamente como os recursos são carregados (por exemplo, carregando de forma assíncrona as imagens abaixo da dobra após o carregamento do documento).
 * Busca prévia de arquivos JavaScript e CSS usados para renderizar conteúdo acima da dobra (se necessário).
 * Reserva de espaço vertical ao atribuir uma proporção aos contêineres que carregam lentamente ou são renderizados posteriormente.
@@ -257,12 +257,10 @@ Estes podem ser melhorados através de:
 
 Os detalhes a seguir fornecem informações adicionais sobre como a Auditoria de experiência avalia o site. Eles não são necessários para o uso geral do recurso e são fornecidos aqui para fins de integridade.
 
-* A auditoria verifica o domínio de origem (`.com`) conforme definido nos [caminhos configurados da página Auditoria de Experiência](#configuration) do editor para simular experiências de usuário reais com mais precisão e ajuda a tomar decisões mais conscientes sobre como gerenciar e otimizar seus sites.
-* Em pipelines de pilha completa de produção, o ambiente de preparo é verificado.
-   * Para garantir que a auditoria forneça detalhes relevantes durante a auditoria, o conteúdo do ambiente de preparo deve estar o mais próximo possível do ambiente de produção.
-* As páginas exibidas na lista suspensa **Selecionar** na seção [**Pontuações de páginas - tendência**](#trend) são todas páginas conhecidas que foram digitalizadas no passado pela Auditoria de Experiência.
+* A auditoria verifica o domínio de origem (`.com`) a partir dos [caminhos configurados da página Auditoria de Experiência](#configuration) do publicador para simular experiências reais do usuário, ajudando você a tomar melhores decisões sobre como gerenciar e otimizar seus sites.
+* Em pipelines de pilha completa de produção, o ambiente de preparo é verificado. Para garantir que a auditoria forneça detalhes relevantes durante a auditoria, o conteúdo do ambiente de preparo deve estar o mais próximo possível do ambiente de produção.
+* As páginas exibidas na lista suspensa **Selecionar** em [**Pontuações de página — tendência** seção](#trend) são todas páginas conhecidas que a Auditoria de Experiência verificou no passado.
 * [Uma recomendação](#recommendations) pode ter um ganho potencial e uma diferença em relação à verificação anterior.
-   * A Auditoria de experiência estima o ganho potencial processando o relatório bruto de cada página e correlacionando os bytes ou milissegundos desperdiçados com um insight que tem um impacto ponderado na pontuação de desempenho.
-   * A auditoria fornece essas informações (bem como as páginas afetadas) para ajudar a decidir qual recomendação seguir.
-   * Para obter mais detalhes, consulte a [seção Dicas Gerais de Desempenho](#performance-tips)
-* Considerando que um pipeline de front-end pode ser implantado em um ambiente existente (ou que pode haver vários pipelines de front-end direcionados ao mesmo ambiente) e que os resultados da verificação são agregados em um nível de ambiente, as pontuações, as tendências e as recomendações são exibidas no mesmo ambiente selecionado, independentemente da execução do pipeline que acionou a verificação.
+* A Auditoria de experiência estima as melhorias potenciais ao processar o relatório bruto para cada página. Ele correlaciona bytes ou milissegundos desperdiçados com insights, atribuindo um impacto ponderado na pontuação de desempenho. A auditoria fornece essas informações e as páginas afetadas para ajudar a decidir qual recomendação seguir.
+Consulte a [seção Dicas Gerais de Desempenho](#performance-tips) para obter mais detalhes.
+* Um pipeline de front-end pode ser implantado em um ambiente existente, e vários pipelines de front-end podem ter o mesmo ambiente como alvo. Como os resultados da verificação são agregados no nível do ambiente, as pontuações, as tendências e as recomendações são consistentes. Esses resultados são exibidos no ambiente selecionado, independentemente de qual pipeline acionou a verificação.
