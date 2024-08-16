@@ -4,9 +4,9 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6886d3e669b06b63d2225348e95e00806db1b8f5
+source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1183'
 ht-degree: 9%
 
 ---
@@ -302,6 +302,12 @@ O seletor de Fragmento de Conteúdo pode ser usado para selecionar um [Fragmento
 | Configuração | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|
 | `variationName` | `string` | Nome da variável para armazenar a variação selecionada. Se não estiver definido, nenhum seletor de variação será exibido | Não |
+
+>[!NOTE]
+>
+>O Editor Universal [valida campos de Fragmento de Conteúdo com base em seus modelos](/help/assets/content-fragments/content-fragments-models.md#validation), permitindo que você imponha regras de integridade de dados, como padrões de regex e restrições de exclusividade.
+>
+>Isso garante que seu conteúdo atenda às necessidades específicas dos negócios antes de ser publicado.
 
 >[!BEGINTABS]
 

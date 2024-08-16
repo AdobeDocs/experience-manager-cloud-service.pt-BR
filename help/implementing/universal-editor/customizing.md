@@ -4,9 +4,9 @@ description: Saiba mais sobre os diferentes pontos de extensão e outros recurso
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -115,6 +115,18 @@ As condições podem ser definidas usando o esquema JsonLogic [.](https://jsonlo
 ![Campo de texto mostrado](assets/shown.png)
 
 >[!ENDTABS]
+
+### URLs de visualização personalizados {#custom-preview-urls}
+
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+Isso é particularmente útil para aplicativos com requisitos de visualização específicos, como os [que usam Edge Delivery Services com criação WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+
+Para fazer isso, basta incluir o URL de visualização desejado em uma meta tag do aplicativo instrumentado, como no exemplo a seguir.
+
+```html
+<meta name="urn:adobe:aue:config:preview" content="https://wknd.site"/>
+```
 
 ## Extensão da interface do editor universal {#extending}
 

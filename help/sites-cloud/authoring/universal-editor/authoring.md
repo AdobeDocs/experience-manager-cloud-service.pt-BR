@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 3922375b52ae64d08cdc64d475a95e8bd240a587
+source-git-commit: eecbc48a77e92b064be9fcdbe547fb330f8d40e0
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 26%
+source-wordcount: '1297'
+ht-degree: 23%
 
 ---
 
@@ -33,7 +33,7 @@ Para isso, o editor universal oferece aos autores de conteúdo uma interface int
 
 ## Editar o conteúdo {#editing-content}
 
-A edição de conteúdo é simples e intuitiva. À medida que você passa o mouse sobre o conteúdo no editor, o conteúdo editável é realçado com uma caixa azul.
+A edição de conteúdo é simples e intuitiva. À medida que você passa o mouse sobre o conteúdo no editor, o conteúdo editável é realçado com um contorno azul fino.
 
 ![O conteúdo editável é destacado por uma caixa azul](assets/editable-content.png)
 
@@ -49,7 +49,7 @@ Dependendo do conteúdo selecionado, você pode ter diferentes opções de ediç
 
 ![Editar o conteúdo](assets/editing-content.png)
 
-Pressione enter/return ou selecione fora da caixa de texto para salvar as alterações.
+O contorno azul fino se transforma em um contorno azul pesado para indicar a seleção e a exibição de um cursor. Faça as alterações e pressione Enter/Return ou selecione fora da caixa de texto para salvar as alterações.
 
 Ao selecionar o componente de texto, seus detalhes são mostrados no painel de propriedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Também é possível editar o texto no painel.
 
@@ -65,10 +65,21 @@ Além disso, os detalhes do texto estão disponíveis no painel de propriedades.
 
 Para sua conveniência, as opções de formatação e os detalhes do texto estão disponíveis em dois lugares.
 
-* O **menu de contexto** é aberto acima do bloco rich text e oferece opções básicas de formatação no contexto. Devido a limitações de espaço, algumas opções podem estar ocultas atrás do botão de reticências.
-* O **[painel de propriedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)** mostra todas as opções de formatação disponíveis junto com o texto.
+#### O Menu de Contexto {#context-menu}
+
+O menu de contexto é aberto acima do bloco de rich text e oferece opções básicas de formatação no contexto. Devido a limitações de espaço, algumas opções podem estar ocultas atrás do botão de reticências.
+
+![Menu de contexto de rich text](assets/rich-text-context-menu.png)
 
 As alterações são salvas automaticamente quando o foco sai do campo editado.
+
+#### O painel Propriedades {#properties-rail}
+
+O [painel de propriedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) mostra um item para o texto selecionado. Toque na entrada para abrir uma caixa de diálogo apresentando uma tela maior para editar o texto.
+
+![Caixa de diálogo de edição de rich text](assets/rich-text-canvas.png)
+
+Toque ou clique em **Cancelar** ou **Concluído** para descartar ou salvar as alterações, respectivamente.
 
 ### Editando mídia {#edit-media}
 
@@ -95,9 +106,19 @@ Se você selecionar um campo relacionado a um Fragmento de conteúdo, ele será 
 
 As alterações são salvas automaticamente quando o foco sai do campo editado no painel de propriedades.
 
-Se, em vez disso, você quiser editar seu Fragmento de Conteúdo no [editor de Fragmento de Conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md), clique no [botão de edição](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) no painel de propriedades.
+Se, em vez disso, você quiser editar seu Fragmento de Conteúdo no [editor de Fragmento de Conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md), toque ou clique no botão [**Abrir no Editor de Conteúdo**](/help/sites-cloud/authoring/universal-editor/navigation.md#edit) no painel de propriedades.
+
+>[!TIP]
+>
+>Use a tecla de atalho `e` para editar o fragmento de conteúdo selecionado no editor de fragmentos de conteúdo.
 
 Dependendo das necessidades do fluxo de trabalho, talvez você queira editar o Fragmento de conteúdo no Editor universal ou diretamente no editor de Fragmento de conteúdo.
+
+>[!NOTE]
+>
+>O Editor Universal [valida campos de Fragmento de Conteúdo com base em seus modelos](/help/assets/content-fragments/content-fragments-models.md#validation), permitindo que você imponha regras de integridade de dados, como padrões de regex e restrições de exclusividade.
+>
+>Isso garante que seu conteúdo atenda às necessidades específicas dos negócios antes de ser publicado.
 
 ### Adicionar componentes a contêineres {#adding-components}
 
@@ -110,7 +131,7 @@ O componente é inserido no container e pode ser editado no editor.
 
 >[!TIP]
 >
->Use a tecla de atalho `A` para adicionar um componente ao contêiner selecionado.
+>Use a tecla de atalho `a` para adicionar um componente ao contêiner selecionado.
 
 ### Exclusão de componentes de contêineres {#deleting-components}
 
