@@ -5,10 +5,10 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 64aa010c3d840adad9e1ab6040a6d80c07cd8455
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 63%
+source-wordcount: '659'
+ht-degree: 42%
 
 ---
 
@@ -23,11 +23,9 @@ Saiba como adicionar seu próprio certificado SSL usando as ferramentas de autoa
 
 ## Requisitos de certificado {#certificate-requirements}
 
-Revise a seção **Requisitos de Certificado** do documento [Introdução ao Gerenciamento de Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) para garantir que o certificado que você deseja adicionar seja suportado pela AEM as a Cloud Service.
+Revise os **Requisitos de Certificado** em [Introdução ao Gerenciamento de Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) para verificar se a AEM as a Cloud Service oferece suporte ao certificado que você deseja adicionar.
 
-## Adição de um certificado {#adding-a-cert}
-
-Siga estas etapas para adicionar um certificado usando o Cloud Manager.
+## Adicionar um certificado {#adding-a-cert}
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização apropriada
 
@@ -35,28 +33,23 @@ Siga estas etapas para adicionar um certificado usando o Cloud Manager.
 
 1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
 
-1. Clique em **Certificados SSL** no painel de navegação esquerdo. Uma tabela com detalhes de todos os certificados SSL existentes é exibida na tela principal.
+1. No painel de navegação esquerdo, em **Serviços**, clique em **Certificados SSL**. (Se necessário, talvez seja necessário clicar no ícone de hambúrguer no canto superior esquerdo para precisar do painel de navegação. Uma tabela com detalhes sobre os certificados SSL existentes é exibida.
 
-   ![Adição de um certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+   ![Adicionando um certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
 1. Clique em **Adicionar certificado SSL** para abrir a caixa de diálogo **Adicionar certificado SSL**.
 
-   * Insira um nome para o certificado em **Nome do certificado**.
-      * Isso é apenas para fins de informação e pode ser qualquer nome que o ajude a identificar o certificado com facilidade.
-   * Cole os valores de **Certificado**, **Chave privada** e **Cadeia de certificados** nos respectivos campos.
-      * Todos esses três campos são obrigatórios.
+   * Insira um nome para o certificado em **Nome do Certificado**. Este campo é apenas para fins informativos e pode ser qualquer nome que o ajude a identificar o certificado com facilidade.
+   * Cole os valores de **Certificado**, **Chave privada** e **Cadeia de certificado** nos respectivos campos. Todos os três campos são obrigatórios.
 
-   ![Caixa de diálogo Adicionar certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![Caixa de diálogo Adicionar Certificado SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
 
-   * Todos os erros detectados são exibidos.
-      * É necessário corrigir todos eles para salvar o certificado.
-      * Consulte a seção [Erros de certificado](#certificate-errors) para saber mais sobre como resolver erros comuns.
+   * Todos os erros detectados nos valores são exibidos. Antes de salvar o certificado, é necessário corrigir todos os erros.
+Consulte [Erros de certificado](#certificate-errors) para saber mais sobre como resolver erros comuns.
 
-1. Clique em **Salvar** para salvar o certificado.
+1. Clique em **Salvar**.
 
-Depois de salvo, o certificado será exibido como uma nova linha na tabela.
-
-![Certificado SSL salvo](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![Certificado SSL salvo](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)Seu certificado agora é exibido como uma nova linha na tabela, semelhante à imagem acima.
 
 >[!NOTE]
 >
@@ -66,7 +59,7 @@ Depois de salvo, o certificado será exibido como uma nova linha na tabela.
 
 Certos erros podem ocorrer se um certificado não for instalado corretamente ou atender aos requisitos do Cloud Manager.
 
-### Ordem correta de certificados {#correct-certificate-order}
+### Ordem correta dos certificados {#correct-certificate-order}
 
 O motivo mais comum para uma falha na implantação de um certificado é os certificados intermediários ou em cadeia não estarem na ordem correta.
 
@@ -92,7 +85,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 >
 >A saída desses dois comandos deve ser exatamente a mesma. Se você não conseguir localizar uma chave privada correspondente ao seu certificado `main/server`, será necessário rechavear o certificado gerando uma nova CSR e/ou solicitando um certificado atualizado do seu fornecedor de SSL.
 
-### Remover Certificados de Cliente {#client-certificates}
+### Remover certificados de cliente {#client-certificates}
 
 Ao adicionar um certificado, se você receber um erro semelhante ao seguinte:
 
@@ -100,7 +93,7 @@ Ao adicionar um certificado, se você receber um erro semelhante ao seguinte:
 The Subject of an intermediate certificate must match the issuer in the previous certificate. The SKI of an intermediate certificate must match the AKI of the previous certificate.
 ```
 
-Você provavelmente incluiu o certificado de cliente na cadeia de certificados. Certifique-se de que a cadeia não inclua o certificado de cliente e tente novamente.
+Você provavelmente incluiu o certificado de cliente na cadeia de certificados. Verifique se a cadeia não inclui o certificado de cliente e tente novamente.
 
 ### Política de certificado {#certificate-policy}
 
@@ -110,7 +103,7 @@ Se o seguinte erro for exibido, verifique a política do seu certificado.
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Normalmente, as políticas de certificados são identificadas por valores OID incorporados. Extrair o texto de um certificado e pesquisar o OID revelarão a política do certificado.
+Os valores de OID incorporados normalmente identificam as políticas de certificados. Extrair o texto de um certificado e pesquisar o OID revela a política do certificado.
 
 Você pode exibir os detalhes do certificado como texto usando o exemplo a seguir como guia.
 
@@ -154,11 +147,11 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 ### Datas de validade do certificado {#certificate-validity-dates}
 
-O Cloud Manager espera que o certificado SSL seja válido por pelo menos 90 dias a partir da data atual. Você deve verificar a validade da cadeia de certificados.
+O Cloud Manager espera que o certificado SSL seja válido por pelo menos 90 dias a partir da data atual. Verifique a validade da cadeia de certificados.
 
 ## Próximas etapas {#next-steps}
 
-Parabéns! Agora você tem um certificado SSL de trabalho para o seu projeto. Geralmente, essa é uma primeira etapa para configurar um nome de domínio personalizado.
+Parabéns! Agora você tem um certificado SSL de trabalho para o seu projeto. Essa etapa geralmente é a primeira a configurar um nome de domínio personalizado.
 
-* Consulte o documento [Adicionando um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) para continuar configurando um nome de domínio personalizado.
-* Consulte o documento [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md) para saber mais sobre como atualizar e gerenciar seus certificados SSL no Cloud Manager.
+* Para configurar um nome de domínio personalizado, consulte [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+* Para saber mais sobre como atualizar e gerenciar certificados SSL no Cloud Manager, consulte [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).
