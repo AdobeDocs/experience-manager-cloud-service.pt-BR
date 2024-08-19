@@ -6,9 +6,9 @@ feature: Asset Management,Renditions,Best Practices
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 22de8ac77af27114099de2f6b4349232524cb94f
+source-git-commit: 1b985a83fd58522ee485c02b96bfb6a697da6ce0
 workflow-type: tm+mt
-source-wordcount: '3454'
+source-wordcount: '3455'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ O recurso Smart Imaging também pode ser desativado anexando `bfc=off` ao URL da
 
 Consulte também [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=en) na API de disponibilização e renderização de imagens do Dynamic Media.
 
-### Sobre a otimização da Proporção de pixels do dispositivo {#dpr}
+### Sobre a otimização da proporção de pixels do dispositivo {#dpr}
 
 Proporção de pixels do dispositivo (DPR) - também conhecida como Proporção de pixels CSS - é a relação entre os pixels físicos e os pixels lógicos de um dispositivo. Especialmente com o advento das telas retina, a resolução de pixels de dispositivos móveis modernos está crescendo a uma taxa rápida.
 
@@ -162,7 +162,7 @@ Para formatos de arquivo de imagem que oferecem suporte a transparência, como P
 
 Os comandos do Servidor de imagens `fmt` e `qlt` não têm suporte; todos os comandos restantes têm suporte.
 
-## Perguntas frequentes sobre imagens inteligentes{#smart-imaging-faq}
+## Perguntas frequentes sobre Smart Imaging{#smart-imaging-faq}
 
 +++**Há custos de licenciamento associados ao Smart Imaging?**
 
