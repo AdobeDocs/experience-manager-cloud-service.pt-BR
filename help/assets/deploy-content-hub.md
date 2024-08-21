@@ -2,13 +2,13 @@
 title: Implantar [!DNL Content Hub]
 description: Saiba como implantar e ativar o Content Hub e fornecer acesso a usuários com diferentes tipos de privilégios (fazer upload de ativos, usuários de Adobe Express) e como fornecer privilégios de administrador aos usuários.
 role: Admin
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: 58194858-6e1c-460b-bab3-3496176b2851
+source-git-commit: 1cc17d10a687ede6b3b091578ed20a39414bb235
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
-
 
 # Implantar o Content Hub {#deploy-content-hub}
 
@@ -64,15 +64,23 @@ Se você é novo no Experience Manager Assets, clique em **[!UICONTROL Adicionar
 
 ### Instância do Content Hub e perfil de produto no Admin Console{#content-hub-instance-product-profile}
 
-Depois de [habilitar o Content Hub para o Assets com as a Cloud Service Cloud Manager](#enable-content-hub), há uma nova instância criada no Admin Console as a Cloud Service AEM Assets com `contenthub` como sufixo:
+Depois de [habilitar o Content Hub para o Assets com as a Cloud Service Cloud Manager](#enable-content-hub), há uma nova instância criada no Admin Console as a Cloud Service AEM Assets com `delivery` como sufixo:
 
 ![Nova instância para o Content Hub](assets/new-instance-content-hub.png)
+
+>[!NOTE]
+>
+>Se você tiver provisionado o Content Hub antes de 14 de agosto de 2024, a nova instância será criada com `contenthub` como sufixo.
 
 Observe que não há `author` ou `publish` no nome da instância do Content Hub.
 
 Clique no nome da instância para exibir o perfil de produto do Content Hub.
 
 ![Perfil de produto do Content Hub](assets/content-hub-product-profile.png)
+
+>[!NOTE]
+>
+>Se você tiver provisionado o Content Hub antes de 14 de agosto de 2024, o perfil de produto do Content Hub terá `contenthub` mencionado depois de `Limited Users` em vez de `delivery`.
 
 ## Etapa 2: integrar o administrador do Content Hub {#onboard-content-hub-administrator}
 
@@ -192,6 +200,3 @@ Para configurar usuários do Experience Manager Assets:
    >[!NOTE]
    >
    > Você não precisa ser adicionado ao [perfil de produto do Content Hub](#onboard-content-hub-users) para os usuários do Experience Manager Assets.
-
-
-
