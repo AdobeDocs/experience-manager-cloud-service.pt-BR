@@ -1,8 +1,8 @@
 ---
-source-git-commit: 964d4a04c6c645a5cdab29218f93431649d41588
+source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 7%
+source-wordcount: '673'
+ht-degree: 6%
 
 ---
 # Trechos {#snippets}
@@ -92,7 +92,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
    </td>
    </tr>
       <tr>
-    <td>Validar/redefinir campo/painel/regra de formulário em ‘Then’ </td>
+    <td>Validar/redefinir campo/painel/regra de formulário em 'Then' </td>
     <td>As funções Validar e Redefinir só oferecem suporte a objetos de formulário no Editor de regras. 
    </td>
     <td>As funções Validar e Redefinir oferecem suporte ao objeto de formulário/painel/campo no Editor de regras. 
@@ -127,3 +127,10 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 * [Introdução às funções personalizadas para o Forms adaptável com base nos Componentes principais](/help/forms/create-and-use-custom-functions.md)
 * [Criar uma função personalizada para um formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md)
 * [Exemplos de desenvolvimento e uso de função personalizada](/help/forms/custom-function-core-components-use-cases.md)
+
+
+## LISTAS DE PERMISSÕES de IP e pipelines de front-end {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>Adicione a observação importante aqui.
