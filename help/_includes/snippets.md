@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4eee52c28a57b466cfba52a99b832108b936a5d3
+source-git-commit: 90bc7320899053b6b1d6cf0d1b06b193ad1c68f3
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 6%
+source-wordcount: '818'
+ht-degree: 5%
 
 ---
 # Trechos {#snippets}
@@ -129,8 +129,14 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 * [Exemplos de desenvolvimento e uso de função personalizada](/help/forms/custom-function-core-components-use-cases.md)
 
 
-## LISTAS DE PERMISSÕES de IP e pipelines de front-end {#allowlist-frontend-pipeline}
+## Lista de permissões de IP da Cloud Manager e pipelines de front-end {#allowlist-frontend-pipeline}
 
 >[!IMPORTANT]
 >
->Adicione a observação importante aqui.
+>O pipeline de front-end requer que a seguinte Lista de permissões de IP seja adicionada ao Cloud Manager antecipadamente.
+>Se necessário, [adicione a Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando o bloco de endereços abaixo. Cada endereço é separado por vírgula. Cole o bloco no campo **Endereço IP/CIDR** da caixa de diálogo **Adicionar Lista de permissões IP**. Coloque o cursor logo após a primeira vírgula na lista de endereços e pressione **Enter**. Salve a lista.
+>Para evitar a interrupção da execução do pipeline de front-end, verifique se esta Lista de permissões de IP foi adicionada ao Cloud Manager *antes* de habilitar o pipeline.
+>
+>**Lista de permissões IP Cloud Manager**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
