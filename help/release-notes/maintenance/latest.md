@@ -4,7 +4,7 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 80edd0255b38beee93b3f9c779ae0f364500b4a5
+source-git-commit: 1eeb15c16581c945beb90495801c525697a46710
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 9%
@@ -96,8 +96,7 @@ A ativação de recursos do 2024.8.0 fornecerá o conjunto completo de recursos 
 * ASSETS-40875 - A classe AssetDeleteHandler acompanha eventos de exclusão de ativos e executa ações específicas com base no tipo de evento de exclusão (PRE_DELETE ou POST_DELETE). Em determinados cenários, o tipo de evento POST_DELETE causa uma exceção de ponteiro nulo.
 * FORMS-14340 - Erro na instanciação de FormsAndDocumentOmniSearchHandler e CloudStorageSubmitActionInserter. Estas são instruções de registro inofensivas.
 * FORMS-15818 - Entrada do descritor de componente &#39;OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml&#39; não encontrou instruções nos logs do servidor. Estas são instruções de registro inofensivas.
-* 
-   * SITES-23662 - O usuário que aciona uma publicação não pode ser extraído de instruções de log JCR em logs do servidor. Isso é para um recurso em desenvolvimento que pode causar erros intermitentes e inofensivos &quot;Não é possível encontrar uma ID de usuário válida no lote de eventos OSGI&quot; no log.
+* SITES-23662 - O usuário que aciona uma publicação não pode ser extraído de instruções de log JCR em logs do servidor. Isso é para um recurso em desenvolvimento que pode causar erros intermitentes e inofensivos &quot;Não é possível encontrar uma ID de usuário válida no lote de eventos OSGI&quot; no log.
 
 ### Aviso de mudança {#change-notice-17465}
 
