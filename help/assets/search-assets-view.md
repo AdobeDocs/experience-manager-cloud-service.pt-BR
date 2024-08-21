@@ -4,7 +4,7 @@ description: Saiba como pesquisar e descobrir ativos na visualização do AEM As
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 940e62432b8234f90c84d6c7a09dd60e643a3ae5
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 92%
@@ -239,7 +239,7 @@ Você pode visualizar o layout e a formatação da primeira página de pesquisa.
 1. Navegue até **[!UICONTROL Personalizar a primeira página de pesquisa]** e clique em **[!UICONTROL Visualizar]**. Alterne o botão **[!UICONTROL Tema escuro]** para visualizar a página inicial em um tema escuro ou claro.
 1. Clique em **[!UICONTROL Fechar]** para fechar a janela de visualização.
 
-   ![Visualização da primeira página de pesquisa](assets/search-first-preview.gif)
+   ![Visualização da primeira página de pesquisa](/help/assets/assets/search-first-preview.gif)
 
 ## Pesquisa contextual {#contextual-search}
 
@@ -255,7 +255,7 @@ Para acessar a pesquisa contextual no Experience Manager Assets:
 
 1. Insira o prompt de texto na caixa de texto Pesquisar e clique em **[!UICONTROL Pesquisa contextual]**.
 
-   ![Prompt de texto da pesquisa contextual](assets/contextual-search-text-prompt.png)
+   ![Prompt de texto da pesquisa contextual](/help/assets/assets/wknd-contextual-search.png)
 
    O [!DNL Experience Manager Assets] exibe os resultados da pesquisa.
 
