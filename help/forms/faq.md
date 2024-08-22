@@ -6,9 +6,9 @@ role: User
 feature: Adaptive Forms
 index: false
 exl-id: 0b14b680-7da5-4e0b-bd6a-c379d148f9d7
-source-git-commit: 0b693cb51a96011235fa87a5899426c6b0c2509a
+source-git-commit: 5ee37f59bb959e0549c0541c6568aa8c135c330e
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '975'
 ht-degree: 2%
 
 ---
@@ -76,8 +76,8 @@ Não, a etapa Verificar não está disponível para [!DNL Forms] as a Cloud Serv
 * **É possível adicionar gráficos a um Formulário adaptável?**
 Sim, você pode adicionar gráficos ao Forms adaptável. O Forms adaptável fornece um componente de gráfico. Você pode usá-lo para adicionar gráficos a um Formulário adaptável.
 
-* **É possível conectar um Modelo de Dados de Formulário (FDM) a um modelo de banco de dados relacional?**
-Você pode conectar um Modelo de dados de formulário (FDM) a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] e ao perfil de usuário Experience Manager como fontes de dados. Não há suporte disponível para conectar um Modelo de dados de formulário (FDM) a um banco de dados relacional.
+* **Posso conectar um Modelo de Dados de Formulário a um modelo de banco de dados relacional?**
+Você pode conectar um Modelo de dados de formulário a [!DNL RESTful web services], [!DNL SOAP-based web services], [!DNL OData services] e perfil de usuário Experience Manager como fontes de dados. <!--Support to connect a Form Data Model with a relational database is not available.-->
 
 * **Posso usar certificados personalizados com o Modelo de Dados de Formulário (FDM) para autenticação?**
 O Modelo de dados de formulário (FDM) não fornece um método para usar certificados personalizados para autenticação. Portanto, os certificados personalizados como x509 e SSL bidirecional não são compatíveis.
