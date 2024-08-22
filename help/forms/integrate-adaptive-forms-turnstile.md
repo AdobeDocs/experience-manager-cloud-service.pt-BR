@@ -7,12 +7,15 @@ hide: true
 hidefromtoc: true
 exl-id: 644c351b-a167-4d18-8b99-b7cae6be48d5
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: d69d64a02c62b9a796188107cfe1ab7543b5a2be
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '956'
 ht-degree: 11%
 
 ---
+
+
+# Integrar o CAPTCHA de tarja com o Forms adaptável
 
 <span class="preview"> Este recurso está em Early Adoter Program. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
