@@ -4,7 +4,7 @@ description: Entenda as configurações do Adobe Experience Manager (AEM) e como
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 4%
@@ -37,7 +37,7 @@ Configurações podem ser criadas para vários recursos diferentes dentro do AEM
 
 * [Segmentos do Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
 * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-* [Modelos editáveis](/help/sites-cloud/authoring/sites-console/templates.md)
+* [Modelos editáveis](/help/sites-cloud/authoring/page-editor/templates.md)
 * várias configurações de nuvem
 
 ### Exemplo {#administrator-example}
@@ -83,7 +83,7 @@ O Navegador de configuração permite que um administrador crie, gerencie e conf
 1. Verifique o tipo de configurações que deseja permitir.
    * [Segmentos do Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
    * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
-   * [Modelos editáveis](/help/sites-cloud/authoring/sites-console/templates.md)
+   * [Modelos editáveis](/help/sites-cloud/authoring/page-editor/templates.md)
    * várias configurações de nuvem
 1. Selecione **Criar**.
 

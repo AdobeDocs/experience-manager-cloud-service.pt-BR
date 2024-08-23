@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 solution: Experience Manager Sites
 feature: Authoring, Experience Fragments
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '2099'
 ht-degree: 93%
@@ -95,7 +95,7 @@ A criação de pastas permite:
 
   >[!NOTE]
   >
-  >Você pode usar o [editor de modelos](/help/sites-cloud/authoring/sites-console/templates.md) para criar seu próprio modelo.
+  >Você pode usar o [editor de modelos](/help/sites-cloud/authoring/page-editor/templates.md) para criar seu próprio modelo.
 
 O projeto WKND estrutura alguns Fragmentos de experiência de acordo com `Contributors`. A estrutura usada também ilustra a maneira como outros recursos, como o Gerenciamento de vários sites (incluindo cópias de idiomas), podem ser usados.
 

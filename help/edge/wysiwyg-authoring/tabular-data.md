@@ -4,9 +4,9 @@ description: Saiba como usar planilhas para gerenciar dados tabulares para vári
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: f8e305f636c7a7247d2a41f6ed25b1715bd8837c
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '970'
 ht-degree: 1%
 
 ---
@@ -130,6 +130,7 @@ Agora que você sabe como criar uma planilha de redirecionamentos, é possível 
 * Metadados
 * Cabeçalhos
 * Configuração
+* [Taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Basta seguir as mesmas etapas nas seções [Criar planilha](#spreadsheet) e [Atualizar caminhos.json](#paths-json) e escolher o modelo apropriado e atualizar o arquivo `paths.json` apropriadamente.
 
@@ -138,6 +139,7 @@ Para [Configuração](https://www.aem.live/docs/configuration), [Cabeçalhos](ht
 * Configuração: `/.helix/config.json`
 * Cabeçalhos: `/.helix/headers.json`
 * Metadados: `/metadata.json`
+* Taxonomia: consulte o documento [Gerenciando Dados de Taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md) para obter mais informações.
 
 Além disso, você pode [criar sua própria planilha](#own-spreadsheet) com colunas arbitrárias para uso próprio.
 

@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -223,9 +223,9 @@ Para um layout responsivo eficaz, o autor de conteúdo deve ser capaz de arrasta
 
 Para permitir que os autores adicionem outras grades responsivas às páginas de conteúdo, é necessário ativar o componente Contêiner de layout para a página. Você pode fazer isso usando:
 
-* **Através do Ambiente de Autor** - [Edite seus modelos de página](/help/sites-cloud/authoring/sites-console/templates.md) para habilitar o Contêiner de Layout de uma página.
+* **Através do Ambiente de Autor** - [Edite seus modelos de página](/help/sites-cloud/authoring/page-editor/templates.md) para habilitar o Contêiner de Layout de uma página.
 * **Definição de Componente** - Use `allowedComponent` ou uma inclusão estática ao definir o componente.
 
 ### Configurar a grade do contêiner de layout {#configure-the-grid-of-the-layout-container}
 
-Você pode configurar o número de colunas disponíveis para cada instância específica do contêiner de layout [ editando seus modelos de página.](/help/sites-cloud/authoring/sites-console/templates.md)
+Você pode configurar o número de colunas disponíveis para cada instância específica do contêiner de layout [ editando seus modelos de página.](/help/sites-cloud/authoring/page-editor/templates.md)

@@ -4,7 +4,7 @@ description: Os modelos de página são usados ao criar uma página que é usada
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3268'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Ao criar uma página, é necessário selecionar um modelo. O modelo de página é usado como a base da nova página. O modelo define a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados (propriedades de design). Isso tem várias vantagens:
 
-* Os Modelos de página permitem que autores especializados [criem e editem modelos](/help/sites-cloud/authoring/sites-console/templates.md).
+* Os Modelos de página permitem que autores especializados [criem e editem modelos](/help/sites-cloud/authoring/page-editor/templates.md).
    * Esses autores especializados são chamados de **autores de modelo**
    * Os autores do modelo devem ser membros do grupo `template-authors`.
 * Os modelos de página mantêm uma conexão dinâmica com qualquer página criada a partir deles. Isso garante que qualquer alteração no modelo seja refletida nas próprias páginas.
@@ -32,7 +32,7 @@ Este documento:
 
 >[!NOTE]
 >
->Este documento supõe que você já esteja familiarizado com a criação e edição de modelos. Consulte o documento de criação [Criação de modelos de página](/help/sites-cloud/authoring/sites-console/templates.md), que detalha os recursos de modelos editáveis conforme expostos ao autor do modelo.
+>Este documento supõe que você já esteja familiarizado com a criação e edição de modelos. Consulte o documento de criação [Criação de modelos de página](/help/sites-cloud/authoring/page-editor/templates.md), que detalha os recursos de modelos editáveis conforme expostos ao autor do modelo.
 
 >[!TIP]
 >
@@ -40,7 +40,7 @@ Este documento:
 
 ## Criação de um novo modelo {#creating-a-new-template}
 
-A criação de Modelos de página é feita principalmente com o [console de modelo e o editor de modelo](/help/sites-cloud/authoring/sites-console/templates.md), por um autor de modelo. Esta seção fornece uma visão geral desse processo e segue com uma descrição do que ocorre em nível técnico.
+A criação de Modelos de página é feita principalmente com o [console de modelo e o editor de modelo](/help/sites-cloud/authoring/page-editor/templates.md), por um autor de modelo. Esta seção fornece uma visão geral desse processo e segue com uma descrição do que ocorre em nível técnico.
 
 Ao criar um modelo editável, você:
 
@@ -60,7 +60,7 @@ Ao criar um modelo editável, você:
    * Se desejar que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
 
-   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
+   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
 
    Para obter detalhes técnicos da estrutura, consulte [Estrutura](#structure) neste documento.
 
@@ -72,7 +72,7 @@ Ao criar um modelo editável, você:
 
    * Elas são aplicáveis ao modelo (e às páginas criadas com ele).
 
-   Para obter detalhes sobre como um autor de modelo define políticas, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-structure-template-author).
+   Para obter detalhes sobre como um autor de modelo define políticas, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
 
    Para obter detalhes técnicos das políticas, consulte [Políticas de Conteúdo](#content-policies) neste documento.
 
@@ -81,7 +81,7 @@ Ao criar um modelo editável, você:
    * O Conteúdo inicial define o conteúdo que será exibido quando uma página for criada pela primeira vez com base no modelo.
    * O conteúdo inicial pode ser editado pelos autores da página.
 
-   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-initial-content-author).
+   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
 
    Para obter detalhes técnicos sobre o conteúdo inicial, consulte [Conteúdo inicial](#initial-content) neste documento.
 
@@ -90,7 +90,7 @@ Ao criar um modelo editável, você:
    * Você pode definir o layout do modelo para um intervalo de dispositivos.
    * O Layout responsivo para modelos funciona como na criação de página.
 
-   Para obter detalhes sobre como um autor de modelo define o layout do modelo, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/sites-console/templates.md#editing-a-template-layout-template-author).
+   Para obter detalhes sobre como um autor de modelo define o layout do modelo, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
 
    Para obter detalhes técnicos sobre o layout do modelo, consulte [Layout](#layout) neste documento.
 
@@ -99,7 +99,7 @@ Ao criar um modelo editável, você:
    * Um modelo pode ser ativado ou desativado para disponibilizá-lo ou indisponibilizá-lo para os autores da página.
    * Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramificações de página.
 
-   Para obter detalhes sobre como um autor de modelo habilita um modelo, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/sites-console/templates.md#enabling-and-allowing-a-template-template-author).
+   Para obter detalhes sobre como um autor de modelo habilita um modelo, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author).
 
    Para obter detalhes técnicos sobre como habilitar um modelo, consulte [Habilitando e Permitindo um Modelo para Nós](#enabling-and-allowing-a-template-for-use)e neste documento
 
@@ -357,7 +357,7 @@ When creating an editable template, the value is copied from the template type t
 
 Se você tiver criado um modelo que possa servir como base de outros modelos, poderá copiá-lo como um tipo de modelo.
 
-1. Crie um modelo como faria com qualquer Modelo de página. Consulte [Criação de Modelos de Página](/help/sites-cloud/authoring/sites-console/templates.md#creating-a-new-template-template-author). Isso servirá como base para o tipo de template.
+1. Crie um modelo como faria com qualquer Modelo de página. Consulte [Criação de Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Isso servirá como base para o tipo de template.
 1. Usando o CRXDE Lite, copie o modelo criado do nó `templates` para o nó `template-types` na [pasta de modelo](#template-folders).
 1. Exclua o modelo do nó `templates` na [pasta de modelo](#template-folders).
 1. Na cópia do modelo que está sob o nó `template-types`, exclua todas as propriedades `cq:template` e `cq:templateType` de todos os nós `jcr:content`.
@@ -455,7 +455,7 @@ Define o conteúdo inicial que uma nova página terá após a criação:
 
 ### Layout {#layout}
 
-Ao [editar um modelo para definir o layout](/help/sites-cloud/authoring/sites-console/templates.md), este usa o [layout responsivo padrão](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
+Ao [editar um modelo para definir o layout](/help/sites-cloud/authoring/page-editor/templates.md), este usa o [layout responsivo padrão](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
@@ -486,7 +486,7 @@ As políticas de página permitem definir a [política de conteúdo](#content-po
 
    Antes de ser usado, um modelo deve ser ativado por:
 
-   * [Habilitando o modelo](/help/sites-cloud/authoring/sites-console/templates.md) do console **Modelos**.
+   * [Habilitando o modelo](/help/sites-cloud/authoring/page-editor/templates.md) do console **Modelos**.
 
    * Definindo a propriedade de status no nó `jcr:content`.
 
@@ -501,7 +501,7 @@ As políticas de página permitem definir a [política de conteúdo](#content-po
 
 1. **Modelos permitidos**
 
-   * [Defina os caminhos do Modelo Permitidos nas **Propriedades de Página**](/help/sites-cloud/authoring/sites-console/templates.md#allowing-a-template-author) da página apropriada ou da página raiz de uma sub-ramificação.
+   * [Defina os caminhos do Modelo Permitidos nas **Propriedades de Página**](/help/sites-cloud/authoring/page-editor/templates.md#allowing-a-template-author) da página apropriada ou da página raiz de uma sub-ramificação.
    * Defina a propriedade:
      `cq:allowedTemplates`
 No nó `jcr:content` da ramificação necessária.

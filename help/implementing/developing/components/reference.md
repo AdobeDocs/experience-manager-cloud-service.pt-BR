@@ -4,7 +4,7 @@ description: Um guia de referência do desenvolvedor para os detalhes dos compon
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -223,9 +223,9 @@ Na caixa de diálogo, os campos individuais são definidos:
 
 ### Caixas de diálogo de design {#design-dialogs}
 
-As caixas de diálogo de design são semelhantes às caixas de diálogo usadas para editar e configurar conteúdo, mas fornecem a interface para que os autores de modelo pré-configurem e forneçam detalhes de design para esse componente em um modelo de página. Os modelos de página são usados pelos autores de conteúdo para criar páginas de conteúdo. Consulte a [documentação do modelo](/help/sites-cloud/authoring/sites-console/templates.md) para obter detalhes sobre como os modelos são criados.
+As caixas de diálogo de design são semelhantes às caixas de diálogo usadas para editar e configurar conteúdo, mas fornecem a interface para que os autores de modelo pré-configurem e forneçam detalhes de design para esse componente em um modelo de página. Os modelos de página são usados pelos autores de conteúdo para criar páginas de conteúdo. Consulte a [documentação do modelo](/help/sites-cloud/authoring/page-editor/templates.md) para obter detalhes sobre como os modelos são criados.
 
-[As caixas de diálogo de design são usadas ao editar um modelo de página](/help/sites-cloud/authoring/sites-console/templates.md), embora não sejam necessárias para todos os componentes. Por exemplo, o **Título** e os **Componentes de Imagem** têm caixas de diálogo de design, enquanto o **Componente de Compartilhamento de Redes Sociais** não.
+[As caixas de diálogo de design são usadas ao editar um modelo de página](/help/sites-cloud/authoring/page-editor/templates.md), embora não sejam necessárias para todos os componentes. Por exemplo, o **Título** e os **Componentes de Imagem** têm caixas de diálogo de design, enquanto o **Componente de Compartilhamento de Redes Sociais** não.
 
 ### Interface do usuário do Coral e do Granite {#coral-and-granite}
 
@@ -280,7 +280,7 @@ Depois de criar um componente, você deve ativá-lo para usá-lo. Seu uso mostra
 
 Depois que um componente é definido, ele deve ser disponibilizado para uso. Para disponibilizar um componente para uso em um modelo, você deve ativar o componente na política do contêiner de layout do modelo.
 
-Consulte a [documentação do modelo](/help/sites-cloud/authoring/sites-console/templates.md) para obter detalhes sobre como os modelos são criados.
+Consulte a [documentação do modelo](/help/sites-cloud/authoring/page-editor/templates.md) para obter detalhes sobre como os modelos são criados.
 
 ### Componentes e o conteúdo que eles criam {#components-and-the-content-they-create}
 

@@ -5,7 +5,7 @@ contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '1858'
 ht-degree: 0%
@@ -154,7 +154,7 @@ Para obter configurações detalhadas dos plug-ins RTE, consulte [como ativar e 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE usando a interface do usuário como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento. Para obter mais informações, consulte [criar modelos de página](/help/sites-cloud/authoring/sites-console/templates.md) e a [documentação do desenvolvedor dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+O [componente de texto dos Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permite que os editores de modelo configurem vários plug-ins de RTE usando a interface do usuário como políticas de conteúdo, eliminando a necessidade de configuração técnica. As políticas de conteúdo podem funcionar com as configurações da interface do usuário de RTE conforme descrito neste documento. Para obter mais informações, consulte [criar modelos de página](/help/sites-cloud/authoring/page-editor/templates.md) e a [documentação do desenvolvedor dos Componentes Principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >Para fins de referência, os componentes de Texto padrão (fornecidos como parte de uma instalação padrão) podem ser encontrados em:
 >
@@ -220,7 +220,7 @@ O nó pop-up no modo em linha ou tela cheia contém uma lista das janelas pop-up
 
 ## Configurações da interface do usuário e políticas de conteúdo do RTE {#rtecontentpolicies}
 
-Os administradores podem controlar as opções de RTE usando políticas de conteúdo, digamos, em vez de fazer a configuração conforme descrito acima. As políticas de conteúdo definem as propriedades de design de um componente quando usadas como parte de um [modelo editável](/help/sites-cloud/authoring/sites-console/templates.md). Por exemplo, se um componente de texto que usa o RTE for usado com um modelo editável, a política de conteúdo poderá definir que a opção de negrito esteja disponível e que algumas opções de formatação de parágrafo estejam disponíveis. As políticas de conteúdo são reutilizáveis e podem ser aplicadas a vários modelos.
+Os administradores podem controlar as opções de RTE usando políticas de conteúdo, digamos, em vez de fazer a configuração conforme descrito acima. As políticas de conteúdo definem as propriedades de design de um componente quando usadas como parte de um [modelo editável](/help/sites-cloud/authoring/page-editor/templates.md). Por exemplo, se um componente de texto que usa o RTE for usado com um modelo editável, a política de conteúdo poderá definir que a opção de negrito esteja disponível e que algumas opções de formatação de parágrafo estejam disponíveis. As políticas de conteúdo são reutilizáveis e podem ser aplicadas a vários modelos.
 
 As opções disponíveis no fluxo de RTE downstream das configurações da interface do usuário para as políticas de conteúdo.
 

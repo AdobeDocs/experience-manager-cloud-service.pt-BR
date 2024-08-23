@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: a9b7e2fbafcfc4b5592cc95e6bbd1e8e0f631757
+source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
 workflow-type: tm+mt
-source-wordcount: '5340'
+source-wordcount: '5348'
 ht-degree: 79%
 
 ---
@@ -206,7 +206,7 @@ ht-degree: 79%
    + [Suporte IMS do AEM as a Cloud Service](/help/security/ims-support.md)
    + [Suporte a cookies Same Site para o AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Suporte OAuth2 para o serviço de email](/help/security/oauth2-support-for-mail-service.md)
-   + [Regras de filtro de tráfego incluindo regras WAF](/help/security/traffic-filter-rules-including-waf.md)
+   + [Regras de filtro de tráfego, incluindo regras do WAF](/help/security/traffic-filter-rules-including-waf.md)
    + [Considerações de segurança do AEM as a Cloud Service](/help/security/security-considerations.md)
    + [Descontinuação de credenciais JWT no Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Configuração de integrações do IMS para o AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
@@ -319,7 +319,6 @@ ht-degree: 79%
          + [Propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md)
          + [Visualizar páginas  ](/help/sites-cloud/authoring/sites-console/previewing-content.md)
          + [Publicar páginas](/help/sites-cloud/authoring/sites-console/publishing-pages.md)
-         + [Modelos de páginas](/help/sites-cloud/authoring/sites-console/templates.md)
          + [Versões de página](/help/sites-cloud/authoring/sites-console/page-versions.md)
          + [Diferencial de páginas](/help/sites-cloud/authoring/sites-console/page-diff.md)
          + [Uso de tags](/help/sites-cloud/authoring/sites-console/tags.md)
@@ -330,6 +329,7 @@ ht-degree: 79%
          + [O editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md)
          + [Painel lateral do editor](/help/sites-cloud/authoring/page-editor/editor-side-panel.md)
          + [Editar páginas](/help/sites-cloud/authoring/page-editor/edit-content.md)
+         + [Modelos de páginas](/help/sites-cloud/authoring/page-editor/templates.md)
          + [Adição de anotações de página](/help/sites-cloud/authoring/page-editor/annotations.md)
          + [O editor de rich text](/help/sites-cloud/authoring/page-editor/rich-text-editor.md)
          + [Layout responsivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
@@ -344,6 +344,7 @@ ht-degree: 79%
          + [Criação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Publicação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Herança de conteúdo no editor universal](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [Modelos de páginas](/help/edge/wysiwyg-authoring/templates.md)
       + Fragmentos {#fragments}
          + [Fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md)
          + [Fragmentos de experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md)
@@ -886,6 +887,8 @@ ht-degree: 79%
       + [Modelagem de conteúdo](/help/edge/wysiwyg-authoring/content-modeling.md)
       + [Dados em Tabelas e Planilhas](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Projetos existentes e Edge Delivery](/help/edge/wysiwyg-authoring/existing-projects.md)
+      + [Gerenciamento de dados de taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
+      + [Recursos de Sites WIP](/help/edge/wysiwyg-authoring/wip-features.md)
    + Criação Baseada em Documento {#document-authoring}
       + [Criação  ](/help/edge/docs/authoring.md)
       + [Metadados em massa](/help/edge/docs/bulk-metadata.md)

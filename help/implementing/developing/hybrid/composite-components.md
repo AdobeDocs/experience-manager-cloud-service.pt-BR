@@ -4,7 +4,7 @@ description: Saiba como criar seus próprios componentes compostos, componentes 
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -158,7 +158,7 @@ Você pode então adicioná-lo ao SPA e recuperar seu conteúdo.
     itemPath='root/responsivegrid' />
    ```
 
-1. Adicione o componente `wknd-spa/components/imagecard` criado aos componentes permitidos para o componente de contêiner [no modelo de página](/help/sites-cloud/authoring/sites-console/templates.md).
+1. Adicione o componente `wknd-spa/components/imagecard` criado aos componentes permitidos para o componente de contêiner [no modelo de página](/help/sites-cloud/authoring/page-editor/templates.md).
 
 Agora, o componente `imagecard` pode ser adicionado diretamente ao contêiner no editor de AEM.
 
