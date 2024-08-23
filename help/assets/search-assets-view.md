@@ -4,7 +4,7 @@ description: Saiba como pesquisar e descobrir ativos na visualização do AEM As
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: f30d9d43de926e3d0d62dba351c75a0c9641c53e
+source-git-commit: de5aaead0955f997cf5304c3cd1d540b2eded16b
 workflow-type: tm+mt
 source-wordcount: '2002'
 ht-degree: 76%
@@ -149,7 +149,7 @@ Para gerar novos ativos usando o [!DNL Adobe Firefly]:
 
    * Insira um nome para o arquivo no campo **Salvar como**.
    * Selecione uma pasta de destino.
-   * Forneça detalhes como nome do projeto ou da campanha, palavras-chave, canais, intervalo de tempo e região.
+   * Insira detalhes como nome do projeto ou da campanha, palavras-chave, canais, intervalo de tempo e região.
 
    ![Integração do Firefly](assets/save-generated-asset.png)
 
