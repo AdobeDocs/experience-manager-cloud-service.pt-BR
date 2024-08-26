@@ -5,7 +5,7 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 1415d07235641262814e81362c806572bcf582ba
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 12%
@@ -17,6 +17,8 @@ ht-degree: 12%
 
 Ao aplicar Listas de permissões de IP, todos os intervalos de IP incluídos na definição da lista são associados a um serviço de autoria ou publicação em um ambiente. Cancelar a aplicação de uma lista é o processo inverso.
 
+{{add-cm-allowlist-frontend-pipeline}}
+
 ## Aplicar Listas de permissões de IP {#applying}
 
 Um usuário na função de **Proprietário da empresa** ou **Gerente de implantação** pode seguir essas etapas para aplicar uma Lista de permissões de IP.
@@ -26,10 +28,10 @@ Um usuário na função de **Proprietário da empresa** ou **Gerente de implanta
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Selecione a organização apropriada.
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
-1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
-1. Acesse a página de detalhes do ambiente específico na tela **Ambientes**.
+1. Na página **Visão geral**, navegue até a tela **Ambientes**.
+1. Na tela **Ambientes**, navegue até a página de detalhes do ambiente específico.
 1. Navegue até a tabela **Lista de permissões de IP**.
-1. Use os campos de entrada na parte superior da tabela para poder selecionar a Lista de permissões IP e o serviço de autoria ou publicação ao qual deseja aplicá-la.
+1. Use os campos de entrada na parte superior da tabela para poder selecionar a Lista de permissões IP e o serviço de Autor ou Publicação ao qual aplicá-la.
 A Lista de permissões IP já deve existir no Cloud Manager para ser aplicada. Consulte [Adicionar Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
 1. Clique em **Aplicar** e confirme o envio.
 
