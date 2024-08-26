@@ -4,9 +4,9 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9e808f2d4b57d6b1043f2e3e6300a1e37f3cbb35
+source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
 workflow-type: tm+mt
-source-wordcount: '1183'
+source-wordcount: '1185'
 ht-degree: 9%
 
 ---
@@ -99,6 +99,7 @@ A seguir estão os tipos de componentes possíveis para usar em campos de render
 | [Container](#container) | `container` |
 | [Fragmento do conteúdo](#content-fragment) | `aem-content-fragment` |
 | [Data e hora](#date-time) | `date-time` |
+| [Fragmento de experiência](#experience-fragment) | `aem-experience-fragment` |
 | [Multisseleção](#multiselect) | `multiselect` |
 | [Número](#number) | `number` |
 | [Grupo de opções](#radio-group) | `radio-group` |
