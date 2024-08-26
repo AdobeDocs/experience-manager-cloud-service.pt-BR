@@ -1,13 +1,13 @@
 ---
 title: Integrar o AEM Assets remoto com o AEM Sites
-description: Saiba como configurar e conectar sites AEM com o Approved AEM Assets no Creative Cloud.
-source-git-commit: f6c0e8e5c1d7391011ccad5aa2bad4a6ab7d10c3
+description: Saiba como configurar e conectar sites AEM com o Approved AEM Assets.
+exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
+source-git-commit: e2c0c848c886dc770846d064e45dcc52523ed8e3
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 0%
+source-wordcount: '977'
+ht-degree: 12%
 
 ---
-
 
 # Integrar o AEM Assets remoto com o AEM Sites  {#integrate-approved-assets}
 
@@ -23,7 +23,13 @@ Após a configuração inicial, os usuários podem criar páginas na instância 
 
 O Dynamic Media com recursos OpenAPI oferece vários outros benefícios, como acessar e usar ativos remotos no fragmento de conteúdo, buscar metadados dos ativos remotos e muito mais. Saiba mais sobre os outros [benefícios do Dynamic Media com recursos OpenAPI sobre o Connected Assets](/help/assets/dynamic-media-open-apis-faqs.md).
 
-## Antes de começar {#pre-requisits-sites-integration}
+## Antes de começar {#pre-requisites-sites-integration}
+
+O suporte a ativos remotos usando o Dynamic Media com recursos OpenAPI exige:
+
+* AEM 6.5 SP 18+ ou AEM as a Cloud Service
+
+* Versão 2.23.2 ou posterior dos Componentes principais
 
 * Configure as [variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md#add-variables) a seguir para o AEM as a Cloud Service:
 
@@ -31,21 +37,47 @@ O Dynamic Media com recursos OpenAPI oferece vários outros benefícios, como ac
      `pXXXX` refere-se à ID do programa <br>
      `eYYYY` refere-se à ID de ambiente
 
-   * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]
+  Essas variáveis são definidas usando a interface do usuário do Cloud Manager do ambiente do AEM as a Cloud Service que atua como a instância do Sites local.
 
-  ou defina as [configurações de OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) para AEM 6.5 na instância do AEM Sites seguindo estas etapas:
+   * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]: é necessário enviar um tíquete de suporte Adobe para obter a ID do Cliente IMS.
+
+     ou defina as [configurações de OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) para AEM 6.5 na instância do AEM Sites seguindo estas etapas:
 
    1. Entre no console e clique em **[!UICONTROL OSGi] >** ou
-usar a URL direta; por exemplo: `http://localhost:4502/system/console/configMgr`
+usar a URL direta; por exemplo: `https://localhost:4502/system/console/configMgr`
 
-   1. Adicionar o **[!UICONTROL repositoryID]**= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; e **[!UICONTROL imsClient]**= [IMSClientId]
-Saiba mais sobre [Autenticação IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
+   1. Configure a **Configuração de Dynamic Media de última geração** (`NextGenDynamicMediaConfigImpl`) da seguinte maneira: configuração OSGi, substituindo os valores pelos do ambiente de ativos remoto.
 
-* Acesso IMS para fazer logon na instância remota do AEM as a Cloud Service DAM.
+      ```text
+        imsClient="<ims-client-ID>"
+        enabled=B"true"
+        imsOrg="<ims-org>@AdobeOrg"
+        repositoryId="<repo-id>.adobeaemcloud.com"
+      ```
 
-* Ative o Dynamic Media com recursos OpenAPI alternados no DAM remoto.
+      `imsOrg` não é uma entrada obrigatória.
+      `repositoryId` = &quot;delivery-pxxxx-eyyyyy.adobeaemcloud.com&quot;
+onde `pXXXX` refere-se à ID do programa
+      `eYYYY` refere-se à ID de ambiente
+
+      ![A janela de configuração OSGi do Dynamic Media de última geração](/help/assets/assets/remote-assets-osgi.png)
+
+  Saiba mais sobre [Autenticação IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
+
+  Para obter detalhes sobre como configurar o OSGi, consulte os seguintes documentos:
+
+   * [Configuração OSGi para o Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR) no AEM as a Cloud Service
+   * [Configuração do OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=pt-BR) para AEM 6.5
+
+* Acesso IMS para fazer logon na instância remota do AEM as a Cloud Service DAM. Refere-se ao autor do Sites que tem acesso IMS ao ambiente remoto do DAM.
 
 * Configure o componente de Imagem v3 na instância do AEM Sites. Se o componente não estiver presente, baixe e instale o [pacote de conteúdo](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0).
+
+## Configurar HTTPS {#https}
+
+Geralmente, é recomendável executar todas as instâncias de produção do AEM usando HTTPs. No entanto, os ambientes de desenvolvimento locais podem não estar configurados dessa forma. No entanto, os ativos remotos que usam o Dynamic Media com OpenAPI precisam de HTTPS para funcionar.
+
+[Use este guia](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=pt-BR) para configurar HTTPS sempre que desejar usar ativos remotos, incluindo ambientes de desenvolvimento.
 
 ## Acessar ativos do DAM remoto {#fetch-assets}
 
@@ -58,7 +90,6 @@ O Dynamic Media com recursos OpenAPI permite acessar ativos disponíveis em sua 
 Siga as etapas abaixo para usar ativos remotos no Editor de páginas AEM na sua instância do AEM Sites. Essa integração pode ser feita no AEM as a Cloud Service e no AEM 6.5.
 
 1. Vá para **[!UICONTROL Sites]** > _seu site_ onde o AEM **[!UICONTROL Página]** está presente e no qual você precisa adicionar o ativo remoto.
-1. Navegue até a **[!UICONTROL Página]** do AEM específica em seu site na seção **[!UICONTROL Sites]** onde você pretende adicionar o ativo remoto.
 1. Selecione a página e clique em **[!UICONTROL Editar (_e_)]**. O AEM **[!UICONTROL Editor de páginas]** se abre.
 1. Clique no Contêiner de layout e adicione um componente **[!UICONTROL Imagem]**.
 1. Clique no componente **[!UICONTROL Imagem]** e clique no ícone ![configurações](/help/assets/assets/do-not-localize/settings-icon.svg).
