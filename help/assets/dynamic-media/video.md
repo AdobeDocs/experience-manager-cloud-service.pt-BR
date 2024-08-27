@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: f41e2f6ce39fff9615e35928d3f569e9254325d0
+source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
 workflow-type: tm+mt
 source-wordcount: '9406'
 ht-degree: 1%
@@ -143,7 +143,7 @@ OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows&reg; devices that sup
 * Configure players de vídeo para atender às suas necessidades de marca.
 * Integre vídeo ao seu site, site móvel ou aplicativo móvel com um URL simples ou código integrado.
 
-Consulte a amostra [Reprodução dinâmica de vídeo](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
+<!-- GIVES a 404 See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
 Consulte também [Visualizadores do Experience Manager Assets e Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers#viewers-aem-assets-dmc) e [Visualizadores do Experience Manager Assets somente](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers#viewers-for-aem-assets-only) no [Guia de Referência do Dynamic Media Viewers](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources).
 
@@ -562,7 +562,7 @@ Ativar qualquer um dos três recursos acima ativa todos eles. Portanto, se você
 
 ## Sobre o suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media{#about-msma}
 
-Com o recurso de várias legendas e faixas de áudio no Dynamic Media, é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis em um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
+Com o recurso de várias legendas e faixas de áudio no Dynamic Media, é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis a um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 
 ![Guia Legendas e faixas de áudio no Dynamic Media, juntamente com uma tabela que mostra arquivos de legenda .VTT carregados e arquivos de faixa de áudio .MP3 carregados para um vídeo.](/help/assets/dynamic-media/assets/msma-caption-audiotracks-tab2.png)
 
@@ -601,7 +601,7 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
 1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
 
-   ![Botão de propriedades do ativo.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ativo de vídeo selecionado no modo de exibição Cartão.*
+   ![Botão de propriedades do ativo.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ativo de vídeo selecionado no Modo de Exibição de Cartão.*
 
 1. Na página Propriedades do vídeo, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
 
@@ -609,16 +609,16 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
    >[!TIP]
    >Se você não vir a guia [!UICONTROL Legendas e faixas de áudio], isso significa uma destas duas coisas:
    >* A pasta em que o vídeo selecionado reside não tem um perfil de vídeo atribuído a ele. Nesse caso, consulte [Aplicar um perfil de vídeo à pasta](/help/assets/dynamic-media/video-profiles.md#applying-video-profiles-to-specific-folders)
-   >* Ou o vídeo deve ser reprocessado pelo Dynamic Media. Nesse caso, consulte [Reprocessar ativos do Dynamic Media em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+   >* Ou o Dynamic Media deve reprocessar o vídeo. Nesse caso, consulte [Reprocessar ativos do Dynamic Media em uma pasta](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
    Quando tiver concluído uma das tarefas acima, retorne a essas etapas.
 
-   ![Propriedades do ativo ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Guia Legendas e Faixas de Áudio na página Propriedades do vídeo.*
+   ![Propriedades do ativo ](/help/assets/dynamic-media/assets/msma-audiotracks.png)*Guia Legendas e faixas de áudio na página Propriedades do vídeo.*
 
 1. (Opcional) Para adicionar um ou mais arquivos de legenda a um vídeo, faça o seguinte:
 
    * Selecione **[!UICONTROL Carregar Legendas]**.
-   * Navegue até um ou mais arquivos .vtt (Video Text Tracks) e selecione-os.
+   * Navegue até um ou mais arquivos `.vtt` (faixas de texto do vídeo) e selecione-os e abra-os.
    * Para que as legendas fiquem visíveis no reprodutor de mídia, você deve adicionar os detalhes necessários (metadados) sobre cada arquivo de legenda carregado. Selecione o ícone de lápis à direita de um nome de arquivo de legenda. Na caixa de diálogo Editar Legenda, insira os seguintes detalhes necessários sobre o arquivo e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de legenda que você carregou:
 
 
@@ -626,7 +626,7 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
    | --- | --- | 
    | Nome de arquivo | O nome de arquivo padrão é derivado do nome de arquivo original. O nome do arquivo só pode ser alterado durante o carregamento e não pode ser alterado posteriormente. Os requisitos de caracteres de nome de arquivo são iguais para o AEM Assets.<br>O mesmo nome de arquivo não pode ser usado para arquivos de legenda e de faixa de áudio adicionais. |
    | Idioma | Selecione o idioma da legenda. |
-   | Tipo | Selecione o tipo de legenda que você está usando.<br>**Subtítulo** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda também inclui ruídos de fundo, diferenciação do alto-falante e outras informações relevantes, juntamente com a tradução ou transcrição da caixa de diálogo, tornando o conteúdo mais acessível para indivíduos surdos ou com deficiência auditiva. |
+   | Tipo | Selecione o tipo de legenda que você está usando.<br>**Subtítulo** - O texto da legenda exibido com o vídeo que traduz ou transcreve a caixa de diálogo.<br>**Legenda** - O texto da legenda inclui ruídos de fundo e identificação do alto-falante. Inclui também outros pormenores relevantes, juntamente com a tradução ou transcrição do diálogo. Essa funcionalidade torna o conteúdo mais acessível para indivíduos surdos ou com deficiência auditiva. |
    | Rótulo | O texto exibido para o nome da legenda na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia. O rótulo é o que um cliente vê que corresponde a uma faixa de legenda ou subtítulo. Por exemplo, inglês (CC). |
 
    É possível alterar ou editar os metadados da legenda posteriormente, se necessário. Quando o vídeo é publicado, esses detalhes são refletidos nos URLs públicos em vídeos publicados.
@@ -635,7 +635,7 @@ Legendas e legendas adicionadas são compatíveis com os formatos WebVTT e Adobe
 
    * Selecione **[!UICONTROL Carregar Faixas De Áudio]**.
    * Navegue até um ou mais arquivos .mp3, selecione-os e abra-os.
-   * Para que as faixas de áudio fiquem visíveis na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia, você deve adicionar os detalhes necessários sobre cada faixa de áudio adicionada. Selecione o ícone de lápis à direita de um nome de arquivo de faixa de áudio. Na caixa de diálogo Editar faixa de áudio, digite os seguintes detalhes necessários e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de trilha de áudio que você carregou.
+   * Para tornar as faixas de áudio visíveis na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia, adicione os detalhes necessários para cada arquivo de faixa de áudio. Certifique-se de incluir todas as informações necessárias para uma exibição adequada. Selecione o ícone de lápis à direita de um nome de arquivo de faixa de áudio. Na caixa de diálogo Editar faixa de áudio, digite os seguintes detalhes necessários e selecione **[!UICONTROL Salvar]**. Repita esse processo para cada arquivo de trilha de áudio que você carregou.
 
    | Metadados da faixa de áudio | Descrição |
    | --- | --- |
@@ -931,7 +931,7 @@ Na caixa de diálogo **Definir como padrão**, selecione **[!UICONTROL Substitui
 1. No canto superior direito, selecione **[!UICONTROL Salvar e fechar]**.
 1. Publish o vídeo. Consulte [ativos do Publish](publishing-dynamicmedia-assets.md).
 
-### Visualizar um vídeo com várias legendas e faixas de áudio{#preview-video-audio-subtitle}
+### Visualizar um vídeo com várias legendas e faixas de áudio {#preview-video-audio-subtitle}
 
 Depois que os arquivos de legenda e de trilha de áudio são carregados em um vídeo e processados, é possível usar o visualizador de vídeo do Dynamic Media para visualizar todas as faixas diferentes. Isso ajuda você a ver a aparência e o som do seu vídeo para os clientes e garante que ele esteja se comportando conforme esperado.
 
@@ -993,7 +993,7 @@ Não é possível baixar a faixa de áudio original extraída de um arquivo de v
 
 **Caso de uso:** o download de um arquivo de legenda poderá ser necessário se você encontrar um erro em um arquivo `.vtt`. Basta baixar o arquivo `.vtt` incorreto, abri-lo em um editor de texto simples e fazer as correções necessárias. Depois de salvar o arquivo `.vtt`, carregue-o novamente. Em seguida, use a opção **[!UICONTROL Traduzir Legendas]** para traduzir novamente o arquivo `.vtt` corrigido.
 
-**Para baixar arquivos de legenda ou de trilha de áudio de um vídeo:**
+**Para baixar arquivos de legenda ou de trilha de áudio que foram carregados em um vídeo:**
 
 1. Navegue até o ativo de vídeo cuja faixa de áudio padrão você deseja definir.
 1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
@@ -1182,7 +1182,7 @@ Quando a miniatura de um vídeo é alterada, a geração da miniatura por meio d
 
 A capacidade de personalizar uma miniatura de vídeo só estará disponível após você ter aplicado um perfil de vídeo à pasta em que o vídeo está localizado.
 
-### Adição de uma miniatura de vídeo personalizada {#adding-a-custom-video-thumbnail}
+### Adicionar uma miniatura de vídeo personalizada {#adding-a-custom-video-thumbnail}
 
 1. Certifique-se de já ter feito o seguinte:
 

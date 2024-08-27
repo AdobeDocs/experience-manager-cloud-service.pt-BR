@@ -1,7 +1,9 @@
 ---
 title: Configuração do carrinho de compras e do Dispatcher
 description: Configuração do carrinho de compras e do Dispatcher
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+feature: Commerce Integration Framework
+role: Admin
+source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 93%
