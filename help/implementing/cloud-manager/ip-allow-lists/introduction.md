@@ -5,7 +5,7 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1415d07235641262814e81362c806572bcf582ba
+source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 15%
@@ -34,7 +34,7 @@ Após adicionar, [Listas de permissões de IP podem ser aplicadas ou desaplicada
 
 ## Uso da Lista de permissões IP do Cloud Manager com o pipeline de front-end {#allowlists-frontend-pipeline}
 
-Se você usa, ou pretende usar, o [pipeline de front-end para desenvolver sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), a seguinte Lista de permissões de IP do Cloud Manager deve ser adicionada com antecedência.
+Se você usa (ou pretende usar) o [pipeline de front-end para desenvolver sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), a seguinte Lista de permissões de IP do Cloud Manager deve ser adicionada com antecedência.
 
 Quando você [adicionar a Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), nomeie-a como *`Cloud Manager`*, copie a lista de endereços abaixo e cole-a na caixa de diálogo Lista de permissões de IP.
 
