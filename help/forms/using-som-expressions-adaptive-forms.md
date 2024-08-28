@@ -1,12 +1,9 @@
 ---
 title: Como podemos usar expressões SOM no Adaptive Forms?
 description: Saiba como extrair expressões SOM de um painel no Adaptive Forms.
-uuid: c5d55aff-fb69-4a1c-96ea-fb3f9322cbb0
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: develop
-discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
-docset: aem65
-source-git-commit: 7a65aa82792500616f971df52b8ddb6d893ab89d
+feature: Adaptive Forms, Foundation Components
+role: User
+source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -18,7 +15,7 @@ ht-degree: 0%
 
 O Forms adaptável é modelado como AEM Page, que é representada como a estrutura de conteúdo JCR no repositório AEM. O elemento principal da estrutura de conteúdo é o nó guideContainer. Abaixo de guideContainer, há rootPanel que pode conter painéis e campos aninhados.
 
-Você pode usar um modelo de objeto de script (SOM) para fazer referência a valores, propriedades e métodos em um modelo de objeto de documento (DOM) específico. Um DOM organiza os objetos de memória e as propriedades em uma hierarquia de árvore. Uma expressão SOM faz referência a campos/elementos e painéis do Draw.
+Você pode usar um modelo de objeto de script (SOM) para fazer referência a valores, propriedades e métodos em um modelo de objeto de documento (DOM) específico. Um DOM organiza os objetos de memória e as propriedades em uma hierarquia de árvore. Uma expressão SOM faz referência a campos/desenha elementos e painéis.
 
 A imagem a seguir representa uma estrutura de nó para a qual um Formulário adaptável é traduzido quando você adiciona componentes a um formulário. Por exemplo, você pode adicionar um painel ao painel raiz e um botão de opção no painel que é transformado em DOM no tempo de execução. A Expressão SOM do campo de botão de opção no Formulário Adaptável está especificada como `guide[0].guide1[0].guideRootPanel[0].panel1[0].radiobutton[0]`.
 

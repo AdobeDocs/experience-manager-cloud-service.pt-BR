@@ -3,10 +3,13 @@ title: Como adicionar texto de ajuda para campos do AEM Adaptive Forms?
 description: O AEM Forms permite adicionar ajuda em contexto aos campos e painéis do Formulário adaptável, como texto ou mídia avançada, incluindo vídeos.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-docset: aem65
-source-git-commit: 0f8aed76af4d2640094a76f2805f73a0a619e33f
+feature: Adaptive Forms, Foundation Components
+role: User
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -64,8 +67,3 @@ Além da ajuda em contexto para campos de formulário, você pode especificar a 
 Adicionar ajuda para o painel exibe um **?Ícone** ao lado da descrição do painel. Clicar no ícone exibe o conteúdo adicionado na seção Conteúdo da ajuda da caixa de diálogo de edição do painel.
 
 ![Exemplo de ajuda em contexto no nível do painel do formulário](assets/photoshop-1.png)
-
->[!MORELIKETHIS]
->
->* [Adicionar texto de espaço reservado a campos de formulário](/help/forms/placeholder-text-in-aem-forms.md)
->* [Adicionar Nota de Rodapé a um formulário adaptável para rich text](/help/forms/footnotes-richtextsupport.md)

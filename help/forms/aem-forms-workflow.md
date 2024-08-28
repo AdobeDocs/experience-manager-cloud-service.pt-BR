@@ -4,9 +4,13 @@ seo-title: Rapidly build Adaptive Forms-based processes, automate document servi
 description: Use o AEM Forms Workflow para automatizar e criar rapidamente workflows de processos de negócios. Por exemplo, análise e aprovação, geração de PDF, fluxos de trabalho de Adobe Sign.
 uuid: 797ba0f7-a378-45ac-9f82-fa9a952027be
 topic-tags: publish, document_services
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+feature: Adaptive Forms
+role: User, Developer
+hide: true
+hidefromtoc: true
+source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2335'
 ht-degree: 1%
 
 ---
@@ -197,7 +201,7 @@ O aplicativo é o Formulário adaptável associado ao fluxo de trabalho. Quando 
 
 ### Envio de um aplicativo da Caixa de entrada AEM {#inbox}
 
-O aplicativo de workflow que você criou está disponível como um aplicativo na Caixa de entrada. Os usuários membros do grupo [!DNL workflow-users] podem preencher e enviar o aplicativo que aciona o fluxo de trabalho associado. Para obter informações sobre como usar a Caixa de Entrada do AEM para enviar aplicativos e gerenciar tarefas, consulte [Gerenciar aplicativos e tarefas do Forms na Caixa de Entrada do AEM](manage-applications-/help/sites-cloud/authoring/inbox.md).
+O aplicativo de workflow que você criou está disponível como um aplicativo na Caixa de entrada. Os usuários membros do grupo [!DNL workflow-users] podem preencher e enviar o aplicativo que aciona o fluxo de trabalho associado.
 
 <!-- ### Submitting an application from [!DNL AEM Forms] App {#afa}
 
@@ -270,9 +274,3 @@ You can use the Assign Task and Send Email steps of AEM Workflows to send an ema
 ### Limpar instâncias de fluxo de trabalho {#purge-workflow-instances}
 
 Minimizar o número de instâncias de fluxo de trabalho aumenta o desempenho do mecanismo de fluxo de trabalho, para que você possa remover regularmente do repositório as instâncias de fluxo de trabalho concluídas ou em execução. Para obter informações detalhadas, consulte [Limpeza regular de instâncias de fluxo de trabalho](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/maintenance.html?lang=pt-BR) limpeza de instâncias de fluxo de trabalho
-
-
->[!MORELIKETHIS]
->
->* [Usar o fluxo de trabalho de tradução do AEM para localizar o Forms Adaptável e o Documento de Registro](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms.md)
->* [Variáveis em fluxos de trabalho AEM centrados no Forms](/help/forms/variable-in-aem-workflows.md)
