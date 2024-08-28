@@ -4,9 +4,9 @@ description: Saiba como usar o Monitoramento de uso real (RUM) para capturar e a
 exl-id: 91fe9454-3dde-476a-843e-0e64f6f73aaf
 feature: Administering
 role: Admin
-source-git-commit: ae9951fa89edeab5f34ae3506cf8a4864201c93e
+source-git-commit: 2515bc51fd54b014ffb701a8aef38cd08d6725b3
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ Com o RUM, as métricas principais de desempenho são rastreadas desde o início
 A AEM desenvolveu o RUM para ajudar os clientes e o Adobe a entender como os visitantes interagem com sites de AEM. O RUM pode ser usado para ajudar a diagnosticar problemas de desempenho e medir a eficácia dos experimentos. O RUM preserva a privacidade dos visitantes por meio da amostragem — somente uma pequena parte de todas as exibições de página é monitorada — e nenhuma informação de identificação pessoal (PII) é coletada.
 
 
-## Entender como funciona o serviço de monitoramento de uso real {#understand-how-the-rum-service-works}
+## Entender como o serviço Monitoramento de uso real funciona {#understand-how-the-rum-service-works}
 
-O Adobe Experience Manager (AEM) usa o Monitoramento de uso real (RUM) para ajudar os clientes e o Adobe a entender como os visitantes interagem com os sites do AEM. Ele os ajuda a diagnosticar problemas de desempenho e medir a eficácia dos experimentos. O RUM preserva a privacidade dos visitantes por meio da amostragem — somente uma pequena parte de todas as exibições de página é monitorada — e nenhuma informação de identificação pessoal (PII) é coletada.
+O AEM usa o RUM para ajudar os clientes e o Adobe a entender como os visitantes interagem com sites do AEM. Ele os ajuda a diagnosticar problemas de desempenho e medir a eficácia dos experimentos. O RUM preserva a privacidade dos visitantes por meio da amostragem — somente uma pequena parte de todas as exibições de página é monitorada — e nenhuma informação de identificação pessoal (PII) é coletada.
 
 ## Serviço de monitoramento e privacidade em uso real {#rum-service-and-privacy}
 
@@ -46,13 +46,13 @@ O serviço de monitoramento de uso real no AEM foi projetado para preservar a pr
 
 Como operador de site, não é necessária nenhuma aceitação adicional para habilitar o monitoramento por meio desse recurso. Não há nenhum pop-up ou formulário de consentimento adicional para os usuários finais aceitarem para ativar o RUM.
 
-## Amostragem de dados do Real Use Monitoring Service {#rum-service-data-sampling}
+## Amostragem de dados do serviço de monitoramento de uso real {#rum-service-data-sampling}
 
 As soluções tradicionais de análise da Web tentam coletar dados em cada visitante. O serviço de RUM do AEM captura apenas informações de uma pequena fração de visualizações de página. O serviço deve ser amostrado e anonimizado em vez de ser um substituto para o Analytics. Por padrão, as páginas têm uma proporção de amostragem de 1:100. Os operadores do site não podem aumentar ou diminuir a taxa de amostragem neste momento. Para estimar o tráfego total com precisão, para cada 100 exibições de página, os dados são coletados de 1, fornecendo uma aproximação confiável do tráfego geral.
 
 Como a decisão sobre se os dados serão coletados, ela é feita em uma base de exibição de página por exibição de página, e se torna praticamente impossível rastrear interações em várias páginas. Por design, o RUM não tem conceito de visitantes ou sessões, apenas de exibições de página.
 
-## Quais dados estão sendo coletados {#what-data-is-being-collected}
+## Quais dados são coletados? {#what-data-is-being-collected}
 
 O serviço de monitoramento de uso real foi projetado para impedir a coleta de informações de identificação pessoal. O conjunto completo de informações coletadas pelo RUM está listado abaixo:
 
@@ -68,7 +68,7 @@ O serviço de monitoramento de uso real foi projetado para impedir a coleta de i
 * O target ou link para uma página externa ou recurso com o qual o usuário interage para o ponto de verificação mencionado acima. Por exemplo: `https://blog.adobe.com/jp/publish/2022/06/29/media_162fb947c7219d0537cce36adf22315d64fb86e94.png`
 * As métricas de desempenho dos Componentes principais da Web (CWV), incluindo o Maior Conteúdo de Pintura (LCP), o Primeiro Atraso de Entrada (FID), o Cumulative Layout Shift (CLS) e o Tempo para o Primeiro Byte (TTFB) que descrevem a qualidade da experiência do visitante.
 
-## Como funciona o monitoramento de uso real para um cliente {#how-rum-works-for-a-customer}
+## Como o Monitoramento de uso real funciona para um cliente {#how-rum-works-for-a-customer}
 
 O Monitoramento de uso real monitora automaticamente o tráfego do lado do cliente para fornecer insights valiosos. Como cliente Adobe, não é necessário executar nenhuma etapa adicional, pois esse serviço é perfeitamente integrado à sua configuração existente. Com a implantação da Disponibilidade Geral (GA), você se beneficia automaticamente desse novo recurso.
 
@@ -76,7 +76,7 @@ O Monitoramento de uso real monitora automaticamente o tráfego do lado do clien
 
 If you wish to leverage more insights with this new feature to optimize your digital experiences effortlessly, please see here (link to Row 99). -->
 
-## Como os dados do serviço de monitoramento de uso real estão sendo usados {#how-rum-service-data-is-being-used}
+## Como os dados do Real Use Monitoring Service são usados {#how-rum-service-data-is-being-used}
 
 Os dados de RUM são benéficos para os seguintes propósitos:
 
@@ -84,7 +84,7 @@ Os dados de RUM são benéficos para os seguintes propósitos:
 * Para simplificar a pesquisa de tráfego automatizada que inclui exibições de página.
 * Para entender como o AEM interage com outros scripts (como análises, direcionamento ou bibliotecas externas) na mesma página, para aumentar a compatibilidade.
 
-## Limitações e noções básicas sobre a variação em exibições de página e métricas de desempenho {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
+## Limitações e noções básicas sobre a variação nas exibições de página e nas métricas de desempenho {#limitations-and-understanding-variance-in-page-views-and-performance-metrics}
 
 À medida que você analisa os dados de RUM, pode haver variações nas exibições de página e outras métricas de desempenho. Essas variações podem ser atribuídas a vários fatores inerentes ao monitoramento em tempo real no lado do cliente. Estas são as principais considerações que os clientes devem ter em mente ao interpretar os dados de RUM:
 
