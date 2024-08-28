@@ -4,12 +4,13 @@ description: Saiba mais sobre as diretrizes e práticas recomendadas para usar a
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: e5fd1b351047213adbb83ef1d1722352958ce823
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 15%
+source-wordcount: '1368'
+ht-degree: 14%
 
 ---
+
 
 # Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo {#guidelines}
 
@@ -22,24 +23,24 @@ ht-degree: 15%
 >title="Guidelines and Best Practices"
 >abstract="Review guidelines and best practices to use the Content Transfer tool including revision cleanup tasks, Disk space considerations and more."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html" text="Important Considerations for using Content Transfer Tool"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/user-mapping-and-migration.md#important-considerations" text="Important Considerations when Mapping and Migrating Users" 
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/group-migration.md#important-considerations" text="Important Considerations when Migrating Groups" 
 
 -->
 
-Uma nova versão da ferramenta de Transferência de conteúdo está disponível para integrar o processo de transferência de conteúdo ao Cloud Acceleration Manager. É altamente recomendável mudar para essa nova versão para usar todos os benefícios que ela oferece:
+A ferramenta Transferência de conteúdo integra o processo de transferência de conteúdo ao Cloud Acceleration Manager. É necessário usar essa versão (2.0 ou posterior, mas a versão 3.0 agora é recomendada) para obter todos os benefícios que ela oferece:
 
 * Sistema de autoatendimento para extrair um conjunto de migração uma vez e assimilá-lo em vários ambientes em paralelo
 * Experiência do usuário aprimorada por meio de melhores estados de carregamento, medidas de proteção e tratamento de erros
 * Os logs de assimilação são persistentes e sempre estão disponíveis para solução de problemas
 
-Para começar a usar a nova versão, desinstale as versões anteriores da ferramenta Transferência de conteúdo. Isso é necessário porque a nova versão vem com uma grande mudança arquitetônica. Com a versão 2.x, você cria conjuntos de migração e executa novamente a extração e a assimilação nos conjuntos.
+Para começar a usar a versão mais recente, desinstale as versões anteriores da ferramenta Transferência de conteúdo. Com a versão 2.0 e posterior, você cria conjuntos de migração e executa novamente a extração e a assimilação nos conjuntos.
 As versões anteriores à 2.0.0 não são compatíveis e recomenda-se usar a versão mais recente.
 
 As diretrizes e práticas recomendadas a seguir se aplicam à nova versão da ferramenta Transferência de conteúdo:
 
 * Execute a [Limpeza de Revisão](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=pt-BR) e as [verificações de consistência do repositório de dados](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html) no repositório **origem** para que você possa identificar possíveis problemas e reduzir o tamanho do repositório.
 
-* Na fase de assimilação, o Adobe recomenda que você execute a assimilação usando o modo *wipe* ativado, no qual o repositório existente (autor ou publicação) no ambiente de Cloud Service do Adobe Experience Manager (AEM) de destino é excluído. Em seguida, atualize com os dados do conjunto de migração. Esse modo é mais rápido que o modo sem limpeza, no qual o conjunto de migração é aplicado sobre o conteúdo atual.
+* Na fase de assimilação, o Adobe recomenda que você execute a assimilação usando o modo *wipe* ativado, no qual o repositório existente (Autor ou Publish) no ambiente de Cloud Service do Adobe Experience Manager AEM () de destino é excluído. Em seguida, atualize com os dados do conjunto de migração. Esse modo é mais rápido que o modo sem limpeza, no qual o conjunto de migração é aplicado sobre o conteúdo atual.
 
 * Após a conclusão da atividade de transferência de conteúdo, a estrutura correta do projeto é necessária no ambiente do Cloud Service para garantir que o conteúdo seja renderizado com êxito no ambiente do Cloud Service.
 
@@ -47,8 +48,8 @@ As diretrizes e práticas recomendadas a seguir se aplicam à nova versão da fe
 A fórmula geral para calcular o espaço livre em disco necessário é a seguinte:
   `data store size + node store size * 1.5`
 
-   * *tamanho do armazenamento de dados*: a ferramenta Transferência de conteúdo usa 64 GB, mesmo que o armazenamento de dados real seja maior.
-   * *tamanho do armazenamento do nó*: tamanho do diretório do repositório de segmentos ou tamanho do banco de dados MongoDB.
+* *tamanho do armazenamento de dados*: a ferramenta Transferência de conteúdo usa 64 GB, mesmo que o armazenamento de dados real seja maior.
+* *tamanho do armazenamento do nó*: tamanho do diretório do repositório de segmentos ou tamanho do banco de dados MongoDB.
 Assim, para um tamanho de armazenamento de segmentos de 20 GB, o espaço livre em disco necessário seria de 94 GB.
 
 * Um conjunto de migração deve ser mantido em toda a atividade de transferência de conteúdo para oferecer suporte a atualizações complementares de conteúdo. No máximo 20 conjuntos de migração por projeto no Cloud Acceleration Manager podem ser criados e mantidos por vez durante a atividade de transferência de conteúdo. Se mais de 20 conjuntos de migração forem necessários, crie um segundo projeto no Cloud Acceleration Manager. No entanto, isso requer gerenciamento de projetos adicional e governança fora do produto para evitar a substituição do conteúdo no público-alvo por vários usuários.
@@ -75,13 +76,13 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * A chave de extração é válida por 14 dias a partir do momento em que foi criada ou renovada. Ele pode ser renovado a qualquer momento. Se a chave de extração tiver expirado, não será possível executar uma extração.
 
-* A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente do Publish. Qualquer conteúdo especificado no conjunto de migração é assimilado na instância de destino escolhida. O usuário pode assimilar um conjunto de migração em uma instância do Autor ou do Publish, ou em ambas. O Adobe recomenda que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino. E, da mesma forma, instale a CTT na instância do Publish de origem para mover o conteúdo para a instância do Publish de destino. Consulte [Executando a Ferramenta de Transferência de Conteúdo em uma instância do Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obter mais detalhes.
+* A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente do Publish. Qualquer conteúdo especificado no conjunto de migração é assimilado na instância de destino escolhida. Um usuário pode assimilar um conjunto de migração em uma instância do Autor ou do Publish, ou em ambas. O Adobe recomenda que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino. E, da mesma forma, instale a CTT na instância do Publish de origem para mover o conteúdo para a instância do Publish de destino. Consulte [Executando a Ferramenta de Transferência de Conteúdo em uma instância do Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obter mais detalhes.
 
-* Os usuários e grupos transferidos pela ferramenta Transferência de conteúdo são apenas aqueles exigidos pelo conteúdo para atender às permissões. O processo _Extração_ copia a `/home` inteira para o conjunto de migração e faz o Mapeamento de usuários adicionando um campo feito do endereço de email de cada usuário. Para obter mais informações, consulte [Mapeamento de Usuário e Migração de Entidade de Segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). O processo _Assimilação_ copia todos os usuários e grupos referenciados nas ACLs de conteúdo migradas. Consulte [Migrando Grupos de Usuários Fechados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para considerações adicionais sobre grupos usados em uma política de Grupo Fechado de Usuários (CUG).
+* Os grupos transferidos pela Ferramenta de transferência de conteúdo são apenas os grupos que são exigidos pelo conteúdo para atender às permissões. O processo _Extração_ copia a `/home/groups` inteira para o conjunto de migração. Para obter mais informações, consulte [Migração de grupo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md). O processo _Assimilação_ copia todos os grupos referenciados nas ACLs de conteúdo migradas. Consulte [Migrando Grupos de Usuários Fechados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para considerações adicionais sobre grupos usados em uma política de Grupo Fechado de Usuários (CUG).
 
 * Durante a fase de extração, a ferramenta Transferência de conteúdo é executada em uma instância de origem do AEM ativa.
 
-* A *Fase de assimilação* do autor reduz toda a implantação do autor. Significa que o AEM do autor não está disponível durante todo o processo de ingestão. Além disso, certifique-se de que nenhum pipeline do Cloud Manager seja executado enquanto você estiver executando a fase *Assimilação*.
+* A *Fase de assimilação* do Autor reduz toda a implantação do Autor. Significa que o AEM do autor não está disponível durante todo o processo de ingestão. Além disso, certifique-se de que nenhum pipeline do Cloud Manager seja executado enquanto você estiver executando a fase *Assimilação*.
 
 * Ao usar `Amazon S3` ou `Azure` como o armazenamento de dados no sistema AEM de origem, o armazenamento de dados deve ser configurado para que os blobs armazenados não possam ser excluídos (coleta de lixo). Isso garante a integridade dos dados do índice, e a falha na configuração dessa maneira pode resultar em extrações com falha devido à falta de integridade desses dados de índice.
 

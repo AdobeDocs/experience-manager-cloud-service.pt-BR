@@ -4,7 +4,7 @@ description: Saiba como extrair conteúdo de uma instância do Adobe Experience 
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 19%
@@ -41,7 +41,7 @@ Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Tran
 
 1. Isso exibe a caixa de diálogo Extração. Clique em **Extrair** para iniciar a fase de extração.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14b.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
 
    >[!NOTE]
    >Opcionalmente, é possível substituir o container de preparo durante a fase de extração. Se o **contêiner de preparação de substituição** estiver desabilitado, ele poderá acelerar as extrações para migrações subsequentes em que os caminhos de conteúdo ou as configurações de inclusão de versões não tenham sido alterados. No entanto, se os caminhos de conteúdo ou as configurações de inclusão de versões tiverem sido alterados, o **contêiner de preparação de substituição** deverá ser habilitado.

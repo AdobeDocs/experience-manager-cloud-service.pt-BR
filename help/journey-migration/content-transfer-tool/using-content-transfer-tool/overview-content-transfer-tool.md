@@ -4,24 +4,25 @@ description: Saiba como usar a ferramenta Transferência de conteúdo para trans
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 feature: Migration
 role: Admin
-source-git-commit: d9565e86c4b7e513cb1a95ecbe7a30c9586d9fb1
+source-git-commit: e73933acc3ff23d1456f03b288f2f842a6289ace
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 52%
+source-wordcount: '612'
+ht-degree: 55%
 
 ---
+
 
 # Visão geral {#overview-content-transfer-tool}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Visão geral"
->abstract="A ferramenta de Transferência de conteúdo é uma ferramenta desenvolvida pela Adobe que pode ser usada para iniciar a migração de conteúdo existente de uma instância de origem do AEM (no local ou AMS) para a instância de destino do AEM Cloud Service. Essa ferramenta também transfere entidades principais (usuários ou grupos) automaticamente."
+>abstract="A ferramenta de Transferência de conteúdo é uma ferramenta desenvolvida pela Adobe que pode ser usada para iniciar a migração de conteúdo existente de uma instância de origem do AEM (no local ou AMS) para a instância de destino do AEM Cloud Service. Essa ferramenta também transfere grupos automaticamente."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=pt-BR" text="Diretrizes e práticas recomendadas"
 
 A ferramenta Transferência de conteúdo é uma ferramenta desenvolvida pelo Adobe que pode ser usada para iniciar a migração do conteúdo existente de uma instância de AEM de origem (no local ou AMS) para a instância do AEM Cloud Service de destino.
 
-Essa ferramenta também transfere entidades principais (usuários ou grupos) automaticamente.  Consulte [Mapeamento de Usuário e Migração de Entidade de Segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obter mais informações.
+Essa ferramenta também transfere grupos automaticamente.  Consulte [Migração de grupos](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) para obter mais informações.
 
 A ferramenta Transferência de conteúdo integra o processo de transferência de conteúdo ao Cloud Acceleration Manager. Isso capacita o usuário com todos os benefícios que oferece:
 
@@ -37,9 +38,6 @@ Existem duas fases associadas à transferência de conteúdo:
 1. **Extração**: Extração refere-se à extração de conteúdo da instância do AEM de origem em uma área temporária chamada de *conjunto de migração*. Um *conjunto de migração* é uma área de armazenamento em nuvem fornecida pela Adobe para armazenar temporariamente o conteúdo transferido entre a instância do AEM de origem e a instância do AEM Cloud Service.
 
    Consulte [Processo de extração na transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) para obter mais detalhes.
-
-   >[!NOTE]
-   >O Mapeamento de usuário agora é executado automaticamente como parte da fase de Extração no autor (mas pode, opcionalmente, ser desativado no autor ou ativado na publicação). Consulte [Mapeamento de Usuário e Migração de Entidade de Segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para obter mais detalhes.
 
 1. **Assimilação**: refere-se à assimilação de conteúdo do *conjunto de migração* na instância de destino do Cloud Service.
 
@@ -78,7 +76,6 @@ Todos os conjuntos de migração acabarão expirando após um período prolongad
 A expiração de um conjunto de migração pode ser monitorada na linha Conjunto de migração. Um indicador visual útil de que um conjunto de migração está se aproximando da data de expiração também adicionou o cartão do projeto.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
-
 
 ## O que vem a seguir {#whats-next}
 

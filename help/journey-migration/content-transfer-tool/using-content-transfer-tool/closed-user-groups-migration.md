@@ -6,12 +6,13 @@ hidefromtoc: true
 exl-id: f62ed751-d5e2-4a01-8910-c844afab5733
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 10%
+source-wordcount: '287'
+ht-degree: 12%
 
 ---
+
 
 # Migrar grupos de usuários fechados {#migrating-closed-user-groups}
 
@@ -23,24 +24,15 @@ ht-degree: 10%
 
 Atualmente, os Grupos de usuários fechados (CUG) precisam de algumas etapas adicionais para funcionarem no ambiente de destino de uma migração. Este documento explica o cenário e as etapas necessárias para protegê-los da maneira desejada.
 
-## Migração de grupos
+## Migração de grupos de usuários fechados (CUGs)
 
-As principais (incluindo grupos) são incluídas automaticamente em uma migração para o Adobe Experience Manager as a Cloud Service se estiverem associadas ao conteúdo migrado por meio da ACL desse conteúdo, e também são incluídas se forem referenciadas em uma política CUG sobre esse conteúdo.
+Os grupos são incluídos automaticamente em uma migração CTT/CAM para o Adobe Experience Manager as a Cloud Service se estiverem associados ao conteúdo migrado por meio da ACL desse conteúdo ou de seu nó de política CUG. A verificação de que o grupo e seus membros existem deve ser feita antes da ativação. Os grupos referenciados em uma política CUG são chamados aqui de &quot;grupos CUGs&quot;.
 
-## Grupos de usuários fechados na migração
+Para usar CUGs no AEM as a Cloud Service, os usuários devem estar presentes na instância do autor e ser membros dos grupos CUGs relevantes.  Isso pode ser feito usando pacotes ou, se os usuários CUGs forem usuários do IMS, eles já poderão estar presentes.  Os usuários de CUGs devem então se tornar membros dos grupos de CUGs do AEM.
 
-A verificação da existência do grupo e de seus membros deve ser feita antes da ativação. O Relatório principal, baixado por meio da visualização de Tarefa de assimilação, pode ser usado para ver se o grupo em questão foi incluído ou não porque não estava em uma ACL ou em uma política CUG.
+Para ativar o comportamento CUGs na instância do Publish,
+1. Os grupos CUGs devem ser ativados (o que replica eles e seus membros para a instância do Publish) e
+1. As páginas protegidas com políticas CUGs devem ser publicadas (o que permite que a instância do Publish e o rastreiem as políticas).
+1. Depois que todas as páginas forem publicadas, verifique a funcionalidade de cada página protegida por CUG.
 
-Em seguida, os processos devem ser acionados e as propriedades devem ser definidas para ativar CUGs. Para fazer isso, publique novamente todas as páginas associadas a uma política CUG. Isso calibra a instância do Publish para rastrear as políticas.
-
-Isso ativa as políticas CUG no Publish e o conteúdo só é acessível aos usuários autenticados que são membros do grupo associado às políticas.
-
-## Resumo
-
-Em resumo, estas são as etapas para habilitar o CUG após uma migração:
-
-1. Verifique se cada grupo usado nas políticas CUG existe no Publish após a migração.
-   - Um grupo pode existir se for incluído em uma política CUG de conteúdo migrado ou na ACL desse conteúdo.
-   - Caso contrário, use Pacotes para instalá-lo na instância de destino (ou criá-lo manualmente) e ativá-lo e seus membros. Em seguida, verifique se ele existe no Publish.
-1. Republicar todas as páginas associadas a uma política CUG, garantindo que ela seja publicada, por exemplo, editando a página primeiro. É importante republicar todos eles.
-   - Depois que todas as páginas forem republicadas, verifique a funcionalidade de cada página protegida por CUG.
+Para obter informações adicionais, consulte [Grupos de usuários fechados](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/closed-user-groups.html?lang=pt-BR).

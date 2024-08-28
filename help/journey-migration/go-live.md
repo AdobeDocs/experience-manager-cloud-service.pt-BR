@@ -4,9 +4,9 @@ description: Saiba como executar a migração depois que o código e o conteúdo
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1223'
 ht-degree: 3%
 
 ---
@@ -101,7 +101,6 @@ Leve em consideração que toda a assimilação falhará se qualquer uma das seg
 
 * Um Nó JCR que tem um nome com mais de 150 caracteres
 * Um Nó JCR com mais de 16 MB
-* Qualquer usuário/grupo com `rep:AuthorizableID` sendo assimilado que já esteja presente no AEM as a Cloud Service
 * Se qualquer ativo extraído e assimilado for movido para um caminho diferente na origem ou no destino antes da próxima iteração da migração.
 
 ## Integridade do ativo {#asset-health}
@@ -119,4 +118,4 @@ Para obter mais informações, consulte a documentação da [Lista de verificaç
 
 ## O que vem a seguir {#what-is-next}
 
-Assim que você entender como executar a migração para o AEM as a Cloud Service, poderá verificar a página [Post-Go-Live](/help/journey-migration/post-go-live.md) para manter sua instância em perfeita execução.
+Assim que você entender como executar a migração para o AEM as a Cloud Service, poderá verificar a página [Pós-ativação](/help/journey-migration/post-go-live.md) para manter sua instância em perfeita execução.

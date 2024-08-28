@@ -4,12 +4,13 @@ description: Usar a ferramenta Transferência de conteúdo para validar as trans
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1189'
 ht-degree: 1%
 
 ---
+
 
 # Validar transferências de conteúdo {#validating-content-transfers}
 
@@ -134,23 +135,28 @@ Além de ser incluído no log de assimilação, o relatório de validação tamb
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## Como validar a migração principal {#how-to-validate-principal-migration}
+## Como validar a migração principal {#how-to-validate-group-migration}
 
-Consulte [Mapeamento de Usuário e Migração de Entidade de Segurança](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) para ler os detalhes das migrações de entidade e por que elas são necessárias.
+Consulte [Migração de Grupos](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/group-migration.md) para ler os detalhes da migração principal e por que ela é necessária.
 
-Depois que a extração e a assimilação forem concluídas com êxito, um resumo e um relatório da migração principal estarão disponíveis. Essas informações podem ser usadas para validar quais usuários e grupos foram migrados com êxito e, talvez, para determinar por que alguns não foram migrados.
+Depois que a extração e a assimilação forem concluídas com êxito, um resumo e um relatório da migração principal estarão disponíveis. Essas informações podem ser usadas para validar quais grupos foram migrados com êxito e, talvez, para determinar por que alguns não foram migrados.
 
 Para exibir essas informações, acesse Cloud Acceleration Manager. Clique no cartão do projeto e no cartão Transferência de conteúdo. Navegue até **Trabalhos de assimilação** e localize a assimilação que você deseja verificar. Clique nos três pontos (**...**) dessa assimilação e clique em **Exibir resumo da entidade** na lista suspensa.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Você verá uma caixa de diálogo com as informações de resumo. Use os ícones de ajuda para ler uma descrição mais completa. Clique no botão **Baixar relatório** para baixar o relatório completo separado por vírgula (CSV).
+Você verá uma caixa de diálogo com as informações de resumo. Use os ícones de ajuda para ler uma descrição mais completa. Clique no botão **Baixar relatório** para baixar o relatório completo separado por vírgula (CSV).  Observe também que no final deste relatório está o Relatório do usuário, que pode ser usado para o gerenciamento de usuários após a migração.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
->[!NOTE]
->
->Se o mapeamento de usuários estiver desativado, outra variante dessa caixa de diálogo será exibida. Ele indicará que o mapeamento de usuários foi desativado e não mostrará os três campos que fornecem valores de mapeamento de usuários.
+O relatório de migração principal indicará:
+
+* Cada grupo migrado e o primeiro caminho de conteúdo que o acionou; o grupo também pode estar em outros caminhos, mas somente o primeiro encontrado para um determinado grupo é relatado. Ele também relata se foi encontrado em uma ACL ou em uma política CUG.
+* Cada grupo não foi migrado e o motivo da migração.  Normalmente, será por um destes motivos:
+   * É um grupo incorporado
+   * Já está no sistema de destino
+   * Não está em uma política de ACL ou CUG no conteúdo que está sendo migrado
+   * Ele tem um campo exclusivo duplicado (um de rep:principalName, rep:authorizableId, jcr:uuid ou rep:externalId já está no destino, mas todos devem ser exclusivos)
 
 ## Resolução de problemas {#troubleshooting}
 
@@ -166,6 +172,6 @@ Alguns caminhos dos resumos de extração e assimilação são excluídos de pro
 
 Os caminhos que excluímos atualmente dos resumos incluem: `cqdam.text.txt` representações, nós dentro de `/home` e nós dentro de `/jcr:system`.
 
-### Grupos de usuários fechados não estão funcionando {#validating-cugs}
+### Grupos de usuários fechados {#validating-cugs}
 
 Consulte [Migrando Grupos de Usuários Fechados](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) para considerações adicionais ao usar uma política de Grupo de Usuários Fechado (CUG).
