@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: d9f4e14edb1d7a84f130dea0c82734574404601c
 workflow-type: tm+mt
 source-wordcount: '2068'
 ht-degree: 2%
@@ -22,6 +22,8 @@ ht-degree: 2%
 <span class="preview"> O recurso de suporte a idiomas da direita para a esquerda está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O AEM Forms oferece suporte imediato para as localidades de inglês (en), espanhol (es), francês (fr), italiano (it), alemão (de), japonês (ja), português-brasileiro (pt-BR), chinês (zh-CN), chinês-Taiwan (zh-TW) e coreano (ko-KR). Você também pode adicionar suporte para mais locais, como Hindi(hi_IN). Você também pode apresentar o Adaptive Forms em um idioma da Direita para a Esquerda (RTL), como árabe, persa e urdu, adicionando esses locais.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3433132/adaptive-forms-rtl--arabic-hebrew-farsi)
 
 ## Como o AEM Forms determina a localidade de um formulário adaptável?
 
