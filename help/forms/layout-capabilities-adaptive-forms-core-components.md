@@ -4,7 +4,7 @@ description: O layout e as aparências do Adaptive Forms em vários dispositivos
 feature: Adaptive Forms, Core Components
 keywords: Layout do formulário adaptável com base nos componentes principais, Layouts diferentes para formulários, Layouts dinâmicos de formulário AEM, Layouts de formulário do AEM Cloud Service, Tipos de layout de formulário nos Componentes principais do AEM, Layouts de formulário adaptável
 role: User, Developer, Admin
-source-git-commit: b06d86ffc620327a744f53733e3bf84fe8c03f2f
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -44,7 +44,7 @@ O formulário adaptável baseado em Componentes principais é compatível com os
 
 O layout do painel é útil para organizar campos relacionados de uma maneira que facilite a navegação e a localização do conteúdo correspondente. O layout do painel organiza os componentes do formulário em seções ou painéis distintos em um Formulário adaptável.
 
-![Layout do painel](/help/forms/assets/panel-layout.png){width="250" align="center"}
+![Layout do painel](/help/forms/assets/panel-layout.png)
 
 Layout do painel
 
@@ -54,7 +54,7 @@ Você pode usar o [componente do painel](https://experienceleague.adobe.com/en/d
 
 O layout do assistente ajuda a simplificar um formulário complexo, dividindo-o em etapas distintas. Cada etapa representa uma parte diferente do processo, e os usuários navegam pelas etapas sequencialmente, geralmente com os botões **Próximo** e **Anterior**. Você pode usar o layout do assistente para criar um formulário que envolve várias seções ou etapas.
 
-![Layout do Assistente](/help/forms/assets/wizard-layout-compare.gif){width="250" align="center"}
+![Layout do Assistente](/help/forms/assets/wizard-layout-compare.gif)
 
 Layout do assistente
 
@@ -64,7 +64,7 @@ Você pode usar o [componente de assistente](https://experienceleague.adobe.com/
 
 O layout de guias verticais também é conhecido como guias no layout esquerdo. O layout de guias verticais organiza painéis ou seções no lado esquerdo de um formulário. É um layout comum para formulários em que os painéis/seções são empilhados verticalmente para facilitar a leitura e a navegação.
 
-![Layout vertical](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+![Layout vertical](/help/forms/assets/vertical-tab.gif)
 
 Layout de guias verticais
 
@@ -76,7 +76,7 @@ Você pode usar o [componente de guias verticais](https://experienceleague.adobe
 O layout de guias horizontais também é conhecido como Guias no layout superior. O layout de guias horizontais organiza os painéis ou as seções lado a lado em uma linha. Este layout apresenta as seções do formulário de maneira linear na largura do formulário ou painel.
 
 
-![Layout horizontal](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+![Layout horizontal](/help/forms/assets/horizontal-layout.gif)
 
 Layout de Guias Horizontais
 
@@ -87,7 +87,7 @@ Você pode usar o [componente de guias horizontais](https://experienceleague.ado
 
 O layout do Accordion exibe o conteúdo em seções ou painéis que podem ser recolhidos em um Formulário adaptável. Quando uma seção é expandida, ela exibe o conteúdo em, enquanto outras seções permanecem recolhidas. Esse layout é ideal para exibir grandes quantidades de informações em um formato compacto.
 
-![Layout da opção](/help/forms/assets/accordion-layout-compare.gif){width="250" align="center"}
+![Layout da opção](/help/forms/assets/accordion-layout-compare.gif)
 
 Layout do acordeão
 
@@ -132,7 +132,7 @@ Vamos explorar o processo passo a passo para inserir um layout e adicionar compo
 1. No canto superior esquerdo, selecione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 1. Abra um formulário adaptável existente em um modo de edição se ele já tiver sido criado.
 
-   ![Abrir um Formulário Adaptável](/help/forms/assets/insert-layout.png){width="250" align="center"}
+   ![Abrir um Formulário Adaptável](/help/forms/assets/insert-layout.png)
 
    Como alternativa, você também pode [criar um novo Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md).
 
@@ -176,13 +176,13 @@ Adicionar novo painel ao componente de guias horizontais:
 
    ![Guia Item para guias Horizontais](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
 
-2. Clique no ícone **Adicionar** para adicionar um novo painel.
+1. Clique no ícone **Adicionar** para adicionar um novo painel.
 
    ![Adicionar novo painel](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
 
    Ao clicar no ícone **Adicionar**, a caixa de diálogo **Inserir novo componente** é exibida.
 
-3. Selecione o componente Painel.
+1. Selecione o componente Painel.
 
    ![Adicionar novo painel](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
 
@@ -192,11 +192,11 @@ Adicionar novo painel ao componente de guias horizontais:
 
    Forneça um nome para o novo painel; caso contrário, não será possível salvar as propriedades do componente de guias horizontais.
 
-4. Especifique os nomes dos painéis, conforme mostrado na figura abaixo:
+1. Especifique os nomes dos painéis, conforme mostrado na figura abaixo:
 
    ![Nomes do painel](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
 
-5. Clique em **Concluído**.
+1. Clique em **Concluído**.
 
    Depois de clicar em **Concluído**, os três painéis aparecerão lado a lado em uma linha. Os nomes dos painéis são exibidos como cabeçalhos para cada painel e você pode adicionar componentes de formulário a cada painel.
 
@@ -204,15 +204,15 @@ Adicionar novo painel ao componente de guias horizontais:
 
    É possível configurar as propriedades do componente do painel. Por exemplo, o Formulário de solicitação de TI não inclui títulos de painel, estas são as etapas para configurar as propriedades do componente do painel.
 
-6. Abra as propriedades do primeiro painel.
+1. Abra as propriedades do primeiro painel.
 
    Propriedades do ![Painel 1](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
 
-7. Marque a caixa de seleção **Ocultar título** na guia **Básico**.
+1. Marque a caixa de seleção **Ocultar título** na guia **Básico**.
 
    ![Ocultar título](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
 
-8. Clique em **Concluído**.
+1. Clique em **Concluído**.
 
 Da mesma forma, também é possível ocultar títulos dos outros dois painéis. Depois de concluído, você pode continuar com a adição de componentes de formulário a cada painel.
 
@@ -262,7 +262,7 @@ Da mesma forma, também é possível ocultar títulos dos outros dois painéis. 
 
 1. Clique em **[!UICONTROL Visualizar]** no canto superior direito do seu ambiente de criação.
 
-   ![Layout horizontal](/help/forms/assets/horizontal-layout.gif){width="250" align="center"}
+   ![Layout horizontal](/help/forms/assets/horizontal-layout.gif)
 
 Você também pode [arrastar e soltar os componentes](#extra-bytes) para adicionar os componentes de formulário a cada painel.
 
@@ -341,7 +341,7 @@ Execute as seguintes etapas para substituir o layout existente de um formulário
 
    Após selecionar o layout, a disposição dos componentes dentro do layout muda de acordo. Por exemplo, selecione o componente de guias verticais na caixa de diálogo **[!UICONTROL Substituir componente]**; a organização do painel muda para guias à esquerda:
 
-   ![Layout vertical](/help/forms/assets/vertical-tab.gif){width="250" align="center"}
+   ![Layout vertical](/help/forms/assets/vertical-tab.gif)
 
 ## Bytes extras
 

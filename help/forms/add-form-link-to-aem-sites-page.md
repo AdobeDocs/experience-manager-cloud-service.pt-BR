@@ -3,7 +3,7 @@ title: Como adicionar links de formulários na página do AEM Sites usando o com
 description: Saiba como adicionar links de formulários à página do AEM Sites.
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: 58533d9a950fa4dc0e043ef8cb935d65fc68d233
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 No cenário do site bancário, o **Link** do Portal Forms aprimora a navegação, orientando os usuários para formulários específicos em várias seções do site. Ele fornece referências diretas a formulários, como aplicativos de empréstimo, formulários de abertura de conta ou pesquisas de feedback, posicionados estrategicamente em todo o site. O componente **Link** insere links que direcionam os usuários para Forms adaptável específico na página Sites. Por exemplo, no site do banco, os usuários anônimos podem acessar um formulário de pesquisa geral, enquanto os usuários conectados podem acessar diretamente formulários mais seguros, como solicitações de empréstimo ou formulários de autorização de transação.
 
-![Ícone de link](/help/forms/assets/link-forms.png){width="250" align="center"}
+![Ícone de link](/help/forms/assets/link-forms.png)
 
 ## Pré-requisito
 
@@ -29,11 +29,11 @@ Para adicionar o componente de portal **Link** à página Sites, execute as segu
 
 1. Abra a página do AEM Sites no modo **Editar**.
 1. Vá para as **[!UICONTROL Informações da Página]** > **[!UICONTROL Editar Modelo]**
-   ![Editar política de modelo](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![Editar política de modelo](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. Clique na **[!UICONTROL Política]** e marque a caixa de seleção **[!UICONTROL Link]** em **[Nome do projeto do Arquétipo AEM] - Forms e Portal de Comunicações**.
 
-   ![Seleção de Política](/help/forms/assets/add-link.png){width="250" align="center"}
+   ![Seleção de Política](/help/forms/assets/add-link.png)
 
 1. Clique em **[!UICONTROL Concluído]**.
 1. Agora, abra novamente a página do AEM Sites no modo de criação.
@@ -49,7 +49,7 @@ Para adicionar o componente de portal **Link** à página Sites, execute as segu
 
 1. Navegue pelos componentes disponíveis na caixa de diálogo e selecione o componente desejado na lista. Por exemplo, selecione o componente **Link** da lista para adicionar o componente **Link** do Forms Portal.
 
-   ![Componente de link](/help/forms/assets/add-link-in-sites.png){width="250" align="center"}
+   ![Componente de link](/help/forms/assets/add-link-in-sites.png)
 
 Agora, configure as propriedades do componente **Link**.
 
@@ -59,19 +59,19 @@ Você pode personalizar facilmente as propriedades do componente **Link** usando
 
 ### Guia Exibir
 
-![Guia Exibição](/help/forms/assets/link-asset-tab.png){width="250" align="center"}
+![Guia Exibição](/help/forms/assets/link-asset-tab.png)
 
 Na guia **[!UICONTROL Exibir]**, forneça a legenda do link e a dica de ferramenta para facilitar a identificação dos formulários representados pelo link.
 
 ### Guia Informações do ativo
 
-![Guia Informações do Assets](/help/forms/assets/link-asset-info.png){width="250" align="center"}
+![Guia Informações do Assets](/help/forms/assets/link-asset-info.png)
 
 Na guia **[!UICONTROL Informações do ativo]**, especifique o caminho do repositório onde o ativo está armazenado.
 
 ### Guia Parâmetros de consulta
 
-![Guia Parâmetros de Consulta](/help/forms/assets/link-query-tab.png){width="250" align="center"}
+![Guia Parâmetros de Consulta](/help/forms/assets/link-query-tab.png)
 
 Na guia **[!UICONTROL Parâmetros de consulta]**, especifique os parâmetros adicionais no formato de par de valor-chave. Quando o link for clicado, esses parâmetros adicionais serão transmitidos junto com o formulário.
 
@@ -79,7 +79,7 @@ Na guia **[!UICONTROL Parâmetros de consulta]**, especifique os parâmetros adi
 
 Visualize a página Sites para exibir o link para um Formulário Adaptável, que é especificado na guia de propriedades **Informações do Assets** do componente **Link**. Clicar no link exibe o formulário na tela para usuários, que podem acessá-lo com base nas permissões.
 
-![Guia Parâmetros de Consulta](/help/forms/assets/link-forms.png){width="250" align="center"}
+![Guia Parâmetros de Consulta](/help/forms/assets/link-forms.png)
 
 ## Artigos relacionados
 

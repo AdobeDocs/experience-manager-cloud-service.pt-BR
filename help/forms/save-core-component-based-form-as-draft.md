@@ -4,19 +4,21 @@ description: Saiba como salvar os Componentes principais com base no Formulário
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer, Admin
-source-git-commit: 72e8223c91e5722e27ebd6853b8b75a7415f3e4d
+source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1376'
 ht-degree: 2%
 
 ---
 
 
-# Salvar e listar formulários como rascunhos na página Sites
+# Salvar formulários como rascunhos e listá-los na página Sites
+
+<span class="preview"> Este artigo contém conteúdo sobre o recurso **Salvamento automático**, um recurso de pré-lançamento. O recurso de pré-lançamento pode ser acessado somente por meio do [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features).</span>
 
 Considere um usuário que começa a preencher um formulário, mas precisa pausar e retornar posteriormente. O AEM oferece uma opção `save-as-draft`, permitindo que o usuário salve o formulário como rascunho para conclusão futura. Para facilitar isso, o AEM fornece o componente de Portal de formulários **Rascunhos e Envios** pronto para uso, que exibe rascunhos e envios em páginas do AEM Sites. O componente lista formulários que foram salvos como rascunhos para conclusão posterior, bem como aqueles que foram enviados. Somente os usuários conectados podem editar os rascunhos ou exibir os formulários enviados. No entanto, se um usuário anônimo navegar pela lista de formulários usando o componente **Pesquisa e Listagem** e salvar um formulário como rascunho, ele não será listado pelo componente **Rascunhos e Envios**. Para visualizar rascunhos e envios, os usuários devem estar conectados no momento do envio do formulário.
 
-![Ícone Rascunhos](assets/drafts-component.png){width="250" align="center"}
+![Ícone Rascunhos](assets/drafts-component.png)
 
 ## Pré-requisitos
 
@@ -32,16 +34,16 @@ O componente **Rascunhos e Envios** precisa de uma configuração de armazenamen
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Armazenamento do Azure]**.
 
-   ![Seleção de Cartão de Armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-card.png){width="250" align="center"}
+   ![Seleção de Cartão de Armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
 
 1. Selecione uma pasta de configuração para criar a configuração e selecione **[!UICONTROL Criar]**.
 
-   ![Selecionar pasta de configuração de armazenamento do Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png){width="250" align="center"}
+   ![Selecionar pasta de configuração de armazenamento do Azure](/help/forms/assets/save-form-as-draft-select-config-folder.png)
 
 1. Especifique um título para a configuração no campo **[!UICONTROL Título]**.
 1. Especifique o nome da conta de armazenamento [!DNL Azure] nos campos **[!UICONTROL Conta de Armazenamento do Azure]** e **[!UICONTROL Chave de Acesso do Azure]**.
 
-   ![Configuração de Armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-storage.png){width="250" align="center"}
+   ![Configuração de Armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-storage.png)
 
 1. Clique em **Salvar**.
 
@@ -53,12 +55,12 @@ O componente **Rascunhos e Envios** precisa de uma configuração de armazenamen
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Forms]** > **[!UICONTROL Conector de Armazenamento Unificado]**.
 
-   ![Armazenamento de conector unificado](/help/forms/assets/save-form-as-draft-unified-connector.png){width="250" align="center"}
+   ![Armazenamento de conector unificado](/help/forms/assets/save-form-as-draft-unified-connector.png)
 
 1. Na seção **[!UICONTROL Portal do Forms]**, selecione **[!UICONTROL Azure]** na lista suspensa **[!UICONTROL Armazenamento]**.
 1. Especifique o caminho de configuração para a configuração de armazenamento do Azure no campo **[!UICONTROL Caminho de Configuração de Armazenamento]**.
 
-   ![Configuração de armazenamento do conector unificado](/help/forms/assets/save-form-as-draft-unified-connector-storage.png){width="250" align="center"}
+   ![Configuração de armazenamento do conector unificado](/help/forms/assets/save-form-as-draft-unified-connector-storage.png)
 
 1. Selecione **[!UICONTROL Salvar]**.
 
@@ -74,11 +76,11 @@ Você pode usar componentes prontos para uso do Forms Portal para listar rascunh
 
 1. Abra a página do AEM Sites no modo **Editar**.
 1. Vá para as **[!UICONTROL Informações da Página]** > **[!UICONTROL Editar Modelo]**
-   ![Editar política de modelo](/help/forms/assets/save-form-as-draft-edit-template.png){width="250" align="center"}
+   ![Editar política de modelo](/help/forms/assets/save-form-as-draft-edit-template.png)
 
 1. Clique na **[!UICONTROL Política]** e marque a caixa de seleção **[!UICONTROL Rascunhos e Envios]** sob o **[Nome do Projeto do Arquétipo AEM] - Forms e Portal de Comunicações**.
 
-   ![Seleção de Política](/help/forms/assets/save-form-as-draft-enable-policy.png){width="250" align="center"}
+   ![Seleção de Política](/help/forms/assets/save-form-as-draft-enable-policy.png)
 
 1. Clique em **[!UICONTROL Concluído]**.
 1. Agora, abra novamente a página do AEM Sites no modo de criação.
@@ -93,7 +95,7 @@ Você pode usar componentes prontos para uso do Forms Portal para listar rascunh
 
 1. Navegue pelos componentes disponíveis na caixa de diálogo e selecione o componente desejado na lista. Por exemplo, selecione o componente **Rascunhos e envios** na lista para adicionar o componente **Rascunhos e envios** do Forms Portal.
 
-   ![Adicionar rascunho e componente de envio](/help/forms/assets/save-form-as-draft-add-dns.png){width="250" align="center"}
+   ![Adicionar rascunho e componente de envio](/help/forms/assets/save-form-as-draft-add-dns.png)
 
 Agora, configure as propriedades do componente **Rascunhos e Envios** de acordo com os requisitos.
 
@@ -107,7 +109,7 @@ Você pode configurar as propriedades de **Rascunhos e Envios**:
    * **Selecionar tipo**: para indicar a listagem de formulários como rascunho ou formulários enviados. Se você escolher **Rascunho do Forms**, os formulários salvos como rascunhos serão exibidos. Como alternativa, selecionar **Forms Enviada** mostra os formulários enviados pelos usuários conectados.
    * **Layout**: para exibir formulários de rascunho de lista ou formulários enviados no formato de cartão ou lista.
 
-   ![Propriedades dos componentes de Rascunho e Envio](/help/forms/assets/save-form-as-draft-dns-properties.png){width="250" align="center"}
+   ![Propriedades dos componentes de Rascunho e Envio](/help/forms/assets/save-form-as-draft-dns-properties.png)
 
 ## Configurar formulários para serem salvos como rascunhos
 
@@ -129,13 +131,11 @@ Para salvar um formulário como Rascunho, crie uma regra **Salvar Formulário** 
 1. Na seção **[!UICONTROL Quando]**, selecione **está clicado** e na seção **[!UICONTROL Depois]**, selecione a opção **Salvar Formulário**.
 1. Selecione **[!UICONTROL Concluído]** para salvar a regra.
 
-   ![Criar regra para o botão](/help/forms/assets/save-form-as-drfat-create-rule.png){width="250" align="center"}
+   ![Criar regra para o botão](/help/forms/assets/save-form-as-drfat-create-rule.png)
 
 Ao visualizar um formulário adaptável, preencha-o e clique no botão **Salvar formulário**, ele será salvo como rascunho.
 
 ### Salvar automaticamente
-
-<span class="preview"> Este artigo contém conteúdo sobre o recurso **Salvamento automático**, um recurso de pré-lançamento. O recurso de pré-lançamento pode ser acessado somente por meio do [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features).</span>
 
 >[!NOTE]
 >
@@ -147,7 +147,7 @@ Você também pode configurar um Formulário adaptável para salvar automaticame
 1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
 1. Clique no ícone de propriedades do Contêiner do Guia ![Propriedades do Guia](/help/forms/assets/configure-icon.svg) e abra a guia **[!UICONTROL Salvar Automaticamente]**.
 
-   ![Salvamento automático](/help/forms/assets/auto-save.png){width="250" align="center"}
+   ![Salvamento automático](/help/forms/assets/auto-save.png)
 
 1. Marque a caixa de seleção **[!UICONTROL Habilitar]** para habilitar o salvamento automático do formulário.
 1. Configure **[!UICONTROL Trigger]** como **Time based** para salvar automaticamente o formulário <!--based on the occurrence of an event or--> após um intervalo de tempo específico.
@@ -159,11 +159,11 @@ Você também pode configurar um Formulário adaptável para salvar automaticame
 Para exibir rascunhos salvos ou formulários enviados, use o componente do Portal do Forms **Rascunhos e Envios**.
 Quando **[!UICONTROL Selecionar Tipo]** é selecionado como **Rascunho do Forms** na [caixa de diálogo de configuração do componente Rascunhos e Envios](#configure-properties-of-the-drafts--submissions-component), os formulários salvos como rascunhos são exibidos na página Sites. Você pode abrir os rascunhos clicando nas reticências (...) para preencher o formulário.
 
-![Ícone Rascunhos](assets/drafts-component.png){width="250" align="center"}
+![Ícone Rascunhos](assets/drafts-component.png)
 
 Quando **[!UICONTROL Selecionar Tipo]** é selecionado como **Forms Enviado** na [caixa de diálogo de configuração do componente Rascunhos e Envios](#configure-properties-of-the-drafts--submissions-component), os formulários enviados são exibidos. Você pode exibir os formulários enviados, mas não pode editá-los.
 
-![Ícone de envios](assets/submission-listing.png){width="250" align="center"}
+![Ícone de envios](assets/submission-listing.png)
 
 Você também pode descartar os formulários clicando nas reticências (...) que aparecem no canto inferior direito do formulário.
 
