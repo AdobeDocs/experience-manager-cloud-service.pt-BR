@@ -4,10 +4,10 @@ description: O layout e as aparências do Adaptive Forms em vários dispositivos
 feature: Adaptive Forms, Foundation Components
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: ba98b4e17a1245a5a5d208b4bf8698b4da4e9f6b
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 2%
+source-wordcount: '858'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,8 @@ O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
-| AEM as a Cloud Service | Este artigo |
+| AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
+| AEM as a Cloud Service (Componentes de base) | Este artigo |
 
 O [!DNL Adobe Experience Manager] permite criar Forms adaptável fácil de usar que oferece experiências dinâmicas para usuários finais. O layout de formulário controla como os itens ou componentes são exibidos em um Formulário adaptável.
 

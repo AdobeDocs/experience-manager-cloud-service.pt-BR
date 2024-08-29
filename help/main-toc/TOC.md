@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 260761e6380846f44756adf4aa4c5410a40ce446
+source-git-commit: 9c6cf85ccc4e15671669b2fc59b01e7c0cef10e2
 workflow-type: tm+mt
-source-wordcount: '5481'
-ht-degree: 77%
+source-wordcount: '5528'
+ht-degree: 76%
 
 ---
 
@@ -691,6 +691,7 @@ ht-degree: 77%
       + Componentes principais {#authoring-adaptive-forms-core-components}
          + Criar um formulário adaptável {#create-an-adaptive-form-on-forms-cs}
             + [Criação de um Formulário adaptável](/help/forms/creating-adaptive-form-core-components.md)
+            + [Definir o layout de um formulário adaptável com base nos Componentes principais](/help/forms/layout-capabilities-adaptive-forms-core-components.md)
             + [Criar um fragmento de formulário adaptável](/help/forms/adaptive-form-fragments-core-components.md)
             + [Criar temas para um Formulário adaptável - Componentes principais](/help/forms/using-themes-in-core-components.md)
             + [Criar um modelo de formulário adaptável com base nos Componentes principais](/help/forms/template-editor-core-components.md)
@@ -715,7 +716,6 @@ ht-degree: 77%
             + [Adicionar versões, comentários e anotações a um Formulário adaptável](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
             + [Comparar Forms Adaptável](/help/forms/compare-forms.md)
             + [Conversão de Forms adaptável com base em componentes de base em formulários baseados em Componentes principais usando a ferramenta utilitário de migração](/help/forms/migration-utility-tool-for-af-core-components.md)
-            + [Salvar um formulário adaptável como rascunho](/help/forms/save-core-component-based-form-as-draft.md)
             + Introdução ao Editor de Regras para Forms Adaptável com base nos Componentes Principais{#rule-editor-core-components}
                + [Introdução ao Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components.md)
                + [Interface do usuário do Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-user-interface.md)
@@ -726,6 +726,11 @@ ht-degree: 77%
                + [Introdução às funções personalizadas para o Forms adaptável com base nos Componentes principais](/help/forms/create-and-use-custom-functions.md)
                + [Criar e usar uma Função personalizada para um Formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md)
                + [Exemplos de funções personalizadas para um formulário adaptável com base nos componentes principais](/help/forms/custom-function-core-components-use-cases.md)
+            + Introdução ao Forms Portal e seus componentes{#introduction-to-forms-portal}
+               + [Introdução ao componente do Forms Portal](/help/forms/configure-forms-portal.md)
+               + [Listar formulários na página Sites usando o componente Pesquisa e lista](/help/forms/list-forms-on-sites-page.md)
+               + [Salvar e listar formulários como rascunhos na página Sites usando o componente Rascunhos e envios](/help/forms/save-core-component-based-form-as-draft.md)
+               + [Adicionar links de formulário à página Sites usando o componente Link](/help/forms/add-form-link-to-aem-sites-page.md)
       + Componentes de Fundação {#authoring-adaptive-forms-foundation-components}
          + Converter formulários em PDF em Formulários adaptáveis {#afcs}
             + [Introdução ao serviço de conversão automática de formulários](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=pt-BR)
@@ -782,7 +787,6 @@ ht-degree: 77%
             + [Reutilizar propriedades de metadados de um Formulário adaptável](/help/forms/reusing-adaptive-forms.md)
          + Melhorar a acessibilidade de um Formulário adaptável {#accessible-adaptive-forms}
             + [Criar um Formulário adaptável acessível](/help/forms/creating-accessible-adaptive-forms.md)
-         + [Configurar o Forms Portal](/help/forms/configure-forms-portal.md)
          + [Criação e gerenciamento de revisões](/help/forms/create-reviews-forms.md)
          + [Associar revisores de envio a um formulário](/help/forms/adding-reviewers-form.md)
          + [Criar e gerenciar revisões para um Formulário adaptável](/help/forms/review-adaptiveforms-in-sites-page.md)

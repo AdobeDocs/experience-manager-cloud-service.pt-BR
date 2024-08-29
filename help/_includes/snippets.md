@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7a1181a372928602b8fd0eb4699789217473a94c
+source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 6%
+source-wordcount: '892'
+ht-degree: 5%
 
 ---
 # Trechos {#snippets}
@@ -128,6 +128,26 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 * [Criar uma função personalizada para um formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md)
 * [Exemplos de desenvolvimento e uso de uma função personalizada](/help/forms/custom-function-core-components-use-cases.md)
 
+
+## Portal Forms{#forms-portal-see-also}
+
+* [Introdução aos componentes do Forms Portal](/help/forms/configure-forms-portal.md)
+* [Listar seus formulários na página de sites](/help/forms/list-forms-on-sites-page.md)
+* [Salvar seus formulários como rascunhos](/help/forms/save-core-component-based-form-as-draft.md)
+* [Adicionar links de formulário a uma página do Sites](/help/forms/add-form-link-to-aem-sites-page.md)
+
+
+## Lista de permissões de IP da Cloud Manager e pipelines de front-end {#allowlist-frontend-pipeline}
+
+>[!IMPORTANT]
+>
+>O pipeline de front-end requer que a seguinte Lista de permissões de IP seja adicionada ao Cloud Manager antecipadamente.
+>Se necessário, [adicione a Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando o bloco de endereços abaixo. Cada endereço é separado por vírgula. Cole o bloco no campo **Endereço IP/CIDR** da caixa de diálogo **Adicionar Lista de permissões IP**. Coloque o cursor logo após a primeira vírgula na lista de endereços e pressione **Enter**. Salve a lista.
+>Para evitar a interrupção da execução do pipeline de front-end, verifique se esta Lista de permissões de IP foi adicionada ao Cloud Manager *antes* de habilitar o pipeline.
+>
+>**Lista de permissões IP Cloud Manager**
+>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>   
 
 ## Adicionar uma Lista de permissões IP do Cloud Manager e pipelines de front-end {#add-cm-allowlist-frontend-pipeline}
 
