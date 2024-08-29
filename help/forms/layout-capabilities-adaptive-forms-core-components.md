@@ -4,7 +4,7 @@ description: O layout e as aparências do Adaptive Forms em vários dispositivos
 feature: Adaptive Forms, Core Components
 keywords: Layout do formulário adaptável com base nos componentes principais, Layouts diferentes para formulários, Layouts dinâmicos de formulário AEM, Layouts de formulário do AEM Cloud Service, Tipos de layout de formulário nos Componentes principais do AEM, Layouts de formulário adaptável
 role: User, Developer, Admin
-source-git-commit: 31f18027d856cbd161457c4a01d6c7c17d1c2b89
+source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -138,10 +138,10 @@ Vamos explorar o processo passo a passo para inserir um layout e adicionar compo
 
 1. Localize a seção no editor de formulários que permite adicionar um layout.
 
-   ![Editor de formulário](/help/forms/assets/form-editor.png){width="200" align="center"}
+   ![Editor de formulário](/help/forms/assets/form-editor.png)
 1. Clique no ícone **Adicionar**. O ícone é um sinal de mais (+) que significa a opção de adicionar novos componentes.
 
-   ![Inserir layout](/help/forms/assets/insert-layout-add-icon.png){width="200" align="center"}
+   ![Inserir layout](/help/forms/assets/insert-layout-add-icon.png)
 
    Clicar no ícone **Adicionar** exibe uma caixa de diálogo **Inserir novo componente** que exibe vários componentes para inserção.
 
@@ -151,20 +151,20 @@ Vamos explorar o processo passo a passo para inserir um layout e adicionar compo
 
 1. Navegue pelos componentes disponíveis na caixa de diálogo e selecione o layout desejado na lista. No nosso caso, selecionamos o componente de Guias horizontais para inserir o layout de guias horizontais.
 
-   ![Selecionar guias horizontais](/help/forms/assets/select-horizontal-tab.png){width="200" align="center"}
+   ![Selecionar guias horizontais](/help/forms/assets/select-horizontal-tab.png)
 
    Ao adicionar o componente de guias horizontais ao formulário, ele consiste inicialmente em dois painéis vazios, chamados Item1 e Item2, por padrão. É necessário adicionar manualmente os componentes do formulário a esses painéis.
 
-   ![Guias horizontais](/help/forms/assets/insert-tabs-on-top.png){width="200" align="center"}
+   ![Guias horizontais](/help/forms/assets/insert-tabs-on-top.png)
 
 1. Abra as propriedades do componente de guias horizontais e especifique o nome do componente.
 Por exemplo, nesse caso, adicionamos o nome do componente de guias horizontais como Formulário de solicitação de TI.
 
-   ![Adicionar nome para guias horizontais](/help/forms/assets/change-name-of-horizontal-tabs.png){width="200" align="center"}
+   ![Adicionar nome para guias horizontais](/help/forms/assets/change-name-of-horizontal-tabs.png)
 
 1. Clique em **Concluído**.
 
-   ![Guias horizontais](/help/forms/assets/tabs-on-top-rename-component.png){width="200" align="center"}
+   ![Guias horizontais](/help/forms/assets/tabs-on-top-rename-component.png)
 
 Depois que o componente de layout for adicionado ao formulário, modifique o número de painéis de acordo com os requisitos.
 
@@ -174,43 +174,43 @@ Adicionar novo painel ao componente de guias horizontais:
 
 1. Abra as propriedades do componente de guias horizontais e clique na guia **Itens**.
 
-   ![Guia Item para guias Horizontais](/help/forms/assets/tabs-on-top-items-tab.png){width="200" align="center"}
+   ![Guia Item para guias Horizontais](/help/forms/assets/tabs-on-top-items-tab.png)
 
 1. Clique no ícone **Adicionar** para adicionar um novo painel.
 
-   ![Adicionar novo painel](/help/forms/assets/tabs-on-top-add-panel.png){width="200" align="center"}
+   ![Adicionar novo painel](/help/forms/assets/tabs-on-top-add-panel.png)
 
    Ao clicar no ícone **Adicionar**, a caixa de diálogo **Inserir novo componente** é exibida.
 
 1. Selecione o componente Painel.
 
-   ![Adicionar novo painel](/help/forms/assets/tabs-on-top-new-panel.png){width="200" align="center"}
+   ![Adicionar novo painel](/help/forms/assets/tabs-on-top-new-panel.png)
 
    Quando você seleciona o componente Painel, o novo painel é adicionado no layout horizontal.
 
-   ![Adicionar novo painel](/help/forms/assets/tabs-on-top-add-new-panel.png){width="200" align="center"}
+   ![Adicionar novo painel](/help/forms/assets/tabs-on-top-add-new-panel.png)
 
    Forneça um nome para o novo painel; caso contrário, não será possível salvar as propriedades do componente de guias horizontais.
 
 1. Especifique os nomes dos painéis, conforme mostrado na figura abaixo:
 
-   ![Nomes do painel](/help/forms/assets/tabs-on-tops-panel-name.png){width="200" align="center"}
+   ![Nomes do painel](/help/forms/assets/tabs-on-tops-panel-name.png)
 
 1. Clique em **Concluído**.
 
    Depois de clicar em **Concluído**, os três painéis aparecerão lado a lado em uma linha. Os nomes dos painéis são exibidos como cabeçalhos para cada painel e você pode adicionar componentes de formulário a cada painel.
 
-   ![Nomes do painel](/help/forms/assets/tabs-on-top-initial-view.png){width="200" align="center"}
+   ![Nomes do painel](/help/forms/assets/tabs-on-top-initial-view.png)
 
    É possível configurar as propriedades do componente do painel. Por exemplo, o Formulário de solicitação de TI não inclui títulos de painel, estas são as etapas para configurar as propriedades do componente do painel.
 
 1. Abra as propriedades do primeiro painel.
 
-   Propriedades do ![Painel 1](/help/forms/assets/tabs-on-tops-panel1-properties.png){width="200" align="center"}
+   Propriedades do ![Painel 1](/help/forms/assets/tabs-on-tops-panel1-properties.png)
 
 1. Marque a caixa de seleção **Ocultar título** na guia **Básico**.
 
-   ![Ocultar título](/help/forms/assets/tabs-on-top-hide-panel.png){width="200" align="center"}
+   ![Ocultar título](/help/forms/assets/tabs-on-top-hide-panel.png)
 
 1. Clique em **Concluído**.
 
@@ -224,41 +224,41 @@ Da mesma forma, também é possível ocultar títulos dos outros dois painéis. 
 
 1. Localize a seção no painel que permite adicionar componentes.
 1. Clique no ícone **Adicionar**. O ícone é um sinal de mais (+) que significa a opção de adicionar novos componentes.
-   ![Inserir layout](/help/forms/assets/tabs-on-top-add-component.png){width="200" align="center"}
+   ![Inserir layout](/help/forms/assets/tabs-on-top-add-component.png)
 
    Clicar no ícone **Adicionar** exibe uma caixa de diálogo **Inserir novo componente** que exibe vários componentes para inserção.
 
-   ![Caixa de Diálogo Inserir Novo Componente](/help/forms/assets/insert-new-component.png){width="200" align="center"}
+   ![Caixa de Diálogo Inserir Novo Componente](/help/forms/assets/insert-new-component.png)
 
 1. Navegue pelos componentes disponíveis na caixa de diálogo exibida e selecione o componente desejado. Em nosso caso, selecione o componente Caixa de texto.
 1. Abra as propriedades do componente adicionado e especifique seu nome. Deixe editar as propriedades do componente Caixa de texto adicionado e especifique seu nome.
-   ![Inserir layout](/help/forms/assets/tabs-on-top-textbox-component.png){width="200" align="center"}
+   ![Inserir layout](/help/forms/assets/tabs-on-top-textbox-component.png)
 1. Da mesma forma, adicione mais dois componentes Caixa de texto e o nome adicionou os componentes como ID de email e Departamento.\
-   ![Primeiro Painel](/help/forms/assets/tabs-on-tops-first-panel.png){width="200" align="center"}
+   ![Primeiro Painel](/help/forms/assets/tabs-on-tops-first-panel.png)
 
    Agora que os componentes no primeiro painel foram adicionados, você pode continuar com a adição dos componentes ao segundo painel.
 
 1. Para alternar o painel, clique em **Selecionar Painel** na barra de ferramentas.
 
-   ![Painel de Opções](/help/forms/assets/tabs-on-top-select-panel.png){width="200" align="center"}
+   ![Painel de Opções](/help/forms/assets/tabs-on-top-select-panel.png)
 
    Ao clicar em **Selecionar painel**, a lista de painéis adicionados no componente Guias horizontais é exibida.
 
-   ![Painel de Opções](/help/forms/assets/tabs-on-tops-panel2.png){width="200" align="center"}
+   ![Painel de Opções](/help/forms/assets/tabs-on-tops-panel2.png)
 
 1. Selecione **2 Painel** na lista do painel e a exibição será alterada do primeiro para o segundo painel.
 
-   ![Segundo Painel](/help/forms/assets/tabs-on-top-panel2-component.png){width="200" align="center"}
+   ![Segundo Painel](/help/forms/assets/tabs-on-top-panel2-component.png)
 
 1. Repita as etapas descritas da Etapa 2 para a Etapa 4 para adicionar os componentes desejados no painel 2, como mostrado na figura abaixo:
 
-   ![Componentes do segundo painel](/help/forms/assets/panel-2-components.png){width="200" align="center"}
+   ![Componentes do segundo painel](/help/forms/assets/panel-2-components.png)
 
 1. Alterne para o **3 Painel** seguindo as etapas descritas nas Etapas 6 e 7.
 
 1. Repita as etapas descritas da Etapa 2 para a Etapa 4 para adicionar o componente desejado no painel 3:
 
-   ![Componentes do terceiro painel](/help/forms/assets/panel-3-component.png){width="200" align="center"}
+   ![Componentes do terceiro painel](/help/forms/assets/panel-3-component.png)
 
 1. Clique em **[!UICONTROL Visualizar]** no canto superior direito do seu ambiente de criação.
 
@@ -319,7 +319,7 @@ Você também pode [arrastar e soltar os componentes](#extra-bytes) para adicion
 
 Você também pode excluir o componente de formulário do painel usando o ícone ![Excluir](/help/forms/assets/Smock_Delete_18_N.svg).
 
-![Excluindo um componente](/help/forms/assets/delete-component.png){width="200" align="center"}
+![Excluindo um componente](/help/forms/assets/delete-component.png)
 
 Você também pode adicionar as validações necessárias para os componentes, conforme necessário.
 
@@ -333,11 +333,11 @@ Execute as seguintes etapas para substituir o layout existente de um formulário
 
 1. Clique no ícone Substituir na barra de ferramentas do componente de layout e a caixa de diálogo **[!UICONTROL Substituir componente]** será exibida.
 
-   ![Substituir layout](/help/forms/assets/replace-layout.png){width="200" align="center"}
+   ![Substituir layout](/help/forms/assets/replace-layout.png)
 
 1. Selecione o layout desejado na caixa de diálogo **[!UICONTROL Substituir Componente]**.
 
-   ![Caixa de diálogo Substituir Componente](/help/forms/assets/replace-component.png){width="200" align="center"}
+   ![Caixa de diálogo Substituir Componente](/help/forms/assets/replace-component.png)
 
    Após selecionar o layout, a disposição dos componentes dentro do layout muda de acordo. Por exemplo, selecione o componente de guias verticais na caixa de diálogo **[!UICONTROL Substituir componente]**; a organização do painel muda para guias à esquerda:
 
@@ -350,11 +350,11 @@ Para arrastar e soltar componentes no editor de formulários, execute as seguint
 1. Localize a seção que permite adicionar componentes.
 1. Navegue até o painel esquerdo em seu ambiente de criação e clique em **Componentes**.
 
-   ![Painel do componente](/help/forms/assets/add-new-component.png){width="200" align="center"}
+   ![Painel do componente](/help/forms/assets/add-new-component.png)
 
    Ao clicar na opção **Componentes**, a lista dos componentes disponíveis é exibida.
 
-   ![Painel do componente](/help/forms/assets/add-new-component2.png){width="200" align="center"}
+   ![Painel do componente](/help/forms/assets/add-new-component2.png)
 
 1. Navegue pelos componentes disponíveis e selecione o componente desejado.
 
