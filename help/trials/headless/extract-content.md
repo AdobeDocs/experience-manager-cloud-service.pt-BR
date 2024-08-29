@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: f66ea281e6abc373e9704e14c97b77d82c55323b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1069'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ O GraphQL Explorer é iniciado em uma nova guia. Aqui, é possível criar e vali
 
 1. Depois de colado, clique no botão **Reproduzir** na parte superior esquerda do editor de consultas para executar a consulta.
 
-1. Os resultados serão exibidos no painel direito, ao lado do editor de consultas. Se a consulta estiver incorreta, um erro aparecerá no painel direito.
+1. Os resultados são exibidos no painel direito, ao lado do editor de consultas. Se a consulta estiver incorreta, um erro aparecerá no painel direito.
 
    ![Consulta de lista](assets/do-not-localize/list-query-1-3-4-5.png)
 
@@ -103,7 +103,7 @@ A execução de uma consulta byPath permite recuperar o conteúdo de um fragment
 
 1. Depois de colado, clique no botão **Reproduzir** na parte superior esquerda do editor de consultas para executar a consulta.
 
-1. Os resultados serão exibidos no painel direito, ao lado do editor de consultas. Se a consulta estiver incorreta, um erro aparecerá no painel direito.
+1. Os resultados são exibidos no painel direito, ao lado do editor de consultas. Se a consulta estiver incorreta, um erro aparecerá no painel direito.
 
    ![Resultados da consulta byPath](assets/do-not-localize/bypath-query-2-3-4.png)
 
@@ -171,7 +171,7 @@ Você criará uma consulta persistente que incluirá dados que gostaria de consu
 
 1. Depois de colado, clique no botão **Reproduzir** na parte superior esquerda do editor de consultas para executar a consulta.
 
-1. Os resultados serão exibidos no painel direito, ao lado do editor de consultas. Se a consulta estiver incorreta, um erro aparecerá no painel direito.
+1. Os resultados são exibidos no painel direito, ao lado do editor de consultas. Se a consulta estiver incorreta, um erro aparecerá no painel direito.
 
    ![Criar consulta própria](assets/do-not-localize/own-query.png)
 

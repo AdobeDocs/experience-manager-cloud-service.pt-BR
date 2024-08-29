@@ -107,7 +107,7 @@ Agora que você atualizou a imagem do ciclista, vamos analisar como adicionar um
 
 1. Selecione a camada **Ciclismo de montanha - Comprável**.
 
-1. Para criar um destaque neste painel, crie um Fragmento de conteúdo de momento de compra. Selecione o botão **+ Criar novo fragmento**.
+1. Para criar um destaque neste painel, crie um Fragmento de conteúdo de momento de compra. Selecione o botão **+ Criar fragmento do conteúdo**.
 
    ![Adicionar um momento de compra](assets/do-not-localize/add-reference-1-5.png)
 

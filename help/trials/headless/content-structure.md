@@ -1,5 +1,5 @@
 ---
-title: Criar a estrutura de conteúdo do seu aplicativo
+title: Criar a estrutura de conteúdo para seu aplicativo
 description: Saiba como usar os modelos de fragmento de conteúdo do AEM para criar sua estrutura de conteúdo, que serve como base para seu conteúdo headless.
 hidefromtoc: true
 index: false
@@ -7,14 +7,14 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 feature: Headless
 role: Admin, User, Developer
 source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1003'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Criar a estrutura de conteúdo do seu aplicativo {#content-structure}
+# Criar a estrutura de conteúdo para seu aplicativo {#content-structure}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
@@ -82,11 +82,11 @@ Já existe um campo para o título da aventura. Agora é necessário adicionar c
 
 >[!TIP]
 >
->O modelo **Aventura** é baseado no site de amostra do WKND para AEM. Você pode [visitar o site da WKND aqui](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver o conteúdo que usa o modelo **Adventure**.
+>O modelo **Aventura** é baseado no site de amostra do WKND para AEM. É possível [visitar o site WKND aqui](https://wknd.site/us/en/adventures/yosemite-backpacking.html) para ver o conteúdo que usa o modelo **Aventura**.
 
 Siga as mesmas etapas descritas acima para acrescentar esses campos adicionais. A única diferença são as propriedades que devem ser definidas.
 
-1. Adicione um campo para armazenar a descrição da aventura arrastando e soltando um campo **Texto de várias linhas** e insira as seguintes propriedades:
+1. Adicione um campo para armazenar a descrição da aventura arrastando e soltando um campo **Texto multilnha** e insira as seguintes propriedades:
 
    * **Renderizar como:** **Área de texto** - Ao criar uma aventura, esse campo armazena uma breve descrição da viagem.
    * **Rótulo do campo:** `Description` - O rótulo que é exibido para esse campo ao criar uma aventura.

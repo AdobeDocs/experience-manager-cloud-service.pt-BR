@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Criação de conteúdo headless"
+>title="Criar conteúdo headless"
 >abstract="Usando o modelo criado no módulo anterior, você aprenderá a criar conteúdo que pode ser usado para a criação de páginas ou como a base do seu conteúdo headless."
 
 >[!CONTEXTUALHELP]
@@ -85,7 +85,7 @@ Depois de salvar e abrir o novo fragmento de conteúdo, o editor de fragmentos d
 
    ![Selecionar ativo](assets/do-not-localize/select-asset.png)
 
-1. A imagem selecionada será mostrada no fragmento de conteúdo. O editor salvará as alterações automaticamente.
+1. A imagem selecionada será mostrada no fragmento de conteúdo. O editor salva as alterações automaticamente.
 
 1. Quando terminar de adicionar conteúdo, selecione o botão **Publicar** no canto superior direito do editor. Isso disponibiliza o fragmento de conteúdo para ser consumido por aplicativos externos. Em seguida, selecione **Agora** no menu suspenso. Também é possível agendar sua publicação para um momento posterior.
 
