@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: e11c869c2f8cc8847869ad67a2c752e7239bd44c
+source-git-commit: 9cc49bf83d278d4064faa1d0157201226a067cb1
 workflow-type: tm+mt
-source-wordcount: '1511'
-ht-degree: 12%
+source-wordcount: '1142'
+ht-degree: 14%
 
 ---
 
@@ -28,21 +28,35 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2024.7.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 25 de julho de 2024. O próximo lançamento de recursos (2024.8.0) está planejado para sexta-feira, 29 de agosto de 2024.
+A data de lançamento da versão atual (2024.8.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 29 de agosto de 2024. O próximo lançamento de recursos (2024.9.0) está planejado para sexta-feira, 26 de setembro de 2024.
 
 ## Notas da versão de manutenção {#maintenance}
 
 Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-notes/maintenance/latest.md).
 
-## Vídeo da versão {#release-video}
+<!-- ## Release Video {#release-video}
 
-Assista ao vídeo Visão geral da versão de julho de 2024 para ver um resumo dos recursos adicionados na versão 2024.7.0:
+Have a look at the August 2024 Release Overview video for a summary of the features added in the 2024.8.0 release:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
+
+-->
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Novo recurso no Experience Manager Sites {#new-feature-sites}
+
+**Criação de AEM para Edge Delivery Services**
+
+A funcionalidade [herança](/help/sites-cloud/authoring/universal-editor/inheritance.md) dos sites existentes agora tem suporte, incluindo:
+
+* [Inicializações do AEM](/help/sites-cloud/authoring/launches/overview.md)
+* [MSM](/help/sites-cloud/administering/msm/overview.md) no nível da página
+
+Além disso, os seguintes recursos de gerenciamento de página agora são compatíveis:
+
+* [Marcas de AEM](/help/sites-cloud/authoring/sites-console/tags.md) podem ser exportadas como uma [taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md) para Edge Delivery Services.
+* [Modelos](/help/edge/wysiwyg-authoring/templates.md) para Edge Delivery Services serão lançados em breve!
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
@@ -50,87 +64,70 @@ Assista ao vídeo Visão geral da versão de julho de 2024 para ver um resumo do
 
 Aproveite a GenAI por meio do novo recurso AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta do Adobe para consideração no programa.
 
-**Navegação de ativos no Console de Fragmentos de Conteúdo**
-
-Os autores de conteúdo agora podem navegar, visualizar e realizar ações em imagens e outros ativos sem precisar sair do Console de fragmentos de conteúdo.
-
-![Navegação de ativos](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
-
-Interessado em experimentar o recurso e compartilhar feedback? Envie um email para aemcs-headless-adopter@adobe.com a partir de sua ID de email oficial para saber mais sobre o programa dos participantes antecipados.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-**Carregar ativos usando o Seletor de ativos**
-
-O Seletor de ativos agora oferece aos autores de conteúdo a capacidade de fazer upload de ativos finais diretamente do seletor, arrastando ou navegando do sistema de arquivos local. Isso permite que os ativos finais sejam carregados no DAM a partir do aplicativo de sua escolha.
-
 ### Novos recursos na visualização de ativos {#assets-view-new-features}
 
-**integração de Contents credentials**
+**Geração de imagem de Adobe Firefly atualizada**
 
-O Experience Manager Assets agora é compatível com contents credentials para formatos de imagem compatíveis. Isso fornece informações sobre a linhagem do ativo e como ele foi criado, incluindo se ele foi modificado usando GenAI.
+O Assets as a Cloud Service usa o widget mais recente do Firefly, que permite gerar imagens em diferentes estilos usando o Adobe Firefly. Ao definir seu estilo, composição, dimensões e muito mais, usando o editor de Firefly interno, você pode criar e salvar rapidamente os ativos necessários diretamente no repositório do AEM Assets para uso imediato.
 
-![Contents credentials](/help/assets/assets/content-credentials.png)
+![geração de imagem de Adobe Firefly](/help/assets/assets/bugatti-type-57.png)
 
-**Visualizações visuais do conteúdo da pasta**
+**Suporte a arquivo PSB**
 
-O Experience Manager Assets agora exibe visualizações visuais do conteúdo da pasta na miniatura da pasta ao navegar ou pesquisar conteúdo, o que melhora a descoberta de ativos disponíveis no repositório do AEM Assets.
+O Assets as a Cloud Service agora é compatível com documentos grandes da Photoshop (arquivos PSB), além do suporte existente a arquivos PSD.
 
-<!--
+### Novos aprimoramentos na Content Hub {#content-hub-new-enhancements}
 
+* Melhor manipulação de nomes de arquivo longos, fácil expansão do nome completo através de dica de ferramenta.
+* Miniaturas aprimoradas para melhor se ajustar às proporções de tamanho do conteúdo e abranger uma área maior do conteúdo.
+* Experiência de miniatura personalizada do AEM compatível com o content hub.
+* Melhorias na pesquisa de cores.
+* As melhorias nas configurações salvam a experiência.
+* Página de informações das coleções aprimorada para refletir o nome do criador.
 
-**Content Credentials**
-
-Content Credentials feature in Assets view now provides detailed asset provenance data adhered to an asset. This helps to trace the enroute edits along the asset's lifecycle to prevent users from deception through deliberately tempered assets. This ensures content authenticity among users and fosters trust through transparency.
-
-When looking at the asset details, any image with content credentials added, such as those created with GenAI, displays the manifest details in a dedicated panel. If the asset is downloaded, published, or shared, the credentials remain intact with the asset.
-
-![check publish status1](/help/release-notes/assets/content-credentials.png)
-
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Novos recursos no AEM Forms {#forms-new-prerelease-features}
+### Novos recursos de pré-lançamento no AEM Forms {#forms-new-prerelease-features}
 
-#### Editor de regras visuais aprimorado para Forms adaptável baseado em componentes principais
+#### Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável
 
-Os autores de formulários adaptáveis podem usar campos de formulário repetíveis em funções prontas para uso disponíveis no editor visual de regras para componentes principais a fim de criar uma lógica de negócios complexa nos formulários, sem precisar de personalização ou assistência da equipe de desenvolvimento.
+Os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
+
 
 ### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
-O programa de acesso antecipado do AEM Forms oferece uma oportunidade única para você obter acesso exclusivo a inovações de ponta antes de qualquer outra pessoa e ajudar a moldar seu desenvolvimento. O programa oferece acesso a várias inovações.
+O programa de acesso antecipado da AEM Forms oferece uma oportunidade única para você obter acesso exclusivo a inovações de última geração e ajudar a moldar seu desenvolvimento.
 
 Estas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### Criar formulários adaptáveis usando o Editor universal
+#### Assistente de IA do AEM Forms
 
-Aproveite o [Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) do Adobe Experience Manager para criar formulários adaptáveis usando a criação de arrastar e soltar WYSIWYG, para experiências de inscrição headless e headful, entregues pelo Serviço Edge Delivery. Os autores de formulários adaptáveis podem criar e iniciar facilmente experimentos para variações de formulários nas páginas da Web e determinar as experiências de melhor desempenho para os usuários finais.
+A IA gerativa para o Adaptive Forms traz um nível totalmente novo de potência e facilidade para seus processos de desenvolvimento de formulários. Ele permite que você construa formulários melhores mais rápido do que nunca.
+
+![Assistente de IA de Geração, Forms Adaptável](/help/forms/assets/generative-ai-assistant.png)
+
+Os recursos de IA gerativa disponíveis são:
+
+* **Assistente de IA para consultas de produtos**: obtenha respostas instantâneas para suas perguntas relacionadas ao formulário AEM. O assistente de IA atua como sua própria base de conhecimento pessoal, fornecendo orientação e recomendações relevantes diretamente na plataforma.
+
+* **Geração de formulário adaptável**: crie formulários completos sem esforço com Prompts do Generative AI. Nossa IA gerativa gera automaticamente formulários amigáveis que reduzem as quedas e personalizam a experiência.
+
+* **Geração de painel para Forms**: gere seções de formulário personalizadas para necessidades específicas de coleta de dados. Por exemplo, gere seções para coletar informações de pagamento, preferências do cliente ou detalhes da viagem.
+
+* **Alterando Layouts de Formulário**: experimente diferentes layouts e designs usando Solicitações de IA Gerativa. Experimente diferentes layouts, como visualizações com assistente ou em abas, para encontrar o ajuste perfeito para o seu formulário. Use os Prompts de IA gerativa para otimizar seus formulários para a agilidade móvel e criar formulários visualmente envolventes que os usuários adoram.
+
+* **Configurar Ação de Envio**: use os prompts da IA Gerativa para configurar facilmente uma ação de envio para o seu formulário. Escolha entre uma biblioteca de ações de envio pré-criadas ou entre uma lista de ações de envio personalizadas, criadas e implantadas pela sua própria equipe de desenvolvimento.
 
 >[!IMPORTANT]
 >
-> Se você estiver interessado em participar do Programa de Acesso Antecipado do Adobe para qualquer inovação de acesso antecipado, basta enviar um email do seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
+> Se você estiver interessado em participar do Programa de Acesso Antecipado para qualquer inovação, basta enviar um email de seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) com a lista de recursos nos quais você está interessado.
+
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### Limpar conteúdo na CDN com uma chave de API de autoatendimento {#purge-cdn}
-
-A definição do TTL usando o cabeçalho HTTP Cache-Control é uma abordagem eficaz para equilibrar o desempenho da entrega de conteúdo e a atualização de conteúdo. No entanto, em cenários em que é essencial fornecer imediatamente conteúdo atualizado, pode ser útil limpar diretamente o cache da CDN.
-
-[Saiba como](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) configurar por autoatendimento um token de API de limpeza usando o pipeline de configuração do Cloud Manager, para poder [invocar as APIs de limpeza](/help/implementing/dispatcher/cdn-cache-purge.md), com qualquer uma destas variações:
-* URL único
-* Vários URLs usando uma tag
-* Limpeza completa do cache do CDN
-
-### Configuração de autoatendimento do X-AEM-Edge-Key para CDN gerenciada pelo cliente {#customermanaged-keys}
-
-Anteriormente, um tíquete de suporte era necessário para gerar a X-AEM-Edge-Key necessária para a configuração de um CDN gerenciado pelo cliente. Agora, isso se torna autoatendimento ao declarar o valor principal em um arquivo de configuração implantado usando o Pipeline de configuração, removendo qualquer atraso na integração de um novo ambiente. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
-
-### Alertas de regras de filtro de tráfego {#traffic-filter-rules-alerts}
-
-As Regras de filtro de tráfego, que incluem as regras opcionalmente licenciáveis do Web Application Firewall (WAF), permitem configurar o tráfego que deve ser bloqueado.
-
-Agora é possível [assinar alertas](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) sempre que as regras de filtro de tráfego forem acionadas. As notificações por email do Centro de ações mantêm você informado quando ocorrem determinadas condições de tráfego para que você possa tomar as medidas apropriadas.
 
 ### Programas dos primeiros usuários relacionados à entrega de conteúdo {#foundation-early-adopter}
 
@@ -152,33 +149,6 @@ Semelhante ao AEM 6.5, o Apache/Dispatcher assimila mapas de regravação coloca
 
 O CDN do Adobe Managed agora é compatível com o [ESI (Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para o assembly de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página de HTML geral na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-### Programa de adoção antecipada de notificações do Centro de ações relacionadas à integridade do conteúdo {#actions-center-notifications}
-
-A [Central de Ações](/help/operations/actions-center.md) envia notificações por email quando ocorrem incidentes importantes, ou se algo for notado sobre seu código ou configuração, onde você deve tomar medidas pró-ativas. O Adobe agora introduziu vários novos tipos de notificações associados à integridade do conteúdo. Esse recurso está disponível por meio de um programa de adoção antecipada. Para participar, entre em contato com o Atendimento ao cliente do Adobe.
-
-#### As páginas contêm um grande número de nós {#page-nodes}
-
-Um grande número de nós pode degradar o desempenho da renderização e reduzir o tempo de carregamento da página. Receba uma notificação proativa pelo Centro de ações quando um grande número de nós for detectado em uma página, permitindo que você siga as etapas necessárias para reduzir o número total de nós em uma página.
-
-#### Grande número de instâncias de fluxo de trabalho em execução {#running-workflows}
-
-O desempenho do mecanismo de fluxo de trabalho é afetado quando há um grande número de fluxos de trabalho em execução no ambiente de criação. Você recebe uma notificação proativa por meio do Centro de ações quando um grande número de instâncias de fluxo de trabalho em execução é detectado. Esse processo permite configurar um trabalho de limpeza para encerrar fluxos de trabalho em execução desnecessários.
-
-#### Usuários adicionados diretamente aos grupos personalizados {#users-customgroups}
-
-Você recebe uma notificação proativa por meio do Centro de ações quando os usuários são adicionados diretamente aos grupos personalizados. Esse processo permite seguir as práticas recomendadas do IMS, adicionando usuários aos grupos IMS relevantes e, em seguida, incluindo esses grupos IMS como membros de grupos AEM.
-
-#### Conteúdo JCR ausente {#jcr-content}
-
-O Centro de ações o notifica proativamente quando conteúdo JCR ausente é detectado. Essa abordagem permite adicionar o conteúdo ausente e evitar a falha de determinados recursos do AEM Assets.
-
-#### Fluxos de trabalho concluídos não removidos {#workflows}
-
-O Centro de ações notifica proativamente quando workflows concluídos há mais de 90 dias não foram removidos. Essa abordagem ajuda a melhorar o desempenho do mecanismo de fluxo de trabalho, reduzindo o número de instâncias de fluxo de trabalho.
-
-#### Recurso Sling ausente {#sling-resource}
-
-O Centro de ações envia uma notificação proativa quando um recurso Sling ausente é detectado. Essa abordagem permite adicionar o recurso ausente e evitar a falha de determinados recursos do AEM Assets.
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
