@@ -4,9 +4,9 @@ description: Saiba como remover objetos em cache do cache CDN do Adobe configura
 feature: CDN Cache
 exl-id: 4d091677-b817-4aeb-b131-7a5407ace3e0
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 5b777171cb9246c2a0174985e060d7d1b6ed8591
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Todas as variações de limpeza compartilham o seguinte:
 
 >[!CAUTION]
 >A limpeza do cache CDN, especialmente com o sinalizador de hardware, aumentará o tráfego na origem e poderá causar uma interrupção quando não for executada corretamente.
+
+Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
 
 ## Limpeza de URL único {#single-purge}
 

@@ -4,9 +4,9 @@ description: Saiba como configurar credenciais e autenticação de CDN declarand
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: e8c40d6205bfa2de18374e5161fe0fea42c8ce32
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,8 @@ As propriedades adicionais incluem:
 
 >[!NOTE]
 >A Chave de Limpeza deve ser configurada como uma [Variável de Ambiente Cloud Manager do tipo secreto](/help/operations/config-pipeline.md#secret-env-vars), antes da implantação da configuração que faz referência a ela.
+
+Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
 
 ## Autenticação básica {#basic-auth}
 
