@@ -4,10 +4,10 @@ description: Saiba mais sobre os fundamentos e as práticas recomendadas da impl
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
 workflow-type: tm+mt
-source-wordcount: '3441'
-ht-degree: 96%
+source-wordcount: '3440'
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 Os fundamentos do desenvolvimento de código são semelhantes no AEM as a Cloud Service em comparação às soluções locais do AEM e Managed Services. Desenvolvedores(as) criam o código e o testam localmente, e depois o enviam para ambientes remotos do AEM as a Cloud Service. O uso do Cloud Manager, que era uma ferramenta opcional de entrega de conteúdo do Managed Services, é obrigatório. Esta ferramenta de entrega é agora o único mecanismo para implantar código nos ambientes de desenvolvimento, preparo e produção do AEM as a Cloud Service. Para uma rápida validação e depuração de recursos antes da implantação desses ambientes mencionados, o código pode ser sincronizado de um ambiente local para um [ambiente de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-A atualização da [versão do AEM](/help/implementing/deploying/aem-version-updates.md) é sempre um evento de implantação separado do envio de [código personalizado](#customer-releases). Vistas de outra maneira, as versões de código personalizado devem ser testadas em relação à versão do AEM que está em produção, pois esta será implantada primeiro. As atualizações da versão do AEM que ocorrem depois disso são frequentes e aplicadas automaticamente. Elas são feitas para serem compatíveis com versões anteriores do código do cliente já implantado.
+A atualização da [versão do AEM](/help/implementing/deploying/aem-version-updates.md) é sempre um evento de implantação separado do envio de [código personalizado](#customer-releases). Vistas de outra maneira, as versões de código personalizado devem ser testadas em relação à versão do AEM que está em produção, pois esta será implantada primeiro. As atualizações de versão do AEM que ocorrem depois disso (que são frequentes e são aplicadas automaticamente) devem ser compatíveis com o código de cliente já implantado.
 
 O resto deste documento descreverá como os desenvolvedores devem adaptar suas práticas para que possam trabalhar com as atualizações da versão do AEM as a Cloud Service e as atualizações do cliente.
 
