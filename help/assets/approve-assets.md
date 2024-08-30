@@ -2,9 +2,10 @@
 title: Aprovar ativos no Experience Manager
 description: Saiba como aprovar ativos no [!DNL Experience Manager].
 role: User
-source-git-commit: 540aa876ba7ea54b7ef4324634f6c5e220ad19d3
+exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
+source-git-commit: 9b3b93100c45c7053549c3f9899a344ca7db104d
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '676'
 ht-degree: 1%
 
 ---
@@ -36,7 +37,7 @@ Se você precisar exibir a propriedade para a qual o campo **[!UICONTROL Status 
 
 ## Aprovar ativos {#approve-assets}
 
-Você pode aprovar ativos em [!DNL Experience Manager] e [!DNL Experience Manager Assets]. Para aprovar ativos em [!DNL Experience Manager], siga estas etapas:
+Para aprovar ativos em [!DNL Experience Manager Admin view], siga estas etapas:
 
 1. Selecione o(s) ativo(s) e clique em **[!UICONTROL Propriedades]** no painel superior.
 1. Na guia **[!UICONTROL Básico]**, role para baixo até **[!UICONTROL Status de Revisão]**.
@@ -51,7 +52,7 @@ Você pode aprovar ativos em [!DNL Experience Manager] e [!DNL Experience Manage
 ## Aprovar ativos em massa {#bulk-approve-assets}
 
 Simplifique o fluxo de trabalho aprovando rapidamente vários ativos de uma só vez. Você pode aprovar ativos em massa para acelerar o processo de aprovação, economizando tempo e melhorando a produtividade.
-<br>Siga estas etapas para aprovar ativos em massa em [!DNL Experience Manager]:
+<br>Siga estas etapas para aprovar ativos em massa em [!DNL Experience Manager Admin view]:
 
 1. Crie uma pasta no ambiente de criação (https://author-pXXX-eYYY.adobeaemcloud.com). Substitua _XXX_ pela ID do programa e _AAAA_ pela ID do ambiente do Experience Manager.
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de Metadados]**.
@@ -102,4 +103,3 @@ Para copiar o URL de entrega de um ativo aprovado no repositório:
    >[!NOTE]
    >
    >A opção para copiar o URL de entrega para ativos aprovados está disponível apenas na visualização Assets.
-
