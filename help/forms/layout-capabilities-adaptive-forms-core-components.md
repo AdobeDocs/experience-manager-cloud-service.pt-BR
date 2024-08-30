@@ -4,7 +4,7 @@ description: O layout e as aparências do Adaptive Forms em vários dispositivos
 feature: Adaptive Forms, Core Components
 keywords: Layout do formulário adaptável com base nos componentes principais, Layouts diferentes para formulários, Layouts dinâmicos de formulário AEM, Layouts de formulário do AEM Cloud Service, Tipos de layout de formulário nos Componentes principais do AEM, Layouts de formulário adaptável
 role: User, Developer, Admin
-source-git-commit: 0397e5ec20b48a45df74d7d1c03eaae3739000dd
+source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
@@ -326,8 +326,6 @@ Você também pode adicionar as validações necessárias para os componentes, c
 ## Como substituir um layout existente por um novo layout?
 
 É possível substituir um layout de um formulário por um novo layout, o que envolve modificar como os componentes são organizados e exibidos em um formulário.
-
-
 
 Execute as seguintes etapas para substituir o layout existente de um formulário:
 
