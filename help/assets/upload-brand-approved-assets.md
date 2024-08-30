@@ -2,17 +2,19 @@
 title: Carregar os ativos aprovados pela sua marca para  [!DNL Content Hub]
 description: Saiba como fazer upload dos ativos aprovados pela sua marca para o Content Hub
 role: User
-source-git-commit: c85b4e1c828ed1fb7f4063f965fe116215ca0244
+exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
+source-git-commit: 85fbbcf77bd5b2ef1a68454e2cf1d2202c8f90c4
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
 
-
 # Fazer upload de ativos aprovados pela marca para o Content Hub {#upload-brand-approved-assets-content-hub}
 
 [Os usuários do Content Hub com direitos para adicionar ativos](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) podem adicionar ativos ao Content Hub a partir do sistema de arquivos local ou importar ativos de fontes de dados do OneDrive ou do Dropbox. Todos os ativos são exibidos no nível superior do Content Hub, independentemente da estrutura de pastas disponível no sistema de arquivos local ou nas fontes de dados do OneDrive e do Dropbox para aprimorar os recursos de pesquisa.
+
+Os ativos marcados como `Approved` no Assets as a Cloud Service ficam disponíveis automaticamente no Content Hub. Para obter mais informações, consulte [Aprovar ativos para o Content Hub](/help/assets/approve-assets-content-hub.md).
 
 Para aprimorar ainda mais a pesquisa de ativos, o Content Hub permite:
 
@@ -72,3 +74,14 @@ Para adicionar ativos ao Content Hub a partir de fontes de dados do OneDrive ou 
 
 Os administradores também podem configurar os campos obrigatórios e opcionais exibidos durante o upload de ativos, como nome da campanha, palavras-chave, canais e assim por diante. Para obter mais informações, consulte [Configurar a interface do usuário do Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
+## Gerenciar ativos carregados usando o Content Hub {#manage-assets-uploaded-using-content-hub}
+
+[Os usuários do Content Hub com direitos para adicionar ativos](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) podem [adicionar ativos ao Content Hub](/help/assets/upload-brand-approved-assets.md) a partir do sistema de arquivos local ou importar ativos de fontes de dados do OneDrive ou do Dropbox. Todos os ativos são exibidos no nível superior do Content Hub, independentemente da estrutura de pastas disponível no sistema de arquivos local ou nas fontes de dados do OneDrive e do Dropbox para aprimorar os recursos de pesquisa.
+
+A exibição de ativos carregados usando o Content Hub depende de se você [habilitou a opção de Aprovação automática](/help/assets/configure-content-hub-ui-options.md#configure-import-options-content-hub):
+
+* Se a opção **[!UICONTROL Aprovação automática]** estiver habilitada, os ativos carregados usando o Content Hub estarão automaticamente disponíveis.
+
+* Se a opção **[!UICONTROL Aprovação automática]** estiver desabilitada, os ativos carregados usando o Content Hub não serão exibidos automaticamente. Os ativos estão disponíveis na pasta `hydrated-assets` do seu ambiente as a Cloud Service do Assets. Navegue até a pasta e [edite em massa](#bulk-approve-assets-content-hub) o status desses ativos para `Approved` para que eles sejam exibidos no Content Hub.
+
+![processo de aprovação do Content Hub](/help/assets/assets/content-hub-approval.png)
