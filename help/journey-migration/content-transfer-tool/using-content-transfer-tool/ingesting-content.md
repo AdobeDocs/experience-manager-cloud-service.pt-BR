@@ -4,9 +4,9 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
 workflow-type: tm+mt
-source-wordcount: '2905'
+source-wordcount: '2982'
 ht-degree: 11%
 
 ---
@@ -214,11 +214,20 @@ As práticas recomendadas indicam que, se uma assimilação de **Não apagável*
 >abstract="Uma causa comum de falha na ingestão é ao exceder o tamanho máximo dos valores de propriedade do nó. Siga a documentação, incluindo as relacionadas ao relatório do BPA, para corrigir essa situação."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=pt-BR" text="Pré-requisitos de migração"
 
-Os valores de propriedade do nó armazenados no MongoDB não podem exceder 16 MB. Se um valor de nó exceder o tamanho permitido, a assimilação falhará e o log conterá um erro `BSONObjectTooLarge` e especificará qual nó excedeu o máximo. Essa é uma restrição MongoDB.
+Os valores de propriedade do nó armazenados no MongoDB não podem exceder 16 MB. Se um valor de nó exceder o tamanho compatível, a assimilação falhará e o log conterá:
+
+* um erro `BSONObjectTooLarge` e especificar qual nó excedeu o máximo, ou
+* um erro `BsonMaximumSizeExceededException`, que indica que provavelmente há um nó contendo caracteres unicode excedendo o tamanho máximo **
+
+Essa é uma restrição MongoDB.
 
 Consulte a observação `Node property value in MongoDB` em [Pré-requisitos da Ferramenta de Transferência de Conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta Oak que possa ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
 
 Para evitar possivelmente essa restrição, execute o [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) na instância do AEM de origem e revise os achados apresentados, especialmente o padrão [&quot;Estrutura de Repositório Sem Suporte&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
+
+>[!NOTE]
+>
+>O [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) versão 2.1.50+ informará sobre nós grandes que contêm caracteres unicode que excedem o tamanho máximo. Verifique se você está executando a versão mais recente. As versões do BPA anteriores à versão 2.1.50 não identificarão e relatarão esses nós grandes e precisarão ser descobertas separadamente usando a ferramenta de pré-requisito do Oak mencionada acima.
 
 ### Ingestão cancelada {#ingestion-rescinded}
 
