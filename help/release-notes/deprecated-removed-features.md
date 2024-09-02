@@ -4,10 +4,10 @@ description: Notas de versão específicas para recursos obsoletos e removidos d
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
+source-git-commit: c5057120d68e1119211c7733a8eb0424590096bd
 workflow-type: tm+mt
 source-wordcount: '2172'
-ht-degree: 73%
+ht-degree: 72%
 
 ---
 
@@ -18,8 +18,7 @@ ht-degree: 73%
 >title="Recursos obsoletos e removidos do AEM as a Cloud Service"
 >abstract="O AEM as a Cloud Service tem um modelo de implantação nativo em nuvem. Determinados recursos foram substituídos por equivalentes nativos em nuvem e esta guia mostra esses recursos."
 
-
-A Adobe avalia as funcionalidades do produto constantemente, para reinventar ou substituir recursos mais antigos por alternativas mais modernas, de forma a melhorar o valor do cliente em geral, sempre sob considerações cuidadosas de compatibilidade com versões anteriores. Além disso, como o [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] fornece um modelo de implantação nativo em nuvem, certos recursos e funcionalidades foram substituídos por seus equivalentes nativos em nuvem.
+O Adobe avalia constantemente os recursos do produto para, com o tempo, reinventar ou substituir recursos mais antigos por alternativas mais modernas, de forma a melhorar o valor geral oferecido ao cliente, sempre considerando cuidadosamente a compatibilidade com versões anteriores. Além disso, como o [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] fornece um modelo de implantação nativo em nuvem, certos recursos e funcionalidades foram substituídos por seus equivalentes nativos em nuvem.
 
 Para comunicar a remoção/substituição iminente das funcionalidades do [!DNL Experience Manager], as seguintes regras de aplicam:
 
