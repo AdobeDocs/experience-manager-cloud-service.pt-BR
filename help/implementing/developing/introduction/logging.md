@@ -4,9 +4,9 @@ description: Saiba como usar o Logging para AEM as a Cloud Service a fim de conf
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2834'
 ht-degree: 2%
 
 ---
@@ -144,12 +144,13 @@ Os níveis de log do AEM são definidos por tipo de ambiente por meio da configu
 
 Os logs Java do AEM são definidos como configuração OSGi e, portanto, têm como alvo ambientes AEM as a Cloud Service específicos usando pastas de modo de execução.
 
-Configure o log Java para pacotes Java personalizados por meio de configurações OSGi para a fábrica do Sling LogManager. Há duas propriedades de configuração compatíveis:
+Configure o log Java para pacotes Java personalizados por meio de configurações OSGi para a fábrica do Sling LogManager. Há três propriedades de configuração compatíveis:
 
 | Propriedade de configuração OSGi | Descrição |
 |---|---|
-| org.apache.sling.commons.log.names | Os pacotes Java para os quais coletar instruções de log. |
-| org.apache.sling.commons.log.level | O nível de log no qual os pacotes Java devem ser registrados, especificado por org.apache.sling.commons.log.names |
+| `org.apache.sling.commons.log.names` | Os pacotes Java para os quais coletar instruções de log. |
+| `org.apache.sling.commons.log.level` | O nível de log no qual registrar os pacotes Java, especificado por `org.apache.sling.commons.log.names` |
+| `org.apache.sling.commons.log.file` | Especifique o destino da saída: `logs/error.log` |
 
 A alteração de outras propriedades de configuração OSGi do LogManager pode resultar em problemas de disponibilidade no AEM as a Cloud Service.
 
@@ -163,6 +164,7 @@ A seguir estão exemplos das configurações de log recomendadas (usando o pacot
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "debug"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -174,6 +176,7 @@ A seguir estão exemplos das configurações de log recomendadas (usando o pacot
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "warn"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
@@ -185,6 +188,7 @@ A seguir estão exemplos das configurações de log recomendadas (usando o pacot
 {
     "org.apache.sling.commons.log.names": ["com.example"],
     "org.apache.sling.commons.log.level": "error"
+    "org.apache.sling.commons.log.file": "logs/error.log"
 }
 ```
 
