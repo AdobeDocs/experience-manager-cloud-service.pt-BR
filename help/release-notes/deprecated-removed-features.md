@@ -4,9 +4,9 @@ description: Notas de versão específicas para recursos obsoletos e removidos d
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: d80872b1df4d31d784745dabeb0e1680fc921cb8
 workflow-type: tm+mt
-source-wordcount: '2193'
+source-wordcount: '2172'
 ht-degree: 73%
 
 ---
@@ -95,12 +95,6 @@ Veja abaixo uma extensa lista de APIs obsoletas do AEM e a data esperada da remo
     <td>O uso da Sling's Discovery API é uma alternativa</td>
     <td>2015</td>
     <td>removida</td>
-  </tr>
-  <tr>
-    <td>org.apache.sling.settings</td>
-    <td>O AEM as a Cloud Service não é compatível com modos de execução ou acesso ao sistema de arquivos no momento de execução. </td>
-    <td>05/10/2020</td>
-    <td>Final de 2021</td>
   </tr>
   <tr>
     <td>org.apache.fop.apps</td>
