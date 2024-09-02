@@ -3,11 +3,10 @@ title: Como podemos criar e usar temas no Adaptive Forms?
 description: Você pode usar temas para estilizar e fornecer uma identidade visual a um formulário adaptável usando os Componentes principais. Você pode compartilhar um tema em qualquer número do Adaptive Forms.
 keywords: formulários adaptáveis com estilo dos Componentes principais. uso do tema nos Componentes principais, estilo do formulário adaptável, personalização de temas
 feature: Adaptive Forms, Core Components
-exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
 workflow-type: tm+mt
-source-wordcount: '2879'
+source-wordcount: '2816'
 ht-degree: 3%
 
 ---
@@ -172,7 +171,7 @@ Para clonar um tema, execute as seguintes instruções:
 
 #### 3. Personalizar um tema {#customize-the-theme}
 
-Você pode personalizar componentes individuais ou fazer alterações no nível do tema usando variáveis globais de um tema. Quaisquer alterações feitas nas variáveis globais afetam todos os componentes individuais. Por exemplo, você pode usar variáveis Globais para alterar a cor da borda de todos os componentes de um Formulário adaptável e uma cor de preenchimento brilhante para definir CTA (Chamada para ação) usando o componente de botão:
+Você pode personalizar componentes individuais ou fazer alterações no nível do tema usando variáveis globais de um tema. Quaisquer alterações feitas nas variáveis globais afetam todos os componentes individuais. Por exemplo, você pode usar variáveis Globais para alterar a cor da borda de todos os componentes de um Formulário adaptável e uma cor de preenchimento brilhante para definir o CTA (Chamada para ação) usando o componente de botão:
 
 * [Definir estilos de nível de tema](#theme-customization-global-level)
 
@@ -428,11 +427,6 @@ Os temas do formulário adaptável são usados como parte de um modelo de formul
 * **Alterando a largura do layout do painel de contêiner**
 
   Não é recomendável alterar a largura do layout do painel de contêiner. Quando você especifica a largura de um painel de contêiner, ele se torna estático e não se adapta a exibições diferentes.
-
-* **Usando um editor de formulário ou de tema para trabalhar com cabeçalho e rodapé**
-
-  Use um editor de tema se desejar estilizar o cabeçalho e o rodapé usando opções de estilo, como estilo da fonte, plano de fundo e transparência.
-Se você quiser fornecer informações como uma imagem de logotipo, o nome da empresa no cabeçalho e informações de direitos autorais no rodapé, use as opções do editor de formulários.
 
 ## Perguntas frequentes {#faq}
 
