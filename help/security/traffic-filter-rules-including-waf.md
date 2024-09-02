@@ -4,9 +4,9 @@ description: Configuração das regras de filtro de tráfego, incluindo as regra
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
 workflow-type: tm+mt
-source-wordcount: '3937'
+source-wordcount: '3928'
 ht-degree: 1%
 
 ---
@@ -255,7 +255,7 @@ A propriedade `wafFlags`, que pode ser usada nas regras de filtro de tráfego li
 | DADOS MALFORMADOS | Dados malformados no corpo da solicitação | Um corpo de solicitação POST, PUT ou PATCH que está malformado de acordo com o cabeçalho de solicitação &quot;Content-Type&quot;. Por exemplo, se um cabeçalho de solicitação &quot;Content-Type: application/x-www-form-urlencoded&quot; for especificado e contiver um corpo de POST que seja json. Isso geralmente é um erro de programação, uma solicitação automatizada ou mal-intencionada. Exige o agente 3.2 ou superior. |
 | SANS | Tráfego IP mal-intencionado | [Lista do SANS Internet Storm Center](https://isc.sans.edu/) de endereços IP relatados que realizaram atividades mal-intencionadas. |
 | NO-CONTENT-TYPE | Cabeçalho da solicitação &quot;Content-Type&quot; ausente | Uma solicitação POST, PUT ou PATCH que não tem um cabeçalho de solicitação &quot;Content-Type&quot;. Por padrão, os servidores de aplicativos devem assumir &quot;Content-Type: text/plain; charset=us-ascii&quot; neste caso. Muitas solicitações automatizadas e mal-intencionadas podem estar sem &quot;Tipo de conteúdo&quot;. |
-| NOUA | Nenhum agente de usuário | Muitas solicitações automatizadas e mal-intencionadas usam User-Agents falsos ou ausentes para dificultar a identificação do tipo de dispositivo que faz as solicitações. |
+| NOUA | Nenhum agente de usuário | Indica que uma solicitação não continha o cabeçalho &quot;User-Agent&quot; ou que o valor do cabeçalho não foi definido. |
 | TORNODE | Tráfego Tor | Tor é um software que oculta a identidade de um usuário. Um pico no tráfego Tor pode indicar um invasor tentando mascarar sua localização. |
 | NULLBYTE | Byte nulo | Bytes nulos normalmente não aparecem em uma solicitação e indicam que a solicitação está malformada e é potencialmente maliciosa. |
 | ARQUIVOPRIVADO | Arquivos privados | Os arquivos privados têm natureza confidencial, como um arquivo `.htaccess` do Apache, ou um arquivo de configuração que poderia vazar informações confidenciais |
