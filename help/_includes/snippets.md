@@ -1,7 +1,7 @@
 ---
-source-git-commit: c7b78b5c4e4851d57314a437b3b7fa06c1f167d5
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '914'
 ht-degree: 5%
 
 ---
@@ -155,3 +155,9 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 >
 >Se você usar ou pretende usar o pipeline de front-end para desenvolver sites, a Lista de permissões de IP do Cloud Manager deverá ser adicionada com antecedência.
 >Consulte [Uso da Lista de permissões IP do Cloud Manager com o pipeline de front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+
+## Trabalhar com o Dynamic Media {#work-with-dynamic-media}
+
+>[!TIP]
+>
+>Você é novo no Dynamic Media? Para obter uma visão geral rápida e de alto nível do Dynamic Media, consulte [Trabalhar com o Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).

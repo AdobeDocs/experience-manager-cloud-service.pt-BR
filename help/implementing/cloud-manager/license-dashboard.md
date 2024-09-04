@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eae5c75e1bf4f7201fe2c01d08737d36489ca3e4
+source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 31%
+source-wordcount: '925'
+ht-degree: 37%
 
 ---
 
@@ -63,11 +63,14 @@ Cada seção resume o que está disponível e como é usado, se for o caso. Atua
 >
 >Para saber como gerenciar os direitos de Adobe em toda a organização usando o Admin Console, consulte a [visão geral sobre Admin Console](https://helpx.adobe.com/br/enterprise/using/admin-console.html).
 
-## Exibir detalhes de uso {#view-usage-details}
+## Visualizar detalhes de uso {#view-usage-details}
 
-O botão **Exibir detalhes de uso** dá acesso à janela **Detalhes de Uso** da solução escolhida. Essa janela fornece um detalhamento detalhado, incluindo gráficos para mostrar o uso da solução. A forma como essa utilização é medida depende da solução escolhida.
+<!--
+The **View usage details** button gives access to the chosen solution's **Usage Details** window. This window gives a detailed breakdown including charts to show your solution's usage. How that usage is measured depends on the chosen solution. -->
 
-### Detalhes de uso dos sites {#sites-usage-details}
+O botão **Exibir detalhes de uso** na área de licença do Cloud Manager fornece um detalhamento do uso de recursos atual. Quando clicado, ele abre um relatório ou painel que mostra métricas importantes relacionadas à sua licença. <!-- ADD THIS SENTENCE IF ASSETS USAGE DETAILS GETS REINSTATED ", such as the number of users, storage consumption, or bandwidth usage, depending on the type of services you're using." --> Essa funcionalidade ajuda a monitorar e garantir que você permaneça nos limites do contrato, oferecendo insights para um melhor planejamento e otimização de recursos.
+
+### Detalhes de uso de sites {#sites-usage-details}
 
 A janela **Detalhes de uso do Sites** apresenta gráficos com uma visão geral do uso das licenças do Sites com base em [solicitações de conteúdo.](#what-is-a-content-request)
 
@@ -77,27 +80,28 @@ O lado esquerdo da janela apresenta um gráfico de pizza que mostra o detalhamen
 
 O lado direito da janela apresenta um gráfico de área que mostra o uso detalhado por programa ao longo do tempo para o ano do contrato selecionado. Um cursor do mouse revela um pop-up com detalhes por programa para o ponto no tempo selecionado.
 
-### Detalhes de uso do Assets {#assets-usage-details}
+<!-- REMOVED AS PER CQDOC-21983
+### Assets usage details {#assets-usage-details}
 
-A janela **detalhes de uso do Assets** apresenta gráficos que fornecem uma visão geral do uso de suas licenças do Assets com base no [armazenamento](#storage) e nos [usuários padrão.](#standard-users) Selecione a guia apropriada para alternar entre os modos de exibição.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
 
-Para exibições de armazenamento e usuários padrão, você pode usar a lista suspensa **Tipo de ambiente** para alternar a exibição entre ambientes de produção, preparo e desenvolvimento.
+For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
-#### Armazenamento {#storage}
+#### Storage {#storage}
 
-![Janela de detalhes de uso do Assets para armazenamento](assets/assets-usage-details-storage.png)
+![Assets usage details window for storage](assets/assets-usage-details-storage.png)
 
-O lado esquerdo da janela apresenta um gráfico de pizza que mostra o detalhamento do contrato para o ano do contrato selecionado na lista suspensa **Exibir ano do contrato**.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-O lado direito da janela apresenta um gráfico de área que mostra o uso detalhado por programa ao longo do tempo para o ano do contrato selecionado. Um cursor do mouse revela um pop-up com detalhes por programa para o ponto no tempo selecionado.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time.
 
-#### Usuários padrão {#standard-users}
+#### Standard Users {#standard-users}
 
-![Janela de detalhes de uso do Assets para usuários padrão](assets/assets-usage-details-standard-users.png)
+![Assets usage details window for standard-users](assets/assets-usage-details-standard-users.png)
 
-O lado esquerdo da janela apresenta um gráfico de pizza que mostra o detalhamento do contrato para o ano do contrato selecionado na lista suspensa **Exibir ano do contrato**.
+The left side of the window presents a pie chart showing the contract breakdown for the contract year selected in the **View contract year** dropdown.
 
-O lado direito da janela apresenta um gráfico de área que mostra o uso detalhado por programa ao longo do tempo para o ano do contrato selecionado. Um cursor do mouse revela um pop-up com detalhes por programa para o ponto no tempo selecionado.
+The right side of the window presents an area chart showing the usage broken down by program over time for the selected contract year. A hover reveals a popup with details per program for the selected point in time. -->
 
 ## Perguntas frequentes {#faq}
 
