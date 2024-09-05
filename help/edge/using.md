@@ -4,9 +4,9 @@ description: Saiba como o AEM as a Cloud Service pode ser usado com o Edge Deliv
 feature: Edge Delivery Services
 exl-id: 41999302-b4c9-4f5a-b659-6e7398a3c4f4
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 16531cf084ad1b9619f4dffc6d028c7df4002ff5
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ O princípio orientador do Adobe é a simplicidade. Comece com a criação basea
 
 ## Criação   {#authoring-edge}
 
-Com o Edge Delivery Services, a criação é fácil, rápida e flexível. Você pode optar por criar usando a criação com base em documento ou a criação WYSIWYG usando o Editor universal.
+Com o Edge Delivery Services, a criação é fácil, rápida e flexível. Você pode optar por criar usando a criação com base em documento ou a criação no WYSIWYG usando o Editor universal.
 
 Consulte o documento [Criação de conteúdo para Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md) para obter mais informações.
 
@@ -44,10 +44,4 @@ Consulte o documento [Publicando conteúdo para Edge Delivery Services](/help/ed
 
 O Edge Delivery Services é baseado em torno do conceito de blocos. O AEM vem com uma biblioteca abrangente de blocos predefinidos, que podem ser estendidos para atender às necessidades do seu projeto. O código para projetos Edge Delivery Services é gerenciado no GitHub.
 
-Consulte o documento [Guia de Introdução do Desenvolvedor para Criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obter mais informações.
-
-## Projetos AEM existentes {#existing-projects}
-
-Você não precisa esperar que um novo projeto AEM se beneficie dos Edge Delivery Services. Os Edge Delivery Services podem ser integrados ao projeto AEM existente para que você possa aproveitar seus ganhos de desempenho imediatamente.
-
-Consulte o documento [Utilizando Edge Delivery Services com projetos AEM existentes](/help/edge/wysiwyg-authoring/existing-projects.md) para obter mais informações.
+Consulte o documento [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obter mais informações.
