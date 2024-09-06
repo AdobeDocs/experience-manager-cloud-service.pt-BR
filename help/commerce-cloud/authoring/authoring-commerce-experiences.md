@@ -4,9 +4,9 @@ description: Saiba como criar e criar experiências relacionadas ao comércio co
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: dbf5c47f6d66b1ce35536b0762556511386a7e38
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '720'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Esse seletor oferece navegação pela estrutura do catálogo para localizar a ca
 
 ![Componente do carrossel sem seleção](../assets/authoring/carousel_component_without_selection.png)
 
-A caixa de diálogo de configuração deste componente requer categorias 1 : n. O CIF usa a UID/ID como o identificador da categoria. Os autores podem inserir o UID manualmente ou clicar no ícone de pasta para abrir o seletor de categorias. Depois de selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome da categoria selecionada.
+A caixa de diálogo de configuração deste componente requer categorias 1 : n. O CIF usa a UID / ID como o identificador de categoria. Os autores podem inserir o UID manualmente ou clicar no ícone de pasta para abrir o seletor de categorias. Depois de selecionar e fechar o seletor, a caixa de diálogo de componentes mostra o nome da categoria selecionada.
 
 ![Componente Carrossel com seleção](../assets/authoring/carousel_component_with_selection.png)
 
@@ -71,9 +71,9 @@ Páginas de catálogo de produtos CIF são páginas virtuais que são renderizad
 
 ![RTE](../assets/authoring/RTE.png)
 
-    >[!NOTE]
-    >
-    > Se a categoria e o produto forem selecionados, o produto será usado.
+>[!NOTE]
+>
+> Se a categoria e o produto forem selecionados, o produto será retirado.
 
 Isso cria um link de espaço reservado que é substituído por um link real quando a página é renderizada.
 
@@ -103,4 +103,4 @@ O resultado é agrupado por tipo.
 
 >[!NOTE]
 >
-> A pesquisa de texto completo no Omnisearch não é compatível com Fragmentos de conteúdo associados. Use SKU ou UID para localizar fragmentos de conteúdo associados.
+> A pesquisa de texto completo no Omnisearch não é compatível com Fragmentos de conteúdo associados. Use o SKU ou o UID para localizar fragmentos de conteúdo associados.

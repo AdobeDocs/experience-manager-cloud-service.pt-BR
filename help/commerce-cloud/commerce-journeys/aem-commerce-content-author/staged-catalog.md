@@ -4,9 +4,9 @@ description: Saiba como gerenciar experiências de catálogo de produtos por eta
 exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: f172f514eaa8f1337359f00fad964f5781fba769
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 10%
 
 ---
@@ -25,9 +25,9 @@ Este artigo se baseia nesses fundamentos.
 
 Este documento ajuda você a entender como gerenciar a experiência do catálogo de produtos com base em dados de produtos preparados e inicializações de AEM. Muitas vezes, os autores precisam preparar em paralelo um lançamento de produto em breve (como uma nova coleção de roupas). Isso requer acesso a dados de produto preparados (ainda não ativados) e a capacidade de preparar o conteúdo. Esse novo conteúdo entrará no ar com o lançamento do produto.
 
-    >[!NOTE]
-    >
-    >Este recurso só está disponível com o Adobe Commerce ou Cloud Edition e conectores de terceiros que oferecem suporte à autenticação baseada em token. Consulte [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html) para obter informações adicionais.
+>[!NOTE]
+>
+>Esse recurso só está disponível com o Adobe Commerce ou Cloud Edition e conectores de terceiros que oferecem suporte à autenticação baseada em token. Consulte [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/storefront/getting-started.html?lang=pt-BR) para obter mais informações.
 
 Primeiro, vamos ver como os autores podem acessar dados de produtos preparados com CIF.
 
@@ -45,9 +45,9 @@ Agora você pode navegar pelo catálogo com os dados preparados. Se você abrir 
 
 ![plano de preparo](assets/staged-plp.png)
 
-    >[!NOTE]
-    >
-    >O Omnisearch não tem um contexto e, portanto, retornará apenas dados do catálogo de produtos em tempo real
+>[!NOTE]
+>
+>O Omnisearch não tem um contexto e, portanto, retornará apenas dados do catálogo de produtos em tempo real
 
 ## Inicializações do AEM {#launches}
 
