@@ -2,13 +2,13 @@
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Use funções para personalizar o Seletor de ativos no aplicativo.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1241'
 ht-degree: 24%
 
 ---
-
 
 # Personalizações do Seletor de ativos {#asset-selector-customization}
 
@@ -21,7 +21,7 @@ O Seletor de ativos permite personalizar vários componentes de acordo com prefe
 * [Personalizar ativos expirados](#customize-expired-assets)
 * [Filtro de invocação contextual](#contextual-invocation-filter)
 
-Você precisa definir os pré-requisitos no arquivo `index.html` ou em um arquivo semelhante na implementação do aplicativo para definir os detalhes de autenticação para acessar o repositório [!DNL Experience Manager Assets]. Depois de concluído, você pode adicionar trechos de código de acordo com sua exigência.
+Você precisa definir os pré-requisitos no arquivo **index.html** ou em um arquivo semelhante na implementação do aplicativo para definir os detalhes de autenticação para acessar o repositório [!DNL Experience Manager Assets]. Depois de concluído, você pode adicionar trechos de código de acordo com sua exigência.
 
 ## Personalizar painel de filtro {#customize-filter-panel}
 
@@ -186,12 +186,12 @@ A tabela a seguir descreve algumas das propriedades importantes do objeto de ati
 | *tiff:imageLength* | número | A altura de um ativo. |
 | *computedMetadata* | `Record<string, any>` | Um objeto que representa um compartimento para todos os metadados do ativo de todos os tipos (repositório, aplicativo ou metadados incorporados). |
 | *_links* | `Record<string, any>` | Links de hipermídia do ativo associado. Inclui links para recursos como metadados e representações. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition>* | `Array<Object>` | Matriz de objetos que contém informações sobre representações do ativo. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>* | string | O URI da representação. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>* | string | O tipo MIME da representação. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>&#39;* | número | O tamanho da representação em bytes. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>* | número | A largura da representação. |
-| *_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>* | número | A altura da representação. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition>`* | `Array<Object>` | Matriz de objetos que contém informações sobre representações do ativo. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].href>`* | string | O URI da representação. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].type>`* | string | O tipo MIME da representação. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].repo:size>`* | número | O tamanho da representação em bytes. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].width>`* | número | A largura da representação. |
+| *`_links.<https://ns.adobe.com/adobecloud/rel/rendition[].height>`* | número | A altura da representação. |
 
 ### Lidar com a seleção de ativos usando o esquema de objeto {#handling-selection}
 

@@ -2,7 +2,8 @@
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Integrar o seletor de ativos a vários aplicativos de Adobe, não Adobe e de terceiros.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 2%
@@ -18,11 +19,11 @@ O Seletor de ativos permite a integração usando vários aplicativos Adobe para
 
 Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos ao Dynamic Media com recursos OpenAPI:
 
-* [Métodos de comunicação](#overview-asset-selector.md#prereqs)
+* [Métodos de comunicação](/help/assets/overview-asset-selector.md#prereqs)
 * Para acessar o Dynamic Media com recursos OpenAPI, você deve ter licenças para:
    * Repositório do Assets (por exemplo, Experience Manager Assets as a Cloud Service).
    * AEM Dynamic Media.
-* Somente [ativos aprovados](#approved-assets.md) estão disponíveis para uso, garantindo a consistência da marca.
+* Somente [ativos aprovados](/help/assets/approve-assets.md) estão disponíveis para uso, garantindo a consistência da marca.
 
 ## Integração do Dynamic Media com recursos OpenAPI {#adobe-app-integration-polaris}
 
@@ -36,7 +37,7 @@ As propriedades `rootPath` e `path` não devem fazer parte do Dynamic Media com 
 aemTierType:[1: "delivery"]
 ```
 
-Essa configuração permite visualizar todos os ativos aprovados sem pastas ou como uma estrutura simples. Para obter mais informações, navegue até a propriedade `aemTierType` em [Propriedades do Seletor de ativos](#asset-selector-properties.md).
+Essa configuração permite visualizar todos os ativos aprovados sem pastas ou como uma estrutura simples. Para obter mais informações, navegue até a propriedade `aemTierType` em [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md).
 
 
 ### Criar um URL de entrega dinâmico a partir de ativos aprovados {#create-dynamic-media-url}

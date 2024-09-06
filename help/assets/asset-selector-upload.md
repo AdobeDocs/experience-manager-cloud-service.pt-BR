@@ -2,13 +2,13 @@
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin,User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 1%
 
 ---
-
 
 # Fazer upload de arquivos e pastas para o Seletor de ativo {#upload-files-folders}
 
@@ -28,13 +28,13 @@ Para adicionar ativos ao Seletor de ativos, execute as seguintes etapas:
 
    Também é possível visualizar as imagens selecionadas usando as miniaturas e clicar no ícone X para remover qualquer imagem específica da lista. O ícone X é exibido somente quando você passa o mouse sobre o nome ou o tamanho da imagem. Você também pode clicar em **[!UICONTROL Remover tudo]** para excluir todos os itens da lista de carregamento.
 
-1. Para concluir o processo de carregamento, clique em **[!UICONTROL Carregar]**. Os ativos carregados são exibidos. Consulte [carregamento básico](asset-selector-customization.md#basic-upload) para obter o código configurável.
+1. Para concluir o processo de carregamento, clique em **[!UICONTROL Carregar]**. Os ativos carregados são exibidos. Consulte [carregamento básico](/help/assets/asset-selector-customization.md#basic-upload) para obter o código configurável.
 
 ## Fazer upload de ativos com metadados {#upload-assets-with-metadata}
 
-Você pode adicionar metadados aos ativos enquanto faz o upload deles imediatamente em seu aplicativo. Os metadados incluem vários campos, como linha de assunto da empresa, detalhes do produto, campanha e assim por diante. Para fazer isso, a propriedade `metadataSchema` é usada. Vá para [propriedades do seletor de ativos](asset-selector-properties.md) para saber mais sobre a propriedade `metadataSchema`.
+Você pode adicionar metadados aos ativos enquanto faz o upload deles imediatamente em seu aplicativo. Os metadados incluem vários campos, como linha de assunto da empresa, detalhes do produto, campanha e assim por diante. Para fazer isso, a propriedade `metadataSchema` é usada. Vá para [propriedades do seletor de ativos](/help/assets/asset-selector-properties.md) para saber mais sobre a propriedade `metadataSchema`.
 
-Consulte [carregar com metadados](#upload-with-metadata) para obter o trecho de código necessário para a configuração.
+Consulte [carregar com metadados](/help/assets/asset-selector-customization.md#upload-with-metadata) para obter o trecho de código necessário para a configuração.
 
 ![carregar ativos com metadados](assets/upload-with-metadata.png)
 
@@ -51,7 +51,6 @@ Consulte [carregar com metadados](#upload-with-metadata) para obter o trecho de 
 
 ## Upload personalizado {#customize-upload}
 
-O Seletor de ativos permite adicionar um formulário de upload personalizado. Há várias personalizações disponíveis. Por exemplo, a propriedade [hideUploadButton](#asset-selector-properties.md) permite ocultar o botão de carregamento mostrado por padrão no aplicativo. Em vez disso, você pode personalizá-lo para renderizar fora do aplicativo MFE, de acordo com o requisito. Consulte [upload personalizado](#asset-selector-customization.md#customized-upload) para obter a configuração.
+O Seletor de ativos permite adicionar um formulário de upload personalizado. Há várias personalizações disponíveis. Por exemplo, a propriedade [hideUploadButton](/help/assets/asset-selector-properties.md) permite ocultar o botão de carregamento mostrado por padrão no aplicativo. Em vez disso, você pode personalizá-lo para renderizar fora do aplicativo MFE, de acordo com o requisito. Consulte [upload personalizado](/help/assets/asset-selector-customization.md#customized-upload) para obter a configuração.
 
 ![Upload personalizado](assets/customized-upload.png)
-

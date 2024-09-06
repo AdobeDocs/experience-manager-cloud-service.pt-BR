@@ -2,17 +2,17 @@
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Exemplos para usar o Seletor de ativos para personalizar de acordo com o requisito.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 7a393a96-f2a2-4a25-922c-577271cafc57
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 57%
+source-wordcount: '252'
+ht-degree: 50%
 
 ---
 
-
 # Exemplos de uso das propriedades do Seletor de ativos {#usage-examples}
 
-É possível definir as [propriedades](#asset-selector-properties.md) do Seletor de ativos no arquivo `index.html` para personalizar a exibição do Seletor de ativos no aplicativo.
+Você pode definir o Seletor de ativos [propriedades](/help/assets/asset-selector-properties.md) no arquivo **index.html** para personalizar a exibição do Seletor de ativos no seu aplicativo.
 
 ## Exemplo 1: Seletor de ativos na exibição do painel
 
@@ -55,4 +55,3 @@ Assets display panel shows the out of the box metadata that can be displayed in 
 >* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)
 >* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
 >* [Integrar APIs abertas de mídia dinâmica do Seletor de ativos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-

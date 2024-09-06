@@ -2,13 +2,13 @@
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Integrar o seletor de ativos a vários aplicativos de Adobe, não Adobe e de terceiros.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: a0c030e2-2213-406b-ad92-4761f1e2ee9f
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 8%
 
 ---
-
 
 # Integrar o seletor de ativos ao aplicativo Adobe {#integrate-asset-selector-with-adobe-app}
 
@@ -18,7 +18,7 @@ O Seletor de ativos permite a integração usando vários aplicativos Adobe para
 
 Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos a um aplicativo do [!DNL Adobe]:
 
-* [Métodos de comunicação](#overview-asset-selector.md#prereqs)
+* [Métodos de comunicação](/help/assets/overview-asset-selector.md#prereqs)
 * imsOrg
 * imsToken
 * apikey
@@ -27,7 +27,7 @@ Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos a um 
 
 O exemplo a seguir demonstra o uso do Seletor de Ativos ao executar um aplicativo [!DNL Adobe] no Unified Shell ou quando você já gerou `imsToken` para autenticação.
 
-Inclua o pacote do Seletor de ativos no código usando a marca `script`, como mostrado nas _linhas 6-15_ do exemplo abaixo. Depois que o script for carregado, a variável global `PureJSSelectors` estará disponível para uso. Defina o Seletor de ativos [propriedades](#asset-selector-properties.md) conforme mostrado em _linhas 16-23_. As propriedades `imsOrg` e `imsToken` são necessárias para autenticação no aplicativo Adobe. A propriedade `handleSelection` é usada para manipular os ativos selecionados. Para renderizar o Seletor de ativos, chame a função `renderAssetSelector` como mencionado na _linha 17_. O Seletor de ativos é exibido no elemento de container `<div>`, conforme mostrado nas _linhas 21 e 22_.
+Inclua o pacote do Seletor de ativos no código usando a marca `script`, como mostrado nas _linhas 6-15_ do exemplo abaixo. Depois que o script for carregado, a variável global `PureJSSelectors` estará disponível para uso. Defina o Seletor de ativos [propriedades](/help/assets/asset-selector-properties.md) conforme mostrado em _linhas 16-23_. As propriedades `imsOrg` e `imsToken` são necessárias para autenticação no aplicativo Adobe. A propriedade `handleSelection` é usada para manipular os ativos selecionados. Para renderizar o Seletor de ativos, chame a função `renderAssetSelector` como mencionado na _linha 17_. O Seletor de ativos é exibido no elemento de container `<div>`, conforme mostrado nas _linhas 21 e 22_.
 
 Seguindo essas etapas, você pode usar o Seletor de ativos com seu aplicativo [!DNL Adobe].
 
@@ -153,4 +153,3 @@ onErrorReceived: (type, msg) => {
 >* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
 >* [Integrar APIs abertas de mídia dinâmica do Seletor de ativos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 >* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)
-

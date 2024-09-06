@@ -2,13 +2,13 @@
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Integrar o seletor de ativos a vários aplicativos de Adobe, não Adobe e de terceiros.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 55848de0-aff2-42a0-b959-c771235d9425
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 1%
 
 ---
-
 
 # Integração com um aplicativo não-Adobe {#integrate-asset-selector-non-adobe-app}
 
@@ -18,7 +18,7 @@ O Seletor de ativos permite a integração usando vários aplicativos de terceir
 
 Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos a um aplicativo não-Adobe:
 
-* [Métodos de comunicação](#overview-asset-selector.md#prereqs)
+* [Métodos de comunicação](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
 * imsScope
 * redirectUrl

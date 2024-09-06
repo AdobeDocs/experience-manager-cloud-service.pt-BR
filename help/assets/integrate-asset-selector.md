@@ -2,17 +2,17 @@
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Integrar o seletor de ativos a vários aplicativos de Adobe, não Adobe e de terceiros.
 role: Admin, User
-source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
+source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 47%
 
 ---
 
-
 # Integrar o Seletor de ativos usando o Vanilla JS {#integration-using-vanilla-js}
 
-É possível integrar qualquer aplicativo [!DNL Adobe] ou não-Adobe ao repositório [!DNL Experience Manager Assets] e selecionar ativos no aplicativo. Consulte [Integração do Seletor de ativos com vários aplicativos](#integrate-asset-selector.md).
+É possível integrar qualquer aplicativo [!DNL Adobe] ou não-Adobe ao repositório [!DNL Experience Manager Assets] e selecionar ativos no aplicativo. Consulte [Integração do Seletor de ativos com vários aplicativos](#asset-selector-integration-with-apps).
 
 A integração é feita importando o pacote do Seletor de ativos e conectando ao Assets as a Cloud Service usando a biblioteca JavaScript Vanilla. Edite um `index.html` ou qualquer arquivo apropriado em seu aplicativo para:
 
@@ -39,4 +39,3 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 >* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)
 >* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
 >* [Integrar APIs abertas de mídia dinâmica do Seletor de ativos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
-
