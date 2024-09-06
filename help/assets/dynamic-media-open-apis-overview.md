@@ -2,7 +2,8 @@
 title: Dynamic Media com recursos OpenAPI
 description: Saiba mais sobre os principais conceitos, como por que usar o Dynamic Media com recursos OpenAPI e como ativá-lo.
 role: User
-source-git-commit: 8cd8eb834b548a52d6a9e094cb2c4447f228ab0d
+exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
+source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 0%
@@ -19,7 +20,7 @@ O Dynamic Media com recursos OpenAPI coloca o DAM no centro de um ecossistema á
 
 O Dynamic Media com recursos OpenAPI oferece os seguintes benefícios principais:
 
-* **Integrações perfeitas**: o Dynamic Media com recursos OpenAPI oferece um conjunto abrangente de APIs de pesquisa e entrega. Ele permite que seus desenvolvedores [integrem facilmente a entrega de ativos a seus aplicativos](/help/assets/integrate-dynamic-media-open-apis.md). Os aplicativos incluem o Adobe e aplicativos de terceiros. Ele fornece uma [interface de usuário do seletor de ativos de front-end de micro](/help/assets/asset-selector.md) para pesquisar e selecionar ativos aprovados. O seletor pode ser facilmente integrado a qualquer aplicativo com base em estruturas JavaScript, como React JS, Angular JS e Vanilla JS.
+* **Integrações perfeitas**: o Dynamic Media com recursos OpenAPI oferece um conjunto abrangente de APIs de pesquisa e entrega. Ele permite que seus desenvolvedores [integrem facilmente a entrega de ativos a seus aplicativos](/help/assets/integrate-dynamic-media-open-apis.md). Os aplicativos incluem o Adobe e aplicativos de terceiros. Ele fornece uma [interface de usuário do seletor de ativos de front-end de micro](/help/assets/overview-asset-selector.md) para pesquisar e selecionar ativos aprovados. O seletor pode ser facilmente integrado a qualquer aplicativo com base em estruturas JavaScript, como React JS, Angular JS e Vanilla JS.
 
 * **Gerenciamento centralizado de ativos digitais**: o DAM é a única fonte da verdade para todos os ativos digitais. Seus ativos digitais são gerenciados centralmente no AEM Assets e entregues a aplicativos de consumo por referência usando URLs de entrega, sem copiar binários de ativos.
 
@@ -103,11 +104,11 @@ Depois de enviar o tíquete de suporte, o Adobe habilita o Dynamic Media com rec
    </p>
 </td>
 <td>
-   <a href="/help/assets/asset-selector.md">
+   <a href="/help/assets/overview-asset-selector.md">
    <img alt="Seletor de ativos do Adobe" src="./assets/asset-selector-prereqs.png" />
    </a>
    <div>
-      <a href="/help/assets/asset-selector.md">
+      <a href="/help/assets/overview-asset-selector.md">
       <strong>Seletor de ativos de front-end do Adobe</strong>
       </a>
    </div>
@@ -204,4 +205,3 @@ Depois de enviar o tíquete de suporte, o Adobe habilita o Dynamic Media com rec
 </td>
 
 </table>
-

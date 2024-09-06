@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
 workflow-type: tm+mt
-source-wordcount: '5533'
+source-wordcount: '5578'
 ht-degree: 76%
 
 ---
@@ -456,7 +456,17 @@ ht-degree: 76%
    + [Visão geral dos microsserviços de ativos](/help/assets/asset-microservices-overview.md)
    + [Acessibilidade no  [!DNL Assets]](/help/assets/accessibility.md)
    + Gerenciar ativos digitais {#manage}
-      + [Seletor de ativos de micro front-end](/help/assets/asset-selector.md)
+      + Seletor de ativos de micro front-end {#asset-selector}
+         + [Visão geral do Seletor de ativos](/help/assets/overview-asset-selector.md)
+         + Integrações do Seletor de ativos {#asset-selector-integration}
+            + [Visão geral das integrações do Seletor de ativos](/help/assets/integrate-asset-selector.md)
+            + [Integrar o Seletor de ativos a um aplicativo Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Integrar o Seletor de ativos a um aplicativo não-Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Integrar o Seletor de ativos para Dynamic Media com recursos OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+         + [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
+         + [Exemplos do Seletor de ativos](/help/assets/asset-selector-examples.md)
+         + [Personalizações do Seletor de ativos](/help/assets/asset-selector-customization.md)
+         + [Upload do seletor de ativos](/help/assets/asset-selector-upload.md)
       + [Seletor de destino de micro front-end](/help/assets/destination-selector.md)
       + [Compartilhar ativos](/help/assets/share-assets.md)
       + [Reprocessamento de ativos](/help/assets/reprocessing.md)

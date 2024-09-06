@@ -1,0 +1,58 @@
+---
+title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+description: Exemplos para usar o Seletor de ativos para personalizar de acordo com o requisito.
+role: Admin, User
+source-git-commit: fb1350c91468f9c448e34b66dc938fa3b5a3e9a9
+workflow-type: tm+mt
+source-wordcount: '251'
+ht-degree: 57%
+
+---
+
+
+# Exemplos de uso das propriedades do Seletor de ativos {#usage-examples}
+
+É possível definir as [propriedades](#asset-selector-properties.md) do Seletor de ativos no arquivo `index.html` para personalizar a exibição do Seletor de ativos no aplicativo.
+
+## Exemplo 1: Seletor de ativos na exibição do painel
+
+![rail-view-example](assets/rail-view-example-vanilla.png)
+
+Se o valor do AssetSelector `rail` estiver definido como `false` ou não for mencionado nas propriedades, o Seletor de ativos é exibido na exibição Modal por padrão. A propriedade `acvConfig` permite algumas configurações detalhadas, como Arrastar e Soltar. Visite [habilitar ou desabilitar a ação de arrastar e soltar](asset-selector-customization.md#enable-disable-drag-and-drop) para entender o uso da propriedade `acvConfig`.
+
+<!--
+### Example 2: Use selectedAssets property in addition to the path property
+
+Use the `path` property to define the folder name that displays automatically when the Asset Selector is rendered. In addition, use the `selectedAssets` property to define the IDs for the assets that you need to select within the folder. Moreover, when you want to display assets that are pre-defined within the folder, you can use selectedAssets property.
+
+   ![selected-assets-example](assets/selected-assets-example-vanilla.png)
+-->
+
+## Exemplo 2: popover de metadados
+
+Use várias propriedades para definir os metadados de um ativo que deseja visualizar usando um ícone de informações. O popover de informações fornece a coleção de informações sobre o ativo ou a pasta, incluindo título, dimensões, data de modificação, local e descrição de um ativo. No exemplo abaixo, várias propriedades são usadas para exibir metadados de um ativo, por exemplo, a propriedade `repo:path` especifica o local de um ativo. <!--`repo` represents the repository from where the asset is showing, whereas, `path` represents the route from where the asset or folder is rendered.-->
+
+![metadata-popover-example](assets/metadata-popover.png)
+
+## Exemplo 3: propriedade de filtro personalizado na exibição do painel
+
+Além da pesquisa facetada, o Seletor de Assets permite personalizar vários atributos para refinar sua pesquisa do [!DNL Adobe Experience Manager] como um aplicativo do [!DNL Cloud Service]. Adicione o código a seguir para adicionar filtros de pesquisa personalizados em seu aplicativo. No exemplo abaixo, a pesquisa `Type Filter` que filtra o tipo de ativo entre Imagens, Documentos ou Vídeos ou o tipo de filtro adicionado para a pesquisa.
+
+![custom-filter-example-vanilla](assets/custom-filter-example-vanilla.png)
+
+<!--
+
+## Customization after integrating Asset Selector 
+
+### Custom metadata
+
+Assets display panel shows the out of the box metadata that can be displayed in the info of the asset. In addition to this, [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] application allows configuration of the asset selector by adding custom metadata that is shown in info panel of the asset.
+-->
+
+
+>[!MORELIKETHIS]
+>
+>* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)
+>* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
+>* [Integrar APIs abertas de mídia dinâmica do Seletor de ativos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+
