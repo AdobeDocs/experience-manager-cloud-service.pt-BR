@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 72868ab808ebbd99c5e81805e7669083c5c754fb
+source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 7%
+source-wordcount: '1950'
+ht-degree: 6%
 
 ---
 
@@ -17,17 +17,11 @@ ht-degree: 7%
 
 Descubra como a Auditoria de experiência valida seu processo de implantação, garantindo que as alterações atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO. Ele fornece uma interface de painel clara e informativa para rastrear essas métricas.
 
->[!NOTE]
->
->Este recurso só está disponível para [o programa de adoção antecipada](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
->
->Para obter detalhes sobre o recurso Auditoria de experiência existente para o AEM as a Cloud Service, consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md).
-
 ## Visão geral {#overview}
 
 A Auditoria de experiência valida o processo de implantação e ajuda a garantir que as alterações sejam implantadas:
 
-1. Atenda aos padrões básicos de desempenho, acessibilidade, práticas recomendadas, SEO (otimização do mecanismo de pesquisa) e PWA (Aplicativo Web Progressivo).
+1. Atenda aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO (Otimização do mecanismo de pesquisa).
 
 1. Não introduza regressões.
 
@@ -88,7 +82,7 @@ A Auditoria de experiência está disponível por padrão para pipelines de prod
 
 Os resultados da Auditoria de Experiência são apresentados na fase **Teste de preparo** do pipeline de produção através da [página de execução do pipeline de produção](/help/implementing/cloud-manager/deploy-code.md).
 
-![Painel no pipeline](assets/experience-audit-dashboard.jpg)
+![Painel no pipeline](assets/experience-audit-dashboard.png)
 
 A Auditoria de Experiência fornece as pontuações medianas do Google Lighthouse para as [páginas configuradas](#configuration) e a diferença na pontuação para a verificação anterior.
 
@@ -139,9 +133,17 @@ O relatório divide-se em duas áreas:
 
 #### Pontuações de página — tendência {#trend}
 
-Por padrão, a exibição selecionada para **Pontuações de página — tendência** é **pontuações medianas** para os **Últimos 6 meses**.
+Por padrão, a exibição selecionada para **pontuações de página — tendência** é **pontuações medianas** para o **Ano passado**.
 
-Use os menus suspensos **Selecionar** e **Exibir** na parte superior e inferior do botão do gráfico para selecionar detalhes específicos da página e diferentes intervalos de tempo, respectivamente. Clique em **atualizar tendência** na parte superior do gráfico para aplicar as seleções e atualizar o gráfico.
+Você pode optar por visualizar as tendências para categorias específicas do Lighthouse clicando no nome da categoria na legenda.
+
+![Tendência Selecionável](assets/experience-audit-trend-selectable.png)
+
+Use o menu suspenso **Selecionar** na parte superior do gráfico para selecionar detalhes específicos da página e os menus suspensos **Exibir** e **Acionar** na parte inferior para escolher diferentes intervalos de tempo e o tipo de acionador, respectivamente.
+
+O menu suspenso **Exibir** oferece a possibilidade de selecionar um intervalo de tempo predefinido ou um intervalo personalizado para um modo de exibição mais específico.
+
+![Exibição de tendências](assets/experience-audit-trend-view.png)
 
 Ao mover o mouse sobre o gráfico, uma dica de ferramenta exibe os valores das categorias do Google Lighthouse em pontos específicos do tempo.
 
@@ -164,13 +166,13 @@ A seção **Recommendations** mostra um conjunto agregado de insights. Por padr�
 
 ![Recommendations](assets/experience-audit-recommendations.png)
 
-Clique na divisa de qualquer recomendação para revelar detalhes sobre ela.
+Clique em qualquer recomendação para revelar detalhes sobre ela.
 
 ![Detalhes da recomendação](assets/experience-audit-recommendations-details.png)
 
-Quando disponíveis, os detalhes expandidos da recomendação também contêm a porcentagem do impacto das recomendações para ajudar a se concentrar nas alterações mais impactantes.
+Quando disponíveis, os detalhes expandidos da recomendação também contêm a porcentagem do impacto das recomendações para ajudar a se concentrar nas alterações mais impactantes. Além disso, as recomendações ampliadas podem incluir links relevantes da documentação do AEM e dicas que podem orientá-lo na implementação das correções sugeridas.
 
-Clique no link **exibir páginas** na exibição de detalhes para ver as páginas às quais a recomendação se aplica.
+Clique no link **ver páginas** na exibição de detalhes para ver as páginas às quais a recomendação se aplica.
 
 ![Páginas para obter detalhes da recomendação](assets/experience-audit-details-pages.png)
 
@@ -222,7 +224,7 @@ Se [as páginas que você configurou](#configuration) para serem auditadas não 
 
 O pipeline mostra uma seção de erro expansível para exibir os caminhos de URL relativos que não podia acessar.
 
-![Problemas encontrados pela Auditoria de Experiência](assets/experience-audit-issues.jpg)
+![Problemas encontrados pela Auditoria de Experiência](assets/experience-audit-issues.png)
 
 Se estiver exibindo o relatório completo, os detalhes serão mostrados na seção **[Resultados da verificação da Auditoria de experiência](#results)**, que também pode ser expandida.
 
