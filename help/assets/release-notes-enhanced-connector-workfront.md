@@ -4,9 +4,9 @@ description: Notas de versão para  [!DNL Workfront for Experience Manager enhan
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 346f36a476a11dc7fe022df8b7b8df7aff06a2ba
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1678'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 A seção a seguir descreve as Notas de Versão gerais do [!DNL Workfront for Experience Manager enhanced connector].
 
-A data de lançamento da versão mais recente 1.9.19 do [!DNL Workfront for Experience Manager enhanced connector] é 12 de abril de 2024.
+A data de lançamento da versão mais recente 1.9.20 do [!DNL Workfront for Experience Manager enhanced connector] é 6 de setembro de 2024.
 
 ## Destaques da versão {#release-highlights}
 
 A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] inclui a seguinte correção de erro:
 
-* A falha ao fechar clientes HTTP está causando problemas de memória insuficiente.
+* O tipo MIME é perdido durante o upload e a criação de uma nova versão de um ativo existente.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 >[!IMPORTANT]
 >
->A Adobe recomenda [atualizar para a versão 1.9.19 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
+>A Adobe recomenda [atualizar para a versão 1.9.20 mais recente](/help/assets/workfront-connector-install.md) do [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problemas conhecidos {#known-issues}
 
@@ -38,6 +38,11 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 * Quando você usa a experiência clássica do Workfront, a opção **[!UICONTROL Enviar para]**, disponível na lista suspensa **[!UICONTROL Mais]**, não permite selecionar o destino dentro do Experience Manager. A opção **[!UICONTROL Enviar para]** funciona corretamente usando a lista suspensa **[!UICONTROL Ações de Documento]**. A opção **[!UICONTROL Enviar para]** funciona corretamente nas listas suspensas **[!UICONTROL Mais]** e **[!UICONTROL Ações de Documentos]**, disponíveis na nova experiência do Workfront.
 
 ## Versões anteriores {#previous-releases}
+
+### Versão de abril de 2024 {#april-2024-release}
+
+* A falha ao fechar clientes HTTP está causando problemas de memória insuficiente.
+
 
 ### Versão de março de 2024 {#march-2024-release}
 
@@ -68,7 +73,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 * Sem processamento de tempo de solicitação para fluxos críticos em pastas vinculadas, atualizações de documentos e atualizações de notas.
 
-### Versão de novembro de 2023 {#november-2023-release}
+### Versão de novembro de 2023 {#nov-2023-release}
 
 * Ao visualizar a lista de pastas AEM, a caixa de diálogo demora mais de um minuto para carregar.
 * [!DNL Workfront] usuários autorizados estão recebendo consistentemente logs de erro de falha de autenticação.
