@@ -3,10 +3,11 @@ title: Notas de versão do Cloud Manager 2024.9.0 no Adobe Experience Manager as
 description: Saiba mais sobre as notas de versão do Cloud Manager 2024.9.0 no AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 13%
+source-wordcount: '367'
+ht-degree: 11%
 
 ---
 
@@ -32,9 +33,17 @@ A data de lançamento do Cloud Manager versão 2024.9.0 no AEM as a Cloud Servic
 
   Com o Cloud Manager, agora é possível [usar o autoatendimento de certificados SSL de DV (Validação de Domínio) gerados e gerenciados pelo Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). Esse recurso oferece a solução mais rápida, fácil e econômica para criar um site seguro para sua organização ou empresa online. <!-- CMGR-52403 -->
 
+  >[!NOTE]
+  >
+  >Os clientes do [Content Hub](/help/assets/product-overview.md) estão planejados para receber este recurso em fases como parte de uma implantação gradual.
+
 * Suporte a **Edge Delivery Services no Cloud Manager:**
 
-  Se você tiver uma licença do Edge Delivery Services como parte do AEM Sites, [você pode agora integrar seu site com o Edge Delivery Services diretamente pelo Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Esse recurso permite uma experiência de ativação guiada e de autoatendimento. Ele também unifica fluxos de trabalho essenciais, como gerenciamento de nomes de domínio, certificados SSL e mapeamentos de CDN, em todas as propriedades AEM, garantindo consistência e eficiência. <!-- CMGR-49859 -->
+  Se você tiver uma licença de Edge Delivery Services como parte do AEM Sites, [agora é possível integrar seu site com Edge Delivery Services diretamente pelo Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Esse recurso permite uma experiência de ativação guiada e de autoatendimento. Ele também unifica fluxos de trabalho essenciais, como gerenciamento de nomes de domínio, certificados SSL e mapeamentos de CDN, em todas as propriedades AEM, garantindo consistência e eficiência. <!-- CMGR-49859 -->
+
+  >[!NOTE]
+  >
+  >Os clientes do [Content Hub](/help/assets/product-overview.md) estão planejados para receber este recurso em fases como parte de uma implantação gradual.
 
 * Os clientes que usam repositórios GitHub agora podem criar e usar pipelines de configuração no nível da Web. <!--( KEEP IN? SP: YES CMGR-59046 and Slack https://cq-dev.slack.com/archives/C07LFP5BZ2L/p1725407057847379 ) -->
 
