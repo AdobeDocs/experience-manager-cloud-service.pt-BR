@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fcde1f323392362d826f9b4a775e468de9550716
+source-git-commit: a9bcbae1317d95e3710a19a79115f1437b418e41
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '745'
 ht-degree: 42%
 
 ---
@@ -27,12 +27,14 @@ A Cloud Manager oferece ferramentas de autoatendimento para instalar e gerenciar
 
 <!-- CQDOC-21758, #1 -->
 
-* **Caso de uso 1:** o Cloud Manager usa um serviço TLS (Transport Layer Security) para gerenciar certificados SSL de propriedade do cliente e chaves privadas de Autoridades de Certificação de terceiros, como *Vamos Criptografar*.
-* **Caso de uso 2:** o Cloud Manager permite que os usuários configurem um certificado DV (Validação de Domínio) que vem do Adobe para configuração rápida de domínio. Os certificados DV são o nível mais básico da certificação SSL e são frequentemente usados para fins de teste ou para proteger sites com criptografia básica. Os certificados DV estão disponíveis em [programas de produção e sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+| | Caso de uso | Descrição |
+| --- | --- | --- |
+| 1 | **DV (certificado gerenciado por Adobe)** | O Cloud Manager permite que os usuários configurem um certificado DV (Validação de domínio) proveniente do Adobe para configuração rápida do domínio. Os certificados DV são o nível mais básico da certificação SSL e são frequentemente usados para fins de teste ou para proteger sites com criptografia básica. Os certificados DV estão disponíveis em [programas de produção e sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md). |
+| 2 | **Certificado gerenciado pelo cliente (OV/EV)** | A Cloud Manager usa um serviço TLS (Transport Layer Security) para gerenciar certificados SSL de propriedade do cliente e chaves privadas de Autoridades de Certificação de terceiros, como *Vamos Criptografar*. |
 
-  >
-  >
-  >Os clientes não têm permissão para carregar certificados DV (Validação de domínio).
+>[!NOTE]
+>
+>Os clientes não têm permissão para carregar certificados DV (Validação de domínio).
 
 
 ## Introdução aos certificados {#certificates}

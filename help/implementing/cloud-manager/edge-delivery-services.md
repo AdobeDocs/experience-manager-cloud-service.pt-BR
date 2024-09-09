@@ -4,9 +4,9 @@ description: Saiba como entregar projetos do Cloud Manager usando o Edge Deliver
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: bc6ea60abed904ef514a4b010a9848511c28128e
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1503'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ Se você tiver sido contratado com licenças do AEM as a Cloud Service Sites Edg
 
 Depois de adicionar Edge Delivery Services a um programa de produção, sua licença de Edge Delivery Services é aplicada a ele.
 
-Uma nova guia clicável chamada **Edge Delivery** é exibida na página Visão geral. Clicar na guia exibe uma tabela que lista cada site do Edge Delivery adicionado. No painel de navegação esquerdo, no agrupamento **Serviços**, você observará uma opção de menu denominada **Edge Delivery Sites**.
+Uma guia clicável chamada **Edge Delivery** é exibida na página Visão geral. Clicar na guia exibe uma tabela que lista cada site do Edge Delivery adicionado. No painel de navegação esquerdo, no agrupamento **Serviços**, observe a opção de menu denominada **Edge Delivery Sites**.
 
 ![Página de visão geral mostrando o Edge Delivery Sites no painel de navegação esquerdo e a guia Edge Delivery à direita da guia Entrega do Publish](/help/implementing/cloud-manager/assets/cm-overview-eds.png)
 
@@ -127,7 +127,7 @@ A **Lista de tarefas do Edge Delivery** é uma lista de verificação de tarefas
 | 5 | Adicionar certificado SSL | Consulte [Adicionar certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configurar o CDN do site do Edge Delivery | Consulte [Adicionar uma configuração de CDN](#add-cdn). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on) (2 minutos, 13 segundos)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Adicionar uma configuração de CDN ao site do Edge Delivery {#add-cdn}
 
