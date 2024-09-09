@@ -9,7 +9,7 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
 workflow-type: tm+mt
 source-wordcount: '4118'
 ht-degree: 0%
@@ -411,3 +411,5 @@ Quer saber mais? Vá para [Smart Imaging](/help/assets/dynamic-media/imaging-faq
 A CDN (Content Delivery Network) armazena em cache os ativos do Dynamic Media para entrega rápida aos clientes. Quando são feitas atualizações nesses ativos, é importante que as alterações entrem em vigor imediatamente no site. Ao limpar ou invalidar o cache da CDN, os ativos entregues pelo Dynamic Media podem ser atualizados rapidamente. Essa abordagem elimina a necessidade de aguardar a expiração do cache com base no valor TTL (Time To Live), que normalmente é definido como dez horas. Dependendo do caso de uso específico, é possível atualizar as configurações de CDN TTL (Time to Live) de acordo.
 
 Quer saber mais? Ir para [Invalidar o cache CDN por meio do Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+
+{{see-also-dm}}
