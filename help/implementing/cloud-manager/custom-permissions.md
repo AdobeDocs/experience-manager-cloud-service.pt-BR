@@ -5,10 +5,10 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc92ed7acefbbd906b0986ea0b6b96fa6d8422de
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 41%
+ht-degree: 46%
 
 ---
 
@@ -36,9 +36,9 @@ As permissões personalizadas permitem que os usuários criem perfis de permiss�
 
 Para criar e usar suas próprias permissões personalizadas, são necessárias três etapas:
 
-1. [Criar um perfil de produto.](#create)
-1. [Atribua permissões personalizadas ao perfil do produto.](#assign-permissions)
-1. [Atribuir usuários ao perfil de produto.](#assign-users)
+1. [Criar um perfil de produto](#create).
+1. [Atribuir permissões personalizadas ao perfil de produto](#assign-permissions).
+1. [Atribuir usuários ao perfil de produto](#assign-users).
 
 Esta seção detalha essas etapas. Talvez seja útil ver as seções [Termos](#terms) e [Permissões configuráveis](#configurable-permissions) ao criar suas próprias permissões personalizadas.
 
@@ -104,7 +104,7 @@ O novo perfil de produto é salvo com as permissões personalizadas.
 
 Agora é possível atribuir usuários ao novo perfil de produto criado com permissões personalizadas.
 
-1. No Admin Console, selecione o nome do [novo perfil de produto ao qual você atribuiu permissões personalizadas.](#assign-permissions)
+1. No Admin Console, selecione o nome do [novo perfil de produto ao qual você atribuiu permissões personalizadas](#assign-permissions).
 
 1. Na janela aberta, selecione a guia **Usuários**.
 
@@ -164,17 +164,17 @@ Os termos a seguir são usados na criação e no gerenciamento de permissões pe
 
 | Termo | Descrição |
 |---|---|
-| Permissões predefinidas | Funções predefinidas como **Proprietário da empresa** e **Gerente de implantação** para controlar vários recursos do Cloud Manager. Para obter detalhes sobre funções predefinidas, consulte [Perfis de produto e de equipe do AEM as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md) |
+| Permissões predefinidas | Funções predefinidas como **Proprietário da empresa** e **Gerente de implantação** para controlar vários recursos do Cloud Manager. Para obter detalhes sobre funções predefinidas, consulte [Perfis de produto e de equipe do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md). |
 | Permissões personalizadas | Os recursos do Cloud Manager permitem que os usuários criem perfis de permissão para definir funções para controlar os recursos compatíveis do Cloud Manager |
-| Perfil do produto | Criado no Admin Console para gerenciar permissões configuráveis aplicáveis a usuários que fazem parte do perfil de permissão |
+| Perfil do produto | Criado no Admin Console para gerenciar permissões configuráveis que são aplicáveis a usuários que fazem parte do perfil de permissão |
 | Permissão configurável | Permissões do Cloud Manager que podem ser configuradas no perfil de permissão |
 | Item de permissão | Um programa, ambiente ou recurso de pipeline no qual uma permissão pode ser aplicada |
 
-Os itens de permissão se referem ao escopo no qual a permissão é aplicada. Normalmente, é uma das opções a seguir.
+Os itens de permissão se referem ao escopo no qual a permissão é aplicada. Normalmente, é um dos seguintes.
 
 | Tipo de item de permissão | Exemplo | Descrição |
 |---|---|---|
-| Organização | organização:empresaA | Todos os recursos aplicáveis de uma organização. Um recurso pode ser um programa, ambiente ou pipeline. Se o usuário adicionar uma organização para qualquer permissão, todos os novos recursos nessa organização também terão essa permissão. |
+| Organização | organização:empresaA | Todos os recursos aplicáveis de uma organização. Um recurso pode ser um programa, ambiente ou pipeline. Se o usuário adicionar uma organização para qualquer permissão, todos os novos recursos dessa organização também possuirão essa permissão. |
 | Programa | Programa A | Todos os recursos aplicáveis de um programa |
 | Ambiente | Programa A : ambiente | Aplicável em um ambiente específico |
 | Pipeline | Programa A : pipeline | Aplicável em um pipeline específico |
@@ -196,7 +196,7 @@ Lembre-se das limitações a seguir ao usar permissões personalizadas.
 * Gerenciador de implantação
 * Desenvolvedor
 
-Para obter detalhes sobre funções predefinidas, consulte [Perfis de produto e de equipe do AEM as a Cloud Service.](/help/onboarding/aem-cs-team-product-profiles.md)
+Para obter detalhes sobre funções predefinidas, consulte [Perfis de produto e de equipe do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md).
 
 ### O que acontece com os perfis de permissão predefinidos com a introdução dos perfis personalizados?
 
@@ -212,7 +212,7 @@ Não exclua perfis de permissão predefinidos do Admin Console.
 
 ### Posso adicionar usuários a vários perfis de permissão?
 
-Sim, um usuário pode fazer parte de vários perfis, incluindo perfis de permissão predefinidos e personalizados. Quando um usuário é atribuído a vários perfis, as permissões combinadas de todos os perfis de permissão atribuídos ficam disponíveis para esse usuário.
+Sim, um usuário pode fazer parte de vários perfis, incluindo perfis de permissão predefinidos e personalizados. Quando um usuário é atribuído a vários perfis, as permissões combinadas de todos os perfis de permissão atribuídos são disponibilizadas para esse usuário.
 
 ### O que acontece se um usuário possuir permissão para editar um ambiente ou pipeline, mas não possuir acesso ao programa que contenha o ambiente ou pipeline?
 

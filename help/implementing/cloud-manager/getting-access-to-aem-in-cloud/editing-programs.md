@@ -1,23 +1,23 @@
 ---
-title: Programas de edição
+title: Editar Programas
 description: Saiba como editar os programas de sandbox e produção para ajustar as opções depois de criá-las.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 30%
+source-wordcount: '429'
+ht-degree: 29%
 
 ---
 
 
-# Programas de edição {#editing-programs}
+# Editar programas {#editing-programs}
 
-Para gerenciar e editar programas, inicie no console [**Meus Programas**.](/help/implementing/cloud-manager/navigation.md) A página **Meus Programas** fornece uma visão geral de todos os programas aos quais você tem acesso. Ao selecionar um programa individual, a página **Visão geral do programa** fornece detalhes sobre o programa rapidamente.
+Para gerenciar e editar programas, inicie no console [**Meus Programas**](/help/implementing/cloud-manager/navigation.md). A página **Meus Programas** fornece uma visão geral de todos os programas aos quais você tem acesso. Ao selecionar um programa individual, a página **Visão geral do programa** fornece detalhes sobre o programa rapidamente.
 
-Na **Visão Geral do Programa**, os usuários com as permissões necessárias podem editar [programas de produção criados em sua organização](creating-production-programs.md) e [programas de sandbox criados em sua organização.](creating-sandbox-programs.md) Ao editar um programa, você pode:
+Na **Visão Geral do Programa**, os usuários com as permissões necessárias podem editar [programas de produção criados em sua organização](creating-production-programs.md) e [programas de sandbox criados em sua organização](creating-sandbox-programs.md). Ao editar um programa, você pode:
 
 * Adicionar a solução Sites a um programa existente com o Assets e vice-versa.
 * Remover sites ou ativos de um programa existente usando o Sites e o Assets.
@@ -26,9 +26,13 @@ Na **Visão Geral do Programa**, os usuários com as permissões necessárias po
 
 ## Permissões {#permissions}
 
-Você deve ser um membro da função **Proprietário da empresa** para editar ou excluir programas de sandbox, e também para acessar o Painel de Licenças.
+Você deve ser um membro da função **Proprietário da empresa** para editar ou excluir programas de sandbox e acessar o Painel de Licenças.
 
-## Edição de um programa {#editing}
+## Editar um programa {#editing}
+
+Sempre que um programa for editado, incluindo a adição ou remoção de uma solução ou complemento, essas alterações entrarão em vigor após a próxima implantação.
+
+**Para editar um programa:**
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
@@ -43,18 +47,12 @@ Você deve ser um membro da função **Proprietário da empresa** para editar ou
    ![Guia Geral](assets/edit-program-prod1.png)
 
 1. As opções disponíveis para editar o programa são as mesmas que estão na criação do programa.
-   * Consulte os documentos [Criação de programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) e [Criação de programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obter detalhes sobre as opções individuais.
+   * Consulte [Criar Programas de Produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) e [Criar Programas de Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) para obter detalhes sobre as opções individuais.
    * [Opções adicionais](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md#options) podem estar disponíveis para o programa de produção, dependendo dos direitos da sua organização.
 
 1. Clique em **Atualizar** para salvar as alterações no programa.
 
-As alterações no programa são salvas.
-
->[!NOTE]
->
->Sempre que um programa for editado, incluindo a adição ou remoção de uma solução ou complemento, essas alterações entrarão em vigor após a próxima implantação.
-
-## Exclusão de programas de sandbox {#delete-sandbox-program}
+## Excluir um programa de sandbox {#delete-sandbox-program}
 
 A exclusão de um programa de sandbox remove todos os ambientes e pipelines associados a ele.
 
@@ -62,7 +60,7 @@ A exclusão de um programa de sandbox remove todos os ambientes e pipelines asso
 >
 >Usuários com as funções **Proprietário da empresa** ou **Gerente de implantação** podem, como alternativa, excluir os ambientes de produção e preparo em vez de todo o programa de sandbox.
 
-Para excluir um programa de sandbox, faça o seguinte.
+**Para excluir um programa de sandbox:**
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 

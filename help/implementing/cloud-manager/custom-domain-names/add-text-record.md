@@ -5,7 +5,7 @@ exl-id: d441de29-af41-4d3e-9155-531af9702841
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 28%
@@ -29,13 +29,13 @@ Você deve atender aos requisitos a seguir para adicionar um registro TXT.
 
 * Você deve identificar o host ou o registrador do seu domínio, se não tiver essa informação.
 * Você deve ser capaz de editar os registros DNS do domínio de sua organização ou entrar em contato com a pessoa apropriada que pode fazer isso.
-* Primeiro, adicione um nome de domínio personalizado conforme descrito no documento [Adicionando um Nome de Domínio Personalizado.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+* Primeiro, adicione um nome de domínio personalizado conforme descrito no documento [Adicionando um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 ## Adicionar um registro TXT para verificação {#verification}
 
 Um registro TXT é adicionado como parte da verificação de um nome de domínio personalizado a ser usado com o Cloud Manager.
 
-1. Primeiro, adicione um nome de domínio personalizado conforme descrito no documento [Adicionando um Nome de Domínio Personalizado.](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+1. Primeiro, adicione um nome de domínio personalizado conforme descrito no documento [Adicionando um Nome de Domínio Personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 
 1. Na guia **Verificação** da caixa de diálogo **Adicionar nome de domínio**, o Cloud Manager exibe o nome e o valor TXT a serem usados para verificação. Copie este valor.
 
@@ -45,7 +45,7 @@ Um registro TXT é adicionado como parte da verificação de um nome de domínio
 
 1. Adicione `_aemverification.[yourdomainname]` como o **Nome** do valor e adicione o valor TXT exatamente como ele aparece na caixa de diálogo **Adicionar Nome de Domínio**.
 
-   * Veja os [exemplos na seção a seguir.](#examples)
+   * Veja os [exemplos na seção a seguir](#examples).
 
 1. Salve o registro TXT no host do domínio.
 

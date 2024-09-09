@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2950c62c55942614e23d08b3bb96864d4112e8c
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '1500'
-ht-degree: 80%
+source-wordcount: '1499'
+ht-degree: 75%
 
 ---
 
@@ -37,8 +37,8 @@ O console Meus programas fornece uma visão geral de todos os programas aos quai
 1. [Barras de ferramentas](#toolbars-my-programs-toolbars) para seleção de organização, alertas e configurações da conta
 1. Guias que permitem alternar a exibição atual dos seus programas.
    * Exibição da **Página Inicial** (padrão) que seleciona a exibição de **Meus programas** com uma visão geral de todos os programas
-   * **Licença** que acessa o [Painel de Licenças.](/help/implementing/cloud-manager/license-dashboard.md)
-   * Observe que as guias ficam fechadas por padrão e podem ser reveladas por meio do menu de opções no [cabeçalho do Cloud Manager.](#cloud-manager-header)
+   * **Licença** que acessa o [Painel de Licenças](/help/implementing/cloud-manager/license-dashboard.md).
+   * Observe que o padrão das guias é fechado e pode ser revelado usando o menu de hambúrguer no [cabeçalho do Cloud Manager](#cloud-manager-header).
 1. [As estatísticas e a frase de chamariz](#statistics) que fornecem uma visão geral das atividades recentes
 1. Seção [**Meus programas**](#my-programs-section) que fornece uma visão geral de todos os seus programas
 1. [Links rápidos](#quick-links-section) para acessar facilmente os recursos relacionados
@@ -63,7 +63,7 @@ A primeira é o cabeçalho do Cloud Manager, que permanece fixo ao navegar pelo 
 1. O seletor de organização exibe a organização que você está utilizando no momento (neste exemplo, Foundation Internal). Toque ou clique para alternar para outra organização se a Adobe ID estiver associada a mais do que uma.
 1. Tocar ou clicar no alternador de soluções permite acessar rapidamente as outras soluções da Experience Cloud.
 1. O ícone de ajuda fornece acesso rápido aos recursos de aprendizagem e suporte.
-1. O ícone de notificações exibe o número de [notificações incompletas atribuídas atualmente.](/help/implementing/cloud-manager/notifications.md)
+1. O ícone de notificações está marcado com o número de [notificações](/help/implementing/cloud-manager/notifications.md) incompletas atribuídas atualmente.
 1. Clique no ícone que representa seu usuário para acessar as configurações de usuário. Se você não tiver uma imagem de usuário configurada, um ícone será atribuído aleatoriamente.
 
 #### Barra de ferramentas do programa {#program-toolbar}
@@ -183,7 +183,7 @@ A visão geral do programa fornece acesso a todos os detalhes de um programa do 
 
 ### Barras de ferramentas {#program-overview-toolbar}
 
-As barras de ferramentas da visão geral do programa são muito semelhantes às do [console Meus programas.](#my-programs-toolbars) Somente as diferenças são ilustradas aqui.
+As barras de ferramentas para a visão geral do programa são semelhantes às do [console Meus Programas](#my-programs-toolbars). Somente as diferenças são ilustradas aqui.
 
 #### Cabeçalho do Cloud Manager {#cloud-manager-header-2}
 
@@ -225,7 +225,7 @@ Use o menu de opções no [cabeçalho do Cloud Manager](#cloud-manager-header-2)
 
 ### Frase de chamariz {#cta}
 
-A seção da frase de chamariz fornece informações úteis de acordo com o status do programa. No caso de um novo programa, é possível ver as próximas etapas, bem como um lembrete de uma data de ativação, [definida durante a criação do programa.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
+A seção da frase de chamariz fornece informações úteis de acordo com o status do programa. Para um novo programa, você pode ver as próximas etapas oferecidas, bem como um lembrete de uma data de ativação, [definida durante a criação do programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md).
 
 ![Frase de chamariz para um novo programa](/help/implementing/cloud-manager/assets/info-banner-new-program.png)
 
@@ -251,7 +251,7 @@ Consulte o documento [Gerenciamento de pipelines](/help/implementing/cloud-manag
 
 ### Cartão de desempenho {#performance}
 
-O cartão **Desempenho** fornece uma visão geral do **[Painel CDN.](/help/implementing/cloud-manager/cdn-performance.md)**
+O cartão **Desempenho** fornece uma visão geral do **[Painel CDN](/help/implementing/cloud-manager/cdn-performance.md)**.
 
 ![Cartão de desempenho](/help/implementing/cloud-manager/assets/cdn-performance-dashboard.png)
 

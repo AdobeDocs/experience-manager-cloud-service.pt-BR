@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 9%
@@ -97,7 +97,7 @@ Os testes são compactados em uma imagem Docker - projetada para ser o mais vol�
 >
 >Os testes de interface do usuário personalizados são executados nos pipelines de produção e não produção (aceitação) usados pelas implantações de alterações do aplicativo AEM e atualizações de push de produto AEM e, portanto, são uma contribuição essencial para ajudar a garantir o funcionamento adequado do aplicativo e aumentar a segurança da versão. Os testes de interface do usuário do cliente também são executados em pipelines internos de validação de pré-lançamento para cada cliente, o que ajuda a fornecer feedback antecipado.
 >
->Os contêineres que não são Selenium devem executar testes usando um proxy HTTP com base nas variáveis de ambiente na [Seção de Testes de Interface do Usuário.](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing)
+>Os contêineres que não são Selenium devem executar testes usando um proxy HTTP com base nas variáveis de ambiente na [Seção de Testes de Interface](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing).
 
 Para manter as execuções de pipeline eficientes, recomendamos nos concentrar nos principais recursos e fluxos de interação do usuário. Recomenda-se que os conjuntos de testes de interface do usuário completa que não se encaixam nessa porta de qualidade sejam executados como parte dos pipelines gerais de validação do cliente durante o fluxo de desenvolvimento do cliente.
 
@@ -111,7 +111,7 @@ O portal de qualidade da auditoria de experiência está executando [auditorias 
 
 Essa porta de qualidade é fornecida pelo AEM pronto para uso, mas não bloqueia os pipelines de implantação. Por padrão, uma auditoria na página raiz (`/`) da instância de publicação é executada. Você pode contribuir configurando até 25 caminhos personalizados que são considerados para auditorias.
 
-Consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais informações.
+Consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obter mais informações.
 
 ### Validações de clientes
 

@@ -1,13 +1,13 @@
 ---
 title: Lista de verificação de ativação
-description: Saiba mais sobre todos os elementos que precisam estar em vigor para ter uma ativação bem-sucedida com o AEM as a Cloud Service
+description: Saiba mais sobre todos os elementos que precisam estar em vigor para ter uma ativação bem-sucedida com o AEM as a Cloud Service.
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 4%
+source-wordcount: '568'
+ht-degree: 1%
 
 ---
 
@@ -24,12 +24,11 @@ Revise esta lista de atividades para garantir que você execute uma ativação t
 * Programar um período de congelamento do código e do conteúdo.
    * Consulte também a seção [Linhas do tempo de congelamento de código e conteúdo da migração](#code-content-freeze)
 * Faça a complementação do conteúdo final.
-* Validar configurações do dispatcher.
-   * Usar um validador de dispatcher local que facilite a configuração, validação e simulação do dispatcher localmente
-      * [Configurar as ferramentas do dispatcher local.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html#prerequisites)
+* Validar configurações do Dispatcher.
+   * Usar um validador local do Dispatcher que facilite a configuração, validação e simulação do Dispatcher localmente
+      * [Configurar as ferramentas locais do Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools#prerequisites).
    * Analise cuidadosamente a configuração do host virtual.
-      * A solução mais fácil (e padrão) é incluir `ServerAlias *` em seu arquivo de host virtual no `/dispatcher/src/conf.d/available_vhostsfolder`.
-         * Isso permitirá que os aliases de host usados pelos testes funcionais do produto, invalidação do cache do dispatcher e clones funcionem.
+      * A solução mais fácil (e padrão) é incluir `ServerAlias *` em seu arquivo de host virtual no `/dispatcher/src/conf.d/available_vhostsfolder`. Isso permite que os aliases de host usados pelos testes funcionais do produto, a invalidação do cache do Dispatcher e os clones funcionem.
       * No entanto, se `ServerAlias *` não for aceitável, pelo menos as `ServerAlias` entradas a seguir deverão ser permitidas além de seus domínios personalizados:
          * `localhost`
          * `*.local`
@@ -42,22 +41,22 @@ Revise esta lista de atividades para garantir que você execute uma ativação t
    * Se você não estiver usando um CDN adicional, gerencie o SSL e o DNS de acordo com a seguinte documentação:
       * Gerenciar certificados SSL
          * [Introdução ao gerenciamento de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         * [Gerenciar o certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+         * [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Gerenciar nomes de domínio personalizados (DNS)
-         * Para garantir que a transferência de DNS não cause problemas inesperados, é melhor criar um subdomínio de teste para conectar sua instância de produção ao antes de entrar em funcionamento e realizar uma rodada de testes UAT. Portanto, se o domínio for example.com, você poderá criar um subdomínio test.example.com e aplicá-lo à produção. Durante os testes UAT do domínio, você deverá procurar itens como redirecionamento adequado de link, armazenamento em cache e configurações do dispatcher.
+         * Certifique-se de que a transferência de DNS não cause problemas inesperados. Crie um subdomínio de teste para conectar sua instância de produção ao antes de entrar em funcionamento e fazer uma rodada de testes UAT. Portanto, se o domínio for example.com, você poderá criar um subdomínio test.example.com e aplicá-lo à produção. Durante os testes UAT do domínio, procure itens como redirecionamento adequado de link, armazenamento em cache e configurações do Dispatcher.
          * [Introdução a nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         * [Gerenciar nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+         * [Gerenciar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
    * Lembre-se de validar o TTL definido para seu registro DNS.
       * O TTL é o tempo que um registro DNS permanece em um cache antes de solicitar uma atualização ao servidor.
-      * Se você tiver um TTL muito alto, as atualizações do seu registro DNS levarão mais tempo para se propagar.
+      * Se você tiver um TTL muito alto, as atualizações do registro DNS levarão mais tempo para se propagar.
 * Execute testes de desempenho e segurança que atendam aos requisitos e objetivos de sua empresa.
-   * Realizar testes no ambiente de preparo.  Ele tem o mesmo tamanho da produção.
+   * Realizar testes em um ambiente de preparo.  Ele tem o mesmo tamanho da produção.
    * Ambientes de desenvolvimento não têm o mesmo tamanho que preparo e produção.
 * Transfira e verifique se a ativação real é realizada sem nenhuma nova implantação ou atualização de conteúdo.
-* Criar perfis de notificação de usuário Admin Console. Consulte [Perfis de notificação](/help/journey-onboarding/notification-profiles.md)
+* Criar Perfis De Notificação De Usuário Do Admin Console. Consulte [Perfis de notificação](/help/journey-onboarding/notification-profiles.md)
 * Considere a configuração das Regras de filtro de tráfego para controlar qual tráfego não deve ser permitido em seu site.
-   * As regras de filtro de tráfego de limite de taxa podem ser uma ferramenta eficaz contra ataques de DDoS. Uma categoria especial de regras de filtro de tráfego, chamada de regras WAF, requer uma licença separada.
+   * Regras de filtro de tráfego de limite de taxa podem ser uma ferramenta eficaz contra ataques de DDoS. Uma categoria especial de Regras de filtro de tráfego, chamada de Regras do WAF (Web Application Firewall), requer uma licença separada.
    * Consulte a documentação para algumas [regras de início sugeridas](/help/security/traffic-filter-rules-including-waf.md#recommended-starter-rules).
 
 Você sempre pode consultar a lista caso precise recalibrar suas tarefas durante a ativação.

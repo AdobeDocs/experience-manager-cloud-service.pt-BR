@@ -5,7 +5,7 @@ exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1399'
 ht-degree: 96%
@@ -20,7 +20,7 @@ Saiba como os projetos do AEM são compilados no Maven e os padrões que você d
 
 Para criar e implantar com sucesso com o Cloud Manager, os projetos do AEM precisam seguir as seguintes diretrizes:
 
-* Os projetos devem ser compilados usando [Apache Maven.](https://maven.apache.org)
+* Os projetos devem ser compilados usando o [Apache Maven](https://maven.apache.org).
 * Deve haver um arquivo `pom.xml` na raiz do repositório Git. Esse arquivo `pom.xml` pode fazer referência a tantos submódulos (que, por sua vez, podem ter outros submódulos, e assim por diante) quanto forem necessários.
 * Você pode adicionar referências a repositórios de artefatos Maven adicionais em seus arquivos `pom.xml`.
    * O acesso a [repositórios de artefatos protegidos por senha](#password-protected-maven-repositories) é suportado quando configurado. No entanto, o acesso a repositórios de artefatos protegidos pela rede não é suportado.

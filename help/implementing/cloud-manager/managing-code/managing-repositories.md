@@ -4,10 +4,10 @@ description: Saiba como criar, exibir e excluir repositórios Git no Cloud Manag
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 100%
+source-wordcount: '621'
+ht-degree: 92%
 
 ---
 
@@ -71,17 +71,17 @@ O Cloud Manager oferece suporte a repositórios gerenciados pela Adobe (**Reposi
 
 ## Acessar informações do repositório {#repo-info}
 
-Ao visualizar os repositórios na janela **Repositórios**, você pode visualizar os detalhes sobre como acessar os repositórios gerenciados pela Adobe de forma programática tocando ou clicando no botão **Acessar informações do repositório** na barra de ferramentas.
+Ao visualizar os repositórios na janela **Repositórios**, você pode visualizar os detalhes sobre como acessar os repositórios gerenciados por Adobe de forma programática clicando no botão **Acessar informações do repositório** na barra de ferramentas.
 
 ![Informações do repositório](assets/repo-info.png)
 
-A janela **Informações do repositório** é aberta com os detalhes. Para obter mais informações sobre o acesso às informações do repositório, consulte o documento [Acessar informações do repositório.](accessing-repos.md)
+A janela **Informações do repositório** é aberta com os detalhes. Para obter mais informações sobre como acessar informações do repositório, consulte o documento [Acessando Informações do Repositório](accessing-repos.md).
 
 ## Verificar ramificações/Criar projeto {#check-branches}
 
 A ação **Verificar ramificações/Criar projeto** executa duas funções dependendo do estado do repositório.
 
-* Se o repositório for recém-criado, a ação criará um projeto de amostra com base no [arquétipo do projeto do AEM.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview)
+* Se o repositório for recém-criado, a ação criará um projeto de amostra com base no [arquétipo do projeto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Se o repositório já tiver criado o projeto de amostra, ele verifica o estado do repositório e de suas ramificações e informa se o projeto de amostra já existe.
 
 ![Verificar a ação de ramificações](assets/check-branches.png)

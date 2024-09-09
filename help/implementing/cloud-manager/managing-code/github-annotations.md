@@ -4,7 +4,7 @@ description: Aprenda como o GitHub verifica PRs anotados para seus repositórios
 exl-id: 15178de8-8a8a-4300-8510-88875ad0fc8c
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 100%
@@ -42,4 +42,4 @@ Os resultados da [qualidade do código](/help/implementing/cloud-manager/code-qu
 
 ![Exemplo de anotações](assets/github-check-annotations-code-quality-2.png)
 
-Também é possível visualizar os problemas no formato CSV. Isto pode ser recuperado ao [exibir os detalhes da execução do pipeline no Cloud Manager.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details)
+Também é possível visualizar os problemas no formato CSV. Ele pode ser recuperado dentre [os detalhes da execução do pipeline no Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details).

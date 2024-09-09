@@ -5,7 +5,7 @@ exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 60%
@@ -25,7 +25,7 @@ Um nome de domínio personalizado não pode veicular o tráfego direto até que 
 
 Você deve atender a esses requisitos antes de verificar o status de um registro DNS usando o Cloud Manager.
 
-* Você já deve ter definido as configurações de DNS para seu nome de domínio personalizado conforme descrito no documento [Definindo as Configurações de DNS.](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
+* Você já deve ter definido as configurações de DNS para seu nome de domínio personalizado conforme descrito no documento [Definindo as Configurações de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md).
 
 ## Como verificar o status do registro DNS {#how-to}
 
@@ -37,7 +37,7 @@ Você deve atender a esses requisitos antes de verificar o status de um registro
 
 1. Clique no ícone de **Status** do nome do domínio.
 
-O Cloud Manager faz uma pesquisa de DNS pelo seu nome de domínio e exibe o [status atual.](#statuses)
+O Cloud Manager faz uma pesquisa de DNS pelo seu nome de domínio e exibe [o status atual](#statuses).
 
 O Cloud Manager acionará automaticamente uma consulta de DNS depois de o nome de domínio personalizado ter sido verificado e implantado com sucesso pela primeira vez. Para tentativas subsequentes, é necessário selecionar ativamente o ícone **Resolver novamente** ao lado do status.
 

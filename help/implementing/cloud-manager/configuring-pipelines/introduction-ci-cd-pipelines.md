@@ -6,10 +6,10 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f4c6331491bb08e81964476ad58065c1ee022967
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '1482'
-ht-degree: 36%
+ht-degree: 35%
 
 ---
 
@@ -99,7 +99,7 @@ As restrições a seguir se aplicam.
 * O usuário deve estar conectado na função **Gerente de implantação** para configurar ou executar pipelines.
 * Somente pode haver um pipeline de pilha completa por ambiente.
 
-Além disso, esteja ciente de como o pipeline de pilha completa se comporta se optar por introduzir um [pipeline de configuração de nível da web.](#web-tier-config-pipelines)
+Além disso, saiba como o pipeline de pilha completa se comporta se você optar por introduzir um [pipeline de configuração no nível da Web](#web-tier-config-pipelines).
 
 * O pipeline de pilha completa para um ambiente ignora a configuração do Dispatcher se existir um pipeline de configuração no nível da Web correspondente.
 * Se não existir um pipeline de configuração no nível da Web correspondente para o ambiente, o usuário poderá configurar o pipeline de pilha completa para incluir ou ignorar a configuração do Dispatcher.

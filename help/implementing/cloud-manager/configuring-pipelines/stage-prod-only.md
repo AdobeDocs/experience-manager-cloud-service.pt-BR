@@ -1,10 +1,10 @@
 ---
 title: Pipelines somente de preparo e somente de produção
 description: Saiba como dividir implantações de preparo e produção usando pipelines dedicados.
-source-git-commit: 94e5ecb67212bcced45141cba3af8c830791473b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 92%
+source-wordcount: '942'
+ht-degree: 88%
 
 ---
 
@@ -15,7 +15,7 @@ Saiba como dividir implantações de preparo e produção usando pipelines dedic
 
 >[!NOTE]
 >
->Este recurso só está disponível por meio do [programa de adoção antecipada.](/help/implementing/cloud-manager/release-notes/current.md#early-adoption)
+>Este recurso só está disponível por meio do [programa de adoção antecipada](/help/implementing/cloud-manager/release-notes/current.md#early-adoption).
 
 ## Visão geral {#overview}
 
@@ -54,9 +54,9 @@ Observe também os seguintes problemas conhecidos antes de começar a testar ess
 
 ## Criação de pipeline {#pipeline-creation}
 
-Os pipelines somente de produção e somente de preparo são criados de maneira semelhante aos pipelines de [produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [pipelines de não produção acoplados padrão.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Consulte esses documentos para obter detalhes.
+Os pipelines somente de produção e somente de preparo são criados de maneira semelhante aos [pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e [pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) acoplados padrão. Consulte esses documentos para obter detalhes.
 
-1. Na janela **Pipelines**, toque ou clique em **Adicionar pipeline**.
+1. Na janela **Pipelines**, clique em **Adicionar pipeline**.
 
    * Selecione **Adicionar pipeline de não produção** para criar um pipeline somente de preparo.
    * Selecione **Adicionar pipeline somente de produção** para criar um pipeline somente de produção.
@@ -74,7 +74,7 @@ Os pipelines somente de produção e somente de preparo são criados de maneira 
 ### Pipelines somente de preparo {#stage-only}
 
 1. Depois de selecionar a opção **Adicionar pipeline de não produção**, a caixa de diálogo **Adicionar pipeline de não produção** é exibida.
-1. Para criar um pipeline somente de preparo, selecione o ambiente de preparo no campo **Ambientes de implantação elegíveis** para o seu pipeline. Preencha os campos restantes e toque ou clique em **Continuar**.
+1. Para criar um pipeline somente de preparo, selecione o ambiente de preparo no campo **Ambientes de implantação elegíveis** para o seu pipeline. Preencha os campos restantes e clique em **Continuar**.
 
    ![Criação de um pipeline somente de preparo](assets/stage-only.png)
 
@@ -82,12 +82,12 @@ Os pipelines somente de produção e somente de preparo são criados de maneira 
 
 ### Pipelines somente de produção {#prod-only}
 
-1. Depois de selecionar a opção **Adicionar pipeline somente de produção**, a caixa de diálogo **Adicionar pipeline somente de produção** é exibida.
-1. Forneça um **Nome do pipeline**. As opções e funcionalidades restantes da caixa de diálogo funcionam da mesma forma que as da caixa de diálogo de criação de pipeline acoplado padrão. Toque ou clique em **Salvar** para salvar o pipeline.
+1. Ao selecionar a opção **Adicionar pipeline somente de produção**, a caixa de diálogo **Adicionar pipeline somente de produção** é aberta.
+1. Forneça um **Nome do pipeline**. As opções e funcionalidades restantes da caixa de diálogo funcionam da mesma forma que as da caixa de diálogo de criação de pipeline acoplado padrão. Clique em **Salvar** para salvar o pipeline.
 
 ## Execução de pipelines somente de produção e somente de preparo {#running}
 
-Os pipelines somente de produção e somente de preparo são executados da mesma maneira que [todos os outros pipelines.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) Consulte essa documentação para obter detalhes.
+Os pipelines somente de produção e somente de preparo são executados da mesma maneira que [todos os outros pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines). Consulte a documentação para obter mais detalhes.
 
 Além disso, uma execução de pipeline somente de produção pode ser acionada diretamente dos detalhes de execução de um pipeline somente de preparo.
 
@@ -97,7 +97,7 @@ Um pipeline somente de preparo é executado quase da mesma maneira que os pipeli
 
 ![Execução de pipeline somente de preparo](assets/stage-only-pipeline-run.png)
 
-O botão **Promover build** só será exibido se você estiver na última execução de pipeline somente de preparo bem-sucedida. Depois de tocado ou clicado, ele solicitará que você confirme a execução do pipeline somente de produção ou crie um pipeline somente de produção, se ainda não existir um.
+O botão **Promover build** só será exibido se você estiver na última execução de pipeline somente de preparo bem-sucedida. Quando clicado, ele solicita que você confirme a execução do pipeline somente de produção ou crie um pipeline somente de produção, se um ainda não existir.
 
 ### Pipelines somente de produção {#prod-only-run}
 

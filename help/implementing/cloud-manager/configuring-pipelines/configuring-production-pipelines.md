@@ -6,7 +6,7 @@ exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 67%
@@ -102,11 +102,11 @@ Para concluir a configuração do pipeline de produção com código de pilha co
 
 1. Forneça caminhos a serem incluídos na Auditoria de experiência.
 
-   * Consulte o documento [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obter detalhes.
+   * Consulte o documento [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md#configuration) para obter detalhes.
 
 1. Clique em **Salvar** para salvar o pipeline.
 
-Os caminhos configurados para a Auditoria de experiência serão enviados ao serviço e avaliados conforme os testes de desempenho, acessibilidade, Otimização do Mecanismo de Pesquisa (SEO), práticas recomendadas e Aplicativo Web Progressivo (PWA) quando o pipeline for executado. Consulte [Noções básicas sobre os resultados da Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
+Os caminhos configurados para a Auditoria de experiência serão enviados ao serviço e avaliados conforme os testes de desempenho, acessibilidade, Otimização do Mecanismo de Pesquisa (SEO), práticas recomendadas e Aplicativo Web Progressivo (PWA) quando o pipeline for executado. Consulte [Noções básicas sobre os resultados da Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obter mais detalhes.
 
 O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa**.
 

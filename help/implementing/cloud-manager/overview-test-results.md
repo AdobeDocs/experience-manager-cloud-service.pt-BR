@@ -5,7 +5,7 @@ exl-id: 5f5c97b1-4180-4f49-af8b-257d4744766e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 91%
@@ -27,7 +27,7 @@ Há três categorias de testes compatíveis com o Cloud Manager para os pipeline
 
    * O teste funcional faz parte da fase de testes de um [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) e, opcionalmente, de um [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
 
-1. [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
+1. [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    * O teste de auditoria de experiência está habilitado em todos os pipelines de produção do Cloud Manager e não pode ser ignorado.
 

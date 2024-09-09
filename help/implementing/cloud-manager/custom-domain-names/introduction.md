@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1c9924b4477d53d86bb72eda8597a02304450195
+source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 58%
+source-wordcount: '714'
+ht-degree: 43%
 
 ---
 
@@ -36,33 +36,33 @@ Você pode comprar um nome de domínio de um registrador de nomes de domínio, d
 >
 >O Cloud Manager não é um registrador de nomes de domínio e não fornece serviços DNS.
 
-## Nomes de domínio personalizados e CDNs BYO {#byo-cdn}
+## Nomes de domínio personalizados e traga seus próprios CDNs {#byo-cdn}
 
-O AEM as a Cloud Service oferece um serviço de rede de entrega de conteúdo (CDN) integrado, mas também permite que você traga sua própria CDN (BYO) para usar com AEM. Os domínios personalizados podem ser instalados ou na CDN gerenciada pelo AEM ou em uma CDN gerenciada por você.
+O AEM as a Cloud Service oferece um serviço de rede de entrega de conteúdo (CDN) integrado, mas também permite que você use a CDN BYO (Bring Your Own, Traga sua própria) para usar com AEM. Os domínios personalizados podem ser instalados ou na CDN gerenciada pelo AEM ou em uma CDN gerenciada por você.
 
-* Os nomes de domínio personalizados (e certificados) que são instalados na CDN gerenciada pelo AEM são gerenciados através do Cloud Manager.
-* Os nomes de domínio personalizados (e certificados) que são instalados em sua própria CDN são gerenciados nessa CDN específica.
+* O Cloud Manager gerencia nomes de domínio personalizados e certificados instalados na CDN gerenciada pelo AEM.
+* Os nomes de domínio e certificados personalizados instalados em um CDN BYO são gerenciados diretamente nesse CDN.
 
-**Os domínios gerenciados na sua própria CDN não precisam ser instalados por meio do Cloud Manager.** Eles são disponibilizados para AEM por meio do X-Forwarded-Host e correspondem aos vhosts definidos no Dispatcher. Consulte a documentação da [CDN.](/help/implementing/dispatcher/cdn.md)
+**Os domínios gerenciados em sua própria CDN não exigem instalação por meio do Cloud Manager**. Eles são disponibilizados para AEM por meio do X-Forwarded-Host e correspondem aos vhosts definidos no Dispatcher. Consulte a [documentação da CDN](/help/implementing/dispatcher/cdn.md).
 
-Em um ambiente, é possível ter ambos os domínios instalados na CDN gerenciada pela AEM e instalados em sua própria CDN.
+Em um ambiente, você pode ter ambos os domínios instalados na CDN gerenciada pelo AEM e em uma CDN BYO.
 
 ## Fluxo de trabalho {#workflow}
 
-A adição de um nome de domínio personalizado exige interação entre o serviço DNS e o Cloud Manager. Por causa disso, há várias etapas necessárias para instalar, configurar e verificar nomes de domínio personalizados. A tabela a seguir fornece uma visão geral das etapas necessárias, incluindo links para os recursos de documentação para concluí-las.
+A adição de um nome de domínio personalizado exige interação entre o serviço DNS e o Cloud Manager. Devido a esse fluxo de trabalho, há várias etapas necessárias para instalar, configurar e verificar nomes de domínio personalizados. A tabela a seguir fornece uma visão geral das etapas necessárias, incluindo links para os recursos de documentação para concluí-las.
 
 | Etapa | Descrição | Documentação |
 |---|---|---|
 | 1 | Adicionar certificado SSL ao Cloud Manager | [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
-| 2 | Adicionar domínio personalizado ao Cloud Manager | [Adicionando um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
+| 2 | Adicionar domínio personalizado ao Cloud Manager | [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) |
 | 3 | Adicionar registro TXT para verificar o domínio | [Adicionar um registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
-| 4 | Revisar status de verificação do domínio | [Verificação de status do nome de domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
-| 5 | Definir as configurações de DNS adicionando registros CNAME ou Apex de DNS que apontem para o AEM as a Cloud Service | [Definição das configurações de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
-| 6 | Verificar o status do registro DNS | [Verificação de status do registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+| 4 | Revisar status de verificação do domínio | [Verificar status do nome de domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
+| 5 | Definir as configurações de DNS adicionando registros CNAME ou Apex de DNS que apontem para o AEM as a Cloud Service | [Definir configurações de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) |
+| 6 | Verificar o status do registro DNS | [Verificar status do registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 
 >[!TIP]
 >
->Geralmente, a configuração de nomes de domínio personalizados com o AEM as a Cloud Service é um processo simples. No entanto, ocasionalmente, podem ocorrer problemas de delegação de domínio, que podem levar de 1 a 2 dias úteis para serem resolvidos. Por esse motivo, é altamente recomendável instalar os domínios bem antes de sua data de ativação. Consulte o documento [Verificando o status do nome de domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais informações.
+>Geralmente, a configuração de nomes de domínio personalizados com o AEM as a Cloud Service é um processo simples. No entanto, ocasionalmente, podem ocorrer problemas de delegação de domínio, que podem levar de 1 a 2 dias úteis para serem resolvidos. Por esse motivo, é altamente recomendável instalar os domínios bem antes de sua data de ativação. Consulte o documento [Verificar o status do nome de domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais informações.
 
 ## Limitações {#limitations}
 
@@ -71,13 +71,13 @@ Há várias limitações no uso de nomes de domínio personalizados com o AEMaaC
 * Os nomes de domínio personalizados são suportados no Cloud Manager somente para serviços de publicação e visualização de programas do Sites.
    * Não há suporte para domínios personalizados para serviços de autor.
 * Cada ambiente do Cloud Manager pode hospedar até 500 domínios personalizados por ambiente.
-* Os nomes de domínio não podem ser adicionados aos ambientes enquanto houver um pipeline em execução conectado a esses ambientes.
+* Os nomes de domínio não podem ser adicionados aos ambientes enquanto houver um pipeline em execução anexado a eles.
 * O mesmo nome de domínio não pode ser usado em mais de um ambiente.
 * Somente um nome de domínio pode ser adicionado por vez.
 * O AEM as a Cloud Service não oferece suporte a domínios curinga, como o `*.example.com`.
 * Antes de adicionar um nome de domínio personalizado, um certificado SSL válido contendo o nome de domínio personalizado (certificados curingas são válidos) deve ser instalado para o seu programa.
 
-## Comece já! {#get-started}
+## Introdução {#get-started}
 
-* Comece a configurar um novo nome de domínio personalizado para o seu projeto [adicionando um certificado SSL.](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-* Gerencie seus nomes de domínio existentes revisando o documento [Gerenciando Nomes de Domínio Personalizados.](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+* Comece a configurar um novo nome de domínio personalizado para seu projeto [adicionando um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
+* Gerencie seus nomes de domínio existentes revisando o documento [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md).

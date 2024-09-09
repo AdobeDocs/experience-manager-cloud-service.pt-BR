@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 503c6712aeea33fc093dbaec780e50c1e72579cd
+source-git-commit: 2bf129d763fcad024eb3799cdf2a97bdbc2472c5
 workflow-type: tm+mt
-source-wordcount: '5578'
-ht-degree: 76%
+source-wordcount: '5586'
+ht-degree: 75%
 
 ---
 
@@ -105,6 +105,7 @@ ht-degree: 76%
    + Notas de versão do Cloud Manager {#cloud-manager}
       + [Notas de versão atuais](/help/implementing/cloud-manager/release-notes/current.md)
       + 2024 {#2024}
+         + [Notas da versão 2024.8.0](/help/implementing/cloud-manager/release-notes/2024/2024-8-0.md)
          + [Notas da versão 2024.7.0](/help/implementing/cloud-manager/release-notes/2024/2024-7-0.md)
          + [Notas da versão 2024.6.0](/help/implementing/cloud-manager/release-notes/2024/2024-6-0.md)
          + [Notas da versão 2024.5.0](/help/implementing/cloud-manager/release-notes/2024/2024-5-0.md)
@@ -1073,7 +1074,6 @@ ht-degree: 76%
          + [Criação de programas do sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Programas de edição](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Ambientes de hibernação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-         + [Suporte para Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery-services.md)
       + Criação de um projeto de aplicativo do AEM {#create-application-project}
          + [Assistente de criação de projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
@@ -1107,7 +1107,6 @@ ht-degree: 76%
             + [Visão geral dos testes funcionais](/help/implementing/cloud-manager/functional-testing.md)
             + [Teste funcional de Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Teste de interface](/help/implementing/cloud-manager/ui-testing.md)
-         + [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
          + [Painel de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md)
       + [Acesso e gerenciamento de registros](/help/implementing/cloud-manager/manage-logs.md)
       + [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md)
@@ -1116,11 +1115,9 @@ ht-degree: 76%
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
       + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
-      + Certificados SSL {#manage-ssl-certificates}
-         + [Introdução](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
-         + [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
-         + [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
-      + Nomes de domínio personalizados {#custom-domain-names}
+      + Sites do Edge Delivery {#edge-delivery-sites}
+         + [Suporte do Edge Delivery no Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md)
+      + Configurações de Domínio {#custom-domain-names}
          + [Introdução](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Adicionar um registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
@@ -1128,7 +1125,12 @@ ht-degree: 76%
          + [Definição das configurações de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Verificação de status do registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
-         + [Certificados validados por domínio (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/domain-validated-certificates.md)
+      + Certificados SSL {#manage-ssl-certificates}
+         + [Introdução](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
+         + [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      + Configurações da CDN {#cdn-configurations}
+         + [Adicionar uma configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
       + Listas de permissões de IP {#ip-allow-lists}
          + [Introdução](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Adicionar uma lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)

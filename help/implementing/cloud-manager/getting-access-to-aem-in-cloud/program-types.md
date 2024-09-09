@@ -5,10 +5,10 @@ exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 91%
+source-wordcount: '521'
+ht-degree: 79%
 
 ---
 
@@ -20,7 +20,7 @@ O Cloud Manager é construído com base em uma hierarquia de entidades. Os detal
 ![Hierarquia do Cloud Manager](assets/program-types1.png)
 
 * **LOCATÁRIO** - Esse é o topo da hierarquia. Cada cliente recebe um locatário.
-* **PROGRAMAS** - cada locatário tem um ou mais programas, [que geralmente refletem as soluções licenciadas do cliente.](introduction-production-programs.md)
+* **PROGRAMAS** - Cada locatário tem um ou mais programas, [que geralmente refletem as soluções licenciadas do cliente](introduction-production-programs.md).
 * **AMBIENTES** - cada programa tem vários ambientes, um de produção para conteúdo dinâmico, um para preparo e outro para fins de desenvolvimento.
    * Cada programa pode ter apenas um ambiente de produção, mas pode ter vários ambientes de não produção.
 * **REPOSITÓRIO** - Os programas têm repositórios Git, nos quais o código do aplicativo e do front-end são mantidos para os ambientes.
@@ -61,6 +61,6 @@ Um usuário pode criar um programa **produção** ou um programa **sandbox**.
 * Um **programa de produção** é criado para permitir o tráfego direto em seu site.
    * Consulte [Introdução aos programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais detalhes.
 * Um **programa de sandbox** é normalmente criado para fins de treinamento, execução de demonstrações, capacitação, POCs ou documentação.
-   * Um ambiente de sandbox não se destina a transportar tráfego direto e terá restrições que um programa de produção não terá.
-   * Ele inclui sites e ativos e é preenchido automaticamente com uma ramificação Git que inclui o código de amostra, um ambiente de desenvolvimento e um pipeline de não produção.
+   * Um ambiente de sandbox não se destina a transportar tráfego direto e tem restrições que um programa de produção não tem.
+   * Ele inclui Sites, Assets e Edge Delivery Services e é fornecido preenchido automaticamente com uma ramificação Git que inclui código de amostra, um ambiente de desenvolvimento e um pipeline de não produção.
    * Consulte [Introdução aos programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md) para obter mais detalhes.

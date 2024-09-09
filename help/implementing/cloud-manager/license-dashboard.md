@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ec95438d704568076af045d8933be2125885f482
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '923'
 ht-degree: 37%
 
 ---
@@ -21,7 +21,7 @@ O Cloud Manager fornece um painel para facilitar a visualização dos direitos d
 >
 >O painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no painel de licenças.
 >
->Para determinar o tipo de serviço que seu programa tem (AMS ou AEMaaCS), consulte o documento [Navegação na interface do usuário do Cloud Manager.](/help/implementing/cloud-manager/navigation.md#program-cards)
+>Para determinar o tipo de serviço que seu programa tem (AMS ou AEMaaCS), consulte o documento [Navegação na interface do usuário do Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Visão geral {#overview}
 
@@ -30,7 +30,7 @@ O Painel de licenças do Cloud Manager fornece acesso fácil às seguintes infor
 1. Os direitos da solução estão disponíveis para você em todos os seus programas, incluindo o que é usado e o que está disponível
 1. Métricas de consumo de Solicitação de conteúdo com tendência mensal para a solução Sites
 
-## Uso do Painel de dispositivos {#using-dashboard}
+## Usar o painel de licenças {#using-dashboard}
 
 Para acessar o painel de licenças, siga estas etapas.
 
@@ -39,7 +39,7 @@ Para acessar o painel de licenças, siga estas etapas.
 >Um usuário com a função **Proprietário da empresa** deve estar conectado para exibir o Painel de Licenças.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
-1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no botão de menu de hambúrguer no Cabeçalho do Cloud Manager [.](/help/implementing/cloud-manager/navigation.md#cloud-manager-header) Isso revela as guias.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique no botão de menu de hambúrguer no [Cabeçalho do Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Isso revela as guias.
 1. Toque ou clique na opção **Licença** na guia.
 
 ![Painel de licenças](assets/license-dashboard.png)
@@ -72,7 +72,7 @@ O botão **Exibir detalhes de uso** na área de licença do Cloud Manager fornec
 
 ### Detalhes de uso de sites {#sites-usage-details}
 
-A janela **Detalhes de uso do Sites** apresenta gráficos com uma visão geral do uso das licenças do Sites com base em [solicitações de conteúdo.](#what-is-a-content-request)
+A janela **Detalhes de uso do Sites** apresenta gráficos que fornecem uma visão geral do uso das licenças do Sites com base em [solicitações de conteúdo](#what-is-a-content-request).
 
 ![Janela de detalhes de uso do Sites](assets/sites-usage-details.png)
 
@@ -83,7 +83,7 @@ O lado direito da janela apresenta um gráfico de área que mostra o uso detalha
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}
 
-The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users.](#standard-users) Select the appropriate tab to toggle between the views.
+The **Assets usage details** window, presents graphs giving an overview of the usage of your Assets licenses based on [storage](#storage) and [standard users](#standard-users). Select the appropriate tab to toggle between the views.
 
 For both storage and standard users views, you can use the **Environment Type** dropdown to toggle the view between production, stage, and development environments.
 
@@ -113,7 +113,7 @@ Uma solicitação de conteúdo é contabilizada para cada exibição de página 
 
 As solicitações de conteúdo excluem solicitações ou atividades iniciadas pelo Adobe ou em nome dele com o único objetivo de fornecer produtos e serviços. O tráfego de agente de usuário identificado pela Adobe como bots, crawlers e spiders relacionados a mecanismos de pesquisa comuns e serviços de redes sociais também são excluídos.
 
-Consulte também [Entendendo as solicitações de conteúdo do Cloud Service](/help/implementing/cloud-manager/content-requests.md).
+Consulte também [Entender as solicitações de conteúdo do Cloud Service](/help/implementing/cloud-manager/content-requests.md).
 
 ### Como o Adobe Experience Manager mede as solicitações de conteúdo? {#how-are-content-requests-measured}
 

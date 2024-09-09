@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3a5451020b8f76f95bcd8bff7b6eabd06be00f31
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
 source-wordcount: '1197'
-ht-degree: 80%
+ht-degree: 81%
 
 ---
 
@@ -64,7 +64,7 @@ A fase de **Implantação em preparo** envolve estas etapas.
 * **Verificação do código**: essa etapa avalia a qualidade do código do seu aplicativo.
    * Consulte [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md) para obter detalhes sobre o processo de teste.
 * **Compilar imagens** - Esse processo é responsável por transformar os pacotes de conteúdo e dispatcher produzidos pela etapa de compilação em imagens do Docker e configurações Kubernetes.
-* **Implantar em preparo** - A imagem é implantada no ambiente de preparo, como forme de preparação para a [Fase de teste de preparo.](#stage-testing)
+* **Implantar em Preparo** - A imagem é implantada no ambiente de preparo, como preparação para a [Fase de teste de preparo](#stage-testing).
 
 ![Implantação em preparo](assets/stage-deployment.png)
 
@@ -86,7 +86,7 @@ O **Teste de preparo** envolve essas etapas.
    * As páginas configuradas são enviadas ao serviço e avaliadas.
    * Os resultados são informativos e mostram as pontuações e as alterações entre as pontuações atual e anterior.
    * Essa informação é valiosa para determinar se há uma regressão introduzida com a implantação atual.
-   * Consulte [Entender os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md) para obter mais detalhes.
+   * Consulte [Entender os resultados da auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obter mais detalhes.
 
 ![Teste de preparo](assets/stage-testing.png)
 
@@ -154,14 +154,14 @@ Nessas circunstâncias, quando uma reexecução for possível, a página de stat
 
 ### API de reexecução {#reexecute-API}
 
-Além de estar disponível na interface do usuário, você pode usar a [API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) para acionar reexecuções e identificar as execuções que foram acionadas como reexecuções.
+Além de estar disponível na interface, [a API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/Pipeline-Execution) pode ser usada para acionar reexecuções e identificar execuções que foram acionadas como reexecuções.
 
 #### Acionar uma reexecução {#reexecute-deployment-api}
 
 Para acionar uma reexecução, faça uma solicitação PUT para o Link HAL `https://ns.adobe.com/adobecloud/rel/pipeline/reExecute` no estado da etapa de implantação de produção.
 
 * Se esse link estiver presente, a execução poderá ser reiniciada dessa etapa.
-* Se estiver ausente, a execução não poderá ser reiniciada dessa etapa.
+* Se estiver ausente, a execução não poderá ser reiniciada a partir dessa etapa. 
 
 Esse link só está disponível para a etapa de implantação em produção.
 

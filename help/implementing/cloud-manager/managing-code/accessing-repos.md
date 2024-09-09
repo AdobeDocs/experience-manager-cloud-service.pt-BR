@@ -5,10 +5,10 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0b39fc4dcaf86d436547d3941b1f12bca8c5bc9b
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 93%
 
 ---
 
@@ -59,10 +59,10 @@ Usando essas credenciais, o usuário pode clonar uma cópia local do repositóri
 
 ## Acesso a informações do repositório na janela Repositórios {#repositories-window}
 
-Um botão **Acessar informações do repositório** também está disponível na barra de ferramentas da janela [**Repositórios**.O ](managing-repositories.md) exibe as mesmas informações sobre o acesso a repositórios gerenciados pela Adobe.
+Um botão **Acessar Informações do Repositório** também está disponível na barra de ferramentas da janela [**Repositórios**](managing-repositories.md). Ele exibe as mesmas informações sobre o acesso a repositórios gerenciados por Adobe.
 
 ## Revogação de uma senha de acesso {#revoke-password}
 
-Você pode revogar uma senha de acesso a qualquer momento. Para fazer isso, [crie um tíquete de suporte para esta solicitação.](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&amp;support-tab=home#support)
+Você pode revogar uma senha de acesso a qualquer momento. Para isso, [crie um tíquete de suporte para essa solicitação](https://experienceleague.adobe.com/pt-br?support-solution=Experience+Manager&amp;support-tab=home#support).
 
 O tíquete será tratado com alta prioridade e deverá ser revogado dentro de um dia.

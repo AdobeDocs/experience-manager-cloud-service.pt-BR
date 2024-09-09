@@ -4,7 +4,7 @@ description: Saiba como configurar o Cloud Manager para trabalhar com os seus re
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 77%
@@ -44,7 +44,7 @@ A configuração consiste em duas etapas principais:
 
 >[!TIP]
 >
->Para obter detalhes sobre como gerenciar repositórios no Cloud Manager, consulte [Repositórios Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+>Para obter detalhes sobre como gerenciar repositórios no Cloud Manager, consulte [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
 
 ### Validação de propriedade de repositório privado {#validate-ownership}
 
@@ -110,7 +110,7 @@ Quando a solicitação de “pull” é fechada ou mesclada, o pipeline de quali
 
 ## Associação de repositórios privados a pipelines {#pipelines}
 
-Repositórios privados validados podem ser associados a [pipelines de pilha completa e front-end.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+Repositórios privados validados podem ser associados a [pipelines de pilha completa e front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 >[!NOTE]
 >

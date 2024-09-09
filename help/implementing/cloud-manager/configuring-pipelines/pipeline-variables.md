@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
@@ -51,7 +51,7 @@ Se um pipeline estiver em execução, o gerenciamento de variáveis será bloque
 
 1. A janela **Configuração de variáveis** é aberta. Insira os detalhes da variável na primeira linha da tabela e toque ou clique em **Adicionar**.
 
-   * **O Nome da Configuração** é um identificador exclusivo para sua variável, que deve chefiar [convenções de nomenclatura de variáveis de pipeline.](#naming-conventions)
+   * **O Nome da Configuração** é um identificador exclusivo para sua variável, que deve chefiar [convenções de nomenclatura de variáveis de pipeline](#naming-conventions).
    * **Valor** é o valor que a variável contém.
    * **Etapa Aplicada** é a etapa no pipeline à qual a variável se aplica. É obrigatório.
       * **Compilação**

@@ -5,10 +5,10 @@ exl-id: e014b8ad-ac9f-446c-bee8-adf05a6b4d70
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '878'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -22,12 +22,12 @@ Após a criação de um novo repositório de código no Cloud Manager, uma pasta
 
 >[!NOTE]
 >
->Se o repositório foi criado antes do Cloud Manager criar automaticamente as pastas `it.tests`, você também poderá gerar a versão mais recente usando o [Arquétipo de projeto do AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Se o repositório foi criado antes de o Cloud Manager criar automaticamente as pastas `it.tests`, você também poderá gerar a versão mais recente usando o [Arquétipo de Projetos do AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
 Depois de obter o conteúdo da pasta `it.tests`, você poderá usá-la como base para os seus próprios testes e, em seguida:
 
-1. [Desenvolver os seus casos de teste.](#writing-functional-tests)
-1. [Executar os testes localmente.](#local-test-execution)
+1. [Desenvolver seus casos de teste](#writing-functional-tests).
+1. [Executar os testes localmente](#local-test-execution).
 1. Confirmar seu código no repositório do Cloud Manager e executar um pipeline do Cloud Manager.
 
 ## Gravação de testes funcionais personalizados {#writing-functional-tests}

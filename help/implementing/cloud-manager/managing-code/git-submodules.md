@@ -4,10 +4,10 @@ description: Aprenda como você pode usar submódulos Git para mesclar o conteú
 exl-id: fa5b0f49-4b87-4f39-ad50-7e62094d85f4
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '436'
-ht-degree: 93%
+ht-degree: 90%
 
 ---
 
@@ -66,7 +66,7 @@ Isso resultaria em um arquivo `.gitmodules` semelhante ao mostrado a seguir.
     branch = main
 ```
 
-Mais informações sobre os submódulos Git podem ser encontradas na seção [Manual de referência do Git.](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+Mais informações sobre os submódulos Git podem ser encontradas no [Manual de referência do Git](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 ### Limitações e recomendações {#limitations-recommendations}
 

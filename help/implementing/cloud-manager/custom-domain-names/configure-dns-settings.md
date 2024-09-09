@@ -5,7 +5,7 @@ exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 06e961febd7cb2ea1d8fca00cb3dee7f7ca893c9
+source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 49%
@@ -29,7 +29,7 @@ Você deve atender a esses requisitos antes de configurar seus registros DNS.
 
 * Você deve identificar o host ou o registrador do seu domínio, se não tiver essa informação.
 * Você deve ser capaz de editar os registros DNS do domínio de sua organização ou entrar em contato com a pessoa apropriada que pode fazer isso.
-* Você já deve ter verificado o nome de domínio personalizado configurado, conforme descrito no documento [Verificando o Status do Nome de Domínio.](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
+* Você já deve ter verificado o nome de domínio personalizado configurado, conforme descrito no documento [Verificando o Status do Nome de Domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
 
 ## Registro CNAME {#cname-record}
 

@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: cfaa3be31195929b80310610120a779a20537c61
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1402'
 ht-degree: 74%
 
 ---
@@ -103,7 +103,7 @@ Para concluir a configuração do pipeline de não produção do código de pilh
       * **Teste funcional do produto**: executa [testes funcionais de produto](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) no ambiente de desenvolvimento.
       * **Teste funcional personalizado**: executa [testes funcionais personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) no ambiente de desenvolvimento.
       * **Teste de interface personalizada**: executa [testes de interface personalizada](/help/implementing/cloud-manager/ui-testing.md) para aplicativos personalizados.
-      * **Auditoria de Experiência** - Executar [Auditoria de Experiência](/help/implementing/cloud-manager/experience-audit-testing.md)
+      * **Auditoria de Experiência** - Executar [Auditoria de Experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md)
 
    ![Pipeline de pilha completa](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 
@@ -152,13 +152,13 @@ As etapas para concluir a criação do pipeline de implantação de destino e n�
    * **Ramificação Git**: essa opção define de qual ramificação o pipeline selecionado deve recuperar o código.
       * Insira os primeiros caracteres do nome da ramificação e utilize o preenchimento automático deste campo. O recurso encontra as ramificações correspondentes que você pode selecionar.
    * **Localização do código**: essa opção define o caminho na ramificação do repositório selecionado do qual o pipeline deve recuperar o código.
-   * **Pipeline** - Para pipelines de não produção de front-end, você tem a opção de habilitar a **[Auditoria de experiência.](/help/implementing/cloud-manager/experience-audit-testing.md)**
+   * **Pipeline** - Para pipelines de não produção de front-end, você tem a opção de habilitar a **[Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md)**.
 
    ![Configurar pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
 1. Se você habilitou a Auditoria de experiência, toque ou clique em **Continuar** para avançar para a guia **Auditoria de experiência**, onde é possível definir os caminhos que sempre devem ser incluídos na Auditoria de experiência.
 
-   * Se você habilitou a **Auditoria de experiência**, consulte o documento [Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-testing.md#configuration) para obter detalhes sobre como configurar.
+   * Se você habilitou a **Auditoria de experiência**, consulte o documento [Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obter detalhes sobre como configurar.
    * Caso contrário, pule esta etapa.
 
 1. Toque ou clique em **Salvar** para salvar o pipeline.
