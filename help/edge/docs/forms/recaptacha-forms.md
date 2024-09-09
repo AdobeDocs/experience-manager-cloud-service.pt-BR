@@ -1,12 +1,12 @@
 ---
 title: Usar reCAPTCHA com Edge Delivery Services para AEM Forms as a Cloud Service
-description: Usar o Google reCAPTCHA em um formulário EDS
+description: Usar o Google reCAPTCHA em um formulário para Edge Delivery Services para o AEM Forms
 feature: Edge Delivery Services
 exl-id: ac104e23-f175-435f-8414-19847efa5825
 role: Admin, Architect, Developer
-source-git-commit: fe45123b3aefddaf02bc8584283941db168ba174
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Usar reCAPTCHA com Edge Delivery Services para AEM Forms as a Cloud Service
 
-<span>O recurso **reCAPTCHA** está no programa de pré-lançamento. Para solicitar acesso ao recurso **reCAPTCHA** para o AEM Forms Edge Delivery Services, envie um email do seu endereço comercial para mailto:aem-forms-ea@adobe.com.</span>
+<span>O recurso **reCAPTCHA** está no programa de pré-lançamento. Para solicitar acesso ao recurso **reCAPTCHA** para Edge Delivery Services para AEM Forms, envie um email do seu endereço comercial para mailto:aem-forms-ea@adobe.com.</span>
 
 O reCAPTCHA é uma ferramenta popular usada para proteger sites contra atividades fraudulentas, spam e uso indevido. No Edge Delivery Services, o Adaptive Forms Block fornece a capacidade de adicionar o Google reCAPTCHA para distinguir entre humanos e bots. Esse recurso permite que os usuários protejam seu site contra spam e uso indevido.
 Por exemplo, considere um formulário de pesquisa que coleta dados como datas de viagem inicial e final, orçamento de sala, custo de viagem estimado e informações do viajante. Nesses casos, há o risco de usuários mal-intencionados explorarem o formulário para propósitos como enviar emails de phishing ou inundá-lo com conteúdo irrelevante ou prejudicial usando spambots. A integração do reCAPTCHA oferece maior segurança ao verificar se os envios são de usuários genuínos, minimizando efetivamente as entradas de spam.

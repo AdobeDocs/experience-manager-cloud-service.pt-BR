@@ -1,12 +1,12 @@
 ---
 title: Usar regras para adicionar comportamento dinâmico a um formulário
-description: O AEM Forms Edge Delivery Services foi criado para desempenho máximo, permitindo que você visualize o futuro da coleta de dados simplificada e do engajamento do usuário. Use regras para adicionar comportamento dinâmico aos formulários.
+description: Os Edge Delivery Services para AEM Forms foram criados para oferecer desempenho máximo, permitindo que você visualize o futuro da coleta de dados simplificada e do engajamento do usuário. Use regras para adicionar comportamento dinâmico aos formulários.
 feature: Edge Delivery Services
 exl-id: 58042016-e655-446f-a2bf-83f1811525e3
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2216'
+source-wordcount: '2218'
 ht-degree: 0%
 
 ---

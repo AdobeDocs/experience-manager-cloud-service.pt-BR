@@ -4,9 +4,9 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 8d5d8910a906e2adf17fa9c75f17634602c2e0b9
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '2292'
+source-wordcount: '2293'
 ht-degree: 8%
 
 ---
@@ -53,7 +53,7 @@ Para obter mais informações, consulte a [documentação](/help/edge/overview.m
 
 **Editor Universal para Implementações Headless**
 
-O Editor universal também permite que aplicativos web dissociados utilizem a mesma criação intuitiva em contexto WYSIWYG, anteriormente exclusiva de sites tradicionais. Os criadores de conteúdo agora podem compor visualmente layouts usando fragmentos de conteúdo com a mesma facilidade que os componentes dentro das páginas.
+O Editor universal também permite que aplicativos web dissociados aproveitem a mesma criação intuitiva em contexto do WYSIWYG, anteriormente exclusiva de sites tradicionais. Os criadores de conteúdo agora podem compor visualmente layouts usando fragmentos de conteúdo com a mesma facilidade que os componentes dentro das páginas.
 
 O que diferencia o Editor Universal é sua adaptabilidade a diversas arquiteturas da Web, acomodando renderização no lado do servidor e do cliente, mantendo-se independente de estrutura e eliminando a necessidade de hospedagem do AEM. Integrar aplicativos web existentes com o Universal Editor para edição de conteúdo é simples, exigindo principalmente que os desenvolvedores incorporem atributos de dados específicos em suas marcações.
 
@@ -116,7 +116,7 @@ O Assets Essentials permite que os administradores gerenciem os níveis de acess
 
 ### Novos recursos para o AEM Forms {#forms-new-features}
 
-* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: o AEM Forms Edge Delivery Services é um conjunto de serviços combináveis que permite um ambiente de desenvolvimento rápido em que os autores podem atualizar, publicar e iniciar novos formulários rapidamente. Esses serviços oferecem experiências de formulários excepcionais e de alto impacto que impulsionam o engajamento e as conversões. Essas experiências de formulários são fáceis de criar e desenvolver.
+* **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: o Edge Delivery Services para AEM Forms é um conjunto de serviços combináveis que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar, publicar e iniciar novos formulários rapidamente. Esses serviços oferecem experiências de formulários excepcionais e de alto impacto que impulsionam o engajamento e as conversões. Essas experiências de formulários são fáceis de criar e desenvolver.
 
   ![Recursos Do EDS Forms](/help/edge/assets/eds-forms-features.png)
 
@@ -203,7 +203,7 @@ Agora você pode enviar um email a **<aemcs-cdn-config-adopter@adobe.com>** para
 
 #### Configuração da CDN (Early Adoter Program) {#cdn-config-early-adopter}
 
-Além das [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras de Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de Configuração para declarar e implantar outros tipos de configuração de CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md) e participe do programa de adoção antecipada enviando um email para **<aemcs-cdn-config-adopter@adobe.com>** para obter acesso a:
+Além das [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras do Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de Configuração para declarar e implantar outros tipos de configuração CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md) e participe do programa de adoção antecipada enviando um email para **<aemcs-cdn-config-adopter@adobe.com>** para obter acesso a:
 
 * Redirecionamentos do lado do cliente 301/302
 * solicitações de proxy na borda para origens arbitrárias (como aplicativos não-AEM)

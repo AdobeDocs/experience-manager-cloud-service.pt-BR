@@ -1,20 +1,20 @@
 ---
-title: Traduzir e localizar um formulário de serviços do AEM Forms Edge Delivery
-description: Traduzir e localizar um formulário de serviços do AEM Forms Edge Delivery
+title: Traduzir e localizar um Edge Delivery Services para o AEM Forms
+description: Traduzir e localizar um Edge Delivery Services para o AEM Forms
 feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 exl-id: 8a0c826f-8acc-4a00-bd84-7b0df9a82457
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
 
 
-# Traduzir e localizar um formulário de serviços do AEM Forms Edge Delivery
+# Traduzir e localizar um Edge Delivery Services para o AEM Forms
 
 Em Edge Delivery Services, a tradução de formulários envolve a conversão do conteúdo de formulários de um idioma para outro com foco na precisão, clareza e consistência. Os formulários traduzidos ou localizados permitem que um público-alvo maior alcance diferentes localizações geográficas, melhorando a experiência do usuário e facilitando uma melhor comunicação entre diversas preferências de idioma.
 

@@ -1,17 +1,17 @@
 ---
-title: Os serviços AEM Forms Edge Delivery geralmente usavam expressões regex para validar campos de formulário
-description: Os serviços AEM Forms Edge Delivery geralmente usavam expressões regex para validar campos de formulário
+title: Edge Delivery Services para expressões regex usadas com frequência pelo AEM Forms para validar campos de formulário
+description: Edge Delivery Services para expressões regex usadas com frequência pelo AEM Forms para validar campos de formulário
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 5cfe23bb-155f-4639-b7b7-5edc172ba92a
+source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '195'
 ht-degree: 4%
 
 ---
-
 
 # Expressões regex geralmente usadas para validações
 
