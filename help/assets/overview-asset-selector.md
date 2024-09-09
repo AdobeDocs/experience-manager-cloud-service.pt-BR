@@ -3,10 +3,10 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 35%
+source-wordcount: '1295'
+ht-degree: 34%
 
 ---
 
@@ -219,13 +219,19 @@ O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
         <em>Configure e personalize vários componentes do Seletor de ativos com base em sua usabilidade. </em>
         </p>
     </td>
-    <td></td>
+    <td>
+        <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Gráfico de upload do Seletor de ativos"><br/>
+        <a href="asset-selector-upload.md">Personalizações do seletor de ativos</a>
+        <p>
+        <em>Saiba como carregar arquivos ou pastas para o Seletor de ativos do seu sistema de arquivos local ou de terceiros. </em>
+        </p>
+    </td>
 </tr>
 </table>
 
 >[!MORELIKETHIS]
 >
->* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)
+>* [Personalizações do Seletor de ativos](/help/assets/asset-selector-customization.md)
 >* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
 >* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
->* [Integrar APIs abertas de mídia dinâmica do Seletor de ativos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrar o Seletor de ativos ao Dynamic Media com recursos OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

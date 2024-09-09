@@ -3,10 +3,10 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Integrar o seletor de ativos a vários aplicativos de Adobe, não Adobe e de terceiros.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: b85363b0a284929a2308ebee24888937f7c32841
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 47%
+source-wordcount: '178'
+ht-degree: 46%
 
 ---
 
@@ -36,6 +36,6 @@ A integração é feita importando o pacote do Seletor de ativos e conectando ao
 
 >[!MORELIKETHIS]
 >
->* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)
+>* [Personalizações do Seletor de ativos](/help/assets/asset-selector-customization.md)
 >* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
->* [Integrar APIs abertas de mídia dinâmica do Seletor de ativos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrar o Seletor de ativos ao Dynamic Media com recursos OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)

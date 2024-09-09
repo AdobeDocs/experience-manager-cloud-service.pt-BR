@@ -3,9 +3,9 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin,User
 exl-id: d6ff601c-3111-421a-9a94-cc524ce7e432
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '517'
 ht-degree: 1%
 
 ---
@@ -54,3 +54,9 @@ Consulte [carregar com metadados](/help/assets/asset-selector-customization.md#u
 O Seletor de ativos permite adicionar um formulário de upload personalizado. Há várias personalizações disponíveis. Por exemplo, a propriedade [hideUploadButton](/help/assets/asset-selector-properties.md) permite ocultar o botão de carregamento mostrado por padrão no aplicativo. Em vez disso, você pode personalizá-lo para renderizar fora do aplicativo MFE, de acordo com o requisito. Consulte [upload personalizado](/help/assets/asset-selector-customization.md#customized-upload) para obter a configuração.
 
 ![Upload personalizado](assets/customized-upload.png)
+
+>[!MORELIKETHIS]
+>
+>* [Exemplos de seletor de ativos](/help/assets/asset-selector-examples.md)
+>* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
+>* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)

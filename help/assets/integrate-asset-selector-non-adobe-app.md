@@ -3,9 +3,9 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Integrar o seletor de ativos a vários aplicativos de Adobe, não Adobe e de terceiros.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: f9f5b2a25933e059cceacf2ba69e23d528858d4b
+source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '424'
 ht-degree: 1%
 
 ---
@@ -141,3 +141,9 @@ O Seletor de ativos é renderizado no elemento de contêiner `<div>`, como menci
 >
 >Se você tiver integrado o Seletor de ativos usando o fluxo de trabalho Inscrever-se, mas ainda não conseguir acessar o repositório de entrega, verifique se os cookies do navegador foram limpos. Caso contrário, você acaba recebendo o erro `invalid_credentials All session cookies are empty` no console.
 
+>[!MORELIKETHIS]
+>
+>* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
+>* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
+>* [Integrar o Seletor de ativos ao Dynamic Media com recursos OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Personalizações do Seletor de ativos](/help/assets/asset-selector-customization.md)
