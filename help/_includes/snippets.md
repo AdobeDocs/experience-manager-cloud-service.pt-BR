@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 5%
+source-wordcount: '993'
+ht-degree: 4%
 
 ---
 # Trechos {#snippets}
@@ -161,3 +161,23 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 >[!TIP]
 >
 >Você é novo no Dynamic Media? Para obter uma visão geral rápida e de alto nível do Dynamic Media, consulte [Trabalhar com o Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+
+## Consulte também para Dynamic Media {#see-also-dm}
+
+>[!NOTE]
+>
+>* Você é novo no Dynamic Media? Para obter uma visão geral rápida e de alto nível do Dynamic Media, consulte [Trabalhar com o Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>
+>* Siga as [Práticas recomendadas da Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) para obter o máximo de valor.
+>
+>* Experimente os recursos de imagem do Dynamic Media com a [ferramenta de Instantâneo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>
+>* Garanta uma reprodução de vídeo sem problemas com o [vídeo adaptável](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>
+>* Recorte automático de [imagens com Recorte Inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>
+>* Recorte automático de [vídeos com Recorte Inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>
+>* Forneça a [experiência interativa baseada em 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Outro [banco de recursos Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
