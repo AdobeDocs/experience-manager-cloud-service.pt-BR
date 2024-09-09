@@ -3,7 +3,7 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 575980320c1dbd32f799bf9c2fddf3d6773c838a
+source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 34%
@@ -221,7 +221,7 @@ O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
     </td>
     <td>
         <img src="assets/asset-selector-upload.gif" width="70px" height="70px" alt="Gráfico de upload do Seletor de ativos"><br/>
-        <a href="asset-selector-upload.md">Personalizações do seletor de ativos</a>
+        <a href="asset-selector-upload.md">Carregamento do seletor de ativos</a>
         <p>
         <em>Saiba como carregar arquivos ou pastas para o Seletor de ativos do seu sistema de arquivos local ou de terceiros. </em>
         </p>
