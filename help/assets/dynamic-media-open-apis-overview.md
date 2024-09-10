@@ -3,9 +3,9 @@ title: Dynamic Media com recursos OpenAPI
 description: Saiba mais sobre os principais conceitos, como por que usar o Dynamic Media com recursos OpenAPI e como ativá-lo.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: 1041769d4c1efa4465745a85df65c803939b472b
+source-git-commit: 6199a8ae0033feee0c1bee4e4c50e19cd55c805c
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1062'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Para habilitar o Dynamic Media com recursos OpenAPI no AEM as a Cloud Service, e
 
   >[!NOTE]
   >
-  > Para integrar a um aplicativo não-Adobe, forneça nomes de domínio à lista de permissões onde o aplicativo está hospedado.
+  > Para integrar com um aplicativo não-Adobe, forneça nomes de domínio ao lista de permissões onde o aplicativo está hospedado.
 
 * Detalhes dos principais contatos do cliente envolvidos no projeto de integração.
 
