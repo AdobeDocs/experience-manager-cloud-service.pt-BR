@@ -4,9 +4,9 @@ description: Conheça as diretrizes para desenvolvimento no AEM as a Cloud Servi
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: ea631743af99879d2a76d3a4a78ecf5883f39c69
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2770'
 ht-degree: 4%
 
 ---
@@ -181,6 +181,9 @@ No desenvolvimento local (usando o SDK), `/apps` e `/libs` podem ser gravados di
 >[!NOTE]
 >O AEM as a Cloud Service Developer Console não deve ser confundido com o [*Adobe Developer Console*](https://developer.adobe.com/developer-console/) de nome semelhante.
 >
+
+>[!NOTE]
+>Alguns clientes terão a opção de experimentar uma experiência renovada para o AEM Cloud Service Developer Console. Consulte [este artigo](/help/implementing/developing/introduction/developer-console.md) para obter mais informações.]
 
 Os clientes podem acessar o CRXDE lite no ambiente de desenvolvimento do nível do autor, mas não no ambiente de preparo ou produção. O repositório imutável (`/libs`, `/apps`) não pode ser gravado no tempo de execução, portanto, tentar fazer isso resultará em erros.
 
