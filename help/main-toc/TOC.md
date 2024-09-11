@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 983928c46ed5c4999dcae12c75930a9973d51f75
+source-git-commit: 1b8640e4ac60e242abc0462bed3335a90e8c49f7
 workflow-type: tm+mt
-source-wordcount: '5600'
+source-wordcount: '5593'
 ht-degree: 75%
 
 ---
@@ -1121,9 +1121,7 @@ ht-degree: 75%
       + Configurações de Domínio {#custom-domain-names}
          + [Introdução](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
-         + [Adicionar um registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [Verificação de status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)
-         + [Definição das configurações de DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md)
          + [Verificação de status do registro DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md)
          + [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
       + Certificados SSL {#manage-ssl-certificates}

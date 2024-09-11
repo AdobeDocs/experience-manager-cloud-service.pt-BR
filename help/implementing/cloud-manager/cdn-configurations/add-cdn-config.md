@@ -4,13 +4,13 @@ description: Saiba como adicionar uma configuração de CDN para um site do Edge
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e57a6ceb2482e61acabe928da0f539d26989985c
+exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 8%
 
 ---
-
 
 # Adicionar uma configuração de CDN {#add-cdn}
 
@@ -41,7 +41,3 @@ A adição de uma configuração de CDN deve ser concluída para configurar um d
    * Selecione o certificado SSL. Necessário somente se você selecionou **CDN gerenciado por Adobe** como seu tipo de CDN.
 
 1. Clique em **Salvar**.
-
-
-
-

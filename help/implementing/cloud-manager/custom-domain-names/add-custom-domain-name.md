@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 26%
+source-wordcount: '1488'
+ht-degree: 20%
 
 ---
 
@@ -25,7 +25,11 @@ Atenda a esses requisitos antes de adicionar um nome de domínio personalizado n
 * Você deve ter a função de **Proprietário da empresa** ou **Gerente de implantação** para adicionar um nome de domínio personalizado no Cloud Manager.
 * Estar usando o Fastly CDN.
 
-## Onde adicionar nomes de domínio personalizados {#where}
+>[!IMPORTANT]
+>
+>Mesmo se você usar um CDN não Adobe, ainda precisará adicionar seu domínio ao Cloud Manager.
+
+## Onde adicionar nomes de domínio personalizados {#}
 
 Você pode adicionar um nome de domínio personalizado a partir de dois locais no Cloud Manager:
 
@@ -34,56 +38,175 @@ Você pode adicionar um nome de domínio personalizado a partir de dois locais n
 
 Ao adicionar um nome de domínio personalizado, o domínio é distribuído usando o certificado mais específico e válido. Se vários certificados tiverem o mesmo domínio, o mais recente atualizado será escolhido. A Adobe recomenda que você gerencie certificados de forma que não haja domínios sobrepostos.
 
-As etapas descritas neste documento são baseadas no Fastly. Se você usou um CDN diferente, configure seu domínio com o CDN que você escolheu usar.
+As etapas para qualquer método descrito neste documento são baseadas no Fastly. Se você usou um CDN diferente, configure seu domínio com o CDN que você escolheu usar.
 
 ## Adicionar um nome de domínio personalizado na página Configurações do domínio {#adding-cdn-settings}
-
-Siga estas etapas para adicionar um nome de domínio personalizado na página **Configurações do domínio**.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
-1. Navegue até a guia **Configurações do domínio** selecionada no painel de navegação esquerdo.
+1. No painel de navegação esquerdo, selecione a guia **Configurações de domínio**
 
    ![A janela Configurações do domínio](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
-1. Clique no botão **Adicionar domínio** no canto superior direito para abrir a caixa de diálogo **Adicionar nome de domínio**.
+1. Próximo ao canto superior direito da página **Configurações de Domínio**, clique em **Adicionar Domínio**.
 
-   ![Caixa de diálogo Adicionar Domínio](/help/implementing/cloud-manager/assets/cdn/add-cdn1.png)
+1. Na caixa de diálogo **Adicionar domínio**, no campo **Nome do Domínio**, digite o nome de domínio personalizado que você está usando.
+Não inclua `http://`, `https://` ou espaços ao inserir seu domínio.
 
-1. Na guia **Nome do Domínio**, digite o nome de domínio personalizado no campo **Nome do Domínio**.
+1. Clique em **Criar**.
+
+1. Na caixa de diálogo **Verificar Domínio**, em **Que tipo de certificado você pretende usar com este domínio?**, selecione uma das seguintes opções:
+
+   | Tipo de certificado | Descrição |
+   | --- | --- |
+   | Certificado gerenciado pela Adobe | Selecione se quiser usar um certificado DV (Domain Validation). Essa opção é ideal para a maioria dos casos, fornecendo validação básica de domínio. O Adobe gerencia e renova o certificado automaticamente. |
+   | Certificado gerenciado pelo cliente | Selecione se quiser usar um certificado EV/OV. Essa opção oferece segurança aprimorada com EV (Extended Validation) ou OV (Organization Validation). Use se uma verificação mais rigorosa, níveis de confiança mais altos ou controle personalizado dos certificados for necessário. |
+
+1. Na caixa de diálogo **Verificar domínio**, com base no tipo de certificado selecionado, siga um destes procedimentos:
+
+   | Se você selecionou o tipo de certificado | Descrição |
+   | --- | ---  |
+   | Certificado gerenciado pela Adobe | Conclua as [etapas de certificado gerenciado por Adobe](#abobe-managed-cert-steps) antes de prosseguir para a próxima etapa. |
+   | Certificado gerenciado pelo cliente | Conclua as [etapas de certificado gerenciado pelo cliente](#customer-managed-cert-steps) antes de prosseguir para a próxima etapa. |
+
+1. Clique em **Verificar**.
+
+1. Agora você está pronto para [adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
    >[!NOTE]
    >
-   >Não inclua `http://`, `https://` ou espaços ao inserir seu domínio.
+   >Se você usar um certificado SSL autogerenciado e um provedor CDN autogerenciado, ignore esta etapa e vá diretamente para [Adicionar uma configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) quando estiver pronto.
 
-1. Selecione o **Ambiente** cujo serviço será associado ao nome de domínio.
 
-1. Selecione **Publicar** ou **Visualizar** serviço.
 
-1. Selecione o **Certificado SSL do domínio** associado ao nome de domínio no menu suspenso e clique em **Continuar**.
+### Etapas do certificado gerenciado por Adobe {#adobe-managed-cert-steps}
 
-1. A guia **Verificação** é exibida.
+Se você selecionou o tipo de certificado *Adobe managed certificate*, conclua as etapas a seguir na caixa de diálogo **Verificar domínio**.
 
-   ![Verificação do nome de domínio](/help/implementing/cloud-manager/assets/cdn/cdn-create6.png)
+![etapas de certificado gerenciado Adobe](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
 
-   * A guia **Verificação** descreve as próximas etapas para configurar o nome de domínio personalizado, que está criando um registro TXT necessário.
-   * Você pode executar esta etapa imediatamente (antes de clicar em **Criar** na caixa de diálogo) ou depois de clicar em **Criar** na caixa de diálogo.
-   * As opções e as próximas etapas são descritas abaixo.
+Para verificar o domínio em uso, é necessário adicionar e verificar um CNAME.
 
-1. Clique em **Criar** para salvar o nome de domínio personalizado no Cloud Manager.
+Um registro `CNAME` ou A, uma vez provisionado, roteia todo o tráfego de Internet do domínio para onde quer que esteja apontando. Se esse local não for provisionado para veicular o tráfego, haverá uma interrupção. Se não for testado, poderá haver erros no conteúdo. É por isso que essa etapa é sempre realizada após a conclusão dos testes, quando você está pronto para entrar em produção.
 
-Ao selecionar **Criar** no assistente **Adicionar domínio personalizado**, o Cloud Manager aciona uma verificação TXT. Crie o registro TXT ao configurar o nome de domínio personalizado no Cloud Manager. No entanto, essa etapa não é necessária. Para as verificações subsequentes, você deverá selecionar ativamente o ícone **Verificar novamente** ao lado do status.
+Para definir essas configurações, determine se um registro `CNAME` ou apex deve ser configurado para apontar seu nome de domínio personalizado para o nome de domínio do Cloud Manager. As seções a seguir deste documento podem ajudar você a determinar qual tipo de registro é apropriado para sua configuração de DNS.
 
-O nome não estará ativo até que o Cloud Manager verifique se a entrada TXT foi adicionada e verificada. O status de **Verificado e implantado** indica uma verificação TXT bem-sucedida.
+>[!NOTE]
+>
+>Para CDNs gerenciadas por Adobe, ao usar certificados DV (Domain Validation, validação de domínio), somente sites com validação ACME são permitidos.
 
-* Consulte [Adicionar um registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para saber mais sobre registros TXT.
-* Consulte [Verificar o status do nome de domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes sobre como a Cloud Manager verifica o nome de domínio personalizado e sua entrada TXT.
+#### Requisitos {#dv-requirements}
 
-## Próximas etapas {#next-steps}
+Atenda a esses requisitos antes de configurar seus registros DNS.
 
-Depois de criar seu nome de domínio personalizado no Cloud Manager, adicione uma entrada TXT para verificar a propriedade do domínio. Prossiga para o documento [Adicionando um Registro TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) para continuar configurando seu nome de domínio personalizado.
+* Identifique o host ou o registrador do seu domínio, se você ainda não o conhece.
+* Ser capaz de editar os registros DNS do domínio de sua organização ou entrar em contato com a pessoa apropriada que pode fazer isso.
+* Você já deve ter verificado o nome de domínio personalizado configurado, conforme descrito no documento [Verificando o Status do Nome de Domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md).
+
+#### Registro CNAME {#cname-record}
+
+Um nome canônico ou registro CNAME é um tipo de registro DNS que mapeia um nome de alias a um nome de domínio verdadeiro ou canônico. Os registros CNAME normalmente são usados para mapear um subdomínio como `www.example.com` ao domínio que hospeda o conteúdo desse subdomínio.
+
+Faça logon no provedor de serviços DNS e crie um registro `CNAME` para apontar seu nome de domínio personalizado ao destino, como na tabela a seguir.
+
+| CNAME | Domínio personalizado - apontar para o destino |
+| --- | --- |
+| `www.customdomain.com` | `cdn.adobeaemcloud.com` |
+
+#### Registro APEX {#apex-record}
+
+Um domínio apex é um domínio personalizado que não contém um subdomínio, como `example.com`. Um domínio apex é configurado com um registro `A`, `ALIAS` ou `ANAME` por meio do provedor de DNS. Domínios apex devem apontar para endereços IP específicos.
+
+Adicione os seguintes registros `A` às configurações de DNS do domínio por meio do provedor de domínio.
+
+* `A RECORD`
+
+* `A record for domain @ pointing to IP 151.101.3.10`
+
+* `A record for domain @ pointing to IP 151.101.67.10`
+
+* `A record for domain @ pointing to IP 151.101.131.10`
+
+* `A record for domain @ pointing to IP 151.101.195.10`
+
+
+
+### Etapas de certificado gerenciado pelo cliente {#customer-managed-cert-steps}
+
+Se você selecionou o tipo de certificado *Certificado gerenciado pelo cliente*, conclua as etapas a seguir na caixa de diálogo **Verificar domínio**.
+
+![Etapas de certificado gerenciado pelo cliente](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)
+
+Para verificar o domínio em uso, é necessário adicionar e verificar um registro TXT.
+
+Um registro de texto (também conhecido como registro TXT) é um tipo de registro de recurso no Sistema de nomes de domínio (DNS). Permite associar texto arbitrário a um nome de host. Esse texto pode incluir detalhes legíveis por humanos, como informações do servidor ou da rede.
+
+O Cloud Manager usa um registro TXT específico para autorizar que um domínio seja hospedado em um serviço CDN. Crie um registro TXT de DNS na zona que autoriza o Cloud Manager a implantar o serviço CDN no domínio personalizado e associá-lo ao serviço de back-end. Essa associação está totalmente sob seu controle e autoriza o Cloud Manager a veicular conteúdo do serviço em um domínio. Esta autorização pode ser concedida e retirada. O registro TXT é específico do domínio e do ambiente Cloud Manager.
+
+## Requisitos {#requirements-customer-cert}
+
+Atenda a esses requisitos antes de adicionar um registro TXT.
+
+* Identifique o host ou o registrador do seu domínio, se você ainda não o conhece.
+* Ser capaz de editar os registros DNS do domínio de sua organização ou entrar em contato com a pessoa apropriada que pode fazer isso.
+* Primeiro, adicione um nome de domínio personalizado conforme descrito anteriormente neste artigo.
+
+## Adicionar um registro TXT para verificação {#verification}
+
+1. Na caixa de diálogo **Verificar domínio**, o Cloud Manager exibe o nome e o valor TXT a serem usados para verificação. Copie este valor.
+
+1. Faça logon no provedor de serviços DNS e localize a seção Registros DNS.
+
+1. Adicione `aemverification.[yourdomainname]` como o **Nome** do valor e adicione o valor TXT exatamente como ele aparece no campo **Nome do Domínio**.
+
+   **Exemplos de registros TXT**
+
+   | Domínio | Nome | Valor TXT |
+   | --- | --- | --- |
+   | `example.com` | `_aemverification.example.com` | Copie todo o valor exibido na interface do Cloud Manager. Esse valor é específico do domínio e do ambiente. Por exemplo:<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
+   | `www.example.com` | `_aemverification.www.example.com` | Copie todo o valor exibido na interface do Cloud Manager. Esse valor é específico do domínio e do ambiente. Por exemplo:<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
+
+1. Salve o registro TXT no host do domínio.
+
+## Verificar registro TXT {#verify}
+
+Quando terminar, você poderá verificar o resultado executando o comando a seguir.
+
+```shell
+dig _aemverification.[yourdomainname] -t txt
+```
+
+O resultado esperado deve exibir o valor TXT fornecido na guia **Verificação** da caixa de diálogo **Adicionar nome de domínio** da interface do usuário do Cloud Manager.
+
+Por exemplo, se o domínio for `example.com`, execute:
+
+```shell
+dig TXT _aemverification.example.com -t txt
+```
+
+>[!TIP]
+>
+>Há várias [ferramentas de pesquisa de DNS](https://www.ultratools.com/tools/dnsLookup) disponíveis. O Google DoH pode ser usado para pesquisar entradas de registro TXT e identificar se o registro TXT está ausente ou incorreto.
+
+>[!NOTE]
+>
+>A verificação de DNS pode levar algumas horas para ser processada devido a atrasos de propagação de DNS.
+>
+>O Cloud Manager verifica a propriedade e atualiza o status, que pode ser visto na tabela Configurações do domínio. Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.
+
+<!--
+## Next Steps {#next-steps}
+
+Now that you created your TXT entry, you can verify your domain name status. Proceed to the document [Checking Domain Name Status](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) to continue setting up your custom domain name. -->
+
+>[!TIP]
+>
+>A entrada TXT e o registro CNAME ou A podem ser definidos simultaneamente no servidor DNS regulador, economizando tempo.
+>
+><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
+
 
 ## Adicione um nome de domínio personalizado na página Ambientes {#adding-cdn-environments}
 
@@ -91,7 +214,7 @@ As etapas para adicionar um nome de domínio personalizado da página **Ambiente
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriado.
 
-1. Acesse a página **Detalhes do ambiente** do ambiente em que está interessado.
+1. Acesse a página de detalhes **Detalhes do ambiente** do ambiente em que está interessado.
 
    ![Inserção do nome de domínio na página Detalhes do ambiente](/help/implementing/cloud-manager/assets/cdn/cdn-create4.png)
 
@@ -103,4 +226,4 @@ As etapas para adicionar um nome de domínio personalizado da página **Ambiente
 
    ![Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/assets/cdn/cdn-create3.png)
 
-1. A caixa de diálogo **Adicionar nome de domínio** é aberta na guia **Nome de Domínio**. Continue como faria para [adicionar um nome de domínio personalizado da página Configurações de Domínio](#adding-cdn-settings).
+1. A caixa de diálogo **Adicionar nome de domínio** é aberta na guia **Nome de Domínio**. Continue como faria para [adicionar um nome de domínio personalizado da página Configurações de Domínio](#adding-cdn-settings). —>

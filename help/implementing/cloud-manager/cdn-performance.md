@@ -5,14 +5,14 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: dd696580758e7ab9a5427d47fda4275f9ad7997f
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '384'
 ht-degree: 3%
 
 ---
 
-# Painel de Desempenho da CDN {#cdn-performance}
+# Painel de desempenho do CDN {#cdn-performance}
 
 Entenda como o Cloud Manager avalia o desempenho da rede de entrega de conteúdo (CDN) e o que você pode aprender com o painel.
 
@@ -54,7 +54,7 @@ Para obter sugestões sobre como melhorar o desempenho da CDN, selecione a guia 
 
 Toque ou clique na divisa ao lado de qualquer recomendação na lista para exibir detalhes sobre as etapas a serem executadas para melhorar e a causa do problema.
 
-## Definição de Acertos do Cache {#cache-hit}
+## Definição de ocorrência de cache {#cache-hit}
 
 A taxa de ocorrência do cache mede quantas solicitações de conteúdo um cache pode preencher com êxito em comparação ao número de solicitações que recebe. Quanto maior a taxa de ocorrência do cache, melhor será o desempenho de um CDN.
 
@@ -68,11 +68,11 @@ Cache Hit Ratio = Cache Hits / (Hits + Misses + Passes + Other)
 
 * **Ocorrência** - Os dados são solicitados do cache e foram encontrados.
 * **Erro** - Os dados são solicitados do cache e não foram encontrados.
-* **Aprovado** - Os dados são solicitados do cache e está configurado para não armazená-los em cache.
+* **Passagem** - Os dados são solicitados do cache e estão configurados para não armazenarem esses dados em cache.
 * **Outros** - Todas as solicitações de dados do cache que não correspondem a nenhum outro caso.
 
 As métricas de cache são atualizadas a cada 24 horas.
 
 >[!TIP]
 >
->Para obter mais detalhes sobre como o Cloud Manager e a CDN interagem com a Dispatcher, consulte o documento [Armazenamento em cache no AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
+>Para obter mais detalhes sobre como o Cloud Manager e a CDN interagem com a Dispatcher, consulte [Armazenamento em cache no AEM as a Cloud Service](/help/implementing/dispatcher/caching.md).
