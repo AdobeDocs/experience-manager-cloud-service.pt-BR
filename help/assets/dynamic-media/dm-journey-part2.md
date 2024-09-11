@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Jornada do Dynamic Media: Noções básicas, parte II  {#dm-journey-part2}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Bem-vindo à Jornada do Dynamic Media: Noções básicas, Parte II, onde você pode esperar aprender o seguinte:
 
@@ -211,8 +211,6 @@ Você leu sobre conjuntos de imagens e visualizadores. Vamos analisar outros vis
 ## Opcional - Saiba mais
 
 Se você quiser saber mais sobre o que acabou de ler, use os materiais abaixo para explorar os conceitos com mais detalhes. Caso contrário, sua Jornada do Dynamic Media será concluída!
-
-{{see-also-dm}}
 
 <!--
 _Dynamic Media Help topics_

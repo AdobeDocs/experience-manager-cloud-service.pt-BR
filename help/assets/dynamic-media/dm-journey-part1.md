@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 879af9e3168a1ab993eff930355c4bd200879c71
+source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
 workflow-type: tm+mt
 source-wordcount: '3615'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Jornada do Dynamic Media: Noções básicas, Parte I {#dm-journey-part1}
 
-{{work-with-dynamic-media}}
+{{see-also-dm}}
 
 Bem-vindo à Jornada do Dynamic Media.
 
@@ -268,7 +268,6 @@ A representação acima está ativa. [Experimente](https://s7d1.scene7.com/s7vie
 
 A parte I desta jornada abordou as noções básicas de vários tópicos do Dynamic Media. Se você quiser saber mais sobre o que lê, utilize os materiais abaixo para explorar os conceitos com mais detalhes. Caso contrário, você pode continuar com a Parte II da sua jornada. Consulte [O que vem a seguir nesta Jornada do Dynamic Media](#whats-next).
 
-{{see-also-dm}}
 <!--
 _Dynamic Media Help topics_
 
