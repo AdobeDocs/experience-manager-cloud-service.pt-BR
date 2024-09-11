@@ -4,7 +4,7 @@ description: Saiba como usar o Analisador de práticas recomendadas para entende
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
 workflow-type: tm+mt
 source-wordcount: '2686'
 ht-degree: 39%
@@ -35,7 +35,7 @@ Siga a seção abaixo para entender considerações importantes na execução do
 * O BPA pode ser executado em qualquer ambiente, mas é preferível executá-lo em um ambiente *Preparo*.
 
   >[!NOTE]
-  >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o BPA em um ambiente *Author* o mais próximo possível do ambiente *Production* nas áreas de personalizações, configurações, conteúdo e aplicativos de usuários. Como alternativa, ele pode ser executado em um clone do ambiente de *Autor* de produção.
+  >Para evitar um impacto em instâncias críticas para os negócios, é recomendável executar o BPA em um ambiente de *Preparo* o mais próximo possível do ambiente de *Produção* nas áreas de personalizações, configurações, conteúdo e aplicativos de usuários. Como alternativa, ele pode ser executado em um clone do ambiente de *Autor* de produção.
 
 * A geração de conteúdo do relatório do BPA pode levar um tempo significativo, de vários minutos a algumas horas. O tempo necessário depende muito do tamanho e da natureza do conteúdo do repositório do AEM, da versão do AEM e de outros fatores.
 
