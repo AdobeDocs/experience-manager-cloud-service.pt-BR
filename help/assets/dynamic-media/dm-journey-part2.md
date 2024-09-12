@@ -11,7 +11,7 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: d16a2dbe5cf2ab6d42af661b6ab2b9845612304f
+source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
 workflow-type: tm+mt
 source-wordcount: '2621'
 ht-degree: 0%
@@ -24,9 +24,9 @@ ht-degree: 0%
 
 Bem-vindo à Jornada do Dynamic Media: Noções básicas, Parte II, onde você pode esperar aprender o seguinte:
 
-* Anatomia de um URL do Dynamic Media e como o Dynamic Media fornece conteúdo
-* Princípios básicos da criação de predefinições de imagens para renderizar ativos
-* Conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista
+* Anatomia de um URL do Dynamic Media e como o Dynamic Media fornece conteúdo.
+* Princípios básicos da criação de predefinições de imagens para renderizar ativos.
+* Conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista.
 
 Consulte também [Jornada do Dynamic Media; Noções básicas, Parte I](/help/assets/dynamic-media/dm-journey-part1.md).
 
