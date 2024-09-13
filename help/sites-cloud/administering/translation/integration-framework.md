@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: 4f5346200499f125ea986bc094446359ed10bd81
+source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
 workflow-type: tm+mt
-source-wordcount: '1481'
-ht-degree: 72%
+source-wordcount: '1447'
+ht-degree: 71%
 
 ---
 
@@ -28,26 +28,9 @@ Para obter uma visão geral dos recursos de tradução de conteúdo do AEM, cons
 
 ## Conexão com um provedor de serviços de tradução {#connecting-to-a-translation-service-provider}
 
-Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviços de tradução. O AEM inclui a capacidade de [conectar-se ao Microsoft® Translator](connect-ms-translator.md) por padrão.
+Crie uma configuração de nuvem que conecte o AEM ao seu provedor de serviços de tradução.
 
-Os seguintes fornecedores de tradução oferecem uma implementação da API do AEM para projetos de tradução.
-
-* [Microsoft](connect-ms-translator.md)
-* [Traduções.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
-* [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
-* [Memsource](https://exchange.adobe.com/apps/ec/103166/memsource-connector-for-adobe-experience-manager)
-* [XTM Cloud](https://exchange.adobe.com/apps/ec/105037/xtm-connect-for-adobe-experience-manager)
-* [Lingotek](https://exchange.adobe.com/apps/ec/90088/lingotek-collaborative-translation-platform)
-* [RWS](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
-* [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-
->[!NOTE]
->
->Para encontrar a lista mais recente de provedores de tradução humana e tradução automática, consulte estas páginas:
->
->* [Tradução humana do AEM](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=aem+human+translation&amp;sort=RELEVANCE)
->* [Tradução automática do AEM](https://exchange.adobe.com/apps/browse/ec?q=AEM+machine+translation&amp;product=All&amp;partnerLevel=All&amp;sort=RELEVANCE)
->
+O AEM inclui a capacidade de [conectar-se ao Microsoft® Translator](connect-ms-translator.md) por padrão. Outros fornecedores de tecnologia de tradução com conectores AEM que são membros do programa de parceiro Adobe Exchange podem ser encontrados [aqui](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE).
 
 Depois de instalar um pacote de conectores, é possível criar uma configuração de nuvem para o conector. Normalmente, você deve fornecer suas credenciais para autenticação com o serviço de tradução. Para obter informações sobre como adicionar uma configuração de nuvem para o conector do Microsoft® Translator, consulte [Integração com o Microsoft® Translator](connect-ms-translator.md).
 
