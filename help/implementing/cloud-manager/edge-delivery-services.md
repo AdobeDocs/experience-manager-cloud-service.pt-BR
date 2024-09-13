@@ -4,9 +4,9 @@ description: Saiba como entregar projetos do Cloud Manager usando o Edge Deliver
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: dda5444ccfced079125c358f65f0dae43293ae55
+source-git-commit: bc9aa376a402a55191e153f662262ff65df32f5e
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1516'
 ht-degree: 2%
 
 ---
@@ -61,7 +61,7 @@ Dependendo do caso de uso, siga um destes procedimentos:
 
 ## Caminho recomendado de Adobe para clientes contratados {#recommended-path-eds}
 
-Como cliente contratado, maximize seus benefícios do Adobe acessando e consumindo sua licença do Edge Delivery Services por meio da Cloud Manager. Essa abordagem permite usar a [CDN gerenciada por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) e aproveitar os principais benefícios, como o gerenciamento de CDN por autoatendimento, incluindo a configuração e a instalação de certificados DV ou EV/OV. Se você não tiver uma licença de Edge Delivery Services com o Adobe e decidir ignorar esses benefícios, só poderá usar uma CDN gerenciada pelo cliente. Essa configuração deve estar na plataforma aem.live.
+Como cliente contratado, maximize seus benefícios do Adobe acessando e consumindo sua licença do Edge Delivery Services por meio da Cloud Manager. Essa abordagem permite usar a [CDN gerenciada por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) e aproveitar os principais benefícios, como o gerenciamento de CDN de autoatendimento, incluindo a configuração e a adição de certificados DV. Além disso, após a criação de um certificado DV, o Adobe o renova automaticamente a cada três meses, a menos que ele seja excluído. Se você não tiver uma licença de Edge Delivery Services com o Adobe e decidir ignorar esses benefícios, poderá usar somente uma CDN gerenciada pelo cliente. Esta configuração deve estar na plataforma `aem.live`.
 
 Se você tiver sido contratado com licenças do AEM as a Cloud Service Sites Edge Delivery Services, faça logon no Cloud Manager para garantir que você possa fazer o seguinte:
 
