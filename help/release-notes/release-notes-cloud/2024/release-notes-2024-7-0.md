@@ -3,10 +3,11 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2024.7.0.
 feature: Release Information
 role: Admin
-source-git-commit: 2edaca5637c735645e2b761377b9681d9b48daa1
+exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 18%
+source-wordcount: '1605'
+ht-degree: 13%
 
 ---
 
@@ -60,19 +61,25 @@ Interessado em experimentar o recurso e compartilhar feedback? Envie um email pa
 
 **Carregar ativos usando o Seletor de ativos**
 
-O Seletor de ativos agora oferece aos autores de conteúdo a capacidade de fazer upload de ativos finais diretamente do seletor, arrastando ou navegando do sistema de arquivos local. Isso permite que os ativos finais sejam carregados no DAM a partir do aplicativo de sua escolha.
+O Seletor de ativos agora oferece a capacidade de os autores de conteúdo fazerem upload de ativos finais diretamente do seletor, arrastando ou navegando do sistema de arquivos local. Essa funcionalidade permite que os ativos finais sejam carregados no DAM a partir do aplicativo de sua escolha.
+
+### Recurso de acesso antecipado no Dynamic Media {#dm-early-access}
+
+**Legendas de vídeo baseadas em IA**
+
+Legendas de vídeo baseadas em IA no Adobe Dynamic Media usam inteligência artificial para gerar legendas automaticamente para conteúdo de vídeo. Esse recurso foi projetado para melhorar a acessibilidade e a experiência do usuário, fornecendo legendas precisas e em tempo real. A IA analisa a faixa de áudio do vídeo para transcrever a fala e criar legendas, que podem ser editadas para precisão ou personalização. Essas legendas ajudam a atender aos requisitos de acessibilidade e melhorar o envolvimento com o vídeo para públicos-alvo que dependem ou preferem suporte de vídeo baseado em texto.
 
 ### Novos recursos na visualização de ativos {#assets-view-new-features}
 
 **Integração de credenciais do conteúdo**
 
-O Experience Manager Assets agora é compatível com credenciais de conteúdo para os formatos de imagem compatíveis. Isso fornece informações sobre a linhagem do ativo e como ele foi criado, incluindo se ele foi modificado com a IA generativa.
+O Experience Manager Assets agora é compatível com credenciais de conteúdo para os formatos de imagem compatíveis. Essa capacidade fornece informações sobre a linhagem do ativo e como ele foi criado, incluindo se ele foi modificado usando GenAI.
 
 ![Credenciais de conteúdo](/help/assets/assets/content-credentials.png)
 
 **Visualizações do conteúdo das pastas**
 
-O Experience Manager Assets agora exibe visualizações do conteúdo das pastas em suas miniaturas ao navegar ou pesquisar conteúdo, o que melhora a descoberta de ativos disponíveis no repositório do AEM Assets.
+O Experience Manager Assets agora exibe visualizações visuais do conteúdo da pasta na miniatura da pasta ao navegar ou pesquisar conteúdo, o que melhora a descoberta de ativos disponíveis no repositório do AEM Assets.
 
 <!--
 
@@ -93,7 +100,7 @@ When looking at the asset details, any image with content credentials added, suc
 
 #### Editor de regras visuais aprimorado para Forms adaptável baseado em componentes principais
 
-Os autores de formulários adaptáveis podem usar campos de formulário repetíveis em funções prontas para uso disponíveis no editor visual de regras para componentes principais a fim de criar uma lógica de negócios complexa nos formulários, sem precisar de personalização ou assistência da equipe de desenvolvimento.
+Os autores de formulários adaptáveis podem usar campos de formulário repetíveis e funções prontas para uso do editor de regras visuais para criar uma lógica de negócios complexa em formulários sem precisar de personalização ou suporte da equipe de desenvolvimento.
 
 ### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
@@ -103,7 +110,7 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 #### Criar formulários adaptáveis usando o Editor universal
 
-Aproveite o [Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) do Adobe Experience Manager para criar formulários adaptáveis usando a criação de arrastar e soltar WYSIWYG, para experiências de inscrição headless e headful, entregues pelo Serviço Edge Delivery. Os autores de formulários adaptáveis podem criar e iniciar facilmente experimentos para variações de formulários nas páginas da Web e determinar as experiências de melhor desempenho para os usuários finais.
+Aproveite o [Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) do Adobe Experience Manager para criar formulários adaptáveis usando a criação de arrastar e soltar WYSIWYG, para experiências de inscrição headless e headful, entregues pelo Serviço Edge Delivery. Os autores de formulários adaptáveis podem criar e iniciar facilmente experimentos para variações dos formulários nas páginas da Web. Essa capacidade permite que eles determinem as experiências de melhor desempenho para os usuários finais.
 
 >[!IMPORTANT]
 >
@@ -113,22 +120,23 @@ Aproveite o [Editor Universal](https://experienceleague.adobe.com/en/docs/experi
 
 ### Limpar conteúdo na CDN com uma chave de API de autoatendimento {#purge-cdn}
 
-A definição do TTL usando o cabeçalho HTTP Cache-Control é uma abordagem eficaz para equilibrar o desempenho da entrega de conteúdo e a atualização de conteúdo. No entanto, em cenários em que é essencial fornecer imediatamente conteúdo atualizado, pode ser útil limpar diretamente o cache da CDN.
+A definição do TTL usando o cabeçalho HTTP Cache-Control é uma abordagem eficaz para equilibrar o desempenho da entrega de conteúdo e a atualização de conteúdo. No entanto, em cenários em que é essencial fornecer conteúdo atualizado imediatamente, pode ser útil limpar o cache do CDN diretamente.
 
-[Saiba como](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) configurar por autoatendimento um token de API de limpeza usando o pipeline de configuração do Cloud Manager, para poder [invocar as APIs de limpeza](/help/implementing/dispatcher/cdn-cache-purge.md), com qualquer uma destas variações:
+[Saiba como](/help/implementing/dispatcher/cdn-credentials-authentication.md#purge-API-token) usar o autoatendimento da configuração de um token de API de limpeza usando o pipeline de configuração do Cloud Manager para [invocar as APIs de limpeza](/help/implementing/dispatcher/cdn-cache-purge.md), com qualquer uma destas variações:
+
 * URL único
 * Vários URLs usando uma tag
 * Limpeza completa do cache do CDN
 
 ### Configuração de autoatendimento do X-AEM-Edge-Key para CDN gerenciada pelo cliente {#customermanaged-keys}
 
-Anteriormente, um tíquete de suporte era necessário para gerar a X-AEM-Edge-Key necessária para a configuração de um CDN gerenciado pelo cliente. Agora, isso se torna autoatendimento ao declarar o valor principal em um arquivo de configuração implantado usando o Pipeline de configuração, removendo qualquer atraso na integração de um novo ambiente. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Anteriormente, um tíquete de suporte era necessário para gerar a X-AEM-Edge-Key necessária para a configuração de um CDN gerenciado pelo cliente. Esse fluxo de trabalho agora é de autoatendimento ao declarar o valor principal em um arquivo de configuração implantado usando o Pipeline de configuração, removendo qualquer atraso na integração de um novo ambiente. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
 ### Alertas de regras de filtro de tráfego {#traffic-filter-rules-alerts}
 
-As Regras de filtro de tráfego, que incluem as regras opcionalmente licenciáveis do Web Application Firewall (WAF), permitem configurar o tráfego que deve ser bloqueado.
+As regras de filtro de tráfego, que incluem as regras opcionalmente licenciáveis do Web Application Firewall (WAF), permitem configurar o tráfego que deve ser bloqueado.
 
-Agora é possível [assinar alertas](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) sempre que as regras de filtro de tráfego forem acionadas. As notificações por email do Centro de ações mantêm você informado quando ocorrem determinadas condições de tráfego para que você possa tomar as medidas apropriadas.
+Agora você pode [assinar alertas](/help/security/traffic-filter-rules-including-waf.md#traffic-filter-rules-alerts) sempre que as regras de filtro de tráfego forem acionadas. As notificações por email do Centro de ações mantêm você informado quando ocorrem determinadas condições de tráfego para que você possa tomar as medidas apropriadas.
 
 ### Programas dos primeiros usuários relacionados à entrega de conteúdo {#foundation-early-adopter}
 

@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 99a36bab3ca8d5e6a64e1fdb9c179cf8a3190a14
+source-git-commit: fc578f35214327567aaa6f5d88a637df9428f87f
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1245'
 ht-degree: 13%
 
 ---
@@ -65,6 +65,12 @@ Aproveite a GenAI por meio do novo recurso AEM, [gerar variações](/help/genera
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
+### Recurso de acesso antecipado no Dynamic Media {#dm-early-access}
+
+**Legendas de vídeo baseadas em IA**
+
+Legendas de vídeo baseadas em IA no Adobe Dynamic Media usam inteligência artificial para gerar legendas automaticamente para conteúdo de vídeo. Esse recurso foi projetado para melhorar a acessibilidade e a experiência do usuário, fornecendo legendas precisas e em tempo real. A IA analisa a faixa de áudio do vídeo para transcrever a fala e criar legendas, que podem ser editadas para precisão ou personalização. Essas legendas ajudam a atender aos requisitos de acessibilidade e melhorar o envolvimento com o vídeo para públicos-alvo que dependem ou preferem suporte de vídeo baseado em texto.
+
 ### Novos recursos na visualização de ativos {#assets-view-new-features}
 
 **Geração de imagem de Adobe Firefly atualizada**
@@ -80,7 +86,7 @@ O Assets as a Cloud Service agora é compatível com documentos grandes da Photo
 ### Novos aprimoramentos na Content Hub {#content-hub-new-enhancements}
 
 * Melhor manipulação de nomes de arquivo longos, fácil expansão do nome completo através de dica de ferramenta.
-* Miniaturas aprimoradas para melhor se ajustar às proporções de tamanho do conteúdo e abranger uma área maior do conteúdo.
+* Miniaturas aprimoradas para melhor se ajustar às proporções de conteúdo e cobrir uma área maior de conteúdo.
 * Experiência de miniatura personalizada do AEM compatível com o content hub.
 * Melhorias na pesquisa de cores.
 * As melhorias nas configurações salvam a experiência.
@@ -112,17 +118,17 @@ Os recursos de IA gerativa disponíveis são:
 
 * **Assistente de IA para consultas de produtos**: obtenha respostas instantâneas para suas perguntas relacionadas ao formulário AEM. O assistente de IA atua como sua própria base de conhecimento pessoal, fornecendo orientação e recomendações relevantes diretamente na plataforma.
 
-* **Geração de formulário adaptável**: crie formulários completos sem esforço com Prompts do Generative AI. Nossa IA gerativa gera automaticamente formulários amigáveis que reduzem as quedas e personalizam a experiência.
+* **Geração de formulário adaptável**: crie formulários completos sem esforço com prompts de IA geradores. A IA gerativa do Adobe gera automaticamente formulários amigáveis que reduzem as quedas e personalizam a experiência.
 
 * **Geração de painel para Forms**: gere seções de formulário personalizadas para necessidades específicas de coleta de dados. Por exemplo, gere seções para coletar informações de pagamento, preferências do cliente ou detalhes da viagem.
 
-* **Alterando Layouts de Formulário**: experimente diferentes layouts e designs usando Solicitações de IA Gerativa. Experimente diferentes layouts, como visualizações com assistente ou em abas, para encontrar o ajuste perfeito para o seu formulário. Use os Prompts de IA gerativa para otimizar seus formulários para a agilidade móvel e criar formulários visualmente envolventes que os usuários adoram.
+* **Alterando Layouts de Formulário**: experimente diferentes layouts e designs usando prompts de IA geradores. Experimente diferentes layouts, como visualizações com assistente ou em abas, para encontrar o ajuste perfeito para o seu formulário. Use prompts de IA gerativos para otimizar seus formulários para a agilidade e criar formulários visualmente envolventes que os usuários adoram.
 
-* **Configurar Ação de Envio**: use os prompts da IA Gerativa para configurar facilmente uma ação de envio para o seu formulário. Escolha entre uma biblioteca de ações de envio pré-criadas ou entre uma lista de ações de envio personalizadas, criadas e implantadas pela sua própria equipe de desenvolvimento.
+* **Configurar Ação de Envio**: use prompts de IA gerativa para configurar uma ação de envio facilmente para o seu formulário. Escolha entre uma biblioteca de ações de envio pré-criadas ou ações de envio personalizadas criadas e implantadas pela sua equipe de desenvolvimento.
 
 >[!IMPORTANT]
 >
-> Se você estiver interessado em participar do Programa de Acesso Antecipado para qualquer inovação, basta enviar um email de seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) com a lista de recursos nos quais você está interessado.
+> Interessado em participar do Programa de acesso antecipado para qualquer inovação da Forms? Envie um email de seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) com a lista de recursos nos quais você está interessado.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
