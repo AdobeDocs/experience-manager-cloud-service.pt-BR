@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 14%
+ht-degree: 10%
 
 ---
 
@@ -41,7 +41,7 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 1. Na tela **Ambientes**, navegue até a tela **Certificados SSL**.
 1. Na linha do certificado gerenciado pelo cliente expirado que você deseja atualizar, clique no botão de reticências na extremidade direita e selecione **Exibir e Atualizar**.
 
-   ![Atualize uma certificação SSL expirada e gerenciada pelo cliente](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
+   ![Atualizar uma certificação SSL gerenciada pelo cliente expirada](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
 1. Na caixa de diálogo **Exibir e atualizar certificado SSL**, faça o seguinte:
 
@@ -54,7 +54,7 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 
 ## Substituir um certificado SSL gerenciado pelo cliente expirado {#replace-ssl-certificate}
 
-Siga as mesmas etapas descritas em [Atualizar um Certificado SSL expirado](#update-ssl-certificate) para substituir um certificado SSL gerenciado pelo cliente expirado.
+Siga as mesmas etapas descritas em [Atualizar um certificado SSL expirado](#update-ssl-certificate) para substituir um certificado SSL gerenciado pelo cliente expirado.
 
 ## Excluir um certificado SSL {#deleting-an-ssl-certificate}
 
@@ -87,4 +87,4 @@ A mensagem desaparece depois que todas as configurações de ambiente pré-exist
 
 Consulte [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) para obter mais detalhes.
 
-Uma mensagem semelhante também é fornecida nas páginas **Lista de permissões de IP** e **Ambientes** para ambientes que tenham configurações pré-existentes de CDN para listas de permissões de IP ou nomes de domínio personalizados.
+Uma mensagem semelhante também é fornecida nas páginas **Lista de permissões de IP** e **Ambientes** para ambientes que tenham configurações de CDN pré-existentes para Listas de permissões de IP ou nomes de domínio personalizados.
