@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e3667a6172447072d7c528213826fd0171e9acc2
+source-git-commit: 7c195e5640f828d2c59dbabd8f29127692788576
 workflow-type: tm+mt
-source-wordcount: '9406'
+source-wordcount: '9402'
 ht-degree: 1%
 
 ---
@@ -526,7 +526,7 @@ Você pode ativar o suporte no Dynamic Media para:
 * Legendas múltiplas e faixas de áudio
 * Legendas geradas por IA (Acesso antecipado)
 
-Por meio de um caso de Suporte ao cliente do Adobe que você cria e envia.
+Criando e enviando um caso de Suporte ao cliente do Adobe.
 
 Ativar qualquer um dos três recursos acima ativa todos eles. Portanto, se você quiser apenas o DASH ativado, estará ativando todos os três recursos listados acima.
 
