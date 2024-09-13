@@ -4,9 +4,9 @@ description: Saiba mais sobre todos os elementos que precisam estar em vigor par
 exl-id: b424a9db-0f3b-4a8d-be84-365d68df46ca
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 4a369104ea8394989149541ee1a7b956383c8f12
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '567'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Revise esta lista de atividades para garantir que você execute uma ativação t
       * Configure o SSL e o DNS de acordo com a documentação do fornecedor do CDN.
    * Se você não estiver usando um CDN adicional, gerencie o SSL e o DNS de acordo com a seguinte documentação:
       * Gerenciar certificados SSL
-         * [Introdução ao gerenciamento de certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Introdução aos certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md)
          * [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Gerenciar nomes de domínio personalizados (DNS)
          * Certifique-se de que a transferência de DNS não cause problemas inesperados. Crie um subdomínio de teste para conectar sua instância de produção ao antes de entrar em funcionamento e fazer uma rodada de testes UAT. Portanto, se o domínio for example.com, você poderá criar um subdomínio test.example.com e aplicá-lo à produção. Durante os testes UAT do domínio, procure itens como redirecionamento adequado de link, armazenamento em cache e configurações do Dispatcher.

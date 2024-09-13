@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 8%
@@ -23,7 +23,7 @@ Consulte também [Solucionar problemas de erros de certificado SSL](/help/implem
 
 Um certificado pode levar alguns dias para ser provisionado. Assim, a Adobe recomenda que o certificado seja provisionado bem antes de qualquer prazo ou data de ativação.
 
-Certifique-se de revisar os **Requisitos do certificado** em [Introdução ao Gerenciamento de Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md#requirements) para verificar se a AEM as a Cloud Service oferece suporte ao certificado que você deseja adicionar.
+Certifique-se de revisar os **Requisitos do certificado** em [Introdução ao Gerenciamento de Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements) para verificar se a AEM as a Cloud Service oferece suporte ao certificado que você deseja adicionar.
 
 O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente de implantação** para concluir esta tarefa.
 
@@ -45,7 +45,7 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 
 1. Próximo ao canto superior direito da página, clique em **Adicionar certificado SSL**.
 
-1. Na caixa de diálogo **Adicionar certificado SSL**, com base em [seu caso de uso específico](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), execute um dos procedimentos a seguir:
+1. Na caixa de diálogo **Adicionar certificado SSL**, com base em [seu caso de uso específico](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md), execute um dos procedimentos a seguir:
 
    | | Caso de uso | Etapas |
    | --- | --- | --- |

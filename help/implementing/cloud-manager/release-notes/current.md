@@ -4,7 +4,7 @@ description: Saiba mais sobre as notas de versão do Cloud Manager 2024.9.0 no A
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 610ae004b6da2f7fc0dae2baa613cb363fe9fb00
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 11%
@@ -39,7 +39,7 @@ A data de lançamento do Cloud Manager versão 2024.9.0 no AEM as a Cloud Servic
 
 * Suporte a **Edge Delivery Services no Cloud Manager:**
 
-  Se você tiver uma licença de Edge Delivery Services como parte do AEM Sites, [agora é possível integrar seu site com Edge Delivery Services diretamente pelo Cloud Manager](/help/implementing/cloud-manager/edge-delivery-services.md). Esse recurso permite uma experiência de ativação guiada e de autoatendimento. Ele também unifica fluxos de trabalho essenciais, como gerenciamento de nomes de domínio, certificados SSL e mapeamentos de CDN, em todas as propriedades AEM, garantindo consistência e eficiência. <!-- CMGR-49859 -->
+  Se você tiver uma licença de Edge Delivery Services como parte do AEM Sites, [agora é possível integrar seu site com Edge Delivery Services diretamente pelo Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Esse recurso permite uma experiência de ativação guiada e de autoatendimento. Ele também unifica fluxos de trabalho essenciais, como gerenciamento de nomes de domínio, certificados SSL e mapeamentos de CDN, em todas as propriedades AEM, garantindo consistência e eficiência. <!-- CMGR-49859 -->
 
   >[!NOTE]
   >

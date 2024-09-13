@@ -4,10 +4,10 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 16875180-1f23-477d-9d4d-e220998c4983
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 11%
+source-wordcount: '657'
+ht-degree: 9%
 
 ---
 
@@ -32,7 +32,7 @@ A versão seguinte (2021.1.0) é 28 de janeiro de 2021.
 
 * Os recursos do [!DNL Dynamic Media] agora podem ser acessados por meio dos Componentes principais baseados em imagem do AEM [!DNL Sites]. Os autores podem configurar rapidamente os componentes para usar Predefinições de imagem, Recorte inteligente e Modificadores de imagem ao criar páginas da Web. Consulte [Versão dos Componentes Principais 2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0).
 
-* O aplicativo de desktop [!DNL Experience Manager] permite que os usuários façam o upload de arquivos e pastas arrastando os arquivos do Windows Explorer ou do Mac Finder na interface do aplicativo de desktop. Consulte [adicionar ativos usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* O aplicativo de desktop [!DNL Experience Manager] permite que os usuários façam o upload de arquivos e pastas arrastando os arquivos do Windows Explorer ou do Mac Finder na interface do aplicativo de desktop. Consulte [adicionar ativos usando o aplicativo de desktop](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#upload-and-add-new-assets-to-aem).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -50,7 +50,7 @@ A data de lançamento do Cloud Manager no Adobe Experience Manager (AEM as a Clo
 
 ### Novidades do [!DNL Cloud Manager] {#what-is-new-cm}
 
-* Gerenciamento por autoatendimento de [certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md) e [nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+* Gerenciamento por autoatendimento de [Certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md) e [Introdução a Nomes de Domínio Personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 * Gerenciamento por autoatendimento de [listas de permissão de IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
 
@@ -66,7 +66,7 @@ A data de lançamento do Cloud Manager no Adobe Experience Manager (AEM as a Clo
 
 ### Novidades do [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui correções de erros para o AEM Dispatcher Converter e o Repository Modernizer, além de oferecer suporte a um novo utilitário: Conversor de índice. Consulte [Experiência unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience.html#benefits), onde você pode saber mais sobre este plug-in.
+* Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui correções de erros para o AEM Dispatcher Converter e o Repository Modernizer, além de oferecer suporte a um novo utilitário: Conversor de índice. Consulte [Experiência unificada](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/refactoring-tools/unified-experience#benefits), onde você pode saber mais sobre este plug-in.
 
 * O Conversor de índice é um utilitário que pode ser usado para transformar as Definições de índice Oak personalizadas de um cliente em Definições de índice Oak compatíveis com AEM as a Cloud Service. Consulte [Conversor de Índice](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obter mais detalhes.
 
@@ -86,6 +86,6 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.1.20 é 8 
 
 ### Correções de erros {#ctt-bug-fixes}
 
-* O status da interface do usuário da Ferramenta de transferência de conteúdo (CTT) de um conjunto de migração não persistiu e foi alterado após um período de inatividade. Isso foi corrigido.
-* A opção para visualizar logs estava desativada se os logs não estivessem disponíveis. Isso foi corrigido e mensagens foram adicionadas para notificar os usuários sobre os logs ausentes.
-* O status da interface do usuário da Ferramenta de transferência de conteúdo mostrava *FALHA* quando o usuário interrompeu uma assimilação. Isto foi corrigido para exibir *PARADO*.
+* O status da interface do usuário da Ferramenta de transferência de conteúdo (CTT) de um conjunto de migração não persistiu e foi alterado após um período de inatividade. Esse problema foi corrigido.
+* A opção para visualizar logs estava desativada se os logs não estivessem disponíveis. Esse problema foi corrigido e agora as mensagens são adicionadas para notificar os usuários sobre os registros que estão ausentes.
+* O status da interface do usuário da Ferramenta de transferência de conteúdo mostrava *FALHA* quando o usuário interrompeu uma assimilação. Esse problema foi corrigido para exibir *PARADO*.

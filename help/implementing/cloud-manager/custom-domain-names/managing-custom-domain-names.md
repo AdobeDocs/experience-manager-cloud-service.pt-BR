@@ -5,7 +5,7 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e887b753eaf09e104c68484792f00dcb08ee304
+source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 54%
@@ -41,7 +41,7 @@ Você pode seguir [as mesmas etapas para exibir e atualizar um nome de domínio 
 
 >[!NOTE]
 >
->O certificado SSL deve ser válido, [já configurado](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), e conter o nome de domínio personalizado que você está atualizando.
+>O certificado SSL deve ser válido, [já configurado](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md), e conter o nome de domínio personalizado que você está atualizando.
 
 ## Excluir um nome de domínio personalizado {#deleting}
 
