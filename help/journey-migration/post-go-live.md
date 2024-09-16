@@ -1,12 +1,12 @@
 ---
 title: Pós-ativação
-description: Saiba como monitorar problemas e melhorar o desempenho
+description: Saiba como monitorar problemas e melhorar o desempenho.
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 feature: Migration
 role: Admin
-source-git-commit: 13a2386c099624a46e84126a939a9470e9b3a5f2
+source-git-commit: bb2688701b80a560ea9078c2b7b6594ff55ce824
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 16%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 16%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_troubleshooting"
 >title="Solução de problemas do AEM"
->abstract="Analise as práticas recomendadas para o desenvolvimento contínuo e gerencie registros juntamente com ferramentas como o Developer console e o CRXDE Lite para ajudar na solução de problemas com o AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=pt-BR" text="Acesso e gerenciamento de registros"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR#aem-as-a-cloud-service-development-tools" text="Ferramentas de desenvolvimento do AEM as a Cloud Service"
+>abstract="Analise as práticas recomendadas para o desenvolvimento e o gerenciamento contínuos de registros. Saiba mais sobre ferramentas como o Developer Console e o CRXDE Lite para ajudar a solucionar problemas com o AEM."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Acesso e gerenciamento de registros"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Ferramentas de desenvolvimento do AEM as a Cloud Service"
 
-Esta jornada é a última parte, para que você aprenda a monitorar problemas e melhorar o desempenho após a conclusão da migração. Você deve garantir a limpeza de arquivos temporários, analisar práticas recomendadas para desenvolvimento contínuo e gerenciar logs.
+Esta jornada é a última parte, para que você saiba como monitorar problemas e melhorar o desempenho após a conclusão da migração. Garanta a limpeza de arquivos temporários, analise as práticas recomendadas para desenvolvimento contínuo e gerencie logs.
 
 ## A história até agora {#story-so-far}
 
