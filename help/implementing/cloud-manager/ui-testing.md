@@ -5,9 +5,9 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: bb75e70fb83b63e12968f7cb01e6976e367ff70e
 workflow-type: tm+mt
-source-wordcount: '2610'
+source-wordcount: '2630'
 ht-degree: 79%
 
 ---
@@ -212,16 +212,20 @@ Esta seção descreve as convenções que a imagem do Docker que contém seus te
 
 As seguintes variáveis de ambiente são passadas para a imagem do Docker em tempo de execução, dependendo da estrutura.
 
+>[!NOTE]
+>
+> Esses valores serão definidos automaticamente durante a execução do pipeline - não há necessidade de defini-los manualmente como variáveis de pipeline.
+
 | Variável | Exemplos | Descrição | Estrutura de testes |
-|----------------------------|----------------------------------|---------------------------------------------------------------------------------------------------|---------------------|
+|----------------------------|----------------------------------|----------------------------------------------------------------------------------------------------|---------------------|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | A URL do servidor Selenium | Somente Selenium |
 | `SELENIUM_BROWSER` | `chrome` | A implementação do navegador usada pelo servidor Selenium | Somente Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | O URL da instância do autor do AEM | Todos |
 | `AEM_AUTHOR_USERNAME` | `admin` | O nome de usuário para fazer logon na instância de autor do AEM | Todos |
 | `AEM_AUTHOR_PASSWORD` | `admin` | A senha para fazer logon na instância de autor do AEM | Todos |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | O URL da instância de publicação do AEM | Todos |
-| `AEM_PUBLISH_USERNAME` | `admin` | O nome de usuário para fazer logon na instância de publicação do AEM | Todos |
-| `AEM_PUBLISH_PASSWORD` | `admin` | A senha para fazer logon na instância de publicação do AEM | Todos |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | O URL da instância de publicação do AEM | Todos * |
+| `AEM_PUBLISH_USERNAME` | `admin` | O nome de usuário para fazer logon na instância de publicação do AEM | Todos * |
+| `AEM_PUBLISH_PASSWORD` | `admin` | A senha para fazer logon na instância de publicação do AEM | Todos * |
 | `REPORTS_PATH` | `/usr/src/app/reports` | O caminho onde o relatório XML dos resultados do teste deve ser salvo | Todos |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | O URL no qual o arquivo deve ser enviado para torná-lo acessível à estrutura de teste | Todos |
 | `PROXY_HOST` | `proxy-host` | O nome do host do Proxy HTTP interno a ser usado pela estrutura de teste | Todos, exceto Selenium |
@@ -231,6 +235,8 @@ As seguintes variáveis de ambiente são passadas para a imagem do Docker em tem
 | `PROXY_OBSERVABILITY_PORT` | `8081` | A porta de verificação de integridade HTTP do servidor proxy | Todos, exceto Selenium |
 | `PROXY_RETRY_ATTEMPTS` | `12` | Número sugerido de tentativas ao aguardar a prontidão do servidor proxy | Todos, exceto Selenium |
 | `PROXY_RETRY_DELAY` | `5` | Atraso sugerido entre tentativas de repetição ao aguardar a prontidão do servidor proxy | Todos, exceto Selenium |
+
+`* these values will be empty if there is no publish instance`
 
 Os exemplos de teste da Adobe fornecem funções auxiliares para acessar os parâmetros de configuração:
 
