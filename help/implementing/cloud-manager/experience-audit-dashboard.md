@@ -5,7 +5,7 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 505e0887124472693216fee2f0a3e960591b5ae5
+source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
 workflow-type: tm+mt
 source-wordcount: '1950'
 ht-degree: 6%
@@ -47,10 +47,10 @@ As auditorias são executadas como parte do pipeline. As auditorias também pode
 
 A Auditoria de experiência está disponível por padrão para pipelines de produção. Ele pode ser ativado opcionalmente para o desenvolvimento de pipelines de pilha completa e front-end. Em todos os casos, é necessário definir quais caminhos de conteúdo são avaliados durante a execução do pipeline.
 
-1. Dependendo do tipo de pipeline que você deseja configurar, siga as instruções para:
+1. Dependendo do tipo de pipeline que você deseja configurar, siga um destes procedimentos:
 
    * Adicione um novo [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para definir os caminhos que você deseja que a auditoria avalie.
-   * Adicione um novo [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desejar habilitar a auditoria em um pipeline de front-end ou de pilha completa de desenvolvimento.
+   * Adicione um novo [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), se desejar habilitar a auditoria em um pipeline de front-end ou de pilha completa de desenvolvimento.
    * Ou você pode [editar um pipeline existente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e atualizar as opções existentes.
 
 1. Para usar o Experience Audit ao adicionar ou editar um pipeline de não produção, marque a caixa de seleção **Auditoria de experiência**. Você pode encontrar essa opção na guia **Código Source**.
@@ -176,7 +176,7 @@ Clique no link **ver páginas** na exibição de detalhes para ver as páginas �
 
 ![Páginas para obter detalhes da recomendação](assets/experience-audit-details-pages.png)
 
-##### Páginas digitalizadas {#scanned-pages}
+##### Páginas verificadas {#scanned-pages}
 
 A seção **Páginas digitalizadas** fornece detalhes das pontuações em todas as páginas digitalizadas. Use os botões **Anterior** e **Avançar** para percorrer os resultados e escolher quantos a exibição deve paginar.
 
@@ -236,7 +236,6 @@ Alguns motivos pelos quais as páginas podem não estar disponíveis são:
 * A página não existe.
 * A página redireciona exigindo autenticação diferente da básica.
 * Problema interno.
-* Etc.
 
 >[!TIP]
 >
@@ -255,7 +254,7 @@ Você pode melhorar essas áreas fazendo o seguinte:
 * Conversão de imagens para o formato WebP para reduzir seu tamanho.
 * Usando `<picture>` e imagem `srcset` com tamanhos de imagem variados para diferentes tamanhos de visor (e garantindo que o redimensionamento funcione).
 
-## Detalhes de avaliação da auditoria de experiência {#details}
+## Detalhes de avaliação da Auditoria de experiência {#details}
 
 Os detalhes a seguir fornecem informações adicionais sobre como a Auditoria de experiência avalia o site. Eles não são necessários para o uso geral do recurso e são fornecidos aqui para fins de integridade.
 

@@ -1,67 +1,72 @@
 ---
 title: Relatórios de SLA
-description: Saiba como visualizar o desempenho do seu ambiente de produção do AEM em relação ao acordo de nível de serviço (SLA).
+description: Saiba como ver o desempenho do seu ambiente de produção de AEM em relação ao Contrato de nível de serviço.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 52%
+source-wordcount: '477'
+ht-degree: 11%
 
 ---
 
 
 # Relatórios de SLA {#sla-reporting}
 
-Saiba como visualizar o desempenho do seu ambiente de produção do AEM em relação ao acordo de nível de serviço (SLA).
+Saiba como ver o desempenho do seu ambiente de produção de AEM em relação ao SLA contratado (Contrato de nível de serviço).
 
-## Introdução {#introduction}
+## Exibir um relatório do SLA {#introduction}
 
-Os dados de relatórios de SLA estão disponíveis para cada programa de produção por meio da guia **Relatórios**. Siga estas etapas para acessar.
+Os dados de relatório do SLA acompanham as métricas de desempenho de dois níveis de produção: Nível de criação e Nível de Publish.
+
+O gráfico de linhas de um ano selecionado inclui pontos de dados para cada mês de janeiro a dezembro. As métricas a seguir são rastreadas.
+
+| Métrica rastreada | Cor da linha | Descrição |
+| --- | --- | --- |
+| Camada do autor real | Verde claro | O tempo de atividade medido no Nível de Autor de produção depois de deduzidos os incidentes causados pelos fornecedores de Adobe ou Adobe. |
+| Contrato da camada do autor | Azul escuro | A SLA definida em seu contrato com o Adobe para a camada Autor. |
+| Publicar camada real | Laranja | O tempo de atividade medido no nível de produção do Publish, considerando incidentes causados por fornecedores de Adobe ou Adobe. |
+| Publicar camada de contrato | Vermelho | O SLA definido em seu contrato com o Adobe para o Publish Tier. |
+
+**Para exibir um relatório do SLA:**
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
-1. Usando o painel de navegação lateral, navegue até a guia **Relatórios** na página **Visão geral**.
+1. Na página **Visão geral do programa**, no painel de navegação esquerdo, clique em **Relatórios**.
 
-1. Clique no ano desejado para ver os dados de SLA mostrados na forma de um gráfico.
+1. Clique em **Relatórios do SLA**.
 
-![Exemplo de gráfico de SLA](assets/sla-reporting-1.png)
+   ![Gráfico de linhas de relatório do SLA](/help/implementing/cloud-manager/assets/cm-sla-report.png)
 
-Passe o cursor sobre um ponto de dados para ver os valores específicos desse ponto.
+1. Clique no ano desejado para ver um gráfico de linhas de dados do SLA.
 
-![Exibição de dados detalhados](assets/sla-reporting-b.png)
+1. (Opcional) Siga qualquer um destes procedimentos:
 
-## Métricas de SLA {#sla-metrics}
+   * Passe o cursor sobre um ponto de dados no gráfico de linhas para mostrar os valores específicos desse ponto.
+   * Abaixo do ano do gráfico de linhas, clique no ícone Download para salvar um arquivo de imagem PNG do gráfico de linhas.
+   * Clique em um nome de métrica para ver apenas os dados dessa métrica. Ou pressione `Shift` no teclado ao selecionar ou desmarcar um ou mais nomes de métrica.
 
-O gráfico do ano selecionado inclui vários conjuntos de dados.
-
-* **Contrato de Nível de Publicação** - Esse é o SLA definido em seu contrato com a Adobe para o nível de publicação.
-
-* **Nível de Publicação Real** - Esse é o tempo de atividade medido no nível de publicação de produção depois de deduzidos os incidentes causados pela Adobe ou pelos fornecedores da Adobe.
-
-* **Contrato de Nível de Autor** - Esse é o SLA definido em seu contrato com a Adobe para a camada de autor.
-
-* **Nível de Autoria Real** - Esse é o tempo de atividade medido no nível de autoria de produção depois de deduzidos os incidentes causados pela Adobe ou pelos fornecedores da Adobe.
+   ![Exibição de dados detalhados](/help/implementing/cloud-manager/assets/cm-sla-download.png)
 
 ## Análise de eventos {#event-analysis}
 
-A seção **Análise de eventos** no gráfico mostra o conjunto de incidentes que ocorreram para o programa durante o ano selecionado.
+A seção **Análise de Eventos** no gráfico mostra o conjunto de incidentes que ocorreram para o programa durante o ano selecionado.
 
 Cada um dos incidentes tem um intervalo de tempo, uma causa e um conjunto de comentários.
 
 ![Exemplo de análise de eventos](assets/sla-reporting-c.png)
 
-## Intervalo de atualização {#refresh}
+## Atualizar intervalo de relatórios do SLA {#refresh}
 
-Os relatórios de SLA fornecem informações sobre o desempenho do ambiente de produção de AEM e estão atualizados, mas não são instantâneos. A geração de relatórios de SLA acontece mensalmente e é gerada para novos programas marcados como Produção no mês anterior. Não é instantâneo. Devido a esse atraso, lembre-se do seguinte ao revisar seu relatório de SLA:
+Os relatórios do SLA fornecem informações sobre o desempenho do ambiente de produção de AEM e estão atualizados, mas não são instantâneos. A geração de relatórios do SLA acontece mensalmente e é gerada para novos programas marcados como `Production previous month`. Não é instantâneo. Devido a esse atraso, lembre-se do seguinte ao revisar seu relatório do SLA:
 
-* O SLA relatado será aquele que existia no início do mês, mesmo se o SLA tiver mudado durante esse mês.
-* Se não houver SLA no início do mês porque o programa não existia, será aplicado o SLA existente na data em que o programa foi criado.
+* O SLA relatado é aquele que existia no início do mês, mesmo se o SLA mudou durante esse mês.
+* Se não havia SLA no início do mês porque o programa não existia, a SLA existente na data em que o programa foi criado se aplica.
 
 ## Visualizar ambientes {#preview}
 
-O ambiente de visualização é uma ferramenta para que os autores de conteúdo verifiquem a experiência final do conteúdo antes da publicação. Por causa disso, os ambientes de visualização não foram projetados com alta disponibilidade e não têm um SLA associado.
+O ambiente de visualização é uma ferramenta para que os autores de conteúdo verifiquem a experiência final do conteúdo antes da publicação. Devido a essa funcionalidade, os ambientes de visualização não foram projetados com alta disponibilidade e não têm um SLA associado.
