@@ -4,9 +4,9 @@ description: Configuração das regras de filtro de tráfego, incluindo as regra
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: dee1a768c1cec6cf0e7c321d4d76a486db661d13
+source-git-commit: cf9e1b3c290d142095912c794de58547913faece
 workflow-type: tm+mt
-source-wordcount: '3928'
+source-wordcount: '4012'
 ht-degree: 1%
 
 ---
@@ -55,8 +55,7 @@ O Adobe solicita seu feedback ou faça perguntas sobre as regras de filtro de tr
 
 No cenário digital atual, o tráfego mal-intencionado é uma ameaça constante. A Adobe reconhece a gravidade do risco e oferece várias abordagens para proteger os aplicativos do cliente e mitigar os ataques quando eles ocorrem.
 
-Na borda, o CDN gerenciado por Adobe absorve ataques de DoS na rede
-camada (camadas 3 e 4), incluindo os ataques de inundação e reflexão/amplificação.
+Na borda, o CDN gerenciado por Adobe absorve ataques de DoS na camada de rede (camadas 3 e 4), incluindo ataques de inundação e de reflexão/amplificação.
 
 Por padrão, o Adobe adota medidas para evitar a degradação do desempenho devido a picos de tráfego inesperadamente alto além de um determinado limite. Se houver um ataque de DoS que afete a disponibilidade do site, as equipes de operações do Adobe serão alertadas e tomarão medidas para atenuar o problema.
 
@@ -475,6 +474,14 @@ data:
           type: block
         rateLimit: { limit: 100, window: 10, penalty: 60, count: fetches }
 ```
+
+## Regras CVE {#cve-rules}
+
+Se o WAF estiver licenciado, o Adobe aplicará automaticamente regras de bloqueio para proteger contra muitos CVEs (vulnerabilidades e exposições comuns) conhecidos, e novos CVEs poderão ser adicionados logo após serem detectados. Os clientes não devem e não precisam configurar as regras CVE sozinhos.
+
+Se uma solicitação de tráfego corresponder a um CVE, ela aparecerá na entrada de log CDN correspondente.
+
+Entre em contato com o suporte do Adobe se houver dúvidas sobre um CVE específico ou se houver uma regra CVE específica que sua organização deseja desativar.
 
 ## Alertas de regras de filtro de tráfego {#traffic-filter-rules-alerts}
 
