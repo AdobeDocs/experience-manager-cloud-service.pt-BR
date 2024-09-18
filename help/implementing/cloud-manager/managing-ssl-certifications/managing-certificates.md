@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d2f05915c0bf0af073db7f070b83f13aeae55252
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 10%
+source-wordcount: '904'
+ht-degree: 8%
 
 ---
 
@@ -50,11 +50,30 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
    * No campo **Chave privada**, atualize este campo somente se você tiver feito alterações no certificado.
    * No campo **Cadeia de certificados** (ou cadeia de confiança), cole a cadeia de certificados.
 
-1. Clique em **Atualizar** para salvar suas alterações e aplicá-las automaticamente.
+1. Clique em **Atualizar** para salvar suas alterações e aplicá-las automaticamente. —>
 
 ## Substituir um certificado SSL gerenciado pelo cliente expirado {#replace-ssl-certificate}
 
 Siga as mesmas etapas descritas em [Atualizar um certificado SSL expirado](#update-ssl-certificate) para substituir um certificado SSL gerenciado pelo cliente expirado.
+
+## Renomear um certificado SSL gerenciado por Adobe (#rename-an-ssl-certificate)
+
+Veja a seguir alguns motivos pelos quais você pode querer renomear um certificado SSL:
+
+* **Organização aprimorada**: renomear o certificado pode ajudar a esclarecer sua finalidade, como identificar para qual ambiente (por exemplo, preparo, produção) ou domínio ele se destina.
+* **Evitando confusão**: se você estiver gerenciando vários certificados, um nome claro e descritivo pode ajudar a evitar erros, como aplicar o certificado errado ao domínio errado.
+* **Conformidade e auditoria**: certificados nomeados corretamente podem ser mais fáceis de rastrear para fins de segurança e auditoria.
+
+**Para renomear um certificado SSL gerenciado por Adobe:**
+
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione o programa apropriado.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
+1. No canto superior esquerdo da página, clique no ícone de hambúrguer para exibir o menu de navegação esquerdo.
+1. No cabeçalho **Serviços**, clique em **Certificados SSL**.
+1. Na página **Certificados SSL**, clique nas reticências ao final de uma linha cujo certificado você deseja renomear.
+1. Clique em **Renomear**.
+1. Na caixa de diálogo **Renomear Certificado DV**, no campo de texto **Nome do certificado**, digite o novo nome do certificado.
+1. Clique em **Renomear**.
 
 ## Excluir um certificado SSL {#deleting-an-ssl-certificate}
 

@@ -5,35 +5,41 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 54%
+source-wordcount: '445'
+ht-degree: 32%
 
 ---
 
 
 # Gerenciar nomes de domínio personalizados {#managing-custom-domain-names}
 
-O Cloud Manager permite exibir, atualizar, substituir e excluir nomes de domínio personalizados.
+O Cloud Manager permite editar, atualizar, substituir e excluir nomes de domínio personalizados.
 
-## Exibir e atualizar um nome de domínio personalizado {#view-and-update}
+## Editar uma configuração personalizada de nome de domínio {#view-and-update}
 
-Use o menu **Exibir e atualizar** para exibir os detalhes de qualquer um dos nomes de domínio personalizados.
+No Adobe Cloud Manager, talvez você queira editar uma configuração de nome de domínio personalizado pelos seguintes motivos:
 
-**Para exibir e atualizar um nome de domínio personalizado:**
+* **Alternar ambientes**: para aplicar a configuração correta, dependendo se você está disponibilizando conteúdo para usuários finais (Publish) ou usuários internos (Autor).
+* **Atualizações de segurança**: para atualizar para um certificado SSL mais recente para fins de segurança avançada ou conformidade.
+* **Alterando estratégia de implantação**: para garantir que o certificado SSL correto seja aplicado a um ambiente específico para criptografia e acesso ao site adequados.
+
+**Para editar uma configuração personalizada de nome de domínio:**
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
-1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
+1. No canto superior esquerdo da página, clique no ícone de hambúrguer para exibir o menu de navegação esquerdo.
+1. No cabeçalho **Serviços**, clique em **Configurações de CDN**.
+1. Na página **Configurações de CDN**, clique nas reticências ao final de uma linha cujo CDN você deseja editar.
+1. Clique em **Editar**.
+1. Na caixa de diálogo **Editar configuração da CDN**, faça o seguinte:
+   * Na lista suspensa **Camada**, selecione a camada (Autor ou Publish) que deseja usar.
+   * Na lista suspensa **Certificado SSL**, selecione o certificado SSL que deseja usar.
+1. Clique em **Atualizar**.
 
-1. Identifique a linha do nome de domínio personalizado que deseja exibir ou atualizar.
-
-1. Clique no botão de reticências localizado na extremidade direita da linha.
-
-1. Selecione a opção **Exibir e atualizar**.
 
 ## Atualizar um certificado SSL de nome de domínio personalizado {#update-cert}
 
@@ -42,6 +48,7 @@ Você pode seguir [as mesmas etapas para exibir e atualizar um nome de domínio 
 >[!NOTE]
 >
 >O certificado SSL deve ser válido, [já configurado](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md), e conter o nome de domínio personalizado que você está atualizando.
+
 
 ## Excluir um nome de domínio personalizado {#deleting}
 
@@ -60,6 +67,7 @@ Um usuário com a função de **Proprietário da empresa** ou **Gerente de impla
 1. Selecione **Excluir**.
 
 1. Confirme seu envio.
+
 
 ### Excluir um nome de domínio personalizado de um ambiente específico {#delete-cdn-specific}
 

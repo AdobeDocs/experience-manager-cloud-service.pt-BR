@@ -4,10 +4,10 @@ description: Saiba mais sobre como usar o Cloud Manager para editar e atualizar,
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 70f99cfb2cd00278d9ebbb7972ef455af7a87a1b
+source-git-commit: 8e2fc0d4ee82e79d1a822a528b1a46acce3c192a
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 8%
+source-wordcount: '466'
+ht-degree: 6%
 
 ---
 
@@ -18,30 +18,32 @@ Saiba mais sobre como usar o Cloud Manager para editar e atualizar, ou excluir c
 
 ## Editar uma configuração de CDN {#edit-cdn}
 
-Ao editar uma configuração de CDN, você pode ajustar configurações como a camada do ambiente (Publish ou Pré-visualização) ou certificados SSL, sem remover totalmente a configuração existente. As alterações se aplicam ao ambiente selecionado - por exemplo, preparo ou produção - e podem afetar como o conteúdo é entregue e protegido.
+No Adobe Cloud Manager, talvez você queira editar uma configuração de CDN, incluindo a camada de ambiente (Publish ou Pré-visualização) e o certificado SSL, por vários motivos.
+
+* **Alterações de ambiente**: ajustar a camada ajuda a corresponder as configurações de CDN com o ambiente correto, seja para produção em tempo real (Publish) ou teste (Pré-visualização).
+* **Aprimoramentos de segurança**: a seleção de um certificado SSL diferente pode ser necessária ao atualizar certificados ou atender às necessidades de conformidade e segurança.
+* **Otimização do desempenho**: a edição da configuração garante as configurações corretas de CDN para fornecer conteúdo com base nas necessidades operacionais em constante mudança.
+
+É possível editar uma configuração sem remover totalmente a configuração existente. As alterações se aplicam ao ambiente selecionado - por exemplo, preparo ou produção - e podem afetar como o conteúdo é entregue e protegido.
 
 O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente de implantação** para concluir esta tarefa.
 
 **Para editar uma configuração de CDN:**
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
-
 1. No painel de navegação esquerdo, em **Serviços**, clique em **Configurações de CDN**.
-
-1. Na tabela **Configurações de CDN**, clique nas reticências ao final de uma linha cujo CDN você deseja atualizar.
+1. Na tabela **Configurações de CDN**, clique nas reticências ao final de uma linha cuja configuração de CDN você deseja editar.
 
    ![Editando uma configuração de CDN](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
 
 1. Clique em **Editar**.
+1. Na caixa de diálogo **Editar configuração da CDN**, defina uma ou mais das opções na respectiva lista suspensa.
 
-1. Na caixa de diálogo **Editar CDN**, defina uma ou mais das opções na respectiva lista suspensa.
-
-   As opções exibidas na caixa de diálogo podem variar dependendo se você estiver usando um CDN gerenciado por Adobe ou um CDN gerenciado pelo cliente.
+   As opções exibidas na caixa de diálogo podem variar, dependendo se você estiver usando um CDN gerenciado por Adobe ou um CDN gerenciado pelo cliente.
 
 1. Clique em **Atualizar**.
 
    O status da CDN editada é atualizado na tabela **Configurações de CDN** para refletir as alterações feitas.
-
 
 ## Excluir uma configuração de CDN {#delete-cdn}
 
