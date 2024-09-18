@@ -2,7 +2,7 @@
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin,User
-source-git-commit: 63174176c944195ed21e481264e0a50062fd34f3
+source-git-commit: 5c76b28726403a6b011a55add190e6e3a6d7a390
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 8%
@@ -59,7 +59,7 @@ O Seletor de ativos permite personalizar os componentes de acordo com os requisi
 
 >[!MORELIKETHIS]
 >
->* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)
+>* [Personalizações do Seletor de ativos](/help/assets/asset-selector-customization.md)
 >* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
 >* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
 
