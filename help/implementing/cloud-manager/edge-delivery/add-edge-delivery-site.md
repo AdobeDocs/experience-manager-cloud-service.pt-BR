@@ -1,34 +1,29 @@
 ---
 title: Adicionar um site do Edge Delivery ao Cloud Manager
-description: Saiba como adicionar um site do Edge Delivery ao seu programa de produção ou sandbox e os benefícios que ele oferece.
+description: Saiba como adicionar um site do Edge Delivery ao seu programa de produção ou de sandbox.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 68f05c49ebc3d46aa44b3998e6142ab8547e5455
+source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
 
 
-# Adicionar um site do Edge Delivery ao Cloud Manager {#eds-add-site}
+# Adicionar um site do Edge Delivery ao Cloud Manager {#adding}
 
-Saiba como adicionar um site do Edge Delivery ao seu programa de produção ou sandbox e os benefícios que ele oferece.
+Você pode adicionar um site do Edge Delivery ao seu programa de produção ou de sandbox.
 
-## Introdução {#introduction}
+É necessário adicionar um site do Edge Delivery ao Cloud Manager para [registrar um tíquete de suporte para o seu projeto do Edge Delivery](/help/edge/overview.md##support-ticket).
 
-Como parte do projeto do Edge Delivery Services com o AEM as a Cloud Service, é recomendável adicionar o site do Edge Delivery ao Cloud Manager. Adicionar o site do Edge Delivery ao Cloud Manager oferece os seguintes benefícios.
+Consulte também [Introdução a Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md).
 
-* [Acesso ao CDN gerenciado por Adobe](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md)
-* [Acesso aos relatórios do SLA](/help/implementing/cloud-manager/sla-reporting.md)
-* [Acesso aos relatórios de uso de licenciamento](/help/implementing/cloud-manager/license-dashboard.md)
-
-Observe que é necessário adicionar seu site do Edge Delivery ao Cloud Manager para [registrar um tíquete de suporte para seu projeto do Edge Delivery.](/help/edge/overview.md##support-ticket)
-
-## Adicionar o site do Edge Delivery à Cloud Manager {#adding}
+**Para adicionar um site do Edge Delivery ao Cloud Manager:**
 
 1. Faça logon no Cloud Manager em [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/) e selecione o programa apropriado.
 1. Siga uma das seguintes opções:
+
    * Na página **Visão geral do programa**, clique na guia **Edge Delivery**. Em seguida, próximo ao canto inferior direito da página, clique em **Adicionar site do Edge Delivery**.
 
      ![Adicionar site do Edge Delivery na guia Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
@@ -59,11 +54,3 @@ Observe que é necessário adicionar seu site do Edge Delivery ao Cloud Manager 
 1. Clique em **Verificar**.
 
 Depois que o repositório é verificado, seu status na tabela Sites de delivery do Edge muda para um círculo verde com uma marca de seleção branca dentro dele.
-
-Depois de adicionar Edge Delivery Services a um programa de produção, sua licença de Edge Delivery Services é aplicada a ele.
-
-Cada site do Edge Delivery tem uma **lista de tarefas do Edge Delivery** para orientá-lo na criação de seu site do Edge Delivery.
-
-![aplicativo de tarefa do Edge Delivery](/help/implementing/cloud-manager/assets/edge-delivery-to-do-ist.png)
-
-Consulte o documento [Introdução a Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list) para obter detalhes sobre essas etapas.
