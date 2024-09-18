@@ -4,10 +4,10 @@ description: A ferramenta de cópia de conteúdo permite que os usuários copiem
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: dfd44fc637e60f48c3d13430f1f4b9b7b9427d3d
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 33%
+source-wordcount: '1347'
+ht-degree: 34%
 
 ---
 
@@ -32,7 +32,7 @@ O conteúdo a ser copiado é definido por um conjunto de conteúdo. Um conjunto 
 Ao copiar o conteúdo, o ambiente de origem é a fonte de verdade.
 
 * Se o conteúdo tiver sido modificado no ambiente de destino, ele será substituído pelo conteúdo na origem, se os caminhos forem os mesmos.
-* Se os caminhos forem diferentes, o conteúdo da origem será mesclado com o conteúdo no destino.
+* Se os caminhos forem diferentes, o conteúdo da origem será mesclado com o conteúdo do destino.
 
 ## Permissões {#permissions}
 
@@ -64,8 +64,8 @@ Antes que qualquer conteúdo possa ser copiado, um conjunto de conteúdo deve se
 1. Na guia **Caminhos de conteúdo** do assistente, especifique os caminhos do conteúdo mutável a ser incluído no conjunto de conteúdo.
 
    1. Insira o caminho no campo **Adicionar caminho de inclusão**.
-   1. Clique em **Adicionar caminho** para adicionar o caminho ao conjunto de conteúdo.
-   1. Clique em **Adicionar caminho** novamente, conforme necessário.
+   1. Clique no botão **Adicionar caminho** para adicionar o caminho ao conjunto de conteúdo.
+   1. Clique em **Adicionar caminho** novamente, se necessário.
       * São permitidos até 50 caminhos.
 
    ![Adicionar caminhos ao conjunto de conteúdo](assets/add-content-set-paths.png)
@@ -195,8 +195,15 @@ A ferramenta de cópia de conteúdo tem as seguintes limitações.
 * O conteúdo só pode ser copiado de e para os serviços de autoria.
 * Não é possível copiar conteúdo entre programas.
 * Não é possível executar operações de cópia de conteúdo simultâneas no mesmo ambiente.
-* Até 50 caminhos podem ser especificados por conjunto de conteúdo. Não há limitação de caminhos excluídos.
+* Até 50 caminhos podem ser especificados por conjunto de conteúdo. Não há limitação para os caminhos excluídos.
 * Não use a ferramenta de cópia de conteúdo como uma ferramenta de clonagem ou de espelhamento porque ela não pode rastrear conteúdo movido ou excluído na origem.
 * A ferramenta de cópia de conteúdo não tem recurso de controle de versão e não pode detectar automaticamente o conteúdo modificado ou criado no ambiente de origem em um conjunto de conteúdo desde a última operação de cópia de conteúdo.
    * Se quiser atualizar o ambiente de destino somente com alterações de conteúdo, você deverá criar um conjunto de conteúdo desde a última operação de cópia de conteúdo. Em seguida, especifique os caminhos na instância de origem em que as alterações foram feitas desde a última operação de cópia de conteúdo.
 * As informações da versão não são incluídas em uma cópia de conteúdo.
+
+## Problemas conhecidos {#known-issues}
+
+Esteja ciente do seguinte problema conhecido ao usar a [funcionalidade de cópia de conteúdo.](/help/implementing/developing/tools/content-copy.md)
+
+* Se um recurso no ambiente de origem for renomeado, isso poderá causar falha na operação de cópia de conteúdo devido a UUIDs em conflito no ambiente de destino.
+   * Para evitar esse erro, em vez de renomear os recursos, primeiro exclua-os e depois recrie com o novo nome de recurso desejado.
