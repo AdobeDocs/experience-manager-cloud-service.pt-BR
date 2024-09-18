@@ -1,14 +1,20 @@
 ---
 title: Configurar a interface do usuário do Content Hub
 description: Configurar a interface do usuário do Content Hub
-source-git-commit: 7224cca950e61bea298f246245bdb221fd8fa22e
+exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
+source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1185'
 ht-degree: 4%
 
 ---
 
 # Configurar a interface do usuário do Content Hub {#configure-content-hub-user-interface}
+
+>[!CONTEXTUALHELP]
+>id="configure_content_hub"
+>title="Configurar a interface do usuário do Content Hub"
+>abstract="O Experience Manager Assets permite que os administradores configurem as opções disponíveis na interface do usuário do Content Hub. Com base nas opções de configuração selecionadas pelos administradores, os usuários do Content Hub podem exibir campos no Content Hub. As opções de configuração incluem metadados ao importar ativos, filtros, propriedades de ativos, metadados ao pesquisar ativos, marca personalizada e qualquer link personalizado."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configurar ativos no Content Hub](assets/configure-assets.png)
@@ -43,7 +49,7 @@ Para acessar as opções de configuração no Content Hub:
 
 ## Gerenciar opções de configuração no Content Hub {#manage-configuration-options}
 
-Gerencie as seguintes opções de configuração para seus usuários:
+Como administrador, gerencie as seguintes opções de configuração para seus usuários:
 
 * [Importar](#configure-import-options-content-hub)
 
@@ -184,5 +190,3 @@ Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edi
 O link personalizado é exibido como uma nova guia ao lado da guia Insights na página inicial do Content Hub.
 
 ![Guias de Links Personalizados da Interface do Usuário de Configuração no Content Hub](assets/configuration-ui-custom-link-tab.png)
-
-
