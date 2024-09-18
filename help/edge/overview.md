@@ -4,9 +4,9 @@ description: Entenda como o AEM as a Cloud Service pode se beneficiar do desempe
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 6c7e704dff97e8549664618f879863c3ca0f8f86
+source-git-commit: fa50e661d05a5083be3605a8c6e26450357f4aec
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1425'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Com o Edge Delivery Services, o AEM oferece experiências excepcionais que impul
 Ao usar os Edge Delivery Services, é possível:
 
 * Crie sites rápidos com uma pontuação Lighthouse perfeita e monitore continuamente o desempenho do site por meio do monitoramento de uso real (RUM).
-* Aumente a eficiência da criação desvinculando as fontes de conteúdo. Pronto para uso, você pode usar WYSIWYG e criação baseada em documento. Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site.
+* Aumente a eficiência da criação desvinculando as fontes de conteúdo. Você pode usar o WYSIWYG e a criação baseada em documento imediatamente. Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site.
 * Use uma estrutura de experimentação integrada que permita a criação rápida de testes, a execução sem impacto no desempenho e a liberação rápida para a produção de um vencedor de testes.
 
 ## Reação ágil às necessidades dos negócios {#agile-reaction}
@@ -46,9 +46,9 @@ Ao se concentrar no valor para seus autores, o projeto Edge Delivery Services po
 
 ## Ferramentas de criação flexíveis para seus criadores de conteúdo {#overview}
 
-O Edge Delivery Services é um conjunto de serviços combináveis que permite um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Você pode usar a [criação de conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) e WYSIWYG, usando o [Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md) e a [criação baseada em documentos.](https://www.aem.live/docs/authoring)
+O Edge Delivery Services é um conjunto de serviços combináveis que permite um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Você pode usar o [gerenciamento de conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/getting-started/concepts.html) e a criação do WYSIWYG usando o [Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md) e a [criação baseada em documentos.](https://www.aem.live/docs/authoring)
 
-O diagrama a seguir ilustra como você pode editar conteúdo no Microsoft Word (criação baseada em documento) e publicar no Edge Delivery Services. Ele também mostra a edição WYSIWYG usando o editor universal.
+O diagrama a seguir ilustra como você pode editar conteúdo no Microsoft Word (criação baseada em documento) e publicar no Edge Delivery Services. Ele também mostra a edição do WYSIWYG usando o Editor universal.
 
 ![Arquitetura do Edge Delivery](assets/AEM-with-EDS-publishing-simple2.png)
 
@@ -71,21 +71,21 @@ Leitura adicional na documentação de criação baseada em documento:
 * Para entender como criar e publicar conteúdo usando o Edge Delivery, consulte a [seção Publish.](https://www.aem.live/docs/authoring)
 * Para entender como iniciar corretamente o projeto do seu site, consulte a [seção Iniciar.](https://www.aem.live/docs/#launch)
 
-### Criação WYSIWYG {#wysiwyg-authoring}
+### Criação no WYSIWYG {#wysiwyg-authoring}
 
-A criação What-you-see-is-what-you-get (WYSIWYG) aproveita o Universal Editor, um local personalizável e completo para editar conteúdo em tempo real e em contexto com uma visualização visual.
+A criação do WYSIWYG (What-You-See-is-What-You-Get, o que você vê é o que você obtém) aproveita o Universal Editor, um local personalizável e completo para editar conteúdo em tempo real e em contexto, com uma visualização visual.
 
-* Com a criação WYSIWYG, você aumenta a eficiência do autor, seja headless ou headful.
+* Com a criação no WYSIWYG, você aumenta a eficiência do autor, seja headless ou headful.
 * Você pode aproveitar os recursos abrangentes de gerenciamento de conteúdo do AEM, incluindo fluxo de trabalho e governança.
 * Aproveite vários pontos de extensão para dar suporte a seus próprios processos e integrações.
 * A funcionalidade do site pode ser desenvolvida usando CSS e JavaScript no GitHub.
 
-![Criação WYSIWYG](assets/wysiwyg-authoring.png)
+![criação no WYSIWYG](assets/wysiwyg-authoring.png)
 
-Leitura adicional na documentação de criação WYSIWYG:
+Leitura adicional na documentação de criação do WYSIWYG:
 
-* Para obter uma visão geral do Editor universal e da criação WYSIWYG, consulte o documento [Criação de conteúdo WYSIWYG para Edge Delivery Services.](/help/edge/wysiwyg-authoring/authoring.md)
-* Para obter uma visão geral do desenvolvedor, consulte o documento [Guia de Introdução do Desenvolvedor para Criação WYSIWYG com o Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Para obter uma visão geral do Editor universal e da criação do WYSIWYG, consulte o documento [Criação de conteúdo do WYSIWYG para o Edge Delivery Services.](/help/edge/wysiwyg-authoring/authoring.md)
+* Para obter uma visão geral do desenvolvedor, consulte o documento [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
 
 ### Decidindo sobre seu método de criação {#authoring-method}
 
@@ -102,7 +102,7 @@ Consulte o documento [Escolhendo um método de criação](authoring-methods.md) 
 
 Edge Delivery Services fazem parte do Adobe Experience Manager e, como tal, os sites Edge Delivery Services e AEM podem coexistir no mesmo domínio, que é um caso de uso comum para sites maiores. Além disso, o conteúdo dos Edge Delivery Services pode ser facilmente consumido pelas páginas do AEM Sites e vice-versa.
 
-Consulte o [Guia de Introdução do Desenvolvedor para WYSIWYG com Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para saber como iniciar seu próprio projeto para criar com AEM e Edge Delivery Services.
+Consulte o [Guia de Introdução do Desenvolvedor para WYSIWYG com Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para saber como iniciar seu próprio projeto para ser autor com AEM e Edge Delivery Services.
 
 Você também pode usar Edge Delivery Services com o [Adobe Target](https://www.aem.live/developer/target-integration) [RUM (Monitoramento de Uso Real)](https://www.aem.live/developer/rum) para diagnosticar o uso e o desempenho de seus sites e o [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
@@ -135,7 +135,11 @@ Você pode entrar em contato com as equipes de produtos Adobe por meio do canal 
 
 ### Registrando um tíquete de suporte {#support-ticket}
 
-Se um problema do produto exigir investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte seguindo esse processo usando o Admin Console:
+Se um problema do produto precisar de investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte.
+
+Para registrar um tíquete de suporte, primeiro registre o site do Edge Delivery no Cloud Manager. O registro do seu site com o Cloud Manager é recomendado a todos os usuários do AEM as a Cloud Service e o [traz vários benefícios.](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md) Consulte [a documentação do Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) para obter detalhes se você ainda não tiver registrado seu site.
+
+Depois que o site for registrado na Cloud Manager, siga este processo usando o Admin Console para enviar um tíquete de suporte:
 
 1. [Após o processo de suporte padrão](https://experienceleague.adobe.com/?support-tab=home&amp;lang=pt-BR#support), crie um tíquete.
 1. Adicionar **Edge Delivery** no título do tíquete.
