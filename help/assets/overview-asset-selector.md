@@ -3,9 +3,9 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 0b8c345efa4c8f59b423644944ca2a6f8d54cbb4
+source-git-commit: 027922c304be9c36b600b04b264d571ea8ed60d4
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1314'
 ht-degree: 34%
 
 ---
@@ -196,15 +196,15 @@ O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
         <em>Saiba como integrar o Seletor de ativos às APIs do Dynamic Media Open.</em>
         </p>
      </td>
-</tr>
-<tr>
-    <td>
+     <td>
         <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Gráfico de propriedades do Seletor de ativos"><br/>
         <a href="asset-selector-customization.md">Propriedades do seletor de ativos</a>
         <p>
         <em>Saiba mais sobre as noções básicas de personalização de vários componentes do Seletor de ativos, como filtros, seleção de ativos, ativos expirados e muito mais. </em>
         </p>
     </td>
+</tr>
+<tr>
     <td>
         <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Gráfico de exemplos do Seletor de ativos"><br/>
         <a href="asset-selector-customization.md">Exemplos de seletores de ativos</a>
@@ -225,6 +225,15 @@ O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
         <p>
         <em>Saiba como carregar arquivos ou pastas para o Seletor de ativos do seu sistema de arquivos local ou de terceiros. </em>
         </p>
+    </td>
+     <td>
+        <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Gráfico de coleções do Seletor de ativos"><br/>
+        <a href="asset-selector-collections.md">Coleções de seletores de ativos</a>
+        <p>
+        <em>Saiba como usar coleções no Seletor de ativos usando o repositório Experience Manager. </em>
+        </p>
+    </td>
+    <td>
     </td>
 </tr>
 </table>
