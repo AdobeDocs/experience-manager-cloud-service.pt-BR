@@ -3,17 +3,17 @@ title: Adicionar um site do Edge Delivery ao Cloud Manager
 description: Saiba como adicionar um site do Edge Delivery ao seu programa de produção ou de sandbox.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c952e69aa637b30abec4deba0e643b4287d84330
+source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 2%
+source-wordcount: '461'
+ht-degree: 3%
 
 ---
 
 
 # Adicionar um site do Edge Delivery ao Cloud Manager {#adding}
 
-Você pode adicionar um site do Edge Delivery ao seu programa de produção ou de sandbox.
+Depois de adicionar um site do Edge Delivery ao programa de produção, sua licença do Edge Delivery Services é aplicada a ele.
 
 É necessário adicionar um site do Edge Delivery ao Cloud Manager para [registrar um tíquete de suporte para o seu projeto do Edge Delivery](/help/edge/overview.md##support-ticket).
 
@@ -34,22 +34,21 @@ Consulte também [Introdução a Edge Delivery Services no Cloud Manager](/help/
 
 1. Na caixa de diálogo **Adicionar site do Edge Delivery**, forneça as seguintes informações nos campos obrigatórios:
 
-   | Campo de texto | Dados a fornecer |
-   | --- | --- |
-   | Nome do site | Insira o nome do site do Edge Delivery que você está adicionando. O nome serve como um identificador exclusivo do site no Cloud Manager. |
-   | URL do repositório | Esse campo se refere ao repositório Git onde o código do site está armazenado. Esse campo permite que o Cloud Manager extraia o código desse repositório durante o processo de implantação. |
-   | Descrição do site (opcional) | Insira uma breve descrição do site do Edge Delivery que você está adicionando. Esta descrição ajuda a identificar e diferenciar o site, facilitando o gerenciamento e o reconhecimento entre outros sites adicionados. |
+   | Campo de texto | Descrição |
+   | - | --- |
+   | Nome do site | Insira o nome do site do Edge Delivery que você está adicionando.<br>O nome serve como um identificador exclusivo para o site no Cloud Manager. |
+   | URL do repositório | Insira o repositório Git onde o código do site está armazenado.<br>Este campo permite que o Cloud Manager extraia o código desse repositório durante o processo de implantação. |
+   | Descrição do site (opcional) | Insira uma breve descrição do site do Edge Delivery que você está adicionando.<br>Uma descrição ajuda a identificar e diferenciar o site, facilitando o gerenciamento e o reconhecimento entre outros sites adicionados. |
 
 1. No canto inferior direito da caixa de diálogo, clique em **Adicionar**.
 
-1. A caixa de diálogo **Verificar propriedade do repositório** é aberta. Com ele aberto, execute as seguintes etapas:
+1. Na caixa de diálogo **Verificar propriedade do repositório**, verifique a propriedade do repositório executando as seguintes etapas:
 
-   1. Adicione um arquivo com o caminho e o nome `well-known/adobe/cloudmanager-challenge.txt` à ramificação `main` do repositório Git listado no campo **URL do Repositório**.
-      * Se necessário, clique no ícone **Copiar** para copiar o caminho para a área de transferência.
-      * *não* adicione um ponto no início do caminho do local.
-   1. Adicione o código do campo **Step &amp;num; 1** ao arquivo criado na etapa anterior.
-      * Se necessário, clique no ícone **Copiar** para copiar o código para a área de transferência.
-   1. No repositório Git, crie uma solicitação de pull para as alterações recém-criadas e mescle-a com `main`.
+   | Número da etapa | Descrição |
+   | - | - |
+   | **1** | Adicione um arquivo com o caminho e o nome `well-known/adobe/cloudmanager-challenge.txt` à ramificação `main` do repositório Git listado no campo **URL do Repositório**. *não* adicione um ponto no início do caminho do local.<br>Se necessário, clique no ícone **Copiar** para copiar o caminho para a área de transferência. |
+   | **2** | Adicione o código visto no campo de texto na Etapa 2 ao arquivo que você acabou de criar na Etapa 1.<br>Se necessário, clique no ícone **Copiar** para copiar o código para a área de transferência. |
+   | **3** | Crie uma solicitação de pull no repositório Git para as alterações recém-criadas e mescle-a com `main` para confirmar o código. |
 
 1. Clique em **Verificar**.
 
