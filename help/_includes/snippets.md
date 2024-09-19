@@ -1,7 +1,7 @@
 ---
-source-git-commit: 11368914a78c1f47c2f341a112bf981545cf6203
+source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1139'
 ht-degree: 4%
 
 ---
@@ -95,7 +95,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
     <td>Validar/redefinir campo/painel/regra de formulário em 'Then' </td>
     <td>As funções Validar e Redefinir oferecem suporte somente a objetos de formulário no Editor de regras. 
    </td>
-    <td>Validar e redefinir as funções que oferecem suporte ao objeto de formulário/painel/campo no Editor de regras. 
+    <td>As funções Validar e Redefinir oferecem suporte a objeto de formulário/painel/campo no Editor de regras. 
    </td>
    </tr>
    <tr>
@@ -178,6 +178,21 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 >
 >* Recorte automático de [vídeos com Recorte Inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Forneça a [experiência interativa baseada em 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Forneça uma [experiência interativa baseada em 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Outro [banco de recursos Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+
+## Registrando um tíquete de suporte {#support-ticket}
+
+Se um problema do produto precisar de investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte.
+
+Para registrar um tíquete de suporte, primeiro registre o site do Edge Delivery no Cloud Manager. Registrar seu site com o Cloud Manager é recomendado para todos os usuários do AEM as a Cloud Service e o [traz vários benefícios](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Consulte [a documentação do Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) para obter detalhes se você ainda não tiver registrado seu site.
+
+Depois que o site for registrado na Cloud Manager, siga este processo usando o Admin Console para enviar um tíquete de suporte:
+
+1. [Siga o processo de suporte padrão](https://experienceleague.adobe.com/?support-tab=home&amp;lang=pt-BR#support) e crie um tíquete.
+1. Adicionar **Edge Delivery** no título do tíquete.
+1. Na descrição, forneça os seguintes detalhes além da descrição do problema:
+
+   * URL do site ativo. Por exemplo: `www.mydomain.com`.
+   * URL do site de origem (`.hlx` URL).
 

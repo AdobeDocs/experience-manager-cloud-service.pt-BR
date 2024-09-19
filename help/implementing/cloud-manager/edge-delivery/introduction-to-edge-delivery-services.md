@@ -4,9 +4,9 @@ description: Saiba como entregar projetos do Cloud Manager usando o Edge Deliver
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ad6a0e13f27839b9900e440d60948158ddf75d99
+source-git-commit: 3db0b72a267a001b3fda5341a6c2c642babfb9eb
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '746'
 ht-degree: 2%
 
 ---
@@ -26,13 +26,24 @@ O Cloud Manager no AEM as a Cloud Service permite que você ative o Serviço Edg
 
 >[!TIP]
 >
->Para obter detalhes sobre Edge Delivery Services e como ele pode ser usado com AEM, consulte [visão geral sobre Edge Delivery Services](/help/edge/overview.md).
+>Para obter detalhes sobre Edge Delivery Services e como ele pode ser usado com AEM, consulte a [visão geral sobre Edge Delivery Services](/help/edge/overview.md).
 
 ## Sobre o Edge Delivery Services no Cloud Manager {#edge-in-cloud-manager}
 
 Se você tiver licenciado Edge Delivery Services como parte do Adobe Experience Manager Sites, poderá integrar seu site com Edge Delivery Services diretamente no Cloud Manager e ativar o [usando uma experiência guiada de autoatendimento](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
 Além disso, você pode acessar uma experiência unificada para gerenciar todas as propriedades do AEM, garantindo a consistência entre os fluxos de trabalho principais. Isso inclui gerenciamento de nome de domínio, gerenciamento de certificado SSL e mapeamentos de CDN.
+
+## Vantagens de usar o caminho recomendado para o Adobe para o Edge Delivery Services {#recommended-path-eds}
+
+Maximize os benefícios do Adobe, acessando e consumindo sua licença do Edge Delivery Services por meio da Cloud Manager. Isso permite aproveitar vários benefícios principais.
+
+* [Consuma sua licença no programa escolhido](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md), [atualize outros programas](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md) ou ambos.
+* Aproveite os benefícios da [API-first](https://developer.adobe.com/experience-cloud/experience-manager-apis/) para executar operações CRUD (Create, Read, Update, Delete).
+* [Acessar relatórios do SLA](/help/implementing/cloud-manager/sla-reporting.md) (*em breve*)
+* [Obtenha acesso ao suporte para Adobe](/help/edge/overview.md#support-ticket) para seus programas de produção registrados.
+
+Além disso, o uso do Cloud Manager permite usar o [CDN gerenciado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) para o site do Edge Delivery e aproveitar os principais benefícios, como o gerenciamento de CDN de autoatendimento, incluindo a configuração e a adição de certificados DV. Além disso, após a criação de um certificado DV, o Adobe o renova automaticamente a cada três meses, a menos que ele seja excluído. Se você não tiver uma licença de Edge Delivery Services com o Adobe e decidir ignorar esses benefícios, só poderá usar seu próprio CDN gerenciado automaticamente. Esta configuração deve estar na plataforma [`aem.live`](https://www.aem.live/docs/go-live-checklist#cdn-configuration).
 
 ## Sobre adicionar Edge Delivery Services a um programa de produção ou de sandbox
 
@@ -51,17 +62,6 @@ Um Edge Delivery Services pode ser adicionado de várias maneiras diferentes, de
 >* Sua organização deve ter uma licença de Edge Delivery Services não usada para que possa ser aplicada a um programa de produção.
 >* Depois que a licença do Edge Delivery Services é aplicada ou removida de um programa, a alteração entra em vigor imediatamente, sem a necessidade de executar um pipeline.
 
-## caminho recomendado Adobe para Edge Delivery Services {#recommended-path-eds}
-
-Maximize os benefícios do Adobe, acessando e consumindo sua licença do Edge Delivery Services por meio da Cloud Manager. Isso permite aproveitar vários benefícios principais.
-
-* [Consuma sua licença no programa escolhido](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md), [atualize outros programas](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md) ou ambos.
-* Aproveite os benefícios da [API-first](https://developer.adobe.com/experience-cloud/experience-manager-apis/) para executar operações CRUD (Create, Read, Update, Delete).
-* [Acessar relatórios do SLA](/help/implementing/cloud-manager/sla-reporting.md) (*em breve*)
-* [Obtenha acesso ao suporte para Adobe](/help/edge/overview.md#support-ticket) para seus programas de produção registrados.
-
-Além disso, o uso do Cloud Manager permite usar o [CDN gerenciado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) para o site do Edge Delivery e aproveitar os principais benefícios, como o gerenciamento de CDN de autoatendimento, incluindo a configuração e a adição de certificados DV. Além disso, após a criação de um certificado DV, o Adobe o renova automaticamente a cada três meses, a menos que ele seja excluído. Se você não tiver uma licença de Edge Delivery Services com o Adobe e decidir ignorar esses benefícios, só poderá usar seu próprio CDN gerenciado automaticamente. Esta configuração deve estar na plataforma [`aem.live`](https://www.aem.live/docs/go-live-checklist#cdn-configuration).
-
 ## Sobre a lista de tarefas do Edge Delivery {#ed-todo-list}
 
 A **lista de tarefas pendentes do Edge Delivery** é uma lista de verificação de tarefas de integração criada para orientá-lo na integração e no gerenciamento do seu site Edge Delivery até a [ativação](/help/journey-onboarding/go-live-checklist.md).
@@ -79,4 +79,9 @@ A **lista de tarefas pendentes do Edge Delivery** é uma lista de verificação 
 
 <!-- &#x2460; for "1" inside circle -->
 
+## Registrar um tíquete de suporte {#eds-support-ticket}
+
+{{support-ticket}}
+
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
+
