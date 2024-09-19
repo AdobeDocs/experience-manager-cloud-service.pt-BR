@@ -4,7 +4,7 @@ description: Saiba como entregar projetos do Cloud Manager usando o Edge Deliver
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3db0b72a267a001b3fda5341a6c2c642babfb9eb
+source-git-commit: e28e4bf06c28f97d665e5fd86ab87d484116504f
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 2%
@@ -62,7 +62,10 @@ Um Edge Delivery Services pode ser adicionado de várias maneiras diferentes, de
 >* Sua organização deve ter uma licença de Edge Delivery Services não usada para que possa ser aplicada a um programa de produção.
 >* Depois que a licença do Edge Delivery Services é aplicada ou removida de um programa, a alteração entra em vigor imediatamente, sem a necessidade de executar um pipeline.
 
+
 ## Sobre a lista de tarefas do Edge Delivery {#ed-todo-list}
+
+<!-- &#x2460; for "1" inside circle -->
 
 A **lista de tarefas pendentes do Edge Delivery** é uma lista de verificação de tarefas de integração criada para orientá-lo na integração e no gerenciamento do seu site Edge Delivery até a [ativação](/help/journey-onboarding/go-live-checklist.md).
 
@@ -77,7 +80,6 @@ A **lista de tarefas pendentes do Edge Delivery** é uma lista de verificação 
 | 5 | Adicionar certificado SSL | Consulte [Adicionar certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configurar o CDN do site do Edge Delivery | Consulte [Adicionar uma configuração de CDN](#add-cdn). |
 
-<!-- &#x2460; for "1" inside circle -->
 
 ## Registrar um tíquete de suporte {#eds-support-ticket}
 
