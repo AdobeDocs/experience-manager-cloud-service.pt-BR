@@ -3,10 +3,10 @@ title: Adicionar um site do Edge Delivery ao Cloud Manager
 description: Saiba como adicionar um site do Edge Delivery ao seu programa de produção ou de sandbox.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2b384a4233672d69de09b922fcdef6d0f84ff7df
+source-git-commit: f684a52ca3b51d1aa4412122f7ad28dde3e2672f
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 2%
+source-wordcount: '500'
+ht-degree: 3%
 
 ---
 
@@ -28,8 +28,8 @@ Consulte também [Introdução a Edge Delivery Services no Cloud Manager](/help/
 
      ![Adicionar site do Edge Delivery na guia Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add1.png)
 
-   * No canto superior esquerdo da página, clique em ![Mostrar ou ocultar navegação lateral](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu de navegação lateral.
-No cabeçalho **Serviços**, clique em ![Página da Web dos sites do Edge Delivery](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Sites do Edge Delivery**.
+   * No canto superior esquerdo da página, clique em ![Mostrar ícone de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu de navegação lateral.
+No cabeçalho **Serviços**, clique em ![ícone da página da Web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
 Próximo ao canto superior direito da página, clique em **Adicionar site**.
 
      ![Adicionar site do Edge Delivery pelo botão Sites do Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-add2.png)
@@ -48,14 +48,14 @@ Próximo ao canto superior direito da página, clique em **Adicionar site**.
 
    | Número da etapa | Descrição |
    | - | - |
-   | **1** | Adicione um arquivo com o caminho e o nome `well-known/adobe/cloudmanager-challenge.txt` à ramificação `main` do repositório Git listado no campo **URL do Repositório**. *não* adicione um ponto no início do caminho do local.<br>Se necessário, clique em ![Copiar](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o caminho para a área de transferência. |
-   | **2** | Adicione o código visto no campo de texto na Etapa 2 ao arquivo que você acabou de criar na Etapa 1.<br>Se necessário, clique em ![Copiar](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o código para a área de transferência. |
+   | **1** | Adicione um arquivo com o caminho e o nome `well-known/adobe/cloudmanager-challenge.txt` à ramificação `main` do repositório Git listado no campo **URL do Repositório**. *não* adicione um ponto no início do caminho do local.<br>Se necessário, clique em ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o caminho para a área de transferência. |
+   | **2** | Adicione o código visto no campo de texto na Etapa 2 ao arquivo que você acabou de criar na Etapa 1.<br>Se necessário, clique em ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o código para a área de transferência. |
    | **3** | Crie uma solicitação de pull no repositório Git para as alterações recém-criadas e mescle-a com `main` para confirmar o código. |
 
 1. Clique em **Verificar**.
 
 Depois que o repositório é verificado, seu status na tabela de sites do Edge Delivery muda para um círculo verde com uma marca de seleção branca dentro dele.
 
-Na mesma tabela, você pode clicar em ![Informações sobre o site do Edge Delivery.](https://spectrum.corp.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para exibir detalhes sobre seu site, como a URL verificada do repositório e a URL do site de Pré-visualização e Produção.
+Na mesma tabela, você pode clicar em ![Informações sobre o site do Edge Delivery.](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para exibir detalhes sobre seu site, como a URL verificada do repositório e a URL do site de Pré-visualização e Produção.
 
 
