@@ -5,10 +5,10 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f45de13049f78f97b256235d9395695cb531c40d
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 20%
+source-wordcount: '1489'
+ht-degree: 18%
 
 ---
 
@@ -23,7 +23,7 @@ Atenda a esses requisitos antes de adicionar um nome de domínio personalizado n
 
 * Você deve ter adicionado um certificado SSL para o domínio que deseja adicionar antes de adicionar um nome de domínio personalizado, conforme descrito no documento [Adicionar um certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 * Você deve ter a função de **Proprietário da empresa** ou **Gerente de implantação** para adicionar um nome de domínio personalizado no Cloud Manager.
-* Estar usando o Fastly ou outro CDN.
+* Estar usando o Fastly ou outro CDN (Content Delivery Network).
 
 >[!IMPORTANT]
 >
@@ -31,22 +31,22 @@ Atenda a esses requisitos antes de adicionar um nome de domínio personalizado n
 
 ## Onde adicionar nomes de domínio personalizados {#where-to-add-cdn}
 
-Você pode adicionar um nome de domínio personalizado a partir de dois locais no Cloud Manager:
+Você pode adicionar um nome de domínio personalizado a partir dos dois locais a seguir no Cloud Manager:
 
-* [Na página Configurações do domínio](#adding-cdn-settings)
-* [Na página Ambientes](#adding-cdn-environments)
+* [Página Configurações do domínio](#adding-cdn-settings)
+* [Página Ambientes](#adding-cdn-environments)
 
 Ao adicionar um nome de domínio personalizado, o domínio é distribuído usando o certificado mais específico e válido. Se vários certificados tiverem o mesmo domínio, o mais recente atualizado será escolhido. A Adobe recomenda que você gerencie certificados de forma que não haja domínios sobrepostos.
 
-As etapas para qualquer método descrito neste documento são baseadas no Fastly. Se você usou um CDN diferente, configure seu domínio com o CDN que você escolheu usar.
+As etapas para qualquer método descrito neste documento são baseadas no Fastly. Se você usou uma CDN (Content Delivery Network) diferente, configure seu domínio com a CDN que você escolheu usar.
 
-## Adicionar um nome de domínio personalizado na página Configurações do domínio {#adding-cdn-settings}
+## Adicionar um nome de domínio personalizado {#adding-cdn-settings}
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
-1. No painel de navegação esquerdo, selecione a guia **Configurações de domínio**
+1. No menu lateral, em **Serviços**, selecione **Configurações de Domínio**.
 
    ![A janela Configurações do domínio](/help/implementing/cloud-manager/assets/cdn/cdn-create.png)
 
@@ -59,7 +59,7 @@ Não inclua `http://`, `https://` ou espaços ao inserir seu domínio.
 
 1. Na caixa de diálogo **Verificar Domínio**, em **Que tipo de certificado você pretende usar com este domínio?**, selecione uma das seguintes opções:
 
-   | Tipo de certificado | Descrição |
+   | Opção Tipo de certificado | Descrição |
    | --- | --- |
    | Certificado gerenciado pela Adobe | Selecione se quiser usar um certificado DV (Domain Validation). Essa opção é ideal para a maioria dos casos, fornecendo validação básica de domínio. O Adobe gerencia e renova o certificado automaticamente. |
    | Certificado gerenciado pelo cliente | Selecione se quiser usar um certificado EV/OV. Essa opção oferece segurança aprimorada com EV (Extended Validation) ou OV (Organization Validation). Use se uma verificação mais rigorosa, níveis de confiança mais altos ou controle personalizado dos certificados for necessário. |
@@ -207,6 +207,8 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 
 
 ## Adicione um nome de domínio personalizado na página Ambientes {#adding-cdn-environments}
+
+<!-- I DON'T SEE THIS ABILITY ANYMORE IN THE UI -->
 
 As etapas para adicionar um nome de domínio personalizado da página **Ambientes** são as mesmas de [adicionar um nome de domínio personalizado da página Configurações de Domínio](#adding-cdn-settings), mas o ponto de entrada é diferente. Siga estas etapas para adicionar um nome de domínio personalizado na página **Ambientes**.
 

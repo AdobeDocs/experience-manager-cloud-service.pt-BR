@@ -5,10 +5,10 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
+source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 15%
+source-wordcount: '455'
+ht-degree: 14%
 
 ---
 
@@ -26,24 +26,24 @@ Saiba mais sobre os tipos de programas no documento [Noções sobre Programas e 
 
    ![Página de destino do Cloud Manager](assets/log-in.png)
 
-1. No assistente *Vamos criar seu programa*, no campo de texto **Nome do programa**, digite o nome que você deseja para o programa.
+1. No assistente do *Vamos criar seu Programa*, no campo de texto **Nome do programa**, digite o nome desejado para o programa.
 
-1. Em **Objetivo do programa**, selecione **`Set up a sandbox`**.
+1. Em **Objetivo do Programa**, selecione ![Ícone de varinha mágica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MagicWand_18_N.svg) **Configurar uma sandbox**.
 
    ![Criação de tipo de programa](assets/create-sandbox.png)
 
 1. (Opcional) No canto inferior direito da caixa de diálogo do assistente, siga um destes procedimentos:
 
-   * Arraste e solte um arquivo de imagem no destino **Adicionar uma imagem de programa**.
-   * Clique em **Adicionar uma imagem de programa** e selecione uma imagem de um navegador de arquivos.
-   * Clique no ícone da lixeira para excluir uma imagem adicionada.
+   * Arraste e solte um arquivo de imagem no destino ![Imagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Adicionar uma imagem de programa**.
+   * Clique em ![Ícone de imagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Image_18_N.svg) **Adicionar uma imagem de programa** e selecione uma imagem de um navegador de arquivos.
+   * Clique em ![Excluir ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DeleteOutline_18_N.svg) para remover uma imagem adicionada.
 
 1. Clique em **Continuar**.
 
 1. Na caixa de listagem **Soluções e complementos**, selecione uma ou mais soluções para incluir no programa.
 
    * Clique na divisa à esquerda do nome da solução para exibir os complementos opcionais disponíveis que você deseja incluir na solução selecionada.
-   * As soluções **Sites**, **Assets** e **Serviços de Entrega da Edge** são sempre selecionadas por padrão quando você cria um programa de sandbox. Não é possível desmarcá-los.
+   * As soluções **Sites**, **Assets** e **Edge Deliver Services** são sempre selecionadas por padrão quando você cria um programa de sandbox. Não é possível desmarcá-los.
 
    ![Selecionar soluções e complementos para uma sandbox](assets/sandbox-solutions-add-ons.png)
 
@@ -55,7 +55,7 @@ Saiba mais sobre os tipos de programas no documento [Noções sobre Programas e 
 
 Depois que um novo programa de sandbox terminar de ser criado, você poderá visualizar os detalhes da configuração da sandbox e acessar o ambiente visualizando a página de visão geral do programa.
 
-1. Na página de aterrissagem do Cloud Manager, clique no botão de reticências no programa de sandbox criado.
+1. Na página de aterrissagem do Cloud Manager, no programa de sandbox, clique em ![Mais ícone de lista pequena](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) no programa de sandbox criado.
 
    ![Acesso à visão geral do programa](assets/program-overview-sandbox.png)
 
