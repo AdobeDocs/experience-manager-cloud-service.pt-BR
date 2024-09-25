@@ -5,10 +5,10 @@ exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 12%
+source-wordcount: '303'
+ht-degree: 6%
 
 ---
 
@@ -31,9 +31,9 @@ Um usuário na função de **Proprietário da empresa** ou **Gerente de implanta
 1. Na página **Visão geral**, navegue até a tela **Ambientes**.
 1. Na tela **Ambientes**, navegue até a página de detalhes do ambiente específico.
 1. Navegue até a tabela **Lista de permissões de IP**.
-1. Use os campos de entrada na parte superior da tabela para poder selecionar a Lista de permissões IP e o serviço de Autor ou Publicação ao qual aplicá-la.
+1. Use os campos de entrada na parte superior da tabela para poder selecionar a Lista de permissões IP e o serviço Author, Publish ou Preview ao qual deseja aplicá-la.
 A Lista de permissões IP já deve existir no Cloud Manager para ser aplicada. Consulte [Adicionar Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md).
-1. Clique em **Aplicar** e confirme o envio.
+1. Clique em ![Adicionar ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Aplicar** e confirme o envio.
 
 ## Desaplicar Listas de permissões de IP {#un-applying}
 
@@ -44,8 +44,10 @@ Um usuário na função de **Proprietário da empresa** ou **Gerente de implanta
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Selecione a organização apropriada.
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
-1. Acesse a tela **Ambientes** a partir da página **Visão geral**.
-1. Acesse a página de detalhes do ambiente específico na tela **Ambientes**.1. Navegue até a tabela **Lista de permissões de IP**.
+1. Na página **Visão geral**, navegue até a página **Ambientes**.
+1. Navegue até a página de detalhes do ambiente específico.
+1. Na guia General, navegue até a tabela **Lista de permissões IP**.
 1. Identifique a linha da Lista de permissões IP que deseja desaplicar.
-1. No lado direito da linha identificada, clique no botão de reticências e selecione **Desaplicar**.
-1. Confirme seu envio.
+1. No lado direito da linha identificada, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).
+1. Clique em **Desaplicar**.
+1. Na caixa de diálogo **Desaplicar Lista de permissões de IP**, clique em **Desaplicar**.

@@ -5,9 +5,9 @@ exl-id: 769be71f-5c11-4f98-8906-7a5667a25aee
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '234'
 ht-degree: 11%
 
 ---
@@ -21,11 +21,13 @@ Um usuário na função de **Proprietário da empresa** ou **Gerente de implanta
 
 {{add-cm-allowlist-frontend-pipeline}}
 
+**Para adicionar uma Lista de permissões IP:**
+
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
-1. Na página **Visão geral do programa**, usando o painel lateral no lado esquerdo (talvez seja necessário clicar no ícone de hambúrguer no canto superior esquerdo para ver o painel), clique em **Listas de permissões de IP**.
+1. Na página **Visão geral do programa**, usando o painel lateral (talvez seja necessário clicar em ![Mostrar ícone do menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) no canto superior esquerdo para ver o painel), clique em ![Ícone da lista de tarefas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listas de permissões IP**.
 
    ![Opção de Listas de permissões IP no painel lateral](/help/implementing/cloud-manager/assets/ip-allow-list/ip-allow-list-create.png)
 
