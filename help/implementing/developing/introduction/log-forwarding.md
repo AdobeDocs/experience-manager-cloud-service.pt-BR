@@ -4,9 +4,9 @@ description: Saiba mais sobre como encaminhar logs para o Splunk e outros fornec
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bf0b577de6174c13f5d3e9e4a193214c735fb04d
+source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1362'
 ht-degree: 0%
 
 ---
@@ -44,14 +44,7 @@ Este artigo está organizado da seguinte maneira:
 
 ## Configurar {#setup}
 
-1. Crie a seguinte estrutura de pasta e arquivo na pasta de nível superior em seu projeto no Git:
-
-   ```
-   config/
-        logForwarding.yaml
-   ```
-
-1. `logForwarding.yaml` deve conter metadados e uma configuração semelhante ao seguinte formato (usamos o Splunk como exemplo).
+1. Crie um arquivo chamado `logForwarding.yaml`. Ele deve conter metadados, conforme descrito no [artigo sobre o pipeline de configuração](/help/operations/config-pipeline.md#common-syntax) (**kind** deve ser definido como `LogForwarding` e a versão definida como &quot;1&quot;), com uma configuração semelhante à seguinte (usamos o Splunk como exemplo).
 
    ```
    kind: "LogForwarding"
@@ -67,52 +60,51 @@ Este artigo está organizado da seguinte maneira:
          index: "AEMaaCS"
    ```
 
-   O parâmetro **kind** deve ser definido como `LogForwarding`, a versão deve ser definida como a versão do esquema, que é 1.
+1. Coloque o arquivo em algum lugar em uma pasta de nível superior chamada *config* ou similar, conforme descrito em [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#folder-structure).
 
-   Os tokens na configuração (como `${{SPLUNK_TOKEN}}`) representam segredos que não devem ser armazenados no Git. Em vez disso, declare-as como [Variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md) do Cloud Manager do tipo **segredo**. Selecione **Todos** como o valor suspenso do campo Serviço aplicado, para que os logs possam ser encaminhados para os níveis de criação, publicação e visualização.
+1. Para tipos de ambiente diferentes de RDE (que não são compatíveis no momento), crie um pipeline de configuração de implantação direcionada no Cloud Manager, conforme referenciado por [esta seção](/help/operations/config-pipeline.md#creating-and-managing); observe que os pipelines de Empilhamento completo e de Camada da Web não implantam o arquivo de configuração.
 
-   É possível definir valores diferentes entre logs CDN e logs AEM (incluindo Apache/Dispatcher), incluindo um bloco **cdn** e/ou **aem** adicional após o bloco **padrão**, em que as propriedades podem substituir as definidas no bloco **padrão**; somente a propriedade habilitada é necessária. Um possível caso de uso poderia ser o uso de um índice do Splunk diferente para logs CDN, como ilustra o exemplo abaixo.
+1. Implante a configuração.
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          cdn:
-            enabled: true
-            token: "${{SPLUNK_TOKEN_CDN}}"
-            index: "AEMaaCS_CDN"   
-   ```
+Os tokens na configuração (como `${{SPLUNK_TOKEN}}`) representam segredos que não devem ser armazenados no Git. Em vez disso, declare-as como [Variáveis de ambiente secreto](/help/operations/config-pipeline.md#secret-env-vars) do Cloud Manager. Selecione **Todos** como o valor suspenso do campo Serviço aplicado, para que os logs possam ser encaminhados para os níveis de criação, publicação e visualização.
 
-   Outro cenário é desabilitar o encaminhamento dos logs CDN ou dos logs AEM (incluindo o Apache/Dispatcher). Por exemplo, para encaminhar apenas os logs CDN, é possível configurar o seguinte:
+É possível definir valores diferentes entre logs CDN e logs AEM (incluindo Apache/Dispatcher), incluindo um bloco **cdn** e/ou **aem** adicional após o bloco **padrão**, em que as propriedades podem substituir as definidas no bloco **padrão**; somente a propriedade habilitada é necessária. Um possível caso de uso poderia ser o uso de um índice do Splunk diferente para logs CDN, como ilustra o exemplo abaixo.
 
-   ```
-      kind: "LogForwarding"
-      version: "1"
-      metadata:
-        envTypes: ["dev"]
-      data:
-        splunk:
-          default:
-            enabled: true
-            host: "splunk-host.example.com"
-            token: "${{SPLUNK_TOKEN}}"
-            index: "AEMaaCS"
-          aem:
-            enabled: false
-   ```
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       cdn:
+         enabled: true
+         token: "${{SPLUNK_TOKEN_CDN}}"
+         index: "AEMaaCS_CDN"   
+```
 
-1. Para tipos de ambiente diferentes do RDE (que não é compatível no momento), crie um pipeline de configuração de implantação direcionada no Cloud Manager; observe que os pipelines de Empilhamento completo e de Camada da Web não implantam o arquivo de configuração.
+Outro cenário é desabilitar o encaminhamento dos logs CDN ou dos logs AEM (incluindo o Apache/Dispatcher). Por exemplo, para encaminhar apenas os logs CDN, é possível configurar o seguinte:
 
-   * [Consulte configuração de pipelines de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
-   * [Consulte configuração de pipelines de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md).
+```
+   kind: "LogForwarding"
+   version: "1"
+   metadata:
+     envTypes: ["dev"]
+   data:
+     splunk:
+       default:
+         enabled: true
+         host: "splunk-host.example.com"
+         token: "${{SPLUNK_TOKEN}}"
+         index: "AEMaaCS"
+       aem:
+         enabled: false
+```
 
 ## Configuração de destino de registro {#logging-destinations}
 

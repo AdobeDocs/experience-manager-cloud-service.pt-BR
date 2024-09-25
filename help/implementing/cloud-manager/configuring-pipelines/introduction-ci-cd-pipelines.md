@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 35%
@@ -115,7 +115,7 @@ Consulte [Adicionar um pipeline de não produção](/help/implementing/cloud-man
 
 Usando um pipeline de configuração, você pode implantar configurações rapidamente para encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN, incluindo regras de filtro de tráfego (como regras do WAF (Firewall do Aplicativo Web)). Além disso, você pode gerenciar transformações de solicitação e resposta, seletores de origem, redirecionamentos do lado do cliente, páginas de erro, chaves CDN gerenciadas pelo cliente, chaves de API de limpeza e autenticação básica.
 
-Consulte [Usar pipelines de configuração](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para obter uma lista abrangente de recursos com suporte e saber como gerenciar as configurações no repositório para que elas sejam implantadas corretamente.
+Consulte [Usar pipelines de configuração](/help/operations/config-pipeline.md) para obter uma lista abrangente de recursos com suporte e saber como gerenciar as configurações no repositório para que elas sejam implantadas corretamente.
 
 ### Configurar pipelines de configuração {#configure-config-deployment}
 
