@@ -4,9 +4,9 @@ description: Este guia colocará você em funcionamento com um novo site do Adob
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: b34a15138e1b8fbe2bebc22f2cc7e8a0ae22316a
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -113,6 +113,10 @@ Primeiro, será necessário criar um novo projeto no GitHub, com base no modelo 
 1. Adicione uma mensagem de confirmação conforme desejado e clique em **Confirmar alterações**, confirmando-as diretamente na ramificação `main`.
 
    ![Confirmando alterações](assets/edge-dev-getting-started/commit-paths-changes.png)
+
+>[!TIP]
+>
+>Para obter mais informações sobre mapeamentos de caminho, consulte o documento [Mapeamento de Caminho para Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ### Criar e editar um novo site AEM {#create-aem-site}
 

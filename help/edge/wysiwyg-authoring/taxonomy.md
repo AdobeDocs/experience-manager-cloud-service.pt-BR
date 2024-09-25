@@ -3,13 +3,13 @@ title: Gerenciamento de dados de taxonomia
 description: Saiba como gerenciar dados de taxonomia para usar tags com seu AEM com sites Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
+source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '845'
 ht-degree: 1%
 
 ---
-
 
 # Gerenciamento de dados de taxonomia {#managing-taxonomy-data}
 
@@ -108,6 +108,10 @@ Assim como no [gerenciamento e publicação de dados tabulares para o seu site E
    * Confirme com `main` ou crie uma solicitação pull de acordo com seu processo.
 
 Esse processo só precisa ser feito uma vez por página de taxonomia. Depois de concluído, você pode publicar sua taxonomia.
+
+>[!TIP]
+>
+>Para obter mais informações sobre mapeamentos de caminho, consulte o documento [Mapeamento de Caminho para Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
 
 ## Publicar uma taxonomia {#publishing}
 
