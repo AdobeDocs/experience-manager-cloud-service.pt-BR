@@ -4,10 +4,10 @@ description: Saiba mais sobre os benefícios do AEM as a Cloud Service no shell 
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 96%
+source-wordcount: '408'
+ht-degree: 92%
 
 ---
 
@@ -44,6 +44,10 @@ Por padrão, o AEM as a Cloud Service vem com o Unified Shell ativado. No entant
 
    ![imagem](/help/overview/assets/unifiedshell3.png)
 
+>[!NOTE]
+>
+>O Unified Shell também pode ser desativado no código do projeto. Consulte [Estrutura da interface do AEM - Shell Unificado](/help/implementing/developing/introduction/ui-structure.md#unified-shell).
+
 ## Alterar para o tema escuro {#changing-to-dark-theme}
 
 Para alterar para o tema escuro, clique no ícone do seu perfil. Essa ação exibe um popover, conforme mostrado abaixo. Você pode usar o botão de alternância para alternar para um tema escuro do Unified Shell.
@@ -73,3 +77,4 @@ A caixa de entrada do AEM pode ser acessada clicando no ícone de sino no Unifie
 Clique no botão da caixa de entrada no popover para acessar a caixa de entrada do AEM:
 
 ![imagem](/help/overview/assets/unifiedshell6.png)
+
