@@ -4,9 +4,9 @@ description: A interface do AEM tem vários princípios subjacentes e é compost
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd5601661cd59c158802f900677855be76d5893b
+source-git-commit: 7d09e0c990c716d7bbb305210960621ba8735de4
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '939'
 ht-degree: 3%
 
 ---
@@ -176,7 +176,7 @@ Para obter mais informações técnicas, consulte o [conjunto de documentação 
 
 Consulte [AEM as a Cloud Service no Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) se estiver usando o Unified Shell como a interface do usuário AEM.
 
-Se você precisar fazer (ou já tiver feito) personalizações, isso poderá ser desativado:
+Se você precisar fazer, ou já tiver feito, qualquer personalização, o Unified Should pode ser desativado:
 
 * [da interface](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
