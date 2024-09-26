@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 22f8ffc3e3acec9846a2f868be48195ca62df88b
+source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '1353'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 ## Versão 17964 {#release-17964}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 17964, lançada publicamente em quinta-feira, 25 de setembro de 2024. A versão de manutenção anterior era a versão 17689.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 17964, lançada publicamente em quinta-feira, 25 de setembro de 2024. A versão de manutenção anterior era a versão 17689. A versão 17882 foi tornada privada devido a um problema.
 
 A ativação de recursos 2024.10.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
