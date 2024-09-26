@@ -1,24 +1,24 @@
 ---
-title: Gerenciando entidades após a migração
+title: Gerenciamento de principais após a migração
 description: Saiba como configurar usuários e grupos no IMS e no AEM
-source-git-commit: 5b0dfb847a1769665899d6dd693a7946832fe7d1
+exl-id: 46c4abfb-7e28-4f18-a6d4-f729dd42ea7b
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
-
-# Gerenciando entidades após a migração {#managing-principals-after-migration}
+# Gerenciamento de principais após a migração {#managing-principals-after-migration}
 
 >[!CONTEXTUALHELP]
 >id="managing-principals"
->title="Gerenciando entidades após a migração"
+>title="Gerenciamento de principais após a migração"
 >abstract="Saiba como configurar usuários e grupos no IMS e no AEM"
 
 Este documento descreve as etapas de alto nível que os clientes devem seguir para configurar seus usuários e grupos no IMS e no AEM para trabalhar com o ambiente AEM as a Cloud Service.
 
-## Gerenciando Principais {#managing-principals}
+## Gerenciamento de principais {#managing-principals}
 
 Para o AEM as a Cloud Service, os usuários e grupos devem ser gerenciados principalmente usando o Admin Console.  Ao considerar uma migração, algumas dessas tarefas podem ser realizadas antes que a migração de conteúdo ocorra.  Essencialmente, desses principais grupos de tarefas
 
@@ -56,5 +56,3 @@ Como esses grupos não estão no IMS, a ferramenta de upload em massa não pode 
 * Quando o usuário fizer logon pela primeira vez, o usuário do IMS será criado no AEM e ele deverá ter acesso ao(s) novo(s) grupo(s) e, portanto, aos grupos de coleta originais.
 
 Observação: para atribuição de usuários em massa, as etapas acima devem ser usadas para criar os usuários no IMS; os usuários que já existem no IMS não podem ser criados novamente por meio de upload em massa.
-
-

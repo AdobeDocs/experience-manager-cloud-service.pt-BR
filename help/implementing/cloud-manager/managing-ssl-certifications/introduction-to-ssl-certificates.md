@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: b222b4384b1c2a21ecbb244d149ce7e51cc7990f
 workflow-type: tm+mt
 source-wordcount: '765'
-ht-degree: 33%
+ht-degree: 35%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 33%
 >id="aemcloud_golive_sslcert"
 >title="Gerenciar certificados SSL"
 >abstract="Saiba como o Cloud Manager fornece ferramentas de autoatendimento para instalar e gerenciar certificados SSL a fim de proteger seu site para os usuários. O Cloud Manager usa um serviço TLS para gerenciar certificados SSL e chaves privadas de propriedade de clientes e obtidas de autoridades de certificação terceirizadas."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Visualização, atualização e substituição de um certificado SSL"
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Verificar o status de um certificado SSL"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Visualização, atualização e substituição de um certificado SSL"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates" text="Verificar o status de um certificado SSL"
 
 
 A Cloud Manager oferece ferramentas de autoatendimento para instalar e gerenciar certificados SSL (Secure Socket Layer), garantindo a segurança do site para seus usuários. Os dois casos de uso a seguir são compatíveis:

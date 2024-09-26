@@ -1,20 +1,20 @@
 ---
-title: Gerenciando Principais
+title: Gerenciamento de principais
 description: Gerenciar entidades para migração usando o Admin Console
-source-git-commit: 5bf497fb2122cc3d3ff0903aeb680a35e90f33b0
+exl-id: a75598d0-8f59-466b-984e-dfe527388c2a
+source-git-commit: a5bec2c05b46f8db55762b7ee1f346f3bb099d24
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
-
-# Gerenciando Principais {#managing-principals}
+# Gerenciamento de principais {#managing-principals}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_managingprincipals"
->title="Gerenciando Principais"
->abstract="Saiba o que precisa ser feito para gerenciar usuários durante ou após uma migração de conteúdo"
+>title="Gerenciamento de principais"
+>abstract="Saiba o que é preciso para gerenciar usuários durante ou após uma migração de conteúdo"
 
 Antes de o conteúdo ser transferido para o ambiente de nuvem do AEM as a Cloud Service, há algumas tarefas que podem ser executadas no Admin Console.  São eles: criar usuários, criar grupos e atribuir usuários a grupos; esses usuários e grupos existirão no IMS, Adobe Identity Management Service, que é usado para gerenciar usuários e grupos para todos os serviços baseados em nuvem Adobe.
 

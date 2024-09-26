@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1f9526f8e8aa6a070e95827fab16431b0ee7566b
 workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_groupmigration"
 >title="Migração de grupo"
->abstract="A ferramenta Transferência de conteúdo ajuda a copiar grupos do sistema Adobe Experience Manager (AEM) existente para o AEM as a Cloud Service."
+>abstract="A ferramenta de transferência de conteúdo ajuda a copiar grupos do seu sistema existente do Adobe Experience Manager (AEM) para o AEM as a Cloud Service."
 
 >[!NOTE]
 >Para ver as versões anteriores da Ferramenta de Mapeamento de Usuários, consulte a [documentação herdada](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
@@ -24,10 +24,10 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermigration"
->title="Usuários não migrados"
->abstract="A ferramenta Transferência de conteúdo não migra mais os usuários. Os usuários devem ser gerenciados no Admin Console."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentação do Admin Console AEM"
->additional-url="https://adminconsole.adobe.com/" text="Admin Console AEM"
+>title="Os usuários não são migrados"
+>abstract="A ferramenta de transferência de conteúdo não migra mais os usuários. Os usuários devem ser gerenciados pelo Admin Console."
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentação do Admin Console do AEM"
+>additional-url="https://adminconsole.adobe.com/" text="Admin Console do AEM"
 
 Como parte da jornada de transição para o Adobe Experience Manager (AEM) as a Cloud Service AEM, os grupos devem ser migrados dos sistemas existentes para o AEM as a Cloud Service. Essa tarefa é realizada pela ferramenta Transferência de conteúdo.
 
