@@ -4,9 +4,9 @@ description: A interface do AEM tem vários princípios subjacentes e é compost
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 55cf6a10c2cb4c62aa8f89fac7f9d1fb4c012d26
+source-git-commit: bd5601661cd59c158802f900677855be76d5893b
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '937'
 ht-degree: 3%
 
 ---
@@ -180,6 +180,8 @@ Se você precisar fazer (ou já tiver feito) personalizações, isso poderá ser
 
 * [da interface](/help/overview/aem-cloud-service-on-unified-shell.md#disabling-unified-shell)
 
-* do código do projeto, definindo a propriedade `Boolean`:
+* do código do projeto, por:
 
-  `/conf/global/setting/unifiedshell` - `false`
+   * em `/conf/global/setting/unifiedshell`
+
+      * definindo a propriedade `enable` de `Boolean` como `false`
