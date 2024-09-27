@@ -5,10 +5,10 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8a10634e413ea5c66845dfffa7396a4554a5b3ca
+source-git-commit: 815bd75844ed164973c6acc07a6bf37a39d616b8
 workflow-type: tm+mt
 source-wordcount: '705'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -36,7 +36,7 @@ Você pode comprar um nome de domínio de um registrador de nomes de domínio, d
 >
 >O Cloud Manager não é um registrador de nomes de domínio e não fornece serviços DNS.
 
-## Nomes de domínio personalizados e traga seus próprios CDNs {#byo-cdn}
+## Nomes de domínio personalizados e Traga seus próprios CDNs {#byo-cdn}
 
 O AEM as a Cloud Service oferece um serviço CDN (Content Delivery Network) integrado, mas também permite que você use a CDN BYO (Bring Your Own, Traga sua própria) com AEM. Os domínios personalizados podem ser instalados ou na CDN gerenciada pelo AEM ou em uma CDN gerenciada por você.
 
