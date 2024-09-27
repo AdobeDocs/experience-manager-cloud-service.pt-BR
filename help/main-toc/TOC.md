@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ffd6b66b6fcfbb9e6ee522ae7af96907d09ed4b8
+source-git-commit: 2ea7700107d3f0b73828ba07d5cefdec126e37b8
 workflow-type: tm+mt
-source-wordcount: '5657'
+source-wordcount: '5662'
 ht-degree: 73%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 73%
    + Notas de versão de recursos do AEMaaCS {#release-notes}
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Notas da versão 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
          + [Notas da versão 2024.7.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
          + [Notas da versão 2024.6.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-6-0.md)
          + [Notas da versão 2024.5.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-5-0.md)
@@ -228,7 +229,7 @@ ht-degree: 73%
       + [Criar ambientes](/help/journey-onboarding/create-environments.md)
       + [Atribuir perfis de produto do AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tarefas do desenvolvedor e do gerenciador de implantação](/help/journey-onboarding/developers.md)
-      + [Gerenciando Principais](/help/journey-migration/managing-principals.md)
+      + [Gerenciamento de principais](/help/journey-migration/managing-principals.md)
       + [Tarefas do usuário do AEM](/help/journey-onboarding/aem-users.md)
       + [Lista de verificação de ativação](/help/journey-onboarding/go-live-checklist.md)
    + Jornada do complemento de demonstrações de referência do AEM {#demo-add-on}

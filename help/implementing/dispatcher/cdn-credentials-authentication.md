@@ -4,9 +4,9 @@ description: Saiba como configurar credenciais e autenticação de CDN declarand
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 5d51ff056d4e4f0fdbb3004cbac55803ac91f8ca
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ A CDN fornecida por Adobe tem vários recursos e serviços, alguns dos quais dep
 
 * O valor do cabeçalho HTTP X-AEM-Edge-Key usado pelo CDN Adobe para validar solicitações provenientes de um CDN gerenciado pelo Cliente.
 * O token de API usado para limpar recursos no cache do CDN.
-* Uma lista de combinações de nome de usuário/senha que podem acessar conteúdo restrito, enviando um formulário de Autenticação básica. [Este recurso está disponível para os participantes iniciais.](/help/release-notes/release-notes-cloud/release-notes-current.md#foundation-early-adopter)
+* Uma lista de combinações de nome de usuário/senha que podem acessar conteúdo restrito, enviando um formulário de Autenticação básica.
 
 Cada uma dessas opções, incluindo a sintaxe de configuração, é descrita em sua própria seção abaixo.
 
@@ -146,9 +146,6 @@ Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/
 
 ## Autenticação básica {#basic-auth}
 
->[!NOTE]
->Esse recurso ainda não está disponível para o público geral. Para participar do programa de adoção antecipada, envie um email para `aemcs-cdn-config-adopter@adobe.com`.
-
 Protect determinados recursos de conteúdo, exibindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. Esse recurso destina-se principalmente a casos de uso de autenticação simples, como a análise de conteúdo pelas partes interessadas, e não como uma solução completa para os direitos de acesso do usuário final.
 
 O usuário final terá uma caixa de diálogo de autenticação básica surgindo da seguinte maneira:
@@ -164,7 +161,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_authentication:
+  authentication:
     authenticators:
        - name: my-basic-authenticator
          type: basic
@@ -185,12 +182,12 @@ Consulte [Usando Pipelines de Configuração](/help/operations/config-pipeline.m
 
 Além disso, a sintaxe inclui:
 
-* um nó `data` que contém um nó `experimental_authentication` (o prefixo experimental será removido quando o recurso for lançado).
-* Em `experimental_authentication`, um nó `authenticators` e um nó `rules`, ambos com matrizes.
+* um nó `data` que contém um nó `authentication`.
+* Em `authentication`, um nó `authenticators` e um nó `rules`, ambos com matrizes.
 * Autenticadores: neste cenário, declare um autenticador básico, que tenha a seguinte estrutura:
    * nome - uma sequência descritiva
    * tipo - deve ser `basic`
-   * uma matriz de credenciais, cada uma incluindo os seguintes pares de nome/valor, que os usuários finais podem inserir na caixa de diálogo de autenticação básica:
+   * uma matriz de até 10 credenciais, cada uma incluindo os seguintes pares de nome/valor, que os usuários finais podem inserir na caixa de diálogo de autenticação básica:
       * user - o nome do usuário
       * senha - seu valor deve fazer referência a uma [variável de ambiente do tipo secreto do Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars), com **Todos** selecionados como o campo de serviço.
 * Regras: permite declarar quais dos autenticadores devem ser usados e quais recursos devem ser protegidos. Cada regra inclui:
@@ -208,7 +205,7 @@ Além disso, a sintaxe inclui:
 1. Inicialmente, apenas `edgeKey1` foi definido, neste caso referenciado como `${{CDN_EDGEKEY_052824}}`, que, como uma convenção recomendada, reflete a data em que foi criado.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -218,7 +215,7 @@ Além disso, a sintaxe inclui:
 1. Na configuração, faça referência a ele a partir de `edgeKey2` e implante.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -229,7 +226,7 @@ Além disso, a sintaxe inclui:
 1. Depois de ter certeza de que a chave de borda antiga não será mais usada, remova-a removendo `edgeKey1` da configuração.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge
@@ -240,7 +237,7 @@ Além disso, a sintaxe inclui:
 1. Quando estiver pronto para a próxima rotação, siga o mesmo procedimento. No entanto, dessa vez, você adicionará `edgeKey1` à configuração, fazendo referência a um novo segredo do ambiente do Cloud Manager chamado, por exemplo, `${{CDN_EDGEKEY_031426}}`.
 
    ```
-   experimental_authentication:
+   authentication:
      authenticators:
        - name: edge-auth
          type: edge

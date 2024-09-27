@@ -4,9 +4,9 @@ description: Saiba como usar a CDN gerenciada pelo AEM e como apontar sua própr
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 64344b9b2cce8d7c7f05d3e5ba94049346308a9d
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1602'
 ht-degree: 10%
 
 ---
@@ -72,7 +72,7 @@ Leia sobre [configuração de um token de API de limpeza](/help/implementing/dis
 
 ### Autenticação básica na CDN {#basic-auth}
 
-Para casos de uso de autenticação simples, incluindo participantes de negócios que revisam o conteúdo, proteja o conteúdo exibindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md) e participe do programa de adoção antecipada.
+Para casos de uso de autenticação simples, incluindo participantes de negócios que revisam o conteúdo, proteja o conteúdo exibindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md).
 
 ## A CDN gerenciada pelo cliente aponta para a CDN gerenciada pelo AEM {#point-to-point-CDN}
 

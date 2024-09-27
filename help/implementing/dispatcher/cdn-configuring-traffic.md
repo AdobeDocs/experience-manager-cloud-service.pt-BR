@@ -4,9 +4,9 @@ description: Saiba como configurar o tráfego CDN declarando regras e filtros em
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: 35d3dcca6b08e42c0d2a97116d0628ac9bbb6a7c
+source-git-commit: c31441baa6952d92be4446f9035591b784091324
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1321'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ O AEM as a Cloud Service oferece uma coleção de recursos configuráveis na cam
 
 * [Solicitar transformações](#request-transformations) - modifique aspectos de solicitações de entrada, incluindo cabeçalhos, caminhos e parâmetros.
 * [Transformações de resposta](#response-transformations) - modifique cabeçalhos que estão no caminho de volta para o cliente (por exemplo, um navegador da Web).
-* [Redirecionamentos do lado do cliente](#client-side-redirectors) - acione um redirecionamento de navegador. Esse recurso ainda não está disponível para disponibilidade geral, mas para os participantes iniciais.
+* [Redirecionamentos do lado do cliente](#client-side-redirectors) - acione um redirecionamento de navegador.
 * [Seletores de origem](#origin-selectors) - proxy para um back-end de origem diferente.
 
 Também podem ser configuradas na CDN as Regras de filtro de tráfego (incluindo o WAF), que controlam qual tráfego é permitido ou negado pela CDN. Este recurso já foi lançado e você pode saber mais sobre ele na página [Regras de filtro de tráfego, incluindo regras de WAF](/help/security/traffic-filter-rules-including-waf.md).
@@ -363,9 +363,6 @@ data:
 
 ## Redirecionamentos do lado do cliente {#client-side-redirectors}
 
->[!NOTE]
->Esse recurso ainda não está disponível para o público geral. Para participar do programa de adoção antecipada, envie um email para `aemcs-cdn-config-adopter@adobe.com` e descreva seu caso de uso.
-
 Você pode usar as regras de redirecionamento do lado do cliente para 301, 302 e redirecionamentos semelhantes do lado do cliente. Se uma regra for correspondente, o CDN responderá com uma linha de status que inclui o código de status e a mensagem (por exemplo, HTTP/1.1 301 Movido Permanentemente), bem como o conjunto de cabeçalhos do local.
 
 São permitidas localizações absolutas e relativas com valores fixos.
@@ -380,7 +377,7 @@ version: "1"
 metadata:
   envTypes: ["dev"]
 data:
-  experimental_redirects:
+  redirects:
     rules:
       - name: redirect-absolute
         when: { reqProperty: path, equals: "/page.html" }
