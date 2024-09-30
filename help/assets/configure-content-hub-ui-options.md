@@ -1,25 +1,25 @@
 ---
-title: Configurar a interface do usuário do Content Hub
-description: Configurar a interface do usuário do Content Hub
+title: Configurar a interface do usuário do Centro de conteúdo
+description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 96c50aad9368adc83f8698dc35266146b1883672
+source-git-commit: 0c31f83d3e115a676c7daa37f634e25d08f4d06c
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 4%
+source-wordcount: '1374'
+ht-degree: 12%
 
 ---
 
-# Configurar a interface do usuário do Content Hub {#configure-content-hub-user-interface}
+# Configurar a interface do usuário do Centro de conteúdo {#configure-content-hub-user-interface}
 
 >[!CONTEXTUALHELP]
 >id="configure_content_hub"
->title="Configurar a interface do usuário do Content Hub"
->abstract="O Experience Manager Assets permite que os administradores configurem as opções disponíveis na interface do usuário do Content Hub. Com base nas opções de configuração selecionadas pelos administradores, os usuários do Content Hub podem exibir campos no Content Hub. As opções de configuração incluem metadados ao importar ativos, filtros, propriedades de ativos, metadados ao pesquisar ativos, marca personalizada e qualquer link personalizado."
+>title="Configurar a interface do usuário do Centro de conteúdo"
+>abstract="O Experience Manager Assets permite que os administradores configurem as opções disponíveis na interface do usuário do Centro de conteúdo. Com base nas opções de configuração selecionadas pelos administradores, os usuários do Centro de conteúdo podem exibir campos no Centro de conteúdo. As opções de configuração incluem metadados ao importar ativos, filtros, propriedades de ativos, metadados ao pesquisar ativos, marcas personalizadas e links personalizados."
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Configurar ativos no Content Hub](assets/configure-assets.png)
 
-O Experience Manager Assets permite que os administradores configurem as opções disponíveis na interface do usuário do Content Hub. Com base nas opções de configuração selecionadas pelos administradores, os usuários do Content Hub podem exibir campos no Content Hub. As opções de configuração incluem:
+O Experience Manager Assets permite que os administradores configurem as opções disponíveis na interface do usuário do Centro de conteúdo. Com base nas opções de configuração selecionadas pelos administradores, os usuários do Centro de conteúdo podem exibir campos no Centro de conteúdo. As opções de configuração incluem:
 
 * Filtros disponíveis para usuários ao pesquisar ativos.
 
@@ -60,6 +60,8 @@ Como administrador, gerencie as seguintes opções de configuração para seus u
 * [Pesquisar](#configure-metadata-search-content-hub)
 
 * [Identidade visual](#configure-branding-content-hub)
+
+* [Ativos expirados](#expired-assets-content-hub)
 
 * [Links personalizados](#configure-custom-links-content-hub)
 
@@ -168,6 +170,33 @@ Os administradores também podem personalizar o título e o texto do corpo no ba
 As atualizações de marca ativadas na interface do usuário de configuração são exibidas no banner do portal do Content Hub:
 
 ![Marca da interface do usuário de configuração no Content Hub](assets/configuration-ui-branding-updates.png)
+
+### Ativos expirados {#expired-assets-content-hub}
+
+Os administradores podem controlar se precisam que os ativos expirados estejam visíveis no Content Hub. Se os ativos expirados se tornarem visíveis, eles também poderão definir se os usuários podem baixá-los.
+
+Por padrão, os ativos expirados não são exibidos no Content Hub.
+
+Para desabilitá-la, siga estas etapas:
+
+1. Na interface do usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Assets Expirado]**.
+
+1. Na seção **[!UICONTROL Visível]**, habilite o botão **[!UICONTROL Permitir que usuários exibam ativos expirados]** para tornar todos os ativos expirados visíveis no Content Hub.
+
+1. Depois de habilitar a visibilidade dos ativos, você pode habilitar ou desabilitar a capacidade de baixar ativos expirados usando a opção **[!UICONTROL Permitir que os usuários baixem ativos expirados]**.
+
+1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações.
+
+   ![Ativos expirados no Content Hub](assets/expired-assets-content-hub.png)
+
+Depois de ativar a visibilidade dos ativos, você pode visualizá-los no Content Hub, conforme mostrado na imagem a seguir:
+
+![Ativos expirados no Content Hub](assets/view-download-expired-assets.png)
+
+Se o administrador tiver ativado o download, os usuários do Content Hub também poderão baixá-los, conforme realçado na imagem.
+
+Se a visibilidade dos ativos expirados estiver habilitada, o Content Hub também destacará os ativos que expiram nos próximos 15 dias usando a mensagem `Expiring in n days` no cartão de ativos.
+
 
 ### Links personalizados {#configure-custom-links-content-hub}
 
