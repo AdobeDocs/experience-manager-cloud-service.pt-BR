@@ -5,15 +5,17 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 96179c5f88e8546c12674e34afd0269c1f196d65
+source-git-commit: 0edc6d2b32d06727c693d4630ce500e32aa336b4
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 26%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Introdução às listas de permissões de IP {#introduction}
+
+Saiba como as Listas de permissões de IP podem limitar os endereços dos quais os usuários podem acessar domínios no AEM as a Cloud Service.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
@@ -21,6 +23,8 @@ ht-degree: 26%
 >abstract="O AEM as a Cloud Service pode ser acessado pela Internet e é protegido por meio da autenticação e da autorização do usuário. As listas de permissões de IP do Cloud Manager podem ser usadas para limitar e controlar o acesso somente a endereços IP confiáveis. Usuários do Cloud Manager com as permissões apropriadas podem criar listas de permissões de endereços IP confiáveis a partir dos quais os usuários do site podem acessar seus domínios do AEM."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists" text="Adicionar uma lista de permissões de IP"
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/managing-ip-allow-lists" text="Exibir e atualizar uma lista de permissões de IP"
+
+## Visão geral {#overview}
 
 O AEM as a cloud service é acessível por padrão pela Internet. Embora a segurança seja tratada por meio da autenticação e autorização do usuário, a inclusão na lista de permissões de IP é uma maneira de limitar o acesso somente a endereços IP confiáveis.
 
@@ -32,13 +36,21 @@ Após adicionar, [Listas de permissões de IP podem ser aplicadas ou desaplicada
 >
 >Se nenhuma Lista de permissões IP for aplicada, por padrão, todos os endereços IP serão permitidos. Quando uma Lista de permissões IP é aplicada, nenhum endereço IP é permitido, exceto os endereços na Lista de permissões IP.
 
-## Uso da Lista de permissões IP do Cloud Manager com o pipeline de front-end {#allowlists-frontend-pipeline}
+## Limitações {#limitations}
+
+Antes de usar listas de permissões IP, compreenda as seguintes limitações em funcionalidade, uso e efeito em outros recursos.
+
+### Limitações gerais de Listas de permissões de IP {#general}
+
+* É possível adicionar no máximo 50 Listas de permissões IP ao programa.
+* É possível adicionar no máximo 50 endereços IP/CIDR a cada Lista de permissões IP.
+* Os nomes de Lista de permissões de IP são suportados no Cloud Manager para o serviço de autoria, serviço de publicação ou ambos em um ambiente.
+
+### Pipelines de front-end e Listas de permissões de IP {#front-end-pipeline}
 
 Se você usa (ou pretende usar) o [pipeline de front-end para desenvolver sites](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md), a seguinte Lista de permissões de IP do Cloud Manager deve ser adicionada com antecedência.
 
 Quando você [adicionar a Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md#add-cm-allowlist), nomeie-a como *`Cloud Manager`*, copie a lista de endereços abaixo e cole-a na caixa de diálogo Lista de permissões de IP.
-
-**Lista de permissões IP Cloud Manager**
 
 ```text
 52.254.106.192/28
@@ -68,14 +80,8 @@ Quando você [adicionar a Lista de permissões de IP](/help/implementing/cloud-m
 
 Para evitar a interrupção da execução do pipeline de front-end, verifique se essa Lista de permissões IP do Cloud Manager foi adicionada. Em seguida, aplique a lista ao ambiente de Autor *antes* de habilitar o pipeline.
 
-Consulte [Aplicar Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md).
-Consulte [Habilitar pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
+Consulte os documentos [Aplicar Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) e [Habilitar pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) para obter mais informações.
 
+### Editor universal e Listas de permissões IP {#universal-editor}
 
-## Limitações {#limitations}
-
-Existem várias limitações para as Listas de permissões de IP que devem ser consideradas.
-
-* É possível adicionar no máximo 50 Listas de permissões IP ao seu programa.
-* É possível adicionar no máximo 50 endereços IP/CIDR a cada Lista de permissões IP.
-* Os nomes de Lista de permissões de IP são suportados no Cloud Manager para o serviço de autoria, serviço de publicação ou ambos em um ambiente.
+{{ip-allow-lists-ue}}

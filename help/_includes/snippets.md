@@ -1,8 +1,8 @@
 ---
-source-git-commit: 991db00a833e964d4837bdde9a04ee72b3ad782d
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 # Trechos {#snippets}
@@ -155,6 +155,22 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 >
 >Se você usar ou pretende usar o pipeline de front-end para desenvolver sites, a Lista de permissões de IP do Cloud Manager deverá ser adicionada com antecedência.
 >Consulte [Uso da Lista de permissões IP do Cloud Manager com o pipeline de front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+
+## LISTAS DE PERMISSÕES de IP e o editor universal {#ip-allow-lists-ue}
+
+>[!IMPORTANT]
+>
+>[O Editor Universal](/help/implementing/universal-editor/introduction.md) não é compatível com listas de permissões IP.
+>
+>Se desejar usar o Editor universal, as listas de permissões de IP não devem estar habilitadas.
+
+## Editor universal e Listas de permissões IP {#ue-ip-allow-lists}
+
+>[!IMPORTANT]
+>
+>O Editor Universal não é compatível com [listas de permissões IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
+>
+>Se desejar usar o Editor universal, as listas de permissões de IP não devem estar habilitadas.
 
 ## Trabalhar com o Dynamic Media {#work-with-dynamic-media}
 

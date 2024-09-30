@@ -4,17 +4,17 @@ description: Saiba como o Editor universal habilita a edição "o que você vê 
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 52%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # Introdução ao Editor universal {#introduction}
 
-O Universal Editor é um editor visual versátil que faz parte do Adobe Experience Manager Sites. Ele permite que os autores façam a edição &quot;o que você vê é o que você obtém&quot; (WYSIWYG) de qualquer experiência headless ou headful. Entenda como ele pode ajudar os autores de conteúdo a fornecer experiências excepcionais e como oferece liberdade inigualável para desenvolvedores.
+O Universal Editor é um editor visual versátil que faz parte do Adobe Experience Manager Sites. Ele permite que os autores façam edições &quot;o que você vê é o que você recebe&quot; (WYSIWYG) de qualquer experiência headless ou headful. Entenda como ele pode ajudar os autores de conteúdo a fornecer experiências excepcionais e como oferece liberdade inigualável para desenvolvedores.
 
 ## Fundo {#background}
 
@@ -91,6 +91,8 @@ Ao explorar o Editor universal e prosseguir com a implementação em seus própr
 * A versão do AEM as a Cloud Service `2023.8.13099` ou superior é necessária.
 * Os autores de conteúdo devem ter suas próprias contas Experience Cloud individuais.
 * Chrome e Edge são os navegadores compatíveis
+
+{{ue-ip-allow-lists}}
 
 ## Próximas etapas {#next-steps}
 
