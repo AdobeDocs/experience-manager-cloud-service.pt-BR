@@ -5,26 +5,26 @@ exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 56%
+source-wordcount: '740'
+ht-degree: 31%
 
 ---
 
-# Uso de vários repositórios {#working-with-multiple-source-git-repos}
+# Usar vários repositórios {#working-with-multiple-source-git-repos}
 
 Saiba como gerenciar vários repositórios Git ao trabalhar com o Cloud Manager.
 
-## Sincronização de repositórios Git gerenciados pelo Cliente {#syncing-customer-managed-git-repositories}
+## Sincronizar repositórios Git privados {#syncing-customer-managed-git-repositories}
 
-Em vez de trabalhar diretamente com o repositório Git do Cloud Manager, [os clientes podem trabalhar com seu próprio repositório Git](integrating-with-git.md), ou com vários deles. Nesses casos, um processo de sincronização automatizada deve ser configurado para garantir que o repositório Git da Cloud Manager esteja sempre atualizado.
+Em vez de trabalhar diretamente com o repositório Git da Cloud Manager, [os clientes podem trabalhar com seu próprio repositório Git privado](integrating-with-git.md) ou com vários deles. Nesses casos, configure um processo de sincronização automatizada para garantir que o repositório Git no Cloud Manager esteja sempre atualizado.
 
 Dependendo de onde o repositório Git do cliente estiver hospedado, uma ação do GitHub ou uma solução de integração contínua, como Jenkins, pode ser usada para configurar a automação. Com uma automação em vigor, cada push para um repositório Git de propriedade do cliente pode ser encaminhado automaticamente para o repositório Git da Cloud Manager.
 
-Embora essa automação para um único repositório Git de propriedade do cliente seja direta, a configuração disso para vários repositórios requer uma configuração inicial. O conteúdo de vários repositórios Git deve ser mapeado para diretórios diferentes dentro do único repositório Git do Cloud Manager. O repositório Git da Cloud Manager deve ser provisionado com um Maven raiz `pom.xml`, listando os diferentes subprojetos na seção de módulos.
+Embora essa automação para um único repositório Git de propriedade do cliente seja direta, configurá-la para vários repositórios requer uma configuração inicial. O conteúdo de vários repositórios Git deve ser mapeado para diretórios diferentes dentro do único repositório Git do Cloud Manager. O repositório Git da Cloud Manager deve ser provisionado com um Maven raiz `pom.xml`, listando os diferentes subprojetos na seção de módulos.
 
-Veja a seguir um exemplo do arquivo `pom.xml` para dois repositórios Git de propriedade do cliente.
+Este é um exemplo de arquivo `pom.xml` para dois repositórios Git de propriedade do cliente.
 
 * O primeiro projeto será colocado no diretório chamado `project-a`.
 * O segundo projeto será colocado no diretório chamado `project-b`.
@@ -48,27 +48,29 @@ Veja a seguir um exemplo do arquivo `pom.xml` para dois repositórios Git de pro
 </project>
 ```
 
-A raiz `pom.xml` será enviada para uma ramificação no repositório Git do Cloud Manager. Em seguida, os dois projetos devem ser configurados para encaminhar automaticamente as alterações para o repositório Git do Cloud Manager.
+Essa raiz `pom.xml` será enviada a uma ramificação no repositório Git do Cloud Manager. Em seguida, os dois projetos devem ser configurados para encaminhar as alterações automaticamente para o repositório Git da Cloud Manager.
 
 Uma solução possível seria a descrita a seguir.
 
-1. Uma ação do GitHub pode ser acionada por push a uma ramificação no projeto A.
-1. A ação verifica o projeto A e o repositório Git do Cloud Manager e copia todo o conteúdo do projeto A para o diretório `project-a` no repositório Git do Cloud Manager.
+1. Acione uma ação do GitHub enviando para uma ramificação no projeto A.
+1. A ação verifica o projeto A e o repositório Git do Cloud Manager. Em seguida, ele copia todo o conteúdo do projeto A para o diretório `project-a` no repositório Git da Cloud Manager.
 1. Em seguida, a ação confirma - envia a alteração.
 
 Por exemplo, uma alteração na ramificação principal do projeto A é automaticamente enviada para a ramificação principal no repositório Git do Cloud Manager. Pode haver um mapeamento entre ramificações, como quando um push para uma ramificação chamada `dev` no projeto A é enviado para uma ramificação chamada `development` no repositório Git do Cloud Manager. Etapas semelhantes são necessárias para o projeto B.
 
-Dependendo da estratégia de ramificação e dos fluxos de trabalho, a sincronização pode ser configurada para ramificações diferentes. Se o repositório Git usado não fornecer um conceito semelhante às ações do GitHub, uma integração por meio do Jenkins (ou semelhante) também é possível. Nesse caso, um webhook aciona uma tarefa do Jenkins que faz o trabalho.
+Dependendo da estratégia de ramificação e dos fluxos de trabalho, a sincronização pode ser configurada para ramificações diferentes. Se o repositório Git usado não fornecer um conceito semelhante às ações do GitHub, também é possível uma integração por meio do Jenkins (ou semelhante). Nesse caso, um webhook aciona uma tarefa do Jenkins, que faz o trabalho.
 
 Siga estas etapas para adicionar um novo, uma terceira fonte ou um repositório.
 
 1. Adicione uma ação do GitHub ao novo repositório, o que envia as alterações desse repositório para o repositório Git da Cloud Manager.
 1. Execute essa ação pelo menos uma vez para garantir que o código do projeto esteja no repositório Git do Cloud Manager.
-1. Adicione uma referência ao novo diretório no `pom.xml` do Maven raiz no repositório Git do Cloud Manager.
+1. No repositório Git do Cloud Manager, adicione uma referência ao novo diretório na raiz Maven `pom.xml`.
+
+
 
 ## Exemplo de ação do GitHub {#sample-github-action}
 
-Este é um exemplo de ação do GitHub acionada por um envio à ramificação principal que, em seguida, é encaminhado para um subdiretório do repositório Git da Cloud Manager. As ações do GitHub devem ser fornecidas com dois segredos, `MAIN_USER` e `MAIN_PASSWORD`, para poderem se conectar e enviar para o repositório Git da Cloud Manager.
+Este é um exemplo de ação do GitHub acionada por um push para a ramificação principal. Em seguida, insira um subdiretório do repositório Git da Cloud Manager. As ações do GitHub devem ser fornecidas com dois segredos, `MAIN_USER` e `MAIN_PASSWORD`, para poderem se conectar e enviar para o repositório Git da Cloud Manager.
 
 ```java
 name: SYNC
@@ -129,13 +131,13 @@ O uso de uma ação do GitHub é flexível. É possível executar qualquer mapea
 
 >[!NOTE]
 >
->O exemplo de script usa `git add` para atualizar o repositório. Isso pressupõe que as remoções estejam incluídas. Dependendo da configuração padrão do Git, ele deve ser substituído por `git add --all`.
+>O exemplo de script usa `git add` para atualizar o repositório. O script pressupõe que as remoções estejam incluídas. Dependendo da configuração padrão do Git, ele deve ser substituído por `git add --all`.
 
-## Exemplo de tarefa do Jenkins {#sample-jenkins-job}
+## Exemplo de processo do Jenkins {#sample-jenkins-job}
 
 Este é um exemplo de script que pode ser usado em uma tarefa do Jenkins ou similar e tem o seguinte fluxo:
 
-1. É acionado por uma alteração em um repositório Git.
+1. Ele é acionado por uma alteração em um repositório Git.
 1. A tarefa do Jenkins verifica o estado mais recente desse projeto ou ramificação.
 1. A tarefa então aciona o script.
 1. O script, por sua vez, verifica o repositório Git do Cloud Manager e confirma o código do projeto em um subdiretório.
@@ -198,4 +200,4 @@ O uso de uma tarefa do Jenkins é flexível. É possível executar qualquer mape
 
 >[!NOTE]
 >
->O exemplo de script usa `git add` para atualizar o repositório. Isso pressupõe que as remoções estejam incluídas. Dependendo da configuração padrão do Git, ele deve ser substituído por `git add --all`.
+>O exemplo de script usa `git add` para atualizar o repositório. O script pressupõe que as remoções estejam incluídas. Dependendo da configuração padrão do Git, ele deve ser substituído por `git add --all`.
