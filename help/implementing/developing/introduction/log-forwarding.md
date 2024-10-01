@@ -4,9 +4,9 @@ description: Saiba mais sobre como encaminhar logs para o Splunk e outros fornec
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 17d195f18055ebd3a1c4a8dfe1f9f6bc35ebaf37
+source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ Este artigo está organizado da seguinte maneira:
 * Configurações de destino de registro - cada destino tem um formato um pouco diferente
 * Formatos de Entrada de Log - informações sobre os formatos de entrada de log
 * Rede avançada - envio de registros AEM e Apache/Dispatcher por meio de uma saída dedicada ou por meio de uma VPN
+* Migração do encaminhamento de log herdado - como migrar do encaminhamento de log previamente configurado pelo Adobe para a abordagem de autoatendimento
 
 
 ## Configurar {#setup}
@@ -369,4 +370,23 @@ data:
     aem:
       advancedNetworking: true
 ```
+
+## Migrando do Encaminhamento de Log Herdado {#legacy-migration}
+
+Antes de a configuração do encaminhamento de logs ser obtida por meio de um modelo de autoatendimento, os clientes eram solicitados a abrir tíquetes de suporte, em que o Adobe iniciaria a integração.
+
+Os clientes que foram configurados dessa maneira pelo Adobe são bem-vindos para se adaptarem ao modelo de autoatendimento de sua conveniência. Há vários motivos para fazer essa transição:
+
+* Um novo ambiente (por exemplo, um novo ambiente de desenvolvimento ou RDE) foi provisionado.
+* Alterações nas credenciais ou no ponto de extremidade existente do Splunk.
+* O Adobe configurou o encaminhamento de log antes que os logs CDN estivessem disponíveis e você gostaria de receber logs CDN.
+* Uma decisão consciente de se adaptar proativamente ao modelo de autoatendimento para que sua organização tenha o conhecimento mesmo antes de uma alteração sensível ao tempo ser necessária.
+
+Quando estiver pronto para migrar, basta configurar o arquivo YAML conforme descrito nas seções anteriores. Use o pipeline de configuração do Cloud Manager para implantar em cada um dos ambientes em que a configuração deve ser aplicada.
+
+Recomenda-se, mas não é necessário, que uma configuração seja implantada em todos os ambientes para que todos estejam sob controle de autoatendimento. Caso contrário, você pode esquecer quais ambientes foram configurados pelo Adobe e os configurados de forma automatizada.
+
+>[!NOTE]
+>
+>Quando o encaminhamento de registros é implantado em um ambiente previamente configurado pelo suporte para Adobe, você pode receber registros duplicados por até algumas horas. Isso acabará sendo resolvido automaticamente.
 
