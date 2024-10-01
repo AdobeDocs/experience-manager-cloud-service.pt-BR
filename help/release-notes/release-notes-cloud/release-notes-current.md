@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 2d5fa0b15456ad9838fa236a2b5c79d41a9af7fe
+source-git-commit: 894c5df2cdc6637bae9b4b8f2cbdd1f1162b3942
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1289'
 ht-degree: 12%
 
 ---
@@ -71,6 +71,12 @@ Para obter acesso antecipado ao suporte a legendas geradas por IA em sua conta d
 
 O Seletor de ativos agora é compatível com a navegação em Coleções para encontrar o ativo desejado.
 ![Coleções do seletor de ativos](/help/assets/assets/collections-rail-modal-view.png)
+
+### Novos recursos no Content Hub {#content-hub-new-features}
+
+Agora, os administradores podem controlar se precisam que os ativos expirados estejam visíveis no Content Hub. Se os ativos expirados se tornarem visíveis, eles também poderão definir se os usuários podem baixá-los.
+
+![Ativos expirados no Content Hub](/help/assets/assets/view-download-expired-assets.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
