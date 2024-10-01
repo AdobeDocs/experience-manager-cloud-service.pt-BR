@@ -4,10 +4,10 @@ description: Saiba como configurar recursos avançados de rede, como VPN ou um e
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 09a1d6065c42406f1004eb1bdd7dbf902edb279f
 workflow-type: tm+mt
-source-wordcount: '5743'
-ht-degree: 22%
+source-wordcount: '5685'
+ht-degree: 23%
 
 ---
 
@@ -585,11 +585,6 @@ O diagrama abaixo fornece uma representação visual de um conjunto de domínios
     <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>N/A</td>
     <td>O IP do gateway de VPN no lado do AEM. Sua equipe de engenharia de rede pode usar isso para permitir somente conexões VPN, de um endereço IP específico, ao seu gateway de VPN. </td>
-  </tr>
-  <tr>
-    <td><code>p{PROGRAM_ID}.{REGION}.inner.adobeaemcloud.net</code></td>
-    <td>O IP do tráfego vindo do lado AEM da VPN para o seu lado. Incluir na lista de permissões Isso pode ser mudado em sua configuração para garantir que as conexões sejam feitas somente a partir do AEM.</td>
-    <td>Se quiser permitir o acesso por VPN ao AEM, configure as entradas de DNS CNAME para mapear seu domínio personalizado e/ou <code>author-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> e/ou <code>publish-p{PROGRAM_ID}-e{ENVIRONMENT_ID}.adobeaemcloud.com</code> para isso.</td>
   </tr>
 </tbody>
 </table>
