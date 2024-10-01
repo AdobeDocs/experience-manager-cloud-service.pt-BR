@@ -5,9 +5,9 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: f2364de6237ca9f0285815b581bcf3881488188d
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '384'
 ht-degree: 44%
 
 ---
@@ -42,9 +42,9 @@ O recurso **Acessar Informações do Repositório** está visível para usuário
 
    ![Acessar informações do repositório no cartão Pipelines](assets/pipelines-card.png)
 
-1. Para acessar a senha, uma nova senha deve ser gerada. Na caixa de diálogo Informações do Repositório, clique em **`Generate password`**.
+1. Para acessar a senha, uma nova senha deve ser gerada. Na caixa de diálogo **Informações do Repositório**, selecione **Gerar senha**.
 
-1. Na caixa de diálogo de confirmação, clique em **`Generate password`**.
+1. Na caixa de diálogo de confirmação, selecione **Gerar senha**.
 
    ![Confirmar geração de senha](assets/confirm-generated-password.png)
 

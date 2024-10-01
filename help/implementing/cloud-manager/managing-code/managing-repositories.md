@@ -1,13 +1,13 @@
 ---
 title: Gerenciar repositórios no Cloud Manager
-description: Saiba como criar, exibir e excluir repositórios GIT no Cloud Manager.
+description: Saiba como adicionar, exibir e excluir repositórios Git no Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 533fa72b7610f671a24461073112b7fb798ce166
+source-git-commit: b35b25bcd62c28f7894171b7b2269fa46d612686
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 13%
+source-wordcount: '708'
+ht-degree: 19%
 
 ---
 
@@ -48,7 +48,9 @@ Outras ações disponíveis no menu suspenso incluem **[Copiar URL do repositór
    ![Página Repositórios](assets/repositories.png)
    *A página Repositórios no Cloud Manager.*
 
-## Adicionar repositórios {#adding-repositories}
+## Adicionar um repositório {#adding-repositories}
+
+O usuário deve ter a função **Gerente de implantação** ou **Proprietário da empresa** para adicionar um repositório.
 
 Na página **Repositórios**, próximo ao canto superior direito, clique em **Adicionar repositório**
 
@@ -60,11 +62,15 @@ A Cloud Manager oferece suporte a dois tipos de repositórios: repositórios ger
 * [Adicionar repositórios privados no Cloud Manager](adobe-repositories.md)
 * [Adição de repositórios privados no Cloud Manager](private-repositories.md)
 
->[!NOTE]
->
->* O usuário deve ter a função **Gerente de implantação** ou **Proprietário da empresa** para adicionar um repositório.
->* Há um limite de 300 repositórios em todos os programas em uma determinada empresa ou organização IMS.
+Há um limite de 300 repositórios em todos os programas em uma determinada empresa ou organização IMS.
 
+## Acessar informações do repositório {#repo-info}
+
+Ao visualizar os repositórios na janela **Repositórios**, você pode visualizar os detalhes sobre como acessar os repositórios gerenciados pela Adobe de forma programática clicando no botão **Acessar informações do repositório** na barra de ferramentas.
+
+![Informações do repositório](assets/repository-access-repo-info2.png)
+
+A janela **Informações do repositório** é aberta com os detalhes. Para obter mais informações sobre o acesso às informações do repositório, consulte o documento [Acessar informações do repositório](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 ## Verificar ramificações/Criar projeto {#check-branches}
 
@@ -91,7 +97,7 @@ A ação **Excluir** remove o repositório do seu projeto. Um repositório não 
 
 ![Excluir](assets/repository-delete.png)
 
-A exclusão de um repositório torna seu nome inutilizável para quaisquer novos repositórios criados no futuro. Se você tentar usar o mesmo nome, verá a seguinte mensagem de erro:
+A exclusão de um repositório torna seu nome inutilizável para quaisquer novos repositórios criados no futuro. Se você tentar adicionar um repositório usando o mesmo nome de um repositório excluído, verá a seguinte mensagem de erro:
 
 `Repository name should be unique within organization.`
 
