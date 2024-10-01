@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 894c5df2cdc6637bae9b4b8f2cbdd1f1162b3942
+source-git-commit: 270e6623c764466f05b25c18faf724a7250309dd
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1313'
 ht-degree: 12%
 
 ---
@@ -34,13 +34,11 @@ A data de lançamento da versão atual (2024.9.0) do [!DNL Adobe Experience Mana
 
 Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-notes/maintenance/latest.md).
 
-<!--  ## Release Video {#release-video}
+## Vídeo da versão {#release-video}
 
-Have a look at the September 2024 Release Overview video for a summary of the features added in the 2024.9.0 release:
+Assista ao vídeo Visão geral da versão de setembro de 2024 que exibe um resumo dos recursos adicionados na versão 2024.9.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3434847?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
