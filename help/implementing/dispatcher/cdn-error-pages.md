@@ -4,9 +4,9 @@ description: Saiba como substituir a página de erro padrão hospedando arquivos
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -89,3 +89,9 @@ curl "https://publish-pXXXXX-eXXXXXX.adobeaemcloud.com/cdnstatus?code=403"
 Os códigos compatíveis são: 403, 404, 406, 500 e 503.
 
 Dessa forma, você aciona diretamente o manipulador de erros do CDN para testar a resposta sintética de um determinado código de erro.
+
+### Tutorial
+
+Consulte o tutorial [páginas de erro da CDN](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-error-pages#cdn-error-pages) para obter instruções passo a passo sobre como criar, implantar e testar as páginas de erro fornecidas pela CDN.
+
+
