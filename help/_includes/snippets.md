@@ -1,8 +1,8 @@
 ---
-source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1202'
+ht-degree: 4%
 
 ---
 # Trechos {#snippets}
@@ -162,7 +162,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 >
 >[O Editor Universal](/help/implementing/universal-editor/introduction.md) não é compatível com listas de permissões IP.
 >
->Se desejar usar o Editor universal, as listas de permissões de IP não devem estar habilitadas.
+>Se quiser usar o Editor universal, as listas de permissões de IP não devem estar habilitadas.
 
 ## Editor universal e Listas de permissões IP {#ue-ip-allow-lists}
 
@@ -197,7 +197,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 >* Forneça uma [experiência interativa baseada em 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
 >* Outro [banco de recursos Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
-## Registrando um tíquete de suporte {#support-ticket}
+## Registrar um tíquete de suporte {#support-ticket}
 
 Se um problema do produto precisar de investigação e solução de problemas adicionais e precisar atender aos SLTs de resposta, você poderá enviar um tíquete de suporte.
 

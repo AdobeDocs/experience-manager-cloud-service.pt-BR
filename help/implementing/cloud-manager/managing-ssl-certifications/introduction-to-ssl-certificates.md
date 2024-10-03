@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 484f7b0fd8917902d028434451964dd9df3e3445
+source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 22%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 22%
 
 # Introdução aos certificados SSL{#introduction}
 
-Saiba mais sobre as ferramentas de autoatendimento que a Cloud Manager fornece para instalar e gerenciar certificados SSL.
+Saiba mais sobre as ferramentas de autoatendimento que a Cloud Manager fornece para instalar e gerenciar certificados SSL (Secure Socket Layer).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_sslcert"
@@ -32,7 +32,7 @@ Quando uma entidade, como uma organização ou empresa, solicita um certificado 
 
 >[!IMPORTANT]
 >
->O Cloud Manager não fornece certificados SSL ou chaves privadas. Eles devem ser obtidos de uma autoridade de certificação, uma organização terceirizada confiável. Algumas Autoridades de Certificação conhecidas incluem *DigiCert*, *Let&#39;s Encrypt*, *GlobalSign*, *Entrust* e *Verisign*.
+>O Cloud Manager não fornece certificados SSL ou chaves privadas. Essas peças devem ser obtidas de uma autoridade de certificação, uma organização terceirizada confiável. Algumas Autoridades de Certificação conhecidas incluem *DigiCert*, *Let&#39;s Encrypt*, *GlobalSign*, *Entrust* e *Verisign*.
 
 ## Gerenciar certificados com o Cloud Manager {#cloud-manager}
 
@@ -40,10 +40,10 @@ O Cloud Manager oferece ferramentas de autoatendimento para instalar e gerenciar
 
 | | Modelo | Descrição |
 | --- | --- | --- |
-| 1 | **[DV (certificado gerenciado por Adobe)](#adobe-managed)** | O Cloud Manager permite que os usuários configurem os certificados DV (Validação de domínio) fornecidos pelo Adobe para configuração rápida do domínio. |
-| 2 | **[Certificado gerenciado pelo cliente (OV/EV)](#customer-managed)** | A Cloud Manager oferece um serviço TLS (Transport Layer Security) para permitir que você gerencie certificados SSL OV e EV que você possui, bem como chaves privadas de Autoridades de Certificação de terceiros, como *Vamos Criptografar*. |
+| A | **[DV (certificado gerenciado por Adobe)](#adobe-managed)** | O Cloud Manager permite que os usuários configurem os certificados DV (Validação de domínio) fornecidos pelo Adobe para configuração rápida do domínio. |
+| B | **[Certificado gerenciado pelo cliente (OV/EV)](#customer-managed)** | A Cloud Manager oferece um serviço TLS (Transport Layer Security) para permitir que você gerencie certificados SSL OV e EV que você possui e chaves privadas de Autoridades de Certificação de terceiros, como *Vamos Criptografar*. |
 
-Ambos os modelos oferecem os seguintes recursos gerais.
+Ambos os modelos oferecem os seguintes recursos gerais para gerenciar seus certificados:
 
 * Cada ambiente do Cloud Manager pode usar vários certificados.
 * Uma chave privada pode emitir vários certificados SSL.
@@ -53,7 +53,7 @@ Ambos os modelos oferecem os seguintes recursos gerais.
 >
 >[Para adicionar e associar um domínio personalizado a um ambiente](/help/implementing/cloud-manager/custom-domain-names/introduction.md), é necessário ter um certificado SSL válido que cubra o domínio.
 
-### Certificados gerenciados Adobe {#adobe-managed}
+### Certificados gerenciados por Adobe {#adobe-managed}
 
 Os certificados DV são o nível mais básico da certificação SSL e são frequentemente usados para fins de teste ou para proteger sites com criptografia básica. Os certificados DV estão disponíveis em [programas de produção e programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
@@ -72,17 +72,17 @@ OV e EV também oferecem esses recursos em relação aos certificados DV na Clou
 
 >[!TIP]
 >
->Se você tiver vários domínios personalizados e não quiser fazer upload de um certificado sempre que adicionar um domínio, poderá se beneficiar de obter um certificado com vários domínios.
+>Se você tiver vários domínios personalizados, talvez não queira carregar um certificado sempre que adicionar um novo domínio. Nesse caso, você pode se beneficiar com a obtenção de um único certificado que abrange vários domínios.
 
 >[!NOTE]
 >
 >Se dois certificados abrangerem o mesmo domínio estiverem instalados, o mais exato será aplicado.
 >
->Por exemplo, se o seu domínio for `dev.adobe.com` e você tiver um certificado que cubra `*.adobe.com` e um certificado que cubra `dev.adobe.com`, o último será aplicado porque é mais exato.
+>Por exemplo, se o seu domínio for `dev.adobe.com` e você tiver um certificado para `*.adobe.com` e outro para `dev.adobe.com`, o mais específico (`dev.adobe.com`) será usado.
 
 #### Requisitos para certificados gerenciados pelo cliente {#requirements}
 
-Se você optar por fazer upload do seu próprio certificado EV/OV, ele deverá atender aos seguintes requisitos.
+Se você optar por fazer upload do seu próprio certificado EV/OV, ele deverá atender aos seguintes requisitos:
 
 * A AEM as a Cloud Service aceita certificados que estejam em conformidade com a política OV (Validação da organização) ou EV (Validação estendida).
    * O Cloud Manager não oferece suporte ao upload de seus próprios certificados DV (Validação de domínio).

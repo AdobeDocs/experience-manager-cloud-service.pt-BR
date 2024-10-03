@@ -1,20 +1,20 @@
 ---
-title: Configurar pipelines de não produção
-description: Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
+title: Adicionar um pipeline de não produção
+description: Saiba como adicionar um pipeline de não produção para testar a qualidade do seu código antes de implantar em ambientes de produção.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
 workflow-type: tm+mt
-source-wordcount: '1402'
-ht-degree: 74%
+source-wordcount: '1405'
+ht-degree: 72%
 
 ---
 
 
-# Configurar pipelines de não produção {#configuring-non-production-pipelines}
+# Adicionar um pipeline de não produção {#configuring-non-production-pipelines}
 
 Saiba como configurar pipelines de não produção para testar a qualidade do código antes de implantar em ambientes de produção.
 
