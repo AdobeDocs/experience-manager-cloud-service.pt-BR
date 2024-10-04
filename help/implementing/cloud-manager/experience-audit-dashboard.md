@@ -5,10 +5,10 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5dc3d571c553f2972295172c7a6d0249be3285b8
+source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 6%
+source-wordcount: '1534'
+ht-degree: 8%
 
 ---
 
@@ -100,7 +100,6 @@ Você pode acessar os resultados completos da auditoria clicando na guia **Relat
 >* Para saber mais detalhes sobre como a auditoria funciona, consulte [Detalhes da avaliação da auditoria de experiência](#details).
 >* Para saber como executar uma Auditoria de experiência sob demanda, consulte [Relatórios de auditoria sob demanda](#on-demand).
 >* Se você tiver problemas com a auditoria, consulte [Problemas de Encontros de Auditoria de Experiência](#issues).
->* Para obter dicas gerais de desempenho, consulte [Dicas Gerais de Desempenho](#performance-tips).
 
 ### Exibir as páginas mais lentas {#view-slowest-pages}
 
@@ -155,38 +154,11 @@ Se você clicar no gráfico em um ponto no tempo, um popover será aberto com de
 
 #### Resultados da busca da auditoria de experiência {#scan-results}
 
-A seção **Resultados da verificação da Auditoria de Experiência** fornece recomendações sobre como melhorar sua pontuação e detalhes de todas as páginas digitalizadas. Ele está dividido em duas seções:
-
-* **[Recommendations](#recommendations)**
-* **[Páginas digitalizadas](#scanned-pages)**
-
-##### Recomendações {#recommendations}
-
-A seção **Recommendations** mostra um conjunto agregado de insights. Por padrão, as recomendações para **desempenho** são exibidas. Use o menu suspenso ao lado do cabeçalho **Recommendations** para alterar para outra categoria.
-
-![Recommendations](assets/experience-audit-recommendations.png)
-
-Clique em qualquer recomendação para revelar detalhes sobre ela.
-
-![Detalhes da recomendação](assets/experience-audit-recommendations-details.png)
-
-Quando disponíveis, os detalhes expandidos da recomendação também contêm a porcentagem do impacto das recomendações para ajudar a se concentrar nas alterações mais impactantes. Além disso, as recomendações ampliadas podem incluir links relevantes da documentação do AEM e dicas que podem orientá-lo na implementação das correções sugeridas.
-
-Clique no link **ver páginas** na exibição de detalhes para ver as páginas às quais a recomendação se aplica.
-
-![Páginas para obter detalhes da recomendação](assets/experience-audit-details-pages.png)
-
-##### Páginas verificadas {#scanned-pages}
-
-A seção **Páginas digitalizadas** fornece detalhes das pontuações em todas as páginas digitalizadas. Use os botões **Anterior** e **Avançar** para percorrer os resultados e escolher quantos a exibição deve paginar.
+A seção **Resultados da verificação da Auditoria de Experiência** fornece detalhes das pontuações em todas as páginas digitalizadas. Use os botões **Anterior** e **Avançar** para percorrer os resultados e escolher quantos a exibição deve paginar.
 
 ![Páginas digitalizadas](assets/experience-audit-scanned-pages.png)
 
-Clique no link de uma página específica para atualizar o filtro **Selecionar** das [**Pontuações da página — tendência** seção](#trend) e mostrar a guia **Pontuações e recomendações** da página selecionada.
-
-![Resultados da página](assets/experience-audit-page-results.png)
-
-A guia **Relatórios brutos** fornece pontuações para cada auditoria da página. Clique na data do relatório na coluna **Relatório de Farol** para recuperar um arquivo JSON dos dados brutos.
+Clique no link de uma página específica para atualizar o filtro **Selecionar** das [**Pontuações da página — tendência** seção](#trend) e mostrar a guia **Relatórios brutos** que fornece pontuações para cada auditoria da página. Clique na data do relatório na coluna **Relatório de Farol** para recuperar um arquivo JSON dos dados brutos.
 
 ![Relatório bruto](assets/experience-audit-raw-reports.png)
 
@@ -239,20 +211,7 @@ Alguns motivos pelos quais as páginas podem não estar disponíveis são:
 
 >[!TIP]
 >
->[Acessar os relatórios brutos](#scanned-pages) de uma página pode fornecer detalhes sobre por que a página não pôde ser auditada.
-
-## Dicas gerais de desempenho {#performance-tips}
-
-Dois dos problemas de impacto mais comuns que são fáceis de corrigir estão relacionados com as mudanças cumulativas de layout (CLS) e a maior tinta de conteúdo (LCP).
-
-Você pode melhorar essas áreas fazendo o seguinte:
-
-* Não é um carregamento lento das imagens acima da dobra — o conteúdo que é visível no navegador sem precisar rolar para baixo.
-* Priorizar corretamente como os recursos são carregados (por exemplo, carregando de forma assíncrona as imagens abaixo da dobra após o carregamento do documento).
-* Busca prévia de arquivos JavaScript e CSS usados para renderizar conteúdo acima da dobra (se necessário).
-* Reserva de espaço vertical ao atribuir uma proporção aos contêineres que carregam lentamente ou são renderizados posteriormente.
-* Conversão de imagens para o formato WebP para reduzir seu tamanho.
-* Usando `<picture>` e imagem `srcset` com tamanhos de imagem variados para diferentes tamanhos de visor (e garantindo que o redimensionamento funcione).
+>[Acessar os relatórios brutos](#scan-results) de uma página pode fornecer detalhes sobre por que a página não pôde ser auditada.
 
 ## Detalhes de avaliação da Auditoria de experiência {#details}
 
@@ -261,7 +220,3 @@ Os detalhes a seguir fornecem informações adicionais sobre como a Auditoria de
 * A auditoria verifica o domínio de origem (`.com`) a partir dos [caminhos configurados da página Auditoria de Experiência](#configuration) do publicador para simular experiências reais do usuário, ajudando você a tomar melhores decisões sobre como gerenciar e otimizar seus sites.
 * Em pipelines de pilha completa de produção, o ambiente de preparo é verificado. Para garantir que a auditoria forneça detalhes relevantes durante a auditoria, o conteúdo do ambiente de preparo deve estar o mais próximo possível do ambiente de produção.
 * As páginas exibidas na lista suspensa **Selecionar** em [**Pontuações de página — tendência** seção](#trend) são todas páginas conhecidas que a Auditoria de Experiência verificou no passado.
-* [Uma recomendação](#recommendations) pode ter um ganho potencial e uma diferença em relação à verificação anterior.
-* A Auditoria de experiência estima as melhorias potenciais ao processar o relatório bruto para cada página. Ele correlaciona bytes ou milissegundos desperdiçados com insights, atribuindo um impacto ponderado na pontuação de desempenho. A auditoria fornece essas informações e as páginas afetadas para ajudar a decidir qual recomendação seguir.
-Consulte a [seção Dicas Gerais de Desempenho](#performance-tips) para obter mais detalhes.
-* Um pipeline de front-end pode ser implantado em um ambiente existente, e vários pipelines de front-end podem ter o mesmo ambiente como alvo. Como os resultados da verificação são agregados no nível do ambiente, as pontuações, as tendências e as recomendações são consistentes. Esses resultados são exibidos no ambiente selecionado, independentemente de qual pipeline acionou a verificação.
