@@ -4,10 +4,10 @@ description: Saiba como importar ativos em massa usando a nova interface do Asse
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 816bf0f93dd67f193f4e8a7c9bc4a7df29cb6cf5
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 93%
+source-wordcount: '1881'
+ht-degree: 87%
 
 ---
 
@@ -125,11 +125,23 @@ Execute as seguintes etapas para criar uma configuração de importação em mas
    >* Se você selecionar **Dropbox completo** ao criar o aplicativo do Dropbox e a pasta que contiver os ativos existir em `https://www.dropbox.com/home/bulkimport-assets`, especifique `bulkimport-assets` no campo **[!UICONTROL Pasta de origem]**.
    >* Se você selecionar **Pasta do aplicativo** ao criar o aplicativo do Dropbox e a pasta que contiver os ativos existir em `https://www.dropbox.com/home/Apps/BulkImportAppFolderScope/bulkimport-assets`, especifique `bulkimport-assets` no campo **[!UICONTROL Pasta de origem]**, onde `BulkImportAppFolderScope` refere-se ao nome do aplicativo. Neste caso, o `Apps` é adicionado automaticamente após `home`.
 
+   >[!NOTE]
+   >
+   >Se você estiver usando o OneDrive como fonte de dados, especifique o caminho da pasta de origem com base nas seguintes regras:
+   >* Especifique somente o nome da Pasta raiz, sem o domínio. Se o caminho completo da URL da pasta for `https://my.sharepoint.com/my?id=/personal/user/Documents/Importfolder/`, especifique `/Importfolder/` no campo **[!UICONTROL Pasta do Source]**.
+   >* Se o nome da pasta contiver várias palavras separadas por espaços, especifique o nome com os espaços na configuração de Importação em massa.
+   >* A pasta de origem deve estar localizada na raiz do diretório. Não há suporte para caminhos de pasta.
+
 1. (Opcional) Selecione a opção **[!UICONTROL Excluir arquivo de origem após a importação]** para excluir os arquivos originais do armazenamento de dados de origem após os arquivos serem importados para o Experience Manager Assets.
 1. Selecione o **[!UICONTROL Modo de importação]**. Selecione **[!UICONTROL Ignorar]**, **[!UICONTROL Substituir]** ou **[!UICONTROL Criar versão]**. O modo Ignorar é o padrão e nesse modo, o assimilador ignora a importação de um ativo, caso já exista.
    ![Importação de detalhes da origem](/help/assets/assets/bulk-import-source-details.png)
 
 1. (Opcional) Especifique o arquivo de metadados a ser importado, fornecido em formato CSV no campo **[!UICONTROL Arquivo de metadados]**. O arquivo de origem de metadados deve estar na pasta de origem. Clique em **[!UICONTROL Próximo]** para navegar até **[!UICONTROL Localização e filtros]**.
+
+   >[!NOTE]
+   >
+   >Dependendo das regras de segurança da organização, talvez seja necessário o consentimento do administrador para que esse aplicativo se conecte à ferramenta Importação em massa. Se isso for necessário, o administrador precisará fornecer consentimento antes que a configuração de importação em massa possa ser salva.
+
 1. Defina um local no DAM onde os ativos devem ser importados usando o campo **[!UICONTROL Pasta de destino do Assets]**. Por exemplo, `/content/dam/imported_assets`.
 1. (Opcional) Na seção **[!UICONTROL Escolher filtros]**, forneça o tamanho mínimo de arquivo dos ativos em MB para incluí-los no processo de assimilação no campo **[!UICONTROL Filtrar por tamanho mínimo]**.
 1. (Opcional) Forneça o tamanho máximo de arquivo dos ativos em MB para incluí-los no processo de assimilação no campo **[!UICONTROL Filtrar por tamanho máximo]**.
