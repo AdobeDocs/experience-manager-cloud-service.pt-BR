@@ -4,9 +4,9 @@ description: Saiba como configurar credenciais e autenticação de CDN declarand
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 83efc7298bc8d211d1014e8d8be412c6826520b8
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,8 @@ data:
 ```
 
 Consulte [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição das propriedades acima do nó `data`. O valor da propriedade `kind` deve ser *CDN* e a propriedade `version` deve ser definida como `1`.
+
+Consulte a etapa do tutorial [Configurar e implantar regra CDN de validação de cabeçalho HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obter mais detalhes.
 
 As propriedades adicionais incluem:
 
