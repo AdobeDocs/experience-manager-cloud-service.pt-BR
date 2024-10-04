@@ -3,10 +3,10 @@ title: Notas de versão do Cloud Manager 2024.10.0 no Adobe Experience Manager a
 description: Saiba mais sobre as notas de versão do Cloud Manager 2024.10.0 no AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: b90ace2250277005d8ac250c841104c93298a605
+source-git-commit: aa8d4c8c69a96054492b886893414c3e82b2f4ad
 workflow-type: tm+mt
-source-wordcount: '472'
-ht-degree: 9%
+source-wordcount: '569'
+ht-degree: 8%
 
 ---
 
@@ -29,6 +29,16 @@ A próxima versão está planejada para sexta-feira, 14 de novembro de 2024.
 * <!-- BOTH CS & AMS --> A versão do Arquétipo AEM usada no Cloud Manager foi atualizada para a versão 26. Ver [https://github.com/adobe/aem-project-archetype/releases](https://github.com/adobe/aem-project-archetype/releases)
 
 <!-- (CMGR-59817) -->
+
+* <!-- CS ONLY --> Ao adicionar um novo domínio personalizado, o método de verificação anterior envolvia um longo processo de validação de DNS. A Adobe simplificou esse processo para os clientes. Agora, você só precisa fornecer um certificado SSL válido (EV ou OV), que serve como prova de propriedade. Não é mais necessário atualizar registros TXT no DNS.
+
+  >[!NOTE]
+  >
+  >Esse recurso só se aplica a certificados EV e OV gerenciados pelo cliente. Os certificados DV gerenciados pelo Adobe ainda exigem a presença de um registro CNAME.
+
+  Consulte [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+
+  ![Verificar domínio para um certificado EV/OV gerenciado pelo cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png)
 
 * <!-- CS ONLY --> Ao adicionar ou editar a infraestrutura de rede, os valores nos campos de endereço IP e máscara de rede são validados de acordo com as seguintes regras:
 
@@ -66,7 +76,7 @@ O recurso **Traga seu próprio Git** foi expandido para incluir suporte para rep
 
 Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
-![Caixa de diálogo Adicionar Repositório](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+![Caixa de diálogo Adicionar repositório](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
 
 >[!NOTE]
 >

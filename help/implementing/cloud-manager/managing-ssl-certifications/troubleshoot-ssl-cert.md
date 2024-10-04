@@ -4,7 +4,7 @@ description: Saiba como solucionar erros de certificado SSL identificando causas
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: ff8c7fb21b4d8bcf395d28c194a7351281eef45b
+source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 46%
@@ -18,13 +18,13 @@ Alguns erros podem ocorrer se um certificado não for instalado corretamente ou 
 
 +++**Certificado inválido**
 
-Esse erro ocorre porque o cliente adicionou uma chave privada criptografada e usou uma chave privada formatada com DER.
+Esse erro ocorre porque o cliente usou uma chave privada criptografada e forneceu a chave no formato DER.
 
 +++
 
 +++**A chave privada precisa estar no formato PKCS 8**
 
-Esse erro ocorre porque o cliente adicionou uma chave privada criptografada e usou uma chave privada formatada com DER.
+Esse erro ocorre porque o cliente usou uma chave privada criptografada e forneceu a chave no formato DER.
 
 +++
 
