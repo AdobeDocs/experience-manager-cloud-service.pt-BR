@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 71%
+source-wordcount: '1109'
+ht-degree: 69%
 
 ---
 
@@ -112,7 +112,7 @@ Dependendo do tipo de pipeline, talvez seja possível cancelar a execução clic
 
 >[!NOTE]
 >
->Os pipelines de nível da Web e de configuração não são compatíveis com repositórios privados. Consulte o documento [Adição de repositórios privados no Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obter detalhes e a lista completa de limitações.
+>Os pipelines de nível da Web e de configuração não são compatíveis com repositórios privados. Consulte [Adicionar um repositório privado no Cloud Manager](/help/implementing/cloud-manager/managing-code/private-repositories.md) para obter detalhes e a lista completa de limitações.
 
 ## Exclusão de pipelines {#deleting-pipelines}
 

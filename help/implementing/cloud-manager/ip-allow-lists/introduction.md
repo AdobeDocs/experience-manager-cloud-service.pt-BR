@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0edc6d2b32d06727c693d4630ce500e32aa336b4
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '452'
+ht-degree: 25%
 
 ---
 
@@ -38,7 +38,7 @@ Após adicionar, [Listas de permissões de IP podem ser aplicadas ou desaplicada
 
 ## Limitações {#limitations}
 
-Antes de usar listas de permissões IP, compreenda as seguintes limitações em funcionalidade, uso e efeito em outros recursos.
+Antes de usar Listas de permissões IP, compreenda as seguintes limitações em funcionalidade, uso e efeito em outros recursos.
 
 ### Limitações gerais de Listas de permissões de IP {#general}
 
@@ -80,7 +80,7 @@ Quando você [adicionar a Lista de permissões de IP](/help/implementing/cloud-m
 
 Para evitar a interrupção da execução do pipeline de front-end, verifique se essa Lista de permissões IP do Cloud Manager foi adicionada. Em seguida, aplique a lista ao ambiente de Autor *antes* de habilitar o pipeline.
 
-Consulte os documentos [Aplicar Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) e [Habilitar pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) para obter mais informações.
+Consulte [Aplicar Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) e [Habilitar pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) para obter mais informações.
 
 ### Editor universal e Listas de permissões IP {#universal-editor}
 

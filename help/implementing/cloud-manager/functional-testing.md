@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: b8b1748f9c50178fbcb167370c53285b55d809b1
 workflow-type: tm+mt
 source-wordcount: '1373'
 ht-degree: 9%
@@ -113,7 +113,7 @@ Essa porta de qualidade é fornecida pelo AEM pronto para uso, mas não bloqueia
 
 Consulte [Teste de auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obter mais informações.
 
-### Validações de clientes
+### Validações de cliente
 
 A porta de qualidade das validações de clientes é um espaço reservado para a estratégia e o esforço de teste do próprio cliente, executados antes que as alterações no aplicativo do cliente atinjam os pipelines de implantação de nuvem do AEM.
 

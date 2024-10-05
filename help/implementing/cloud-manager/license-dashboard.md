@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 37%
+source-wordcount: '911'
+ht-degree: 34%
 
 ---
 
@@ -21,18 +21,13 @@ O Cloud Manager fornece um painel para facilitar a visualização dos direitos d
 >
 >O painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no painel de licenças.
 >
->Para determinar o tipo de serviço que seu programa tem (AMS ou AEMaaCS), consulte o documento [Navegação na interface do usuário do Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
+>Para determinar o tipo de serviço que seu programa tem (AMS ou AEMaaCS), consulte [Navegação na interface do Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
 ## Visão geral {#overview}
 
-O Painel de licenças do Cloud Manager fornece acesso fácil às seguintes informações:
+O Painel de licenças da Cloud Manager fornece acesso fácil aos direitos da solução disponíveis para você em todos os seus programas, incluindo o que é usado e o que está disponível. E as métricas de consumo de Solicitação de conteúdo com tendência mensal para a solução Sites.
 
-1. Os direitos da solução estão disponíveis para você em todos os seus programas, incluindo o que é usado e o que está disponível
-1. Métricas de consumo de Solicitação de conteúdo com tendência mensal para a solução Sites
-
-## Usar o painel de licenças {#using-dashboard}
-
-Para acessar o painel de licenças, siga estas etapas.
+## Acessar o painel de licenças {#using-dashboard}
 
 >[!NOTE]
 >
@@ -40,7 +35,7 @@ Para acessar o painel de licenças, siga estas etapas.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique no botão de menu de hambúrguer no [Cabeçalho do Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Isso revela as guias.
-1. Toque ou clique na opção **Licença** na guia.
+1. Clique na opção **Licença** na guia.
 
 ![Painel de licenças](assets/license-dashboard.png)
 
@@ -105,6 +100,8 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Perguntas frequentes {#faq}
 
++++
+
 ### O que é uma solicitação de conteúdo? {#what-is-a-content-request}
 
 Uma solicitação de conteúdo é uma solicitação recebida no AEM Sites ou em qualquer sistema de cache fornecido pelo cliente, como uma rede de entrega de conteúdo, para fornecer conteúdo ou dados no formato HTML como uma exibição de página ou no formato JSON como uma chamada de API.
@@ -114,6 +111,9 @@ Uma solicitação de conteúdo é contabilizada para cada exibição de página 
 As solicitações de conteúdo excluem solicitações ou atividades iniciadas pelo Adobe ou em nome dele com o único objetivo de fornecer produtos e serviços. O tráfego de agente de usuário identificado pela Adobe como bots, crawlers e spiders relacionados a mecanismos de pesquisa comuns e serviços de redes sociais também são excluídos.
 
 Consulte também [Entender as solicitações de conteúdo do Cloud Service](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Como o Adobe Experience Manager mede as solicitações de conteúdo? {#how-are-content-requests-measured}
 
@@ -122,15 +122,26 @@ As solicitações de conteúdo são rastreadas nos servidores de borda do AEM as
 O AEM também tem regras em vigor para excluir bots conhecidos, incluindo serviços conhecidos que acessam o site regularmente para atualizar seu índice de pesquisa ou serviço.
 
 Consulte também [Entendendo as solicitações de conteúdo do Cloud Service](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### Por que meu relatório de Analytics mostra resultados diferentes das solicitações de conteúdo do AEM? {#why-are-reports-different}
 
 As solicitações de conteúdo podem ter variações entre as ferramentas de relatório de Analytics de uma organização. Para obter mais informações, consulte [Entendendo as Solicitações de Conteúdo Cloud Service](/help/implementing/cloud-manager/content-requests.md).
++++
+
++++
 
 ### E se eu quiser saber mais sobre o volume de solicitação de conteúdo? {#current-request-volumes}
 
 Se você quiser obter insights adicionais sobre o volume de solicitação de conteúdo mostrado no Painel de licenças, a equipe da Adobe pode fornecer um relatório que mostra os principais responsáveis pelo volume das solicitações de conteúdo. Entre em contato com a equipe de Adobe ou com o Suporte ao cliente do Adobe para solicitar um relatório de uso principal.
++++
+
++++
 
 ### E se eu estiver usando meu próprio CDN? {#using-own-cdn}
 
 O Painel de licenças mostra apenas os dados rastreados pelo CDN do Cloud Service. Se você optar por trazer seu próprio CDN (BYOCDN), relate o volume de solicitações de conteúdo de volta ao Adobe anualmente, conforme declarado em seu contrato.
++++
+

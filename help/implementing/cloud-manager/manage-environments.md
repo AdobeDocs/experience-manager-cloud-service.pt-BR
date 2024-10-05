@@ -1,19 +1,19 @@
 ---
-title: Gerenciar ambientes
+title: Gerenciamento de ambientes
 description: Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2371'
 ht-degree: 64%
 
 ---
 
 
-# Gerenciar ambientes {#managing-environments}
+# Gerenciamento de ambientes {#managing-environments}
 
 Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los para o seu projeto do Cloud Manager.
 
@@ -50,7 +50,7 @@ Para adicionar ou editar um ambiente, o usuário deve ser membro da função **P
 
    ![Cartão Ambientes](assets/no-environments.png)
 
-   * A opção **Adicionar ambiente** também está disponível na guia **Ambientes**.
+   * A opção **Adicionar ambiente** também está disponível na guia ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 
      ![Guia Ambientes](assets/environments-tab.png)
 
@@ -255,7 +255,7 @@ O comportamento da opção **Atualizar** varia dependendo da configuração e do
 * Se o pipeline estiver sendo atualizado, a variável **Atualizar** informará ao usuário que uma atualização já está em execução.
 * Se um pipeline apropriado não existir, a opção **Atualizar** solicitará que o usuário crie um.
 
-## Exclusão de ambientes de desenvolvimento {#deleting-environment}
+## Excluir ambientes de desenvolvimento {#deleting-environment}
 
 Um usuário com a função **Gerente de Implantação** ou **Proprietário da Empresa** pode excluir um ambiente de desenvolvimento.
 
@@ -310,7 +310,7 @@ Os nomes de domínio personalizados são suportados nos programas do Cloud Manag
 
 >[!TIP]
 >
->Para obter mais informações, consulte o documento [Introdução a nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
+>Para obter mais informações, consulte [Introdução a nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/introduction.md).
 
 ## Gerenciar listas de permissões de IP {#manage-ip-allow-lists}
 
@@ -324,4 +324,4 @@ A aplicação de uma incluir na lista de permissões inclui na lista de permiss�
 
 >[!TIP]
 >
->Para obter mais informações, consulte o documento [Introdução às Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
+>Para obter mais informações, consulte [Introdução às Listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).

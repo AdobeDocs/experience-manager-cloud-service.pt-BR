@@ -5,7 +5,7 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 20%
@@ -81,7 +81,7 @@ Se um pipeline estiver em execução, o gerenciamento de variáveis será bloque
 
 1. Toque ou clique em **Salvar** para salvar as alterações feitas nas variáveis no pipeline.
 
-Se desejar excluir uma variável, selecione **Excluir** em vez de **Editar** no menu de reticências da variável de pipeline na janela **Configuração de variáveis**.
+Se você deseja excluir uma variável, selecione **Excluir** em vez de **Editar** no menu de reticências da variável de pipeline na janela **Configuração de variáveis**.
 
 ## Uso da CLI do Cloud Manager {#cli}
 

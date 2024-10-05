@@ -5,10 +5,10 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: eb2e1555f684a68807b0b3764cd1be03c2d439ab
+source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
 workflow-type: tm+mt
-source-wordcount: '1677'
-ht-degree: 41%
+source-wordcount: '1660'
+ht-degree: 39%
 
 ---
 
@@ -239,21 +239,21 @@ No caso de um programa em tempo real, é possível ver o status da última impla
 
 ![Frase de chamariz](/help/implementing/cloud-manager/assets/info-banner.png)
 
-### Cartão Ambientes {#environments}
+### Cartão de ambientes {#environments}
 
-O cartão **Ambientes** fornece uma visão geral de seus ambientes, bem como links para ações rápidas.
+O cartão **Ambientes** fornece uma visão geral dos seus ambientes e links para ações rápidas.
 
 O cartão **Ambientes** lista apenas três ambientes. Clique em **Mostrar tudo** para ver todos os ambientes do programa.
 
-Consulte o documento [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter detalhes sobre como gerenciar os ambientes.
+Consulte também [Gerenciar ambientes](/help/implementing/cloud-manager/manage-environments.md).
 
-### Cartão Pipelines {#pipelines}
+### Cartão de pipelines {#pipelines}
 
 O cartão **Pipelines** fornece uma visão geral dos pipelines, bem como links para ações rápidas.
 
 O cartão **Pipelines** lista apenas três pipelines. Clique em **Mostrar tudo** para ver todos os pipelines do programa.
 
-Consulte o documento [Gerenciamento de pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para obter detalhes sobre como gerenciar seus pipelines.
+Consulte também [Gerenciar pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para obter detalhes sobre como gerenciar seus pipelines.
 
 ### Cartão de desempenho {#performance}
 
