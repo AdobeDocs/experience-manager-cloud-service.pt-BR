@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: fa2da21ef6424bce0830d503eba650e1c1bf3dc2
+source-git-commit: ee3e1bedddddff0aa41665359a91a0de48fd19c8
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 8%
+source-wordcount: '1411'
+ht-degree: 7%
 
 ---
 
@@ -63,7 +63,7 @@ A ativação de recursos 2024.10.0 fornecerá o conjunto completo de recursos pa
 * SITES - 24166: mitigação de ativos remotos para o editor de interface para toque.
 * SITES - 24409: registra todos os processadores de solicitação em apenas um método HTTP.
 * SITES - 25008: Melhore a manipulação de PersistenceExceptions e problemas de permissões.
-* SITES - 24821: [Xwalk] Torne aem.page / aem.live o padrão.
+* SITES - 24821: tornar aem.page / aem.live o padrão.
 
 ### Problemas corrigidos {#fixed-issues-17964}
 
@@ -123,7 +123,7 @@ A ativação de recursos 2024.10.0 fornecerá o conjunto completo de recursos pa
 * SITES - 24025: 302 redirecionamentos no AEM que retornam o cabeçalho do local usando DNS interno em vez de DNS público
 * SITES - 24036: É necessário investigar caracteres persistentes AEM RTE no formato ASCII
 * SITES - 24317: A configuração de proxy não funciona com a Autenticação básica
-* SITES - 24918: [Xwalk] corrija erros 504 retornados ocasionalmente ao usar saída de ip dedicada.
+* SITES - 24918: correção de erros 504 retornados ocasionalmente ao usar saída de ip dedicada.
 
 ### Problemas conhecidos {#known-issues-17964}
 
@@ -131,9 +131,19 @@ A ativação de recursos 2024.10.0 fornecerá o conjunto completo de recursos pa
 
 ### Recursos e APIs obsoletos {#deprecated-17964}
 
-Observe que estamos no processo de atualização do `com.day.cq.wcm.api` e, com a versão atual, marcamos como `@Deprecated` alguns de seus métodos e classes. Eles serão removidos em versões futuras. Portanto, considere mudar para as alternativas sugeridas se estiver usando alguma delas.
-
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
+
+Veja a seguir um resumo dos recursos que foram descontinuados recentemente ou daqueles em processo de descontinuação.
+
+#### API de uso do JavaScript {#javascript-use-api}
+
+[A API de uso do JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) está oficialmente obsoleta devido aos desafios que os usuários têm na depuração e manutenção do código que aproveita a API, bem como limitações de desempenho em comparação com a alternativa do Java.
+
+Você deve fazer a transição para [a API de Uso do Java](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api), que oferece melhor desempenho, depuração mais fácil e maior suporte a longo prazo.
+
+#### com.day.cq.wcm.api {#com-day-cq-wcm-api}
+
+Observe que o Adobe está no processo de atualização de `com.day.cq.wcm.api`. Alguns de seus métodos e classes foram marcados como `@Deprecated` na versão atual. Eles serão removidos em versões futuras. Considere alternar para as alternativas sugeridas.
 
 ### Correções de segurança {#security-17964}
 

@@ -4,10 +4,10 @@ description: Notas de versão específicas para recursos obsoletos e removidos d
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0bcb769f0d8beb4b501646d82fa91bd9233a2173
+source-git-commit: 4e59095a47a919fd0b6acb868e27d71f9193c520
 workflow-type: tm+mt
-source-wordcount: '2496'
-ht-degree: 58%
+source-wordcount: '2504'
+ht-degree: 57%
 
 ---
 
@@ -35,6 +35,7 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 
 | Recursos | Recurso obsoleto | Substituição |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | [API de uso do JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API de uso do Java](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Propriedades dos Fragmentos de experiência para **Status da rede social**. | O recurso será removido em breve. |
 | [!DNL Sites] | Fragmentos de conteúdo simples baseados em modelo. | [Fragmentos de conteúdo estruturado com base em modelo](/help/assets/content-fragments/content-fragments-models.md) agora. |
 | [!DNL Assets] | fluxo de trabalho `DAM Asset Update` para processar imagens ingeridas. | A assimilação de ativos usa [microsserviços de ativos](/help/assets/asset-microservices-overview.md) agora. |
