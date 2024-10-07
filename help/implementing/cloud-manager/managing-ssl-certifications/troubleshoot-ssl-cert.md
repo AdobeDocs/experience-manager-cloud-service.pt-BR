@@ -1,22 +1,24 @@
 ---
-title: Solução de problemas de erros de certificado SSL
-description: Saiba como solucionar erros de certificado SSL identificando causas comuns para que você possa manter conexões seguras.
+title: Solução de problemas de certificado SSL
+description: Saiba como solucionar problemas de certificado SSL identificando causas comuns para que você possa manter conexões seguras.
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b387fee62500094d712f5e1f6025233c9397f8ec
+source-git-commit: 1017f84564cedcef502b017915d370119cd5a241
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 46%
+source-wordcount: '556'
+ht-degree: 31%
 
 ---
 
 
-# Solução de problemas de erros de certificado SSL {#certificate-errors}
+# Solução de problemas de certificado SSL {#certificate-problems}
 
-Alguns erros podem ocorrer se um certificado não for instalado corretamente ou não atender aos requisitos do Cloud Manager.
+Saiba como solucionar problemas de certificado SSL identificando causas comuns para que você possa manter conexões seguras.
 
 +++**Certificado inválido**
+
+## Certificado inválido {#invalid-certificate}
 
 Esse erro ocorre porque o cliente usou uma chave privada criptografada e forneceu a chave no formato DER.
 
@@ -24,11 +26,15 @@ Esse erro ocorre porque o cliente usou uma chave privada criptografada e fornece
 
 +++**A chave privada precisa estar no formato PKCS 8**
 
+## A chave privada precisa estar no formato PKCS 8 {#pkcs-8}
+
 Esse erro ocorre porque o cliente usou uma chave privada criptografada e forneceu a chave no formato DER.
 
 +++
 
 +++**Ordem correta dos certificados**
+
+## Ordem correta dos certificados {#certificate-order}
 
 O motivo mais comum para uma falha na implantação de um certificado é os certificados intermediários ou em cadeia não estarem na ordem correta.
 
@@ -58,6 +64,8 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 +++**Remover certificados de cliente**
 
+## Remover certificados de cliente {#client-certificates}
+
 Ao adicionar um certificado, se você receber um erro semelhante ao seguinte:
 
 ```text
@@ -69,6 +77,8 @@ Você provavelmente incluiu o certificado de cliente na cadeia de certificados. 
 +++
 
 +++**Política de certificado**
+
+## Política de certificado {#policy}
 
 Se o seguinte erro for exibido, verifique a política do seu certificado.
 
@@ -117,11 +127,26 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
 # "DV Policy - Not Accepted"
 openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 ```
++++
+
++++**Validade do certificado
+
+## Validade do certificado {#validity}
+
+O Cloud Manager espera que o certificado SSL seja válido por pelo menos 90 dias a partir da data atual. Verifique a validade da cadeia de certificados.
 
 +++
 
-+++**Datas de validade do certificado**
++++**O certificado SAN incorreto é aplicado ao meu domínio
 
-O Cloud Manager espera que o certificado SSL seja válido por pelo menos 90 dias a partir da data atual. Verifique a validade da cadeia de certificados.
+## Certificado SAN incorreto aplicado ao meu domínio {#wrong-san-cert}
+
+Digamos que você queira vincular `dev.yoursite.com` e `stage.yoursite.com` ao seu ambiente de não produção e `prod.yoursite.com` ao seu ambiente de produção.
+
+Para configurar a CDN para esses domínios, você precisa de um certificado instalado para cada um, para instalar um certificado que cubra o `*.yoursite.com` para seus domínios de não produção e outro que também cubra o `*.yoursite.com` para seus domínios de produção.
+
+Essa configuração é válida. No entanto, ao atualizar um dos certificados, como ambos abrangem a mesma entrada SAN, a CDN instalará o certificado mais recente em todos os domínios aplicáveis, o que pode parecer inesperado.
+
+Embora isso possa ser inesperado, não é um erro e é o comportamento padrão do CDN subjacente. Se você tiver dois ou mais certificados SAN que abranjam a mesma entrada de domínio SAN, se esse domínio for coberto por um certificado e o outro for atualizado, o último será instalado para o domínio.
 
 +++

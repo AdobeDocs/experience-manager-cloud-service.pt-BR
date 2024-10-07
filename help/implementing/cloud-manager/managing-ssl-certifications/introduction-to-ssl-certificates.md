@@ -5,9 +5,9 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 075094f018ccf213cd8d1d69defdc390f0a90713
+source-git-commit: 912e63b2ff11e24392fc7509945f352ab07c60cc
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '914'
 ht-degree: 22%
 
 ---
@@ -112,6 +112,10 @@ Os seguintes comandos `openssl` podem ser usados para converter certificados nã
   ```shell
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
+
+>[!TIP]
+>
+>A Adobe recomenda validar a integridade do certificado localmente usando uma ferramenta como o `openssl verify -untrusted intermediate.pem certificate.pem` antes de tentar instalá-lo usando o Cloud Manager.
 
 ## Limitação do número de certificados SSL instalados {#limitations}
 
