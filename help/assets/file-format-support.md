@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 02caeb490ad99d8417eb2b5c91850c4ab822f57d
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1441'
 ht-degree: 34%
 
 ---
 
 # [!DNL Assets] formatos de arquivo com suporte {#supported-file-formats}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 O [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] oferece suporte a recursos básicos de gerenciamento de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download, etc. — para qualquer arquivo binário, independentemente de seu formato. O [!DNL Adobe Experience Manager Assets] é compatível com uma grande variedade de formatos de arquivo e cada recurso do produto oferece suporte para diferentes formatos.
 

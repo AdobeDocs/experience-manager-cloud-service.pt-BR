@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de metadados para gerenc
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1399'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,9 @@ aem metadata
 experience manager metadata-->
 
 # Gerenciamento de metadados e práticas recomendadas {#metadata-best-practices}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- |---------|----|-----|
 
 Para destacar sua empresa e atrair mais clientes, é fundamental utilizar recursos visuais de alta qualidade, como imagens, vídeos e outros ativos digitais. Para isso, é necessário um processo que permita adicionar metadados a todos os ativos digitais, tornando-os facilmente pesquisáveis. Os metadados são os dados que fornecem detalhes essenciais sobre ativos digitais, incluindo o nome, o tipo, o local em um repositório, a data de modificação e as tags associadas do ativo. Os metadados simplificam o gerenciamento de ativos, melhoram a pesquisabilidade e a acessibilidade e garantem o controle eficaz de versões.
 

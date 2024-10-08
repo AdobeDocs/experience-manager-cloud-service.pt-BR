@@ -4,14 +4,17 @@ description: Alterações importantes no [!DNL Adobe Experience Manager Assets] 
 feature: Release Information
 role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1016'
 ht-degree: 8%
 
 ---
 
 # Alterações importantes para [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 O [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] traz muitos novos recursos e possibilidades para gerenciar projetos em Experience Manager. Há muitas diferenças entre o [!DNL Experience Manager Assets] no local ou hospedado como Adobe Managed Service, em comparação ao [!DNL Experience Manager] as a [!DNL Cloud Service]. Este artigo destaca as diferenças importantes para os recursos do [!DNL Assets].
 

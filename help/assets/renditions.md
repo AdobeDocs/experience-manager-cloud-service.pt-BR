@@ -4,14 +4,17 @@ description: Saiba como o AEM Assets e o Dynamic Media simplificam o gerenciamen
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
 # Exibir e gerenciar representações no Experience Manager Assets{#renditions}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 As representações no Adobe Experience Manager (AEM) são versões personalizadas de ativos digitais, como imagens, projetadas para diferentes dispositivos e plataformas para garantir o desempenho ideal. O AEM facilita a criação e o gerenciamento dessas representações, melhorando a experiência do usuário. Você pode criar miniaturas, otimizar imagens para Web ou dispositivos móveis, adicionar marcas d&#39;água, exibir e baixar representações dinâmicas ou representações de recorte inteligente e fazer muito mais.
 

@@ -3,14 +3,17 @@ title: Integrar o AEM Assets com aplicativos downstream
 description: Integrar o AEM Assets com aplicativos downstream
 role: User
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: 3022551a38ab287d4d6ea131dcee88fb1b40e5b7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
 
 # Integrar o AEM Assets com aplicativos downstream {#integrate-dynamic-media-open-apis}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Todos os [ativos aprovados](/help/assets/approve-assets.md) disponíveis no repositório do Experience Manager assets estão disponíveis para entrega em aplicativos downstream.
 

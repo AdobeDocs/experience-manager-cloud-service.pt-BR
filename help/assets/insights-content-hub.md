@@ -2,14 +2,18 @@
 title: Exibir insights de ativos no Content Hub
 description: Saiba como exibir insights de ativos no [!DNL Content Hub]
 role: User
-source-git-commit: 5a968440c8841abe7af2c81c4af12258b7e4547f
+exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
 
 # Assets Insights em [!DNL Content Hub] {#assets-insights}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Insights do Assets](assets/asset-insights-banner.jpg)
 
@@ -49,4 +53,3 @@ Também é possível exibir:
 * **[!UICONTROL Assets por Campanhas]**: contagem de ativos e respectiva porcentagem com base em campanhas.
 * **[!UICONTROL Assets por canais]**: contagem de ativos e respectiva porcentagem com base nos canais usados.
 * **[!UICONTROL Assets por regiões]**: contagem de ativos e respectiva porcentagem com base nas regiões de uso de ativos.
-

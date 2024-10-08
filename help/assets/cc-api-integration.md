@@ -5,14 +5,17 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '790'
 ht-degree: 4%
 
 ---
 
 # Gerar variações de ativos usando a integração do [!DNL Adobe Creative Cloud] {#content-automation}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 O complemento de automação de conteúdo integra o [!DNL Adobe Experience Manager Assets] como APIs do [!DNL Cloud Service] e do [!DNL Adobe Creative Cloud] para processar seus ativos de forma criativa e em escala. O [!DNL Experience Manager] usa os [microsserviços de ativos](/help/assets/asset-microservices-overview.md) baseados na nuvem para usar os recursos do [!DNL Adobe Creative Cloud] e automatizar a criação de ativos e o manuseio de mídia.
 

@@ -5,14 +5,17 @@ contentOwner: KK
 exl-id: 4759fa8c-10c7-4446-a135-3104b9beaee8
 feature: Asset Processing
 role: User, Leader, Developer
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
 
 # Reprocessamento de ativos digitais {#reprocessing-digital-assets}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 É possível reprocessar ativos em uma pasta que já tenha um perfil de metadados existente que você alterou posteriormente. Se quiser que a predefinição recém-editada seja reaplicada aos ativos existentes na pasta, reprocesse a pasta. Você pode reprocessar quantos ativos forem necessários.
 
@@ -50,7 +53,7 @@ Caso selecione uma pasta:
       * **[!UICONTROL Processando Perfis]:** Escolha esta opção quando quiser reprocessar um perfil selecionado. Você pode escolher a opção **[!UICONTROL Processo completo]** para incluir o processamento padrão e o perfil personalizado atribuído no nível da pasta.
         <!--When assets are uploaded to a folder, [!DNL Experience Manager] checks the containing folder's properties for a processing profile. If none is applied, a parent folder in the hierarchy is checked for a processing profile to apply.-->
 
-      * **[!UICONTROL Fluxo de trabalho de processamento Post]:** Escolha esta opção quando for necessário um processamento adicional de ativos que não possa ser obtido usando os perfis de processamento. Workflows de pós-processamento adicionais podem ser adicionados à configuração. O processamento Post permite adicionar processamento totalmente personalizado além do processamento configurável usando microsserviços de ativos.
+      * **[!UICONTROL Fluxo de Trabalho de Pós-processamento]:** Escolha esta opção quando for necessário um processamento adicional de ativos que não possa ser obtido usando os perfis de processamento. Workflows de pós-processamento adicionais podem ser adicionados à configuração. O pós-processamento permite adicionar processamento totalmente personalizado além do processamento configurável usando microsserviços de ativos.
 
 Consulte [usar microsserviços de ativos e perfis de processamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en) para saber mais sobre perfis de processamento e fluxo de trabalho de pós-processamento.
 

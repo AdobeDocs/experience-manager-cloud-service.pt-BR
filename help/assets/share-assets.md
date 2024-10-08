@@ -4,14 +4,17 @@ description: Distribua seus ativos digitais usando métodos como compartilhar co
 feature: Asset Management, Collaboration, Asset Distribution
 role: Admin, User
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1847'
 ht-degree: 2%
 
 ---
 
 # Compartilhar e distribuir ativos gerenciados no [!DNL Experience Manager] {#share-assets-from-aem}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |

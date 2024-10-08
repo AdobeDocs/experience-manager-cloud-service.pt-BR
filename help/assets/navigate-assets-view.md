@@ -4,14 +4,17 @@ description: Entenda a interface e a navegação no [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b8ee421c5105c95dc4a509d3b2e32fa43b1adc0b
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '966'
-ht-degree: 81%
+source-wordcount: '984'
+ht-degree: 86%
 
 ---
 
 # Navegar para arquivos e pastas e exibir ativos {#view-assets-and-details}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 <!-- TBD: Give screenshots of all views with many assets. Zoom out to showcase how the thumbnails/tiles flow on the UI in different views. -->
 
@@ -31,8 +34,8 @@ Ao fazer logon no [!DNL Assets view], você verá a seguinte interface.
 
 ## Procurar e exibir ativos e pastas {#browse-repository}
 
-Você pode navegar pelas pastas da interface do usuário principal ou da barra lateral esquerda. O Experience Manager Assets agora exibe visualizações visuais do conteúdo da pasta na miniatura da pasta ao navegar ou pesquisar conteúdo, o que melhora a descoberta de ativos disponíveis no repositório do AEM Assets. Essa miniatura de pasta economiza seu tempo gasto na pesquisa de ativos específicos em uma pasta no repositório do AEM Assets.
-Ao navegar pelos ativos em uma pasta, você pode usar a interface para exibir miniaturas de ativos para navegar visualmente pelo repositório ou exibir detalhes do ativo para encontrar rapidamente o ativo que deseja. As opções disponíveis na barra lateral esquerda são:
+Você pode navegar pelas pastas da interface do usuário principal ou da barra lateral esquerda. O Experience Manager Assets agora exibe visualizações do conteúdo das pastas em suas miniaturas ao navegar ou pesquisar conteúdo, o que melhora a descoberta de ativos disponíveis no repositório do AEM Assets. Essa miniatura de pasta economiza seu tempo gasto na pesquisa de ativos específicos em uma pasta no repositório do AEM Assets.
+Ao navegar pelos ativos de uma pasta, você pode usar a interface para exibir miniaturas dos ativos para navegar visualmente pelo repositório ou exibir detalhes do ativo para encontrar rapidamente o ativo desejado. As opções disponíveis na barra lateral esquerda são:
 
 * [Meu espaço de trabalho](/help/assets/my-workspace-assets-view.md): o Assets agora inclui um espaço de trabalho personalizável, que fornece widgets para acesso conveniente às principais áreas da interface do Assets, bem como as informações mais relevantes para você. Esta página serve como uma solução única para fornecer uma visão geral dos itens de trabalho e fornecer acesso rápido aos principais fluxos de trabalho. Um acesso mais conveniente a essas opções aumenta a eficiência e a velocidade do conteúdo.
 * [Tarefas](/help/assets/my-workspace-assets-view.md): você pode visualizar as tarefas atribuídas a você na guia **Minhas tarefas**. Ao passo que as tarefas criadas por você podem ser visualizadas na guia **Tarefas atribuídas**. Além disso, as tarefas que você conclui estão localizadas na guia **Tarefas concluídas**.

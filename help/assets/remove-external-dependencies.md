@@ -4,14 +4,17 @@ description: Remover dependências externas de instalações existentes
 feature: Workfront Integrations and Apps
 exl-id: 5b28ce97-2719-47b8-a386-77d4aaddbe81
 role: Admin
-source-git-commit: 257930bc2633a0d31ad3bd28305b8159597befa5
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 17%
+source-wordcount: '122'
+ht-degree: 14%
 
 ---
 
 # Remover dependências externas de instalações existentes {#remove-external-depedencies}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 A Adobe recomenda executar as etapas de configuração das instalações aprimoradas do conector existentes para Workfront, a fim de remover as dependências nos pontos de distribuição Hoodoo.
 

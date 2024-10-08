@@ -4,14 +4,17 @@ description: Edite vídeos usando  [!DNL Adobe Express] opções viabilizadas pe
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '797'
 ht-degree: 17%
 
 ---
 
 # Editar vídeos em [!DNL Assets view] {#edit-videos}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Criar variações de conteúdo de vídeo é fácil para usuários do Assets com as [!DNL Adobe Express] ações rápidas incorporadas para vídeo. As ações rápidas no [!DNL Assets view] com a tecnologia [!DNL Adobe Express] fornecem opções de edição de vídeo intuitivas, como recortar vídeo, redimensionar vídeo, aparar vídeo e converter vídeo em GIF.
 

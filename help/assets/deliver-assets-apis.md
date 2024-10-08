@@ -2,14 +2,18 @@
 title: APIs de entrega
 description: Saiba como usar as APIs de entrega.
 role: User
-source-git-commit: deae260ce34a0801ee534ddadfb14823ef461a87
+exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
 
 # APIs de entrega {#delivery-apis}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 Todos os [ativos aprovados](approve-assets.md) disponíveis no repositório de ativos do Experience Manager podem ser [pesquisados](search-assets-api.md) e entregues a aplicativos downstream integrados usando uma URL de entrega.
 

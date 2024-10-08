@@ -1,14 +1,18 @@
 ---
 title: Aprovar ativos para o Content Hub
 description: Saiba como aprovar ativos no Assets as a Cloud Service para disponibilizá-los no Content Hub.
-source-git-commit: f540f5934c4acbed4d7eff51a5a4ac1484fcb765
+exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '746'
 ht-degree: 2%
 
 ---
 
 # Aprovar ativos para o Content Hub {#approve-assets-content-hub}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 ![Aprovar ativos para o Content Hub](assets/content-hub-approve-assets.png)
 
@@ -98,6 +102,3 @@ A exibição de ativos carregados usando o Content Hub depende de se você [habi
 * Se a opção **[!UICONTROL Aprovação automática]** estiver desabilitada, os ativos carregados usando o Content Hub não serão exibidos automaticamente. Os ativos estão disponíveis na pasta `hydrated-assets` do seu ambiente as a Cloud Service do Assets. Navegue até a pasta e [edite em massa](#bulk-approve-assets-content-hub) o status desses ativos para `Approved` para que eles sejam exibidos no Content Hub.
 
 ![processo de aprovação do Content Hub](/help/assets/assets/content-hub-approval.png)
-
-
-

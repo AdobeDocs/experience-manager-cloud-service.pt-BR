@@ -1,23 +1,26 @@
 ---
-title: integração do Content credentials
+title: integração do Content Credentials
 description: Os contents credentials, integrados ao AEM Assets e exibidos na Exibição do Assets, podem oferecer contexto ao histórico de um ativo, incluindo como ele foi feito e quem estava envolvido na sua criação. Como um rótulo nutricional para conteúdo digital, os Contents credentials podem ajudar a aumentar a transparência e a criar confiança com os públicos-alvo.
 role: User
-source-git-commit: 1c0ffe9d6e45f1d6b3574d1ac5611b2c2e2d00e0
+exl-id: 27c25ae0-4477-40c3-85c8-3e0aa725aba7
+source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
-
 # Credenciais de conteúdo {#content-credentials}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|----|-----|
 
 As marcas estão mais preocupadas do que nunca com a transparência de conteúdo, a divulgação de IA e a prevenção da adulteração de ativos. A CAI (Content Authenticity Initiative, iniciativa de autenticidade de conteúdo) na Adobe cria ferramentas compatíveis com o padrão técnico [Coalition for Content Provenance and Authenticity](https://c2pa.org/specifications/specifications/1.1/specs/C2PA_Specification.html#_trust_model) (C2PA). Os contents credentials, que são um novo tipo de metadados criptografados e invioláveis, podem ajudar os visualizadores a entender a linhagem do conteúdo e garantir a integridade dos ativos da marca. Eles podem incluir uma grande variedade de dados de origem que oferecem insights sobre o histórico de um ativo digital.
 
 Essas informações podem incluir:
 
 * **Emissor ou Assinante:** informações sobre a entidade ou empresa que emitiu a assinatura digital para certificar os certificados ou assina o ativo.
-* **Data de Emissão:** a data em que a Credencial de Conteúdo foi aplicada ao ativo.
+* **Data de Emissão:** a data em que a Content Credential foi aplicada ao ativo.
 * **Crédito e Uso:** Informações sobre o produtor do ativo, incluindo nome, identificadores de mídia social ou outras informações relacionadas à identidade.
 * **Processo:** Registros de qualquer edição ou modificação feita no ativo.
 * **Detalhes do Dispositivo:** Informações sobre o aplicativo ou dispositivo usado para criar ou editar o ativo.
@@ -26,7 +29,7 @@ Essas informações podem incluir:
 
 Para obter uma exibição completa, [Verificar](https://contentcredentials.org/verify) pode oferecer um insight mais abrangente sobre o histórico do ativo.
 
-O Adobe Experience Manager Assets agora é compatível com o Content credentials, permitindo que os usuários vejam os Contents credentials diretamente na visualização do no Assets AEM. Ao observar os detalhes do ativo, qualquer imagem com Contents credentials (como aqueles criados com os serviços GenAI) mostra os detalhes do manifesto em um painel dedicado. Se o ativo for baixado, publicado ou compartilhado, os Contents credentials permanecerão intactos com o ativo.
+O Adobe Experience Manager Assets agora é compatível com o Content Credentials, permitindo que os usuários vejam os Contents credentials diretamente na visualização do no Assets AEM. Ao observar os detalhes do ativo, qualquer imagem com Contents credentials (como aqueles criados com os serviços GenAI) mostra os detalhes do manifesto em um painel dedicado. Se o ativo for baixado, publicado ou compartilhado, os Contents credentials permanecerão intactos com o ativo.
 
 ![ativos](/help/assets/assets/content-credentials.png)
 
