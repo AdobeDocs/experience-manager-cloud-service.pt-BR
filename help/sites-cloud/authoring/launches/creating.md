@@ -5,10 +5,10 @@ exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: b5ded40d1cb8b8fab28583467b68c4586eecf1a0
+source-git-commit: c30ec18858c977f0701fef9bb2a7d3320e67dcba
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 96%
+source-wordcount: '1100'
+ht-degree: 94%
 
 ---
 
@@ -159,7 +159,8 @@ Você pode clonar uma inicialização no [console de inicializações](/help/sit
 
 * Selecione o lançamento tocando/clicando na miniatura.
 * A barra de ferramentas aparecerá - selecione Clone (Clonar).
-   * O clone será mostrado no console.
+   * O clone será criado e mostrado no console.
+   * O **Título da Inicialização** indicará que é um clone. Você pode atualizar o título editando a [Configuração do Launch](/help/sites-cloud/authoring/launches/editing.md#editing-a-launch-configuration) (**Propriedades**).
 
 ## Exclusão de um lançamento {#deleting-a-launch}
 
