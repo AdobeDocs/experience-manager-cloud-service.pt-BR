@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 94%
+source-wordcount: '897'
+ht-degree: 93%
 
 ---
 
@@ -105,9 +105,13 @@ Eles permitem:
 
 ## O console de lançamentos {#the-launches-console}
 
-O console Lançamentos fornece uma visão geral dos lançamentos e permite que você atue de acordo com os listados. O console pode ser acessado das seguintes maneiras:
+O console Lançamentos fornece uma visão geral dos lançamentos e permite que você atue de acordo com os listados.
 
-* No console de **Ferramentas**: **Ferramentas**, **Sites**, **Lançamentos**.
+![Console Lançamento — Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
+
+O console pode ser acessado das seguintes maneiras:
+
+* O Console **Ferramentas**: **Ferramentas**, **Geral**, **Inicializações**.
 
 * **Console de Lançamentos**, na parte inferior da seção **Lançamentos** do painel **Referências** ao navegar pelo conteúdo de origem no console do Sites.
 
@@ -116,6 +120,3 @@ O console Lançamentos fornece uma visão geral dos lançamentos e permite que v
 * O botão **Lançamentos**, na parte superior direita, ao navegar pelo conteúdo do lançamento no console do Sites:
 
   ![Opção Lançamentos, no console do Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
-
-* Ou diretamente; por exemplo, com:
-  `https://<host>:<port>/libs/launches/content/launches.html`

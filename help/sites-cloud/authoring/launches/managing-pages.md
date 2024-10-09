@@ -5,7 +5,7 @@ exl-id: 214c8c2f-d09a-4ce9-b474-9505b76084f7
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 89%
@@ -40,6 +40,7 @@ Com os lançamentos, você pode:
   ![Console Lançamento — Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-launches-console.png)
 
 * Console **Sites**: se você selecionar uma página de origem específica e abrir as **Referências**, você pode selecionar **Lançamentos**, seguido de **Gerenciar conteúdo**:
+
   ![Console Lançamento — Gerenciar conteúdo](/help/sites-cloud/authoring/assets/launches-navigate-sites-console.png)
 
   >[!NOTE]
