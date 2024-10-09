@@ -5,10 +5,10 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '988'
-ht-degree: 75%
+ht-degree: 71%
 
 ---
 
@@ -90,7 +90,7 @@ Depois de criar as variáveis de ambiente, você pode atualizá-las usando o bot
 
 1. Depois de fazer as alterações necessárias na configuração, selecione **Salvar**.
 
-[Como ocorre ao adicionar variáveis,](#add-variables) um indicador com o status **Atualizando** é mostrado na parte superior da tabela e ao lado da variável recém-atualizada para indicar que o ambiente está sendo atualizado com a configuração. Após a conclusão, as variáveis de ambiente atualizadas estarão visíveis na tabela.
+[Como ocorre ao adicionar variáveis](#add-variables), um indicador com o status **Atualizando** é mostrado na parte superior da tabela e ao lado da(s) variável(is) recém-atualizada(s) para indicar que o ambiente está sendo atualizado com a configuração. Após a conclusão, as variáveis de ambiente atualizadas estarão visíveis na tabela.
 
 >[!TIP]
 >

@@ -5,10 +5,10 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cfaa3be31195929b80310610120a779a20537c61
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
-source-wordcount: '1197'
-ht-degree: 81%
+source-wordcount: '1195'
+ht-degree: 79%
 
 ---
 
@@ -82,7 +82,7 @@ O **Teste de preparo** envolve essas etapas.
    * Os testes de interface do usuário são testes baseados em Selenium, compactados em uma imagem do Docker, para permitir uma variedade de opções de linguagens e estruturas (como Java e Maven, Node e WebDriver.io, ou qualquer outra estrutura e tecnologia criada no Selenium).
    * Consulte [Testes de interface personalizados](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) para obter mais detalhes.
 
-* **Auditoria de experiência** - Essa etapa no pipeline é sempre executada e não pode ser ignorada. Conforme um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após o teste funcional personalizado que realizará as verificações.
+* **Auditoria de experiência** - Essa etapa no pipeline é sempre executada e não pode ser ignorada. Conforme um pipeline de produção é executado, uma etapa de auditoria de experiência é incluída após o teste funcional personalizado que executa as verificações.
    * As páginas configuradas são enviadas ao serviço e avaliadas.
    * Os resultados são informativos e mostram as pontuações e as alterações entre as pontuações atual e anterior.
    * Essa informação é valiosa para determinar se há uma regressão introduzida com a implantação atual.
@@ -110,7 +110,7 @@ Esse processo continua até que a implantação tenha atingido todos os editores
 
 ## Tempos limite {#timeouts}
 
-As seguintes etapas atingirão o tempo limite se forem deixadas aguardando o feedback do usuário:
+As seguintes etapas atingem o tempo limite se estiverem aguardando o feedback do usuário:
 
 | Etapa | Tempo limite |
 |--- |--- |

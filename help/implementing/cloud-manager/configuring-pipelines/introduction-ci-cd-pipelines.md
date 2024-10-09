@@ -1,14 +1,14 @@
 ---
-title: Pipelines de CI/CD
+title: Introdução aos pipelines de CI/CD
 description: Saiba mais sobre os pipelines de CI/CD do Cloud Manager e como eles podem ser usados para implantar seu código com eficiência.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f6e8f91716b679f9715f9df33ae59aa5bf70751
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1488'
 ht-degree: 35%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 35%
 
 Saiba mais sobre os pipelines de CI/CD (Integração contínua/entrega contínua) do Cloud Manager e como eles podem ser usados para implantar seu código com eficiência.
 
-## Introdução {#introduction}
+## Introdução aos pipelines de CI/CD {#introduction}
 
 Um pipeline de CI/CD no Cloud Manager é um mecanismo para criar código a partir de um repositório de origem e implantá-lo em um ambiente. Um evento aciona um pipeline, como uma solicitação pull de um repositório de código-fonte, como o Git (ou seja, uma alteração de código). Ou pode ser acionado em uma programação regular para corresponder a uma cadência de lançamento.
 

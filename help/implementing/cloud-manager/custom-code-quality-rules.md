@@ -5,10 +5,10 @@ exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
 workflow-type: tm+mt
 source-wordcount: '4513'
-ht-degree: 84%
+ht-degree: 83%
 
 ---
 
@@ -794,7 +794,7 @@ Um problema comum é o uso de nós chamados `config` nas caixas de diálogo de c
 * **Severidade**: Alta
 * **Desde**: Versão 2019.6.0
 
-Semelhante à regra [Pacotes não devem conter configurações OSGi duplicadas](#oakpal-package-osgi), esse é um problema comum em projetos complexos, em que o mesmo caminho de nó é gravado por vários pacotes de conteúdo separados. Embora seja possível usar as dependências do pacote de conteúdo para garantir um resultado consistente, é melhor evitar qualquer sobreposição.
+Semelhante à regra [Os pacotes não devem conter configurações OSGi duplicadas](#oakpal-package-osgi), esse é um problema comum em projetos complexos, em que o mesmo caminho de nó é gravado por vários pacotes de conteúdo separados. Embora seja possível usar as dependências do pacote de conteúdo para garantir um resultado consistente, é melhor evitar qualquer sobreposição.
 
 ### O modo de criação padrão não deve ser a interface clássica {#oakpal-default-authoring}
 
@@ -853,7 +853,7 @@ Os clientes que usam replicação reversa devem entrar em contato com a Adobe pa
 * **Severidade**: Baixa
 * **Desde**: Versão 2021.2.0
 
-As bibliotecas de cliente do Experience Manager podem conter recursos estáticos, como imagens e fontes. Conforme descrito no documento [Utilização de pré-processadores,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) ao usar bibliotecas de clientes por proxy, esses recursos estáticos devem estar contidos em uma pasta secundária chamada `resources`, a fim de que sejam efetivamente referenciados nas instâncias de publicação.
+As bibliotecas de cliente do Experience Manager podem conter recursos estáticos, como imagens e fontes. Conforme descrito no documento [Usando Pré-processadores](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), ao usar bibliotecas de clientes por proxy, esses recursos estáticos devem estar contidos em uma pasta filho chamada `resources` para serem efetivamente referenciados nas instâncias de publicação.
 
 #### Código não compatível  {#non-compliant-proxy-enabled}
 

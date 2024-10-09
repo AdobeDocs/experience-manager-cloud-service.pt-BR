@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0b69e7ff3b35685ff9ac899eb19c3b58d7f37b41
+source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
 workflow-type: tm+mt
-source-wordcount: '5675'
+source-wordcount: '5678'
 ht-degree: 73%
 
 ---
@@ -1071,7 +1071,7 @@ ht-degree: 73%
    + [Gerar variações](/help/generative-ai/generate-variations.md)
 + Implementação {#implementing}
    + [Implementação de aplicativos do AEM as a Cloud Service](/help/implementing/home.md)
-   + Uso do Cloud Manager {#using-cloud-manager}
+   + Usar o Cloud Manager {#using-cloud-manager}
       + [Navegação](/help/implementing/cloud-manager/navigation.md)
       + Programas {#programs}
          + [Programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
@@ -1081,13 +1081,13 @@ ht-degree: 73%
          + [Criar programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Editar Programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Ambientes do Hibernate](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + Criação de um projeto de aplicativo do AEM {#create-application-project}
+      + Criar um projeto de aplicativo AEM {#create-application-project}
          + [Assistente de criação de projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md)
-      + Gerenciamento do código {#managing-code}
-         + [Manuseio da versão do projeto Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+      + Gerencie seu Código {#managing-code}
+         + [Manuseio da versão do projeto do Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gerenciar repositórios no Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adicionar um repositório de Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Adicionar um repositório privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
@@ -1101,13 +1101,13 @@ ht-degree: 73%
          + [Anotações de verificação do GitHub](/help/implementing/cloud-manager/managing-code/github-annotations.md)
       + [Variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md)
       + Pipelines CI-CD do Cloud Manager {#cicd-pipelines}
-         + [Introdução](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
+         + [Introdução aos pipelines de CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
          + [Configurar um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
          + [Configurar um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Gerenciar pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md)
          + [Variáveis de pipeline](/help/implementing/cloud-manager/configuring-pipelines/pipeline-variables.md)
       + [Implante Seu Código](/help/implementing/cloud-manager/deploy-code.md)
-      + Noções básicas dos resultados de teste {#test-results}
+      + Entender os resultados de teste {#test-results}
          + [Visão geral](/help/implementing/cloud-manager/overview-test-results.md)
          + [Teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md)
