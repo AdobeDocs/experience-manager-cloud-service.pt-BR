@@ -5,10 +5,10 @@ feature: Headless, GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 solution: Experience Manager
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 3096436f8057833419249d51cb6c15e6c28e9e13
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 100%
+source-wordcount: '322'
+ht-degree: 55%
 
 ---
 
@@ -28,7 +28,13 @@ Isso é feito adicionando uma configuração OSGi apropriada para o Filtro refer
 
 O nome do arquivo deve ser `org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
 
+## Exemplo de configuração {#example-configuration}
+
 Por exemplo, para conceder acesso a solicitações com o referenciador `my.domain`, é possível:
+
+>[!CAUTION]
+>
+>Este é um exemplo básico que pode substituir a configuração padrão. Você precisa garantir que as atualizações do produto sejam sempre aplicadas a qualquer personalização.
 
 ```xml
 {
@@ -52,16 +58,28 @@ Por exemplo, para conceder acesso a solicitações com o referenciador `my.domai
 }
 ```
 
->[!CAUTION]
->
->Continua a ser responsabilidade do cliente:
->
->* conceder acesso somente a domínios confiáveis
->* certificar-se de que nenhuma informação sensível seja exposta
->* não usar uma sintaxe [*] curinga; isso desativará o acesso autenticado ao endpoint do GraphQL e também irá expô-lo ao mundo inteiro.
+## Segurança de dados {#data-security}
 
 >[!CAUTION]
 >
->Toda os [esquemas](#schema-generation) de GraphQL (derivados de modelos de fragmento de conteúdo que foram **Habilitados**) são legíveis por meio do endpoint do GraphQL.
->
->Isso significa que você precisa garantir que não haja dados confidenciais disponíveis, pois eles poderiam ser vazados dessa maneira; por exemplo, isso inclui informações que podem estar presentes como nomes de campo na definição do modelo.
+>Continua a ser sua responsabilidade abordar totalmente os seguintes pontos.
+
+Para garantir a segurança de seus dados, você deve garantir que:
+
+* o acesso é **somente** concedido a domínios confiáveis
+
+* sintaxe do curinga [`*`] em **não** usada; isso desabilita o acesso autenticado ao ponto de extremidade do GraphQL e também o expõe ao mundo inteiro
+
+* as informações confidenciais são **nunca** expostas; direta ou indiretamente:
+
+   * Por exemplo, todos os [esquemas GraphQL](/help/headless/graphql-api/content-fragments.md#schema-generation) são:
+
+      * derivado de modelos de fragmento de conteúdo que foram **Habilitados**
+
+     **e**
+
+      * são legíveis por meio do endpoint do GraphQL
+
+     Isso significa que as informações presentes como nomes de campo na definição do modelo podem ficar disponíveis.
+
+Você deve garantir que nenhum dado confidencial esteja disponível por qualquer meio, portanto, esses detalhes devem ser cuidadosamente considerados.
