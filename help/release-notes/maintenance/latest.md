@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 7bc6d9a947a5ce7c56481eaec8a2f186caf36c64
+source-git-commit: 6fa6fc9015624bec9113a198285531a3bdd7e29c
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 14%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 14%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 18099 {#release-18099}
+## Versão 18175 {#release-18175}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 18099, lançada publicamente em quinta-feira, 9 de outubro de 2024. A versão de manutenção anterior foi a de 17964.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 18175, lançada publicamente em sexta-feira, 10 de outubro de 2024. A versão de manutenção anterior foi a de 17964. A versão 18099 foi tornada privada devido a um problema.
 
 A ativação de recursos 2024.10.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-18099}
+### Aprimoramentos {#enhancements-18175}
 
 * ASSETS-38322: Ativando o evento de solicitação http para AEM.
 * ASSETS-41448: atualize o pacote auth.ims para suportar FI para agrupar mapeamentos.
@@ -56,12 +56,11 @@ A ativação de recursos 2024.10.0 fornecerá o conjunto completo de recursos pa
 * SKYOPS-85336: Atualização do Sling Commons Threads para 3.3.0.
 * SKYOPS-86329: atualização de versões dos módulos de teste da plataforma para suporte ao sdk do java 21.
 
-### Problemas corrigidos {#fixed-issues-18099}
+### Problemas corrigidos {#fixed-issues-18175}
 
 * CNTBF-298: remova jcr:uuid de pacotes exportados CC.
 * SKYOPS-83910: correção de problemas de simultaneidade encontrados no SKYOPS-82371.
 * GRANITE-52876: atualização para com.adobe.granite.ui.content 0.8.1448.
-* GRANITE-53088: Regressão introduzida pela correção do SITES-11992.
 * GUIDES-14445: Falha na geração de PDF nativo com um erro relacionado à obtenção de dependências para Node.js.
 * GUIDES-16961: O título com `<conref>` não é resolvido nos painéis Linha de Base e Tradução do Editor da Web.
 * GUIDES-17283: Ao selecionar a opção **Usar metadados adicionados ao topicmeta**, as propriedades de metadados não são propagadas nas propriedades de documento da saída de PDF nativo.
@@ -69,11 +68,11 @@ A ativação de recursos 2024.10.0 fornecerá o conjunto completo de recursos pa
 
 Para obter mais informações sobre os recursos novos e aprimorados do Guides e os problemas corrigidos nessa versão, consulte o [roteiro de versões do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
-### Problemas conhecidos {#known-issues-18099}
+### Problemas conhecidos {#known-issues-18175}
 
 * FORMS-15818: A entrada do descritor de componente `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` não encontrou instruções nos logs do servidor. Estas são instruções de registro inofensivas.
 
-### Recursos e APIs obsoletos {#deprecated-18099}
+### Recursos e APIs obsoletos {#deprecated-18175}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
@@ -93,11 +92,11 @@ Observe que o Adobe está no processo de atualização de `com.day.cq.wcm.api`. 
 
 * GRANITE-54165: substitua org.apache.jackrabbit.oak.plugins.blob na API pública.
 
-### Correções de segurança {#security-18099}
+### Correções de segurança {#security-18175}
 
 A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda duas vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-18099}
+### Tecnologias integradas {#embedded-tech-18175}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
