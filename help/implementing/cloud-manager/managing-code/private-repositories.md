@@ -1,19 +1,19 @@
 ---
-title: Adicionar repositórios GitHub privados no Cloud Manager
+title: Adicionar um repositório GitHub privado no Cloud Manager
 description: Saiba como configurar o Cloud Manager para trabalhar com os seus repositórios privados do GitHub.
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a5e9b29a8108d5c012d402fda8ff7544e02ca911
+source-git-commit: 2fa4abca9823bbc62900023d637429f3fbfd894d
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 33%
+source-wordcount: '930'
+ht-degree: 34%
 
 ---
 
-# Adicionar repositórios GitHub privados no Cloud Manager {#private-repositories}
+# Adicionar um repositório GitHub privado no Cloud Manager {#private-repositories}
 
-Ao configurar o Cloud Manager para integrar com seus repositórios GitHub privados, você pode validar seu código diretamente no GitHub usando o Cloud Manager. Essa configuração remove o requisito de sincronizar regularmente o código com o repositório Adobe.
+Ao configurar o Cloud Manager para integrar com seus repositórios GitHub privados, você pode validar seu código diretamente no GitHub usando o Cloud Manager. Essa configuração remove o requisito de sincronizar o código regularmente com o repositório Adobe.
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
