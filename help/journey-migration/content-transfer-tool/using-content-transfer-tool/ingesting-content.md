@@ -4,9 +4,9 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 4d34dc8464a51bcc11ee435de4d19183b2f3e3b2
+source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
 workflow-type: tm+mt
-source-wordcount: '2982'
+source-wordcount: '3137'
 ht-degree: 11%
 
 ---
@@ -228,6 +228,20 @@ Para evitar possivelmente essa restrição, execute o [Analisador de Práticas R
 >[!NOTE]
 >
 >O [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) versão 2.1.50+ informará sobre nós grandes que contêm caracteres unicode que excedem o tamanho máximo. Verifique se você está executando a versão mais recente. As versões do BPA anteriores à versão 2.1.50 não identificarão e relatarão esses nós grandes e precisarão ser descobertas separadamente usando a ferramenta de pré-requisito do Oak mencionada acima.
+
+### Falha de assimilação devido a erros intermitentes inesperados {#ingestion-failure-due-to-unexpected-intermittent-errors}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
+>title="Erros intermitentes inesperados"
+>abstract="Às vezes, erros intermitentes e inesperados do serviço downstream podem ocorrer e, infelizmente, o único recurso é simplesmente repetir a assimilação."
+
+Às vezes, questões intermitentes inesperadas podem se prestar a assimilações fracassadas, onde infelizmente o único recurso é tentar novamente a assimilação. Investigue o log de assimilação para descobrir a causa da falha e ver se ele está alinhado a qualquer um dos erros listados abaixo, onde uma nova tentativa deve ser feita.
+
+## Problemas do MongoDB {#mongo-db-issues}
+
+* `Atlas prescale timeout error` - A fase de assimilação tentará dimensionar previamente o banco de dados de nuvem de destino para um tamanho adequado que se alinhe ao tamanho do conteúdo do conjunto de migração que está sendo assimilado. Raramente, essa operação não é concluída dentro do período esperado.
+* `Exhausted mongo restore retries` - As tentativas de restaurar um despejo local do conteúdo do conjunto de migração assimilado para o banco de dados de nuvem se esgotaram. Isso indica um problema geral de integridade/rede com o MongoDB, que muitas vezes se cura após alguns minutos.
 
 ### Ingestão cancelada {#ingestion-rescinded}
 
