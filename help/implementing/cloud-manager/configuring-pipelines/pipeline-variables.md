@@ -1,22 +1,22 @@
 ---
-title: Configurar variáveis de pipeline
+title: Variáveis de pipeline no Cloud Manager
 description: Saiba como você pode usar variáveis de pipeline no Cloud Manager para gerenciar variáveis de configuração específicas para a sua build.
 exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 15%
+source-wordcount: '621'
+ht-degree: 14%
 
 ---
 
-# Configurar variáveis de pipeline {#configuring-pipeline-variables}
+# Variáveis de pipeline no Cloud Manager {#configuring-pipeline-variables}
 
 Seu processo de build pode depender de variáveis de configuração específicas que não devem ser armazenadas no repositório Git. Ou talvez seja necessário ajustá-los entre execuções de pipeline na mesma ramificação. O Cloud Manager permite gerenciar essas configurações como variáveis de pipeline.
 
-## Variáveis de pipeline {#pipeline-variables}
+## Sobre variáveis de pipeline {#pipeline-variables}
 
 Com o Cloud Manager, você pode configurar variáveis de pipeline de várias maneiras diferentes.
 
@@ -26,7 +26,7 @@ Com o Cloud Manager, você pode configurar variáveis de pipeline de várias man
 
 As variáveis podem ser armazenadas como texto simples ou criptografadas em repouso. Em ambos os casos, as variáveis são disponibilizadas no ambiente de compilação como variáveis de ambiente que podem ser referenciadas no arquivo `pom.xml` ou em outros scripts de criação.
 
-## Adicionar variáveis de pipeline por meio do Cloud Manager {#ui}
+## Adicionar uma variável de pipeline por meio do Cloud Manager {#ui}
 
 As variáveis de pipeline podem ser configuradas e gerenciadas pela interface do usuário do Cloud Manager. Eles ajudam a simplificar o gerenciamento de pipeline, especialmente quando configurações variáveis são necessárias em diferentes etapas.
 
@@ -34,7 +34,7 @@ Você deve ter permissões para editar o pipeline para adicionar, editar e exclu
 
 Se um pipeline estiver em execução, o gerenciamento de variáveis será bloqueado.
 
-### Adicionar uma variável de pipeline {#add-ui}
+**Para adicionar uma variável de pipeline por meio do Cloud Manager:**
 
 1. Ao [gerenciar seus pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), clique em ![Reticências - Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) do pipeline para o qual você deseja criar variáveis de pipeline.
 
@@ -59,7 +59,7 @@ Se um pipeline estiver em execução, o gerenciamento de variáveis será bloque
 
 1. Clique em **Salvar**.
 
-### Editar uma variável de pipeline {#edit-ui}
+## Editar uma variável de pipeline {#edit-ui}
 
 1. Ao [gerenciar seus pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), clique em ![Reticências - Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) do pipeline para o qual você deseja editar variáveis de pipeline.
 
@@ -84,7 +84,7 @@ Se um pipeline estiver em execução, o gerenciamento de variáveis será bloque
 
 1. Clique em **Salvar**.
 
-### Excluir uma variável de pipeline {#delete-ui}
+## Excluir uma variável de pipeline {#delete-ui}
 
 1. Ao [gerenciar seus pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), clique em ![Reticências - Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) do pipeline para o qual você deseja excluir variáveis de pipeline.
 

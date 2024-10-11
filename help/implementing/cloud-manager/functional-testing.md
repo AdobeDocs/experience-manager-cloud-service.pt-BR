@@ -5,9 +5,9 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1321'
 ht-degree: 3%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 3%
 
 Descubra os quality gates (portais de qualidade) disponíveis no [processo de implantação do AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md) e os vários tipos de testes funcionais integrados. Saiba como você pode contribuir e otimizar o uso deles dentro da estrutura de uma estratégia de teste abrangente.
 
-## Visão geral
+## Sobre o teste funcional
 
 O diagrama a seguir fornece uma visão geral de alto nível dos pipelines disponíveis no contexto de uma estratégia geral de teste e do [processo de implantação do AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
 ![quality gates (portais de qualidade) de implantação do AEM Cloud Service](assets/functional-testing/quality-gates-compact.svg)
 
-## Propósito
+## Finalidade dos testes funcionais
 
 O objetivo dos pipelines de implantação do AEM Cloud Service é facilitar implantações robustas e seguras em vários estágios do ciclo de vida de desenvolvimento e lançamento do produto AEM. Esses pipelines incorporam vários quality gates (portais de qualidade) em diferentes níveis para garantir a integridade e a segurança das implantações para alterações de aplicativos do AEM e atualizações de produtos do AEM.
 
@@ -38,13 +38,13 @@ As portas de qualidade integradas validam principalmente a funcionalidade do pro
 
 É importante observar que essas portas de qualidade não têm a intenção de ser uma estrutura de testes abrangente para toda a sua estratégia de testes. O produto AEM é submetido a testes abrangentes antes de entrar no processo de implantação do serviço de nuvem AEM. Da mesma forma, seu aplicativo já deve ser de alta qualidade antes de atingir a fase de implantação. Essa abordagem garante que os quality gates (portais de qualidade) se concentrem em seu objetivo principal de salvaguardar o processo de implantação, em vez de substituírem um regime de testes completo.
 
-## Portas de qualidade
+## Portas de qualidade em teste
 
 O diagrama a seguir fornece uma exibição detalhada dos quality gates (portais de qualidade) disponíveis e seu uso na estratégia geral de teste e no [processo de implantação do AEM as a Cloud Service](/help/implementing/cloud-manager/deploy-code.md).
 
 ![quality gates (portais de qualidade) de implantação do AEM Cloud Service](assets/functional-testing/quality-gates-overview.svg)
 
-### Resumo das Portas de Qualidade Fornecidas pelo Cliente
+### Resumo dos quality gates (portais de qualidade) fornecidos pelo cliente
 
 |                               | Testes de unidade | Testes funcionais <br/> personalizados | Testes de Interface do Usuário <br/> Personalizados | Validações de Cliente<br/> | Teste manual<br/> |
 |:------------------------------|:---------------------:|:-----------------------------------:|:-----------------------------------:|:-------------------------:|:-------------------:|

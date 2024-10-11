@@ -1,27 +1,29 @@
 ---
-title: Variáveis de ambiente do Cloud Manager
-description: As variáveis de ambiente padrão podem ser configuradas e gerenciadas por meio do Cloud Manager e fornecidas para o ambiente de tempo de execução, a ser usado na configuração do OSGi.
+title: Variáveis de ambiente no Cloud Manager
+description: As variáveis de ambiente padrão podem ser configuradas e gerenciadas por meio do Cloud Manager e fornecidas para o ambiente de tempo de execução, para uso em configurações OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
-source-wordcount: '988'
-ht-degree: 71%
+source-wordcount: '1185'
+ht-degree: 28%
 
 ---
 
 
-# Variáveis de ambiente do Cloud Manager {#environment-variables}
+# Variáveis de ambiente no Cloud Manager {#environment-variables}
 
-As variáveis de ambiente padrão podem ser configuradas e gerenciadas pelo Cloud Manager. Elas são fornecidas para o ambiente de tempo de execução e podem ser usados nas configurações do OSGi. As variáveis de ambiente podem ser valores específicos ou segredos do ambiente, com base no que está sendo alterado.
+As variáveis de ambiente padrão podem ser configuradas e gerenciadas pelo Cloud Manager. Eles são fornecidos para o ambiente de tempo de execução e podem ser usados nas configurações do OSGi.
 
-## Visão geral {#overview}
+As variáveis de ambiente podem ser valores específicos ou segredos do ambiente, com base no que está sendo alterado.
 
-As variáveis de ambiente oferecem vários benefícios aos usuários do AEM as a Cloud Service:
+## Sobre variáveis de ambiente {#overview}
 
-* Elas permitem que o comportamento do código e do aplicativo varie com base no contexto e no ambiente. Por exemplo, elas podem ser usadas para permitir configurações diferentes no ambiente de desenvolvimento em relação aos ambientes de produção ou de preparo para evitar erros dispendiosos.
+As variáveis de ambiente oferecem vários benefícios aos usuários do AEM as a Cloud Service, como os seguintes:
+
+* Elas permitem que o comportamento do código e do aplicativo varie com base no contexto e no ambiente. Por exemplo, elas podem ser usadas para permitir configurações diferentes no ambiente de desenvolvimento em comparação aos ambientes de produção ou de preparo para evitar erros dispendiosos.
 * Elas somente precisam ser configuradas uma vez, e podem ser atualizadas e excluídas quando necessário.
 * Seus valores podem ser atualizados a qualquer momento e têm efeito imediatamente, sem a necessidade de alterações ou implantações de código.
 * Elas podem separar o código da configuração e eliminar a necessidade de incluir informações confidenciais no controle de versão.
@@ -33,103 +35,110 @@ Casos de uso típicos para as variáveis de ambiente incluem:
 * Usar uma referência ao armazenar senhas em vez de armazená-la diretamente na base do código
 * Quando existem vários ambientes de desenvolvimento em um programa e algumas configurações diferem de um ambiente para outro
 
-## Adição de variáveis de ambiente {#add-variables}
+## Adicionar uma variável de ambiente {#add-variables}
 
->[!NOTE]
->
->Você deve ser membro com a função de [**Gerenciador de implantação** ](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) para adicionar ou modificar variáveis de ambiente.
+Se você quiser adicionar várias variáveis, o Adobe recomenda que você adicione a primeira variável e, em seguida, use o ![ícone Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg) **Adicionar** na caixa de diálogo **Configuração do ambiente** para adicionar as variáveis adicionais. Esse método significa que é possível adicioná-los com uma atualização ao ambiente.
 
-1. Faça logon no Adobe Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+Para adicionar, atualizar ou excluir variáveis de ambiente, você deve ser membro da [**função de Gerente de Implantação**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions).
+
+**Para adicionar uma variável de ambiente:**
+
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione aquele que deseja gerenciar.
-1. Na barra de navegação lateral, selecione a janela **Ambientes** para o programa escolhido e o ambiente para o qual deseja criar uma variável de ambiente.
-1. Nos detalhes do ambiente, selecione a guia **Configuração** e clique em **Adicionar** para abrir a caixa de diálogo **Configuração do ambiente**.
-   * Se você estiver adicionando uma variável de ambiente pela primeira vez, poderá ver o botão **Adicionar configuração** no centro da página. Você pode usar esse botão ou **Adicionar** para abrir a caixa de diálogo **Configuração do ambiente**.
+1. No menu lateral, clique em **Ambientes**.
+1. Na página **Ambientes**, selecione uma linha na tabela que tenha o ambiente para o qual você deseja adicionar uma variável de ambiente.
+1. Na página de detalhes do ambiente, clique na guia **Configuração**.
+1. Clique em ![Adicionar/Atualizar - ícone Adicionar círculo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Adicionar/Atualizar**.
+Se você estiver adicionando uma variável de ambiente pela primeira vez, clique em **Adicionar configuração** no centro da página.
 
    ![Guia Configuração](assets/configuration-tab.png)
 
-1. Insira os detalhes da variável.
-   * **Nome**
-   * **Valor**
-   * **Serviço aplicado** - Define o serviço (Autor/Publish/Visualização) ao qual a variável se aplica ou se aplica a todos os serviços
-   * **Tipo** - Define se a variável é normal ou um segredo
+1. Na caixa de diálogo **Configuração do Ambiente**, insira os detalhes na primeira linha da tabela.
+
+   | Texto | Descrição |
+   | --- | --- |
+   | Nome | Um nome exclusivo da variável de configuração. Ela identifica a variável específica usada no ambiente. Ele deve seguir as seguintes convenções de nomenclatura:<ul><li>As variáveis só podem conter caracteres alfanuméricos e sublinhado (`_`).</li><li>Há um limite de 200 variáveis por ambiente.</li><li>Cada nome deve ter 100 caracteres ou menos.</li></ul> |
+   | Valor | O valor que a variável contém. |
+   | Etapa aplicada | Selecione a qual serviço a variável se aplica. Selecione **Todos** para aplicar a variável a todos os serviços.<ul><li>**Tudo**</li><li>**Autor**</li><li>**Publish**</li><li>**Visualização**</li></ul> |
+   | Tipo | Selecione se a variável for normal ou um segredo. |
 
    ![Adição de uma variável](assets/add-variable.png)
 
-1. Depois de inserir a nova variável, é necessário selecionar **Adicionar** na última coluna da linha que contém a nova variável.
-   * É possível inserir várias variáveis de uma só vez, inserindo uma nova linha e selecionando **Adicionar**.
+1. Clique no ícone ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Add_18_N.svg)**Adicionar**.
 
-   ![Salvar variáveis](assets/save-variables.png)
+   Adicione mais variáveis, conforme necessário.
 
-1. Selecione **Salvar** para manter suas variáveis.
+1. Clique em **Salvar**.
 
-Um indicador com o status **Atualizando** é mostrado na parte superior da tabela e ao lado da variável recém-adicionada para indicar que o ambiente está sendo atualizado com a configuração. Após a conclusão, a nova variável de ambiente estará visível na tabela.
+   Um ponteiro com o status **Atualizando** é mostrado no canto superior direito da tabela. Um ponteiro também é exibido à esquerda de qualquer variável adicionada recentemente. Esses status indicam que o ambiente está sendo atualizado com a configuração. Após a conclusão, a nova variável de ambiente estará visível na tabela.
 
 ![Atualização de variáveis](assets/updating-variables.png)
 
->[!TIP]
->
->Se você quiser adicionar várias variáveis, é recomendável adicionar a primeira variável e usar o botão **Adicionar** na caixa de diálogo **Configuração do ambiente** para adicionar as variáveis adicionais. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
+## Atualizar uma variável de ambiente {#update-variables}
 
-## Atualização de variáveis de ambiente {#update-variables}
+Depois de criar as variáveis de ambiente, você pode atualizá-las usando ![Adicionar/Atualizar - Ícone de círculo Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Adicionar/Atualizar** para abrir a caixa de diálogo **Configuração de Ambiente**.
 
-Depois de criar as variáveis de ambiente, você pode atualizá-las usando o botão **Adicionar/atualizar** para abrir a caixa de diálogo **Configuração do ambiente**.
+Se você deseja atualizar várias variáveis, a Adobe recomenda usar a caixa de diálogo **Configuração do ambiente** para atualizar todas as variáveis necessárias de uma só vez antes de clicar em **Salvar**. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
 
-1. Faça logon no Adobe Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
-1. O Cloud Manager lista os vários programas disponíveis. Selecione aquele que deseja gerenciar.
-1. No painel de navegação, selecione a janela **Ambientes** para o programa escolhido e selecione o ambiente para o qual deseja modificar uma variável de ambiente.
-1. Nos detalhes do ambiente, selecione a guia **Configuração** e clique em **Adicionar/atualizar** no canto superior direito para abrir a caixa de diálogo **Configuração do ambiente**.
-1. Usando o botão de reticências na última coluna da linha da variável que você deseja modificar, selecione **Editar** ou **Excluir**.
+**Para atualizar uma variável de ambiente:**
+
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione aquele que deseja gerenciar.
+1. No menu lateral, clique em **Ambientes**.
+1. Na página **Ambientes**, selecione uma linha na tabela que tenha o ambiente para o qual você deseja atualizar uma variável.
+1. Na página de detalhes do ambiente, clique na guia **Configuração**.
+1. Clique em ![Adicionar/Atualizar - ícone Adicionar círculo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Adicionar/Atualizar**.
+1. Na caixa de diálogo **Configuração do Ambiente**, clique em ![Reticências - Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na última coluna da linha da variável que você deseja alterar.
+1. No menu suspenso, clique em **Editar**.
 
    ![Editar ou excluir variável](assets/edit-delete-variable.png)
 
-1. Edite a variável de ambiente conforme necessário.
-   * Ao editar, o botão de reticências será alterado para opções para reverter ao valor original ou confirmar a alteração.
-   * Ao editar segredos, os valores somente podem ser atualizados, não visualizados.
+1. Atualize o valor da variável de ambiente conforme necessário.
+Ao editar um segredo, o valor só pode ser atualizado, não visualizado.
 
    ![Editar variável](assets/edit-variable.png)
 
-1. Depois de fazer as alterações necessárias na configuração, selecione **Salvar**.
+1. Siga uma das seguintes opções:
 
-[Como ocorre ao adicionar variáveis](#add-variables), um indicador com o status **Atualizando** é mostrado na parte superior da tabela e ao lado da(s) variável(is) recém-atualizada(s) para indicar que o ambiente está sendo atualizado com a configuração. Após a conclusão, as variáveis de ambiente atualizadas estarão visíveis na tabela.
+   * Clique em ![Aplicar - Ícone de marca de seleção](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg) para aplicar a alteração.
+   * Clique no ![ícone Desfazer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Undo_18_N.svg) para desfazer a alteração.
 
->[!TIP]
->
->Se você deseja atualizar várias variáveis, é recomendável usar a caixa de diálogo **Configuração do Ambiente** para atualizar todas as variáveis necessárias de uma só vez antes de tocar ou clicar em **Salvar**. Dessa forma, você pode adicioná-las com uma atualização ao ambiente.
+1. Clique em **Salvar**.
+
+   Um ponteiro com o status **Atualizando** é mostrado no canto superior direito da tabela. Um ponteiro também é exibido à esquerda de qualquer variável atualizada. Esses status indicam que o ambiente está sendo atualizado com a configuração. Após a conclusão, a variável de ambiente atualizada fica visível na tabela.
+
+## Excluir uma variável de ambiente {#delete-env-variable}
+
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione aquele que deseja gerenciar.
+1. No menu lateral, clique em **Ambientes**.
+1. Na página **Ambientes**, selecione uma linha na tabela que tenha o ambiente para o qual você deseja atualizar uma variável.
+1. Na página de detalhes do ambiente, clique na guia **Configuração**.
+1. Clique em ![Adicionar/Atualizar - ícone Adicionar círculo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Adicionar/Atualizar**.
+1. Na caixa de diálogo **Configuração do Ambiente**, clique em ![Reticências - Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na última coluna da linha da variável que você deseja alterar.
+1. No menu suspenso, clique em **Excluir** para remover a variável imediatamente.
+1. Clique em **Salvar**.
 
 ## Uso de variáveis de ambiente {#using}
 
 As variáveis de ambiente podem tornar suas configurações `pom.xml` mais seguras e flexíveis. Por exemplo, senhas não precisam ser codificadas e sua configuração pode ser ajustada com base nos valores das variáveis de ambiente.
 
-Você pode acessar segredos e variáveis de ambiente por meio do XML, como segue.
+Você pode acessar segredos e variáveis de ambiente por meio do XML, como segue:
 
-* `${env.VARIABLE_NAME}`
+`${env.VARIABLE_NAME}`
 
-Consulte o documento [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) para obter um exemplo de como usar os dois tipos de variáveis em um arquivo `pom.xml`.
+Consulte [Configurando o Projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) para obter um exemplo de como usar os dois tipos de variáveis em um arquivo `pom.xml`.
 
-Consulte a [documentação oficial do Maven](https://maven.apache.org/settings.html#quick-overview) para obter mais detalhes.
+Consulte também a [documentação oficial do Maven](https://maven.apache.org/settings.html#quick-overview) para obter mais detalhes.
 
-## Disponibilidade da variável de ambiente {#availability}
+## Disponibilidade de variáveis de ambiente {#availability}
 
-As variáveis de ambiente podem ser usadas em vários lugares.
+As variáveis de ambiente podem ser usadas em vários lugares da seguinte maneira:
 
-### Autor, visualização e publicação {#author-preview-publish}
+| Onde as variáveis de ambiente podem ser usadas | Descrição |
+| --- | --- |
+| Autor, visualização e publicação | As variáveis e os segredos comuns do ambiente podem ser usados nos ambientes de criação, visualização e publicação. |
+| Dispatcher | Somente variáveis de ambiente regulares podem ser usadas com [a Dispatcher](https://experienceleague.adobe.com/br/docs/experience-manager-dispatcher/using/dispatcher).<ul><li>Não é possível usar segredos.</li><li>As variáveis de ambiente não podem ser usadas em diretivas `IfDefine`.</li><li>Valide o uso das variáveis de ambiente com o [Dispatcher localmente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools) antes da implantação.</li></ul> |
+| Configurações do OSGi | As variáveis de ambiente comuns e os segredos podem ser usados em [Configurações OSGi](/help/implementing/deploying/configuring-osgi.md). |
+| Variáveis de pipeline | Além das variáveis de ambiente, também há variáveis de pipeline, que são expostas durante a fase de criação. Saiba mais sobre variáveis de pipeline em [Ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables). |
 
-As variáveis e os segredos comuns do ambiente podem ser usados nos ambientes de criação, visualização e publicação.
-
-### Dispatcher {#dispatcher}
-
-Somente variáveis de ambiente comuns podem ser usadas com [os Segredos do ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=pt-BR) não podem ser usados.
-
-No entanto, as variáveis de ambiente não podem ser usadas em diretivas `IfDefine`.
-
->[!TIP]
->
->Você deve validar o uso das variáveis de ambiente com o [Dispatcher localmente](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=pt-BR) antes da implantação.
-
-### Configurações do OSGi {#osgi}
-
-As variáveis e os segredos comuns do ambiente podem ser usados nas [configurações do OSGi](/help/implementing/deploying/configuring-osgi.md).
-
-### Variáveis de pipeline {#pipeline}
-
-Além das variáveis de ambiente, também há variáveis de pipeline, que são expostas durante a fase de criação. Saiba mais sobre as variáveis de pipeline em [Ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).
