@@ -4,10 +4,10 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 766573bfeb5190d212e87b18331e41820ddd3e32
+source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
 workflow-type: tm+mt
 source-wordcount: '3137'
-ht-degree: 11%
+ht-degree: 10%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 11%
 >id="aemcloud_ctt_ingestion"
 >title="Assimilação de conteúdo"
 >abstract="Assimilação refere-se à assimilação de conteúdo do conjunto de migração na instância de destino do Cloud Service. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html?lang=pt-BR#top-up-extraction-process" text="Extração complementar"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Extração complementar"
 
 Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud Acceleration Manager:
 
@@ -94,7 +94,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestão complementar"
 >abstract="Use o recurso complementar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da assimilação, verifique os logs em busca de erros ou avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=pt-BR" text="Exibir logs"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Exibir logs"
 
 A ferramenta Transferência de conteúdo tem um recurso que permite a extração de conteúdo diferencial executando um *complemento* do conjunto de migração. Isso permite que o conjunto de migração seja modificado para incluir somente o conteúdo que foi alterado desde a extração anterior, sem precisar extrair todo o conteúdo novamente.
 
@@ -113,7 +113,7 @@ Comece criando uma tarefa de assimilação e verifique se **Apagar** está desat
 >id="aemcloud_ctt_ingestion_troubleshooting"
 >title="Solução de problemas de assimilação de conteúdo"
 >abstract="Consulte os logs de assimilação e a documentação para descobrir os motivos comuns pelos quais uma assimilação pode falhar e uma maneira de corrigir o problema. Depois de corrigida, a assimilação pode ser executada novamente."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=pt-BR" text="Validar transferências de conteúdo"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validar transferências de conteúdo"
 
 ### O CAM não consegue recuperar o token de migração {#cam-unable-to-retrieve-the-migration-token}
 
@@ -146,13 +146,13 @@ Esta mensagem indica que o Cloud Acceleration Manager não conseguiu acessar o s
 > O campo &quot;Token de migração&quot; é exibido porque, em alguns casos, a recuperação desse token é o que realmente não é permitido. Ao permitir que seja fornecido manualmente, ele pode permitir que o usuário inicie a assimilação rapidamente, sem nenhuma ajuda adicional. Se o token for fornecido e a mensagem ainda for exibida, a recuperação do token não foi o problema.
 
 * A AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, deve reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível no futuro.
-* É possível que outro processo esteja sendo executado na instância. Por exemplo, se as [Atualizações de Versão do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) estiverem aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
+* É possível que outro processo esteja sendo executado na instância. Por exemplo, se as [Atualizações de Versão do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) estiverem aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
 * Se uma [Inclui na lista de permissões de IP ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tiver sido aplicada por meio do Cloud Manager, ela impedirá que o Cloud Acceleration Manager acesse o serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é dinâmico. Atualmente, a única solução é desativar a inclui na lista de permissões de IP durante o processo de assimilação e indexação.
 * Pode haver outros motivos que precisem de investigação. Se a assimilação ou indexação continuar a falhar, entre em contato com o Atendimento ao cliente da Adobe.
 
 ### Atualizações e assimilações de versão do AEM {#aem-version-updates-and-ingestions}
 
-[As Atualizações de Versão do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates.html) são aplicadas automaticamente aos ambientes para mantê-los atualizados com a versão mais recente do AEM as a Cloud Service. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente.
+[As Atualizações de Versão do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) são aplicadas automaticamente aos ambientes para mantê-los atualizados com a versão mais recente do AEM as a Cloud Service. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente.
 
 Se as &quot;Atualizações de versão do AEM&quot; estiverem integradas no programa de destino, o processo de assimilação tentará desativar sua fila antes de ser iniciado. Quando a assimilação é concluída, o estado do atualizador de versão retorna ao estado em que estava antes de as assimilações começarem.
 
@@ -174,7 +174,7 @@ Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atual
 >id="aemcloud_cam_ingestion_troubleshooting_uuid"
 >title="Violação da restrição de exclusividade"
 >abstract="Uma causa comum da falha de exclusão do conteúdo durante a ingestão é um conflito nas IDs dos nós. Somente um dos nós em conflito pode existir."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=pt-BR#top-up-ingestion-process" text="Ingestão complementar"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingestão complementar"
 
 Uma causa comum de uma falha de [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) é um conflito nas IDs do nó. Para identificar esse erro, baixe o log de assimilação usando a interface do usuário do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
@@ -194,7 +194,7 @@ Este conflito deve ser resolvido manualmente. Alguém familiarizado com o conte�
 >id="aemcloud_cam_ingestion_troubleshooting_referenced_node"
 >title="Não é possível excluir o nó referenciado"
 >abstract="Uma causa comum da falha de exclusão do conteúdo durante a ingestão é um conflito de versão de um determinado nó na instância de destino. As versões do nó precisam ser corrigidas."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content.html?lang=pt-BR#top-up-ingestion-process" text="Ingestão complementar"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/ingesting-content#top-up-ingestion-process" text="Ingestão complementar"
 
 Outra causa comum de uma falha de [Assimilação complementar](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) é um conflito de versão para um determinado nó na instância de destino. Para identificar esse erro, baixe o log de assimilação usando a interface do usuário do Cloud Acceleration Manager e procure uma entrada como a seguinte:
 
@@ -212,7 +212,7 @@ As práticas recomendadas indicam que, se uma assimilação de **Não apagável*
 >id="aemcloud_cam_ingestion_troubleshooting_bson"
 >title="Propriedade de nó grande"
 >abstract="Uma causa comum de falha na ingestão é ao exceder o tamanho máximo dos valores de propriedade do nó. Siga a documentação, incluindo as relacionadas ao relatório do BPA, para corrigir essa situação."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=pt-BR" text="Pré-requisitos de migração"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool" text="Pré-requisitos de migração"
 
 Os valores de propriedade do nó armazenados no MongoDB não podem exceder 16 MB. Se um valor de nó exceder o tamanho compatível, a assimilação falhará e o log conterá:
 
