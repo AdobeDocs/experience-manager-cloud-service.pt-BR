@@ -1,66 +1,42 @@
 ---
-title: Restringir a entrega de ativos no Experience Manager
-description: Saiba como restringir a entrega de ativos no [!DNL Experience Manager].
+title: Restringir a entrega de ativos com Dynamic Media com recursos OpenAPI
+description: Saiba como restringir a entrega de ativos com recursos OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
 
-# Restringir o acesso a ativos em [!DNL Experience Manager] {#restrict-access-to-assets}
+# Restringir a entrega de ativos com Dynamic Media com recursos OpenAPI {#restrict-access-to-assets}
 
 | [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-A governança de ativos centrais no Experience Manager permite que o administrador do DAM ou os gerentes de marca gerenciem o acesso aos ativos. Eles podem restringir o acesso configurando funções para ativos aprovados no lado da criação, especificamente na instância de autor do AEM as a Cloud Service.
+A governança de ativos centrais no Experience Manager permite que o administrador do DAM ou os gerentes de marca gerenciem o acesso aos ativos disponíveis por meio do Dynamic Media com recursos OpenAPI. Eles podem restringir a entrega de ativos aprovados (até um ativo individual) para usuários ou grupos selecionados do [Adobe Identity Management System (IMS)](https://helpx.adobe.com/in/enterprise/using/users.html#user-mgt-strategy), configurando determinados metadados nos ativos no serviço de autor do AEM as a Cloud Service.
 
-Os usuários [pesquisando](search-assets-api.md) ou utilizando [URLs de entrega](deliver-assets-apis.md) podem obter acesso a ativos restritos após passar com êxito no processo de autorização.
+Quando um ativo é restrito por meio do Dynamic Media com OpenAPIs, somente os usuários (Adobe IMS integrado) autorizados a acessar o ativo recebem acesso. Para acessar o ativo, o usuário deve aproveitar os recursos do [Search](search-assets-api.md) e do [Delivery](deliver-assets-apis.md) do Dynamic Media com OpenAPI.
 
 ![Acesso restrito a ativos](/help/assets/assets/restricted-access.png)
-
-## Entrega restrita usando um token IMS {#restrict-delivery-ims-token}
 
 No Experience Manager Assets, a entrega restrita via IMS envolve dois estágios principais:
 
 * Criação  
 * Entrega
 
-### Criação   {#authoring}
+## Criação   {#authoring}
 
-Você pode restringir a entrega de ativos em [!DNL Experience Manager] com base em funções. Para configurar funções, execute as seguintes etapas:
+### Entrega restrita usando um token de portador IMS {#restrict-delivery-ims-token}
 
-1. Vá para [!DNL Experience Manager] como Administrador do DAM.
-1. Selecione o ativo para o qual você precisa configurar a função.
-1. Navegue até **[!UICONTROL Propriedades]** > **[!UICONTROL Avançadas]** e verifique se o campo **[!UICONTROL Funções]** existe na guia [!UICONTROL Metadados Avançados].
+Você pode restringir a entrega de ativos em [!DNL Experience Manager] com base nas Identidades de Usuário e de Grupo IMS.
 
-   ![Metadados das funções](/help/assets/assets/roles_metadata.jpg)
-Se o campo não estiver disponível, use as seguintes etapas para adicionar o campo:
+>[!NOTE]
+>
+> No momento, esse recurso não é de autoatendimento. Para restringir a entrega de ativos para IMS [Usuários](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) e [Grupos](https://helpx.adobe.com/in/enterprise/using/user-groups.html), entre em contato com a equipe de Suporte Enterprise para obter orientação sobre como recuperar as informações necessárias para restringir o acesso no portal [Adobe Admin Console](https://adminconsole.adobe.com/) e como configurar o acesso no serviço de autor do AEM as a Cloud Service.
 
-   1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de Metadados]**.
-   1. Selecione o esquema de metadados e clique em **[!UICONTROL Editar _(e)_]**.
-   1. Adicione um campo **[!UICONTROL Texto de vários valores]** da seção **[!UICONTROL Criar formulário]** no lado direito à seção Metadados no formulário.
-   1. Clique no campo recém-adicionado e faça as seguintes atualizações no painel **[!UICONTROL Configurações]**:
-      1. Altere o **[!UICONTROL Rótulo do campo]** para _Funções_.
-      1. Atualize o **[!UICONTROL Mapear para a propriedade]** para _./jcr:content/metadata/dam:roles_.
-
-1. Obtenha os grupos IMS que serão adicionados aos metadados de funções do ativo. Para buscar os grupos IMS, siga estas etapas:
-   1. Entrar em `https://adminconsole.adobe.com/.`
-   1. Vá para sua respectiva organização e navegue até **[!UICONTROL Grupos de Usuários]**.
-   1. Selecione o **[!UICONTROL Grupo de Usuários]** que você precisa adicionar e extraia a **[!UICONTROL orgID]** e a **[!UICONTROL userGroupID]** da URL ou use sua ID da Organização, como `{orgID}@AdobeOrg:{usergroupID}`.
-
-1. Adicione a ID do grupo ao campo **[!UICONTROL Funções]** das propriedades do ativo. <br>
-As IDs de grupo definidas no campo **[!UICONTROL Funções]** são os únicos usuários que podem acessar o ativo. Além da ID do grupo IMS, também é possível adicionar a ID de usuário IMS e a ID de perfil IMS no campo **[!UICONTROL Funções]**. Por exemplo, `{orgId}@AdobeOrg:{profileId}`.
-
-   >[!NOTE]
-   >
-   >Para a nova visualização do Assets, você só pode conceder acesso até o nível da pasta e exclusivamente a grupos, em vez de usuários individuais. Saiba mais sobre o [gerenciamento de permissões no Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
-
-   >[!VIDEO](https://video.tv.adobe.com/v/3427429)
-
-#### Restringir a entrega de ativos usando data e hora de ativação e desativação {#restrict-delivery-assets-date-time}
+### Restringir a entrega de ativos usando data e hora de ativação e desativação {#restrict-delivery-assets-date-time}
 
 Os autores do DAM também podem restringir a entrega de ativos definindo um tempo Ligado ou Desligado para ativação disponível nas Propriedades do ativo.
 
@@ -95,28 +71,36 @@ Da mesma forma, na visualização do Assets, se o ativo não for baseado no esqu
 
 
 
-### Entrega de ativos restritos {#delivery-restricted-assets}
+## Entrega de ativos restritos {#delivery-restricted-assets}
 
-A entrega de ativos restritos é baseada na autorização bem-sucedida para acessar ativos. A autorização é baseada em um token IMS se a solicitação for enviada de uma instância de autor AEM ou do Seletor de ativos ou é baseada em um cookie especial se você tiver provedores de identidade personalizados configurados em sua instância do Publish ou de Pré-visualização.
+A entrega de ativos restritos é baseada na autorização bem-sucedida para acessar ativos. A autorização é por meio de [Tokens de portador do IMS](https://developer.adobe.com/developer-console/docs/guides/authentication/UserAuthentication/IMS/) (aplicativo para solicitações iniciadas a partir do [Seletor de ativos do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector)), ou um cookie seguro (se você tiver provedores de identidade personalizados configurados nos serviços AEM Publish/Preview e tiver configurado a criação e a inclusão do cookie nas páginas).
 
-#### Entrega para solicitações do autor do AEM ou do Seletor de ativos {#delivery-aem-author-asset-selector}
+### Entrega para solicitações do autor do AEM ou do Seletor de ativos {#delivery-aem-author-asset-selector}
 
-Para habilitar a entrega de ativos restritos caso a solicitação seja enviada da instância do autor do AEM ou do Seletor de ativos, um token IMS válido é essencial. Siga estas etapas:
+Para permitir a entrega de ativos restritos caso a solicitação seja enviada do serviço de autor de AEM ou do Seletor de ativos de AEM, é essencial um token de portador IMS válido.\
+Nos serviços de autor do AEM Cloud Service, bem como no Seletor de ativos, o Token de portador do IMS é gerado e usado automaticamente para solicitações após um logon bem-sucedido.
 
-1. [Gerar um token de acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token).
-   * Faça logon no Dev Console do ambiente do AEM as a Cloud Service.
+>[!NOTE]
+>
+>Para obter mais informações sobre como habilitar a autenticação IMS em integrações baseadas no Seletor de ativos AEM, entre em contato com o Suporte corporativo
 
-   * Navegue até **[!UICONTROL Ambiente]** > **[!UICONTROL Integrações]** > **[!UICONTROL Token Local]** > **[!UICONTROL Obter Token de Desenvolvimento Local]** > **[!UICONTROL Copiar valor de accessToken]**. Saiba mais sobre [como acessar o token e aspectos relacionados](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis.html?lang=en#generating-the-access-token)
+1. Para experiências não baseadas no Seletor de ativos, o AEM as a Cloud Service e o Dynamic Media com recursos OpenAPI atualmente oferecem suporte a integrações de api do lado do servidor e podem gerar tokens de Portador IMS.
+   * Siga as instruções [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) para executar integrações de API de serviço para servidor que possam recuperar os tokens do Portador IMS por meio do [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)
+   * Por tempo limitado, o acesso de desenvolvedor local (não destinado a casos de uso de produção), tokens de Portador IMS de vida curta para o usuário autenticado no [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console) podem ser gerados seguindo as instruções [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#developer-flow)
 
-1. Integre o token de acesso obtido ao cabeçalho **[!UICONTROL Autorização]**, garantindo que seu valor tenha o prefixo **[!UICONTROL Portador]**.
+1. Ao fazer solicitações de API de [Pesquisa](search-assets-api.md) e [Entrega](deliver-assets-apis.md), adicione o token do Portador IMS obtido ao cabeçalho **[!UICONTROL Autorização]** da solicitação HTTP (verifique se o valor tem o prefixo **[!UICONTROL Portador]**).
 
-1. Valide a funcionalidade do token de acesso iniciando uma solicitação. Ele deve gerar um erro 404 nos casos em que não há um token de acesso IMS ou o token de acesso fornecido não tem as mesmas entidades ou grupos que os adicionados nos metadados do ativo.
+1. Para validar a restrição de acesso, inicie uma solicitação da API de Entrega com e sem o cabeçalho **[!UICONTROL Autorização]**.
+   * A resposta produzirá um código de status de erro `404` nos casos em que não houver um token do Portador IMS ou o token do Portador IMS fornecido não pertencer ao usuário que recebeu acesso ao ativo (diretamente ou por meio de associação de grupo).
+   * A resposta produzirá um código de status de sucesso `200` com o conteúdo binário do ativo se o token do Portador IMS for um dos usuários ou grupos aos quais foi concedido acesso ao ativo.
 
-#### Entrega para provedores de identidade personalizados na instância do Publish {#delivery-custom-identity-provider}
+### Entrega para provedores de identidade personalizados no serviço Publish {#delivery-custom-identity-provider}
 
-No caso de um provedor de identidade personalizado configurado na sua instância do Publish ou de Pré-visualização, você pode mencionar o grupo que deve ter acesso aos ativos protegidos no atributo `groupMembership` durante o processo de configuração. Ao fazer logon no provedor de identidade personalizado por meio da [integração SAML](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), o atributo `groupMembership` é lido e usado para construir um cookie, que é enviado em todas as solicitações de autenticação, de modo semelhante a um token IMS no caso de uma solicitação do autor de AEM ou do Seletor de ativos.
+O AEM Sites, o AEM Assets e o Dynamic Media AEM com licenças OpenAPI podem ser usados em conjunto, e a entrega restrita de ativos pode ser configurada em sites entregues pelo Publish ou pelos serviços de Pré-visualização.
+Se os serviços Publish e de Visualização do AEM Sites estiverem configurados para usar um [provedor de identidade personalizado (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), o grupo que deve ter acesso aos ativos protegidos no poderá ser incluído no atributo `groupMembership` durante o processo de instalação.\
+Quando um usuário do site faz logon no provedor de identidade personalizado e acessa o site hospedado no serviço Publish/Preview, o atributo `groupMembership` é lido e um cookie seguro é construído e entregue no site após a autenticação bem-sucedida. Este cookie seguro é incluído em todas as solicitações subsequentes para entregar o conteúdo do site ao user-agent.
 
-Quando um ativo seguro está disponível em uma página e uma solicitação é feita ao URL de entrega para renderizar o ativo, o AEM verifica as funções presentes no cookie ou no token IMS e o compara com a `dam:roles property` aplicada durante a criação do ativo. Se houver uma correspondência, o ativo será exibido.
+Quando um ativo seguro é solicitado em uma página, os níveis de AEM Publish e Pré-visualização extraem o material de autorização do cookie seguro e validam o acesso. Se houver uma correspondência, o ativo será exibido.
 
 >[!NOTE]
 >
