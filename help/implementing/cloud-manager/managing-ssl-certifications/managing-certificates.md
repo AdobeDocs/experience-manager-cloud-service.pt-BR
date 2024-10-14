@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b735c724bd8d68273b3c09a2dc53a13f5f6095ae
+source-git-commit: f12392075b71b219bf449f585f63561167ddada9
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1034'
 ht-degree: 5%
 
 ---
@@ -59,6 +59,7 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 
 1. Clique em **Atualizar** para salvar suas alterações e aplicá-las automaticamente.
 
+
 >[!NOTE]
 >
 >Se você tiver dois ou mais certificados SAN que abranjam a mesma entrada de domínio SAN, se esse domínio for coberto por um certificado e o outro for atualizado, o último será instalado para o domínio.
@@ -80,13 +81,21 @@ Veja a seguir alguns motivos pelos quais você pode querer renomear um certifica
 **Para renomear um certificado SSL gerenciado por Adobe:**
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione o programa apropriado.
+
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
+
 1. No canto superior esquerdo da página, clique em ![Mostrar ícone de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu lateral.
+
 1. No cabeçalho **Serviços**, clique em ![Ícone Bloquear fechado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
-1. Na página **Certificados SSL**, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) no final de uma linha cujo certificado *Adobe Managed* você deseja renomear.
+
+1. Na página **Certificados SSL**, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) no final de uma linha cujo certificado SSL **Adobe managed** você deseja renomear.
+
 1. No menu suspenso, clique em **Renomear**.
+
 1. Na caixa de diálogo **Renomear Certificado DV**, no campo de texto **Nome do certificado**, digite o novo nome do certificado.
+
 1. Clique em **Renomear**.
+
 
 ## Excluir um certificado SSL {#deleting-an-ssl-certificate}
 
@@ -101,17 +110,25 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 **Para excluir um certificado SSL:**
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione o programa apropriado.
+
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
+
 1. No canto superior esquerdo da página, clique em ![Mostrar ícone de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu lateral.
+
 1. No cabeçalho **Serviços**, clique em ![Ícone Bloquear fechado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
-1. Na página Certificados SSL, na linha da tabela do certificado que você deseja excluir, clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)na extremidade direita
+
+1. Na página Certificados SSL, na linha da tabela do certificado que você deseja excluir, clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na extremidade direita.
+
 1. No menu suspenso, clique em **Excluir**.
-Se o botão Excluir tiver um ícone de informações como visto na imagem a seguir, consulte a Observação acima.
+
+   Se **Excluir** tiver um ícone de informações como visto na imagem a seguir, consulte a Observação acima.
 
    ![Botão Excluir com ícone Informações](/help/implementing/cloud-manager/assets/ssl/ssl-cert-delete-infoicon.png)
 
 1. Na caixa de diálogo **Excluir Certificado SSL**, clique em **Excluir** para confirmar a exclusão.
+
 1. Execute o pipeline para desimplantar o certificado excluído.
+
 
 ## Configurações de CDN pré-existentes {#pre-existing-cdn}
 
