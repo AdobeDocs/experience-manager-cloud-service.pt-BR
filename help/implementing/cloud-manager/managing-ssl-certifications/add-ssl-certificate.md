@@ -5,9 +5,9 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '996'
 ht-degree: 2%
 
 ---
@@ -46,7 +46,7 @@ Depois de adicionado ao Cloud Manager, aguarde o Adobe emitir e instalar o certi
 * **Para um certificado SSL gerenciado pelo cliente (OV/EV):**
 
    * Obtenha seu certificado SSL OV/EV de uma autoridade de certificação. Para obter mais detalhes, confira os [requisitos para certificados SSL OV/EV gerenciados pelo cliente](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md#requirements).
-   * Depois de adquirir o certificado, [adicione os detalhes](#add-customer-manage-ssl-cert) do certificado SSL gerenciado pelo cliente (OV/EV) na Cloud Manager.
+   * Depois de adquirir o certificado, [adicione os detalhes](#add-customer-managed-ssl-cert) do certificado SSL gerenciado pelo cliente (OV/EV) na Cloud Manager.
    * Depois de adicionado, o nome de domínio personalizado é marcado como verificado e o certificado SSL é aplicado.
 
 Em ambos os casos, depois que o certificado é verificado e instalado, o domínio personalizado fica disponível para uso seguro em seu ambiente. Verifique o [status do domínio](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) na interface do Cloud Manager regularmente para confirmar se tudo está funcionando como esperado.
@@ -76,8 +76,7 @@ Precisa de ajuda para escolher se deseja usar um certificado SSL gerenciado por 
 1. No campo **Nome do certificado**, digite um nome que você deseja associar ao certificado SSL DV.
 
 1. Na lista suspensa **Selecionar domínios**, selecione um ou mais domínios verificados que deseja associar ao certificado SSL DV.
-   * Nenhum domínio para selecionar? Em caso positivo, primeiro adicione um nome de domínio personalizado e verifique se ele está verificado antes de adicionar um certificado SSL.
-   * Consulte [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+   * Nenhum domínio para selecionar? Em caso afirmativo, primeiro [adicione um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) e verifique se ele foi verificado antes de adicionar um certificado SSL gerenciado por Adobe.
    * Quando terminar de adicionar um nome de domínio personalizado, retorne a este tópico e comece na etapa 1 novamente.
 
 1. No canto inferior direito da caixa de diálogo, clique em **Salvar**.
