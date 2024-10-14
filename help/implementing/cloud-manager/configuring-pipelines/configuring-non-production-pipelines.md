@@ -6,9 +6,9 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1398'
 ht-degree: 71%
 
 ---
@@ -156,12 +156,12 @@ As etapas para concluir a criação do pipeline de implantação de destino e n�
 
    ![Configurar pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config-deployment-experience-audit.png)
 
-1. Se você habilitou a Auditoria de experiência, toque ou clique em **Continuar** para avançar para a guia **Auditoria de experiência**, onde é possível definir os caminhos que sempre devem ser incluídos na Auditoria de experiência.
+1. Se você habilitou a Auditoria de Experiência, clique em **Continuar** para avançar para a guia **Auditoria de Experiência**, na qual será possível definir os caminhos que sempre devem ser incluídos na Auditoria de Experiência.
 
    * Se você habilitou a **Auditoria de experiência**, consulte o documento [Auditoria de experiência](/help/implementing/cloud-manager/experience-audit-dashboard.md) para obter detalhes sobre como configurar.
    * Caso contrário, pule esta etapa.
 
-1. Toque ou clique em **Salvar** para salvar o pipeline.
+1. Clique em **Salvar** para salvar o pipeline.
 
 O pipeline é salvo e agora você pode [gerenciar seus pipelines](managing-pipelines.md) no cartão **Pipelines** na página **Visão geral do programa**.
 

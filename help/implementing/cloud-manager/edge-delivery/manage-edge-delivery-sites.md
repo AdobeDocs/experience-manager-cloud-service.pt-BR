@@ -3,7 +3,7 @@ title: Gerenciar sites do Edge Delivery no Cloud Manager
 description: Saiba como adicionar uma configuração de CDN a um site do Edge Delivery ou excluir um site do Edge Delivery.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2d1382c84d872719332986baa5829d1623d9d9a6
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -34,7 +34,7 @@ No Adobe Cloud Manager, talvez você queira renomear um site do Edge Delivery po
 
    * Na página **Visão geral do programa**, clique na guia **Edge Delivery**. Na tabela do site do Edge Delivery, clique nas reticências no final de uma linha cujo site você deseja renomear.
 Clique em **Renomear**.
-   * No canto superior esquerdo da página, clique em ![Mostrar ícone de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu de navegação esquerdo. No cabeçalho **Serviços**, clique em ![ícone de páginas da Web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
+   * No canto superior esquerdo da página, clique em ![Mostrar ícone de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu do lado esquerdo. No cabeçalho **Serviços**, clique em ![ícone de páginas da Web](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Edge Delivery Sites**.
 Na tabela de sites do Edge Delivery, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) no final de uma linha cujo site você deseja renomear. Clique em **Renomear**.
 
 1. Na caixa de diálogo **Editar Site do Edge Delivery**, no campo de texto **Nome do Site**, digite o novo nome do site.
@@ -56,7 +56,7 @@ Clique em ![Excluir site do Edge Delivery](https://spectrum.adobe.com/static/ico
 
      ![Adicionar site do Edge Delivery na guia Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete1.png)
 
-   * No canto superior esquerdo da página, clique em ![Mostrar ou ocultar navegação lateral](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu de navegação lateral. No cabeçalho **Serviços**, clique em ![Página da Web dos sites do Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Sites do Edge Delivery**.
+   * No canto superior esquerdo da página, clique em ![Mostrar ou ocultar navegação lateral](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu do lado esquerdo. No cabeçalho **Serviços**, clique em ![Página da Web dos sites do Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_WebPages_18_N.svg) **Sites do Edge Delivery**.
 Na tabela de sites do Edge Delivery, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) no final de uma linha cujo site você deseja remover. Clique em ![Excluir site do Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **Excluir** e em **Excluir** novamente para confirmar a remoção do site.
 
      ![Adicionar site do Edge Delivery pelo botão Sites do Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-delete2.png)

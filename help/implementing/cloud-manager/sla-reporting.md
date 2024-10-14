@@ -5,7 +5,7 @@ exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: c46b6df488722fe750e524ad2bb383f25bf00b0f
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 11%
@@ -36,7 +36,7 @@ O gráfico de linhas de um ano selecionado inclui pontos de dados para cada mês
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
-1. Na página **Visão geral do programa**, no painel de navegação esquerdo, clique em **Relatórios**.
+1. Na página **Visão geral do programa**, no menu do lado esquerdo, clique em **Relatórios**.
 
 1. Clique em **Relatórios do SLA**.
 

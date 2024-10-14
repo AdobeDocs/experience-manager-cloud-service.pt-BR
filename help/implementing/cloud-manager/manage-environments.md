@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '2371'
-ht-degree: 64%
+source-wordcount: '2357'
+ht-degree: 61%
 
 ---
 
@@ -109,7 +109,7 @@ Se não tiver especificado nenhuma região adicional previamente, é possível f
 
 Você também pode remover regiões de publicação adicionais. No entanto, só é possível adicionar ou remover regiões em uma transação. Se precisar adicionar uma região e remover outra, primeiro adicione, salve a alteração e depois remova (ou vice-versa).
 
-1. No console Visão geral do programa, clique no botão de reticências do ambiente de produção e selecione **Editar** no menu.
+1. No console Visão geral do programa, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg para seu ambiente de produção e selecione **Editar** no menu.
 
    ![Editar ambiente](assets/select-edit-environment.png)
 
@@ -129,7 +129,7 @@ Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-n
 
 Na página **Visão geral**, você pode acessar os detalhes de um ambiente de duas maneiras.
 
-1. Na página **Visão geral**, clique na guia **Ambientes** no painel de navegação lateral.
+1. Na página **Visão geral**, clique na guia **Ambientes** no menu do lado esquerdo.
 
    ![Guia Ambientes](assets/environments-tab2.png)
 
@@ -141,11 +141,11 @@ Na página **Visão geral**, você pode acessar os detalhes de um ambiente de du
 
    ![Guia Ambientes](assets/environments-tab2.png)
 
-1. Toque ou clique em um ambiente na lista para que você possa revelar seus detalhes.
+1. Clique em um ambiente na lista para revelar seus detalhes.
 
    ![Detalhes do ambiente](assets/environ-preview1.png)
 
-Como alternativa, clique no botão de reticências do ambiente desejado e selecione **Exibir detalhes**.
+Como alternativa, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg do ambiente desejado e selecione **Exibir Detalhes**.
 
 ![Exibir detalhes do ambiente](assets/view-environment-details.png)
 
@@ -193,7 +193,7 @@ Como alternativa, você pode acessar as mesmas informações na guia **Ambientes
 
 1. Na página **Visão geral**, selecione a guia **Ambientes**.
 
-1. Na guia **Ambientes**, selecione o ambiente que deseja consultar no painel de navegação esquerdo.
+1. Na guia **Ambientes**, selecione o ambiente que deseja consultar no menu do lado esquerdo.
 
 1. Depois que um ambiente é selecionado:
 
@@ -235,11 +235,11 @@ O processo de atualização é, portanto, um processo de duas etapas:
 >[!NOTE]
 > A partir de 2024, as instâncias de desenvolvimento e alguns programas de sandbox já serão atualizados automaticamente para que não haja necessidade de gerenciar atualizações para eles manualmente. Como resultado dessa transição, a opção para Atualizar o ambiente manualmente para instâncias de desenvolvimento pode não estar disponível para _alguns_ de seus programas.
 
-A opção **Atualizar** está disponível no cartão **Ambientes** para alguns ambientes de desenvolvimento e de programas de sandbox clicando no botão de reticências do ambiente.
+A opção **Atualizar** está disponível no cartão **Ambientes** para alguns ambientes de desenvolvimento e de programas de sandbox clicando em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg do ambiente.
 
 ![Opção Atualizar no cartão Ambientes](assets/environ-update2.png)
 
-Essa opção também está disponível selecionando a guia **Ambientes** do programa e clicando no botão de reticências do ambiente.
+Esta opção também está disponível clicando na guia **Ambientes** do programa e clicando em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg do ambiente.
 
 ![Opção Atualizar na guia Ambientes](assets/environ-update3.png)
 
@@ -259,11 +259,11 @@ O comportamento da opção **Atualizar** varia dependendo da configuração e do
 
 Um usuário com a função **Gerente de Implantação** ou **Proprietário da Empresa** pode excluir um ambiente de desenvolvimento.
 
-Na tela **Visão geral** do programa no cartão **Ambientes**, clique no botão de reticências do ambiente de desenvolvimento que deseja excluir.
+Na tela **Visão geral** do programa no cartão **Ambientes**, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg do ambiente de desenvolvimento que deseja excluir.
 
 ![A opção de exclusão](assets/environ-delete.png)
 
-A opção de exclusão também está disponível na guia **Ambientes** da janela **Visão geral** do programa. Clique no botão de reticências do ambiente e selecione **Excluir**.
+A opção de exclusão também está disponível na guia **Ambientes** da janela **Visão geral** do programa. Clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg do ambiente e selecione **Excluir**.
 
 ![A opção de exclusão na guia Ambientes](assets/environ-delete2.png)
 

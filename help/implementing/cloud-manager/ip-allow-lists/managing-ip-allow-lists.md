@@ -5,7 +5,7 @@ exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b9fb178760b74cb0e101506b6a9ff5ae30c18490
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 19%
@@ -23,7 +23,7 @@ Um usuário com a função **Proprietário da empresa** ou **Gerente de implanta
 **Para exibir e atualizar Listas de permissões de IP:**
 
 1. Faça logon no Cloud Manager em[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
-1. Na página **Visão geral**, no painel lateral, em **Serviços**, clique em ![Ícone da lista de tarefas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listas de permissões IP**.
+1. Na página **Visão geral**, no menu do lado esquerdo, em **Serviços**, clique em ![Ícone da lista de tarefas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listas de permissões IP**.
 1. Identifique a linha das Listas de permissões IP que deseja exibir ou atualizar.
 1. Clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na extremidade direita da linha.
 1. No menu suspenso, clique em **Exibir e atualizar**.
@@ -40,7 +40,7 @@ A caixa de diálogo **Exibir e Atualizar Lista de permissões de IP** mostra o n
 
 1. Faça logon no Cloud Manager em[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
 
-1. Na página **Visão geral**, no painel lateral, em **Serviços**, clique em ![Ícone da lista de tarefas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listas de permissões IP**.
+1. Na página **Visão geral**, no menu do lado esquerdo, em **Serviços**, clique em ![Ícone da lista de tarefas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listas de permissões IP**.
 
 1. Na coluna **Status** da tabela IP Lista de permissões, passe o ponteiro do mouse sobre uma Lista de permissões IP verde (em uso) para ver um ou mais serviços aplicados a ela.
 
@@ -63,10 +63,9 @@ Um usuário com a função **Proprietário da empresa** ou **Gerente de implanta
 **Para excluir uma Lista de permissões IP:**
 
 1. Faça logon no Cloud Manager em[my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
-1. Na página **Visão geral**, no painel lateral, em **Serviços**, clique em ![Ícone da lista de tarefas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listas de permissões IP**.
-1. Identifique a linha da Lista de permissões IP que deseja excluir e clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na extremidade direita da linha.
-1. No menu suspenso, clique em **Excluir**.
-1. Na caixa de diálogo Excluir Lista de permissões de IP, clique em **Excluir**.
+1. Na página **Visão geral**, no menu do lado esquerdo, em **Serviços**, clique em ![Ícone da lista de tarefas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_TaskList_18_N.svg) **Listas de permissões IP**.
+1. Identifique a linha da Lista de permissões IP que deseja excluir e clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na extremidade direita da linha e em **Excluir**.
+1. Na caixa de diálogo **Excluir Lista de permissões IP**, clique em **Excluir**.
 
 ## Configurações de CDN pré-existentes {#pre-existing-cdn}
 

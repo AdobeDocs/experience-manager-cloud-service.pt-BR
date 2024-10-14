@@ -5,9 +5,9 @@ exl-id: cfcef2e2-0590-457d-a0f9-6092a6d9e0e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '618'
 ht-degree: 14%
 
 ---
@@ -84,6 +84,7 @@ Se um pipeline estiver em execução, o gerenciamento de variáveis será bloque
 
 1. Clique em **Salvar**.
 
+
 ## Excluir uma variável de pipeline {#delete-ui}
 
 1. Ao [gerenciar seus pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md), clique em ![Reticências - Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) do pipeline para o qual você deseja excluir variáveis de pipeline.
@@ -92,10 +93,7 @@ Se um pipeline estiver em execução, o gerenciamento de variáveis será bloque
 
    ![Exibir/Editar variáveis de pipeline](/help/implementing/cloud-manager/assets/pipeline-variables-view-edit.png)
 
-1. Na caixa de diálogo **Configuração de Variáveis**, clique em ![Reticências - Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) da variável que você deseja remover.
-
-1. No menu suspenso, clique em **Excluir**.
-
+1. Na caixa de diálogo **Configuração de Variáveis**, clique em ![Reticências - Mais ícones](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) da variável que você deseja remover e em **Excluir**.
 
 ## Definir variáveis de pipeline usando a CLI do Cloud Manager {#cli}
 

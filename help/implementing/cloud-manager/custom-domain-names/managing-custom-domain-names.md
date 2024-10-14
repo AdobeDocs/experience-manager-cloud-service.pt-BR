@@ -5,9 +5,9 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 27d9a48c6afa115d5c755fa54cf96cb6a561b2f5
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '789'
 ht-degree: 17%
 
 ---
@@ -31,7 +31,7 @@ No Adobe Cloud Manager, talvez você queira editar uma configuração de nome de
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 
-1. No canto superior esquerdo da página, clique em ![Mostrar ícone - hambúrguer](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu de navegação esquerdo.
+1. No canto superior esquerdo da página, clique em ![Mostrar ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu do lado esquerdo.
 
 1. No cabeçalho **Serviços**, clique em **Configurações de CDN**.
 

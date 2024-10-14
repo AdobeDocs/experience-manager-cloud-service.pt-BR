@@ -5,9 +5,9 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '909'
 ht-degree: 34%
 
 ---
@@ -34,7 +34,7 @@ O Painel de licenças da Cloud Manager fornece acesso fácil aos direitos da sol
 >Um usuário com a função **Proprietário da empresa** deve estar conectado para exibir o Painel de Licenças.
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
-1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique no botão de menu de hambúrguer no [Cabeçalho do Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Isso revela as guias.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg no [Cabeçalho do Cloud Manager](/help/implementing/cloud-manager/navigation.md#cloud-manager-header). Essa ação revela as guias.
 1. Clique na opção **Licença** na guia.
 
 ![Painel de licenças](assets/license-dashboard.png)

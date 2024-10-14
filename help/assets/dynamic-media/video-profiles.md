@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions,Best Practices
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 35f31c95e92148ff5f3472f26ea9c40fa5a17947
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '3744'
+source-wordcount: '3742'
 ht-degree: 6%
 
 ---
@@ -151,7 +151,7 @@ Consulte também [Práticas recomendadas de codificação de vídeo](/help/asset
 
 Para definir parâmetros de processamento avançado para outros tipos de ativos, consulte [Configurar processamento de ativos](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Para criar um Perfil de Vídeo para transmissão adaptável da taxa de bits**,
+**Para criar um Perfil de Vídeo para transmissão adaptável da taxa de bits:**
 
 1. Selecione o logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de Vídeo]**.
 1. Selecione **[!UICONTROL Criar]**.
@@ -192,7 +192,7 @@ Agora é possível aplicar o perfil às pastas que contêm vídeos. Consulte [Ap
 
 Se você optar por não usar a opção **[!UICONTROL Codificar para transmissão adaptável]**, todas as predefinições de codificação adicionadas ao perfil serão tratadas como representações de vídeo individuais para transmissão de streaming com taxa de bits única ou entrega de vídeo progressiva. Além disso, não há validação para garantir que todas as representações de vídeo tenham a mesma proporção.
 
-Os codecs de formato de vídeo compatíveis são H.264 (.mp4) e WebM.
+O codec de formato de vídeo com suporte é H.264 (.mp4). <!-- use to also include WebM but was requested for removal by Riya Midha in email dated October 14, 2024 -->
 
 Consulte também [Criar um perfil de codificação de vídeo para transmissão adaptável da taxa de bits](#creating-a-video-encoding-profile-for-adaptive-streaming).
 

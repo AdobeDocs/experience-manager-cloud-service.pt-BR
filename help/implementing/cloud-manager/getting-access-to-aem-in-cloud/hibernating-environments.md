@@ -1,50 +1,52 @@
 ---
-title: Hibernação cancelamento da hibernação em ambientes de sandbox
+title: Hibernar e cancelar hibernação em ambientes de sandbox
 description: Saiba como os ambientes de um programa de sandbox entram automaticamente em um modo de hibernação e como você pode removê-los.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
 source-wordcount: '696'
-ht-degree: 83%
+ht-degree: 42%
 
 ---
 
 
-# Hibernação cancelamento da hibernação em ambientes de sandbox {#hibernating-introduction}
+# Hibernar e cancelar hibernação em ambientes de sandbox {#hibernating-introduction}
 
-Os ambientes de um programa de sandbox entram em um modo de hibernação se nenhuma atividade for detectada por oito horas. A hibernação é exclusiva dos ambientes de programas de sandbox. Os ambientes de programas de produção não hibernam.
+Os ambientes de um programa de sandbox entram em um modo de hibernação se nenhuma atividade for detectada por oito horas. A hibernação é exclusiva dos ambientes de programas de sandbox. Os ambientes de programas de produção não podem ser hibernados.
 
 ## Hibernação {#hibernation-introduction}
 
 A hibernação pode ocorrer automática ou manualmente.
 
-* **Automático** - Os ambientes dos programas de sandbox hibernam automaticamente após oito horas de inatividade. A inatividade é definida como o não recebimento de solicitações dos serviços de autoria, visualização ou publicação.
-* **Manual** - Como usuário, você pode hibernar manualmente um ambiente de programa de sandbox. Não há necessidade de fazer isso, pois a hibernação ocorrerá de forma automática, conforme descrito anteriormente.
+* **Automático** - Os ambientes dos programas de sandbox hibernam automaticamente após oito horas de inatividade. A inatividade é definida como a ausência de solicitações para os serviços de criação, visualização e publicação.
+* **Manual** - Como usuário, você pode hibernar manualmente um ambiente de programa de sandbox. Não há necessidade de fazer isso, pois a hibernação ocorre automaticamente, conforme descrito anteriormente.
 
 Pode levar alguns minutos para que os ambientes dos programas de sandbox entrem no modo de hibernação. Os dados são preservados durante a hibernação.
 
-### Uso da hibernação manual {#using-manual-hibernation}
+### Hibernar manualmente um ambiente de programa de sandbox {#using-manual-hibernation}
 
-Você pode hibernar manualmente seu programa de sandbox no Console do desenvolvedor. O acesso ao Console do desenvolvedor para um programa de sandbox está disponível para qualquer usuário do Cloud Manager.
+Você pode hibernar manualmente seu programa de sandbox no Console do desenvolvedor. O acesso à Developer Console para um programa de sandbox está disponível para qualquer usuário do Cloud Manager.
 
-Siga estas etapas para hibernar manualmente os ambientes dos programas de sandbox.
+**Para hibernar manualmente um ambiente de programa de sandbox:**
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no programa que deseja hibernar para exibir seus detalhes.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique em um *programa de sandbox* que você deseja hibernar para exibir seus detalhes.
 
-1. No cartão **Ambientes**, clique no botão de reticências e selecione **Console do desenvolvedor**.
+1. No cartão **Ambientes**, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Developer Console**.
 
    * Consulte [Acesso ao Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obter detalhes adicionais sobre o Developer Console.
 
-   ![Opção de menu do Console do desenvolvedor](assets/developer-console-menu-option.png)
+   ![Opção de menu do Console do desenvolvedor](/help/implementing/cloud-manager/assets/developer-console-menu-option.png)
 
-1. No Console do desenvolvedor, clique em **Hibernar**.
+1. Na página **Developer Console**, clique em **Hibernar**.
 
-   ![Botão Hibernar](assets/hibernate-1.png)
+<!-- UPDATE THESE SCREENSHOTS WHEN NEW AEM DEVELOPER CONSOLE UI IS RELEASED. AS OF OCTOBER 14, 2024, NEW UI IS STILL IN BETA -->
+
+![Botão Hibernar](assets/hibernate-1.png)
 
 1. Clique em **Hibernar** para confirmar a etapa.
 
@@ -54,23 +56,25 @@ Quando a hibernação for bem-sucedida, você verá a notificação de conclusã
 
 ![Confirmação de hibernação](assets/hibernate-4.png)
 
-Na Developer Console, você também pode clicar no link **Ambientes** na navegação estrutural acima da lista suspensa **Pod** para obter uma lista dos ambientes que devem ser hibernados.
+Na Developer Console, clique no link **Ambientes** na navegação estrutural acima da lista suspensa **Pod** para exibir os ambientes disponíveis para hibernação.
 
 ![Lista de ambientes que devem ser hibernados](assets/hibernate-1b.png)
 
-## Cancelamento da hibernação {#de-hibernation-introduction}
+## Cancelar a hibernação manual de um programa de sandbox da Developer Console {#de-hibernation-introduction}
 
-Você pode hibernar manualmente seu programa de sandbox no Console do desenvolvedor.
+Você pode hibernar manualmente seu programa de sandbox na Developer Console.
 
 >[!IMPORTANT]
 >
 >Um usuário com função de **Desenvolvedor** pode cancelar a hibernação de um ambiente de programa de sandbox.
 
+**Para cancelar manualmente a hibernação de um programa de sandbox da Developer Console:**
+
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no programa que deseja cancelar a hibernação para exibir seus detalhes.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique no programa que deseja cancelar a hibernação para exibir seus detalhes.
 
-1. No cartão **Ambientes**, clique no botão de reticências e selecione **Console do desenvolvedor**.
+1. No cartão **Ambientes**, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg e em **Developer Console**.
 
    * Consulte [Acesso ao Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obter detalhes adicionais sobre o Developer Console.
 
@@ -90,8 +94,7 @@ Você pode hibernar manualmente seu programa de sandbox no Console do desenvolve
 
    ![Cancelamento da hibernação concluído](assets/de-hibernation-img4.png)
 
-
-Na Developer Console, você também pode clicar no link **Ambientes** na navegação estrutural acima da lista suspensa **Pod** para obter uma lista dos ambientes que devem ter a hibernação cancelada.
+Na Developer Console, clique no link **Ambientes** na navegação estrutural acima da lista suspensa **Pod** para acessar os ambientes disponíveis para desibernação.
 
 ![Lista de pods hibernados](assets/de-hibernate-1b.png)
 
@@ -99,9 +102,9 @@ Na Developer Console, você também pode clicar no link **Ambientes** na navega�
 
 Qualquer usuário com um perfil de produto que dê acesso ao AEM as a Cloud Service deve poder acessar o **Console do desenvolvedor**, permitindo cancelar a hibernação do ambiente.
 
-## Acesso a um ambiente hibernado {#accessing-hibernated-environment}
+## Acessar um ambiente hibernado {#accessing-hibernated-environment}
 
-Ao fazer qualquer solicitação do navegador para o serviço de autoria, visualização ou publicação de um ambiente hibernado, o usuário encontrará uma página de aterrissagem descrevendo o status hibernado do ambiente, juntamente com um link para o Developer Console, no qual a hibernação do serviço poderá ser cancelada.
+Quando um usuário faz uma solicitação do navegador para o serviço de autoria, visualização ou publicação de um ambiente hibernado, encontra uma página de aterrissagem. Esta página explica o status hibernado do ambiente e fornece um link para o Developer Console para cancelar a hibernação.
 
 ![Página de aterrissagem de um serviço hibernado](assets/de-hibernation-img5.png)
 
@@ -109,15 +112,15 @@ Ao fazer qualquer solicitação do navegador para o serviço de autoria, visuali
 
 Ambientes hibernados ainda permitem a realização de implantações e atualizações manuais do AEM.
 
-* Um usuário pode usar um pipeline para implantar código personalizado em ambientes hibernados. O ambiente permanecerá hibernado e o novo código aparecerá no ambiente após o cancelamento da hibernação.
+* Um usuário pode usar um pipeline para implantar código personalizado em ambientes hibernados. O ambiente permanece hibernado e o novo código aparece no ambiente após o cancelamento da hibernação.
 
-* As atualizações do AEM podem ser aplicadas a ambientes hibernados e podem ser acionadas manualmente pelo Cloud Manager. O ambiente permanecerá hibernado e a nova versão aparecerá no ambiente após o cancelamento da hibernação.
+* As atualizações do AEM podem ser aplicadas a ambientes hibernados e podem ser acionadas manualmente pelo Cloud Manager. O ambiente permanece hibernado e a nova versão aparece no ambiente após o cancelamento da hibernação.
 
 ## Hibernação e exclusão {#hibernation-deletion}
 
 * Os ambientes em um programa de sandbox são hibernados automaticamente após oito horas de inatividade.
-   * A inatividade é definida como o não recebimento de solicitações dos serviços de autoria, visualização ou publicação.
-   * Uma vez hibernados, eles podem ter [hibernado manualmente].(#de-hibernation-introduction)
+   * A inatividade é definida como a ausência de solicitações para os serviços de criação, visualização e publicação.
+   * Uma vez hibernados, eles podem ter [hibernado manualmente](#de-hibernation-introduction).
 * Os programas de sandbox são excluídos após seis meses em modo de hibernação contínua, depois disso, podem ser recriados.
 
 >[!NOTE]

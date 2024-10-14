@@ -1,43 +1,40 @@
 ---
 title: Configuração do projeto
-description: Saiba como os projetos do AEM são compilados no Maven e os padrões que você deve observar ao criar seu próprio projeto.
+description: Saiba como os projetos AEM são criados com o Maven e os padrões que você deve observar ao criar seu próprio projeto.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
 workflow-type: tm+mt
-source-wordcount: '1399'
-ht-degree: 96%
+source-wordcount: '1395'
+ht-degree: 68%
 
 ---
 
 # Configuração do projeto {#project-setup}
 
-Saiba como os projetos do AEM são compilados no Maven e os padrões que você deve observar ao criar seu próprio projeto.
+Saiba como os projetos AEM são criados com o Maven e os padrões que você deve observar ao criar seu próprio projeto.
 
 ## Detalhes de configuração do projeto {#project-setup-details}
 
-Para criar e implantar com sucesso com o Cloud Manager, os projetos do AEM precisam seguir as seguintes diretrizes:
+Para criar e implantar com sucesso com o Cloud Manager, os projetos AEM precisam seguir as seguintes diretrizes:
 
 * Os projetos devem ser compilados usando o [Apache Maven](https://maven.apache.org).
 * Deve haver um arquivo `pom.xml` na raiz do repositório Git. Esse arquivo `pom.xml` pode fazer referência a tantos submódulos (que, por sua vez, podem ter outros submódulos, e assim por diante) quanto forem necessários.
-* Você pode adicionar referências a repositórios de artefatos Maven adicionais em seus arquivos `pom.xml`.
-   * O acesso a [repositórios de artefatos protegidos por senha](#password-protected-maven-repositories) é suportado quando configurado. No entanto, o acesso a repositórios de artefatos protegidos pela rede não é suportado.
-* Pacotes de conteúdo implantáveis são descobertos ao verificar os arquivos de pacote de conteúdo `.zip`, que estão contidos em um diretório chamado `target`.
-   * Qualquer número de submódulos pode produzir pacotes de conteúdo.
-* Os artefatos implantáveis do dispatcher são detectados ao verificar os arquivos `.zip` (também contidos no diretório chamado `target`), que têm diretórios chamados `conf` e `conf.d`.
-* Se houver mais de um pacote de conteúdo, a ordem das implantações não será garantida.
-   * Se uma ordem específica for necessária, as dependências do pacote de conteúdo poderão ser usadas para defini-la.
+* Você pode adicionar referências a repositórios de artefatos Maven adicionais em seus arquivos `pom.xml`. O acesso a [repositórios de artefatos protegidos por senha](#password-protected-maven-repositories) é suportado quando configurado. No entanto, o acesso a repositórios de artefatos protegidos pela rede não é suportado.
+* Pacotes de conteúdo implantáveis são descobertos pela verificação de arquivos de pacote de conteúdo `.zip`, que estão contidos em um diretório chamado `target`. Qualquer número de submódulos pode produzir pacotes de conteúdo.
+* Os artefatos do Dispatcher que podem ser implantados são descobertos ao verificar os arquivos `.zip` (também contidos no diretório chamado `target`), que têm diretórios chamados `conf` e `conf.d`.
+* Se houver mais de um pacote de conteúdo, a ordem das implantações não será garantida. Se uma ordem específica for necessária, as dependências do pacote de conteúdo poderão ser usadas para defini-la.
 * Os pacotes podem ser [ignorados](#skipping-content-packages) durante a implantação.
 
-## Ativação de perfis Maven no Cloud Manager {#activating-maven-profiles-in-cloud-manager}
+## Ativar perfis Maven no Cloud Manager {#activating-maven-profiles-in-cloud-manager}
 
 Em alguns casos limitados, pode ser necessário variar um pouco o processo de compilação ao executá-lo no Cloud Manager, em vez de executá-lo em estações de trabalho de desenvolvedor. Nesses casos, [Perfis Maven](https://maven.apache.org/guides/introduction/introduction-to-profiles.html) podem ser usados para definir como a compilação deve ser diferente em diferentes ambientes, incluindo no Cloud Manager.
 
 A ativação de um perfil do Maven no ambiente de criação do Cloud Manager deve ser feita procurando a `CM_BUILD`[variável de ambiente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Da mesma forma, um perfil para uso somente fora do ambiente de criação do Cloud Manager deve ser feito verificando a ausência dessa variável.
 
-Por exemplo, se você quiser gerar uma mensagem simples apenas quando a compilação for executada no Cloud Manager, você faria isso.
+Por exemplo, se você quiser gerar uma mensagem simples apenas quando o build for executado no Cloud Manager, faça o seguinte:
 
 ```xml
         <profile>
@@ -75,7 +72,7 @@ Por exemplo, se você quiser gerar uma mensagem simples apenas quando a compila�
 >
 >Para testar esse perfil em uma estação de trabalho de desenvolvedor, você pode habilitá-lo na linha de comando (com `-PcmBuild`) ou no ambiente de desenvolvimento integrado (IDE).
 
-Além disso, se você quiser gerar uma mensagem simples apenas quando a compilação for executada fora do Cloud Manager, você faria isso.
+Se você quiser gerar uma mensagem simples somente quando o build for executado fora do Cloud Manager, faça o seguinte:
 
 ```xml
         <profile>
@@ -109,13 +106,13 @@ Além disso, se você quiser gerar uma mensagem simples apenas quando a compila�
         </profile>
 ```
 
-## Suporte ao repositório Maven protegido por senha {#password-protected-maven-repositories}
+## Usar um repositório Maven protegido por senha no Cloud Manager {#password-protected-maven-repositories}
 
 >[!NOTE]
 >
->Os artefatos de um repositório Maven protegido por senha devem ser usados com cuidado, pois o código implantado por meio desse mecanismo não é executado atualmente pelas [regras de qualidade do código](/help/implementing/cloud-manager/custom-code-quality-rules.md) implementadas nos quality gates (portais de qualidade) da Cloud Manager. Por isso, somente devem ser usados em casos raros e para código não vinculado ao AEM. É aconselhável implantar também as fonte Java e todo o código-fonte do projeto junto com o binário.
+>Implante artefatos de repositórios Maven protegidos por senha com cuidado, pois a Cloud Manager não avalia esse código com suas [regras de qualidade do código](/help/implementing/cloud-manager/custom-code-quality-rules.md). Esse método deve ser reservado para situações raras e aplicado apenas a códigos não relacionados ao AEM. O Adobe aconselha incluir as fontes Java e todo o código-fonte do projeto, juntamente com o binário. Isso garante maior transparência e capacidade de manutenção em todo o processo de implantação.
 
-Para usar um repositório do Maven protegido por senha no Cloud Manager:
+**Para usar um repositório Maven protegido por senha no Cloud Manager:**
 
 1. Especifique a senha (e, opcionalmente, o nome de usuário) como uma [variável de pipeline](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) de segredo.
 1. Em seguida, faça referência a esse segredo dentro de um arquivo chamado `.cloudmanager/maven/settings.xml` no repositório Git, que segue o esquema [Arquivo de configurações Maven](https://maven.apache.org/settings.html).
@@ -124,11 +121,11 @@ Quando o processo de compilação do Cloud Manager é iniciado:
 
 * O elemento `<servers>` neste arquivo será mesclado ao arquivo padrão `settings.xml` fornecido pelo Cloud Manager.
    * IDs de servidor iniciando com `adobe` e `cloud-manager` são consideradas reservadas. Não os use em servidores personalizados.
-   * IDs de servidor que não correspondem a um desses prefixos ou ao ID padrão `central` nunca serão espelhados pelo Cloud Manager.
+   * O Cloud Manager espelha somente as IDs de servidor que correspondem a prefixos específicos ou à ID padrão `central`; todas as outras IDs de servidor são excluídas do espelhamento.
 * Com esse arquivo em vigor, o ID do servidor seria referenciado de dentro de um elemento `<repository>` e/ou `<pluginRepository>` dentro do arquivo `pom.xml`.
-* Geralmente, esses elementos `<repository>` e/ou `<pluginRepository>` ficam contidos dentro de um [Perfil específico do Cloud Manager](#activating-maven-profiles-in-cloud-manager), embora isso não seja estritamente necessário.
+* Geralmente, esses elementos `<repository>` e `<pluginRepository>` são incluídos em um [perfil específico do Cloud Manager](#activating-maven-profiles-in-cloud-manager), embora sua inclusão não seja estritamente necessária.
 
-Como exemplo, digamos que o repositório esteja em `https://repository.myco.com/maven2`, o nome de usuário que o Cloud Manager deve usar é `cloudmanager` e a senha é `secretword`. Você seguiria as etapas a seguir.
+Como exemplo, digamos que o repositório esteja em `https://repository.myco.com/maven2`, o nome de usuário que o Cloud Manager deve usar é `cloudmanager` e a senha é `secretword`. Você seguiria as seguintes etapas:
 
 1. Defina a senha como um segredo no pipeline.
 
@@ -136,7 +133,7 @@ Como exemplo, digamos que o repositório esteja em `https://repository.myco.com/
    $ aio cloudmanager:set-pipeline-variables PIPELINEID --secret CUSTOM_MYCO_REPOSITORY_PASSWORD secretword`
    ```
 
-1. Faça referência a isso no arquivo `.cloudmanager/maven/settings.xml`.
+1. Referencie este segredo do arquivo `.cloudmanager/maven/settings.xml` da seguinte maneira:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -193,7 +190,7 @@ Como exemplo, digamos que o repositório esteja em `https://repository.myco.com/
    </profiles>
    ```
 
-### Implantação de fontes {#deploying-sources}
+### Implantar fontes {#deploying-sources}
 
 É uma boa prática implantar as fontes Java juntamente com o binário em um repositório Maven.
 
@@ -216,9 +213,9 @@ Para fazer isso, configure maven-source-plugin em seu projeto.
 
 ### Implantação de fontes de projeto {#deploying-project-sources}
 
-É uma boa prática implantar toda a fonte do projeto juntamente com o binário em um repositório Maven. Assim, será possível recompilar o artefato exato.
+É uma boa prática implantar toda a fonte do projeto juntamente com o binário em um repositório Maven. Isso permite que ele reconstrua o artefato exato.
 
-Para fazer isso, configure maven-assembly-plugin em seu projeto.
+Configure o maven-assembly-plugin em seu projeto da seguinte maneira:
 
 ```xml
          <plugin>
@@ -243,7 +240,7 @@ Para fazer isso, configure maven-assembly-plugin em seu projeto.
 
 ## Omissão de pacotes de conteúdo {#skipping-content-packages}
 
-No Cloud Manager, as compilações podem produzir qualquer número de pacotes de conteúdo. Por uma variedade de motivos, pode ser desejável produzir um pacote de conteúdo, mas não implantá-lo. Um exemplo pode ser a criação de pacotes de conteúdo usados apenas para teste ou que são reempacotados em outra etapa do processo de criação. Ou seja, um subpacote de outro pacote.
+No Cloud Manager, as compilações podem produzir qualquer número de pacotes de conteúdo. Por uma variedade de motivos, pode ser desejável produzir um pacote de conteúdo, mas não implantá-lo. Um exemplo ocorre quando os pacotes de conteúdo são criados exclusivamente para fins de teste ou quando outra etapa do processo de criação os recompila. Ou seja, um subpacote de outro pacote.
 
 Para acomodar esses cenários, o Cloud Manager procurará por uma propriedade chamada `cloudManagerTarget` nas propriedades dos pacotes de conteúdo criados. Se essa propriedade estiver definida como `none`, o pacote será ignorado e não será implantado.
 
@@ -281,13 +278,13 @@ O `content-package-maven-plugin` tem uma configuração semelhante.
 
 ## Reutilização de artefato de compilação {#build-artifact-reuse}
 
-Em muitos casos, um mesmo código é implantado em vários ambientes do AEM. Sempre que possível, o Cloud Manager evitará reconstruir a base de código quando detectar que a mesma Git Commit é usada em várias execuções de pipeline de pilha completa.
+Em muitos casos, um mesmo código é implantado em vários ambientes do AEM. Sempre que possível, o Cloud Manager evitará reconstruir a base de código quando detectar que o mesmo commit do Git é usado em várias execuções de pipeline de pilha completa.
 
-Quando uma execução é iniciada, a confirmação HEAD atual para o pipeline de ramificação é extraída. O hash de confirmação fica visível na interface do usuário e por meio da API. Quando a etapa de compilação for concluída com sucesso, os artefatos resultantes serão armazenados com base nesse hash de confirmação e poderão ser reutilizados em execuções de pipeline subsequentes.
+Quando uma execução é iniciada, é extraído. o commit HEAD atual do pipeline do branch (ramificação). O hash de confirmação fica visível na interface do usuário e por meio da API. Quando a etapa de compilação for concluída com sucesso, os artefatos resultantes serão armazenados com base nesse hash de confirmação e poderão ser reutilizados em execuções de pipeline subsequentes.
 
 Os pacotes serão reutilizados nos pipelines, se estiverem no mesmo programa. Ao procurar pacotes que possam ser reutilizados, o AEM ignora ramificações e reutiliza artefatos entre ramificações.
 
-Quando ocorre uma reutilização, as etapas de compilação e qualidade do código são efetivamente substituídas pelos resultados da execução original. O arquivo de log da etapa de compilação listará os artefatos e as informações de execução que foram usadas originalmente para criá-los.
+Quando ocorre uma reutilização, as etapas de compilação e qualidade do código são efetivamente substituídas pelos resultados da execução original. O arquivo de log da etapa do build listará os artefatos e as informações de execução que foram usadas originalmente para criá-los.
 
 Veja a seguir um exemplo do log gerado.
 
@@ -310,8 +307,8 @@ Considere que seu programa tem dois pipelines de desenvolvimento:
 
 Ambas as ramificações estão na mesma ID de confirmação.
 
-1. A execução do Pipeline 1 primeiro criará os pacotes normalmente.
-1. Em seguida, a execução do Pipeline 2 reutilizará os pacotes criados pelo Pipeline 1.
+1. A execução do Pipeline 1 primeiro cria os pacotes normalmente.
+1. Em seguida, a execução do Pipeline 2 reutiliza os pacotes criados pelo Pipeline 1.
 
 #### Exemplo 2 {#example-2}
 
@@ -323,13 +320,13 @@ Considere que seu programa tem duas ramificações:
 Ambas as ramificações têm a mesma ID de confirmação.
 
 1. Um pipeline de desenvolvimento compila e executa `foo`.
-1. Posteriormente, um pipeline de produção compila e executa `bar`.
+1. Posteriormente, um pipeline de produção criará e executará `bar`.
 
 Nesse caso, o artefato de `foo` será reutilizado para o pipeline de produção desde que o mesmo hash de confirmação seja identificado.
 
 ### Recusa {#opting-out}
 
-Se desejado, o comportamento de reutilização pode ser desativado para pipelines específicos, definindo a variável de pipeline `CM_DISABLE_BUILD_REUSE` como `true`. Se essa variável estiver definida, o hash de confirmação ainda será extraído e os artefatos resultantes serão armazenados para uso posterior, mas os artefatos armazenados anteriormente não serão reutilizados. Para entender esse comportamento, considere o cenário a seguir.
+Se desejado, o comportamento de reutilização pode ser desativado para pipelines específicos, definindo a variável de pipeline `CM_DISABLE_BUILD_REUSE` como `true`. Se essa variável for definida, o sistema extrairá o hash de confirmação e armazenará os artefatos resultantes para uso posterior, mas ignorará a reutilização de quaisquer artefatos armazenados anteriormente. Para entender esse comportamento, considere o seguinte exemplo:
 
 1. Um novo pipeline é criado.
 1. O pipeline é executado (execução nº 1) e a confirmação HEAD atual é `becdddb`. A execução é bem-sucedida e os artefatos resultantes são armazenados.
@@ -343,6 +340,7 @@ Se desejado, o comportamento de reutilização pode ser desativado para pipeline
 
 * Os artefatos de compilação não são reutilizados em diferentes programas, independentemente de o hash de confirmação ser idêntico.
 * Os artefatos de compilação são reutilizados em um mesmo programa, mesmo que a ramificação e/ou o pipeline sejam diferentes.
-* O [Manuseio de versão Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) substitui a versão do projeto somente nos pipelines de produção. Portanto, se a mesmo confirmação for usada em uma execução de implantação de desenvolvimento e em uma execução de pipeline de produção e o pipeline de implantação de desenvolvimento for executado primeiro, as versões serão implantadas no preparo e na produção sem serem alteradas. No entanto, uma tag ainda será criada nesse caso.
+* [O manuseio de versão do Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) substitui a versão do projeto somente nos pipelines de produção.
+Se a mesma confirmação for usada para uma implantação de desenvolvimento e um pipeline de produção, e a implantação de desenvolvimento for executada primeiro, as versões serão implantadas no preparo e na produção inalteradas. No entanto, ainda será criada uma tag nesse caso.
 * Se a recuperação dos artefatos armazenados não for bem-sucedida, a etapa de criação será executada como se nenhum artefato tivesse sido armazenado.
 * Variáveis de pipeline diferentes de `CM_DISABLE_BUILD_REUSE` não são consideradas quando o Cloud Manager decide reutilizar artefatos de build criados anteriormente.

@@ -5,9 +5,9 @@ exl-id: ecd8c1ca-873f-4e73-ad73-b5f7561eb109
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '376'
 ht-degree: 3%
 
 ---
@@ -42,17 +42,17 @@ O painel apresenta uma pontuação geral para o desempenho da CDN, juntamente co
 
 ![Painel de desempenho da CDN](assets/cdn-performance-dashboard.png)
 
-Para obter detalhes sobre o desempenho da CDN, bem como sugestões sobre como melhorá-la, toque ou clique em **Exibir tendência**.
+Para obter detalhes sobre o desempenho da CDN e sugestões sobre como melhorá-la, clique em **Exibir tendência**.
 
 ![Tendência de desempenho](assets/cdn-performance-trend.png)
 
-Toque ou clique em **Exibir** abaixo do gráfico para alterar o período do gráfico.
+Clique em **Exibir** abaixo do gráfico para alterar o período do gráfico.
 
 Para obter sugestões sobre como melhorar o desempenho da CDN, selecione a guia **Recommendations**.
 
 ![Recomendações da CDN](assets/cdn-performance-recommendations.png)
 
-Toque ou clique na divisa ao lado de qualquer recomendação na lista para exibir detalhes sobre as etapas a serem executadas para melhorar e a causa do problema.
+Clique na divisa ao lado de qualquer recomendação na lista para exibir detalhes sobre as etapas a serem executadas para melhorar e a causa do problema.
 
 ## Definição de ocorrência de cache {#cache-hit}
 

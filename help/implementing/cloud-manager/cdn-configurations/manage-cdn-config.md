@@ -4,10 +4,10 @@ description: Saiba mais sobre como usar o Cloud Manager para editar e atualizar,
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 02f9b035320bb4b6219d5ed4273554259fc09e59
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 8%
+source-wordcount: '797'
+ht-degree: 9%
 
 ---
 
@@ -31,7 +31,7 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 **Para editar uma configuração de CDN na página Configurações de CDN:**
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
-1. No painel lateral, em **Serviços**, clique em ![Ícone de rede social](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Configurações de CDN**.
+1. No menu à esquerda, em **Serviços**, clique em ![Ícone de rede social](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SocialNetwork_18_N.svg) **Configurações de CDN**.
 1. Na tabela **Configurações de CDN**, clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) no final de uma linha cuja configuração de CDN você deseja atualizar.
 
    ![Editando uma configuração de CDN](/help/implementing/cloud-manager/assets/cdn-config-edit.png)
@@ -87,13 +87,11 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
 
-1. No painel lateral esquerdo, em **Serviços**, clique em **Configurações de CDN**.
+1. No menu à esquerda, em **Serviços**, clique em **Configurações de CDN**.
 
-1. Na tabela Configurações de CDN, clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) no final de uma linha que corresponde a um CDN que você deseja remover.
+1. Na tabela Configurações de CDN, clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) no final de uma linha que corresponde a um CDN que você deseja remover e clique em **Excluir**.
 
    ![Excluindo uma configuração de CDN](/help/implementing/cloud-manager/assets/cdn-config-delete.png)
-
-1. No menu suspenso, clique em **Excluir**.
 
 1. Na caixa de diálogo **Excluir configuração da CDN**, clique em **Excluir**.
 
@@ -112,11 +110,9 @@ As etapas para excluir uma configuração CDN da página **Ambientes** são quas
 
 1. Na página **Ambientes**, selecione um ambiente de interesse.
 
-1. Na página de detalhes do ambiente, no agrupamento **Configurações de CDN**, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) que corresponde à configuração de CDN que você deseja remover.
+1. Na página de detalhes do ambiente, no agrupamento **Configurações de CDN**, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) que corresponde à configuração de CDN que você deseja remover e clique em **Excluir**.
 
    ![Grupo de configuração de CDN em uma página de detalhes do ambiente](/help/implementing/cloud-manager/assets/cdn/environments-cdn-config.png)
-
-1. No menu suspenso, clique em **Excluir**.
 
 1. Na caixa de diálogo **Excluir configuração da CDN**, clique em **Excluir**.
 

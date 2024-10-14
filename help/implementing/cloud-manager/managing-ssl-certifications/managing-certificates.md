@@ -5,10 +5,10 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f12392075b71b219bf449f585f63561167ddada9
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 5%
+source-wordcount: '1029'
+ht-degree: 6%
 
 ---
 
@@ -46,7 +46,7 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 1. No canto superior esquerdo da página, clique em ![Mostrar ícone de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu lateral.
 1. No cabeçalho **Serviços**, clique em ![Ícone Bloquear fechado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
-1. Na linha do certificado gerenciado pelo cliente expirado que você deseja atualizar, clique no botão de reticências na extremidade direita e selecione **Exibir e Atualizar**.
+1. Na linha do certificado gerenciado pelo cliente expirado que você deseja atualizar, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg na extremidade direita e em **Exibir e Atualizar**.
 
    ![Atualizar uma certificação SSL gerenciada pelo cliente expirada](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -117,9 +117,7 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 
 1. No cabeçalho **Serviços**, clique em ![Ícone Bloquear fechado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
 
-1. Na página Certificados SSL, na linha da tabela do certificado que você deseja excluir, clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na extremidade direita.
-
-1. No menu suspenso, clique em **Excluir**.
+1. Na página Certificados SSL, na linha da tabela do certificado que você deseja excluir, clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na extremidade direita e em **Excluir**.
 
    Se **Excluir** tiver um ícone de informações como visto na imagem a seguir, consulte a Observação acima.
 

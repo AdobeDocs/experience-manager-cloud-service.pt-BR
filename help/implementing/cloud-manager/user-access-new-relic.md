@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9cde6e63ec452161dbeb1e1bfb10c75f89e2692c
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '1836'
-ht-degree: 64%
+source-wordcount: '1825'
+ht-degree: 59%
 
 ---
 
@@ -47,13 +47,13 @@ Para um programa recém-criado, uma subconta do New Relic One é criada para voc
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, toque ou clique no programa para o qual deseja gerenciar seus usuários do New Relic One.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique no programa para o qual você deseja gerenciar seus usuários do New Relic One.
 
-1. Na parte inferior do cartão **Ambientes** na página de visão geral do programa, clique no botão de reticências e selecione **Ativar New Relic**.
+1. Na parte inferior do cartão **Ambientes** na página de visão geral do programa, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg e selecione **Ativar New Relic**.
 
    ![Gerenciar usuários](assets/newrelic-activate-sub-account.png)
 
-   * Também é possível acessar a opção **Gerenciar usuários** usando do botão de reticências na parte superior da tela **Ambientes** do seu programa.
+   * Você também pode acessar a opção **Gerenciar usuários** clicando em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg na parte superior da tela **Ambientes** do seu programa.
 
 1. [Execute um pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines) para o mesmo ambiente para concluir com êxito a ativação da subconta.
 
@@ -71,11 +71,11 @@ Siga estas etapas para definir os usuários da sua subconta da New Relic One ass
 
 1. Clique no programa para o qual você deseja gerenciar os usuários do New Relic One.
 
-1. Na parte inferior do cartão **Ambientes** na página de visão geral do programa, clique no botão de reticências e selecione **Gerenciar usuários**.
+1. Na parte inferior do cartão **Ambientes** na página de visão geral do programa, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg e selecione **Gerenciar usuários**.
 
    ![Gerenciar usuários](assets/newrelic-manage-users.png)
 
-   * Também é possível acessar a opção **Gerenciar usuários** usando do botão de reticências na parte superior da tela **Ambientes** do seu programa.
+   * Você também pode acessar a opção **Gerenciar usuários** clicando em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg na parte superior da tela **Ambientes** do seu programa.
 
 1. Na caixa de diálogo **Gerenciar usuários do New Relic**, digite o nome e o sobrenome do usuário que deseja adicionar e clique no botão **Adicionar**. Repita essa etapa para todos os usuários que deseja adicionar.
 
@@ -121,11 +121,11 @@ Depois de [ativar sua conta do New Relic](#activate-account), você poderá aces
 
 1. Clique no programa para o qual deseja acessar o New Relic One.
 
-1. Na parte inferior do cartão **Ambientes** na página de visão geral do programa, clique no botão de reticências e selecione **Abrir New Relic**.
+1. Na parte inferior do cartão **Ambientes** na página de visão geral do programa, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg e selecione **Abrir New Relic**.
 
    ![Gerenciar usuários](assets/newrelic-access.png)
 
-   * Também é possível acessar a New Relic usando do botão de reticências na parte superior da tela **Ambientes** do seu programa.
+   * Você também pode acessar o New Relic clicando em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg na parte superior da tela **Ambientes** do seu programa.
 
 1. Na nova guia do navegador que é aberta, faça logon na New Relic One.
 

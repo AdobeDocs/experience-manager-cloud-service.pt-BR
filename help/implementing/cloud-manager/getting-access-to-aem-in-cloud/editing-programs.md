@@ -5,10 +5,10 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 5d6d3374f2dd95728b2d3ed0cf6fab4092f73568
+source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 29%
+source-wordcount: '427'
+ht-degree: 24%
 
 ---
 
@@ -70,7 +70,7 @@ A exclusão de um programa de sandbox remove todos os ambientes e pipelines asso
 
    ![Opção Excluir programa](assets/delete-sandbox1.png)
 
-Como alternativa, você pode clicar no botão de reticências no cartão do programa na página de visão geral do Cloud Manager e selecionar **Excluir programa**.
+Como alternativa, você pode clicar em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg no cartão do programa na página de visão geral do Cloud Manager e selecionar **Excluir programa**.
 
 ![Excluir sandbox do cartão de programa](assets/delete-sandbox2.png)
 
