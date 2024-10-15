@@ -3,9 +3,9 @@ title: Restringir a entrega de ativos com Dynamic Media com recursos OpenAPI
 description: Saiba como restringir a entrega de ativos com recursos OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: 6e9fa8301fba9cab1a185bf2d81917e45acfe3a3
+source-git-commit: 03e13d29629c5e0305401179502cd1fc24f9ad75
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,4 @@ Nos serviços de autor do AEM Cloud Service, bem como no Seletor de ativos, o To
 
 ### Entrega para provedores de identidade personalizados no serviço Publish {#delivery-custom-identity-provider}
 
-O AEM Sites, o AEM Assets e o Dynamic Media AEM com licenças OpenAPI podem ser usados em conjunto, e a entrega restrita de ativos pode ser configurada em sites entregues pelo Publish ou pelos serviços de Pré-visualização.
-Se os serviços Publish e de Visualização do AEM Sites estiverem configurados para usar um [provedor de identidade personalizado (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), o grupo que deve ter acesso aos ativos protegidos no poderá ser incluído no atributo `groupMembership` durante o processo de instalação.\
-Quando um usuário do site faz logon no provedor de identidade personalizado e acessa o site hospedado no serviço Publish/Preview, o atributo `groupMembership` é lido e um cookie seguro é construído e entregue no site após a autenticação bem-sucedida. Este cookie seguro é incluído em todas as solicitações subsequentes para entregar o conteúdo do site ao user-agent.
-
-Quando um ativo seguro é solicitado em uma página, os níveis de AEM Publish e Pré-visualização extraem o material de autorização do cookie seguro e validam o acesso. Se houver uma correspondência, o ativo será exibido.
-
->[!NOTE]
->
-> No [tíquete de suporte para ativar o Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities), mencione a entrega restrita no caso de uso. A engenharia de Adobe ajudará com os esclarecimentos necessários e/ou configurará o processo para entrega restrita.
+O AEM Sites, o AEM Assets e o Dynamic Media AEM com licenças OpenAPI podem ser usados juntos, permitindo a entrega restrita de ativos a serem configurados em sites hospedados no Publish ou no serviço de Pré-visualização. O fluxo de entrega seguro usa cookies do navegador para estabelecer o acesso do usuário. Ter um domínio personalizado para a camada de entrega que é o subdomínio do domínio de publicação é um pré-requisito para a implementação deste caso de uso. Caso os serviços Publish e de Visualização do AEM Sites estejam configurados para usar um [provedor de identidade personalizado (IdP)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/authentication/saml-2-0), um novo cookie chamado `delivery-token`, que encapsula a associação de grupo do usuário, deverá ser definido na autenticação do usuário posterior do domínio de publicação. O nível de entrega extrai o material de autorização do cookie seguro e valida o acesso. Registre um [tíquete de suporte da empresa](/help/assets/dynamic-media-open-apis-overview.md#how-to-enable-the-dynamic-media-with-openapi-capabilities) para obter mais detalhes.
