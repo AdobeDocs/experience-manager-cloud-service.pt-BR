@@ -4,9 +4,9 @@ description: Saiba como usar Ambientes de desenvolvimento rápido para iteraçõ
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: fd57437b16a87de2b279b0f8bc10c12a7d3f721a
 workflow-type: tm+mt
-source-wordcount: '4241'
+source-wordcount: '4537'
 ht-degree: 3%
 
 ---
@@ -94,10 +94,38 @@ Depois de ter adicionado um RDE para seu programa usando o Cloud Manager, você 
    aio plugins:update
    ```
 
-1. Configure o plug-in RDE para usar sua organização, programa e ambiente. O comando de configuração abaixo fornecerá interativamente ao usuário uma lista de programas em sua organização e mostrará os ambientes RDE nesse programa para escolher.
+1. Faça logon usando o cliente aio.
 
    ```
    aio login
+   ```
+   As informações de logon (token) são armazenadas na configuração global do aio e, portanto, são compatíveis apenas com um logon e uma organização. Caso deseje usar vários RDEs que precisam de logons ou organizações diferentes, siga o exemplo abaixo introduzindo contextos.
+
+   <details><summary>Siga este exemplo para configurar um contexto local para um de seus logons RDE</summary>
+   Para armazenar as informações de logon localmente em um arquivo .aio no diretório atual em um contexto específico, siga estas etapas. Um contexto também é uma maneira inteligente de configurar um ambiente ou script de CI/CD.  Para usar esse recurso, use pelo menos a versão aio-cli 10.3.1. Atualize-o usando "npm install -g @adobe/aio-cli"
+
+   Vamos criar um contexto chamado &#39;mycontext&#39;, que definimos como o contexto padrão usando o plug-in de autenticação antes de chamar o comando de logon.
+
+   ```
+   aio config set --json -l "ims.contexts.mycontext" "{ cli.bare-output: false }"
+   aio auth ctx -s mycontext
+   aio login --no-open
+   ```
+
+
+   >[!NOTE]
+   > O comando de logon com a opção `--no-open` resultará em uma URL no terminal em vez de abrir o navegador padrão. Assim você pode copiar e abri-lo com uma janela **incógnita** do seu navegador. Dessa forma, a sessão conectada no momento na janela normal do navegador permanecerá intocada e você poderá garantir o uso do logon e da organização específicos necessários para o contexto.
+
+   O primeiro comando cria uma nova configuração de contexto de logon, chamada `mycontext`, no arquivo de configuração `.aio` local (o arquivo é criado, se necessário). O segundo comando define o contexto `mycontext` como o contexto &quot;atual&quot;, ou seja, o padrão.
+
+   Com essa configuração em vigor, o comando de logon armazena automaticamente os tokens de logon no contexto `mycontext` e, portanto, os mantém locais.
+
+   Vários contextos podem ser gerenciados ao manter as configurações locais em várias pastas. Como alternativa, também é possível definir vários contextos em um único arquivo de configuração e alternar entre eles alterando o contexto &quot;atual&quot;.
+   </details>
+
+1. Configure o plug-in RDE para usar sua organização, programa e ambiente. O comando de configuração abaixo fornecerá interativamente ao usuário uma lista de programas em sua organização e mostrará os ambientes RDE nesse programa para escolher.
+
+   ```
    aio aem:rde:setup
    ```
 
