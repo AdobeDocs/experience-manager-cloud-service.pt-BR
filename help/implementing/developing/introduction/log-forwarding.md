@@ -4,9 +4,9 @@ description: Saiba mais sobre como encaminhar logs para o Splunk e outros fornec
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3aafe41554fd86637e34687660fc48ea817b01d7
+source-git-commit: e450a58587ca4d7dff2ab229f522c7e7d4f3f20c
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1663'
 ht-degree: 0%
 
 ---
@@ -304,7 +304,13 @@ data:
 
 Considerações:
 
-* por padrão, a porta é 443. Opcionalmente, ele pode ser substituído por uma propriedade chamada `port`.
+* A porta padrão é 443. Opcionalmente, ele pode ser substituído por uma propriedade chamada `port`.
+* Dependendo do log específico, o campo sourcetype terá um dos seguintes valores: *aemaccess*, *aemerror*,
+  *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+
+>[!NOTE]
+>
+> [Ao migrar](#legacy-migration) do encaminhamento de logs herdado para este modelo de autoatendimento, os valores do campo `sourcetype` enviados para o índice do Splunk podem ter sido alterados, portanto, ajuste-os adequadamente.
 
 
 <!--
@@ -385,6 +391,10 @@ Os clientes que foram configurados dessa maneira pelo Adobe são bem-vindos para
 Quando estiver pronto para migrar, basta configurar o arquivo YAML conforme descrito nas seções anteriores. Use o pipeline de configuração do Cloud Manager para implantar em cada um dos ambientes em que a configuração deve ser aplicada.
 
 Recomenda-se, mas não é necessário, que uma configuração seja implantada em todos os ambientes para que todos estejam sob controle de autoatendimento. Caso contrário, você pode esquecer quais ambientes foram configurados pelo Adobe e os configurados de forma automatizada.
+
+>[!NOTE]
+>
+>Os valores do campo `sourcetype` enviados para o índice do Splunk podem ter sido alterados, portanto, ajuste de acordo.
 
 >[!NOTE]
 >
