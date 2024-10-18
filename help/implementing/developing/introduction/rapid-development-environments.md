@@ -4,7 +4,7 @@ description: Saiba como usar Ambientes de desenvolvimento rápido para iteraçõ
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3c1cbf0930799c2919696465931bf7c1f76bf8bb
+source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
 workflow-type: tm+mt
 source-wordcount: '4794'
 ht-degree: 3%
@@ -99,6 +99,7 @@ Depois de ter adicionado um RDE para seu programa usando o Cloud Manager, você 
    ```
    aio login
    ```
+
    As informações de logon (token) são armazenadas na configuração global do aio e, portanto, são compatíveis apenas com um logon e uma organização. Caso deseje usar vários RDEs que precisam de logons ou organizações diferentes, siga o exemplo abaixo introduzindo contextos.
 
    <details><summary>Siga este exemplo para configurar um contexto local para um de seus logons RDE</summary>
@@ -111,7 +112,6 @@ Depois de ter adicionado um RDE para seu programa usando o Cloud Manager, você 
    aio auth ctx -s mycontext
    aio login --no-open
    ```
-
 
    >[!NOTE]
    > O comando de logon com a opção `--no-open` resultará em uma URL no terminal em vez de abrir o navegador padrão. Assim você pode copiar e abri-lo com uma janela **incógnita** do seu navegador. Dessa forma, a sessão conectada no momento na janela normal do navegador permanecerá intocada e você poderá garantir o uso do logon e da organização específicos necessários para o contexto.
@@ -153,8 +153,8 @@ Escolha `yes` para
 Depois que a configuração local ou global for selecionada, o comando de configuração tentará ler a ID da organização no logon atual e, em seguida, ler os programas da organização. Caso a organização não possa ser encontrada, você poderá inseri-la manualmente junto com algumas orientações.
 
 ```
- Selected only organization: XYXYXYXYXYXYXYXXYY
- retrieving programs of your organization ...
+Selected only organization: XYXYXYXYXYXYXYXXYY
+retrieving programs of your organization ...
 ```
 
 Depois que os programas forem recuperados, o usuário poderá selecionar na lista e também digitar para filtrar.
@@ -248,7 +248,6 @@ No entanto, com uma coordenação cuidadosa, é possível que mais de um desenvo
 * Para obter ajuda detalhada sobre um comando, digite:
 
   `aio aem rde <command> --help`
-
 
 ### Sinalizadores globais {#global-flags}
 
@@ -507,7 +506,7 @@ O exemplo a seguir ilustra como rastrear a camada do autor, com um pacote defini
 >
 >Se você vir o erro `RDECLI:UNEXPECTED_API_ERROR` ao reproduzir os comandos de logs do serviço de autor, redefina seu ambiente e tente novamente. Esse erro será lançado se a última operação de redefinição for anterior ao final de maio de 2024.
 >
-```
+>```
 >aio aem:rde:reset
 >```
 
@@ -683,6 +682,7 @@ A maioria dos comandos dá suporte ao sinalizador global ```--json``` que suprim
   }
 }
 ```
+
 </details>
 
 ### Instalar {#install}
@@ -723,6 +723,7 @@ A maioria dos comandos dá suporte ao sinalizador global ```--json``` que suprim
   ]
 }
 ```
+
 </details>
 
 ### Excluir {#delete}
@@ -901,6 +902,7 @@ A maioria dos comandos dá suporte ao sinalizador global ```--json``` que suprim
   ]
 }
 ```
+
 </details>
 
 ### Redefinir {#reset}
@@ -931,6 +933,7 @@ A maioria dos comandos dá suporte ao sinalizador global ```--json``` que suprim
   "status": "reset"
 }
 ```
+
 </details>
 
 ### Reiniciar {#restart}
