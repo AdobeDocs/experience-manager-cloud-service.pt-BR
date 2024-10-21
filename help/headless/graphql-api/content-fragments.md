@@ -4,10 +4,10 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4492536120989423b639bbb75105568a9c328507
+source-git-commit: 32803bc4304e55ccf0a618236e482cb42aa88e27
 workflow-type: tm+mt
-source-wordcount: '5469'
-ht-degree: 80%
+source-wordcount: '5557'
+ht-degree: 78%
 
 ---
 
@@ -929,6 +929,15 @@ O GraphQL para fragmentos de conteúdo AEM permite solicitar uma URL para um ati
 A solução no GraphQL significa que você pode:
 
 * usar `_dmS7Url` na referência `ImageRef`
+   * consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Referência da imagem](#sample-query-dynamic-media-asset-delivery-by-url-imageref)
+* usar `_dmS7Url` em várias referências; `ImageRef`, `MultimediaRef` e `DocumentRef`
+   * consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Várias Referências](#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+* usar `_dmS7Url` com a funcionalidade Corte inteligente
+
+   * A propriedade `_smartCrops` expõe as configurações do Corte inteligente disponíveis para um ativo específico
+
+   * consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL - com Recorte inteligente](#sample-query-dynamic-media-asset-delivery-by-url-smart-crop)
 
 >[!NOTE]
 >
@@ -1011,6 +1020,36 @@ query allTeams {
     }
   }
 }
+```
+
+### Exemplo de consulta para entrega de ativos do Dynamic Media por URL - com Recorte inteligente {#sample-query-dynamic-media-asset-delivery-by-url-smart-crop}
+
+Este é um exemplo de consulta:
+
+* para expor as configurações do Corte inteligente disponíveis para os ativos solicitados
+
+```graphql
+query allTeams {
+  teamList {
+    items {
+      title
+      teamMembers {
+        profilePicture {
+          ... on ImageRef {
+            height
+            width
+            _dmS7Url
+            _smartCrops {
+              width
+              height
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+} 
 ```
 
 ## GraphQL para AEM - resumo das extensões {#graphql-extensions}
