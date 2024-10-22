@@ -1,6 +1,6 @@
 ---
 title: Regras de qualidade do código personalizado
-description: Saiba mais sobre as regras personalizadas de qualidade do código da Cloud Manager, com base nas práticas recomendadas da engenharia da Adobe Experience Manager, para garantir código de alta qualidade por meio de testes completos.
+description: Saiba mais sobre as regras de qualidade de código personalizadas do Cloud Manager, com base nas práticas recomendadas de engenharia do Adobe Experience Manager, para garantir um código de alta qualidade por meio de testes completos.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
 solution: Experience Manager
 feature: Cloud Manager, Developing
@@ -8,7 +8,7 @@ role: Admin, Architect, Developer
 source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
 workflow-type: tm+mt
 source-wordcount: '4421'
-ht-degree: 66%
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_customcodequalityrules"
 >title="Regras de qualidade do código personalizado"
->abstract="Saiba mais sobre as regras personalizadas de qualidade do código da Cloud Manager, com base nas práticas recomendadas da engenharia da Adobe Experience Manager, para garantir código de alta qualidade por meio de testes completos."
+>abstract="Saiba mais sobre as regras de qualidade de código personalizadas do Cloud Manager, com base nas práticas recomendadas de engenharia do Adobe Experience Manager, para garantir um código de alta qualidade por meio de testes completos."
 
 Saiba mais sobre as regras personalizadas de qualidade do código da Cloud Manager, com base nas práticas recomendadas da engenharia da Adobe Experience Manager, para garantir código de alta qualidade por meio de testes completos. Consulte também [teste de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md).
 
