@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 7a370ee0ab77046d128ae260af2575d50e655254
+source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
 workflow-type: tm+mt
-source-wordcount: '10490'
+source-wordcount: '10543'
 ht-degree: 1%
 
 ---
@@ -440,7 +440,7 @@ Para que os relatórios de vídeo funcionem corretamente, uma ID do conjunto de 
 
 **Para exibir relatórios de vídeo:**
 
-1. No canto superior esquerdo do Experience Manager, selecione o logotipo Experience Manager. No painel à esquerda, vá para **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Assets]** > **[!UICONTROL Relatórios de Vídeo]**.
+1. No canto superior esquerdo do Experience Manager, selecione o logotipo Experience Manager. No painel à esquerda, clique em ![Ícone de martelo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Hammer_18_N.svg) > **[!UICONTROL Assets]** > **[!UICONTROL Relatórios de vídeo]**.
 1. Na página Relatórios de vídeo, siga um destes procedimentos:
 
    * Próximo ao canto superior direito, selecione o ícone **[!UICONTROL Atualizar relatório de vídeo]**.
@@ -532,7 +532,7 @@ Ativar qualquer um dos três recursos acima ativa todos eles. Portanto, se você
 
 | Recurso | Descrição |
 | --- | --- |
-| TRAÇO | DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre DASH ou HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com a alternância automática entre players quando **[!UICONTROL auto]** estiver selecionado como o tipo de reprodução na predefinição do Visualizador.<br>Alguns dos principais benefícios da habilitação de DASH em sua conta são:<br>·Vídeo de fluxo de pacote DASH para transmissão adaptável da taxa de bits. Esse método leva a uma maior eficiência do delivery. A transmissão adaptável garante a melhor experiência de visualização para seus clientes.<br>·A transmissão otimizada do navegador com Dynamic Media players alterna entre a transmissão HLS e DASH para garantir a melhor qualidade do serviço. O reprodutor de vídeo alterna automaticamente para HLS quando um navegador Safari é usado.<br>·Você pode configurar seu método de streaming preferido (HLS ou DASH) editando a predefinição do visualizador de vídeo.<br>·A codificação de vídeo otimizada garante que nenhum armazenamento adicional seja usado ao habilitar o recurso DASH. Um único conjunto de codificações de vídeo é criado para HLS e DASH para otimizar os custos de armazenamento de vídeo.<br>·Ajuda a tornar a entrega de vídeo mais acessível para seus clientes.<br>·Obter o URL de transmissão por meio de APIs também. |
+| TRAÇO | DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre DASH ou HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com a alternância automática entre players quando **[!UICONTROL auto]** estiver selecionado como o tipo de reprodução na predefinição do Visualizador.<br>Estes são alguns dos principais benefícios da habilitação de DASH em sua conta:<ul><li>Vídeo de fluxo DASH do pacote para transmissão adaptável da taxa de bits. Esse método leva a uma maior eficiência do delivery. A transmissão adaptável garante a melhor experiência de visualização para seus clientes.</li><li>A transmissão otimizada do navegador com players do Dynamic Media alterna entre a transmissão HLS e DASH para garantir a melhor qualidade do serviço. O reprodutor de vídeo alterna automaticamente para HLS quando um navegador Safari é usado.</li><li>Você pode configurar seu método de transmissão preferido (HLS ou DASH) editando a predefinição do visualizador de vídeo.</li><li>A codificação otimizada de vídeo garante que nenhum armazenamento adicional seja usado ao ativar o recurso DASH. Um único conjunto de codificações de vídeo é criado para HLS e DASH para otimizar os custos de armazenamento de vídeo.</li><li>Ajuda a tornar a entrega de vídeo mais acessível para os clientes.</li><li>Obtenha o URL de transmissão por meio de APIs também.</li></ul> |
 | Legendas múltiplas e faixas de áudio | Você pode se beneficiar com o suporte a múltiplas legendas e faixas de áudio ativadas automaticamente. Após a ativação, todos os vídeos subsequentes carregados serão processados com uma nova arquitetura de back-end que inclui suporte para adicionar várias legendas e faixas de áudio aos vídeos. |
 | Legendas geradas por IA (disponibilidade limitada) | Crie legendas para seus vídeos viabilizados pela IA. Com a IA, ele cria a transcrição do vídeo e a converte em legendas. Até mesmo a linha do tempo está definida. |
 
@@ -554,7 +554,7 @@ Ativar qualquer um dos três recursos acima ativa todos eles. Portanto, se você
 1. O Suporte ao cliente do Adobe adiciona você à Lista de espera do cliente com base na ordem em que as solicitações são enviadas.
 1. Quando o Adobe estiver pronto para lidar com sua solicitação, o Suporte ao cliente entrará em contato com você para coordenar e definir uma data limite para ativação.
 1. O Suporte ao cliente do Adobe o notificará após a conclusão.
-1. Agora, siga um destes procedimentos:
+1. Agora, execute um ou mais dos procedimentos a seguir:
 
    * Crie sua [predefinição do visualizador de vídeo](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) como de costume.
    * Crie seu [perfil de vídeo](/help/assets/dynamic-media/video-profiles.md) como de costume.
@@ -708,8 +708,8 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
 
 1. [Carregue seu vídeo principal em uma pasta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) que já tenha um perfil de vídeo atribuído a ela.
 1. Navegue até o ativo de vídeo carregado que você deseja adicionar várias legendas e faixas de áudio.
-1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
-1. Na barra de ferramentas, clique no ícone Propriedades (um círculo com um &quot;i&quot;).
+1. No modo de seleção de ativos, a partir de ![Exibir ícone de cartão](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Exibição de Cartão) ou ![Exibir ícone de Lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Exibição de Lista), selecione o ativo de vídeo.
+1. Na barra de ferramentas, clique em ![ícone Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriedades.
    ![Ativo de vídeo selecionado com marca de seleção sobre a imagem em miniatura do vídeo e as Propriedades de exibição realçadas na barra de ferramentas.](/help/assets/dynamic-media/assets/msma-selectedasset-propertiesbutton.png)*Ativo de vídeo selecionado no Modo de Exibição de Cartão.*
 1. Na página Propriedades do vídeo, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
 
@@ -727,7 +727,7 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
 1. Para adicionar uma ou mais faixas de áudio a um vídeo, faça o seguinte:
    1. Selecione **[!UICONTROL Carregar Faixas De Áudio]**.
    1. Navegue até um ou mais arquivos .mp3, selecione-os e abra-os.
-   1. Para que as faixas de áudio fiquem visíveis na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia, você deve adicionar os detalhes necessários sobre cada arquivo de faixa de áudio. Isso garante que todas as faixas de áudio sejam listadas e acessíveis corretamente. Selecione o ícone de lápis à direita de um nome de arquivo de faixa de áudio. Na caixa de diálogo **Editar faixa de áudio**, insira os seguintes detalhes necessários:
+   1. Para que as faixas de áudio fiquem visíveis na lista pop-up **[!UICONTROL Selecionar áudio ou legenda]** no reprodutor de mídia, você deve adicionar os detalhes necessários sobre cada arquivo de faixa de áudio. Isso garante que todas as faixas de áudio sejam listadas e acessíveis corretamente. Clique no ![ícone Desenhar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) à direita do nome de um arquivo de faixa de áudio. Na caixa de diálogo **Editar faixa de áudio**, insira os seguintes detalhes necessários:
 
       | Metadados da faixa de áudio | Descrição |
       |--- |--- |
@@ -752,13 +752,13 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
    | **Opção 3** | O texto em um arquivo de legenda (`.vtt`) precisa ser corrigido, recarregado para substituir o arquivo `.vtt` antigo e depois fazer com que a IA traduza o arquivo corrigido.<br>Consulte a **Opção 3** abaixo. | **[!UICONTROL Traduzir legenda]** |
 
    ![Criar opções de Legendas.](/help/assets/dynamic-media/assets/msma-createcaption.png)
-   *O menu suspenso Criar Legendas oferece três opções: Carregar Arquivos, Converter faixas de áudio e Traduzir legenda.*
+   *O menu suspenso Criar Legenda oferece três opções: Carregar Arquivos, Converter faixas de áudio e Traduzir legenda.*
 
 +++**Opção 1:** *Tenho meus próprios arquivos de legenda pré-existentes que estão nos idiomas que desejo usar* (opção **[!UICONTROL Carregar Arquivos]**)
 
    1. Próximo ao lado superior direito da página, clique em **[!UICONTROL Criar Legenda]** > **[!UICONTROL Carregar arquivos]**.
    1. Navegue até um ou mais arquivos `.vtt` preexistentes e selecione-os.
-   1. Para que as legendas fiquem visíveis no reprodutor de mídia, você *deve* adicionar os detalhes necessários sobre *cada* arquivo de legenda que você carrega. Selecione o ícone de lápis à direita de um nome de arquivo de legenda. Na caixa de diálogo **Editar Legenda**, insira os seguintes detalhes necessários sobre o arquivo:
+   1. Para que as legendas fiquem visíveis no reprodutor de mídia, você *deve* adicionar os detalhes necessários sobre *cada* arquivo de legenda que você carrega. Clique no ![ícone Desenhar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) à direita do nome de um arquivo de legenda. Na caixa de diálogo **Editar Legenda**, insira os seguintes detalhes necessários sobre o arquivo:
 
       | Metadados da legenda | Descrição |
       |--- |--- |
@@ -791,8 +791,8 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
 
       | Opção | Descrição |
       |--- |--- |
-      | Faixa de áudio a ser convertida | Na lista suspensa, escolha o arquivo de faixa de áudio carregado a partir do qual deseja que as legendas sejam geradas usando IA. |
-      | Idiomas de saída | Na lista suspensa, selecione um ou mais idiomas nos quais deseja que o arquivo de legenda seja exibido.<br>Para remover um idioma selecionado, clique em **X**.<br>Durante a reprodução do vídeo, a lista de idiomas aparece no reprodutor de mídia na ordem em que você os seleciona aqui. |
+      | Faixa de áudio a ser convertida | Clique no ![ícone Divisa para baixo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) e escolha o arquivo de faixa de áudio carregado a partir do qual deseja gerar legendas usando IA. |
+      | Idiomas de saída | Clique no ícone ![Divisa para baixo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) e selecione um ou mais idiomas nos quais deseja que o arquivo de legenda seja exibido.<br>Para remover um idioma selecionado, clique em ![Ícone Fechar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>Durante a reprodução do vídeo, a lista de idiomas aparece no reprodutor de mídia na ordem em que você os seleciona aqui. |
 
    1. Clique em **[!UICONTROL Concluído]**.
    1. Próximo ao canto superior direito da página, no menu suspenso **[!UICONTROL Salvar e fechar]**, clique em **[!UICONTROL Salvar]**.
@@ -802,7 +802,7 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
       >
       >Com base nas configurações de cache da sua instância, o processamento de metadados pode levar vários minutos antes de ser refletido na pré-visualização e nos URLs publicados.
 
-   1. (Opcional) Selecione o ícone de lápis à direita de um nome de arquivo de legenda. Na caixa de diálogo **Editar Legenda**, você pode editar os seguintes detalhes sobre o arquivo:
+   1. (Opcional) Clique no ![ícone Desenhar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) à direita do nome de um arquivo de legenda. Na caixa de diálogo **Editar Legenda**, você pode editar os seguintes detalhes sobre o arquivo:
 
       | Metadados da legenda | Descrição |
       | --- | --- |
@@ -821,12 +821,12 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
       ![Caixa de diálogo Traduzir Legendas.](/help/assets/dynamic-media/assets/msma-translate-captions.png)
       *A caixa de diálogo Traduzir Legendas permite usar um arquivo de legenda existente para que a IA gere novos arquivos de legenda em vários idiomas.*
 
-   1. Na caixa de diálogo **Traduzir legenda**, defina as seguintes opções:
+   1. Na caixa de diálogo **Traduzir Legendas**, defina as seguintes opções:
 
       | Opção | Descrição |
       |--- |--- |
-      | Legenda a ser traduzida | Na lista suspensa, escolha um arquivo de legenda do qual deseja que as legendas sejam geradas usando IA. |
-      | Idiomas de saída | Na lista suspensa, selecione um ou mais idiomas nos quais deseja que o arquivo de legenda seja exibido.<br>Para remover um idioma selecionado, clique em **X**.<br>Durante a reprodução do vídeo, a lista de idiomas aparece no reprodutor de mídia na ordem em que você os seleciona aqui. |
+      | Legenda a ser traduzida | Clique no ![ícone Divisa para baixo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) e escolha um arquivo de legenda do qual deseja gerar as legendas usando IA. |
+      | Idiomas de saída | Clique no ícone ![Divisa para baixo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) e selecione um ou mais idiomas nos quais deseja que o arquivo de legenda seja exibido.<br>Para remover um idioma selecionado, clique em ![Ícone Fechar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).<br>Durante a reprodução do vídeo, a lista de idiomas aparece no reprodutor de mídia na ordem em que você os seleciona aqui. |
 
    1. Clique em **[!UICONTROL Concluído]**.
    1. Próximo ao canto superior direito da página, no menu suspenso **[!UICONTROL Salvar e fechar]**, clique em **[!UICONTROL Salvar]**.
@@ -836,7 +836,7 @@ As legendas adicionadas são compatíveis com os formatos WebVTT e Adobe VTT. E 
       >
       >Com base nas configurações de cache da sua instância, o processamento de metadados pode levar vários minutos antes de ser refletido na pré-visualização e nos URLs publicados.
 
-   1. (Opcional) Selecione o ícone de lápis à direita de um nome de arquivo de legenda. Na caixa de diálogo **Editar Legenda**, você pode editar os seguintes detalhes sobre o arquivo:
+   1. (Opcional) Clique no ![ícone Desenhar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Draw_18_N.svg) à direita do nome de um arquivo de legenda. Na caixa de diálogo **Editar Legenda**, você pode editar os seguintes detalhes sobre o arquivo:
 
       | Metadados da legenda | Descrição |
       | --- | --- |
@@ -888,11 +888,12 @@ Você pode observar o status do ciclo de vida de qualquer legenda ou arquivo de 
 **Para exibir o status do ciclo de vida de um vídeo:**
 
 1. Navegue até o ativo de vídeo cujo status do ciclo de vida você deseja exibir.
-1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
-1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
-1. Na página Propriedades, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**. Na coluna Status, observe o estado de cada legenda ou arquivo de áudio.
+1. No modo de seleção de ativos, a partir de ![Exibir ícone de cartão](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Exibição de Cartão) ou ![Exibir ícone de Lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Exibição de Lista), selecione o ativo de vídeo.
+1. Na barra de ferramentas, clique em ![ícone Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriedades.
+1. Na página **Propriedades**, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
+1. Na coluna **[!UICONTROL Status]**, anote o estado de cada legenda ou arquivo de áudio.
 
-| Status da legenda ou da faixa de áudio | Descrição |
+| Status das legendas e faixas de áudio | Descrição |
 | --- | --- |
 | Processamento | Quando um novo arquivo de legenda ou trilha de áudio é adicionado e salvo, ele entra em um estado de &quot;Processamento&quot;. O Dynamic Media processa o arquivo anexando o manifesto de transmissão ao vídeo principal. |
 | Processado | Após a conclusão do processamento, o arquivo de legenda ou trilha de áudio, ou a faixa de áudio original associada ao vídeo principal, é exibido em um estado &quot;Processado&quot;. Você pode visualizar os arquivos de legenda e faixa de áudio que aparecem como &quot;Processados&quot; *antes* de publicar o vídeo ao vivo. |
@@ -900,7 +901,6 @@ Você pode observar o status do ciclo de vida de qualquer legenda ou arquivo de 
 | Falhou | Um estado &quot;Com falha&quot; significa que o processamento de uma legenda ou faixa de áudio não foi concluído. Exclua a legenda ou o arquivo de trilha de áudio e carregue novamente. |
 | A página não publicada | Quando a publicação de um vídeo principal é cancelada explicitamente, qualquer legenda ou arquivo de trilha de áudio adicionado ao vídeo também tem sua publicação cancelada. |
 
-![Coluna de status realçada para os campos Legendas e Faixas de Áudio.](/help/assets/dynamic-media/assets/msma-lifecycle-status.png)*Status do ciclo de vida de cada legenda e arquivo de trilha de áudio carregados.*
 
 ### Definir o áudio padrão de um vídeo com várias faixas de áudio
 
@@ -918,16 +918,16 @@ No entanto, todos os arquivos de trilha de áudio carregados podem ser definidos
 **Para definir o áudio padrão de um vídeo que tenha várias faixas de áudio:**
 
 1. Navegue até o ativo de vídeo cuja faixa de áudio padrão você deseja definir.
-1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
-1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
+1. No modo de seleção de ativos, a partir de ![Exibir ícone de cartão](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Exibição de Cartão) ou ![Exibir ícone de Lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Exibição de Lista), selecione o ativo de vídeo.
+1. Na barra de ferramentas, clique em ![ícone Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriedades.
 1. Na página Propriedades, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
 1. No cabeçalho **Faixas de áudio**, selecione o arquivo de faixa de áudio que deseja definir como padrão do vídeo.
-1. Selecione **[!UICONTROL Definir como padrão]**.
-Na caixa de diálogo **Definir como padrão**, selecione **[!UICONTROL Substituir]**.
+1. Clique no ![Ícone de áudio](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Audio_18_N.svg) **[!UICONTROL Definir como padrão]**.
+1. Na caixa de diálogo **Definir como padrão**, clique em **[!UICONTROL Substituir]**.
 
    ![O cabeçalho Faixas de Áudio com um nome de arquivo de faixa de áudio selecionado e o botão &quot;Definir como padrão&quot; realçado.](/help/assets/dynamic-media/assets/msma-defaultaudiotrack.png)*Definindo a faixa de áudio padrão para um vídeo.*
 
-1. No canto superior direito, selecione **[!UICONTROL Salvar e fechar]**.
+1. No canto superior direito, clique em **[!UICONTROL Salvar e fechar]**.
 1. Publish o vídeo. Consulte [ativos do Publish](publishing-dynamicmedia-assets.md).
 
 ### Visualizar um vídeo com várias legendas e faixas de áudio {#preview-video-audio-subtitle}
@@ -948,21 +948,20 @@ Consulte [Adicionar o Dynamic Media Assets às páginas](/help/assets/dynamic-me
 
 1. No **[!UICONTROL Assets]**, navegue até um vídeo existente no qual você tenha adicionado várias legendas e faixas de áudio.
 1. Clique no ativo de vídeo para abri-lo no modo de visualização.
-1. Na página de visualização, próximo ao canto superior esquerdo da página, selecione a lista suspensa e, em seguida, selecione **[!UICONTROL Visualizadores]**.
+1. Na página de visualização, próximo ao canto superior esquerdo da página, clique no ![ícone do Painel à esquerda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) ![ícone de Divisa para baixo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) e selecione **[!UICONTROL Visualizadores]**.
 
    ![Lista suspensa mostrando a opção Visualizadores.](/help/assets/dynamic-media/assets/msma-selectviewers.png)
 
-1. Na lista Visualizadores, selecione um visualizador que deseja usar para a pré-visualização do vídeo. Como exemplo, a seguinte captura de tela mostra o visualizador de **[!UICONTROL Vídeo]** que está sendo selecionado.
+1. Ao lado do canto superior esquerdo da página, clique no ![ícone de Painel esquerdo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RailLeft_18_N.svg) Visualizadores ![ícone de Divisa para baixo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) e selecione um visualizador que deseja usar para a visualização do vídeo.
 
-   ![Seleção do visualizador de vídeo a partir da lista suspensa Visualizadores.](/help/assets/dynamic-media/assets/msma-dmviewerselected.png)
-
-1. Próximo ao canto inferior direito, à esquerda do ícone do volume, selecione o ícone de balão de fala e selecione o áudio ou a legenda que deseja ouvir ou ver, ou ambos. Se desejar, em Legendas, você pode desabilitar a exibição de qualquer legenda clicando em **[!UICONTROL Desativado]**.
+1. Próximo ao canto inferior direito da página, clique no ícone de balão de fala e selecione o áudio ou as legendas/legendas que deseja ouvir ou ver, ou ambos.
 
    ![A lista pop-up Áudio e Legendas no visualizador de Vídeo.](/help/assets/dynamic-media/assets/msma-selectaudiosubtitle.png)*Simulação de um usuário selecionando o áudio e a legenda para reprodução de vídeo.*
 
-1. Para iniciar a reprodução, selecione o botão **[!UICONTROL Reproduzir]** do vídeo.
-Anote os botões **[!UICONTROL URL]** e **[!UICONTROL Incorporar]** no canto inferior esquerdo. Use esses botões para [vincular a URL do vídeo ao seu aplicativo Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou para [incorporar o vídeo em uma Página da Web](/help/assets/dynamic-media/embed-code.md), respectivamente.
-1. Próximo ao canto superior direito da página de visualização, selecione **[!UICONTROL Fechar]**.
+1. Para iniciar a reprodução, clique em ![Ícone de pagamento](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+Se desejar, clique em ![ícone Maximizar](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Maximize_22_N.svg) para maximizar a janela de exibição.
+Observe os botões **[!UICONTROL URL]** e **[!UICONTROL Incorporar]** próximos ao canto inferior esquerdo da página. Use esses botões para [vincular a URL do vídeo ao seu aplicativo Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md) ou para [incorporar o vídeo em uma Página da Web](/help/assets/dynamic-media/embed-code.md), respectivamente.
+1. Próximo ao canto superior direito da página de visualização, clique em **[!UICONTROL Fechar]**.
 
 ### Excluir arquivos de legenda ou de trilha de áudio de um vídeo
 
@@ -973,13 +972,13 @@ A faixa de áudio original extraída de um vídeo principal não pode ser exclu�
 **Para excluir arquivos de legenda ou de trilha de áudio de um vídeo:**
 
 1. Navegue até o ativo de vídeo cuja faixa de áudio padrão você deseja definir.
-1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
-1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
+1. No modo de seleção de ativos, a partir de ![Exibir ícone de cartão](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Exibição de Cartão) ou ![Exibir ícone de Lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Exibição de Lista), selecione o ativo de vídeo.
+1. Na barra de ferramentas, clique em ![ícone Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriedades.
 1. Na página Propriedades, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
 1. Siga um destes procedimentos:
 
-   * Legendas - No cabeçalho **Legendas**, selecione um ou mais arquivos de legenda que deseja excluir do vídeo e clique em **[!UICONTROL Excluir]**.
-   * Faixas de áudio - No cabeçalho **Faixas de áudio**, selecione um ou mais arquivos de faixas de áudio que deseja excluir do vídeo e clique em **[!UICONTROL Excluir]**.
+   * Legendas - No cabeçalho **Legendas**, selecione um ou mais arquivos de legenda que deseja excluir do vídeo e clique em ![Ícone Excluir](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Excluir]**.
+   * Faixas de áudio - No cabeçalho **Faixas de áudio**, selecione um ou mais arquivos de faixas de áudio que deseja excluir do vídeo e clique em ![Excluir ícone](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Delete_22_N.svg) **[!UICONTROL Excluir]**.
 
 1. Na caixa de diálogo Excluir, clique em **[!UICONTROL OK]**.
 1. Publish o vídeo.
@@ -995,22 +994,23 @@ Não é possível baixar a faixa de áudio original extraída de um arquivo de v
 **Para baixar arquivos de legenda ou de trilha de áudio que foram carregados em um vídeo:**
 
 1. Navegue até o ativo de vídeo cuja faixa de áudio padrão você deseja definir.
-1. No modo de seleção de ativos, na Exibição em lista ou na Exibição de cartão, selecione o ativo de vídeo.
-1. Na barra de ferramentas, selecione o ícone Propriedades (um círculo com um &quot;i&quot;).
-1. Na página Propriedades, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
+1. No modo de seleção de ativos, a partir de ![Exibir ícone de cartão](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Exibição de Cartão) ou ![Exibir ícone de Lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Exibição de Lista), selecione o ativo de vídeo.
+1. Na barra de ferramentas, clique em ![ícone Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriedades.
+1. Na página **Propriedades**, selecione a guia **[!UICONTROL Legendas e faixas de áudio]**.
 1. Siga um destes procedimentos:
 
-   * Legendas - No cabeçalho **Legendas**, selecione um ou mais arquivos de legenda que deseja baixar do vídeo e selecione **[!UICONTROL Baixar]**.
-   * Faixas de áudio - No cabeçalho **Faixas de áudio**, selecione um ou mais arquivos de faixas de áudio que você deseja baixar do vídeo e selecione **[!UICONTROL Baixar]**.
+   * Legendas - No cabeçalho **Legendas**, selecione um ou mais arquivos de legenda que deseja baixar do vídeo e clique em ![Ícone de download](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Baixar]**.
+   * Faixas de áudio - No cabeçalho **Faixas de áudio**, selecione um ou mais arquivos de faixas de áudio que você deseja baixar do vídeo e clique em ![Ícone de download](https://spectrum.adobe.com/static/icons/workflow_22/Smock_Download_22_N.svg) **[!UICONTROL Download]**.
 
 1. Na caixa de diálogo Download, defina as seguintes opções:
 
-   | Opção | Descrição |
+   | Opção de download | Descrição |
    |--- |--- |
    | Salvar como | Use o nome de arquivo padrão especificado no campo de texto Salvar como ou especifique seu próprio nome. |
    | Criar uma pasta separada para cada ativo | Crie uma pasta para cada arquivo de legenda ou de trilha de áudio selecionado para download. |
    | Email | Use o programa de email padrão para enviar o arquivo .zip para um endereço de email especificado. |
    | Ativos | Especifica o número de arquivos que você está baixando e o tamanho total combinado de todos os arquivos selecionados. Desmarcar esta opção esmaece (desativa) o botão **[!UICONTROL Baixar]**, impedindo que você baixe qualquer arquivo. |
+   | Representações | Uma representação refere-se a uma versão alternativa ou pré-visualização do arquivo original, geralmente uma versão menor ou de resolução mais baixa. Se for exibido como 0 B, provavelmente significa que nenhuma versão alternativa está disponível ou é muito pequeno para registrar um tamanho. |
 
 1. Selecione **[!UICONTROL Baixar]**.
 1. Publish o vídeo. Consulte [ativos do Publish](publishing-dynamicmedia-assets.md).
@@ -1060,7 +1060,7 @@ Consulte [Veiculação de conteúdo estático (não imagem)](https://experiencel
 
    For best results, use the tool in Internet Explorer 9 or above, Google Chrome, or Safari.
 
-   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video.-->
+   In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then select **[!UICONTROL Load]**. See [Obtain a URL for an Asset](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) to get the URL to the video file itself which you can then paste into the **[!UICONTROL Enter URL of video file field]**. Internet Explorer, Chrome, or Safari can then natively play back the video. -->
 
 Siga as instruções na tela de um site para criar e salvar o arquivo WebVTT. Quando terminar, copie o conteúdo do arquivo de legenda e cole-o em um editor de texto sem formatação e salve-o com uma extensão de nome de arquivo VTT.
 
@@ -1085,7 +1085,7 @@ Geralmente, você deseja nomear o arquivo de legenda `.vtt` com o mesmo nome do 
 
      Observe o `,1` no final do caminho da legenda. Imediatamente após a extensão de nome de arquivo VTT no caminho, você pode, como opção, ativar ou desativar o botão de legendas ocultas na barra do reprodutor de vídeo, definindo-o como `,1` ou `,0`, respectivamente.
 
-   * Para uma experiência de visualizador de vídeo incorporado, selecione **[!UICONTROL Código incorporado]**. Na caixa de diálogo Incorporar código, selecione e copie o código incorporado na Área de transferência e, em seguida, cole o código em um editor de texto simples. Anexe o código incorporado copiado com a seguinte sintaxe:
+   * Para uma experiência de visualizador de vídeo inserido, clique em **[!UICONTROL Incorporar código]**. Na caixa de diálogo Incorporar código, selecione e copie o código incorporado na Área de transferência e, em seguida, cole o código em um editor de texto simples. Anexe o código incorporado copiado com a seguinte sintaxe:
 
      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -1170,7 +1170,6 @@ Consulte [WebVTT: o formato de faixas de texto de vídeo da Web](https://w3c.git
    </table>
 
 
-
 ## Sobre miniaturas de vídeo {#about-video-thumbnails}
 
 Uma miniatura de vídeo é uma versão em tamanho reduzido de um quadro de vídeo ou um ativo de imagem que representa o vídeo para o cliente. A miniatura deve servir para incentivar o cliente a selecionar o vídeo.
@@ -1190,26 +1189,28 @@ A capacidade de personalizar uma miniatura de vídeo só estará disponível ap�
 
    * [Carregou seus vídeos para a pasta](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
 
+
 1. Navegue até um ativo de vídeo carregado cuja imagem em miniatura você deseja alterar.
-1. No modo de seleção de ativos, em **[!UICONTROL Exibição em lista]** ou **[!UICONTROL Exibição de cartão]**, selecione o ativo de vídeo.
-1. Na barra de ferramentas, selecione o ícone **[!UICONTROL Propriedades]** (um círculo contendo um &quot;i&quot;).
-1. Na página Propriedades do vídeo, selecione **[!UICONTROL Alterar miniatura]**.
-1. Na página Alterar miniatura, siga um destes procedimentos:
+1. No modo de seleção de ativos, a partir de ![Exibir ícone de cartão](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewCard_18_N.svg) (Exibição de Cartão) ou ![Exibir ícone de Lista](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) (Exibição de Lista), selecione o ativo de vídeo.
+1. Na barra de ferramentas, clique em ![ícone Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) Propriedades.
+1. Na página Propriedades do vídeo, clique em **[!UICONTROL Alterar miniatura]**.
+1. Na caixa de diálogo Alterar miniatura, siga um destes procedimentos:
 
    * Para usar um quadro do vídeo como a nova miniatura:
 
-      * Na barra de ferramentas, clique na opção **[!UICONTROL Selecionar quadro do vídeo]**.
-      * Selecione o botão Reproduzir e, em seguida, o botão Pausar no quadro que você deseja capturar como a nova miniatura do vídeo.
+      * Na barra de ferramentas, clique na guia **[!UICONTROL Selecionar quadro no vídeo]**.
+      * Clique no ![ícone Reproduzir](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PlayCircle_22_N.svg).
+      * Clique no ![ícone de Pausar](https://spectrum.adobe.com/static/icons/workflow_22/Smock_PauseCircle_22_N.svg) no quadro que você deseja capturar como a nova miniatura do vídeo.
 
    * Para usar um ativo de imagem como a nova miniatura:
 
-      * Na barra de ferramentas, selecione **[!UICONTROL Selecionar miniatura do Assets]**.
-      * Selecione **[!UICONTROL Selecionar miniatura]**.
+      * Na barra de ferramentas, clique na guia **[!UICONTROL Selecionar miniatura do Assets]**.
+      * Clique no botão **[!UICONTROL Selecionar miniatura]**.
       * Navegue até um ativo de imagem carregado e publicado anteriormente que você deseja usar. O ativo é redimensionado automaticamente para servir como uma imagem em miniatura do vídeo.
-      * Selecione o ativo de imagem e selecione **[!UICONTROL Selecionar]**.
+      * Selecione o ativo de imagem e clique em **[!UICONTROL Selecionar]**.
 
-1. Na página Alterar miniatura, selecione **[!UICONTROL Salvar alteração]**.
-1. Na página Propriedades do vídeo, no canto superior direito, selecione **[!UICONTROL Salvar e fechar]**.
+1. Na caixa de diálogo Alterar miniatura, clique em **[!UICONTROL Salvar alteração]**.
+1. Na página Propriedades do vídeo, no canto superior direito, clique em **[!UICONTROL Salvar e fechar]** ou **[!UICONTROL Salvar]**.
 
 
 
