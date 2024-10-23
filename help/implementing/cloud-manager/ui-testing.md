@@ -5,10 +5,10 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f504f622446f082c3662c39cc0a249b6f92a4b6e
+source-git-commit: 8703240a5b7b8ed751620f602470da45025f7b74
 workflow-type: tm+mt
-source-wordcount: '2630'
-ht-degree: 79%
+source-wordcount: '2698'
+ht-degree: 74%
 
 ---
 
@@ -26,7 +26,7 @@ Os testes de interface do usuário personalizados são um recurso opcional que p
 
 O AEM fornece um conjunto integrado de [quality gates (portais de qualidade) do Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) para garantir atualizações tranquilas para aplicativos personalizados. Em especial, os portais de teste de TI já promovem a criação e a automação de testes personalizados usando as APIs do AEM.
 
-Os testes de interface são compactados em uma imagem do Docker para permitir uma variedade de opções de idiomas e estruturas (como Cypress, Selenium, Java e Maven, além do JavaScript). Além disso, um projeto de testes de interface do usuário pode ser facilmente gerado usando o [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR).
+Os testes de interface são compactados em uma imagem do Docker para permitir uma variedade de opções de idiomas e estruturas (como Cypress, Selenium, Java e Maven, além do JavaScript). Além disso, um projeto de testes de interface do usuário pode ser facilmente gerado usando o [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview).
 
 A Adobe incentiva o uso do Cypress, pois oferece recarregamento em tempo real e espera automática, o que ajuda a economizar tempo e melhorar a produtividade durante os testes. O Cypress também fornece uma sintaxe simples e intuitiva, facilitando a aprendizagem e o uso, até mesmo para aqueles que são novos em testes.
 
@@ -44,17 +44,15 @@ Diferentemente dos testes funcionais personalizados, que são testes HTTP escrit
 
 Esta seção descreve as etapas necessárias para a configuração dos testes de interface para execução no Cloud Manager.
 
-1. Decida sobre a linguagem de programação que deseja usar.
+1. Decida sobre a estrutura de teste que deseja usar.
 
-   * Para Cypress, use o código de exemplo do [repositório de Exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
+   * Para o Cypress (padrão), use o código de amostra do [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress) ou use o código de amostra gerado automaticamente na pasta `ui.tests` do seu repositório do Cloud Manager.
 
-   * Para o JavaScript e o WDIO, use o código de exemplo que é gerado automaticamente na pasta `ui.tests` do seu repositório do Cloud Manager.
+   * Para o Playwright, use o código de amostra do [repositório de Amostras de Teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
 
-     >[!NOTE]
-     >
-     >Se o repositório foi criado antes de o Cloud Manager criar automaticamente as pastas `ui.tests`, você também poderá gerar a versão mais recente usando o [Arquétipo de Projetos do AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+   * Para Webdriver.IO, use o código de amostra do [repositório de Amostras de Teste de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
 
-   * Para Java e WebDriver, use o código de exemplo do [repositório de exemplos de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
+   * Para o Selenium WebDriver, use o código de amostra do [repositório de Amostras de Teste de AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Para outras linguagens de programação, consulte a seção [Criação de testes de interface](#building-ui-tests) deste documento para configurar o projeto de teste.
 
@@ -271,8 +269,8 @@ Se a imagem do Docker for implementada com outras linguagens de programação ou
 | Tipo | Valor | Descrição |
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | Quantidade de tempo de CPU reservado por execução de teste. |
-| Memória | 1Gi | Quantidade de memória alocada no teste, valor em gibibytes. |
-| Tempo limite | 30 min | A duração após a qual o teste é encerrado. |
+| Memória | 1Gi | Quantidade de memória alocada para o teste, valor em gibibytes. |
+| Tempo limite | 30 min | A duração após a qual o teste é concluído. |
 | Duração recomendada | 15 min | A Adobe recomenda gravar os testes para não demorar mais do que esse tempo. |
 
 >[!NOTE]
@@ -432,6 +430,11 @@ if (proxyServer !== '') {
 }
 ```
 
+>[!NOTE]
+>
+> Um exemplo de implementação pode ser encontrado no Módulo de Teste de Amostra do Playwright no [GitHub](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-playwright/).
+
+
 ## Execução de testes locais de interface {#run-ui-tests-locally}
 
 Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recomendável executá-los localmente no [SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ou em uma instância real do AEM as a Cloud Service.
@@ -494,7 +497,36 @@ Antes de ativar os testes de interface em um pipeline do Cloud Manager, é recom
 >* Os arquivos de log são armazenados na pasta `target/reports` do repositório.
 >* Certifique-se de que sua máquina esteja executando a versão mais recente do Chrome, pois o teste baixa a versão mais recente do ChromeDriver automaticamente.
 >
->Para obter detalhes, consulte [Repositório de arquétipos de projetos do AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>Para obter detalhes, consulte [Repositório de amostras de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-wdio).
+
+### Amostra de teste do dramaturgo {#playwright-sample}
+
+1. Abra um shell e navegue até a pasta `ui.tests` no repositório
+
+1. Execute o comando abaixo para criar uma imagem do docker usando Maven
+
+   ```shell
+   mvn clean package -Pui-tests-docker-build
+   ```
+
+1. Execute o comando abaixo para iniciar os testes usando o Maven
+
+   ```shell
+   mvn verify -Pui-tests-docker-execution \
+    -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_AUTHOR_USERNAME=<user> \
+    -DAEM_AUTHOR_PASSWORD=<password> \
+    -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_PUBLISH_USERNAME=<user> \
+    -DAEM_PUBLISH_PASSWORD=<password>
+   ```
+
+>[!NOTE]
+>
+>Os arquivos de log são armazenados na pasta `target/` do repositório.
+>
+>Para obter detalhes, consulte [Repositório de amostras de teste do AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-playwright).
+
 
 ### Exemplo de teste do Java Selenium WebDriver {#java-sample}
 
