@@ -4,9 +4,9 @@ description: Saiba como usar planilhas para gerenciar dados tabulares para vári
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1014'
 ht-degree: 1%
 
 ---
@@ -101,6 +101,10 @@ Para que o AEM possa publicar os dados em sua planilha, você também precisa at
      ]
    }
    ```
+
+   >[!NOTE]
+   >
+   >Esta entrada `paths.json` é baseada no exemplo de criação de redirecionamentos usando dados tabulares. Atualize o caminho apropriado para o [tipo de planilha que você está criando.](#other)
 
 1. Clique em **Confirmar alterações...** para salvar as alterações em `main`.
 
