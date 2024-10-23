@@ -4,9 +4,9 @@ description: As APIs Java&trade; e JavaScript permitem internacionalizar strings
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a0afa0d733b8493883770d03fc1a55db247aaf71
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
@@ -174,7 +174,7 @@ Teste se você internacionalizou todas as strings na interface do usuário. Para
 
 A imagem a seguir mostra a tradução de stub para a página inicial do AEM:
 
-![chlimage_1](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
+![Tradução de stub para a página inicial do AEM](/help/implementing/developing/extending/assets/i18n-dev1.jpeg)
 
 Para definir o idioma do usuário, configure a propriedade language do nó de preferências para a conta do usuário.
 

@@ -4,10 +4,10 @@ description: Inicie sua jornada de migração ao familiarizar-se com as noções
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 22%
+source-wordcount: '579'
+ht-degree: 21%
 
 ---
 
@@ -35,15 +35,15 @@ A jornada de migração para o Cloud Service envolve as seguintes fases:
 * Comece determinando se a implantação está pronta para ser movida para a AEM as a Cloud Service com a [Fase de preparação](/help/journey-migration/readiness.md). Nesta fase, você também deve se familiarizar com as alterações introduzidas pelo AEM as a Cloud Service.
 * Em seguida, prepare sua nuvem de código e conteúdo com a [Fase de implementação](/help/journey-migration/implementation.md). Nesta fase, você explorará o Adobe de ferramentas que o fornece para facilitar a mudança para a nuvem.
 * Depois que tudo estiver configurado, você poderá executar a migração com a [Fase de ativação](/help/journey-migration/go-live.md).
-* Finalmente, certifique-se de monitorar problemas e melhorar o desempenho após a conclusão da migração, na [Fase de ativação do Post](/help/journey-migration/post-go-live.md).
+* Finalmente, certifique-se de monitorar problemas e melhorar o desempenho após a conclusão da migração, na [Fase de pós-ativação](/help/journey-migration/post-go-live.md).
 
 A figura abaixo mostra uma representação de alto nível da jornada de transição recomendada para o AEM as a Cloud Service.
 
-![imagem](/help/journey-migration/assets/move-aemcloud-process.png)
+![Representação de alto nível da jornada de transição recomendada para o AEM as a Cloud Service](/help/journey-migration/assets/move-aemcloud-process.png)
 
 Você também pode consultar o diagrama abaixo para obter uma visualização mais detalhada e granular da jornada de migração.
 
-![imagem](/help/journey-migration/assets/migration-process.png)
+![Exibição detalhada e granular da jornada de migração](/help/journey-migration/assets/migration-process.png)
 
 ## Cloud Acceleration Manager {#cloud-acceleration-manager}
 

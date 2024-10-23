@@ -5,7 +5,7 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: d46678e999889934631bd0c678de5b060bc38f44
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 1%
@@ -138,7 +138,7 @@ Assim como ocorre com a criação de qualquer outro conteúdo no AEM, depois de 
 
    ![Selecionando marcas no console](assets/select-tags.png)
 
-1. A caixa de diálogo **Marca Publish** solicita uma confirmação para publicar as marcas selecionadas. Selecione **Publish**.
+1. A caixa de diálogo **Marca Publish** solicita uma confirmação para publicar as marcas selecionadas. Selecione **Publicar**.
 
    ![O modal de confirmação da Marca do Publish](assets/publish-tag.png)
 
@@ -218,7 +218,7 @@ Para desativar a tag na instância do autor e removê-la da instância de public
 
    ![Selecionando marcas no console](assets/select-tags.png)
 
-1. A caixa de diálogo **Cancelar Publicação da Marca** solicita uma confirmação para publicar as marcas selecionadas. Selecione **Publish**.
+1. A caixa de diálogo **Cancelar Publicação da Marca** solicita uma confirmação para publicar as marcas selecionadas. Selecione **Publicar**.
 
    ![O modal de confirmação da Marca do Publish](assets/unpublish-tag.png)
 
@@ -338,7 +338,7 @@ Tag permissions are ['secure (by default)'](/help/sites-administering/production
     * select the `checkbox`in the **Read** column
     * select **Save**
 
-![chlimage_1-204](assets/chlimage_1-204.png)
+![Setting tag permissions](assets/chlimage_1-204.png)
 
 * ensure all publish instances have same permissions
 

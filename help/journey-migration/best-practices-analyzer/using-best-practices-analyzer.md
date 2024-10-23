@@ -4,9 +4,9 @@ description: Saiba como usar o Analisador de práticas recomendadas para entende
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9998fb4bc4f9f4c0f4adf67fd1b378ae662c8f70
+source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
 workflow-type: tm+mt
-source-wordcount: '2686'
+source-wordcount: '2701'
 ht-degree: 39%
 
 ---
@@ -73,45 +73,43 @@ Siga esta seção para saber como exibir o relatório do Analisador de práticas
 
 1. Selecione o Adobe Experience Manager e navegue até Ferramentas > **Operações** > **Analisador de práticas recomendadas**.
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
+   ![Analisador de práticas recomendadas](/help/journey-migration/best-practices-analyzer/assets/BPA_pic1.png)
 
 1. Clique em **Gerar relatório** para executar o Analisador de práticas recomendadas.
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+   ![Gerar relatório](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
 
 1. Forneça a chave de carregamento de BPA para carregar automaticamente o relatório de BPA gerado no [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Para obter a chave de carregamento, navegue até a [Análise de práticas recomendadas no CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
+   ![Definir Chave de Carregamento do BPA](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key.png)
 
 >[!NOTE]
 >Você tem a opção de ignorar o carregamento automático para o CAM selecionando **Ignorar carregamento automático do relatório para o CAM**. Se você optar por ignorar, será necessário baixar manualmente o relatório do BPA como um arquivo de valor separado por vírgulas e, em seguida, fazer upload do arquivo no CAM. É recomendável usar a opção de chave de upload, pois ela simplifica a operação.
 
 1. O botão **Gerar** fica ativo quando uma chave válida é fornecida. Clique em **Gerar** para iniciar a geração do relatório.
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
-
+   ![Gerar relatório](/help/journey-migration/best-practices-analyzer/assets/BPA_upload_key1.png)
 
 1. Enquanto o BPA está gerando o relatório, você pode ver o progresso feito pela ferramenta na tela. Ele exibe o progresso em termos de porcentagem concluída. Ele também exibe o número de itens analisados e o número de descobertas encontradas.
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
+   ![Gerando relatório](/help/journey-migration/best-practices-analyzer/assets/BPA_generate_upload.png)
 
 >[!NOTE]
 >O carimbo de data e hora de expiração da chave de upload do BPA é exibido no canto superior direito. Você deve renovar a chave de upload do BPA quando estiver próxima de sua expiração. Para renovar a chave, você pode clicar em **Renovar** para navegar até o CAM para renovar a chave.
 
 1. Depois que o relatório do BPA é gerado, ele exibe um resumo e o número de conclusões em um formato tabular organizado pelo tipo de descoberta e o nível de importância. Para obter mais detalhes sobre uma descoberta específica, você pode clicar no número que corresponde ao tipo de descoberta na tabela.
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
+   ![Visão geral do relatório](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. Você tem a opção de baixar o relatório em um formato CSV (valores separados por vírgula) clicando em **Exportar para CSV**. Você também tem a opção de exibir o relatório no CAM clicando em **Ir para o CAM**. Você será direcionado à página [Análise de Práticas Recomendadas](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis) no CAM.
 
 Você pode forçar o BPA a limpar seu cache e gerar novamente o relatório clicando em **Atualizar Relatório**.
 
-![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
-
+![Atualizar relatório](/help/journey-migration/best-practices-analyzer/assets/BPA_report_upload.png)
 
 1. Se o cache expirar, você terá a opção de visualizar o último relatório gerado no CAM clicando em **Exibir o último relatório gerado no CAM** ou iniciar uma nova geração de relatórios clicando em **Gerar novo relatório**.
 
-![imagem](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
+![Nenhum relatório](/help/journey-migration/best-practices-analyzer/assets/BPA_regeneratereport.png)
 
 
 #### Utilização de filtros no relatório do Analisador de práticas recomendadas {#bpa-filters}
@@ -120,14 +118,14 @@ Para filtrar os achados relacionados ao [ACS Commons](https://adobe-consulting-s
 
 1. Clique no ícone do painel à esquerda no lado esquerdo da página. Isso exibirá o **Filtro ACS Commons**. Clique no **Filtro ACS Commons** para exibir a caixa de seleção interativa como mostrado na imagem abaixo.
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
+   ![Filtro ACS Commons](/help/journey-migration/best-practices-analyzer/assets/report_filter_1.png)
 
    >[!NOTE]
    >O ícone do painel esquerdo será exibido somente se o BPA detectar o uso do ACS Commons.
 
 1. Desmarque a caixa para filtrar todos os achados relacionados ao ACS Commons. Você deve ver uma **Contagem de Achados Filtrados** no relatório, como mostrado na imagem abaixo. O filtro também é aplicado ao relatório quando ele é exportado em um formato CSV (valores separados por vírgula).
 
-   ![imagem](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
+   ![Contagem de Achados Filtrados](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
    >As conclusões do ACS Commons não devem ser ignoradas. Consulte a [documentação](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) para determinar a compatibilidade com o AEM as a Cloud Service.

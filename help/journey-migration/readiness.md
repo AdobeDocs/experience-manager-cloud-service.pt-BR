@@ -4,9 +4,9 @@ description: Saiba mais sobre as etapas necessárias para garantir que a instala
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1913'
 ht-degree: 6%
 
 ---
@@ -169,7 +169,7 @@ Depois de se familiarizar com as alterações introduzidas no AEM as a Cloud Ser
 
 A figura a seguir mostra as principais etapas envolvidas durante a fase de revisão:
 
-![imagem](/help/journey-migration/assets/planning-phaseimg1.png)
+![Etapas principais envolvidas durante a fase de revisão](/help/journey-migration/assets/planning-phaseimg1.png)
 
 Em seguida, explore detalhadamente o que cada uma dessas etapas significa.
 
