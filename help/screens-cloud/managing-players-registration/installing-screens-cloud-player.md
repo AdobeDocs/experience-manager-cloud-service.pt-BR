@@ -4,9 +4,9 @@ description: Esta página descreve como instalar e configurar players no Screens
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 feature: Developing Screens
 role: Admin, Developer, User
-source-git-commit: af7793ca7ad3d11bfff980a4d00f537fd0871755
+source-git-commit: 53086e2ec6d9d962a8f1cb1cc40f0601da74ac63
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '595'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ Siga as etapas abaixo para atualizar seu reprodutor:
 
 1. Clique na guia **Configuração** e clique no botão **Para Fábrica** na opção **Redefinir**.
 
-   ![imagem](/help/screens-cloud/assets/player/installplayer-2.png)
+   ![Botão Para Fábrica na opção Redefinir](/help/screens-cloud/assets/player/installplayer-2.png)
 
 1. Clique em **Confirmar** para redefinir o player.
 
 1. Novamente na guia **Configuração** e clique no botão **Alterar para Modo de Nuvem** na opção **Alternar Modo de Execução**.
 
-   ![imagem](/help/screens-cloud/assets/player/installplayer-1.png)
+   ![Botão Alterar para Modo de Nuvem na opção Alternar Modo de Execução](/help/screens-cloud/assets/player/installplayer-1.png)
 
 1. Clique em **Confirmar** que avisa ao alternar para o modo de nuvem para cancelar o registro do reprodutor.
 
