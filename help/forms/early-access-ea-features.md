@@ -6,7 +6,7 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 681121c98f61f045702a7d9c2ffad1473d7f5b2a
+source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 0%
@@ -27,13 +27,13 @@ Se você estiver interessado em participar do nosso programa de Acesso Antecipad
 
 ## Inovações de acesso antecipado
 
-### IA gerativa do AEM Forms (Gen AI)
+### Assistente de IA do AEM Forms (Gen AI)
 
 A IA gerativa para o Adaptive Forms traz um nível totalmente novo de potência e facilidade para seus processos de desenvolvimento de formulários. Com a ajuda de recursos inteligentes de IA, você pode criar formulários melhores mais rápido do que nunca.
 
-![Assistente de IA de Geração, Forms Adaptável](/help/forms/assets/generative-ai-assistant.png)
+>[!VIDEO](https://video.tv.adobe.com/v/3435527)
 
-Os recursos de IA gerativa disponíveis são:
+Os recursos de IA gerativa disponíveis no AEM Forms AI Assistant são:
 
 * **Assistente de IA para consultas de produtos**: obtenha respostas instantâneas para suas perguntas relacionadas ao formulário AEM. Nosso assistente de IA atua como sua própria base de conhecimento pessoal, fornecendo orientação e recomendações relevantes diretamente na plataforma.
 
@@ -74,13 +74,13 @@ Veja o que mais o Conversational Forms oferece:
 As Forms de conversa são mais do que apenas uma nova aparência - elas são um divisor de águas para a experiência do usuário.  Aumente o engajamento, reduza o abandono de formulários e torne a interação com seu site uma experiência mais agradável para todos.
 
 
-### Criação WYSIWYG para Edge Delivery Services
+### Criação de WYSIWYG para Edge Delivery Services
 
-A Criação WYSIWYG fornece interfaces WYSIWYG (Editor universal e Editor Forms adaptável) para criar e publicar formulários adaptáveis em Edge Delivery Services. A Criação WYSIWYG oferece todos os recursos da [Criação baseada em documento](/help/edge/docs/forms/overview.md#document-based-authoring-features), além de uma grande variedade de recursos adicionais:
+A Criação no WYSIWYG fornece interfaces do WYSIWYG (Universal Editor e Adaptive Forms Editor) para criar e publicar formulários adaptáveis no Edge Delivery Services. A Criação do WYSIWYG oferece todos os recursos da [Criação baseada em documento](/help/edge/docs/forms/overview.md#document-based-authoring-features), além de uma grande variedade de recursos adicionais:
 
 * Editor de regras avançado para criar lógica complexa.
 * Extensibilidade do lado do servidor para funcionalidades personalizadas.
-* Experiência de edição WYSIWYG para facilitar a criação e a visualização de formulários.
+* Experiência de edição do WYSIWYG para facilitar a criação e a visualização de formulários.
 * Funcionalidade de documento de registro para criar arquivos à prova de violação de dados enviados.
 * Integração com o Adobe Sign para assinaturas eletrônicas.
 * Integração com várias fontes de dados para pré-preencher formulários e enviar dados.
@@ -135,10 +135,10 @@ Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a seleciona
 
 Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
-### APIs do Doc Assurance
+### APIs Doc Assurance
 
 
-As APIs do AEM Forms Doc Assurance são um conjunto de ferramentas nas APIs de comunicação do AEM Forms Cloud Service que permitem gerenciar a segurança e a interação do usuário nos documentos do PDF.
+As APIs do AEM Forms Doc Assurance são um conjunto de ferramentas das APIs de comunicação do AEM Forms Cloud Service que permitem gerenciar a segurança e a interação do usuário dos documentos do PDF.
 
 Veja a seguir um detalhamento do que as APIs do Doc Assurance podem fazer:
 
@@ -152,7 +152,7 @@ Veja a seguir um detalhamento do que as APIs do Doc Assurance podem fazer:
 
   Quando os documentos PDF têm os direitos de uso apropriados adicionados, os recipients podem fazer atividades habilitadas no Adobe Reader.
 
-Em geral, as [APIs do Doc Assurance](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) ajudam a melhorar a segurança e a conformidade dos documentos, adicionando uma camada extra de controle.
+Em geral, as [Doc Assurance APIs](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/docassurance/) ajudam a melhorar a segurança e a conformidade dos documentos, adicionando uma camada extra de controle.
 
 
 ### APIs de serviço do Forms
