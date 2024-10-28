@@ -2,10 +2,10 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: b74067002a676a4d206dac170022ce0ec6d223de
 workflow-type: tm+mt
-source-wordcount: '1392'
-ht-degree: 12%
+source-wordcount: '1822'
+ht-degree: 9%
 
 ---
 
@@ -59,6 +59,7 @@ Como administrador, gerencie as seguintes opções de configuração para seus u
 * [Filtros](#configure-filters-content-hub)
 
 * [Detalhes do ativo](#configure-asset-details-content-hub)
+* [Cartão de ativos](#asset-card)
 
 * [Pesquisar](#configure-metadata-search-content-hub)
 
@@ -143,6 +144,25 @@ As propriedades ativadas na Interface do Usuário da Configuração são exibida
 
 ![Propriedades do ativo no Content Hub](assets/config-ui-asset-properties.png)
 
+### Cartão de ativos {#asset-card}
+
+Na interface do usuário do Content Hub, a exibição no nível do ativo exibe o **Cartão de ativos** dos ativos aprovados. O Cartão de ativos exibe os principais detalhes do ativo para os usuários. O Cartão de ativos tem miniatura de ativos, metadados de ativos e outras opções acionáveis. Os administradores do Content Hub adicionam os campos de metadados no nível do repositório para exibir o nome dos metadados e seu valor de metadados no Cartão de ativos de todos os ativos de uma só vez. O Cartão de ativos aceita seis campos de metadados. O campo de metadados inclui o nome e a propriedade dos metadados. O Cartão de ativos exibe os metadados e seu valor. O administrador especifica o nome dos metadados e o mapeia para a propriedade de metadados correta. A propriedade de metadados renderiza um valor de metadados no Cartão de ativos. A propriedade de metadados está vinculada às propriedades do ativo, portanto, o valor dos metadados renderizados varia em todos os Cartões de ativos. Por exemplo, os administradores adicionam um metadado, **Licenciado** no Cartão de ativos e mapeiam esse metadado **Licenciado** para a propriedade de metadados correta. Os Cartões de Ativos na interface do Content Hub exibem os metadados **Licenciados** e seu valor de metadados (**Sim** ou **Não**). Neste exemplo, o Assets que tem uma licença exibe **Sim** no Cartão de Ativos, enquanto os ativos sem licença exibem **NÃO**.
+
+![Propriedades do ativo no Content Hub](/help/assets/assets/metadata-on-asset-card.png)
+
+#### Adicionar, editar ou excluir metadados em Cartão de ativos {#add-edit-delete-metadata}
+
+Para adicionar metadados a um ativo, consulte as instruções abaixo:
+
+1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **Cartão de ativos**.
+2. Clique em **Adicionar metadados**. A caixa de diálogo **Adicionar metadados do cartão de ativos** é exibida.
+3. Especifique o nome dos metadados no campo **Rótulo** e selecione uma propriedade de metadados no campo **Metadados**. Por exemplo, nomeie os metadados **Licenciado** e selecione **dc:license** como a propriedade de metadados. A propriedade de metadados selecionada é mapeada para um valor que é exibido com os metadados na interface do Content Hub. Neste exemplo, a propriedade **dc:license** é mapeada para a ID de licença. Esta propriedade segue o caminho do ativo especificado (licença de PDF) para localizar o ativo correspondente e renderiza um valor booliano (**Sim** ou **Não**) na interface do usuário com base na presença do ativo. Se o PDF de licença for encontrado, exibirá **Sim**. Caso contrário, exibirá **Não**. Portanto, na interface do Content Hub, os ativos com uma ID de licença exibem **Sim**, enquanto os ativos sem uma ID de licença exibem **Não**.
+4. Clique em **Confirmar** e em **Salvar** para aplicar as alterações de forma que a nova propriedade seja exibida na página de detalhes do ativo.
+   ![cartão de ativos](/help/assets/assets/asset-card.png)
+
+Da mesma forma, clique em ![editar](/help/assets/assets/edit-content-hub.svg) que está disponível ao lado de cada propriedade disponível, para fazer as modificações necessárias ou clique em ![excluir](/help/assets/assets/delete-content-hub.svg) para excluir qualquer propriedade de metadados existente. Clique em **Salvar** depois de fazer todas as modificações para aplicar as alterações.
+
+
 ### Pesquisar {#configure-metadata-search-content-hub}
 
 Os administradores podem definir os campos de metadados que são pesquisados quando um usuário especifica um critério de pesquisa no Content Hub. Execute as seguintes etapas:
@@ -174,7 +194,7 @@ As atualizações de marca ativadas na interface do usuário de configuração s
 
 ![Marca da interface do usuário de configuração no Content Hub](assets/configuration-ui-branding-updates.png)
 
-### Ativos expirados {#expired-assets-content-hub}
+### Ativos expirados{#expired-assets-content-hub}
 
 Os administradores podem controlar se precisam que os ativos expirados estejam visíveis no Content Hub. Se os ativos expirados se tornarem visíveis, eles também poderão definir se os usuários podem baixá-los.
 
@@ -198,7 +218,7 @@ Depois de ativar a visibilidade dos ativos, você pode visualizá-los no Content
 
 Se o administrador tiver ativado o download, os usuários do Content Hub também poderão baixá-los, conforme realçado na imagem.
 
-Se a visibilidade dos ativos expirados estiver habilitada, o Content Hub também destacará os ativos que expiram nos próximos 15 dias usando a mensagem `Expiring in n days` no cartão de ativos.
+Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também destacará os ativos que expiram nos próximos 15 dias usando a mensagem `Expiring in n days` no Cartão de ativos.
 
 
 ### Links personalizados {#configure-custom-links-content-hub}

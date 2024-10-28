@@ -2,7 +2,7 @@
 title: Aprovar ativos para o Content Hub
 description: Saiba como aprovar ativos no Assets as a Cloud Service para disponibilizá-los no Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
 workflow-type: tm+mt
 source-wordcount: '746'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Antes de começar, você deve ter:
 
 * Permissões de gravação para editar metadados de ativos para poder editar o campo **[!UICONTROL Status]** disponível em [propriedades de ativos](/help/assets/manage-organize-assets-view.md##manage-asset-status) para um ativo.
 
-## Aprovar ativos para o Content Hub {#approve-assets-for-content-hub}
+## Aprovar ativos para o Content Hub{#approve-assets-for-content-hub}
 
 Os ativos marcados como `approved` no Assets as a Cloud Service ficam disponíveis automaticamente no Content Hub.
 
