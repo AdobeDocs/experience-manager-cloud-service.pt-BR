@@ -4,9 +4,9 @@ description: Saiba como você pode usar pipelines de configuração para implant
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 3d0abce117cf94d7bf521e78be2ec019f216aa08
+source-git-commit: 2247fdd919057703f1c35145ba2bc9c6ec47250b
 workflow-type: tm+mt
-source-wordcount: '973'
+source-wordcount: '1000'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Saiba como você pode usar pipelines de configuração para implantar diferentes
 
 Um pipeline de configuração do Cloud Manager implanta arquivos de configuração (criados no formato YAML) em um ambiente de destino. Vários recursos do AEM as a Cloud Service podem ser configurados dessa maneira, incluindo o encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e vários recursos de CDN.
 
-Os Pipelines de configuração podem ser implantados por meio do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção em programas de produção (não sandbox). Os RDEs não são compatíveis.
+Os Pipelines de configuração podem ser implantados por meio do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção em programas de produção (não sandbox). Os arquivos de configuração podem ser implantados em ambientes de desenvolvimento rápido (RDEs) usando a [ferramenta de linha de comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
 As seções a seguir deste documento fornecem uma visão geral de informações importantes sobre como os Pipelines de configuração podem ser usados e como as configurações para eles devem ser estruturadas. Ele descreve conceitos gerais compartilhados entre todos ou um subconjunto dos recursos compatíveis com os pipelines de configuração.
 
@@ -53,6 +53,9 @@ A tabela a seguir oferece uma lista abrangente dessas configurações, com links
 Para obter informações sobre como criar e configurar pipelines, consulte o documento [Pipelines de CI/CD.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
 
 Ao criar um Pipeline de configuração no Cloud Manager, selecione uma **Implantação direcionada** em vez de **Código de pilha completa** ao configurar o pipeline.
+
+Como observado anteriormente, a configuração de RDEs é implantada usando a [ferramenta de linha de comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline), em vez de um pipeline.
+
 
 ## Sintaxe comum {#common-syntax}
 

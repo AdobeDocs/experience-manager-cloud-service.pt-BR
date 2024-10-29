@@ -4,9 +4,9 @@ description: Saiba como usar Ambientes de desenvolvimento rápido para iteraçõ
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e508ba2fcb709b1925b490bdb3e1a8774068927c
+source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
 workflow-type: tm+mt
-source-wordcount: '4794'
+source-wordcount: '4863'
 ht-degree: 3%
 
 ---
@@ -277,7 +277,7 @@ O padrão de uso geral é `aio aem:rde:install <artifact>`.
 
 Você pode encontrar alguns exemplos abaixo:
 
-<u>Implantando um Pacote de Conteúdo</u>
+#### Implantar um pacote de conteúdo {#deploy-content-package}
 
 `aio aem:rde:install sample.demo.ui.apps.all-1.0.0-SNAPSHOT.zip`
 
@@ -300,7 +300,7 @@ Qualquer pacote AEM pode ser implantado, como pacotes com código, conteúdo ou 
 >
 >A configuração do Dispatcher para o projeto WKND não é implantada por meio da instalação do pacote de conteúdo acima. Implante-o separadamente seguindo as etapas &quot;Implantar uma configuração do Apache/Dispatcher&quot;.
 
-<u>Implantando uma Configuração OSGI</u>
+#### Implantar uma configuração OSGI {#deploy-OSGI-config}
 
 `aio aem:rde:install com.adobe.granite.demo.MyServlet.cfg.json`
 
@@ -311,7 +311,7 @@ Onde a resposta para uma implantação bem-sucedida se assemelha ao seguinte:
 #2: deploy completed for osgi-config com.adobe.granite.demo.MyServlet.cfg.json on author,publish - done by 9E0725C05D54FE1A0B49431C@AdobeID at 2022-09-13T11:54:36.390Z
 ```
 
-<u>Implantando um pacote</u>
+#### Implantação de um pacote {#deploy-bundle}
 
 Para implantar um pacote, use:
 
@@ -324,7 +324,7 @@ Onde a resposta para uma implantação bem-sucedida se assemelha ao seguinte:
 #3: deploy staged for osgi-bundle org.apache.felix.gogo.jline-1.1.8.jar on author,publish - done by 9E0725C05D53BE1A0B49431C@AdobeID at 2022-09-14T07:54:28.882Z
 ```
 
-<u>Implantando um Arquivo de Conteúdo</u>
+#### Implantação de um arquivo de conteúdo {#deploy-content-file}
 
 Para implantar um arquivo de conteúdo, use:
 
@@ -337,7 +337,7 @@ Onde a resposta para uma implantação bem-sucedida se assemelha ao seguinte:
 #4: deploy completed for content-file world.txt on author,publish - done by 9E0729C05C54FE1A0B49431C@AdobeID at 2022-09-14T07:49:30.644Z
 ```
 
-<u>Implantando uma Configuração Apache/Dispatcher</u>
+#### Implantar uma configuração do Apache/Dispatcher {#deploy-apache-config}
 
 A estrutura de pastas inteira deve estar no formato de um arquivo zip para esse tipo de configuração.
 
@@ -388,6 +388,26 @@ The analyser found the following errors for publish :
 ```
 
 A amostra de código acima ilustra o comportamento se um pacote não resolver. Nesse caso, ele é &quot;preparado&quot; e só será instalado se seus requisitos (nesse caso, importações ausentes) forem atendidos por meio da instalação de outro código.
+
+#### Implantação da configuração relacionada ao pipeline de configuração (configurações yaml) {#deploy-config-pipeline}
+
+As configurações específicas do ambiente (um ou mais arquivos yaml) descritas no artigo [Uso dos Pipelines de Configuração](/help/operations/config-pipeline.md) podem ser implantadas da seguinte maneira:
+
+`aio aem:rde:install -t env-config ./my-config-folder`
+onde my-config-folder é a pasta principal que contém as configurações yaml.
+
+Como alternativa, também é possível instalar um arquivo zip contendo a árvore de pastas de configuração:
+
+`aio aem:rde:install -t env-config config.zip`
+
+Observe que a matriz envTypes do arquivo yaml deve incluir o valor *rde*, como no exemplo abaixo:
+
+```
+kind: "CDN"
+version: "1"
+metadata:
+  envTypes: ["rde"]
+```
 
 ### Implantação de código front-end com base em temas de site e modelos de site {#deploying-themes-to-rde}
 

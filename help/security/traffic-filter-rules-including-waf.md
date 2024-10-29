@@ -4,9 +4,9 @@ description: Configuração das regras de filtro de tráfego, incluindo as regra
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: cf9e1b3c290d142095912c794de58547913faece
+source-git-commit: 51c54d29f998d4c5fcd6ff2e5139638c495955b3
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4019'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ A maioria dessas regras de filtro de tráfego está disponível para todos os cl
 
 Uma subcategoria de regras de filtro de tráfego requer uma licença de Segurança aprimorada ou uma licença de Proteção WAF-DDoS. Essas regras poderosas são conhecidas como regras de filtro de tráfego do WAF (Firewall do Aplicativo Web) (ou regras do WAF abreviadas) e têm acesso aos [Sinalizadores do WAF](#waf-flags-list) descritos mais adiante neste artigo.
 
-As regras de filtro de tráfego podem ser implantadas por meio dos pipelines de configuração do Cloud Manager para desenvolvimento, preparo e tipos de ambiente de produção em programas de produção (que não são de sandbox). O suporte a RDEs virá no futuro.
+As regras de filtro de tráfego podem ser implantadas por meio dos pipelines de configuração do Cloud Manager para desenvolvimento, preparo e tipos de ambiente de produção em programas de produção (que não são de sandbox). O arquivo de configuração pode ser implantado em ambientes de desenvolvimento rápido (RDEs) usando ferramentas de linha de comando.
 
 [Siga um tutorial](#tutorial) para criar rapidamente uma experiência concreta sobre esse recurso.
 
