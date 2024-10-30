@@ -3,9 +3,9 @@ title: Baixar ativos da Content Hub
 description: Saiba como baixar ativos no portal Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 96b7b7fe32aefc81a9fde15d79e9089f71cb5d31
+source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -22,20 +22,12 @@ O Content Hub permite baixar e compartilhar os ativos. Esses ativos podem inclui
 
 É possível baixar um único ativo ou vários ativos usando a Content Hub. As versões originais do ativo são baixadas.
 
-## Pré-requisitos {#prerequisites}
-
-[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) podem executar as ações mencionadas neste artigo.
-
-## Baixar ativo {#download-single-asset}
-
-[Aprove a licença do ativo](/help/assets/approve-assets-content-hub.md) antes de baixá-los.
-
-### Download único {#single-download-asset}
+## Baixar ativo licenciado único {#single-download-asset}
 
 Selecione um ativo e clique em ![baixar](/help/assets/assets/download-icon.svg) no painel superior. A caixa de diálogo Baixar ativo exibe a licença do ativo. Aceite os termos e condições de licenciamento e clique em **Baixar**.
 Como alternativa, clique em ![baixar](/help/assets/assets/download-icon.svg) no cartão de ativos para baixar o ativo.
 
-#### Download de ativo único na caixa de diálogo Ativo {#single-download-from-asset-dialog-box}
+### Baixar um único ativo licenciado da caixa de diálogo Ativo {#single-download-from-asset-dialog-box}
 
 1. Clique na miniatura do ativo. A caixa de diálogo do ativo é exibida.
 1. Clique em ![baixar](/help/assets/assets/download-icon.svg) na barra de ferramentas mais à direita. O painel de download exibe as representações de ativos e a caixa de seleção de aceitação dos termos e condições de licenciamento.
@@ -49,7 +41,7 @@ Como alternativa, clique em ![baixar](/help/assets/assets/download-icon.svg) no 
    * Clique na **Caixa Representação Original** para retornar à representação do ativo original no painel esquerdo.
 1. Aceite os termos e condições de licenciamento (para ativo licenciado) e clique em **Baixar** para baixar o ativo.
 
-### Download múltiplo {#multi-download}
+## Baixar vários Assets licenciados{#multi-download}
 
 1. Selecione os ativos e clique em ![baixar](/help/assets/assets/download-icon.svg) no painel superior. A caixa de diálogo exibida depende de a lista de download incluir ativos expirados ou somente ativos não expirados. <br/>
    **Caixa de diálogo Baixar ativos expirados:** essa caixa de diálogo exibe a visualização dos ativos expirados junto com sua data de expiração no painel esquerdo. A contagem dos ativos expirados do total selecionado é exibida no painel direito. Clique em **Continuar com todos os ativos** para baixar ativos expirados com outros ativos (se presentes). A caixa de diálogo Baixar ativos é exibida. Consulte a [caixa de diálogo Baixar ativos](#Download-asset-dialog-box) para continuar.
@@ -69,7 +61,7 @@ Como alternativa, clique em ![baixar](/help/assets/assets/download-icon.svg) no 
 1. Aceite os termos e condições e clique em **Baixar** para baixar os ativos associados às licenças disponíveis no painel esquerdo.
    ![baixar-várias-licenças](/help/assets/assets/download-multiple-license.png)
 
-### Baixar ativos não licenciados {#download-non-licensed-assets}
+### Baixar Assets não licenciado {#download-non-licensed-assets}
 
 Para baixar ativos não licenciados, selecione-os e clique em ![baixar](/help/assets/assets/download-icon.svg) no painel superior.
 
