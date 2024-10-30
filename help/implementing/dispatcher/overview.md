@@ -4,7 +4,7 @@ description: Saiba mais sobre o fluxo de dados de entrega de conteúdo e como pu
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
 feature: Dispatcher
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: d58055cd0ed2451b5e8063fbb4e7269885d0787c
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 87%
@@ -34,6 +34,5 @@ Por padrão, o tipo de conteúdo HTML/texto é definido para expirar após 300 s
 As seções a seguir fornecem mais detalhes sobre a entrega de conteúdo:
 * [Configuração da CDN](/help/implementing/dispatcher/cdn.md)
 * [Armazenamento em cache](/help/implementing/dispatcher/caching.md)
-
 
 Para obter informações sobre a replicação do serviço de autoria para o serviço de publicação, consulte [Replicação](/help/operations/replication.md).

@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 2d41b880ec3988b72128c7aac8b619c337a89427
+source-git-commit: 82c0c5973c0e4145ed1ba027012d1bda160e8c93
 workflow-type: tm+mt
-source-wordcount: '5684'
+source-wordcount: '5687'
 ht-degree: 73%
 
 ---
@@ -696,7 +696,7 @@ ht-degree: 73%
          + [Conectar o AEM Forms ao banco de dados ou à fonte de dados](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
          + [Configurar OData do [!DNL Microsoft Dynamics] ](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Conectar o formulário adaptável ao aplicativo Salesforce usando o fluxo de credenciais do cliente OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
+         + [Conectar o formulário adaptável ao aplicativo do Salesforce usando o fluxo de credenciais do cliente OAuth 2.0](/help/forms/aem-forms-salesforce-integration.md)
          + [Configurar armazenamento do [!DNL Azure] ](/help/forms/configure-azure-storage.md)
          + [Configurar os serviços em nuvem do [!DNL Microsoft Dynamics 365] e do [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
          + [Criar modelo de dados do formulário](/help/forms/create-form-data-models.md)
@@ -923,8 +923,8 @@ ht-degree: 73%
    + [Visão geral do Edge Delivery Services](/help/edge/overview.md)
    + [Utilização de Edge Delivery Services com AEM](/help/edge/using.md)
    + [Escolhendo um Método de Criação](/help/edge/authoring-methods.md)
-   + Criação WYSIWYG {#wysiwyg-authoring}
-      + [Criação de conteúdo WYSIWYG para o Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
+   + Criação no WYSIWYG {#wysiwyg-authoring}
+      + [Criação de conteúdo do WYSIWYG para o Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
       + [Publicar conteúdo no Edge Delivery](/help/edge/wysiwyg-authoring/publishing.md)
       + [Guia de introdução do desenvolvedor](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
       + [Criando blocos](/help/edge/wysiwyg-authoring/create-block.md)
@@ -1090,9 +1090,9 @@ ht-degree: 73%
       + Gerencie seu Código {#managing-code}
          + [Manuseio da versão do projeto do Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gerenciar repositórios no Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
-         + [Adicionar um repositório de Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
+         + [Adicionar um repositório da Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Adicionar um repositório privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Adicionar um repositório externo (Usuário inicial)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Adicionar um repositório externo (usuários iniciais)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Acessar repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Suporte ao submódulo Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Usar o Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1306,6 +1306,7 @@ ht-degree: 73%
       + [Validação e depuração usando ferramentas do Dispatcher herdadas](/help/implementing/dispatcher/validation-debug-legacy.md)
       + [CDN no AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md)
       + [Configuração do tráfego no CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md)
+      + [Redirecionamentos de URL sem pipeline](/help/implementing/dispatcher/pipeline-free-url-redirects.md)
       + [Edge Side Includes](/help/implementing/dispatcher/edge-side-includes.md)
       + [Configurando Credenciais e Autenticação da CDN](/help/implementing/dispatcher/cdn-credentials-authentication.md)
       + [Configuração de páginas de erro do CDN](/help/implementing/dispatcher/cdn-error-pages.md)
