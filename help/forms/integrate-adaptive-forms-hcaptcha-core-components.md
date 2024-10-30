@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: bba5e5d283da616baa57b788181af73d59d86ee3
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '960'
 ht-degree: 24%
 
 ---
@@ -24,7 +24,6 @@ O CAPTCHA (um teste de Turing público e completamente automatizado para diferen
 O AEM Forms as a Cloud Service é compatível com as seguintes soluções CAPTCHA:
 
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Cilindro de nuvens](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
 * [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 
 ## Integrar o ambiente do AEM Forms com o Captcha Captcha
