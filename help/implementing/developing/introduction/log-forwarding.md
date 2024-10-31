@@ -1,12 +1,12 @@
 ---
 title: Encaminhamento de logs para o AEM as a Cloud Service
-description: Saiba mais sobre como encaminhar logs para o Splunk e outros fornecedores de registro em log na AEM as a Cloud Service
+description: Saiba mais sobre como encaminhar logs para fornecedores de registro no AEM as a Cloud Service
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: af7e94a5727608cd480b2b32cd097d347abb23d3
+source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1781'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Esse recurso ainda não foi lançado e alguns destinos de registro podem não estar disponíveis no momento do lançamento. Enquanto isso, você pode abrir um tíquete de suporte para encaminhar logs para o **Splunk**, conforme descrito em [Logon no AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md).
+>O encaminhamento de logs agora é configurado no modo de autoatendimento, diferente do método herdado, que exigiu o envio de um tíquete de Suporte Adobe. Consulte a seção [Migrando](#legacy-migration) se o encaminhamento de log foi configurado pelo Adobe.
 
-Os clientes que têm uma licença para um fornecedor de registro ou hospedam um produto de registro podem ter registros AEM (incluindo Apache/Dispatcher) e registros CDN encaminhados aos destinos de registro associados. O AEM as a Cloud Service oferece suporte aos seguintes destinos de registro:
+Os clientes com uma licença de um fornecedor de registro em log ou que hospedam um produto de registro em log podem ter registros AEM (incluindo Apache/Dispatcher) e registros CDN encaminhados ao destino de registro em log associado. O AEM as a Cloud Service oferece suporte aos seguintes destinos de registro:
 
 * Armazenamento Azure Blob
-* DataDog
+* Datadog
 * Elasticsearch ou OpenSearch
 * HTTPS
 * Splunk
 
-O encaminhamento de logs é configurado de maneira automatizada declarando uma configuração no Git e implantando-a por meio do Pipeline de configuração do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção em programas de produção (não sandbox).
+O encaminhamento de logs é configurado de maneira automatizada declarando uma configuração no Git e implantando-a por meio do Pipeline de configuração do Cloud Manager em tipos de ambiente de RDE, desenvolvimento, preparo e produção em programas de produção (não sandbox).
 
 Há uma opção para que os registros AEM e Apache/Dispatcher sejam roteados por meio da infraestrutura de rede avançada do AEM, como IP de saída dedicado.
 
@@ -139,6 +139,8 @@ Esta é uma captura de tela de um exemplo de configuração de token SAS:
 
 ![Configuração de token SAS do Azure Blob](/help/implementing/developing/introduction/assets/azureblob-sas-token-config.png)
 
+Se os registros pararem de ser entregues depois de antes funcionarem corretamente, verifique se o token SAS configurado ainda é válido, pois pode ter expirado.
+
 #### Logs CDN do Armazenamento de Blobs do Azure {#azureblob-cdn}
 
 Cada um dos servidores de log distribuídos globalmente produzirá um novo arquivo a cada poucos segundos, na pasta `aemcdn`. Depois de criado, o arquivo não será mais anexado ao. O formato do nome do arquivo é AAAA-MM-DDThh:mm:ss.sss-uniqueid.log. Por exemplo, 2024-03-04T10:00:00.000-WnFWYN9BpOUs2aOVn4ee.log.
@@ -202,10 +204,12 @@ data:
 Considerações:
 
 * Crie uma Chave de API sem nenhuma integração com um provedor de nuvem específico.
-* a propriedade tags é opcional
+* A propriedade das tags é opcional
 * Para logs AEM, a marca de origem do Datadog está definida como `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` ou `aemhttpderror`
 * Para logs CDN, a marca de origem do Datadog está definida como `aemcdn`
-* a etiqueta de serviço do Datadog está definida como `adobeaemcloud`, mas você pode substituí-la na seção de etiquetas
+* A etiqueta de serviço do Datadog está definida como `adobeaemcloud`, mas você pode substituí-la na seção de etiquetas
+* Se o pipeline de assimilação usar tags Datadog para determinar o índice apropriado para logs de encaminhamento, verifique se essas tags estão configuradas corretamente no arquivo YAML de encaminhamento de logs. As tags ausentes podem impedir a assimilação de logs bem-sucedida se o pipeline depender delas.
+
 
 
 ### Elasticsearch e OpenSearch {#elastic}
@@ -307,6 +311,8 @@ Considerações:
 * A porta padrão é 443. Opcionalmente, ele pode ser substituído por uma propriedade chamada `port`.
 * Dependendo do log específico, o campo sourcetype terá um dos seguintes valores: *aemaccess*, *aemerror*,
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
+* Incluir na lista de permissões Se os IPs necessários tiverem sido migrados e os registros ainda não estiverem sendo entregues, verifique se não há regras de firewall impondo a validação do token de Splunk. O Fastly executa uma etapa de validação inicial na qual um token do Splunk inválido é enviado intencionalmente. Se o firewall estiver definido para encerrar conexões com tokens inválidos do Splunk, o processo de validação falhará, impedindo que o Fastly entregue logs para a instância do Splunk.
+
 
 >[!NOTE]
 >

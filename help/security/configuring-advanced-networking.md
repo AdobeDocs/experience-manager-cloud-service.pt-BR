@@ -4,9 +4,9 @@ description: Saiba como configurar recursos avançados de rede, como VPN ou um e
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 feature: Security
 role: Admin
-source-git-commit: 47d38589071bb7b51d43a2dbc65bbd169810f9ee
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '5657'
+source-wordcount: '5618'
 ht-degree: 22%
 
 ---
@@ -236,10 +236,6 @@ A configuração do endereço IP de saída dedicado é semelhante à [saída de 
 >
 >Depois de criados, os tipos de infraestrutura de endereço IP de saída dedicados não podem ser editados. A única maneira de alterar os valores de configuração é excluí-los e recriá-los.
 
->[!INFO]
->
->Se um IP de saída dedicado for configurado, o encaminhamento do Splunk continuará a usar os intervalos de saída dinâmicos. O encaminhamento do Splunk não pode ser configurado para usar um IP de saída dedicado.
-
 ### Configuração da interface {#configuring-dedicated-egress-provision-ui}
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
@@ -411,7 +407,6 @@ A maioria dos dispositivos VPN com tecnologia IPSec é compatível. Consulte as 
 >Veja a seguir as limitações para uma infraestrutura VPN:
 >
 >* Suporte limitado a uma única conexão VPN
->* O recurso de encaminhamento do Splunk não é possível em uma conexão VPN.
 >* Os Resolvedores de DNS devem ser listados no espaço de Endereço de Gateway para resolver nomes de host privados.
 
 ### Configuração da interface {#configuring-vpn-ui}

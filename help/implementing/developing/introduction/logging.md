@@ -4,9 +4,9 @@ description: Saiba como usar o Logging para AEM as a Cloud Service a fim de conf
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: bc103cfe43f2c492b20ee692c742189d6e454856
+source-git-commit: e1ac26b56623994dfbb5636993712844db9dae64
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '2376'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 O AEM as a Cloud Service é uma plataforma na qual os clientes incluem código personalizado para criar experiências exclusivas para sua base de clientes. Com isso em mente, o serviço de registro é uma função crítica para depurar e entender a execução de código em ambientes de desenvolvimento local e de nuvem, especialmente os ambientes de desenvolvimento do AEM as a Cloud Service.
 
-As configurações de registro do AEM as a Cloud Service e os níveis de registro são gerenciados em arquivos de configuração armazenados como parte do projeto AEM no Git e implantados como parte do projeto AEM por meio do Cloud Manager. O logon no AEM as a Cloud Service pode ser dividido em dois conjuntos lógicos:
+As configurações de registro do AEM as a Cloud Service e os níveis de registro são gerenciados em arquivos de configuração armazenados como parte do projeto AEM no Git e implantados como parte do projeto AEM por meio do Cloud Manager. O logon no AEM as a Cloud Service pode ser dividido em três conjuntos lógicos:
 
 * Registro de AEM, que realiza o registro no nível do aplicativo AEM
 * Registro do Apache HTTPD Web Server/Dispatcher, que realiza o registro do servidor Web e do Dispatcher na camada do Publish.
@@ -510,8 +510,6 @@ Define DISP_LOG_LEVEL debug
 
 O AEM as a Cloud Service fornece acesso a logs CDN, que são úteis para casos de uso, incluindo otimização da taxa de ocorrência do cache. O formato de log CDN não pode ser personalizado e não há conceito de configurá-lo para modos diferentes, como info, warn ou error.
 
-Os logs de CDN serão encaminhados ao Splunk para novas solicitações de tíquete de suporte ao encaminhamento do Splunk. Os clientes que já têm o encaminhamento do Splunk habilitado poderão adicionar logs de CDN no futuro.
-
 **Exemplo**
 
 ```
@@ -611,82 +609,18 @@ Dependendo do tráfego e da quantidade da instrução de log gravada pela Depura
 * Feito de forma criteriosa e somente quando absolutamente necessário
 * Revertido para os níveis apropriados e reimplantado o mais rápido possível
 
-## Logs do Splunk {#splunk-logs}
+## Encaminhamento de logs {#log-forwarding}
 
-Os clientes que têm contas do Splunk podem solicitar por meio do tíquete de suporte ao cliente que seus logs do AEM Cloud Service sejam encaminhados para o índice apropriado. Os dados de registro são equivalentes aos disponíveis por meio dos downloads de registro do Cloud Manager, mas os clientes podem achar conveniente usar os recursos de consulta disponíveis no produto Splunk.
+Embora os logs possam ser baixados do Cloud Manager, algumas organizações acham útil encaminhá-los para um destino de registro preferencial. O AEM oferece suporte a logs de transmissão para os seguintes destinos:
 
-A largura de banda da rede associada aos logs enviados ao Splunk é considerada parte do uso de E/S da rede pelo cliente.
+* Armazenamento Azure Blob
+* Datadog
+* HTTPD
+* Elasticsearch (e OpenSearch)
+* Splunk
 
-Os logs de CDN serão encaminhados ao Splunk para novas solicitações de tíquete de suporte; os clientes que já têm o encaminhamento do Splunk habilitado poderão adicionar logs de CDN no futuro.
-
->[!NOTE]
->
->Logs *específicos* e *específicos* do usuário não podem ser encaminhados para o Splunk.
->
->**Todos** os logs serão encaminhados para o Splunk, onde qualquer filtragem adicional poderá ser feita pelo cliente com base em suas necessidades.
-
-### Ativando o encaminhamento do Splunk {#enabling-splunk-forwarding}
-
-Na solicitação de suporte, os clientes devem indicar:
-
-* Endereço do ponto de extremidade HEC do Splunk. Esse endpoint deve ter um certificado SSL válido e estar acessível publicamente.
-* O índice do Splunk
-* A porta do Splunk
-* O token de HEC do Splunk. Consulte [exemplos do Coletor de Eventos HTTP](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples) para obter mais informações.
-
-As propriedades acima devem ser especificadas para cada combinação relevante de programa/tipo de ambiente. Por exemplo, se um cliente quiser ambientes de desenvolvimento, armazenamento temporário e produção, ele deverá fornecer três conjuntos de informações, conforme indicado abaixo.
+Consulte o [artigo sobre encaminhamento de logs](/help/implementing/developing/introduction/log-forwarding.md) para obter detalhes sobre como configurar esse recurso.
 
 >[!NOTE]
 >
->O encaminhamento do Splunk para ambientes de programas de sandbox não é compatível.
-
->[!NOTE]
->
->O recurso de encaminhamento do Splunk não é possível em um endereço IP de saída dedicado.
-
-Você deve garantir que a solicitação inicial inclua todos os ambientes de desenvolvimento que devem ser ativados, além dos ambientes de preparo/produção. O Splunk deve ter um certificado SSL e ser voltado ao público.
-
-Se qualquer novo ambiente de desenvolvimento criado após a solicitação inicial tiver o encaminhamento do Splunk, mas não o tiver ativado, uma solicitação adicional deverá ser feita.
-
-Observe também que, se os ambientes de desenvolvimento tiverem sido solicitados, é possível que outros ambientes de desenvolvimento que não estejam na solicitação ou até mesmo ambientes de sandbox tenham o encaminhamento do Splunk ativado e compartilhem um índice do Splunk. Os clientes podem usar o campo `aem_env_id` para distinguir esses ambientes.
-
-Abaixo, você encontrará um exemplo de solicitação de suporte ao cliente:
-
-Programa 123, Ambiente de produção
-
-* Endereço do ponto de extremidade HEC do Splunk: `splunk-hec-ext.acme.com`
-* Índice do Splunk: acme_123prod (o cliente pode escolher a convenção de nomenclatura desejada)
-* Porta do Splunk: 443
-* Token HEC do Splunk: ABC123
-
-Programa 123, Ambiente de preparo
-
-* Endereço do ponto de extremidade HEC do Splunk: `splunk-hec-ext.acme.com`
-* Índice Splunk: acme_123stage
-* Porta do Splunk: 443
-* Token HEC do Splunk: ABC123
-
-Programa 123, Envs. Desenvolvimento
-
-* Endereço do ponto de extremidade HEC do Splunk: `splunk-hec-ext.acme.com`
-* Índice Splunk: acme_123dev
-* Porta do Splunk: 443
-* Token HEC do Splunk: ABC123
-
-Pode ser suficiente que o mesmo índice do Splunk seja usado para cada ambiente, nesse caso, o campo `aem_env_type` pode ser usado para fazer a diferenciação com base nos valores dev, stage e prod. Se houver vários ambientes dev, o campo `aem_env_id` também poderá ser usado. Algumas organizações podem escolher um índice separado para os logs do ambiente de produção se o índice associado limitar o acesso a um conjunto reduzido de usuários do Splunk.
-
-Este é um exemplo de entrada de log:
-
-```
-aem_env_id: 1242
-aem_env_type: dev
-aem_program_id: 12314
-aem_tier: author
-file_path: /var/log/aem/error.log
-host: 172.34.200.12 
-level: INFO
-msg: [FelixLogListener] com.adobe.granite.repository Service [5091, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
-orig_time: 16.07.2020 08:35:32.346
-pod_name: aemloggingall-aem-author-77797d55d4-74zvt
-splunk_customer: true
-```
+>O encaminhamento de logs para ambientes de programas de sandbox não é compatível.
