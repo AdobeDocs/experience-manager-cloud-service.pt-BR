@@ -1,7 +1,7 @@
 ---
 title: Perguntas frequentes sobre o Content Hub
 description: Obtenha respostas para algumas das perguntas mais frequentes do Content Hub.
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 3b8a80e346fe63450f9b57733c67de2e4b52b2b8
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
