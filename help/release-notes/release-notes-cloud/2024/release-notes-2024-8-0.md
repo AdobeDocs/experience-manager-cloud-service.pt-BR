@@ -3,7 +3,7 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2024.8.0.
 feature: Release Information
 role: Admin
-source-git-commit: 35ec3edfec42936b9a5908265d6dbb529a70f6cf
+source-git-commit: d6f058bbb6bd7222327ff7bf3c5fe6a6ecf0461b
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 15%
@@ -12,7 +12,7 @@ ht-degree: 15%
 
 # Notas de versão do [!DNL Adobe Experience Manager] as a Cloud Service 2024.8.0 {#release-notes}
 
-A seção a seguir descreve as notas da versão de recurso atual (mais recente) do [!DNL Experience Manager] as a Cloud Service.
+A seção a seguir descreve as notas da versão de recursos do [!DNL Experience Manager] as a Cloud Service 2024.8.0.
 
 >[!NOTE]
 >
