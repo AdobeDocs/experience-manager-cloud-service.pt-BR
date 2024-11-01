@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '785'
 ht-degree: 77%
 
 ---
@@ -54,7 +54,7 @@ Para garantir uma experiência perfeita com a versão atualizada, a Adobe recome
 
 ### Uso de uma versão específica do Java {#using-java-support}
 
-Por padrão, os projetos são criados pelo processo de compilação do Cloud Manager usando o JDK do Oracle 8, mas os clientes do AEM Cloud Service são altamente recomendados a definir a versão do JDK usada para executar o Maven para `11`.
+Por padrão, os projetos são criados pelo processo de compilação do Cloud Manager usando o JDK do Oracle 8, mas os clientes do AEM Cloud Service são aconselhados a definir a versão do JDK usada para executar o Maven para `11`.
 
 #### Definindo a versão do JDK do Maven {#alternate-maven-jdk-version}
 
