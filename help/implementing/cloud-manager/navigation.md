@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f64a551bc18b53d0026736ece2a44e48cd0cfb4c
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1661'
 ht-degree: 39%
 
 ---
@@ -35,10 +35,10 @@ Ao fazer logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudm
 O console Meus programas fornece uma visão geral de todos os programas aos quais você tem acesso na organização selecionada. Ele é composto por várias partes.
 
 1. [Barras de ferramentas](#toolbars-my-programs-toolbars) para seleção de organização, alertas e configurações da conta
-1. Guias que permitem alternar a exibição atual dos seus programas.
+1. Guias que permitem alternar a exibição atual dos programas.
    * Exibição da **Página Inicial** (padrão) que seleciona a exibição de **Meus programas** com uma visão geral de todos os programas
    * **Licença** que acessa o [Painel de Licenças](/help/implementing/cloud-manager/license-dashboard.md).
-   * Observe que o padrão de guias é fechado e pode ser revelado usando https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg no [cabeçalho do Cloud Manager](#cloud-manager-header).
+   * Observe que o padrão de guias é fechado e pode ser revelado usando o ![ícone Mostrar menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) no [cabeçalho do Cloud Manager](#cloud-manager-header).
 1. [As estatísticas e a frase de chamariz](#statistics) que fornecem uma visão geral das atividades recentes
 1. Seção [**Meus programas**](#my-programs-section) que fornece uma visão geral de todos os seus programas
 1. [Links rápidos](#quick-links-section) para acessar recursos relacionados facilmente.
@@ -195,7 +195,7 @@ A barra de ferramentas do programa possibilita alternar rapidamente para outros 
 
 ![Barra de ferramentas do programa](assets/cloud-manager-program-toolbar.png)
 
-A barra de ferramentas sempre mostra a guia em que você está no momento, mesmo que você tenha ocultado as guias usando https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg.
+A barra de ferramentas sempre mostra a guia em que você está no momento, mesmo que você tenha ocultado as guias usando o ![ícone Mostrar menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg).
 
 ### Guias do programa {#program-tabs}
 
