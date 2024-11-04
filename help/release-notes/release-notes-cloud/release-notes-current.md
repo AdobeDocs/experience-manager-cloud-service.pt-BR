@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 08b23f093e4362a9885919a3e3d87bdcaada8876
+source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
 workflow-type: tm+mt
-source-wordcount: '1480'
+source-wordcount: '1514'
 ht-degree: 11%
 
 ---
@@ -83,19 +83,19 @@ Agora os relatórios podem ser gerados automaticamente na visualização do Asse
 
 **Gerenciamento de direitos digitais para ativos licenciados**
 
-Agora, as organizações podem aumentar a conformidade com a licença e minimizar o risco de compartilhar ativos com termos de licenciamento, aproveitando o DRM para ativos licenciados para usuários do Content Hub, exigindo que os usuários revisem e aceitem termos de licença antes de começar a baixar ativos licenciados.
+Agora, as organizações podem aumentar a conformidade com a licença e minimizar o risco de compartilhar ativos com termos de licenciamento, aproveitando o DRM para ativos licenciados para usuários do Content Hub, exigindo que os usuários revisem e aceitem termos de licença antes de começar a baixar ativos licenciados. Para obter mais informações, consulte [Gerenciar ativos licenciados no Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 ![baixar-várias-licenças](/help/assets/assets/download-multiple-license.png)
 
 **Configuração de metadados do cartão de ativos**
 
-O Content Hub agora permite configurar os campos de metadados principais que você precisa exibir no Cartão de ativos até um máximo de 6 campos.
+O Content Hub agora permite configurar os campos de metadados principais que você precisa exibir no Cartão de ativos até um máximo de 6 campos. Para obter mais informações, consulte a seção Cartão de Ativo em [Configurar Content Hub](/help/assets/configure-content-hub-ui-options.md#asset-card).
 
 ![Metadados-chave no Cartão de Ativo](/help/assets/assets/asset-card-key-metadata.png)
 
 **Configurar a visibilidade e o download de ativos expirados**
 
-Agora, os administradores podem controlar se precisam que os ativos expirados estejam visíveis no Content Hub. Se os ativos expirados se tornarem visíveis, eles também poderão definir se os usuários podem baixá-los.
+Agora, os administradores podem controlar se precisam que os ativos expirados estejam visíveis no Content Hub. Se os ativos expirados se tornarem visíveis, eles também poderão definir se os usuários podem baixá-los. Para obter mais informações, consulte a seção Assets Expirado em [Configurar Content Hub](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub).
 
 ![Ativos expirados no Content Hub](/help/assets/assets/expired-assets-content-hub.png)
 
