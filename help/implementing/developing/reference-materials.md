@@ -4,9 +4,9 @@ description: O AEM tem APIs abrangentes e poderosas que você pode usar para o s
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: b3405279393be51b805c1129c171bb2249fd5726
+source-git-commit: 7c2d2fc7b37d70bee4764921a138af6379401064
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '635'
 ht-degree: 4%
 
 ---
@@ -72,9 +72,10 @@ O AEM oferece componentes personalizáveis e opções de entrega de conteúdo.
 | [Ativação da exportação em JSON para um componente](/help/implementing/developing/components/enabling-json-exporter.md) | Gerar exportação JSON de conteúdo do componente com base em uma estrutura do modelador |
 | [API Assets](/help/assets/mac-api-assets.md) | Permite operações de criação, leitura, atualização e exclusão (CRUD) em ativos, incluindo binários, metadados, representações e comentários. Consulte API HTTP do AEM Assets |
 | [API HTTP de fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md) | Acessar conteúdo de fragmento de conteúdo diretamente pela API HTTP por meio de operações CRUD |
-| [API do GraphQL de fragmento de conteúdo](/help/headless/graphql-api/content-fragments.md) | Permitir a entrega eficiente de fragmentos de conteúdo aos clientes do JavaScript em implementações de CMS headless |
+| [API do GraphQL de fragmento de conteúdo](/help/headless/graphql-api/content-fragments.md) | Permitir a entrega eficiente de fragmentos de conteúdo aos clientes do JavaScript em implementações CMS headless |
 | [API HTTP do Assets de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html) | Formato exato de solicitações de ativos HTTP compatíveis |
 | [OpenAPIs de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo](/help/headless/content-fragment-openapis.md) | OpenAPIs de fragmento de conteúdo e modelo de fragmento de conteúdo |
+| AEM [OpenAPI REST para Entrega de Fragmento de Conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md) | Uma API REST HTTP em Edge Delivery Services AEM, projetada para fornecer conteúdo estruturado de Fragmentos de conteúdo no formato JSON. |
 
 ## APIs específicas para SPA {#spa-apis}
 

@@ -4,9 +4,9 @@ description: Saiba mais sobre o suporte a Fragmentos de conteúdo na API HTTP do
 feature: Content Fragments, Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 role: User, Admin
-source-git-commit: ab2cf8007546f538ce54ff3e0b92bb0ef399c758
+source-git-commit: 7386298ee83eef5693ce00077659bbc4a1a70d24
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1829'
 ht-degree: 11%
 
 ---
@@ -23,6 +23,8 @@ ht-degree: 11%
 Saiba mais sobre o suporte a Fragmentos de conteúdo na API HTTP do Assets, uma parte importante do recurso de entrega headless do Adobe Experience Manager (AEM).
 
 >[!NOTE]
+>
+>Consulte [APIs de AEM para Entrega e Gerenciamento de Conteúdo Estruturado](/help/headless/apis-headless-and-content-fragments.md) para obter uma visão geral das várias APIs disponíveis e uma comparação de alguns dos conceitos envolvidos.
 >
 >As [OpenAPIs](/help/headless/content-fragment-openapis.md) de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo também estão disponíveis.
 
@@ -41,7 +43,7 @@ Saiba mais sobre o suporte a Fragmentos de conteúdo na API HTTP do Assets, uma 
 
 A [API REST do Assets](/help/assets/mac-api-assets.md) permite que os desenvolvedores do Adobe Experience Manager as a Cloud Service acessem o conteúdo (armazenado no AEM) diretamente pela API HTTP, por meio de operações CRUD (Create, Read, Update, Delete, Criar, Ler, Atualizar, Excluir).
 
-A API permite operar o Adobe Experience Manager as a Cloud Service como um CMS (Content Management System, Sistema de gerenciamento de conteúdo) headless, fornecendo serviços de conteúdo a um aplicativo front-end do JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON.
+A API permite operar o Adobe Experience Manager as a Cloud Service como um CMS headless (sistema de gerenciamento de conteúdo), fornecendo serviços de conteúdo a um aplicativo front-end do JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON.
 
 Por exemplo, os [Aplicativos de Página Única (SPA)](/help/implementing/developing/hybrid/introduction.md), baseados em estrutura ou personalizados, exigem conteúdo fornecido pela API HTTP, geralmente no formato JSON.
 

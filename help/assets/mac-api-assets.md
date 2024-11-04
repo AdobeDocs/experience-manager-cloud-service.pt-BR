@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 4cec40947f1b50dd627321cabfbe43033a224f8b
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1720'
 ht-degree: 3%
 
 ---
@@ -48,6 +48,8 @@ Um [Fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md)
 Para obter mais informações, consulte [Suporte a fragmentos de conteúdo na [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
+>
+>Consulte [APIs de AEM para Entrega e Gerenciamento de Conteúdo Estruturado](/help/headless/apis-headless-and-content-fragments.md) para obter uma visão geral das várias APIs disponíveis e uma comparação de alguns dos conceitos envolvidos.
 >
 >As [OpenAPIs](/help/headless/content-fragment-openapis.md) de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo também estão disponíveis.
 
