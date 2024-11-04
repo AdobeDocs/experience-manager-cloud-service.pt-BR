@@ -4,10 +4,10 @@ description: Saiba como o Editor universal habilita a edição "o que você vê 
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a77bff14b34f1e433ba185b19f0f0d61728b7c7a
+source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1001'
+ht-degree: 51%
 
 ---
 
@@ -86,11 +86,13 @@ Para um profissional de marketing que deseja criar um conteúdo adaptado ao layo
 
 Ao explorar o Editor universal e prosseguir com a implementação em seus próprios projetos, lembre-se das limitações a seguir.
 
-* Não mais de 25 recursos de AEM (fragmentos de conteúdo, páginas, fragmentos de experiência, Assets etc.) devem ser referências como instrumentação em uma única página.
+* No máximo 25 recursos de AEM (Fragmentos de conteúdo, páginas, Fragmentos de experiência, Assets etc.) devem ser referenciados como instrumentação em uma única página.
 * O AEM as a Cloud Service é o único back-end AEM compatível.
+   * [O suporte para o AEM 6.5 está disponível como parte de um programa de adoção antecipada.](/help/release-notes/universal-editor/current.md#early-adoption)
 * A versão do AEM as a Cloud Service `2023.8.13099` ou superior é necessária.
 * Os autores de conteúdo devem ter suas próprias contas Experience Cloud individuais.
-* Chrome e Edge são os navegadores compatíveis
+* Como parte do AEM, o Universal Editor é compatível com os mesmos navegadores de desktop que o AEM.
+   * As versões móveis desses navegadores não são compatíveis.
 
 {{ue-ip-allow-lists}}
 

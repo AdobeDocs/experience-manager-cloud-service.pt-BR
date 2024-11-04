@@ -4,9 +4,9 @@ description: Saiba mais sobre os principais casos de uso do Universal Editor e c
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 2db4428065b3611a43137514864573947d32fff7
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Saiba mais sobre os principais casos de uso do Universal Editor e como saber mai
 
 ## Visão geral {#overview}
 
-O Universal Editor é um editor visual versátil que faz parte do Adobe Experience Manager Sites. Ele permite que os autores executem a edição &quot;o que você vê é o que você obtém&quot; (What-You-See-is-What-You-Get, ou WYSIWYG) de qualquer experiência headless ou headful.
+O Universal Editor é um editor visual versátil que faz parte do Adobe Experience Manager Sites. Ele permite que os autores executem a edição &quot;o que você vê é o que você obtém&quot; (WYSIWYG) de qualquer experiência headless ou headful.
 
 Este documento explica esses dois casos de uso em detalhes e mostra como você pode saber mais sobre eles para implementar o Editor universal em seu próprio projeto.
 
@@ -29,10 +29,10 @@ Este documento explica esses dois casos de uso em detalhes e mostra como você p
 
 O Universal Editor apresenta um editor visual conveniente e intuitivo para seus autores de conteúdo, independentemente do tipo de conteúdo que eles estejam criando. Os dois principais casos de uso são:
 
-* [Criação WYSIWYG](#wysiwyg-authoring) - Use o console do AEM Sites para gerenciar seu conteúdo e criar páginas no AEM usando o Universal Editor
+* [Criação no WYSIWYG](#wysiwyg-authoring) - Use o console do AEM Sites para gerenciar seu conteúdo e criar páginas no AEM usando o Universal Editor
 * [Criação headless](#headless-authoring) - crie conteúdo em seu próprio aplicativo headless personalizado usando o editor universal.
 
-### Criação WYSIWYG {#wysiwyg-authoring}
+### Criação no WYSIWYG {#wysiwyg-authoring}
 
 Se você já estiver familiarizado com o AEM, poderá usar o console Sites para criar e gerenciar suas páginas e editá-las com o Universal Editor.
 
@@ -40,9 +40,9 @@ Dessa forma, você pode se beneficiar das ferramentas disponíveis no console Si
 
 Se este for seu caso de uso, como uma próxima etapa imediata, consulte os documentos a seguir para obter uma visão geral completa de como começar a usar o Editor universal no AEM.
 
-1. [Guia de Introdução do Desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Introdução ao seu primeiro projeto do Editor Universal no AEM
+1. [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Introdução ao seu primeiro projeto do Universal Editor no AEM
 1. [Criação de Blocos Instrumentados para uso com o Editor Universal](/help/edge/wysiwyg-authoring/create-block.md) - Saiba como instrumentar blocos para tornar seu conteúdo editável no Editor Universal
-1. [Modelagem de conteúdo para criação WYSIWYG com Projetos Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) - Saiba mais sobre os detalhes de como os blocos são estruturados para modelar efetivamente seu conteúdo para uso com o Editor Universal.
+1. [Modelagem de conteúdo para criação no WYSIWYG com projetos do Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) - Saiba mais sobre os detalhes de como os blocos são estruturados para modelar efetivamente seu conteúdo para uso com o Universal Editor.
 
 Depois de ler esses documentos, você pode retornar a esta página para saber mais sobre o caso de uso de criação headless e como o Universal Editor funciona em geral.
 
@@ -54,7 +54,7 @@ Se este for seu caso de uso, como uma próxima etapa imediata, consulte o docume
 
 * [Aplicativo de amostra do SecurBank para o editor universal](/help/implementing/universal-editor/securbank.md)
 
-Depois de ler esse documento, você pode retornar a esta página para saber mais sobre o caso de uso de criação WYSIWYG e como o Editor universal funciona em geral.
+Depois de ler esse documento, você pode retornar a esta página para saber mais sobre o caso de uso de criação do WYSIWYG e como o Editor universal funciona em geral.
 
 ## Como o Editor Universal Funciona {#how-ue-works}
 
@@ -63,19 +63,22 @@ O poder do Editor universal é sua capacidade de criar qualquer conteúdo no loc
 O Editor Universal funciona da seguinte maneira.
 
 1. Um desenvolvedor instrumenta o aplicativo ou a página para usar o Editor universal. Essa instrumentação informa ao editor qual conteúdo é editável e como mantê-lo.
-   * Para criação WYSIWYG, as páginas criadas usando o modelo padrão são instrumentadas automaticamente.
+   * Se você seguir a documentação do [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md), suas páginas serão automaticamente instrumentadas.
    * Para criação headless, seu aplicativo pode ser facilmente instrumentado.
 1. O autor de conteúdo carrega o Editor universal, que, por sua vez, carrega sua página para edição. Por ser instrumentado, ele sabe qual conteúdo é editável e como deve ser representado e persistente.
-1. O autor de conteúdo edita o conteúdo da página em uma interface WYSIWYG intuitiva, editando no local.
-1. O Editor universal mantém as alterações automaticamente de volta ao AEM.
+1. O autor de conteúdo edita o conteúdo da página em uma interface intuitiva do WYSIWYG, editando no local.
+1. O Editor universal mantém as alterações automaticamente de volta à fonte de dados.
 
 Se você quiser saber mais sobre a arquitetura do Universal Editor, consulte o documento [Arquitetura do Universal Editor.](/help/implementing/universal-editor/architecture.md)
 
 ## Conceitos do editor universal {#concepts}
 
-Para que uma página ou aplicativo seja editável pelo Editor universal, ele deve ser instrumentado corretamente. Depois de instrumentado, ele pode ser adaptado ainda mais às necessidades do projeto.
+Para que uma página ou aplicativo seja editável pelo Editor universal, ele deve ser instrumentado corretamente.
 
 * [Atributos e Tipos](/help/implementing/universal-editor/attributes-types.md) - Para que um aplicativo ou página seja editável pelo Universal Editor, ele deve ser instrumentado corretamente. Isso inclui a inclusão dos metadados adequados para que o editor possa editar o conteúdo do aplicativo.
-* [Definições de Modelo, Campos e Tipos de Componentes](/help/implementing/universal-editor/field-types.md) - Quando os metadados estiverem presentes para habilitar a edição de um componente, você definirá quais campos e tipos de componentes eles poderão manipular no painel de propriedades do editor. Você faz isso criando um modelo e vinculando a ele a partir do componente.
-* [Personalizando a Experiência de Criação do Editor Universal](/help/implementing/universal-editor/customizing.md) - Depois que o aplicativo ou a página é totalmente instrumentado, a experiência do Editor Universal pode ser adaptada ainda mais filtrando os componentes disponíveis ou estendendo a funcionalidade do editor.
-* [Eventos do Universal Editor](/help/implementing/universal-editor/events.md) - Você pode personalizar ainda mais seu aplicativo, reagindo aos eventos padrão que o Universal Envia nas alterações no conteúdo e na interface do usuário.
+* [Definições de Modelo, Campos e Tipos de Componentes](/help/implementing/universal-editor/field-types.md) - Quando os metadados estiverem presentes para habilitar a edição de um componente, você definirá quais campos e tipos de componentes eles poderão manipular no painel de propriedades do editor.
+* [Eventos do Universal Editor](/help/implementing/universal-editor/events.md) - Você pode personalizar ainda mais seu aplicativo aprimorando a experiência de edição no aplicativo, consumindo eventos que o Universal Editor emite em conteúdo ou interações de interface do usuário.
+
+O editor universal também pode ser adaptado às necessidades do projeto.
+
+* [Personalizando a Experiência de Criação do Editor Universal](/help/implementing/universal-editor/customizing.md) - A experiência do Editor Universal pode ser adaptada filtrando vários aspectos do editor ou estendendo a funcionalidade do editor.
