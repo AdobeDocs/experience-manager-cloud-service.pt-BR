@@ -4,13 +4,13 @@ description: O artigo descreve vários casos de uso para uma função personaliz
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 580e206427f2205fa8ca537ab4988a90c988171b
+exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '2108'
 ht-degree: 0%
 
 ---
-
 
 # Exemplos de desenvolvimento e uso de função personalizada
 
@@ -264,7 +264,7 @@ Você também pode inspecionar a janela do console para visualizar os dados envi
 
 Saiba como as funções personalizadas usam campos e objetos globais para substituir manipuladores de envio com a ajuda de um formulário `Contact Us`.
 
-Adicione a seguinte linha de código, conforme explicado na seção [create-custom-function](/help/forms/custom-function-core-component-create-function.md), para personalizar a mensagem de envio ou de falha para envios de formulário e exibir as mensagens de envio de formulário em uma caixa modal:
+Adicione a seguinte linha de código, conforme explicado na seção [create-custom-functions](/help/forms/custom-function-core-component-create-function.md), para personalizar a mensagem de envio ou de falha para envios de formulários e exibir as mensagens de envio de formulários em uma caixa modal:
 
 ```javascript
 /**

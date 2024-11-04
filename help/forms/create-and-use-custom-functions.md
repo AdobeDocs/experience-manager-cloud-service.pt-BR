@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: a35556164ace2245577c3e22da1bc276fc3d98d0
+source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
@@ -72,7 +72,7 @@ O parâmetro é uma lista de argumentos usados por funções personalizadas. Uma
    * date[]: representa uma matriz de valores de data.
    * array: representa uma matriz genérica contendo valores de vários tipos.
    * object: representa o objeto de formulário passado para uma função personalizada em vez de passar seu valor diretamente.
-   * escopo: representa o objeto global, que contém variáveis somente leitura, como instâncias de formulário, instâncias de campo de destino e métodos para executar modificações de formulário em funções personalizadas. Ele é declarado como o último parâmetro nas anotações do JavaScript e não está visível no editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário. Para obter mais informações sobre o objeto Globals e como usá-lo, [clique aqui](/help/forms/custom-function-core-component-create-function.md#field-and-global-scope-objects-support-in-custom-functions).
+   * escopo: representa o objeto global, que contém variáveis somente leitura, como instâncias de formulário, instâncias de campo de destino e métodos para executar modificações de formulário em funções personalizadas. Ele é declarado como o último parâmetro nas anotações do JavaScript e não está visível no editor de regras de um Formulário adaptável. O parâmetro scope acessa o objeto do formulário ou componente para acionar a regra ou o evento necessário para o processamento do formulário. Para obter mais informações sobre o objeto Globals e como usá-lo, [clique aqui](/help/forms/custom-function-core-component-scope-function.md).
 
 O tipo de parâmetro não diferencia maiúsculas de minúsculas e espaços não são permitidos no nome do parâmetro.
 

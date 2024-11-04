@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 Role: Developer, Author
 exl-id: bc06542b-84c8-4c6a-a305-effbd16d5630
 role: User, Developer
-source-git-commit: d9f4e14edb1d7a84f130dea0c82734574404601c
+source-git-commit: cc2a226898f5dbe9073ba9b5a859218da664b1d7
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2124'
 ht-degree: 2%
 
 ---
@@ -90,7 +90,7 @@ Clonar o repositório dos componentes principais adaptáveis do Forms: você pre
    git clone https://github.com/adobe/aem-core-forms-components.git
    ```
 
-   Este comando baixa o repositório e cria uma pasta chamada `aem-core-forms-components` no computador. Neste guia, nos referimos a esta pasta como `[Adaptive Forms Core Components repository]`
+   Este comando baixa o repositório e cria uma pasta chamada `aem-core-forms-components` no computador. Neste guia, nos referimos a essa pasta como `[Adaptive Forms Core Components repository]`.
 
 
 ## Adicionar uma localidade {#add-localization-support-for-non-supported-locales}
@@ -228,6 +228,28 @@ Agora, vamos incorporar a biblioteca `clientlib-it-custom-locale` ao seu AEM as 
 
       ![Colando clientlib-it-custom-locale](/help/forms/assets/clientlib-it-custom-locale-paste.png)
 
+1. Atualizar caminho `aemLangUrl` em `languageinit.js`
+
+   1. Navegue até o seguinte diretório no [diretório do projeto AEMaaCS]:
+
+      ```
+      /ui.apps/src/main/content/jcr_root/apps/<app-id>/clientlib/clientlib-it-custom-locale/js
+      ```
+
+   1. Abra o arquivo `languageinit.js` no editor.
+   1. Localize a seguinte linha no arquivo `languageinit.js`:
+
+      `const aemLangUrl = /etc.clientlibs/forms-core-components-it/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json;`
+
+   1. Substitua `forms-core-components-it` pela `<app-id>` (ID real do aplicativo) na linha acima.
+
+      `const aemLangUrl = '/etc.clientlibs/<app-id>/clientlibs/clientlib-it-custom-locale/resources/i18n/${lang}.json';`
+
+      ![arquivo-inicialização-idioma](/help/forms/assets/language-init-name-change.png)
+
+>[!NOTE]
+>  
+> Se você não substituir `forms-core-components-it` pelo nome do projeto ou `<app-id>`, o componente seletor de datas não será traduzido.
 
 ### Crie um arquivo para o novo local:
 

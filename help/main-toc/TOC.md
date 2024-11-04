@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 0e7c58b2a4d0f0704f8693c0dddae0b1a033ec83
+source-git-commit: d256fe6c551943727c7e953a6dbd6443789616c3
 workflow-type: tm+mt
-source-wordcount: '5729'
+source-wordcount: '5741'
 ht-degree: 73%
 
 ---
@@ -746,9 +746,11 @@ ht-degree: 73%
                + [Diferença entre o Editor de Regras do Foundation e o Editor de Regras do Componente Principal](/help/forms/rule-editor-core-components-difference-tables.md)
                + [Operador e tipos de eventos disponíveis no editor de regras para um Formulário adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-events-operators.md)
                + [Exemplos de um Editor de regras para um formulário adaptável com base nos componentes principais](/help/forms/rule-editor-core-components-usecases.md)
+               + [Uso de funções assíncronas em um Formulário adaptável](/help/forms/using-async-funct-in-rule-editor.md)
             + Introdução às Funções personalizadas para o Forms adaptável com base nos Componentes principais{#create-and-use-custom-function-core-component}
                + [Introdução às funções personalizadas para o Forms adaptável com base nos Componentes principais](/help/forms/create-and-use-custom-functions.md)
                + [Criar e usar uma Função personalizada para um Formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md)
+               + [Objeto de escopo em funções personalizadas](/help/forms/custom-function-core-component-scope-function.md)
                + [Exemplos de funções personalizadas para um formulário adaptável com base nos componentes principais](/help/forms/custom-function-core-components-use-cases.md)
             + Introdução ao Forms Portal e seus componentes{#introduction-to-forms-portal}
                + [Introdução ao componente do Forms Portal](/help/forms/configure-forms-portal.md)

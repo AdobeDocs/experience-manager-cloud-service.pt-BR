@@ -1,7 +1,7 @@
 ---
-source-git-commit: 500e1b78fb9688601848fc17f312fc23be83bcb0
+source-git-commit: d761370dcf6530bf557de6f8a0e7b6e111eb9e35
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1260'
 ht-degree: 4%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 4%
 * [Chamar um fluxo de trabalho de AEM](/help/forms/configure-submit-action-workflow.md)
 * [Enviar para o Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar para o Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
-* [Conectar o formulário adaptável ao aplicativo Salesforce](/help/forms/aem-forms-salesforce-integration.md)
+* [Conectar o formulário adaptável ao aplicativo do Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Conectar um formulário adaptável ao Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
 
 ## Consulte também: {#see-more-forms-eds}
@@ -111,6 +111,12 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
    <td>A opção <b>Definir Valor de</b> não dá suporte à propriedade <b>Saída de serviço</b> para invocar APIs no Editor de Regras.
    </td>
    </tr>
+   <tr>
+   <td>Navegar entre os painéis</td>
+   <td> Os componentes do <b>Botão Avançar</b> e do <b>Botão Anterior</b> são fornecidos para navegar entre os painéis. Um botão de navegação colocado no container funciona em seus elementos secundários</td>
+   <td> A regra <b>Navegação no painel</b> está disponível no editor de regras, permitindo que os usuários criem regras para navegar entre os filhos dos painéis.
+   </td>
+   </tr>
    </tr>
    </tr>
   </tbody>
@@ -126,6 +132,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 * [Diferença em várias edições do editor de regras](/help/forms/rule-editor-core-components-difference-tables.md)
 * [Introdução às funções personalizadas para o Forms adaptável com base nos Componentes principais](/help/forms/create-and-use-custom-functions.md)
 * [Criar uma função personalizada para um formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md)
+* [Objeto de escopo em funções personalizadas](/help/forms/custom-function-core-component-scope-function.md)
 * [Exemplos de desenvolvimento e uso de uma função personalizada](/help/forms/custom-function-core-components-use-cases.md)
 
 

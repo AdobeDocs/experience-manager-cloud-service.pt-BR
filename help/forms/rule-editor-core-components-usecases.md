@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: 34be2ca89433e36a68e7d8eae42c6bd9ad6e623f
+source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,26 @@ ht-degree: 0%
 O artigo fornece exemplos detalhados de um Editor de regras para um Formulário adaptável com base em componentes principais, fornecendo insights sobre sua implementação adequada para diferentes cenários. O editor de regras permite que os desenvolvedores definam e gerenciem a lógica que controla o comportamento dos formulários.
 Agora, vamos discutir as diferentes implementações de um editor de regras.
 
+
+## Navegar entre painéis usando o botão
+
+O editor de regras permite adicionar botões de navegação aos layouts do painel, como Guias horizontais, Guias verticais, Acordeões ou Assistente. Esses botões melhoram a experiência do usuário simplificando as transições entre diferentes painéis em um formulário, deslocando o foco para o painel selecionado.
+
+Imagine que você esteja interagindo com a seção de configurações de perfil de um aplicativo, onde a navegação é facilitada por botões em vez de guias. Ao inserir as configurações de perfil no painel principal, você encontrará uma série de painéis dedicados a diferentes aspectos do perfil: **Informações Pessoais**, **Segurança de Conta** e **Preferências de Notificação**.
+
+Cada painel contém campos e opções relevantes para a atualização de informações específicas. Os botões de navegação, como `Next` e `Back`, estão posicionados de forma destacada e permitem que você se mova entre esses painéis. Clique em `Next` para avançar o usuário para o painel **Segurança da conta** e clique em `Back` para retornar ao painel **Informações pessoais**. Esse método de navegação garante uma transição contínua entre seções sem perder contexto, fornecendo uma experiência do usuário suave e intuitiva. O uso de botões de navegação simplifica o processo de gerenciamento das configurações de perfil, tornando a interação mais organizada e fácil de usar.
+
+Você pode usar a regra `Navigate among the panels` para criar regras de navegação para botões que permitem alternar entre painéis diferentes.  Selecione o atributo `Shift focus to the next item` para mover o foco para o próximo painel do layout.
+
+![Regra do próximo painel](/help/forms/assets/rule-editor-navigate-in-panel-next.png){width=50%}
+
+Quando o botão `Next` é clicado, o foco é movido para o painel subsequente no layout.
+
+![Navegar no painel usando o botão Avançar](/help/forms/assets/navigate-in-panel.gif)
+
+Da mesma forma, é possível criar uma regra para o botão `Previous` para deslocar o foco para o painel anterior.
+
+![Regra anterior do painel](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## Simplificar cálculos complexos em painéis repetíveis com funções
 

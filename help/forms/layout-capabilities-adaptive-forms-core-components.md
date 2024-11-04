@@ -4,13 +4,13 @@ description: O layout e as aparências do Adaptive Forms em vários dispositivos
 feature: Adaptive Forms, Core Components
 keywords: Layout do formulário adaptável com base nos componentes principais, Layouts diferentes para formulários, Layouts dinâmicos de formulário AEM, Layouts de formulário do AEM Cloud Service, Tipos de layout de formulário nos Componentes principais do AEM, Layouts de formulário adaptável
 role: User, Developer, Admin
-source-git-commit: 9f14950170cc92d1ab433fdaa1a5d68b4dc53484
+exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
+source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 1%
 
 ---
-
 
 # Recursos de layout do Forms adaptável com base nos componentes principais
 
@@ -261,7 +261,6 @@ Da mesma forma, também é possível ocultar títulos dos outros dois painéis. 
    ![Componentes do terceiro painel](/help/forms/assets/panel-3-component.png)
 
 1. Clique em **[!UICONTROL Visualizar]** no canto superior direito do seu ambiente de criação.
-
    ![Layout horizontal](/help/forms/assets/horizontal-layout.gif)
 
 Você também pode [arrastar e soltar os componentes](#extra-bytes) para adicionar os componentes de formulário a cada painel.

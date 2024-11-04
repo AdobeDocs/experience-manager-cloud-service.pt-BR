@@ -4,13 +4,13 @@ description: O editor de regras do Forms adaptável é compatível com vários t
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
+source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
-
 
 # Tipos de operadores e eventos no editor de regras de um Formulário adaptável com base nos Componentes principais
 
@@ -36,7 +36,7 @@ O editor de regras fornece os seguintes operadores lógicos e eventos com os qua
 * **Não Está Vazio**
 * **Selecionado:** Retorna verdadeiro quando o usuário seleciona uma opção específica para uma caixa de seleção, lista suspensa, botão de opção.
 * **Inicializado (evento):** Retorna verdadeiro quando um objeto de formulário é renderizado no navegador.
-* **Está Alterado (evento):** Retorna verdadeiro quando o usuário altera o valor inserido ou a opção selecionada para um objeto de formulário.
+* **É Alterado (evento):** Retorna true quando o usuário altera o valor inserido ou a opção selecionada para um objeto de formulário.
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -44,9 +44,9 @@ O editor de regras fornece os seguintes operadores lógicos e eventos com os qua
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
 * **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
 
-### Tipos de regras disponíveis no editor de regras {#available-rule-types-in-rule-editor}
+### Tipos de regra disponíveis em regra editor {#available-rule-types-in-rule-editor}
 
-A regra editor fornece um conjunto de tipos de regra predefinidos que podem ser usados para escrever regras. Vamos olhar cada tipo de regra em detalhes. Para obter mais informações sobre a escrita de regras no regra editor, consulte [Regras de gravação](/help/forms/rule-editor-core-components-user-interface.md#write-rules).
+A regra editor fornece um conjunto de tipos de regra predefinidos que podem ser usados para escrever regras. Vamos olhar cada tipo de regra em detalhes. Para obter mais informações sobre como gravar regras no editor de regras, consulte [Regras de gravação](/help/forms/rule-editor-core-components-user-interface.md#write-rules).
 
 #### [!UICONTROL Quando] {#whenruletype}
 
@@ -75,9 +75,9 @@ Quando você tem um componente de vários valores, como botões de opção ou li
 
 Por exemplo, uma lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao criar a regra, as opções (botões de opção) são recuperadas automaticamente e disponibilizadas ao criador da regra da seguinte maneira:
 
-![Opções de exibição de vários valores](assets/multivaluefcdisplaysoptions.png)
+![Opções de exibições de vários valores](assets/multivaluefcdisplaysoptions.png)
 
-Ao escrever um relatório Quando regra, você pode acionar a ação Limpar Valor de ações. Limpar Valor de ação limpa o valor do objeto especificado. Ter a opção Limpar Valor como opção na declaração Quando permite criar condições complexas com vários campos. É possível adicionar a declaração Restante para adicionar outras condições
+Ao escrever um relatório Quando regra, você pode acionar a ação Limpar Valor de ações. Limpar valor da ação limpa o valor do objeto especificado. Ter o valor claro de como uma opção na instrução When permite criar condições complexas com vários campos. Você pode adicionar a instrução Else para adicionar outras condições
 
 ![Limpar valor de](assets/clearvalueof.png)
 
@@ -107,9 +107,9 @@ _
 
 ![Vários campos permitidos em Quando](/help/forms/assets/allowed-multiple-field-when.png)
 
-**Considerações ao usar Vários campos permitidos no recurso de condição When**
+**Considerações ao usar vários campos permitidos no recurso Quando a condição**
 
-* Certifique-se de que o [componente principal esteja definido como a versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar esse recurso no regra editor.
+* Certifique-se de que o [componente principal esteja definido como a versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar esse recurso na regra editor.
 * Se as regras forem aplicadas a campos diferentes dentro da condição Quando, o regra é acionado mesmo se apenas um desses campos for alterado.
 
 
@@ -130,10 +130,10 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-Se os vários campos permitidos no recurso Quando a condição encontrarem problemas, seguir etapas de solução de problemas como:
+Se os vários campos permitidos no recurso Quando condição encontrarem problemas, siga as etapas de solução de problemas como:
 
 1. Abra o formulário no modo de edição.
-1. Abra a navegador conteúdo e selecione o **[!UICONTROL componente Contêiner]** de guia do formulário adaptável.
+1. Abra o Navegador de conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
 1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
 1. Clique em Concluído e salve a caixa de diálogo novamente.
 
@@ -163,7 +163,7 @@ O tipo de regra **[!UICONTROL Definir Propriedade]** permite que você defina o 
 * ativado (Booleano)
 * readOnly (Booleano)
 * obrigatório (booleano)
-* screenReaderText (Cadeia de caracteres)
+* screenReaderText (String)
 * válido (booleano)
 * errorMessage (String)
 * padrão (Número, String, Data)
@@ -184,11 +184,11 @@ A figura a seguir representa um exemplo de ativação dinâmica da caixa de sele
 
 ![Propriedade do objeto](assets/object_property_set_property_new.png)
 
-**[!UICONTROL Limpar Valor de]** Limpa o valor do objeto especificado.
+**[!UICONTROL Limpe Valor Desmarca]** o valor do objeto especificado.
 
 **[!UICONTROL Defina os Conjuntos de foco]** focalizar no objeto especificado.
 
-**[!UICONTROL Enviar Formulário]** Envia o formulário.
+**[!UICONTROL O Formulário]** de envio envia o formulário.
 
 **** Redefinir redefine o formulário ou o objeto especificado.
 
@@ -196,7 +196,7 @@ A figura a seguir representa um exemplo de ativação dinâmica da caixa de sele
 
 **[!UICONTROL Adicionar Instância]** Adiciona uma instância do painel ou linha de tabela repetível especificada.
 
-**[!UICONTROL Remover Instância]** remove uma instância do painel ou linha de tabela repetível especificada.
+**[!UICONTROL Remover instância]** Remove uma instância do painel ou linha de tabela repetível especificado.
 
 **[!UICONTROL Saída de Função]** Define uma regra baseada em funções predefinidas ou funções personalizadas.
 
@@ -224,9 +224,9 @@ Quando (opcional):
 
 O exemplo a seguir seleciona o valor de `Question2` como `True` e define o valor de `Result` como `correct`.
 
-![Definir valor-serviço da Web](assets/set-value-web-service.png)
+![Serviço-Web-valor-definição](assets/set-value-web-service.png)
 
-Exemplo de Definir Valor regra usando o serviço modelo de dados de formulário.
+Exemplo de regra Definir valor usando o serviço de Modelo de dados de formulário.
 
 #### [!UICONTROL Programa] {#show}
 
@@ -309,6 +309,50 @@ Uma regra Validate típica é estruturada da seguinte maneira:
 >Se o valor especificado não estiver em conformidade com a regra Validar, você poderá exibir uma mensagem de validação para o usuário. Você pode especificar a mensagem no campo **[!UICONTROL Mensagem de validação de script]** nas propriedades do componente na barra lateral.
 
 ![Validação de script](assets/script-validation.png)
+
+#### [!UICONTROL Navegar entre os painéis]
+
+O tipo de regra **[!UICONTROL Navegar entre os painéis]** permite alternar o foco entre painéis diferentes em um formulário. Por exemplo, é possível criar uma expressão para mover o foco para o próximo painel.
+
+Uma regra típica de **Navegar entre os painéis** para alternar o foco para o próximo painel está estruturada da seguinte maneira:
+
+`Navigate among the panels`
+
+`Shift focus to the next item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+Da mesma forma, você pode gravar **A navegação entre os painéis** regra para transferir focalizar para o painel anterior:
+
+`Navigate among the panels`
+
+`Shift focus to the previous item Object A;`
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+Para obter mais detalhes sobre como criar uma regra para navegar em um painel, [clique aqui](/help/forms/rule-editor-core-components-usecases.md#navigating-between-panels-using-buttons).
+
+#### [!UICONTROL Chamada de função assíncrona]
+
+<span class="preview"> Este é um recurso de pré-lançamento e acessível através da nossa [canal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features) de pré-lançamento. </span>
+
+O tipo de regra **[!UICONTROL Chamada de função assíncrona]** permite que você execute funções assíncronas. Ela permite iniciar uma chamada de função que opera independentemente do thread de execução principal, permitindo que outros processos continuem em execução sem esperar a conclusão da função assíncrona.
+
+Uma regra de chamada de Função assíncrona típica para executar uma função assíncrona está estruturada da seguinte maneira:
+
+`When:`
+
+`(Condition 1 OR Condition 2 OR Condition 3) is TRUE;`
+
+`Async Function call`
+
+`[Callback Function];`
+
+Para obter mais informações sobre como usar a chamada de Função assíncrona no Editor de Regras Visuais, consulte o artigo [Uso de chamadas de função assíncronas no editor de regras](/help/forms/using-async-funct-in-rule-editor.md).
 
 <!--
 ### [!UICONTROL Set Options Of] {#setoptionsof}
