@@ -4,10 +4,10 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8516cf6e9ec080824848a2b84fd669eddfaa3165
+source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 9%
+source-wordcount: '1281'
+ht-degree: 10%
 
 ---
 
@@ -139,7 +139,11 @@ Um tipo de componente de tag AEM habilita um seletor de tags AEM, que pode ser u
 
 #### Conteúdo AEM {#aem-content}
 
-Um tipo de componente de conteúdo do AEM permite um seletor de conteúdo do AEM, que pode ser usado para definir referências de conteúdo.
+Um tipo de componente de conteúdo do AEM permite um seletor de conteúdo do AEM, que pode ser usado para definir referências de conteúdo. Ele oferece um tipo de validação adicional.
+
+| Tipo de validação | Tipo de valor | Descrição | Obrigatório |
+|---|---|---|---|
+| `rootPath` | `string` | Caminho que o seletor de conteúdo abrirá para o usuário selecionar o conteúdo AEM, limitando a seleção a esse diretório e subdiretórios | Não |
 
 >[!BEGINTABS]
 
@@ -298,11 +302,15 @@ Um tipo de componente de contêiner permite o agrupamento de componentes. Ela of
 
 #### Fragmento de conteúdo {#content-fragment}
 
-O seletor de Fragmento de Conteúdo pode ser usado para selecionar um [Fragmento de Conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md) e suas variações (se necessário). Ela oferece uma configuração adicional.
+O seletor de Fragmento de Conteúdo pode ser usado para selecionar um [Fragmento de Conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md) e suas variações (se necessário). Ela oferece uma configuração e validação adicionais.
 
 | Configuração | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|
 | `variationName` | `string` | Nome da variável para armazenar a variação selecionada. Se não estiver definido, nenhum seletor de variação será exibido | Não |
+
+| Tipo de validação | Tipo de valor | Descrição | Obrigatório |
+|---|---|---|---|
+| `rootPath` | `string` | Caminho que o seletor de conteúdo abrirá para o usuário selecionar o fragmento de conteúdo, limitando a seleção a esse diretório e subdiretórios | Não |
 
 >[!NOTE]
 >
@@ -430,11 +438,15 @@ Também oferece um tipo de validação adicional.
 
 #### Fragmento de experiência {#experience-fragment}
 
-O seletor de Fragmento de experiência pode ser usado para selecionar um [Fragmento de experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md) e suas variações (se necessário). Ela oferece uma configuração adicional.
+O seletor de Fragmento de experiência pode ser usado para selecionar um [Fragmento de experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md) e suas variações (se necessário). Ela oferece uma configuração e validação adicionais.
 
 | Configuração | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|
 | `variationName` | `string` | Nome da variável para armazenar a variação selecionada. Se não estiver definido, nenhum seletor de variação será exibido | Não |
+
+| Tipo de validação | Tipo de valor | Descrição | Obrigatório |
+|---|---|---|---|
+| `rootPath` | `string` | Caminho que o seletor de conteúdo abrirá para o usuário selecionar o Fragmento de experiência, limitando a seleção a esse diretório e subdiretórios | Não |
 
 >[!BEGINTABS]
 
