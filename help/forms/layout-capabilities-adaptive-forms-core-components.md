@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 keywords: Layout do formulário adaptável com base nos componentes principais, Layouts diferentes para formulários, Layouts dinâmicos de formulário AEM, Layouts de formulário do AEM Cloud Service, Tipos de layout de formulário nos Componentes principais do AEM, Layouts de formulário adaptável
 role: User, Developer, Admin
 exl-id: dcc01d84-0d39-4fa8-ac47-71a9aba91b1e
-source-git-commit: 3ab7ff01201a7da790fe556bfe68c8c76aff9698
+source-git-commit: 7cb963794ca0d7a12d8007564c9fd6e49b53d5c4
 workflow-type: tm+mt
-source-wordcount: '2107'
+source-wordcount: '2104'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 O Forms adaptável fornece componentes de primeira classe para layout e design de formulários com eficiência. O layout controla como os componentes são exibidos em um formulário. O Forms adaptável é compatível com vários layouts: painel, assistente, acordeão, guias em guias superiores/horizontais e guias em guias esquerdas/verticais.
 
-![Tipos de layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}
+<!-- ![Types of Layout](/help/forms/assets/generic-layout-hero-image.png){align="center"}-->
 
 ## Pré-requisito
 
