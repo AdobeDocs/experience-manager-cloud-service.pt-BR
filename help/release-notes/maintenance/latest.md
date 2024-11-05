@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9278ec9bb5bccd7b40cd65a120f296faba454b9c
+source-git-commit: c638039ea957f5f7ae0dc64f49c3ace4381cb040
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '583'
 ht-degree: 19%
 
 ---
@@ -16,61 +16,58 @@ ht-degree: 19%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 18311 {#18311}
+## Versão 18459 {#18459}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 18311, lançada publicamente em quarta-feira, 22 de outubro de 2024. A versão de manutenção anterior era a versão 18175.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 18459, lançada publicamente em quarta-feira, 5 de novembro de 2024. A versão de manutenção anterior era a versão 18311.
 
-A ativação de recursos 2024.10.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2024.11.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-18311}
+### Aprimoramentos {#enhancements-18459}
 
-* ASSETS-41820 : Melhorias de indexação para watchdog de processamento.
-* ASSETS-43720 : Melhorias funcionais no watchdog de processamento.
-* ASSETS-42554: Melhorias de desempenho para pastas grandes.
-* SKYOPS-77603 : Gerenciamento de redirecionamentos por usuários empresariais.
+* CQ-4357471: adição de suporte para tradução de dicionários i18n no AEMaaCS.
+* SITES-23591: Fragmentos de conteúdo: atualização de fragmento de conteúdo para suporte a UUID.
+* SITES-25440: Fragmentos de conteúdo: API de pesquisa CFM para mostrar o status de replicação.
+* SITES-24369: Fragmentos de conteúdo: melhorias na documentação da OpenAPI.
+* SITES-25478: fragmentos de conteúdo: adicione suporte de back-end para referências de ativos externos.
+* SITES-26119: Fragmentos de conteúdo: adicione suporte a referências de ativos externos no tipo de referência.
+* SITES-21199: Edge Delivery com Universal Editor: adicionar suporte para modelos criados a partir de páginas.
+* SITES-20311: Edge Delivery com editor universal: adicione suporte para importar CSVs para planilhas.
+* SITES-24821: Edge Delivery com Universal Editor: torne aem.page / aem.live o padrão para integrar com o Edge Delivery.
 
-### Problemas corrigidos {#fixed-issues-18311}
+### Problemas corrigidos {#fixed-issues-18459}
 
-* ASSETS-37534 : alterações na pesquisa para não expor a propriedade usada para o destino de aprovação.
-* ASSETS-38322 : Remover configuração do provedor de critérios de publicação Remover recurso de evento de publicação.
-* ASSETS-40482 : problema de acessibilidade nos botões reproduzir/pausar e ativar mudo/ativar mudo no reprodutor de vídeo do Scene7.
-* ASSETS-40593 : A página de erro ocorre depois de clicar no botão &quot;Propriedades&quot; em Assets > Arquivos.
-* ASSETS-40598 : sincroniza cortes inteligentes quando um ativo não sincronizado é movido para uma pasta habilitada para sincronização.
-* ASSETS-40743 : problemas com o acionamento da caixa de diálogo Substituir ativo quando determinados caracteres existem no nome de arquivo.
-* ASSETS-40825 : Aspectos De Pesquisa Do Assets Desaparecem Após A Edição Do Formulário De Pesquisa.
-* ASSETS-41007 : A exclusão do AEM às vezes deixa o Assets órfão no delivery.
-* ASSETS-41172 : caracteres especiais de Modelos do Dynamic Media não permitidos no nome.
-* ASSETS-41896 : a Assets mencionada no cq:propriedade discarded na pasta NÃO deve ser publicada no Brand Portal.
-* ASSETS-42067: Modelos do Dynamic Media - O download fornece um erro.
-* ASSETS-42070 : Modelos do Dynamic Media - Usuários não administradores devem ter acesso de criação/edição ao Modelo.
-* ASSETS-42344 : Sincronização do Assets conectada desconectada - Reconectar e aviso para o cliente.
-* ASSETS-42620: problema com a opção de visualização de versões de ativos - mostra a visualização em branco quando abrimos o ativo.
-* ASSETS-42701: Problema de entrega e corte de imagens otimizadas para a Web.
-* ASSETS-42966 : Barricadas assíncronas podem ser desbloqueadas com erro se vários trabalhos compartilharem o mesmo caminho.
-* ASSETS-43072 : Modelos do Dynamic Media - A pesquisa de referências de modelo falha em uma referência inválida.
-* ASSETS-43212 : problemas de internacionalização no editor de esquema de metadados.
-* ASSETS-43202 : correções para selecionar anotações para imprimir a partir da linha do tempo.
-* ASSETS-43502: Nome da predefinição de imagem existente AEM CS não exibido na página Editar.
-* ASSETS-43538 : o trabalho de cópia assíncrona de ativos usa propriedades incorretas para o caminho de origem.
-* ASSETS-43798 : Verifique o caminho de destino primeiro antes de copiar ativos.
-* ASSETS-43945 : aumente o atraso de repetição para 20 min para fila de trabalhos de ativos assíncronos.
-* ASSETS-44025 : o trabalho de exclusão assíncrona de ativos falha para quando ativos individuais são selecionados.
-* SITES-26128: exceção de conversão de classe em CreateLiveCopyStep.
-* SCRNS-4551 : [Pools do SG] O canal do Screens que contém o componente de vídeo mostra &quot;Erro geral de página&quot; na visualização e no player do navegador
+* CQ-4358730: CQPagePreviewGenerator falha quando há mais de 10 chaves a serem traduzidas.
+* FORMS-14978: Ativação do carregamento de página para um formulário baseado em Componente principal para o editor de tema.
+* FORMS-16596: Problema de acessibilidade: botões desativados não reconhecidos pelo Reader de tela.
+* SITES-10575: MSM: O carregador de bloomfilter de blueprint tenta carregar >100.000 linhas.
+* SITES-20755: Fragmentos de conteúdo: a referência de ativo com atualização de UUID não mostra a miniatura.
+* SITES-26253: Fragmentos de conteúdo: Migração de UUID: alterar o tópico de trabalho do sling para genérico.
+* SITES-21338: Fragmentos de conteúdo: o endpoint referencedBy não retorna a referência de página correta.
+* SITES-24421: Fragmentos de conteúdo: editar o ponto de extremidade do CF não funciona para o CF recuperado via GET CF.
+* SITES-25461: Fragmentos de conteúdo: filtre por modelo na pesquisa de CFs não deve diferenciar maiúsculas de minúsculas.
+* SITES-25471: Fragmentos de conteúdo: corrigir a validação de modelos globais no ModelValidatorServlet.
+* SITES-25795: Fragmentos de conteúdo: a API do modelo CF falha quando não há data de cq definida.
+* SITES-25817: Fragmentos de conteúdo: aprimorar promoteLaunch: atualizar última promoção para Lançamentos de CF.
+* SITES-26030: Fragmentos de conteúdo: Endpoint /referencesTree não retorna o cabeçalho necessário.
+* SITES-26031: Fragmentos de conteúdo: status de replicação não retornado no endpoint de pesquisa CFM.
+* SITES-26213: fragmentos de conteúdo: desfazer a publicação de fragmentos de conteúdo deve validar somente as referências publicadas.
+* SITES-26226: Fragmentos de conteúdo: inicia um problema de fluxo de trabalho quando nenhum dos caminhos fornecidos é utilizável.
+* SITES-26238: Fragmentos de conteúdo: as referências de ativos retornadas pela API têm uma ordem diferente da ordem do JCR.
+* SITES-25456: eventos: ao mover uma página, um evento de exclusão de página é gerado além do evento de movimentação de página.
+* SITES-25658: Eventos: a camada e sourceUrl não são preenchidas nos eventos de estado de conteúdo da página.
+* SITES-6497: Inicializações: a página Criar na inicialização não funciona.
+* SITES-25393: Edge Delivery com Universal Editor: nós de texto perdidos ao renderizar richtext formatado com parágrafo único.
+* SITES-24643: Edge Delivery com Universal Editor: os atributos de metadados OpenGraph e twitter não funcionam no modelo de metadados da página.
 
-### Problemas conhecidos {#known-issues-18311}
+### Problemas conhecidos {#known-issues-18459}
 
-* FORMS-15818: A entrada do descritor de componente `OSGI-INF/com.adobe.aemfd.docmanager.impl.*.xml` não encontrou instruções nos logs do servidor. Estas são instruções de registro inofensivas.
+Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-18311}
+### Recursos e APIs obsoletos {#deprecated-18459}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-18311}
-
-A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda três vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
-
-### Tecnologias integradas {#embedded-tech-18311}
+### Tecnologias integradas {#embedded-tech-18459}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
