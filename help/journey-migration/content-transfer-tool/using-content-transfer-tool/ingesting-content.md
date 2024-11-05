@@ -4,10 +4,10 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: ec80660d45c69363690b653dd54634c74c3c9907
+source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
 workflow-type: tm+mt
-source-wordcount: '3137'
-ht-degree: 12%
+source-wordcount: '3187'
+ht-degree: 11%
 
 ---
 
@@ -52,6 +52,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
    * **Apagar:** Escolha o valor `Wipe`
       * A opção **Apagar** define o ponto inicial de destino da assimilação. Se **Limpar** estiver habilitado, o destino, incluindo todo o seu conteúdo, será redefinido para a versão do AEM especificada no Cloud Manager. Se não estiver ativado, o destino mantém o conteúdo atual como ponto de partida.
       * Esta opção **NÃO** afeta como a assimilação de conteúdo será realizada. A assimilação sempre usa uma estratégia de substituição de conteúdo e _não_ uma estratégia de mesclagem de conteúdo, portanto, em ambos os casos **Apagar** e **Não-Apagar**, a assimilação de um conjunto de migração substituirá o conteúdo no mesmo caminho no destino. Por exemplo, se o conjunto de migração contiver `/content/page1` e o destino já contiver `/content/page1/product1`, a assimilação removerá todo o caminho `page1` e suas subpáginas, incluindo `product1`, e substituirá pelo conteúdo no conjunto de migração. Isso significa que é necessário fazer um planejamento cuidadoso ao executar uma assimilação **Não-apagada** para um destino que contenha qualquer conteúdo que deva ser mantido.
+      * As assimilações que não são de limpeza são projetadas especificamente para o caso de uso de assimilação complementar. Essas assimilações devem ter uma quantidade incremental de novo conteúdo que foi alterado desde a última assimilação em um conjunto de migração existente. Executar assimilações que não são de limpeza fora desse caso de uso pode resultar em tempos de assimilação muito longos.
 
    >[!IMPORTANT]
    > Se a configuração **Limpar** estiver habilitada para a assimilação, ela redefinirá todo o repositório existente, incluindo as permissões de usuário na instância do Cloud Service de destino. Essa redefinição também é válida para um usuário administrador adicionado ao grupo **administradores** e esse usuário deve ser adicionado ao grupo de administradores novamente para iniciar uma assimilação.
