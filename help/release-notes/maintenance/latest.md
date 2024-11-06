@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: dc7f95ac98fd300a803e307ce11a51937d604a07
+source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
 workflow-type: tm+mt
-source-wordcount: '613'
-ht-degree: 18%
+source-wordcount: '629'
+ht-degree: 17%
 
 ---
 
@@ -56,8 +56,11 @@ A ativação de recursos do 2024.11.0 fornecerá o conjunto completo de recursos
 * SITES-25456: eventos: ao mover uma página, um evento de exclusão de página é gerado além do evento de movimentação de página.
 * SITES-25658: Eventos: a camada e sourceUrl não são preenchidas nos eventos de estado de conteúdo da página.
 * SITES-6497: Inicializações: a página Criar na inicialização não funciona.
+* SITES-25938: inicializações: exclusão inesperada após o projeto de tradução.
 * SITES-25393: Edge Delivery com Universal Editor: nós de texto perdidos ao renderizar richtext formatado com parágrafo único.
 * SITES-24643: Edge Delivery com Universal Editor: os atributos de metadados OpenGraph e twitter não funcionam no modelo de metadados da página.
+* SITES-25401: Fragmentos de experiência: atualização de referência XF lenta
+
 
 ### Problemas conhecidos {#known-issues-18459}
 
