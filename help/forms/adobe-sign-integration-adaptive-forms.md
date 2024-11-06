@@ -4,10 +4,9 @@ description: Saiba como configurar o Adobe Acrobat Sign para  [!DNL AEM Forms] a
 feature: Adaptive Forms, Acrobat Sign
 role: Admin, User
 level: Intermediate
-exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 2128dac489c270d296f86b56ae811556fb5fe87e
+source-git-commit: 551123925e43c98f8870f4a5da028d211f5c8ffb
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2195'
 ht-degree: 1%
 
 ---
@@ -57,7 +56,8 @@ Depois que os pré-requisitos estiverem em vigor, execute as etapas a seguir par
 
 1. Agora você pode **[!UICONTROL Selecionar solução]** para selecionar [!DNL Adobe Acrobat Sign].
 
-   ![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)
+   <!--![Adobe Acrobat Sign Solutions](assets/adobe-sign-solution.png)-->
+   ![Configuração do Adobe Acrobat Sign Solutions](assets/adobe-sign-solution-config.png)
 
 <!--
 
@@ -104,11 +104,17 @@ Depois que os pré-requisitos estiverem em vigor, execute as etapas a seguir par
    * [!DNL widget_write]
    * [!DNL workflow_read]
 
+   
+   > Você pode alterar o modificador de escopos de `self` para `account` diretamente da interface do AEM, conforme fornecido na etapa 12.
+
    Para obter informações passo a passo sobre como definir as configurações OAuth para um aplicativo [!DNL Adobe Acrobat Sign] e obter as chaves, consulte [Definir configurações oAuth para a documentação do desenvolvedor do aplicativo](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md).
 
    ![Configuração do OAuth](/help/forms/assets/oauthconfig-new.png)
 
 1. Volte para a página **[!UICONTROL Criar configuração do Adobe Acrobat Sign]**. Na guia **[!UICONTROL Configurações]**, especifique a [**[!UICONTROL ID do Cliente]** (também conhecida como ID do Aplicativo) e o **[!UICONTROL Segredo do Cliente]**]. Use a [ID do Cliente e o Segredo do Cliente do aplicativo Adobe Acrobat Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) criados na etapa anterior.
+
+1. Na seção [!UICONTROL Escopo da Autorização], você pode modificar os escopos para &quot;conta&quot; ou &quot;self&quot; adicionando o prefixo &quot;self&quot; ou &quot;account&quot; aos escopos, conforme necessário.
+   ![Escopo de Autorização](/help/forms/assets/authorization-scope.png)
 
 1. Selecione a opção **[!UICONTROL Habilitar Adobe Acrobat Sign para anexos]** para anexar arquivos anexados a um Formulário Adaptável ao documento [!DNL Adobe Acrobat Sign] correspondente enviado para assinatura.
 
@@ -263,6 +269,10 @@ Por exemplo, para executar o serviço de configuração diariamente às 00:00, d
 
 Para definir valores de uma configuração, [Gere Configurações OSGi usando o SDK do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) na instância do Cloud Service.
 
+## Perguntas frequentes
+
+* **P: Posso renderizar a página de Assinatura do Adobe Sign GovCloud em um iframe?**
+* **A:** Sim, você pode renderizar a página de Assinatura do Adobe Sign GovCloud em um iframe.
 
 >[!MORELIKETHIS]
 >
