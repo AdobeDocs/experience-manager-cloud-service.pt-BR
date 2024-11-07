@@ -4,7 +4,7 @@ description: Saiba como criar blocos instrumentados para uso com o Editor univer
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 3419fa943eb865d87467443527ea97fcd64909c2
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: Saiba como a modelagem de conteúdo funciona para a criação de WY
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 058f3c24ac883315dfaa9206a8c2caa4bb005d07
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '2196'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: Se você for um desenvolvedor do AEM interessado em como o Editor u
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '3139'
 ht-degree: 0%
@@ -487,7 +487,7 @@ Cada componente deve ser mapeado para um `model` para definir os campos editáve
 * `label` é a descrição do campo que aparece na interface do usuário do editor.
 * `valueType` é o tipo de dados.
 
-## Instrumentar o componente para o painel de propriedades {#properties-rail-component}
+## Instrumentação do componente para o painel Propriedades {#properties-rail-component}
 
 Você também precisa definir no nível do componente, qual modelo o componente deve usar.
 
@@ -509,7 +509,7 @@ Você também precisa definir no nível do componente, qual modelo o componente 
 
 1. Clique em **Salvar tudo** na barra de ferramentas e recarregue o Editor Universal.
 
-Agora você está pronto para testar o painel de propriedades instrumentado para o seu componente.
+Agora você está pronto para testar o painel de propriedades instrumentado para seu componente.
 
 1. No Editor universal, clique no título do teaser para editá-lo mais uma vez.
 
@@ -557,7 +557,7 @@ Por exemplo, é possível adicionar um campo para ajustar o estilo do componente
 
 1. Clique no painel de propriedades e veja se há um novo campo para ajustar o estilo do componente.
 
-   ![O painel de propriedades instrumentadas com o campo de estilo](assets/dev-style-instrumented.png)
+   ![Painel de propriedades instrumentado com o campo de estilo](assets/dev-style-instrumented.png)
 
 Qualquer campo no JCR do componente pode ser exposto no Editor universal dessa maneira.
 

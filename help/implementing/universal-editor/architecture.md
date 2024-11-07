@@ -4,10 +4,10 @@ description: Saiba mais sobre a arquitetura do Editor universal e como os dados 
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '508'
-ht-degree: 83%
+ht-degree: 74%
 
 ---
 
@@ -36,7 +36,7 @@ Este documento descreve cada um desses blocos de construção e como eles trocam
 ### Editores {#editors}
 
 * **Editor universal**: o Editor universal usa um DOM instrumentado para permitir a edição local do conteúdo. Consulte o documento [Atributos e tipos](attributes-types.md) para obter detalhes sobre os metadados necessários. Consulte o documento [Introdução ao Editor universal no AEM](getting-started.md) para obter um exemplo da instrumentação no AEM.
-* **Painel de propriedades** - Algumas propriedades dos componentes não podem ser editadas no contexto, por exemplo, o tempo de rotação de um carrossel ou qual guia do acordeão deve ser sempre aberta ou fechada. Para permitir a edição dessas informações de componente, um editor baseado em formulário é fornecido no painel lateral do editor.
+* **Painel de propriedades** - Algumas propriedades de componentes não podem ser editadas no contexto, por exemplo, o tempo de rotação de um carrossel ou qual guia do acordeão deve ser sempre aberta ou fechada. Para permitir a edição dessas informações do componente, um editor baseado em formulário é fornecido no painel lateral do editor.
 
 ### Aplicativo remoto {#remote-app}
 
@@ -51,7 +51,7 @@ O Editor universal busca manter um SDK simples, portanto, a instrumentação é 
 
 ### Camada de persistência {#persistence-layer}
 
-* **Modelo de fragmento de conteúdo**: para que o painel permita a edição das propriedades de fragmentos de conteúdo, do Editor de fragmento de conteúdo e dos editores baseados em formulário, são necessários modelos por componente e fragmento de conteúdo.
+* **Modelo de fragmento de conteúdo** - Para oferecer suporte ao painel para edição de propriedades do Fragmento de conteúdo, são necessários o Editor de fragmento de conteúdo e editores baseados em formulário, modelos por componente e fragmento de conteúdo.
 * **Conteúdo** - O conteúdo pode ser armazenado em qualquer lugar, por exemplo, em AEM, Magento e assim por diante.
 
 ![Camada de persistência](assets/persistence-layer.png)

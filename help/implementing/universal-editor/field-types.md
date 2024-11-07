@@ -4,7 +4,7 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 5153d18b6bb8934479a02cbaa5236acef7c80cd1
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 10%
@@ -28,7 +28,7 @@ Este documento fornece uma visão geral de uma definição de modelo e dos campo
 
 ## Estrutura de definição do modelo {#model-structure}
 
-Para configurar um componente por meio do painel de propriedades no Editor universal, uma definição de modelo deve existir e estar vinculada ao componente.
+Para configurar um componente por meio do painel de propriedades no Universal Editor, uma definição de modelo deve existir e estar vinculada ao componente.
 
 A definição do modelo é uma estrutura JSON, que começa com uma matriz de modelos.
 
@@ -36,7 +36,7 @@ A definição do modelo é uma estrutura JSON, que começa com uma matriz de mod
 [
   {
     "id": "model-id",        // must be unique
-    "fields": []             // array of fields which shall be rendered in the properties rail
+    "fields": []             // array of fields which shall be rendered in the properties panel
   }
 ]
 ```

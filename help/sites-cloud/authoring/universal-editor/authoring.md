@@ -5,7 +5,7 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 22%
@@ -51,11 +51,11 @@ Dependendo do conteúdo selecionado, você pode ter diferentes opções de ediç
 
 O contorno azul fino se transforma em um contorno azul pesado para indicar a seleção e a exibição de um cursor. Faça as alterações e pressione Enter/Return ou selecione fora da caixa de texto para salvar as alterações.
 
-Ao selecionar o componente de texto, seus detalhes são mostrados no painel de propriedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Também é possível editar o texto no painel.
+Quando você seleciona o componente de texto, seus detalhes são mostrados no painel de propriedades [.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail) Também é possível editar o texto no painel.
 
 ![Editando texto no painel de propriedades](assets/ue-editing-text-component-rail.png)
 
-Além disso, os detalhes do texto estão disponíveis no painel de propriedades. As alterações são salvas automaticamente quando o foco sai do campo editado no painel de propriedades.
+Além disso, os detalhes do seu texto estão disponíveis no painel de propriedades. As alterações são salvas automaticamente quando o foco sai do campo editado no painel de propriedades.
 
 ### Edição de Rich Text {#edit-rich-text}
 
@@ -83,7 +83,7 @@ Toque ou clique em **Cancelar** ou **Concluído** para descartar ou salvar as al
 
 ### Editando mídia {#edit-media}
 
-Você pode exibir seus detalhes no [painel de propriedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Você pode exibir seus detalhes no painel [propriedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Editando mídia](assets/ue-edit-media.png)
 
@@ -96,13 +96,13 @@ As alterações são salvas no conteúdo automaticamente.
 
 ### Edição de fragmentos de conteúdo {#edit-content-fragment}
 
-Se você selecionar um [Fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/overview.md), poderá editar seus detalhes no [painel de propriedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+Se você selecionar um [Fragmento do conteúdo](/help/sites-cloud/administering/content-fragments/overview.md), poderá editar seus detalhes no painel [propriedades.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
 
 ![Editando um fragmento de conteúdo](assets/ue-edit-cf.png)
 
 Os campos definidos no modelo de conteúdo do fragmento de conteúdo selecionado são exibidos e editáveis no painel de propriedades.
 
-Se você selecionar um campo relacionado a um Fragmento de conteúdo, ele será carregado no painel Componentes e o campo será rolado automaticamente para o.
+Se você selecionar um campo relacionado a um Fragmento de conteúdo, ele será carregado no painel Componentes e o campo será rolado automaticamente para ele.
 
 As alterações são salvas automaticamente quando o foco sai do campo editado no painel de propriedades.
 
@@ -148,7 +148,7 @@ O componente é inserido no container e pode ser editado no editor.
 1. Selecione um componente de contêiner na [árvore de conteúdo](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) ou no editor.
 1. Selecione o ícone de divisa do container para expandir seu conteúdo na árvore de conteúdo.
 1. Em seguida, na árvore de conteúdo, selecione um componente no contêiner.
-1. Selecione o ícone excluir no painel de propriedades.
+1. Selecione o ícone Excluir no painel de propriedades.
 
    ![Excluindo um componente](assets/ue-delete-component.png)
 

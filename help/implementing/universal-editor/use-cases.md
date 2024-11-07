@@ -4,7 +4,7 @@ description: Saiba mais sobre os principais casos de uso do Universal Editor e c
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2db4428065b3611a43137514864573947d32fff7
+source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
