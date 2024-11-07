@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,12 @@ ht-degree: 0%
 O artigo fornece exemplos detalhados de funções personalizadas para um Formulário adaptável com base em componentes principais, oferecendo insights valiosos sobre sua implementação eficaz em vários cenários. As funções personalizadas são usadas no editor de regras de uma AEM Forms, permitindo que os desenvolvedores definam e controlem a lógica que governa o comportamento do formulário.
 Este artigo explora diferentes implementações de funções personalizadas, mostrando como elas podem ser usadas para adaptar formulários para atender a requisitos específicos e aprimorar a funcionalidade geral.
 
-## Definir as opções da lista suspensa usando funções personalizadas
+## Preencher as opções da lista suspensa usando funções personalizadas
 
-O Editor de Regras nos Componentes Principais não oferece suporte à propriedade **Definir Opções de** para definir as opções da lista suspensa no tempo de execução. No entanto, é possível definir as opções da lista suspensa usando funções personalizadas.
+O Editor de Regras nos Componentes Principais não oferece suporte à propriedade **Definir Opções** para preencher opções de lista suspensa dinamicamente em tempo de execução. No entanto, é possível preencher opções de lista suspensa usando funções personalizadas, que permitem recuperar opções com base em uma lógica específica. As funções personalizadas fornecem maior flexibilidade e controle sobre como e quando as opções suspensas são preenchidas, melhorando a experiência do usuário.
 
-Adicione o seguinte código na função personalizada conforme explicado na seção [create-custom-function](/help/forms/custom-function-core-component-create-function.md) para definir as opções da lista suspensa usando funções personalizadas:
+Para preencher as opções da lista suspensa usando uma função personalizada, adicione o seguinte código, conforme descrito na seção [create-custom-function](/help/forms/custom-function-core-component-create-function.md):
+
 
 ```javascript
     /**
