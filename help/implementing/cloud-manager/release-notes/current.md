@@ -4,10 +4,10 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2024.11.0 no AEM as
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 26%
+source-wordcount: '784'
+ht-degree: 27%
 
 ---
 
@@ -38,9 +38,9 @@ Faça parte do programa de adoção antecipada do Cloud Manager e aproveite a op
 
 ### Página inicial do AEM {#aem-home}
 
-A página inicial do AEM é um ponto de partida novo e centralizado para gerenciar conteúdo, ativos e sites no Adobe Experience Manager. Personalizado para fornecer uma experiência personalizada, o AEM Home ajuda os usuários a navegar sem problemas pelo ecossistema AEM com base em suas funções e objetivos. Ele foi projetado para ser o seu guia, oferecendo os principais insights e ações recomendadas para alcançar os resultados desejados com eficiência. Apresentando um roteiro claro e personalizado, a AEM Home garante que os usuários encontrem rapidamente o que precisam para atingir seus objetivos, apoiando uma experiência mais simplificada e eficaz em todos os recursos do AEM.
+A página inicial do AEM apresenta um ponto de partida centralizado para gerenciar conteúdo, ativos e sites no Adobe Experience Manager. Projetado para proporcionar uma experiência personalizada, o AEM Home permite navegar pelo ecossistema AEM sem interrupções de acordo com suas funções e metas. Atuando como guia, ele fornece insights importantes e ações recomendadas para ajudar você a atingir seus objetivos com eficiência. Com um layout claro e personalizado, o AEM Home garante acesso rápido a ferramentas essenciais, oferecendo suporte a uma experiência simplificada e eficaz em todos os recursos do AEM.
 
-Disponível para clientes que adotaram o AEM, a Home oferece uma primeira visão de uma experiência aprimorada que otimiza fluxos de trabalho, prioriza objetivos e impulsiona resultados. Ao aceitar, você tem a oportunidade de moldar o desenvolvimento do AEM Home, fornecendo feedback que influencia sua evolução para servir melhor a comunidade AEM.
+Disponível para os primeiros usuários, a AEM Home oferece uma experiência otimizada focada na melhoria dos fluxos de trabalho, na priorização de metas e na entrega de resultados. A aceitação permite influenciar o desenvolvimento da AEM Home, fornecendo feedback que ajuda a moldar seu futuro e aumenta seu valor para toda a comunidade AEM.
 
 Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) a partir do seu endereço de email associado à sua Adobe ID. Certifique-se de incluir as seguintes informações:
 
