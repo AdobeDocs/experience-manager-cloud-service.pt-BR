@@ -4,13 +4,13 @@ description: Saiba mais sobre as noções básicas de acesso e navegação no Ed
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 36%
+source-wordcount: '1615'
+ht-degree: 35%
 
 ---
-
 
 # Acessar e navegar no editor universal {#navigating}
 
@@ -54,7 +54,7 @@ Depois que o aplicativo é instrumentado para funcionar com o Universal Editor, 
 
 1. Faça logon no Editor universal. Você precisa de uma Adobe ID para entrar e [ter acesso ao Editor Universal.](/help/implementing/universal-editor/getting-started.md#request-access)
 
-1. Após fazer logon, digite o URL da página que deseja editar na [barra de localização.](#location-bar) para poder começar a editar conteúdo como [conteúdo de texto](#text-mode) ou [conteúdo de mídia.](#media-mode)
+1. Após fazer logon, digite o URL da página que deseja editar na [barra de localização.](#location-bar) para que você possa começar a editar conteúdo, como conteúdo de texto ou conteúdo de mídia.
 
 ## Noções básicas da interface {#ui}
 
@@ -280,7 +280,7 @@ Se você selecionar um componente de contêiner na árvore de conteúdo ou no ed
 
 ![Ícone Adicionar](assets/ue-add-component-icon.png)
 
-Tocar ou clicar no botão adicionar abre um menu suspenso de componentes que estão disponíveis para [adicionar ao contêiner selecionado.](#adding-components)
+Tocar ou clicar no botão adicionar abre um menu suspenso de componentes que estão disponíveis para [adicionar ao contêiner selecionado.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
 
 ![Adicionar menu de contexto](assets/add-context-menu.png)
 
@@ -288,13 +288,21 @@ Tocar ou clicar no botão adicionar abre um menu suspenso de componentes que est
 >
 >Use a tecla de atalho `a` para adicionar um componente a um componente de contêiner selecionado.
 
+##### Duplicata {#duplicate}
+
+Se você selecionar um componente em um componente de contêiner na árvore de conteúdo ou no editor, a opção de duplicação aparece no painel de propriedades.
+
+![Ícone duplicado](assets/duplicate.png)
+
+Tocar ou clicar no botão duplicar [duplica o componente selecionado.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+
 ##### Excluir {#delete}
 
 Se você selecionar um componente em um componente de contêiner na árvore de conteúdo ou no editor, a opção de exclusão aparecerá no painel de propriedades.
 
 ![Ícone Excluir](assets/ue-delete-component-icon.png)
 
-Tocar ou clicar no botão Excluir [exclui o componente.](#deleting-components)
+Tocar ou clicar no botão Excluir [exclui o componente.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
 
 >[!TIP]
 >

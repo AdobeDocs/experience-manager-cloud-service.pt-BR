@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 31fc69523107719d6f33d7a0845407547b57f4a7
+source-git-commit: 90ca80925351157e766f8400c2b1d80db6161bf0
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 23%
+source-wordcount: '1375'
+ht-degree: 22%
 
 ---
 
@@ -132,6 +132,16 @@ O componente é inserido no container e pode ser editado no editor.
 >[!TIP]
 >
 >Use a tecla de atalho `a` para adicionar um componente ao contêiner selecionado.
+
+### Duplicação de componentes em contêineres {#duplicating-components}
+
+1. Selecione um componente em um container usando a [árvore de conteúdo](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) ou o editor.
+1. Em seguida, selecione o ícone **Duplicar** no painel de propriedades.
+
+   ![Selecionar um componente para adicionar a um contêiner](assets/ue-duplicate-component.png)
+1. O componente é duplicado e inserido abaixo do componente selecionado.
+
+O componente é inserido no container e pode ser editado no editor.
 
 ### Exclusão de componentes de contêineres {#deleting-components}
 
