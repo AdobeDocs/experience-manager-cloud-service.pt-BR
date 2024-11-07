@@ -3,9 +3,9 @@ title: Aprovar ativos no Experience Manager
 description: Saiba como aprovar ativos no [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '713'
 ht-degree: 1%
 
 ---
@@ -96,13 +96,15 @@ Para copiar o URL de entrega de um ativo aprovado no repositório:
 
 1. Selecione o ativo e clique em **[!UICONTROL Detalhes]**.
 
-1. Clique no ícone Representações disponível no painel direito.
+1. Clique no ícone do Dynamic Media disponível no painel direito.
 
-1. Selecione o **[!UICONTROL Dynamic Media com OpenAPI]** disponível na seção **[!UICONTROL Dynamic]**.
+1. Selecione o **[!UICONTROL Dynamic Media com OpenAPI]** disponível no painel **[!UICONTROL Dynamic Media]**.
 
 1. Clique em **[!UICONTROL Copiar URL]** para copiar a URL de entrega do ativo.
-   ![copiar URL de entrega](/help/assets/assets/copy-delivery-url.png)
+   ![representações dinâmicas](/help/assets/assets/dm-with-openapi-non-image-assets.png)
 
    >[!NOTE]
    >
    >A opção para copiar o URL de entrega para ativos aprovados está disponível apenas na visualização Assets.
+
+Para obter informações sobre outras representações exibidas no painel do Dynamic Media, consulte [Exibir e baixar representações do Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

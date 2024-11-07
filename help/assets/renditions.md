@@ -4,10 +4,10 @@ description: Saiba como o AEM Assets e o Dynamic Media simplificam o gerenciamen
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: a3a6456dec178c36c9fe8acfb6f98915fc86e490
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 0%
+source-wordcount: '600'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 0%
 | [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
 
-As representações no Adobe Experience Manager (AEM) são versões personalizadas de ativos digitais, como imagens, projetadas para diferentes dispositivos e plataformas para garantir o desempenho ideal. O AEM facilita a criação e o gerenciamento dessas representações, melhorando a experiência do usuário. Você pode criar miniaturas, otimizar imagens para Web ou dispositivos móveis, adicionar marcas d&#39;água, exibir e baixar representações dinâmicas ou representações de recorte inteligente e fazer muito mais.
+As representações no Adobe Experience Manager (AEM) são versões personalizadas de ativos digitais, como imagens, projetadas para diferentes dispositivos e plataformas para garantir o desempenho ideal. O AEM facilita a criação e o gerenciamento dessas representações, melhorando a experiência do usuário. Você pode criar miniaturas, otimizar imagens para Web ou dispositivos móveis, adicionar marcas d&#39;água, exibir e baixar representações dinâmicas ou representações de Recorte inteligente e fazer muito mais.
 
 As predefinições de imagem do Dynamic Media e as representações de Recorte inteligente promovem o gerenciamento sistemático de imagens que se alinha aos padrões da marca, maximizando a coesão da marca. Isso simplifica o processo de localizar e usar representações de imagem dinâmicas rapidamente, conforme necessário, sem acesso de administrador.
 
@@ -32,37 +32,56 @@ Saiba [como exibir e baixar](#view-dynamic-renditions) representações estátic
 As representações dinâmicas são versões personalizadas de ativos criadas em tempo real para atender a necessidades específicas, como redimensionar imagens com base na resolução do dispositivo ou recortar para se ajustar a diferentes taxas de aspecto.
 Essas representações permitem que as organizações entreguem experiências personalizadas e otimizadas para diversas necessidades do público-alvo. Você pode exibir e baixar representações dinâmicas em [!DNL Experience Manager Assets].
 
+## Representações do Dynamic Media {#dynamic-media-renditions}
+
 ### Antes de começar
 
 * Você deve ser um usuário licenciado do AEM Dynamic Media.
-
-* Use o [!UICONTROL modo de exibição de Administração] para configurar:
+* Use a [!UICONTROL Exibição de administração] para configurar:
    * [Perfis de imagem de corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles)
    * [Predefinições de imagem](/help/assets/dynamic-media/managing-image-presets.md)
 
   Você pode [alternar o modo de exibição](/help/assets/assets-view-introduction.md#how-to-access-assets-view) posteriormente para visualizar representações dinâmicas no modo de exibição do Assets.
+* Publish assets para o Dynamic Media para disponibilizar representações do Dynamic Media na visualização do Assets. Para obter mais informações, consulte [Publish Assets para AEM e Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
-### Exibir e baixar representações dinâmicas {#view-renditions}
 
-Para exibir ou baixar representações dinâmicas de imagens no [!DNL Experience Manager Assets], siga estas etapas:
+### Exibir e baixar representações do Dynamic Media {#view-download-dm-renditions}
+
+Para exibir ou baixar representações dinâmicas de imagens no Experience Manager Assets, siga estas etapas:
 
 1. Vá para **[!UICONTROL Assets Management]** > **[!UICONTROL Assets]**.
 
 1. Navegue até a pasta de ativos aplicável.
 
-1. Clique na imagem que você precisa exibir e em **[!UICONTROL Detalhes]**.
+1. Clique no ativo que você precisa exibir e em **[!UICONTROL Detalhes]**.
 
-1. No menu direito, clique em **[!UICONTROL Representações]**. <br> O painel **[!UICONTROL Representações]** é aberto com as representações **[!UICONTROL Dinâmicas]** e **[!UICONTROL Recorte inteligente]** disponíveis.
+1. No menu direito, clique no ícone **[!UICONTROL Dynamic Media]**. O painel **[!UICONTROL Dynamic Media]** exibe representações do Dynamic Media e do Recorte inteligente.
 
-   ![representações dinâmicas](assets/preset_smart_crop.png)
+   ![representações dinâmicas](/help/assets/assets/dm-scene7-renditions.png)
    <!-- ![dynamic renditions](assets/preset_smart_crop_view.png) -->
 
-1. Clique na representação que precisa exibir ou baixar.
+1. Selecione a representação a ser visualizada e clique em **Copiar URL** para copiar a URL da representação selecionada. Clique em **Baixar representação** para baixar as representações dos ativos de imagem.
+1. Selecione a representação de Recorte inteligente a ser visualizada e clique em **Copiar URL** para copiar a URL da representação selecionada.
+1. Clique em ![ícone de download](assets/do-not-localize/download-icon.png) para baixar todas as representações do Corte Inteligente disponíveis como um único arquivo zip.
+   ![ícone de download](/help/assets/assets/smartcrop-rendition.png)
 
-1. Clique no ícone de ![download](assets/do-not-localize/download-icon.png) ao lado da representação dinâmica que você precisa baixar. <br> Como alternativa, você pode selecionar a representação da imagem e clicar na opção **[!UICONTROL Baixar representação]** na parte inferior.
+   >[!NOTE]
+   >
+   >Essas representações estão disponíveis somente para ativos de imagem.
 
-   Você pode clicar no ícone de ![download](assets/do-not-localize/download-icon.png) disponível na parte superior da seção de representações do **[!UICONTROL Recorte inteligente]** para baixar todas as representações de Recorte inteligente disponíveis para esse ativo.
+## Representações do Dynamic Media com recursos OpenAPI {#dm-with-openapi-renditions}
 
->[!NOTE]
->
->As representações dinâmicas só estarão visíveis se os ativos forem carregados da exibição de Administrador.
+### Antes de começar
+
+* Você deve ser um usuário licenciado do AEM Dynamic Media.
+* O Assets deve ser aprovado para exibir representações do Dynamic Media com recursos OpenAPI. Para obter mais informações, consulte [Aprovar ativos no Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
+* O Dynamic Media com recursos OpenAPI deve estar ativado na instância do AEM as a Cloud Service.
+
+### Exibir representações do Dynamic Media com recursos OpenAPI {#view-download-dm-with-openapi-renditions}
+
+1. Selecione o ativo e clique em **Detalhes**.
+1. Clique no ícone do Dynamic Media disponível no painel direito. O painel Dynamic Media exibe a representação Dynamic Media com recursos OpenAPI para todos os tipos de ativos.
+   ![ícone de download](/help/assets/assets/dm-with-open-api-copy-url.png)
+1. Selecione a opção **Dynamic Media com OpenAPI** e clique em **Copiar URL** para copiar a URL de entrega do ativo.
+
+

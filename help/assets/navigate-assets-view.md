@@ -4,10 +4,10 @@ description: Entenda a interface e a navegação no [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 86%
+source-wordcount: '998'
+ht-degree: 72%
 
 ---
 
@@ -34,7 +34,7 @@ Ao fazer logon no [!DNL Assets view], você verá a seguinte interface.
 
 ## Procurar e exibir ativos e pastas {#browse-repository}
 
-Você pode navegar pelas pastas da interface do usuário principal ou da barra lateral esquerda. O Experience Manager Assets agora exibe visualizações do conteúdo das pastas em suas miniaturas ao navegar ou pesquisar conteúdo, o que melhora a descoberta de ativos disponíveis no repositório do AEM Assets. Essa miniatura de pasta economiza seu tempo gasto na pesquisa de ativos específicos em uma pasta no repositório do AEM Assets.
+Você pode navegar pelas pastas da interface do usuário principal ou da barra lateral esquerda. O Experience Manager Assets exibe visualizações visuais do conteúdo da pasta na miniatura da pasta ao navegar ou pesquisar por conteúdo. Isso melhora a descoberta de ativos disponíveis no repositório do AEM Assets. Essa miniatura de pasta economiza seu tempo gasto na pesquisa de ativos específicos em uma pasta no repositório do AEM Assets.
 Ao navegar pelos ativos de uma pasta, você pode usar a interface para exibir miniaturas dos ativos para navegar visualmente pelo repositório ou exibir detalhes do ativo para encontrar rapidamente o ativo desejado. As opções disponíveis na barra lateral esquerda são:
 
 * [Meu espaço de trabalho](/help/assets/my-workspace-assets-view.md): o Assets agora inclui um espaço de trabalho personalizável, que fornece widgets para acesso conveniente às principais áreas da interface do Assets, bem como as informações mais relevantes para você. Esta página serve como uma solução única para fornecer uma visão geral dos itens de trabalho e fornecer acesso rápido aos principais fluxos de trabalho. Um acesso mais conveniente a essas opções aumenta a eficiência e a velocidade do conteúdo.
@@ -77,9 +77,9 @@ Antes de usar, compartilhar ou baixar um ativo, é possível visualizá-lo mais 
 
 Para visualizar um ativo, selecione-o e clique em [!UICONTROL Detalhes] ![ícone de detalhes](assets/do-not-localize/edit-in-icon.png) na barra de ferramentas na parte superior. Não é possível somente visualizar o ativo, mas também visualizar os metadados detalhados dele e realizar outras ações.
 
-![Visualizar um ativo](assets/preview-asset-2.png)
+![Visualizar um ativo](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: retornar à pasta atual ou ao resultado da pesquisa atual no repositório **B**: nome e formato do arquivo visualizado **C**: atribuir tarefas **D**: metadados avançados **E**: palavras-chave e tags inteligentes **F**: comentários e anotações **G**: visualizar tarefas relacionadas ao ativo selecionado **H**: visualizar e gerenciar versões **I**: visualizar versões da imagem **J**: editar imagem **K**: metadados básicos **L**: metadados avançados **M**: palavras-chave e tags inteligentes **N**: visualizar mais detalhadamente. Zoom, tela cheia e outras opções **O**: prosseguir para o ativo anterior ou passar para o próximo na pasta atual sem voltar à pasta
+**A**: retornar à pasta atual ou ao resultado da pesquisa atual no repositório **B**: Nome e formato do arquivo que você está visualizando **C**: Atribuir tarefas **D**: Metadados avançados **E**: Palavras-chave e marcas inteligentes **F**: Comentar e anotar **G**: Exibir tarefas relacionadas ao Ativo selecionado **H**: Exibir e gerenciar versões **I**: Exibir da imagem **J**: Editar imagem **K**: Exibir representações do Dynamic Media, incluindo o Recorte inteligente e o Dynamic Media com representações de recursos OpenAPI. **L**: Metadados básicos **M**: Metadados avançados **N**: Palavras-chave e marcas inteligentes **O**: Prosseguir para o ativo anterior ou seguinte na pasta atual sem voltar para a pasta **P**: Visualizar mais de perto. Zoom, tela inteira e outras opções.
 
 Você também pode visualizar vídeos.
 
