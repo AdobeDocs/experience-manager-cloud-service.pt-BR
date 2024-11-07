@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2024.10.29
-description: Estas são as notas de versão do Universal Editor 2024.10.29.
+title: Notas de versão do Universal Editor 2024.11.05
+description: Estas são as notas de versão do Universal Editor de 2024.11.05.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 550a68ddaae9dee6ed56e238136595cb51d34b6c
+source-git-commit: 4bccfcb877c8b1a947b15935aa82ecb005e62213
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 1%
+source-wordcount: '188'
+ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2024.10.29 {#release-notes}
+# Notas de versão do Universal Editor 2024.11.05 {#release-notes}
 
-Estas são as notas de versão do Universal Editor de 29 de outubro de 2024.
+Estas são as notas de versão da versão de 5 de novembro de 2024 do Universal Editor.
 
 >[!TIP]
 >
@@ -22,16 +22,11 @@ Estas são as notas de versão do Universal Editor de 29 de outubro de 2024.
 
 ## Novidades {#what-is-new}
 
-* A entrega nativa da biblioteca `universal-editor-cors` pelo Universal Editor Service agora está disponível.
-* A opção Publish to preview foi abordada.
+* **Pipeline de reversão para o Serviço do Editor Universal:** um pipeline de reversão permite que as equipes de chamada do Adobe revertam rapidamente o Serviço do Editor Universal para qualquer ramificação específica, se necessário, garantindo alta disponibilidade por meio de recuperação rápida em caso de problemas.
+* **Chamadas de API Otimizadas para Operações de Conteúdo:** O Universal Editor Service agora usa APIs JSON em vez de APIs HTML para operações de criação, cópia e movimentação via SlingPostServlet, simplificando a análise das respostas.
 
 ## Programa de adoção antecipada para suporte ao 6.5 {#early-adoption}
 
 O Editor universal agora está disponível para casos de uso headless ao usar o AEM 6.5 como parte de um programa de adoção antecipada.
 
 Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para o Gerente de sucesso do cliente do Adobe pelo endereço de email associado à sua Adobe ID.
-
-## Correções de erros {#bug-fixes}
-
-* O mecanismo de plug-in remoto foi removido.
-* A build agora inclui o pacote CORS.
