@@ -4,9 +4,9 @@ description: Saiba mais sobre os diferentes pontos de extensão e outros recurso
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 34ae1d57e77e209e179aca5c556954dbfb170498
+source-git-commit: 6612abbd95599791ff9571b59154aa8ab34fb5f8
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ As condições podem ser definidas usando o esquema JsonLogic [.](https://jsonlo
 
 Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
-Isso é particularmente útil para aplicativos com requisitos de visualização específicos, como os [que usam Edge Delivery Services com criação WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Isso é particularmente útil para aplicativos com requisitos de visualização específicos, como os [que usam Edge Delivery Services com criação no WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
 
 Para fazer isso, basta incluir o URL de visualização desejado em uma meta tag do aplicativo instrumentado, como no exemplo a seguir.
 
