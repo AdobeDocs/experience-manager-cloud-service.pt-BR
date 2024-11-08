@@ -4,10 +4,10 @@ description: Descubra como os perfis de produto e de equipe do AEM as a Cloud Se
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 0ff50aa77711d70d372a1f43ad7336c39ab1167c
+source-git-commit: c8534ddf84998377ee63575403417165ccec2dbd
 workflow-type: tm+mt
-source-wordcount: '1821'
-ht-degree: 27%
+source-wordcount: '2059'
+ht-degree: 24%
 
 ---
 
@@ -275,6 +275,27 @@ A imagem a seguir representa os grupos AEM que refletem o perfil do produto e o 
 >
 >* Para saber mais sobre perfis de produtos AEM, consulte [Atribuir perfis de produtos AEM](/help/journey-onboarding/assign-profiles-aem.md).
 >* Para obter mais informações sobre o processo de integração, consulte a [jornada de integração](/help/journey-onboarding/overview.md).
+
+### Adicionar perfis de produto a ambientes existentes {#adding-product-profiles-for-existing-environments}
+
+Os ambientes criados antes do início de novembro de 2024 podem não ter a instância de produto de nível da organização descrita nas seções acima, bem como determinados perfis de produto. Os alternadores de serviço também não aparecerão nos perfis de produto existentes. É recomendável atualizar esses perfis de produto, que é um pré-requisito para acessar algumas APIs futuras.
+
+Se um ou mais ambientes em um programa precisarem que seus perfis de produto sejam atualizados, o Cloud Manager mostrará o aviso abaixo. Observe que um ambiente deve estar na versão mais recente do AEM antes que seus perfis de produto possam ser atualizados.
+
+![Modernizar perfis de produto](/help/onboarding/assets/modernize-product-profiles.png)
+
+Clicar no botão **Adicionar perfis de produto** abrirá um menu com opções para adicionar novos perfis de produto a todos os ambientes disponíveis no programa ou em ambientes individuais.
+
+![Substituir ambientes](/help/onboarding/assets/choose-env-r.png)
+
+Clique em **Todos os ambientes** para adicionar os novos perfis de produto a todos os ambientes no programa. Como alternativa, clique em **Ambientes individuais** para adicionar os novos perfis de produto aos ambientes selecionados. Isso levará o usuário a uma página de listagem de Ambientes, na qual a ação **Adicionar Perfis de Produto** poderá ser selecionada no ícone **Mais Opções**.
+
+![Ambientes Individuais](/help/onboarding/assets/individual-environments.png)
+
+Você também pode adicionar perfis de produto a ambientes selecionados navegando até a seção Ambientes da página Visão geral do programa, clicando no ícone Mais opções correspondente a um ambiente e selecionando Adicionar perfis de produto.
+
+O status do ambiente exibe Adicionar perfis de produto enquanto os novos perfis de produto estão sendo adicionados e, em seguida, exibe Em execução quando o processo é concluído.
+
 
 ## Perfis de produto do Cloud Manager {#cloud-manager-product-profiles}
 
