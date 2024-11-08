@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 57a9f67c7c570c63809f19f2f737dcaa612ee836
+source-git-commit: 8406caedaec4236d9fb2a0ce3e97f96417186c45
 workflow-type: tm+mt
-source-wordcount: '5776'
+source-wordcount: '5780'
 ht-degree: 72%
 
 ---
@@ -948,6 +948,7 @@ ht-degree: 72%
       + [Dados em Tabelas e Planilhas](/help/edge/wysiwyg-authoring/tabular-data.md)
       + [Gerenciamento de dados de taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
       + [Blocos do WYSIWYG e baseados em documento](/help/edge/wysiwyg-authoring/wysiwyg-doc-blocks.md)
+      + [Páginas com DAM Assets](/help/edge/wysiwyg-authoring/dam-assets.md)
       + [Recursos de Sites WIP](/help/edge/wysiwyg-authoring/wip-features.md)
    + Criação Baseada em Documento {#document-authoring}
       + [Criação  ](/help/edge/docs/authoring.md)
