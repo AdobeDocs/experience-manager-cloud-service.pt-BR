@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2024.11.05
-description: Estas são as notas de versão do Universal Editor de 2024.11.05.
+title: Notas de versão do Universal Editor 2024.11.12
+description: Estas são as notas de versão do Universal Editor de 2024.11.12.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 7ace83e0df1d917c359f07a806da638739b4a4a6
+source-git-commit: 03ccad00e689052ada8cca976d6c385be01d3cc9
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2024.11.05 {#release-notes}
+# Notas de versão do Universal Editor 2024.11.12 {#release-notes}
 
-Estas são as notas de versão da versão de 5 de novembro de 2024 do Universal Editor.
+Estas são as notas de versão da versão de 12 de novembro de 2024 do Universal Editor.
 
 >[!TIP]
 >
@@ -22,6 +22,22 @@ Estas são as notas de versão da versão de 5 de novembro de 2024 do Universal 
 
 ## Novidades {#what-is-new}
 
-* **Pipeline de reversão para o Serviço do Editor Universal:** um pipeline de reversão permite que as equipes de chamada do Adobe revertam rapidamente o Serviço do Editor Universal para qualquer ramificação específica, se necessário, garantindo alta disponibilidade por meio de recuperação rápida em caso de problemas.
-* **Chamadas de API Otimizadas para Operações de Conteúdo:** O Universal Editor Service agora usa APIs JSON em vez de APIs HTML para operações de criação, cópia e movimentação via SlingPostServlet, simplificando a análise das respostas.
-* **Suporte para o Editor Universal no AEM 6.5:** O Editor Universal agora está disponível para casos de uso headless [ao usar AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
+* **Opção Repetir no Tempo Limite do CORS:** Com a [versão 2024.09.26,](/help/release-notes/universal-editor/2024/2024-09-26.md), um painel de erros foi introduzido quando o editor não conseguiu estabelecer uma conexão com a página carregada, impedindo estados de carregamento infinitos.
+   * Com esta versão, o editor continua tentando automaticamente e, uma vez estabelecida a conexão, a edição pode ser retomada.
+   * Isso é especialmente útil para páginas que podem levar mais tempo do que o tempo limite de um minuto para inicializar.
+* **Aprimoramentos de extensibilidade para desenvolvedores:** o Editor Universal agora oferece suporte à difusão de eventos para extensões, permitindo que os desenvolvedores de extensão assinem [eventos.](/help/implementing/universal-editor/events.md)
+   * Isso permite que os desenvolvedores [reajam aos eventos do editor em suas extensões personalizadas.](/help/implementing/universal-editor/customizing.md#extending)
+* **Seleção de Componente Persistente**: os componentes selecionados no editor agora persistem mesmo após a atualização do navegador.
+   * Isso garante que os usuários possam continuar trabalhando sem perder o contexto ao recarregar a página.
+* **Links Rápidos Localizados:** A seção **Links Rápidos** na tela inicial agora fornece links localizados à documentação, ajudando os usuários a acessarem facilmente guias relevantes com base em suas preferências de idioma.
+* **ID de Solicitação para Depuração Avançada:** As notificações de erro agora incluem uma **ID de Solicitação** na seção de detalhes, que se correlaciona com `x-request-id header`.
+   * Isso facilita para as equipes de engenharia do Adobe rastrear e diagnosticar problemas, combinando esses erros com registros internos.
+
+## Outras melhorias {#other-improvements}
+
+* **Rótulos Longos de Árvore de Conteúdo Corrigidos:** Resolveu um problema no qual rótulos longos no painel **Árvore de Conteúdo** foram cortados
+   * Isso garante que as alças de arrastar e soltar estejam sempre visíveis para a reorganização do conteúdo.
+* **Rótulos de Propriedades Longas Corretos:** Corrigido um erro no qual rótulos de campos longos no painel **Propriedades** se sobrepunham às informações de validação de campo
+* **Rolagem Horizontal no Painel Propriedades:** corrigido um problema no qual elementos largos no painel **Propriedades** causavam rolagem horizontal
+* **Barra de Ferramentas Inativa Corrigida Durante as Notificações:** A barra de ferramentas **Adobe Experience Cloud** superior agora está totalmente funcional quando as notificações [em caixa de informações](https://spectrum.adobe.com/page/toast/) são exibidas.
+* **Estabilidade Aprimorada:** Foram adicionados limites de erro para manipular valores inesperados, evitando que toda a interface do usuário falhe quando um único renderizador ou validador falhar, melhorando a robustez
