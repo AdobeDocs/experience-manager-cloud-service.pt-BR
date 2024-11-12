@@ -4,9 +4,9 @@ description: Saiba como entregar projetos do Cloud Manager usando o Edge Deliver
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '752'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ O Cloud Manager no AEM as a Cloud Service permite que você ative o Serviço Edg
 
 Se você tiver licenciado Edge Delivery Services como parte do Adobe Experience Manager Sites, poderá integrar seu site com Edge Delivery Services diretamente no Cloud Manager e ativar o [usando uma experiência guiada de autoatendimento](/help/implementing/cloud-manager/managing-code/private-repositories.md).
 
-Além disso, você pode acessar uma experiência unificada para gerenciar todas as propriedades do AEM, garantindo a consistência entre os fluxos de trabalho principais. Isso inclui gerenciamento de nome de domínio, gerenciamento de certificado SSL e mapeamentos de CDN.
+Além disso, você pode acessar uma experiência unificada para gerenciar todas as propriedades do AEM, garantindo a consistência entre os fluxos de trabalho principais. Esses workflows incluem gerenciamento de nome de domínio, gerenciamento de certificado SSL e mapeamentos CDN.
 
 ## Vantagens de usar o caminho recomendado para o Adobe para o Edge Delivery Services {#recommended-path-eds}
 
@@ -67,19 +67,20 @@ Um Edge Delivery Services pode ser adicionado de várias maneiras diferentes, de
 
 <!-- &#x2460; for "1" inside circle -->
 
-A **lista de tarefas pendentes do Edge Delivery** é uma lista de verificação de tarefas de integração criada para orientá-lo na integração e no gerenciamento do seu site Edge Delivery até a [ativação](/help/journey-onboarding/go-live-checklist.md).
+A **Lista de tarefas do Edge Delivery** é uma lista de verificação de tarefas de integração destinada a orientá-lo pela integração, gerenciando seu site do Edge Delivery até o [Início da atividade](/help/journey-onboarding/go-live-checklist.md).
 
 ![Lista de tarefas do site Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Tarefa | Descrição |
 | --- | --- | --- |
 | 1 | Associe-se ao canal de colaboração de produtos | Clicar em **Enviar solicitação agora** envia uma solicitação ao Adobe para criar um canal para sua empresa. Se o canal já existir, você será encaminhado para o canal de sua empresa. |
-| 2 | Concluir pré-requisitos | Clicar em **Exibir tutorial da Introdução** direciona você para o [Introdução - Tutorial do desenvolvedor](https://www.aem.live/developer/tutorial). |
+| 2 | Concluir pré-requisitos | Consulte o [Tutorial de introdução](https://www.aem.live/developer/tutorial). |
 | 3 | Adicionar site do Edge Delivery | Consulte [Adicionar um site do Edge Delivery](#eds-add-site). |
 | 4 | Adicionar domínio | Consulte [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Adicionar certificado SSL | Consulte [Adicionar certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
 | 6 | Configurar o CDN do site do Edge Delivery | Consulte [Adicionar uma configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
-| 7 | Go Live | Conclua a última etapa da ativação. |
+| 7 | Configurar validação por push | Consulte [Configurar validação por push](/help/implementing/cloud-manager/cdn-configurations/cdn-setup-push-invalidation.md). |
+| 8 | Publicação | Consulte a [Lista de verificação de ativação](/help/edge/docs/go-live-checklist.md). |
 
 >[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 

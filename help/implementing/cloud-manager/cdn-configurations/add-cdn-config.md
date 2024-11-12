@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 672513d7-ee0a-4f6e-9ef0-7a41fabbaf9a
-source-git-commit: 42b30c12f17106610cfb7f7b4c04c5ab703bab45
+source-git-commit: cd15fd36b8baf8e693ae449031a51fa1febefaee
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '440'
 ht-degree: 6%
 
 ---
@@ -31,7 +31,7 @@ Para CDNs gerenciados por Adobe, ao usar um certificado SSL DV, somente sites co
 
    | Caso de uso | Etapas |
    | --- | --- |
-   | Quero adicionar uma configuração de CDN a um site do Edge Delivery *existente* no Cloud Manager | a. No menu do lado esquerdo, em **Serviços**, clique em **Edge Delivery Sites**.<br>b. Na tabela do Edge Delivery, ao final de uma linha que não tem um domínio associado a ela, clique em ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c Clique em **Configurar CDN**.  ![Clique em Configurar CDN para um site do Edge Delivery](/help/implementing/cloud-manager/assets/cm-eds-config-cdn.png) |
+   | Quero adicionar uma configuração de CDN a um site do Edge Delivery *existente* no Cloud Manager | a. No menu do lado esquerdo, em **Serviços**, clique em **Edge Delivery Sites**.<br>b. Na tabela do Edge Delivery, ao final de uma linha que não tem um domínio associado a ela, clique em ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg).<br>c Clique em **Configurar CDN**. |
    | Quero adicionar uma configuração de CDN no Cloud Manager | a. No menu do lado esquerdo, em **Serviços**, clique em **Configurações de CDN**.<br>b. Próximo ao canto superior direito da página Configurações de CDN, clique em **Adicionar**. |
 
 1. Na caixa de diálogo **Configurar CDN**, na lista suspensa **Origem**, selecione uma das seguintes opções:

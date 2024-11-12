@@ -4,17 +4,16 @@ description: Saiba mais sobre como configurar a invalidação de push para criar
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-hide: true
-source-git-commit: 3941b7f97d434946a3cb796633f306b89e68c0a4
+source-git-commit: bb225fcb931c6e9014ab18e6efbb0620262bcd76
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '160'
 ht-degree: 2%
 
 ---
 
 # Configurar invalidação por push
 
-A invalidação por push garante que as atualizações de conteúdo feitas por autores sejam removidas automaticamente da Rede de entrega de conteúdo (CDN) gerenciada quando publicada, para que somente o conteúdo mais recente seja distribuído.
+A invalidação por push garante que as atualizações de conteúdo feitas por autores sejam removidas automaticamente da Rede de entrega de conteúdo (CDN) gerenciada quando publicada. Isso garante que somente o conteúdo mais recente seja disponibilizado.
 
 O sistema limpa o conteúdo com base em URLs específicos e tags ou chaves de cache, garantindo que as versões desatualizadas sejam removidas.
 
@@ -28,3 +27,5 @@ As seguintes propriedades de configuração definem o nome do host de produção
 | `cdn.prod.type` | gerenciado |   |
 
 Depois que as alterações forem feitas na folha de configuração, os usuários deverão visualizá-las e ativá-las usando a [ferramenta Sidekick](/help/edge/docs/sidekick.md) para aplicar as atualizações.
+
+Consulte também [Introdução a Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#ed-todo-list).
