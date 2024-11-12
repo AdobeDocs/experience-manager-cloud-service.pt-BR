@@ -3,7 +3,8 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2024.8.0.
 feature: Release Information
 role: Admin
-source-git-commit: d6f058bbb6bd7222327ff7bf3c5fe6a6ecf0461b
+exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
+source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 15%
@@ -52,7 +53,7 @@ A funcionalidade [herança](/help/sites-cloud/authoring/universal-editor/inherit
 Além disso, os seguintes recursos de gerenciamento de página agora são compatíveis:
 
 * [Marcas de AEM](/help/sites-cloud/authoring/sites-console/tags.md) podem ser exportadas como uma [taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md) para Edge Delivery Services.
-* [Modelos](/help/edge/wysiwyg-authoring/templates.md) para Edge Delivery Services serão lançados em breve!
+* [Modelos](/help/sites-cloud/authoring/universal-editor/templates.md) para Edge Delivery Services serão lançados em breve!
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 

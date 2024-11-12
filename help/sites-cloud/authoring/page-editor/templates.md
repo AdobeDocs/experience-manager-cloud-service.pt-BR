@@ -1,27 +1,31 @@
 ---
-title: Criação de modelos de páginas
-description: O modelo define a estrutura da página resultante e, com o editor de modelos, criar e manter modelos não é mais uma tarefa somente para desenvolvedores
+title: Modelos para criar páginas que são editáveis com o editor de páginas
+description: Você pode usar o Editor de modelos para criar modelos que seus autores de conteúdo podem usar para criar páginas que são editáveis com o Editor de páginas.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
 workflow-type: tm+mt
-source-wordcount: '4524'
-ht-degree: 84%
+source-wordcount: '4415'
+ht-degree: 77%
 
 ---
 
-# Criação de modelos de páginas   {#creating-page-templates}
 
-Ao criar uma página, é necessário selecionar um modelo, que é usado como base para a criação da nova página. O modelo define a estrutura da página resultante, todo conteúdo inicial e os componentes que podem ser usados.
+# Modelos para criar páginas que são editáveis com o editor de páginas {#creating-page-templates}
 
-Com o **Editor de modelos**, criar e manter modelos não é mais uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de **autor de modelo**, também pode ser envolvido. Os desenvolvedores ainda são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o **autor do modelo** terá a flexibilidade de criar e configurar modelos sem um projeto de desenvolvimento.
+Você pode usar o Editor de modelos para criar modelos que seus autores de conteúdo podem usar para criar páginas que são editáveis com o Editor de páginas.
 
-O **Console de Modelos** permite que os autores de modelo:
+## Visão geral {#overview}
 
-* Criem um novo modelo ou copiem um modelo existente.
-* Gerenciem o ciclo de vida do modelo.
+Quando um autor cria uma página, ele deve selecionar um modelo, que é usado como base para a nova página. O modelo define a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados ao editar a página no Editor de páginas.
+
+>[!NOTE]
+>
+>[Os modelos também estão disponíveis para criar páginas editáveis com o Editor Universal.](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+Com o **Editor de modelos**, criar e manter modelos não é uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de **autor do modelo**, pode criar modelos. Os desenvolvedores são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o **autor do modelo** terá a flexibilidade de criar e configurar modelos sem envolver um desenvolvedor.
 
 O **Editor de Modelos** permite que os autores de modelo:
 
@@ -29,9 +33,9 @@ O **Editor de Modelos** permite que os autores de modelo:
 * Pré-configurar os componentes.
 * Defina quais componentes podem ser editados nas páginas criadas com o modelo.
 
-Este documento explica como um **autor do modelo** pode usar o console de modelos e o editor para criar e gerenciar modelos editáveis.
+Este documento explica como um **autor do modelo** pode usar o **Editor de Modelos** para criar e gerenciar modelos editáveis.
 
-Para obter informações detalhadas sobre como os modelos editáveis funcionam em nível técnico, consulte o documento do desenvolvedor [Modelos de Página](/help/implementing/developing/components/templates.md).
+Para obter informações detalhadas sobre como os modelos editáveis funcionam a um nível técnico, consulte o documento do desenvolvedor [Modelos editáveis](/help/implementing/developing/components/templates.md) para obter mais informações.
 
 >[!NOTE]
 >
@@ -39,15 +43,15 @@ Para obter informações detalhadas sobre como os modelos editáveis funcionam e
 
 ## Antes de começar {#before-you-start}
 
+Antes de começar, é importante considerar que a criação de um modelo requer colaboração. Por esse motivo, a [Função](#roles) é indicada para cada tarefa. Isso não afetará a maneira como você usa um modelo para criar uma página, mas afeta a maneira como uma página se relaciona com o modelo.
+
 >[!NOTE]
 >
 >Um administrador precisa configurar uma pasta de modelo no **Navegador de configurações** e aplicar permissões apropriadas antes que um autor de modelo possa criar um modelo nessa pasta.
 
-Antes de começar, é importante considerar que a criação de um modelo requer colaboração. Por esse motivo, a [Função](#roles) é indicada para cada tarefa. Isso não afetará a maneira como você usa um modelo para criar uma página, mas afeta a maneira como uma página se relaciona com o modelo.
-
 ### Funções {#roles}
 
-A criação de um novo modelo usando o **Console de modelos** e o **Editor de modelos** exige a colaboração entre as seguintes funções:
+A criação de um novo modelo requer a colaboração entre as seguintes funções:
 
 * **Administrador**:
    * Cria uma nova pasta de modelos requer direitos de `admin`.
@@ -72,9 +76,6 @@ As tarefas detalhadas neste documento são listadas com a função responsável 
 
 Ao criar um modelo editável, você:
 
-* Use o console **Modelo**. Isso está disponível na seção **Geral** do console **Ferramentas**.
-   * Ou diretamente em: `https://<host>:<port>/libs/wcm/core/content/sites/templates.html/conf`
-* É possível [criar uma pasta para os modelos](#creating-a-template-folder-admin) se necessário
 * [Criar um novo modelo](#creating-a-new-template-template-author), inicialmente vazio 
 * [Definir propriedades adicionais](#defining-template-properties-template-author) para o modelo, se necessário
 * [Editar o modelo](#editing-templates-template-authors) para definir o:
@@ -92,7 +93,7 @@ Ao criar um modelo editável, você:
 
 >[!TIP]
 >
->Nunca insira qualquer informação que deve ser internacionalizada em um modelo. <!-- Never enter any information that must be [internationalized](/help/sites-developing/i18n.md) into a template.-->
+>Nunca insira qualquer informação que deve ser [internacionalizada](/help/implementing/developing/extending/i18n/dev.md) em um modelo.
 >
 >Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, aproveite [os recursos de localização dos componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR)
 
@@ -102,7 +103,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
 
 ### Criação de um novo modelo - Autor do modelo {#creating-a-new-template-template-author}
 
-1. Abra o **Console de Modelos** (por meio de **Ferramentas >** **Geral**) e navegue até a pasta necessária.
+1. Abra o **[Console de Modelos](/help/sites-cloud/administering/templates-console.md)** e navegue até a pasta necessária.
 
    >[!NOTE]
    >
@@ -129,7 +130,7 @@ Uma pasta de modelo deve ser criada para que o projeto mantenha seus modelos esp
    >
    >Quando um modelo novo for criado, ele será marcado como **Rascunho** no console. Isso indica que ainda não está disponível para uso por autores da página.
 
->[!NOTE]
+>[!TIP]
 >
 >Os modelos são ferramentas eficientes para simplificar o fluxo de trabalho de criação de página. No entanto, usar modelos em excesso pode sobrecarregar os autores e tornar confusa a criação da página. Uma boa regra geral é manter o número de modelos abaixo de 100.
 >
@@ -148,15 +149,7 @@ Um modelo pode ter as seguintes propriedades:
 * Descrição
    * Uma descrição opcional para fornecer mais informações sobre o modelo e seu uso, que pode ser vista, por exemplo, no assistente **Criar página**.
 
-Para exibir e/ou editar as propriedades:
-
-1. No **console Modelos**, selecione o modelo.
-1. Selecione **Propriedades da exibição** na barra de ferramentas ou nas opções rápidas para abrir a caixa de diálogo.
-1. Agora você pode exibir ou editar as propriedades do modelo.
-
->[!NOTE]
->
->O status de um modelo (rascunho, ativado ou desativado) é exibido no console.
+Depois de criar o modelo, use o **[Console de Modelos](/help/sites-cloud/administering/templates-console.md)** para exibir ou editar as propriedades do modelo.
 
 #### Imagem em miniatura do modelo {#template-thumbnail-image}
 
@@ -181,17 +174,11 @@ Para poder usar um modelo ao criar uma página é necessário:
 
 Um modelo pode ser habilitado ou desabilitado para torná-lo disponível ou indisponível no assistente de **Criar Página**.
 
+Use o **[Console de Modelos](/help/sites-cloud/administering/templates-console.md)** para habilitar ou desabilitar um modelo.
+
 >[!CAUTION]
 >
 >Depois que um modelo é habilitado, um aviso será exibido quando um autor do modelo começar a atualizá-lo. Isso é para informar ao usuário que o modelo pode ter sido referenciado, de modo que qualquer alteração pode afetar as páginas que lhe fazem referência.
-
-1. No **console Modelos**, selecione o modelo.
-1. Selecione **Habilitar** ou **Desabilitar** da barra de ferramentas e depois na caixa de diálogo de confirmação.
-1. Agora você pode usar seu modelo ao [criar uma página](/help/sites-cloud/authoring/sites-console/creating-pages.md#creating-a-new-page), embora provavelmente queira [editar o modelo](#editing-templates-template-authors) de acordo com seus requisitos.
-
->[!NOTE]
->
->O status de um modelo (rascunho, ativado ou desativado) é exibido no console.
 
 #### Ativar um modelo - Autor {#allowing-a-template-author}
 
@@ -211,7 +198,6 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
    >
    >Se a lista **Modelos permitidos** for deixada vazia, a se subirá a árvore até que um valor/lista seja encontrado.
    >
-   >
    >Consulte [Disponibilidade de modelos](/help/implementing/developing/components/templates.md#template-availability) - os princípios para modelos permitidos permanecem inalterados.
 
 1. Clique em **Salvar** para salvar as alterações nas propriedades da página.
@@ -224,10 +210,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
 À medida que o modelo for referenciado quando a página for renderizada, o modelo totalmente configurado deverá ser publicado, para estar disponível no ambiente de publicação.
 
-1. No **console Modelos**, selecione o modelo.
-1. Selecione **Publicar** na barra de ferramentas para abrir o assistente.
-1. Selecione as **Políticas do conteúdo** para ser publicado em tandem.
-1. Selecione **Publicar** na barra de ferramentas para concluir a ação.
+Modelos do Publish usando o **[Console de Modelos.](/help/sites-cloud/administering/templates-console.md)**
 
 ## Editar modelos - Autores do modelo   {#editing-templates-template-authors}
 
@@ -664,4 +647,4 @@ Ao criar modelos, você deve considerar:
    >O AEM emite avisos explícitos ao alterar o status de bloqueio de componentes em modelos que não são mais rascunhos.
 
 1. [Criar suas próprias pastas](#creating-a-template-folder-admin) para modelos específicos do site.
-1. [Publicar seus modelos](#publishing-a-template-template-author) a partir do console **Modelos**.
+1. [Publish seus modelos](#publishing-a-template-template-author) do console **[Modelos.]**(/help/sites-cloud/administering/templates-console.md)

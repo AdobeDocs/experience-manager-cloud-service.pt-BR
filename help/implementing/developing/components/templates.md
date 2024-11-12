@@ -1,46 +1,60 @@
 ---
-title: Modelos de páginas
-description: Os modelos de página são usados ao criar uma página que é usada como base para a nova página
+title: Modelos editáveis
+description: Saiba mais sobre como os modelos editáveis são usados ao criar uma página, definir seu conteúdo inicial, conteúdo estruturado, políticas de criação e layout.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
 workflow-type: tm+mt
-source-wordcount: '3268'
+source-wordcount: '3443'
 ht-degree: 4%
 
 ---
 
-# Modelos de páginas {#page-templates}
+# Modelos editáveis {#editable-templates}
 
-Ao criar uma página, é necessário selecionar um modelo. O modelo de página é usado como a base da nova página. O modelo define a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados (propriedades de design). Isso tem várias vantagens:
+Saiba mais sobre como os modelos editáveis são usados ao criar uma página, definir seu conteúdo inicial, conteúdo estruturado, políticas de criação e layout.
 
-* Os Modelos de página permitem que autores especializados [criem e editem modelos](/help/sites-cloud/authoring/page-editor/templates.md).
-   * Esses autores especializados são chamados de **autores de modelo**
-   * Os autores do modelo devem ser membros do grupo `template-authors`.
-* Os modelos de página mantêm uma conexão dinâmica com qualquer página criada a partir deles. Isso garante que qualquer alteração no modelo seja refletida nas próprias páginas.
-* Os Modelos de página tornam o componente de página mais genérico para que o componente de página principal possa ser usado sem personalização.
+## Visão geral {#overview}
 
-Com os Modelos de página, as partes que fazem uma página são isoladas dentro dos componentes. É possível configurar as combinações necessárias de componentes em uma interface do usuário, eliminando a necessidade de um novo componente de página ser desenvolvido para cada variação de página.
+Ao criar uma página, é necessário selecionar um modelo. O modelo de página é usado como a base da nova página. O modelo pode definir a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados (propriedades do design).
+
+* Modelos editáveis permitem que os autores criem e usem modelos.
+* Modelos editáveis podem ser usados para criar páginas que são editáveis com o
+   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md) e
+   * [Editor universal](/help/sites-cloud/authoring/universal-editor/templates.md)
+
+Os modelos de páginas usados para criar páginas editáveis com o Universal Editor usam um subconjunto limitado da funcionalidade de modelo editável. Portanto, o restante deste documento se concentra nos modelos editáveis usados para criar páginas que são editáveis com o Editor de páginas.
+
+## Modelos editáveis e páginas editadas com o editor de páginas {#page-editor}
+
+Ao criar modelos para criar páginas editáveis com o Editor de páginas, normalmente os autores especializados são identificados.
+
+* Esses autores especializados são chamados de **autores de modelo**
+* Os autores do modelo devem ser membros do grupo `template-authors`.
+* Os modelos editáveis retêm uma conexão dinâmica com qualquer página criada a partir deles. Isso garante que qualquer alteração no modelo seja refletida nas próprias páginas.
+* Modelos editáveis tornam o componente de página mais genérico para que o componente de página principal possa ser usado sem personalização.
+
+Com modelos editáveis, as partes que fazem uma página são isoladas dentro de componentes. É possível configurar as combinações necessárias de componentes em uma interface do usuário, eliminando a necessidade de um novo componente de página ser desenvolvido para cada variação de página.
 
 Este documento:
 
-* Fornece uma visão geral da criação de um modelo de página
+* Fornece uma visão geral da criação de um modelo editável
 * Descreve as tarefas de administrador/desenvolvedor necessárias para criar modelos editáveis
 * Descreve os fundamentos técnicos de modelos editáveis
 * Descreve como o AEM avalia a disponibilidade de um modelo
 
 >[!NOTE]
 >
->Este documento supõe que você já esteja familiarizado com a criação e edição de modelos. Consulte o documento de criação [Criação de modelos de página](/help/sites-cloud/authoring/page-editor/templates.md), que detalha os recursos de modelos editáveis conforme expostos ao autor do modelo.
+>Este documento supõe que você já esteja familiarizado com a criação e edição de modelos. Consulte o documento de criação [Modelos para criar páginas editáveis com o Editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md), que detalha os recursos de modelos editáveis conforme expostos ao autor do modelo.
 
 >[!TIP]
 >
->[O tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) detalha como usar Modelos de página implementando um exemplo e é muito útil para entender como configurar um modelo em um novo projeto
+>[O tutorial do WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) detalha como usar modelos editáveis implementando um exemplo e é muito útil para entender como configurar um modelo em um novo projeto
 
-## Criação de um novo modelo {#creating-a-new-template}
+## Criação de um novo modelo editável {#creating-a-new-template}
 
-A criação de Modelos de página é feita principalmente com o [console de modelo e o editor de modelo](/help/sites-cloud/authoring/page-editor/templates.md), por um autor de modelo. Esta seção fornece uma visão geral desse processo e segue com uma descrição do que ocorre em nível técnico.
+A criação de modelos editáveis é feita principalmente com o [console de modelo e o editor de modelo](/help/sites-cloud/authoring/page-editor/templates.md), por um autor de modelo. Esta seção fornece uma visão geral desse processo e segue com uma descrição do que ocorre em nível técnico.
 
 Ao criar um modelo editável, você:
 
@@ -60,7 +74,7 @@ Ao criar um modelo editável, você:
    * Se desejar que os autores de página possam adicionar e remover componentes, adicione um sistema de parágrafo ao modelo.
    * Os componentes podem ser desbloqueados e bloqueados novamente para permitir que você defina o conteúdo inicial.
 
-   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
+   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Modelos para criar páginas editáveis com o Editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
 
    Para obter detalhes técnicos da estrutura, consulte [Estrutura](#structure) neste documento.
 
@@ -72,7 +86,7 @@ Ao criar um modelo editável, você:
 
    * Elas são aplicáveis ao modelo (e às páginas criadas com ele).
 
-   Para obter detalhes sobre como um autor de modelo define políticas, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
+   Para obter detalhes sobre como um autor de modelo define políticas, consulte [Modelos para criar páginas editáveis com o Editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-structure-template-author).
 
    Para obter detalhes técnicos das políticas, consulte [Políticas de Conteúdo](#content-policies) neste documento.
 
@@ -81,7 +95,7 @@ Ao criar um modelo editável, você:
    * O Conteúdo inicial define o conteúdo que será exibido quando uma página for criada pela primeira vez com base no modelo.
    * O conteúdo inicial pode ser editado pelos autores da página.
 
-   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
+   Para obter detalhes sobre como um autor de modelo define a estrutura, consulte [Modelos para criar páginas editáveis com o Editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-initial-content-author).
 
    Para obter detalhes técnicos sobre o conteúdo inicial, consulte [Conteúdo inicial](#initial-content) neste documento.
 
@@ -90,7 +104,7 @@ Ao criar um modelo editável, você:
    * Você pode definir o layout do modelo para um intervalo de dispositivos.
    * O Layout responsivo para modelos funciona como na criação de página.
 
-   Para obter detalhes sobre como um autor de modelo define o layout do modelo, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
+   Para obter detalhes sobre como um autor de modelo define o layout do modelo, consulte [Modelos para criar páginas editáveis com o Editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md#editing-a-template-layout-template-author).
 
    Para obter detalhes técnicos sobre o layout do modelo, consulte [Layout](#layout) neste documento.
 
@@ -99,7 +113,7 @@ Ao criar um modelo editável, você:
    * Um modelo pode ser ativado ou desativado para disponibilizá-lo ou indisponibilizá-lo para os autores da página.
    * Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramificações de página.
 
-   Para obter detalhes sobre como um autor de modelo habilita um modelo, consulte [Criando Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author).
+   Para obter detalhes sobre como um autor de modelo habilita um modelo, consulte [Modelos para criar páginas que são editáveis com o Editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author).
 
    Para obter detalhes técnicos sobre como habilitar um modelo, consulte [Habilitando e Permitindo um Modelo para Nós](#enabling-and-allowing-a-template-for-use)e neste documento
 
@@ -129,8 +143,6 @@ Ao criar um modelo editável, você:
 >Todas as páginas de conteúdo de exemplo contêm `cq.shared`, portanto, qualquer conteúdo baseado nelas inclui automaticamente `cq.shared`. No entanto, se você decidir criar suas próprias páginas de conteúdo do zero sem baseá-las no conteúdo de exemplo, certifique-se de incluir o namespace `cq.shared`.
 >
 >Consulte [Usando bibliotecas do lado do cliente](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
-
-
 
 ## Pastas de Modelos {#template-folders}
 
@@ -357,7 +369,7 @@ When creating an editable template, the value is copied from the template type t
 
 Se você tiver criado um modelo que possa servir como base de outros modelos, poderá copiá-lo como um tipo de modelo.
 
-1. Crie um modelo como faria com qualquer Modelo de página. Consulte [Criação de Modelos de Página](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Isso servirá como base para o tipo de template.
+1. Crie um modelo como faria com qualquer Modelo de página. Consulte [Modelos para criar páginas editáveis com o Editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md#creating-a-new-template-template-author). Isso servirá como base para o tipo de template.
 1. Usando o CRXDE Lite, copie o modelo criado do nó `templates` para o nó `template-types` na [pasta de modelo](#template-folders).
 1. Exclua o modelo do nó `templates` na [pasta de modelo](#template-folders).
 1. Na cópia do modelo que está sob o nó `template-types`, exclua todas as propriedades `cq:template` e `cq:templateType` de todos os nós `jcr:content`.
@@ -455,9 +467,7 @@ Define o conteúdo inicial que uma nova página terá após a criação:
 
 ### Layout {#layout}
 
-Ao [editar um modelo para definir o layout](/help/sites-cloud/authoring/page-editor/templates.md), este usa o [layout responsivo padrão](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
-
-<!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
+Ao [editar um modelo para definir o layout](/help/sites-cloud/authoring/page-editor/templates.md), este usa o [layout responsivo padrão](/help/sites-cloud/administering/responsive-layout.md), que pode ser [configurado na página pelo autor de conteúdo.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
 
 ### Políticas de conteúdo {#content-policies}
 
