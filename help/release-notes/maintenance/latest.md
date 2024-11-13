@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 90e1ca38bd517215a631573987462a716bfed160
+source-git-commit: eadb29c44dd57bda51f77a92a62016eae51dcc65
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 17%
+source-wordcount: '820'
+ht-degree: 13%
 
 ---
 
@@ -33,6 +33,10 @@ A ativação de recursos do 2024.11.0 fornecerá o conjunto completo de recursos
 * SITES-21199: Edge Delivery com Universal Editor: adicionar suporte para modelos criados a partir de páginas.
 * SITES-20311: Edge Delivery com editor universal: adicione suporte para importar CSVs para planilhas.
 * SITES-24821: Edge Delivery com Universal Editor: torne aem.page / aem.live o padrão para integrar com o Edge Delivery.
+* FORMS-11646: Definição de variáveis globaisContext para páginas relevantes do AEM Forms
+* FORMS-14833: o AEM Forms agora tem a capacidade de incluir fragmentos de formulário adaptável no Documento de registro final (DoR).
+* FORMS-14255: os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente concluído como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro.
+
 
 ### Problemas corrigidos {#fixed-issues-18459}
 
@@ -60,6 +64,11 @@ A ativação de recursos do 2024.11.0 fornecerá o conjunto completo de recursos
 * SITES-25393: Edge Delivery com Universal Editor: nós de texto perdidos ao renderizar richtext formatado com parágrafo único.
 * SITES-24643: Edge Delivery com Universal Editor: os atributos de metadados OpenGraph e twitter não funcionam no modelo de metadados da página.
 * SITES-25401: Fragmentos de experiência: atualização de referência XF lenta
+* GRANITE-53907: não é possível identificar o usuário do serviço como superusuário do fluxo de trabalho
+* CQ-4358028: a criação do projeto AEM falha quando um usuário com apenas um grupo de administradores de projeto carrega uma nova miniatura na página de criação do projeto.
+* FORMS-15682: o problema envolve a integração do AEM Forms e do Dynamics FDM. Quando um usuário envia um formulário, o Documento de registro (DOR) não é enviado como um anexo de PDF para o campo de entidade especificado.
+* FORMS-15799: a página Assinatura do Adobe Sign GovCloud não é renderizada no iframe
+* FORMS-16113: Quando um usuário, que é um administrador da conta do Adobe Sign, tenta acessar um documento enviado por outro usuário (também um administrador), a API de obtenção de contrato pode retornar uma ID de contrato diferente da gerada inicialmente quando o contrato foi criado.
 
 
 ### Problemas conhecidos {#known-issues-18459}
