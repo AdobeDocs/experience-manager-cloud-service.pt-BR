@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 9bb2d38feea2690bc112611d429dad22e7bcd278
+source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 11%
+source-wordcount: '1670'
+ht-degree: 10%
 
 ---
 
@@ -101,11 +101,19 @@ Agora, os administradores podem controlar se precisam que os ativos expirados es
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
+### Novos recursos no AEM Forms {#forms-new-features}
+
+* **Aprimorar a Experiência do Usuário com Botões de Navegação em Layouts de Painel**: Agora é possível adicionar botões de navegação aos layouts de painel, como Guias Horizontais, Guias Verticais, Acordeões ou Assistente. Esses botões melhoram a experiência do usuário simplificando as transições entre painéis, com foco no painel selecionado.
+
+* **Especificar Estilos de Exibição para Componentes do Documento de Registro (DoR)**: em um arquivo XFA, agora é possível especificar os estilos de exibição para componentes do Documento de Registro. Esses estilos podem ser aplicados posteriormente aos componentes correspondentes no Editor Forms adaptável.
+
 ### Novos recursos de pré-lançamento no AEM Forms {#forms-new-prerelease-features}
 
-#### Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável
+* **Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável**: os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
 
-Os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
+* **Atualizar escopos do Adobe Sign facilmente**: você pode modificar os escopos de uma configuração do Adobe Sign diretamente da página Configurações de Nuvem do AEM, tornando mais rápido e fácil atualizar as configurações existentes.
+
+* **Suporte a função assíncrona para Forms Adaptável**: quando o Formulário Adaptável requer operações assíncronas, como aguardar processos externos ou recuperação de dados, você pode implementar essas operações com funções personalizadas e configurá-las no Editor de Regras.
 
 ### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
