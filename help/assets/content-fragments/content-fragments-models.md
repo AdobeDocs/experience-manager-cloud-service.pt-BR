@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
 workflow-type: tm+mt
-source-wordcount: '3011'
-ht-degree: 86%
+source-wordcount: '3120'
+ht-degree: 78%
 
 ---
 
@@ -106,36 +106,59 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 Uma variedade de tipos de dados está disponível para a definição do seu modelo:
 
 * **Texto em linha única**
-   * Adicionar um ou mais campos de uma única linha de texto; o comprimento máximo pode ser definido
+   * Adicionar um campo para uma única linha de texto; o comprimento máximo pode ser definido
+   * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
+
 * **Texto multilinha**
-   * Uma área de texto que pode ser Rich Text, texto sem formatação ou Markdown
+   * Uma área de texto que pode ser Rich Text, Texto sem formatação ou Markdown
+   * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
+
+  >[!NOTE]
+  >
+  Se a área de texto é Rich Text, Texto sem formatação ou Markdown, é definida no modelo pela propriedade **Tipo padrão**.
+  >
+  Este formato não pode ser alterado do [editor de Fragmento de Conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md), mas somente do Modelo.
+
 * **Número**
-   * Adicionar um ou mais campos numéricos
+   * Adicionar um campo numérico
+   * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
+
 * **Booleano**
    * Adicionar uma caixa de seleção booleana
+
 * **Data e hora**
-   * Adicionar uma data e/ou hora
+   * Adicionar um campo de data e/ou hora
+
 * **Enumeração**
-   * Adicionar um conjunto de caixas de seleção, botões de opção ou campos de lista suspensa
+   * Adicionar um conjunto de caixas de seleção, botões de opção ou campos suspensos
+      * É possível especificar as opções disponíveis para o autor do fragmento
+
 * **Tags**
    * Permite que os autores de fragmentos acessem e selecionem áreas de tags
+
 * **Referência de conteúdo**
    * Faz referência a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
    * Se uma imagem for referenciada, você pode optar por mostrar uma miniatura
+   * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
+
 * **Referência do fragmento**
    * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
-   * O tipo de dados pode ser configurado para permitir que os autores de fragmento:
-      * Editem o fragmento referenciado diretamente.
-      * Criem um novo fragmento de conteúdo, com base no modelo apropriado
+   * O campo pode ser configurado para permitir que os autores de fragmento:
+      * Editar o fragmento referenciado diretamente
+      * Crie um novo Fragmento de conteúdo, com base no modelo apropriado
+      * Criar novas instâncias do campo
+
 * **Objeto JSON**
-   * Permite que o autor do fragmento de conteúdo insira a sintaxe JSON nos elementos correspondentes de um fragmento.
+   * Permite que o autor do Fragmento de conteúdo insira a sintaxe JSON nos elementos correspondentes de um fragmento.
       * Para permitir que o AEM armazene o JSON direto que você tenha copiado/colado de outro serviço.
       * O JSON será transmitido e emitido como JSON no GraphQL.
-      * Inclui o realce da sintaxe JSON, o preenchimento automático e o realce de erros no editor de fragmentos de conteúdo.
+      * Inclui o realce da sintaxe JSON, o preenchimento automático e o realce de erros no editor de Fragmento de conteúdo.
+
 * **Espaço reservado da guia**
    * Permite a introdução de guias para uso ao editar o conteúdo do fragmento de conteúdo.
-Isso é mostrado como um divisor no editor de modelo, separando seções da lista de tipos de dados de conteúdo. Cada instância representa o início de uma nova guia.
-No editor de fragmentos, cada instância será exibida como uma guia.
+      * Eles são mostrados como divisores no editor de modelo, separando seções da lista de tipos de dados de conteúdo. Cada instância representa o início de uma nova guia.
+      * No editor de fragmentos, cada instância aparece como uma guia.
+
      >[!NOTE]
      >
      Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.

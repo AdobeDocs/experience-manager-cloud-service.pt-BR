@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 862a1f67782775cc1b2ee6e3d3d66ae5560a15ab
 workflow-type: tm+mt
-source-wordcount: '3209'
-ht-degree: 54%
+source-wordcount: '3284'
+ht-degree: 52%
 
 ---
 
@@ -151,9 +151,12 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 Uma variedade de tipos de dados está disponível para a definição do seu modelo:
 
 * **Texto em linha única**
-   * Adicionar um ou mais campos de uma única linha de texto; o comprimento máximo pode ser definido
+   * Adicionar um campo para uma única linha de texto; o comprimento máximo pode ser definido
+   * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
+
 * **Texto multilinha**
    * Uma área de texto que pode ser Rich Text, Texto sem formatação ou Markdown
+   * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
 
   >[!NOTE]
   >
@@ -162,28 +165,40 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
   Este formato não pode ser alterado do [editor de Fragmento de Conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md), mas somente do Modelo.
 
 * **Número**
-   * Adicionar um ou mais campos numéricos
+   * Adicionar um campo numérico
+   * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
+
 * **Booleano**
    * Adicionar uma caixa de seleção booleana
+
 * **Data e hora**
-   * Adicionar uma data e/ou hora
+   * Adicionar um campo de data e/ou hora
+
 * **Enumeração**
-   * Adicionar um conjunto de campos de caixa de seleção, botão de opção ou lista suspensa
+   * Adicionar um conjunto de caixas de seleção, botões de opção ou campos suspensos
+      * É possível especificar as opções disponíveis para o autor do fragmento
+
 * **Tags**
    * Permite que os autores de fragmentos acessem e selecionem áreas de tags
+
 * **Referência de conteúdo**
    * Faz referência a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
    * Se uma imagem for referenciada, você pode optar por mostrar uma miniatura
+   * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
+
 * **Referência do fragmento**
    * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
-   * O tipo de dados pode ser configurado para permitir que os autores de fragmento:
-      * Editem o fragmento referenciado diretamente.
+   * O campo pode ser configurado para permitir que os autores de fragmento:
+      * Editar o fragmento referenciado diretamente
       * Crie um novo Fragmento de conteúdo, com base no modelo apropriado
+      * Criar novas instâncias do campo
+
 * **Objeto JSON**
    * Permite que o autor do Fragmento de conteúdo insira a sintaxe JSON nos elementos correspondentes de um fragmento.
       * Para permitir que o AEM armazene o JSON direto que você tenha copiado/colado de outro serviço.
       * O JSON será transmitido e emitido como JSON no GraphQL.
       * Inclui o realce da sintaxe JSON, o preenchimento automático e o realce de erros no editor de Fragmento de conteúdo.
+
 * **Espaço reservado da guia**
    * Permite a introdução de guias para uso ao editar o conteúdo do fragmento de conteúdo.
       * Eles são mostrados como divisores no editor de modelo, separando seções da lista de tipos de dados de conteúdo. Cada instância representa o início de uma nova guia.

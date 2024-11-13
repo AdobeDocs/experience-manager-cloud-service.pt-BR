@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2704'
 ht-degree: 3%
 
 ---
@@ -60,6 +60,7 @@ Ao abrir o Editor de fragmento de conteúdo pela primeira vez, você vê quatro 
    * na guia **Propriedades**, é possível atualizar o **Título** e a **Descrição** do fragmento ou a **Variação**
 * painel central: mostra os campos reais e o conteúdo da variação selecionada
    * permite editar o conteúdo
+      * quando configurado (como vários) no modelo, vários tipos de dados permitem **Adicionar** instâncias do campo relevante
    * se os campos **Espaço reservado de guia** forem definidos no modelo, eles serão mostrados aqui e poderão ser usados para navegação; eles serão apresentados horizontalmente ou como uma lista suspensa.
 
   >[!NOTE]
