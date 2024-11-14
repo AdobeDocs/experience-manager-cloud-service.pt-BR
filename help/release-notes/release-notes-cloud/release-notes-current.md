@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 428942c8fd4a4b83dc5d226e48eda190165768d4
+source-git-commit: 4e74efa73f0f7d6d9db13001dbc5ebc2ddba98cd
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1633'
 ht-degree: 10%
 
 ---
@@ -101,19 +101,19 @@ Agora, os administradores podem controlar se precisam que os ativos expirados es
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Novos recursos no AEM Forms {#forms-new-features}
+### Novo recurso no AEM Forms {#forms-new-features}
 
-* **Aprimorar a Experiência do Usuário com Botões de Navegação em Layouts de Painel**: Agora é possível adicionar botões de navegação aos layouts de painel, como Guias Horizontais, Guias Verticais, Acordeões ou Assistente. Esses botões melhoram a experiência do usuário simplificando as transições entre painéis, com foco no painel selecionado.
+* [Aprimorar a Experiência do Usuário com Botões de Navegação em Layouts de Painel](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button): Agora é possível adicionar botões de navegação aos layouts de painel, como Guias Horizontais, Guias Verticais, Acordeões ou Assistente. Esses botões melhoram a experiência do usuário simplificando as transições entre painéis, com foco no painel selecionado.
 
-* **Especificar Estilos de Exibição para Componentes do Documento de Registro (DoR)**: em um arquivo XFA, agora é possível especificar os estilos de exibição para componentes do Documento de Registro. Esses estilos podem ser aplicados posteriormente aos componentes correspondentes no Editor Forms adaptável.
+<!--* **Specify Display Styles for Document of Record (DoR) Components**: In an XFA file, you can now specify the display styles for Document of Record components. These styles can later be applied to the corresponding components in Adaptive Forms Editor.-->
 
 ### Novos recursos de pré-lançamento no AEM Forms {#forms-new-prerelease-features}
 
-* **Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável**: os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
+* [Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável](/help/forms/save-core-component-based-form-as-draft.md): os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
 
-* **Atualizar escopos do Adobe Sign facilmente**: você pode modificar os escopos de uma configuração do Adobe Sign diretamente da página Configurações de Nuvem do AEM, tornando mais rápido e fácil atualizar as configurações existentes.
+* [Atualizar escopos do Adobe Sign facilmente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): você pode modificar os escopos de uma configuração do Adobe Sign diretamente da página Configurações de Nuvem do AEM, tornando mais rápido e fácil atualizar as configurações existentes.
 
-* **Suporte a função assíncrona para Forms Adaptável**: quando o Formulário Adaptável requer operações assíncronas, como aguardar processos externos ou recuperação de dados, você pode implementar essas operações com funções personalizadas e configurá-las no Editor de Regras.
+* [Suporte a função assíncrona para Forms Adaptável](/help/forms/using-async-funct-in-rule-editor.md): quando o Formulário Adaptável requer operações assíncronas, como aguardar processos externos ou recuperação de dados, você pode implementar essas operações com funções personalizadas e configurá-las no Editor de Regras.
 
 ### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
@@ -123,7 +123,7 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 #### Assistente de IA do AEM Forms
 
-A IA gerativa para o Adaptive Forms traz um nível totalmente novo de potência e facilidade para seus processos de desenvolvimento de formulários. Ele permite que você construa formulários melhores mais rápido do que nunca.
+[A IA de geração para o Adaptive Forms](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/forms-overview/early-access-ea-features#aem-forms-ai-assistant-gen-ai) oferece um nível totalmente novo de potência e facilidade aos seus processos de desenvolvimento de formulários. Ele permite que você construa formulários melhores mais rápido do que nunca.
 
 ![Assistente de IA de Geração, Forms Adaptável](/help/forms/assets/generative-ai-assistant.png)
 
