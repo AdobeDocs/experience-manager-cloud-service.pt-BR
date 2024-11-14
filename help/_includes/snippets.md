@@ -1,7 +1,7 @@
 ---
-source-git-commit: 54d1cdec9b30c08f28d4c9b2fbd97446f3ff05b3
+source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1259'
 ht-degree: 4%
 
 ---
@@ -214,7 +214,7 @@ Se um problema do produto precisar de investigação e solução de problemas ad
 
 Para registrar um tíquete de suporte, primeiro registre o site do Edge Delivery no Cloud Manager. Registrar seu site com o Cloud Manager é recomendado para todos os usuários do AEM as a Cloud Service e o [traz vários benefícios](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md). Consulte [a documentação do Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) para obter detalhes se você ainda não tiver registrado seu site.
 
-Depois que o site for registrado na Cloud Manager, siga este processo usando o Admin Console para enviar um tíquete de suporte:
+**Para registrar um tíquete de suporte:**
 
 1. [Siga o processo de suporte padrão](https://experienceleague.adobe.com/?support-tab=home&amp;lang=pt-BR#support) e crie um tíquete.
 1. Adicionar **Edge Delivery** no título do tíquete.
