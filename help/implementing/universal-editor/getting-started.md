@@ -4,10 +4,10 @@ description: Saiba como obter acesso ao Editor universal e começar a instrument
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 395cb7b2e37c7358baa7ae07329f42bd5a560cb1
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '828'
-ht-degree: 68%
+source-wordcount: '574'
+ht-degree: 72%
 
 ---
 
@@ -20,82 +20,7 @@ Saiba como obter acesso ao Editor universal e começar a instrumentar seu primei
 >
 >Se preferir ir direto para o exemplo, você pode consultar o [aplicativo de demonstração do Editor universal no GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
 
-## Etapas de integração {#onboarding}
-
-Embora o Editor universal possa editar conteúdo de qualquer fonte, este documento usará um aplicativo do AEM como exemplo.
-
-Há várias etapas para integrar seu aplicativo AEM e instrumentá-lo para usar o Editor universal.
-
-1. [Incluir a biblioteca principal do Editor universal.](#core-library)
-1. [Adicionar a configuração OSGi necessária.](#osgi-configurations)
-1. [Instrumentar a página.](#instrument-page)
-
-Este documento o orientará por essas etapas.
-
-## Incluir a biblioteca principal do Editor universal {#core-library}
-
-Antes que seu aplicativo possa ser instrumentado para uso com o Universal Editor, ele deve incluir a seguinte dependência.
-
-```javascript
-@adobe/universal-editor-cors
-```
-
-Para ativar a instrumentação, a seguinte importação deve ser adicionada ao seu `index.js`.
-
-```javascript
-import "@adobe/universal-editor-cors";
-```
-
-### Alternativa para aplicativos que não utilizam React {#alternative}
-
-Se você não estiver implementando um aplicativo React e/ou exigir renderização do lado do servidor, um método alternativo será incluir o seguinte no corpo do documento.
-
-```html
-<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
-```
-
-A versão mais recente é sempre recomendada, mas versões anteriores do serviço podem ser referenciadas em caso de alterações importantes.
-
-* `https://universal-editor-service.experiencecloud.live/corslib/LATEST` - A biblioteca UE CORS mais recente
-* `https://universal-editor-service.experiencecloud.live/corslib/2/LATEST` - A biblioteca UE CORS mais recente na versão 2.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1/LATEST` - A biblioteca UE CORS mais recente na versão 2.1.x
-* `https://universal-editor-service.experiencecloud.live/corslib/2.1.1`- A biblioteca UE CORS exata versão 2.1.1
-
-## Adicionar as configurações OSGi necessárias {#osgi-configurations}
-
-Para poder editar o conteúdo do AEM com seu aplicativo utilizando o Editor universal, as configurações de CORS e cookies devem ser definidas no AEM.
-
-As configurações [OSGi a seguir devem ser definidas na instância de criação do AEM.](/help/implementing/deploying/configuring-osgi.md)
-
-* `SameSite Cookies = None` em `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
-* Remova o cabeçalho X-FRAME-OPTIONS: SAMEORIGIN em `org.apache.sling.engine.impl.SlingMainServlet`
-
-### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
-
-O cookie do token de logon deve ser enviado para o AEM como um domínio de terceiros. Portanto, o cookie SameSite deve ser definido explicitamente como `None`.
-
-Essa propriedade deve ser definida na configuração OSGi `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig"
-          token.samesite.cookie.attr="None" />
-```
-
-### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
-
-X-Frame-Options: SAMEORIGIN impede a renderização de páginas do AEM dentro de um iFrame. Remover o cabeçalho permite que as páginas sejam carregadas.
-
-Essa propriedade deve ser definida na configuração OSGi `org.apache.sling.engine.impl.SlingMainServlet`.
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          xmlns:jcr="http://www.jcp.org/jcr/1.0"
-          jcr:primaryType="sling:OsgiConfig"
-          sling.additional.response.headers="[X-Content-Type-Options=nosniff]"/>
-```
+Embora o Editor universal possa editar o conteúdo de qualquer fonte, este documento usará um aplicativo AEM como exemplo. Este documento o orientará por essas etapas.
 
 ## Instrumentar a página {#instrument-page}
 

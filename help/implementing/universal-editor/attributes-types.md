@@ -4,10 +4,10 @@ description: Saiba mais sobre os atributos de dados e os tipos de item exigidos 
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 65%
+source-wordcount: '574'
+ht-degree: 45%
 
 ---
 
@@ -31,8 +31,8 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 | `data-aue-resource` | Para saber mais sobre o URN do recurso, consulte a seção [Instrumentar a página do documento Introdução ao Editor universal no AEM](getting-started.md#instrument-thepage) |
 | `data-aue-prop` | Para saber mais sobre o atributo do recurso, consulte a seção [Instrumentar a página do documento Introdução ao Editor universal no AEM](getting-started.md#instrument-thepage) |
 | `data-aue-type` | [Tipo do item editável](#item-types) (por exemplo, texto, imagem e referência) |
-| `data-aue-filter` | Define quais referências podem ser usadas |
-| `data-aue-label` | Define um rótulo personalizado para um item selecionável que é exibido no editor. <br>Caso`data-aue-model` seja definido, o rótulo será recuperado por meio do modelo |
+| `data-aue-filter` | Define:<br>- Quais funcionalidades de RTE estão habilitadas<br>- Quais componentes podem ser adicionados a um contêiner<br>- Quais ativos podem ser adicionados a um tipo de mídia |
+| `data-aue-label` | Define um rótulo personalizado para um item selecionável que é exibido no editor |
 | `data-aue-model` | Define um modelo usado para edição baseada em formulário no painel de propriedades |
 | `data-aue-behavior` | Define o [comportamento de uma instrumentação](#behaviors), por exemplo, texto ou imagem autônoma também pode imitar um componente para torná-lo móvel ou excluível |
 
@@ -47,10 +47,14 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 | `component` | O item editável é um componente. Ele não acrescenta nenhuma funcionalidade extra, É obrigatório indicar partes móveis/excluíveis do DOM e para abrir o painel de propriedades e seus campos | Obrigatório | n/a | n/a | Opcional | Opcional | n/a |
 | `reference` | O editável é uma referência, por exemplo, Fragmento de conteúdo, Fragmento de experiência ou Produto | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>lista de critérios de filtro para fragmentos de conteúdo, produtos ou fragmentos de experiência que é passada para o seletor de referência | Opcional | Opcional | n/a |
 
-Dependendo do caso de uso, `data-aue-prop` ou `data-aue-resource` podem ou não ser exigidos. Por exemplo:
+`data-aue-resource` é sempre necessário, pois é a chave primária que indica onde as alterações de conteúdo são gravadas.
 
-* O `data-aue-resource` é necessário se você consultar fragmentos de conteúdo por meio de GraphQL e desejar tornar a lista editável no contexto.
-* O `data-aue-prop` é necessário caso você possua um componente que renderize o conteúdo de um fragmento de conteúdo referenciado e deseje atualizar a referência desse componente.
+* Não é necessário diretamente na tag em que o `data-aue-type` está definido.
+* Caso não esteja definido, o atributo `data-aue-resource` de um pai mais próximo será usado.
+
+`data-aue-prop` é obrigatório sempre que você quiser fazer uma edição em contexto, exceto para um contêiner em que é opcional (se o contêiner for um fragmento de conteúdo e a prop apontar para um campo de várias referências).
+
+* O `data-aue-prop` é o atributo a ser atualizado para a chave primária de `data-aue-resource`.
 
 ## Comportamentos {#behaviors}
 
