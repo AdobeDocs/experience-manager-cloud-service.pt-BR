@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '991'
 ht-degree: 8%
 
 ---
@@ -26,7 +26,7 @@ Os relatórios de ativos permitem avaliar a utilidade da implantação do [!DNL 
 
 Use as informações nos relatórios para obter as principais métricas de sucesso e medir a adoção do [!DNL Assets] na sua empresa e por clientes.
 
-A estrutura de relatório [!DNL Assets] usa [!DNL Sling] trabalhos para processar de forma assíncrona solicitações de relatório de maneira ordenada. Ele é escalável para repositórios grandes. O processamento assíncrono de relatórios aumenta a eficiência e a velocidade com que os relatórios são gerados.
+A estrutura de relatórios [!DNL Assets] usa [!DNL Sling] trabalhos de forma assíncrona para processar solicitações de relatório de maneira ordenada. Ele é escalável para repositórios grandes. O processamento assíncrono de relatórios aumenta a eficiência e a velocidade com que os relatórios são gerados.
 
 A interface de gerenciamento de relatórios é intuitiva e inclui opções e controles refinados para acessar relatórios arquivados e exibir status de execução de relatórios (bem-sucedido, com falha e em fila).
 
@@ -65,11 +65,11 @@ Os administradores do [!DNL Adobe Experience Manager] podem facilmente gerar e p
    ![Página de ferramentas para navegar pelo relatório de ativos](assets/navigation.png)
 
 1. Na página [!UICONTROL Relatórios de ativos], clique em **[!UICONTROL Criar]** na barra de ferramentas.
-1. Na página **[!UICONTROL Criar Relatório]**, escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**.
+1. Na página **[!UICONTROL Criar Relatório]**, escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**. Atribua a si mesmo um **perfil de produto Administrador de AEM** para criar um relatório de **Download**. Consulte [Atribuir perfis de produto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para se habilitar a um perfil de produto Administrador AEM.
 
    ![Selecionar tipo de relatório](assets/choose_report.png)
 
-1. Configure os detalhes do relatório, como título, descrição, miniatura e caminho da pasta. Por padrão, o caminho da pasta é `/content/dam`. Você pode especificar um caminho diferente para executar o relatório em uma pasta específica.
+1. Configurar detalhes do relatório, como título, descrição, miniatura e caminho da pasta. Por padrão, o caminho da pasta é `/content/dam`. Você pode especificar um caminho diferente para executar o relatório em uma pasta específica.
 
    ![Página para adicionar detalhes do relatório](assets/report_configuration.png)
 
@@ -103,12 +103,12 @@ Os administradores do [!DNL Adobe Experience Manager] podem facilmente gerar e p
 
    ![Selecionar ou cancelar a seleção das colunas do relatório](assets/configure_columns.png)
 
-   Para exibir um nome de coluna ou caminho de propriedade personalizado, configure as propriedades para o binário de ativos no nó `jcr:content` no CRX. Como alternativa, adicione-o por meio do seletor de caminho de propriedade.
+   Para exibir um nome de coluna ou caminho de propriedade personalizado, configure as propriedades para o binário de ativos no nó `jcr:content` no CRX. Como alternativa, adicione-o por meio de um seletor de caminho de propriedade.
 
    ![Selecionar ou cancelar a seleção das colunas do relatório](assets/custom_columns.png)
 
 1. Clique em **[!UICONTROL Criar]** na barra de ferramentas. Uma mensagem notifica que a geração de relatório foi iniciada.
-1. Na página [!UICONTROL Relatórios de ativos], o status de geração de relatório é baseado no estado atual do trabalho de relatório, por exemplo, [!UICONTROL Sucesso], [!UICONTROL Falha], [!UICONTROL Em fila] ou [!UICONTROL Agendado]. O mesmo status aparece na caixa de entrada de notificações.Para exibir a página do relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Exibir]** na barra de ferramentas.
+1. Na página [!UICONTROL Relatórios de ativos], o status de geração de relatório é baseado no estado atual do trabalho de relatório, por exemplo, [!UICONTROL Sucesso], [!UICONTROL Falha], [!UICONTROL Em fila] ou [!UICONTROL Agendado]. O mesmo status aparece na caixa de entrada de notificações. Para exibir a página do relatório, clique no link do relatório. Como alternativa, selecione o relatório e clique em **[!UICONTROL Exibir]** na barra de ferramentas.
 
    <!--![A generated report](assets/report_page.png)-->
    ![status do relatório gerado](assets/report-status.JPG)
