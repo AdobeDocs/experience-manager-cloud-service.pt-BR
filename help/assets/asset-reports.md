@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Reports, Asset Management
 role: Admin, User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 311230e2d6a395f9382af80df1cbe0fb25427874
+source-git-commit: 6a03eb1a4ac8284299c1ffcf27d6a6c8a8b9abc4
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 8%
@@ -65,7 +65,11 @@ Os administradores do [!DNL Adobe Experience Manager] podem facilmente gerar e p
    ![Página de ferramentas para navegar pelo relatório de ativos](assets/navigation.png)
 
 1. Na página [!UICONTROL Relatórios de ativos], clique em **[!UICONTROL Criar]** na barra de ferramentas.
-1. Na página **[!UICONTROL Criar Relatório]**, escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**. Atribua a si mesmo um **perfil de produto Administrador de AEM** para criar um relatório de **Download**. Consulte [Atribuir perfis de produto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para se habilitar a um perfil de produto Administrador AEM.
+1. Na página **[!UICONTROL Criar Relatório]**, escolha o relatório que deseja criar e clique em **[!UICONTROL Avançar]**.
+
+   >[!NOTE]
+   >
+   >Atribua a si mesmo um **perfil de produto Administrador de AEM** para criar um relatório de **Download**. Consulte [Atribuir perfis de produto AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para se habilitar a um perfil de produto Administrador AEM.
 
    ![Selecionar tipo de relatório](assets/choose_report.png)
 
