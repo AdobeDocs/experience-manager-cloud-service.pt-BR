@@ -4,9 +4,9 @@ description: Saiba como usar planilhas para gerenciar dados tabulares para vári
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 69c8e54bde6c6047fdefbbbb1f166af690584f88
+source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1284'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Este documento usa o exemplo de redirecionamentos para ilustrar como criar essas
 
 Para criar mapeamentos usando planilhas no projeto AEM com Edge Delivery Services, é necessário criar o site usando o modelo de site mais recente.
 
-Consulte o documento [Guia de Introdução do Desenvolvedor para criação WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obter mais informações.
+Consulte o documento [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obter mais informações.
 
 ## Criação de uma Planilha {#spreadsheet}
 
@@ -80,6 +80,52 @@ Neste exemplo, você criará uma planilha para gerenciar redirecionamentos do AE
    * Use a tecla tab para mover o foco para a próxima célula.
    * O editor adiciona novas linhas à planilha conforme necessário.
    * Para excluir ou mover uma linha, use o ícone **Excluir** no final de cada linha e as alças de arrastar no início de cada linha, respectivamente.
+
+## Importando Dados da Planilha {#importing}
+
+Além de editar planilhas no Editor de páginas AEM, você também pode importar dados de um arquivo CSV.
+
+1. Ao editar sua planilha no AEM, toque ou clique no botão **Carregar**, no canto superior esquerdo da tela.
+1. Na lista suspensa, selecione como deseja importar os dados.
+   * **Substituir Documento** para substituir o conteúdo da planilha inteira pelo conteúdo do arquivo CSV que você fará upload.
+   * **Anexar ao Documento** para anexar os dados do arquivo CSV que você carregará no conteúdo da planilha existente.
+1. Na caixa de diálogo que é aberta, selecione o arquivo CSV e toque ou clique em **Abrir**.
+
+Uma caixa de diálogo é aberta conforme a importação é processada. Após a conclusão, os dados no arquivo CSV são adicionados ou substituem o conteúdo da planilha. Se forem encontrados erros, como uma incompatibilidade de colunas, eles serão relatados para que você possa corrigir seu arquivo CSV.
+
+>[!NOTE]
+>
+>* Os cabeçalhos no arquivo CSV devem corresponder exatamente às colunas na planilha.
+>* A importação do CSV inteiro não modifica os cabeçalhos da coluna, somente as linhas de conteúdo.
+>* Se você precisar atualizar as colunas, é necessário fazer isso no Editor de páginas do AEM antes de executar a importação do CSV.
+>* Um arquivo CSV não pode ter mais de 10 MB para importação.
+
+Dependendo da sua seleção de `mode`, você também pode `create`, `replace` ou `append` para planilhas usando um CSV e um comando cURL semelhante ao seguinte.
+
+```text
+curl --request POST \
+  --url http://<aem-instance>/bin/asynccommand \
+  --header 'content-type: multipart/form-data' \
+  --form file=@/path/to/your.csv \
+  --form spreadsheetPath=/content/<your-site>/<your-spreadsheet> \
+  --form 'spreadsheetTitle=Your Spreadsheet' \
+  --form cmd=spreadsheetImport \
+  --form operation=asyncSpreadsheetImport \
+  --form _charset_=utf-8 \
+  --form mode=append
+```
+
+A chamada retorna uma página de HTML com informações sobre a ID do trabalho.
+
+```text
+Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
+```
+
+[Você pode usar o console **Trabalhos**](/help/operations/asynchronous-jobs.md) para exibir o status do trabalho ou usar a ID retornada para consultá-lo.
+
+```text
+https://<aem-instance>/bin/asynccommand?optype=JOBINF&jobid=2024/10/24/14/1/8da63f9e-066b-4134-95c9-21a9c57836a5_1
+```
 
 ## Publicar uma planilha em paths.json {#paths-json}
 
