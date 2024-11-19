@@ -4,7 +4,7 @@ description: Saiba como executar seu próprio Universal Editor Service para dese
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 4fedb7a812b53fd9ebd9c82e86fa8f05394d464f
+source-git-commit: ccdb43c31e3ba1365a514bff696c9ec11dbbc21e
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 2%
@@ -154,7 +154,7 @@ Depois de definido, você deve ver todas as chamadas de atualização de conteú
 
 Com o [Serviço do Editor Universal sendo executado localmente](#running-ue) e sua [página de conteúdo instrumentada para usar o serviço local](#using-loca-ue), agora você pode iniciar o editor.
 
-1. Abra o navegador no `https://localhost:8000/corslib/LATEST`.
+1. Abra o navegador no `https://localhost:8000/ping`.
 1. Instrua o navegador a aceitar [o certificado autoassinado.](#ue-https)
 1. Quando o certificado autoassinado for confiável, você poderá editar a página usando o Serviço do Editor Universal local.
 
