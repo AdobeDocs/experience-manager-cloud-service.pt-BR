@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Edge Delivery Services
 role: User
 exl-id: 21745f53-a7ef-4eec-9170-b267c2f4314e
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 4%
@@ -35,7 +35,7 @@ A lista a seguir apresenta esses recursos WIP e soluções alternativas. Se o se
 | [Cópia de idioma](/help/sites-cloud/administering/translation/overview.md) | Parcialmente disponível | Os componentes herdam conteúdo, mas a herança só pode ser revertida no nível da página | [Herança de conteúdo no Editor Universal](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [Gerenciamento de vários sites](/help/sites-cloud/administering/msm/overview.md) | Parcialmente disponível | Os componentes herdam conteúdo, mas a herança só pode ser revertida no nível da página | [Herança de conteúdo no Editor Universal](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
 | [Lançamentos](/help/sites-cloud/authoring/launches/overview.md) | Parcialmente Disponível | Os componentes herdam conteúdo, mas a herança só pode ser revertida no nível da página | [Herança de conteúdo no Editor Universal](/help/sites-cloud/authoring/universal-editor/inheritance.md) |
-| [Modelos de páginas](/help/sites-cloud/authoring/page-editor/templates.md) | Em breve! | As páginas criadas a partir de modelos são cópias independentes do modelo original. | [Usando Modelos de Página com o Editor Universal](/help/sites-cloud/authoring/universal-editor/templates.md) |
+| [Modelos de páginas](/help/sites-cloud/authoring/page-editor/templates.md) | Parcialmente disponível | As páginas criadas a partir de modelos são cópias independentes do modelo original. | [Usando Modelos de Página com o Editor Universal](/help/sites-cloud/authoring/universal-editor/templates.md) |
 | [Context Hub e Targeting](/help/sites-cloud/authoring/personalization/overview.md) | Não disponível |  |  |
 | [Timewarp](/help/sites-cloud/authoring/launches/preview.md) | Não disponível |  |  |
 | [Conteúdo associado](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#associated-content-browser) | Não disponível |  |  |
