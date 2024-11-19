@@ -4,9 +4,9 @@ description: Saiba mais sobre as diretrizes e práticas recomendadas para usar a
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 feature: Migration
 role: Admin
-source-git-commit: 208a4de5aab5326490908fade8f12f17b8f3c0d7
+source-git-commit: 943685ed9c33ba42c4dd1cb941b2eca1cce8bfe8
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1389'
 ht-degree: 14%
 
 ---
@@ -72,8 +72,6 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 
 * Se a opção **Limpar conteúdo existente na instância da nuvem antes da assimilação** estiver habilitada, ela excluirá todo o repositório existente e criará um novo repositório para assimilar conteúdo. Isso significa que ele redefine todas as configurações, incluindo permissões na instância do Cloud Service de destino. Também é verdadeiro para um usuário administrador adicionado ao grupo **administradores**. O usuário deve ser lido no grupo **administradores** para recuperar o token de acesso para a ferramenta Transferência de conteúdo.
 
-* As assimilações não são compatíveis com a mesclagem de conteúdo de várias fontes na instância do Cloud Service de destino se o conteúdo das duas fontes for movido para os mesmos caminhos no destino. Para mover o conteúdo de várias fontes para uma única ocorrência de Cloud Service de destino, certifique-se de que não haja sobreposição dos caminhos de conteúdo das fontes.
-
 * A chave de extração é válida por 14 dias a partir do momento em que foi criada ou renovada. Ele pode ser renovado a qualquer momento. Se a chave de extração tiver expirado, não será possível executar uma extração.
 
 * A ferramenta Transferência de conteúdo (CTT) não executa nenhum tipo de análise de conteúdo antes de transferir o conteúdo da instância de origem para a instância de destino. Por exemplo, a CTT não diferencia entre conteúdo publicado e não publicado enquanto assimila conteúdo em um ambiente do Publish. Qualquer conteúdo especificado no conjunto de migração é assimilado na instância de destino escolhida. Um usuário pode assimilar um conjunto de migração em uma instância do Autor ou do Publish, ou em ambas. O Adobe recomenda que, ao mover o conteúdo para uma instância de Produção, a CTT seja instalada na instância do Autor de origem para mover o conteúdo para a instância do Autor de destino. E, da mesma forma, instale a CTT na instância do Publish de origem para mover o conteúdo para a instância do Publish de destino. Consulte [Executando a Ferramenta de Transferência de Conteúdo em uma instância do Publish](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) para obter mais detalhes.
@@ -91,6 +89,8 @@ Siga a seção abaixo para entender as considerações importantes ao executar a
 * Se você pretende fazer atualizações complementares, a estrutura de conteúdo do conteúdo existente não deve mudar do momento em que a extração inicial é realizada até quando a extração complementar é executada. Os complementos não podem ser executados em um conteúdo cuja estrutura foi alterada desde a extração inicial. Restrinja isso durante o processo de migração.
 
 * Se você pretende incluir versões como parte de um conjunto de migração e estiver executando atualizações com `wipe=false`, desative a limpeza de versões devido a uma limitação atual na Ferramenta de transferência de conteúdo. Se preferir manter a limpeza de versão habilitada e estiver executando atualizações complementares em um conjunto de migração, você deve executar a assimilação como `wipe=true`.
+
+* A Ferramenta de transferência de conteúdo (CTT) não oferece suporte a assimilações de mesclagem. Para consolidar o conteúdo de vários sistemas em uma única instância do Cloud Service, somente as versões de um sistema de origem podem ser migradas. Esse processo requer o uso de migrações com o parâmetro wipe=false, que pode resultar em tempos de assimilação estendidos devido à natureza incremental da operação. Se possível, consolide o conteúdo em um único sistema de origem antes de iniciar a migração para eliminar a necessidade de mesclar o conteúdo.
 
 * Um conjunto de migração expira após um período prolongado de inatividade, após o qual seus dados não estarão mais disponíveis. Revise a [Expiração do Conjunto de Migração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) para obter mais detalhes.
 
