@@ -3,9 +3,9 @@ title: Exibir insights de ativos no Content Hub
 description: Saiba como exibir insights de ativos no [!DNL Content Hub]
 role: User
 exl-id: 29cbe017-856d-486b-acf3-aa47dbd90f3f
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 0%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Insights do Assets](assets/asset-insights-banner.jpg)
+
+>[!AVAILABILITY]
+>
+>O guia do Content Hub agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>
+>[!BADGE PDF do Guia do Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 O [!DNL Content Hub] fornece informações valiosas sobre ativos, abordando um desafio comum que as partes interessadas de marketing geralmente enfrentam: as estatísticas de uso de ativos usadas em campanhas de marketing, canais e diferentes regiões. Ao obter uma compreensão clara do desempenho e da popularidade dos ativos, ele fornece insights acionáveis essenciais para melhorar a experiência do usuário.
 

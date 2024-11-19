@@ -3,9 +3,9 @@ title: Dynamic Media com recursos OpenAPI
 description: Saiba mais sobre os principais conceitos, como por que usar o Dynamic Media com recursos OpenAPI e como ativá-lo.
 role: User
 exl-id: 658b6eff-9f5a-4166-9ff6-5dc8eb92ada3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1109'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 
 | [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|-----|
+
+>[!AVAILABILITY]
+>
+>O Dynamic Media com guia de recursos OpenAPI agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>
+>[!BADGE PDF do Guia de Recursos do Dynamic Media com OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 No mundo digital veloz de hoje, explorar todo o potencial dos ativos digitais da sua marca é crucial para se manter à frente da concorrência. Uma solução holística de Gerenciamento de Assets digital (DAM) facilita a governança de ativos, promove a consistência da marca e acelera a entrega de conteúdo, garantindo a integridade da marca e experiências excepcionais para o cliente.
 
@@ -65,7 +71,7 @@ Para habilitar o Dynamic Media com recursos OpenAPI no AEM as a Cloud Service, e
 
   >[!NOTE]
   >
-  > Para integrar com um aplicativo não-Adobe, forneça nomes de domínio ao lista de permissões onde o aplicativo está hospedado.
+  Para integrar com um aplicativo não-Adobe, forneça nomes de domínio ao lista de permissões onde o aplicativo está hospedado.
 
 * Detalhes dos principais contatos do cliente envolvidos no projeto de integração.
 
@@ -75,7 +81,7 @@ Depois de enviar o tíquete de suporte, o Adobe habilita o Dynamic Media com rec
 
 >[!NOTE]
 >
->Exclua `/conf/global/settings/dam/assets-configurations/assetdelivery` de qualquer pacote de conteúdo para evitar a desativação do Dynamic Media com recursos OpenAPI.
+Exclua `/conf/global/settings/dam/assets-configurations/assetdelivery` de qualquer pacote de conteúdo para evitar a desativação do Dynamic Media com recursos OpenAPI.
 
 ## Saiba mais sobre os principais recursos {#learn-more-key-capabilities}
 

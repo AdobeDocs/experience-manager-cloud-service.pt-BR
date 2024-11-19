@@ -3,9 +3,9 @@ title: Compartilhar Assets em  [!DNL the Content Hub]
 description: Compartilhar Assets em  [!DNL the Content Hub]
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 1%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Compartilhar imagem do banner de ativos](assets/share-assets-banner.png)
+
+>[!AVAILABILITY]
+>
+>O guia do Content Hub agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>
+>[!BADGE PDF do Guia do Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar os recursos para [!DNL the Content Hub] usuários. A funcionalidade permite que usuários autorizados acessem e baixem os ativos compartilhados com eles. Ao baixar ativos de um link compartilhado, o [!DNL the Content Hub] usa um serviço assíncrono que oferece download mais rápido e ininterrupto.
 

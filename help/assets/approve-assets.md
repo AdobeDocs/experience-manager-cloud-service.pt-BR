@@ -3,9 +3,9 @@ title: Aprovar ativos no Experience Manager
 description: Saiba como aprovar ativos no [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: d542df9ae943d03a56b5d85b1bd189f81c35fe28
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '747'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 1%
 
 | [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>O Dynamic Media com guia de recursos OpenAPI agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>
+>[!BADGE PDF do Guia de Recursos do Dynamic Media com OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Os gerentes e comerciantes de marca mantêm controle rigoroso sobre os ativos da marca. Somente as versões aprovadas e mais recentes do ativo estão disponíveis para uso, garantindo a consistência da marca em todos os canais e aplicativos.
 
@@ -36,7 +42,7 @@ Se você precisar exibir a propriedade para a qual o campo **[!UICONTROL Status 
 
 >[!NOTE]
 >
->Se os ativos ou pastas tiverem um esquema padrão diferente, certifique-se de fazer essa atualização nesse esquema específico.
+Se os ativos ou pastas tiverem um esquema padrão diferente, certifique-se de fazer essa atualização nesse esquema específico.
 
 ## Aprovar ativos {#approve-assets}
 
@@ -78,7 +84,7 @@ Simplifique o fluxo de trabalho aprovando rapidamente vários ativos de uma só 
 
 >[!NOTE]
 > 
->Essa abordagem aprova os ativos recém-criados na pasta. Para ativos existentes na pasta, é necessário selecionar e aprovar manualmente. <br> Como alternativa, você pode usar a opção **[!UICONTROL Reprocessar]** para aplicar as alterações do perfil de metadados aos ativos mais antigos.
+Essa abordagem aprova os ativos recém-criados na pasta. Para ativos existentes na pasta, é necessário selecionar e aprovar manualmente. <br> Como alternativa, você pode usar a opção **[!UICONTROL Reprocessar]** para aplicar as alterações do perfil de metadados aos ativos mais antigos.
 
 Da mesma forma, para aprovar ativos em massa em uma pasta na exibição do Assets:
 
@@ -105,6 +111,6 @@ Para copiar o URL de entrega de um ativo aprovado no repositório:
 
    >[!NOTE]
    >
-   >A opção para copiar o URL de entrega para ativos aprovados está disponível apenas na visualização Assets.
+   A opção para copiar o URL de entrega para ativos aprovados está disponível apenas na visualização Assets.
 
 Para obter informações sobre outras representações exibidas no painel do Dynamic Media, consulte [Exibir e baixar representações do Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

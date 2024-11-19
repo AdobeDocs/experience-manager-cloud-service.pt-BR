@@ -3,9 +3,9 @@ title: Propriedades do ativo em  [!DNL the Content Hub]
 description: Saiba como exibir e gerenciar propriedades de ativos no [!DNL Content Hub]
 role: User
 exl-id: a85af980-4c51-4d30-9fad-afd16370e9db
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '645'
 ht-degree: 8%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 8%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Imagem do banner de metadados](assets/metadata-banner-image.png)
+
+>[!AVAILABILITY]
+>
+>O guia do Content Hub agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>
+>[!BADGE PDF do Guia do Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 O [!DNL The Content Hub] permite exibir informações sobre o ativo que são essenciais para uma distribuição eficiente do ativo. É a coleção de todos os dados disponíveis para um ativo.
 

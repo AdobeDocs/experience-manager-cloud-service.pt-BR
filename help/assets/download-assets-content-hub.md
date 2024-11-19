@@ -3,9 +3,9 @@ title: Baixar ativos da Content Hub
 description: Saiba como baixar ativos no portal Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 76337282b7d3008864763541a957c44327e1a5be
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 0%
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
 ![Baixar ativos](assets/download-asset-genstudio.jpeg)
+
+>[!AVAILABILITY]
+>
+>O guia do Content Hub agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>
+>[!BADGE PDF do Guia do Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 O Content Hub permite baixar e compartilhar os ativos. Esses ativos podem incluir imagens, vídeos ou qualquer outro conteúdo digital. O Content Hub melhora a acessibilidade e a adaptabilidade para uma distribuição eficiente de ativos.
 
@@ -36,7 +42,7 @@ Como alternativa, clique em ![baixar](/help/assets/assets/download-icon.svg) no 
 
      >[!NOTE]
      >
-     >A caixa de seleção dos termos e condições é exibida somente para ativos licenciados. Além disso, a caixa de diálogo do ativo exibe uma pré-visualização dos termos e condições de licenciamento somente para ativos com licenças aprovadas. [Aprove a licença do ativo](/help/assets/approve-assets-content-hub.md) antes de baixar para habilitar a visualização dos termos de licença na caixa de diálogo do ativo.
+     A caixa de seleção dos termos e condições é exibida somente para ativos licenciados. Além disso, a caixa de diálogo do ativo exibe uma pré-visualização dos termos e condições de licenciamento somente para ativos com licenças aprovadas. [Aprove a licença do ativo](/help/assets/approve-assets-content-hub.md) antes de baixar para habilitar a visualização dos termos de licença na caixa de diálogo do ativo.
 
    * Clique na **Caixa Representação Original** para retornar à representação do ativo original no painel esquerdo.
 1. Aceite os termos e condições de licenciamento (para ativo licenciado) e clique em **Baixar** para baixar o ativo.
@@ -48,13 +54,13 @@ Como alternativa, clique em ![baixar](/help/assets/assets/download-icon.svg) no 
 
    >[!NOTE]
    >
-   >[Habilite a opção de download para ativos expirados](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) para baixá-los. Somente os ativos expirados que ativaram o download estão disponíveis para download.
+   [Habilite a opção de download para ativos expirados](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) para baixá-los. Somente os ativos expirados que ativaram o download estão disponíveis para download.
 
    <a id="Download-asset-dialog-box"></a> **Caixa de diálogo Baixar ativos:** essa caixa de diálogo exibe a lista de licenças associadas aos ativos selecionados no painel esquerdo. Selecione uma licença para visualizar seus termos e condições (em formato pdf) no painel do meio e a visualização dos ativos associados e sua contagem no painel direito. As licenças revisadas estão destacadas em azul claro.
 
    >[!NOTE]
    >
-   > A **caixa de diálogo Baixar Ativo** visualiza os termos e condições de licenciamento somente para licenças aprovadas. [Aprove as licenças dos ativos](/help/assets/approve-assets-content-hub.md) antes de baixá-los para visualizar os termos de licenciamento na **caixa de diálogo Baixar Ativo**.
+   A **caixa de diálogo Baixar Ativo** visualiza os termos e condições de licenciamento somente para licenças aprovadas. [Aprove as licenças dos ativos](/help/assets/approve-assets-content-hub.md) antes de baixá-los para visualizar os termos de licenciamento na **caixa de diálogo Baixar Ativo**.
 
 1. Clique em ![remove-icon](/help/assets/assets/remove-icon.svg) para remover uma licença da caixa de diálogo de download.
 

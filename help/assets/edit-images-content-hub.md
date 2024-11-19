@@ -2,9 +2,9 @@
 title: Editar imagens no Content Hub usando o Adobe Express
 description: Editar imagens no Content Hub usando o Adobe Express
 exl-id: c9777862-226c-4d39-87da-9c4a30437dc5
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '436'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 2%
 
 ![Editar imagens no Content Hub usando o Adobe Express](assets/edit-images-content-hub.png)
 
+>[!AVAILABILITY]
+>
+>O guia do Content Hub agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>
+>[!BADGE PDF do Guia do Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
+
 O Content Hub permite criar novo conteúdo com o Adobe Express. Você pode editar o conteúdo existente com ferramentas fáceis de usar, produzir variações na marca com modelos e elementos da marca e criar novo conteúdo com os recursos mais recentes da GenAI da Adobe Firefly.
 
 ## Pré-requisitos {#prereqs-edit-image-content-hub}
@@ -24,7 +30,7 @@ Qualificações para acessar o Adobe Express e [usuários do Content Hub com dir
 
 >[!NOTE]
 >
->Você pode editar imagens de tipos de arquivos PNG e JPG/JPEG usando o [!DNL Adobe Express].
+Você pode editar imagens de tipos de arquivos PNG e JPG/JPEG usando o [!DNL Adobe Express].
 
 ## Edição de imagens usando o [!DNL Adobe Express] {#edit-images-using-content-hub}
 

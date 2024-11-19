@@ -3,9 +3,9 @@ title: Integrar o AEM Assets com aplicativos downstream
 description: Integrar o AEM Assets com aplicativos downstream
 role: User
 exl-id: abd48b5d-2b43-453c-8eb6-31ff509245ca
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 
 | [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
 | ------------- | --------------------------- |---------|----|-----|
+
+>[!AVAILABILITY]
+>
+>O Dynamic Media com guia de recursos OpenAPI agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>
+>[!BADGE PDF do Guia de Recursos do Dynamic Media com OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Todos os [ativos aprovados](/help/assets/approve-assets.md) disponíveis no repositório do Experience Manager assets estão disponíveis para entrega em aplicativos downstream.
 
@@ -27,6 +33,6 @@ O Seletor de ativos de micro front-end do Adobe fornece uma interface que se int
 
 >[!MORELIKETHIS]
 >
->* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
->* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
->* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)
+* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
+* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
+* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)

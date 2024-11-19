@@ -2,9 +2,9 @@
 title: Aprovar ativos para o Content Hub
 description: Saiba como aprovar ativos no Assets as a Cloud Service para disponibilizá-los no Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 189fc257fed1115f66559d0f9063885ae527a0fa
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '774'
 ht-degree: 2%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 2%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Aprovar ativos para o Content Hub](assets/content-hub-approve-assets.png)
+
+>[!AVAILABILITY]
+>
+>O guia do Content Hub agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>
+>[!BADGE PDF do Guia do Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 Os gerentes e comerciantes de marca mantêm controle rigoroso sobre os ativos da marca. Somente as versões aprovadas e mais recentes do ativo estão disponíveis para uso no Content Hub, garantindo a consistência da marca em todos os canais e aplicativos.
 
@@ -34,7 +40,7 @@ Os ativos marcados como `approved` no Assets as a Cloud Service ficam disponíve
 
 >[!NOTE]
 >
->O Assets as a Cloud Service e o Content Hub devem usar a mesma organização para que os ativos sejam exibidos no Content Hub.
+O Assets as a Cloud Service e o Content Hub devem usar a mesma organização para que os ativos sejam exibidos no Content Hub.
 
 Para definir o status do ativo como `approved` usando o modo de exibição Assets no AEM as a Cloud Service:
 
@@ -89,7 +95,7 @@ Siga estas etapas para automatizar a aprovação de ativos recém-assimilados em
 
 >[!NOTE]
 > 
->Essa abordagem aprova os ativos recém-criados na pasta. Para ativos existentes na pasta, é necessário selecionar e aprovar manualmente.
+Essa abordagem aprova os ativos recém-criados na pasta. Para ativos existentes na pasta, é necessário selecionar e aprovar manualmente.
 
 ## Gerenciar ativos carregados usando o Content Hub {#manage-assets-uploaded-using-content-hub}
 

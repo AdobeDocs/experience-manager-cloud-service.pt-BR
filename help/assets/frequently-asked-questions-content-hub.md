@@ -1,9 +1,10 @@
 ---
 title: Perguntas frequentes sobre o Content Hub
 description: Obtenha respostas para algumas das perguntas mais frequentes do Content Hub.
-source-git-commit: 3b8a80e346fe63450f9b57733c67de2e4b52b2b8
+exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
+source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,12 @@ ht-degree: 0%
 | ------------- | --------------------------- |---------|----|-----|
 
 ![Perguntas frequentes sobre a Content Hub](assets/content-hub-faqs.png)
+
+>[!AVAILABILITY]
+>
+>O guia do Content Hub agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>
+>[!BADGE PDF do Guia do Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
 ## O que é o Content Hub? {#what-is-content-hub}
 
@@ -87,5 +94,3 @@ O Adobe oferece suporte à migração do Brand Portal para o Content Hub, que po
 ## Por que não consigo ver a opção Configurações/configurações do produto no Content Hub? {#ui-configuration-option-missing}
 
 Para acessar a [Interface do Usuário de Configuração](/help/assets/configure-content-hub-ui-options.md), você precisa ser um [Administrador do Content Hub](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). Se você estiver atribuído ao perfil de produto Administradores do AEM na instância do autor de produção no Adobe Admin Console e ainda não conseguir ver a opção de configuração, verifique se o perfil de produto Administradores do AEM não é renomeado. Consulte [Perfis de produto e de equipe do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) para obter mais detalhes.
-
-
