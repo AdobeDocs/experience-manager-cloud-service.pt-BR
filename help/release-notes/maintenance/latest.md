@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 9a653fbe13b29fa60af7410fff178cbac6ca554d
+source-git-commit: f9f3d1fcb32445269e5ca4b9479b8e9075c73c10
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '852'
 ht-degree: 13%
 
 ---
@@ -33,6 +33,7 @@ A ativação de recursos do 2024.11.0 fornecerá o conjunto completo de recursos
 * SITES-24369: Fragmentos de conteúdo: melhorias na documentação da OpenAPI.
 * SITES-25478: fragmentos de conteúdo: adicione suporte de back-end para referências de ativos externos.
 * SITES-26119: Fragmentos de conteúdo: adicione suporte a referências de ativos externos no tipo de referência.
+* SITES-24609: fragmentos de conteúdo: melhore a validação ao excluir fragmentos de conteúdo.
 * SITES-21199: Edge Delivery com Universal Editor: adicionar suporte para modelos criados a partir de páginas.
 * SITES-20311: Edge Delivery com editor universal: adicione suporte para importar CSVs para planilhas.
 * SITES-24821: Edge Delivery com Universal Editor: torne aem.page / aem.live o padrão para integrar com o Edge Delivery.
