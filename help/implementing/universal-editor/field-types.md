@@ -4,10 +4,10 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 13e5d573d7522d9772f5a4080c2b2f0b460b5513
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -139,7 +139,7 @@ Um tipo de componente de tag AEM habilita um seletor de tags AEM, que pode ser u
 
 #### Conteúdo AEM {#aem-content}
 
-Um tipo de componente de conteúdo do AEM permite um seletor de conteúdo do AEM, que pode ser usado para definir referências de conteúdo. Ele oferece um tipo de validação adicional.
+Um tipo de componente de conteúdo do AEM permite um seletor de conteúdo do AEM, que pode ser usado para selecionar qualquer recurso do AEM. Ao contrário do [componente de referência](#reference), que só pode selecionar ativos, o componente de conteúdo AEM pode fazer referência a qualquer conteúdo AEM. Ele oferece um tipo de validação adicional.
 
 | Tipo de validação | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|
@@ -636,6 +636,8 @@ Um tipo de componente Grupo de opções permite uma seleção mutuamente exclusi
 >[!ENDTABS]
 
 #### Referência {#reference}
+
+Um tipo de componente de referência permite um seletor de ativos AEM, que pode ser usado para selecionar qualquer ativo AEM para referência. Ao contrário do [componente de conteúdo do AEM](#aem-content), que pode selecionar qualquer recurso AEM, o componente de referência só pode fazer referência a ativos. Ele oferece um tipo de validação adicional.
 
 Um tipo de componente de referência permite uma referência a outro objeto de dados do objeto atual.
 
