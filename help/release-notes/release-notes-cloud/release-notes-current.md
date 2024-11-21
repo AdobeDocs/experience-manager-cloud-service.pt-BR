@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 083e334c2ac248e15168ae3ec4c8daf2b2888ee5
+source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '1778'
 ht-degree: 9%
 
 ---
@@ -51,6 +51,10 @@ Transforme rapidamente qualquer página do Edge Delivery em um modelo de página
 **[!DNL Edge Delivery Services]Importador de CSV para publicação via instância AEM**
 
 Gerencie seus dados de planilha do Edge Delivery (por exemplo, redirecionamentos) com eficiência em sua ferramenta de planilha favorita e faça upload para o AEM por meio do novo importador de CSV. [Leia mais](/help/edge/wysiwyg-authoring/tabular-data.md#importing).
+
+### Recursos de pré-lançamento no AEM Sites
+
+Referência de fragmento de conteúdo aprimorada com referências exclusivas baseadas em ID, garantindo links estáveis que permanecem válidos mesmo quando ativos ou fragmentos são movidos — eliminando a necessidade de atualizações ou republicação. Limitação atual: as referências de página ainda não são compatíveis com IDs exclusivas. Se as páginas forem referenciadas em Fragmentos de conteúdo, esse recurso não deverá ser usado.
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
