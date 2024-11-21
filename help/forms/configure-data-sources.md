@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
 workflow-type: tm+mt
 source-wordcount: '2129'
 ht-degree: 1%
@@ -29,7 +29,7 @@ A Integração de Dados do [!DNL Experience Manager Forms] permite que você con
 * Serviços da Web com base em SOAP
 * Serviços OData (Versão 4.0)
 * Microsoft® Dynamics
-* Força de vendas
+* Salesforce
 * Armazenamento Microsoft® Azure Blob
 
 A integração de dados oferece suporte aos tipos de autenticação OAuth2.0([Código de Autorização](https://oauth.net/2/grant-types/authorization-code/), [Credenciais de Cliente](https://oauth.net/2/grant-types/client-credentials/)), Autenticação Básica e Chave de API prontos para uso, e permite a implementação de autenticação personalizada para acessar serviços Web. Enquanto os serviços RESTful, SOAP-based, e OData estão configurados no as a Cloud Service do [!DNL Experience Manager], o JDBC para bancos de dados relacionais e o conector para o perfil de usuário do [!DNL Experience Manager] estão configurados no console Web do [!DNL Experience Manager].
@@ -329,7 +329,6 @@ When you enable mutual authentication for form data model (FDM), both the data s
 ## Próximas etapas {#next-steps}
 
 Você configurou as fontes de dados. Em seguida, você poderá criar um Modelo de dados de formulário (FDM) ou, se já tiver criado um Modelo de dados de formulário (FDM) sem uma fonte de dados, poderá associá-lo às fontes de dados configuradas. Consulte [Criar modelo de dados de formulário](create-form-data-models.md) para obter detalhes.
-
 
 <!--
 

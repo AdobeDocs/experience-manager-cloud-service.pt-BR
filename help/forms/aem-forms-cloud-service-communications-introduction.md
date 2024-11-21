@@ -5,10 +5,10 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
 workflow-type: tm+mt
-source-wordcount: '2290'
-ht-degree: 42%
+source-wordcount: '2374'
+ht-degree: 41%
 
 ---
 
@@ -194,7 +194,7 @@ PDF documents contain metadata, which is information about the document (as dist
 
 ### Converter e validar documentos compatíveis com PDF/A
 
-As APIs de conversão de documento de comunicações ajudam a Converter um documento PDF em PDF/A. Você pode usar as APIs para converter um documento PDF em um documento compatível com PDF/A e também para determinar se um documento PDF é compatível com PDF/A. PDF/A é um formato de arquivo destinado à preservação do conteúdo do documento a longo prazo. As fontes são incorporadas no documento e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não contém conteúdo de áudio e vídeo.
+As APIs de conversão de documento de comunicações ajudam a Converter um documento PDF em PDF/A. Você pode usar as APIs para converter um documento PDF em um documento compatível com PDF/A e também para determinar se um documento PDF é compatível com PDF/A. PDF/A é um formato de arquivo destinado à preservação do conteúdo do documento a longo prazo. As fontes são incorporadas no documento e o arquivo é descompactado. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Além disso, um documento PDF/A não contém conteúdo de áudio e vídeo. Os padrões de conformidade com PDF/A suportados incluem PDF/A-1a, 1b, 2a, 2b, 3a e 3b.
 
 ### Converter PDF em XDP {#convert-pdf-to-xdp}
 
@@ -202,7 +202,7 @@ As APIs de conversão de documento de comunicações ajudam a Converter um docum
 
 Converte um documento PDF em um arquivo XDP. Para que um documento PDF seja convertido com êxito em um arquivo XDP, o documento PDF deve conter um fluxo XFA no dicionário.
 
-## Document Assurance {#doc-assurance}
+## Assurance do documento {#doc-assurance}
 
 O serviço DocAssurance inclui as APIs de Assinatura e Criptografia:
 
@@ -214,6 +214,24 @@ As APIs de assinatura permitem que sua organização proteja a segurança e a pr
 * Adicione um campo de assinatura invisível a um documento PDF.
 * Assine o campo de assinatura especificado em um documento PDF.
 * Certificar um documento PDF
+* Remover a assinatura do campo de assinatura especificado em um documento PDF
+* Excluir o campo de assinatura especificado de um documento PDF
+
+<span class="preview"> Remova a assinatura do campo de assinatura especificado e exclua o campo de assinatura especificado, de um documento PDF, que está disponível no programa adotante antecipado. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+
+
+<!--
+
+### Remove Signature APIs
+
+The Remove Signature API helps to remove an existing digital signatures from a PDF document. This API is useful when you need to update or revise a signed document and reapply signatures. It maintains document integrity while effectively clearing signatures from specific pages or the entire file. Use cases include re-signing documents with updated data or clearing previous approvals for revised versions.
+
+
+### Remove Signature Field APIs
+
+The Remove Signature Field API is tailored for removing signature fields from a PDF document. This is ideal when you need to delete empty or unused signature fields to streamline document presentation. It enables users to eliminate signature fields without impacting other form fields or the document structure, making it easier to create cleaner, final versions of a document that no longer require signatures.
+
+-->
 
 ### APIs de criptografia
 

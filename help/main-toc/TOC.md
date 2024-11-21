@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 87acfc03c4497fcbfb94ff43cdd380cd6725bcf2
+source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
 workflow-type: tm+mt
-source-wordcount: '5801'
-ht-degree: 72%
+source-wordcount: '5873'
+ht-degree: 71%
 
 ---
 
@@ -32,6 +32,7 @@ ht-degree: 72%
    + Notas de versão de recursos do AEMaaCS {#release-notes}
       + [Notas de versão atuais](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2024 {#2024}
+         + [Notas da versão 2024.10.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-10-0.md)
          + [Notas da versão 2024.9.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-9-0.md)
          + [Notas da versão 2024.8.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-8-0.md)
          + [Notas da versão 2024.7.0](/help/release-notes/release-notes-cloud/2024/release-notes-2024-7-0.md)
@@ -719,6 +720,11 @@ ht-degree: 72%
          + [Trabalhar com o modelo de dados de formulário](/help/forms/work-with-form-data-model.md)
          + [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)
          + [Criar esquema XML para um formulário adaptável](/help/forms/adaptive-form-xml-schema-form-model.md)
+         + Integrar o Adaptive Forms com o Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [Integrar o Adobe Marketo Engage com o AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Configurar novo formulário para integrar com o Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Configurar fonte de dados do Adobe Marketo Engage para o Adaptive Forms existente](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Configurar a ação de envio para o Marketo Engage para formulários existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Formulários adaptáveis {#adaptive-forms-authoring}
       + [Criação de um Formulário adaptável](/help/forms/create-an-adaptive-form.md)
       + [Criar um fragmento de formulário adaptável](/help/forms/adaptive-form-fragments.md)
@@ -730,6 +736,7 @@ ht-degree: 72%
             + [Criar um fragmento de formulário adaptável](/help/forms/adaptive-form-fragments-core-components.md)
             + [Criar temas para um Formulário adaptável - Componentes principais](/help/forms/using-themes-in-core-components.md)
             + [Criar um modelo de formulário adaptável com base nos Componentes principais](/help/forms/template-editor-core-components.md)
+            + [Criar um formulário adaptável (componentes principais) com base em modelos de formulário XFA](/help/forms/create-adaptive-form-using-xfa-templates.md)
             + [Gerar documento de registro para Formulários adaptáveis](/help/forms/generate-document-of-record-core-components.md)
             + [Usar tradução automática ou humana para traduzir um formulário adaptável](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configurar a página de redirecionamento ou mensagem de agradecimento](/help/forms/configure-redirect-page-or-thank-you-message.md)
@@ -758,6 +765,7 @@ ht-degree: 72%
                + [Operador e tipos de eventos disponíveis no editor de regras para um Formulário adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-events-operators.md)
                + [Exemplos de um Editor de regras para um formulário adaptável com base nos componentes principais](/help/forms/rule-editor-core-components-usecases.md)
                + [Uso de funções assíncronas em um Formulário adaptável](/help/forms/using-async-funct-in-rule-editor.md)
+               + [Aprimoramentos do Serviço de chamada no Editor de regras visuais para formulários com base nos Componentes principais](/help/forms/invoke-service-enhancements-rule-editor.md)
             + Introdução às Funções personalizadas para o Forms adaptável com base nos Componentes principais{#create-and-use-custom-function-core-component}
                + [Introdução às funções personalizadas para o Forms adaptável com base nos Componentes principais](/help/forms/create-and-use-custom-functions.md)
                + [Criar e usar uma Função personalizada para um Formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md)

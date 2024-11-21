@@ -4,9 +4,9 @@ description: Saiba como salvar os Componentes principais com base no Formulário
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2933b3be569724800a77b4ea93e91441046746f6
+source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1387'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Salvar formulários como rascunhos e listá-los na página Sites
 
-<span class="preview"> Este artigo contém conteúdo sobre o recurso **Salvamento automático**, um recurso de pré-lançamento. O recurso de pré-lançamento pode ser acessado somente por meio do [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features).</span>
+<span class="preview"> Este artigo contém conteúdo sobre o recurso **Rascunhos**, um recurso de pré-lançamento. O recurso de pré-lançamento pode ser acessado somente por meio do [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features).</span>
 
 Considere um usuário que começa a preencher um formulário, mas precisa pausar e retornar posteriormente. O AEM oferece uma opção `save-as-draft`, permitindo que o usuário salve o formulário como rascunho para conclusão futura. Para facilitar isso, o AEM fornece o componente de Portal de formulários **Rascunhos e Envios** pronto para uso, que exibe rascunhos e envios em páginas do AEM Sites. O componente lista formulários que foram salvos como rascunhos para conclusão posterior, bem como aqueles que foram enviados. Somente os usuários conectados podem editar os rascunhos ou exibir os formulários enviados. No entanto, se um usuário anônimo navegar pela lista de formulários usando o componente **Pesquisa e Listagem** e salvar um formulário como rascunho, ele não será listado pelo componente **Rascunhos e Envios**. Para visualizar rascunhos e envios, os usuários devem estar conectados no momento do envio do formulário.
 
@@ -137,7 +137,7 @@ Para salvar um formulário como Rascunho, crie uma regra **Salvar Formulário** 
 
 Ao visualizar um formulário adaptável, preencha-o e clique no botão **Salvar formulário**, ele será salvo como rascunho.
 
-### Salvar automaticamente
+### Rascunhos
 
 >[!NOTE]
 >
@@ -147,13 +147,13 @@ Você também pode configurar um Formulário adaptável para salvar automaticame
 
 1. Na instância do autor, abra um Formulário adaptável em um modo de edição.
 1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
-1. Clique no ícone de propriedades do Contêiner do Guia ![Propriedades do Guia](/help/forms/assets/configure-icon.svg) e abra a guia **[!UICONTROL Salvar Automaticamente]**.
+1. Clique no ícone de propriedades do Contêiner do Guia ![Propriedades do Guia](/help/forms/assets/configure-icon.svg) e abra a guia **[!UICONTROL Rascunhos]**.
 
    ![Salvamento automático](/help/forms/assets/auto-save.png)
 
-1. Marque a caixa de seleção **[!UICONTROL Habilitar]** para habilitar o salvamento automático do formulário.
-1. Configure **[!UICONTROL Trigger]** como **Time based** para salvar automaticamente o formulário <!--based on the occurrence of an event or--> após um intervalo de tempo específico.
-1. Especifique o intervalo de tempo em **[!UICONTROL Salvamento automático neste intervalo (Em segundos)]** para definir a duração que aciona o salvamento automático do formulário no intervalo definido.
+1. Marque a caixa de seleção **[!UICONTROL Salvar rascunhos automaticamente]** para habilitar o salvamento automático do formulário como rascunhos.
+1. Configure **[!UICONTROL Salvar Preferência]** como **Salvar rascunhos em intervalos regulares** para salvar automaticamente o formulário <!--based on the occurrence of an event or--> após um intervalo de tempo específico.
+1. Especifique o intervalo em **[!UICONTROL Frequência do intervalo de salvamento (Segundos)]** para definir a duração que aciona o salvamento automático do formulário no intervalo definido.
 1. Clique em **[!UICONTROL Concluído]**.
 
 ## Exibir rascunhos/formulários enviados na página Sites usando o componente Rascunhos e envios

@@ -1,7 +1,7 @@
 ---
-source-git-commit: f3502de1aebd44a056e1263b059e1588243f5845
+source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1323'
 ht-degree: 4%
 
 ---
@@ -53,6 +53,7 @@ ht-degree: 4%
 * [Enviar para o Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Conectar o formulário adaptável ao aplicativo do Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Conectar um formulário adaptável ao Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Conectar um formulário adaptável ao Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Criar ação de envio personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## Consulte também: {#see-more-forms-eds}
@@ -131,6 +132,8 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 * [Interface do usuário do Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-user-interface.md)
 * [Casos de uso diferentes do Editor de regras para um formulário adaptável baseado em componentes principais](/help/forms/rule-editor-core-components-usecases.md)
 * [Diferença em várias edições do editor de regras](/help/forms/rule-editor-core-components-difference-tables.md)
+* [Uso de funções assíncronas em um Formulário adaptável](/help/forms/using-async-funct-in-rule-editor.md)
+* [Aprimoramentos do Serviço de chamada no Editor de regras visuais para formulários com base nos Componentes principais](/help/forms/invoke-service-enhancements-rule-editor.md)
 * [Introdução às funções personalizadas para o Forms adaptável com base nos Componentes principais](/help/forms/create-and-use-custom-functions.md)
 * [Criar uma função personalizada para um formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md)
 * [Objeto de escopo em funções personalizadas](/help/forms/custom-function-core-component-scope-function.md)
@@ -144,6 +147,12 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 * [Salvar seus formulários como rascunhos](/help/forms/save-core-component-based-form-as-draft.md)
 * [Adicionar links de formulário a uma página do Sites](/help/forms/add-form-link-to-aem-sites-page.md)
 
+## Marketo Engage{#marketo-engage-see-also}
+
+* [Integrar o Marketo Engage com o AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+* [Configurar novo formulário para integrar com o Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+* [Configurar fonte de dados do Marketo Engage para o Adaptive Forms existente](/help/forms/use-marketo-engage-data-source-in-form.md)
+* [Configurar a ação de envio para o Marketo Engage para formulários existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
 ## Lista de permissões de IP da Cloud Manager e pipelines de front-end {#allowlist-frontend-pipeline}
 

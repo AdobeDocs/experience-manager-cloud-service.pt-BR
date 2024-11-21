@@ -4,9 +4,9 @@ description: Um Formulário adaptável fornece várias Ações de envio. Uma Aç
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
 workflow-type: tm+mt
-source-wordcount: '3914'
+source-wordcount: '3929'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,8 @@ ht-degree: 2%
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
-| AEM as a Cloud Service | Este artigo |
+| AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/configure-submit-actions-core-components.md) |
+| AEM as a Cloud Service (Componentes de base) | Este artigo |
 
 **Aplica-se a**: ✔️ componentes de base do formulário adaptável. [Componentes principais do formulário adaptável](/help/forms/configure-submit-actions-core-components.md). A Adobe recomenda usar os Componentes principais para [adicionar o Adaptive Forms a uma Página do AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) ou para [criar o Adaptive Forms](creating-adaptive-form-core-components.md) independente.
 
@@ -31,6 +32,7 @@ Uma Ação de Envio é acionada quando um usuário clica no botão **[!UICONTROL
 * [Enviar para o Armazenamento de blob do Azure](#azure-blob-storage)
 * [Enviar para o Power Automate](#microsoft-power-automate)
 * [Enviar para o Workfront Fusion](#workfront-fusion)
+* [Enviar ao Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 
 Você também pode [estender as Ações de Envio padrão](custom-submit-action-form.md) para criar sua própria Ação de Envio.
 
