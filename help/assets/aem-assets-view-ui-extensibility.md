@@ -4,9 +4,9 @@ description: Saiba mais sobre o recurso Extensibilidade da interface do usuário
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: e47a8fc65e58ae2ffff805966d7dae8c6edc7aac
+source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,13 @@ ht-degree: 0%
 | ------------- | --------------------------- |---------|----|-----|
 
 O AEM Assets View tem o recurso Extensibilidade da interface do usuário. Esse recurso permite que os usuários adicionem componentes personalizados da interface do usuário à interface do Assets View para atender a necessidades comerciais específicas que as funcionalidades prontas para uso da AEM Assets View não atendem. Esse recurso de extensibilidade melhora a flexibilidade do AEM Assets View, permitindo que as organizações adaptem a interface a workflows e requisitos específicos.
-Você pode adicionar suas extensões no nível do ativo, pasta e coleção. A extensão adicionada é exibida em um painel dedicado na página Detalhes do ativo, da coleção ou da pasta.
+Você pode adicionar suas extensões no nível do ativo, pasta e coleção. A extensão adicionada é exibida em um painel dedicado na página Ativo, Coleção ou Detalhes da pasta.
 
 >[!IMPORTANT]
-> A Extensibilidade da Interface de Exibição do AEM Assets está disponível com o [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+>
+> * A Extensibilidade da Interface de Exibição do AEM Assets está disponível com o [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
+> * A Extensibilidade da interface do usuário do Assets View está disponível na versão do Beta. Para obter acesso antecipado à extensibilidade da interface de exibição do Assets, [crie e envie um caso de Suporte ao Cliente do Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+> * Você pode fornecer feedback sobre a documentação, expandindo as opções de Feedback detalhado e clicando em Relatar um problema.
 
 ## <a id="1"></a> Como acessar o Assets View
 
@@ -32,9 +35,6 @@ Acesse a visualização do Assets das seguintes maneiras:
 Na Exibição do Assets, navegue até a página Detalhes de um ativo, pasta ou coleção. Essa página Detalhes tem um painel dedicado que exibe a Extensão da interface do usuário adicionada.
 ![meu espaço de trabalho](/help/assets/assets/my-workspace-assets-view3.png)
 
->[!NOTE]
->
-> A Extensibilidade da interface do usuário do AEM Assets View está disponível na versão do Beta. Você pode fornecer feedback sobre a documentação, expandindo as opções de Feedback detalhado e clicando em Relatar um problema.
 
 ## Pré-requisitos para adicionar o componente de extensibilidade
 
