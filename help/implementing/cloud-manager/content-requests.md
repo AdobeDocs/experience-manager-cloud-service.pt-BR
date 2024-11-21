@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 16941385a05358d9a5cf3f57405b8f2174902af2
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1276'
 ht-degree: 9%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 9%
 
 ## Introdução {#introduction}
 
-As solicitações de conteúdo se referem às solicitações feitas ao AEM Sites, incluindo as solicitações relacionadas aos Edge Delivery Services ou aos sistemas de cache fornecidos pelo cliente, como uma Rede de entrega de conteúdo. Essas solicitações entregam conteúdo ou dados no formato HTML por meio de exibições de página (por exemplo, páginas e Fragmentos de experiência) ou no formato JSON por meio de chamadas de API de maneira headless. As solicitações de conteúdo são contadas como uma exibição de página ou cinco chamadas de API e são medidas na entrada do primeiro sistema de cache a receber uma solicitação de conteúdo. Certas solicitações HTTP são incluídas ou excluídas para fins de contagem de solicitações de conteúdo. A lista completa dessas solicitações HTTP incluídas e excluídas, bem como suas definições técnicas, estão disponíveis na documentação.
+As solicitações de conteúdo se referem às solicitações feitas ao AEM Sites, incluindo as solicitações relacionadas aos Edge Delivery Services ou aos sistemas de cache fornecidos pelo cliente, como uma Rede de entrega de conteúdo. Essas solicitações entregam conteúdo ou dados no formato HTML por meio de exibições de página (por exemplo, páginas e Fragmentos de experiência) ou no formato JSON por meio de chamadas de API de maneira headless. As solicitações de conteúdo são contadas como uma exibição de página ou cinco chamadas de API e são medidas na entrada do primeiro sistema de cache a receber uma solicitação de conteúdo. Certas solicitações HTTP são incluídas ou excluídas para fins de contagem de solicitações de conteúdo. A lista completa dessas solicitações HTTP incluídas e excluídas e suas definições técnicas estão disponíveis na documentação.
 
 ## Sobre solicitações de conteúdo Cloud Service {#understanding-cloud-service-content-requests}
 

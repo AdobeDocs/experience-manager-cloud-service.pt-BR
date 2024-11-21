@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f7a8e823f058115f11241f0864517432a7dea5ab
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 30%
+source-wordcount: '1162'
+ht-degree: 33%
 
 ---
 
@@ -41,7 +41,7 @@ Na parte inferior da lista de pipelines, você tem as seguintes opções gerais:
 
 ## Página Pipelines {#pipelines}
 
-A página **Pipelines** mostra uma lista completa de todos os pipelines do programa selecionado. Essas informações são úteis porque apresentam informações mais abrangentes do que as disponíveis no [Cartão do pipeline](#pipeline-card).
+A página **Pipelines** mostra uma lista completa de todos os pipelines do programa selecionado. Essas informações são úteis porque apresentam informações mais abrangentes do que as disponíveis no [Cartão do pipeline](#pipeline-card).
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
@@ -62,7 +62,7 @@ Você também pode clicar em ![Reticências - Mais ícone](https://spectrum.adob
 
 ## Página Atividade {#activity}
 
-A página **Atividade** mostra uma lista completa de todas as execuções de pipelines para o programa selecionado, bem como outros eventos importantes do programa.
+A página **Atividade** mostra uma lista completa de todas as execuções de pipelines para o programa selecionado e outros eventos importantes do programa.
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
 

@@ -5,9 +5,9 @@ exl-id: 3f3d7631-2bc9-440b-9888-50f6529bcd42
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 767f6609b3f585630d45aee0d61483dbe66f66cf
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '1661'
+source-wordcount: '1659'
 ht-degree: 39%
 
 ---
@@ -249,7 +249,7 @@ Consulte também [Gerenciar ambientes](/help/implementing/cloud-manager/manage-e
 
 ### Cartão de pipelines {#pipelines}
 
-O cartão **Pipelines** fornece uma visão geral dos pipelines, bem como links para ações rápidas.
+O cartão **Pipelines** fornece uma visão geral dos seus pipelines e links para ações rápidas.
 
 O cartão **Pipelines** lista apenas três pipelines. Clique em **Mostrar tudo** para ver todos os pipelines do programa.
 

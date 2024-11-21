@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8f3ceb5ebf348b5f3f496b1db04d7dd7c9a0ac5c
+source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 25%
+source-wordcount: '890'
+ht-degree: 22%
 
 ---
 
@@ -41,9 +41,9 @@ O painel de licenças da Cloud Manager fornece acesso fácil aos direitos da sol
 
 O painel é dividido em três seções que mostram:
 
-* **Soluções** - Essa seção resume quais soluções você licenciou, como Sites ou Assets.
-* **Complementos** - Essa seção resume quais complementos estão disponíveis para suas soluções licenciadas.
-* **Outros direitos** - Esta seção resume qual ambiente de sandbox e desenvolvimento, bem como outros direitos que podem ser consumidos em seu locatário.
+* **Soluções** - Quais soluções você licenciou.
+* **Complementos** - Quais complementos estão disponíveis para suas soluções licenciadas.
+* **Outros direitos** - Que ambiente de sandbox e desenvolvimento e outros direitos podem ser consumidos em seu locatário.
 
 Cada seção resume o que está disponível e como é usado, se for o caso. Atualmente, somente as soluções do Sites e do Assets são exibidas, mesmo se outras soluções existirem no locatário.
 
