@@ -4,10 +4,10 @@ description: Notas de versão específicas para recursos obsoletos e removidos d
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: de73e38580895e3d8fe2029b59907d4c722556db
+source-git-commit: 644228b1bdae20c1ed6ca1de71b4c60d75f2cc4a
 workflow-type: tm+mt
-source-wordcount: '2576'
-ht-degree: 56%
+source-wordcount: '2603'
+ht-degree: 55%
 
 ---
 
@@ -42,9 +42,11 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 | [!DNL Assets] | Carregar ativos diretamente no [!DNL Experience Manager]. Consulte [APIs de carregamento de ativos obsoletos](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Use [Upload binário direto](/help/assets/add-assets.md). Para obter detalhes técnicos, consulte [APIs de upload direto](/help/assets/developer-reference-material-apis.md#upload-binary). |
 | [!DNL Assets] | [Determinadas etapas do fluxo de trabalho](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) `DAM Asset Update` não são compatíveis, incluindo a chamada de ferramentas de linha de comando, como o [!DNL ImageMagick]. | Os [microsserviços de ativos](/help/assets/asset-microservices-overview.md) oferecem uma substituição para muitos fluxos de trabalho. Para processamento personalizado, use [fluxos de trabalho de pós-processamento](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodificação FFmpeg de vídeos. | Para gerar miniaturas do FFmpeg, use os [Microserviços de ativos](/help/assets/asset-microservices-overview.md). Para a transcodificação FFmpeg, use o [Dynamic Media](/help/assets/manage-video-assets.md). |
-| [!DNL Foundation] | Interface de replicação em árvore na guia &quot;Distribuir&quot; do agente de replicação (remoção após 30 de setembro de 2021) | Abordagens [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [fluxo de trabalho Publicar árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Nem a guia Distribuir da tela do administrador do agente de replicação nem a API de replicação podem ser usadas para replicar pacotes de conteúdo com mais de 10 MB. Em vez disso, use [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [fluxo de trabalho de publicação da árvore de conteúdo](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Interface de replicação em árvore na guia &quot;Distribuir&quot; do agente de replicação (remoção após 30 de setembro de 2021) | [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Etapa do Fluxo de Trabalho de Ativação da Árvore](/help/operations/replication.md#tree-activation) se aproxima. |
+| [!DNL Foundation] | Nem a guia Distribuir da tela do administrador do agente de replicação nem a API de replicação podem ser usadas para replicar pacotes de conteúdo com mais de 10 MB. | [Gerenciar publicação](/help/operations/replication.md#manage-publication) ou [Etapa do Fluxo de Trabalho de Ativação da Árvore](/help/operations/replication.md#tree-activation) |
 | [!DNL Foundation] | Integrações que usam credenciais geradas de projetos da Adobe Developer Console perderão gradualmente o suporte às credenciais da Conta de serviço (JWT). As novas credenciais da Conta de serviço (JWT) não podem ser criadas na Adobe Developer Console em ou após 1º de maio de 2024, embora as credenciais da Conta de serviço (JWT) existentes ainda possam ser usadas para integrações já configuradas até 1º de janeiro de 2025, momento em que as credenciais da Conta de serviço (JWT) existentes não funcionarão mais e os clientes deverão migrar para as credenciais de Servidor para Servidor do OAuth. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console). | [Migrar](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) para credenciais OAuth de servidor para servidor. |
+| [!DNL Foundation] | Fluxo de trabalho da árvore de conteúdo do Publish e a etapa de fluxo de trabalho da árvore de conteúdo do Publish relacionada, que foi usada para replicações de hierarquias de conteúdo. | Use a [Etapa ](/help/operations/replication.md#tree-activation) do Fluxo de Trabalho de Ativação da Árvore, que tem melhor desempenho. |
+
 
 ## Recursos removidos {#removed-features}
 

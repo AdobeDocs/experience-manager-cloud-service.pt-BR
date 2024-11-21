@@ -4,10 +4,10 @@ description: Saiba mais sobre distribuição e solução de problemas de replica
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 38%
+source-wordcount: '1701'
+ht-degree: 31%
 
 ---
 
@@ -23,11 +23,10 @@ O Adobe Experience Manager as a Cloud Service usa o recurso [Distribuição de C
 
 >[!NOTE]
 >
->Se você estiver interessado em publicar conteúdo em massa, use o [Fluxo de trabalho da Árvore de Conteúdo do Publish](#publish-content-tree-workflow).
->Essa etapa do fluxo de trabalho é criada especificamente para o Cloud Service e pode lidar com cargas grandes de maneira eficiente.
+>Se você estiver interessado em publicar conteúdo em massa, crie um fluxo de trabalho usando a [Etapa do Fluxo de Trabalho de Ativação da Árvore](#tree-activation), que pode lidar eficientemente com grandes cargas.
 >Não é recomendável criar seu próprio código personalizado de publicação em massa.
->Se precisar personalizar por qualquer motivo, você poderá acionar essa etapa de fluxo de trabalho/fluxo de trabalho usando APIs de fluxo de trabalho existentes.
->É sempre uma boa prática publicar somente conteúdo que deve ser publicado. Seja prudente ao não tentar publicar grandes números de conteúdo, se não for necessário. No entanto, não há limites para o conteúdo que você pode enviar por meio do Fluxo de trabalho da árvore de conteúdo do Publish.
+>Se precisar personalizar por qualquer motivo, você poderá acionar um fluxo de trabalho com essa etapa usando APIs de fluxo de trabalho existentes.
+>É sempre uma boa prática publicar somente conteúdo que deve ser publicado. E seja prudente ao não tentar publicar grandes números de conteúdo, se não for necessário. No entanto, não há limites para o conteúdo que você pode enviar por meio de workflows com a Etapa de fluxo de trabalho Ativação em árvore.
 
 ### Publicação/Cancelamento de publicação rápidos — Publicação/Cancelamento de publicação planejados {#publish-unpublish}
 
@@ -51,7 +50,84 @@ A inclusão dos filhos de uma pasta na opção &quot;publicar mais tarde&quot; c
 
 Você pode encontrar informações mais detalhadas sobre Gerenciar publicação na [Documentação sobre princípios básicos de publicação](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
+### Etapa do fluxo de trabalho de ativação da árvore {#tree-activation}
+
+A etapa do fluxo de trabalho de Ativação em árvore destina-se a replicar com desempenho uma hierarquia profunda de nós de conteúdo. Ele faz uma pausa automaticamente quando a fila fica muito grande para permitir que outras replicações prossigam em paralelo com a latência mínima.
+
+Criar um Modelo de Fluxo de Trabalho que use a etapa de processo `TreeActivation`:
+
+1. Na página inicial do AEM as a Cloud Service, acesse **Ferramentas - Fluxo de trabalho - Modelos**.
+1. Na página Modelos de fluxo de trabalho, pressione **Criar** no canto superior direito da tela.
+1. Adicione um título e um nome ao modelo. Para obter mais informações, consulte [Criando Modelos de Fluxo de Trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR).
+1. Selecione o modelo criado na lista e pressione **Editar**
+1. Na janela a seguir, exclua a Etapa exibida por padrão
+1. Arraste e solte a Etapa do processo no fluxo do modelo atual:
+
+   ![Etapa do processo](/help/operations/assets/processstep.png)
+
+1. Selecione a etapa do processo no fluxo e selecione **Configurar** pressionando o ícone de chave inglesa.
+1. Selecione a guia **Processo**, selecione `Publish Content Tree` na lista suspensa e marque a caixa de seleção **Avanço do manipulador**
+
+   ![Treeactivation](/help/operations/assets/new-treeactivationstep.png)
+
+1. Defina quaisquer parâmetros adicionais no campo **Argumentos**. Vários argumentos separados por vírgula podem ser agrupados. Por exemplo:
+
+   `enableVersion=false,agentId=publish,chunkSize=50,maxTreeSize=500000,dryRun=false,filters=onlyModified,maxQueueSize=10`
+
+   >[!NOTE]
+   >
+   >Para obter a lista de parâmetros, consulte a seção **Parâmetros** abaixo.
+
+1. Pressione **Concluído** para salvar o modelo de fluxo de trabalho.
+
+**Parâmetros**
+
+| Nome | padrão | descrição |
+| -------------- | ------- | --------------------------------------------------------------- |
+| caminho |         | caminho raiz do qual iniciar |
+| agentId | publicação | Nome do agente de replicação a ser usado |
+| tamanhoParte | 50 | Número de caminhos a serem agrupados em uma única replicação |
+| maxTreeSize | 500000 | Número máximo de nós para uma árvore ser considerada pequena |
+| maxQueueSize | 10 | Número máximo de itens na fila de replicação |
+| enableVersion | falso | Ativar controle de versão |
+| dryRun | falso | Quando definido como verdadeiro, a replicação não é realmente chamada |
+| userId |         | somente para trabalho. No workflow, o usuário que chama o workflow é usado |
+| filtros |         | Lista de nomes de filtro de nó. Consulte o filtro compatível abaixo |
+
+**Filtros de Suporte**
+
+| Nome | descrição |
+| ------------- | ------------------------------------------- |
+| onlyModified | Nós modificados desde a última publicação |
+| onlyPublished | Nós publicados antes de |
+
+
+**Retomar suporte**
+
+O fluxo de trabalho processa o conteúdo em partes, cada uma representando um subconjunto do conteúdo completo a ser publicado.  Se o workflow for interrompido pelo sistema, ele continuará de onde parou.
+
+**Progresso do Fluxo de Trabalho de Monitoramento**
+
+1. Na página inicial do AEM as a Cloud Service, vá para **Ferramentas - Geral - Trabalhos**.
+1. Examine a linha correspondente ao seu fluxo de trabalho. A coluna *progress* fornece uma indicação do andamento da replicação. Por exemplo, ele pode exibir 41/564 e, após a atualização, pode ser atualizado para 52/564.
+
+   ![Progresso da Treeactivation](/help/operations/assets/treeactivation-progress.png)
+
+
+1. Selecionar a linha e abri-la fornecerá detalhes adicionais sobre o status da execução do workflow.
+
+   ![Detalhes do status de Treeactivation](/help/operations/assets/treeactivation-progress-details.png)
+
+
+
 ### Fluxo de trabalho de publicação da árvore de conteúdo {#publish-content-tree-workflow}
+
+>[!NOTE]
+>
+>Esse recurso está obsoleto em favor da etapa de Ativação da árvore, que tem um desempenho mais alto, e pode ser incluído em um fluxo de trabalho personalizado.
+
+<details>
+<summary>Clique aqui para saber mais sobre este recurso obsoleto.</summary>
 
 Você pode acionar uma replicação em árvore ao escolher **Ferramentas - Fluxo de trabalho - Modelos** e copiar o modelo de fluxo de trabalho pronto para uso **Publicar árvore de conteúdo**, conforme mostrado abaixo:
 
@@ -61,7 +137,7 @@ Não chame o modelo original. Em vez disso, primeiro copie o modelo e chame essa
 
 Como todos os fluxos de trabalho, também é possível chamá-lo por meio da API. Para obter mais informações, consulte [Interação programática com fluxos de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
 
-Como alternativa, você pode criar um Modelo de Fluxo de Trabalho que use a etapa de processo `Publish Content Tree`:
+Como alternativa, você pode criar um Modelo de Fluxo de Trabalho que use a etapa de processo `Publish Content Tree`.
 
 1. Na página inicial do AEM as a Cloud Service, acesse **Ferramentas - Fluxo de trabalho - Modelos**.
 1. Na página Modelos de fluxo de trabalho, pressione **Criar** no canto superior direito da tela.
@@ -117,10 +193,7 @@ A seguir estão exemplos de logs gerados durante um exemplo de fluxo de trabalho
 ```
 21.04.2021 19:14:58.541 [cm-p123-e456-aem-author-797aaaf-wkkqt] *INFO* [JobHandler: /var/workflow/instances/server60/2021-04-20/brian-tree-replication-test-2_1:/content/wknd/us/en/adventures] com.day.cq.wcm.workflow.process.impl.ChunkedReplicator closing chunkedReplication-VolatileWorkItem_node1_var_workflow_instances_server60_2021-04-20_brian-tree-replication-test-2_1, 17 paths replicated in 2971 ms
 ```
-
-**Retomar suporte**
-
-O fluxo de trabalho processa o conteúdo em partes, cada uma representando um subconjunto do conteúdo completo a ser publicado. Se o workflow for interrompido pelo sistema, ele reiniciará e processará a parte que ainda não foi processada. Uma declaração de log declara que o conteúdo foi retomado de um caminho específico.
+</details>
 
 ### API de replicação {#replication-api}
 
