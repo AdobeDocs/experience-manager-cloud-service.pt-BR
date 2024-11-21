@@ -1,12 +1,12 @@
 ---
-title: Utilização do \s
+title: Uso de pipelines de configuração
 description: Saiba como você pode usar pipelines de configuração para implantar diferentes configurações no AEM as a Cloud Service, como configurações de encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e várias configurações de CDN.
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 4d8f6f37541c0d712019f21a5684ec4bd5133de3
+source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '998'
 ht-degree: 1%
 
 ---
