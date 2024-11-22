@@ -4,15 +4,21 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 575b626447f6b88c1be601fbbd4de7eeb0264019
+source-git-commit: e44872277c4bda66fafd074416ea5253c365cc2f
 workflow-type: tm+mt
-source-wordcount: '5582'
-ht-degree: 78%
+source-wordcount: '5814'
+ht-degree: 76%
 
 ---
 
 
 # API GraphQL do AEM para uso com Fragmentos de conteúdo {#graphql-api-for-use-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>Vários recursos da API do GraphQL para uso com fragmentos de conteúdo estão disponíveis por meio do Early Adoter Program.
+>
+>Para ver o status e saber como se candidatar caso esteja interessado, confira as [Notas de Versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 
@@ -252,6 +258,8 @@ Dentro do esquema há campos individuais de duas categorias básicas:
 
 O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados do modelo de fragmento de conteúdo compatíveis e os tipos de GraphQL correspondentes são representados:
 
+<!-- CQDOC-21487 - check additions to table -->
+
 | Modelo de fragmento de conteúdo - Tipo de dados | Tipo de GraphQL | Descrição |
 |--- |--- |--- |
 | Texto em linha única | `String`, `[String]` | Usado para sequências de caracteres simples, como nomes de autor, nomes de localização e assim por diante. |
@@ -262,7 +270,9 @@ O GraphQL do AEM oferece suporte a uma lista de tipos. Todos os tipos de dados d
 | Enumeração | `String` | Usado para exibir uma opção de uma lista de opções definidas na criação do modelo |
 | Tags | `[String]` | Usado para exibir uma lista de strings que representam tags usadas no AEM |
 | Referência de conteúdo | `String`, `[String]` | Usado para exibir o caminho para outro ativo no AEM |
+| Referência de conteúdo (UUID) | `String`, `[String]` | Usado para exibir o caminho, representado por uma UUID em direção a outro ativo no AEM |
 | Referência de fragmento |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Multicampo, com um tipo referenciado: `[Model]` - Matriz do tipo `Model`, referenciado diretamente da matriz <br><br>Multicampo, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciado da matriz com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
+| Referência de fragmento (UUID) |  *Um tipo de modelo* <br><br>Campo único: `Model` - Tipo de modelo, referenciado diretamente <br><br>Multicampo, com um tipo referenciado: `[Model]` - Matriz do tipo `Model`, referenciado diretamente da matriz <br><br>Multicampo, com vários tipos referenciados: `[AllFragmentModels]` - Matriz de todos os tipos de modelo, referenciado da matriz com tipo de união |  Usado para fazer referência a um ou mais Fragmentos de conteúdo de determinados Tipos de modelo, definidos quando o modelo foi criado |
 
 {style="table-layout:auto"}
 
@@ -306,6 +316,27 @@ Para recuperar um único fragmento de conteúdo de um tipo específico, também 
 ```
 
 Consulte [Exemplo de consulta - um único fragmento específico de cidade](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment).
+
+#### ID (UUID) {#id-uuid}
+
+O campo de ID também é usado como um identificador no AEM GraphQL. Ele representa o caminho do ativo Fragmento de conteúdo dentro do repositório AEM, mas em vez de manter o caminho real, ele contém uma UUID que representa o recurso. Escolhemos esse como o identificador de um fragmento de conteúdo, pois ele:
+
+* é exclusivo dentro do AEM,
+* pode ser buscado facilmente,
+* não altera quando o recurso é movido.
+
+A UUID de um Fragmento de Conteúdo e de um Fragmento de Conteúdo ou ativo referenciado pode ser retornada por meio da propriedade JSON `_id`.
+
+```graphql
+{
+  articleList {
+    items {
+        _id
+        _path
+    }
+  }
+}
+```
 
 #### Metadados {#metadata}
 
@@ -1112,6 +1143,11 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
 
       * `_path` : o caminho para o fragmento de conteúdo no repositório
          * Consulte [Exemplo de consulta - Um único fragmento de cidade específico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+
+      * `_id_` : a UUID do fragmento de conteúdo no repositório
+        <!-- CQDOC-21487 -->
+         * Consulte [Exemplo de consulta para um fragmento de conteúdo de um modelo específico com referências UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
+         * [Consulte Exemplo de consulta para fragmentos de conteúdo por referência de UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
 
       * `_reference` : para revelar referências; incluindo referências em linha no Editor de Rich Text
          * Consulte [Exemplo de consulta para vários fragmentos de conteúdo com referências previamente buscadas](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragments-prefetched-references)

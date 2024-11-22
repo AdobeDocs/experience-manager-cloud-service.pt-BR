@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6653a761ee8d0cb1d7b07acd263121422d419a8b
+source-git-commit: b677ab1781491059098cbf63f13f72555d6012b3
 workflow-type: tm+mt
-source-wordcount: '5873'
+source-wordcount: '5880'
 ht-degree: 71%
 
 ---
@@ -1051,6 +1051,7 @@ ht-degree: 71%
       + [Consultas persistentes de GraphQL](/help/headless/graphql-api/persisted-queries.md)
       + [Otimização de consultas de GraphQL](/help/headless/graphql-api/graphql-optimization.md)
       + [Atualizar fragmentos de conteúdo para a filtragem otimizada de GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [Atualização dos fragmentos de conteúdo para referências UUID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Exemplo de consultas GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Solução de problemas de consultas do GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
    + [AEM REST OpenAPI para entrega de fragmentos de conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
