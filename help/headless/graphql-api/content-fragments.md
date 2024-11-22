@@ -4,7 +4,7 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: b1b28cdc5fd1b697a2c2cd2893340d3c6afc8562
 workflow-type: tm+mt
 source-wordcount: '5814'
 ht-degree: 76%
@@ -1142,7 +1142,7 @@ A operação básica de consultas com o GraphQL para AEM adere à especificaçã
       * `_path` : o caminho para o fragmento de conteúdo no repositório
          * Consulte [Exemplo de consulta - Um único fragmento de cidade específico](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
 
-      * `_id_` : a UUID do fragmento de conteúdo no repositório
+      * `_id` : a UUID do fragmento de conteúdo no repositório
 
          * Consulte [Exemplo de consulta para um fragmento de conteúdo de um modelo específico com referências UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-references)
          * [Consulte Exemplo de consulta para fragmentos de conteúdo por referência de UUID](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-specific-model-uuid-reference)
