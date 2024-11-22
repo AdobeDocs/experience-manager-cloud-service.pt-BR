@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5d2c09a3e1c67e6c2435d84112546107d284259f
+source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 9%
@@ -54,7 +54,7 @@ Gerencie seus dados de planilha do Edge Delivery (por exemplo, redirecionamentos
 
 ### Recursos de pré-lançamento no AEM Sites
 
-Referência de fragmento de conteúdo aprimorada com referências exclusivas baseadas em ID, garantindo links estáveis que permanecem válidos mesmo quando ativos ou fragmentos são movidos — eliminando a necessidade de atualizações ou republicação. Limitação atual: as referências de página ainda não são compatíveis com IDs exclusivas. Se as páginas forem referenciadas em Fragmentos de conteúdo, esse recurso não deverá ser usado.
+[Referência de fragmento de conteúdo aprimorada com referências exclusivas baseadas em ID](/help/headless/graphql-api/uuid-reference-upgrade.md), garantindo links estáveis que permaneçam válidos mesmo quando ativos ou fragmentos forem movidos, eliminando a necessidade de atualizações ou republicação. Limitação atual: as referências de página ainda não são compatíveis com IDs exclusivas. Se as páginas forem referenciadas em Fragmentos de conteúdo, esse recurso não deverá ser usado.
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
