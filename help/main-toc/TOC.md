@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
+source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
-source-wordcount: '5883'
+source-wordcount: '5886'
 ht-degree: 71%
 
 ---
@@ -1100,6 +1100,7 @@ ht-degree: 71%
          + [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](/help/journey-headless/author/metadata-tagging.md)
 + IA gerativa {#generative-ai}
    + [Gerar variações](/help/generative-ai/generate-variations.md)
+   + [Assistente (Beta limitado)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementação {#implementing}
    + [Implementação de aplicativos do AEM as a Cloud Service](/help/implementing/home.md)
    + Usar o Cloud Manager {#using-cloud-manager}
@@ -1123,7 +1124,7 @@ ht-degree: 71%
          + [Gerenciar repositórios no Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adicionar um repositório da Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Adicionar um repositório privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
-         + [Adicionar um repositório externo (usuários iniciais)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Adicionar um repositório externo (Beta limitado)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
          + [Acessar repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Suporte ao submódulo Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Usar o Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)

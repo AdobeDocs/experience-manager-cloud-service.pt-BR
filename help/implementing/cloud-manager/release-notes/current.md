@@ -4,10 +4,10 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2024.11.0 no AEM as
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 87293526ca9c10a142bc1d1d3a35562b171da385
+source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
 workflow-type: tm+mt
 source-wordcount: '784'
-ht-degree: 27%
+ht-degree: 29%
 
 ---
 
@@ -61,7 +61,7 @@ Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing
 >
 >Atualmente, as verificações de qualidade do código de solicitação de pull prontas para uso são exclusivas de repositórios hospedados no GitHub, mas uma atualização para estender essa funcionalidade a outros fornecedores Git está em andamento.
 
-Se tiver interesse em testar esse novo recurso e compartilhar o seu feedback, envie um email para [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) do seu endereço de email associado à sua Adobe ID. Certifique-se de incluir qual plataforma Git deseja usar e se você está em uma estrutura de repositório privado/público ou corporativo. —>
+Se tiver interesse em testar esse novo recurso e compartilhar o seu feedback, envie um email para [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) do seu endereço de email associado à sua Adobe ID. Inclua qual plataforma Git deseja usar e se você está em uma estrutura de repositório privado/público ou empresarial.
 
 
 ## Correções de erros
