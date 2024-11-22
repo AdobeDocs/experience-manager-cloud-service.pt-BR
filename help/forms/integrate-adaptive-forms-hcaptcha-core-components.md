@@ -4,13 +4,11 @@ description: Melhore a segurança dos formulários com o serviço hCaptcha&reg; 
 topic-tags: Adaptive Forms, author
 keywords: Captcha&reg; serviço, Forms adaptável, desafio de CAPTCHA, Prevenção de bot, Componentes principais, Segurança de envio de formulário, Prevenção de spam de formulário
 feature: Adaptive Forms, Core Components
-hide: true
-hidefromtoc: true
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: bba5e5d283da616baa57b788181af73d59d86ee3
+source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '961'
 ht-degree: 24%
 
 ---
@@ -22,7 +20,7 @@ ht-degree: 24%
 O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
 O AEM Forms as a Cloud Service é compatível com as seguintes soluções CAPTCHA:
-
+* [Captcha](#integrate-aem-forms-environment-with-hcaptcha-captcha)
 * [Google reCAPTCHA](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Captcha](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
 

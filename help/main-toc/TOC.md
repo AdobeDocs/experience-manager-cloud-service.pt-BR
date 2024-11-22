@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: b677ab1781491059098cbf63f13f72555d6012b3
+source-git-commit: d74ca698d0b6992d1f58173fbcd6bac399421fef
 workflow-type: tm+mt
-source-wordcount: '5880'
+source-wordcount: '5883'
 ht-degree: 71%
 
 ---
@@ -750,7 +750,7 @@ ht-degree: 71%
             + [Configurar a ação de envio Enviar para o Ponto de extremidade REST para o Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [Configurar a ação de envio Enviar email para um formulário adaptável](/help/forms/configure-submit-action-send-email.md)
             + [Usar o Google reCAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Usar hCAPTCHA em um formulário adaptável](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Usar hCAPTCHA em componentes principais de um formulário adaptável](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
             + [Adicionar manipulador de erros personalizado em um formulário adaptável](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Adicione uma localidade para o Forms adaptável com base nos Componentes principais](/help/forms/supporting-new-language-localization-core-components.md)
             + [Criar esquema JSON para um formulário adaptável (componentes principais)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
@@ -797,7 +797,7 @@ ht-degree: 71%
          + Adicionar componentes a um formulário adaptável {#add-components-to-an-adaptive-form}
             + [Usar CAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms.md)
             + [Usar o hCaptcha em um formulário adaptável](/help/forms/integrate-adaptive-forms-hcaptcha.md)
-            + [Usar a estrutura giratória em um formulário adaptável](/help/forms/integrate-adaptive-forms-turnstile.md)
+            + [Usar CAPTCHA de tartaruga em um formulário adaptável](/help/forms/integrate-adaptive-forms-turnstile.md)
             + [Usar componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)
             + [Aplicar assinatura escrita](/help/forms/signing-forms-using-scribble.md)
             + [Adicionar uma tabela a um formulário adaptável](/help/forms/adaptive-forms-tables.md)
