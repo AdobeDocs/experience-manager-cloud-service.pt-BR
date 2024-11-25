@@ -4,10 +4,10 @@ description: Notas de versão específicas para recursos obsoletos e removidos d
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 0ab75d1e49e06152cf3f4e8effe7d6d918b262c8
+source-git-commit: 1ff3a9a0ff6b408794956323f12194f136d6b2ad
 workflow-type: tm+mt
-source-wordcount: '2709'
-ht-degree: 53%
+source-wordcount: '2800'
+ht-degree: 51%
 
 ---
 
@@ -505,7 +505,9 @@ Informações adicionais sobre a configuração OSGI podem ser encontradas em [e
 
 O AEM as a Cloud Service mudará para o Java 21 runtime. Para garantir a compatibilidade, é essencial fazer os seguintes ajustes:
 
-### Requisitos de tempo de compilação:
+### Requisitos de tempo de execução
+
+Esses ajustes são necessários para garantir a compatibilidade com o Java 21 runtime. As bibliotecas podem ser atualizadas a qualquer momento, pois são compatíveis com versões mais antigas do Java.
 
 #### Versão mínima de org.objectweb.asm {#org.objectweb.asm}
 
@@ -517,9 +519,13 @@ Atualize o uso de org.apache.groovy para a versão 4.0.22 ou superior para garan
 
 Esse pacote pode ser incluído indiretamente adicionando dependências de terceiros, como o console AEM Groovy.
 
+### Requisitos de tempo de criação
+
+Esses ajustes são necessários para permitir a criação do projeto com versões mais recentes do Java, mas não são necessários para a compatibilidade de tempo de execução. Os plug-ins do Maven podem ser atualizados a qualquer momento, pois são compatíveis com versões mais antigas do Java.
+
 #### Versão mínima do plug-in bnd-maven {#bnd-maven-plugin}
 
-Atualize o uso de bnd-maven-plugin para a versão 6.4.0 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+Atualize o uso de bnd-maven-plugin para a versão 6.4.0 para garantir o suporte para tempos de execução de JVM mais recentes. As versões 7 ou superiores não são compatíveis com o Java 11 ou inferior, portanto, uma atualização para essa versão não é recomendada no momento.
 
 #### Versão mínima do aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
