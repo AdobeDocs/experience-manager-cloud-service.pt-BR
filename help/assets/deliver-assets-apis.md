@@ -3,9 +3,9 @@ title: APIs de entrega
 description: Saiba como usar as APIs de entrega.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 7727aa87693cc96e3497dcda71190866b198975d
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,8 @@ A tabela a seguir ilustra o uso das várias APIs de entrega disponíveis:
 
 >[!NOTE]
 >
-[Predefinições de imagem, imagens inteligentes e modificadores de imagem adicionais](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) estão disponíveis como um recurso de disponibilidade limitada. Para obter acesso, [crie e envie um caso de Suporte ao Cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+* [Predefinições de imagem, imagens inteligentes e modificadores de imagem adicionais](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) estão disponíveis como um recurso de disponibilidade limitada. Para obter acesso, [crie e envie um caso de Suporte ao Cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+* O Recorte inteligente não está disponível com o [Assets Prime](/help/assets/assets-ultimate-overview.md).
 
 ## Endpoints das APIs de entrega {#delivery-apis-endpoint}
 

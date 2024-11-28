@@ -4,9 +4,9 @@ description: Saiba mais sobre o recurso Extensibilidade da interface do usuário
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: af7e6ab40212dfa3d91cda80a76b1b6b01dd65a3
+source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Na Exibição do Assets, navegue até a página Detalhes de um ativo, pasta ou c
 ## Pré-requisitos para adicionar o componente de extensibilidade
 
 * [Acesso ao Assets View](#1).
-* Acesso ao [Adobe app builder](https://developer.adobe.com/app-builder/docs/overview/), que está incluído no [Assets Ultimate](/help/assets/assets-ultimate-overview.md) por padrão.
+* Acesso ao [Adobe app builder](https://developer.adobe.com/app-builder/docs/overview/).
 * Qualificado para Desenvolvedor da função de Administrador do Sistema na Organização. Consulte [this](https://developer.adobe.com/uix/docs/guides/get-access/) para obter mais informações.
 * A Adobe IO Command Line Tool (AIO CLI) deve ser instalada em seus computadores locais. Essa ferramenta é essencial para criar e implantar projetos de extensão. Consulte [this](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) para obter mais informações.
 * Boa compreensão das tecnologias JavaScript, Node.js e React.
