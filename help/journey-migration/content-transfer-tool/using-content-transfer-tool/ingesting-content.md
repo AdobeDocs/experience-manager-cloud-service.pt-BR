@@ -4,9 +4,9 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 1add389e1bba181757229ca73252f1fcaa9d049a
+source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
-source-wordcount: '3187'
+source-wordcount: '3296'
 ht-degree: 11%
 
 ---
@@ -169,6 +169,17 @@ Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atual
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
+### Falha de assimilação devido ao ambiente de nuvem não estar no estado pronto {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
+>title="O Ambiente De Nuvem Não Está No Estado Pronto"
+>abstract="Em casos raros, o ambiente de nuvem de destino pode estar enfrentando problemas inesperados, o que causará a falha da assimilação."
+
+Em casos raros, o ambiente de Cloud Service de destino da assimilação pode estar enfrentando problemas inesperados. Como resultado, a assimilação falhará, pois o ambiente não está no estado pronto esperado. Verifique o log de assimilação para revelar mais detalhes do estado de erro encontrado.
+
+Verifique se o ambiente de criação está disponível e aguarde alguns minutos antes de tentar assimilar novamente. Se o problema persistir, entre em contato com o suporte ao cliente com o estado do erro encontrado.
+
 ### Falha na ingestão complementar devido a uma violação da restrição de exclusividade {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 
 >[!CONTEXTUALHELP]
@@ -239,7 +250,7 @@ Para evitar possivelmente essa restrição, execute o [Analisador de Práticas R
 
 Às vezes, questões intermitentes inesperadas podem se prestar a assimilações fracassadas, onde infelizmente o único recurso é tentar novamente a assimilação. Investigue o log de assimilação para descobrir a causa da falha e ver se ele está alinhado a qualquer um dos erros listados abaixo, onde uma nova tentativa deve ser feita.
 
-## Problemas do MongoDB {#mongo-db-issues}
+#### Problemas do MongoDB {#mongo-db-issues}
 
 * `Atlas prescale timeout error` - A fase de assimilação tentará dimensionar previamente o banco de dados de nuvem de destino para um tamanho adequado que se alinhe ao tamanho do conteúdo do conjunto de migração que está sendo assimilado. Raramente, essa operação não é concluída dentro do período esperado.
 * `Exhausted mongo restore retries` - As tentativas de restaurar um despejo local do conteúdo do conjunto de migração assimilado para o banco de dados de nuvem se esgotaram. Isso indica um problema geral de integridade/rede com o MongoDB, que muitas vezes se cura após alguns minutos.
