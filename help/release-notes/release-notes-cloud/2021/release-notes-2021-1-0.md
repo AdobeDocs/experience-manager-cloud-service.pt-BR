@@ -1,6 +1,6 @@
 ---
 title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2021.1.0.
-description: "[!DNL Adobe Experience Manager] Notas de Versão as a Cloud Service para 2021.1.0."
+description: as a Cloud Service Notas de versão do [!DNL Adobe Experience Manager] para 2021.1.0.
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 feature: Release Information
 role: Admin

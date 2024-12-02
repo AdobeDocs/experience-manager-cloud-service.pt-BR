@@ -4,7 +4,7 @@ Description: Learn how to create an Azure Blob Storage Configuration in AEM Form
 keywords: Integração do Armazenamento Azure Blob com o AEM Forms, Envio de dados para o Armazenamento Azure, Criação da configuração de armazenamento do Azure no AEM Forms, Uso do Armazenamento Azure Blob na Ação de envio adaptável do Forms
 feature: Adaptive Forms, Core Components
 exl-id: 0c9f8f85-c4e9-4c79-bd0b-abdcac99a2d4
-title: "Como configurar uma ação enviar para um formulário adaptável?"
+title: Como configurar uma ação enviar para um formulário adaptável?
 role: User, Developer
 source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
 workflow-type: tm+mt

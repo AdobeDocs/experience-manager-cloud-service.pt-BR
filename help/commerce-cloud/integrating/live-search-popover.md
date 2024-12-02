@@ -1,5 +1,5 @@
 ---
-title: Componente CIF Popover '[!DNL Live Search]'
+title: '[!DNL Live Search] Componente Popover CIF'
 description: Usando componentes do CIF para habilitar o componente Popover [!DNL Live Search] em um site do AEM
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework

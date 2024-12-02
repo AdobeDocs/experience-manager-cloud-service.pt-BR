@@ -1,6 +1,6 @@
 ---
 title: Notas de versão do Adobe Experience Manager as a Cloud Service 2020.6.0
-description: "[!DNL Adobe Experience Manager] Notas de Versão as a Cloud Service para 2020.6.0."
+description: as a Cloud Service Notas de versão do [!DNL Adobe Experience Manager] para 2020.6.0.
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 feature: Release Information
 role: Admin

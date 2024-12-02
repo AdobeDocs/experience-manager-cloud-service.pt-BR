@@ -1,6 +1,6 @@
 ---
 title: Referências de desenvolvedor para  [!DNL Assets]
-description: "[!DNL Assets] APIs e conteúdo de referência de desenvolvedor permitem gerenciar ativos, incluindo arquivos binários, metadados, representações, comentários e  [!DNL Content Fragments]."
+description: O conteúdo de referências de desenvolvedor e APIs do [!DNL Assets] permite gerenciar ativos, incluindo arquivos binários, metadados, representações, comentários e informações [!DNL Content Fragments].
 contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin

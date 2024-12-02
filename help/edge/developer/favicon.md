@@ -1,5 +1,5 @@
 ---
-description: "Adicionar um favicon ao site dá uma aparência profissional nos navegadores do visitante:"
+description: 'Adicionar um favicon ao site dá uma aparência profissional nos navegadores do visitante:'
 title: Favicon
 feature: Edge Delivery Services
 exl-id: e5225611-8bc7-4239-96db-83f7819410d7

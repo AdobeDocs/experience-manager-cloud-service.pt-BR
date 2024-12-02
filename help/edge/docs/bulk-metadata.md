@@ -1,5 +1,5 @@
 ---
-description: "Em alguns casos, é útil aplicar metadados em massa a um site. Casos de uso comuns incluem:"
+description: 'Em alguns casos, é útil aplicar metadados em massa a um site. Casos de uso comuns incluem:'
 title: Metadados em massa
 feature: Edge Delivery Services
 exl-id: 2d56c4e9-1a0f-470b-8c42-bc48f61ea3eb

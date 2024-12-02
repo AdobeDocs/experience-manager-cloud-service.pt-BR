@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Assets view] interface de usuário'
+title: Interface do usuário do [!DNL Assets view]
 description: Entenda a interface e a navegação no [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
