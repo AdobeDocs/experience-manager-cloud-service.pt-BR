@@ -1,12 +1,12 @@
 ---
 title: Publish rápido para AEM e Dynamic Media
-description: O Quick Publish na visualização do Assets permite publicar ativos no AEM e na mídia dinâmica de forma simultânea ou separada. Você pode selecionar ativos e pastas e optar por publicar no Dynamic Media ou AEM.
+description: O Quick Publish na visualização do Assets permite publicar ativos no AEM e no Dynamic Media simultaneamente ou separadamente. Você pode selecionar ativos e pastas e optar por publicar no Dynamic Media ou AEM.
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1209'
 ht-degree: 0%
 
 ---
@@ -18,22 +18,22 @@ ht-degree: 0%
 
 O Experience Manager Assets permite publicar rapidamente os ativos no Experience Manager e no Dynamic Media usando a visualização do Assets. Isso garante que você gerencie seus ativos e publique-os usando a [exibição do Assets sem alternar para a exibição do Administrador](/help/assets/overview.md##persona-based-experiences).
 
-A visualização do Experience Manager Assets oferece a flexibilidade de publicar ativos no AEM, no Dynamic Media ou em ambos ao mesmo tempo. Você pode publicar ativos ao fazer upload, navegar e pesquisar ativos. Todas essas opções para publicar ativos são explicadas em detalhes neste artigo.
+A visualização do Experience Manager Assets oferece a flexibilidade de publicar ativos no AEM, no Dynamic Media ou em ambos ao mesmo tempo. Você pode publicar ativos ao fazer upload, navegar e pesquisar ativos. Todas essas opções para publicar ativos são explicadas neste artigo em detalhes.
 
 ## Antes de começar {#before-you-begin}
 
-Defina essas configurações para exibir as opções de publicação para AEM e Dynamic Media:
+Defina essas configurações para exibir as Opções de publicação para AEM e Dynamic Media:
 
-* Para exibir as opções de publicação do Dynamic Media, defina as seguintes configurações usando a Exibição de administração:
+* Para exibir as Opções de publicação para o Dynamic Media, defina as seguintes configurações usando a exibição de Administrador:
 
-   * [Criar uma configuração de nuvem do Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
-   * Defina o modo Dynamic Media Publish no nível da pasta. Você também pode definir essas configurações ao criar a configuração da nuvem do Dynamic Media. Para substituir essas configurações no nível da pasta, consulte [Configurar Publish Seletivo no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
+   * [Criar uma configuração da Dynamic Media Cloud](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+   * Defina o modo Dynamic Media Publish no nível da pasta. Você também pode definir essas configurações ao criar a configuração do Dynamic Media Cloud. Para substituir essas configurações no nível da pasta, consulte [Configurar Publish Seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
-* Para exibir as opções de publicação do AEM, você deve configurar o endpoint de publicação do AEM para o seu ambiente.
+* Para exibir as Opções de publicação para o AEM, você deve configurar o endpoint de publicação do AEM para o seu ambiente.
 
 ## Publish Assets durante o upload {#piblish-assets-during-upload}
 
-Você pode publicar ativos no AEM e no Dynamic Media enquanto faz upload de ativos para uma pasta. As opções de publicação exibidas dependem do modo de publicação do Dynamic Media definido na pasta para a qual os ativos estão sendo carregados. O modo de publicação do Dynamic Media pode ser definido como:
+Você pode publicar ativos no AEM e no Dynamic Media enquanto faz upload de ativos para uma pasta. As Opções de publicação exibidas dependem do modo de publicação do Dynamic Media definido na pasta para a qual os ativos estão sendo carregados. O modo de publicação do Dynamic Media pode ser definido como:
 
 * **Na ativação:** quando os ativos forem carregados para esta pasta, você deverá publicar explicitamente o ativo primeiro, antes de fornecer um link de URL/Incorporação.
 
@@ -82,7 +82,7 @@ Para publicar ativos durante o carregamento em uma pasta com o Modo Dynamic Medi
 Para publicar ativos usando a página de navegação de ativos:
 
 1. Clique em **Assets** na seção **Assets Management** disponível no painel esquerdo.
-2. Selecione o(s) ativo(s) ou pasta(s) que você precisa publicar e clique em **Publish**.
+2. Selecione um ou mais ativos ou pastas que você precisa publicar e clique em **Publish**.
 3. Selecione **AEM** e clique em **Publish** para publicar ativos no AEM e no Dynamic Media.
    ![navegação de ativos](/help/assets/assets/browse-uactivation-immediate.svg)
 Não é possível publicar uma pasta que tenha o Modo Publish do Dynamic Media definido como **Publicação seletiva.** Todas as outras pastas ou ativos selecionados são publicados no AEM e no Dynamic Media após selecionar AEM.
@@ -104,10 +104,10 @@ A opção de publicar no Dynamic Media na página de resultados da pesquisa depe
 
 ## Verificar status do Publish {#check-publish-status}
 
-Para verificar o status de publicação de um ativo ou de uma pasta:
+Para verificar o status publicado de um ativo ou de uma pasta:
 
 1. Clique em **[!UICONTROL Assets]** na seção **[!UICONTROL Assets Management]** disponível no painel esquerdo.
-2. Alterne para a Exibição de lista usando o Alternador de exibição. É possível visualizar as propriedades do ativo, como AEM Publish, Dynamic Media Publish, título, tamanho, dimensões e assim por diante.\
+2. Alterne para a exibição em Lista usando o Alternador de exibição. É possível visualizar as propriedades do ativo, como publicação no AEM, Dynamic Media Publish, título, tamanho, dimensões e assim por diante.\
    Se um ativo ou pasta não for publicado, o status das colunas **AEM Publish** e **Dynamic Media Publish** será exibido como **N/D.**
    ![verificar status da publicação1](/help/assets/assets/check-publish-status1.png)
 Se não conseguir exibir as colunas do Publish do AEM e do Publish do Dynamic Media na exibição em Lista:
@@ -125,11 +125,11 @@ Você também pode verificar o status de publicação de um ativo selecionando u
 Por enquanto, os seguintes recursos estão fora do escopo durante a publicação de ativos no AEM e no Dynamic Media:
 
 * Ativos do Publish para AEM e Dynamic Media na página Detalhes do ativo.
-* Visualize os endpoints em que os ativos estão sendo publicados usando o assistente do Quick Publish.
+* Visualize os endpoints em que os ativos são publicados usando o assistente do Quick Publish.
 * Adicionar ou excluir mais ativos no assistente do Quick Publish.
 * Uma página para exibir ativos publicados.
 * Uma capacidade de copiar ou colar o URL do Dynamic Media em um nível de ativo (se os ativos forem publicados no Dynamic Media).
 * Capacidade de publicar referências (ativos, tags e assim por diante) ao publicar no AEM.
 * Capacidade de substituir o status de sincronização do Dynamic Media no nível da pasta.
 * Capacidade de substituir o modo Dynamic Media Publish no nível da pasta
-* Ainda não há suporte para Gerenciar Publicação.
+* Ainda não há suporte para Gerenciar publicação.
