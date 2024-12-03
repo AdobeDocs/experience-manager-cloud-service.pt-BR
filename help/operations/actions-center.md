@@ -4,10 +4,10 @@ description: Aproveite o Centro de ações para agir de forma conveniente em inc
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 41e06c75229d78827e35164eca37a96d6feeb730
+source-git-commit: 1bfa9ff24d3515a450216f3569b1e8b0b1e31ecc
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 48%
+source-wordcount: '1118'
+ht-degree: 47%
 
 ---
 
@@ -86,4 +86,5 @@ A tabela a seguir lista os tipos de notificação atualmente aceitos no Centro d
 | Usuários adicionados diretamente ao grupo personalizado | Proativa | Os usuários precisam ser adicionados aos Grupos IMS relevantes e esses Grupos IMS precisam ser adicionados como membros de grupos AEM. Alinhar com as [Práticas recomendadas do IMS](/help/security/ims-support.md) | |
 | Conteúdo JCR ausente | Proativa | Adicione o nó ausente Conteúdo JCR. Consulte a [documentação do Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | Fluxos de trabalho concluídos não removidos | Proativa | Minimize o número de instâncias de fluxo de trabalho e melhore o desempenho removendo as instâncias de fluxo de trabalho que têm mais de 90 dias. Saiba como [configurar tarefas de manutenção](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance) | |
-| Tipo de recurso Sling ausente na página | Proativa | Adicione o nó ausente do tipo de recurso Sling. Consulte a [documentação do Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) |
+| Tipo de recurso Sling ausente na página | Proativa | Adicione o nó ausente do tipo de recurso Sling. Consulte a [documentação do Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
+| Consulta lenta | Proativa | Corrija consultas lentas definindo definições de índice corretas, conforme sugerido pela [Folha de características da consulta JCQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) |
