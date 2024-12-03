@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
 workflow-type: tm+mt
-source-wordcount: '2378'
+source-wordcount: '2336'
 ht-degree: 1%
 
 ---
@@ -197,7 +197,7 @@ Para entender como usar um manipulador de erros padrão usando a ação Chamar s
 1. Selecione **[!UICONTROL Criar]**.
 1. Crie uma condição na seção **When** da regra. Por exemplo, **Quando[O campo Nome da ID do animal de estimação]** é alterado. A seleção foi alterada na lista suspensa **Selecionar estado**.
 1. Na seção **Then**, selecione **[!UICONTROL Invocar Serviço]** na lista suspensa **Selecionar Ação**.
-1. Selecione um **serviço Post** e suas associações de dados correspondentes na seção **Input**. Por exemplo, para validar a **ID do Pet**, selecione um **serviço do Post** como **GET /pet/{petId}** e selecione **ID do Pet** na seção **Input**.
+1. Selecione um **Serviço de postagem** e suas associações de dados correspondentes na seção **Entrada**. Por exemplo, para validar a **ID do Pet**, selecione um **Serviço de postagem** como **GET /pet/{petId}** e selecione **ID do Pet** na seção **Entrada**.
 1. Selecione as associações de dados na seção **Saída**. Selecione o **Nome do Animal** na seção **Saída**.
 1. Selecione **[!UICONTROL Manipulador de Erros Padrão]** na seção **Manipulador de Erros**.
 1. Clique em **[!UICONTROL Concluído]**.
@@ -222,19 +222,24 @@ O manipulador de erros personalizado é uma função (Biblioteca do cliente) cri
 Para entender como criar e usar um manipulador de erros personalizado usando a ação [Chamar serviço](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) do Editor de regras, vamos ver um exemplo de Formulário adaptável com dois campos, **Pet ID** e **Pet Name**, e usar um manipulador de erros personalizado no campo **Pet ID** para verificar vários erros retornados pelo ponto de extremidade REST configurado para invocar um serviço externo, por exemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
 
 Para adicionar e usar um manipulador de erros personalizado em um Formulário adaptável, execute as seguintes etapas:
-1. [Criar um manipulador de erros personalizado](#create-custom-error-message)
-1. [Usar o Editor de regras para configurar o manipulador de erros personalizado](#use-custom-error-handler)
+1. [Adicionar função personalizada para manipulador de erros](#1-add-custom-function-for-error-handler)
+2. [Usar o Editor de regras para configurar o manipulador de erros personalizado](#use-custom-error-handler)
 
-#### 1. Criar um manipulador de erros personalizado {#create-custom-error-message}
+#### 1. Adicionar a função personalizada do manipulador de erros
 
-Para criar uma função de erro personalizada, execute as seguintes etapas:
+>[!NOTE]
+>
+> Para saber como adicionar funções personalizadas, clique em [Criar funções personalizadas em um Formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
-1. [Clonar o Repositório as a Cloud Service do AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
-1. Crie uma pasta na pasta `[AEM Forms as a Cloud Service repository folder]/apps/`. Por exemplo, crie uma pasta chamada `experience-league`
-1. Navegue até `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` e crie um `ClientLibraryFolder` como `clientlibs`.
-1. Crie uma pasta chamada `js`.
-1. Navegue até a pasta `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.
-1. Adicione um arquivo JavaScript, por exemplo, `function.js`. O arquivo compreende o código do manipulador de erros personalizado.
+<!-- To create a custom error function, perform the following steps:
+
+1. [Clone your AEM Forms as a Cloud Service Repository](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git). 
+2. Create a folder under the `[AEM Forms as a Cloud Service repository folder]/apps/` folder. For example, create a folder named as `experience-league`
+3. Navigate to `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/experience-league/` and create a `ClientLibraryFolder` as `clientlibs`.
+4. Create a folder named `js`.
+5. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder. -->
+
+1. Adicione o código abaixo para o manipulador de erros personalizado no arquivo JavaScript, por exemplo, `function.js`. O arquivo compreende o código do manipulador de erros personalizado.
 Vamos adicionar o seguinte código ao arquivo JavaScript para exibir a resposta e os cabeçalhos, recebidos do ponto de extremidade do serviço REST, no console do navegador.
 
    ```javascript
@@ -253,43 +258,45 @@ Vamos adicionar o seguinte código ao arquivo JavaScript para exibir a resposta 
        }
    ```
 
-   Para chamar o manipulador de erros padrão a partir do manipulador de erros personalizado, a seguinte linha do código de amostra é usada:
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+<!--
+1. Save the `function.js` file.
+1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
+2. Add a text file as `js.txt`. The file contains:
 
-   >[!NOTE]
-   >
-   > No arquivo `.content.xml`, adicione as propriedades `allowProxy` e `categories`.
-   >
-   > * `allowProxy = [Boolean]true`
-   > * `categories= customfunctionsdemo`
-   >Por exemplo, neste caso, [custom-errorhandler-name] é fornecido como `customfunctionsdemo`.
+    ```javascript
+        #base=js
+        functions.js
+    ```
 
-1. Salve o arquivo `function.js`.
-1. Navegue até a pasta `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js`.
-1. Adicione um arquivo de texto como `js.txt`. O arquivo contém:
+3. Save the `js.txt` file.    
+The created folder structure looks like:
 
-   ```javascript
-       #base=js
-       functions.js
-   ```
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
 
-1. Salve o arquivo `js.txt`.\
-   A estrutura de pastas criada é semelhante a:
 
-   ![Estrutura da pasta de biblioteca do cliente criada](/help/forms/assets/customclientlibrary_folderstructure.png)
+    >[!NOTE]
+    >
+    > * Para chamar o manipulador de erros padrão a partir do manipulador de erros personalizado, a seguinte linha do código de exemplo é usada: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+    > * No arquivo `.content.xml`, adicione as propriedades `allowProxy` e `categories` para usar a biblioteca de clientes do manipulador de erros personalizado em um Formulário adaptável.
+    >
+    >   * `allowProxy = [Boolean]true`
+    >   * `categories= customfunctionsdemo`
+    >       Por exemplo, neste caso, [custom-errorhandler-name] é fornecido como &quot;customfunctions sdemo&quot;.
 
-   >[!NOTE]
-   >
-   > Para saber mais sobre como criar funções personalizadas, clique em [funções personalizadas no Editor de Regras](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#write-rules).
 
-1. Adicione, confirme e envie as alterações no repositório usando os comandos abaixo:
+1. Adicione, confirme e envie as alterações no repositório.
 
-   ```javascript
-       git add .
-       git commit -a -m "Adding error handling files"
-       git push
-   ```
+<!--
+    using the below commands:
+         
+    ```javascript
 
+        git add .
+        git commit -a -m "Adding error handling files"
+        git push
+    ```
+
+-->
 1. [Executar o pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 Depois que o pipeline é executado com êxito, o manipulador de erros personalizado fica disponível em seu editor de regras do Formulário adaptável. Agora, vamos entender como configurar e usar um manipulador de erros personalizado usando o serviço Chamar do editor de regras no AEM Forms.
@@ -308,7 +315,7 @@ Para usar um manipulador de erros personalizado usando a ação **[!UICONTROL Ch
 1. Selecione **[!UICONTROL Criar]**.
 1. Crie uma condição na seção **When** da regra. Por exemplo, Quando o **[Nome do campo de ID do Pet]** for alterado, selecione **foi alterado** na lista suspensa **Selecionar Estado**.
 1. Na seção **Then**, selecione **[!UICONTROL Invocar Serviço]** na lista suspensa **Selecionar Ação**.
-1. Selecione um **serviço Post** e suas associações de dados correspondentes na seção **Input**. Por exemplo, para validar a **ID do Pet**, selecione um **serviço do Post** como **GET /pet/{petId}** e selecione **ID do Pet** na seção **Input**.
+1. Selecione um **Serviço de postagem** e suas associações de dados correspondentes na seção **Entrada**. Por exemplo, para validar a **ID do Pet**, selecione um **Serviço de postagem** como **GET /pet/{petId}** e selecione **ID do Pet** na seção **Entrada**.
 1. Selecione as associações de dados na seção **Saída**. Por exemplo, selecione **Nome do animal de estimação** na seção **Saída**.
 1. Selecione **[!UICONTROL Manipulador de Erros Personalizado]** na seção **[!UICONTROL Manipulador de Erros]**.
 1. Clique em **[!UICONTROL Concluído]**.
