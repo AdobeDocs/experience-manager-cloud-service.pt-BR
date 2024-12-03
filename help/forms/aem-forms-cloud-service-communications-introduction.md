@@ -5,7 +5,7 @@ Keywords: How to generate document?, Generate PDF document, Manipulation PDF doc
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dcf7bde3bc73b70002f87f14d905cd294280ff94
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
 source-wordcount: '2374'
 ht-degree: 41%
@@ -33,6 +33,9 @@ O recurso fornece APIs para gerar e manipular os documentos. Você pode gerar ou
 * APIs HTTP para facilitar a integração com sistemas externos. Estão incluídas APIs separadas para operações por demanda (baixa latência) e em lote (operações de alto rendimento).
 
 * um acesso seguro aos dados. As APIs de comunicações se conectam e acessam somente dados de repositórios de dados designados pelo cliente, tornando as comunicações altamente seguras.
+
+A [documentação de referência da API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos por APIs. A documentação de referência da API também está disponível no formato .yaml. É possível baixar o .yaml e carregá-lo no Postman para verificar a funcionalidade das APIs.
+
 
 <!-- 
 ![A sample credit card statement](assets/statement.png)
@@ -168,7 +171,7 @@ The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-
 
 ## Extração de documento
 
-<span class="preview"> O recurso de extração de documentos está no programa Early Adoter. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso de extração de documentos está no programa Early Adoter. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O serviço de Extração de documentos oferece a capacidade de obter as propriedades de um documento do PDF, como direitos de uso, propriedades do PDF e metadados. Os recursos de extração de documentos são:
 
@@ -198,7 +201,7 @@ As APIs de conversão de documento de comunicações ajudam a Converter um docum
 
 ### Converter PDF em XDP {#convert-pdf-to-xdp}
 
-<span class="preview"> O recurso Converter PDF em XDP está no Early Adoter Program. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso Converter PDF em XDP está no Early Adoter Program. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 Converte um documento PDF em um arquivo XDP. Para que um documento PDF seja convertido com êxito em um arquivo XDP, o documento PDF deve conter um fluxo XFA no dicionário.
 
@@ -217,7 +220,7 @@ As APIs de assinatura permitem que sua organização proteja a segurança e a pr
 * Remover a assinatura do campo de assinatura especificado em um documento PDF
 * Excluir o campo de assinatura especificado de um documento PDF
 
-<span class="preview"> Remova a assinatura do campo de assinatura especificado e exclua o campo de assinatura especificado, de um documento PDF, que está disponível no programa adotante antecipado. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> Remova a assinatura do campo de assinatura especificado e exclua o campo de assinatura especificado, de um documento PDF, que está disponível no programa adotante antecipado. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 
 <!--
@@ -254,7 +257,7 @@ Utilitários de documento com APIs síncronas ajudam a converter documentos entr
 
 #### APIs de direitos de uso (extensão Reader)
 
-<span class="preview"> O recurso de Direitos de Uso (Extensão Reader) está no Programa Early Adoter. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso de Direitos de Uso (Extensão Reader) está no Programa Early Adoter. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O recurso Direitos de uso permite que sua organização compartilhe facilmente documentos PDF interativos, estendendo a funcionalidade do Adobe Reader com direitos de uso adicionais. O serviço funciona com o Adobe Reader 7.0 ou posterior e adiciona direitos de uso a um documento PDF. Essa ação ativa recursos que geralmente não estão disponíveis quando um documento PDF é aberto usando o Adobe Reader, como adicionar comentários a um documento, preencher formulários e salvar o documento.
 
@@ -304,8 +307,6 @@ Os vários recursos de direitos de uso para estender os serviços do PDF Reader 
 
 * **Mensagem**: a mensagem exibida no Adobe Acrobat Reader ao abrir um documento PDF com um ou mais direitos de uso aplicados.
 * **Desbloquear Senha**: A senha necessária para abrir um documento PDF criptografado. Normalmente, essa é a senha para abrir o documento, mas se o documento PDF também estiver protegido por uma senha de permissões, ele poderá ser usado para abri-lo.
-
-A [documentação de referência da API](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/) fornece informações detalhadas sobre todos os parâmetros, métodos de autenticação e vários serviços fornecidos por APIs. A documentação de referência da API também está disponível no formato .yaml. É possível baixar o .yaml e carregá-lo no Postman para verificar a funcionalidade das APIs.
 
 ## Tipos de APIs de Comunicação {#types}
 

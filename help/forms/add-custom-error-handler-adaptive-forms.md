@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Foundation Components
 exl-id: 198a26a9-d6bb-457d-aab8-0a5d15177c48
 role: User, Developer
-source-git-commit: e1e122b730de07d9fff36828bb85ceec7c0b101b
+source-git-commit: 13c1febf55c9b15eab49d356fc1ba3f3d91ad055
 workflow-type: tm+mt
-source-wordcount: '2336'
+source-wordcount: '2323'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ Usando a ação Chamar serviço](https://experienceleague.adobe.com/docs/experie
 
 Usando o Editor de regras, você pode:
 * [Adicionar função de manipulador de erros padrão](#add-default-errror-handler)
-* [Adicionar função de manipulador de erro personalizada](#add-custom-errror-handler)
+* [Adicionar função de manipulador de erro personalizada](#add-custom-error-handler-function)
 
 
 ### Adicionar função de manipulador de erros padrão {#add-default-errror-handler}
@@ -208,7 +208,7 @@ Como resultado desta regra, os valores inseridos para **ID do Pet** verificam a 
 
 ![exibir a mensagem de erro padrão ao adicionar um manipulador de erro padrão em um formulário para tratar respostas de erro](/help/forms/assets/default-error-message.png)
 
-### Adicionar função de manipulador de erro personalizada {#add-custom-errror-handler}
+### Adicionar função de manipulador de erro personalizada
 
 Você pode adicionar uma função de manipulador de erros personalizada para executar algumas das ações, como:
 
@@ -222,14 +222,12 @@ O manipulador de erros personalizado é uma função (Biblioteca do cliente) cri
 Para entender como criar e usar um manipulador de erros personalizado usando a ação [Chamar serviço](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke) do Editor de regras, vamos ver um exemplo de Formulário adaptável com dois campos, **Pet ID** e **Pet Name**, e usar um manipulador de erros personalizado no campo **Pet ID** para verificar vários erros retornados pelo ponto de extremidade REST configurado para invocar um serviço externo, por exemplo, `200 - OK`,`404 - Not Found`, `400 - Bad Request`.
 
 Para adicionar e usar um manipulador de erros personalizado em um Formulário adaptável, execute as seguintes etapas:
-1. [Adicionar função personalizada para manipulador de erros](#1-add-custom-function-for-error-handler)
+1. [Adicionar função personalizada para manipulador de erros](#1-add-the-custom-function-for-the-error-handler)
 2. [Usar o Editor de regras para configurar o manipulador de erros personalizado](#use-custom-error-handler)
 
-#### 1. Adicionar a função personalizada do manipulador de erros
+#### 1. Adicionar a função personalizada para o manipulador de erros
 
->[!NOTE]
->
-> Para saber como adicionar funções personalizadas, clique em [Criar funções personalizadas em um Formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
+Para saber como adicionar funções personalizadas, clique em [Criar funções personalizadas em um Formulário adaptável com base nos Componentes principais](/help/forms/custom-function-core-component-create-function.md#create-a-custom-function).
 
 <!-- To create a custom error function, perform the following steps:
 
@@ -258,6 +256,20 @@ Vamos adicionar o seguinte código ao arquivo JavaScript para exibir a resposta 
        }
    ```
 
+   >[!NOTE]
+   >
+   > * Para chamar o manipulador de erros padrão do seu manipulador de erros personalizado, a seguinte linha do código de amostra é usada: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
+   > * No arquivo `.content.xml`, adicione as propriedades `allowProxy` e `categories` para usar a biblioteca de clientes do manipulador de erros personalizado em um Formulário adaptável.
+   >
+   >   * `allowProxy = [Boolean]true`
+   >   * `categories= customfunctionsdemo`
+   >       Por exemplo, neste caso, [custom-errorhandler-name] é fornecido como `customfunctionsdemo`.
+
+
+1. Adicione, confirme e envie as alterações no repositório.
+
+<!--
+
 <!--
 1. Save the `function.js` file.
 1. Navigate to the `[AEM Forms as a Cloud Service repository folder]/apps/[AEM Project Folder]/clientlibs/js` folder.
@@ -271,22 +283,7 @@ Vamos adicionar o seguinte código ao arquivo JavaScript para exibir a resposta 
 3. Save the `js.txt` file.    
 The created folder structure looks like:
 
-    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) -->
-
-
-    >[!NOTE]
-    >
-    > * Para chamar o manipulador de erros padrão a partir do manipulador de erros personalizado, a seguinte linha do código de exemplo é usada: `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-    > * No arquivo `.content.xml`, adicione as propriedades `allowProxy` e `categories` para usar a biblioteca de clientes do manipulador de erros personalizado em um Formulário adaptável.
-    >
-    >   * `allowProxy = [Boolean]true`
-    >   * `categories= customfunctionsdemo`
-    >       Por exemplo, neste caso, [custom-errorhandler-name] é fornecido como &quot;customfunctions sdemo&quot;.
-
-
-1. Adicione, confirme e envie as alterações no repositório.
-
-<!--
+    ![Created Client Library Folder Structure](/help/forms/assets/customclientlibrary_folderstructure.png) 
     using the below commands:
          
     ```javascript
@@ -295,8 +292,8 @@ The created folder structure looks like:
         git commit -a -m "Adding error handling files"
         git push
     ```
-
 -->
+
 1. [Executar o pipeline.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline)
 
 Depois que o pipeline é executado com êxito, o manipulador de erros personalizado fica disponível em seu editor de regras do Formulário adaptável. Agora, vamos entender como configurar e usar um manipulador de erros personalizado usando o serviço Chamar do editor de regras no AEM Forms.
