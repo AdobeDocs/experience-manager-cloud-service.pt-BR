@@ -4,10 +4,10 @@ description: Acesse os dados na seção de relatórios da visualização do Asse
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 5ff36490c4d9a6f61255ad06ffab984f18c1823b
+source-git-commit: 6e0cd465f8695c948ece4679e083d6b9b35dded4
 workflow-type: tm+mt
-source-wordcount: '1200'
-ht-degree: 29%
+source-wordcount: '1564'
+ht-degree: 64%
 
 ---
 
@@ -20,7 +20,7 @@ Os relatórios de ativos fornecem aos administradores visibilidade sobre as ativ
 
 ## Acessar relatórios {#access-reports}
 
-Todos os usuários atribuídos ao perfil de produto de administradores da visualização do Assets podem acessar o painel Insights e criar relatórios definidos pelo usuário na visualização do Assets.
+Todos os usuários atribuídos ao perfil de produto Administradores de AEM podem acessar o painel de Insights ou criar relatórios definidos pelo usuário na visualização do Assets.
 
 Para acessar os relatórios, navegue até **[!UICONTROL Relatórios]** em **[!UICONTROL Configurações]**.
 
@@ -39,7 +39,7 @@ In the **[!UICONTROL Reports]** screen, various components are shown in the tabu
 
 ## Criar um relatório {#create-report}
 
-O ambiente de exibição do AEM Assets oferece recursos abrangentes de relatórios por meio do painel Relatórios. Esse recurso permite que os usuários gerem e baixem relatórios CSV detalhando uploads e downloads de ativos em intervalos de tempo especificados, que variam de uma vez a diários, semanais, mensais ou anuais.
+O ambiente de exibição do AEM Assets oferece recursos abrangentes de relatórios por meio do painel Relatórios. Esse recurso permite que os usuários gerem e baixem relatórios CSV detalhando uploads e downloads de ativos em intervalos de tempo especificados, que variam desde uma única vez a intervalos diários, semanais, mensais ou anuais.
 
 **Para criar um relatório:**
 
@@ -48,18 +48,18 @@ O ambiente de exibição do AEM Assets oferece recursos abrangentes de relatóri
 
    **Na guia Configuração:**
 
-   1. **Tipo de relatório:** selecione entre o tipo de carregamento e download.
-   1. **Título:** Adicione um título ao relatório.
-   1. **Descrição:** Adicione uma descrição opcional ao relatório.
-   1. **Selecionar caminho da pasta:** selecione um caminho de pasta para gerar o relatório de ativos carregados e baixados dentro dessa pasta específica. Por exemplo, se você precisar do relatório de ativos carregados em uma pasta, especifique o caminho para essa pasta.
-   1. **Selecionar intervalo de datas:** Selecione o intervalo de datas para exibir a atividade de carregamento ou download na pasta.
+   1. **Tipo de relatório:** Selecione entre o tipo de [!UICONTROL carregamento], [!UICONTROL download] ou [Relatório de Entrega do Dynamic Media](#dynamic-media-delivery-reports).
+   1. **Título:** adicione um título ao relatório.
+   1. **Descrição:** adicione uma descrição opcional ao relatório.
+   1. **Selecionar caminho de pasta:** selecione um caminho de pasta para gerar o relatório de ativos enviados e baixados nessa pasta específica. Por exemplo, se você precisar que o relatório de ativos seja enviado para uma pasta, especifique o caminho para essa pasta.
+   1. **Selecionar intervalo de datas:** selecione o intervalo de datas para exibir a atividade de upload ou download na pasta.
    <br>
 
    >[!NOTE]
    >
    > A visualização do Assets converte todos os fusos horários locais para o Tempo Universal Coordenado (UTC).
 
-   **Na Guia Colunas:** Selecione os nomes das colunas a serem exibidas no relatório. A tabela a seguir explica o uso de todas as colunas:
+   **Na guia Colunas:** selecione os nomes das colunas a serem exibidas no relatório. A tabela a seguir explica o uso de todas as colunas:
 
    <table>
     <tbody>
@@ -71,22 +71,22 @@ O ambiente de exibição do AEM Assets oferece recursos abrangentes de relatóri
      <tr>
       <td>Título</td>
       <td>O título do ativo.</td>
-      <td>Fazer upload e baixar</td>
+      <td>Upload e download</td>
      </tr>
      <tr>
       <td>Caminho</td>
       <td>O caminho da pasta onde o ativo está disponível na visualização do Assets.</td>
-      <td>Fazer upload e baixar</td>
+      <td>Upload, download e entrega do Dynamic Media</td>
      </tr>
      <tr>
       <td>Tipo MIME</td>
       <td>O tipo MIME do ativo.</td>
-      <td>Fazer upload e baixar</td>
+      <td>Upload e download</td>
      </tr>
      <tr>
       <td>Tamanho</td>
       <td>O tamanho do ativo em bytes.</td>
-      <td>Fazer upload e baixar</td>
+      <td>Upload e download</td>
      </tr>
      <tr>
       <td>Baixado por</td>
@@ -101,73 +101,132 @@ O ambiente de exibição do AEM Assets oferece recursos abrangentes de relatóri
      <tr>
       <td>Autor</td>
       <td>O autor do ativo.</td>
-      <td>Fazer upload e baixar</td>
+      <td>Upload e download</td>
      </tr>
      <tr>
       <td>Data de criação</td>
       <td>A data em que o ativo foi enviado para a visualização do Assets.</td>
-      <td>Fazer upload e baixar</td>
+      <td>Upload e download</td>
      </tr>
      <tr>
       <td>Data da modificação</td>
       <td>A data em que o ativo foi modificado pela última vez.</td>
-      <td>Fazer upload e baixar</td>
+      <td>Upload e download</td>
      </tr>
      <tr>
       <td>Expirado</td>
       <td>O status de expiração do ativo.</td>
-      <td>Fazer upload e baixar</td>
+      <td>Upload e download</td>
      </tr>
      <tr>
       <td>Baixado por Nome de usuário</td>
       <td>O nome do usuário que baixou o ativo.</td>
       <td>Download</td>
-     </tr>           
+     </tr> 
+     <tr>
+      <td>Referenciador</td>
+      <td>O URL no qual o ativo é entregue ou incluído</td>
+      <td>Entrega do Dynamic Media</td>
+     </tr>  
+     <tr>
+      <td>Visitas</td>
+      <td>O número de vezes que o ativo é entregue (contagem de delivery)</td>
+      <td>Entrega do Dynamic Media</td>
+     </tr>          
     </tbody>
    </table>
 
-## Exibir e baixar relatório existente {#View-and-download-existing-report}
+## Relatórios de entrega do Dynamic Media {#dynamic-media-delivery-reports}
 
-Os relatórios existentes são exibidos na guia **Relatórios executados**. Clique em **Relatórios** e selecione **Relatórios Executados** para exibir todos os relatórios criados com o status **concluído**, indicando que eles estão prontos para download. Para baixar o relatório no formato CSV ou excluí-lo, selecione a linha de relatório. Em seguida, selecione **Baixar CSV** ou **Excluir**.
-![exibir e baixar relatórios existentes](/help/assets/assets/view-download-existing-report.png)
+Obtenha insights de entrega para ativos fornecidos com o Dynamic Media, com contagem de entrega no nível do ativo, informações do referenciador, caminho do ativo no AEM Assets e ID exclusiva do ativo. Os relatórios podem ser gerados para todos os ativos entregues por meio do repositório do Dynamic Media for AEM Assets ou para uma hierarquia de pastas específica no AEM Assets. Além disso, os insights dos relatórios de entrega do Dynamic Media ajudam a medir o ROI dos ativos entregues, medir o desempenho do canal e a assumir tarefas informadas de gerenciamento de ativos para ativos.
+
+>[!NOTE]
+> 
+>Para obter acesso antecipado ao Relatório de Entrega da Dynamic Media em sua conta da Dynamic Media, [crie e envie um caso de Suporte ao Cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+
+### Pré-requisitos {#prereqs-dynamic-media-delivery-reports}
+
+Você deve ter uma licença do Dynamic Media para criar e usar este relatório.
+
+>[!IMPORTANT]
+> 
+>* Os relatórios são fornecidos para ativos distribuídos por meio do Dynamic Media.
+>* Os relatórios são gerados para o primeiro milhão de linhas. Para capturar todos os arquivos dentro desse limite, considere a inclusão da coluna de referenciador para pastas menores.
+>* Os relatórios só podem ser gerados para os últimos três meses.
+
+### Criar um relatório de entrega do Dynamic Media{#create-dynamic-media-delivery-report}
+
+1. Crie uma Notificação de Entrega do Dynamic Media, usando as etapas mencionadas em [Criar um relatório](#create-report).
+
+1. Selecione **[!UICONTROL Entrega do Dynamic Media]** na lista suspensa **[!UICONTROL Tipo de relatório]**.
+
+   ![Lista suspensa de Relatórios de Entrega do Dynamic Media](assets/dynamic-media-delivery-report-option.png)
+
+
+1. Na guia **[!UICONTROL Colunas]**, você pode selecionar a coluna **[!UICONTROL Referenciador]** para incluí-la em seu relatório.
+
+   ![Referenciador](assets/referrer.png)
+
+   Todas as colunas do relatório baixado são somente leitura, exceto a coluna **Referenciador**, que você pode modificar para incluir ou excluir do relatório. <!--Choosing a referrer displays the number of visitors received from each referred report that directs traffic to the site. It offers insights into the sources of traffic and the origin of the visitors. Such insights help measure ROI of delivered assets, measure channel performance, and help take informed asset management tasks for assets.-->
+
+### Ações executadas no relatório de entrega do Dynamic Media {#actions-performed-dynamic-media-delivery-reports}
+
+Depois de criar o relatório, você pode executar as seguintes ações:
+
+* **[!UICONTROL Excluir]**: você pode excluir o relatório selecionado.
+* **[!UICONTROL Baixar CSV]**: você pode baixar o relatório selecionado em um formato CSV. O relatório baixado consiste nas colunas Name, Path, DynamicMediaID, Referrer, Hits.
+   * A coluna **Referenciador** lista a URL na qual o ativo é entregue ou incluído.
+
+   * A coluna **Ocorrências** lista o número de vezes que o ativo é entregue (contagem de entregas).
+
+Para excluir ou baixar o Relatório de Entrega do Dynamic Media como CSV, consulte [Exibir e baixar o relatório existente](#View-and-download-existing-report).
+
+![CSV baixado na notificação de entrega do Dynamic Media](assets/csv-dynamic-media-delivery-report.png)
+
+
+## Exibir e baixar relatórios já existentes {#View-and-download-existing-report}
+
+Os relatórios já existentes são exibidos na guia **Relatórios executados**. Clique em **Relatórios** e selecione **Relatórios executados** para exibir todos os relatórios criados com o status **concluído**, indicando que eles estão prontos para o download. Para baixar o relatório no formato CSV ou excluí-lo, selecione a linha do relatório. Em seguida, selecione **Baixar CSV** ou **Excluir**.
+![exibir e baixar relatórios já existentes](/help/assets/assets/view-download-existing-report.png)
+
 
 ## Agendar um relatório {#schedule-report}
 
-Na interface de exibição do AEM Assets, o **Agendar Relatório** configura uma geração automática de relatórios em intervalos futuros especificados, como diariamente, semanalmente, mensalmente ou anualmente. Esse recurso ajuda a simplificar as necessidades de relatórios recorrentes e garante atualizações de dados oportunas. Enquanto o **Criar Relatório** gera relatórios de datas passadas. Os relatórios concluídos estão listados em **Relatórios Executados** e os próximos relatórios serão encontrados em **Relatórios Agendados**.
+Na interface de exibição do AEM Assets, o **Agendar Relatório** configura uma geração automática de relatórios em intervalos futuros especificados, como diariamente, semanalmente, mensalmente ou anualmente. Esse recurso ajuda a simplificar as necessidades de relatórios recorrentes e garante atualizações de dados oportunas. Enquanto a opção **Criar relatório** gera relatórios de datas passadas, Relatórios concluídos estão listados em **Relatórios executados** e os próximos relatórios serão encontrados em **Relatórios agendados**.
 
 Para agendar um relatório, siga as etapas abaixo:
 
 1. Clique em Relatórios no painel esquerdo e, em seguida, clique em Criar relatório (no canto superior direito).
 1. A caixa de diálogo do relatório exibe as informações abaixo:
-   1. **Tipo de relatório:** selecione entre o tipo de carregamento e download.
-   1. **Título:** Adicione um título ao relatório.
+   1. **Tipo de relatório:** selecione entre upload e download.
+   1. **Título:** adicione um título ao relatório.
    1. **Descrição**: adicione uma descrição opcional ao relatório.
-   1. **Selecionar caminho da pasta:** Selecione um caminho de pasta para gerar um relatório para os ativos que serão carregados ou baixados dessa pasta específica no futuro.
-   1. Alternar **Relatório de agendamento:** para agendar o relatório para um momento posterior ou para sua ocorrência repetida.
+   1. **Selecionar caminho de pasta:** selecione um caminho de pasta para gerar um relatório de ativos que serão enviados ou baixados dessa pasta específica no futuro.
+   1. Botão **Agendar relatório:** ative-o para agendar o relatório para um momento posterior ou para que ocorra de forma recorrente.
       ![agendar relatório](/help/assets/assets/schedule-reports1.svg)
 
-   1. **Escolha a frequência:** especifique o intervalo para gerar o relatório (por exemplo, diário, semanal, mensal, anual ou uma vez) e defina a data e a hora para executar o relatório junto com a data final para recorrência. Para um relatório único, selecione o intervalo de datas para o relatório sobre o tipo de atividade selecionado no ambiente AEM. Por exemplo, se você precisar de um relatório sobre ativos baixados do dia 10 ao dia 29 (datas futuras) de um mês específico, selecione essas datas no campo **Selecionar intervalo de datas**.
+   1. **Escolha a frequência:** especifique o intervalo para gerar o relatório (por exemplo, diário, semanal, mensal, anual ou sem repetição) e defina a data e a hora para executar o relatório junto com a data final para recorrência. Para um relatório sem repetição, selecione o intervalo de datas do relatório de acordo com o tipo de atividade selecionado no ambiente do AEM. Por exemplo, se você precisar de um relatório de ativos baixados do dia 10 ao dia 29 (datas futuras) de um mês específico, selecione essas datas no campo **Selecionar intervalo de datas**.
 
    >[!NOTE]
    >
    > A visualização do Assets converte todos os fusos horários locais para o Tempo Universal Coordenado (UTC).
 
-## Visualizar Relatórios Agendados {#view-scheduled-reports}
+## Exibir relatórios agendados {#view-scheduled-reports}
 
-Os relatórios agendados são exibidos na guia **Relatórios agendados** de forma organizada sistematicamente. Todos os relatórios concluídos para cada relatório agendado são armazenados em uma única pasta de relatório. Clique em![expandir recolher](/help/assets/assets/expand-icon1.svg)para exibir os relatórios concluídos. Por exemplo, se você tiver agendado um relatório diário, todos os relatórios concluídos serão agrupados em uma pasta. Essa organização simplifica a navegação e a capacidade de descoberta dos relatórios. Para exibir os relatórios agendados, clique em **Relatórios** e em **Relatórios Agendados**. Todos os relatórios agendados são exibidos com o status em andamento ou concluído. Os relatórios concluídos estão prontos para download.\
+Os relatórios agendados são exibidos na guia **Relatórios agendados** de maneira organizada e sistemática. Todos os relatórios concluídos de cada relatório agendado são armazenados em uma única pasta de relatórios. Clique em![expandir recolher](/help/assets/assets/expand-icon1.svg)para exibir os relatórios concluídos. Por exemplo, se você agendou um relatório diário, todos os relatórios concluídos serão agrupados em uma pasta. Essa organização simplifica a navegação e a capacidade de descoberta dos relatórios. Para exibir os relatórios agendados, clique em **Relatórios** e em **Relatórios agendados**. Todos os relatórios agendados são exibidos com o status em andamento ou concluído. Os relatórios concluídos estão prontos para download.\
 ![relatório agendado](/help/assets/assets/scheduled-reports-tab.png)
 
 ## Editar e cancelar relatórios agendados {#edit-cancel-scheduled-reports}
 
-1. Navegue até a guia **Relatórios agendados**.
+1. Navegue até a guia **Relatórios agendados**.
 1. Selecione a linha do relatório.
 1. Clique em **Editar**.
-1. Clique em **Cancelar Agendamento** e em **Confirmar** para cancelar o relatório agendado. Para relatórios cancelados, o próximo tempo de execução fica vazio e o status mostra cancelado.
+1. Clique em **Cancelar agendamento** e em **Confirmar** para cancelar o relatório agendado. Para relatórios cancelados, o próximo tempo de execução fica vazio e o status é exibido como cancelado.
    ![editar e cancelar o relatório agendado](/help/assets/assets/cancel-edit-scheduled-reports.png)
 
 ### Retomar cronograma {#resume-schedule}
 
-Para retomar o agendamento cancelado, selecione a linha de relatório e clique em **Retomar Agendamento**. Quando retomadas, as próximas entradas de tempo de execução são exibidas novamente e o status mostra em andamento.
+Para retomar o agendamento cancelado, selecione a linha do relatório e clique em **Retomar agendamento**. Quando retomado, os próximos registros de tempo de execução são exibidos novamente e o status é exibido como em andamento.
 ![retomar agendamento](/help/assets/assets/resume-schedule.png)
 
 >[!NOTE]
