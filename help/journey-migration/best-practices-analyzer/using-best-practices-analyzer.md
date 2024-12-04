@@ -4,10 +4,10 @@ description: Saiba como usar o Analisador de práticas recomendadas para entende
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 9f5d7ee97da1c92d3a3d4573fa3ec737356f54a9
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 39%
+source-wordcount: '2724'
+ht-degree: 38%
 
 ---
 
@@ -85,6 +85,9 @@ Siga esta seção para saber como exibir o relatório do Analisador de práticas
 
 >[!NOTE]
 >Você tem a opção de ignorar o carregamento automático para o CAM selecionando **Ignorar carregamento automático do relatório para o CAM**. Se você optar por ignorar, será necessário baixar manualmente o relatório do BPA como um arquivo de valor separado por vírgulas e, em seguida, fazer upload do arquivo no CAM. É recomendável usar a opção de chave de upload, pois ela simplifica a operação.
+
+>[!IMPORTANT]
+>Ao fazer upload manual para o CAM, os tamanhos do relatório são restritos a aproximadamente 200 MB. Para relatórios maiores, será necessário aproveitar o upload automático.
 
 1. O botão **Gerar** fica ativo quando uma chave válida é fornecida. Clique em **Gerar** para iniciar a geração do relatório.
 

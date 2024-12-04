@@ -4,9 +4,9 @@ description: Esta página fornece uma visão geral sobre a fase de Preparação 
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 feature: Migration
 role: Admin
-source-git-commit: f86d681c8f8cb6d602058ef30b648c53ff7bad69
+source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1096'
 ht-degree: 7%
 
 ---
@@ -60,7 +60,7 @@ Siga as etapas abaixo para acessar a Fase de preparação:
    ![Obter chave de carregamento](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3b.png)
 
    >[!IMPORTANT]
-   >O relatório ainda pode ser carregado manualmente, mas usar a tecla Upload simplifica a operação. Observe que o relatório não pode ser carregado manualmente se você estiver no modo Incógnito do navegador.
+   >O relatório ainda pode ser carregado manualmente, mas usar a tecla Upload simplifica a operação. Observe que o relatório não pode ser carregado manualmente se seu tamanho for de aproximadamente 200 MB ou superior. O relatório também não pode ser carregado usando o modo Incógnito do navegador.
 
 1. Depois que um novo relatório for carregado, você poderá ver o relatório de Análise de práticas recomendadas no CAM.
 
