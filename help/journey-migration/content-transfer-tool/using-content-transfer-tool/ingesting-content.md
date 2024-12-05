@@ -6,8 +6,8 @@ feature: Migration
 role: Admin
 source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 11%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -169,11 +169,11 @@ Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atual
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Falha de assimilação devido ao ambiente de nuvem não estar no estado pronto {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+### Falha de assimilação devido ao Ambiente de nuvem não estar no estado pronto {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
->title="O Ambiente De Nuvem Não Está No Estado Pronto"
+>title="O Ambiente de nuvem não está no estado pronto"
 >abstract="Em casos raros, o ambiente de nuvem de destino pode estar enfrentando problemas inesperados, o que causará a falha da assimilação."
 
 Em casos raros, o ambiente de Cloud Service de destino da assimilação pode estar enfrentando problemas inesperados. Como resultado, a assimilação falhará, pois o ambiente não está no estado pronto esperado. Verifique o log de assimilação para revelar mais detalhes do estado de erro encontrado.
