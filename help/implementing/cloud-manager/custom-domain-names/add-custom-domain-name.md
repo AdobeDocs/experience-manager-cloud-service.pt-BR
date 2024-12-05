@@ -5,9 +5,9 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9d169ad7a2982ee44d9b47a418d50b2806942ce2
+source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1020'
 ht-degree: 13%
 
 ---
@@ -86,7 +86,7 @@ Se você selecionou o tipo de certificado *Adobe managed certificate*, conclua a
 
 Para verificar o domínio em uso, é necessário adicionar e verificar um CNAME.
 
-Um registro `CNAME` ou A, uma vez provisionado, roteia todo o tráfego de Internet do domínio para onde quer que esteja apontando. Se esse local não for provisionado para veicular o tráfego, haverá uma interrupção. Se não for testado, poderá haver erros no conteúdo. É por isso que essa etapa é sempre realizada após a conclusão dos testes, quando você está pronto para entrar em produção.
+Um tipo de registro `CNAME` ou `A`, uma vez provisionado, roteia todo o tráfego de Internet do domínio para onde quer que esteja apontando. Se esse local não for provisionado para veicular o tráfego, haverá uma interrupção. Se não for testado, poderá haver erros no conteúdo. É por isso que essa etapa é sempre realizada após a conclusão dos testes, quando você está pronto para entrar em produção.
 
 Para definir essas configurações, determine se um registro `CNAME` ou apex deve ser configurado para apontar seu nome de domínio personalizado para o nome de domínio do Cloud Manager. As seções a seguir deste documento podem ajudar você a determinar qual tipo de registro é apropriado para sua configuração de DNS.
 
@@ -130,7 +130,7 @@ Adicione os seguintes registros `A` às configurações de DNS do domínio por m
 
 >[!TIP]
 >
->O *CNAME* ou o *Registro* pode ser definido no servidor DNS regulador para economizar seu tempo.
+>O *registro CNAME* ou o *registro A* pode ser definido no servidor DNS regulador para economizar seu tempo.
 
 <!--
 ![Customer managed certificate steps](/help/implementing/cloud-manager/assets/cdn/cdn-create-customer-cert.png)

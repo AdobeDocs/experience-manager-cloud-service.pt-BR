@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f5f7830ac6d7f5b65203b12bb1775e64379c7d14
+source-git-commit: 7b9b9f3b957b27812c4a7e8f2dbcf96d8786b73e
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 58%
+source-wordcount: '1277'
+ht-degree: 35%
 
 ---
 
@@ -24,8 +24,8 @@ O Cloud Manager compila e testa seu código usando um ambiente de compilação e
 * O ambiente de compilação se baseia em Linux e é derivado do Ubuntu 22.04.
 * O Apache Maven 3.9.4 está instalado.
    * A Adobe recomenda [atualizar os repositórios Maven para usar HTTPS em vez de HTTP](#https-maven).
-* As versões do Java instaladas são Oracle JDK 11.0.22 e Oracle JDK 8u401.
-* **IMPORTANTE**: por padrão, a variável de ambiente `JAVA_HOME` está definida como `/usr/lib/jvm/jdk1.8.0_401`, que contém o JDK de Oracle 8u401. *_Este padrão deve ser substituído para Projetos na Nuvem AEM para usar o JDK 11_*. Consulte a seção [Definindo a versão do JDK Maven](#alternate-maven-jdk-version) para obter mais detalhes.
+* As versões do Java instaladas são Oracle JDK 11.0.22, Oracle JDK 17.0.10 e Oracle JDK 21.0.4.
+* **IMPORTANTE:** por padrão, a variável de ambiente `JAVA_HOME` está definida como `/usr/lib/jvm/jdk1.8.0_401`, que contém o JDK de Oracle 8u401. ***Este padrão deve ser substituído para que os Projetos na Nuvem do AEM usem JDK 21 (preferencial), 17 ou 11***. Consulte a seção [Definindo a versão do JDK Maven](#alternate-maven-jdk-version) para obter mais detalhes.
 * Há alguns pacotes de sistema adicionais instalados que são necessários.
    * `bzip2`
    * `unzip`
@@ -54,13 +54,107 @@ Para garantir uma experiência perfeita com a versão atualizada, a Adobe recome
 
 ### Usar uma versão específica do Java {#using-java-support}
 
-O processo de compilação do Cloud Manager usa o JDK do Oracle 8 para compilar projetos por padrão, mas os clientes do AEM Cloud Service devem definir a versão do JDK de execução do Maven como `11`.
+O processo de compilação do Cloud Manager usa o JDK do Oracle 8 para criar projetos por padrão, mas os clientes do AEM Cloud Service devem definir a versão do JDK de execução do Maven como 21 (preferencial), 17 ou 11.
 
 #### Definir a versão do JDK Maven {#alternate-maven-jdk-version}
 
-A Adobe recomenda que você defina a versão do JDK para toda a execução do Maven para `11` em um arquivo `.cloudmanager/java-version`.
+O Adobe recomenda configurar a versão do JDK de execução Maven para `21` ou `17` em um arquivo `.cloudmanager/java-version`.
 
-Para fazer isso, crie um arquivo chamado `.cloudmanager/java-version` na ramificação do repositório Git usada pelo pipeline. Edite o arquivo de forma que ele contenha apenas o texto, `11`. Embora a Cloud Manager também aceite o valor `8`, essa versão não é mais suportada para projetos AEM Cloud Service. Qualquer outro valor será ignorado. Quando `11` é especificado, o Oracle 11 é usado e a variável de ambiente `JAVA_HOME` é definida como `/usr/lib/jvm/jdk-11.0.22`.
+Para fazer isso, crie um arquivo chamado `.cloudmanager/java-version` na ramificação do repositório Git usada pelo pipeline. Edite o arquivo de forma que ele contenha apenas o texto `21` ou `17`. Embora a Cloud Manager também aceite o valor `8`, essa versão não é mais suportada para projetos AEM Cloud Service. Qualquer outro valor será ignorado. Quando `21` ou `17` é especificado, o Oracle Java 21 ou o Oracle Java 17 é usado e a variável de ambiente `JAVA_HOME` é definida como `/usr/lib/jvm/jdk-21` ou `/usr/lib/jvm/jdk-17`.
+
+#### Pré-requisitos para migrar para a criação com Java 21 ou Java 17 {#prereq-for-building}
+
+>[!NOTE]
+>
+>*Ao migrar seu aplicativo para uma nova versão de compilação e de tempo de execução do Java, teste completamente em ambientes de desenvolvimento e de preparo antes de implantar na produção.
+>De nota especial, os seguintes recursos ainda não foram formalmente validados com o tempo de execução do Java 21: [Forms](/help/forms/home.md), [Workflows](/help/sites-cloud/authoring/workflows/overview.md), [Caixa de entrada](/help/sites-cloud/authoring/inbox.md) e [Projetos](/help/sites-cloud/authoring/projects/overview.md). Se o aplicativo depender desses recursos, garanta um teste abrangente para verificar a funcionalidade.*
+
+##### Sobre alguns recursos de tradução {#translation-features}
+
+Os seguintes recursos podem não funcionar corretamente ao compilar com o Java 21 ou Java 17, e o Adobe espera resolvê-los no início de 2025:
+
+* `XLIFF` (Formato de Arquivo de Intercâmbio de Localização XML) falha ao usar a Tradução Humana.
+* `I18n` (Internacionalização) não lida corretamente com idiomas locais em hebraico (`he`), indonésio (`in`) e iídiche (`yi`) devido a alterações no construtor de Localidade em versões Java mais recentes.
+
+#### Requisitos de tempo de execução {#runtime-requirements}
+
+O tempo de execução do Java 21 é usado para builds no Java 21, Java 17 e Java 11 a partir de fevereiro de 2025. Para garantir a compatibilidade, os seguintes ajustes são necessários.
+
+As atualizações de biblioteca podem ser aplicadas a qualquer momento, pois permanecem compatíveis com versões Java mais antigas.
+
+* **Versão mínima de `org.objectweb.asm`:**
+Atualize o uso do `org.objectweb.asm` para a versão 9.5 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+
+* **Versão mínima de `org.apache.groovy`:**
+Atualize o uso do `org.apache.groovy` para a versão 4.0.22 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+
+  Esse pacote pode ser incluído indiretamente adicionando dependências de terceiros, como o console AEM Groovy.
+
+* **Editar um parâmetro de tempo de execução:**
+Ao executar o AEM localmente com o Java 21, os scripts de início (`crx-quickstart/bin/start` ou `crx-quickstart/bin/start.bat`) falham devido ao parâmetro `MaxPermSize`. Como solução, remova `-XX:MaxPermSize=256M` do script ou defina a variável de ambiente `CQ_JVM_OPTS`, definindo-a como `-Xmx1024m -Djava.awt.headless=true`.
+
+  O Adobe planeja resolver esse problema em uma versão futura.
+
+>[!NOTE]
+>
+>Quando `.cloudmanager/java-version` está definido como `21` ou `17`, o tempo de execução do Java 21 é implantado. Em fevereiro ou março de 2025, o tempo de execução do Java 21 está planejado para implantação em todos os clientes, mesmo se o Java 11 for usado para criar seu código.
+
+#### Requisitos de tempo de criação
+
+Os ajustes a seguir são necessários para permitir a criação do projeto com Java 21 e Java 17. Eles podem ser atualizados a qualquer momento, pois são compatíveis com versões mais antigas do Java.
+
+* **Versão mínima de `bnd-maven-plugin`:**
+Atualize o uso do `bnd-maven-plugin` para a versão 6.4.0 para garantir o suporte para tempos de execução de JVM mais recentes.
+
+  As versões 7 ou superiores não são compatíveis com o Java 11 ou inferior, portanto, não é recomendada uma atualização para essa versão.
+
+* **Versão mínima de `aemanalyser-maven-plugin`:**
+Atualize o uso do `aemanalyser-maven-plugin` para a versão 1.6.6 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+
+* **Versão mínima de `maven-bundle-plugin`:**
+Atualize o uso do `maven-bundle-plugin` para a versão 5.1.5 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+
+  As versões 6 ou superiores não são compatíveis com o Java 11 ou inferior, portanto, não é recomendada uma atualização para essa versão.
+
+* **Atualizar dependências em `maven-scr-plugin`:**
+O `maven-scr-plugin` não é diretamente compatível com Java 21 ou Java 17. No entanto, os arquivos de descritor podem ser gerados atualizando a versão de dependência do ASM na configuração do plug-in, conforme mostrado no exemplo a seguir:
+
+```XML
+<project>
+  ...
+  <build>
+    ...
+    <plugins>
+      ...
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-scr-plugin</artifactId>
+        <version>1.26.4</version>
+        <executions>
+          <execution>
+            <id>generate-scr-scrdescriptor</id>
+            <goals>
+              <goal>scr</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>org.ow2.asm</groupId>
+            <artifactId>asm-analysis</artifactId>
+            <version>9.7.1</version>
+            <scope>compile</scope>
+          </dependency>
+        </dependencies>
+      </plugin>
+      ...
+    </plugins>
+    ...
+  </build>
+  ...
+</project>
+```
+
 
 ## Variáveis de ambiente - padrão {#environment-variables}
 

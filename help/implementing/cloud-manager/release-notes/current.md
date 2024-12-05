@@ -1,57 +1,61 @@
 ---
-title: Notas de versão do Cloud Manager 2024.11.0 no Adobe Experience Manager as a Cloud Service
-description: Saiba mais sobre o lançamento do Cloud Manager 2024.11.0 no AEM as a Cloud Service.
+title: Notas de versão do Cloud Manager 2024.12.0 no Adobe Experience Manager as a Cloud Service
+description: Saiba mais sobre o lançamento do Cloud Manager 2024.12.0 no AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: e454581a2e6f2b8184a54d6550daec60e58bbc6c
+source-git-commit: ea1aa471a4fcb2ace6e4079715ac88af2d296e18
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 29%
+source-wordcount: '735'
+ht-degree: 31%
 
 ---
 
-# Notas de versão do Cloud Manager 2024.11.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de versão do Cloud Manager 2024.12.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Saiba mais sobre o lançamento do Cloud Manager 2024.11.0 no AEM (Adobe Experience Manager) as a Cloud Service.
+Saiba mais sobre o lançamento do Cloud Manager 2024.12.0 no AEM (Adobe Experience Manager) as a Cloud Service.
 
 >[!NOTE]
 >
->Consulte as [notas de versão atuais do Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
+>Consulte as [notas de versão atuais do Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Datas de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager 2024.11.0 no AEM as a Cloud Service é 7 de novembro de 2024.
+A data de lançamento do Cloud Manager 2024.12.0 no AEM as a Cloud Service é quinta-feira, 5 de dezembro de 2024.
 
-A próxima versão planejada é 5 de dezembro de 2024.
+A próxima versão planejada é janeiro de 2024.
 
 ## Novidades {#what-is-new}
 
-* Experimente a mais recente inovação em Edge Delivery Services com o AEM Cloud Service - agora disponível para explorar em seu programa de sandbox. [Saiba mais](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md#auto-creation) <!-- (CMGR-62319) -->
-* A página Configurações de domínio no AEM Cloud Manager agora inclui um recurso de pesquisa que permite localizar rapidamente os domínios por nome. Você pode inserir palavras-chave no campo de pesquisa para filtrar e exibir domínios correspondentes, facilitando o gerenciamento de vários domínios com eficiência. Além disso, a página oferece filtros de status, como **Verificado** e **Não Verificado**, para refinar ainda mais os resultados da pesquisa. <!-- (CMGR-62615) -->
+* **Suporte ao Java 21:** agora, os clientes podem criar opcionalmente com o Java 17 ou Java 21, beneficiando-se de melhorias de desempenho e novos recursos de linguagem. Consulte [Criar ambiente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) para obter as etapas de configuração, incluindo a atualização da descrição do projeto Maven e determinadas versões da biblioteca. Quando a versão de build é definida como Java 17 ou Java 21, o tempo de execução assume o Java 21 como padrão.
 
-![Campo de pesquisa nas Configurações de Domínio](/help/implementing/cloud-manager/assets/domain-settings-search.png)
+  A partir de fevereiro de 2025, os ambientes sandboxes e dev serão atualizados para o tempo de execução do Java 21, independentemente da versão de build (Java 8, 11, 17 ou 21). Os ambientes de produção serão atualizados em abril de 2025.
+
+* **Tipos de registro A:** O suporte para tipos de registro A foi adicionado para melhorar a Preparação para ativação para domínios que usam configurações de CDN na AEM Cloud Manager. Agora, você tem a opção de entrar em funcionamento adicionando um tipo de registro CNAME ou um tipo de registro A representando os IPs do Fastly, simplificando o roteamento de domínio. Esse aprimoramento elimina a restrição de depender exclusivamente de registros CNAME para a configuração de domínio com o Fastly.
+
+  Consulte [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). <!-- CMGR-63076 -->
+
+* **Adicionar vários domínios a um Site do Edge Delivery:** Agora é possível adicionar vários domínios, incluindo domínios apex e não apex, a um Site do Edge Delivery (EDS) no AEM Cloud Manager. Esse aprimoramento soluciona limitações anteriores que restringiam a capacidade de associar vários domínios a uma origem de EDS. A atualização garante melhor flexibilidade para gerenciar configurações de domínio e simplifica os processos de ativação para sites com configurações de domínio complexas. <!-- CMGR-63007 -->
+
+* **Opções de filtragem avançadas:** As opções de filtragem avançadas foram introduzidas nas páginas de execução de pipeline e páginas de certificado SSL no AEM Cloud Manager. Agora é possível filtrar por vários critérios, fornecendo acesso mais rápido a dados relevantes e melhorando a eficiência da implantação. <!-- CMGR-26263 -->
+
+   * **Filtragem de atividades de pipeline:** inclui filtragem de atividades de pipeline, permitindo que você refine os resultados da pesquisa para atividades de pipeline específicas. Os filtros disponíveis incluem pipeline, ação e status.
+     ![Filtragem de atividades de pipeline](/help/implementing/cloud-manager/assets/filters-pipeline.png)
+
+
+   * **Filtragem de certificados SSL:** Inclui filtragem de certificados SSL, que permite refinar os resultados da pesquisa para certificados específicos. Os filtros disponíveis incluem nome do certificado SSL, propriedade e status.
+     ![Filtragem de certificado SSL](/help/implementing/cloud-manager/assets/filters-ssl-certificates.png)
 
 ## Programa de adoção antecipada {#early-adoption}
 
 Faça parte do programa de adoção antecipada do Cloud Manager e aproveite a oportunidade de testar alguns dos próximos recursos.
-
-### Página inicial do AEM {#aem-home}
-
-A página inicial do AEM apresenta um ponto de partida centralizado para gerenciar conteúdo, ativos e sites no Adobe Experience Manager. Projetado para proporcionar uma experiência personalizada, o AEM Home permite navegar pelo ecossistema AEM sem interrupções de acordo com suas funções e metas. Atuando como guia, ele fornece insights importantes e ações recomendadas para ajudar você a atingir seus objetivos com eficiência. Com um layout claro e personalizado, o AEM Home garante acesso rápido a ferramentas essenciais, oferecendo suporte a uma experiência simplificada e eficaz em todos os recursos do AEM.
-
-Disponível para os primeiros usuários, a AEM Home oferece uma experiência otimizada focada na melhoria dos fluxos de trabalho, na priorização de metas e na entrega de resultados. A aceitação permite influenciar o desenvolvimento da AEM Home, fornecendo feedback que ajuda a moldar seu futuro e aumenta seu valor para toda a comunidade AEM.
-
-Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) a partir do seu endereço de email associado à sua Adobe ID. Certifique-se de incluir as seguintes informações:
-
-* A função que melhor se adapta ao seu perfil: Autor de conteúdo, Desenvolvedor, Proprietário da empresa, Administrador ou Outro (forneça uma descrição).
-* Sua superfície de acesso primária ao AEM: AEM Sites, AEM Assets, AEM Forms, Cloud Manager ou Outro (forneça uma descrição).
 
 ### Traga seu próprio Git: agora com suporte para GitLab e Bitbucket {#gitlab-bitbucket}
 
 <!-- BOTH CS & AMS -->
 
 O recurso **Traga seu próprio Git** foi expandido para incluir suporte para repositórios externos, como GitLab e Bitbucket. Esse novo suporte é uma adição ao suporte já existente para repositórios GitHub privados e empresariais. Ao adicionar esses novos repositórios, também é possível vinculá-los diretamente aos seus pipelines. Você pode hospedar esses repositórios em plataformas de nuvem pública ou em sua infraestrutura ou nuvem privada. Essa integração também elimina a necessidade de sincronização constante do código com o repositório da Adobe e oferece a capacidade de validar solicitações de pull antes de mesclá-las em uma ramificação principal.
+
+Os pipelines que usam repositórios externos (exceto os hospedados pelo GitHub) e o **Acionador de implantação** definidos como **Nas alterações do Git** agora são iniciados automaticamente.
 
 Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
@@ -63,15 +67,10 @@ Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing
 
 Se tiver interesse em testar esse novo recurso e compartilhar o seu feedback, envie um email para [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) do seu endereço de email associado à sua Adobe ID. Inclua qual plataforma Git deseja usar e se você está em uma estrutura de repositório privado/público ou empresarial.
 
-
 ## Correções de erros
 
-* Uma atualização recente abordou um problema no SonarQube em que senhas codificadas não eram detectadas em determinados casos. A correção agora inclui uma verificação de padrão expandida e se alinha aos padrões de detecção padrão no SonarQube. <!-- CMGR-62682 -->
-* Ao tentar atualizar um certificado SSL no Cloud Manager, um erro desconhecido apareceria ao clicar em **[!UICONTROL Atualizar]** na caixa de diálogo **[!UICONTROL Exibir e atualizar certificado SSL]**. <!-- CMGR-62848 -->
-* No Cloud Manager, as atualizações do certificado SSL falhavam com o erro &quot;O novo certificado não corresponde aos domínios existentes&quot;, mesmo quando os domínios eram idênticos, mas tinham diferenças na caixa de correio (maiúsculas ou minúsculas). A atualização agora reconhece domínios como não diferencia maiúsculas de minúsculas, alinhando-se aos padrões RFC. <!-- CMGR-62844 -->
-* No Cloud Manager, os vínculos de Inclui na lista de permissões de IP permaneceram presos em um estado de execução porque os links de chave estrangeira para configurações de domínio estavam ausentes. A correção agora garante que as associações de Inclui na lista de permissões de IP estejam vinculadas corretamente às configurações de domínio associadas. <!-- CMGR-62838 -->
-* O Cloud Manager valida o status OCSP (Online Certificate Status Protocol) de um certificado SSL. A Adobe recomenda que você também valide a integridade do certificado localmente usando uma ferramenta como o `openssl verify -untrusted intermediate.pem certificate.pem` antes de instalá-lo pelo Cloud Manager. Para obter mais detalhes, consulte a [documentação de requisitos do certificado SSL](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/introduction-to-ssl-certificates#requirements). <!-- CMGR-62341  -->
-
+* Uma proteção foi adicionada para impedir a exclusão de domínios com mapeamentos de domínio ativos no AEM Cloud Manager. Os usuários que tentam excluir esses domínios agora recebem uma mensagem de erro instruindo-os a excluir o mapeamento de domínio antes de continuar com a exclusão do domínio. Esse fluxo de trabalho garante a integridade do domínio e evita erros de configuração acidentais. <!-- CMGR-63033 -->
+* Raramente, os usuários não conseguiam adicionar um nome de domínio ou atualizar um certificado SSL devido a um status incorreto associado nos respectivos casos. <!-- CMGR-62816 -->
 
 
 <!-- ## Known issues {#known-issues} -->
