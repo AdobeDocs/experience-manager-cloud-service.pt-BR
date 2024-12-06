@@ -4,9 +4,9 @@ description: Saiba como configurar o tráfego CDN declarando regras e filtros em
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: e5e0606c83f144f92f9ae57e5380a30389e8df1b
+source-git-commit: 4e65a0fb32273548860731c09e27cb58fab93ab4
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1377'
 ht-degree: 1%
 
 ---
@@ -241,7 +241,7 @@ data:
 
 ## Transformações de resposta {#response-transformations}
 
-As regras de transformação de resposta permitem definir e não definir cabeçalhos das respostas de saída do CDN. Além disso, consulte o exemplo acima para fazer referência a uma variável previamente definida em uma regra de transformação de solicitação.
+As regras de transformação de resposta permitem definir e não definir cabeçalhos das respostas de saída do CDN. Além disso, consulte o exemplo acima para fazer referência a uma variável previamente definida em uma regra de transformação de solicitação. O código de status da resposta também pode ser definido.
 
 Exemplo de configuração:
 
@@ -282,6 +282,15 @@ data:
           - type: set
             respHeader: x-resp-header-2
             value: value-set-by-resp-rule-2
+      # Example: setting status code
+      - name: status-code-rule
+        when:
+          reqProperty: path
+          like: status-code
+        actions:
+          - type: set
+            respProperty: status
+            value: '410'        
 ```
 
 **Ações**
@@ -291,6 +300,7 @@ As ações disponíveis são explicadas na tabela abaixo.
 | Nome | Propriedades | Significado |
 |-----------|--------------------------|-------------|
 | **conjunto** | reqHeader, valor | Define um cabeçalho especificado para um determinado valor na resposta. |
+|          | respProperty, valor | Define uma propriedade de resposta. Suporta apenas a propriedade &quot;status&quot; para definir o código de status. |
 | **não definido** | respHeader | Remove um cabeçalho especificado da resposta. |
 
 ## Seletores de origem {#origin-selectors}
