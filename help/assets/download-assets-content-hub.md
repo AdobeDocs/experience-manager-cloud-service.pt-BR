@@ -3,9 +3,9 @@ title: Baixar ativos da Content Hub
 description: Saiba como baixar ativos no portal Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28424cb184d0378669498c78e571961227f6539a
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,52 +24,81 @@ ht-degree: 0%
 >
 >[!BADGE PDF do Guia do Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-O Content Hub permite baixar e compartilhar os ativos. Esses ativos podem incluir imagens, vídeos ou qualquer outro conteúdo digital. O Content Hub melhora a acessibilidade e a adaptabilidade para uma distribuição eficiente de ativos.
+O Content Hub permite baixar e compartilhar os ativos. A Interface do usuário do Content Hub exibe somente ativos aprovados. Esses ativos podem incluir imagens, vídeos ou qualquer outro conteúdo digital. O Content Hub melhora a acessibilidade e a adaptabilidade para uma distribuição eficiente de ativos.
 
-É possível baixar um único ativo ou vários ativos usando a Content Hub. As versões originais do ativo são baixadas.
+É possível baixar um ou vários ativos e suas representações disponíveis usando o Content Hub.
 
-## Baixar ativo licenciado único {#single-download-asset}
+## Baixar um ativo e suas representações {#download-asset-renditions}
 
-Selecione um ativo e clique em ![baixar](/help/assets/assets/download-icon.svg) no painel superior. A caixa de diálogo Baixar ativo exibe a licença do ativo. Aceite os termos e condições de licenciamento e clique em **Baixar**.
-Como alternativa, clique em ![baixar](/help/assets/assets/download-icon.svg) no cartão de ativos para baixar o ativo.
+Para baixar um ativo e suas representações, execute as seguintes etapas:
 
-### Baixar um único ativo licenciado da caixa de diálogo Ativo {#single-download-from-asset-dialog-box}
+1. Clique no ativo para exibir suas propriedades.
 
-1. Clique na miniatura do ativo. A caixa de diálogo do ativo é exibida.
-1. Clique em ![baixar](/help/assets/assets/download-icon.svg) na barra de ferramentas mais à direita. O painel de download exibe as representações de ativos e a caixa de seleção de aceitação dos termos e condições de licenciamento.
-   ![caixa de diálogo de download único](/help/assets/assets/asset-dialog-box-for-single-download.png)
-   * Clique no link terms and conditions para ver os termos de licenciamento no painel esquerdo.
+1. Clique em ![baixar](/help/assets/assets/download-icon.svg) para iniciar o processo de download. O painel Download lista todas as representações de ativos disponíveis (Original + outras representações).
+
+   >[!NOTE]
+   >
+   As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [Configuração](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+
+1. Selecione as representações e clique em **[!UICONTROL Baixar]**.
+
+   ![Baixar representações de ativo único](/help/assets/assets/download-single-asset-renditions.png)
+
+
+Se você estiver baixando um ativo licenciado, selecione **[!UICONTROL Eu li e aceitei os termos e condições mencionados acima]** e clique em **[!UICONTROL Baixar]**. Você também pode clicar em **[!UICONTROL termos e condições]** para exibir a licença do ativo. A visualização da licença é exibida somente se o ativo for aprovado usando o ambiente de criação do Assets as a Cloud Service. Para obter mais informações, consulte [Gerenciar ativos licenciados no Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
+
+## Baixar vários ativos e suas representações {#download-multiple-assets-renditions}
+
+Para baixar vários ativos e suas representações, execute as seguintes etapas:
+
+1. Selecione os ativos e clique em ![baixar](/help/assets/assets/download-icon.svg) **[!UICONTROL Baixar]**. A tela [!UICONTROL Baixar ativos] exibe uma lista de todos os ativos selecionados.
+1. Clique em **[!UICONTROL Baixar]** para selecionar entre as várias opções de download para iniciar o download:
+
+   * **Baixar [!UICONTROL Originais]**: selecione essa opção para baixar os ativos selecionados no formulário original.
+   * **Baixar [!UICONTROL Somente representações]**: selecione essa opção para baixar todas as representações disponíveis dos ativos, exceto os originais.
+   * **Baixar [!UICONTROL Originais e todas as representações]**: selecione essa opção para baixar as representações originais e dos ativos selecionados.
+
+     ![Baixar várias representações](/help/assets/assets/download-multiple-renditions.png)
 
      >[!NOTE]
      >
-     A caixa de seleção dos termos e condições é exibida somente para ativos licenciados. Além disso, a caixa de diálogo do ativo exibe uma pré-visualização dos termos e condições de licenciamento somente para ativos com licenças aprovadas. [Aprove a licença do ativo](/help/assets/approve-assets-content-hub.md) antes de baixar para habilitar a visualização dos termos de licença na caixa de diálogo do ativo.
+     As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [Configuração](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
 
-   * Clique na **Caixa Representação Original** para retornar à representação do ativo original no painel esquerdo.
-1. Aceite os termos e condições de licenciamento (para ativo licenciado) e clique em **Baixar** para baixar o ativo.
+   Se algum dos ativos selecionados for um ativo licenciado, clique na licença do ativo no painel esquerdo para ver sua visualização, o que permite selecionar **[!UICONTROL Li e aceitei os termos e condições mencionados acima]** e depois clique em **[!UICONTROL Baixar]**. A visualização da licença é exibida somente se o ativo for aprovado usando o ambiente de criação do Assets as a Cloud Service. Para obter mais informações, consulte [Gerenciar ativos licenciados no Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
-## Baixar vários Assets licenciados{#multi-download}
-
-1. Selecione os ativos e clique em ![baixar](/help/assets/assets/download-icon.svg) no painel superior. A caixa de diálogo exibida depende de a lista de download incluir ativos expirados ou somente ativos não expirados. <br/>
-   **Caixa de diálogo Baixar ativos expirados:** essa caixa de diálogo exibe a visualização dos ativos expirados junto com sua data de expiração no painel esquerdo. A contagem dos ativos expirados do total selecionado é exibida no painel direito. Clique em **Continuar com todos os ativos** para baixar ativos expirados com outros ativos (se presentes). A caixa de diálogo Baixar ativos é exibida. Consulte a [caixa de diálogo Baixar ativos](#Download-asset-dialog-box) para continuar.
-
-   >[!NOTE]
-   >
-   [Habilite a opção de download para ativos expirados](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) para baixá-los. Somente os ativos expirados que ativaram o download estão disponíveis para download.
-
-   <a id="Download-asset-dialog-box"></a> **Caixa de diálogo Baixar ativos:** essa caixa de diálogo exibe a lista de licenças associadas aos ativos selecionados no painel esquerdo. Selecione uma licença para visualizar seus termos e condições (em formato pdf) no painel do meio e a visualização dos ativos associados e sua contagem no painel direito. As licenças revisadas estão destacadas em azul claro.
-
-   >[!NOTE]
-   >
-   A **caixa de diálogo Baixar Ativo** visualiza os termos e condições de licenciamento somente para licenças aprovadas. [Aprove as licenças dos ativos](/help/assets/approve-assets-content-hub.md) antes de baixá-los para visualizar os termos de licenciamento na **caixa de diálogo Baixar Ativo**.
-
-1. Clique em ![remove-icon](/help/assets/assets/remove-icon.svg) para remover uma licença da caixa de diálogo de download.
-
-1. Aceite os termos e condições e clique em **Baixar** para baixar os ativos associados às licenças disponíveis no painel esquerdo.
    ![baixar-várias-licenças](/help/assets/assets/download-multiple-license.png)
 
-### Baixar Assets não licenciado {#download-non-licensed-assets}
+<!--1. On the Content Hub homepage, select the asset and click **Download**. The **Download assets** dialog box displays a license or list of licenses associated with the selected assets in the left pane. 
+1. Click a license in the left pane to see its PDF in the middle pane and the associated assets with it in the right pane. The license PDF preview is displayed only if the license is approved in your Assets as a Cloud Service environment. [Approve the license PDFs](/help/assets/approve-assets-content-hub.md) of the selected assets to see their previews.
+1. Optional: Click ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the dialog box.
+1. Select **I have read and accept all the terms and conditions mentioned above.** 
+1. Click **Download** to download the selected assets.-->
 
-Para baixar ativos não licenciados, selecione-os e clique em ![baixar](/help/assets/assets/download-icon.svg) no painel superior.
+<!---This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the preview of the associated assets to the license in the right. Reviewed licenses are highlighted in light blue.
+
+
+The dialog box that displays depends on whether the download list includes expired assets or only non-expired assets. <br/>
+**Download expired assets dialog box:** This dialog box displays the expired assets' preview along with their expiry date in the left pane. The expired assets' count out of total selected displays in the right pane. Click **Proceed with all assets** to download expired assets with other assets (if present). The Download assets dialog box displays. See the [Download assets dialog box](#Download-asset-dialog-box) to proceed further.
+    
+    >[!NOTE]
+    >
+    >[Enable the download option for expired assets](/help/assets/configure-content-hub-ui-options.md#expired-assets-content-hub) to download them. Only expired assets that have enabled downloading are available for download.
+
+   <a id="Download-asset-dialog-box"></a> **Download assets dialog box:** This dialog box displays the list of licenses associated with the selected assets in the left pane. Select a license to preview its terms and conditions (in pdf format) in the middle pane and the associated assets' preview and their count in the right pane. Reviewed licenses are highlighted in light blue.
+
+    >[!NOTE]
+    >
+    > The **Download Asset dialog box** previews licensing terms and conditions only for approved licenses. [Approve the assets' licenses](/help/assets/approve-assets-content-hub.md) before downloading them to preview their licensing terms in the **Download Asset dialog box**.
+
+1. Click  ![remove-icon](/help/assets/assets/remove-icon.svg) to remove a license from the download dialog box. 
+
+1. Accept the terms and conditions and then click **Download** to download assets associated with the available licenses in the left pane.-->
+<!--![download-multiple-license](/help/assets/assets/download-multiple-license.png)-->
+
+<!---
+### Download non-licensed Assets {#download-non-licensed-assets}
+
+ To download non-licensed assets, select the assets and click ![download](/help/assets/assets/download-icon.svg) from the top rail.-->
 
 
 

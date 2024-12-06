@@ -2,10 +2,10 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 794d8f51f0a44b708538c491b8945c564382f1c5
+source-git-commit: deeb1487ce51f2a91e556b32f9db2a644656d828
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 12%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -73,6 +73,8 @@ Como administrador, gerencie as seguintes opções de configuração para seus u
 * [Identidade visual](#configure-branding-content-hub)
 
 * [Ativos expirados](#expired-assets-content-hub)
+
+* [Representações](#renditions-content-hub)
 
 * [Links personalizados](#configure-custom-links-content-hub)
 
@@ -165,7 +167,6 @@ Você também pode configurar os campos de metadados principais que precisam ser
 
 Da mesma forma, clique em ![editar](/help/assets/assets/edit-content-hub.svg) que está disponível ao lado de cada propriedade disponível, para fazer as modificações necessárias ou clique em ![excluir](/help/assets/assets/delete-content-hub.svg) para excluir qualquer propriedade de metadados existente. Clique em **Salvar** depois de fazer todas as modificações para aplicar as alterações.
 
-
 ### Pesquisar {#configure-metadata-search-content-hub}
 
 Os administradores podem definir os campos de metadados que são pesquisados quando um usuário especifica um critério de pesquisa no Content Hub. Execute as seguintes etapas:
@@ -223,6 +224,23 @@ Se o administrador tiver ativado o download, os usuários do Content Hub também
 
 Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também destacará os ativos que expiram nos próximos 15 dias usando a mensagem `Expiring in n days` no Cartão de ativos.
 
+### Representações {#renditions-content-hub}
+
+As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+
+O Content Hub permite o download de representações estáticas. As representações estáticas são diferentes representações do arquivo original de um ativo gerado nativamente. Os exemplos incluem miniaturas ou representações otimizadas para dispositivos móveis. Os administradores podem gerenciar e controlar a disponibilidade de representações de ativos e gerenciar se é possível baixar ativos originais ou não.
+
+Para desabilitá-la, siga estas etapas:
+
+Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Representações]**. As opções disponíveis são as seguintes:
+
+* Habilite o botão [!UICONTROL Habilitar disponibilidade de representações estáticas] para tornar todas as representações estáticas visíveis no Content Hub.
+
+* Habilite ou desabilite **[!UICONTROL Permitir que os usuários baixem ativos originais]** para controlar a disponibilidade para baixar ativos originais.
+
+  ![Configurar representações no Content Hub](assets/config-renditions.png)
+
+Para obter informações sobre como exibir e baixar representações estáticas no Content Hub, consulte [baixar ativos no Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Links personalizados {#configure-custom-links-content-hub}
 
