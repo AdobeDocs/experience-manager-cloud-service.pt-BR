@@ -4,10 +4,10 @@ description: Notas de versão específicas para recursos obsoletos e removidos d
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 9d58d9342a8c0337b1fa0c80b40f1cf6d07c2eee
+source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
-source-wordcount: '2513'
-ht-degree: 48%
+source-wordcount: '2768'
+ht-degree: 43%
 
 ---
 
@@ -510,4 +510,77 @@ Informações adicionais sobre a configuração OSGI podem ser encontradas em [e
 
 ## Atualização do Java Runtime para a versão 21 {#java-runtime-update-21}
 
-O Adobe Experience Manager as a Cloud Service está fazendo a transição para o Java 21 runtime. Para garantir a compatibilidade, é essencial atualizar as versões da biblioteca conforme descrito nos [Requisitos de tempo de execução](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+<!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
+
+O AEM as a Cloud Service mudará para o Java 21 runtime. Para garantir a compatibilidade, é essencial fazer os seguintes ajustes:
+
+### Requisitos de tempo de execução
+
+Esses ajustes são necessários para garantir a compatibilidade com o Java 21 runtime. As bibliotecas podem ser atualizadas a qualquer momento, pois são compatíveis com versões mais antigas do Java.
+
+#### Versão mínima de org.objectweb.asm {#org.objectweb.asm}
+
+Atualize o uso de org.objectweb.asm para a versão 9.5 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+
+#### Versão mínima de org.apache.groovy {#org.apache.groovy}
+
+Atualize o uso de org.apache.groovy para a versão 4.0.22 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+
+Esse pacote pode ser incluído indiretamente adicionando dependências de terceiros, como o console AEM Groovy.
+
+### Requisitos de tempo de criação
+
+Esses ajustes são necessários para permitir a criação do projeto com versões mais recentes do Java, mas não são necessários para a compatibilidade de tempo de execução. Os plug-ins do Maven podem ser atualizados a qualquer momento, pois são compatíveis com versões mais antigas do Java.
+
+#### Versão mínima do plug-in bnd-maven {#bnd-maven-plugin}
+
+Atualize o uso de bnd-maven-plugin para a versão 6.4.0 para garantir o suporte para tempos de execução de JVM mais recentes. As versões 7 ou superiores não são compatíveis com o Java 11 ou inferior, portanto, uma atualização para essa versão não é recomendada no momento.
+
+#### Versão mínima do aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
+
+Atualize o uso de aemanalyser-maven-plugin para a versão 1.6.6 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+
+#### Versão mínima do maven-bundle-plugin  {#maven-bundle-plugin}
+
+Atualize o uso de maven-bundle-plugin para a versão 5.1.5 ou superior para garantir o suporte para tempos de execução da JVM mais recentes.
+
+#### Atualizar dependências no maven-scr-plugin  {#maven-scr-plugin}
+
+O `maven-scr-plugin` não é diretamente compatível com o Java 17 e 21. No entanto, é possível gerar os arquivos do descritor atualizando a versão de dependência do ASM na configuração do plug-in, semelhante ao trecho abaixo:
+
+```
+[source,xml]
+ <project>
+   ...
+   <build>
+     ...
+     <plugins>
+       ...
+       <plugin>
+         <groupId>org.apache.felix</groupId>
+         <artifactId>maven-scr-plugin</artifactId>
+         <version>1.26.4</version>
+         <executions>
+           <execution>
+             <id>generate-scr-scrdescriptor</id>
+             <goals>
+               <goal>scr</goal>
+             </goals>
+           </execution>
+         </executions>
+         <dependencies>
+           <dependency>
+             <groupId>org.ow2.asm</groupId>
+             <artifactId>asm-analysis</artifactId>
+             <version>9.7.1</version>
+             <scope>compile</scope>
+           </dependency>
+         </dependencies>
+       </plugin>
+       ...
+     </plugins>
+     ...
+   </build>
+   ...
+ </project>
+```
