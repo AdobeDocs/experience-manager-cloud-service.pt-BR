@@ -4,10 +4,10 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 114b7e795df6267d76d1bd923a7dff8826c67029
+source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3322'
+ht-degree: 12%
 
 ---
 
@@ -64,8 +64,9 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
    >[!IMPORTANT]
    > Você pode iniciar uma assimilação no ambiente de destino somente se pertencer ao grupo local **administradores de AEM** no serviço de autor do Cloud Service de destino. Se você não conseguir iniciar uma assimilação, consulte [Não foi possível iniciar a assimilação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obter mais detalhes.
 
-1. Após selecionar as opções de assimilação, uma estimativa de sua duração será mostrada. Esta é uma estimativa de melhor esforço com base em dados históricos de assimilações semelhantes.
+1. Depois que as opções de assimilação forem selecionadas, uma estimativa de sua duração poderá ser mostrada. Esta é uma estimativa de melhor esforço com base em dados históricos de assimilações semelhantes.
 
+   * Esta estimativa não é calculada ou mostrada para **assimilações que não sejam de limpeza**, já que o CAM não sabe quanto conteúdo está no sistema de destino neste caso.
    * Essa estimativa só será calculada e mostrada se os valores de &quot;Verificar tamanho&quot; da extração tiverem sido coletados e estiverem disponíveis.
    * Este valor é uma estimativa e, embora calculado inteligentemente, não deve ser considerado exato. Vários fatores podem alterar a duração real.
    * Enquanto a assimilação estiver em execução, esse valor também estará disponível na caixa de diálogo de durações, acessada por meio da ação &quot;**Exibir durações**&quot; da assimilação.
