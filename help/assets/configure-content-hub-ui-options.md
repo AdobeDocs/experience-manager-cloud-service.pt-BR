@@ -2,10 +2,10 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: deeb1487ce51f2a91e556b32f9db2a644656d828
+source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1718'
+ht-degree: 11%
 
 ---
 
@@ -21,6 +21,7 @@ ht-degree: 0%
 >additional-url="https://images-tv.adobe.com/mpcv3/4477/74a81d1c-0cfe-41f4-8a06-18ff70604e45_1732023385.854x480at800_h264.mp4" text="Assistir ao vídeo"
 
 <!-- ![Download assets](assets/download-asset.jpg) -->
+
 ![Configurar ativos no Content Hub](assets/configure-assets.png)
 
 >[!AVAILABILITY]
