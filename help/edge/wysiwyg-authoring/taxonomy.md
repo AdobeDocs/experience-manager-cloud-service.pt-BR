@@ -4,7 +4,7 @@ description: Saiba como gerenciar dados de taxonomia para usar tags com seu AEM 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 13bde08db33ff4b81a6e76cad91bb5ea257ab195
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 1%
@@ -132,7 +132,7 @@ Depois que a taxonomia é publicada, suas informações podem ser aproveitadas p
 
 Você pode acessar a taxonomia como dados JSON no seguinte endereço.
 
-`https://<branch>--<repository>--<owner>.hlx.page/<taxonomy-json-name>.json`
+`https://<branch>--<repository>--<owner>.aem.page/<taxonomy-json-name>.json`
 
 Use o `<taxonomy-json-name>` que você definiu ao [ mapear sua taxonomia para o arquivo `paths.json` em seu projeto.](#paths-json) Os dados de taxonomia são retornados como dados JSON, como no exemplo a seguir.
 

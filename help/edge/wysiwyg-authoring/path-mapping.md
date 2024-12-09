@@ -3,13 +3,13 @@ title: Mapeamento de caminho para Edge Delivery Services
 description: Saiba como mapear caminhos de página usados na instância de criação do AEM para caminhos de página públicos usados no site e controlar qual conteúdo é publicado no Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
-source-git-commit: 2727744f276ee5facae718a987dcc6dc54d4e917
+exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
 
 ---
-
 
 # Mapeamento de caminho para Edge Delivery Services {#path-mapping}
 
@@ -20,7 +20,7 @@ Saiba como mapear caminhos de página usados na instância de criação do AEM p
 Para criar conteúdo do WYSIWYG usando AEM e publicá-lo em Edge Delivery Services, é necessário configurar o mapeamento de caminho do projeto. Esse mapeamento tem dois propósitos.
 
 * Ele mapeia e cria uma relação entre os caminhos de página usados na instância de criação do AEM e os caminhos de página pública usados no site.
-* Ele controla qual conteúdo (páginas, planilhas, ativos etc.) são publicados no Edge Delivery Services.
+* Controla quais conteúdos (páginas, planilhas, ativos, etc.) são publicados no Edge Delivery Services.
 
 O mapeamento de caminho deve ser configurado para cada projeto individualmente e de acordo com o conteúdo do projeto e a estrutura de URL. Ele é usado pelo AEM durante a publicação de conteúdo e durante a edição de conteúdo no [Editor Universal.](/help/sites-cloud/authoring/universal-editor/navigation.md)
 
@@ -79,7 +79,7 @@ Os mapeamentos de caminho podem ser configurados de uma das duas formas a seguir
 
    ```text
    curl --request POST \
-     --url https://admin.hlx.page/config/{org}/sites/{site}/public.json \
+     --url https://admin.aem.page/config/{org}/sites/{site}/public.json \
      --header 'Content-Type: application/json' \
      --header 'x-auth-token: ......' \
      --data '{

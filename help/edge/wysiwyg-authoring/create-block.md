@@ -4,7 +4,7 @@ description: Saiba como criar blocos instrumentados para uso com o Editor univer
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 487d918059e85e3f5dd19d2248b3a8365da41dee
+source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 0%
@@ -182,7 +182,7 @@ Agora que o bloco de cotação básico está definido e comprometido com o proje
 
 1. Quando estiver satisfeito com o conteúdo da sua cotação, você poderá publicar a página tocando ou clicando no botão **Publish** na barra de ferramentas do Editor Universal.
 
-1. Verifique se o conteúdo foi publicado navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.hlx.page`
+1. Verifique se o conteúdo foi publicado navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.aem.page`
 
    ![A cotação publicada](assets/create-block/quote-published.png)
 
@@ -273,7 +273,7 @@ export default function decorate(block) {
 
 ![O bloco de aspas estilizado no Editor Universal](assets/create-block/quote-styled.png)
 
-8&amp;ponto; Verifique se as alterações foram enviadas para produção navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.hlx.page`
+8&amp;ponto; Verifique se as alterações foram enviadas para produção navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.aem.page`
 
 ![O bloco de aspas publicado e estilizado](assets/create-block/quote-styled-published.png)
 
@@ -327,7 +327,7 @@ Ao adicionar uma propriedade `classes` ao bloco, a propriedade é renderizada no
 
 Por questões de simplicidade, este guia fez você confirmar diretamente na ramificação `main`. Para experimentação em um repositório de amostra, isso geralmente não é um problema. Para o trabalho real do projeto, [você deve seguir as práticas recomendadas de desenvolvimento](https://www.aem.live/docs/dev-collab-and-good-practices) desenvolvendo em uma ramificação diferente e revisando todas as alterações via solicitação de pull antes de mesclar com `main`.
 
-Quando você não estiver desenvolvendo na ramificação `main`, poderá anexar `?ref=<branch>` na barra de localização do Editor Universal para carregar a página da ramificação. `<branch>` é o nome da ramificação como seria usado para a visualização do seu projeto ou URLs ativas, por exemplo, `https://<branch>--<repo>--<owner>.hlx.page`.
+Quando você não estiver desenvolvendo na ramificação `main`, poderá anexar `?ref=<branch>` na barra de localização do Editor Universal para carregar a página da ramificação. `<branch>` é o nome da ramificação como seria usado para a visualização do seu projeto ou URLs ativas, por exemplo, `https://<branch>--<repo>--<owner>.aem.page`.
 
 ## Reutilizar seus blocos para criação baseada em documento {#reusing-blocks}
 
