@@ -4,9 +4,9 @@ description: Saiba como criar blocos instrumentados para uso com o Editor univer
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,13 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 ### Criar Definição e Modelo de Bloco {#create-block-model}
 
-1&amp;ponto; Clona o projeto GitHub localmente criado no [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e o abre em um editor de sua escolha.
+1. Clona localmente o projeto do GitHub que você criou no [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e o abre em um editor de sua escolha.
 
 * O código Microsoft é usado aqui para fins ilustrativos.
 
 ![Clonando o projeto](assets/create-block/clone.png)
 
-2&amp;ponto; Edite o arquivo `component-definition.json` na raiz do projeto e adicione a seguinte definição para seu novo bloco de aspas e salve o arquivo.
+2\ Edite o arquivo `component-definition.json` na raiz do projeto, adicione a seguinte definição para o novo bloco de cotação e salve o arquivo.
 
 >[!BEGINTABS]
 
@@ -83,7 +83,7 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 >[!ENDTABS]
 
-3&amp;ponto; Edite o arquivo `component-models.json` na raiz do projeto e adicione a seguinte [definição de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para seu novo bloco de aspas e salve o arquivo.
+3 Edite o arquivo `component-models.json` na raiz do projeto e adicione a seguinte [definição de modelo](/help/implementing/universal-editor/field-types.md#model-structure) para o novo bloco de cotação e salve o arquivo.
 
 * Consulte o documento [Modelagem de conteúdo para criação no WYSIWYG com projetos do Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) para obter mais informações sobre o que é importante considerar ao criar modelos de conteúdo.
 
@@ -119,7 +119,7 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 >[!ENDTABS]
 
-4&amp;ponto; Edite o arquivo `component-filters.json` na raiz do projeto e adicione o bloco de aspas à [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que o bloco seja adicionado a qualquer seção e salve o arquivo.
+4\ Edite o arquivo `component-filters.json` na raiz do projeto e adicione o bloco de aspas à [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que o bloco seja adicionado a qualquer seção e salve o arquivo.
 
 >[!BEGINTABS]
 
@@ -147,7 +147,7 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 >[!ENDTABS]
 
-5&amp;ponto; Usando o Git, confirme essas alterações na ramificação `main`.
+5\ Usando o Git, confirme essas alterações na ramificação `main`.
 
 * A confirmação de `main` é apenas para fins ilustrativos. [Siga as práticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) e use uma solicitação de pull para o trabalho real do projeto.
 
@@ -190,13 +190,13 @@ Agora que o bloco de cotação básico está definido e comprometido com o proje
 
 Agora que você tem um bloco de cotação de trabalho, é possível aplicar o estilo a ele.
 
-1&amp;ponto; Retornar ao editor do seu projeto.
+1. Retorne ao editor do projeto.
 
-2&amp;ponto; Crie uma pasta `quote` na pasta `blocks`.
+2\ Crie uma pasta `quote` na pasta `blocks`.
 
 ![Criar uma pasta de cotação](assets/create-block/new-folder.png)
 
-3&amp;ponto; Na nova pasta `quote`, adicione um arquivo `quote.js` para implementar a decoração de blocos, adicionando o seguinte JavaScript e salvando o arquivo.
+3 Na nova pasta `quote`, adicione um arquivo `quote.js` para implementar a decoração de blocos adicionando o seguinte JavaScript e salve o arquivo.
 
 >[!BEGINTABS]
 
@@ -218,7 +218,7 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-4&amp;ponto; Na pasta `quote`, adicione um arquivo `quote.css` para definir o estilo do bloco, adicionando o seguinte código CSS e salvando o arquivo.
+4\ Na pasta `quote`, adicione um arquivo `quote.css` para definir o estilo do bloco, adicionando o seguinte código CSS e salve o arquivo.
 
 >[!BEGINTABS]
 
@@ -263,17 +263,17 @@ export default function decorate(block) {
 
 >[!ENDTABS]
 
-5&amp;ponto; Usando o Git, confirme essas alterações na ramificação `main`.
+5\ Usando o Git, confirme essas alterações na ramificação `main`.
 
 * A confirmação de `main` é apenas para fins ilustrativos. [Siga as práticas recomendadas](https://www.aem.live/docs/dev-collab-and-good-practices) e use uma solicitação de pull para o trabalho real do projeto.
 
-6&amp;ponto; Retorne à guia do navegador do Editor universal, onde você estava editando a página do projeto, e recarregue a página para visualizar seu bloco estilizado.
+6\. Retorne à guia do navegador do Editor universal, onde você estava editando a página do projeto, e recarregue a página para exibir seu bloco estilizado.
 
-7&amp;ponto; veja o bloco de aspas agora estilizado na página.
+7\ Consulte o bloco de aspas agora estilizado na página.
 
 ![O bloco de aspas estilizado no Editor Universal](assets/create-block/quote-styled.png)
 
-8&amp;ponto; Verifique se as alterações foram enviadas para produção navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.aem.page`
+8\ Verifique se as alterações foram enviadas para produção navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.aem.page`
 
 ![O bloco de aspas publicado e estilizado](assets/create-block/quote-styled-published.png)
 
@@ -344,4 +344,3 @@ Consulte o documento [Modelagem de conteúdo para criação no WYSIWYG com proje
 >[!TIP]
 >
 >Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service AEM como fonte de conteúdo, exiba [este webinário de GEMs do.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
-
