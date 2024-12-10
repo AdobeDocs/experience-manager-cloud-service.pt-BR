@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
 workflow-type: tm+mt
 source-wordcount: '2768'
-ht-degree: 43%
+ht-degree: 44%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 43%
 >[!CONTEXTUALHELP]
 >id="aem_cloud_deprecated_features"
 >title="Recursos obsoletos e removidos do AEM as a Cloud Service"
->abstract="O AEM as a Cloud Service tem um modelo de implantação nativo em nuvem. Essa guia destaca os recursos e funcionalidades substituídos pelos equivalentes nativos em nuvem."
+>abstract="O AEM as a Cloud Service tem um modelo de implantação nativo em nuvem. Essa guia destaca as funcionalidades e os recursos substituídos por seus equivalentes nativos da nuvem."
 
 O Adobe avalia constantemente os recursos do produto para, com o tempo, reinventar ou substituir recursos mais antigos por alternativas mais modernas, de forma a melhorar o valor geral oferecido ao cliente, sempre considerando cuidadosamente a compatibilidade com versões anteriores. Como o [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] usa um modelo de implantação nativo em nuvem, ele substitui certos recursos por seus equivalentes nativos em nuvem.
 
