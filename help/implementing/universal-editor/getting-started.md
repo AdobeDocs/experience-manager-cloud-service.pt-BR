@@ -4,10 +4,10 @@ description: Saiba como obter acesso ao Editor universal e começar a instrument
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 8357caf2b0d396f6a1bd7b6160d6b48d8d6c026c
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 72%
+source-wordcount: '627'
+ht-degree: 62%
 
 ---
 
@@ -24,7 +24,17 @@ Embora o Editor universal possa editar o conteúdo de qualquer fonte, este docum
 
 ## Instrumentar a página {#instrument-page}
 
-O serviço do Editor universal exige um [nome uniforme de recurso (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) para identificar e utilizar o sistema de back-end correto para o conteúdo no aplicativo que está sendo editado. Portanto, um esquema URN é necessário para mapear o conteúdo de volta para os recursos de conteúdo.
+O Editor universal exige uma biblioteca JavaScript para renderizar e editar a página no editor.
+
+Além disso, o serviço do Editor Universal requer um [nome de recurso uniforme (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) para identificar e utilizar o sistema de back-end correto para o conteúdo no aplicativo que está sendo editado. Portanto, um esquema URN é necessário para mapear o conteúdo de volta para os recursos de conteúdo.
+
+### Incluir a biblioteca CORS do editor universal {#cors-library}
+
+Para que o Editor universal se conecte ao seu aplicativo, ele deve incluir a biblioteca CORS do Editor universal. Adicione o script a seguir ao aplicativo.
+
+```html
+ <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
+```
 
 ### Criação de conexões {#connections}
 

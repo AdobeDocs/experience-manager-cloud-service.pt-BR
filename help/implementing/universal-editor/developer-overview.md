@@ -4,9 +4,9 @@ description: Se você for um desenvolvedor do AEM interessado em como o Editor u
 exl-id: d6f9ed78-f63f-445a-b354-f10ea37b0e9b
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: d82a88e5b7337e9d81a91e812f6a90237e80b1ea
 workflow-type: tm+mt
-source-wordcount: '3139'
+source-wordcount: '3160'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ Você deve adicionar a biblioteca JavaScript necessária ao componente Página d
 1. Adicione a biblioteca do JavaScript ao final do arquivo.
 
    ```html
-   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>
+   <script src="https://universal-editor-service.adobe.io/cors.js" async></script>
    ```
 
 1. Clique em **Salvar tudo** e recarregue o Editor Universal.
@@ -160,7 +160,12 @@ A página agora é carregada com a biblioteca JavaScript adequada para permitir 
 >[!TIP]
 >
 >* A biblioteca pode ser carregada no cabeçalho ou no rodapé.
->* A biblioteca `universal-editor-embedded.js` [ está disponível no NPM](https://www.npmjs.com/package/@adobe/universal-editor-cors) e você mesmo pode hospedá-la, se necessário, ou colocá-la diretamente no aplicativo.
+
+>[!NOTE]
+>
+>O método recomendado anteriormente para incluir a biblioteca do JavaScript, `<script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST"></script>` ou via npmjs.com, não é mais recomendado, pois o pacote foi descontinuado.
+>
+>Se um aplicativo ainda usar o pacote obsoleto, o Editor universal exibirá um aviso na interface do usuário de que um pacote desatualizado foi detectado.
 
 ## Definição de uma Conexão para Persistir Alterações {#connection}
 
