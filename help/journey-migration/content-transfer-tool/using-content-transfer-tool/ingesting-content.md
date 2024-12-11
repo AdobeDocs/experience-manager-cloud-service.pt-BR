@@ -4,9 +4,9 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 550d84f43cba472d74c7be6323bd69ba808c96f8
+source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
 workflow-type: tm+mt
-source-wordcount: '3322'
+source-wordcount: '3412'
 ht-degree: 12%
 
 ---
@@ -48,6 +48,9 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 
    >[!NOTE]
    > Se a camada de destino for `Author`, a instância de autor será desligada durante a duração da assimilação e ficará indisponível para os usuários (por exemplo, autores ou qualquer pessoa que esteja executando a manutenção). O motivo é proteger o sistema e evitar quaisquer alterações que possam ser perdidas ou causar um conflito de assimilação. Confirme se sua equipe está ciente desse fato. Observe também que o ambiente parece hibernado durante a assimilação do autor.
+
+   >[!NOTE]
+   > Se a camada de destino for `Publish`, a instância de publicação permanecerá em execução durante a assimilação.  No entanto, se o processo de compactação estiver em execução durante a assimilação, é provável que ocorra um conflito entre os dois processos.  Por esse motivo, o processo de assimilação 1) desativa o script de compactação cronometrado, de modo que a compactação não será iniciada durante a assimilação e 2) verifica se a compactação está em execução no momento e, se estiver, aguarda a conclusão antes que a assimilação continue.  Se a assimilação de publicação estiver demorando mais do que o esperado, verifique os logs de assimilação para obter as instruções de log relacionadas.
 
    * **Apagar:** Escolha o valor `Wipe`
       * A opção **Apagar** define o ponto inicial de destino da assimilação. Se **Limpar** estiver habilitado, o destino, incluindo todo o seu conteúdo, será redefinido para a versão do AEM especificada no Cloud Manager. Se não estiver ativado, o destino mantém o conteúdo atual como ponto de partida.
