@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
 workflow-type: tm+mt
-source-wordcount: '2926'
+source-wordcount: '2909'
 ht-degree: 3%
 
 ---
@@ -74,8 +74,6 @@ O perfil de processamento pode incluir uma representação FPO (somente para pos
 
 ### Criar um perfil padrão {#create-standard-profile}
 
-Para criar um perfil de processamento padrão, siga estas etapas:
-
 1. Os administradores acessam **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Processando Perfis]**. Clique em **[!UICONTROL Criar]**.
 1. Forneça um nome que ajude a identificar exclusivamente o perfil ao aplicar a uma pasta.
 1. Para gerar representações FPO, na guia **[!UICONTROL Imagem]**, habilite **[!UICONTROL Criar Representação FPO]**. Insira um valor de **[!UICONTROL Qualidade]** de 1-100.
@@ -124,8 +122,6 @@ Os desenvolvedores podem usar o [!DNL Asset Compute Service] para [criar aplicat
 >Não é possível editar os metadados padrão usando os aplicativos personalizados. Você só pode modificar metadados personalizados.
 
 ### Criar um perfil personalizado {#create-custom-profile}
-
-Para criar um perfil personalizado, siga estas etapas:
 
 1. Os administradores acessam **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Processando Perfis]** > **[!UICONTROL Criar]**.
 1. Na página Processando Perfil, clique na guia **[!UICONTROL Personalizado]** e em **[!UICONTROL Adicionar novo]**.
