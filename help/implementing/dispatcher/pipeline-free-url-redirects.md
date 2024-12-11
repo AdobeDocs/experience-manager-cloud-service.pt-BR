@@ -4,9 +4,9 @@ description: Saiba como declarar redirecionamentos 301 ou 302 sem acesso aos pip
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: c80454204837529007c1fda7eef4486c213eb509
+source-git-commit: 639a8927fb232f7d4a18e0f49b1221c184066787
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '699'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,14 @@ A AEM as a Cloud Service oferece [várias abordagens](https://experienceleague.a
 O núcleo desse recurso é a capacidade do AEM Apache/Dispatcher de carregar (ou recarregar) um ou mais arquivos de mapa de regravação que foram colocados em um local especificado no repositório de publicação. É importante mencionar que a forma como os arquivos chegam lá está fora do escopo desse recurso, mas você pode considerar um dos seguintes métodos:
 
 * Assimilar o mapa de regravação como um ativo na interface do usuário do autor e publicá-lo.
-* Instalando o [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html), que inclui uma interface de usuário para gerenciar os mapeamentos de URL e também pode publicar o arquivo de mapa de regravação.
+* Instalando o [ACS Commons Rewrite Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html)([pelo menos a versão 6.7.0 ou superior](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), que inclui uma interface de usuário para gerenciar os mapeamentos de URL e também pode publicar o arquivo de mapa de regravação.
 * Flexibilidade total ao escrever um aplicativo personalizado. Por exemplo, uma interface de usuário ou de linha de comando para gerenciar os mapeamentos de URL ou, como alternativa, um formulário para carregar um mapa de regravação, que usa APIs AEM para publicar o arquivo de mapa de regravação.
 
 >[!NOTE]
 > Este recurso requer o AEM versão **18311 ou superior**.
+
+>[!NOTE]
+> O uso deste recurso no Gerenciador de Mapa de Regravação requer o ACS Commons versão **6.7.0 ou superior**.
 
 ## O mapa de regravação {#rewrite-map}
 
