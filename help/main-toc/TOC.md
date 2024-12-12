@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: eb3dbdc8107075cb5f6955f549bc9370f319588a
+source-git-commit: 5d0af9f7eaea4ad1aa6a979f46713d735f3a461a
 workflow-type: tm+mt
 source-wordcount: '5901'
 ht-degree: 71%
@@ -711,6 +711,11 @@ ht-degree: 71%
          + [Incorporar um Formulário adaptável em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
          + [Incorporar formulário adaptável baseado nos Componentes principais a uma página da Web externa](/help/forms/embed-adaptive-form-core-components-external-web-page.md)
          + [Incorporar formulário adaptável baseado em Componentes de base a uma página da Web externa](/help/forms/embed-adaptive-form-external-web-page.md)
+         + Integrar o Adaptive Forms com o Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
+            + [Integrar o Adobe Marketo Engage com o AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
+            + [Configurar novo formulário para integrar com o Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
+            + [Configurar fonte de dados do Adobe Marketo Engage para o Adaptive Forms existente](/help/forms/use-marketo-engage-data-source-in-form.md)
+            + [Configurar a ação de envio para o Marketo Engage para formulários existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
       + Modelo de dados do formulário {#use-form-data-model}
          + [Conectar o AEM Forms ao banco de dados ou à fonte de dados](/help/forms/data-integration.md)
          + [Configurar fontes de dados](/help/forms/configure-data-sources.md)
@@ -722,11 +727,6 @@ ht-degree: 71%
          + [Trabalhar com o modelo de dados de formulário](/help/forms/work-with-form-data-model.md)
          + [Utilizar modelo de dados do formulário](/help/forms/using-form-data-model.md)
          + [Criar esquema XML para um formulário adaptável](/help/forms/adaptive-form-xml-schema-form-model.md)
-         + Integrar o Adaptive Forms com o Adobe Marketo Engage{#integrate-adaptive-form-with-market-engage}
-            + [Integrar o Adobe Marketo Engage com o AEM Forms](/help/forms/integrate-form-to-marketo-engage.md)
-            + [Configurar novo formulário para integrar com o Marketo Engage](/help/forms/integrate-adaptive-form-with-marketo-engage.md)
-            + [Configurar fonte de dados do Adobe Marketo Engage para o Adaptive Forms existente](/help/forms/use-marketo-engage-data-source-in-form.md)
-            + [Configurar a ação de envio para o Marketo Engage para formulários existentes](/help/forms/submit-adaptive-form-to-marketo-engage.md)
    + Formulários adaptáveis {#adaptive-forms-authoring}
       + [Criação de um Formulário adaptável](/help/forms/create-an-adaptive-form.md)
       + [Criar um fragmento de formulário adaptável](/help/forms/adaptive-form-fragments.md)
