@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 1252814d99927cb8fff81b66f6e7caca92bb6e9a
 workflow-type: tm+mt
-source-wordcount: '1801'
-ht-degree: 86%
+source-wordcount: '1904'
+ht-degree: 81%
 
 ---
 
@@ -170,6 +170,19 @@ Para remover um formulário de metadados de uma pasta:
 1. Selecione a pasta e clique em **[!UICONTROL Remover]**. Você também pode selecionar várias pastas da lista.
 
 Além disso, é possível navegar até a página de detalhes da pasta e selecionar **[!UICONTROL Formulário de metadados mapeados pelo sistema]** no campo **[!UICONTROL Formulários de metadados]** para remover o formulário de metadados atribuído de uma pasta.
+
+### Trabalhar com o componente Link no formulário de metadados {#link-component-metadata-form}
+
+O componente de link é usado para habilitar URLs externos, incluindo links de armazenamento, informações de direitos autorais, formulários de contato e assim por diante. Para usar o componente de link em formulário de metadados, você precisa [configurar o formulário de metadados](#metadata-forms).
+
+Siga as etapas abaixo para usar o componente Link no formulário de metadados:
+
+1. Vá para a página de detalhes do ativo e navegue até **[!UICONTROL URL do link]**.
+1. Adicione o URL que deseja usar para redirecionar o ativo selecionado.
+1. Clique em **[!UICONTROL Adicionar link]**. Execute uma das seguintes ações:
+   * Clique em ![ícone de cópia](assets/do-not-localize/copy.svg) para copiar a URL.
+   * Clique em ![ícone de edição](assets/do-not-localize/edit.svg) para editar a URL.
+1. Clique em **[!UICONTROL Salvar]** para salvar as alterações.
 
 ## Próximas etapas {#next-steps}
 
