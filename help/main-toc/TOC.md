@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 6895addee405a33f26b66a436ca7aff99e7ea0aa
+source-git-commit: 9bfca6d9868629c49faa5278eb5e972ca8688dc7
 workflow-type: tm+mt
-source-wordcount: '5914'
+source-wordcount: '5917'
 ht-degree: 71%
 
 ---
@@ -476,7 +476,7 @@ ht-degree: 71%
    + [Visão geral dos microsserviços de ativos](/help/assets/asset-microservices-overview.md)
    + [Acessibilidade no  [!DNL Assets]](/help/assets/accessibility.md)
    + [Assets as a Cloud Service Ultimate](/help/assets/assets-ultimate-overview.md)
-   + [Ativar Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
+   + [Ativar o Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Usuários do Assets Collaborator](/help/assets/assets-collaborator-users.md)
    + Gerenciar ativos digitais {#manage}
@@ -639,6 +639,7 @@ ht-degree: 71%
       + [Editar vídeos](/help/assets/edit-videos-assets-view.md)
       + [Exibir e gerenciar representações](/help/assets/renditions.md)
       + [Gerenciar metadados de ativos](/help/assets/metadata-assets-view.md)
+      + [Edição de metadados em massa](/help/assets/bulk-metadata-edit.md)
       + [Compartilhar ativos](/help/assets/share-links-for-assets-view.md)
       + [Gerenciar coleções](/help/assets/manage-collections-assets-view.md)
       + [Monitoramento de ativos, pastas e coleções](/help/assets/manage-notifications-assets-view.md)
@@ -868,7 +869,7 @@ ht-degree: 71%
    + Resolução de problemas {#troubleshooting-aem-forms-cloud-service}
       + [Instalação e configuração](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Armazenamento em cache do Dispatcher e CDN](/help/forms/troubleshooting-caching-performance.md)
-      + [Reiniciar o SDK do AEM](/help/forms/restart-aem-sdk.md)
+      + [Reiniciar o AEM SDK](/help/forms/restart-aem-sdk.md)
       + [Solução de falhas de criação do Forms](/help/forms/form-creation-failing.md)
 + Screens {#screens-as-cloud-service}
    + Visão geral do Screens as a Cloud Service {#overview}
