@@ -4,10 +4,10 @@ description: Saiba mais sobre o impacto da descontinuação de credenciais JWT n
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 0%
+source-wordcount: '769'
+ht-degree: 1%
 
 ---
 
@@ -59,3 +59,35 @@ Os clientes criam projetos do Adobe Developer Console para que possam invocar [A
 Quando o Cloud Manager provisiona ambientes do AEM as a Cloud Service, ele gera automaticamente um projeto do Adobe Developer Console com credenciais JWT. Esse projeto está marcado como somente leitura, como ilustrado na captura de tela abaixo. Os clientes não podem e não devem tentar migrar esses projetos para credenciais de servidor para servidor do OAuth. Em vez disso, o Adobe migrará esses projetos por conta própria, antes que as credenciais deixem de ser utilizáveis.
 
 ![Projetos gerados automaticamente](/help/security/assets/jwt-deprecation-autogen-projects.png)
+
+## Perguntas frequentes sobre projetos gerados automaticamente {#autogen-projects-faqs}
+
+Esta seção fornece respostas às perguntas mais frequentes sobre a descontinuação de credenciais JWT para projetos gerados automaticamente no AEM as a Cloud Service.
+
+**Como faço para quais projetos são gerados automaticamente?**
+Navegue até o Adobe Developer Console | seção Projetos.  Os projetos gerados automaticamente pelo AEM as a Cloud Service terão um ícone de bloqueio com identificador &quot;Gerado automaticamente&quot;.  Os projetos gerados automaticamente seguem o formato AEM-p#####-e###### e são criados pelo usuário da conta técnica.
+
+<img width="439" alt="imagem" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
+
+
+**E se encontrarmos problemas com nossos projetos gerados automaticamente?**
+
+Entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+
+**Devo migrar nossos projetos gerados automaticamente?**
+
+Nenhuma ação é necessária, pois o Adobe migrará gerado automaticamente em seu nome para ambientes com AEM versão 17258 (agosto de 2024) e superior.
+
+**Quais são as linhas de tempo para migração de projetos gerados automaticamente?**
+
+O Adobe iniciará uma abordagem de migração em fases no primeiro trimestre de 2025, começando com ambientes de desenvolvimento.
+
+**Como nossa instância do AEM as a Cloud Service será afetada se tivermos uma versão do AEM mais antiga que a versão do AEM 17258 (24 de agosto)?**
+
+As integrações de projeto geradas automaticamente deixarão de funcionar se não forem migradas para o OAuth até junho de 2025.
+
+Para garantir uma transição sem problemas, os clientes devem entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) imediatamente e iniciar o processo de atualização para a [versão mais recente do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Isso proporcionará tempo suficiente para testes de regressão e permitirá que o Adobe gerencie a migração de projetos com eficiência.
+
+**Posso atualizar para uma versão do OAuth com suporte sem atualizar minha versão do AEM as a Cloud Service AEM?**
+
+Não. Para garantir uma transição sem problemas, os clientes devem entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) imediatamente e iniciar o processo de atualização para a [versão mais recente do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Isso proporcionará tempo suficiente para testes de regressão e permitirá que o Adobe gerencie a migração de projetos com eficiência.
