@@ -4,10 +4,10 @@ description: Saiba mais sobre o impacto da descontinuação de credenciais JWT n
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: d3c00c33925a23ad5b1080c1e864cfdb5a8d1c1b
+source-git-commit: 18e9daad8bec6749d493994264792c0cd3b55d15
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 1%
+source-wordcount: '770'
+ht-degree: 0%
 
 ---
 
@@ -65,10 +65,10 @@ Quando o Cloud Manager provisiona ambientes do AEM as a Cloud Service, ele gera 
 Esta seção fornece respostas às perguntas mais frequentes sobre a descontinuação de credenciais JWT para projetos gerados automaticamente no AEM as a Cloud Service.
 
 **Como faço para quais projetos são gerados automaticamente?**
+
 Navegue até o Adobe Developer Console | seção Projetos.  Os projetos gerados automaticamente pelo AEM as a Cloud Service terão um ícone de bloqueio com identificador &quot;Gerado automaticamente&quot;.  Os projetos gerados automaticamente seguem o formato AEM-p#####-e###### e são criados pelo usuário da conta técnica.
 
-<img width="439" alt="imagem" src="https://git.corp.adobe.com/storage/user/16149/files/6b20a8a3-3711-4741-8f2c-ec5e36fe97cc">
-
+![Projetos Gerados Automaticamente](/help/security/assets/jwt-alert.png)
 
 **E se encontrarmos problemas com nossos projetos gerados automaticamente?**
 
