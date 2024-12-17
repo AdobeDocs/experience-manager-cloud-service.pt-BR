@@ -2,7 +2,8 @@
 title: Renomear e renomear ativos em massa em  [!DNL Assets view]
 description: Saiba como renomear ativos em massa usando a nova interface do usuário do Assets (visualização do Assets). Ele oferece a capacidade de renomear vários ativos de uma só vez.
 role: User
-source-git-commit: 8a62db7ecae8b90e05939b031344c226000bb304
+exl-id: e041811b-0246-408f-9246-248da55f66a1
+source-git-commit: 97be9d7eafe5baa55c1314ca431cb0fabca06b5e
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 15%
@@ -50,7 +51,7 @@ Veja a seguir alguns exemplos de como usar a IA para renomear ativos em massa co
 * Remova o prefixo e o sufixo, apenas mantenha a parte do meio do nome.
 * Prefixe os arquivos com 001, 002, etc. e traduzir para inglês.
 
-  >[!VIDEO](https://video.tv.adobe.com/v/3440975)
+>[!VIDEO](https://video.tv.adobe.com/v/3440975)
 
 >[!NOTE]
 >
