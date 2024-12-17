@@ -2,9 +2,9 @@
 title: Aprovar ativos para o Content Hub
 description: Saiba como aprovar ativos no Assets as a Cloud Service para disponibilizá-los no Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 95bf82ceead9d06bc0f5720f1a6af945afc27622
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '837'
 ht-degree: 2%
 
 ---
@@ -84,6 +84,12 @@ Siga estas etapas para automatizar a aprovação de ativos recém-assimilados em
    1. Altere o **[!UICONTROL Rótulo do campo]** para _Assets Aprovado_.
    1. Atualize o **[!UICONTROL Mapear para a propriedade]** para _./jcr:content/metadata/dam:status_.
    1. Altere o valor padrão para _aprovado_.
+
+1. Semelhante à Etapa 6, arraste um **[!UICONTROL Campo de Texto de Linha Única]** da seção **[!UICONTROL Criar Formulário]** no lado direito para a seção Metadados no formulário.
+1. Clique no campo recém-adicionado e faça as seguintes atualizações no painel **[!UICONTROL Configurações]**:
+   1. Altere o **[!UICONTROL Rótulo do campo]** para _Destino da Ativação_.
+   1. Atualize o **[!UICONTROL Mapear para a propriedade]** para _./jcr:content/metadata/dam:ativationTarget_.
+   1. Altere o valor padrão para _contentub_.
 
 1. Clique em **[!UICONTROL Salvar]**.
 1. Na página **[!UICONTROL Perfis de metadados]**, selecione o perfil de metadados recém-criado.
