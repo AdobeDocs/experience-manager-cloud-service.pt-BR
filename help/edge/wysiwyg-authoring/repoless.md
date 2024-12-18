@@ -3,13 +3,13 @@ title: Reutilizar código entre sites
 description: Se você tiver muitos sites semelhantes que parecem e se comportam principalmente da mesma forma, mas têm conteúdo diferente, saiba como compartilhar código em vários sites em um modelo de resposta.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
+source-git-commit: 7b37f3d387f0200531fe12cde649b978f98d5d49
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
-
 
 # Reutilizar código entre sites {#repoless}
 
@@ -45,7 +45,7 @@ Há várias etapas para ativar a funcionalidade de resposta para o seu projeto.
 
 1. [Recuperar token de acesso](#access-token)
 1. [Definir serviço de configuração](#config-service)
-1. [Definir controle de acesso](#access-control)
+1. [Adicionar configuração de site e conta técnica](#access-control)
 1. [Atualizar configuração do AEM](#update-aem)
 1. [Autenticar site](#authenticate-site)
 
@@ -126,9 +126,9 @@ Entre em contato com o Adobe pelo canal de Slack do projeto ou gere um problema 
 
 Depois que a configuração pública for criada, você poderá acessá-la por meio de uma URL semelhante a `https://main--<your-aem-project>--<your-github-org>.aem.page/config.json` para verificá-la.
 
-### Definir controle de acesso {#access-control}
+### Adicionar mapeamento de caminho para configuração do site e definir conta técnica {#access-control}
 
-Para configurar o controle de acesso, é necessário fornecer a conta técnica.
+É necessário criar uma configuração de site e adicioná-la ao mapeamento de caminho.
 
 1. Crie uma nova página na raiz do site e escolha o modelo [**Configuração**.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
    * Você pode deixar a configuração vazia apenas com as colunas `key` e `value` predefinidas. Você só precisa criá-lo.
@@ -156,28 +156,31 @@ Para configurar o controle de acesso, é necessário fornecer a conta técnica.
    ```text
    curl 'https://main--<your-aem-project>--<your-github-org>.aem.live/config.json'
    ```
-1. No navegador, agora é possível recuperar a conta técnica na resposta do link a seguir.
+
+Depois que a configuração do site for mapeada, você poderá configurar o controle de acesso definindo sua conta técnica para que ela tenha privilégios para publicar.
+
+1. No navegador, recupere a conta técnica na resposta do link a seguir.
 
    ```text
    https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
    ```
 
-A resposta será semelhante ao mostrado a seguir.
+1. A resposta será semelhante ao mostrado a seguir.
 
-```json
-{
-  "total": 1,
-  "offset": 0,
-  "limit": 1,
-  "data": [
-    {
-      "key": "admin.role.publish",
-      "value": "<tech-account-id>@techacct.adobe.com"
-    }
-  ],
-  ":type": "sheet"
-}
-```
+   ```json
+   {
+     "total": 1,
+     "offset": 0,
+     "limit": 1,
+     "data": [
+       {
+         "key": "admin.role.publish",
+         "value": "<tech-account-id>@techacct.adobe.com"
+       }
+     ],
+     ":type": "sheet"
+   }
+   ```
 
 1. Defina a conta técnica em sua configuração com um comando cURL semelhante ao seguinte.
 
