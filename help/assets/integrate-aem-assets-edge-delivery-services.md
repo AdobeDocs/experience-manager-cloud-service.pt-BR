@@ -2,9 +2,9 @@
 title: Integrar o AEM Assets durante a criação de conteúdo para Edge Delivery Services
 description: Saiba como integrar o AEM Assets com o Edge Delivery Services. Essa integração permite integrar o AEM Assets ao Microsoft Word e Google Docs, integrar o AEM Assets ao Universal Editor, integrar o Dynamic Media aos recursos OpenAPI com o Universal Editor e integrar o Dynamic Media aos recursos OpenAPI com o Microsoft Word e o Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: def807c2bb1b2fe337879b3abe2c0a5d1b5f1dea
+source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,11 @@ Para usar a referência do ativo, você deve ter:
 * Direito a um ambiente de Cloud Service Assets em que o Dynamic Media com recursos de API aberta esteja habilitado.
 * Uma licença do Dynamic Media.
 * O plug-in do AEM Assets sidekick está habilitado com a opção copiar referência para ativos de imagem. Para obter mais detalhes, consulte [isto](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) para Criação Baseada em Documento e consulte [isto](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) para criação baseada em Editor Universal.
-* Assets aprovados. O Assets aprovado tem `dam:status=Approved` por meio das ações de back-end ou interface do Cloud Service do Assets.
+* Assets aprovados. Os ativos aprovados têm `dam:status=Approved` por meio das ações de back-end ou interface do Assets Cloud Service.
 
 ### Usar ativos fornecidos usando o Dynamic Media com recursos OpenAPI{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
 
-Para usar ativos entregues usando o Dynamic Media com recursos OpenAPI ao criar conteúdo, consulte:
+Para usar ativos entregues usando o Dynamic Media com recursos OpenAPI durante a criação de conteúdo, consulte:
 
 * [Usando referências de imagem](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-image-references-when-authoring-content)
 * [Usando referências de vídeo](https://www.aem.live/docs/aem-assets-sidekick-plugin#using-video-references-when-authoring-content)
