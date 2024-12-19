@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4e9d49aef85f79e99894153237cc58a75458b1e5
+source-git-commit: 9388187a14129420d17d5ccdadd20313f123d870
 workflow-type: tm+mt
-source-wordcount: '5929'
+source-wordcount: '5938'
 ht-degree: 71%
 
 ---
@@ -755,7 +755,8 @@ ht-degree: 71%
             + [Configurar a ação de envio Enviar para o Ponto de extremidade REST para o Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [Configurar a ação de envio Enviar email para um formulário adaptável](/help/forms/configure-submit-action-send-email.md)
             + [Usar o Google reCAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms-core-components.md)
-            + [Usar hCAPTCHA em componentes principais de um formulário adaptável](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Usar o hCaptcha em componentes principais de um formulário adaptável](/help/forms/integrate-adaptive-forms-hcaptcha-core-components.md)
+            + [Usar o Captcha com estrutura giratória em um formulário adaptável de componentes principais](/help/forms/integrate-adaptive-forms-turnstile-core-components.md)
             + [Adicionar manipulador de erros personalizado em um formulário adaptável](/help/forms/add-custom-error-handler-adaptive-forms-core-components.md)
             + [Adicione uma localidade para o Forms adaptável com base nos Componentes principais](/help/forms/supporting-new-language-localization-core-components.md)
             + [Criar esquema JSON para um formulário adaptável (componentes principais)](/help/forms/adaptive-form-core-components-json-schema-form-model.md)
