@@ -2,9 +2,9 @@
 title: Migração de grupo
 description: Visão geral da migração de grupo no AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 7e7b311d425ae6cdee9eb9311c0a12af84f81096
+source-git-commit: bb041cf13d5e82fc4135f0849b03eeeed9a5d009
 workflow-type: tm+mt
-source-wordcount: '1447'
+source-wordcount: '1476'
 ht-degree: 4%
 
 ---
@@ -37,16 +37,16 @@ Uma mudança importante do AEM as a Cloud Service é o uso totalmente integrado 
 
 A ferramenta Transferência de conteúdo e o Cloud Acceleration Manager migrarão todos os grupos associados ao conteúdo que está sendo migrado para o sistema de nuvem. A ferramenta Transferência de conteúdo faz isso copiando todos os grupos do sistema AEM de origem durante o processo de extração. A assimilação de CAM seleciona e migra apenas determinados grupos:
 
+* Se um grupo estiver em uma política de ACL ou CUG do conteúdo migrado, esse grupo será migrado, com algumas exceções listadas abaixo.
 * Há vários grupos que estão integrados e já estão presentes no sistema de nuvem de destino; eles nunca são migrados.
-* Os grupos de membros diretos de qualquer grupo integrado direta ou indiretamente referenciado em uma política de ACL ou CUG de conteúdo migrado serão migrados, para garantir que os usuários que são membros diretos ou indiretos desses grupos mantenham seu acesso ao conteúdo migrado.
-* Se um grupo estiver em uma política de ACL ou CUG do conteúdo migrado, esse grupo será migrado.
+   * Alguns grupos internos podem incluir grupos de membros _não_ incorporados; todos os grupos de membros (membros diretos ou membros de membros, etc.) referenciados em uma política ACL ou CUG de conteúdo migrado serão migrados, para garantir que os usuários que são membros desses grupos (direta ou indiretamente) mantenham seu acesso ao conteúdo migrado.
 * Outros grupos, como aqueles não encontrados em uma política de ACL ou CUG, aqueles que já estão no sistema de destino e aqueles com dados restritos por exclusividade que já estão no sistema de destino, não serão migrados.
 
 Observe que o caminho registrado/relatado para um grupo é somente o primeiro caminho que acionou a migração desse grupo, e esse grupo também pode estar em outros caminhos de conteúdo.
 
 A maioria dos grupos migrados é configurada para ser gerenciada pelo IMS.  Isso significa que um grupo no IMS com o mesmo nome será vinculado ao grupo no AEM, e qualquer usuário do IMS no grupo IMS se tornará usuário do AEM e membros do grupo no AEM.  Isso permite que esses usuários tenham acesso ao conteúdo de acordo com as políticas de ACLs ou CUGs do grupo.
 
-Observe que os grupos migrados não são mais considerados &quot;grupos locais&quot;; são grupos IMS e devem ser recriados no IMS para que possam ser sincronizados entre o AEM e o IMS.  Os grupos podem ser criados no IMS via Admin Console, entre outros métodos, individualmente ou em massa.  Consulte [Gerenciar grupos de usuários](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) para obter detalhes sobre como criar grupos individualmente ou em massa no Admin Console.
+Observe que os grupos migrados não são mais considerados &quot;grupos locais&quot; de AEM; são grupos prontos para IMS no AEM, embora ainda não existam no IMS.  Eles devem ser recriados separadamente no IMS para que possam ser sincronizados entre AEM e IMS.  Os grupos podem ser criados no IMS via Admin Console, entre outros métodos, individualmente ou em massa.  Consulte [Gerenciar grupos de usuários](https://helpx.adobe.com/ca/enterprise/using/user-groups.html) para obter detalhes sobre como criar grupos individualmente ou em massa no Admin Console.
 
 A exceção para essa configuração IMS é com grupos criados pelas Coleções Assets. Quando uma coleção é criada no AEM, os grupos são criados para acessar essa coleção; esses grupos são migrados para o sistema de nuvem, mas não são configurados para serem gerenciados pelo IMS.  Para adicionar usuários do IMS a esses grupos, eles devem ser adicionados na página Propriedades do grupo na interface do usuário do Assets, individual ou coletivamente, como parte de outro grupo IMS.
 
