@@ -4,7 +4,8 @@ description: Melhore a segurança dos formulários com o serviço de Tornição 
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 819c376671ee141e1bcf885a22f161b327ce2c15
+exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
+source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 13%
@@ -91,13 +92,13 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
    * **[!UICONTROL Configurações]:** Selecione uma Configuração na Nuvem configurada para o serviço Captcha de Borboleta.
      >[!NOTE]
      >* Você pode ter várias configurações de nuvem no seu ambiente para uma finalidade semelhante. Então, escolha o serviço com cuidado. Se nenhum serviço estiver listado, consulte a seção [Configurar Turnstile](#steps-to-configure-hcaptcha) para saber como criar um Contêiner de Configuração para conectar seu ambiente do AEM Forms com o serviço Turnstile.
+
    * **[!UICONTROL Validação]:** Forneça a validação de Captcha na forma de uma mensagem de erro:
+
       * **Mensagem de Erro:** Forneça a mensagem de erro a ser exibida ao usuário quando o envio do Captcha falhar.
         >[!NOTE]
         >* Uma mensagem de erro será exibida somente se o CAPTCHA for preenchido no lado do cliente.
-
-
-1. Selecione **[!UICONTROL Concluído]**.
+1. Clique em **[!UICONTROL Concluído]**.
 
 
 Agora, somente formulários legítimos, em que o preenchimento de formulário apaga com êxito o desafio imposto pelo serviço de Borboleta, são permitidos para o envio do formulário.
