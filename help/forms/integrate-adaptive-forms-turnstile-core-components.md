@@ -5,7 +5,7 @@ topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: 709b3381eedefe7619cb961f345f202cadf512f3
+source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 13%
@@ -98,6 +98,7 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
       * **Mensagem de Erro:** Forneça a mensagem de erro a ser exibida ao usuário quando o envio do Captcha falhar.
         >[!NOTE]
         >* Uma mensagem de erro será exibida somente se o CAPTCHA for preenchido no lado do cliente.
+
 1. Clique em **[!UICONTROL Concluído]**.
 
 
