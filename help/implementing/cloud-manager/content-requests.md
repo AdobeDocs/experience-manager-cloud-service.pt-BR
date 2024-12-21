@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: 18d19acfedce57a3ae52020d36785689b715ed08
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1249'
 ht-degree: 9%
 
 ---
@@ -55,7 +55,7 @@ Há regras em vigor para excluir bots conhecidos, incluindo serviços conhecidos
 | Tipo de solicitação | Solicitação de conteúdo | Descrição |
 | --- | --- | --- |
 | Código HTTP 100-299 | Incluído | Solicitações regulares que entregam todo o conteúdo ou parte dele. |
-| Bibliotecas HTTP para automação | Incluído | Exemplos:<br>· Amazon CloudFront<br>· Apache Http Client<br>· Cliente HTTP Assíncrono<br>· Axios<br>· Azureus<br>· Curl<br>· Busca de Nó GitHub<br>· Guzzle<br>· Go-http-client<br>· Chrome Headless<br>· Cliente Java™<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Solicitações Python<br>· Rede do Reator<br>6}· Wget<br>· WinHTTP<br>· HTTP<br>· Busca de Nós do GitHub<br>· Netty do Reator |
+| Bibliotecas HTTP para automação | Incluído | Exemplos:<br>· Amazon CloudFront<br>· Apache Http Client<br>· Cliente HTTP Assíncrono<br>· Axios<br>· Azureus<br>· Curl<br>· Busca de Nó GitHub<br>· Guzzle<br>· Go-http-client<br>· Chrome Headless<br>· Cliente Java™<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Solicitações Python<br>· Reator Netty<br>· Wget<br>· WinHTTP<br>· HTTP<br>· Busca de Nó GitHub<br>· Netty de Reator |
 | Ferramentas de monitoramento e verificação de integridade | Incluído | Configurado pelo cliente para monitorar um determinado aspecto do site. Por exemplo, disponibilidade ou desempenho real do usuário. Se eles estiverem direcionando pontos de extremidade específicos como `/system/probes/health` para verificações de integridade, o Adobe recomenda usar o ponto de extremidade `/system/probes/health` e não as páginas de HTML reais do site. [Veja abaixo](#excluded-content-request)<br>Exemplos:<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatível; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
 | `<link rel="prefetch">` solicitações | Incluído | Para aumentar a velocidade de carregamento da próxima página, os clientes podem fazer com que o navegador carregue um conjunto de páginas antes que o usuário clique no link, de modo que já estejam no cache. *Mente: essa abordagem aumenta significativamente o tráfego*, dependendo de quantas dessas páginas são buscadas previamente. |
 | Tráfego que bloqueia relatórios do Adobe Analytics ou Google Analytics | Incluído | É mais comum que os visitantes de sites tenham software de privacidade instalado (bloqueadores de anúncios e assim por diante) que afetam a precisão do Google Analytics ou do Adobe Analytics. O AEM as a Cloud Service conta as solicitações no primeiro ponto de entrada na infraestrutura operada pelo Adobe e não no lado do cliente. |
@@ -79,4 +79,3 @@ Consulte também [Painel de licenças](/help/implementing/cloud-manager/license-
 | Excluir chamadas de Commerce integration framework | Excluído | As solicitações feitas ao AEM que são encaminhadas para o Commerce integration framework—a URL começa com `/api/graphql`—para evitar dupla contagem, elas não são faturáveis para o Cloud Service. |
 | Excluir `manifest.json` | Excluído | O manifesto não é uma chamada de API. Está aqui para fornecer informações sobre como instalar sites da Web em um desktop ou telefone celular. O Adobe não deve contar a solicitação JSON para `/etc.clientlibs/*/manifest.json` |
 | Excluir `favicon.ico` | Excluído | Embora o conteúdo retornado não deva ser HTML ou JSON, alguns cenários, como fluxos de autenticação SAML, foram observados para retornar favicons como HTML. Como resultado, os favicons são explicitamente excluídos da contagem. |
-| Proxy CDN para um back-end diferente | Excluído | As solicitações roteadas para diferentes back-ends não AEM usando a técnica [Seletores de Origem CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md#origin-selectors) são excluídas, pois não atingem AEM. |
