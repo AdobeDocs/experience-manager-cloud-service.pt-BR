@@ -2,7 +2,7 @@
 title: Integrar o AEM Assets durante a criação de conteúdo para Edge Delivery Services
 description: Saiba como integrar o AEM Assets com o Edge Delivery Services. Essa integração permite integrar o AEM Assets ao Microsoft Word e Google Docs, integrar o AEM Assets ao Universal Editor, integrar o Dynamic Media aos recursos OpenAPI com o Universal Editor e integrar o Dynamic Media aos recursos OpenAPI com o Microsoft Word e o Google Docs.
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 9e7701152e1da4afc73d3d5ba271b04df2054397
+source-git-commit: 3a758af4d17d761b8e3e4a77ea3cda6a4b6d0bb7
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -84,3 +84,4 @@ Configure o Editor universal para integrar com o AEM Assets. Essa integração p
 
 * Consulte [Configuração no Site do Edge Delivery](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#configuration-in-edge-delivery-site) para adicionar uma função personalizada do seletor de ativos no Editor Universal. O seletor de ativos personalizado permite inserir ativos no conteúdo do Editor universal diretamente.
 * Consulte [Visão geral da extensão](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) para saber como acessar o AEM Assets e inserir os ativos durante a criação no Universal Editor.
+
