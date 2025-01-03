@@ -4,10 +4,10 @@ description: Saiba como usar a CDN gerenciada pelo AEM e como apontar sua própr
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: c31441baa6952d92be4446f9035591b784091324
+source-git-commit: 6600f5c1861e496ae8ee3b6d631ed8c033c4b7ef
 workflow-type: tm+mt
-source-wordcount: '1602'
-ht-degree: 10%
+source-wordcount: '1745'
+ht-degree: 9%
 
 ---
 
@@ -23,12 +23,12 @@ O AEM as a Cloud Service vem com uma CDN integrada, projetada para reduzir a lat
 
 A CDN gerenciada por AEM atende à maioria das necessidades de desempenho e segurança dos clientes. Para o nível de publicação, os clientes podem optar por rotear o tráfego por meio de sua própria CDN, que devem gerenciar. Essa opção está disponível caso a caso, principalmente quando os clientes têm integrações herdadas existentes com um provedor de CDN que são difíceis de substituir.
 
-Os clientes que desejam publicar no nível do Edge Delivery Services podem aproveitar a CDN gerenciada pelo Adobe. Consulte [CDN gerenciada por Adobe](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
+Os clientes que desejam publicar no nível do Edge Delivery Services podem aproveitar a CDN gerenciada pelo Adobe. Consulte [CDN Gerenciado por Adobe](#aem-managed-cdn). <!-- CQDOC-21758, 5b -->
 
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
-## CDN gerenciada pela Adobe {#aem-managed-cdn}
+## CDN gerenciado por Adobe {#aem-managed-cdn}
 
 <!-- CQDOC-21758, 5a -->
 
@@ -120,7 +120,7 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Ao usar seu próprio CDN, não é necessário instalar domínios e certificados no Cloud Manager. O roteamento no CDN Adobe é feito usando o domínio padrão `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, que deve ser enviado no cabeçalho da solicitação `Host`. Substituir o cabeçalho da solicitação `Host` por um nome de domínio personalizado pode rotear a solicitação incorretamente por meio da CDN Adobe.
+>Ao usar seu próprio CDN, não é necessário instalar domínios e certificados no Cloud Manager. O roteamento no CDN Adobe é feito usando o domínio padrão `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`, que deve ser enviado no cabeçalho da solicitação `Host`. Substituir o cabeçalho da solicitação `Host` por um nome de domínio personalizado pode rotear a solicitação incorretamente por meio do CDN Adobe ou resultar em erros 421.
 
 >[!NOTE]
 >
@@ -133,6 +133,30 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 O salto extra entre o CDN do cliente e o CDN AEM só será necessário se houver uma falha de cache. Ao usar as estratégias de otimização de cache descritas neste artigo, a adição de uma CDN do cliente deve apresentar apenas uma latência insignificante.
 
 Essa configuração de CDN do cliente tem suporte para o nível de publicação, mas não na frente do nível de criação.
+
+### Configuração de depuração
+
+Para depurar uma configuração BYOCDN, use o cabeçalho `x-aem-debug` com um valor de `edge=true`. Por exemplo:
+
+No Linux®:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" -H "x-aem-debug: edge=true"
+```
+
+No Windows:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -v --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>" --header "x-aem-debug: edge=true"
+```
+
+Isso refletirá determinadas propriedades usadas na solicitação no cabeçalho de resposta `x-aem-debug`. Por exemplo:
+
+```
+x-aem-debug: byocdn=true,edge=true,edge-auth=edge-auth,edge-key=edgeKey1,X-AEM-Edge-Key=set,host=publish-p87058-e257304-cmstg.adobeaemcloud.com,x-forwarded-host=wknd.site,adobe_unlocked_byocdn=true
+```
+
+Usando este, é possível verificar, por exemplo, os valores de host, se a autenticação de borda estiver configurada, bem como o valor do cabeçalho x-forwarded-host, se uma chave de borda estiver definida e qual chave será usada (caso uma chave corresponda).
 
 ### Configurações de exemplo de fornecedor de CDN {#sample-configurations}
 
@@ -160,6 +184,11 @@ As configurações de exemplo fornecidas mostram as configurações básicas nec
 **Redirecionamento para o ponto de extremidade do serviço de publicação**
 
 Quando uma solicitação recebe uma resposta 403 proibida, significa que alguns cabeçalhos obrigatórios estão ausentes na solicitação. Uma causa comum para isso é que a CDN está gerenciando o tráfego de domínio apex e `www`, mas não está adicionando o cabeçalho correto para o domínio `www`. Esse problema pode ser solucionado verificando os logs de CDN do AEM as a Cloud Service e os cabeçalhos de solicitação necessários.
+
+**Erro 421 redirecionamento incorreto**
+
+Quando uma solicitação recebe um erro 421 com um corpo ao redor de `Requested host does not match any Subject Alternative Names (SANs) on TLS certificate`, ela indica que o conjunto HTTP `Host` não corresponde a nenhum host nos certificados do host. Isso geralmente indica que `Host` ou a configuração SNI está errada. Certifique-se de que as configurações de `Host` e de SNI apontem para publish-p&lt;ID_DO_PROGRAMA>-e<ENV-ID>Host do .adobeaemcloud.com.
+
 
 **Muitos redirecionamentos Loop**
 

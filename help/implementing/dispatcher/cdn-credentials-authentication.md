@@ -4,9 +4,9 @@ description: Saiba como configurar credenciais e autenticação de CDN declarand
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 37d399c63ae49ac201a01027069b25720b7550b9
+source-git-commit: d6484393410d32f348648e13ad176ef5136752f2
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,11 @@ Há uma seção sobre como [girar chaves](#rotating-secrets), o que é uma boa p
 
 Conforme descrito na página [CDN no AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN), os clientes podem optar por rotear o tráfego por meio de sua própria CDN, que é chamada de CDN do cliente (também chamada às vezes de BYOCDN).
 
-Como parte da configuração, o CDN do Adobe e o CDN do cliente devem concordar com um valor do Cabeçalho HTTP `X-AEM-Edge-Key`. Esse valor é definido em cada solicitação, no CDN do cliente, antes de ser roteado para o CDN do Adobe, que então valida se o valor está conforme o esperado, para que possa confiar em outros cabeçalhos HTTP, incluindo aqueles que ajudam a rotear a solicitação para a origem AEM apropriada.
+Como parte da configuração, o CDN do Adobe e o CDN do cliente devem concordar com um valor do Cabeçalho HTTP `X-AEM-Edge-Key`. Esse valor é definido em cada solicitação no CDN do cliente, antes de ser roteado para o CDN do Adobe, que então valida se o valor está conforme o esperado, para que possa confiar em outros cabeçalhos HTTP, incluindo aqueles que ajudam a rotear a solicitação para a origem AEM apropriada.
 
 O valor *X-AEM-Edge-Key* é referenciado pelas propriedades `edgeKey1` e `edgeKey2` em um arquivo chamado `cdn.yaml` ou similar, em algum lugar sob uma pasta `config` de nível superior. Leia [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#folder-structure) para obter detalhes sobre a estrutura de pastas e como implantar a configuração.  A sintaxe é descrita no exemplo abaixo.
+
+Para obter mais informações sobre depuração e erros comuns, verifique [Erros Comuns](/help/implementing/dispatcher/cdn.md#common-errors).
 
 >[!WARNING]
 >O acesso direto sem uma X-AEM-Edge-Key correta será negado para todas as solicitações que correspondam à condição (na amostra abaixo, isso significa todas as solicitações para o nível de publicação). Se você precisar introduzir a autenticação gradualmente, consulte a seção [Migração segura para reduzir o risco de tráfego bloqueado](#migrating-safely).
@@ -147,7 +149,7 @@ As propriedades adicionais incluem:
    * name - uma cadeia de caracteres descritiva.
    * tipo - deve ser expurgado.
    * purgeKey1 - o valor deve fazer referência a uma [Variável de ambiente do tipo secreto do Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars). Para o campo Serviço Aplicado, selecione Todos. Recomenda-se que o valor (por exemplo, `${{CDN_PURGEKEY_031224}}`) reflita o dia em que foi adicionado.
-   * purgeKey2 - usado para a rotação de segredos, que é descrita na [seção de rotação de segredos](#rotating-secrets) abaixo. Pelo menos um de `purgeKey1` e `purgeKey2` deve ser declarado.
+   * purgeKey2 - usado para a rotação de segredos, que é descrita na seção [segredos em rotação](#rotating-secrets) abaixo. Pelo menos um de `purgeKey1` e `purgeKey2` deve ser declarado.
 * Regras: permite declarar quais dos autenticadores devem ser usados e se são para o nível de publicação e/ou pré-visualização.  Inclui:
    * nome - uma sequência descritiva
    * when - uma condição que determina quando a regra deve ser avaliada, de acordo com a sintaxe no artigo [Regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md). Normalmente, incluirá uma comparação do nível atual (por exemplo, publicar).
@@ -202,7 +204,7 @@ Além disso, a sintaxe inclui:
    * nome - uma sequência descritiva
    * tipo - deve ser `basic`
    * uma matriz de até 10 credenciais, cada uma incluindo os seguintes pares de nome/valor, que os usuários finais podem inserir na caixa de diálogo de autenticação básica:
-      * user - o nome do usuário
+      * usuário - o nome do usuário.
       * senha - seu valor deve fazer referência a uma [variável de ambiente do tipo secreto do Cloud Manager](/help/operations/config-pipeline.md#secret-env-vars), com **Todos** selecionados como o campo de serviço.
 * Regras: permite declarar quais dos autenticadores devem ser usados e quais recursos devem ser protegidos. Cada regra inclui:
    * nome - uma sequência descritiva
