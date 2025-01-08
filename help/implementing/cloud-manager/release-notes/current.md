@@ -4,10 +4,10 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2024.12.0 no AEM as
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 8e89adcaadbc53c3d525d57ef452f671137a619f
+source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 36%
+source-wordcount: '700'
+ht-degree: 39%
 
 ---
 
@@ -23,10 +23,14 @@ Saiba mais sobre o lançamento do Cloud Manager 2024.12.0 no AEM (Adobe Experien
 
 A data de lançamento do Cloud Manager 2024.12.0 no AEM as a Cloud Service é quinta-feira, 5 de dezembro de 2024.
 
-A próxima versão está planejada para sexta-feira, 23 de janeiro de 2025.
+A próxima versão está planejada para 23 de janeiro de 2025.
 
 
 ## Novidades {#what-is-new}
+
+* **Regras de qualidade do código:** a partir de quinta-feira, 13 de fevereiro de 2025, a etapa de qualidade do código Cloud Manager agora usa uma versão atualizada do SonarQube 9.9.5.90363.
+
+  As regras atualizadas, disponíveis para o Cloud Manager no AEM as a Cloud Service em [este link](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules), determinam as pontuações de segurança e a qualidade do código para os pipelines do Cloud Manager. Essa atualização pode afetar seus quality gates (portais de qualidade), bloqueando possivelmente as implantações.
 
 <!-- * **Java 21 support:** Customers can now optionally build with Java 17 or Java 21, benefiting from performance improvements and new language features. See [Build environment](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) for configuration steps, including updating your Maven project description, and certain library versions. When the build version is set to Java 17 or Java 21, the runtime defaults to Java 21.
 
@@ -59,7 +63,7 @@ Faça parte do programa de adoção antecipada do Cloud Manager e aproveite a op
 
 O recurso **Traga seu próprio Git** foi expandido para incluir suporte para repositórios externos, como GitLab e Bitbucket. Esse novo suporte é uma adição ao suporte já existente para repositórios GitHub privados e empresariais. Ao adicionar esses novos repositórios, também é possível vinculá-los diretamente aos seus pipelines. Você pode hospedar esses repositórios em plataformas de nuvem pública ou em sua infraestrutura ou nuvem privada. Essa integração também elimina a necessidade de sincronização constante do código com o repositório da Adobe e oferece a capacidade de validar solicitações de pull antes de mesclá-las em uma ramificação principal.
 
-Os pipelines que usam repositórios externos (exceto os hospedados pelo GitHub) e o **Acionador de implantação** definidos como **Nas alterações do Git** agora são iniciados automaticamente.
+Os pipelines que usam repositórios externos (exceto os hospedados pelo GitHub) e o **Acionador de implantação** definidos como **Sobre alterações do Git** agora são iniciados automaticamente.
 
 Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
