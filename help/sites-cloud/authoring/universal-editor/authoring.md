@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: e4db952e8284dba578c6b3ac86405e9ab640e7c0
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1378'
 ht-degree: 22%
 
 ---
@@ -123,9 +123,12 @@ Dependendo das necessidades do fluxo de trabalho, talvez você queira editar o F
 ### Adicionar componentes a contêineres {#adding-components}
 
 1. Selecione um componente de contêiner na [árvore de conteúdo](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode) ou no editor.
-1. Em seguida, selecione o ícone adicionar no painel de propriedades.
 
    ![Selecionar um componente para adicionar a um contêiner](assets/ue-add-component.png)
+
+1. Em seguida, selecione o ícone adicionar no painel de propriedades.
+
+   ![Selecione o ícone adicionar](assets/add-icon.png)
 
 O componente é inserido no container e pode ser editado no editor.
 

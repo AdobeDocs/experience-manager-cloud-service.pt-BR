@@ -4,9 +4,9 @@ description: Saiba como a modelagem de conteúdo funciona para a criação de WY
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: dce661331c42ba2cc082553e1e344c73556ce18d
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2195'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ O arquivo [`component-models.json`](https://github.com/adobe-rnd/aem-boilerplate
 
 Observe que nem todos os blocos devem ter um modelo. Alguns blocos são simplesmente [containers](#container) para uma lista de filhos, onde cada filho tem seu próprio modelo.
 
-Também é necessário definir quais blocos existem e quais podem ser adicionados a uma página usando o Editor universal. O arquivo [`component-definitions.json`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) lista os componentes à medida que eles são disponibilizados pelo Editor Universal.
+Também é necessário definir quais blocos existem e quais podem ser adicionados a uma página usando o Editor universal. O arquivo [`component-definitions.json`](/help/implementing/universal-editor/component-definition.md) lista os componentes à medida que são disponibilizados pelo Editor Universal.
 
 ```json
 {

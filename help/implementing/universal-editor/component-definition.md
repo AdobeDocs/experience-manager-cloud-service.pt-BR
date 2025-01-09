@@ -1,0 +1,136 @@
+---
+title: Definição de componente
+description: Entenda o contrato JSON entre a definição do componente e o Editor universal em detalhes.
+feature: Developing
+role: Admin, Architect, Developer
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 0%
+
+---
+
+
+# Definição de componente {#component-definition}
+
+Entenda o contrato JSON entre a definição do componente e o Editor universal em detalhes.
+
+## Visão geral {#overview}
+
+O arquivo `component-definition.json` define os componentes disponíveis para seus autores de conteúdo para o projeto. Este documento explica em detalhes a finalidade desse arquivo e como o Editor universal o usa para apresentar aos autores os componentes de criação de página.
+
+>[!TIP]
+>
+>Para obter uma visão geral do processo de modelagem de conteúdo, consulte o documento [Modelagem de Conteúdo para Criação no WYSIWYG com Projetos Edge Delivery Services.](/help/edge/wysiwyg-authoring/content-modeling.md)
+
+>[!TIP]
+>
+>Não é necessário criar seu próprio arquivo `component-definition.json` do zero. O modelo de projeto que você usa para [inicializar seu projeto](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) contém um [arquivo `component-definition.json` totalmente funcional](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-definition.json) que você pode adaptar às suas necessidades.
+
+## Exemplo de definição de componente {#example}
+
+Veja a seguir um exemplo completo, mas simples de `component-definition.json`.
+
+```json
+{
+  "groups": [
+    {
+      "title": "General Components",
+      "id": "general",
+      "components": [
+        {
+          "title": "Text",
+          "id": "text",
+          "plugins": {
+            "aem": {
+              "page": {
+                "resourceType": "wknd/components/text",
+                "template": {
+                  "text": "Default Text"
+                }
+              }
+            },
+            "aem65": {
+              "page": {
+                "resourceType": "wknd/components/text",
+                "template": {
+                  "text": "Default Text"
+                }
+              }
+            }
+          }
+        },
+      }
+   ]
+}
+```
+
+## `groups` {#groups}
+
+`groups` define os grupos de componentes que o autor vê no Editor Universal ao clicar no ícone **Adicionar** no painel de propriedades do editor para [adicionar um novo componente a uma página.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) Grupos ajudam a organizar os componentes. Os grupos comuns podem ser **Componentes Gerais** e **Componentes Avançados**.
+
+* `title` define a descrição textual do grupo mostrado na interface do usuário do editor.
+* `id` identifica exclusivamente o grupo.
+
+## `components` {#components}
+
+`components` define quais componentes pertencem a um grupo.
+
+* `title` define a descrição textual do componente mostrado na interface.
+* `id` identifica exclusivamente o componente.
+   * O [modelo de componente](/help/implementing/universal-editor/field-types.md#model-structure) do mesmo `id` define os campos do componente.
+   * Por ser exclusivo, ele pode ser usado, por exemplo, em uma [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para determinar quais componentes podem ser adicionados a um contêiner.
+
+## `plugins` {#plugins}
+
+`plugins` define qual plug-in é responsável pela persistência do componente. Os plug-ins comuns incluem:
+
+* `aem` para AEM as a Cloud Service.
+* `aem5` para AEM 6.5.
+* `xwalk` para criação no AEM as a Cloud Service WYSIWYG.
+
+## `page` ou `cf` {#page-cf}
+
+Depois que o `plugin` é definido, é necessário indicar se ele está relacionado à página ou ao fragmento.
+
+* `page` indica que o componente é conteúdo na página atual.
+* `cf` indica que o componente está relacionado ao conteúdo em um [Fragmento de conteúdo.](/help/assets/content-fragments/content-fragments.md)
+
+### `page` {#page}
+
+Se o componente for conteúdo da página, você pode fornecer as seguintes informações.
+
+* `name` define um nome opcional salvo no JCR para o componente recém-criado.
+   * Apenas informativo e geralmente não exibido na interface do usuário como `title` é.
+* `resourceType` define o [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType` usado para renderizar o componente.
+* `template` define chave/valores opcionais para serem gravados automaticamente no componente recém-criado.
+   * Útil para texto explicativo, de amostra ou de espaço reservado.
+
+### `cf` {#cf}
+
+Se o componente estiver relacionado ao conteúdo em um Fragmento de conteúdo, você poderá fornecer as seguintes informações.
+
+* `name` define um nome opcional salvo no JCR para o componente recém-criado.
+   * Apenas informativo e geralmente não exibido na interface do usuário como `title` é.
+* `cfModel` define o modelo de [Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-models.md) para o componente recém-criado.
+* `cfFolder` define em qual pasta o fragmento de conteúdo será criado.
+* `title` define o título do novo fragmento de conteúdo.
+* `description` define uma descrição do novo fragmento de conteúdo.
+* `template` define chave/valores opcionais a serem gravados automaticamente no fragmento de conteúdo recém-criado.
+   * Útil para texto explicativo, de amostra ou de espaço reservado.
+
+### `cf` Pode ser implícito {#cf-implied}
+
+Se a página for [instrumentada](/help/implementing/universal-editor/getting-started.md#instrument-page) para apontar para um campo de referência, `cf` será presumido.
+
+```html
+<div data-aue-resource="urn:aem:/content" data-aue-type="container" data-aue-prop="field"></div>
+```
+
+Nesse caso, `cf` é presumido, porque `data-aue-prop` aponta para um campo de referência. Sem o `data-aue-prop`, o Editor Universal assumirá `page`, pois nesse caso os componentes não são vinculados por meio de um campo de referência.
+
+```html
+<div data-aue-resource="urn:aem:/content" data-aue-type="container"></div>
+```
+
+Componentes são simplesmente subnós abaixo do recurso.

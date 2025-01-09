@@ -4,9 +4,9 @@ description: Saiba como criar blocos instrumentados para uso com o Editor univer
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: fb7da1530f916ec63d5993446fd0c328af09ae7c
+source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 ![Clonando o projeto](assets/create-block/clone.png)
 
-2\ Edite o arquivo `component-definition.json` na raiz do projeto, adicione a seguinte definição para o novo bloco de cotação e salve o arquivo.
+2\ Edite o [`component-definition.json` arquivo](/help/implementing/universal-editor/component-definition.md) na raiz do projeto, adicione a seguinte definição para o novo bloco de cotações e salve o arquivo.
 
 >[!BEGINTABS]
 
@@ -119,7 +119,7 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 >[!ENDTABS]
 
-4\ Edite o arquivo `component-filters.json` na raiz do projeto e adicione o bloco de aspas à [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que o bloco seja adicionado a qualquer seção e salve o arquivo.
+4\ Edite o [`component-filters.json` arquivo](/help/implementing/universal-editor/customizing.md#filtering-components) na raiz do projeto e adicione o bloco de aspas à [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para permitir que o bloco seja adicionado a qualquer seção e salve o arquivo.
 
 >[!BEGINTABS]
 
