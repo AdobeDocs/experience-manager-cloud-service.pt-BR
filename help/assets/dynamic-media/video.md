@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Video Profiles,Best Practices
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: c142ac7ad12179dd842ce6c81cc4d97ece36a197
+source-git-commit: 222636f9520c17203df632778d3f60b62369a47b
 workflow-type: tm+mt
-source-wordcount: '10543'
+source-wordcount: '10564'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,8 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
 
    * Crie seu próprio perfil de codificação de vídeo. Ou você pode simplesmente usar o perfil _Codificação de vídeo adaptável_ predefinido que vem com o Dynamic Media.
 
-      * [Criar um perfil de codificação de vídeo](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
+      * [Criar um perfil de codificação de vídeo](/help/assets/dynamic-media/video-profiles.
+      * A resolução máxima de codificação de vídeo de saída é 8,192 × 4,320 ou 4,320 × 8,192.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * Saiba mais sobre as [Práticas recomendadas para codificação de vídeo](#best-practices-for-encoding-videos).
 
    * Associe o perfil de processamento de vídeo a uma ou mais pastas nas quais você fará upload dos vídeos de origem primária.
@@ -41,7 +42,8 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
 
    * Faça upload dos vídeos de origem principal para as pastas designadas. Depois de adicionados, os vídeos são codificados de acordo com o perfil de processamento de vídeo atribuído à pasta.
 
-      * O Dynamic Media suporta principalmente vídeos de formato curto com duração máxima de 30 minutos e resolução mínima superior a 25 x 25.
+      * O Dynamic Media suporta principalmente vídeos de forma curta, com duração máxima de 30 minutos e resolução mínima superior a 25 × 25.
+      * A resolução máxima de vídeo de entrada suportada é de 16.384 × 16.384.
       * Você pode carregar arquivos de vídeo de até 15 GB cada.
       * [Carregue seus vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * Saiba mais sobre [Formatos de arquivo de entrada com suporte](/help/assets/file-format-support.md).
@@ -153,7 +155,7 @@ As predefinições do visualizador de vídeo Dynamic Media HTML5 são players de
 
 No lado do design do reprodutor, é possível projetar a funcionalidade dele usando as ferramentas padrão de desenvolvimento na Web. Por exemplo, você pode projetar os botões, os controles e o plano de fundo personalizado da imagem de pôster usando o HTML5 e o CSS para ajudar você a alcançar seus clientes com uma aparência personalizada.
 
-No lado da reprodução do visualizador, ele detecta automaticamente o recurso de vídeo do navegador. Em seguida, ele serve o vídeo usando HLS ou DASH, também conhecido como transmissão de vídeo adaptável. Ou, se esses métodos de delivery não estiverem presentes, será usado o HTML5 progressive.
+No lado da reprodução do visualizador, ele detecta automaticamente o recurso de vídeo do navegador. Em seguida, ele serve o vídeo usando o HLS ou DASH, também conhecido como transmissão de vídeo adaptável. Ou, se esses métodos de delivery não estiverem presentes, será usado o HTML5 progressive.
 
 >[!NOTE]
 >
@@ -168,7 +170,7 @@ Consulte também [Somente visualizadores para Experience Manager Assets](https:/
 
 Para streaming de vídeo adaptável de desktop e móvel, os vídeos usados para a alternância da taxa de bits são baseados em todos os vídeos MP4 no Conjunto de vídeos adaptados.
 
-A reprodução de vídeo ocorre usando HLS ou DASH ou download progressivo de vídeo. Em versões anteriores do Experience Manager, como 6.0, 6.1 e 6.2, os vídeos eram transmitidos via HTTP.
+A reprodução de vídeo ocorre usando HLS ou DASH, ou download progressivo de vídeo. Em versões anteriores do Experience Manager, como 6.0, 6.1 e 6.2, os vídeos eram transmitidos via HTTP.
 
 No entanto, no Experience Manager 6.3 e posterior, os vídeos agora são transmitidos por HTTPS (ou seja, HLS ou DASH), pois o URL do serviço de gateway do DM também usa HTTPS. Não há impacto para o cliente nesse comportamento padrão. O streaming de vídeo sempre ocorre por HTTPS, se o navegador permitir. Consulte a tabela a seguir.
 
@@ -177,7 +179,7 @@ Por conseguinte,
 * Se você tiver um site HTTPS com transmissão de vídeo HTTPS, a transmissão está boa.
 * Se você tiver um site HTTP com transmissão de vídeo HTTPS, a transmissão está boa e não há problemas de conteúdo misto no navegador da Web.
 
-DASH é o padrão internacional e HLS é um padrão da Apple. Ambos são usados para transmissão de vídeo adaptável. E ambas as tecnologias ajustam automaticamente a reprodução com base na capacidade de largura de banda da rede. Ele também permite que o cliente &quot;procure&quot; qualquer ponto do vídeo, sem a necessidade de aguardar o download do restante do vídeo.
+O DASH é o padrão internacional e o HLS é um padrão da Apple. Ambos são usados para transmissão de vídeo adaptável. E ambas as tecnologias ajustam automaticamente a reprodução com base na capacidade de largura de banda da rede. Ele também permite que o cliente &quot;procure&quot; qualquer ponto do vídeo, sem a necessidade de aguardar o download do restante do vídeo.
 
 O vídeo progressivo é fornecido ao baixar e armazenar o vídeo localmente no sistema de desktop de um usuário ou dispositivo móvel.
 
@@ -198,7 +200,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   <tr>
    <td>Desktop</td>
    <td>Internet Explorer 11+</td>
-   <td>No Windows® 8 e Windows® 10 - Forçar o uso de HTTPS sempre que DASH ou HLS for solicitado. Limitação conhecida: HTTP no DASH ou HLS não funciona nesta combinação de navegador/sistema operacional<br /> <br /> no Windows® 7 - Download progressivo. Usa lógica padrão para protocolo HTTP versus HTTPS.</td>
+   <td>No Windows® 8 e Windows® 10 - Forçar o uso de HTTPS sempre que DASH ou HLS for solicitado. Limitação conhecida: HTTP no DASH ou HLS não funciona nesta combinação de navegador/sistema operacional<br /> <br /> No Windows® 7 - Download progressivo. Usa lógica padrão para protocolo HTTP versus HTTPS.</td>
   </tr>
   <tr>
    <td>Desktop</td>
@@ -208,17 +210,17 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 ou posterior</td>
-   <td>Transmissão da taxa de bits adaptável HLS ou DASH*</td>
+   <td>HLS ou DASH* adaptive bitrate streaming</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>Transmissão da taxa de bits adaptável HLS ou DASH*</td>
+   <td>HLS ou DASH* adaptive bitrate streaming</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>Transmissão da taxa de bits adaptável HLS</td>
+   <td>HLS adaptive bitrate streaming</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -228,7 +230,7 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android™ 7 ou posterior)</td>
-   <td>Transmissão adaptável da taxa de bits HLS ou DASH*/td&gt;
+   <td>HLS ou DASH* adaptive bitrate streaming/td&gt;
   </tr>
   <tr>
    <td>Mobile</td>
@@ -238,12 +240,12 @@ A tabela a seguir descreve o dispositivo, o navegador e o método de reproduçã
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>Transmissão da taxa de bits adaptável HLS</td>
+   <td>HLS adaptive bitrate streaming</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>Transmissão da taxa de bits adaptável HLS</td>
+   <td>HLS adaptive bitrate streaming</td>
   </tr>
  </tbody>
 </table>
@@ -284,16 +286,16 @@ Veja a seguir dicas de práticas recomendadas para a codificação de arquivos d
 
 Ao codificar um arquivo de vídeo, use um arquivo de vídeo de origem com a mais alta qualidade possível. Evite usar arquivos de vídeo codificados anteriormente, pois esses arquivos já estão compactados, e codificações adicionais criam um vídeo de qualidade inferior.
 
-* O Dynamic Media suporta principalmente vídeos de formato curto com duração máxima de 30 minutos e resolução mínima superior a 25 x 25.
+* O Dynamic Media suporta principalmente vídeos de forma curta, com duração máxima de 30 minutos e resolução mínima superior a 25 × 25.
 * Você pode fazer upload de arquivos de vídeo de origem principal de até 15 GB cada.
 
 A tabela a seguir descreve o tamanho recomendado, a taxa de proporção e a taxa de bits mínima que seus arquivos de vídeo de origem devem ter antes de serem codificados:
 
 | Tamanho | Taxa de proporção | Taxa de bits mínima |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 4500 kbps para a maioria dos vídeos. |
-| 1280 X 720 | 16:9 | 3000 - 6000 kbps, dependendo da quantidade de movimento no vídeo. |
-| 1920 X 1080 | 16:9 | 6000 - 8000 kbps, dependendo da quantidade de movimento no vídeo. |
+| 1024 × 768 | 4:3 | 4500 kbps para a maioria dos vídeos. |
+| 1280 × 720 | 16:9 | 3000 - 6000 kbps, dependendo da quantidade de movimento no vídeo. |
+| 1920 × 1080 | 16:9 | 6000 - 8000 kbps, dependendo da quantidade de movimento no vídeo. |
 
 ### Obter os metadados de um arquivo {#obtaining-a-file-s-metadata}
 
@@ -320,7 +322,7 @@ A tabela a seguir descreve como os resultados da fórmula são convertidos em op
 | 1,78 | 16:9 |
 | 0,56 | 9:16 |
 
-Por exemplo, um vídeo com largura de 1440 x altura de 1080 tem uma taxa de proporção de 1440/1080 ou 1,33. Nesse caso, você escolhe uma predefinição de codificação de vídeo com uma proporção 4:3 para codificar o arquivo de vídeo.
+Por exemplo, um vídeo com 1440 de largura × 1080 de altura tem uma proporção largura/altura de 1440/1080 ou 1,33. Nesse caso, você escolhe uma predefinição de codificação de vídeo com uma proporção 4:3 para codificar o arquivo de vídeo.
 
 ### Taxa de bits {#bitrate}
 
@@ -354,16 +356,16 @@ Esta tabela descreve a taxa de dados de velocidades de conexão típicas.
 
 ### Resolução {#resolution}
 
-**Resolução** descreve a altura e a largura de um arquivo de vídeo em pixels. A maioria dos vídeos de origem é armazenada em alta resolução (por exemplo, 1920 x 1080). Para fins de transmissão, o vídeo de origem é compactado em uma resolução menor (640 x 480 ou menor).
+**Resolução** descreve a altura e a largura de um arquivo de vídeo em pixels. A maioria dos vídeos de origem é armazenada em alta resolução (por exemplo, 1920 × 1080). Para fins de transmissão, o vídeo de origem é compactado para uma resolução menor (640 × 480 ou menor).
 
-Resolução e taxa de dados são dois fatores vinculados integralmente que determinam a qualidade do vídeo. Para manter a mesma qualidade de vídeo, quanto maior o número de pixels em um arquivo de vídeo (quanto maior a resolução), maior deverá ser a taxa de dados. Por exemplo, considere o número de pixels por quadro em uma resolução de 320 x 240 e um arquivo de vídeo de resolução de 640 x 480:
+Resolução e taxa de dados são dois fatores vinculados integralmente que determinam a qualidade do vídeo. Para manter a mesma qualidade de vídeo, quanto maior o número de pixels em um arquivo de vídeo (quanto maior a resolução), maior deverá ser a taxa de dados. Por exemplo, considere o número de pixels por quadro em um arquivo de vídeo de resolução 320 × 240 e resolução 640 × 480:
 
 | Resolução | Pixels por quadro |
 |--- |--- |
-| 320 x 240 | 76.800 |
-| 640 x 480 | 307.200 |
+| 320 × 240 | 76.800 |
+| 640 × 480 | 307.200 |
 
-O arquivo de 640 x 480 tem quatro vezes mais pixels por quadro. Para obter a mesma taxa de dados para essas duas resoluções de exemplo, aplique quatro vezes a compactação ao arquivo 640 x 480, o que pode reduzir a qualidade do vídeo. Portanto, uma taxa de dados de vídeo de 250 Kbps produz uma visualização de alta qualidade com resolução de 320 x 240, mas não com resolução de 640 x 480.
+O arquivo de 640 × 480 tem quatro vezes mais pixels por quadro. Para obter a mesma taxa de dados para essas duas resoluções de exemplo, aplique a compactação quatro vezes maior ao arquivo 640 × 480, o que pode reduzir a qualidade do vídeo. Portanto, uma taxa de dados de vídeo de 250 Kbps produz uma visualização de alta qualidade com resolução de 320 × 240, mas não com resolução de 640 × 480.
 
 Em geral, quanto maior a taxa de dados usada, melhor será a exibição do vídeo e maior será a resolução usada, maior será a taxa de dados que você deve manter a qualidade da visualização (em comparação com resoluções mais baixas).
 
@@ -383,6 +385,8 @@ Ao escolher (ou criar) uma predefinição de codificação de vídeo para o arqu
 | 720p | 720 | Tela grande |
 | 1080p | 1080 | Tela grande de alta definição |
 
+A resolução máxima de vídeo de entrada suportada é de 16.384 × 16.384. A resolução máxima de codificação de vídeo de saída é 8,192 × 4,320 ou 4,320 × 8,192.
+
 ### Fps (Quadros por segundo) {#fps-frames-per-second}
 
 Nos Estados Unidos e no Japão, a maioria dos vídeos é filmada em 29,97 fps; na Europa, a maioria dos vídeos é filmada em 25 fps. Um filme é filmado a 24 fps.
@@ -397,14 +401,14 @@ Para calcular essa proporção, divida a largura da origem pela largura codifica
 
 Se a proporção resultante for um inteiro, significa que o vídeo está dimensionado de maneira ideal. Se a proporção resultante não for um número inteiro, ela afetará a qualidade do vídeo, deixando artefatos de pixel restantes na exibição. Esse efeito é mais perceptível quando o vídeo tem texto.
 
-Por exemplo, suponha que a origem de vídeo seja 1920 x 1080. Na tabela a seguir, os três vídeos codificados fornecem as configurações de codificação ideais para usar.
+Por exemplo, suponha que a fonte de vídeo seja 1920 × 1080. Na tabela a seguir, os três vídeos codificados fornecem as configurações de codificação ideais para usar.
 
-| Tipo de vídeo | Largura x altura | Proporção de largura | Taxa de altura |
+| Tipo de vídeo | Largura × altura | Proporção de largura | Taxa de altura |
 |--- |--- |--- |--- |
-| Origem | 1920 x 1080 | 1 | 1 |
-| Codificado | 960 x 540 | 2 | 2 |
-| Codificado | 640 x 360 | 3 | 3 |
-| Codificado | 480 x 270 | 4 | 4 |
+| Origem | 1920 × 1080 | 1 | 1 |
+| Codificado | 960 × 540 | 2 | 2 |
+| Codificado | 640 × 360 | 3 | 3 |
+| Codificado | 480 × 270 | 4 | 4 |
 
 ### Formato de arquivo de vídeo codificado {#encoded-video-file-format}
 
@@ -532,7 +536,7 @@ Ativar qualquer um dos três recursos acima ativa todos eles. Portanto, se você
 
 | Recurso | Descrição |
 | --- | --- |
-| TRAÇO | DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre DASH ou HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com a alternância automática entre players quando **[!UICONTROL auto]** estiver selecionado como o tipo de reprodução na predefinição do Visualizador.<br>Estes são alguns dos principais benefícios da habilitação de DASH em sua conta:<ul><li>Vídeo de fluxo DASH do pacote para transmissão adaptável da taxa de bits. Esse método leva a uma maior eficiência do delivery. A transmissão adaptável garante a melhor experiência de visualização para seus clientes.</li><li>A transmissão otimizada do navegador com players do Dynamic Media alterna entre a transmissão HLS e DASH para garantir a melhor qualidade do serviço. O reprodutor de vídeo alterna automaticamente para HLS quando um navegador Safari é usado.</li><li>Você pode configurar seu método de transmissão preferido (HLS ou DASH) editando a predefinição do visualizador de vídeo.</li><li>A codificação otimizada de vídeo garante que nenhum armazenamento adicional seja usado ao ativar o recurso DASH. Um único conjunto de codificações de vídeo é criado para HLS e DASH para otimizar os custos de armazenamento de vídeo.</li><li>Ajuda a tornar a entrega de vídeo mais acessível para os clientes.</li><li>Obtenha o URL de transmissão por meio de APIs também.</li></ul> |
+| TRAÇO | DASH (Digital Adaptive Streaming over HTTP) é o padrão internacional para streaming de vídeo e é amplamente adotado em diferentes visualizadores de vídeo. Quando o DASH está ativado em sua conta, você tem a opção de escolher entre o DASH ou o HLS para o streaming de vídeo adaptável. Ou você pode optar por ambos com a alternância automática entre players quando **[!UICONTROL auto]** estiver selecionado como o tipo de reprodução na predefinição do Visualizador.<br>Estes são alguns dos principais benefícios da habilitação de DASH em sua conta:<ul><li>Vídeo de fluxo DASH do pacote para transmissão adaptável da taxa de bits. Esse método leva a uma maior eficiência do delivery. A transmissão adaptável garante a melhor experiência de visualização para seus clientes.</li><li>A transmissão otimizada do navegador com players do Dynamic Media alterna entre a transmissão HLS e DASH para garantir a melhor qualidade do serviço. O reprodutor de vídeo alterna automaticamente para o HLS quando um navegador Safari é usado.</li><li>É possível configurar o método de transmissão preferido (HLS ou DASH) editando a predefinição do visualizador de vídeo.</li><li>A codificação otimizada de vídeo garante que nenhum armazenamento adicional seja usado ao ativar o recurso DASH. Um único conjunto de codificações de vídeo é criado para HLS e DASH para otimizar os custos de armazenamento de vídeo.</li><li>Ajuda a tornar a entrega de vídeo mais acessível para os clientes.</li><li>Obtenha o URL de transmissão por meio de APIs também.</li></ul> |
 | Legendas múltiplas e faixas de áudio | Você pode se beneficiar com o suporte a múltiplas legendas e faixas de áudio ativadas automaticamente. Após a ativação, todos os vídeos subsequentes carregados serão processados com uma nova arquitetura de back-end que inclui suporte para adicionar várias legendas e faixas de áudio aos vídeos. |
 | Legendas geradas por IA (disponibilidade limitada) | Crie legendas para seus vídeos viabilizados pela IA. Com a IA, ele cria a transcrição do vídeo e a converte em legendas. Até mesmo a linha do tempo está definida. |
 
@@ -1224,7 +1228,7 @@ Based on the total time of the video, Dynamic Media captures ten (default) thumb
 
 Ideally, you can add a video thumbnail anytime after you upload your video but before you publish the video on your website.
 
-If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 x 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
+If you prefer, you can choose to upload a custom thumbnail to represent your video instead of using a thumbnail generated by Dynamic Media. For example, you could create a custom thumbnail image that has the title of your video, an eye-catching opening image, or a very specific image captured from your video. The custom video thumbnail image that you upload should have a maximum resolution of 1280 &times; 720 pixels (minimum width of 640 pixels) and be no larger than 2MB.
 
 See also [About video thumbnails](/help/assets/dynamic-media/video.md#about-video-thumbnails-in-dynamic-media-scene-mode).
 
@@ -1327,7 +1331,7 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 #### Parâmetros da API getVideoManifestURI
 
-Essa API inclui os três parâmetros a seguir:
+Essa API usa os três parâmetros a seguir:
 
 | Parâmetro | Descrição |
 | --- | --- |
