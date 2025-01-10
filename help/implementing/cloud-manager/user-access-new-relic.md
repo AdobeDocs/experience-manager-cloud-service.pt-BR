@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: 8f8662360d23926df91e91881e78dadea33504f0
 workflow-type: tm+mt
-source-wordcount: '1803'
-ht-degree: 44%
+source-wordcount: '1812'
+ht-degree: 41%
 
 ---
 
@@ -174,7 +174,7 @@ Se você não receber um email do New Relic, faça o seguinte:
 As seguintes limitações se aplicam à adição de usuários à New Relic One:
 
 * É possível adicionar no máximo 30 usuários. Se o número máximo de usuários for atingido, remova alguns para poder adicionar novos.
-* Os usuários adicionados ao New Relic são do tipo **Restrito**. Consulte a [documentação do New Relic para obter detalhes](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change).
+* Os usuários adicionados ao New Relic são do tipo **Restrito**. Consulte a [documentação do New Relic para obter detalhes](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change).
 * O AEM as a Cloud Service somente oferece a solução de APM da New Relic One e não oferece suporte a alertas, registros ou integrações de API.
 
 >[!NOTE]
@@ -193,15 +193,15 @@ A Adobe monitora os serviços de autoria, publicação e visualização do AEM a
 
 Sua conta da New Relic One é anexada a uma conta principal mantida pela Adobe e tem vários aplicativos subordinados a ela: três por ambiente do AEM as a Cloud Service.
 
-* Um aplicativo para o serviço de autoria por ambiente
-* Um aplicativo para o serviço de publicação por ambiente (incluindo o Golden Publish)
-* Um aplicativo para o serviço de visualização por ambiente
+* Um aplicativo para o serviço do Autor por ambiente
+* Um aplicativo para o serviço `Publish` por ambiente (incluindo o Golden Publish)
+* Um aplicativo para o serviço de Visualização por ambiente
 
 Observação:
 
 * Cada aplicativo usa uma chave de licença.
 * Os ambientes do AEM as a Cloud Service são subordinados a apenas uma conta da New Relic One.
-* As métricas e os eventos completos de monitoramento da New Relic One são retidos por sete dias.
+* As métricas e os eventos completos de monitoramento do New Relic One são retidos por três meses. &lt;!— CQDOC-22238 - Atualizado de sete dias para três meses. >
 +++
 
 +++**O Adobe envia notificações de alerta do New Relic One?** {#alerting-new-relic}
