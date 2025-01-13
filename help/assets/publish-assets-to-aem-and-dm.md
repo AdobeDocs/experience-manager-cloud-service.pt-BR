@@ -4,9 +4,9 @@ description: O Quick Publish na visualização do Assets permite publicar ativos
 exl-id: 147c1c35-0d81-4458-b4ed-7541d2b0dd54
 feature: Publishing, Dynamic Media
 role: User
-source-git-commit: 8ab19fe82fc390d28d33b17222177fd8486c8fc7
+source-git-commit: 991888d532b3396054bd04c11c7257b61c337725
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -22,18 +22,18 @@ A visualização do Experience Manager Assets oferece a flexibilidade de publica
 
 ## Antes de começar {#before-you-begin}
 
-Defina essas configurações para exibir as Opções de publicação para AEM e Dynamic Media:
+Defina essas configurações para exibir as opções de publicação para AEM e Dynamic Media:
 
-* Para exibir as Opções de publicação para o Dynamic Media, defina as seguintes configurações usando a exibição de Administrador:
+* Para exibir as opções de publicação do Dynamic Media, defina as seguintes configurações usando a exibição de Administrador:
 
    * [Criar uma configuração da Dynamic Media Cloud](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
    * Defina o modo Dynamic Media Publish no nível da pasta. Você também pode definir essas configurações ao criar a configuração do Dynamic Media Cloud. Para substituir essas configurações no nível da pasta, consulte [Configurar Publish Seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).
 
-* Para exibir as Opções de publicação para o AEM, você deve configurar o endpoint de publicação do AEM para o seu ambiente.
+* Para exibir as opções de publicação para o AEM, você deve configurar o endpoint de publicação do AEM para o seu ambiente.
 
 ## Publish Assets durante o upload {#piblish-assets-during-upload}
 
-Você pode publicar ativos no AEM e no Dynamic Media enquanto faz upload de ativos para uma pasta. As Opções de publicação exibidas dependem do modo de publicação do Dynamic Media definido na pasta para a qual os ativos estão sendo carregados. O modo de publicação do Dynamic Media pode ser definido como:
+Você pode publicar ativos no AEM e no Dynamic Media enquanto faz upload de ativos para uma pasta. As opções de publicação exibidas dependem das configurações de modo de publicação do Dynamic Media da pasta onde os ativos estão sendo carregados. O modo de publicação do Dynamic Media pode ser definido como:
 
 * **Na ativação:** quando os ativos forem carregados para esta pasta, você deverá publicar explicitamente o ativo primeiro, antes de fornecer um link de URL/Incorporação.
 
@@ -42,7 +42,7 @@ Você pode publicar ativos no AEM e no Dynamic Media enquanto faz upload de ativ
 
 ### Modo Dynamic Media Publish definido como Na ativação {#dynamic-media-publish-mode-set-to-upon-activation}
 
-Para publicar ativos durante o carregamento em uma pasta com o Modo Dynamic Media Publish definido como **Na ativação**:
+Para publicar ativos ao carregá-los em uma pasta cujo Modo Dynamic Media Publish esteja definido como **Na ativação**:
 
 1. Clique em **Adicionar Assets** > **Procurar** > **Procurar Arquivos** para navegar até a pasta apropriada para carregar ativos. A seção **Opções do Publish** exibe o **Modo DM Publish** como **Na Ativação**.
    ![Carregar imagem na ativação](/help/assets/assets/upload-uactivation.svg)
@@ -50,15 +50,15 @@ Para publicar ativos durante o carregamento em uma pasta com o Modo Dynamic Medi
 
 ### Modo Publish do Dynamic Media definido como Imediato {#dynamic-media-publish-mode-set-to-immediate}
 
-Para publicar ativos durante o carregamento em uma pasta com o Modo Dynamic Media Publish definido como **Imediato**:
+Para publicar ativos ao carregá-los em uma pasta cujo Modo Dynamic Media Publish esteja definido como **Imediato**:
 
-1. Clique em **Adicionar Assets** > **Procurar** > **Procurar Arquivos** para navegar até a pasta apropriada para carregar ativos. A seção Opções do Publish exibe o **Modo DM Publish** como **Imediato**.
+1. Clique em **Adicionar Assets** > **Procurar** > **Procurar Arquivos** para navegar até a pasta apropriada para carregar ativos. A seção **Opções do Publish** exibe o **Modo DM Publish** como **Imediato**.
    ![imagem de carregamento de arquivo - modo imediato](/help/assets/assets/resized-image-pdf-svg-new.svg)
 
 
    Como o Modo Publish do Dynamic Media é **Imediato**, os ativos carregados são publicados automaticamente no Dynamic Media quando você clica em **Carregar**.
 
-2. Selecione Publish to **AEM para publicar** os ativos carregados no AEM e clique em Fazer upload.
+2. Selecione **Publish para AEM** para publicar os ativos carregados no AEM e clique em Carregar.
 
    Se você selecionar **Publish para AEM**, os ativos serão publicados no AEM e no Dynamic Media, caso contrário, serão publicados no Dynamic Media.
 
@@ -68,7 +68,7 @@ Para publicar ativos durante o carregamento em uma pasta com o Modo Dynamic Medi
 
 Para publicar ativos durante o carregamento em uma pasta com o Modo Dynamic Media Publish definido como **Publish Seletiva**:
 
-1. Clique em **Adicionar Assets** > **Procurar** > **Procurar Arquivos** para navegar até a pasta apropriada para carregar ativos. A seção Opções do Publish exibe o **Modo DM Publish** como **Publish Seletiva**.
+1. Clique em **Adicionar Assets** > **Procurar** > **Procurar Arquivos** para navegar até a pasta apropriada para carregar ativos. A seção **Opções do Publish** exibe o **Modo DM Publish** como **Publish Seletiva**.
    ![modo de publicação seletiva de imagem de carregamento](/help/assets/assets/upload-selective.svg)
 
 2. Selecione **Publish para AEM**, **Publish para Dynamic Media** ou ambos de acordo com suas necessidades e clique em **Carregar**.
@@ -92,7 +92,7 @@ Não é possível publicar uma pasta que tenha o Modo Publish do Dynamic Media d
 
 Para publicar ativos usando a página de resultados da pesquisa de ativos:
 
-1. Especifique os critérios na barra de Pesquisa e clique no ícone Pesquisar para exibir os resultados.
+1. Especifique os critérios na barra de pesquisa e clique no ícone de pesquisa para exibir os resultados.
 2. Selecione os ativos que você precisa publicar e clique em **Publish.**
 3. Selecione AEM, Dynamic Media ou ambos conforme suas necessidades e clique em **Publish.**
    ![pesquisar imagem](/help/assets/assets/search-mode.svg)
