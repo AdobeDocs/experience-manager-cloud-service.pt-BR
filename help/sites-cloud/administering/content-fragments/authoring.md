@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
 workflow-type: tm+mt
-source-wordcount: '2704'
+source-wordcount: '2841'
 ht-degree: 3%
 
 ---
 
 # Criação de fragmentos de conteúdo {#authoring-content-fragments}
+
+>[!IMPORTANT]
+>
+>Vários recursos do Editor de fragmento de conteúdo estão disponíveis por meio do Programa de Primeiros usuários.
+>
+>Para ver o status e saber como se candidatar caso esteja interessado, confira as [Notas de Versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 A criação dos fragmentos de conteúdo foca na entrega headless e na criação de páginas.
 
@@ -58,6 +64,7 @@ Ao abrir o Editor de fragmento de conteúdo pela primeira vez, você vê quatro 
    * estes links podem ser usados para [navegar pela estrutura do Fragmento de Conteúdo](#navigate-structure)
 * painel direito: apresenta as guias [mostrando as propriedades (metadados) e tags](#view-properties-tags), informações sobre o [histórico de versões](#view-version-history) e informações relacionadas a quaisquer [cópias de idioma](#view-language-copies)
    * na guia **Propriedades**, é possível atualizar o **Título** e a **Descrição** do fragmento ou a **Variação**
+   * Na guia **Comentários**, é possível adicionar e ler comentários para ajudá-lo a colaborar com outros autores
 * painel central: mostra os campos reais e o conteúdo da variação selecionada
    * permite editar o conteúdo
       * quando configurado (como vários) no modelo, vários tipos de dados permitem **Adicionar** instâncias do campo relevante
@@ -466,6 +473,25 @@ Por exemplo:
 >
 >Para obter mais detalhes sobre a tradução de um fragmento de conteúdo e a criação de cópias de idioma, consulte a [Jornada de tradução do AEM Headless](/help/journey-headless/translation/overview.md).
 
+## Comentar no seu fragmento {#commenting-on-your-fragment}
+
+A guia **Comentários** no painel direito fornece os seguintes recursos:
+
+* Adicionar um novo comentário
+* Marcar usuários específicos em um comentário
+   * Eles receberão uma notificação, com um link para abrir o fragmento diretamente
+* Como um comentário existente
+* Responder a um comentário
+* Formatar seus comentários; a formatação básica está disponível
+* Fazer uma pesquisa de texto por meio de comentários existentes
+* Editar um comentário existente
+* Excluir comentários
+
+![Editor de fragmento de conteúdo - guia Comentários](assets/cf-authoring-comments.png)
+
+>[!NOTE]
+>
+>Estes comentários não estão visíveis como [Anotações no editor original](/help/assets/content-fragments/content-fragments-managing.md#annotating-a-content-fragment) nem na [Linha do Tempo do console do Assets](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
 ## Visualizar o fragmento {#preview-content-fragment}
 

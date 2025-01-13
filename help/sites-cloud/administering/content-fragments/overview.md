@@ -5,14 +5,20 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 39%
+source-wordcount: '1857'
+ht-degree: 38%
 
 ---
 
 # Uma visão geral do trabalho com fragmentos de conteúdo {#overview-working-with-content-fragments}
+
+>[!IMPORTANT]
+>
+>Vários recursos dos Fragmentos de conteúdo e dos Modelos de fragmento de conteúdo estão disponíveis por meio do Programa de primeiros usuários.
+>
+>Para ver o status e saber como se candidatar caso esteja interessado, confira as [Notas de Versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Com o Adobe Experience Manager (AEM) as a Cloud Service, os fragmentos de conteúdo permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem preparar conteúdo pronto para uso em vários locais e em vários canais, ideal para [entrega headless](/help/headless/what-is-headless.md) e [criação de página](/help/sites-cloud/authoring/fragments/content-fragments.md).
 
@@ -91,8 +97,11 @@ Esta e as seguintes páginas abordam as tarefas de criação, configuração, ma
 
 Após a criação dos fragmentos, é possível:
 
-* [Use o console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md) - para acessar, publicar (para visualização ou produção) e fazer referência aos fragmentos
-* [Use o editor de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md) - para editar, publicar (para visualizar ou produzir) e fazer referência aos fragmentos
+* [Use o Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md) - para:
+   * acessar, publicar (para visualizar ou produzir) e fazer referência aos fragmentos
+* [Use o editor de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md) - para:
+   * editar, publicar (para visualização ou produção) e fazer referência aos fragmentos
+   * colaborar com outros autores usando Comentários
 * [Analisar](/help/sites-cloud/administering/content-fragments/analysis.md) a estrutura do fragmento de conteúdo usando o editor
 * [Acesse os fragmentos com o GraphQL para entrega headless em seus aplicativos](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 * [Ou use os fragmentos para a criação de página](/help/sites-cloud/authoring/fragments/content-fragments.md)
