@@ -5,10 +5,10 @@ exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6f17afc82b2d26fd6025a9ba8449a0cb1b368d48
+source-git-commit: 91a1fb46d4300540eeecf38f7f049a2991513d29
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 79%
+source-wordcount: '1166'
+ht-degree: 77%
 
 ---
 
@@ -29,7 +29,7 @@ Consulte [Configuração do pipeline de CI-CD](/help/implementing/cloud-manager/
 
 ## Regras de qualidade do código {#understanding-code-quality-rules}
 
-O teste de qualidade do código verifica o código-fonte para garantir que atenda a determinados critérios de qualidade. Uma combinação de SonarQube e exame em nível de pacote de conteúdo usando OakPAL implementa essa etapa. Há mais de 100 regras, que combinam regras Java genéricas e regras específicas do AEM. Algumas das regras específicas do AEM são criadas com base nas práticas recomendadas pela Engenharia do AEM e são chamadas de [regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+O teste de qualidade do código verifica o código-fonte para garantir que atenda a determinados critérios de qualidade. Uma combinação de SonarQube e exame em nível de pacote de conteúdo usando OakPAL implementa essa etapa. Há mais de 100 regras, que combinam regras do Java genéricas e regras específicas do AEM. Algumas regras específicas do AEM são baseadas nas práticas recomendadas pela Engenharia do AEM e são conhecidas como [regras de qualidade do código personalizado](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 Você pode baixar a lista completa atual de regras [usando este link](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx).
 
