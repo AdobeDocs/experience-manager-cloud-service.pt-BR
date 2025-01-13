@@ -3,13 +3,13 @@ title: Ambientes de preparo e produção de respostas
 description: Saiba como configurar sites separados para seus ambientes de preparo e produção, aproveitando uma única base de código de maneira imperceptível.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 709d0661286d023c5cec51be2c51a1123ef7deb6
+exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 1%
 
 ---
-
 
 # Ambientes de preparo e produção de respostas {#repoless-stage-prod}
 
@@ -73,7 +73,7 @@ Há duas etapas para configurar um site de produção separado.
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },

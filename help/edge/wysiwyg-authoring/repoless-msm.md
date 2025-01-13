@@ -3,13 +3,13 @@ title: Gerenciamento de vários sites de resposta
 description: Saiba mais sobre as práticas recomendadas de como configurar um projeto de maneira responsiva com sites localizados que aproveitam uma única base de código, cada um distribuído pelo Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: e25e21984ebadde7076d95c6051b8bfca5b2ce03
+exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
+source-git-commit: 42218450ab03201c69c59053f720954183f4b652
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 1%
 
 ---
-
 
 # Gerenciamento de vários sites de resposta {#repoless-msm}
 
@@ -140,7 +140,7 @@ Neste exemplo, criaremos o site `wknd-ch` para a presença suíça do wknd, cujo
                    "admin": [
                        "*@adobe.com"
                    ],
-                   "publish": [
+                   "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
                    ]
                },
