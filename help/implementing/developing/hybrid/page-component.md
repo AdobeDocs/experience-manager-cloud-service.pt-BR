@@ -4,7 +4,7 @@ description: Em um SPA, o componente de página não fornece os elementos de HTM
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 7%
@@ -14,6 +14,8 @@ ht-degree: 7%
 # Componente de página SPA {#spa-page-component}
 
 O componente de página de um SPA não fornece os elementos de HTML de seus componentes filhos por meio de um arquivo JSP ou HTL e objetos de recurso. Esta operação é delegada na estrutura de SPA. A representação de componentes secundários é buscada como uma estrutura de dados JSON (ou seja, o modelo). Os componentes do SPA são adicionados à página de acordo com o modelo JSON fornecido. Dessa forma, a composição do corpo inicial do componente de página difere de suas contrapartes de HTML pré-renderizadas.
+
+{{ue-over-spa}}
 
 ## Gerenciamento do modelo de página {#page-model-management}
 

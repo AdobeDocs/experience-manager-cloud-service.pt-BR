@@ -1,8 +1,8 @@
 ---
-source-git-commit: 60cf4c34f3b4d7c7a757f2274f1a02de8ae51e11
+source-git-commit: f6be839d58b796b3791342375ff61d17b1f8cb0f
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 4%
+source-wordcount: '1367'
+ht-degree: 3%
 
 ---
 # Trechos {#snippets}
@@ -232,3 +232,11 @@ Para registrar um tíquete de suporte, primeiro registre o site do Edge Delivery
    * URL do site ativo. Por exemplo: `www.mydomain.com`.
    * URL do site de origem (`.hlx` URL).
 
+## O Editor universal é preferível ao editor SPA {#ue-over-spa}
+
+>[!IMPORTANT]
+>
+>O Editor de SPA continua sendo suportado pelo Adobe, mas os editores preferidos para gerenciar conteúdo headless no AEM agora são:
+>
+>* [O Editor Universal](/help/edge/wysiwyg-authoring/authoring.md) para editar visualmente o conteúdo headless.
+>* [O Editor de Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulário de conteúdo headless.

@@ -4,7 +4,7 @@ description: Este artigo fornece uma visão geral abrangente do Editor de SPA e 
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
@@ -16,6 +16,8 @@ ht-degree: 93%
 Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas de SPA, e os autores desejam editar o conteúdo de um site criado usando essas estruturas diretamente no AEM.
 
 O editor de SPA oferece uma solução abrangente para permitir o uso de SPAs no AEM. Esta página fornece uma visão geral de como o suporte do SPA é estruturado no AEM, como o Editor de SPA funciona e como a estrutura de SPA e AEM permanece sincronizada.
+
+{{ue-over-spa}}
 
 ## Introdução {#introduction}
 

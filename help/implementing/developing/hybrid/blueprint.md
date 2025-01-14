@@ -4,7 +4,7 @@ description: Este documento descreve o contrato geral e independente de estrutur
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -14,6 +14,8 @@ ht-degree: 1%
 # Blueprint do SPA {#spa-blueprint}
 
 Para permitir que o autor use o Editor de SPA AEM para editar o conteúdo de um SPA, há requisitos que o SPA deve atender.
+
+{{ue-over-spa}}
 
 ## Introdução {#introduction}
 
@@ -51,7 +53,7 @@ Cada item presente no modelo contém um campo `:type` que expõe um tipo de recu
 
 #### Modelo dinâmico para mapeamento de componentes {#dynamic-model-to-component-mapping}
 
-Para obter detalhes sobre como o modelo dinâmico para o mapeamento de componentes ocorre no SDK do JavaScript SPA para AEM, consulte o artigo [Modelo dinâmico para mapeamento de componentes para SPA](model-to-component-mapping.md).
+Para obter detalhes sobre como o modelo dinâmico para o mapeamento de componentes ocorre no JavaScript SPA SDK para AEM SPA, consulte o artigo [Modelo dinâmico para mapeamento de componentes para](model-to-component-mapping.md).
 
 ### Camada específica da estrutura {#framework-specific-layer}
 

@@ -4,7 +4,7 @@ description: Para aplicativos de página única no AEM, o aplicativo é respons�
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Roteamento de modelo SPA{#spa-model-routing}
 
 Para aplicativos de página única no AEM, o aplicativo é responsável pelo roteamento. Este documento descreve o mecanismo de encaminhamento, o contrato e as opções disponíveis.
+
+{{ue-over-spa}}
 
 ## Roteamento do projeto {#project-routing}
 

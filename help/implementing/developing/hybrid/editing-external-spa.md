@@ -4,9 +4,9 @@ description: Este documento descreve as etapas recomendadas para fazer upload de
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
 workflow-type: tm+mt
-source-wordcount: '2374'
+source-wordcount: '2370'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 1%
 # Edição de um SPA externo no AEM {#editing-external-spa-within-aem}
 
 Ao decidir [que nível de integração](/help/implementing/developing/headful-headless.md) você gostaria de ter entre o SPA externo e o AEM, considere que você deve ser capaz de editar e visualizar o SPA dentro do AEM, com frequência.
+
+{{ue-over-spa}}
 
 ## Visão geral {#overview}
 
@@ -35,7 +37,7 @@ Primeiro, você deve carregar o SPA externo para seu projeto AEM.
 
 1. Substitua `src` na pasta do projeto `/ui.frontend` pela pasta `src` do aplicativo React.
 1. Inclua qualquer dependência adicional no `package.json` do aplicativo no arquivo `/ui.frontend/package.json`.
-   * Verifique se as dependências do SDK do SPA são de [versões recomendadas](/help/implementing/developing/hybrid/getting-started-react.md#dependencies).
+   * Verifique se as dependências do SPA SDK são de [versões recomendadas](/help/implementing/developing/hybrid/getting-started-react.md#dependencies).
 1. Incluir qualquer personalização na pasta `/public`.
 1. Inclua qualquer script ou estilo incorporado adicionado ao arquivo `/public/index.html`.
 
@@ -43,7 +45,7 @@ Primeiro, você deve carregar o SPA externo para seu projeto AEM.
 
 Agora que o SPA externo é parte do projeto AEM, ele deve ser configurado dentro do AEM.
 
-### Incluir pacotes SDK do Adobe SPA {#include-spa-sdk-packages}
+### Incluir pacotes de SDK do Adobe SPA {#include-spa-sdk-packages}
 
 AEM Para aproveitar os recursos do SPA, há dependências nos três pacotes a seguir.
 
@@ -79,7 +81,7 @@ O `initializationAsync` pode, opcionalmente, aceitar um objeto `options` como pa
 
 * `path` - Na inicialização, o modelo no caminho definido é buscado e armazenado em `ModelStore`. Este caminho pode ser usado para buscar o `rootModel` na inicialização, se necessário.
 * `modelClient` - Permite fornecer um cliente personalizado responsável por buscar o modelo.
-* `model` - Um objeto `model` passado como parâmetro normalmente populado quando [usando SSR](/help/implementing/developing/hybrid/ssr.md).
+* `model` - Um objeto `model` passado como parâmetro normalmente preenchido ao usar SSR.
 
 ### Componentes de folha autoráveis do AEM {#authorable-leaf-components}
 
@@ -375,4 +377,3 @@ O material de referência a seguir pode ser útil para entender o SPA no context
 * [Materiais de referência de SPA (referências de API)](/help/implementing/developing/hybrid/reference-materials.md)
 * [Blueprint SPA e PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [Roteamento de modelo SPA](/help/implementing/developing/hybrid/routing.md)
-* [Renderização do SPA e do servidor](/help/implementing/developing/hybrid/ssr.md)

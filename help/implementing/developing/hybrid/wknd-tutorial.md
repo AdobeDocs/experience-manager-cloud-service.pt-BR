@@ -4,7 +4,7 @@ description: Mergulhe no desenvolvimento do SPA com este tutorial de várias par
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Projeto SPA WKND {#wknd-spa-project}
+
+{{ue-over-spa}}
 
 Mergulhe no desenvolvimento do SPA com este tutorial dividido em várias partes que o orienta na configuração de projetos, no mapeamento de componentes, nas ferramentas de desenvolvimento de front-end e no roteamento de aplicativos para implementar seu próprio SPA.
 

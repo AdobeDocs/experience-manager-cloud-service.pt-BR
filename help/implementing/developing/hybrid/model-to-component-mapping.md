@@ -1,10 +1,10 @@
 ---
 title: Modelo dinâmico para mapeamento de componentes para SPA
-description: Este artigo descreve como o modelo dinâmico para o mapeamento de componentes ocorre no SDK do JavaScript SPA para AEM.
+description: Este artigo descreve como ocorre o modelo dinâmico para o mapeamento de componentes no JavaScript SPA SDK para AEM.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -13,7 +13,9 @@ ht-degree: 0%
 
 # Modelo dinâmico para mapeamento de componentes para SPA {#dynamic-model-to-component-mapping-for-spas}
 
-Este documento descreve como o modelo dinâmico para mapeamento de componentes ocorre no SDK do JavaScript SPA para AEM.
+Este documento descreve como ocorre o modelo dinâmico para mapeamento de componentes no JavaScript SPA SDK para AEM.
+
+{{ue-over-spa}}
 
 ## Módulo ComponentMapping {#componentmapping-module}
 
@@ -27,7 +29,7 @@ Consulte também o pacote npm: [@adobe/aem-spa-component-mapping](https://www.np
 
 ## Aplicativo de página única orientado por modelo {#model-driven-single-page-application}
 
-Aplicativos de página única que usam o SDK do JavaScript SPA para AEM são orientados por modelo:
+Os aplicativos de página única que usam o JavaScript SPA SDK para AEM são orientados por modelo:
 
 1. Os componentes front-end se registram no [Repositório de Mapeamentos de Componentes](#componentmapping-module).
 1. Em seguida, o [Contêiner](blueprint.md#container), uma vez fornecido com um modelo pelo [Provedor de Modelos](blueprint.md#the-model-provider), repete o conteúdo do modelo (`:items`).

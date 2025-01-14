@@ -4,7 +4,7 @@ description: Este artigo apresenta os conceitos de um SPA e aborda o uso de um S
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 93%
@@ -16,6 +16,8 @@ ht-degree: 93%
 Aplicativos de página única (SPAs) podem oferecer experiências interessantes para usuários de sites. Os desenvolvedores desejam criar sites usando estruturas de SPA, e os autores desejam editar o conteúdo de um site criado usando essas estruturas diretamente no AEM.
 
 O editor de SPA oferece uma solução abrangente para permitir o uso de SPAs no AEM. Este artigo aborda o uso de um SPA básico para criação e mostra como ele se relaciona ao editor de SPA integrado do AEM.
+
+{{ue-over-spa}}
 
 ## Introdução {#introduction}
 

@@ -4,7 +4,7 @@ description: Saiba como criar seus próprios componentes compostos, componentes 
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
 workflow-type: tm+mt
 source-wordcount: '782'
 ht-degree: 1%
@@ -18,6 +18,8 @@ Os componentes compostos usam a natureza modular dos componentes AEM ao combinar
 Quando os componentes compostos são implementados corretamente na estrutura do Editor de aplicativo de página única (SPA) do AEM, os autores de conteúdo podem arrastar e soltar esses componentes da mesma maneira que fazem com qualquer outro componente, mas ainda podem editar individualmente cada componente que compõe o componente composto.
 
 Este artigo demonstra como você pode adicionar um componente composto ao seu aplicativo de página única para funcionar perfeitamente com o Editor de SPA AEM.
+
+{{ue-over-spa}}
 
 ## Caso de uso {#use-case}
 
