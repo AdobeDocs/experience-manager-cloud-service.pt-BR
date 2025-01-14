@@ -4,17 +4,17 @@ Description: Learn how to configure the submit action of Adaptive Form to send d
 Keywords: Submit data to Marketo engage, Configure submit action as Submit to Marketo Engage
 Feature: Adaptive Forms, Form Data Model
 Role: User, Developer
-source-git-commit: 681c194f997ab66f93beedad4eea273614e6797d
+exl-id: 0683564b-1ac4-42b4-bc08-101c4fdef286
+source-git-commit: e46c5afac945620cc44e9064956848acecc786bf
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 6%
 
 ---
 
-
 # Configurar a ação de envio para o Marketo Engage para formulários existentes
 
-<span class="preview"> O recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso está disponível no programa dos primeiros usuários. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 ![Fluxo de trabalho](/help/forms/assets/workflow-marketo-3.png)
 
@@ -34,13 +34,15 @@ Pré-requisito para configurar a ação de envio no Marketo Engage:
 
 ## Como configurar a ação de envio para o Marketo Engage para formulários existentes?
 
+>[!VIDEO](https://video.tv.adobe.com/v/3442866/submit-action-marketo-engage-marketo-aem-aem-forms-engage)
+
 Você pode configurar a ação de envio de um Formulário adaptável para enviar dados ao Adobe Marketo Engage. Para configurar a ação de envio para o Marketo Engage, execute as seguintes etapas:
 
 1. Abra o Formulário adaptável para edição.
-1. Abra a Árvore de conteúdo e selecione o **[!UICONTROL Contêiner do guia]**.
-1. Clique no ícone de propriedades do Contêiner de formulário adaptável ![propriedades do Contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável para configurar a ação de envio é aberta.
-1. Abra a guia **[!UICONTROL Envio]** e selecione uma ação de envio como **Enviar para o Marketo Engage**.
-1. Clique em **[!UICONTROL Concluído]**.
+2. Abra a Árvore de conteúdo e selecione o **[!UICONTROL Contêiner do guia]**.
+3. Clique no ícone de propriedades do Contêiner de formulário adaptável ![propriedades do Contêiner de formulário adaptável](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável para configurar a ação de envio é aberta.
+4. Abra a guia **[!UICONTROL Envio]** e selecione uma ação de envio como **Enviar para o Marketo Engage**.
+5. Clique em **[!UICONTROL Concluído]**.
 
 ![Ação de envio do Marketo](/help/forms/assets/marketo-engage-submit-action.png){width=50%, height=50%}
 
