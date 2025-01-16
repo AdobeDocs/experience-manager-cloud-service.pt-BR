@@ -4,7 +4,7 @@ description: Saiba como a modelagem de conteúdo funciona para a criação de WY
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 0%
@@ -113,7 +113,7 @@ Para cada bloco, o desenvolvedor:
    * O nome do bloco é usado para buscar o estilo e o script corretos para decorar o bloco.
 * Pode definir um [ID de modelo.](/help/implementing/universal-editor/field-types.md#model-structure)
    * A ID do modelo é uma referência ao modelo do componente, que define os campos disponíveis para o autor no painel de propriedades.
-* Pode definir um [ID de filtro.](/help/implementing/universal-editor/customizing.md#filtering-components)
+* Pode definir um [ID de filtro.](/help/implementing/universal-editor/filtering.md)
    * A ID do filtro é uma referência ao filtro do componente, que permite alterar o comportamento de criação, por exemplo, limitando quais filhos podem ser adicionados ao bloco ou seção, ou quais recursos de RTE estão habilitados.
 
 Todas essas informações são armazenadas no AEM quando um bloco é adicionado a uma página. Se o tipo de recurso ou o nome do bloco estiver ausente, o bloco não será renderizado na página.
@@ -245,7 +245,7 @@ Um exemplo disso são os [metadados de seção.](/help/edge/developer/markup-sec
 
 Ambas as estruturas anteriores têm uma única dimensão: a lista de propriedades. Os blocos de contêiner permitem adicionar filhos (geralmente do mesmo tipo ou modelo) e, portanto, são bidimensionais. Esses blocos ainda suportam suas próprias propriedades renderizadas como linhas com uma única coluna primeiro. Mas também permitem adicionar filhos, para os quais cada item é renderizado como linha e cada propriedade como coluna dentro dessa linha.
 
-No exemplo a seguir, um bloco aceita uma lista de ícones vinculados como filhos, onde cada ícone vinculado tem uma imagem e um link. Observe a [ID de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) definida nos dados do bloco para fazer referência à configuração de filtro.
+No exemplo a seguir, um bloco aceita uma lista de ícones vinculados como filhos, onde cada ícone vinculado tem uma imagem e um link. Observe a [ID de filtro](/help/implementing/universal-editor/filtering.md) definida nos dados do bloco para fazer referência à configuração de filtro.
 
 >[!BEGINTABS]
 
@@ -536,9 +536,9 @@ Da mesma forma que um desenvolvedor pode definir e modelar vários [blocos](#blo
 
 O modelo de conteúdo do Edge Delivery Services permite deliberadamente apenas um único nível de aninhamento, ou seja, qualquer conteúdo ou bloco padrão contido em uma seção. Isso significa que, para ter componentes visuais mais complexos que possam conter outros componentes, eles precisam ser modelados como seções e combinados juntos usando o bloqueio automático do lado do cliente. Exemplos típicos disso são abas e seções recolhíveis, como acordeões.
 
-Uma seção pode ser definida da mesma forma que um bloco, mas com o tipo de recurso `core/franklin/components/section/v1/section`. As seções podem ter um nome e uma [ID de filtro](/help/implementing/universal-editor/customizing.md#filtering-components), que são usadas somente pelo [Editor Universal](/help/implementing/universal-editor/introduction.md), bem como uma [ID de modelo](/help/implementing/universal-editor/field-types.md#model-structure), que é usada para renderizar os metadados da seção. O modelo é, dessa forma, o modelo do bloco de metadados da seção, que será anexado automaticamente a uma seção como bloco de valor principal se não estiver vazio.
+Uma seção pode ser definida da mesma forma que um bloco, mas com o tipo de recurso `core/franklin/components/section/v1/section`. As seções podem ter um nome e uma [ID de filtro](/help/implementing/universal-editor/filtering.md), que são usadas somente pelo [Editor Universal](/help/implementing/universal-editor/introduction.md), bem como uma [ID de modelo](/help/implementing/universal-editor/field-types.md#model-structure), que é usada para renderizar os metadados da seção. O modelo é, dessa forma, o modelo do bloco de metadados da seção, que será anexado automaticamente a uma seção como bloco de valor principal se não estiver vazio.
 
-A [ID do modelo](/help/implementing/universal-editor/field-types.md#model-structure) e a [ID do filtro](/help/implementing/universal-editor/customizing.md#filtering-components) da seção padrão é `section`. Ela pode ser usada para alterar o comportamento da seção padrão. O exemplo a seguir adiciona alguns estilos e e uma imagem de plano de fundo ao modelo de metadados da seção.
+A [ID do modelo](/help/implementing/universal-editor/field-types.md#model-structure) e a [ID do filtro](/help/implementing/universal-editor/filtering.md) da seção padrão é `section`. Ela pode ser usada para alterar o comportamento da seção padrão. O exemplo a seguir adiciona alguns estilos e e uma imagem de plano de fundo ao modelo de metadados da seção.
 
 ```json
 {

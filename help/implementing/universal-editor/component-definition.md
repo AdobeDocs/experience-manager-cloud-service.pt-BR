@@ -3,13 +3,13 @@ title: Definição de componente
 description: Entenda o contrato JSON entre a definição do componente e o Editor universal em detalhes.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7f54d2ee61d2b92e7a0f02c66ce8ee5cdbedd73c
+exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
+source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
 
 ---
-
 
 # Definição de componente {#component-definition}
 
@@ -79,7 +79,7 @@ Veja a seguir um exemplo completo, mas simples de `component-definition.json`.
 * `title` define a descrição textual do componente mostrado na interface.
 * `id` identifica exclusivamente o componente.
    * O [modelo de componente](/help/implementing/universal-editor/field-types.md#model-structure) do mesmo `id` define os campos do componente.
-   * Por ser exclusivo, ele pode ser usado, por exemplo, em uma [definição de filtro](/help/implementing/universal-editor/customizing.md#filtering-components) para determinar quais componentes podem ser adicionados a um contêiner.
+   * Por ser exclusivo, ele pode ser usado, por exemplo, em uma [definição de filtro](/help/implementing/universal-editor/filtering.md) para determinar quais componentes podem ser adicionados a um contêiner.
 
 ## `plugins` {#plugins}
 

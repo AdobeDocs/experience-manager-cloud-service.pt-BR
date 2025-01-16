@@ -4,9 +4,9 @@ description: Saiba mais sobre os diferentes pontos de extensão e outros recurso
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 732b0648e7114594cb8d35df03f83b842d62736e
+source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -41,39 +41,7 @@ Portanto, o botão **Publish** pode ser totalmente suprimido em um aplicativo ad
 
 ### Componentes de filtragem {#filtering-components}
 
-Ao usar o Editor universal, é possível restringir os componentes permitidos por componente do contêiner. Para fazer isso, é necessário introduzir uma tag de script adicional, que aponta para a definição do filtro.
-
-```html
-<script type="application/vnd.adobe.aue.filter+json" src="/static/filter-definition.json"></script>
-```
-
-Uma definição de filtro pode ser semelhante à seguinte, o que restringiria um contêiner para permitir apenas a adição de texto e imagens.
-
-```json
-[
-  {
-    "id": "container-filter",
-     "components": ["text", "image"]
-   }
-]
-```
-
-Em seguida, você pode fazer referência à definição de filtro a partir do componente de contêiner adicionando a propriedade `data-aue-filter`, transmitindo a ID do filtro definido anteriormente.
-
-```html
-data-aue-filter="container-filter"
-```
-
-Definir o atributo `components` em uma definição de filtro como `null` permite todos os componentes, como se não houvesse filtros.
-
-```json
-[
-  {
-    "id": "another-container-filter",
-     "components": null
-   }
-]
-```
+Você pode restringir os componentes permitidos por contêiner no Editor universal usando filtros de componente. Consulte o documento [Componentes de Filtragem](/help/implementing/universal-editor/filtering.md) para obter mais informações.
 
 ### Mostrar e ocultar componentes condicionalmente no painel Propriedades {#conditionally-hide}
 
