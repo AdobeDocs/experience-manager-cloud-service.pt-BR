@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2024.12.02
-description: Estas são as notas de versão do Universal Editor de 2024.12.02.
+title: Notas de versão do Universal Editor 2054.01.16
+description: Estas são as notas de versão do Universal Editor de 2025.01.16.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 2aae8c63358680758e4f5324f38dea1bc2c47155
+source-git-commit: 14bc45917f56ecf358278848e7e830afb1fedccd
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2024.12.02 {#release-notes}
+# Notas de versão do Universal Editor 2025.01.16 {#release-notes}
 
-Estas são as notas de versão da versão de 2 de dezembro de 2024 do editor universal.
+Estas são as notas de versão da versão de 16 de janeiro de 2025 do Editor universal.
 
 >[!TIP]
 >
@@ -22,18 +22,15 @@ Estas são as notas de versão da versão de 2 de dezembro de 2024 do editor uni
 
 ## Novidades {#what-is-new}
 
-* **Navegação do Teclado da Árvore de Conteúdo**: [A árvore de conteúdo](/help/sites-cloud/authoring/universal-editor/navigation.md#content-tree-mode), disponível no painel lateral, agora está totalmente acessível pelo teclado.
-   * Os autores podem navegar e interagir com itens de exibição em árvore usando controles padrão do teclado, seguindo as [diretrizes da WCAG 2.1](/help/sites-cloud/authoring/page-editor/accessible-content.md) para acessibilidade.
-   * Esse aprimoramento garante que todos os elementos interativos na árvore sejam operáveis pelo teclado, melhorando a inclusão para usuários que dependem da navegação pelo teclado.
-* **Desmarcar Editáveis**: os autores agora podem desmarcar elementos editáveis selecionados anteriormente na página.
-   * Isso elimina distrações quando os autores desejam visualizar a página sem bordas de seleção ativas.
-* **Seletor de fragmentos**: nas instâncias do AEM as a Cloud Service, as referências de fragmento agora abrem o seletor de fragmentos como seletor de conteúdo, fornecendo funcionalidade aprimorada, obedecendo a modelos de Fragmento de conteúdo permitidos, pesquisando Fragmentos de conteúdo e uma experiência geral aprimorada.
-   * Isso se alinha a outras interfaces do usuário de Adobe e aumenta a consistência.
-   * [Para ambientes AEM 6.5,](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) o seletor de conteúdo existente permanece em uso.
-* **Descrição do Contêiner**: [O componente do contêiner](/help/implementing/universal-editor/field-types.md#container) usado no [painel de propriedades](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-panel-properties-rail) para fazer referência ao conteúdo, agora oferece suporte a um atributo de descrição, exibido acima dos campos do contêiner.
-   * Essa adição aumenta a clareza ao fornecer aos autores o contexto sobre os campos agrupados que estão editando.
+* **Substituição da Biblioteca CORS &lt; 3.0.0** - Para garantir compatibilidade futura e aprimorar a segurança, o Editor Universal agora oferece suporte exclusivo à versão 3.0.0 ou superior do
+  Biblioteca `@Adobe Express/universal-editor-cors`.
+   * A biblioteca agora é entregue exclusivamente via [`universal-editor-service.adobe.io/cors.js`.](http://universal-editor-service.adobe.io/cors.js)
+   * Uma notificação de descontinuação é exibida para os usuários ao abrir uma página que usa versões mais antigas da biblioteca CORS, solicitando que eles atualizem.
+* **Ponto de Extensão para Página de Aterrissagem** - [Um novo ponto de extensão](/help/implementing/universal-editor/customizing.md#extending) foi introduzido para que as extensões apareçam no painel lateral da página de aterrissagem do Editor Universal.
+   * Agora os desenvolvedores podem especificar se as extensões são aplicáveis ao editor, à landing page ou a ambos, oferecendo maior personalização e usabilidade.
 
 ## Outras melhorias {#other-improvements}
 
-* **Sincronização de Campo de Rich Text**: a sincronização de conteúdo bruto e renderizado em campos de rich text no painel de propriedades foi aprimorada, solucionando problemas nos projetos do Edge Delivery Services em que o conteúdo de rich text e a representação renderizada podem diferir.
-* **Eventos do Modo de Edição**: o Editor Universal agora emite de forma confiável eventos do modo de edição, inclusive após recarregar aplicativos remotos.
+* **Correção de URLs inválidas em Itens recentes na página de aterrissagem** - Um problema foi resolvido em que as URLs exibidas na lista &quot;Recentes&quot; na página de aterrissagem do Editor Universal eram corrompidas.
+* **Sincronização de Tema no Unified Shell** - O Editor Universal agora sincroniza dinamicamente o tema com as configurações do Unified Shell do sistema e ajusta automaticamente entre os modos claro e escuro.
+   * Isso garante uma aparência visual consistente nos microfront-ends, incluindo seletores de fragmentos e ativos.
