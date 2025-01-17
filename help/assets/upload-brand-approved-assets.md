@@ -10,11 +10,11 @@ ht-degree: 5%
 
 ---
 
-# Fazer upload de ativos aprovados pela marca para o Centro de conteúdo. {#upload-brand-approved-assets-content-hub}
+# Fazer upload de ativos aprovados pela marca para o Centro de conteúdo {#upload-brand-approved-assets-content-hub}
 
 >[!CONTEXTUALHELP]
 >id="upload_assets_content_hub"
->title="Fazer upload de ativos aprovados pela marca para o Centro de conteúdo."
+>title="Fazer upload de ativos aprovados pela marca para o Centro de conteúdo"
 >abstract="Adicione ativos aprovados ao Centro de conteúdo a partir do sistema de arquivos local ou importe-os de fontes de dados do OneDrive ou do Dropbox. Todos os ativos são exibidos no nível superior do Centro de conteúdo, independentemente da estrutura de pastas, para aprimorar os recursos de pesquisa."
 
 | [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |

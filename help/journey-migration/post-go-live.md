@@ -17,7 +17,7 @@ ht-degree: 22%
 >id="aemcloud_golive_troubleshooting"
 >title="Solução de problemas do AEM"
 >abstract="Analise as práticas recomendadas para o desenvolvimento e o gerenciamento contínuos de registros. Saiba mais sobre ferramentas como o Developer Console e o CRXDE Lite, que ajudam a solucionar problemas do AEM."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs?lang=pt-BR" text="Acesso e gerenciamento de registros"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs" text="Acesso e gerenciamento de registros"
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#aem-as-a-cloud-service-development-tools" text="Ferramentas de desenvolvimento do AEM as a Cloud Service"
 
 Esta jornada é a última parte, para que você saiba como monitorar problemas e melhorar o desempenho após a conclusão da migração. Garanta a limpeza de arquivos temporários, analise as práticas recomendadas para desenvolvimento contínuo e gerencie logs.
@@ -60,7 +60,7 @@ Consulte [Acessando e Gerenciando Logs](/help/implementing/cloud-manager/manage-
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Ajuda e suporte"
->abstract="Entre em contato com a equipe de suporte do AEM para obter esclarecimentos ou tirar dúvidas."
+>abstract="Entre em contato com a equipe de suporte do Adobe AEM para obter esclarecimentos ou tirar dúvidas."
 >additional-url="https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html" text="Suporte para a Experience Cloud"
 
 Em caso de dúvidas sobre o acesso ao Cloud Service, entre em contato com o representante da Adobe ou com o [Suporte para o Experience Cloud](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) para obter mais detalhes.
