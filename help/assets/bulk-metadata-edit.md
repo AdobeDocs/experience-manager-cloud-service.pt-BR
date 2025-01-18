@@ -2,7 +2,7 @@
 title: Edição de metadados em massa na exibição do Assets
 description: Saiba como atualizar um conjunto predefinido de campos de metadados padrão para vários ativos disponíveis na Exibição do Assets simultaneamente.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 692ff4fbb5b7e703f727d6e20d87c4fc0abdb350
+source-git-commit: f986cbc979ecdb9e704257a8b94db9de0d67d4f1
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Execute essas etapas para editar os metadados de vários ativos em massa de uma 
      >
      >É possível editar os metadados de 100 ativos de cada vez.
 
-Para ver os metadados aplicados atualizados para um ativo, navegue até a página de detalhes do ativo (selecione o ativo e clique em **Detalhes**) e clique em ![](/help/assets/assets/info-icon-solid-black.svg) para ver os metadados do ativo no painel **Informações**.
+Para ver as atualizações de metadados aplicadas a um ativo, navegue até a página de detalhes do ativo (selecione o ativo e clique em **Detalhes**) e clique em ![](/help/assets/assets/info-icon-solid-black.svg) para ver os metadados do ativo no painel **Informações**.
 
 >[!NOTE]
 >
