@@ -4,7 +4,7 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
+source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
 workflow-type: tm+mt
 source-wordcount: '1806'
 ht-degree: 0%
@@ -67,7 +67,7 @@ O modelo AEM Forms Boilerplate permite iniciar rapidamente com um projeto AEM pr
    * `<repository>` indica seu repositório GitHub.
    * `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda seu repositório GitHub.
 
-   Por exemplo, se o nome da ramificação for `main`, o repositório for `wefinance` e o proprietário for `wkndform`, o site estará funcionando em [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)
+   Por exemplo, se o nome da ramificação for `main`, o repositório for `wefinance` e o proprietário for `wkndform`, o site estará funcionando em [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)
 
 
 
