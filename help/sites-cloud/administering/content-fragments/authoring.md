@@ -1,13 +1,13 @@
 ---
 title: Criação de fragmentos de conteúdo
-description: Entenda como criar conteúdo para seus Fragmentos de conteúdo e crie variações desse conteúdo de acordo com a finalidade. Isso proporciona flexibilidade adicional para entregas headless e criação de páginas.
+description: Entenda como criar conteúdo para seus Fragmentos de conteúdo e crie variações desse conteúdo de acordo com a finalidade. Os fragmentos de conteúdo fornecem flexibilidade adicional para entrega headless e criação de página.
 feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 6a971fd5d0e071f72c17cf0a42f3dd8da0b476ae
+source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
 workflow-type: tm+mt
-source-wordcount: '2841'
+source-wordcount: '2851'
 ht-degree: 3%
 
 ---
@@ -68,7 +68,9 @@ Ao abrir o Editor de fragmento de conteúdo pela primeira vez, você vê quatro 
 * painel central: mostra os campos reais e o conteúdo da variação selecionada
    * permite editar o conteúdo
       * quando configurado (como vários) no modelo, vários tipos de dados permitem **Adicionar** instâncias do campo relevante
-   * se os campos **Espaço reservado de guia** forem definidos no modelo, eles serão mostrados aqui e poderão ser usados para navegação; eles serão apresentados horizontalmente ou como uma lista suspensa.
+   * se os campos **Espaço Reservado para Guia** forem definidos no modelo, eles serão mostrados aqui e:
+      * pode ser usado para navegar
+      * será exibido horizontalmente ou como uma lista suspensa
 
   >[!NOTE]
   >
@@ -102,7 +104,7 @@ No painel esquerdo, você pode ver:
 
 ### Seguir links {#follow-links}
 
-Em várias partes do editor, é possível ver o ícone de link. Isso pode ser usado para abrir o item exibido; por exemplo, um Modelo de fragmento de conteúdo, uma Referência principal ou um fragmento que está sendo referenciado:
+Em várias partes do editor, é possível ver o ícone de link. Esse ícone pode ser usado para abrir o item mostrado; por exemplo, um Modelo de fragmento de conteúdo, uma Referência principal ou um fragmento que é referenciado:
 
 ![Editor de Fragmento de Conteúdo - Ícone de Link](assets/cf-authoring-link-icon.png)
 
@@ -475,7 +477,7 @@ Por exemplo:
 
 ## Comentar no seu fragmento {#commenting-on-your-fragment}
 
-A guia **Comentários** no painel direito fornece os seguintes recursos:
+Para permitir que você colabore no produto e no contexto, a guia **Comentários**, no painel direito, fornece os seguintes recursos:
 
 * Adicionar um novo comentário
 * Marcar usuários específicos em um comentário
