@@ -4,9 +4,9 @@ description: As opções da lista suspensa são incluídas em uma planilha disti
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,6 @@ Os benefícios de carregar opções suspensas em uma planilha separada são:
 
 * Gerenciamento simplificado: mantenha as opções suspensas em um local centralizado para facilitar atualizações e adições.
 * Maior eficiência: elimine a necessidade de adicionar manualmente longas listas de opções na definição do formulário.
-
-
-
 
 ![Opções suspensas](/help/forms/assets/drop-down-options.png)
 
@@ -58,8 +55,8 @@ Insira suas opções de país na coluna &quot;Option&quot; (e na coluna &quot;Va
 
 1. Visualize e publique a planilha `shared-country` usando o [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
-   Consulte a URL que mostra a folha `shared-country`:
-https://main--wefinance--wkndforms.hlx.live/enquiry.json?sheet=country
+   Por exemplo, se o repositório do seu projeto for chamado de &quot;wefinance&quot;, ele estará localizado sob o proprietário da conta &quot;wkndform&quot; e você estiver usando a ramificação &quot;main&quot;, a URL que mostra a planilha `shared-country`:
+   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
 
 >[!NOTE]
 >
@@ -79,13 +76,14 @@ A propriedade `Options` de um campo `select` aceita uma URL. A URL retorna uma m
 
    ![Lista suspensa do país](/help/forms/assets/load-dropdown-options-form.png)
 
-Você pode consultar a [planilha de consulta](/help/forms/assets/enquiry-options.xlsx) para adicionar a URL para carregar opções de listas suspensas.
+Você pode consultar a [planilha de consulta](/help/edge/assets/enquiry.xlsx) para adicionar a URL para carregar opções de listas suspensas.
 
 Depois de integrar a URL à definição de formulário para carregar as opções da lista suspensa, as opções para a lista suspensa `Destination` começam a aparecer na URL.
 
-Consulte a URL abaixo, que exibe o formulário `enquiry` exibindo as opções salvas em uma planilha separada:
+<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
 
-https://main--wefinance--wkndforms.hlx.live/enquiry-form
+[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+-->
 
 ## Consulte também:
 

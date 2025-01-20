@@ -8,16 +8,16 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c52d649e569ef427e70c85a88fa0f48fcc534e9e
+source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 3%
+source-wordcount: '1060'
+ht-degree: 5%
 
 ---
 
 # Introdução
 
-<span class="preview"> O recurso está disponível no programa de adoção antecipada. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> O recurso está disponível no programa de adoção antecipada. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O Utilitário de conversão do Forms, parte do conjunto da [Ferramenta de modernização do AEM](https://opensource.adobe.com/aem-modernize-tools/), ajuda a converter facilmente o Adaptive Forms criado com componentes fundamentais herdados em formulários que aproveitam os recursos modernos e compatíveis dos Componentes principais.
 
@@ -37,7 +37,18 @@ O Utilitário de conversão do Forms converte o Forms adaptável, que é baseado
 
 * Nas conversões bem-sucedidas, todas as regras aplicadas ao formulário são removidas. As regras não são migradas automaticamente. Você deve recriar manualmente e aplicar essas regras ao formulário convertido.
 * As configurações de tradução usadas no formulário original não são transferidas. Reconfigure a tradução para o formulário convertido.
-  <!-- * If the form built on Foundation Components contains custom function rules, you have to rewrite these rules for the converted form based on Core Components.-->
+* Se o formulário criado nos Componentes de base contiver scripts ou regras de função personalizadas, é necessário regravá-los para o formulário convertido com base nos Componentes principais.
+* Os seguintes componentes de base OOTB ainda não são compatíveis com os Componentes principais e, portanto, são excluídos no formulário convertido:
+   * Bloco do Adobe Sign
+   * Gráfico
+   * Listagem do anexo de arquivo
+   * Espaço reservado para nota de rodapé
+   * Opção de imagem
+   * Botão Próximo
+   * Botão Anterior
+   * Rabiscar a assinatura
+   * Etapa de resumo
+   * Barra de ferramentas
 
 ## Pré-requisitos para usar as ferramentas de modernização do AEM
 
@@ -68,7 +79,7 @@ Execute as seguintes etapas para instalar as Ferramentas de modernização do AE
 
    `java -jar aem-author-p4502.jar`
 
-1. Clonar o repositório da [Ferramenta de Modernização de AEM](/help/journey-migration/refactoring-tools/aem-modernization-tools.md) no sistema local.
+1. Clonar o repositório da [Ferramenta de Modernização de AEM](https://github.com/adobe/forms-modernizer) no sistema local.
 
    ```Shell
    git clone [Path of Git repository of AEM Modernize Tool]

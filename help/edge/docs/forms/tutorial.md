@@ -4,9 +4,9 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 8cf72ab1958b313196341bef4f3ece121721ac14
 workflow-type: tm+mt
-source-wordcount: '1850'
+source-wordcount: '1806'
 ht-degree: 0%
 
 ---
@@ -61,27 +61,27 @@ O modelo AEM Forms Boilerplate permite iniciar rapidamente com um projeto AEM pr
    >
    > Se você estiver usando o GitHub Enterprise com filtragem de IP, é possível adicionar o seguinte IP à inclui na lista de permissões: 3.227.118.73
 
-   Parabéns! Você tem um novo site em execução em `https://<branch>--<repo>--<owner>.hlx.page/`.
+   Parabéns! Você tem um novo site em execução em `https://<branch>--<repo>--<owner>.aem.page/`.
 
    * `<branch>` refere-se à ramificação do seu repositório GitHub.
    * `<repository>` indica seu repositório GitHub.
    * `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda seu repositório GitHub.
 
-   Por exemplo, se o nome da ramificação for `main`, o repositório for `wefinance` e o proprietário for `wkndforms`, o site estará funcionando em [https://main--wefinance--wkndforms.hlx.page/](https://main--wefinance--wkndforms.hlx.page/).
+   Por exemplo, se o nome da ramificação for `main`, o repositório for `wefinance` e o proprietário for `wkndform`, o site estará funcionando em [https://main--wefinance--wkndforms.aem.page/](https://main--wefinance--wkndform.aem.page/)
 
 
 
 ### Vincular sua própria fonte de conteúdo
 
-Seu repositório GitHub recém-criado aponta para [exemplo de conteúdo armazenado em uma pasta da Unidade Google](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). Esse conteúdo somente leitura fornece um excelente ponto de partida para seus formulários. Sinta-se à vontade para copiá-lo em seu próprio Google Drive e personalizá-lo para atender às suas necessidades.
+<!--Your newly created GitHub repository points to [example content stored in a Google Drive folder](https://drive.google.com/drive/folders/1bvjfi6TqpYA7DvbX6kKc-m7FgHuJ4RUQ). This read-only content provides a great starting point for your forms. Feel free to copy it into your own Google Drive and customize it to fit your needs.
 
-![Conteúdo de exemplo na Unidade Google](/help/edge/assets/folder-with-sample-content.png)
+![Sample Content on Google Drive](/help/edge/assets/folder-with-sample-content.png)-->
 
 Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e apontar seu repositório GitHub para sua própria pasta de conteúdo:
 
 1. Crie uma nova pasta especificamente para o conteúdo do AEM no Google Drive ou no Microsoft SharePoint. Este documento usa uma pasta criada no Microsoft SharePoint.
 
-1. Compartilhe a pasta com o usuário do Adobe Experience Manager (helix@adobe.com).
+1. Compartilhe a pasta com o usuário do Adobe Experience Manager (forms@adobe.com).
 
    ![Use a opção Gerenciar Acesso para compartilhar a pasta com o Usuário AEM - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
@@ -90,13 +90,13 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
 
    Certifique-se de ter fornecido direitos de edição na pasta ao usuário do Adobe Experience Manager.
 
-   ![Compartilhar pasta com Usuário AEM, fornecer direitos de edição-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png)
+   ![Compartilhar pasta com Usuário AEM, fornecer direitos de edição-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![Compartilhar pasta com Usuário AEM, fornecer direitos de edição- Unidade Google](/help/edge/assets/add-aem-user-google-folder.png)
+   ![Compartilhar pasta com Usuário AEM, fornecer direitos de edição- Unidade Google](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
-1. Copie o [conteúdo de exemplo armazenado na pasta da Unidade Google](https://drive.google.com/drive/folders/17LSiMZC77N8tCJRW45TnHHGcG8V3SLG_) para sua pasta. Para copiar:
+1. Copie o [conteúdo de exemplo](/help/edge/assets/wefinance1.zip) para sua pasta. Para copiar:
 
-   1. Baixe os arquivos juntos ou baixe arquivos individuais.
+   1. Descompacte a pasta baixada e copie o conteúdo.
 
       ![Baixar Conteúdo de Exemplo](/help/edge/assets/download-sample-content.png)
 
@@ -113,7 +113,7 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
 
    1. Vá para o repositório GitHub criado anteriormente usando a Matriz do AEM Forms.
    1. Abra o `fstab.yaml` para edição.
-   1. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o usuário AEM (helix@adobe.com).
+   1. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o usuário AEM (forms@adobe.com).
 
       ![Conteúdo de exemplo na Unidade Google](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -175,7 +175,7 @@ Para visualizar conteúdo não publicado:
 
 
    ```HTML
-   https://<branch>--<repository>--<owner>.hlx.live
+   https://<branch>--<repository>--<owner>.aem.live
    ```
 
    * `<branch>` refere-se à ramificação do seu repositório GitHub.
@@ -183,11 +183,9 @@ Para visualizar conteúdo não publicado:
    * `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda seu repositório GitHub.
 
 
-   URL `https://<branch>--<repo>--<owner>.hlx.page/enquiry`.
+   URL `https://<branch>--<repo>--<owner>.aem.page/enquiry`.
 
-   Por exemplo, se o repositório do seu projeto for chamado de &quot;wefinance&quot;, estiver localizado sob o proprietário da conta &quot;wkndforms&quot; e você estiver usando a ramificação &quot;main&quot;, o URL será:
-
-   [https://main--wefinance--wkndforms.hlx.page](https://main--wefinance--wkndforms.hlx.page).
+   Por exemplo, se o repositório do seu projeto for denominado &quot;wefinance&quot;, estiver localizado sob o proprietário da conta &quot;wkndform&quot; e você estiver usando a ramificação &quot;main&quot; e o nome do formulário como `enquiry`, a URL será: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry).
 
 ### Criar um formulário
 
@@ -195,11 +193,11 @@ O conteúdo de amostra inclui uma folha de &quot;consulta&quot; que serve como m
 
 ![Formulário de consulta](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-Vamos começar com a atualização de um rótulo de campo. Abra a folha &#39;consulta&#39; para edição, altere o rótulo do botão enviar para `Let's Chat` e use o AEM Sidekick para visualizar e publicar o arquivo.
+Vamos começar com a atualização de um rótulo de campo. Abra a folha &#39;consulta&#39; para edição, altere o rótulo do botão enviar para `Let's Talk` e use o AEM Sidekick para visualizar e publicar o arquivo.
 
 ![Formulário de consulta](/help/edge/assets/enquiry-form-preview-publish.png)
 
-Ao visualizar ou publicar o arquivo, uma versão JSON do arquivo é exibida em uma nova guia. Copie o URL de visualização (.hlx.page) ou publicação (.hlx.live) do arquivo.
+Ao visualizar ou publicar o arquivo, uma versão JSON do arquivo é exibida em uma nova guia. Copie o URL de visualização (.aem.page) ou publicação (.aem.live) do arquivo.
 
 ![JSON da planilha de formulário](/help/edge/assets//preview-and-publish-enquiry-form.png)
 
@@ -216,13 +214,16 @@ Para visualizar o formulário de consulta atualizado, vá para o seguinte URL:
 
 
 ```HTML
-    https://<branch>--<repository>--<owner>.hlx.page/enquiry
+    https://<branch>--<repository>--<owner>.aem.page/enquiry
        
 ```
 
-O rótulo do botão de envio é atualizado para `Let's Chat`.
+O rótulo do botão de envio é atualizado para `Let's Talk`.
 
-![Formulário de consulta](/help/edge/assets/updated-form.png)
+[![Formulário de consulta](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+
+URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+
 
 Para obter informações detalhadas sobre como criar e publicar um novo formulário, vá para o guia [criar um formulário](/help/edge/docs/forms/create-forms.md).
 
@@ -254,8 +255,8 @@ A pasta Bloco de Forms Adaptável `blocks/form` é o seu playground para estilo 
 
 Pronto para apresentar sua criação? Use o Git para confirmar e enviar suas alterações. Isso atualiza seus ambientes de visualização e produção acessíveis nesses URLs (substitua espaços reservados pelos detalhes do projeto):
 
-Visualização: `https://<branch>--<repo>--<owner>.hlx.page/`
-Produção: `https://<branch>--<repo>--<owner>.hlx.live/`
+Visualização: `https://<branch>--<repo>--<owner>.aem.page/`
+Produção: `https://<branch>--<repo>--<owner>.aem.live/`
 
 Parabéns! Você configurou seu ambiente de desenvolvimento local com êxito e implantou suas alterações.
 
