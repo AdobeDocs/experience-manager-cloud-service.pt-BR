@@ -4,13 +4,13 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
+source-git-commit: 42db7e5d4896a4a488643cb54f0b77cf4db86f3e
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
-
 
 # Serviço de envio de Forms com o Edge Delivery Services Forms
 
@@ -31,7 +31,7 @@ Algumas vantagens de usar o Serviço de envio do Forms com planilhas são:
 Abaixo estão os pré-requisitos para usar o serviço de Envio do Forms:
 
 * Certifique-se de que o projeto AEM tenha o Bloco de formulário adaptável mais recente.
-* Incluir na lista de permissões Verifique se o repositório foi adicionado ao arquivo para usar o serviço de envio do Forms. Preencha o [formulário](https://main--afb--adobe.hlx.page/docs/docbased/submit#feature-enablement-request) para solicitar o Serviço de Envio do Forms.
+* Incluir na lista de permissões Verifique se o repositório foi adicionado ao arquivo para usar o serviço de envio do Forms. mailto:aem-forms-ea@adobe.com com o nome da organização do GitHub e o nome do repositório para adicioná-los ao arquivo de inclui na lista de permissões para usar o serviço de envio do Forms.
 
 ## Configurar o serviço de envio do Forms
 

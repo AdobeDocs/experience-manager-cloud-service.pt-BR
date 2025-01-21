@@ -4,9 +4,9 @@ description: Crie formulários poderosos mais rápido usando planilhas e campos 
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 086706a1b9ab211738ea2978b73e1681b04ddac2
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Configurar seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados
 
 
-Depois de [criar e visualizar o formulário](/help/edge/docs/forms/create-forms.md), é hora de habilitar a planilha correspondente para começar a receber dados. Você pode ativar manualmente a planilha para aceitar dados ou usar APIs de Administração para permitir que uma planilha aceite dados.
+Depois que você tiver [criado e visualizado o formulário](/help/edge/docs/forms/create-forms.md), será hora de habilitar a planilha correspondente para começar a receber dados. Você pode ativar manualmente a planilha para aceitar dados ou usar APIs de Administração para permitir que uma planilha aceite dados.
 
 ![Ecossistema de criação baseado em documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
@@ -34,19 +34,19 @@ Para permitir que a planilha aceite dados
    >
    > Se a planilha `incoming` não estiver presente, o AEM não enviará dados para a planilha.
 
-2. Nesta planilha, insira uma tabela chamada &quot;input_form&quot;. Selecione o número de colunas necessárias para corresponder aos nomes dos campos de formulário. Em seguida, na barra de ferramentas, vá para Insert > Table e clique em OK.
+1. Nesta planilha, insira uma tabela chamada &quot;input_form&quot;. Selecione o número de colunas necessárias para corresponder aos nomes dos campos de formulário. Em seguida, na barra de ferramentas, vá para Insert > Table e clique em OK.
 
-3. Altere o nome da tabela para &quot;input_form&quot;. No Microsoft Excel, para alterar o nome da tabela, selecione a tabela e clique em Design da tabela.
+1. Altere o nome da tabela para &quot;input_form&quot;. No Microsoft Excel, para alterar o nome da tabela, selecione a tabela e clique em Design da tabela.
 
-4. Em seguida, adicione os nomes dos campos de formulário como cabeçalhos da tabela. Para garantir que os campos sejam exatamente os mesmos, é possível copiá-los e colá-los na planilha &quot;padrão compartilhado&quot;.  Na planilha &quot;shared-default&quot;, selecione e copie as IDs de formulário listadas na coluna &quot;Name&quot;, exceto para o campo submit.
+1. Em seguida, adicione os nomes dos campos de formulário como cabeçalhos da tabela. Para garantir que os campos sejam exatamente os mesmos, é possível copiá-los e colá-los na planilha &quot;shared-aem&quot;.  Na planilha &quot;shared-aem&quot;, selecione e copie as IDs de formulário listadas na coluna &quot;Name&quot;, exceto para o campo submit.
 
-5. Na planilha de &quot;entrada&quot;, selecione Colar especial > Transpor linhas para colunas para copiar as IDs de campo como cabeçalhos de coluna nesta nova planilha. Keep only os campos cujos dados precisam capturar outros podem ser ignorados.
+1. Na planilha de &quot;entrada&quot;, selecione Colar especial > Transpor linhas para colunas para copiar as IDs de campo como cabeçalhos de coluna nesta nova planilha. Keep only os campos cujos dados precisam capturar outros podem ser ignorados.
 
-   Cada valor na coluna `Name` da folha `shared-default`, excluindo o botão enviar, pode servir como um cabeçalho na folha `incoming`. Por exemplo, considere a seguinte imagem que ilustra cabeçalhos para um formulário de &quot;consulta&quot;:
+   Cada valor na coluna `Name` da folha `shared-aem`, excluindo o botão enviar, pode servir como um cabeçalho na folha `incoming`. Por exemplo, considere a seguinte imagem que ilustra cabeçalhos para um formulário de &quot;consulta&quot;:
 
    ![Campos de um formulário contact-us](/help/edge/assets/contact-us-form-excel-sheet-fields.png)
 
-6. Use a extensão [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar as atualizações de formulário. Sua planilha está pronta para aceitar os envios de formulários recebidos.
+1. Use a extensão [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar as atualizações de formulário. Sua planilha está pronta para aceitar os envios de formulários recebidos.
 
    >[!NOTE]
    >
@@ -59,7 +59,7 @@ Depois que a planilha estiver configurada para receber dados, você poderá [vis
 
 >[!WARNING]
 >
->  Nunca as planilhas de &quot;padrão compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
+>  Nunca as folhas do &quot;aem compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
 
 <!--
 ### Use Admin APIs to enable a spreadsheet to accept data

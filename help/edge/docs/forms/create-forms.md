@@ -4,9 +4,9 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: 4dcc580a6e3b49b1839fbb0f101c172bddf5cfcc
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -60,8 +60,6 @@ Ensure a smooth GitHub build process by addressing potential issues:
 * **Handle Linting Errors:**
     Should you come across any linting errors, you can bypass them. Open the [EDS Project]/package.json file and modify the "lint" script from "lint": "npm run lint:js && npm run lint:css" to "lint": "echo 'skipping linting for now'". Save the file and commit the changes to your GitHub project. -->
 
-+++
-
 +++ Etapa 1: Crie um formulário usando o Microsoft Excel ou a Planilha do Google.
 
 Em vez de navegar por processos complexos, é possível criar um formulário sem esforço usando uma planilha. Você pode definir as linhas e colunas que compõem a estrutura do formulário. Cada linha representa um [campo de formulário](/help/edge/docs/forms/form-components.md#available-components) individual e os cabeçalhos de coluna definem as [propriedades de campo](/help/edge/docs/forms/form-components.md#components-properties) correspondentes.
@@ -76,15 +74,15 @@ Para continuar com a criação do formulário:
 
 1. Crie uma Pasta de trabalho do Microsoft Excel ou uma Planilha do Google em qualquer lugar no diretório do projeto do AEM Edge Delivery. Por exemplo, crie uma planilha com o nome `enquiry` no diretório do projeto AEM Edge Delivery no Google Drive.
 
-   ![Conteúdo de exemplo na Unidade Google](/help/edge/assets/upload-sample-files-to-your-content-folder.png)
+   <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
 1. Verifique se a planilha está compartilhada com o usuário AEM apropriado (por exemplo `forms@adobe.com`) [de acordo com as configurações especificadas para seu projeto](https://www.aem.live/docs/setup-customer-sharepoint). Conceda ao usuário permissão de edição para a planilha.
 
-1. Abra a planilha criada e renomeie a planilha padrão como &quot;shared-default&quot;.
+1. Abra a planilha criada e renomeie a planilha padrão como &quot;shared-aem&quot;.
 
    ![renomear planilha padrão como &quot;padrão compartilhado&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
 
-1. Para adicionar os campos de formulário, insira linhas e cabeçalhos de colunas na planilha &quot;shared-default&quot;. Cada linha deve representar um [campo de formulário](/help/edge/docs/forms/form-components.md#available-components), com cabeçalhos de coluna definindo o campo correspondente [propriedades](/help/edge/docs/forms/form-components.md#components-properties).
+1. Para adicionar os campos de formulário, insira linhas e cabeçalhos de coluna na planilha &quot;shared-aem&quot;. Cada linha deve representar um [campo de formulário](/help/edge/docs/forms/form-components.md#available-components), com cabeçalhos de coluna definindo o campo correspondente [propriedades](/help/edge/docs/forms/form-components.md#components-properties).
 
 
    Para um início rápido, considere copiar o conteúdo da [Planilha de consulta](/help/edge/assets/enquiry.xlsx) para a sua planilha. Depois de copiar o conteúdo, salve sua planilha.
@@ -109,7 +107,8 @@ Para continuar com a criação do formulário:
 
    Por exemplo, se o repositório do seu projeto for chamado de &quot;wefinance&quot;, estiver localizado na conta &quot;wkndform&quot; e você estiver usando a ramificação &quot;main&quot;, o URL será semelhante ao seguinte:
 
-   [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json)
+`https://main--wefinance--wkndform.aem.page/enquiry.json`
+&lt;!—(https://main--wefinance--wkndform.aem.page/enquiry.json)-->
 
 
 +++
@@ -131,7 +130,7 @@ Até agora, você preparou a estrutura do formulário. Agora, para visualizar o 
 
    | Formulário |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
 
    ![Adicionar bloco adaptável do Forms à sua página da Web](/help/edge/assets/enquiry-doc-to-embed-form.png)

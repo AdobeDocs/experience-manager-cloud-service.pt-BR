@@ -4,9 +4,9 @@ description: As opções da lista suspensa são incluídas em uma planilha disti
 feature: Edge Delivery Services
 exl-id: 5b0bc1b6-6e33-41f3-b7c1-4d997787b6cd
 role: Admin, Architect, Developer
-source-git-commit: 35fe88437dd86d490feeafe5bfc25ffda23234fb
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,8 @@ Insira suas opções de país na coluna &quot;Option&quot; (e na coluna &quot;Va
 1. Visualize e publique a planilha `shared-country` usando o [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content).
 
    Por exemplo, se o repositório do seu projeto for chamado de &quot;wefinance&quot;, ele estará localizado sob o proprietário da conta &quot;wkndform&quot; e você estiver usando a ramificação &quot;main&quot;, a URL que mostra a planilha `shared-country`:
-   [https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country](https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country`
+   <!--(https://main--wefinance--wkndform.aem.live/enquiry.json?sheet=country)  -->
 
 >[!NOTE]
 >
@@ -80,9 +81,10 @@ Você pode consultar a [planilha de consulta](/help/edge/assets/enquiry.xlsx) pa
 
 Depois de integrar a URL à definição de formulário para carregar as opções da lista suspensa, as opções para a lista suspensa `Destination` começam a aparecer na URL.
 
-<!-- For example, if your project's repository is named "wefinance", it's located under the account owner "wkndform", and you're using the "main" branch, the below URL displays the `enquiry` form displaying the options saved in the separate sheet:
+Por exemplo, se o repositório do seu projeto for chamado &quot;wefinance&quot;, estiver localizado sob o proprietário da conta &quot;wkndform&quot; e você estiver usando a ramificação &quot;main&quot;, a URL abaixo exibirá o formulário `enquiry` exibindo as opções salvas na planilha separada:
 
-[https://main--wefinance--wkndform.aem.live/enquiry-form](https://main--wefinance--wkndform.aem.live/enquiry-form) 
+`https://main--wefinance--wkndform.aem.live/enquiry-form`
+<!--(https://main--wefinance--wkndform.aem.live/enquiry-form) 
 -->
 
 ## Consulte também:

@@ -4,9 +4,9 @@ description: Publish e Edge Delivery Services para AEM Forms
 feature: Edge Delivery Services
 exl-id: dcb16da1-dcc2-4529-8859-0716e727b54d
 role: Admin, Architect, Developer
-source-git-commit: 4e6045aadd7d927851e431e2204cb2d56767a5a3
+source-git-commit: 81fbf43572c5129efb0a0718b408f0c9ae4a5ad3
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '587'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,8 @@ Quando estiver pronto para compartilhar o formulário com os clientes para colet
 
    Por exemplo, se o repositório do seu projeto for chamado de &quot;wefinance&quot;, estiver localizado na conta &quot;wkndform&quot; e você estiver usando a ramificação e o formulário &quot;main&quot; como &quot;query&quot;, o URL será semelhante ao seguinte:
 
-   [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json)
+   `https://main--wefinance--wkndform.aem.live/enquiry.json`
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry.json)-->
 
 +++
 
@@ -74,7 +75,7 @@ Para adicionar o formulário à sua página da Web:
 
    | Formulário |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
    ![Adicionar um bloco chamado &#39;Formulário&#39; ao arquivo](/help/edge/assets/enquiry-doc-to-embed-form.png)
 
@@ -95,16 +96,16 @@ Para adicionar o formulário à sua página da Web:
 
    | Formulário |
    |---|
-   | [https://main--wefinance--wkndform.aem.page/enquiry.json](https://main--wefinance--wkndform.aem.page/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.page/enquiry.json` |
 
 
    **URL DO Publish**
 
    | Formulário |
    |---|
-   | [https://main--wefinance--wkndform.aem.live/enquiry.json](https://main--wefinance--wkndform.aem.live/enquiry.json) |
+   | `https://main--wefinance--wkndform.aem.live/enquiry.json` |
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a página da Web. A página agora exibe o formulário. Por exemplo, este é o formulário baseado na [planilha de consulta](/help/edge/assets/enquiry.xlsx):
+1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a página da Web. A página agora exibe o formulário. Por exemplo, este é o formulário baseado na [planilha de consulta](/help/edge/assets/enquiry-form.docx):
 
 
    ![Um exemplo de formulário EDS](/help/edge/assets/updated-form.png)

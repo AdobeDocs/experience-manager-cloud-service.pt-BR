@@ -4,9 +4,9 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 72f2b67c805f964c93a8a3e2883b3d3160fe5723
+source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -67,9 +67,8 @@ O modelo AEM Forms Boilerplate permite iniciar rapidamente com um projeto AEM pr
    * `<repository>` indica seu repositório GitHub.
    * `<owner>` refere-se ao nome de usuário da sua conta GitHub que hospeda seu repositório GitHub.
 
-   Por exemplo, se o nome da ramificação for `main`, o repositório for `wefinance` e o proprietário for `wkndform`, o site estará funcionando em [https://main--wefinance--wkndform.aem.page](https://main--wefinance--wkndform.aem.page)
-
-
+   Por exemplo, se o nome da ramificação for `main`, o repositório for `wefinance` e o proprietário for `wkndforms`, o site estará ativo e em execução em `https://main--wefinance--wkndforms.aem.page`
+&lt;!—(https://main--wefinance--wkndform.aem.page)-->
 
 ### Vincular sua própria fonte de conteúdo
 
@@ -135,8 +134,6 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
 
    1. Confirme o arquivo `fsatb.yaml` atualizado depois de atualizar a referência e tudo ficará bem. Se você encontrar problemas de compilação, consulte [Solução de problemas de compilação do GitHub](#troubleshooting-github-build-issues).
 
-
-
       ![Confirmar arquivo fsatab.yaml atualizado](/help/edge/assets/commit-updated-fstab-yaml.png)
 
       Isso conecta sua pasta de conteúdo ao seu site. Depois de atualizar a referência, você pode enfrentar os erros &quot;404 Não encontrado&quot; inicialmente. Isso ocorre porque seu conteúdo ainda não foi visualizado. A próxima seção explica como começar a criar e visualizar seu conteúdo.
@@ -185,7 +182,8 @@ Para visualizar conteúdo não publicado:
 
    URL `https://<branch>--<repo>--<owner>.aem.page/enquiry`.
 
-   Por exemplo, se o repositório do seu projeto for denominado &quot;wefinance&quot;, estiver localizado sob o proprietário da conta &quot;wkndform&quot; e você estiver usando a ramificação &quot;main&quot; e o nome do formulário como `enquiry`, a URL será: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry).
+   Por exemplo, se o repositório do seu projeto se chamar &quot;wefinance&quot;, estiver localizado sob o proprietário da conta &quot;wkndform&quot; e você estiver usando a ramificação &quot;main&quot; e o nome do formulário como `enquiry`, a URL será: `https://main--wefinance--wkndform.aem.live/enquiry`.
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry).-->
 
 ### Criar um formulário
 
@@ -199,7 +197,7 @@ Vamos começar com a atualização de um rótulo de campo. Abra a folha &#39;con
 
 Ao visualizar ou publicar o arquivo, uma versão JSON do arquivo é exibida em uma nova guia. Copie o URL de visualização (.aem.page) ou publicação (.aem.live) do arquivo.
 
-![JSON da planilha de formulário](/help/edge/assets//preview-and-publish-enquiry-form.png)
+![JSON da planilha de formulário](/help/edge/assets/preview-and-publish-enquiry-form.png)
 
 Abra o arquivo `enquiry` e substitua a URL no bloco de formulário pela URL do arquivo copiado na etapa anterior. Certifique-se de que o URL seja um hiperlink.
 
@@ -220,9 +218,12 @@ Para visualizar o formulário de consulta atualizado, vá para o seguinte URL:
 
 O rótulo do botão de envio é atualizado para `Let's Talk`.
 
-[![Formulário de consulta](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.live/enquiry)
+![Formulário de consulta](/help/edge/assets/updated-form.png)
 
-URL: [https://main--wefinance--wkndform.aem.live/enquiry](https://main--wefinance--wkndform.aem.live/enquiry)
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
+
+URL: `https://main--wefinance--wkndform.aem.live/enquiry`
+&lt;!—(https://main--wefinance--wkndform.aem.live/enquiry)-->
 
 
 Para obter informações detalhadas sobre como criar e publicar um novo formulário, vá para o guia [criar um formulário](/help/edge/docs/forms/create-forms.md).
