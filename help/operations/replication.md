@@ -4,7 +4,7 @@ description: Saiba mais sobre distribuição e solução de problemas de replica
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 60006b0e0b5215263b53cbb7fec840c47fcef1a8
+source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
 workflow-type: tm+mt
 source-wordcount: '1701'
 ht-degree: 31%
@@ -99,7 +99,7 @@ Criar um Modelo de Fluxo de Trabalho que use a etapa de processo `TreeActivation
 | Nome | descrição |
 | ------------- | ------------------------------------------- |
 | onlyModified | Nós modificados desde a última publicação |
-| onlyPublished | Nós publicados antes de |
+| onlyAtivated | Nós publicados antes de |
 
 
 **Retomar suporte**
