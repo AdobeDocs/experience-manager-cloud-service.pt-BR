@@ -4,9 +4,9 @@ description: Saiba mais sobre como encaminhar logs para fornecedores de registro
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: f6de6b6636d171b6ab08fdf432249b52c2318c45
+source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1975'
 ht-degree: 0%
 
 ---
@@ -31,23 +31,21 @@ Há uma opção para que os registros AEM e Apache/Dispatcher sejam roteados por
 
 Observe que a largura de banda da rede associada aos registros enviados ao destino de registro é considerada parte do uso de E/S da rede da organização.
 
-
 ## Como este artigo está organizado {#how-organized}
 
 Este artigo está organizado da seguinte maneira:
 
 * Configuração - comum para todos os destinos de registro
+* Transporte e rede avançada - considere a configuração da rede antes de criar a configuração de registro
 * Configurações de destino de registro - cada destino tem um formato um pouco diferente
 * Formatos de Entrada de Log - informações sobre os formatos de entrada de log
-* Rede avançada - envio de registros AEM e Apache/Dispatcher por meio de uma saída dedicada ou por meio de uma VPN
 * Migração do encaminhamento de log herdado - como migrar do encaminhamento de log previamente configurado pelo Adobe para a abordagem de autoatendimento
-
 
 ## Configurar {#setup}
 
 1. Crie um arquivo chamado `logForwarding.yaml`. Ele deve conter metadados, conforme descrito no [artigo sobre o pipeline de configuração](/help/operations/config-pipeline.md#common-syntax) (**kind** deve ser definido como `LogForwarding` e a versão definida como &quot;1&quot;), com uma configuração semelhante à seguinte (usamos o Splunk como exemplo).
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -71,7 +69,7 @@ Os tokens na configuração (como `${{SPLUNK_TOKEN}}`) representam segredos que 
 
 É possível definir valores diferentes entre logs CDN e logs AEM (incluindo Apache/Dispatcher), incluindo um bloco **cdn** e/ou **aem** adicional após o bloco **padrão**, em que as propriedades podem substituir as definidas no bloco **padrão**; somente a propriedade habilitada é necessária. Um possível caso de uso poderia ser o uso de um índice do Splunk diferente para logs CDN, como ilustra o exemplo abaixo.
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -91,7 +89,7 @@ Os tokens na configuração (como `${{SPLUNK_TOKEN}}`) representam segredos que 
 
 Outro cenário é desabilitar o encaminhamento dos logs CDN ou dos logs AEM (incluindo o Apache/Dispatcher). Por exemplo, para encaminhar apenas os logs CDN, é possível configurar o seguinte:
 
-```
+```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -107,13 +105,90 @@ Outro cenário é desabilitar o encaminhamento dos logs CDN ou dos logs AEM (inc
          enabled: false
 ```
 
+## Transporte e rede avançada {#transport-advancednetworking}
+
+Algumas organizações escolhem restringir qual tráfego pode ser recebido pelos destinos de registro, outras podem exigir o uso de portas diferentes de HTTPS (443).  Nesse caso, a [Rede Avançada](/help/security/configuring-advanced-networking.md) precisará ser configurada antes da implantação da configuração de encaminhamento de log.
+
+Use a tabela abaixo para ver quais são os requisitos para a configuração avançada de rede e registro com base no fato de você estar usando ou não a porta 443 e se você precisa ou não que seus registros apareçam a partir de um endereço IP fixo.
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>Porta de destino</th>
+      <th>Requisito para que os registros apareçam do IP fixo?</th>
+      <th>Redes avançadas necessárias</th>
+      <th>Definição de Porta LogForwarding.yaml Necessária</th>
+    </tr>
+    <tr>
+      <td rowspan="2">HTTPS (443)</td>
+      <td>Não</td>
+      <td>Não</td>
+      <td>Não</td>
+    </tr>
+    <tr>
+      <td>Sim</td>
+      <td>Sim, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">Saída Dedicada</a></td>
+      <td>Não</td>
+    <tr>
+    <tr>
+      <td rowspan="2">Porta não padrão (por exemplo, 8088)</td>
+      <td>Não</td>
+      <td>Sim, <a href="/help/security/configuring-advanced-networking.md#flexible-port-egress-flexible-port-egress">Saída flexível</a></td>
+      <td>Sim</td>
+    </tr>
+    <tr>
+      <td>Sim</td>
+      <td>Sim, <a href="/help/security/configuring-advanced-networking.md#dedicated-egress-ip-address-dedicated-egress-ip-address">Saída Dedicada</a></td>
+      <td>Sim</td>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>O fato de seus registros serem exibidos a partir de um único endereço IP é determinado pela sua escolha de configuração avançada de rede.  A saída dedicada deve ser usada para facilitar isso.
+>
+> A configuração avançada de rede é um [processo de duas etapas](/help/security/configuring-advanced-networking.md#configuring-and-enabling-advanced-networking-configuring-enabling) que requer ativação no nível do programa e do ambiente.
+
+Para logs AEM (incluindo Apache/Dispatcher), se você tiver configurado a [Rede Avançada](/help/security/configuring-advanced-networking.md), poderá usar a propriedade `aem.advancedNetworking` para encaminhá-los de um endereço IP de Saída Dedicado ou através de uma VPN.
+
+O exemplo abaixo mostra como configurar o registro em uma porta HTTPS padrão com rede avançada.
+
+```yaml
+kind: "LogForwarding"
+version: "1"
+metadata:
+  envTypes: ["dev"]
+data:
+  splunk:
+    default:
+      enabled: true
+      host: "splunk-host.example.com"
+      port: 443
+      token: "${{SPLUNK_TOKEN}}"
+      index: "aemaacs"
+    aem:
+      advancedNetworking: true
+```
+
+Para logs CDN, você pode adicionar os endereços IP à lista de permissões, conforme descrito em [Documentação do Fastly - Lista de IP Públicos](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se essa lista de endereços IP compartilhados for muito grande, considere enviar tráfego para um servidor https ou (não Adobe) Azure Blob Store, onde a lógica pode ser gravada para enviar os logons de um IP conhecido para seu destino final.
+
+>[!NOTE]
+>Não é possível que os registros CDN apareçam a partir do mesmo endereço IP que os registros AEM aparecem. Isso ocorre porque os registros são enviados diretamente do Fastly e não do AEM Cloud Service.
+
 ## Configuração de destino de registro {#logging-destinations}
 
 As configurações para os destinos de registro compatíveis estão listadas abaixo, juntamente com considerações específicas.
 
 ### Armazenamento Azure Blob {#azureblob}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -147,7 +222,7 @@ Cada um dos servidores de log distribuídos globalmente produzirá um novo arqui
 
 Como exemplo, em algum momento:
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -155,7 +230,7 @@ aemcdn/
 
 E 30 segundos depois:
 
-```
+```text
 aemcdn/
    2024-03-04T10:00:00.000-abc.log
    2024-03-04T10:00:00.000-def.log
@@ -164,7 +239,7 @@ aemcdn/
    2024-03-04T10:00:30.000-mno.log
 ```
 
-Cada arquivo contém várias entradas de log json, cada uma em uma linha separada. Os formatos de entrada de log estão descritos em [Logs para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md), e cada entrada de log também inclui as propriedades adicionais mencionadas na seção [Formatos de Entrada de Log](#log-format) abaixo.
+Cada arquivo contém várias entradas de log json, cada uma em uma linha separada. Os formatos de entrada de log estão descritos em [Logs para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md), e cada entrada de log também inclui as propriedades adicionais mencionadas na seção [Formatos de Entrada de Log](#log-formats) abaixo.
 
 #### Logs AEM do Armazenamento Azure Blob {#azureblob-aem}
 
@@ -181,10 +256,9 @@ Em cada pasta, um único arquivo será criado e anexado a. Os clientes são resp
 
 Consulte os formatos de entrada de log em [Log para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). As entradas de log também incluirão as propriedades adicionais mencionadas na seção [Formatos de Entrada de Log](#log-formats) abaixo.
 
-
 ### Datadog {#datadog}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -210,11 +284,9 @@ Considerações:
 * A etiqueta de serviço do Datadog está definida como `adobeaemcloud`, mas você pode substituí-la na seção de etiquetas
 * Se o pipeline de assimilação usar tags Datadog para determinar o índice apropriado para logs de encaminhamento, verifique se essas tags estão configuradas corretamente no arquivo YAML de encaminhamento de logs. As tags ausentes podem impedir a assimilação de logs bem-sucedida se o pipeline depender delas.
 
-
-
 ### Elasticsearch e OpenSearch {#elastic}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -239,7 +311,7 @@ Considerações:
 * Para logs AEM, `index` está definido como `aemaccess`, `aemerror`, `aemrequest`, `aemdispatcher`, `aemhttpdaccess` ou `aemhttpderror`
 * A propriedade opcional do pipeline deve ser definida como o nome do pipeline de assimilação de Elasticsearch ou OpenSearch, que pode ser configurado para rotear a entrada de log para o índice apropriado. O tipo de Processador do pipeline deve ser definido como *script* e a linguagem de script deve ser definida como *indolor*. Este é um exemplo de trecho de script para rotear entradas de log em um índice, como aemaccess_dev_26_06_2024:
 
-```
+```text
 def envType = ctx.aem_env_type != null ? ctx.aem_env_type : 'unknown';
 def sourceType = ctx._index;
 def date = new SimpleDateFormat('dd_MM_yyyy').format(new Date());
@@ -248,7 +320,7 @@ ctx._index = sourceType + "_" + envType + "_" + date;
 
 ### HTTPS {#https}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -279,7 +351,7 @@ Também existe uma propriedade chamada `sourcetype`, que é definida como o valo
 
 #### Logs AEM HTTPS {#https-aem}
 
-Para logs AEM (incluindo apache/dispatcher), as solicitações da Web (POSTs) serão enviadas continuamente, com uma carga json que é uma matriz de entradas de log, com os vários formatos de entrada de log, conforme descrito em [Logs para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Propriedades adicionais são mencionadas na seção [Formatos de Entrada de Log](#log-format) abaixo.
+Para logs AEM (incluindo apache/dispatcher), as solicitações da Web (POSTs) serão enviadas continuamente, com uma carga json que é uma matriz de entradas de log, com os vários formatos de entrada de log, conforme descrito em [Logs para AEM as a Cloud Service](/help/implementing/developing/introduction/logging.md). Propriedades adicionais são mencionadas na seção [Formatos de Entrada de Log](#log-formats) abaixo.
 
 Também há uma propriedade chamada `Source-Type`, que é definida como um destes valores:
 
@@ -292,7 +364,7 @@ Também há uma propriedade chamada `Source-Type`, que é definida como um deste
 
 ### Splunk {#splunk}
 
-```
+```yaml
 kind: "LogForwarding"
 version: "1"
 metadata:
@@ -313,16 +385,14 @@ Considerações:
   *aemrequest*, *aemdispatcher*, *aemhttpdaccess*, *aemhttpderror*, *aemcdn*
 * Incluir na lista de permissões Se os IPs necessários tiverem sido migrados e os registros ainda não estiverem sendo entregues, verifique se não há regras de firewall impondo a validação do token de Splunk. O Fastly executa uma etapa de validação inicial na qual um token do Splunk inválido é enviado intencionalmente. Se o firewall estiver definido para encerrar conexões com tokens inválidos do Splunk, o processo de validação falhará, impedindo que o Fastly entregue logs para a instância do Splunk.
 
-
 >[!NOTE]
 >
 > [Ao migrar](#legacy-migration) do encaminhamento de logs herdado para este modelo de autoatendimento, os valores do campo `sourcetype` enviados para o índice do Splunk podem ter sido alterados, portanto, ajuste-os adequadamente.
 
-
 <!--
 ### Sumo Logic {#sumologic}
 
-   ```
+   ```yaml
    kind: "LogForwarding"
    version: "1"
    metadata:
@@ -351,36 +421,11 @@ Como os registros de vários programas e ambientes podem ser encaminhados para o
 
 Como exemplo, as propriedades podem ter os seguintes valores:
 
-```
+```text
 aem_env_id: 1242
 aem_env_type: dev
 aem_program_id: 12314
 aem_tier: author
-```
-
-## Rede avançada {#advanced-networking}
-
-Algumas organizações escolhem restringir qual tráfego pode ser recebido pelos destinos de registro.
-
-Para o log CDN, você pode adicionar os endereços IP à lista de permissões, conforme descrito em [Documentação rápida - Lista de IP Públicos](https://www.fastly.com/documentation/reference/api/utils/public-ip-list/). Se essa lista de endereços IP compartilhados for muito grande, considere enviar tráfego para um servidor https ou (não Adobe) Azure Blob Store, onde a lógica pode ser gravada para enviar os logons de um IP conhecido para seu destino final.
-
-Para logs de AEM (incluindo Apache/Dispatcher), se você tiver configurado a [rede avançada](/help/security/configuring-advanced-networking.md), poderá usar a propriedade advancedNetworking para encaminhá-los de um endereço IP de saída dedicado ou através de uma VPN.
-
-```
-kind: "LogForwarding"
-version: "1"
-metadata:
-  envTypes: ["dev"]
-data:
-  splunk:
-    default:
-      enabled: true
-      host: "splunk-host.example.com"
-      port: 443
-      token: "${{SPLUNK_TOKEN}}"
-      index: "aemaacs"
-    aem:
-      advancedNetworking: true
 ```
 
 ## Migrando do Encaminhamento de Log Herdado {#legacy-migration}
@@ -399,10 +444,6 @@ Quando estiver pronto para migrar, basta configurar o arquivo YAML conforme desc
 Recomenda-se, mas não é necessário, que uma configuração seja implantada em todos os ambientes para que todos estejam sob controle de autoatendimento. Caso contrário, você pode esquecer quais ambientes foram configurados pelo Adobe e os configurados de forma automatizada.
 
 >[!NOTE]
->
 >Os valores do campo `sourcetype` enviados para o índice do Splunk podem ter sido alterados, portanto, ajuste de acordo.
-
->[!NOTE]
 >
 >Quando o encaminhamento de registros é implantado em um ambiente previamente configurado pelo suporte para Adobe, você pode receber registros duplicados por até algumas horas. Isso acabará sendo resolvido automaticamente.
-
