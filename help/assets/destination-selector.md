@@ -5,7 +5,7 @@ contentOwner: Adobe
 role: Admin, User
 exl-id: 7e7bc1ee-d580-4c88-b550-273e8b0620ba
 feature: Selectors
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
 source-wordcount: '1905'
 ht-degree: 34%
@@ -271,10 +271,10 @@ Ele permite criar uma pasta na pasta de destino do seu [!DNL Adobe Experience Ma
 
 O Seletor de destino permite exibir o ativo em quatro exibições diferentes:
 
-* **![exibição em lista](assets/do-not-localize/list-view.png) [!UICONTROL Exibição em lista]**: a exibição em lista exibe arquivos e pastas roláveis em uma única coluna.
-* **![exibição em grade](assets/do-not-localize/grid-view.png) [!UICONTROL Exibição em grade]**: a exibição em grade exibe arquivos e pastas roláveis em uma grade de linhas e colunas.
-* **![exibição em galeria](assets/do-not-localize/gallery-view.png) [!UICONTROL Exibição em galeria]**: a exibição em galeria exibe arquivos ou pastas em uma lista horizontal com bloqueio central.
-* **![exibição em cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL Exibição em cascata]**: a exibição em cascata exibe arquivos ou pastas no formato de uma ponte.
+* ![exibição em lista](assets/do-not-localize/list-view.png) [!UICONTROL **Exibição em lista**]: a exibição em lista exibe arquivos e pastas roláveis em uma única coluna.
+* ![exibição em grade](assets/do-not-localize/grid-view.png) [!UICONTROL **Exibição em grade**]: a exibição em grade exibe arquivos e pastas roláveis em uma grade de linhas e colunas.
+* ![exibição em galeria](assets/do-not-localize/gallery-view.png) [!UICONTROL **Exibição em galeria**]: a exibição em galeria exibe arquivos ou pastas em uma lista horizontal com bloqueio central.
+* ![exibição em cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Exibição em cascata**]: a exibição em cascata exibe arquivos ou pastas no formato de uma ponte.
 
 ### Informações {#info}
 

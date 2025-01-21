@@ -3,7 +3,7 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
 source-wordcount: '1332'
 ht-degree: 34%
@@ -159,10 +159,10 @@ Você pode classificar ativos no Seletor de ativos por nome, dimensões ou taman
 
 O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
 
-* **![exibição de lista](assets/do-not-localize/list-view.png) [!UICONTROL Exibição de Lista]** A exibição de lista exibe arquivos e pastas roláveis em uma única coluna.
-* **![exibição de grade](assets/do-not-localize/grid-view.png) [!UICONTROL Exibição de grade]** A exibição de grade exibe arquivos e pastas com rolagem em uma grade de linhas e colunas.
-* **![exibição de galeria](assets/do-not-localize/gallery-view.png) [!UICONTROL exibição de galeria]** A exibição de galeria exibe arquivos ou pastas em uma lista horizontal bloqueada no centro.
-* **![exibição em cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL exibição em cascata]** A exibição em cascata exibe arquivos ou pastas no formato de uma Bridge.
+* ![exibição de lista](assets/do-not-localize/list-view.png) [!UICONTROL **Exibição de Lista**] A exibição de lista exibe arquivos e pastas roláveis em uma única coluna.
+* ![exibição de grade](assets/do-not-localize/grid-view.png) [!UICONTROL **Exibição de grade**] A exibição de grade exibe arquivos e pastas com rolagem em uma grade de linhas e colunas.
+* ![exibição de galeria](assets/do-not-localize/gallery-view.png) [!UICONTROL **exibição de galeria**] A exibição de galeria exibe arquivos ou pastas em uma lista horizontal bloqueada no centro.
+* ![exibição em cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Cascata** exibição] A exibição em cascata exibe arquivos ou pastas no formato de uma Bridge.
 
 **Gráfico de Visão Geral**
 

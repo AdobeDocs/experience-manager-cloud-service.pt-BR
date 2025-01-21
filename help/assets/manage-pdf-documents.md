@@ -4,10 +4,10 @@ description: Gerenciar documentos do PDF em [!DNL Adobe Experience Manager] as a
 feature: Asset Management
 role: User, Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 4%
+source-wordcount: '853'
+ht-degree: 3%
 
 ---
 
@@ -19,13 +19,14 @@ ht-degree: 4%
 O Experience Manager Assets integra-se perfeitamente ao Visualizador de PDF de Document Cloud, o que permite a visualização de várias páginas de um documento PDF. Além disso, você também pode usar recursos avançados do visualizador de PDF Document Cloud, como anotações, texto de pesquisa, navegar pelo documento PDF usando marcadores e miniaturas e muito mais, sob o mesmo teto. O Experience Manager Assets também permite carregar documentos em outros formatos compatíveis e visualizá-los em um formato PDF.
 
 O visualizador de PDF Document Cloud beneficia o AEM Assets das seguintes maneiras:
+
 * [Suporte para componentes do visualizador de Document Cloud do PDF](#pdf-doc-cloud)
 * [Suporte para visualização de várias páginas e anotações para o ativo PDF](#multi-page)
 * [Suporte para Visualização de Várias Páginas para Documentos em Outros Formatos](#multi-format)
 
-> Dica
-> Se você não conseguir obter a visualização de várias páginas de um documento de PDF carregado anteriormente, selecione o PDF e clique em **![Reprocessar](/help/assets/assets/Reprocess.svg) Reprocessar Assets**.
+>[!TIP]
 >
+> Se você não conseguir obter a visualização de várias páginas de um documento de PDF carregado anteriormente, selecione o PDF e clique em ![Reprocessar](/help/assets/assets/Reprocess.svg) **Reprocessar Assets**.
 
 ## Suporte para componentes do visualizador de Document Cloud do PDF {#pdf-doc-cloud}
 
@@ -57,9 +58,9 @@ O Adobe Experience Manager Assets permite a visualização do documento PDF com 
 
 Você também pode aplicar [anotações](#pdf-annotations) ao documento PDF em uma visualização de várias páginas.
 
-> OBSERVAÇÃO
-> O tamanho máximo de um Ativo que pode ser visualizado é de até 100 MB.
+>[!NOTE]
 >
+> O tamanho máximo de um Ativo que pode ser visualizado é de até 100 MB.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -72,6 +73,7 @@ Você também pode aplicar [anotações](#pdf-annotations) ao documento PDF em u
 O Experience Manager Assets permite adicionar comentários a um documento PDF. Um documento PDF pode ter várias anotações.
 
 Para anotar um documento PDF, execute as seguintes etapas:
+
 1. Vá para a interface do Assets e navegue até o documento PDF que deseja anotar. O visualizador de PDF nativo é aberto à direita, mostrando a pré-visualização do documento de PDF selecionado.
 1. Clique em **Anotar** no menu superior.
 Veja a seguir as Anotações que podem ser aplicadas a um documento PDF:
@@ -126,15 +128,16 @@ Além dos documentos PDF, você também pode visualizar várias páginas de docu
 ![Visualização de Documentos em Outros Formatos em Várias Páginas](/help/assets/assets/multi-page-other-formats.png)
 
 Para a visualização de várias páginas de outros formatos de documento compatíveis, execute as seguintes etapas:
+
 1. Siga as etapas para [carregar ativos no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
 1. Procure o documento que você deseja carregar e visualizar.
 1. Abra o documento.
 1. Selecione PDF na seção estática, no painel esquerdo. O painel direito mostra a pré-visualização de várias páginas de um ativo. Selecione miniatura, no painel esquerdo, para escolher a página que deseja visualizar.
 
-> OBSERVAÇÃO
+>[!NOTE]
+>
 > * O tamanho máximo de um Ativo que pode ser visualizado é de até 100 MB.
 > * O tamanho máximo de arquivos XLS ou XLSX para visualizar é 20 MB.
->
 
 **Consulte também**
 
