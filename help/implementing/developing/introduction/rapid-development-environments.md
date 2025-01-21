@@ -4,9 +4,9 @@ description: Saiba como usar Ambientes de desenvolvimento rápido para iteraçõ
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33a30ea29023f90cc6ce1c8b64ed4f9cfdd4f4a7
+source-git-commit: 24c34daebf7d45d9262181890310eb196c58a7db
 workflow-type: tm+mt
-source-wordcount: '4863'
+source-wordcount: '4990'
 ht-degree: 3%
 
 ---
@@ -204,7 +204,7 @@ Para obter mais informações e demonstração, assista ao tutorial em vídeo [c
 
 A Adobe recomenda o seguinte fluxo de trabalho para desenvolver um novo recurso:
 
-* Quando um marco intermediário for atingido e validado localmente com êxito com o SDK do AEM as a Cloud Service, confirme o código em uma ramificação de recurso do Git. A ramificação ainda não deve fazer parte da linha principal, embora a confirmação no Git seja opcional. O que constitui um &quot;marco intermediário&quot; varia com base nos hábitos da equipe. Os exemplos incluem algumas novas linhas de código, meio dia de trabalho ou a conclusão de um sub-recurso.
+* Quando uma etapa intermediária for atingida e validada localmente com êxito com o AEM as a Cloud Service SDK, confirme o código em uma ramificação de recurso do Git. A ramificação ainda não deve fazer parte da linha principal, embora a confirmação no Git seja opcional. O que constitui um &quot;marco intermediário&quot; varia com base nos hábitos da equipe. Os exemplos incluem algumas novas linhas de código, meio dia de trabalho ou a conclusão de um sub-recurso.
 
 * Redefina o RDE se ele tiver sido usado por outro recurso e você quiser [redefini-lo para um estado padrão](#reset-rde). <!-- Alexandru: hiding for now, do not delete This can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). -->A redefinição leva alguns minutos e todo o conteúdo e código existentes é excluído. Você pode usar o comando RDE status para confirmar se o RDE está pronto. O RDE volta com a versão mais recente do AEM.
 
@@ -548,23 +548,23 @@ A redefinição do RDE remove todos os códigos personalizados, configurações 
 
 Uma redefinição define o RDE para a versão do AEM mais recente disponível.
 
-<!-- Alexandru: hiding for now, do not delete
+A redefinição pode ser feita por meio do [Cloud Manager](#reset-the-rde-cloud-manager) ou por meio da [linha de comando](#reset-the-rde-command-line). A redefinição leva alguns minutos e todo o conteúdo e código existente é excluído do RDE.
 
-Resetting can be done by way of [Cloud Manager](#reset-the-rde-cloud-manager) or by way of the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
-
->[NOTE!]
+>[OBSERVAÇÃO!]
 >
->You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
+>Você deve ter a função Desenvolvedor do Cloud Manager atribuída a você para usar o recurso de redefinição. Caso contrário, uma ação de redefinição resultará em um erro.
 
-### Reset the RDE by way of Command Line {#reset-the-rde-command-line}
+### Redefina o RDE por meio da Linha de comando {#reset-the-rde-command-line}
 
-You can reset the RDE and return it to a default state by running:
+Você pode redefinir o RDE e retorná-lo a um estado padrão executando:
 
 `aio aem:rde:reset`
 
-This usually takes a few minutes. Use the [status command](#checking-rde-status) to check when the environment is ready again.
+Isso normalmente leva alguns minutos e relatará ```Environment reset.``` quando bem-sucedido ou ```Failed to reset the environment.``` sobre erros. Para uma saída estruturada, consulte o capítulo sobre a saída ```--json``` abaixo.
 
-### Reset the RDE in Cloud Manager {#reset-the-rde-cloud-manager} -->
+Use o [comando de status](#checking-rde-status) para verificar quando o ambiente está pronto novamente.
+
+### Redefina o RDE no Cloud Manager {#reset-the-rde-cloud-manager}
 
 Você pode usar o Cloud Manager para redefinir seu RDE seguindo as etapas abaixo:
 
@@ -942,7 +942,7 @@ A maioria dos comandos dá suporte ao sinalizador global ```--json``` que suprim
 }
 ```
 
-#### Aguardar a Conclusão {#wait}
+#### Aguardar a Conclusão, redefinir com êxito {#wait-success}
 
 ```$ aio aem rde reset --json```
 
@@ -951,6 +951,18 @@ A maioria dos comandos dá suporte ao sinalizador global ```--json``` que suprim
   "programId": "myProgram",
   "environmentId": "myEnv",
   "status": "reset"
+}
+```
+
+#### Aguardar a Conclusão, falha ao redefinir {#wait-failed}
+
+```$ aio aem rde reset --json```
+
+```json
+{
+  "programId": "myProgram",
+  "environmentId": "myEnv",
+  "status": "reset_failed"
 }
 ```
 
