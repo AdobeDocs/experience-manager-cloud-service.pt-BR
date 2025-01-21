@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: c374d95e6b64b8f35f89d469d698add8b95e01eb
+source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 5%
@@ -31,7 +31,7 @@ O Utilitário de conversão do Forms converte o Forms adaptável, que é baseado
 
 >[!NOTE]
 > 
-> É recomendável instalar as Ferramentas de modernização do AEM na configuração local do AEM. Migre o Forms adaptável baseado em Componentes de base para formulários baseados em Componentes principais. Baixe o formulário com seus ativos. Em seguida, carregue o formulário e seus ativos no ambiente necessário.
+>É recomendável instalar as Ferramentas de modernização do AEM na configuração local do AEM. Migre o Forms adaptável baseado em Componentes de base para formulários baseados em Componentes principais. Baixe o formulário com seus ativos. Em seguida, carregue o formulário e seus ativos no ambiente necessário.
 
 ## Considerações ao usar as ferramentas de modernização do AEM {#considerations}
 
@@ -39,6 +39,7 @@ O Utilitário de conversão do Forms converte o Forms adaptável, que é baseado
 * As configurações de tradução usadas no formulário original não são transferidas. Reconfigure a tradução para o formulário convertido.
 * Se o formulário criado nos Componentes de base contiver scripts ou regras de função personalizadas, é necessário regravá-los para o formulário convertido com base nos Componentes principais.
 * Os seguintes componentes de base OOTB ainda não são compatíveis com os Componentes principais e, portanto, são excluídos no formulário convertido:
+
    * Bloco do Adobe Sign
    * Gráfico
    * Listagem do anexo de arquivo
@@ -54,10 +55,9 @@ O Utilitário de conversão do Forms converte o Forms adaptável, que é baseado
 
 * [Configurar ambiente de desenvolvimento local para o AEM Forms](/help/forms/setup-local-development-environment.md)
 * [Ative os Componentes principais adaptáveis do Forms para seu ambiente.](/help/forms/enable-adaptive-forms-core-components.md)
-
 * Adicione usuários ao grupo [!DNL forms-users]. Os membros do grupo [!DNL forms-users] têm permissões para criar um Formulário adaptável.
-
 * Usuários com as seguintes funções têm as permissões para instalar as ferramentas de modernização do AEM em um ambiente AEM:
+
    * Função de desenvolvedor
    * Função de administrador
 
@@ -68,7 +68,7 @@ Para obter uma lista detalhada de grupos de usuários específicos de formulári
 Para instalar e configurar as Ferramentas de modernização do AEM:
 
 1. [Instalar ferramentas de Modernização do AEM no ambiente local do AEM Forms](#install-aem-modernize-Tools)
-2. [Ativar ferramentas de Modernização do AEM para o ambiente local do AEM Forms](#enable-aem-modernize-Tools)
+1. [Ativar ferramentas de Modernização do AEM para o ambiente local do AEM Forms](#enable-aem-modernize-Tools)
 
 ### Instalar ferramentas de Modernização do AEM no ambiente local do AEM Forms {#install-aem-modernize-Tools}
 
@@ -93,6 +93,7 @@ Execute as seguintes etapas para instalar as Ferramentas de modernização do AE
    ```Shell
        mvn clean install 
    ```
+
 ![Imagem de instalação bem-sucedida](/help/forms/assets/aem-modernize-install-steps.png)
 
 Após a instalação bem-sucedida, as Ferramentas de modernização do AEM ficam disponíveis para o seu ambiente.
@@ -128,10 +129,12 @@ Para ativar e usar as Ferramentas de modernização do AEM para o seu ambiente A
 
 1. Especifique o **[!UICONTROL Nome do Trabalho]**.
 1. Na guia **[!UICONTROL Formulário]**, você pode selecionar uma das seguintes opções:
+
    * **Nenhum** : selecione a opção se não quiser criar uma cópia dos formulários baseados no Componente de Fundação antes de iniciar a conversão do formulário.
    * **Restaurar** : selecione a opção para restaurar o formulário ao estado em que estava antes de iniciar a conversão do formulário.
    * **Copiar para Destino**: selecione a opção para criar uma cópia dos formulários baseados no Componente de Base antes de iniciar a conversão do formulário.
-No nosso caso, a opção **Copiar para Destino** está selecionada. Se a opção **Copiar para o Destino** estiver selecionada, as opções **[!UICONTROL Caminho do Source]** e **[!UICONTROL Caminho do Destino]** ficarão visíveis.
+
+   No nosso caso, a opção **Copiar para Destino** está selecionada. Se a opção **Copiar para o Destino** estiver selecionada, as opções **[!UICONTROL Caminho do Source]** e **[!UICONTROL Caminho do Destino]** ficarão visíveis.
 
 1. Especifique o nome `source folder` no **[!UICONTROL Caminho do Source]**.
 1. Especifique o nome `target folder` no **[!UICONTROL Caminho de Destino]**.
@@ -152,6 +155,7 @@ No nosso caso, a opção **Copiar para Destino** está selecionada. Se a opção
    ![Êxito na Modernização de Ferramentas do AEM](/help/forms/assets/aem-modernize-tools-success.png)
 
 1. Selecione o Formulário adaptável e selecione > **[!UICONTROL Propriedades]**. A página Propriedades do formulário será aberta.
+
    ![Pasta de Destino de Ferramentas de Modernização de AEM](/help/forms/assets/aem-modernize-tools-destination-folder.png)
 
 1. Selecione **[!UICONTROL Salvar e Fechar]** para salvar novamente as propriedades do formulário convertido.
