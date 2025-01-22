@@ -4,9 +4,9 @@ description: Saiba como configurar o tráfego CDN declarando regras e filtros em
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: cb1581e96f1cfeadf6ee37cae4738d9d51177504
+source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -158,6 +158,7 @@ As ações disponíveis são explicadas na tabela abaixo.
 | **não definido** | reqProperty | Remove um parâmetro de solicitação especificado (somente a propriedade &quot;path&quot; é compatível), ou o cabeçalho de solicitação, parâmetro de consulta ou cookie, para um determinado valor, que pode ser um literal de cadeia de caracteres ou parâmetro de solicitação. |
 |         | var | Remove uma variável especificada. |
 |         | queryParamMatch | Remove todos os parâmetros de consulta que correspondem a uma expressão regular especificada. |
+|         | queryParamDoesNotMatch | Remove todos os parâmetros de consulta que não correspondem a uma expressão regular especificada. |
 | **transformar** | op:replace, (reqProperty ou reqHeader ou queryParam ou reqCookie ou var), match, replacement | Substitui parte do parâmetro de solicitação (somente a propriedade &quot;path&quot; é compatível), o cabeçalho de solicitação, o parâmetro de consulta, o cookie ou a variável por um novo valor. |
 |              | op:tolower, (reqProperty ou reqHeader ou queryParam ou reqCookie ou var) | Define o parâmetro de solicitação (somente a propriedade &quot;path&quot; é compatível), o cabeçalho de solicitação, o parâmetro de consulta, o cookie ou a variável com seu valor em minúsculas. |
 
@@ -449,7 +450,7 @@ redirects:
       action:
         type: redirect
         location:
-          reqProperty: path
+          reqProperty: url
           transform:
             - op: replace
               match: '^/(.*)$'
