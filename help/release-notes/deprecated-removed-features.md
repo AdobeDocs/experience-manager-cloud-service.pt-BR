@@ -4,10 +4,10 @@ description: Notas de versão específicas para recursos obsoletos e removidos d
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: 33dd48cc6484675ca54cfba19f741d23ee4f5ff1
+source-git-commit: b0bc2eb4298a88c6dc421390dd9527e181386b5d
 workflow-type: tm+mt
-source-wordcount: '2768'
-ht-degree: 44%
+source-wordcount: '2513'
+ht-degree: 49%
 
 ---
 
@@ -68,7 +68,7 @@ Esta seção lista os recursos e funcionalidades que foram removidas do [!DNL Ex
 
 ## APIs AEM {#aem-apis}
 
-Veja abaixo uma extensa lista de APIs obsoletas do AEM e a data esperada da remoção de cada uma delas. Espera-se que os clientes removam as APIs de seu código até a data de remoção prevista. Qualquer uso da API após a data de remoção pode gerar erros no Ambiente de SDK/desenvolvimento local e no processo de build do Cloud Manager.
+Veja abaixo uma extensa lista de APIs obsoletas do AEM e a data esperada da remoção de cada uma delas. Espera-se que os clientes removam as APIs de seu código até a data de remoção prevista. Qualquer uso da API após a data de remoção pode gerar erros no Ambiente local de SDK/desenvolvimento e no processo de criação do Cloud Manager.
 
 <details>
   <summary>Expanda para ver a lista de APIs obsoletas.</summary>
@@ -372,7 +372,7 @@ As duas listas abaixo refletem a superfície de configuração OSGi do AEM as a 
 
 O código do cliente pode configurar qualquer configuração OSGi não listada.
 
-Essas regras são validadas durante o processo de criação do Cloud Manager. Regras adicionais podem ser adicionadas ao longo do tempo e a data de aplicação esperada é anotada na tabela. Espera-se que os clientes cumpram essas regras até a data de aplicação prevista. O não cumprimento das regras após a data de remoção gera erros no processo de criação do Cloud Manager. Os projetos Maven devem incluir o [Plug-in Maven Build Analyzer do SDK da AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) para sinalizar erros de configuração OSGI durante o desenvolvimento do SDK local.
+Essas regras são validadas durante o processo de criação do Cloud Manager. Regras adicionais podem ser adicionadas ao longo do tempo e a data de aplicação esperada é anotada na tabela. Espera-se que os clientes cumpram essas regras até a data de aplicação prevista. O não cumprimento das regras após a data de remoção gera erros no processo de criação do Cloud Manager. Os projetos Maven devem incluir o [Plug-in Maven do AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin) para sinalizar erros de configuração OSGI durante o desenvolvimento local do SDK.
 
 Informações adicionais sobre a configuração OSGI podem ser encontradas em [este local](/help/implementing/deploying/configuring-osgi.md).
 
@@ -510,43 +510,43 @@ Informações adicionais sobre a configuração OSGI podem ser encontradas em [e
 
 ## Atualização do Java Runtime para a versão 21 {#java-runtime-update-21}
 
-<!-- NEW but needed to be removed for now; removed 12/5/24 LEAVE HERE, DO NOT DELETE Adobe Experience Manager as a Cloud Service is transitioning to the Java 21 runtime. To ensure compatibility, updating library versions as outlined in [Runtime requirements](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements) is essential. -->
+O Adobe Experience Manager as a Cloud Service está fazendo a transição para o Java 21 runtime. Para garantir a compatibilidade, é essencial atualizar as versões da biblioteca conforme descrito nos [Requisitos de tempo de execução](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
-O AEM as a Cloud Service mudará para o Java 21 runtime. Para garantir a compatibilidade, é essencial fazer os seguintes ajustes:
+<!-- (OLD Removed from here to end of topic 1/16/25 as per instruction in https://wiki.corp.adobe.com/pages/viewpage.action?pageId=3359689801) AEM as a Cloud Service will be moving to Java 21 runtime. In order to ensure compatibility, it is essential to make the following adjustments:
 
-### Requisitos de tempo de execução
+### Runtime Requirements
 
-Esses ajustes são necessários para garantir a compatibilidade com o Java 21 runtime. As bibliotecas podem ser atualizadas a qualquer momento, pois são compatíveis com versões mais antigas do Java.
+These adjustments are required to ensure compatibility with the Java 21 runtime. The libraries can be updated at any time as they are compatible with older versions of Java.
 
-#### Versão mínima de org.objectweb.asm {#org.objectweb.asm}
+#### Minimum version of org.objectweb.asm {#org.objectweb.asm}
 
-Atualize o uso de org.objectweb.asm para a versão 9.5 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+Update the usage of org.objectweb.asm to version 9.5 or higher to ensure support for newer JVM runtimes.
 
-#### Versão mínima de org.apache.groovy {#org.apache.groovy}
+#### Minimum version of org.apache.groovy {#org.apache.groovy}
 
-Atualize o uso de org.apache.groovy para a versão 4.0.22 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+Update the usage of org.apache.groovy to version 4.0.22 or higher to ensure support for newer JVM runtimes.
 
-Esse pacote pode ser incluído indiretamente adicionando dependências de terceiros, como o console AEM Groovy.
+This bundle can be indirectly included by adding third party dependencies such as the AEM Groovy Console.
 
-### Requisitos de tempo de criação
+### Build-time Requirements
 
-Esses ajustes são necessários para permitir a criação do projeto com versões mais recentes do Java, mas não são necessários para a compatibilidade de tempo de execução. Os plug-ins do Maven podem ser atualizados a qualquer momento, pois são compatíveis com versões mais antigas do Java.
+These adjustments are required to allow building the project with newer versions of Java but not required for runtime compatibility. The Maven plug-ins can be updated at any time as they are compatible with older versions of Java.
 
-#### Versão mínima do plug-in bnd-maven {#bnd-maven-plugin}
+#### Minimum version of bnd-maven-plugin {#bnd-maven-plugin}
 
-Atualize o uso de bnd-maven-plugin para a versão 6.4.0 para garantir o suporte para tempos de execução de JVM mais recentes. As versões 7 ou superiores não são compatíveis com o Java 11 ou inferior, portanto, uma atualização para essa versão não é recomendada no momento.
+Update the usage of bnd-maven-plugin to version 6.4.0 to ensure support for newer JVM runtimes. Versions 7 or higher are not compatible with Java 11 or lower so an upgrade to that version is not recommended at this time.
 
-#### Versão mínima do aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
+#### Minimum version of aemanalyser-maven-plugin {#aemanalyser-maven-plugin}
 
-Atualize o uso de aemanalyser-maven-plugin para a versão 1.6.6 ou superior para garantir o suporte para tempos de execução de JVM mais recentes.
+Update the usage of aemanalyser-maven-plugin to version 1.6.6 or higher to ensure support for newer JVM runtimes.
 
-#### Versão mínima do maven-bundle-plugin  {#maven-bundle-plugin}
+#### Minimum version of maven-bundle-plugin  {#maven-bundle-plugin}
 
-Atualize o uso de maven-bundle-plugin para a versão 5.1.5 ou superior para garantir o suporte para tempos de execução da JVM mais recentes.
+Update the usage of maven-bundle-plugin to version 5.1.5 or higher to ensure support for newer JVM runtimes.
 
-#### Atualizar dependências no maven-scr-plugin  {#maven-scr-plugin}
+#### Update dependencies in maven-scr-plugin  {#maven-scr-plugin}
 
-O `maven-scr-plugin` não é diretamente compatível com o Java 17 e 21. No entanto, é possível gerar os arquivos do descritor atualizando a versão de dependência do ASM na configuração do plug-in, semelhante ao trecho abaixo:
+The `maven-scr-plugin` is not directly compatible with Java 17 and 21. However, it is possible to generate the descriptor files by updating the ASM dependency version within the plugin configuration, similar to the snippet below: 
 
 ```
 [source,xml]
@@ -584,3 +584,4 @@ O `maven-scr-plugin` não é diretamente compatível com o Java 17 e 21. No enta
    ...
  </project>
 ```
+-->
