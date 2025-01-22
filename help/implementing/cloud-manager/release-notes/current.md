@@ -3,9 +3,10 @@ title: Notas de versão do Cloud Manager 2025.1.0 no Adobe Experience Manager as
 description: Saiba mais sobre o lançamento do Cloud Manager 2025.1.0 no AEM as a Cloud Service.
 feature: Release Information
 role: Admin
-source-git-commit: bf12306969581723e4e9ce1517a8f0d445f26521
+exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
+source-git-commit: 4ec2f22b399528f35c07a95d7487264149521338
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '367'
 ht-degree: 10%
 
 ---
@@ -54,7 +55,7 @@ Além disso, defina a seguinte variável para garantir que a etapa de qualidade 
    * **Implantação do Java 21 runtime**
       * O tempo de execução do Java 21 é implantado ao construir com Java 17 ou Java 21.
       * A implantação gradual em todos os ambientes do Cloud Manager começa em fevereiro para sandboxes e ambientes de desenvolvimento e se estende aos ambientes de produção em abril.
-      * Os clientes que desejam adotar o Java 21 runtime *previous* podem contatar o Adobe em [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+      * Os clientes que usam o Java 11 e desejam adotar o tempo de execução do Java 21 *mais cedo* podem contatar o Adobe em [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 
 <!-- ## Early adoption program {#early-adoption}
