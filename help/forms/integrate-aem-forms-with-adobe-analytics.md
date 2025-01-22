@@ -5,7 +5,7 @@ exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
 hidefromtoc: true
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 1%
@@ -118,7 +118,7 @@ Execute as seguintes etapas para configurar elementos de dados:
 
 1. Selecione **[!UICONTROL Salvar]** para salvar o elemento de dados.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337472)
+>[!VIDEO](https://video.tv.adobe.com/v/337472)
 
 ### Configurar regras {#configure-rules}
 
@@ -180,7 +180,7 @@ Execute as seguintes etapas para criar regras com base na extensão **[!UICONTRO
 
    Você pode criar regras para todos os tipos de evento, como Abandonar, Erro, Visita de campo, Ajuda, Renderizar, Salvar e Enviar.
 
-   >[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
 ### Fluxos Publish {#publish-flow}

@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 exl-id: a1846c5d-7b0f-4f48-9d15-96b2a8836a9d
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3184'
 ht-degree: 1%
@@ -72,13 +72,11 @@ Você pode aproveitar ao máximo esse recurso utilizando as seguintes opções:
 
 Antes de começar a criar ou um formulário adaptável, ative os Componentes principais do Forms adaptável e adicione as bibliotecas de clientes do Forms adaptáveis à sua página do AEM Sites:
 
-+++  Ativar os Componentes principais adaptáveis do Forms para o ambiente do AEM Cloud Service
+### Ativar os Componentes principais adaptáveis do Forms para o ambiente do AEM Cloud Service
 
 Verifique se os [Componentes principais adaptáveis do Forms estão habilitados para o seu as a Cloud Service AEM Forms](enable-adaptive-forms-core-components.md).
 
-+++
-
-+++  Adicionar bibliotecas de clientes do Forms adaptáveis à sua página do AEM Sites ou Fragmento de experiência
+### Adicionar bibliotecas de clientes do Forms adaptáveis à sua página do AEM Sites ou Fragmento de experiência
 
 Para ativar a funcionalidade completa do componente de Contêiner adaptável do Forms, adicione as bibliotecas de clientes Customheaderlibs e Customfooterlibs à sua página do AEM Sites usando o pipeline de implantação. Para adicionar as bibliotecas:
 
@@ -123,9 +121,7 @@ Para ativar a funcionalidade completa do componente de Contêiner adaptável do 
 
 1. [Execute o pipeline de implantação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) para implantar as bibliotecas de clientes no seu ambiente do AEM as a Cloud Service.
 
-+++
-
-+++ Ativar o contêiner adaptável do Forms para sua página do AEM Sites ou fragmento de experiência
+### Ativar o contêiner adaptável do Forms para sua página do AEM Sites ou fragmento de experiência
 
 Para habilitar o componente [!UICONTROL Contêiner de Forms adaptável] na política do modelo, execute as seguintes etapas:
 

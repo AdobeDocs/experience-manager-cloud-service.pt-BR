@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 Keywords: Forms AEM Sites, Embed Form to a Sites page, Adaptive Forms AEM Sites, Embed Adaptive Forms to AEM Page, Embed Forms in an AEM Sites page
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 5321fed58f66b2beabcacc2de4b7dfb2dc3754f1
+source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
 workflow-type: tm+mt
 source-wordcount: '3145'
 ht-degree: 0%
@@ -75,13 +75,11 @@ Você pode aproveitar esse recurso usando as seguintes opções:
 
 Antes de começar a incorporar um novo Formulário Adaptável ou um Formulário Adaptável pré-existente usando o **[!UICONTROL Forms Adaptável - Incorporado(v2)]**, habilite os **Componentes Principais do Forms Adaptável** e adicione as **Bibliotecas de Clientes do Forms Adaptável** à sua página do AEM Sites:
 
-+++  Ativar os Componentes principais adaptáveis do Forms para o ambiente do AEM Cloud Service
+### Ativar os Componentes principais adaptáveis do Forms para o ambiente do AEM Cloud Service
 
 Verifique se os [Componentes principais adaptáveis do Forms estão habilitados para o seu as a Cloud Service AEM Forms](enable-adaptive-forms-core-components.md).
 
-+++
-
-+++  Adicionar bibliotecas de clientes do Forms adaptáveis à sua página do AEM Sites ou Fragmento de experiência
+### Adicionar bibliotecas de clientes do Forms adaptáveis à sua página do AEM Sites ou Fragmento de experiência
 
 Quando a opção **[!UICONTROL Quando o formulário cobre toda a largura de uma página]** é selecionada na caixa de diálogo de configuração **[!UICONTROL Contêineres de Formulário]** e o Adaptive Forms usando Componentes Principais é usado, é necessário incluir as bibliotecas de clientes na página do Site correspondente.
 
@@ -130,9 +128,7 @@ Adicione as bibliotecas de clientes **Customheaderlibs** e **Customfooterlibs** 
 
 1. [Execute o pipeline de implantação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) para implantar as bibliotecas de clientes no seu ambiente do AEM as a Cloud Service.
 
-+++
-
-+++ Habilitar o **[!UICONTROL Forms adaptável - Incorporado(v2)]** para sua página do AEM Sites ou Fragmento de experiência
+### Habilitar o Forms adaptável - incorporado(v2) para sua página do AEM Sites ou Fragmento de experiência
 
 Para habilitar o componente **[!UICONTROL Forms Adaptável - Incorporado(v2)]** na política do modelo, execute as seguintes etapas:
 
@@ -142,8 +138,6 @@ Para habilitar o componente **[!UICONTROL Forms Adaptável - Incorporado(v2)]** 
 1. Clique em **[!UICONTROL Concluído]**.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419369?quality=12&learn=on)
-
-+++
 
 ## Incorporar um formulário adaptável usando o componente Forms - Embed(v2) {#embed-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
@@ -249,7 +243,7 @@ Para converter um formulário adaptável na página AEM Sites em um fragmento de
 Você pode personalizar as configurações avançadas do componente **[!UICONTROL Formulário adaptável - Incorporado(v2)]**. Na caixa de diálogo **[!UICONTROL Editar Forms Adaptável - Incorporado]**, você pode especificar o seguinte:
 
 * **Caminho do ativo**: procure e selecione um Formulário adaptável para incorporar. Ela será preenchida automaticamente se você soltá-la no navegador Assets.
-* **Envio de Post** : selecione a ação a ser acionada no envio do formulário. Você pode optar por mostrar uma mensagem de agradecimento ou uma página de agradecimento.
+* **Postar Envio** : selecione a ação a ser acionada no envio do formulário. Você pode optar por mostrar uma mensagem de agradecimento ou uma página de agradecimento.
    * **Mostrar Mensagem de Agradecimento**: escreva uma mensagem usando o editor de rich text para mostrar no envio do formulário. Essa opção está disponível somente quando você opta por mostrar uma mensagem de agradecimento.
    * **Mostrar página de agradecimento**: procure e selecione a página a ser exibida no envio do formulário. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
    * **Redirecionar para a página de agradecimento**: habilite a opção para substituir a página que contém o Formulário adaptável inserido pela página de agradecimento. Caso contrário, a página de agradecimento substituirá o Formulário adaptável no componente **[!UICONTROL Forms adaptável - Incorporado(v2)]**, sem atualizar os sites subjacentes na página. Essa opção está disponível somente quando você escolhe mostrar uma página de agradecimento.
