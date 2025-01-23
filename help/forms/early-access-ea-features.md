@@ -6,7 +6,7 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 2c70f7aec042c384cd37985877954b627d95879e
+source-git-commit: 7654289713246e894388bcd9bfa995248aeb3c38
 workflow-type: tm+mt
 source-wordcount: '1735'
 ht-degree: 0%
@@ -90,7 +90,7 @@ A Criação no WYSIWYG fornece interfaces do WYSIWYG (Universal Editor e Adaptiv
 
 ### Conector do AEM Forms para Marketo
 
-O AEM Forms to Marketo Connector preenche a lacuna entre seus formulários web (Adaptive Forms) criados com o Adobe Experience Manager AEM () e sua plataforma de automação de marketing, o Marketo.
+O [Conector do AEM Forms para o Marketo](/help/forms/integrate-adaptive-form-with-marketo-engage.md) preenche a lacuna entre os seus formulários web (Adaptive Forms) criados com o Adobe Experience Manager AEM () e a sua plataforma de automação de marketing, o Marketo.
 
 Quando alguém envia um formulário em seu site criado com o AEM Adaptive Forms, o conector garante que os dados enviados sejam enviados automaticamente para o Marketo. Isso elimina a necessidade de entrada manual de dados e reduz o risco de erros.
 
@@ -133,7 +133,7 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### APIs Doc Assurance
 
