@@ -5,10 +5,10 @@ mini-toc-levels: 3
 exl-id: c27134f5-178c-4db1-a8e6-ec45d020f2b5
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: f64f6d90c6ae2490be4be5067df0f96e9df6be38
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 68%
+source-wordcount: '984'
+ht-degree: 66%
 
 ---
 
@@ -68,7 +68,7 @@ Dê as boas-vindas a uma solução de gerenciamento de ativos digitais que compr
 
 ![Visão geral do Meu espaço de trabalho](assets/my-workspace-demo.gif)
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](my-workspace-assets-view.md)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](my-workspace-assets-view.md)
 
 ### Insights para tomar decisões orientadas por dados {#insights-data}
 
@@ -76,7 +76,7 @@ Para acompanhar a velocidade do conteúdo, os insights acionáveis são essencia
 
 ![Visão geral dos insights](assets/insights-overview.gif)
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](manage-reports-assets-view.md#view-live-statistics)
 
 ### Integração do Adobe Photoshop Express para acelerar a colaboração {#accelerate-collaboration}
 
@@ -86,7 +86,7 @@ Assista a este vídeo para entender o potencial da integração da visualizaçã
 
 >[!VIDEO](https://video.tv.adobe.com/v/3420922)
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](edit-images-assets-view.md)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](edit-images-assets-view.md)
 
 As próximas versões para o Assets as a Cloud Service também incluirão a integração do [Adobe Firefly via Adobe Express](https://firefly.adobe.com/?gclid=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE&amp;sdid=JM4FW6VL&amp;mv=search&amp;mv2=paidsearch&amp;ef_id=EAIaIQobChMIlZeKuNfj_wIVeyCtBh3e5g2cEAAYASAAEgL56_D_BwE:G:s&amp;s_kwcid=AL!3085!3!652077237594!e!!g!!adobe%20firefly!19870733758!148140507838).
 
@@ -96,7 +96,7 @@ Configure rapidamente uma estrutura de pastas para sua organização por meio da
 
 ![Upload de pastas](assets/folder-uploads.gif)
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](add-delete-assets-view.md)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](add-delete-assets-view.md)
 
 ### Abordagem com foco na pesquisa para aumentar a eficiência {#search-first}
 
@@ -110,7 +110,7 @@ A visualização do Assets fornece a capacidade de monitorar as operações real
 
 ![Receber notificações](assets/notifications.gif)
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](manage-notifications-assets-view.md)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](manage-notifications-assets-view.md)
 
 ### Exclusão de ativos de forma reversível para oferecer melhor controle a admins {#soft-delete-assets}
 
@@ -118,7 +118,7 @@ A pasta Lixeira, disponível na visualização do Assets, lista os ativos exclu�
 
 ![Exclusão reversível](assets/soft-delete.gif)
 
-[![Consulte o guia](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](navigate-assets-view.md)
+[![Consulte o Guia](assets/see-the-guide-sm.png)](navigate-assets-view.md)
 
 Além desses recursos, a visualização do Assets também permite executar os seguintes recursos que não estão disponíveis na visualização de Admin:
 
