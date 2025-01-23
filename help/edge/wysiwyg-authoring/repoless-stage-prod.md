@@ -4,9 +4,9 @@ description: Saiba como configurar sites separados para seus ambientes de prepar
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '693'
 ht-degree: 1%
 
 ---
@@ -45,6 +45,10 @@ Há duas etapas para configurar um site de produção separado.
    * A configuração `code` deve ser a mesma usada para a criação inicial do projeto.
    * O `content` > `source` > `url` deve ser adaptado ao nome do novo site que você está criando. Neste exemplo, ele é `wknd-prod`.
    * Ou seja, o nome do site na URL do POST e o `content` > `source` > `url` devem ser os mesmos.
+   * Adapte o bloco `admin` para definir os usuários que devem ter acesso administrativo total ao site.
+      * É uma matriz de endereços de email.
+      * O curinga `*` pode ser usado.
+      * Consulte o documento [Configurando a autenticação para autores](https://www.aem.live/docs/authentication-setup-authoring#default-roles) para obter mais informações.
 
    ```text
    curl --request POST \
@@ -71,7 +75,7 @@ Há duas etapas para configurar um site de produção separado.
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"

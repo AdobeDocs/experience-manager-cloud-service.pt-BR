@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de como configurar um pr
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 42218450ab03201c69c59053f720954183f4b652
+source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1261'
 ht-degree: 1%
 
 ---
@@ -112,6 +112,10 @@ Neste exemplo, criaremos o site `wknd-ch` para a presença suíça do wknd, cujo
    * A configuração `code` deve ser a mesma usada para a criação inicial do projeto.
    * O `content` > `source` > `url` deve ser adaptado ao nome do novo site que você está criando. Neste exemplo, ele é `wknd-ch`.
    * Ou seja, o nome do site na URL do POST e o `content` > `source` > `url` devem ser os mesmos.
+   * Adapte o bloco `admin` para definir os usuários que devem ter acesso administrativo total ao site.
+      * É uma matriz de endereços de email.
+      * O curinga `*` pode ser usado.
+      * Consulte o documento [Configurando a autenticação para autores](https://www.aem.live/docs/authentication-setup-authoring#default-roles) para obter mais informações.
 
    ```text
    curl --request POST \
@@ -138,7 +142,7 @@ Neste exemplo, criaremos o site `wknd-ch` para a presença suíça do wknd, cujo
            "admin": {
                "role": {
                    "admin": [
-                       "*@adobe.com"
+                       "<email>@<domain>.<tld>"
                    ],
                    "config_admin": [
                        "<tech-account-id>@techacct.adobe.com"
