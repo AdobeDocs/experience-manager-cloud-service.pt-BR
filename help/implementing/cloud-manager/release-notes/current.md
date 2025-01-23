@@ -4,10 +4,10 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.1.0 no AEM as 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f6c1aa32647bcabeb0781973f81b75c11edc6a5d
+source-git-commit: ee01e5a2b805330f47af7ff563ca1ac90036f0bf
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 8%
+source-wordcount: '695'
+ht-degree: 5%
 
 ---
 
@@ -32,15 +32,15 @@ A próxima versão está planejada para sexta-feira, 13 de fevereiro de 2025.
 
 * **Regras de qualidade do código - Atualização do servidor SonarQube:** a etapa Qualidade do código Cloud Manager começará a usar o SonarQube Server 9.9 com a versão Cloud Manager 2025.2.0, agendada para quinta-feira, 13 de fevereiro de 2025.
 
-Para se preparar, as regras atualizadas do SonarQube agora estão disponíveis em [Regras de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
+  Para se preparar, as regras atualizadas do SonarQube agora estão disponíveis em [Regras de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
-Você pode &quot;verificar antecipadamente&quot; as novas regras definindo a seguinte variável de texto do pipeline:
+  Você pode &quot;verificar antecipadamente&quot; as novas regras definindo a seguinte variável de texto do pipeline:
 
-`CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
+  `CM_BUILD_IMAGE_OVERRIDE` = `self-service-build:sonar-99-upgrade-java17or21`
 
-Além disso, defina a seguinte variável para garantir que a etapa de qualidade do código seja executada para a mesma confirmação (normalmente ignorada para a mesma `commitId`):
+  Além disso, defina a seguinte variável para garantir que a etapa de qualidade do código seja executada para a mesma confirmação (normalmente ignorada para a mesma `commitId`):
 
-`CM_DISABLE_BUILD_REUSE` = `true`
+  `CM_DISABLE_BUILD_REUSE` = `true`
 
 ![Página de configuração de variáveis](/help/implementing/cloud-manager/release-notes/assets/variables-config.png)
 
@@ -59,9 +59,27 @@ Além disso, defina a seguinte variável para garantir que a etapa de qualidade 
       * A implantação gradual em todos os ambientes do Cloud Manager começa em fevereiro para sandboxes e ambientes de desenvolvimento e se estende aos ambientes de produção em abril.
       * Os clientes que usam o Java 11 e desejam adotar o tempo de execução do Java 21 *mais cedo* podem contatar o Adobe em [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
-* **&quot;Configurações de CDN&quot; renomeadas como &quot;Mapeamentos de Domínio&quot;:** Como parte das melhorias na interface do usuário do AEM Cloud Manager, o rótulo &quot;Configurações de CDN&quot; agora é renomeado como &quot;Mapeamentos de Domínio&quot; para melhorar o alinhamento da terminologia com a funcionalidade. <!-- CMGR-64738 -->
+* **&quot;Configurações de CDN&quot; renomeadas como &quot;Mapeamentos de Domínio&quot;:** Como parte das melhorias na interface do usuário do AEM Cloud Manager, o rótulo &quot;Configurações de CDN&quot; agora é renomeado como &quot;Mapeamentos de Domínio&quot;. Essa alteração melhora o alinhamento da terminologia com a funcionalidade. <!-- CMGR-64738 -->
 
   ![&quot;Configurações de CDN&quot; renomeadas como &quot;Mapeamentos de Domínio&quot; na interface do usuário](/help/implementing/cloud-manager/release-notes/assets/domain-mappings.png)
+
+* **Provisionar um site do Edge Delivery com um clique:** O Cloud Manager agora permite que os usuários com as permissões e licenças apropriadas criem um site de Edge Delivery Services de exemplo com apenas um clique. Esse processo simplificado oferece as seguintes funcionalidades automatizadas:
+
+   * **Integração do GitHub** - Cria automaticamente um repositório do GitHub em uma organização existente, pré-configurado com um modelo padrão para o Edge Delivery Services.
+   * **Instalação do Aplicativo de Sincronização de Código do AEM** - Instala o aplicativo de Sincronização de Código do AEM no repositório, garantindo uma sincronização e implantação contínuas.
+   * **Instalação do Content Collaboration** - Vincula uma pasta designada do Google Drive para armazenamento de conteúdo, fornecendo um ambiente colaborativo para gerenciamento de conteúdo.
+   * **Publicação de conteúdo** - Os usuários agora podem publicar conteúdo para sites provisionados diretamente da interface do usuário do Cloud Manager, simplificando fluxos de trabalho e melhorando a eficiência.
+   * **Collaboration aprimorado** - A plataforma permite que os usuários adicionem vários colaboradores à pasta de armazenamento de conteúdo do Google Drive, facilitando o trabalho em equipe e as contribuições de conteúdo.
+
+  Esses aprimoramentos têm como objetivo melhorar a automação, simplificar os processos de configuração e aprimorar a colaboração para os usuários do Edge Delivery Services. <!-- CMGR-59362 -->
+
+  ![Provisionando um Site do Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-one-click-60.png)
+
+  ![Caixa de diálogo Provisionar site do Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/eds-provision-60.png)
+
+* **Suporte aprimorado para sites Edge Delivery Services:** o Cloud Manager agora oferece suporte à integração para os sites Edge Delivery Services mais recentes. Essa atualização inclui uma refatoração abrangente da CDN e da pilha de delivery, resultando em maior robustez e capacidade de manutenção.
+
+* **Atualização antecipada do programa do adotante - Suporte à validação de PR para Bitbucket e GitLab:** O Cloud Manager agora oferece suporte à validação de Solicitação de Recepção (PR) para versões da Nuvem e auto-hospedadas do Bitbucket e do GitLab. Esse recurso permite que os clientes testem suas alterações de código em relação aos limites de qualidade do código de Adobe antes de mesclar uma PR. Garantindo maior qualidade do código antes da mesclagem, esse aprimoramento melhora significativamente a taxa de sucesso das alterações de código nos pipelines de produção, reduzindo o tempo de entrada no mercado e simplificando os fluxos de trabalho de desenvolvimento.
 
 
 <!-- ## Early adoption program {#early-adoption}
