@@ -4,9 +4,9 @@ description: Configuração das regras de filtro de tráfego, incluindo as regra
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 1b4c427a36ee26522e9da499156f78276e099bd0
+source-git-commit: f2616fb8f27d4f966243c3a43abedcc46ceff477
 workflow-type: tm+mt
-source-wordcount: '4037'
+source-wordcount: '4053'
 ht-degree: 1%
 
 ---
@@ -184,7 +184,7 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 
 | **Propriedade** | **Tipo** | **Descrição** |
 |---|---|---|
-| reqProperty | `string` | Propriedade de solicitação.<br><br>Um de:<br><ul><li>`path`: Retorna o caminho completo de uma URL sem os parâmetros de consulta. (use `pathRaw` para a variante sem escape)</li><li>`url`: Retorna a URL completa, incluindo os parâmetros de consulta. (use `urlRaw` para a variante sem escape)</li><li>`queryString`: Retorna a parte da consulta de uma URL</li><li>`method`: retorna o método HTTP usado na solicitação.</li><li>`tier`: Retorna um de `author`, `preview` ou `publish`.</li><li>`domain`: retorna a propriedade de domínio (conforme definido no cabeçalho `Host`) em minúsculas</li><li>`clientIp`: Retorna o IP do cliente.</li><li>`clientCountry`: retorna um código de duas letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica o país em que o cliente está localizado.</li></ul> |
+| reqProperty | `string` | Propriedade de solicitação.<br><br>Um de:<br><ul><li>`path`: Retorna o caminho completo de uma URL sem os parâmetros de consulta. (use `pathRaw` para a variante sem escape)</li><li>`url`: Retorna a URL completa, incluindo os parâmetros de consulta. (use `urlRaw` para a variante sem escape)</li><li>`queryString`: Retorna a parte da consulta de uma URL</li><li>`method`: retorna o método HTTP usado na solicitação.</li><li>`tier`: Retorna um de `author`, `preview` ou `publish`.</li><li>`domain`: retorna a propriedade de domínio (conforme definido no cabeçalho `Host`) em minúsculas</li><li>`clientIp`: Retorna o IP do cliente.</li><li>`forwardedDomain`: retorna o primeiro domínio definido no cabeçalho `X-Forwarded-Host` em minúsculas</li><li>`forwardedIp`: retorna o primeiro IP no cabeçalho `X-Forwarded-For`.</li><li>`clientCountry`: retorna um código de duas letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica o país em que o cliente está localizado.</li></ul> |
 | reqHeader | `string` | Retorna o cabeçalho da solicitação com o nome especificado |
 | queryParam | `string` | Retorna o parâmetro de consulta com o nome especificado |
 | reqCookie | `string` | Retorna o cookie com o nome especificado |
