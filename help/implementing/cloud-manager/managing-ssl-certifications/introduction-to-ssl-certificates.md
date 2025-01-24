@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fa99656e0dd02bb97965e8629d5fa657fbae9424
+source-git-commit: 3d9ad70351bfdedb6d81e90d9d193fac3088a3ec
 workflow-type: tm+mt
-source-wordcount: '928'
-ht-degree: 21%
+source-wordcount: '1025'
+ht-degree: 19%
 
 ---
 
@@ -73,20 +73,47 @@ OV e EV também oferecem esses recursos em relação aos certificados DV na Clou
 >
 >Se você tiver vários domínios personalizados, talvez não queira carregar um certificado sempre que adicionar um novo domínio. Nesse caso, você pode se beneficiar com a obtenção de um único certificado que abrange vários domínios.
 
->[!NOTE]
->
->Se dois certificados abrangerem o mesmo domínio estiverem instalados, o mais exato será aplicado.
->
->Por exemplo, se o seu domínio for `dev.adobe.com` e você tiver um certificado para `*.adobe.com` e outro para `dev.adobe.com`, o mais específico (`dev.adobe.com`) será usado.
-
 #### Requisitos para certificados SSL OV/EV gerenciados pelo cliente {#requirements}
 
 Se você optar por adicionar seu próprio certificado SSL OV/EV gerenciado pelo cliente, ele deverá atender aos seguintes requisitos:
 
-* A AEM as a Cloud Service aceita certificados que estejam em conformidade com a política OV (Validação da organização) ou EV (Validação estendida).
+* O certificado deve estar em conformidade com as políticas OV (Validação da organização) ou EV (Validação estendida).
    * A Cloud Manager não oferece suporte à adição de certificados DV (Validação de domínio).
+* Não há suporte para certificados autoassinados.
 * Qualquer certificado deve ser um certificado TLS X.509 de uma Autoridade de certificação confiável com uma chave privada RSA de 2048 bits correspondente.
-* Certificados autoassinados não são aceitos.
+
+#### Práticas recomendadas para gerenciamento de certificados
+
+* **Evitar sobreposição de certificados:**
+
+   * Para garantir um gerenciamento de certificados simples, evite implantar certificados sobrepostos que correspondam ao mesmo domínio. Por exemplo, ter um certificado curinga (*.example.com) ao lado de um certificado específico (dev.example.com) pode causar confusão.
+   * A camada TLS prioriza o certificado mais específico e implantado recentemente.
+
+  Exemplos de cenários:
+
+   * &quot;Certificado de Desenvolvimento&quot; abrange `dev.example.com` e é implantado como um mapeamento de domínio para `dev.example.com`.
+   * &quot;Certificado de Preparo&quot; abrange `stage.example.com` e é implantado como um mapeamento de domínio para `stage.example.com`.
+   * Se o &quot;Certificado de Preparo&quot; for implantado/atualizado *após* o &quot;Certificado de Desenvolvimento&quot;, ele também servirá solicitações para `dev.example.com`.
+
+     Para evitar esses conflitos, verifique se os certificados têm cuidadosamente o escopo de seus domínios pretendidos.
+
+* **Certificados curinga:**
+
+  Embora haja suporte a certificados curingas (por exemplo, `*.example.com`), eles só devem ser usados quando necessário. Em casos de sobreposição, o certificado mais específico tem prioridade. Por exemplo, o certificado específico serve `dev.example.com` em vez do curinga (`*.example.com`).
+
+* **Validação e solução de problemas:**
+Antes de tentar instalar um certificado com o Cloud Manager, a Adobe recomenda validar a integridade do certificado localmente usando ferramentas como o `openssl`. Por exemplo,
+
+  `openssl verify -untrusted intermediate.pem certificate.pem`
+
+
+<!--
+>[!NOTE]
+>
+>If two certificates cover the same domain are installed, the one that is more exact is applied.
+>
+>For example, if your domain is `dev.adobe.com` and you have one certificate for `*.adobe.com` and another for `dev.adobe.com`, the more specific one (`dev.adobe.com`) is used.
+-->
 
 #### Formato para certificados gerenciados pelo cliente {#certificate-format}
 
@@ -112,13 +139,9 @@ Os seguintes comandos `openssl` podem ser usados para converter certificados nã
   openssl x509 -inform der -in certificate.cer -out certificate.pem
   ```
 
->[!TIP]
->
->A Adobe recomenda que você valide a integridade do certificado localmente usando uma ferramenta como o `openssl verify -untrusted intermediate.pem certificate.pem` antes de tentar instalá-lo usando o Cloud Manager.
-
 ## Limitação do número de certificados SSL instalados {#limitations}
 
-A qualquer momento, o Cloud Manager permite no máximo 50 certificados SSL instalados. Esses certificados podem ser associados a um ou mais ambientes em todo o programa e também incluir certificados expirados.
+A qualquer momento, a Cloud Manager oferece suporte a até 50 certificados instalados. Esses certificados podem ser associados a um ou mais ambientes em todo o programa e também incluir certificados expirados.
 
 Se tiver atingido o limite, revise os certificados e considere excluir os certificados expirados. Ou agrupe vários domínios no mesmo certificado, pois um certificado pode abranger vários domínios (até 100 SANs).
 
