@@ -4,9 +4,9 @@ description: Crie formulários poderosos mais rápido usando planilhas e campos 
 feature: Edge Delivery Services
 exl-id: 0643aee5-3a7f-449f-b086-ed637ae53b5a
 role: Admin, Architect, Developer
-source-git-commit: 64a8b363cff079aa0a6f56effd77830ac797deca
+source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,21 @@ ht-degree: 0%
 # Configurar seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados
 
 
-Depois que você tiver [criado e visualizado o formulário](/help/edge/docs/forms/create-forms.md), será hora de habilitar a planilha correspondente para começar a receber dados. Você pode ativar manualmente a planilha para aceitar dados ou usar APIs de Administração para permitir que uma planilha aceite dados.
+Depois que você tiver [criado e visualizado o formulário](/help/edge/docs/forms/create-forms.md), será hora de habilitar a planilha correspondente para começar a receber dados. Você pode
+
+* [Habilitar manualmente a planilha para aceitar os dados](#manually-enable-the-spreadsheet-to-accept-data)
+* [Usar APIs de administrador para permitir que uma planilha aceite dados](#use-admin-apis-to-enable-a-spreadsheet-to-accept-data)
 
 ![Ecossistema de criação baseado em documentos](/help/edge/assets/document-based-authoring-workflow-enable-sheet-to-accept-data.png)
 
 
+<!--
+
 >[!VIDEO](https://video.tv.adobe.com/v/3427489?quality=12&learn=on)
 
+-->
+
+Você pode [configurar o Serviço de Envio do Forms manualmente](#configuring-the-forms-submission-service-manually) ou [configurar o Serviço de Envio do Forms usando a API](#configuring-the-forms-submission-service-using-api).
 
 
 ## Habilitar manualmente a planilha para aceitar dados
@@ -60,118 +68,112 @@ Depois que a planilha estiver configurada para receber dados, você poderá [vis
 >
 >  Nunca as folhas do &quot;aem compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
 
-<!--
-### Use Admin APIs to enable a spreadsheet to accept data
 
-You can also send a POST request to the form to enable it to accept data and configure headers for the `incoming` sheet. Upon receiving the POST request, the service analyzes the body of request and autonomously generates the essential headers and sheets needed for data ingestion.
+## Usar APIs de administrador para permitir que uma planilha aceite dados
 
-To use Admin APIs to enable a spreadsheet to accept data: 
+Você também pode enviar uma solicitação POST para o formulário para permitir que ele aceite dados e configure cabeçalhos para a folha `incoming`. Ao receber o pedido de POST, o serviço analisa o corpo do pedido e gera de forma autônoma os cabeçalhos e folhas essenciais necessários para a assimilação de dados.
 
-
-1. Open the workbook that you have created and change the name of the default sheet to `incoming`. 
-
-    >[!WARNING] 
-    >
-    > If the `incoming` sheet doesn't exist, AEM won't send any data to this workbook.
-
-1. Preview the sheet in the sidekick.
-
-    >[!NOTE] 
-    >
-    >Even if you have previewed the sheet before, you must preview it again after creating the `incoming` sheet for the first time.
-
-1. Send the POST request to generate the appropriate headers in the `incoming` sheet, and add the `shared-default` sheets to your spread sheet, if it does not exist already.
-
-    To understand how to format the POST request for setting up your sheet, refer to the [Admin API documentation](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). You can look at the example provided below: 
-
-    **Request** 
-    
-    ```JSON
-
-    POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
-    --header 'Content-Type: application/json' \
-    --data '{
-        "data": {
-            "Email": "john@wknd.com",
-            "Name": "John",
-            "Subject": "Regarding Product Inquiry",
-            "Message": "I have some questions about your products.",
-            "Phone": "123-456-7890",
-            "Company": "Adobe Inc.",
-            "Country": "United States",
-            "PreferredContactMethod": "Email",
-            "SubscribeToNewsletter": true
-        }
-    }'
-
-    ```
+Para usar APIs de administrador para permitir que uma planilha aceite dados:
 
 
-    **Response**
+1. Abra a pasta de trabalho criada e altere o nome da planilha padrão para `incoming`.
 
-    ```JSON
+   >[!WARNING]
+   >
+   > Se a planilha `incoming` não existir, o AEM não enviará dados para esta pasta de trabalho.
 
-    HTTP/2 200 
-    content-type: application/json
-    x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
-    cache-control: no-store, private, must-revalidate
-    accept-ranges: bytes
-    date: Sat, 10 Feb 2024 09:26:48 GMT
-    via: 1.1 varnish
-    x-served-by: cache-del21736-DEL
-    x-cache: MISS
-    x-cache-hits: 0
-    x-timer: S1707557205.094883,VS0,VE3799
-    strict-transport-security: max-age=31557600
-    content-length: 138
+1. Visualize a planilha no sidekick.
 
-    {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+   >[!NOTE]
+   >
+   >Mesmo que você tenha visualizado a planilha antes, você deve visualizá-la novamente depois de criar a planilha `incoming` pela primeira vez.
 
-    ```
+1. Envie a solicitação POST para gerar os cabeçalhos apropriados na planilha `incoming` e adicione as planilhas `shared-default` à planilha, se ela ainda não existir.
 
-    You can use tools like curl or Postman to execute this POST request, as demonstrated below:
+   Para entender como formatar a solicitação POST para configurar sua planilha, consulte a [Documentação da API de Administração](https://www.aem.live/docs/admin.html#tag/authentication/operation/profile). Você pode observar o exemplo fornecido abaixo:
 
-    ```JSON
+   **Solicitação**
 
-    curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
-        --header 'Content-Type: application/json' \
-        --data '{
-            "data": {
-                "Email": "john@wknd.com",
-                "Name": "John",
-                "Subject": "Regarding Product Inquiry",
-                "Message": "I have some questions about your products.",
-                "Phone": "123-456-7890",
-                "Company": "Wknd Inc.",
-                "Country": "United States",
-                "PreferredContactMethod": "Email",
-                "SubscribeToNewsletter": true
-        }
-    }'
+   ```JSON
+   POST 'https://admin.aem.page/form/{owner}/{repo}/{branch}/contact-us.json' \
+   --header 'Content-Type: application/json' \
+   --data '{
+       "data": {
+           "Email": "john@wknd.com",
+           "Name": "John",
+           "Subject": "Regarding Product Inquiry",
+           "Message": "I have some questions about your products.",
+           "Phone": "123-456-7890",
+           "Company": "Adobe Inc.",
+           "Country": "United States",
+           "PreferredContactMethod": "Email",
+           "SubscribeToNewsletter": true
+       }
+   }'
+   ```
 
-    ```
 
-    The above mentioned POST request provides sample data, including both form fields and their respective sample values. This data is used by the Admin service to set up the form.
+   **Resposta**
 
-    Your form is now enabled to accept data. You also observe the following changes in your spreadsheet: 
+   ```JSON
+   HTTP/2 200 
+   content-type: application/json
+   x-invocation-id: 1b3bd30a-8cfb-4f85-a662-4b1f7cf367c5
+   cache-control: no-store, private, must-revalidate
+   accept-ranges: bytes
+   date: Sat, 10 Feb 2024 09:26:48 GMT
+   via: 1.1 varnish
+   x-served-by: cache-del21736-DEL
+   x-cache: MISS
+   x-cache-hits: 0
+   x-timer: S1707557205.094883,VS0,VE3799
+   strict-transport-security: max-age=31557600
+   content-length: 138
+   
+   {"rowCount":2,"columns":["Email","Name","Subject","Message","Phone","Company","Country",      "PreferredContactMethod","SubscribeToNewsletter"]}%
+   ```
 
-## Automatic changes to sheet once it is enabled to accept data. 
+   Você pode usar ferramentas como curl ou Postman para executar essa solicitação de POST, conforme demonstrado abaixo:
 
-Once the sheet is set to recieve data, you observe the following changes in your spreadsheet: 
+   ```JSON
+   curl -s -i -X POST 'https://admin.aem.page/form/wkndform/wefinance/main/contact-us.json' \
+       --header 'Content-Type: application/json' \
+       --data '{
+           "data": {
+               "Email": "john@wknd.com",
+               "Name": "John",
+               "Subject": "Regarding Product Inquiry",
+               "Message": "I have some questions about your products.",
+               "Phone": "123-456-7890",
+               "Company": "Wknd Inc.",
+               "Country": "United States",
+               "PreferredContactMethod": "Email",
+               "SubscribeToNewsletter": true
+       }
+   }'
+   ```
 
-A sheet named "Slack" is added to your Excel Workbook or Google Sheet. In this sheet, you can configure automatic notifications for a designated Slack channel whenever new data is ingested into your spreadsheet. At present, AEM supports notifications exclusively to the AEM Engineering Slack organization and the Adobe Enterprise Support organization.
+   A solicitação POST mencionada acima fornece dados de amostra, incluindo campos de formulário e seus respectivos valores de amostra. Esses dados são usados pelo serviço de Administração para configurar o formulário.
 
-1. To set up Slack notifications enter the "teamId" of the Slack workspace and the "channel name" or "ID". You can also ask the slack-bot (with the debug command) for the "teamId" and the "channel ID". Using the "channel ID" instead of the "channel name" is preferable, as it survives channel renames.
+   O formulário agora está habilitado para aceitar dados. Você também observa as seguintes alterações na planilha:
 
-    >[!NOTE] 
-    >
-    > Older forms didn't have the "teamId" column. The "teamId" was included in the channel column, separated by a "#" or "/".
+## Alterações automáticas na planilha quando ela estiver ativada para aceitar dados.
 
-1. Enter any title that you want and under fields enter the names of the fields you want to see in the Slack notification. Each heading should be separated by a comma (For example name, email).
+Depois que a planilha é definida para receber dados, você observa as seguintes alterações em sua planilha:
 
-    >[!WARNING] 
-    >
-    >  Never should the "shared-default" sheets contain any personally identifiable information or sensitive data that you are not comfortable with being publicly accessible.
+Uma planilha chamada &quot;Slack&quot; é adicionada à sua Pasta de trabalho do Excel ou Planilha do Google. Nesta planilha, você pode configurar notificações automáticas para um canal de Slack designado sempre que novos dados forem assimilados em sua planilha. Atualmente, o AEM suporta notificações exclusivamente para a organização AEM Engineering Slack e a organização Adobe Enterprise Support.
+
+1. Para configurar notificações de Slack, digite a &quot;teamId&quot; do espaço de trabalho do Slack e o &quot;channel name&quot; ou &quot;ID&quot;. Você também pode pedir ao slack-bot (com o comando debug) o &quot;teamId&quot; e a &quot;channel ID&quot;. É preferível usar a &quot;ID do canal&quot; em vez do &quot;nome do canal&quot;, pois ela sobrevive à renomeação de canais.
+
+   >[!NOTE]
+   >
+   > Formulários mais antigos não tinham a coluna &quot;teamId&quot;. A &quot;teamId&quot; foi incluída na coluna do canal, separada por um &quot;#&quot; ou &quot;/&quot;.
+
+1. Insira qualquer título que desejar e em campos insira os nomes dos campos que deseja ver na notificação Slack. Cada cabeçalho deve ser separado por vírgula (por exemplo, nome, email).
+
+   >[!WARNING]
+   >
+   >  Nunca as planilhas de &quot;padrão compartilhado&quot; devem conter informações pessoalmente identificáveis ou dados confidenciais que você não se sinta confortável em acessar publicamente.
 
 
 
