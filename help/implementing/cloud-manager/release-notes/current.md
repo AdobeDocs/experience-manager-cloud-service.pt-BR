@@ -4,9 +4,9 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.1.0 no AEM as 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 9850a52626c2bd80f7528931d23691dff1dd3eb2
+source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '841'
 ht-degree: 4%
 
 ---
@@ -80,6 +80,8 @@ A próxima versão está planejada para sexta-feira, 13 de fevereiro de 2025.
 * **Suporte aprimorado para sites Edge Delivery Services:** o Cloud Manager agora oferece suporte à integração para os sites Edge Delivery Services mais recentes. Essa atualização inclui uma refatoração abrangente da CDN e da pilha de delivery, resultando em maior robustez e capacidade de manutenção.
 
 * **Atualização antecipada do programa do adotante - Suporte à validação de PR para Bitbucket e GitLab:** O Cloud Manager agora oferece suporte à validação de Solicitação de Recepção (PR) para versões da Nuvem e auto-hospedadas do Bitbucket e do GitLab. Esse recurso permite que os clientes testem suas alterações de código em relação aos limites de qualidade do código de Adobe antes de mesclar uma PR. Garantindo maior qualidade do código antes da mesclagem, esse aprimoramento melhora significativamente a taxa de sucesso das alterações de código nos pipelines de produção, reduzindo o tempo de entrada no mercado e simplificando os fluxos de trabalho de desenvolvimento.
+
+Para obter mais informações sobre &quot;Traga seu próprio Git&quot; - agora com suporte para GitLab e Bitbucket - e para se inscrever como Usuário Antecipado, consulte as [Notas de versão do Cloud Manager de outubro de 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
 
 * **Opções de filtragem avançadas para pipelines:** O Cloud Manager agora apresenta opções de filtragem avançadas na página Pipelines, permitindo que você acesse rapidamente dados relevantes e aprimore a eficiência da implantação. Vários dos principais recursos incluem o seguinte:
 
