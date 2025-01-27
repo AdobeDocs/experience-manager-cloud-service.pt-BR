@@ -5,10 +5,10 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 7122022c4245887ec576d4c1cd9af288b440f0c2
+source-git-commit: 64270a0d3b65ac327b14826117631deeb749c95f
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 5%
+source-wordcount: '1000'
+ht-degree: 6%
 
 ---
 
@@ -32,12 +32,13 @@ A força principal do Editor universal está em seu conjunto de recursos robusto
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG"> 
     <h3>Interface do WYSIWYG</h3>
-    <p>O Universal Editor fornece uma interface WYSIWYG para design de formulários. Ele fornece biblioteca de componentes pré-criada, suporte de design responsivo e criação de formulários baseada em modelo. Você pode adicionar ou remover campos de formulário instantaneamente e modificar propriedades de campo (como rótulo, vinculação de dados, validação). Você também pode plug-in de componentes de formulário personalizados para o Universal Editor.</p>
+    <p>O Editor universal fornece uma interface do WYSIWYG para design de formulários com uma biblioteca de componentes pré-criada, design responsivo, criação baseada em modelo e modificações de campo em tempo real.
+ </p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Editor de regras">
     <h3>Editor de regras</h3>
-    <p>O editor de regras permite criar interações de formulário sofisticadas com regras orientadas por eventos, validação instantânea e tratamento de erros por meio de definições leves baseadas em JavaScript e JSON.</p>
+    <p>Crie formulários responsivos que se adaptam perfeitamente a todos os dispositivos. Pré-visualize e teste designs para desktops, tablets e dispositivos móveis usando o modo responsivo.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Ações de enviar">
@@ -49,17 +50,17 @@ A força principal do Editor universal está em seu conjunto de recursos robusto
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG alt=" WYSIWYG Interface"> 
     <h3>Personalização</h3>
-    <p>Personalização</p>
+    <p>O Personalization usa os dados do usuário para fornecer experiências de formulário personalizadas, ajustando dinamicamente o conteúdo, o layout ou as opções com base nas preferências do usuário.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Editor de regras">
-    <h3>Cabeçalhos de autenticação</h3>
-    <p>O editor de regras permite criar interações de formulário sofisticadas com regras orientadas por eventos, validação instantânea e tratamento de erros por meio de definições leves baseadas em JavaScript e JSON.</p>
+    <h3>Teste A/B</h3>
+    <p>O teste A/B (experimentação) permite que as organizações experimentem diferentes designs de formulário, layouts e recursos para identificar as variantes com melhor desempenho.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Ações de enviar">
-    <h3> Publicar/Desfazer publicação </h3>
-    <p>Controle facilmente a visibilidade dos formulários publicando-os e desfazendo a publicação com apenas alguns cliques.</p>
+    <h3> Gerenciamento de tarefas </h3>
+    <p>A integração com o Adobe Workfront permite que as equipes gerenciem tarefas de criação e manutenção de formulários, garantindo colaboração contínua e fluxos de trabalho simplificados.</p>
   </div>
 </div>
 
@@ -67,17 +68,17 @@ A força principal do Editor universal está em seu conjunto de recursos robusto
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Serviços de pré-preenchimento">
     <h3>Serviços de pré-preenchimento</h3>
-    <p>Os serviços de pré-preenchimento melhoram a experiência do usuário preenchendo de forma inteligente os campos de formulário com dados relevantes de várias fontes, reduzindo a entrada manual de dados.</p>
+    <p>Os serviços de pré-preenchimento preenchem automaticamente os campos de formulário com dados relevantes do usuário de várias fontes, reduzindo a entrada manual e aprimorando a experiência do usuário.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Vinculação de dados">
     <h3>Vinculação de dados</h3>
-    <p>A vinculação de dados permite conexões diretas e dinâmicas entre campos de formulário e fontes de dados de back-end, oferecendo suporte à sincronização em tempo real e ao mapeamento de dados complexo.</p>
+    <p>A vinculação de dados permite conexões diretas entre campos de formulário e fontes de dados de back-end, oferecendo suporte a atualizações em tempo real e mapeamento de dados avançado.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Internacionalização/localização">
-    <h3>Localização</h3>
-    <p>O suporte à internacionalização garante acessibilidade global com renderização em vários idiomas, compatibilidade entre os idiomas da direita e da esquerda e formatação específica do local.</p>
+    <h3>Publicar/Desfazer publicação</h3>
+    <p>Controle facilmente a visibilidade de seus formulários — publique ou cancele a publicação com apenas alguns cliques para gerenciar dinamicamente a disponibilidade, o acesso do usuário e as atualizações de conteúdo.</p>
   </div>
 </div>
 
@@ -85,17 +86,17 @@ A força principal do Editor universal está em seu conjunto de recursos robusto
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Analytics e Rastreamento">
     <h3>Analytics e Rastreamento</h3>
-    <p>Os mecanismos integrados de análise e rastreamento fornecem insights sobre interações de formulário, taxas de envio e comportamento do usuário, permitindo otimização contínua.</p>
+    <p>Obtenha insights sobre o comportamento do usuário, as interações de formulário e as taxas de envio com análises e rastreamento integrados para permitir a otimização de formulários orientados por dados.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Experimentação (teste A/B)">
-    <h3>Experimentação (teste A/B)</h3>
-    <p>A experimentação permite que as organizações executem testes A/B em designs de formulário para identificar os layouts ou recursos de melhor desempenho.</p>
+    <h3>Ações de enviar</h3>
+    <p>As ações enviar oferecem suporte à integração de back-end, lógica de envio condicional, endpoints seguros e pré-processadores, simplificando os fluxos de trabalho de envio.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Gerenciamento de tarefas">
-    <h3>Gerenciamento de tarefas</h3>
-    <p>A integração com o Adobe Workfront permite que as equipes gerenciem tarefas relacionadas à criação e manutenção de formulários, garantindo uma colaboração simplificada.</p>
+    <h3>Componentes personalizados</h3>
+    <p>Os componentes personalizados permitem que os desenvolvedores estendam os recursos do formulário criando elementos exclusivos personalizados adaptados a casos de uso organizacional específicos.</p>
   </div>
 </div>
 
@@ -108,12 +109,12 @@ A força principal do Editor universal está em seu conjunto de recursos robusto
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Incorporação do Forms">
     <h3>Incorporação do Forms</h3>
-    <p>O Editor universal oferece suporte à incorporação de formulários diretamente nas páginas dos sites do Edge Deliver Services. Isso pode ser feito usando o componente de Incorporação fornecido imediatamente.</p>
+    <p>Incorpore formulários diretamente nas páginas do Sites do Edge Delivery Services usando o componente incorporado do Editor universal para obter uma experiência do usuário perfeita.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Componentes personalizados">
     <h3>Componentes personalizados</h3>
-    <p>Os componentes personalizados permitem aos desenvolvedores estender a funcionalidade de formulários criando elementos de formulário exclusivos personalizados para casos de uso específicos 
+    <p>Os componentes personalizados permitem que os desenvolvedores estendam os recursos do formulário criando elementos exclusivos personalizados adaptados a casos de uso organizacional específicos.
     </p>
   </div>
 </div>
@@ -122,12 +123,12 @@ A força principal do Editor universal está em seu conjunto de recursos robusto
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Configuração de agradecimento">
     <h3>Configuração de agradecimento</h3>
-    <p>Personalize a mensagem ou página de confirmação exibida após o envio do formulário.</p>
+    <p>Personalize facilmente a mensagem ou página de confirmação exibida aos usuários após o envio bem-sucedido do formulário.</p>
   </div>
     <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Ações de enviar">
     <h3>Ações de enviar</h3>
-    <p>As Ações de envio facilitam os fluxos de trabalho de envio de formulário com opções de integração de backend, pré-processadores de dados, lógica de envio condicional e conexões de endpoint seguras.</p>
+    <p>As ações de envio facilitam os fluxos de trabalho de envio de formulário com integração de backend e conexões de endpoint seguras.</p>
   </div>
 </div>
 
