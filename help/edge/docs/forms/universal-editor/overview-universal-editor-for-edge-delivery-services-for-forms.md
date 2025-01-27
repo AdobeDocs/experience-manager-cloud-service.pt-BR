@@ -1,13 +1,13 @@
 ---
-title: Visão geral do Edge Delivery Services para AEM Forms
-description: Edge Delivery Services para AEM Forms criado para desempenho máximo, permitindo que você visualize o futuro da coleta de dados simplificada e do engajamento do usuário.
+title: Editor universal para Edge Delivery Services para Forms (bloco Forms do EDS)
+description: Use o Editor universal para Edge Delivery Services for Forms (bloco Forms do EDS) para criar Forms adaptável.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: b9364394f683fa8af5d28723e5f10b20b001ea37
+source-git-commit: 9d5950793f5b3e3c3d6229b9de9d5c020a164dd7
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '959'
 ht-degree: 5%
 
 ---
@@ -21,9 +21,7 @@ Com o Editor universal, os usuários podem usar elementos de formulário (como c
 
 O Editor universal foca especificamente em Edge Delivery Services (EDS). A força principal do Editor universal está em seu conjunto de recursos robusto, que inclui recursos avançados de criação de formulários, edição dinâmica de regras e integração contínua com várias fontes de dados. Os usuários podem criar rapidamente formulários responsivos usando componentes pré-criados, modelos personalizáveis e uma ampla biblioteca de elementos de formulário.
 
-![Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){{width=50%, align-center}}
-
-
+![Editor universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=50%, align-center}
 
 Os recursos do Universal Editor são cuidadosamente projetados para manter a renderização leve do lado do cliente, a compatibilidade entre navegadores e a estrita adesão aos padrões de acessibilidade.
 
@@ -40,17 +38,17 @@ Os recursos do Universal Editor são cuidadosamente projetados para manter a ren
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/rule-editor.svg" alt="Interface do WYSIWYG" alt="Editor de regras">
     <h3>Editor de regras</h3>
-    <p>Crie formulários responsivos que se adaptam perfeitamente a todos os dispositivos. Pré-visualize e teste designs para desktops, tablets e dispositivos móveis usando o modo responsivo.</p>
+    <p>O editor de regras permite que os usuários criem interações de formulário dinâmicas usando regras orientadas por eventos, validação instantânea e tratamento de erros por meio do lightweight JavaScript e do JSON.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Interface do WYSIWYG" alt="Ações de enviar">
+    <img src="/help/edge/docs/forms/universal-editor/assets/responsive.svg" alt="Interface do WYSIWYG" alt="Modo responsivo">
     <h3>Modo responsivo </h3>
-    <p>Crie formulários que se adaptam perfeitamente a todos os dispositivos (desktops, tablets e dispositivos móveis). Use o modo responsivo para visualizar formulários de vários tamanhos de tela.</p>
+    <p>Crie formulários que se adaptam perfeitamente a todos os dispositivos (desktops, tablets e dispositivos móveis). Use o modo responsivo para visualizar e testar formulários para vários tamanhos de tela.</p>
   </div>
 </div>
 <div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG alt=" WYSIWYG Interface"> 
+    <img src="/help/edge/docs/forms/universal-editor/assets/personalization.svg" alt="Interface do WYSIWYG alt=" WYSIWYG Interface"> 
     <h3>Personalização</h3>
     <p>O Personalization usa os dados do usuário para fornecer experiências de formulário personalizadas, ajustando dinamicamente o conteúdo, o layout ou as opções com base nas preferências do usuário.</p>
   </div>
@@ -60,9 +58,9 @@ Os recursos do Universal Editor são cuidadosamente projetados para manter a ren
     <p>O teste A/B (experimentação) permite que as organizações experimentem diferentes designs de formulário, layouts e recursos para identificar as variantes com melhor desempenho.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/task-management.svg" alt="Interface do WYSIWYG" alt="Ações de enviar">
+    <img src="/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg" alt="Interface do WYSIWYG" alt="Integração com o Adobe Workfront">
     <h3> Gerenciamento de tarefas </h3>
-    <p>A integração com o Adobe Workfront permite que as equipes gerenciem tarefas de criação e manutenção de formulários, garantindo colaboração contínua e fluxos de trabalho simplificados.</p>
+    <p>A integração com o Adobe Workfront permite que as equipes gerenciem tarefas de criação e manutenção de formulários, garantindo fluxos de trabalho simplificados.</p>
   </div>
 </div>
 
@@ -75,12 +73,12 @@ Os recursos do Universal Editor são cuidadosamente projetados para manter a ren
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/data-binding.svg" alt="Interface do WYSIWYG" alt="Vinculação de dados">
     <h3>Vinculação de dados</h3>
-    <p>A vinculação de dados permite conexões diretas entre campos de formulário e fontes de dados de back-end, oferecendo suporte a atualizações em tempo real e mapeamento de dados avançado.</p>
+    <p>A vinculação de dados permite conexões diretas entre campos de formulário e fontes de dados de back-end, oferecendo suporte a atualizações em tempo real e mapeamento de dados avançado para armazenamento estruturado de dados de reclamação.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Interface do WYSIWYG" alt="Internacionalização/localização">
     <h3>Publicar/Desfazer publicação</h3>
-    <p>Controle facilmente a visibilidade de seus formulários — publique ou cancele a publicação com apenas alguns cliques para gerenciar dinamicamente a disponibilidade, o acesso do usuário e as atualizações de conteúdo.</p>
+    <p>Controle facilmente a visibilidade de seus formulários — publique ou cancele a publicação com apenas alguns cliques para gerenciar dinamicamente atualizações de disponibilidade e conteúdo.</p>
   </div>
 </div>
 
@@ -91,7 +89,7 @@ Os recursos do Universal Editor são cuidadosamente projetados para manter a ren
     <p>Obtenha insights sobre o comportamento do usuário, as interações de formulário e as taxas de envio com análises e rastreamento integrados para permitir a otimização de formulários orientados por dados.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
-    <img src="/help/edge/docs/forms/universal-editor/assets/generate-forms.svg" alt="Interface do WYSIWYG" alt="Experimentação (teste A/B)">
+    <img src="/help/edge/docs/forms/universal-editor/assets/submit-actions.svg" alt="Interface do WYSIWYG" alt="Ações de enviar">
     <h3>Ações de enviar</h3>
     <p>As ações enviar oferecem suporte à integração de back-end, lógica de envio condicional, endpoints seguros e pré-processadores, simplificando os fluxos de trabalho de envio.</p>
   </div>
@@ -286,7 +284,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Integração
 
-Para ativar o Editor universal e o Editor de regras para o seu ambiente ou solicitar recursos adicionais como o Forms Portal, Documento de registro, integração com o Adobe Sign ou suporte de idioma da direita para a esquerda, basta enviar um email para mailto:aem-forms-ea@adobe.com do endereço oficial com a solicitação.
+Para habilitar o Editor Universal e o Editor de Regras para o seu ambiente ou solicitar recursos adicionais como o Forms Portal, Documento de Registro, integração com o Adobe Sign ou suporte de idioma da direita para a esquerda, basta enviar um email para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) do endereço oficial com a solicitação.
 
 
 
