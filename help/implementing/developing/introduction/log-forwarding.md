@@ -4,9 +4,9 @@ description: Saiba mais sobre como encaminhar logs para fornecedores de registro
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6e91ad839de6094d7f6abd47881dabc6357a80ff
+source-git-commit: 9c258e2906c37ee9b91d2faa78f7dfdaa5956dc2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1985'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Os clientes com uma licença de um fornecedor de registro em log ou que hospedam
 * HTTPS
 * Splunk
 
-O encaminhamento de logs é configurado de maneira automatizada declarando uma configuração no Git e implantando-a por meio do Pipeline de configuração do Cloud Manager em tipos de ambiente de RDE, desenvolvimento, preparo e produção em programas de produção (não sandbox).
+O encaminhamento de logs é configurado de maneira automatizada declarando uma configuração no Git e pode ser implantado por meio de pipelines de configuração do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção. O arquivo de configuração pode ser implantado em RDEs (Rapid Development Environments, ambientes de desenvolvimento rápido) usando ferramentas de linha de comando.
 
 Há uma opção para que os registros AEM e Apache/Dispatcher sejam roteados por meio da infraestrutura de rede avançada do AEM, como IP de saída dedicado.
 

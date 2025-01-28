@@ -4,9 +4,9 @@ description: Saiba como você pode usar pipelines de configuração para implant
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 20338fde4b0875f9f40a2f3f1702b8e1c01a0a88
+source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '994'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ Saiba como você pode usar pipelines de configuração para implantar diferentes
 
 Um pipeline de configuração do Cloud Manager implanta arquivos de configuração (criados no formato YAML) em um ambiente de destino. Vários recursos do AEM as a Cloud Service podem ser configurados dessa maneira, incluindo o encaminhamento de logs, tarefas de manutenção relacionadas à limpeza e vários recursos de CDN.
 
-Os pipelines de configuração podem ser implantados por meio do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção em programas de produção (não sandbox). Os arquivos de configuração podem ser implantados em ambientes de desenvolvimento rápido (RDEs) usando a [ferramenta de linha de comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
+Os pipelines de configuração podem ser implantados por meio do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção. Os arquivos de configuração podem ser implantados em ambientes de desenvolvimento rápido (RDEs) usando a [ferramenta de linha de comando](/help/implementing/developing/introduction/rapid-development-environments.md#deploy-config-pipeline).
 
 As seções a seguir deste documento fornecem uma visão geral de informações importantes sobre como os pipelines de configuração podem ser usados e como as configurações para eles devem ser estruturadas. Ele descreve conceitos gerais compartilhados entre todos ou um subconjunto dos recursos compatíveis com os pipelines de configuração.
 

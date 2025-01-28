@@ -4,10 +4,10 @@ description: Saiba mais sobre as tarefas de manutenção no AEM as a Cloud Servi
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 85cef99dc7a8d762d12fd6e1c9bc2aeb3f8c1312
+source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 30%
+source-wordcount: '2043'
+ht-degree: 31%
 
 ---
 
@@ -267,7 +267,7 @@ Lembre-se de que para que a configuração seja válida:
 * todas as propriedades devem ser definidas. Não há padrões herdados.
 * os tipos (números inteiros, strings, booleanos etc.) nas tabelas de propriedades abaixo devem ser respeitados.
 
-**4** - Criar um pipeline de configuração no Cloud Manager, conforme descrito no artigo [configuração de pipeline.](/help/operations/config-pipeline.md#managing-in-cloud-manager) Sandboxes e RDEs (ambientes de desenvolvimento rápido) não oferecem suporte à limpeza.
+**4** - Criar um pipeline de configuração no Cloud Manager, conforme descrito no [artigo sobre o pipeline de configuração.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
 
 ### Remoção da versão {#version-purge}
 
@@ -373,4 +373,4 @@ As colunas que indicam *padrão* indicam os valores padrão no futuro, quando os
 | regras | - | - | Sim | Objeto | Um ou mais dos seguintes nós: replicação, páginas, dam. Cada um desses nós define regras, com as propriedades abaixo. Todas as propriedades devem ser declaradas. |
 | maximumAgeDays | 7 dias | 2557 (7 anos + 2 dias bissextos) | Sim | inteiro | Para replicação, páginas ou DAM: o número de dias que os logs de auditoria são mantidos. Os logs de auditoria anteriores ao valor configurado são removidos. |
 | contentPath | &quot;/content&quot; | &quot;/content&quot; | Sim | String | O caminho sob o qual os logs de auditoria serão removidos para o tipo relacionado. Deve ser definido como &quot;/content&quot;. |
-| tipos | todos os valores | todos os valores | Sim | Matriz de enumeração | Para **replicação**, os valores enumerados são: Ativar, Desativar, Excluir, Testar, Reverter, Sondagem Interna. Para **páginas**, os valores enumerados são: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestoring, PageRolled Out, PageValid, PageInvalid. Para **dam**, os valores enumerados são: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET ATUALIZADO, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJEITADO. |
+| tipos | todos os valores | todos os valores | Sim | Matriz de enumeração | Para **replicação**, os valores enumerados são: Ativar, Desativar, Excluir, Testar, Reverter, Sondagem Interna. Para **páginas**, os valores enumerados são: PageCreated, PageModified, PageMoved, PageDeleted, VersionCreated, PageRestoring, PageRolled Out, PageValid, PageInvalid. Para **dam**, os valores enumerados são: ASSET_EXPIRING, METADATA_UPDATED, ASSET_EXPIRED, ASSET_REMOVED, RESTORED, ASSET_MOVED, ASSET_VIEWED, PROJECT_VIEWED, PUBLISHED_EXTERNAL, COLLECTION_VIEWED, VERSIONED, ADDED_COMMENT, RENDITION_UPDATED, ACCEPTED, DOWNLOADED, SUBASSET_UPDATED, SUBASSET_REMOVED, ASSET_CREATED, ASSET_SHARED, RENDITION_REMOVED, ASSET_PUBLISHED, ORIGINAL_UPDATED, RENDITION_DOWNLOADED, REJECTED. |
