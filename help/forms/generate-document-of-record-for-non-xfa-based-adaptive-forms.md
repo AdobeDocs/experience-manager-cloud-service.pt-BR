@@ -4,7 +4,7 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) do A
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 2%
@@ -13,7 +13,9 @@ ht-degree: 2%
 
 # Gerar documento de registro para Formulários adaptáveis
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+>[!NOTE]
+>
+> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 
 | Versão | Link do artigo |
@@ -512,7 +514,7 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as 
 ### Usar um arquivo XCI personalizado no ambiente de desenvolvimento as a Cloud Service do Forms local
 
 1. Carregue o arquivo XCI no ambiente de desenvolvimento local.
-1. Abra o gerenciador de configurações do SDK do Cloud Service. A URL padrão é: <http://localhost:4502/system/console/configMgr>.
+1. Abra o gerenciador de configurações do Cloud Service SDK. A URL padrão é: <http://localhost:4502/system/console/configMgr>.
 1. Localize e abra a configuração **[!UICONTROL Forms adaptável e Canal da Web de comunicação interativa]**.
 1. Especifique o caminho do arquivo XCI e clique em **[!UICONTROL Salvar]**.
 

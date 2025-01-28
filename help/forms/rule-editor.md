@@ -5,7 +5,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: 4cfdabaae23f0dcd1737c73e5edd644bbec6014e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '6492'
 ht-degree: 0%
@@ -14,7 +14,9 @@ ht-degree: 0%
 
 # Adicionar regras a um Formulário adaptável {#adaptive-forms-rule-editor}
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+>[!NOTE]
+>
+> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -58,7 +60,7 @@ No regra editor, o **tipo Quando** regra aplica a construção de ação de cond
 
 **Condição** de ação Nesta construção, uma regra primeiro define uma ação a ser acionada seguida de condições para avaliação. Outra variação dessa construção é a ação alternativa de condição de ação, que também define uma ação alternativa a ser acionada se a condição retornar False.
 
-A Exibir, Ocultar, Ativar, Desativar, Definir Valor e Validar regra tipos em regra editor impor a construção regra ação-condição. Por padrão, a ação alternativa para Exibir é Ocultar e habilitar é Desativar e da maneira oposta. Não é possível alterar a ação alternativa padrão.
+A Exibir, Ocultar, Ativar, Desativar, Definir Valor e Validar regra tipos em regra editor impor a construção de regra de ação. Por padrão, a ação alternativa para Exibir é Ocultar e habilitar é Desativar e da maneira oposta. Não é possível alterar a ação alternativa padrão.
 
 >[!NOTE]
 >

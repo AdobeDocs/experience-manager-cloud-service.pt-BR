@@ -4,7 +4,7 @@ description: O AEM Forms fornece exemplos de temas, modelos e modelos de dados d
 feature: Adaptive Forms, Foundation Components
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 role: User, Developer, Admin
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 4%
@@ -19,7 +19,9 @@ ht-degree: 4%
 | Formulário adaptável com base nos Componentes principais | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
 | Formulário adaptável baseado em componentes de base | Este artigo |
 
-O <span class="preview"> Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base. </span>
+>[!NOTE]
+>
+> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 O AEM Forms as a Cloud Service fornece vários temas de referência, modelos e modelo de dados de formulário (FDM) para ajudar você a começar rapidamente a criar o Adaptive Forms. Você pode baixar o [pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) do portal de distribuição de softwares e usar o [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md) para instalar o [pacote de conteúdo de referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) no seu ambiente de produção, desenvolvimento ou desenvolvimento local para obter esses ativos de referência para o seu ambiente.
 
@@ -115,19 +117,19 @@ O modelo básico ajuda a criar rapidamente um formulário de inscrição. Você 
 
 ## Modelo de dados do formulário de referência (FDM) {#reference-models}
 
-O Forms adaptável pode interagir com os servidores do Microsoft Dynamics 365 e Salesforce para ativar fluxos de trabalho de negócios. Por exemplo:
+O Forms adaptável pode interagir com os servidores Microsoft Dynamics 365 e Salesforce para ativar fluxos de trabalho de negócios. Por exemplo:
 
 * Grave dados no Microsoft Dynamics 365 e Salesforce no envio do Formulário adaptável.
-* Grave dados no Microsoft Dynamics 365 e Salesforce por meio de entidades personalizadas definidas no Modelo de dados de formulário (FDM) e vice-versa.
-* Consulte o servidor do Microsoft Dynamics 365 e Salesforce para obter dados e preencher previamente o Forms adaptável.
-* Ler dados do servidor do Microsoft Dynamics 365 e Salesforce.
+* Grave dados no Microsoft Dynamics 365 e no Salesforce por meio de entidades personalizadas definidas no Modelo de dados de formulário (FDM) e vice-versa.
+* Consulte o servidor Microsoft Dynamics 365 e Salesforce para obter dados e preencher previamente o Forms adaptável.
+* Ler dados do servidor Microsoft Dynamics 365 e Salesforce.
 
 Você pode obter o seguinte Modelo de Dados de Formulário (FDM) instalando o [pacote de conteúdo de Referência](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft® Dynamics 365
 * Salesforce
 
-Para obter informações sobre como usar esses modelos, consulte [Configurar o Microsoft Dynamics 365 e os serviços de nuvem do Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Para obter informações sobre como usar esses modelos, consulte [Configurar o Microsoft Dynamics 365 e o Salesforce Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
 
 
 ## Consulte também {#see-also}
