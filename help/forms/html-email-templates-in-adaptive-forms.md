@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Veja a seguir uma rápida visão geral das etapas envolvidas:
 
 ## Configurar um modelo de HTML para um formulário adaptável
 
-Você pode configurar um Formulário adaptável para enviar um email ao enviar usando a ação de envio [**Enviar Email**](/help/forms/configure-submit-action-send-email.md). A ação fornece dois métodos para configurar um modelo de HTML:
+Você pode configurar um Formulário adaptável para enviar um email ao enviar usando a ação de envio [**Enviar email**](/help/forms/configure-submit-action-send-email.md). A ação fornece dois métodos para configurar um modelo de HTML:
 
 ### Opção 1: Selecione um arquivo contendo o modelo HTML
 
@@ -42,11 +42,14 @@ Antes de continuar, verifique se você carregou o modelo de HTML no ambiente do 
 
 1. Abra o Formulário adaptável para edição.
 1. Vá para o **Navegador de Conteúdo**, selecione o **Contêiner do Guia** e toque no ícone de propriedades. Uma caixa de diálogo com o título `Adaptive Form Container` é exibida.
-1. Vá para a guia **Envio** e selecione a ação de envio **Enviar Email**.
+1. Vá para a guia **Envio** e selecione a ação de envio **Enviar email**.
+
+   ![Enviar ação de envio de email](/help/forms/assets/send-email-action.png)
+
 1. Habilitar a opção **Usar modelo externo**.
 1. Habilite a opção **Usar modelo de HTML**.
 1. Clique no ícone de pasta da opção Caminho do modelo externo e procure para selecionar seu modelo de HTML.
-1. Clique em Concluído para salvar a configuração.
+1. Clique em **Concluído** para salvar a configuração.
 
 O modelo de HTML agora está configurado para o Formulário adaptável.
 
@@ -54,15 +57,14 @@ O modelo de HTML agora está configurado para o Formulário adaptável.
 
 1. Abra o Formulário adaptável para edição.
 1. Vá para o **Navegador de Conteúdo**, selecione o **Contêiner do Guia** e toque no ícone de propriedades. Uma caixa de diálogo com o título `Adaptive Form Container` é exibida.
-1. Vá para a guia **Envio** e selecione a ação de envio **Enviar Email**.
-1. Habilitar a opção **Usar modelo externo**.
+1. Vá para a guia **Envio** e selecione a ação de envio **Enviar email**.
 1. Habilite a opção **Usar modelo de HTML**.
 1. Digite ou cole seu código de HTML diretamente na caixa **Modelo de email** fornecida.
 
 
 ## Configurar um modelo de texto sem formatação para um formulário adaptável
 
-Você pode configurar um Formulário adaptável para enviar um email ao enviar usando a ação de envio [**Enviar Email**](/help/forms/configure-submit-action-send-email.md). A ação fornece dois métodos para configurar um template de texto sem formatação:
+Você pode configurar um Formulário adaptável para enviar um email ao enviar usando a ação de envio [**Enviar email**](/help/forms/configure-submit-action-send-email.md). A ação fornece dois métodos para configurar um template de texto sem formatação:
 
 ### Opção 1: Selecione um arquivo contendo o modelo
 
@@ -70,7 +72,7 @@ Antes de continuar, verifique se você carregou o modelo de HTML no ambiente do 
 
 1. Abra o Formulário adaptável para edição.
 1. Vá para o **Navegador de Conteúdo**, selecione o **Contêiner do Guia** e toque no ícone de propriedades. Uma caixa de diálogo com o título `Adaptive Form Container` é exibida.
-1. Vá para a guia **Envio** e selecione a ação de envio **Enviar Email**.
+1. Vá para a guia **Envio** e selecione a ação de envio **Enviar email**.
 1. Habilitar a opção **Usar modelo externo**.
 1. Clique no ícone de pasta da opção **Caminho do Modelo Externo** e procure e selecione seu modelo de texto sem formatação.
 1. Clique em Concluído para salvar a configuração.
@@ -81,7 +83,7 @@ Seu modelo agora está configurado para o Formulário adaptável.
 
 1. Abra o Formulário adaptável para edição.
 1. Vá para o **Navegador de Conteúdo**, selecione o **Contêiner do Guia** e toque no ícone de propriedades. Uma caixa de diálogo com o título `Adaptive Form Container` é exibida.
-1. Vá para a guia **Envio** e selecione a ação de envio **Enviar Email**.
+1. Vá para a guia **Envio** e selecione a ação de envio **Enviar email**.
 1. Digite ou cole seu código de modelo de texto sem formatação diretamente na caixa **Modelo de email** fornecida.
 
 ## Usar dados de formulário em modelos de email
@@ -149,8 +151,6 @@ Este é um exemplo de um template de email de texto sem formatação:
     Best regards,
     Your Team
 ```
-
-Substitua os espaços reservados (${name}, ${email}, etc.) pelos nomes de campos de formulário correspondentes no Formulário adaptável.
 
 ## Práticas recomendadas para modelos de email do HTML
 

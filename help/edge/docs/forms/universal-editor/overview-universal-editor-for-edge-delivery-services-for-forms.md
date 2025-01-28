@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ef6f00203241c12fce08cf81495b36f47e64613e
+source-git-commit: eb2c451019e1c9d6f48558154ee58598bd1f2e02
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '980'
 ht-degree: 5%
 
 ---
@@ -78,7 +78,7 @@ Os recursos do Universal Editor são cuidadosamente projetados para manter a ren
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/publish-unpublish.svg" alt="Interface do WYSIWYG" alt="Internacionalização/localização">
     <h3>Publicar/Desfazer publicação</h3>
-    <p>Controle facilmente a visibilidade de seus formulários — publique ou cancele a publicação com apenas alguns cliques para gerenciar dinamicamente atualizações de disponibilidade e conteúdo.</p>
+    <p>Controle facilmente a visibilidade de seus formulários — publique ou cancele a publicação diretamente do editor com apenas alguns cliques, permitindo gerenciar dinamicamente a disponibilidade, o acesso do usuário e as atualizações de conteúdo em tempo real, garantindo que seus formulários estejam sempre atualizados e acessíveis conforme necessário.</p>
   </div>
 </div>
 
@@ -104,7 +104,7 @@ Os recursos do Universal Editor são cuidadosamente projetados para manter a ren
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/editor-customization.svg" alt="Interface do WYSIWYG" alt="Personalização do editor">
     <h3>Personalização do editor</h3>
-    <p>Os desenvolvedores podem estender a funcionalidade do Editor universal por meio de extensões da interface do usuário, permitindo soluções personalizadas que se ajustem a necessidades organizacionais específicas.</p>
+    <p>Os desenvolvedores podem estender a funcionalidade do editor por meio de extensões de interface do usuário, permitindo soluções personalizadas que se ajustem a necessidades organizacionais específicas.</p>
   </div>
   <div class="card" style="display: inline-block; width: calc(30% - 20px); margin: 10px; border: 1px solid #ccc; padding: 10px; text-align: center;">
     <img src="/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg" alt="Interface do WYSIWYG" alt="Incorporação do Forms">
