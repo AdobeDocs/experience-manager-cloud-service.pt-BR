@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0723d7a3166650d10f8af0210f24bb9b6c5cf325
+source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 33%
+source-wordcount: '1489'
+ht-degree: 30%
 
 ---
 
@@ -84,6 +84,12 @@ Para migrar para a criação com Java 21 ou Java 17, primeiro atualize para a ve
 
 Ao migrar seu aplicativo para uma nova versão de build e versão de tempo de execução do Java, teste completamente nos ambientes de desenvolvimento e preparo antes de implantar na produção.
 
+Recomendamos a seguinte estratégia de implantação:
+
+1. Execute seu SDK local com o Java 21, que você pode baixar de https://experience.adobe.com/#/downloads, e implante seu aplicativo nele e valide sua funcionalidade. Verifique nos registros se não há erros, o que indica problemas com o carregamento de classe ou tecelagem de código de bytes.
+1. Configure uma ramificação no repositório do Cloud Manager para usar o Java 21 como a versão do Java de tempo de compilação, configure um pipeline DEV para usar essa ramificação e execute o pipeline. Execute seus testes de validação.
+1. Se estiver bom, configure seu pipeline de preparo/produção para usar o Java 21 como a versão de Java de tempo de compilação e execute o pipeline.
+
 ##### Sobre alguns recursos de tradução {#translation-features}
 
 Os seguintes recursos podem não funcionar corretamente ao compilar com o Java 21 ou Java 17, e o Adobe espera resolvê-los no início de 2025:
@@ -93,7 +99,7 @@ Os seguintes recursos podem não funcionar corretamente ao compilar com o Java 2
 
 #### Requisitos de tempo de execução {#runtime-requirements}
 
-O tempo de execução do Java 21 é usado para builds com Java 21 e Java 17, e será aplicado gradualmente às builds do Java 11 também (consulte a Observação abaixo). Para garantir a compatibilidade, os seguintes ajustes são necessários.
+O tempo de execução do Java 21 é usado para builds com Java 21 e Java 17, e será aplicado gradualmente às builds do Java 11 também (consulte a Observação abaixo). Um ambiente deve estar no AEM versão 17098 ou mais recente para receber a atualização do Java 21. Para garantir a compatibilidade, os seguintes ajustes são necessários.
 
 As atualizações de biblioteca podem ser aplicadas a qualquer momento, pois permanecem compatíveis com versões Java mais antigas.
 
