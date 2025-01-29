@@ -4,10 +4,10 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.1.0 no AEM as 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 4%
+source-wordcount: '923'
+ht-degree: 14%
 
 ---
 
@@ -25,14 +25,14 @@ Saiba mais sobre o lançamento do Cloud Manager 2025.1.0 no AEM (Adobe Experienc
 
 A data de lançamento do Cloud Manager 2025.1.0 no AEM as a Cloud Service é quarta-feira, 22 de janeiro de 2025.
 
-A próxima versão está planejada para sexta-feira, 13 de fevereiro de 2025.
+A próxima versão está planejada para quinta-feira, 13 de fevereiro de 2025.
 
 
 ## Novidades {#what-is-new}
 
 * **Regras de qualidade do código - Atualização do servidor SonarQube:** a etapa Qualidade do código Cloud Manager começará a usar o SonarQube Server 9.9 com a versão Cloud Manager 2025.2.0, agendada para quinta-feira, 13 de fevereiro de 2025.
 
-  Para se preparar, as regras atualizadas do SonarQube agora estão disponíveis em [Regras de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
+  Para fins de preparação, as regras atualizadas do SonarQube agora estão disponíveis em [Regras de qualidade do código](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules).
 
   Você pode &quot;verificar antecipadamente&quot; as novas regras definindo a seguinte variável de texto do pipeline:
 
@@ -46,7 +46,7 @@ A próxima versão está planejada para sexta-feira, 13 de fevereiro de 2025.
 
 >[!NOTE]
 >
->A Adobe recomenda criar um novo pipeline de Qualidade de código CI/CD, configurado para a mesma ramificação que seu pipeline de produção principal. Defina as variáveis apropriadas *antes* da versão de 13 de fevereiro de 2025 para validar se as novas regras aplicadas não introduzem bloqueadores.
+>A Adobe recomenda criar um novo pipeline de qualidade de código CI/CD e configurá-lo para a mesma ramificação que seu pipeline de produção principal. Defina as variáveis apropriadas *antes* do lançamento de 13 de fevereiro de 2025 para validar se as novas regras aplicadas não introduzem bloqueadores.
 
 * **Suporte à compilação do Java 17 e do Java 21:** agora os clientes podem compilar com o Java 17 ou Java 21, obtendo acesso a aprimoramentos de desempenho e novos recursos de linguagem. Para obter as etapas de configuração, incluindo a atualização das versões do projeto e da biblioteca Maven, consulte [Criar ambiente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). Quando a versão da build é definida como Java 17 ou Java 21, o tempo de execução implantado é o Java 21.
 
@@ -79,10 +79,6 @@ A próxima versão está planejada para sexta-feira, 13 de fevereiro de 2025.
 
 * **Suporte aprimorado para sites Edge Delivery Services:** o Cloud Manager agora oferece suporte à integração para os sites Edge Delivery Services mais recentes. Essa atualização inclui uma refatoração abrangente da CDN e da pilha de delivery, resultando em maior robustez e capacidade de manutenção.
 
-* **Atualização antecipada do programa do adotante - Suporte à validação de PR para Bitbucket e GitLab:** O Cloud Manager agora oferece suporte à validação de Solicitação de Recepção (PR) para versões da Nuvem e auto-hospedadas do Bitbucket e do GitLab. Esse recurso permite que os clientes testem suas alterações de código em relação aos limites de qualidade do código de Adobe antes de mesclar uma PR. Garantindo maior qualidade do código antes da mesclagem, esse aprimoramento melhora significativamente a taxa de sucesso das alterações de código nos pipelines de produção, reduzindo o tempo de entrada no mercado e simplificando os fluxos de trabalho de desenvolvimento.
-
-Para obter mais informações sobre &quot;Traga seu próprio Git&quot; - agora com suporte para GitLab e Bitbucket - e para se inscrever como Usuário Antecipado, consulte as [Notas de versão do Cloud Manager de outubro de 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
-
 * **Opções de filtragem avançadas para pipelines:** O Cloud Manager agora apresenta opções de filtragem avançadas na página Pipelines, permitindo que você acesse rapidamente dados relevantes e aprimore a eficiência da implantação. Vários dos principais recursos incluem o seguinte:
 
    * **Filtragem de vários critérios:** refine os resultados da pesquisa com filtros como nome do pipeline, ambiente e código de implantação.
@@ -94,10 +90,19 @@ Para obter mais informações sobre &quot;Traga seu próprio Git&quot; - agora c
 
 * **Configuração da CDN de Autoatendimento para o Serviço Edge Delivery:** Os novos adotantes do Serviço Edge Delivery agora podem configurar a CDN de forma independente por meio da Cloud Manager. Esta atualização estende o suporte do `.hlx.page/live` para o novo `.aem.page/live`, fornecendo maior flexibilidade e configuração simplificada para os usuários.
 
+## Programa de adoção antecipada {#early-adoption}
 
-<!-- ## Early adoption program {#early-adoption}
+Faça parte do programa de adoção antecipada do Cloud Manager e aproveite a oportunidade de testar alguns dos próximos recursos.
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+* **Atualização antecipada do programa do adotante - Suporte à validação de PR para Bitbucket e GitLab:** O Cloud Manager agora oferece suporte à validação de Solicitação de Recepção (PR) para versões da Nuvem e auto-hospedadas do Bitbucket e do GitLab. Esse recurso permite que os clientes testem suas alterações de código em relação aos limites de qualidade do código de Adobe antes de mesclar uma PR. Garantindo maior qualidade do código antes da mesclagem, esse aprimoramento melhora significativamente a taxa de sucesso das alterações de código nos pipelines de produção, reduzindo o tempo de entrada no mercado e simplificando os fluxos de trabalho de desenvolvimento.
+
+Para obter mais informações sobre &quot;Traga seu próprio Git&quot; - agora com suporte para GitLab e Bitbucket - e para se inscrever como Usuário Antecipado, consulte as [Notas de versão do Cloud Manager de outubro de 2024](/help/implementing/cloud-manager/release-notes/2024/2024-10-0.md##gitlab-bitbucket).
+
+* **Ambiente de teste avançado:** uma solução criada especificamente para preencher a lacuna entre desenvolvimento e produção. Personalizado para as necessidades empresariais, esse ambiente replica especificações de nível de produção para oferecer suporte a testes precisos de aceitação de usuários (UAT) e a avaliações completas de desempenho.
+
+Se você estiver interessado em ingressar no programa Early Adoter, [preencha este formulário](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAA8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7C panchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dcd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C6386106805021 64019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0) e envie-nos um email (detalhes a seguir) com sua `OrgID`.
+
+
 
 <!-- ## Bug fixes -->
 
