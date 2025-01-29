@@ -3,9 +3,9 @@ title: Aprovar ativos no Experience Manager
 description: Saiba como aprovar ativos no [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '1115'
 ht-degree: 1%
 
 ---
@@ -37,8 +37,19 @@ Você precisa fazer uma atualização única no esquema de metadados aplicável 
 1. Selecione o esquema de metadados aplicável e clique em **[!UICONTROL Editar]**. <br>O **[!UICONTROL Editor do Formulário de Esquema de Metadados]** é aberto com a guia **[!UICONTROL Básico]** realçada.
 1. Role para baixo e clique em **[!UICONTROL Status da revisão]**.
 1. Clique na guia **[!UICONTROL Regras]** no painel direito.
-1. Desmarque **[!UICONTROL Desabilitar edição]** e clique em **[!UICONTROL Salvar]**.
+1. Desmarcar **[!UICONTROL Desabilitar edição]**.
 Se você precisar exibir a propriedade para a qual o campo **[!UICONTROL Status da Revisão]** está mapeado, navegue até a guia **[!UICONTROL Configurações]** e exiba o valor `./jcr:content/metadata/dam:status` no campo **[!UICONTROL Mapear para a propriedade]**.
+1. Arraste e solte um campo **[!UICONTROL Suspenso]** da seção **[!UICONTROL Criar Formulário]** no lado direito para a seção Metadados no formulário.
+1. Clique no campo recém-adicionado e faça as seguintes atualizações no painel **[!UICONTROL Configurações]**:
+   1. Alterar o **[!UICONTROL Rótulo do campo]** para _Destino da Aprovação_.
+   1. Atualize o **[!UICONTROL Mapear para a propriedade]** para _./jcr:content/metadata/dam:ativationTarget_.
+   1. Adicione as opções com `contenthub` e `delivery` como valores de opção.
+
+   >[!NOTE]
+   >
+   Ao selecionar o público alvo de aprovação como Content Hub usando a exibição do Assets, os ativos são disponibilizados no Content Hub para os usuários que fazem parte da mesma organização. Ao selecionar o público alvo de aprovação como Entrega, os ativos ficam disponíveis para todos os usuários.
+
+1. Clique em **[!UICONTROL Salvar]**.
 
 >[!NOTE]
 >
@@ -74,6 +85,15 @@ Simplifique o fluxo de trabalho aprovando rapidamente vários ativos de uma só 
    1. Atualize o **[!UICONTROL Mapear para a propriedade]** para _./jcr:content/metadata/dam:status_.
    1. Altere o valor padrão para _aprovado_.
 
+1. Arraste e solte um campo **[!UICONTROL Suspenso]** da seção **[!UICONTROL Criar Formulário]** no lado direito para a seção Metadados no formulário.
+1. Clique no campo recém-adicionado e faça as seguintes atualizações no painel **[!UICONTROL Configurações]**:
+   1. Alterar o **[!UICONTROL Rótulo do campo]** para _Destino da Aprovação_.
+   1. Atualize o **[!UICONTROL Mapear para a propriedade]** para _./jcr:content/metadata/dam:ativationTarget_.
+   1. Adicione as opções com `contenthub` e `delivery` como valores de opção.
+
+   >[!NOTE]
+   >
+   Ao selecionar o público alvo de aprovação como Content Hub usando a exibição do Assets, os ativos são disponibilizados no Content Hub para os usuários que fazem parte da mesma organização. Ao selecionar o público alvo de aprovação como Entrega, os ativos ficam disponíveis para todos os usuários.
 1. Clique em **[!UICONTROL Salvar]**.
 1. Na página **[!UICONTROL Perfis de metadados]**, selecione o perfil de metadados recém-criado.
 1. Clique em **[!UICONTROL Aplicar perfil de metadados às pastas]** na barra de ações superior.
@@ -91,6 +111,19 @@ Da mesma forma, para aprovar ativos em massa em uma pasta na exibição do Asset
 1. Selecione o(s) ativo(s) e clique em **[!UICONTROL Editar metadados em massa]**.
 
 1. Selecione **[!UICONTROL Aprovado]** no campo **[!UICONTROL Status]**, disponível na seção [!UICONTROL Propriedades] do painel direito.
+
+   Se você selecionar o status como `Approved` e se o [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) ou o [Content Hub](/help/assets/product-overview.md), ou ambos, estiver habilitado para a sua Experience Manager Assets, você poderá exibir as opções de `Delivery` e `Content Hub` disponíveis no campo **[!UICONTROL Destino da Aprovação]**.
+
+   * Selecione **[!UICONTROL Entrega]** para disponibilizar os ativos para Dynamic Media com recursos OpenAPI e Content Hub. Se o Content Hub não estiver ativado, selecionar essa opção disponibiliza os ativos somente para o Dynamic Media com recursos OpenAPI.
+   * Selecione **[!UICONTROL Content Hub]** para disponibilizar os ativos para o Content Hub.
+
+   ![Status de aprovação](/help/assets/assets/approval-status-delivery.png)
+
+   Se você não estiver usando o formulário de metadados padrão e não puder exibir o campo **[!UICONTROL Destino da Aprovação]**, [edite o formulário de metadados](/help/assets/metadata-assets-view.md#metadata-forms) para arrastar o campo **[!UICONTROL Aprovação para]** dos componentes disponíveis para o formulário de metadados e clique em **[!UICONTROL Salvar]**.
+
+   >[!NOTE]
+   >
+   Se você selecionar o público alvo de aprovação como `Content Hub` usando a exibição do Assets em uma organização, os ativos serão disponibilizados no Content Hub para os usuários que fazem parte da mesma organização.
 
 1. Clique em **[!UICONTROL Salvar]**.
 

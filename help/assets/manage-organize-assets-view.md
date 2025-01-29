@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 92%
+source-wordcount: '1633'
+ht-degree: 71%
 
 ---
 
@@ -138,6 +138,53 @@ Se você tiver o Dynamic Media com recursos do OpenAPI provisionados para o seu 
 
    >[!VIDEO](https://video.tv.adobe.com/v/342495)
 
+
+
+### Definir público alvo de aprovação {#set-approval-target}
+
+O modo de exibição do Assets permite publicar ativos aprovados no Dynamic Media com recursos OpenAPI, Content Hub ou ambos com base no valor definido no campo **Destino de aprovação**, disponível na página Detalhes do ativo.
+
+Para definir o público alvo de aprovação:
+
+1. Selecione o ativo e clique em **[!UICONTROL Detalhes]** na barra de ferramentas.
+
+1. Na guia **[!UICONTROL Básico]**, selecione o status do ativo na lista suspensa **[!UICONTROL Status]**. Os valores possíveis incluem Aprovado, Rejeitado e Sem status (padrão).
+
+1. Se você selecionar **Aprovado** na etapa 2, selecione um destino de aprovação. Os valores possíveis incluem Delivery e Content Hub.
+
+   * **Entrega** é a opção padrão selecionada no menu suspenso e publica o ativo no [Dynamic Media com OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) e [Content Hub](/help/assets/product-overview.md), se ambos estiverem habilitados para Experience Manager Assets.
+
+   * Selecionar **Content Hub** publica o ativo apenas no Content Hub. O Content Hub é exibido como uma opção somente se estiver ativado para o Experience Manager Assets.
+
+   * Se você não selecionar uma opção na lista suspensa, a opção padrão ativada para o ambiente do AEM as a Cloud Service será aplicada automaticamente ao ativo.
+
+
+   Para obter mais informações sobre as opções disponíveis, consulte [Destino de aprovação padrão e destinos de publicação para ativos aprovados](#default-approval-target-options-publish-destinations).
+
+   >[!NOTE]
+   >
+   >A definição de um target de aprovação é um recurso de disponibilidade limitada. Você pode ativá-lo ou desativá-lo criando um tíquete de suporte. Se o Dynamic Media com OpenAPI estiver ativado, ele será ativado por padrão.
+
+   ![Status de aprovação](/help/assets/assets/approval-status-delivery.png)
+
+1. Especifique outras propriedades do ativo e clique em **[!UICONTROL Salvar]**.
+
+Alguns pontos adicionais a serem observados incluem:
+
+* Quando você não estiver usando o formulário de metadados padrão e não puder exibir o campo **[!UICONTROL Destino da Aprovação]**, [edite o formulário de metadados](/help/assets/metadata-assets-view.md#metadata-forms) para arrastar o campo **[!UICONTROL Aprovação para]** dos componentes disponíveis para o formulário de metadados e clique em **[!UICONTROL Salvar]**.
+
+* Ao selecionar o público alvo de aprovação como `Content Hub` usando a exibição do Assets, os ativos são disponibilizados no Content Hub para os usuários que fazem parte da mesma organização.
+
+#### Destino de aprovação padrão e destinos de publicação para ativos aprovados {#default-approval-target-options-publish-destinations}
+
+A tabela a seguir ilustra os pré-requisitos para exibição da lista suspensa `Approval Target` e do público alvo de aprovação padrão com base na habilitação do DM com OpenAPI e Content Hub no seu ambiente AEM as a Cloud Service:
+
+| Dynamic Media com OpenAPI | Centro de conteúdo | A lista suspensa Approval Target é exibida? | Público alvo de aprovação padrão para ativos aprovados | Destino do Publish |
+| --- | --- | --- | --- |---|
+| Habilitado | Habilitado | Sim | Entrega | Dynamic Media com OpenAPI e Content Hub |
+| Não habilitado | Habilitado | Sim | Centro de conteúdo | Centro de conteúdo |
+| Habilitado | Não habilitado | Sim | Entrega | Dynamic Media com OpenAPI |
+| Não habilitado | Não habilitado | Não | N/A | N/A |
 
 ### Definir data de expiração do ativo {#set-asset-expiration-date}
 
