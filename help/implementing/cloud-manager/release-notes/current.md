@@ -4,7 +4,7 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.1.0 no AEM as 
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 43fa46ad6c424b9622ce00a65aed7f18006ef3ba
+source-git-commit: 17f6c359a0396c3ee68b43d0140d637856f7f502
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 14%
@@ -100,7 +100,7 @@ Para obter mais informações sobre &quot;Traga seu próprio Git&quot; - agora c
 
 * **Ambiente de teste avançado:** uma solução criada especificamente para preencher a lacuna entre desenvolvimento e produção. Personalizado para as necessidades empresariais, esse ambiente replica especificações de nível de produção para oferecer suporte a testes precisos de aceitação de usuários (UAT) e a avaliações completas de desempenho.
 
-Se você estiver interessado em ingressar no programa Early Adoter, [preencha este formulário](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAA8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7C panchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dcd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C6386106805021 64019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0) e envie-nos um email (detalhes a seguir) com sua `OrgID`.
+Se você estiver interessado em ingressar no programa Early Adoter, [preencha este formulário](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Furldefense.com%2Fv3%2F__https%3A%2Fwww.feedbackprogram.adobe.com%2Fh%2Fs%2F6N425LYG1jQ1Nc0F20Zllt__%3B!!OgNkHJCYlf_CHg!fIp-QrZ9si3kcUIjRCniEzqAA8FcU1iN34SGQFtlcQ36eUQXOZWbDHP7oZajqddgpuOMAVL5CQpkZ6ths76Qks8%24&amp;data=05%7C02%7C panchapa%40adobe.com%7Cf81bcaa4b20544f1818b08dcd07c78c%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C6386106805021 64019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C%7C%7C&amp;sdata=aGo6zz2ldPrta4lpvo CLNENR5ghHDDCPbG1adUaNZQ%3D&amp;reserved=0) e envie um email para [earlyadopter_cs_advtestenvironment@adobe.com](mailto:earlyadopter_cs_advtestenvironment@adobe.com) com seu `OrgID`.
 
 
 
