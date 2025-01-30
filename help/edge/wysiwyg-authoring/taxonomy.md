@@ -4,12 +4,13 @@ description: Saiba como gerenciar dados de taxonomia para usar tags com seu AEM 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: 701a7c08d591d9a3ffabfe041745748194c923b2
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '974'
 ht-degree: 1%
 
 ---
+
 
 # Gerenciamento de dados de taxonomia {#managing-taxonomy-data}
 
@@ -155,6 +156,10 @@ Use o `<taxonomy-json-name>` que você definiu ao [ mapear sua taxonomia para o 
       "title": "Translate"
     }
   ],
+  "columns": [
+    "tag",
+    "title"
+  ],
   ":type": "sheet"
 }
 ```
@@ -162,3 +167,47 @@ Use o `<taxonomy-json-name>` que você definiu ao [ mapear sua taxonomia para o 
 Esses dados JSON serão atualizados automaticamente à medida que você atualizar a taxonomia e publicá-la novamente. Seu aplicativo pode acessar programaticamente essas informações para seus usuários.
 
 [Se você mantiver marcas em vários idiomas](/help/sites-cloud/administering/tags.md#managing-tags-in-different-languages), poderá acessar esses idiomas transmitindo o código de idioma ISO2 como o valor de um parâmetro `sheet=`.
+
+## Exibição de propriedades de tag adicionais {#additional-properties}
+
+Por padrão, sua taxonomia conterá `tag` e `title` valores, como visto [no exemplo anterior.](#accessing) Você pode configurar sua taxonomia para expor propriedades de marca adicionais. Neste exemplo, vamos expor a descrição da tag.
+
+1. Use o console Sites para selecionar a taxonomia criada.
+1. Toque ou clique no ícone **Propriedades** na barra de ferramentas.
+1. Na seção **Propriedades Adicionais**, toque ou clique em **Adicionar** para adicionar um campo.
+1. No novo campo, insira o nome da propriedade do JRC a ser exposto. Nesse caso, digite `jcr:description` para a descrição da marca.
+1. Toque ou clique em **Salvar e fechar**.
+1. Com a taxonomia ainda selecionada, toque ou clique em **Publish Rápido** na barra de ferramentas.
+
+Agora [ao acessar sua taxonomia](#accessing), a descrição da marca (ou qualquer propriedade que você escolher expor) será incluída no JSON.
+
+```json
+{
+  "total": 3,
+  "offset": 0,
+  "limit": 3,
+  "data": [
+    {
+      "tag": "default:",
+      "title": "Standard Tags",
+      "jcr:description": "These are the standard tags"
+    },
+    {
+      "tag": "do-not-translate",
+      "title": "Do Not Translate",
+      "jcr:description": "Tag to mark pages that should not be translated"
+    },
+    {
+      "tag": "translate",
+      "title": "Translate",
+      "jcr:description": "Tag to mark pages that should be translated"
+    }
+  ],
+  "columns": [
+    "tag",
+    "title",
+    "jcr:description"
+  ],
+  ":type": "sheet"
+}
+```

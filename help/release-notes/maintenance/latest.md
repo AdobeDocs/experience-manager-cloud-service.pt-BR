@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: a091dd6b1b69d77f9eeb50065e8946af0133f4f9
+source-git-commit: a3c414f9b5e575856a942e02661e8c70a7083495
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 23%
+source-wordcount: '541'
+ht-degree: 20%
 
 ---
 
@@ -55,14 +55,24 @@ Nenhum.
 
 ### Recursos e APIs obsoletos {#deprecated-19149}
 
+Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
+
+#### Alterações na sincronização de grupos de usuários e perfis de produtos
+
 Ao usar o Adobe Admin Console para gerenciamento de permissões, os seguintes grupos NÃO DEVEM ser usados, pois não serão mais sincronizados com o AEM:
 * Grupos AEM que terminam com _GROUP_NAME_SUFFIX.
 * Perfis de produto de outros ambientes, programas ou produtos.
 
 Para obter mais detalhes, verifique [Alterações na sincronização de Grupos de Usuários e Perfis de Produtos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/changes-in-user-group-and-product-profile-synchronization).
 
+#### Substituição do editor de SPA {#deprecate-spa-editor}
 
-Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
+[O Editor de SPA](/help/implementing/developing/hybrid/introduction.md) foi descontinuado para novos projetos a partir da versão 2025.1.0. O Editor de SPA continua sendo compatível com projetos existentes, mas não deve ser usado para novos projetos.
+
+Os editores preferidos para gerenciar conteúdo headless no AEM são:
+
+* [O Editor Universal](/help/edge/wysiwyg-authoring/authoring.md) para edição visual.
+* [O Editor de Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulário.
 
 ### Correções de segurança {#security-19149}
 

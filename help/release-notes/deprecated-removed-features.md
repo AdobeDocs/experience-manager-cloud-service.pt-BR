@@ -4,10 +4,10 @@ description: Notas de versão específicas para recursos obsoletos e removidos d
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 feature: Release Information
 role: Admin
-source-git-commit: b0bc2eb4298a88c6dc421390dd9527e181386b5d
+source-git-commit: 32cc525d5443f455f1579ef027c08796ffc209e7
 workflow-type: tm+mt
-source-wordcount: '2513'
-ht-degree: 49%
+source-wordcount: '2543'
+ht-degree: 48%
 
 ---
 
@@ -35,6 +35,8 @@ Os clientes são instruídos a analisar se usam o recurso/funcionalidade em sua 
 
 | Recursos | Recurso obsoleto | Substituição |
 | ------------ | ------------------ | ----------- |
+| Sites | [Recursos do PWA](/help/sites-cloud/authoring/sites-console/enable-pwa.md) | Nenhum |
+| Sites | [Editor de SPA](/help/implementing/developing/hybrid/introduction.md) | Os editores preferidos para o gerenciamento de conteúdo headless no AEM são:<br>- [O Editor Universal](/help/edge/wysiwyg-authoring/authoring.md) para edição visual.<br>- [O Editor de Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulário. |
 | [!DNL Sites] | [API de uso do JavaScript](https://github.com/adobe/htl-spec/blob/master/SPECIFICATION.md#42-javascript-use-api) | [API de uso do Java](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/java-use-api) |
 | [!DNL Sites] | Propriedades dos Fragmentos de experiência para **Status da rede social**. | A remoção do recurso está prevista para breve. |
 | [!DNL Sites] | Fragmentos de conteúdo simples baseados em modelo. | [Fragmentos de conteúdo estruturado com base em modelo](/help/assets/content-fragments/content-fragments-models.md) agora. |
