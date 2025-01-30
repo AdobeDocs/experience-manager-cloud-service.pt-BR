@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 75a011ed952e1801f0988942d4501a52d348bb3f
+source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
 workflow-type: tm+mt
-source-wordcount: '1759'
-ht-degree: 11%
+source-wordcount: '1812'
+ht-degree: 10%
 
 ---
 
@@ -59,7 +59,7 @@ A versão mínima do AEM as a Cloud Service compatível com as novas interfaces 
 
 **Fragmentos de conteúdo aprimorados**
 
-[Referência de fragmento de conteúdo aprimorada com referências exclusivas baseadas em ID](/help/headless/graphql-api/uuid-reference-upgrade.md), garantindo links estáveis que permaneçam válidos mesmo quando ativos ou fragmentos forem movidos, eliminando a necessidade de atualizações ou republicação. Limitação atual: as referências de página ainda não são compatíveis com IDs exclusivas. Se as páginas forem referenciadas em Fragmentos de conteúdo, esse recurso não deverá ser usado.
+[Referência de fragmento de conteúdo aprimorada com referências exclusivas baseadas em ID](/help/headless/graphql-api/uuid-reference-upgrade.md), ajudando a garantir que as consultas do GraphQL para fragmentos de conteúdo individuais possam permanecer estáveis, mesmo que o fragmento tenha sido movido para outro local. Isso agora é possível com queries &quot;ByID&quot;. Embora os caminhos possam mudar, possivelmente quebrando consultas &quot;ByPath&quot;, as UUIDs são estáveis. As novas IDs também podem ser retornadas como propriedades em qualquer query ou outra solicitação de API aplicável. Limitação atual (2025.1): as referências de página ainda não são compatíveis com IDs exclusivas. Se as páginas forem referenciadas em Fragmentos de conteúdo, esse recurso não deverá ser usado. A limitação está planejada para ser removida na próxima versão do AEM as a Cloud Service.
 
 AEM **OpenAPI REST para Entrega de Fragmento de Conteúdo**
 
