@@ -6,9 +6,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 0b097ab3-bf1d-4d43-9e19-d544594844ef
-source-git-commit: cddfcddc0ca3652270bdb735e580386ac9ff1fc7
+source-git-commit: 5c103fcce1ae47bc89f4f572d89967c62c1f7603
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Sempre que um usuário faz logon no AEM as a Cloud Service ou um token de acesso é usado, os grupos de usuários, perfis de produtos e serviços de perfil de produtos do Adobe Admin Console são sincronizados no repositório do AEM como grupos.
 
-Com versões do AEM superiores a 18751 (uma versão de manutenção começará a ser implementada em ambientes de produção em 27 de janeiro), a fim de reduzir a desordem da interface do usuário e otimizar o desempenho, haverá algumas alterações no comportamento de sincronização, resultando no surgimento de menos grupos no AEM. Duas categorias de grupos AEM serão removidas:
+A partir da Versão de manutenção do AEM 19149, o comportamento de sincronização do grupo é alterado para reduzir a desordem da interface e otimizar o desempenho. Especificamente, a associação do grupo de usuários das duas categorias de grupos AEM a seguir não será mais sincronizada:
 
 1. Grupos AEM com Sufixo `GROUP_NAME_SUFFIX`. Esses grupos não aparecem na Adobe Developer Console, mas aparecem na tela Gerenciamento de grupos AEM, como mostrado abaixo. No caso improvável de o aplicativo AEM fazer referência a esses grupos, faça referência a grupos de usuários do Adobe Admin Console sem esse sufixo.
 
@@ -44,3 +44,4 @@ Isso navegará para a Adobe Admin Console, conforme representado na captura de t
 
 No caso improvável de seu aplicativo AEM fazer referência a um grupo que não aparecerá mais no AEM, certifique-se de usar i) um Perfil de produto da instância correta do AEM ou ii) um grupo de usuários do Adobe Admin Console.
 
+As associações de grupo do usuário são sincronizadas quando fazem logon no ambiente e são removidas de grupos não relacionados ao ambiente atual. Os próprios grupos permanecem e incluem usuários que não fizeram logon desde que o recurso foi habilitado.
