@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 61%
+source-wordcount: '2367'
+ht-degree: 38%
 
 ---
 
@@ -21,13 +21,13 @@ Saiba mais sobre os tipos de ambientes que você pode criar e como criá-los par
 
 Um usuário com as permissões necessárias pode criar os tipos de ambientes descritos a seguir (dentro dos limites do que está disponível para o locatário específico).
 
-* **Produção + Preparo** - Os ambientes de produção e de preparo estão disponíveis como um par e são usados para fins de produção e teste, respectivamente. Realizar testes de desempenho e segurança no ambiente de preparo. Ele tem o mesmo tamanho da produção.
+| Tipo de ambiente | Descrição |
+| --- | --- |
+| **Produção + Preparo** | Os ambientes de produção e de preparo estão disponíveis como um par e são usados para fins de produção e teste, respectivamente. Realizar testes de desempenho e segurança no ambiente de preparo. Ele tem o mesmo tamanho da produção. |
+| **Desenvolvimento** | Um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e teste e pode ser associado apenas a pipelines de não produção. Os ambientes de desenvolvimento não têm o mesmo tamanho que os de preparo e produção e não devem ser usados para realizar testes de desempenho e segurança. |
+| **Desenvolvimento rápido** | Um ambiente de desenvolvimento rápido (RDE) permite que os desenvolvedores implantem e revisem alterações rapidamente. Essa capacidade reduz o tempo necessário para testar recursos que já foram validados em um ambiente de desenvolvimento local. Consulte [a documentação de ambientes de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obter detalhes sobre como usar um RDE. |
 
-* **Desenvolvimento** - Um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e teste e pode ser associado apenas a pipelines de não produção.  Os ambientes de desenvolvimento não têm o mesmo tamanho que os de preparo e produção e não devem ser usados para realizar testes de desempenho e segurança.
-
-* **Desenvolvimento rápido**: um ambiente de desenvolvimento rápido (RDE) permite que um desenvolvedor implante e revise alterações rapidamente, minimizando o tempo necessário para testar recursos que comprovadamente funcionam em um ambiente de desenvolvimento local. Consulte [a documentação de ambientes de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obter detalhes sobre como usar um RDE.
-
-Os recursos de ambientes individuais dependem das soluções ativadas no [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) do ambiente.
+Os recursos de ambientes individuais dependem das soluções que foram habilitadas no [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) do ambiente.
 
 * [Sites](/help/overview/introduction.md)
 * [Assets](/help/assets/overview.md)
@@ -36,43 +36,43 @@ Os recursos de ambientes individuais dependem das soluções ativadas no [progra
 
 >[!NOTE]
 >
->Ambientes de produção e de preparo são criados apenas em pares. Não é possível criar apenas um ambiente de preparo ou de produção.
+>Ambientes de produção e de preparo são criados apenas em pares. Não é possível criar um ambiente somente de produção ou somente de preparo.
 
 ## Adicionar um ambiente {#adding-environments}
 
 Para adicionar ou editar um ambiente, o usuário deve ser membro da função **Proprietário da empresa**.
 
+**Para adicionar um ambiente:**
+
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique no programa ao qual deseja adicionar um ambiente.
 
-1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique em **Adicionar Ambiente** no cartão **Ambientes** para adicionar um ambiente.
+1. Siga uma das seguintes opções:
+
+   Se a opção **Adicionar Ambiente** estiver esmaecida (desabilitada), talvez seja devido à falta de permissões ou dependente dos recursos licenciados.
+
+   * No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, no cartão **Ambientes**, clique em **Adicionar Ambiente**.
 
    ![Cartão Ambientes](assets/no-environments.png)
 
-   * A opção **Adicionar ambiente** também está disponível na guia ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+   * No painel lateral esquerdo, clique em ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes** e, na página Ambientes, próximo ao canto superior direito, clique em **Adicionar ambiente**.
 
      ![Guia Ambientes](assets/environments-tab.png)
 
-   * A opção **Adicionar ambiente** pode estar desativada devido à falta de permissões ou dependendo dos recursos licenciados.
+1. Na caixa de diálogo **Adicionar ambiente**, faça o seguinte:
 
-1. Na caixa de diálogo **Adicionar ambiente**:
-
-   * Selecione um [**tipo de ambiente**](#environment-types).
-      * O número de ambientes disponíveis/usados é exibido entre parênteses atrás do nome do tipo de ambiente.
-   * Forneça um **nome** de ambiente.
-      * O nome do ambiente não pode ser alterado depois que o ambiente é criado.
-   * Forneça uma **descrição** do ambiente.
+   * Selecione um [**tipo de ambiente**](#environment-types). O número de ambientes disponíveis/usados é exibido entre parênteses atrás do nome do tipo de ambiente.
+   * Forneça um ambiente **Nome**. O nome do ambiente não pode ser alterado depois que o ambiente é criado.
+   * Forneça uma **Descrição** opcional para o ambiente.
    * Se estiver adicionando um ambiente de **Produção + Preparo**, é necessário fornecer um nome e uma descrição tanto para o ambiente de produção quanto para o de preparo.
-   * Selecione uma **região principal** no menu suspenso.
-      * A região principal não pode ser alterada após a criação.
-      * Dependendo dos direitos disponíveis, talvez seja possível configurar [várias regiões](#multiple-regions).
+   * Selecione uma **Região principal** no menu suspenso. A região primária não pode ser alterada após a criação. Além disso, dependendo dos seus direitos disponíveis, talvez você possa configurar [várias regiões](#multiple-regions).
 
    ![Caixa de diálogo Adicionar ambiente](assets/add-environment2.png)
 
-1. Clique em **Salvar** para adicionar o ambiente especificado.
+1. Clique em **Salvar**.
 
-A tela **Visão geral** agora exibe seu novo ambiente no cartão **Ambientes**. Agora você pode configurar pipelines para seu novo ambiente.
+A página **Visão geral** agora exibe seu novo ambiente no cartão **Ambientes**. Agora você pode configurar pipelines para seu novo ambiente.
 
 ## Várias regiões de publicação {#multiple-regions}
 
@@ -107,9 +107,9 @@ Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-n
 
 Se não tiver especificado nenhuma região adicional previamente, é possível fazer isso após a criação dos ambientes, caso possua os direitos necessários.
 
-Você também pode remover regiões de publicação adicionais. No entanto, só é possível adicionar ou remover regiões em uma transação. Se precisar adicionar uma região e remover outra, primeiro adicione, salve a alteração e depois remova (ou vice-versa).
+Você também pode remover regiões de publicação adicionais. No entanto, você só pode adicionar ou remover regiões em uma transação. Se precisar adicionar uma região e remover outra, primeiro adicione, salve a alteração e depois remova (ou vice-versa).
 
-1. No console Visão geral do programa, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg para seu ambiente de produção e selecione **Editar** no menu.
+1. No console Visão geral do programa do seu programa, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) do seu ambiente de produção e selecione **Editar** no menu.
 
    ![Editar ambiente](assets/select-edit-environment.png)
 
@@ -125,33 +125,36 @@ As alterações feitas no ambiente de produção também serão aplicadas no amb
 
 Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, é recomendável fazê-lo antes de adicionar outras regiões de publicação aos ambientes. Caso contrário, o tráfego das regiões de publicação adicionais passará pelo proxy da região principal.
 
-## Detalhes do ambiente {#viewing-environment}
+## Detalhes do ambiente de acesso {#viewing-environment}
 
-Na página **Visão geral**, você pode acessar os detalhes de um ambiente de duas maneiras.
 
-1. Na página **Visão geral**, clique na guia **Ambientes** no menu do lado esquerdo.
+1. Para acessar os detalhes do Ambiente, siga um destes procedimentos:
+
+   * Na página **Visão geral**, no menu do lado esquerdo, clique em ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 
    ![Guia Ambientes](assets/environments-tab2.png)
 
-   * Como alternativa, clique no botão **Mostrar Tudo** no cartão **Ambientes** para ir diretamente para a guia **Ambientes**.
+   * No cartão **Ambientes**, clique no ![ícone Fluxo de trabalho](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Mostrar tudo**.
 
      ![Mostrar todas as opções](assets/environment-showall.png)
 
-1. A tela **Ambientes** abre, listando todos os ambientes do programa.
+   A página **Ambientes** é aberta e lista todos os ambientes do programa.
 
    ![Guia Ambientes](assets/environments-tab2.png)
 
-1. Clique em um ambiente na lista para revelar seus detalhes.
+1. Na página Ambientes, siga um destes procedimentos:
+
+   * Clique em um ambiente na lista para revelar seus detalhes.
 
    ![Detalhes do ambiente](assets/environ-preview1.png)
 
-Como alternativa, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg do ambiente desejado e selecione **Exibir Detalhes**.
+   * Clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) do ambiente desejado e em **Exibir Detalhes**.
 
-![Exibir detalhes do ambiente](assets/view-environment-details.png)
+   ![Exibir detalhes do ambiente](assets/view-environment-details.png)
 
 >[!NOTE]
 >
->O cartão **Ambientes** lista apenas três ambientes. Clique no botão **Mostrar Tudo** conforme descrito anteriormente para ver todos os ambientes do programa.
+>O cartão **Ambientes** lista apenas três ambientes. Clique em **Mostrar tudo** no cartão para ver todos os ambientes do programa.
 
 ### Acessar o serviço de visualização {#access-preview-service}
 
@@ -163,17 +166,17 @@ Após a criação, será aplicada uma lista de permissões de IP padrão ao serv
 
 ![Serviço de visualização e sua lista de permissões](assets/preview-ip-allow.png)
 
-Um usuário com as permissões necessárias deve concluir as etapas a seguir antes de compartilhar o URL do serviço de visualização para garantir o acesso a ele.
+Um usuário com as permissões necessárias deve concluir as etapas a seguir antes de compartilhar a URL do serviço de visualização para garantir o acesso a ela.
 
-1. Crie uma lista de permissões IP apropriada, aplique-a ao serviço de visualização e desative imediatamente a lista de permissões `Preview Default [<envId>]`.
+1. Crie uma Lista de permissões de IP apropriada, aplique-a ao serviço de visualização e desaplique imediatamente a inclui na lista de permissões `Preview Default [<envId>]`.
 
-   * Consulte [Aplicação e desativação de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) para obter mais detalhes.
+   Consulte [Aplicar e desaplicar Listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) para obter mais detalhes.
 
-1. Use o fluxo de trabalho **Lista de permissões de IP** para remover o IP padrão e adicionar IPs conforme necessário. Consulte [Gerenciamento de listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para saber mais.
+1. Use o fluxo de trabalho de atualização da **Lista de permissões de IP** para remover o IP padrão e adicionar os IPs necessários. Consulte [Gerenciar Listas de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) para saber mais.
 
-Quando o acesso ao serviço de visualização estiver desbloqueado, o ícone de cadeado na frente do nome do serviço de visualização não será mais exibido .
+Depois que o acesso ao serviço de visualização é desbloqueado, o ícone de bloqueio na frente do nome do serviço de visualização não é mais exibido.
 
-Uma vez ativado, será possível publicar conteúdo para o serviço de visualização usando a interface Gerenciar publicação no AEM. Consulte [Visualização de Conteúdo](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obter mais detalhes.
+Após a ativação, é possível publicar conteúdo no serviço de visualização usando a interface de usuário **`Manage Publication`** dentro do AEM. Consulte [Visualizar conteúdo](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obter mais detalhes.
 
 >[!NOTE]
 >
@@ -195,25 +198,22 @@ Como alternativa, você pode acessar as mesmas informações na guia **Ambientes
 
 1. Na guia **Ambientes**, selecione o ambiente que deseja consultar no menu do lado esquerdo.
 
-1. Depois que um ambiente é selecionado:
+1. Depois que um ambiente for selecionado:
 
-   * A tabela **Informações do Ambiente** mostrará quais regiões estão configuradas para o ambiente selecionado.
-   * A coluna **Status** da tabela **Segmentos de ambiente** refletirá se há problemas com as regiões de publicação adicionais configuradas. Passe o mouse sobre o status para obter detalhes sobre qualquer problema.
+   * A tabela **Informações do Ambiente** mostra quais regiões estão configuradas para o ambiente selecionado.
+   * A coluna **Status** da tabela **Segmentos de ambiente** reflete se há problemas com as regiões de publicação adicionais configuradas. Passe o mouse sobre o status para obter detalhes sobre qualquer problema.
 
    ![Informações adicionais sobre o status das regiões de publicação na guia Ambientes](assets/additional-publish-region-status-environments-tab.png)
 
-Se houver problemas relatados com regiões de publicação adicionais:
-
-1. Seja paciente. O Cloud Manager tenta continuamente recuperar a região e ela pode ficar disponível a qualquer momento.
-1. Se o problema persistir após várias horas, é possível remover a região de publicação adicional e adicioná-la novamente (na mesma região ou em outra) para acionar uma implantação completa.
+Se houver problemas relatados com regiões de publicação adicionais, seja paciente. O Cloud Manager tenta continuamente recuperar a região e ela pode ficar disponível a qualquer momento. Se o problema persistir após várias horas, é possível remover a região de publicação adicional e adicioná-la novamente (na mesma região ou em outra) para acionar uma implantação completa.
 
 Quanto tempo você esperar até que o sistema se recupere por conta própria antes de tomar medidas adicionais depende do impacto que a falha dessa região tem em seus sistemas.
 
-Em qualquer caso, o tráfego [é sempre roteado para a outra região mais próxima que está online](/help/operations/additional-publish-regions.md). Se o problema persistir, entre em contato com o Atendimento ao cliente da Adobe.
+Independentemente disso, o tráfego [é sempre roteado para a região mais próxima que está online](/help/operations/additional-publish-regions.md). Se o problema persistir, entre em contato com o Atendimento ao cliente da Adobe.
 
 ## Atualizar ambientes {#updating-dev-environment}
 
-Como um serviço nativo em nuvem, as atualizações dos ambientes de desenvolvimento, preparo e produção nos programas de produção são gerenciadas automaticamente pelo Adobe.
+Como um serviço nativo em nuvem, o Adobe gerencia automaticamente atualizações para seus ambientes de desenvolvimento, preparo e produção nos programas de produção.
 
 No entanto, as atualizações para ambientes em programas de sandbox são gerenciadas dentro dos programas. Quando um ambiente não estiver executando a versão mais recente do AEM disponível publicamente, o status no cartão **Ambientes** na tela **Visão Geral** do programa mostrará **Atualização Disponível**.
 
@@ -223,7 +223,7 @@ No entanto, as atualizações para ambientes em programas de sandbox são gerenc
 
 Os pipelines são a única maneira de [implantar código nos ambientes do AEM as a Cloud Service](deploy-code.md). Por esse motivo, cada pipeline está associado a uma versão específica do AEM.
 
-Se o Cloud Manager detectar que está disponível uma versão do AEM mais recente do que a implantada pela última vez no pipeline, ele mostrará o status **Atualização Disponível** para o ambiente.
+Quando o Cloud Manager detecta uma versão de AEM mais recente do que a implantada pela última vez no pipeline, ele exibe o status **Atualização disponível** para o ambiente.
 
 O processo de atualização é, portanto, um processo de duas etapas:
 
@@ -235,11 +235,11 @@ O processo de atualização é, portanto, um processo de duas etapas:
 >[!NOTE]
 > A partir de 2024, as instâncias de desenvolvimento e alguns programas de sandbox já serão atualizados automaticamente para que não haja necessidade de gerenciar atualizações para eles manualmente. Como resultado dessa transição, a opção para Atualizar o ambiente manualmente para instâncias de desenvolvimento pode não estar disponível para _alguns_ de seus programas.
 
-A opção **Atualizar** está disponível no cartão **Ambientes** para alguns ambientes de desenvolvimento e de programas de sandbox clicando em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg do ambiente.
+A opção **Atualizar** está disponível no cartão **Ambientes** para ambientes de sandbox e desenvolvimento específicos. Clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) ao lado do ambiente para acessar **Atualização**.
 
 ![Opção Atualizar no cartão Ambientes](assets/environ-update2.png)
 
-Esta opção também está disponível clicando na guia **Ambientes** do programa e clicando em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg do ambiente.
+Esta opção também está disponível clicando na guia **Ambientes** do programa e em ![Mais ícones](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) do ambiente.
 
 ![Opção Atualizar na guia Ambientes](assets/environ-update3.png)
 
@@ -247,23 +247,25 @@ Um usuário com a função **Gerente de Implantação** ou **Proprietário da Em
 
 Quando a versão do pipeline é atualizada para a versão mais recente do AEM disponível publicamente, o usuário é solicitado a executar o pipeline associado para implantar a nova versão no ambiente.
 
-![Solicitação para executar o pipeline para atualizar o ambiente](assets/update-run-pipeline.png)
+![Exemplo do prompt para executar o pipeline para atualizar o ambiente](assets/update-run-pipeline.png)
 
 O comportamento da opção **Atualizar** varia dependendo da configuração e do estado atual do programa.
 
-* Se o pipeline já tiver sido atualizado, a opção **Atualizar** solicitará que o usuário execute o pipeline.
-* Se o pipeline estiver sendo atualizado, a variável **Atualizar** informará ao usuário que uma atualização já está em execução.
-* Se um pipeline apropriado não existir, a opção **Atualizar** solicitará que o usuário crie um.
+| Estado | A opção Atualizar... |
+| --- | --- |
+| O pipeline já foi atualizado | solicita que o usuário execute o pipeline. |
+| O pipeline já está sendo atualizado | informa ao usuário que uma atualização já está em execução. |
+| O pipeline não existe | solicita que o usuário crie um. |
 
 ## Excluir ambientes de desenvolvimento {#deleting-environment}
 
 Um usuário com a função **Gerente de Implantação** ou **Proprietário da Empresa** pode excluir um ambiente de desenvolvimento.
 
-Na tela **Visão geral** do programa no cartão **Ambientes**, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg do ambiente de desenvolvimento que deseja excluir.
+Na tela **Visão geral** do programa no cartão **Ambientes**, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) do ambiente de desenvolvimento que deseja excluir.
 
-![A opção de exclusão](assets/environ-delete.png)
+![A opção Excluir](assets/environ-delete.png)
 
-A opção de exclusão também está disponível na guia **Ambientes** da janela **Visão geral** do programa. Clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg do ambiente e selecione **Excluir**.
+A opção **Excluir** também está disponível na guia **Ambientes** da janela **Visão Geral** do programa. Clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) do ambiente e selecione **Excluir**.
 
 ![A opção de exclusão na guia Ambientes](assets/environ-delete2.png)
 
@@ -280,29 +282,33 @@ Selecione **Gerenciar acesso** no menu de reticências do ambiente no cartão **
 
 >[!TIP]
 >
->Consulte [Perfis de produto e de equipe do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) se quiser saber como os perfis de produto e de equipe do AEM as a Cloud Service podem conceder e limitar o acesso às suas soluções licenciadas da Adobe.
+>Consulte [Perfis de produto e de equipe da AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) para saber como os perfis de produto e de equipe da AEM as a Cloud Service podem conceder e limitar o acesso às soluções de Adobe licenciadas.
 
 ## Acesse o console do Desenvolvedor {#accessing-developer-console}
 
-Selecione **Developer Console** no menu de reticências do ambiente no cartão **Ambientes**. Uma nova guia é aberta no seu navegador com a página de logon do **Developer Console**.
+1. No cartão **Ambiente**, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Developer Console**.
+
+Uma nova guia é aberta no navegador com a página de logon do **Developer Console**.
 
 ![Faça logon no Developer Console](assets/environ-devconsole.png)
 
-Somente um usuário com a função **Desenvolvedor** terá acesso ao **Developer Console**. No entanto, para programas de sandbox, qualquer usuário com acesso ao programa de sandbox terá acesso ao **Developer Console**.
+Somente um usuário com a função **Desenvolvedor** terá acesso ao **Developer Console**. No entanto, para programas de sandbox, qualquer usuário com acesso ao programa de sandbox tem acesso ao **Developer Console**.
 
-Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs.html?lang=pt-BR#hibernation) para obter mais detalhes.
+Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
 
-Essa opção também está disponível na guia **Ambiente** da janela **Visão geral** clicando no menu de reticências de um ambiente individual.
+Esta opção também está disponível na guia **Ambiente** da janela **Visão geral** ao clicar no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de um ambiente individual.
 
 ## Logon local {#login-locally}
 
-Selecione **Logon local** no menu de reticências do ambiente no cartão **Ambientes** para fazer logon localmente no Adobe Experience Manager.
+1. Siga uma das seguintes opções:
 
-![Logon local](assets/environ-login-locally.png)
+   * No cartão **Ambiente**, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Logon local**.
 
-Além disso, é possível fazer logon localmente na guia **Ambientes** da página **Visão geral**.
+     ![Logon local](assets/environ-login-locally.png)
 
-![Logon local na guia Ambientes](assets/environ-login-locally-2.png)
+   * No painel lateral esquerdo, clique em **Ambientes**. Na página **Ambientes**, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Logon local**.
+
+     ![Logon local na guia Ambientes](assets/environ-login-locally-2.png)
 
 ## Gerenciar nomes de domínio personalizados {#manage-cdn}
 
@@ -314,13 +320,13 @@ Os nomes de domínio personalizados são suportados nos programas do Cloud Manag
 
 ## Gerenciar listas de permissões de IP {#manage-ip-allow-lists}
 
-As listas de permissões de IP são compatíveis com o Cloud Manager para serviços de criação, publicação e visualização de programas do Sites.
+Uma Lista de permissões IP é compatível com o Cloud Manager para criar, publicar e visualizar serviços para programas do Sites.
 
-Para gerenciar listas de permissões de IP, navegue até a guia **Ambientes** da página **Visão geral** do seu programa. Clique em um ambiente individual para gerenciar seus detalhes.
+Para gerenciar Listas de permissões de IP, navegue até a guia **Ambientes** da página **Visão geral** do seu programa. Clique em um ambiente individual para gerenciar seus detalhes.
 
 ### Aplicar uma Lista de permissões de IP {#apply-ip-allow-list}
 
-A aplicação de uma incluir na lista de permissões inclui na lista de permissões de IP associa todos os intervalos IP incluídos na definição do arquivo a um serviço de autoria ou publicação em um ambiente.
+A aplicação de uma Lista de permissões de IP vincula todos os intervalos IP definidos a um serviço de autoria ou publicação no ambiente.
 
 >[!TIP]
 >

@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1023'
 ht-degree: 6%
 
 ---
@@ -46,7 +46,7 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
 1. No canto superior esquerdo da página, clique em ![Mostrar ícone de menu](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ShowMenu_18_N.svg) para exibir o menu lateral.
 1. No cabeçalho **Serviços**, clique em ![Ícone Bloquear fechado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_LockClosed_18_N.svg) **Certificados SSL**.
-1. Na linha do certificado gerenciado pelo cliente expirado que você deseja atualizar, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg na extremidade direita e em **Exibir e Atualizar**.
+1. Na linha do certificado gerenciado pelo cliente expirado que você deseja atualizar, clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na extremidade direita e em **Exibir e Atualizar**.
 
    ![Atualizar uma certificação SSL gerenciada pelo cliente expirada](/help/implementing/cloud-manager/assets/ssl/ssl-cert-update.png)
 
@@ -62,7 +62,7 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 
 >[!NOTE]
 >
->Se você tiver dois ou mais certificados SAN que abranjam a mesma entrada de domínio SAN, se esse domínio for coberto por um certificado e o outro for atualizado, o último será instalado para o domínio.
+>Se dois ou mais certificados SAN cobrirem a mesma entrada de domínio SAN e um deles for atualizado, o sistema instalará o certificado atualizado para o domínio.
 >
 >Consulte [Solucionar Problemas de Certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/troubleshoot-ssl-cert.md#wrong-san-cert) para obter mais informações.
 

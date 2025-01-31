@@ -4,9 +4,9 @@ description: Saiba como adicionar um site do Edge Delivery ao seu programa de pr
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: db661281831dcb07491dca16e73e835b487814a6
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '498'
 ht-degree: 3%
 
 ---
@@ -48,12 +48,12 @@ Próximo ao canto superior direito da página, clique em **Adicionar site**.
 
    | Número da etapa | Descrição |
    | - | - |
-   | **1** | Adicione um arquivo com o caminho e o nome `well-known/adobe/cloudmanager-challenge.txt` à ramificação `main` do repositório Git listado no campo **URL do Repositório**. *não* adicione um ponto no início do caminho do local.<br>Se necessário, clique em ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o caminho para a área de transferência. |
-   | **2** | Adicione o código visto no campo de texto na Etapa 2 ao arquivo que você acabou de criar na Etapa 1.<br>Se necessário, clique em ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o código para a área de transferência. |
+   | **1** | Adicione um arquivo com o caminho e o nome `well-known/adobe/cloudmanager-challenge.txt` à ramificação `main` do repositório Git listado no campo **URL do Repositório**. *não* adicione um ponto no início do caminho do local.<br>Se necessário, clique em ![Copiar ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o caminho para a área de transferência. |
+   | **2** | Adicione o código visto no campo de texto na Etapa 2 ao arquivo que você acabou de criar na Etapa 1.<br>Se necessário, clique em ![Copiar ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o código para a área de transferência. |
    | **3** | Crie uma solicitação de pull no repositório Git para as alterações recém-criadas e mescle-a com `main` para confirmar o código. |
 
 1. Clique em **Verificar**.
 
 Quando o repositório é verificado, seu status na tabela de sites do Edge Delivery é atualizado. Um círculo verde com uma marca de seleção branca indica o status.
 
-Na mesma tabela, clique em ![Informações sobre o site do Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para exibir detalhes do site. Essas informações incluem o URL do repositório verificado, juntamente com os URLs do site de Pré-visualização e Produção.
+Na mesma tabela, clique em ![Informações sobre o ícone do site do Edge Delivery](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para exibir detalhes do site. Essas informações incluem o URL do repositório verificado, juntamente com os URLs do site de Pré-visualização e Produção.

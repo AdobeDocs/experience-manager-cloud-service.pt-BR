@@ -5,9 +5,9 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1047'
 ht-degree: 11%
 
 ---
@@ -119,7 +119,7 @@ Além dos direitos necessários, 99,99% da SLA tem requisitos adicionais para us
 
 ## Acessar seu programa {#accessing}
 
-1. Ao visualizar o cartão do programa na página de aterrissagem, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg para exibir as opções de menu disponíveis.
+1. Ao visualizar o cartão do programa na página de aterrissagem, clique no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para exibir as opções de menu disponíveis.
 
    ![Visão geral do programa](assets/program-overview.png)
 

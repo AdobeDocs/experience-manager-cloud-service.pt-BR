@@ -5,9 +5,9 @@ exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 88b4864da30fbf201dbd5bde1ac17d3be977648f
+source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '698'
 ht-degree: 42%
 
 ---
@@ -26,11 +26,11 @@ A hibernação pode ocorrer automática ou manualmente.
 
 Pode levar alguns minutos para que os ambientes dos programas de sandbox entrem no modo de hibernação. Os dados são preservados durante a hibernação.
 
-### Hibernar manualmente um ambiente de programa de sandbox {#using-manual-hibernation}
+### Hibernar um ambiente de programa de sandbox manualmente {#using-manual-hibernation}
 
 Você pode hibernar manualmente seu programa de sandbox no Console do desenvolvedor. O acesso à Developer Console para um programa de sandbox está disponível para qualquer usuário do Cloud Manager.
 
-**Para hibernar manualmente um ambiente de programa de sandbox:**
+**Para hibernar um ambiente de programa de sandbox manualmente:**
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
@@ -60,7 +60,7 @@ Na Developer Console, clique no link **Ambientes** na navegação estrutural aci
 
 ![Lista de ambientes que devem ser hibernados](assets/hibernate-1b.png)
 
-## Cancelar a hibernação manual de um programa de sandbox da Developer Console {#de-hibernation-introduction}
+## Cancelar a hibernação de um programa de sandbox da Developer Console manualmente {#de-hibernation-introduction}
 
 Você pode hibernar manualmente seu programa de sandbox na Developer Console.
 
@@ -68,13 +68,13 @@ Você pode hibernar manualmente seu programa de sandbox na Developer Console.
 >
 >Um usuário com função de **Desenvolvedor** pode cancelar a hibernação de um ambiente de programa de sandbox.
 
-**Para cancelar manualmente a hibernação de um programa de sandbox da Developer Console:**
+**Para cancelar a hibernação de um programa de sandbox da Developer Console manualmente:**
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique no programa que deseja cancelar a hibernação para exibir seus detalhes.
 
-1. No cartão **Ambientes**, clique em https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg e em **Developer Console**.
+1. No cartão **Ambientes**, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Developer Console**.
 
    * Consulte [Acesso ao Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) para obter detalhes adicionais sobre o Developer Console.
 
