@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: d6cbfb2b374aba6ce52a8ac7e1af37d687cc13d9
+source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
 workflow-type: tm+mt
-source-wordcount: '6006'
+source-wordcount: '6020'
 ht-degree: 70%
 
 ---
@@ -708,6 +708,7 @@ ht-degree: 70%
       + [Migrar do [!DNL AEM 6.5 Forms] ou anterior para o [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos e permissões](/help/forms/forms-groups-privileges-tasks.md)
       + [Importar, exportar e organizar formulários adaptáveis, formulários PDF e outros ativos](/help/forms/import-export-forms-templates.md)
+      + [Publish Adaptive Forms usando Gerenciar publicação](/help/forms/manage-publication.md)
    + Introdução {#getting-started-forms}
       + [Caso de uso e ambiente de desenvolvimento de configuração](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Criar o formulário de solicitação de empréstimo](/help/forms/create-adaptive-form-tutorial.md)
@@ -1022,6 +1023,8 @@ ht-degree: 70%
          + [Usar o serviço de envio do Forms](/help/forms/forms-submission-service.md)
       + WYSIWYG {#universal-editor}
          + [Visão geral - Editor universal para Edge Delivery Services para Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+         + [Introdução](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+         + [Adicionar regras ao usando o Editor de Regras](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
       + Recursos {#advanced-features-edge-delivery-services-forms}
          + [Usar fragmentos de formulário](/help/edge/docs/forms/form-fragments.md)
          + [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
