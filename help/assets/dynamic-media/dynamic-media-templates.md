@@ -3,9 +3,10 @@ title: Como gerenciar modelos do Dynamic Media?
 description: Saiba como criar modelos do Dynamic Media usando um editor de modelos do WYSIWYG e incluir várias camadas de imagem e texto para criar banners e folhetos rapidamente e usá-los em aplicativos downstream.
 hide: true
 role: User
-source-git-commit: ada339567716a126d3288246c148c551dff298f4
+exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
+source-git-commit: ea903daafedb420602700f4b1b4a3ad6bd8ede97
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2590'
 ht-degree: 0%
 
 ---
@@ -55,19 +56,18 @@ Para criar um modelo DM, siga estas etapas:
 1. [Editar ou excluir uma camada](#edit-or-delete-a-layer)
 1. [Camadas de parâmetros](#parameterise-a-layer)
 
-
 ### Criar uma tela em branco{#create-a-canvas}
 
 Execute estas etapas para criar uma tela em branco:
 
-1. Navegue até Assets View e clique em **Dynamic Media Assets**, disponível no painel esquerdo.
+1. Navegue até Assets View e clique em **[!UICONTROL Dynamic Media Assets]**, disponível no painel esquerdo.
 
    ![](/help/assets/assets/dm-templates/DM-Assets1.png)
 
-1. Clique em **Criar Modelo** para salvar o modelo no Dynamic Media Assets ou navegue até uma pasta e clique em **Criar Modelo** para salvar o modelo nessa pasta. A caixa de diálogo **Novo Modelo** é exibida.
+1. Clique em **[!UICONTROL Criar Modelo]** para salvar o modelo no Dynamic Media Assets ou navegue até uma pasta e clique em **[!UICONTROL Criar Modelo]** para salvar o modelo nessa pasta. A caixa de diálogo **[!UICONTROL Novo Modelo]** é exibida.
    ![](/help/assets/assets/dm-templates/new-template.png)
-Para [criar uma pasta](/help/assets/add-delete-assets-view.md) em **Dynamic Media Assets**, crie uma pasta em **Assets**. A árvore de pastas em **Assets** é replicada em **Dynamic Media Assets**.
-1. Especifique um nome de modelo, defina a largura e a altura da tela e clique em **Criar**. Uma tela de desenho em branco é exibida com opções de menu em ambos os lados para ser usada na criação do modelo. Passe o mouse sobre as opções de menu para ver a dica de ferramenta.
+Para [criar uma pasta](/help/assets/add-delete-assets-view.md) em **[!UICONTROL Dynamic Media Assets]**, crie uma pasta em **[!UICONTROL Assets]**. A árvore de pastas em **[!UICONTROL Assets]** é replicada em **[!UICONTROL Dynamic Media Assets]**.
+1. Especifique um nome de modelo, defina a largura e a altura da tela e clique em **[!UICONTROL Criar]**. Uma tela de desenho em branco é exibida com opções de menu em ambos os lados para ser usada na criação do modelo. Passe o mouse sobre as opções de menu para ver a dica de ferramenta.
    ![](/help/assets/assets/dm-templates/blank-canvas-page.png)
 
 >[!NOTE]
@@ -91,7 +91,7 @@ Para [criar uma pasta](/help/assets/add-delete-assets-view.md) em **Dynamic Medi
 * ![](/help/assets/assets/dm-templates/zoomout.svg): Clique para reduzir a tela ou pressione **Ctrl** + **-** (Windows) ou **Cmd** + **-** (Mac).
 * Pressione **Backspace** ou **delete** para excluir a camada selecionada se nenhum texto ou propriedade estiver sendo editado.
 
-Clique em ![](/help/assets/assets/dm-templates/show-layers-list.svg) e em mais opções (![](/help/assets/assets/dm-templates/three-dots.svg)) na camada Tela de Pintura para editar as dimensões da tela de desenho a qualquer momento durante a criação do modelo.
+Clique em ![](/help/assets/assets/dm-templates/show-layers-list.svg) **>** mais opções (![](/help/assets/assets/dm-templates/three-dots.svg)) na camada da Tela de Pintura para editar as dimensões da tela a qualquer momento durante a criação do modelo.
 ![](/help/assets/assets/dm-templates/edit-canvas1.png)
 
 >[!NOTE]
@@ -104,7 +104,7 @@ Execute estas etapas para adicionar imagens à tela:
 
 1. Clique em ![](/help/assets/assets/dm-templates/add-image.svg) para exibir o painel [Seletor de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). O painel exibe as imagens na sua instância do AEM Assets que são sincronizadas com o Dynamic Media.
 1. Navegue pelo painel ou use palavras-chave na barra de pesquisa para localizar uma imagem específica.
-1. Arraste e solte uma imagem na tela para usá-la. Consulte o [painel Propriedades](#4) para redimensionar ou reposicionar uma camada na tela de desenho.
+1. Arraste e solte uma imagem na tela para usá-la. Consulte o [**[!UICONTROL Painel Propriedades]**](#reposition-resize-delete-a-layer) para redimensionar ou reposicionar uma camada na tela de desenho.
    ![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
 
 ### Adição de camadas de texto à tela de desenho{#add-text-to-the-canvas}
@@ -113,10 +113,10 @@ Execute estas etapas para adicionar camadas de texto à tela de desenho:
 
 1. Clique em ![](/help/assets/assets/dm-templates/add-text.svg) para adicionar uma camada de texto à tela e abrir o painel Propriedades.
 1. Selecione a camada e clique no texto para atualizá-la.
-1. Habilite o **Redimensionamento de Texto Inteligente** no painel Propriedades para ajustar automaticamente o comprimento do texto e o tamanho da fonte para que se ajustem perfeitamente à área designada.
+1. Habilite o **[!UICONTROL Redimensionamento de Texto Inteligente]** no painel Propriedades para ajustar automaticamente o comprimento do texto e o tamanho da fonte para que se ajustem perfeitamente à área designada.
    ![](/help/assets/assets/dm-templates/add-text-layer.png)
 
-Consulte o [painel Propriedades](#4) para reposicionar, redimensionar, girar ou excluir a camada. Formate o texto para a fonte, o tamanho, a cor, o estilo e o alinhamento desejados (na camada) alterando os valores nos respectivos campos na seção **Texto** do painel.
+Consulte o [**[!UICONTROL Painel Propriedades]**](#reposition-resize-delete-a-layer) para reposicionar, redimensionar, girar ou excluir a camada. Formate o texto para a fonte, o tamanho, a cor, o estilo e o alinhamento desejados (na camada) alterando os valores nos respectivos campos na seção **[!UICONTROL Texto]** do painel.
 
 >[!NOTE]
 >
@@ -128,8 +128,8 @@ Execute estas etapas para editar ou excluir uma camada da tela de desenho:
 
 1. Clique em ![](/help/assets/assets/dm-templates/show-layers-list.svg) e selecione a camada na tela de desenho ou na lista Camadas.
 1. Clique em **mais opções** (![](/help/assets/assets/dm-templates/three-dots.svg)) para editar ou excluir a camada.
-1. Clique em **Excluir** para excluir a camada.
-1. Clique em **Editar** para editar a camada usando o [painel Propriedades](#4).
+1. Clique em **[!UICONTROL Excluir]** para excluir a camada.
+1. Clique em **[!UICONTROL Editar]** para editar a camada usando o [**[!UICONTROL Painel de Propriedades]**](#reposition-resize-delete-a-layer).
    ![](/help/assets/assets/dm-templates/edit-delete-layer.png)
 
 ### Painel Propriedades{#properties-panel}
@@ -144,7 +144,7 @@ Esse painel exibe a posição do ponto central da camada no plano da tela de des
 ![](/help/assets/assets/dm-templates/properties-panel.png)
 
 No painel de propriedades de uma camada, selecione outra camada na tela para navegar até o painel de propriedades.
-<a id="4"></a>
+
 
 #### Reposicionar, redimensionar, girar ou excluir uma camada{#reposition-resize-delete-a-layer}
 
@@ -153,27 +153,27 @@ Veja estas ações comuns de edição de camadas para editar um texto ou uma cam
 * **Reposicionar a camada:** Arraste a camada para movê-la para qualquer lugar na tela. Essa ação atualiza os valores X e Y no painel de propriedades.
 * **Redimensionar a camada:** Selecione a camada e arraste suas alças de borda para redimensioná-la. Essa ação atualiza os valores L (largura) e A (altura) no painel de propriedades.
 * **Girar a camada:** arraste a alça quadrada colocada verticalmente acima da camada para girá-la em torno de seu centro. Essa ação atualiza os valores de ângulo no painel de propriedades.
-* **Excluir a camada:** Pressione **Backspace** ou **delete** e clique em **Confirmar** para excluir uma camada selecionada.
+* **Excluir a camada:** Pressione **Backspace** ou **delete** e clique em **[!UICONTROL Confirmar]** para excluir uma camada selecionada.
 
 #### Opções de formatação de texto{#text-formatting-options-on-properties-panel}
 
-Formate o texto para a fonte, o tamanho, a cor, o estilo e o alinhamento desejados (na camada) alterando os valores nos respectivos campos na seção **Texto** do painel.
+Formate o texto para a fonte, o tamanho, a cor, o estilo e o alinhamento desejados (na camada) alterando os valores nos respectivos campos na seção **[!UICONTROL Texto]** do painel.
 
-**Redimensionamento de Texto Inteligente:** Inclua **Redimensionamento de Texto Inteligente** ([Ajuste Automático](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) para ajustar qualquer texto na área designada de forma ideal ajustando seu tamanho de fonte e comprimento de forma inteligente. Esse recurso evita o excesso de texto ou minimiza espaços extras na parte inferior do texto.
+**[!UICONTROL Redimensionamento de Texto Inteligente]** Inclua o **[!UICONTROL Redimensionamento de Texto Inteligente]** ([Ajuste de texto](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) para ajustar qualquer texto na área designada de forma ideal ajustando seu tamanho de fonte e comprimento de forma inteligente. Esse recurso evita o excesso de texto ou minimiza espaços extras na parte inferior do texto.
 ![](/help/assets/assets/dm-templates/smart-text-resize.png)
 
 ### Camadas de parâmetros {#parameterise-a-layer}
 
 Depois de criar um modelo com várias camadas de imagens e textos, parametrize as camadas selecionadas. Quando uma camada ou sua propriedade é parametrizada, ela obtém um par de valores-chave (também chamado de parâmetro ). Esse parâmetro pode ser incluído no URL do modelo para atualizar a posição, o tamanho ou o conteúdo da camada em tempo real, resultando na personalização rápida do modelo.
 
-Para parametrizar uma camada: <a id="1"></a>
+Para parametrizar uma camada:
 
-1. clique em ![](/help/assets/assets/dm-templates/show-layers-list.svg), selecione uma camada e clique em **Parâmetros**. O painel **Parâmetros** é exibido.
-1. Alternar **Incluir Parâmetro** para parametrizar uma propriedade. Consulte [this](#parameterisation-options-or-allowed-parameters) para saber o comportamento da propriedade após a parametrização.
+1. clique em ![](/help/assets/assets/dm-templates/show-layers-list.svg), selecione uma camada e clique em **[!UICONTROL Parâmetros]**. O painel **[!UICONTROL Parâmetros]** é exibido.
+1. Alternar **[!UICONTROL Incluir Parâmetro]** para parametrizar uma propriedade. Consulte [this](#parameterisation-options-or-allowed-parameters) para saber o comportamento da propriedade após a parametrização.
 1. **Opcional:** Renomeie o nome do parâmetro. Um nome de parâmetro tem nome de camada seguido por um sufixo. Para uma camada selecionada, todas as suas propriedades parametrizadas compartilham o mesmo nome de camada seguido por um sufixo variável. Renomeie o nome da camada seguindo a convenção de nomenclatura semântica para que, ao incluir o parâmetro no URL, o próprio nome do parâmetro explique sobre o conteúdo da camada ou sua finalidade.
-1. Clique em **Salvar**.
+1. Clique em **[!UICONTROL Salvar]**.
    ![](/help/assets/assets/dm-templates/parameterise-a-layer.png)
-Para alternar entre o painel Parâmetro de uma imagem e uma camada de texto, selecione a camada na tela e clique em **Parâmetros**.
+Para alternar entre o painel Parâmetro de uma imagem e uma camada de texto, selecione a camada na tela e clique em **[!UICONTROL Parâmetros]**.
 
 #### Opção do painel Parâmetros {#parameterisation-options-or-allowed-parameters}
 
@@ -203,32 +203,32 @@ Outra maneira de manter seus modelos flexíveis é utilizar um único nome de pa
 
 Siga estas etapas para atribuir o mesmo nome aos parâmetros de ocultação (![](/help/assets/assets/dm-templates/Visibility-icon.svg)) de várias camadas, permitindo ocultá-los ou mostrá-los simultaneamente.
 
-1. Navegue até o [painel Parâmetros](#1) de uma camada.
-1. Alternar o parâmetro **Hide** se não for parametrizado anteriormente.
+1. Navegue até o [**[!UICONTROL Painel Propriedades]**](#parameterise-a-layer) de uma camada.
+1. Alternar o parâmetro **[!UICONTROL Hide]** se não for parametrizado anteriormente.
 1. **Opcional:** Renomeie o Parâmetro Hide.
 1. Copie o nome do parâmetro Ocultar.
-1. Vá para o painel Parâmetro de outras camadas selecionando-as na tela e alterne seu Parâmetro **Hide** se não for parametrizado.
-1. Substitua o nome **Ocultar Parâmetro** pelo nome copiado.
-1. Clique em **Salvar** para agrupar as camadas.
-1. Execute a etapa 3 e depois a etapa 4 na seção [Preview e Publish](#2) para ver suas alterações.
+1. Vá para o painel Parâmetro de outras camadas selecionando-as na tela e alterne seu Parâmetro **[!UICONTROL Hide]** se não for parametrizado.
+1. Substitua o nome **[!UICONTROL Hide parameter]** pelo nome copiado.
+1. Clique em **[!UICONTROL Salvar]** para agrupar as camadas.
+1. Execute a etapa 3 e depois a etapa 4 na seção [**[!UICONTROL Preview e Publish]**](#preview-and-publish-template-and-copy-template-deliver-url) para ver suas alterações.
 
 ## Pré-visualizar e publicar o modelo para copiar o URL de entrega{#preview-and-publish-template-and-copy-template-deliver-url}
 
 Execute estas etapas para visualizar e publicar o modelo e copiar o URL do delivery:
 
-1. Na página da tela, clique em **Visualizar**. Você também pode navegar até **Assets View > Dynamic Media Assets >** localizar e selecionar seu modelo **>** clicar em **Editar Modelo >** clicar em **Visualizar**. A página de visualização exibe o modelo, seus parâmetros (camadas e propriedades com parâmetros), status de publicação e a opção **Publish**. <a id="3"></a>
-1. Selecione parâmetros do painel **Parâmetros do modelo** para editar seus valores e atualizar instantaneamente o conteúdo, o tamanho, a posição ou a formatação de texto da camada de modelo correspondente na visualização. Por exemplo:
+1. Na página da tela, clique em **[!UICONTROL Visualizar]**. Você também pode navegar para a **[!UICONTROL Exibição do Assets]** **>** **[!UICONTROL Dynamic Media Assets]** **>** localizar e selecionar seu modelo **>** clicar em **[!UICONTROL Editar Modelo]** **>** clicar em **[!UICONTROL Visualização]**. A página de visualização exibe o modelo, seus parâmetros (camadas e propriedades com parâmetros), status de publicação e a opção **[!UICONTROL Publish]**.
+1. Selecione parâmetros do painel **[!UICONTROL Parâmetros do modelo]** para editar seus valores e atualizar instantaneamente o conteúdo, o tamanho, a posição ou a formatação de texto da camada de modelo correspondente na visualização. Por exemplo:
    1. Selecione uma camada de texto e edite seu texto ou
-   1. Selecione uma camada de imagem, clique em ![](/help/assets/assets/dm-templates/add-image.svg), selecione uma imagem no seletor de ativos e clique em **Atualizar**.
+   1. Selecione uma camada de imagem, clique em ![](/help/assets/assets/dm-templates/add-image.svg), selecione uma imagem no seletor de ativos e clique em **[!UICONTROL Atualizar]**.
 
-   O modelo é atualizado imediatamente, exibindo o texto editado e substituindo a imagem anterior pela nova. Além disso, o valor do parâmetro de imagem reflete o novo caminho de imagem. Da mesma forma, é possível redimensionar uma camada ajustando seus valores, e as alterações são aplicadas ao modelo em tempo real. <a id="2"></a>
+   O modelo é atualizado imediatamente, exibindo o texto editado e substituindo a imagem anterior pela nova. Além disso, o valor do parâmetro de imagem reflete o novo caminho de imagem. Da mesma forma, é possível redimensionar uma camada ajustando seus valores, e as alterações são aplicadas ao modelo em tempo real.
 1. Selecione o parâmetro hide para [camadas agrupadas](#group-layers) da lista para exibi-las ou ocultá-las no modelo.
-1. **Opcional:** Altere o valor **Ocultar Parâmetro** entre 0 e 1 e clique em **Atualizar** para ver as alterações. Camadas com o mesmo parâmetro de ocultação oculta ou é exibida junto. Da mesma forma, é possível controlar a visibilidade das camadas a partir do URL.
+1. **Opcional:** Altere o valor do parâmetro **[!UICONTROL Ocultar]** entre 0 e 1 e clique em **[!UICONTROL Atualizar]** para ver as alterações. Camadas com o mesmo parâmetro de ocultação oculta ou é exibida junto. Da mesma forma, é possível controlar a visibilidade das camadas a partir do URL.
 
    ![](/help/assets/assets/dm-templates-publish-status.png)
-Você também pode alternar **Incluir todos os parâmetros** para editar todos os valores de parâmetros exibidos e ver as atualizações na visualização do modelo.
+Você também pode alternar **[!UICONTROL Incluir todos os parâmetros]** para editar todos os valores de parâmetros exibidos e ver as atualizações na visualização do modelo.
    <br>
-1. Para publicar o modelo na página de visualização, clique em **Publish** e confirme para publicar. A mensagem Publish concluído é exibida e o status de publicação é atualizado para Publicado.
+1. Para publicar o modelo na página de visualização, clique em **[!UICONTROL Publish]** e confirme para publicar. A mensagem Publish concluído é exibida e o status de publicação é atualizado para Publicado.
 
 >[!NOTE]
 >
@@ -236,12 +236,12 @@ Você também pode alternar **Incluir todos os parâmetros** para editar todos o
 
 ### Copiar o URL de entrega
 
-Os parâmetros selecionados na página **Visualização** tornam-se os parâmetros de URL na URL de modelo.
+Os parâmetros selecionados na página **[!UICONTROL Visualização]** tornam-se os parâmetros de URL na URL de modelo.
 
 Para copiar o URL do modelo publicado exibido na pré-visualização:
 
-1. Clique em **Copiar URL**. A caixa de diálogo **Copiar URL** é exibida. Selecione e copie o URL exibido. Observe que o primeiro parâmetro na URL começa após um ponto de interrogação **(?)** e um par de valor-chave começam com **$** e terminam com **&amp;**. A chave e o valor são separados por um sinal de igual **(=)**, com a chave à esquerda e o valor à direita.
-1. Cole esse URL na guia do navegador e veja seu modelo em tempo real. Personalize o modelo em tempo real atualizando o valor do parâmetro necessário (valor da chave) diretamente na URL, conforme demonstrado na [etapa 2](#3) da seção **Visualizar e Publish**.
+1. Clique em **[!UICONTROL Copiar URL]**. A caixa de diálogo **[!UICONTROL Copiar URL]** é exibida. Selecione e copie o URL exibido. Observe que o primeiro parâmetro na URL começa após um ponto de interrogação **(?)** e um par de valor-chave começam com **$** e terminam com **&amp;**. A chave e o valor são separados por um sinal de igual **(=)**, com a chave à esquerda e o valor à direita.
+1. Cole esse URL na guia do navegador e veja seu modelo em tempo real. Personalize o modelo em tempo real atualizando o valor do parâmetro necessário (valor da chave) diretamente na URL, conforme demonstrado na [etapa 2](#preview-and-publish-template-and-copy-template-deliver-url) da seção **Visualizar e Publish**.
 1. Use este URL para um merchandising rápido de seus produtos ou serviços. Você pode compartilhar esse URL com seus clientes ou integrá-lo ao seu site ou a qualquer aplicativo downstream de terceiros para exibir o banner e fazer atualizações em tempo real nele para refletir as ofertas em andamento.
 
 Saiba como criar um modelo do Dynamic Media passo a passo neste vídeo.
@@ -264,10 +264,10 @@ Cole esse URL atualizado no navegador para visualizar as alterações.
 
 Edite o template seguindo estas etapas:
 
-1. Na exibição do Assets, clique em **Dynamic Media Assets**.
+1. Na exibição do Assets, clique em **[!UICONTROL Dynamic Media Assets]**.
 2. Navegue até o local do modelo.
 3. Selecione o template.
-4. Clique em **Editar Modelo**. A tela de modelo exibe o modelo e a lista de todas as suas camadas no painel Camadas. Comece a editar o modelo de acordo com os requisitos.
+4. Clique em **[!UICONTROL Editar Modelo]**. A tela de modelo exibe o modelo e a lista de todas as suas camadas no painel Camadas. Comece a editar o modelo de acordo com seus requisitos.
 
 ## Pontos importantes a observar {#important-points-to-note}
 
