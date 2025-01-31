@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: b4ed1039e199f520a1d7b44ae9af11ecdf52f5c3
+source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1998'
 ht-degree: 0%
 
 ---
@@ -109,6 +109,11 @@ Pronto para começar? Os artigos a seguir fornecem instruções detalhadas sobre
 
 ## Inovações adicionais de acesso antecipado
 
+### Modelos de e-mail de HTML no Adaptive Forms
+
+O Adaptive Forms permite usar modelos de email de HTML. Os templates de email de HTML permitem enviar emails avançados, personalizados e visualmente atraentes quando um formulário é enviado. Esses emails podem ser personalizados com dados de formulário e aprimorados usando várias tags de email, como imagens e links. Com o Adaptive Forms, você pode carregar um arquivo contendo um modelo de HTML ou usar um editor de texto simples para criar esses modelos.
+
+
 ### Suporte a idiomas da direita para a esquerda (RTL)
 
 O Forms adaptável agora pode ser exibido em uma linguagem da direita para a esquerda (RTL, Right-to-Left), permitindo uma experiência do usuário mais inclusiva e fácil de usar.
@@ -170,6 +175,20 @@ O serviço Forms gera PDF forms interativos para a captura de dados. Ele também
 * **Extração e Importação de Dados**: importe dados para um formulário PDF existente, bem como extraia dados de um formulário PDF preenchido. Os formatos de dados XDP e XML são compatíveis, e a importação para PDF forms não XFA (também conhecida como AcroForms) também é compatível com dados FDF e XFDF.
 
 * **Validação de Dados**: : valide os dados enviados, no formato XDP ou XML, em relação a um modelo criado com o AEM Forms Designer.
+
+### API de geração de documento
+
+A API de geração de documentos inclui um recurso opcional que permite o upload direto de PDF gerados para o Armazenamento de blobs do Azure. Alguns dos principais benefícios de fazer upload de PDF diretamente para o Armazenamento Azure Blob usando a API de geração de documentos são:
+
+* **Integração perfeita com o Armazenamento na Nuvem**:
+Fazer o upload direto de PDF gerados para o Armazenamento Azure Blob elimina a necessidade de etapas manuais ou programáticas adicionais para transferir arquivos, simplificar fluxos de trabalho e melhorar a eficiência.
+
+* **Gerenciamento centralizado de documentos**:
+O armazenamento de PDF no Armazenamento Azure Blob permite o gerenciamento centralizado de documentos, facilitando a organização, a recuperação e o gerenciamento de arquivos gerados em vários casos de uso.
+
+* **Segurança aprimorada**: ao aproveitar os recursos de segurança internos do Azure, como criptografia em repouso e RBAC (controle de acesso baseado em função), os documentos confidenciais permanecem protegidos durante o armazenamento.
+
+* **Caminhos de Armazenamento Personalizáveis**: a capacidade de definir caminhos de diretório personalizados garante que os PDF gerados sejam armazenados em locais organizados e específicos do aplicativo, melhorando o gerenciamento de arquivos.
 
 ## Consulte também:
 
