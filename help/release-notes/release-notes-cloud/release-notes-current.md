@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 190e68ebcd3c2a7ba7b995690c802a04728e6962
+source-git-commit: 20db0990c506aeb473b71132813cec053009275f
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1750'
 ht-degree: 11%
 
 ---
@@ -126,13 +126,21 @@ Legendas de vídeo geradas por IA no Adobe Dynamic Media usam inteligência arti
 
 ### Novos recursos no AEM Forms {#forms-new-features}
 
-* **Gerenciar Publicação**: você pode usar o fluxo de trabalho &quot;Gerenciar Publicação&quot; para publicar ou desfazer a publicação de formulários entre ambientes, normalmente da instância de criação para as instâncias de publicação e visualização. Ele permite que os usuários publiquem, desfaçam a publicação ou agendem a publicação de conteúdo de maneira simplificada.
+#### Gerenciar publicação   
 
-* **[Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável](/help/forms/save-core-component-based-form-as-draft.md)**: os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
+Você pode usar o fluxo de trabalho &quot;Gerenciar publicação&quot; para publicar ou desfazer a publicação de formulários em ambientes, normalmente da instância do autor para as instâncias de publicação e pré-visualização. Ele permite que os usuários publiquem, desfaçam a publicação ou agendem a publicação de conteúdo de maneira simplificada.
 
-* **[Aprimoramentos no editor de regras](/help/forms/invoke-service-enhancements-rule-editor.md)**: para o Adaptive Forms com base em Componentes principais, você pode usar a saída do Invoke Service para preencher opções suspensas e definir painéis repetíveis ou individuais. Além disso, essa saída pode ser usada para validar outros campos.
+#### Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável
 
-* **[Aprimorar a Experiência do Usuário com Botões de Navegação em Layouts de Painel](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button)**: Agora é possível adicionar botões de navegação aos layouts de painel, como Guias Horizontais, Guias Verticais, Acordeões ou Assistente. Esses botões melhoram a experiência do usuário simplificando as transições entre painéis, com foco no painel selecionado.
+Os usuários agora podem se beneficiar de um [recurso de salvamento automático](/help/forms/save-core-component-based-form-as-draft.md) que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
+
+#### Aprimoramentos no editor de regras
+
+Para o Adaptive Forms com base nos Componentes principais, você pode usar a [saída do Invoke Service para preencher opções suspensas e definir um painel repetível ou individual](/help/forms/invoke-service-enhancements-rule-editor.md). Além disso, essa saída pode ser usada para validar outros campos.
+
+#### Melhore a experiência do usuário com botões de navegação em layouts de painel
+
+Agora é possível adicionar botões de navegação aos layouts do painel, como Guias horizontais, Guias verticais, Acordeões ou Assistente. Esses botões [aprimoram a experiência do usuário simplificando as transições entre painéis, com foco no painel selecionado](/help/forms/rule-editor-core-components-usecases.md#navigating-among-panels-using-button).
 
 
 ### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
@@ -141,15 +149,15 @@ O programa de acesso antecipado da AEM Forms oferece uma oportunidade única par
 
 Estas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### [Modelos de email de HTML no Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+#### Modelos de e-mail de HTML no Adaptive Forms
 
-O Adaptive Forms permite usar modelos de email de HTML. Os templates de email de HTML permitem enviar emails avançados, personalizados e visualmente atraentes quando um formulário é enviado. Esses emails podem ser personalizados com dados de formulário e aprimorados usando várias tags de email, como imagens e links. Com o Adaptive Forms, você pode carregar um arquivo contendo um modelo de HTML ou usar um editor de texto simples para criar esses modelos.
+O Adaptive Forms permite usar [modelos de email de HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Os templates de email de HTML permitem enviar emails avançados, personalizados e visualmente atraentes quando um formulário é enviado. Esses emails podem ser personalizados com dados de formulário e aprimorados usando várias tags de email, como imagens e links. Com o Adaptive Forms, você pode carregar um arquivo contendo um modelo de HTML ou usar um editor de texto simples para criar esses modelos.
 
 ![modelos de email de HTML](/help/forms/assets/html-email.png)
 
 #### Suporte ao armazenamento na nuvem aprimorado: upload direto de PDF para o armazenamento Azure Blob
 
-As APIs de geração de documento do AEM Forms agora oferecem suporte ao upload direto de documentos de PDF gerados para o Armazenamento de blobs do Azure. Esse aprimoramento simplifica o armazenamento e a recuperação, melhorando a eficiência e a integração com fluxos de trabalho em nuvem.
+As APIs de geração de documentos do AEM Forms agora permitem [carregar diretamente documentos de PDF gerados para o Armazenamento Azure Blob](/help/forms/early-access-ea-features.md#doc-generation-api). Esse aprimoramento simplifica o armazenamento e a recuperação, melhorando a eficiência e a integração com fluxos de trabalho em nuvem.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
