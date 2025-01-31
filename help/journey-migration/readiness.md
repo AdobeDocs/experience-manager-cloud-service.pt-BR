@@ -4,9 +4,9 @@ description: Saiba mais sobre as etapas necessárias para garantir que a instala
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1915'
 ht-degree: 6%
 
 ---
@@ -196,7 +196,7 @@ Um relatório típico deve conter estas entradas:
 * Documentação detalhando o conjunto de recursos da sua instalação de AEM específica
 * Detalhes sobre suas configurações personalizadas e código AEM
 * Configurações do Dispatcher de produção
-* Configurações de CDN (se houver)
+* Mapeamentos de domínio (configurações de CDN) (se houver)
 
 **Socializar o relatório**
 

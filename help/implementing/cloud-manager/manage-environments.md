@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2374'
 ht-degree: 38%
 
 ---
@@ -194,9 +194,9 @@ Se você tiver ativado regiões de publicação adicionais, poderá verificar o 
 
 Como alternativa, você pode acessar as mesmas informações na guia **Ambientes**.
 
-1. Na página **Visão geral**, selecione a guia **Ambientes**.
+1. Na página **Visão geral**, clique em ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 
-1. Na guia **Ambientes**, selecione o ambiente que deseja consultar no menu do lado esquerdo.
+1. Na página **Ambientes**, selecione o ambiente que deseja consultar no menu do lado esquerdo.
 
 1. Depois que um ambiente for selecionado:
 
@@ -306,7 +306,7 @@ Esta opção também está disponível na guia **Ambiente** da janela **Visão g
 
      ![Logon local](assets/environ-login-locally.png)
 
-   * No painel lateral esquerdo, clique em **Ambientes**. Na página **Ambientes**, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Logon local**.
+   * No painel lateral esquerdo, clique em ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**. Na página **Ambientes**, clique no ícone ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Logon local**.
 
      ![Logon local na guia Ambientes](assets/environ-login-locally-2.png)
 
@@ -322,7 +322,7 @@ Os nomes de domínio personalizados são suportados nos programas do Cloud Manag
 
 Uma Lista de permissões IP é compatível com o Cloud Manager para criar, publicar e visualizar serviços para programas do Sites.
 
-Para gerenciar Listas de permissões de IP, navegue até a guia **Ambientes** da página **Visão geral** do seu programa. Clique em um ambiente individual para gerenciar seus detalhes.
+Para gerenciar Listas de permissões de IP, navegue até a página ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes** da página **Visão geral** do seu programa. Clique em um ambiente individual para gerenciar seus detalhes.
 
 ### Aplicar uma Lista de permissões de IP {#apply-ip-allow-list}
 
