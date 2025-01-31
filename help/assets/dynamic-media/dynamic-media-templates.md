@@ -1,0 +1,284 @@
+---
+title: Como gerenciar modelos do Dynamic Media?
+description: Saiba como criar modelos do Dynamic Media usando um editor de modelos do WYSIWYG e incluir várias camadas de imagem e texto para criar banners e folhetos rapidamente e usá-los em aplicativos downstream.
+hide: true
+role: User
+source-git-commit: ada339567716a126d3288246c148c551dff298f4
+workflow-type: tm+mt
+source-wordcount: '2592'
+ht-degree: 0%
+
+---
+
+# Modelos do Dynamic Media{#dynamic-media-templates}
+
+| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
+| ------------- | --------------------------- |---------|-----|
+
+Crie modelos do Dynamic Media usando um editor de modelos do WYSIWYG e inclua várias camadas de imagem e texto para criar banners e folhetos rapidamente e usá-los em aplicativos downstream. Você também pode adicionar parâmetros às camadas de imagens e texto incluídas no modelo e usar as [URLs do Dynamic Media](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) para atualizar os valores dessas camadas em tempo real.
+
+Alguns dos principais recursos incluem:
+
+* **Editor de modelos do Dynamic Media WYSIWYG:** crie banners personalizáveis com camadas de imagem e texto.
+* **Parametrização de Camada:** Defina pares de valores-chave dinâmicos para camadas para habilitar atualizações em tempo real.
+* **Suporte ao URL do Dynamic Media:** Use URLs do Dynamic Media para modelos, integrando valores personalizados de aplicativos próprios ou de terceiros.
+* **Controle de Visibilidade de Camada** oculta ou mostra camadas dinamicamente, conforme necessário.
+* **Redimensionamento de Texto Inteligente:** Ajuste automaticamente o tamanho do texto para ajustar às áreas designadas.
+
+Alguns dos principais benefícios dos modelos do Dynamic Media incluem:
+
+* **Otimizar Personalization 1:1:** Personalize o conteúdo para sinais de clientes em tempo real.
+* **Reduza o esforço manual:** automatize e acelere a criação e o gerenciamento de conteúdo.
+* **Garanta Experiências omnicanais Consistentes:** Mantenha a consistência da marca em todos os canais.
+* **Reutilizar conteúdo efetivamente:** Evite conteúdo de uso único e dimensione com modelos dinâmicos e parametrizados.
+* **Atenuar Riscos** Atualize preços, descontos e links em tempo real.
+* **Aprimorar o Engajamento com o Cliente**: promova experiências interativas e relevantes contextualmente.
+
+>[!NOTE]
+>
+>Os clientes que assinam o SKU de Segurança aprimorada não podem usar nenhum recurso do Dynamic Media, incluindo modelos do Dynamic Media, nesse programa Cloud Service.
+
+## Antes de começar{#prerequisites-for-dynamic-media-wysiwyg-template}
+
+Para criar um template do Dynamic Media, você deve ter:
+
+1. Acesso ao Dynamic Media.
+1. [Sincronizou as imagens disponíveis na sua instância do AEM Assets com o Dynamic Media para usá-las na criação do modelo](/help/assets/dynamic-media/config-dm.md).
+
+## Criar modelo do Dynamic Media WYSIWYG{#how-to-create-dynamic-media-wysiwyg-template}
+
+Para criar um modelo DM, siga estas etapas:
+
+1. [Criar uma tela em branco](#create-a-canvas)
+1. [Adicionar imagens à tela](#add-images-to-the-canvas)
+1. [Adição de camadas de texto à tela de desenho](#add-text-to-the-canvas)
+1. [Editar ou excluir uma camada](#edit-or-delete-a-layer)
+1. [Camadas de parâmetros](#parameterise-a-layer)
+
+
+### Criar uma tela em branco{#create-a-canvas}
+
+Execute estas etapas para criar uma tela em branco:
+
+1. Navegue até Assets View e clique em **Dynamic Media Assets**, disponível no painel esquerdo.
+
+   ![](/help/assets/assets/dm-templates/DM-Assets1.png)
+
+1. Clique em **Criar Modelo** para salvar o modelo no Dynamic Media Assets ou navegue até uma pasta e clique em **Criar Modelo** para salvar o modelo nessa pasta. A caixa de diálogo **Novo Modelo** é exibida.
+   ![](/help/assets/assets/dm-templates/new-template.png)
+Para [criar uma pasta](/help/assets/add-delete-assets-view.md) em **Dynamic Media Assets**, crie uma pasta em **Assets**. A árvore de pastas em **Assets** é replicada em **Dynamic Media Assets**.
+1. Especifique um nome de modelo, defina a largura e a altura da tela e clique em **Criar**. Uma tela de desenho em branco é exibida com opções de menu em ambos os lados para ser usada na criação do modelo. Passe o mouse sobre as opções de menu para ver a dica de ferramenta.
+   ![](/help/assets/assets/dm-templates/blank-canvas-page.png)
+
+>[!NOTE]
+>
+> A faixa de largura e altura permitida é de 50 a 5000.
+
+**Opções de menu no painel direito:** Use essas opções para adicionar as imagens e camadas de texto necessárias à tela.
+
+* ![](/help/assets/assets/dm-templates/add-image.svg): Clique para adicionar imagens à tela.
+* ![](/help/assets/assets/dm-templates/add-text.svg): Clique para adicionar textos à tela.
+* ![](/help/assets/assets/dm-templates/show-layers-list.svg): Clique para ver a lista de todas as camadas (imagem e texto) na tela de desenho. Cada imagem e texto adicionados à tela de desenho é representado como uma camada separada.
+
+**Opções de menu no painel esquerdo:** Use essas opções para ações comuns do editor, conforme mencionado abaixo.
+
+* ![](/help/assets/assets/dm-templates/layer-selector.svg): Selecione uma camada.
+* ![](/help/assets/assets/dm-templates/bring-forward.svg): Clique para avançar uma camada selecionada ou pressione **Ctrl** + **]** (Windows) ou **Cmd** + **]** (Mac).
+* ![](/help/assets/assets/dm-templates/send-backward.svg): Clique para enviar uma camada selecionada para trás ou pressione **Ctrl** + **[** (Windows) ou **Cmd** + **[** (Mac).
+* ![](/help/assets/assets/dm-templates/undo.svg): Clique para desfazer a última ação ou pressione **Ctrl** + **Z** (Windows) ou **Cmd** + **Z** (Mac).
+* ![](/help/assets/assets/dm-templates/redo.svg): Clique para refazer a última ação ou pressione **Ctrl** + **Y** (Windows) ou **Cmd** + **Y** (Mac).
+* ![](/help/assets/assets/dm-templates/zoomin.svg): Clique para ampliar a tela ou pressione **Ctrl** + **+** (Windows) ou Cmd + **+** (Mac).
+* ![](/help/assets/assets/dm-templates/zoomout.svg): Clique para reduzir a tela ou pressione **Ctrl** + **-** (Windows) ou **Cmd** + **-** (Mac).
+* Pressione **Backspace** ou **delete** para excluir a camada selecionada se nenhum texto ou propriedade estiver sendo editado.
+
+Clique em ![](/help/assets/assets/dm-templates/show-layers-list.svg) e em mais opções (![](/help/assets/assets/dm-templates/three-dots.svg)) na camada Tela de Pintura para editar as dimensões da tela de desenho a qualquer momento durante a criação do modelo.
+![](/help/assets/assets/dm-templates/edit-canvas1.png)
+
+>[!NOTE]
+>
+> Os modelos permitem no máximo 20 camadas, incluindo a Tela de Pintura.
+
+### Adicionar imagens à tela{#add-images-to-the-canvas}
+
+Execute estas etapas para adicionar imagens à tela:
+
+1. Clique em ![](/help/assets/assets/dm-templates/add-image.svg) para exibir o painel [Seletor de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). O painel exibe as imagens na sua instância do AEM Assets que são sincronizadas com o Dynamic Media.
+1. Navegue pelo painel ou use palavras-chave na barra de pesquisa para localizar uma imagem específica.
+1. Arraste e solte uma imagem na tela para usá-la. Consulte o [painel Propriedades](#4) para redimensionar ou reposicionar uma camada na tela de desenho.
+   ![](/help/assets/assets/dm-templates/add-image-to-canvas.png)
+
+### Adição de camadas de texto à tela de desenho{#add-text-to-the-canvas}
+
+Execute estas etapas para adicionar camadas de texto à tela de desenho:
+
+1. Clique em ![](/help/assets/assets/dm-templates/add-text.svg) para adicionar uma camada de texto à tela e abrir o painel Propriedades.
+1. Selecione a camada e clique no texto para atualizá-la.
+1. Habilite o **Redimensionamento de Texto Inteligente** no painel Propriedades para ajustar automaticamente o comprimento do texto e o tamanho da fonte para que se ajustem perfeitamente à área designada.
+   ![](/help/assets/assets/dm-templates/add-text-layer.png)
+
+Consulte o [painel Propriedades](#4) para reposicionar, redimensionar, girar ou excluir a camada. Formate o texto para a fonte, o tamanho, a cor, o estilo e o alinhamento desejados (na camada) alterando os valores nos respectivos campos na seção **Texto** do painel.
+
+>[!NOTE]
+>
+> Para usar uma fonte diferente da família de fontes F2 padrão Adobe Sans, é necessário carregar e publicar o arquivo de fonte no AEM Assets e no Dynamic Media. Se você tiver algumas fontes antigas na sua instância, certifique-se de [reprocessar](/help/assets/reprocessing-assets-view.md) para exibi-las no Editor de modelo.
+
+### Editar ou excluir uma camada {#edit-or-delete-a-layer}
+
+Execute estas etapas para editar ou excluir uma camada da tela de desenho:
+
+1. Clique em ![](/help/assets/assets/dm-templates/show-layers-list.svg) e selecione a camada na tela de desenho ou na lista Camadas.
+1. Clique em **mais opções** (![](/help/assets/assets/dm-templates/three-dots.svg)) para editar ou excluir a camada.
+1. Clique em **Excluir** para excluir a camada.
+1. Clique em **Editar** para editar a camada usando o [painel Propriedades](#4).
+   ![](/help/assets/assets/dm-templates/edit-delete-layer.png)
+
+### Painel Propriedades{#properties-panel}
+
+Para navegar até o painel de propriedades de uma camada:
+
+1. Clique em ![](/help/assets/assets/dm-templates/show-layers-list.svg).
+1. Selecione a camada na lista.
+
+Esse painel exibe a posição do ponto central da camada no plano da tela de desenho (valores X e Y) e as dimensões da camada (largura e altura) juntamente com as opções de formatação de texto.
+
+![](/help/assets/assets/dm-templates/properties-panel.png)
+
+No painel de propriedades de uma camada, selecione outra camada na tela para navegar até o painel de propriedades.
+<a id="4"></a>
+
+#### Reposicionar, redimensionar, girar ou excluir uma camada{#reposition-resize-delete-a-layer}
+
+Veja estas ações comuns de edição de camadas para editar um texto ou uma camada de imagem:
+
+* **Reposicionar a camada:** Arraste a camada para movê-la para qualquer lugar na tela. Essa ação atualiza os valores X e Y no painel de propriedades.
+* **Redimensionar a camada:** Selecione a camada e arraste suas alças de borda para redimensioná-la. Essa ação atualiza os valores L (largura) e A (altura) no painel de propriedades.
+* **Girar a camada:** arraste a alça quadrada colocada verticalmente acima da camada para girá-la em torno de seu centro. Essa ação atualiza os valores de ângulo no painel de propriedades.
+* **Excluir a camada:** Pressione **Backspace** ou **delete** e clique em **Confirmar** para excluir uma camada selecionada.
+
+#### Opções de formatação de texto{#text-formatting-options-on-properties-panel}
+
+Formate o texto para a fonte, o tamanho, a cor, o estilo e o alinhamento desejados (na camada) alterando os valores nos respectivos campos na seção **Texto** do painel.
+
+**Redimensionamento de Texto Inteligente:** Inclua **Redimensionamento de Texto Inteligente** ([Ajuste Automático](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/text-formatting/r-copy-fitting)) para ajustar qualquer texto na área designada de forma ideal ajustando seu tamanho de fonte e comprimento de forma inteligente. Esse recurso evita o excesso de texto ou minimiza espaços extras na parte inferior do texto.
+![](/help/assets/assets/dm-templates/smart-text-resize.png)
+
+### Camadas de parâmetros {#parameterise-a-layer}
+
+Depois de criar um modelo com várias camadas de imagens e textos, parametrize as camadas selecionadas. Quando uma camada ou sua propriedade é parametrizada, ela obtém um par de valores-chave (também chamado de parâmetro ). Esse parâmetro pode ser incluído no URL do modelo para atualizar a posição, o tamanho ou o conteúdo da camada em tempo real, resultando na personalização rápida do modelo.
+
+Para parametrizar uma camada: <a id="1"></a>
+
+1. clique em ![](/help/assets/assets/dm-templates/show-layers-list.svg), selecione uma camada e clique em **Parâmetros**. O painel **Parâmetros** é exibido.
+1. Alternar **Incluir Parâmetro** para parametrizar uma propriedade. Consulte [this](#parameterisation-options-or-allowed-parameters) para saber o comportamento da propriedade após a parametrização.
+1. **Opcional:** Renomeie o nome do parâmetro. Um nome de parâmetro tem nome de camada seguido por um sufixo. Para uma camada selecionada, todas as suas propriedades parametrizadas compartilham o mesmo nome de camada seguido por um sufixo variável. Renomeie o nome da camada seguindo a convenção de nomenclatura semântica para que, ao incluir o parâmetro no URL, o próprio nome do parâmetro explique sobre o conteúdo da camada ou sua finalidade.
+1. Clique em **Salvar**.
+   ![](/help/assets/assets/dm-templates/parameterise-a-layer.png)
+Para alternar entre o painel Parâmetro de uma imagem e uma camada de texto, selecione a camada na tela e clique em **Parâmetros**.
+
+#### Opção do painel Parâmetros {#parameterisation-options-or-allowed-parameters}
+
+As propriedades com parâmetros podem ser incluídas como parâmetros de URL no URL do modelo para editar o modelo em tempo real usando o URL.
+
+**Parâmetros de imagem:**
+
+**X:** Inclua para mover a camada horizontalmente ao longo de sua linha central, paralelamente ao eixo X do plano de modelo, alterando o valor do parâmetro na URL.
+**Y:** Inclua para mover a camada verticalmente ao longo de sua linha central, paralela ao eixo Y do plano de modelo, alterando o valor do parâmetro na URL.
+**Largura:** Inclua para ajustar a largura da camada alterando o valor do parâmetro na URL.
+**Altura:** Inclua para ajustar a altura da camada alterando o valor do parâmetro na URL.
+**Ocultar:** Inclua para ocultar ou mostrar a camada no modelo usando 0 (mostrar) e 1 (ocultar).
+**Source:** Inclua para substituir a imagem da camada pela nova imagem alterando o caminho da imagem no valor do parâmetro na URL.
+
+**Parâmetros de formatação de texto:**
+
+Inclua os parâmetros abaixo para editar o texto, sua fonte, cor e tamanho no URL atualizando os valores de parâmetro no URL.
+
+**Texto:** Incluir para atualizar o texto da URL.
+**Família da Fonte:** Incluir para atualizar a fonte do texto da URL.
+**Tamanho da Fonte:** Incluir para atualizar o tamanho da fonte do texto da URL.
+**Cor do texto:** Incluir para atualizar a cor da fonte do texto da URL.
+
+### Agrupar camadas para controlar sua visibilidade simultaneamente{#group-layers}
+
+Outra maneira de manter seus modelos flexíveis é utilizar um único nome de parâmetro para controlar várias camadas. Essa estratégia é útil para o parâmetro de visibilidade (ocultar ou mostrar camadas), para atualizar o design ou os gráficos de um único modelo.
+
+Siga estas etapas para atribuir o mesmo nome aos parâmetros de ocultação (![](/help/assets/assets/dm-templates/Visibility-icon.svg)) de várias camadas, permitindo ocultá-los ou mostrá-los simultaneamente.
+
+1. Navegue até o [painel Parâmetros](#1) de uma camada.
+1. Alternar o parâmetro **Hide** se não for parametrizado anteriormente.
+1. **Opcional:** Renomeie o Parâmetro Hide.
+1. Copie o nome do parâmetro Ocultar.
+1. Vá para o painel Parâmetro de outras camadas selecionando-as na tela e alterne seu Parâmetro **Hide** se não for parametrizado.
+1. Substitua o nome **Ocultar Parâmetro** pelo nome copiado.
+1. Clique em **Salvar** para agrupar as camadas.
+1. Execute a etapa 3 e depois a etapa 4 na seção [Preview e Publish](#2) para ver suas alterações.
+
+## Pré-visualizar e publicar o modelo para copiar o URL de entrega{#preview-and-publish-template-and-copy-template-deliver-url}
+
+Execute estas etapas para visualizar e publicar o modelo e copiar o URL do delivery:
+
+1. Na página da tela, clique em **Visualizar**. Você também pode navegar até **Assets View > Dynamic Media Assets >** localizar e selecionar seu modelo **>** clicar em **Editar Modelo >** clicar em **Visualizar**. A página de visualização exibe o modelo, seus parâmetros (camadas e propriedades com parâmetros), status de publicação e a opção **Publish**. <a id="3"></a>
+1. Selecione parâmetros do painel **Parâmetros do modelo** para editar seus valores e atualizar instantaneamente o conteúdo, o tamanho, a posição ou a formatação de texto da camada de modelo correspondente na visualização. Por exemplo:
+   1. Selecione uma camada de texto e edite seu texto ou
+   1. Selecione uma camada de imagem, clique em ![](/help/assets/assets/dm-templates/add-image.svg), selecione uma imagem no seletor de ativos e clique em **Atualizar**.
+
+   O modelo é atualizado imediatamente, exibindo o texto editado e substituindo a imagem anterior pela nova. Além disso, o valor do parâmetro de imagem reflete o novo caminho de imagem. Da mesma forma, é possível redimensionar uma camada ajustando seus valores, e as alterações são aplicadas ao modelo em tempo real. <a id="2"></a>
+1. Selecione o parâmetro hide para [camadas agrupadas](#group-layers) da lista para exibi-las ou ocultá-las no modelo.
+1. **Opcional:** Altere o valor **Ocultar Parâmetro** entre 0 e 1 e clique em **Atualizar** para ver as alterações. Camadas com o mesmo parâmetro de ocultação oculta ou é exibida junto. Da mesma forma, é possível controlar a visibilidade das camadas a partir do URL.
+
+   ![](/help/assets/assets/dm-templates-publish-status.png)
+Você também pode alternar **Incluir todos os parâmetros** para editar todos os valores de parâmetros exibidos e ver as atualizações na visualização do modelo.
+   <br>
+1. Para publicar o modelo na página de visualização, clique em **Publish** e confirme para publicar. A mensagem Publish concluído é exibida e o status de publicação é atualizado para Publicado.
+
+>[!NOTE]
+>
+>Para publicar o modelo, é necessário que as imagens do modelo sejam publicadas primeiro.
+
+### Copiar o URL de entrega
+
+Os parâmetros selecionados na página **Visualização** tornam-se os parâmetros de URL na URL de modelo.
+
+Para copiar o URL do modelo publicado exibido na pré-visualização:
+
+1. Clique em **Copiar URL**. A caixa de diálogo **Copiar URL** é exibida. Selecione e copie o URL exibido. Observe que o primeiro parâmetro na URL começa após um ponto de interrogação **(?)** e um par de valor-chave começam com **$** e terminam com **&amp;**. A chave e o valor são separados por um sinal de igual **(=)**, com a chave à esquerda e o valor à direita.
+1. Cole esse URL na guia do navegador e veja seu modelo em tempo real. Personalize o modelo em tempo real atualizando o valor do parâmetro necessário (valor da chave) diretamente na URL, conforme demonstrado na [etapa 2](#3) da seção **Visualizar e Publish**.
+1. Use este URL para um merchandising rápido de seus produtos ou serviços. Você pode compartilhar esse URL com seus clientes ou integrá-lo ao seu site ou a qualquer aplicativo downstream de terceiros para exibir o banner e fazer atualizações em tempo real nele para refletir as ofertas em andamento.
+
+Saiba como criar um modelo do Dynamic Media passo a passo neste vídeo.
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
+
+## Faça atualizações em tempo real no modelo a partir do URL{#update-the-template-from-the-url}
+
+Editar parâmetros diretamente no URL pode ser entediante. Para simplificar:
+
+1. Copie o URL e cole-o em um bloco de notas.
+1. Use Cmd+F (Mac) ou Ctrl+F (Windows) para localizar e editar os valores de parâmetro. Tais como:
+   * Substituir caminhos de imagem para camadas de imagem.
+   * Ajustar dimensões e posições da camada (se [parametrizada](#parameterise-a-layer)).
+   * Editar texto, fonte, cor, tamanho ou alinhamento para camadas de texto.
+   * Altere os valores de visibilidade entre 0 e 1.
+
+Cole esse URL atualizado no navegador para visualizar as alterações.
+
+## Editar o modelo{#edit-the-template}
+
+Edite o template seguindo estas etapas:
+
+1. Na exibição do Assets, clique em **Dynamic Media Assets**.
+2. Navegue até o local do modelo.
+3. Selecione o template.
+4. Clique em **Editar Modelo**. A tela de modelo exibe o modelo e a lista de todas as suas camadas no painel Camadas. Comece a editar o modelo de acordo com os requisitos.
+
+## Pontos importantes a observar {#important-points-to-note}
+
+* Depois de criar um modelo com camadas de imagem com parâmetros para atualizações dinâmicas, verifique se as imagens destinadas a atualizações futuras compartilham as mesmas dimensões que as imagens com parâmetros. Isso garante que as imagens se encaixem perfeitamente dentro das camadas sem transbordar ou deixar espaços vazios. Atualmente, o modelo não oferece suporte a ajustes de dimensão automáticos para ajustar imagens às camadas.
+* Não há suporte para substring em uma camada de texto. O usuário não pode aplicar propriedades de fonte diferentes em uma substring de uma camada de texto.
+* No momento, o suporte a várias empresas do Dynamic Media não está disponível com os Modelos do Dynamic Media.
+* No caso de copiar ou mover, o Seletor de destino mostra todas as pastas (incluindo pastas sincronizadas que não sejam da Dynamic Media). Além disso, no momento, não exibe os ativos do modelo do Dynamic Media (ambos são limitações do seletor de destino).
+* Qualquer operação de atualização em uma pasta (por exemplo, Publish ou Delete) da seção Assets afeta os Modelos do Dynamic Media disponíveis nessa pasta.
+* A lixeira não funciona para Modelos do Dynamic Media. Se um ativo for movido para a lixeira e depois restaurado, ele será restaurado no AEM, mas não no Dynamic Media. O mesmo é válido para Modelos do Dynamic Media.
+
+## Consulte também:
+
+1. Explorar o [Dynamic Media e seus recursos](/help/assets/dynamic-media/dynamic-media.md)
+1. Explorar o [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md)
