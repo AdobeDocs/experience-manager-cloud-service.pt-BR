@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7098f8aacf42e84f40b266ecae2c6fe28c84b0d3
+source-git-commit: d5461217cfec894a922b2f476aabfc04df45d9d0
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1488'
 ht-degree: 30%
 
 ---
@@ -92,7 +92,7 @@ Recomendamos a seguinte estratégia de implantação:
 
 ##### Sobre alguns recursos de tradução {#translation-features}
 
-Os seguintes recursos podem não funcionar corretamente ao compilar com o Java 21 ou Java 17, e o Adobe espera resolvê-los no início de 2025:
+Os seguintes recursos podem não funcionar corretamente quando implantados no tempo de execução do Java 21 e o Adobe espera resolvê-los no início de 2025:
 
 * `XLIFF` (Formato de Arquivo de Intercâmbio de Localização XML) falha ao usar a Tradução Humana.
 * `I18n` (Internacionalização) não lida corretamente com idiomas locais em hebraico (`he`), indonésio (`in`) e iídiche (`yi`) devido a alterações no construtor de Localidade em versões Java mais recentes.
