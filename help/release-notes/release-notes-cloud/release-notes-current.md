@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 3b7a77fd77226f79510b61f9bb20ad9477b6654e
+source-git-commit: 52c3c780802025e0895bacc675ba60e97fdce4c5
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 10%
+source-wordcount: '1750'
+ht-degree: 11%
 
 ---
 
@@ -150,12 +150,6 @@ O Adaptive Forms permite usar modelos de email de HTML. Os templates de email de
 #### Suporte ao armazenamento na nuvem aprimorado: upload direto de PDF para o armazenamento Azure Blob
 
 As APIs de geração de documento do AEM Forms agora oferecem suporte ao upload direto de documentos de PDF gerados para o Armazenamento de blobs do Azure. Esse aprimoramento simplifica o armazenamento e a recuperação, melhorando a eficiência e a integração com fluxos de trabalho em nuvem.
-
-* Suporte a Cadeia de Caracteres Codificada em **[Base64 para Anexo de Arquivo](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment#basic-tab)**: o componente Anexo de Arquivo no Forms Adaptável baseado em Componentes Principais agora inclui uma opção para enviar arquivos anexados como cadeias de caracteres codificadas em Base64.
-
->[!IMPORTANT]
->
-> Interessado em participar do Programa de acesso antecipado para qualquer inovação da Forms? Envie um email de seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) com a lista de recursos nos quais você está interessado.## Complemento CIF {#cloud-services-cif}
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
