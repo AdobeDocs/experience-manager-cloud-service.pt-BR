@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 4ae213f212864d83bf6f999de616c6e3376c3f63
 workflow-type: tm+mt
-source-wordcount: '6020'
+source-wordcount: '6026'
 ht-degree: 70%
 
 ---
@@ -854,6 +854,8 @@ ht-degree: 70%
          + [Criar e gerenciar revisões para um Formulário adaptável](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Palavras-chave de formulários adaptáveis](/help/forms/adaptive-forms-keywords.md)
       + [Pré-visualização de um formulário](/help/forms/previewing-forms.md)
+   + Comunicação interativa {#interactive-communocation}
++[Introdução à comunicação interativa](/help/forms/introduction-to-interactive-communication.md)
    + Fluxos de trabalho centrados no Forms {#create-form-centric-workflows}
       + [Introdução ao fluxo de trabalho centrado no Forms](/help/forms/aem-forms-workflow.md)
       + [Usar etapas centradas no Forms em um fluxo de trabalho + referência de etapa](/help/forms/aem-forms-workflow-step-reference.md)
