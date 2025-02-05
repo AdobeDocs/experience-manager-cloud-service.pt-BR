@@ -5,13 +5,13 @@ feature: Release Information
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 4ae213f212864d83bf6f999de616c6e3376c3f63
+exl-id: 7656d6fb-8727-491d-8216-7770b78ff854
+source-git-commit: 32558fc6cd0e325132230b09f7f00a0dfaf7af0d
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 2%
+source-wordcount: '366'
+ht-degree: 3%
 
 ---
-
 
 # Comunicações interativas
 
@@ -45,11 +45,22 @@ Os principais recursos do editor de Comunicações interativas são:
 | **Integração com a nuvem** | Editar documentos diretamente no AEM Forms as a Cloud Service |
 
 
-## Introdução
+## Integração
 
 1. **Solicitar Acesso**: Email [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) de seu endereço oficial
 2. **Instalação do Administrador**: o Adobe habilitará o acesso e fornecerá privilégios de administrador
 3. **Começar a criar**: comece com sua primeira correspondência usando nosso [editor intuitivo](https://video.tv.adobe.com/v/3444094/).
+
+## Perguntas frequentes
+
+**P: Posso importar um XDP existente para o editor de Comunicações Interativas?**
+Sim, você pode importar um XDP existente e usá-lo como ponto de partida. Todos os recursos não suportados são realçados durante o processo de importação.
+
+**P: O Editor de comunicações interativas está disponível para implantações locais?**
+Não, o editor só está disponível para implantações as a Cloud Service do Forms.
+
+
+
 
 
 
@@ -128,4 +139,3 @@ With Interactive Communication, you can integrate PDF documents into existing wo
 * Apresentação do editor de comunicações interativas
 * Criar um fragmento
 * Visualizar e testar uma correspondência
-
