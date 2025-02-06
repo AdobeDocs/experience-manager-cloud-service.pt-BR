@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 3bd7b574b34d09b3a205cf72b307d459efc00eab
+source-git-commit: ae64d8acac3dee938db8ecbc1c8f5c9149b70365
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '2056'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,19 @@ Pronto para começar? Os artigos a seguir fornecem instruções detalhadas sobre
 
 ### Modelos de e-mail de HTML no Adaptive Forms
 
-O Adaptive Forms permite usar modelos de email de HTML. Os templates de email de HTML permitem enviar emails avançados, personalizados e visualmente atraentes quando um formulário é enviado. Esses emails podem ser personalizados com dados de formulário e aprimorados usando várias tags de email, como imagens e links. Com o Adaptive Forms, você pode carregar um arquivo contendo um modelo de HTML ou usar um editor de texto simples para criar esses modelos.
+
+O Adaptive Forms permite usar [modelos de email de HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Os templates de email de HTML permitem enviar emails avançados, personalizados e visualmente atraentes quando um formulário é enviado. Esses emails podem ser personalizados com dados de formulário e aprimorados usando várias tags de email, como imagens e links. Com o Adaptive Forms, você pode carregar um arquivo contendo um modelo de HTML ou usar um editor de texto simples para criar esses modelos.
+
+![modelos de email de HTML](/help/forms/assets/html-email.png)
+
+### Ação de envio dos serviços Web RESTful
+
+O Forms adaptável agora pode enviar dados capturados sem problemas para endpoints REST externos autenticados com a nova Ação de envio dos Serviços Web RESTful:
+
+* Padrões compatíveis: Swagger 2.0 e 3.0 para fácil integração com a API
+* Autenticação segura: OAuth 2.0, Autenticação básica, Chave de API e Autenticação personalizada
+* Formatos de dados flexíveis: dados de formulário de várias partes, JSON e codificado por URL (pares de valores chave)
+
 
 
 ### Suporte a idiomas da direita para a esquerda (RTL)
