@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
+source-git-commit: 636183e0597bed24b3e437ed53a35c9e64ac0504
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 12%
+source-wordcount: '950'
+ht-degree: 11%
 
 ---
 
@@ -56,6 +56,11 @@ A ativação de recursos do 2025.2.0 fornecerá o conjunto completo de recursos 
 
 ### Problemas corrigidos {#fixed-issues-19352}
 
+* CQ-4356756: não traduzir o suporte para ativos relacionados.
+* CQ-4358206: o Agendador de tradução repetida não está funcionando para projetos de tradução.
+* CQ-4358126: não é possível selecionar a subpasta de configuração no serviço de nuvem de tradução.
+* FORMS-18098, FORMS-17954: falha ao carregar o Adaptive Forms no modo Internet Explorer do navegador Microsoft Edge.
+* FORMS-17162: a publicação de um ativo resulta na execução de consultas OOTB que prejudicam o desempenho da publicação.
 * SITES-28415: Edge Delivery com Universal Editor: Corrigir propriedades abertas botão para planilhas.
 * SITES-26669: Edge Delivery com Universal Editor: corrija problemas ao carregar arquivos CSV codificados em UTF-8 com uma BOM como planilha.
 * SITES-26543: Edge Delivery com Universal Editor: corrija blocos vazios sem um modelo que renderize a marcação incorreta.
@@ -85,8 +90,6 @@ A ativação de recursos do 2025.2.0 fornecerá o conjunto completo de recursos 
 * SITES-26660: a comparação de versão do fragmento de conteúdo pode ser interrompida quando @ContentType é do tipo &quot;string&quot;.
 * SITES-26626: customErrorMessage ausente em campos numéricos e booleanos.
 * SITES-26268: Código de status incorreto retornado se uma referência for inválida ao criar um fragmento.
-* FORMS-18098, FORMS-17954: falha ao carregar o Adaptive Forms no modo Internet Explorer do navegador Microsoft Edge.
-* FORMS-17162: a publicação de um ativo resulta na execução de consultas OOTB que prejudicam o desempenho da publicação.
 
 ### Problemas conhecidos {#known-issues-19352}
 
