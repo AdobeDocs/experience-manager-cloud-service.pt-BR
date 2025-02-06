@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
 workflow-type: tm+mt
-source-wordcount: '4011'
-ht-degree: 82%
+source-wordcount: '4129'
+ht-degree: 79%
 
 ---
 
@@ -275,6 +275,28 @@ Ao criar manualmente um projeto de tradução, você deve fornecer valores para 
 >[!TIP]
 >
 >Esse método adiciona páginas/ativos e seus secundários ao projeto. Selecione **Ativo/página (sem secundários)** se quiser apenas adicionar os principais.
+
+### Adicionar dicionários i18n a um trabalho de tradução {#adding-i-n-dictionaries-to-a-translation-job}
+
+Você pode adicionar páginas, ativos, tags ou dicionários i18n à Tarefa de tradução do seu projeto de tradução. Para adicionar um dicionário i18n:
+
+1. Na parte inferior do bloco Tarefa de tradução do seu projeto, clique nas reticências.
+
+   ![Bloco de trabalho de tradução](../assets/translation-job.png)
+
+1. Clique em Adicionar e dicionário-I18N.
+
+   ![Adicionar dicionário i18n](../assets/add-i18n.png)
+
+1. Selecione o **Diretório Raiz** e o dicionário (se necessário) que você deseja adicionar e selecione **Adicionar**.
+
+   ![Selecionar dicionário i18N](../assets/select-i18n.png)
+
+Seu dicionário agora está em seu trabalho de tradução e o processo de tradução pode ser iniciado para criar as cópias de idioma do dicionário em `/content/cq:i18n` e enviar essas cópias de idioma do dicionário para tradução.
+
+>[!NOTE]
+>
+>Para obter mais informações sobre dicionários i18n, leia [Usando o Translator para gerenciar dicionários](/help/implementing/developing/extending/i18n/translator.md).
 
 ### Adicionar tags a um trabalho de tradução {#adding-tags-to-a-translation-job}
 
