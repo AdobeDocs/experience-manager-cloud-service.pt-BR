@@ -4,10 +4,10 @@ description: Saiba como pesquisar e descobrir ativos na visualização do AEM As
 role: User
 exl-id: abfe6a91-1699-436f-8bf4-0d0bf2369f46
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2020'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -142,7 +142,7 @@ Para gerar novos ativos usando o [!DNL Adobe Firefly]:
 
    ![Integração do Firefly](assets/firefly-integration.png)
 
-   Os novos ativos foram gerados com sucesso. Além disso, você pode alterar a descrição da imagem digitando o novo prompt de texto na caixa de descrição. [Saiba como escrever um prompt de IA satisfatório para gerar conteúdo extraordinário e relevante.](https://helpx.adobe.com/br/firefly/using/tips-and-tricks.html) Como alternativa, você pode [editar a imagem com vários outros recursos, como alterar o estilo, dimensões da imagem entre outros.](https://helpx.adobe.com/br/firefly/using/text-to-image.html)
+   Os novos ativos foram gerados com sucesso. Além disso, você pode alterar a descrição da imagem digitando o novo prompt de texto na caixa de descrição. [Saiba como escrever um bom prompt de IA para gerar conteúdo extraordinário e relevante](https://helpx.adobe.com/br/firefly/using/tips-and-tricks.html). Como alternativa, você pode [editar a imagem com vários outros recursos, como alterar o estilo, as dimensões da imagem e muito mais](https://helpx.adobe.com/br/firefly/using/text-to-image.html).
 
    ![Integração do Firefly](assets/bugatti-type-57.png)
 
@@ -219,7 +219,7 @@ Você pode selecionar os ativos exibidos nos resultados da pesquisa e realizar a
 
 * **Atribuir tarefas**: atribuir tarefas de um ativo a usuários.
 
-* **Observar**: [monitorar as operações](https://experienceleague.adobe.com/br/docs/experience-manager-cloud-service/content/assets/manage/search-assets) executadas em um ativo.
+* **Observar**: [monitorar as operações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/search-assets) executadas em um ativo.
 
 ## Configurar a página inicial da pesquisa {#configuring-search-first-homepage}
 

@@ -5,10 +5,10 @@ exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1485'
-ht-degree: 77%
+ht-degree: 67%
 
 ---
 
@@ -18,7 +18,7 @@ Saiba como criar rapidamente um site de AEM usando um modelo de site.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de criação rápida de site do AEM, [Entender o Cloud Manager e o fluxo de trabalho de criação rápida de site,](cloud-manager.md) você aprendeu sobre o Cloud Manager e como ele se vincula ao novo processo de criação rápida de site e agora deve:
+No documento anterior da jornada de Criação rápida de sites do AEM, [Entenda o Cloud Manager e o fluxo de trabalho de Criação rápida de sites](cloud-manager.md), você aprendeu sobre o Cloud Manager e como ele se vincula ao novo processo de Criação rápida de sites e agora deve:
 
 * Entenda como o AEM Sites e o Cloud Manager trabalham juntos para facilitar o desenvolvimento de front-end
 * Veja como a etapa de personalização de front-end é totalmente dissociada do AEM e não requer conhecimento sobre ele.
@@ -54,7 +54,7 @@ Os modelos são eficientes porque são reutilizáveis para que os autores de con
 
 ## Obter um modelo de site {#obtaining-template}
 
-A maneira mais simples de começar é [baixar a versão mais recente do modelo de site padrão do AEM no repositório do GitHub.](https://github.com/adobe/aem-site-template-standard/releases)
+A maneira mais simples de começar é [baixar a versão mais recente do Modelo de Site Padrão de AEM do repositório do GitHub](https://github.com/adobe/aem-site-template-standard/releases).
 
 Após o download, você pode carregá-lo no ambiente do AEM como faria com qualquer outro pacote. Consulte a [seção Recursos adicionais](#additional-resources) para obter detalhes sobre como trabalhar com pacotes se precisar de mais informações sobre este tópico.
 
@@ -177,11 +177,11 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Saiba como criar um site usando um modelo.
 * Veja como baixar o modelo do seu novo site para fornecer ao desenvolvedor de front-end.
 
-Aplique esse conhecimento e prossiga com sua jornada de criação rápida de sites do AEM, revisando a seguir o documento [Configurar o pipeline,](pipeline-setup.md) onde você criará um pipeline de front-end para gerenciar a personalização do tema do site.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação Rápida de Sites de AEM revisando a seguir o documento [Configurar o Pipeline](pipeline-setup.md), onde você criará um pipeline de front-end para gerenciar a personalização do tema do site.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de Criação rápida de sites revisando o documento [Configurar o pipeline,](pipeline-setup.md) os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
+Embora seja recomendável seguir para a próxima parte da jornada de Criação rápida de sites revisando o documento [Configurar o pipeline](pipeline-setup.md), os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
 
 * [Modelo de site padrão do AEM](https://github.com/adobe/aem-site-template-standard) - Este é o repositório GitHub do modelo de site padrão do AEM.
 * [Organizando Páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Este guia detalha como organizar as páginas do seu Site AEM.

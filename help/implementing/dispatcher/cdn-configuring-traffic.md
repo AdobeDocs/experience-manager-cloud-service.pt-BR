@@ -4,7 +4,7 @@ description: Saiba como configurar o tráfego CDN declarando regras e filtros em
 feature: Dispatcher
 exl-id: e0b3dc34-170a-47ec-8607-d3b351a8658e
 role: Admin
-source-git-commit: c57fba06f23fa57fbf26796e747bb76f6a7a4203
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Também podem ser configuradas na CDN as Regras de filtro de tráfego (incluindo
 
 Além disso, se a CDN não puder entrar em contato com sua origem, você poderá escrever uma regra que faça referência a uma página de erro personalizada auto-hospedada (que é renderizada). Saiba mais sobre isso lendo o artigo [Configurando páginas de erro de CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
-Todas essas regras, declaradas em um arquivo de configuração no controle do código-fonte, são implantadas usando o pipeline de configuração [ do Cloud Manager.](/help/operations/config-pipeline.md) Esteja ciente de que o tamanho cumulativo do arquivo de configuração, incluindo regras de filtro de tráfego, não pode exceder 100KB.
+Todas essas regras, declaradas em um arquivo de configuração no controle do código-fonte, são implantadas usando o [pipeline de configuração](/help/operations/config-pipeline.md) do Cloud Manager. Observe que o tamanho cumulativo do arquivo de configuração, incluindo as regras de filtro de tráfego, não pode exceder 100 KB.
 
 ## Ordem de avaliação {#order-of-evaluation}
 

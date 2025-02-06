@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1413'
-ht-degree: 92%
+source-wordcount: '1414'
+ht-degree: 91%
 
 ---
 
@@ -99,7 +99,7 @@ As modificações na estrutura de conteúdo em um blueprint/árvore de origem s�
 * **Movimentar** as páginas em um blueprint **não** resultará em páginas correspondentes sendo movidas em Live Copies após a implantação com a configuração padrão de implantação:
    * O motivo para esse comportamento é que uma movimentação de página inclui implicitamente uma exclusão de página. Isso pode levar a um comportamento inesperado na publicação, já que a exclusão de páginas na criação desativa automaticamente o conteúdo correspondente na publicação. Isso também pode ter um efeito adicional em itens relacionados, como links, marcadores e outros.
       * A herança de conteúdo nas respectivas páginas de Live Copy é atualizada para refletir o novo local de suas origens no blueprint.
-      * Para concluir uma movimentação de página de um blueprint para Live Copies, considere ver as [práticas recomendadas de movimentação de página.](#page-move)
+      * Para concluir uma movimentação de página de um blueprint para Live Copies, considere as [práticas recomendadas de movimentação de página].(#page-move)
 
 ### Práticas recomendadas de movimentação de página {#page-move}
 

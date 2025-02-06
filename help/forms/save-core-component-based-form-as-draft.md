@@ -4,7 +4,7 @@ description: Saiba como salvar os Componentes principais com base no Formulário
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 2e4c9a7d30b954045082baf242737ac2f7426c70
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 # Salvar formulários como rascunhos e listá-los na página Sites
 
-<span class="preview"> Este artigo contém conteúdo sobre o recurso **Rascunhos**, um recurso de pré-lançamento. O recurso de pré-lançamento pode ser acessado somente por meio do [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features).</span>
+<span class="preview"> Este artigo contém conteúdo sobre o recurso **Rascunhos**, um recurso de pré-lançamento. O recurso de pré-lançamento pode ser acessado somente por meio do [canal de pré-lançamento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).</span>
 
 Considere um usuário que começa a preencher um formulário, mas precisa pausar e retornar posteriormente. O AEM oferece uma opção `save-as-draft`, permitindo que o usuário salve o formulário como rascunho para conclusão futura. Para facilitar isso, o AEM fornece o componente de Portal de formulários **Rascunhos e Envios** pronto para uso, que exibe rascunhos e envios em páginas do AEM Sites. O componente lista formulários que foram salvos como rascunhos para conclusão posterior, bem como aqueles que foram enviados. Somente os usuários conectados podem editar os rascunhos ou exibir os formulários enviados. No entanto, se um usuário anônimo navegar pela lista de formulários usando o componente **Pesquisa e Listagem** e salvar um formulário como rascunho, ele não será listado pelo componente **Rascunhos e Envios**. Para visualizar rascunhos e envios, os usuários devem estar conectados no momento do envio do formulário.
 
@@ -22,7 +22,7 @@ Considere um usuário que começa a preencher um formulário, mas precisa pausar
 
 ## Pré-requisitos
 
-* [Ative os Componentes principais adaptáveis do Forms para seu ambiente.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Habilitar os Componentes principais adaptáveis do Forms para o seu ambiente](/help/forms/enable-adaptive-forms-core-components.md).
 
   Depois de implantar os Componentes principais mais recentes em seu ambiente, os componentes do Forms Portal ficam acessíveis em seu ambiente de criação.
 

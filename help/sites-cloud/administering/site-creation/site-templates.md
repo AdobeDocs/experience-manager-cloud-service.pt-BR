@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
 solution: Experience Manager Sites
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '556'
-ht-degree: 84%
+ht-degree: 75%
 
 ---
 
@@ -20,7 +20,7 @@ Saiba como os modelos de site do AEM podem ser usados para predefinir a estrutur
 
 É conveniente ter estruturas predefinidas disponíveis para implantar rapidamente um novo site com base em um conjunto de padrões existentes. Os modelos de site são uma maneira de combinar conteúdos básicos de sites em um pacote conveniente e reutilizável.
 
-Os modelos de site geralmente contêm o conteúdo base do site, a estrutura e as informações de estilo do site, conhecidas como [tema do site](site-themes.md), para iniciar um novo site rapidamente. Admins selecionam um modelo no qual basearão o site [durante o processo de criação.](create-site.md)
+Os modelos de site geralmente contêm o conteúdo básico do site e informações sobre a estrutura e o estilo do site, conhecidas como [tema do site](site-themes.md), para iniciar um novo site rapidamente. Os administradores selecionam um modelo de site no qual basearão o site [durante o processo de criação do site](create-site.md).
 
 Esses modelos são bastante eficientes pois podem ser reutilizados e personalizados. E como é possível ter vários modelos disponíveis na sua instância do AEM, você tem a flexibilidade de criar sites diferentes para atender a várias necessidades comerciais.
 
@@ -67,7 +67,7 @@ Os modelos de site são pacotes com uma estrutura lógica que reflete claramente
 
 ## Modelo de site padrão {#standard-site-template}
 
-A Adobe fornece um modelo de referência de práticas recomendadas que pode ser usado como base para criar seus próprios modelos. [O modelo de site padrão está disponível no GitHub.](https://github.com/adobe/aem-site-template-standard)
+A Adobe fornece um modelo de referência de práticas recomendadas que pode ser usado como base para criar seus próprios modelos. [O Modelo de Site Padrão está disponível no GitHub](https://github.com/adobe/aem-site-template-standard).
 
 [A versão mais recente do modelo de site padrão](https://github.com/adobe/aem-site-template-standard/releases) pode ser baixada e usada para [criar novos sites](create-site.md) diretamente.
 

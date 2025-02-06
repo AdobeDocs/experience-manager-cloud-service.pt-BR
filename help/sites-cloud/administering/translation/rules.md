@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1288'
-ht-degree: 93%
+ht-degree: 88%
 
 ---
 
@@ -18,11 +18,11 @@ As regras de tradução identificam o conteúdo a ser traduzido para páginas, c
 
 >[!TIP]
 >
->Caso seja novo na tradução de conteúdo, consulte a [Jornada de tradução do Sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução do seu conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para aqueles sem experiência com o AEM ou tradução.
+>Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM AEM, ideais para aqueles sem experiência com o ou com a tradução.
 
 ## Fragmentos de conteúdo e regras de tradução {#content-fragments}
 
-As regras de tradução descritas neste documento se aplicam aos fragmentos de conteúdo somente se a opção **Habilitar campos do modelo de conteúdo para tradução** não foi ativada no [nível de configuração da estrutura de integração de tradução.](integration-framework.md#assets-configuration-properties)
+As regras de tradução descritas neste documento se aplicam aos fragmentos de conteúdo somente se a opção **Habilitar campos do modelo de conteúdo para tradução** não foi ativada no [nível de configuração da estrutura de integração de tradução](integration-framework.md#assets-configuration-properties).
 
 Se a opção **Habilitar campos do modelo de conteúdo para tradução** estiver ativa, o AEM usará o campo **Traduzível** nos [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties) para determinar se o campo deve ser traduzido e criará as devidas regras de tradução automaticamente. Essa opção substitui qualquer regra de tradução criada e não requer nenhuma intervenção ou etapas adicionais.
 

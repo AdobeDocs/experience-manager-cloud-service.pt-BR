@@ -3,13 +3,13 @@ title: Escolhendo um Método de Criação
 description: Saiba mais sobre considerações importantes ao decidir como você cria seu conteúdo no AEM para ajudá-lo a tomar a melhor decisão para os autores de conteúdo.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 15eef2d3790d1c0cf5414ca55b191de5b644fed0
+exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
 
 ---
-
 
 # Escolhendo um Método de Criação {#authoring-methods}
 
@@ -17,7 +17,7 @@ Saiba mais sobre considerações importantes ao decidir como você cria seu cont
 
 ## Visão geral das considerações {#overview}
 
-A flexibilidade do AEM garante que suas necessidades de criação sejam cobertas, independentemente da escolha de criação baseada em documento ou WYSIWYG. Lembre-se dos fatos a seguir ao iniciar suas considerações.
+A flexibilidade do AEM garante que suas necessidades de criação sejam atendidas, independentemente da escolha de criação baseada em documento ou criação no WYSIWYG. Lembre-se dos fatos a seguir ao iniciar suas considerações.
 
 * **Sempre envolva seus autores de conteúdo na decisão.** - Seus autores de conteúdo são seus especialistas e seu insight é vital.
 * **Vários métodos de criação podem ser implementados.** - Embora a Adobe recomende começar de forma simples e escalonar a complexidade conforme a necessidade surgir, vários métodos de criação podem trabalhar juntos em um único projeto.
@@ -54,7 +54,7 @@ Sua primeira consideração deve ser como você deseja fornecer seu conteúdo. O
 Isso pode ajudá-lo a decidir se precisa de:
 
 * [AEM como um CMS headless](/help/headless/introduction.md) usando o Editor de fragmento de conteúdo e/ou o Editor universal.
-* AEM Edge Delivery Services usando a [edição baseada em documento](/help/edge/docs/authoring.md) ou a [criação WYSIWYG com o Editor Universal.](/help/edge/wysiwyg-authoring/authoring.md)
+* AEM Edge Delivery Services usando a [edição baseada em documento](/help/edge/docs/authoring.md) ou a [criação do WYSIWYG com o Editor Universal](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Preferências de criação de conteúdo {#content-authoring}
 
@@ -64,8 +64,8 @@ Sua próxima consideração deve ser como você deseja criar seu conteúdo. A á
 
 Isso pode ajudá-lo a decidir se precisa de:
 
-* AEM Edge Delivery Services usando a [edição baseada em documento.](/help/edge/docs/authoring.md)
-* [Criação WYSIWYG com o Editor universal.](/help/edge/wysiwyg-authoring/authoring.md)
+* AEM Edge Delivery Services usando a [edição baseada em documento](/help/edge/docs/authoring.md).
+* [Criação do WYSIWYG com o Editor Universal](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Objetivos do Projeto {#project-goals}
 
@@ -73,7 +73,7 @@ Como você se parece com o sucesso da criação? Como você define o sucesso do 
 
 * Talvez você precise permitir que mais pessoas criem conteúdo, mas queira evitar o treinamento em um novo conjunto de ferramentas. (Pense em criação baseada em documento.)
 * Talvez seja necessário aumentar a quantidade de conteúdo gerado. (Pense em criação baseada em documento.)
-* Talvez você precise se concentrar no layout de conteúdo visual, mas minimizar a necessidade de codificar o conhecimento. (Considere a criação WYSIWYG.)
+* Talvez você precise se concentrar no layout de conteúdo visual, mas minimizar a necessidade de codificar o conhecimento. (Pense em criação no WYSIWYG.)
 
 Metas de projeto claramente definidas no início da implementação ajudarão você a tomar uma decisão bem informada sobre o método de criação.
 
@@ -81,6 +81,6 @@ Metas de projeto claramente definidas no início da implementação ajudarão vo
 
 Por fim, considere os desafios específicos que você enfrenta hoje em relação à criação de conteúdo.
 
-* Talvez você enfrente a duplicação de trabalho com conteúdo criado fora do seu CMS, que precisa ser importado ou copiado e colado. (Pense em criação baseada em documento.)
-* Talvez seja necessário reduzir o tempo necessário para treinar os autores sobre como usar um CMS. (Pense em criação baseada em documento.)
-* Talvez seus autores precisem editar o layout visual do seu conteúdo com frequência, o que requer suporte constante do desenvolvedor. (Considere a criação WYSIWYG.)
+* Talvez você enfrente a duplicação do trabalho com conteúdo criado fora do seu CMS, que precisa ser importado ou copiado e colado. (Pense em criação baseada em documento.)
+* Talvez seja necessário reduzir o tempo necessário para treinar autores sobre como usar um CMS. (Pense em criação baseada em documento.)
+* Talvez seus autores precisem editar o layout visual do seu conteúdo com frequência, o que requer suporte constante do desenvolvedor. (Pense em criação no WYSIWYG.)

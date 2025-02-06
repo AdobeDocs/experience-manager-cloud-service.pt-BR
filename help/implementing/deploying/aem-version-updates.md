@@ -4,7 +4,7 @@ description: Saiba como o Adobe Experience Manager (AEM) as a Cloud Service inte
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 role: Admin
-source-git-commit: 73fac04561f43a4053e1694da9e096a2ecbc1484
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '997'
 ht-degree: 2%
@@ -97,7 +97,7 @@ Se você encontrar um problema relacionado à regressão, envie um caso de supor
 
 ## Armazenamento de nó composto {#composite-node-store}
 
-Geralmente, as atualizações incorrem em tempo de inatividade zero, inclusive para a instância de criação, que é um cluster de nós. As atualizações contínuas são possíveis devido ao [recurso de repositório de nós compostos no Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
+Geralmente, as atualizações incorrem em tempo de inatividade zero, inclusive para a instância de criação, que é um cluster de nós. As atualizações contínuas são possíveis devido ao [recurso de armazenamento de nó composto no Oak](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html).
 
 Esse recurso permite que o AEM faça referência a vários repositórios simultaneamente. Em uma [implantação em andamento](/help/implementing/deploying/overview.md#how-rolling-deployments-work), a nova versão do AEM contém seu próprio `/libs` (o repositório imutável baseado em TarMK). É diferente da versão mais antiga do AEM, embora ambos façam referência a um repositório mutável compartilhado baseado em DocumentMK que contém áreas como `/content` , `/conf` , `/etc` e outras.
 

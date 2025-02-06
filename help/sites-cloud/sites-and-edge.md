@@ -4,13 +4,13 @@ description: Entenda como o Edge Delivery Services expande as possibilidades de 
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b3497f87446ca4c1c71d48f29aebcaa882feb898
+exl-id: 7747d6f7-18e4-4713-baea-bcfa94f54934
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
 
 ---
-
 
 # AEM SITES e EDGE DELIVERY SERVICES {#sites-and-edge}
 
@@ -22,7 +22,7 @@ Além de todos os [recursos e funcionalidades que o AEM Sites as a Cloud Service
 
 ## O que são Edge Delivery Services? {#what-is-edge}
 
-Os Edge Delivery Services oferecem experiências excepcionais que impulsionam o engajamento e as conversões, fornecendo experiências de alto impacto que são rápidas de serem criadas e desenvolvidas. É um conjunto combinável de serviços que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar e publicar rapidamente e novos sites são lançados rapidamente. Saiba mais sobre Edge Delivery Services no documento [Visão geral de Edge Delivery Services.](/help/edge/overview.md)
+Os Edge Delivery Services oferecem experiências excepcionais que impulsionam o engajamento e as conversões, fornecendo experiências de alto impacto que são rápidas de serem criadas e desenvolvidas. É um conjunto combinável de serviços que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar e publicar rapidamente e novos sites são lançados rapidamente. Saiba mais sobre Edge Delivery Services no documento [Visão geral sobre Edge Delivery Services](/help/edge/overview.md).
 
 Usando o Edge Delivery Services juntamente com o AEM Sites as a Cloud Service, seus projetos podem se beneficiar do:
 
@@ -51,13 +51,13 @@ O Edge Delivery Services também aumenta a velocidade de criação de conteúdo,
 
 ### O Editor universal {#universal-editor}
 
-O Editor universal oferece uma experiência de criação contínua &quot;o que você vê é o que você obtém&quot; (WYSIWYG) que pode ser usada para criar qualquer conteúdo.
+O Editor universal oferece uma experiência de criação contínua, &quot;o que você vê é o que você obtém&quot; (WYSIWYG) que pode ser usada para criar qualquer conteúdo.
 
-Consulte o documento [Criação de conteúdo WYSIWYG para o Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md) para saber mais sobre criação de conteúdo com o Universal Editor.
+Consulte o documento [Criação de conteúdo do WYSIWYG para Edge Delivery Services](/help/edge/wysiwyg-authoring/authoring.md) para saber mais sobre criação de conteúdo com o Universal Editor.
 
 ### Criação baseada em documento {#document-authoring}
 
-A criação baseada em documentos permite que qualquer pessoa crie conteúdo sem qualquer treinamento, aproveitando ferramentas que todos conhecem: documentos do Word e do Google. Usando essas ferramentas simples, os Edge Delivery Services podem transformar instantaneamente uma alteração em um documento do Word para um conteúdo atualizado em seu site ativo.
+A criação baseada em documentos permite que qualquer pessoa crie conteúdo sem qualquer treinamento, aproveitando ferramentas que todos conhecem: Word e Google Docs. Usando essas ferramentas simples, os Edge Delivery Services podem transformar instantaneamente uma alteração em um documento do Word para um conteúdo atualizado em seu site ativo.
 
 Consulte o documento [Criação e publicação de conteúdo](https://www.aem.live/docs/authoring) para saber mais sobre como usar a criação baseada em documento.
 

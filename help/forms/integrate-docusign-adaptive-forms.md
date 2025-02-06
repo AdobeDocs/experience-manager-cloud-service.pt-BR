@@ -4,7 +4,7 @@ description: Saiba como usar o DocuSign com um formulário adaptável para colet
 exl-id: fb2e75d6-e454-4999-a079-f663af79051f
 feature: Adaptive Forms, Acrobat Sign
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Para criar um Formulário adaptável habilitado para assinatura:
 
    - Se você não tiver um modelo de formulário personalizado, selecione a opção **[!UICONTROL Gerar documento de registro]**. Quando você usa a opção, o documento enviado para assinatura exibe todos os campos do Formulário adaptável.
 
-1. Selecione **[!UICONTROL Criar.]** Um Formulário adaptável habilitado para assinatura foi criado. Você pode adicionar os campos do [!DNL DocuSign] ao formulário e enviá-lo para assinatura.
+1. Selecione **[!UICONTROL Criar]**. Um Formulário adaptável habilitado para assinatura é criado. Você pode adicionar os campos do [!DNL DocuSign] ao formulário e enviá-lo para assinatura.
 1. Abra o formulário adaptável no modo de edição. Na guia **[!UICONTROL Conteúdo]**, selecione o **[!UICONTROL Contêiner de Formulário]** e selecione ![Configurar](assets/configure-icon.svg).
 
 1. Na seção **[!UICONTROL Envio]**, selecione **[!UICONTROL Enviar com assinaturas eletrônicas DocuSign]** na lista suspensa **[!UICONTROL Ação de Envio]**.

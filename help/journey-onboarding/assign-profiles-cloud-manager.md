@@ -4,10 +4,10 @@ description: Siga esta página para saber como atribuir membros da equipe a perf
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 555688e5-f937-462c-9fcc-b90685f1882b
-source-git-commit: 8ed477ec0c54bb0913562b9581e699c0bdc973ec
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1520'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,7 @@ Nesta parte da [jornada de integração](overview.md), você aprenderá a atribu
 
 ## Objetivo {#objective}
 
-Na etapa anterior desta jornada, [Acessar o Admin Console,](admin-console.md) você aprendeu a fazer logon no Admin Console e a verificar seus privilégios como administrador do sistema. Agora você está pronto para permitir que os membros da equipe acessem o Cloud Manager. Para fazer isso, atribua perfis de produto.
+Na etapa anterior desta jornada, [Acessando o Admin Console](admin-console.md), você aprendeu a fazer logon no Admin Console e a verificar seus privilégios como administrador do sistema. Agora você está pronto para permitir que os membros da equipe acessem o Cloud Manager. Para fazer isso, atribua perfis de produto.
 
 Ao conceder aos usuários acesso a uma solução da Adobe, você pode não pretender conceder acesso total a eles. Os perfis de produto permitem que cada solução tenha seu próprio conjunto de permissões do usuário. Use o Admin Console para atribuir perfis de produto.
 

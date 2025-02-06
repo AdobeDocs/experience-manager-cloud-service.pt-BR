@@ -4,7 +4,7 @@ description: O Externalizador é um serviço OSGi que permite transformar progra
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 0%
@@ -50,7 +50,7 @@ O serviço Externalizer permite definir centralmente o domínio que pode ser usa
 
 >[!NOTE]
 >
->Como ocorre ao aplicar qualquer [configuração OSGi para o AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration), as etapas a seguir devem ser executadas em uma instância de desenvolvedor local e, em seguida, confirmadas no código do projeto para implantação.
+>Assim como ao aplicar qualquer [configuração OSGi para o AEM as a Cloud Service](/help/implementing/deploying/overview.md#osgi-configuration), as etapas a seguir devem ser executadas em uma instância de desenvolvedor local e confirmadas no código do projeto para implantação.
 
 Para definir um mapeamento de domínio para o serviço Externalizador:
 

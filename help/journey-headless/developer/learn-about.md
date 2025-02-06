@@ -5,16 +5,16 @@ exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 86%
+ht-degree: 81%
 
 ---
 
 # Saiba mais sobre o desenvolvimento headless do CMS {#learn-about}
 
-Nesta parte da [Jornada de desenvolvedores headless do AEM,](overview.md) saiba mais sobre a tecnologia headless e por que usá-la.
+Nesta parte da [Jornada de desenvolvedores sem periféricos de AEM](overview.md), saiba mais sobre a tecnologia sem periféricos e por que usá-la.
 
 ## Objetivo {#objective}
 
@@ -30,7 +30,7 @@ Desde a ascensão dos sistemas de gerenciamento de conteúdo (CMS) de larga esca
 
 ![O CMS clássico de pilha completa](assets/full-stack.png)
 
-Em um CMS de pilha completa, a funcionalidade para manipular o conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
+Em uma CMS de pilha completa, a funcionalidade para manipular o conteúdo está no CMS. Os recursos do sistema constituem componentes diferentes da pilha do CMS. A solução de pilha completa tem muitas vantagens.
 
 * Você tem um sistema para manter.
 * O conteúdo é gerenciado centralmente.
@@ -127,9 +127,9 @@ Desenvolva esse conhecimento e continue sua jornada sem periféricos de AEM revi
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendado que você siga para a próxima parte da jornada de desenvolvimento headless revisando o documento [Introdução ao AEM Headless as a Cloud Service,](getting-started.md) veja a seguir alguns recursos adicionais que abordam certos conceitos mencionados neste documento em mais detalhes, mas que não são necessários para continuar a jornada headless.
+Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento headless revisando o documento [Introdução ao AEM headless as a Cloud Service](getting-started.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
 
-* [Uma introdução à arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Compreender a estrutura do AEM as a Cloud Service
+* [Uma Introdução à Arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Compreender a estrutura do AEM as a Cloud Service
 * Uma [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
 * O [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 * [Tutoriais AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR) - Use esses tutoriais práticos para explorar como utilizar as várias opções para fornecer conteúdo a endpoints headless com o AEM e escolha o que é certo para você.

@@ -4,10 +4,10 @@ description: Saiba como acessar o Cloud Manager para poder configurar os recurso
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -17,7 +17,7 @@ Nesta parte da [jornada de integração](overview.md), você aprenderá a acessa
 
 ## Objetivo {#objective}
 
-No artigo anterior desta jornada de integração, [Atribuição dos membros da equipe aos perfis de produto do Cloud Manager,](assign-profiles-cloud-manager.md) você concedeu as funções apropriadas à sua equipe do AEMaaCS. Agora saiba como acessar o Cloud Manager para poder configurar os recursos do projeto que a equipe usará.
+No artigo anterior desta jornada de integração, [Atribuição dos membros da equipe aos perfis de produto do Cloud Manager](assign-profiles-cloud-manager.md), você concedeu as funções apropriadas à sua equipe do AEMaaCS. Agora saiba como acessar o Cloud Manager para poder configurar os recursos do projeto que a equipe usará.
 
 Como você concluiu a etapa anterior desta jornada, sua equipe pode acessar o Cloud Manager. O Cloud Manager é usado para criar e gerenciar os recursos do projeto, como programas e ambientes.
 
@@ -40,7 +40,7 @@ Antes que os membros da equipe atribuídos à função **Proprietário da empres
 
 1. Certifique-se de que você, como administrador do sistema, receba a função **Proprietário da empresa**.
 
-   * Retorne à etapa anterior desta jornada, [Atribuir membros da equipe aos perfis de produto do Cloud Manager](assign-profiles-cloud-manager.md) para obter mais informações sobre como atribuir a função **Proprietário da empresa** ao administrador do sistema.
+   * Retorne à etapa anterior desta jornada, [Atribuir Membros da Equipe aos Perfis de Produto do Cloud Manager](assign-profiles-cloud-manager.md), para obter mais informações sobre como atribuir a função de **Proprietário da Empresa** ao administrador do sistema.
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) para abrir a página de aterrissagem normal.
 

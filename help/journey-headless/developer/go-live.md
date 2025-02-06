@@ -5,10 +5,10 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 91%
+ht-degree: 88%
 
 ---
 
@@ -129,7 +129,7 @@ Ou você já lançou seu primeiro projeto Headless do AEM ou agora tem todo o co
 
 No entanto, isso não é tudo que o armazenamento headless do AEM oferece. Talvez você se lembre na [Parte de introdução da jornada](getting-started.md#integration-levels), discutimos brevemente como o AEM não só suporta entrega headless e modelos tradicionais de pilha completa, como também pode suportar modelos híbridos que combinam as vantagens de ambos.
 
-Se esse tipo de flexibilidade é algo que você precisa para o seu projeto, continue para a parte adicional opcional da jornada, [Como criar Aplicativos de página única (SPAs) com o AEM.](create-spa.md)
+Se esse tipo de flexibilidade for algo necessário para o seu projeto, continue com a parte adicional opcional da jornada, [Como criar aplicativos de página única (SPA) com AEM](create-spa.md).
 
 ## Recursos adicionais {#additional-resources}
 

@@ -4,10 +4,10 @@ description: Saiba mais sobre os fundamentos e as práticas recomendadas da impl
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 1ad144fb630eca51f2004300c71d75f627cf9977
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3440'
-ht-degree: 95%
+ht-degree: 93%
 
 ---
 
@@ -112,7 +112,7 @@ Após a mudança para a nova versão do aplicativo:
    * Configuração sensível ao contexto (qualquer item abaixo de `/conf`) (adicionar, modificar, remover)
    * Scripts (os pacotes podem acionar ganchos de instalação em vários estágios do processo de instalação do pacote. Consulte a [documentação do Jackrabbit Filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sobre ganchos de instalação. O AEM CS usa atualmente a versão 3.4.0 do Filevault, que limita os ganchos de instalação a admins, usuários do sistema e membros do grupo de admins).
 
-É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author ou install.publish sob `/apps`. A reestruturação para refletir esta separação foi efetuada no AEM 6.5 e os detalhes sobre a reestruturação de projetos recomendada podem ser encontrados na [documentação do AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=pt-BR)
+É possível limitar a instalação de conteúdo mutável para criar ou publicar incorporando pacotes em uma pasta install.author ou install.publish sob `/apps`. A reestruturação para refletir essa separação foi feita no AEM 6.5 e os detalhes sobre a reestruturação de projeto recomendada podem ser encontrados na [documentação do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=pt-BR).
 
 >[!NOTE]
 >Os pacotes de conteúdo são implantados em todos os tipos de ambiente (desenvolvimento, preparo, produção). Não é possível limitar a implantação a um ambiente específico. Esta limitação está em vigor para garantir a opção de uma execução de teste automatizada. Um conteúdo específico de um ambiente requer instalação manual por meio do [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md).
@@ -121,7 +121,7 @@ Além disso, não há mecanismo para reverter as alterações no pacote de conte
 
 Todos os pacotes de terceiros incluídos devem ser validados como compatíveis com o AEM as a Cloud Service, caso contrário, sua inclusão resultará em uma falha na implantação.
 
-Como mencionado acima, clientes que já possuem suas bases de código devem estar em conformidade com o exercício de reestruturação do repositório, que é necessário para as alterações do repositório 6.5 descritas na [documentação do AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=pt-BR)
+Como mencionado acima, os clientes com bases de código existentes devem estar em conformidade com o exercício de reestruturação de repositório necessário para as alterações de repositório do 6.5 descritas na [documentação do AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=pt-BR).
 
 ## Repoinit {#repoinit}
 

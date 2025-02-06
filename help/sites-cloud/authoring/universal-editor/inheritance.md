@@ -4,13 +4,13 @@ description: Saiba como o Editor universal oferece suporte à herança de conte�
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 773ce75975f4dcc2c5310422bcc377b487ebec25
+exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '475'
 ht-degree: 1%
 
 ---
-
 
 # Herança de conteúdo no editor universal {#inheritance}
 
@@ -42,7 +42,7 @@ Para modificar algum conteúdo das cópias, os autores interrompem a herança no
 
 Quando uma página faz parte do MSM ou de uma Inicialização e o conteúdo é editado com o Editor universal, o editor desativa automaticamente a herança de todas as alterações feitas pelos autores nessa página, garantindo que o conteúdo modificado seja retido quando as atualizações forem sincronizadas do blueprint.
 
-O autor não precisa clicar em um botão ou executar outras etapas para desativar a herança antes de fazer edições locais. Assim que uma alteração é feita, a herança é cancelada implicitamente. Isso contrasta com o [Editor de páginas.](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components)
+O autor não precisa clicar em um botão ou executar outras etapas para desativar a herança antes de fazer edições locais. Assim que uma alteração é feita, a herança é cancelada implicitamente. Este fluxo de trabalho está em contraste com o [Editor de páginas](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
 O Editor Universal não afeta o mecanismo subjacente de herança. Para obter mais detalhes sobre como a herança funciona, consulte a documentação a seguir.
 
@@ -55,6 +55,6 @@ O Editor Universal não afeta o mecanismo subjacente de herança. Para obter mai
    * A herança só pode ser revertida para toda a página através do
       * [Console de Visão Geral da Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
       * [Iniciar console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * Usando o botão **Redefinir** na guia **Live Copy** da janela de propriedades da [página.](/help/sites-cloud/authoring/sites-console/page-properties.md)
+      * Usando o botão **Redefinir** na guia **Live Copy** da [janela de propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md).
 * Os autores não têm feedback visual para ver quais componentes têm sua herança desabilitada e quais ainda a têm preservada.
 * No momento, esses recursos estão limitados a componentes em páginas e ainda não se aplicam a [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md), apesar de também terem recursos do MSM e do Launch.

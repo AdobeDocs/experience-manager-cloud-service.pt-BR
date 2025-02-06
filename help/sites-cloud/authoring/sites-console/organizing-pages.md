@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -15,7 +15,7 @@ ht-degree: 67%
 
 # Organizar páginas {#creating-and-organizing-pages}
 
-Saiba como organizar seu site com AEM. Assim que você entender como precisa organizar suas páginas, poderá [criar novas páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) e [gerenciar páginas existentes.](/help/sites-cloud/authoring/sites-console/managing-pages.md)
+Saiba como organizar seu site com AEM. Assim que você entender como precisa organizar suas páginas, poderá [criar novas páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) e [gerenciar páginas existentes](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
 {{edge-delivery-authoring}}
 
@@ -51,7 +51,7 @@ O exemplo a seguir mostra o site [Tutorial WKND](https://experienceleague.adobe.
    /...
 ```
 
-Esta estrutura pode ser visualizada do console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md), onde você pode navegar pelas páginas do seu site e executar ações nas páginas.
+Esta estrutura pode ser visualizada do console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), onde você pode navegar pelas páginas do seu site e executar ações nas páginas.
 
 ## Convenções de nomenclatura da página {#page-naming-conventions}
 
@@ -130,7 +130,7 @@ O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem
 
 ## Componentes {#components}
 
-[Componentes](/help/implementing/developing/components/overview.md) são os elementos fornecidos pelo AEM para que você possa adicionar tipos específicos de conteúdo. O AEM vem com uma variedade de componentes prontos para uso, chamados [Componentes principais](/help/implementing/developing/components/overview.md#core-components), que fornecem funcionalidade abrangente. Alguns exemplos dos componentes são:
+[Componentes](/help/implementing/developing/components/overview.md) são os elementos fornecidos pelo AEM para que você possa adicionar tipos específicos de conteúdo. O AEM vem com uma variedade de componentes prontos para uso, chamados [de Componentes principais](/help/implementing/developing/components/overview.md#core-components), que fornecem funcionalidade abrangente. Alguns exemplos dos componentes são:
 
 * Texto
 * Imagem

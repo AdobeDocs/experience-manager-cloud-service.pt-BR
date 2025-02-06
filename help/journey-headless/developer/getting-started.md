@@ -5,16 +5,16 @@ exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3068'
-ht-degree: 92%
+ht-degree: 87%
 
 ---
 
 # Introdução ao AEM Headless as a Cloud Service {#getting-started}
 
-Nesta parte da [Jornada do desenvolvedor headless do AEM,](overview.md) saiba mais sobre o que é necessário para iniciar seu próprio projeto com o AEM Headless.
+Nesta parte da [Jornada de desenvolvedores sem periféricos de AEM](overview.md), saiba mais sobre o que é necessário para iniciar seu próprio projeto com o AEM sem periféricos.
 
 ## A história até agora {#story-so-far}
 
@@ -65,7 +65,7 @@ No nível mais simples, a criação de experiências digitais no AEM requer as s
 1. Quando esse conteúdo estiver pronto, ele será replicado para a instância de publicação.
 1. As APIs podem ser chamadas para recuperar esse conteúdo.
 
-O AEM headless desenvolve essa base técnica, oferecendo ferramentas eficientes para gerenciar conteúdo headless que é [descrito na próxima seção.](#aem-headless-basics)
+O AEM Headless desenvolve essa base técnica oferecendo ferramentas poderosas para gerenciar o conteúdo headless, que é [descrito na próxima seção](#aem-headless-basics).
 
 ## Noções básicas do AEM Headless {#aem-headless-basics}
 
@@ -195,7 +195,7 @@ A hierarquia de pastas pode atender a duas principais preocupações com relaç�
 * [Tradução](#translation): o AEM gerencia a tradução de conteúdo mantendo cópias do conteúdo em pastas específicas da localidade.
 * Organização: as pastas são usadas para definir uma hierarquia de conteúdo necessária para atender às necessidades da tradução e gerenciar logicamente os fragmentos de conteúdo.
 
-O AEM permite uma estrutura de conteúdo flexível e uma hierarquia pode ser arbitrariamente grande. No entanto, é importante perceber que qualquer alteração na estrutura de pastas pode ter consequências não intencionais para consultas existentes que [dependem do caminho do conteúdo.](#developer) Portanto, uma hierarquia bem definida, claramente definida previamente, pode ser útil para os autores de conteúdo.
+O AEM permite uma estrutura de conteúdo flexível e uma hierarquia pode ser arbitrariamente grande. No entanto, é importante perceber que quaisquer alterações na estrutura de pastas podem ter consequências não intencionais para consultas existentes que [dependem do caminho de conteúdo](#developer). Portanto, uma hierarquia bem definida, claramente definida com antecedência, pode ser útil para os autores de conteúdo.
 
 As pastas também podem ser restritas para permitir apenas determinados tipos de conteúdo (com base nos Modelos de fragmento de conteúdo). É recomendável sempre especificar explicitamente quais modelos são permitidos para todas as pastas na hierarquia. Especificação do conteúdo permitido para uma determinada pasta:
 
@@ -241,7 +241,7 @@ Os desenvolvedores devem ter em mente algumas recomendações básicas ao planej
 * Para obter o melhor desempenho da consulta, sempre use consultas persistentes no AEM. Elas serão discutidas posteriormente na jornada.
 * O GraphQL é declarativo seguindo o lema “Peça exatamente o que você precisa, e obtenha exatamente o que você pediu.” Isso significa que ao criar consultas do GraphQL, sempre evite consultas do tipo `select *` que você pode criar em um banco de dados relacional.
 
-Para uma [implementação headless típica usando o AEM,](#level-1) o desenvolvedor não precisa ter conhecimento de codificação do AEM.
+Para uma [implementação headless típica usando AEM](#level-1), o desenvolvedor não requer conhecimento de codificação do AEM.
 
 ### Requisitos de desempenho {#performance-requirements}
 
@@ -280,7 +280,7 @@ Você deve continuar sua jornada AEM headless revisando a seguir o documento [Ca
 
 ## Recursos adicionais {#additional-resources}
 
-Mesmo sendo recomendado que você siga para a próxima parte da jornada de desenvolvimento headless revisando o documento [Caminho para Sua Primeira Experiência usando AEM Headless,](path-to-first-experience.md) a seguir estão alguns recursos adicionais e opcionais que fazem uma análise mais profunda sobre alguns conceitos mencionados neste documento, mas eles não são requisitos para continuar na jornada headless.
+Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento headless revisando o documento [Caminho para a sua primeira experiência usando o AEM headless](path-to-first-experience.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
 
 * [Jornada de Tradução AEM Headless](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 * [Uma Introdução à Arquitetura do Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) - Compreender a estrutura do AEM as a Cloud Service

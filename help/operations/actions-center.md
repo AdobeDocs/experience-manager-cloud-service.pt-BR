@@ -4,9 +4,9 @@ description: Aproveite o Centro de ações para agir de forma conveniente em inc
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 1bfa9ff24d3515a450216f3569b1e8b0b1e31ecc
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1116'
 ht-degree: 47%
 
 ---
@@ -77,7 +77,7 @@ A tabela a seguir lista os tipos de notificação atualmente aceitos no Centro d
 | Consulta GraphQL persistente inválida | Incidente | Corrija a consulta inválida do GraphQL fazendo referência à [documentação de solução de problemas de consultas persistidas do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
 | Pico de tráfego na origem | Incidente | Protect sua origem configurando regras de filtro de tráfego de limite de taxa que acionam limites inferiores ao alerta de pico de tráfego padrão na origem.  Consulte a seção [Bloqueando ataques DeS e DeS usando regras de tráfego](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) da documentação Regras de filtro de tráfego, que faz referência a um tutorial. |
 | Regras de Filtros de Tráfego CDN acionadas | Incidente | Se a regra de filtro de tráfego correspondente refletir um ataque e seu site não estiver bloqueando esse tráfego, proteja seu site configurando uma regra de filtro de tráfego no modo de bloqueio. Consulte a seção [Protegendo sites com regras de filtro de tráfego (incluindo regras do WAF)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) da documentação Regras de filtro de tráfego, que faz referência a um tutorial. |
-| Erros de encaminhamento do log do Splunk | Incidente | Verifique se o endpoint do Splunk funciona e está acessível no ambiente do AEM Cloud Service. Para obter mais informações sobre o encaminhamento de logs, consulte a [documentação de encaminhamento de logs do Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs). Se precisar de ajuda para solucionar problemas ou de alterações na configuração de registro, aumente o tíquete de suporte usando o Adobe. |
+| Erros de encaminhamento do log do Splunk | Incidente | Verifique se o endpoint do Splunk funciona e está acessível no ambiente do AEM Cloud Service. Para obter mais informações sobre o encaminhamento de logs, consulte a [documentação de encaminhamento de logs do Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs). Se precisar de ajuda para solucionar problemas ou se precisar fazer alterações na configuração de registro, aumente o tíquete de suporte com o Adobe. |
 | As páginas contêm um grande número de nós | Proativa | Reduza o número total de nós em uma página. Consulte a [Documentação de complexidade da página](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | Grande número de instâncias de fluxo de trabalho em execução | Proativa | Encerre workflows em execução que não são mais necessários. Saiba como [configurar um trabalho de limpeza](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Certificado S2S a expirar | Proativa | Saiba como atualizar uma credencial na documentação [Geração de tokens de acesso para APIs do lado do servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Contagem Alta de Conexões | Proativa | Saiba mais sobre o pool de conexões no [Pool de Conexões juntamente com a documentação avançada de rede](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |

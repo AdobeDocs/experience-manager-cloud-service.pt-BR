@@ -4,7 +4,7 @@ description: Saiba como usar planilhas para gerenciar dados tabulares para vári
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 4e4234c1aaf0a410cb419140e9e353348ce118c1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1284'
 ht-degree: 1%
@@ -34,11 +34,11 @@ Este documento usa o exemplo de redirecionamentos para ilustrar como criar essas
 
 >[!TIP]
 >
->Para obter mais informações sobre como as planilhas em geral funcionam com Edge Delivery Services, consulte o documento [Planilhas e JSON.](/help/edge/developer/spreadsheets.md)
+>Para obter mais informações sobre como as planilhas em geral funcionam com Edge Delivery Services, consulte o documento [Planilhas e JSON](/help/edge/developer/spreadsheets.md).
 
 >[!TIP]
 >
->As planilhas devem ser usadas apenas para manter dados tabulares. Para armazenar dados estruturados, [confira os recursos headless do AEM.](/help/headless/introduction.md)
+>As planilhas devem ser usadas apenas para manter dados tabulares. Para armazenar dados estruturados, [confira os recursos headless do AEM](/help/headless/introduction.md).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -150,7 +150,7 @@ Para que o AEM possa publicar os dados em sua planilha, você também precisa at
 
    >[!NOTE]
    >
-   >Esta entrada `paths.json` é baseada no exemplo de criação de redirecionamentos usando dados tabulares. Atualize o caminho apropriado para o [tipo de planilha que você está criando.](#other)
+   >Esta entrada `paths.json` é baseada no exemplo de criação de redirecionamentos usando dados tabulares. Atualize o caminho apropriado para o [tipo de planilha que você está criando](#other).
 
 1. Clique em **Confirmar alterações...** para salvar as alterações em `main`.
 
@@ -174,7 +174,7 @@ A planilha de redirecionamentos agora está publicada e acessível ao público.
 
 >[!TIP]
 >
->Para obter mais informações sobre mapeamentos de caminho, consulte o documento [Mapeamento de Caminho para Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Para obter mais informações sobre mapeamentos de caminho, consulte o documento [Mapeamento de Caminho para Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ## Outros Tipos de Planilha {#other}
 
@@ -205,7 +205,7 @@ Além disso, você pode [criar sua própria planilha](#own-spreadsheet) com colu
 
 ## Criar Sua Própria Planilha {#own-spreadsheet}
 
-1. Siga as mesmas etapas na seção [Criar Planilha.](#spreadsheet)
+1. Siga as mesmas etapas na seção [Criar Planilha](#spreadsheet).
 
 1. Ao selecionar o modelo, escolha **Planilha**.
 

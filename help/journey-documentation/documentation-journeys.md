@@ -5,10 +5,10 @@ exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1347'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -20,7 +20,7 @@ As jornadas de documentação fornecem uma estrutura narrativa dentro da documen
 
 Uma jornada de documentação une vários tópicos e recursos diferentes e talvez complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, mesmo que ele tenha o mínimo de conhecimento prévio sobre o tópico ou o AEM.
 
-As jornadas de documentação contrastam com os documentos técnicos existentes do AEM, que se concentram principalmente em um único recurso e documentação de tarefas e que são destinados àqueles que já estão familiarizados com o AEM. Ao se concentrar nos conceitos e deixar os detalhes minuciosos para a documentação técnica existente, as jornadas de documentação oferecem aos leitores novos no AEM um lugar para começar a entender como a plataforma pode ser aproveitada utilizando as práticas recomendadas que atendem às necessidades e fluxos de trabalho empresariais comuns. Por esse motivo, as jornadas de documentação servem como um complemento e não como substitutas da [documentação técnica existente do AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)
+As jornadas de documentação contrastam com os documentos técnicos existentes do AEM, que se concentram principalmente em um único recurso e documentação de tarefas e que são destinados àqueles que já estão familiarizados com o AEM. Ao se concentrar nos conceitos e deixar os detalhes minuciosos para a documentação técnica existente, as jornadas de documentação oferecem aos leitores novos no AEM um lugar para começar a entender como a plataforma pode ser aproveitada utilizando as práticas recomendadas que atendem às necessidades e fluxos de trabalho empresariais comuns. Por esse motivo, as Jornadas de documentação servem como um complemento e não como substitutas da [documentação técnica existente do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR).
 
 ### Aprendizagem por narrativa {#narrative}
 

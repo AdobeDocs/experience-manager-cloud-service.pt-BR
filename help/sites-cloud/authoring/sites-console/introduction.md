@@ -5,9 +5,9 @@ exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1625'
 ht-degree: 44%
 
 ---
@@ -45,7 +45,7 @@ As opções apresentadas dependem do seu console atual. Por exemplo, em **Sites*
 
 ![Exemplo de seletor de painel lateral](assets/sites-console-side-panel-selector.png)
 
-Para obter mais informações sobre o painel lateral, consulte o documento [Painel Lateral do Console do Sites.](/help/sites-cloud/authoring/sites-console/console-side-panel.md)
+Para obter mais informações sobre o painel lateral, consulte [Painel Lateral do Console do Sites](/help/sites-cloud/authoring/sites-console/console-side-panel.md).
 
 ### Navegações estruturais {#breadcrumbs}
 
@@ -194,7 +194,7 @@ A exibição de lista fornece informações para cada recurso no nível atual de
 ![Exibição de lista](assets/sites-console-list-view.png)
 
 * É possível navegar para baixo na árvore tocando/clicando no nome do recurso e fazer backup usando a [navegação estrutural no cabeçalho](#the-header).
-* Para selecionar facilmente todos os itens na lista, use a caixa de seleção [**Selecionar tudo** na barra de ferramentas.](#select-all)
+* Para selecionar facilmente todos os itens na lista, use a caixa de seleção [**Selecionar tudo** na barra de ferramentas](#select-all).
 
 * Selecione as colunas a serem mostradas usando a opção **Configurações de exibição**, localizada abaixo do botão Visualizações. As seguintes colunas estão disponíveis para exibição:
 

@@ -4,7 +4,7 @@ description: Saiba como estender a funcionalidade do Gerenciador de vários site
 exl-id: 4b7a23c3-65d1-4784-9dea-32fcceca37d1
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2337'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Este documento ajuda você a entender como estender a funcionalidade do Gerencia
 
 >[!TIP]
 >
->Esta página é mais facilmente entendida no contexto do documento [Reutilização de Conteúdo: Gerenciador de Vários Sites.](/help/sites-cloud/administering/msm/overview.md)
+>Esta página é mais facilmente entendida no contexto do documento [Reutilização de Conteúdo: Gerenciador de Vários Sites](/help/sites-cloud/administering/msm/overview.md).
 
 >[!CAUTION]
 >
@@ -178,20 +178,20 @@ Para criar uma configuração de implantação:
 1. Nesse local, crie um nó com as seguintes propriedades:
 
    * **Nome**: o nome do nó da configuração de implantação, por exemplo, `contentCopy` ou `workflow`
-   * **Tipo**: `cq:RolloutConfig`
+   * **Tipo**: `cq:RolloutConfig`
 
 1. Adicione as seguintes propriedades a este nó:
 
    * **Nome**: `jcr:title`
-     **Tipo**: `String`
+     **Tipo**: `String`
      **Valor**: um título de identificação que aparecerá na interface
 
    * **Nome**: `jcr:description`
-     **Tipo**: `String`
+     **Tipo**: `String`
      **Valor**: uma descrição opcional.
 
    * **Nome**: `cq:trigger`
-     **Tipo**: `String`
+     **Tipo**: `String`
      **Valor**: o [Gatilho de Implantação](/help/sites-cloud/administering/msm/live-copy-sync-config.md#rollout-triggers) a ser usado
       * `rollout`
       * `modification`
@@ -212,7 +212,7 @@ Adicione nós filhos do tipo `cq:LiveSyncAction` para adicionar ações de sincr
 
    * **Nome**: o nome do nó da ação de sincronização
       * O nome deve ser igual ao **Nome da Ação** na tabela em [Ações de Sincronização](/help/sites-cloud/administering/msm/live-copy-sync-config.md#installed-synchronization-actions), como `contentCopy` ou `workflow`.
-   * **Tipo**: `cq:LiveSyncAction`
+   * **Tipo**: `cq:LiveSyncAction`
 
 1. Adicione e configure quantos nós de ação de sincronização forem necessários.
 
@@ -255,7 +255,7 @@ O procedimento a seguir requer que você tenha adicionado o perfil do `adobe-pub
    * **`artifactName`**: `MyLiveActionFactory package`
    * **`packageGroup`**: `myPackages`
 
-1. Inicie o Eclipse e [importe o projeto Maven.](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse)
+1. Iniciar o Eclipse e [importar o projeto Maven](/help/implementing/developing/tools/eclipse.md#import-the-maven-project-into-eclipse).
 
 ### Adicionar dependências ao arquivo POM {#add-dependencies-to-the-pom-file}
 
@@ -533,14 +533,14 @@ Configure a configuração de implantação criada no procedimento anterior para
 1. Criar o seguinte nó em `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Nome**: `exampleLiveAction`
-   * **Tipo**: `cq:LiveSyncAction`
+   * **Tipo**: `cq:LiveSyncAction`
 
 1. Clique em **Salvar tudo**.
 
 1. Selecione o nó `exampleLiveAction` e adicione uma propriedade para indicar à classe `ExampleLiveAction` que a propriedade `cq:LastModifiedBy` deve ser replicada do nó de origem para o nó de destino.
 
    * **Nome**: `repLastModBy`
-   * **Tipo**: `Boolean`
+   * **Tipo**: `Boolean`
    * **Valor**: `true`
 
 1. Clique em **Salvar tudo**.
@@ -633,7 +633,7 @@ Se uma propriedade de página está sujeita à implantação e, portanto, sujeit
    * Isso criará o símbolo de vínculo em cadeia na caixa de diálogo.
    * Isso só permitirá a edição se a herança for cancelada (o vínculo em cadeia é interrompido).
    * Isso se aplica somente ao primeiro nível secundário do recurso
-      * **Tipo**: `String`
+      * **Tipo**: `String`
       * **Valor**: mantém o nome da propriedade em consideração e é comparável ao valor da propriedade `name`
          * Por exemplo, consulte
            `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`

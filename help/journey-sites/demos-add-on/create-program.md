@@ -4,7 +4,7 @@ description: Saiba como configurar um novo programa e pipeline para implantar o 
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 53%
@@ -18,7 +18,7 @@ Saiba como configurar um novo programa e pipeline para implantar o complemento.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada do Complemento de Demonstrações de Referência do Adobe Experience Manager (AEM), [Entender a instalação do Complemento de Demonstração de Referência](installation.md), você aprendeu como funciona o processo de instalação do Complemento de Demonstrações de Referência, ilustrando como as diferentes partes funcionam juntas. Agora você deve:
+No documento anterior da jornada do Complemento de Demonstrações de Referência do Adobe Experience Manager (AEM), [Entender a instalação do complemento de demonstração de referência](installation.md), você aprendeu como funciona o processo de instalação do Complemento de Demonstrações de Referência, ilustrando como as diferentes partes funcionam juntas. Agora você deve:
 
 * Ter uma compreensão básica do Cloud Manager.
 * Entender como os pipelines entregam conteúdo e configuração ao AEM.

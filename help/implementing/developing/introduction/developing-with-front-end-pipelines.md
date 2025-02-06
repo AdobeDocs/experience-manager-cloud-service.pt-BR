@@ -4,7 +4,7 @@ description: Com o pipeline de front-end, é dada mais independência aos desenv
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Desenvolvimento de Sites com o pipeline front-end {#developing-site-with-front-end-pipeline}
 
-[Com o pipeline de front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) mais independência é dada aos desenvolvedores de front-end e o processo de desenvolvimento pode ganhar velocidade substancial. Este documento descreve como esse processo funciona, além de algumas considerações a serem levadas em conta para que você possa aproveitar ao máximo o potencial desse processo.
+[Com o pipeline de front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end), é dada mais independência aos desenvolvedores de front-end e o processo de desenvolvimento pode ganhar velocidade substancial. Este documento descreve como esse processo funciona, além de algumas considerações a serem levadas em conta para que você possa aproveitar ao máximo o potencial desse processo.
 
 >[!TIP]
 >

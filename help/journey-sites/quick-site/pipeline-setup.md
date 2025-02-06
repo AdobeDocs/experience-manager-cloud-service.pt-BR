@@ -5,10 +5,10 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '949'
-ht-degree: 94%
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ Crie um pipeline de front-end para gerenciar a personalização do tema do seu s
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de Criação rápida de sites do AEM, [Criar site a partir de modelo,](create-site.md) você aprendeu a usar um modelo de site para criar rapidamente um site do AEM que pode ser personalizado ainda mais com ferramentas de front-end; agora, você deve:
+No documento anterior da jornada de Criação rápida de sites do AEM, [Criar site a partir de modelo](create-site.md), você aprendeu a usar um modelo de site para criar rapidamente um site do AEM que pode ser personalizado ainda mais com ferramentas de front-end; agora, você deve:
 
 * Entenda como obter modelos de site do AEM.
 * Saiba como criar um site usando um modelo.
@@ -114,11 +114,11 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Entender o que é um pipeline de front-end.
 * Saber como configurar um pipeline de front-end no Cloud Manager.
 
-Desenvolva esse conhecimento e prossiga na sua jornada de Criação rápida de sites do AEM, revisando a seguir o documento [Conceder acesso ao desenvolvedor de front-end,](grant-access.md) onde você integrará os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao seu repositório e pipeline de Git do site do AEM.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites de AEM revisando a seguir o documento [Conceder acesso ao desenvolvedor de front-end](grant-access.md), onde você integrará os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao seu repositório Git e pipeline do site de AEM.
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de Criação rápida de sites revisando o documento [Personalizar o tema do site,](customize-theme.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada.
+Embora seja recomendável seguir para a próxima parte da jornada de Criação Rápida de Sites revisando o documento [Personalizar o Tema do Site](customize-theme.md), os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
 
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - Se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
 * [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md): se precisar de mais informações sobre como configurar e gerenciar repositórios Git para seu projeto do AEMaaCS, consulte este documento.

@@ -5,10 +5,10 @@ exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '860'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
@@ -64,7 +64,7 @@ Embora seja possível ir diretamente para uma parte específica da jornada, muit
 
 ## O que vem a seguir {#what-is-next}
 
-Agora você está pronto para começar a usar a jornada headless da Adobe. Recomendamos que você continue com a próxima parte da jornada e leia o artigo [Criação para o AEM Headless as a Cloud Service: uma introdução.](introduction.md)
+Agora você está pronto para começar a usar a jornada headless da Adobe. Recomendamos que você siga para a próxima parte da jornada e leia o artigo [Criação para AEM Headless as a Cloud Service - Uma introdução](introduction.md).
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}

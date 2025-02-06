@@ -5,10 +5,10 @@ exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2120'
-ht-degree: 73%
+ht-degree: 67%
 
 ---
 
@@ -72,7 +72,7 @@ Você receberá uma mensagem informando que o projeto foi criado.
 
 >[!NOTE]
 >
->Pressupõe-se que a estrutura necessária para os idiomas das traduções já tenha sido criada como parte da [definição da estrutura de conteúdo.](getting-started.md#content-structure) Isso deve ser feito em colaboração com o arquiteto de conteúdo.
+>Pressupõe-se que a estrutura necessária para os idiomas das traduções já tenha sido criada como parte da [definição da sua estrutura de conteúdo](getting-started.md#content-structure). Isso deve ser feito em colaboração com o arquiteto de conteúdo.
 >
 >Se as pastas de idioma não forem criadas com antecedência, você não será capaz de criar cópias de idioma conforme descrito nas etapas anteriores.
 
@@ -187,7 +187,7 @@ Para adicionar conteúdo a uma tarefa de tradução:
 >
 >O navegador de caminho é uma ferramenta poderosa que permite pesquisar, filtrar e navegar pelo seu conteúdo. Selecione o botão **Somente conteúdo/Filtros** para alternar o painel lateral e revelar filtros avançados como **Data de Modificação** ou **Status da Tradução**.
 >
->Você pode saber mais sobre o navegador de caminho na [seção recursos adicionais.](#additional-resources)
+>Você pode saber mais sobre o navegador de caminho na [seção de recursos adicionais](#additional-resources).
 
 Você pode usar as etapas anteriores para adicionar o conteúdo necessário a todos os idiomas (tarefas) do projeto. Após selecionar todo o conteúdo, você pode iniciar a tradução.
 
@@ -205,7 +205,7 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 
 ## Revisar conteúdo traduzido {#reviewing}
 
-[Como visto anteriormente,](#using-translation-project) o conteúdo de tradução automática volta ao AEM com o status de **Aprovado**, pois se presume que, devido à utilização de tradução automática, não é necessária qualquer intervenção humana. No entanto, ainda é possível revisar o conteúdo traduzido.
+[Como visto anteriormente](#using-translation-project), o conteúdo de tradução automática volta ao AEM com o status **Aprovado**, pois se presume que, devido à utilização de tradução automática, não é necessária qualquer intervenção humana. No entanto, ainda é possível revisar o conteúdo traduzido.
 
 Basta ir até o trabalho de tradução concluído e selecionar um item da linha tocando ou clicando na caixa de seleção. O ícone **Revelar no Fragmento de conteúdo** é exibido na barra de ferramentas.
 
@@ -249,7 +249,7 @@ Desenvolva esse conhecimento e continue sua jornada de tradução AEM headless r
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Publicar conteúdo traduzido](publish-content.md), os recursos opcionais a seguir fornecerão uma explicação aprofundada dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada headless.
+Embora seja recomendável seguir para a próxima parte da jornada de tradução headless revisando o documento [Conteúdo traduzido do Publish](publish-content.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
 
 * [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md) - Saiba mais sobre os detalhes de projetos de tradução e recursos adicionais, como fluxos de trabalho de tradução humana e projetos multilíngues.
 * [Ambiente e ferramentas de criação](/help/sites-cloud/authoring/path-selection.md#path-selection) - O AEM fornece vários mecanismos para organização e edição de conteúdo, incluindo um navegador de caminhos robusto.

@@ -4,10 +4,10 @@ description: O Adobe Experience Manager otimiza o desempenho ao concluir de form
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '854'
-ht-degree: 64%
+ht-degree: 60%
 
 ---
 
@@ -85,7 +85,7 @@ O AEM executa um trabalho de limpeza todos os dias à 1h para excluir trabalhos 
 
 Você pode modificar a programação da limpeza e a duração da retenção dos detalhes dos trabalhos concluídos, antes da sua exclusão. Você também pode configurar, a qualquer momento, o número máximo de trabalhos concluídos cujos detalhes serão retidos.
 
-1. Faça logon no console da Web AEM do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
+1. Faça logon no console da Web AEM do AEM do SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
 1. Navegue até **OSGi** > **Configuração**
 1. Abra o **[!UICONTROL Trabalho agendado de limpeza de trabalhos assíncronos no Adobe Granite]**.
 1. Especifique:
@@ -101,9 +101,9 @@ Você pode modificar a programação da limpeza e a duração da retenção dos 
 
 Se o número de ativos ou pastas que serão excluídos exceder o limite, a operação de exclusão será feita de modo assíncrono.
 
-1. Faça logon no console da Web AEM do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
+1. Faça logon no console da Web AEM do AEM do SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
 1. Navegue até **OSGi** > **Configuração**
-1. No console da Web, abra a **[!UICONTROL Configuração da fila padrão de processo assíncrono.]**
+1. No console da Web, abra a **[!UICONTROL Configuração da fila padrão de processo assíncrono]**.
 1. Na caixa **[!UICONTROL Limite de ativos]**, especifique o limite de ativos/pastas para o processamento assíncrono de operações de exclusão.
 
    ![Limite de exclusão de ativos](assets/async-delete-threshold.png)
@@ -115,9 +115,9 @@ Se o número de ativos ou pastas que serão excluídos exceder o limite, a opera
 
 Se o número de ativos/pastas ou referências que serão movidos exceder o limite, a operação de movimentação será feita de modo assíncrono.
 
-1. Faça logon no console da Web AEM do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
+1. Faça logon no console da Web AEM do AEM do SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
 1. Navegue até **OSGi** > **Configuração**
-1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação.]**
+1. No console da Web, abra a **[!UICONTROL Configuração do Processamento Assíncrono da Operação de Movimentação]**.
 1. Na caixa **[!UICONTROL Limite de ativos/referências]**, especifique o limite de ativos/pastas ou referências para o processamento assíncrono de operações de movimentação.
 
    ![Limite de movimentação do ativo](assets/async-move-threshold.png)
@@ -127,9 +127,9 @@ Se o número de ativos/pastas ou referências que serão movidos exceder o limit
 
 ### Configurar operações assíncronas do MSM {#configuring-asynchronous-msm-operations}
 
-1. Faça logon no console da Web AEM do AEM SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
+1. Faça logon no console da Web AEM do AEM do SDK Quickstart Jar em `https://<host>:<port>/system/console` como o usuário administrador.
 1. Navegue até **OSGi** > **Configuração**
-1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação de página.]**
+1. No console da Web, abra a **[!UICONTROL Configuração do processamento assíncrono da operação de movimentação de página]**.
 1. Marque a opção **Habilitar notificação por email** para receber notificações por email sobre o status do trabalho. Por exemplo, sucesso, falha.
 
    ![Configuração do MSM](assets/async-msm.png)

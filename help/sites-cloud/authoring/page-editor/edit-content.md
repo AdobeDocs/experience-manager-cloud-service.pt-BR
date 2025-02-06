@@ -5,10 +5,10 @@ exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1612'
-ht-degree: 32%
+ht-degree: 34%
 
 ---
 
@@ -54,8 +54,8 @@ Em ambos os casos, o destino selecionado aparecerá como um contorno azul abaixo
 
 É possível adicionar um novo componente, usando o [navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). O [espaço reservado do componente](#component-placeholder) mostra onde você está posicionando o componente.
 
-1. Verifique se o editor de página está no modo [**Editar**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
-1. Abra o navegador de [componentes.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+1. Verifique se o editor de página está no modo [**Editar**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
+1. Abra o [navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser).
 1. Arraste o componente para a [posição necessária](#component-placeholder) e solte-o.
 1. [Editar](#edit-content) o componente recém-colocado.
 
@@ -67,7 +67,7 @@ Em ambos os casos, o destino selecionado aparecerá como um contorno azul abaixo
 
 Você pode adicionar um novo componente usando o espaço reservado **Arraste componentes aqui** do sistema de parágrafo:
 
-1. Verifique se o editor de página está no modo [**Editar**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Verifique se o editor de página está no modo [**Editar**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
 1. Há duas maneiras de selecionar e adicionar um novo componente a partir do sistema de parágrafos:
 
    * Selecione a opção **Inserir componente** (+) seja na barra de ferramentas de um componente já existente ou na caixa **Arraste componentes aqui**.
@@ -87,13 +87,13 @@ Você pode adicionar um novo componente usando o espaço reservado **Arraste com
 
 ## Adicionar um ativo {#adding-asset}
 
-Você também pode adicionar um novo componente à página arrastando um ativo do navegador de [ ativos.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser) Isso cria automaticamente um componente do tipo apropriado (e contendo o ativo).
+Também é possível adicionar um novo componente à página arrastando um ativo do [navegador de ativos](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser). Isso cria automaticamente um componente do tipo apropriado (e que contém o ativo).
 
 Esse comportamento pode ser configurado para a instalação. Consulte o documento [Guia de Referência de Componentes](/help/implementing/developing/components/reference.md#component-placeholders) para obter mais detalhes.
 
 Para criar um componente arrastando um dos tipos de ativos acima:
 
-1. Certifique-se de que a sua página está no modo [**Editar**.](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector)
+1. Certifique-se de que a página está no modo de [**edição**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector).
 1. Abra o [navegador de ativos](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser).
 1. Arraste o ativo desejado para a posição desejada. O [espaço reservado do componente](#component-placeholder) mostra onde o componente está posicionado e um destino será mostrado onde ele será inserido.
 1. Solte o ativo no target. Um componente, apropriado para o tipo de ativo, é criado no local necessário que contém o ativo selecionado.
@@ -133,7 +133,7 @@ As ações disponíveis na barra de ferramentas do componente são apropriadas p
 
   ![Botão Excluir](assets/edit-content-delete.png)
 
-* **Inserir componente** abre a caixa de diálogo para [adicionar um novo componente.](#adding-a-component-from-the-paragraph-system)
+* **Inserir componente** abre a caixa de diálogo para [adicionar um novo componente](#adding-a-component-from-the-paragraph-system).
 
   ![Botão Inserir](assets/edit-content-insert-component.png)
 
@@ -219,7 +219,7 @@ Em vez de repetidamente alternar entre os modos de edição e de [layout](/help/
 
    ![O botão Layout da barra de ferramentas do componente](assets/edit-content-layout.png)
 
-1. Depois que a ação Layout for selecionada, você poderá modificar o layout do componente da mesma maneira que faria no [modo de layout.](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode)
+1. Depois que a ação Layout for selecionada, você poderá modificar o layout do componente da mesma maneira que faria em [modo de layout](/help/sites-cloud/authoring/page-editor/responsive-layout.md#defining-layouts-layout-mode).
 
    * As alças de redimensionamento do componente são exibidas.
    * A barra de ferramentas do emulador é mostrada na parte superior da tela.

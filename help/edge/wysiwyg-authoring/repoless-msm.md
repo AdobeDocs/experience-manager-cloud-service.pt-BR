@@ -4,7 +4,7 @@ description: Saiba mais sobre as práticas recomendadas de como configurar um pr
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1261'
 ht-degree: 1%
@@ -26,7 +26,7 @@ Você pode usar o MSM para criar uma estrutura completa de conteúdo para sua ma
 Para configurar o MSM em um caso de uso de resposta, primeiro conclua várias tarefas.
 
 * Este documento supõe que você já tenha criado um site para o seu projeto com base no [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
-* Você já deve ter [habilitado o recurso de resposta para o seu projeto.](/help/edge/wysiwyg-authoring/repoless.md)
+* Você já deve ter [habilitado o recurso de resposta para o seu projeto](/help/edge/wysiwyg-authoring/repoless.md).
 
 ## Caso de uso {#use-case}
 
@@ -55,9 +55,9 @@ O conteúdo em `language-masters` é a origem das Live Copies para os sites loca
 
 Há várias etapas para configurar o caso de uso de resposta do MSM.
 
-1. [Atualize as configurações do site AEM.](#update-aem-configurations)
-1. [Crie novos sites do Edge Delivery Services para suas páginas localizadas.](#create-edge-sites)
-1. [Atualize a configuração da nuvem no AEM para seus sites localizados.](#update-cloud-configurations)
+1. [Atualizar configurações do site AEM](#update-aem-configurations).
+1. [Criar novos sites do Edge Delivery Services para suas páginas localizadas](#create-edge-sites).
+1. [Atualize a configuração da nuvem no AEM para seus sites localizados](#update-cloud-configurations).
 
 ### Atualizar configurações do site AEM {#update-aem-configurations}
 

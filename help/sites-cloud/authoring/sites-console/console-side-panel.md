@@ -5,7 +5,7 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 23%
@@ -108,11 +108,11 @@ Selecione o tipo de referência apropriado para obter mais informações. Em det
 
 ## Site {#site}
 
-A exibição **Site** do painel lateral mostra detalhes dos sites [criados usando um modelo de site.](/help/sites-cloud/administering/site-creation/create-site.md)
+A exibição **Site** do painel lateral mostra detalhes dos sites [criados usando um modelo de site](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Painel do site](assets/console-side-panel-site-paenl.png)
 
-Consulte o documento [Usando o Painel do Site para Gerenciar o Tema do Site](/help/sites-cloud/administering/site-creation/site-rail.md) para obter mais detalhes sobre como você pode usar o painel para gerenciar o [tema do seu site.](/help/sites-cloud/administering/site-creation/site-themes.md).
+Consulte o documento [Usando o Painel do Site para Gerenciar o Tema do Site](/help/sites-cloud/administering/site-creation/site-rail.md) para obter mais detalhes sobre como usar o painel para gerenciar o [tema do seu site](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 Se você ainda não tiver configurado o pipeline de front-end para habilitar a criação de site com base em temas, o painel lateral oferecerá essa opção.
 
@@ -120,7 +120,7 @@ Se você ainda não tiver configurado o pipeline de front-end para habilitar a c
 
 >[!TIP]
 >
->Uma descrição completa do processo de criação de um site a partir de um modelo e personalização de seu tema pode ser encontrada na [Jornada rápida de criação de sites.](/help/journey-sites/quick-site/overview.md)
+>Uma descrição completa do processo de criação de um site a partir de um modelo e personalização de seu tema pode ser encontrada na [Jornada de criação rápida de sites](/help/journey-sites/quick-site/overview.md).
 
 ## Filtro {#filter}
 

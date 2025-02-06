@@ -4,10 +4,10 @@ description: Saiba como usar o canal de pré-lançamento para visualizar os recu
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1264'
-ht-degree: 99%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ Saiba como usar o canal de pré-lançamento para visualizar os recursos futuros 
 
 ## Introdução {#introduction}
 
-O Adobe Experience Manager as a Cloud Service fornece novos recursos regularmente, de acordo com o [Roteiro de versões do Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service)
+A Adobe Experience Manager as a Cloud Service fornece novos recursos regularmente, de acordo com o [roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service).
 
 Para se familiarizar com os recursos que estão programados para entrar em operação na versão seguinte, você pode se inscrever no canal de pré-lançamento, que pode ser acessado pela configuração de seus ambientes de desenvolvimento ou de qualquer ambiente de sandbox. Você pode visualizar as alterações acessíveis por meio da interface do AEM e desenvolver o código com base nas novas APIs de pré-lançamento.
 
@@ -50,7 +50,7 @@ Aproveitar de forma eficaz o canal de pré-lançamento é um processo de quatro 
 
 ## Marcar o seu calendário {#mark-calendars}
 
-As versões de recursos são programadas com bastante antecedência e as datas de ativação são publicadas na [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service)
+As versões de recursos estão agendadas com bastante antecedência, e as datas de ativação das versões de recursos estão publicadas no [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service).
 
 Anote as datas de lançamento para que você possa reservar um tempo para revisar e testar os recursos futuros.
 
@@ -83,7 +83,7 @@ Para atualizar um ambiente de nuvem para usar o pré-lançamento, você deve adi
 
 1. Selecione o ambiente em que deseja ativar o pré-lançamento e acesse suas configurações em **Programa** > **Ambiente** > **Configuração do ambiente**.
 
-1. Adicione uma nova [variável de ambiente:](../implementing/cloud-manager/environment-variables.md)
+1. Adicionar uma nova [variável de ambiente](../implementing/cloud-manager/environment-variables.md)
 
    | Nome | Valor | Serviço aplicado | Tipo |
    |------|-------|-----------------|------|
@@ -97,7 +97,7 @@ Para atualizar um ambiente de nuvem para usar o pré-lançamento, você deve adi
 
 Você também pode usar a API e a CLI do Cloud Manager para atualizar as variáveis de ambiente.
 
-* Usando o [ponto de acesso das variáveis de ambiente da API do Cloud Manager,](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables) configure a variável de ambiente `AEM_RELEASE_CHANNEL` com o valor `prerelease`.
+* Usando o [ponto de extremidade de variáveis de ambiente da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), defina a variável de ambiente `AEM_RELEASE_CHANNEL` com o valor `prerelease`.
 
   ```text
   PATCH /program/{programId}/environment/{environmentId}/variables

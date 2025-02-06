@@ -5,10 +5,10 @@ exl-id: b677f691-5257-43c3-a4b9-c34932577b31
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1024'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -31,7 +31,7 @@ Este guia conduz você através dos tópicos mais importantes sobre tradução h
 
 A meta é fornecer uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo. Se você não está familiarizado com nenhum desses tópicos, este é o lugar ideal para começar.
 
-Se você já está familiarizado com o AEM, headless e tradução, talvez já tenha o conhecimento básico desta jornada. Considere consultar nossa documentação técnica vinculada à [seção de recursos adicionais abaixo.](#additional-resources)
+Se você já está familiarizado com o AEM, headless e tradução, talvez já tenha o conhecimento básico desta jornada. Considere consultar nossa documentação técnica vinculada na [seção de recursos adicionais abaixo](#additional-resources).
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 

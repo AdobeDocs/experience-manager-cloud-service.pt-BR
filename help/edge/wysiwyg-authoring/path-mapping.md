@@ -4,7 +4,7 @@ description: Saiba como mapear caminhos de página usados na instância de cria�
 feature: Edge Delivery Services
 role: User
 exl-id: 3d68135d-e84c-4bf4-93d1-38a0be70ce4a
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Para criar conteúdo do WYSIWYG usando AEM e publicá-lo em Edge Delivery Servic
 * Ele mapeia e cria uma relação entre os caminhos de página usados na instância de criação do AEM e os caminhos de página pública usados no site.
 * Controla quais conteúdos (páginas, planilhas, ativos, etc.) são publicados no Edge Delivery Services.
 
-O mapeamento de caminho deve ser configurado para cada projeto individualmente e de acordo com o conteúdo do projeto e a estrutura de URL. Ele é usado pelo AEM durante a publicação de conteúdo e durante a edição de conteúdo no [Editor Universal.](/help/sites-cloud/authoring/universal-editor/navigation.md)
+O mapeamento de caminho deve ser configurado para cada projeto individualmente e de acordo com o conteúdo do projeto e a estrutura de URL. Ele é usado pelo AEM durante a publicação de conteúdo e durante a edição de conteúdo no [Editor Universal](/help/sites-cloud/authoring/universal-editor/navigation.md).
 
 ## Formato de configuração {#configuration-format}
 

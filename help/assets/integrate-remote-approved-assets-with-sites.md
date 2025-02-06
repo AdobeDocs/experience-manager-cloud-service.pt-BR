@@ -2,10 +2,10 @@
 title: Integrar o AEM Assets remoto com o AEM Sites
 description: Saiba como configurar e conectar sites AEM com o Approved AEM Assets.
 exl-id: 382e6166-3ad9-4d8f-be5c-55a7694508fa
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 12%
+source-wordcount: '1028'
+ht-degree: 11%
 
 ---
 

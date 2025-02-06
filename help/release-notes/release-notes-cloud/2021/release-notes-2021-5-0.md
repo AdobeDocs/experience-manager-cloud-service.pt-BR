@@ -4,10 +4,10 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 29%
+ht-degree: 28%
 
 ---
 
@@ -70,7 +70,7 @@ A versão seguinte (2021.6.0) será lançada em 28 de junho de 2021.
 
 #### Novidades do Dynamic Media {#what-is-new-dm}
 
-* A DPR (Relação de pixels do dispositivo) da imagem inteligente e a otimização da largura de banda da rede permitem que você forneça imagens com mais eficiência, em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter mais informações, consulte [Perguntas frequentes sobre imagens inteligentes](/help/assets/dynamic-media/imaging-faq.md) e [Otimização de imagens com formatos de imagem de próxima geração WebP e AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* A DPR (Relação de pixels do dispositivo) da imagem inteligente e a otimização da largura de banda da rede permitem que você forneça imagens com mais eficiência, em dispositivos com telas de alta resolução e largura de banda de rede restrita. Para obter mais informações, consulte [Perguntas frequentes sobre imagens inteligentes](/help/assets/dynamic-media/imaging-faq.md) e [Otimização de imagens com formatos de imagem de próxima geração WebP e AVIF](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4).
 * Introdução do suporte para o formato de imagem AVIF de próxima geração na entrega do Dynamic Media (modificador de URL fmt).
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}

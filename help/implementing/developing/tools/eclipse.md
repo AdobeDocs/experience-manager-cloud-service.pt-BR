@@ -4,7 +4,7 @@ description: Saiba como usar as Ferramentas de desenvolvedor do AEM para Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -62,7 +62,7 @@ Quando tiver atendido aos [requisitos](#requirements) acima, você poderá insta
 
 ## A perspectiva do AEM {#the-aem-perspective}
 
-No Eclipse, uma Perspectiva determina as ações e visualizações disponíveis em uma janela e permite a interação orientada a tarefas com recursos no Eclipse. Para obter mais detalhes sobre Perspectiva, consulte a [documentação do Eclipse.](https://help.eclipse.org/latest/index.jsp)
+No Eclipse, uma Perspectiva determina as ações e visualizações disponíveis em uma janela e permite a interação orientada a tarefas com recursos no Eclipse. Para obter mais detalhes sobre Perspectiva, consulte a [documentação do Eclipse](https://help.eclipse.org/latest/index.jsp).
 
 As _Ferramentas de Desenvolvimento do Experience Manager para Eclipse_ fornecem uma Perspectiva AEM que oferece controle total sobre seus projetos e instâncias do AEM. Para abrir a perspectiva do AEM:
 

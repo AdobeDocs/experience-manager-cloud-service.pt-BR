@@ -4,7 +4,7 @@ description: Saiba mais sobre os diferentes pontos de extensão e outros recurso
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: afcb3cbc2b0868de7bac9446eb07ae30c033de66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 0%
@@ -45,9 +45,9 @@ Você pode restringir os componentes permitidos por contêiner no Editor univers
 
 ### Mostrar e ocultar componentes condicionalmente no painel Propriedades {#conditionally-hide}
 
-Embora um componente ou componentes possam estar disponíveis para os autores, pode haver certas situações em que isso não faça sentido. Nesses casos, você pode ocultar componentes no painel de propriedades adicionando um atributo `condition` aos [ campos do modelo de componente.](/help/implementing/universal-editor/field-types.md#fields)
+Embora um componente ou componentes possam estar disponíveis para os autores, pode haver certas situações em que isso não faça sentido. Nesses casos, você pode ocultar componentes no painel de propriedades adicionando um atributo `condition` aos [campos do modelo de componente](/help/implementing/universal-editor/field-types.md#fields).
 
-As condições podem ser definidas usando o esquema JsonLogic [.](https://jsonlogic.com/) Se a condição for verdadeira, o campo será exibido. Se a condição for falsa, o campo ficará oculto.
+As condições podem ser definidas usando o [esquema JsonLogic](https://jsonlogic.com/). Se a condição for verdadeira, o campo será exibido. Se a condição for falsa, o campo ficará oculto.
 
 >[!BEGINTABS]
 
@@ -86,9 +86,9 @@ As condições podem ser definidas usando o esquema JsonLogic [.](https://jsonlo
 
 ### URLs de visualização personalizados {#custom-preview-urls}
 
-Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
-Isso é particularmente útil para aplicativos com requisitos de visualização específicos, como os [que usam Edge Delivery Services com criação no WYSIWYG.](/help/edge/wysiwyg-authoring/authoring.md)
+Isso é particularmente útil para aplicativos com requisitos de visualização específicos, como os [que usam Edge Delivery Services com criação no WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
 Para fazer isso, basta incluir o URL de visualização desejado em uma meta tag do aplicativo instrumentado, como no exemplo a seguir.
 
@@ -110,6 +110,6 @@ Se você quiser explorar essas possibilidades, consulte os seguintes recursos:
 
 >[!TIP]
 >
->Se preferir aprender por exemplo, consulte o [tutorial sobre extensibilidade da interface do AEM.](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview) Embora se concentre na extensão do console de Fragmentos de Conteúdo, os conceitos para implementar uma extensão de interface no Editor Universal são os mesmos.
+>Se preferir aprender por exemplo, consulte o [tutorial sobre extensibilidade da interface do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
 
 [Usando o Extension Manager no AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), você pode habilitar ou desabilitar suas extensões por instância, acessar extensões próprias do Adobe, inclusive as do Universal Editor, e muito mais.

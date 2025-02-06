@@ -4,7 +4,7 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 2e22a2570a11df8d5f82037414f689f20b6fdb94
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 10%
@@ -24,7 +24,7 @@ Este documento fornece uma visão geral de uma definição de modelo e dos campo
 
 >[!TIP]
 >
->Se você não estiver familiarizado com como instrumentar seu aplicativo para o Universal Editor, consulte o documento [Visão geral do Universal Editor para desenvolvedores do AEM.](/help/implementing/universal-editor/developer-overview.md)
+>Se você não estiver familiarizado com como instrumentar seu aplicativo para o Universal Editor, consulte o documento [Visão geral do Universal Editor para desenvolvedores AEM](/help/implementing/universal-editor/developer-overview.md).
 
 ## Estrutura de definição do modelo {#model-structure}
 

@@ -5,7 +5,7 @@ exl-id: 77264562-e76a-40c8-9878-847a8878fb8e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: dbe4cd619f4dc680e6fc4826f6a4fea92bab9707
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 26%
@@ -19,7 +19,7 @@ Saiba como criar novas páginas para o seu site usando o console **Sites**.
 
 >[!TIP]
 >
->Antes de começar a criar novas páginas, familiarize-se com o [como suas páginas estão organizadas no AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Antes de começar a criar novas páginas, familiarize-se com [como suas páginas estão organizadas no AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 ## Privilégios de Acesso {#access-privileges}
 
@@ -31,7 +31,7 @@ Se você encontrar algum problema, entre em contato com o administrador do siste
 
 A menos que todas as páginas tenham sido criadas antecipadamente para você, é necessário criar uma página antes de começar a criar o conteúdo:
 
-1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navegue até o local onde deseja criar a nova página.
 1. Abra o seletor suspenso usando **Criar** na barra de ferramentas e selecione **Página** na lista:
 
@@ -40,7 +40,7 @@ A menos que todas as páginas tenham sido criadas antecipadamente para você, é
 1. A partir do primeiro estágio do assistente, é possível:
 
    * Selecione o modelo que deseja usar para criar a nova página e selecione **Avançar** para continuar ou **Cancelar** para suspender o processo.
-   * Os modelos têm suporte no [Editor de Páginas](/help/sites-cloud/authoring/page-editor/introduction.md) e também no [Editor Universal.](/help/sites-cloud/authoring/universal-editor/templates.md)
+   * Os modelos têm suporte no [Editor de Páginas](/help/sites-cloud/authoring/page-editor/introduction.md) e no [Editor Universal](/help/sites-cloud/authoring/universal-editor/templates.md).
 
    ![Seleção de um modelo para uma nova página](/help/sites-cloud/authoring/assets/organizing-create-page-template.png)
 

@@ -5,10 +5,10 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 79%
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ O AEM é disponibilizado com vários componentes prontos para uso que fornecem f
 
 ## Uso geral   {#general-usage}
 
-Os componentes estão disponíveis na guia **Componentes** do painel lateral do editor de páginas ao [editar uma página.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+Os componentes estão disponíveis na guia **Componentes** do painel lateral do editor de páginas ao [editar uma página](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 Você pode selecionar um componente e arrastá-lo até o local desejado na página. A partir daí é possível editá-lo usando:
 
@@ -34,7 +34,7 @@ Você pode selecionar um componente e arrastá-lo até o local desejado na pági
 * [Editar conteúdo](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Editar conteúdo - Modo de tela cheia](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
-Para obter mais informações sobre como adicionar componentes a uma página, consulte [Editando Conteúdo da Página.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+Para obter mais informações sobre como adicionar componentes a uma página, consulte [Edição de conteúdo de página](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 ## Visão geral de todos os componentes {#overview-of-all-components}
 

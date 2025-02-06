@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 9496e4f5-ed74-4b40-b8f9-17153170af66
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 0%
 
 ---
-
 
 # Publicação e cancelamento de publicação de formulários e documentos{#publishing-and-unpublishing-forms-and-documents}
 
@@ -122,7 +122,7 @@ Conclua as seguintes etapas para publicar todos os ativos do Gerenciamento de co
 
 ## Automatizar a publicação e o cancelamento da publicação de Forms e documentos {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
-O [!DNL AEM Forms] permite agendar a publicação e o cancelamento da publicação de ativos para o Forms e Documentos. Você pode especificar a programação no Editor de metadados. Para obter mais informações sobre o gerenciamento de metadados de formulário, consulte [Gerenciamento de metadados de formulário.](manage-form-metadata.md)
+O [!DNL AEM Forms] permite agendar a publicação e o cancelamento da publicação de ativos para o Forms e Documentos. Você pode especificar a programação no Editor de metadados. Para obter mais informações sobre o gerenciamento de metadados de formulário, consulte [Gerenciamento de metadados de formulário](manage-form-metadata.md).
 
 Siga estas etapas para agendar a data e a hora de publicação e cancelamento da publicação dos ativos do Forms e do Documents:
 

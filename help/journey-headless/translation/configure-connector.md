@@ -5,10 +5,10 @@ exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1216'
-ht-degree: 82%
+ht-degree: 77%
 
 ---
 
@@ -59,7 +59,7 @@ Se você escolher outro provedor, o administrador deverá instalar o pacote do c
 >
 >O Microsoft Translator pronto para uso funciona bem no AEM sem necessidade de configurações adicionais. As configurações do conector também não precisam ser alteradas.
 >
->Se você optar por usar o conector do Microsoft Translator para fins de teste, não será necessário executar as etapas das próximas duas seções: [Criar uma configuração de integração de tradução](#create-config) e [Associar a configuração ao seu conteúdo.](#associate) No entanto, é recomendável lê-las para que você esteja familiarizado com as etapas para quando precisar configurar seu conector de preferência.
+>Se você optar por usar o conector do Microsoft Translator para fins de teste, não será necessário executar as etapas das próximas duas seções: [Criar uma configuração de integração de tradução](#create-config) e [Associar a configuração ao seu conteúdo](#associate). No entanto, é recomendável lê-las para que você esteja familiarizado com as etapas para quando precisar configurar seu conector de preferência.
 >
 >A licença de avaliação do conector do Microsoft Translator não se destina a fins de produção e, caso decida adquirir uma licença, o(a) administrador(a) do sistema deverá seguir as etapas detalhadas na seção [Recursos adicionais](#additional-resources) ao final deste documento para configurá-la.
 
@@ -122,7 +122,7 @@ Para fazer isso, navegue até a raiz do idioma do conteúdo. Para os fins do nos
 1. Vá para a navegação global e vá para **Navegação** > **Assets** > **Arquivos**.
 1. No console de ativos, selecione a raiz do idioma a ser configurada e selecione **Propriedades**.
 1. Selecione a guia **Cloud Services**.
-1. Em **Configurações de Cloud Service**, na lista suspensa **Adicionar configuração**, selecione o conector. Ele deverá aparecer na lista suspensa quando você tiver instalado o pacote, conforme [descrito anteriormente.](#connect-translation-provider)
+1. Em **Configurações de Cloud Service**, na lista suspensa **Adicionar configuração**, selecione o conector. Ele deve aparecer na lista suspensa quando você tiver instalado o pacote, conforme [descrito anteriormente](#connect-translation-provider).
 1. Em **Configurações de Cloud Service**, na lista suspensa **Adicionar configuração**, selecione também a sua configuração.
 1. Selecione **Salvar e fechar**.
 

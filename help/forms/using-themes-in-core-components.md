@@ -4,13 +4,13 @@ description: Você pode usar temas para estilizar e fornecer uma identidade visu
 keywords: formulários adaptáveis com estilo dos Componentes principais. uso do tema nos Componentes principais, estilo do formulário adaptável, personalização de temas
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 076ee3616ad56b4d463d93e407a9e7e67e54b4ac
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2816'
 ht-degree: 3%
 
 ---
-
 
 # Usar temas para estilizar os Componentes principais com base no Forms adaptável{#themes-for-af-using-core-components}
 
@@ -65,7 +65,7 @@ A personalização de um tema refere-se ao processo de modificação, estilo e p
 
 * Familiarize-se com a [configuração de um pipeline no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline) e ter conhecimento básico sobre como configurar um pipeline ajuda a gerenciar e implantar com eficiência suas personalizações de tema.
 * Saiba como [configurar um usuário com a função de colaborador](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html). Entender como configurar um usuário com a função de colaborador permite que você conceda as permissões necessárias para personalização de temas.
-* Instale a última versão do [Apache Maven.](https://maven.apache.org/download.cgi) O Apache Maven é uma ferramenta de automação de compilação comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
+* Instale a última versão do [Apache Maven](https://maven.apache.org/download.cgi). O Apache Maven é uma ferramenta de automação de build comumente usada para projetos Java™. A instalação da versão mais recente garante que você tenha as dependências necessárias para a personalização de temas.
 * Instale um editor de texto simples. Por exemplo, Microsoft® Visual Studio Code. O uso de um editor de texto simples, como o Microsoft® Visual Studio Code, fornece um ambiente amigável para a edição e modificação de arquivos de tema.
 
 ### Configurar o ambiente
@@ -373,7 +373,7 @@ Agora, envie as alterações para o repositório de temas do seu Cloud Service A
 
 ##### 5.3 Executar o pipeline de front-end {#run-a-frontend-pipeline}
 
-O tema é implantado usando o pipeline de front-end [.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Para implantar o tema, execute as seguintes etapas:
+O tema é implantado usando o [pipeline de front-end](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/enable-frontend-pipeline-devops/create-frontend-pipeline.html). Para implantar o tema, execute as seguintes etapas:
 
 1. Faça logon no repositório do AEM Cloud Manager.
 1. Clique no botão **[!UICONTROL Adicionar]** da seção **[!UICONTROL Pipelines]**.

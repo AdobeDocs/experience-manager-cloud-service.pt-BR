@@ -4,9 +4,9 @@ description: Saiba como você pode usar pipelines de configuração para implant
 feature: Operations
 role: Admin
 exl-id: bd121d31-811f-400b-b3b8-04cdee5fe8fa
-source-git-commit: 5e96d5d71abf78a0dba179cb37cad0322688351b
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ A tabela a seguir oferece uma lista abrangente dessas configurações com links 
 
 ## Criação e gerenciamento de pipelines de configuração {#creating-and-managing}
 
-Para obter informações sobre como criar e configurar pipelines, consulte o documento [Pipelines de CI/CD.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline)
+Para obter informações sobre como criar e configurar pipelines, consulte [Pipelines de CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#config-deployment-pipeline).
 
 Ao criar um pipeline de configuração no Cloud Manager, selecione uma **Implantação direcionada** em vez de **Código de pilha completa** ao configurar o pipeline.
 
@@ -95,7 +95,7 @@ ou
     cdn.yaml
 ```
 
-Os nomes de pasta e arquivos abaixo de `/config` são arbitrários. Entretanto, o arquivo YAML deve incluir um valor de propriedade [`kind` válido.](#configurations)
+Os nomes de pasta e arquivos abaixo de `/config` são arbitrários. Entretanto, o arquivo YAML deve incluir um valor de propriedade [`kind` válido](#configurations).
 
 Normalmente, as configurações são implantadas em todos os ambientes. Se todos os valores de propriedade forem idênticos para cada ambiente, um único arquivo YAML será suficiente. No entanto, é comum que os valores de propriedade sejam diferentes entre os ambientes, por exemplo, ao testar um ambiente mais baixo.
 

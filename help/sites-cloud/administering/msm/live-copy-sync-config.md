@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2414'
 ht-degree: 90%
@@ -46,7 +46,7 @@ Cada configuração de implantação usa um acionador de implantação que ocasi
 
 A tabela a seguir lista as configurações de implantação que vêm prontas para uso com o AEM. A tabela inclui as ações de acionador e de sincronização de cada configuração de implementação.
 
-Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [criar uma configuração de implantação.](#creating-a-rollout-configuration)
+Se as ações de configuração de implantação instaladas não atenderem aos seus requisitos, você poderá [criar uma configuração de implantação](#creating-a-rollout-configuration).
 
 | Nome | Descrição | Acionar | [Ações de sincronização](#synchronization-actions) |
 |---|---|---|---|
@@ -61,7 +61,7 @@ Se as ações de configuração de implantação instaladas não atenderem aos s
 
 A tabela a seguir lista as ações de sincronização que vêm prontas para uso com o AEM.
 
-Se as ações instaladas não atenderem aos seus requisitos, você poderá [Criar uma Nova Ação de Sincronização.](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action)
+Se as ações instaladas não atenderem aos seus requisitos, você poderá [Criar uma Nova Ação de Sincronização](/help/implementing/developing/extending/msm.md#creating-a-new-synchronization-action).
 
 | Nome da ação | Descrição | Propriedades |
 |---|---|---|
@@ -88,7 +88,7 @@ Se as ações instaladas não atenderem aos seus requisitos, você poderá [Cria
 Você pode [criar uma configuração de implantação](/help/implementing/developing/extending/msm.md#creating-a-new-rollout-configuration) quando as configurações instaladas não atenderem aos requisitos do aplicativo, executando as etapas a seguir.
 
 1. [Crie a configuração de implantação-](/help/implementing/developing/extending/msm.md#create-the-rollout-configuration)
-1. [Adicione ações de sincronização à configuração de implantação.](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration)
+1. [Adicionar ações de sincronização à configuração de implantação](/help/implementing/developing/extending/msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
 A nova configuração de implantação está então disponível ao definir configurações de implantação em uma página de blueprint ou Live Copy.
 

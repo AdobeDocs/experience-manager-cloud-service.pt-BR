@@ -4,10 +4,10 @@ description: Depois que o administrador do sistema configurar os recursos de nuv
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: bbd845079cb688dc3e62e2cf6b1a63c49a92f6b4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '576'
-ht-degree: 93%
+ht-degree: 79%
 
 ---
 
@@ -18,7 +18,7 @@ Nesta parte opcional da [jornada de integração](overview.md), você aprenderá
 
 ## A história até agora {#story-so-far}
 
-Você percorreu um longo caminho em sua jornada de integração! Parabéns! O administrador do sistema concluiu a jornada de integração configurando os recursos de nuvem necessários e concedendo acesso conforme o documento [Atribuição de perfis de produto do AEM.](assign-profiles-aem.md)
+Você percorreu um longo caminho em sua jornada de integração! Parabéns! O administrador do sistema concluiu a jornada de integração configurando os recursos de nuvem necessários e concedendo acesso conforme o documento [Atribuição de perfis de produto AEM](assign-profiles-aem.md).
 
 Nesse ponto, os usuários do AEM podem começar a criar conteúdo. Nesse sentido, a integração está completa e agora é hora de usar o novo sistema do AEM as a Cloud Service ilustrado neste documento.
 
@@ -48,9 +48,9 @@ Antes de começar as tarefas descritas neste documento como um usuário do AEM, 
 
 Como um autor, é necessário fazer logon no AEM para começar a criar conteúdo.
 
-1. Acesse a página de logon do Cloud Manager em [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/)
+1. Acesse a página de logon do Cloud Manager em [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
 
-1. Selecione o programa apropriado na página **Programas e produtos** para abrir a página **Visão geral**. Se não tiver certeza de qual programa acessar, pergunte ao administrador do sistema.
+1. Selecione o programa apropriado na página **Programas e Produtos** da Cloud Manager para iniciar a página **Visão geral**. Se não tiver certeza de qual programa acessar, pergunte ao administrador do sistema.
 
 1. Na página **Visão geral** do Cloud Manager, clique no link do autor no cartão **Ambientes**.
 
@@ -73,7 +73,7 @@ Tendo lido este documento, agora você sabe como:
 
 Parabéns! Agora você está pronto para criar e publicar conteúdo do AEM. Consulte a seção [Recursos adicionais](#additional-resources) para obter mais detalhes sobre como criar conteúdo no AEM e como administrá-lo.
 
-Se você estiver interessado em como desenvolvedores e gerentes de implantação criam e gerenciam aplicativos personalizados para o AEM as a Cloud Service, continue com a segunda parte opcional da jornada de integração, [Tarefas do desenvolvedor no AEM.](developers.md)
+Se você estiver interessado em como desenvolvedores e gerentes de implantação criam e gerenciam aplicativos personalizados para o AEM as a Cloud Service, continue com a segunda parte opcional da jornada de integração, [Tarefas do desenvolvedor para o AEM](developers.md).
 
 >[!TIP]
 >

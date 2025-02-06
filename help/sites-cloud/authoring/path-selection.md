@@ -5,10 +5,10 @@ exl-id: 8eb52793-b709-4e66-832d-533ef06bc0e1
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 43%
+ht-degree: 47%
 
 ---
 
@@ -18,7 +18,7 @@ Geralmente, durante a criação, é necessário selecionar outro recurso, como a
 
 ## Campos de caminho   {#path-fields}
 
-O exemplo usado aqui para ilustrar é o componente de imagem. Para obter mais informações sobre o uso e a edição de componentes, consulte [Componentes para Criação de Página.](/help/sites-cloud/authoring/page-editor/components.md)
+O exemplo usado aqui para ilustrar é o componente de imagem. Para obter mais informações sobre o uso e a edição de componentes, consulte [Componentes para criação de página](/help/sites-cloud/authoring/page-editor/components.md).
 
 Os campos de caminho têm funcionalidade antecipada e de preenchimento automático para facilitar a localização de um recurso.
 
@@ -32,7 +32,7 @@ Como alternativa, comece a digitar no campo de caminho e o AEM oferecerá caminh
 
 ## Navegador de caminhos {#path-browser}
 
-O navegador de caminho é organizado da mesma forma que a [exibição de coluna](/help/sites-cloud/authoring/basic-handling.md#column-view) do console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) permitindo uma seleção mais detalhada dos recursos.
+O navegador de caminho é organizado da mesma forma que a [exibição de coluna](/help/sites-cloud/authoring/basic-handling.md#column-view) do console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), permitindo uma seleção mais detalhada dos recursos.
 
 ![Navegador de caminhos](/help/sites-cloud/authoring/assets/path-browser.png)
 

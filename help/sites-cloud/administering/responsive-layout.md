@@ -5,7 +5,7 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1250'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 # Configurar o contêiner de layout e o modo de layout {#configuring-layout-container-and-layout-mode}
 
-O [Layout responsivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) é um mecanismo para realizar o [design responsivo da Web.](https://en.wikipedia.org/wiki/Responsive_web_design) Isso permite que o autor de conteúdo crie páginas da Web com layout e dimensões dependentes dos dispositivos que seus usuários utilizam.
+[Layout Responsivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) é um mecanismo para realizar o [design responsivo da Web](https://en.wikipedia.org/wiki/Responsive_web_design). Isso permite que o autor de conteúdo crie páginas da Web com um layout e dimensões dependentes dos dispositivos que seus usuários usam.
 
 O AEM permite um layout responsivo para suas páginas usando uma combinação de mecanismos:
 
@@ -228,4 +228,4 @@ Para permitir que os autores adicionem outras grades responsivas às páginas de
 
 ### Configurar a grade do contêiner de layout {#configure-the-grid-of-the-layout-container}
 
-Você pode configurar o número de colunas disponíveis para cada instância específica do contêiner de layout [ editando seus modelos de página.](/help/sites-cloud/authoring/page-editor/templates.md)
+Você pode configurar o número de colunas disponíveis para cada instância específica do contêiner de layout [editando seus modelos de página](/help/sites-cloud/authoring/page-editor/templates.md).

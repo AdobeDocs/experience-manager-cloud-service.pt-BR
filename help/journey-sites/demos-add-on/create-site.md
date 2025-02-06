@@ -4,10 +4,10 @@ description: Crie um site de demonstração no AEM com base em uma biblioteca de
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 72%
+ht-degree: 67%
 
 ---
 
@@ -17,7 +17,7 @@ Crie um site de demonstração no AEM com base em uma biblioteca de modelos pré
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada do complemento de demonstrações de referência do AEM, [Criar programa,](create-program.md) você concluiu a primeira etapa de configuração para criar um programa para fins de teste e usou um pipeline para implantar o conteúdo complementar. Agora você deve:
+No documento anterior da jornada do complemento de demonstrações de referência do AEM, [Criar programa](create-program.md), você concluiu a primeira etapa de configuração para criar um programa para fins de teste e usou um pipeline para implantar o conteúdo complementar. Agora você deve:
 
 * Saiba como usar o Cloud Manager para criar um programa.
 * Saber como ativar o complemento de demonstrações de referência para o novo programa.
@@ -105,8 +105,8 @@ Agora que concluiu esta parte da jornada do complemento de demonstração de ref
 
 Agora, é possível testar os recursos do AEM usando conteúdo complementar. Você tem duas opções para continuar sua jornada:
 
-* Se quiser ver uma demonstração completa e testar o conteúdo do AEM Screens, certifique-se de implantar um site com base no **Modelo de Site da We.Cafe**, conforme descrito anteriormente, e continue em [Habilitar o AEM Screens para o seu Site de Demonstração.](screens.md)
-* Se você deseja apenas ver uma demonstração do conteúdo dos sites, continue em [Gerenciar seus sites de demonstração](manage.md), onde você aprenderá sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
+* Se quiser ver uma demonstração completa e testar o conteúdo do AEM Screens, certifique-se de implantar um site com base no **Modelo de Site da We.Cafe**, conforme descrito anteriormente, e continue em [Habilitar o AEM Screens para o seu Site de Demonstração](screens.md).
+* Se você deseja apenas ver uma demonstração do conteúdo dos sites, continue em [Gerenciar seus sites de demonstração](manage.md), onde você aprende sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sites de demonstração e como removê-los.
 
 ## Recursos adicionais {#additional-resources}
 

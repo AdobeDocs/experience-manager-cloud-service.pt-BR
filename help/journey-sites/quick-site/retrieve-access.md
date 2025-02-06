@@ -5,10 +5,10 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '874'
-ht-degree: 83%
+ht-degree: 71%
 
 ---
 
@@ -20,7 +20,7 @@ Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informa
 
 Se você for um desenvolvedor de front-end responsável apenas pela personalização do tema do site, não precisará de conhecimento sobre como o AEM foi configurado e poderá pular para a seção [Objetivo](#objective) deste documento.
 
-Se também desempenha a função de administrador do Cloud Manager ou do AEM e de desenvolvedor de front-end, você aprendeu no documento anterior da jornada de criação rápida de site do AEM, [Concessão de acesso ao desenvolvedor de front-end](grant-access.md), a como integrar o desenvolvedor de front-end para que ele tenha acesso ao repositório git, e agora você deve saber:
+Se você também desempenha a função de administrador do Cloud Manager ou AEM e desenvolvedor de front-end, aprendeu no documento anterior da jornada de Criação rápida de sites do AEM, [Conceder acesso ao desenvolvedor de front-end](grant-access.md), como integrar o desenvolvedor de front-end para que ele tenha acesso ao repositório Git, e agora você deve saber:
 
 * Como adicionar um desenvolvedor front-end como usuário.
 * Como conceder as funções necessárias ao desenvolvedor front-end.
@@ -118,6 +118,6 @@ Desenvolva esse conhecimento e prossiga com sua jornada de Criação Rápida de 
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de Criação rápida de sites revisando o documento [Personalizar o tema do site,](customize-theme.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada.
+Embora seja recomendável seguir para a próxima parte da jornada de Criação Rápida de Sites revisando o documento [Personalizar o Tema do Site](customize-theme.md), os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
 
 * [Documentação do Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=pt-BR) - Explore a documentação do Cloud Manager para obter detalhes completos sobre os recursos.

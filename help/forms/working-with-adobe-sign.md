@@ -6,7 +6,7 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3243'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Para criar um Formulário adaptável habilitado para assinatura:
 
    * Se você não tiver um modelo de formulário personalizado, selecione a opção **[!UICONTROL Gerar documento de registro]**. Quando você usa a opção, o documento enviado para assinatura exibe todos os campos do Formulário adaptável.
 
-1. Selecione **[!UICONTROL Criar.]** Um Formulário adaptável habilitado para assinatura foi criado. Você pode adicionar os campos do [!DNL Adobe Sign] ao formulário e enviá-lo para assinatura.
+1. Selecione **[!UICONTROL Criar]**. Um Formulário adaptável habilitado para assinatura é criado. Você pode adicionar os campos do [!DNL Adobe Sign] ao formulário e enviá-lo para assinatura.
 
 #### Habilitar [!DNL Adobe Sign] para um Formulário adaptável {#editafsign}
 

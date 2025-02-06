@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 solution: Experience Manager Sites
 feature: Authoring, Content Fragments
 role: User
-source-git-commit: b2b38a3163925fdc2bd4c5f78aaddb44ae716601
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 83%
@@ -129,8 +129,8 @@ Isso permite adicionar conteúdo extra [ao meio (ou seja, conteúdo intermediár
 
 Quanto ao conteúdo intermediário, é possível:
 
-* Adicionar componentes do [Navegador de componentes.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
-* Adicionar ativos do [navegador Assets.](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
+* Adicionar componentes do [Navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser)
+* Adicionar ativos do [navegador Assets](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#assets-browser)
 * Usar [Conteúdo associado](#using-associated-content) como uma origem de conteúdo intermediário.
 
 >[!CAUTION]

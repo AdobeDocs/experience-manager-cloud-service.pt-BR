@@ -4,7 +4,7 @@ description: Saiba como o AEM as a Cloud Service permite regiões de publicaçã
 exl-id: b9ac3c6a-eb8b-461d-8f1d-a0356046a3f9
 feature: Operations
 role: Admin
-source-git-commit: c7362a77fd929d812db3cd40bf01763ed3bef02c
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 71%
@@ -24,7 +24,7 @@ As organizações podem licenciar até três regiões de publicação adicionais
 >[!NOTE]
 >
 >* Esse recurso está disponível para as soluções Sites e Forms.
->* Este recurso não pode ser aplicado a [programas de sandbox.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
+>* Este recurso não pode ser aplicado a [programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 >* Este recurso requer que seu programa seja atualizado para AEM versão 12142 ou superior.
 
 ## Casos de uso {#use-cases}

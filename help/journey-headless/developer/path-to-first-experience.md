@@ -5,16 +5,16 @@ exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1956'
-ht-degree: 89%
+ht-degree: 84%
 
 ---
 
 # Caminho para sua primeira experiência usando o AEM Headless {#path-to-first-experience}
 
-Nesta parte da [jornada de desenvolvedor do AEM Headless,](overview.md) você entenderá as etapas para implementar sua primeira experiência headless no AEM, incluindo considerações de planejamento e práticas recomendadas para facilitar ao máximo o seu percurso.
+Nesta parte da [Jornada de desenvolvedores sem periféricos do AEM](overview.md), você entenderá as etapas para implementar sua primeira experiência sem periféricos no AEM, incluindo considerações de planejamento, e também aprenderá as práticas recomendadas para tornar seu caminho o mais suave possível.
 
 ## A história até agora {#story-so-far}
 
@@ -71,13 +71,13 @@ Durante o estágio de desenvolvimento, é recomendável trabalhar com um ambient
 
 ### Cooperação de desenvolvedores e autores de conteúdo {#cooperation}
 
-Os desenvolvedores precisam de um ambiente de desenvolvimento do AEM configurado com os modelos de conteúdo preenchidos. O desenvolvedor cria o cliente que consumirá conteúdo do AEM Headless enquanto os autores de conteúdo ainda estão criando o conteúdo. É por isso que as definições de API são realmente importantes. Ao usar o SDK do AEM, o desenvolvedor pode criar um gancho de teste para que testes de cliente e unidade possam ser criados para garantir que o cliente possa renderizar o conteúdo corretamente.
+Os desenvolvedores precisam de um ambiente de desenvolvimento do AEM configurado com os modelos de conteúdo preenchidos. O desenvolvedor cria o cliente que consumirá conteúdo do AEM Headless enquanto os autores de conteúdo ainda estão criando o conteúdo. É por isso que as definições de API são realmente importantes. Ao usar o AEM SDK, o desenvolvedor pode criar um gancho de teste para que testes de cliente e unidade possam ser criados para garantir que o cliente possa renderizar o conteúdo corretamente.
 
 Os autores de conteúdo criam conteúdo com base nos modelos de conteúdo que foram definidos no ambiente de preparo. Usando a ferramenta de criação de fragmento de conteúdo, o autor criaria um fragmento de conteúdo ou editaria um fragmento de conteúdo existente. Antes de publicá-lo, o autor pode visualizar como será a aparência no cliente, trabalhando com o desenvolvedor para mover o modelo de conteúdo para o desenvolvimento ou configurar um ambiente de desenvolvedor apenas para que os autores visualizem a aparência dele no cliente.
 
 ## Configurar {#setup}
 
-Antes de começar a usar o headless no AEM, você precisa garantir que todos os recursos necessários estejam habilitados. Esta seção descreve o que é necessário. As etapas serão mais detalhadas posteriormente na [Jornada do desenvolvedor do AEM Headless.](#overview.md)
+Antes de começar a usar o headless no AEM, você precisa garantir que todos os recursos necessários estejam habilitados. Esta seção descreve o que é necessário. As etapas reais para realizar essas etapas estão detalhadas posteriormente na [Jornada do desenvolvedor sem periféricos do AEM](#overview.md).
 
 Como alternativa, consulte os [recursos adicionais](#additional-resources) para obter mais informações sobre tópicos individuais.
 
@@ -143,7 +143,7 @@ Não importa qual o seu estilo de aprendizagem, a Adobe quer que você tenha suc
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento headless revisando o documento [Como modelar seu conteúdo como Modelos de conteúdo do AEM,](model-your-content.md) veja a seguir alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas que não são necessários para continuar na jornada headless.
+Embora seja recomendável seguir para a próxima parte da jornada de desenvolvimento headless revisando o documento [Como modelar seu conteúdo como modelos de conteúdo AEM](model-your-content.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless.
 
 * [Jornada de tradução headless do AEM](/help/journey-headless/translation/overview.md) - Essa jornada de documentação oferece uma ampla compreensão da tecnologia headless, como o AEM fornece conteúdo headless e como você pode traduzi-lo.
 * [Desenvolvimento headless para o AEM Sites as a Cloud Service](/help/headless/introduction.md) - Uma introdução rápida para orientar o desenvolvedor headless do AEM com os recursos necessários

@@ -4,7 +4,7 @@ description: Saiba mais sobre como os modelos editáveis são usados ao criar um
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 33eb71b2828314ee2c75206ef7034313e2638360
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3443'
 ht-degree: 4%
@@ -467,7 +467,7 @@ Define o conteúdo inicial que uma nova página terá após a criação:
 
 ### Layout {#layout}
 
-Ao [editar um modelo para definir o layout](/help/sites-cloud/authoring/page-editor/templates.md), este usa o [layout responsivo padrão](/help/sites-cloud/administering/responsive-layout.md), que pode ser [configurado na página pelo autor de conteúdo.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+Ao [editar um modelo para definir o layout](/help/sites-cloud/authoring/page-editor/templates.md), será usado o [layout responsivo padrão](/help/sites-cloud/administering/responsive-layout.md), que pode ser [configurado na página pelo autor de conteúdo](/help/sites-cloud/authoring/page-editor/responsive-layout.md).
 
 ### Políticas de conteúdo {#content-policies}
 

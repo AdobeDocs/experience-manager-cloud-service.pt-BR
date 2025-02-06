@@ -4,7 +4,7 @@ description: Se você tiver muitos sites semelhantes que parecem e se comportam 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: e7f7c169e7394536fc2968ecf1418cd095177679
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Por padrão, o AEM está rigorosamente vinculado ao seu repositório de código,
 
 Em vez de criar vários repositórios GitHub e executar cada site fora de um repositório GitHub dedicado enquanto os mantém em sincronia, o AEM oferece suporte à execução de vários sites a partir da mesma base de código.
 
-Essa configuração simplificada, que elimina a necessidade de replicação de código, também é conhecida como [&quot;resposta&quot;,](https://www.aem.live/docs/repoless) porque todos, exceto seu primeiro site, não precisam de um repositório GitHub próprio.
+Essa configuração simplificada, que elimina a necessidade de replicação de código, também é conhecida como [&quot;resposta&quot;](https://www.aem.live/docs/repoless), porque todos, exceto seu primeiro site, não precisam de um repositório GitHub próprio.
 
 Se o projeto exigir a flexibilidade de resposta da reutilização de código entre sites, você poderá ativar o recurso.
 
@@ -31,7 +31,7 @@ Independentemente de quantos sites você deseja criar, no final das contas, de m
 
 Para aproveitar esse recurso, verifique se você fez o seguinte.
 
-* Seu site já está totalmente configurado, seguindo o documento [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o Edge Delivery Services.](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md)
+* Seu site já está totalmente configurado, seguindo o documento [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Você está executando o AEM as a Cloud Service 2024.08 no mínimo.
 
 Você também precisará pedir ao Adobe para configurar os seguintes itens para você. Entre em contato com o canal Slack ou gere um problema de suporte para solicitar que o Adobe faça as seguintes alterações:
@@ -70,7 +70,7 @@ Depois de receber o token de acesso, ele poderá ser passado no cabeçalho de so
 
 É necessário criar uma configuração de site e adicioná-la ao mapeamento de caminho.
 
-1. Crie uma nova página na raiz do site e escolha o modelo [**Configuração**.](/help/edge/wysiwyg-authoring/tabular-data.md#other)
+1. Crie uma nova página na raiz do site e escolha o modelo [**Configuração**](/help/edge/wysiwyg-authoring/tabular-data.md#other).
    * Você pode deixar a configuração vazia apenas com as colunas `key` e `value` predefinidas. Você só precisa criá-lo.
 1. Crie um mapeamento na configuração pública para a configuração do site usando um comando cURL semelhante ao seguinte.
 

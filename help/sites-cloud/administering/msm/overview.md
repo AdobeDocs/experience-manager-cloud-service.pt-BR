@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2721'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -122,7 +122,7 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 * **Criar Live Copy** (**Sites**)
 
-   * O MSM permite [criar uma Live Copy ad-hoc (única) de uma página individual ou sub-ramificação de um site.](creating-live-copies.md#creating-a-live-copy-of-a-page) Por exemplo, duplicar uma sub-ramificação para fornecer informações sobre uma versão nova/atualizada de um produto. Criar uma Live Copy dessa maneira:
+   * O MSM permite [criar uma Live Copy ad-hoc (única) de uma página individual ou sub-ramificação de um site](creating-live-copies.md#creating-a-live-copy-of-a-page). Por exemplo, duplicar uma sub-ramificação para fornecer informações sobre uma versão nova/atualizada de um produto. Criar uma Live Copy dessa maneira:
       * Cria uma Live Copy ad-hoc (nenhuma configuração do blueprint é necessária).
       * Pode ser usado para criar (imediatamente) uma Live Copy de qualquer página/ramificação.
       * Requer **sincronização** (não fornece o botão **Implantação**).
@@ -137,11 +137,11 @@ O MSM é diretamente acessível por meio da interface usando várias opções do
 
 * **Visão geral da Live Copy** (**Sites**)
 
-   * Este console permite que você [exiba e gerencie seu blueprint e suas Live Copies.](live-copy-overview.md)
+   * Este console permite que você [exiba e gerencie seu blueprint e suas Live Copies](live-copy-overview.md).
 
 * **Blueprints** (**Ferramentas** - **Sites**)
 
-   * Este console permite [criar e gerenciar as configurações do blueprint.](creating-live-copies.md#creating-a-blueprint-configuration)
+   * Este console permite [criar e gerenciar as configurações do blueprint](creating-live-copies.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ As configurações de implantação podem ser reutilizadas, de maneira que mais 
 
 ### Conflitos de implantação {#rollout-conflicts}
 
-As implantações podem se tornar complicadas, especialmente quando os autores estão editando tanto o conteúdo original quanto a Live Copy. Portanto, é útil estar ciente de como o AEM trata quaisquer [conflitos que possam ocorrer durante a implantação.](rollout-conflicts.md)
+As implantações podem se tornar complicadas, especialmente quando os autores estão editando tanto o conteúdo original quanto a Live Copy. Portanto, é útil estar ciente de como o AEM trata quaisquer [conflitos que possam ocorrer durante a implantação](rollout-conflicts.md).
 
 ### Suspensão e cancelamento de herança e sincronização {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -329,7 +329,7 @@ As etapas a seguir descrevem o procedimento padrão de uso do MSM para reutiliza
 
 1. Determine onde você precisa [especificar as configurações de implantação a serem usadas](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) e configure conforme necessário.
 1. Se necessário, [crie uma configuração de blueprint](creating-live-copies.md#creating-a-blueprint-configuration) que identifique o conteúdo original da Live Copy.
-1. [Crie uma Live Copy.](creating-live-copies.md#creating-a-live-copy)
+1. [Criar uma Live Copy](creating-live-copies.md#creating-a-live-copy).
 1. Faça alterações no conteúdo original, conforme necessário. Você deve utilizar o processo normal de revisão e aprovação de conteúdo estabelecido pela organização.
 1. [Implante](creating-live-copies.md#rolling-out-a-blueprint) o blueprint ou [sincronize a Live Copy](creating-live-copies.md#synchronizing-a-live-copy) com as alterações.
 

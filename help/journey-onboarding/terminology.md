@@ -4,10 +4,10 @@ description: Antes de fazer logon no AEMaaCS, é útil compreender a terminologi
 exl-id: d02776a7-836a-4894-a5d5-ae88cc7e4e76
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 81%
+ht-degree: 73%
 
 ---
 
@@ -17,7 +17,7 @@ Nesta parte da [jornada de integração](overview.md), você aprenderá a termin
 
 ## Objetivo {#objective}
 
-Agora que você entende o que precede o processo de integração lendo o documento [Preparação para a integração,](preparation.md) é útil compreender a terminologia do sistema e sua estrutura básica antes de fazer logon.
+Agora que você entende o que precede o processo de integração lendo o documento [Preparação para a integração](preparation.md), é útil compreender a terminologia do sistema e sua estrutura básica antes de fazer logon.
 
 O AEM as a Cloud Service é uma ferramenta poderosa e flexível e, para usá-la, você precisa se familiarizar com a forma como ela está organizada, bem como com a terminologia e a linguagem usadas para descrevê-la. Este documento resume alguns termos-chave que você precisa compreender para começar a usar o sistema.
 

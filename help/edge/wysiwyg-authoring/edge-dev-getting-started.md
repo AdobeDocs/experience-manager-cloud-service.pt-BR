@@ -4,9 +4,9 @@ description: Este guia colocará você em funcionamento com um novo site do Adob
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 01966d837391d13577956a733c2ee7dc02f88103
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,9 @@ Este guia colocará você em funcionamento com um novo site do Adobe Experience 
 
 Antes de começar este guia, você já deve estar familiarizado com as noções básicas do e ter acesso ao Edge Delivery Services, incluindo:
 
-* Você concluiu o [tutorial do Edge Delivery Service.](/help/edge/developer/tutorial.md)
-* Você tem acesso a uma [sandbox da AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* Você [habilitou o Editor Universal no mesmo ambiente de sandbox.](/help/implementing/universal-editor/getting-started.md)
+* Você concluiu o [tutorial do Edge Delivery Service](/help/edge/developer/tutorial.md).
+* Você tem acesso a uma [sandbox da AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+* Você [habilitou o Editor Universal no mesmo ambiente de sandbox](/help/implementing/universal-editor/getting-started.md).
 
 ## Conceitos principais ao desenvolver para Edge Delivery Services {#core-concepts}
 
@@ -88,7 +88,7 @@ Primeiro, será necessário criar um novo projeto no GitHub, com base no modelo 
 
    ![fstab.yaml](assets/edge-dev-getting-started/fstab.png)
 
-1. Edite o arquivo `fstab.yaml` para atualizar o ponto de montagem do projeto. Substitua a URL padrão dos documentos do Google pela URL da sua instância de criação do AEM as a Cloud Service e clique em **Confirmar alterações...**.
+1. Edite o arquivo `fstab.yaml` para atualizar o ponto de montagem do projeto. Substitua a URL padrão do Google Docs pela URL da sua instância de criação do AEM as a Cloud Service e clique em **Confirmar alterações...**.
 
    * `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
    * Alterar o ponto de montagem informa ao Edge Delivery Services onde localizar o conteúdo do site.
@@ -116,7 +116,7 @@ Primeiro, será necessário criar um novo projeto no GitHub, com base no modelo 
 
 >[!TIP]
 >
->Para obter mais informações sobre mapeamentos de caminho, consulte o documento [Mapeamento de Caminho para Edge Delivery Services.](/help/edge/wysiwyg-authoring/path-mapping.md)
+>Para obter mais informações sobre mapeamentos de caminho, consulte o documento [Mapeamento de Caminho para Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
 ### Criar e editar um novo site AEM {#create-aem-site}
 
@@ -128,7 +128,7 @@ Agora que você tem um projeto GitHub, deve criar um novo site AEM que o projeto
 
 1. Baixe a criação mais recente do WYSIWYG com o modelo de site Edge Delivery Services do GitHub em [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
-1. Entre na sua instância de criação do AEM as a Cloud Service e navegue até o console Sites e toque ou clique em **Criar** -> **Site a partir de modelo**.
+1. Entre na sua instância de criação do AEM as a Cloud Service, navegue até o console Sites e clique em **Criar** > **Site a partir de modelo**.
 
    ![Criar um novo site a partir do console](assets/edge-dev-getting-started/create-site-console.png)
 
@@ -140,23 +140,23 @@ Agora que você tem um projeto GitHub, deve criar um novo site AEM que o projeto
 
    * O template deve ser carregado apenas uma vez. Depois de carregado, ele pode ser reutilizado para criar sites adicionais.
 
-1. Depois que o modelo for importado, ele aparecerá no assistente. Toque ou clique para selecioná-lo e, em seguida, toque ou clique em **Avançar**.
+1. Depois que o modelo for importado, ele aparecerá no assistente. Clique para selecioná-la e, em seguida, clique em **Avançar**.
 
    ![Selecionar modelo](assets/edge-dev-getting-started/select-template.png)
 
 1. Forneça os campos a seguir e toque ou clique em **Criar**.
 
    * **Título do site** - Adicione um título descritivo para o site.
-   * **Título do site** - Use o `<site-name>` que você definiu na [etapa anterior.](#create-github-project)
+   * **Título do site** - Use o `<site-name>` definido na [etapa anterior](#create-github-project).
    * **URL do GitHub** - Use a URL do projeto GitHub criado na etapa anterior.
 
    ![Detalhes do site](assets/edge-dev-getting-started/create-site-details.png)
 
-1. O AEM confirma a criação do site com uma caixa de diálogo. Toque ou clique em **OK** para ignorar.
+1. O AEM confirma a criação do site com uma caixa de diálogo. Clique em **OK** para ignorar.
 
    ![Confirmação de criação do site](assets/edge-dev-getting-started/site-creation-confirmation.png)
 
-1. No console de sites, navegue até o `index.html` do site recém-criado e toque ou clique em **Editar** na barra de ferramentas.
+1. No console de sites, navegue até o `index.html` do site recém-criado e clique em **Editar** na barra de ferramentas.
 
    ![Editando o novo site](assets/edge-dev-getting-started/new-site.png)
 
@@ -194,4 +194,4 @@ Consulte o guia [Criação de Blocos Instrumentados para uso com o Editor Univer
 
 >[!TIP]
 >
->Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service AEM como fonte de conteúdo, exiba [este webinário de GEMs do.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service AEM como fonte de conteúdo, exiba [este webinário de GEMs do](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

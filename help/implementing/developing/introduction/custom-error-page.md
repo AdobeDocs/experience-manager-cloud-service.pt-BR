@@ -4,7 +4,7 @@ description: O AEM vem com um manipulador de erros padrão para lidar com erros 
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Para responder a erros, o AEM fornece um script `404.jsp` em `/libs/sling/servle
 
 >[!TIP]
 >
->Como o AEM é baseado no Apache Sling, há mais informações disponíveis [na documentação de tratamento de erros do Apache.](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html)
+>Como o AEM é baseado no Apache Sling, há mais informações disponíveis [na documentação de tratamento de erros do Apache](https://sling.apache.org/documentation/the-sling-engine/errorhandling.html).
 
 >[!NOTE]
 >

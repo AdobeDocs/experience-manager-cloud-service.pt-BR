@@ -4,7 +4,7 @@ description: Usar o plug-in Maven do pacote de conteúdo para implantar aplicati
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d757c94475f257ee4b05092671ae5e6384b8342e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Use o plug-in Adobe Content Package Maven para integrar tarefas de implantação e gerenciamento de pacotes em seus projetos Maven.
 
-A implantação dos pacotes construídos no AEM é executada pelo plug-in Adobe Content Package Maven e permite a automação das tarefas normalmente realizadas usando o AEM [Gerenciador de Pacotes:](/help/implementing/developing/tools/package-manager.md)
+A implantação dos pacotes construídos no AEM é realizada pelo plug-in Adobe Content Package Maven e permite a automação das tarefas normalmente realizadas usando o AEM [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md)
 
 * Crie novos pacotes a partir de arquivos no sistema de arquivos.
 * Instale e desinstale pacotes no AEM.
@@ -23,7 +23,7 @@ A implantação dos pacotes construídos no AEM é executada pelo plug-in Adobe 
 * Obtenha uma lista de pacotes que estão instalados no AEM.
 * Remover um pacote do AEM.
 
-Este documento detalha como usar o Maven para gerenciar essas tarefas. No entanto, também é importante entender [como os projetos de AEM e seus pacotes são estruturados.](#aem-project-structure)
+Este documento detalha como usar o Maven para gerenciar essas tarefas. No entanto, também é importante entender [como os projetos de AEM e seus pacotes são estruturados](#aem-project-structure).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Este documento detalha como usar o Maven para gerenciar essas tarefas. No entant
 
 >[!NOTE]
 >
->A **criação** do pacote agora pertence ao [Plug-in Apache Jackrabbit FileVault Package Maven.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>A **criação** do pacote agora pertence ao [Plug-in Apache Jackrabbit FileVault Package Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/).
 >
 >Este artigo descreve a **implantação** dos pacotes construídos para o AEM conforme executado pelo plug-in Adobe Content Package Maven.
 
@@ -45,7 +45,7 @@ A AEM as a Cloud Service segue as práticas recomendadas mais recentes para o ge
 
 ## Obter o plug-in Maven do pacote de conteúdo {#obtaining-the-content-package-maven-plugin}
 
-O plug-in está disponível no [Repositório Central Maven.](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public)
+O plug-in está disponível no [Repositório Central Maven](https://mvnrepository.com/artifact/com.day.jcr.vault/content-package-maven-plugin?repo=adobe-public).
 
 ## Metas e parâmetros do plug-in Maven do pacote de conteúdo
 

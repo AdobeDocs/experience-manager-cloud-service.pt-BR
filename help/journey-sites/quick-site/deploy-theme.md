@@ -5,10 +5,10 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 87%
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ Saiba como implantar o tema do site usando o pipeline.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da Jornada de criação rápida de site do AEM, [Personalizar o tema do site,](customize-theme.md) você aprendeu como o tema é criado, como personalizá-lo e como testá-lo usando conteúdo dinâmico do AEM; agora, você deve:
+No documento anterior da jornada de Criação rápida de sites do AEM, [Personalizar o tema do site](customize-theme.md), você aprendeu como o tema é criado, como personalizá-lo e como testá-lo usando conteúdo dinâmico do AEM; agora, você deve:
 
 * Entender a estrutura básica do tema do site e como editá-la.
 * Compreender como testar as personalizações de tema usando conteúdo real do AEM por meio de um proxy local.
@@ -78,7 +78,7 @@ Depois de confirmar as alterações de personalização de tema no repositório 
 Quando o pipeline estiver concluído, você poderá informar o administrador para validar as alterações. Então, o administrador irá:
 
 1. Abrir o ambiente de criação do AEM.
-1. Navegar até [o site que o administrador criou anteriormente.](create-site.md)
+1. Navegue até [o site que o administrador criou anteriormente](create-site.md).
 1. Editar uma das páginas de conteúdo.
 1. Consultar as alterações aplicadas.
 

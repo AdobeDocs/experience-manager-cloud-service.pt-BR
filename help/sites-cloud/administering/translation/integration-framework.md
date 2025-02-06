@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 solution: Experience Manager Sites
-source-git-commit: c4cb466bf6a9b6f8f4a28943d28bdb524610f5ad
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1447'
-ht-degree: 71%
+ht-degree: 67%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 71%
 
 A estrutura de integração de tradução integra-se aos serviços de tradução de terceiros para orquestrar a tradução de conteúdo do AEM. Isso envolve três etapas básicas.
 
-1. [Conectar ao provedor de serviços de tradução.](#connecting-to-a-translation-service-provider)
-1. [Criar uma configuração da estrutura de integração de tradução.](#creating-a-translation-integration-configuration)
-1. [Associe as configurações de nuvem às suas páginas.](#configuring-pages-for-translation)
+1. [Conecte-se ao seu provedor de serviços de tradução](#connecting-to-a-translation-service-provider).
+1. [Criar uma configuração da estrutura de integração de tradução](#creating-a-translation-integration-configuration).
+1. [Associe as configurações de nuvem às suas páginas](#configuring-pages-for-translation).
 
-Para obter uma visão geral dos recursos de tradução de conteúdo do AEM, consulte [Tradução de conteúdo para sites multilíngues](overview.md).
+Para obter uma visão geral dos recursos de tradução de conteúdo no AEM, consulte [Tradução de conteúdo para sites multilíngues](overview.md).
 
 >[!TIP]
 >
->Caso seja novo na tradução de conteúdo, consulte a [Jornada de tradução do Sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução do seu conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para quem não tem experiência no AEM ou em tradução.
+>Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM AEM, ideais para aqueles sem experiência com o ou com a tradução.
 
 ## Conexão com um provedor de serviços de tradução {#connecting-to-a-translation-service-provider}
 
@@ -58,7 +58,7 @@ Após configurar uma estrutura de integração de tradução, é possível [asso
 
 Uma única configuração da estrutura controla como o conteúdo e os ativos da página são traduzidos. Para criar uma configuração de tradução:
 
-1. No [menu de navegação global](/help/sites-cloud/authoring/basic-handling.md#global-navigation), selecione **Ferramentas > Cloud Service e Cloud Service de Tradução**.
+1. No [menu de navegação global](/help/sites-cloud/authoring/basic-handling.md#global-navigation), selecione **Ferramentas > Cloud Service e Cloud Service de tradução**.
 1. Navegue até o local em que deseja criar a configuração na estrutura de conteúdo. Isso é geralmente baseado em um site específico, mas pode ser global.
 1. Forneça as seguintes informações nos campos e selecione **Criar**.:
    1. Selecione o **Tipo de configuração** no menu suspenso.

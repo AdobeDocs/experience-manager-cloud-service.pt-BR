@@ -4,7 +4,7 @@ description: Saiba mais sobre as tarefas de manutenção no AEM as a Cloud Servi
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 feature: Operations
 role: Admin
-source-git-commit: 3692cf1b14fda80f35eb34583fbbf6b256a89917
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2043'
 ht-degree: 31%
@@ -267,7 +267,7 @@ Lembre-se de que para que a configuração seja válida:
 * todas as propriedades devem ser definidas. Não há padrões herdados.
 * os tipos (números inteiros, strings, booleanos etc.) nas tabelas de propriedades abaixo devem ser respeitados.
 
-**4** - Criar um pipeline de configuração no Cloud Manager, conforme descrito no [artigo sobre o pipeline de configuração.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+**4** - Criar um pipeline de configuração no Cloud Manager, conforme descrito no [artigo sobre o pipeline de configuração](/help/operations/config-pipeline.md#managing-in-cloud-manager).
 
 ### Remoção da versão {#version-purge}
 

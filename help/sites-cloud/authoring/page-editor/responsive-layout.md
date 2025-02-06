@@ -5,7 +5,7 @@ exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 78%
@@ -137,7 +137,7 @@ Um **Contêiner de layout** é um sistema de parágrafos que:
 
 >[!NOTE]
 >
->Se ainda não estiver disponível, o **Contêiner de layout** deve ser explicitamente [ativado para um sistema/página de parágrafo.](/help/sites-cloud/administering/responsive-layout.md)
+>Se ainda não estiver disponível, o **Contêiner de layout** deve ser ativado explicitamente para um sistema/página de parágrafo](/help/sites-cloud/administering/responsive-layout.md).[
 
 1. O **Contêiner de layout** está disponível como um componente padrão no [Navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Aqui, você pode arrastá-lo até o local desejado na página, onde poderá ver o espaço reservado **Arrastar componentes aqui**.
 1. Em seguida, você pode adicionar componentes ao container de layout. Esses componentes conterão o conteúdo real:
@@ -184,7 +184,7 @@ O modo **Layout** pode ser iniciado de duas maneiras.
 * Ao usar o [modo de menu na barra de ferramentas](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector) e escolher o modo **Layout**
    * Selecione o modo **Layout** da mesma maneira que você alternaria para o modo de **Edição** ou o modo de **Segmentação**.
    * O modo **Layout** permanece persistente e você não sai do modo **Layout** até que você selecione outro modo por meio do seletor de modo.
-* Ao [editar um componente individual.](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout)
+* Ao [editar um componente individual](/help/sites-cloud/authoring/page-editor/edit-content.md#editing-component-layout).
    * Ao usar a opção **Layout** no menu de ação rápida do componente, é possível alternar para o modo **Layout**.
    * O modo **Layout** persiste ao editar o componente e reverte para o modo **Editar** assim que o foco muda para outro componente.
 

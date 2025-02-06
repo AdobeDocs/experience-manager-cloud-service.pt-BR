@@ -5,7 +5,7 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 41abdfcf142a3f39854978c5acf0e5d28872b3c4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '4415'
 ht-degree: 77%
@@ -23,7 +23,7 @@ Quando um autor cria uma página, ele deve selecionar um modelo, que é usado co
 
 >[!NOTE]
 >
->[Os modelos também estão disponíveis para criar páginas editáveis com o Editor Universal.](/help/sites-cloud/authoring/universal-editor/templates.md)
+>[Os modelos também estão disponíveis para criar páginas editáveis com o Editor Universal](/help/sites-cloud/authoring/universal-editor/templates.md).
 
 Com o **Editor de modelos**, criar e manter modelos não é uma tarefa somente para desenvolvedores. Um tipo de usuário avançado, chamado de **autor do modelo**, pode criar modelos. Os desenvolvedores são necessários para configurar o ambiente, criar bibliotecas de clientes e criar os componentes a serem usados, mas uma vez que essas noções básicas estejam em vigor, o **autor do modelo** terá a flexibilidade de criar e configurar modelos sem envolver um desenvolvedor.
 
@@ -95,7 +95,7 @@ Ao criar um modelo editável, você:
 >
 >Nunca insira qualquer informação que deve ser [internacionalizada](/help/implementing/developing/extending/i18n/dev.md) em um modelo.
 >
->Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, aproveite [os recursos de localização dos componentes principais.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR)
+>Para elementos de modelo, como cabeçalhos e rodapés que devem ser localizados, use os [recursos de localização dos componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=pt-BR).
 
 ### Criação de uma pasta de modelo - Administrador {#creating-a-template-folder-admin}
 
@@ -210,7 +210,7 @@ Um modelo pode ser disponibilizado ou indisponibilizado para determinadas ramifi
 
 À medida que o modelo for referenciado quando a página for renderizada, o modelo totalmente configurado deverá ser publicado, para estar disponível no ambiente de publicação.
 
-Modelos do Publish usando o **[Console de Modelos.](/help/sites-cloud/administering/templates-console.md)**
+Modelos do Publish usando o **[Console de Modelos](/help/sites-cloud/administering/templates-console.md)**.
 
 ## Editar modelos - Autores do modelo   {#editing-templates-template-authors}
 
@@ -305,7 +305,7 @@ Após adicionado, cada componente é marcado com:
 
 >[!NOTE]
 >
->Embora não seja idêntico, adicionar componentes e ativos a um modelo tem muitas semelhanças com ações semelhantes ao [criar a página.](/help/sites-cloud/authoring/page-editor/edit-content.md)
+>Embora não seja idêntico, adicionar componentes e ativos a um modelo tem muitas coisa em comum com as ações semelhantes ao [criar a página](/help/sites-cloud/authoring/page-editor/edit-content.md).
 
 #### Ações do componente {#component-actions}
 
@@ -647,4 +647,4 @@ Ao criar modelos, você deve considerar:
    >O AEM emite avisos explícitos ao alterar o status de bloqueio de componentes em modelos que não são mais rascunhos.
 
 1. [Criar suas próprias pastas](#creating-a-template-folder-admin) para modelos específicos do site.
-1. [Publish seus modelos](#publishing-a-template-template-author) do console **[Modelos.]**(/help/sites-cloud/administering/templates-console.md)
+1. [Publish seus modelos](#publishing-a-template-template-author) do **[console Modelos]**(/help/sites-cloud/administering/templates-console.md).

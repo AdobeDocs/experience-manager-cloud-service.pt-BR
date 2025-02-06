@@ -4,7 +4,7 @@ description: Para o Adaptive Forms, você pode adicionar localidades para mais i
 feature: Adaptive Forms, Foundation Components
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1220'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Para adicionar suporte para um novo local no tempo de execução do Adaptive For
 #### 1. Clonar o repositório {#clone-the-repository}
 
 1. Na linha de comando, navegue até o local em que deseja clonar o repositório Cloud Service do Forms.
-1. Execute o comando que você [recuperou do Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) É semelhante a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Execute o comando que você [recuperou do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). É semelhante a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Use o nome de usuário e a senha do Git para clonar o repositório.
 1. Abra a pasta clonada do repositório de Cloud Service do Forms no editor de sua preferência.
 

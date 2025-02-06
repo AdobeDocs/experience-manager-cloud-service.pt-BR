@@ -4,7 +4,7 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) para
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3131'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Faça upload do modelo XFA (arquivo XDP) na instância do AEM Forms. Execute as 
 1. Na janela Propriedades, selecione **[!UICONTROL Modelo de formulário]**.
 1. Na guia **[!UICONTROL Modelo de Formulário]**, no menu suspenso **[!UICONTROL Selecionar de]**, selecione **[!UICONTROL Modelo de Dados de Formulário]**, **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Você também pode selecionar um modelo de formulário ao criar um formulário.
 1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Associar Modelo de Formulário como Documento de Modelo de Registro**. Ao selecionar essa opção, todos os modelos XFA (arquivos XDP) disponíveis em sua máquina são exibidos. Selecione o arquivo apropriado. Além disso, verifique se o mesmo esquema (esquema de dados) é usado para o Formulário adaptável e o modelo XFA selecionado (arquivo XDP).
-1. Clique em **[!UICONTROL Concluído.]**
+1. Clique em **[!UICONTROL Concluído]**
 
 O formulário adaptável agora está configurado para usar um arquivo XDP como modelo para o documento de registro. A próxima etapa é [vincular componentes do Formulário adaptável com campos de modelo correspondentes](#bind-adaptive-form-components-with-template-fields).
 
@@ -57,7 +57,7 @@ Carregue seu PDF Adobe Acrobat (Acroform) na instância do AEM Forms. Execute as
 1. Na janela Propriedades, selecione **[!UICONTROL Modelo de formulário]**.
 1. Na guia **[!UICONTROL Modelo de Formulário]**, no menu suspenso **[!UICONTROL Selecionar de]**, selecione **[!UICONTROL Modelo de Dados de Formulário]**, **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Você também pode selecionar um modelo de formulário ao criar um formulário.
 1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Associar Modelo de Formulário como Documento de Modelo de Registro**. Ao selecionar essa opção, todas as PDF de Acrobat (Acroform) disponíveis em sua máquina são exibidas. Selecione o Acrobat que deseja usar.
-1. Clique em **[!UICONTROL Concluído.]**
+1. Clique em **[!UICONTROL Concluído]**
 
 O formulário adaptável agora está configurado para usar um acroforma como modelo para o documento de registro. A próxima etapa é [vincular componentes do Formulário adaptável com campos de modelo correspondentes](#bind-adaptive-form-components-with-template-fields).
 
@@ -78,7 +78,7 @@ Execute as seguintes etapas para configurar um Formulário adaptável para gerar
 1. Na janela Propriedades, selecione **[!UICONTROL Modelo de formulário]**.
 1. Na guia **[!UICONTROL Modelo de Formulário]**, no menu suspenso **[!UICONTROL Selecionar de]**, selecione **[!UICONTROL Modelo de Dados de Formulário]**, **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Você também pode selecionar um modelo de formulário ao criar um formulário.
 1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Gerar Documento de Registro**.
-1. Clique em **[!UICONTROL Concluído.]**
+1. Clique em **[!UICONTROL Concluído]**
 
 ## Vincular componentes do formulário adaptável a campos de modelo {#bind-adaptive-form-components-with-template-fields}
 

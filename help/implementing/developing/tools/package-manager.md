@@ -4,7 +4,7 @@ description: Saiba mais sobre as noções básicas do gerenciamento de pacotes d
 feature: Administering, Developing
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 7fdb4e3da7172e3a94f105c8b2a46ef77a565532
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3772'
 ht-degree: 3%
@@ -197,7 +197,7 @@ Ao criar regras, você define uma expressão regular (também conhecida como reg
 | include | Incluir incluirá todos os arquivos e pastas no diretório especificado que correspondam à expressão regular. Incluir **não** incluirá outros arquivos ou pastas do caminho raiz especificado. |
 | excluir | Excluir excluirá todos os arquivos e pastas que correspondem à expressão regular. |
 
-Os filtros de pacote geralmente são definidos quando você [cria o pacote pela primeira vez.](#creating-a-new-package) No entanto, eles também podem ser editados mais tarde, depois disso, o pacote deve ser recriado para atualizar seu conteúdo com base nas novas definições de filtro.
+Os filtros de pacote são definidos com mais frequência quando você [cria o pacote](#creating-a-new-package) pela primeira vez. No entanto, eles também podem ser editados posteriormente, após o que o pacote deve ser recriado para atualizar seu conteúdo com base nas novas definições de filtro.
 
 >[!TIP]
 >
@@ -242,7 +242,7 @@ Há muitas ações que podem ser executadas em um pacote.
 
 ### Criação de um pacote {#creating-a-new-package}
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Clique em **Criar Pacote**.
 
@@ -266,7 +266,7 @@ Há muitas ações que podem ser executadas em um pacote.
 
    ![Novo pacote](assets/new-package.png)
 
-1. Clique em **Editar** para definir o conteúdo do pacote [.](#package-contents) Clique em **Salvar** depois que terminar de editar as configurações.
+1. Clique em **Editar** para definir o [conteúdo do pacote](#package-contents). Clique em **Salvar** depois que terminar de editar as configurações.
 
 1. Agora você pode [Criar](#building-a-package) seu pacote.
 
@@ -274,13 +274,13 @@ Não é obrigatório criar o pacote imediatamente após criá-lo. Um pacote não
 
 >[!TIP]
 >
->Para evitar tempos limite, o Adobe recomenda [não criar pacotes grandes.](#package-size)
+>Para evitar tempos limite, o Adobe recomenda [não criar pacotes grandes](#package-size).
 
 ### Criação de um pacote {#building-a-package}
 
 Um pacote é frequentemente criado ao mesmo tempo em que você [cria o pacote](#creating-a-new-package), mas você pode retornar posteriormente para compilar ou recompilar o pacote. Isso pode ser útil se o conteúdo no repositório tiver sido alterado ou os filtros do pacote tiverem sido alterados.
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
@@ -290,13 +290,13 @@ Um pacote é frequentemente criado ao mesmo tempo em que você [cria o pacote](#
 
 >[!TIP]
 >
->Para evitar tempos limite, o Adobe recomenda [não criar pacotes grandes.](#package-size)
+>Para evitar tempos limite, o Adobe recomenda [não criar pacotes grandes](#package-size).
 
 ### Editar um pacote {#edit-package}
 
 Depois que um pacote for carregado para AEM, você poderá modificar suas configurações.
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
@@ -310,7 +310,7 @@ Talvez seja necessário [recompilar o pacote](#building-a-package) para atualiza
 
 Depois que um pacote é criado, ele pode ser empacotado novamente. Reajustar altera as informações do pacote sem alterar a miniatura, a descrição etc., sem alterar o conteúdo do pacote.
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
@@ -324,7 +324,7 @@ Depois que um pacote é criado, ele pode ser empacotado novamente. Reajustar alt
 
 Como cada versão de um pacote aparece na lista como qualquer outro pacote, o Gerenciador de pacotes pode encontrar outras versões de um pacote selecionado.
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
@@ -334,7 +334,7 @@ Como cada versão de um pacote aparece na lista como qualquer outro pacote, o Ge
 
 Depois que um pacote for criado, é possível visualizar o conteúdo.
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
@@ -348,7 +348,7 @@ Depois que um pacote for criado, é possível visualizar o conteúdo.
 
 ### Fazendo download de pacotes para seu sistema de arquivos {#downloading-packages-to-your-file-system}
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
@@ -358,11 +358,11 @@ Depois que um pacote for criado, é possível visualizar o conteúdo.
 
 >[!TIP]
 >
->Para evitar tempos limite, o Adobe recomenda [não criar pacotes grandes.](#package-size)
+>Para evitar tempos limite, o Adobe recomenda [não criar pacotes grandes](#package-size).
 
 ### Fazer upload de pacotes do seu sistema de arquivos {#uploading-packages-from-your-file-system}
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Selecione a pasta de grupo na qual deseja que o pacote seja carregado.
 
@@ -370,7 +370,7 @@ Depois que um pacote for criado, é possível visualizar o conteúdo.
 
 1. Forneça as informações necessárias sobre o pacote carregado.
 
-   ![Caixa de diálogo de carregamento do pacote](assets/package-upload-dialog.png)
+   ![Caixa de diálogo de carregamento de pacote.](assets/package-upload-dialog.png)
 
    * **Pacote** - Use o botão **Procurar...** para selecionar o pacote necessário no sistema de arquivos local.
    * **Forçar Carregamento** - Se um pacote com esse nome já existir, essa opção forçará o carregamento e substituirá o pacote existente.
@@ -381,7 +381,7 @@ O conteúdo do pacote agora existe no AEM, mas para disponibilizá-lo para uso, 
 
 >[!TIP]
 >
->Para evitar tempos limite, o Adobe recomenda [não criar pacotes grandes.](#package-size)
+>Para evitar tempos limite, o Adobe recomenda [não criar pacotes grandes](#package-size).
 
 ### Validação de pacotes {#validating-packages}
 
@@ -471,14 +471,14 @@ Usando as informações fornecidas pela validação, os nós afetados podem ser 
 
 A validação de pacotes pode ser feita de duas maneiras diferentes:
 
-* [Pela interface do usuário do Gerenciador de pacotes](#via-package-manager)
-* [Por solicitação HTTP POST, como com cURL](#via-post-request)
+* [Pela interface do usuário do Gerenciador de Pacotes](#via-package-manager).
+* [Via solicitação POST HTTP, como com cURL](#via-post-request).
 
 A validação sempre deve ocorrer após o upload do pacote, mas antes de instalá-lo.
 
 ##### Validação De Pacote Via Gerenciador De Pacotes {#via-package-manager}
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
@@ -516,7 +516,7 @@ Ao validar por meio da solicitação POST, a resposta é enviada de volta como u
 
 Os pacotes são definidos por seus filtros. O Gerenciador de pacotes pode aplicar filtros de um pacote ao conteúdo existente do repositório para mostrar qual conteúdo do repositório é coberto pela definição de filtro do pacote.
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote na lista de pacotes clicando no nome do pacote.
 
@@ -534,7 +534,7 @@ Fazer upload de um pacote adiciona somente o conteúdo do pacote ao repositório
 
 Antes da instalação do pacote, o Gerenciador de pacotes cria automaticamente um pacote de instantâneos que contém o conteúdo que é substituído. Este snapshot será reinstalado se você desinstalar o pacote.
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote que deseja instalar na lista de pacotes clicando no nome do pacote.
 
@@ -556,7 +556,7 @@ Quando a instalação for concluída com êxito, a lista de pacotes será atuali
 
 ### Reinstalação de pacotes {#reinstalling-packages}
 
-A reinstalação de pacotes executa as mesmas etapas em um pacote já instalado que são processadas quando o [instala inicialmente o pacote.](#installing-packages)
+A reinstalação de pacotes executa as mesmas etapas em um pacote já instalado que são processadas ao [instalar inicialmente o pacote](#installing-packages).
 
 ### Upload e instalação baseados no sistema de arquivos {#file-system-based-upload-and-installation}
 
@@ -576,7 +576,7 @@ Se a instância não estiver em execução, os pacotes colocados na pasta `insta
 
 A desinstalação do pacote reverte o conteúdo do repositório para o instantâneo criado automaticamente pelo Gerenciador de Pacotes antes da instalação.
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote que deseja desinstalar na lista de pacotes clicando no nome do pacote.
 
@@ -590,7 +590,7 @@ A desinstalação do pacote reverte o conteúdo do repositório para o instantâ
 
 A exclusão de um pacote exclui somente seus detalhes do Gerenciador de pacotes. Se esse pacote já tiver sido instalado, o conteúdo instalado não será excluído.
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote que deseja excluir na lista de pacotes clicando no nome do pacote.
 
@@ -602,7 +602,7 @@ A exclusão de um pacote exclui somente seus detalhes do Gerenciador de pacotes.
 
 Replicar o conteúdo de um pacote para instalá-lo na instância de publicação.
 
-1. [Acesse o Gerenciador de pacotes.](#accessing)
+1. [Acessar Gerenciador de Pacotes](#accessing).
 
 1. Abra os detalhes do pacote que deseja replicar na lista de pacotes clicando no nome do pacote.
 
@@ -614,6 +614,6 @@ Replicar o conteúdo de um pacote para instalá-lo na instância de publicação
 
 Os pacotes AEM podem ser usados para criar e compartilhar conteúdo em ambientes AEMaaCS.
 
-A [Distribuição de Software](https://downloads.experiencecloud.adobe.com) fornece pacotes AEM para uso no SDK AEM de desenvolvimento local. Os pacotes de AEM fornecidos na Distribuição de software não devem ser instalados em ambientes de nuvem do AEMaaCS, a menos que expressamente aprovado pelo Suporte do Adobe.
+A [Distribuição de Software](https://downloads.experiencecloud.adobe.com) fornece pacotes AEM para uso no AEM SDK de desenvolvimento local. Os pacotes de AEM fornecidos na Distribuição de software não devem ser instalados em ambientes de nuvem do AEMaaCS, a menos que expressamente aprovado pelo Suporte do Adobe.
 
-Para obter mais informações, consulte a [documentação de Distribuição de Software.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br)
+Para obter mais informações, consulte a [documentação de Distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br).

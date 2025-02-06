@@ -5,10 +5,10 @@ topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 feature: Operations
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3088'
-ht-degree: 43%
+ht-degree: 40%
 
 ---
 
@@ -30,7 +30,7 @@ Além disso, ao projetar uma taxonomia, é importante considerar se a ordenaçã
 
 ### Consultas em componentes {#queries-in-components}
 
-Como as consultas podem ser uma das operações mais exigentes realizadas em um sistema AEM, é recomendável evitá-las em seus componentes. A execução de várias consultas cada vez que uma página é renderizada pode prejudicar o desempenho do sistema. Há duas estratégias que podem ser usadas para evitar a execução de consultas ao renderizar componentes: **[nós de passagem](#traversing-nodes)** e **[resultados de busca prévia.](#prefetching-results)**
+Como as consultas podem ser uma das operações mais exigentes realizadas em um sistema AEM, é recomendável evitá-las em seus componentes. A execução de várias consultas cada vez que uma página é renderizada pode prejudicar o desempenho do sistema. Há duas estratégias que podem ser usadas para evitar a execução de consultas ao renderizar componentes: **[nós de passagem](#traversing-nodes)** e **[resultados da busca prévia](#prefetching-results)**.
 
 ### Nós de passagem {#traversing-nodes}
 
@@ -62,14 +62,14 @@ Uma estratégia semelhante pode ser usada para manter o resultado em uma memóri
 
 ## Otimização de consultas {#optimizing-queries}
 
-A documentação do Oak fornece uma [visão geral de alto nível de como as consultas são executadas.](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing) Isso forma a base de todas as atividades de otimização descritas neste documento.
+A documentação do Oak fornece uma [visão geral de alto nível de como as consultas são executadas](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#query-processing). Isso forma a base de todas as atividades de otimização descritas neste documento.
 
 A AEM as a Cloud Service fornece a [Ferramenta de Desempenho de Consulta](#query-performance-tool), que foi projetada para oferecer suporte à implementação de consultas eficientes.
 
 * Ela exibe consultas já executadas com suas características de desempenho relevantes e o plano de consulta.
 * Ela permite executar consultas ad-hoc em vários níveis, desde a exibição do plano de consulta até a execução da consulta completa.
 
-A Ferramenta de desempenho de consulta pode ser acessada por meio do [Console do desenvolvedor no Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries) A Ferramenta de desempenho de consulta do AEM as a Cloud Service fornece mais detalhes sobre a execução da consulta do que a versão AEM 6.x.
+A Ferramenta de Desempenho da Consulta pode ser acessada por meio da [Developer Console no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR#queries). A Ferramenta de desempenho de consulta da AEM as a Cloud Service fornece mais informações sobre os detalhes da execução da consulta na versão AEM 6.x.
 
 Este gráfico ilustra o fluxo geral de uso da Ferramenta de desempenho de consulta na otimização de consultas.
 

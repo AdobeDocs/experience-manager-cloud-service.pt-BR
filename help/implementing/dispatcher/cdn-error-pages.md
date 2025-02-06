@@ -4,7 +4,7 @@ description: Saiba como substituir a página de erro padrão hospedando arquivos
 feature: Dispatcher
 exl-id: 1ecc374c-b8ee-41f5-a565-5b36445d3c7c
 role: Admin
-source-git-commit: 137ea509de353f9f800f0b64bb8f2f6375e7d83d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Configuração de páginas de erro do CDN {#cdn-error-pages}
 
-No evento improvável de que o [CDN gerenciado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) não possa atingir a origem AEM, o CDN por padrão fornece uma página de erro genérica e sem marca que indica que o servidor não pode ser alcançado. Você pode substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de Blob do Azure, e fazendo referência a eles em um arquivo de configuração implantado usando o pipeline de configuração [do Cloud Manager.](/help/operations/config-pipeline.md#managing-in-cloud-manager)
+No evento improvável de que o [CDN gerenciado por Adobe](/help/implementing/dispatcher/cdn.md#aem-managed-cdn) não possa atingir a origem AEM, o CDN por padrão fornece uma página de erro genérica e sem marca que indica que o servidor não pode ser alcançado. Você pode substituir a página de erro padrão hospedando arquivos estáticos no armazenamento auto-hospedado, como o Amazon S3 ou o Armazenamento de Blob do Azure, e fazendo referência a eles em um arquivo de configuração implantado com o uso do [pipeline de configuração](/help/operations/config-pipeline.md#managing-in-cloud-manager) do Cloud Manager.
 
 ## Configurar {#setup}
 

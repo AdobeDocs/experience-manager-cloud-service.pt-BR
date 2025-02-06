@@ -4,10 +4,10 @@ description: Saiba mais sobre como o Cloud Manager dá suporte ao seu projeto do
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '864'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -22,7 +22,7 @@ O administrador do sistema é responsável pela configuração da equipe do Clou
 
 Siga estas etapas para acessar o Cloud Manager.
 
-1. Acesse a página de logon do Cloud Manager em [`https://my.cloudmanager.adobe.com`.](https://my.cloudmanager.adobe.com/)
+1. Acesse a página de logon do Cloud Manager em [`https://my.cloudmanager.adobe.com`](https://my.cloudmanager.adobe.com/).
 
 1. Selecione o programa na página **Programas e produtos** do Cloud Manager para abrir a página **Visão geral**.
 
@@ -38,7 +38,7 @@ Também é possível navegar até a página Programas e produtos do Cloud Manage
 
 ## Permissões com base em funções no Cloud Manager {#role-based-permissions}
 
-| Permissão | Descrição | Proprietário da empresa | Gerente de implantação | Gerente de programas | Desenvolvedor |
+| Permissão | Descrição | Proprietário da empresa | Gerenciador de implantação | Gerenciador de programas | Desenvolvedor |
 |--- |--- |--- |--- |--- |--- |
 | Adicionar programa<br>Editar programa | Adicionar um novo programa<br>Adicionar ou remover soluções ou complementos | x |  |  |  |
 | Criar ambiente | Criar ambientes de produção+preparo e desenvolvimento | x | x |  |  |

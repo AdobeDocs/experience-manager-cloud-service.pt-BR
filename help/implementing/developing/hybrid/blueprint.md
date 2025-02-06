@@ -4,7 +4,7 @@ description: Este documento descreve o contrato geral e independente de estrutur
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 1%
@@ -81,7 +81,7 @@ O modelo de página usa o Exportador de Modelo JSON, que é baseado na API [Mode
 * `:itemsOrder`: lista ordenada dos filhos. O objeto de mapa JSON não garante a ordem de seus campos. Com o mapa e o array atual, o consumidor da API tem os benefícios de ambas as estruturas
 * `:path`: Caminho de conteúdo de um item (presente nos itens que representam uma página)
 
-Consulte também [Introdução aos Serviços de Conteúdo AEM.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+Consulte também [Introdução aos Serviços de Conteúdo AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR).
 
 ### Módulo específico da estrutura {#framework-specific-module}
 

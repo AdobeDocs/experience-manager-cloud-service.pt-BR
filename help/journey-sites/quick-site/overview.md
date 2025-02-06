@@ -5,10 +5,10 @@ exl-id: b8218232-0298-4b16-9dab-fa59be592a24
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1020'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -26,7 +26,7 @@ Eliminando a necessidade de qualquer conhecimento de desenvolvedor para a criaç
 
 ## Visão geral do vídeo {#video-overview}
 
-Para obter uma visão geral rápida desse recurso em ação, [assista a esta introdução de cinco minutos.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
+Para obter uma visão geral rápida deste recurso em ação, [você pode assistir a esta introdução de cinco minutos](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw).
 
 Essa jornada de documentação o conduzirá através de todos os recursos no vídeo passo a passo e em detalhes para que você entenda o fluxo de trabalho e possa recriar o processo no seu próprio ambiente.
 
@@ -70,7 +70,7 @@ Agora você está pronto para começar a usar a jornada de Criação rápida de 
 
 * Se você for um(a) admin do AEM ou do Cloud Manager, se ocupa ambas as funções de desenvolvedor(a) de front-end e admin ou se quiser apenas entender o processo do AEM de ponta a ponta, inicie a jornada desde a seção [Entenda o Cloud Manager](cloud-manager.md), disponível abaixo.
 * Se você for responsável apenas pelo desenvolvimento de front-end e vai interagir com os administradores do AEM e do Cloud Manager, pule diretamente para [Recupere informações de acesso do repositório Git](retrieve-access.md) para obter acesso ao repositório Git do AEM e começar a personalizar.
-* Se você já entende que o AEM Sites e o Cloud Manager trabalham juntos e quer começar diretamente com a configuração, você pode [pular diretamente para a criação de um site a partir de um modelo.](create-site.md)
+* Se você já entende que o AEM Sites e o Cloud Manager trabalham juntos e quer começar diretamente com a configuração, você pode [pular diretamente para a criação de um site a partir de um modelo](create-site.md).
 
 ## Recursos adicionais {#additional-resources}
 

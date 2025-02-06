@@ -4,16 +4,16 @@ description: Antes de começar o processo de integração, há várias etapas pr
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 88%
+ht-degree: 83%
 
 ---
 
 # Preparação para a integração {#onboarding-preparation}
 
-Depois de ler o artigo [Introdução à jornada de integração do AEM as a Cloud Service](overview.md), agora você sabe o que o espera e provavelmente está pronto para começar. No entanto, antes de começar o processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender para fazer logon no sistema.
+Depois de ler o artigo [Introdução à Jornada de integração do AEM as a Cloud Service](overview.md), agora você sabe o que o espera e provavelmente está pronto para começar. No entanto, antes de começar o processo de integração, há várias etapas preparatórias que o administrador do sistema deve entender para fazer logon no sistema.
 
 ## Objetivo {#objective}
 

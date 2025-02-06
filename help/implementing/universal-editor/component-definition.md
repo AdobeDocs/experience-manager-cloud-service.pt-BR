@@ -4,7 +4,7 @@ description: Entenda o contrato JSON entre a definição do componente e o Edito
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '545'
 ht-degree: 0%
@@ -21,7 +21,7 @@ O arquivo `component-definition.json` define os componentes disponíveis para se
 
 >[!TIP]
 >
->Para obter uma visão geral do processo de modelagem de conteúdo, consulte o documento [Modelagem de Conteúdo para Criação no WYSIWYG com Projetos Edge Delivery Services.](/help/edge/wysiwyg-authoring/content-modeling.md)
+>Para obter uma visão geral do processo de modelagem de conteúdo, consulte o documento [Modelagem de Conteúdo para Criação no WYSIWYG com Projetos Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
@@ -67,7 +67,7 @@ Veja a seguir um exemplo completo, mas simples de `component-definition.json`.
 
 ## `groups` {#groups}
 
-`groups` define os grupos de componentes que o autor vê no Editor Universal ao clicar no ícone **Adicionar** no painel de propriedades do editor para [adicionar um novo componente a uma página.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components) Grupos ajudam a organizar os componentes. Os grupos comuns podem ser **Componentes Gerais** e **Componentes Avançados**.
+`groups` define os grupos de componentes que o autor vê no Editor Universal ao clicar no ícone **Adicionar** no painel de propriedades do editor para [adicionar um novo componente a uma página](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components). Grupos ajudam a organizar os componentes. Os grupos comuns podem ser **Componentes Gerais** e **Componentes Avançados**.
 
 * `title` define a descrição textual do grupo mostrado na interface do usuário do editor.
 * `id` identifica exclusivamente o grupo.
@@ -94,7 +94,7 @@ Veja a seguir um exemplo completo, mas simples de `component-definition.json`.
 Depois que o `plugin` é definido, é necessário indicar se ele está relacionado à página ou ao fragmento.
 
 * `page` indica que o componente é conteúdo na página atual.
-* `cf` indica que o componente está relacionado ao conteúdo em um [Fragmento de conteúdo.](/help/assets/content-fragments/content-fragments.md)
+* `cf` indica que o componente está relacionado ao conteúdo em um [Fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md).
 
 ### `page` {#page}
 

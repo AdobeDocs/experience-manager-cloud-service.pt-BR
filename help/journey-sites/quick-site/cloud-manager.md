@@ -5,10 +5,10 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: d6ecdae8dd78c3c93a410ca2c8b80322340f439e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1113'
-ht-degree: 96%
+ht-degree: 88%
 
 ---
 
@@ -31,7 +31,7 @@ Este documento ajuda você a entender como a ferramenta de Criação rápida de 
 
 Este documento se concentra no entendimento dessas partes fundamentais da solução de Criação rápida de sites antes de passar para a próxima etapa da jornada, onde iniciaremos a configuração.
 
-Embora seja recomendável prosseguir com essa jornada passo a passo, se você já compreende que o AEM Sites e o Cloud Manager trabalham juntos e deseja começar diretamente com a configuração, é possível [pular para a próxima etapa da jornada.](create-site.md)
+Embora seja recomendável prosseguir com esta jornada passo a passo, se você já compreende que o AEM Sites e o Cloud Manager trabalham juntos e deseja começar diretamente com a configuração, é possível [pular para a próxima etapa da jornada](create-site.md).
 
 ## Função de responsabilidade {#responsible-role}
 
@@ -126,7 +126,7 @@ Desenvolva esse conhecimento e prossiga com sua jornada de Criação Rápida de 
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de Criação rápida de sites revisando o documento [Criar site a partir de modelo,](create-site.md) os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
+Embora seja recomendável seguir para a próxima parte da jornada de Criação Rápida de Sites revisando o documento [Criar Site a partir de Modelo](create-site.md), os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
 
 * [Documentação do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=pt_BR) - se quiser obter mais detalhes sobre os recursos do Cloud Manager, consulte diretamente os documentos técnicos detalhados.
 * [Permissões baseadas em função](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=pt_BR) - o Cloud Manager tem funções pré-configuradas com permissões apropriadas. Consulte este documento para obter detalhes sobre estas funções e sobre como administrá-las.

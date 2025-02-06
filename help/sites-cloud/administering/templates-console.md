@@ -4,13 +4,13 @@ description: Saiba como o console de modelos serve como local central para exibi
 solution: Experience Manager Sites
 feature: Administering
 role: User
-source-git-commit: 993f81e0ff2b71ce2edf59a2c74398db3abe8f06
+exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 1%
 
 ---
-
 
 # O console Modelos {#templates-console}
 
@@ -20,7 +20,7 @@ Saiba como o console de modelos serve como local central para exibir e gerenciar
 
 Ao criar uma página, é necessário selecionar um modelo. O modelo de página é usado como a base da nova página. [os modelos editáveis do AEM](/help/implementing/developing/components/templates.md) podem definir a estrutura da página resultante, qualquer conteúdo inicial e os componentes que podem ser usados (propriedades de design).
 
-Os autores de conteúdo recebem uma seleção de modelos disponíveis quando [criam novas páginas no console de sites.](/help/sites-cloud/authoring/sites-console/creating-pages.md) Modelos podem ser usados para criar páginas editáveis com:
+Os autores de conteúdo recebem uma seleção de modelos disponíveis quando [criam novas páginas no console de sites](/help/sites-cloud/authoring/sites-console/creating-pages.md). Os modelos podem ser usados para criar páginas editáveis com:
 
 * [O Editor de Página](/help/sites-cloud/authoring/page-editor/templates.md) ou
 * [O Editor universal](/help/sites-cloud/authoring/universal-editor/templates.md)
@@ -73,7 +73,7 @@ Se um autor iniciar em um modelo criado com o editor de modelo que já foi ativa
 
 ## Propriedades {#properties}
 
-Você pode editar as [propriedades do modelo](/help/sites-cloud/authoring/page-editor/templates.md) da mesma forma que pode [editar as propriedades da página.As propriedades do modelo ](/help/sites-cloud/authoring/sites-console/page-properties.md) incluem:
+Você pode editar as [propriedades do modelo](/help/sites-cloud/authoring/page-editor/templates.md) da mesma forma que pode [editar as propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md).As propriedades do modelo incluem:
 
 * Título do modelo
 * Descrição
@@ -135,6 +135,6 @@ Selecione o modelo e toque ou clique em **Excluir** para excluí-lo.
 
 ## Criação de modelos {#create}
 
-Use o botão **Criar** no console para criar um novo modelo no local atual. Para obter detalhes sobre como criar um modelo, consulte o documento [Modelos para Criar Páginas Editáveis com o Editor de Páginas.](/help/sites-cloud/authoring/page-editor/templates.md)
+Use o botão **Criar** no console para criar um novo modelo no local atual. Para obter detalhes sobre como criar um modelo, consulte o documento [Modelos para criar páginas editáveis com o editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md).
 
 O botão **Criar** é usado apenas para criar modelos que são editáveis com o Editor de Páginas. Consulte o documento [Modelos para Criar Páginas Editáveis com o Editor Universal](/help/sites-cloud/authoring/universal-editor/templates.md) para saber mais sobre como criar modelos com base em páginas criadas com o Editor Universal.

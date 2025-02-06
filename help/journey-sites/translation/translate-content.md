@@ -8,10 +8,10 @@ exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2526'
-ht-degree: 73%
+ht-degree: 66%
 
 ---
 
@@ -76,7 +76,7 @@ Você receberá uma mensagem informando que o projeto foi criado.
 
 >[!NOTE]
 >
->Pressupõe-se que a estrutura necessária para os idiomas das traduções já tenha sido criada como parte da [definição da estrutura de conteúdo.](getting-started.md#content-structure) Isso deve ser feito em colaboração com o arquiteto de conteúdo.
+>Pressupõe-se que a estrutura necessária para os idiomas das traduções já tenha sido criada como parte da [definição da sua estrutura de conteúdo](getting-started.md#content-structure). Isso deve ser feito em colaboração com o arquiteto de conteúdo.
 >
 >Se as pastas de idioma não forem criadas com antecedência, você não será capaz de criar cópias de idioma conforme descrito nas etapas anteriores.
 
@@ -126,7 +126,7 @@ O projeto é dividido em vários cartões.
 
 * **Resumo** — este cartão mostra as informações básicas do cabeçalho do projeto, incluindo o proprietário, o idioma e o provedor de tradução.
 * **Tarefa de tradução** - Este cartão ou estes cartões apresentam uma visão geral do trabalho de tradução real, incluindo o status, o número de ativos, etc. Geralmente, há uma tarefa por idioma com o código de idioma ISO-2 anexado ao nome da tarefa.
-   * Ao [criar trabalhos de tradução automaticamente,](#automatically-creating) o AEM cria os trabalhos de forma assíncrona e eles podem não aparecer imediatamente no projeto.
+   * Ao [criar trabalhos de tradução automaticamente](#automatically-creating), o AEM cria os trabalhos de forma assíncrona e eles podem não aparecer imediatamente no projeto.
 * **Equipe** — este cartão mostra os usuários que estão colaborando neste projeto de tradução. Essa jornada não aborda esse tópico.
 * **Tarefas** — tarefas adicionais associadas à tradução do conteúdo, como itens por fazer ou itens de fluxo de trabalho. Essa jornada não aborda esse tópico.
 
@@ -175,7 +175,7 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 
 >[!NOTE]
 >
->Se você não desativou a opção de projeto **Excluir lançamento após promoção** como [descrito na seção anterior,](#using-translation-project) os itens traduzidos aparecerão com o estado **Excluído**. Isso é normal, pois o AEM descarta automaticamente os registros de tradução quando os itens traduzidos chegam. Os itens traduzidos foram importados como cópias de idioma. Somente os registros de tradução foram excluídos, pois não são mais necessários.
+>Se você não desativou a opção de projeto **Excluir Inicialização Após Promoção** como [descrito na seção anterior](#using-translation-project), os itens traduzidos aparecerão com o estado **Excluído**. Isso é normal, pois o AEM descarta automaticamente os registros de tradução quando os itens traduzidos chegam. Os itens traduzidos foram importados como cópias de idioma. Somente os registros de tradução foram excluídos, pois não são mais necessários.
 >
 >Não se preocupe se isso não está claro. Este é um detalhamento aprofundado de como o AEM funciona e não afeta sua compreensão da jornada. Se quiser se aprofundar em como o AEM processa traduções, consulte a seção [recursos adicionais](#additional-resources) no final deste artigo.
 
@@ -213,7 +213,7 @@ Para adicionar conteúdo a uma tarefa de tradução:
 >
 >O navegador de caminho é uma ferramenta poderosa que permite pesquisar, filtrar e navegar pelo seu conteúdo. Selecione o botão **Somente conteúdo/Filtros** para alternar o painel lateral e revelar filtros avançados como **Data de Modificação** ou **Status da Tradução**.
 >
->Você pode saber mais sobre o navegador de caminho na [seção recursos adicionais.](#additional-resources)
+>Você pode saber mais sobre o navegador de caminho na [seção de recursos adicionais](#additional-resources).
 
 Você pode usar as etapas anteriores para adicionar o conteúdo necessário a todos os idiomas (tarefas) do projeto. Após selecionar todo o conteúdo, você pode iniciar a tradução.
 
@@ -235,13 +235,13 @@ As traduções automáticas retornam automaticamente com um estado de **Aprovado
 
 >[!NOTE]
 >
->Se você não desativou a opção de projeto **Excluir lançamento após promoção** como [descrito na seção anterior,](#using-translation-project) os itens traduzidos aparecerão com o estado **Excluído**. Isso é normal, pois o AEM descarta automaticamente os registros de tradução quando os itens traduzidos chegam. Os itens traduzidos foram importados como cópias de idioma. Somente os registros de tradução foram excluídos, pois não são mais necessários.
+>Se você não desativou a opção de projeto **Excluir Inicialização Após Promoção** como [descrito na seção anterior](#using-translation-project), os itens traduzidos aparecerão com o estado **Excluído**. Isso é normal, pois o AEM descarta automaticamente os registros de tradução quando os itens traduzidos chegam. Os itens traduzidos foram importados como cópias de idioma. Somente os registros de tradução foram excluídos, pois não são mais necessários.
 >
 >Não se preocupe se isso não está claro. Este é um detalhamento aprofundado de como o AEM funciona e não afeta sua compreensão da jornada. Se quiser se aprofundar em como o AEM processa traduções, consulte a seção [recursos adicionais](#additional-resources) no final deste artigo.
 
 ## Revisar conteúdo traduzido {#reviewing}
 
-[Como visto anteriormente,](#using-translation-project) o conteúdo de tradução automática volta ao AEM com o status de **Aprovado**, pois se presume que, devido à utilização de tradução automática, não é necessária qualquer intervenção humana. No entanto, ainda é possível revisar o conteúdo traduzido.
+[Como visto anteriormente](#using-translation-project), o conteúdo de tradução automática volta ao AEM com o status **Aprovado**, pois se presume que, devido à utilização de tradução automática, não é necessária qualquer intervenção humana. No entanto, ainda é possível revisar o conteúdo traduzido.
 
 Basta ir até o trabalho de tradução concluído e selecionar um item da linha tocando ou clicando na caixa de seleção. O ícone **Visualizar no Sites** é exibido na barra de ferramentas.
 
@@ -285,7 +285,7 @@ Desenvolva esse conhecimento e prossiga com sua jornada de tradução do AEM Sit
 
 ## Recursos adicionais {#additional-resources}
 
-Embora seja recomendável seguir para a próxima parte da jornada de tradução revisando o documento [Publicar conteúdo traduzido,](publish-content.md) a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada.
+Embora seja recomendável seguir para a próxima parte da jornada de tradução revisando o documento [Conteúdo traduzido do Publish](publish-content.md), os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
 
 * [Gerenciamento de projetos de tradução](/help/sites-cloud/administering/translation/managing-projects.md) - Saiba mais sobre os detalhes de projetos de tradução e recursos adicionais, como fluxos de trabalho de tradução humana e projetos multilíngues.
 * [Ambiente e ferramentas de criação](/help/sites-cloud/authoring/path-selection.md#path-selection) - O AEM fornece vários mecanismos para organização e edição de conteúdo, incluindo um navegador de caminhos robusto.

@@ -4,7 +4,7 @@ description: Saiba como a criação de conteúdo funciona com Edge Delivery Serv
 feature: Edge Delivery Services
 exl-id: 963ff71a-8176-4d9d-8240-dc429405d139
 role: User
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 Com o Edge Delivery Services, a criação é fácil, rápida e flexível. Há duas opções para criar conteúdo para Edge Delivery Services:
 
 * [Editor universal](#universal-editor) - Uma interface do WYSIWYG (what-you-see-is-what-you-get, interface do usuário moderna para a criação de conteúdo no AEM
-* [Criação Baseada em Documento](#document-based) - Como os documentos do Microsoft Word ou Google
+* [Criação Baseada em Documento](#document-based) - Como Microsoft Word ou Google Docs
 
 ## Criação no Editor universal {#universal-editor}
 
@@ -48,7 +48,7 @@ Os detalhes dos blocos podem ser configurados no painel Propriedades.
 
 ![Configurando propriedades de bloco](assets/block-properties.png)
 
-Para obter detalhes sobre como criar usando o Universal Editor, consulte o documento [Criação de Conteúdo com o Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+Para obter detalhes sobre como criar usando o Editor Universal, consulte o documento [Criação de Conteúdo com o Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 Consulte o [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para saber como iniciar seu próprio projeto para criar com AEM e Edge Delivery Services.
 

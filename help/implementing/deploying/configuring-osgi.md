@@ -4,7 +4,7 @@ description: Configuração OSGi com valores secretos e valores específicos do 
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 role: Admin
-source-git-commit: 1289da67452be7fc0fa7f3126d2a3dbf051aa9b5
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3321'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Você pode gerenciar as definições de configuração dos componentes OSGi por 
 
 >[!TIP]
 >
->Você pode usar o Cloud Manager para configurar variáveis de ambiente. Para obter mais informações, consulte a documentação [aqui.](/help/implementing/cloud-manager/environment-variables.md)
+>Você pode usar o Cloud Manager para configurar variáveis de ambiente. Para obter mais informações, consulte a documentação [aqui](/help/implementing/cloud-manager/environment-variables.md).
 
 ## Arquivos de configuração do OSGi {#osgi-configuration-files}
 
@@ -187,7 +187,7 @@ Os nomes de arquivo de fábrica de configuração OSGi usam a convenção de nom
 1. Salve as alterações no novo arquivo `.cfg.json`
 1. Adicione e confirme o novo arquivo de configuração OSGi no Git
 
-### Gerar configurações OSGi usando o Quickstart do SDK do AEM {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
+### Gerar configurações OSGi usando o Quickstart do AEM SDK {#generating-osgi-configurations-using-the-aem-sdk-quickstart}
 
 O console da Web AEM do AEM SDK Quickstart Jar pode ser usado para configurar componentes OSGi e exportar configurações OSGi como JSON. Isso é útil para configurar componentes OSGi fornecidos pelo AEM cujas propriedades OSGi e seus formatos de valor podem não ser bem compreendidos pelo desenvolvedor que define as configurações OSGi no projeto AEM.
 
@@ -195,7 +195,7 @@ O console da Web AEM do AEM SDK Quickstart Jar pode ser usado para configurar co
 >
 >A interface de configuração do console da Web AEM grava `.cfg.json` arquivos no repositório. Portanto, esteja ciente desse fluxo de trabalho para evitar um comportamento potencial inesperado durante o desenvolvimento local, quando as configurações OSGi definidas pelo projeto AEM puderem diferir das configurações geradas.
 
-1. Faça logon no console da Web AEM do AEM do SDK do em `https://<host>:<port>/system/console` como o usuário administrador
+1. Faça logon no console da Web AEM do SDK Quickstart Jar no AEM em `https://<host>:<port>/system/console` como o usuário administrador
 1. Navegue até **OSGi** > **Configuração**
 1. Para configurar, localize o componente OSGi e selecione o título para editar
    ![Configuração OSGi](./assets/configuring-osgi/configuration.png)

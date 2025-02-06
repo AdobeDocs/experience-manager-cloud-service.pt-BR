@@ -4,7 +4,7 @@ description: Introdução à arquitetura do Adobe Experience Manager as a Cloud 
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: a5179851af8ec88e23d79a74265b10cbce2d50f1
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2713'
 ht-degree: 11%
@@ -70,7 +70,7 @@ Há quatro tipos de [ambiente](/help/implementing/cloud-manager/manage-environme
 
 Um programa AEM também pode ser configurado com os [Edge Delivery Services](/help/edge/overview.md).
 
-Depois de configurado, o AEM pode fazer referência aos repositórios de código do GitHub usados para criar as experiências com o Edge Delivery Services. Como resultado, novas opções de configuração ficam disponíveis para as experiências associadas. Isso inclui a configuração da CDN gerenciada por Adobe e o acesso a métricas de licenciamento ou relatórios de SLA.
+Depois de configurado, o AEM pode fazer referência aos repositórios de código do GitHub usados para criar as experiências com o Edge Delivery Services. Como resultado, novas opções de configuração ficam disponíveis para as experiências associadas. Isso inclui configurar o CDN gerenciado por Adobe e acessar métricas de licenciamento ou relatórios do SLA.
 
 ## Arquitetura do serviço {#service-architecture}
 
@@ -87,7 +87,7 @@ Fornece uma interface baseada na Web (com APIs associadas) para o gerenciamento 
 * O nível de criação baseado em documentos:
 Permite criar conteúdo usando aplicativos padrão, como:
    * Microsoft Word e Excel - via SharePoint
-   * Documentação e folhas do Google - via Google Drive
+   * Google Docs e Sheets - via Google Drive
 
 Para entrega de experiência, ao usar o AEM Sites ou o AEM Forms, também há dois conjuntos principais de serviços, não mutuamente exclusivos e que operam em uma CDN (Content Delivery Network) gerenciada por Adobe compartilhado como origens diferentes:
 
@@ -180,7 +180,7 @@ O código e a configuração de projetos AEM são armazenados em um repositório
    * Para armazenar o código Java do lado do servidor e as configurações OSGI para os níveis de criação e publicação do AEM.
 * Front-end AEM:
    * Para armazenar o código JS, CSS e HTML do lado do cliente para os níveis de criação e publicação do AEM.
-Para obter mais detalhes sobre clientlibs, consulte [Usando bibliotecas do lado do cliente no AEM as a Cloud Service.](/help/implementing/developing/introduction/clientlibs.md)
+Para obter mais detalhes sobre clientlibs, consulte [Usando bibliotecas do lado do cliente no AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 * Camada da Web no AEM:
    * Armazena os arquivos de configuração do Dispatcher para o nível de publicação AEM.
 * Configuração do AEM:

@@ -5,10 +5,10 @@ feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
 solution: Experience Manager Sites
-source-git-commit: 92c0e556eb1f92dadd396a479a8bf933715935a7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 91%
+ht-degree: 86%
 
 ---
 
@@ -30,7 +30,7 @@ Os sites criados com modelos de site do AEM permitem fácil download, personaliz
 
 Os temas de site são usados de duas maneiras diferentes:
 
-* Eles são usados como parte de um modelo de site para definir o estilo durante a [criação de um site.](create-site.md)
+* Eles são usados como parte de um modelo de site para definir o estilo ao [criar um site](create-site.md).
 * Eles são baixados depois de criar um site com base em um modelo de site, para que um desenvolvedor de front-end possa personalizar ainda mais o estilo.
 
 >[!TIP]

@@ -4,7 +4,7 @@ description: Com um design responsivo, as mesmas experiências podem ser exibida
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -73,7 +73,7 @@ O [tutorial do WKND](develop-wknd-tutorial.md) usa essa estratégia para definir
 
 ### Uso de consultas de mídia com páginas AEM {#using-media-queries-with-aem-pages}
 
-[O projeto de amostra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e o [Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) usam o [Componente principal de Página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), que inclui as clientlibs por meio da política de página.
+[O projeto de amostra WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e o [Arquétipo de projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) usam o [Componente principal de página](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/page.html), que inclui as clientlibs por meio da política de página.
 
 Se o seu próprio componente de página não for baseado no Componente principal de página, você também poderá incluir a pasta da biblioteca do cliente no script HTL ou JSP dele. Isso gerará e referenciará o arquivo CSS com as consultas de mídia necessárias para que a grade responsiva funcione.
 

@@ -5,10 +5,10 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1305'
-ht-degree: 87%
+ht-degree: 85%
 
 ---
 
@@ -113,7 +113,7 @@ Se você quiser usar o Sistema de estilos em seus próprios componentes, faça o
 
 Os Componentes principais versão 2 e posteriores estão habilitados para se beneficiarem do Sistema de estilos e não exigem configuração adicional.
 
-As etapas a seguir são necessárias apenas para ativar o Sistema de estilos para os seus próprios componentes personalizados ou para [habilitar a guia Estilos opcional na caixa de diálogo Editar.](#enable-styles-tab-edit)
+As etapas a seguir são necessárias apenas para habilitar o Sistema de Estilos para os seus próprios componentes personalizados ou para [habilitar a guia Estilos opcional na caixa de diálogo Editar](#enable-styles-tab-edit).
 
 ### Habilitar guia Estilo na caixa de diálogo Design {#enable-styles-tab-design}
 

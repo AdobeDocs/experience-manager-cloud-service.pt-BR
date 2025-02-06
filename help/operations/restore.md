@@ -4,10 +4,10 @@ description: Saiba como restaurar conteúdo do backup no AEM as a Cloud Service 
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 50%
+source-wordcount: '1338'
+ht-degree: 49%
 
 ---
 
@@ -31,7 +31,7 @@ Em ambos os casos, a versão do código personalizado e a versão do AEM permane
 
 >[!TIP]
 >
->Também é possível restaurar backups [usando a API pública.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/)
+>Também é possível restaurar backups [usando a API pública](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/).
 
 >[!WARNING]
 >
@@ -43,10 +43,10 @@ Em ambos os casos, a versão do código personalizado e a versão do AEM permane
 
 Antes de restaurar para uma restauração completa do conteúdo, considere essas opções para restaurar seu conteúdo com mais facilidade.
 
-* Se um pacote para o caminho excluído estiver disponível, instale-o novamente usando o [Gerenciador de Pacotes.](/help/implementing/developing/tools/package-manager.md)
-* Se o caminho excluído era uma página no Sites, use a função [Restaurar Árvore.](/help/sites-cloud/authoring/sites-console/page-versions.md)
-* Se o caminho excluído era uma pasta de ativos e os arquivos originais estão disponíveis, carregue-os novamente via [console do Assets.](/help/assets/add-assets.md)
-* Se o conteúdo excluído fosse de ativos, considere [restaurar versões anteriores dos ativos.](/help/assets/manage-digital-assets.md)
+* Se um pacote para o caminho excluído estiver disponível, instale-o novamente usando o [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md).
+* Se o caminho excluído era uma página no Sites, use a [função Restaurar Árvore](/help/sites-cloud/authoring/sites-console/page-versions.md).
+* Se o caminho excluído era uma pasta de ativos e os arquivos originais estão disponíveis, carregue-os novamente via [console do Assets](/help/assets/add-assets.md).
+* Se o conteúdo excluído fosse de ativos, considere [restaurar versões anteriores dos ativos](/help/assets/manage-digital-assets.md).
 
 Se nenhuma das opções acima funcionar e o conteúdo do caminho excluído for significativo, execute uma restauração de conteúdo, conforme detalhado nas seções a seguir.
 
@@ -93,7 +93,7 @@ Primeiro, determine o intervalo de tempo do conteúdo que você deseja restaurar
 
    ![Backups disponíveis](assets/backup-available.png)
 
-1. Encontre o backup que deseja restaurar usando o ícone de informações para exibir informações sobre a versão do código e do AEM incluídas nesse backup e considere as implicações de uma restauração ao [escolher o backup.](#choosing-the-right-backup)
+1. Encontre o backup que deseja restaurar usando o ícone de informações para exibir informações sobre a versão do código e do AEM incluídas nesse backup e considere as implicações de uma restauração ao [escolher o backup](#choosing-the-right-backup).
 
    ![Informações de backup](assets/backup-info.png)
 

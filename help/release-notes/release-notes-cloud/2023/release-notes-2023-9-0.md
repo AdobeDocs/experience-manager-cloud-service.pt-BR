@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: d747f58b-8d6c-418d-9d2b-ec3ae4b6dc03
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 21%
@@ -118,9 +118,9 @@ Agora você pode atribuir o formulário de metadados a uma pasta específica na 
 
 ### Novo comportamento do armazenamento em cache do CDN para parâmetros de URL relacionados à campanha {#cache-url-params}
 
-Para novos ambientes, a CDN removerá os parâmetros de consulta relacionados a marketing por padrão para aumentar o desempenho da campanha de marketing e as taxas de ocorrência do cache. Os ambientes existentes não são afetados. [Saiba mais.](/help/implementing/dispatcher/caching.md#marketing-parameters)
+Para novos ambientes, a CDN removerá os parâmetros de consulta relacionados a marketing por padrão para aumentar o desempenho da campanha de marketing e as taxas de ocorrência do cache. Os ambientes existentes não são afetados. [Saiba mais](/help/implementing/dispatcher/caching.md#marketing-parameters).
 
-### Regras de filtro de tráfego (incluindo regras do WAF) do programa de adoção antecipada {#waf-early-adopter}
+### Programa de adoção antecipada das Regras de filtro de tráfego (incluindo Regras do WAF) {#waf-early-adopter}
 
 Filtrar o tráfego na CDN com base em:
 

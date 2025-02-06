@@ -5,10 +5,10 @@ feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '288'
-ht-degree: 94%
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ Automatize a tradução de conteúdo e ativos da página para criar e manter sit
 
 >[!TIP]
 >
->Caso entenda pouco sobre a tradução de conteúdo, consulte nossa [jornada de tradução de sites,](/help/journey-sites/translation/overview.md) que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM, ideais para pessoas que não possuem experiência no AEM ou em tradução.
+>Se você é novo na tradução de conteúdo, consulte a [Jornada de tradução de sites](/help/journey-sites/translation/overview.md), que é um caminho guiado pela tradução de conteúdo do AEM Sites usando as ferramentas de tradução avançadas do AEM AEM, ideais para aqueles sem experiência com o ou com a tradução.
 
 A tradução de conteúdo envolve as seguintes etapas:
 

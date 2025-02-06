@@ -8,10 +8,10 @@ exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
 solution: Experience Manager Sites
 feature: Translation
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -25,7 +25,7 @@ O AEM Sites é um avançado conjunto de ferramentas para criar e gerenciar exper
 
 O AEM oferece ferramentas tão eficientes quanto essas para tradução de conteúdo, permitindo que você o entregue o mais rápido possível aos seus públicos em outras regiões ou localidades. Esta jornada de documentação apresenta as ferramentas de criação para que você entenda como o conteúdo é criado e gerenciado no AEM. Ela também aborda tudo o que você precisa saber para gerenciar seu próprio projeto de tradução.
 
-Se você já estiver familiarizado com o AEM Sites e com seus requisitos de tradução, talvez já tenha o conhecimento básico dessa jornada. Nesse caso, considere consultar nossa documentação técnica vinculada à [seção de recursos adicionais abaixo.](#additional-resources)
+Se você já estiver familiarizado com o AEM Sites e com seus requisitos de tradução, talvez já tenha o conhecimento básico dessa jornada. Nesse caso, considere consultar nossa documentação técnica vinculada à seção de [recursos adicionais abaixo](#additional-resources).
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 

@@ -4,10 +4,10 @@ description: Defina a estrutura do conteúdo que será criado e veiculado usando
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 88%
+ht-degree: 74%
 
 ---
 
@@ -17,7 +17,7 @@ Defina a estrutura do conteúdo que será criado e veiculado usando os recursos 
 
 ## O que são modelos de fragmento de conteúdo? {#what-are-content-fragment-models}
 
-[Agora que você criou uma configuração,](create-configuration.md) é possível usá-la para criar modelos de fragmento de conteúdo.
+[Agora que você criou uma configuração](create-configuration.md), é possível usá-la para criar modelos de fragmento de conteúdo.
 
 Os modelos de fragmento de conteúdo definem a estrutura dos dados e do conteúdo que você irá criar e gerenciar no AEM. Eles servem como uma espécie de andaime para o conteúdo. Ao optar por criar o conteúdo, os autores escolherão entre os modelos de fragmento de conteúdo definidos, que os orientarão na criação do conteúdo.
 
@@ -67,8 +67,8 @@ O **Editor de Modelos de fragmentos de conteúdo** é compatível com vários ti
 
 ## Próximas etapas {#next-steps}
 
-Agora que você definiu as estruturas dos fragmentos de conteúdo criando modelos, poderá seguir para a terceira parte do guia de introdução e [criar pastas onde armazenará os fragmentos.](create-assets-folder.md)
+Agora que você definiu as estruturas dos fragmentos de conteúdo criando modelos, poderá seguir para a terceira parte do guia de introdução e [criar pastas onde armazenará os fragmentos](create-assets-folder.md).
 
 >[!TIP]
 >
->Para obter detalhes completos sobre os modelos de fragmento de conteúdo, consulte a [documentação dos Modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+>Para obter detalhes completos sobre os modelos de fragmento de conteúdo, consulte a [documentação dos Modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md).

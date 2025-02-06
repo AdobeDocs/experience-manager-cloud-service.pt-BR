@@ -3,13 +3,13 @@ title: Componentes de filtragem
 description: Saiba como restringir os componentes permitidos por contêiner no Editor universal usando filtros de componente.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 48c1a109c060db4ce19bf645723357008d51c572
+exl-id: eeae8d7c-c563-4d9b-8c54-1098a4e98c18
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
 
 ---
-
 
 # Componentes de filtragem {#filtering-components}
 
@@ -53,4 +53,4 @@ Definir o atributo `components` em uma definição de filtro como `null` permite
 
 >[!TIP]
 >
->Saiba mais sobre outras opções de personalização e extensão disponíveis para o Editor Universal no documento [Personalização e Extensão do Editor Universal.](/help/implementing/universal-editor/customizing.md)
+>Saiba mais sobre outras opções de personalização e extensão disponíveis para o Editor Universal no documento [Personalização e extensão do Editor Universal](/help/implementing/universal-editor/customizing.md).

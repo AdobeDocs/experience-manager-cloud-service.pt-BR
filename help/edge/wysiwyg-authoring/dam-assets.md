@@ -3,13 +3,13 @@ title: Publicar páginas com o DAM Assets usando o Edge Delivery Services
 description: Saiba quais configurações são necessárias para garantir que os ativos DAM das suas páginas sejam publicados perfeitamente no Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 65a3b4d923a91702e7ea9b13356802836fa4ce0b
+exl-id: 160f0474-a72d-4183-a2b2-2f8ba177605d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 2%
 
 ---
-
 
 # Publicar páginas com o DAM Assets usando o Edge Delivery Services {#dam-assets}
 
@@ -21,8 +21,8 @@ Ao editar o conteúdo para o Editor universal, é claro que você pode seleciona
 
 Para garantir esse comportamento contínuo, o AEM e os Edge Delivery Services devem ter acesso adequado ao DAM para publicar. Isso inclui:
 
-* [Garantia de que as pastas de ativos estejam acessíveis.](#accessible)
-* [Verificando se a pasta de ativos recebeu a configuração adequada (conforme necessário).](#configuration)
+* [Verificando se as pastas de ativos estão acessíveis](#accessible).
+* [Verificando se a configuração adequada (conforme necessário) foi atribuída à pasta de ativos](#configuration).
 
 ## Garantia de que as pastas do Assets estejam acessíveis {#accessible}
 

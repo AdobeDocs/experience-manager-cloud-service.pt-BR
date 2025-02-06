@@ -4,7 +4,7 @@ description: Saiba como a publicação de conteúdo funciona com o Edge Delivery
 feature: Edge Delivery Services
 exl-id: 32fbb144-9175-47a9-bb5a-ca15f3fcd2d8
 role: User
-source-git-commit: 7ad9a959592f1e8cebbcad9a67d280d5b2119866
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Com o Edge Delivery Services, a publicação de conteúdo é contínua, independ
 
 ## Fluxo de publicação do AEM {#publishing-flow}
 
-Ao usar o Editor Universal para criar conteúdo AEM, publicar é tão simples quanto clicar no botão **Publish** no Editor Universal. Consulte o documento [Publicando Conteúdo com o Editor Universal.](/help/sites-cloud/authoring/universal-editor/publishing.md)
+Ao usar o Editor Universal para criar conteúdo AEM, publicar é tão simples quanto clicar no botão **Publish** no Editor Universal. Consulte o documento [Publicando Conteúdo com o Editor Universal](/help/sites-cloud/authoring/universal-editor/publishing.md).
 
 O fluxo de informações ao publicar é o seguinte. Depois que o autor inicia a publicação, esse fluxo é automático e é ilustrado aqui para fins de informação.
 

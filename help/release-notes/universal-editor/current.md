@@ -4,7 +4,7 @@ description: Estas são as notas de versão do Universal Editor de 2025.01.16.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 14bc45917f56ecf358278848e7e830afb1fedccd
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -18,13 +18,13 @@ Estas são as notas de versão da versão de 16 de janeiro de 2025 do Editor uni
 
 >[!TIP]
 >
->Para obter as notas de versão atuais do Adobe Experience Manager as a Cloud Service, consulte [esta página.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+>Para obter as notas de versão atuais do Adobe Experience Manager as a Cloud Service, consulte [esta página](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Novidades {#what-is-new}
 
 * **Substituição da Biblioteca CORS &lt; 3.0.0** - Para garantir compatibilidade futura e aprimorar a segurança, o Editor Universal agora oferece suporte exclusivo à versão 3.0.0 ou superior do
   Biblioteca `@Adobe Express/universal-editor-cors`.
-   * A biblioteca agora é entregue exclusivamente via [`universal-editor-service.adobe.io/cors.js`.](http://universal-editor-service.adobe.io/cors.js)
+   * A biblioteca agora é entregue exclusivamente via [`universal-editor-service.adobe.io/cors.js`](http://universal-editor-service.adobe.io/cors.js).
    * Uma notificação de descontinuação é exibida para os usuários ao abrir uma página que usa versões mais antigas da biblioteca CORS, solicitando que eles atualizem.
 * **Ponto de Extensão para Página de Aterrissagem** - [Um novo ponto de extensão](/help/implementing/universal-editor/customizing.md#extending) foi introduzido para que as extensões apareçam no painel lateral da página de aterrissagem do Editor Universal.
    * Agora os desenvolvedores podem especificar se as extensões são aplicáveis ao editor, à landing page ou a ambos, oferecendo maior personalização e usabilidade.

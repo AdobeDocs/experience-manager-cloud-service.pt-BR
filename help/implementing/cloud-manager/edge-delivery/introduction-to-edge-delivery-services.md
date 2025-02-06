@@ -4,7 +4,7 @@ description: Saiba como entregar projetos do Cloud Manager usando o Edge Deliver
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0fb5476b4cff9e26971696bd8352181a71e7b3e4
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 3%
@@ -69,7 +69,7 @@ Um Edge Delivery Services pode ser adicionado de várias maneiras diferentes, de
 
 A **lista de tarefas do Edge Delivery** no Cloud Manager é uma lista de verificação de tarefas de integração criada para orientá-lo na integração e no gerenciamento do seu site do Edge Delivery até a [Ativação](/help/journey-onboarding/go-live-checklist.md).
 
-![Lista de tarefas do site do Edge Delivery no Cloud Manager](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
+![Lista de tarefas do site do Edge Delivery no Cloud Manager.](/help/implementing/cloud-manager/assets/cm-eds-todo-list.png)
 
 |   | Tarefa | Descrição |
 | --- | --- | --- |

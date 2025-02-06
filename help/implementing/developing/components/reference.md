@@ -4,7 +4,7 @@ description: Um guia de referência do desenvolvedor para os detalhes dos compon
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '3481'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Os componentes são o núcleo da criação de uma experiência no AEM. Os [Compo
 
 >[!TIP]
 >
->Antes de fazer referência a este documento, verifique se você concluiu o [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e se está familiarizado com os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [Arquétipo de Projeto AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
+>Antes de fazer referência a este documento, verifique se você concluiu o [Tutorial WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) e se está familiarizado com os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR).
 
 Como o Tutorial WKND aborda a maioria dos casos de uso, este documento serve apenas como um complemento para esses recursos. Ele fornece especificações técnicas detalhadas sobre como os componentes são estruturados e configurados no AEM e não tem a intenção de ser um guia de introdução.
 
@@ -92,7 +92,7 @@ Essa é uma abstração que ajuda a garantir que, mesmo quando a aparência muda
 
 A definição de um componente pode ser dividida da seguinte forma:
 
-* Os componentes do AEM são baseados em [Sling.](https://sling.apache.org/documentation.html)
+* Componentes de AEM baseados em [Sling](https://sling.apache.org/documentation.html).
 * Os componentes do AEM estão localizados em `/libs/core/wcm/components`.
 * Os componentes específicos do Projeto/Site estão localizados em `/apps/<myApp>/components`.
 * Os componentes padrão do AEM são definidos como `cq:Component` e têm os seguintes elementos-chave:
@@ -105,32 +105,32 @@ A definição de um componente pode ser dividida da seguinte forma:
 * **Nó raiz**:
    * `<mycomponent> (cq:Component)` - Nó hierárquico do componente.
 * **Propriedades Vitais**:
-   * `jcr:title` - Título do componente; por exemplo, usado como rótulo quando o componente é listado no [Navegador de Componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) e no [Console de Componentes](/help/sites-cloud/authoring/components-console.md)
-   * `jcr:description` - Descrição do componente; usado como dica de passar o mouse sobre o navegador de componentes e console Componentes
-   * Consulte a seção [Ícone do Componente](#component-icon) para obter detalhes
+   * `jcr:title` - Título do componente; por exemplo, usado como rótulo quando o componente é listado no [Navegador de Componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser) e no [Console de Componentes](/help/sites-cloud/authoring/components-console.md).
+   * `jcr:description` - Descrição do componente; usado como dica de passar o mouse no Navegador de Componentes e no Console de Componentes.
+   * Consulte a seção [Ícone do Componente](#component-icon) para obter detalhes.
 * **Nós-Filhos Vitais**:
-   * `cq:editConfig (cq:EditConfig)` - Define as propriedades de edição do componente e habilita o componente para aparecer no Navegador de Componentes
+   * `cq:editConfig (cq:EditConfig)` - Define as propriedades de edição do componente e habilita o componente para aparecer no Navegador de Componentes.
       * Se o componente tiver uma caixa de diálogo, ele será exibido automaticamente no navegador de Componentes ou Sidekick, mesmo se cq:editConfig não existir.
    * `cq:childEditConfig (cq:EditConfig)` - Controla os aspectos da interface do usuário do autor para componentes filho que não definem seu próprio `cq:editConfig`.
    * `cq:dialog (nt:unstructured)` - Caixa de diálogo para este componente. Define a interface que permite ao usuário configurar o componente e/ou editar conteúdo.
-   * `cq:design_dialog (nt:unstructured)` - Edição de design para este componente
+   * `cq:design_dialog (nt:unstructured)` - Edição de design para este componente.
 
 #### Ícone do componente {#component-icon}
 
 O ícone ou a abreviação do componente é definido por meio das propriedades JCR do componente quando ele é criado pelo desenvolvedor. Essas propriedades são avaliadas na seguinte ordem e a primeira propriedade válida encontrada é usada.
 
-1. `cq:icon` - Propriedade de cadeia de caracteres apontando para um ícone padrão na [biblioteca de interface do Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) para ser exibida no navegador de componentes
+1. `cq:icon` - Propriedade de cadeia de caracteres apontando para um ícone padrão na [biblioteca de interface do Coral](https://opensource.adobe.com/coral-spectrum/examples/#icon) para ser exibida no navegador de componentes.
    * Use o valor do atributo HTML do ícone Coral.
-1. `abbreviation` - Propriedade de cadeia de caracteres para personalizar a abreviação do nome do componente no navegador de componentes
+1. `abbreviation` - Propriedade de cadeia de caracteres para personalizar a abreviação do nome do componente no navegador de componentes.
    * A abreviação deve ser limitada a dois caracteres.
    * O fornecimento de uma cadeia de caracteres vazia criará a abreviação a partir dos dois primeiros caracteres da propriedade `jcr:title`.
-      * Por exemplo, &quot;Im&quot; para &quot;Image&quot;
+      * Por exemplo, &quot;Im&quot; para &quot;Image&quot;.
       * O título localizado é usado para criar a abreviação.
    * A abreviação só será traduzida se o componente tiver uma propriedade `abbreviation_commentI18n`, que será usada como dica de tradução.
-1. `cq:icon.png` ou `cq:icon.svg` - Ícone para este componente, que é mostrado no Navegador de Componentes
+1. `cq:icon.png` ou `cq:icon.svg` - Ícone para este componente, que é mostrado no Navegador de Componentes.
    * 20 x 20 pixels é o tamanho dos ícones dos componentes padrão.
       * Ícones maiores são reduzidos (lado do cliente).
-   * A cor recomendada é rgb(112, 112, 112) > #707070
+   * A cor recomendada é rgb(112, 112, 112) > #707070.
    * O plano de fundo dos ícones de componente padrão é transparente.
    * Somente `.png` e `.svg` arquivos são suportados.
    * Se você estiver importando do sistema de arquivos por meio do plug-in Eclipse, os nomes de arquivos precisam ser evitados como `_cq_icon.png` ou `_cq_icon.svg`, por exemplo.
@@ -172,7 +172,7 @@ Um componente é um nó do tipo `cq:Component` e tem as seguintes propriedades e
 | `cq:isContainer` | `Boolean` | Isso indica se o componente é um componente de contêiner e, portanto, pode conter outros componentes, como um sistema de parágrafo. |
 | `cq:dialog` | `nt:unstructured` | Essa é a definição da caixa de diálogo de edição do componente. |
 | `cq:design_dialog` | `nt:unstructured` | Esta é a definição da caixa de diálogo de design do componente. |
-| `cq:editConfig` | `cq:EditConfig` | Isso define a [configuração de edição do componente.](#edit-behavior) |
+| `cq:editConfig` | `cq:EditConfig` | Isso define a [configuração de edição do componente](#edit-behavior). |
 | `cq:htmlTag` | `nt:unstructured` | Isso retorna atributos de tag adicionais que são adicionados à tag HTML ao redor. Permite a adição de atributos aos divs gerados automaticamente. |
 | `cq:noDecoration` | `Boolean` | Se true, o componente não será renderizado com as classes div e css geradas automaticamente. |
 | `cq:template` | `nt:unstructured` | Se encontrado, esse nó será usado como um template de conteúdo quando o componente for adicionado do Navegador de componentes. |
@@ -256,7 +256,7 @@ Se você considerar sua caixa de diálogo como um contêiner simples para um ele
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
-Mais especificamente, a interface do usuário do Granite fornece uma variedade de componentes de campo adequados para uso em caixas de diálogo ou, de um modo mais geral, em [formulários.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html)
+Mais especificamente, a interface do usuário do Granite fornece uma variedade de componentes de campo adequados para uso em caixas de diálogo ou, de modo mais geral, em [formulários](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/index.html).
 
 Depois de criar o tipo de recurso, é possível instanciar o campo adicionando um novo nó na caixa de diálogo, com a propriedade `sling:resourceType` referindo-se ao tipo de recurso que você acabou de introduzir.
 
@@ -339,7 +339,7 @@ O script HTL típico que renderiza o HTML de espaço reservado acima é o seguin
 
 No exemplo anterior, `isEmpty` é uma variável que só é verdadeira quando o componente não tem conteúdo e está invisível para o autor.
 
-Para evitar repetição, o Adobe recomenda que os implementadores de componentes usem um modelo HTL para esses espaços reservados, [como o fornecido pelos Componentes Principais.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+Para evitar repetição, o Adobe recomenda que os implementadores de componentes usem um modelo HTL para esses espaços reservados, [como o fornecido pelos Componentes Principais](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html).
 
 O uso do modelo no link anterior é feito com a seguinte linha de HTL:
 
@@ -350,7 +350,7 @@ O uso do modelo no link anterior é feito com a seguinte linha de HTL:
 
 No exemplo anterior, `model.text` é a variável que só é verdadeira quando o conteúdo tem conteúdo e está visível.
 
-Um exemplo de uso deste modelo pode ser visto nos Componentes Principais, [como no Componente de Título.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
+Um exemplo de uso deste modelo pode ser visto nos Componentes Principais, [como no Componente de Título](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27).
 
 ### Configuração com nós filhos cq:EditConfig {#configuring-with-cq-editconfig-child-nodes}
 

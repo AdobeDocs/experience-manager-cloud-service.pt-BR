@@ -4,10 +4,10 @@ description: Com este guia rápido de introdução, saiba mais sobre os recursos
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 feature: Headless
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -44,4 +44,4 @@ No entanto, em uma situação de produção, as tarefas serão executadas por pe
 
 ## Próxima etapa {#next-step}
 
-Pronto para aprender mais? Então, comece lendo a primeira parte da configuração do headless: [Criação de uma configuração.](create-configuration.md)
+Pronto para aprender mais? Então, comece lendo a primeira parte da Configuração Headless: [Criando uma Configuração](create-configuration.md).

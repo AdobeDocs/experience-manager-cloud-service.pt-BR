@@ -8,13 +8,13 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d661f869f1264e4a2317692ab6fd22263c89e072
+exl-id: f0fec4a9-b214-4931-bf09-5898b082481e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 1%
 
 ---
-
 
 # Fluxo de trabalho centrado no Forms no OSGi {#forms-centric-workflow-on-osgi}
 
@@ -78,7 +78,7 @@ O exemplo cria um modelo de fluxo de trabalho para uma solicitação de hipoteca
 1. Ativar notificações por email. Você pode configurar um fluxo de trabalho centrado no Forms no OSGi para enviar notificações por email aos usuários ou atribuídos. Execute as seguintes configurações para ativar notificações por email:
 
    1. Vá para o gerenciador de configuração do AEM em `https://[server]:[port]/system/console/configMgr`.
-   1. Abra a configuração **[!UICONTROL Day CQ Mail Service]**. Especifique um valor para os campos **[!UICONTROL Nome do host do servidor SMTP]**, **[!UICONTROL Porta do servidor SMTP,]** e **[!UICONTROL &quot;Do&quot; endereço]**. Clique em **[!UICONTROL Salvar]**.
+   1. Abra a configuração **[!UICONTROL Day CQ Mail Service]**. Especifique um valor para os campos **[!UICONTROL Nome do host do servidor SMTP]**, **[!UICONTROL Porta do servidor SMTP]** e **[!UICONTROL &quot;Do&quot; endereço]**. Clique em **[!UICONTROL Salvar]**.
    1. Abra a configuração **[!UICONTROL Day CQ Link Externalizer]**. No campo **[!UICONTROL Domínios]**, especifique o nome do host/endereço IP real e o número da porta para as instâncias locais, de criação e de publicação. Clique em **[!UICONTROL Salvar]**.
 
 1. Criar estágios de fluxo de trabalho. Um fluxo de trabalho pode ter vários estágios. Esses estágios são exibidos na Caixa de entrada do AEM e relatam o progresso do fluxo de trabalho.
@@ -268,7 +268,7 @@ You can associate and execute a Forms-centric workflow on OSGi on submission of 
 You can use the Assign Task and Send Email steps of AEM Workflows to send an email. Perform the following steps to specify email servers and other configurations required to send email:
 
 1. Go to AEM configuration manager at `https://[server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
+1. Open the **[!UICONTROL Day CQ Mail Service]** configuration. Specify a value for the **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port]**, and **[!UICONTROL "From" address]** fields. Click **[!UICONTROL Save]**.
 1. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual hostname/IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**. -->
 
 ### Limpar instâncias de fluxo de trabalho {#purge-workflow-instances}

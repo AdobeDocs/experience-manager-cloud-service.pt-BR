@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 92da26452438f2b56cdec1aecc76587d4982f00e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 2%
@@ -19,7 +19,7 @@ Saiba como criar modelos que podem ser usados para criar páginas editáveis com
 
 >[!NOTE]
 >
->[Os modelos também estão disponíveis para criar páginas editáveis com o Editor de páginas.](/help/sites-cloud/authoring/page-editor/templates.md)
+>[Os modelos também estão disponíveis para criar páginas editáveis com o Editor de páginas](/help/sites-cloud/authoring/page-editor/templates.md).
 
 ## O que são modelos de página? {#what-are}
 
@@ -33,7 +33,7 @@ Para usar modelos para criar páginas editáveis com o Universal Editor, você d
 
 Primeiro, ative modelos editáveis para a configuração do site.
 
-1. Use o console **Sites** e [selecione a raiz do site.](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)
+1. Use o console **Sites** e [selecione a raiz do site](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
 1. Depois que a raiz do site for selecionada, toque ou clique no ícone [**Propriedades**](/help/sites-cloud/authoring/sites-console/page-properties.md) na barra de ferramentas.
 1. Na guia **Avançado** da caixa de diálogo de propriedades, anote o valor no campo **Configuração da Nuvem**.
 1. Na navegação principal, escolha **Ferramentas** -> **Geral** -> **Navegador de Configuração**.
@@ -43,7 +43,7 @@ Primeiro, ative modelos editáveis para a configuração do site.
 
 Quando a configuração estiver ativada, você deve permitir modelos para o site.
 
-1. Use o console **Sites** e [selecione a raiz do site.](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources)
+1. Use o console **Sites** e [selecione a raiz do site](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources).
 1. Depois que a raiz do site for selecionada, toque ou clique no ícone [**Propriedades**](/help/sites-cloud/authoring/sites-console/page-properties.md) na barra de ferramentas.
 1. Na guia **Avançado** da caixa de diálogo de propriedades na seção **Configurações de Modelo**, toque ou clique no botão **Adicionar**.
 1. No novo campo vazio que aparece em **Modelos permitidos**, adicione o caminho `/conf/<site>/settings/wcm/templates/.*`.
@@ -67,7 +67,7 @@ Sua nova página agora pode ser usada como modelo ao criar novas páginas.
 
 ## Criar uma página a partir de um modelo {#creating-from-template}
 
-A criação de uma página a partir de um modelo que é editável com o Editor Universal é o mesmo fluxo de trabalho que [a criação de qualquer outra página.](/help/sites-cloud/authoring/sites-console/creating-pages.md)
+A criação de uma página a partir de um modelo que é editável com o Editor Universal tem o mesmo fluxo de trabalho que [a criação de qualquer outra página](/help/sites-cloud/authoring/sites-console/creating-pages.md).
 
 1. Use o console **Sites** para [navegar até o local](/help/sites-cloud/authoring/sites-console/introduction.md#selecting-resources) onde deseja criar a nova página.
 
@@ -87,6 +87,6 @@ Os modelos de página definem apenas o conteúdo inicial das páginas. As págin
 
 ## Modelos editáveis {#editable-templates}
 
-As páginas criadas com o [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) também podem ser baseadas em modelos. Os modelos usados para criar páginas para o Editor Universal e o Editor de Páginas usam os [modelos editáveis do AEM.](/help/implementing/developing/components/templates.md)
+As páginas criadas com o [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) também podem ser baseadas em modelos. Os modelos usados para criar páginas para o Editor Universal e o Editor de Páginas usam os [modelos editáveis](/help/implementing/developing/components/templates.md) do AEM.
 
 Os modelos usados para criar páginas editáveis com o Editor de páginas usam todos os recursos dos modelos editáveis. Os modelos usados para criar páginas editáveis com o Editor universal usam somente o recurso de conteúdo inicial.

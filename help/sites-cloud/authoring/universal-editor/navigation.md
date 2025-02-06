@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: a7b48559e5bf60c86fecd73a8bcef6c9aaa03b80
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 33%
+source-wordcount: '1613'
+ht-degree: 27%
 
 ---
 
@@ -24,8 +24,8 @@ Para isso, o editor universal oferece aos autores de conteúdo uma interface int
 
 >[!TIP]
 >
->* Para obter detalhes sobre a criação com o Universal Editor, consulte o documento [Criação de Conteúdo com o Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md)
->* Para obter uma introdução mais detalhada do Editor universal, consulte o documento [Introdução ao Editor universal.](/help/implementing/universal-editor/introduction.md)
+>* Para obter detalhes sobre a criação com o Editor Universal, consulte o documento [Criação de Conteúdo com o Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md).
+>* Para obter uma introdução mais detalhada ao Editor Universal, consulte [Introdução ao Editor Universal](/help/implementing/universal-editor/introduction.md).
 
 ## Preparação do aplicativo {#prepare-app}
 
@@ -48,13 +48,13 @@ Depois que o aplicativo é instrumentado para funcionar com o Universal Editor, 
 
 >[!NOTE]
 >
->Ao editar uma página no console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) o console abrirá o editor apropriado ao [modelo](/help/sites-cloud/authoring/page-editor/templates.md) da página: o Editor Universal descrito neste documento ou o [editor de páginas.](/help/sites-cloud/authoring/page-editor/introduction.md)
+>Ao editar uma página no console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), o console abrirá o editor apropriado ao [modelo](/help/sites-cloud/authoring/page-editor/templates.md) da página, o Editor Universal descrito neste documento ou o [editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md).
 
 ### Acesso Direto {#accessing-directly}
 
-1. Faça logon no Editor universal. Você precisa de uma Adobe ID para entrar e [ter acesso ao Editor Universal.](/help/implementing/universal-editor/getting-started.md#request-access)
+1. Faça logon no Editor universal. Você precisa de uma Adobe ID para entrar e [ter acesso ao Editor Universal](/help/implementing/universal-editor/getting-started.md#request-access).
 
-1. Após fazer logon, digite o URL da página que deseja editar na [barra de localização.](#location-bar) para que você possa começar a editar conteúdo, como conteúdo de texto ou conteúdo de mídia.
+1. Depois de entrar, insira a URL da página que deseja editar na [barra de local](#location-bar), para começar a editar conteúdo, como conteúdo de texto ou conteúdo de mídia.
 
 ## Noções básicas da interface {#ui}
 
@@ -75,7 +75,7 @@ O cabeçalho da Experience Cloud está sempre presente na parte superior da tela
 
 #### Experience Manager {#experience-manager}
 
-Clique no link da Adobe Experience Cloud à esquerda do cabeçalho para navegar até a raiz da solução do Experience Manager e acessar ferramentas como o [Cloud Manager,](/help/onboarding/cloud-manager-introduction.md) o [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) e a [distribuição de softwares.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br)
+Selecione o link do Adobe Experience Cloud à esquerda do cabeçalho para navegar até a raiz da solução Experience Manager e acessar ferramentas como o [Cloud Manager](/help/onboarding/cloud-manager-introduction.md), o [Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md) e a [Distribuição de software](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=pt-br).
 
 ![Botão de navegação global](assets/global-navigation.png)
 
@@ -99,7 +99,7 @@ O ícone de ajuda fornece acesso rápido aos recursos de aprendizagem e suporte.
 
 #### Notificações {#notifications}
 
-Esse ícone é marcado com o número de [notificações](/help/implementing/cloud-manager/notifications.md) incompletas atribuídas atualmente.
+Este ícone contém uma medalha com o número de [notificações](/help/implementing/cloud-manager/notifications.md) incompletas atribuídas atualmente.
 
 ![Notificações](assets/notifications.png)
 
@@ -111,7 +111,7 @@ Clique no ícone que representa seu usuário para acessar as configurações de 
 
 ### A barra de ferramentas do editor universal {#universal-editor-toolbar}
 
-A barra de ferramentas do Editor Universal está sempre presente na parte superior da tela logo abaixo [do cabeçalho de Experience Cloud.](#experience-cloud-header) Ele fornece acesso rápido para navegar para outra página a ser editada, bem como para publicar a página atual.
+A barra de ferramentas do Editor Universal está sempre presente na parte superior da tela logo abaixo [do cabeçalho Experience Cloud](#experience-cloud-header). Ele fornece acesso rápido para navegar para outra página para editar e publicar a página atual.
 
 ![A barra de ferramentas do Editor Universal](assets/universal-editor-toolbar.png)
 
@@ -127,7 +127,7 @@ Na página inicial, você pode inserir o URL do site que deseja editar com o Edi
 
 >[!NOTE]
 >
->Qualquer página que você deseja editar com o Editor Universal deve ser [instrumentada para dar suporte ao Editor Universal.](/help/implementing/universal-editor/getting-started.md)
+>Qualquer página que você deseja editar com o Editor Universal deve ser [instrumentada para oferecer suporte ao Editor Universal](/help/implementing/universal-editor/getting-started.md).
 
 #### Barra de localização {#location-bar}
 
@@ -141,11 +141,11 @@ A barra de localização mostra o endereço da página que você está editando.
 
 >[!NOTE]
 >
->Qualquer página que você deseja editar com o Editor Universal deve ser [instrumentada para dar suporte ao Editor Universal.](/help/implementing/universal-editor/getting-started.md)
+>Qualquer página que você deseja editar com o Editor Universal deve ser [instrumentada para oferecer suporte ao Editor Universal](/help/implementing/universal-editor/getting-started.md).
 
 #### Configurações do cabeçalho de autenticação {#authentication-settings}
 
-Selecione o ícone de configurações do cabeçalho de autenticação se precisar [definir um cabeçalho de autenticação personalizado para fins de desenvolvimento local.](/help/implementing/universal-editor/developer-overview.md#auth-header)
+Selecione o ícone de configurações do cabeçalho de autenticação se precisar [definir um cabeçalho de autenticação personalizado para fins de desenvolvimento local](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Botão de configurações do cabeçalho de autenticação](assets/authentication-header-settings.png)
 
@@ -189,7 +189,7 @@ Selecione o ícone abrir visualização do aplicativo para abrir a página que v
 
 >[!TIP]
 >
->A URL de visualização do seu aplicativo [ pode ser personalizada.](/help/implementing/universal-editor/customizing.md#custom-preview-urls)
+>A URL de visualização do seu aplicativo [pode ser personalizada](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
 #### Publicação {#publish}
 
@@ -213,8 +213,8 @@ Por exemplo, a capacidade de desfazer a publicação de uma página (ou seja, re
 
 O Universal Editor oferece uma experiência de criação personalizável e extensível. Se você vir botões adicionais na barra de ferramentas, o Editor universal foi estendido.
 
-* Para obter detalhes sobre as possibilidades de extensão, consulte [Personalização e Extensão do Universal Editor.](/help/implementing/universal-editor/customizing.md)
-* Para obter detalhes sobre como uma extensão individual funciona, consulte a documentação do [Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* Para obter detalhes sobre as possibilidades de extensão, consulte o [Personalizando e estendendo o Editor Universal](/help/implementing/universal-editor/customizing.md).
+* Para obter detalhes sobre como uma extensão individual funciona, consulte a [documentação do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### O editor {#editor}
 
@@ -280,7 +280,7 @@ Se você selecionar um componente de contêiner na árvore de conteúdo ou no ed
 
 ![Ícone Adicionar](assets/ue-add-component-icon.png)
 
-Tocar ou clicar no botão adicionar abre um menu suspenso de componentes que estão disponíveis para [adicionar ao contêiner selecionado.](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components)
+Tocar ou clicar no botão adicionar abre um menu suspenso de componentes que estão disponíveis para [adicionar ao contêiner selecionado](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components).
 
 ![Adicionar menu de contexto](assets/add-context-menu.png)
 
@@ -288,13 +288,13 @@ Tocar ou clicar no botão adicionar abre um menu suspenso de componentes que est
 >
 >Use a tecla de atalho `a` para adicionar um componente a um componente de contêiner selecionado.
 
-##### Duplicata {#duplicate}
+##### Duplicado {#duplicate}
 
 Se você selecionar um componente em um componente de contêiner na árvore de conteúdo ou no editor, a opção de duplicação aparece no painel de propriedades.
 
 ![Ícone duplicado](assets/duplicate.png)
 
-Tocar ou clicar no botão duplicar [duplica o componente selecionado.](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components)
+Tocar ou clicar no botão duplicar [duplica o componente selecionado](/help/sites-cloud/authoring/universal-editor/authoring.md#duplicating-components).
 
 ##### Excluir {#delete}
 
@@ -302,7 +302,7 @@ Se você selecionar um componente em um componente de contêiner na árvore de c
 
 ![Ícone Excluir](assets/ue-delete-component-icon.png)
 
-Tocar ou clicar no botão Excluir [exclui o componente.](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components)
+Tocar ou clicar no botão Excluir [exclui o componente](/help/sites-cloud/authoring/universal-editor/authoring.md#deleting-components).
 
 >[!TIP]
 >
@@ -312,9 +312,9 @@ Tocar ou clicar no botão Excluir [exclui o componente.](/help/sites-cloud/autho
 
 O Universal Editor oferece uma experiência de criação personalizável e extensível. Se você vir botões adicionais no painel de propriedades, o Editor universal foi estendido.
 
-* Para obter detalhes sobre as possibilidades de extensão, consulte [Personalização e Extensão do Universal Editor.](/help/implementing/universal-editor/customizing.md)
-* Para obter detalhes sobre como uma extensão individual funciona, consulte a documentação do [Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
+* Para obter detalhes sobre as possibilidades de extensão, consulte o [Personalizando e estendendo o Editor Universal](/help/implementing/universal-editor/customizing.md).
+* Para obter detalhes sobre como uma extensão individual funciona, consulte a [documentação do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ## Próximas etapas {#next-steps}
 
-Agora que você sabe como acessar e navegar no Universal Editor, você está pronto para [criar conteúdo usando-o.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+Agora que você sabe como acessar e navegar no Universal Editor, você está pronto para [criar conteúdo usando-o](/help/sites-cloud/authoring/universal-editor/authoring.md).

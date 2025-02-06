@@ -4,10 +4,10 @@ description: Crie uma configuração como uma primeira etapa para começar a usa
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 92%
+ht-degree: 74%
 
 ---
 
@@ -21,7 +21,7 @@ O Navegador de configuração fornece uma API de configuração genérica, uma e
 
 No contexto do gerenciamento de conteúdo headless no AEM, considere uma configuração como um local de trabalho dentro do AEM onde é possível criar modelos de conteúdo, que definem a estrutura do conteúdo futuro e dos fragmentos de conteúdo. É possível ter várias configurações para separar esses modelos.
 
-Se você estiver familiarizado com os [modelos de página em uma implementação de pilha completa do AEM,](/help/sites-cloud/authoring/page-editor/templates.md) o uso de configurações para o gerenciamento de modelos de conteúdo é semelhante.
+Se você estiver familiarizado com os [modelos de página em uma implementação de pilha completa do AEM](/help/sites-cloud/authoring/page-editor/templates.md), o uso de configurações para o gerenciamento de Modelos de conteúdo é semelhante.
 
 ## Como criar uma configuração {#how-to-create-a-configuration}
 
@@ -49,8 +49,8 @@ Você pode criar várias configurações, se necessário. As configurações tam
 
 ## Próximas etapas {#next-steps}
 
-Usando essa configuração, agora é possível seguir para a segunda parte do guia de introdução e [criar modelos de fragmento de conteúdo.](create-content-model.md)
+Usando essa configuração, agora é possível seguir para a segunda parte do guia de introdução e [criar modelos de fragmento de conteúdo](create-content-model.md).
 
 >[!TIP]
 >
->Para obter detalhes completos sobre o Navegador de configuração, [consulte a documentação do Navegador de configuração](/help/implementing/developing/introduction/configurations.md).
+>Para obter detalhes completos sobre o Navegador de Configuração, consulte a [documentação do Navegador de Configuração](/help/implementing/developing/introduction/configurations.md).

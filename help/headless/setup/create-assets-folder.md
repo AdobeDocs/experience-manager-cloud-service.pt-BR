@@ -4,10 +4,10 @@ description: Use os modelos de fragmento de conteúdo do AEM para definir a estr
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '375'
-ht-degree: 82%
+ht-degree: 80%
 
 ---
 
@@ -38,7 +38,7 @@ Um administrador só precisaria criar pastas ocasionalmente para organizar o con
    ![Criar pasta](../assets/assets-folder-create.png)
 1. Selecione a pasta criada passando o mouse sobre ela e tocando na marca de seleção. Em seguida, selecione **Propriedades** na barra de ferramentas (ou use o [atalho de teclado](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) `p`).
 1. Na janela **Propriedades**, selecione a guia **Serviços em nuvem**.
-1. Para a **Configuração na nuvem**, selecione a [configuração criada anteriormente.](create-configuration.md)
+1. Para a **Configuração na Nuvem**, selecione a [configuração criada anteriormente](create-configuration.md).
    ![Configurar pasta de ativos](../assets/assets-folder-configure.png)
 1. Selecione **Salvar e fechar**.
 1. Selecione **OK** na janela de confirmação.

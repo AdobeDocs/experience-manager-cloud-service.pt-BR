@@ -4,10 +4,10 @@ description: Saiba como obter acesso ao Editor universal e começar a instrument
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 75acf37e7804d665e38e9510cd976adc872f58dd
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '956'
-ht-degree: 41%
+ht-degree: 38%
 
 ---
 
@@ -18,7 +18,7 @@ Saiba como obter acesso ao Editor universal e começar a instrumentar seu primei
 
 >[!TIP]
 >
->Se preferir ir direto para o exemplo, você pode consultar o [aplicativo de demonstração do Editor universal no GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
+>Se você preferir se aprofundar em um exemplo, poderá revisar o [Aplicativo de Exemplo do Editor Universal no GitHub](https://github.com/adobe/universal-editor-sample-editable-app).
 
 Embora o Editor universal possa editar o conteúdo de qualquer fonte, este documento usará um aplicativo AEM como exemplo. Este documento o orientará por essas etapas.
 
@@ -122,7 +122,7 @@ Se você quiser que apenas determinadas extensões sejam ativadas para uma pági
 
 ## Defina para quais caminhos de conteúdo ou `sling:resourceType`s o Editor Universal deve ser aberto. (Opcional) {#content-paths}
 
-Se você tiver um projeto AEM existente usando [o editor de página](/help/sites-cloud/authoring/page-editor/introduction.md), quando os autores de conteúdo editarem as páginas, as páginas serão abertas automaticamente com o editor de página. Você pode definir qual editor AEM deve abrir com base nos caminhos de conteúdo ou no `sling:resourceType`, tornando a experiência perfeita para seus autores, independentemente de qual editor é necessário para o conteúdo selecionado.
+Se você tiver um projeto AEM existente usando o [editor de página](/help/sites-cloud/authoring/page-editor/introduction.md), quando os autores de conteúdo editarem as páginas, elas serão abertas automaticamente com o editor de página. Você pode definir qual editor AEM deve abrir com base nos caminhos de conteúdo ou no `sling:resourceType`, tornando a experiência perfeita para seus autores, independentemente de qual editor é necessário para o conteúdo selecionado.
 
 1. Abra o Gerenciador de configurações.
 

@@ -4,10 +4,10 @@ description: Saiba como usar o Cloud Manager para criar seus primeiros ambientes
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ Nesta parte da [jornada de integração](overview.md), você aprenderá a usar o
 
 ## Objetivo {#objective}
 
-Tendo lido o documento [Criação de programas](create-program.md) desta jornada de integração, agora você tem seu próprio programa do Cloud Manager. Agora você pode aprender a usar o Cloud Manager para criar seus primeiros ambientes para esse programa.
+Depois de ler o documento anterior nesta jornada de integração, [Criação de programas](create-program.md), agora você tem seu próprio programa Cloud Manager. Agora você pode aprender a usar o Cloud Manager para criar seus primeiros ambientes para esse programa.
 
 Depois de ler este documento, você deverá:
 

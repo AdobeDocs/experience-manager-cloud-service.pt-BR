@@ -4,10 +4,10 @@ description: Saiba como criar perfis de usuários no Admin Console para gerencia
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 4edecfcd-6301-4a46-98c7-eb5665f48995
-source-git-commit: 53a3a4c47becf58f8874083e2878fa3458d6cad7
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1130'
-ht-degree: 74%
+ht-degree: 72%
 
 ---
 
@@ -23,7 +23,7 @@ Periodicamente, o Adobe entra em contato com os usuários com relação aos ambi
 * **Notificação de Incidente** - Estas notificações são enviadas durante um incidente ou quando a Adobe identificou um problema potencial de disponibilidade com seu ambiente do AEM as a Cloud Service.
 * **Notificação proativa** - Estas notificações são enviadas quando um membro da equipe de suporte da Adobe deseja fornecer orientação sobre uma possível otimização ou recomendação que pode beneficiar seu ambiente do AEM as a Cloud Service.
 
-Os usuários também podem receber essas notificações para programas específicos com base em suas [permissões de grupo personalizadas.](/help/implementing/cloud-manager/custom-permissions.md)
+Os usuários também podem receber essas notificações para programas específicos com base em suas [permissões de grupo personalizadas](/help/implementing/cloud-manager/custom-permissions.md).
 
 Além disso, a atribuição de grupos à notificação proativa é suportada, e usuários e grupos podem ser atribuídos diretamente aos perfis de produto.
 
@@ -43,7 +43,7 @@ Visto que os perfis de usuários são criados e mantidos no Admin Console, antes
 
 Para configurar corretamente o recebimento de notificações, crie dois perfis de usuário. Essas etapas são executadas apenas uma vez.
 
-1. Faça logon no Admin Console em [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Faça logon no Admin Console em [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. Certifique-se de estar na organização correta.
 
@@ -103,7 +103,7 @@ Siga estas etapas para adicionar usuários para os quais as IDs federadas ainda 
 
    ![Usuários](assets/product_services.png)
 
-1. Se a ID federareda dos membros da equipe ainda não tiver sido configurada, selecione a guia **Usuários** na navegação superior, em seguida, selecione **Adicionar usuário**. Caso contrário, pule para a seção [Adicionar usuários existentes aos perfis.](#existing-users)
+1. Se a ID federareda dos membros da equipe ainda não tiver sido configurada, selecione a guia **Usuários** na navegação superior, em seguida, selecione **Adicionar usuário**. Caso contrário, pule para a seção [Adicionar usuários existentes aos perfis](#existing-users).
 
    ![Usuários](assets/cloud_manager_add_user.png)
 
@@ -136,7 +136,7 @@ Siga estas etapas para adicionar usuários para os quais já existem IDs federad
 
 1. Selecione a guia **Usuários** na navegação superior.
 
-1. Se o Federated ID já existir para o membro da equipe que você deseja adicionar a um perfil de notificação, localize esse usuário na lista e clique nele. Caso contrário, pule para a seção [Adicionar novos usuários aos perfis.](#add-user)
+1. Se o Federated ID já existir para o membro da equipe que você deseja adicionar a um perfil de notificação, localize esse usuário na lista e clique nele. Caso contrário, pule para a seção [Adicionar novos usuários aos perfis](#add-user).
 
 1. Na seção **Produtos** da janela de detalhes do usuário, clique no botão reticências e selecione **Editar**.
 

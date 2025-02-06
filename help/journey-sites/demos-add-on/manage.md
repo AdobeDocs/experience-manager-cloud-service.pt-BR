@@ -4,10 +4,10 @@ description: Saiba mais sobre as ferramentas disponíveis para ajudá-lo a geren
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 89%
+ht-degree: 85%
 
 ---
 
@@ -17,13 +17,13 @@ Saiba mais sobre as ferramentas disponíveis para ajudá-lo a gerenciar seus sit
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada do complemento Demonstrações de Referência do AEM, [Criar Site,](create-site.md) você criou um novo site de demonstração com base nos modelos do Complemento de demonstração de referência. Agora você deve:
+No documento anterior da jornada do Complemento de Demonstrações de Referência do AEM, [Criar Site](create-site.md), você criou um novo site de demonstração com base nos modelos do Complemento de Demonstração de Referência. Agora você deve:
 
 * Entender como acessar o ambiente de criação do AEM.
 * Saber como criar um site com base em um modelo.
 * Entender as noções básicas de navegação na estrutura do site e edição de uma página.
 
-Se você também [habilitou o AEM Screens para o site de demonstração,](screens.md)é preciso:
+Se você também [habilitou o AEM Screens para o site de demonstração](screens.md), você também deve:
 
 * Ter noções básicas do AEM Screens.
 * Entender o conteúdo de demonstração da We.Cafe.

@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 solution: Experience Manager Sites
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '919'
-ht-degree: 63%
+ht-degree: 61%
 
 ---
 
@@ -59,7 +59,7 @@ O gerenciador de implantação permite ativar ou desativar o gerenciamento de co
 
 Isso é feito usando a [configuração do OSGi](/help/implementing/deploying/configuring-osgi.md) do **Gerenciador de implantaçao Day CQ WCM**. Defina o valor **Manipular conflito com páginas criadas manualmente** ( `rolloutmgr.conflicthandling.enabled`) como verdadeiro se o gerenciador de implantação deve lidar com conflitos de uma página criada na Live Copy com um nome que existe no blueprint.
 
-O AEM tem [comportamentos predefinidos quando o gerenciamento de conflitos foi desativado.](#behavior-when-conflict-handling-deactivated)
+O AEM tem [comportamento predefinido quando o gerenciamento de conflitos foi desativado](#behavior-when-conflict-handling-deactivated).
 
 ## Manipuladores de conflito {#conflict-handlers}
 
@@ -118,7 +118,7 @@ Os manipuladores de conflito personalizados podem:
 
 ### Comportamento quando o manuseio de conflitos é desativado {#behavior-when-conflict-handling-deactivated}
 
-Se você [desativar o manuseio de conflitos manualmente,](#rollout-manager-and-conflict-handling) o AEM não executa nenhuma ação em páginas em conflito. As páginas não conflitantes são implantadas conforme esperado.
+Se você [desativar o tratamento de conflitos](#rollout-manager-and-conflict-handling) manualmente, o AEM não executa nenhuma ação em páginas em conflito. As páginas não conflitantes são implantadas conforme esperado.
 
 >[!CAUTION]
 >

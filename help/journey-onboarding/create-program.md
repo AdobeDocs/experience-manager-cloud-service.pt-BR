@@ -4,10 +4,10 @@ description: Saiba como usar o Cloud Manager para criar seu primeiro programa.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 feature: Onboarding
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 66%
+ht-degree: 63%
 
 ---
 
@@ -17,7 +17,7 @@ Nesta parte da [jornada de integração](overview.md), você aprenderá a usar o
 
 ## Objetivo {#objective}
 
-Depois de revisar o documento anterior nesta jornada de integração, [Acessar o Cloud Manager,](cloud-manager.md) você garantiu o acesso apropriado ao Cloud Manager. Agora você pode criar seu primeiro programa.
+Depois de revisar o documento anterior nesta jornada de integração, [Acessar o Cloud Manager](cloud-manager.md), você garantiu o acesso apropriado ao Cloud Manager. Agora você pode criar seu primeiro programa.
 
 Depois de ler este documento, você poderá:
 
@@ -68,7 +68,7 @@ Quando o programa estiver concluído, os membros da sua organização serão atr
 
 ## O que vem a seguir {#whats-next}
 
-Agora que seu primeiro programa foi criado, você pode criar ambientes para ele. Continue sua jornada de integração revisando em seguida o documento [Criar ambientes.](create-environments.md)
+Agora que seu primeiro programa foi criado, você pode criar ambientes para ele. Continue sua jornada de integração revisando em seguida o documento [Criar ambientes](create-environments.md).
 
 ## Recursos adicionais {#additional-resources}
 

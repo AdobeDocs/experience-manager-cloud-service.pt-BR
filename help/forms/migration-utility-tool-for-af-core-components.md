@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 exl-id: ee71a576-96a7-4c81-b3a3-1d678f010cba
 feature: Adaptive Forms, Core Components
-source-git-commit: 92a5599ac94d5bf09311d34dd0287def46b14353
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 5%
@@ -53,8 +53,8 @@ O Utilitário de conversão do Forms converte o Forms adaptável, que é baseado
 
 ## Pré-requisitos para usar as ferramentas de modernização do AEM
 
-* [Configurar ambiente de desenvolvimento local para o AEM Forms](/help/forms/setup-local-development-environment.md)
-* [Ative os Componentes principais adaptáveis do Forms para seu ambiente.](/help/forms/enable-adaptive-forms-core-components.md)
+* [Configurar o ambiente de desenvolvimento local para o AEM Forms](/help/forms/setup-local-development-environment.md).
+* [Habilitar os Componentes principais adaptáveis do Forms para o seu ambiente](/help/forms/enable-adaptive-forms-core-components.md).
 * Adicione usuários ao grupo [!DNL forms-users]. Os membros do grupo [!DNL forms-users] têm permissões para criar um Formulário adaptável.
 * Usuários com as seguintes funções têm as permissões para instalar as ferramentas de modernização do AEM em um ambiente AEM:
 

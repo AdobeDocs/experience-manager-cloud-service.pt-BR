@@ -5,10 +5,10 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 74%
+ht-degree: 72%
 
 ---
 
@@ -83,7 +83,7 @@ Além de visualizar as anotações, o modo Anotar permite criar, editar, mover o
 
 1. Depois que terminar de editar uma anotação específica, você pode:
 
-   * Selecione o marcador de texto para abrir a anotação. Depois de aberta, você pode exibir o texto completo, fazer alterações ou [excluir a anotação.](#deleting-annotations)
+   * Selecione o marcador de texto para abrir a anotação. Depois de aberta, você pode exibir o texto completo, fazer alterações ou [excluir a anotação](#deleting-annotations).
    * Reposicionar o marcador de texto.
    * Selecione uma linha de rascunho para selecionar esse rascunho e arraste-o para a posição desejada.
    * Mover ou copiar um componente

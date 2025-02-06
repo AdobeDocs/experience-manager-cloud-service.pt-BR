@@ -5,10 +5,10 @@ exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 83%
+ht-degree: 76%
 
 ---
 
@@ -18,7 +18,7 @@ Saiba como publicar seu conteúdo traduzido e atualizar as traduções como atua
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de tradução headless do AEM, [Traduzir conteúdo,](configure-connector.md) você aprendeu a usar os projetos de tradução do AEM para traduzir conteúdo headless. Agora você deve:
+No documento anterior da jornada de tradução sem periféricos do AEM, [Traduzir conteúdo](configure-connector.md), você aprendeu a usar os Projetos de tradução do AEM para traduzir conteúdo sem periféricos. Agora você deve:
 
 * Entender o que é um projeto de tradução.
 * Ser capaz de criar novos projetos de tradução.
@@ -72,7 +72,7 @@ Nesse caminho, você tem subpastas para cada idioma de tradução e pode escolhe
 1. Selecione **Gerenciar Publicação**.
 1. Na janela **Gerenciar publicação**, verifique se **Publicar** é automaticamente selecionado em **Ação** e se **Agora** é selecionado em **Agendamento**. Selecione **Próximo**.
    ![Gerenciar opções de publicação](assets/manage-publication-options.png)
-1. Na próxima janela **Gerenciar publicação**, confirme se os caminhos adequados estão selecionados. Selecione **Publish**.
+1. Na próxima janela **Gerenciar publicação**, confirme se os caminhos adequados estão selecionados. Selecione **Publicar**.
    ![Gerenciar escopo de publicação](assets/manage-publication-scope.png)
 1. O AEM confirma a ação de publicação com uma mensagem pop-up na parte inferior da tela.
    ![Banner de recursos publicados](assets/resources-published-message.png)
@@ -119,7 +119,7 @@ Você vê que um novo cartão de tarefa foi adicionado ao projeto. Neste exemplo
 
 Observe que as estatísticas listadas no novo cartão (número de ativos e fragmentos de conteúdo) são diferentes. Isso ocorre porque o AEM reconhece o que mudou desde a última tradução e inclui apenas o conteúdo que deve ser traduzido. Isso inclui a nova tradução do conteúdo atualizado e a primeira tradução do novo conteúdo.
 
-A partir deste ponto, você [inicia e gerencia seu trabalho de tradução da mesma forma que fazia com o original.](translate-content.md#using-translation-project)
+A partir deste ponto, você [inicia e gerencia seu trabalho de tradução da mesma forma que fazia com o original](translate-content.md#using-translation-project).
 
 ### Atualizar um projeto de tradução criado manualmente {#updating-manual-project}
 
@@ -141,15 +141,15 @@ Para atualizar uma tradução, é possível adicionar um novo trabalho ao projet
    ![Selecionar idioma de destino](assets/select-target-language.png)
 
 1. Depois que o idioma de destino do novo trabalho de tradução for definido, selecione o botão de reticências na parte inferior do cartão de tarefa para exibir os detalhes da tarefa.
-1. A tarefa fica vazia quando é criada pela primeira vez. Adicione conteúdo à tarefa tocando ou clicando no botão **Adicionar** e usando o navegador de caminho [como você fez antes ao criar originalmente o projeto de tradução.](translate-content.md##manually-creating)
+1. A tarefa fica vazia quando é criada pela primeira vez. Adicione conteúdo ao trabalho tocando ou clicando no botão **Adicionar** e usando o navegador de caminho [como você fez antes ao criar originalmente o projeto de tradução](translate-content.md##manually-creating).
 
 >[!TIP]
 >
 >Os filtros potentes do navegador de caminho podem ser úteis novamente para localizar apenas o conteúdo que foi atualizado.
 >
->Você pode saber mais sobre o navegador de caminho na [seção recursos adicionais.](#additional-resources)
+>Você pode saber mais sobre o navegador de caminho na [seção de recursos adicionais](#additional-resources).
 
-A partir deste ponto, [inicie e gerencie seu trabalho de tradução da mesma forma que fazia com o original.](translate-content.md#using-translation-project)
+A partir deste ponto, você [inicia e gerencia seu trabalho de tradução da mesma forma que fazia com o original](translate-content.md#using-translation-project).
 
 ## Fim da jornada? {#end-of-journey}
 

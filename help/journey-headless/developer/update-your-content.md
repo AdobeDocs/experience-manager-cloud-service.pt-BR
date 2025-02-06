@@ -5,16 +5,16 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 87%
+ht-degree: 84%
 
 ---
 
 # Como atualizar seu conteúdo por meio das APIs do AEM Assets {#update-your-content}
 
-Nesta parte da [jornada do desenvolvedor headless do AEM,](overview.md) saiba como usar a API REST para acessar e atualizar o conteúdo dos seus fragmentos de conteúdo.
+Nesta parte da [Jornada de desenvolvedores sem periféricos do AEM](overview.md), saiba como usar a API REST para acessar e atualizar o conteúdo dos fragmentos de conteúdo.
 
 ## A história até agora {#story-so-far}
 
@@ -57,7 +57,7 @@ A API HTTP de ativos abrange:
 
 A implementação atual da API HTTP de ativos é baseada no estilo de arquitetura **REST** e permite que você acesse o conteúdo (armazenado no AEM) por meio de operações **CRUD** (criar, ler, atualizar, excluir).
 
-Com essas operações, a API permite operar o Adobe Experience Manager as a Cloud Service como um CMS (Content Management System, sistema de gerenciamento de conteúdo) headless, fornecendo serviços de conteúdo a um aplicativo front-end do JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
+Com essas operações, a API permite operar o Adobe Experience Manager as a Cloud Service como um CMS (Content Management System) headless, fornecendo Serviços de conteúdo a um aplicativo front-end do JavaScript. Ou qualquer outro aplicativo que possa executar solicitações HTTP e manipular respostas JSON. Por exemplo, aplicativos de página única (SPA) baseados em estrutura ou personalizados exigem conteúdo fornecido por meio de uma API, geralmente no formato JSON.
 
 <!--
 >[!NOTE]

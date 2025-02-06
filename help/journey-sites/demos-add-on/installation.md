@@ -4,10 +4,10 @@ description: Saiba mais sobre o Cloud Manager e como ele é usado para instalar 
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '941'
-ht-degree: 97%
+ht-degree: 93%
 
 ---
 
@@ -104,7 +104,7 @@ Agora que concluiu esta parte da jornada do complemento de demonstrações de re
 * Entender como os pipelines entregam conteúdo e configuração ao AEM.
 * Veja como os modelos podem criar novos sites pré-preenchidos com conteúdo de demonstração com apenas alguns cliques.
 
-Desenvolva esse conhecimento e prossiga sua jornada de Criação Rápida de Sites do AEM revisando o documento [Criar um Programa e um Pipeline,](create-program.md) onde você aprenderá a configurar um novo programa e um pipeline para implantar o complemento.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites de AEM revisando [Criar um Programa e um Pipeline](create-program.md), onde você aprenderá a configurar um novo programa e pipeline para implantar o complemento.
 
 ## Recursos adicionais {#additional-resources}
 

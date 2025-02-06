@@ -5,9 +5,10 @@ topic-tags: components
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b55f7260628f759de2718290624cdc82da7a2961
+exl-id: 0276b310-b9a9-44b6-b295-06c51ef17208
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ Internacionalize seus componentes e caixas de diálogo para que suas cadeias de 
 
 Use o processo a seguir para internacionalizar seus componentes e fornecer a interface do usuário em diferentes idiomas:
 
-1. [Implemente seus componentes usando um código que internacionalize cadeias de caracteres.](/help/implementing/developing/extending/i18n/dev.md) Seu código identifica as cadeias de caracteres a serem traduzidas e seleciona o idioma a ser apresentado no tempo de execução.
+1. [Implemente seus componentes usando o código que internacionaliza as cadeias de caracteres](/help/implementing/developing/extending/i18n/dev.md). O código identifica as cadeias de caracteres a serem traduzidas e seleciona o idioma a ser apresentado no tempo de execução.
 1. Crie dicionários e adicione as cadeias de caracteres em inglês para traduzir.
 1. Exporte o dicionário para o formato XLIFF, traduza as cadeias de caracteres e importe os arquivos XLIFF de volta para o AEM.
 1. Incorpore o dicionário no processo de gerenciamento de versões do seu aplicativo.

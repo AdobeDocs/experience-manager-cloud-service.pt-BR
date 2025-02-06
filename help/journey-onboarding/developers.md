@@ -4,10 +4,10 @@ description: Depois que o administrador do sistema configurar os recursos de nuv
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: a3e79441d46fa961fcd05ea54e84957754890d69
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1397'
-ht-degree: 89%
+ht-degree: 86%
 
 ---
 
@@ -18,7 +18,7 @@ Nesta parte opcional da [jornada de integração](overview.md), você aprenderá
 
 ## A história até agora {#story-so-far}
 
-Você percorreu um longo caminho em sua jornada de integração! Parabéns! O administrador do sistema concluiu a jornada de integração configurando os recursos de nuvem necessários e concedendo acesso conforme o documento [Atribuição de perfis de produto do AEM.](assign-profiles-aem.md)
+Você percorreu um longo caminho em sua jornada de integração! Parabéns! O administrador do sistema concluiu a jornada de integração configurando os recursos de nuvem necessários e concedendo acesso conforme o documento [Atribuição de perfis de produto AEM](assign-profiles-aem.md).
 
 Neste ponto, os desenvolvedores e gerentes de implantação podem começar a criar seus próprios aplicativos enquanto os usuários do AEM podem começar a criar conteúdo. Nesse sentido, a integração está completa e agora é hora de usar o novo sistema do AEM as a Cloud Service ilustrado neste documento.
 
@@ -136,7 +136,7 @@ Agora que você leu este documento, deve:
 
 Você começou com o pé direito como desenvolvedor ou gerente de implantação, não apenas com conhecimento sobre o funcionamento do Cloud Manager, como também sobre ambientes de trabalho, repositórios e pipelines! Ainda há mais a aprender sobre as poderosas ferramentas de CI/CD do AEM as a Cloud Service. Confira a seção [Recursos adicionais](#additional-resources) para obter mais detalhes.
 
-Se você estiver interessado em como os autores de conteúdo acessam e usam o AEM as a Cloud Service, continue até a parte final da jornada de integração, [Tarefas do usuário do AEM.](aem-users.md)
+Se você estiver interessado em como os autores de conteúdo acessam e usam o AEM as a Cloud Service, continue até a parte final da jornada de integração, [Tarefas do usuário do AEM](aem-users.md).
 
 >[!TIP]
 >

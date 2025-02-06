@@ -4,9 +4,9 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 67b04abfc0213ac175afca34b9424dafbe150a25
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '3412'
+source-wordcount: '3411'
 ht-degree: 12%
 
 ---
@@ -182,7 +182,7 @@ Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atual
 
 Em casos raros, o ambiente de Cloud Service de destino da assimilação pode estar enfrentando problemas inesperados. Como resultado, a assimilação falhará, pois o ambiente não está no estado pronto esperado. Verifique o log de assimilação para revelar mais detalhes do estado de erro encontrado.
 
-Verifique se o ambiente de criação está disponível e aguarde alguns minutos antes de tentar assimilar novamente. Se o problema persistir, entre em contato com o suporte ao cliente com o estado do erro encontrado.
+Verifique se o ambiente de criação está disponível e aguarde alguns minutos antes de tentar assimilar novamente. Se o problema persistir, entre em contato com o suporte ao cliente com o estado de erro encontrado.
 
 ### Falha na ingestão complementar devido a uma violação da restrição de exclusividade {#top-up-ingestion-failure-due-to-uniqueness-constraint-violation}
 

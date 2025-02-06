@@ -4,7 +4,7 @@ description: Saiba como configurar sites separados para seus ambientes de prepar
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: 5715a07dc3e90e3781afa8d837394533ba419483
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Saiba como configurar sites separados para seus ambientes de preparo e produçã
 
 ## Visão geral {#overview}
 
-Talvez você queira configurar um site para seu ambiente de produção separado do ambiente de preparo. A configuração de um segundo site para uma configuração de preparo e produção separada é semelhante à configuração [necessária para o gerenciamento de vários sites.](/help/edge/wysiwyg-authoring/repoless-msm.md) Na verdade, ele pode ser combinado com estruturas de site do MSM, se necessário.
+Talvez você queira configurar um site para seu ambiente de produção separado do ambiente de preparo. A configuração de um segundo site para uma configuração de preparo e produção separada é semelhante à [configuração necessária para o gerenciamento de vários sites](/help/edge/wysiwyg-authoring/repoless-msm.md). Na verdade, ele pode ser combinado com estruturas de site do MSM, se necessário.
 
 Este documento usa o exemplo típico de ambientes de preparo e produção separados. É possível criar ambientes separados para qualquer ambiente.
 
@@ -33,8 +33,8 @@ Neste exemplo, pressupomos que um site de produção já foi criado para o proje
 
 Há duas etapas para configurar um site de produção separado.
 
-1. [Crie novos sites de Edge Delivery Services para o ambiente de produção.](#create-edge-site)
-1. [Atualize a configuração da nuvem no AEM para seu site de produção.](#update-cloud-configuration)
+1. [Crie novos sites de Edge Delivery Services para seu ambiente de produção](#create-edge-site).
+1. [Atualize a configuração da nuvem no AEM para seu site de produção](#update-cloud-configuration).
 
 ### Criar novos sites do Edge Delivery Services para o ambiente de produção {#create-edge-site}
 

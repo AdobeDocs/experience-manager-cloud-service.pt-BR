@@ -3,9 +3,9 @@ title: Restringir a entrega de ativos com Dynamic Media com recursos OpenAPI
 description: Saiba como restringir a entrega de ativos com recursos OpenAPI.
 role: User
 exl-id: 3fa0b75d-c8f5-4913-8be3-816b7fb73353
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---

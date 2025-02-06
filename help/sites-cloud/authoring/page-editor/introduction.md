@@ -5,7 +5,7 @@ exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 7adfe0ca7fbab1f8a5bd488e524a48be62584966
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # O editor de páginas AEM {#editing-page-content}
 
-Depois que a página é criada no console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) você pode editar o conteúdo da página usando o editor de páginas AEM, uma ferramenta avançada de criação de conteúdo.
+Depois que a página é criada no console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), você pode editar o conteúdo da página usando o editor de páginas AEM, uma ferramenta avançada de criação de conteúdo.
 
 >[!NOTE]
 >
->Ao editar uma página no console [**Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) o console abrirá o editor apropriado ao [modelo](/help/sites-cloud/authoring/page-editor/templates.md) da página: o editor de páginas descrito neste documento ou o [Editor Universal.](/help/sites-cloud/authoring/universal-editor/authoring.md)
+>Ao editar uma página no console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), o console abrirá o editor apropriado ao [modelo](/help/sites-cloud/authoring/page-editor/templates.md) da página, o editor de páginas descrito neste documento ou o [Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md).
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Isto alterna a [barra de ferramentas do emulador](/help/sites-cloud/authoring/pa
 
 #### ContextHub {#context-hub}
 
-Isso abre o [ContextHub.](/help/sites-cloud/authoring/personalization/contexthub.md) Ele só está disponível no modo **Visualização**.
+Isso abre o [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). Ele só está disponível no modo **Visualização**.
 
 ![Botão ContextHub](assets/page-editor-context-hub.png)
 
@@ -114,7 +114,7 @@ Há vários modos ao editar uma página o que permite diversas ações:
 
 #### Visualização {#preview}
 
-O botão **Visualizar** habilita o modo de visualização [.](#preview-mode), exibindo a página como ela aparecerá quando publicada.
+O botão **Visualizar** habilita o [modo de visualização](#preview-mode), exibindo a página como ela será exibida ao ser publicada.
 
 ![Botão Visualizar](assets/page-editor-preview.png)
 

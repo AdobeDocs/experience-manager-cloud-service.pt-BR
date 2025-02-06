@@ -4,7 +4,7 @@ description: Monitoramento de infraestrutura e serviços no AEM as a Cloud Servi
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 feature: Operations
 role: Admin
-source-git-commit: c7488b9a10704570c64eccb85b34f61664738b4e
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 5%
@@ -29,7 +29,7 @@ A disponibilidade externa é composta por duas partes: Service Edge e Monitorame
 
 ### Edge de serviço {#service-edge}
 
-Todos os seus ambientes do AEM as a Cloud Service são monitorados em relação à disponibilidade. No entanto, o Service Edge Monitoring é configurado apenas para ambientes de produção e as métricas são usadas para calcular o SLA do cliente. Leva em consideração o tempo de execução do ambiente e o AEM as a Cloud Service CDN. O Service Edge Monitoring emprega cinco locais distintos próximos à região escolhida e verifica periodicamente a disponibilidade. A indisponibilidade de um site aciona um alerta e envolve equipes e processos de suporte de chamada do Adobe.
+Todos os seus ambientes do AEM as a Cloud Service são monitorados em relação à disponibilidade. No entanto, o Monitoramento do Service Edge é configurado apenas para ambientes de produção e as métricas são usadas para calcular o SLA do cliente. Leva em consideração o tempo de execução do ambiente e o AEM as a Cloud Service CDN. O Service Edge Monitoring emprega cinco locais distintos próximos à região escolhida e verifica periodicamente a disponibilidade. A indisponibilidade de um site aciona um alerta e envolve equipes e processos de suporte de chamada do Adobe.
 
 ### Monitoramento personalizado {#custom-monitoring}
 
@@ -37,13 +37,13 @@ Com o Monitoramento personalizado, os clientes podem, opcionalmente, fornecer at
 
 >[!NOTE]
 >
-> Essa funcionalidade só é oferecida para ambientes de produção e clientes com o Suporte na Nuvem Avançado do [.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Em caso de dúvidas, entre em contato com a equipe de conta do Adobe.
+> Essa funcionalidade só é oferecida para ambientes de produção e clientes com o [Suporte na nuvem avançado](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons). Em caso de dúvidas, entre em contato com a equipe de conta do Adobe.
 
 ## Monitoramento do módulo interno {#module-monitoring}
 
 Embora a disponibilidade externa se concentre no monitoramento do usuário final, o monitoramento interno do módulo observa se os subsistemas de arquitetura estão operando nominalmente sem degradação de recursos ou desempenho. Se houver um problema, os alertas são acionados para que os reparos possam ser feitos automaticamente ou por meio do envolvimento da equipe de operações, com o objetivo de evitar comprometimento da disponibilidade. Há várias categorias de monitores. Veja abaixo alguns exemplos de verificações:
 
-* O percentual de iowait da CPU não excede um determinado limite.
+* A porcentagem de iowait do CPU não excede um determinado limite.
 * As reimplantações de instância não excedem uma determinada frequência.
 * O uso do disco está abaixo de um determinado limite.
 * O tamanho do repositório do autor está dentro de determinados limites.

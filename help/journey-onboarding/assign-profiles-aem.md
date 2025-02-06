@@ -4,7 +4,7 @@ description: Após configurar os recursos de nuvem, conceda à sua equipe acesso
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: bc3c054e781789aa2a2b94f77b0616caec15e2ff
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 76%
@@ -64,7 +64,7 @@ Antes de começar a ler esta seção, você deve ter as informações a seguir s
 
 Siga estas etapas para ver os perfis de produto do AEM no Admin Console.
 
-1. Faça logon no Admin Console em [`https://adminconsole.adobe.com`.](https://adminconsole.adobe.com)
+1. Faça logon no Admin Console em [`https://adminconsole.adobe.com`](https://adminconsole.adobe.com).
 
 1. Na página **Visão geral**, selecione **Adobe Experience Manager as a Cloud Service** no cartão **Produtos e serviços**.
 

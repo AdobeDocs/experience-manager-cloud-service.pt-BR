@@ -4,7 +4,7 @@ description: Marque o conteúdo e use a infraestrutura de Marcação AEM para ca
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 0%
@@ -24,9 +24,9 @@ Este artigo se concentra na estrutura subjacente que oferece suporte à marcaç�
 
 Para marcar conteúdo e usar a infraestrutura de marcação AEM:
 
-* A marca deve existir como um nó do tipo [`cq:Tag`](#cq-tag-node-type) no nó raiz de [taxonomia.](#taxonomy-root-node)
+* A marca deve existir como um nó do tipo [`cq:Tag`](#cq-tag-node-type) no [nó raiz de taxonomia](#taxonomy-root-node).
 * O nó de conteúdo marcado `NodeType` deve incluir o mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
-* O [`TagID`](#tagid) é adicionado à propriedade [`cq:tags`](#cq-tags-property) do nó de conteúdo e é resolvido para um nó do tipo [`cq:Tag`.](#cq-tag-node-type)
+* O [`TagID`](#tagid) é adicionado à propriedade [`cq:tags`](#cq-tags-property) do nó de conteúdo e é resolvido para um nó do tipo [`cq:Tag`](#cq-tag-node-type).
 
 ## cq:Tag Node Type {#cq-tag-node-type}
 
@@ -41,18 +41,18 @@ A estrutura de marcação também restringe os autores e visitantes do site a us
 ### Características da tag {#tag-characteristics}
 
 * O tipo de nó é `cq:Tag`.
-* O nome do nó é um componente de [`TagID`.](#tagid)
-* O [`TagID`](#tagid) sempre inclui um [namespace.](#tag-namespace)
+* O nome do nó é um componente de [`TagID`](#tagid).
+* O [`TagID`](#tagid) sempre inclui um [namespace](#tag-namespace).
 * A propriedade `jcr:title` (o Título a ser exibido na interface do usuário) é opcional.
 * A propriedade `jcr:description` é opcional.
-* Ao conter nós filhos, é referido como uma [marca de contêiner.](#container-tags)
-* A marca é armazenada no repositório abaixo de um caminho base chamado nó raiz de taxonomia [.](#taxonomy-root-node)
+* Quando contém nós filhos, é referido como uma [marca de contêiner](#container-tags).
+* A marca é armazenada no repositório abaixo de um caminho base chamado [nó raiz de taxonomia](#taxonomy-root-node).
 
 ### TagID {#tagid}
 
 Um `TagID` identifica um caminho que é resolvido para um nó de marca no repositório.
 
-Normalmente, o `TagID` é uma abreviação `TagID` começando com o namespace ou pode ser um `TagID` absoluto começando do nó raiz de taxonomia [.](#taxonomy-root-node)
+Normalmente, o `TagID` é uma abreviação `TagID` começando com o namespace ou pode ser um `TagID` absoluto começando do [nó raiz de taxonomia](#taxonomy-root-node).
 
 Quando o conteúdo é marcado, se ainda não existir, a propriedade [`cq:tags`](#cq-tags-property) é adicionada ao nó de conteúdo e a `TagID` é adicionada ao valor da matriz `String` da propriedade.
 
@@ -68,7 +68,7 @@ No AEM, o caminho base é `/content/cq:tags` e o nó raiz é do tipo `cq:Folder`
 
 Os namespaces permitem agrupar itens. O caso de uso mais comum é ter um namespace por site (por exemplo, público versus interno) ou por aplicativo maior (por exemplo, Sites ou Assets), mas os namespaces podem ser usados para várias outras necessidades. Os namespaces são usados na interface para mostrar apenas o subconjunto de tags (ou seja, tags de um determinado namespace) que é aplicável ao conteúdo atual.
 
-O namespace da marca é o primeiro nível na subárvore de taxonomia, que é o nó imediatamente abaixo do nó raiz de taxonomia [.](#taxonomy-root-node) Um namespace é um nó do tipo `cq:Tag` cujo pai não é um tipo de nó `cq:Tag`.
+O namespace da marca é o primeiro nível na subárvore de taxonomia, que é o nó imediatamente abaixo do [nó raiz de taxonomia](#taxonomy-root-node). Um namespace é um nó do tipo `cq:Tag` cujo pai não é um tipo de nó `cq:Tag`.
 
 Todas as tags têm um namespace. Se nenhum namespace for especificado, a marca será atribuída ao namespace padrão, que é `TagID` `default`, ou seja, `/content/cq:tags/default`. O padrão do Título é `Standard Tags` nesses casos.
 
@@ -107,7 +107,7 @@ Para obter mais detalhes, consulte o seguinte:
 
 ### Controle de acesso {#access-control}
 
-As marcas existem como nós no repositório no nó raiz de taxonomia [.](#taxonomy-root-node) Permitir ou negar que autores e visitantes do site criem marcas em um determinado namespace pode ser obtido definindo ACLs apropriadas no repositório.
+As marcas existem como nós no repositório no [nó raiz de taxonomia](#taxonomy-root-node). Permitir ou negar que autores e visitantes do site criem tags em um determinado namespace pode ser obtido definindo ACLs apropriadas no repositório.
 
 A negação de permissões de leitura para determinadas tags ou namespaces controla a capacidade de aplicar tags a um conteúdo específico.
 

@@ -4,7 +4,7 @@ description: Saiba como criar blocos instrumentados para uso com o Editor univer
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 384f8a1301ea488e0b2aa493389d090896fe3b33
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -22,9 +22,9 @@ Este guia fornece instruções passo a passo sobre como criar blocos instrumenta
 
 Este guia requer necessariamente conhecimento existente sobre a criação do WYSIWYG com projetos Edge Delivery Services, bem como do Universal Editor. Antes de começar este guia, você já deve ter acesso aos Edge Delivery Services e estar familiarizado com as suas noções básicas, incluindo:
 
-* Você concluiu o [tutorial do Edge Delivery Service.](/help/edge/developer/tutorial.md)
-* Você tem acesso a uma [sandbox da AEM Cloud Service.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md)
-* Você [habilitou o Editor Universal no mesmo ambiente de sandbox.](/help/implementing/universal-editor/getting-started.md)
+* Você concluiu o [tutorial do Edge Delivery Service](/help/edge/developer/tutorial.md).
+* Você tem acesso a uma [sandbox da AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+* Você [habilitou o Editor Universal no mesmo ambiente de sandbox](/help/implementing/universal-editor/getting-started.md).
 * Você concluiu o [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 Este guia se baseia no trabalho realizado no [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
@@ -281,7 +281,7 @@ Parabéns! Agora você tem um bloco de cotação totalmente funcional e estiliza
 
 ### Opções de bloco {#block-options}
 
-Se você precisar de um bloco para ter aparência ou comportamento um pouco diferente com base em determinadas circunstâncias, mas não for diferente o suficiente para se tornar um novo bloco, poderá permitir que os autores escolham entre [opções de bloco.](content-modeling.md#type-inference)
+Se você precisar de um bloco para ter aparência ou comportamento um pouco diferente com base em determinadas circunstâncias, mas não for diferente o suficiente para se tornar um novo bloco, poderá permitir que os autores escolham entre [opções de bloco](content-modeling.md#type-inference).
 
 Ao adicionar uma propriedade `classes` ao bloco, a propriedade é renderizada no cabeçalho da tabela para blocos simples ou como lista de valores para itens em um bloco de contêiner.
 
@@ -343,4 +343,4 @@ Consulte o documento [Modelagem de conteúdo para criação no WYSIWYG com proje
 
 >[!TIP]
 >
->Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service AEM como fonte de conteúdo, exiba [este webinário de GEMs do.](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery)
+>Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service AEM como fonte de conteúdo, exiba [este webinário de GEMs do](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

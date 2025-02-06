@@ -5,7 +5,7 @@ exl-id: 42480699-b7a7-4678-a763-569a9b7573e2
 solution: Experience Manager Sites
 feature: Workflow
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2200'
 ht-degree: 1%
@@ -75,8 +75,8 @@ Para acessar o console de marcação:
 Há várias etapas para criar e usar tags para organizar seu conteúdo.
 
 1. [Crie um namespace para suas marcas](#creating-namespaces) (ou escolha uma existente para reutilizar).
-1. [Crie uma nova tag.](#creating-tags)
-1. [Publish a tag.](#publishing-tags)
+1. [Criar uma nova marca](#creating-tags).
+1. [Publish a marca](#publishing-tags).
 
 ### Criação de namespaces {#creating-namespaces}
 
@@ -96,7 +96,7 @@ Um namespace é usado para organizar outras tags. Ela pode ser considerada a tag
 
 O namespace é criado. No console de marcação, os namespaces estão no nível mais baixo (na extremidade esquerda do console) e são representados por ícones de pasta, refletindo sua natureza como um &quot;contêiner&quot; ou agrupamento de outras tags.
 
-Agora você pode [criar novas marcas](#creating-tags) neste namespace ou [gerenciar marcas existentes.](#managing-tags)
+Agora você pode [criar novas marcas](#creating-tags) neste namespace ou [gerenciar marcas existentes](#managing-tags).
 
 Um namespace não precisa conter subtags. Como o namespace é, em si, uma tag, ele pode ser usado para organizar o conteúdo como qualquer outra tag. No entanto, para continuar criando uma taxonomia de marcação estruturada, você pode [criar subtags](#creating-tags) nesse namespace com base nos requisitos do projeto.
 
@@ -104,7 +104,7 @@ Um namespace não precisa conter subtags. Como o namespace é, em si, uma tag, e
 
 As tags geralmente são adicionadas a namespaces.
 
-1. Para criar uma marca, abra o [console de marcação.](#tagging-console)
+1. Para criar uma marca, abra o [console de marcação](#tagging-console).
 
 1. Selecione o namespace em que deseja criar a tag. Ou selecione outra tag para criar uma subtag abaixo dela.
 
@@ -132,7 +132,7 @@ As tags permitem a criação flexível de sua própria taxonomia com base nas ne
 
 Assim como ocorre com a criação de qualquer outro conteúdo no AEM, depois de criar uma tag (ou namespace), ela só existe no ambiente de criação. Para que suas tags estejam disponíveis para os usuários, você deve publicá-las.
 
-1. Para publicar uma marca, abra o [console de marcação.](#tagging-console)
+1. Para publicar uma marca, abra o [console de marcação](#tagging-console).
 
 1. Selecione a(s) tag(s) que deseja publicar e, na barra de ferramentas, selecione **Publish**.
 
@@ -176,7 +176,7 @@ Quando uma única tag, um namespace ou outra tag é selecionada no console de ma
 
 Você pode exibir mais detalhes sobre a marca, incluindo quem a publicou pela última vez e quando, alternando o console para a exibição **Propriedades**.
 
-1. Para exibir as propriedades de uma marca, abra o [console de marcação.](#tagging-console)
+1. Para exibir as propriedades de uma marca, abra o [console de marcação](#tagging-console).
 
 1. Selecione a marca cujas propriedades você deseja exibir e, no painel esquerdo, selecione **Propriedades**.
 
@@ -192,7 +192,7 @@ Para obter mais detalhes sobre a seleção dos modos de exibição e do painel, 
 
 Tags e namespaces podem ser editados após a criação.
 
-1. Para editar uma marca, abra o [console de marcação.](#tagging-console)
+1. Para editar uma marca, abra o [console de marcação](#tagging-console).
 
 1. Selecione a tag que deseja editar e, na barra de ferramentas, selecione **Editar**.
 
@@ -206,13 +206,13 @@ Tags e namespaces podem ser editados após a criação.
 
 Para obter detalhes sobre como adicionar traduções de idioma, consulte a seção em [Gerenciando Tags em Diferentes Idiomas](#managing-tags-in-different-languages).
 
-Se as alterações feitas foram para uma tag já publicada, talvez você queira [republicar.](#publishing-tags)
+Se as alterações feitas foram para uma tag já publicada, talvez você queira [republicar](#publishing-tags).
 
 ### Desfazer publicação de tags {#unpublishing-tags}
 
 Para desativar a tag na instância do autor e removê-la da instância de publicação, você pode desfazer a publicação.
 
-1. Para desfazer a publicação de uma marca, abra o [console de marcação.](#tagging-console)
+1. Para desfazer a publicação de uma marca, abra o [console de marcação](#tagging-console).
 
 1. Selecione a(s) tag(s) que deseja cancelar a publicação e, na barra de ferramentas, selecione **Cancelar publicação**.
 
@@ -232,7 +232,7 @@ As tags selecionadas são colocadas em fila para cancelamento da publicação. S
 
 Pode ser útil ver a qual conteúdo uma tag específica é aplicada. Você pode fazer isso usando a exibição **Referências** no console de marcação.
 
-1. Para exibir as referências de uma marca, abra o [console de marcação.](#tagging-console)
+1. Para exibir as referências de uma marca, abra o [console de marcação](#tagging-console).
 
 1. Selecione a marca cujas referências você deseja exibir e, no painel esquerdo, selecione **Referências**.
 
@@ -258,7 +258,7 @@ Pode ser necessário limpar ou reorganizar sua taxonomia de tags movendo uma tag
 >
 >É prática recomendada que somente os administradores tenham permissão para mover e renomear tags.
 
-1. Para mover ou renomear uma marca, abra o [console de marcação.](#tagging-console)
+1. Para mover ou renomear uma marca, abra o [console de marcação](#tagging-console).
 
 1. Selecione a marca que você deseja mover ou renomear e selecione **Mover** na barra de ferramentas.
 
@@ -281,7 +281,7 @@ A tag é renomeada e/ou movida para seu novo local. Quando a tag selecionada for
 
 Se sua taxonomia de tags tiver duplicatas ou tags semelhantes, pode ser útil mesclar essas tags. Quando a marca `A` é mesclada com a marca `B`, todas as páginas marcadas com a marca `A` se tornam marcadas com a marca `B` e a marca `A` não está mais disponível para os autores.
 
-1. Para mesclar duas marcas, abra o [console de marcação.](#tagging-console)
+1. Para mesclar duas marcas, abra o [console de marcação](#tagging-console).
 
 1. Selecione a marca que você deseja mesclar com outra marca e selecione **Mesclar** na barra de ferramentas.
 
@@ -297,7 +297,7 @@ A tag selecionada no console é mesclada à tag especificada na caixa de diálog
 
 Se a taxonomia de marcação for alterada e uma tag ou um namespace for desnecessário, ele poderá ser excluído.
 
-1. Para excluir uma marca, abra o [console de marcação.](#tagging-console)
+1. Para excluir uma marca, abra o [console de marcação](#tagging-console).
 
 1. Selecione a marca que você deseja excluir e selecione **Excluir** na barra de ferramentas.
 
@@ -358,7 +358,7 @@ A propriedade `title` de uma marca pode ser traduzida em vários idiomas. Depois
 
 Vamos supor que tenhamos uma tag chamada `Animals` que queremos traduzir para alemão e francês.
 
-1. Abra o console de marcação [.](#tagging-console)
+1. Abra o [console de marcação](#tagging-console).
 
 1. Selecione a tag que deseja traduzir e selecione **Editar** na barra de ferramentas.
 

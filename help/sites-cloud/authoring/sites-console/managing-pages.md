@@ -5,7 +5,7 @@ exl-id: 355b60c5-a82e-4bbb-98ea-bfcc0126b7fd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '1271'
 ht-degree: 64%
@@ -18,7 +18,7 @@ Saiba como gerenciar as páginas do seu site no AEM, incluindo movimentação, c
 
 >[!TIP]
 >
->Antes de começar a gerenciar suas páginas, familiarize-se com o [como suas páginas estão organizadas no AEM.](/help/sites-cloud/authoring/sites-console/organizing-pages.md)
+>Antes de começar a gerenciar suas páginas, familiarize-se com o [como suas páginas estão organizadas no AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md).
 
 >[!TIP]
 >
@@ -32,9 +32,9 @@ Caso encontre algum problema, sugerimos que você entre em contato com o adminis
 
 ## Abrir uma página para edição {#opening-a-page-for-editing}
 
-Depois de [criar uma página](/help/sites-cloud/authoring/sites-console/creating-pages.md) ou navegar para uma página existente usando o [console **Sites**,](/help/sites-cloud/authoring/sites-console/introduction.md) você poderá abri-lo para edição.
+Depois de [criar uma página](/help/sites-cloud/authoring/sites-console/creating-pages.md) ou navegar para uma página existente usando o [console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), você poderá abri-la para edição.
 
-1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navegue para localizar a página que deseja editar.
 1. Selecione sua página usando:
 
@@ -53,7 +53,7 @@ Depois de [criar uma página](/help/sites-cloud/authoring/sites-console/creating
 
 É possível copiar uma página e todas as respectivas subpáginas para um novo site:
 
-1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navegue para localizar a página que deseja copiar.
 1. Selecione sua página usando:
 
@@ -95,7 +95,7 @@ O procedimento para mover ou renomear uma página é basicamente o mesmo e é re
 
 O AEM oferece a funcionalidade de atualizar todos os links internos que se referem à página que está sendo renomeada/movida. Isso pode ser feito página por página para proporcionar total flexibilidade.
 
-1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navegue para localizar a página que deseja mover.
 1. Selecione sua página usando:
 
@@ -181,7 +181,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de Tr
 
 ### Excluir uma página {#deleting-a-page}
 
-1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navegue até a página que deseja excluir.
 1. Use o [modo de seleção](/help/sites-cloud/authoring/basic-handling.md#viewing-and-selecting-resources) para selecionar a página pretendida, em seguida, use **Excluir** na barra de ferramentas:
 
@@ -213,7 +213,7 @@ O status de trabalhos assíncronos pode ser verificado no painel [**Status de Tr
 
 Você pode criar pastas para ajudar a organizar seus arquivos e páginas.
 
-1. Abra [o console **Sites**.](/help/sites-cloud/authoring/sites-console/introduction.md)
+1. Abra [o console **Sites**](/help/sites-cloud/authoring/sites-console/introduction.md).
 1. Navegue até o local necessário.
 1. Para abrir a lista de opções, selecione **Criar** na barra de ferramentas
 1. Selecione **Pasta** para abrir a caixa de diálogo. Aqui você pode inserir o **Nome** e o **Título**:

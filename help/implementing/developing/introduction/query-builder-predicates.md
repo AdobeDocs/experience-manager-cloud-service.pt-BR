@@ -4,7 +4,7 @@ description: Referência de predicado para a API do Construtor de consultas no A
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
 workflow-type: tm+mt
 source-wordcount: '2270'
 ht-degree: 1%
@@ -171,7 +171,7 @@ Não há suporte para extração de facetas.
 
 ### hasPermission {#haspermission}
 
-Este predicado restringe o resultado a itens nos quais a sessão atual tem os [privilégios JCR especificados.](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+Este predicado restringe o resultado a itens nos quais a sessão atual tem os [privilégios JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) especificados.
 
 Um predicado somente de filtragem e não pode usar um índice de pesquisa. Não há suporte para extração de facetas.
 
