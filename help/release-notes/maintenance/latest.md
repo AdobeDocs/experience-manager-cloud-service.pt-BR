@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 77d8ebeaa3914f4a91d2cf27ccc5b048e64d6b38
+source-git-commit: f7aa50d8a2fa80489c56571caa9a75bc50715368
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '919'
 ht-degree: 12%
 
 ---
@@ -85,6 +85,8 @@ A ativação de recursos do 2025.2.0 fornecerá o conjunto completo de recursos 
 * SITES-26660: a comparação de versão do fragmento de conteúdo pode ser interrompida quando @ContentType é do tipo &quot;string&quot;.
 * SITES-26626: customErrorMessage ausente em campos numéricos e booleanos.
 * SITES-26268: Código de status incorreto retornado se uma referência for inválida ao criar um fragmento.
+* FORMS-18098, FORMS-17954: falha ao carregar o Adaptive Forms no modo Internet Explorer do navegador Microsoft Edge.
+* FORMS-17162: a publicação de um ativo resulta na execução de consultas OOTB que prejudicam o desempenho da publicação.
 
 ### Problemas conhecidos {#known-issues-19352}
 
