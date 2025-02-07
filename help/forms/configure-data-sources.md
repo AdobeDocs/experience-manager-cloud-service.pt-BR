@@ -5,9 +5,9 @@ feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 6266da34305bc5d8b2bbb0d336028f4fede6c165
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2339'
 ht-degree: 1%
 
 ---
@@ -123,7 +123,10 @@ Para definir a pasta de configurações do serviço de nuvem:
 
 ## Configurar serviços Web RESTful {#configure-restful-web-services}
 
-Os serviços Web RESTful podem ser descritos usando [especificações do Swagger](https://swagger.io/specification/v2/) no formato JSON ou YAML em um arquivo de definição [!DNL Swagger]. Para configurar o serviço Web RESTful em [!DNL Experience Manager] as a Cloud Service, verifique se você tem o arquivo [!DNL Swagger] ([Swagger Versão 2.0](https://swagger.io/specification/v2/)) ou o arquivo [!DNL Swagger] ([Swagger Versão 3.0](https://swagger.io/specification/v3/)) no seu sistema de arquivos ou na URL onde o arquivo está hospedado.
+Os serviços Web RESTful podem ser descritos usando [especificações do Swagger](https://swagger.io/specification/v2/) no formato JSON ou YAML em um arquivo de definição [!DNL Swagger] ou um Ponto de Extremidade de Serviço.
+
+>[!NOTE]
+> Para configurar o serviço Web RESTful em [!DNL Experience Manager] as a Cloud Service, verifique se você tem o arquivo [!DNL Swagger] ([Swagger Versão 2.0](https://swagger.io/specification/v2/)) ou o arquivo [!DNL Swagger] ([Swagger Versão 3.0](https://swagger.io/specification/v3/)) no seu sistema de arquivos ou na URL onde o arquivo está hospedado.
 
 ### Configurar serviços RESTful para a Especificação de API aberta versão 2.0 {#configure-restful-services-open-api-2.0}
 
@@ -177,6 +180,31 @@ Algumas das operações não suportadas pela Especificação da API aberta dos s
 * Diferentes corpos de solicitação para diferentes tipos MIME para uma única operação
 
 Consulte a [Especificação da OpenAPI 3.0](https://swagger.io/specification/v3/) para obter informações detalhadas.
+
+### Configurar serviços RESTful usando Ponto de Extremidade de Serviço {#configure-restful-services-service-endpoint}
+
+<span class="preview"> O recurso de Ponto de Extremidade de Serviço está no Programa de Primeiros Adotores e se aplica somente aos Componentes Principais. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+
+1. Acesse **[!UICONTROL Ferramentas > Cloud Service > Fontes de dados]**. Selecione para selecionar a pasta na qual deseja criar uma configuração de nuvem.
+
+   Consulte [Configurar pasta para configurações do serviço de nuvem](configure-data-sources.md#cloud-folder) para obter informações sobre como criar e configurar uma pasta para configurações do serviço de nuvem.
+
+1. Selecione **[!UICONTROL Criar]** para abrir o **[!UICONTROL Assistente de Criação de Configuração de Source de Dados]**.
+
+1. Especifique um nome e, opcionalmente, um título para a configuração, selecione **[!UICONTROL Serviço RESTful]** no menu suspenso **[!UICONTROL Tipo de serviço]**, opcionalmente, procure e selecione uma imagem em miniatura para a configuração e selecione **[!UICONTROL Próximo]**.
+
+1. Na próxima página, selecione **[!UICONTROL Ponto de Extremidade de Serviço]** na lista suspensa **[!UICONTROL Serviço RESTful]**.
+
+   ![Ponto de Extremidade de Serviço](/help/forms/assets/select-service-endpoint.png)
+
+1. Especifique a **[!UICONTROL URL do Ponto de Extremidade de Serviço]**.
+
+   >[!NOTE]
+   > Por padrão, o Tipo de método é POST.
+1. Selecione um dos Tipos de conteúdo que você deseja escolher na lista suspensa. Os tipos de conteúdo são Dados de formulário de várias partes, JSON e Codificado por URL (Par de valores chave).
+1. Agora você pode selecionar qualquer um dos Tipos de autenticação, como OAuth 2.0, Autenticação básica, Chave de API, Autenticação personalizada, na lista suspensa.
+   ![Tipo de autenticação de Ponto de Extremidade de Serviço](/help/forms/assets/service-endpoint-authtype.png)
+1. Clique em Criar.
 
 ### Configuração do cliente HTTP do Form Data Model (FDM) para otimizar o desempenho {#fdm-http-client-configuration}
 
@@ -258,7 +286,7 @@ Defina a propriedade `importAllowlistPattern` da configuração **[!UICONTROL Im
 }
 ```
 
-Para definir valores de uma configuração, [Gere Configurações OSGi usando o SDK do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) na instância do Cloud Service.
+Para definir valores de uma configuração, [Gere Configurações OSGi usando o AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) na sua instância Cloud Service.
 
 ## Configurar serviços OData {#config-odata}
 

@@ -3,13 +3,12 @@ Title: How to configure submit to Rest Endpoint submit action for an Adaptive Fo
 Description: Discover the steps to set up Rest Endpoint when submitting an Adaptive Form.
 keywords: Endpoint REST do AEM Forms, Enviar para endpoint REST, Postar dados no URL REST, Configurar ação de endpoint REST
 feature: Adaptive Forms, Core Components
-exl-id: 58c63ba6-aec5-4961-a70a-265990ab9cc8
 title: Como configurar uma ação enviar para um formulário adaptável?
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: c20b8909bb884f14bd7fe59f190de3cd375a7111
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 1%
+source-wordcount: '703'
+ht-degree: 3%
 
 ---
 
@@ -30,7 +29,7 @@ Algumas das vantagens de configurar a ação de envio **[!UICONTROL Enviar para 
 
 ## Configurar ação de envio Enviar para Ponto de Extremidade REST {#steps-to-configure-submit-to-restendpoint-submit-action}
 
-Para configurar a ação de envio:
+Para configurar uma ação de envio com base na especificação da API aberta do Swagger:
 
 1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
 1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
@@ -68,6 +67,20 @@ Para configurar a ação de envio:
    Você também pode **[!UICONTROL Habilitar a solicitação POST]** e fornecer uma URL para publicar a solicitação. Para enviar dados ao servidor AEM que hospeda o formulário, use um caminho relativo correspondente ao caminho raiz do servidor AEM. Por exemplo, `/content/forms/af/SampleForm.html`. Para enviar dados para qualquer outro servidor, use o caminho absoluto.
 
 1. Clique em **[!UICONTROL Concluído]**.
+
+### Configurar ação de envio com base no Ponto de Extremidade de Rest do Serviço {#config-service-endpoint-auth}
+
+<span class="preview"> O recurso de Ponto de Extremidade de Serviço está no Programa de Primeiros Adotores e se aplica somente aos Componentes Principais. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+
+1. Abra o navegador Conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
+1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
+1. Clique na guia **[!UICONTROL Envio]**.
+1. Na lista suspensa **[!UICONTROL Enviar Ação]**, selecione **[!UICONTROL Enviar para o ponto de extremidade Rest]**.
+1. Ative a solicitação POST.
+1. Especifique o URL do ponto de extremidade REST.
+1. Selecione a Configuração criada para o Tipo de autenticação de ponto de extremidade REST de serviço e os Tipos de conteúdo. Para saber mais sobre Tipo de Autenticação e Tipos de Conteúdo, visite [configurar fontes de dados](/help/forms/configure-data-sources.md#configure-restful-services-using-service-endpoint-configure-restful-services-service-endpoint).
+   ![Configurando Ponto De Extremidade Rest](assets/rest-service-endpoint-config.png)
+1. Clique em Concluído.
 
 ## Práticas recomendadas
 
