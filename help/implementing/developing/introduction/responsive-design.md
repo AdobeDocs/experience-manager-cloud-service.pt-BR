@@ -4,14 +4,26 @@ description: Com um design responsivo, as mesmas experiências podem ser exibida
 exl-id: be645062-d6d6-45a2-97dc-d8aa235539b8
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
 
+
 # Design responsivo {#responsive-design}
+
+Com um design responsivo, as mesmas experiências podem ser exibidas com eficiência em vários dispositivos em várias orientações.
+
+>[!TIP]
+>
+>Este documento fornece uma visão geral do design responsivo para desenvolvedores e como os recursos são realizados no AEM. Recursos adicionais estão disponíveis:
+>
+>* Para autores de conteúdo, os detalhes de como usar recursos de design responsivo em uma página de conteúdo estão disponíveis no documento [Layout responsivo.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* Para administradores de site, os detalhes sobre como configurar o contêiner de layout para seus sites estão descritos no documento [Configuração do Contêiner de Layout e do Modo de Layout.](/help/sites-cloud/administering/responsive-layout.md)
+
+## Visão geral {#overview}
 
 Projete suas experiências para que elas se adaptem à janela de visualização do cliente em que são exibidas. Com um design responsivo, as mesmas páginas podem ser exibidas efetivamente em vários dispositivos em ambas as orientações. A imagem a seguir demonstra algumas maneiras pelas quais uma página pode responder às alterações no tamanho da janela de visualização:
 
@@ -132,4 +144,65 @@ Páginas responsivas se adaptarão dinamicamente ao dispositivo no qual são ren
 
 O Contêiner de layout do AEM permite implementar com eficiência e eficácia o layout responsivo para adaptar as dimensões da página à janela de visualização do cliente.
 
-Consulte o documento [Configuração do Contêiner de Layout e do Modo de Layout](/help/sites-cloud/administering/responsive-layout.md) para obter mais informações sobre como o Contêiner de Layout funciona e como habilitar layouts responsivos para o seu conteúdo.
+>[A documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) da grade responsiva é uma referência que pode ser fornecida para desenvolvedores front-end permitindo que usem a grade AEM fora do AEM, por exemplo, ao criar modelos de HTML estáticos para um futuro site AEM.
+
+>[!TIP]
+>
+>Consulte o documento [Configuração do Contêiner de Layout e do Modo de Layout](/help/sites-cloud/administering/responsive-layout.md) para obter mais informações sobre como o Contêiner de Layout funciona e como habilitar layouts responsivos para o seu conteúdo.
+
+## Grades Responsivas Aninhadas {#nested-responsive-grids}
+
+Pode haver ocasiões em que você ache necessário aninhar grades responsivas para suportar as necessidades do seu projeto. No entanto, lembre-se de que a prática recomendada para o Adobe é manter a estrutura o mais plana possível.
+
+Quando não for possível evitar o uso de grades responsivas aninhadas, verifique se:
+
+* Todos os contêineres (contêineres, guias, acordeões, etc.) têm a propriedade `layout = responsiveGrid`.
+* Não misture a propriedade `layout = simple` na hierarquia de contêiner.
+
+Isso inclui todos os containers estruturais do modelo de página.
+
+O número da coluna do contêiner interno nunca deve ser maior que o do contêiner externo. O exemplo a seguir satisfaz essa condição. Embora o número da coluna do contêiner externo seja 8 para a tela padrão (desktop), o número da coluna do contêiner interno é 4.
+
+>[!BEGINTABS]
+
+>[!TAB Exemplo de estrutura de nó]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB Exemplo de HTML resultante]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+>[!ENDTABS]

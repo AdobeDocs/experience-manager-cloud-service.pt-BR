@@ -5,16 +5,28 @@ exl-id: 469e8151-8231-4ccc-b7f6-855545f87440
 solution: Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 3%
+source-wordcount: '1377'
+ht-degree: 2%
 
 ---
 
+
 # Configurar o contêiner de layout e o modo de layout {#configuring-layout-container-and-layout-mode}
 
-[Layout Responsivo](/help/sites-cloud/authoring/page-editor/responsive-layout.md) é um mecanismo para realizar o [design responsivo da Web](https://en.wikipedia.org/wiki/Responsive_web_design). Isso permite que o autor de conteúdo crie páginas da Web com um layout e dimensões dependentes dos dispositivos que seus usuários usam.
+Saiba como configurar o contêiner de layout e o modo de layout para ativar layouts responsivos para seus autores de conteúdo.
+
+>[!TIP]
+>
+>Este documento descreve como um administrador de site pode configurar o contêiner de layout para ser compatível com o web design responsivo. Recursos adicionais estão disponíveis:
+>
+>* Para autores de conteúdo, os detalhes de como usar recursos de design responsivo em uma página de conteúdo estão disponíveis no documento [Layout responsivo.](/help/sites-cloud/authoring/page-editor/responsive-layout.md)
+>* Para desenvolvedores, os detalhes do Contêiner de layout e da grade responsiva estão descritos no [Documento de design responsivo](/help/implementing/developing/introduction/responsive-design.md), que fornece dicas sobre como usar contêineres de layout e grade responsiva ao projetar o site.
+
+## Visão geral {#overview}
+
+O Layout responsivo é um mecanismo para realizar [web design responsivo](https://en.wikipedia.org/wiki/Responsive_web_design). Isso permite que o autor de conteúdo crie páginas da Web com um layout e dimensões dependentes dos dispositivos que seus usuários usam.
 
 O AEM permite um layout responsivo para suas páginas usando uma combinação de mecanismos:
 
@@ -229,3 +241,9 @@ Para permitir que os autores adicionem outras grades responsivas às páginas de
 ### Configurar a grade do contêiner de layout {#configure-the-grid-of-the-layout-container}
 
 Você pode configurar o número de colunas disponíveis para cada instância específica do contêiner de layout [editando seus modelos de página](/help/sites-cloud/authoring/page-editor/templates.md).
+
+### Grades Responsivas Aninhadas {#nested-responsive-grids}
+
+A prática recomendada do Adobe é manter a estrutura o mais plana possível.
+
+Quando não for possível evitar o uso de grades responsivas aninhadas, consulte o documento do desenvolvedor [Design responsivo.](/help/implementing/developing/introduction/responsive-design.md#nested-responsive-grids)

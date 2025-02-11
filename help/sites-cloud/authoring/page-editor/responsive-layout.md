@@ -1,22 +1,32 @@
 ---
 title: Layout responsivo
-description: O AEM permite que você tenha um layout responsivo para suas páginas
+description: O AEM permite que você tenha um layout responsivo para suas páginas usando o componente Contêiner de layout.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 70a35cfeb163967b0f627d3ac6495f112d922974
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 78%
+source-wordcount: '1789'
+ht-degree: 76%
 
 ---
+
 
 # Layout responsivo {#responsive-layout}
 
 O AEM permite ter um layout responsivo para suas páginas usando o componente **Contêiner de layout**.
 
-Isso fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o modo [**Layout**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), que permite criar e editar seu layout responsivo dependendo do dispositivo.
+>[!TIP]
+>
+>Este documento fornece uma visão geral dos recursos do Contêiner de layout disponíveis para autores de conteúdo. Recursos adicionais estão disponíveis:
+>
+>* Para administradores de site, os detalhes sobre como configurar o contêiner de layout para seus sites estão descritos no documento [Configuração do Contêiner de Layout e do Modo de Layout.](/help/sites-cloud/administering/responsive-layout.md)
+>* Para desenvolvedores, os detalhes do Contêiner de layout e da grade responsiva estão descritos no [Documento de design responsivo](/help/implementing/developing/introduction/responsive-design.md), que fornece dicas sobre como usar contêineres de layout e grade responsiva ao projetar o site.
+
+## Visão geral {#overview}
+
+O componente **Contêiner de layout** fornece um sistema de parágrafo que permite posicionar componentes em uma grade responsiva. Essa grade pode reorganizar o layout de acordo com o tamanho e o formato do dispositivo/janela. O componente é usado em conjunto com o modo [**Layout**](/help/sites-cloud/authoring/page-editor/introduction.md#mode-selector), que permite criar e editar seu layout responsivo dependendo do dispositivo.
 
 O container de layout:
 
@@ -49,10 +59,6 @@ Com esses mecanismos de grade responsivos, você pode:
 * Executar o controle da coluna.
 
 Dependendo do projeto, o Contêiner de layout pode ser usado como o sistema de parágrafo padrão para suas páginas ou como um componente disponível para ser adicionado à sua página por meio do navegador de componentes (ou ambos).
-
->[!TIP]
->
->O Adobe fornece a [documentação do GitHub](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) do layout responsivo como uma referência que pode ser fornecida para desenvolvedores front-end permitindo que usem a grade AEM fora do AEM, por exemplo, ao criar modelos de HTML AEM estáticos para um futuro site.
 
 >[!NOTE]
 >
