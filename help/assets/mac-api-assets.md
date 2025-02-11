@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API
 role: Developer, Architect, Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 2f4c5db2b40d55e2e46e14cb5309754969b5bdea
+source-git-commit: 3143ca304ec7ff56d45502a3fd5e49b3b9ed6ce4
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 3%
+source-wordcount: '1709'
+ht-degree: 2%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 3%
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
-## Visão geral {#overview}
+## Introdução à API HTTP do AEM [!DNL Assets] {#overview}
 
-A API HTTP do AEM [!DNL Assets] habilita operações CRUD (criar, ler, atualizar e excluir) em ativos digitais por meio de uma interface REST em /`api/assets`. Essas operações se aplicam aos metadados, representações e comentários do ativo. Inclui [suporte para Fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md).
+A API HTTP do AEM [!DNL Assets] habilita operações CRUD (criar, ler, atualizar e excluir) em ativos digitais por meio de uma interface REST disponível em /`api/assets`. Essas operações se aplicam aos metadados, representações e comentários do ativo. Inclui [suporte para Fragmentos de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ A resposta da API é um arquivo JSON para alguns tipos MIME e um código de resp
 >
 >Todas as chamadas de API relacionadas ao carregamento ou atualização de ativos ou binários em geral (como representações) estão obsoletas para [!DNL Experience Manager] como uma implantação do [!DNL Cloud Service]. Para carregar binários, use as [APIs de carregamento binário direto](developer-reference-material-apis.md#asset-upload).
 
-## Fragmentos de conteúdo {#content-fragments}
+## Gerenciar fragmentos de conteúdo {#content-fragments}
 
 Um [Fragmento de conteúdo](/help/assets/content-fragments/content-fragments.md) é um ativo estruturado que armazena texto, números e datas. Como há várias diferenças para `standard` ativos (como imagens ou documentos), algumas regras adicionais se aplicam à manipulação de Fragmentos de conteúdo.
 
@@ -53,7 +53,7 @@ Para obter mais informações, consulte [Suporte a fragmentos de conteúdo na [!
 >
 >As [OpenAPIs](/help/headless/content-fragment-openapis.md) de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo também estão disponíveis.
 
-## Modelo de dados {#data-model}
+## Examinar o modelo de dados {#data-model}
 
 A API HTTP [!DNL Assets] expõe principalmente dois elementos: pastas e ativos padrão. Também fornece elementos detalhados para modelos de dados personalizados usados em Fragmentos de conteúdo. Para obter mais detalhes, consulte Modelos de dados do fragmento de conteúdo. Consulte [Modelos de dados de fragmento de conteúdo](/help/assets/content-fragments/assets-api-content-fragments.md#content-models-and-content-fragments) para obter mais informações.
 
@@ -61,7 +61,7 @@ A API HTTP [!DNL Assets] expõe principalmente dois elementos: pastas e ativos p
 >
 >As [OpenAPIs](/help/headless/content-fragment-openapis.md) de Fragmento de Conteúdo e de Modelo de Fragmento de Conteúdo também estão disponíveis.
 
-### Pastas {#folders}
+### Gerenciar pastas {#folders}
 
 As pastas são como diretórios, como nos sistemas de arquivos tradicionais. As pastas podem conter ativos, subpastas ou ambos. As pastas têm os seguintes componentes:
 
@@ -82,7 +82,7 @@ As pastas são como diretórios, como nos sistemas de arquivos tradicionais. As 
 * `parent`: um link para a pasta principal.
 * `thumbnail` (Opcional): Um link para uma imagem em miniatura da pasta.
 
-### Ativos {#assets}
+### Gerenciar ativos {#assets}
 
 Em [!DNL Experience Manager] um ativo contém os seguintes elementos:
 
@@ -103,7 +103,7 @@ Em [!DNL Experience Manager] uma pasta tem os seguintes componentes:
 * Propriedades.
 * Links.
 
-## Recursos disponíveis {#available-features}
+## Explorar operações de API disponíveis {#available-features}
 
 A API HTTP [!DNL Assets] inclui os seguintes recursos:
 
@@ -293,7 +293,7 @@ Exclui um recurso (-tree) no caminho fornecido.
 * 412 - FALHA NA PRÉ-CONDIÇÃO - se a coleção raiz não puder ser encontrada ou acessada.
 * 500 - ERRO INTERNO DO SERVIDOR - se algo der errado.
 
-## Dicas, práticas recomendadas e limitações {#tips-limitations}
+## Seguir as práticas recomendadas e observar limitações {#tips-limitations}
 
 * O Assets e suas representações ficam indisponíveis por meio da interface da Web do [!DNL Assets] e da API HTTP quando o [!UICONTROL Tempo Desligado] é atingido. A API retorna um erro 404 se o [!UICONTROL Momento da ativação] estiver no futuro ou o [!UICONTROL Momento da desativação] estiver no passado.
 
@@ -301,7 +301,7 @@ Exclui um recurso (-tree) no caminho fornecido.
 
 * Algumas propriedades da pasta ou do ativo são mapeadas para um prefixo diferente quando atualizadas usando APIs. O prefixo `jcr` de `jcr:title`, `jcr:description` e `jcr:language` foi substituído pelo prefixo `dc`. Portanto, no JSON retornado, `dc:title` e `dc:description` contêm os valores de `jcr:title` e `jcr:description`, respectivamente.
 
-**Consulte também**
+**Explorar recursos relacionados**
 
 * [Traduzir ativos](translate-assets.md)
 * [Formatos de arquivo compatíveis com os ativos](file-format-support.md)
