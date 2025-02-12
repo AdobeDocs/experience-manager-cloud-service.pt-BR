@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: 7a63f04f-10f0-4879-bd06-4182bb288a9b
-source-git-commit: c3beecaab03c3721ad2fb70658a335d17f9a66d0
+source-git-commit: bf3ccd88bc29db136ff5445f76e196b6ac8c52c7
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 12%
@@ -23,7 +23,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 
 >[!NOTE]
 >
->Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização de Produto Prioritária do Adobe](https://www.adobe.com/subscription/priority-product-update.html).
+>Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização prioritária de produto da Adobe](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Data de lançamento {#release-date}
 
@@ -52,11 +52,11 @@ Os seguintes eventos de página do AEM Sites agora estão disponíveis como even
 
 **Gerar Variações**
 
-Aproveite a GenAI por meio do novo recurso AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta do Adobe para consideração no programa.
+Aproveite a GenAI por meio do novo recurso do AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta da Adobe para consideração no programa.
 
-AEM **OpenAPI REST para Entrega de Fragmento de Conteúdo**
+**OpenAPI REST do AEM para entrega de fragmentos de conteúdo**
 
-A [OpenAPI REST para Entrega de Fragmento de Conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md) do AEM está disponível agora para o AEM as a Cloud Service.
+A [OpenAPI REST do AEM para Entrega de Fragmento de Conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md) está disponível agora para o AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -66,7 +66,7 @@ A [OpenAPI REST para Entrega de Fragmento de Conteúdo](/help/headless/aem-rest-
 
 Legendas de vídeo geradas por IA no Adobe Dynamic Media usam inteligência artificial para gerar legendas automaticamente para conteúdo de vídeo. Esse recurso foi projetado para melhorar a acessibilidade e a experiência do usuário, fornecendo legendas precisas e em tempo real. A IA analisa a faixa de áudio do vídeo para transcrever a fala e criar legendas, que podem ser editadas para precisão ou personalização. Essas legendas ajudam a atender aos requisitos de acessibilidade e melhorar o envolvimento com o vídeo para públicos-alvo que dependem ou preferem suporte de vídeo baseado em texto.
 
-Para obter acesso antecipado ao suporte a legendas geradas por IA em sua conta da Dynamic Media, [crie e envie um caso de Suporte ao Cliente do Adobe](/help/assets/dynamic-media/video.md##enable-dash).
+Para obter acesso antecipado ao suporte a legendas geradas por IA em sua conta do Dynamic Media, [crie e envie um caso de Suporte ao Cliente da Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Novos recursos na visualização de ativos {#assets-view-new-features}
 
@@ -108,7 +108,7 @@ Agora, os administradores podem controlar se precisam que os ativos expirados es
 
 * [Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável](/help/forms/save-core-component-based-form-as-draft.md): os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
 
-* [Atualizar escopos do Adobe Sign facilmente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): você pode modificar os escopos de uma configuração do Adobe Sign diretamente da página Configurações de Nuvem do AEM, tornando mais rápido e fácil atualizar as configurações existentes.
+* [Atualize facilmente os escopos do Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms): você pode modificar os escopos de uma configuração do Adobe Sign diretamente da página Configurações de nuvem do AEM, tornando mais rápido e fácil atualizar as configurações existentes.
 
 * [Suporte a função assíncrona para Forms Adaptável](/help/forms/using-async-funct-in-rule-editor.md): quando o Formulário Adaptável requer operações assíncronas, como aguardar processos externos ou recuperação de dados, você pode implementar essas operações com funções personalizadas e configurá-las no Editor de Regras.
 
@@ -126,9 +126,9 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 Os recursos de IA gerativa disponíveis são:
 
-* **Assistente de IA para consultas de produtos**: obtenha respostas instantâneas para suas perguntas relacionadas ao formulário AEM. O assistente de IA atua como sua própria base de conhecimento pessoal, fornecendo orientação e recomendações relevantes diretamente na plataforma.
+* **Assistente de IA para consultas de produtos**: obtenha respostas instantâneas para suas perguntas relacionadas ao formulário do AEM. O assistente de IA atua como sua própria base de conhecimento pessoal, fornecendo orientação e recomendações relevantes diretamente na plataforma.
 
-* **Geração de formulário adaptável**: crie formulários completos sem esforço com prompts de IA geradores. A IA gerativa do Adobe gera automaticamente formulários amigáveis que reduzem as quedas e personalizam a experiência.
+* **Geração de formulário adaptável**: crie formulários completos sem esforço com prompts de IA geradores. A IA gerativa da Adobe gera automaticamente formulários amigáveis que reduzem as quedas e personalizam a experiência.
 
 * **Geração de painel para Forms**: gere seções de formulário personalizadas para necessidades específicas de coleta de dados. Por exemplo, gere seções para coletar informações de pagamento, preferências do cliente ou detalhes da viagem.
 
@@ -144,14 +144,14 @@ Os recursos de IA gerativa disponíveis são:
 
 ### Correções de erros {#bug-fixes-cif}
 
-* Correção dos testes de interface do usuário para funcionarem corretamente com os componentes principais do CIF.
+* Correção dos testes de interface do usuário para funcionarem corretamente com componentes principais do CIF.
 * Solução de um problema em que o formato de URL da categoria não funcionava como esperado na instância da nuvem.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Configuração para controlar envios de formulários {#configuration-submissions}
 
-Para controlar os envios de formulários do Coral ou do Foundation em locais específicos, o AEM introduziu uma nova configuração: `com.adobe.granite.ui.components.FormRestrict`. Essa configuração consiste em dois campos:
+Para controlar os envios de formulários do Coral ou do Foundation em locais específicos, a AEM introduziu uma nova configuração: `com.adobe.granite.ui.components.FormRestrict`. Essa configuração consiste em dois campos:
 
 1. **Adicionar Caminhos Permitidos**: especifica os caminhos em que as ações de formulário são permitidas.
 1. **Restringir comportamento**: determina o comportamento de caminhos restritos (caminhos não incluídos na lista de permissões). Você pode escolher entre duas opções:
@@ -164,7 +164,7 @@ Para controlar os envios de formulários do Coral ou do Foundation em locais esp
 
 ### Opção de encaminhamento de registro de autoatendimento com rede avançada {#log-forwarding}
 
-Embora o AEM (incluindo o Apache/Dispatcher) e os logs de CDN possam ser baixados da Cloud Manager, muitas organizações acham útil transmitir esses logs para um destino de registro preferencial. O AEM agora oferece suporte ao [encaminhamento de logs](/help/implementing/developing/introduction/log-forwarding.md) para Azure Blob Storage, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Os logs de AEM podem ser encaminhados opcionalmente por configurações avançadas de rede, como o uso de um endereço IP dedicado.
+Embora os logs do AEM (incluindo o Apache/Dispatcher) e do CDN possam ser baixados da Cloud Manager, muitas organizações acham útil transmitir esses logs para um destino de registro preferencial. A AEM agora oferece suporte ao [encaminhamento de logs](/help/implementing/developing/introduction/log-forwarding.md) para o Armazenamento Azure Blob, Datadog, HTTPS, Elasticsearch (e OpenSearch) e Splunk. Os logs do AEM podem ser encaminhados opcionalmente por configurações avançadas de rede, como o uso de um endereço IP dedicado.
 
 Este recurso é configurado pelos usuários de maneira automatizada e implantado usando o [Pipeline de Configuração](/help/operations/config-pipeline.md).
 
@@ -180,7 +180,7 @@ Os ambientes de desenvolvimento rápido são uma ferramenta poderosa para implan
 
 ### Novos perfis de produto {#new-product-profiles}
 
-Quando um novo ambiente AEM é criado, os Perfis de produto são exibidos automaticamente no Adobe Admin Console, permitindo que os administradores atribuam acesso a soluções e recursos licenciados.
+Quando um novo ambiente do AEM é criado, os Perfis de produto são exibidos automaticamente no Adobe Admin Console, permitindo que os administradores atribuam acesso a soluções e recursos licenciados.
 
 Os novos ambientes agora incluem um conjunto atualizado de Perfis de produto, tornando-os compatíveis com recursos futuros, incluindo a geração de credenciais de API no Adobe Developer Console. Os ambientes existentes poderão atualizar seus Perfis de produto em uma versão futura. [Saiba mais](/help/onboarding/aem-cs-team-product-profiles.md).
 
@@ -188,13 +188,13 @@ Os novos ambientes agora incluem um conjunto atualizado de Perfis de produto, to
 
 Experimente um [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) renovado, que oferece uma experiência mais interativa para depurar código em ambientes na nuvem.
 
-Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Disponível* no Developer Console AEM atual. O Adobe agradece o feedback, que você pode enviar por email para **<aemcs-new-devconsole-ui-beta@adobe.com>**.
+Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Disponível* no Developer Console do AEM atual. O Adobe agradece o feedback, que você pode enviar por email para **<aemcs-new-devconsole-ui-beta@adobe.com>**.
 
 ![Tela de Pacotes OSGi no AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-0-release/whats-new-2024-10-0).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -214,4 +214,4 @@ Você pode encontrar uma lista completa de versões de Gerar Variações [aqui](
 
 ## Notas de versão da Experience Cloud {#experience-cloud}
 
-Você pode encontrar informações sobre lançamentos de outros aplicativos Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
+Você pode encontrar informações sobre versões de outros aplicativos da Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).

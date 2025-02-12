@@ -3,7 +3,8 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2024.6.0.
 feature: Release Information
 role: Admin
-source-git-commit: 81aacb0c616490eed4589cb8927ea1316ca1670e
+exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
+source-git-commit: 6d548f10caa32bb5a7a6b0afe762f60058eca2fe
 workflow-type: tm+mt
 source-wordcount: '1972'
 ht-degree: 10%
@@ -22,7 +23,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 
 >[!NOTE]
 >
->Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização de Produto Prioritária do Adobe](https://www.adobe.com/subscription/priority-product-update.html).
+>Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização prioritária de produto da Adobe](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Data de lançamento {#release-date}
 
@@ -50,7 +51,7 @@ O [Serviço de Dados de Monitoramento de Uso Real (RUM)](/help/sites-cloud/admin
 
 **Gerar Variações**
 
-Aproveite a GenAI por meio do novo recurso AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta do Adobe para consideração no programa.
+Aproveite a GenAI por meio do novo recurso do AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta da Adobe para consideração no programa.
 
 **Navegação de ativos no Console de Fragmentos de Conteúdo**
 
@@ -74,7 +75,7 @@ O Content Hub está disponível como parte do Experience Manager Assets as a Clo
 
 **Dynamic Media com recursos OpenAPI**
 
-O Dynamic Media com recursos de OpenAPI estende o DAM aos aplicativos de Adobe e de terceiros, permitindo o acesso a ativos digitais aprovados pela marca, em qualquer canal, por meio do Seletor de ativos ou da pilha de OpenAPI. Princípios principais - sem cópias binárias, os ativos são otimizados e transformados na borda para desempenho rápido, fornecem ativos públicos ou seguros.
+O Dynamic Media com recursos de OpenAPI estende o DAM a aplicativos da Adobe e de terceiros, permitindo o acesso a ativos digitais aprovados pela marca, em qualquer canal, por meio do Seletor de ativos ou da pilha de OpenAPI. Princípios principais - sem cópias binárias, os ativos são otimizados e transformados na borda para desempenho rápido, fornecem ativos públicos ou seguros.
 
 ![Novo diagrama de fluxo de dados do Dynamic Media](/help/assets/assets/dm-openapi-dfd.png)
 
@@ -85,11 +86,11 @@ O Dynamic Media com recursos de OpenAPI estende o DAM aos aplicativos de Adobe e
 
 A Contagem de ativos por tipo e tamanho de ativo agora está disponível no painel do Assets Insights. Essas opções fornecem dados em tempo real no ambiente de visualização do Assets. Eles detalham a contagem e a porcentagem de ativos por intervalo de tamanho e tipo de ativo.
 
-**Atualizações para o editor de Adobe Express incorporado**
+**Atualizações para o editor Adobe Express inserido**
 
 * Experiência do usuário aprimorada para salvar como um novo ativo em vez de salvar como uma nova versão.
 
-* Exportação de documentos do Express de várias páginas (anteriormente, apenas uma página era suportada) nos formatos de PDF e imagem de várias páginas. A seleção de formatos de imagem salva cada página como um ativo distinto no DAM para distribuição downstream.
+* Exportação de documentos do Express de várias páginas (anteriormente, apenas uma página era suportada) nos formatos PDF de várias páginas e imagem. A seleção de formatos de imagem salva cada página como um ativo distinto no DAM para distribuição downstream.
 
 * Suporte para adicionar metadados na caixa de diálogo Salvar ao salvar um ativo.
 
@@ -144,27 +145,27 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? A documentação do Adobe fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [reCAPTCHA do Google](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? A documentação do Adobe fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Serviço do Forms
 
-O serviço Forms gera PDF forms interativos para a captura de dados. Ele também pode ser usado para importar ou exportar dados de e para um formulário PDF interativo existente e validar os dados enviados. Veja um detalhamento de suas funcionalidades:
+O serviço do Forms gera PDF forms interativo para captura de dados. Ele também pode ser usado para importar ou exportar dados de e para um formulário interativo existente do PDF e validar os dados enviados. Veja um detalhamento de suas funcionalidades:
 
-* **Renderização do Forms**: gere um formulário PDF interativo a partir de um modelo criado com o AEM Forms Designer e, opcionalmente, dados XML. Essa funcionalidade produz um formulário PDF preenchível opcionalmente pré-preenchido com dados.
-* **Extração e Importação de Dados**: importe dados para um formulário PDF existente, bem como extraia dados de um formulário PDF preenchido. Os formatos de dados XDP e XML são compatíveis, e a importação para PDF forms não XFA (também conhecida como AcroForms) também é compatível com dados FDF e XFDF.
+* **Renderização do Forms**: gere um formulário interativo do PDF a partir de um modelo criado com o AEM Forms Designer e, opcionalmente, dados XML. Essa funcionalidade produz um formulário do PDF preenchível opcionalmente pré-preenchido com dados.
+* **Extração e Importação de Dados**: importe dados para um formulário existente do PDF, bem como extraia dados de um formulário preenchido do PDF. Os formatos de dados XDP e XML são compatíveis, e a importação para PDF forms não XFA (também conhecida como AcroForms) também é compatível com dados FDF e XFDF.
 * **Validação de Dados**: valide os dados enviados, no formato XDP ou XML, em relação a um modelo criado com o AEM Forms Designer.
 
 >[!IMPORTANT]
 >
-> Se você estiver interessado em participar do Programa de Acesso Antecipado do Adobe para qualquer inovação de acesso antecipado, basta enviar um email do seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
+> Se você estiver interessado em participar do Programa de Acesso Antecipado da Adobe para qualquer inovação de acesso antecipado, basta enviar um email de seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Programa de adoção antecipada de notificações do Centro de ações relacionadas à integridade do conteúdo {#actions-center-notifications}
 
-A [Central de Ações](/help/operations/actions-center.md) envia notificações por email quando ocorrem incidentes importantes, ou se algo for notado sobre seu código ou configuração, onde você deve tomar medidas pró-ativas. O Adobe agora introduziu vários novos tipos de notificações associados à integridade do conteúdo. Esse recurso está disponível por meio de um programa de adoção antecipada. Para participar, entre em contato com o Atendimento ao cliente do Adobe.
+A [Central de Ações](/help/operations/actions-center.md) envia notificações por email quando ocorrem incidentes importantes, ou se algo for notado sobre seu código ou configuração, onde você deve tomar medidas pró-ativas. O Adobe agora introduziu vários novos tipos de notificações associados à integridade do conteúdo. Esse recurso está disponível por meio de um programa de adoção antecipada. Para participar, entre em contato com o Atendimento ao cliente da Adobe.
 
 #### As páginas contêm um grande número de nós {#page-nodes}
 
@@ -176,7 +177,7 @@ O desempenho do mecanismo de fluxo de trabalho é afetado quando há um grande n
 
 #### Usuários adicionados diretamente aos grupos personalizados {#users-customgroups}
 
-Você recebe uma notificação proativa por meio do Centro de ações quando os usuários são adicionados diretamente aos grupos personalizados. Esse processo permite seguir as práticas recomendadas do IMS, adicionando usuários aos grupos IMS relevantes e, em seguida, incluindo esses grupos IMS como membros de grupos AEM.
+Você recebe uma notificação proativa por meio do Centro de ações quando os usuários são adicionados diretamente aos grupos personalizados. Esse processo permite seguir as práticas recomendadas do IMS adicionando usuários aos grupos IMS relevantes e, em seguida, incluindo esses grupos IMS como membros de grupos AEM.
 
 #### Conteúdo JCR ausente {#jcr-content}
 
@@ -196,7 +197,7 @@ Email **<aemcs-cdn-config-adopter@adobe.com>**, indicando em qual dos primeiros 
 
 #### Autenticação básica na CDN (Early Adoter Program, programa de primeiros usuários) {#basicauth-cdn}
 
-Protect determinados recursos de conteúdo, exibindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. Esse recurso destina-se principalmente a casos de uso de autenticação simples, como partes interessadas de negócios que revisam o conteúdo, em vez de servir como uma solução abrangente para os direitos de acesso do usuário final. A lista de nomes de usuário e senhas é gerenciada por meio de um arquivo de configuração no Git, que é implantado por meio do Pipeline de configuração, com uma referência às variáveis de ambiente do Cloud Manager do tipo secreto. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Proteja determinados recursos de conteúdo abrindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. Esse recurso destina-se principalmente a casos de uso de autenticação simples, como partes interessadas de negócios que revisam o conteúdo, em vez de servir como uma solução abrangente para os direitos de acesso do usuário final. A lista de nomes de usuário e senhas é gerenciada por meio de um arquivo de configuração no Git, que é implantado por meio do Pipeline de configuração, com uma referência às variáveis de ambiente do Cloud Manager do tipo secreto. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 #### Limpar conteúdo na CDN com uma chave de API de autoatendimento (Early Adoter Program, Programa de adoção antecipada) {#purge-cdn}
 
@@ -212,7 +213,7 @@ Anteriormente, um tíquete de suporte era necessário para gerar a X-AEM-Edge-Ke
 
 #### Redirecionamentos do lado do cliente (programa de primeiros usuários) {#client-side-redirects-early-adopter}
 
-Configure os redirecionamentos do lado do cliente 301/302 no controle do código-fonte e implante na CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Observe que há vários outros recursos já disponíveis relacionados à [configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluindo transformações de solicitação e resposta, e roteamento de tráfego para sites fora do AEM.
+Configure os redirecionamentos do lado do cliente 301/302 no controle do código-fonte e implante na CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Observe que há vários outros recursos já disponíveis relacionados à [configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluindo transformações de solicitação e resposta e o roteamento de tráfego para sites fora do AEM.
 
 #### Alertas de regras de filtro de tráfego (Programa de adoção antecipada) {#traffic-filter-rules-alerts-early-adopter}
 
@@ -226,11 +227,11 @@ Semelhante ao AEM 6.5, o Apache/Dispatcher assimila mapas de regravação coloca
 
 #### O Edge Side Includes (ESI) para Carregar Conteúdo Dinâmico (Early Adoter Program) {#esi-early-adopter}
 
-O CDN do Adobe Managed agora é compatível com o [ESI (Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para o assembly de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página de HTML geral na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+A CDN Gerenciada pelo Adobe agora oferece suporte a [ESI (Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para o assembly de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página geral do HTML na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -250,4 +251,4 @@ Você pode encontrar uma lista completa de versões de Gerar Variações [aqui](
 
 ## Notas de versão da Experience Cloud {#experience-cloud}
 
-Você pode encontrar informações sobre lançamentos de outros aplicativos Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
+Você pode encontrar informações sobre versões de outros aplicativos da Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).

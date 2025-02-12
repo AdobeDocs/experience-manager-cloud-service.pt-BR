@@ -3,7 +3,8 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2024.9.0.
 feature: Release Information
 role: Admin
-source-git-commit: 0c4db1b70aa665e1802a316ece26db1e06f40b24
+exl-id: 75ecd154-112a-4468-9962-de50bb1f4cd0
+source-git-commit: b0208964fc193e0e839bccaaf8245c86f280767d
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 13%
@@ -22,7 +23,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 
 >[!NOTE]
 >
->Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização de Produto Prioritária do Adobe](https://www.adobe.com/subscription/priority-product-update.html).
+>Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização prioritária de produto da Adobe](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Data de lançamento {#release-date}
 
@@ -44,13 +45,13 @@ Assista ao vídeo Visão geral da versão de setembro de 2024 que exibe um resum
 
 #### Gerenciamento de tradução {#translation-management}
 
-Os fluxos de trabalho de tradução e as ações de API do AEM agora acionam eventos para fornecer insights sobre as alterações de estado do trabalho de tradução. Os usuários podem assinar esses eventos por meio da Adobe Developer Console. Consulte [aqui](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) para obter mais informações sobre a API de gerenciamento de tradução do AEM.
+Os fluxos de trabalho de tradução e as ações de API do AEM agora acionam eventos para fornecer insights sobre as alterações de estado do trabalho de tradução. Os usuários podem assinar esses eventos por meio da Adobe Developer Console. Consulte [aqui](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/) para obter mais informações sobre a API do AEM Translation Management.
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
 **Gerar Variações**
 
-Aproveite a GenAI por meio do novo recurso AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta do Adobe para consideração no programa.
+Aproveite a GenAI por meio do novo recurso do AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta da Adobe para consideração no programa.
 
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
@@ -61,7 +62,7 @@ Aproveite a GenAI por meio do novo recurso AEM, [gerar variações](/help/genera
 
 Legendas de vídeo geradas por IA no Adobe Dynamic Media usam inteligência artificial para gerar legendas automaticamente para conteúdo de vídeo. Esse recurso foi projetado para melhorar a acessibilidade e a experiência do usuário, fornecendo legendas precisas e em tempo real. A IA analisa a faixa de áudio do vídeo para transcrever a fala e criar legendas, que podem ser editadas para precisão ou personalização. Essas legendas ajudam a atender aos requisitos de acessibilidade e melhorar o envolvimento com o vídeo para públicos-alvo que dependem ou preferem suporte de vídeo baseado em texto.
 
-Para obter acesso antecipado ao suporte a legendas geradas por IA em sua conta da Dynamic Media, [crie e envie um caso de Suporte ao Cliente do Adobe](/help/assets/dynamic-media/video.md##enable-dash).
+Para obter acesso antecipado ao suporte a legendas geradas por IA em sua conta do Dynamic Media, [crie e envie um caso de Suporte ao Cliente da Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Novos recursos no Seletor de ativos {#asset-selector-new-features}
 
@@ -97,9 +98,9 @@ A IA gerativa para o Adaptive Forms traz um nível totalmente novo de potência 
 
 Os recursos de IA gerativa disponíveis são:
 
-* **Assistente de IA para consultas de produtos**: obtenha respostas instantâneas para suas perguntas relacionadas ao formulário AEM. O assistente de IA atua como sua própria base de conhecimento pessoal, fornecendo orientação e recomendações relevantes diretamente na plataforma.
+* **Assistente de IA para consultas de produtos**: obtenha respostas instantâneas para suas perguntas relacionadas ao formulário do AEM. O assistente de IA atua como sua própria base de conhecimento pessoal, fornecendo orientação e recomendações relevantes diretamente na plataforma.
 
-* **Geração de formulário adaptável**: crie formulários completos sem esforço com prompts de IA geradores. A IA gerativa do Adobe gera automaticamente formulários amigáveis que reduzem as quedas e personalizam a experiência.
+* **Geração de formulário adaptável**: crie formulários completos sem esforço com prompts de IA geradores. A IA gerativa da Adobe gera automaticamente formulários amigáveis que reduzem as quedas e personalizam a experiência.
 
 * **Geração de painel para Forms**: gere seções de formulário personalizadas para necessidades específicas de coleta de dados. Por exemplo, gere seções para coletar informações de pagamento, preferências do cliente ou detalhes da viagem.
 
@@ -129,11 +130,11 @@ Os recursos de IA gerativa disponíveis são:
 
 ### Edge Side Includes (ESI) para Carregar Conteúdo dinâmico {#esi}
 
-O CDN do Adobe Managed agora é compatível com o [ESI (Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para o assembly de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página de HTML geral na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). Esse recurso será implementado gradualmente.
+A CDN Gerenciada pelo Adobe agora oferece suporte a [ESI (Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para o assembly de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página geral do HTML na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). Esse recurso será implementado gradualmente.
 
 ### Autenticação básica na CDN {#basicauth-cdn}
 
-Protect determinados recursos de conteúdo, exibindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. Esse recurso destina-se principalmente a casos de uso de autenticação simples, como partes interessadas de negócios que revisam o conteúdo, em vez de servir como uma solução abrangente para os direitos de acesso do usuário final. A lista de nome de usuário e senhas é gerenciada por meio de um arquivo de configuração no Git, implantado por meio do Pipeline de configuração, com uma referência a variáveis de ambiente do Cloud Manager do tipo secreto. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Proteja determinados recursos de conteúdo abrindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. Esse recurso destina-se principalmente a casos de uso de autenticação simples, como partes interessadas de negócios que revisam o conteúdo, em vez de servir como uma solução abrangente para os direitos de acesso do usuário final. A lista de nome de usuário e senhas é gerenciada por meio de um arquivo de configuração no Git, implantado por meio do Pipeline de configuração, com uma referência a variáveis de ambiente do Cloud Manager do tipo secreto. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 ### Redirecionamentos do lado cliente {#client-side-redirects}
 
@@ -143,7 +144,7 @@ Declarar [redirecionamentos do navegador](/help/implementing/dispatcher/cdn-conf
 
 Experimente um [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) renovado, que oferece uma experiência mais interativa para depurar código em ambientes na nuvem.
 
-Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Disponível* no Developer Console AEM atual. O Adobe agradece o feedback, que você pode enviar por email para **<aemcs-new-devconsole-ui-beta@adobe.com>**.
+Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Disponível* no Developer Console do AEM atual. O Adobe agradece o feedback, que você pode enviar por email para **<aemcs-new-devconsole-ui-beta@adobe.com>**.
 
 ![Tela de Pacotes OSGi no AEM Developer Console](/help/implementing/developing/introduction/assets/osgi-bundles.png)
 
@@ -157,7 +158,7 @@ O [Pipeline de Configuração](/help/operations/config-pipeline.md) é usado par
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -177,4 +178,4 @@ Você pode encontrar uma lista completa de versões de Gerar Variações [aqui](
 
 ## Notas de versão da Experience Cloud {#experience-cloud}
 
-Você pode encontrar informações sobre lançamentos de outros aplicativos Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
+Você pode encontrar informações sobre versões de outros aplicativos da Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).

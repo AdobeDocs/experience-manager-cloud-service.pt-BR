@@ -1,11 +1,11 @@
 ---
 title: Notas de versão atuais do  [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notas de versão atuais para  [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notas de versão atuais do  [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 20db0990c506aeb473b71132813cec053009275f
+source-git-commit: cdf1a62ca7c8d25b146cb7b6c1329f064e42df56
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 11%
@@ -24,7 +24,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 >[!NOTE]
 >
->Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização de Produto Prioritária do Adobe](https://www.adobe.com/subscription/priority-product-update.html).
+>Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização prioritária de produto da Adobe](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Data de lançamento {#release-date}
 
@@ -48,7 +48,7 @@ Have a look at the January 2025 Release Overview video for a summary of the feat
 
 **Comentários no Editor de fragmento do conteúdo agora geralmente disponíveis**
 
-Colabore facilmente com colegas de trabalho ao criar fragmentos de conteúdo do AEM usando o novo e modernizado serviço de comentários no Editor de fragmentos de conteúdo do AEM.
+Colabore facilmente com os colegas de trabalho ao criar fragmentos de conteúdo do AEM usando o serviço de comentários novo e modernizado no Editor de fragmentos de conteúdo do AEM.
 [Leia mais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
 
 **Editor de fragmento do conteúdo e interfaces de usuário do administrador, suporte atualizado para a versão do AEM as a Cloud Service**
@@ -61,15 +61,15 @@ A versão mínima do AEM as a Cloud Service compatível com as novas interfaces 
 
 [Referência de fragmento de conteúdo aprimorada com referências exclusivas baseadas em ID](/help/headless/graphql-api/uuid-reference-upgrade.md), ajudando a garantir que as consultas do GraphQL para fragmentos de conteúdo individuais possam permanecer estáveis, mesmo que o fragmento tenha sido movido para outro local. Isso agora é possível com queries &quot;ByID&quot;. Embora os caminhos possam mudar, possivelmente quebrando consultas &quot;ByPath&quot;, as UUIDs são estáveis. As novas IDs também podem ser retornadas como propriedades em qualquer query ou outra solicitação de API aplicável. Limitação atual (2025.1): as referências de página ainda não são compatíveis com IDs exclusivas. Se as páginas forem referenciadas em Fragmentos de conteúdo, esse recurso não deverá ser usado. A limitação está planejada para ser removida na próxima versão do AEM as a Cloud Service.
 
-AEM **OpenAPI REST para Entrega de Fragmento de Conteúdo**
+**OpenAPI REST do AEM para entrega de fragmentos de conteúdo**
 
-A [OpenAPI REST para Entrega de Fragmento de Conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md) do AEM está disponível agora para o AEM as a Cloud Service.
+A [OpenAPI REST do AEM para Entrega de Fragmento de Conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md) está disponível agora para o AEM as a Cloud Service.
 
 ### Recursos obsoletos {#sites-deprecated}
 
-#### Editor de SPA {#spa-editor}
+#### Editor SPA {#spa-editor}
 
-[O Editor de SPA](/help/implementing/developing/hybrid/introduction.md) foi descontinuado para novos projetos a partir da versão 2025.1.0. O Editor de SPA continua sendo compatível com projetos existentes, mas não deve ser usado para novos projetos.
+[O Editor de SPA](/help/implementing/developing/hybrid/introduction.md) foi descontinuado para novos projetos a partir da versão 2025.1.0. O Editor SPA permanece compatível com projetos existentes, mas não deve ser usado para novos projetos.
 
 Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
 
@@ -86,7 +86,7 @@ Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
 
 **Modelos do Dynamic Media**
 
-Personalize banners de imagem e texto dinamicamente com um editor de modelos de Dynamic Media do WYSIWYG fácil de usar, incorporando o URL em qualquer aplicativo próprio ou de terceiros, para impulsionar experiências altamente envolventes com atualizações de conteúdo de banner em tempo real.
+Personalize banners de imagem e texto dinamicamente com um editor de modelos do WYSIWYG Dynamic Media fácil de usar, incorporando o URL em qualquer aplicativo próprio ou de terceiros, para impulsionar experiências altamente envolventes com atualizações de conteúdo de banner em tempo real.
 
 ![representações dinâmicas](/help/assets/assets/dm-templates-smart-text-resize.png)
 
@@ -96,7 +96,7 @@ Obtenha insights de entrega para ativos fornecidos pelo Dynamic Media, incluindo
 
 ![representações dinâmicas](/help/assets/assets/referrer.png)
 
-**Várias legendas e áudio do Dynamic Media**
+**Mídia dinâmica com vários áudio e legenda**
 
 [Suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) - Agora é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis a um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 
@@ -149,15 +149,15 @@ O programa de acesso antecipado da AEM Forms oferece uma oportunidade única par
 
 Estas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### Modelos de e-mail de HTML no Adaptive Forms
+#### Modelos de email do HTML no Adaptive Forms
 
-O Adaptive Forms permite usar [modelos de email de HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Os templates de email de HTML permitem enviar emails avançados, personalizados e visualmente atraentes quando um formulário é enviado. Esses emails podem ser personalizados com dados de formulário e aprimorados usando várias tags de email, como imagens e links. Com o Adaptive Forms, você pode carregar um arquivo contendo um modelo de HTML ou usar um editor de texto simples para criar esses modelos.
+O Adaptive Forms permite usar [modelos de email do HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Os templates de email do HTML permitem enviar emails avançados, personalizados e visualmente atraentes quando um formulário é enviado. Esses emails podem ser personalizados com dados de formulário e aprimorados usando várias tags de email, como imagens e links. Com o Adaptive Forms, você pode fazer upload de um arquivo contendo um modelo do HTML ou usar um editor de texto simples para criar esses modelos.
 
-![modelos de email de HTML](/help/forms/assets/html-email.png)
+![modelos de email do HTML](/help/forms/assets/html-email.png)
 
-#### Suporte ao armazenamento na nuvem aprimorado: upload direto de PDF para o armazenamento Azure Blob
+#### Suporte ao armazenamento na nuvem aprimorado: upload direto do PDF para o armazenamento Azure Blob
 
-As APIs de geração de documentos do AEM Forms agora permitem [carregar diretamente documentos de PDF gerados para o Armazenamento Azure Blob](/help/forms/early-access-ea-features.md#doc-generation-api). Esse aprimoramento simplifica o armazenamento e a recuperação, melhorando a eficiência e a integração com fluxos de trabalho em nuvem.
+As APIs de geração de documentos do AEM Forms agora permitem [carregar diretamente documentos gerados do PDF para o Armazenamento de blobs do Azure](/help/forms/early-access-ea-features.md#doc-generation-api). Esse aprimoramento simplifica o armazenamento e a recuperação, melhorando a eficiência e a integração com fluxos de trabalho em nuvem.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -181,7 +181,7 @@ Os programas de sandbox agora oferecem suporte a pipelines de configuração, qu
 
 Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas ao criar projetos do Adobe Developer Console.
 
-Saiba mais sobre [APIs de AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra a configuração e o uso.
+Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra a configuração e o uso.
 
 Especificamente, os endpoints de API listados abaixo estão disponíveis como parte de um programa de adoção antecipada. Se estiver interessado, envie um email para [aem-apis@adobe.com](mailto:aem-apis@adobe.com) descrevendo como você pretende usá-los.
 
@@ -192,17 +192,17 @@ Especificamente, os endpoints de API listados abaixo estão disponíveis como pa
 
 ### Computação Edge - Solicitação de feedback! {#edge-computing-feedback}
 
-A computação Edge aproxima o processamento de dados do navegador, o que traz benefícios, inclusive latência reduzida. O Adobe adoraria saber se você acha essa tecnologia útil para a entrega do AEM Publish e projetos Edge Delivery Services. Além disso, informe-nos sobre o que você planeja usar como entrada no roteiro de produtos. Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) com perguntas e comentários!
+A computação Edge aproxima o processamento de dados do navegador, o que traz benefícios, inclusive latência reduzida. A Adobe gostaria de saber se você acha essa tecnologia útil para o AEM Publish Delivery e para projetos Edge Delivery Services. Além disso, informe-nos sobre o que você planeja usar como entrada no roteiro de produtos. Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) com perguntas e comentários!
 
 ### Novo AEM Developer Console (Beta público) {#aem-developer-console-beta}
 
 Experimente um [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) renovado, que oferece uma experiência mais interativa para depurar código em ambientes na nuvem.
 
-Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Disponível* no Developer Console AEM atual. O Adobe recebe o feedback, que você pode enviar para [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com)
+Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Disponível* no Developer Console do AEM atual. A Adobe agradece o feedback, que você pode enviar por email para [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com)
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -222,4 +222,4 @@ Você pode encontrar uma lista completa de versões de Gerar Variações [aqui](
 
 ## Notas de versão da Experience Cloud {#experience-cloud}
 
-Você pode encontrar informações sobre lançamentos de outros aplicativos Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
+Você pode encontrar informações sobre versões de outros aplicativos da Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).

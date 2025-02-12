@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: 6194df9d-8c3c-4c7f-be59-099b970a565a
-source-git-commit: 79bf9d669c1b8757f456b83aad87550df306c78b
+source-git-commit: ce6b0db34488a49d15d4c1197bdee80c63a2e0fa
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 13%
@@ -23,7 +23,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 
 >[!NOTE]
 >
->Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização de Produto Prioritária do Adobe](https://www.adobe.com/subscription/priority-product-update.html).
+>Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização prioritária de produto da Adobe](https://www.adobe.com/subscription/priority-product-update.html).
 
 ## Data de lançamento {#release-date}
 
@@ -47,7 +47,7 @@ Assista ao vídeo Visão geral da versão de julho de 2024 para ver um resumo do
 
 **Gerar Variações**
 
-Aproveite a GenAI por meio do novo recurso AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta do Adobe para consideração no programa.
+Aproveite a GenAI por meio do novo recurso do AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta da Adobe para consideração no programa.
 
 **Navegação de ativos no Console de Fragmentos de Conteúdo**
 
@@ -69,15 +69,15 @@ O Seletor de ativos agora oferece a capacidade de os autores de conteúdo fazere
 
 Legendas de vídeo geradas por IA no Adobe Dynamic Media usam inteligência artificial para gerar legendas automaticamente para conteúdo de vídeo. Esse recurso foi projetado para melhorar a acessibilidade e a experiência do usuário, fornecendo legendas precisas e em tempo real. A IA analisa a faixa de áudio do vídeo para transcrever a fala e criar legendas, que podem ser editadas para precisão ou personalização. Essas legendas ajudam a atender aos requisitos de acessibilidade e melhorar o envolvimento com o vídeo para públicos-alvo que dependem ou preferem suporte de vídeo baseado em texto.
 
-Para obter acesso antecipado ao suporte a legendas geradas por IA em sua conta da Dynamic Media, [crie e envie um caso de Suporte ao Cliente do Adobe](/help/assets/dynamic-media/video.md##enable-dash).
+Para obter acesso antecipado ao suporte a legendas geradas por IA em sua conta do Dynamic Media, [crie e envie um caso de Suporte ao Cliente da Adobe](/help/assets/dynamic-media/video.md##enable-dash).
 
 ### Novos recursos na visualização de ativos {#assets-view-new-features}
 
-**Integração de credenciais do conteúdo**
+**Integração de Content Credentials**
 
-O Experience Manager Assets agora é compatível com credenciais de conteúdo para os formatos de imagem compatíveis. Essa capacidade fornece informações sobre a linhagem do ativo e como ele foi criado, incluindo se ele foi modificado usando GenAI.
+O Experience Manager Assets agora é compatível com Content Credentials para os formatos de imagem compatíveis. Essa capacidade fornece informações sobre a linhagem do ativo e como ele foi criado, incluindo se ele foi modificado usando GenAI.
 
-![Credenciais de conteúdo](/help/assets/assets/content-credentials.png)
+![Content Credentials](/help/assets/assets/content-credentials.png)
 
 **Visualizações do conteúdo das pastas**
 
@@ -112,11 +112,11 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 #### Criar formulários adaptáveis usando o Editor universal
 
-Aproveite o [Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) do Adobe Experience Manager para criar formulários adaptáveis usando a criação de arrastar e soltar WYSIWYG, para experiências de inscrição headless e headful, entregues pelo Serviço Edge Delivery. Os autores de formulários adaptáveis podem criar e iniciar facilmente experimentos para variações dos formulários nas páginas da Web. Essa capacidade permite que eles determinem as experiências de melhor desempenho para os usuários finais.
+Aproveite o [Editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) do Adobe Experience Manager para criar formulários adaptáveis usando a criação de arrastar e soltar do WYSIWYG, para experiências de inscrição headless e headful, entregues pelo Serviço Edge Delivery. Os autores de formulários adaptáveis podem criar e iniciar facilmente experimentos para variações dos formulários nas páginas da Web. Essa capacidade permite que eles determinem as experiências de melhor desempenho para os usuários finais.
 
 >[!IMPORTANT]
 >
-> Se você estiver interessado em participar do Programa de Acesso Antecipado do Adobe para qualquer inovação de acesso antecipado, basta enviar um email do seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
+> Se você estiver interessado em participar do Programa de Acesso Antecipado da Adobe para qualquer inovação de acesso antecipado, basta enviar um email de seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acesso. Você pode solicitar acesso a todas as inovações ou a qualquer inovação específica.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -146,11 +146,11 @@ Email **<aemcs-cdn-config-adopter@adobe.com>**, indicando em qual dos primeiros 
 
 #### Autenticação básica na CDN (Early Adoter Program, programa de primeiros usuários) {#basicauth-cdn}
 
-Protect determinados recursos de conteúdo, exibindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. Esse recurso destina-se principalmente a casos de uso de autenticação simples, como partes interessadas de negócios que revisam o conteúdo, em vez de servir como uma solução abrangente para os direitos de acesso do usuário final. A lista de nomes de usuário e senhas é gerenciada por meio de um arquivo de configuração no Git, que é implantado por meio do Pipeline de configuração, com uma referência às variáveis de ambiente do Cloud Manager do tipo secreto. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
+Proteja determinados recursos de conteúdo abrindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. Esse recurso destina-se principalmente a casos de uso de autenticação simples, como partes interessadas de negócios que revisam o conteúdo, em vez de servir como uma solução abrangente para os direitos de acesso do usuário final. A lista de nomes de usuário e senhas é gerenciada por meio de um arquivo de configuração no Git, que é implantado por meio do Pipeline de configuração, com uma referência às variáveis de ambiente do Cloud Manager do tipo secreto. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
 #### Redirecionamentos do lado do cliente (programa de primeiros usuários) {#client-side-redirects-early-adopter}
 
-Configure os redirecionamentos do lado do cliente 301/302 no controle do código-fonte e implante na CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Observe que há vários outros recursos já disponíveis relacionados à [configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluindo transformações de solicitação e resposta, e roteamento de tráfego para sites fora do AEM.
+Configure os redirecionamentos do lado do cliente 301/302 no controle do código-fonte e implante na CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Observe que há vários outros recursos já disponíveis relacionados à [configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluindo transformações de solicitação e resposta e o roteamento de tráfego para sites fora do AEM.
 
 #### Usuários empresariais podem declarar redirecionamentos fora do Git (Early Adoter Program, Programa de primeiros usuários) {#apache-rewritemaps-early-adopter}
 
@@ -158,11 +158,11 @@ Semelhante ao AEM 6.5, o Apache/Dispatcher assimila mapas de regravação coloca
 
 #### O Edge Side Includes (ESI) para Carregar Conteúdo Dinâmico (Early Adoter Program) {#esi-early-adopter}
 
-O CDN do Adobe Managed agora é compatível com o [ESI (Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para o assembly de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página de HTML geral na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+A CDN Gerenciada pelo Adobe agora oferece suporte a [ESI (Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para o assembly de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página geral do HTML na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
 ### Programa de adoção antecipada de notificações do Centro de ações relacionadas à integridade do conteúdo {#actions-center-notifications}
 
-A [Central de Ações](/help/operations/actions-center.md) envia notificações por email quando ocorrem incidentes importantes, ou se algo for notado sobre seu código ou configuração, onde você deve tomar medidas pró-ativas. O Adobe agora introduziu vários novos tipos de notificações associados à integridade do conteúdo. Esse recurso está disponível por meio de um programa de adoção antecipada. Para participar, entre em contato com o Atendimento ao cliente do Adobe.
+A [Central de Ações](/help/operations/actions-center.md) envia notificações por email quando ocorrem incidentes importantes, ou se algo for notado sobre seu código ou configuração, onde você deve tomar medidas pró-ativas. O Adobe agora introduziu vários novos tipos de notificações associados à integridade do conteúdo. Esse recurso está disponível por meio de um programa de adoção antecipada. Para participar, entre em contato com o Atendimento ao cliente da Adobe.
 
 #### As páginas contêm um grande número de nós {#page-nodes}
 
@@ -174,7 +174,7 @@ O desempenho do mecanismo de fluxo de trabalho é afetado quando há um grande n
 
 #### Usuários adicionados diretamente aos grupos personalizados {#users-customgroups}
 
-Você recebe uma notificação proativa por meio do Centro de ações quando os usuários são adicionados diretamente aos grupos personalizados. Esse processo permite seguir as práticas recomendadas do IMS, adicionando usuários aos grupos IMS relevantes e, em seguida, incluindo esses grupos IMS como membros de grupos AEM.
+Você recebe uma notificação proativa por meio do Centro de ações quando os usuários são adicionados diretamente aos grupos personalizados. Esse processo permite seguir as práticas recomendadas do IMS adicionando usuários aos grupos IMS relevantes e, em seguida, incluindo esses grupos IMS como membros de grupos AEM.
 
 #### Conteúdo JCR ausente {#jcr-content}
 
@@ -190,7 +190,7 @@ O Centro de ações envia uma notificação proativa quando um recurso Sling aus
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2406-release/whats-new-2024-06-0).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
@@ -210,4 +210,4 @@ Você pode encontrar uma lista completa de versões de Gerar Variações [aqui](
 
 ## Notas de versão da Experience Cloud {#experience-cloud}
 
-Você pode encontrar informações sobre lançamentos de outros aplicativos Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
+Você pode encontrar informações sobre versões de outros aplicativos da Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
