@@ -3,10 +3,10 @@ title: Como configurar modelos de dados de formulário prontos para uso do Micro
 description: Saiba como integrar o Microsoft Dynamics 365 com o Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: fadbe44e0dba4e7dcbad230c286d6126e68910bc
+source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -68,8 +68,9 @@ Crie uma conta no **Centro de Administração da Plataforma de Energia** para:
 
 Após configurar os pré-requisitos acima, você pode prosseguir com a integração do Adaptive Forms com o Microsoft® Dynamics 365. Para enviar dados ao Microsoft® Dynamics 365 no envio de formulários, siga as etapas abaixo:
 
-[1. Definir a configuração do serviço de nuvem para o Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
-[2. Criar Modelo de Dados de Formulário (FDM)](#2-create-form-data-model-fdm)
+[1. Definir a configuração do serviço em nuvem para o Microsoft Dynamics](#1-configure-cloud-service-configuration-for-microsoft-dynamics)
+
+[2. Criar Modelo de dados de formulário (FDM)](#2-create-form-data-model-fdm)
 
 ### 1. Definir a configuração do serviço em nuvem para o Microsoft Dynamics
 
