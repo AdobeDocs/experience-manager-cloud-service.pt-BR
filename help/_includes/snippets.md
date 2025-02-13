@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1394'
 ht-degree: 3%
 
 ---
@@ -11,31 +11,31 @@ ht-degree: 3%
 
 [![Conheça nosso CMS headless com uma avaliação de 30 dias](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
 
-## Criação de Edge Delivery Services {#edge-delivery-authoring}
+## Criação no Edge Delivery Services {#edge-delivery-authoring}
 
-[!BADGE Para criar conteúdo AEM para Edge Delivery Services, clique aqui.]{type=Positive url="/help/edge/overview.md" tooltip="Criação de conteúdo AEM para Edge Delivery Services"}
+[!BADGE Para criar conteúdo do AEM para o Edge Delivery Services, clique aqui.]{type=Positive url="/help/edge/overview.md" tooltip="Criação de conteúdo do AEM para o Edge Delivery Services"}
 
 ## Consulte também {#see-also}
 
-* [Criar um formulário adaptável de AEM](/help/forms/creating-adaptive-form-core-components.md)
-* [Adicionar um formulário adaptável de AEM à página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [Aplicar temas a um formulário adaptável de AEM](/help/forms/using-themes-in-core-components.md)
-* [Adicionar componentes a um Formulário adaptável para AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
-* [Usar CAPTCHA em um formulário adaptável de AEM](/help/forms/captcha-adaptive-forms-core-components.md)
-* [Gerar uma versão de PDF (DoR) de um formulário adaptável AEM](/help/forms/generate-document-of-record-core-components.md)
-* [Traduzir um formulário adaptável de AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
+* [Criar um formulário adaptável do AEM](/help/forms/creating-adaptive-form-core-components.md)
+* [Adicionar um formulário adaptável do AEM à página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Aplicar temas a um formulário adaptável do AEM](/help/forms/using-themes-in-core-components.md)
+* [Adicionar componentes a um Formulário adaptável do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [Usar CAPTCHA em um formulário adaptável do AEM](/help/forms/captcha-adaptive-forms-core-components.md)
+* [Gerar uma versão do PDF (DoR) de um formulário adaptável do AEM](/help/forms/generate-document-of-record-core-components.md)
+* [Traduzir um formulário adaptável do AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
 * [Ativar o Adobe Analytics para um formulário adaptável para rastrear o uso do formulário](/help/forms/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.md)
 * [Conectar o formulário adaptável ao Microsoft SharePoint](/help/forms/configure-submit-actions-core-components.md#submit-to-sharedrive)
 * [Conectar o formulário adaptável ao Microsoft Power Automate](/help/forms/configure-submit-actions-core-components.md#microsoft-power-automate)
 * [Conectar o formulário adaptável ao Microsoft OneDrive](/help/forms/configure-submit-actions-core-components.md#create-a-onedrive-configuration)
 * [Conectar o formulário adaptável ao armazenamento de blobs do Microsoft Azure](/help/forms/configure-submit-actions-core-components.md#azure-blob-storage)
 * [Conectar o formulário adaptável ao Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Usar o Adobe Sign em um formulário adaptável AEM](/help/forms/working-with-adobe-sign.md)
+* [Usar o Adobe Sign em um formulário adaptável do AEM](/help/forms/working-with-adobe-sign.md)
 * [Adicionar uma nova localidade para um Formulário adaptável](/help/forms/supporting-new-language-localization-core-components.md)
 * [Enviar dados do Formulário adaptável a um banco de dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Enviar dados do formulário adaptável para um endpoint REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Enviar dados do formulário adaptável para o fluxo de trabalho do AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
-* [Usar o Forms Portal para listar AEM Adaptive Forms em um site de AEM](/help/forms/configure-forms-portal.md)
+* [Use o Forms Portal para listar o AEM Adaptive Forms em um site do AEM](/help/forms/configure-forms-portal.md)
 * [Adicionar versões, comentários e anotações a um Formulário adaptável](/help/forms/add-comments-annotations-versioning-adaptive-form-core-components.md)
 * [Comparar Forms adaptável](/help/forms/compare-forms.md)
 
@@ -43,25 +43,26 @@ ht-degree: 3%
 ## Ações de envio do formulário adaptável {#af-submit-action}
 
 * [Enviar e-mail](/help/forms/configure-submit-action-send-email.md)
-* [Enviar para o SharePoint](/help/forms/configure-submit-action-sharepoint.md)
+* [Enviar para a Biblioteca de documentos da SharePoint](/help/forms/connect-forms-to-sharepoint-document-library.md)
+* [Enviar para a lista do SharePoint](/help/forms/connect-forms-to-sharepoint-list.md)
 * [Enviar usando modelo de dados do formulário](/help/forms/using-form-data-model.md#write-submitted-adaptive-form-data-into-data-sources-write-af)
 * [Enviar para o Armazenamento de blob do Azure](/help/forms/configure-submit-action-azure-blob-storage.md)
 * [Enviar para endpoint REST](/help/forms/configure-submit-action-restpoint.md)
 * [Enviar para o OneDrive](/help/forms/configure-submit-action-onedrive.md)
-* [Chamar um fluxo de trabalho de AEM](/help/forms/configure-submit-action-workflow.md)
+* [Chamar um fluxo de trabalho do AEM](/help/forms/configure-submit-action-workflow.md)
 * [Enviar para o Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
 * [Enviar para o Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)
 * [Conectar o formulário adaptável ao aplicativo do Salesforce](/help/forms/aem-forms-salesforce-integration.md)
-* [Conectar um formulário adaptável ao Microsoft](/help/forms/ms-dynamics-odata-configuration.md)
+* [Conectar um formulário adaptável ao Microsoft](/help/forms/configure-msdynamics.md)
 * [Conectar um formulário adaptável ao Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Criar ação de envio personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
 
 ## Consulte também: {#see-more-forms-eds}
 
-* [Introdução aos Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Introdução ao Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Publish seu formulário e comece a coletar dados](/help/edge/docs/forms/publish-forms.md)
+* [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
 * [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
@@ -197,15 +198,15 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 
 >[!TIP]
 >
->Você é novo no Dynamic Media? Para obter uma visão geral rápida e de alto nível do Dynamic Media, consulte [Trabalhar com o Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>Você é novo no Dynamic Media? Para obter uma visão geral rápida e de alto nível do Dynamic Media, consulte [Trabalhar com Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 
 ## Consulte também para Dynamic Media {#see-also-dm}
 
 >[!NOTE]
 >
->* Você é novo no Dynamic Media? Para obter uma visão geral rápida e de alto nível do Dynamic Media, consulte [Trabalhar com o Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
+>* Você é novo no Dynamic Media? Para obter uma visão geral rápida e de alto nível do Dynamic Media, consulte [Trabalhar com Dynamic Media](/help/assets/dynamic-media/dynamic-media.md).
 >
->* Siga as [Práticas recomendadas da Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) para obter o máximo de valor.
+>* Siga as [Práticas recomendadas do Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) para obter o máximo de valor.
 >
 >* Experimente os recursos de imagem do Dynamic Media com a [ferramenta de Instantâneo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
@@ -216,7 +217,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 >* Recorte automático de [vídeos com Recorte Inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
 >* Forneça uma [experiência interativa baseada em 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
->* Outro [banco de recursos Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* Outro [banco de recursos do Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
 ## Registrar um tíquete de suporte {#support-ticket}
 
@@ -233,11 +234,11 @@ Para registrar um tíquete de suporte, primeiro registre o site do Edge Delivery
    * URL do site ativo. Por exemplo: `www.mydomain.com`.
    * URL do site de origem (`.hlx` URL).
 
-## O Editor universal é preferível ao editor SPA {#ue-over-spa}
+## O Editor universal é preferível ao Editor SPA {#ue-over-spa}
 
 >[!IMPORTANT]
 >
->O Editor de SPA [foi descontinuado](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) para novos projetos. Ele ainda é compatível com o Adobe para projetos existentes, mas não deve ser usado para novos projetos. Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
+>O Editor de SPA [foi descontinuado](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) para novos projetos. Ela ainda é compatível com projetos existentes na Adobe, mas não deve ser usada para novos projetos. Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
 >
 >* [O Editor Universal](/help/edge/wysiwyg-authoring/authoring.md) para editar visualmente o conteúdo headless.
 >* [O Editor de Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulário de conteúdo headless.
