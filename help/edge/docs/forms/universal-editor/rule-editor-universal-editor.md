@@ -5,15 +5,15 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c27b8e413c060de601a72a669d86c4add2a4167d
+exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
+source-git-commit: 1244bafe1263c52a584b587845c1a12b9ddfd333
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2236'
 ht-degree: 1%
 
 ---
 
-
-# Introdução ao Editor de regras no Editor universal
+# Introdução ao Editor de regras na Criação do WYSIWYG
 
 É possível adicionar um comportamento de formulário dinâmico usando o Editor de regras, que permite criar regras. Essas regras permitem visibilidade condicional de campo, automatizam cálculos com base na entrada do usuário e melhoram a experiência geral do usuário. Ao simplificar o processo de preenchimento de formulário, o Editor de regras ajuda a garantir precisão e eficiência.
 
@@ -41,21 +41,23 @@ Para obter instruções detalhadas passo a passo, consulte [adicionar uma regra 
 
 ## Como ativar a extensão do Editor de regras?
 
-No Editor universal, o Editor de regras não é ativado por padrão. Para habilitar a extensão do Editor de Regras para o seu ambiente, envie um email do seu endereço oficial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) com a sua solicitação.
+No Editor universal, a extensão Editor de regras não é ativada por padrão. Para habilitar a gravação da extensão do Editor de Regras em [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) da sua ID de email oficial.
 
 Depois que a extensão Editor de regras for habilitada para o seu ambiente, o ícone ![editar-regras](/help/forms/assets/edit-rules-icon.svg) aparecerá no canto superior direito do editor.
 
 ![Editor de regras do Universal Editor](/help/edge/docs/forms/assets/universal-editor-rule-editor.png)
 
-Selecione o objeto de formulário para o qual deseja gravar uma regra e clique no ícone ![editar-regras](/help/forms/assets/edit-rules-icon.svg). A interface do usuário do Editor de regras é exibida.
+Selecione o componente de formulário para o qual deseja gravar uma regra e clique no ícone ![editar-regras](/help/forms/assets/edit-rules-icon.svg). A interface do usuário do Editor de regras é exibida.
 
 ![Interface do usuário do Editor de Regras](/help/edge/docs/forms/assets/rule-editor-for-field.png)
+
+Neste artigo, `form object` e `form component` são usados alternadamente.
 
 Agora, você pode começar a escrever regras ou lógica de negócios para o campo de formulário selecionado usando os [tipos de regras disponíveis no Editor de regras](#available-rule-types-in-rule-editor).
 
 ## Noções básicas sobre a interface do usuário do Editor de regras
 
-O editor visual do Editor de regras é aberto quando você clica no ícone ![edit-rules](/help/forms/assets/edit-rules-icon.svg):
+O editor do Editor de regras é aberto quando você clica no ícone ![edit-rules](/help/forms/assets/edit-rules-icon.svg):
 
 ![Interface do usuário do Editor de Regras](/help/edge/docs/forms/assets/rule-editor-interface.png)
 
@@ -68,20 +70,20 @@ O editor visual do Editor de regras é aberto quando você clica no ícone ![edi
   </thead>
   <tbody>
     <tr>
-      <td>1. Exibição de componente-regra</td>
-      <td>Exibe o título do objeto de formulário pelo qual você iniciou o Editor de regras e o tipo de regra selecionado no momento.</td>
+      <td>1. Título</td>
+      <td>Exibe o título do componente de formulário e o tipo de regra selecionado. Por exemplo, 'Inserir Salário Bruto' é um componente da caixa de texto para o qual o tipo de regra 'Quando' está selecionado. </td>
     </tr>
     <tr>
       <td>2. Funções e objetos de formulário</td>
-      <td>A guia <b>Objetos Forms</b> mostra uma exibição hierárquica de todos os objetos contidos no formulário. A guia <b>Funções</b> inclui um conjunto de funções integradas.</td>
+      <td>A guia <b>Objetos Forms</b> mostra uma exibição hierárquica de todos os componentes contidos no formulário. A guia <b>Funções</b> inclui um conjunto de funções integradas no editor de regras.</td>
     </tr>
     <tr>
       <td>3. Alternância entre objetos de formulário e funções</td>
-      <td>O botão de alternância, quando tocado, alterna o painel de funções e objetos de formulário.</td>
+      <td>O botão de alternância alternadamente mostra ou oculta o painel de funções e objetos de formulário. </td>
     </tr>
     <tr>
       <td>4. Editor de regras visuais</td>
-      <td>O Editor de regras visual é a área no modo de editor visual da interface do Editor de regras em que você escreve regras.</td>
+      <td>O Editor visual de regras é a interface em que você pode criar regras para os componentes de formulário.</td>
     </tr>
     <tr>
       <td>5. Botões Concluído e Cancelar</td>
@@ -90,7 +92,7 @@ O editor visual do Editor de regras é aberto quando você clica no ícone ![edi
   </tbody>
 </table>
 
-Todas as regras existentes em um objeto de formulário são listadas ao selecionar o objeto. É possível exibir o título e uma pré-visualização do resumo da regra no Editor de regras visual. Além disso, você pode alterar a ordem das regras, editar regras, habilitar/desabilitar regras ou excluir regras.
+Todas as regras existentes em um componente de formulário são listadas ao selecionar o componente. É possível exibir o título e uma pré-visualização do resumo da regra no Editor de regras. Além disso, você pode alterar a ordem das regras, editar regras, habilitar/desabilitar regras ou excluir regras.
 
 ![mostrar as regras disponíveis do objeto de formulário](/help/edge/docs/forms/assets/rule-editor15.png)
 
@@ -108,51 +110,55 @@ O Editor de regras fornece um conjunto de tipos de regras predefinidos que você
   <tbody>
     <tr>
       <td>Definir valor de</td>
-      <td>Define o valor de um objeto de formulário dependendo se a condição especificada é atendida.</td>
+      <td>Define o valor de um componente de formulário dependendo se a condição especificada é atendida ou não.</td>
     </tr>
     <tr>
       <td>Limpar Valor de</td>
-      <td>Limpa o valor do objeto especificado.</td>
+      <td>Limpa o valor do componente de formulário especificado.</td>
     </tr>
     <tr>
       <td>Ocultar/Mostrar</td>
-      <td>Oculta ou mostra um objeto de formulário com base no fato de uma condição ser atendida ou não.</td>
+      <td>Oculta ou mostra um componente de formulário com base no fato de uma condição ser atendida ou não.</td>
     </tr>
     <tr>
       <td>Habilitar/desabilitar</td>
-      <td>Ativa ou desativa um objeto de formulário com base no fato de uma condição ser ou não atendida.</td>
+      <td>Ativa ou desativa um componente de formulário com base no fato de uma condição ser atendida ou não.</td>
     </tr>
     <tr>
       <td>Validar</td>
-      <td>Valida o formulário ou um objeto especificado.</td>
+      <td>Verifica o componente de formulário com base em uma condição e exibe um erro se a condição não for atendida. </td>
     </tr>
     <tr>
       <td>Quando</td>
-      <td>Segue a construção de regra de ação <i>condition-action-alternate</i> ou a construção de regra <i>condition-action</i>. Especifica uma condição para avaliação seguida por uma ação para acionar se a condição for atendida.</td>
+      <td>Especifica uma condição para avaliação seguida por uma ação para acionar se a condição for atendida. Ela segue a construção da regra de ação <i>condition-action-alternate</i> ou a construção da regra <i>condition-action</i>. </td>
     </tr>
     <tr>
       <td>Formato</td>
-      <td>Formata um objeto de formulário com base em uma função ou expressão regular.</td>
+      <td> Modifica o valor de exibição do componente de formulário usando a expressão fornecida quando seu valor é alterado.</td>
     </tr>
     <tr>
       <td>Executar serviço</td>
-      <td>Chama um serviço configurado em um modelo de dados de formulário (FDM).</td>
+      <td>Chama um serviço configurado usando APIs externas, Modelo de dados de formulário ou serviços Web RESTful.</td>
     </tr>
     <tr>
       <td>Definir Propriedade</td>
-      <td>Define o valor de uma propriedade do objeto especificado com base em uma condição.</td>
+      <td>Define o valor de uma propriedade do componente de formulário especificado com base em uma condição.</td>
     </tr>
     <tr>
       <td>Definir Foco</td>
-      <td>Define o foco para o objeto especificado.</td>
+      <td>Define o foco no componente de formulário especificado.</td>
     </tr>
     <tr>
       <td>Salvar Formulário</td>
-      <td>Salva o formulário.</td>
+      <td>Ele permite que o usuário salve o formulário como rascunho usando o componente Rascunhos e envios do Forms Portal. </td>
     </tr>
     <tr>
-      <td>Enviar/Redefinir formulário</td>
-      <td>Envia ou redefine o formulário.</td>
+      <td>Enviar Formulário</td>
+      <td>Envia o formulário.</td>
+    </tr>
+    <tr>
+      <td>Restaurar Formulário</td>
+      <td>Redefine o formulário.</td>
     </tr>
     <tr>
       <td>Adicionar/Remover Instância</td>
@@ -208,10 +214,10 @@ Para criar um formulário no Universal Editor:
 1. Abra um formulário no Universal Editor para edição.
 1. Adicione os seguintes componentes de formulário:
    * Formulário de Cálculo de Imposto (Título)
-   * Salário Bruto (Entrada de Texto)
-   * Dedução Adicional (Entrada de Texto)
-   * Receita Tributável (Entrada de Texto)
-   * Imposto a Pagar (Entrada de Texto)
+   * Salário Bruto (Entrada de Número)
+   * Dedução Adicional (Entrada de Número)
+   * Receita Tributável (Entrada de Número)
+   * Imposto a Pagar (Entrada de Número)
    * Enviar (Botão Enviar)
 1. Oculte o campo de formulário `Additional Deduction` abrindo seu `Properties`.
 
@@ -221,11 +227,10 @@ Para criar um formulário no Universal Editor:
 
 Depois de criar o formulário, escreva a primeira regra para mostrar o campo `Additional Deduction` somente se o salário bruto exceder $50.000. Para adicionar uma regra condicional:
 
-1. Abra um formulário no Universal Editor para edição.
-1. Selecione o componente **[!UICONTROL Salário bruto]** na árvore de conteúdo e selecione ![edit-rules](/help/forms/assets/edit-rules-icon.svg).
+1. Abra um formulário no Editor Universal para edição e selecione o campo **[!UICONTROL Salário Bruto]** na árvore de conteúdo e selecione ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Como alternativa, você pode selecionar o campo **[!UICONTROL Salário Bruto]** diretamente do painel **[!UICONTROL Objeto do Forms]**.
    ![Exemplo do Editor de Regras1](/help/edge/docs/forms/assets/rule-editor3.png)
 A interface visual do Editor de regras é exibida.
-1. Clique em **[!UICONTROL Criar]** para iniciar o Editor de Regras.
+1. Clique em **[!UICONTROL Criar]** para criar regras.
    ![Exemplo do Editor de Regras2](/help/edge/docs/forms/assets/rule-editor4.png)
 Por padrão, o tipo de regra `Set Value Of` está selecionado. Embora não seja possível alterar ou modificar o objeto selecionado, você poderá usar o menu suspenso de regras para selecionar outro tipo de regra.\
    ![Exemplo do Editor de Regras3](/help/edge/docs/forms/assets/rule-editor5.png)
@@ -258,7 +263,8 @@ A regra é exibida da seguinte maneira no Editor de regras:
 
 Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferença entre `Gross Salary` e `Additional Deduction` (se aplicável). Para adicionar uma regra de cálculo ao campo **[!UICONTROL Receita Tributável]**, execute as seguintes etapas:
 
-1. No modo de criação, selecione o campo **[!UICONTROL Receita Tributável]** e selecione o ícone ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Em seguida, selecione **[!UICONTROL Criar]** para iniciar o Editor de regras.
+1. No modo de criação, selecione o campo **[!UICONTROL Receita Tributável]** e selecione o ícone ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Como alternativa, você pode selecionar o campo **[!UICONTROL Receita Tributável]** diretamente do painel **[!UICONTROL Objeto Forms]**.
+1. Em seguida, selecione **[!UICONTROL Criar]** para criar a regra.
    ![Exemplo do Editor de Regras13](/help/edge/docs/forms/assets/rule-editor16.png)
 1. Selecione **[!UICONTROL Selecionar Opção]** e selecione **[!UICONTROL Expressão Matemática]**. Um campo para escrever expressão matemática é aberto.
    ![Exemplo do Editor de Regras14](/help/edge/docs/forms/assets/rule-editor17.png)
@@ -276,7 +282,7 @@ Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferen
 
    Agora, adicione uma regra para o campo `Tax Payable `, que é determinado pela multiplicação da receita tributável pela alíquota do imposto. Para simplificar, suponha uma alíquota de imposto fixa de `10%`.
 
-1. No modo de criação, selecione o campo **[!UICONTROL Imposto a Pagar]** e selecione o ícone ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Em seguida, selecione **[!UICONTROL Criar]** para iniciar o Editor de regras.
+1. No modo de criação, selecione o campo **[!UICONTROL Imposto a Pagar]** e selecione o ícone ![edit-rules](/help/forms/assets/edit-rules-icon.svg). Em seguida, selecione **[!UICONTROL Criar]** para criar regras.
    ![Exemplo do Editor de Regras16](/help/edge/docs/forms/assets/rule-editor19.png)
 1. Selecione **[!UICONTROL Selecionar Opção]** e selecione **[!UICONTROL Expressão Matemática]**. Um campo para escrever expressão matemática é aberto.
    ![Exemplo do Editor de Regras17](/help/edge/docs/forms/assets/rule-editor20.png)
@@ -364,18 +370,24 @@ Para usar a função personalizada no Editor de regras:
 
    ![Função personalizada no editor de regras](/help/edge/docs/forms/assets/custom-function-rule-editor.png)
 
-1. **Visualizar o Formulário**: visualize o formulário com a função recém-implementada.
+1. **Visualizar o formulário**: visualize o formulário com a função recém-implementada.
 
-## Artigos relacionados
+## Informações adicionais
+
+>[!NOTE]
+>
+> No Universal Editor, importações estáticas e dinâmicas não são suportadas em scripts de função personalizados. É necessário adicionar o código completo no arquivo `../[blocks]/form/functions.js`.
+
+Este artigo fornece informações limitadas sobre o Editor de regras disponível no Editor universal. Para saber mais sobre o Editor de regras e as funções personalizadas, consulte os seguintes artigos:
 
 {{see-also-rule-editor}}
 
 ## Consulte também
 
-* [Introdução aos Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Introdução ao Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Publish seu formulário e comece a coletar dados](/help/edge/docs/forms/publish-forms.md)
+* [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
 * [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)

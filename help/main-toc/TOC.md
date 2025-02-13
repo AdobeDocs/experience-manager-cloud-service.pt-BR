@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 17489f3f65a71c6fc0f805af37cb233ab1c5470a
+source-git-commit: 477d29855ca6ea89322cdb91e01140983243678c
 workflow-type: tm+mt
-source-wordcount: '6039'
+source-wordcount: '6052'
 ht-degree: 70%
 
 ---
@@ -237,7 +237,7 @@ ht-degree: 70%
    + [Descontinuação de credenciais JWT no Adobe Developer Console](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [Configuração de integrações do IMS para o AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md)
    + [Práticas recomendadas para o mapeamento de usuário do serviço Sling e definição do usuário do serviço](/help/security/best-practices-for-sling-service-user-mapping-and-service-user-definition.md)
-   + [Chaves gerenciadas pelo cliente para Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
+   + [Chaves gerenciadas pelo cliente para o Adobe as a Cloud Service](/help/security/customer-managed-keys.md)
 + Integração {#onboarding}
    + [Comece aqui](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=pt-BR)
    + Jornada de integração {#journey}
@@ -486,15 +486,15 @@ ht-degree: 70%
    + [Ativar o Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Usuários do Assets Collaborator](/help/assets/assets-collaborator-users.md)
-   + [Integrar o AEM Assets durante a criação de conteúdo para Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
+   + [Integrar o AEM Assets ao criar conteúdo para o Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + Gerenciar ativos digitais {#manage}
       + Seletor de ativos de micro front-end {#asset-selector}
          + [Visão geral do Seletor de ativos](/help/assets/overview-asset-selector.md)
          + Integrações do Seletor de ativos {#asset-selector-integration}
             + [Visão geral das integrações do Seletor de ativos](/help/assets/integrate-asset-selector.md)
-            + [Integrar o Seletor de ativos a um aplicativo Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
-            + [Integrar o Seletor de ativos a um aplicativo não-Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
-            + [Integrar o Seletor de ativos para Dynamic Media com recursos OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+            + [Integrar o Seletor de ativos a um aplicativo do Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+            + [Integrar o Seletor de ativos a um aplicativo que não seja da Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+            + [Integrar o Seletor de ativos para Dynamic Media aos recursos da OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
          + [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
          + [Exemplos do Seletor de ativos](/help/assets/asset-selector-examples.md)
          + [Personalizações do Seletor de ativos](/help/assets/asset-selector-customization.md)
@@ -656,8 +656,8 @@ ht-degree: 70%
       + [Gerenciamento de relatórios](/help/assets/manage-reports-assets-view.md)
       + [Reprocessando](/help/assets/reprocessing-assets-view.md)
       + [Gerenciamento de tags](/help/assets/tagging-management-assets-view.md)
-      + [Credenciais de conteúdo](/help/assets/content-credentials.md)
-      + [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+      + [Content Credentials](/help/assets/content-credentials.md)
+      + [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
       + [Extensibilidade da interface de usuário do AEM Assets View](/help/assets/aem-assets-view-ui-extensibility.md)
    + Content Hub {#content-hub}
       + [Visão geral](/help/assets/product-overview.md)
@@ -695,7 +695,7 @@ ht-degree: 70%
    + Visão geral {#forms-overview}
       + [Introdução](/help/forms/home.md)
       + [Principais inovações do Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
-      + [Recursos de acesso antecipado (EA)](/help/forms/early-access-ea-features.md)
+      + [Recursos de Acesso Antecipado (EA)](/help/forms/early-access-ea-features.md)
       + [Alterações importantes](/help/forms/notable-changes.md)
       + [Arquitetura](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Perguntas frequentes](/help/forms/faq.md)
@@ -708,7 +708,7 @@ ht-degree: 70%
       + [Migrar do [!DNL AEM 6.5 Forms] ou anterior para o [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Grupos e permissões](/help/forms/forms-groups-privileges-tasks.md)
       + [Importar, exportar e organizar formulários adaptáveis, formulários PDF e outros ativos](/help/forms/import-export-forms-templates.md)
-      + [Publish Adaptive Forms usando Gerenciar publicação](/help/forms/manage-publication.md)
+      + [Publicar o Adaptive Forms usando Gerenciar publicação](/help/forms/manage-publication.md)
    + Introdução {#getting-started-forms}
       + [Caso de uso e ambiente de desenvolvimento de configuração](/help/forms/create-adaptive-form-tutorial-getting-started.md)
       + [Criar o formulário de solicitação de empréstimo](/help/forms/create-adaptive-form-tutorial.md)
@@ -761,7 +761,7 @@ ht-degree: 70%
             + [Enviar um formulário adaptável ao Microsoft](/help/forms/configure-submit-action-onedrive.md)
             + [Conectar um formulário adaptável ao Microsoft](/help/forms/configure-submit-action-sharepoint.md)
             + [Configurar o site do SharePoint com acesso limitado usando o escopo de autorização](/help/forms/configure-sharepoint-site-limited-access.md)
-            + [Integrar o formulário adaptável de AEM ao fluxo de trabalho de AEM](/help/forms/configure-submit-action-workflow.md)
+            + [Integrar o formulário adaptável do AEM ao fluxo de trabalho do AEM](/help/forms/configure-submit-action-workflow.md)
             + [Configurar a ação de envio Enviar para o Ponto de extremidade REST para o Adaptive Forms](/help/forms/configure-submit-action-restpoint.md)
             + [Configurar a ação de envio Enviar email para um formulário adaptável](/help/forms/configure-submit-action-send-email.md)
             + [Usar o Google reCAPTCHA em um formulário adaptável](/help/forms/captcha-adaptive-forms-core-components.md)
@@ -863,7 +863,7 @@ ht-degree: 70%
       + [Usar etapas centradas no Forms em um fluxo de trabalho + referência de etapa](/help/forms/aem-forms-workflow-step-reference.md)
       + [Usar variáveis em um fluxo de trabalho centrado no Forms](/help/forms/variable-in-aem-workflows.md)
       + [Seleção dinâmica de usuários ou grupos no fluxo de trabalho do AEM](/help/forms/dynamically-select-a-user-or-group-for-aem-workflow.md)
-      + [Gerenciar aplicativos e tarefas do Forms na Caixa de entrada AEM](/help/forms/manage-applications-inbox.md)
+      + [Gerenciar aplicativos e tarefas do Forms na Caixa de entrada do AEM](/help/forms/manage-applications-inbox.md)
       + [Usar a opção Out of Office](/help/forms/configure-out-of-office-settings.md)
    + APIs de comunicações {#using-communications}
       + [Introdução a APIs de Comunicação](/help/forms/aem-forms-cloud-service-communications-introduction.md)
@@ -873,7 +873,7 @@ ht-degree: 70%
       + [Use o Forms Designer para criar modelos](/help/forms/use-forms-designer.md)
       + [Alteração do conteúdo da Página zero no Designer](/help/forms/changing-page-zero-content-designer.md)
       + [Uso de fontes personalizadas em documentos PDF](/help/forms/use-custom-fonts.md)
-      + [Lista de fontes compatíveis em documentos PDF](/help/forms/supported-out-of-the-box-fonts.md)
+      + [Lista de fontes compatíveis em documentos do PDF](/help/forms/supported-out-of-the-box-fonts.md)
       + [Problemas conhecidos, práticas recomendadas e perguntas frequentes](/help/forms/communications-known-issues-limitations.md)
    + Relatórios de transação {#using-communications}
       + [APIs faturáveis de relatórios de transação](/help/forms/transaction-reports-billable-apis.md)
@@ -907,7 +907,7 @@ ht-degree: 70%
       + [Utilização do provedor de conteúdo do Screens](/help/screens-cloud/configuring/using-screens-content-provider.md)
       + [Criação das representações de vídeo do Screens](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md)
       + [Configuração do Dispatcher para o Screens as a Cloud Service](/help/screens-cloud/configuring/dispatcher-configurations-screens-cloud.md)
-      + [Configurando Modos de Exibição de Linha do Tempo para Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
+      + [Configurando Modos de Exibição de Linha do Tempo para o Screens as a Cloud Service](/help/screens-cloud/configuring/configuring-timeline-view-screens.md)
    + Criação de conteúdo {#create-content}
       + [Criação e gerenciamento de um projeto no provedor de conteúdo do Screens](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md)
       + [Criação e gerenciamento de um canal no provedor de conteúdo do Screens](/help/screens-cloud/creating-content/creating-channels-screens-cloud.md)
@@ -962,13 +962,13 @@ ht-degree: 70%
          + [Alterar estilo de componentes da CIF](/help/commerce-cloud/customizing/style-cif-component.md)
          + [Personalizar componentes da CIF](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [Usar seletores de catálogo da CIF](/help/commerce-cloud/customizing/use-cif-pickers.md)
-         + [Atributos personalizados para o carrossel de produtos CIF](/help/commerce-cloud/customizing/product-carousel.md)
+         + [Atributos personalizados para o Carrossel de produtos do CIF](/help/commerce-cloud/customizing/product-carousel.md)
    + [PWA Studio do Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migração](/help/commerce-cloud/migration.md)
    + [Perguntas frequentes](/help/commerce-cloud/faq.md)
 + Edge Delivery Services {#edge-delivery}
    + [Visão geral do Edge Delivery Services](/help/edge/overview.md)
-   + [Utilização de Edge Delivery Services com AEM](/help/edge/using.md)
+   + [Utilização do Edge Delivery Services com o AEM](/help/edge/using.md)
    + [Escolhendo um Método de Criação](/help/edge/authoring-methods.md)
    + Criação no WYSIWYG {#wysiwyg-authoring}
       + [Criação de conteúdo do WYSIWYG para o Edge Delivery](/help/edge/wysiwyg-authoring/authoring.md)
@@ -1013,11 +1013,12 @@ ht-degree: 70%
       + [Redirecionamentos](/help/edge/docs/redirects.md)
    + Compilando o Forms {#build-forms}
       + [Visão geral](/help/edge/docs/forms/overview.md)
+      + [Como o Edge Delivery Services Forms funciona?](/help/edge/docs/forms/universal-editor/edge-delivery-services-form.md)
       + Introdução {#getting-started-edge-delivery-services-forms}
          + [Introdução](/help/edge/docs/forms/tutorial.md)
          + [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
          + [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
-         + [Publish seu formulário e comece a coletar dados](/help/edge/docs/forms/publish-forms.md)
+         + [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
          + [Adicionar validações a campos de formulário](/help/edge/docs/forms/validate-forms.md)
          + [Carregar opções do URL para um formulário](/help/edge/docs/forms/load-options-from-url.md)
          + [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
@@ -1028,7 +1029,9 @@ ht-degree: 70%
       + WYSIWYG {#universal-editor}
          + [Visão geral - Editor universal para Edge Delivery Services para Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
          + [Introdução](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-         + [Adicionar regras ao usando o Editor de Regras](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Adicionar regras ao usando o Editor de regras](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+         + [Criar componentes personalizados](/help/edge/docs/forms/universal-editor/create-custom-component)
+         + [Usar reCAPTCHA em formulários](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
       + Recursos {#advanced-features-edge-delivery-services-forms}
          + [Usar fragmentos de formulário](/help/edge/docs/forms/form-fragments.md)
          + [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
@@ -1044,7 +1047,7 @@ ht-degree: 70%
          + [Utilização do Sidekick](/help/edge/docs/sidekick.md)
          + [Instalar extensão](/help/edge/docs/sidekick-extension.md)
          + [Configurador de Projeto](https://www.aem.live/tools/sidekick/)
-         + [Biblioteca Sidekick](/help/edge/docs/sidekick-library.md)
+         + [Biblioteca da Sidekick](/help/edge/docs/sidekick-library.md)
       + [Perguntas frequentes](/help/edge/docs/faq.md)
       + [API de administração](https://www.aem.live/docs/admin.html)
       + [Status do AEM](https://www.aemstatus.net)
@@ -1084,7 +1087,7 @@ ht-degree: 70%
       + [Atualização dos fragmentos de conteúdo para referências UUID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Exemplo de consultas GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Solução de problemas de consultas do GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [AEM REST OpenAPI para entrega de fragmentos de conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [OpenAPI REST do AEM para entrega de fragmentos de conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
    + [Fragmentos de conteúdo e modelos OpenAPIs](/help/headless/content-fragment-openapis.md)
    + [Suporte a Fragmentos de conteúdo na API HTTP do Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=pt-BR)
    + Segurança {#security}
@@ -1135,7 +1138,7 @@ ht-degree: 70%
    + [Implementação de aplicativos do AEM as a Cloud Service](/help/implementing/home.md)
    + Usar o Cloud Manager {#using-cloud-manager}
       + [Navegação](/help/implementing/cloud-manager/navigation.md)
-      + [Plataforma de lançamento AEM](/help/implementing/cloud-manager/aem-home.md)
+      + [AEM Launchpad](/help/implementing/cloud-manager/aem-home.md)
       + Programas {#programs}
          + [Programas e tipos de programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
@@ -1144,7 +1147,7 @@ ht-degree: 70%
          + [Criar programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md)
          + [Editar Programas](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md)
          + [Ambientes do Hibernate](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md)
-      + Criar um projeto de aplicativo AEM {#create-application-project}
+      + Criar um projeto de aplicativo do AEM {#create-application-project}
          + [Assistente de criação de projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/using-the-wizard.md)
          + [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
@@ -1187,7 +1190,7 @@ ht-degree: 70%
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
       + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
-         + [Introdução aos Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
+         + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
          + [Configurar a validação por push para um site do Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md)
          + [Gerenciar sites do Edge Delivery no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/manage-edge-delivery-sites.md)
@@ -1323,7 +1326,7 @@ ht-degree: 70%
       + [API do ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configuração de segmentação com o ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/personalization/contexthub-segmentation.html?lang=pt-BR)
    + Configuração e extensão do AEM as a Cloud Service {#configuring-and-extending}
-      + Extensão do AEM com App Builder {#app-builder}
+      + Extensão do AEM com o App Builder {#app-builder}
          + [Extensão do AEM usando o Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
          + [Introdução ao App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Console do desenvolvedor da Adobe](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)

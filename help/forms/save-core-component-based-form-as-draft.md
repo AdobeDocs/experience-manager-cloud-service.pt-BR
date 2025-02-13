@@ -4,7 +4,7 @@ description: Saiba como salvar os Componentes principais com base no Formulário
 feature: Adaptive Forms, Core Components
 exl-id: c0653bef-afeb-40c1-b131-7d87ca5542bc
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 508265c72f458b062e1667fd42403743fa293586
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 <span class="preview"> Este artigo contém conteúdo sobre o recurso **Rascunhos**, um recurso de pré-lançamento. O recurso de pré-lançamento pode ser acessado somente por meio do [canal de pré-lançamento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features).</span>
 
-Considere um usuário que começa a preencher um formulário, mas precisa pausar e retornar posteriormente. O AEM oferece uma opção `save-as-draft`, permitindo que o usuário salve o formulário como rascunho para conclusão futura. Para facilitar isso, o AEM fornece o componente de Portal de formulários **Rascunhos e Envios** pronto para uso, que exibe rascunhos e envios em páginas do AEM Sites. O componente lista formulários que foram salvos como rascunhos para conclusão posterior, bem como aqueles que foram enviados. Somente os usuários conectados podem editar os rascunhos ou exibir os formulários enviados. No entanto, se um usuário anônimo navegar pela lista de formulários usando o componente **Pesquisa e Listagem** e salvar um formulário como rascunho, ele não será listado pelo componente **Rascunhos e Envios**. Para visualizar rascunhos e envios, os usuários devem estar conectados no momento do envio do formulário.
+Considere um usuário que começa a preencher um formulário, mas precisa pausar e retornar posteriormente. O AEM oferece uma opção `save-as-draft`, permitindo que o usuário salve o formulário como rascunho para conclusão futura. Para facilitar isso, o AEM fornece o componente de **Rascunhos e envios** do Forms Portal pronto para uso, que exibe rascunhos e envios em páginas do AEM Sites. O componente lista formulários que foram salvos como rascunhos para conclusão posterior, bem como aqueles que foram enviados. Somente os usuários conectados podem editar os rascunhos ou exibir os formulários enviados. No entanto, se um usuário anônimo navegar pela lista de formulários usando o componente **Pesquisa e Listagem** e salvar um formulário como rascunho, ele não será listado pelo componente **Rascunhos e Envios**. Para visualizar rascunhos e envios, os usuários devem estar conectados no momento do envio do formulário.
 
 ![Ícone Rascunhos](assets/drafts-component.png)
 
@@ -32,7 +32,7 @@ Considere um usuário que começa a preencher um formulário, mas precisa pausar
 
 O componente **Rascunhos e Envios** precisa de uma configuração de armazenamento para salvar e listar rascunhos na página do AEM Sites. O Conector de armazenamento unificado oferece uma estrutura para vincular o AEM ao armazenamento externo. Para salvar o formulário como rascunho, verifique se você tem uma conta de armazenamento do Azure e uma chave de acesso para autorizar o acesso à conta de armazenamento [!DNL Azure]. Depois de ter a conta de armazenamento do Azure e a chave de acesso, execute as seguintes etapas para criar uma configuração de Armazenamento do Azure:
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Armazenamento do Azure]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços de Nuvem]** > **[!UICONTROL Armazenamento do Azure]**.
 
    ![Seleção de Cartão de Armazenamento do Azure](/help/forms/assets/save-form-as-draft-azure-card.png)
 
@@ -80,7 +80,7 @@ Você pode usar componentes prontos para uso do Forms Portal para listar rascunh
 1. Vá para as **[!UICONTROL Informações da Página]** > **[!UICONTROL Editar Modelo]**
    ![Editar política de modelo](/help/forms/assets/save-form-as-draft-edit-template.png)
 
-1. Clique na **[!UICONTROL Política]** e marque a caixa de seleção **[!UICONTROL Rascunhos e Envios]** sob o **[Nome do Projeto do Arquétipo AEM] - Forms e Portal de Comunicações**.
+1. Clique na **[!UICONTROL Política]** e marque a caixa de seleção **[!UICONTROL Rascunhos e Envios]** sob o **[Nome do Projeto do Arquétipo do AEM] - Forms e Portal de Comunicações**.
 
    ![Seleção de Política](/help/forms/assets/save-form-as-draft-enable-policy.png)
 

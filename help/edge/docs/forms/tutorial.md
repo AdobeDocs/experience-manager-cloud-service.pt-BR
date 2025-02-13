@@ -4,20 +4,20 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: ec3a9982494df35faf1df9f49416197dc96f1b4a
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1920'
 ht-degree: 0%
 
 ---
 
 # Introdução - Tutorial do desenvolvedor
 
-Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. O Edge Delivery Services para AEM Forms (EDS) permite criar formulários usando ferramentas familiares como o Google Docs e o Microsoft Office.
+Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. O Edge Delivery Services for AEM Forms (EDS) permite criar formulários usando ferramentas familiares como o Google Docs e o Microsoft Office.
 
 Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft SharePoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho de negócios existente.
 
-O AEM Forms fornece um bloco, conhecido como Bloco adaptável do Forms, para ajudar você a criar formulários facilmente para capturar e armazenar dados capturados. Você pode [criar um novo projeto AEM pré-configurado com o Bloco Forms Adaptável](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [adicionar o Bloco Forms AEM Adaptável a um projeto existente](#add-adaptive-forms-block-to-your-existing-aem-project).
+O AEM Forms fornece um bloco, conhecido como Bloco adaptável do Forms, para ajudar você a criar formulários facilmente para capturar e armazenar dados capturados. Você pode [criar um novo projeto do AEM pré-configurado com o Bloco do Adaptive Forms](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [adicionar o Bloco do Adaptive Forms a um projeto existente do AEM](#add-adaptive-forms-block-to-your-existing-aem-project).
 
 Este tutorial do AEM Forms orienta você na criação, visualização e publicação de seu próprio formulário personalizado com um novo projeto do Adobe Experience Manager (AEM) Forms.
 
@@ -31,13 +31,13 @@ Este tutorial do AEM Forms orienta você na criação, visualização e publica�
 **Atenção!** Este tutorial usa macOS, Chrome e Visual Studio Code. Embora as etapas possam ser adaptadas para outras configurações, as capturas de tela e os elementos específicos da interface do usuário podem ser diferentes com base no sistema operacional, no navegador e no editor de código escolhidos.
 
 
-## Criar um novo projeto AEM pré-configurado com o Bloco Forms adaptável
+## Criar um novo projeto do AEM pré-configurado com o Bloco Adaptive Forms
 
-O modelo AEM Forms Boilerplate permite iniciar rapidamente com um projeto AEM pré-configurado com o Bloco de Forms adaptável. É a maneira mais rápida e fácil de seguir as práticas recomendadas para AEM e começar a criar seus formulários.
+O modelo do AEM Forms Boilerplate inicia rapidamente com um projeto do AEM pré-configurado com o Bloco de Forms adaptável. É a maneira mais rápida e fácil de seguir as práticas recomendadas da AEM e começar a criar formulários.
 
 ### Introdução ao modelo de repositório padronizado do AEM Forms
 
-1. Crie um repositório GitHub para seu projeto AEM. Para criar um repositório:
+1. Crie um repositório GitHub para seu projeto do AEM. Para criar um repositório:
    1. Ir para [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms).
 
       ![Modelo do AEM Forms](/help/edge/assets/aem-forms-boilerplate.png)
@@ -50,9 +50,9 @@ O modelo AEM Forms Boilerplate permite iniciar rapidamente com um projeto AEM pr
    ![Definir o repositório como público](/help/edge/assets/create-a-new-repo-keep-it-public.png)
 
 
-1. Instale o aplicativo GitHub de sincronização de código AEM em seu repositório. Para instalar:
+1. Instale o aplicativo GitHub de sincronização de código da AEM em seu repositório. Para instalar:
    1. Ir para [https://github.com/apps/aem-code-sync/installations/new](https://github.com/apps/aem-code-sync/installations/new).
-   1. Na tela Instalar sincronização de código AEM, selecione a opção **Selecionar apenas repositórios** e selecione o repositório recém-criado. Clique em Salvar.
+   1. Na tela Instalar sincronização de código do AEM, selecione a opção **Selecionar apenas repositórios** e selecione o repositório recém-criado. Clique em Salvar.
 
    ![Definir o repositório como público](/help/edge/assets/install-aem-code-sync-app-for-your-repo.png)
 
@@ -82,16 +82,16 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
 
 1. Compartilhe a pasta com o usuário do Adobe Experience Manager (forms@adobe.com).
 
-   ![Use a opção Gerenciar Acesso para compartilhar a pasta com o Usuário AEM - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
+   ![Use a opção Gerenciar Acesso para compartilhar a pasta com o Usuário do AEM - SharePoint](/help/edge/assets/share-folder-with-aem-user.png)
 
-   ![Use a opção Gerenciar Acesso para compartilhar a pasta com o Usuário AEM - Unidade Google](/help/edge/assets/share-google-drive-folder.png)
+   ![Use a opção Gerenciar Acesso para compartilhar a pasta com o Usuário do AEM - Unidade Google](/help/edge/assets/share-google-drive-folder.png)
 
 
    Certifique-se de ter fornecido direitos de edição na pasta ao usuário do Adobe Experience Manager.
 
-   ![Compartilhar pasta com Usuário AEM, fornecer direitos de edição-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
+   ![Compartilhar pasta com o Usuário do AEM, fornecer direitos de edição-SharePoint](/help/edge/assets/share-folder-with-aem-user-provide-editing-access.png){width=50%}
 
-   ![Compartilhar pasta com Usuário AEM, fornecer direitos de edição- Unidade Google](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
+   ![Compartilhar pasta com o Usuário do AEM, fornecer direitos de edição- Unidade Google](/help/edge/assets/add-aem-user-google-folder.png){width=50%}
 
 1. Copie o [conteúdo de exemplo](/help/edge/assets/wefinance1.zip) para sua pasta. Para copiar:
 
@@ -99,7 +99,7 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
 
       ![Baixar Conteúdo de Exemplo](/help/edge/assets/download-sample-content.png)
 
-      Os arquivos `nav` e `footer` definem o layout básico de suas páginas e raramente mudam em todo o projeto. Eles também têm uma estrutura específica diferente da maioria dos outros arquivos de conteúdo. Ao examinar esses arquivos, você terá uma ideia de como o conteúdo é organizado em projetos AEM.
+      Os arquivos `nav` e `footer` definem o layout básico de suas páginas e raramente mudam em todo o projeto. Eles também têm uma estrutura específica diferente da maioria dos outros arquivos de conteúdo. Ao examinar esses arquivos, você terá uma ideia de como o conteúdo é organizado no AEM Projects.
 
 
    1. Faça upload desses arquivos para a pasta Microsoft SharePoint ou Google Drive.
@@ -112,7 +112,7 @@ Para copiar o conteúdo de amostra para sua própria pasta de conteúdo e aponta
 
    1. Vá para o repositório GitHub criado anteriormente usando a Matriz do AEM Forms.
    1. Abra o `fstab.yaml` para edição.
-   1. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o usuário AEM (forms@adobe.com).
+   1. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o usuário do AEM (forms@adobe.com).
 
       ![Conteúdo de exemplo na Unidade Google](/help/edge/assets/replace-path-in-fstab-yaml-with-your-content-folder.png)
 
@@ -148,11 +148,11 @@ Para visualizar conteúdo não publicado:
 
 1. Instale a extensão do Chrome chamada [AEM Sidekick](https://chrome.google.com/webstore/detail/helix-sidekick-beta/ccfggkjabjahcjoljmgmklhpaccedipo).
 
-   ![Instalar AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
+   ![Instalar o AEM Sidekick](/help/edge/assets/install-aem-sidekick.png)
 
    Depois de instalar a extensão no Chrome, não se esqueça de fixá-la, isso facilita a localização.
 
-   ![AEM Sidekick de pinos](/help/edge/assets/pin-aem-sidekick.png)
+   ![Fixar AEM Sidekick](/help/edge/assets/pin-aem-sidekick.png)
 
 1. Para configurar a extensão do Sidekick Chrome, vá para a pasta Google Drive ou Microsoft SharePoint compartilhada anteriormente, clique com o botão direito do mouse no ícone de extensão na barra de ferramentas do navegador e selecione `Add this project`.
 
@@ -164,7 +164,7 @@ Para visualizar conteúdo não publicado:
 
    ![Selecionar todos os arquivos](/help/edge/assets/select-all-files.png)
 
-1. Clique no ícone de AEM Sidekick fixado à barra de extensão do Chrome. Uma barra de ferramentas é exibida na tela. Você pode optar por visualizar ou publicar seu conteúdo.
+1. Clique no ícone do AEM Sidekick fixado à barra de extensão do Chrome. Uma barra de ferramentas é exibida na tela. Você pode optar por visualizar ou publicar seu conteúdo.
 
    Se você copiou mais de `index`, `nav`, `footer` e `enquiry` arquivos, todos esses são documentos separados com seus próprios ciclos de visualização e publicação, portanto, visualize (e publique) todos eles.
 
@@ -191,7 +191,7 @@ O conteúdo de amostra inclui uma folha de &quot;consulta&quot; que serve como m
 
 ![Formulário de consulta](/help/edge/docs/forms/assets/enquiry-form-microsoft-sharepoint.png)
 
-Vamos começar com a atualização de um rótulo de campo. Abra a folha &#39;consulta&#39; para edição, altere o rótulo do botão enviar para `Let's Talk` e use o AEM Sidekick para visualizar e publicar o arquivo.
+Vamos começar com a atualização de um rótulo de campo. Abra a planilha &quot;consulta&quot; para edição, altere o rótulo do botão enviar para `Let's Talk` e use o AEM Sidekick para visualizar e publicar o arquivo.
 
 ![Formulário de consulta](/help/edge/assets/enquiry-form-preview-publish.png)
 
@@ -231,9 +231,9 @@ Para obter informações detalhadas sobre como criar e publicar um novo formulá
 ### Começar a desenvolver estilo e funcionalidade
 
 
-Para começar a usar rapidamente um ambiente de desenvolvimento local de AEM:
+Para começar a usar rapidamente um ambiente de desenvolvimento local do AEM:
 
-1. Instalar a CLI do AEM: a CLI do AEM simplifica as tarefas de desenvolvimento. Vamos instalá-lo globalmente usando npm:
+1. Instalar a AEM CLI: a AEM CLI simplifica as tarefas de desenvolvimento. Vamos instalá-lo globalmente usando npm:
 
    ```Bash
        npm install -g @adobe/aem-cli
@@ -263,28 +263,47 @@ Parabéns! Você configurou seu ambiente de desenvolvimento local com êxito e i
 
 
 
-## Adicionar bloco adaptável do Forms ao projeto AEM existente
+## Adicionar bloco adaptável do Forms ao seu projeto existente do AEM
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427789)
 
-Se você tiver um projeto AEM existente, é possível integrar o Bloco de Forms adaptável ao seu projeto atual para começar a criar formulários.
+Se você tiver um projeto do AEM existente, é possível integrar o Bloco de Forms adaptável ao seu projeto atual para começar a criar formulários.
 
 >[!NOTE]
 >
 >
-> Esta etapa se aplica aos projetos compilados com a [Estrutura AEM](https://github.com/adobe/aem-boilerplate). Se você criou seu projeto AEM usando o [Modelo do AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms), ignore esta etapa.
+> Esta etapa se aplica aos projetos compilados com o [AEM Boilerplate](https://github.com/adobe/aem-boilerplate). Se você criou seu projeto do AEM usando o [Modelo do AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms), ignore esta etapa.
 
 Para Integrar O:
 
-1. Clonar o repositório de Blocos do Adaptive Forms: [https://github.com/adobe-rnd/aem-boilerplate-forms](https://github.com/adobe-rnd/aem-boilerplate-forms) no computador.
+1. **Adicionar arquivos e pastas necessários**
+   1. Copie e cole as seguintes pastas e arquivos do [AEM Forms Boilerplate](https://github.com/adobe-rnd/aem-boilerplate-forms) no seu projeto do AEM:
 
-1. Dentro da pasta baixada, localize a pasta `blocks/form`. Copiar esta pasta. Agora, navegue até a pasta local `blocks` do projeto AEM e cole a pasta do formulário copiado aqui.
+      * Pasta [bloco de formulários](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/blocks/form)
+      * Pasta [formulário-comum](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-common)
+      * Pasta [componentes-formulário](https://github.com/adobe-rnd/aem-boilerplate-forms/tree/main/models/form-components)
+      * [arquivo form-editor-support.js](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.js)
+      * Arquivo [form-editor-support.css](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/form-editor-support.css)
 
-1. Confirme e envie essas alterações para seu projeto AEM no GitHub.
+1. **Atualizar definições de componentes e arquivos de modelos**
+   1. Navegue até o arquivo `../models/_component-definition.json` em seu projeto do AEM e atualize-o com as alterações do arquivo [_component-definition.json no Modelo do AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-definition.json#L39-L48).
 
+   1. Navegue até o arquivo `../models/_component-models.json` em seu projeto do AEM e atualize-o com as alterações do arquivo [_component-models.json no Modelo do AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/models/_component-models.json#L24-L26)
 
-Pronto! O bloco adaptável do Forms agora faz parte do projeto AEM. Você pode começar a criar e adicionar formulários às páginas AEM.
+1. **Adicionar Editor de Formulário no script do editor**
+   1. Navegue até o arquivo `../scripts/editor-support.js` no seu projeto do AEM e atualize-o com as alterações do arquivo [editor-support.js no Modelo do AEM Forms](https://github.com/adobe-rnd/aem-boilerplate-forms/blob/main/scripts/editor-support.js#L105-L106)
+1. **Atualizar arquivo de configuração ESLint**
+   1. Navegue até o arquivo `../.eslintignore` em seu projeto do AEM e adicione a seguinte linha de códigos para evitar erros relacionados ao mecanismo de regra de Bloco de formulário:
+
+      ```
+          blocks/form/rules/formula/*
+          blocks/form/rules/model/*
+      ```
+
+1. Confirme e envie essas alterações para o repositório de projetos do AEM no GitHub.
+
+Pronto! O bloco adaptável do Forms agora faz parte do projeto do AEM. Você pode começar a criar e adicionar formulários às suas páginas do AEM.
 
 
 ## Solução de problemas de build do GitHub
