@@ -1,12 +1,12 @@
 ---
 title: Assimilar conteúdo no Cloud Service
-description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância de Cloud Service de destino.
+description: Saiba como usar o Cloud Acceleration Manager para assimilar conteúdo do seu conjunto de migração em uma instância do Cloud Service de destino.
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
 workflow-type: tm+mt
-source-wordcount: '3411'
+source-wordcount: '3441'
 ht-degree: 12%
 
 ---
@@ -43,7 +43,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
       * As assimilações não são compatíveis com destinos do tipo RDE (Rapid Development Environment, ambiente de desenvolvimento rápido) ou pré-visualização e não aparecem como uma possível escolha de destino, mesmo que o usuário tenha acesso a elas.
       * Embora um conjunto de migração possa ser assimilado em vários destinos simultaneamente, um destino pode ser o destino de apenas um em execução ou aguardando assimilação por vez.
 
-   * **Camada:** Selecione a camada. (Autor/Publish).
+   * **Camada:** Selecione a camada. (Autor/Publicação).
       * Se a origem foi `Author`, é recomendável assimilá-la na camada `Author` no destino. Da mesma forma, se a origem fosse `Publish`, o destino também deveria ser `Publish`.
 
    >[!NOTE]
@@ -53,7 +53,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
    > Se a camada de destino for `Publish`, a instância de publicação permanecerá em execução durante a assimilação.  No entanto, se o processo de compactação estiver em execução durante a assimilação, é provável que ocorra um conflito entre os dois processos.  Por esse motivo, o processo de assimilação 1) desativa o script de compactação cronometrado, de modo que a compactação não será iniciada durante a assimilação e 2) verifica se a compactação está em execução no momento e, se estiver, aguarda a conclusão antes que a assimilação continue.  Se a assimilação de publicação estiver demorando mais do que o esperado, verifique os logs de assimilação para obter as instruções de log relacionadas.
 
    * **Apagar:** Escolha o valor `Wipe`
-      * A opção **Apagar** define o ponto inicial de destino da assimilação. Se **Limpar** estiver habilitado, o destino, incluindo todo o seu conteúdo, será redefinido para a versão do AEM especificada no Cloud Manager. Se não estiver ativado, o destino mantém o conteúdo atual como ponto de partida.
+      * A opção **Apagar** define o ponto inicial de destino da assimilação. Se **Apagar** estiver habilitado, o destino, incluindo todo o seu conteúdo, será redefinido para a versão do AEM especificada no Cloud Manager. Se não estiver ativado, o destino mantém o conteúdo atual como ponto de partida.
       * Esta opção **NÃO** afeta como a assimilação de conteúdo será realizada. A assimilação sempre usa uma estratégia de substituição de conteúdo e _não_ uma estratégia de mesclagem de conteúdo, portanto, em ambos os casos **Apagar** e **Não-Apagar**, a assimilação de um conjunto de migração substituirá o conteúdo no mesmo caminho no destino. Por exemplo, se o conjunto de migração contiver `/content/page1` e o destino já contiver `/content/page1/product1`, a assimilação removerá todo o caminho `page1` e suas subpáginas, incluindo `product1`, e substituirá pelo conteúdo no conjunto de migração. Isso significa que é necessário fazer um planejamento cuidadoso ao executar uma assimilação **Não-apagada** para um destino que contenha qualquer conteúdo que deva ser mantido.
       * As assimilações que não são de limpeza são projetadas especificamente para o caso de uso de assimilação complementar. Essas assimilações devem ter uma quantidade incremental de novo conteúdo que foi alterado desde a última assimilação em um conjunto de migração existente. Executar assimilações que não são de limpeza fora desse caso de uso pode resultar em tempos de assimilação muito longos.
 
@@ -65,7 +65,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
       * Se a assimilação com pré-cópia for usada (para S3 ou Azure Data Store), é recomendável executar a assimilação `Author` sozinha. Isso acelera a assimilação de `Publish` quando executada posteriormente.
 
    >[!IMPORTANT]
-   > Você pode iniciar uma assimilação no ambiente de destino somente se pertencer ao grupo local **administradores de AEM** no serviço de autor do Cloud Service de destino. Se você não conseguir iniciar uma assimilação, consulte [Não foi possível iniciar a assimilação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obter mais detalhes.
+   > Você só poderá iniciar uma assimilação no ambiente de destino se pertencer ao grupo local de **administradores do AEM** no serviço de autor do Cloud Service de destino. Se você não conseguir iniciar uma assimilação, consulte [Não foi possível iniciar a assimilação](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) para obter mais detalhes.
 
 1. Depois que as opções de assimilação forem selecionadas, uma estimativa de sua duração poderá ser mostrada. Esta é uma estimativa de melhor esforço com base em dados históricos de assimilações semelhantes.
 
@@ -130,17 +130,17 @@ Recupere o token de migração manualmente clicando no link &quot;Obter token&qu
 
 >[!NOTE]
 >
->O token está disponível para usuários que pertencem ao grupo local **administradores de AEM** no serviço de autor de Cloud Service de destino.
+>O token está disponível para usuários que pertencem ao grupo local **administradores do AEM** no serviço de autor do Cloud Service de destino.
 
 ### Não foi possível iniciar a assimilação {#unable-to-start-ingestion}
 
-Você pode iniciar uma assimilação no ambiente de destino somente se pertencer ao grupo local **administradores de AEM** no serviço de autor do Cloud Service de destino. Se você não pertence ao grupo de administradores do AEM, você vê um erro como mostrado abaixo ao tentar iniciar uma assimilação. Você pode pedir ao administrador para adicioná-lo aos **administradores do AEM** local ou solicitar o token propriamente dito, que você pode colar no campo **Entrada do token de migração**.
+Você só poderá iniciar uma assimilação no ambiente de destino se pertencer ao grupo local de **administradores do AEM** no serviço de autor do Cloud Service de destino. Se você não pertence ao grupo de administradores do AEM, você vê um erro como mostrado abaixo ao tentar iniciar uma assimilação. Você pode pedir ao administrador para adicioná-lo aos **administradores do AEM** locais ou solicitar o token propriamente dito, que você pode colar no campo **Entrada de token de migração**.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ### Não é possível acessar o serviço de migração {#unable-to-reach-migration-service}
 
-Depois que uma assimilação é solicitada, uma mensagem como a seguinte pode ser apresentada ao usuário: &quot;O serviço de migração no ambiente de destino está inacessível. Em caso afirmativo, tente novamente mais tarde ou entre em contato com o suporte do Adobe.&quot;
+Depois que uma assimilação é solicitada, uma mensagem como a seguinte pode ser apresentada ao usuário: &quot;O serviço de migração no ambiente de destino está inacessível. Em caso afirmativo, tente novamente mais tarde ou entre em contato com o suporte da Adobe.&quot;
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
@@ -151,7 +151,7 @@ Esta mensagem indica que o Cloud Acceleration Manager não conseguiu acessar o s
 > O campo &quot;Token de migração&quot; é exibido porque, em alguns casos, a recuperação desse token é o que realmente não é permitido. Ao permitir que seja fornecido manualmente, ele pode permitir que o usuário inicie a assimilação rapidamente, sem nenhuma ajuda adicional. Se o token for fornecido e a mensagem ainda for exibida, a recuperação do token não foi o problema.
 
 * A AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, deve reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível no futuro.
-* É possível que outro processo esteja sendo executado na instância. Por exemplo, se as [Atualizações de Versão do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) estiverem aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
+* É possível que outro processo esteja sendo executado na instância. Por exemplo, se as [Atualizações de versão do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) estiverem aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
 * Se uma [Inclui na lista de permissões de IP ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tiver sido aplicada por meio do Cloud Manager, ela impedirá que o Cloud Acceleration Manager acesse o serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é dinâmico. Atualmente, a única solução é desativar a inclui na lista de permissões de IP durante o processo de assimilação e indexação.
 * Pode haver outros motivos que precisem de investigação. Se a assimilação ou indexação continuar a falhar, entre em contato com o Atendimento ao cliente da Adobe.
 
@@ -180,7 +180,7 @@ Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atual
 >title="O Ambiente de nuvem não está no estado pronto"
 >abstract="Em casos raros, o ambiente de nuvem de destino pode estar enfrentando problemas inesperados, o que causará a falha da assimilação."
 
-Em casos raros, o ambiente de Cloud Service de destino da assimilação pode estar enfrentando problemas inesperados. Como resultado, a assimilação falhará, pois o ambiente não está no estado pronto esperado. Verifique o log de assimilação para revelar mais detalhes do estado de erro encontrado.
+Em casos raros, o ambiente Cloud Service de destino da assimilação pode estar com problemas inesperados. Como resultado, a assimilação falhará, pois o ambiente não está no estado pronto esperado. Verifique o log de assimilação para revelar mais detalhes do estado de erro encontrado.
 
 Verifique se o ambiente de criação está disponível e aguarde alguns minutos antes de tentar assimilar novamente. Se o problema persistir, entre em contato com o suporte ao cliente com o estado de erro encontrado.
 
@@ -239,7 +239,7 @@ Essa é uma restrição MongoDB.
 
 Consulte a observação `Node property value in MongoDB` em [Pré-requisitos da Ferramenta de Transferência de Conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta Oak que possa ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
 
-Para evitar possivelmente essa restrição, execute o [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) na instância do AEM de origem e revise os achados apresentados, especialmente o padrão [&quot;Estrutura de Repositório Sem Suporte&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Para evitar possivelmente essa restrição, execute o [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) na instância do AEM de origem e revise as descobertas apresentadas, especialmente o padrão [&quot;Estrutura de Repositório Sem Suporte&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
@@ -258,6 +258,7 @@ Para evitar possivelmente essa restrição, execute o [Analisador de Práticas R
 
 * `Atlas prescale timeout error` - A fase de assimilação tentará dimensionar previamente o banco de dados de nuvem de destino para um tamanho adequado que se alinhe ao tamanho do conteúdo do conjunto de migração que está sendo assimilado. Raramente, essa operação não é concluída dentro do período esperado.
 * `Exhausted mongo restore retries` - As tentativas de restaurar um despejo local do conteúdo do conjunto de migração assimilado para o banco de dados de nuvem se esgotaram. Isso indica um problema geral de integridade/rede com o MongoDB, que muitas vezes se cura após alguns minutos.
+* `Mongo network error` - Às vezes, estabelecer uma conexão com MongoDB pode falhar, fazendo com que o processo de assimilação saia antes e relate-o como falho. Uma simples tentativa de assimilação deve ser feita.
 
 ### Ingestão cancelada {#ingestion-rescinded}
 
@@ -272,7 +273,7 @@ Uma assimilação criada com uma extração em execução, à medida que seu con
 
 Em geral, não é recomendado modificar os dados do ambiente de nuvem entre as assimilações.
 
-Quando um ativo é excluído do destino Cloud Service usando a interface para toque do Assets, os dados do nó são excluídos, mas o blob de ativos com a imagem não é excluído imediatamente. Ele é marcado para exclusão para que não apareça mais na interface do usuário; no entanto, permanece no armazenamento de dados até que a coleta de lixo ocorra e o blob seja removido.
+Quando um ativo é excluído do destino do Cloud Service usando a interface para toque do Assets, os dados do nó são excluídos, mas o blob de ativos com a imagem não é excluído imediatamente. Ele é marcado para exclusão para que não apareça mais na interface do usuário; no entanto, permanece no armazenamento de dados até que a coleta de lixo ocorra e o blob seja removido.
 
 No cenário em que um ativo migrado anteriormente é excluído e a próxima assimilação é executada antes que o coletor de lixo conclua a exclusão do ativo, a assimilação do mesmo conjunto de migração não restaurará o ativo excluído. Quando a assimilação verifica o ambiente de nuvem para o ativo, não há dados de nó; portanto, a assimilação copiará os dados do nó para o ambiente de nuvem. No entanto, quando ele verifica o armazenamento de blob, ele vê que o blob está presente e ignora a cópia do blob. É por isso que os metadados estão presentes após a assimilação quando você observa o ativo da interface para toque, mas a imagem não está. Lembre-se de que os conjuntos de migração e a assimilação de conteúdo não foram projetados para lidar com esse caso. Eles têm como objetivo adicionar novo conteúdo ao ambiente de nuvem e não restaurar o conteúdo migrado anteriormente.
 
@@ -280,4 +281,4 @@ No cenário em que um ativo migrado anteriormente é excluído e a próxima assi
 
 Quando a assimilação for bem-sucedida, a indexação do AEM será iniciada automaticamente. Consulte [Indexação após Migrar Conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/indexing-content.md) para obter mais informações.
 
-Depois de concluir a assimilação de conteúdo no Cloud Service, você pode visualizar os registros de cada etapa (extração e assimilação) e procurar erros. Consulte [Exibir Logs de um Conjunto de Migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) para saber mais.
+Depois de concluir a assimilação de conteúdo no Cloud Service, você pode visualizar os logs de cada etapa (extração e assimilação) e procurar erros. Consulte [Exibir Logs de um Conjunto de Migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md) para saber mais.
