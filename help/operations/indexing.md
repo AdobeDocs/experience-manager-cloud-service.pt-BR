@@ -4,10 +4,10 @@ description: Saiba mais sobre Pesquisa e indexação de conteúdo no AEM as a Cl
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 feature: Operations
 role: Admin
-source-git-commit: 4de04b0a2c74406544757f9a92c061abfde5b615
+source-git-commit: bf8ec70fa6f6678c4a2ffb49aea453be11fa26f1
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 25%
+source-wordcount: '2767'
+ht-degree: 22%
 
 ---
 
@@ -20,7 +20,7 @@ Com o AEM as a Cloud Service, a Adobe está passando de um modelo centrado em in
 Abaixo está uma lista das principais alterações em comparação ao AEM 6.5 e versões anteriores:
 
 1. Os usuários não têm mais acesso ao Gerenciador de índice de uma instância única do AEM para depurar, configurar ou manter a indexação. Ele só será usado para desenvolvimento e implantações locais.
-1. Os usuários não podem mais alterar índices em uma instância única do AEM, nem precisam se preocupar com verificações de consistência ou reindexação.
+1. Os usuários não alteram índices em uma única instância do AEM, nem precisam mais se preocupar com verificações de consistência ou reindexação.
 1. Em geral, as alterações de índice são iniciadas antes de entrar na produção para não contornar gateways de qualidade nos pipelines de CI/CD do Cloud Manager e não afetar os KPIs de negócios em produção.
 1. Todas as métricas relacionadas, incluindo o desempenho da pesquisa na produção, estão disponíveis para clientes no tempo de execução para fornecer uma visualização integral sobre os tópicos de Pesquisa e indexação.
 1. Os clientes podem configurar alertas de acordo com suas necessidades.
@@ -33,7 +33,7 @@ Limitações:
 
 * Atualmente, o gerenciamento de índice no AEM as a Cloud Service é compatível somente com índices do tipo `lucene`.
 * Somente os analisadores padrão são compatíveis (ou seja, os analisadores enviados com o produto). Não há compatibilidade com analisadores personalizados.
-* Internamente, outros índices podem ser configurados e usados para consultas. Por exemplo, consultas gravadas em relação ao índice `damAssetLucene` podem, no Skyline, ser executadas em uma versão Elasticsearch desse índice. Normalmente, essa diferença não é visível para o aplicativo e para o usuário. No entanto, certas ferramentas, como o recurso `explain`, relatam um índice diferente. Para ver as diferenças entre os índices Lucene e os índices Elastic, consulte [a documentação do Elastic no Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Os clientes não precisam e não podem configurar os índices de Elasticsearch diretamente.
+* Internamente, outros índices podem ser configurados e usados para consultas. Por exemplo, consultas gravadas em relação ao índice `damAssetLucene` podem, no Skyline, ser executadas em uma versão Elasticsearch desse índice. Normalmente, essa diferença não é visível para o aplicativo e para o usuário. No entanto, certas ferramentas, como o recurso `explain`, relatam um índice diferente. Para ver as diferenças entre os índices Lucene e os índices Elastic, consulte [a documentação do Elastic no Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Os clientes não precisam e não podem configurar os índices do Elasticsearch diretamente.
 * Não há suporte para a pesquisa por vetores de recursos similares (`useInSimilarity = true`).
 
 >[!TIP]
@@ -69,7 +69,7 @@ Uma definição de índice pode se enquadrar em uma das seguintes categorias:
 
 >[!NOTE]
 >
->Se estiver personalizando um índice pronto para uso (por exemplo, `damAssetLucene-8`), copie a definição mais recente do índice pronto para uso de um *ambiente de Cloud Service* usando o Gerenciador de Pacotes do CRX DE (`/crx/packmgr/`) . Renomeie-o para `damAssetLucene-8-custom-1` (ou superior) e adicione suas personalizações dentro do arquivo XML. Isso garante que as configurações necessárias não sejam removidas inadvertidamente. Por exemplo, o nó `tika` em `/oak:index/damAssetLucene-8/tika` é necessário no índice personalizado implantado em um ambiente AEM Cloud Service, mas não existe no SDK AEM local.
+>Se estiver personalizando um índice pronto para uso (por exemplo, `damAssetLucene-8`), copie a definição mais recente do índice pronto para uso de um *ambiente do Cloud Service* usando o Gerenciador de Pacotes do CRX DE (`/crx/packmgr/`) . Renomeie-o para `damAssetLucene-8-custom-1` (ou superior) e adicione suas personalizações dentro do arquivo XML. Isso garante que as configurações necessárias não sejam removidas inadvertidamente. Por exemplo, o nó `tika` em `/oak:index/damAssetLucene-8/tika` é necessário no índice personalizado implantado em um ambiente do AEM Cloud Service, mas não existe no AEM SDK local.
 
 Para personalizações de um índice OOTB, prepare um novo pacote que contenha a definição de índice real que siga esse padrão de nomenclatura:
 
@@ -308,9 +308,9 @@ Depois que o Adobe altera um índice pronto para uso, como &quot;damAssetLucene&
 | /oak:index/cqPageLucene | Sim | Sim | Não |
 | /oak:index/cqPageLucene-2 | Sim | Não | Sim |
 
-É importante observar que os ambientes podem estar em diferentes versões do AEM. Por exemplo: o ambiente `dev` está na versão `X+1` enquanto o preparo e a produção ainda estão na versão `X` e estão aguardando para serem atualizados para a versão `X+1` após a realização dos testes necessários em `dev`. Se a versão `X+1` vier com uma versão mais recente de um índice de produto que foi personalizado e uma nova personalização desse índice for necessária, a tabela a seguir explicará quais versões precisam ser definidas em ambientes com base na versão do AEM:
+É importante observar que os ambientes podem estar em versões diferentes do AEM. Por exemplo: o ambiente `dev` está na versão `X+1` enquanto o preparo e a produção ainda estão na versão `X` e estão aguardando para serem atualizados para a versão `X+1` após a realização dos testes necessários em `dev`. Se a versão `X+1` vier com uma versão mais recente de um índice de produto que foi personalizado e uma nova personalização desse índice for necessária, a tabela a seguir explicará quais versões precisam ser definidas em ambientes com base na versão do AEM:
 
-| Ambiente (versão AEM) | Versão do índice do produto | Versão de índice personalizado existente | Nova versão de índice personalizada |
+| Ambiente (Versão de lançamento do AEM) | Versão do índice do produto | Versão de índice personalizado existente | Nova versão de índice personalizada |
 |-----------------------------------|-----------------------|-------------------------------|----------------------------|
 | Desenvolvimento (X+1) | damAssetLucene-11 | damAssetLucene-11-custom-1 | damAssetLucene-11-custom-2 |
 | Estágio (X) | damAssetLucene-10 | damAssetLucene-10-custom-1 | damAssetLucene-10-custom-2 |
@@ -319,7 +319,7 @@ Depois que o Adobe altera um índice pronto para uso, como &quot;damAssetLucene&
 
 ### Limitações atuais {#current-limitations}
 
-Só há suporte para o gerenciamento de índice para índices do tipo `lucene`, com `compatVersion` definido como `2`. Internamente, outros índices podem ser configurados e usados para consultas, por exemplo, índices Elasticsearch. As consultas gravadas no índice `damAssetLucene` podem, no AEM as a Cloud Service, ser executadas em uma versão Elasticsearch desse índice. Essa diferença é invisível para o usuário do aplicativo, no entanto, certas ferramentas, como o recurso `explain`, reportam um índice diferente. Para ver as diferenças entre os índices Lucene e Elasticsearch, consulte [a documentação do Elasticsearch no Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Os clientes não podem e não precisam configurar os índices de Elasticsearch diretamente.
+Só há suporte para o gerenciamento de índice para índices do tipo `lucene`, com `compatVersion` definido como `2`. Internamente, outros índices podem ser configurados e usados para consultas, por exemplo, índices Elasticsearch. As consultas gravadas no índice `damAssetLucene` podem, no AEM as a Cloud Service, ser executadas em uma versão Elasticsearch desse índice. Essa diferença é invisível para o usuário do aplicativo, no entanto, certas ferramentas, como o recurso `explain`, reportam um índice diferente. Para ver as diferenças entre os índices Lucene e Elasticsearch, consulte [a documentação do Elasticsearch no Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Os clientes não podem e não precisam configurar os índices do Elasticsearch diretamente.
 
 Somente os analisadores incorporados são compatíveis (ou seja, os analisadores enviados com o produto). Não há compatibilidade com analisadores personalizados.
 
@@ -359,9 +359,50 @@ A nova versão do aplicativo usa a seguinte configuração (alterada):
 
 ### Remover um índice {#removing-an-index}
 
-O seguinte se aplica somente a índices personalizados. Os índices de produto não podem ser removidos, pois são usados pelo AEM.
+O seguinte se aplica somente a personalizações de índices prontos para uso (OOTB) e a índices totalmente personalizados. Observe que os índices OOTB originais não podem ser removidos, pois são usados pelo AEM.
 
-Um índice personalizado pode ser removido em uma versão posterior do aplicativo do cliente, removendo-o do repositório do cliente. Um índice removido do repositório do não é usado para consultas no AEM, embora ainda possa estar presente nas instâncias por algum tempo. Há um mecanismo de limpeza em vigor que é executado periodicamente, o que limpa as versões mais antigas dos índices das instâncias.
+Para garantir a integridade e a estabilidade do sistema, as definições de índice devem ser tratadas como imutáveis depois de implantadas. Para obter o efeito de remover um índice personalizado ou uma personalização, crie uma nova versão do índice personalizado com uma definição que simule efetivamente a remoção desse índice.
+
+Depois que uma nova versão de um índice é implantada, a versão mais antiga do mesmo índice não será mais usada pelas consultas.
+A versão mais antiga não será excluída imediatamente do ambiente,
+mas se tornará elegível para a coleta de lixo por meio de um mecanismo de limpeza que é executado periodicamente.
+Após um período de carência projetado para permitir a recuperação em caso de erros
+(atualmente, 7 dias contados a partir de quando a indexação foi removida, mas está sujeita a alterações),
+esse mecanismo de limpeza excluirá os dados do índice não utilizados,
+e desativará ou removerá a versão antiga do índice do ambiente.
+
+Abaixo, descrevemos os dois casos possíveis: remoção de personalizações de um índice OOTB e remoção de um índice totalmente personalizado.
+
+#### Remoção de personalizações de um índice pronto para uso
+
+Siga as etapas descritas em [Desfazendo uma Alteração](#undoing-a-change-undoing-a-change) usando as definições do índice OOTB como a nova versão. Por exemplo, se você já implantou o índice `damAssetLucene-8-custom-3`, mas não precisa mais das personalizações e deseja voltar para o índice `damAssetLucene-8` padrão, você precisa adicionar um índice `damAssetLucene-8-custom-4` que contém a definição de índice de `damAssetLucene-8`.
+
+#### Remoção de um índice totalmente personalizado
+
+Siga as etapas descritas em [Desfazendo uma Alteração](#undoing-a-change-undoing-a-change) usando um índice fictício como a nova versão. Um índice fictício nunca é usado para consultas e não contém dados, portanto, o efeito é o mesmo se o índice não existisse. Neste exemplo, você pode nomeá-lo como `/oak:index/acme.product-custom-3`. Este nome substitui o índice `/oak:index/acme.product-custom-2`. Um exemplo desse índice fictício é:
+
+```xml
+<acme.product-custom-3
+        jcr:primaryType="oak:QueryIndexDefinition"
+        async="async"
+        compatVersion="2"
+        includedPaths="/dummy"
+        queryPaths="/dummy"
+        type="lucene">
+        <indexRules jcr:primaryType="nt:unstructured">
+            <rep:root jcr:primaryType="nt:unstructured">
+                <properties jcr:primaryType="nt:unstructured">
+                    <dummy
+                        jcr:primaryType="nt:unstructured"
+                        name="dummy"
+                        propertyIndex="{Boolean}true"/>
+                </properties>
+            </rep:root>
+        </indexRules>
+</acme.product-custom-3>
+```
+
+
 
 ## Otimizações de índice e consulta {#index-query-optimizations}
 
