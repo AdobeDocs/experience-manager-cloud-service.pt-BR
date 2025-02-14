@@ -5,13 +5,13 @@ feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: ac005e5bc143c35eb29ba177a26aa6cc33897db4
+exl-id: beee9be7-8215-496b-9fb9-61fba000a055
+source-git-commit: ba38294710553145a670ea42dd2b7571fa4eba7b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '733'
 ht-degree: 1%
 
 ---
-
 
 # Ação de envio do formulário adaptável
 
@@ -44,7 +44,7 @@ Para configurar um endpoint REST:
 1. Especifique o URL do ponto de extremidade REST.
 1. Você também pode **Habilitar a solicitação POST** e fornecer uma URL para publicar a solicitação.
 
-{width=50%,height=50%}![Habilitar solicitação de postagem para formulários adaptáveis](/help/forms/assets/enable-post-request-ue.png)
+![Habilitar solicitação de postagem para formulários adaptáveis](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Enviar email A ação de envio permite enviar um email para um ou mais recipient
 1. Ajuda a simplificar o fluxo de trabalho, integrando diretamente os envios de formulários às notificações por email.
 1. Ele ajuda as organizações a personalizar o conteúdo de email, tornando-o adequado para necessidades específicas de comunicação.
 
-{width=50%,height=50%}![Propriedades do Formulário adaptável no Editor Universal](/help/forms/assets/submit-actions-ue.png)
+![Propriedades do Formulário Adaptável no Editor Universal](/help/forms/assets/submit-actions-ue.png)
 
 
 Para configurar uma ação de envio como um Email para o envio do formulário:
@@ -140,5 +140,3 @@ A opção Ao enviar ajuda a configurar uma mensagem de Ação de envio no envio 
 1. Ao clicar em, você verá a seguinte opção:
    * **[!UICONTROL Ao Enviar]**: Ao Enviar ajuda você a personalizar uma mensagem a ser exibida quando um formulário for enviado. Por padrão, uma mensagem personalizada &quot;Obrigado por enviar o formulário&quot; é exibida ao usuário quando um formulário é enviado com êxito.
 Você também pode personalizar a mensagem de agradecimento no envio do formulário, selecionando a opção para **[!UICONTROL Mostrar mensagem]** e adicionar/editar sua mensagem no Rich Text **Editor**.
-
-
