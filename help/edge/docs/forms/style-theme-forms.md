@@ -1,10 +1,10 @@
 ---
-title: Personalizar tema e estilo para um Edge Delivery Services para o AEM Forms
-description: Personalizar tema e estilo para um Edge Delivery Services para o AEM Forms
+title: Personalizar tema e estilo para um Edge Delivery Services para AEM Forms
+description: Personalizar tema e estilo para um Edge Delivery Services para AEM Forms
 feature: Edge Delivery Services
 exl-id: c214711c-979b-4833-9541-8e35b2aa8e09
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 3b6ffd391b36f2f0d09fe054140b08bca6f0c941
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 0%
@@ -18,12 +18,12 @@ O Forms é fundamental para a interação do usuário em sites, permitindo que e
 
 O bloco adaptável do Forms produz uma estrutura consistente para todos os campos de formulário. A estrutura consistente facilita o desenvolvimento de Seletores de CSS para selecionar e estilizar campos de formulário com base no tipo de campo e nos nomes de campo.
 
-Este documento descreve a estrutura de HTML para vários componentes de formulário e ajuda a criar um entendimento de como criar Seletores de CSS para vários campos de formulário para estilizar campos de formulário de um Bloco de Forms adaptável.
+Este documento descreve a estrutura do HTML para vários componentes de formulário e ajuda a criar um entendimento de como criar Seletores de CSS para vários campos de formulário para estilizar campos de formulário de um Bloco de Forms adaptável.
 
 Até o final do artigo:
 
 * Você constrói uma compreensão da estrutura do arquivo CSS padrão incluído no Bloco Forms adaptável.
-* Você constrói uma compreensão da estrutura de HTML dos componentes de formulário fornecidos pelo Bloco de Forms adaptável, incluindo componentes gerais e componentes específicos, como listas suspensas, grupos de rádio e grupos de caixas de seleção.
+* Você constrói uma compreensão da estrutura HTML de componentes de formulário fornecidos pelo Bloco de Forms adaptável, incluindo componentes gerais e componentes específicos, como menus suspensos, grupos de rádio e grupos de caixas de seleção.
 * Você aprende a estilizar campos de formulário com base no tipo de campo e nos nomes de campo usando Seletores de CSS, permitindo um estilo consistente ou exclusivo com base nos requisitos.
 
 
@@ -41,14 +41,14 @@ Antes de mergulhar no estilo, vamos rever os [tipos de campo](/help/edge/docs/fo
 
 Entender os [conceitos CSS fundamentais](https://www.w3schools.com/css/css_intro.asp) é fundamental antes de estilizar campos de formulário específicos:
 
-* [Seletores](https://www.w3schools.com/css/css_selectors.asp): os Seletores de CSS permitem direcionar elementos de HTML específicos para o estilo. Você pode usar seletores de elemento, seletores de classe ou seletores de ID.
+* [Seletores](https://www.w3schools.com/css/css_selectors.asp): os Seletores de CSS permitem direcionar elementos HTML específicos para o estilo. Você pode usar seletores de elemento, seletores de classe ou seletores de ID.
 * [Propriedades](https://www.w3schools.com/css/css_syntax.asp): as propriedades CSS definem a aparência visual dos elementos. As propriedades comuns para os campos de formulário de estilo incluem cor, cor de fundo, borda, preenchimento, margem e muito mais.
-* [Modelo de caixa](https://www.w3schools.com/css/css_boxmodel.asp): o modelo de caixa CSS descreve a estrutura dos elementos HTML como uma área de conteúdo cercada por preenchimento, bordas e margens.
+* [Modelo de caixa](https://www.w3schools.com/css/css_boxmodel.asp): o modelo de caixa CSS descreve a estrutura dos elementos do HTML como uma área de conteúdo cercada por preenchimento, bordas e margens.
 * Flexbox/Grade: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) e [Layouts de grade](https://www.w3schools.com/css/css_grid.asp) são ferramentas poderosas para criar designs responsivos e flexíveis.
 
 ## Criar um estilo de formulário para o bloco adaptável do Forms
 
-O bloco adaptável de Forms oferece uma estrutura de HTML padronizada, simplificando o processo de seleção e estilização dos componentes de formulário:
+O bloco Forms adaptável oferece uma estrutura HTML padronizada, simplificando o processo de seleção e estilo de componentes de formulário:
 
 * **Atualizar estilos padrão**: você pode modificar os estilos padrão de um formulário editando o `/blocks/form/form.css file`. Esse arquivo fornece um estilo abrangente para um formulário, compatível com formulários de assistente de várias etapas. Ela enfatiza o uso de variáveis CSS personalizadas para facilitar a personalização, a manutenção e o estilo uniforme em todos os formulários. Para obter instruções sobre como adicionar o Bloco Adaptive Forms ao seu projeto, consulte [criar um formulário](/help/edge/docs/forms/create-forms.md).
 
@@ -60,7 +60,7 @@ O bloco adaptável de Forms oferece uma estrutura de HTML padronizada, simplific
 
 * **Estilos de seletor universal:** o seletor `*` corresponde a cada elemento do formulário, garantindo que os estilos sejam aplicados a todos os componentes por padrão, incluindo a configuração da propriedade `box-sizing` como `border-box`.
 
-* **Estilo de formulário:** essa seção se concentra no estilo de componentes de formulário usando seletores para direcionar elementos de HTML específicos. Ele define estilos para campos de entrada, áreas de texto, caixas de seleção, botões de opção, entradas de arquivo, rótulos de formulário e descrições.
+* **Estilo de formulário:** essa seção se concentra no estilo de componentes de formulário usando seletores para direcionar elementos HTML específicos. Ele define estilos para campos de entrada, áreas de texto, caixas de seleção, botões de opção, entradas de arquivo, rótulos de formulário e descrições.
 
 * **Estilo do assistente (se aplicável):** esta seção é dedicada ao estilo do layout do assistente, um formulário de várias etapas no qual cada etapa é exibida, uma de cada vez. Ele define estilos para o contêiner do assistente, conjuntos de campos, legendas, botões de navegação e layouts responsivos.
 
@@ -71,13 +71,13 @@ O bloco adaptável de Forms oferece uma estrutura de HTML padronizada, simplific
 
 ## Estrutura de componentes
 
-O bloco adaptável de Forms oferece uma estrutura de HTML consistente para vários elementos de formulário, garantindo um estilo e gerenciamento mais fáceis. É possível manipular os componentes usando o CSS para fins de estilo.
+O bloco adaptável do Forms oferece uma estrutura consistente do HTML para vários elementos de formulário, garantindo um estilo e gerenciamento mais fáceis. É possível manipular os componentes usando o CSS para fins de estilo.
 
 ### Componentes gerais (exceto menus suspensos, grupos de rádio e grupos de caixas de seleção):
 
-Todos os campos de formulário, exceto os detalhamentos, grupos de rádio e grupos de caixas de seleção, têm a seguinte estrutura de HTML:
+Todos os campos de formulário, exceto os menus suspensos, grupos de opções e grupos de caixas de seleção, têm a seguinte estrutura HTML:
 
-+++ Estrutura HTML dos componentes gerais
++++ Estrutura HTML de componentes gerais
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -98,7 +98,7 @@ Todos os campos de formulário, exceto os detalhamentos, grupos de rádio e grup
 * Entrada: o elemento `input` define o tipo de dados a serem inseridos. Por exemplo, texto, número, email.
 * Descrição (Opcional): O `div` com classe `field-description` fornece informações ou instruções adicionais para o usuário.
 
-**Exemplo de estrutura de HTML**
+**Exemplo de estrutura HTML**
 
 ```HTML
 <div class="text-wrapper field-first-name field-wrapper" data-required="true">
@@ -173,7 +173,7 @@ Para menus suspensos, o elemento `select` é usado em vez de um elemento `input`
 
 
 
-+++ Estrutura de HTML do componente suspenso
++++ Estrutura HTML do componente suspenso
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={required}>
@@ -185,7 +185,7 @@ Para menus suspensos, o elemento `select` é usado em vez de um elemento `input`
 </div>
 ```
 
-**Exemplo de estrutura de HTML**
+**Exemplo de estrutura do HTML**
 
 ```HTML
 <div class="drop-down-wrapper field-country field-wrapper" data-required="true">
@@ -262,7 +262,7 @@ O CSS a seguir lista alguns exemplos de Seletores de CSS para componentes suspen
 
 ### Grupos de opções
 
-Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estrutura de HTML e estrutura CSS:
+Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estrutura HTML e estrutura CSS:
 
 +++ Estrutura HTML do grupo de rádio
 
@@ -278,7 +278,7 @@ Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estr
 </fieldset>
 ```
 
-#### Exemplo de estrutura de HTML
+#### Exemplo de estrutura do HTML
 
 ```HTML
 <fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
@@ -336,7 +336,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 
 ### Grupos de caixas de seleção
 
-+++ Estrutura de HTML do grupo de caixas de seleção
++++ Estrutura HTML do grupo de caixas de seleção
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
@@ -350,7 +350,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 </fieldset>
 ```
 
-#### Exemplo de estrutura de HTML
+#### Exemplo de estrutura do HTML
 
 ```HTML
 <fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
@@ -462,7 +462,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 
 ### Componentes de painel/contêiner
 
-+++ Estrutura de HTML dos componentes do painel/contêiner
++++ Estrutura HTML dos componentes do painel/contêiner
 
 ```HTML
 <fieldset class="panel-wrapper field-{PanelName} field-wrapper">
@@ -477,7 +477,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 </fieldset>
 ```
 
-**Exemplo de estrutura de HTML**
+**Exemplo de estrutura do HTML**
 
 ```HTML
 <fieldset class="panel-wrapper field-login field-wrapper">
@@ -572,7 +572,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 
 ### Painel repetível
 
-+++ Estrutura de HTML de um painel repetível
++++ Estrutura HTML de um painel repetível
 
 ```HTML
 <fieldset class="panel-wrapper field-{PanelName} field-wrapper">
@@ -586,7 +586,7 @@ Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapp
 </fieldset>
 ```
 
-**Exemplo de estrutura de HTML**
+**Exemplo de estrutura do HTML**
 
 ```HTML
 <fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
@@ -678,7 +678,7 @@ Este seletor estimula todos os invólucros de campo em um painel repetível, man
 
 ### Anexo de arquivo
 
-+++ Estrutura de HTML para anexo de arquivo
++++ Estrutura do HTML para anexo de arquivo
 
 ```HTML
 <div class="file-wrapper field-{FileName} field-wrapper">
@@ -699,7 +699,7 @@ Este seletor estimula todos os invólucros de campo em um painel repetível, man
 </div>
 ```
 
-**Exemplo de estrutura de HTML**
+**Exemplo de estrutura do HTML**
 
 
 ```HTML
@@ -800,7 +800,7 @@ Você pode estilizar campos de formulário com base em seu tipo específico (`{T
 
 Você pode usar os Seletores de CSS para direcionar tipos de campo específicos e aplicar estilos de forma consistente.
 
-+++ Estrutura HTML
++++ Estrutura do HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -812,7 +812,7 @@ Você pode usar os Seletores de CSS para direcionar tipos de campo específicos 
 </div>
 ```
 
-**Exemplo de estrutura de HTML**
+**Exemplo de estrutura do HTML**
 
 ```HTML
 <div class="text-wrapper field-name field-wrapper" data-required="true">
@@ -863,7 +863,7 @@ Você pode usar os Seletores de CSS para direcionar tipos de campo específicos 
 
 Você também pode direcionar campos individuais por nome para aplicar estilos exclusivos.
 
-+++ Estrutura HTML
++++ Estrutura do HTML
 
 ```HTML
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
@@ -875,7 +875,7 @@ Você também pode direcionar campos individuais por nome para aplicar estilos e
 </div>
 ```
 
-**Exemplo de estrutura de HTML**
+**Exemplo de estrutura do HTML**
 
 ```HTML
 <div class="number-wrapper field-otp field-wrapper" data-required="true">
@@ -899,7 +899,7 @@ Você também pode direcionar campos individuais por nome para aplicar estilos e
 
 
 
-Este CSS destina-se a todos os elementos de entrada localizados em um elemento que tem a classe `field-otp`. A estrutura de HTML do seu formulário segue as convenções do Bloco de Forms adaptável, isso implica que há um container marcado com a classe &quot;field-otp&quot; que contém o campo com o nome &quot;otp&quot;.
+Este CSS destina-se a todos os elementos de entrada localizados em um elemento que tem a classe `field-otp`. A estrutura do HTML do seu formulário segue as convenções do Bloco de Forms adaptável, isso implica que há um container marcado com a classe &quot;field-otp&quot; que contém o campo com o nome &quot;otp&quot;.
 
 +++
 
