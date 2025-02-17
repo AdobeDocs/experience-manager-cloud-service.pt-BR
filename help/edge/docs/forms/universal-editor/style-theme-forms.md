@@ -6,9 +6,9 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d09dce45efb7d8d881420cf724de493837b6ae71
+source-git-commit: 3b901af3283263e7ded0424e8557130ee49fa4cc
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1844'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ Entender os [conceitos CSS fundamentais](https://www.w3schools.com/css/css_intro
 * [Propriedades](https://www.w3schools.com/css/css_syntax.asp): as propriedades CSS definem a aparência visual dos elementos. As propriedades comuns para os campos de formulário de estilo incluem cor, cor de fundo, borda, preenchimento, margem e muito mais.
 * [Modelo de caixa](https://www.w3schools.com/css/css_boxmodel.asp): o modelo de caixa CSS descreve a estrutura dos elementos do HTML como uma área de conteúdo cercada por preenchimento, bordas e margens.
 * Flexbox/Grade: CSS [Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) e [Layouts de grade](https://www.w3schools.com/css/css_grid.asp) são ferramentas poderosas para criar designs responsivos e flexíveis.
+
 
 ## Criar um estilo de formulário para o bloco adaptável do Forms
 
@@ -96,7 +97,7 @@ Todos os campos de formulário, exceto os menus suspensos, grupos de opções e 
 * Entrada: o elemento `input` define o tipo de dados a serem inseridos. Por exemplo, texto, número, email.
 * Descrição (Opcional): O `div` com classe `field-description` fornece informações ou instruções adicionais para o usuário.
 
-**Exemplo de estrutura do HTML**
+**Exemplo de estrutura HTML**
 
 ```HTML
 <div class="text-wrapper field-first-name field-wrapper" data-required="true">
