@@ -5,10 +5,10 @@ exl-id: aee34469-37c2-4571-806b-06c439a7524a
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 73b1a318325e7641ee0fd7a76a3a73a7299c8b91
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 69%
+source-wordcount: '591'
+ht-degree: 61%
 
 ---
 
@@ -16,6 +16,16 @@ ht-degree: 69%
 # Publicação de conteúdo com o Editor universal {#publishing}
 
 Saiba como o Editor universal publica conteúdo e como seus aplicativos podem lidar com o conteúdo publicado.
+
+## Publicação de conteúdo como autor {#publishing-content}
+
+Quando você, como autor de conteúdo, estiver pronto para publicar seu conteúdo, basta tocar ou clicar no [ícone **Publicar** na barra de ferramentas do Editor Universal.](/help/sites-cloud/authoring/universal-editor/navigation.md#publish)
+
+Você também pode publicar [no console Sites](/help/sites-cloud/authoring/sites-console/publishing-pages.md), que pode ser útil quando desejar publicar várias páginas de conteúdo.
+
+>[!NOTE]
+>
+>O Editor Universal oferece suporte a [extensões e extensibilidade da interface do usuário](/help/implementing/universal-editor/extending.md) para permitir que os fluxos de trabalho ofereçam suporte ao seu processo de publicação.
 
 ## Semelhanças com o AEM {#similarities}
 

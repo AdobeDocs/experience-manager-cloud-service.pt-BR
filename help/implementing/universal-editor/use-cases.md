@@ -4,9 +4,9 @@ description: Saiba mais sobre os principais casos de uso do Universal Editor e c
 exl-id: 398ad0e2-c299-4c49-9784-05c84c67bec2
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -29,20 +29,20 @@ Este documento explica esses dois casos de uso em detalhes e mostra como você p
 
 O Universal Editor apresenta um editor visual conveniente e intuitivo para seus autores de conteúdo, independentemente do tipo de conteúdo que eles estejam criando. Os dois principais casos de uso são:
 
-* [Criação no WYSIWYG](#wysiwyg-authoring) - Use o console do AEM Sites para gerenciar seu conteúdo e criar páginas no AEM usando o Universal Editor
+* [Criação no WYSIWYG](#wysiwyg-authoring) - Use o console do AEM Sites para gerenciar o conteúdo e criar páginas no AEM usando o Universal Editor
 * [Criação headless](#headless-authoring) - crie conteúdo em seu próprio aplicativo headless personalizado usando o editor universal.
 
 ### Criação no WYSIWYG {#wysiwyg-authoring}
 
-Se você já estiver familiarizado com o AEM, poderá usar o console Sites para criar e gerenciar suas páginas e editá-las com o Universal Editor.
+Se já estiver familiarizado com o AEM, poderá usar o console Sites para criar e gerenciar suas páginas e editá-las com o Universal Editor.
 
 Dessa forma, você pode se beneficiar das ferramentas disponíveis no console Sites, como gerenciamento de página (copiar, colar, mover) e fluxos de trabalho, mas também se beneficiar do editor universal moderno.
 
-Se este for seu caso de uso, como uma próxima etapa imediata, consulte os documentos a seguir para obter uma visão geral completa de como começar a usar o Editor universal no AEM.
+Se este for seu caso de uso, como uma próxima etapa imediata, consulte os documentos a seguir para obter uma visão geral completa de como começar a usar o Universal Editor no AEM.
 
-1. [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Introdução ao seu primeiro projeto do Universal Editor no AEM
+1. [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) - Introdução ao primeiro projeto do Universal Editor no AEM
 1. [Criação de Blocos Instrumentados para uso com o Editor Universal](/help/edge/wysiwyg-authoring/create-block.md) - Saiba como instrumentar blocos para tornar seu conteúdo editável no Editor Universal
-1. [Modelagem de conteúdo para criação no WYSIWYG com projetos do Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) - Saiba mais sobre os detalhes de como os blocos são estruturados para modelar efetivamente seu conteúdo para uso com o Universal Editor.
+1. [Modelagem de conteúdo para criação no WYSIWYG com Projetos do Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md) - Saiba mais sobre os detalhes de como os blocos são estruturados para modelar efetivamente seu conteúdo para uso com o Editor Universal.
 
 Depois de ler esses documentos, você pode retornar a esta página para saber mais sobre o caso de uso de criação headless e como o Universal Editor funciona em geral.
 
@@ -81,4 +81,5 @@ Para que uma página ou aplicativo seja editável pelo Editor universal, ele dev
 
 O editor universal também pode ser adaptado às necessidades do projeto.
 
-* [Personalizando a Experiência de Criação do Editor Universal](/help/implementing/universal-editor/customizing.md) - A experiência do Editor Universal pode ser adaptada filtrando vários aspectos do editor ou estendendo a funcionalidade do editor.
+* [Personalizando o Editor Universal](/help/implementing/universal-editor/customizing.md) - A experiência do Editor Universal pode ser adaptada filtrando vários aspectos do editor ou estendendo a funcionalidade do editor.
+* [Extensão do Editor Universal](/help/implementing/universal-editor/extending.md) - A interface do usuário do Editor Universal pode ser estendida para expandir seus recursos para atender às necessidades do projeto.
