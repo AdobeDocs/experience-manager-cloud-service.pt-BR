@@ -1,13 +1,13 @@
 ---
 title: Como publicar ou desfazer a publicação de formulários em instâncias de pré-visualização ou publicação?
-description: Saiba como publicar ou desfazer a publicação de formulários do ambiente do autor do AEM para visualizar ou publicar instâncias. Se você estiver testando seus formulários em um ambiente de preparo ou implantando-os em tempo real para usuários finais, o AEM fornece ferramentas simplificadas para gerenciar esse processo com eficiência.
+description: Saiba como publicar ou desfazer a publicação de formulários do ambiente de criação do AEM para visualizar ou publicar instâncias. Quer você esteja testando seus formulários em um ambiente de preparo ou implantando-os em tempo real para usuários finais, a AEM fornece ferramentas simplificadas para gerenciar esse processo com eficiência.
 Keywords: Manage publication, Forms Manage publication, AF Manage publication, Adaptive Forms Manage publication, Cloud Manage publication
 feature: Adaptive Forms
 feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 exl-id: 6ade40f1-bad5-4f5e-aa0e-84b7c6a82e02
-source-git-commit: 64f4e62201c590e5da2f3b1f7e570a018dc8135c
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 1%
@@ -19,32 +19,32 @@ ht-degree: 1%
 Como administrador do Adobe Experience Manager (AEM) Forms, você pode publicar formulários da sua instância de autor no Experience Manager Forms. Você também tem a opção de agendar a publicação de um formulário ou pasta para uma data ou hora posterior. Após a publicação, os usuários podem acessar e preencher os formulários.
 
 No Experience Manager Forms, você pode publicar um formulário usando um dos seguintes métodos:
-* [Opção do Publish](#publish-forms-using-the-publish-option)
+* [Opção Publicar](#publish-forms-using-the-publish-option)
 * [Opção Gerenciar publicação](#publish-forms-using-the-manage-publication-option)
 
 ## Itens a serem considerados
 
 * Somente membros do grupo `forms-users` podem usar a opção **Gerenciar Publicação** para publicar os formulários.
-* As alterações feitas em formulários ou pastas no Experience Manager Forms não aparecem na instância do **Publish** até serem republicadas. Isso garante que atualizações de trabalho em andamento permaneçam indisponíveis na instância do **Publish**. Somente as alterações publicadas explicitamente por um administrador são refletidas na instância **Publish**.
+* As alterações feitas em formulários ou pastas no Experience Manager Forms não aparecem na instância **Publish** até serem republicadas. Isso garante que atualizações de trabalho em andamento permaneçam indisponíveis na instância **Publicar**. Somente as alterações publicadas explicitamente por um administrador são refletidas na instância **Publicar**.
 
-## Formulários Publish usando a opção Publish
+## Publicar formulários usando a opção Publicar
 
-A opção **Publish** permite publicar um formulário imediatamente. Para publicar um Formulário Experience Manager usando o botão **Publish** na barra de ferramentas. Para publicar formulários usando a opção Publish são:
+A opção **Publicar** permite publicar um formulário imediatamente. Para publicar um Formulário do Experience Manager usando o botão **Publicar** na barra de ferramentas. Para publicar formulários usando a opção Publicar, são:
 
 1. No console Experience Manager Forms, navegue até a pasta principal e selecione um formulário que deseja publicar.
-1. Clique na opção **Publish** da barra de ferramentas e veja todos os ativos de referência que serão publicados com o formulário.
+1. Clique na opção **Publicar** da barra de ferramentas e veja todos os ativos de referência que seriam publicados com o formulário.
 1. Clique em **[!UICONTROL Publicar]**.
 
-   ![Publish e Cancelar publicação do formulário](/help/edge/docs/forms/assets/publish-form-option.png)
+   ![Publicar e desfazer a publicação do formulário](/help/edge/docs/forms/assets/publish-form-option.png)
 
    Depois que o formulário e seus ativos relacionados forem publicados com êxito, uma caixa de diálogo **Êxito** será exibida.
 1. Clique em **Fechar**.
 
-   ![Caixa de diálogo de sucesso](/help/forms/assets/publish-success.png)
+   ![Caixa de diálogo de sucesso](/help/forms/assets/publish-success1.png)
 
 ### Cancelar publicação do formulário
 
-Depois de publicar o formulário com êxito usando a opção **Publish** e seus ativos relacionados, você pode até desfazer a publicação usando o botão **[!UICONTROL Cancelar publicação]** disponível na barra de ferramentas. Para desfazer a publicação do formulário:
+Depois de publicar o formulário com êxito usando a opção **Publicar** e seus ativos relacionados, você pode até mesmo desfazer a publicação usando o botão **[!UICONTROL Cancelar publicação]** disponível na barra de ferramentas. Para desfazer a publicação do formulário:
 
 1. Para desfazer a publicação do formulário e de seus ativos relacionados, selecione o formulário e clique em **[!UICONTROL Desfazer publicação]** na barra de ferramentas
 
@@ -58,7 +58,7 @@ Depois de publicar o formulário com êxito usando a opção **Publish** e seus 
 
    ![cancelamento de publicação bem-sucedido](/help/forms/assets/unpublishing-start.png)
 
-## Formulários Publish usando a opção Gerenciar publicação
+## Publicar formulários usando a opção Gerenciar publicação
 
 Gerenciar publicação permite publicar ou desfazer a publicação de conteúdo de e para o destino selecionado, adicionar conteúdo à lista de publicação em toda a pasta `forms&documents`, selecionar referências para publicar e agendar publicações para uma data ou hora posterior.  Para publicar formulários usando a opção **Gerenciar Publicação** são:
 
@@ -75,23 +75,23 @@ Gerenciar publicação permite publicar ou desfazer a publicação de conteúdo 
 
    * **Ações**
 
-      * **Publish**: formulários do Publish para o destino selecionado
+      * **Publicar**: publicar formulários no destino selecionado
       * **Cancelar publicação**: cancelar a publicação de formulários do destino
 
    * **Destino**
 
-      * **Publish**: o Publish se forma com a instância do Publish do Experience Manager Forms (AEM).
-      * **Visualização**: formulários do Publish para a instância de Visualização do Experience Manager Forms (AEM).
+      * **Publicar**: publicar formulários na instância de publicação do Experience Manager Forms (AEM).
+      * **Visualizar**: publicar formulários na instância de Visualização do Experience Manager Forms (AEM).
 
    * **Programação**
 
-      * **Agora**: formulários do Publish imediatamente
-      * **Mais tarde**: formulários do Publish baseados em **Data de ativação** ou hora
+      * **Agora**: publicar formulários imediatamente
+      * **Mais tarde**: publicar formulários com base na **Data de ativação** ou na hora
 
 1. Clique em **Avançar** para continuar.
 1. (Opcional) Na guia **Escopo**, use a opção [Adicionar conteúdo](#add-content) para adicionar mais conteúdo para publicação. Por exemplo, você pode adicionar mais arquivos Forms ou Documento de registro.
    ![guia de escopo](/help/forms/assets/scope-tab.png)
-1. Clique em **[!UICONTROL Publish]** para publicar os formulários e os ativos relacionados, e a mensagem de êxito será exibida.
+1. Clique em **[!UICONTROL Publicar]** para publicar os formulários e os ativos relacionados e a mensagem de êxito será exibida.
    ![publicar mensagem com êxito](/help/forms/assets/publish-successful.png)
 
 ### Adicionar conteúdo
@@ -143,7 +143,7 @@ By default, publishing a folder to Experience Manager Forms publishes all the as
         * -->
 
 
-### Publish ou cancele a publicação de um formulário mais tarde
+### Publicar ou desfazer a publicação de um formulário mais tarde
 
 Além de permitir a publicação ou o cancelamento da publicação de formulários em uma data e hora posteriores, a opção publicar ou desfazer a publicação mais tarde também permite configurar um fluxo de trabalho. Os formulários são publicados ou não após a conclusão do fluxo de trabalho.
 
@@ -154,10 +154,10 @@ Para agendar um formulário para publicação ou cancelamento da publicação:
 
    ![Gerenciar publicação](/help/forms/assets/manage-publication.png)
 
-1. Clique em **Publish** ou **Cancelar publicação** de **[!UICONTROL Ação]**.
+1. Clique em **Publicar** ou **Cancelar publicação** da **[!UICONTROL Ação]**.
 1. Selecione o **[!UICONTROL Destino]** onde deseja publicar ou cancelar a publicação do conteúdo.
    * **Visualizar**: use a opção **Visualizar** para publicar ou desfazer a publicação em um ambiente de visualização do Experience Manager Forms. Os ambientes de visualização do Experience Manager Forms são usados para testar em formulários de desenvolvimento.
-   * **Publish**: use a opção **Publish** do Experience Manager Forms para enviar o formulário ao ambiente de publicação do Experience Manager Forms depois que ele estiver pronto para uso em um ambiente de produção.
+   * **Publicar**: use a opção **Publicar** do Experience Manager Forms para enviar o formulário para o ambiente de publicação do Experience Manager Forms depois que ele estiver pronto para uso em um ambiente de produção.
 
 1. Selecione **[!UICONTROL Depois]** em **Agendando**.
 
@@ -169,7 +169,7 @@ Para agendar um formulário para publicação ou cancelamento da publicação:
    ![Gerenciar publicação para adicionar conteúdo mais tarde](/help/forms/assets/publish-later-add-content.png)
 1. Clique em **[!UICONTROL Avançar]**.
 1. Na guia **Fluxos de Trabalho**, especifique um **[!UICONTROL título de Fluxo de Trabalho]**.
-1. Clique em **[!UICONTROL Publish Depois]**.
+1. Clique em **[!UICONTROL Publicar Mais Tarde]**.
 
    ![Gerenciar Fluxo de Trabalho de Publicação](/help/forms/assets/manage-publication-workflows.png)
 

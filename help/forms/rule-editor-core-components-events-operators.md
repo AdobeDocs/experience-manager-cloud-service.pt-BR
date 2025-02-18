@@ -1,13 +1,13 @@
 ---
-title: Quais são os vários tipos de operadores e eventos disponíveis no editor de regras de um formulário adaptável com base nos componentes principais?
-description: O editor de regras do Forms adaptável é compatível com vários tipos de operadores e eventos.
+title: Quais são os vários tipos e eventos de operadores disponíveis em regra editor de um formulário adaptável com base nos componentes principais?
+description: A Forms adaptável regra editor oferece suporte a vários tipos e eventos de operadores.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: 7acbf2099a2b47b5f42885e8f9a9e1727a8112b5
+source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2171'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ No AEM Forms as a Cloud, o editor de regras inclui vários tipos de operadores e
 
 Os tipos de operador disponíveis no editor de regras de um Formulário adaptável fornecem uma estrutura robusta para a construção de condições precisas. Eles permitem manipular dados, realizar cálculos e combinar várias condições de maneira lógica e coerente. Independentemente de você estar comparando valores, executando operações aritméticas ou manipulando strings, esses operadores garantem que suas regras sejam flexíveis e poderosas.
 
-Os eventos no editor de regras atuam como acionadores que ativam as regras. Eles definem as ações específicas que ocorrem quando determinadas condições são atendidas. Aproveitando diferentes tipos de eventos, você pode automatizar respostas para uma grande variedade de cenários, por exemplo, interações de usuário, horários agendados, alterações nos dados e estados do sistema. Com a capacidade de especificar esses acionadores, você pode criar regras dinâmicas e responsivas que atendam aos seus requisitos específicos.
+Os eventos no editor de regras atuam como acionadores que ativam as regras. Elas definem as ações específicas que ocorrem quando determinadas condições são atendidas. Ao aproveitar diferentes tipos de eventos, é possível automatizar as respostas a uma ampla gama de cenários, por exemplo, usuário interações, horários agendados, alterações nos dados e estados do sistema. Com a capacidade de especificar esses acionadores, você pode criar regras dinâmicas e responsivo que atendam a seus requisitos específicos.
 
 Ao entender e usar os tipos de operadores e eventos disponíveis, é possível explorar todo o potencial do editor de regras, o que permite criar regras eficientes e eficazes que atendam às suas necessidades exclusivas e melhorem a funcionalidade geral do sistema.
 
@@ -63,11 +63,13 @@ Em palavras simples, uma regra When típica é estruturada da seguinte maneira:
 `Then, do the following:`
 
 `Action 2 on Object B;`
-`AND`&#39;Ação 3 no Objeto C;
+`AND`
+&quot;Ação 3 sobre o objeto C;
 
 `Else, do the following:`
 
-`Action 2 on Object C;`_
+`Action 2 on Object C;`
+_
 
 Quando você tem um componente de vários valores, como botões de opção ou lista, ao criar uma regra para esse componente, as opções são automaticamente recuperadas e disponibilizadas para o criador da regra. Não é necessário digitar os valores da opção novamente.
 
@@ -75,27 +77,27 @@ Por exemplo, uma lista tem quatro opções: Vermelho, Azul, Verde e Amarelo. Ao 
 
 ![Opções de exibição de vários valores](assets/multivaluefcdisplaysoptions.png)
 
-Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Limpar Valor de ação limpa o valor do objeto especificado. Ter a opção Limpar Valor como opção na declaração Quando permite criar condições complexas com vários campos. É possível adicionar a declaração Restante para adicionar outras condições
+Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Limpar valor da ação limpa o valor do objeto especificado. Ter o valor claro de como uma opção na instrução When permite criar condições complexas com vários campos. Você pode adicionar a instrução Else para adicionar outras condições
 
 ![Limpar valor de](assets/clearvalueof.png)
 
 >[!NOTE]
 >
-> Quando o tipo de regra suporta apenas declarações de nível único e outras.
+> Quando o tipo de regra suporta apenas instruções then-else de nível único.
 
 ##### Vários campos permitidos em [!UICONTROL Quando] {#allowed-multiple-fields}
 
-Na condição **When**, você tem a opção de adicionar outros campos além do campo ao qual a regra é aplicada.
+Na condição **Quando** , você tem a opção de adicionar outros campos além do campo ao qual a regra é aplicada.
 
-Por exemplo, usando o tipo de regra Quando, é possível avaliar uma condição em diferentes objetos de formulário e executar a ação:
+Por exemplo, ao usar o tipo Quando regra, é possível avaliar uma condição em diferentes objetos de formulário e executar a ação:
 
 Quando:
 
-(Objeto A Condição 1)
+(Objeto Uma Condição 1)
 
 E/OU
 
-(Condão do objeto B 2)
+(Condição do objeto B 2)
 
 Em seguida, faça o seguinte:
 
@@ -109,7 +111,7 @@ _
 
 * Verifique se o componente principal [está definido como versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar este recurso no editor de regras.
 * Se as regras forem aplicadas a campos diferentes na condição When, a regra será acionada mesmo se apenas um desses campos for alterado.
-
+* Você só pode adicionar vários campos na condição **When** para uma regra **AND**. Não é possível para uma regra **OR**.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -128,12 +130,12 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
    * value: deps
 1. Click **[!UICONTROL Done]**. -->
 
-Se os vários campos permitidos no recurso Quando a condição encontrarem problemas, seguir etapas de solução de problemas como:
+Se os vários campos permitidos no recurso Quando condição encontrarem problemas, siga as etapas de solução de problemas como:
 
 1. Abra o formulário no modo de edição.
 1. Abra a navegador conteúdo e selecione o **[!UICONTROL componente Contêiner]** de guia do formulário adaptável.
-1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
-1. Clique em Concluído e salve a caixa de diálogo novamente.
+1. Clique no ícone propriedades do Guia do Guia de propriedades ![](/help/forms/assets/configure-icon.svg) do Guia. A caixa de diálogo Contêiner de formulário adaptável é aberta.
+1. Clique Concluído e salve a caixa de diálogo novamente.
 
 **[!UICONTROL Ocultar]** oculta o objeto especificado.
 
@@ -143,7 +145,7 @@ Se os vários campos permitidos no recurso Quando a condição encontrarem probl
 
 **[!UICONTROL Desabilitar]** Desabilita o objeto especificado.
 
-**[!UICONTROL Chamar serviço]** Chama um serviço configurado em um modelo de dados de formulário (FDM). Quando você escolhe a operação Chamar Serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) na instância [!DNL Experience Manager]. Ao escolher um serviço de modelo de dados de formulário, mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada para o serviço especificado. Você pode mapear os parâmetros de saída por meio da opção de carga útil do evento para o serviço especificado. Você também pode criar regras para lidar com respostas de sucesso e falha da operação Chamar serviço usando o editor de regras.
+**[!UICONTROL Chamar serviço]** Chama um serviço configurado em um modelo de dados de formulário (FDM). Quando você escolhe a operação Chamar Serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) no instância [!DNL Experience Manager] . Ao escolher um serviço de Modelo de dados de formulário, mais campos aparecem onde é possível mapear objetos de formulário com parâmetros de entrada para o serviço especificado. É possível mapear os parâmetros de saída por meio da opção de carga evento para o serviço especificado. Você também pode criar regras para lidar com respostas de sucesso e falha da operação Chamar serviço usando o editor de regras.
 
 >[!NOTE]
 >
@@ -174,7 +176,7 @@ O tipo de regra **[!UICONTROL Definir Propriedade]** permite que você defina o 
 * enumNames (Cadeia de caracteres[])
 * chartType (String)
 
-Por exemplo, permite que você defina regras para mostrar a caixa de texto quando um botão é clicado. Você pode usar uma função personalizada, um objeto de formulário, um propriedade de objeto ou uma saída de serviço para definir um regra.
+Por exemplo, permite definir regras para mostrar a caixa de texto quando um botão é clicado. Você pode usar uma função personalizada, um objeto de formulário, uma propriedade de objeto ou uma saída de serviço para definir uma regra.
 
 ![Definir Propriedade](assets/set_property_rule_new.png)
 
@@ -204,13 +206,13 @@ A figura a seguir representa um exemplo de ativação dinâmica da caixa de sele
 
 **[!UICONTROL Saída de Função]** Define uma regra baseada em funções predefinidas ou funções personalizadas.
 
-**[!UICONTROL Navegue até]** outras Forms adaptativas, outras ativos como imagens ou fragmentos documento ou um URL externo. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL Navegue até]** Navegue até outro Forms adaptável, outros ativos, como imagens ou fragmentos de documentos, ou uma URL externa. <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
-**[!UICONTROL O evento dispatch]** aciona as ações ou comportamentos específicos com base em condições ou eventos predefinidos.
+**[!UICONTROL Evento de expedição]** aciona as ações ou comportamentos específicos com base em condições ou eventos predefinidos.
 
-#### [!UICONTROL Definir Valor de] {#set-value-of}
+#### [!UICONTROL Definir valor de] {#set-value-of}
 
-A **[!UICONTROL Valor Definir de]** regra tipo permite definir o valor de um objeto de formulário, dependendo se a condição especificada está ou não atendida. O valor pode ser definido como um valor de outro objeto, uma string literal, um valor derivado de uma expressão matemática ou uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de Modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
+O tipo de regra **[!UICONTROL Definir Valor de]** permite que você defina o valor de um objeto de formulário, dependendo se a condição especificada é atendida ou não. O valor pode ser definido como um valor de outro objeto, uma sequência literal, um valor derivado de uma expressão matemática ou de uma função, um valor de uma propriedade de outro objeto ou a saída de um serviço de modelo de dados de formulário. Da mesma forma, você pode verificar uma condição em um componente, string, propriedade ou valores derivados de uma função ou expressão matemática.
 
 O tipo de regra **Definir Valor de** não está disponível para todos os objetos de formulário, como painéis e botões da barra de ferramentas. Uma regra padrão Definir valor de tem a seguinte estrutura:
 
@@ -228,9 +230,9 @@ Quando (opcional):
 
 O exemplo a seguir seleciona o valor de `Question2` como `True` e define o valor de `Result` como `correct`.
 
-![Serviço-Web-valor-definição](assets/set-value-web-service.png)
+![Definir valor-serviço da Web](assets/set-value-web-service.png)
 
-Exemplo de regra Definir valor usando o serviço de Modelo de dados de formulário.
+Exemplo de Definir Valor regra usando o serviço de modelo de dados de formulário.
 
 #### [!UICONTROL Programa] {#show}
 
@@ -250,9 +252,9 @@ Uma regra típica de exibição está estruturada da seguinte maneira:
 
 #### [!UICONTROL Ocultar] {#hide}
 
-Semelhante ao tipo de regra Mostrar, você pode usar o tipo de regra **[!UICONTROL Ocultar]** para mostrar ou ocultar um objeto de formulário com base no fato de uma condição ser atendida ou não. O tipo de regra Ocultar também aciona a ação Mostrar caso a condição não seja atendida ou retorne `False`.
+Semelhante ao tipo de regra Mostrar, você pode usar o tipo de regra **[!UICONTROL Ocultar]** para mostrar ou ocultar um objeto de formulário com base no fato de uma condição ser atendida ou não. O tipo Ocultar regra também aciona a ação Exibir caso a condição não esteja satisfeita ou retorne `False`.
 
-Uma regra típica de Ocultar está estruturada da seguinte maneira:
+Um regra Ocultar típico está estruturado da seguinte maneira:
 
 `Hide Object A;`
 
@@ -342,7 +344,7 @@ Para obter mais detalhes sobre como criar uma regra para navegar em um painel, [
 
 #### [!UICONTROL Chamada de função assíncrona]
 
-<span class="preview"> Este é um recurso de pré-lançamento acessível através do nosso [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
+<span class="preview"> É um recurso de pré-lançamento acessível através do nosso [canal de pré-lançamento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features). </span>
 
 O tipo de regra **[!UICONTROL Chamada de função assíncrona]** permite que você execute funções assíncronas. Ela permite iniciar uma chamada de função que opera independentemente do thread de execução principal, permitindo que outros processos continuem em execução sem esperar a conclusão da função assíncrona.
 
