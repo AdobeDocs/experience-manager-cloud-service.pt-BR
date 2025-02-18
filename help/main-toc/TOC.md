@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
+source-git-commit: 693576c9da99d3cc74b7cec8a7c7ea08120ae5bb
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6092'
 ht-degree: 69%
 
 ---
@@ -782,6 +782,7 @@ ht-degree: 69%
             + [Criar ação de envio personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
             + [Conversão de Forms adaptável com base em componentes de base em formulários baseados em Componentes principais usando a ferramenta utilitário de migração](/help/forms/migration-utility-tool-for-af-core-components.md)
             + [Modelos de email no Adaptive Forms](/help/forms/html-email-templates-in-adaptive-forms.md)
+            + [&#x200B;Gerenciar publicação no Experience Manager Forms](/help/forms/manage-publication.md)
             + Introdução ao Editor de Regras para Forms Adaptável com base nos Componentes Principais{#rule-editor-core-components}
                + [Introdução ao Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components.md)
                + [Interface do usuário do Editor de regras para o Forms adaptável com base nos Componentes principais](/help/forms/rule-editor-core-components-user-interface.md)
