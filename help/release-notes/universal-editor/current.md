@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2054.01.16
-description: Estas são as notas de versão do Universal Editor de 2025.01.16.
+title: Notas de versão do Universal Editor 2025.02.17
+description: Estas são as notas de versão do Universal Editor de 2025.02.17.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: af04ad7e3f89247580c48c276cb371d78ac56a49
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.01.16 {#release-notes}
+# Notas de versão do Universal Editor 2025.02.17 {#release-notes}
 
-Estas são as notas de versão da versão de 16 de janeiro de 2025 do Editor universal.
+Estas são as notas de versão da versão de 17 de fevereiro de 2025 do Universal Editor.
 
 >[!TIP]
 >
@@ -22,15 +22,14 @@ Estas são as notas de versão da versão de 16 de janeiro de 2025 do Editor uni
 
 ## Novidades {#what-is-new}
 
-* **Substituição da Biblioteca CORS &lt; 3.0.0** - Para garantir compatibilidade futura e aprimorar a segurança, o Editor Universal agora oferece suporte exclusivo à versão 3.0.0 ou superior do
-  Biblioteca `@Adobe Express/universal-editor-cors`.
-   * A biblioteca agora é entregue exclusivamente via [`universal-editor-service.adobe.io/cors.js`](http://universal-editor-service.adobe.io/cors.js).
-   * Uma notificação de descontinuação é exibida para os usuários ao abrir uma página que usa versões mais antigas da biblioteca CORS, solicitando que eles atualizem.
-* **Ponto de Extensão para Página de Aterrissagem** - [Um novo ponto de extensão](/help/implementing/universal-editor/customizing.md#extending) foi introduzido para que as extensões apareçam no painel lateral da página de aterrissagem do Editor Universal.
-   * Agora os desenvolvedores podem especificar se as extensões são aplicáveis ao editor, à landing page ou a ambos, oferecendo maior personalização e usabilidade.
+* **Publicar para visualização** - Ao publicar (ou desfazer a publicação) seu conteúdo usando o Universal Editor, agora é possível escolher se deseja publicar no ambiente de visualização, além do ambiente de publicação
+   * Isso permite a análise do seu conteúdo antes da publicação pública.
+* **Modelo e filtro podem ser definidos na definição de componente** - Agora é possível definir qual modelo e filtro um componente usa na definição de componente.
+   * Essas informações podem ser mantidas centralmente na definição e não precisam ser especificadas na instrumentação.
+   * Isso permite mover componentes entre contêineres.
+* **Elementos filho de contêineres são considerados implicitamente componentes** - Se um item com `data-aue-resource` for colocado como filho direto em um contêiner, ele será considerado um componente e poderá ser movido sem a necessidade de especificar `data-aue-behavior="component"`.
 
 ## Outras melhorias {#other-improvements}
 
-* **Correção de URLs inválidas em Itens recentes na página de aterrissagem** - Um problema foi resolvido em que as URLs exibidas na lista &quot;Recentes&quot; na página de aterrissagem do Editor Universal eram corrompidas.
-* **Sincronização de Tema no Unified Shell** - O Editor Universal agora sincroniza dinamicamente o tema com as configurações do Unified Shell do sistema e ajusta automaticamente entre os modos claro e escuro.
-   * Isso garante uma aparência visual consistente nos microfront-ends, incluindo seletores de fragmentos e ativos.
+* **Seletor de ativos do AEM 6.5** - O seletor de ativos do 6.5 agora é aberto corretamente ao executar o Universal Editor com o AEM 6.5.
+
