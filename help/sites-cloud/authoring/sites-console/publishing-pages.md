@@ -5,10 +5,10 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
 workflow-type: tm+mt
-source-wordcount: '1936'
-ht-degree: 81%
+source-wordcount: '1926'
+ht-degree: 75%
 
 ---
 
@@ -16,26 +16,26 @@ ht-degree: 81%
 
 Após criar e revisar seu conteúdo no ambiente do autor, o objetivo é [disponibilizá-lo em seu site público](/help/sites-cloud/authoring/author-publish.md) (seu ambiente de publicação).
 
-Isso é chamado de publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer a publicação. Ao publicar ou desfazer a publicação, a página permanecerá disponível no ambiente do autor para mais alterações até ser excluída.
+Isso é chamado de publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer a publicação. Ao publicar e desfazer a publicação, a página permanece disponível no ambiente do autor para mais alterações até que você a exclua.
 
 Você pode publicar/desfazer a publicação de uma página imediatamente ou em uma data/hora predefinida posteriormente.
 
 >[!NOTE]
 >
->A publicação de um fragmento de experiência segue basicamente o mesmo procedimento de publicação de uma página, mas a partir do console ou do editor de fragmentos de experiência.
+>A publicação de um [Fragmento de experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md) segue basicamente o mesmo procedimento de publicação de uma página, mas a partir do console ou do editor de Fragmentos de experiência.
 
 ## Terminologia {#terminology}
 
 É possível encontrar termos diferentes relacionados à publicação ao trabalhar com o Adobe Experience Manager (AEM) as a Cloud Service.
 
 * **Publicar/Desfazer a publicação**
-   * Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível no ambiente de publicação (ou não).
+   * Esses são os termos principais para as ações que tornam o conteúdo publicamente disponível nos ambientes de publicação e/ou visualização (ou não).
    * Esses são os termos usados na documentação do AEM.
 * **Ativar / Desativar**
    * Estes termos são sinônimos de publicar/desfazer a publicação.
    * Esses termos foram usados nas versões anteriores do AEM.
 * **Replicar / Replicação**
-   * Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um ambiente para outro ao publicar uma página.
+   * Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um serviço para outro ao publicar uma página (por exemplo, do autor para a pré-visualização).
    * Esses termos são usados principalmente pelos desenvolvedores.
 
 ## Publicar páginas {#publishing-pages-1}
@@ -56,15 +56,12 @@ Dependendo do seu local, é possível publicar:
 
 >[!NOTE]
 >
->Para preservar a ordem das páginas, use a opção [Gerenciar publicação](#manage-publication) para publicar a página pai junto com qualquer página filho, em uma única ação.
+>Para preservar a ordem das páginas, use a opção [Gerenciar publicação](#manage-publication) para publicar a página pai junto com qualquer página filho em uma única ação.
 >
 >A ordem das páginas não é garantida:
+>
 >* se apenas as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal)
 >* se as páginas pai e filho forem publicadas em ações separadas
-
->[!NOTE]
->
-> Para ver outras possibilidades, consulte **Momento da ativação** e **Momento da desativação** na [guia Básico das Propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
 ### Publicação por meio do Editor de páginas {#publishing-from-the-page-editor}
 
@@ -78,7 +75,7 @@ Se você estiver editando uma página no [editor de páginas](/help/sites-cloud/
 
    * A página é publicada diretamente se não houver referências a serem publicadas.
    * Se a página tiver referências que precisem ser publicadas, elas serão listadas no assistente de **Publicação**, onde você poderá:
-      * Especifique quais dos ativos, ou tags etc., você deseja publicar junto com a página. Em seguida, use o **Publish** para concluir o processo.
+      * Especifique quais dos ativos, ou tags etc., você deseja publicar junto com a página. Em seguida, use **Publicar** para concluir o processo.
       * Usar a opção **Cancelar** para suspender a ação.
 
    ![Publicação de referências com a página](/help/sites-cloud/authoring/assets/publishing-references.png)
@@ -112,7 +109,7 @@ A **Publicação rápida** serve para casos simples e publica as páginas seleci
 
 Para publicar uma página com a Publicação rápida:
 
-1. Selecione as páginas no console de sites e clique no botão **Publish Rápido**.
+1. Selecione as páginas no console de sites e clique no botão **Publicação rápida**.
 
    ![Seleção de páginas para publicação](/help/sites-cloud/authoring/assets/publishing-select-pages.png)
 
@@ -128,15 +125,7 @@ Para publicar uma página com a Publicação rápida:
 
 #### Gerenciar publicação    {#manage-publication}
 
-**Gerenciar Publicação** oferece mais opções do que a **Publicação Rápida**, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de quaisquer fluxos de trabalho aplicáveis, além de oferecer a opção de publicar em uma data posterior.
-
->[!NOTE]
->
->Para preservar a ordem das páginas, use a opção **Gerenciar publicação** para publicar a página pai junto com qualquer página filho em uma única ação.
->
->A ordem das páginas não é garantida:
->* se apenas as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal)
->* se as páginas pai e filho forem publicadas em ações separadas
+**Gerenciar Publicação** oferece mais opções do que **Publicação Rápida**, permitindo a inclusão de páginas secundárias, a personalização das referências, a publicação em um serviço de visualização (se disponível), o início de qualquer fluxo de trabalho aplicável e a opção de publicação em uma data posterior.
 
 Para publicar ou desfazer a publicação de uma página usando Gerenciar publicação:
 
@@ -150,6 +139,10 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
      Optar por publicar ou desfazer a publicação de páginas selecionadas.
 
+   * **Destino**
+
+     Escolha se deseja publicar no serviço de publicação (padrão) ou no serviço de visualização. Disponível somente se você tiver um [serviço de visualização configurado.](/help/sites-cloud/authoring/sites-console/previewing-content.md)
+
    * **Programação**
 
      Escolha executar essa ação agora ou em uma data posterior.
@@ -159,6 +152,10 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
      >[!NOTE]
      >
      >Caso deseje cancelar a publicação/desfazer a publicação mais tarde, acesse o [Console do Fluxo de trabalhos](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para encerrar o fluxo de trabalho correspondente.
+
+     >[!NOTE]
+     >
+     >O agendamento de conteúdo para publicação não é o mesmo que [**Momento da ativação** e **Momento da desativação**, disponíveis nas propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md#basic), mas pode ser usado em circunstâncias semelhantes.
 
    ![Gerenciar opções de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -232,6 +229,8 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
    * Definir um título do pacote de fluxo de trabalho se a opção para manter esse pacote tiver sido escolhida.
 
 1. Clique em **Publicar** ou **Publicar mais tarde** para concluir a publicação.
+
+
 
 ## Desfazer a publicação de páginas {#unpublishing-pages}
 

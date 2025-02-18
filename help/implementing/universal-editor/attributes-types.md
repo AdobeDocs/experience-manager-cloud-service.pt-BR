@@ -4,10 +4,10 @@ description: Saiba mais sobre os atributos de dados e os tipos de item exigidos 
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: edef86c67becf3b8094196d39baa9e69d6c81777
+source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 45%
+source-wordcount: '557'
+ht-degree: 44%
 
 ---
 
@@ -34,18 +34,18 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 | `data-aue-filter` | Define:<br>- Quais funcionalidades de RTE estão habilitadas<br>- Quais componentes podem ser adicionados a um contêiner<br>- Quais ativos podem ser adicionados a um tipo de mídia |
 | `data-aue-label` | Define um rótulo personalizado para um item selecionável que é exibido no editor |
 | `data-aue-model` | Define um modelo usado para edição baseada em formulário no painel de propriedades |
-| `data-aue-behavior` | Define o [comportamento de uma instrumentação](#behaviors), por exemplo, texto ou imagem autônoma também pode imitar um componente para torná-lo móvel ou excluível |
+| `data-aue-behavior` | Obsoleto. Uma vez, ele definiu o comportamento de uma instrumentação para permitir que texto, richtext e mídia independentes mimetizassem componentes para que eles também pudessem ser movidos e excluídos na página, oferecendo um único valor potencial de `component`. Essa propriedade agora é ignorada e quando um item com `data-aue-resource` é filho direto de um contêiner, ele é automaticamente considerado um componente. |
 
 ## Tipos de item {#item-types}
 
-| `data-aue-type` | Descrição | `data-aue-resource` | `data-aue-prop` | `data-aue-filter` | `data-aue-label` | `data-aue-model` | `data-aue-behavior` |
-|---|---|---|---|---|---|---|---|
-| `text` | O texto é editável nas tags HTML, mas somente em um formato de texto simples; a formatação Rich Text não está disponível. Isso é bastante usado em componentes de título, por exemplo | Opcional | Obrigatório | n/a | Opcional | n/a | Opcional |
-| `richtext` | O texto é editável com recursos completos de Rich Text. O RTE será exibido no painel direito | Opcional | Obrigatório | n/a | Opcional | n/a | Opcional |
-| `media` | O editável é um ativo, por exemplo, imagem ou vídeo | Opcional | Obrigatório | Opcional<br>lista de critérios de filtro de imagem ou vídeo que é passada para o seletor de ativos | Opcional | n/a | Opcional |
-| `container` | O item editável atua como um container de componentes, o que também é conhecido como um Sistema de parágrafo. | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>uma lista de componentes permitidos | Opcional | n/a | n/a |
-| `component` | O item editável é um componente. Ele não acrescenta nenhuma funcionalidade extra, É obrigatório indicar partes móveis/excluíveis do DOM e para abrir o painel de propriedades e seus campos | Obrigatório | n/a | n/a | Opcional | Opcional | n/a |
-| `reference` | O editável é uma referência, por exemplo, Fragmento de conteúdo, Fragmento de experiência ou Produto | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>lista de critérios de filtro para fragmentos de conteúdo, produtos ou fragmentos de experiência que é passada para o seletor de referência | Opcional | Opcional | n/a |
+| `data-aue-type` | Descrição | `data-aue-resource` | `data-aue-prop` | `data-aue-filter` | `data-aue-label` | `data-aue-model` |
+|---|---|---|---|---|---|---|
+| `text` | O texto é editável nas tags HTML, mas somente em um formato de texto simples; a formatação Rich Text não está disponível. Isso é bastante usado em componentes de título, por exemplo | Opcional | Obrigatório | n/a | Opcional | n/a |
+| `richtext` | O texto é editável com recursos completos de Rich Text. O RTE será exibido no painel direito | Opcional | Obrigatório | n/a | Opcional | n/a |
+| `media` | O editável é um ativo, por exemplo, imagem ou vídeo | Opcional | Obrigatório | Opcional<br>lista de critérios de filtro de imagem ou vídeo que é passada para o seletor de ativos | Opcional | n/a |
+| `container` | O item editável atua como um container de componentes, o que também é conhecido como um Sistema de parágrafo. | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>uma lista de componentes permitidos | Opcional | n/a |
+| `component` | O item editável é um componente. Ele não acrescenta nenhuma funcionalidade extra, É obrigatório indicar partes móveis/excluíveis do DOM e para abrir o painel de propriedades e seus campos | Obrigatório | n/a | n/a | Opcional | Opcional |
+| `reference` | O editável é uma referência, por exemplo, Fragmento de conteúdo, Fragmento de experiência ou Produto | Depende do <br>, veja abaixo | Depende do <br>, veja abaixo | Opcional<br>lista de critérios de filtro para fragmentos de conteúdo, produtos ou fragmentos de experiência que é passada para o seletor de referência | Opcional | Opcional |
 
 `data-aue-resource` é sempre necessário, pois é a chave primária que indica onde as alterações de conteúdo são gravadas.
 
@@ -55,10 +55,3 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 `data-aue-prop` é obrigatório sempre que você quiser fazer uma edição em contexto, exceto para um contêiner em que é opcional (se o contêiner for um fragmento de conteúdo e a prop apontar para um campo de várias referências).
 
 * O `data-aue-prop` é o atributo a ser atualizado para a chave primária de `data-aue-resource`.
-
-## Comportamentos {#behaviors}
-
-| `data-aue-behavior` | Descrição |
-|---|---|
-| `component` | Usado para permitir componentes de mimetismo de texto, richtext e mídia independentes para que também possam ser movidos e excluídos na página |
-| `container` | Usado para permitir que os contêineres sejam tratados como seus próprios componentes para que possam ser movidos e excluídos na página |

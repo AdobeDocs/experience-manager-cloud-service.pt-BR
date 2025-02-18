@@ -4,7 +4,7 @@ description: O Universal Editor é uma ferramenta de criação visual moderna pr
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: ae962d89b842b0708c1ac8633bb49c86cb2edfda
+source-git-commit: c88aa13c6bc75c8f9cd624d00ef768290981c840
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 10%
@@ -51,7 +51,7 @@ O Editor Universal é compatível com:
 * AEM as a Cloud Service (versão `2023.8.13099` ou superior)
 * AEM 6.5 (service pack 21 ou 22 mais um pacote de recursos)
 
-Esta documentação é para usar o Editor universal com o AEM as a Cloud Service. Para usar o Universal Editor com o AEM 6.5, [consulte a documentação do AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction?lang=en)
+Esta documentação é para usar o Editor universal com o AEM as a Cloud Service. Para usar o Universal Editor com o AEM 6.5, [consulte a documentação do AEM 6.5.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction)
 
 ## Recursos {#features}
 

@@ -4,9 +4,9 @@ description: Entenda o contrato JSON entre a definição do componente e o Edito
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: e1bb1a54-50c0-412a-a8fd-8167c6f47d2b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 0053c874e6e7a2782e03a37fe3928baa9cd5bdba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ O arquivo `component-definition.json` define os componentes disponíveis para se
 
 >[!TIP]
 >
->Para obter uma visão geral do processo de modelagem de conteúdo, consulte o documento [Modelagem de Conteúdo para Criação no WYSIWYG com Projetos Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
+>Para obter uma visão geral do processo de modelagem de conteúdo, consulte o documento [Modelagem de Conteúdo para Criação no WYSIWYG com Projetos do Edge Delivery Services](/help/edge/wysiwyg-authoring/content-modeling.md).
 
 >[!TIP]
 >
@@ -33,35 +33,42 @@ Veja a seguir um exemplo completo, mas simples de `component-definition.json`.
 
 ```json
 {
-  "groups": [
+  "groups":[
     {
-      "title": "General Components",
-      "id": "general",
-      "components": [
+      "title":"General Components",
+      "id":"general",
+      "components":[
         {
-          "title": "Text",
-          "id": "text",
-          "plugins": {
-            "aem": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+          "title":"Text",
+          "id":"text",
+          "plugins":{
+            "aem":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             },
-            "aem65": {
-              "page": {
-                "resourceType": "wknd/components/text",
-                "template": {
-                  "text": "Default Text"
+            "aem65":{
+              "page":{
+                "resourceType":"wknd/components/text",
+                "template":{
+                  "text":"Default Text",
+                  "name":"Text",
+                  "model":"text",
+                  "filter":"texts"
                 }
               }
             }
           }
-        },
-      }
-   ]
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -100,11 +107,18 @@ Depois que o `plugin` é definido, é necessário indicar se ele está relaciona
 
 Se o componente for conteúdo da página, você pode fornecer as seguintes informações.
 
-* `name` define um nome opcional salvo no JCR para o componente recém-criado.
-   * Apenas informativo e geralmente não exibido na interface do usuário como `title` é.
 * `resourceType` define o [Sling](/help/implementing/developing/introduction/sling-cheatsheet.md) `resourceType` usado para renderizar o componente.
-* `template` define chave/valores opcionais para serem gravados automaticamente no componente recém-criado.
+* `template` define chave/valores opcionais a serem gravados automaticamente no componente recém-criado e define qual filtro e/ou modelo deve ser aplicado ao componente.
    * Útil para texto explicativo, de amostra ou de espaço reservado.
+
+#### `template` {#template}
+
+Ao fornecer pares de chave/valor opcionais, o `template` pode gravá-los automaticamente no novo componente. Além disso, os seguintes valores opcionais também podem ser especificados.
+
+* `model` define qual [modelo](/help/implementing/universal-editor/field-types.md#model-structure) é usado com o componente.
+   * Portanto, o modelo é mantido centralmente na definição do componente e não precisa ser [especificado na instrumentação.](/help/implementing/universal-editor/field-types.md#instrumentation)
+   * Isso permite mover componentes entre contêineres.
+* `filter` define qual [filtro](/help/implementing/universal-editor/filtering.md) deve ser usado com o componente.
 
 ### `cf` {#cf}
 

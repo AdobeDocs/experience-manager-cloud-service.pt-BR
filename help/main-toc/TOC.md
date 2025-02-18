@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 22a0f65a4136fcf90ff9c19825d6d2bf37578045
+source-git-commit: e2ff4c3c8cfa9f4aa78d8ee02dcd242a10003438
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6081'
 ht-degree: 69%
 
 ---
@@ -374,10 +374,10 @@ ht-degree: 69%
          + [Sistema de estilos](/help/sites-cloud/authoring/page-editor/style-system.md)
          + [Desfazer Limitações de Refazer](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Editor universal {#universal-editor}
-         + [Navegar pelo Editor universal](/help/sites-cloud/authoring/universal-editor/navigation.md)
-         + [Criação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md)
-         + [Publicação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
-         + [Herança de conteúdo no editor universal](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+         + [Navegação](/help/sites-cloud/authoring/universal-editor/navigation.md)
+         + [Criação  ](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [Publicação](/help/sites-cloud/authoring/universal-editor/publishing.md)
+         + [Herança](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [Modelos de páginas](/help/sites-cloud/authoring/universal-editor/templates.md)
       + Fragmentos {#fragments}
          + [Fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md)
@@ -1287,6 +1287,7 @@ ht-degree: 69%
          + [Atributos e Tipos de Item](/help/implementing/universal-editor/attributes-types.md)
          + [Definição de componente](/help/implementing/universal-editor/component-definition.md)
          + [Definições de modelo, campos e tipos de componentes](/help/implementing/universal-editor/field-types.md)
+         + [Publicação](/help/implementing/universal-editor/publishing.md)
          + [Aplicativo de amostra do SecurBank](/help/implementing/universal-editor/securbank.md)
          + [Eventos](/help/implementing/universal-editor/events.md)
          + [Componentes de filtragem](/help/implementing/universal-editor/filtering.md)

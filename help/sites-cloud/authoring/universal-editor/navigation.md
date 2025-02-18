@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 9daa4ea54e87694c297a42748aa8705eb712d182
+source-git-commit: e87447922b856d4cbbd09fb4dcd4ae2b5da6ff50
 workflow-type: tm+mt
-source-wordcount: '1616'
-ht-degree: 27%
+source-wordcount: '1623'
+ht-degree: 26%
 
 ---
 
@@ -193,7 +193,7 @@ Selecione o ícone abrir visualização do aplicativo para abrir a página que v
 
 #### Publicação {#publish}
 
-Selecione o botão publicar para poder publicar as alterações no conteúdo em tempo real para consumo pelos leitores.
+Selecione o botão publicar para poder publicar as alterações no conteúdo em tempo real para consumo pelos leitores ou em um ambiente de pré-visualização para revisão.
 
 ![Botão de publicação](assets/publish.png)
 
