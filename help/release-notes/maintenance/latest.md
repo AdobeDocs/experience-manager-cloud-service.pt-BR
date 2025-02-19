@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 1d6a54f87d55179c11c7ccc7766eeeb475674f05
+source-git-commit: 81e3ce8cdceee37a22e76e74008452f88b6bf003
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 25%
+source-wordcount: '186'
+ht-degree: 60%
 
 ---
 
@@ -16,48 +16,33 @@ ht-degree: 25%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 19567 {#19567}
+## Versão 19586 {#19586}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 19567, lançada publicamente em quarta-feira, 18 de fevereiro de 2025. A versão de manutenção anterior foi a de 19352.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 19586, lançada publicamente em quinta-feira, 19 de fevereiro de 2025. A versão de manutenção anterior foi a de 19567.
 
 A ativação de recursos do 2025.2.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-19567}
-
-* GRANITE-56650: a distribuição de conteúdo só deve sinalizar fila bloqueada após algumas tentativas
-* SKYOPS-89616: Permitir a Criação de até 40 Contas Técnicas no Adobe Developer Console
-
-### Problemas corrigidos {#fixed-issues-19567}
-
-* CNTBF-232: pacote profundo nt:nós de arquivo para incluir obrigatório jcr:content child
-* CQ-4358930: problema de desempenho durante o carregamento das propriedades da página com vários campos
-* GRANITE-55960: problema de desempenho com o campo Coral Select no AEM as Cloud Service
-* GRANITE-56197: a nova etapa do fluxo de trabalho TreeActivation não agrupa ativos em lote em uma estrutura de pasta simples grande
-
-#### Guias do AEM {#guides}
-
-* GUIDES-23526: Ao atualizar condições do perfil da pasta, todos os grupos de condição são perdidos e as condições são niveladas.
-* GUIDES-22574: Se um link externo contiver uma UUID, ele entrará no pós-processamento e converterá o link externo em link UUID, quebrando assim o link no editor e também nos sites de publicação.
-* GUIDES-24983: Ao copiar uma imagem de qualquer produto externo (por exemplo, MS PowerPoint) e colá-la no Guides, a funcionalidade de fazer upload do ativo em tempo real para uso no arquivo do é interrompida.
-* GUIDES-21772: Falha na geração de PDF nativo para conteúdo com **atributo de parte** definido como **para conteúdo**.
-* GUIDES-23964: Ao escolher **Editar propriedades**, a caixa de diálogo da linha de base não mostra os critérios salvos anteriormente para a linha de base dinâmica.
-* GUIDES-19067: Ao duplicar qualquer perfil de pasta, a lista de usuários administradores também é copiada do perfil da pasta original
-
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Problemas conhecidos {#known-issues-19567}
+### Aprimoramentos {#enhancements-19586}
 
 Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-19567}
+### Problemas corrigidos {#fixed-issues-19586}
+
+* SITES-29314: endpoints do GraphQL podem gerar InvalidSchemaException para solicitações válidas.
+
+### Problemas conhecidos {#known-issues-19586}
+
+Nenhum.
+
+### Recursos e APIs obsoletos {#deprecated-19586}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-19567}
+### Correções de segurança {#security-19586}
 
-A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 21 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
+Nenhum.
 
-### Tecnologias integradas {#embedded-tech-19567}
+### Tecnologias integradas {#embedded-tech-19586}
 
 | Tecnologia | Versão | Link |
 |---|--------------|-------------------------------------------------------------------------------------------------------------------|
