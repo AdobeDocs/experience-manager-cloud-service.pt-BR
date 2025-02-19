@@ -1,11 +1,11 @@
 ---
-title: Como usar o módulo de torção em um AEM Formulário adaptável Componentes principais?
+title: Como usar o módulo de torção em um formulário adaptável dos componentes principais do AEM?
 description: Melhore a segurança dos formulários com o serviço de Tornição sem esforço. Guia passo a passo no interior.
 topic-tags: Adaptive Forms, author
 feature: Adaptive Forms, Core Components
 role: User, Developer
 exl-id: e9c13228-0857-4936-9c39-12ed2bddf429
-source-git-commit: eba6aec89e645e443ba6f4ca5aff66a39288ff1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 13%
@@ -39,8 +39,8 @@ Para configurar o Turnstile para os Componentes principais do AEM Forms, obtenha
 
 Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
 
-1. Crie um contêiner de configuração no ambiente as a Cloud Service do AEM Forms. Um Contêiner de configuração contém as Configurações de nuvem usadas para conectar o AEM a serviços externos. Para criar e configurar um Contêiner de configuração para conectar seu ambiente do AEM Forms com o Turnstile, siga as etapas fornecidas abaixo:
-   1. Abra a instância as a Cloud Service do AEM Forms.
+1. Crie um Contêiner de configuração em seu ambiente AEM Forms as a Cloud Service. Um Contêiner de configuração contém as Configurações de nuvem usadas para conectar o AEM a serviços externos. Para criar e configurar um Contêiner de configuração para conectar seu ambiente do AEM Forms com o Turnstile, siga as etapas fornecidas abaixo:
+   1. Abra a instância do AEM Forms as a Cloud Service.
    1. Vá para **[!UICONTROL Ferramentas > Geral > Navegador de Configuração]**.
    1. No Navegador de configuração, crie uma nova pasta e ative as Configurações de nuvem para ela ou ative as Configurações de nuvem para uma pasta existente, conforme explicado abaixo:
 
@@ -54,7 +54,7 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
          1. Clique em **[!UICONTROL Salvar e fechar]** para salvar a configuração e sair.
 
 1. Configure o Cloud Service:
-   1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** e clique em **[!UICONTROL Turnstile]**.
+   1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** e clique em **[!UICONTROL Girar]**.
       ![Borboleta na interface do usuário](assets/turnstile-in-ui.png)
    1. Selecione um Contêiner de configuração, criado ou atualizado, conforme descrito na seção anterior. Selecione **[!UICONTROL Criar]**.
       ![Estrutura de configuração](assets/config-hcaptcha.png)
@@ -65,13 +65,14 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
       ![Configure o Cloud Service para conectar seu ambiente do AEM Forms com o Turnstile](assets/config-turntstile-cc.png)
 
    >[!NOTE]
+   >
    > Os usuários não precisam modificar o URL de validação do JavaScript do lado do cliente e o URL de validação do lado do servidor, pois já estão pré-preenchidos para validação do módulo de montagem.
 
    Após configurar o serviço Captcha com estrutura de rotação, ele estará disponível para uso em um [Formulário adaptável com base nos Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
 ## Usar a estrutura giratória em um formulário adaptável {#using-turnstile-core-components}
 
-1. Abra a instância as a Cloud Service do AEM Forms.
+1. Abra a instância do AEM Forms as a Cloud Service.
 1. Ir para **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 1. Selecione o formulário adaptável e clique em **[!UICONTROL Propriedades]**. Na seção **[!UICONTROL Contêiner de Configuração]**, selecione o Contêiner de Configuração que contém a Configuração na Nuvem que conecta o AEM Forms com o Turnstile.
 1. Clique em **[!UICONTROL Salvar e fechar]**.
@@ -90,13 +91,17 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
    * **[!UICONTROL Nome]:** Especifique o nome do componente Captcha. Você pode identificar facilmente um componente de formulário com seu nome exclusivo no formulário e no editor de regras.
    * **[!UICONTROL Título]:** Especifique o título para o componente Captcha. você pode permitir Rich Text para o título e também pode ocultar o título marcando as caixas de seleção.
    * **[!UICONTROL Configurações]:** Selecione uma Configuração na Nuvem configurada para o serviço Captcha de Borboleta.
+
      >[!NOTE]
+     >
      >* Você pode ter várias configurações de nuvem no seu ambiente para uma finalidade semelhante. Então, escolha o serviço com cuidado. Se nenhum serviço estiver listado, consulte a seção [Configurar Turnstile](#steps-to-configure-hcaptcha) para saber como criar um Contêiner de Configuração para conectar seu ambiente do AEM Forms com o serviço Turnstile.
 
    * **[!UICONTROL Validação]:** Forneça a validação de Captcha na forma de uma mensagem de erro:
 
       * **Mensagem de Erro:** Forneça a mensagem de erro a ser exibida ao usuário quando o envio do Captcha falhar.
+
         >[!NOTE]
+        >
         >* Uma mensagem de erro será exibida somente se o CAPTCHA for preenchido no lado do cliente.
 
 1. Clique em **[!UICONTROL Concluído]**.

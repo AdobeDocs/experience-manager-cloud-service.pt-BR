@@ -1,17 +1,17 @@
 ---
-title: Criação de PDF sem esforço - Domine a arte com processamento em lote - Seu guia de autoajuda para gerar milhões de documentos de PDF!
+title: Criação de PDF em massa sem esforços - Domine a arte com o processamento em lote - Seu guia de autoajuda para gerar milhões de documentos do PDF!
 description: Como criar comunicações personalizadas e orientadas à marca?
 feature: Adaptive Forms, APIs & Integrations
 role: Admin, Developer, User
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '1706'
 ht-degree: 2%
 
 ---
 
-# Processamento em lote das comunicações as a Cloud Service do AEM Forms
+# Processamento em lote de comunicações do AEM Forms as a Cloud Service
 
 As comunicações permitem criar, montar e fornecer comunicações personalizadas e orientadas à marca, como correspondências comerciais, documentos, declarações, cartas de processamento de solicitações, avisos de benefícios, faturas mensais e kits de boas-vindas. Você pode usar APIs de comunicações para combinar um modelo (XFA ou PDF) com os dados do cliente para gerar documentos nos formatos PDF, PS, PCL, DPL, IPL e ZPL.
 
@@ -34,7 +34,7 @@ As comunicações fornecem APIs para geração de documentos sob demanda e progr
 
 Uma operação em lote é um processo de geração de vários documentos de tipo semelhante para um conjunto de registros em intervalos programados. Uma operação em lote tem duas partes: configuração (definição) e execução.
 
-* **Configuração (definição)**: uma configuração em lote armazena informações sobre vários ativos e propriedades a serem definidas para documentos gerados. Por exemplo, ele fornece detalhes sobre o modelo XDP ou PDF e o local dos dados do cliente a serem usados, juntamente com a especificação de várias propriedades para documentos de saída.
+* **Configuração (definição)**: uma configuração em lote armazena informações sobre vários ativos e propriedades a serem definidas para documentos gerados. Por exemplo, ele fornece detalhes sobre o modelo XDP ou PDF e o local dos dados do cliente a serem usados, além de especificar várias propriedades para documentos de saída.
 
 * **Execução**: para iniciar uma operação em lote, passe o nome de configuração do lote para a API de execução em lote.
 
@@ -48,7 +48,7 @@ Uma operação em lote é um processo de geração de vários documentos de tipo
 
 ![tabela-de-mesclagem-de-dados](assets/communications-batch-structure.png)
 
-**Armazenamento**: as APIs de comunicação usam o armazenamento na nuvem do Microsoft Azure de propriedade do cliente para buscar registros do cliente e armazenar documentos gerados. Você configura o Armazenamento do Microsoft Azure na Configuração de Experience Manager Cloud Service.
+**Armazenamento**: as APIs de comunicação usam o armazenamento na nuvem do Microsoft Azure de propriedade do cliente para buscar registros do cliente e armazenar documentos gerados. Configure o Armazenamento do Microsoft Azure na Configuração do Experience Manager Cloud Service.
 
 **Aplicativo**: seu aplicativo personalizado para usar as APIs em lote para gerar e consumir documentos.
 
@@ -67,7 +67,7 @@ Para usar a API de lote, é necessário o seguinte:
 * [Conta de Armazenamento do Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-create)
 * Modelos PDF ou XDP
 * [Dados a serem mesclados com modelos](#form-data)
-* Usuários com privilégios de administrador de Experience Manager
+* Usuários com privilégios de administrador do Experience Manager
 
 ### Configurar o ambiente {#setup-your-environment}
 
@@ -78,23 +78,24 @@ Antes de usar uma operação em lote:
 * Criar configuração de armazenamento de dados em lote
 * Faça upload de modelos e outros ativos para sua instância do Experience Manager Forms Cloud Service
 
-### Fazer upload dos dados do cliente (arquivos XML) para o Armazenamento do Azure {#upload-customer-data-to-Azure-Storage}
+### Fazer upload dos dados do cliente (arquivos XML) para o Armazenamento do Azure
 
 No Armazenamento do Microsoft Azure, crie [contêineres](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs) e [carregue dados do cliente (XML)](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) para as [pastas](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal) dentro dos contêineres.
+
 >[!NOTE]
 >
 >Você pode configurar o armazenamento do Microsoft Azure para limpar automaticamente a pasta de entrada ou mover o conteúdo da pasta de saída para um local diferente em intervalos programados. No entanto, certifique-se de que as pastas não sejam limpas quando uma operação em lote que faz referência às pastas ainda estiver em execução.
 
 ### Criar uma configuração na nuvem {#create-a-cloud-configuration}
 
-A configuração da nuvem conecta sua instância do Experience Manager ao Armazenamento do Microsoft Azure. Para criar uma configuração na nuvem:
+A configuração da Nuvem conecta sua instância do Experience Manager ao Armazenamento do Microsoft Azure. Para criar uma configuração na nuvem:
 
-1. Acesse Ferramentas > Cloud Service > Armazenamento do Azure
+1. Acesse Ferramentas > Serviços de nuvem > Armazenamento do Azure
 1. Abra uma pasta para hospedar a configuração e clique em Criar. Você usa a pasta Global ou cria uma pasta.
 1. Especifique o nome da configuração e as credenciais para se conectar ao serviço. Você pode [recuperar essas credenciais do portal de Armazenamento do Microsoft Azure](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. Clique em Criar.
 
-Sua instância do Experience Manager agora está pronta para se conectar ao Armazenamento do Microsoft Azure e usá-la para armazenar e ler conteúdo, quando necessário.
+Sua instância do Experience Manager agora está pronta para se conectar ao Armazenamento do Microsoft Azure e usá-lo para armazenar e ler conteúdo, quando necessário.
 
 ### Criar configuração de armazenamento de dados em lote {#create-batch-data-store-configuration}
 
@@ -114,9 +115,9 @@ Sua instância do Experience Manager agora está conectada ao Armazenamento do M
 
 ### Faça upload de modelos e outros ativos para sua instância do Experience Manager {#upload-templates-and-other-assets-to-your-AEM-instance}
 
-Uma organização normalmente tem vários modelos. Por exemplo, um modelo para demonstrativos de cartão de crédito, demonstrativos de benefícios e aplicações de reivindicação. Faça upload de todos esses modelos XDP e PDF para sua instância Experience Manager. Para fazer upload de um modelo:
+Uma organização normalmente tem vários modelos. Por exemplo, um modelo para demonstrativos de cartão de crédito, demonstrativos de benefícios e aplicações de reivindicação. Faça upload de todos esses modelos XDP e PDF para sua instância do Experience Manager. Para fazer upload de um modelo:
 
-1. Abra a instância do Experience Manager.
+1. Abra sua instância do Experience Manager.
 1. Vá até Forms > Forms e Documentos
 1. Clique em Criar > Pasta e crie uma pasta. Abra a pasta.
 1. Clique em Criar > Upload de arquivo e faça upload dos modelos.
@@ -164,7 +165,7 @@ A resposta da solicitação de status contém a seção de status. Ele fornece d
 
 Na conclusão do trabalho, os documentos gerados são armazenados na pasta `success` no local de destino especificado na configuração do Armazenamento de dados em lote. Se houver erros, o serviço criará uma pasta `failure`. Ela fornece informações sobre o tipo e a razão dos erros.
 
-Vamos entender com a ajuda de um exemplo: suponha que haja um arquivo de dados de entrada `record1.xml` e dois tipos de saída: `PDF` e `PCL`. Em seguida, o local de destino contém duas subpastas `pdf` e `pcl`, uma para cada um dos tipos de saída. Vamos supor que a geração de PDF foi bem-sucedida, então a subpasta `pdf` contém a subpasta `success` que, por sua vez, contém o documento de PDF gerado real `record1.pdf`. Vamos supor que a geração de PCL falhou, então a subpasta `pcl` contém uma subpasta `failure` que por sua vez contém um arquivo de erro `record1.error.txt` que contém detalhes do erro. Além disso, o local de destino contém uma pasta temporária chamada `__tmp__` que contém determinados arquivos necessários durante a execução do lote. Essa pasta pode ser excluída quando não houver execuções de lote ativas que façam referência à pasta de destino.
+Vamos entender com a ajuda de um exemplo: suponha que haja um arquivo de dados de entrada `record1.xml` e dois tipos de saída: `PDF` e `PCL`. Em seguida, o local de destino contém duas subpastas `pdf` e `pcl`, uma para cada um dos tipos de saída. Vamos supor que a geração de PDF tenha sido bem-sucedida, então a subpasta `pdf` contém a subpasta `success` que, por sua vez, contém o documento PDF real gerado `record1.pdf`. Vamos supor que a geração de PCL falhou, então a subpasta `pcl` contém uma subpasta `failure` que por sua vez contém um arquivo de erro `record1.error.txt` que contém detalhes do erro. Além disso, o local de destino contém uma pasta temporária chamada `__tmp__` que contém determinados arquivos necessários durante a execução do lote. Essa pasta pode ser excluída quando não houver execuções de lote ativas que façam referência à pasta de destino.
 
 >[!NOTE]
 >
@@ -176,7 +177,7 @@ A documentação de referência da API fornece informações detalhadas sobre to
 
 >[!MORELIKETHIS]
 >
->* [Introdução às Comunicações as a Cloud Service do AEM Forms](/help/forms/aem-forms-cloud-service-communications-introduction.md)
->* [as a Cloud Service do AEM Forms para APIs de Forms adaptável e comunicação](/help/forms/aem-forms-cloud-service-architecture.md)
+>* [Introdução às Comunicações do AEM Forms as a Cloud Service](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+>* [Arquitetura do AEM Forms as a Cloud Service para APIs de comunicação e Forms adaptável](/help/forms/aem-forms-cloud-service-architecture.md)
 >* [Processamento da comunicação - APIs síncronas](/help/forms/aem-forms-cloud-service-communications.md)
 >* [Processamento de comunicação - APIs em lote](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

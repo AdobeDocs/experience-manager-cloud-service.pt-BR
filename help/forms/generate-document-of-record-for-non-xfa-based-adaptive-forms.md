@@ -4,7 +4,7 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) do A
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '4170'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 
 | Versão | Link do artigo |
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 ## Visão geral {#overview}
 
-Quando um formulário é preenchido ou enviado, você pode manter um registro do formulário, impresso ou no formato do documento. Esse registro é chamado de Documento de registro (DoR). É uma cópia do formulário enviado que pode ser impressa. Você também pode consultar o documento de registro para as informações que os clientes preencheram em uma data posterior ou usar o documento de registro para arquivar formulários e conteúdo juntos no formato PDF.
+Quando um formulário é preenchido ou enviado, você pode manter um registro do formulário, impresso ou no formato do documento. Esse registro é chamado de Documento de registro (DoR). É uma cópia do formulário enviado que pode ser impressa. Você também pode consultar o documento de registro para as informações que os clientes preencheram em uma data posterior ou usar o Documento de registro para arquivar formulários e conteúdo juntos no Formato PDF.
 
 ![Documento de registro](assets/document-of-record.png)
 
@@ -35,7 +35,7 @@ A opção sob demanda permite especificar um modelo XFA ou baseado em acroforma 
 É possível:
 
 * [Gerar um documento de registro baseado em XFA](#generate-an-XFA-based-document-of-record)
-* [Gerar um documento de registro baseado em acroforma (PDF do Acrobat Form)](#generate-an-Acroform-based-document-of-record)
+* [Gerar um documento de registro baseado em acroforma (Acrobat Form PDF)](#generate-an-Acroform-based-document-of-record)
 * [Gerar automaticamente um documento de registro](#auto-generate-a-document-of-record)
 
 ## Antes de começar {#components-to-automatically-generate-a-document-of-record}
@@ -61,13 +61,13 @@ O formulário adaptável agora está configurado para usar um arquivo XDP como m
 
 ## Gerar um documento de registro baseado em acroforma {#generate-an-Acroform-based-document-of-record}
 
-Carregue seu PDF Adobe Acrobat (Acroform) na instância do AEM Forms. Execute as seguintes etapas para configurar um Formulário adaptável para usar o Adobe Acrobat PDF (AcroForm) como modelo para o Documento de registro:
+Faça upload do Adobe Acrobat PDF (Acrobat) na sua instância do AEM Forms. Execute as seguintes etapas para configurar um Formulário adaptável para usar o Adobe Acrobat PDF (AcroForm) como modelo para o Documento de registro:
 
 1. Na instância do autor do Experience Manager, clique em **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos].**
 1. Selecione um formulário e clique em **[!UICONTROL Propriedades]**.
 1. Na janela Propriedades, selecione **[!UICONTROL Modelo de formulário]**.
 1. Na guia **[!UICONTROL Modelo de Formulário]**, no menu suspenso **[!UICONTROL Selecionar de]**, selecione **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Você também pode selecionar um modelo de formulário ao criar um formulário.
-1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Associar Modelo de Formulário como Documento de Modelo de Registro**. Ao selecionar essa opção, todos os PDF Acrobat (Acroform) disponíveis em sua máquina são exibidos. Selecione o arquivo apropriado.
+1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Associar Modelo de Formulário como Documento de Modelo de Registro**. Ao selecionar essa opção, todas as Acrobat PDF (Acrobat) disponíveis em sua máquina são exibidas. Selecione o arquivo apropriado.
 1. Clique em **[!UICONTROL Concluído]**
 
 O formulário adaptável agora está configurado para usar um acroforma como modelo para o documento de registro. A próxima etapa é [vincular componentes do Formulário adaptável com campos de modelo correspondentes](#bind-adaptive-form-components-with-template-fields).
@@ -110,7 +110,7 @@ Vincule campos de formulário adaptável a campos de modelo para exibir dados de
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-Você pode usar Enviar email, a ação enviar do Fluxo de trabalho do Experience Manager juntamente com a [etapa Documento de registro e outras ações de envio](configuring-submit-actions.md) para receber um Documento de registro.
+Você pode usar Enviar Email, a ação de envio do Fluxo de Trabalho do Experience Manager juntamente com a [etapa Documento de Registro e outras ações de envio](configuring-submit-actions.md) para receber um Documento de Registro.
 
 ## Atualizações incrementais no documento de modelo de registro {#document-of-record-template-incremental-updates}
 
@@ -131,6 +131,7 @@ O desenvolvedor faz upload e se aplica ao modelo atualizado para o formulário a
 ![Erro de Associação](assets/we-retail-binding-error.png)
 
 O desenvolvedor do formulário vincula os campos do Adaptive Forms ao documento de modelo de registro correspondente.
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Agora, quando o formulário adaptável for enviado, um documento de registro atualizado será criado.
@@ -346,12 +347,12 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
    1. **Propriedades básicas**:
       * **Modelo**: se você optar por selecionar um modelo personalizado, procure um XDP selecionado no servidor [!DNL AEM Forms]. Se quiser usar um modelo que ainda não esteja no servidor [!DNL AEM Forms], primeiro carregue o XDP no servidor [!DNL AEM Forms].
-      * **Cor de Ênfase**: a cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no PDF do documento ou do registro.
-      * **Família de Fontes**: Família de fontes do texto no documento de PDF de registro.
+      * **Cor de Ênfase**: a cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no documento ou no PDF de registro.
+      * **Família de Fontes**: Família de fontes do texto no documento de registro do PDF.
 
         >[!NOTE]
         >
-        > O AEM Forms oferece uma variedade de fontes integradas que se integram perfeitamente com arquivos PDF. Para ver a lista de fontes com suporte, [clique aqui](/help/forms/supported-out-of-the-box-fonts.md).
+        > O AEM Forms oferece uma variedade de fontes integradas que se integram perfeitamente aos arquivos PDF. Para ver a lista de fontes com suporte, [clique aqui](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Incluir objetos de formulário que não estão associados ao modelo de dados**: a configuração da propriedade inclui campos não associados do Formulário adaptável baseado em esquema no Documento de Registro.
       * **Excluir campos ocultos do documento de registro**: a definição da propriedade identifica os campos ocultos para exclusão do documento de registro.
@@ -420,7 +421,7 @@ Execute as seguintes etapas a partir da instância de autor do editor de Formul�
 
 ## Layouts de tabela e coluna para painéis no documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
-O formulário adaptável pode ser longo, com vários campos de formulário. Talvez você não queira salvar um Documento de registro como uma cópia exata do Formulário adaptável. Agora é possível escolher um layout de tabela ou coluna para salvar um ou mais painéis do Formulário adaptável no documento de PDF de registro.
+O formulário adaptável pode ser longo, com vários campos de formulário. Talvez você não queira salvar um Documento de registro como uma cópia exata do Formulário adaptável. Agora é possível escolher um layout de tabela ou coluna para salvar um ou mais painéis do Formulário adaptável no Documento de registro do PDF.
 
 Antes de gerar um documento de registro, nas configurações de um painel, selecione Layout do documento de registro para esse painel como Tabela ou Coluna. Os campos no painel são organizados de acordo no documento de registro.
 
@@ -457,8 +458,8 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as 
 
 | Opção XCI | Descrição |
 |--- |--- |
-| config/present/pdf/creator | Identifica o criador do documento usando a entrada Criador no dicionário de Informações do Documento. Para obter informações sobre este dicionário, consulte o [guia de Referência de PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
-| config/present/pdf/producer | Identifica o produtor do documento usando a entrada Produtor no dicionário de Informações do documento. Para obter informações sobre este dicionário, consulte o [guia de Referência de PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/creator | Identifica o criador do documento usando a entrada Criador no dicionário de Informações do Documento. Para obter informações sobre este dicionário, consulte o [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | Identifica o produtor do documento usando a entrada Produtor no dicionário de Informações do documento. Para obter informações sobre este dicionário, consulte o [Guia de referência do PDF](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
 | config/present/layout | Controla se a saída é um painel único ou paginada. |
 | config/present/pdf/compression/level | Especifica o grau de compactação a ser usado ao gerar um documento PDF. |
 | config/present/pdf/fontInfo/embed | Controla a incorporação de fontes no documento de saída. |
@@ -473,21 +474,21 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as 
 | config/present/common/log/to | Controla o local onde os dados de log ou de saída são gravados. |
 | config/present/output/to | Controla o local onde os dados de log ou de saída são gravados. |
 | config/present/script/currentPage | Especifica a página inicial quando o documento é aberto. |
-| config/present/script/exclude | Informa o Forms as a Cloud Service sobre quais eventos ignorar. |
-| config/present/pdf/linearized | Controla se o documento de PDF de saída está linearizado. |
+| config/present/script/exclude | Informa ao Forms as a Cloud Service quais eventos devem ser ignorados. |
+| config/present/pdf/linearized | Controla se o documento PDF de saída está linearizado. |
 | config/present/script/runScripts | Controla qual conjunto de scripts o Forms as a Cloud Service executa. |
-| config/present/pdf/tagged | Controla a inclusão de tags no documento de PDF de saída. As tags, no contexto de PDF, são informações adicionais incluídas em um documento para expor a estrutura lógica do documento. As tags auxiliam na acessibilidade e na reformatação. Por exemplo, um número de página pode ser marcado como um artefato para que um leitor de tela não o enuncie no meio do texto. Embora as tags tornem um documento mais útil, elas também aumentam o tamanho do documento e o tempo de processamento para criá-lo. |
+| config/present/pdf/tagged | Controla a inclusão de tags no documento PDF de saída. As tags, no contexto do PDF, são informações adicionais incluídas em um documento para expor a estrutura lógica do documento. As tags auxiliam na acessibilidade e na reformatação. Por exemplo, um número de página pode ser marcado como um artefato para que um leitor de tela não o enuncie no meio do texto. Embora as tags tornem um documento mais útil, elas também aumentam o tamanho do documento e o tempo de processamento para criá-lo. |
 | config/present/pdf/fontInfo/alwaysEmbed | Especifica uma fonte que está incorporada no documento de saída. |
 | config/present/pdf/fontInfo/neverEmbed | Especifica uma fonte que nunca deve ser incorporada ao documento de saída. |
-| config/present/pdf/pdfa/part | Especifica o número da versão da especificação de PDF/A com a qual o documento está em conformidade. |
-| config/present/pdf/pdfa/amd | Especifica o nível de alteração da especificação PDF/A. |
+| config/present/pdf/pdfa/part | Especifica o número da versão da especificação do PDF/A com a qual o documento está em conformidade. |
+| config/present/pdf/pdfa/amd | Especifica o nível de correção da especificação PDF/A. |
 | config/present/pdf/pdfa/conformance | Especifica o nível de conformidade com a especificação PDF/A. |
-| config/present/pdf/version | Especifica a versão do documento PDF a ser gerada |
+| config/present/pdf/version | Especifica a versão do documento do PDF a ser gerada |
 | config/present/pdf/version/map | Especifica as fontes de fallback do documento |
 
 >[!NOTE]
 >
-> O AEM Forms oferece uma variedade de fontes integradas que se integram perfeitamente com arquivos PDF. Para ver a lista de fontes com suporte, [clique aqui](/help/forms/supported-out-of-the-box-fonts.md).
+> O AEM Forms oferece uma variedade de fontes integradas que se integram perfeitamente aos arquivos PDF. Para ver a lista de fontes com suporte, [clique aqui](/help/forms/supported-out-of-the-box-fonts.md).
 
 
 ### Usar um arquivo XCI personalizado no ambiente as a Cloud Service do Forms
@@ -509,9 +510,9 @@ Um arquivo XCI ajuda a definir várias propriedades de um documento. O Forms as 
     }
    ```
 
-1. Implante o projeto no seu ambiente Cloud Service.
+1. Implante o projeto no seu ambiente do Cloud Service.
 
-### Usar um arquivo XCI personalizado no ambiente de desenvolvimento as a Cloud Service do Forms local
+### Usar um arquivo XCI personalizado no ambiente de desenvolvimento local do Forms as a Cloud Service
 
 1. Carregue o arquivo XCI no ambiente de desenvolvimento local.
 1. Abra o gerenciador de configurações do Cloud Service SDK. A URL padrão é: <http://localhost:4502/system/console/configMgr>.

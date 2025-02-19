@@ -1,13 +1,13 @@
 ---
 title: Como criar o Modelo de dados de formulário (FDM)?
-description: Saiba como criar um modelo de dados de formulário (FDM) e enviar ou recuperar dados para uma fonte de dados usando um Formulário adaptável ou um Fluxo de trabalho do AEM.
+description: Saiba como criar um modelo de dados de formulário (FDM) e enviar ou recuperar dados para uma fonte de dados usando um formulário adaptável ou um fluxo de trabalho do AEM.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
-source-wordcount: '1543'
+source-wordcount: '1542'
 ht-degree: 1%
 
 ---
@@ -110,7 +110,7 @@ Para habilitar configurações de nuvem específicas da implantação no [!UICON
 1. Integrar configuração de nuvem no Projeto do Arquétipo [!DNL Experience Manager].
    1. Descompacte o pacote baixado.
    1. Copie a pasta `jcr_root` e coloque-a como `ui.content` > `src` > `main` > `content`.
-   1. Atualize `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` para conter o filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Para obter detalhes, consulte o [módulo ui.content do Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Quando esse projeto de arquétipo é implantado por meio do pipeline CM, a mesma configuração de nuvem é instalada em todos os ambientes (ou modos de execução). Para alterar o valor de campos (como URL) das configurações de nuvem com base no ambiente, use a configuração OSGi discutida na etapa a seguir.
+   1. Atualize `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` para conter o filtro `/conf/{foldername}/settings/cloudconfigs/fdm`. Para obter detalhes, consulte o [módulo ui.content do Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Quando esse projeto de arquétipo é implantado por meio do pipeline CM, a mesma configuração de nuvem é instalada em todos os ambientes (ou modos de execução). Para alterar o valor de campos (como URL) das configurações de nuvem com base no ambiente, use a configuração OSGi discutida na etapa a seguir.
 
 1. Crie uma configuração com reconhecimento de contexto do Apache Sling. Para criar a configuração OSGi:
    1. **Configure os arquivos de configuração OSGi no projeto do Arquétipo [!DNL Experience Manager].**
@@ -123,14 +123,15 @@ Crie arquivos de Configuração de Fábrica OSGi com PID `org.apache.sling.cacon
       1. Em substituições, forneça campos que precisam ser alterados com base no ambiente na sintaxe de substituição do sling. Para obter detalhes, consulte [Configuração com reconhecimento de contexto do Apache Sling - Substituição](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Por exemplo, `cloudconfigs/fdm/{configName}/url="newURL"`.
 Várias substituições podem ser adicionadas selecionando **[!UICONTROL +]**.
       1. Selecione **[!UICONTROL Salvar]**.
-      1. Para obter o JSON de Configuração OSGi, siga as etapas em [Geração de Configurações OSGi usando o Quickstart do SDK do AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
+      1. Para obter o JSON de Configuração OSGi, siga as etapas em [Geração de Configurações OSGi usando o Quickstart do AEM SDK](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
       1. Coloque o JSON nos arquivos de configuração de fábrica OSGi criados na etapa anterior.
       1. Alterar o valor de `newURL` com base no ambiente (ou modo de execução).
       1. Para alterar o valor secreto com base no modo de execução, a variável secreta pode ser criada usando a [API do Cloud Manager](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) e posterior, e pode ser referenciada na [Configuração OSGi](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
 Quando esse projeto de arquétipo é implantado por meio do pipeline CM, a substituição fornecerá valores diferentes em ambientes diferentes (ou modo de execução).
+
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] usuários podem criptografar os valores secretos usando o suporte a criptografia (para obter detalhes, consulte [suporte a criptografia para propriedades de configuração](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) e coloque o texto criptografado no valor após [configurações com reconhecimento de contexto estarem disponíveis no service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
+      >[!DNL Adobe Managed Service] usuários podem criptografar os valores secretos usando o suporte de criptografia para obter detalhes. Consulte [suporte de criptografia para propriedades de configuração](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) e coloque o texto criptografado no valor após [configurações com reconhecimento de contexto estarem disponíveis no service pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
 
 1. Atualize as definições de fonte de dados usando a opção para atualizar as definições de fonte de dados no [Editor de Modelo de Dados de Formulário](#data-sources) para atualizar o cache do FDM por meio da interface do FDM e obter a configuração mais recente.
 

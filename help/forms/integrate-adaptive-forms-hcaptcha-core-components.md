@@ -1,12 +1,12 @@
 ---
-title: Como usar o hCaptcha&reg; em um Componente principal de formulário adaptável de AEM?
+title: Como usar o hCaptcha&reg; em componentes principais de formulários adaptáveis do AEM?
 description: Melhore a segurança dos formulários com o serviço hCaptcha&reg; sem esforço. Guia passo a passo no interior.
 topic-tags: Adaptive Forms, author
 keywords: Captcha&reg; serviço, Forms adaptável, desafio de CAPTCHA, Prevenção de bot, Componentes principais, Segurança de envio de formulário, Prevenção de spam de formulário
 feature: Adaptive Forms, Core Components
 exl-id: 6c559df2-7b6a-42fe-b44c-29a782570a0c
 role: User, Developer
-source-git-commit: 553f456f0eab43cee11fb9e66ce9e1dbacdc2b5c
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 24%
@@ -15,7 +15,7 @@ ht-degree: 24%
 
 # Conecte seu ambiente AEM Forms com o hCaptcha® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview"> Este recurso está em Early Adoter Program. Você pode escrever para aem-forms-ea@adobe.com da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
+<span class="preview"> Este recurso está em Early Adoter Program. Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
 O CAPTCHA (um teste de Turing público e completamente automatizado para diferenciar computadores e humanos) é um programa comumente usado em transações online para distinguir entre humanos e programas ou bots automatizados. O recurso apresenta um desafio e avalia a resposta do usuário para determinar se é um humano ou um bot interagindo com o site. O CAPTCHA impede que o usuário prossiga se o teste falhar e ajuda a tornar as transações online seguras, evitando que bots publiquem spam ou outro conteúdo mal-intencionado.
 
@@ -41,8 +41,8 @@ Para configurar o hCaptcha® com AEM Forms, você precisa obter a [chave do site
 
 Para integrar o AEM Forms com o serviço hCaptcha®, execute as seguintes etapas:
 
-1. Crie um contêiner de configuração no ambiente as a Cloud Service do AEM Forms. Um Contêiner de configuração contém as Configurações de nuvem usadas para conectar o AEM a serviços externos. Para criar e configurar um Contêiner de configuração para conectar seu ambiente AEM Forms com o hCaptcha®:
-   1. Abra a instância as a Cloud Service do AEM Forms.
+1. Crie um Contêiner de configuração em seu ambiente AEM Forms as a Cloud Service. Um Contêiner de configuração contém as Configurações de nuvem usadas para conectar o AEM a serviços externos. Para criar e configurar um Contêiner de configuração para conectar seu ambiente AEM Forms com o hCaptcha®:
+   1. Abra a instância do AEM Forms as a Cloud Service.
    1. Vá para **[!UICONTROL Ferramentas > Geral > Navegador de Configuração]**.
    1. No Navegador de configuração, você pode selecionar uma pasta existente ou criar uma pasta. Você pode criar uma pasta e ativar a opção Configurações de nuvem para ela ou Ativar a opção Configurações de nuvem para uma pasta existente:
 
@@ -56,7 +56,7 @@ Para integrar o AEM Forms com o serviço hCaptcha®, execute as seguintes etapas
          1. Selecione **[!UICONTROL Salvar e fechar]** para salvar a configuração e sair da caixa de diálogo.
 
 1. Configure o Cloud Service:
-   1. Na instância do autor AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]** e selecione **[!UICONTROL hCaptcha®]**.
+   1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** e selecione **[!UICONTROL hCaptcha®]**.
       ![hCaptcha® na interface do usuário](assets/hcaptcha-in-ui.png)
    1. Selecione um Contêiner de configuração, criado ou atualizado, conforme descrito na seção anterior. Selecione **[!UICONTROL Criar]**.
       ![Captcha de Configuração®](assets/config-hcaptcha.png)
@@ -71,7 +71,7 @@ Para integrar o AEM Forms com o serviço hCaptcha®, execute as seguintes etapas
 
 ## Usar o hCaptcha® em um Forms Core Components adaptável {#using-hCaptcha®-core-components}
 
-1. Abra a instância as a Cloud Service do AEM Forms.
+1. Abra a instância do AEM Forms as a Cloud Service.
 1. Ir para **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
 1. Selecione um Formulário adaptável e selecione **[!UICONTROL Propriedades]**. Para a opção **[!UICONTROL Contêiner de configuração]**, selecione o Contêiner de configuração que contém a Configuração na nuvem que conecta o AEM Forms com o hCaptcha® e selecione **[!UICONTROL Salvar e fechar]**.
 
@@ -91,9 +91,11 @@ Para integrar o AEM Forms com o serviço hCaptcha®, execute as seguintes etapas
    * **Tamanho do Captcha:** Você pode selecionar o tamanho de exibição da caixa de diálogo de desafio do hCaptcha®. Use a opção **[!UICONTROL Compacto]** para exibir uma uma caixa de diálogo de desafio hCaptcha® de tamanho pequeno e a opção **[!UICONTROL Normal]** para exibir uma de tamanho relativamente grande.<!-- or **[!UICONTROL Invisible]** to validate hCaptcha&reg; without explicitly rendering the checkbox widget on the user interface. -->
    * **[!UICONTROL Mensagem de validação]:** Forneça uma mensagem de validação para a validação Captcha no envio do formulário.
    * **[!UICONTROL Mensagem de validação de script]**: essa opção permite inserir uma mensagem que será exibida se a validação do script falhar.
+
      >[!NOTE]
      >Você pode ter várias configurações de nuvem no seu ambiente para uma finalidade semelhante. Então, escolha o serviço com cuidado. Se nenhum serviço estiver listado, consulte [Conectar seu ambiente AEM Forms com o hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service) para saber como criar um Cloud Service que conecta seu ambiente AEM Forms com o serviço hCaptcha®.
-     <!--* **Error Message:** Provide the error message to display to the user when the Captcha submission fails.-->
+
+   <!--* **Error Message:** Provide the error message to display to the user when the Captcha submission fails.-->
 
 1. Selecione **[!UICONTROL Concluído]**.
 

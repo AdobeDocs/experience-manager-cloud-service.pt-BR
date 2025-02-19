@@ -3,7 +3,8 @@ title: Como configurar modelos de dados de formulário prontos para uso do Micro
 description: Saiba como integrar o Microsoft Dynamics 365 com o Adaptive Forms.
 feature: Adaptive Forms, Form Data Model
 role: User, Developer
-source-git-commit: 25284474793742a1af28e3c81976a3061d9eaf3e
+exl-id: 29ee324c-cd4c-403b-bb3d-b1eda8e8ad88
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 0%
@@ -51,6 +52,7 @@ Crie uma conta no **Centro de Administração da Plataforma de Energia** para:
    * Habilitar aplicativos do Microsoft Dynamics 365
 
    Siga as etapas no vídeo para criar uma conta no Centro de administração da plataforma de energia. Neste vídeo, uma conta de avaliação foi criada para fins de demonstração.
+
    >[!VIDEO](https://video.tv.adobe.com/v/3444388)
 
 1. **Registrar um aplicativo para [!DNL Microsoft® Dynamics 365] no Azure Ative Diretory**

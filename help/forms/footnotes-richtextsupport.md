@@ -4,7 +4,7 @@ description: Use o editor de rich text (RTE) para notas de rodapé em um formul�
 feature: Adaptive Forms, Foundation Components
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 role: User, Developer
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 **[!UICONTROL Nota de Rodapé]** é o bit extra de informações ou anotações que aparecem no final da página. A [!UICONTROL Nota de Rodapé] compreende as notas indicadas no texto com números em sobrescrito.
 
@@ -51,6 +51,7 @@ Para adicionar uma nota de rodapé no Adaptive Forms, execute as seguintes etapa
    >* Se houver notas de rodapé duplicadas, a numeração será a mesma para todas as notas de rodapé duplicadas.
 
 1. No navegador de componentes, arraste e solte o componente **[!UICONTROL Espaço Reservado para Nota de Rodapé]** no Formulário Adaptável.
+
    >[!NOTE]
    >
    >* Na instância de publicação, as notas de rodapé são exibidas na posição em que o componente **[!UICONTROL Espaço Reservado para Nota de Rodapé]** é colocado no Formulário adaptável.

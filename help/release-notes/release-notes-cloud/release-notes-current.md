@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 7c65208b948345ea185032a04595ffe65e95876d
+source-git-commit: f81e8434029ade26dd2c30b249537699971e9a4b
 workflow-type: tm+mt
 source-wordcount: '1750'
 ht-degree: 11%
@@ -128,7 +128,7 @@ Legendas de vídeo geradas por IA no Adobe Dynamic Media usam inteligência arti
 
 #### Gerenciar publicação   
 
-Você pode usar o fluxo de trabalho &quot;Gerenciar publicação&quot; para publicar ou desfazer a publicação de formulários em ambientes, normalmente da instância do autor para as instâncias de publicação e pré-visualização. Ele permite que os usuários publiquem, desfaçam a publicação ou agendem a publicação de conteúdo de maneira simplificada.
+Você pode usar o fluxo de trabalho [Gerenciar Publicação](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) para publicar ou desfazer a publicação de formulários entre ambientes, normalmente da instância de criação para as instâncias de publicação e visualização. Ele permite que os usuários publiquem, desfaçam a publicação ou agendem a publicação de conteúdo de maneira simplificada.
 
 #### Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável
 
