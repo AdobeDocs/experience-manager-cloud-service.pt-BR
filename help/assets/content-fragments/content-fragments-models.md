@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
 workflow-type: tm+mt
 source-wordcount: '3120'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
@@ -261,6 +261,7 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 * **[Referência de fragmento](#fragment-reference-nested-fragments)** (fragmentos aninhados)
    * Faz referência a outros fragmentos, dependendo dos modelos especificados.
    * Permite incluir/recuperar dados estruturados.
+
      >[!NOTE]
      >
      Este método é especialmente interessante quando utilizado em conjunto com a [Entrega de conteúdo headless usando fragmentos de conteúdo com GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
@@ -434,6 +435,7 @@ Para configurar as **políticas** para **modelos de fragmento de conteúdo permi
 1. **Salve** quaisquer alterações.
 
 Os modelos de fragmento de conteúdo permitidos para uma pasta são resolvidos da seguinte maneira:
+
 * As **políticas** para **modelos de fragmento do conteúdo permitidos**.
 * Se estiver vazia, tente determinar a política usando as regras de herança.
 * Se a cadeia de herança não fornecer um resultado, verifique a configuração de **Cloud Services** dessa pasta (diretamente e, em seguida, por herança).
@@ -510,7 +512,7 @@ Esse recurso fornece o controle dos modelos de fragmento de conteúdo que foram 
 
 ### Os requisitos {#the-requirements}
 
-* Conscientizar os usuários sobre os riscos de se editar modelos que já são usados para a entrega de conteúdo em tempo real (em outras palavras, modelos que foram publicados).
+* Conscientizar os usuários sobre os riscos de se editar modelos que já são usados para a entrega de conteúdo em tempo real, em outras palavras, modelos que foram publicados.
 
 * Além disso, evitar alterações não intencionais.
 
