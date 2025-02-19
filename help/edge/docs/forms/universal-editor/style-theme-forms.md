@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: d055ac12b8f36deb4e0244df7b6d5df8ec627557
+source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Até o final do artigo:
 
 ## Noções básicas sobre tipos de campos de formulário
 
-Antes de mergulhar no estilo, vamos rever os [tipos de campo](/help/edge/docs/forms/form-components.md) de formulário comuns compatíveis com o Bloco de Forms adaptável:
+Antes de mergulhar no estilo, vamos rever os [tipos de campo](/help/edge/docs/forms/universal-editor/create-custom-component.md#supported-fieldtypes) de formulário comuns compatíveis com o Bloco de Forms adaptável:
 
 * Campos de entrada: incluem entradas de texto, entradas de email, entradas de senha e muito mais.
 * Grupos de caixas de seleção: usado para selecionar várias opções.
@@ -57,17 +57,17 @@ O bloco Forms adaptável oferece uma estrutura HTML padronizada, simplificando o
 Exemplo:
 
   ```css
-  main .form form input {
-    /* Add styles specific to input fields inside the form */
-  }
+    main .form form input {
+        /* Add styles specific to input fields inside the form */
+    }
   
-  main .form form button {
-    /* Add styles specific to buttons inside the form */
-  }
+    main .form form button {
+        /* Add styles specific to buttons inside the form */
+    }
   
-  main .form form label {
-    /* Add styles specific to labels inside the form */
-  }
+    main .form form label {
+        /* Add styles specific to labels inside the form */
+    }
   
 ## Estrutura dos componentes
 
@@ -90,10 +90,10 @@ Todos os campos de formulário, exceto os menus suspensos, grupos de opções e 
 ```
 
 * Classes: o elemento div tem várias classes para direcionar elementos específicos e estilo. Você precisa das classes `{Type}-wrapper` ou `field-{Name}` para desenvolver um Seletor de CSS para estilizar um campo de formulário:
-   * {Type}: Identifica o componente por tipo de campo. Por exemplo, texto (invólucro de texto), número (invólucro numérico), data (invólucro de data).
-   * {Name}: Identifica o componente por nome. O nome do campo pode ter apenas caracteres alfanuméricos, os vários traços consecutivos no nome são substituídos por um único traço `(-)` e os traços inicial e final em um nome de campo são removidos. Por exemplo, nome (field-first-name field-wrapper).
-   * {FieldId}: é um identificador exclusivo do campo, gerado automaticamente.
-   * {Required}: é um booleano indicando se o campo é obrigatório.
+* {Type}: Identifica o componente por tipo de campo. Por exemplo, texto (invólucro de texto), número (invólucro numérico), data (invólucro de data).
+* {Name}: Identifica o componente por nome. O nome do campo pode ter apenas caracteres alfanuméricos, os vários traços consecutivos no nome são substituídos por um único traço `(-)` e os traços inicial e final em um nome de campo são removidos. Por exemplo, nome (field-first-name field-wrapper).
+* {FieldId}: é um identificador exclusivo do campo, gerado automaticamente.
+* {Required}: é um booleano indicando se o campo é obrigatório.
 * Rótulo: o elemento `label` fornece um texto descritivo para o campo e o associa ao elemento de entrada usando o atributo `for`.
 * Entrada: o elemento `input` define o tipo de dados a serem inseridos. Por exemplo, texto, número, email.
 * Descrição (Opcional): O `div` com classe `field-description` fornece informações ou instruções adicionais para o usuário.
