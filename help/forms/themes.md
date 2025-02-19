@@ -4,7 +4,7 @@ description: Use temas de formulário adaptável para estilizar e fornecer uma i
 feature: Adaptive Forms, Foundation Components
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
 role: User, Developer, Admin
-source-git-commit: b5340c23f0a2496f0528530bdd072871f0d70d62
+source-git-commit: 449ff970f3b1e4479309e52d16aacf0979a0ec41
 workflow-type: tm+mt
 source-wordcount: '5558'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> A Adobe recomenda o uso de [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Adaptive Forms às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
+> A Adobe recomenda usar os [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR) de captura de dados moderna e extensível para [criar um novo Forms Adaptável](/help/forms/creating-adaptive-form-core-components.md) ou [adicionar o Forms Adaptável às páginas do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Esses componentes representam um avanço significativo na criação do Forms adaptável, garantindo experiências de usuário impressionantes. Este artigo descreve a abordagem mais antiga para criar o Forms adaptável usando componentes de base.
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -43,13 +43,13 @@ Um assistente para criar um tema é iniciado.
 
 1. Especifique um formulário para visualizar o tema no campo **[!UICONTROL Visualização Padrão deste Tema]**. Clique em **[!UICONTROL Usar Padrão]** para usar o formulário padrão para visualizar o tema.
 
-1. Especifique um **[!UICONTROL Contêiner de Configuração]**. Você pode escolher um **[!UICONTROL Contêiner de Configuração]** que contenha os detalhes de configuração da Fonte Adobe para sua conta. Você também pode deixar a opção em branco por enquanto e especificar os detalhes mais tarde em [propriedades de tema](#metadata-of-a-theme).
+1. Especifique um **[!UICONTROL Contêiner de Configuração]**. Você pode escolher um **[!UICONTROL Contêiner de Configuração]** que contenha os detalhes de configuração do Adobe Font para sua conta. Você também pode deixar a opção em branco por enquanto e especificar os detalhes mais tarde em [propriedades de tema](#metadata-of-a-theme).
 
 1. Clique em **[!UICONTROL Criar]** e em **[!UICONTROL Editar]** para abrir o tema no Editor de Temas ou clique em **[!UICONTROL Concluído]** para retornar à página de temas.
 
 ### Diferença de temas no Experience Manager 6.5 Forms e versões anteriores {#difference-in-themes}
 
-Temas criados em uma instância Cloud Service:
+Temas criados em uma instância do Cloud Service:
 
 * Ter a versão 2.
 
@@ -65,7 +65,7 @@ Temas criados em uma instância Cloud Service:
 
 ### Download de um tema {#downloading-a-theme}
 
-Você pode exportar temas como um arquivo zip e usá-los em outros projetos ou instâncias Experience Manager. Para baixar um tema:
+Você pode exportar temas como um arquivo zip e usá-los em outros projetos ou instâncias do Experience Manager. Para baixar um tema:
 
 1. Clique em **[!UICONTROL Adobe Experience Manager]**, clique em **[!UICONTROL Forms]** e em **[!UICONTROL Temas]**.
 
@@ -228,7 +228,7 @@ Um componente específico afeta objetos da categoria específica. Ao estilizar o
      Quando você personaliza todos os componentes do campo com uma cor de plano de fundo específica, todos os campos, como idade, nome e endereço, herdam a cor do plano de fundo. Quando você seleciona uma caixa numérica, como idade, e reduz sua largura, a largura de todas as caixas numéricas, como idade, número de pessoas em uma família é reduzida. A largura das caixas de texto não é alterada.
 
    * **Estado:** Permite personalizar estilos de um objeto em um estado específico. Por exemplo, você pode especificar a aparência de um objeto quando ele estiver em estado padrão, de foco, desativado, ao passar o mouse ou erro.
-   * **Categorias de Propriedade:** as propriedades de estilo são divididas em várias categorias. Por exemplo, Dimension e Posição, Texto, Plano de fundo, Borda e Efeitos. Em cada categoria, você fornece informações de estilo. Por exemplo, em Plano de fundo, você pode fornecer Cor do plano de fundo e Imagem e gradiente.
+   * **Categorias de Propriedade:** as propriedades de estilo são divididas em várias categorias. Por exemplo, Dimension &amp; Posição, Texto, Plano de fundo, Borda e Efeitos. Em cada categoria, você fornece informações de estilo. Por exemplo, em Plano de fundo, você pode fornecer Cor do plano de fundo e Imagem e gradiente.
 
    * **Avançado:** permite que você adicione CSS personalizado a um objeto, o que substitui as propriedades que os controles visuais definem se há uma sobreposição.
 
@@ -489,14 +489,14 @@ Um ponto de interrupção representa um dispositivo móvel e seu tamanho de exib
 
 Você pode estilizar componentes de <!-- or interactive communication --> para vários dispositivos. Os componentes do formulário <!-- and interactive communication --> para desktops e dispositivos móveis podem ter estilos totalmente diferentes.
 
-### Uso de Web Fonts em um tema {#using-web-fonts-in-a-theme}
+### Uso do Web Fonts em um tema {#using-web-fonts-in-a-theme}
 
-Agora você pode usar as fontes disponíveis em um serviço Web em um Formulário Adaptável <!-- or interactive communication -->. O [Adobe Fonts](https://fonts.adobe.com/), serviço de fontes da Web Adobe, pronto para uso, está disponível como configuração. Para usar o Adobe Fonts, crie um kit, adicione fontes a ele e obtenha a ID do Kit da [Adobe Fonts](https://fonts.adobe.com/).
+Agora você pode usar as fontes disponíveis em um serviço Web em um Formulário Adaptável <!-- or interactive communication -->. O [Adobe Fonts](https://fonts.adobe.com/), o serviço de fontes da Web da Adobe, está disponível como uma configuração pronta para uso. Para usar o Adobe Fonts, crie um kit, adicione fontes a ele e obtenha a ID do Kit da [Adobe Fonts](https://fonts.adobe.com/).
 
 Para configurar o Adobe Fonts no Experience Manager, execute as seguintes etapas:
 
-1. Na instância do autor, clique em ![Adobe Experience Manager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager ]**>**[!UICONTROL  Ferramentas ]**![martelo](assets/hammer.png) >**[!UICONTROL  Implantação ]**>**[!UICONTROL  Cloud Service ]**.
-1. Na página **[!UICONTROL Cloud Service]**, navegue até a opção **[!UICONTROL Adobe Fonts]** e abra-a. Abra a pasta de configuração e clique em **[!UICONTROL Criar]**.
+1. Na instância do autor, clique em ![Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Ferramentas]** ![martelo](assets/hammer.png) > **[!UICONTROL Implantação]** > **[!UICONTROL Serviços na Nuvem]**.
+1. Na página **[!UICONTROL Cloud Services]**, navegue até a opção **[!UICONTROL Adobe Fonts]** e abra-a. Abra a pasta de configuração e clique em **[!UICONTROL Criar]**.
 1. Na caixa de diálogo **[!UICONTROL Criar Configuração]**, especifique um título para a configuração e clique em **[!UICONTROL Criar]**.
 
    Você é redirecionado para a página de configuração.
@@ -606,7 +606,7 @@ Depois de personalizar o tema, aplique-o ao formulário <!-- or interactive comm
 
 ## Impacto em outros casos de uso do Formulário adaptável {#impact-on-other-adaptive-form-use-cases}
 
-* **Publish/desfazer a publicação de um formulário:** Ao publicar um formulário, o tema aplicado a também será publicado (se ainda não tiver sido publicado)
+* **Publicar/desfazer a publicação de um formulário:** Ao publicar um formulário, o tema aplicado a ele também será publicado (se ainda não tiver sido publicado)
 * **Importar/Exportar um formulário:** Ao importar ou exportar um formulário, seu tema associado também é automaticamente importado ou exportado.
 * **Referências de um formulário:** A seção Referências em referências de formulário contém uma entrada extra para o tema.
 * **Hora da Última Modificação de um formulário:** Atualizado quando o tema associado é alterado.
