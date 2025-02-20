@@ -6,7 +6,7 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 7f4257433c441eb6b0109f22545b3ef708c9323b
+source-git-commit: b51be0344d0a7bc4958aee4c99e08630aec7ce41
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 0%
@@ -845,6 +845,9 @@ main .form form .field-otp input {
 Este CSS destina-se a todos os elementos de entrada localizados em um elemento que tem a classe `field-otp`. A estrutura do HTML do seu formulário segue as convenções do Bloco de Forms adaptável, isso implica que há um container marcado com a classe &quot;field-otp&quot; que contém o campo com o nome &quot;otp&quot;.
 
 +++
+
+
+
 
 ## Consulte também:
 
