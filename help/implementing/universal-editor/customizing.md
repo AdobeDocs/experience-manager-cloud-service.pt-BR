@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para personalizar o Editor 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: cdad4954b13f5582bebfd604220da90529231ccd
+source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ Portanto, o botão **Publicar** pode ser totalmente suprimido em um aplicativo a
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish"/>
+```
+
+## Desativar publicação para visualização {#publish-preview}
+
+Alguns fluxos de trabalho de criação podem impedir a publicação no [serviço de visualização](/help/sites-cloud/authoring/sites-console/previewing-content.md) (se disponível).
+
+A opção **Visualizar** na janela de publicação pode, portanto, ser totalmente suprimida em um aplicativo adicionando os seguintes metadados.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
 ```
 
 ## Componentes de filtragem {#filtering-components}
