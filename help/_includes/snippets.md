@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3a12fff170f521f6051f0c24a4eb28a12439eec1
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1392'
 ht-degree: 3%
 
 ---
@@ -56,6 +56,17 @@ ht-degree: 3%
 * [Conectar um formulário adaptável ao Microsoft](/help/forms/configure-msdynamics.md)
 * [Conectar um formulário adaptável ao Adobe Marketo Engage](/help/forms/integrate-form-to-marketo-engage.md)
 * [Criar ação de envio personalizada](/help/forms/custom-submit-action-for-adaptive-forms-based-on-core-components.md)
+
+## Editor universal{#universal-editor-see-also}
+
+* [Introdução ao Edge Delivery Services para AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Publicar seu formulário](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Enviar o formulário](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Personalizar a aparência dos formulários](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Criar regras para o formulário](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Usar reCAPTCHA em seu formulário](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+* [Criar um componente personalizado para o seu formulário](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Visualizar formulário no modo responsivo](/help/edge/docs/forms/universal-editor/responsive-layout.md)
 
 ## Consulte também: {#see-more-forms-eds}
 

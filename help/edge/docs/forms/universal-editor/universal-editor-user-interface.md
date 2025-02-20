@@ -4,13 +4,13 @@ description: Este tutorial ajuda você a começar a usar a interface do Universa
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: f62bccacd3252422899a35d2b431450c919982de
+exl-id: 90321e81-bb55-48b2-b329-4944bf926309
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1425'
 ht-degree: 0%
 
 ---
-
 
 # Explorar a interface do editor universal (WYSIWYG)
 
@@ -231,16 +231,6 @@ A opção **Excluir** exclui um componente, que é selecionado na árvore de con
 O editor permite editar o formulário, e o formulário especificado na barra de localização é renderizado na área de edição. Se o editor estiver no modo de visualização, você poderá navegar pelo formulário usando os botões e links disponíveis.
 ![Editor](/help/edge/docs/forms/universal-editor/assets/ue-editor.png){width=50%,height=50%}
 
-## Consulte também
+## Consulte também:
 
-* [Introdução ao Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
-* [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
-* [Monitoramento de uso real](https://www.aem.live/developer/rum#authentication)
-
-
+{{universal-editor-see-also}}

@@ -4,10 +4,10 @@ description: Este artigo explica como visualizar formulários usando diferentes 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: 222ee977f6ee76908fecf9cb3171287fddba8790
+source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 1%
+source-wordcount: '360'
+ht-degree: 2%
 
 ---
 
@@ -65,16 +65,9 @@ O Editor universal fornece diferentes emuladores para visualizar formulários em
 
 Você pode usar o ícone **Rotador de Tela** para alternar entre as orientações retrato e paisagem ao visualizar um formulário em diferentes dispositivos. Ele ajuda os desenvolvedores a testar como o design responsivo se adapta às rotações de tela em vários dispositivos.
 
-## Consulte também
+## Consulte também:
 
-* [Introdução ao Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
-* [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
-* [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
-* [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
-* [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
-* [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
-* [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
-* [Monitoramento de uso real](https://www.aem.live/developer/rum#authentication)
+{{universal-editor-see-also}}
+
 
 
