@@ -4,9 +4,9 @@ description: Configuração das regras de filtro de tráfego, incluindo as regra
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
 workflow-type: tm+mt
-source-wordcount: '4049'
+source-wordcount: '4215'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ As regras de filtro de tráfego podem ser implantadas por meio de pipelines de c
 [Siga um tutorial](#tutorial) para criar rapidamente uma experiência concreta sobre esse recurso.
 
 >[!NOTE]
->Para obter opções adicionais relacionadas à configuração do tráfego na CDN, incluindo edição da solicitação/resposta, declaração de redirecionamentos e proxy para uma origem não AEM, consulte o artigo [Configuração de Tráfego na CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md).
+>Para obter opções adicionais relacionadas à configuração do tráfego na CDN, incluindo edição da solicitação/resposta, declaração de redirecionamentos e proxy para uma origem que não seja da AEM, consulte o artigo [Configuração de Tráfego na CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md).
 
 
 ## Como este artigo está organizado {#how-organized}
@@ -49,21 +49,21 @@ Este artigo está organizado nas seguintes seções:
 * **Regras de Início Recomendadas:** Um conjunto de regras para começar a usar.
 * **Tutorial:** conhecimento prático sobre o recurso, incluindo como usar ferramentas do painel para declarar as regras certas.
 
-O Adobe solicita seu feedback ou faça perguntas sobre as regras de filtro de tráfego enviando um email para **aemcs-waf-adopter@adobe.com**.
+A Adobe convida você a fornecer feedback ou fazer perguntas sobre as regras de filtro de tráfego enviando um email para **aemcs-waf-adopter@adobe.com**.
 
 ## Visão geral da proteção de tráfego {#traffic-protection-overview}
 
 No cenário digital atual, o tráfego mal-intencionado é uma ameaça constante. A Adobe reconhece a gravidade do risco e oferece várias abordagens para proteger os aplicativos do cliente e mitigar os ataques quando eles ocorrem.
 
-Na borda, o CDN gerenciado por Adobe absorve ataques de DoS na camada de rede (camadas 3 e 4), incluindo ataques de inundação e de reflexão/amplificação.
+Na borda, o Adobe Managed CDN absorve ataques de DoS na camada de rede (camadas 3 e 4), incluindo ataques de inundação e de reflexão/amplificação.
 
-Por padrão, o Adobe adota medidas para evitar a degradação do desempenho devido a picos de tráfego inesperadamente alto além de um determinado limite. Se houver um ataque de DoS que afete a disponibilidade do site, as equipes de operações do Adobe serão alertadas e tomarão medidas para atenuar o problema.
+Por padrão, o Adobe toma medidas para evitar a degradação do desempenho devido a picos de tráfego inesperadamente alto além de um determinado limite. Se houver um ataque de DoS que afete a disponibilidade do site, as equipes de operações da Adobe serão alertadas e tomarão medidas para atenuar o problema.
 
 Os clientes podem tomar medidas proativas para atenuar os ataques à camada do aplicativo (camada 7), configurando regras em várias camadas do fluxo de entrega de conteúdo.
 
 Por exemplo, na camada do Apache, os clientes podem configurar o [módulo do Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou o [ModSecurity](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) para limitar o acesso a determinado conteúdo.
 
-Como este artigo descreve, as regras de filtro de tráfego podem ser implantadas na CDN gerenciada por Adobe, usando os [pipelines de configuração](/help/operations/config-pipeline.md) da Cloud Manager. Além das regras de filtro de tráfego baseadas em propriedades como endereço IP, caminho e cabeçalhos ou regras baseadas na definição de limites de taxa, os clientes também podem licenciar uma subcategoria poderosa de regras de filtro de tráfego chamada regras de WAF.
+Como este artigo descreve, as regras de filtro de tráfego podem ser implantadas na CDN Gerenciada pela Adobe, usando os [pipelines de configuração](/help/operations/config-pipeline.md) da Cloud Manager. Além das regras de filtro de tráfego baseadas em propriedades como endereço IP, caminho e cabeçalhos ou regras baseadas na definição de limites de taxa, os clientes também podem licenciar uma subcategoria poderosa de regras de filtro de tráfego chamada regras de WAF.
 
 ## Processo sugerido {#suggested-process}
 
@@ -206,7 +206,7 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 
 **Notas**
 
-* A propriedade de solicitação `clientIp` só pode ser usada com os seguintes predicados: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` também pode ser comparado a intervalos IP ao usar os predicados `in` e `notIn`. O exemplo a seguir implementa uma condição para avaliar se um IP de cliente está no intervalo IP de 192.168.0.0/24 (portanto, de 192.168.0.0 a 192.168.0.255):
+* A propriedade de solicitação `clientIp` só pode ser usada com os seguintes predicados: `equals`, `doesNotEqual`, `in`, `notIn`. `clientIp` também pode ser comparado a intervalos IP ao usar os predicados `in` e `notIn`. O exemplo a seguir implementa uma condição para avaliar se um IP de cliente está no intervalo de IP de 192.168.0.0/24 (então de 192.168.0.0 a 192.168.0.255):
 
 ```
 when:
@@ -214,7 +214,7 @@ when:
   in: [ "192.168.0.0/24" ]
 ```
 
-* A Adobe recomenda o uso de [regex101](https://regex101.com/) e [Fastly Fiddle](https://fiddle.fastly.dev/) ao trabalhar com regex. Você também pode saber mais sobre como o Fastly lida com o regex no [fastly documentation - Regular expressions in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
+* A Adobe recomenda o uso do [regex101](https://regex101.com/) e do [Fastly Fiddle](https://fiddle.fastly.dev/) ao trabalhar com o regex. Você também pode saber mais sobre como o Fastly lida com o regex no [fastly documentation - Regular expressions in Fastly VCL](https://www.fastly.com/documentation/reference/vcl/regex/#best-practices-and-common-mistakes).
 
 
 ### Estrutura de ação {#action-structure}
@@ -235,34 +235,51 @@ As ações são priorizadas de acordo com seus tipos na tabela a seguir, que é 
 
 A propriedade `wafFlags`, que pode ser usada nas regras de filtro de tráfego licenciáveis do WAF, pode fazer referência ao seguinte:
 
+#### Tráfego mal-intencionado
+
 | **ID do sinalizador** | **Nome do sinalizador** | **Descrição** |
 |---|---|---|
+| ATAQUE | Ataque | Sinalizador para identificar solicitações que contêm um ou vários tipos de ataque listados nessa tabela |
+| ATAQUE DE IP INVÁLIDO | Ataque de IP incorreto | Sinalizador para identificar solicitações provenientes de `BAD-IP` e que contêm um ou vários tipos de ataques listados nessa tabela |
 | SQLI | Injeção de SQL | A Injeção de SQL é a tentativa de obter acesso a um aplicativo ou obter informações privilegiadas executando consultas arbitrárias ao banco de dados. |
 | BACKDOOR | Backdoor | Um sinal backdoor é uma solicitação que tenta determinar se um arquivo backdoor comum está presente no sistema. |
 | CMDEXE | Execução de comando | Execução de Comando é a tentativa de obter controle ou danificar um sistema alvo através de comandos arbitrários do sistema por meio da entrada do usuário. |
-| CMDEXE-NO-BIN | Execução de Comando exceto em `/bin/` | Fornecer o mesmo nível de proteção que `CMDEXE` ao desabilitar o falso-positivo em `/bin` devido à arquitetura AEM. |
+| CMDEXE-NO-BIN | Execução de Comando exceto em `/bin/` | Forneça o mesmo nível de proteção que `CMDEXE` ao desabilitar o falso-positivo em `/bin` devido à arquitetura do AEM. |
 | XSS | Criação de script entre sites | Cross-Site Scripting é a tentativa de sequestrar a conta de um usuário ou a sessão de navegação na Web por meio de um código JavaScript mal-intencionado. |
 | PASSAGEM | Diretório de passagem | O Diretory Traversal é a tentativa de navegar pelas pastas privilegiadas em todo o sistema, na esperança de obter informações confidenciais. |
 | USERAGENT | Ferramentas de ataque | Ferramentas de ataque é o uso de software automatizado para identificar vulnerabilidades de segurança ou para tentar explorar uma vulnerabilidade detectada. |
 | LOG4J-JNDI | Log4J JNDI | Os ataques de JNDI do Log4J tentam explorar a [vulnerabilidade do Log4Shell](https://en.wikipedia.org/wiki/Log4Shell) presente nas versões do Log4J anteriores à 2.16.0 |
+| CVE | CVE | Sinalizador para identificar um CVE. É sempre combinado com um sinalizador `CVE-<CVE Number>`. Entre em contato com o Adobe para saber mais sobre quais CVEs o Adobe protegerá. |
+
+#### Tráfego suspeito
+
+| **ID do sinalizador** | **Nome do sinalizador** | **Descrição** |
+|---|---|---|
+| ANORMALPATH | Caminho anormal | Caminho Anormal indica que o caminho original difere do caminho normalizado (por exemplo, `/foo/./bar` está normalizado para `/foo/bar`) |
+| IP INCORRETO | IP inválido | Sinalizador para identificar solicitações provenientes de IPs identificadas como inválidas, seja porque há fontes mal-intencionadas (`SANS`, `TORNODE`) ou porque foram identificadas como inválidas pela WAF depois que enviaram muitas solicitações mal-intencionadas |
 | BHH | Cabeçalhos de salto inválidos | Os cabeçalhos de salto inválido indicam uma tentativa de contrabando de HTTP por meio de um cabeçalho TE (Transferir Codificação) ou CL (Conteúdo Comprimento) malformado, ou um cabeçalho TE e CL bem formado |
 | CODEINJECTION | Injeção de código | Injeção de código é a tentativa de obter controle ou danificar um sistema de destino através de comandos de código de aplicação arbitrários pela entrada do usuário. |
-| ANORMALPATH | Caminho anormal | Caminho Anormal indica que o caminho original difere do caminho normalizado (por exemplo, `/foo/./bar` está normalizado para `/foo/bar`) |
-| CODIFICAÇÃODUPLA | Codificação dupla | A Codificação dupla verifica a técnica de evasão de caracteres html de codificação dupla |
+| COMPACTADO | Compactação detectada | O corpo da solicitação POST está compactado e não pode ser inspecionado. Por exemplo, se um cabeçalho de solicitação `Content-Encoding: gzip` for especificado e o corpo POST não for texto simples. |
+| RESPONSESPLIT | Divisão de resposta HTTP | Identifica quando os caracteres CRLF são enviados como entrada para o aplicativo para inserir cabeçalhos na resposta HTTP |
 | NOTUTF8 | Codificação inválida | Codificação inválida pode fazer com que o servidor traduza caracteres mal-intencionados de uma solicitação em uma resposta, causando uma negação de serviço ou XSS |
-| ERRO JSON | Erro de codificação JSON | Um corpo de solicitação POST, PUT ou PATCH especificado como contendo JSON no cabeçalho de solicitação &quot;Content-Type&quot;, mas que contém erros de análise JSON. Isso geralmente está relacionado a um erro de programação ou a uma solicitação automatizada ou mal-intencionada. |
-| DADOS MALFORMADOS | Dados malformados no corpo da solicitação | Um corpo de solicitação POST, PUT ou PATCH que está malformado de acordo com o cabeçalho de solicitação &quot;Content-Type&quot;. Por exemplo, se um cabeçalho de solicitação &quot;Content-Type: application/x-www-form-urlencoded&quot; for especificado e contiver um corpo de POST que seja json. Isso geralmente é um erro de programação, uma solicitação automatizada ou mal-intencionada. Exige o agente 3.2 ou superior. |
+| DADOS MALFORMADOS | Dados malformados no corpo da solicitação | Um corpo de solicitação POST, PUT ou PATCH que esteja malformado de acordo com o cabeçalho de solicitação &quot;Content-Type&quot;. Por exemplo, se um cabeçalho de solicitação &quot;Content-Type: application/x-www-form-urlencoded&quot; for especificado e contiver um corpo POST que seja json. Isso geralmente é um erro de programação, uma solicitação automatizada ou mal-intencionada. Exige o agente 3.2 ou superior. |
 | SANS | Tráfego IP mal-intencionado | [Lista do SANS Internet Storm Center](https://isc.sans.edu/) de endereços IP relatados que realizaram atividades mal-intencionadas. |
 | NO-CONTENT-TYPE | Cabeçalho da solicitação &quot;Content-Type&quot; ausente | Uma solicitação POST, PUT ou PATCH que não tem um cabeçalho de solicitação &quot;Content-Type&quot;. Por padrão, os servidores de aplicativos devem assumir &quot;Content-Type: text/plain; charset=us-ascii&quot; neste caso. Muitas solicitações automatizadas e mal-intencionadas podem estar sem &quot;Tipo de conteúdo&quot;. |
 | NOUA | Nenhum agente de usuário | Indica que uma solicitação não continha o cabeçalho &quot;User-Agent&quot; ou que o valor do cabeçalho não foi definido. |
-| TORNODE | Tráfego Tor | Tor é um software que oculta a identidade de um usuário. Um pico no tráfego Tor pode indicar um invasor tentando mascarar sua localização. |
 | NULLBYTE | Byte nulo | Bytes nulos normalmente não aparecem em uma solicitação e indicam que a solicitação está malformada e é potencialmente maliciosa. |
+| OOB-DOMAIN | Domínio Fora de Banda | Domínios fora de banda geralmente são usados durante testes de penetração para identificar vulnerabilidades nas quais o acesso à rede é permitido. |
 | ARQUIVOPRIVADO | Arquivos privados | Os arquivos privados têm natureza confidencial, como um arquivo `.htaccess` do Apache, ou um arquivo de configuração que poderia vazar informações confidenciais |
 | SCANNER | Scanner | Identifica ferramentas e serviços de digitalização populares |
-| RESPONSESPLIT | Divisão de resposta HTTP | Identifica quando os caracteres CRLF são enviados como entrada para o aplicativo para inserir cabeçalhos na resposta HTTP |
-| XML-ERROR | Erro de codificação de XML | Um corpo de solicitação POST, PUT ou PATCH especificado como contendo XML dentro do cabeçalho de solicitação &quot;Content-Type&quot;, mas que contém erros de análise XML. Isso geralmente está relacionado a um erro de programação ou a uma solicitação automatizada ou mal-intencionada. |
-| DATA CENTER | Data center | Identifica a solicitação como proveniente de um provedor de hospedagem conhecido. Esse tipo de tráfego geralmente não é associado a um usuário final real. |
 
+#### Tráfego diverso
+
+| **ID do sinalizador** | **Nome do sinalizador** | **Descrição** |
+|---|---|---|
+| DATA CENTER | Data center | Identifica a solicitação como proveniente de um provedor de hospedagem conhecido. Esse tipo de tráfego geralmente não é associado a um usuário final real. |
+| CODIFICAÇÃODUPLA | Codificação dupla | A Codificação dupla verifica a técnica de evasão de caracteres html de codificação dupla |
+| ERRO JSON | Erro de codificação JSON | Um corpo de solicitação POST, PUT ou PATCH especificado como contendo JSON no cabeçalho de solicitação &quot;Content-Type&quot;, mas que contém erros de análise JSON. Isso geralmente está relacionado a um erro de programação ou a uma solicitação automatizada ou mal-intencionada. |
+| TORNODE | Tráfego Tor | Tor é um software que oculta a identidade de um usuário. Um pico no tráfego Tor pode indicar um invasor tentando mascarar sua localização. |
+| XML-ERROR | Erro de codificação de XML | Um corpo de solicitação POST, PUT ou PATCH especificado como contendo XML dentro do cabeçalho de solicitação &quot;Content-Type&quot;, mas que contém erros de análise XML. Isso geralmente está relacionado a um erro de programação ou a uma solicitação automatizada ou mal-intencionada. |
 
 ## Considerações {#considerations}
 
@@ -282,7 +299,7 @@ Alguns exemplos de regras se seguem. Consulte a [seção limite de taxa](#rate-l
 
 **Exemplo 1**
 
-Esta regra bloqueia solicitações provenientes de **IP 192.168.1.1**:
+Esta regra bloqueia solicitações provenientes de **IP192.168.1.1**:
 
 ```
 kind: "CDN"
@@ -477,11 +494,11 @@ data:
 
 ## Regras CVE {#cve-rules}
 
-Se o WAF estiver licenciado, o Adobe aplicará automaticamente regras de bloqueio para proteger contra muitos CVEs (vulnerabilidades e exposições comuns) conhecidos, e novos CVEs poderão ser adicionados logo após serem detectados. Os clientes não devem e não precisam configurar as regras CVE sozinhos.
+Se o WAF for licenciado, a Adobe aplicará automaticamente regras de bloqueio para proteger contra muitos CVEs (vulnerabilidades e exposições comuns) conhecidos, e novos CVEs poderão ser adicionados logo após serem detectados. Os clientes não devem e não precisam configurar as regras CVE sozinhos.
 
 Se uma solicitação de tráfego corresponder a um CVE, ela aparecerá na entrada de log CDN correspondente.
 
-Entre em contato com o suporte do Adobe se houver dúvidas sobre um CVE específico ou se houver uma regra CVE específica que sua organização deseja desativar.
+Entre em contato com o suporte da Adobe se houver dúvidas sobre um CVE específico ou se houver uma regra CVE específica que sua organização deseja desativar.
 
 ## Alertas de regras de filtro de tráfego {#traffic-filter-rules-alerts}
 
@@ -532,7 +549,7 @@ data:
 
 ## Logs CDN {#cdn-logs}
 
-O AEM as a Cloud Service fornece acesso aos logs CDN, que são úteis para casos de uso, incluindo otimização da taxa de ocorrência do cache e configuração das regras de filtro de tráfego. Os logs CDN aparecem na caixa de diálogo **Baixar Logs** do Cloud Manager, ao selecionar o serviço Autor ou Publish.
+O AEM as a Cloud Service fornece acesso aos logs CDN, que são úteis para casos de uso, incluindo otimização da taxa de ocorrência do cache e configuração das regras de filtro de tráfego. Os logs de CDN aparecem na caixa de diálogo **Baixar Logs** do Cloud Manager, ao selecionar o serviço Autor ou Publicar.
 
 Os logs do CDN podem ser atrasados em até cinco minutos.
 
@@ -642,11 +659,11 @@ Veja abaixo uma lista dos nomes de campo usados em logs CDN, juntamente com uma 
 
 ## Ferramentas do painel {#dashboard-tooling}
 
-O Adobe fornece um mecanismo para baixar ferramentas de painel no computador a fim de assimilar logs CDN baixados pelo Cloud Manager. Com essa ferramenta, você pode analisar seu tráfego para ajudar a criar as regras de filtro de tráfego apropriadas a serem declaradas, incluindo regras do WAF.
+O Adobe fornece um mecanismo para baixar ferramentas de painel no computador a fim de assimilar logs CDN baixados por meio do Cloud Manager. Com essa ferramenta, você pode analisar seu tráfego para ajudar a criar as regras de filtro de tráfego apropriadas a serem declaradas, incluindo regras do WAF.
 
 A ferramenta do painel pode ser clonada diretamente do [repositório GitHub AEMCS-CDN-Log-Analysis-Tooling](https://github.com/adobe/AEMCS-CDN-Log-Analysis-Tooling).
 
-[Tutorials](#tutorial) estão disponíveis para obter instruções concretas sobre como usar as ferramentas do painel.
+[Os tutoriais](#tutorial) estão disponíveis para obter instruções concretas sobre como usar as ferramentas do painel.
 
 ## Regras de início recomendadas {#recommended-starter-rules}
 
