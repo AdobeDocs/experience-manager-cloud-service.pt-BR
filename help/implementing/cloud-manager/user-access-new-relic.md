@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a078d45f81fc7081012ebf24fa8f46dc1a218cd7
+source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
 workflow-type: tm+mt
-source-wordcount: '1818'
-ht-degree: 41%
+source-wordcount: '1809'
+ht-degree: 40%
 
 ---
 
@@ -161,7 +161,7 @@ Se você foi adicionado como um usuário do New Relic One, conforme descrito em 
 
 1. O New Relic envia um email contendo um link para confirmar a conta.
 
-Se você concluir o processo de inscrição e não conseguir fazer logon em sua conta devido a mensagens de erro relacionadas a email ou senha, registre um tíquete de suporte por meio do [Admin Console](https://adminconsole.adobe.com/).
+Se você concluir o processo de inscrição e não conseguir fazer logon em sua conta devido a mensagens de erro relacionadas a email ou senha, registre um tíquete de suporte por meio da [Admin Console](https://adminconsole.adobe.com/).
 
 Se você não receber um email do New Relic, faça o seguinte:
 
@@ -179,11 +179,11 @@ As seguintes limitações se aplicam à adição de usuários à New Relic One:
 
 >[!NOTE]
 >
->Se nenhuma atividade for detectada na subconta da New Relic One por 90 dias ou mais, o agente APM será interrompido.
+>Se nenhuma atividade for detectada na subconta do New Relic One por 30 dias ou mais, o agente APM será interrompido.
 >
 >Siga as mesmas etapas na seção [Ativar a subconta do New Relic One](#activate-sub-account) deste documento para reativar a subconta do New Relic One.
 
-Para obter mais ajuda ou orientação sobre as ofertas da New Relic One para o seu programa AEM as a Cloud Service, abra um tíquete de suporte no [Portal de suporte do AEM](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+Para obter mais ajuda ou orientação sobre as ofertas da New Relic One para o seu Programa AEM as a Cloud Service, abra um tíquete de suporte no [Portal de Suporte da AEM](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 
 ## Perguntas frequentes {#faqs}
 
@@ -191,7 +191,7 @@ Para obter mais ajuda ou orientação sobre as ofertas da New Relic One para o s
 
 A Adobe monitora os serviços de autoria, publicação e visualização do AEM as a Cloud Service (quando disponíveis) por meio do plug-in Java da New Relic One. A Adobe habilita a telemetria e o monitoramento personalizados da APM da New Relic One em ambientes de produção e não produção do AEM as a Cloud Service.
 
-Sua conta da New Relic One é anexada a uma conta principal mantida pela Adobe e tem vários aplicativos subordinados a ela: três por ambiente do AEM as a Cloud Service.
+Sua conta do New Relic One é anexada a uma conta principal mantida pela Adobe e tem vários aplicativos subordinados a ela; três por ambiente AEM as a Cloud Service.
 
 * Um aplicativo para o serviço do Autor por ambiente
 * Um aplicativo para o serviço `Publish` por ambiente (incluindo o Golden Publish)
@@ -201,12 +201,13 @@ Observação:
 
 * Cada aplicativo usa uma chave de licença.
 * Os ambientes do AEM as a Cloud Service são subordinados a apenas uma conta da New Relic One.
-* As métricas e os eventos completos de monitoramento do New Relic One são retidos por três meses. &lt;!— CQDOC-22238 - Atualizado de sete dias para três meses. >
+* As métricas e os eventos completos de monitoramento do New Relic One são retidos por três meses.
+
 +++
 
 +++**O Adobe envia notificações de alerta do New Relic One?** {#alerting-new-relic}
 
-O Adobe fornece acesso ao New Relic One somente para fins de observação e não o usa para alertas de clientes ou alertas operacionais internos. As notificações para qualquer incidente são enviadas usando [perfis de notificação de usuário](/help/journey-onboarding/notification-profiles.md).
+A Adobe fornece acesso ao New Relic One somente para fins de observação e não o usa para alertas de clientes ou alertas operacionais internos. As notificações para qualquer incidente são enviadas usando [perfis de notificação de usuário](/help/journey-onboarding/notification-profiles.md).
 +++
 
 +++**Quem pode acessar os dados do New Relic One Cloud Service?** {#access-new-relic-cloud}
@@ -225,7 +226,7 @@ A New Relic One é a nova plataforma de observabilidade da New Relic e permite q
 
 A New Relic One fornece aos usuários a capacidade de pesquisar em todas as contas, nas quais têm acesso e visualizam dados de todos os serviços e hosts em uma única visualização.
 
-O suporte ao Adobe monitora o AEM as a Cloud Service com New Relic One e outras ferramentas, enquanto suas equipes ainda podem usar o New Relic para serviços e infraestrutura locais. Eles poderão visualizar os dados de contas da New Relic One gerenciadas pela Adobe e de contas da New Relic gerenciadas pelo cliente.
+O suporte da Adobe monitora o AEM as a Cloud Service com o New Relic One e outras ferramentas, enquanto suas equipes ainda podem usar o New Relic para serviços e infraestrutura locais. Eles poderão visualizar os dados de contas da New Relic One gerenciadas pela Adobe e de contas da New Relic gerenciadas pelo cliente.
 
 >[!NOTE]
 >
@@ -235,5 +236,5 @@ O suporte ao Adobe monitora o AEM as a Cloud Service com New Relic One e outras 
 
 +++**O agente APM da minha conta do New Relic One foi interrompido. O que aconteceu?** {#deactivated}
 
-[Os agentes APM serão interrompidos](#limitations) se nenhuma atividade for detectada por 90 dias ou mais. Siga as mesmas etapas na seção [Ativar a subconta do New Relic One](#activate-sub-account) deste documento para reativar a subconta do New Relic One.
+[Os agentes APM serão interrompidos](#limitations) se nenhuma atividade for detectada por 30 dias ou mais. Siga as mesmas etapas na seção [Ativar a subconta do New Relic One](#activate-sub-account) deste documento para reativar a subconta do New Relic One.
 +++
