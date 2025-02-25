@@ -4,19 +4,20 @@ description: Este artigo explica como visualizar formulários usando diferentes 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+hidefromtoc: true
+source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 2%
 
 ---
 
-
 # Modo responsivo na criação do WYSIWYG
 
 O [Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) permite que você visualize o Edge Delivery Services Forms com diferentes emuladores para ver a aparência do formulário durante a criação.
 
 O modo responsivo permite que os desenvolvedores criem layouts que se adaptam automaticamente a diferentes tamanhos de tela, incluindo desktops, tablets e dispositivos móveis. O Editor universal oferece suporte a emuladores para desktop, tablet e dispositivos móveis. Você pode definir a altura e a largura de acordo com o tamanho da tela e executar as seguintes ações:
+
 * Definir a orientação
 * Especificar largura e altura
 * Alterar a orientação
@@ -68,6 +69,3 @@ Você pode usar o ícone **Rotador de Tela** para alternar entre as orientaçõe
 ## Consulte também:
 
 {{universal-editor-see-also}}
-
-
-
