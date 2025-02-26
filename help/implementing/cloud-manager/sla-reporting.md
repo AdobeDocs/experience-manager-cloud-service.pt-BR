@@ -1,34 +1,34 @@
 ---
 title: Relatórios de SLA
-description: Saiba como ver o desempenho do seu ambiente de produção de AEM em relação ao Contrato de nível de serviço.
+description: Saiba como ver o desempenho do seu ambiente de produção do AEM em relação ao Service level agreement contratado.
 exl-id: 03932415-a029-4703-b44a-f86a87edb328
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 40a76e39750d6dbeb03c43c8b68cddaf515a2614
+source-git-commit: e6f5414454f79f46421593440587e81941a8f4c2
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 11%
+source-wordcount: '474'
+ht-degree: 12%
 
 ---
 
 
 # Relatórios de SLA {#sla-reporting}
 
-Saiba como ver o desempenho do seu ambiente de produção de AEM em relação ao SLA contratado (Contrato de nível de serviço).
+Saiba como ver o desempenho do seu ambiente de produção do AEM em relação ao SLA (Service level agreement) contratado.
 
 ## Exibir um relatório do SLA {#introduction}
 
-Os dados de relatório do SLA acompanham as métricas de desempenho de dois níveis de produção: Nível de criação e Nível de Publish.
+Os dados de relatório do SLA acompanham as métricas de desempenho de dois níveis de produção: Nível de criação e Nível de publicação.
 
 O gráfico de linhas de um ano selecionado inclui pontos de dados para cada mês de janeiro a dezembro. As métricas a seguir são rastreadas.
 
 | Métrica rastreada | Cor da linha | Descrição |
 | --- | --- | --- |
-| Camada do autor real | Verde claro | O tempo de atividade medido no Nível de Autor de produção depois de deduzidos os incidentes causados pelos fornecedores de Adobe ou Adobe. |
-| Contrato da camada do autor | Azul escuro | A SLA definida em seu contrato com o Adobe para a camada Autor. |
-| Publicar camada real | Laranja | O tempo de atividade medido no nível de produção do Publish, considerando incidentes causados por fornecedores de Adobe ou Adobe. |
-| Publicar camada de contrato | Vermelho | O SLA definido em seu contrato com o Adobe para o Publish Tier. |
+| Camada do autor real | Verde claro | O tempo de atividade medido na camada de autor de produção depois de deduzidos os incidentes causados pela Adobe ou pelos fornecedores da Adobe. |
+| Contrato da camada do autor | Azul escuro | A SLA definida em seu contrato com a Adobe para a camada Autor. |
+| Publicar camada real | Laranja | O tempo de atividade medido no nível de publicação de produção, considerando incidentes causados pela Adobe ou pelos fornecedores da Adobe. |
+| Publicar camada de contrato | Vermelho | O SLA definido em seu contrato com a Adobe para a camada de publicação. |
 
 **Para exibir um relatório do SLA:**
 
@@ -40,7 +40,7 @@ O gráfico de linhas de um ano selecionado inclui pontos de dados para cada mês
 
 1. Clique em **Relatórios do SLA**.
 
-   ![Gráfico de linhas de relatório do SLA](/help/implementing/cloud-manager/assets/cm-sla-report.png)
+   ![Gráfico de linhas de relatório do SLA](/help/implementing/cloud-manager/assets/cm-sla-report2.png)
 
 1. Clique no ano desejado para ver um gráfico de linhas de dados do SLA.
 
@@ -49,8 +49,6 @@ O gráfico de linhas de um ano selecionado inclui pontos de dados para cada mês
    * Passe o cursor sobre um ponto de dados no gráfico de linhas para mostrar os valores específicos desse ponto.
    * Abaixo do ano do gráfico de linhas, clique no ícone Download para salvar um arquivo de imagem PNG do gráfico de linhas.
    * Clique em um nome de métrica para ver apenas os dados dessa métrica. Ou pressione `Shift` no teclado ao selecionar ou desmarcar um ou mais nomes de métrica.
-
-   ![Exibição de dados detalhados](/help/implementing/cloud-manager/assets/cm-sla-download.png)
 
 ## Análise de eventos {#event-analysis}
 
@@ -62,7 +60,7 @@ Cada um dos incidentes tem um intervalo de tempo, uma causa e um conjunto de com
 
 ## Atualizar intervalo de relatórios do SLA {#refresh}
 
-Os relatórios do SLA fornecem informações sobre o desempenho do ambiente de produção de AEM e estão atualizados, mas não são instantâneos. A geração de relatórios do SLA acontece mensalmente e é gerada para novos programas marcados como `Production previous month`. Não é instantâneo. Devido a esse atraso, lembre-se do seguinte ao revisar seu relatório do SLA:
+Os relatórios do SLA fornecem informações sobre o desempenho do ambiente de produção do AEM e estão atualizados, mas não são instantâneos. A geração de relatórios do SLA acontece mensalmente e é gerada para novos programas marcados como `Production previous month`. Não é instantâneo. Devido a esse atraso, lembre-se do seguinte ao revisar seu relatório do SLA:
 
 * O SLA relatado é aquele que existia no início do mês, mesmo se o SLA mudou durante esse mês.
 * Se não havia SLA no início do mês porque o programa não existia, a SLA existente na data em que o programa foi criado se aplica.
@@ -70,3 +68,4 @@ Os relatórios do SLA fornecem informações sobre o desempenho do ambiente de p
 ## Visualizar ambientes {#preview}
 
 O ambiente de visualização é uma ferramenta para que os autores de conteúdo verifiquem a experiência final do conteúdo antes da publicação. Devido a essa funcionalidade, os ambientes de visualização não foram projetados com alta disponibilidade e não têm um SLA associado.
+
