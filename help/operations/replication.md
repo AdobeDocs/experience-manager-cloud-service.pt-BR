@@ -4,16 +4,16 @@ description: Saiba mais sobre distribuição e solução de problemas de replica
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 feature: Operations
 role: Admin
-source-git-commit: 4e57908ceebc820b64ce0ec5f8e5ba01ee6f5eb2
+source-git-commit: 68b21abbc00b6c766fc33bf70e259c8ad9fc8e59
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1704'
 ht-degree: 31%
 
 ---
 
 # Replicação {#replication}
 
-O Adobe Experience Manager as a Cloud Service usa o recurso [Distribuição de Conteúdo do Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover o conteúdo e replica-lo em um serviço de pipeline executado no Adobe Developer, que está fora do tempo de execução do AEM.
+O Adobe Experience Manager as a Cloud Service usa o recurso [Distribuição de Conteúdo do Sling](https://sling.apache.org/documentation/bundles/content-distribution.html) para mover o conteúdo e replicá-lo em um serviço de pipeline executado no Adobe Developer, que está fora do tempo de execução do AEM.
 
 >[!NOTE]
 >
@@ -44,9 +44,9 @@ Para efetuar a replicação automática deste recurso, habilite **Replicação A
 
 ### Gerenciar publicação    {#manage-publication}
 
-Gerenciar publicação oferece mais opções do que o Quick Publish, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação posterior.
+Gerenciar publicação oferece mais opções do que a Publicação rápida, permitindo a inclusão de páginas secundárias, a personalização das referências e o início de qualquer fluxo de trabalho aplicável, além de oferecer a opção de publicação posterior.
 
-A inclusão dos filhos de uma pasta na opção &quot;publicar mais tarde&quot; chama o fluxo de trabalho da Árvore de conteúdo do Publish, descrito neste artigo.
+A inclusão dos filhos de uma pasta na opção &quot;publicar mais tarde&quot; chama o fluxo de trabalho Publicar árvore de conteúdo, descrito neste artigo.
 
 Você pode encontrar informações mais detalhadas sobre Gerenciar publicação na [Documentação sobre princípios básicos de publicação](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication).
 
@@ -98,7 +98,7 @@ Criar um Modelo de Fluxo de Trabalho que use a etapa de processo `TreeActivation
 
 | Nome | descrição |
 | ------------- | ------------------------------------------- |
-| onlyModified | Nós modificados desde a última publicação |
+| onlyModified | Nós (novos e pré-existentes) que foram modificados desde a última publicação |
 | onlyAtivated | Nós publicados antes de |
 
 
@@ -131,7 +131,7 @@ O fluxo de trabalho processa o conteúdo em partes, cada uma representando um su
 
 Você pode acionar uma replicação em árvore ao escolher **Ferramentas - Fluxo de trabalho - Modelos** e copiar o modelo de fluxo de trabalho pronto para uso **Publicar árvore de conteúdo**, conforme mostrado abaixo:
 
-![O Cartão de Fluxo de Trabalho da Árvore de Conteúdo do Publish](/help/operations/assets/publishcontenttreeworkflow.png)
+![O Cartão De Fluxo De Trabalho De Publicação Da Árvore De Conteúdo](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Não chame o modelo original. Em vez disso, primeiro copie o modelo e chame essa cópia.
 
@@ -282,6 +282,6 @@ Para solucionar problemas de replicação, navegue até as filas de replicação
 
 ![Logs](assets/publish-logs.png "Logs")
 
-Se o conteúdo não puder ser publicado, toda a publicação será revertida do serviço AEM Publish.
+Se o conteúdo não puder ser publicado, toda a publicação será revertida do serviço de publicação do AEM.
 
 Nesse caso, a fila principal e editável mostra um status vermelho e deve ser revisada para identificar quais itens causaram o cancelamento da publicação. Ao clicar nessa fila, seus itens pendentes são exibidos, a partir dos quais um único item ou todos os itens podem ser apagados, se necessário.
