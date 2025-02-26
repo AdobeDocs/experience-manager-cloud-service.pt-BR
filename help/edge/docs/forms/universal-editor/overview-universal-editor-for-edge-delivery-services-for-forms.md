@@ -6,14 +6,17 @@ role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 7d0b735b367189852e4897702738eefc1e87d892
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '1038'
+source-wordcount: '1086'
 ht-degree: 3%
 
 ---
 
+
 # Editor universal para Edge Delivery Services para Forms (bloco Forms do EDS)
+
+<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> com o nome da organização do GitHub e o nome do repositório. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
 
 O Editor universal revoluciona a criação de formulários para o Adobe Edge Delivery Services (EDS) ao oferecer uma interface simples, visual e intuitiva do What You See Is What You Get (WYSIWYG). Projetado para criadores de conteúdo e autores de formulários, ele elimina a complexidade dos processos tradicionais de criação de formulários, tornando-o acessível até mesmo para usuários não técnicos.
 

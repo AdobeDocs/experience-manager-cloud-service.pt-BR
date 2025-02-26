@@ -3,16 +3,17 @@ title: Noções básicas do Editor universal - Modo responsivo
 description: Este artigo explica como visualizar formulários usando diferentes emuladores no Editor universal para visualizar sua aparência durante a criação.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 2%
+source-wordcount: '408'
+ht-degree: 1%
 
 ---
 
 # Modo responsivo na criação do WYSIWYG
+
+<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> com o nome da organização do GitHub e o nome do repositório. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
+
 
 O [Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) permite que você visualize o Edge Delivery Services Forms com diferentes emuladores para ver a aparência do formulário durante a criação.
 

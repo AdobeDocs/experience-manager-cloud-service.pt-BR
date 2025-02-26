@@ -3,10 +3,8 @@ title: Noções básicas do editor universal - Tutorial do desenvolvedor
 description: Este tutorial ajuda você a começar a usar a interface do Universal Editor. Ele orienta você a entender a interface do usuário para criar seus próprios formulários Edge Delivery Services no Universal Editor.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 0d28009332feccb4552e2cc42d7b1a8da43d579c
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
 source-wordcount: '1425'
 ht-degree: 0%

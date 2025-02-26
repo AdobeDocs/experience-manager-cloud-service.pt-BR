@@ -3,18 +3,19 @@ title: Como usar o editor de regras para aplicar regras a campos de formulário,
 description: O editor de regras no Universal Editor permite adicionar comportamento dinâmico e criar lógica complexa em formulários sem codificação ou script.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-hide: true
-hidefromtoc: true
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
 workflow-type: tm+mt
-source-wordcount: '2166'
+source-wordcount: '2214'
 ht-degree: 1%
 
 ---
 
 
 # Introdução ao Editor de regras na Criação do WYSIWYG
+
+<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> com o nome da organização do GitHub e o nome do repositório. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
+
 
 É possível adicionar um comportamento de formulário dinâmico usando o Editor de regras, que permite criar regras. Essas regras permitem visibilidade condicional de campo, automatizam cálculos com base na entrada do usuário e melhoram a experiência geral do usuário. Ao simplificar o processo de preenchimento de formulário, o Editor de regras ajuda a garantir precisão e eficiência.
 
