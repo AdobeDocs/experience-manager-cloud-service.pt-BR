@@ -4,7 +4,7 @@ description: O pipeline de front-end melhora a independência do desenvolvedor e
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 248c58c51864a2fead95064d30ea9f438f655eb6
+source-git-commit: 635fd7736d26b95acc4389c519edf495694b1a94
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 3%
@@ -94,5 +94,6 @@ As etapas a seguir geralmente são recomendadas ao fazer alterações na saída 
 
 * A Adobe fornece um Criador de temas de site do AEM como um conjunto de scripts para criar novos temas de site.
 
-  Consulte [Criador de temas de site do AEM](https://github.com/adobe/aem-site-theme-builder).
+  Consulte [Criador de temas de site do AEM](https://github.com/adobe/aem-site-theme-builder)
+
 
