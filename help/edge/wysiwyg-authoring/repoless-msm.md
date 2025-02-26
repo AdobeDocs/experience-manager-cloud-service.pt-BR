@@ -1,31 +1,31 @@
 ---
 title: Gerenciamento de vários sites de resposta
-description: Saiba mais sobre as práticas recomendadas de como configurar um projeto de maneira responsiva com sites localizados que aproveitam uma única base de código, cada um distribuído pelo Edge Delivery Services.
+description: Saiba mais sobre as práticas recomendadas de como configurar um projeto de maneira responsiva com sites localizados que aproveitam uma única base de código, cada um disponibilizado pelo Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: f6b861ed-18e4-4c81-92d2-49fadfe4669a
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '1261'
+source-wordcount: '1260'
 ht-degree: 1%
 
 ---
 
 # Gerenciamento de vários sites de resposta {#repoless-msm}
 
-Saiba mais sobre as práticas recomendadas de como configurar um projeto de maneira responsiva com sites localizados que aproveitam uma única base de código, cada um distribuído pelo Edge Delivery Services.
+Saiba mais sobre as práticas recomendadas de como configurar um projeto de maneira responsiva com sites localizados que aproveitam uma única base de código, cada um disponibilizado pelo Edge Delivery Services.
 
 ## Visão geral {#overview}
 
 O [Gerenciador de vários sites (MSM)](/help/sites-cloud/administering/msm/overview.md) e seus recursos de Live Copy permitem usar o conteúdo do mesmo site em vários locais, permitindo variações. Você pode criar conteúdo uma vez e Live Copies. O MSM mantém relacionamentos dinâmicos entre o conteúdo original e suas Live Copies, de modo que, quando você alterar o conteúdo original, a origem e as Live Copies possam ser sincronizadas.
 
-Você pode usar o MSM para criar uma estrutura completa de conteúdo para sua marca em localidades e idiomas, criando o conteúdo centralmente. Seus sites localizados podem ser entregues por Edge Delivery Services, aproveitando uma base de código central.
+Você pode usar o MSM para criar uma estrutura completa de conteúdo para sua marca em localidades e idiomas, criando o conteúdo centralmente. Seus sites localizados podem ser entregues pela Edge Delivery Services, aproveitando uma base de código central.
 
 ## Requisitos {#requirements}
 
-Para configurar o MSM em um caso de uso de resposta, primeiro conclua várias tarefas.
+Para configurar o MSM em um caso de uso de resposta, primeiro conclua as seguintes tarefas:
 
-* Este documento supõe que você já tenha criado um site para o seu projeto com base no [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+* Este documento supõe que você já tenha criado um site para o seu projeto com base no [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Você já deve ter [habilitado o recurso de resposta para o seu projeto](/help/edge/wysiwyg-authoring/repoless.md).
 
 ## Caso de uso {#use-case}
@@ -56,12 +56,12 @@ O conteúdo em `language-masters` é a origem das Live Copies para os sites loca
 Há várias etapas para configurar o caso de uso de resposta do MSM.
 
 1. [Atualizar configurações do site AEM](#update-aem-configurations).
-1. [Criar novos sites do Edge Delivery Services para suas páginas localizadas](#create-edge-sites).
+1. [Crie novos sites do Edge Delivery Services para suas páginas localizadas](#create-edge-sites).
 1. [Atualize a configuração da nuvem no AEM para seus sites localizados](#update-cloud-configurations).
 
-### Atualizar configurações do site AEM {#update-aem-configurations}
+### Atualizar configurações do site do AEM {#update-aem-configurations}
 
-[As configurações](/help/implementing/developing/introduction/configurations.md) podem ser consideradas espaços de trabalho que podem ser usados para coletar grupos de configurações e seu conteúdo associado para fins organizacionais. Quando você cria um site no AEM, uma configuração é criada automaticamente para ele.
+[As configurações](/help/implementing/developing/introduction/configurations.md) podem ser consideradas espaços de trabalho que podem ser usados para coletar grupos de configurações e seu conteúdo associado para fins organizacionais. Ao criar um site no AEM, uma configuração é criada automaticamente para ele.
 
 Em geral, você deseja compartilhar determinado conteúdo entre sites, como:
 
@@ -101,17 +101,17 @@ Atribua as respectivas configurações aos sites localizados adicionais. No caso
 
 ### Criar novos sites do Edge Delivery Services para suas páginas localizadas {#create-edge-sites}
 
-Para conectar mais sites a Edge Delivery Services para uma configuração de site com várias regiões e vários idiomas, é necessário configurar um novo site aem.live para cada um dos sites do AEM MSM. Há uma relação 1:1 entre sites AEM MSM e sites aem.live com um repositório Git compartilhado e uma base de código.
+Para conectar mais sites ao Edge Delivery Services para uma configuração de site com várias regiões e vários idiomas, você deve configurar um novo site aem.live para cada um dos sites do AEM MSM. Há uma relação 1:1 entre os sites do AEM MSM e os sites aem.live com um repositório Git compartilhado e uma base de código.
 
-Neste exemplo, criaremos o site `wknd-ch` para a presença suíça do wknd, cujo conteúdo localizado está sob o caminho AEM `/content/wknd/ch`.
+Neste exemplo, criaremos o site `wknd-ch` para a presença suíça do wknd, cujo conteúdo localizado está no caminho do AEM `/content/wknd/ch`.
 
 1. Recupere o token de autenticação e a conta técnica do programa.
    * Consulte o documento **Reutilizando Código entre Sites** para obter detalhes sobre como [obter seu token de acesso](/help/edge/wysiwyg-authoring/repoless.md#access-token) e a [conta técnica](/help/edge/wysiwyg-authoring/repoless.md#access-control) para seu programa.
 1. Crie um novo site fazendo a seguinte chamada para o serviço de configuração. Considere:
-   * O nome do projeto no URL do POST deve ser o novo nome de site que você está criando. Neste exemplo, ele é `wknd-ch`.
+   * O nome do projeto na URL POST deve ser o novo nome de site que você está criando. Neste exemplo, ele é `wknd-ch`.
    * A configuração `code` deve ser a mesma usada para a criação inicial do projeto.
    * O `content` > `source` > `url` deve ser adaptado ao nome do novo site que você está criando. Neste exemplo, ele é `wknd-ch`.
-   * Ou seja, o nome do site na URL do POST e o `content` > `source` > `url` devem ser os mesmos.
+   * Ou seja, o nome do site na URL POST e o `content` > `source` > `url` devem ser os mesmos.
    * Adapte o bloco `admin` para definir os usuários que devem ter acesso administrativo total ao site.
       * É uma matriz de endereços de email.
       * O curinga `*` pode ser usado.
@@ -179,12 +179,12 @@ Repita as etapas para criar sites localizados adicionais. No caso do wknd, tamb�
 
 ### Atualizar configurações da nuvem no AEM para suas páginas localizadas {#update-cloud-configurations}
 
-Suas páginas no AEM devem ser configuradas para usar os novos Sites da Edge Delivery criados na seção anterior para sua presença localizada. Neste exemplo, o conteúdo em `/content/wknd/ch` precisa saber como usar o site `wknd-ch` que você criou. Da mesma forma, o conteúdo em `/content/wknd/de` precisa usar o site `wknd-de`.
+Suas páginas no AEM devem ser configuradas para usar os novos Sites do Edge Delivery criados na seção anterior para sua presença localizada. Neste exemplo, o conteúdo em `/content/wknd/ch` precisa saber como usar o site `wknd-ch` que você criou. Da mesma forma, o conteúdo em `/content/wknd/de` precisa usar o site `wknd-de`.
 
-1. Entre na instância de autor do AEM e vá para **Ferramentas** -> **Cloud Service** -> **Configuração de Edge Delivery Services**.
+1. Entre na instância do autor do AEM e vá para **Ferramentas** -> **Serviços da Nuvem** -> **Configuração do Edge Delivery Services**.
 1. Selecione a configuração que foi criada automaticamente para o projeto e, em seguida, a pasta que foi criada para a página localizada. Nesse caso, seria a Suíça (`ch`).
 1. Toque ou clique em **Criar** > **Configuração** na barra de ferramentas.
-1. Na janela **Configuração de Edge Delivery Services**:
+1. Na janela **Configuração do Edge Delivery Services**:
    * Forneça sua organização do GitHub no campo **Organização**.
    * Altere o nome do site para o nome do site criado na seção anterior. Nesse caso, seria `wknd-ch`.
    * Altere o tipo de projeto para **aem.live com a configuração de resposta**.
@@ -200,6 +200,6 @@ Agora que você fez todas as alterações necessárias na configuração, verifi
 1. Toque ou clique em **Editar** na barra de ferramentas.
 1. Verifique se a página é renderizada corretamente no Editor universal e usa o mesmo código da raiz do site.
 1. Faça uma alteração na página e publique-a novamente.
-1. Visite o novo site de Edge Delivery Services para a página localizada em `https://main--wknd-ch--<your-github-org>.aem.page`.
+1. Visite seu novo site do Edge Delivery Services para a página localizada em `https://main--wknd-ch--<your-github-org>.aem.page`.
 
 Se você vir as alterações feitas, a configuração do MSM está funcionando corretamente.

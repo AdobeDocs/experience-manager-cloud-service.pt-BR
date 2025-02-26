@@ -4,9 +4,9 @@ description: Se você tiver muitos sites semelhantes que parecem e se comportam 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
 workflow-type: tm+mt
-source-wordcount: '971'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,14 @@ Independentemente de quantos sites você deseja criar, no final das contas, de m
 
 Para aproveitar esse recurso, verifique se você fez o seguinte.
 
-* Seu site já está totalmente configurado, seguindo o documento [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+* Seu site já está totalmente configurado seguindo o documento [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 * Você está executando o AEM as a Cloud Service 2024.08 no mínimo.
 
-Você também precisará pedir ao Adobe para configurar os seguintes itens para você. Entre em contato com o canal Slack ou gere um problema de suporte para solicitar que o Adobe faça as seguintes alterações:
+Você também precisará solicitar que a Adobe configure os seguintes itens para você. Entre em contato com o seu canal do Slack ou gere um problema de suporte para solicitar que a Adobe faça estas alterações:
 
 * Peça para ativar o [serviço de configuração aem.live](https://www.aem.live/docs/config-service-setup#prerequisites) para seu ambiente e que você esteja configurado como administrador.
-* Peça para ativar o recurso de resposta para o seu programa por Adobe.
-* Peça ao Adobe para criar a organização para você.
+* Peça para ativar o recurso de resposta para seu programa pelo Adobe.
+* Peça à Adobe para criar a organização para você.
 
 ## Recurso Ativar Respostas {#activate}
 
@@ -56,7 +56,7 @@ Essas etapas usam o site `https://wknd.site` como exemplo. Substitua o seu adequ
 
 Primeiro, você precisará de um token de acesso para usar o serviço de configuração e configurá-lo para o caso de uso de resposta.
 
-1. Vá para `https://admin.hlx.page/login` e use o endereço `login_adobe` para fazer logon com o provedor de identidade Adobe.
+1. Vá para `https://admin.hlx.page/login` e use o endereço `login_adobe` para fazer logon com o provedor de identidade da Adobe.
 1. Você será encaminhado a `https://admin.hlx.page/profile`.
 1. Ao usar as ferramentas de desenvolvedor do seu navegador, copie o valor do `x-auth-token` do cookie JSON web token que a página `admin.hlx.page` define.
 
@@ -155,15 +155,15 @@ Como você agora usa o serviço de configuração, é possível remover `fstab.y
 >
 >Ao usar o serviço de configuração e expor o mapeamento de caminho via `config.json`, o arquivo `path.json` é ignorado.
 
-Depois que o AEM é configurado para uso de resposta, você deve usar o serviço de configuração e fornecer um `config.json` válido com o mapeamento de caminhos.
+Depois que o AEM é configurado para uso de respostas, você deve usar o serviço de configuração e fornecer um `config.json` válido com o mapeamento de caminhos.
 
 ### Atualizar configuração do AEM {#update-aem}
 
-Agora você está pronto para fazer as mudanças necessárias para o seu Edge Delivery Services no AEM.
+Agora você está pronto para fazer as alterações necessárias no Edge Delivery Services no AEM.
 
-1. Entre na instância de autor do AEM e vá para **Ferramentas** -> **Cloud Service** -> **Configuração de Edge Delivery Services** e selecione a configuração que foi criada automaticamente para seu site e toque ou clique em **Propriedades** na barra de ferramentas.
-1. Na janela **Configuração de Edge Delivery Services**, altere o tipo de projeto para **aem.live com configuração de resposta** e toque ou clique em **Salvar e fechar**.
-   ![Configuração de Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
+1. Entre na instância do autor do AEM e vá para **Ferramentas** -> **Serviços da Nuvem** -> **Configuração do Edge Delivery Services** e selecione a configuração que foi criada automaticamente para o seu site e toque ou clique em **Propriedades** na barra de ferramentas.
+1. Na janela **Configuração do Edge Delivery Services**, altere o tipo de projeto para **aem.live com configuração de resposta** e toque ou clique em **Salvar e fechar**.
+   ![Configuração do Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/repoless/edge-delivery-services-configuration.png)
 1. Retorne ao site usando o Editor universal e verifique se ele ainda é renderizado corretamente.
 1. Modifique parte do seu conteúdo e publique-o novamente.
 1. Visite seu site publicado em `https://main--<your-aem-project>--<your-github-org>.aem.page/` e verifique se as alterações foram refletidas corretamente.
@@ -176,13 +176,14 @@ Agora que o site base está configurado para uso sem resposta, você pode criar 
 
 * [Gerenciamento de vários sites de resposta](/help/edge/wysiwyg-authoring/repoless-msm.md)
 * [Ambientes de preparo e produção de respostas](/help/edge/wysiwyg-authoring/repoless-stage-prod.md)
+* [Autenticação de site para criação de conteúdo](/help/edge/wysiwyg-authoring/site-authentication.md)
 
 ## Resolução de problemas {#troubleshooting}
 
 O problema mais comum encontrado após a configuração do caso de uso de resposta é que as páginas no Universal Editor não são mais renderizadas ou você recebe uma página branca ou uma mensagem de erro genérica do AEM as a Cloud Service. Nesses casos:
 
 * Visualize o código-fonte da página renderizada.
-   * Há realmente algo renderizado (cabeçalho de HTML correto com `scripts.js`, `aem.js` e arquivos JSON relacionados ao editor)?
+   * Realmente há algo renderizado (correto no HTML head com `scripts.js`, `aem.js` e arquivos JSON relacionados ao editor)?
 * Verifique se há exceções no AEM `error.log` da instância do autor.
    * O problema mais comum é que o componente de Página falha com erros 404.
    * `config.json or paths.json` não pode ser carregado
