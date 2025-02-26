@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 81e3ce8cdceee37a22e76e74008452f88b6bf003
+source-git-commit: 6de7743992e65225d557775cbedde0ae3889b2c3
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 60%
+source-wordcount: '189'
+ht-degree: 51%
 
 ---
 
@@ -16,33 +16,33 @@ ht-degree: 60%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 19586 {#19586}
+## Versão 19687 {#19687}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 19586, lançada publicamente em quinta-feira, 19 de fevereiro de 2025. A versão de manutenção anterior foi a de 19567.
+Resumidos abaixo estão as melhorias contínuas da versão de manutenção 19687 , que foi lançada publicamente em 26 de fevereiro de 2025. A versão de manutenção anterior foi a de 19586.
 
 A ativação de recursos do 2025.2.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-19586}
+### Aprimoramentos {#enhancements-19687}
 
 Nenhum.
 
-### Problemas corrigidos {#fixed-issues-19586}
+### Problemas corrigidos {#fixed-issues-19687}
 
-* SITES-29314: endpoints do GraphQL podem gerar InvalidSchemaException para solicitações válidas.
+* SKYOPS-97524: o estado de alternância de recursos pode estar incorreto, afetando intermitentemente vários recursos do AEM.
 
-### Problemas conhecidos {#known-issues-19586}
+### Problemas conhecidos {#known-issues-19687}
 
 Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-19586}
+### Recursos e APIs obsoletos {#deprecated-19687}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-19586}
+### Correções de segurança {#security-19687}
 
 Nenhum.
 
-### Tecnologias integradas {#embedded-tech-19586}
+### Tecnologias integradas {#embedded-tech-19687}
 
 | Tecnologia | Versão | Link |
 |---|--------------|-------------------------------------------------------------------------------------------------------------------|
