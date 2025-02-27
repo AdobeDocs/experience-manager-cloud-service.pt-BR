@@ -1,12 +1,12 @@
 ---
 title: Gerenciamento de dados de taxonomia
-description: Saiba como gerenciar dados de taxonomia para usar tags com seu AEM com sites Edge Delivery Services.
+description: Saiba como gerenciar dados de taxonomia para usar tags com sua AEM com sites da Edge Delivery Services.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 017982e4-a4c8-4097-8751-9619cc4639d0
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1003'
 ht-degree: 1%
 
 ---
@@ -14,15 +14,19 @@ ht-degree: 1%
 
 # Gerenciamento de dados de taxonomia {#managing-taxonomy-data}
 
-Saiba como gerenciar dados de taxonomia para usar tags com seu AEM com sites Edge Delivery Services.
+Saiba como gerenciar dados de taxonomia para usar tags com sua AEM com sites da Edge Delivery Services.
 
 ## Introdução {#introduction}
 
-A marcação é um recurso importante que ajuda a organizar e gerenciar suas páginas. [O Console de Marcação](/help/sites-cloud/administering/tags.md#tagging-console) no AEM permite criar uma taxonomia avançada de marcas para organizar suas páginas.
+A marcação é um recurso importante que ajuda a organizar e gerenciar suas páginas. [O Console de Marcação](/help/sites-cloud/administering/tags.md#tagging-console) da AEM permite criar uma taxonomia avançada de marcas para organizar suas páginas.
 
 Essas tags são úteis não apenas para você e seus autores na organização do conteúdo, mas também podem ser úteis para seus leitores. As tags e sua taxonomia podem ser usadas em componentes na página para ajudar seus leitores a navegar pelo conteúdo.
 
 O Universal Editor funciona somente com as IDs das suas tags. Ao criar uma página de taxonomia para o seu conteúdo, você expõe as descrições dessas tags em todos os idiomas para o Universal Editor para que ele possa usar essas informações ao renderizar o conteúdo.
+
+>[!TIP]
+>
+>Consulte o documento [Definições de Modelo, Campos e Tipos de Componentes](/help/implementing/universal-editor/field-types.md) para obter mais informações sobre o campo Marca da AEM disponível para o Editor Universal, que pode funcionar com sua taxonomia.
 
 ## Criar uma página de taxonomia {#creating}
 
@@ -118,7 +122,7 @@ Esse processo só precisa ser feito uma vez por página de taxonomia. Depois de 
 
 Uma taxonomia não estará disponível para o Editor universal ou seus usuários até que seja publicada.
 
-As páginas de taxonomia são publicadas como qualquer outra página por [usando os ícones **Publish Rápido** ou **Gerenciar Publicação** na barra de ferramentas](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
+As páginas de taxonomia são publicadas como qualquer outra página por [usando os ícones **Publicação Rápida** ou **Gerenciar Publicação** na barra de ferramentas](/help/sites-cloud/authoring/sites-console/publishing-pages.md).
 
 Você deve republicar sua página de taxonomia sempre que:
 
@@ -177,7 +181,7 @@ Por padrão, sua taxonomia conterá `tag` e `title` valores como visto [no exemp
 1. Na seção **Propriedades Adicionais**, toque ou clique em **Adicionar** para adicionar um campo.
 1. No novo campo, insira o nome da propriedade do JRC a ser exposto. Nesse caso, digite `jcr:description` para a descrição da marca.
 1. Toque ou clique em **Salvar e fechar**.
-1. Com a taxonomia ainda selecionada, toque ou clique em **Publish Rápido** na barra de ferramentas.
+1. Com a taxonomia ainda selecionada, toque ou clique em **Publicação rápida** na barra de ferramentas.
 
 Agora [ao acessar sua taxonomia](#accessing), a descrição da marca (ou qualquer propriedade que você escolher expor) será incluída no JSON.
 

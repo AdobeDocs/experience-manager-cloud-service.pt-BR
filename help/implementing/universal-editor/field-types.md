@@ -4,9 +4,9 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 8ced236b9bbbae498c46e14a265f7cfa29499f53
+source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
 workflow-type: tm+mt
-source-wordcount: '1499'
+source-wordcount: '1526'
 ht-degree: 9%
 
 ---
@@ -155,6 +155,10 @@ Um tipo de componente de tag do AEM ativa um seletor de tags da AEM, que pode se
 ![Captura de tela do tipo de componente da marca AEM](assets/component-types/aem-tag-picker.png)
 
 >[!ENDTABS]
+
+>[!TIP]
+>
+>Consulte o documento [Gerenciando Dados de Taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md) para obter mais informações sobre como usar planilhas para gerenciar os dados de taxonomia do seu projeto do Edge Delivery Services.
 
 #### Conteúdo do AEM {#aem-content}
 
