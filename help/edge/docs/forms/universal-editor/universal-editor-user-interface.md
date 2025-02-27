@@ -4,16 +4,16 @@ description: Este tutorial ajuda você a começar a usar a interface do Universa
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 90321e81-bb55-48b2-b329-4944bf926309
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1424'
 ht-degree: 0%
 
 ---
 
 # Explorar a interface do editor universal (WYSIWYG)
 
-O [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) oferece uma interface simples, visual e intuitiva do What You See Is What You Get (WYSIWYG) para o Adobe Edge Delivery Services (EDS) Forms. Ele fornece uma interface moderna com funcionalidade de arrastar e soltar para uma criação de formulários eficiente.
+O [Editor universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) oferece uma interface simples, visual e intuitiva do What You See Is What You Get (WYSIWYG) para o Adobe Edge Delivery Services Forms. Ele fornece uma interface moderna com funcionalidade de arrastar e soltar para uma criação de formulários eficiente.
 
 ![Interface de Usuário do Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor-interface.png)
 

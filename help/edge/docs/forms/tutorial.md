@@ -4,16 +4,16 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 exl-id: bb7e93ee-0575-44e1-9c5e-023284c19490
 role: Admin, Architect, Developer
-source-git-commit: 12ac8fd43d56fb95bf63b2ce92d1ec1a776e464a
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1658'
+source-wordcount: '1656'
 ht-degree: 0%
 
 ---
 
 # Introdução - Tutorial do desenvolvedor
 
-Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. O Edge Delivery Services for AEM Forms (EDS) permite criar formulários usando ferramentas familiares como o Google Docs e o Microsoft Office.
+Na era digital de hoje, criar formulários amigáveis é essencial para qualquer organização. O Edge Delivery Services for AEM Forms permite criar formulários usando ferramentas familiares como o Google Docs e o Microsoft Office.
 
 Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft SharePoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho de negócios existente.
 
@@ -59,7 +59,7 @@ O modelo do AEM Forms Boilerplate inicia rapidamente com um projeto do AEM pré-
    >[!NOTE]
    >
    >
-   > Se você estiver usando o GitHub Enterprise com filtragem de IP, é possível adicionar o seguinte IP à inclui na lista de permissões: 3.227.118.73
+   > Se você estiver usando o GitHub Enterprise com filtragem de IP, poderá adicionar o seguinte IP à inclui na lista de permissões: 3.227.118.73
 
    Parabéns! Você tem um novo site em execução em `https://<branch>--<repo>--<owner>.aem.page/`.
 

@@ -4,9 +4,9 @@ description: Publique seus formulários do Edge Delivery Services de forma rápi
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Quando o formulário estiver finalizado e pronto para uso, você poderá public�
 
 ## Pré-requisitos
 
-* Um formulário criado usando o **modelo do Edge Delivery Services (EDS)**. [Saiba mais](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) sobre como criar um formulário baseado em EDS.
+* Um formulário criado usando o **modelo de Edge Delivery Services**. [Saiba mais](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) sobre como criar um formulário baseado em EDS.
 
 ## Publicar o formulário
 

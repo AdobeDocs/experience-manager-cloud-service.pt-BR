@@ -4,9 +4,9 @@ description: Formas perfeitas de artesanato, rápido!  criação baseada em docu
 feature: Edge Delivery Services
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
 role: Admin, Architect, Developer
-source-git-commit: cb914f76b0b785a89b20ef5eaacbc36e8217944b
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427881?quality=12&learn=on)
 
-O AEM Forms Edge Delivery fornece um bloco, conhecido como Bloco do Adaptive Forms, para ajudar você a criar formulários facilmente para capturar e armazenar dados capturados. Você pode [criar um novo projeto AEM pré-configurado com o Bloco Forms Adaptável](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [adicionar o Bloco Forms AEM Adaptável a um projeto existente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
+O AEM Forms Edge Delivery fornece um bloco, conhecido como Bloco do Adaptive Forms, para ajudar você a criar formulários facilmente para capturar e armazenar dados capturados. Você pode [criar um novo projeto do AEM pré-configurado com o Bloco do Adaptive Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [adicionar o Bloco do Adaptive Forms a um projeto existente do AEM](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel ou do Google Sheets, permitindo que você use um ecossistema vibrante e APIs robustas do Google Sheets, do Microsoft Excel e do Microsoft SharePoint para processar facilmente os dados enviados ou iniciar um fluxo de trabalho de negócios existente.
 
@@ -26,7 +26,7 @@ Esses formulários enviam dados diretamente para um arquivo do Microsoft Excel o
 
 Antes de começar, verifique se você concluiu as seguintes etapas:
 
-* Configure um projeto [AEM usando a matriz do AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [adicionou o Bloco do Adaptive Forms AEM ao seu projeto existente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clone o repositório GitHub correspondente no computador local.
+* Configure um [projeto do AEM usando o modelo do AEM Forms](/help/edge/docs/forms/tutorial.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) [adicionou o Bloqueio do Adaptive Forms ao seu Projeto do AEM existente](/help/edge/docs/forms/tutorial.md#add-adaptive-forms-block-to-your-existing-aem-project) e clone o repositório do GitHub correspondente no computador local.
 <!--In this document, the local folder of your Edge Delivery Services (EDS) project is referred as `[EDS Project repository]`.  -->
 * Verifique se você tem acesso ao Google Sheets ou ao Microsoft SharePoint. Para configurar o Microsoft SharePoint como fonte de conteúdo, consulte [Como usar o SharePoint](https://www.aem.live/docs/setup-customer-sharepoint).
 
@@ -70,13 +70,13 @@ Por exemplo, considere a seguinte planilha em que os campos de estrutura de tóp
 
 Para continuar com a criação do formulário:
 
-1. Acesse a pasta do projeto AEM Edge Delivery no Microsoft SharePoint ou Google Drive.
+1. Acesse a pasta do projeto do AEM Edge Delivery no Microsoft SharePoint ou no Google Drive.
 
 1. Crie uma Pasta de trabalho do Microsoft Excel ou uma Planilha do Google em qualquer lugar no diretório do projeto do AEM Edge Delivery. Por exemplo, crie uma planilha com o nome `enquiry` no diretório do projeto AEM Edge Delivery no Google Drive.
 
    <!-- ![Sample Content on Google Drive](/help/edge/assets/upload-sample-files-to-your-content-folder.png)-->
 
-1. Verifique se a planilha está compartilhada com o usuário AEM apropriado (por exemplo `forms@adobe.com`) [de acordo com as configurações especificadas para seu projeto](https://www.aem.live/docs/setup-customer-sharepoint). Conceda ao usuário permissão de edição para a planilha.
+1. Verifique se a planilha está compartilhada com o usuário AEM apropriado (por exemplo, `forms@adobe.com`) [de acordo com as configurações especificadas para seu projeto](https://www.aem.live/docs/setup-customer-sharepoint). Conceda ao usuário permissão de edição para a planilha.
 
 1. Abra a planilha criada e renomeie a planilha padrão como &quot;shared-aem&quot;.
 
@@ -90,7 +90,7 @@ Para continuar com a criação do formulário:
    >[!VIDEO](https://video.tv.adobe.com/v/3427468?quality=12&learn=on)
 
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a planilha.
+1. Use o [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar a planilha.
 
    ![Usar AEM Sidekick para visualizar a planilha](/help/edge/assets/preview-form.png)
 
@@ -113,12 +113,12 @@ Para continuar com a criação do formulário:
 
 +++
 
-+++ Etapa 2: visualize o formulário usando a página Edge Delivery Services (EDS).
++++ Etapa 2: visualize o formulário usando a página do Edge Delivery Services.
 
 
 Até agora, você preparou a estrutura do formulário. Agora, para visualizar o formulário:
 
-1. Abra a conta do Microsoft SharePoint ou do Google AEM Drive e navegue até o diretório do projeto do Edge Delivery.
+1. Abra sua conta do Microsoft SharePoint ou Google Drive e navegue até o diretório do projeto do AEM Edge Delivery.
 
 
 
@@ -143,7 +143,7 @@ Até agora, você preparou a estrutura do formulário. Agora, para visualizar o 
    > Verifique se o URL está formatado como um hiperlink em vez de ser exibido como texto simples.
 
 
-1. Use [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar o documento. A página agora exibe o formulário. Por exemplo, este é o formulário baseado na [planilha de consulta](/help/edge/assets/enquiry-form.docx):
+1. Use o [AEM Sidekick](https://www.aem.live/developer/tutorial#preview-and-publish-your-content) para visualizar o documento. A página agora exibe o formulário. Por exemplo, este é o formulário baseado na [planilha de consulta](/help/edge/assets/enquiry-form.docx):
 
 
    [![Um exemplo de formulário EDS](/help/edge/assets/updated-form.png)](https://main--wefinance--wkndform.aem.page/enquiry-form)

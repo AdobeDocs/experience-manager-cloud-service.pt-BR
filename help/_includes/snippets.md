@@ -1,7 +1,7 @@
 ---
-source-git-commit: ba42a99e6138616ab6a7564c4bf58400844bdcc4
+source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1390'
 ht-degree: 3%
 
 ---
@@ -59,14 +59,13 @@ ht-degree: 3%
 
 ## Editor universal{#universal-editor-see-also}
 
-* [Introdução ao Edge Delivery Services para AEM Forms](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
-* [Publicar seu formulário](/help/edge/docs/forms/universal-editor/publish-forms.md)
-* [Enviar o formulário](/help/edge/docs/forms/universal-editor/submit-action.md)
-* [Personalizar a aparência dos formulários](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
-* [Criar regras para o formulário](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
-* [Usar reCAPTCHA em seu formulário](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
-* [Criar um componente personalizado para o seu formulário](/help/edge/docs/forms/universal-editor/create-custom-component.md)
-* [Visualizar formulário no modo responsivo](/help/edge/docs/forms/universal-editor/responsive-layout.md)
+* [Criar O Primeiro Formulário Usando O Editor Universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Adicionar comportamento dinâmico ao Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configurar e personalizar ações de envio de formulário](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publicar e implantar o Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms: guia de estilo e tema](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Criar componentes de formulário personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Proteja seu Forms contra spam: adicionando segurança ao reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
 
 ## Consulte também: {#see-more-forms-eds}
 

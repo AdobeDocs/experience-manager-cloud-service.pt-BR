@@ -1,24 +1,24 @@
 ---
-title: Editor universal para Edge Delivery Services para Forms (bloco Forms do EDS)
-description: Use o Editor universal para Edge Delivery Services para Forms (bloco Forms do EDS) para criar Forms adaptável.
+title: Editor universal do Edge Delivery Services para Forms
+description: Use o Universal Editor para Edge Delivery Services no Forms para criar o Adaptive Forms.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 hide: true
 hidefromtoc: true
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1077'
 ht-degree: 3%
 
 ---
 
 
-# Editor universal para Edge Delivery Services para Forms (bloco Forms do EDS)
+# Editor universal do Edge Delivery Services para Forms
 
 <span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> com o nome da organização do GitHub e o nome do repositório. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
 
-O Editor universal revoluciona a criação de formulários para o Adobe Edge Delivery Services (EDS) ao oferecer uma interface simples, visual e intuitiva do What You See Is What You Get (WYSIWYG). Projetado para criadores de conteúdo e autores de formulários, ele elimina a complexidade dos processos tradicionais de criação de formulários, tornando-o acessível até mesmo para usuários não técnicos.
+O Editor universal revoluciona a criação de formulários para os Serviços de entrega de borda da Adobe, oferecendo uma interface simples, visual e intuitiva do What You See Is What You Get (WYSIWYG). Projetado para criadores de conteúdo e autores de formulários, ele elimina a complexidade dos processos tradicionais de criação de formulários, tornando-o acessível até mesmo para usuários não técnicos.
 
 Com o Editor universal, você pode criar rapidamente formulários responsivos e interativos usando componentes pré-criados, como campos de texto, caixas de seleção e botões de opção. Seu conjunto de recursos robusto oferece suporte a regras dinâmicas, integração de dados contínua e personalização avançada, garantindo que cada formulário seja adaptado às suas necessidades.
 
@@ -26,7 +26,7 @@ Quer você esteja gerenciando uma renderização leve do lado do cliente, garant
 
 ![Editor universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center} —>
 
-## Principais recursos do Universal Editor para EDS Forms
+## Principais recursos do Universal Editor para Edge Delivery Services para Forms
 
 
 
@@ -49,13 +49,13 @@ Este é o layout com cartões de igual largura (usando colunas de largura fixa):
 
 | ![Análise e Acompanhamento](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Gerenciamento de tarefas](/help/edge/docs/forms/universal-editor/assets/adobe-workfront.svg) | ![Associação de Dados](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Análise e Acompanhamento**](https://www.aem.live/developer/martech-integration) | **Gerenciamento de tarefas** | **Associação de Dados** |
+| [**Análise e Acompanhamento**](https://www.aem.live/developer/martech-integration) | **Gerenciamento de tarefas** (Em breve) | **Ligação de Dados** (Em Breve) |
 | Obtenha insights sobre o comportamento do usuário, as interações de formulário e as taxas de envio com análises e rastreamento integrados para permitir a otimização de formulários orientados por dados. | A integração com o Adobe Workfront permite que as equipes gerenciem tarefas de criação e manutenção de formulários, garantindo fluxos de trabalho simplificados. | A vinculação de dados permite conexões diretas entre campos de formulário e fontes de dados de back-end, oferecendo suporte a atualizações em tempo real e mapeamento de dados avançado. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Incorporando o Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Obrigado pela Configuração](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
 |:-------------:|:-------------:|:-------------:|
-| **Personalização do editor** | **Incorporando o Forms** | [**Obrigado pela Configuração**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
-| Os desenvolvedores podem estender a funcionalidade do editor por meio de extensões de interface do usuário, permitindo soluções personalizadas que se ajustem a necessidades organizacionais específicas. | Incorpore formulários diretamente nas páginas do Edge Delivery Services Sites usando o componente de incorporação integrado do Editor universal. | Personalize facilmente a mensagem ou página de confirmação exibida aos usuários após o envio bem-sucedido do formulário. |
+| [**CAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) | **Incorporando o Forms** | [**Obrigado pela Configuração**](/help/edge/docs/forms/universal-editor/submit-action.md#show-a-custom-thank-you-message-on-adaptive-form-submission-submit-action-message-ue) |
+| Use o reCAPTCHA para proteger formulários de bots automatizados, garantindo uma coleta de dados segura e confiável. | Incorpore formulários diretamente nas páginas do Edge Delivery Services Sites usando o componente de incorporação integrado do Editor universal. | Personalize facilmente a mensagem ou página de confirmação exibida aos usuários após o envio bem-sucedido do formulário. |
 
 
 <!-- ![Universal Editor](/help/edge/docs/forms/universal-editor/assets/generate-forms.svg)  **WYSIWYG interface for Form creation**: Universal Editor provides a WYSIWYG interface for form design. It provides pre-built component library, responsive design support, and template-based form creation. You can instantly add or remove form fields and modify field properties (like label, data binding, validation). You can also plugin custom form components to Universal Editor.
