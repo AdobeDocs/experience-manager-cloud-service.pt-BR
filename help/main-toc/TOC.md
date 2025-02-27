@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: bc39d7272da400ba20df4c788fc37e7d72006355
 workflow-type: tm+mt
-source-wordcount: '6195'
+source-wordcount: '6199'
 ht-degree: 68%
 
 ---
@@ -213,6 +213,7 @@ ht-degree: 68%
    + Notas de Versão do Editor Universal {#univeral-editor}
       + [Notas de versão atuais do Universal Editor](/help/release-notes/universal-editor/current.md)
       + 2025 {#2025}
+         + [Notas de versão 2025.02.17](/help/release-notes/universal-editor/2025/2025-02-17.md)
          + [Notas de versão 2025.01.16](/help/release-notes/universal-editor/2025/2025-01-16.md)
       + 2024 {#2024}
          + [Notas de versão 2024.12.02](/help/release-notes/universal-editor/2024/2024-12-02.md)
