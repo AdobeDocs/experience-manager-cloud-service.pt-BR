@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 26a80ce68c5f6eee032ded355a8e5747ad6449a7
+source-git-commit: 428c722ae65342a52339effe7c97fd6de10a4f58
 workflow-type: tm+mt
-source-wordcount: '1809'
-ht-degree: 40%
+source-wordcount: '1837'
+ht-degree: 38%
 
 ---
 
@@ -175,11 +175,11 @@ As seguintes limitações se aplicam à adição de usuários à New Relic One:
 
 * É possível adicionar no máximo 30 usuários. Se o número máximo de usuários for atingido, remova alguns para poder adicionar novos.
 * Os usuários adicionados ao New Relic são do tipo **Restrito**. Consulte a [documentação do New Relic para obter detalhes](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/introduction-managing-users/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change).
-* O AEM as a Cloud Service somente oferece a solução de APM da New Relic One e não oferece suporte a alertas, registros ou integrações de API.
+* A AEM as a Cloud Service oferece apenas a solução **New Relic One APM** e não oferece suporte para monitoramento de infraestrutura, alertas, registros ou integrações de API.
 
 >[!NOTE]
 >
->Se nenhuma atividade for detectada na subconta do New Relic One por 30 dias ou mais, o agente APM será interrompido.
+>Se nenhuma atividade de **logon de usuário** for detectada em sua subconta do New Relic One por 30 dias ou mais, o agente APM será interrompido e os dados não serão enviados do AEM Cloud Service para o New Relic.  **Os dados não serão enviados novamente até que sua subconta seja reativada.**
 >
 >Siga as mesmas etapas na seção [Ativar a subconta do New Relic One](#activate-sub-account) deste documento para reativar a subconta do New Relic One.
 
@@ -187,7 +187,7 @@ Para obter mais ajuda ou orientação sobre as ofertas da New Relic One para o s
 
 ## Perguntas frequentes {#faqs}
 
-+++**O que o Adobe monitora com o New Relic One?** {#adobe-monitor}
++++**O que o Adobe monitora com o New Relic One?**
 
 A Adobe monitora os serviços de autoria, publicação e visualização do AEM as a Cloud Service (quando disponíveis) por meio do plug-in Java da New Relic One. A Adobe habilita a telemetria e o monitoramento personalizados da APM da New Relic One em ambientes de produção e não produção do AEM as a Cloud Service.
 
@@ -205,22 +205,22 @@ Observação:
 
 +++
 
-+++**O Adobe envia notificações de alerta do New Relic One?** {#alerting-new-relic}
++++**O Adobe envia notificações de alerta do New Relic One?**
 
 A Adobe fornece acesso ao New Relic One somente para fins de observação e não o usa para alertas de clientes ou alertas operacionais internos. As notificações para qualquer incidente são enviadas usando [perfis de notificação de usuário](/help/journey-onboarding/notification-profiles.md).
 +++
 
-+++**Quem pode acessar os dados do New Relic One Cloud Service?** {#access-new-relic-cloud}
++++**Quem pode acessar os dados do New Relic One Cloud Service?**
 
 O acesso integral para leitura será concedido para até 30 membros da sua equipe. O acesso de leitura inclui todas as métricas de APM coletadas pelo agente do New Relic One.
 +++
 
-+++**Há suporte para a configuração personalizada de SSO?** {#custom-sso}
++++**Há suporte para a configuração personalizada de SSO?**
 
 A configuração personalizada do SSO não é suportada para a conta da New Relic One provisionada pela Adobe.
 +++
 
-+++**E se eu já tiver uma assinatura local do New Relic?** {#new-relic-subscription}
++++**E se eu já tiver uma assinatura local do New Relic?**
 
 A New Relic One é a nova plataforma de observabilidade da New Relic e permite que o suporte da Adobe e suas equipes observem, monitorem e visualizem métricas e eventos, tudo em um só lugar.
 
@@ -234,7 +234,7 @@ O suporte da Adobe monitora o AEM as a Cloud Service com o New Relic One e outra
 
 +++
 
-+++**O agente APM da minha conta do New Relic One foi interrompido. O que aconteceu?** {#deactivated}
++++**O agente APM da minha conta do New Relic One foi interrompido. O que aconteceu?**
 
 [Os agentes APM serão interrompidos](#limitations) se nenhuma atividade for detectada por 30 dias ou mais. Siga as mesmas etapas na seção [Ativar a subconta do New Relic One](#activate-sub-account) deste documento para reativar a subconta do New Relic One.
 +++
