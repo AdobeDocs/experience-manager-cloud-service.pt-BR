@@ -4,9 +4,9 @@ description: Saiba como configurar o Cloud Manager para trabalhar com os seus re
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
+source-git-commit: 7097ec755ff41d5440de62a757bf036ae336de67
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '940'
 ht-degree: 39%
 
 ---
@@ -38,6 +38,9 @@ A configuração de um repositório GitHub privado no Cloud Manager consiste em 
 1. [Adicionar um repositório GitHub privado](#add-repo) a um programa selecionado.
 1. Em seguida, [valide a propriedade do repositório GitHub privado](#validate-ownership).
 
+>[!NOTE]
+>A Cloud Manager oferece suporte a repositórios privados somente na GitHub Cloud (github.com). <!-- As per request in https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=DMSArchitecture&title=%5B2025%5D+Cloud+Manager+-+Bring+Your+Own+Git+-+Pull+Request+validator+for+multiple+vendors -->
+
 ### Adicionar um repositório GitHub privado a um programa {#add-repo}
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
@@ -68,7 +71,6 @@ Agora você pode [validar a propriedade do repositório privado](#validate-owner
 >[!TIP]
 >
 >Para obter detalhes sobre como gerenciar repositórios no Cloud Manager, consulte [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
-
 
 
 ### Validar a propriedade de um repositório GitHub privado {#validate-ownership}
