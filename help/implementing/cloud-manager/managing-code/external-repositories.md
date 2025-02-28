@@ -4,10 +4,10 @@ description: Saiba como adicionar um repositório externo no Cloud Manager. O Cl
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: befb092169e2278a9e84c183d342003ef325c71e
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 91%
+source-wordcount: '763'
+ht-degree: 87%
 
 ---
 
@@ -49,8 +49,8 @@ A configuração de um repositório externo no Cloud Manager consiste em três e
    | Texto | Descrição |
    | --- | --- |
    | **Nome do repositório** | Obrigatório. Um nome expressivo para o novo repositório. |
-   | **URL do repositório** | Obrigatório. O URL do repositório.<br><br> Se você estiver usando um repositório hospedado pelo GitHub, o caminho deverá terminar em `.git`.<br>Por exemplo, *`https://github.com/org-name/repo-name.git`* (o caminho do URL é apenas para fins ilustrativos).<br><br>Se você estiver usando um repositório externo, ele deverá usar o seguinte formato de caminho de URL:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou<br>`https://self-hosted-domain/org-name/repo-name.git`<br>e corresponder ao seu fornecedor de Git. |
-   | S **Selecionar Tipo de Repositório** | Obrigatório. Selecione o tipo de repositório que você está usando: **GitHub**, **GitLab** ou **BitBucket**. Se o caminho do URL do repositório acima incluir o nome do fornecedor do Git, como GitLab ou Bitbucket, o tipo de repositório já estará pré-selecionado. |
+   | **URL do repositório** | Obrigatório. O URL do repositório.<br><br>Se você estiver usando um repositório hospedado pelo GitHub, o caminho deverá terminar em `.git`.<br>Por exemplo, *`https://github.com/org-name/repo-name.git`* (o caminho do URL é apenas para fins ilustrativos).<br><br>Se você estiver usando um repositório externo, ele deverá usar o seguinte formato de caminho de URL:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou<br>`https://self-hosted-domain/org-name/repo-name.git`<br>e corresponder ao seu fornecedor de Git. |
+   | **Selecionar tipo de repositório** | Obrigatório. Selecione o tipo de repositório que você está usando: **GitHub**, **GitLab** ou **BitBucket**. Se o caminho do URL do repositório acima incluir o nome do fornecedor do Git, como GitLab ou Bitbucket, o tipo de repositório já estará pré-selecionado. |
    | **Descrição** | Opcional. Uma descrição detalhada do repositório. |
 
 1. Clique em **Salvar** para adicionar o repositório.
@@ -64,7 +64,7 @@ A configuração de um repositório externo no Cloud Manager consiste em três e
    | --- | --- |
    | **Usar token de acesso já existente** | Se você já forneceu um token de acesso ao repositório para sua organização e tem acesso a vários repositórios, você pode selecionar um token. Use a lista suspensa **Nome do token** para escolher o token que deseja aplicar ao repositório. Caso contrário, adicione um novo token de acesso. |
    | **Adicionar novo token de acesso** | **Tipo de repositório: GitHub**<br>• No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<br>• Crie um token de acesso pessoal seguindo as instruções na [documentação do GitHub](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<br>• Permissões necessárias:<br>  • `Read access to metadata`.<br>  • `Read and write access to code and pull requests`.<br>• No campo **Token de acesso**, cole o token que você acabou de criar. |
-   |  | **Tipo de repositório: GitLab**<br>• No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<br>• Crie um token de acesso pessoal seguindo as instruções na [documentação do GitLab](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).<br>• Permissões necessárias:<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• No campo **Token de acesso**, cole o token que você acabou de criar. |
+   |  | **Tipo de repositório: GitLab**<br>• No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<br>• Crie um token de acesso pessoal seguindo as instruções na [documentação do GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<br>• Permissões necessárias:<br>  • `api`<br>  • `read_api`<br>  • `read_repository`<br>  • `write_repository`<br>• No campo **Token de acesso**, cole o token que você acabou de criar. |
    |  | **Tipo de repositório: Bitbucket**<br>• No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<br>• Crie um token de acesso ao repositório usando a [documentação do Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<br>• Permissões necessárias:<br>  • `Read and write access to code and pull requests`. |
 
    >[!NOTE]
@@ -99,7 +99,9 @@ Após a validação, o repositório externo estará pronto para ser usado e vinc
 
 ## Limitações
 
-Repositórios externos não podem ser vinculados aos Pipelines de configuração.
+* Repositórios externos não podem ser vinculados aos Pipelines de configuração.
+* Os pipelines com repositórios externos (não hospedados no GitHub) e o acionador &quot;Nas alterações do Git&quot; não são iniciados automaticamente. Eles só podem ser iniciados manualmente.
+
 
 <!-- THIS BULLET REMOVED AS PER https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2024.12.0+Release. THEY CAN NOW START AUTOMATICALLY>
 * Pipelines using external repositories (excluding GitHub-hosted repositories) and the **Deployment Trigger** option [!UICONTROL **On Git Changes**], triggers are not automatically started. They must be manually started. -->

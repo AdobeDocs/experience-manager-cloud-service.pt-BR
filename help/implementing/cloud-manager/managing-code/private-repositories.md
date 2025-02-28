@@ -4,16 +4,16 @@ description: Saiba como configurar o Cloud Manager para trabalhar com os seus re
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2fa4abca9823bbc62900023d637429f3fbfd894d
+source-git-commit: bd05433bb4d92a4120b19ad99d211a4a5e1f06ca
 workflow-type: tm+mt
 source-wordcount: '930'
-ht-degree: 34%
+ht-degree: 39%
 
 ---
 
 # Adicionar um repositório GitHub privado no Cloud Manager {#private-repositories}
 
-Ao configurar o Cloud Manager para integrar com seus repositórios GitHub privados, você pode validar seu código diretamente no GitHub usando o Cloud Manager. Essa configuração remove o requisito de sincronizar o código regularmente com o repositório Adobe.
+Ao configurar o Cloud Manager para integrar com seus repositórios GitHub privados, você pode validar seu código diretamente no GitHub usando o Cloud Manager. Essa configuração remove o requisito de sincronizar o código regularmente com o repositório do Adobe.
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 
@@ -59,7 +59,7 @@ A configuração de um repositório GitHub privado no Cloud Manager consiste em 
    | Texto | Descrição |
    | --- | --- |
    | Nome do repositório | Um nome expressivo para o novo repositório. |
-   | URL do repositório | A URL do repositório privado, que deve terminar em `.git`.<br>Por exemplo, *`https://github.com/org-name/repo-name.git`* (o caminho da URL é apenas para fins ilustrativos). |
+   | URL do repositório | A URL do repositório privado, que deve terminar em `.git`.<br>Por exemplo, *`https://github.com/org-name/repo-name.git`* (o caminho do URL é apenas para fins ilustrativos). |
    | Descrição (opcional) | Uma descrição detalhada do repositório. |
 
 1. Selecione **Salvar**.
@@ -102,7 +102,7 @@ Até a validação, o repositório será listado com um ícone vermelho, indican
 
 ![Repositório não validado](/help/implementing/cloud-manager/assets/repos/unvalidated-repo.png)
 
-A coluna **Tipo** na tabela na página **Repositórios** identifica repositórios fornecidos por Adobe (**Adobe**) e seus próprios repositórios privados (**GitHub**).
+A coluna **Tipo** na tabela na página **Repositórios** identifica repositórios fornecidos pela Adobe (**Adobe**) e seus próprios repositórios privados (**GitHub**).
 
 Se precisar retornar ao repositório mais tarde para concluir a validação, na página **Repositórios**, clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na linha que representa o repositório GitHub que você acabou de adicionar. Na lista suspensa, selecione **Validação de Propriedade**.
 
@@ -138,7 +138,7 @@ Quando a solicitação de pull é mesclada ou fechada, o pipeline de qualidade d
 
 ## Associação de repositórios privados a pipelines {#pipelines}
 
-Repositórios privados validados podem ser associados a [pipelines de pilha completa e front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
+Repositórios privados validados podem ser associados a [pipelines de pilha completa e front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 
 
@@ -148,8 +148,8 @@ Certas limitações se aplicam ao uso de repositórios privados com o Cloud Mana
 
 * Os pipelines de nível da Web e de configuração não são compatíveis com repositórios privados.
 * Nenhuma tag do Git será criada e enviada ao usar repositórios privados em pipelines de pilha completa de produção.
-* Se o aplicativo GitHub do Adobe for removido da organização GitHub, o recurso de validação de solicitações de pull será removido de todos os repositórios.
-* Os pipelines que usam repositórios privados e o acionador de build ao confirmar não são iniciados automaticamente quando uma nova confirmação é enviada para a ramificação selecionada.
+* Se o aplicativo GitHub da Adobe for removido da organização GitHub, ele removerá o recurso de validação de solicitações de pull para todos os repositórios.
+* Os pipelines que usam repositórios privados e o acionador de build &quot;na confirmação&quot; não são iniciados automaticamente quando uma nova confirmação é enviada para a ramificação selecionada.
 * A [Funcionalidade de reutilização de artefato](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) não se aplica a repositórios privados.
 * Não é possível pausar a validação da solicitação de pull usando a verificação do GitHub da Cloud Manager.
 Se o repositório GitHub for validado no Cloud Manager, o Cloud Manager sempre tentará validar as solicitações de pull criadas para esse repositório.
