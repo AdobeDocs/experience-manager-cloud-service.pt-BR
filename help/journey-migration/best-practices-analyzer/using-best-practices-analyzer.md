@@ -4,10 +4,10 @@ description: Saiba como usar o Analisador de práticas recomendadas para entende
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: 3a0576e62518240b89290a75752386128b1ab082
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
-source-wordcount: '2724'
-ht-degree: 38%
+source-wordcount: '2796'
+ht-degree: 37%
 
 ---
 
@@ -27,7 +27,7 @@ Siga a seção abaixo para entender considerações importantes na execução do
 
 * O BPA só pode ser executado pelo usuário **administrador** ou por um usuário do grupo **administradores**.
 
-* BPA é compatível em instâncias AEM com a versão 6.1 e superior.
+* O BPA é compatível com instâncias do AEM com a versão 6.1 e superior.
 
   >[!NOTE]
   >Consulte [Instalação no AEM 6.1](#installing-on-aem61) para obter os requisitos especiais de instalação do BPA no AEM 6.1.
@@ -48,14 +48,14 @@ Siga a seção abaixo para entender considerações importantes na execução do
 >title="Baixar o Analisador de práticas recomendadas"
 >abstract="É possível baixar o Analisador de Práticas Recomendadas como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do Gerenciador de pacotes na sua instância de origem do Adobe Experience Manager (AEM)."
 
-É possível baixar o Analisador de Práticas Recomendadas como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md) na instância do Adobe Experience Manager (AEM) de origem.
+É possível baixar o Analisador de Práticas Recomendadas como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md) na sua instância de origem do Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >Baixe o Analisador de Práticas Recomendadas do portal [Distribuição de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Conectividade de ambiente do Source {#source-environment-connectivity}
 
-A instância do AEM de origem pode estar sendo executada por trás de um firewall, em que ela só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para carregar automaticamente o relatório gerado pelo BPA para o Cloud Acceleration Manager com êxito, os seguintes endpoints precisam estar acessíveis na instância que está executando o AEM:
+A instância do AEM de origem pode estar sendo executada por trás de um firewall, em que só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para carregar automaticamente o relatório gerado pelo BPA para o Cloud Acceleration Manager com sucesso, os seguintes endpoints precisam estar acessíveis na instância que está executando o AEM:
 
 * O serviço de armazenamento de blobs do Azure: `casstorageprod.blob.core.windows.net`
 
@@ -78,6 +78,20 @@ Siga esta seção para saber como exibir o relatório do Analisador de práticas
 1. Clique em **Gerar relatório** para executar o Analisador de práticas recomendadas.
 
    ![Gerar relatório](/help/journey-migration/best-practices-analyzer/assets/BPA_pic2.png)
+
+>[!NOTE]
+> A partir da versão 2.1.54 do BPA, um novo recurso foi introduzido para obter a pontuação do Lighthouse.
+1. Depois de clicar em **Gerar relatório**, um pop-up será exibido solicitando a URL do Site Público da AEM para a Pontuação do Lighthouse. O usuário precisa inserir um URL válido no campo fornecido.
+
+   ![imagem](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
+
+   1. Se o URL for válido, uma mensagem de sucesso será exibida.
+
+      ![imagem](/help/journey-migration/best-practices-analyzer/assets/valid_url.png)
+
+   1. Se o URL for inválido, uma mensagem de erro será exibida.
+
+      ![imagem](/help/journey-migration/best-practices-analyzer/assets/invalid_url.png)
 
 1. Forneça a chave de carregamento de BPA para carregar automaticamente o relatório de BPA gerado no [Cloud Acceleration Manager (CAM)](/help/journey-migration/cloud-acceleration-manager/introduction/benefits-cam.md). Para obter a chave de carregamento, navegue até a [Análise de práticas recomendadas no CAM](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#best-practices-analysis)
 
@@ -162,7 +176,7 @@ O formato do relatório é:
    * **Hora de expiração**: quando o cache do conteúdo do relatório expirará.
    * **Período de geração**: o tempo gasto pelo processo de geração de conteúdo do relatório.
    * **Contagem de conclusões**: o número total de conclusões incluídas no relatório.
-* **Visão geral do sistema**: informações sobre o sistema AEM no qual o BPA foi executado.
+* **Visão Geral do Sistema**: Informações sobre o sistema AEM no qual o BPA foi executado.
 * **Categorias de conclusão**: várias seções que abordam uma ou mais conclusões da mesma categoria. Cada seção inclui o seguinte: nome da categoria, subtipos, contagem e importância das conclusões, resumo, link para a documentação da categoria e informações de conclusões individuais.
 
 Um nível de importância é atribuído a cada conclusão para indicar uma prioridade aproximada de ação.
@@ -242,7 +256,7 @@ Quando um cabeçalho HTTP e um parâmetro de consulta correspondente estiverem p
 Uma maneira simples de iniciar a geração do relatório por meio da interface HTTP é com o seguinte comando:
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.json?max-age=0&respond-async=true'`.
 
-Depois que uma solicitação é feita, o cliente não precisa permanecer ativo para que o relatório seja gerado. A geração de relatórios pode ser iniciada com um cliente usando uma solicitação HTTP GET e, uma vez gerado o relatório, visualizada do cache com outro cliente ou com a ferramenta BPA na interface do usuário AEM.
+Depois que uma solicitação é feita, o cliente não precisa permanecer ativo para que o relatório seja gerado. A geração de relatórios pode ser iniciada com um cliente usando uma solicitação HTTP GET e, depois que o relatório for gerado, visualizada do cache com outro cliente ou com a ferramenta BPA na interface do usuário do AEM.
 
 ### Respostas {#http-responses}
 
@@ -259,7 +273,7 @@ Os seguintes valores de resposta são possíveis:
 
 ### Ajuste da Duração do Cache {#cache-adjustment}
 
-O tempo de vida padrão do cache do BPA é de 24 horas. Com a opção de atualizar um relatório e regenerar o cache, tanto na instância AEM quanto na interface HTTP, esse valor padrão provavelmente será apropriado para a maioria dos usos do BPA. Se o tempo de geração do relatório for particularmente longo para a instância AEM, talvez você queira ajustar o tempo de vida do cache para minimizar a regeneração do relatório.
+O tempo de vida padrão do cache do BPA é de 24 horas. Com a opção de atualizar um relatório e regenerar o cache, tanto na instância do AEM quanto na interface HTTP, esse valor padrão provavelmente será apropriado para a maioria dos usos do BPA. Se o tempo de geração do relatório for particularmente longo para sua instância do AEM, talvez você queira ajustar o tempo de vida do cache para minimizar a regeneração do relatório.
 
 O valor vitalício do cache é armazenado como a propriedade `maxCacheAge` no seguinte nó do repositório:
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`
@@ -274,4 +288,4 @@ O BPA usa uma conta de usuário do serviço do sistema chamada `repository-reade
 
 2. Siga as instruções em [Gerenciar usuários e grupos](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html#managing-users-and-groups), especificamente as instruções para adicionar usuários a um grupo, para adicionar o usuário `repository-reader-service` ao grupo `administrators`.
 
-3. Instale o pacote BPA por meio do Gerenciador de pacotes na instância AEM de origem. (Essa etapa adiciona a alteração de configuração necessária à configuração ServiceUserMapper do usuário de serviço do sistema `repository-reader-service`.)
+3. Instale o pacote de BPA por meio do Gerenciador de pacotes na instância do AEM de origem. (Essa etapa adiciona a alteração de configuração necessária à configuração ServiceUserMapper do usuário de serviço do sistema `repository-reader-service`.)

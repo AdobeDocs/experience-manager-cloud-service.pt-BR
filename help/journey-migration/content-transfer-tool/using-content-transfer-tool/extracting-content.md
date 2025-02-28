@@ -4,10 +4,10 @@ description: Saiba como extrair conteúdo de uma instância do Adobe Experience 
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
 feature: Migration
 role: Admin
-source-git-commit: 4408f15ef85d0fc2c6a0e2b45038dc900d212187
+source-git-commit: d568619bd8ebb42a6914211401df680352c921ab
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 19%
+source-wordcount: '789'
+ht-degree: 17%
 
 ---
 
@@ -37,11 +37,11 @@ Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Tran
    >[!IMPORTANT]
    >
    >Verifique se a chave de extração é válida e se não está próxima de expirar. Se estiver próximo da data de expiração, você poderá renovar a chave de Extração selecionando o conjunto de migração e clicando em Propriedades. Clique em **Renovar**. Você será direcionado para a Cloud Acceleration Manager onde pode clicar em **Copiar Chave de Extração**. Toda vez que você clica em **Copiar chave de extração**, é gerada uma nova chave de extração que é válida por 14 dias a partir da data de criação.
-   >![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetDetails.png)
 
 1. Isso exibe a caixa de diálogo Extração. Clique em **Extrair** para iniciar a fase de extração.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14c.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/migrationSetExtraction.png)
 
    >[!NOTE]
    >Opcionalmente, é possível substituir o container de preparo durante a fase de extração. Se o **contêiner de preparação de substituição** estiver desabilitado, ele poderá acelerar as extrações para migrações subsequentes em que os caminhos de conteúdo ou as configurações de inclusão de versões não tenham sido alterados. No entanto, se os caminhos de conteúdo ou as configurações de inclusão de versões tiverem sido alterados, o **contêiner de preparação de substituição** deverá ser habilitado.
@@ -52,7 +52,7 @@ Siga as etapas abaixo para extrair seu conjunto de migração da ferramenta Tran
 
    Você pode clicar em **Exibir andamento** para obter uma exibição granular da extração em andamento.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/viewProgress.png)
 
    Você também pode monitorar o progresso da fase de Extração no Cloud Acceleration Manager visitando a página Transferência de Conteúdo e vê-lo com mais detalhes clicando em **...** > **Exibir detalhes**.
 
@@ -71,6 +71,12 @@ A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a at
 >Após a transferência inicial do conteúdo, é recomendável fazer atualizações complementares frequentes de conteúdo diferencial para reduzir o período de congelamento de conteúdo para a transferência final de conteúdo diferencial antes de entrar online no Cloud Service. Se você tiver usado a etapa de pré-cópia para a primeira extração completa, poderá ignorar a pré-cópia para as extrações complementares subsequentes (se o tamanho do conjunto de migração complementar for menor que 200 GB). O motivo é que isso pode adicionar tempo a todo o processo.
 >Além disso, é essencial que a estrutura de conteúdo do conteúdo existente não seja alterada desde o momento em que a extração inicial é realizada até o momento em que a extração complementar é executada. Os complementos não podem ser executados em um conteúdo cuja estrutura foi alterada desde a extração inicial. Restrinja isso durante o processo de migração.
 
+>[!NOTE]
+>Depois que os caminhos de conteúdo são migrados para o container de preparo, esses caminhos ou quaisquer subcaminhos dentro deles não podem ser removidos ou excluídos das migrações complementares subsequentes.
+>Exemplo: Migração inicial: content/dam/weRetail,
+>Próxima tentativa de exclusão complementar: content/dam/weRetail/ab.
+>Nesse cenário, não é possível excluir content/dam/weRetail/ab porque os dados já foram migrados para o container de preparo.
+
 Quando o processo de extração estiver concluído, você poderá transferir o conteúdo delta usando o método de extração complementar.
 
 Siga as etapas abaixo:
@@ -83,7 +89,7 @@ Siga as etapas abaixo:
 
    >[!IMPORTANT]
    >Você deve desativar a opção **Substituir containercontêiner de preparação durante a extração**.
-   >![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/overwriteStagingContainer.png)
 
 
 ## O que vem a seguir {#whats-next}

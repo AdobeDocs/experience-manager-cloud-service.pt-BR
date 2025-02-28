@@ -4,7 +4,7 @@ description: Usar a ferramenta Transferência de conteúdo para validar as trans
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: b7e485e3b7ce6f2d2fa7fe9b2953d2296186871d
+source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
@@ -20,9 +20,9 @@ Os usuários podem determinar com confiança se todo o conteúdo que foi extraí
 
 >[!INFO]
 >
->Esse recurso estará disponível a partir da versão 1.8.x da Ferramenta de transferência de conteúdo (CTT). O ambiente de destino do AEM Cloud Service deve estar em execução na versão 6158 ou superior. Também requer que o ambiente de origem seja configurado para executar a [pré-cópia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). O recurso de validação procura o arquivo azcopy.config na origem. Se não encontrar esse arquivo, a validação não será executada. Para saber mais sobre como configurar um arquivo azcopy.config, consulte [Lidar com repositórios de conteúdo grandes - Configurar um arquivo azcopy.config](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
+>Esse recurso estará disponível a partir da versão 1.8.x da Ferramenta de transferência de conteúdo (CTT). O ambiente de destino do AEM Cloud Service deve estar executando a versão 6158 ou superior. Também requer que o ambiente de origem seja configurado para executar a [pré-cópia](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). O recurso de validação procura o arquivo azcopy.config na origem. Se não encontrar esse arquivo, a validação não será executada. Para saber mais sobre como configurar um arquivo azcopy.config, consulte [Lidar com repositórios de conteúdo grandes - Configurar um arquivo azcopy.config](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-A validação de uma transferência de conteúdo é um recurso opcional. Habilitar esse recurso aumentará o tempo necessário para executar uma extração e uma assimilação. Para usar o recurso, ative-o no Console do sistema do ambiente AEM de origem seguindo estas etapas:
+A validação de uma transferência de conteúdo é um recurso opcional. Habilitar esse recurso aumentará o tempo necessário para executar uma extração e uma assimilação. Para usar o recurso, ative-o no Console do sistema do ambiente do AEM de origem seguindo estas etapas:
 
 1. Navegue até o Console da Web do Adobe Experience Manager na instância de origem, acessando **Ferramentas - Operações - Console da Web** ou diretamente para a URL em *https://serveraddress:serverport/system/console/configMgr*
 1. Pesquisar por **Configuração do serviço de extração da ferramenta de transferência de conteúdo**
@@ -31,13 +31,13 @@ A validação de uma transferência de conteúdo é um recurso opcional. Habilit
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets/CTTvalidation1.png)
 
-Com essa configuração ativada e o ambiente AEM Cloud Service de destino executando uma versão compatível, a validação da migração ocorrerá durante toda a extração e assimilação seguintes.
+Com essa configuração ativada e com o ambiente do AEM Cloud Service de destino executando uma versão compatível, a validação da migração ocorrerá durante toda a extração e assimilações subsequentes.
 
 Para obter mais informações sobre como instalar a Ferramenta de transferência de conteúdo, consulte [Introdução à Ferramenta de transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md).
 
 ## Como validar uma transferência de conteúdo {#how-to-validate-a-content-transfer}
 
-Com a validação da migração ativada no ambiente AEM de origem, comece uma extração.
+Com a validação de migração ativada no ambiente do AEM de origem, comece uma extração.
 
 Se **Substituir o contêiner de preparação durante a extração** estiver habilitado, todos os nós envolvidos na extração serão registrados no resumo do caminho de extração. Quando essa configuração é usada, é importante habilitar a configuração **Limpar conteúdo existente na instância da nuvem antes de assimilar** durante a assimilação, caso contrário, pode parecer que faltam nós no resumo da assimilação. Esses são os nós que já estão presentes no target nas assimilações anteriores.
 
@@ -47,7 +47,7 @@ Para obter uma ilustração gráfica, consulte os seguintes exemplos:
 
 * **Extração (Substituir)**
 
-  ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/example1-extraction.png)
 
 * **Assimilação (Apagar)**
 
@@ -61,7 +61,7 @@ Para obter uma ilustração gráfica, consulte os seguintes exemplos:
 
 * **Extração**
 
-  ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/example2-extraction.png)
 
 * **Assimilação**
 

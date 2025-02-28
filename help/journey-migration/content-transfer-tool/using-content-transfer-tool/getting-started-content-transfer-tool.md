@@ -4,10 +4,10 @@ description: Saiba como começar a usar a ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: d8730109f5cd7dab44f535b1de008ae09811f221
+source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 16%
+source-wordcount: '1572'
+ht-degree: 14%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 16%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR" text="Notas de versão"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portal de distribuição de software"
 
-O Content Transfer Tool pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md) na instância do Adobe Experience Manager de origem (AEM). Baixe a versão mais recente. Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
+O Content Transfer Tool pode ser baixado como arquivo zip no Portal de distribuição de software. Você pode instalar o pacote por meio do [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md) na sua instância de origem do Adobe Experience Manager (AEM). Baixe a versão mais recente. Para obter mais detalhes sobre a versão mais recente, consulte as [Notas de versão](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR).
 
 Somente a versão 2.0.0 e superior é compatível, e é aconselhável usar a versão mais recente.
 
@@ -37,7 +37,7 @@ Somente a versão 2.0.0 e superior é compatível, e é aconselhável usar a ver
 >
 >Um erro de conexão também poderá ocorrer se um conjunto de migração tiver sido excluído do Cloud Acceleration Manager.
 
-A instância do AEM de origem pode estar sendo executada por trás de um firewall, em que ela só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para executar uma extração com êxito, os seguintes endpoints precisam estar acessíveis na instância que está executando o AEM:
+A instância do AEM de origem pode estar sendo executada por trás de um firewall, em que só pode alcançar determinados hosts que foram adicionados a uma Lista de permissões. Para executar uma extração com êxito, os seguintes endpoints precisam estar acessíveis na instância que está executando o AEM:
 
 * O serviço de armazenamento de blobs do Azure: `casstorageprod.blob.core.windows.net`
 
@@ -105,7 +105,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 
    >[!NOTE]
    >
-   >A chave de extração permite que o ambiente AEM de origem se conecte com segurança ao conjunto de migração. Trate essa chave com o mesmo cuidado com que você usaria uma senha e nunca a compartilhe em uma mídia não segura, como email.
+   >A chave de extração permite que o ambiente do AEM de origem se conecte com segurança ao conjunto de migração. Trate essa chave com o mesmo cuidado com que você usaria uma senha e nunca a compartilhe em uma mídia não segura, como email.
 
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -131,26 +131,49 @@ Para preencher o conjunto de migração criado no Cloud Acceleration Manager, in
    >
    >Verifique se a chave de extração é válida e se não está próxima de sua expiração. Você pode obter essas informações na caixa de diálogo **Criar conjunto de migração** depois de colar a chave de extração. Se você receber um erro de conexão, consulte [Conectividade do ambiente Source](#source-environment-connectivity) para obter mais informações.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/createMigrationSet.png)
 
 1. Em seguida, selecione os seguintes Parâmetros para criar um Conjunto de Migração:
 
    1. **Incluir versão**: selecione conforme necessário. Quando as versões são incluídas, o caminho `/var/audit` é incluído automaticamente para migrar eventos de auditoria.
 
-      ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+      ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/includeVersion.png)
 
       >[!NOTE]
       >Se você pretende incluir versões como parte de um conjunto de migração e estiver executando atualizações com `wipe=false`, desative a limpeza de versões devido a uma limitação atual na Ferramenta de transferência de conteúdo. Se preferir manter a limpeza de versão habilitada e estiver executando atualizações complementares em um conjunto de migração, você deve executar a assimilação como `wipe=true`.
 
+      >[!NOTE]
+      >A partir da versão CTT (3.0.24), novos recursos foram incluídos na ferramenta Transferência de conteúdo, aprimorando o processo de inclusão e exclusão de caminhos. Anteriormente, os caminhos precisavam ser selecionados um por um, o que era tedioso e demorado. Agora, os usuários podem incluir caminhos diretamente da interface do usuário ou fazer upload de um arquivo CSV de acordo com suas preferências.
 
-   1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados. O seletor de caminhos aceita a entrada digitando ou selecionando.
-
+   1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados. O seletor de caminhos aceita a entrada digitando ou selecionando. Os usuários podem selecionar apenas uma opção para incluir caminhos: na interface ou fazendo upload de um arquivo CSV.
       >[!IMPORTANT]
       >Os seguintes caminhos estão restritos ao criar um conjunto de migração:
       >* `/apps`
       >* `/libs`
       >* `/home`
       >* `/etc` (alguns caminhos `/etc` podem ser selecionados na CTT)
+
+      ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/includeAndExcludePath.png)
+
+      1. Somente a seleção de caminho é permitida e pelo menos um caminho deve estar presente.Se nenhum caminho for selecionado, ocorrerá um erro no servidor.
+
+         ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ServerError.png)
+
+      1. Ao usar a **opção de carregamento CSV**, o arquivo CSV deve conter caminhos válidos.
+
+         ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/validCsvUpload.png)
+
+      1. Para voltar para o seletor de caminho, os usuários precisam atualizar a página e começar novamente.
+
+      1. Se **caminhos inválidos** forem encontrados no CSV carregado, uma caixa de diálogo separada exibirá os caminhos inválidos.
+
+         ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/invalidPathsInCsv.png)
+
+      1. Os usuários devem corrigir o arquivo CSV e carregá-lo novamente ou atualizar a interface do usuário para selecionar caminhos por meio do seletor de caminhos.
+
+   1. **Caminhos a serem excluídos**: um novo recurso permite que os usuários excluam caminhos específicos se eles não os desejarem incluir. Por exemplo, se o caminho na seção de inclusão for /content/dam, os usuários poderão excluir caminhos como /content/dam/catalogs.
+
+      ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/excludePathHighlighted.png)
 
 1. Clique em **Salvar** depois de preencher todos os campos na tela de detalhes **Criar conjunto de migração**.
 
@@ -184,7 +207,7 @@ Siga as etapas abaixo para executar uma verificação de tamanho:
 
 1. Isso abre a caixa de diálogo **Verificar Tamanho**.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/checkMigrationSetSize.png)
 
 1. Clique em **Verificar Tamanho** para iniciar o processo. Você retornará para a exibição da lista de conjuntos de migração e verá uma mensagem indicando que **Verificar Tamanho** está em execução.
 
@@ -192,7 +215,7 @@ Siga as etapas abaixo para executar uma verificação de tamanho:
 
 1. Após a conclusão do processo **Verificar Tamanho**, o status será alterado para **CONCLUÍDO**. Selecione o mesmo conjunto de migração e clique em **Verificar tamanho** para ver os resultados. Veja abaixo um exemplo dos resultados **Verificar Tamanho** sem avisos.
 
-   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
+   ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/checkSizeAfterFinished.png)
 
 1. Se os resultados da **Verificação de Tamanho** indicarem que há espaço em disco insuficiente, ou o conjunto de migração excede os limites do produto, ou ambos, um status de **AVISO** será exibido.
 
