@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: bc39d7272da400ba20df4c788fc37e7d72006355
+source-git-commit: 1187cf7ada92d8afbe27181c372cdbf6952eb58a
 workflow-type: tm+mt
-source-wordcount: '6199'
+source-wordcount: '6205'
 ht-degree: 68%
 
 ---
@@ -1149,6 +1149,7 @@ ht-degree: 68%
          + [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](/help/journey-headless/author/metadata-tagging.md)
 + IA gerativa {#generative-ai}
    + [Gerar variações](/help/generative-ai/generate-variations.md)
+   + [Gerar variações - Integrado nos editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Assistente (Beta limitado)](/help/implementing/cloud-manager/aem-ai-assistant.md)
 + Implementação {#implementing}
    + [Implementação de aplicativos do AEM as a Cloud Service](/help/implementing/home.md)

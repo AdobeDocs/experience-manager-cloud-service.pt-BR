@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: 84e329e893ead1d67a3a0f651d0d2d4b24021b12
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '2851'
+source-wordcount: '2657'
 ht-degree: 3%
 
 ---
@@ -33,7 +33,7 @@ Esse editor fornece:
 * [Carregamento embutido de ativos como referências de conteúdo](#reference-images), sem ter que carregá-los primeiro no DAM de Ativos.
 * [Gerar variações](#generate-variations-ai) para usar a IA de geração para acelerar a criação de conteúdo com base em prompts.
 * [Visualização](#preview-content-fragment) da experiência renderizada entregue pelo Fragmento de conteúdo.
-* Capacidade de [desfazer a publicação do Publish](#publish-content-fragment) e [desfazer a publicação](#unpublish-content-fragment) do editor.
+* Capacidade de [Publicar](#publish-content-fragment) e [Cancelar publicação](#unpublish-content-fragment) do editor.
 * Capacidade de [exibir e abrir cópias de idioma associadas](#view-language-copies) no editor.
 * Capacidade de [exibir detalhes da versão](#view-version-history) no editor. Também é possível reverter para uma versão selecionada.
 * Capacidade de [exibir e abrir referências principais](#view-parent-references).
@@ -41,7 +41,7 @@ Esse editor fornece:
 
 >[!WARNING]
 >
->O editor descrito nesta seção está *somente* disponível no *online* Adobe Experience Manager (AEM) as a Cloud Service.
+>O editor descrito nesta seção é *somente* disponível no as a Cloud Service do *online* Adobe Experience Manager (AEM).
 
 ## Editor de fragmento de conteúdo {#content-fragment-editor}
 
@@ -51,7 +51,7 @@ Ao abrir o Editor de fragmento de conteúdo pela primeira vez, você vê quatro 
    * um link para o Console de fragmentos de conteúdo (ícone Início)
    * informações sobre o modelo e a pasta
    * links para [Visualizar (se o Padrão de URL de Visualização Padrão estiver configurado para o modelo)](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-fragment-model-properties)
-   * [Ações do Publish](#publish-content-fragment) e [Cancelar publicação](#unpublish-content-fragment)
+   * [Publicar](#publish-content-fragment) e [Cancelar publicação](#unpublish-content-fragment) ações
    * uma opção para mostrar todas as **Referências principais** (ícone de link)
    * o fragmento **[Status](/help/sites-cloud/administering/content-fragments/managing.md#statuses-content-fragments)** e as últimas informações salvas
    * um botão para alternar para o editor original (baseado no Assets)
@@ -126,13 +126,13 @@ A cada atualização feita, o fragmento de conteúdo é salvo automaticamente. A
 
 ## Variações {#variations}
 
-[Variações](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) são um recurso importante dos Fragmentos de conteúdo do AEM. Eles permitem criar e editar cópias do conteúdo **Principal** para uso em canais e cenários específicos, tornando a entrega de conteúdo headless e a criação de página ainda mais flexíveis.
+[Variações](/help/sites-cloud/administering/content-fragments/overview.md#main-and-variations) são um recurso importante dos fragmentos de conteúdo do AEM. Eles permitem criar e editar cópias do conteúdo **Principal** para uso em canais e cenários específicos, tornando a entrega de conteúdo headless e a criação de página ainda mais flexíveis.
 
 No editor, é possível:
 
 * [Criar variações](#create-variation) do conteúdo **Principal**
 
-* [Use a IA de Geração de Variações](#generate-variations-ai) para usar a IA Gerativa para usar um modelo baseado em prompt que o Adobe criou para um caso de uso específico.
+* [Use a IA de Geração de Variações](#generate-variations-ai) para usar a IA Gerativa para usar um modelo baseado em prompt que a Adobe criou para um caso de uso específico.
 
 * Selecione a variação necessária para editar o conteúdo
 
@@ -174,40 +174,9 @@ Para renomear uma **Variação**:
 
 Use as Variações gerativas para aproveitar a IA gerativa para acelerar a criação de conteúdo.
 
-Para usar as Variações gerativas no Editor de fragmento de conteúdo:
+Abra o Editor de fragmento de conteúdo para encontrar o ponto de entrada para Gerar variações.
 
-1. Abra o Editor de fragmento de conteúdo. No cabeçalho, você encontrará o ponto de entrada para Gerar variações:
-
-   ![Gerar variações no Editor de fragmento de conteúdo](assets/cfm-generate-variations1.png)
-
-1. Gerar variações abre em uma nova guia. No painel à esquerda, é possível ver a instância da nuvem de AEM e o fragmento de conteúdo para o qual você está criando conteúdo. Selecione o prompt que deseja usar ou crie um novo prompt.
-
-   >[!NOTE]
-   >
-   >Os modelos de prompt de Adobe disponíveis agora são limitados, mas serão adicionados mais em versões futuras.
-
-   ![Exportar para gerar variações no fragmento de conteúdo](assets/cfm-generate-variations2.png)
-
-1. Gere conteúdo preenchendo os prompts. O modelo de conteúdo do fragmento será usado automaticamente para gerar conteúdo usando GenAI.
-
-   >[!NOTE]
-   >
-   >Atualmente, só há suporte para campos de texto.
-
-   ![Exportar para gerar variações no fragmento de conteúdo](assets/cfm-generate-variations3.png)
-
-1. Selecione a variante de geração que você gosta e selecione &quot;exportar variação&quot;. Confirme o nome da variação do fragmento de conteúdo e selecione:
-
-   * **Exportar**: exporte a variação para o Fragmento de conteúdo e permaneça no aplicativo Gerar variação.
-   * **Exportar e abrir**: exporte a variação para o Fragmento de conteúdo e abra uma nova guia que mostre o Fragmento de conteúdo com a nova variação da GenAI.
-
-     ![Exportar para gerar variações no fragmento de conteúdo](assets/cfm-generate-variations4.png)
-
-1. As variações geradas são mostradas no Editor de fragmento do conteúdo principal.
-
-   ![Exibir e gerar variações no fragmento de conteúdo](assets/cfm-generate-variations5.png)
-
-Consulte [Gerar variações](/help/generative-ai/generate-variations.md) para saber mais.
+Consulte [Gerar variações - Integrado em editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md) para saber mais.
 
 ### Excluir uma variação {#delete-variation}
 
@@ -339,7 +308,7 @@ Como alternativa, [selecione **Criar novo fragmento** para abrir a caixa de diá
 
 ### Referências do conteúdo {#content-references}
 
-[Referências de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) são usadas para fazer referência a outros tipos de conteúdo AEM, como imagens, páginas e Fragmentos de experiência.
+As [Referências de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference) são usadas para fazer referência a outros tipos de conteúdo do AEM, como imagens, páginas e Fragmentos de experiência.
 
 #### Imagens de referência {#reference-images}
 
@@ -364,7 +333,7 @@ Para adicionar um ativo, é possível:
 
 #### Páginas de referência {#reference-pages}
 
-Para adicionar referências a páginas AEM, Fragmentos de experiência ou outros tipos de conteúdo semelhantes:
+Para adicionar referências a páginas do AEM, Fragmentos de experiência ou outros tipos de conteúdo semelhantes:
 
 1. Selecione **Adicionar caminho de conteúdo**.
 
@@ -473,7 +442,7 @@ Por exemplo:
 
 >[!NOTE]
 >
->Para obter mais detalhes sobre a tradução de um fragmento de conteúdo e a criação de cópias de idioma, consulte a [Jornada de tradução do AEM Headless](/help/journey-headless/translation/overview.md).
+>Para obter mais detalhes sobre a tradução de um fragmento de conteúdo e a criação de cópias de idioma, consulte a [Jornada de tradução headless do AEM](/help/journey-headless/translation/overview.md).
 
 ## Comentar no seu fragmento {#commenting-on-your-fragment}
 
@@ -506,12 +475,12 @@ Para usar esse recurso, primeiro é necessário:
 
 Quando a URL tiver sido definida, o botão **Visualizar** ficará ativo. Você pode selecionar esse botão para iniciar o aplicativo externo (em uma guia separada) para renderizar o fragmento de conteúdo.
 
-## Publish seu fragmento {#publish-content-fragment}
+## Publicar seu fragmento {#publish-content-fragment}
 
-Você pode **Publish** seu fragmento para:
+Você pode **Publicar** seu fragmento em:
 
 * Visualizar instância
-* Instância do Publish
+* Publicar instância
 
 Você pode publicar o fragmento no editor ou no console. Consulte [Publicação e visualização de um fragmento](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment) para obter detalhes completos.
 
@@ -520,7 +489,7 @@ Você pode publicar o fragmento no editor ou no console. Consulte [Publicação 
 Você também pode **Desfazer a publicação** do fragmento de:
 
 * Visualizar instância
-* Instância do Publish
+* Publicar instância
 
 Você pode desfazer a publicação do fragmento no editor ou no console. Consulte [Desfazer a publicação de um fragmento](/help/sites-cloud/administering/content-fragments/managing.md#unpublishing-a-fragment) para obter detalhes completos.
 

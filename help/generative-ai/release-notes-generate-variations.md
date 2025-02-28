@@ -1,19 +1,19 @@
 ---
 title: Notas de versão para gerar variações
-description: Notas de versão para Gerar variações, acessível no AEM as a Cloud Service e a Sidekick de Edge Delivery Services
+description: Notas de versão para Gerar variações, acessível no AEM as a Cloud Service e no Sidekick do Edge Delivery Services
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 9%
+source-wordcount: '266'
+ht-degree: 7%
 
 ---
 
 # Notas de versão para gerar variações {#release-notes-generate-variations}
 
-Esta página documenta as notas de versão para Gerar variações, acessível no AEM as a Cloud Service e a Sidekick dos Edge Delivery Services.
+Esta página documenta as notas de versão de Gerar variações, acessível no AEM as a Cloud Service e no Sidekick do Edge Delivery Services.
 
 >[!NOTE]
 >
@@ -21,7 +21,19 @@ Esta página documenta as notas de versão para Gerar variações, acessível no
 
 ## Destaques da versão {#release-highlights}
 
-A versão atual é a 2.2.0.
+A versão atual é a 3.0.0.
+
+### 3.0.0 {#release-notes-3-0-0}
+
+Você pode [acessar Gerar Variações](/help/generative-ai/generate-variations-integrated-editor.md#access-generate-variations) dos seguintes editores ([depois de configurados](#access-generate-variations)):
+
+* [no Sidekick do AEM Edge Delivery Services; para criação baseada em documentos](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-sidekick)
+* [no Editor universal](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-universal-editor)
+* [no Editor de fragmentos de conteúdo](/help/generative-ai/generate-variations-integrated-editor.md#access-aem-content-fragment-editor)
+
+>[!NOTE]
+>
+>A versão anterior de [Gerar Variações ainda pode ser acessada diretamente](/help/generative-ai/generate-variations.md).
 
 ### 2.2.0 {#release-notes-2-2-0}
 

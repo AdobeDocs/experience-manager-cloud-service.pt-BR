@@ -1,12 +1,12 @@
 ---
 title: Gerar variações
-description: Saiba mais sobre como gerar variações, acessível no AEM as a Cloud Service e na Sidekick dos Edge Delivery Services
+description: Saiba mais sobre como gerar variações, acessível no AEM as a Cloud Service e na Sidekick do Edge Delivery Services
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: bbc51796c610af02b5260c063213cde2ef610ba2
+source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
 workflow-type: tm+mt
-source-wordcount: '3262'
+source-wordcount: '3272'
 ht-degree: 1%
 
 ---
@@ -14,39 +14,43 @@ ht-degree: 1%
 
 # Gerar variações {#generate-variations}
 
-Se estiver procurando uma maneira de otimizar seus canais digitais e acelerar a criação de conteúdo, você poderá usar a opção Gerar variações. Gerar variações usa a Inteligência artificial (AI) gerativa para criar variações de conteúdo com base em prompts; esses prompts são fornecidos pela Adobe ou criados e gerenciados pelos usuários. Depois de criar variações, você pode usar o conteúdo no seu site e também medir seu sucesso usando a funcionalidade [Experimentação](https://www.aem.live/docs/experimentation) de [Edge Delivery Services](/help/edge/overview.md).
+Se estiver procurando uma maneira de otimizar seus canais digitais e acelerar a criação de conteúdo, você poderá usar a opção Gerar variações. Gerar variações usa a Inteligência artificial (AI) gerativa para criar variações de conteúdo com base em prompts; esses prompts são fornecidos pela Adobe ou criados e gerenciados pelos usuários. Depois de criar variações, você pode usar o conteúdo no seu site e também medir seu sucesso usando a funcionalidade [Experimentação](https://www.aem.live/docs/experimentation) do [Edge Delivery Services](/help/edge/overview.md).
 
 Você pode [acessar Gerar variações](#access-generate-variations) de:
 
 * [no Adobe Experience Manager (AEM) as a Cloud Service](#access-aemaacs)
-* [o Sidekick do AEM Edge Delivery Services](#access-aem-sidekick)
+* [a Sidekick do AEM Edge Delivery Services](#access-aem-sidekick)
 * [no Editor de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md#generate-variations-ai)
 
 >[!NOTE]
 >
 >Em todos os casos, para usar a opção Gerar variações, você deve garantir que os [pré-requisitos de acesso](#access-prerequisites) sejam atendidos.
 
+>[!NOTE]
+>
+>Você também pode acessar [Gerar variações integradas aos editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md).
+
 É possível:
 
-* [Comece](#get-started) usando um modelo de prompt que o Adobe criou para um caso de uso específico.
+* [Comece](#get-started) usando um modelo de prompt que a Adobe criou para um caso de uso específico.
 * Você pode [editar um prompt existente](#edit-the-prompt)
 * Ou [crie e use seus próprios prompts](#create-prompt):
    * [Salve seus prompts](#save-prompt) para uso futuro
    * [Acesse e use prompts compartilhados](#select-prompt) de toda a sua organização
 * Defina os segmentos de [público-alvo](#audiences) a serem usados no prompt ao [gerar conteúdo personalizado específico do público](#generate-copy).
 * Visualize a saída junto com o prompt antes de fazer alterações e refinar os resultados, se necessário.
-* Use [Adobe Express para gerar imagens](#generate-image) com base nas variações de cópia; isso usa os recursos de IA de geração do Firefly.
+* Use o [Adobe Express para gerar imagens](#generate-image) com base nas variações de cópia; isso usa os recursos de IA de Geração do Firefly.
 * Selecione o conteúdo que deseja usar no site ou em um experimento.
 
 ## Aviso legal e de uso {#legal-usage-note}
 
-A IA gerativa e as Variações geradas para AEM são ferramentas poderosas, mas **você** é responsável pelo uso da saída.
+A IA gerativa e as Variações geradas para o AEM são ferramentas poderosas, mas **você** é responsável pelo uso da saída.
 
 Suas entradas para o serviço devem estar vinculadas a um contexto. Esse contexto pode ser o material de marca, conteúdo do site, dados, esquemas para esses dados, modelos ou outros documentos confiáveis.
 
 Você deve avaliar a precisão de qualquer saída conforme apropriado ao seu caso de uso.
 
-Antes de usar Gerar variações, você deve concordar com as [Diretrizes de usuário da IA de geração de Adobe](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
+Antes de usar Gerar variações, você deve Concordar com as [Diretrizes de usuário da IA gerativa da Adobe](https://www.adobe.com/legal/licenses-terms/adobe-dx-gen-ai-user-guidelines.html).
 
 [O uso de Variações de Geração](#generative-action-usage) está ligado ao consumo de ações geradoras.
 
@@ -63,7 +67,7 @@ Ao abrir Gerar variações (e expandir o painel esquerdo), você verá:
    * À esquerda de **Gerar Variações**, há a opção (menu sanduíche) para expandir ou ocultar o painel de navegação esquerdo.
    * **Modelos de Solicitação**:
       * Mostra links para os vários Prompts; eles podem incluir prompts:
-         * Fornecido pelo Adobe para ajudar a gerar conteúdo; sinalizado com o ícone Adobe.
+         * Fornecido pelo Adobe para ajudar a gerar conteúdo; sinalizado com o ícone do Adobe.
          * Criado por você mesmo.
          * Criado em sua organização IMS; sinalizado com um ícone que mostra vários cabeçalhos.
       * Inclui o link [Novo prompt](#create-prompt) para criar seu próprio prompt.
@@ -88,7 +92,7 @@ No painel principal, é possível selecionar:
 
 Para diferenciar:
 
-* Os prompts fornecidos pelo Adobe são sinalizados com o ícone de Adobe
+* Os prompts fornecidos pela Adobe são sinalizados com o ícone do Adobe
 * Os prompts disponíveis em toda a sua organização IMS são sinalizados com um ícone de vários cabeçalhos.
 * Seus prompts particulares não são sinalizados especificamente.
 
@@ -107,7 +111,7 @@ Há vários campos de entrada principais que são comuns a vários prompts (dete
    * Dependendo do prompt, isso pode ter um de vários rótulos; por exemplo, Contagem, Número de variações, Número de ideias e outros.
 * **Audience Source**/**Target Audience**
    * Ajuda a gerar conteúdo personalizado para um público-alvo específico.
-   * O Adobe fornece públicos-alvo padrão ou você pode especificar públicos-alvo adicionais; consulte [Públicos-alvo](#audiences).
+   * A Adobe fornece públicos-alvo padrão ou você pode especificar públicos-alvo adicionais; consulte [Públicos-alvo](#audiences).
 * **Contexto Adicional**
    * Insira conteúdo relevante para ajudar a IA gerativa a criar uma resposta melhor com base na entrada. Por exemplo, se estiver criando um banner da Web para uma página ou produto específico, talvez você queira incluir informações sobre a página/produto.
 * **Temperatura**
@@ -128,14 +132,14 @@ Selecione **Gerar** para ver as respostas geradas pela IA geradora. As variaçõ
 
 >[!NOTE]
 >
->A maioria dos modelos de prompt de Adobe inclui uma **Razão de IA** na resposta de variação. Isso proporciona transparência sobre por que a IA gerativa gerou essa variação específica.
+>A maioria dos modelos de prompt do Adobe inclui uma **Razão de IA** na resposta de variação. Isso proporciona transparência sobre por que a IA gerativa gerou essa variação específica.
 
 Quando você seleciona uma única variação, as seguintes ações estão disponíveis:
 
 * **Favorito**
    * Sinalizar como um **Favorito** para uso futuro (será exibido em [Favoritos](#favorites)).
 * Polegar para cima/Polegar para baixo
-   * Use os indicadores de polegar para cima/para baixo para notificar o Adobe sobre a qualidade das respostas.
+   * Use os indicadores de polegar para cima/para baixo para notificar a Adobe sobre a qualidade das respostas.
 * **Copiar**
    * Copie para a área de transferência para usar na criação de conteúdo no seu site ou em um [Experimento](https://www.aem.live/docs/experimentation).
 * **Remover**
@@ -150,9 +154,9 @@ Depois de gerar variações de texto, você pode gerar imagens no Adobe Express 
 
 >[!NOTE]
 >
->**Gerar imagem** só estará disponível se você tiver um direito de Adobe Express como parte de sua organização IMS e o acesso concedido a você nesse Admin Console.
+>**Gerar imagem** só estará disponível se você tiver um direito da Adobe Express como parte de sua organização IMS e o acesso concedido a você na Admin Console.
 
-Selecione uma variação, seguida por **Gerar Imagem**, para abrir diretamente **Texto para Imagem** em [Adobe Express](https://www.adobe.com/express/). O prompt é pré-preenchido com base na seleção de variante, e as imagens são geradas automaticamente de acordo com esse prompt.
+Selecione uma variação, seguida por **Gerar Imagem**, para abrir diretamente **Texto para Imagem** no [Adobe Express](https://www.adobe.com/express/). O prompt é pré-preenchido com base na seleção de variante, e as imagens são geradas automaticamente de acordo com esse prompt.
 
 ![Gerar variações - imagens expressas](assets/generate-variations-express-images.png)
 
@@ -171,13 +175,13 @@ Quando terminar, selecione a imagem desejada e **Salvar** para fechar o Adobe Ex
 Aqui você pode passar o mouse sobre a imagem para mostrar os itens de ação para:
 
 * **Copiar**: [copiar a imagem para a área de transferência para ser usada em outro lugar](#use-content)
-* **Editar**: abrir o Adobe Express para que você possa fazer alterações na imagem
+* **Editar**: abra o Adobe Express para poder fazer alterações na imagem
 * **Baixar**: baixe a imagem para o computador local
 * **Excluir**: remover a imagem da variação
 
 >[!NOTE]
 >
->[Contents credentials](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) não são persistentes quando usados na criação baseada em documento.
+>[As credenciais de conteúdo](https://helpx.adobe.com/creative-cloud/help/content-credentials.html) não são persistentes quando usadas na criação baseada em documento.
 
 ### Usar conteúdo {#use-content}
 
@@ -382,7 +386,7 @@ Por exemplo, para adicionar um público-alvo de um arquivo no Google Drive:
 1. No Google Drive, crie um arquivo de planilha com duas colunas:
    1. A primeira coluna será exibida na lista suspensa.
    1. A segunda coluna será a descrição do público-alvo.
-1. Publish o arquivo:
+1. Publique o arquivo:
    1. Arquivo -> Compartilhar -> publicar na Web -> CSV
 1. Copie o URL para o arquivo publicado.
 1. Vá para Gerar variações.
@@ -403,7 +407,7 @@ O gerenciamento de uso depende da ação tomada:
 
 * Gerar variações
 
-  Uma geração de uma variante de cópia é igual a uma ação gerativa. Como cliente do, você tem um determinado número de ações geradoras que vêm com sua licença de AEM. Depois que o direito base for consumido, você poderá adquirir ações adicionais.
+  Uma geração de uma variante de cópia é igual a uma ação gerativa. Como cliente do, você tem um determinado número de ações gerativas que acompanham a licença da AEM. Depois que o direito base for consumido, você poderá adquirir ações adicionais.
 
   >[!NOTE]
   >
@@ -411,11 +415,11 @@ O gerenciamento de uso depende da ação tomada:
 
 * Adobe Express
 
-  O uso da geração de imagens é feito por meio de direitos de Adobe Express e [créditos gerativos](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
+  O uso da geração de imagens é feito por meio de direitos da Adobe Express e [créditos gerativos](https://helpx.adobe.com/firefly/using/generative-credits-faq.html).
 
 ## Acessar Gerar Variações {#access-generate-variations}
 
-Depois de atender aos pré-requisitos, você pode acessar Gerar variações do AEM as a Cloud Service ou o Sidekick dos Edge Delivery Services.
+Depois de atender aos pré-requisitos, você pode acessar Gerar variações do AEM as a Cloud Service ou da Sidekick da Edge Delivery Services.
 
 ### Pré-requisitos de acesso {#access-prerequisites}
 
@@ -425,15 +429,15 @@ Para usar a opção Gerar variações, você deve garantir que os pré-requisito
 
 #### Acesso ao Experience Manager as a Cloud Service com Edge Delivery Services{#access-to-aemaacs-with-edge-delivery-services}
 
-Os usuários que precisam de acesso para Gerar variações devem ter direito a um ambiente Experience Manager as a Cloud Service com Edge Delivery Services.
+Os usuários que precisam de acesso para Gerar variações devem ter direito a um ambiente do Experience Manager as a Cloud Service com o Edge Delivery Services.
 
 >[!NOTE]
 >
->Se o seu contrato do AEM Sites as a Cloud Service não incluir Edge Delivery Services, será necessário assinar um novo contrato para obter acesso.
+>Se o seu contrato do AEM Sites as a Cloud Service não incluir o Edge Delivery Services, será necessário assinar um novo contrato para obter acesso.
 >
->Entre em contato com a equipe de conta para saber como migrar para o AEM Sites as a Cloud Service com Edge Delivery Services.
+>Entre em contato com a Equipe de conta para discutir como migrar para o AEM Sites as a Cloud Service com o Edge Delivery Services.
 
-Para conceder acesso a usuários específicos, atribua a conta de usuário deles ao respectivo perfil de produto. Consulte [Atribuição de perfis de produto AEM para obter mais detalhes](/help/journey-onboarding/assign-profiles-cloud-manager.md).
+Para conceder acesso a usuários específicos, atribua a conta de usuário deles ao respectivo perfil de produto. Consulte [Atribuição de perfis de produto do AEM para obter mais detalhes](/help/journey-onboarding/assign-profiles-cloud-manager.md).
 
 ### Acesso pelo AEM as a Cloud Service {#access-aemaacs}
 
@@ -441,13 +445,13 @@ Gerar variações pode ser acessado no [Painel de navegação](/help/sites-cloud
 
 ![Painel Navegação](/help/sites-cloud/authoring/assets/basic-handling-navigation.png)
 
-### Acessar do AEM Sidekick {#access-aem-sidekick}
+### Acesso pela AEM Sidekick {#access-aem-sidekick}
 
-Algumas configurações são necessárias antes de você poder acessar Gerar variações no Sidekick (de Edge Delivery Services).
+Algumas configurações são necessárias antes de você poder acessar Gerar variações no Sidekick (do Edge Delivery Services).
 
 1. Consulte o documento [Instalando o AEM Sidekick](https://www.aem.live/docs/sidekick-extension) para saber como instalar e configurar o Sidekick.
 
-1. Para usar a opção Gerar variações na Sidekick (de Edge Delivery Services), inclua a seguinte configuração nos projetos Edge Delivery Services em:
+1. Para usar a opção Gerar variações no Sidekick (do Edge Delivery Services), inclua a seguinte configuração nos projetos do Edge Delivery Services em:
 
    * `tools/sidekick/config.json`
 
@@ -484,7 +488,7 @@ Algumas configurações são necessárias antes de você poder acessar Gerar var
 Para obter mais informações, você também pode ler:
 
 * [Gerar variações GenAI no GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
-* [Experimentação de Edge Delivery Services](https://www.aem.live/docs/experimentation)
+* [Experimentação do Edge Delivery Services](https://www.aem.live/docs/experimentation)
 
 ## Perguntas frequentes {#faqs}
 
