@@ -4,7 +4,7 @@ description: Saiba como usar o Analisador de práticas recomendadas para entende
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 951f7fb56d1d8a3285973fda945cbc21f310925f
 workflow-type: tm+mt
 source-wordcount: '2796'
 ht-degree: 37%
@@ -81,6 +81,8 @@ Siga esta seção para saber como exibir o relatório do Analisador de práticas
 
 >[!NOTE]
 > A partir da versão 2.1.54 do BPA, um novo recurso foi introduzido para obter a pontuação do Lighthouse.
+
+
 1. Depois de clicar em **Gerar relatório**, um pop-up será exibido solicitando a URL do Site Público da AEM para a Pontuação do Lighthouse. O usuário precisa inserir um URL válido no campo fornecido.
 
    ![imagem](/help/journey-migration/best-practices-analyzer/assets/bpa_popup_url.png)
