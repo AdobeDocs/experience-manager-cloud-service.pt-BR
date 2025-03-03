@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
 workflow-type: tm+mt
-source-wordcount: '2268'
-ht-degree: 88%
+source-wordcount: '2296'
+ht-degree: 87%
 
 ---
 
@@ -101,7 +101,7 @@ As propriedades são distribuídas por várias guias.
 
    * **Idioma** - o idioma da página
    * **Raiz de idioma** - deve ser marcado se a página for a raiz de uma cópia de idioma
-   * **Redirecionar** - Indica a página para a qual esta página deve ser redirecionada automaticamente com o status HTML `302 Found`.
+   * **Redirecionar** - Indica a página para a qual esta página deve ser redirecionada automaticamente com o status `302 Found` do HTML.
       * **Redirecionamento permanente** — quando marcado, a página redireciona para o caminho de destino fornecido junto com um status HTML `301 Moved Permanently`.
    * **Design** - indica se a página está visível ou oculta na navegação de página do site resultante
    * **Pseudônimo** - especifica um pseudônimo para ser usado com esta página
@@ -119,6 +119,8 @@ As propriedades são distribuídas por várias guias.
 * **Configurações de modelos**
 
    * **Modelos permitidos**: [define a lista de modelos que estão disponíveis](/help/sites-cloud/authoring/page-editor/templates.md#enabling-and-allowing-a-template-template-author) dentro desta sub-ramificação
+   * **Usar Página como Modelo** - [Criar um novo modelo com base na página atual.](/help/sites-cloud/authoring/universal-editor/templates.md)
+      * Aplica-se somente a páginas criadas para uso com o Editor universal que utiliza o Edge Delivery Services.
 
 * **Requisitos de autenticação**
 
