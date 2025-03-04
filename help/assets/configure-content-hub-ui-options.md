@@ -2,10 +2,10 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 323fe1ba95b027f3c0d625e122b1885723e94b0f
+source-git-commit: e0c459ce360837fa0031278804d8e7b46b15d0e5
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 11%
+source-wordcount: '1668'
+ht-degree: 12%
 
 ---
 
@@ -229,19 +229,17 @@ Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também
 
 As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
-O Content Hub permite o download de representações estáticas. As representações estáticas são diferentes representações do arquivo original de um ativo gerado nativamente. Os exemplos incluem miniaturas ou representações otimizadas para dispositivos móveis. Os administradores podem gerenciar e controlar a disponibilidade de representações de ativos e gerenciar se é possível baixar ativos originais ou não.
-
 Para desabilitá-la, siga estas etapas:
 
 Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Representações]**. As opções disponíveis são as seguintes:
 
-* Habilite o botão [!UICONTROL Habilitar disponibilidade de representações estáticas] para tornar todas as representações estáticas visíveis no Content Hub.
+* Habilite o botão [!UICONTROL Habilitar disponibilidade de representações] para tornar todas as representações visíveis no Content Hub.
 
 * Habilite ou desabilite **[!UICONTROL Permitir que os usuários baixem ativos originais]** para controlar a disponibilidade para baixar ativos originais.
 
   ![Configurar representações no Content Hub](assets/config-renditions.png)
 
-Para obter informações sobre como exibir e baixar representações estáticas no Content Hub, consulte [baixar ativos no Content Hub](/help/assets/download-assets-content-hub.md).
+Para obter informações sobre como exibir e baixar representações no Content Hub, consulte [baixar ativos no Content Hub](/help/assets/download-assets-content-hub.md).
 
 ### Links personalizados {#configure-custom-links-content-hub}
 
