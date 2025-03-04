@@ -3,9 +3,9 @@ title: Baixar ativos da Content Hub
 description: Saiba como baixar ativos no portal Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 07d533962ae2922c8a467924361fdfefc5c594eb
+source-git-commit: 523ba2ae59bfc0d35cca350a8daf3e20ac9e5332
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '778'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Saiba mais sobre [exibir e gerenciar representações no Experience Manager Asse
 
 >[!NOTE]
 > 
-* Para obter acesso antecipado à conta do Dynamic Media, [crie e envie um caso de Suporte ao Cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+* O recurso de representações de corte dinâmico e inteligente está na fase inicial de Adoção. Para obter acesso ao recurso, [crie e envie um caso de Suporte ao Cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 * Os clientes recém-integrados nos [serviços de API aberta do Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) devem revisar suas predefinições de imagens existentes para aprovação.
 
 
