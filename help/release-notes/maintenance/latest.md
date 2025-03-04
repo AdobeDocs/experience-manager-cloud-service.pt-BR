@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6de7743992e65225d557775cbedde0ae3889b2c3
+source-git-commit: 30b5d5838087a35a457939cdbaa13c5735df144e
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 51%
+source-wordcount: '375'
+ht-degree: 29%
 
 ---
 
@@ -16,36 +16,50 @@ ht-degree: 51%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 19687 {#19687}
+## Versão 19823 {#19823}
 
-Resumidos abaixo estão as melhorias contínuas da versão de manutenção 19687 , que foi lançada publicamente em 26 de fevereiro de 2025. A versão de manutenção anterior foi a de 19586.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 19823, lançada publicamente em quarta-feira, 4 de março de 2025. A versão de manutenção anterior foi a de 19687.
 
-A ativação de recursos do 2025.2.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.3.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-19687}
+### Aprimoramentos {#enhancements-19823}
+
+* ASSETS-46491: manipulador de eventos OSGI para alteração do status do processamento de ativos.
+* ASSETS-45613: envia eventos de cancelamento de publicação quando os ativos são excluídos ou movidos.
+* ASSETS-45131: suporte à propriedade de tag personalizada no Content Hub.
+
+### Problemas corrigidos {#fixed-issues-19823}
+
+* ASSETS-20433: problemas de assimilação do Dynamic Media com PDFs protegidos por senha.
+* ASSETS-24675: as opções de processamento de imagem não são mostradas para o perfil de imagem somente de amostra.
+* ASSETS-41257: A comparação de versão de ativos renderiza ativos com taxa de proporção incorreta. As versões de ativos são mostradas na ordem incorreta na linha do tempo.
+* ASSETS-44894: os marcadores de exibição do Assets podem não ser clicáveis.
+* ASSETS-45015: A largura e a altura do recorte inteligente são definidas como zero se o identificador do ativo de recorte inteligente não for encontrado.
+* ASSETS-45192: Reduza a frequência de solicitação de pulso.
+* ASSETS-45724: certifique-se de que o upload do DM seja repetido se o trabalho de upload não estiver atribuído.
+* ASSETS-46425: problemas de pesquisa de integração do Adobe Stock.
+* ASSETS-27400: O gerador de visualização de pasta pode tentar abrir o original.
+* CQ-4358722: lida com códigos de localidade diferentes no Java 11 e Java 17.
+* SITES-29369: eventos de página publicados/não publicados acionados na ativação/desativação de ativos.
+* SITES-24074: corrija a acessibilidade do teclado no Unified Shell.
+* SITES-28058: título da pasta do Assets não transferido para a live copy.
+
+### Problemas conhecidos {#known-issues-19823}
 
 Nenhum.
 
-### Problemas corrigidos {#fixed-issues-19687}
-
-* SKYOPS-97524: o estado de alternância de recursos pode estar incorreto, afetando intermitentemente vários recursos do AEM.
-
-### Problemas conhecidos {#known-issues-19687}
-
-Nenhum.
-
-### Recursos e APIs obsoletos {#deprecated-19687}
+### Recursos e APIs obsoletos {#deprecated-19823}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-19687}
+### Correções de segurança {#security-19823}
 
-Nenhum.
+A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda seis vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-19687}
+### Tecnologias integradas {#embedded-tech-19823}
 
 | Tecnologia | Versão | Link |
-|---|--------------|-------------------------------------------------------------------------------------------------------------------|
+|---|---|---|
 | AEM Oak | 1.76.0 | [API Oak API 1.76.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.76.0/index.html) |
 | API DO SLING DO AEM | 2.27.6 | [API Apache Sling API 2.27.6](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | HTL do AEM | 1.4.26-1.4.0 | [Especificação da linguagem de modelo HTML](https://github.com/adobe/htl-spec) |
