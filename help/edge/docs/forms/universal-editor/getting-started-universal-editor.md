@@ -4,9 +4,9 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: 964fd32a7dbcb97190d40cb42100d0d66e69a0c4
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1846'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ ht-degree: 0%
 Na era digital de hoje, formulários amigáveis são essenciais para todas as organizações. O Edge Delivery Services Forms é criado usando o Editor universal, que oferece recursos do WYSIWYG (what-you-see-is-what-you-get, o que você vê é o que você obtém). Ele fornece uma interface moderna e intuitiva para a criação eficiente de formulários.
 
 O AEM Forms fornece um bloco, conhecido como Bloco adaptável do Forms, para ajudar você a criar facilmente o Edge Delivery Services Forms para capturar e armazenar dados. Você pode [criar um novo Projeto do AEM pré-configurado com o Bloco do Adaptive Forms](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [adicionar o Bloco do Adaptive Forms a um Projeto do AEM existente](#add-adaptive-forms-block-to-your-existing-aem-project).
+
+![Fluxo De Trabalho Do Repositório Github](/help/edge/assets/repo-workflow.png)
 
 Este tutorial o orienta por meio da criação, visualização e publicação de seu próprio formulário com um projeto do Adobe Experience Manager Site novo ou existente usando a criação do WYSIWYG no Universal Editor.
 
@@ -252,6 +254,10 @@ A captura de tela abaixo exibe o formulário criado no projeto do AEM usando a c
    ![página de índice](/help/edge/docs/forms/assets/publish-index-page.png)
 
 Você pode estilizar o Forms do Edge Delivery Services editando os arquivos `.css` e `.js` no Bloco de Forms Adaptável e [configurando um ambiente de desenvolvimento do AEM local](#set-up-local-aem-development-environment) para exibir as alterações instantaneamente em seu navegador.
+
+>[!NOTE]
+>
+> Você também pode [criar um formulário independente no Universal Editor e publicá-lo no Edge Delivery Services](/help/edge/docs/forms/universal-editor/create-forms.md).
 
 ## Configurar ambiente de desenvolvimento do AEM local
 

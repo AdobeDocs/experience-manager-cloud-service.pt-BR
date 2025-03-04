@@ -7,7 +7,7 @@ Role: User, Developer
 hide: true
 hidefromtoc: true
 exl-id: db58ce85-139a-4cc1-8e18-73da76357299
-source-git-commit: 320ab86bc73e874705d985b927e90eec3cad1cf9
+source-git-commit: bb01a76ae2bfd78ae648e91545f34f20fabebd10
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 0%
@@ -63,7 +63,7 @@ O Adobe Experience Manager oferece e oferece suporte a vários editores para cri
 
 O Universal Editor é um editor visual versátil que oferece um recurso &quot;o que você vê é o que você obtém&quot; (WYSIWYG), garantindo uma experiência intuitiva de criação de formulários. É recomendável usar o Editor universal ao criar novos formulários, pois ele fornece um design moderno e fácil de usar e uma interface conveniente de arrastar e soltar.
 
-Para criar formulários usando o Editor universal, os modelos do Edge Delivery Services disponíveis no ambiente do AEM são usados. Esses formulários herdam sua aparência das configurações no repositório do GitHub da Edge Delivery Services. [Uma conexão entre seu ambiente do AEM e o repositório GitHub da Edge Delivery Services](/help/edge/docs/forms/publishing-forms.md) foi estabelecida para habilitar a publicação desses formulários no Edge Delivery Services.
+Para criar formulários usando o Editor universal, os modelos do Edge Delivery Services disponíveis no ambiente do AEM são usados. Esses formulários herdam sua aparência das configurações no repositório do GitHub da Edge Delivery Services. [Uma conexão entre seu ambiente do AEM e o repositório GitHub da Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) foi estabelecida para habilitar a publicação desses formulários no Edge Delivery Services.
 
 Para obter etapas detalhadas sobre como criar usando o Editor Universal, consulte o artigo [Criação de Conteúdo com o Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/universal-editor/authoring).
 
