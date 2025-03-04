@@ -1,5 +1,5 @@
 ---
-source-git-commit: d06399fd63d38738e7aff8503aec9a72a2081b5c
+source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 3%
@@ -248,7 +248,7 @@ Para registrar um tíquete de suporte, primeiro registre o site do Edge Delivery
 
 >[!IMPORTANT]
 >
->O Editor de SPA [foi descontinuado](/help/release-notes/release-notes-cloud/release-notes-current.md#sites-deprecated) para novos projetos. Ela ainda é compatível com projetos existentes na Adobe, mas não deve ser usada para novos projetos. Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
+>O Editor de SPA [foi descontinuado](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#spa-editor) para novos projetos. Ela ainda é compatível com projetos existentes na Adobe, mas não deve ser usada para novos projetos. Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
 >
 >* [O Editor Universal](/help/edge/wysiwyg-authoring/authoring.md) para editar visualmente o conteúdo headless.
 >* [O Editor de Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulário de conteúdo headless.
