@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: a2f2b617-3bdf-4a22-ab64-95f2c65adc82
 solution: Experience Manager Sites
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 39a85c865c6c23043d77f5756a71764dc83be534
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2847'
 ht-degree: 3%
 
 ---
@@ -312,10 +312,11 @@ As [Referências de conteúdo](/help/sites-cloud/administering/content-fragments
 
 #### Imagens de referência {#reference-images}
 
-Nos campos **Referência de Conteúdo**, você pode:
+Nos campos **Referência de Conteúdo**, é possível:
 
-* ativos de referência que já existem no repositório
-* carregá-los diretamente no campo; isso evita a necessidade de usar o console **Assets** para carregar
+* fazer referência a ativos que já existem no repositório local
+* ativos de referência que residem em um repositório remoto
+* carregar ativos diretamente no campo; isso evita a necessidade de usar o console **Assets** para carregar
 
   >[!NOTE]
   >
@@ -324,12 +325,48 @@ Nos campos **Referência de Conteúdo**, você pode:
   >* tem um **Caminho Raiz** definido (no [Modelo de Fragmento de Conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#content-reference)). Especifica onde a imagem será armazenada.
   >* incluir **Imagem** na lista de tipos de conteúdo aceitos
 
-Para adicionar um ativo, é possível:
+##### Referência do Assets local {#reference-local-assets}
+
+Para fazer referência a um ativo local, é possível:
 
 * arraste e solte o novo arquivo de ativo diretamente (por exemplo, do seu sistema de arquivos) no campo **Referência de conteúdo**
 * use a ação **Adicionar ativo** e selecione **Procurar Assets** ou **Carregar** para abrir o seletor apropriado para você usar:
 
   ![Editor de fragmento de conteúdo - Adicionar opções de ativos](assets/cf-authoring-add-asset-options.png)
+
+##### Referência ao Assets remoto {#reference-remote-assets}
+
+Para fazer referência a ativos remotos:
+
+1. Especifique o **Repositório** remoto ao procurar ativos:
+
+   ![Editor de fragmento de conteúdo - Selecionar ativo do remoto](assets/cf-authoring-remote-asset-01.png)
+
+2. Após a seleção, o local pode ser visto nas informações do ativo:
+
+   ![Editor de fragmento de conteúdo - Ativo do repositório remoto](assets/cf-authoring-remote-asset-02.png)
+
+###### Assets remoto - Limitações {#remote-assets-limitations}
+
+Existem algumas limitações ao fazer referência a ativos remotos:
+
+* Somente ativos [Aprovados](/help/assets/approve-assets.md) estão disponíveis para referência a partir de um repositório de ativos remoto.
+
+* Se um ativo referenciado for removido do repositório remoto, isso resultará em uma Referência de conteúdo desfeita.
+
+* Todos os Repositórios de ativos de entrega aos quais o usuário tem acesso estão disponíveis para seleção. A lista disponível não pode ser limitada.
+
+* A instância do AEM e as instâncias do repositório de ativos remoto devem ter a mesma versão.
+
+* Nenhum metadado de ativo é exposto por meio da API de gerenciamento ou da API de entrega. É necessário usar a API de metadados do ativo para recuperar os detalhes dos metadados do ativo:
+
+   * os metadados de ativos individuais: [https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata)
+
+   * obter informações de metadados em massa usando a API de pesquisa (experimental): [https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search](https://adobe-aem-assets-delivery-experimental.redoc.ly/#operation/search)
+
+>[!NOTE]
+>
+>Consulte também [API do AEM GraphQL para uso com Fragmentos de conteúdo - Dynamic Media para suporte a ativos OpenAPI (Assets remoto)](/help/headless/graphql-api/content-fragments.md#dynamic-media-for-openapi-asset-support)
 
 #### Páginas de referência {#reference-pages}
 

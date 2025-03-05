@@ -4,10 +4,10 @@ description: Saiba como usar o GraphQL com o AEM para fornecer conteúdo de form
 feature: Headless, Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 role: Admin, Developer
-source-git-commit: 83bc4e09cc7b6c420eee64091fab773ee1dcbd85
+source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 89%
+source-wordcount: '1972'
+ht-degree: 88%
 
 ---
 
@@ -1873,7 +1873,7 @@ Esta consulta interroga:
 } 
 ```
 
-## Exemplos de consulta para entrega do DAM e do Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
+## Exemplos de consulta para entrega de DAM e Dynamic Media Assets {#sample-queries-delivery-DAM-DM}
 
 Para entrega de imagens otimizadas para a Web (de ativos DAM):
 
@@ -1886,6 +1886,10 @@ Para a entrega do URL a um ativo do Dynamic Media
 * Consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Referência da imagem](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-imageref)
 
 * Consulte [Exemplo de consulta para entrega de ativos do Dynamic Media por URL - Várias Referências](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-asset-delivery-by-url-multiple-refs)
+
+Para a entrega de ativos remotos, que não são locais para a instância atual do AEM, por meio do Editor de fragmentos de conteúdo.
+
+* Consulte [Exemplo de consulta para Dynamic Media para suporte a ativos OpenAPI (Assets Remoto)](/help/headless/graphql-api/content-fragments.md#sample-query-dynamic-media-for-openapi-asset-support)
 
 ## Exemplo de estrutura do fragmento de conteúdo (usada com GraphQL) {#content-fragment-structure-graphql}
 
