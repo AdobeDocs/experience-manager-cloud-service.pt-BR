@@ -5,10 +5,10 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 feature: Content Fragments, GraphQL API
 role: User, Admin, Architect
 solution: Experience Manager Sites
-source-git-commit: 883eadc8ce2c84eba526b081ef90c678845989aa
+source-git-commit: 00b4fa64a2f5d7ddf7ea7af7350374a1f1bcb768
 workflow-type: tm+mt
-source-wordcount: '3120'
-ht-degree: 77%
+source-wordcount: '3175'
+ht-degree: 76%
 
 ---
 
@@ -22,6 +22,12 @@ Para usar modelos de fragmento de conteúdo, você pode:
 1. [Criar](#creating-a-content-fragment-model) e [configurar](#defining-your-content-fragment-model) os modelos de fragmento de conteúdo
 1. [Ativar os Modelos de fragmento de conteúdo](#enabling-disabling-a-content-fragment-model) para uso ao criar Fragmentos de conteúdo
 1. [Autorizar os modelos de fragmento de conteúdo nas pastas de ativos necessárias](#allowing-content-fragment-models-assets-folder) ao configurar as **Políticas**.
+
+>[!NOTE]
+>
+>Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
+>
+>Os Fragmentos de conteúdo e os Modelos de fragmento de conteúdo agora são gerenciados principalmente com o console **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, embora os Fragmentos de conteúdo ainda possam ser gerenciados no console **Assets** e os Modelos de fragmento de conteúdo no console **Ferramentas**. Esta seção aborda o gerenciamento dos consoles **Assets** e **Ferramentas**.
 
 ## Criação de um modelo de fragmento de conteúdo {#creating-a-content-fragment-model}
 

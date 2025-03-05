@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 94%
@@ -14,7 +14,7 @@ ht-degree: 94%
 
 # Como acessar seu conteúdo por meio das APIs de entrega do AEM {#access-your-content}
 
-Nesta parte da [Jornada de desenvolvedores sem periféricos do AEM](overview.md), você pode aprender a usar as consultas do GraphQL para acessar o conteúdo dos fragmentos de conteúdo e alimentá-lo no seu aplicativo (entrega sem periféricos).
+Nesta parte da [Jornada de desenvolvedores headless do AEM](overview.md), você pode aprender a usar consultas do GraphQL para acessar o conteúdo dos fragmentos de conteúdo e alimentá-lo no seu aplicativo (entrega headless).
 
 ## A história até agora {#story-so-far}
 
@@ -375,7 +375,7 @@ Agora que já sabe acessar e consultar seu conteúdo headless usando a API Graph
    * [Exemplo de consulta - Todas as cidades com uma variação nomeada](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [Ativar a funcionalidade de fragmento de conteúdo no navegador de configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)
 * [Trabalho com fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md)
-   * [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [Saída JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
 * [Entender sobre o CORS (Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=pt-BR#understand-cross-origin-resource-sharing-(cors))
 * [Consultas persistentes do GraphQL - ativação do armazenamento em cache no Dispatcher](/help/headless/deployment/dispatcher-caching.md)

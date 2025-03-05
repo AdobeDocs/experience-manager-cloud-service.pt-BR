@@ -4,7 +4,7 @@ description: Entenda as configurações do Adobe Experience Manager (AEM) e como
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
 workflow-type: tm+mt
 source-wordcount: '1482'
 ht-degree: 5%
@@ -13,13 +13,13 @@ ht-degree: 5%
 
 # Configurações e o navegador de configuração {#configuration-browser}
 
-As configurações do Adobe Experience Manager (AEM) servem para gerenciar configurações no AEM e servem como espaços de trabalho.
+As configurações do Adobe Experience Manager (AEM) servem para gerenciar configurações no AEM e servir como espaços de trabalho.
 
 ## O que é uma configuração? {#what-is-a-configuration}
 
 Uma configuração pode ser considerada a partir de dois pontos de vista diferentes.
 
-* [Um administrador](#configurations-administrator) usa configurações como espaços de trabalho dentro do AEM para definir e gerenciar grupos de configurações.
+* [Um administrador](#configurations-administrator) usa configurações como espaços de trabalho no AEM para definir e gerenciar grupos de configurações.
 * [Um desenvolvedor](#configurations-developer) usa o mecanismo de configuração subjacente que implementa configurações para persistir e pesquisar configurações no AEM.
 
 Em resumo: do ponto de vista de um administrador, as configurações são a forma como você cria espaços de trabalho para gerenciar configurações no AEM, enquanto o desenvolvedor deve entender como o AEM usa e gerencia essas configurações no repositório.
@@ -33,10 +33,10 @@ Independentemente da sua perspectiva, as configurações atendem a dois objetivo
 
 O administrador e os autores do AEM podem considerar as configurações como espaços de trabalho. Esses espaços de trabalho podem ser usados para coletar grupos de configurações e seu conteúdo associado para fins organizacionais, implementando direitos de acesso para esses recursos.
 
-Configurações podem ser criadas para vários recursos diferentes dentro do AEM.
+As configurações podem ser criadas para vários recursos diferentes no AEM.
 
 * [Segmentos do Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Modelos editáveis](/help/sites-cloud/authoring/page-editor/templates.md)
 * várias configurações de nuvem
 
@@ -82,7 +82,7 @@ O Navegador de configuração permite que um administrador crie, gerencie e conf
       * Ele pode ser ajustado, se necessário.
 1. Verifique o tipo de configurações que deseja permitir.
    * [Segmentos do Context Hub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
-   * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
    * [Modelos editáveis](/help/sites-cloud/authoring/page-editor/templates.md)
    * várias configurações de nuvem
 1. Selecione **Criar**.
@@ -120,12 +120,12 @@ Como desenvolvedor, é importante saber como o AEM as a Cloud Service funciona c
 
 ### Separação de configuração e conteúdo {#separation-of-config-and-content}
 
-Embora o [administrador e os usuários possam considerar as configurações como locais de trabalho](#configurations-administrator) para gerenciar diferentes configurações e conteúdo, é importante entender que as configurações e o conteúdo são armazenados e gerenciados separadamente pelo AEM no repositório.
+Embora o [administrador e os usuários possam considerar as configurações como locais de trabalho](#configurations-administrator) para gerenciar diferentes configurações e conteúdo, é importante entender que as configurações e o conteúdo são armazenados e gerenciados separadamente pela AEM no repositório.
 
 * `/content` é o lar de todo o conteúdo.
 * `/conf` é o lar de todas as configurações.
 
-O conteúdo faz referência à sua configuração associada por meio de uma propriedade `cq:conf`. O AEM faz uma pesquisa com base no conteúdo e em sua propriedade `cq:conf` contextual para encontrar a configuração apropriada.
+O conteúdo faz referência à sua configuração associada por meio de uma propriedade `cq:conf`. O AEM realiza uma pesquisa com base no conteúdo e sua propriedade `cq:conf` contextual para encontrar a configuração apropriada.
 
 ### Exemplo {#developer-example}
 
@@ -169,7 +169,7 @@ Finalmente, você vê a propriedade `bgkcolor` de que esse código de amostra pr
 
 O exemplo básico acima mostrava uma única configuração. Mas há muitos casos em que você deseja ter configurações diferentes, como uma configuração global padrão, uma diferente para cada marca e talvez uma específica para seus subprojetos.
 
-Para oferecer suporte a isso na pesquisa de configuração, o AEM tem um mecanismo de herança e fallback na seguinte ordem de preferência:
+Para oferecer suporte a isso durante a pesquisa de configuração, o AEM tem um mecanismo de herança e fallback na seguinte ordem de preferência:
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
    * Configuração específica referenciada de `cq:conf` em algum lugar em `/content`
@@ -191,7 +191,7 @@ Para oferecer suporte a isso na pesquisa de configuração, o AEM tem um mecanis
    * Corrigido na implantação do aplicativo
    * Somente leitura em tempo de execução
 1. `/libs`
-   * Padrões de produto para AEM
+   * Padrões de produto do AEM
    * Alterável somente pelo Adobe, acesso ao projeto não permitido
    * Corrigido na implantação do aplicativo
    * Somente leitura em tempo de execução

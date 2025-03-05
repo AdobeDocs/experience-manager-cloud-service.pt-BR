@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 83%
@@ -205,7 +205,7 @@ Quando o editor for aberto pela primeira vez, você verá:
    * um link para o Console de fragmentos de conteúdo (ícone Início)
    * informações sobre o modelo e a pasta
    * links para Visualização; se o Padrão de URL de Visualização Padrão estiver configurado para o modelo
-   * Ações do Publish e Cancelar publicação
+   * Publicar e Desfazer publicação de ações
    * uma opção para mostrar todas as **Referências principais** (ícone de link)
    * o fragmento **Status** e as últimas informações salvas
    * um botão para alternar para o editor original (baseado no Assets)
@@ -308,13 +308,13 @@ Agora que você aprendeu o básico, o próximo passo é [Saiba mais sobre refer�
 
          * [Publicar e visualizar um fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#publishing-and-previewing-a-fragment)
 
-   * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+   * [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 
       * [Modelos de fragmento de conteúdo - Tipos de dados](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types)
 
       * [Modelos de fragmento de conteúdo: propriedades](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#properties)
 
-      * [Modelos de fragmentos de conteúdo: permitir modelos de fragmento de conteúdo na pasta Ativos](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modelos de fragmentos de conteúdo: permitir modelos de fragmento de conteúdo na pasta Ativos](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#allowing-content-fragment-models-assets-folder)
 
 * [Fragmentos de conteúdo - editor original, no console do Assets](/help/assets/content-fragments/content-fragments-variations.md)
 

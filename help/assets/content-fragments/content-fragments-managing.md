@@ -1,11 +1,11 @@
 ---
 title: Gerenciamento de fragmentos de conteúdo (Assets - Fragmentos de conteúdo)
-description: Saiba como usar o console do Assets para gerenciar os fragmentos de conteúdo do AEM, como a base do conteúdo headless ou para a criação de páginas.
+description: Saiba como usar o console Assets para gerenciar os fragmentos de conteúdo do AEM, como base para o conteúdo headless ou para a criação de páginas.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: b018c1948d479c78e1ef25b2248f3674ec1fcf92
+source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
 workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 65%
@@ -14,7 +14,7 @@ ht-degree: 65%
 
 # Gerenciamento dos Fragmentos de conteúdo {#managing-content-fragments}
 
-Saiba como usar o console do Assets para gerenciar os fragmentos de conteúdo do AEM, como a base do conteúdo headless ou para a criação de páginas.
+Saiba como usar o console Assets para gerenciar os fragmentos de conteúdo do AEM, como base para o conteúdo headless ou para a criação de páginas.
 
 Depois de definir os [Modelos de fragmentos de conteúdo](#creating-a-content-model), você pode usá-los para [criar fragmentos de conteúdo](#creating-a-content-fragment).
 
@@ -39,7 +39,7 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 >
 >Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
 >
->Agora eles são gerenciados principalmente com o console **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, embora ainda possam ser gerenciados no console **Assets**. Esta seção aborda o gerenciamento do console **Assets**.
+>Agora eles são gerenciados principalmente com o console **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, embora ainda possam ser gerenciados no console **Assets**. Esta seção aborda o gerenciamento do console **Assets**.
 >
 >Há dois editores para a criação de fragmentos de conteúdo; embora a funcionalidade básica seja a mesma, há algumas diferenças. Esta seção abrange o editor original, acessado principalmente do console **Assets**. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes do novo editor (acessado principalmente do console **Fragmentos de conteúdo**). Ambos os editores têm um botão de alternância na barra de ferramentas superior para fornecer acesso rápido ao outro editor.
 
@@ -128,7 +128,7 @@ Selecione o fragmento para revelar a barra de ferramentas com ações aplicávei
 
 >[!NOTE]
 >
->Muitas delas são [ações padrão para o Assets](/help/assets/manage-digital-assets.md) e/ou o [aplicativo de desktop AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR).
+>Muitas delas são [ações padrão para o Assets](/help/assets/manage-digital-assets.md) e/ou o [aplicativo de desktop da AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR).
 
 ## Abrir o editor de fragmentos {#opening-the-fragment-editor}
 
@@ -198,7 +198,7 @@ Alguns recursos na barra de ferramentas superior estão disponíveis em vários 
    * **Modificado**: laranja
    * **Desativado**: vermelho
 
-* Um botão permite que você **Experimente o Novo Editor**, abrindo diretamente o *novo* [Editor de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md), que pode ser acessado por meio do [console de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console).
+* Um botão permite que você **Experimente o Novo Editor**, abrindo diretamente o *novo* [Editor de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md), que pode ser acessado por meio do [console de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console).
 
   >[!WARNING]
   >

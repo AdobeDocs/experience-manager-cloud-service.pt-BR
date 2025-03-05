@@ -4,7 +4,7 @@ description: Os componentes podem ser adaptados para gerar a exportação JSON d
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 6%
@@ -79,6 +79,6 @@ Para obter um exemplo, consulte a implementação do Modelo Sling do Componente 
 ## Documentação relacionada {#related-documentation}
 
 * [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md)
-* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md)
+* [Modelos de fragmentos do conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
 * [Criação com fragmentos de conteúdo](/help/sites-cloud/authoring/fragments/content-fragments.md)
 * [Componentes principais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR) e o [componente de Fragmento de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=pt-BR)

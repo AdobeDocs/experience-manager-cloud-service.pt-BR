@@ -1,14 +1,14 @@
 ---
 title: Trabalhar com fragmentos de conteúdo (Assets - Fragmentos de conteúdo)
-description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service projetar, criar, preparar e usar conteúdo, ideal para a criação de páginas e entrega headless.
+description: Saiba como os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service permitem projetar, criar, preparar e usar conteúdo, ideal para a criação de páginas e entrega headless.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 86a2c5f35d82010c84b74b6b5f0da09fd87c2b7a
+source-git-commit: 5054b843a8bb6053bb6617e9efdfc16dd1eac6ca
 workflow-type: tm+mt
-source-wordcount: '2231'
-ht-degree: 57%
+source-wordcount: '2247'
+ht-degree: 56%
 
 ---
 
@@ -39,7 +39,7 @@ Os fragmentos de conteúdo também podem ser entregues no formato JSON, usando o
 >
 >Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
 >
->Agora eles são gerenciados principalmente com o console **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console)**, embora ainda possam ser gerenciados no console **Assets**. Esta seção aborda o gerenciamento do console **Assets**.
+>Os Fragmentos de conteúdo e os Modelos de fragmento de conteúdo agora são gerenciados principalmente com o console **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, embora os Fragmentos de conteúdo ainda possam ser gerenciados no console **Assets** e os Modelos de fragmento de conteúdo no console **Ferramentas**. Esta seção aborda o gerenciamento dos consoles **Assets** e **Ferramentas**.
 >
 >Há dois editores para a criação de fragmentos de conteúdo; embora a funcionalidade básica seja a mesma, há algumas diferenças. Esta seção abrange o editor original, acessado principalmente do console **Assets**. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes do novo editor (acessado principalmente do console **Fragmentos de conteúdo**). Ambos os editores têm um botão de alternância na barra de ferramentas superior para fornecer acesso rápido ao outro editor.
 
@@ -92,7 +92,7 @@ Esses fragmentos de conteúdo podem ser reunidos para fornecer experiências em 
 >
 >Fragmentos de experiência podem incluir conteúdo na forma de Fragmentos de conteúdo, mas não o contrário.
 >
->Para obter mais informações, consulte também [Entendendo os fragmentos de conteúdo e fragmentos de experiência no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
+>Para obter mais informações, consulte também [Entendendo os fragmentos de conteúdo e fragmentos de experiência do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=pt-BR).
 
 ## Fragmentos de conteúdo e serviços de conteúdo {#content-fragments-and-content-services}
 

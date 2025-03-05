@@ -4,7 +4,7 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: bc578aca8e07b010194143062322d9fd8820b408
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
 source-wordcount: '6021'
 ht-degree: 73%
@@ -179,7 +179,7 @@ O GraphQL é uma API altamente tipificada, o que significa que os dados devem se
 
 A especificação GraphQL fornece uma série de diretrizes sobre como criar uma API robusta para interrogar dados em uma determinada instância. Para fazer isso, um cliente deve buscar o [Esquema](#schema-generation), que contém todos os tipos necessários para uma consulta.
 
-Para fragmentos de conteúdo, os esquemas de GraphQL (estrutura e tipos) são baseados em [modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) **habilitados** e seus tipos de dados.
+Para fragmentos de conteúdo, os esquemas de GraphQL (estrutura e tipos) são baseados em [modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) **habilitados** e seus tipos de dados.
 
 >[!CAUTION]
 >

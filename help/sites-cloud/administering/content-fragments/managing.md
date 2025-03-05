@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
+source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 44%
+source-wordcount: '2629'
+ht-degree: 40%
 
 ---
 
@@ -22,9 +22,18 @@ ht-degree: 44%
 
 Saiba como gerenciar seus **Fragmentos de conteúdo** no Adobe Experience Manager (AEM) as a Cloud Service, pelo [console de Fragmentos de conteúdo](#content-fragments-console) dedicado e pelo [editor de Fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor). Esses fragmentos de conteúdo podem ser usados como base para o conteúdo headless ou para a criação de páginas.
 
+>[!IMPORTANT]
+>
+>Vários recursos do Console de fragmentos de conteúdo estão disponíveis por meio do Programa de primeiros usuários.
+>
+>Para ver o status e saber como se candidatar caso esteja interessado, confira as [Notas de Versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
+
 >[!NOTE]
 >
->A equipe do projeto pode personalizar o console e o editor, se necessário. Consulte [Personalização do Console e do Editor de Fragmentos de Conteúdo](/help/implementing/developing/extending/content-fragments-console-and-editor.md) para obter mais detalhes.
+>Essa página aborda a seção do console que (somente) exibe Fragmentos de conteúdo. Para outros painéis, consulte:
+>
+>* [Gerenciamento de modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md)
+>* [Exibindo e gerenciando o Assets no Console de Fragmentos de Conteúdo](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
 
 Depois de definir os [Modelos de fragmentos de conteúdo](#creating-a-content-model), você pode usá-los para:
 
@@ -45,41 +54,13 @@ Depois de definir os [Modelos de fragmentos de conteúdo](#creating-a-content-mo
 >
 >Os fragmentos de conteúdo são armazenados como **Ativos**. Eles são gerenciados principalmente pelo console de **Fragmentos de conteúdo**, mas também podem ser gerenciados no console de [Ativos](/help/assets/content-fragments/content-fragments-managing.md).
 
-## O console de Fragmentos de conteúdo {#content-fragments-console}
+## Estrutura básica e manuseio de fragmentos de conteúdo no console {#basic-structure-handling-content-fragments-console}
 
-O Console de fragmentos de conteúdo é dedicado ao gerenciamento, pesquisa e criação de fragmentos de conteúdo. Ele foi otimizado para uso em um contexto headless, mas também é usado ao criar fragmentos de conteúdo para uso na criação de páginas.
+Você pode usar o painel à esquerda do [console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) para selecionar **Fragmentos de conteúdo** como o tipo de recurso para exibir, navegar e gerenciar:
 
-O console de Fragmentos de conteúdo fornece acesso direto aos seus fragmentos e às tarefas relacionadas. O console pode ser acessado diretamente do nível superior da Navegação global.
-
-![Navegação global - Console de fragmentos de conteúdo](assets/cf-managing-global-navigation.png)
-
-Para mais informações, consulte:
-
-* [Estrutura básica e manuseio do console de Fragmentos de conteúdo](#basic-structure-handling-content-fragments-console)
-
-* [As informações fornecidas sobre os seus Fragmentos de conteúdo](#information-content-fragments)
-
-* [Ações para um fragmento de conteúdo no console de Fragmentos de conteúdo](#actions-selected-content-fragment)
-
-* [Selecionar colunas mostradas no console](#select-columns-console)
-
-* [Pesquisar e filtrar no Console de fragmentos de conteúdo](#filtering-fragments)
-
-* Uma seleção de [atalhos de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) estão disponíveis para uso neste console
-
->[!NOTE]
->
->Esse console só exibe fragmentos de conteúdo. Ele não exibe outros tipos de ativos como imagens e vídeos.
-
->[!CAUTION]
->
->Este console tem *somente* disponível no Adobe Experience Manager (AEM) as a Cloud Service online.
-
-### Estrutura básica e manuseio do console {#basic-structure-handling-content-fragments-console}
+![Console de Fragmentos de conteúdo - navegação](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
 
 Selecionar **Fragmentos de conteúdo** abre o console em uma nova guia.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Console de fragmentos de conteúdo - Visão geral](assets/cf-managing-console-overview.png)
 
@@ -90,10 +71,11 @@ Aqui você pode ver três áreas principais:
    * Também mostra sua organização IMS
    * Fornece várias [ações](#actions-unselected)
 * O painel esquerdo
+   * Aqui é possível compactar ou expandir links para os painéis
    * Aqui você pode ocultar ou revelar a árvore de pastas
    * É possível selecionar uma ramificação específica da árvore
    * Ela pode ser redimensionada para mostrar pastas aninhadas
-   * Você pode escolher entre visualizar fragmentos de conteúdo ou [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md)
+   * Além dos Fragmentos de conteúdo, você pode exibir [Modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) ou [Assets](/help/sites-cloud/administering/content-fragments/assets-content-fragments-console.md). Também é possível compactar ou expandir links para os painéis
 * O painel principal/direito; aqui, você pode:
    * Consulte a lista de todos os fragmentos de conteúdo na ramificação selecionada da árvore:
       * Os fragmentos de conteúdo da pasta selecionada e de todas as pastas derivadas serão mostrados:
@@ -105,7 +87,7 @@ Aqui você pode ver três áreas principais:
          * Mostrar informações sobre referências
          * Mostrar informações sobre versões de idioma do fragmento
       * [Determinados outros campos de informações](#information-content-fragments) sobre um Fragmento de conteúdo podem ser usados para [Filtragem Rápida](#fast-filtering):
-         * Selecione um valor na coluna e é aplicado imediatamente como filtro
+         * Selecione um valor na coluna e ele será aplicado imediatamente como filtro
          * A filtragem rápida é aceita pelas colunas **Modelo**, **Status**, **Modificado por**, **Marcas** e **Publicado por**.
       * Ao passar o mouse sobre os cabeçalhos da coluna, um seletor de ação suspenso e os controles deslizantes de largura serão mostrados. Eles permitem:
          * Classificar: selecione a ação apropriada para classificar em ordem crescente ou decrescente 
@@ -114,58 +96,9 @@ Isso classificará toda a tabela de acordo com essa coluna. A classificação s�
       * Selecione um ou mais fragmentos para outra [ação](#actions-selected-content-fragment)
    * Use a caixa [Pesquisa](#searching-fragments)
    * Abra o [painel de Filtro](#filtering-fragments)
+   * Uma seleção de [atalhos de teclado](/help/sites-cloud/administering/content-fragments/keyboard-shortcuts.md) estão disponíveis para uso neste console
 
-### Ações {#actions}
-
-No console, há um intervalo de ações que podem ser usadas, diretamente ou após selecionar um fragmento específico:
-
-* Várias ações estão diretamente [disponíveis no console](#actions-unselected)
-* É possível [selecionar um ou mais fragmentos de conteúdo para mostrar as ações apropriadas](#actions-selected-content-fragment)
-
-#### Ações (não selecionadas) {#actions-unselected}
-
-Algumas ações estão disponíveis no console, sem selecionar um fragmento de conteúdo específico:
-
-* **[Criar](#creating-a-content-fragment)** um novo fragmento de conteúdo
-* [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro
-* [Pesquisar](#searching-fragments) os fragmentos de conteúdo
-* [Personalizar a visualização da tabela para mostrar as colunas de informações selecionadas](#select-columns-console)
-* Usar o recurso **Abrir no Assets** para abrir o local atual diretamente no console de **Ativos**
-
-  >[!NOTE]
-  >
-  >O console **Assets** é usado para acessar ativos, como imagens, vídeos e assim por diante.  Esse console pode ser acessado:
-  >
-  >* usando o link **Abrir no Assets** (no Console de fragmentos de conteúdo)
-  >* diretamente do painel global **Navegação**
-
-#### Ações para um Fragmento de conteúdo (selecionado) {#actions-selected-content-fragment}
-
-Selecionar um fragmento específico abre uma barra de ferramentas focada nas ações disponíveis para esse fragmento. Também é possível selecionar vários fragmentos; a seleção de ações será ajustada de acordo.
-
-<!-- CQDOC-21349: screenshot -->
-
-![Console de fragmentos de conteúdo - Barra de ferramentas de um fragmento selecionado](assets/cf-managing-console-fragment-toolbar.png)
-
-* **[Abrir em novo Editor](#editing-the-content-of-your-fragment)**
-* **[Abrir](/help/assets/content-fragments/content-fragments-variations.md)** (no editor original)
-* **[Publicar](#publishing-and-previewing-a-fragment)** (e **[Desfazer publicação](#unpublishing-a-fragment)**)
-* **[Gerenciar Marcas](#manage-tags)**
-* **[Copiar](/help/assets/manage-digital-assets.md)**
-* **[Mover](/help/assets/manage-digital-assets.md)**
-* **[Renomeie](/help/assets/manage-digital-assets.md)**
-* **[Excluir](#deleting-a-fragment)**
-* **[Substituir](#find-and-replace)**
-
->[!NOTE]
->
->Use **Abrir** para abrir o fragmento selecionado no editor *original*.
-
->[!NOTE]
->
->Ações como Publicar, Desfazer publicação, Excluir, Mover, Renomear e Copiar acionam um trabalho assíncrono. O progresso desse processo pode ser monitorado por meio da interface de processos assíncronos do AEM.
-
-### As informações fornecidas sobre os seus Fragmentos de conteúdo {#information-content-fragments}
+## As informações fornecidas sobre os seus Fragmentos de conteúdo {#information-content-fragments}
 
 O painel principal/direito (exibição de tabela) do console fornece uma variedade de informações sobre os Fragmentos de conteúdo. Alguns itens também fornecem links diretos para outras ações e/ou informações:
 
@@ -214,6 +147,53 @@ Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
 
      ![Console de Fragmentos de conteúdo - Caixa de diálogo Idioma](assets/cf-managing-console-languages-dialog.png)
 
+## Ações {#actions}
+
+No console, há um intervalo de ações que podem ser usadas, diretamente ou após selecionar um fragmento específico:
+
+* Várias ações estão diretamente [disponíveis no console](#actions-unselected)
+* É possível [selecionar um ou mais fragmentos de conteúdo para mostrar as ações apropriadas](#actions-selected-content-fragment)
+
+### Ações (não selecionadas) {#actions-unselected}
+
+Algumas ações estão disponíveis no console, sem selecionar um fragmento de conteúdo específico:
+
+* **[Criar](#creating-a-content-fragment)** um novo fragmento de conteúdo
+* [Filtrar](#filtering-fragments) os fragmentos de conteúdo de acordo com uma seleção de predicados e salvar o filtro para uso futuro
+* [Pesquisar](#searching-fragments) os fragmentos de conteúdo
+* [Personalizar a visualização da tabela para mostrar as colunas de informações selecionadas](#select-columns-console)
+* Usar o recurso **Abrir no Assets** para abrir o local atual diretamente no console de **Ativos**
+
+  >[!NOTE]
+  >
+  >O console **Assets** é usado para acessar ativos, como imagens, vídeos e assim por diante.  Esse console pode ser acessado:
+  >
+  >* usando o link **Abrir no Assets** (no Console de fragmentos de conteúdo)
+  >* diretamente do painel global **Navegação**
+
+### Ações para um Fragmento de conteúdo (selecionado) {#actions-selected-content-fragment}
+
+Selecionar um fragmento específico abre uma barra de ferramentas focada nas ações disponíveis para esse fragmento. Também é possível selecionar vários fragmentos; a seleção de ações será ajustada de acordo.
+
+![Console de fragmentos de conteúdo - Barra de ferramentas de um fragmento selecionado](assets/cf-managing-console-fragment-toolbar.png)
+
+* **[Abrir em novo Editor](#editing-the-content-of-your-fragment)**
+* **[Abrir](/help/assets/content-fragments/content-fragments-variations.md)** (no editor original)
+* **[Publicar](#publishing-and-previewing-a-fragment)** (e **[Desfazer publicação](#unpublishing-a-fragment)**)
+* **[Gerenciar Marcas](#manage-tags)**
+* **[Copiar](/help/assets/manage-digital-assets.md)**
+* **[Mover](/help/assets/manage-digital-assets.md)**
+* **[Renomeie](/help/assets/manage-digital-assets.md)**
+* **[Excluir](#deleting-a-fragment)**
+* **[Substituir](#find-and-replace)**
+
+>[!NOTE]
+>
+>Use **Abrir** para abrir o fragmento selecionado no editor *original*.
+
+>[!NOTE]
+>
+>Ações como Publicar, Desfazer publicação, Excluir, Mover, Renomear e Copiar acionam um trabalho assíncrono. O progresso desse processo pode ser monitorado por meio da interface de processos assíncronos do AEM.
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
@@ -221,7 +201,7 @@ Antes de criar o fragmento de conteúdo, o modelo de fragmento de conteúdo subj
 
 ### Criação de um modelo de conteúdo {#creating-a-content-model}
 
-[Os modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md) devem ser habilitados e criados antes da criação de fragmentos de conteúdo com conteúdo estruturado.
+[Os modelos de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md) devem ser habilitados e criados antes da criação de fragmentos de conteúdo com conteúdo estruturado.
 
 ### Criação de um fragmento de conteúdo {#creating-a-content-fragment}
 
@@ -248,7 +228,7 @@ Para criar um fragmento de conteúdo:
 
 ## Status dos fragmentos de conteúdo {#statuses-content-fragments}
 
-Durante sua existência, um fragmento de conteúdo pode ter vários status, como mostrado no [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/managing.md#content-fragments-console) e no [editor de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md):
+Durante sua existência, um fragmento de conteúdo pode ter vários status, como mostrado no [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) e no [editor de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md):
 
 * **Novo** (cinza)
 Um novo fragmento de conteúdo foi criado, mas não tem conteúdo, pois nunca foi editado ou aberto no editor de fragmentos de conteúdo.
@@ -319,7 +299,7 @@ Você pode publicar os fragmentos de conteúdo nos seguintes serviços:
 
 >[!CAUTION]
 >
->Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#publishing-a-content-fragment-model).
+>Se o fragmento for baseado em um modelo, é preciso certificar-se de que o [modelo foi publicado](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md#publishing-a-content-fragment-model).
 >
 >Se você publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado junto com o fragmento.
 
@@ -382,8 +362,6 @@ Quando a caixa de diálogo relevante for aberta, você poderá selecionar o serv
 
 ## Localizar e substituir {#find-and-replace}
 
-<!-- CQDOC-21349: screenshot -->
-
 A ação **Substituir** está disponível (na barra de ferramentas superior) para localizar e substituir o texto especificado nos Fragmentos de conteúdo selecionados.
 
 ![Localizar e Substituir](assets/cf-managing-find-replace.png)
@@ -395,8 +373,6 @@ Antes da substituição, os critérios de validação são verificados e você �
 >A ação de localizar e substituir só pode ser executada em no máximo 20 fragmentos de conteúdo selecionados (de cada vez).
 >
 >Se você selecionar mais de 20 fragmentos de conteúdo, verá a mensagem **Não é possível localizar e substituir**.
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Confirmar Substituição](assets/cf-managing-confirm-replace.png)
 
@@ -464,8 +440,6 @@ O painel Filtro oferece:
 
 Depois de selecionadas, as opções **Filtrar por** são exibidas (na caixa Pesquisar). Eles podem ser desmarcados a partir daí. Por exemplo:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![Console de fragmentos de conteúdo - Filtragem](assets/cf-managing-console-filter.png)
 
 ### Filtragem rápida {#fast-filtering}
@@ -488,13 +462,9 @@ Após a seleção, isso será exibido como um predicado de filtro, e a lista ser
 
 A caixa de pesquisa é compatível com a pesquisa de texto completo. Inserir seus termos de pesquisa na caixa de pesquisa:
 
-<!-- CQDOC-21349: screenshot -->
-
 ![Console de fragmentos de conteúdo - Pesquisar](assets/cf-managing-console-search-specification.png)
 
 Fornecerá os resultados selecionados:
-
-<!-- CQDOC-21349: screenshot -->
 
 ![Console de fragmentos de conteúdo - Resultados da pesquisa](assets/cf-managing-console-search-results.png)
 
