@@ -5,14 +5,17 @@ Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: ae31df22c723c58addd13485259e92abb4d4ad54
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
 
 # Serviço de envio de Forms com o Edge Delivery Services Forms
+
+<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> com o nome da organização do GitHub e o nome do repositório. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
+
 
 O serviço de Envio do Forms permite armazenar dados dos envios de formulários em qualquer planilha, como OneDrive, SharePoint ou Google Sheets, permitindo que você acesse e gerencie facilmente os dados de formulários em sua plataforma de planilha preferida.
 
@@ -30,12 +33,12 @@ Algumas vantagens de usar o Serviço de envio do Forms com planilhas são:
 
 Abaixo estão os pré-requisitos para usar o serviço de Envio do Forms:
 
-* Certifique-se de que o projeto AEM tenha o Bloco de formulário adaptável mais recente.
+* Verifique se o projeto do AEM tem o bloco de formulário adaptável mais recente.
 * Incluir na lista de permissões Verifique se o repositório foi adicionado ao arquivo para usar o serviço de envio do Forms. [mailto:aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) com o Nome da organização do GitHub e o Nome do repositório para adicioná-los ao arquivo de inclui na lista de permissões para usar o serviço de Envio do Forms.
 
 ## Configurar o serviço de envio do Forms
 
-Criar novo projeto AEM configurado com o Bloco Forms adaptável. Consulte o artigo [Introdução - Tutorial do desenvolvedor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para saber como criar um novo projeto de AEM. Atualize o arquivo `fstab.yaml` em seu projeto. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o `forms@adobe.com`.
+Crie um novo projeto do AEM configurado com o Bloco de Forms adaptável. Consulte o artigo [Introdução - Tutorial do desenvolvedor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para saber como criar um novo projeto do AEM. Atualize o arquivo `fstab.yaml` em seu projeto. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o `forms@adobe.com`.
 
 Você pode [configurar o Serviço de Envio do Forms manualmente](#configuring-the-forms-submission-service-manually) ou [configurar o Serviço de Envio do Forms usando a API](#configuring-the-forms-submission-service-using-api).
 
@@ -92,7 +95,7 @@ Para configurar o serviço de Envio do Forms com o Google Sheets ou o Microsoft 
 
 ### Configuração do serviço de envio do Forms usando a API
 
-Você também pode enviar uma solicitação **POST** ao formulário para atualizar a folha `incoming` com os dados.
+Você também pode enviar uma solicitação **POST** para o formulário para atualizar a folha `incoming` com os dados.
 
 >[!NOTE]
 >
@@ -100,9 +103,9 @@ Você também pode enviar uma solicitação **POST** ao formulário para atualiz
 > * Compartilhe a planilha `incoming` com a Adobe Experience Manager `forms@adobe.com` e conceda acesso de edição.
 > * Visualize e publique a planilha `incoming` no sidekick.
 
-Para entender como formatar a solicitação POST para configurar sua planilha, consulte a [documentação sobre APIs](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Você pode observar o exemplo fornecido abaixo:
+Para entender como formatar a solicitação POST para configurar sua planilha, consulte a [documentação sobre API](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/aem-forms-submission-service/). Você pode observar o exemplo fornecido abaixo:
 
-Você pode usar ferramentas como curl ou Postman para executar essa solicitação de POST, conforme demonstrado abaixo.
+Você pode usar ferramentas como curl ou Postman para executar essa solicitação POST, conforme demonstrado abaixo.
 
 * **Usando o Postman**:
 
@@ -175,13 +178,13 @@ Por exemplo, execute o comando abaixo no terminal ou no prompt de comando após 
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
     —header &quot;Content-Type: application/json&quot; ^
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; ^
-    —data &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destino\&quot;: \&quot;Austrália\&quot;, \&quot;classe\&quot;: \&quot;Primeira classe\&quot;, \&quot;orçamento\&quot;: \&quot;2000\&quot;, \&quot;valor\&quot;: \&quot;1000000\&quot;, \&quot;nome\&quot;: \&quot;Joe\&quot;, \&quot;idade\&quot;: \&quot;35\&quot;, \&quot;assinatura\&quot;: nulo, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;} 7}&quot;
+    —data &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
     
     &quot;
 
 >[!ENDTABS]
 
-A solicitação POST mencionada acima atualiza a folha `incoming` com a resposta abaixo:
+A solicitação POST mencionada acima atualiza a planilha `incoming` com a resposta abaixo:
 
 ```json
     < HTTP/1.1 201 Created

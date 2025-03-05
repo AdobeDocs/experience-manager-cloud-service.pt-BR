@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3f656e592a4a7a46a1f868f8400f22fb47bcd160
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1505'
 ht-degree: 3%
 
 ---
@@ -252,3 +252,25 @@ Para registrar um tíquete de suporte, primeiro registre o site do Edge Delivery
 >
 >* [O Editor Universal](/help/edge/wysiwyg-authoring/authoring.md) para editar visualmente o conteúdo headless.
 >* [O Editor de Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulário de conteúdo headless.
+
+## Editor universal{#ue-see-also}
+
+* [Criar O Primeiro Formulário Usando O Editor Universal](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md)
+* [Adicionar comportamento dinâmico ao Forms](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md)
+* [Configurar e personalizar ações de envio de formulário](/help/edge/docs/forms/universal-editor/submit-action.md)
+* [Publicar e implantar o Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
+* [Design Beautiful Forms: guia de estilo e tema](/help/edge/docs/forms/universal-editor/style-theme-forms.md)
+* [Criar componentes de formulário personalizados](/help/edge/docs/forms/universal-editor/create-custom-component.md)
+* [Proteja seu Forms contra spam: adicionando segurança ao reCAPTCHA](/help/edge/docs/forms/universal-editor/recaptcha-forms.md)
+
+## Consulte também: {#see-more-eds-forms}
+
+* [Introdução ao Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
+* [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
+* [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
+* [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
+* [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
+* [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)
+* [Componentes de bloco de formulário adaptável e suas propriedades](/help/edge/docs/forms/form-components.md)
+* [Uso do serviço de envio de formulários](/help/forms/forms-submission-service.md)

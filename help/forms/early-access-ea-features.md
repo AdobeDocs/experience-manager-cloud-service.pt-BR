@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+source-git-commit: babddee34b486960536ce7075684bbe660b6e120
 workflow-type: tm+mt
-source-wordcount: '2155'
+source-wordcount: '2289'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,9 @@ Veja o que mais o Conversational Forms oferece:
 As Forms de conversa são mais do que apenas uma nova aparência - elas são um divisor de águas para a experiência do usuário.  Aumente o engajamento, reduza o abandono de formulários e torne a interação com seu site uma experiência mais agradável para todos.
 
 
-### Criação no WYSIWYG para Edge Delivery Services
+### Criação no WYSIWYG (Universal Editor) para Edge Delivery Services para Forms
 
-A Criação no WYSIWYG fornece interfaces do WYSIWYG (Universal Editor e Adaptive Forms Editor) para criar e publicar formulários adaptáveis no Edge Delivery Services. A Criação do WYSIWYG oferece todos os recursos da [Criação baseada em documento](/help/edge/docs/forms/overview.md#document-based-authoring-features), além de uma grande variedade de recursos adicionais:
+O Editor Universal fornece uma interface avançada do WYSIWYG para compilar e publicar [formulários adaptáveis no Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md), combinando a simplicidade do design visual com a funcionalidade avançada. A Criação do WYSIWYG oferece todos os recursos da [Criação baseada em documento](/help/edge/docs/forms/create-forms.md), além de uma grande variedade de recursos adicionais:
 
 * Editor de regras avançado para criar lógica complexa.
 * Extensibilidade do lado do servidor para funcionalidades personalizadas.
@@ -86,6 +86,26 @@ A Criação no WYSIWYG fornece interfaces do WYSIWYG (Universal Editor e Adaptiv
 * Integração com várias fontes de dados para pré-preencher formulários e enviar dados.
 * Modelo de dados de formulário (FDM) para definir a estrutura de dados e as interações com várias fontes de dados.
 * Capacidade de escolher entre várias ações de envio para lidar com envios de formulários, incluindo o envio de dados para o Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e muitas outras fontes de dados.
+
+![Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
+
+**Vantagens:**
+
+* **Tempo de implantação acelerado (TTV)**: inicialize formulários mais rapidamente com criação visual intuitiva que elimina requisitos complexos de codificação.
+* **Custos de desenvolvimento reduzidos**: reduza o custo total de propriedade capacitando os usuários empresariais a criar e modificar formulários com o mínimo de envolvimento de TI.
+* **Desenvolvimento simplificado**: crie componentes personalizados usando somente o HTML, o CSS e o JavaScript — não é necessário conhecimento especializado sobre a estrutura.
+* **Pilha da Web Moderna**: criada com base em padrões da Web e tecnologias modernas, familiares aos desenvolvedores de front-end.
+* **Prototipagem rápida**: crie e teste rapidamente conceitos de formulário antes de investir no desenvolvimento completo
+
+
+**Explore a documentação para saber mais:**
+
+| | | |
+|:----------------------:|:---------------------:|:----------------------:|
+| [**Principais recursos**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**Usar layouts responsivos**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Configurar ações de envio**](/help/edge/docs/forms/universal-editor/submit-action.md) |
+| [**Introdução ao Editor Universal para Forms Adaptável**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**Estilize seus formulários**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**Adicionar segurança do reCAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
+| [**Crie seu primeiro formulário**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**Usar o editor de regras**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**Publicar formulários**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
+| [**Entender a interface de usuário**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**Criar componentes personalizados**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### Conector do AEM Forms para Marketo
