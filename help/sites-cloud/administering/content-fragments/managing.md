@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: 2daddd852f4cfcbcd6b1d4aea9cd96e045c93ca0
+source-git-commit: f5523968ef4548c287ec939b63db1cf914c7fbeb
 workflow-type: tm+mt
-source-wordcount: '2661'
+source-wordcount: '2686'
 ht-degree: 44%
 
 ---
@@ -73,7 +73,7 @@ Para mais informações, consulte:
 
 >[!CAUTION]
 >
->Este console *só* está disponível no as a Cloud Service do Adobe Experience Manager (AEM) online.
+>Este console tem *somente* disponível no Adobe Experience Manager (AEM) as a Cloud Service online.
 
 ### Estrutura básica e manuseio do console {#basic-structure-handling-content-fragments-console}
 
@@ -163,7 +163,7 @@ Selecionar um fragmento específico abre uma barra de ferramentas focada nas aç
 
 >[!NOTE]
 >
->Ações como Publish, Cancelar publicação, Excluir, Mover, Renomear e Copiar acionam um trabalho assíncrono. O progresso desse processo pode ser monitorado por meio da interface de processos assíncronos do AEM.
+>Ações como Publicar, Desfazer publicação, Excluir, Mover, Renomear e Copiar acionam um trabalho assíncrono. O progresso desse processo pode ser monitorado por meio da interface de processos assíncronos do AEM.
 
 ### As informações fornecidas sobre os seus Fragmentos de conteúdo {#information-content-fragments}
 
@@ -237,6 +237,7 @@ Para criar um fragmento de conteúdo:
 
    * **Local** - Preenchido automaticamente com o local atual, mas você pode selecionar um local diferente, se necessário.
    * **Modelo de fragmento de conteúdo** - Selecione o modelo a ser usado como base do fragmento na lista suspensa.
+   * **Marca automática** - Quando você seleciona essa opção, todas as marcas atribuídas ao modelo de fragmento de conteúdo são herdadas e adicionadas ao novo fragmento de conteúdo.
    * **Título**
    * **Nome** - Preenchido automaticamente com base no **Título**, mas você pode editá-lo, se necessário.
    * **Descrição**
@@ -310,7 +311,7 @@ Você pode publicar os fragmentos de conteúdo nos seguintes serviços:
 
   >[!CAUTION]
   >
-  >A publicação de fragmentos de conteúdo no **Serviço de visualização** só está disponível no console de fragmentos de conteúdo; usando a ação **Publish**.
+  >A publicação de fragmentos de conteúdo no **Serviço de visualização** só está disponível no console de fragmentos de conteúdo; usando a ação **Publicar**.
 
   >[!NOTE]
   >
@@ -324,7 +325,7 @@ Você pode publicar os fragmentos de conteúdo nos seguintes serviços:
 
 ### Publicação {#publishing}
 
-Você pode publicar seus Fragmentos de conteúdo usando a opção **Publish** a partir:
+Você pode publicar seus Fragmentos de conteúdo usando a opção **Publicar** a partir:
 
 * a barra de ferramentas do [Console de fragmentos de conteúdo](#actions-selected-content-fragment)
 
@@ -332,7 +333,7 @@ Você pode publicar seus Fragmentos de conteúdo usando a opção **Publish** a 
 
 * a barra de ferramentas do [editor de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md#content-fragment-editor)
 
-Após selecionar a ação **Publish**:
+Depois de selecionar a ação **Publicar**:
 
 1. Selecione uma das seguintes opções para abrir a caixa de diálogo apropriada:
 
