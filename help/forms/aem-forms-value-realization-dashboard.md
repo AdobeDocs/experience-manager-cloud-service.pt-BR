@@ -5,31 +5,33 @@ feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
-source-git-commit: 85d788eeb5017b99ea4962105b63b20c487f363f
+exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
+source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
-
 
 # Noções básicas sobre o seu painel de realização de valor
 
 ![Painel de realização do Fvalue](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 
-<span class="preview"> Este é um recurso beta, habilitado apenas para alguns clientes selecionados. </span>
+<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para aem-forms-ea@adobe.com. <span>
+
 
 Bem-vindo ao seu balcão único para entender o valor que seus formulários estão trazendo! Esse painel fornece insights valiosos para otimizar seus formulários, simplificar fluxos de trabalho e, por fim, atingir suas metas mais rapidamente.
 
-Este artigo fornece uma visão geral conceitual do Value Realization Dashboard e seus benefícios. Para obter instruções de uso detalhadas e interpretação de métricas, consulte [Interpretação de insights de Uso de Formulários usando o painel de Realização de Valores](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md).
+Este artigo fornece uma visão geral conceitual do Value Realization Dashboard e seus benefícios. Para obter instruções de uso detalhadas e interpretação de métricas, consulte [Interpretação de insights de Uso de Formulários usando o painel de Realização de Valores](/help/forms/using-the-value-realization-dashboard.md).
 
 
-![painel de realização de valor](/help/forms/assets/forms-usage-insights.png)
+
 
 ## O que há no painel? {#content-of-dashboard}
 
 Esse painel é a sua janela para o mundo de uso do formulário. Veja a seguir um detalhamento das principais seções:
+
 
 ### Atividade de formulários e documentos ao longo do tempo
 
@@ -44,8 +46,6 @@ Esse painel é a sua janela para o mundo de uso do formulário. Veja a seguir um
 * **Reutilização de fragmento de formulário**: meça a frequência com que esses fragmentos estão sendo usados em diferentes formulários.
 
 
-
-
 ## Como isso beneficia você? {#benefits-to-you}
 
 Esse painel permite que você tome decisões orientadas por dados sobre seus formulários. Veja como:
@@ -53,6 +53,8 @@ Esse painel permite que você tome decisões orientadas por dados sobre seus for
 * **Identificar Forms Popular**: altas taxas de envio indicam formulários valiosos. Analise esses itens para obter práticas recomendadas que possam ser replicadas em outros.
 * **Otimizar a Criação de Formulários**: reduza os tempos de criação identificando gargalos. Explore modelos pré-criados ou workflows otimizados.
 * **Aumentar reutilização de fragmentos**: incentive a colaboração e a descoberta de fragmentos reutilizáveis. Bibliotecas de fragmentos bem organizadas podem melhorar significativamente a eficiência.
+
+  ![painel de realização de valor](/help/forms/assets/forms-usage-insights.png)
 
 
 ## Transformando insights em ação {#turning-insights-into-actions}
@@ -75,4 +77,4 @@ Lembre-se, este painel é seu aliado! Ao usá-lo de maneira eficaz, você pode t
 
 ## Consulte também:
 
-* [Interpretação de insights de uso](/help/forms/interpreting-form-usage-insights-from-your-vr-dashboard.md)
+* [Uso do painel para analisar tendências de uso do Forms e de documentos](/help/forms/using-the-value-realization-dashboard.md)
