@@ -4,9 +4,9 @@ description: Se você tiver muitos sites semelhantes que parecem e se comportam 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a6bc0f35-9e76-4b5a-8747-b64e144c08c4
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
@@ -99,30 +99,14 @@ Depois de receber o token de acesso, ele poderá ser passado no cabeçalho de so
 
 Depois que a configuração do site for mapeada, você poderá configurar o controle de acesso definindo sua conta técnica para que ela tenha privilégios para publicar.
 
-1. No navegador, recupere a conta técnica na resposta do link a seguir.
+1. Entre na instância do autor do AEM e vá para **Ferramentas** -> **Serviços da Nuvem** -> **Configuração do Edge Delivery Services** e selecione a configuração que foi criada automaticamente para o seu site e toque ou clique em **Propriedades** na barra de ferramentas.
 
-   ```text
-   https://author-p<programID>-e<envionmentID>.adobeaemcloud.com/bin/franklin.delivery/<your-github-org>/<your-aem-project>/main/.helix/config.json
-   ```
+1. Na janela **Configuração do Edge Delivery Services**, selecione a guia **Autenticação** e copie o valor para **A ID da conta técnica**.
 
-1. A resposta será semelhante ao mostrado a seguir.
+   * Será semelhante a `<tech-account-id>@techacct.adobe.com`
+   * A conta técnica é a mesma para todos os sites em um único ambiente de autor do AEM.
 
-   ```json
-   {
-     "total": 1,
-     "offset": 0,
-     "limit": 1,
-     "data": [
-       {
-         "key": "admin.role.publish",
-         "value": "<tech-account-id>@techacct.adobe.com"
-       }
-     ],
-     ":type": "sheet"
-   }
-   ```
-
-1. Defina a conta técnica em sua configuração com um comando cURL semelhante ao seguinte.
+1. Defina a conta técnica para sua configuração de respostas com um comando cURL semelhante ao seguinte, usando a ID da conta técnica que você copiou.
 
    * Adapte o bloco `admin` para definir os usuários que devem ter acesso administrativo total ao site.
       * É uma matriz de endereços de email.

@@ -3,13 +3,13 @@ title: Configuração da autenticação de site para a criação de conteúdo
 description: Saiba como o AEM Live oferece suporte à autenticação baseada em token e como você pode configurar o AEM para usar a autenticação com a criação do WYSIWYG.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 6d28b831fb902173bb5fbadd4aa2a52ba58e0a3b
+exl-id: b2838da2-79c7-49b1-a101-15c21e80197e
+source-git-commit: 7b46af35b202446fdea67e4125d74c3965d302d9
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '324'
 ht-degree: 2%
 
 ---
-
 
 # Configuração da autenticação de site para a criação de conteúdo {#site-authentication}
 
@@ -46,11 +46,13 @@ Esses itens são necessários para concluir a configuração da autenticação d
 Depois que a autenticação do site for configurada, você poderá habilitá-la no ambiente de criação do AEM.
 
 1. Entre na instância do autor do AEM e vá para **Ferramentas** -> **Serviços da Nuvem** -> **Configuração do Edge Delivery Services** e selecione a configuração que foi criada automaticamente para o seu site e toque ou clique em **Propriedades** na barra de ferramentas.
-1. Na janela **Configuração do Edge Delivery Services**, selecione a guia **Autenticação** e forneça os seguintes valores, que você anotou ao configurar a autenticação do site.
-
-   * **A ID da conta técnica**
-   * **Token de Autenticação do Site**
+1. Na janela **Configuração do Edge Delivery Services**, selecione a guia **Autenticação** e forneça o **Token de Autenticação do Site**, que você copiou anteriormente.
 
    ![Configuração do Edge Delivery Services](/help/edge/wysiwyg-authoring/assets/site-authentication/configure-aem-author.png)
+
+1. Verifique se a **ID da conta técnica** corresponde à que você copiou anteriormente.
+
+   * Este campo é somente leitura e predefinido.
+   * A conta técnica é a mesma para todos os sites em um único ambiente de autor do AEM.
 
 1. Toque ou clique em **Salvar e fechar**.
