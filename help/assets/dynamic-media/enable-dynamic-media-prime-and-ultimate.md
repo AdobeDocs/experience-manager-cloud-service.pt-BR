@@ -4,7 +4,7 @@ description: Saiba como habilitar [!DNL Dynamic Media] ofertas do Prime e do Ult
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: 3962b687a7d0d3f5551b23fbe5c2ee2c21bd1d89
+source-git-commit: 6ec63a4d1a1c0af71e597b18d5a52d0a53c94c8c
 workflow-type: tm+mt
 source-wordcount: '1074'
 ht-degree: 0%
@@ -28,9 +28,11 @@ Execute as seguintes etapas no ambiente do Cloud Service para habilitar o Ultima
 1. [Configurar [!DNL Dynamic Media] soluções](#configure-dynamic-media-solutions)
 1. [Criar e listar [!DNL Dynamic Media] empresas](#create-and-list-dynamic-media-companies)
 1. [Configurar domínio personalizado na camada de entrega](#configure-custom-domain-in-delivery-tier)
+
 <!--
 1. [Onboard API keys using the [!DNL AEM] [!DNL Dynamic Media] API card](#onboarding-api-keys)
 -->
+
 Se você precisar habilitar [!DNL Dynamic Media Prime], consulte os links rápidos fornecidos em [Habilitar [!DNL Dynamic Media Prime]](#enable-dynamic-media-prime).
 
 ### Ativar [!DNL Dynamic Media with OpenAPI] {#activate-dynamic-media-with-openapi}
