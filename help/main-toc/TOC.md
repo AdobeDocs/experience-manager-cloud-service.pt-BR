@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 6a907b3d3241010e152669a70dec405215fbc6b1
 workflow-type: tm+mt
-source-wordcount: '6228'
+source-wordcount: '6239'
 ht-degree: 68%
 
 ---
@@ -586,6 +586,8 @@ ht-degree: 68%
       + [Configuração do Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Trabalhar com o Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [Configurar o Dynamic Media](/help/assets/dynamic-media/config-dm.md)
+      + [Dynamic Media Prime e Ultimate](/help/assets/dynamic-media/dm-prime-ultimate.md)
+      + [Ativar o Dynamic Media Prime e o Ultimate](/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md)
       + [Opcional - Configurar o Dynamic Media, Configurações gerais](/help/assets/dynamic-media/dm-general-settings.md)
       + [Opcional - Configurar o Dynamic Media, Configuração de publicação](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Solução de problemas do Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -892,7 +894,7 @@ ht-degree: 68%
    + Relatórios de transação {#using-communications}
       + [APIs faturáveis de relatórios de transação](/help/forms/transaction-reports-billable-apis.md)
       + [Registrar uma transação para uma implementação personalizada](/help/forms/record-transaction-custom-implementation.md)
-   + Painel de realização de valor {#vr-dashboard}
+   + Painel de Percepção de Valor {#vr-dashboard}
       + [Noções básicas sobre o seu painel de realização de valor](/help/forms/aem-forms-value-realization-dashboard.md)
       + [Usar o painel de realização de valor para analisar tendências de uso de formulários e documentos](/help/forms/using-the-value-realization-dashboard.md)
    + Referência da API do desenvolvedor {#aem-forms-developer-api-reference}
