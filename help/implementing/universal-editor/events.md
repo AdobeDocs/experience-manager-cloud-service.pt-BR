@@ -4,9 +4,9 @@ description: Saiba mais sobre os diferentes eventos que o Editor universal envia
 exl-id: c9f7c284-f378-4725-a4e6-e4799f0f8175
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fefbb01c786cc00a31602c4646ca8b015e16ed98
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '520'
 ht-degree: 1%
 
 ---
@@ -180,29 +180,6 @@ Carga de resposta
 
 ## Eventos da interface do usuário {#ui-events}
 
-### aue:ui-publish {#ui-publish}
-
-O evento `aue:ui-publish` é acionado quando o conteúdo é publicado (com invocação no nível `BODY`).
-
-A carga é uma lista de IDs de item e seus status de publicação.
-
-### aue:ui-select {#ui-select}
-
-O evento `aue:ui-select` é disparado quando um componente é selecionado.
-
-A carga é a ID do item, as propriedades do item e o tipo do componente selecionado.
-
-```json
-{
-    details: {
-        resource: string;       // resource of the selected
-        prop: string;           // prop of the selected
-        type: string;           // type of the selected
-        selected: boolean;      // was selected or unselected
-    }
-}
-```
-
 ### aue:ui-preview {#ui-preview}
 
 O evento `aue:ui-preview` é disparado quando o modo de edição da página é alterado para **Visualização**.
@@ -271,10 +248,9 @@ A carga está vazia para este evento.
 
 | Evento | Comportamento |
 |---|---|
-| `aue:ui-publish` | Não fazer nada |
 | `aue:ui-select` | Rolar até o elemento selecionado |
-| `aue:ui-preview` | Adicionar `class="adobe-ue-preview"` à tag HTML |
-| `aue:ui-edit` | Adicionar `class=adobe-ue-edit"` à tag HTML |
+| `aue:ui-preview` | Adicionar `class="adobe-ue-preview"` à tag do HTML |
+| `aue:ui-edit` | Adicionar `class=adobe-ue-edit"` à tag do HTML |
 | `aue:ui-viewport-change` | Não fazer nada |
 | `aue:initialized` | Não fazer nada |
 
