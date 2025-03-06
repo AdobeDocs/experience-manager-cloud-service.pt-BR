@@ -4,7 +4,7 @@ description: Publique seus formulários do Edge Delivery Services de forma rápi
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: 744f505c8e97b6ca6947b685ddb1eba41b370cfa
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Publicar o formulário adaptável no Edge Delivery Services
 
-<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> com o nome da organização do GitHub e o nome do repositório. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
+<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email com o nome da sua organização GitHub e o nome do repositório do seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
 
 
 Quando o formulário estiver finalizado e pronto para uso, você poderá publicá-lo para torná-lo acessível aos clientes para coleta e envio de dados. A publicação garante que o formulário esteja disponível no Edge Delivery, permitindo que os usuários interajam com ele facilmente. Esse processo permite que os clientes preencham e enviem o formulário em tempo real, garantindo uma captura de dados eficiente e processamento simplificado.

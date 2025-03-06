@@ -4,7 +4,7 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 964fd32a7dbcb97190d40cb42100d0d66e69a0c4
+source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
 workflow-type: tm+mt
 source-wordcount: '1846'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Introdução ao Edge Delivery Services para AEM Forms usando o Universal Editor (WYSIWYG)
 
-<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a> com o nome da organização do GitHub e o nome do repositório. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
+<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email com o nome da sua organização GitHub e o nome do repositório do seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
 
 
 Na era digital de hoje, formulários amigáveis são essenciais para todas as organizações. O Edge Delivery Services Forms é criado usando o Editor universal, que oferece recursos do WYSIWYG (what-you-see-is-what-you-get, o que você vê é o que você obtém). Ele fornece uma interface moderna e intuitiva para a criação eficiente de formulários.
