@@ -4,9 +4,9 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: c34aedee-e45a-4e2a-ae7f-930bc0cc026f
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: b4ffcddddfcd990c359380071f19b5442dee9eb2
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1112'
 ht-degree: 98%
 
 ---
@@ -67,7 +67,6 @@ Assista ao vídeo Visão geral da versão de abril de 2023 que exibe um resumo d
 * Lançamento de um novo suporte de protocolo (DASH, Dynamic Adaptive Streaming over HTTP) para a transmissão adaptável na entrega de vídeos do Dynamic Media (com CMAF habilitado):
    * A transmissão adaptável (DASH/HLS) garante uma melhor experiência de visualização para vídeos
    * DASH é o protocolo internacional padrão para transmissão de vídeo adaptável e é amplamente adotado no setor
-   * Disponível em todas as regiões; deve ser habilitado pelo tíquete de suporte
 
 * _Instantâneo_ do Dynamic Media: faça experimentos com imagens de teste ou URLs do Dynamic Media para ver o resultado de diferentes modificadores de imagem e avaliar o recurso de Imagem inteligente, que otimiza o tamanho do arquivo (com entrega de WebP e AVIF), a largura de banda da rede e a proporção de pixels do dispositivo. Consulte [Instantâneo do Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=pt-BR).
 
