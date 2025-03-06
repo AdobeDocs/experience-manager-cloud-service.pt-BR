@@ -6,20 +6,18 @@ level: Intermediate
 feature: Adaptive Forms, Foundation Components, Core Components
 hide: true
 hidefromtoc: true
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
 source-wordcount: '873'
 ht-degree: 1%
 
 ---
 
-
 # Usar o painel de realização de valor para analisar tendências de uso de formulários e documentos
 
 <span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email de seu endereço oficial para aem-forms-ea@adobe.com. <span>
 
-![Painel de realização de valor](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
-
+![Painel de Realização de Valores](/help/edge/docs/forms/universal-editor/assets/forms-insights-banner.svg)
 
 Monitorando regularmente as métricas apresentadas no painel &quot;Insights de uso do Forms&quot;, você pode obter insights valiosos sobre o desempenho de formulários, documentos e fragmentos de formulário. Use esses dados para tomar decisões informadas sobre o design do formulário, o gerenciamento de fragmentos e a estratégia geral do formulário.
 
@@ -33,7 +31,7 @@ Para acessar o painel de Insights de uso do Forms:
 1. Navegue até **Forms** > **Forms e Documentos**
 1. Clique em **Painel de Insights**. O painel é aberto em uma nova janela.
 
-   ![Painel de realização de valor](/help/forms/assets/forms-usage-insights.png)
+   ![Painel de Realização de Valores](/help/forms/assets/forms-usage-insights.png)
 
 ## Visão geral
 
