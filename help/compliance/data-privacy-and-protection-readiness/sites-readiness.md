@@ -1,17 +1,17 @@
 ---
-title: Regulamentos de Proteção e Privacidade de Dados - Disponibilidade do Adobe Experience Manager as a Cloud Service Sites
-description: Saiba mais sobre o suporte do Adobe Experience Manager as a Cloud Service Sites a vários Regulamentos de Proteção e Privacidade de Dados, incluindo o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia e como estar em conformidade ao implementar um novo projeto AEM as a Cloud Service.
+title: Regulamentos de proteção e privacidade de dados - Disponibilidade do AEM Sites
+description: Saiba mais sobre o suporte do Experience Manager as a Cloud Service Sites a vários Regulamentos de Proteção e Privacidade de Dados, incluindo o Regulamento Geral sobre a Proteção de Dados da UE (GDPR), a Lei de Privacidade do Consumidor da Califórnia, e como estar em conformidade ao implementar um novo projeto do AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
 feature: Compliance
 role: Admin, Architect, Developer, Leader
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 974f85b91a629ea6d4f34e2066d242c42a04015b
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 96%
+source-wordcount: '989'
+ht-degree: 90%
 
 ---
 
-# Disponibilidade do Adobe Experience Manager as a Cloud Service Sites para Regulamentos de Proteção e Privacidade de Dados {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
+# Regulamentos de disponibilidade da Experience Manager Sites para proteção e privacidade de dados {#aem-sites-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
