@@ -1,14 +1,14 @@
 ---
-title: Painel de realização de valor do AEM Forms
-description: Monitore facilmente os envios de formulários em suas instâncias do AEM Forms com nosso painel de rastreamento intuitivo.
+title: Painel de Realização de Valor do AEM Forms
+description: Monitore facilmente os envios de formulários em suas instâncias do AEM Forms com um painel de rastreamento intuitivo.
 feature: Adaptive Forms, Foundation Components, Core Components
 role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,7 @@ ht-degree: 0%
 
 Bem-vindo ao seu balcão único para entender o valor que seus formulários estão trazendo! Esse painel fornece insights valiosos para otimizar seus formulários, simplificar fluxos de trabalho e, por fim, atingir suas metas mais rapidamente.
 
-Este artigo fornece uma visão geral conceitual do Value Realization Dashboard e seus benefícios. Para obter instruções de uso detalhadas e interpretação de métricas, consulte [Interpretação de insights de Uso de Formulários usando o painel de Realização de Valores](/help/forms/using-the-value-realization-dashboard.md).
-
-
+Este artigo fornece uma visão geral conceitual do Value Realization Dashboard e seus benefícios. Para obter instruções de uso detalhadas e interpretação de métricas, consulte [usar o painel de realização de valor para analisar tendências de uso de formulários e documentos](/help/forms/using-the-value-realization-dashboard.md).
 
 
 ## O que há no painel? {#content-of-dashboard}
@@ -50,7 +48,7 @@ Esse painel é a sua janela para o mundo de uso do formulário. Veja a seguir um
 
 Esse painel permite que você tome decisões orientadas por dados sobre seus formulários. Veja como:
 
-* **Identificar Forms Popular**: altas taxas de envio indicam formulários valiosos. Analise esses itens para obter práticas recomendadas que possam ser replicadas em outros.
+* **Identificar Forms Popular**: altas taxas de envio indicam formulários valiosos. Analise esses formulários para obter as práticas recomendadas a serem replicadas em outros.
 * **Otimizar a Criação de Formulários**: reduza os tempos de criação identificando gargalos. Explore modelos pré-criados ou workflows otimizados.
 * **Aumentar reutilização de fragmentos**: incentive a colaboração e a descoberta de fragmentos reutilizáveis. Bibliotecas de fragmentos bem organizadas podem melhorar significativamente a eficiência.
 
@@ -77,4 +75,4 @@ Lembre-se, este painel é seu aliado! Ao usá-lo de maneira eficaz, você pode t
 
 ## Consulte também:
 
-* [Uso do painel para analisar tendências de uso do Forms e de documentos](/help/forms/using-the-value-realization-dashboard.md)
+* [Usar o painel para analisar as tendências de uso do Forms e dos documentos](/help/forms/using-the-value-realization-dashboard.md)
