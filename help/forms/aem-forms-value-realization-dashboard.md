@@ -6,9 +6,9 @@ role: Admin, Developer, Leader, User
 hide: true
 hidefromtoc: true
 exl-id: 9405ebd4-ae40-4edd-8f74-58eb421ab1b9
-source-git-commit: 08db35af78d46db42e6e2b373f7278753529c37e
+source-git-commit: 09d383638d6caba596d22a7c6b544768de5245a0
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Esse painel é a sua janela para o mundo de uso do formulário. Veja a seguir um
 * **Envios de formulários**: veja as tendências na frequência com que seus formulários estão sendo preenchidos.
 * **Representações de Documentos**: controle o número de documentos renderizados ao longo do tempo.
 * **Criação e publicação do Forms**: monitore a taxa na qual novos formulários estão sendo criados e implantados.
-* **Tempos de Criação e Publicação do Formulário**: analise os tempos médios de criação e publicação de formulários para identificar áreas a serem aprimoradas.
 
 ### Uso do fragmento
 
