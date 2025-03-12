@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '857'
 ht-degree: 1%
 
 ---
@@ -95,12 +95,12 @@ Quando um modelo é criado, ele fica no estado **Rascunho** (para modelos criado
 
 Um modelo deve ser ativado antes de poder ser usado por autores de conteúdo para criar páginas. Se um modelo não for mais necessário, ele poderá ser desativado para que não seja mais exibido no assistente de criação de páginas.
 
-* Selecione o modelo e clique ou toque em **Desabilitar** para desabilitar o modelo.
-* Selecione o modelo e clique ou toque em **Habilitar** para habilitar o modelo.
+* Selecione o modelo e clique em **Desabilitar** para desabilitá-lo.
+* Selecione o modelo e clique em **Habilitar** para habilitá-lo.
 
 ## Publicação {#publish}
 
-Um modelo criado com o editor de modelo só poderá ser usado após a publicação. Selecione o modelo e clique ou toque em **Publish** para publicar.
+Um modelo criado com o editor de modelo só poderá ser usado após a publicação. Selecione o modelo e clique em **Publicar** para publicar.
 
 Os modelos criados com o Universal Editor não precisam ser publicados para serem usados.
 
@@ -117,7 +117,7 @@ Depois de colado, você pode:
 * [Edite o modelo](#edit) para ajustá-lo conforme necessário.
 * [Use a janela de propriedades](#properties) para atualizar o título do modelo.
 * [Habilite o modelo](#enable-disable) para que ele possa ser usado para criar a página.
-* [Publish o modelo](#publish), se necessário.
+* [Publicar o modelo](#publish), se necessário.
 
 >[!TIP]
 >
