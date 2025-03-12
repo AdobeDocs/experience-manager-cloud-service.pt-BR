@@ -4,9 +4,9 @@ description: Usar a ferramenta Transferência de conteúdo para validar as trans
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 feature: Migration
 role: Admin
-source-git-commit: e1089810b3bf3db0cc440bb397e5549ade6eac37
+source-git-commit: 9b05ed38e8eb337b3a07ee2051c6a0d530088af2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1220'
 ht-degree: 1%
 
 ---
@@ -145,13 +145,14 @@ Para exibir essas informações, acesse Cloud Acceleration Manager. Clique no ca
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
-Você verá uma caixa de diálogo com as informações de resumo. Use os ícones de ajuda para ler uma descrição mais completa. Clique no botão **Baixar relatório** para baixar o relatório completo separado por vírgula (CSV).  Observe também que no final deste relatório está o Relatório do usuário, que pode ser usado para o gerenciamento de usuários após a migração.
+Você verá uma caixa de diálogo com as informações de resumo. Use os ícones de ajuda para ler uma descrição mais completa. Para baixar o Relatório de Migração de Entidade de Segurança (CSV) separado por vírgula, selecione **Relatório de Migração de Entidade de Segurança** na lista suspensa em **Baixar um arquivo...** e clique no botão **Download**. Observe também que no final deste relatório está o Relatório do usuário, que pode ser usado para o gerenciamento de usuários após a migração.
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
 
 O relatório de migração principal indicará:
 
 * Cada grupo migrado e o primeiro caminho de conteúdo que o acionou; o grupo também pode estar em outros caminhos, mas somente o primeiro encontrado para um determinado grupo é relatado. Ele também relata se foi encontrado em uma ACL ou em uma política CUG.
+* Cada grupo migrado como um grupo local terá a palavra &quot;local&quot; indicada na linha do grupo.
 * Cada grupo não foi migrado e o motivo da migração.  Normalmente, será por um destes motivos:
    * É um grupo incorporado
    * Já está no sistema de destino
