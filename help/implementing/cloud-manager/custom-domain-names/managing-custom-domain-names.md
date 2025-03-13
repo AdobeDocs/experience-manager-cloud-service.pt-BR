@@ -5,7 +5,7 @@ exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 17%
@@ -21,7 +21,7 @@ O Cloud Manager permite editar, atualizar, substituir, verificar e excluir nomes
 
 No Adobe Cloud Manager, talvez você queira editar uma configuração de nome de domínio personalizada pelos seguintes motivos:
 
-* **Alternar ambientes**: para aplicar a configuração correta, dependendo se você está disponibilizando conteúdo para usuários finais (Publish) ou usuários internos (Autor).
+* **Alternar ambientes**: para aplicar a configuração correta, dependendo se você está disponibilizando conteúdo para usuários finais (Publicação) ou usuários internos (Autor).
 * **Atualizações de segurança**: para atualizar para um certificado SSL mais recente para fins de segurança avançada ou conformidade.
 * **Alterando estratégia de implantação**: para garantir que o certificado SSL correto seja aplicado a um ambiente específico para criptografia e acesso ao site adequados.
 
@@ -39,9 +39,9 @@ No Adobe Cloud Manager, talvez você queira editar uma configuração de nome de
 
 1. Clique em **Editar**.
 
-1. Na caixa de diálogo **Editar configuração da CDN**, faça o seguinte:
+1. Na caixa de diálogo **Editar configuração de domínio**, faça o seguinte:
 
-   * Na lista suspensa **Camada**, selecione a camada (Publish ou Pré-visualização) que deseja usar.
+   * Na lista suspensa **Camada**, selecione a camada (Publicação ou Visualização) que deseja usar.
    * Na lista suspensa **Certificado SSL**, selecione o certificado SSL que deseja usar.
 
 1. Clique em **Atualizar**.
@@ -74,14 +74,14 @@ Consulte também [Adicionar um nome de domínio personalizado](/help/implementin
 
    | Opção Tipo de certificado | Descrição |
    | --- | --- |
-   | Certificado SSL gerenciado por Adobe (DV) | Selecione esse tipo de certificado se quiser usar um certificado DV (Domain Validation). Essa opção é ideal para a maioria dos casos, fornecendo validação básica de domínio. O Adobe gerencia e renova o certificado automaticamente. |
+   | Certificado SSL gerenciado pela Adobe (DV) | Selecione esse tipo de certificado se quiser usar um certificado DV (Domain Validation). Essa opção é ideal para a maioria dos casos, fornecendo validação básica de domínio. O Adobe gerencia e renova o certificado automaticamente. |
    | Certificado SSL gerenciado pelo cliente (OV/EV) | Selecione esse tipo de certificado se pretender usar um certificado SSL EV/OV para proteger o domínio. Essa opção oferece segurança aprimorada com OV (Validação da Organização) ou EV (Validação Estendida). Use se uma verificação mais rigorosa, níveis de confiança mais altos ou controle personalizado dos certificados for necessário. |
 
 1. Na caixa de diálogo **Verificar domínio**, com base no tipo de certificado selecionado, siga um destes procedimentos:
 
    | Se você selecionou o tipo de certificado | Descrição |
    | --- | ---  |
-   | Certificado gerenciado pela Adobe | a. Conclua as [etapas de certificado gerenciado por Adobe](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps). Quando você concluir as etapas na caixa de diálogo **Verificar domínio**, clique em **Verificar**.<ul><li>A verificação de DNS pode levar algumas horas para ser processada devido a atrasos de propagação de DNS.</li><li>A Cloud Manager verifica a propriedade do nome de domínio e atualiza o status na tabela **Configurações de Domínio**. Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.</li>![Verificar status do domínio](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Agora você está pronto para [adicionar um certificado SSL gerenciado por Adobe (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
+   | Certificado gerenciado pela Adobe | a. Conclua as [etapas de certificado gerenciado pela Adobe](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md#adobe-managed-cert-steps). Quando você concluir as etapas na caixa de diálogo **Verificar domínio**, clique em **Verificar**.<ul><li>A verificação de DNS pode levar algumas horas para ser processada devido a atrasos de propagação de DNS.</li><li>A Cloud Manager verifica a propriedade do nome de domínio e atualiza o status na tabela **Configurações de Domínio**. Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.</li>![Verificar status do domínio](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Agora você está pronto para [adicionar um certificado SSL gerenciado pela Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
    | Certificado gerenciado pelo cliente | a. Clique em **OK**.<br>b. Agora você está pronto para [adicionar um certificado SSL gerenciado pelo cliente (OV/EV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>Depois de adicionar o certificado, seu nome de domínio é marcado como verificado na tabela **Configurações de Domínio**. Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.</li></ul><br>![Verificar domínio para um certificado EV/OV gerenciado pelo cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
 
@@ -112,7 +112,7 @@ Um usuário com a função de **Proprietário da empresa** ou **Gerente de impla
 
 1. Na página **Ambientes**, navegue até uma tela de detalhes do ambiente de interesse.
 
-1. Na tabela de nomes de domínio, identifique a linha do nome de domínio personalizado que deseja excluir.
+1. Na tabela Mapeamentos de domínio, identifique a linha do nome de domínio personalizado que deseja excluir.
 
 1. Clique em ![Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) na extremidade direita da linha.
 

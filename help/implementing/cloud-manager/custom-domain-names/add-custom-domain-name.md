@@ -5,15 +5,15 @@ exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: b2852673ad313e5ea6be6dc0ed185d60a46fedeb
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
-source-wordcount: '1020'
+source-wordcount: '1028'
 ht-degree: 13%
 
 ---
 
 
-# Adicionar um nome de domínio personalizado {#adding-cdn}
+# Adicionar um nome de domínio personalizado {#adding-custom-domain-name}
 
 Saiba como adicionar um nome de domínio personalizado usando **Configurações de domínio** no Cloud Manager.
 
@@ -27,17 +27,17 @@ Atenda a esses requisitos antes de adicionar um nome de domínio personalizado n
 
 >[!IMPORTANT]
 >
->Se você usar um CDN gerenciado por Adobe, ainda precisará adicionar seu domínio ao Cloud Manager.
+>Se você usar uma CDN gerenciada pela Adobe, ainda precisará adicionar seu domínio ao Cloud Manager.
 
-## Onde adicionar nomes de domínio personalizados {#where-to-add-cdn}
+## Onde adicionar nomes de domínio personalizados {#where-to-add-custom-domain-name}
 
 Você pode adicionar um nome de domínio personalizado na [página Configurações de domínio](#adding-cdn-settings) do Cloud Manager.
 
-Ao adicionar um nome de domínio personalizado, o domínio é distribuído usando o certificado mais específico e válido. Se vários certificados tiverem o mesmo domínio, o mais recente atualizado será escolhido. A Adobe recomenda que você gerencie certificados de forma que não haja domínios sobrepostos.
+Ao adicionar um nome de domínio personalizado, o domínio é distribuído usando o certificado mais específico e válido. Se vários certificados tiverem o mesmo domínio, o mais recente atualizado será escolhido. A Adobe recomenda que você gerencie certificados de modo que não haja domínios sobrepostos.
 
 As etapas para qualquer método descrito neste documento são baseadas no Fastly. Se você usou uma CDN (Content Delivery Network) diferente, configure seu domínio com a CDN que você escolheu usar.
 
-## Adicionar um nome de domínio personalizado {#adding-cdn-settings}
+## Adicionar um nome de domínio personalizado {#adding-custom-domain-name-settings}
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
@@ -63,26 +63,26 @@ Ao inserir o nome de domínio, não inclua `http://`, `https://` ou espaços.
 
    | Opção Tipo de certificado | Descrição |
    | --- | --- |
-   | Certificado SSL gerenciado por Adobe (DV) | Selecione esse tipo de certificado se quiser usar um certificado DV (Domain Validation). Essa opção é ideal para a maioria dos casos, fornecendo validação básica de domínio. O Adobe gerencia e renova o certificado automaticamente. |
+   | Certificado SSL gerenciado pela Adobe (DV) | Selecione esse tipo de certificado se quiser usar um certificado DV (Domain Validation). Essa opção é ideal para a maioria dos casos, fornecendo validação básica de domínio. O Adobe gerencia e renova o certificado automaticamente. |
    | Certificado SSL gerenciado pelo cliente (OV/EV) | Selecione esse tipo de certificado se pretender usar um certificado SSL EV/OV para proteger o domínio. Essa opção oferece segurança aprimorada com OV (Validação da Organização) ou EV (Validação Estendida). Use se uma verificação mais rigorosa, níveis de confiança mais altos ou controle personalizado dos certificados for necessário. |
 
 1. Na caixa de diálogo **Verificar domínio**, com base no tipo de certificado selecionado, siga um destes procedimentos:
 
    | Se você selecionou o tipo de certificado | Descrição |
    | --- | ---  |
-   | Certificado gerenciado pela Adobe | a. Conclua as [etapas de certificado gerenciado por Adobe](#adobe-managed-cert-steps) abaixo. Ao concluir as etapas, na caixa de diálogo **Verificar domínio**, clique em **Verificar**.<ul><li>A verificação de DNS pode levar algumas horas para ser processada devido a atrasos de propagação de DNS.</li><li>A Cloud Manager verifica a propriedade do nome de domínio e atualiza o status na tabela **Configurações de Domínio**. Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.</li>![Verificar status do domínio](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Agora você está pronto para [adicionar um certificado SSL gerenciado por Adobe (DV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
+   | Certificado gerenciado pela Adobe | a. Conclua as [etapas de certificado gerenciado pela Adobe](#adobe-managed-cert-steps) abaixo. Ao concluir as etapas, na caixa de diálogo **Verificar domínio**, clique em **Verificar**.<ul><li>A verificação de DNS pode levar algumas horas para ser processada devido a atrasos de propagação de DNS.</li><li>A Cloud Manager verifica a propriedade do nome de domínio e atualiza o status na tabela **Configurações de Domínio**. Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.</li>![Verificar status do domínio](/help/implementing/cloud-manager/assets/domain-settings-verified.png)</li></ul>b. Agora você está pronto para [adicionar um certificado SSL gerenciado pela Adobe](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-adobe-managed-ssl-cert).</li></ul> |
    | Certificado gerenciado pelo cliente | a. Clique em **OK**.<br>b. Agora você está pronto para [adicionar um certificado SSL gerenciado pelo cliente (OV/EV)](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#add-customer-managed-ssl-cert).<br>Depois de adicionar o certificado, seu nome de domínio é marcado como verificado na tabela **Configurações de Domínio**. Consulte [Verificar o status do nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) para obter mais detalhes.</li></ul><br>![Verificar domínio para um certificado EV/OV gerenciado pelo cliente](/help/implementing/cloud-manager/assets/verify-domain-customer-managed-step.png) |
 
    >[!NOTE]
    >
-   >Se você usa seu próprio certificado SSL gerenciado pelo cliente (OV/EV ou DV) e pretende usar um ***provedor*** de CDN gerenciado pelo cliente, ignore a adição de um certificado SSL. Em vez disso, vá diretamente para [Adicionar uma configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) quando estiver pronto.
+   >Se você usa seu próprio certificado SSL gerenciado pelo cliente (OV/EV ou DV), não é necessário adicionar um certificado SSL. Essa regra também se aplica se você planeja usar um ***provedor*** de CDN (Rede de Entrega de Conteúdo) gerenciado pelo cliente. Em vez disso, vá diretamente para [Adicionar uma configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) quando estiver pronto.
 
 
-### Etapas do certificado gerenciado por Adobe {#adobe-managed-cert-steps}
+### Etapas do certificado gerenciado pela Adobe {#adobe-managed-cert-steps}
 
 Se você selecionou o tipo de certificado *Adobe managed certificate*, conclua a etapa a seguir na caixa de diálogo **Verificar domínio**.
 
-![etapas de certificado gerenciado Adobe](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
+![etapas de certificado gerenciado pela Adobe](/help/implementing/cloud-manager/assets/cdn/cdn-create-adobe-dv-cert.png)
 
 Para verificar o domínio em uso, é necessário adicionar e verificar um CNAME.
 
@@ -92,7 +92,7 @@ Para definir essas configurações, determine se um registro `CNAME` ou apex dev
 
 >[!NOTE]
 >
->Para CDNs gerenciadas por Adobe, ao usar certificados DV (Domain Validation, validação de domínio), somente sites com validação ACME são permitidos.
+>Para CDNs gerenciadas pela Adobe, ao usar certificados DV (Domain Validation, validação de domínio), somente sites com validação ACME são permitidos.
 
 #### Requisitos {#adobe-managed-cert-dv-requirements}
 
@@ -200,4 +200,5 @@ Now that you created your TXT entry, you can verify your domain name status. Pro
 ><!-- The TXT entry and the CNAME or A Record can be set simultaneously on the governing DNS server, thus saving time. -->
 >
 ><!-- To do this, review the entire process of setting up a custom domain name as detailed in the document [Introduction to custom domain names](/help/implementing/cloud-manager/custom-domain-names/introduction.md) taking special note of the document [help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) and update your DNS settings appropriately. -->
+
 

@@ -5,9 +5,9 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 41a67b0747ed665291631de4faa7fb7bb50aa9b9
+source-git-commit: 5d35610b204cc2e06fefa93e048c16940cf1c47c
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '849'
 ht-degree: 19%
 
 ---
@@ -37,7 +37,7 @@ Os detalhes do status são mostrados. Seu domínio personalizado está pronto pa
 
 >[!NOTE]
 >
->Se você estiver usando um *certificado SSL gerenciado por Adobe* com o domínio, o Cloud Manager acionará automaticamente a verificação quando você clicar em **Verificar** na caixa de diálogo Verificar domínio ao [adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+>Se você estiver usando um *certificado SSL gerenciado pela Adobe* com o domínio, a Cloud Manager acionará automaticamente a verificação quando você clicar em **Verificar** na caixa de diálogo Verificar domínio ao [adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
 >
 >Se você pretende usar um **certificado SSL gerenciado pelo cliente (OV/EV)**, seu domínio será verificado *depois* de você [adicionar o certificado SSL OV/EV](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md).
 
@@ -66,7 +66,7 @@ Esse erro pode ocorrer durante a validação do domínio do certificado EV/OV, m
 
 #### Causa do erro {#cause}
 
-O Fastly bloqueia um domínio para a conta que o registra primeiro, e outras contas devem solicitar permissão para registrar um subdomínio. Além disso, o Fastly permite atribuir somente um domínio apex e subdomínios associados a um serviço e a uma conta do Fastly. Se você tiver uma conta existente do Fastly que vincula o mesmo ápice e subdomínios usados para seus domínios do AEM Cloud Service, esse erro será exibido.
+O Fastly bloqueia um domínio para a conta que o registra primeiro, e outras contas devem solicitar permissão para registrar um subdomínio. Além disso, o Fastly permite atribuir somente um domínio apex e subdomínios associados a um serviço e a uma conta do Fastly. Se você tiver uma conta existente do Fastly que vincula o mesmo ápice e subdomínios usados para os domínios do AEM Cloud Service, esse erro será exibido.
 
 #### Resolução de erro {#resolution}
 
@@ -76,7 +76,7 @@ O erro é corrigido da seguinte maneira:
 
 * Use essa opção para vincular o domínio apex e todos os subdomínios à conta do Fastly no AEM as a Cloud Service. Consulte [Trabalho com domínios na documentação do Fastly](https://docs.fastly.com/en/guides/working-with-domains) para obter mais detalhes.
 
-* Se o domínio apex tiver vários subdomínios para sites AEM as a Cloud Service e não AEM que precisam ser vinculados a diferentes contas Fastly, tente instalar o domínio no Cloud Manager. Esse processo ajuda a gerenciar conexões de subdomínio em diferentes contas do Fastly. Se a instalação do domínio falhar, crie um tíquete de Suporte ao cliente com o Fastly para que o Adobe possa acompanhar com o Fastly em seu nome.
+* Se o domínio apex tiver vários subdomínios para sites da AEM as a Cloud Service AEM e de terceiros que precisam ser vinculados a diferentes contas do Fastly, tente instalar o domínio no Cloud Manager. Esse processo ajuda a gerenciar conexões de subdomínio em diferentes contas do Fastly. Se a instalação do domínio falhar, crie um tíquete de Suporte ao cliente com o Fastly para que a Adobe possa dar seguimento com o Fastly em seu nome.
 
 >[!TIP]
 >
@@ -88,7 +88,7 @@ O erro é corrigido da seguinte maneira:
 
 ## Configurações de CDNs pré-existentes para nomes de domínio personalizados {#pre-existing-cdn}
 
-Se você já tiver uma configuração de CDN para seus nomes de domínio personalizados, uma mensagem informativa será exibida nas páginas **Nomes de Domínio Personalizados** e **Ambiente**. Ele incentiva você a adicionar essas configurações por meio da interface do usuário para que possam ser gerenciadas e visualizadas no Cloud Manager.
+Se você já tiver uma configuração CDN (Content Delivery Network) para seus nomes de domínio personalizados, uma mensagem informativa será exibida nas páginas **Nomes de Domínio Personalizados** e **Ambiente**. Ele incentiva você a adicionar essas configurações por meio da interface do usuário para que possam ser gerenciadas e visualizadas no Cloud Manager.
 
 A mensagem desaparece depois que todas as configurações de ambiente pré-existentes são migradas usando a interface do usuário. Pode levar de 1 a 2 dias úteis para a mensagem desaparecer.
 
