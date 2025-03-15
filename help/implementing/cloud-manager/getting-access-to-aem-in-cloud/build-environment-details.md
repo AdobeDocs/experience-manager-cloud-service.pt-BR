@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f37795b99f7c79aa73615748a0a7df61f9afbdb7
+source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
 workflow-type: tm+mt
-source-wordcount: '1551'
-ht-degree: 29%
+source-wordcount: '1569'
+ht-degree: 27%
 
 ---
 
@@ -49,7 +49,7 @@ O Cloud Manager compila e testa seu código usando um ambiente de compilação e
 
 >[!NOTE]
 >
->Embora o Cloud Manager não defina uma versão específica do `jacoco-maven-plugin`, a versão usada deve ser pelo menos `0.7.5.201505241946`.
+>O Cloud Manager não especifica uma versão específica do `jacoco-maven-plugin`, mas a versão necessária depende da versão do Java do projeto. Para o Java 8, a versão do plug-in deve ser pelo menos `0.7.5.201505241946`, enquanto as versões mais recentes do Java podem exigir uma versão mais recente.
 
 ## Repositórios Maven HTTPS {#https-maven}
 
@@ -88,10 +88,10 @@ Para migrar para a criação com Java 21 ou Java 17, primeiro atualize para a ve
 
 Ao migrar seu aplicativo para uma nova versão de build e versão de tempo de execução do Java, teste completamente nos ambientes de desenvolvimento e preparo antes de implantar na produção.
 
-Recomendamos a seguinte estratégia de implantação:
+A Adobe recomenda a seguinte estratégia de implantação:
 
-1. Execute seu SDK local com o Java 21, que você pode baixar de https://experience.adobe.com/#/downloads, e implante seu aplicativo nele e valide sua funcionalidade. Verifique nos registros se não há erros, o que indica problemas com o carregamento de classe ou tecelagem de código de bytes.
-1. Configure uma ramificação no repositório do Cloud Manager para usar o Java 21 como a versão do Java de tempo de compilação, configure um pipeline DEV para usar essa ramificação e execute o pipeline. Execute seus testes de validação.
+1. Execute seu SDK local com o Java 21, que você pode baixar de https://experience.adobe.com/#/downloads, e implante seu aplicativo nele e valide sua funcionalidade. Verifique os registros de que não há erros, o que indica problemas com o carregamento de classe ou tecelagem de código de bytes.
+1. Configure uma ramificação no repositório do Cloud Manager para usar o Java 21 como a versão do Java em tempo de compilação, configure um pipeline DEV para usar essa ramificação e execute o pipeline. Execute seus testes de validação.
 1. Se estiver bom, configure seu pipeline de preparo/produção para usar o Java 21 como a versão de Java de tempo de compilação e execute o pipeline.
 
 ##### Sobre alguns recursos de tradução {#translation-features}
@@ -118,7 +118,7 @@ Atualize o uso dos pacotes Java `org.apache.groovy` ou `org.codehaus.groovy` par
 * **Versão mínima de Aries SPIFly:**
 Atualize o uso do pacote Java `org.apache.aries.spifly.dynamic.bundle` para a versão 1.3.6 ou mais recente para garantir o suporte para tempos de execução JVM mais recentes.
 
-O AEM Cloud Service SDK é compatível com o Java 21 e pode ser usado para validar a compatibilidade do seu projeto com o Java 21 antes de executar um pipeline do Cloud Manager.
+O AEM Cloud Service SDK é compatível com o Java 21 e permite verificar a compatibilidade do seu projeto com o Java 21 antes de executar um pipeline da Cloud Manager.
 
 * **Editar um parâmetro de tempo de execução:**
 Ao executar o AEM localmente com o Java 21, os scripts de inicialização (`crx-quickstart/bin/start` ou `crx-quickstart/bin/start.bat`) falham devido ao parâmetro `MaxPermSize`. Como solução, remova `-XX:MaxPermSize=256M` do script ou defina a variável de ambiente `CQ_JVM_OPTS`, definindo-a como `-Xmx1024m -Djava.awt.headless=true`.
@@ -127,7 +127,7 @@ Ao executar o AEM localmente com o Java 21, os scripts de inicialização (`crx-
 
 >[!IMPORTANT]
 >
->Quando `.cloudmanager/java-version` está definido como `21` ou `17`, o tempo de execução do Java 21 é implantado. O tempo de execução do Java 21 está programado para implantação gradual em todos os ambientes (não apenas aqueles ambientes cujo código é construído com o Java 11) a partir de terça-feira, 4 de fevereiro de 2025. A implantação começará com sandboxes e ambientes de desenvolvimento e, em seguida, será realizada em todos os ambientes de produção em abril de 2025. Os clientes que desejam adotar o Java 21 runtime *previous* podem entrar em contato com a Adobe em [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
+>Quando `.cloudmanager/java-version` está definido como `21` ou `17`, o tempo de execução do Java 21 é implantado. O tempo de execução do Java 21 está programado para implantação gradual em todos os ambientes (não apenas aqueles ambientes cujo código é construído com o Java 11) a partir de terça-feira, 4 de fevereiro de 2025. As implantações começam com sandboxes e ambientes de desenvolvimento, seguidas por todos os ambientes de produção em abril de 2025. Os clientes que desejam adotar o Java 21 runtime *previous* podem entrar em contato com a Adobe em [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
 
 
 #### Requisitos de tempo de criação {#build-time-reqs}
