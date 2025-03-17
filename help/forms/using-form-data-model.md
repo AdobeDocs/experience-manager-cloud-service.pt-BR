@@ -5,7 +5,7 @@ feature: Adaptive Forms, Form Data Model
 role: Admin, User
 level: Beginner, Intermediate
 exl-id: 827ce457-6585-46fb-8e28-1d970a40d949
-source-git-commit: 7b31a2ea016567979288c7a8e55ed5bf8dfc181d
+source-git-commit: 7c30c56ca7a4d8dbdadb2e54a1b7320477556fa5
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Um Modelo de dados de formulário (FDM) é uma extensão do esquema JSON que voc
 * [Criar Forms adaptável e fragmentos](#create-af)
   <!--* [Create interactive communications and building blocks like text, list, and condition fragments](#create-ic)-->
 * [Visualizar com dados de amostra](#preview-ic)
-* [uso do serviço de modelo de dados de formulário](#prefill)
+* [Uso do serviço de modelo de dados de formulário](#prefill)
 * [Gravar dados do Formulário adaptável enviados de volta nas fontes de dados](#write-af)
 * [Chamar serviços usando regras do Formulário adaptável](#invoke-services)
 
@@ -165,7 +165,7 @@ Além disso, você pode usar a API `guidelib.dataIntegrationUtils.executeOperati
 
 Você pode [invocar um modelo de dados de formulário do editor de regras usando funções personalizadas](/help/forms/rule-editor.md#custom-functions-in-rule-editor-custom-functions). Para chamar o modelo de dados de formulário (FDM), adicione um modelo de dados de formulário ao arquivo de inclui na lista de permissões. Para adicionar um modelo de dados de formulário a uma lista de permissões:
 
-1. Vá para o Experience Manager web console em `https://server:host/system/console/configMgr`.
+1. Vá para o console da Web do Experience Manager em `https://server:host/system/console/configMgr`.
 1. Localize **[!UICONTROL Lista de Permissões de Nível de Formulário Adaptável do Modelo de Dados de Formulário para Invocação de Serviço - Fábrica de Configuração]**.
 1. Clique no ícone ![de adição](/help/forms/assets/Smock_Add_18_N.svg) para adicionar a configuração.
 1. Adicione o **[!UICONTROL Padrão de caminho de conteúdo]** para especificar o local do Forms Adaptável.  Por padrão, o valor é `/content/forms/af/(.*)`, que inclui todo o Forms adaptável. Você também pode especificar o caminho para um Formulário adaptável específico.
@@ -178,7 +178,7 @@ A configuração adicionada é salva na **[!UICONTROL Lista de Permissões de N�
 
 >[!NOTE]
 >
-> Para chamar um modelo de dados de formulário (FDM) no editor de regras usando funções personalizadas por meio de um projeto de arquétipo AEM:
+> Para chamar um modelo de dados de formulário (FDM) no editor de regras usando funções personalizadas por meio de um projeto de arquétipo do AEM:
 >
 >1. [Criar um arquivo de configuração](https://github.com/adobe/aem-core-forms-components/blob/master/it/config/src/main/content/jcr_root/apps/system/config/com.adobe.aemds.guide.factory.impl.AdaptiveFormFDMConfigurationFactoryImpl~core-components-it.cfg.json).
 >1. Definir as propriedades getContentPathPattern e getFormDataModelPathPattern.

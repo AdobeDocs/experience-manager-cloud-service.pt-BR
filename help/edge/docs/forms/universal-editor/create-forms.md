@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
 workflow-type: tm+mt
-source-wordcount: '1016'
-ht-degree: 12%
+source-wordcount: '1069'
+ht-degree: 13%
 
 ---
 
@@ -58,7 +58,13 @@ Para criar um formulário adaptável independente usando o Universal Editor, exe
 
       ![Criar EDS Forms](/help/edge/assets/create-eds-forms.png)
 
+
+      Quando você seleciona um modelo baseado em Edge Delivery Services, o botão **[!UICONTROL Criar]** é habilitado.
+   1. (Opcional) Nas guias **[!UICONTROL Source de Dados]** ou **[!UICONTROL Envio]**, você pode selecionar uma fonte de dados ou uma ação de envio.
+   1. (Opcional) Na guia **[!UICONTROL Entrega]**, é possível especificar uma data de publicação ou cancelamento da publicação para um Formulário adaptável.
+
    1. Clique em **[!UICONTROL Criar]** e o assistente **Criar formulário** será exibido.
+   1. Especifique o **Nome** e o **Título**.
    1. Especifique a **URL do GitHub**. Por exemplo, se o repositório GitHub for nomeado como `edsforms`, ele estiver localizado na conta `wkndforms`, a URL será:
       `https://github.com/wkndforms/edsforms`
    1. Clique em **[!UICONTROL Criar]**.
