@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f24b2672431ecf7b7b0ed11b6dc9b09344946239
+source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 33%
+source-wordcount: '1377'
+ht-degree: 29%
 
 ---
 
@@ -95,6 +95,23 @@ Você também pode clicar em ![Reticências - Mais ícone](https://spectrum.adob
 Você pode ver os detalhes da execução clicando em ![Reticências - Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) novamente e clicando em **[Exibir detalhes](#view-details)**.
 
 Dependendo do tipo de pipeline, talvez seja possível cancelar a execução clicando em ![Reticências - Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) novamente e clicando em **Cancelar**.
+
+## Executar vários pipelines {#run-multiple-pipelines}
+
+Com o Cloud Manager, você pode executar vários pipelines simultaneamente, melhorando a eficiência da implantação para clientes do AEM as a Cloud Service. O recurso **Executar selecionados** permite selecionar vários pipelines e acioná-los para execução simultânea. Ele reduz o esforço manual de execução de pipelines individualmente e otimiza os fluxos de trabalho de criação e implantação.
+
+**Para executar vários pipelines:**
+
+1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione a organização e o programa apropriados.
+1. No menu do lado esquerdo, clique em ![Ícone do fluxo de trabalho ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
+1. Na tabela na página **Pipeline**, marque as caixas de seleção ao lado dos pipelines que deseja executar.
+Se necessário, clique em ![Ícone de filtro, funil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) **Filtros** para classificar pipelines por nome, ambiente ou tipo de código implantado, ou uma combinação dos três.
+1. Ao lado do canto superior direito da página, clique em **Executar selecionados (x)**.
+1. Na caixa de diálogo **Executar pipelines selecionados (x)**, clique em **Executar (x)**.
+
+   O botão **Executar** reflete o número de pipelines que podem continuar. Por exemplo, você pode ter selecionado quatro pipelines, mas um já está em execução. Ou um ambiente vinculado a um pipeline selecionado não existe mais. Nesses casos, o sistema se ajusta de acordo. O botão é atualizado para &quot;Executar (3)&quot; para indicar que três pipelines podem continuar.
+
+1. Os pipelines começam a ser executados e seu status é atualizado na lista **Pipelines**.
 
 ## Editar um pipeline {#editing-pipelines}
 
