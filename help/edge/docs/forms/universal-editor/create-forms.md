@@ -6,10 +6,10 @@ role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: a95b0d4dd6db92e68bdb7059bdd4e0e5be936195
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 13%
+source-wordcount: '1215'
+ht-degree: 12%
 
 ---
 
@@ -52,8 +52,9 @@ Para criar um formulário adaptável independente usando o Universal Editor, exe
 
 1. **Criar um formulário adaptável na instância de autor do AEM Forms**
 
-   1. Acesse a instância do autor do AEM Forms as a Cloud Service.
-   1. Selecione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.1. Selecione **[!UICONTROL Criar]** > **[!UICONTROL Forms Adaptável]**. O Assistente será aberto.
+   1. Faça logon na instância de autor do AEM Forms as a Cloud Service.
+   1. Selecione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
+   1. Selecione **[!UICONTROL Criar]** > **[!UICONTROL Forms Adaptável]**. O Assistente será aberto.
    1. Na guia **Source**, selecione um modelo de formulário baseado no Edge Delivery Services:
 
       ![Criar EDS Forms](/help/edge/assets/create-eds-forms.png)
@@ -150,6 +151,63 @@ Veja como acessar o formulário no Edge Delivery Services:
 A estrutura do URL permanece a mesma para as versões preparadas e ativas. No entanto, o conteúdo exibido é diferente com base no contexto:
 
 ![Exibir formulário publicado](/help/edge/assets/eds-view-publish-form.png)
+
+## Gerenciar formulários
+
+É possível executar várias operações no formulário usando a interface do usuário do AEM Forms.
+
+1. Faça logon na instância de autor do AEM Forms as a Cloud Service.
+1. Selecione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
+
+1. Selecione um formulário e a barra de ferramentas exibirá as seguintes operações que você pode executar no formulário selecionado.
+
+<table>
+ <tbody>
+  <tr>
+   <td><p><strong>Operação</strong></p> </td>
+   <td><p><strong>Descrição</strong></p> </td>
+  </tr>
+  <tr>
+   <td><p>Editar</p> </td>
+   <td><p>Abre o formulário no modo de edição.<br /> <br /> </p> </td>
+  </tr>
+    <tr>
+   <td><p>Propriedades</p> </td>
+   <td><p>Fornece opções para modificar as propriedades do formulário.<br /> <br /> </p> </td>
+  </tr>
+  <td><p>Copiar</p> </td>
+   <td><p> Fornece opções para copiar o formulário e colá-lo no local desejado. <br /> <br /> </p> </td>
+  </tr>
+   <tr>
+   <td><p>Visualização</p> </td>
+   <td><p>Fornece opções para visualizar o formulário como HTML ou executar uma visualização personalizada mesclando dados de um arquivo XML com o formulário. <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Download</p> </td>
+   <td><p>Baixa o formulário selecionado.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Iniciar revisão/Gerenciar revisão</p> </td>
+   <td><p>Permite iniciar e gerenciar uma revisão do formulário selecionado.<br /> <br /> </p> </td>
+  </tr>
+  <!--<tr>
+   <td><p>Add Dictionary</p> </td>
+   <td><p>Generates a dictionary for localizing the selected fragment. For more information, see <a>Localizing Adaptive Forms</a>.<br /> <br /> </p> </td>
+  </tr>-->
+  <tr>
+   <td><p>Publicar/Desfazer publicação</p> </td>
+   <td><p>Publica/cancela a publicação do formulário selecionado.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Excluir</p> </td>
+   <td><p>Exclui o formulário selecionado.<br /> <br /> </p> </td>
+  </tr>
+  <tr>
+   <td><p>Comparar</p> </td>
+   <td><p>Compara dois formulários diferentes para fins de visualização.<br /> <br /> </p> </td>
+  </tr>
+ </tbody>
+</table>
 
 ## Resolução de problemas
 

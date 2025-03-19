@@ -1,17 +1,17 @@
 ---
-title: Como criar o Modelo de dados de formulário (FDM) para um formulário no Universal Editor?
+title: Como integrar o Modelo de dados de formulário (FDM) a um formulário no Universal Editor?
 description: Saiba como criar formulários com base em um modelo de dados de formulário (FDM). Gere e edite dados de amostra para objetos de modelo de dados no FDM.
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: e2259e542df5a12748705af901d073e4486292c4
+exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
+source-git-commit: 381aad580762fe957e1dc1d5824e4d35098f1ca4
 workflow-type: tm+mt
 source-wordcount: '1036'
 ht-degree: 2%
 
 ---
-
 
 # Integrar formulários com o Modelo de dados de formulário no Editor universal
 
@@ -128,7 +128,7 @@ Ao criar um formulário não baseado em esquema, nenhuma fonte de dados é confi
 
    ![Formulário de compilação](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
-   Você também pode adicionar manualmente uma associação de dados a um elemento de formulário especificando-a nas propriedades **Bind Reference** do elemento de formulário.
+   Você precisa adicionar manualmente uma associação de dados a um elemento de formulário especificando-a nas propriedades **Bind Reference** do elemento de formulário.
 Por exemplo, vamos adicionar uma referência de associação de dados à caixa de texto **Nome do animal de estimação** que já está presente no formulário:
 
    ![Adicionar manualmente a ligação de dados para um campo de formulário](/help/edge/docs/forms/universal-editor/assets/non-schema-add-data-binding.png)

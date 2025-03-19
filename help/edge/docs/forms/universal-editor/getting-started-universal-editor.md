@@ -4,9 +4,9 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 882e3e1340a6faaec8b4a8e26ff50007458b244a
+source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ Para integrar:
 
 Pronto! O bloco adaptável do Forms agora faz parte do projeto do AEM. Você pode [começar a criar e adicionar formulários ao seu projeto do AEM](#add-edge-delivery-services-forms-to-aem-site-project).
 
-## Criar AEM Forms usando o WYSIWYG
+## Criar Forms usando o WYSIWYG
 
 É possível abrir o projeto do AEM no Editor universal para criação no WYSIWYG, onde você pode editar o projeto e adicionar a seção Formulário adaptável para incluir formulários do Edge Delivery Services nas páginas do projeto do AEM.
 
