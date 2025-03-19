@@ -4,7 +4,7 @@ description: Inicie sua jornada de migração ao familiarizar-se com as noções
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 feature: Migration
 role: Admin
-source-git-commit: 913b1beceb974243f0aa7486ddd195998d5e9439
+source-git-commit: 08da72724fb8c6e8760ae8013dcf739585ac6903
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 21%
@@ -13,7 +13,7 @@ ht-degree: 21%
 
 # Introdução à Jornada de migração para o AEM as a Cloud Service {#getting-started}
 
-Nesta parte da Jornada de migração do AEM as a Cloud Service, você aprenderá sobre as noções básicas para mover sua instalação local ou do Adobe Managed Services AEM do para a nuvem.
+Nesta parte da Jornada de migração do AEM as a Cloud Service, você aprenderá sobre as noções básicas para mover sua instalação local ou do Adobe Managed Services do AEM para a nuvem.
 
 ## Objetivo {#objective}
 
@@ -33,7 +33,7 @@ Com o AEM as a Cloud Service, suas equipes podem se concentrar em inovar em vez 
 A jornada de migração para o Cloud Service envolve as seguintes fases:
 
 * Comece determinando se a implantação está pronta para ser movida para a AEM as a Cloud Service com a [Fase de preparação](/help/journey-migration/readiness.md). Nesta fase, você também deve se familiarizar com as alterações introduzidas pelo AEM as a Cloud Service.
-* Em seguida, prepare sua nuvem de código e conteúdo com a [Fase de implementação](/help/journey-migration/implementation.md). Nesta fase, você explorará o Adobe de ferramentas que o fornece para facilitar a mudança para a nuvem.
+* Em seguida, prepare sua nuvem de código e conteúdo com a [Fase de implementação](/help/journey-migration/implementation.md). Nesta fase, você explorará as ferramentas que a Adobe oferece para facilitar a migração para a nuvem.
 * Depois que tudo estiver configurado, você poderá executar a migração com a [Fase de ativação](/help/journey-migration/go-live.md).
 * Finalmente, certifique-se de monitorar problemas e melhorar o desempenho após a conclusão da migração, na [Fase de pós-ativação](/help/journey-migration/post-go-live.md).
 
@@ -54,9 +54,9 @@ Você também pode consultar o diagrama abaixo para obter uma visualização mai
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/migration-journey/getting-started#aem-moving-to-aem-guide" text="Migração para o AEM as a Cloud Service"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/sites-cloud-changes.html?lang=pt-BR" text="Alterações importantes no AEM Sites as a Cloud Service"
 
-Além das etapas descritas nesta jornada, o Adobe fornece o Cloud Acceleration Manager, um aplicativo na nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, desde o planejamento até a ativação do Cloud Service. Configure suas equipes para uma migração bem-sucedida com práticas, dicas, documentação e ferramentas recomendadas pela Adobe, para ajudar em cada fase da jornada para o AEM as a Cloud Service.
+Além das etapas descritas nesta jornada, a Adobe fornece o Cloud Acceleration Manager, um aplicativo baseado em nuvem projetado para orientar suas equipes de TI durante toda a jornada de transição, desde o planejamento até a ativação no Cloud Service. Configure suas equipes para uma migração bem-sucedida com práticas, dicas, documentação e ferramentas recomendadas pela Adobe, para ajudar em cada fase da jornada para o AEM as a Cloud Service.
 
-Você pode consultar a [documentação do Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) ou assistir a um [vídeo de introdução](https://experienceleague.adobe.com/?launch=ExperienceManager-A-1-2021.1.migration&amp;recommended=ExperienceManager-A-1-2021.1.migration&amp;lang=en#dashboard/learning) para iniciar sua jornada de migração.
+Você pode consultar a [documentação do Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) ou assistir a um [vídeo de introdução](https://experienceleague.adobe.com/en/playlists/experience-manager-all-move-to-cloud-service#dashboard/learning) para iniciar sua jornada de migração.
 
 ## O que vem a seguir {#what-is-next}
 
