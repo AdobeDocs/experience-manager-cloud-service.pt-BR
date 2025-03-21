@@ -2,14 +2,48 @@
 title: Integrar  [!DNL AEM Assets] ao criar conteúdo para [!DNL Edge Delivery Services]
 description: Saiba como integrar o [!DNL AEM Assets] com [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] com [!DNL Microsoft Word] e [!DNL Google Docs], integrate [!DNL AEM Assets] com [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] com [!DNL Universal Editor] e integrar [!DNL Dynamic Media with OpenAPI capabilities] com [!DNL Microsoft Word] e [!DNL Google Docs].
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 491ba10214c704a4e0004df36142e270a49f65e0
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
 
 # Integrar [!DNL AEM Assets] ao criar conteúdo para [!DNL Edge Delivery Services] {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+         <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Ativos do AEM com UE](/help/assets/assets/EDS2.png)
 
@@ -24,7 +58,7 @@ Após editar o conteúdo, você pode publicá-lo no Edge Delivery Services.
 
 ## Integrando [!DNL AEM Assets] com fluxos de Criação Baseada em Documento para [!DNL Edge Delivery Services] {#integrate-aem-assets-with-document-based-authoring-tools}
 
-Quando o [!DNL AEM Assets] é integrado às ferramentas de Criação Baseada em Documentos, como o [!DNL Microsoft Word] ou o [!DNL Google Docs], ele fornece um seletor de ativos no editor. Use este seletor de ativos para acessar o [!DNL AEM Assets] e inserir ativos aprovados em seu documento.
+Quando o [!DNL AEM Assets] se integra às suas ferramentas de Criação Baseada em Documentos, como o [!DNL Microsoft Word] ou o [!DNL Google Docs], ele fornece um seletor de ativos na sua ferramenta de criação. Use este seletor de ativos para acessar [!DNL AEM Assets] e inserir ativos aprovados em seu conteúdo.
 Se você já tiver um site do [!DNL Edge Delivery Services], consulte a documentação do [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) para saber como integrar o [!DNL AEM Assets] ao seu projeto existente do [!DNL AEM].
 Siga os [Pré-requisitos](#integrate-aem-assets-with-microsoft-word-and-google-docs) e [Integração [!DNL AEM Assets] com as seções do ambiente de Criação Baseada em Documentos](#integrate-aem-assets-with-microsoft-word-or-google-docs-to-use-aem-assets-with-microsoft-word-or-google-docs) se você não tiver um site do [!DNL Edge Delivery Services] para publicar seu conteúdo inclusivo do [!DNL AEM Assets] criado nas ferramentas de criação baseadas em documentos.
 
@@ -60,7 +94,7 @@ Para usar a referência do ativo, você deve ter:
 
 * Qualificação para um ambiente Cloud Service do Assets em que [!DNL Dynamic Media with Open API capabilities] está habilitado.
 * Uma licença do [!DNL Dynamic Media].
-* O [!DNL AEM Assets sidekick plugin] está habilitado com a cópia de referência para ativos de imagem habilitada. Para obter mais detalhes, consulte [isto](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) para Criação Baseada em Documento e consulte [isto](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) para criação baseada em Editor Universal.
+* O [!DNL AEM Assets sidekick plugin] está habilitado com a cópia de referência para ativos de imagem habilitada. Para obter mais detalhes, consulte [esta documentação](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) para Criação Baseada em Documento e consulte [esta documentação](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) para criação baseada em Editor Universal.
 * Assets aprovados. Os ativos aprovados têm `dam:status=Approved` por meio das ações de back-end ou interface do usuário do Assets Cloud Services.
 
 ### Usar ativos entregues usando o [!DNL Dynamic Media with OpenAPI capabilities]{#how-to-use-Dynamic-Media-with-OpenAPI-assets}

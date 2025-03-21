@@ -4,21 +4,50 @@ description: Saiba mais sobre o recurso de Extensibilidade da Interface do Usuá
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: e32cd7b7822a983840377f7e69ac3ed0ceb86e16
+source-git-commit: 2de6352363959f4258c0786910eaef7babe68f15
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
 
 # Habilitar extensibilidade da interface do usuário em [!DNL AEM Assets View] {#AEM-Assets-View-UI-Extensibility}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-O [!DNL AEM Assets View] oferece suporte à extensibilidade da interface do usuário, permitindo que você adicione componentes da interface do usuário personalizada à sua interface do usuário [!DNL Assets View] para fluxos de trabalho específicos e requisitos comerciais que não são atendidos pelos recursos prontos para uso do [!DNL AEM Assets View]. Esse recurso de extensibilidade de interface do usuário do [!DNL AEM Assets View] aumenta sua flexibilidade, permitindo que as organizações adaptem a interface a fluxos de trabalho e requisitos específicos.
-
-Habilite a extensibilidade da interface do usuário em seu [!DNL AEM Assets View] para adicionar componentes personalizados à interface do usuário [!DNL Assets View] para atender a requisitos comerciais específicos que não são atendidos pelos recursos prontos para uso do [!DNL AEM Assets View].\
+O [!DNL AEM Assets View] oferece suporte à extensibilidade da interface do usuário, permitindo que você adicione componentes da interface do usuário personalizada à sua interface do usuário [!DNL Assets View] para fluxos de trabalho específicos e requisitos comerciais que não são atendidos pelos recursos prontos para uso do [!DNL AEM Assets View]. Esse recurso de extensibilidade de interface do usuário do [!DNL AEM Assets View] aumenta sua flexibilidade, permitindo que as organizações adaptem a interface a fluxos de trabalho e requisitos específicos.\
 Você pode adicionar suas extensões no nível do **Ativo**, **Pasta** e **Coleção**. A extensão adicionada é exibida em um painel dedicado na página **Ativo**, **Coleção** ou **Pasta** **[!UICONTROL Detalhes]**.
 
 >[!IMPORTANT]
