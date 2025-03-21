@@ -5,10 +5,10 @@ exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 93%
+source-wordcount: '943'
+ht-degree: 85%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 No início da [jornada do arquiteto de conteúdo headless do AEM](overview.md), a [Introdução](introduction.md) abordou os conceitos básicos e as terminologias relevantes para a modelagem de conteúdo para headless.
 
-Este artigo se baseia nesses conceitos para que você entenda como modelar o conteúdo do seu projeto headless do AEM.
+Este artigo se baseia nesses princípios para que você entenda como modelar o conteúdo para seu projeto do AEM Headless.
 
 ## Objetivo {#objective}
 
@@ -87,9 +87,12 @@ O AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
 * Data e hora
 * Lista discriminada
 * Tags
-* Referência de conteúdo
 * Referência de fragmento
+* Referência de fragmento (UUID)
+* Referência de conteúdo
+* Referência de conteúdo (UUID)
 * Objeto JSON
+* Espaço reservado da guia
 
 >[!NOTE]
 >
@@ -99,11 +102,11 @@ O AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
 
 Dois tipos de dados fornecem referências ao conteúdo fora de um fragmento específico:
 
-* **Referência de conteúdo**
+* **Referência de Conteúdo**/**Referência de Conteúdo (UUID)**
 Isso fornece uma referência simples a outro conteúdo de qualquer tipo.
 Por exemplo, você pode fazer referência a uma imagem em um local especifico.
 
-* **Referência de fragmento**
+* **Referência de fragmento**/**Referência de fragmento (UUID)**
 Isso fornece referências a outros Fragmentos de conteúdo.
 Esse tipo de referência é usado para criar conteúdo aninhado, introduzindo as relações necessárias para modelar o conteúdo.
 O tipo de dados pode ser configurado para permitir que os autores de fragmento:
@@ -113,6 +116,10 @@ O tipo de dados pode ser configurado para permitir que os autores de fragmento:
 >[!NOTE]
 >
 >Também é possível criar referências improvisadas usando links dentro de Blocos de texto.
+
+>[!NOTE]
+>
+>No editor, as referências de UUID especificam o caminho para o recurso referenciado; internamente, essas referências são mantidas como IDs universalmente exclusivas (UUID) que fazem referência aos recursos.
 
 ## Níveis de estrutura (fragmentos aninhados) {#levels-of-structure-nested-fragments}
 

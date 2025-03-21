@@ -5,10 +5,10 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 6306ad88b889197aff377dc0a72ea232cd76ff9c
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 94%
+source-wordcount: '636'
+ht-degree: 71%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 No início da [Jornada do autor de conteúdo do AEM Headless](overview.md), o artigo [Noções básicas da modelagem de conteúdo para headless com AEM](basics.md) abordou os conceitos básicos e a terminologia relevantes à criação para headless.
 
-Este artigo se baseia neles para que você entenda como criar seus próprios Modelos de fragmentos de conteúdo para seu projeto AEM headless.
+Este artigo se baseia nesses princípios para que você entenda como criar seus próprios modelos de fragmento de conteúdo para seu projeto do AEM Headless.
 
 ## Objetivo {#objective}
 
@@ -42,17 +42,33 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Criar Modelos de fragmentos do conteúdo {#creating-content-fragment-models}
 
-Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em **Ferramentas** > **Geral** > **Modelos de fragmentos de conteúdo**.
+Em seguida, os modelos de fragmentos de conteúdo podem ser criados e a estrutura definida.
 
-![Modelos de fragmentos de conteúdo em Ferramentas](assets/cfm-tools.png)
+1. No Console de fragmentos de conteúdo, selecione o painel para Modelos de fragmentos de conteúdo.
 
-Após selecionar isso, navegue até o local do modelo e selecione **Criar**. Aqui você pode inserir vários detalhes principais.
+1. Navegue até a pasta apropriada à sua configuração ou subconfiguração.
 
-A opção **Ativar modelo** é ativada por padrão. Isso significa que seu modelo estará disponível para uso (na criação de fragmentos de conteúdo) assim que você salvá-lo. Você pode desativá-la se desejar — há oportunidades depois para ativar (ou desativar) um modelo existente.
+1. Use **Criar** para abrir a caixa de diálogo **Novo modelo de fragmento de conteúdo**.
 
-![Criar Modelo de fragmento de conteúdo](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+   ![Título e descrição](/help/sites-cloud/administering/content-fragments/assets/cf-managing-content-fragment-models-create.png)
 
-Confirme em **Criar** e você pode então **Abrir** seu modelo para começar a definir a estrutura.
+1. Preencha os detalhes
+
+1. Use **Criar** para salvar o modelo vazio ou **Criar e abrir**.
+
+<!--
+Then the Content Fragments Models can be created and the structure defined. This can be done under **Tools** > **General** > **Content Fragment Models**. 
+
+![Content Fragment Models in Tools](assets/cfm-tools.png)
+
+After selecting this you navigate to the location for your model and select **Create**. Here you can enter various key details.
+
+The option **Enable model** is activated by default. This means that your model is available for use (in creating Content Fragments) as soon as you have saved it. You can deactivate this if you want - there are opportunities later to enable (or disable) an existing model.
+
+![Create Content Fragment Model](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
+
+Confirm with **Create** and you can then **Open** your model to start defining the structure.
+-->
 
 ## Definição de Modelos de fragmentos de conteúdo {#defining-content-fragment-models}
 
@@ -66,7 +82,7 @@ Você pode arrastar as instâncias dos **tipos de dados** para o espaço à esqu
 
 ![Definição de campos](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Após adicionar um tipo de dados, você deve definir a variável **Propriedades** para esse campo. Eles dependem do tipo que está sendo usado. Por exemplo:
+Após adicionar um tipo de dados, você deve definir a variável **Propriedades** para esse campo. Essas propriedades dependem do tipo que está sendo usado. Por exemplo:
 
 ![Propriedades de dados](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -89,7 +105,7 @@ Autores(as) de conteúdo não veem os tipos de dados e propriedades reais usados
 O gerenciamento dos modelos de fragmentos de conteúdo envolve:
 
 * Ativá-los (ou desativá-los): isso os torna disponíveis para autores ao criar Fragmentos de conteúdo.
-* Excluir: a exclusão sempre é necessária, mas é preciso estar ciente de excluir um modelo que já é usado para os Fragmentos de conteúdo, em particular os fragmentos que já foram publicados.
+* Excluir — a exclusão é sempre necessária, mas você precisa estar ciente da exclusão de um modelo que já é usado para fragmentos de conteúdo; em particular, fragmentos que já foram publicados.
 
 ## Publicação {#publishing}
 
@@ -99,7 +115,7 @@ Os modelos de fragmento de conteúdo precisam ser publicados quando/antes de qua
 
 >[!NOTE]
 >
->Se um(a) autor(a) tentar publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
+>Se um autor tentar publicar um fragmento de conteúdo cujo modelo ainda não foi publicado, uma lista de seleção indicará isso e o modelo será publicado com o fragmento.
 
 Assim que um modelo é publicado, ele é *bloqueado* em um modo SOMENTE LEITURA no autor. Isso tem como objetivo impedir alterações que resultariam em erros nos esquemas e consultas existentes da GraphQL, especialmente no ambiente de publicação. É indicado no console por **Bloqueado**.
 
