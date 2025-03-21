@@ -1,12 +1,12 @@
 ---
 title: Utilização de Planilhas para Gerenciar Dados Tabulares
-description: Saiba como usar planilhas para gerenciar dados tabulares para vários valores, como metadados e redirecionamentos para seu AEM com Edge Delivery Services.
+description: Saiba como usar planilhas para gerenciar dados tabulares para vários valores, como metadados e redirecionamentos para seu site do AEM com Edge Delivery Services.
 feature: Edge Delivery Services
 exl-id: 26d4db90-3e4b-4957-bf21-343c76322cdc
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fcbe7d79958301c39c8f894ff03ad39af6aded5b
 workflow-type: tm+mt
-source-wordcount: '1284'
+source-wordcount: '1294'
 ht-degree: 1%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 1%
 
 # Utilização de Planilhas para Gerenciar Dados Tabulares {#tabular-data}
 
-Saiba como usar planilhas para gerenciar dados tabulares para vários valores, como metadados e redirecionamentos para seu AEM com Edge Delivery Services.
+Saiba como usar planilhas para gerenciar dados tabulares para vários valores, como metadados e redirecionamentos para seu site do AEM com Edge Delivery Services.
 
 ## Casos de uso {#use-cases}
 
-Para qualquer AEM com um site de Edge Delivery Services, é necessário manter listas de dados tabulares, como para mapeamentos de valores-chave. Elas podem ser listas de vários valores diferentes, como metadados e redirecionamentos. O Edge Deliver Services permite manter essas listas tabulares usando uma ferramenta intuitiva: a planilha. O AEM traduz essas planilhas em arquivos JSON que podem ser facilmente consumidos pelo seu site ou aplicativo da Web.
+Para qualquer site do AEM com Edge Delivery Services, é necessário manter listas de dados tabulares, como para mapeamentos de valores-chave. Elas podem ser listas de vários valores diferentes, como metadados e redirecionamentos. O Edge Deliver Services permite manter essas listas tabulares usando uma ferramenta intuitiva: a planilha. O AEM traduz essas planilhas em arquivos JSON que podem ser facilmente consumidos pelo seu site ou aplicativo da Web.
 
 Casos de uso comuns incluem:
 
@@ -30,11 +30,11 @@ Casos de uso comuns incluem:
 
 Além disso, você pode [criar planilhas](#own-spreadsheet) de qualquer estrutura para armazenar mapeamentos para fins próprios.
 
-Este documento usa o exemplo de redirecionamentos para ilustrar como criar essas planilhas. Consulte os tópicos vinculados anteriormente na documentação do Edge Delivery Services para obter detalhes sobre cada caso de uso.
+Este documento usa o exemplo de redirecionamentos para ilustrar como criar essas planilhas. Consulte os tópicos vinculados anteriormente na documentação do Edge Delivery Services para obter detalhes de cada caso de uso.
 
 >[!TIP]
 >
->Para obter mais informações sobre como as planilhas em geral funcionam com Edge Delivery Services, consulte o documento [Planilhas e JSON](/help/edge/developer/spreadsheets.md).
+>Para obter mais informações sobre como as planilhas em geral funcionam com o Edge Delivery Services, consulte o documento [Planilhas e JSON](/help/edge/developer/spreadsheets.md).
 
 >[!TIP]
 >
@@ -42,13 +42,13 @@ Este documento usa o exemplo de redirecionamentos para ilustrar como criar essas
 
 ## Pré-requisitos {#prerequisites}
 
-Para criar mapeamentos usando planilhas no projeto AEM com Edge Delivery Services, é necessário criar o site usando o modelo de site mais recente.
+Para criar mapeamentos usando planilhas no seu projeto do AEM com Edge Delivery Services, você precisa ter criado o site usando o modelo de site mais recente.
 
-Consulte o documento [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obter mais informações.
+Consulte o documento [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para obter mais informações.
 
 ## Criação de uma Planilha {#spreadsheet}
 
-Neste exemplo, você criará uma planilha para gerenciar redirecionamentos do AEM com o site Edge Delivery Services. As mesmas etapas se aplicam a [outros tipos de planilha](#other) que você deseja criar.
+Neste exemplo, você criará uma planilha para gerenciar redirecionamentos para o site do AEM com Edge Delivery Services. As mesmas etapas se aplicam a [outros tipos de planilha](#other) que você deseja criar.
 
 1. Entre na sua instância de criação do AEM as a Cloud Service, vá para o console **Sites** e navegue até a raiz do site, que requer uma planilha. Toque ou clique em **Criar** -> **Página**.
 
@@ -83,7 +83,7 @@ Neste exemplo, você criará uma planilha para gerenciar redirecionamentos do AE
 
 ## Importando Dados da Planilha {#importing}
 
-Além de editar planilhas no Editor de páginas AEM, você também pode importar dados de um arquivo CSV.
+Além de editar planilhas no Editor de páginas do AEM, você também pode importar dados de um arquivo CSV.
 
 1. Ao editar sua planilha no AEM, toque ou clique no botão **Carregar**, no canto superior esquerdo da tela.
 1. Na lista suspensa, selecione como deseja importar os dados.
@@ -97,7 +97,7 @@ Uma caixa de diálogo é aberta conforme a importação é processada. Após a c
 >
 >* Os cabeçalhos no arquivo CSV devem corresponder exatamente às colunas na planilha.
 >* A importação do CSV inteiro não modifica os cabeçalhos da coluna, somente as linhas de conteúdo.
->* Se você precisar atualizar as colunas, é necessário fazer isso no Editor de páginas do AEM antes de executar a importação do CSV.
+>* Se você precisar atualizar as colunas, faça isso no Editor de páginas do AEM antes de executar a importação do CSV.
 >* Um arquivo CSV não pode ter mais de 10 MB para importação.
 
 Dependendo da sua seleção de `mode`, você também pode `create`, `replace` ou `append` para planilhas usando um CSV e um comando cURL semelhante ao seguinte.
@@ -115,7 +115,7 @@ curl --request POST \
   --form mode=append
 ```
 
-A chamada retorna uma página de HTML com informações sobre a ID do trabalho.
+A chamada retorna uma página do HTML com informações sobre a ID do trabalho.
 
 ```text
 Message | Job(Id:2024/9/18/15/27/5cb0cacc-585d-4176-b018-b684ad2dfd02_90) created successfully. Please check status at Async Job Status Navigation.
@@ -158,11 +158,11 @@ Para que o AEM possa publicar os dados em sua planilha, você também precisa at
 
 1. Quando terminar de definir os redirecionamentos e atualizar o mapeamento de caminho, retorne ao console **Sites**.
 
-1. Toque ou clique para selecionar a planilha de redirecionamentos criada no console e toque ou clique em **Publish Rápido** na barra de ações para publicar a planilha.
+1. Toque ou clique para selecionar a planilha de redirecionamentos criada no console e, em seguida, toque ou clique em **Publicação rápida** na barra de ações para publicar a planilha.
 
    ![Selecione a planilha no console Sites](assets/tabular-data/tabular-data-select-publish.png)
 
-1. Na caixa de diálogo **Publish Rápido**, toque ou clique em **Publish**.
+1. Na caixa de diálogo **Publicação rápida**, toque ou clique em **Publicar**.
 
    ![Confirmar publicação](assets/tabular-data/tabular-data-quick-publish.png)
 
@@ -180,10 +180,10 @@ A planilha de redirecionamentos agora está publicada e acessível ao público.
 
 Agora que você sabe como criar uma planilha de redirecionamentos, é possível criar qualquer outro tipo de planilha padrão:
 
-* Espaços reservados
-* Metadados
-* Cabeçalhos
-* Configuração
+* [Marcadores de posição](https://www.aem.live/docs/placeholders)
+* [Metadados](https://www.aem.live/docs/bulk-metadata)
+* [Cabeçalhos](https://www.aem.live/docs/custom-headers)
+* [Configuração](https://www.aem.live/docs/configuration) - Como para [invalidação de cache](https://www.aem.live/docs/byo-cdn-adobe-managed#setup-push-invalidation)
 * [Taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md)
 
 Basta seguir as mesmas etapas nas seções [Criar planilha](#spreadsheet) e [Atualizar caminhos.json](#paths-json) e escolher o modelo apropriado e atualizar o arquivo `paths.json` apropriadamente.
@@ -199,7 +199,7 @@ Além disso, você pode [criar sua própria planilha](#own-spreadsheet) com colu
 
 >[!NOTE]
 >
->Não é necessário criar uma planilha para gerenciar a indexação do AEM as a Cloud Service com projetos Edge Delivery Services.
+>Não é necessário criar uma planilha para gerenciar a indexação do AEM as a Cloud Service com projetos do Edge Delivery Services.
 >
 >Se quiser criar seus próprios índices, [siga esta documentação](https://www.aem.live/developer/indexing#setting-up-more-index-configurations) para criar seu próprio arquivo `helix-query.yaml`.
 
