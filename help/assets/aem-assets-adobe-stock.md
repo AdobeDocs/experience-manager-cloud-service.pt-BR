@@ -5,17 +5,51 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2506'
 ht-degree: 4%
 
 ---
 
 # Usar [!DNL Adobe Stock] ativos em [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -215,7 +249,7 @@ Para configurar a conta IMS:
 
 Para configurar o serviço de nuvem [!DNL Adobe Stock]:
 
-1. Na interface de usuário do [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**.
+1. Na interface de usuário do [!DNL Experience Manager], navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços da Nuvem]** > **[!UICONTROL Adobe Stock]**.
 
 1. Na página [!DNL Adobe Stock Configurations], clique em **[!UICONTROL Criar]**.
 
@@ -272,7 +306,7 @@ Você pode criar um grupo de usuários ou atribuir permissões a um grupo de usu
 
    ![permissões de usuário](assets/aem-stock-user-permissions.png)
 
-1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**. Selecione a configuração de nuvem [!DNL Adobe Stock] e clique em **[!UICONTROL Propriedades]**.
+1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços na Nuvem]** > **[!UICONTROL Adobe Stock]**. Selecione a configuração de nuvem [!DNL Adobe Stock] e clique em **[!UICONTROL Propriedades]**.
 
 1. Adicione o grupo de usuários criado à configuração [!DNL Adobe Stock]. Clique em **[!UICONTROL Salvar e fechar]**.
 
@@ -334,7 +368,7 @@ Depois que um ativo [!DNL Adobe Stock] é licenciado em [!DNL Experience Manager
 
 ![Pesquise por [!DNL Adobe Stock] ativos e filtre os resultados do seu espaço de trabalho [!DNL Adobe Experience Manager]](assets/adobe-stock-search-results-workspace.png)
 
-**A.** Pesquise ativos semelhantes aos ativos cuja ID [!DNL Adobe Stock] é fornecida. **B.** Pesquise ativos que correspondem à seleção de forma ou orientação. **C.** Pesquise um dos tipos de ativos com suporte **D.** Abra ou recolha o painel de filtros **E.** Licencie e salve o ativo selecionado em [!DNL Experience Manager] **F.** Salve o ativo em [!DNL Experience Manager] com a marca d&#39;água **G.** Explore ativos no site [!DNL Adobe Stock] que sejam semelhantes ao ativo selecionado **H.** Exiba os ativos selecionados no site [!DNL Adobe Stock] **I.** Número de ativos selecionados dos resultados da pesquisa {11 8}J.**Alternar entre exibição de Cartão e exibição de Lista**
+**A.** Pesquise ativos semelhantes aos ativos cuja ID [!DNL Adobe Stock] é fornecida. **B.** Pesquise ativos que correspondem à seleção de forma ou orientação. **C.** Pesquise por um dos tipos de ativos com suporte **D.** Abra ou recolha o painel de filtros **E.** Licencie e salve o ativo selecionado em [!DNL Experience Manager] **F.** Salve o ativo em [!DNL Experience Manager] com a marca d&#39;água **G.** Explore ativos no site [!DNL Adobe Stock] que sejam semelhantes ao ativo selecionado **H.** Exiba os ativos selecionados no site [!DNL Adobe Stock] **I.** Número de ativos selecionados dos resultados da pesquisa **J.** Alternar entre exibição de Cartão e exibição de Lista
 
 ### Localizar ativos {#find-assets}
 
@@ -384,7 +418,7 @@ Os usuários podem ver as propriedades de ativos licenciados e não licenciados.
 
 * **Usuários não administradores precisam ativar manualmente a [!DNL Adobe Stock] configuração de nuvem**: na janela **[!UICONTROL Preferências do Usuário]**, a **[!UICONTROL Configuração do Stock]** mostra a configuração de nuvem [!DNL Adobe Stock] como habilitada, mas não funciona para um usuário não administrador. O usuário precisa clicar no botão **[!UICONTROL Aceitar]** para ativar a configuração do Stock. Na ausência desta etapa, o sistema reflete uma mensagem de erro ao acessar o **[!UICONTROL Assets]**.
 
-* **O aviso de imagem editorial não é exibido**: ao licenciar uma imagem, os usuários não podem verificar se uma imagem é Somente para Uso Editorial. Para evitar possíveis usos indevidos, os administradores podem desativar o acesso a ativos editoriais da Admin Console.
+* **O aviso de imagem editorial não é exibido**: ao licenciar uma imagem, os usuários não podem verificar se uma imagem é Somente para Uso Editorial. Para evitar possíveis usos indevidos, os administradores podem desativar o acesso a ativos editoriais do Admin Console.
 
 * **Tipo de licença incorreto exibido**: é possível que um tipo de licença incorreto seja exibido em [!DNL Experience Manager] para um ativo. Os usuários podem fazer logon no site [!DNL Adobe Stock] para ver o tipo de licença.
 
@@ -474,7 +508,7 @@ Users can see the properties for both, licensed and unlicensed assets.
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

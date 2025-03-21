@@ -1,25 +1,59 @@
 ---
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: Integrar o seletor de ativos a vários aplicativos de Adobe, não Adobe e de terceiros.
+description: Integrar o seletor de ativos a vários aplicativos da Adobe, que não sejam da Adobe e de terceiros.
 role: Admin, User
 exl-id: 55848de0-aff2-42a0-b959-c771235d9425
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '470'
 ht-degree: 1%
 
 ---
 
-# Integração com um aplicativo não-Adobe {#integrate-asset-selector-non-adobe-app}
+# Integração com um aplicativo que não seja da Adobe {#integrate-asset-selector-non-adobe-app}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-O Seletor de ativos permite a integração usando vários aplicativos de terceiros ou que não sejam de Adobe para que eles trabalhem em conjunto de maneira contínua.
+O Seletor de ativos permite a integração usando vários aplicativos que não sejam da Adobe ou de terceiros para que eles trabalhem em conjunto de maneira contínua.
 
 ## Pré-requisitos {#prereqs-non-adobe-app}
 
-Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos a um aplicativo não-Adobe:
+Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos a um aplicativo que não seja da Adobe:
 
 * [Métodos de comunicação](/help/assets/overview-asset-selector.md#prereqs)
 * imsClientId
@@ -28,11 +62,11 @@ Use os seguintes pré-requisitos se estiver integrando o Seletor de ativos a um 
 * imsOrg
 * apikey
 
-O Seletor de ativos oferece suporte à autenticação para o repositório [!DNL Experience Manager Assets] usando propriedades do Sistema Identity Management (IMS) como `imsScope` ou `imsClientID` quando você o integra com um aplicativo que não seja Adobe.
+O Seletor de ativos oferece suporte à autenticação para o repositório [!DNL Experience Manager Assets] usando propriedades do Identity Management System (IMS) como `imsScope` ou `imsClientID` quando você o integra a um aplicativo que não seja da Adobe.
 
-## Configurar o Seletor de ativos para um aplicativo não-Adobe {#configure-non-adobe-app}
+## Configurar o Seletor de ativos para um aplicativo que não seja da Adobe {#configure-non-adobe-app}
 
-Para configurar o Seletor de ativos para um aplicativo não-Adobe, primeiro registre um tíquete de suporte para provisionamento, seguido das etapas de integração.
+Para configurar o Seletor de ativos para um aplicativo que não seja da Adobe, primeiro você deve registrar um tíquete de suporte para provisionamento, seguido das etapas de integração.
 
 ### Registro de um tíquete de suporte {#log-a-support-ticket}
 
@@ -43,11 +77,11 @@ Etapas para registrar um tíquete de suporte pela Admin Console:
 1. Na descrição, forneça os seguintes detalhes:
 
    * [!DNL Experience Manager Assets] como uma URL [!DNL Cloud Service] (ID do Programa e ID do Ambiente).
-   * Nomes de domínio em que o aplicativo Web não-Adobe está hospedado.
+   * Nomes de domínio em que o aplicativo Web que não é da Adobe está hospedado.
 
 ## Etapas de integração {#non-adobe-app-integration-steps}
 
-Use este exemplo de arquivo `index.html` para autenticação ao integrar o Seletor de ativos a um aplicativo não-Adobe.
+Use este exemplo de arquivo `index.html` para autenticação ao integrar o Seletor de ativos a um aplicativo que não seja da Adobe.
 
 Acesse o pacote do Seletor de ativos usando a Marca `Script`, conforme mostrado na *linha 9* para a *linha 11* do arquivo de exemplo `index.html`.
 
@@ -55,7 +89,7 @@ A *Linha 14* a *linha 38* do exemplo descreve as propriedades do fluxo IMS, como
 
 Como você não tem um `imsToken` gerado, use as funções `registerAssetsSelectorsAuthService` e `renderAssetSelectorWithAuthFlow`, conforme mostrado na linha 40 para a linha 50 do arquivo de exemplo `index.html`. Use a função `registerAssetsSelectorsAuthService` antes de `renderAssetSelectorWithAuthFlow` para registrar `imsToken` com o Seletor de ativos. A [!DNL Adobe] recomenda chamar `registerAssetsSelectorsAuthService` ao instanciar o componente.
 
-Defina a autenticação e outras propriedades relacionadas ao as a Cloud Service do Assets na seção `const props`, conforme mostrado na *linha 54* a *linha 60* do arquivo de exemplo `index.html`.
+Defina a autenticação e outras propriedades relacionadas ao acesso do Assets as a Cloud Service na seção `const props`, conforme mostrado na *linha 54* a *linha 60* do arquivo de exemplo `index.html`.
 
 A variável global `PureJSSelectors`, mencionada em *linha 65*, é usada para renderizar o Seletor de ativos no navegador da Web.
 

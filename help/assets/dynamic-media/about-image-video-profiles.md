@@ -5,27 +5,64 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: 34038d954802b7f8e31441d5c5e4ea90380e7a20
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
 
 # Sobre perfis de imagem e perfis de vídeo do Dynamic Media{#about-dm-image-video-profiles}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
 Um Perfil de imagem ou Perfil de vídeo é uma fórmula para quais opções aplicar aos ativos que você faz upload em uma pasta. Por exemplo, você pode especificar qual codificação de vídeo aplicar aos ativos de vídeo do Dynamic Media que você carrega. Ou qual perfil de imagem aplicar aos ativos de imagem do Dynamic Media para cortá-los corretamente.
 
-No Dynamic Media, você pode criar dois tipos de perfis, que são abordados detalhadamente nos seguintes links:
+No Dynamic Media, você pode criar dois tipos de perfis, que são abordados em detalhes nos seguintes links:
 
 * [Perfis de imagem do Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
-* [Perfis de vídeo Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
+* [Perfis de vídeo do Dynamic Media](/help/assets/dynamic-media/video-profiles.md)
 
 Consulte também [Perfis de metadados](/help/assets/metadata-profiles.md).
 
 Você deve ter direitos de administrador para criar, editar e excluir Perfis de imagem do Dynamic Media ou Perfis de vídeo do Dynamic Media.
 
-Depois de criar o Perfil de imagem ou o Perfil de vídeo, atribua-o a uma ou mais pastas que você usa para ativos do Dynamic Media recém-carregados.
+Depois de criar o Perfil de imagem ou o Perfil de vídeo, você o atribui a uma ou mais pastas que usa para ativos do Dynamic Media recém-carregados.
 
 Consulte também [Práticas recomendadas para organizar sua Assets digital para usar Perfis de processamento](/help/assets/organize-assets.md).
 
@@ -36,21 +73,21 @@ Consulte também [Práticas recomendadas para organizar sua Assets digital para 
 >
 >O mesmo é verdadeiro mesmo quando você move ativos entre duas pastas que têm o mesmo perfil atribuído a elas.
 
-## Reprocessar ativos do Dynamic Media em uma pasta {#reprocessing-assets}
+## Reprocessamento de ativos do Dynamic Media em uma pasta {#reprocessing-assets}
 
-Você pode reprocessar ativos em uma pasta que já tenha um Perfil de imagem do Dynamic Media existente ou um Perfil de vídeo do Dynamic Media que você alterou posteriormente.
+Você pode reprocessar ativos em uma pasta que já tenha um Perfil de imagem do Dynamic Media ou um Perfil de vídeo do Dynamic Media que você alterou posteriormente.
 
-Por exemplo, suponha que você criou um Perfil de imagem do Dynamic Media e o atribuiu a uma pasta. Todos os ativos de imagem carregados na pasta automaticamente tinham o Perfil de imagem aplicado aos ativos. No entanto, mais tarde, você decide adicionar uma nova taxa de corte inteligente ao Perfil de imagem. Agora, em vez de ter que selecionar e recarregar os ativos para a pasta novamente, você simplesmente executa o fluxo de trabalho *Reprocessamento do Dynamic Media*.
+Por exemplo, suponha que você tenha criado um Perfil de imagem de mídia dinâmica e o atribuído a uma pasta. Todos os ativos de imagem carregados na pasta automaticamente tinham o Perfil de imagem aplicado aos ativos. No entanto, mais tarde, você decide adicionar uma nova taxa de corte inteligente ao Perfil de imagem. Agora, em vez de precisar selecionar e recarregar os ativos na pasta novamente, basta executar o fluxo de trabalho *Reprocessamento do Dynamic Media*.
 
 Você pode executar o fluxo de trabalho de reprocessamento em um ativo cujo processamento falhou pela primeira vez. Mesmo que você não tenha editado um Perfil de imagem ou Perfil de vídeo, ou já tenha aplicado um Perfil de imagem ou Perfil de vídeo, ainda será possível executar o fluxo de trabalho de reprocessamento em uma pasta de ativos a qualquer momento.
 
-Como opção, é possível ajustar o tamanho do lote do fluxo de trabalho de reprocessamento de um padrão de 50 ativos até 1000 ativos. Quando você executa o fluxo de trabalho _Reprocessamento do Dynamic Media_ em uma pasta, os ativos são agrupados em lotes e depois enviados ao servidor do Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados em [!DNL Adobe Experience Manager]. Se o tamanho do lote for grande, você pode enfrentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, poderá causar muitas viagens de ida e volta para o servidor do Dynamic Media.
+Como opção, é possível ajustar o tamanho do lote do fluxo de trabalho de reprocessamento de um padrão de 50 ativos até 1000 ativos. Ao executar o fluxo de trabalho _Reprocessamento do Dynamic Media_ em uma pasta, os ativos são agrupados em lotes e depois enviados ao servidor do Dynamic Media para processamento. Após o processamento, os metadados de cada ativo em todo o conjunto de lotes são atualizados em [!DNL Adobe Experience Manager]. Se o tamanho do lote for grande, você pode enfrentar um atraso no processamento. Ou, se o tamanho do lote for muito pequeno, isso poderá causar muitas viagens de ida e volta para o servidor do Dynamic Media.
 
 Consulte [Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento](#adjusting-load).
 
 >[!NOTE]
 >
->Se você estiver executando uma migração em massa de ativos do Dynamic Media Classic para o [!DNL Experience Manager], habilite o Agente de replicação de migração no servidor do Dynamic Media. Quando a migração for concluída, desative o agente.
+>Se você estiver executando uma migração em massa de ativos do Dynamic Media Classic para o [!DNL Experience Manager], habilite o agente de replicação de migração no servidor do Dynamic Media. Quando a migração for concluída, desative o agente.
 >
 >O agente de publicação de migração deve ser desativado no servidor do Dynamic Media para que o fluxo de trabalho de reprocessamento funcione conforme esperado.
 
@@ -62,7 +99,7 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 **Para reprocessar ativos do Dynamic Media em uma pasta:**
 
-1. No [!DNL Experience Manager], na página do Assets, navegue até uma pasta de ativos que tenha um Perfil de Imagem ou um Perfil de Vídeo atribuído a ele e para o qual você deseja aplicar o fluxo de trabalho **Reprocessamento do Dynamic Media**.
+1. No [!DNL Experience Manager], na página do Assets, navegue até uma pasta de ativos que tenha um Perfil de Imagem ou um Perfil de Vídeo atribuído a ele e para o qual você deseja aplicar o fluxo de trabalho **Reprocessamento de Dynamic Media**.
 
    As pastas que têm um Perfil de imagem ou Perfil de vídeo atribuído a elas têm o nome do perfil exibido logo abaixo do nome da pasta na Exibição de cartão.
 
@@ -78,10 +115,10 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    ![Captura de tela do Assets no Experience Manager mostrando uma pasta selecionada de ativos, a lista suspensa Linha do tempo destacada, o botão Iniciar fluxo de trabalho destacado e o ícone de carrinho à direita do campo Comentário também destacado](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 
 1. Selecione **[!UICONTROL Iniciar Fluxo de Trabalho]**.
-1. Na lista suspensa **[!UICONTROL Iniciar Fluxo de Trabalho]**, escolha **[!UICONTROL Reprocessar Dynamic Media]**.
+1. Na lista suspensa **[!UICONTROL Iniciar Fluxo de Trabalho]**, escolha **[!UICONTROL Reprocessamento do Dynamic Media]**.
 1. (Opcional) No campo de texto **Inserir título do fluxo de trabalho**, digite um nome para o fluxo de trabalho. Você pode usar o nome para fazer referência à instância do workflow, se necessário.
 
-   ![Captura de tela da interface de usuário da Linha do Tempo com a opção &quot;Dynamic Media Reprocess&quot; selecionada na lista suspensa Iniciar Fluxo de Trabalho, e o botão Iniciar realçado](/help/assets/dynamic-media/assets/reprocess-assets2.png).
+   ![Captura de tela da interface de usuário da Linha do Tempo com a opção &quot;Reprocessamento do Dynamic Media&quot; selecionada na lista suspensa Iniciar Fluxo de Trabalho e o botão Iniciar realçado](/help/assets/dynamic-media/assets/reprocess-assets2.png).
 
 1. Selecione **[!UICONTROL Iniciar]** e **[!UICONTROL Confirmar]**.
 
@@ -89,18 +126,18 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 
 ### Ajustar o tamanho do lote do fluxo de trabalho de reprocessamento (opcional) {#adjusting-load}
 
-(Opcional) O tamanho de lote padrão no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é determinado pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você tem muitos arquivos em um único trabalho de reprocessamento. Portanto, o banner de processamento permanece nos ativos [!DNL Experience Manager] por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno - 1 MB ou menos - o Adobe recomenda que você aumente o valor para vários 100, mas nunca mais do que um 1000. Se o tamanho médio do arquivo for centenas de megabytes, a Adobe recomenda que você reduza o tamanho do lote para 10.
+(Opcional) O tamanho de lote padrão no fluxo de trabalho de reprocessamento é de 50 ativos por trabalho. Esse tamanho ideal do lote é determinado pelo tamanho médio do ativo e pelos tipos MIME de ativos nos quais o reprocessamento é executado. Um valor mais alto significa que você tem muitos arquivos em um único trabalho de reprocessamento. Portanto, o banner de processamento permanece nos ativos [!DNL Experience Manager] por mais tempo. No entanto, se o tamanho médio do arquivo for pequeno - 1 MB ou menos - a Adobe recomenda aumentar o valor para vários 100, mas nunca mais do que 1000. Se o tamanho médio do arquivo for de centenas de megabytes, a Adobe recomenda que você reduza o tamanho do lote para 10.
 
 **Para ajustar opcionalmente o tamanho do lote do fluxo de trabalho de reprocessamento:**
 
 1. Em [!DNL Experience Manager], selecione **[!UICONTROL Adobe Experience Manager]** para acessar o console de navegação global e, em seguida, selecione o ícone **[!UICONTROL Ferramentas]** (martelo) > **[!UICONTROL Fluxo de trabalho > Modelos]**.
-1. Na página Modelos de fluxo de trabalho, na Exibição de cartão ou na Exibição de lista, selecione **[!UICONTROL Reprocessamento do Dynamic Media]**.
+1. Na página Modelos de fluxo de trabalho, no Modo de exibição de cartão ou no Modo de exibição de lista, selecione **[!UICONTROL Reprocessamento do Dynamic Media]**.
 
-   ![Captura de tela da página Modelos de Fluxo de Trabalho com o fluxo de trabalho &quot;Reprocessamento do Dynamic Media&quot; selecionado na exibição Cartão do Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
+   ![Captura de tela da página Modelos de Fluxo de Trabalho com o fluxo de trabalho &quot;Reprocessamento de Dynamic Media&quot; selecionado na exibição Cartão do Experience Manager](/help/assets/dynamic-media/assets/reprocess-assets7.png).
 
-1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**. Uma nova guia do navegador abre a página do modelo de fluxo de trabalho de Reprocessamento do Dynamic Media.
-1. Na página do fluxo de trabalho Reprocessamento do Dynamic Media, próximo ao canto superior direito, selecione **[!UICONTROL Editar]** para &quot;desbloquear&quot; o fluxo de trabalho.
-1. No fluxo de trabalho, selecione o componente Scene7 Batch Upload para abrir a barra de ferramentas e selecione **[!UICONTROL Configurar]** na barra de ferramentas.
+1. Na barra de ferramentas, selecione **[!UICONTROL Editar]**. Uma nova guia do navegador abre a página de modelo de fluxo de trabalho de Reprocessamento do Dynamic Media.
+1. Na página de fluxo de trabalho Reprocessamento de Dynamic Media, próximo ao canto superior direito, selecione **[!UICONTROL Editar]** para &quot;desbloquear&quot; o fluxo de trabalho.
+1. No fluxo de trabalho, selecione o componente de Carregamento em lote do Scene7 para abrir a barra de ferramentas e selecione **[!UICONTROL Configurar]** na barra de ferramentas.
 
    ![Captura de tela do componente &quot;Carregamento em lote do Scene7&quot; na página &quot;Reprocessamento do Dynamic Media&quot; com o ponteiro do mouse sobre o ícone &quot;Configurar&quot;](/help/assets/dynamic-media/assets/reprocess-assets8.png).
 
@@ -109,14 +146,14 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Selecione **[!UICONTROL Avanço do manipulador]** se o seu manipulador avançar para a próxima etapa.
    * No campo **[!UICONTROL Tempo limite]**, insira o tempo limite do processo externo (segundos).
    * No campo **[!UICONTROL Período]**, insira um intervalo de sondagem (segundos) para testar a conclusão do processo externo.
-   * No **[!UICONTROL Campo de lote]**, insira o número máximo de ativos (50-1000) a serem processados em um trabalho de carregamento de processamento em lotes do servidor Dynamic Media.
+   * No **[!UICONTROL Campo de lote]**, insira o número máximo de ativos (50-1000) a serem processados em um trabalho de carregamento de processamento em massa do servidor Dynamic Media.
    * Selecione **[!UICONTROL Avançar no tempo limite]** se desejar avançar quando o tempo limite for atingido. Desmarque se deseja continuar na caixa de entrada quando o tempo limite for atingido.
 
    ![Captura de tela da página &quot;Carregamento em lote para o Scene7 - Propriedades da etapa&quot;](/help/assets/dynamic-media/assets/reprocess-assets3.png).
 
 1. No canto superior direito da caixa de diálogo **[!UICONTROL Carregamento em lote para o Scene7 - Propriedades da etapa]**, selecione **[!UICONTROL Concluído]**.
 
-1. No canto superior direito da página do modelo de fluxo de trabalho Reprocessamento do Dynamic Media, selecione **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução de fluxo de trabalho foi sincronizado com êxito e está pronto para reprocessar ativos em uma pasta.
+1. No canto superior direito da página do modelo de fluxo de trabalho de Reprocessamento do Dynamic Media, selecione **[!UICONTROL Sincronizar]**. Quando você vê **[!UICONTROL Sincronizado]**, o modelo de tempo de execução de fluxo de trabalho foi sincronizado com êxito e está pronto para reprocessar ativos em uma pasta.
 
    ![Captura de tela do Assets no Experience Manager mostrando uma pasta selecionada de ativos, a lista suspensa Linha do tempo destacada, o botão Iniciar fluxo de trabalho destacado e o ícone de carrinho à direita do campo Comentário também destacado](/help/assets/dynamic-media/assets/reprocess-assets1.png).
 

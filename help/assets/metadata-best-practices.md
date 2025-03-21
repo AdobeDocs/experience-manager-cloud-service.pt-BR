@@ -4,9 +4,9 @@ description: Saiba mais sobre as práticas recomendadas de metadados para gerenc
 role: User, Admin
 exl-id: d90519df-55a6-4e23-81ad-ff2365d71c0d
 feature: Metadata, Best Practices
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1399'
+source-wordcount: '1427'
 ht-degree: 0%
 
 ---
@@ -18,8 +18,39 @@ experience manager metadata-->
 
 # Gerenciamento de metadados e práticas recomendadas {#metadata-best-practices}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Para destacar sua empresa e atrair mais clientes, é fundamental utilizar recursos visuais de alta qualidade, como imagens, vídeos e outros ativos digitais. Para isso, é necessário um processo que permita adicionar metadados a todos os ativos digitais, tornando-os facilmente pesquisáveis. Os metadados são os dados que fornecem detalhes essenciais sobre ativos digitais, incluindo o nome, o tipo, o local em um repositório, a data de modificação e as tags associadas do ativo. Os metadados simplificam o gerenciamento de ativos, melhoram a pesquisabilidade e a acessibilidade e garantem o controle eficaz de versões.
 
@@ -113,11 +144,11 @@ Estas são algumas das práticas recomendadas:
 * **Evite valores duplicados:** se você tiver uma coleção de imagens de uma campanha de marketing, use nomes consistentes e evite duplicatas.<br>
 Por exemplo, em vez de usar nomes duplicados como *campaign_image_001* e *campaign_image_002*, implemente uma convenção de nomenclatura sistemática, como *event_promotion* e *product_launch*, garantindo uma identificação clara e ordenada.
 
-* **Usar vocabulários controlados de maneira eficaz:** implemente vocabulários controlados empregando termos padronizados para marcas. Saiba como implementar a [Estrutura de Marcação de AEM](/help/implementing/developing/introduction/tagging-framework.md) de maneira eficaz.  <br>
+* **Usar vocabulários controlados de maneira eficaz:** implemente vocabulários controlados empregando termos padronizados para marcas. Saiba como implementar a [Estrutura de Marcação do AEM](/help/implementing/developing/introduction/tagging-framework.md) de maneira eficaz.  <br>
 Por exemplo, use de maneira consistente termos como *product_launch* ou *event_promotion* ao marcar imagens com temas para manter a sequência sistemática.
 
 * **Manter precisão e integridade:** Para manter a consistência dos metadados, precisão, integridade e alinhamento em várias fontes são cruciais.
-Por exemplo, ao adicionar metadados a um documento PDF, verifique se os detalhes como nomes de autores e palavras-chave são precisos e completos.
+Por exemplo, ao adicionar metadados a um documento do PDF, verifique se os detalhes como nomes de autores e palavras-chave são precisos e completos.
 
 #### Vídeo: adicionar metadados em massa aos ativos
 
@@ -169,4 +200,4 @@ Examine a cadeia de fornecimento de conteúdo para encontrar fontes de metadados
 
 Comunicar antecipadamente os objetivos, os progressos, os marcos e os desafios para receber contribuições e cooperação de todas as partes interessadas. Estimule a colaboração em toda a organização para criar processos eficientes e metadados valiosos.
 
-Saiba mais sobre [metadados e seus conceitos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) para gerenciar efetivamente os metadados Experience Manager.
+Saiba mais sobre [metadados e seus conceitos relacionados](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-concepts.html) para gerenciar efetivamente os metadados do Experience Manager.

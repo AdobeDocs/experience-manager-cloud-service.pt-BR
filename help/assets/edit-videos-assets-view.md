@@ -4,19 +4,53 @@ description: Edite vídeos usando  [!DNL Adobe Express] opções viabilizadas pe
 role: User
 exl-id: 42b25935-e2ff-444f-97c8-b4ed56f3ef9e
 feature: Best Practices, Video, Interactive Videos
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 17%
+source-wordcount: '825'
+ht-degree: 16%
 
 ---
 
 # Editar vídeos em [!DNL Assets view] {#edit-videos}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-Criar variações de conteúdo de vídeo é fácil para usuários do Assets com as [!DNL Adobe Express] ações rápidas incorporadas para vídeo. As ações rápidas no [!DNL Assets view] com a tecnologia [!DNL Adobe Express] fornecem opções de edição de vídeo intuitivas, como recortar vídeo, redimensionar vídeo, aparar vídeo e converter vídeo em GIF.
+Criar variações de conteúdo de vídeo é fácil para usuários do Assets com as [!DNL Adobe Express] ações rápidas incorporadas para vídeo. As ações rápidas no [!DNL Assets view] com a tecnologia [!DNL Adobe Express] fornecem opções de edição de vídeo intuitivas, como recortar vídeo, redimensionar vídeo, aparar vídeo e converter vídeo para o GIF.
 
 Para editar um vídeo, vá para os detalhes do vídeo e clique em [!UICONTROL Editar Vídeo]. Como alternativa, selecione o ativo, clique em detalhes e clique no ícone ![tesoura](assets/do-not-localize/cut.svg), disponível no painel direito. Após editar um vídeo, você pode salvá-lo como uma nova versão ou como um novo ativo.
 
@@ -39,7 +73,7 @@ Você pode eliminar partes indesejadas do vídeo usando as ações rápidas [!DN
 5. Clique em **[!UICONTROL Aplicar]**.
    ![cortar vídeo com o Adobe Express](assets/adobe-express-crop-video.png)
 
-   O vídeo cortado está disponível para download. Você pode salvar o ativo editado como uma nova versão do mesmo ativo ou salvá-lo como um novo ativo. ![Salvar vídeo com Adobe Express](assets/adobe-express-save-video.png)
+   O vídeo cortado está disponível para download. Você pode salvar o ativo editado como uma nova versão do mesmo ativo ou salvá-lo como um novo ativo. ![Salvar vídeo com o Adobe Express](assets/adobe-express-save-video.png)
 
 ### Redimensionar vídeo {#resize-video-using-express}
 
@@ -51,7 +85,7 @@ O conteúdo final do vídeo no DAM geralmente precisa ser redimensionado para di
 4. Dimensione o vídeo, se necessário, usando o campo **[!UICONTROL Escala do vídeo]**.
 5. Você pode optar por ativar ou desativar o som do vídeo.
 6. Clique em **[!UICONTROL Aplicar]** para aplicar as alterações.
-   ![Redimensionamento de vídeo com Adobe Express](assets/adobe-express-resize-video.png)
+   ![Redimensionamento de vídeo com o Adobe Express](assets/adobe-express-resize-video.png)
 
 Seu vídeo redimensionado está disponível para download. É possível salvar o ativo editado como uma nova versão do mesmo ativo ou como um novo ativo.
 
@@ -65,23 +99,23 @@ Se você precisar usar um clipe de um vídeo maior, poderá usar a função **[!
 4. Selecione as dimensões apropriadas na lista suspensa **[!UICONTROL Tamanho]**.
 5. Você pode optar por ativar ou desativar o som do vídeo.
 6. Clique em **[!UICONTROL Aplicar]** para aplicar as alterações.
-   ![Redimensionamento de vídeo com Adobe Express](assets/adobe-express-trim-video.png)
+   ![Redimensionamento de vídeo com o Adobe Express](assets/adobe-express-trim-video.png)
 
 O vídeo reduzido está disponível para download. É possível salvar o ativo editado como uma nova versão do mesmo ativo ou como um novo ativo.
 
 ### Converter vídeo em GIF {#convert-mp4-to-gif-using-express}
 
-Você pode converter rapidamente um vídeo MP4 em um formato GIF usando Adobe Express. Execute as seguintes etapas:
+Você pode converter rapidamente um vídeo MP4 em um formato GIF usando o Adobe Express. Execute as seguintes etapas:
 
 1. Selecione um vídeo e clique em **[!UICONTROL Editar]**.
-2. Clique em **[!UICONTROL Converter em GIF]** nas ações rápidas disponíveis no painel esquerdo.
+2. Clique em **[!UICONTROL Converter em GIF]** a partir das ações rápidas disponíveis no painel esquerdo.
 3. Selecione o tamanho de arquivo apropriado com base na qualidade desejada. Além disso, escolha a orientação de paisagem, retrato ou quadrado.
 4. Arraste as alças nos cantos do vídeo para criar o recorte desejado.
 5. Clique em **[!UICONTROL Aplicar]**.
 
    ![Converter vídeo em GIF com Adobe Express](assets/adobe-express-convert-video-to-gif.png)
 
-O vídeo está disponível em formato GIF para download. É possível salvar o ativo editado como uma nova versão do mesmo ativo ou como um novo ativo.
+O vídeo está disponível no formato GIF para download. É possível salvar o ativo editado como uma nova versão do mesmo ativo ou como um novo ativo.
 
 ## Limitações {#limitations-video-adobe-express}
 

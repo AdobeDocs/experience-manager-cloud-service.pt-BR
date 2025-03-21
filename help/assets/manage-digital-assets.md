@@ -6,17 +6,51 @@ mini-toc-levels: 3
 feature: Asset Management, Publishing,Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4323'
 ht-degree: 10%
 
 ---
 
 # Gerenciar ativos {#manage-assets}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -31,8 +65,8 @@ Ao organizar uma coleção de ativos, por exemplo, todas as imagens do `Nature`,
 
 >[!NOTE]
 >
->* Não há suporte para o compartilhamento de uma pasta Assets do tipo `sling:OrderedFolder` ao compartilhar com o Experience Cloud. Para compartilhar uma pasta, não selecione [!UICONTROL Ordenados] ao criar uma pasta.
->* O Experience Manager não permite usar a palavra `subassets` como o nome de uma pasta. É uma palavra-chave reservada para o nó que contém subativos para ativos compostos
+>* Não há suporte para o compartilhamento de uma pasta Assets do tipo `sling:OrderedFolder` ao compartilhar com a Experience Cloud. Para compartilhar uma pasta, não selecione [!UICONTROL Ordenados] ao criar uma pasta.
+>* A Experience Manager não permite usar a palavra `subassets` como o nome de uma pasta. É uma palavra-chave reservada para o nó que contém subativos para ativos compostos
 
 1. Navegue até o local na pasta de ativos digitais em que deseja criar uma pasta. No menu, clique em **[!UICONTROL Criar]**. Selecione **[!UICONTROL Nova Pasta]**.
 1. No campo **[!UICONTROL Título]**, forneça um nome de pasta. Por padrão, o DAM usa o título fornecido como o nome da pasta. Depois que a pasta for criada, você poderá substituir o padrão e especificar outro nome de pasta.
@@ -49,7 +83,7 @@ Consulte [adicionar ativos digitais ao Experience Manager](add-assets.md).
 
 ## Extrair arquivos ZIP {#extract-zip-archives}
 
-Selecione arquivos ZIP que são gerenciados no Experience Manager e extraia os arquivos diretamente no Experience Manager sem baixá-los.
+Selecione arquivos ZIP gerenciados no Experience Manager e extraia os arquivos diretamente no Experience Manager sem baixá-los.
 
 Para extrair os arquivos ZIP, execute as seguintes etapas:
 
@@ -255,7 +289,7 @@ As outras propriedades e informações de metadados são retidas. Uma cópia par
 
    >[!NOTE]
    >
-   >As anotações de vídeo são suportadas apenas em navegadores com formatos de vídeo compatíveis com o HTML5. Além disso, dependendo do navegador, diferentes formatos de vídeo são compatíveis. No entanto, o formato de vídeo MXF ainda não é compatível com anotações de vídeo.
+   >As anotações de vídeo são suportadas somente em navegadores com formatos de vídeo compatíveis com o HTML5. Além disso, dependendo do navegador, diferentes formatos de vídeo são compatíveis. No entanto, o formato de vídeo MXF ainda não é compatível com anotações de vídeo.
 
 ## Excluir ativos {#delete-assets}
 
@@ -287,16 +321,16 @@ Além disso, desative o botão Forçar exclusão usando uma sobreposição, para
 
 Consulte [baixar ativos de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Publish ou cancelar a publicação de ativos {#publish-assets}
+## Publicar ou cancelar a publicação de ativos {#publish-assets}
 
 1. Navegue até o local do ativo ou da pasta de ativos que deseja publicar ou remover do ambiente de publicação (cancelar publicação).
 
-1. Selecione o ativo ou a pasta para publicar ou desfazer a publicação e selecione a opção **[!UICONTROL Gerenciar publicação]** ![gerenciar publicação](assets/do-not-localize/globe-publication.png) na barra de ferramentas. Como alternativa, para publicar rapidamente, selecione a opção **[!UICONTROL Publish rápido]** na barra de ferramentas. Se a pasta que você deseja publicar incluir uma pasta vazia, ela não será publicada.
+1. Selecione o ativo ou a pasta para publicar ou desfazer a publicação e selecione a opção **[!UICONTROL Gerenciar publicação]** ![gerenciar publicação](assets/do-not-localize/globe-publication.png) na barra de ferramentas. Como alternativa, para publicar rapidamente, selecione a opção **[!UICONTROL Publicação rápida]** na barra de ferramentas. Se a pasta que você deseja publicar incluir uma pasta vazia, ela não será publicada.
 
-1. Selecione a opção **[!UICONTROL Publish]** ou **[!UICONTROL Cancelar publicação]**, conforme necessário.
+1. Selecione a opção **[!UICONTROL Publicar]** ou **[!UICONTROL Cancelar publicação]**, conforme necessário.
 
    ![Cancelar publicação da ação](assets/unpublish_action.png)
-   *Figura: opções de Publish e cancelamento de publicação e a opção de agendamento.*
+   *Figura: as opções Publicar e desfazer a publicação e a opção de agendamento.*
 
 1. Selecione **[!UICONTROL Agora]** para atuar no ativo imediatamente ou selecione **[!UICONTROL Mais tarde]** para agendar a ação. Selecione uma data e hora se você escolher a opção **[!UICONTROL Mais tarde]**. Clique em **[!UICONTROL Avançar]**.
 
@@ -330,7 +364,7 @@ Os CUGs são uma maneira extra de restringir o acesso aos seus ativos. Você tam
    >
    >Se você não especificar o caminho para uma página de logon, [!DNL Experience Manager] exibirá a página de logon padrão na instância de publicação.
 
-1. Publish na pasta e tente acessá-la a partir da instância de publicação. Uma tela de logon é exibida.
+1. Publique a pasta e tente acessá-la a partir da instância de publicação. Uma tela de logon é exibida.
 1. Se você for um membro CUG, digite suas credenciais de segurança. A pasta é exibida depois que [!DNL Experience Manager] autentica você.
 
 ## Pesquisar ativos {#search-assets}
@@ -504,7 +538,7 @@ Você pode exibir somente uma anotação por vez.
 
 ### Imprimir anotações {#printing-annotations}
 
-Se um ativo tiver anotações ou tiver sido sujeito a um fluxo de trabalho de revisão, você poderá imprimir o ativo junto com as anotações e revisar o status como um arquivo PDF para revisão offline.
+Se um ativo tiver anotações ou tiver sido sujeito a um fluxo de trabalho de revisão, você poderá imprimir o ativo junto com as anotações e o status da revisão como um arquivo do PDF para revisão offline.
 
 Também é possível optar por imprimir somente as anotações ou o status da revisão.
 
@@ -532,7 +566,7 @@ Para imprimir as anotações e revisar o status, selecione o ícone **[!UICONTRO
 
    <!--![chlimage_1-244](assets/chlimage_1-244.png)-->
 
-1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status de anotações/revisão seja exibido no PDF. Por exemplo, se você quiser que as anotações/status sejam impressas no canto superior direito da página que contém a imagem impressa, use a configuração **Canto superior esquerdo**. Ela é selecionada por padrão.
+1. Na caixa de diálogo Imprimir, escolha a posição em que deseja que o status das anotações/revisões seja exibido no PDF. Por exemplo, se você quiser que as anotações/status sejam impressas no canto superior direito da página que contém a imagem impressa, use a configuração **Canto superior esquerdo**. Ela é selecionada por padrão.
 
    <!--![chlimage_1-245](assets/chlimage_1-245.png)-->
 
@@ -542,13 +576,13 @@ Para imprimir as anotações e revisar o status, selecione o ícone **[!UICONTRO
 
    <!--![chlimage_1-246](assets/chlimage_1-246.png)-->
 
-1. Baixe ou imprima o PDF usando as opções no canto superior direito.
+1. Baixe ou imprima a PDF usando as opções no canto superior direito.
 
    <!--![chlimage_1-247](assets/chlimage_1-247.png)-->
 
-   Para modificar a aparência do arquivo de PDF renderizado, por exemplo, a cor da fonte, o tamanho e o estilo, a cor do plano de fundo dos comentários e status, abra a **[!UICONTROL Configuração de PDF de anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status de aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotação](/help/assets/manage-digital-assets.md#annotating).
+   Para modificar a aparência do arquivo PDF renderizado, por exemplo, a cor da fonte, o tamanho e o estilo, a cor do plano de fundo dos comentários e status, abra a **[!UICONTROL Configuração de PDF de Anotação]** no Configuration Manager e modifique as opções desejadas. Por exemplo, para alterar a cor de exibição do status de aprovado, modifique o código de cor no campo correspondente. Para obter informações sobre como alterar a cor da fonte das anotações, consulte [Anotação](/help/assets/manage-digital-assets.md#annotating).
 
-   Retorne ao arquivo PDF renderizado e atualize-o. O PDF atualizado reflete as alterações feitas.
+   Retorne ao arquivo PDF renderizado e atualize-o. A PDF atualizada reflete as alterações feitas.
 
 ## Controle de versão de ativos {#asset-versioning}
 
@@ -644,7 +678,7 @@ Uma coleção é um conjunto ordenado de ativos. Use coleções para compartilha
 
 Para saber detalhes do Gerenciamento de coleções, consulte [gerenciar coleções](/help/assets/manage-collections.md).
 
-## Ocultar ativos expirados ao visualizar ativos no aplicativo de desktop ou Adobe Asset Link {#hide-expired-assets-via-acp-api}
+## Ocultar ativos expirados ao visualizar ativos no aplicativo de desktop ou no Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
 O aplicativo de desktop [!DNL Experience Manager] permite acesso ao repositório DAM a partir da área de trabalho do Windows ou Mac. O Adobe Asset Link permite o acesso a ativos de dentro dos aplicativos de desktop [!DNL Creative Cloud] compatíveis.
 
@@ -662,7 +696,7 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Para saber mais, veja como [procurar ativos DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Para saber mais, veja como [navegar pelos ativos DAM usando o aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) e [como usar o Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
 
 **Consulte também**
 
@@ -678,4 +712,4 @@ Para saber mais, veja como [procurar ativos DAM usando o aplicativo de desktop](
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

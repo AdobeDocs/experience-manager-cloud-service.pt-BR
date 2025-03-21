@@ -4,23 +4,57 @@ description: Adicione seus ativos digitais ao [!DNL Adobe Experience Manager] as
 feature: Asset Ingestion, Asset Management, Asset Processing, Upload
 role: User, Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3162'
+source-wordcount: '3190'
 ht-degree: 9%
 
 ---
 
 # Adicionar ativos digitais a [!DNL Adobe Experience Manager] como [!DNL Cloud Service] [!DNL Assets] {#add-assets-to-experience-manager}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 [!DNL Adobe Experience Manager Assets] aceita vários tipos de ativos digitais de várias fontes. Ele armazena os binários e as representações criadas, pode fazer o processamento de ativos usando vários fluxos de trabalho e serviços do [!DNL Adobe Sensei], e permite a distribuição por vários canais em muitas superfícies.
 
 O [!DNL Adobe Experience Manager] enriquece o conteúdo binário dos arquivos digitais carregados com metadados avançados, marcas inteligentes, representações e outros serviços de Gerenciamento de Ativos Digitais (DAM). Você pode carregar vários tipos de arquivos, como imagens, documentos e arquivos de imagem raw, de sua pasta local ou de uma unidade de rede para [!DNL Experience Manager Assets].
 
-Além do upload de navegador mais usado, existem outros métodos de adicionar ativos ao repositório [!DNL Experience Manager]. Esses outros métodos incluem clientes desktop, como o Adobe Asset Link ou o aplicativo de desktop [!DNL Experience Manager], scripts de carregamento e assimilação que os clientes criariam e integrações de assimilação automatizadas adicionadas como extensões [!DNL Experience Manager].
+Além do upload de navegador mais usado, existem outros métodos de adicionar ativos ao repositório [!DNL Experience Manager]. Esses outros métodos incluem clientes desktop, como o Adobe Asset Link ou o aplicativo de desktop [!DNL Experience Manager], scripts de carregamento e assimilação que os clientes criariam e integrações de assimilação automatizadas adicionadas como extensões do [!DNL Experience Manager].
 
 Embora seja possível carregar e gerenciar qualquer arquivo binário no [!DNL Experience Manager], os formatos de arquivo mais usados são compatíveis com serviços adicionais, como extração de metadados ou geração de pré-visualização/representação. Consulte [formatos de arquivo compatíveis](file-format-support.md) para obter detalhes.
 
@@ -65,7 +99,7 @@ Para fazer upload de um arquivo (ou de vários arquivos), você pode selecioná-
 
 >[!IMPORTANT]
 >
->O Assets que você carrega em Experience Manager com um nome de arquivo maior que 100 caracteres terá um nome abreviado quando for usado no Dynamic Media.
+>O Assets que você carrega na Experience Manager com um nome de arquivo maior que 100 caracteres terá um nome encurtado quando for usado no Dynamic Media.
 >
 >Os primeiros 100 caracteres no nome do arquivo são usados como estão; todos os caracteres restantes são substituídos por uma sequência alfanumérica. Esse método de renomeação garante um nome exclusivo quando o ativo é usado no Dynamic Media. Também se destina a acomodar o tamanho máximo permitido para o nome do arquivo do ativo no Dynamic Media.
 
@@ -74,7 +108,7 @@ Para fazer upload de um arquivo (ou de vários arquivos), você pode selecioná-
 1. Para fazer upload dos ativos, siga um destes procedimentos:
 
    * Na barra de ferramentas, clique em **[!UICONTROL Criar]** > **[!UICONTROL Arquivos]**. Você pode renomear o arquivo na caixa de diálogo apresentada, se necessário.
-   * Em um navegador compatível com o HTML5, arraste os ativos diretamente para a interface do usuário do [!DNL Assets]. A caixa de diálogo para renomear arquivo não é exibida.
+   * Em um navegador compatível com HTML5, arraste os ativos diretamente para a interface do usuário do [!DNL Assets]. A caixa de diálogo para renomear arquivo não é exibida.
 
    ![criar_menu](assets/create_menu.png)
 
@@ -153,7 +187,7 @@ A ferramenta é fornecida somente para o grupo de administradores para ser usada
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-A imagem a seguir ilustra os vários estágios ao assimilar ativos no Experience Manager de um armazenamento de dados:
+A imagem a seguir ilustra os vários estágios ao assimilar ativos para a Experience Manager de um armazenamento de dados:
 
 ![Ferramenta de assimilação em massa](assets/bulk-ingestion.png)
 
@@ -335,19 +369,19 @@ Depois de [configurar a ferramenta Importação em massa](#configure-bulk-ingest
 
 Para iniciar o processo de Importação em massa, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Importação em massa]**, selecione a [Configuração de Importação em Massa](#configure-bulk-ingestor-tool) e clique em **[!UICONTROL Executar]**. Clique em **[!UICONTROL Executar]** novamente para confirmar.
 
-Experience Manager atualiza o status do trabalho para **Processando** e para **Com êxito** após a conclusão bem-sucedida do trabalho. Para exibir os ativos importados no Experience Manager, clique em **Exibir Assets**.
+O Experience Manager atualiza o status do trabalho para **Processando** e para **Com êxito** após a conclusão bem-sucedida do trabalho. Para exibir os ativos importados na Experience Manager, clique em **Exibir Assets**.
 
 Quando o trabalho estiver em andamento, você também poderá selecionar a configuração e clicar em **Parar** para interromper o processo de assimilação em massa. Clique em **Executar** novamente para retomar o processo. Você também pode clicar em **Dry Run** para saber os detalhes dos ativos que ainda têm importação pendente.
 
 #### Gerenciar trabalhos após a execução {#manage-jobs-after-execution}
 
-Experience Manager permite que você veja o histórico dos trabalhos de importação em massa. O histórico de Jobs compreende o status do job, seu criador, seus logs, juntamente com outros detalhes, como a data e hora de início, data e hora de criação e data e hora de término.
+O Experience Manager permite que você veja o histórico dos trabalhos de importação em massa. O histórico de Jobs compreende o status do job, seu criador, seus logs, juntamente com outros detalhes, como a data e hora de início, data e hora de criação e data e hora de término.
 
 Para acessar o histórico de trabalhos de uma configuração, selecione a configuração e clique em **[!UICONTROL Histórico de Trabalhos]**. Selecione um trabalho e clique em **Abrir**.
 
 ![Agendar trabalho de entrada em massa](assets/job-history-bulk-import.png)
 
-Experience Manager exibe o histórico de tarefas. Na página Histórico do trabalho de Importação em massa, você também pode clicar em **Excluir** para excluir esse trabalho da configuração de Importação em massa.
+O Experience Manager exibe o histórico de tarefas. Na página Histórico do trabalho de Importação em massa, você também pode clicar em **Excluir** para excluir esse trabalho da configuração de Importação em massa.
 
 
 ## Fazer upload de ativos usando clientes de desktop {#upload-assets-desktop-clients}
@@ -381,7 +415,7 @@ Para pastas que têm um perfil de processamento atribuído, o nome do perfil apa
 
 ## Fazer upload ou assimilar ativos usando APIs {#upload-using-apis}
 
-Os detalhes técnicos das APIs e do protocolo de carregamento, bem como os links para o SDK de código aberto e clientes de exemplo, são fornecidos na seção [carregamento de ativos](developer-reference-material-apis.md#asset-upload) da referência do desenvolvedor.
+Os detalhes técnicos das APIs e do protocolo de carregamento, bem como os links para SDK de código aberto e clientes de exemplo, são fornecidos na seção [carregamento de ativos](developer-reference-material-apis.md#asset-upload) da referência do desenvolvedor.
 
 ## Dicas, práticas recomendadas e limitações {#tips-limitations}
 
@@ -415,7 +449,7 @@ Os detalhes técnicos das APIs e do protocolo de carregamento, bem como os links
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

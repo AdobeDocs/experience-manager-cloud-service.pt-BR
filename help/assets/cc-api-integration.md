@@ -1,21 +1,55 @@
 ---
 title: Automação de conteúdo para integração com o Creative Cloud
-description: Gerar variações de ativos usando a integração Creative Cloud
+description: Gerar variações de ativos usando a integração do Creative Cloud
 contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '818'
 ht-degree: 4%
 
 ---
 
 # Gerar variações de ativos usando a integração do [!DNL Adobe Creative Cloud] {#content-automation}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 O complemento de automação de conteúdo integra o [!DNL Adobe Experience Manager Assets] como APIs do [!DNL Cloud Service] e do [!DNL Adobe Creative Cloud] para processar seus ativos de forma criativa e em escala. O [!DNL Experience Manager] usa os [microsserviços de ativos](/help/assets/asset-microservices-overview.md) baseados na nuvem para usar os recursos do [!DNL Adobe Creative Cloud] e automatizar a criação de ativos e o manuseio de mídia.
 
@@ -83,11 +117,11 @@ Para usar perfis de processamento para criar variações automaticamente, siga e
 
 1. Selecione **[!UICONTROL Criar]** e especifique um **[!UICONTROL Nome]**.
 
-1. Selecione a guia **[!UICONTROL Criativo]**, especifique a pasta de saída e selecione **[!UICONTROL Adicionar novo]** para adicionar uma configuração criativa.
+1. Selecione a guia **[!UICONTROL Creative]**, especifique a pasta de saída e selecione **[!UICONTROL Adicionar novo]** para adicionar uma configuração criativa.
 
 1. Forneça o **[!UICONTROL Nome da Representação]** (ou o nome de saída), a **[!UICONTROL Extensão]** (ou o tipo de arquivo), selecione a **[!UICONTROL Qualidade]** (ou os parâmetros de saída), selecione as listas de tipos MIME **[!UICONTROL Inclusões]** e **[!UICONTROL Exclusões]** (ou o filtro de ativos de entrada) e selecione a operação de criação necessária.
 
-   Guia ![[!UICONTROL Criativo] em [!UICONTROL Processando Perfil]](assets/creative-processing-profile.png)
+   Guia ![[!UICONTROL Creative] em [!UICONTROL Processando Perfil]](assets/creative-processing-profile.png)
 
 1. Algumas operações exigem parâmetros extras (ativo). Forneça valores para esses parâmetros adicionais, se necessário.
 
@@ -118,7 +152,7 @@ Para processar os ativos existentes, selecione os ativos, selecione a opção **
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

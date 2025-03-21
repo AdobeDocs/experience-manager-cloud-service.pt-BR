@@ -3,17 +3,51 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 41%
+source-wordcount: '1323'
+ht-degree: 40%
 
 ---
 
 # Propriedades do Seletor de ativos {#asset-selector-properties}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Você pode usar as propriedades do Seletor de ativos para personalizar a forma como o Seletor de ativos é renderizado. A tabela a seguir lista as propriedades que você pode usar para personalizar e usar o Seletor de ativos.
 
@@ -30,7 +64,7 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Não |                 | Se as traduções OOTB forem insuficientes para as necessidades do aplicativo, você poderá expor uma interface pela qual poderá passar seus próprios valores localizados e personalizados pela prop `i18nSymbols`. Transmitir um valor por meio dessa interface substitui as traduções padrão fornecidas e, em vez disso, usa suas próprias traduções. Para executar a substituição, deverá transmitir um objeto [Descritor de mensagem](https://formatjs.io/docs/react-intl/api/#message-descriptor) à chave de `i18nSymbols` que deseja substituir. |
 | *intl* | Objeto | Não | | O Seletor de ativos fornece traduções OOTB padrão. Você pode selecionar o idioma de tradução fornecendo uma string de idioma válida por meio da propriedade `intl.locale`. Por exemplo: `intl={{ locale: "es-es" }}` </br></br> As strings de idioma com suporte seguem os padrões [ISO 639 - Códigos](https://www.iso.org/iso-639-language-codes.html) para a representação de nomes de idiomas. </br></br> Lista de idiomas com suporte: Inglês - “en-us” (padrão) Espanhol - “es-es” Alemão - “de-de” Francês - “fr-fr” Italiano - “it-it” Japonês - “ja-jp” Coreano - “ko-kr” Português - “pt-br” Chinês (Tradicional) - “zh-cn” Chinês (Taiwan) - “zh-tw” |
 | *repositoryId* | String | Não | &#39;&#39; | Repositório de onde o Seletor de ativos carrega o conteúdo. |
-| *additionalAemSolutions* | `Array<string>` | Não | [ ] | Ela permite adicionar uma lista de repositórios AEM adicionais. Se nenhuma informação for fornecida nessa propriedade, somente a biblioteca de mídia ou os repositórios do AEM Assets serão considerados. |
+| *additionalAemSolutions* | `Array<string>` | Não | [ ] | Ele permite adicionar uma lista de repositórios AEM adicionais. Se nenhuma informação for fornecida nessa propriedade, somente a biblioteca de mídia ou os repositórios do AEM Assets serão considerados. |
 | *hideTreeNav* | Booleano | Não |  | Especifica se deve mostrar ou ocultar a barra lateral de navegação da árvore de ativos. Usada apenas na exibição modal e, portanto, não há efeito dessa propriedade na exibição de painel. |
 | *onDrop* | Função | Não | | A propriedade permite a funcionalidade soltar de um ativo. |
 | *dropOptions* | `{allowList?: Object}` | Não | | Configura as opções de soltar usando “allowList”. |
@@ -47,14 +81,14 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *noWrap* | Booleano | Não | | A propriedade *noWrap* ajuda a renderizar o Seletor de ativos no painel lateral. Se essa propriedade não for mencionada, ela renderizará a *Exibição da caixa de diálogo* por padrão. |
 | *tamanhoDaCaixaDeDiálogo* | controle pequeno, médio, grande, tela cheia ou tela cheia | String | Opcional | Você pode controlar o layout especificando seu tamanho com as opções fornecidas. |
 | *colorScheme* | Claro ou escuro | Não | | Essa propriedade é usada para definir o tema de um aplicativo Seletor de ativos. Você pode escolher entre um tema claro ou escuro. |
-| *filterRepoList* | Função | Não |  | Você pode usar a função de retorno de chamada `filterRepoList` que chama o repositório de Experience Manager e retorna uma lista filtrada de repositórios. |
+| *filterRepoList* | Função | Não |  | Você pode usar a função de retorno de chamada `filterRepoList` que chama o repositório do Experience Manager e retorna uma lista filtrada de repositórios. |
 | *OpçõesDeExpiração* | Função | | | Você pode usar entre as duas propriedades a seguir: **getExpiryStatus** que fornece o status de um ativo expirado. A função retorna `EXPIRED`, `EXPIRING_SOON` ou `NOT_EXPIRED` com base na data de expiração de um ativo fornecido. Consulte [personalizar ativos expirados](/help/assets/asset-selector-customization.md#customize-expired-assets). Além disso, você pode usar **allowSelectionAndDrag**, no qual o valor da função pode ser `true` ou `false`. Quando o valor é definido como `false`, o ativo expirado não pode ser selecionado ou arrastado na tela. |
 | *mostrarNotificação* | | Não | | Ele permite que o Seletor de ativos mostre uma mensagem em caixa de informações personalizada para o ativo expirado. |
 | *metadataSchema* | Matriz | Não | | Adicione uma matriz de campos fornecida para coletar metadados do usuário. Usando essa propriedade, também é possível usar metadados ocultos que são atribuídos a um ativo automaticamente, mas que não estão visíveis para o usuário. |
 | *onMetadataFormChange* | Função de retorno de chamada | Não | | Consiste em `property` e `value`. `Property` é igual a *mapToProperty* do campo passado de *metadataSchema* cujo valor está sendo atualizado. Por outro lado, `value` é igual ao novo valor fornecido como uma entrada. |
 | *targetUploadPath* | String |  | `"/content/dam"` | O caminho de upload de destino para os arquivos cujo padrão é a raiz do repositório de ativos. |
 | *hideUploadButton* | Booleano | | Falso | Ele garante se o botão de upload interno deve estar oculto ou não. |
-| *onUploadStart* | Função | Não |  | É uma função de retorno de chamada usada para transmitir a fonte de carregamento entre Dropbox, OneDrive ou local. A sintaxe é `(uploadInfo: UploadInfo) => void` |
+| *onUploadStart* | Função | Não |  | É uma função de retorno de chamada usada para transmitir a origem do upload entre o Dropbox, o OneDrive ou o local. A sintaxe é `(uploadInfo: UploadInfo) => void` |
 | *importSettings* | Função | | | Ela permite o suporte para importar ativos de origem de terceiros. `sourceTypes` usa uma matriz das fontes de importação que você deseja habilitar. As fontes compatíveis são Onedrive e Dropbox. A sintaxe é `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` |
 | *onUploadComplete* | Função | Não | | É uma função de retorno de chamada usada para passar o status de upload de arquivo entre com êxito, com falha ou duplicado. A sintaxe é `(uploadStats: UploadStats) => void` |
 | *onFilesChange* | Função | Não | | É uma função de retorno de chamada usada para mostrar o comportamento de upload quando um arquivo é alterado. Ele passa a nova matriz de arquivos pendentes para upload e o tipo de origem do upload. O tipo de Source pode ser nulo em caso de erro. A sintaxe é `(newFiles: File[], uploadType: UploadType) => void` |

@@ -5,21 +5,55 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Processing, Asset Management
 role: Architect, Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 55ee7f866bcfc4ecc2e203102872af9752240019
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2909'
+source-wordcount: '2937'
 ht-degree: 3%
 
 ---
 
 # Usar microsserviços de ativos e perfis de processamento {#get-started-using-asset-microservices}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Os microsserviços de ativos fornecem processamento escalável e resiliente de ativos usando aplicativos nativos em nuvem (também chamados de trabalhadores). O Adobe gerencia os serviços para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento.
 
-Os microsserviços de ativos permitem processar uma [ampla variedade de tipos de arquivos](/help/assets/file-format-support.md) que abrangem mais formatos prontos para uso do que o possível com versões anteriores do [!DNL Experience Manager]. Por exemplo, a extração em miniatura dos formatos PSD e PSB agora é possível, mas anteriormente era necessária para soluções de terceiros, como o [!DNL ImageMagick].
+Os microsserviços de ativos permitem processar uma [ampla variedade de tipos de arquivos](/help/assets/file-format-support.md) que abrangem mais formatos prontos para uso do que o possível com versões anteriores do [!DNL Experience Manager]. Por exemplo, a extração de miniaturas dos formatos PSD e PSB agora é possível, mas anteriormente exigia soluções de terceiros, como o [!DNL ImageMagick].
 
 O processamento de ativos depende da configuração em **[!UICONTROL Processando Perfis]**. O Experience Manager fornece uma configuração padrão básica e permite que os administradores adicionem configurações mais específicas de processamento de ativos. Os administradores criam, mantêm e modificam as configurações dos fluxos de trabalho de pós-processamento, incluindo personalização opcional. A personalização dos fluxos de trabalho permite que os desenvolvedores estendam a oferta padrão.
 
@@ -42,7 +76,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 |---|---|---|
 | [Configuração padrão](#default-config) | Ela está disponível como está e não pode ser modificada. Essa configuração fornece um recurso básico de geração de representação. | <ul> <li>Miniaturas padrão usadas pela interface do usuário [!DNL Assets] (48, 140 e 319 pixels) </li> <li> Visualização grande (representação da Web - 1280 pixels) </li><li> Extração de metadados e texto.</li></ul> |
 | [Configuração personalizada](#standard-config) | Configurado pelos administradores por meio da interface do usuário. Mais opções são fornecidas para geração de representação estendendo a opção padrão. Estenda a opção pronta para uso para fornecer diferentes formatos e representações. | <ul><li>Representação FPO (somente para posicionamento). </li> <li>Alterar formato de arquivo e resolução de imagens</li> <li> Aplicar condicionalmente a tipos de arquivos configurados. </li> </ul> |
-| [Perfil personalizado](#custom-config) | Configurado por administradores via interface de usuário para usar o código personalizado por meio de aplicativos personalizados para chamar o [Serviço do Asset Compute](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction). Suporta requisitos mais complexos em um método escalável e nativo em nuvem. | Consulte [casos de uso permitidos](#custom-config). |
+| [Perfil personalizado](#custom-config) | Configurado por administradores via interface de usuário para usar o código personalizado por meio de aplicativos personalizados para chamar o [Serviço Asset Compute](https://experienceleague.adobe.com/en/docs/asset-compute/using/introduction). Suporta requisitos mais complexos em um método escalável e nativo em nuvem. | Consulte [casos de uso permitidos](#custom-config). |
 
 <!-- To create custom processing profiles specific to your custom requirements, say to integrate with other systems, see [post-processing workflows](#post-processing-workflows).
 -->
@@ -68,9 +102,9 @@ O [!DNL Experience Manager] fornece recursos para gerar representações mais es
 
 * **Regras de inclusão de tipo MIME**: quando um ativo com um tipo MIME específico é processado, o tipo MIME é verificado primeiro em relação ao valor de tipos MIME excluídos para a especificação de representação. Se ele corresponder a essa lista, essa representação específica não será gerada para o ativo (lista de bloqueios). Caso contrário, o tipo MIME será verificado em relação ao tipo MIME incluído e, se ele corresponder à lista, a representação será gerada (lista de permissões).
 
-* **Representação FPO especial**: ao colocar ativos de grande porte do [!DNL Experience Manager] em documentos do [!DNL Adobe InDesign], um profissional de criação aguarda um tempo considerável depois de [colocar um ativo](https://helpx.adobe.com/indesign/using/placing-graphics.html). Enquanto isso, o usuário não pode usar [!DNL InDesign]. Isso interrompe o fluxo de criação e afeta negativamente a experiência do usuário. O Adobe permite colocar temporariamente representações de pequeno porte em documentos do [!DNL InDesign] para começar, que podem ser substituídas por ativos de resolução completa sob demanda posteriormente. [!DNL Experience Manager] fornece representações que são usadas apenas para posicionamento. Essas representações FPO têm um tamanho de arquivo pequeno, mas têm a mesma proporção.
+* **Representação FPO especial**: ao colocar ativos de grande porte do [!DNL Experience Manager] em documentos do [!DNL Adobe InDesign], um profissional de criação aguarda um tempo considerável depois de [colocar um ativo](https://helpx.adobe.com/indesign/using/placing-graphics.html). Enquanto isso, o usuário não pode usar [!DNL InDesign]. Isso interrompe o fluxo de criação e afeta negativamente a experiência do usuário. O Adobe permite colocar temporariamente representações de pequeno porte em documentos do [!DNL InDesign] para começar, que podem ser substituídas por ativos de resolução completa posteriormente. [!DNL Experience Manager] fornece representações que são usadas apenas para posicionamento. Essas representações FPO têm um tamanho de arquivo pequeno, mas têm a mesma proporção.
 
-O perfil de processamento pode incluir uma representação FPO (somente para posicionamento). Consulte a [!DNL Adobe Asset Link] [documentação](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) para entender se você precisa ativá-la para o seu perfil de processamento. Para obter mais informações, consulte a [documentação completa do Link do ativo do Adobe](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html).
+O perfil de processamento pode incluir uma representação FPO (somente para posicionamento). Consulte a [!DNL Adobe Asset Link] [documentação](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html) para entender se você precisa ativá-la para o seu perfil de processamento. Para obter mais informações, consulte a [documentação completa do Adobe Asset Link](https://helpx.adobe.com/br/enterprise/using/adobe-asset-link.html).
 
 ### Criar um perfil padrão {#create-standard-profile}
 
@@ -102,11 +136,11 @@ The following video demonstrates the usefulness and usage of standard profile.
 
 ## Perfil personalizado e casos de uso {#custom-config}
 
-O [!DNL Asset Compute Service] oferece suporte a diversos casos de uso, incluindo processamento padrão e formatos específicos de Adobe de processamento, como arquivos Photoshop. Também permite a implementação de processamento personalizado ou específico da organização. A personalização do fluxo de trabalho do Ativo de atualização do DAM necessária no passado é manipulada automaticamente ou por meio da configuração de Perfis de processamento. Se essas opções de processamento não atenderem às suas necessidades comerciais, a Adobe recomenda desenvolver e usar o [!DNL Asset Compute Service] para estender os recursos padrão. Para obter uma visão geral, consulte [entender a extensibilidade e quando usá-la](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
+O [!DNL Asset Compute Service] oferece suporte a vários casos de uso, incluindo processamento padrão e processamento de formatos específicos de Adobe, como arquivos Photoshop. Também permite a implementação de processamento personalizado ou específico da organização. A personalização do fluxo de trabalho do Ativo de atualização do DAM necessária no passado é manipulada automaticamente ou por meio da configuração de Perfis de processamento. Se essas opções de processamento não atenderem às suas necessidades comerciais, a Adobe recomenda desenvolver e usar o [!DNL Asset Compute Service] para estender os recursos padrão. Para obter uma visão geral, consulte [entender a extensibilidade e quando usá-la](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/understand-extensibility).
 
 >[!NOTE]
 >
->A Adobe recomenda usar um aplicativo personalizado somente quando os requisitos comerciais não puderem ser cumpridos usando as configurações padrão ou o perfil padrão.
+>A Adobe recomenda usar um aplicativo personalizado somente quando os requisitos comerciais não puderem ser alcançados usando as configurações padrão ou o perfil padrão.
 
 Ele pode transformar imagens, vídeos, documentos e outros formatos de arquivo em diferentes representações, incluindo miniaturas, texto e metadados extraídos e arquivos.
 
@@ -128,7 +162,7 @@ Os desenvolvedores podem usar o [!DNL Asset Compute Service] para [criar aplicat
 1. No campo de texto Nome, digite o nome de arquivo desejado da representação e forneça as seguintes informações.
 
    * Nome de arquivo de cada representação e uma extensão de arquivo compatível.
-   * [URL do ponto de extremidade de um aplicativo personalizado do App Builder](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application). O aplicativo deve ser da mesma organização da conta Experience Manager.
+   * [URL do ponto de extremidade de um aplicativo personalizado do App Builder](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/deploy-custom-application). O aplicativo deve ser da mesma organização da conta do Experience Manager.
    * Adicionar Parâmetros de Serviço a [passar informações extras ou parâmetros para o aplicativo personalizado](https://experienceleague.adobe.com/en/docs/asset-compute/using/extend/develop-custom-application#extend).
    * Tipos MIME incluídos e excluídos para limitar o processamento a alguns formatos de arquivo específicos.
 
@@ -172,7 +206,7 @@ Depois que um perfil de processamento é aplicado a uma pasta, todos os novos at
 
 >[!NOTE]
 >
->Um perfil de processamento aplicado a uma pasta funciona para toda a árvore, mas pode ser substituído por outro perfil aplicado a uma subpasta. Quando os ativos são carregados para uma pasta, o Experience Manager verifica se as propriedades da pasta que os contém têm um perfil de processamento. Se nenhum for aplicado, uma pasta principal na hierarquia será verificada em busca de um perfil de processamento para ser aplicado.
+>Um perfil de processamento aplicado a uma pasta funciona para toda a árvore, mas pode ser substituído por outro perfil aplicado a uma subpasta. Quando os ativos são carregados para uma pasta, o Experience Manager verifica se as propriedades da pasta que os contém em busca de um perfil de processamento. Se nenhum for aplicado, uma pasta principal na hierarquia será verificada em busca de um perfil de processamento para ser aplicado.
 
 Para verificar se os ativos são processados, visualize as representações geradas na exibição [!UICONTROL Representações] no painel esquerdo. Abra a visualização do ativo e abra o painel esquerdo para acessar a exibição **[!UICONTROL Representações]**. As representações específicas no perfil de processamento, para as quais o tipo de ativo específico corresponde às regras de inclusão do tipo MIME, devem estar visíveis e acessíveis.
 
@@ -194,7 +228,7 @@ Para adicionar uma configuração de fluxo de trabalho de pós-processamento ao 
 
 * Crie um ou mais modelos de fluxo de trabalho. Esses modelos personalizados são chamados de *modelos de fluxo de trabalho de pós-processamento* nesta documentação. Eles são modelos de fluxo de trabalho [!DNL Experience Manager] comuns.
 * Adicione as etapas de fluxo de trabalho necessárias a esses modelos. Revise as etapas do fluxo de trabalho padrão e adicione todas as etapas padrão necessárias ao fluxo de trabalho personalizado. As etapas são executadas nos ativos com base em uma configuração de modelo de fluxo de trabalho. Por exemplo, se você quiser que a marcação inteligente ocorra automaticamente no upload do ativo, adicione a etapa ao modelo de fluxo de trabalho de pós-processamento personalizado.
-* Adicione a etapa [!UICONTROL Fluxo de trabalho do Ativo de atualização do DAM concluído] ao final. Adicionar esta etapa garante que o Experience Manager saiba quando o processamento termina e o ativo possa ser marcado como processado, ou seja, *Novo* é exibido no ativo.
+* Adicione a etapa [!UICONTROL Fluxo de trabalho do Ativo de atualização do DAM concluído] ao final. Adicionar esta etapa garante que a Experience Manager saiba quando o processamento termina e o ativo pode ser marcado como processado, ou seja, *Novo* é exibido no ativo.
 * Crie uma configuração para o Serviço de execução de fluxo de trabalho personalizado que permita configurar a execução de um modelo de fluxo de trabalho de pós-processamento por um caminho (local da pasta) ou por uma expressão regular.
 
 Para obter detalhes sobre qual etapa do fluxo de trabalho padrão pode ser usada no fluxo de trabalho de pós-processamento, consulte [etapas do fluxo de trabalho no fluxo de trabalho de pós-processamento](developer-reference-material-apis.md#post-processing-workflows-steps) na referência do desenvolvedor.
@@ -205,7 +239,7 @@ Os modelos de fluxo de trabalho de pós-processamento são [!DNL Experience Mana
 
 As etapas de processamento são adicionadas conforme necessário. Você pode usar as etapas compatíveis disponíveis e qualquer etapa de fluxo de trabalho personalizada implementada.
 
-Verifique se a última etapa de cada fluxo de trabalho de pós-processamento é `DAM Update Asset Workflow Completed Process`. A etapa final garante que o Experience Manager reconheça quando o processamento de ativos estiver concluído.
+Verifique se a última etapa de cada fluxo de trabalho de pós-processamento é `DAM Update Asset Workflow Completed Process`. A etapa final garante que a Experience Manager reconheça a conclusão do processamento de ativos.
 
 ### Configurar a execução do workflow de pós-processamento {#configure-post-processing-workflow-execution}
 
@@ -279,7 +313,7 @@ Siga as etapas descritas em [aplicar um modelo de fluxo de trabalho a uma pasta]
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

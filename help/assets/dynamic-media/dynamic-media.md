@@ -1,22 +1,59 @@
 ---
 title: Trabalhar com o Dynamic Media
-description: Saiba mais sobre o que é o Dynamic Media e você pode usar o Dynamic Media para fornecer ativos para consumo na Web, em dispositivos móveis e em sites sociais.
+description: Saiba mais sobre o que é o Dynamic Media e como você pode usá-lo para fornecer ativos para consumo na Web, em dispositivos móveis e em sites sociais.
 contentOwner: Rick Brough
 feature: Dynamic Media,Asset Management
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 57fb7a011cb2da853cdca4f3233cd56775f4a459
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '701'
 ht-degree: 3%
 
 ---
 
 # Trabalhar com o Dynamic Media {#working-with-dynamic-media}
 
-O [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ajuda a fornecer ativos avançados de marketing e merchandising visual sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, a Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-O Dynamic Media oferece experiências de visualização interativa, incluindo zoom, rotação de 360° e vídeo. A Dynamic Media incorpora exclusivamente os fluxos de trabalho da solução Adobe Experience Manager digital asset management (Assets) para simplificar e simplificar o processo de gerenciamento de campanhas digitais.
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) ajuda a fornecer ativos avançados de merchandising e marketing visuais sob demanda, dimensionados automaticamente para consumo em sites da Web, móveis e sociais. Usando um conjunto de ativos de origem primária, o Dynamic Media gera e fornece várias variações de conteúdo avançado em tempo real por meio de sua rede global, dimensionável e com desempenho otimizado.
+
+O Dynamic Media oferece experiências de visualização interativa, incluindo zoom, rotação de 360° e vídeo. O Dynamic Media incorpora exclusivamente os fluxos de trabalho da solução Adobe Experience Manager de gerenciamento de ativos digitais (Assets) para simplificar e simplificar o processo de gerenciamento de campanhas digitais.
 
 <!-- >[!NOTE]
 >
@@ -26,9 +63,9 @@ O Dynamic Media oferece experiências de visualização interativa, incluindo zo
 
 O Dynamic Media no Adobe Experience Manager (AEM) as a Cloud Service é uma solução poderosa projetada para ajudá-lo a gerenciar, fornecer e otimizar ativos de mídia avançada como imagens e vídeos em plataformas digitais. Ela transforma mídia estática em experiências dinâmicas e envolventes, permitindo modificações em tempo real, como redimensionamento, recorte e ajuste de qualidade com base no dispositivo do usuário ou no tamanho da tela. Com o Dynamic Media, seus ativos se adaptam automaticamente para fornecer a melhor experiência visual, independentemente de os usuários estarem em um desktop, dispositivo móvel ou tablet.
 
-Um dos principais benefícios do Dynamic Media é sua capacidade de simplificar o gerenciamento de mídia. Não é necessário criar várias versões de imagens ou vídeos. O Dynamic Media lida com tudo isso fornecendo o formato mais apropriado para cada situação. Por exemplo, as empresas de comércio eletrônico podem aproveitar as visualizações de produto de 360 graus ou imagens com zoom para criar experiências interativas, enquanto sites com conteúdo intensivo podem garantir um streaming de vídeo rápido e de alta qualidade. Isso resulta em tempos de carregamento mais rápidos e experiências de usuário mais envolventes, o que resulta em maior satisfação do cliente e melhores taxas de conversão.
+Um benefício importante do Dynamic Media é sua capacidade de simplificar o gerenciamento de mídia. Não é necessário criar várias versões de imagens ou vídeos. O Dynamic Media lida com tudo isso fornecendo o formato mais apropriado para cada situação. Por exemplo, as empresas de comércio eletrônico podem aproveitar as visualizações de produto de 360 graus ou imagens com zoom para criar experiências interativas, enquanto sites com conteúdo intensivo podem garantir um streaming de vídeo rápido e de alta qualidade. Isso resulta em tempos de carregamento mais rápidos e experiências de usuário mais envolventes, o que resulta em maior satisfação do cliente e melhores taxas de conversão.
 
-O Dynamic Media integra-se perfeitamente com seu sistema de gerenciamento de ativos digitais (DAM) no AEM, fornecendo uma única plataforma para armazenar, organizar e implantar sua mídia. Essa abordagem centralizada simplifica a colaboração entre as equipes e fornece insights em tempo real sobre o desempenho dos ativos. Esteja você focado em fornecer visuais cativantes ou melhorar as interações do usuário orientadas por mídia, o Dynamic Media ajuda a otimizar seu conteúdo para qualquer canal, tornando-o uma ferramenta essencial para as empresas que visam elevar sua presença digital.
+O Dynamic Media se integra perfeitamente ao seu sistema de gerenciamento de ativos digitais (DAM) no AEM, fornecendo uma única plataforma para armazenar, organizar e implantar sua mídia. Essa abordagem centralizada simplifica a colaboração entre as equipes e fornece insights em tempo real sobre o desempenho dos ativos. Esteja você focado em fornecer visuais cativantes ou melhorar as interações do usuário orientadas por mídia, o Dynamic Media ajuda a otimizar seu conteúdo para qualquer canal, tornando-o uma ferramenta essencial para as empresas que visam elevar sua presença digital.
 
 ## O que você pode fazer com o Dynamic Media {#what-you-can-do-with-dynamic-media}
 
@@ -59,25 +96,25 @@ OBSOLETE UNTIL INTEGRATING SCENE7 TOPIC GETS A MAJOR UPDATE
 
 -->
 
-## Dynamic Media ativado versus Dynamic Media desativado {#dynamic-media-on-versus-dynamic-media-off}
+## Dynamic Media ativada ou Dynamic Media desativada {#dynamic-media-on-versus-dynamic-media-off}
 
-Você pode saber se o Dynamic Media está ativado pelas seguintes características:
+Você pode saber se o Dynamic Media está ativado (ativado) pelas seguintes características:
 
 * As representações dinâmicas estão disponíveis ao baixar ou visualizar ativos.
 * Conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista estão disponíveis.
 * As representações PTIFF são criadas.
 
-Ao clicar em um ativo de imagem, a visualização do ativo é diferente com o Dynamic Media ativado. O Dynamic Media usa visualizadores HTML5 sob demanda.
+Ao clicar em um ativo de imagem, a exibição do ativo é diferente com o Dynamic Media ativado. O Dynamic Media usa visualizadores HTML5 sob demanda.
 
 ### Representações dinâmicas {#dynamic-renditions}
 
-Representações dinâmicas, como imagens e predefinições do visualizador (em **[!UICONTROL Dynamic]**), estarão disponíveis quando o Dynamic Media for habilitado.
+Representações dinâmicas, como imagem e predefinições do visualizador (em **[!UICONTROL Dynamic]**), estarão disponíveis quando o Dynamic Media estiver habilitado.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
-### Conjuntos de imagens Dynamic Media, conjuntos de rotação, conjuntos de mídia mista {#image-sets-spins-sets-mixed-media-sets}
+### Conjuntos de imagens do Dynamic Media, conjuntos de rotação, conjuntos de mídia mista {#image-sets-spins-sets-mixed-media-sets}
 
-Conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista estarão disponíveis se o Dynamic Media estiver ativado.
+Conjuntos de imagens, conjuntos de rotação e conjuntos de mídia mista estarão disponíveis se o Dynamic Media estiver habilitado.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -87,12 +124,12 @@ Os ativos habilitados para Dynamic Media incluem `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### Alterações nas visualizações de ativos do Dynamic Media {#asset-views-change}
+### Alteração nas visualizações de ativos da Dynamic Media {#asset-views-change}
 
-Com o Dynamic Media habilitado, você pode ampliar e reduzir clicando nos botões `+` e `-`. Você também pode optar por ampliar para uma determinada área. Reverter leva à versão original e você pode tornar a imagem em tela cheia clicando nas setas diagonais. Dynamic Media ativado aparece da seguinte forma:
+Com o Dynamic Media habilitado, você pode ampliar e reduzir clicando nos botões `+` e `-`. Você também pode optar por ampliar para uma determinada área. Reverter leva à versão original e você pode tornar a imagem em tela cheia clicando nas setas diagonais. O Dynamic Media ativado é exibido da seguinte maneira:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
-Com o Dynamic Media desativado, você pode aumentar ou diminuir o zoom e reverter para o tamanho original:
+Com o Dynamic Media desativado, é possível aumentar e diminuir o zoom e reverter para o tamanho original:
 
 ![chlimage_1-362](assets/chlimage_1-362.png)

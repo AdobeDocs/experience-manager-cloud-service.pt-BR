@@ -1,18 +1,55 @@
 ---
 title: Banners em carrossel
-description: Saiba como trabalhar com banners em carrossel no Dynamic Media.
+description: Saiba como trabalhar com banners do carrossel no Dynamic Media.
 contentOwner: Rick Brough
 feature: Carousel Banners
 role: User
 exl-id: 34541302-6610-4f5e-af93-c95328dda910
-source-git-commit: 89f23a590338561b4cfeb10b54a260a135ec2f08
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '4492'
+source-wordcount: '4538'
 ht-degree: 1%
 
 ---
 
 # Banners em carrossel{#carousel-banners}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Os banners do carrossel permitem que os profissionais de marketing impulsionem a conversão criando facilmente conteúdo promocional rotativo interativo e entregando-o em qualquer tela.
 
@@ -79,9 +116,9 @@ Para começar a usar o com rapidez:
 
    Consulte [(Opcional) Visualizar banners do carrossel](#optional-previewing-carousel-banners) - Opcional. Se desejar, é possível visualizar uma representação do conjunto de carrossel e testar a interatividade.
 
-1. [Banners do Publish Carousel](#publishing-carousel-banners).
+1. [Publicar banners do Carousel](#publishing-carousel-banners).
 
-   Publique um Conjunto de carrossel como faria com qualquer ativo. No Assets, navegue até o Conjunto de carrosséis, selecione-o e selecione **[!UICONTROL Publish]**. A publicação de um Conjunto de carrossel ativa o URL e a sequência de caracteres Incorporada.
+   Publique um Conjunto de carrossel como faria com qualquer ativo. No Assets, navegue até o Conjunto de carrosséis, selecione-o e, em seguida, **[!UICONTROL Publicar]**. A publicação de um Conjunto de carrossel ativa o URL e a sequência de caracteres Incorporada.
 
 1. Siga uma das seguintes opções:
 
@@ -328,9 +365,9 @@ Consulte [Fragmentos de experiência](/help/sites-cloud/authoring/fragments/cont
    Você também pode visualizar a aparência do banner do carrossel. Consulte [(Opcional) Visualizar banners do carrossel](#optional-previewing-carousel-banners).
 
 1. Selecione **[!UICONTROL Salvar]**.
-1. Publish o conjunto do carrossel. A publicação cria o código incorporado ou o URL que você pode usar na página do site. Se você for um cliente do Experience Manager Sites, adicione o conjunto de carrossel diretamente à sua página da Web.
+1. Publique o conjunto de carrossel. A publicação cria o código incorporado ou o URL que você pode usar na página do site. Se você for um cliente do Experience Manager Sites, adicione o conjunto de carrossel diretamente à sua página da Web.
 
-   Consulte [ativos do Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+   Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    Consulte [Adicionar um conjunto de carrossel à página de aterrissagem de seu site](#adding-a-carousel-banner-to-your-website-page)
 
@@ -402,9 +439,9 @@ Você pode visualizar banners do carrossel no Editor do carrossel (método prefe
 1. Na lista **[!UICONTROL Visualizadores]** no painel à esquerda da página, selecione o nome da predefinição do visualizador do banner do carrossel que deseja usar.
 1. Para testar suas ações associadas, selecione os pontos de acesso ou mapas de imagem na imagem.
 
-## Banners em carrossel Publish {#publishing-carousel-banners}
+## Publicar banners do Carousel {#publishing-carousel-banners}
 
-Para usar o carrossel, você deve publicá-lo. A publicação de um Conjunto de carrossel ativa o URL e o Código incorporado. Ele também publica o carrossel na nuvem do Dynamic Media, que é integrada a um CDN para entrega escalável e com desempenho.
+Para usar o carrossel, você deve publicá-lo. A publicação de um Conjunto de carrossel ativa o URL e o Código incorporado. Ele também publica o carrossel na nuvem do Dynamic Media, que é integrada a um CDN para entrega escalável e de alto desempenho.
 
 >[!NOTE]
 >
@@ -412,7 +449,7 @@ Para usar o carrossel, você deve publicá-lo. A publicação de um Conjunto de 
 >
 >Além disso, se você modificar uma imagem interativa publicada pré-existente usada em um banner do carrossel, publique a imagem interativa para que essas alterações sejam refletidas no banner do carrossel.
 
-Consulte [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter informações sobre como publicar banners no carrossel.
+Consulte [Publicar o Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md) para obter informações sobre como publicar banners do carrossel.
 
 ## Adicione um banner de carrossel à página do site {#adding-a-carousel-banner-to-your-website-page}
 
@@ -443,7 +480,7 @@ A implementação existente do Quickview normalmente representa uma cadeia de a�
 1. O código de front-end envia uma solicitação de Ajax usando o URL obtido na etapa 2.
 1. A lógica de back-end retorna os dados ou o conteúdo de visualização rápida correspondentes ao código de front-end.
 1. O código de front-end carrega os dados ou o conteúdo da Visualização rápida.
-1. Como opção, o código de front-end converte os dados de Visualização rápida carregados em uma representação HTML.
+1. Como opção, o código de front-end converte os dados de Visualização rápida carregados em uma representação do HTML.
 1. O código de front-end exibe uma caixa de diálogo ou painel modal e renderiza o conteúdo do HTML na tela para o usuário.
 
 Essas chamadas não representam chamadas de API públicas independentes que podem ser chamadas pela lógica da página da Web de uma etapa arbitrária. Em vez disso, é uma chamada encadeada em que cada próxima etapa é ocultada na última fase (retorno de chamada) da etapa anterior.

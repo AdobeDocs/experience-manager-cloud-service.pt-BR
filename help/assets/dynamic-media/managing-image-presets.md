@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: baffc15d482ad3b57337c1ee5fe3e622253ae8cb
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3550'
+source-wordcount: '3596'
 ht-degree: 6%
 
 ---
 
 # Gerenciar predefinições de imagem{#managing-image-presets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 As Predefinições de imagem permitem que o Adobe Experience Manager Assets forneça imagens dinamicamente em diferentes tamanhos, em diferentes formatos ou com outras propriedades de imagem geradas dinamicamente. Cada predefinição de imagem representa uma coleção predefinida de comandos de dimensionamento e formatação para a exibição de imagens. Ao criar uma Predefinição de imagem, você escolhe um tamanho para a entrega da imagem. Você também escolhe comandos de formatação para que a aparência da imagem seja otimizada quando ela for entregue para visualização.
 
@@ -38,7 +75,7 @@ Os administradores podem criar Predefinições de imagem. Para criar uma Predefi
 
 ## Gerenciar predefinições de imagem {#managing-image-presets-1}
 
-Você gerencia suas Predefinições de imagem no Experience Manager selecionando o logotipo Experience Manager para acessar o console de navegação global e, em seguida, selecionando o ícone Ferramentas e navegando até **[!UICONTROL Assets]** > **[!UICONTROL Predefinições de imagem]**.
+Para gerenciar suas Predefinições de imagem no Experience Manager, selecione o logotipo Experience Manager para acessar o console de navegação global e, em seguida, selecione o ícone Ferramentas e navegue até **[!UICONTROL Assets]** > **[!UICONTROL Predefinições de imagem]**.
 
 ![6_5_ferramentas-ativos-imagens-predefinições](assets/6_5_tools-assets-imagepresets.png)
 
@@ -48,26 +85,26 @@ Você gerencia suas Predefinições de imagem no Experience Manager selecionando
 >
 >Você precisa *não* publicar predefinições de imagem, pois as predefinições de imagem são publicadas automaticamente.
 >
->Consulte [Predefinições de imagem do Publish](#publishing-image-presets).
+>Consulte [Publicar Predefinições De Imagem](#publishing-image-presets).
 
 >[!NOTE]
 >
 >O sistema mostra várias representações quando você seleciona **[!UICONTROL Representações]** na Exibição de detalhes de um ativo. É possível aumentar ou diminuir o número de Predefinições de imagem exibidas. Consulte [Aumentar o número de predefinições de imagens exibidas](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Formatos de arquivo Adobe Illustrator (AI), PostScript® (EPS) e PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Formatos de arquivo do Adobe Illustrator (AI), PostScript® (EPS) e PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
-Se sua intenção for oferecer suporte à assimilação de arquivos AI, EPS e PDF para que você possa gerar representações dinâmicas desses formatos de arquivo, reveja as informações a seguir antes de criar Predefinições de imagem.
+Se sua intenção for oferecer suporte à assimilação de arquivos AI, EPS e PDF para que você possa gerar representações dinâmicas desses formatos de arquivo, revise as informações a seguir antes de criar Predefinições de imagem.
 
 O formato de arquivo do Adobe Illustrator é uma variante do PDF. As principais diferenças, no contexto do Experience Manager Assets, são as seguintes:
 
 * Os documentos do Adobe Illustrator consistem em uma única página com várias camadas. Cada camada é extraída como um subativo PNG no ativo principal do Illustrator.
-* Os documentos PDF consistem em uma ou mais páginas. Cada página é extraída como um único subativo de PDF de página no documento principal de PDF de várias páginas.
+* Os documentos do PDF consistem em uma ou mais páginas. Cada página é extraída como um subativo PDF de página única no documento PDF principal de várias páginas.
 
 O componente `Create Sub Asset process` cria os subativos dentro do fluxo de trabalho `DAM Update Asset` geral. Para ver este componente do processo no fluxo de trabalho, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Ativo de atualização do DAM]** > **[!UICONTROL Editar]**.
 
 <!-- See also [Viewing pages of a multi-page file](/help/assets/manage-linked-subassets.md#view-pages-of-a-multi-page-file). -->
 
-É possível exibir os subativos ou as páginas ao abrir o ativo, selecionar o menu Conteúdo e selecionar **[!UICONTROL Subativos]** ou **[!UICONTROL Páginas]**. Os subativos são ativos reais. O componente de fluxo de trabalho `Create Sub Asset` extrai as páginas de PDF. Eles são armazenados como `page1.pdf`, `page2.pdf` e assim por diante, abaixo do ativo principal. Após serem armazenados, o fluxo de trabalho `DAM Update Asset` os processa.
+É possível exibir os subativos ou as páginas ao abrir o ativo, selecionar o menu Conteúdo e selecionar **[!UICONTROL Subativos]** ou **[!UICONTROL Páginas]**. Os subativos são ativos reais. O componente de fluxo de trabalho `Create Sub Asset` extrai as páginas do PDF. Eles são armazenados como `page1.pdf`, `page2.pdf` e assim por diante, abaixo do ativo principal. Após serem armazenados, o fluxo de trabalho `DAM Update Asset` os processa.
 
 Para usar o Dynamic Media para visualizar e gerar representações dinâmicas para arquivos AI, EPS ou PDF, as seguintes etapas de processamento são necessárias:
 
@@ -90,7 +127,7 @@ Você acessa `Rasterize PDF/AI Image Preview Rendition` opções do componente d
 
 Selecione o Adobe Experience Manager no canto superior esquerdo e clique em **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]**. Na página Modelos de fluxo de trabalho, selecione **[!UICONTROL Ativo de atualização do DAM]** e, na barra de ferramentas, selecione **[!UICONTROL Editar]**. Na página de fluxo de trabalho Atualizar ativo do DAM, selecione duas vezes o componente do processo `Rasterize PDF/AI Image Preview Rendition` para abrir sua caixa de diálogo Propriedades da etapa.
 
-#### Opções de Rasterizar representação da exibição de imagens do PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
+#### Rasterizar opções de representação da exibição de imagens do PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![Argumentos para rasterizar o fluxo de trabalho do PDF ou da IA](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -98,45 +135,45 @@ Argumentos para rasterizar o fluxo de trabalho do PDF ou da IA
 
 | Argumento do processo | Configuração padrão | Descrição |
 |---|---|---|
-| Tipos de mime | application/pdf<br>application/postscript<br>application/illustrator | Lista de tipos MIME de documentos que são considerados documentos PDF ou Illustrator. |
+| Tipos de mime | application/pdf<br>application/postscript<br>application/illustrator | Lista de tipos MIME de documentos que são considerados documentos do PDF ou Illustrator. |
 | Largura máxima | 2048 | Largura máxima da representação de visualização gerada, em pixels. |
 | Altura máxima | 2048 | Altura máxima da representação de visualização gerada, em pixels. |
 | Resolução | 72 | Resolução para rasterizar a primeira página, em ppi (pixels por polegada). |
 
-Usando os argumentos de processo padrão, a primeira página de um documento PDF/AI é rasterizada em 72 ppi e a imagem de visualização gerada é dimensionada em 2048 x 2048 pixels. Para uma implantação típica, é possível aumentar a resolução para um mínimo de 150 ppi ou mais. Por exemplo, um documento tamanho carta EUA a 300 ppi requer no máximo 2550 x 3300 pixels de largura e altura, respectivamente.
+Usando os argumentos de processo padrão, a primeira página de um documento do PDF/AI é rasterizada em 72 ppi e a imagem de visualização gerada é dimensionada em 2048 x 2048 pixels. Para uma implantação típica, é possível aumentar a resolução para um mínimo de 150 ppi ou mais. Por exemplo, um documento tamanho carta EUA a 300 ppi requer no máximo 2550 x 3300 pixels de largura e altura, respectivamente.
 
 Largura máxima e Altura máxima limitam a resolução na qual rasterizar. Por exemplo, se os máximos não forem alterados e a Resolução for definida como 300 ppi, um documento Carta dos EUA será rasterizado em 186 ppi. Ou seja, o documento tem 1581 x 2046 pixels.
 
 O componente do processo `Rasterize PDF/AI Image Preview Rendition` tem um máximo definido para garantir que ele não crie imagens muito grandes na memória. Essas imagens grandes podem estourar a memória fornecida para a JVM (Java™ Virtual Machine). É necessário tomar cuidado para fornecer à JVM memória suficiente para gerenciar o número configurado de workflows paralelos, com cada um tendo o potencial de criar uma imagem no tamanho máximo configurado.
 
-### formato de arquivo InDesign (INDD) {#indesign-indd-file-format}
+### Formato de arquivo InDesign (INDD) {#indesign-indd-file-format}
 
 Se você pretende suportar a assimilação de arquivos INDD para gerar uma representação dinâmica desse formato de arquivo, revise as informações a seguir antes de criar Predefinições de imagem.
 
-Para arquivos de InDesign, os sub-ativos são extraídos somente se o Adobe InDesign Server estiver integrado ao Experience Manager. Os ativos referenciados são vinculados com base em seus metadados. O InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no Experience Manager antes que os arquivos de InDesign sejam processados para que os links sejam criados entre os arquivos de InDesign e os ativos referenciados.
+Para arquivos InDesign, os subativos são extraídos somente se o Adobe InDesign Server estiver integrado ao Experience Manager. Os ativos referenciados são vinculados com base em seus metadados. O InDesign Server não é necessário para vinculação. No entanto, os ativos referenciados devem estar presentes no Experience Manager antes que os arquivos do InDesign sejam processados para que os links sejam criados entre os arquivos do InDesign e os ativos referenciados.
 
 <!-- See [Integrate Experience Manager Assets with InDesign Server](/help/assets/indesign.md). -->
 
-O componente do processo de Extração de Mídia no fluxo de trabalho `DAM Update Asset` executa vários Scripts de Extensão pré-configurados para processar arquivos de InDesign.
+O componente do processo de Extração de Mídia no fluxo de trabalho `DAM Update Asset` executa vários Scripts de Extensão pré-configurados para processar arquivos InDesign.
 
-![Os caminhos do ExtendScript nos argumentos do processo de Extração de Mídia](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
+![Os caminhos ExtendScript nos argumentos do processo de Extração de Mídia](/help/assets/dynamic-media/assets/6_5_mediaextractionprocess.png)
 
-Os caminhos do ExtendScript nos argumentos do componente Processo de extração de mídia no fluxo de trabalho Ativo de atualização DAM.
+Os caminhos ExtendScript nos argumentos do componente Processo de extração de mídia no fluxo de trabalho Ativo de atualização do DAM.
 
 Os seguintes scripts são usados pela integração do Dynamic Media:
 
 
-| Nome do ExtendScript | Padrão | Descrição |
+| Nome ExtendScript | Padrão | Descrição |
 |---|---|---|
 | ThumbnailExport.jsx | Sim | Gera uma representação de 300 PPI `thumbnail.jpg` que é otimizada e transformada em uma representação PTIFF pelo componente de processo `Dynamic Media Process Image Assets`. |
-| JPEGPagesExport.jsx | Sim | Gera um subativo de JPEG de 300 PPI para cada página. O subativo JPEG é um ativo real armazenado no ativo InDesign. O fluxo de trabalho `DAM Update Asset` otimiza e o converte em um PTIFF. |
-| PDFPagesExport.jsx | Não | Gera um subativo PDF para cada página. O subativo PDF é processado conforme descrito anteriormente. Como o PDF contém apenas uma página, nenhum subativo é gerado. |
+| JPEGPagesExport.jsx | Sim | Gera um subativo JPEG de 300 PPI para cada página. O subativo do JPEG é um ativo real armazenado no ativo do InDesign. O fluxo de trabalho `DAM Update Asset` otimiza e o converte em um PTIFF. |
+| PDFPagesExport.jsx | Não | Gera um subativo do PDF para cada página. O subativo do PDF é processado conforme descrito anteriormente. Como a PDF contém apenas uma página, nenhum subativo é gerado. |
 
 ### Configurar o tamanho da miniatura da imagem {#configuring-image-thumbnail-size}
 
-Você pode definir o tamanho das miniaturas definindo essas configurações no fluxo de trabalho **[!UICONTROL Ativo de atualização DAM]**. Há duas etapas no fluxo de trabalho nas quais você pode configurar o tamanho da miniatura de ativos de imagem. Uma (**[!UICONTROL Dynamic Media Process Image Assets]**) é usada para ativos de imagem dinâmicos. O outro (**[!UICONTROL Miniaturas de Processo]**) é usado para geração de miniaturas estáticas ou quando todos os outros processos não conseguem gerar miniaturas. Independentemente disso, *ambos* devem ter as mesmas configurações.
+Você pode definir o tamanho das miniaturas definindo essas configurações no fluxo de trabalho **[!UICONTROL Ativo de atualização DAM]**. Há duas etapas no fluxo de trabalho nas quais você pode configurar o tamanho da miniatura de ativos de imagem. Uma (**[!UICONTROL Assets de Imagem de Processo de Mídia Dinâmica]**) é usada para ativos de imagem dinâmica. O outro (**[!UICONTROL Miniaturas de Processo]**) é usado para geração de miniaturas estáticas ou quando todos os outros processos não conseguem gerar miniaturas. Independentemente disso, *ambos* devem ter as mesmas configurações.
 
-A etapa **[!UICONTROL Dynamic Media Process Image Assets]** usa o servidor de imagens para gerar miniaturas, independentemente da configuração aplicada à etapa **[!UICONTROL Process Thumbnails]**. Gerar miniaturas por meio da etapa **[!UICONTROL Processar miniaturas]** é a maneira mais lenta e intensiva de memória para criar miniaturas.
+A etapa **[!UICONTROL Assets de Imagens do Processo do Dynamic Media]** usa o servidor de imagem para gerar miniaturas, independentemente da configuração aplicada à etapa **[!UICONTROL Miniaturas do Processo]**. Gerar miniaturas por meio da etapa **[!UICONTROL Processar miniaturas]** é a maneira mais lenta e intensiva de memória para criar miniaturas.
 
 O dimensionamento de miniatura é definido no seguinte formato: **[!UICONTROL largura:height:centro]**, por exemplo, `80:80:false`. A largura e a altura determinam o tamanho da miniatura em pixels. O valor central é falso ou verdadeiro. Se definido como true, indica que a imagem em miniatura tem exatamente o tamanho fornecido na configuração. Se a imagem redimensionada for menor, ela será centralizada na miniatura.
 
@@ -150,7 +187,7 @@ O dimensionamento de miniatura é definido no seguinte formato: **[!UICONTROL la
 **Para configurar o tamanho da miniatura da imagem:**
 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Fluxo de trabalho]** > **[!UICONTROL Modelos]** > **[!UICONTROL Ativo de atualização do DAM]** > **[!UICONTROL Editar]**.
-1. Selecione a etapa **[!UICONTROL Dynamic Media Process Image Assets]** e selecione a guia **[!UICONTROL Miniaturas]**. Altere o tamanho da miniatura, conforme necessário, e selecione **[!UICONTROL OK]**.
+1. Selecione a etapa **[!UICONTROL Assets de imagem do processo do Dynamic Media]** e selecione a guia **[!UICONTROL Miniaturas]**. Altere o tamanho da miniatura, conforme necessário, e selecione **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -191,11 +228,11 @@ Criar predefinições de imagem para aplicar configurações de forma consistent
 
 Se sua intenção for oferecer suporte à assimilação de arquivos AI, PDF e EPS para que você possa gerar a representação dinâmica desses formatos de arquivo, revise as informações a seguir antes de criar Predefinições de imagem.
 
-Consulte [formatos de arquivo do Adobe Illustrator (AI), PostScript® (EPS) e PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
+Consulte os formatos de arquivo do [Adobe Illustrator (AI), PostScript® (EPS) e PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
 
 Se você pretende suportar a assimilação de arquivos INDD para gerar uma representação dinâmica desse formato de arquivo, revise as informações a seguir antes de criar Predefinições de imagem.
 
-Consulte o [formato de arquivo INDD (InDesign)](#indesign-indd-file-format).
+Consulte o [formato de arquivo do InDesign (INDD)](#indesign-indd-file-format).
 
 **Para criar predefinições de imagem:**
 
@@ -230,7 +267,7 @@ Deixá-los em branco informa ao Experience Manager que essa Predefinição de im
 
 ### Opções de predefinição de imagem {#image-preset-options}
 
-Ao criar ou editar Predefinições de imagem, você tem as opções descritas nesta seção. Além disso, a Adobe recomenda que estas opções de &quot;práticas recomendadas&quot; comecem:
+Ao criar ou editar Predefinições de imagem, você tem as opções descritas nesta seção. Além disso, a Adobe recomenda que essas opções de &quot;práticas recomendadas&quot; comecem:
 
 * **[!UICONTROL Formato]** (guia **[!UICONTROL Básico]**) - Selecione **[!UICONTROL JPEG]** ou outro formato que atenda aos seus requisitos. Todos os navegadores da Web são compatíveis com o formato de imagem JPEG; ele oferece um bom equilíbrio entre arquivos pequenos e qualidade de imagem. No entanto, as imagens no formato JPEG usam um esquema de compactação com perdas que pode apresentar artefatos de imagem indesejados se a configuração de compactação for muito baixa. Por esse motivo, a Adobe recomenda definir a qualidade de compactação como 75. Essa configuração oferece um bom equilíbrio entre a qualidade da imagem e o tamanho pequeno de arquivo.
 
@@ -244,7 +281,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
 | --- | --- |
 | **Nome** | Insira um nome descritivo sem espaços em branco. Para ajudar os usuários a identificarem essa predefinição de imagem, inclua a especificação do tamanho da imagem no nome. |
 | **Largura e Altura** | Insira, em pixels, o tamanho da imagem. A largura e a altura devem ser maiores que 0 pixels. Se um dos valores for 0, nenhuma predefinição será criada. Se ambos os valores estiverem em branco, uma Predefinição de imagem responsiva será criada. |
-| **Formato** | Escolha um formato no menu.<br>Escolher **JPEG** oferece as seguintes outras opções:<br>· **Qualidade** - A escala de qualidade JPEG é de 1 a 100. A escala fica visível quando você arrasta o controle deslizante.<br>· **Habilitar redução de resolução de crominância de JPG** - Como o olho é menos sensível a informações de cores de alta frequência do que a luminosidade de alta frequência, as imagens de JPEG dividem as informações da imagem em componentes de luminosidade e cor. Quando uma imagem de JPEG é compactada, o componente de luminosidade fica com a resolução total, enquanto os componentes de cor ficam com uma resolução mais baixa para calcular a média de grupos de pixels. A redução da resolução reduz o volume de dados para metade ou um terço com impacto mínimo na qualidade aparente. A redução da resolução não é aplicável a imagens em tons de cinza. Essa técnica reduz a quantidade de compactação útil para imagens com alto contraste (por exemplo, imagens com texto sobreposto).<br><br>Escolher **GIF** ou **GIF com alpha** fornece estas opções adicionais de **Quantização de Cores de GIF**:<br>· **Tipo** - Selecionar **Adaptável** (padrão), **Web** ou **Macintosh**. Se você selecionar **GIF com Alpha**, a opção Macintosh não estará disponível.<br>· **Pontilhamento** - Selecionar **Difuso** ou **Desativado**.<br>· **Número de Cores** - Insira um número de 2 a 256.<br>· **Lista de Cores** - Insira uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, digite `000000,888888,ffffff`.<br><br>Escolher **PDF**, **TIFF** ou **TIFF com alpha** fornece esta opção adicional:<br>· **Compactação** - Selecione um algoritmo de compactação. As opções de algoritmo para PDF são **None**, **Zip** e **Jpeg**; para TIFF, são **None**, **LZW**, **Jpeg** e **Zip**; e para TIFF com Alpha são **None**, **LZW** e **Zip**.<br><br>Escolher **PNG**, **PNG com Alpha** ou **EPS** não fornece opções adicionais. |
+| **Formato** | Escolha um formato no menu.<br>Escolher **JPEG** oferece as seguintes outras opções:<br>· **Qualidade** - A escala de qualidade do JPEG é de 1 a 100. A escala fica visível quando você arrasta o controle deslizante.<br>· **Habilitar Redução de Resolução de Crominância do JPG** - Como o olho é menos sensível a informações de cores de alta frequência do que a luminosidade de alta frequência, as imagens do JPEG dividem as informações da imagem em componentes de luminosidade e cor. Quando uma imagem do JPEG é compactada, o componente de luminosidade é deixado com a resolução total, enquanto os componentes de cor têm uma resolução mais baixa para calcular a média de grupos de pixels. A redução da resolução reduz o volume de dados para metade ou um terço com impacto mínimo na qualidade aparente. A redução da resolução não é aplicável a imagens em tons de cinza. Essa técnica reduz a quantidade de compactação útil para imagens com alto contraste (por exemplo, imagens com texto sobreposto).<br><br>Escolher **GIF** ou **GIF com alfa** fornece estas opções adicionais de **Quantização de Cores do GIF**:<br>· **Tipo** - Selecionar **Adaptável** (padrão), **Web** ou **Macintosh**. Se você selecionar **GIF com Alpha**, a opção Macintosh não estará disponível.<br>· **Pontilhamento** - Selecionar **Difuso** ou **Desativado**.<br>· **Número de Cores** - Insira um número de 2 a 256.<br>· **Lista de Cores** - Insira uma lista separada por vírgulas. Por exemplo, para branco, cinza e preto, digite `000000,888888,ffffff`.<br><br>Escolher **PDF**, **TIFF** ou **TIFF com alfa** fornece esta opção adicional:<br>· **Compactação** - Selecione um algoritmo de compactação. As opções de algoritmo para o PDF são **None**, **Zip** e **Jpeg**; para o TIFF, são **None**, **LZW**, **Jpeg** e **Zip**; e para o TIFF com Alpha são **None**, **LZW** e **Zip**.<br><br>Escolher **PNG**, **PNG com Alpha** ou **EPS** não fornece opções adicionais. |
 | **Nitidez** | Selecione **Habilitar Nitidez Simples** para aplicar um filtro de nitidez básico à imagem depois de todo o dimensionamento. A nitidez pode ajudar a compensar o desfoque que pode ocorrer ao exibir uma imagem de tamanho diferente. |
 
 #### Opções da guia Avançadas {#advanced-tab-options}
@@ -257,7 +294,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
   </tr>
   <tr>
    <td><strong>Espaço de cor</strong></td>
-   <td>Selecione <strong>RGB, CMYK</strong> ou <strong>Tons de cinza</strong> para o espaço de cores.</td>
+   <td>Selecione <strong>RGB, CMYK</strong> ou <strong>Tons de Cinza</strong> para o espaço de cores.</td>
   </tr>
   <tr>
    <td><strong>Perfil de cor</strong></td>
@@ -297,7 +334,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
     </ul>
     <div>
       A nitidez é descrita em
-     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Usando nitidez de imagem com vídeo do Experience Manager Dynamic Media</a>, no tópico da Ajuda online <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Nitidez de imagem</a> e em <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Práticas recomendadas para nitidez de imagens no PDF baixável do Dynamic Media Classic</a>.
+     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Usando nitidez de imagem com vídeo do Experience Manager Dynamic Media</a>, no tópico da Ajuda <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Nitidez de uma imagem</a> online e em <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Práticas recomendadas para nitidez de imagens no Dynamic Media Classic</a> baixáveis do PDF.
     </div> </td>
   </tr>
   <tr>
@@ -326,7 +363,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
      <li><code>req=saveToFile</code></li>
      <li><code>req=targets</code></li>
      <li><code>template=</code></li>
-     <li>Serviços Dynamic Media não essenciais: SVG, renderização de imagem e Web-to-Print</li>
+     <li>Serviços não essenciais do Dynamic Media: SVG, renderização de imagem e Web para impressão</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -340,7 +377,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
 >[!NOTE]
 >
->Alguns modificadores de imagem [ não podem ser usados em Experience Manager](#advanced-tab-options).
+>Alguns modificadores de imagem [não podem ser usados no Experience Manager](#advanced-tab-options).
 
 * [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - Inverte cada componente de cor para um efeito de imagem negativo.
 
@@ -391,7 +428,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 1. Selecione uma predefinição e, em seguida, **[!UICONTROL Editar]**. A janela **[!UICONTROL Editar predefinição de imagem]** é aberta.
 1. Faça alterações e selecione **[!UICONTROL Salvar]** para salvar as alterações ou **[!UICONTROL Cancelar]** para cancelar as alterações.
 
-### Predefinições de imagem do Publish {#publishing-image-presets}
+### Publicar predefinições de imagem {#publishing-image-presets}
 
 As predefinições de imagem são publicadas automaticamente.
 

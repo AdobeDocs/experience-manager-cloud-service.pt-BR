@@ -4,19 +4,53 @@ description: Editar imagens usando opções viabilizadas pelo [!DNL Adobe Expres
 role: User
 exl-id: cfc4c7b7-da8c-4902-9935-0e3d4388b975
 feature: Best Practices, Interactive Images, Smart Crop, Smart Imaging
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1145'
-ht-degree: 77%
+source-wordcount: '1173'
+ht-degree: 75%
 
 ---
 
 # Editar imagens no [!DNL Assets view] {#edit-images-in-assets-view}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-A interface de visualização do Assets permite a edição básica de imagens viabilizada pelo Adobe Express, integrada à interface do usuário. Essa edição inclui redimensionamento, remoção de fundo, corte e conversão entre os formatos JPEG e PNG. Além disso, permite a edição avançada por meio da interface Adobe Express Incorporada na interface de visualização do Assets.
+A interface de exibição do Assets permite a edição básica de imagens fornecida pelo Adobe Express, integrada à interface do usuário. Essa edição inclui redimensionamento, remoção de fundo, corte e conversão entre os formatos JPEG e PNG. Além disso, permite a edição avançada por meio da interface do Adobe Express Incorporada na interface de visualização do Assets.
 
 Após editar uma imagem, é possível salvá-la como uma nova versão. O controle de versão permite reverter para o ativo original posteriormente, se necessário. Para editar uma imagem, [abra sua visualização](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/navigate-view#preview-assets) e clique em **Editar imagem**.
 
@@ -36,7 +70,7 @@ Para obter informações de referência adicionais, consulte - [Introdução ao 
 >title="Adobe Express Integration"
 >abstract="Easy and intuitive image-editing tools powered by Adobe Express available directly within AEM Assets to increase content reuse and accelerate content velocity."-->
 
-### Editar imagem na visualização Assets usando o Adobe Express {#edit-image-on-assets-view-using-adobe-express}
+### Editar imagem na exibição do Assets usando o Adobe Express {#edit-image-on-assets-view-using-adobe-express}
 
 Depois de navegar para o Modo de Exibição do Assets, clique em **Assets**, selecione uma imagem e clique em **Editar** no painel superior. A nova tela exibe as opções de edição disponíveis fornecidas pelo Adobe Express, que incluem redimensionamento, remoção de fundo, corte e conversão entre os formatos JPEG e PNG.
 
@@ -88,7 +122,7 @@ A imagem cortada estará disponível para download. É possível salvar o ativo 
 
 ### Editar imagens usando o editor integrado do Adobe Express {#edit-images-in-adobe-express-embedded-editor}
 
-Os usuários com direito ao Express podem usar o editor Express incorporado na Exibição do Assets para editar conteúdo facilmente e criar novo conteúdo com GenAI do Adobe Firefly. Isso melhora a reutilização do conteúdo e aumenta a sua velocidade. Você também pode usar elementos predefinidos para que seu ativo tenha uma aparência incrível ou para executar ações de edição rápidas na imagem com apenas alguns cliques.
+Os usuários com direito ao Express podem usar o editor Express incorporado na Exibição do Assets para editar conteúdo facilmente e criar novo conteúdo com a GenAI da Adobe Firefly. Isso melhora a reutilização do conteúdo e aumenta a sua velocidade. Você também pode usar elementos predefinidos para que seu ativo tenha uma aparência incrível ou para executar ações de edição rápidas na imagem com apenas alguns cliques.
 
 ![express na interface do usuário do essentials](/help/assets/assets/express-in-essentials-ui.jpg)
 Para editar imagens usando o editor inserido do [!DNL Adobe Express], siga as etapas abaixo:
@@ -124,7 +158,7 @@ Para editar imagens usando o editor inserido do [!DNL Adobe Express], siga as et
 
 O [!DNL Assets view] permite criar um novo modelo do zero usando o editor integrado do [!DNL Adobe Express]. Para criar um novo ativo usando o [!DNL Adobe Express], execute as etapas a seguir:
 
-1. Navegue até **[!UICONTROL Minha Workspace]** e clique em **[!UICONTROL Criar]** dentro do banner Adobe Express que é exibido na parte superior. A tela em branco do [!DNL Adobe Express] é exibida dentro da interface do [!DNL Assets view].
+1. Navegue até **[!UICONTROL Meu Workspace]** e clique em **[!UICONTROL Criar]** dentro do banner do Adobe Express que é exibido na parte superior. A tela em branco do [!DNL Adobe Express] é exibida dentro da interface do [!DNL Assets view].
 1. Crie o conteúdo usando [modelos](https://helpx.adobe.com/br/express/using/work-with-templates.html). Caso contrário, navegue até **[!UICONTROL Seus itens]** para modificar o conteúdo existente.
 1. Após concluir a edição, clique em **[!UICONTROL Salvar]**.
 1. Especifique o caminho de destino para o ativo criado e clique em **[!UICONTROL Salvar como novo ativo]**.

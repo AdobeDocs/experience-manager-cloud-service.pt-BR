@@ -1,18 +1,55 @@
 ---
 title: Visualizar ativos
-description: Saiba como visualizar ativos no Dynamic Media para que você possa ver como ele é visualizado por um cliente em seu próprio navegador da Web.
+description: Saiba como visualizar ativos no Dynamic Media para que você possa ver como eles são visualizados por um cliente em seu próprio navegador da Web.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1274'
 ht-degree: 1%
 
 ---
 
 # Visualizar ativos{#previewing-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Você pode usar a Visualização para ver como um ativo digital carregado é exibido quando visualizado por um cliente em seu próprio navegador da Web. O visualizador padrão incorporado entre dispositivos atribuído ao ativo é usado para a Pré-visualização.
 
@@ -31,7 +68,7 @@ Para habilitar ou desabilitar predefinições do visualizador na interface do us
 
 **Para visualizar os ativos:**
 
-1. Em **[!UICONTROL Experience Manager]**, na página **[!UICONTROL Navegação]**, selecione **[!UICONTROL Assets]** e depois **[!UICONTROL Arquivos]** para acessar os ativos.
+1. No **[!UICONTROL Experience Manager]**, na página **[!UICONTROL Navegação]**, selecione **[!UICONTROL Assets]** e depois **[!UICONTROL Arquivos]** para acessar os ativos.
 1. Próximo ao canto superior direito da página, na lista suspensa **[!UICONTROL Exibição]**, selecione **[!UICONTROL Exibição de Lista]**.
 1. (Opcional) Use a coluna **[!UICONTROL Tipo]** para classificar os ativos pelo tipo que deseja visualizar.
 1. Na coluna **[!UICONTROL Título]**, selecione o nome do título (não a imagem em miniatura) do ativo que deseja visualizar.

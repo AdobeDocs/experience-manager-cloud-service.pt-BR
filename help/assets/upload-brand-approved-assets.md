@@ -3,9 +3,9 @@ title: Carregar os ativos aprovados pela sua marca para  [!DNL Content Hub]
 description: Saiba como fazer upload dos ativos aprovados pela sua marca para o Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1014'
 ht-degree: 5%
 
 ---
@@ -17,8 +17,42 @@ ht-degree: 5%
 >title="Fazer upload de ativos aprovados pela marca para o Centro de conteúdo"
 >abstract="Adicione ativos aprovados ao Centro de conteúdo a partir do sistema de arquivos local ou importe-os de fontes de dados do OneDrive ou do Dropbox. Todos os ativos são exibidos no nível superior do Centro de conteúdo, independentemente da estrutura de pastas, para aprimorar os recursos de pesquisa."
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
@@ -28,7 +62,7 @@ ht-degree: 5%
 
 [Os usuários do Content Hub com direitos para adicionar ativos](/help/assets/deploy-content-hub.md#onboard-content-hub-users-add-assets) podem adicionar ativos ao Content Hub a partir do sistema de arquivos local ou importar ativos de fontes de dados do OneDrive ou do Dropbox. Todos os ativos são exibidos no nível superior do Content Hub, independentemente da estrutura de pastas disponível no sistema de arquivos local ou nas fontes de dados do OneDrive e do Dropbox para aprimorar os recursos de pesquisa.
 
-Os ativos marcados como `Approved` no Assets as a Cloud Service ficam disponíveis automaticamente no Content Hub. Para obter mais informações, consulte [Aprovar ativos para o Content Hub](/help/assets/approve-assets-content-hub.md).
+Os ativos marcados como `Approved` no Assets as a Cloud Service estão automaticamente disponíveis no Content Hub. Para obter mais informações, consulte [Aprovar ativos para o Content Hub](/help/assets/approve-assets-content-hub.md).
 
 Para aprimorar ainda mais a pesquisa de ativos, o Content Hub permite:
 
@@ -63,7 +97,7 @@ Para adicionar ativos ao Content Hub, execute as seguintes etapas:
 
 1. Defina o nome do upload usando o campo **[!UICONTROL Nome da campanha]**. Você pode usar um nome existente ou criar um novo. À medida que você digita o nome, a Content Hub fornece mais opções. <!--You can define multiple Campaign names for your upload. While you are typing a name, either click anywhere else within the dialog box or press the `,` (Comma) key to register the name.-->
 
-   Como prática recomendada, o Adobe recomenda especificar valores no restante dos campos, bem como criar uma experiência de pesquisa aprimorada para os ativos carregados.
+   Como prática recomendada, a Adobe recomenda especificar valores no restante dos campos, bem como criar uma experiência de pesquisa aprimorada para os ativos carregados.
 
 1. Da mesma forma, defina valores para os campos **[!UICONTROL Palavras-chave]**, **[!UICONTROL Canais]**, **[!UICONTROL Cronograma]** e **[!UICONTROL Região]**. Marcar e agrupar ativos por palavras-chave, canais e localização permite que todos que usam o conteúdo aprovado da empresa encontrem esses ativos e os mantenham organizados.
 
@@ -74,17 +108,17 @@ Para adicionar ativos ao Content Hub, execute as seguintes etapas:
 Os administradores também podem configurar os campos obrigatórios e opcionais exibidos durante o upload de ativos, como nome da campanha, palavras-chave, canais e assim por diante. Para obter mais informações, consulte [Configurar a interface do usuário do Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
 
-## Adicionar ativos ao Content Hub a partir de fontes de dados do OneDrive ou do Dropbox {#add-assets-onedrive-dropbox}
+## Adicionar ativos ao Content Hub a partir de fontes de dados do OneDrive ou da Dropbox {#add-assets-onedrive-dropbox}
 
-Para adicionar ativos ao Content Hub a partir de fontes de dados do OneDrive ou Dropbox:
+Para adicionar ativos ao Content Hub a partir de fontes de dados do OneDrive ou do Dropbox:
 
 1. Clique em **[!UICONTROL Adicionar Assets]** para exibir a caixa de diálogo **[!UICONTROL Adicionar ativos aprovados]**, que permite importar ativos do OneDrive ou do Dropbox.
 
-1. Clique em **[!UICONTROL OneDrive]** ou **[!UICONTROL Dropbox]** para iniciar o processo de importação. O Content Hub solicita que você faça logon em sua conta do OneDrive ou do Dropbox e, em seguida, exibe sua estrutura de pastas do OneDrive ou do Dropbox no painel esquerdo.
+1. Clique em **[!UICONTROL OneDrive]** ou **[!UICONTROL Dropbox]** para iniciar o processo de importação. O Content Hub solicita que você faça logon em sua conta do OneDrive ou do Dropbox e exibe sua estrutura de pastas do OneDrive ou do Dropbox no painel esquerdo.
 
 1. Clique no ícone + adjacente ao arquivo ou ao nome da pasta para exibir o item na lista de Itens selecionados. Depois de selecionar todos os arquivos que precisam ser adicionados ao portal do Content Hub, repita as etapas de 3 a 6 de [Adicionar ativos ao Content Hub a partir do sistema de arquivos local](#add-assets-local-file-system) para concluir o processo de carregamento.
 
-   ![Carregar ativos para o Content Hub a partir do OneDrive ou Dropbox](assets/add-assets-onedrive-dropbox.png)
+   ![Carregar ativos do OneDrive ou do Dropbox para o Content Hub](assets/add-assets-onedrive-dropbox.png)
 
 Os administradores também podem configurar os campos obrigatórios e opcionais exibidos durante o upload de ativos, como nome da campanha, palavras-chave, canais e assim por diante. Para obter mais informações, consulte [Configurar a interface do usuário do Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 
@@ -96,6 +130,6 @@ A exibição de ativos carregados usando o Content Hub depende de se você [habi
 
 * Se a opção **[!UICONTROL Aprovação automática]** estiver habilitada, os ativos carregados usando o Content Hub estarão automaticamente disponíveis.
 
-* Se a opção **[!UICONTROL Aprovação automática]** estiver desabilitada, os ativos carregados usando o Content Hub não serão exibidos automaticamente. Os ativos estão disponíveis na pasta `hydrated-assets` do seu ambiente as a Cloud Service do Assets. Navegue até a pasta e [edite em massa](#bulk-approve-assets-content-hub) o status desses ativos para `Approved` para que eles sejam exibidos no Content Hub.
+* Se a opção **[!UICONTROL Aprovação automática]** estiver desabilitada, os ativos carregados usando o Content Hub não serão exibidos automaticamente. Os ativos estão disponíveis na pasta `hydrated-assets` do seu ambiente do Assets as a Cloud Service. Navegue até a pasta e [edite em massa](#bulk-approve-assets-content-hub) o status desses ativos para `Approved` para que eles sejam exibidos no Content Hub.
 
 ![processo de aprovação do Content Hub](/help/assets/assets/content-hub-approval.png)

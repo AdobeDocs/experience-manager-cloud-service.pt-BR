@@ -1,68 +1,100 @@
 ---
 title: Assets Ultimate
-description: Learn more about key aspects of Assets Ultimate, such as, key benefits, user types and their privileges.
+description: Saiba mais sobre os principais aspectos do Assets Ultimate, como benefícios principais, tipos de usuários e seus privilégios.
 feature: Asset Management
 role: User, Admin
-source-git-commit: f033efd954ea7f9d27a891bfb9c0226e9d9c1432
+exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '869'
 ht-degree: 2%
 
 ---
 
-# [!DNL Assets] {#assets-ultimate-user-types-privileges}
+# as a Cloud Service Ultimate [!DNL Assets] {#assets-ultimate-user-types-privileges}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [](/help/assets/metadata-best-practices.md) | [](/help/assets/product-overview.md) | [](/help/assets/dynamic-media-open-apis-overview.md) | [](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-![](/help/assets/assets/aem-assets-ultimate-banner.png)
+![Assets as a Cloud Service Ultimate](/help/assets/assets/aem-assets-ultimate-banner.png)
 
 O Assets as a Cloud Service Ultimate oferece recursos avançados de DAM. O AEM Assets Ultimate foi projetado para gerenciar cadeias de fornecimento de conteúdo complexas, garantindo que cada parte do conteúdo tenha um bom desempenho em todos os canais.
 
-## Por que o Assets Ultimate? {#why-ultimate-existing-new-users}
+## Por que Assets Ultimate? {#why-ultimate-existing-new-users}
 
-O Assets as a Cloud Service Ultimate oferece vários benefícios principais que ajudam a gerenciar as necessidades de ativos da sua organização de maneira eficaz, como:
+O Assets as a Cloud Service Ultimate oferece vários benefícios principais que ajudam a gerenciar as necessidades de ativos de sua organização com eficiência, como:
 
 * Maior flexibilidade com mais tipos de usuários e privilégios associados a esses tipos de usuários, como usuários do Collaborator, usuários avançados e usuários limitados.
 
 * Distribuição contínua de ativos com o Content Hub.
 
-* Criação e remixagem de conteúdo alimentado por IA usando Adobe Express com Firefly.
+* Criação e remixagem de conteúdo habilitado por IA usando o Adobe Express com o Firefly.
 
 * Experiência de integração ou atualização mais suave para usuários novos e existentes.
 
 ## Principais recursos do Assets Ultimate {#capabilities-assets-ultimate}
 
-O Assets as a Cloud Service Ultimate permite executar várias operações importantes de gerenciamento de ativos digitais, como:
+O Assets as a Cloud Service Ultimate permite executar várias operações principais de gerenciamento de ativos digitais, como:
 
 * **Serviços de gerenciamento de ativos e bibliotecas**&#x200B;: ferramentas que permitem aos usuários assimilar, armazenar, catalogar, controlar, gerenciar e controlar os ativos digitais de uma marca em um repositório centralizado
 
 * **Pesquisa, Descoberta e Collaboration**: ferramentas que permitem aos usuários navegar, descobrir, compartilhar e colaborar em ativos necessários para criar experiências de cliente avançadas.
 
-* ****
+* **Segurança e Rights Management**: ferramentas para gerenciar acesso, permissões, direitos e segurança para garantir conformidade, consistência e integridade da marca.
 
-* ****
+* **Conexões do Creative Cloud**: ferramentas que permitem que as equipes de marketing e criação colaborem com acesso simplificado, comentários, revisões e anotações para atualizar ou finalizar ativos digitais.
 
-* ****
+* **Conexões do Experience Cloud**: ferramentas para dar suporte ao acesso nativo a ativos digitais de outros aplicativos e serviços da Experience Cloud.
 
 * **Content Hub (Distribution Portal Experience)**: ferramentas para expandir o acesso aos ativos digitais aprovados de uma marca para participantes estendidos, a fim de garantir a consistência da marca e o uso.
 
 * **Integrações**: integrações com outros aplicativos Adobe e não Adobe.
 
-* ****
+* **Dynamic Media (complemento)**: ferramentas para transformar e entregar imagens, vídeos e outros conteúdos emergentes para experiências multimídia avançadas e interativas para qualquer dispositivo em escala.
 
-* ****
+* **Personalização**: ferramentas para personalizar o acesso da interface do usuário do DAM às APIs para desenvolvimento adicional.
 
-* ****
+* **Extensibilidade personalizada**: grande flexibilidade por meio de sua robusta plataforma de API First, permitindo integração e personalização perfeitas para atender à complexa infraestrutura de TI do cliente.
 
-* ****
+* **Automação de conteúdo (complemento)**: ferramentas para unificar o gerenciamento de trabalho e automatizar fluxos de trabalho de transformação de ativos digitais para produção de conteúdo em escala.
 
-The operations that you can perform within Assets as a Cloud Service depends on your user type. [](#available-user-types)
+As operações que você pode executar no Assets as a Cloud Service dependem do seu tipo de usuário. Consulte [Tipos de usuários disponíveis](#available-user-types) para obter mais informações.
 
 
 ## Quais são os tipos e privilégios de usuário disponíveis? {#available-user-types}
 
-O Assets as a Cloud Service oferece quatro tipos de usuários. Cada tipo de usuário fornece um conjunto diferente de privilégios. Os tipos de usuário incluem:
+O Assets as a Cloud Service oferece quatro tipos de usuário. Cada tipo de usuário fornece um conjunto diferente de privilégios. Os tipos de usuário incluem:
 
 * **Administrador**: o usuário administrador padrão, que configura os outros três tipos de usuário na organização.
 
@@ -70,9 +102,9 @@ O Assets as a Cloud Service oferece quatro tipos de usuários. Cada tipo de usu�
 
 * **Usuários do Collaborator**: Como usuário do Collaborator, você pode:
 
-   * Trabalhe com ativos do Experience Manager por meio de integrações da Assets disponíveis para sua organização em outros produtos Adobe e aplicativos não Adobe.
+   * Trabalhe com ativos do Experience Manager por meio de integrações da Assets disponíveis para sua organização em outros produtos da Adobe e aplicativos que não sejam da Adobe.
 
-   * Crie e edite ativos usando o Adobe Express e o Firefly integrados, aproveitando modelos projetados profissionalmente, kits de marca, ativos da Adobe Stock e assim por diante.
+   * Crie e edite ativos usando o Adobe Express e o Firefly integrados, aproveitando modelos projetados profissionalmente, kits de marca, ativos do Adobe Stock e assim por diante.
 
    * Acesse e aproveite os ativos aprovados da sua organização usando o portal AEM Assets Content Hub.
 
@@ -80,13 +112,13 @@ O Assets as a Cloud Service oferece quatro tipos de usuários. Cada tipo de usu�
 
    * Acesse todos os recursos do AEM Assets, incluindo o gerenciamento de ativos, metadados e a governança e a automação gerais em torno de ativos digitais.
 
-   * Work with assets from Experience manager via integrations of Assets available to your organization in other Adobe and non-Adobe applications.
+   * Trabalhe com ativos do Experience Manager por meio de integrações da Assets disponíveis para sua organização em outros aplicativos da Adobe e que não sejam da Adobe.
 
-   * Crie e edite ativos usando o Adobe Express e o Firefly integrados, aproveitando modelos projetados profissionalmente, kits de marca, ativos da Adobe Stock e assim por diante.
+   * Crie e edite ativos usando o Adobe Express e o Firefly integrados, aproveitando modelos projetados profissionalmente, kits de marca, ativos do Adobe Stock e assim por diante.
 
    * Acesse e aproveite os ativos aprovados da sua organização usando o portal AEM Assets Content Hub.
 
-  ![Usuário as a Cloud Service do Assets](/help/assets/assets/assets-cs-power-users.png)
+  ![Usuário avançado do Assets as a Cloud Service](/help/assets/assets/assets-cs-power-users.png)
 
 A tabela a seguir resume os tipos de usuários disponíveis do AEM Assets, os privilégios que eles têm e os perfis de produtos necessários para obter esses privilégios:
 
@@ -95,17 +127,17 @@ A tabela a seguir resume os tipos de usuários disponíveis do AEM Assets, os pr
 |---------------|----------|----------|-------------------------|---|
 | **Recursos** |
 | Acessar ativos aprovados pela marca no portal do Content Hub | ✓ | ✓ | ✓ | ✓ |
-| Criar e editar ativos usando o Adobe Express e o Firefly incorporados | − | ✓ | ✓ | ✓ |
-| Integração de ativos em sua organização com aplicativos Adobe e não Adobe | − | ✓ | ✓ | ✓ |
-| Access all AEM Assets capabilities, such as, managing assets, metadata and the overall governance and automation | − | − | ✓ | ✓ |
+| Criar e editar ativos usando o Adobe Express e o Firefly integrados | − | ✓ | ✓ | ✓ |
+| Integração de ativos na organização com aplicativos da Adobe e não-Adobe | − | ✓ | ✓ | ✓ |
+| Acesse todos os recursos do AEM Assets, como o gerenciamento de ativos, metadados e a governança e a automação gerais | − | − | ✓ | ✓ |
 | Gerenciar permissões no conteúdo no ambiente de autor do AEM Assets | − | − | − | ✓ |
 | **O usuário precisa estar nesses perfis de produto (Admin Console)** |
 | AEM > Instância de entrega > Usuários limitados da AEM Assets | ✓ | ✓ | ✓ | ✓ |
 | AEM > Instância do autor da produção > Usuários do AEM Assets Collaborator | − | ✓ | − | − |
-| AEM > Production Author instance > AEM Assets Power Users | − | − | ✓ | − |
-| AEM > Instância do autor da produção > Administradores do AEM | − | − | − | ✓ |
-| **** | [](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | [](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Consulte [Usuários avançados integrados](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
+| AEM > Instância do autor de produção > Usuários avançados do AEM Assets | − | − | ✓ | − |
+| AEM > Instância do autor de produção > Administradores do AEM | − | − | − | ✓ |
+| **Mais informações** | Consulte [Habilitar Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | Consulte [Usuários Integrados do Collaborator](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Consulte [Usuários avançados integrados](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
 
-[](/help/assets/enable-assets-ultimate.md)
+Para obter informações sobre como começar a usar o Assets Ultimate, consulte [Habilitar o AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md).
 
-AEM Assets also provides a lighter weight DAM for customers who do not have advanced requirements such as, UI extensibility, API-driven automation, and custom code deployment. [](/help/assets/assets-prime.md)
+O AEM Assets também fornece um DAM mais leve para clientes que não têm requisitos avançados, como extensibilidade da interface, automação orientada por API e implantação de código personalizado. Para obter mais informações, consulte [AEM Assets Prime](/help/assets/assets-prime.md).

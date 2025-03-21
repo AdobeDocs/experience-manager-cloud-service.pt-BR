@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '2002'
 ht-degree: 8%
 
 ---
 
 # Conjuntos de rotação{#spin-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Um Conjunto de rotação simula o ato do mundo real de virar um objeto para examiná-lo. Os Conjuntos de rotação permitem a visualização de itens de qualquer ângulo, obtendo os principais detalhes visuais de qualquer ângulo.
 
@@ -26,7 +63,7 @@ Os conjuntos de rotação são designados por um banner com a palavra **[!UICONT
 >
 >Para obter informações sobre a interface do usuário do Assets, consulte [Gerenciamento de ativos com a interface para toque](/help/assets/manage-digital-assets.md) e aplique-a a uma nova pasta na qual os ativos do conjunto de imagens são carregados.
 
-Ao criar um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e impõe o seguinte limite:
+Ao criar um Conjunto de rotação, a Adobe recomenda a seguinte prática recomendada e impõe o seguinte limite:
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
@@ -72,7 +109,7 @@ Para começar a usar rapidamente os Conjuntos de rotação, siga estas etapas:
 
    Selecione o Conjunto de rotação e você pode visualizá-lo. Gire o grupo de rotação. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]**, disponível no menu suspenso do painel esquerdo.
 
-1. [Conjuntos de rotação do Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [Publicar Conjuntos de Rotação](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    A publicação de um Conjunto de rotação ativa o URL e a Cadeia de caracteres incorporada. Além disso, você deve [publicar a predefinição do visualizador](/help/assets/dynamic-media/managing-viewer-presets.md).
 
@@ -96,10 +133,10 @@ Consulte [Dynamic Media - Formatos de imagem de varredura compatíveis](/help/as
 
 ### Diretrizes para captura de imagens para seu Spin Set {#guidelines-for-shooting-spin-set-images}
 
-Veja a seguir algumas práticas recomendadas para imagens do conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito de rotação da imagem. No entanto, a inclusão de muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. O Experience Manager recomenda estas diretrizes para fotografar imagens para uso em Conjuntos de rotação:
+Veja a seguir algumas práticas recomendadas para imagens do conjunto de rotação. Em geral, quanto mais imagens você tiver em um Conjunto de rotação, melhor será o efeito de rotação da imagem. No entanto, a inclusão de muitas imagens no conjunto também aumenta a quantidade de tempo que as imagens levam para serem carregadas. A Experience Manager recomenda estas diretrizes para fotografar imagens para uso em conjuntos de rotação:
 
 * No mínimo, use 8 a 12 imagens em um conjunto de rotação unidimensional e 16 a 24 imagens em um Conjunto de rotação bidimensional. É necessário um mínimo de 8 imagens para girar 360°. Os Conjuntos de rotação unidimensionais são mais comuns, pois criar Conjuntos de rotação bidimensionais é uma tarefa trabalhosa.
-* Use um formato sem perdas; TIFF e PNG são recomendados.
+* Usar um formato sem perdas; TIFF e PNG são recomendados.
 * Mascarar todas as imagens para que o item apareça em branco puro ou em outro plano de fundo de alto contraste. Como opção, adicione sombras.
 * Verifique se os detalhes do produto estão bem iluminados e em foco.
 * Faça imagens giratórias para roupas de moda com um manequim ou modelo. Muitas vezes, o manequim é mascarado (usando um manequim de vidro) ou um manequim estilizado/costureira é mostrado na imagem. Você pode criar um conjunto de rotação no modelo definindo o número de ângulos. Marque cada ângulo com fita no chão para que você possa guiar o modelo para pisar e olhar na direção de cada tomada.
@@ -118,7 +155,7 @@ Esta seção descreve como criar conjuntos de rotação.
 >
 >A ordem em que as imagens aparecem em um conjunto de rotação é importante. Certifique-se de ordená-los para que a rotação seja uma vista suave de 360°.
 
-Ao criar um Conjunto de rotação, o Adobe recomenda a seguinte prática recomendada e impõe o seguinte limite:
+Ao criar um Conjunto de rotação, a Adobe recomenda a seguinte prática recomendada e impõe o seguinte limite:
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
@@ -190,7 +227,7 @@ Consulte também [limitações do Dynamic Media](/help/assets/dynamic-media/limi
 
 1. Na pesquisa, você pode selecionar **[!UICONTROL Filtros]**, expandir o **[!UICONTROL Dynamic Media]** e selecionar **[!UICONTROL Conjuntos]**.
 
-   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjunto de lotes. Para conjuntos automatizados, a consulta de pesquisa é conduzida usando o critério de pesquisa `Starts with`, que é diferente da pesquisa de Experience Manager, que é baseada no uso do critério de pesquisa `Contains`. Configurar o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
+   A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjunto de lotes. Para conjuntos automatizados, a consulta de pesquisa é conduzida usando o critério de pesquisa `Starts with`, que é diferente da pesquisa do Experience Manager, que é baseada no uso do critério de pesquisa `Contains`. Configurar o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
 
    ![chlimage_1-158](assets/chlimage_1-386.png)
 
@@ -232,6 +269,6 @@ Se você excluir a imagem que o Experience Manager usa para a miniatura substitu
 
 Consulte [Visualizar ativos](/help/assets/dynamic-media/previewing-assets.md).
 
-## Conjuntos de rotação do Publish {#publishing-spin-sets}
+## Publicar conjuntos de rotação {#publishing-spin-sets}
 
-Consulte [ativos do Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulte [Publicar ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

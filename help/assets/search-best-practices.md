@@ -5,25 +5,56 @@ contentOwner: KK
 exl-id: 446692de-5cea-4dbd-a98e-ec5177c7017e
 feature: Best Practices
 role: User
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2570'
 ht-degree: 2%
 
 ---
 
 # Práticas recomendadas de pesquisa do AEM Assets
 
-| [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 O [!DNL Adobe Experience Manager Assets] fornece métodos de pesquisa de ativos robustos que ajudam a alcançar maior velocidade do conteúdo. Às vezes, encontrar o ativo certo pode ser árduo e demorado. Portanto, o recurso de pesquisa de ativos no [!DNL Adobe Experience Manager Assets] é fundamental para o uso de um sistema de gerenciamento de ativos digitais - seja para uso posterior por criadores, para o gerenciamento robusto de ativos por usuários empresariais e profissionais de marketing ou para administração por administradores do DAM.
 
-Este documento de ajuda contém as práticas recomendadas de pesquisa do AEM com a ajuda de vários cenários para auxiliar os usuários do AEM a realizar pesquisas de nível básico a avançado.
+Este documento de ajuda contém as práticas recomendadas de pesquisa do AEM com a ajuda de vários cenários para ajudar os usuários do AEM a realizar pesquisa básica a avançada.
 
-## Pesquisa de Experience Manager de acesso {#access-experience-manager-search}
+## Acessar a pesquisa do Experience Manager {#access-experience-manager-search}
 
-A seguir estão as etapas básicas para executar no Experience Manager antes de iniciar sua pesquisa:
+A seguir estão as etapas básicas a serem executadas no Experience Manager antes de você iniciar sua pesquisa:
 
 * Na **exibição de Administrador**, vá para Assets > Arquivos no Experience Manager e clique no ícone de pesquisa na barra superior. Como alternativa, use uma barra (/) para abrir o campo Omni Search.
 Na **exibição do Assets**, a barra de pesquisa está visível na parte superior e pode ser acessada diretamente.
@@ -94,7 +125,7 @@ Quando quiser ser específico com os resultados da pesquisa e quiser uma opção
 
 ### Operador NOT {#not-operator}
 
-Quando quiser recuperar os resultados, excluindo algumas palavras-chave, você pode usar o operador NOT. O operador NOT usa o símbolo de hífen (-) para direcionar a pesquisa por AEM sobre o que excluir dos resultados da pesquisa. Por exemplo, a consulta de pesquisa `car - classic` que especifica metadados que contêm `car`, mas exclui `classic`.
+Quando quiser recuperar os resultados, excluindo algumas palavras-chave, você pode usar o operador NOT. O operador NOT usa o hífen (-) para direcionar a pesquisa do AEM sobre o que excluir dos resultados da pesquisa. Por exemplo, a consulta de pesquisa `car - classic` que especifica metadados que contêm `car`, mas exclui `classic`.
 
 ![Pesquisar usando operador NOT](assets/not-operator.png)
 
@@ -160,14 +191,14 @@ To perform a search on such a requirement, type 'classic car' in the search bar.
 ![Filter example 1](assets/filter-1.png)
 -->
 
-**Cenário 4: procure por documentos do tipo PDF não publicados com a palavra-chave `classic car`.**
+**Cenário 4: procure documentos do tipo PDF não publicados com a palavra-chave `classic car` neles.**
 
 Execute as seguintes etapas no **[!UICONTROL Modo de exibição de Administração]**:
 
 1. Digite `classic car` na barra de pesquisa.
 1. Vá para Filtros. Em [!UICONTROL Tipo de Arquivo], expanda [!UICONTROL Documentos] e expanda [!UICONTROL Processamento de Texto].
 1. Selecione [!UICONTROL PDF].
-1. Ir para [!UICONTROL Status] > [!UICONTROL Publish] > [!UICONTROL Não publicado].
+1. Ir para [!UICONTROL Status] > [!UICONTROL Publicar] > [!UICONTROL Não publicado].
 
 <!--![Filter example 2](assets/filter-2.png)-->
 
@@ -198,7 +229,7 @@ Para pesquisar ativos usando o cenário mencionado no **[!UICONTROL modo de exib
 
 A pesquisa no AEM permite criar consultas de pesquisa complexas com menos esforço. Veja a seguir os vários exemplos para ajudar você a criar consultas de pesquisa complexas:
 
-**Cenário 6: procure todos os documentos no repositório Experience Manager com `classic car` em seus metadados. O conteúdo do documento deve conter a palavra-chave `classic car`.**
+**Cenário 6: procure todos os documentos no repositório do Experience Manager com `classic car` em seus metadados. O conteúdo do documento deve conter a palavra-chave `classic car`.**
 
 O Adobe Experience Manager permite adicionar vários critérios à pesquisa. Você pode usar uma combinação de palavras-chave, operadores e filtros para restringir os resultados da pesquisa.
 
@@ -212,7 +243,7 @@ Para executar uma pesquisa para o cenário 6:
 
 Não é possível executar o cenário 6 no **[!UICONTROL modo de exibição do Assets]**, pois ele não oferece suporte ao uso de Curingas.
 
-**Cenário 7: procure todos os documentos no repositório de Experience Manager em que o conteúdo do documento deve incluir `car`, mas excluir `classic`. A mesma condição se aplica aos metadados de um ativo.**
+**Cenário 7: procure todos os documentos no repositório do Experience Manager em que o conteúdo do documento deve incluir `car`, mas excluir `classic`. A mesma condição se aplica aos metadados de um ativo.**
 
 Para executar uma pesquisa para o cenário 7:
 
@@ -252,7 +283,7 @@ A pesquisa exibe resultados semelhantes se você também estiver trabalhando na 
 
 **Cenário 9: encontrar correspondência semelhante para carro vermelho**
 
-Ao realizar sua pesquisa no AEM, você pode filtrar os resultados mostrando ativos semelhantes aos selecionados. Você pode usar a opção **Localizar semelhante** para restringir sua pesquisa à correspondência exata ou semelhante do ativo pesquisado. Isso ajuda a encontrar ativos que têm tags inteligentes semelhantes ao ativo selecionado. Por exemplo, quando você deseja pesquisar por ativos semelhantes, execute as seguintes etapas:
+Ao realizar a pesquisa no AEM, você pode filtrar os resultados mostrando ativos semelhantes aos selecionados. Você pode usar a opção **Localizar semelhante** para restringir sua pesquisa à correspondência exata ou semelhante do ativo pesquisado. Isso ajuda a encontrar ativos que têm tags inteligentes semelhantes ao ativo selecionado. Por exemplo, quando você deseja pesquisar por ativos semelhantes, execute as seguintes etapas:
 
 1. Pesquise o ativo de acordo com sua necessidade.
 1. Passe o mouse sobre o ativo > clique nas reticências > selecione [!UICONTROL Localizar semelhante].
@@ -293,7 +324,7 @@ Você pode melhorar a relevância de palavras-chave para ativos específicos par
 2. Na caixa Pesquisar Promover, especifique uma palavra-chave para a qual deseja impulsionar a pesquisa da imagem e clique em [!UICONTROL Adicionar]. Você pode especificar várias palavras-chave da mesma maneira.
 3. Clique em [!UICONTROL Salvar e fechar]. O ativo que você promoveu para essa palavra-chave aparece entre os principais resultados da pesquisa.
 
-## Itens importantes ao executar uma pesquisa no Experience Manager {#notable-things}
+## Itens importantes ao realizar uma pesquisa no Experience Manager {#notable-things}
 
 * Forneça informações de metadados do ativo para preparar seu ativo pesquisável pelo algoritmo Omni Search. Verifique se as informações de metadados do ativo foram atualizadas.
 * Use aspas duplas (&quot; &quot;) para tornar sua pesquisa exata e direta.

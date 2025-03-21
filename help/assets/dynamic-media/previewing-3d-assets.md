@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 6%
+source-wordcount: '667'
+ht-degree: 5%
 
 ---
 
 # Pré-visualizar ativos 3D no Adobe Experience Manager{#previewing-3d-assets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -25,9 +62,9 @@ O Experience Manager Assets é compatível com a assimilação, o gerenciamento,
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formatos compatíveis com a visualização de miniaturas no Experience Manager{#supported-thumbnail-previewing-assets}
+## Formatos compatíveis com a pré-visualização de miniaturas no Experience Manager{#supported-thumbnail-previewing-assets}
 
-O Experience Manager gera miniaturas para os seguintes formatos de arquivo por padrão:
+Por padrão, o Experience Manager gera miniaturas para os seguintes formatos de arquivo:
 
 | Extensão de arquivo 3D | Formato do arquivo | Tipo MIME | Notas |
 |---|---|---|---|
@@ -37,9 +74,9 @@ O Experience Manager gera miniaturas para os seguintes formatos de arquivo por p
 | 3DS | Modelo de 3D Studio | application/x-3ds |  |
 | USDz | Descrição de cena universal | model/vnd.usdz+zip |  |
 
-## Formatos compatíveis com pré-visualização 3D interativa no Experience Manager{#supported-3d-previewing-assets}
+## Formatos compatíveis com a pré-visualização 3D interativa no Experience Manager{#supported-3d-previewing-assets}
 
-O Experience Manager suporta a pré-visualização 3D interativa para os seguintes formatos de arquivo nativamente:
+O Experience Manager oferece suporte à visualização 3D interativa para os seguintes formatos de arquivo nativamente:
 
 | Extensão de arquivo 3D | Formato do arquivo | Tipo MIME | Notas |
 |---|---|---|---|
@@ -60,7 +97,7 @@ O Experience Manager suporta a pré-visualização 3D interativa para os seguint
     material_0_baseColor.jpeg
     material_0_normal.jpeg
 
-## Considerações de desempenho ao pré-visualizar ativos 3D no Experience Manager{#performance-3d-previewing-assets}
+## Considerações de desempenho ao visualizar ativos 3D no Experience Manager{#performance-3d-previewing-assets}
 
 O tempo necessário para abrir um ativo 3D na página de visualização de detalhes do ativo depende de vários fatores, como largura de banda, complexidade da imagem e latências para o servidor.
 

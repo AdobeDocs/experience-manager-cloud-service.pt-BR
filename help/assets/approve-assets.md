@@ -3,23 +3,57 @@ title: Aprovar ativos no Experience Manager
 description: Saiba como aprovar ativos no [!DNL Experience Manager].
 role: User
 exl-id: fe61a0f1-94d3-409a-acb9-195979668c25
-source-git-commit: 28ba98828cfa34933a2ec4f5d9b7d9681d42fa5a
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1143'
 ht-degree: 1%
 
 ---
 
 # Aprovar ativos em [!DNL Experience Manager]
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->O Dynamic Media com guia de recursos OpenAPI agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>O guia de recursos do Dynamic Media com OpenAPI agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
 >
->[!BADGE PDF do Guia de Recursos do Dynamic Media com OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Guia do Dynamic Media com recursos OpenAPI para PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
 Os gerentes e comerciantes de marca mantêm controle rigoroso sobre os ativos da marca. Somente as versões aprovadas e mais recentes do ativo estão disponíveis para uso, garantindo a consistência da marca em todos os canais e aplicativos.
 
@@ -27,7 +61,7 @@ Você pode aprovar ativos no AEM Assets para simplificar o gerenciamento de ativ
 
 ## Antes de começar {#pre-requisites}
 
-Você deve ter acesso ao AEM Assets as a Cloud Service e a permissões para editar a propriedade **[!UICONTROL Status da revisão]** de um ativo.
+Você deve ter acesso ao AEM Assets as a Cloud Service e permissões para editar a propriedade **[!UICONTROL Status da revisão]** de um ativo.
 
 ## Configuração
 
@@ -74,7 +108,7 @@ Para aprovar ativos em [!DNL Experience Manager Admin view], siga estas etapas:
 Simplifique o fluxo de trabalho aprovando rapidamente vários ativos de uma só vez. Você pode aprovar ativos em massa para acelerar o processo de aprovação, economizando tempo e melhorando a produtividade.
 <br>Siga estas etapas para aprovar ativos em massa em [!DNL Experience Manager Admin view]:
 
-1. Crie uma pasta no ambiente de criação (https://author-pXXX-eYYY.adobeaemcloud.com). Substitua _XXX_ pela ID do programa e _AAAA_ pela ID do ambiente do Experience Manager.
+1. Crie uma pasta no ambiente de criação (https://author-pXXX-eYYY.adobeaemcloud.com). Substitua _XXX_ pela ID do programa e _AAAA_ pela ID do ambiente da Experience Manager.
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de Metadados]**.
 1. Clique em **[!UICONTROL Criar]** no lado superior direito da página.
 1. Adicione um título de Perfil e clique em **[!UICONTROL Criar]**. O perfil de metadados foi criado com sucesso.
@@ -114,7 +148,7 @@ Da mesma forma, para aprovar ativos em massa em uma pasta na exibição do Asset
 
    Se você selecionar o status como `Approved` e se o [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) ou o [Content Hub](/help/assets/product-overview.md), ou ambos, estiver habilitado para a sua Experience Manager Assets, você poderá exibir as opções de `Delivery` e `Content Hub` disponíveis no campo **[!UICONTROL Destino da Aprovação]**.
 
-   * Selecione **[!UICONTROL Entrega]** para disponibilizar os ativos para Dynamic Media com recursos OpenAPI e Content Hub. Se o Content Hub não estiver ativado, selecionar essa opção disponibiliza os ativos somente para o Dynamic Media com recursos OpenAPI.
+   * Selecione **[!UICONTROL Entrega]** para disponibilizar os ativos para o Dynamic Media com recursos OpenAPI e Content Hub. Se o Content Hub não estiver ativado, selecionar essa opção disponibiliza os ativos somente para o Dynamic Media com recursos OpenAPI.
    * Selecione **[!UICONTROL Content Hub]** para disponibilizar os ativos para o Content Hub.
 
    ![Status de aprovação](/help/assets/assets/approval-status-delivery.png)
@@ -135,7 +169,7 @@ Para copiar o URL de entrega de um ativo aprovado no repositório:
 
 1. Selecione o ativo e clique em **[!UICONTROL Detalhes]**.
 
-1. Clique no ícone do Dynamic Media disponível no painel direito.
+1. Clique no ícone Dynamic Media disponível no painel direito.
 
 1. Selecione o **[!UICONTROL Dynamic Media com OpenAPI]** disponível no painel **[!UICONTROL Dynamic Media]**.
 
@@ -146,4 +180,4 @@ Para copiar o URL de entrega de um ativo aprovado no repositório:
    >
    A opção para copiar o URL de entrega para ativos aprovados está disponível apenas na visualização Assets.
 
-Para obter informações sobre outras representações exibidas no painel do Dynamic Media, consulte [Exibir e baixar representações do Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).
+Para obter informações sobre outras representações exibidas no painel Dynamic Media, consulte [Exibir e baixar representações do Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

@@ -5,17 +5,51 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1382'
 ht-degree: 3%
 
 ---
 
 # Baixar ativos de [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -43,7 +77,7 @@ Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
 ## Baixar ativos usando a interface [!DNL Experience Manager] {#download-assets}
 
-O Experience Manager otimiza a experiência de download com base na quantidade e no tamanho do ativo. Arquivos menores são baixados da interface do usuário em tempo real. O [!DNL Experience Manager] baixa diretamente solicitações de ativos únicos para o arquivo original, em vez de colocar ativos únicos em um arquivo ZIP para permitir downloads mais rápidos. O Experience Manager suporta downloads grandes com solicitações assíncronas. As solicitações de download maiores que 100 GB são divididas em vários arquivos ZIP com um tamanho máximo de 100 MB cada.
+O Experience Manager otimiza a experiência de download com base na quantidade e no tamanho do ativo. Arquivos menores são baixados da interface do usuário em tempo real. O [!DNL Experience Manager] baixa diretamente solicitações de ativos únicos para o arquivo original, em vez de colocar ativos únicos em um arquivo ZIP para permitir downloads mais rápidos. O Experience Manager permite downloads grandes com solicitações assíncronas. As solicitações de download maiores que 100 GB são divididas em vários arquivos ZIP com um tamanho máximo de 100 MB cada.
 
 Por padrão, [!DNL Experience Manager] aciona uma notificação na [[!DNL Experience Manager] Caixa de Entrada](/help/sites-cloud/authoring/inbox.md) ao gerar um arquivo de download.
 
@@ -58,7 +92,7 @@ Os downloads assíncronos são acionados em qualquer um dos seguintes casos:
 * Se o tamanho do download for superior a 100 MB
 * Se o download levar mais de 30 segundos para se preparar
 
-Enquanto o download assíncrono é executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. Além das notificações da caixa de entrada de Experience Manager, o Experience Manager pode enviar emails para notificar o usuário após concluir o processo de download. Para habilitar este recurso, os administradores podem configurar o serviço de email [configurando uma conexão de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Enquanto o download assíncrono é executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. Além das notificações da caixa de entrada do Experience Manager, o Experience Manager pode enviar emails para notificar o usuário na conclusão do processo de download. Para habilitar este recurso, os administradores podem configurar o serviço de email [configurando uma conexão de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Depois que o serviço de email é configurado, os administradores e usuários podem ativar notificações por email na interface do Experience Manager.
 
@@ -161,10 +195,10 @@ Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, con
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
 >* [Baixar ativos protegidos por DRM](drm.md)
->* [Baixar ativos usando o aplicativo de desktop Experience Manager no Windows ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [Baixar ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [Baixe ativos usando o Adobe Assets Link nos aplicativos Adobe Creative Cloud compatíveis](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)

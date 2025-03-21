@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management, Connected Assets, Asset Distribution
 role: Admin, User, Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '3887'
+source-wordcount: '3915'
 ht-degree: 13%
 
 ---
@@ -16,8 +16,42 @@ ht-degree: 13%
 
 # Usar o Connected Assets para compartilhar ativos do DAM em [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -38,7 +72,7 @@ A funcionalidade Assets conectada oferece suporte aos casos de uso acima integra
 
 ## Visão geral do Connected Assets {#overview-of-connected-assets}
 
-Ao editar páginas no [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, procurar e incorporar facilmente ativos de uma implantação diferente do [!DNL Assets] que atue como uma fonte de ativos. Os administradores criam uma integração única de uma implantação do [!DNL Experience Manager] com o recurso [!DNL Sites] com outra implantação do [!DNL Experience Manager] com o recurso [!DNL Assets]. Você também pode usar imagens do Dynamic Media nas páginas da Web do site por meio do Connected Assets e usar as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagem.
+Ao editar páginas no [!UICONTROL Editor de páginas] como destino, os autores podem pesquisar, procurar e incorporar facilmente ativos de uma implantação diferente do [!DNL Assets] que atue como uma fonte de ativos. Os administradores criam uma integração única de uma implantação do [!DNL Experience Manager] com o recurso [!DNL Sites] com outra implantação do [!DNL Experience Manager] com o recurso [!DNL Assets]. Você também pode usar imagens do Dynamic Media nas páginas da Web do site por meio do Connected Assets e usar as funcionalidades do Dynamic Media, como predefinições de recorte inteligente e imagem.
 
 Para os autores do [!DNL Sites], os ativos remotos estão disponíveis como ativos locais somente leitura. A funcionalidade suporta pesquisa e acesso ininterruptos a ativos remotos no Editor de sites. Para quaisquer outros casos de uso que possam exigir que o conjunto completo de ativos esteja disponível no Sites, considere migrar os ativos em massa em vez de usar o Connected Assets.
 
@@ -78,9 +112,9 @@ As várias funções envolvidas para configurar o recurso e seus grupos de usuá
 
 ### Arquitetura do Connected Assets {#connected-assets-architecture}
 
-Experience Manager permite conectar uma implantação remota do DAM como uma origem a várias implantações de Experience Manager [!DNL Sites]. No entanto, você pode conectar uma implantação do [!DNL Sites] com apenas uma implantação remota do DAM.
+O Experience Manager permite conectar uma implantação remota do DAM como uma origem a várias implantações do Experience Manager [!DNL Sites]. No entanto, você pode conectar uma implantação do [!DNL Sites] com apenas uma implantação remota do DAM.
 
-Avalie o número ideal de instâncias do Sites para se conectar a uma implantação remota do DAM. O Adobe recomenda conectar de forma incremental as instâncias do Sites à implantação e testar se não há impacto no desempenho no DAM remoto, pois cada instância do Sites conectada contribui para o tráfego de dados no DAM remoto.
+Avalie o número ideal de instâncias do Sites para se conectar a uma implantação remota do DAM. A Adobe recomenda conectar de forma incremental as instâncias do Sites à implantação e testar se não há impacto no desempenho no DAM remoto, pois cada instância do Sites conectada contribui para o tráfego de dados no DAM remoto.
 
 Os diagramas a seguir ilustram os cenários compatíveis:
 
@@ -148,7 +182,7 @@ Você pode verificar a conectividade entre as [!DNL Sites] implantações config
 
 <!-- TBD: Check if Launchers are to be disabled on CS instances. Is this option even available to the users on CS? -->
 
-## Usar ativos do Dynamic Media {#dynamic-media-assets}
+## Uso de ativos do Dynamic Media {#dynamic-media-assets}
 
 
 Com o Connected Assets, você pode usar ativos de imagem processados pelo [!DNL Dynamic Media] a partir da implantação remota do DAM em páginas do Sites e usar as funcionalidades do Dynamic Media, como recorte inteligente e predefinições de imagem.
@@ -173,7 +207,7 @@ Para configurar o [!DNL Dynamic Media] em [!DNL Assets] e [!DNL Sites] implanta�
 
    * Use o mesmo nome de empresa em todas as configurações.
    * No [!DNL Sites] local, no [!UICONTROL modo de sincronização do Dynamic Media], selecione **[!UICONTROL Desabilitado por padrão]**. A implantação [!DNL Sites] deve ter acesso somente leitura à conta [!DNL Dynamic Media].
-   * No [!DNL Sites] local, na opção **[!UICONTROL Publish Assets]**, selecione **[!UICONTROL Publish Seletiva]**. Não selecione **[!UICONTROL Sincronizar todo o conteúdo]**.
+   * No [!DNL Sites] local, na opção **[!UICONTROL Publicar Assets]**, selecione **[!UICONTROL Publicação Seletiva]**. Não selecione **[!UICONTROL Sincronizar todo o conteúdo]**.
    * Na implantação remota [!DNL Assets], no [!UICONTROL modo de sincronização do Dynamic Media], selecione **[!UICONTROL Habilitado por padrão]**.
 
 1. Habilitar o [[!DNL Dynamic Media] suporte no Componente principal de Imagem](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media). Este recurso habilita o [Componente de imagem](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html) padrão para exibir [!DNL Dynamic Media] imagens quando [!DNL Dynamic Media] imagens são usadas por autores em páginas da Web na implantação local [!DNL Sites].
@@ -283,7 +317,7 @@ Você pode conectar uma implantação remota do DAM a uma implantação do [!DNL
 
 +++
 
-+++**Você pode usar o Dynamic Media Assets da sua implantação do [!DNL Sites] após configurar o Connected Assets?**
++++**Você pode usar os ativos do Dynamic Media da sua implantação do [!DNL Sites] após configurar o Connected Assets?**
 
 Após configurar o Connected Assets, [!DNL Dynamic Media] ativos ficam disponíveis na implantação do [!DNL Sites] em modo somente leitura. Como resultado, você não pode usar o [!DNL Dynamic Media] para processar ativos na implantação do [!DNL Sites]. Para obter mais informações, consulte [Configurar uma conexão entre implantações do Sites e do Dynamic Media](#dynamic-media-assets).
 
@@ -301,9 +335,9 @@ Não, você não pode usar fragmentos de conteúdo e ativos de vídeo da implant
 
 +++
 
-+++**Você pode usar os ativos da Dynamic Media da implantação remota do DAM na implantação do [!DNL Sites] após configurar o Connected Assets?**
++++**Você pode usar os ativos do Dynamic Media da implantação remota do DAM na implantação do [!DNL Sites] após configurar o Connected Assets?**
 
-Sim, você pode configurar e usar ativos de imagem do Dynamic Media a partir da implantação remota do DAM na implantação do [!DNL Sites] após configurar o Connected Assets. Para obter mais informações, consulte [Configurar uma conexão entre implantações do Sites e do Dynamic Media](#dynamic-media-assets).
+Sim, você pode configurar e usar os ativos de imagem do Dynamic Media da implantação remota do DAM na implantação do [!DNL Sites] após configurar o Connected Assets. Para obter mais informações, consulte [Configurar uma conexão entre implantações do Sites e do Dynamic Media](#dynamic-media-assets).
 
 +++
 
@@ -384,4 +418,4 @@ Para solucionar erros comuns, siga estas etapas:
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

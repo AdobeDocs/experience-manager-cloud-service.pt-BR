@@ -3,17 +3,51 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: e22e4e530c2d023724b360c488cab2b59ec22fc4
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1332'
-ht-degree: 34%
+source-wordcount: '1360'
+ht-degree: 33%
 
 ---
 
 # Seletor de ativos de micro front-end {#Overview}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 O Seletor de ativos de micro front-end fornece uma interface do usuário que se integra facilmente ao repositório [!DNL Experience Manager Assets] para navegar ou pesquisar ativos digitais disponíveis no repositório e usá-los na experiência de criação do aplicativo.
 
@@ -55,14 +89,14 @@ Use os pré-requisitos acima se precisar do fluxo de trabalho de autenticação 
 
 **Ver mais**
 
-* [Integrar o Seletor de ativos a um aplicativo Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
-* [Integrar o Seletor de ativos a um aplicativo não-Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
+* [Integrar o Seletor de ativos a um aplicativo do Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
+* [Integrar o Seletor de ativos a um aplicativo que não seja da Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
 * [Integrar APIs abertas de mídia dinâmica do Seletor de ativos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
 >
-> Este repositório serve como uma documentação complementar que descreve as APIs disponíveis e exemplos de uso para integração do Seletor de ativos. Antes de tentar instalar ou usar o Seletor de ativos, verifique se sua organização recebeu o acesso ao Seletor de ativos como parte do perfil as a Cloud Service do Experience Manager Assets. Se não tiver sido provisionado, você não poderá integrar ou usar esses componentes. Para solicitar o provisionamento, o administrador do programa deve levantar um tíquete de suporte marcado como P2 do Admin Console e incluir as seguintes informações:
+> Este repositório serve como uma documentação complementar que descreve as APIs disponíveis e exemplos de uso para integração do Seletor de ativos. Antes de tentar instalar ou usar o Seletor de ativos, verifique se sua organização recebeu o acesso ao Seletor de ativos como parte do perfil do Experience Manager Assets as a Cloud Service. Se não tiver sido provisionado, você não poderá integrar ou usar esses componentes. Para solicitar o provisionamento, o administrador do programa deve levantar um tíquete de suporte marcado como P2 do Admin Console e incluir as seguintes informações:
 >
 >* Nomes de domínio em que o aplicativo de integração está hospedado.
 >* Após o provisionamento, sua organização receberá `imsClientId`, `imsScope` e um `redirectUrl` correspondentes aos ambientes solicitados que são essenciais para a configuração do Seletor de ativos. Sem essas propriedades válidas, não é possível executar as etapas de instalação.
@@ -180,23 +214,23 @@ O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Integrar o Seletor de ativos ao gráfico de aplicativos do Adobe"><br/>
-        <a href="integrate-asset-selector.md">Integrar o Seletor de ativos aos aplicativos Adobe</a>
+        <a href="integrate-asset-selector.md">Integrar o Seletor de ativos aos aplicativos da Adobe</a>
         <p>
-        <em>Saiba como integrar o Seletor de ativos a vários aplicativos Adobe.</em>
+        <em>Saiba como integrar o Seletor de ativos a vários aplicativos da Adobe.</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Integrar gráfico do Seletor de ativos"><br/>
         <a href="integrate-asset-selector.md">Integrar o Seletor de ativos a aplicativos de terceiros</a>
         <p>
-        <em>Descarte os recursos para integrar o Seletor de ativos a aplicativos que não sejam do Adobe.</em>
+        <em>Descarte os recursos para integrar o Seletor de Ativos a aplicativos que não sejam da Adobe.</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Integrar gráfico do Seletor de ativos"><br/>
         <a href="integrate-asset-selector.md">Integrar o Seletor de ativos às APIs abertas do Dynamic Media</a>
         <p>
-        <em>Saiba como integrar o Seletor de ativos às APIs do Dynamic Media Open.</em>
+        <em>Saiba como integrar o Seletor de ativos às APIs abertas do Dynamic Media.</em>
         </p>
      </td>
      <td>
@@ -233,7 +267,7 @@ O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
         <img src="assets/asset-selector-collections.gif" width="70px" height="70px" alt="Gráfico de coleções do Seletor de ativos"><br/>
         <a href="asset-selector-collections.md">Coleções de seletores de ativos</a>
         <p>
-        <em>Saiba como usar coleções no Seletor de ativos usando o repositório Experience Manager. </em>
+        <em>Saiba como usar coleções no Seletor de ativos usando o repositório do Experience Manager. </em>
         </p>
     </td>
     <td>

@@ -1,30 +1,67 @@
 ---
 title: Acessibilidade no Dynamic Media
-description: Saiba como trabalhar com vídeo no Dynamic Media, como práticas recomendadas para codificação de vídeos, publicação de vídeos no YouTube e visualização de relatórios de vídeo. Saiba também como adicionar legendas ocultas, legendas ou marcadores de capítulo a vídeos.
+description: Saiba como trabalhar com vídeo no Dynamic Media, como as práticas recomendadas para codificar vídeos, publicar vídeos no YouTube e visualizar relatórios de vídeo. Saiba também como adicionar legendas ocultas, legendas ou marcadores de capítulo a vídeos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
 exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
-source-git-commit: 6ad46350906c3b8a36a8e361714fa5fffdbf8e82
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '684'
 ht-degree: 1%
 
 ---
 
 # Acessibilidade no Dynamic Media {#accessibility-in-dm}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
 {{work-with-dynamic-media}}
 
-O Dynamic Media oferece suporte ao controle de teclado e às tecnologias assistivas, como leitores de tela JAWS e NVDA, na interface do usuário de criação.
+O Dynamic Media é compatível com controle de teclado e tecnologias assistivas, como leitores de tela JAWS e NVDA, na interface do usuário de criação.
 
 ## Suporte para acessibilidade do teclado no Dynamic Media {#keyboard-support-in-dm}
 
 Como o Dynamic Media é um plug-in para [!DNL Experience Manager Assets], a maioria do comportamento de controle do teclado é igual ao de [!DNL Experience Manager Assets]. Por exemplo, o botão `Cancel` no Dynamic Media tem o mesmo destaque de foco que em [!DNL Experience Manager Assets]. Ele também reage à chave `Spacebar` como em [!DNL Experience Manager Assets]. Consulte [atalhos de teclado no Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
-Os pressionamentos de tecla suportados por elementos da interface do usuário individual no Dynamic Media são, na maioria dos casos, óbvios e fáceis de encontrar. O controle do teclado no Dynamic Media é sobre o seguinte:
+Os pressionamentos de tecla suportados por elementos individuais da interface do usuário no Dynamic Media são, na maioria dos casos, óbvios e fáceis de encontrar. O controle do teclado no Dynamic Media é sobre o seguinte:
 
 * Capacidade de usar as teclas `Tab` e `Shift+Tab` para navegar entre elementos interativos na página.
 O uso de `Tab` avança o foco de entrada para o próximo elemento da interface do usuário na ordem de tabulação; o uso de `Shift+Tab` traz o foco de entrada de volta para o elemento da interface do usuário anterior.
@@ -55,7 +92,7 @@ Os elementos da interface do usuário do Dynamic Media funcionam com tecnologias
 
 Todos os componentes de visualizadores do Dynamic Media prontos para uso oferecem suporte à acessibilidade do teclado para seus clientes.
 
-Consulte [Acessibilidade e navegação do teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de Referência do Dynamic Media Viewers.
+Consulte [Acessibilidade e navegação do teclado](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html) no Guia de Referência de Visualizadores do Dynamic Media.
 
 ## Suporte de tecnologia assistiva em visualizadores do Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
@@ -71,5 +108,5 @@ Consulte [Vídeo no Dynamic Media - Adicionar legendas ocultas ao vídeo](/help/
 
 >[!MORELIKETHIS]
 >
->* [Acessibilidade para soluções Adobe](https://www.adobe.com/accessibility.html)
+>* [Acessibilidade para soluções da Adobe](https://www.adobe.com/accessibility.html)
 >* [Acessibilidade no Experience Manager Assets](/help/assets/dynamic-media/accessibility-dm.md)

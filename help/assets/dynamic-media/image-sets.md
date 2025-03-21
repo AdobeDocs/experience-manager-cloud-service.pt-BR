@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 2d4ffd5518d671a55e45a1ab6f1fc41ac021fd80
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2145'
-ht-degree: 3%
+source-wordcount: '2191'
+ht-degree: 4%
 
 ---
 
 # Conjuntos de imagem {#image-sets}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Os conjuntos de imagens oferecem aos usuários uma experiência de visualização integrada, em que os usuários podem ver diferentes visualizações de um item clicando em uma imagem em miniatura. Os Conjuntos de imagens permitem apresentar visualizações alternativas de um item e o visualizador oferece ferramentas de zoom para examinar as imagens de perto.
 
@@ -30,7 +67,7 @@ Por exemplo, suponha que você queira apresentar imagens de tampas com diferente
 >
 >Para obter informações sobre a interface do usuário do Assets, consulte [Gerenciar ativos com a interface para toque](/help/assets/manage-digital-assets.md).
 
-Ao criar um Conjunto de imagens, o Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
+Ao criar um Conjunto de imagens, a Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
@@ -78,7 +115,7 @@ Para começar a usar o com rapidez:
 
    Selecione o Conjunto de imagens para poder visualizá-lo. Para examinar o Conjunto de imagens no Visualizador selecionado, selecione os ícones de miniatura. Você pode escolher visualizadores diferentes no menu **[!UICONTROL Visualizadores]**, disponível na lista suspensa do painel esquerdo.
 
-1. [Conjuntos de imagens do Publish](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. [Publicar Conjuntos de Imagens](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
    A publicação de um Conjunto de imagens ativa o URL e a Sequência de caracteres incorporada. Além disso, você deve [publicar qualquer predefinição do visualizador personalizado](/help/assets/dynamic-media/managing-viewer-presets.md) que tenha criado. As predefinições do visualizador pronto para uso já estão publicadas.
 
@@ -110,7 +147,7 @@ Antes de criar Conjuntos de imagens, verifique se as imagens têm o tamanho e o 
 
 Para criar um Conjunto de imagens com várias visualizações, você precisa de imagens que mostrem um item de diferentes pontos de vista ou mostrem diferentes aspectos do mesmo item. O objetivo é destacar os recursos importantes de um item para que os visualizadores tenham uma imagem completa de como ele aparece ou o que ele faz.
 
-Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as imagens têm pelo menos 2000 pixels de tamanho maior. O Experience Manager Assets é compatível com muitos formatos de arquivo de imagem, mas são recomendados TIFF, PNG e imagens EPS sem perdas.
+Como os usuários podem ampliar imagens em Conjuntos de imagens, verifique se as imagens têm pelo menos 2000 pixels de tamanho maior. O Experience Manager Assets é compatível com muitos formatos de arquivo de imagem, mas recomenda-se usar imagens TIFF, PNG e EPS sem perdas.
 
 >[!NOTE]
 >
@@ -136,7 +173,7 @@ Ao adicionar ativos ao conjunto, eles são automaticamente adicionados em ordem 
 >
 >Os conjuntos de imagens não são compatíveis com ativos com &quot;,&quot; (vírgula) no nome do arquivo.
 
-Ao criar um Conjunto de imagens, o Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
+Ao criar um Conjunto de imagens, a Adobe recomenda as seguintes práticas recomendadas e impõe os seguintes limites:
 
 | Tipo de limite | Prática recomendada | Limite imposto |
 | --- | --- | --- |
@@ -212,7 +249,7 @@ No entanto, conjuntos criados usando predefinições de conjunto de lotes, *não
 
 * Na pesquisa, você pode selecionar **[!UICONTROL Filtro]**, expandir **[!UICONTROL Dynamic Media]** e selecionar **[!UICONTROL Conjuntos]**.
 
-  A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjunto de lotes. Para conjuntos automatizados, a consulta de pesquisa é realizada usando &quot;Inicia com&quot;. Esse critério de pesquisa é diferente do Experience Manager que se baseia no uso de &quot;Contém&quot;. Configurar o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
+  A pesquisa retorna conjuntos correspondentes que foram criados manualmente na interface do usuário ou criados automaticamente por meio de predefinições de conjunto de lotes. Para conjuntos automatizados, a consulta de pesquisa é realizada usando &quot;Inicia com&quot;. Esse critério de pesquisa é diferente do Experience Manager, que se baseia no uso de &quot;Contém&quot;. Configurar o filtro como **[!UICONTROL Conjuntos]** é a única maneira de pesquisar conjuntos automatizados.
 
   ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -263,4 +300,4 @@ Consulte [Visualizar ativos](/help/assets/dynamic-media/previewing-assets.md).
 
 ## Publicar conjuntos de imagens {#publishing-image-sets}
 
-Consulte [Publish Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+Consulte [Publicar Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).

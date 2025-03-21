@@ -3,25 +3,59 @@ title: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 description: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: ed7331647ea2227e6047e42e21444b743ee5ce6d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1574'
 ht-degree: 0%
 
 ---
 
 # Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI {#new-dynaminc-media-apis-frequently-asked-questions}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->O Dynamic Media com guia de recursos OpenAPI agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>O guia de recursos do Dynamic Media com OpenAPI agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
 >
->[!BADGE PDF do Guia de Recursos do Dynamic Media com OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Guia do Dynamic Media com recursos OpenAPI para PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-+++**Todos os ativos no repositório as a Cloud Service do Experience Manager Assets estão disponíveis para pesquisa e entrega usando o Dynamic Media com recursos OpenAPI?**
++++**Todos os ativos no repositório do Experience Manager Assets as a Cloud Service estão disponíveis para pesquisa e entrega usando o Dynamic Media com recursos OpenAPI?**
 
 Não, apenas [as versões aprovadas e mais recentes dos ativos](/help/assets/approve-assets.md) estão disponíveis para pesquisa e entrega usando o Dynamic Media com recursos OpenAPI, garantindo a consistência da marca em todos os canais e aplicativos.
 
@@ -61,9 +95,9 @@ Da mesma forma, o Experience Manager Assets distingue o status Rejeitado na exib
 
 +++
 
-+++**Como você pode fazer com que a ID de usuário ou de grupo do Adobe IMS (Adobe Identity Management Services) seja usada para definir as funções em ativos no modo de exibição Experience Manager Admin, para garantir a entrega e a experiência de pesquisa?**
++++**Como você pode fazer com que a ID de usuário ou de grupo do Adobe IMS (Adobe Identity Management Services) seja usada para definir as funções em ativos no modo de exibição de Administração do Experience Manager, para garantir a experiência de entrega e pesquisa?**
 
-Os usuários que precisam de acesso ao ambiente de autor do Experience Manager são gerenciados como usuários do Adobe IMS no Adobe Admin Console. Para obter informações sobre o que são os usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console, consulte [Usuários do Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
+Os usuários que exigem acesso ao ambiente do Experience Manager Author são gerenciados como usuários do Adobe IMS no Admin Console da Adobe. Para obter informações sobre o que são os usuários do Adobe IMS e como eles são acessados e gerenciados no Admin Console, consulte [Usuários do Adobe IMS](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/adobe-ims-users.html?lang=en).
 
 +++
 
@@ -95,7 +129,7 @@ A governança de ativos centrais no Experience Manager permite que os administra
 
 Os usuários finais que pesquisam ou utilizam URLs de entrega podem obter acesso a ativos restritos ao passar com êxito pelo processo de autorização.
 
-Para obter mais informações, consulte [Restringir acesso aos ativos no Experience Manager](restrict-assets-delivery.md#authoring).
+Para obter mais informações, consulte [Restringir o acesso aos ativos no Experience Manager](restrict-assets-delivery.md#authoring).
 
 +++
 
@@ -105,24 +139,24 @@ Como usuário do DAM, talvez você não tenha permissões para [aprovar ativos](
 
 +++
 
-+++**Como o Dynamic Media com recursos OpenAPI é diferente da solução da Dynamic Media?**
++++**Como o Dynamic Media com recursos OpenAPI é diferente da solução Dynamic Media?**
 
-O Dynamic Media com recursos OpenAPI e o Dynamic Media representam soluções distintas, cada uma oferecendo seus recursos especializados de entrega. É fundamental analisar minuciosamente seus requisitos específicos para determinar a solução mais adequada que se alinha às suas necessidades.
+O Dynamic Media com recursos OpenAPI e Dynamic Media representam soluções distintas, cada uma oferecendo seus recursos de delivery especializados. É fundamental analisar minuciosamente seus requisitos específicos para determinar a solução mais adequada que se alinha às suas necessidades.
 
-A orientação geral do Adobe é aproveitar o Dynamic Media com a pilha OpenAPI para qualquer caso de uso de integração (aplicativos próprios ou de terceiros). Se já existir uma integração com a pilha do Dynamic Media, a recomendação é não alterá-la, pois os URLs da pilha de OpenAPI são diferentes na estrutura. Somente para qualquer novo caso de uso de integração, use a pilha de OpenAPI. Se o caso de uso exigir modificadores avançados não disponíveis com a pilha de OpenAPI, evite a pilha de OpenAPI até que o Adobe preencha a lacuna. Mesmo para entrega nativa básica do AEM Assets Cloud Service, a pilha de OpenAPI pode ser avaliada, desde que seu caso de uso seja coberto pelos modificadores disponíveis com a pilha de OpenAPI. Concluindo, o Dynamic Media e o Dynamic Media com pilha de OpenAPI podem coexistir, dependendo da natureza do seu caso de uso.
+A orientação geral da Adobe é aproveitar o Dynamic Media com a pilha OpenAPI para qualquer caso de uso de integração (aplicativos próprios ou de terceiros). Se já existir uma integração com a pilha do Dynamic Media, a recomendação é não alterá-la, pois os URLs da pilha de OpenAPI são diferentes na estrutura. Somente para qualquer novo caso de uso de integração, use a pilha de OpenAPI. Se o caso de uso exigir modificadores avançados não disponíveis com a pilha de OpenAPI, evite a pilha de OpenAPI até que o Adobe preencha a lacuna. Mesmo para entrega nativa básica do AEM Assets Cloud Services, a pilha de OpenAPI pode ser avaliada, desde que seu caso de uso seja coberto pelos modificadores disponíveis com a pilha de OpenAPI. Concluindo, o Dynamic Media e o Dynamic Media com pilha de OpenAPI podem coexistir, dependendo da natureza do caso de uso.
 
 Estas são algumas das principais diferenças entre o Dynamic Media com recursos OpenAPI e o Dynamic Media:
 
 | Dynamic Media com recursos OpenAPI | Dynamic Media |
 |---|---|
-| [Disponível somente com o Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Também disponível com Managed Services no local ou Adobe com etapas adicionais de configuração e provisionamento. |
+| [Disponível somente com o Assets as a Cloud Service](/help/assets/dynamic-media-open-apis-overview.md#prerequisites-dynaminc-media-open-apis) | Também disponível com On-premise ou Adobe Managed Services com etapas adicionais de configuração e provisionamento. |
 | [Conjunto limitado de modificadores de imagem com suporte, como largura, altura, rotação, inversão, qualidade e formato](/help/assets/deliver-assets-apis.md) | Conjunto avançado de modificadores de imagem disponíveis |
-| [Entrega de ativos restrita com base em usuários, funções, data e hora](/help/assets/restrict-assets-delivery.md) | O Assets publicado no Dynamic Media pode ser acessado por todos os usuários |
+| [Entrega de ativos restrita com base em usuários, funções, data e hora](/help/assets/restrict-assets-delivery.md) | O Assets publicado no Dynamic Media é acessível a todos os usuários |
 | A maioria dos desenvolvedores está familiarizada com as especificações da OpenAPI. A extensibilidade do AEM Assets fica muito simples ao usar o [Seletor de ativos de micro front-end](/help/assets/overview-asset-selector.md). | APIs baseadas em SOAP, que se tornam uma barreira ao desenvolver personalizações de integração. |
-| Quaisquer alterações feitas em ativos aprovados no DAM, incluindo atualizações de versão e modificações de metadados, são refletidas automaticamente nos URLs de entrega. Com um valor curto de TTL (Time-to-Live) de 10 minutos configurado para o Dynamic Media com recursos OpenAPI via CDN, as atualizações ficam visíveis em todas as interfaces de criação e publicação em menos de 10 minutos. | TTL de CDN recomendado de 10 horas. Você pode substituir o valor TTL usando a ação de invalidação de cache. |
-| Somente os ativos aprovados estão disponíveis para entrega de ativos em aplicativos downstream, permitindo ativos aprovados pela marca em experiências digitais. | As atualizações em um ativo publicado pela Dynamic Media são publicadas automaticamente sem nenhum fluxo de trabalho de aprovação, o que não garante ativos aprovados pela marca em experiências digitais. |
+| Quaisquer alterações feitas em ativos aprovados no DAM, incluindo atualizações de versão e modificações de metadados, são refletidas automaticamente nos URLs de entrega. Com um valor curto de TTL (Time-to-Live) de 10 minutos configurado para o Dynamic Media com recursos OpenAPI por meio do CDN, as atualizações ficam visíveis em todas as interfaces de criação e publicação em menos de 10 minutos. | TTL de CDN recomendado de 10 horas. Você pode substituir o valor TTL usando a ação de invalidação de cache. |
+| Somente os ativos aprovados estão disponíveis para entrega de ativos em aplicativos downstream, permitindo ativos aprovados pela marca em experiências digitais. | As atualizações em um ativo publicado do Dynamic Media são publicadas automaticamente sem nenhum fluxo de trabalho de aprovação, o que não garante ativos aprovados pela marca em experiências digitais. |
 | Relatórios de uso com base no número de ativos entregues. Esse recurso estará disponível em breve. | Os relatórios de uso não estão disponíveis. Esse recurso estará disponível em breve. |
-| Os Assets marcados como Expirados no as a Cloud Service Assets não estão mais disponíveis para aplicativos downstream. | Nenhuma expiração de ativo inerente. Um ativo permanece público até ser excluído do repositório do AEM as a Cloud Service. |
+| O Assets marcado como Expirado no repositório do Assets as a Cloud Service não está mais disponível para aplicativos downstream. | Nenhuma expiração de ativo inerente. Um ativo permanece público até ser excluído do repositório do AEM as a Cloud Service. |
 | Não suporta predefinições de imagens e recursos de recorte inteligente de vídeo. | Suporta predefinições de imagens e recursos de recorte inteligente de vídeo. |
 | Codificações de vídeo dinâmico, que garantem que as melhores codificações sejam fornecidas com base no vídeo de entrada. Nenhuma configuração é necessária para a entrega de vídeo nativo. | O padrão 3 codifica independentemente do vídeo de entrada (pode afetar o desempenho da entrega de vídeo). Você precisa configurar manualmente diferentes códigos para taxas de bits de vídeo diferentes. |
 | Difícil de adivinhar URLs de ativos baseados em UID (permite ofuscação de URL), mas SEO otimizado. | Ofuscação de URL disponível apenas para parâmetros de consulta de URL. As Assets IDs (nomes de ativos) em URLs são reconhecíveis. |

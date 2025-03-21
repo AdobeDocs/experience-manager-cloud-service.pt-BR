@@ -1,6 +1,6 @@
 ---
 title: Jornada no Dynamic Media, Parte II
-description: A Jornada do Dynamic Media aborda as noções básicas do Dynamic Media, como ele funciona, o que ele pode fazer por você e que valor ele agrega ao seu trabalho e aos seus clientes.
+description: A Jornada do Dynamic Media aborda as noções básicas do Dynamic Media, como ele funciona, o que ele pode fazer por você e qual o valor que ele agrega ao seu trabalho e aos seus clientes.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
 topic-tags: introduction,administering
@@ -11,18 +11,55 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 74172fe7fcf9a22837645a154f2e85fd6fa6b40e
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2667'
 ht-degree: 0%
 
 ---
 
 # Jornada do Dynamic Media: Noções básicas, parte II  {#dm-journey-part2}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
 {{see-also-dm}}
 
-Bem-vindo à Jornada do Dynamic Media: Noções básicas, Parte II, onde você pode esperar aprender o seguinte:
+Bem-vindo ao Dynamic Media Jornada: Noções básicas, Parte II, onde você pode esperar para saber o seguinte:
 
 * Anatomia de um URL do Dynamic Media e como o Dynamic Media fornece conteúdo.
 * Princípios básicos da criação de predefinições de imagens para renderizar ativos.
@@ -32,26 +69,26 @@ Consulte também [Jornada do Dynamic Media; Noções básicas, Parte I](/help/as
 
 >[!TIP]
 >
->Para obter melhores resultados, a Adobe recomenda que você leia e visualize esta Jornada do Dynamic Media em um computador desktop.
+>Para obter melhores resultados, a Adobe recomenda que você leia e visualize essa Jornada do Dynamic Media em um computador desktop.
 
 ## Anatomia de um URL do Dynamic Media e como o Dynamic Media fornece conteúdo {#dm-journey-d}
 
 Depois que os ativos do Dynamic Media forem carregados e publicados, você poderá copiar o URL gerado de um ativo e colá-lo no navegador para ver como o ativo aparecerá para um cliente. O URL copiado a seguir para uma imagem observada é dividido por cores para facilitar a leitura e a compreensão.
 
-![Anatomia de uma URL do Dynamic Media](/help/assets/dynamic-media/assets/dm-colored-url.png)
+![Anatomia de uma URL de Dynamic Media](/help/assets/dynamic-media/assets/dm-colored-url.png)
 _Anatomia de uma URL do Dynamic Media._
 
-A primeira parte do URL em vermelho faz referência ao próprio domínio do servidor. Nesse caso, o Dynamic Media está sendo executado em um domínio de servidor genérico, que é `https://s7d1.scene7.com/is/image/`. É fácil ver um conjunto de imagens e entender se elas estão sendo atendidas pelo Dynamic Media apenas observando o domínio do servidor. O URL será bastante consistente. No entanto, alguns clientes da Dynamic Media mudaram para um domínio de servidor dedicado, onde pode ser `name-of-your-company.scene7.com`. Um domínio de servidor dedicado é necessário para a Imagem inteligente.
+A primeira parte do URL em vermelho faz referência ao próprio domínio do servidor. Nesse caso, o Dynamic Media está em execução em um domínio de servidor genérico, que é `https://s7d1.scene7.com/is/image/`. É fácil ver um conjunto de imagens e entender se elas estão sendo veiculadas pelo Dynamic Media apenas observando o domínio do servidor. O URL será bastante consistente. No entanto, alguns clientes do Dynamic Media mudaram para um domínio de servidor dedicado, onde pode ser `name-of-your-company.scene7.com`. Um domínio de servidor dedicado é necessário para a Imagem inteligente.
 
 O nome da conta é a parte em roxo. Nesse caso, a conta é chamada `jpearldemo`.
 
-A ID ou o nome do ativo `AdobeStock_28563982` está em verde. Observe que o ativo tem _não_ extensão de arquivo, como `.png` ou `.jpg`. Quando os ativos são assimilados na Dynamic Media, a extensão de arquivo é removida e um tipo diferente de arquivo é criado: um arquivo de TIFF de pirâmide. O TIFF de pirâmide permite que o Dynamic Media crie representações rapidamente.
+A ID ou o nome do ativo `AdobeStock_28563982` está em verde. Observe que o ativo tem _não_ extensão de arquivo, como `.png` ou `.jpg`. Quando os ativos são assimilados no Dynamic Media, a extensão de arquivo é removida e um tipo diferente de arquivo é criado: um arquivo de pirâmide TIFF. A pirâmide do TIFF permite que o Dynamic Media crie representações rapidamente.
 
 E finalmente, existem alguns parâmetros de processamento de imagens, `?wid=1000&fmt=jpeg&qlt=85`, mostrados em amarelo no final.
 
 O caminho do URL inteiro está ativo. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target="_blank"}.
 
-Com a janela do navegador ainda aberta para o URL do Dynamic Media e a imagem observada, vamos examinar mais detalhadamente como criar representações da imagem simplesmente alterando o URL.
+Com a janela do navegador ainda aberta para o URL do Dynamic Media e a imagem do relógio, vamos examinar mais detalhadamente como criar representações da imagem simplesmente alterando o URL.
 
 ### Renderização da imagem observada por meio do URL
 
@@ -62,7 +99,7 @@ Agora adicione um parâmetro de processamento de imagem ao final do URL. No camp
 Observe que é gerada uma nova representação da inspeção. Uma vantagem importante para entender esse simples exercício de alteração da largura da imagem é que a imagem vista é gerada 100% dinamicamente.
 
 Agora altere o valor de largura de `500` pixels para `1000` pixels e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target="_blank}.
-No momento em que você pressiona **[!UICONTROL Enter]**, o navegador retorna ao Dynamic Media Image Server. Ele gera uma representação totalmente nova do relógio, com base no novo valor de largura que você acabou de inserir, em seguida, fornece a nova imagem de volta ao navegador e a armazena em cache.
+No momento em que você pressiona **[!UICONTROL Enter]**, o navegador retorna ao Servidor de Imagens do Dynamic Media. Ele gera uma representação totalmente nova do relógio, com base no novo valor de largura que você acabou de inserir, em seguida, fornece a nova imagem de volta ao navegador e a armazena em cache.
 
 O Dynamic Media tem vários parâmetros de processamento de imagens que você pode usar para ajustar os ativos de imagem nas páginas da Web. Você pode [ver uma lista deles aqui](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=en).
 
@@ -70,24 +107,24 @@ Agora, tente adicionar um parâmetro de rotação à imagem observada. E o fim d
 
 O relógio ainda está ligeiramente inclinado para a esquerda. Altere o valor de rotação de `90` para `92` e pressione **[!UICONTROL Enter]**. [Experimente](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9){target="_blank"}.
 
-Novamente, no momento em que você pressiona **[!UICONTROL Enter]**, uma nova representação do relógio é gerada quase instantaneamente. Você pode observar o tipo de desempenho obtido, o que explica por que a Dynamic Media pode fornecer mais de 800.000 solicitações de imagem, _por segundo_, em um fim de semana movimentado ou feriado importante.
+Novamente, no momento em que você pressiona **[!UICONTROL Enter]**, uma nova representação do relógio é gerada quase instantaneamente. Você pode observar o tipo de desempenho obtido, o que explica por que o Dynamic Media pode fornecer mais de 800.000 solicitações de imagem, _por segundo_, em um fim de semana movimentado ou em um feriado importante.
 
 Embora seja possível alterar os parâmetros de processamento de imagem em um URL imagem por imagem, não é um método eficiente, especialmente se você tiver dezenas de milhares de imagens que compõem seu site. Uma abordagem muito melhor é usar predefinições de imagem.
 
 ## Princípios básicos da criação de predefinições de imagens para renderizar ativos {#dm-journey-e}
 
-Há várias maneiras e lugares em que você desejará criar uma imagem ou disponibilizar uma imagem. Tradicionalmente, uma Creative entra no Adobe Photoshop e salva cada uma dessas representações diferentes como imagens estáticas.
+Há várias maneiras e lugares em que você desejará criar uma imagem ou disponibilizar uma imagem. Tradicionalmente, um Creative entra no Adobe Photoshop e salva cada uma dessas representações diferentes como imagens estáticas.
 
 ![Imagens estáticas](/help/assets/dynamic-media/assets/dm-static-images.png)
 _Bom: imagens estáticas, cada uma criada manualmente._
 
-Agora imagine a Creative Director olhando as imagens e dizendo:
+Agora imagine que o Diretor do Creative olhe para as imagens e diga:
 
 _&quot;Eu realmente queria esta captura para que a mão grande apontasse para as quatro, e a mão pequena apontasse para a 1 para facilitar a visualização do mostrador do relógio.&quot;_
 
 O criativo teria que refilmar todas as novas imagens estáticas novamente.
 
-Mas, com o Dynamic Media, se você tiver predefinições de imagens diferentes, poderá usá-las sempre que precisar delas. As predefinições de imagens impõem padrões.
+Porém, com o Dynamic Media, se você tiver predefinições de imagens diferentes, poderá usá-las sempre que precisar delas. As predefinições de imagens impõem padrões.
 
 ![Abordagem de arquivo principal](/help/assets/dynamic-media/assets/dm-onefile.png)
 _Melhor: um arquivo com várias representações criadas em tempo real usando predefinições de imagem, como `Search_Grid` e `Thumbnail`._
@@ -116,7 +153,7 @@ No exemplo acima, você pode ver que uma nova predefinição de imagem foi criad
 
 A predefinição de imagem _Medium_ tem uma largura de 500 pixels e uma altura de 800 pixels. Na Parte I desta Jornada, você lê sobre como fornecer ativos em diferentes formatos. No menu suspenso **[!UICONTROL Formatar]**, você pode optar por fornecer ativos como JPEG, PNG, TIFF ou vários outros formatos. Você tem flexibilidade aqui.
 
-Selecionar a guia **[!UICONTROL Avançado]** fornece opções para o espaço de cores do ativo. Dependendo do formato selecionado na guia **[!UICONTROL Básico]** - no exemplo acima, JPEG foi selecionado - você pode fornecer ativos em RGB, Escala de cinza ou CMYK. No menu suspenso **[!UICONTROL Perfil de Cores]**, você pode selecionar como fornecer um ativo de imagem CMYK a ser usado para impressão. Observe também que há parâmetros adicionais que você pode aplicar para ajustar a nitidez das imagens. Neste caso, **[!UICONTROL Tirar nitidez da máscara]** foi aplicada.
+Selecionar a guia **[!UICONTROL Avançado]** fornece opções para o espaço de cores do ativo. Dependendo do formato selecionado na guia **[!UICONTROL Básico]** - no exemplo acima, o JPEG foi selecionado - você pode entregar ativos no RGB, em Tons de Cinza ou CMYK. No menu suspenso **[!UICONTROL Perfil de Cores]**, você pode selecionar como fornecer um ativo de imagem CMYK a ser usado para impressão. Observe também que há parâmetros adicionais que você pode aplicar para ajustar a nitidez das imagens. Neste caso, **[!UICONTROL Tirar nitidez da máscara]** foi aplicada.
 
 ![Criando uma predefinição de imagem selecionando opções na guia Avançado](/help/assets/dynamic-media/assets/dm-image-preset-advancedtab.png)
 _Criando uma predefinição de imagem selecionando opções na guia Avançado._
@@ -143,7 +180,7 @@ Se você observar a imagem abaixo novamente, verá que há uma predefinição de
 ![Predefinições de imagens estáticas e dinâmicas](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _Predefinições de imagens estáticas e dinâmicas. A imagem observada foi renderizada usando a predefinição de imagem `PDP-page`._
 
-Mas e se você tiver que mudar uma imagem no seu site? Por exemplo, suponha que você tenha feito alguns testes e descobriu que a imagem de 120 x 120 (a predefinição de imagem `Cart`) não está sendo recebida como você pensava. É necessário aumentar a imagem, aumentando a largura para 175 pixels e a altura para 175 pixels. Tradicionalmente, você teria que entrar no Adobe Photoshop e recriar todas essas imagens do carrinho. Porém, com o Dynamic Media, basta editar a predefinição de imagem, atualizando os valores de Largura e Altura para 175, e salvar a predefinição, como visto no exemplo abaixo.
+Mas e se você tiver que mudar uma imagem no seu site? Por exemplo, suponha que você tenha feito alguns testes e descobriu que a imagem de 120 x 120 (a predefinição de imagem `Cart`) não está sendo recebida como você pensava. É necessário aumentar a imagem, aumentando a largura para 175 pixels e a altura para 175 pixels. Tradicionalmente, você teria que entrar no Adobe Photoshop e recriar todas essas imagens do carrinho. Porém, com o Dynamic Media, basta editar a predefinição da imagem, atualizando os valores de Largura e Altura para 175, e salvar a predefinição, como visto no exemplo abaixo.
 
 ![Editando uma predefinição de imagem](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Editando a Largura e a Altura da predefinição de imagem `Cart`._
@@ -156,7 +193,7 @@ Alguns dos usos mais populares do Dynamic Media são a capacidade de criar conju
 
 Os conjuntos de imagens normalmente são compostos de uma série de ativos de imagem que são apresentados como uma única entidade. Esses tipos de conjuntos oferecem aos usuários uma experiência de visualização integrada, em que os usuários podem ver diferentes visualizações de um item clicando em uma imagem em miniatura. Os conjuntos de imagens permitem apresentar visualizações alternativas de algo e o visualizador oferece ferramentas de zoom para examinar as imagens de perto. [Exiba um conjunto de imagens chamado &quot;Em execução&quot; que usa o visualizador Flyout](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running).
 
-Aqui dentro da Dynamic Media você pode ver várias imagens de tênis de corrida. É uma série de linhas de produtos que as equipes de vendas e marketing desejam que os clientes visualizem como uma única apresentação; um conjunto de imagens.
+Aqui dentro do Dynamic Media você pode ver várias imagens de tênis de corrida. É uma série de linhas de produtos que as equipes de vendas e marketing desejam que os clientes visualizem como uma única apresentação; um conjunto de imagens.
 
 ![Criando um conjunto de imagens](/help/assets/dynamic-media/assets/dm-create-image-set.png)
 _O início da criação de um conjunto de imagens._
@@ -210,7 +247,7 @@ Você leu sobre conjuntos de imagens e visualizadores. Vamos analisar outros vis
 
 ## Opcional - Saiba mais
 
-Se você quiser saber mais sobre o que acabou de ler, use os materiais abaixo para explorar os conceitos com mais detalhes. Caso contrário, sua Jornada do Dynamic Media será concluída!
+Se você quiser saber mais sobre o que acabou de ler, use os materiais abaixo para explorar os conceitos com mais detalhes. Caso contrário, sua Jornada do Dynamic Media estará concluída!
 
 <!--
 _Dynamic Media Help topics_
@@ -225,8 +262,8 @@ _Dynamic Media Help topics_
 
 _Tutoriais do Dynamic Media_
 
-* [Usar o Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
-* [biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar no _Dynamic Media_)
+* [Usar Dynamic Media com o Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use.html)
+* [Biblioteca de conteúdo do Adobe Experience Manager](https://experienceleague.adobe.com/?lang=en#recommended/solutions/experience-manager) (pesquisar no _Dynamic Media_)
 
 _Visualizadores do Dynamic Media_
 

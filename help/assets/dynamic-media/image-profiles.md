@@ -1,24 +1,61 @@
 ---
-title: Perfis de imagem Dynamic Media
-description: Saiba como criar Perfis de imagem do Dynamic Media que contêm configurações para Tirar nitidez da máscara e Recorte inteligente, Amostra inteligente ou ambos. Em seguida, aplique o perfil a uma pasta de ativos de imagem.
+title: Perfis de imagem de mídia dinâmica
+description: Saiba como criar Perfis de imagem do Dynamic Media que contêm configurações para Tirar nitidez da máscara e recorte inteligente, amostra inteligente ou ambos. Em seguida, aplique o perfil a uma pasta de ativos de imagem.
 contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions,Best Practices
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 0ad506fc72cb73d3a6a8cdd9eee50f213b52665e
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3518'
+source-wordcount: '3564'
 ht-degree: 2%
 
 ---
 
-# Perfis de imagem Dynamic Media {#image-profiles}
+# Perfis de imagem de mídia dinâmica {#image-profiles}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Ao fazer upload de imagens, você pode cortar automaticamente a imagem após o upload aplicando um Perfil de imagem à pasta.
 
 >[!IMPORTANT]
 >
->Os perfis de imagem não se aplicam a arquivos PDF, animado GIF ou INDD (Adobe InDesign).
+>Os perfis de imagem não se aplicam a arquivos PDF, GIF animado ou INDD (Adobe InDesign).
 
 ## Opção Tirar nitidez da máscara {#unsharp-mask}
 
@@ -65,12 +102,12 @@ Consulte também [limitações do Dynamic Media](/help/assets/dynamic-media/limi
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 
-As coordenadas de corte inteligente dependem da taxa de proporção. Para as configurações de recorte inteligente em um Perfil de imagem, se a taxa de proporção for a mesma para as dimensões adicionadas no Perfil de imagem, a mesma taxa de proporção será enviada para o Dynamic Media. A Adobe recomenda usar a mesma área de corte. Isso garante que não haja impacto em diferentes dimensões usadas no Perfil de imagem.
+As coordenadas de corte inteligente dependem da taxa de proporção. Para as configurações de recorte inteligente em um Perfil de imagem, se a proporção for a mesma para as dimensões adicionadas no Perfil de imagem, a mesma proporção será enviada para o Dynamic Media. A Adobe recomenda usar a mesma área de corte. Isso garante que não haja impacto em diferentes dimensões usadas no Perfil de imagem.
 
-Cada geração de corte inteligente criada requer processamento extra. Por exemplo, adicionar mais de cinco taxas de proporção de corte inteligente pode resultar em uma taxa de assimilação de ativos lenta. Isso também pode causar um aumento de carga nos sistemas. Como o recorte inteligente pode ser aplicado no nível da pasta, o Adobe recomenda usá-lo somente para pastas em que for necessário.
+Cada geração de corte inteligente criada requer processamento extra. Por exemplo, adicionar mais de cinco taxas de proporção de corte inteligente pode resultar em uma taxa de assimilação de ativos lenta. Isso também pode causar um aumento de carga nos sistemas. Como o recorte inteligente pode ser aplicado no nível da pasta, a Adobe recomenda usá-lo somente para pastas em que for necessário.
 
 **Diretrizes para definir o Corte inteligente em um Perfil de Imagem**
-Para manter o uso do Corte inteligente sob controle e otimizar o tempo de processamento e o armazenamento das lavouras, a Adobe recomenda as seguintes diretrizes e dicas:
+Para manter o uso do Corte inteligente sob controle e otimizar o tempo de processamento e o armazenamento de cultivos, a Adobe recomenda as seguintes diretrizes e dicas:
 
 * Os ativos de imagem que terão um recorte inteligente aplicado a eles devem ter no mínimo 50 x 50 pixels ou mais.
 * Idealmente, tenha de 10 a 15 recortes inteligentes por imagem para otimizar as taxas de tela e o tempo de processamento.
@@ -84,7 +121,7 @@ Você tem duas opções de corte de imagem para escolher: corte de pixel e corte
 
 >[!IMPORTANT]
 >
->A Adobe recomenda que você analise todas as culturas e amostras geradas para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+>A Adobe recomenda que você analise todas as culturas e amostras geradas para garantir que elas sejam apropriadas e relevantes para sua marca e seus valores.
 
 | Opção | Quando usar | Descrição |
 | --- | --- | --- |
@@ -122,7 +159,7 @@ Consulte [Sobre perfis de imagem e perfis de vídeo do Dynamic Media](/help/asse
 
 Consulte também [Práticas recomendadas para organizar sua Assets digital para usar Perfis de processamento](/help/assets/organize-assets.md).
 
-**Para criar Perfis de Imagem Dynamic Media:**
+**Para criar Perfis de Imagem de Mídia Dinâmica:**
 
 1. Selecione o logotipo do Adobe Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de imagem]**.
 1. Para adicionar um Perfil de Imagem, selecione **[!UICONTROL Criar]**.
@@ -186,7 +223,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
    * Na Exibição de cartão, passe o mouse sobre o ponteiro na pasta e selecione a marca de seleção para selecioná-lo.
    * Na Exibição de coluna ou na Exibição de lista, marque a caixa de seleção à esquerda do nome da pasta.
 1. Na barra de ferramentas, selecione **[!UICONTROL Propriedades]**.
-1. Selecione a guia **[!UICONTROL Dynamic Media Processing]**.
+1. Selecione a guia **[!UICONTROL Processamento de Dynamic Media]**.
 1. Em **[!UICONTROL Perfil de Imagem]**, na lista suspensa **[!UICONTROL Nome do Perfil]**, selecione o perfil a ser aplicado.
 1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar e fechar]**. As pastas com um perfil atribuído exibem o nome do perfil logo abaixo do nome da pasta.
 
@@ -198,7 +235,7 @@ Além de aplicar um perfil a uma pasta, você também pode aplicar um globalment
 
 Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo existente que você alterou posteriormente. Consulte [Reprocessar ativos em uma pasta depois de editar seu perfil de processamento](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
-**Para aplicar um Perfil de Imagem Dynamic Media globalmente:**
+**Para aplicar globalmente um Perfil de Imagem de Mídia Dinâmica:**
 
 1. Siga uma das seguintes opções:
 
@@ -216,7 +253,7 @@ Você pode reprocessar ativos em uma pasta que já tenha um perfil de vídeo exi
 
 >[!IMPORTANT]
 >
->A Adobe recomenda que você analise todas as culturas inteligentes geradas e amostras inteligentes para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+>A Adobe recomenda que você analise todos os recortes inteligentes e amostras inteligentes gerados para garantir que eles sejam apropriados e relevantes para sua marca e valores.
 
 Para refinar o ponto focal de uma imagem, é possível ajustar manualmente o alinhamento ou redimensionar a janela de recorte inteligente.
 
@@ -233,7 +270,7 @@ Consulte também [Editar o recorte inteligente ou a amostra inteligente de vári
 
 **Para editar o recorte inteligente ou a amostra inteligente de uma única imagem:**
 
-1. Selecione o logotipo do Experience Manager e navegue até **[!UICONTROL Assets]**, em seguida, acesse a pasta que tem um Perfil de Imagem de recorte inteligente ou amostra inteligente aplicado a ela.
+1. Selecione o logotipo do Experience Manager e navegue até o **[!UICONTROL Assets]**, em seguida, acesse a pasta que tem um Recorte inteligente ou um Perfil de Imagem de amostra inteligente aplicado a ela.
 1. Para abrir o conteúdo, selecione a pasta.
 1. Selecione a imagem cujo corte inteligente ou amostra inteligente você deseja ajustar.
 1. Na barra de ferramentas, selecione **[!UICONTROL Recorte inteligente]**.
@@ -256,7 +293,7 @@ Consulte também [Editar o recorte inteligente ou a amostra inteligente de vári
 
 >[!IMPORTANT]
 >
->A Adobe recomenda que você analise todas as culturas inteligentes geradas e amostras inteligentes para garantir que elas sejam apropriadas e relevantes para sua marca e valores.
+>A Adobe recomenda que você analise todos os recortes inteligentes e amostras inteligentes gerados para garantir que eles sejam apropriados e relevantes para sua marca e valores.
 
 Depois de aplicar um Perfil de imagem - contendo corte inteligente - a uma pasta, todas as imagens nessa pasta terão um corte aplicado a elas. Se necessário, é possível ajustar manualmente o alinhamento ou redimensionar a janela de recorte inteligente em várias imagens para ajustar ainda mais seus pontos focais.
 
@@ -271,7 +308,7 @@ Execute novamente o corte inteligente para gerar os cortes adicionais novamente,
 
 **Para editar o recorte inteligente ou a amostra inteligente de várias imagens:**
 
-1. Selecione o logotipo do Experience Manager e navegue até **[!UICONTROL Assets]**, em seguida, acesse uma pasta que tenha um Perfil de Imagem de recorte inteligente ou amostra inteligente aplicado a ela.
+1. Selecione o logotipo do Experience Manager e navegue até o **[!UICONTROL Assets]** e, em seguida, acesse uma pasta que tenha um Perfil de Imagem de corte inteligente ou de amostra inteligente aplicado a ela.
 1. Na pasta, selecione o ícone **[!UICONTROL Mais Ações]** (...) e selecione **[!UICONTROL Recorte Inteligente]**.
 
 1. Na página **[!UICONTROL Editar cortes inteligentes]**, siga um destes procedimentos:
@@ -316,7 +353,7 @@ Ao remover um Perfil de imagem de uma pasta, todas as subpastas herdam automatic
 
 Remova um Perfil de Imagem de uma pasta no menu **[!UICONTROL Ferramentas]** ou, se estiver na pasta, em **[!UICONTROL Propriedades]**.
 
-### Remover perfis de imagem do Dynamic Media de pastas por meio da interface do usuário Perfis {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Remover perfis de imagem do Dynamic Media das pastas por meio da interface do usuário Perfis {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Selecione o logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de imagem]**.
 1. Selecione o Perfil de imagem que deseja remover de uma ou várias pastas.
@@ -324,9 +361,9 @@ Remova um Perfil de Imagem de uma pasta no menu **[!UICONTROL Ferramentas]** ou,
 
    É possível confirmar que o Perfil de imagem não é mais aplicado a uma pasta porque o nome não aparece mais abaixo do nome da pasta.
 
-### Remova Perfis de imagem do Dynamic Media das pastas por meio de Propriedades {#removing-image-profiles-from-folders-via-properties}
+### Remova perfis de imagem do Dynamic Media das pastas por meio de Propriedades {#removing-image-profiles-from-folders-via-properties}
 
-1. Selecione o logotipo do Experience Manager, navegue até **[!UICONTROL Assets]** e, em seguida, acesse a pasta da qual deseja remover um Perfil de Imagem.
+1. Selecione o logotipo do Experience Manager, navegue até a **[!UICONTROL Assets]** e, em seguida, acesse a pasta da qual deseja remover um Perfil de Imagem.
 1. Na pasta, marque a marca de seleção para selecioná-la e selecione **[!UICONTROL Propriedades]**.
 1. Selecione a guia **[!UICONTROL Perfis de imagem]**.
 1. Na lista suspensa **[!UICONTROL Nome do Perfil]**, selecione **[!UICONTROL Nenhum]** e **[!UICONTROL Salvar e Fechar]**.

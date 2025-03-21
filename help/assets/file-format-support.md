@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Renditions
 role: User, Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 02caeb490ad99d8417eb2b5c91850c4ab822f57d
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 34%
+source-wordcount: '1469'
+ht-degree: 33%
 
 ---
 
 # [!DNL Assets] formatos de arquivo com suporte {#supported-file-formats}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 O [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] oferece suporte a recursos básicos de gerenciamento de conteúdo — armazenamento, gerenciamento de metadados online, controle de versão, upload e download, etc. — para qualquer arquivo binário, independentemente de seu formato. O [!DNL Adobe Experience Manager Assets] é compatível com uma grande variedade de formatos de arquivo e cada recurso do produto oferece suporte para diferentes formatos.
 
@@ -23,9 +57,9 @@ Além disso, o [!DNL Experience Manager Assets] oferece suporte estendido para g
 
 Os destaques da conversão de ativos usando microsserviços de ativos incluem:
 
-* Formatos de arquivo [Adobe](#adobe-formats) de chave produzidos por aplicativos e serviços Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] ou PDF.
+* [Formatos de arquivo do Adobe](#adobe-formats) de chaves produzidos por aplicativos e serviços da Adobe, incluindo [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] e [!DNL Adobe Acrobat] ou PDF.
 * [formatos de arquivo de imagem](#image-formats) da chave.
-* [Formatos Camera Raw](#camera-raw-formats) para uma grande variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (com tecnologia da Adobe Camera Raw).
+* [Formatos de arquivo do Camera Raw](#camera-raw-formats) para uma grande variedade de câmeras, incluindo Canon, Nikon, Fujifilm, Olympus e outros fabricantes (acionados pela Adobe Camera Raw).
 * Formatos de documento [comuns](#document-formats), incluindo os formatos Microsoft® Office e Open Document.
 * Ampla variedade de formatos de [vídeo](#video-formats) e [áudio](#audio-formats).
 
@@ -37,7 +71,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | * | Consulte as observações abaixo da tabela |
 | - | Não aplicável |
 
-## formatos de Adobe {#adobe-formats}
+## Formatos Adobe {#adobe-formats}
 
 | Formato do arquivo | Geração de miniaturas | Extração de texto completo | Extração de metadados | Largura/altura |
 | ----------- | -------------------- | ------------------- | ------------------- | ------------ |
@@ -46,7 +80,7 @@ A legenda a seguir descreve o nível de suporte para cada formato.
 | DN | ✓ | - | ✓ | ✓ |
 | SBSAR | ✓ | - | ✓ | ✓ |
 | IDEIAS | - | - | ✓ | - |
-| INDD | ✓ | - | ✓ | ✓ µ * |
+| INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
 | PDF | ✓ | ✓ | ✓ | ✓ |
 | PROTO | - | - | ✓ | - |
@@ -178,7 +212,7 @@ Os formatos de documento compatíveis com os recursos de gerenciamento de ativos
 
 ## Formatos de áudio {#audio-formats}
 
-O [!DNL Assets] as a [!DNL Cloud Service] fornece suporte para extração de metadados XMP para os formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
+O [!DNL Assets] as a [!DNL Cloud Service] fornece suporte para extração de metadados do XMP para os formatos de áudio AIF, ASF, M4A, MP3, WAV e WMA.
 
 ## Formatos de entrada compatíveis com a transcrição de áudio e vídeo {#audio-video-transcription-formats}
 
@@ -202,7 +236,7 @@ O [!DNL Assets] as a [!DNL Cloud Service] fornece suporte para extração de met
 | Extensão do arquivo de vídeo | Contêiner | Codecs de vídeo recomendados | Codecs de vídeo não suportados |
 | --- | --- | --- | --- |
 | AVI | Intercalação A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
-| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação de vetor) |
+| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (arquivos de animação de vetor) |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 e HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Animação do Apple |
@@ -213,7 +247,7 @@ O [!DNL Assets] as a [!DNL Cloud Service] fornece suporte para extração de met
 | WebM | WebM | Google VP8 | − |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Tela Microsoft® (MSS2), História de foto Microsoft® (WVP2) |
 
-‡ Este formato de vídeo ainda não é suportado para ser usado com Vídeos interativos no Dynamic Media ou para ser usado com Anotação no Experience Manager Assets.
+‡ Este formato de vídeo ainda não é suportado para uso com Vídeos interativos no Dynamic Media ou para uso com Anotação no Experience Manager Assets.
 
 ## Dynamic Media - Formatos de documento compatíveis {#document-support-dynamic-media}
 
@@ -221,11 +255,11 @@ O [!DNL Assets] as a [!DNL Cloud Service] fornece suporte para extração de met
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | IA | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
-| PDF (consulte a Nota abaixo) | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PDF (consulte a Observação abaixo) | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
 >
->Para PDF seguros, somente o Upload é suportado.
+>Para PDFs seguros, somente o Upload é suportado.
 
 ## Dynamic Media - Formatos de imagem rasterizada compatíveis {#image-support-dynamic-media}
 
@@ -253,9 +287,9 @@ Os seguintes subtipos de formatos de arquivo de imagem rasterizada que *não* t�
 
 * Arquivos PNG com tamanho de bloco IDAT maior que 100 MB.
 * Arquivos PSB.
-* Arquivos PSD com um espaço de cor diferente de CMYK, RGB, Tons de cinza ou Bitmap não são suportados. Espaços de cores DuoTone, Lab e Indexado não são compatíveis.
+* Arquivos PSD com um espaço de cor diferente de CMYK, RGB, Tons de cinza ou Bitmap não são compatíveis. Espaços de cores DuoTone, Lab e Indexado não são compatíveis.
 * Arquivos PSD com profundidade de bits superior a 16.
-* Arquivos TIFF que possuem dados de ponto flutuante.
+* Arquivos TIFF com dados de ponto flutuante.
 * Arquivos TIFF com espaço de cores Lab.
 
 ## Dynamic Media - Formatos de arquivo 3D compatíveis {#support-3d-formats-dynamic-media}
@@ -282,7 +316,7 @@ Consulte também [formatos 3D compatíveis](/help/assets/file-format-support.md#
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

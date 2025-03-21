@@ -5,17 +5,51 @@ contentOwner: Adobe
 feature: Brand Portal, Asset Distribution, Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 84%
+source-wordcount: '1333'
+ht-degree: 82%
 
 ---
 
-# Ativos do Publish para o Brand Portal {#publish-assets-to-brand-portal}
+# Publicar ativos no Brand Portal {#publish-assets-to-brand-portal}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -28,9 +62,9 @@ No entanto, primeiro você deve configurar o AEM Assets com o Brand Portal. Para
 
 Se fizer modificações subsequentes no ativo, pasta ou coleção original no AEM Assets, as alterações não serão refletidas no Brand Portal até que publique novamente no AEM Assets. Esse recurso garante que as alterações de trabalho em andamento não estejam disponíveis no Brand Portal. Somente as alterações aprovadas publicadas por um administrador são disponibilizadas no Brand Portal.
 
-* [Ativos do Publish para o Brand Portal](#publish-assets-to-bp)
-* [Pastas do Publish para o Brand Portal](#publish-folders-to-brand-portal)
-* [Coleções do Publish para o Brand Portal](#publish-collections-to-brand-portal)
+* [Publicar ativos no Brand Portal](#publish-assets-to-bp)
+* [Publicar pastas no Brand Portal](#publish-folders-to-brand-portal)
+* [Publicar coleções no Brand Portal](#publish-collections-to-brand-portal)
 
 >[!NOTE]
 >
@@ -38,7 +72,7 @@ Se fizer modificações subsequentes no ativo, pasta ou coleção original no AE
 >O Assets deve ser publicado em lotes. A recomendação para o tamanho do lote é de 15K.
 > Para [!DNL Experience Manager Assets] as a [!DNL Cloud Service], a taxa de transferência observada em condições de laboratório é de 1000 ativos por hora. A taxa é observada com um tamanho médio de ativos de 10 MB.
 
-## Ativos do Publish para o Brand Portal {#publish-assets-to-bp}
+## Publicar ativos no Brand Portal {#publish-assets-to-bp}
 
 Veja a seguir as etapas para publicar ativos do AEM Assets no Brand Portal:
 
@@ -50,7 +84,7 @@ Veja a seguir as etapas para publicar ativos do AEM Assets no Brand Portal:
    * [Publicar agora](#publish-to-bp-now) (Publicar ativos imediatamente)
    * [Publicar mais tarde](#publish-to-bp-later) (agendar a publicação de ativos)
 
-### Ativos do Publish agora {#publish-to-bp-now}
+### Publicar ativos agora {#publish-to-bp-now}
 
 Para publicar os ativos selecionados no Brand Portal, siga um dos procedimentos a seguir:
 
@@ -68,7 +102,7 @@ Para publicar os ativos selecionados no Brand Portal, siga um dos procedimentos 
 
 Será exibida uma mensagem informando que os ativos foram enfileirados para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver os ativos publicados.
 
-### Ativos do Publish mais tarde {#publish-to-bp-later}
+### Publicar ativos mais tarde {#publish-to-bp-later}
 
 Para agendar a publicação dos ativos no Brand Portal para uma data ou hora posterior:
 
@@ -103,11 +137,11 @@ Para agendar a publicação dos ativos no Brand Portal para uma data ou hora pos
 >`/content : jcr:read, crx:replicate`
 >`/content/dam/ : jcr:read,modify, crx:replicate`
 
-## Pastas do Publish para o Brand Portal {#publish-folders-to-brand-portal}
+## Publicar pastas no Brand Portal {#publish-folders-to-brand-portal}
 
 Você pode publicar ou cancelar a publicação de pastas de ativos imediatamente ou agendar para uma data ou hora posterior.
 
-### Pastas do Publish para o Brand Portal {#publish-folders-to-bp}
+### Publicar pastas no Brand Portal {#publish-folders-to-bp}
 
 1. No console Assets, selecione as pastas que deseja publicar e clique na opção **[!UICONTROL Publicação rápida]** na barra de ferramentas.
 
@@ -133,7 +167,7 @@ Você pode publicar ou cancelar a publicação de pastas de ativos imediatamente
 
    Será exibida uma mensagem informando que a pasta foi colocada na fila para publicação no Brand Portal. Faça logon na interface do Brand Portal para ver a pasta publicada.
 
-1. **pastas do Publish mais tarde**
+1. **Publicar pastas mais tarde**
 Para agendar a publicação das pastas de ativos para uma data ou hora posterior:
 
    1. Selecione as pastas que deseja agendar a publicação e selecione **[!UICONTROL Gerenciar publicação]** na barra de ferramentas na parte superior.
@@ -213,7 +247,7 @@ Para cancelar a publicação de pastas de ativos do Brand Portal:
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
-## Coleções do Publish para o Brand Portal {#publish-collections-to-brand-portal}
+## Publicar coleções no Brand Portal {#publish-collections-to-brand-portal}
 
 Você pode publicar ou cancelar a publicação de coleções da instância da nuvem do AEM Assets.
 
@@ -223,7 +257,7 @@ Você pode publicar ou cancelar a publicação de coleções da instância da nu
 >
 >Se as coleções que contêm fragmentos de conteúdo forem publicadas do AEM Assets no Brand Portal, todo o conteúdo da pasta, exceto fragmentos de conteúdo, será replicado para a interface do Brand Portal.
 
-### coleções do Publish {#publish-collections}
+### Publicar coleções {#publish-collections}
 
 Veja a seguir as etapas para publicar coleções do AEM Assets no Brand Portal:
 
@@ -294,4 +328,4 @@ Consulte a [documentação do Brand Portal](https://experienceleague.adobe.com/d
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

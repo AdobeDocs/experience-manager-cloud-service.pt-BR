@@ -1,18 +1,55 @@
 ---
 title: Usar Imagem inteligente com proporção de pixels do dispositivo no lado do cliente
-description: Saiba como usar a proporção de pixels do dispositivo no lado do cliente com a Imagem inteligente no Adobe Experience Manager as a Cloud Service com o Dynamic Media.
+description: Saiba como usar a proporção de pixels do dispositivo no lado do cliente com a Imagem inteligente no Adobe Experience Manager as a Cloud Service com Dynamic Media.
 contentOwner: Rick Brough
 feature: Device Pixel Ratio,Smart Imaging
 role: Admin,User
 exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
-source-git-commit: 26afff3a39a2a80c1f730287b99f3fb33bff0673
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
 # Sobre a imagem inteligente com a proporção de pixels do dispositivo (DPR) do lado do cliente {#client-side-dpr}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 A solução Smart Imaging atual usa strings de agente do usuário para determinar o tipo de dispositivo (desktop, tablet, celular e assim por diante) que está sendo usado.
 
@@ -26,7 +63,7 @@ A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer 
 
 **Aplicativos renderizados do lado do servidor**
 
-1. Carregue a inicialização do service worker (`srvinit.js`) incluindo o seguinte script na seção de cabeçalho da página de HTML:
+1. Carregue a inicialização do service worker (`srvinit.js`) incluindo o seguinte script na seção de cabeçalho da página do HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -45,11 +82,11 @@ A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer 
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   É obrigatório incluir este código de marca de imagem DPR _antes_ em todas as imagens estáticas da sua página de HTML.
+   É obrigatório incluir este código de marca de imagem DPR _antes_ em todas as imagens estáticas da sua página do HTML.
 
 **Aplicativos renderizados do lado do cliente**
 
-1. Inclua os seguintes scripts DPR na seção de cabeçalho da página HTML:
+1. Inclua os seguintes scripts DPR na seção de cabeçalho da página do HTML:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -58,12 +95,12 @@ A DPR do lado do cliente fornece valores 100% precisos e funciona para qualquer 
 
    Você pode combinar ambos os scripts DPR em um para evitar várias solicitações de rede.
 
-   A Adobe recomenda que você carregue esses scripts _antes_ de qualquer outro script na página HTML.
-O Adobe também recomenda que você Bootstrap seu aplicativo com a tag HTML diff em vez de um elemento body. O motivo é porque o `dprImageInjection.js` injeta dinamicamente a marca de imagem na parte superior da seção do corpo na página HTML.
+   A Adobe recomenda que você carregue esses scripts _antes_ de qualquer outro script na página do HTML.
+A Adobe também recomenda que você Bootstrap seu aplicativo em tag HTML de comparação em vez de um elemento body. O motivo é que o `dprImageInjection.js` injeta dinamicamente a marca de imagem na parte superior da seção do corpo na página do HTML.
 
 ## Download de arquivos do JavaScript {#client-side-dpr-script}
 
-Os seguintes arquivos JavaScript no download são fornecidos a você somente como referência de exemplo. Se você pretende usar esses arquivos em páginas de HTML, edite o código de cada arquivo para atender aos seus próprios requisitos.
+Os seguintes arquivos JavaScript no download são fornecidos a você somente como referência de exemplo. Se você pretende usar esses arquivos nas páginas do HTML, edite o código de cada arquivo para atender aos seus próprios requisitos.
 
 * `dprImageInjection.js`
 * `srvinit.js`

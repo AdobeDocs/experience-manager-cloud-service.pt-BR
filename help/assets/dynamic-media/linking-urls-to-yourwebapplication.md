@@ -5,16 +5,53 @@ contentOwner: Rick Brough
 feature: Publishing,Upload,Viewer Presets,Image Presets,Video
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1327'
 ht-degree: 4%
 
 ---
 
 # Vincular URLs ao seu aplicativo web {#linking-urls-to-your-web-application}
 
-Seus sites e aplicativos acessam os serviços da Dynamic Media por meio de chamadas de URL. Depois de publicar um ativo, o Dynamic Media ativa uma cadeia de caracteres de URL que faz referência ao ativo. Você pode colar esses URLs em um navegador da Web para testes.
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
+Seus sites e aplicativos acessam os serviços do Dynamic Media por meio de chamadas de URL. Depois de publicar um ativo, o Dynamic Media ativa uma cadeia de caracteres de URL que faz referência ao ativo. Você pode colar esses URLs em um navegador da Web para testes.
 
 Você vincula a URLs somente se estiver *não* usando o Adobe Experience Manager como o WCM. A vinculação, em vez da incorporação, é usada quando você deseja disponibilizar um player de vídeo como uma janela pop-up ou modal. Se você estiver usando o Experience Manager como o WCM, [adicione os ativos diretamente na sua página](adding-dynamic-media-assets-to-pages.md).
 
@@ -40,11 +77,11 @@ Consulte também [Carregar Assets](/help/assets/manage-digital-assets.md#uploadi
 >
 >O URL não está disponível para cópia até que você tenha publicado o ativo selecionado. Além disso, você também deve publicar a predefinição do visualizador ou a predefinição da imagem.
 >
->Consulte [Publish Assets](publishing-dynamicmedia-assets.md).
+>Consulte [Publicar Assets](publishing-dynamicmedia-assets.md).
 >
->Consulte [Predefinições do Visualizador do Publish](managing-viewer-presets.md#publishing-viewer-presets).
+>Consulte [Publicar Predefinições Do Visualizador](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Consulte [Predefinições de imagem do Publish](managing-image-presets.md#publishing-image-presets).
+>Consulte [Publicar Predefinições De Imagem](managing-image-presets.md#publishing-image-presets).
 
 Há várias maneiras diferentes de obter uma string de URL. No entanto, as etapas abaixo mostram apenas um método que você pode usar.
 
@@ -54,11 +91,11 @@ Há várias maneiras diferentes de obter uma string de URL. No entanto, as etapa
 
    Lembre-se de que os URLs só estão disponíveis para cópia *depois* que você *publicou* os ativos pela primeira vez. Além disso, a predefinição do visualizador ou da imagem também deve ser publicada.
 
-   Consulte [Publish Assets](publishing-dynamicmedia-assets.md).
+   Consulte [Publicar Assets](publishing-dynamicmedia-assets.md).
 
-   Consulte [Predefinições do Visualizador do Publish](managing-viewer-presets.md#publishing-viewer-presets).
+   Consulte [Publicar Predefinições Do Visualizador](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Consulte [Predefinições de imagem do Publish](managing-image-presets.md#publishing-image-presets).
+   Consulte [Publicar Predefinições De Imagem](managing-image-presets.md#publishing-image-presets).
 
 1. Com base no ativo selecionado, siga um destes procedimentos:
 
@@ -84,7 +121,7 @@ Há várias maneiras diferentes de obter uma string de URL. No entanto, as etapa
 
 ## Obtenção de um URL para um ativo estático {#obtaining-a-url-for-a-static-asset}
 
-O Dynamic Media é compatível com a entrega de ativos estáticos, que são outros ativos além de apenas imagens e vídeo. Os formatos de ativos estáticos compatíveis para entrega incluem o seguinte:
+O Dynamic Media é compatível com a entrega de ativos estáticos, que são outros ativos além de apenas imagens e vídeos. Os formatos de ativos estáticos compatíveis para entrega incluem o seguinte:
 
 * arquivos 3D
 * GIF animado
@@ -118,11 +155,11 @@ O Dynamic Media é compatível com a entrega de ativos estáticos, que são outr
 
 ## Obter um URL de vídeo para uma representação de vídeo publicada {#obtaining-a-video-url-for-a-published-video-rendition}
 
-1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Nuvem]** > **[!UICONTROL Cloud Service]**.
-1. Na página **[!UICONTROL Cloud Service]**, role até o cabeçalho **[!UICONTROL Cloud Service]** do Dynamic Media e selecione **[!UICONTROL Mostrar Configurações]**.
+1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Nuvem]** > **[!UICONTROL Serviços em Nuvem]**.
+1. Na página **[!UICONTROL Cloud Services]**, role para baixo até o cabeçalho **[!UICONTROL Dynamic Media Cloud Services]** e selecione **[!UICONTROL Mostrar configurações]**.
 1. Em **[!UICONTROL Configurações disponíveis]**, selecione o nome da configuração desejada.
 
-1. Na página **[!UICONTROL Configurações de Nuvem do Dynamic Media]**, em **[!UICONTROL URL do Serviço de Vídeo]**, copie todo o caminho da URL. Posteriormente, você precisará do caminho do URL copiado nas etapas.
+1. Na página **[!UICONTROL Configurações da Dynamic Media Cloud]**, em **[!UICONTROL URL do Serviço de Vídeo]**, copie todo o caminho da URL. Posteriormente, você precisará do caminho do URL copiado nas etapas.
 
    Por exemplo, o caminho do URL pode parecer semelhante ao seguinte:
 
@@ -134,7 +171,7 @@ O Dynamic Media é compatível com a entrega de ativos estáticos, que são outr
 
    Por exemplo, se a ID de registro fosse `87654321|MyCompany`, o nome do cliente seria `MyCompany`.
 
-1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Cloud Service]**, em seguida, selecione o ícone Experience Manager e navegue até **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
+1. Próximo ao canto superior esquerdo da página, selecione **[!UICONTROL Cloud Services]**, selecione o ícone do Experience Manager e navegue até **[!UICONTROL Geral]** > **[!UICONTROL CRXDE Lite]**.
 1. Copie o caminho de representação de vídeo inteiro do JCR (Java™ Content Repository).
 
    Por exemplo, o caminho de representação do vídeo pode ser semelhante ao seguinte:
@@ -155,10 +192,10 @@ O Dynamic Media é compatível com a entrega de ativos estáticos, que são outr
 
 ## Obter um URL de vídeo para transmissão adaptável da taxa de bits (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
-1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Nuvem]** > **[!UICONTROL Cloud Service]**.
-1. Na página **[!UICONTROL Cloud Service]**, role até o cabeçalho **[!UICONTROL Cloud Service]** do Dynamic Media e selecione **[!UICONTROL Mostrar Configurações]**.
+1. No Experience Manager, navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Implantação]** > **[!UICONTROL Nuvem]** > **[!UICONTROL Serviços em Nuvem]**.
+1. Na página **[!UICONTROL Cloud Services]**, role para baixo até o cabeçalho **[!UICONTROL Dynamic Media Cloud Services]** e selecione **[!UICONTROL Mostrar configurações]**.
 1. Em **[!UICONTROL Configurações disponíveis]**, selecione o nome da configuração desejada.
-1. Na página **[!UICONTROL Configurações do Dynamic Media Cloud Service]**, faça o seguinte:
+1. Na página **[!UICONTROL Configurações do Dynamic Media Cloud Services]**, faça o seguinte:
 
    * Em **[!UICONTROL URL do Serviço de Vídeo]**, copie todo o caminho da URL. Posteriormente, você precisará do caminho do URL copiado nessas etapas. Por exemplo, o caminho do URL pode parecer semelhante ao seguinte:
 

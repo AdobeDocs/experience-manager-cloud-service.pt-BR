@@ -3,25 +3,59 @@ title: APIs de entrega
 description: Saiba como usar as APIs de entrega.
 role: User
 exl-id: 806ca38f-2323-4335-bfd8-a6c79f6f15fb
-source-git-commit: 870f3f1826ea88cae0fc1fa31177bb9ffc8646f3
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
 
 # APIs de entrega {#delivery-apis}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 >[!AVAILABILITY]
 >
->O Dynamic Media com guia de recursos OpenAPI agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
+>O guia de recursos do Dynamic Media com OpenAPI agora está disponível no formato PDF. Baixe o guia inteiro e use o Assistente de IA da Adobe Acrobat para responder às suas consultas.
 >
->[!BADGE PDF do Guia de Recursos do Dynamic Media com OpenAPI]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
+>[!BADGE Guia do Dynamic Media com recursos OpenAPI para PDF]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/dynamic-media-with-openapi-capabilities.pdf"}
 
-Todos os [ativos aprovados](approve-assets.md) disponíveis no repositório de ativos do Experience Manager podem ser [pesquisados](search-assets-api.md) e entregues a aplicativos downstream integrados usando uma URL de entrega.
+Todos os [ativos aprovados](approve-assets.md) disponíveis no repositório de ativos da Experience Manager podem ser [pesquisados](search-assets-api.md) e entregues a aplicativos downstream integrados usando uma URL de entrega.
 
 Quaisquer alterações feitas em ativos aprovados no DAM, incluindo atualizações de versão e modificações de metadados, são refletidas automaticamente nos URLs de entrega. Com um valor curto de Tempo de vida (TTL) de 10 minutos configurado para a entrega de ativos por meio da CDN, as atualizações se tornam visíveis em todas as interfaces de criação e publicação em menos de 10 minutos.
 
@@ -33,18 +67,18 @@ A tabela a seguir ilustra o uso das várias APIs de entrega disponíveis:
 
 | API de entrega | Descrição |
 |---|---|
-| [Representação binária otimizada para a Web do ativo no formato de saída solicitado](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Retorna a representação binária otimizada para a Web do ativo no formato de saída solicitado com base na ID do ativo enviada na solicitação. Além disso, você pode definir vários modificadores de imagem, como largura, altura, rotação, inversão, qualidade, recorte, formato e [recorte inteligente](/help/assets/dynamic-media/image-profiles.md). Consulte os [detalhes da API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) para obter os formatos e modificadores de imagem compatíveis.O <br>Adobe recomenda usar esta API para todos os tipos de formato de imagem. |
+| [Representação binária otimizada para a Web do ativo no formato de saída solicitado](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) | Retorna a representação binária otimizada para a Web do ativo no formato de saída solicitado com base na ID do ativo enviada na solicitação. Além disso, você pode definir vários modificadores de imagem, como largura, altura, rotação, inversão, qualidade, recorte, formato e [recorte inteligente](/help/assets/dynamic-media/image-profiles.md). Consulte os [detalhes da API](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetSeoFormat) para obter os formatos e modificadores de imagem compatíveis.<br>A Adobe recomenda usar essa API para todos os tipos de formato de imagem. |
 | [Representação binária otimizada para a Web do ativo](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAsset) | A API de conveniência que aplica padrões à representação binária otimizada para a Web do ativo retornado na resposta. Os padrões incluem um formato JPEG/WEBP padrão, qualidade => 65 e largura => 1024. |
-| [Binário original carregado do ativo](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | Retorna os binários carregados originalmente para o ativo. O Adobe recomenda usar essa API para tipos de formato de documento e imagens SVG. |
+| [Binário original carregado do ativo](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetOriginal) | Retorna os binários carregados originalmente para o ativo. A Adobe recomenda usar essa API para tipos de formato de documento e imagens SVG. |
 | [Representação pré-gerada do ativo disponível no ambiente de criação do AEM Assets](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetRendition) | Retorna o fluxo de bits da representação de ativos disponível no ambiente de criação do AEM Assets com base na ID do ativo e no nome da representação enviados na solicitação. |
 | [Metadados do ativo](https://adobe-aem-assets-delivery.redoc.ly/#operation/getAssetMetadata) | Retorna as propriedades associadas a um ativo, como, título, descrição, CreateDate, ModifyDate, entre outros. |
-| [Contêiner de player do ativo de vídeo](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Retorna o container do reprodutor do ativo de vídeo. Você pode incorporar o reprodutor em um elemento de HTML iframe e reproduzir o vídeo. |
+| [Contêiner de player do ativo de vídeo](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoPlayerDelivery) | Retorna o container do reprodutor do ativo de vídeo. Você pode incorporar o reprodutor em um elemento HTML do iframe e reproduzir o vídeo. |
 | [Manifestos de reprodução no formato de saída selecionado](https://adobe-aem-assets-delivery.redoc.ly/#operation/videoManifestDelivery) | Retorna o arquivo de manifesto de reprodução do ativo de vídeo especificado no formato de saída selecionado. Você deve criar um reprodutor personalizado capaz de transmissão adaptável por meio dos protocolos HLS ou DASH para poder obter o arquivo de manifesto de reprodução e reproduzir o vídeo. |
 
 
 >[!NOTE]
 >
-* [Predefinições de imagem, imagens inteligentes e modificadores de imagem adicionais](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) estão disponíveis como um recurso de disponibilidade limitada. Para obter acesso, [crie e envie um caso de Suporte ao Cliente Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+* [Predefinições de imagem, imagens inteligentes e modificadores de imagem adicionais](https://adobe-aem-assets-delivery-advancemodifiers.redoc.ly/) estão disponíveis como um recurso de disponibilidade limitada. Para obter acesso, [crie e envie um caso de Suporte ao Cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 * O Recorte inteligente não está disponível com o [Assets Prime](/help/assets/assets-ultimate-overview.md).
 
 ## Endpoints das APIs de entrega {#delivery-apis-endpoint}

@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Publishing, Collaboration, Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5001'
+source-wordcount: '5029'
 ht-degree: 6%
 
 ---
 
 # Gerenciar ativos de vídeo {#manage-video-assets}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -57,19 +91,19 @@ Para ativos de vídeo existentes no [!DNL Experience Manager Assets], é necess�
 * Os arquivos MXF não mostram visualizações de vídeo, mesmo que a representação seja gerada.
 * Os arquivos WebM não geram representações de pré-visualização, pois podem ser reproduzidos nativamente por navegadores da Web.
 
-## Ativos de vídeo do Publish {#publish-video-assets}
+## Publicar ativos de vídeo {#publish-video-assets}
 
 Após a publicação, você pode incluir os ativos de vídeo em uma página da Web como um URL ou incorporar diretamente os ativos. Para obter detalhes, consulte [publicar [!DNL Dynamic Media] ativos](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
-## Vídeos do Publish para o YouTube {#publishing-videos-to-youtube}
+## Publicar vídeos no YouTube {#publishing-videos-to-youtube}
 
 Você pode publicar ativos de vídeo gerenciados no Experience Manager Assets diretamente em um canal do YouTube criado anteriormente.
 
-Para publicar ativos de vídeo no YouTube, você marca ativos de vídeo no Experience Manager Assets com tags. Você associa essas tags a um canal do YouTube. Se a tag de um ativo de vídeo corresponder à tag de um canal do YouTube, o vídeo será publicado no YouTube. O Publish para o YouTube ocorre junto com uma publicação normal do vídeo, desde que uma tag associada seja usada.
+Para publicar ativos de vídeo no YouTube, você marca ativos de vídeo no Experience Manager Assets com tags. Você associa essas tags a um canal do YouTube. Se a tag de um ativo de vídeo corresponder à tag de um canal do YouTube, o vídeo será publicado no YouTube. A publicação na YouTube ocorre junto com uma publicação normal do vídeo, desde que uma tag associada seja usada.
 
 O YouTube faz sua própria codificação. Dessa forma, o arquivo de vídeo original carregado no Experience Manager é publicado no YouTube, em vez de qualquer representação de vídeo criada pela codificação do Dynamic Media. Embora não seja necessário processar vídeos usando o Dynamic Media, espera-se que eles façam isso caso uma predefinição do visualizador seja necessária para a reprodução.
 
-Ao ignorar o perfil de processamento de vídeo e publicar diretamente no YouTube, isso significa simplesmente que o ativo de vídeo no Experience Manager Asset não obtém uma miniatura visualizável. Também significa que os vídeos não codificados não funcionam com nenhum dos tipos de ativos do Dynamic Media.
+Ao ignorar o perfil de processamento de vídeo e publicar diretamente no YouTube, isso significa simplesmente que o ativo de vídeo no Experience Manager Asset não recebe uma miniatura visualizável. Também significa que os vídeos não codificados não funcionam com nenhum dos tipos de ativo do Dynamic Media.
 
 A publicação de ativos de vídeo em servidores da YouTube envolve a conclusão das seguintes tarefas para garantir uma verificação segura de servidor para servidor com o YouTube:
 
@@ -78,7 +112,7 @@ A publicação de ativos de vídeo em servidores da YouTube envolve a conclusão
 1. [Adicionar tags para publicação](#adding-tags-for-publishing)
 1. [Configurar o YouTube no Experience Manager](#setting-up-youtube-in-aem)
 1. [(Opcional) Automatize a configuração das propriedades padrão do YouTube para os vídeos carregados](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Vídeos do Publish para o canal do YouTube](#publishing-videos-to-your-youtube-channel)
+1. [Publicar vídeos no seu canal do YouTube](#publishing-videos-to-your-youtube-channel)
 1. [(Opcional) Verifique o vídeo publicado no YouTube](/help/assets/dynamic-media/video.md#optional-verifying-the-published-video-on-youtube)
 1. [Vincular URLs do YouTube à sua aplicação web](#linking-youtube-urls-to-your-web-application)
 
@@ -182,7 +216,7 @@ Para publicar vídeos no YouTube, você precisa ter um ou mais canais. Se você 
 
 >[!CAUTION]
 >
->Certifique-se de já ter configurado um ou mais canais no YouTube *antes* de adicionar canais nas Configurações do YouTube no Experience Manager (consulte [Configurar o YouTube no Experience Manager](#setting-up-youtube-in-aem) abaixo). Se não conseguir fazer a configuração do canal, você não será avisado de que não há canais. No entanto, a verificação do Google ainda ocorre quando você adiciona um canal, mas não há uma opção para escolher qual canal o vídeo é enviado.
+>Verifique se você já configurou um ou mais canais no YouTube *antes* de adicionar canais em Configurações do YouTube no Experience Manager (consulte [Configurar o YouTube no Experience Manager](#setting-up-youtube-in-aem) abaixo). Se não conseguir fazer a configuração do canal, você não será avisado de que não há canais. No entanto, a verificação do Google ainda ocorre quando você adiciona um canal, mas não há uma opção para escolher qual canal o vídeo é enviado.
 
 **Para criar um canal do YouTube:**
 
@@ -200,13 +234,13 @@ Para publicar vídeos no YouTube, você precisa ter um ou mais canais. Se você 
 
 ### Adicionar tags para publicação {#adding-tags-for-publishing}
 
-Para publicar seus vídeos no YouTube, o Experience Manager associa tags a um ou mais canais da YouTube. Para adicionar marcas para publicação, consulte [Administrar marcas](/help/sites-cloud/authoring/sites-console/tags.md).
+Para publicar em seus vídeos no YouTube, a Experience Manager associa tags a um ou mais canais da YouTube. Para adicionar marcas para publicação, consulte [Administrar marcas](/help/sites-cloud/authoring/sites-console/tags.md).
 
-Ou, se você pretende usar as tags padrão no Experience Manager, ignore esta tarefa e vá para [Configurar o YouTube no Experience Manager](#setting-up-youtube-in-aem).
+Ou, se você pretende usar as marcas padrão no Experience Manager, ignore esta tarefa e vá para [Configurar o YouTube no Experience Manager](#setting-up-youtube-in-aem).
 
 >[!NOTE]
 >
->Depois que o Cloud Service é configurado, outra configuração não é necessária para habilitar o agente de replicação do YouTube Publish neste momento. O motivo é porque ele foi ativado quando a configuração do Cloud Service foi salva.
+>Depois que o Cloud Service é configurado, outra configuração não é necessária para habilitar o agente de replicação de publicação do YouTube neste momento. O motivo é que ele foi ativado quando a configuração do Cloud Service foi salva.
 
 <!-- ### Enabling the YouTube Publish replication agent {#enabling-the-youtube-publish-replication-agent}
 
@@ -222,13 +256,13 @@ After you enable the YouTube Publish replication agent, if you want to test the 
 
 A partir do Experience Manager 6.4, um novo método de interface do usuário de toque foi introduzido para configurar a publicação do YouTube no Experience Manager. Com base na instância instalada do Experience Manager que você está usando, execute um dos procedimentos a seguir:
 
-* Para configurar o YouTube no Experience Manager anterior a 6.4, consulte [Configurar o YouTube no Experience Manager anterior a 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
+* Para configurar o YouTube no Experience Manager antes da versão 6.4, consulte [Configurar o YouTube no Experience Manager antes da versão 6.4](/help/assets/dynamic-media/video.md#setting-up-youtube-in-aem-before).
 * Para configurar o YouTube no Experience Manager 6.4 ou posterior, consulte [Configurar o YouTube no Experience Manager 6.4 e posterior](#setting-up-youtube-in-aem-and-later).
 
-#### Configurar o YouTube no Experience Manager 6.4 e mais recente {#setting-up-youtube-in-aem-and-later}
+#### Configurar o YouTube no Experience Manager 6.4 e posterior {#setting-up-youtube-in-aem-and-later}
 
-1. Certifique-se de fazer logon na sua instância do Dynamic Media como Administrador.
-1. No canto superior esquerdo do Experience Manager, selecione o logotipo Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]**(ícone de martelo) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Configuração de publicação do YouTube]**.
+1. Certifique-se de fazer logon na instância do Dynamic Media como administrador.
+1. No canto superior esquerdo do Experience Manager, selecione o logotipo do Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]**(ícone de martelo) > **[!UICONTROL Serviços da nuvem]** > **[!UICONTROL Configuração de publicação do YouTube]**.
 1. Selecionar **[!UICONTROL global]** (não o selecione).
 
 1. Próximo ao canto superior direito da página global, selecione **[!UICONTROL Criar]**.
@@ -244,7 +278,7 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a ela em 
 1. Retorne à caixa de diálogo Configurações da conta do YouTube. No campo **[!UICONTROL Configuração JSON]**, cole o texto JSON.
 1. Próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 
-   Agora, configure os canais do YouTube no Experience Manager.
+   Agora, configure canais do YouTube no Experience Manager.
 
 1. Selecione **[!UICONTROL Adicionar Canal]**.
 1. No campo Nome do Canal, digite o nome do canal criado na tarefa **[!UICONTROL Adicionar um ou mais canais ao YouTube]** anteriormente.
@@ -262,8 +296,8 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a ela em 
 
    Agora, configure tags para publicação.
 
-1. **[!UICONTROL Configurando marcas para publicação]** - Na página Cloud Service > YouTube, selecione o ícone de lápis para editar a lista de marcas que deseja usar.
-1. Para exibir a lista de tags disponíveis no Experience Manager, selecione o ícone da lista suspensa (sinal de seta invertido).
+1. **[!UICONTROL Configurando marcas para publicação]** - Na página Cloud Services > YouTube, selecione o ícone de lápis para editar a lista de marcas que deseja usar.
+1. Para exibir a lista de tags disponíveis no Experience Manager, selecione o ícone de lista suspensa (cursor invertido).
 1. Para adicioná-las, selecione uma ou mais tags.
 
    Para excluir uma marca adicionada, selecione-a e selecione **[!UICONTROL X]**.
@@ -272,11 +306,11 @@ Deixe a página Criar configuração do YouTube aberta; você voltará a ela em 
 
    Agora você publica vídeos no seu canal do YouTube.
 
-#### Configurar o YouTube no Experience Manager anterior a 6.4 {#setting-up-youtube-in-aem-before}
+#### Configuração do YouTube no Experience Manager antes da versão 6.4 {#setting-up-youtube-in-aem-before}
 
-1. Certifique-se de fazer logon na sua instância do Dynamic Media como Administrador.
+1. Certifique-se de fazer logon na instância do Dynamic Media como administrador.
 
-1. No canto superior esquerdo do Experience Manager, selecione o logotipo Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Implantação]** > **[!UICONTROL Cloud Service]**.
+1. No canto superior esquerdo do Experience Manager, selecione o logotipo do Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Implantação]** > **[!UICONTROL Serviços da nuvem]**.
 1. No cabeçalho Serviços de terceiros, em YouTube, selecione **[!UICONTROL Configurar agora]**.
 1. Na caixa de diálogo Criar configuração, insira um título (obrigatório) e nome (opcional) nos respectivos campos.
 1. Selecione **[!UICONTROL Criar]**.
@@ -290,7 +324,7 @@ Deixe aberta a caixa de diálogo Configuração de conta do YouTube; você volta
 1. Retorne à caixa de diálogo Configurações da conta do YouTube. No campo **[!UICONTROL Configuração JSON]**, cole o texto JSON.
 1. Selecione **[!UICONTROL OK]**.
 
-   Agora, configure os canais do YouTube no Experience Manager.
+   Agora, configure canais do YouTube no Experience Manager.
 
 1. À direita de **[!UICONTROL Canais disponíveis]**, selecione **+** (ícone de adição).
 1. Na caixa de diálogo Configurações do canal do YouTube, no campo Título, digite o nome do canal criado na tarefa **[!UICONTROL Adicionar um ou mais canais ao YouTube]** anteriormente.
@@ -308,8 +342,8 @@ Deixe aberta a caixa de diálogo Configuração de conta do YouTube; você volta
 
    Agora, configure tags para publicação.
 
-1. **[!UICONTROL Configurando marcas para publicação]** - Na página Cloud Service > YouTube, selecione o ícone de lápis para editar a lista de marcas que deseja usar.
-1. Para exibir a lista de tags disponíveis no Experience Manager, selecione o ícone da lista suspensa (sinal de seta invertido).
+1. **[!UICONTROL Configurando marcas para publicação]** - Na página Cloud Services > YouTube, selecione o ícone de lápis para editar a lista de marcas que deseja usar.
+1. Para exibir a lista de tags disponíveis no Experience Manager, selecione o ícone de lista suspensa (cursor invertido).
 1. Para adicioná-las, selecione uma ou mais tags.
 
    Para excluir uma marca adicionada, selecione-a e selecione **X**.
@@ -326,7 +360,7 @@ Para criar o perfil de processamento de metadados, você primeiro copiará valor
 
 **Para automatizar a configuração das propriedades padrão do YouTube para seus vídeos carregados:**
 
-1. No canto superior esquerdo do Experience Manager, selecione o logotipo Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados]**.
+1. No canto superior esquerdo do Experience Manager, selecione o logotipo do Experience Manager e, no painel à esquerda, navegue até **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Assets]** > **[!UICONTROL Esquemas de metadados]**.
 1. Selecione **[!UICONTROL padrão]**. (Não adicione uma marca de seleção à caixa de seleção à esquerda de &quot;padrão&quot;.)
 1. Na página **[!UICONTROL padrão]**, marque a caixa à esquerda de **[!UICONTROL vídeo]** e selecione **[!UICONTROL Editar]**.
 1. Na página Editor de esquema de metadados, selecione a guia **[!UICONTROL Avançado]**.
@@ -349,7 +383,7 @@ Cole o valor copiado no editor de texto aberto. Esse valor será necessário pos
 Cole o valor copiado no editor de texto aberto. Esse valor será necessário posteriormente ao criar o perfil de processamento de metadados. Deixe o editor de texto aberto.
 
 1. Próximo ao canto superior direito da página Editor de esquema de metadados, selecione **[!UICONTROL Cancelar]**.
-1. No canto superior esquerdo do Experience Manager, selecione o logotipo Experience Manager e, no painel à esquerda, selecione **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de metadados]**.
+1. No canto superior esquerdo do Experience Manager, selecione o logotipo do Experience Manager e, no painel à esquerda, selecione **[!UICONTROL Ferramentas]** (ícone de martelo) > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de metadados]**.
 
 1. Na página Perfis de metadados, próximo ao canto superior direito da página, selecione **[!UICONTROL Criar]**.
 1. Na caixa de diálogo Adicionar perfil de metadados, no campo de texto **[!UICONTROL Título do perfil]**, digite o nome `YouTube Video` e selecione **[!UICONTROL Criar]**.
@@ -381,19 +415,19 @@ Cole o valor copiado no editor de texto aberto. Esse valor será necessário pos
 
    Consulte [Perfis de metadados](/help/assets/metadata-profiles.md) e [Perfis de vídeo](/help/assets/dynamic-media/video-profiles.md).
 
-### Vídeos do Publish para o canal do YouTube {#publishing-videos-to-your-youtube-channel}
+### Publicar vídeos no seu canal do YouTube {#publishing-videos-to-your-youtube-channel}
 
-Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse processo permite que o Experience Manager saiba quais ativos publicar no canal do YouTube.
-
->[!NOTE]
->
->O Publish não publica automaticamente no YouTube imediatamente. Quando o Dynamic Media estiver configurado, há duas opções de publicação para escolher: **[!UICONTROL Imediatamente]** ou **[!UICONTROL Após ativação]**.
->
->**[!UICONTROL Publish Imediatamente]** significa que o ativo carregado, após ser sincronizado com o IPS, é publicado automaticamente no sistema de entrega. Embora isso seja verdade para o Dynamic Media, não é verdade para o YouTube. Para publicar no YouTube, você deve publicar por meio do Experience Manager Author.
+Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse processo permite que a Experience Manager saiba quais ativos publicar no canal do YouTube.
 
 >[!NOTE]
 >
->Para publicar conteúdo do YouTube, o Experience Manager usa o fluxo de trabalho **[!UICONTROL Publish no YouTube]**, que permite monitorar o progresso e exibir informações de falha.
+>Publicar imediatamente não publica automaticamente no YouTube. Quando o Dynamic Media estiver configurado, há duas opções de publicação para escolher: **[!UICONTROL Imediatamente]** ou **[!UICONTROL Após ativação]**.
+>
+>**[!UICONTROL Publicar imediatamente]** significa que o ativo carregado, após ser sincronizado com o IPS, é publicado automaticamente no sistema de entrega. Embora isso seja verdade para o Dynamic Media, não é verdade para o YouTube. Para publicar no YouTube, você deve publicar por meio do Experience Manager Author.
+
+>[!NOTE]
+>
+>Para publicar conteúdo do YouTube, o Experience Manager usa o fluxo de trabalho **[!UICONTROL Publicar no YouTube]**, que permite monitorar o progresso e exibir informações de falha.
 >
 >Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
@@ -411,7 +445,7 @@ Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse
 
 1. No canto superior direito da página, selecione **[!UICONTROL Selecionar]**.
 1. No canto superior direito da página de propriedades do vídeo, selecione **[!UICONTROL Salvar e fechar]**.
-1. Na barra de ferramentas, selecione **[!UICONTROL Quick Publish]**.
+1. Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**.
 
    Consulte também [Usar o Gerenciamento de Publicação com o Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
 
@@ -429,7 +463,7 @@ Após oito horas, se você ainda vir uma mensagem de status que diz **[!UICONTRO
 
 ### Vincular URLs do YouTube à sua aplicação web {#linking-youtube-urls-to-your-web-application}
 
-Você pode obter uma cadeia de caracteres de URL do YouTube gerada pelo Dynamic Media após a publicação do vídeo. Ao copiar o URL do YouTube, ele é colocado na Área de transferência para que você possa colá-lo conforme necessário nas páginas do seu site ou aplicativo.
+Você pode obter uma cadeia de caracteres de URL do YouTube que é gerada pelo Dynamic Media após a publicação do vídeo. Ao copiar o URL do YouTube, ele é colocado na Área de transferência para que você possa colá-lo conforme necessário nas páginas do seu site ou aplicativo.
 
 >[!NOTE]
 >
@@ -455,7 +489,7 @@ Ao cancelar a publicação de um ativo de vídeo no Experience Manager, o vídeo
 
 >[!NOTE]
 >
->Para remover o conteúdo do YouTube, o Experience Manager usa o fluxo de trabalho **[!UICONTROL Desfazer publicação do YouTube]**, que permite monitorar o progresso e exibir informações de falha.
+>Para remover conteúdo do YouTube, o Experience Manager usa o fluxo de trabalho **[!UICONTROL Cancelar publicação do YouTube]**, que permite monitorar o progresso e exibir informações de falha.
 >
 >Consulte [Monitorar o progresso da codificação de vídeo e da publicação no YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
@@ -649,9 +683,9 @@ Para processar ativos usando um perfil de processamento, adicione um perfil a um
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >
->* [documentação de vídeo do Dynamic Media](/help/assets/dynamic-media/video.md).
+>* [Documentação de vídeo do Dynamic Media](/help/assets/dynamic-media/video.md).
 >* [Saiba mais sobre uso, tipos e configuração de perfis de processamento](/help/assets/asset-microservices-configure-and-use.md).

@@ -5,17 +5,51 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: fbf7321e0fc70627cc80d50d99ef5de4baf03e9b
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 81%
+source-wordcount: '1932'
+ht-degree: 84%
 
 ---
 
 # Metadados na visualização do Assets {#metadata}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Os metadados são dados ou descrições sobre os dados. Por exemplo, suas imagens como um ativo podem conter informações sobre a câmera com a qual ela foi fotografada ou quaisquer informações de direitos autorais. Essas informações são os metadados da imagem. Os metadados são essenciais para um gerenciamento eficiente de ativos. Os metadados são a coleção de todos os dados disponíveis para um ativo, mas que podem não estar necessariamente contidos nesse ativo.
 
@@ -82,7 +116,7 @@ A visualização Assets usa a seguinte sequência para pesquisar nomes de formul
 
 Subtipo MIME > Tipo MIME > Formulário `default` > Formulário pronto para uso
 
-Por exemplo, se um formulário de metadados chamado `PDF` ou `pdf` existir, os documentos PDF carregados contêm campos de metadados conforme definidos no formulário. Se não existir um formulário de metadados chamado `PDF` ou `pdf`, o modo de exibição Assets corresponderá se houver um formulário de metadados chamado `application`. Se houver um formulário de metadados chamado `application`, os documentos PDF carregados conterão campos de metadados conforme definido no formulário. Se o modo de exibição do Assets ainda não encontrar um formulário de metadados correspondente, ele pesquisará pelo formulário de metadados `default` para aplicar campos de metadados definidos no formulário aos documentos PDF carregados. Se nenhuma dessas etapas funcionar, a visualização Assets aplicará campos de metadados definidos no formulário pronto para uso a todos os documentos PDF carregados.
+Por exemplo, se um formulário de metadados chamado `PDF` ou `pdf` existir, os documentos PDF carregados contêm campos de metadados conforme definidos no formulário. Se não existir um formulário de metadados chamado `PDF` ou `pdf`, o modo de exibição Assets corresponderá se houver um formulário de metadados chamado `application`. Se houver um formulário de metadados chamado `application`, os documentos PDF carregados conterão campos de metadados conforme definido no formulário. Se o modo de exibição do Assets ainda não encontrar um formulário de metadados correspondente, ele pesquisará pelo formulário de metadados `default` para aplicar campos de metadados definidos no formulário aos documentos carregados do PDF. Se nenhuma dessas etapas funcionar, a visualização Assets aplicará campos de metadados definidos no formulário pronto para uso a todos os documentos carregados do PDF.
 Porém, se você deseja atribuir um formulário de metadados a uma pasta [consulte](#assign-metadata-form-folder).
 
 >[!IMPORTANT]
@@ -171,17 +205,17 @@ Para remover um formulário de metadados de uma pasta:
 
 Além disso, é possível navegar até a página de detalhes da pasta e selecionar **[!UICONTROL Formulário de metadados mapeados pelo sistema]** no campo **[!UICONTROL Formulários de metadados]** para remover o formulário de metadados atribuído de uma pasta.
 
-### Trabalhar com o componente Link no formulário de metadados {#link-component-metadata-form}
+### Trabalho com o componente de link no formulário de metadados {#link-component-metadata-form}
 
 O componente de link é usado para habilitar URLs externos, incluindo links de armazenamento, informações de direitos autorais, formulários de contato e assim por diante. Para usar o componente de link em formulário de metadados, você precisa [configurar o formulário de metadados](#metadata-forms).
 
 Siga as etapas abaixo para usar o componente Link no formulário de metadados:
 
-1. Vá para a página de detalhes do ativo e navegue até **[!UICONTROL URL do link]**.
-1. Adicione o URL que deseja usar para redirecionar o ativo selecionado.
-1. Clique em **[!UICONTROL Adicionar link]**. Execute uma das seguintes ações:
-   * Clique em ![ícone de cópia](assets/do-not-localize/copy.svg) para copiar a URL.
-   * Clique em ![ícone de edição](assets/do-not-localize/edit.svg) para editar a URL.
+1. Acesse a página de detalhes do ativo e navegue até **[!UICONTROL URL do link]**.
+1. Adicione o URL que deseja usar para redirecionar para o ativo selecionado.
+1. Clique em **[!UICONTROL Adicionar link]**. Realize uma das ações a seguir:
+   * Clique no ![ícone de copiar](assets/do-not-localize/copy.svg) para copiar o URL. 
+   * Clique no ![ícone de editar](assets/do-not-localize/edit.svg) para editar o URL.
 1. Clique em **[!UICONTROL Salvar]** para salvar as alterações.
 
 ## Próximas etapas {#next-steps}

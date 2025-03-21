@@ -5,17 +5,51 @@ contentOwner: AG
 feature: Asset Management, Translation
 role: Admin, User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2633'
+source-wordcount: '2661'
 ht-degree: 16%
 
 ---
 
 # Traduzir ativos no AEM {#multilingual-assets}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -24,11 +58,11 @@ ht-degree: 16%
 
 Ativos multilíngues são ativos com binários, metadados e tags em vários idiomas. Geralmente, binários, metadados e tags para ativos existem em um idioma, que são traduzidos para outros idiomas para uso em projetos multilíngues. O Adobe Experience Manager Assets permite automatizar fluxos de trabalho para traduzir ativos (incluindo binários, metadados e tags) para gerar ativos em outros idiomas para uso em projetos multilíngues.
 
-Para automatizar a tradução de ativos do AEM, você integra provedores de serviços de tradução ao Experience Manager e cria projetos para traduzir ativos em vários idiomas. O Experience Manager oferece suporte a fluxos de trabalho de tradução humana e automática.
+Para automatizar a tradução de ativos do AEM, você integra provedores de serviços de tradução ao Experience Manager e cria projetos para traduzir ativos em vários idiomas. O Experience Manager oferece suporte a fluxos de trabalho de tradução humana e de máquina.
 
-Tradução de ativos humanos no AEM: os ativos traduzidos são retornados e importados para o Experience Manager. Quando seu provedor de tradução é integrado ao Experience Manager, os ativos são automaticamente enviados entre o Experience Manager e o provedor de tradução.
+Tradução de ativos humanos no AEM: os ativos traduzidos são retornados e importados para o Experience Manager. Quando seu provedor de tradução é integrado ao Experience Manager, os ativos são enviados automaticamente entre o Experience Manager e o provedor de tradução.
 
-Tradução automática de ativos no AEM: o serviço de tradução automática traduz imediatamente os metadados e as tags de ativos.
+Tradução automática de ativos no AEM: o serviço de tradução automática traduz imediatamente os metadados e as tags dos ativos.
 
 <!--
 We have multiple articles around translation of assets. For now, dumping all content in this article to remove others and create only ONE UBER article.
@@ -217,7 +251,7 @@ Execute este fluxo de trabalho para traduzir um grupo adicional de ativos e incl
 
 >[!NOTE]
 >
->Se você iniciar um fluxo de trabalho de tradução para ativos complexos, como arquivos PDF e Adobe InDesign, seus subativos ou representações (se houver) não serão enviados para tradução.
+>Se você iniciar um fluxo de trabalho de tradução para ativos complexos, como arquivos PDF e Adobe InDesign, os subativos ou representações (se houver) não serão enviados para tradução.
 
 ### Criar e traduzir fluxo de trabalho {#create-and-translate-workflow}
 
@@ -255,7 +289,7 @@ Aplicar serviços de nuvem de tradução diretamente à pasta de ativos elimina 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Navegue até a guia **[!UICONTROL Serviços da nuvem]**.
-1. Na lista Configurações de Cloud Service, escolha o provedor de tradução desejado. Por exemplo, se você deseja aproveitar os serviços de tradução do Microsoft, escolha **[!UICONTROL Microsoft Translator]**.
+1. Na lista Configurações do Cloud Service, escolha o provedor de tradução desejado. Por exemplo, se você deseja aproveitar os serviços de tradução do Microsoft, escolha **[!UICONTROL Microsoft Translator]**.
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
@@ -270,7 +304,7 @@ Aplicar serviços de nuvem de tradução diretamente à pasta de ativos elimina 
 Se quiser aplicar um conector personalizado para os serviços de tradução que deseja usar nos fluxos de trabalho de tradução. Para aplicar um conector personalizado, primeiro instale o conector do [Gerenciador de Pacotes](/help/implementing/developing/tools/package-manager.md). Em seguida, configure o conector do console Serviços da nuvem. Após configurar o conector, ele estará disponível na lista de conectores na guia Serviços da nuvem descrita em [Aplicar serviços de tradução](#applying-the-translation-services). Depois de aplicar o conector personalizado e executar os fluxos de trabalho de tradução, o bloco **[!UICONTROL Resumo da tradução]** do projeto de tradução exibe os detalhes do conector nos cabeçalhos **[!UICONTROL Provedor]** e **[!UICONTROL Método]**.
 
 1. Instale o conector do [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md).
-1. Selecione o logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas > Implantação > Cloud Service]**.
+1. Selecione o logotipo do Experience Manager e navegue até **[!UICONTROL Ferramentas > Implantação > Cloud Services]**.
 1. Localize o conector instalado em **[!UICONTROL Serviços de terceiros]** na página **[!UICONTROL Serviços da nuvem]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
@@ -297,4 +331,4 @@ Se quiser aplicar um conector personalizado para os serviços de tradução que 
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)

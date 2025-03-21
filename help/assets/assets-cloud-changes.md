@@ -4,19 +4,53 @@ description: Alterações importantes no [!DNL Adobe Experience Manager Assets] 
 feature: Release Information
 role: User, Leader, Architect, Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 979c4accca8b271ba2ff0ba176985c94b6d469c7
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1052'
 ht-degree: 8%
 
 ---
 
 # Alterações importantes para [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#notable-changes}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
-O [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] traz muitos novos recursos e possibilidades para gerenciar projetos em Experience Manager. Há muitas diferenças entre o [!DNL Experience Manager Assets] no local ou hospedado como Adobe Managed Service, em comparação ao [!DNL Experience Manager] as a [!DNL Cloud Service]. Este artigo destaca as diferenças importantes para os recursos do [!DNL Assets].
+O [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] traz muitos novos recursos e possibilidades para gerenciar os projetos da Experience Manager. Há muitas diferenças entre o [!DNL Experience Manager Assets] no local ou hospedado como Adobe Managed Service, em comparação ao [!DNL Experience Manager] as a [!DNL Cloud Service]. Este artigo destaca as diferenças importantes para os recursos do [!DNL Assets].
 
 As principais diferenças em relação ao [!DNL Experience Manager] 6.5 estão nas seguintes áreas:
 
@@ -42,7 +76,7 @@ As representações padrão geradas com os microsserviços de ativos são armaze
 
 ## Desenvolver e testar os microsserviços de ativos {#asset-microservices}
 
-Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os microsserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como o [!DNL ImageMagick]) e simplificam as configurações, além de fornecer funcionalidade pronta para uso para tipos de arquivos comuns. Agora é possível processar uma [ampla variedade de tipos de arquivos](/help/assets/file-format-support.md) que abrangem mais formatos prontos para uso do que o possível com versões anteriores do Experience Manager. Por exemplo, a extração em miniatura dos formatos PSD e PSB agora é possível e anteriormente exigia soluções de terceiros, como o [!DNL ImageMagick]. Você não pode usar as configurações complexas de [!DNL ImageMagick] para a configuração [!UICONTROL Processando Perfis]. Use [!DNL Dynamic Media] para a transcodificação avançada FFmpeg de vídeos e use perfis de processamento para [transcodificação básica de vídeos MP4](/help/assets/manage-video-assets.md#transcode-video).
+Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os microsserviços de ativos ajudam a evitar a necessidade de ferramentas e métodos de renderização de terceiros (como o [!DNL ImageMagick]) e simplificam as configurações, além de fornecer funcionalidade pronta para uso para tipos de arquivos comuns. Agora você pode processar uma [ampla variedade de tipos de arquivos](/help/assets/file-format-support.md) que abrangem mais formatos prontos para uso do que o possível com versões anteriores do Experience Manager. Por exemplo, a extração de miniaturas dos formatos PSD e PSB agora é possível e anteriormente exigia soluções de terceiros, como o [!DNL ImageMagick]. Você não pode usar as configurações complexas de [!DNL ImageMagick] para a configuração [!UICONTROL Processando Perfis]. Use [!DNL Dynamic Media] para a transcodificação avançada FFmpeg de vídeos e use perfis de processamento para [transcodificação básica de vídeos MP4](/help/assets/manage-video-assets.md#transcode-video).
 
 Os microsserviços de ativos são um serviço nativo em nuvem provisionado e conectado automaticamente ao [!DNL Experience Manager] em programas e ambientes de clientes gerenciados no Cloud Manager. Para estender ou personalizar o [!DNL Experience Manager], os desenvolvedores podem usar conteúdo ou ativos existentes com representações geradas em um ambiente de nuvem. Essa capacidade permite que eles testem e validem seu código usando, exibindo ou baixando ativos.
 
@@ -59,12 +93,12 @@ O [!DNL Experience Manager] as a [!DNL Cloud Service] apresenta muitos recursos 
 | Writeback de metadados | Isso funciona de forma diferente | Desabilitado por padrão. Ative o iniciador do fluxo de trabalho correspondente, se necessário. Os microsserviços de ativos lidam com o write-back. |
 | Processamento de ativos carregados usando o Gerenciador de pacotes | Isso requer intervenção manual | Reprocessar manualmente usando a ação **[!UICONTROL Reprocessar Ativo]**. |
 | Detecção de tipo MIME | Não suportado. | Se você fizer upload de um ativo digital sem uma extensão ou com uma extensão incorreta, talvez ele não seja processado conforme desejado. Os usuários ainda podem armazenar os arquivos binários sem uma extensão no DAM. Consulte [Detecção de tipo MIME em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/detect-asset-mime-type-with-tika). |
-| Geração de subativos para um ativo composto | Não suportado. | Casos de uso dependentes, como anotações, podem não ser cumpridos. Consulte [criação de subativos em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets). A visualização de PDF de alguns tipos de arquivos está disponível a partir da [versão 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
+| Geração de subativos para um ativo composto | Não suportado. | Casos de uso dependentes, como anotações, podem não ser cumpridos. Consulte [criação de subativos em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/managing-linked-subassets#generate-subassets). A visualização do PDF de alguns tipos de arquivos está disponível a partir da [versão 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
 | Editar imagens | Não suportado | A edição de ativos não é permitida no Experience Manager as a Cloud Service. Veja [como funcionou no Experience Manager 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#editing-images). |
 | Home page | Não suportado | Ver a [[!DNL Assets] experiência da Página Inicial [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/using/assets-home-page) |
 | Extrair ativos do arquivo ZIP | Não suportado | Consulte [Extração de ZIP em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/managing/manage-assets#extractzip). |
 | Classificações do Assets | Não suportado | O widget de classificação no editor de esquema de metadados não é compatível. |
-| Filtro de disposição de conteúdo | Não suportado | Um caso de uso popular do `ContentDispositionFilter` é permitir que os administradores configurem o [!DNL Experience Manager] para fornecer arquivos de HTML e para abrir arquivos de PDF em linha, em vez de baixá-los. Nas instâncias de publicação, é possível gerenciar o descarte usando a configuração do Dispatcher. Nas instâncias de criação, o Adobe não recomenda a modificação do cabeçalho Disposição do conteúdo. Consulte [Filtro de Disposição de Conteúdo em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter). |
+| Filtro de disposição de conteúdo | Não suportado | Um caso de uso popular do `ContentDispositionFilter` é permitir que os administradores configurem o [!DNL Experience Manager] para fornecer arquivos do HTML e para abrir arquivos do PDF em linha, em vez de baixá-los. Nas instâncias de publicação, é possível gerenciar o descarte usando a configuração do Dispatcher. Nas instâncias de criação, o Adobe não recomenda a modificação do cabeçalho Disposição do conteúdo. Consulte [Filtro de Disposição de Conteúdo em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/content-disposition-filter). |
 | Modelo de sessão de fotos do produto | Não suportado | Consulte o [modelo de sessão de fotos do produto em [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/authoring/projects/managing-product-information). |
 | Tradução inteligente | Não suportado | Não há suporte para a tradução inteligente em [!DNL Experience Manager] como [!DNL Cloud Service]. |
 | WebDAV | Não suportado | Para obter alternativas, consulte [[!DNL Creative Cloud] Integração](/help/assets/aem-cc-integration-best-practices.md) ou [Material de referência do desenvolvedor](/help/assets/developer-reference-material-apis.md). |
@@ -84,7 +118,7 @@ O [!DNL Experience Manager] as a [!DNL Cloud Service] apresenta muitos recursos 
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

@@ -1,20 +1,54 @@
 ---
 title: Assets Prime
-description: Saiba mais sobre os principais aspectos do Assets Prime, como benefícios, tipos de usuários e privilégios.
+description: Saiba mais sobre os principais aspectos do Assets Prime, como benefícios principais, tipos de usuários e seus privilégios.
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 92faabc50ce4b83ad1015bbbadeac416d66c3b0b
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 0%
+source-wordcount: '1152'
+ht-degree: 1%
 
 ---
 
-# [!DNL Assets] Prime as a Cloud Service  {#assets-prime}
+# as a Cloud Service Prime [!DNL Assets]  {#assets-prime}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 ![Imagem do banner do AEM Assets Prime](/help/assets/assets/aem-assets-prime-package-banner.png)
 
@@ -26,9 +60,9 @@ O Assets as a Cloud Service Prime inclui um DAM leve que permite executar vário
 
 * **Segurança e Rights Management**: ferramentas para gerenciar acesso, permissões, direitos e segurança para garantir conformidade, consistência e integridade da marca.
 
-* **Conexões Creative Cloud**: ferramentas que permitem que as equipes de marketing e criação colaborem com acesso simplificado, comentários, revisões e anotações para atualizar ou finalizar ativos digitais.
+* **Conexões do Creative Cloud**: ferramentas que permitem que as equipes de marketing e criação colaborem com acesso simplificado, comentários, revisões e anotações para atualizar ou finalizar ativos digitais.
 
-* **Conexões Experience Cloud**: ferramentas para suportar o acesso nativo a ativos digitais de outros aplicativos e serviços Experience Cloud.
+* **Conexões do Experience Cloud**: ferramentas para dar suporte ao acesso nativo a ativos digitais de outros aplicativos e serviços da Experience Cloud.
 
 * **Experiência do Portal de Distribuição sem opções de extensibilidade (Content Hub)**: ferramentas para expandir o acesso aos ativos digitais aprovados de uma marca para participantes estendidos, a fim de garantir a consistência da marca e o uso.
 
@@ -38,15 +72,15 @@ O Assets as a Cloud Service Prime inclui um DAM leve que permite executar vário
 
   >[!NOTE]
   >
-  >O Dynamic Media com recursos OpenAPI, que fornecem acesso a modificadores básicos de imagem como girar, recortar (manual apenas - sem recorte inteligente), virar, dimensionar, preferwebp, altura, largura, qualidade, formato e transmissão de vídeo adaptável, também está disponível com o Assets Prime. Entre em contato com a equipe de conta do Adobe para saber mais.
+  >O Dynamic Media com recursos de OpenAPI, que fornecem acesso a modificadores básicos de imagem como girar, recortar (manual apenas - sem recorte inteligente), virar, dimensionar, preferwebp, altura, largura, qualidade, formato e transmissão de vídeo adaptável, também está disponível com o Assets Prime. Entre em contato com a equipe de conta da Adobe para saber mais.
 
 1. [Criar um novo programa](/help/journey-onboarding/create-program.md).
 
 No entanto, à medida que suas necessidades de DAM aumentam e você precisa de mais recursos, como extensibilidade da interface, automação orientada por API e implantação de código personalizado, você deve considerar a atualização para o [Assets Ultimate](/help/assets/assets-ultimate-overview.md).
 
-Este artigo fornece um fluxo de trabalho completo para ativar o Assets as a Cloud Service Prime.
+Este artigo fornece um fluxo de trabalho completo para habilitar o Assets as a Cloud Service Prime.
 
-## Ativar o Assets as a Cloud Service{#enable-assets-prime}
+## Ativar o Assets as a Cloud Service Prime{#enable-assets-prime}
 
 Ative o Assets Prime ao criar um novo programa usando o Cloud Manager. Execute as seguintes etapas:
 
@@ -75,16 +109,16 @@ Ative o Assets Prime ao criar um novo programa usando o Cloud Manager. Execute a
 >
 >O Assets Prime só permite criar um ambiente de produção. A opção para Adicionar ambiente não está mais disponível depois que o ambiente de produção é criado com sucesso.
 
-O Assets Prime agora está habilitado para o Experience Manager Assets as a Cloud Service.
+O Assets Prime agora está ativado para o Experience Manager Assets as a Cloud Service.
 
 ![O AEM Assets Prime está disponível](assets/aem-assets-prime-setup-complete.png)
 
-O administrador do sistema é automaticamente qualificado como administrador de AEM e recebe um email para navegar até o Admin Console para gerenciar perfis de produto.
+O administrador do sistema é automaticamente qualificado como administrador do AEM e recebe um email para navegar até o Admin Console e gerenciar perfis de produto.
 
 
 A instância do AEM as a Cloud Service no Admin Console inclui os seguintes perfis de produto:
 
-* Administradores de AEM
+* Administradores do AEM
 
 * Usuários do AEM
 
@@ -97,7 +131,7 @@ A instância do AEM as a Cloud Service no Admin Console inclui os seguintes perf
 
 Você pode começar a adicionar usuários ou grupos de usuários aos perfis de produtos Usuários do AEM Assets Collaborator e Usuários Avançados do AEM Assets. Para obter mais informações, consulte [Integrar usuários do AEM Assets Collaborator](#onboard-collaborator-users) e [Integrar usuários avançados do AEM Assets](#onboard-power-users).
 
-Se você habilitou o Content Hub para Assets as a Cloud Service, há uma nova instância criada no Admin Console as a Cloud Service do AEM Assets com `delivery` como sufixo:
+Se você habilitou o Content Hub para o Assets as a Cloud Service, há uma nova instância criada no AEM Assets as a Cloud Service no Admin Console com `delivery` como sufixo:
 
 ![Nova instância para o Content Hub](assets/new-instance-content-hub.png)
 
@@ -119,11 +153,11 @@ Você pode começar a adicionar usuários ou grupos de usuários a esse perfil d
 
 ## Integrar usuários do AEM Assets Collaborator {#onboard-collaborator-users}
 
-Os usuários do AEM Assets Collaborator podem trabalhar com ativos do Experience Manager por meio de integrações da Assets disponíveis para sua organização em outros produtos de Adobe e aplicativos que não sejam Adobe, criar e editar ativos usando Adobe Express e Firefly integrados, aproveitando modelos profissionalmente projetados, kits de marca, ativos da Adobe Stock e assim por diante, e acessar e aproveitar ativos aprovados de sua organização usando o portal AEM Assets Content Hub.
+Os usuários do AEM Assets Collaborator podem trabalhar com ativos do Experience Manager por meio de integrações da Assets disponíveis para sua organização em outros produtos da Adobe e aplicativos que não sejam da Adobe, criar e editar ativos usando o Adobe Express e o Firefly integrados, aproveitando modelos, kits de marca, ativos da Adobe Stock e assim por diante projetados profissionalmente, e acessar e aproveitar ativos aprovados de sua organização usando o portal AEM Assets Content Hub.
 
 Para integrar usuários do Collaborator:
 
-1. Para acessar os perfis de produto do Experience Manager Assets, clique no nome de produto do AEM as a Cloud Service na lista de produtos do Admin Console.
+1. Acesse os perfis de produto do Experience Manager Assets clicando no nome de produto do AEM as a Cloud Service na lista de produtos do Admin Console.
 
 1. Clique na instância do autor de produção para o AEM as a Cloud Service:
    ![Perfis de produto para o AEM as a Cloud Service](assets/aem-cloud-service-instances.png)
@@ -141,11 +175,11 @@ Os serviços `Adobe Express` e `AEM Assets Collaborator Users` estão habilitado
 
 ## Integração de usuários avançados do AEM Assets {#onboard-power-users}
 
-Os usuários avançados da AEM Assets podem acessar todos os recursos da AEM Assets, incluindo o gerenciamento de ativos, permissões, metadados e a governança e automação geral em torno de ativos digitais, trabalhar com ativos do Experience Manager por meio de integrações da Assets disponíveis para sua organização em outros aplicativos Adobe e não Adobe, criar e editar ativos usando o Adobe Express e o Firefly integrados, aproveitando modelos projetados profissionalmente, kits de marca, ativos da Adobe Stock e assim por diante, e acessar e aproveitar os ativos aprovados da sua organização usando o portal AEM Assets da Content Hub.
+Os usuários avançados da AEM Assets podem acessar todos os recursos da AEM Assets, incluindo o gerenciamento de ativos, permissões, metadados e a governança e automação geral em torno de ativos digitais, trabalhar com ativos do Experience Manager por meio de integrações da Assets disponíveis para sua organização em outros aplicativos da Adobe e que não sejam da Adobe, criar e editar ativos usando o Adobe Express e o Firefly integrados, aproveitando modelos projetados profissionalmente, kits de marca, ativos da Adobe Stock e assim por diante, e acessar e aproveitar os ativos aprovados da sua organização usando o portal AEM Assets da Content Hub da.
 
 Para integrar Usuários avançados:
 
-1. Para acessar os perfis de produto do Experience Manager Assets, clique no nome de produto do AEM as a Cloud Service na lista de produtos do Admin Console.
+1. Acesse os perfis de produto do Experience Manager Assets clicando no nome de produto do AEM as a Cloud Service na lista de produtos do Admin Console.
 
 1. Clique na instância do autor de produção para o AEM as a Cloud Service:
    ![Perfis de produto para o AEM as a Cloud Service](assets/aem-cloud-service-instances.png)

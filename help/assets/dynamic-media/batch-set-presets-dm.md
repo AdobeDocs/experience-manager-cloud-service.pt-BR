@@ -5,14 +5,51 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewer Presets
 role: User
 exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3480'
 ht-degree: 0%
 
 ---
 
 # Sobre predefinições de conjunto de lotes {#about-bsp}
+
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 Use as **[!UICONTROL Predefinições do conjunto de lotes]** para criar e organizar vários ativos em um conjunto de imagens ou conjunto de rotação no momento em que você carrega arquivos de ativos para uma pasta individualmente ou por meio de assimilação em massa. A predefinição pode ser executada junto com os trabalhos de importação de ativos agendados em [!DNL Dynamic Media]. Cada predefinição é um conjunto de instruções com nome exclusivo e independente que define como construir o conjunto de imagens ou o conjunto de rotação usando imagens que correspondem às convenções de nomenclatura definidas na fórmula predefinida.
 
@@ -20,14 +57,14 @@ Use as **[!UICONTROL Predefinições do conjunto de lotes]** para criar e organi
 >
 >Você está usando predefinições de conjunto de lotes em [!DNL Dynamic Media Classic] e migrando de [!DNL Dynamic Media Classic] para o Adobe Experience Manager as a Cloud Service? Em caso afirmativo, você deve recriar manualmente suas definições de predefinições de conjunto de lotes em [!DNL Adobe Experience Manager as a Cloud Service].
 
-**Prática recomendada** - Ao trabalhar com predefinições de conjunto de lotes, o Adobe recomenda o seguinte fluxo de trabalho:
+**Prática recomendada** - Ao trabalhar com predefinições de conjunto de lotes, a Adobe recomenda o seguinte fluxo de trabalho:
 
 1. Criar uma predefinição de conjunto de lotes. Consulte [Criar uma predefinição de conjunto de lotes para um conjunto de imagens ou um conjunto de rotação](#creating-bsp).
 1. Crie uma pasta de ativos ou use uma pasta de ativos existente e verifique se ela está sincronizada com [!DNL Dynamic Media]. Consulte [Criar pastas](/help/assets/manage-digital-assets.md#creating-folders).
 1. Aplicar a predefinição de conjunto de lotes à pasta de ativos. Consulte [Sobre a aplicação de predefinições de conjunto de lotes a pastas](#apply-bsp).
 1. Faça upload de imagens para a pasta de ativos. Consulte [Carregar ativos para Conjuntos de imagens](/help/assets/dynamic-media/image-sets.md#uploading-assets-in-image-sets), [Carregar ativos para Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md#uploading-assets-for-spin-sets) ou [Adicionar ativos digitais ao Adobe Experience Manager](/help/assets/add-assets.md#add-assets-to-experience-manager).
 1. O conjunto de imagens ou o conjunto de rotação é gerado automaticamente na pasta desejada.
-1. Publish seu conjunto de imagens ou conjunto de rotação. Consulte [Publish Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
+1. Publique seu conjunto de imagens ou conjunto de rotação. Consulte [Publicar o Dynamic Media Assets](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md).
 
 ## Criar uma predefinição de conjunto de lotes para um conjunto de imagens ou um conjunto de rotação {#creating-bsp}
 
@@ -109,7 +146,7 @@ Consulte [Criar uma predefinição de conjunto de lotes para um conjunto de imag
 | --- | --- |
 | Nome da predefinição | Somente leitura. O nome especificado quando você criou o conjunto de lotes pela primeira vez. Se for necessário renomear a predefinição, copie a predefinição de conjunto de lotes existente e especifique um novo nome. Consulte [Copiar uma predefinição de conjunto de lotes existente](#copy-bsp). |
 | Tipo | Somente leitura. O tipo foi especificado quando você criou o conjunto de lotes pela primeira vez. Copiar uma predefinição de conjunto de lotes existente não permite alterar seu [!UICONTROL Tipo]; em vez disso, você deve criar uma predefinição. |
-| Incluir ativos derivados | Opcional. Para que o IPS (Sistema de Produção de Imagens) de [!DNL Dynamic Media] inclua imagens geradas ou &quot;derivadas&quot; com o Conjunto de Rotação ou Conjunto de Imagens, selecione **[!UICONTROL Sim]** (padrão). Um ativo derivado é uma imagem que não foi carregada diretamente por um usuário. Em vez disso, o ativo era produzido pelo IPS quando um ativo principal era carregado. Por exemplo, um ativo de imagem que o IPS gerou de uma página em um PDF, no momento em que o PDF foi carregado em [!DNL Dynamic Media], é considerado um ativo derivado. |
+| Incluir ativos derivados | Opcional. Para que o IPS (Sistema de Produção de Imagens) de [!DNL Dynamic Media] inclua imagens geradas ou &quot;derivadas&quot; com o Conjunto de Rotação ou Conjunto de Imagens, selecione **[!UICONTROL Sim]** (padrão). Um ativo derivado é uma imagem que não foi carregada diretamente por um usuário. Em vez disso, o ativo era produzido pelo IPS quando um ativo principal era carregado. Por exemplo, um ativo de imagem que o IPS gerou de uma página em uma PDF, no momento em que a PDF foi carregada em [!DNL Dynamic Media], é considerado um ativo derivado. |
 | Pasta de destino | Opcional. Se você definir um grande número de conjuntos de imagens ou conjuntos de rotação, a Adobe recomenda manter esses conjuntos separados das pastas que contêm os próprios ativos. Dessa forma, considere a criação de uma pasta Conjuntos de imagens ou Conjuntos de rotação e redirecione o aplicativo para colocar conjuntos de lotes gerados aqui.<br>Nesse caso, especifique qual pasta na estrutura de pastas do Experience Manager Assets (`/content/dam`) tem a predefinição de conjunto de lotes ativa. Verifique se a pasta está habilitada para a sincronização de [!DNL Dynamic Media] para permitir que ela seja uma pasta de destino. Consulte [Configurar publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder).<br>Mais de uma pasta pode ter determinada predefinição de conjunto de lotes atribuída a ela, se você aplicar a predefinição por meio das **[!UICONTROL Propriedades]** da pasta. Consulte [Aplicar predefinições de conjunto de lotes da página Propriedades de uma pasta de ativos](#apply-bsp-to-folders-via-properties).<br>Se você não especificar uma pasta, a predefinição de conjunto de lotes gerada pelo conjunto de imagens ou o conjunto de rotação será criado na mesma pasta da pasta de ativos na qual você fez upload. |
 | **[!UICONTROL Definir Convenção de Nomenclatura]** |  |
 | Prefixo<br>ou<br>Sufixo | Opcional. Insira um prefixo, um sufixo ou ambos nos respectivos campos.<br>Os campos de prefixo e sufixo permitem criar várias predefinições de conjunto de lotes usando uma convenção de nomenclatura de arquivo alternativa e personalizada para um conjunto específico de conteúdo. Esse método é especialmente útil nos casos em que há uma exceção no esquema de nomenclatura padrão definido por uma empresa.<br>O prefixo ou sufixo é adicionado ao **[!UICONTROL Nome de base]** definido na área **[!UICONTROL Convenção de nomenclatura de ativos]**. Ao adicionar um prefixo ou sufixo, você garante que o conjunto de imagens ou o conjunto de rotação seja criado de forma exclusiva e independente de outros ativos. Ele também pode ajudar outras pessoas a identificar tipos de arquivos. Por exemplo, para determinar um modo de cor usado, você pode adicionar como um prefixo ou sufixo `rgb` ou `cmyk`.<br>Embora não seja necessário especificar uma convenção de nomenclatura de conjunto para usar a funcionalidade de predefinição de conjunto de lotes, a prática recomendada é usar a convenção de nomenclatura de conjunto. Essa prática permite definir quantos elementos de sua convenção de nomenclatura você desejar que sejam agrupados em um conjunto para ajudar a simplificar a criação do conjunto de lotes. |
@@ -154,7 +191,7 @@ Reprocessamento de ativos em uma pasta se você encontrar um dos dois cenários 
 1. Navegue até uma pasta na qual deseja aplicar uma ou mais predefinições de conjunto de lotes.
 1. Na página, à esquerda da coluna **[!UICONTROL Nome]**, marque a caixa de seleção de uma pasta.
 1. Na barra de ferramentas, selecione **[!UICONTROL Propriedades]**.
-1. Na página Propriedades da pasta, selecione a guia **[!UICONTROL Processamento do Dynamic Media]**.
+1. Na página Propriedades da pasta, selecione a guia **[!UICONTROL Processamento de Dynamic Media]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-apply-via-properties2a.png)
 
@@ -231,7 +268,7 @@ Há dois métodos que podem ser usados para remover predefinições de conjunto 
 1. Navegue até uma pasta para a qual deseja remover uma ou mais predefinições de conjunto de lotes.
 1. Na página, à esquerda da coluna **[!UICONTROL Nome]**, marque a caixa de seleção de uma pasta.
 1. Na barra de ferramentas, selecione **[!UICONTROL Propriedades]**.
-1. Na página Propriedades da pasta, selecione **[!UICONTROL Processamento do Dynamic Media]**.
+1. Na página Propriedades da pasta, selecione **[!UICONTROL Processamento de Dynamic Media]**.
 
    ![bsp-apply-via-properties2.png](/help/assets/assets-dm/bsp-remove-via-properties2.png)
 
@@ -265,5 +302,5 @@ Se, em vez disso, você quiser *remover* predefinições de pastas, consulte [Re
 >
 >* [Conjuntos de imagem](/help/assets/dynamic-media/image-sets.md)
 >* [Conjuntos de rotação](/help/assets/dynamic-media/spin-sets.md)
->* [Configure a publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - Consulte &quot;Modo de Sincronização&quot; no tópico se quiser saber mais sobre como sincronizar uma única pasta com o [!DNL Dynamic Media].
->* [Criar uma Configuração do Dynamic Media no Cloud Service](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - Consulte &quot;Modo de sincronização do Dynamic Media&quot; no tópico se quiser saber mais sobre como sincronizar todas as pastas com o [!DNL Dynamic Media].
+>* [Configurar a publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md#selective-publish-configure-folder) - Consulte &quot;Modo de Sincronização&quot; no tópico se quiser saber mais sobre como sincronizar uma única pasta com o [!DNL Dynamic Media].
+>* [Criar uma Configuração de Mídia Dinâmica no Cloud Services](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) - Consulte &quot;Modo de sincronização de Mídia Dinâmica&quot; no tópico se quiser saber mais sobre como sincronizar todas as pastas com o [!DNL Dynamic Media].

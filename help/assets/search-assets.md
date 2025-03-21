@@ -6,22 +6,56 @@ mini-toc-levels: 1
 feature: Selectors, Adobe Stock, Asset Distribution, Asset Management, Asset Processing
 role: User, Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '5524'
+source-wordcount: '5552'
 ht-degree: 5%
 
 ---
 
 # Pesquisar ativos no AEM {#search-assets-in-aem}
 
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
+
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
-
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
 
 O [!DNL Adobe Experience Manager Assets] fornece métodos de pesquisa de ativos robustos que ajudam a alcançar maior velocidade do conteúdo. Suas equipes podem reduzir o tempo de entrada no mercado com uma experiência de pesquisa de ativos inteligente e contínua, usando funcionalidade pronta para uso e métodos personalizados. O recurso de pesquisa de ativos é fundamental para o uso de um sistema de gerenciamento de ativos digitais — seja para uso adicional por criadores, para o gerenciamento robusto de ativos pelos usuários empresariais e profissionais de marketing ou para administração por administradores de DAM. Pesquisas simples, avançadas e personalizadas que podem ser executadas por meio da interface do usuário do [!DNL Assets] ou por outros aplicativos e superfícies ajudam a atender a esses casos de uso.
 
@@ -35,7 +69,7 @@ A pesquisa de ativos no AEM é compatível com os seguintes casos de uso e este 
 | [Compreender os resultados e o comportamento da pesquisa](#searchbehavior) | [Modificar aspectos da pesquisa](#searchfacets) | [Atualizações de metadados em massa](#metadata-updates) |
 | [Classificação e aumento de pesquisa](#searchrank) | [Predicados personalizados](#custompredicates) | [Coleções inteligentes](#collections) |
 | [Pesquisa avançada: filtragem e escopo da pesquisa](#scope) | | [Compreender e solucionar problemas de resultados inesperados](#unexpected-results) |
-| [Pesquisar de outras soluções e aplicativos](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[aplicativo de desktop Experience Manager](#desktop-app)</li><li>[imagens do Adobe Stock](#adobe-stock)</li><li>[Ativos do Dynamic Media](#search-dynamic-media-assets)</li></ul> | | |
+| [Pesquisar de outras soluções e aplicativos](#search-assets-other-surfaces):<ul><li>[Adobe Asset Link](#aal)</li><li>[Brand Portal](#brand-portal)</li><li>[aplicativo de desktop do Experience Manager](#desktop-app)</li><li>[imagens do Adobe Stock](#adobe-stock)</li><li>[Ativos de mídia dinâmica](#search-dynamic-media-assets)</li></ul> | | |
 | [Seletor de ativos](#asset-picker) | | |
 | [Limitações](#limitations) e [Dicas](#tips) | | |
 | [Exemplos ilustrados](#samples) | | |
@@ -88,7 +122,7 @@ A partir de agosto de 2023, o Experience Manager Assets incluirá uma nova vers�
 
 `damAssetLucene-9` altera o comportamento da contagem facetada da Consulta do Oak para não avaliar mais o controle de acesso nas contagens facetadas retornadas pelo índice de pesquisa subjacente, o que resulta em tempos de resposta de pesquisa mais rápidos. Como resultado, os valores de contagem de facetas podem ser apresentados aos usuários, o que inclui ativos aos quais eles não têm acesso. Esses usuários não podem acessar, baixar ou ler nenhum outro detalhe desses ativos, incluindo seus caminhos, ou obter mais informações sobre eles.
 
-Se você precisar alternar para o comportamento anterior (modo `statistical`), consulte [Pesquisa e Indexação de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=pt-BR) para criar uma versão personalizada do índice `damAssetLucene-9`. O Adobe não recomenda alternar para o modo `secure` devido ao impacto nos tempos de resposta de pesquisa com conjuntos de resultados grandes.
+Se você precisar alternar para o comportamento anterior (modo `statistical`), consulte [Pesquisa e Indexação de Conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/operations/indexing.html?lang=pt-BR) para criar uma versão personalizada do índice `damAssetLucene-9`. A Adobe não recomenda alternar para o modo `secure` devido ao impacto nos tempos de resposta de pesquisa com conjuntos de resultados grandes.
 
 Para obter mais informações sobre os recursos de facetas do Oak, incluindo uma descrição detalhada desses modos, consulte [Facetas - Documentação do Oak - Índice Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html#facets).
 
@@ -220,7 +254,7 @@ Você pode pesquisar ativos com base em valores exatos de campos de metadados, c
 | Tempo desligado | offtime:AAAA-MM-DDTHH |
 | Intervalo de tempo(expira dateontime,offtime) | campo de faceta : limite inferior.limite superior |
 | Caminho | /content/dam/&lt;nome da pasta> |
-| Título do PDF | pdftitle:&quot;Documento Adobe&quot; |
+| Título do PDF | pdftitle:&quot;Documento do Adobe&quot; |
 | Assunto | assunto: &quot;Treinamento&quot; |
 | Tags | tags: &quot;Localização E Viagem&quot; |
 | Tipo | type:&quot;image\png&quot; |
@@ -243,7 +277,7 @@ Estes são alguns exemplos de formatos de pesquisa para consultas complexas:
 * Para exibir ativos com valores de propriedade começando com uma sequência específica (por exemplo: o título é Scott Reynolds): `title:Scott*`
 * Para exibir ativos com valores de propriedade que terminam com uma sequência específica (por exemplo: o título é Scott Reynolds): `title:*Reynolds`
 * Para exibir ativos com um valor de propriedade que contenha uma cadeia de caracteres específica (por exemplo: title = Sala de Reunião da Basileia): `title:*Meeting*`
-* Para exibir ativos que contêm uma determinada sequência de caracteres e têm um valor de propriedade específico (por exemplo: procure por Adobe de sequência de caracteres em ativos que possuem title=John Doe): `*Adobe* title:"John Doe"`
+* Para exibir ativos que contêm uma sequência específica e têm um valor de propriedade específico (por exemplo: procure por sequência Adobe em ativos com title=John Doe): `*Adobe* title:"John Doe"`
 
 ## Pesquisar ativos de outras ofertas ou interfaces do [!DNL Experience Manager] {#search-assets-other-surfaces}
 
@@ -281,7 +315,7 @@ O recurso de pesquisa [!DNL Experience Manager] dá suporte à pesquisa de cole�
 
 O seletor de ativos (chamado de seletor de ativos em versões anteriores do [!DNL Adobe Experience Manager]) permite pesquisar, filtrar e navegar pelos ativos DAM de maneira especial. O seletor de ativos está disponível em `https://[aem_server]:[port]/aem/assetpicker.html`. Você pode buscar os metadados dos ativos selecionados usando o seletor de ativos. Você pode iniciá-lo com parâmetros de solicitação compatíveis, como tipo de ativo (imagem, vídeo, texto) e modo de seleção (seleções únicas ou múltiplas). Esses parâmetros definem o contexto do seletor de ativos para uma instância de pesquisa específica e permanecem intactos durante toda a seleção.
 
-O seletor de ativos usa a mensagem HTML5 `Window.postMessage` para enviar dados do ativo selecionado para o destinatário. Funciona somente no modo de navegação e somente com a página de resultados Omnisearch.
+O seletor de ativos usa a mensagem `Window.postMessage` do HTML5 para enviar dados do ativo selecionado para o destinatário. Funciona somente no modo de navegação e somente com a página de resultados Omnisearch.
 
 Passe os seguintes parâmetros de solicitação em um URL para iniciar o seletor de ativos em um contexto específico:
 
@@ -471,7 +505,7 @@ Você pode fazer o seguinte com os ativos pesquisados em [!DNL Experience Manage
 
 Classifique os resultados da pesquisa para descobrir os ativos necessários com mais rapidez. Você pode classificar os resultados da pesquisa na exibição de lista e somente ao selecionar **[[!UICONTROL Arquivos]](#searchui)** no painel **[!UICONTROL Filtros]**. O [!DNL Assets] usa a classificação do lado do servidor para classificar rapidamente todos os ativos (independente da quantidade) em uma pasta ou nos resultados de uma consulta de pesquisa. A classificação do lado do servidor fornece resultados mais rápidos e precisos do que a classificação do lado do cliente.
 
-Na exibição em lista, você pode classificar os resultados da pesquisa da mesma maneira que classifica os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimension, Tamanho, Classificação, Uso, (Data) Criada, (Data) Modificada, (Data) Publicada, Fluxo de trabalho e Com Check-out.
+Na exibição em lista, você pode classificar os resultados da pesquisa da mesma maneira que classifica os ativos em qualquer pasta. A classificação funciona nessas colunas — Nome, Título, Status, Dimensões, Tamanho, Classificação, Uso, (Data) Criada, (Data) Modificada, (Data) Publicada, Fluxo de trabalho e Com Check-out.
 
 Para limitações da funcionalidade de classificação, consulte [limitações](#limitations).
 
@@ -554,7 +588,7 @@ Navegue até o local da pasta dos ativos exibidos nos resultados da pesquisa. Se
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

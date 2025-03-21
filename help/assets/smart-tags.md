@@ -1,22 +1,56 @@
 ---
-title: Como adicionar tags inteligentes a ativos no AEM?
-description: Adicione tags inteligentes aos ativos no AEM com um serviço artificialmente inteligente que aplica tags comerciais contextuais e descritivas.
+title: Como adicionar tags inteligentes a ativos na AEM?
+description: Adicione tags inteligentes a ativos na AEM com um serviço artificialmente inteligente que aplica tags comerciais contextuais e descritivas.
 contentOwner: AG
 feature: Smart Tags
 role: Admin, User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2506'
 ht-degree: 6%
 
 ---
 
 
-# Adicionar tags inteligentes a ativos no AEM {#smart-tags-assets-aem}
+# Adicionar tags inteligentes a ativos na AEM {#smart-tags-assets-aem}
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
@@ -37,7 +71,7 @@ Em segundo plano, a funcionalidade usa a estrutura artificialmente inteligente d
 
 Você pode marcar os seguintes tipos de ativos:
 
-* **Imagens**: imagens em vários formatos são marcadas com os serviços de conteúdo inteligente do Adobe Sensei. Você [cria um modelo de treinamento](#train-model) e as imagens carregadas são marcadas automaticamente. As Tags inteligentes são aplicadas aos tipos de arquivos compatíveis que geram representações no formato JPG/e PNG.
+* **Imagens**: imagens em vários formatos são marcadas com os serviços de conteúdo inteligente do Adobe Sensei. Você [cria um modelo de treinamento](#train-model) e as imagens carregadas são marcadas automaticamente. As Tags inteligentes são aplicadas aos tipos de arquivos compatíveis que geram representações nos formatos JPG e PNG.
 * **Ativos baseados em texto**: [!DNL Experience Manager Assets] marca automaticamente os ativos baseados em texto com suporte quando carregados.
 * **Ativos de vídeo**: a marcação de vídeo está habilitada por padrão no [!DNL Adobe Experience Manager] como um [!DNL Cloud Service]. [Os vídeos são marcados automaticamente](/help/assets/smart-tags-video-assets.md) quando você carrega novos vídeos ou reprocessa os existentes.
 
@@ -45,7 +79,7 @@ Você pode marcar os seguintes tipos de ativos:
 |----|-----|------|
 | image/jpeg | CSV | MP4 (H264/AVC) |
 | image/tiff | DOC | MKV (H264/AVC) |
-| image/png | DOCX | MOV (H264/AVC, JPEG de movimento) |
+| image/png | DOCX | MOV (H264/AVC, Motion JPEG) |
 | image/bmp | HTML | AVI (indeo4) |
 | image/gif | PDF | FLV (H264/AVC, vp6f) |
 | image/pjpeg | PPT | WMV (WMV2) |
@@ -62,7 +96,7 @@ Você pode marcar os seguintes tipos de ativos:
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-O AEM adiciona automaticamente as Tags inteligentes aos ativos baseados em texto e aos vídeos por padrão. Para adicionar tags inteligentes automaticamente a imagens, conclua as tarefas a seguir.
+Por padrão, o AEM adiciona automaticamente as Tags inteligentes aos ativos baseados em texto e aos vídeos. Para adicionar tags inteligentes automaticamente a imagens, conclua as tarefas a seguir.
 
 * [Entender modelos e diretrizes de marca](#understand-tag-models-guidelines).
 * [Treine o modelo](#train-model).
@@ -99,9 +133,9 @@ Verifique se as imagens no conjunto de treinamento estão em conformidade com as
 
 **Número de marcas**: a Adobe recomenda que você treine um modelo usando pelo menos duas marcas distintas e pelo menos dez imagens diferentes para cada marca. Em um modelo de tag única, não adicione mais de 50 tags.
 
-**Número de exemplos**: para cada marca, adicione pelo menos dez exemplos. No entanto, o Adobe recomenda cerca de 30 exemplos. Há suporte para no máximo 50 exemplos por tag.
+**Número de exemplos**: para cada marca, adicione pelo menos dez exemplos. No entanto, a Adobe recomenda cerca de 30 exemplos. Há suporte para no máximo 50 exemplos por tag.
 
-**Evite falsos positivos e conflitos**: o Adobe recomenda criar um modelo de marca única para um único aspecto visual. Estruturar os modelos de tags de forma a evitar a sobreposição de tags entre os modelos. Por exemplo, não use marcas comuns como `sneakers` em dois nomes de modelos de marca diferentes: `shoes` e `footwear`. O processo de treinamento substitui um modelo de tag treinado pelo outro para uma palavra-chave comum.
+**Evite falsos positivos e conflitos**: a Adobe recomenda criar um modelo de marca única para um único aspecto visual. Estruturar os modelos de tags de forma a evitar a sobreposição de tags entre os modelos. Por exemplo, não use marcas comuns como `sneakers` em dois nomes de modelos de marca diferentes: `shoes` e `footwear`. O processo de treinamento substitui um modelo de tag treinado pelo outro para uma palavra-chave comum.
 
 **Exemplos**: mais alguns exemplos para orientação:
 
@@ -194,7 +228,7 @@ Para verificar se o serviço de Tags inteligentes é treinado em suas tags no co
 
 ## Marcar ativos com tags inteligentes no AEM {#tag-assets}
 
-Todos os tipos de ativos com suporte são marcados automaticamente por [!DNL Experience Manager Assets] quando carregados. A marcação é ativada e funciona por padrão. O AEM aplica as tags inteligentes apropriadas em tempo quase real. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Todos os tipos de ativos com suporte são marcados automaticamente por [!DNL Experience Manager Assets] quando carregados. A marcação é ativada e funciona por padrão. A AEM aplica as tags inteligentes apropriadas em tempo quase real. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * Para imagens e vídeos, as Tags inteligentes se baseiam em algum aspecto visual.
 
@@ -275,7 +309,7 @@ Para pesquisar arquivos com marcas inteligentes (regular ou aprimorado), use a p
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
 
 >[!MORELIKETHIS]
 >

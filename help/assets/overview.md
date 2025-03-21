@@ -1,14 +1,14 @@
 ---
-title: Gerenciamento de ativos digitais (DAM) do Adobe usando AEM
+title: Gerenciamento de ativos digitais (DAM) da Adobe usando o AEM
 description: Entenda como usar e administrar o gerenciamento de ativos digitais (DAM, na sigla em inglês) da Adobe, usando o Experience Manager Assets as a Cloud Service.
 contentOwner: AK
 feature: Asset Management
 role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: e3fd0fe2ee5bad2863812ede2a294dd63864f3e2
+source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 76%
+source-wordcount: '973'
+ht-degree: 73%
 
 ---
 
@@ -17,8 +17,42 @@ ht-degree: 76%
 
 <!-- Need review information from gklebus -->
 
-| [Pesquisar Práticas Recomendadas](/help/assets/search-best-practices.md) | [Práticas recomendadas de metadados](/help/assets/metadata-best-practices.md) | [Content Hub](/help/assets/product-overview.md) | [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) | [documentação para desenvolvedores do AEM Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/) |
-| ------------- | --------------------------- |---------|----|-----|
+<table>
+    <tr>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+        </td>
+        <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+        </td>
+          <td>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+        </td>
+        <td>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+        </td>
+        <td>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+        </td>
+    </tr>
+</table>
 
 O Adobe Experience Manager Assets as a [!DNL Cloud Service] oferece uma solução PaaS nativa em nuvem para que as empresas não somente executem suas operações de Gerenciamento de ativos digitais e Mídia dinâmica com velocidade e impacto, como também usem recursos inteligentes de próxima geração, como IA/ML, de dentro de um sistema que está sempre atualizado, disponível e aprendendo.
 
@@ -57,15 +91,15 @@ Bibliotecários, desenvolvedores e superusuários do DAM podem continuar a usar 
 
 Para obter informações sobre como acessar a visualização de ativos e alguns dos recursos simplificados que ela oferece em relação à visualização de admin, consulte [Introdução à visualização de ativos](/help/assets/assets-view-introduction.md).
 
-## Integração com a criação baseada em documentos para Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
+## Integração com a criação baseada em documentos para o Edge Delivery Services {#integrate-doc-authoring-edge-and-assets}
 
 O Edge Delivery permite criar sites rápidos e cativantes, nos quais autores(as) podem atualizar, publicar conteúdo e inicializar novos sites, tudo de maneira rápida.
 
-Integre o AEM Assets com a Criação baseada em documentos para que o Edge Delivery Services permita que os autores de sites usem imagens disponíveis em repositórios do AEM Assets ao criar documentos no Microsoft Word ou Google Docs. Para obter mais informações, consulte [Integrar o AEM Assets com a Criação baseada em documento](/help/edge/using.md#integrate-assets-edge).
+Integre o AEM Assets com a Criação baseada em documento para o Edge Delivery Services a fim de permitir que os autores de sites usem imagens disponíveis em repositórios do AEM Assets enquanto criam documentos no Microsoft Word ou Google Docs. Para obter mais informações, consulte [Integrar o AEM Assets com a Criação baseada em documento](/help/edge/using.md#integrate-assets-edge).
 
 ## Integração com o Adobe Journey Optimizer {#integration-with-ajo}
 
-O [Adobe Journey Optimizer](https://business.adobe.com/br/products/journey-optimizer/adobe-journey-optimizer.html) simplifica o gerenciamento de jornadas para que os clientes forneçam campanhas omnicanais com insights e decisões inteligentes. Ao criar mensagens usando o Journey Optimizer, você pode acessar o repositório as a Cloud Service do Assets diretamente de dentro da interface do Journey Optimizer. Os usuários obtêm acesso aos ativos usando a interface incorporada do Experience Manager Assets. Para obter mais informações, consulte [Criar e gerenciar ativos com o Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
+O [Adobe Journey Optimizer](https://business.adobe.com/br/products/journey-optimizer/adobe-journey-optimizer.html) simplifica o gerenciamento de jornadas para que os clientes forneçam campanhas omnicanais com insights e decisões inteligentes. Ao criar mensagens usando o Journey Optimizer, você pode acessar o repositório do Assets as a Cloud Service diretamente de dentro da interface do Journey Optimizer. Os usuários obtêm acesso aos ativos usando a interface incorporada do Experience Manager Assets. Para obter mais informações, consulte [Criar e gerenciar ativos com o Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
 
 ## Novos recursos do Assets {#whats-new-assets}
 
@@ -88,4 +122,4 @@ Os novos recursos significativos são:
 * [Pesquisar aspectos](search-facets.md)
 * [Gerenciar coleções](manage-collections.md)
 * [Importação de metadados em massa](metadata-import-export.md)
-* [Publish Assets para AEM e Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
+* [Publicar o Assets no AEM e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md)
