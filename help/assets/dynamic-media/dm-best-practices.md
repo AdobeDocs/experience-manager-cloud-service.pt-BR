@@ -9,9 +9,9 @@ feature: Adaptive Streaming, Best Practices, Smart Imaging, Image Profiles, Rule
 role: User, Admin
 mini-toc-levels: 4
 exl-id: 39e491bb-367d-4c72-b4ca-aab38d513ac5
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a495178529a0a4229095ea3a11f52b376c81715b
 workflow-type: tm+mt
-source-wordcount: '4117'
+source-wordcount: '4095'
 ht-degree: 0%
 
 ---
@@ -410,7 +410,7 @@ Internacionalizar vídeos para consumo multilíngue é essencial para alcançar 
    * Se você estiver usando o AEM como o sistema de Gerenciamento de conteúdo da Web (WCM), poderá adicionar vídeos diretamente às suas páginas da Web.
    * Se você estiver usando um sistema WCM de terceiros, é possível vincular ou incorporar vídeos nas páginas da Web usando URLs ou códigos incorporados.
 
-Quer saber mais? Vá para [Sobre o suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) ou assista a [Adicionar várias legendas e faixas de áudio a um vídeo](https://delivery-p106302-e1008131.adobeaemcloud.com/adobe/assets/urn:aaid:aem:daf9a222-9f7f-4333-b167-98cb4c63a1f8/play) (1 minuto, 41 segundos).
+Quer saber mais? Vá para [Sobre o suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media](/help/assets/dynamic-media/video.md#about-msma).
 
 
 ## Entregar ativos aos clientes
