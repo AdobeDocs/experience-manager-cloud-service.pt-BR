@@ -2,7 +2,7 @@
 title: Configuração de várias lojas do Commerce
 description: Saiba como mapear várias exibições de loja do Adobe Commerce para o Adobe Experience Manager. Isso permite que os projetos sejam compatíveis com casos de uso de vários locatários e vários idiomas.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: technical-video
 activity: setup
 audience: administrator
@@ -11,7 +11,7 @@ kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 15%
@@ -26,21 +26,21 @@ Uma apresentação em vídeo detalhando as opções para integrar várias visual
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Os recursos de Gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados com o Commerce integration framework para gerenciar sites globalmente em regiões e localidades.
+Os recursos de Gerenciamento de vários sites do AEM para Live Copy e Language Copy são usados com a Commerce integration framework para gerenciar sites globalmente em regiões e localidades.
 
-A configuração recomendada é usar uma relação 1:1 entre o site do AEM e a exibição da loja da Adobe Commerce.
+A configuração recomendada é usar uma relação 1:1 entre o site do AEM e a exibição de loja da Adobe Commerce.
 
-Para conectar um site de AEM AEM e os Componentes principais do CIF a uma exibição de loja dedicada, faça o seguinte:
+Para conectar um site do AEM e os Componentes principais do AEM CIF a uma visualização de loja dedicada, faça o seguinte:
 
 ## Configuração {#configuration}
 
 1. Configure várias lojas e visualizações de loja de acordo com o padrão descrito em [Sites, lojas e visualizações da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
 
-2. Verifique se a conexão entre AEM e Adobe Commerce está funcionando.
+2. Verifique se a conexão entre o AEM e o Adobe Commerce está funcionando.
 
 3. Crie uma configuração secundária da configuração do CIF Cloud Service seguindo estas etapas:
 
-   * No AEM, vá para Ferramentas > Geral > [Navegador de Configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+   * No AEM, acesse Ferramentas > Geral > [Navegador de Configuração](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
    * Selecione a configuração básica que você criou
    * Crie uma configuração usando as etapas descritas no ponto 2 acima
 

@@ -1,7 +1,7 @@
 ---
 title: Ações do App Builder
-description: Saiba mais sobre as ações do Adobe Runtime e como usá-las em aplicativos App Builder.
-version: Cloud Service
+description: Saiba mais sobre as ações do Adobe Runtime e para usá-las em aplicativos do App Builder.
+version: Experience Manager as a Cloud Service
 feature: App Builder, Developing
 topic: Integrations, Development
 role: Developer, Architect
@@ -9,7 +9,7 @@ level: Beginner
 kt: 9456, 9475, 9476, 9477
 thumbnail: 327313.jpg
 exl-id: f1a67f80-7366-4337-8bcd-062a3412acc9
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%

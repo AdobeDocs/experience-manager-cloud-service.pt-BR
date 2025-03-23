@@ -2,7 +2,7 @@
 title: Criação de várias categorias e páginas de produto
 description: Saiba como enriquecer as páginas de aterrissagem de categoria e de detalhes do produto com conteúdo de marketing direcionado.
 sub-product: Commerce
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -11,7 +11,7 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 45%
@@ -22,7 +22,7 @@ ht-degree: 45%
 
 >[!NOTE]
 >
-> Essa funcionalidade funciona somente para vitrines baseadas em CIF (por exemplo, Venia).
+> Essa funcionalidade funciona somente para vitrines baseadas no CIF (por exemplo, Venia).
 
 Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) dão aos autores de conteúdo a capacidade de criar páginas adicionais de categoria e do produto. Essas páginas podem ser enriquecidas com conteúdo de marketing adicional e configuradas para direcionar categorias e produtos específicos. O vídeo a seguir apresenta a configuração desse recurso.
 
@@ -37,4 +37,4 @@ Você pode encontrar mais informações sobre esse tópico nos seguintes recurso
 
 ## Recursos relacionados {#related}
 
-Também é possível direcionar dinamicamente regiões específicas de uma página e reutilizar o mesmo modelo. Saiba como [enriquecer dados de produtos com conteúdo de AEM associado](./enrich-product-associated-content.md).
+Também é possível direcionar dinamicamente regiões específicas de uma página e reutilizar o mesmo modelo. Saiba como [enriquecer dados de produtos com conteúdo associado do AEM](./enrich-product-associated-content.md).
