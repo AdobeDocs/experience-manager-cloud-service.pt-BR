@@ -5,60 +5,78 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f57d90078b5fc0e0c8a79ca60cbc19e7b37323cd
+source-git-commit: bd207a7c3e9e5e52202456fa95dd31293639725f
 workflow-type: tm+mt
-source-wordcount: '1250'
-ht-degree: 9%
+source-wordcount: '1464'
+ht-degree: 2%
 
 ---
 
-# Entender as solicitações de conteúdo Cloud Service
+# Entender as solicitações de conteúdo do Cloud Service
 
 ## Introdução {#introduction}
 
-As solicitações de conteúdo se referem às solicitações feitas ao AEM Sites, incluindo as solicitações relacionadas aos Edge Delivery Services ou aos sistemas de cache fornecidos pelo cliente, como uma Rede de entrega de conteúdo. Essas solicitações entregam conteúdo ou dados no formato HTML por meio de exibições de página (por exemplo, páginas e Fragmentos de experiência) ou no formato JSON por meio de chamadas de API de maneira headless. As solicitações de conteúdo são contadas como uma exibição de página ou cinco chamadas de API e são medidas na entrada do primeiro sistema de cache a receber uma solicitação de conteúdo. Certas solicitações HTTP são incluídas ou excluídas para fins de contagem de solicitações de conteúdo. A lista completa dessas solicitações HTTP incluídas e excluídas e suas definições técnicas estão disponíveis na documentação.
+As solicitações de conteúdo incluem solicitações enviadas ao AEM Sites. Essas solicitações podem ser roteadas por meio do Edge Delivery Services ou de sistemas de cache fornecidos pelo cliente, como uma Rede de entrega de conteúdo (CDN). Essas solicitações fornecem dados estruturados no formato HTML ou JSON e oferecem suporte a exibições de página (por exemplo, páginas e Fragmentos de experiência) ou retornos JSON por meio de APIs de forma headless.
 
-## Sobre solicitações de conteúdo Cloud Service {#understanding-cloud-service-content-requests}
+O sistema conta as solicitações de conteúdo quando um usuário visualiza uma página usando o HTML ou JSON. Ele mede a solicitação no ponto em que o primeiro sistema de cache a recebe. Certas solicitações HTTP são incluídas ou excluídas para fins de contagem de solicitações de conteúdo. Veja a lista completa de HTTP [solicitações de conteúdo incluídas](#included-content-requests) e [solicitações de conteúdo excluídas](#excluded-content-request).
 
-Para clientes que usam o CDN pronto para uso, as solicitações de conteúdo de Cloud Service são medidas por meio da coleção de dados do lado do servidor. Essa coleção é habilitada por meio da análise de log da CDN. O AEM (Adobe Experience Manager) coleta as a Cloud Service automaticamente solicitações de conteúdo do lado do servidor na borda do. Ele analisa arquivos de log gerados pelo AEM as a Cloud Service CDN. Esse processo é feito isolando as solicitações que retornam o conteúdo HTML `(text/html)` ou JSON `(application/json)` da CDN e é baseado em várias regras de inclusão e exclusão detalhadas abaixo. Uma solicitação de conteúdo ocorre independentemente de o conteúdo ser veiculado a partir dos caches CDN ou retornado à origem CDN (despachantes do AEM).
+## Sobre solicitações de conteúdo do Cloud Service {#understanding-cloud-service-content-requests}
+
+Uma *solicitação de página* refere-se a uma solicitação HTTP que recupera o conteúdo estruturado principal (por exemplo, HTML ou JSON) necessário para renderizar a experiência da página principal. Ela não inclui solicitações de ativos, como imagens ou scripts.
+
+Para clientes que usam o CDN pronto para uso, o AEM as a Cloud Service conta as solicitações de conteúdo conforme medido no nível do servidor. Essa medição ocorre automaticamente e não depende do rastreamento de análises do cliente.
+
+O AEM (Adobe Experience Manager) as a Cloud Service identifica solicitações de conteúdo com base nos tipos de resposta gerados pela instância do AEM e recebidas na CDN. Especificamente, as solicitações que retornam HTML (`text/html`) ou JSON (`application/json`) são contadas. Esses formatos normalmente fornecem conteúdo principal da página para renderização tradicional do site ou entrega headless.
+
+As solicitações de ativos estáticos, como arquivos JavaScript, folhas de estilos CSS e imagens, não são contadas como solicitações de conteúdo.
+
+>[!NOTE]
+>Se uma solicitação de API retornar HTML ou JSON que sirva como conteúdo no nível da página (por exemplo, no delivery headless), ela ainda poderá ser contada como uma solicitação de conteúdo, dependendo de seu contexto.
+
+As solicitações de conteúdo são medidas independentemente de a resposta ter sido fornecida pelo cache do CDN ou encaminhada para o ambiente de origem do AEM.
 
 <!-- REMOVED AS PER EMAIL REQUEST FROM SHWETA DUA, JULY 30, 2024 TO RICK BROUGH AND ALEXANDRU SARCHIZ   For customers employing their own CDN, client-side collection offers a more precise reflection of interactions, ensuring a reliable measure of website engagement via the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) service. This gives customers advanced insights into their page traffic and performance. While it is beneficial for all customers, it offers a representative reflection of user interactions, ensuring a reliable measure of website engagement by capturing the number of page views from the client side. 
 
 For customers that bring their own CDN on top of AEM as a Cloud Service, server-side reporting results in numbers that cannot be used to compare with the licensed content requests. With the [Real Use Monitoring](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md), Adobe can reflect a reliable measure of website engagement. -->
 
-### Variações de solicitações de conteúdo Cloud Service {#content-requests-variances}
+### Variações de solicitações de conteúdo do Cloud Service {#content-requests-variances}
 
-As solicitações de conteúdo podem ter variações nas ferramentas de relatório do Analytics de uma organização, conforme resumido na tabela a seguir. Em geral, evite usar ferramentas de análise que dependam de instrumentação do lado do cliente para relatar o número de solicitações de conteúdo para um site. Essas ferramentas geralmente perdem uma grande parte do tráfego porque dependem do consentimento do usuário para serem ativadas. As ferramentas do Analytics que reúnem dados do lado do servidor em arquivos de log ou relatórios CDN para clientes que adicionam seu próprio CDN sobre o AEM as a Cloud Service fornecem contagens melhores.
+As solicitações de conteúdo podem ter variações nas ferramentas de relatório de análise de uma organização, conforme resumido na tabela a seguir. Em geral, evite usar ferramentas de análise que dependam de instrumentação do lado do cliente para relatar o número de solicitações de conteúdo para um site. Essas ferramentas geralmente perdem uma grande parte do tráfego porque dependem do consentimento do usuário para serem ativadas. As ferramentas do Analytics que reúnem dados do lado do servidor em arquivos de log ou relatórios CDN para clientes que adicionam seu próprio CDN sobre o AEM as a Cloud Service fornecem contagens melhores.
 
 | Motivo da variação | Explicação |
 |---|---|
-| Consentimento do usuário final | As ferramentas do Analytics que dependem da instrumentação do lado do cliente geralmente dependem do consentimento do usuário para serem acionadas. Esse workflow pode representar a maioria do tráfego que não está sendo rastreado. Para clientes que desejam medir solicitações de conteúdo por conta própria, é recomendável confiar nas ferramentas de análise que coletam relatórios do lado do servidor de dados ou CDN. |
+| Consentimento do usuário final | As ferramentas do Analytics que dependem da instrumentação do lado do cliente geralmente dependem do consentimento do usuário para serem acionadas. Esse workflow pode representar a maioria do tráfego que não está sendo rastreado. Para clientes que desejam medir solicitações de conteúdo por conta própria, a Adobe recomenda que você confie nas ferramentas de análise para coletar dados de relatórios do lado do servidor ou de CDN. |
 | Marcação com tags | Todas as páginas ou chamadas de API que são rastreadas como solicitações de conteúdo do Adobe Experience Manager não podem ser marcadas com o rastreamento do Analytics. |
 | Regras de gerenciamento de tags | As configurações das regras de gerenciamento de tags podem resultar em várias configurações de coleta de dados em uma página, resultando em alguma combinação de discrepâncias com o rastreamento de solicitação de conteúdo. |
-| Bots | Os bots desconhecidos cujo AEM não foi pré-identificado e removido podem causar discrepâncias no rastreamento. |
-| Report Suites | As páginas que fazem parte de uma mesma instância e domínio do AEM podem enviar dados para diferentes conjuntos de relatórios de Analytics. |
-| Ferramentas de segurança e monitoramento de terceiros | Ferramentas de verificação para monitoramento e segurança podem gerar solicitações de conteúdo para o AEM que não são rastreadas nos relatórios de Analytics. |
-| Acesso à API | O acesso programático a páginas ou APIs do Adobe Experience Manager pode gerar solicitações de conteúdo para AEM que não são rastreadas nos relatórios do Analytics. |
-| Solicitações de pré-busca | Usar um serviço de pré-busca para pré-carregar páginas a fim de aumentar a velocidade pode causar um aumento significativo no tráfego de solicitações de conteúdo. |
-| DDOS | Enquanto o Adobe faz tentativas de detectar e filtrar automaticamente o tráfego de ataques de DDOS, não há garantia de que todos os possíveis ataques de DDOS sejam detectados. |
-| Bloqueadores de tráfego | O uso de um bloqueador de rastreadores em um navegador pode impedir o rastreamento de algumas solicitações. |
-| Firewalls | Os firewalls podem bloquear o rastreamento do Analytics. Esse cenário é mais frequente com firewalls corporativos. |
+| Bots | Os bots desconhecidos que o AEM não identificou previamente e removeu podem causar discrepâncias no rastreamento. |
+| Report Suites | As páginas na mesma instância do AEM podem se reportar a diferentes conjuntos de relatórios do Analytics. Esse processo pode dividir dados em vários conjuntos, dependendo da configuração. |
+| Ferramentas de segurança e monitoramento de terceiros | As ferramentas de verificação de monitoramento e segurança (por exemplo, verificadores de tempo de atividade ou verificadores de vulnerabilidade) podem solicitar páginas, gerando solicitações de conteúdo do lado do servidor não visíveis nos relatórios de análise. |
+| Acesso à API | As solicitações para páginas ou conteúdo do AEM por meio de APIs (por exemplo, por meio do Adobe Experience Manager as a Headless CMS) ainda contam como solicitações de conteúdo, mas não acionam o rastreamento de análise. |
+| Solicitações de pré-busca | A pré-busca (por exemplo, usando um service worker ou uma função de borda) pode aumentar os volumes de tráfego, solicitando páginas antecipadamente. Essas solicitações são contadas no lado do servidor, mas não executam o código de análise do lado do cliente. |
+| DDOS | O Adobe usa a filtragem para detectar e bloquear muitos ataques de DDoS. No entanto, algumas solicitações de ataque ainda podem ser contadas como solicitações de conteúdo antes da aplicação dos filtros. |
+| Bloqueadores de tráfego | Os recursos de privacidade no navegador ou firewalls corporativos podem bloquear o carregamento de scripts de análise. Esses usuários ainda geram solicitações de conteúdo do lado do servidor. |
+| Firewalls | Os firewalls corporativos ou regionais podem impedir que as chamadas do Analytics cheguem aos servidores da Adobe, causando a subgeração de relatórios no Analytics enquanto as contagens do lado do servidor permanecem inalteradas. |
 
-Consulte também [Painel de licenças](/help/implementing/cloud-manager/license-dashboard.md).
+Consulte o [Painel de Licenças](/help/implementing/cloud-manager/license-dashboard.md) para obter informações sobre como visualizar e rastrear o uso de solicitações de conteúdo em relação aos limites da sua licença.
 
 ## Regras de coleção do lado do servidor {#serverside-collection}
 
-Há regras em vigor para excluir bots conhecidos, incluindo serviços conhecidos que acessam o site regularmente para atualizar seu índice de pesquisa ou serviço.
+O AEM as a Cloud Service aplica regras do lado do servidor para contar solicitações de conteúdo. Essas regras incluem lógica para excluir bots conhecidos (como rastreadores de mecanismo de pesquisa) e tráfego que não é de usuário, como serviços de monitoramento que fazem ping regular no site.
+
+As tabelas a seguir listam os tipos de solicitações de conteúdo incluídas e excluídas, com breves descrições de cada uma.
 
 ### Tipos de solicitações de conteúdo incluídas {#included-content-requests}
 
+>[!NOTE]
+>Se uma solicitação de API retornar uma resposta do HTML, ela poderá ser classificada como uma solicitação de conteúdo, dependendo de seu contexto de uso. As solicitações de API que retornam dados que não são da interface do usuário normalmente são excluídas.
+
 | Tipo de solicitação | Solicitação de conteúdo | Descrição |
 | --- | --- | --- |
-| Código HTTP 100-299 | Incluído | Solicitações regulares que entregam todo o conteúdo ou parte dele. |
-| Bibliotecas HTTP para automação | Incluído | Exemplos:<br>· Amazon CloudFront<br>· Apache Http Client<br>· Cliente HTTP Assíncrono<br>· Axios<br>· Azureus<br>· Curl<br>· Busca de Nó GitHub<br>· Guzzle<br>· Go-http-client<br>· Chrome Headless<br>· Cliente Java™<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Solicitações Python<br>· Reator Netty<br>· Wget<br>· WinHTTP<br>· HTTP<br>· Busca de Nó GitHub<br>· Netty de Reator |
-| Ferramentas de monitoramento e verificação de integridade | Incluído | Configurado pelo cliente para monitorar um determinado aspecto do site. Por exemplo, disponibilidade ou desempenho real do usuário. Se eles estiverem direcionando pontos de extremidade específicos como `/system/probes/health` para verificações de integridade, o Adobe recomenda usar o ponto de extremidade `/system/probes/health` e não as páginas de HTML reais do site. [Veja abaixo](#excluded-content-request)<br>Exemplos:<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatível; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
-| `<link rel="prefetch">` solicitações | Incluído | Para aumentar a velocidade de carregamento da próxima página, os clientes podem fazer com que o navegador carregue um conjunto de páginas antes que o usuário clique no link, de modo que já estejam no cache. *Mente: essa abordagem aumenta significativamente o tráfego*, dependendo de quantas dessas páginas são buscadas previamente. |
-| Tráfego que bloqueia relatórios do Adobe Analytics ou Google Analytics | Incluído | É mais comum que os visitantes de sites tenham software de privacidade instalado (bloqueadores de anúncios e assim por diante) que afetam a precisão do Google Analytics ou do Adobe Analytics. O AEM as a Cloud Service conta as solicitações no primeiro ponto de entrada na infraestrutura operada pelo Adobe e não no lado do cliente. |
+| Código HTTP 100-299 | Incluído | Inclui solicitações bem-sucedidas que retornam conteúdo completo ou parcial do HTML ou JSON.<br>Código HTTP 206: essas solicitações fornecem apenas uma parte do conteúdo completo. Por exemplo, um vídeo ou uma imagem grande. As solicitações de conteúdo parcial são incluídas quando entregam parte de uma resposta HTML ou JSON usada na renderização do conteúdo da página. |
+| Bibliotecas HTTP para automação | Incluído | Solicitações feitas por ferramentas ou bibliotecas que recuperam o conteúdo da página. Exemplos incluem o seguinte: <br>· Amazon CloudFront<br>· Apache Http Client<br>· Axios<br>· Azureus<br>· Curl<br>· Busca de Nó GitHub<br>· Guzzle<br>· Go-http-client<br>· Headless Chrome<br>· Java™ Client<br>· Jersey<br>· Node Oembed<br>· okhttp<br>· Solicitações Python<br>· Reator Netty<br>· Wget<br>· WinHTTP<br>· HTTP<br>· Busca de Nó GitHub<br>· Netty de Reator<br> |
+| Ferramentas de monitoramento e verificação de integridade | Incluído | Solicitações usadas para monitorar a integridade ou a disponibilidade de páginas.<br>Consulte [Tipos de solicitações de conteúdo excluídas](#excluded-content-request).<br>Os exemplos incluem o seguinte:<br>· `Amazon-Route53-Health-Check-Service`<br>· EyeMonIT_bot_version_0.1_[(https://eyemonit.com/)](https://eyemonit.com/)<br>· Investis-Site24x7<br>· Mozilla/5.0+(compatível; UptimeRobot/2.0; [https://uptimerobot.com/](https://uptimerobot.com/))<br>· ThousandEyes-Dragonfly-x1<br>· OmtrBot/1.0<br>· WebMon/2.0.0 |
+| `<link rel="prefetch">` solicitações | Incluído | Quando os clientes fazem pré-carregamento ou pré-busca de conteúdo (por exemplo, com `<link rel="prefetch">`), o sistema conta essas solicitações do lado do servidor. Observe que essa abordagem pode aumentar o tráfego, dependendo de quantas dessas páginas são buscadas previamente. |
+| Tráfego que bloqueia os relatórios do Adobe Analytics ou do Google Analytics | Incluído | É mais comum que os visitantes de sites tenham software de privacidade instalado (bloqueadores de anúncios e assim por diante) que afetam a precisão do Google Analytics ou do Adobe Analytics. O AEM as a Cloud Service conta as solicitações no primeiro ponto de entrada na infraestrutura operada pela Adobe e não no lado do cliente. |
 
 Consulte também [Painel de licenças](/help/implementing/cloud-manager/license-dashboard.md).
 
@@ -69,13 +87,13 @@ Consulte também [Painel de licenças](/help/implementing/cloud-manager/license-
 | Código HTTP 500+ | Excluído | Erros retornados ao visitante quando algo dá errado no AEM as a Cloud Service ou no código personalizado do cliente. |
 | Código HTTP 400-499 | Excluído | Erros retornados ao visitante quando o conteúdo não existe (404) ou há outros problemas relacionados ao conteúdo ou à solicitação. |
 | Código HTTP 300-399 | Excluído | Solicitações válidas que verificam se algo foi alterado no servidor ou redirecionam a solicitação para outro recurso. Elas não têm conteúdo em si, portanto, não são faturáveis. |
-| Solicitações em /libs/* | Excluído | Solicitações JSON internas de AEM, como o token CSRF que não é faturável. |
+| Solicitações indo para `/libs/`* | Excluído | Solicitações JSON internas do AEM, como o token CSRF que não é faturável. |
 | Tráfego de ataques de DDOS | Excluído | Proteção DDOS. O AEM detecta automaticamente alguns dos ataques de DDOS e os bloqueia. Ataques de DDOS, se detectados, não são faturáveis. |
 | Monitoramento do AEM as a Cloud Service New Relic | Excluído | Monitoramento global da AEM as a Cloud Service. |
-| URL para clientes monitorarem o programa Cloud Service | Excluído | A Adobe recomenda que você use a URL para monitorar a disponibilidade ou a verificação de integridade externamente.<br><br>`/system/probes/health` |
+| URL para os clientes monitorarem o programa Cloud Service | Excluído | A Adobe recomenda que você use a URL para monitorar a disponibilidade ou a verificação de integridade externamente.<br><br>`/system/probes/health` |
 | Serviço de aquecimento do pod do AEM as a Cloud Service | Excluído |
 | Agente: skyline-service-warmup/1.* |
 | Mecanismos de pesquisa, redes sociais e bibliotecas HTTP conhecidos (marcados pelo Fastly) | Excluído | Serviços conhecidos que visitam o site regularmente para atualizar seu índice de pesquisa ou serviço:<br><br>Exemplos:<br>· AddSearchBot<br>· AhrefsBot<br>· Applebot<br>· Ask Jeeves Corporate Spider<br>· Bingbot<br>· BingPreview<br>· BLEXBot<br>· BuiltWith<br>· Bytespider<br>· CrawlerKengo<br>· Facebookexternalhit<br>· Google AdsBot Google<br>· AdsBot Mobile<br>· Googlebot<br>· Googlebot Mobile<br>· lmspider<br>· LucidWorks<br>· `MJ12bot`<br>· Pinterest<br>· SemrushBot<br>· SiteImprove<br>· StashBot<br>· StatusCake<br>· YandexBot<br>· ContentKing<br>· Claudebot |
-| Excluir chamadas de Commerce integration framework | Excluído | As solicitações feitas ao AEM que são encaminhadas para o Commerce integration framework—a URL começa com `/api/graphql`—para evitar dupla contagem, elas não são faturáveis para o Cloud Service. |
+| Excluir chamadas do Commerce integration framework | Excluído | As solicitações feitas ao AEM que são encaminhadas para o Commerce integration framework — a URL começa com `/api/graphql` — para evitar dupla contagem, elas não são faturáveis para o Cloud Service. |
 | Excluir `manifest.json` | Excluído | O manifesto não é uma chamada de API. Está aqui para fornecer informações sobre como instalar sites da Web em um desktop ou telefone celular. O Adobe não deve contar a solicitação JSON para `/etc.clientlibs/*/manifest.json` |
 | Excluir `favicon.ico` | Excluído | Embora o conteúdo retornado não deva ser HTML ou JSON, alguns cenários, como fluxos de autenticação SAML, foram observados para retornar favicons como HTML. Como resultado, os favicons são explicitamente excluídos da contagem. |
