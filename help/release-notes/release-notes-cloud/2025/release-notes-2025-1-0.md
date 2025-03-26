@@ -3,10 +3,11 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.1.0.
 feature: Release Information
 role: Admin
-source-git-commit: f899398182f9d0991123828ca217379653a4e397
+exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
+source-git-commit: 3b6b11a325246fe5e86ae37e95351d7701716491
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 11%
+source-wordcount: '1716'
+ht-degree: 12%
 
 ---
 
@@ -80,17 +81,33 @@ Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Novos recursos na exibição do AEM Assets {#new-features-assets}
+### Novos recursos no AEM Assets {#new-features-assets}
 
-**Personalizar filtros de pesquisa**
+**Relatórios de entrega do Dynamic Media**
 
-Os filtros de pesquisa personalizados melhoram a precisão e a eficiência da localização de informações relevantes. Ele permite pesquisas mais personalizadas, filtrando dados de acordo com atributos específicos, como marca, produto, categoria ou outros identificadores principais. Isso melhora a organização, reduz o tempo gasto na verificação de resultados irrelevantes e permite uma tomada de decisão mais rápida. Também oferece suporte à escalabilidade, à medida que grandes conjuntos de dados se tornam mais fáceis de navegar e analisar.
+Obtenha insights de entrega para ativos fornecidos pelo Dynamic Media, incluindo contagens de entrega no nível do ativo, detalhes do referenciador, caminhos de ativos no AEM Assets e IDs de ativos exclusivas. Gerar relatórios para todos os ativos no repositório do AEM Assets ou hierarquias de pastas específicas. Esses insights permitem medir o ROI dos ativos entregues, avaliar o desempenho do canal e tomar decisões informadas para o gerenciamento de ativos.
 
-![filtros de pesquisa personalizados](/help/assets/assets/custom-search-filters.png)
+![representações dinâmicas](/help/assets/assets/referrer.png)
 
-### Novos recursos no Content Hub {#new-features-content-hub}
+**Mídia dinâmica com vários áudio e legenda**
 
-Descrição
+[Suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) - Agora é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis a um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
+
+**Suporte a Dynamic Adaptive Streaming por HTTP**
+
+Lançamento de um novo suporte de protocolo (DASH, Dynamic Adaptive Streaming over HTTP) para a transmissão adaptável na entrega de vídeos do Dynamic Media (com CMAF habilitado):
+
+* A transmissão adaptável (DASH/HLS) garante uma melhor experiência de visualização para vídeos.
+
+* DASH é o protocolo internacional padrão para transmissão de vídeo adaptável e é amplamente adotado no setor
+
+**Relações do ativo**
+
+A Exibição do Assets agora permite visualizar e editar relações de ativos em um painel de Detalhes de ativos simplificado. Adicione facilmente relacionamentos como Source e Derivação ao conteúdo para que os usuários possam encontrar de forma mais eficaz o conteúdo principal relevante.
+
+**Reprocessar ativos**
+
+A visualização do Assets agora oferece suporte ao reprocessamento de ativos disponíveis em uma pasta. Você pode optar por usar a opção **Processo completo** ou usar opções avançadas, como representações de visualização padrão, metadados, fluxo de trabalho de pós-processamento e perfil de processamento.
 
 ### Recursos de acesso antecipado no AEM Assets {#early-access-features-assets}
 
