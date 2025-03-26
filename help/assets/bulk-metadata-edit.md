@@ -1,10 +1,10 @@
 ---
-title: Edição de metadados em massa no [DNL! Exibição do Assets]
+title: Edição de metadados em massa em  [!DNL Assets View]
 description: Saiba como atualizar um conjunto predefinido de campos de metadados padrão para vários ativos disponíveis no [DNL! Visualização do Assets] simultaneamente.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 9b5191bd05bfb06fb4eb1a9b710b98cc132ffeda
+source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
