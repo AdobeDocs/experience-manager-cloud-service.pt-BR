@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 1d8136b761528fe927b467320ebc7363de0d8a37
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '847'
 ht-degree: 4%
 
 ---
@@ -137,6 +137,8 @@ Para processar os ativos existentes, selecione os ativos, selecione a opção **
 
 * [!DNL Experience Manager] limita o processamento de ativos a 300 solicitações por minuto por ambiente e 700 solicitações por minuto por organização.
 * O tamanho do arquivo é limitado a 4 GB para operações de API [!DNL Adobe Photoshop] e 1 GB para operações [!DNL Adobe Lightroom].
+* As representações PDF de documentos do Microsoft Office (&quot;.docx&quot;, &quot;.doc&quot;, &quot;.ppt&quot;, &quot;.pptx&quot;, &quot;.xls&quot;, &quot;.xlsx&quot;) estão limitadas a arquivos de 100 MB ou menos.
+* A transcodificação de vídeo é limitada a arquivos de entrada de 15 GB ou menos.
 
 **Consulte também**
 
