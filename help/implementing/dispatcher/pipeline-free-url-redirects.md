@@ -4,9 +4,9 @@ description: Saiba como declarar redirecionamentos 301 ou 302 sem acesso aos pip
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: 8f5dd529b5f317326d9742be1dd3a3104fe6957a
+source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,8 @@ Por vários motivos, as organizações reescrevem URLs de uma maneira que causa 
 
 Os cenários incluem:
 
-* Uma página de HTML removida, de modo que o usuário é direcionado a uma página substituta (às vezes, a página inicial) em vez de ver um erro `404 Page Not Found`.
-* Uma página de HTML renomeada.
+* Uma página do HTML removida, de modo que o usuário é direcionado a uma página substituta (às vezes, a página inicial) em vez de ver um erro `404 Page Not Found`.
+* Uma página do HTML renomeada.
 * Otimização de SEO.
 
 A AEM as a Cloud Service oferece [várias abordagens](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) para implementar redirecionamentos do lado do cliente, mas a estratégia descrita neste artigo, redirecionamentos sem pipeline, é uma boa escolha quando:
@@ -27,18 +27,20 @@ A AEM as a Cloud Service oferece [várias abordagens](https://experienceleague.a
 * O número de redirecionamentos varia de alguns a dezenas de milhares.
 * Você deseja a opção de uma interface de usuário, criada como um projeto personalizado ou usando o [Gerenciador do Mapa de Redirecionamento do ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ou o [Gerenciador de Redirecionamento do ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html).
 
-O núcleo desse recurso é a capacidade do AEM Apache/Dispatcher de carregar (ou recarregar) um ou mais arquivos de mapa de regravação que foram colocados em um local especificado no repositório de publicação (para que ele possa ser baixado da publicação do AEM). É importante mencionar que a forma como os arquivos chegam lá está fora do escopo desse recurso, mas você pode considerar um dos seguintes métodos:
+O núcleo desse recurso é a capacidade do AEM Apache/Dispatcher de carregar (ou recarregar) um ou mais arquivos de mapa de regravação que foram colocados em um local especificado no repositório de publicação (para que ele possa ser baixado na publicação do AEM). É importante mencionar que a forma como os arquivos chegam lá está fora do escopo desse recurso, mas você pode considerar um dos seguintes métodos:
 
 * Assimilar o mapa de regravação como um ativo na interface do usuário do autor e publicá-lo.
 * Instalando o [ACS Commons Redirect Map Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-map-manager/index.html) ([pelo menos versão 6.7.0 ou superior](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), que inclui uma interface de usuário para gerenciar os mapeamentos de URL e também pode publicar o arquivo de mapa de regravação.
 * Instalando o [ACS Commons Redirect Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/redirect-manager/subpages/rewritemap.html) ([pelo menos versão 6.10.0 ou superior](https://github.com/Adobe-Consulting-Services/acs-aem-commons/releases)), que também inclui uma interface de usuário para gerenciar os mapeamentos de URL e pode publicar o arquivo de mapa de regravação.
-* Flexibilidade total ao escrever um aplicativo personalizado. Por exemplo, uma interface de usuário ou de linha de comando para gerenciar os mapeamentos de URL ou, como alternativa, um formulário para carregar um mapa de regravação, que usa APIs AEM para publicar o arquivo de mapa de regravação.
+* Flexibilidade total ao escrever um aplicativo personalizado. Por exemplo, uma interface de usuário ou de linha de comando para gerenciar os mapeamentos de URL ou, como alternativa, um formulário para carregar um mapa de regravação, que usa APIs do AEM para publicar o arquivo de mapa de regravação.
 
 >[!NOTE]
 > Este recurso requer o AEM versão **18311 ou superior**.
 
 >[!NOTE]
 > O uso deste recurso do Gerenciador de Mapa de Redirecionamento requer o ACS Commons versão **6.7.0 ou superior**, enquanto o uso do Gerenciador de Redirecionamento requer versão **6.10.0 ou superior**.
+
+Para obter um guia detalhado de implementação passo a passo, consulte o tutorial [Implementando redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects).
 
 ## O mapa de regravação {#rewrite-map}
 
@@ -75,7 +77,6 @@ RewriteCond ${map.foo:$1} !=""
 RewriteRule ^(.*)$ ${map.foo:$1|/} [L,R=301]
 ```
 
-
 ## Considerações {#considerations}
 
 Lembre-se do seguinte:
@@ -83,3 +84,8 @@ Lembre-se do seguinte:
 * Por padrão, ao carregar um mapa de regravação, o Apache é inicializado sem esperar que os arquivos de mapa completos sejam carregados e, portanto, pode haver inconsistências temporárias até que os mapas completos sejam carregados. Essa configuração pode ser alterada para que o Apache aguarde o conteúdo completo do mapa ser carregado, mas leva mais tempo para que o Apache seja inicializado. Para alterar esse comportamento de forma que o Apache aguarde, adicione `wait:true` ao arquivo `managed-rewrite-maps.yaml`.
 * Para alterar a frequência entre cargas, adicione `ttl: <integer>` ao arquivo `managed-rewrite-maps.yaml`. Por exemplo: `ttl: 120`.
 * O Apache tem um limite de comprimento de 1024 para entradas únicas de RewriteMap.
+
+## Tutoriais {#tutorials}
+
+1. [Implementando redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [redirecionamentos de URL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
