@@ -2,9 +2,9 @@
 title: Edição de metadados em massa em  [!DNL Assets View]
 description: Saiba como atualizar um conjunto predefinido de campos de metadados padrão para vários ativos disponíveis no [DNL! Visualização do Assets] simultaneamente.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
-source-git-commit: 46d64c089ff22492bc871ead36e8c08d683043b1
+source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
     </tr>
 </table>
 
-O recurso **[!DNL Bulk Metadata Edit]** do [!DNL Assets View] permite que você edite um conjunto predefinido de campos de metadados padrão para vários arquivos de ativos simultaneamente. Selecione vários ativos e atualize em massa o conjunto predefinido de metadados padrão de uma só vez em vez de atualizar os metadados padrão de cada ativo individualmente. Esse recurso para editar em massa o conjunto padrão de propriedades de metadados para vários ativos ao mesmo tempo mantém a eficiência, a consistência e a precisão dessas propriedades de metadados padrão no grande conjunto de ativos, melhorando a capacidade de pesquisa e a organização desses ativos.
+O recurso **[!DNL Bulk Metadata Edit]** do [!DNL Assets View] permite que você edite um conjunto predefinido de campos de metadados padrão para vários arquivos de ativos simultaneamente. Selecione vários ativos e atualize em massa o conjunto predefinido de metadados padrão de uma só vez em vez de atualizar os metadados padrão de cada ativo individualmente. Esse recurso mantém a eficiência, a consistência e a precisão do conjunto de propriedades de metadados padrão nos grandes conjuntos de ativos, melhorando a capacidade de pesquisa e a organização desses ativos.
 
 ## Editar metadados de ativos em massa {#how-to-bulk-edit-the-metadata-of-multiple-assets-on-assets-view}
 
