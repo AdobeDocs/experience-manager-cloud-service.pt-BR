@@ -4,9 +4,10 @@ description: Saiba como gerenciar modelos de fragmento de conteúdo; eles servem
 feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
+source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2288'
 ht-degree: 36%
 
 ---
@@ -49,7 +50,7 @@ Como uma visão geral muito rápida, para trabalhar com modelos de fragmento de 
 
 Você pode usar o painel à esquerda do [Console de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) para selecionar **Modelos de fragmentos de conteúdo** como tipo de recurso para exibir, navegar e gerenciar:
 
-![Console de Fragmentos de conteúdo - navegação](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-navigation.png)
+![Console de Fragmentos de conteúdo - navegação](/help/sites-cloud/administering/content-fragments/assets/cf-console-models-navigation.png)
 
 Isso abrirá a exibição dos modelos de fragmento de conteúdo:
 
@@ -62,7 +63,7 @@ Aqui você pode ver três áreas principais:
    * Também mostra sua organização IMS
    * Fornece várias [ações](#actions-unselected)
 * O painel esquerdo
-   * Mostra todas as [configurações](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) listadas como pastas
+   * Mostra os [caminhos para todas as configurações](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser) listadas como pastas
    * Aqui você pode ocultar ou revelar a árvore de pastas
    * É possível selecionar uma pasta específica da árvore
    * Isso pode ser redimensionado para mostrar pastas aninhadas (subconfigurações)
@@ -75,7 +76,7 @@ Aqui você pode ver três áreas principais:
          * [Você pode selecionar quais colunas mostrar](#select-columns-console)
       * [Vários campos de informações](#information-content-fragment-models) sobre um Modelo de fragmento de conteúdo fornecem links. Dependendo do campo, eles podem:
          * Abra o modelo apropriado no editor
-         * Mostrar informações sobre a configuração
+         * Mostrar informações sobre o caminho para a configuração
          * Mostrar informações sobre o status do modelo
       * [Determinados outros campos de informações](#information-content-fragments) sobre um Modelo de Fragmento de Conteúdo podem ser usados para [Filtragem Rápida](#fast-filtering):
          * Selecione um valor na coluna e ele será aplicado imediatamente como filtro
@@ -96,8 +97,8 @@ O painel principal/direito (exibição de tabela) do console fornece uma varieda
    * Fornece um link para abrir o modelo no editor.
 * Bloqueado
    * Quando o modelo está bloqueado, isso é indicado com um ícone de cadeado.
-* **Configuração**
-   * Fornece um link para abrir a configuração no console.
+* **Caminho**
+   * Fornece o caminho como um link para abrir a configuração no console.
 Passar o mouse sobre o nome da pasta mostrará o caminho JCR.
 * **Status**
    * Somente informações.
@@ -123,7 +124,7 @@ Quando você seleciona um modelo específico, as propriedades desse modelo são 
 
 ![Console de Fragmentos de conteúdo - Informações de um Modelo de fragmento de conteúdo selecionado](assets/cf-managing-content-fragment-models-selected.png)
 
-* **[Configuração](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
+* **[Caminho](/help/sites-cloud/administering/content-fragments/setup.md#enable-content-fragment-functionality-configuration-browser)**
 * **[Status](#enabling-a-content-fragment-model)**
 * **Título**
 * **Tags**
@@ -233,7 +234,7 @@ Por exemplo, selecione **Habilitado** na coluna **Status**. Uma vez selecionado,
    >* Se o [uso de Modelos de fragmento de conteúdo foi habilitado](/help/sites-cloud/administering/content-fragments/setup.md)
    >* quando tiver selecionado a pasta em que deseja criar o modelo.
 
-1. Selecione a **Configuração** e especifique o **Nome**.
+1. Selecione o **Caminho** para a configuração e especifique o **Nome**.
 
    >[!NOTE]
    >
