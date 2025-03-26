@@ -1,35 +1,25 @@
 ---
-title: Como criar um Forms adaptável independente usando o Universal Editor?
-description: Este artigo explica como criar o Forms adaptável usando o assistente de Criação de formulários na instância de autor do AEM e publicar formulários no AEM Edge Delivery Services.
+title: Como criar formulários independentes com base no modelo do Edge Delivery Services usando o Universal Editor?
+description: Este artigo explica como usar o Editor universal para criar formulários selecionando um modelo baseado em Edge Delivery Services no Assistente de criação de formulários. Você também pode publicar os formulários no AEM Edge Delivery Services.
 feature: Edge Delivery Services
 role: User
 hide: true
 hidefromtoc: true
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
+source-git-commit: 979aad24ebbd0ef1d4d1fc92d402fca20bc27a44
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 12%
+source-wordcount: '1078'
+ht-degree: 1%
 
 ---
 
-# Criar formulários independentes usando o Editor universal (WYSIWYG)
+# Guia passo a passo para criar formulários independentes no Universal Editor
 
 <span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email com o nome da sua organização GitHub e o nome do repositório do seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
 
-Este artigo o orienta pelo processo de criação de formulários independentes com o Editor universal, selecionando um modelo baseado em Edge Delivery Services no Assistente de criação de formulários. Você também pode publicar os formulários criados com o Universal Editor no AEM Edge Delivery Services.
+Este artigo o orienta pelo processo de criação e criação de formulários independentes com o Editor universal, selecionando um modelo baseado em Edge Delivery Services no Assistente de criação de formulários. Você também pode publicar os formulários criados com o Universal Editor no AEM Edge Delivery Services.
 
-<!--To publish forms to Edge Delivery Services, you must first establish a connection between your AEM environment and your GitHub repository. Once connected, you can author the forms using the Universal Editor, which follows a WYSIWYG (What You See Is What You Get) approach for a seamless and consistent user experience with Sites.-->
-
-Antes de começar, saiba mais sobre o tipo de componentes do Forms disponíveis para você:
-
-* O [Edge Delivery Services para AEM Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) é um conjunto de serviços combináveis que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar, publicar e iniciar novos formulários rapidamente usando o Universal Editor. O Editor universal simplifica a criação de formulários para os Serviços de entrega de borda da Adobe com uma interface visual do WYSIWYG amigável.
-
-* [Componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR): Esses são componentes de captura de dados padronizados. Esses componentes oferecem recursos de personalização, redução do tempo de desenvolvimento e dos custos de manutenção para suas experiências de inscrição digital. Um desenvolvedor pode personalizar e estilizar facilmente esses componentes. Você pode visitar [https://aemcomponents.dev/](https://aemcomponents.dev/) para ver os componentes principais disponíveis em ação **A Adobe recomenda o uso desses componentes modernos e extensíveis para desenvolver formulários adaptáveis**.
-
-* [Componentes de fundamentais de formulários adaptáveis](/help/forms/creating-adaptive-form.md): esses são componentes clássicos (antigos) de captura de dados. Você pode continuar usando-os para editar seus componentes fundamentais já existentes com base no formulário adaptável. Se estiver criando novos formulários, o Adobe recomenda usar os [Componentes principais para criar formulários adaptáveis](#create-an-adaptive-form-core-components).
-
-O AEM Forms fornece um bloco, conhecido como Bloco adaptável do Forms, para ajudar você a criar facilmente o Edge Delivery Services Forms para capturar e armazenar dados. Você pode [criar um novo Projeto do AEM pré-configurado com o Bloco de Forms Adaptável](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [adicionar o Bloco de Forms Adaptável a um Projeto de Site do AEM existente](#add-adaptive-forms-block-to-your-existing-aem-project).
+O AEM Forms fornece um bloco, conhecido como Bloco adaptável do Forms, para ajudar você a criar facilmente o Edge Delivery Services Forms para capturar e armazenar dados. Você pode [criar um novo Projeto do AEM pré-configurado com o Bloco de Forms Adaptável](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [adicionar o Bloco de Forms Adaptável a um Projeto de Site do AEM existente](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#add-adaptive-forms-block-to-your-existing-aem-project).
 
 ![Fluxo De Trabalho Do Repositório Github](/help/edge/assets/repo-workflow.png)
 
@@ -40,67 +30,70 @@ O AEM Forms fornece um bloco, conhecido como Bloco adaptável do Forms, para aju
 * A instância do Autor do AEM Forms inclui um modelo com base no Edge Delivery Services. Verifique se a [versão mais recente dos Componentes principais](https://github.com/adobe/aem-core-forms-components) está instalada em seu ambiente.
 * Mantenha o URL da instância do autor do AEM Forms as a Cloud Service e do Repositório GitHub acessíveis.
 
-## Criar um formulário adaptável usando o Editor universal
+## Trabalhar com formulários no Editor universal
 
-Com o Editor universal, você pode criar facilmente formulários independentes responsivos e interativos usando componentes prontos, como campos de texto, caixas de seleção e botões de opção. Ele oferece recursos avançados, como regras dinâmicas, integração de dados sem problemas e opções de personalização, permitindo criar formulários de acordo com seus requisitos exatos.
+Com o Editor universal, você pode criar facilmente formulários independentes responsivos e interativos usando componentes prontos, como campos de texto, caixas de seleção e botões de opção. Ele oferece recursos avançados, como regras dinâmicas, integração de dados sem problemas e opções de personalização, permitindo criar formulários de acordo com seus requisitos exatos. Você também pode publicar os formulários no AEM Edge Delivery Services. Você pode executar as seguintes ações nos formulários no Universal Editor:
+* [Criar um formulário](#create-a-form)
+* [Criar um formulário](#author-a-form)
+* [Publicar um formulário](#publish-a-form)
+* [Gerenciar um formulário](#manage-a-form)
 
 >[!NOTE]
 >
 > Você também pode [criar um formulário no Site do AEM usando o modelo de Site do Edge Delivery Services no Universal Editor e publicá-lo no Edge Delivery Services](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md#create-a-new-aem-project).
 
-Para criar um formulário adaptável independente usando o Universal Editor, execute as seguintes etapas:
 
-1. **Criar um formulário adaptável na instância de autor do AEM Forms**
+### Criar um formulário
 
-   1. Faça logon na instância de autor do AEM Forms as a Cloud Service.
-   1. Selecione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
-   1. Selecione **[!UICONTROL Criar]** > **[!UICONTROL Forms Adaptável]**. O Assistente será aberto.
-   1. Na guia **Source**, selecione um modelo de formulário baseado no Edge Delivery Services:
+1. Faça logon na instância de autor do AEM Forms as a Cloud Service.
+1. Selecione **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos]**.
+1. Selecione **[!UICONTROL Criar]** > **[!UICONTROL Forms Adaptável]**. O Assistente será aberto.
+1. Na guia **Source**, selecione um modelo de formulário baseado no Edge Delivery Services:
 
-      ![Criar EDS Forms](/help/edge/assets/create-eds-forms.png)
+   ![Criar EDS Forms](/help/edge/assets/create-eds-forms.png)
 
 
-      Quando você seleciona um modelo baseado em Edge Delivery Services, o botão **[!UICONTROL Criar]** é habilitado.
-   1. (Opcional) Nas guias **[!UICONTROL Source de Dados]** ou **[!UICONTROL Envio]**, você pode selecionar uma fonte de dados ou uma ação de envio.
-   1. (Opcional) Na guia **[!UICONTROL Entrega]**, é possível especificar uma data de publicação ou cancelamento da publicação para um Formulário adaptável.
+   Quando você seleciona um modelo baseado em Edge Delivery Services, o botão **[!UICONTROL Criar]** é habilitado.
+1. (Opcional) Nas guias **[!UICONTROL Source de Dados]** ou **[!UICONTROL Envio]**, você pode selecionar uma fonte de dados ou uma ação de envio.
+1. (Opcional) Na guia **[!UICONTROL Entrega]**, você pode especificar uma data de publicação ou cancelamento da publicação para um formulário.
 
-   1. Clique em **[!UICONTROL Criar]** e o assistente **Criar formulário** será exibido.
-   1. Especifique o **Nome** e o **Título**.
-   1. Especifique a **URL do GitHub**. Por exemplo, se o repositório GitHub for nomeado como `edsforms`, ele estiver localizado na conta `wkndforms`, a URL será:
-      `https://github.com/wkndforms/edsforms`
-   1. Clique em **[!UICONTROL Criar]**.
+1. Clique em **[!UICONTROL Criar]** e o assistente **Criar formulário** será exibido.
+1. Especifique o **Nome** e o **Título**.
+1. Especifique a **URL do GitHub**. Por exemplo, se o repositório GitHub for nomeado como `edsforms`, ele estiver localizado na conta `wkndforms`, a URL será:
+   `https://github.com/wkndforms/edsforms`
+1. Clique em **[!UICONTROL Criar]**.
 
-      ![Criar assistente de formulário](/help/edge/assets/create-form-wizard.png)
+   ![Criar assistente de formulário](/help/edge/assets/create-form-wizard.png)
 
-      Assim que você clicar em **[!UICONTROL Criar]**, o formulário será aberto no editor universal para criação.
+   Assim que você clicar em **[!UICONTROL Criar]**, o formulário será aberto no editor universal para criação.
 
-      ![crie o formulário](/help/edge/assets/author-form.png)
+   ![crie o formulário](/help/edge/assets/author-form.png)
 
-      <!-- >[!NOTE]
+   <!-- >[!NOTE]
         >
         > The Edge Delivery Services configuration for the forms based on Edge Delivery Services template is created automatically at the form's configuration container.-->
 
-      Ao clicar em **[!UICONTROL Criar]**, o formulário é aberto no Editor Universal para criação.
+   Ao clicar em **[!UICONTROL Criar]**, o formulário é aberto no Editor Universal para criação.
 
-1. **Criar o formulário no Editor Universal**
+### Criar um formulário
 
-   1. Abra o navegador Conteúdo e navegue até o componente **[!UICONTROL Formulário adaptável]** na **Árvore de conteúdo**.
+1. Abra o navegador Conteúdo e navegue até o componente **[!UICONTROL Formulário adaptável]** na **Árvore de conteúdo**.
 
-      ![árvore de conteúdo](/help/edge/assets/content-tree.png)
+   ![árvore de conteúdo](/help/edge/assets/content-tree.png)
 
-   1. Clique no ícone **[!UICONTROL Adicionar]** e adicione os componentes desejados da lista **Componentes de Formulários Adaptáveis**.
+1. Clique no ícone **[!UICONTROL Adicionar]** e adicione os componentes desejados da lista **Componentes de Formulários Adaptáveis**.
 
-      ![adicionar componente](/help/edge/assets/add-component.png)
+   ![adicionar componente](/help/edge/assets/add-component.png)
 
-   1. Selecione o componente de Formulário adaptável adicionado e atualize suas propriedades usando **[!UICONTROL Propriedades]**.
+1. Selecione o componente de Formulário adaptável adicionado e atualize suas propriedades usando **[!UICONTROL Propriedades]**.
 
-      ![abrir propriedades](/help/edge/assets/component-properties.png)
+   ![abrir propriedades](/help/edge/assets/component-properties.png)
 
-      A captura de tela abaixo exibe o formulário `Registration Form` simples criado no Editor Universal:
+   A captura de tela abaixo exibe o formulário `Registration Form` simples criado no Editor Universal:
 
-      ![contate-nos pelo formulário](/help/edge/assets/contact-us.png)
+   ![contate-nos pelo formulário](/help/edge/assets/contact-us.png)
 
-      Agora você pode [configurar e personalizar as Ações de Envio de Formulário](/help/edge/docs/forms/universal-editor/submit-action.md).
+   Agora você pode [configurar e personalizar as Ações de Envio de Formulário](/help/edge/docs/forms/universal-editor/submit-action.md).
 
 
 <!--
@@ -122,7 +115,7 @@ Para criar um formulário adaptável independente usando o Universal Editor, exe
 
    1. Click **[!UICONTROL Save and Close]**. The configuration is saved. -->
 
-## Publicar o formulário
+### Publicar um formulário
 
 Agora publique o formulário independente no Edge Delivery Services clicando no botão **[!UICONTROL Publicar]** no canto superior direito do Editor Universal.
 
@@ -152,7 +145,7 @@ A estrutura do URL permanece a mesma para as versões preparadas e ativas. No en
 
 ![Exibir formulário publicado](/help/edge/assets/eds-view-publish-form.png)
 
-## Gerenciar formulários
+### Gerenciar um formulário
 
 É possível executar várias operações no formulário usando a interface do usuário do AEM Forms.
 
