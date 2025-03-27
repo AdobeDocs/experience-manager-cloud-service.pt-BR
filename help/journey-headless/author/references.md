@@ -5,10 +5,10 @@ exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 2c74a3a42dd21e2eaf71c1922931d5fa5149f7c5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 84%
+source-wordcount: '791'
+ht-degree: 75%
 
 ---
 
@@ -44,6 +44,13 @@ Algumas referências têm tipos de dados dedicados (por exemplo, Referências de
 
 As Referências de conteúdo fazem exatamente isso: permitem que você faça referência a qualquer outro conteúdo. Isso abre um navegador que permite selecionar o item de conteúdo.
 
+Há dois tipos:
+
+* **Referência de conteúdo**
+   * especifica o caminho para o recurso referenciado
+* **Referência de conteúdo (UUID)**
+   * No editor, a referência especifica o caminho para o recurso referenciado; internamente, a referência é mantida como uma ID universalmente exclusiva (UUID) que faz referência ao recurso
+
 ## Referências de ativo/mídia {#assets-media-references}
 
 Os ativos (por exemplo, imagens ou mídia) podem ser referenciados em um bloco de texto usando a opção **Inserir ativo**. Isso abre um navegador que permite selecionar o ativo.
@@ -75,6 +82,13 @@ E isso é só para começar. Dependendo da complexidade, um prêmio pode ser esp
 A representação dessas inter-relações pode ser alcançada com as Referências de fragmento, já que são entendidas por você (o autor) e pelos aplicativos headless.
 
 Como autor(a), você não é responsável por definir esses relacionamentos (isso é feito por arquitetos(as) de conteúdo ao criar o modelo de fragmento de conteúdo), mas é preciso saber como reconhecer e editar as referências.
+
+Há duas classificações:
+
+* **Referência do fragmento**
+   * especifica o caminho para o recurso referenciado
+* **Referência de fragmento (UUID)**
+   * No editor, a referência especifica o caminho para o recurso referenciado; internamente, a referência é mantida como uma ID universalmente exclusiva (UUID) que faz referência ao recurso
 
 <!--
 ![Content Modeling with Content Fragments](/help/journey-headless/developer/assets/headless-modeling-01.png "Content Modeling with Content Fragments")
