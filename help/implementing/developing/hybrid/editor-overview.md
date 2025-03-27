@@ -4,7 +4,7 @@ description: Este artigo fornece uma visão geral abrangente do Editor de SPA e 
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+source-git-commit: 99c7e60976da540958b46cb24b2a470bcfd9e635
 workflow-type: tm+mt
 source-wordcount: '1633'
 ht-degree: 93%
@@ -27,11 +27,11 @@ Para habilitar a edição de SPAs no AEM, é necessário um mapeamento entre a s
 
 A compatibilidade com SPA no AEM apresenta uma camada de JS sutil que interage com o código JS do SPA quando ele é carregado no editor de página através do qual os eventos podem ser enviados, sendo assim, o local dos controles de edição pode ser ativado para permitir a edição de acordo com o contexto. Esse recurso se baseia no conceito de endpoint da API de serviços de conteúdo, pois o conteúdo do SPA deve ser carregado por meio dos serviços de conteúdo.
 
-Para obter mais detalhes sobre o AEM no SPA, consulte o seguinte:
+Para obter mais detalhes sobre SPAs no AEM, consulte o seguinte:
 
-* [Blueprint do SPA](blueprint.md) para os requisitos técnicos de um SPA.
-* [Introdução ao SPA no AEM usando o React](getting-started-react.md) para um tour rápido de um SPA simples usando o React.
-* [Introdução ao SPA no AEM usando o Angular](getting-started-angular.md) para um rápido tour de um SPA simples usando o Angular.
+* [Blueprint de SPA](blueprint.md) para os requisitos técnicos de um SPA.
+* [Introdução a SPAs no AEM usando o React](getting-started-react.md) para um tour rápido de um SPA simples usando o React.
+* [Introdução a SPAs no AEM usando o Angular](getting-started-angular.md) para obter um tour rápido de um SPA simples usando o Angular.
 
 ## Design {#design}
 
@@ -189,6 +189,6 @@ O SDK do Editor de SPA do AEM é totalmente compatível com a Adobe e continua s
 * Editar configurações (por exemplo, listeners)
 * Desfazer / Refazer
 * Distorção temporal e Diferencial de páginas
-* Recursos que executam reescrita de HTML no lado do servidor, como Verificador de links, serviço de reescrita CDN, redução de URL e assim por diante.
+* Recursos que executam regravação do HTML no lado do servidor, como [Verificador de Links,](/help/operations/link-checker.md) serviço de regravação CDN, redução de URL etc.
 * Modo de desenvolvedor
 * Inicializações do AEM
