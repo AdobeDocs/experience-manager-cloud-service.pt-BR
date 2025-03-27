@@ -4,9 +4,9 @@ description: Saiba como configurar sites separados para seus ambientes de prepar
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 701bd9bc-30e8-4654-8248-a06d441d1504
-source-git-commit: c9d0d3cd7e18b56db36a379b63f8fb48e18a40db
+source-git-commit: beda1168323d511cd7b89bb5d0a6eccb742de36f
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '799'
 ht-degree: 1%
 
 ---
@@ -141,3 +141,9 @@ Agora que você fez todas as alterações necessárias na configuração, verifi
 1. Visite seu novo site do Edge Delivery Services para essa página em `https://main--wknd-prod--<your-github-org>.aem.page`.
 
 Se você vir as alterações feitas, a configuração separada do site de produção está funcionando corretamente.
+
+## Uso {#usage}
+
+Depois de configurar seu projeto com ambientes de preparo e produção sem resposta, é possível gerenciar o código para eles de maneira independente. O diagrama a seguir ilustra a relação do conteúdo em seus vários ambientes no AEM, nos sites do Edge Delivery Services e em seus repositórios GitHub.
+
+![Ilustração de ambientes do AEM e ambientes de produção/preparo de resposta](assets/repoless/aem-edge-github.png)
