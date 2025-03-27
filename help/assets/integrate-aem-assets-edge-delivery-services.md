@@ -1,15 +1,15 @@
 ---
 title: Integrar  [!DNL AEM Assets] ao criar conteúdo para [!DNL Edge Delivery Services]
-description: Saiba como integrar o [!DNL AEM Assets] com [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] com [!DNL Microsoft Word] e [!DNL Google Docs], integrate [!DNL AEM Assets] com [!DNL Universal Editor], integrate [!DNL Dynamic Media with OpenAPI capabilities] com [!DNL Universal Editor] e integrar [!DNL Dynamic Media with OpenAPI capabilities] com [!DNL Microsoft Word] e [!DNL Google Docs].
+description: Saiba como integrar o [!DNL AEM Assets] com [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] com [!DNL Microsoft Word] e [!DNL Google Docs], integrate [!DNL AEM Assets] com [!DNL Universal Editor], integrate [!DNL Dynamic Media] com [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] com [!DNL Universal Editor] e integrar [!DNL Dynamic Media with OpenAPI capabilities] com [!DNL Microsoft Word] e [!DNL Google Docs].
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fe3286bf792f387c2209d7b827ba195b50c586b5
+source-git-commit: 84fde065602d8303a03eb2c82bfa4c4bef0c1193
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
 
-# Integrar [!DNL AEM Assets] ao criar conteúdo para [!DNL Edge Delivery Services] {#integrate-aem-assets-while-authoring-for-edge-delivery-services}
+# Integrar [!DNL AEM Assets] ao criar conteúdo para [!DNL Edge Delivery Services] {#integrate-aem-assets-with-edge-delivery-services}
 
 <table>
     <tr>
@@ -51,12 +51,12 @@ ht-degree: 0%
 
 É possível editar conteúdo em:
 
-* [[!DNL Microsoft Word] ou [!DNL Google Docs]](#integrate-aem-assets-with-document-based-authoring-tools)
-* [[!DNL Universal Editor]](#integrate-aem-assets-with-UE-universal-editor)
+* [[!DNL Microsoft Word] ou [!DNL Google Docs]](#integrate-dynamic-media-with-edge-delivery-services)
+* [[!DNL Universal Editor]](#integrate-aem-assets-with-universal-editor-UE)
 
 Após editar o conteúdo, você pode publicá-lo no Edge Delivery Services.
 
-## Integrando [!DNL AEM Assets] com fluxos de Criação Baseada em Documento para [!DNL Edge Delivery Services] {#integrate-aem-assets-with-document-based-authoring-tools}
+## Integrando [!DNL AEM Assets] com fluxos de Criação Baseada em Documento para [!DNL Edge Delivery Services] {#integrate-dynamic-media-with-edge-delivery-services}
 
 Quando o [!DNL AEM Assets] se integra às suas ferramentas de Criação Baseada em Documentos, como o [!DNL Microsoft Word] ou o [!DNL Google Docs], ele fornece um seletor de ativos na sua ferramenta de criação. Use este seletor de ativos para acessar [!DNL AEM Assets] e inserir ativos aprovados em seu conteúdo.
 Se você já tiver um site do [!DNL Edge Delivery Services], consulte a documentação do [[!DNL AEM Assets] plugin](https://github.com/adobe-rnd/aem-assets-plugin/blob/main/README.md) para saber como integrar o [!DNL AEM Assets] ao seu projeto existente do [!DNL AEM].
@@ -88,7 +88,7 @@ Você também pode usar os ativos entregues usando o [!DNL Dynamic Media with Op
 
 Para obter mais detalhes sobre os recursos, consulte a documentação de [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
 
-### Pré-requisitos {#prerequisites-for-dm-with-openapi-capabilities-to-use-aem-assets}
+### Pré-requisitos {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
 Para usar a referência do ativo, você deve ter:
 
@@ -97,7 +97,7 @@ Para usar a referência do ativo, você deve ter:
 * O [!DNL AEM Assets sidekick plugin] está habilitado com a cópia de referência para ativos de imagem habilitada. Para obter mais detalhes, consulte [esta documentação](https://www.aem.live/developer/configuring-aem-assets-sidekick-plugin#copymode) para Criação Baseada em Documento e consulte [esta documentação](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/configurable-asset-picker/#extension-overview) para criação baseada em Editor Universal.
 * Assets aprovados. Os ativos aprovados têm `dam:status=Approved` por meio das ações de back-end ou interface do usuário do Assets Cloud Services.
 
-### Usar ativos entregues usando o [!DNL Dynamic Media with OpenAPI capabilities]{#how-to-use-Dynamic-Media-with-OpenAPI-assets}
+### Usar ativos entregues usando o [!DNL Dynamic Media with OpenAPI capabilities]{#Using-Dynamic-Media-with-edge-delivery-services}
 
 Selecione os links a seguir para saber como usar o [!DNL Dynamic Media with OpenAPI capabilities] para fornecer imagens, vídeos e outros tipos de ativos ao seu conteúdo:
 
@@ -109,11 +109,11 @@ Assista a este vídeo para saber como fornecer ativos em seu conteúdo usando o 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441155)
 
-## Site de exemplo [!DNL Edge Delivery Services]{#example-of-an-Edge-Delivery-Services-site}
+## Site de exemplo [!DNL Edge Delivery Services]{#dynamic-media-with-google-docs-and-ms-word}
 
 Consulte [WKND Travel](http://bit.ly/3DExLnf), um site que é construído usando os recursos de Criação baseada em documentos do [!DNL Edge Delivery Services]. O conteúdo do site foi criado no [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) e o [!DNL Dynamic Media with OpenAPI capabilities] é usado para entregar ativos no conteúdo. Após a criação, o conteúdo é publicado diretamente do documento. Explore este [repositório Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) para saber sobre todos os arquivos, pastas, configurações, estilos do site e códigos de funcionalidade essenciais usados para criar a configuração de Criação Baseada em Documento para este site [!DNL Edge Delivery Services (EDS)].
 
-## Integrando [!DNL AEM Assets] com fluxos de criação baseados em [!DNL Universal Editor] para [!DNL Edge Delivery Services] {#integrate-aem-assets-with-UE-universal-editor}
+## Integrando [!DNL AEM Assets] com fluxos de criação baseados em [!DNL Universal Editor] para [!DNL Edge Delivery Services] {#integrate-aem-assets-with-universal-editor-UE}
 
 Configure o [!DNL Universal Editor] para integrar com [!DNL AEM Assets]. Essa integração permite que você use o [!DNL Dynamic Media with OpenAPI capabilities] para entregar ativos.
 
