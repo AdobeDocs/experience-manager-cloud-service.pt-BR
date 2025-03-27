@@ -5,10 +5,10 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 46b0af152d5f297419e7d1fa372975aded803bc7
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1344'
-ht-degree: 94%
+source-wordcount: '1320'
+ht-degree: 93%
 
 ---
 
@@ -132,19 +132,21 @@ Esses modelos de fragmentos de conteúdo:
 
 ### Referências do fragmento {#fragment-references}
 
-A **Referência do fragmento**:
+**Referência de fragmento** e **UUID de referência de fragmento**:
 
-* É um tipo de dados específico disponível ao definir um modelo de fragmento de conteúdo.
+* Os tipos de dados específicos estão disponíveis ao definir um modelo de fragmento de conteúdo.
 * Faz referência a outro fragmento, dependente de um modelo de fragmento de conteúdo específico.
 * Permite criar e recuperar dados estruturados.
 
    * Quando definido como **multifeed**, vários fragmentos secundários podem ser referenciados (recuperados) pelo fragmento principal.
 
-### Visualização JSON {#json-preview}
+<!--
+### JSON Preview {#json-preview}
 
-Para ajudar na criação e desenvolvimento dos modelos de fragmentos de conteúdo, é possível visualizar a saída JSON no editor de fragmento de conteúdo.
+To help with designing and developing your Content Fragment Models, you can preview JSON output in the Content Fragment Editor.
 
-![Visualização JSON](assets/cfm-model-json-preview.png "Visualização JSON")
+![JSON Preview](assets/cfm-model-json-preview.png "JSON Preview")
+-->
 
 <!--
 ## GraphQL Schema Generation from Content Fragments {#graphql-schema-generation-content-fragments}

@@ -5,10 +5,10 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 07327f80b23e1e6fdbb3fb49d861221877724d39
+source-git-commit: 22876fb2c74c705c3a03e81f7f87a5c2392d8ff4
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 67%
+source-wordcount: '1830'
+ht-degree: 65%
 
 ---
 
@@ -184,9 +184,10 @@ O AEM fornece os seguintes tipos de dados para você modelar o conteúdo:
 * Data e hora
 * Lista discriminada
 * Tags
-* Referência de conteúdo
-* Referência de fragmento
+* Referência de fragmento / UUID de referência de fragmento
+* Referência de conteúdo / UUID de referência de conteúdo
 * Objeto JSON
+* Espaço reservado da guia
 
 ### Referências e conteúdo aninhado {#references-nested-content}
 
@@ -213,7 +214,9 @@ No início, você deve ativar os Modelos de fragmentos de conteúdo no site. Iss
 >
 >Consulte Recursos adicionais - Fragmentos de conteúdo no navegador de configuração
 
-Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito em **Ferramentas** > **Geral** > **Modelos de fragmentos de conteúdo**. Por exemplo:
+Em seguida, os Modelos de fragmentos de conteúdo podem ser criados e a estrutura definida. Isso pode ser feito no Console de fragmentos de conteúdo. No console, selecione o painel para Modelos de fragmento de conteúdo, navegue até a pasta apropriada e use **Criar** para abrir a caixa de diálogo **Novo modelo de fragmento de conteúdo**.
+
+Depois de criado, você pode editar seu modelo. Por exemplo:
 
 ![Modelo de fragmentos do conteúdo](assets/cfm-model.png)
 
@@ -227,9 +230,7 @@ Fragmentos de conteúdo são sempre baseados em um Modelo de fragmento de conte�
 
 ### Seleção do modelo apropriado {#select-model}
 
-A primeira etapa para realmente criar o conteúdo é criar um Fragmento de conteúdo. Isso é feito usando Criar > Fragmento de conteúdo na pasta necessária em Assets > Arquivos. O assistente orienta você pelas etapas.
-
-Um Fragmento de conteúdo é baseado em um Modelo de fragmento de conteúdo específico, que pode ser selecionado como a primeira etapa do processo de criação.
+A primeira etapa para realmente criar o conteúdo é criar um Fragmento de conteúdo. Isso é feito usando a opção **Criar** da guia **Fragmentos de conteúdo** do Console de fragmentos de conteúdo.
 
 ### Criação e edição de conteúdo estruturado {#create-edit-structured-content}
 
@@ -247,7 +248,7 @@ Após a criação do fragmento, é possível abri-lo no Editor de fragmento de c
 
 Após selecionar o modelo apropriado, um fragmento de conteúdo é aberto para edição no editor de fragmento de conteúdo:
 
-![Editor de fragmento de conteúdo](assets/cfm-editor.png)
+![Editor de fragmento de conteúdo - Visão geral](/help/sites-cloud/administering/content-fragments/assets/cf-authoring-overview.png)
 
 >[!NOTE]
 >
