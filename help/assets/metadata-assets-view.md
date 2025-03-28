@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 84%
+source-wordcount: '2124'
+ht-degree: 77%
 
 ---
 
@@ -217,6 +217,39 @@ Siga as etapas abaixo para usar o componente Link no formulário de metadados:
    * Clique no ![ícone de copiar](assets/do-not-localize/copy.svg) para copiar o URL. 
    * Clique no ![ícone de editar](assets/do-not-localize/edit.svg) para editar o URL.
 1. Clique em **[!UICONTROL Salvar]** para salvar as alterações.
+
+
+### Trabalhar com o componente Tags no formulário de metadados {#tag-component-metadata-form}
+
+O elemento raiz representa a estrutura em árvore das tags que podem ser associadas aos ativos, ajudando a identificar o ativo com base na tag atribuída a ele. Além disso, é possível restringir o acesso de uma taxonomia específica ao configurar o formulário de metadados no editor de metadados.
+
+#### Configuração do componente de Tags {#tags-component-configuration}
+
+Configure o componente de tags executando as seguintes etapas:
+
+1. Vá para o editor de metadados, navegue até **[!UICONTROL Marcas]** e coloque-o na tela.
+1. Renomeie o componente na tela. Para fazer isso, vá para **[!UICONTROL Rótulo]** sob a [!UICONTROL propriedade de Metadados] no painel de configurações e adicione o texto para sua identificação.
+1. Em [!UICONTROL Propriedade de metadados], no painel de configurações, procure a propriedade de metadados que deseja atribuir ao componente.
+1. Clique em **[!UICONTROL Restringir à taxonomia específica]** para restringir o caminho raiz da taxonomia. Para fazer isso, navegue pelas tags e escolha a taxonomia para o caminho específico.
+1. Clique em **[!UICONTROL Salvar]** para salvar as alterações.
+
+   ![Configuração de marcas raiz](assets/root-tag-config.png)
+
+1. [Atribuir formulário de metadados a pastas](#assign-metadata-form-folder).
+
+<!--
+#### Mapping between assets and taxonomy {#asset-taxonomy-mapping}
+
+See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the steps below to perform mapping between folder and taxonomy:
+
+1. Go back to the Settings and click **[!UICONTROL Metadata forms]** 
+1. Select a Metadata form that needs mapping. 
+1. Click **[!UICONTROL Assign to folder(s)]**. **[!UICONTROL Select Folder(s)]** screen appears. 
+1. Navigate to the folder that you want to assign to the metadata form. You can select multiple folders.
+1. Click **[!UICONTROL Assign]**.
+-->
+
+Para visualizar as tags raiz configuradas, vá para a página de detalhes do ativo na qual o mapeamento entre o formulário de metadados e as tags raiz é executado.
 
 ## Próximas etapas {#next-steps}
 
