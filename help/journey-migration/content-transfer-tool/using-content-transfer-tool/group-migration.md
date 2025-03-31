@@ -2,9 +2,9 @@
 title: Migração de grupo
 description: Visão geral da migração de grupo no AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: c3a13f75757a478996918c6868a172d75158aafe
+source-git-commit: 50c8dd725e20cbd372a7d7858fc67b0f53a8d6d4
 workflow-type: tm+mt
-source-wordcount: '1914'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ A maioria dos grupos migrados é configurada para ser gerenciada pelo IMS.  Isso
 
 Observe que os grupos migrados não são mais considerados &quot;grupos locais&quot; do AEM; eles são grupos prontos para IMS no AEM, embora ainda não existam no IMS.  Eles devem ser recriados separadamente no IMS para que possam ser sincronizados entre o AEM e o IMS.  Os grupos podem ser criados no IMS por meio do Admin Console, entre outros métodos, individualmente ou em massa.  Consulte [Gerenciar grupos de usuários](https://helpx.adobe.com/br/enterprise/using/user-groups.html) para obter detalhes sobre como criar grupos individualmente ou em massa na Admin Console.
 
-A exceção para essa configuração IMS é com grupos criados pelas Coleções Assets. Quando uma coleção é criada no AEM, os grupos são criados para acessar essa coleção; esses grupos são migrados para o sistema de nuvem, mas não são configurados para serem gerenciados pelo IMS.  Para adicionar usuários do IMS a esses grupos, eles devem ser adicionados na página Propriedades do grupo na interface do usuário do Assets, individual ou coletivamente, como parte de outro grupo IMS.
+A exceção para essa configuração IMS é com grupos criados por Coleções Assets e Pastas privadas. Quando uma coleção ou uma pasta privada é criada no AEM, os grupos são criados para acessar esse conteúdo; esses grupos são migrados para o sistema de nuvem, mas não são configurados para serem gerenciados pelo IMS.  Para adicionar usuários do IMS a esses grupos, eles devem ser adicionados na página Propriedades do grupo na interface do usuário do Assets, individual ou coletivamente, como parte de outro grupo IMS.
 
 
 ## Recusar Migração de Grupo {#group-migration-option}
