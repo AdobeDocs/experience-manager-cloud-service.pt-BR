@@ -5,7 +5,7 @@ landing-page-description: Aprenda como usar e administrar o headless no Adobe Ex
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 feature: Headless
 role: Admin, Developer
-source-git-commit: b155ea4734a86e6ca9151a89d3ac6f76c3ad6420
+source-git-commit: 920045ab4e79dc223706219bf64347649af14125
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 94%
@@ -22,8 +22,6 @@ Você pode ler a documentação detalhada dos vários recursos envolvidos e/ou s
 >[!NOTE]
 >
 >Consulte também [O que é Headless?](/help/headless/what-is-headless.md) para obter uma introdução a conceitos e terminologia sobre headless.
-
-{{headless-trials-promotion}}
 
 ## Visão geral {#overview}
 
