@@ -5,7 +5,7 @@ exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: bdf3e0896eee1b3aa6edfc481011f50407835014
+source-git-commit: cc2e73da123d3e0676a8e175a18c1dc0bdff1daa
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 94%
@@ -15,8 +15,6 @@ ht-degree: 94%
 # Introdução à criação no AEM como um CMS headless {#author-headless-introduction}
 
 Nesta parte da [jornada do autor de conteúdo headless do AEM](overview.md), você pode aprender os conceitos (básicos) e terminologias necessários para entender sobre a criação de conteúdo ao usar o Adobe Experience Manager (AEM) as a Cloud Service como um CMS headless. Isso envolve criar e estruturar seu conteúdo para uma entrega de conteúdo headless.
-
-{{headless-trials-promotion}}
 
 ## Objetivo {#objective}
 
@@ -82,13 +80,13 @@ Agora que você aprendeu os conceitos e a terminologia, o próximo passo é [Sab
 
 * [Introdução ao AEM as a Headless CMS](/help/headless/introduction.md)
 
-* [Tutorials para Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
+* [Tutoriais do Headless no AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=pt-BR)
 
 * Jornada do desenvolvedor AEM headless
    * [Saiba mais sobre o desenvolvimento headless do CMS](/help/journey-headless/developer/learn-about.md)
    * [Saiba como modelar seu conteúdo](/help/journey-headless/developer/model-your-content.md)
 
-* [Portal do desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
+* [Portal do Desenvolvedor do AEM](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=pt-BR)
 
 * [Jornada do arquiteto de conteúdo do AEM Headless](/help/journey-headless/architect/overview.md)
 
