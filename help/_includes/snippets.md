@@ -1,15 +1,13 @@
 ---
-source-git-commit: e4ceba6510992f82b97effca27a98f442fff8f5c
+source-git-commit: 92ad3ce6c880664e42fce761ab52b21b94a25a5c
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 3%
+source-wordcount: '1497'
+ht-degree: 2%
 
 ---
 # Trechos {#snippets}
 
-## Promoção de avaliações headless {#headless-trials-promotion}
-
-[![Conheça nosso CMS headless com uma avaliação de 30 dias](./assets/aem-headless-trial-promo.png){align="left"}](https://commerce.adobe.com/business-trial/sign-up?items%5B0%5D%5Bid%5D=649A1AF5CBC5467A25E84F2561274821&amp;cli=headless_exl_banner_campaign&amp;co=US&amp;lang=en)
+## Testes Headless (o programa foi descontinuado) {#headless-trials-promotion}
 
 ## Criação no Edge Delivery Services {#edge-delivery-authoring}
 
