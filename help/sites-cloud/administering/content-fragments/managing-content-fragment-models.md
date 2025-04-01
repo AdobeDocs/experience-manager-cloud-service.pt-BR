@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 solution: Experience Manager Sites
 exl-id: f94f75c2-12fa-47c0-a71b-327f4210077d
-source-git-commit: b8a56b73f8178c432941b50821be91777f203dec
+source-git-commit: 3e4775df58a03136e925be73dab6faf673e7215e
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2290'
 ht-degree: 36%
 
 ---
@@ -80,7 +80,7 @@ Aqui você pode ver três áreas principais:
          * Mostrar informações sobre o status do modelo
       * [Determinados outros campos de informações](#information-content-fragments) sobre um Modelo de Fragmento de Conteúdo podem ser usados para [Filtragem Rápida](#fast-filtering):
          * Selecione um valor na coluna e ele será aplicado imediatamente como filtro
-         * A filtragem rápida é aceita pelas colunas **Modificado por**, **Publicado por** e **Status**
+         * A filtragem rápida é aceita pelas colunas **Modificado por**, **Publicado por** e **Status**.
       * Ao passar o mouse sobre os cabeçalhos da coluna, um seletor de ação suspenso e os controles deslizantes de largura serão mostrados. Eles permitem:
          * Classificar: selecione a ação apropriada para classificar em ordem crescente ou decrescente 
 Isso classificará toda a tabela de acordo com essa coluna. A classificação só está disponível nas colunas apropriadas.
@@ -95,7 +95,7 @@ O painel principal/direito (exibição de tabela) do console fornece uma varieda
 
 * **Nome**
    * Fornece um link para abrir o modelo no editor.
-* Bloqueado
+* **Bloqueado** (Ícone de cadeado)
    * Quando o modelo está bloqueado, isso é indicado com um ícone de cadeado.
 * **Caminho**
    * Fornece o caminho como um link para abrir a configuração no console.
