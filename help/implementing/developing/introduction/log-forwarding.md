@@ -4,9 +4,9 @@ description: Saiba mais sobre como encaminhar logs para fornecedores de registro
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 3727dc18b34f7a2eb307703c94fbc3a6ffe17437
+source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 Os clientes com uma licença de com um fornecedor de registro em log ou que hospedam um produto de registro em log podem ter registros do AEM (incluindo Apache/Dispatcher) e registros CDN encaminhados ao destino de registro associado. O AEM as a Cloud Service oferece suporte aos seguintes destinos de registro:
 
-* Amazon S3 (beta privado, consulte [^1])
+* Amazon S3 (beta privado, consulte a observação abaixo)
 * Armazenamento Azure Blob
 * Datadog
 * Elasticsearch ou OpenSearch
 * HTTPS
 * Splunk
-* Lógica Sumo (beta privado, veja [^1])
+* Sumo Logic (beta privado, consulte a observação abaixo)
 
 O encaminhamento de logs é configurado de maneira automatizada declarando uma configuração no Git e pode ser implantado por meio de pipelines de configuração do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção. O arquivo de configuração pode ser implantado em RDEs (Rapid Development Environments, ambientes de desenvolvimento rápido) usando ferramentas de linha de comando.
 
@@ -33,7 +33,9 @@ Há uma opção para que os registros do AEM e Apache/Dispatcher sejam roteados 
 
 Observe que a largura de banda da rede associada aos registros enviados ao destino de registro é considerada parte do uso de E/S da rede da organização.
 
-[^1] O Amazon S3 e o Sumo Logic estão no Private Beta e só oferecem suporte a logs do AEM (incluindo Apache/Dispatcher).  O New Relic sobre HTTPS também está na versão beta privada. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
+>[!NOTE]
+>
+>O Amazon S3 e o Sumo Logic estão no Private Beta e são compatíveis apenas com logs do AEM (incluindo Apache/Dispatcher).  O New Relic sobre HTTPS também está na versão beta privada. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
 
 ## Como este artigo está organizado {#how-organized}
 
@@ -192,6 +194,7 @@ As configurações para os destinos de registro compatíveis estão listadas aba
 
 ### Amazon S3 {#amazons3}
 
+>[!NOTE]
 >
 >Registros gravados em S3 periodicamente, a cada 10 minutos para cada tipo de arquivo de registro.  Isso pode resultar em um atraso inicial para que os logs sejam gravados em S3 quando o recurso for alternado.  Mais informações sobre por que este comportamento existe podem ser encontradas [aqui](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
@@ -384,7 +387,7 @@ Considerações:
 
 Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
 
->
+>[!NOTE]
 >A New Relic fornece endpoints específicos da região com base no local em que sua conta da New Relic é provisionada.  Consulte [aqui](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) para obter a documentação do New Relic.
 
 #### Logs HTTPS CDN {#https-cdn}
@@ -459,7 +462,7 @@ data:
       index: "aem-logs"
 ```
 
->
+>[!NOTE]
 > Você precisará de uma assinatura Sumo Logic Enterprise para aproveitar a funcionalidade do campo &quot;índice&quot;.  As assinaturas não empresariais terão seus logs roteados para a partição `sumologic_default` como padrão.  Consulte a [Documentação de Particionamento Lógico de Resumo](https://help.sumologic.com/docs/search/optimize-search-partitions/) para obter mais informações.
 
 ## Formatos de entrada de log {#log-formats}
