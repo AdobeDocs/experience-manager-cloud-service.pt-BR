@@ -6,7 +6,7 @@ exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 solution: Experience Manager
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ae873f8d61f3f6b79f09df100d62714e41e3b849
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 94%
@@ -19,8 +19,6 @@ Bem-vindo à documentação para desenvolvedores novos no Adobe Experience Manag
 
 Saiba mais sobre os avançados e flexíveis recursos headless, suas funcionalidades e como aproveitá-los em seu primeiro projeto de desenvolvimento headless. Esta jornada fornece todas as informações necessárias para desenvolver seu primeiro aplicativo headless.
 
-{{headless-trials-promotion}}
-
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_developer_resources"
 >title="Recursos de desenvolvedor do AEM Headless e documentação avançada"
@@ -31,11 +29,11 @@ Saiba mais sobre os avançados e flexíveis recursos headless, suas funcionalida
 
 A implementação Headless do AEM usa os Modelos de fragmentos de conteúdo e os Fragmentos de conteúdo para se concentrar na criação de fragmentos de conteúdo estruturados, neutros e reutilizáveis, bem como em sua entrega entre canais. Para isso, ele abre mão do gerenciamento de páginas e componentes, como é tradicional em soluções de pilha completa. É um padrão de desenvolvimento moderno e dinâmico para implementação de experiências digitais.
 
-Este guia aborda tópicos de implementação headless no AEM. Assim, quando terminar, você pode:
+Este guia aborda os tópicos de implementação headless no AEM. Quando terminar, você poderá:
 
 * Tenha uma compreensão completa do que é entrega de conteúdo headless e seus benefícios.
 * Entenda os recursos headless do AEM e como eles trabalham juntos para proporcionar uma experiência headless.
-* Dê os primeiros passos para implementar seu primeiro projeto AEM headless.
+* Dê os primeiros passos para implementar seu primeiro projeto headless no AEM.
 
 >[!TIP]
 >
@@ -58,7 +56,7 @@ A seguir estão os perfis que interagem nessa jornada.
 
 Abordaremos muitos tópicos nesta jornada, que lhe fornecerá o conhecimento fundamental de headless no AEM.
 
-Embora você possa ir diretamente para uma parte específica da jornada, muitos conceitos são construídos sobre os citados nos artigos anteriores. A Adobe recomenda que você comece no início e avance sequencialmente.
+Embora você possa ir diretamente para uma parte específica da jornada, muitos conceitos são construídos sobre os citados nos artigos anteriores. A Adobe recomenda que você comece do início e avance sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|
