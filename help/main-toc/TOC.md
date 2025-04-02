@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 457a5715c9f8a51e2806bcc83f55a88c69fae91b
+source-git-commit: dd7b09dc208f556a08d4a8960d9c71ec3c6e7651
 workflow-type: tm+mt
 source-wordcount: '6127'
 ht-degree: 66%
@@ -1104,8 +1104,8 @@ ht-degree: 66%
       + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
       + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
-      + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/content-fragment-selector-overview.md)
-      + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/content-fragment-selector-properties.md)
+      + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
+      + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
    + [APIs do AEM para entrega e gerenciamento de conteúdo estruturado](/help/headless/apis-headless-and-content-fragments.md)
    + API GraphQL {#graphql-api}
       + [API GraphQL para fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
