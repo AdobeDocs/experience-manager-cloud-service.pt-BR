@@ -4,10 +4,10 @@ description: Saiba como habilitar [!DNL Dynamic Media] ofertas do Prime e do Ult
 feature: Asset Management
 role: User, Admin
 exl-id: 0ee161f5-bf44-41f1-928e-c07574fd43cc
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 0%
+source-wordcount: '1077'
+ht-degree: 2%
 
 ---
 
@@ -28,21 +28,21 @@ ht-degree: 0%
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
         </td>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -53,7 +53,7 @@ Este artigo fornece o fluxo de trabalho completo para habilitar as ofertas do Pr
 
 ## Habilitar o [!DNL Dynamic Media] Ultimate {#enable-dynamic-media-ultimate}
 
-Execute as seguintes etapas no ambiente do Cloud Service para habilitar o Ultimate [!DNL Dynamic Media]:
+Para habilitar o Ultimate [!DNL Dynamic Media]:
 
 1. [Ativar [!DNL Dynamic Media with OpenAPI]](#activate-dynamic-media-with-openapi)
 1. [Configurar [!DNL Dynamic Media] soluções](#configure-dynamic-media-solutions)
@@ -186,11 +186,14 @@ Se a criação da empresa [!DNL Dynamic Media] falhar, execute as seguintes etap
 
 1. Se o **[!UICONTROL Status]** estiver Pendente, levante o problema para a equipe de suporte ao cliente para resolução.
 
-   ![status pendente](/help/assets/assets/company-creation-pending-status.png){width="350" align="left"}
+
+   ![status pendente](/help/assets/assets/company-creation-pending-status.png){width="350" align="center"}
+
+
 
 1. Se o **[!UICONTROL Status]** falhar, tente novamente com base no motivo da falha.
 
-   ![status de falha](/help/assets/assets/company-creation-failure-status.png){width="380" align="left"}
+   ![status de falha](/help/assets/assets/company-creation-failure-status.png){width="380" align="center"}
 
 ### Opcional: configurar o domínio personalizado no nível de entrega {#configure-custom-domain-in-delivery-tier}
 
@@ -303,7 +306,7 @@ TBD: Wiki in progress..
 
 ## Habilitar o [!DNL Dynamic Media] Prime {#enable-dynamic-media-prime}
 
-Execute as seguintes etapas no ambiente do Cloud Service para habilitar o Prime [!DNL Dynamic Media]:
+Para habilitar o Prime [!DNL Dynamic Media]:
 
 1. [Ativar Dynamic Media com OpenAPI](#activate-dynamic-media-with-openapi)
 1. [Opcional: configurar o domínio personalizado na camada de entrega](#configure-custom-domain-in-delivery-tier)

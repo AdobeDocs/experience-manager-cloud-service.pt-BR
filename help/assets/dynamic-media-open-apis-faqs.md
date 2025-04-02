@@ -3,10 +3,10 @@ title: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 description: Perguntas frequentes sobre o Dynamic Media com recursos OpenAPI
 role: User
 exl-id: 3450e050-4b0b-4184-8e71-5e667d9ca721
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c36938e80d0b159c5f89d450aaa228c37c4f5276
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 0%
+source-wordcount: '1600'
+ht-degree: 1%
 
 ---
 
@@ -32,19 +32,19 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -136,6 +136,12 @@ Para obter mais informações, consulte [Restringir o acesso aos ativos no Exper
 +++**Como você pode obter permissões para editar o status de aprovação de um ativo?**
 
 Como usuário do DAM, talvez você não tenha permissões para [aprovar ativos](approve-assets.md#approve-assets). Para obter as permissões para editar o status de aprovação de um ativo, os administradores podem editar o esquema padrão ou qualquer outro esquema de metadados aplicado à pasta de ativos para fornecer permissões de edição ao campo **[!UICONTROL Status da revisão]**. Para obter mais informações, consulte [como desabilitar a edição para o campo Status de Revisão](approve-assets.md#configuration).
+
++++
+
++++**Qual é o tamanho de arquivo suportado para vídeos?**
+
+O Dynamic Media com recursos OpenAPI é compatível com vídeos de forma longa. Os vídeos podem suportar até 50 GB e 2 horas.
 
 +++
 
