@@ -1,13 +1,13 @@
 ---
 title: Adicionar um certificado SSL
-description: Saiba como adicionar seu próprio certificado SSL ou e um certificado DV (Validação de domínio) gerenciado por Adobe usando as ferramentas de autoatendimento da Cloud Manager.
+description: Saiba como adicionar seu próprio certificado SSL ou e o certificado DV (Validação de domínio) gerenciado pela Adobe usando as ferramentas de autoatendimento da Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 9645ee21bc8c44020d5bb7cdd513d67429353c7d
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '1021'
 ht-degree: 2%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 2%
 
 # Adicionar um certificado SSL {#add-ssl-cert}
 
-Saiba como adicionar seu próprio certificado SSL ou e certificado DV (Validação de domínio) gerenciado por Adobe usando a nuvem
+Saiba como adicionar seu próprio certificado SSL ou e o certificado DV (Validação de domínio) gerenciado pela Adobe usando a nuvem
 
 >[!NOTE]
 >
 >Se você usar um certificado SSL gerenciado pelo cliente (OV/EV) e um provedor de CDN gerenciado pelo cliente, poderá ignorar a adição de um certificado SSL e ir diretamente para [Adicionar uma configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) quando estiver pronto.
 
-O provisionamento de um certificado pode levar vários dias. Portanto, a Adobe aconselha o provisionamento do seu próprio certificado com bastante antecedência em relação a qualquer prazo ou data de ativação para evitar atrasos.
+O provisionamento de um certificado pode levar vários dias. Portanto, a Adobe aconselha provisionar seu próprio certificado com bastante antecedência em relação a qualquer prazo ou data de ativação para evitar atrasos.
 
 Para saber mais sobre como atualizar e gerenciar certificados SSL no Cloud Manager, consulte [Gerenciar certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md).
 
@@ -35,12 +35,12 @@ Se tiver problemas ao adicionar ou gerenciar certificados, consulte [Solucionar 
 
 ## Escolha de qual certificado SSL adicionar {#which-ssl-to-add}
 
-Depois de [adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) no AEM Cloud Manager, a próxima etapa dependerá se você optou por usar um certificado SSL gerenciado por Adobe (DV) (recomendado) ou um certificado SSL gerenciado pelo cliente (OV/EV).
+Depois de [adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) no AEM Cloud Manager, a próxima etapa dependerá se você optou por usar um certificado SSL gerenciado pela Adobe (DV) (recomendado) ou um certificado SSL gerenciado pelo cliente (OV/EV).
 
-* **Para um certificado SSL gerenciado por Adobe (DV):**
+* **Para um certificado SSL gerenciado pela Adobe (DV):**
    * O processo de validação de domínio é feito depois que o domínio personalizado é adicionado e verificado no Cloud Manager.
-   * Agora você deve [adicionar um certificado SSL gerenciado por Adobe](#add-adobe-managed-ssl-cert).
-Depois de adicionado ao Cloud Manager, aguarde o Adobe emitir e instalar o certificado SSL DV em seu nome.
+   * Agora você deve [adicionar um certificado SSL gerenciado pela Adobe](#add-adobe-managed-ssl-cert).
+Depois de adicionado ao Cloud Manager, aguarde que o Adobe emita e instale o certificado SSL DV em seu nome.
    * Quando o certificado estiver ativo, o domínio personalizado estará pronto para uso.
 
 * **Para um certificado SSL gerenciado pelo cliente (OV/EV):**
@@ -53,11 +53,11 @@ Em ambos os casos, depois que o certificado é verificado e instalado, o domíni
 
 Consulte também [Introdução aos certificados SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction-to-ssl-certificates.md).
 
-## Adicionar um certificado SSL gerenciado por Adobe (DV) {#add-adobe-managed-ssl-cert}
+## Adicionar um certificado SSL gerenciado pela Adobe (DV) {#add-adobe-managed-ssl-cert}
 
-Precisa de ajuda para escolher se deseja usar um certificado SSL gerenciado por Adobe (recomendado) ou um certificado SSL gerenciado pelo cliente com seu domínio? Consulte [Escolha de qual certificado SSL adicionar](#which-ssl-to-add)
+Precisa de ajuda para escolher se deseja usar um certificado SSL gerenciado pela Adobe (recomendado) ou um certificado SSL gerenciado pelo cliente com seu domínio? Consulte [Escolha de qual certificado SSL adicionar](#which-ssl-to-add)
 
-**Para adicionar um certificado SSL DV (gerenciado por Adobe):**
+**Para adicionar um certificado SSL gerenciado pela Adobe (DV):**
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione o programa apropriado.
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
@@ -69,21 +69,21 @@ Precisa de ajuda para escolher se deseja usar um certificado SSL gerenciado por 
 
 1. Próximo ao canto superior direito da página Certificados SSL, clique em **Adicionar certificado SSL**.
 
-1. Na caixa de diálogo **Adicionar certificado SSL**, com base em [seu caso de uso específico](#which-ssl-to-add), selecione **Adobe Gerenciado (DV)**.
+1. Na caixa de diálogo **Adicionar certificado SSL**, com base em [seu caso de uso específico](#which-ssl-to-add), selecione **Adobe Managed (DV)**.
 
    ![Adicionar um certificado DV](/help/implementing/cloud-manager/assets/ssl/add-dv-certificate.png)
 
 1. No campo **Nome do certificado**, digite um nome que você deseja associar ao certificado SSL DV.
 
 1. Na lista suspensa **Selecionar domínios**, selecione um ou mais domínios verificados que deseja associar ao certificado SSL DV.
-   * Nenhum domínio para selecionar? Em caso afirmativo, primeiro [adicione um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) e verifique se ele foi verificado antes de adicionar um certificado SSL gerenciado por Adobe.
+   * Nenhum domínio para selecionar? Em caso afirmativo, primeiro [adicione um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) e verifique se ele foi verificado antes de adicionar um certificado SSL gerenciado pela Adobe.
    * Quando terminar de adicionar um nome de domínio personalizado, retorne a este tópico e comece na etapa 1 novamente.
 
 1. No canto inferior direito da caixa de diálogo, clique em **Salvar**.
 
    Depois que o certificado SSL for emitido com êxito, ele será exibido com uma marca de seleção Válida verde na tabela **Certificados SSL**.
 
-Agora você adicionou um certificado SSL DV gerenciado por Adobe de trabalho para o seu projeto. Essa etapa geralmente é a primeira a configurar um nome de domínio personalizado.
+Agora você adicionou um certificado SSL DV gerenciado pela Adobe em funcionamento para o seu projeto. Essa etapa geralmente é a primeira a configurar um nome de domínio personalizado.
 
 Agora você está pronto para adicionar uma [configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
 
@@ -91,7 +91,11 @@ Agora você está pronto para adicionar uma [configuração de CDN](/help/implem
 
 <!-- IF THIS TOPIC GET UPDATED, REMEMBER TO UPDATE THE STEPS ALSO IN THE "MANAGE SSL CERTIFICATES TOPIC TOO -->
 
-Precisa de ajuda para escolher se deseja usar um certificado SSL gerenciado por Adobe (recomendado) ou um certificado SSL gerenciado pelo cliente com seu domínio? Consulte [Escolha de qual certificado SSL adicionar](#which-ssl-to-add)
+Precisa de ajuda para escolher se deseja usar um certificado SSL gerenciado pela Adobe (recomendado) ou um certificado SSL gerenciado pelo cliente com seu domínio? Consulte [Escolha de qual certificado SSL adicionar](#which-ssl-to-add)
+
+>[!IMPORTANT]
+>
+>Ao adicionar ou atualizar um certificado SSL, não inclua o novo certificado na cadeia de certificados. Incluí-lo impede que o upload seja concluído com sucesso.
 
 **Para adicionar um certificado SSL gerenciado pelo cliente (OV/EV):**
 

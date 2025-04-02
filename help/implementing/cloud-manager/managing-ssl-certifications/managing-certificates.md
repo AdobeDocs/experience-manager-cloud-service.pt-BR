@@ -5,9 +5,9 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f0cf9fa7da7e89d42ab90dee0e8400b26f004574
+source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1048'
 ht-degree: 6%
 
 ---
@@ -40,6 +40,10 @@ Quando um certificado gerenciado pelo cliente expira, todos os domínios que est
 
 O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente de implantação** para concluir esta tarefa.
 
+>[!IMPORTANT]
+>
+>Ao adicionar ou atualizar um certificado SSL, não inclua o novo certificado na cadeia de certificados. Incluí-lo impede que o upload seja concluído com sucesso.
+
 **Para atualizar um certificado SSL gerenciado pelo cliente expirado:**
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione o programa apropriado.
@@ -70,7 +74,7 @@ O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente
 
 Siga as mesmas etapas descritas em [Atualizar um certificado SSL expirado](#update-ssl-certificate) para substituir um certificado SSL gerenciado pelo cliente expirado.
 
-## Renomear um certificado SSL gerenciado por Adobe (#rename-an-ssl-certificate)
+## Renomear um certificado SSL gerenciado pela Adobe (#rename-an-ssl-certificate)
 
 Veja a seguir alguns motivos pelos quais você pode querer renomear um certificado SSL:
 
@@ -78,7 +82,7 @@ Veja a seguir alguns motivos pelos quais você pode querer renomear um certifica
 * **Evitando confusão**: se você estiver gerenciando vários certificados, um nome claro e descritivo pode ajudar a evitar erros, como aplicar o certificado errado ao domínio errado.
 * **Conformidade e auditoria**: certificados nomeados corretamente podem ser mais fáceis de rastrear para fins de segurança e auditoria.
 
-**Para renomear um certificado SSL gerenciado por Adobe:**
+**Para renomear um certificado SSL gerenciado pela Adobe:**
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) e selecione o programa apropriado.
 
@@ -99,11 +103,11 @@ Veja a seguir alguns motivos pelos quais você pode querer renomear um certifica
 
 ## Excluir um certificado SSL {#deleting-an-ssl-certificate}
 
-A exclusão de certificados SSL gerenciados por Adobe ou pelo cliente do Cloud Manager é uma ação permanente que não pode ser desfeita. Como prática recomendada, o Adobe recomenda que você salve os arquivos SSL localmente antes de excluí-los no Cloud Manager.
+A exclusão de certificados SSL gerenciados pelo Adobe ou gerenciados pelo cliente da Cloud Manager é uma ação permanente que não pode ser desfeita. Como prática recomendada, a Adobe recomenda que você salve os arquivos SSL localmente antes de excluí-los no Cloud Manager.
 
 >[!NOTE]
 >
->Não é possível excluir um certificado SSL gerenciado por Adobe que tenha um ou mais domínios ativos associados a ele. Todos os domínios ativos associados devem ser excluídos antes de excluir o certificado SSL. Consulte [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para saber mais.
+>Não é possível excluir um certificado SSL gerenciado pela Adobe que tenha um ou mais domínios ativos associados a ele. Todos os domínios ativos associados devem ser excluídos antes de excluir o certificado SSL. Consulte [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para saber mais.
 
 O usuário deve ser membro da função **Proprietário da empresa** ou **Gerente de implantação** para concluir esta tarefa.
 
