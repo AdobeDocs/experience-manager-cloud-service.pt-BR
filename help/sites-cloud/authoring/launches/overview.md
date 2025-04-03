@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: cc007536d14bd0464879b30d6303c24ccf15d2d0
+source-git-commit: 9ddda040eda85b29c86a4940cb656f26073b0f12
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 93%
+source-wordcount: '957'
+ht-degree: 83%
 
 ---
 
@@ -16,7 +16,9 @@ ht-degree: 93%
 
 Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura.
 
-Um lançamento é criado para permitir que você faça modificações prontas para futuras publicações (mantendo suas páginas atuais). Após editar e atualizar suas páginas de lançamento, você as promove à origem e ativa as páginas de origem (nível superior). A promoção duplica o conteúdo do lançamento de volta às páginas de origem e pode ser feita manual ou automaticamente (dependendo dos campos definidos ao criar e editar o lançamento).
+Uma *Inicialização* é criada para permitir que você faça alterações na preparação de uma publicação futura, ao mesmo tempo em que mantém suas páginas atuais. Isso significa que você está editando duas versões ao mesmo tempo: páginas publicadas no momento e uma versão dessas páginas a serem publicadas posteriormente. Quando essa hora chegar, você poderá substituir as páginas originais e publicar a nova versão.
+
+Você cria uma *Inicialização* e, depois de editar e atualizar as páginas da *Inicialização*, *promove* de volta para a *Source*. Você pode então ativar estas *páginas do Source* (nível superior). A promoção duplica o conteúdo do lançamento de volta às páginas de origem e pode ser feita manual ou automaticamente (dependendo dos campos definidos ao criar e editar o lançamento).
 
 Por exemplo, as páginas de produtos sazonais da loja online são atualizadas trimestralmente para que os produtos em destaque se alinhem à temporada atual. Para se preparar para a próxima atualização trimestral, é possível criar um lançamento das páginas da Web apropriadas. Ao longo do trimestre, as seguintes alterações são acumuladas na cópia do lançamento:
 
