@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: ef6c113721ca6f84374ecd01df790a0b37d00192
+source-git-commit: 664aa2091a3853fdcea792ba5015d685c9285764
 workflow-type: tm+mt
-source-wordcount: '2289'
+source-wordcount: '2286'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,9 @@ Veja o que mais o Conversational Forms oferece:
 As Forms de conversa são mais do que apenas uma nova aparência - elas são um divisor de águas para a experiência do usuário.  Aumente o engajamento, reduza o abandono de formulários e torne a interação com seu site uma experiência mais agradável para todos.
 
 
-### Criação no WYSIWYG (Universal Editor) para Edge Delivery Services para Forms
+### Criação no WYSIWYG para Edge Delivery Services
 
-O Editor Universal fornece uma interface avançada do WYSIWYG para compilar e publicar [formulários adaptáveis no Edge Delivery Services](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md), combinando a simplicidade do design visual com a funcionalidade avançada. A Criação do WYSIWYG oferece todos os recursos da [Criação baseada em documento](/help/edge/docs/forms/create-forms.md), além de uma grande variedade de recursos adicionais:
+A Criação no WYSIWYG fornece interfaces do WYSIWYG (Universal Editor e Adaptive Forms Editor) para criar e publicar formulários adaptáveis no Edge Delivery Services. A Criação do WYSIWYG oferece todos os recursos da [Criação baseada em documento](/help/edge/docs/forms/overview.md#document-based-authoring-features), além de uma grande variedade de recursos adicionais:
 
 * Editor de regras avançado para criar lógica complexa.
 * Extensibilidade do lado do servidor para funcionalidades personalizadas.
@@ -86,26 +86,6 @@ O Editor Universal fornece uma interface avançada do WYSIWYG para compilar e pu
 * Integração com várias fontes de dados para pré-preencher formulários e enviar dados.
 * Modelo de dados de formulário (FDM) para definir a estrutura de dados e as interações com várias fontes de dados.
 * Capacidade de escolher entre várias ações de envio para lidar com envios de formulários, incluindo o envio de dados para o Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e muitas outras fontes de dados.
-
-![Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png)
-
-**Vantagens:**
-
-* **Tempo de implantação acelerado (TTV)**: inicialize formulários mais rapidamente com criação visual intuitiva que elimina requisitos complexos de codificação.
-* **Custos de desenvolvimento reduzidos**: reduza o custo total de propriedade capacitando os usuários empresariais a criar e modificar formulários com o mínimo de envolvimento de TI.
-* **Desenvolvimento simplificado**: crie componentes personalizados usando somente o HTML, o CSS e o JavaScript — não é necessário conhecimento especializado sobre a estrutura.
-* **Pilha da Web Moderna**: criada com base em padrões da Web e tecnologias modernas, familiares aos desenvolvedores de front-end.
-* **Prototipagem rápida**: crie e teste rapidamente conceitos de formulário antes de investir no desenvolvimento completo
-
-
-**Explore a documentação para saber mais:**
-
-| | | |
-|:----------------------:|:---------------------:|:----------------------:|
-| [**Principais recursos**](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md#key-features-of-universal-editor-for-edge-delivery-services-for-forms) | [**Usar layouts responsivos**](/help/edge/docs/forms/universal-editor/responsive-layout.md) | [**Configurar ações de envio**](/help/edge/docs/forms/universal-editor/submit-action.md) |
-| [**Introdução ao Editor Universal para Forms Adaptável**](/help/edge/docs/forms/universal-editor/getting-started-universal-editor.md) | [**Estilize seus formulários**](/help/edge/docs/forms/universal-editor/style-theme-forms.md) | [**Adicionar segurança do reCAPTCHA**](/help/edge/docs/forms/universal-editor/recaptcha-forms.md) |
-| [**Crie seu primeiro formulário**](/help/edge/docs/forms/universal-editor/create-forms.md) | [**Usar o editor de regras**](/help/edge/docs/forms/universal-editor/rule-editor-universal-editor.md) | [**Publicar formulários**](/help/edge/docs/forms/universal-editor/publish-forms.md) |
-| [**Entender a interface de usuário**](/help/edge/docs/forms/universal-editor/universal-editor-user-interface.md) | | [**Criar componentes personalizados**](/help/edge/docs/forms/universal-editor/create-custom-component.md) |
 
 
 ### Conector do AEM Forms para Marketo
@@ -127,27 +107,38 @@ Pronto para começar? Os artigos a seguir fornecem instruções detalhadas sobre
 * [Configurar fonte de dados de anúncios do Marketo Engage para o Adaptive Forms existente](/help/forms/use-marketo-engage-data-source-in-form.md)
 * [Enviar um Formulário adaptável existente para o Marketo Engage](/help/forms/submit-adaptive-form-to-marketo-engage.md)
 
-### Value Realization Dashboard
+### Comunicações interativas na nuvem
 
-Rastreie e analise o desempenho de seus formulários com o Painel de Realização de Valores. Essa ferramenta de análise ajuda você a tomar decisões orientadas por dados para otimizar sua estratégia de formulários.
+As Comunicações interativas na nuvem são uma solução poderosa para criar, gerenciar e fornecer correspondências interativas orientadas por dados, como correspondência comercial, documentos, declarações, avisos de benefícios, emails de marketing, contas e kits de boas-vindas.
 
-![Painel de insights de uso do Forms](/help/forms/assets/forms-usage-insights.png)
+![Editor de Comunicação Interativa](/help/forms/assets/ic-editor.png)
 
-**Principais recursos:**
+#### Principais recursos:
 
-* Monitorar envios de formulários, representações de documentos e métricas de criação/publicação de formulários
-* Rastrear o uso do fragmento de formulário e a reutilização em toda a organização
-* Identificar tendências, períodos de pico e oportunidades de melhoria
+* **Editor Baseado em Nuvem**: diferentemente do AEM Forms Desktop Designer, que só pode ser instalado em máquinas Windows, o editor de Comunicações Interativas é executado em qualquer navegador moderno sem necessidade de instalação. Essa abordagem baseada em nuvem elimina problemas de instalação, fornece acessibilidade entre plataformas e permite a colaboração de qualquer local com acesso à Internet.
 
-O painel fornece insights por meio de duas seções principais:
+* **Design Amigável**: interface intuitiva do tipo apontar-e-clicar, que requer o mínimo de conhecimento técnico.
 
-* **Atividade de formulários e documentos ao longo do tempo**: rastreia envios, representações e criação/publicação de formulários
-* **Uso de fragmentos**: monitora a adoção e a reutilização de fragmentos
+* **Integração de dados**: conecte-se a esquemas, bancos de dados e serviços Web para gerar conteúdo dinâmico.
 
-Para obter informações detalhadas:
+* **Mídia Avançada**: Incorpore textos, imagens e elementos interativos de maneira simples.
 
-* [Noções básicas sobre o seu painel de realização de valor](/help/forms/aem-forms-value-realization-dashboard.md)
-* [Interpretação de insights de uso de formulários e documentos](/help/forms/using-the-value-realization-dashboard.md)
+* **Fragmentos de documento**: reutilize blocos de conteúdo modular em vários documentos para obter consistência e eficiência.
+
+* **Saída multicanal**: crie experiências unificadas em formatos impressos e digitais com conformidade regulamentar.
+
+* **Conteúdo Dinâmico**: Gerar conteúdo personalizado usando lógica de negócios e associação de dados.
+
+* **Flexibilidade de Formato**: Saída para os formatos PDF, HTML, PCL, PostScript® e ZPL.
+
+#### Casos de uso:
+
+* Instituições financeiras que geram extratos de conta
+* Órgãos governamentais simplificando avisos de benefícios
+* Criação de correspondência de alta qualidade, segura e em conformidade legal
+* Gerenciamento da criação, montagem e entrega de correspondências interativas orientadas por dados
+
+Pronto para começar? O editor de Comunicações interativas está disponível no programa Acesso antecipado para implantações do Forms as a Cloud Service. Para solicitar acesso, envie um email para a ID da sua organização e os detalhes do programa para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) a partir do seu endereço oficial.
 
 ## Inovações adicionais de acesso antecipado
 
