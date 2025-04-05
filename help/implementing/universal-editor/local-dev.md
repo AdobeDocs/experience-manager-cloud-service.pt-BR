@@ -4,9 +4,9 @@ description: Saiba como executar seu próprio Universal Editor Service para dese
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
@@ -16,26 +16,30 @@ ht-degree: 2%
 
 Saiba como executar seu próprio Universal Editor Service para desenvolvimento local ou como parte de sua própria infraestrutura.
 
+>[!NOTE]
+>
+>Os Serviços locais do Universal Editor não são necessários ou compatíveis para projetos que usam a criação do AEM com o Edge Delivery Services.
+
 ## Visão geral {#overview}
 
 O Universal Editor Service é o que vincula o Universal Editor e o sistema de back-end. Para desenvolver localmente para o Universal Editor, você deve executar uma cópia local do Universal Editor Service. Isso ocorre porque:
 
-* O Serviço Editor Universal oficial do Adobe é hospedado globalmente, e sua instância AEM local precisaria ser exposta à internet.
-* Durante o desenvolvimento com um SDK AEM local, o Adobe Universal Editor Service não pode ser acessado pela Internet.
-* Se a instância do AEM tiver restrições de IP e o Adobe Universal Editor Service não estiver em um intervalo de IP definido, você mesmo poderá hospedá-lo.
+* O Serviço Universal Editor oficial da Adobe é hospedado globalmente, e sua instância local do AEM precisaria ser exposta à Internet.
+* Ao desenvolver com um AEM SDK local, o Universal Editor Service da Adobe não pode ser acessado da Internet.
+* Se sua instância do AEM tiver restrições de IP e o Universal Editor Service da Adobe não estiver em um intervalo de IP definido, você mesmo poderá hospedá-lo.
 
 ## Casos de uso {#use-cases}
 
 Sua própria cópia do Universal Editor Service é útil se você deseja:
 
-* Desenvolver localmente no AEM para uso com o Editor universal.
-* Execute seu próprio Universal Editor Service como parte de sua própria infraestrutura, independente do Adobe Universal Editor Service.
+* Desenvolva localmente no AEM para uso com o Editor universal.
+* Execute seu próprio Universal Editor Service como parte de sua própria infraestrutura, independentemente do Adobe Universal Editor Service.
 
 Ambos os casos de uso são compatíveis. Este documento explica como executar o AEM em HTTPS junto com uma cópia local do Universal Editor Service.
 
 Se você quiser executar seu próprio Universal Editor Service como parte de sua própria infraestrutura, siga as mesmas etapas do exemplo de desenvolvimento local.
 
-## Configurar AEM para execução em HTTPS {#aem-https}
+## Configurar o AEM para ser executado em HTTPS {#aem-https}
 
 Em um quadro externo protegido com HTTPS, um quadro HTTP não seguro não pode ser carregado. O Universal Editor Service é executado em HTTPS e, portanto, o AEM ou qualquer outra página remota também deve ser executado em HTTPS.
 
@@ -45,7 +49,7 @@ Para fazer isso, é necessário configurar o AEM para ser executado em HTTPS. Pa
 
 ## Instalar o Universal Editor Service {#install-ue-service}
 
-O Universal Editor Service não é uma cópia inteira do Universal Editor, mas apenas um subconjunto de seus recursos para garantir que as chamadas do seu ambiente local do AEM não sejam roteadas pela Internet, mas de um terminal definido sob seu controle.
+O Universal Editor Service não é uma cópia completa do Universal Editor, mas apenas um subconjunto de seus recursos para garantir que as chamadas do seu ambiente local do AEM não sejam roteadas pela Internet, mas de um endpoint definido sob seu controle.
 
 [A versão 20](https://nodejs.org/en/download/releases) do NodeJS é necessária para executar uma cópia local do Universal Editor Service.
 

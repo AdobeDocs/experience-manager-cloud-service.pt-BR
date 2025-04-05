@@ -4,10 +4,10 @@ description: Estas são as notas de versão do Universal Editor 2025.03.10.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: b3c98f5e41dbc5e1714d0ed418a317199c735b73
+source-git-commit: beab4f94dc6d78c2b1ad87a02b9fe46dd0438bcc
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 1%
+source-wordcount: '295'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +25,15 @@ Estas são as notas de versão da versão de 10 de março de 2025 do Editor univ
 * **Movendo Componentes:** [Movendo componentes entre contêineres](/help/sites-cloud/authoring/universal-editor/authoring.md#reordering-components) agora observa o filtro de componente do contêiner de destino.
    * Não há mais um requisito para ter a mesma [definição de filtro](/help/implementing/universal-editor/filtering.md) em vigor para os contêineres de destino e de destino para mover o componente entre os contêineres.
 * **Páginas Bloqueadas:** O Universal Editor Service observa o [status de bloqueio de uma página](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) e grava somente em páginas que não estão bloqueadas ou estão bloqueadas pelo usuário.
+
+## Novas extensões para o editor universal {#extensions}
+
+Várias novas extensões foram lançadas no [Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/) para o Universal Editor, aprimorando a experiência de criação.
+
+* **Extensão do MSM**: agora é possível interromper e reinstanciar a herança de componentes/blocos usando essa extensão.
+* **Extensão de Propriedades da Página**: acesse a janela de propriedades da página diretamente do Editor Universal usando esta extensão.
+* **Extensão do Fluxo de Trabalho**: use fluxos de trabalho em páginas e Fragmentos de Conteúdo que são instrumentados na página que usa esta extensão.
+* **Extensão de Bloqueio de Página**: use esta extensão para bloquear e desbloquear uma página diretamente do Editor Universal.
 
 ## Outras melhorias {#other-improvements}
 
