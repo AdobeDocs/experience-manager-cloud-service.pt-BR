@@ -3,9 +3,9 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1427'
 ht-degree: 33%
 
 ---
@@ -32,19 +32,19 @@ ht-degree: 33%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -81,7 +81,11 @@ O Seletor de ativos oferece muitos benefícios, como:
 
 Você deve garantir os seguintes métodos de comunicação:
 
-* O aplicativo está sendo executado em HTTPS.
+* O aplicativo host está sendo executado em HTTPS.
+* Você não pode executar o aplicativo em `localhost`. Se quiser integrar o Seletor de ativos ao computador local, crie um domínio personalizado, por exemplo `[https://<your_campany>.localhost.com:<port_number>]`, e adicione esse domínio personalizado no `redirectUrl list`.
+* Você pode configurar e adicionar `ADOBE_PROVIDED_CLIENT_ID` à variável de ambiente do AEM Cloud Service com o respectivo `imsClientId`.
+  ![Ambiente de ID do cliente IMS do seletor de ativos](assets/asset-selector-ims-client-id-env.png)
+* A lista de escopos IMS precisa ser definida na configuração de ambiente.
 * O URL do aplicativo está na lista de permissões de URLs de redirecionamento do cliente IMS.
 * O fluxo de logon do IMS é configurado e renderizado usando um pop-up no navegador da Web. Portanto, os pop-ups devem ser ativados ou permitidos no navegador de destino.
 
@@ -91,7 +95,7 @@ Use os pré-requisitos acima se precisar do fluxo de trabalho de autenticação 
 
 * [Integrar o Seletor de ativos a um aplicativo do Adobe](/help/assets/integrate-asset-selector-adobe-app.md)
 * [Integrar o Seletor de ativos a um aplicativo que não seja da Adobe](/help/assets/integrate-asset-selector-non-adobe-app.md)
-* [Integrar APIs abertas de mídia dinâmica do Seletor de ativos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+* [Integrar APIs abertas do Dynamic Media ao Seletor de ativos](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
 
 
 >[!IMPORTANT]
@@ -197,9 +201,6 @@ O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
 * ![exibição de grade](assets/do-not-localize/grid-view.png) [!UICONTROL **Exibição de grade**] A exibição de grade exibe arquivos e pastas com rolagem em uma grade de linhas e colunas.
 * ![exibição de galeria](assets/do-not-localize/gallery-view.png) [!UICONTROL **exibição de galeria**] A exibição de galeria exibe arquivos ou pastas em uma lista horizontal bloqueada no centro.
 * ![exibição em cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Cascata** exibição] A exibição em cascata exibe arquivos ou pastas no formato de uma Bridge.
-
-**Gráfico de Visão Geral**
-
 
 ## Saiba mais sobre os principais recursos {#key-capabilities-asset-selector}
 

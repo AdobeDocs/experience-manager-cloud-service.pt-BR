@@ -1,12 +1,12 @@
 ---
 title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: Use funções para personalizar o Seletor de ativos no aplicativo.
+description: Use funções para personalizar os seletor do Ativo no seu aplicativo.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
 workflow-type: tm+mt
-source-wordcount: '1289'
-ht-degree: 23%
+source-wordcount: '1293'
+ht-degree: 24%
 
 ---
 
@@ -15,36 +15,36 @@ ht-degree: 23%
 <table>
     <tr>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i></i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Novo Mídia dinâmica Prime e Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i></i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>Novo Ativos AEM Ultimate</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i></i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração Novo Ativos AEM com os serviços de entrega do Edge</b></a>
         </td>
         <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i></i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>extensibilidade Novo interface</b></a>
         </td>
           <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i></i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Novo Habilitar Mídia dinâmica Prime e Ultimate</b></a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -57,12 +57,13 @@ O Seletor de ativos permite personalizar vários componentes de acordo com prefe
 * [Seleção do Assets](#selection-of-assets)
 * [Personalizar ativos expirados](#customize-expired-assets)
 * [Filtro de invocação contextual](#contextual-invocation-filter)
+* [propriedade de dragOptions](#drag-options-property)
 
-Você precisa definir os pré-requisitos no arquivo **index.html** ou em um arquivo semelhante na implementação do aplicativo para definir os detalhes de autenticação para acessar o repositório [!DNL Experience Manager Assets]. Depois de concluído, você pode adicionar trechos de código de acordo com sua exigência.
+Você precisa definir os pré-requisitos no **arquivo de index.html** ou um arquivo semelhante na sua aplicativo implementação definir os detalhes de autenticação para acessar o [!DNL Experience Manager Assets] repositório. Depois de concluído, você pode adicionar trechos de código de acordo com seu requisito.
 
 ## Personalizar painel de filtro {#customize-filter-panel}
 
-Você pode adicionar o seguinte trecho de código no objeto `assetSelectorProps` para personalizar o painel de filtro:
+Você pode adicionar o seguinte snippet de código no `assetSelectorProps` objeto para personalizar o painel de filtro:
 
 ```
 filterSchema: [
@@ -122,9 +123,9 @@ filterSchema: [
 ],
 ```
 
-## Personalizar informações na exibição modal {#customize-info-in-modal-view}
+## Personalizar informações em visualização modal {#customize-info-in-modal-view}
 
-Você pode personalizar a exibição detalhada de um ativo ao clicar no ícone ![informações](assets/info-icon.svg). Execute o código abaixo:
+Você pode personalizar os detalhes visualização de uma ativo ao clicar no ![ícone de informações](assets/info-icon.svg) . Execute o código abaixo:
 
 ```
 // Create an object infoPopoverMap and set the property `infoPopoverMap` with it in assetSelectorProps
@@ -136,9 +137,9 @@ return defaultPopoverData.filter((i) => i.label !== 'Path')
 assetSelectorProps.infoPopoverMap = infoPopoverMap;
 ```
 
-## Ativar ou desativar o modo arrastar e soltar {#enable-disable-drag-and-drop}
+## Ativar ou desativar o modo de arrastar e soltar {#enable-disable-drag-and-drop}
 
-Adicione as seguintes propriedades a `assetSelectorProp` para habilitar o modo arrastar e soltar. Para desabilitar arrastar e soltar, substitua o parâmetro `true` por `false`.
+Adicione as seguintes propriedades para `assetSelectorProp` ativar o modo arrastar e soltar. Para desativar o arrastar e soltar, substitua o `true` parâmetro por `false`.
 
 ```
 rail: true,
@@ -159,7 +160,7 @@ const data = JSON.parse(e.dataTransfer.getData('collectionviewdata'));
 }
 ```
 
-## Seleção do Assets {#selection-of-assets}
+## Seleção de Assets {#selection-of-assets}
 
 O Tipo de ativo selecionado é uma matriz de objetos que contém as informações do ativo ao usar as funções `handleSelection`, `handleAssetSelection`, e `onDrop`.
 
@@ -213,7 +214,7 @@ A tabela a seguir descreve algumas das propriedades importantes do objeto de ati
 | *repo:size* | número | O tamanho do ativo em bytes. |
 | *repo:path* | string | O local do ativo no repositório. |
 | *repo:ancestors* | `Array<string>` | Uma matriz de itens ancestrais do ativo no repositório. |
-| *repo:state* | string | Estado atual do ativo no repositório (Por exemplo, ativo, excluído etc.). |
+| *repo:state* | string | O estado atual do ativo na repositório (por exemplo, ativo, excluído e assim por diante). |
 | *repo:createdBy* | string | O usuário ou sistema que criou o ativo. |
 | *repo:createDate* | string | A data e a hora em que o ativo foi criado. |
 | *repo:modifiedBy* | string | O usuário ou sistema que modificou o ativo pela última vez. |
@@ -238,14 +239,13 @@ A propriedade `handleSelection` é usada para lidar com seleções únicas ou m�
 
 ### Desabilitação da seleção de Assets {#disable-selection}
 
-Desativar seleção é usado para ocultar ou desativar a seleção de ativos ou pastas. Ela oculta a caixa de seleção de seleção do cartão ou ativo, impedindo-o de ser selecionado. Para usar esse recurso, você pode declarar a posição de um ativo ou pasta que deseja desativar em uma matriz. Por exemplo, se você quiser desativar a seleção de uma pasta que aparece na primeira posição, poderá adicionar o seguinte código:
-`disableSelection: [0]:folder`
+A opção Desativar é usada para ocultar ou desativar a seleção de ativos ou pastas. Ele oculta a caixa de seleção do cartão ou ativo que a impede de ser selecionada. Para usar esse recurso, você pode declarar a posição de uma ativo ou pasta que deseja desativar em uma matriz. Por exemplo, se você quiser desativar a seleção de uma pasta que aparece na primeira posição, você pode adicionar o seguinte código:`disableSelection: [0]:folder`
 
-Você pode fornecer à matriz uma lista de tipos MIME (como imagem, pasta, arquivo ou outros tipos MIME, por exemplo, image/jpeg) que deseja desativar. Os tipos MIME declarados são mapeados em `data-card-type` e `data-card-mimetype` atributos de um ativo.
+Você pode fornecer à matriz uma lista de tipos MIME (como imagem, pasta, arquivo ou outros tipos MIME, por exemplo, image/jpeg) que você deseja desativar. Os tipos MIME que você declara são mapeados `data-card-type` e `data-card-mimetype` os atributos de um ativo.
 
-Além disso, o Assets com seleção desativada é arrastável. Para desabilitar a ação de arrastar e soltar um tipo de ativo específico, você pode usar a propriedade `dragOptions.allowList`.
+Além disso, Assets com a seleção desativada podem ser arrastadas. Para desativar o arrastar e soltar um determinado tipo de ativo, você pode usar `dragOptions.allowList` propriedade.
 
-A sintaxe de desabilitar seleção é a seguinte:
+A sintaxe de desativar a seleção é a seguinte:
 
 ```
 (args)=> {
@@ -329,11 +329,11 @@ const currentData = new Date();
 currentData.getTime(),
 ```
 
-retorna `1718779013959` que é o formato de data 2024-06-19T06:36:53.959Z.
+retorna `1718779013959` de acordo com o formato de data 2024-06-19T06:36:53.959Z.
 
-### Personalizar mensagem em caixa de informações de um ativo expirado {#customize-toast-message}
+### Personalizar a mensagem de torrada de um ativo expirado {#customize-toast-message}
 
-A propriedade `showToast` é usada para personalizar a mensagem do sistema que você deseja mostrar em um ativo expirado.
+A `showToast` propriedade é usada para personalizar a mensagem de torrada que você deseja mostrar em um ativo expirado.
 
 Sintaxe:
 
@@ -345,9 +345,9 @@ Sintaxe:
 }
 ```
 
-O tempo limite padrão é de 500 milissegundos. Ao passo que, você pode modificá-lo de acordo com o requisito. Além disso, passar o valor `timeout: 0` mantém a janela aberta até que você clique no botão cruzado.
+O tempo limite padrão é de 500 milissegundos. Considerando que, você pode modificá-lo de acordo com o requisito. Além disso, passar o valor `timeout: 0` mantém a torrada aberta até clicar na botão cruzada.
 
-Veja abaixo um exemplo para mostrar uma mensagem em caixa de informações quando é necessário proibir a seleção de uma pasta e mostrar uma mensagem correspondente:
+Abaixo está um exemplo para mostrar uma mensagem de torrada quando for necessário não permitir a seleção de uma pasta e mostrar uma mensagem correspondente:
 
 ```
 const showToast = {
@@ -357,7 +357,7 @@ const showToast = {
 }
 ```
 
-Use o seguinte trecho de código para mostrar uma mensagem do sistema para o uso de um ativo expirado:
+Use o snippet de código a seguir para mostrar a mensagem de torrada sobre o uso de uma ativo expirada:
 
 ```
 (args) => {
@@ -390,7 +390,7 @@ Use o seguinte trecho de código para mostrar uma mensagem do sistema para o uso
 
 ## Filtro de invocação contextual{#contextual-invocation-filter}
 
-O Seletor de ativos permite adicionar um filtro seletor de tags. Ela é compatível com um grupo de tags que combina todas as tags relevantes a um grupo de tags específico. Além disso, permite selecionar tags adicionais correspondentes ao ativo que você está procurando. Além disso, você também pode definir os grupos de tags padrão no filtro de chamada contextual que são usados principalmente por você para que sejam acessíveis a você em qualquer lugar.
+O Seletor de ativos permite adicionar um filtro tag seletor de seletor. Ela é compatível com uma tag grupo que combina todas as tags relevantes a um grupo marcação específico. Além disso, permite selecionar tags adicionais correspondentes às ativo que você está procurando. Além disso, você também pode definir os grupos de tags padrão no filtro de chamada contextual que são usados principalmente por você para que sejam acessíveis a você em qualquer lugar.
 
 >
 >
@@ -448,10 +448,10 @@ Você pode fazer upload de arquivos ou pastas para o Seletor de ativos no seu si
 
 * [Trecho básico do código do formulário para upload](#basic-upload)
 * [Carregar com metadados](#upload-with-metadata)
-* [Upload personalizado](#customized-upload)
+* [upload personalizados](#customized-upload)
 * [Fazer upload usando fontes de terceiros](#upload-using-third-party-source)
 
-### Formulário básico de upload {#basic-upload}
+### Formulário de upload básico {#basic-upload}
 
 ```
 import { AllInOneUpload } from '@assets/upload';
@@ -486,7 +486,7 @@ export const UploadExample = () => {
 }
 ```
 
-### Carregar com metadados {#upload-with-metadata}
+### Fazer upload com metadados {#upload-with-metadata}
 
 ```
 import { AllInOneUpload } from '@assets/upload';
@@ -553,7 +553,7 @@ const UploadExampleWithMetadataForm = () => {
 }
 ```
 
-### Upload personalizado {#customized-upload}
+### upload personalizados {#customized-upload}
 
 ```
 const MultipleAllInOneUploadExample = () => {
@@ -641,6 +641,18 @@ const ControlledUploadExample = () => {
         </Flex>
     )
 }
+```
+
+### propriedade dragOptions {#drag-options-property}
+
+```
+dragOptions: {
+            allowList: {
+                '*': true,          // allow all types to be dragged
+                'folder': false,    // except those explicitly set to disallow
+                'image/jpeg': false // or those with specific mimeTypes
+            },
+         }
 ```
 
 >[!MORELIKETHIS]
