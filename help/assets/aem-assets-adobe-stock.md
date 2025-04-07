@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: 3d95dd29cf1b7d6c7056c91e062a5f7eb48cc322
+source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
 workflow-type: tm+mt
-source-wordcount: '2273'
+source-wordcount: '2254'
 ht-degree: 4%
 
 ---
@@ -68,16 +68,16 @@ O [!DNL Experience Manager Assets] fornece aos usuários a capacidade de pesquis
 
 Atenda aos seguintes requisitos para habilitar essa integração:
 
-* Um [!DNL Experience Manager Assets] ativo e em execução como uma instância de [!DNL Cloud Service]
-* Um [plano [!DNL Adobe Stock] da empresa](https://stockenterprise.adobe.com/)
-* Um usuário com permissões em [!DNL Admin Console] para o perfil de produto padrão do Stock
-* Um usuário com permissões para o [!DNL Developer Access profile] para criar a integração no [!DNL Adobe Developer Console]
+* Um [!DNL Experience Manager Assets] ativo e em execução como uma instância de [!DNL Cloud Service].
+* Um plano da empresa [!DNL Adobe Stock].
+* Um usuário com permissões em [!DNL Admin Console] para o perfil de produto padrão do Stock.
+* Um usuário com permissões para o [!DNL Developer Access profile] para criar a integração no [!DNL Adobe Developer Console].
 
 Um plano da empresa [!DNL Adobe Stock],
 
-* Fornece direitos de produto para [!DNL Adobe Stock] (Estoques conectados ao Experience Manager)
-* Créditos comprados em [!DNL Adobe Admin Console] para o seu direito a ações
-* Habilita o gerenciamento global de créditos e licenciamento a partir de [!DNL Adobe Admin Console]
+* Fornece direitos de produto para [!DNL Adobe Stock] (Estoques conectados ao Experience Manager).
+* Créditos comprados em [!DNL Adobe Admin Console] para o seu direito a ações.
+* Habilita o gerenciamento global de créditos e licenciamento de dentro de [!DNL Adobe Admin Console].
 
 Dentro do direito, um perfil de produto padrão para [!DNL Adobe Stock] existe em [!DNL Admin Console]. Vários perfis podem ser criados, e esses perfis determinam quem pode licenciar os ativos do Stock. Um usuário com acesso direto ao perfil de produto pode acessar o [https://stock.adobe.com/](https://stock.adobe.com/) e licenciar os ativos do Stock. Já há outro método de usar o Developer Access para criar uma integração (API). Esta integração autentica a comunicação entre [!DNL Experience Manager Assets] e [!DNL Adobe Stock].
 
@@ -91,9 +91,10 @@ Dentro do direito, um perfil de produto padrão para [!DNL Adobe Stock] existe e
 1. Click **[!UICONTROL Create new project]** and click **[!UICONTROL Add API]**. Select **[!UICONTROL Adobe Stock]** from the list of APIs that are available to you. Select [!UICONTROL OAUTH 2.0 Web].
 1. Provide **[!UICONTROL Default redirect URI]** and **[!UICONTROL Redirect URI pattern]** values. Click **[!UICONTROL Save configured API]**. Copy the generated ID and secret.
 1. In [!UICONTROL Adobe IMS Technical Account Configuration] screen, provide the values in the boxes titled **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]**. For detailed information about these values, see [JWT authentication quick start](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md).
-
 -->
-<!-- TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+
+<!-- 
+TBD: Update the URL to update the terminology when AIO team updates their documentation URL. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
 -->
 
 <!--
@@ -268,10 +269,13 @@ Execute as seguintes etapas para configurar um novo [!DNL Adobe Stock IMS config
    * **[!UICONTROL Solução da nuvem]**: selecione **[!UICONTROL Adobe Stock]**.
    * **[!UICONTROL Título]**: especifique um nome para esta integração.
    * **[!UICONTROL Servidor de autorização]**: adicionar [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/) como o servidor de autorização.
-   * **[!UICONTROL ID do Cliente]**: Navegue até a página **[!UICONTROL Detalhes da credencial do Servidor para Servidor do OAuth]** do seu projeto e copie a **[!UICONTROL ID do Cliente]** e cole-a aqui (consulte a etapa 7 da seção [Configurar um programa no Developer Console](#set-up-a-program-in-developer-console)).
-   * **[!UICONTROL Segredo do Cliente]**: Navegue até a página **[!UICONTROL Detalhes da credencial do servidor para servidor do OAuth]** do seu projeto e clique em **[!UICONTROL Recuperar Segredo do Cliente]**, copie o **[!UICONTROL segredo do cliente]** e cole-o aqui (consulte a etapa 7 da seção [Configurar um programa no Developer Console](#set-up-a-program-in-developer-console)).
-   * **[!UICONTROL Escopo]**: Navegue até a página **[!UICONTROL Detalhes da credencial do servidor para servidor do OAuth]** do seu projeto, copie o **[!UICONTROL Escopo]** e cole-o aqui (consulte a etapa 7 da seção [Configurar um programa no Developer Console](#set-up-a-program-in-developer-console)).
-   * **[!UICONTROL ID da Organização]**: Navegue até a página **[!UICONTROL Detalhes da credencial do servidor para servidor do OAuth]** do seu projeto, copie a **[!UICONTROL ID da Organização]** e cole-a aqui (consulte a etapa 7 da seção [Configurar um programa no Developer Console](#set-up-a-program-in-developer-console)).
+   * **[!UICONTROL ID do Cliente]**: Navegue até o painel do projeto, clique na opção **[!UICONTROL Servidor para Servidor OAuth]** disponível no painel esquerdo, selecione **[!UICONTROL Detalhes da credencial]**, copie a **[!UICONTROL ID do Cliente]** e cole-a aqui (consulte a [etapa 7](#set-up-a-program-in-developer-console)).
+
+   * **[!UICONTROL Segredo do Cliente]**: Navegue até o painel do projeto, clique na opção **[!UICONTROL Servidor para Servidor OAuth]** disponível no painel esquerdo, selecione **[!UICONTROL Detalhes da credencial]**, clique em **[!UICONTROL Recuperar Segredo do Cliente]**, copie o **[!UICONTROL segredo do cliente]** e cole-o aqui (consulte a [etapa 7](#set-up-a-program-in-developer-console)).
+
+   * **[!UICONTROL Escopo]**: Navegue até o painel do projeto, clique na opção **[!UICONTROL Servidor para Servidor OAuth]** disponível no painel esquerdo, selecione **[!UICONTROL Detalhes da credencial]**, copie o **[!UICONTROL Escopo]** e cole-o aqui (consulte a [etapa 7](#set-up-a-program-in-developer-console)).
+
+   * **[!UICONTROL ID da Organização]**: Navegue até o painel do projeto, clique na opção **[!UICONTROL Servidor para Servidor OAuth]** disponível no painel esquerdo, selecione **[!UICONTROL Detalhes da credencial]**, copie a **[!UICONTROL ID da Organização]** e cole-a aqui (consulte a [etapa 7](#set-up-a-program-in-developer-console)).
      ![aem assets e adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
 1. Clique em **[!UICONTROL Criar]**, a página **[!UICONTROL Configurações do Adobe IMS]** será aberta e exibirá a integração [!DNL Adobe Stock] criada.
 
@@ -283,7 +287,7 @@ Execute as seguintes etapas para adicionar a configuração de nuvem para se con
 1. Clique em ![aem assets e adobe stock](/help/assets/assets/Hammer.svg), selecione **[!UICONTROL Cloud Services]**, procure e selecione **[!UICONTROL Adobe Stock]**.
    ![usando o adobe stock com o aem](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)
 1. Clique em **[!UICONTROL Criar]** e a página **[!UICONTROL Configuração do Adobe Stock]** exibirá vários campos. Siga estas instruções para especificar os detalhes nestes campos:
-   * **[!UICONTROL Título]**: especifique o mesmo nome de título usado na página **[!UICONTROL Configuração de Conta Técnica do Adobe IMS]** ao [definir a configuração do Adobe Stock IMS na Instância do autor do AEM](#set-up-adobe-stock-ims-configuration-in-aem-author-instance).
+   * **[!UICONTROL Título]**: Navegue até a página **[!UICONTROL Configuração de conta técnica do Adobe IMS]** (consulte [etapa 3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)), copie o título e cole-o aqui.
    * **[!UICONTROL Configuração IMS da Adobe Associada]**: Selecione a integração [!DNL Adobe Stock] que você criou.
    * **[!UICONTROL Local]**: Selecione **[!UICONTROL Inglês (Estados Unidos)]**.
 1. Clique em **[!UICONTROL Salvar e fechar]**.
