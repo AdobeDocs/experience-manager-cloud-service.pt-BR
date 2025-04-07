@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Adobe Stock
 role: Admin, User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: deab7ac707527e62f7a0fa3581080171e499cd32
+source-git-commit: 3d95dd29cf1b7d6c7056c91e062a5f7eb48cc322
 workflow-type: tm+mt
-source-wordcount: '2258'
+source-wordcount: '2273'
 ht-degree: 4%
 
 ---
@@ -51,12 +51,11 @@ ht-degree: 4%
     </tr>
 </table>
 
-<!--
-| Version | Article link |
+| Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5  |    [Click here](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en)                  |
-| AEM as a Cloud Service     | This article         |
--->
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/aem-assets-adobe-stock.html?lang=en) |
+| AEM as a Cloud Service | Este artigo |
+
 O serviço [!DNL Adobe Stock] fornece aos designers e empresas acesso a milhões de fotos, vetores, ilustrações, vídeos, modelos e ativos 3D de alta qualidade, com curadoria e isentos de royalties para todos os seus projetos criativos.
 
 A oferta [!DNL Adobe Stock] para corporações, por padrão, inclui direitos de compartilhamento em toda a organização. Depois que um ativo é licenciado por um usuário da organização, outros usuários da organização podem identificar, baixar e usar esse ativo sem precisar licenciá-lo novamente. Depois que um ativo é licenciado pela sua organização, o direito de usá-lo é perpétuo.

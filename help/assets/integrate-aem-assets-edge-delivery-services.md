@@ -1,13 +1,16 @@
 ---
 title: Integrar  [!DNL AEM Assets] ao criar conteúdo para [!DNL Edge Delivery Services]
 description: Saiba como integrar o [!DNL AEM Assets] com [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] com [!DNL Microsoft Word] e [!DNL Google Docs], integrate [!DNL AEM Assets] com [!DNL Universal Editor], integrate [!DNL Dynamic Media] com [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] com [!DNL Universal Editor] e integrar [!DNL Dynamic Media with OpenAPI capabilities] com [!DNL Microsoft Word] e [!DNL Google Docs].
+tags: "AEM Assets""Edge Delivery Services""Dynamic Media""Dynamic Media with OpenAPI capabilities""Universal Editor""Edge Delivery Services with Universal Editor"
+features: "How to use [!DNL  AEM Assets] with [!DNL Edge Delivery Services]""How to use [!DNL AEM Assets] with [!DNL Universal Editor]""How to use [!DNL Dynamic Media with OpenAPI capabilities] with [!DNL Edge Delivery Services]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Universal Editor]""How to integrate [!DNL Universal Editor] with [!DNL Edge Delivery Services] and [!DNL AEM Assets]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in document based authoring tools""How to use [!DNL AEM Assets] in [!DNL Microsoft word] and [!DNL Google docs]""How to use [!DNL Universal Editor] with [!DNL Edge Delivery Services]""How to use [!DNL Dynamic Media with OpenAPI capabilities] in [!DNL Microsoft word] and [!DNL Google docs]""How to use [!DNL Dynamic Media] for asset delivery in document based authoring tools and [!DNL Universal Editor]"
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: 84fde065602d8303a03eb2c82bfa4c4bef0c1193
+source-git-commit: 64cf8feed8cc8c3c38b29f36ee7b2d7944f408d1
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 0%
+source-wordcount: 671
+ht-degree: 3%
 
 ---
+
 
 # Integrar [!DNL AEM Assets] ao criar conteúdo para [!DNL Edge Delivery Services] {#integrate-aem-assets-with-edge-delivery-services}
 
@@ -26,21 +29,21 @@ ht-degree: 0%
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
         </td>
          <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -86,7 +89,7 @@ Você também pode usar os ativos entregues usando o [!DNL Dynamic Media with Op
 * Otimização e entrega de mídia avançada, como transmissão contínua de vídeo adaptável pronta para uso e entrega de ativos originais para PDFs.
 * Relatório de impressões no nível do ativo ([disponibilidade limitada](/help/assets/manage-reports-assets-view.md#dynamic-media-delivery-reports)).
 
-Para obter mais detalhes sobre os recursos, consulte a documentação de [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
+Para obter mais detalhes sobre os recursos, consulte a documentação de [[!DNL Dynamic Media with OpenAPI capabilities]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview).
 
 ### Pré-requisitos {#dynamic-media-with-universal-editor-and-edge-delivery-services}
 
