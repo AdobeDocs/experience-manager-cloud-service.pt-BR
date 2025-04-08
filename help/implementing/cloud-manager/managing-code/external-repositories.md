@@ -1,13 +1,13 @@
 ---
-title: Adicionar repositórios externos no Cloud Manager - beta limitado
+title: Add External Repositories in Cloud Manager - Limited Beta
 description: Saiba como adicionar um repositório externo no Cloud Manager. O Cloud Manager oferece suporte à integração com repositórios GitHub Enterprise, GitLab e Bitbucket.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: cc307e8fbe71b65e25c7184b0b720708bcb6405f
+source-git-commit: 9807e59dedd0be0655a5cb73e61233b4a2ba7a4c
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 27%
+source-wordcount: '1870'
+ht-degree: 26%
 
 ---
 
@@ -52,7 +52,7 @@ A configuração de um repositório externo no Cloud Manager consiste em três e
    | --- | --- |
    | **Nome do repositório** | Obrigatório. Um nome expressivo para o novo repositório. |
    | **URL do repositório** | Obrigatório. O URL do repositório.<br><br>Se você estiver usando um repositório hospedado pelo GitHub, o caminho deverá terminar em `.git`.<br>Por exemplo, *`https://github.com/org-name/repo-name.git`* (o caminho do URL é apenas para fins ilustrativos).<br><br>Se você estiver usando um repositório externo, ele deverá usar o seguinte formato de caminho de URL:<br>`https://git-vendor-name.com/org-name/repo-name.git`<br> ou<br>`https://self-hosted-domain/org-name/repo-name.git`<br>e corresponder ao seu fornecedor de Git. |
-   | **Selecionar tipo de repositório** | Obrigatório. Selecione o tipo de repositório que você está usando:<ul><li>**GitHub** (GitHub Enterprise e a versão auto-hospedada do GitHub)</li><li>**GitLab** (o `gitlab.com` e a versão auto-hospedada do GitLab) </li><li>**Bitbucket** (o servidor `bitbucket.org` e o Bitbucket e a versão auto-hospedada do Bitbucket)</li></ul>Se o caminho do URL do repositório acima incluir o nome do fornecedor do Git, como GitLab ou Bitbucket, o tipo de repositório já estará pré-selecionado. |
+   | **Selecionar tipo de repositório** | Obrigatório. Selecione o tipo de repositório que você está usando:<ul><li>**GitHub** (GitHub Enterprise e a versão auto-hospedada do GitHub)</li><li>**GitLab** (o `gitlab.com` e a versão auto-hospedada do GitLab) </li><li>**Bitbucket** (somente `bitbucket.org` (versão em nuvem) tem suporte. A versão auto-hospedada do Bitbucket foi descontinuada a partir de 15 de fevereiro de 2024.)</li></ul>Se o caminho do URL do repositório acima incluir o nome do fornecedor do Git, como GitLab ou Bitbucket, o tipo de repositório já estará pré-selecionado. |
    | **Descrição** | Opcional. Uma descrição detalhada do repositório. |
 
 1. Clique em **Salvar** para adicionar o repositório.
