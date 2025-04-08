@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 2ec16c91-0195-4732-a26d-ac223e10afb9
-source-git-commit: e3a8afaee6c3baeb593eb69a46648b0a8d2a069f
+source-git-commit: a764a9d1e7d9fcd0be6abf9e2fb409346dc0f549
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1073'
 ht-degree: 7%
 
 ---
@@ -87,7 +87,7 @@ Para que um domínio personalizado possa veicular o tráfego, é necessário con
    | Opção | Etapas |
    | --- | --- |
    | Configuração do REGISTRO A | Recomendado para domínios raiz como `example.com`<br><ol><li>Faça logon no portal do provedor de serviços DNS.<li>Vá até a seção Registros DNS.<li>Crie um registro A para apontar para todos os endereços IP listados.</li></ol> |
-   | Configurar CNAME | Recomendado para domínios personalizados como `www.example.com`<br><ol><li>Faça logon no portal do provedor de serviços DMS.<li>Vá até a seção Registros DNS.<li>Mapear [cdn.adobeaemcloud.com](https://cdn.adobeaemcloud.com/) (registro CNAME) no registro DNS do provedor de serviços DNS (seu domínio personalizado). Esse mapeamento garante que as solicitações recebidas no domínio personalizado sejam redirecionadas para o CDN da Adobe.</li></ol> |
+   | Configurar CNAME | Recomendado para domínios personalizados como `www.example.com`<br><ol><li>Faça logon no portal do provedor de serviços DMS.<li>Vá até a seção Registros DNS.<li>Mapa `cdn.adobeaemcloud.com` (registro CNAME) no registro DNS do provedor de serviços DNS (seu domínio personalizado). Esse mapeamento garante que as solicitações recebidas no domínio personalizado sejam redirecionadas para o CDN da Adobe.</li></ol> |
 
 1. Na caixa de diálogo **Disponibilidade para ativação**, clique em **OK** para salvar o registro.
 
