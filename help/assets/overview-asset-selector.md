@@ -3,9 +3,9 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1422'
 ht-degree: 33%
 
 ---
@@ -83,8 +83,9 @@ Você deve garantir os seguintes métodos de comunicação:
 
 * O aplicativo host está sendo executado em HTTPS.
 * Você não pode executar o aplicativo em `localhost`. Se quiser integrar o Seletor de ativos ao computador local, crie um domínio personalizado, por exemplo `[https://<your_campany>.localhost.com:<port_number>]`, e adicione esse domínio personalizado no `redirectUrl list`.
-* Você pode configurar e adicionar `ADOBE_PROVIDED_CLIENT_ID` à variável de ambiente do AEM Cloud Service com o respectivo `imsClientId`.
-  ![Ambiente de ID do cliente IMS do seletor de ativos](assets/asset-selector-ims-client-id-env.png)
+* Você pode configurar e adicionar clientID na variável de ambiente do AEM Cloud Service com o respectivo `imsClientId`.
+<!--* You can configure and add `ADOBE_PROVIDED_CLIENT_ID` into the AEM Cloud Service environment variable with the respective `imsClientId`.
+![Asset Selector IMS Client id environment](assets/asset-selector-ims-client-id-env.png)-->
 * A lista de escopos IMS precisa ser definida na configuração de ambiente.
 * O URL do aplicativo está na lista de permissões de URLs de redirecionamento do cliente IMS.
 * O fluxo de logon do IMS é configurado e renderizado usando um pop-up no navegador da Web. Portanto, os pop-ups devem ser ativados ou permitidos no navegador de destino.
