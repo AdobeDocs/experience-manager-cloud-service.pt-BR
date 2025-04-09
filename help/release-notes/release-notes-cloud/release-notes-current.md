@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5a1c951813e026806aa3b5b23a912a48681f4505
+source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1092'
 ht-degree: 14%
 
 ---
@@ -52,7 +52,16 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 O Dynamic Media com OpenAPI agora é compatível com vídeos de formulários longos. Os vídeos de formato longo podem suportar até 50 GB e 2 horas.
 
-### Novos recursos na visualização de ativos {#new-features-assets-view}
+### Dynamic Media Classic {#dmc}
+
+<!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
+
+The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025.
+
+See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+
+
+## Novos recursos na visualização de ativos {#new-features-assets-view}
 
 
 **Suporte para marcas raiz**
@@ -75,19 +84,19 @@ O Adaptive Forms permite usar [modelos de email do HTML](/help/forms/html-email-
 
 #### Suporte ao armazenamento na nuvem aprimorado: upload direto do PDF para o armazenamento Azure Blob
 
-As APIs de geração de documentos do AEM Forms agora permitem [carregar diretamente documentos gerados do PDF](/help/forms/early-access-ea-features.md#doc-generation-api) para o Armazenamento de blobs do Azure. Esse aprimoramento simplifica o armazenamento e a recuperação, melhorando a eficiência e a integração com fluxos de trabalho em nuvem.
+AEM Forms Document Generation APIs now let you [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. Esse aprimoramento simplifica o armazenamento e a recuperação, melhorando a eficiência e a integração com fluxos de trabalho em nuvem.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Suporte ao Java 21 {#java21}
 
-Conforme mencionado nas notas de versão de janeiro, agora é possível criar código com o Java 21, que inclui novos recursos (por exemplo, correspondência de padrões para instruções switch, classes lacradas) e melhorias de desempenho; as builds do Java 17 também são recém-compatíveis. Para obter as etapas de configuração, incluindo a atualização das versões do projeto e da biblioteca Maven, consulte o artigo [Criar ambiente](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
+A partir da versão de janeiro, você pode criar código com o Java 21 e Java 17. Você obtém acesso a novos recursos, como correspondência de padrões, classes lacradas e várias melhorias de desempenho. Para obter as etapas de configuração, incluindo a atualização das versões do projeto e da biblioteca Maven, consulte o artigo [Ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
-O Java 21 **runtime** de maior desempenho será implantado automaticamente quando uma compilação Java 17 ou 21 for detectada. No entanto, também recomendamos a opção pelo tempo de execução do Java 21 para ambientes criados com o Java 11, enviando um email para [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Saiba mais sobre [requisitos de tempo de execução do Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+O Java 21 **runtime** de maior desempenho é implantado automaticamente quando uma compilação Java 17 ou 21 é detectada. However, Adobe also recommends opting into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Saiba mais sobre [requisitos de tempo de execução do Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 >[!IMPORTANT]
 >
-> O Java 21 **runtime** foi implantado em seus ambientes dev/RDE em fevereiro; ele será aplicado em seus ambientes de preparo/produção em **28 e 29 de abril**. Observe que o **código de construção** com Java 21 (ou Java 17) é independente do tempo de execução do Java 21 — você deve tomar etapas explicitamente para criar o código com Java 21 (ou Java 17).
+> O Java 21 **runtime** foi implantado em seus ambientes dev/RDE em fevereiro; ele será aplicado em seus ambientes de preparo/produção em **28 e 29**. Observe que o **código de construção** com Java 21 (ou Java 17) é independente do tempo de execução do Java 21 — você deve tomar etapas explicitamente para criar o código com Java 21 (ou Java 17).
 
 ### Encaminhamento de logs do AEM para mais destinos - Programa Beta {#log-forwarding-earlyadopter}
 
@@ -102,6 +111,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 A computação Edge aproxima o processamento de dados do navegador, o que traz benefícios, inclusive latência reduzida. A Adobe gostaria de saber se você acha que essa tecnologia é útil para o AEM Publish Delivery e para projetos Edge Delivery Services. Além disso, informe-nos sobre o que você planeja usar como entrada no roteiro de produtos.
 
 Alguns casos de uso possíveis:
+
 * Autenticação com um IdP para portar o acesso ao conteúdo
 * Renderização de conteúdo dinâmico (personalizado, localizado) com base na geolocalização, tipo de dispositivo, atributos do usuário etc.
 * Manipulação avançada de imagem
@@ -115,7 +125,7 @@ Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@a
 
 Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas ao criar projetos do Adobe Developer Console.
 
-Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra a configuração e o uso.
+Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustra a configuração e o uso.
 
 Especificamente, os endpoints de API listados abaixo estão disponíveis como parte de um programa de adoção antecipada. Se estiver interessado, envie um email para [aem-apis@adobe.com](mailto:aem-apis@adobe.com) descrevendo como você pretende usá-los.
 
@@ -132,7 +142,10 @@ Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Di
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0).
+
+<!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
+(https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
 
 ## Cloud Manager {#cloud-manager}
 
