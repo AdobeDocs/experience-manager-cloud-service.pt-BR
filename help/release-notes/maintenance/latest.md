@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 96084c84c45af54b1f152e22b8331f85dc6b583f
+source-git-commit: 3fb9e633da6269b5b9847a825951746ddeb532f9
 workflow-type: tm+mt
-source-wordcount: '1501'
-ht-degree: 7%
+source-wordcount: '1589'
+ht-degree: 6%
 
 ---
 
@@ -67,6 +67,10 @@ A ativação de recursos do 2025.4.0 fornecerá o conjunto completo de recursos 
 * SITES-24907: Edge Delivery com Universal Editor: suporte à publicação do Assets em vários sites para casos de uso do MSM (acesso antecipado).
 * SITES-27956: Edge Delivery com Universal Editor: melhore a taxa de transferência de publicação (acesso antecipado).
 * SITES-27956: Edge Delivery com Universal Editor: melhore o tratamento de erros para publicação no Edge Delivery Services (acesso antecipado).
+* SITES-29602: CIF: remoção do uso de goiaba no core-CIF-components-core.
+* SITES-25785: CIF: adição da seleção de variante de produto para o tipo de dados de referência de produto CIF.
+* SITES-26392: CIF[Experimental]: JSON+LD em Componentes principais do CIF em PDPs.
+* SITES-21278: CIF[Experimental]: capacidade da CIF de limpar o cache.
 
 ### Problemas corrigidos {#fixed-issues-20133}
 
@@ -111,10 +115,13 @@ A ativação de recursos do 2025.4.0 fornecerá o conjunto completo de recursos 
 * SITES-29363: o botão Redefinir live copy não está funcionando para a hierarquia de conteúdo da live copy aninhada.
 * SITES-29369: Problema do evento Assets no AIO | Acionamento Incorreto De Eventos Publicados/Não Publicados Da Página.
 * SITES-29972: as ações Delete e Rename às vezes produzem comentários de fluxo de trabalho falsos.
+* SITES-24631: CIF: problema de pesquisa no campo do produto.
+* SITES-24902: CIF: o formato de URL do produto não funciona como esperado para #variant_sku.
+* SITES-29191: CIF: não é possível adicionar mais de 20 SKUs ao componente de lista de produtos.
 
 ### Problemas conhecidos {#known-issues-20133}
 
-Nenhum.
+* SITES-30727: arrastar e soltar pode falhar para subcomponentes dentro do editor do AEM.
 
 ### Recursos e APIs obsoletos {#deprecated-20133}
 
