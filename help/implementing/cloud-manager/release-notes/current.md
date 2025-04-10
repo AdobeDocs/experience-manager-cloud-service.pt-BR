@@ -1,68 +1,92 @@
 ---
-title: Notas de versão do Cloud Manager 2025.3.0 no Adobe Experience Manager as a Cloud Service
-description: Saiba mais sobre o lançamento do Cloud Manager 2025.3.0 no AEM as a Cloud Service.
+title: Notas de versão do Cloud Manager 2025.4.0 no Adobe Experience Manager as a Cloud Service
+description: Saiba mais sobre o lançamento do Cloud Manager 2025.4.0 no AEM as a Cloud Service.
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 663234640f16e6aa653251399751abf5daa17f82
+source-git-commit: 75afe77aa52c4c308dc1a611e4ce544a9c9c3da2
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 13%
+source-wordcount: '814'
+ht-degree: 31%
 
 ---
 
-# Notas de versão do Cloud Manager 2025.3.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notas de versão do Cloud Manager 2025.4.0 no Adobe Experience Manager as a Cloud Service {#release-notes}
 
 <!-- https://wiki.corp.adobe.com/display/DMSArchitecture/Cloud+Manager+2025.03.0+Release -->
 
-Saiba mais sobre o lançamento do Cloud Manager 2025.3.0 no AEM (Adobe Experience Manager) as a Cloud Service.
+Saiba mais sobre o lançamento do Cloud Manager 2025.4.0 no AEM (Adobe Experience Manager) as a Cloud Service.
 
 
 Consulte também as [notas de versão atuais do Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Datas de lançamento {#release-date}
 
-A data de lançamento do Cloud Manager 2025.3.0 no AEM as a Cloud Service é quinta-feira, 13 de março de 2025.
+A data de lançamento do Cloud Manager 2025.4.0 no AEM as a Cloud Service é quinta-feira, 10 de abril de 2025.
 
-A próxima versão está planejada para sexta-feira, 10 de abril de 2025.
+A próxima versão está planejada para sexta-feira, 8 de maio de 2025.
 
 ## Novidades {#what-is-new}
 
-* **Executar vários pipelines**
+* **(UI) Visibilidade de implantação aprimorada**
 
-  A capacidade de executar vários pipelines simultaneamente foi introduzida na página Pipelines. Os usuários devem selecionar pelo menos um pipeline, mas não mais de dez. Próximo ao canto superior direito na página Pipelines, clique em **Executar selecionados (x)**. Uma caixa de diálogo modal é exibida, listando todos os pipelines que não podem ser iniciados. Clique em **Executar** para iniciar todos os pipelines válidos.
+  A página de detalhes de execução do pipeline no Cloud Manager agora mostra uma mensagem de status (&quot;*Aguardando - outra atualização em andamento*&quot;) quando uma implantação está aguardando a conclusão de outra implantação. Esse fluxo de trabalho facilita a compreensão do sequenciamento durante a implantação do ambiente.  <!-- CMGR-66890 -->
 
-  ![Caixa de diálogo Executar pipelines selecionados](/help/implementing/cloud-manager/release-notes/assets/run-selected-pipelines.png)
+  ![Caixa de diálogo de implantação de desenvolvimento mostrando detalhes e detalhamento](/help/implementing/cloud-manager/release-notes/assets/dev-deployment.png)
 
-  Consulte também [Executar vários pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#run-multiple-pipelines)
+* **(UI) Aprimoramento de validação de domínio**
 
-* **Suporte estendido para versões Node.js**
+  Ao adicionar um domínio, o Cloud Manager agora exibe um erro se o domínio já estiver instalado em uma conta do Fastly: &quot;*O domínio já está instalado em uma conta do Fastly. Remova-o primeiro de lá antes de adicionar ao Cloud Service.*&quot;
 
-  O ambiente de compilação front-end agora oferece suporte às seguintes `Node.js` versões:
+## Programa de adoção antecipada {#early-adoption}
 
-   * 23
-   * 22
-   * 20
+Participe do Programa de adoção antecipada da Cloud Manager para obter acesso exclusivo aos recursos futuros antes do lançamento geral.
 
-  Consulte também [Desenvolver sites com o pipeline de front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md#node-versions). <!-- CMGR-65307 -->
+As seguintes oportunidades de adoção antecipada estão disponíveis atualmente:
 
-<!--
-## Early adoption program {#early-adoption}
+### Traga seu próprio Git: agora com suporte para GitLab e Bitbucket {#gitlab-bitbucket}
 
-Be a part of Cloud Manager's early adoption program and have a chance to test upcoming features. -->
+<!-- BOTH CS & AMS -->
+
+O recurso **Traga seu próprio Git** foi expandido para incluir suporte para repositórios externos, como GitLab e Bitbucket. Esse novo suporte é uma adição ao suporte já existente para repositórios GitHub privados e empresariais. Ao adicionar esses novos repositórios, também é possível vinculá-los diretamente aos seus pipelines. Você pode hospedar esses repositórios em plataformas de nuvem pública ou em sua infraestrutura ou nuvem privada. Essa integração também elimina a necessidade de sincronização constante do código com o repositório da Adobe e oferece a capacidade de validar solicitações de pull antes de mesclá-las em uma ramificação principal.
+
+Os pipelines que usam repositórios externos (exceto os hospedados pelo GitHub) e o **Acionador de implantação** definidos como **Sobre alterações do Git** agora são iniciados automaticamente.
+
+Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+
+![Caixa de diálogo Adicionar repositório](/help/implementing/cloud-manager/release-notes/assets/repositories-add-release-notes.png)
+
+>[!NOTE]
+>
+>Atualmente, as verificações de qualidade do código de solicitação de pull prontas para uso são exclusivas de repositórios hospedados no GitHub, mas uma atualização para estender essa funcionalidade a outros fornecedores Git está em andamento.
+
+Se tiver interesse em testar esse novo recurso e compartilhar o seu feedback, envie um email para [Grp-CloudManager_BYOG@adobe.com](mailto:Grp-CloudManager_BYOG@adobe.com) do seu endereço de email associado à sua Adobe ID. Inclua qual plataforma Git deseja usar e se você está em uma estrutura de repositório privado/público ou empresarial.
+
+### Página inicial do AEM {#aem-home}
+
+A página inicial da AEM apresenta um ponto de partida centralizado para gerenciar conteúdo, ativos e sites no Adobe Experience Manager. Projetada para fornecer uma experiência personalizada, a Página inicial da AEM permite navegar pelo ecossistema da AEM de forma contínua, de acordo com suas funções e metas. Atuando como guia, ele fornece insights importantes e ações recomendadas para ajudar você a atingir seus objetivos com eficiência. Com um layout claro e personalizado, a AEM Home garante acesso rápido a ferramentas essenciais, oferecendo suporte a uma experiência simplificada e eficaz em todos os recursos do AEM.
+
+Disponível para os primeiros usuários, a Página inicial da AEM oferece uma experiência otimizada focada na melhoria dos workflows, na priorização de metas e na entrega de resultados. A aceitação permite influenciar o desenvolvimento da AEM Home, fornecendo feedback que ajuda a moldar seu futuro e aumenta seu valor para toda a comunidade da AEM.
+
+Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para [Grp-AemHome@adobe.com](mailto:Grp-AemHome@adobe.com) a partir do seu endereço de email associado à sua Adobe ID. Certifique-se de incluir as seguintes informações:
+
+* A função que melhor se adapta ao seu perfil: Autor de conteúdo, Desenvolvedor, Proprietário da empresa, Administrador ou Outro (forneça uma descrição).
+* Sua superfície de acesso principal do AEM: AEM Sites, AEM Assets, AEM Forms, Cloud Manager ou Outro (forneça uma descrição).
 
 
 ## Correções de erros
 
-* Correção de **(UI) para atualizações de &#39;Configuração Avançada de Rede&#39; no Cloud Manager**
+* **Problema com certificados sem o campo Nome Comum (CN)**
 
-  Um problema raro que impedia atualizações na **Configuração Avançada de Rede** quando uma notificação de &quot;Atualização disponível&quot; estava presente foi resolvido. Anteriormente, o Cloud Manager bloqueava modificações de configuração, incluindo configurações avançadas de rede, para evitar conflitos durante uma atualização. Os clientes agora podem acionar manualmente a atualização pendente para aplicar as alterações necessárias sem restrições. <!-- CMGR-65913 and CMGR-65788 -->
+  O Cloud Manager não lança mais uma resposta NullPointerException (NPE) e 500 HTTP ao processar certificados EV/OV que não incluem um Nome Comum (CN) no campo Assunto. Os certificados modernos geralmente omitem o CN e, em vez disso, usam o Nome alternativo de requerente (SAN). Essa correção garante que a ausência de CN não cause mais uma falha durante o processo de criação da configuração quando a SAN estiver presente. <!-- CMGR-67548 -->
 
-* Correção de **(UI) para atualizações de lista de permissões de IP presas no estado &quot;Atualizando&quot;**
+* **Problema de verificação de domínio com correspondência de certificado incorreta**
 
-  Um problema raro em que as atualizações de lista de permissões de IP no Cloud Manager permaneciam presas no estado &quot;Atualizando&quot; devido à configuração de domínio ativo duplicada para um ambiente foi resolvido. Anteriormente, os clientes enfrentavam atrasos de processamento indefinidos ao atualizar listas de permissões IP, impedindo os ajustes necessários de acesso à rede. Essa correção garante que as atualizações da lista de permissões IP agora possam ser concluídas com êxito sem travar. <!-- CMGR-65786 -->
+  O Cloud Manager não verifica mais os domínios incorretamente usando certificados errados. Anteriormente, a lógica de validação usava a correspondência baseada em padrões em vez da correspondência exata, o que fazia com que domínios como `should-not-be-verified.example.com` aparecessem como verificados devido a sobreposição com certificados válidos para `example.com`. Essa correção garante que a validação do domínio agora verifique se há correspondências exatas, evitando associações de certificado incorretas. <!-- CMGR-67225 -->
 
+* **Exclusividade imposta para nomes de encaminhamento de portas de Rede Avançada**
 
+  O Cloud Manager agora impõe nomes exclusivos para encaminhamentos de portas de rede avançada. Anteriormente, nomes duplicados eram permitidos, o que poderia gerar conflitos. Essa correção garante que cada entrada de encaminhamento de porta tenha um nome distinto, alinhado às práticas recomendadas para a integridade da configuração de rede. <!-- CMGR-67082 -->
 
 
 <!-- ## Known issues {#known-issues} -->
