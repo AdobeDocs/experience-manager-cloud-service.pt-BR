@@ -4,9 +4,9 @@ description: Saiba como criar modelos do Dynamic Media usando um editor de model
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: a5626c531c4a21b9d88272e2c866721ee7be9aed
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '3050'
 ht-degree: 0%
 
 ---
@@ -33,19 +33,19 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -305,6 +305,41 @@ Edite o template seguindo estas etapas:
 2. Navegue até o local do modelo.
 3. Selecione o template.
 4. Clique em **[!UICONTROL Editar Modelo]**. A tela de modelo exibe o modelo e a lista de todas as suas camadas no painel Camadas. Comece a editar o modelo de acordo com seus requisitos.
+
+## Link Adicionar Chamada para Ação à camada de modelo{#add-CTA-in-dynamic-media-templates}
+
+Transforme qualquer camada de imagem ou texto do modelo do Dynamic Media em um hiperlink adicionando um link do CTA que direciona os usuários para a página de destino. Execute estas etapas para adicionar um link do CTA a uma camada:
+
+1. Navegue até o local do modelo, selecione o modelo e clique em ![editar](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Editar Modelo]**. O modelo é exibido na tela.
+1. Selecione a camada de modelo e [navegue até o painel de propriedades](#edit-or-delete-a-layer) para adicionar um link de CTA a ela.
+1. No painel de propriedades, selecione **[!UICONTROL Adicionar CTA]**, especifique a URL de destino no campo **[!UICONTROL URL]** e clique em **[!UICONTROL Salvar]**.
+   ![adicionar CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+1. Clique em **[!UICONTROL Visualizar]** para visualizar seu modelo e ver seus parâmetros definidos.
+1. Clique em **[!UICONTROL Publicar]** e selecione **[!UICONTROL Sim]** para publicar seu modelo, se não tiver sido publicado anteriormente.
+1. Navegue até a pasta onde este modelo está salvo, selecione este modelo e clique em ![página de detalhes](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Detalhes]**.
+1. Clique em **[!UICONTROL Opções de Cópia]** e selecione **[!UICONTROL Copiar Código de Inserção]**.
+
+   ![copiar código de inserção](/help/assets/assets/copy-options1.png){width="300" align="center"}
+
+   Veja a seguir um exemplo do Código incorporado:
+
+   ```
+    <div class="adobe-dynamicmedia-template-embed-container">
+    <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
+    <map name="adobe-dynamicmedia-template-map">
+    <area shape="rect" coords="417,-60,817,340" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    <area shape="rect" coords="6,206.57,129,231.43" href="https://business.adobe.com/products.html" alt="Layer with CTA" title="https://business.adobe.com/products.html" target="_blank">
+    </map>
+    </div>
+   ```
+
+1. Adicione o código incorporado copiado ao arquivo HTML do site e execute-o no navegador para exibir o modelo.
+
+Clique no elemento CTA no modelo para navegar até a página de destino.
+
+Assista a este vídeo passo a passo para saber como adicionar um link do CTA a uma camada de modelo.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457577)
 
 ## Pontos importantes a observar {#important-points-to-note}
 
