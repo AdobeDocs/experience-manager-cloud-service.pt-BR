@@ -4,7 +4,7 @@ description: Saiba como criar modelos do Dynamic Media usando um editor de model
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: a5626c531c4a21b9d88272e2c866721ee7be9aed
+source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 0%
@@ -323,7 +323,7 @@ Transforme qualquer camada de imagem ou texto do modelo do Dynamic Media em um h
 
    Veja a seguir um exemplo do Código incorporado:
 
-   ```
+   ```json
     <div class="adobe-dynamicmedia-template-embed-container">
     <img id="adobe-dynamicmedia-template-image" src="http://s7ap1.scene7.com/is/image/abcd/dm-template-cta-v2?wid=800&hei=300&qlt=100&fit=constrain&cache=off" alt="adobe dynamicmedia template" usemap="#adobe-dynamicmedia-template-map" width="800" height="300">
     <map name="adobe-dynamicmedia-template-map">
