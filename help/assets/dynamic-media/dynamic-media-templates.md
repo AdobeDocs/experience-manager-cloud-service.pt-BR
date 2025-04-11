@@ -4,7 +4,7 @@ description: Saiba como criar modelos do Dynamic Media usando um editor de model
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 3d0e3430b886cefb9b18188641483d23ce66d442
+source-git-commit: 362bbcf872a37781dfa849b703425f49c30660ac
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 0%
@@ -313,13 +313,15 @@ Transforme qualquer camada de imagem ou texto do modelo do Dynamic Media em um h
 1. Navegue até o local do modelo, selecione o modelo e clique em ![editar](/help/assets/assets/edit-pen-icon.svg) **[!UICONTROL Editar Modelo]**. O modelo é exibido na tela.
 1. Selecione a camada de modelo e [navegue até o painel de propriedades](#edit-or-delete-a-layer) para adicionar um link de CTA a ela.
 1. No painel de propriedades, selecione **[!UICONTROL Adicionar CTA]**, especifique a URL de destino no campo **[!UICONTROL URL]** e clique em **[!UICONTROL Salvar]**.
-   ![adicionar CTA](/help/assets/assets/add-cta.png){width="300" align="center"}
+
+![adicionar CTA](/help/assets/assets/add-cta.png)
+
 1. Clique em **[!UICONTROL Visualizar]** para visualizar seu modelo e ver seus parâmetros definidos.
 1. Clique em **[!UICONTROL Publicar]** e selecione **[!UICONTROL Sim]** para publicar seu modelo, se não tiver sido publicado anteriormente.
 1. Navegue até a pasta onde este modelo está salvo, selecione este modelo e clique em ![página de detalhes](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Detalhes]**.
 1. Clique em **[!UICONTROL Opções de Cópia]** e selecione **[!UICONTROL Copiar Código de Inserção]**.
 
-   ![copiar código de inserção](/help/assets/assets/copy-options1.png){width="300" align="center"}
+   ![copiar código de inserção](/help/assets/assets/copy-options1.png)
 
    Veja a seguir um exemplo do Código incorporado:
 
