@@ -4,10 +4,10 @@ description: Entenda a interface e a navegação no [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: f4d0364439d704d4f5611b5fa2f46428048005b0
 workflow-type: tm+mt
 source-wordcount: '1026'
-ht-degree: 70%
+ht-degree: 72%
 
 ---
 
@@ -33,19 +33,19 @@ ht-degree: 70%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -113,7 +113,7 @@ Para visualizar um ativo, selecione-o e clique em [!UICONTROL Detalhes] ![ícone
 
 ![Visualizar um ativo](/help/assets/assets/navigate-file-folder-dm.png)
 
-**A**: retornar à pasta atual ou ao resultado da pesquisa atual no repositório **B**: Nome e formato do arquivo que você está visualizando **C**: Atribuir tarefas **D**: Metadados avançados **E**: Palavras-chave e marcas inteligentes **F**: Comentar e anotar **G**: Exibir tarefas relacionadas ao Ativo selecionado **H**: Exibir e gerenciar versões **I**: Exibir da imagem **J**: Editar imagem **K**: Exibir representações do Dynamic Media, incluindo o Recorte inteligente e o Dynamic Media com representações de recursos OpenAPI. **L**: Metadados básicos **M**: Metadados avançados **N**: Palavras-chave e marcas inteligentes **O**: Prosseguir para o ativo anterior ou seguinte na pasta atual sem voltar para a pasta **P**: Visualizar mais de perto. Zoom, tela inteira e outras opções.
+**A**: retornar à pasta atual ou ao resultado da pesquisa atual no repositório **B**: Nome e formato do arquivo que você está visualizando **C**: Atribuir tarefas **D**: Metadados avançados **E**: Palavras-chave e marcas inteligentes **F**: Comentar e anotar **G**: Exibir tarefas relacionadas ao Ativo selecionado **H**: [Exibir e gerenciar versões](/help/assets/manage-organize-assets-view.md#versions-of-assets) **I**: Exibir representações da imagem **J**: Editar imagem **K**: Exibir representações do Dynamic Media, incluindo o Recorte Inteligente e o Dynamic Media com representações de recursos OpenAPI. **L**: Metadados básicos **M**: Metadados avançados **N**: Palavras-chave e marcas inteligentes **O**: Prosseguir para o ativo anterior ou seguinte na pasta atual sem voltar para a pasta **P**: Visualizar mais de perto. Zoom, tela inteira e outras opções.
 
 Você também pode visualizar vídeos.
 

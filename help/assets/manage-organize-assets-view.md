@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 70%
+source-wordcount: '1734'
+ht-degree: 62%
 
 ---
 
@@ -34,19 +34,19 @@ ht-degree: 70%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -135,17 +135,37 @@ O [!DNL Assets view] realiza o controle de versão dos ativos quando eles são c
 
   ![Opção de fazer upload de uma nova versão de um ativo do histórico de versões](assets/view-asset-versions2.png)
 
-### Exibir versões de um ativo {#view-versions}
+### Exibir e comparar versões de um ativo {#view-and-compare-versions}
 
-Ao fazer upload de uma cópia duplicada ou modificada de um ativo, você pode criar suas versões. O controle de versão permite revisar ativos históricos e reverter para uma versão anterior, caso necessário.
+Faça upload de uma cópia duplicada ou modificada de um ativo, para criar suas versões. O controle de versão permite rastrear as modificações em um ativo ao longo do tempo e reverter para uma versão anterior, se necessário.
 
-Para exibir as versões, abra a pré-visualização de um ativo e clique em **[!UICONTROL Versões]** ![Ícone Versões](assets/do-not-localize/versions-clock-icon.png) na barra lateral direita. Para visualizar uma versão específica, selecione-a. Para reverter para ela, clique em **[!UICONTROL Tornar a mais recente]**.
+Para exibir e comparar versões:
 
-Você também pode criar versões na linha do tempo de versões. Selecione a versão mais recente, clique em **[!UICONTROL Nova versão]** e faça upload de uma nova cópia do ativo a partir do sistema de arquivos local.
+1. Navegue até a página de detalhes do ativo.
+1. Clique em ![Versões](/help/assets/assets/Clock.svg) no painel direito para exibir o painel **[!UICONTROL Versões]**. As miniaturas do ativo original e suas versões carregadas são exibidas nesse painel.
+1. Selecione uma versão no painel para visualizá-la na área de visualização.
+1. Selecione qualquer versão diferente da mais recente e clique em **[!UICONTROL Tornar a mais recente]** para defini-la como a versão mais recente.
+1. Arraste o controle deslizante na visualização para a esquerda e para a direita para ver rapidamente a versão selecionada de uma imagem e sua versão mais recente em uma única visualização. Isso permite comparar rapidamente a versão selecionada da imagem com sua versão mais recente.
 
-![Exibir versões de um ativo](assets/view-asset-versions1.png)
+   >[!NOTE]
+   >
+   > A comparação de versões é habilitada somente para ativos de imagem.
 
-*Figura: visualizar versões de um ativo, reverter para uma versão anterior ou fazer upload de outra nova versão.*
+   ![comparar versões do ativo](/help/assets/assets/version-compare2.png)
+
+<!-- old content
+To view versions, open an asset's preview and click **[!UICONTROL Versions]** ![Versions icon](assets/do-not-localize/versions-clock-icon.png) from the right sidebar. To preview a specific version, select it. To revert to it, click **[!UICONTROL Make Latest]**. 
+-->
+
+Selecione a versão mais recente e clique em **[!UICONTROL Nova versão]** para carregar uma nova cópia do ativo a partir do sistema de arquivos local para criar uma versão do ativo.
+
+<!-- old content
+You can also create versions from the versions timeline. Select the latest version, click **[!UICONTROL New Version]**, and upload a new copy of the asset from your local file system.
+
+![View versions of an asset](assets/view-asset-versions1.png)
+
+*Figure: View versions of an asset, revert to a previous version, or upload another new version.* 
+-->
 
 ## Gerenciar o status do ativo {#manage-asset-status}
 
