@@ -4,7 +4,7 @@ description: Saiba como declarar redirecionamentos 301 ou 302 sem acesso aos pip
 feature: Dispatcher
 role: Admin
 exl-id: dacb1eda-79e0-4e76-926a-92b33bc784de
-source-git-commit: aee0aef912fd4c94c06251aa4424200a6ffd7ebc
+source-git-commit: 7a543c8fe63166ef34999f23ce9b05de8e8b0e9f
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Os cenários incluem:
 * Uma página do HTML renomeada.
 * Otimização de SEO.
 
-A AEM as a Cloud Service oferece [várias abordagens](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) para implementar redirecionamentos do lado do cliente, mas a estratégia descrita neste artigo, redirecionamentos sem pipeline, é uma boa escolha quando:
+A AEM as a Cloud Service oferece [várias abordagens](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) para implementar redirecionamentos do lado do servidor, mas a estratégia descrita neste artigo, redirecionamentos sem pipeline, é uma boa escolha quando:
 
 * As pessoas que mantêm os redirecionamentos são usuários empresariais, que não têm o acesso necessário para confirmar alterações de arquivo no controle de origem ou a possibilidade de executar um pipeline de configuração no nível da Web do Cloud Manager.
 * O número de redirecionamentos varia de alguns a dezenas de milhares.

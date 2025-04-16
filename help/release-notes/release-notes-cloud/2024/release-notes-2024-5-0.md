@@ -3,7 +3,8 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2024.5.0.
 feature: Release Information
 role: Admin
-source-git-commit: d76f27e2b85cefe5e83f790a91466e94a619a077
+exl-id: 7b7a27f9-ba57-4eb2-9fcb-653b5213af04
+source-git-commit: a8c74573134597e83c2720de3b2a0f75ff7896a2
 workflow-type: tm+mt
 source-wordcount: '1949'
 ht-degree: 11%
@@ -42,9 +43,9 @@ Assista ao vídeo de visão geral da versão de maio de 2024, que exibe um resum
 
 ### Novos recursos no Sites {#sites-new-features}
 
-#### Integração de tradução com o AEM {#translation-integration}
+#### Integração de tradução AEM {#translation-integration}
 
-As ações e os fluxos de trabalho de tradução de conteúdo agora acionam eventos para permitir o rastreamento de etapas e estados de processo relevantes a partir de aplicativos externos. Os eventos a seguir estão sendo gerados. Os usuários poderão se inscrever em eventos usando a Adobe Developer Console.
+Ações e workflows de tradução de conteúdo agora acionam eventos para permitir rastreamento etapas de processo relevantes e estados de aplicativos externos. Os seguintes eventos estão sendo gerados. Os usuários poderão se inscrever em eventos usando a Adobe Developer Console.
 
 * `TRANSLATION_JOB_CREATED`
 * `TRANSLATION_JOB_CONTENT_ADDITION_STARTED`
@@ -63,38 +64,38 @@ As ações e os fluxos de trabalho de tradução de conteúdo agora acionam even
 * **[O Serviço de Dados de Monitoramento de Uso Real (RUM) agora está em disponibilidade geral](/help/implementing/cloud-manager/content-requests.md#real-user-monitoring-for-aem-as-a-cloud-service)**, permitindo a coleta de dados no lado do cliente para o AEM as a Cloud Service.
 O serviço de monitoramento de uso real, a coleção do lado do cliente, oferece um reflexo mais preciso das interações, garantindo uma medida confiável do envolvimento do site. Ele permite que os clientes com insights avançados sobre o tráfego e o desempenho da página. É uma ótima oportunidade para saber mais sobre o desempenho da sua página e obter insights para melhorá-la.
 
-#### Criação de AEM para Edge Delivery Services {#edge-enhancements}
+#### Criação no AEM para Edge Delivery Services {#edge-enhancements}
 
-Estabilidade aprimorada e várias melhorias para uma melhor experiência de criação.
+Aprimoramentos na estabilidade e em vários aprimoramentos para um melhor experiência de criação.
 
-### Programa de adoção antecipada {#sites-early-adopter}
+### Programa de primeiros adotantes {#sites-early-adopter}
 
-**Gerar Variações**
+**Gerar variações**
 
-Aproveite a GenAI por meio do novo recurso AEM, [gerar variações](/help/generative-ai/generate-variations.md), acessível agora no Cloud Service. Gerar variações ajuda a gerar e dimensionar a criação de conteúdo por meio do uso de IA gerativa. Entre em contato com a equipe de conta do Adobe para consideração no programa.
+Aproveite o GenAI por meio do novo recurso da AEM, [gere variações](/help/generative-ai/generate-variations.md), acessível agora em Cloud Service. A geração de variações ajuda a gerar e dimensionar conteúdo criação por meio do uso de IA generativa. Entre em contato com o Adobe Systems conta conta equipe para obter consideração no programa.
 
-**Navegação de ativos no Console de Fragmentos de Conteúdo**
+**Navegação de ativos no Console de fragmento do conteúdo**
 
-Os autores de conteúdo agora podem navegar, visualizar e realizar ações em imagens e outros ativos sem precisar sair do Console de fragmentos de conteúdo.
+Os autores de conteúdo agora podem navegar, visualização e realizar ações em imagens e em outras ativos sem precisar sair do Console de fragmentos de conteúdo.
 
 ![Navegação de ativos](/help/sites-cloud/administering/content-fragments/assets/cf-console-assets-browse.png)
 
-Interessado em experimentar o recurso e compartilhar feedback? Envie um email para aemcs-headless-adopter@adobe.com a partir de sua ID de email oficial para saber mais sobre o programa dos participantes antecipados.
+Interessado em experimentar o recurso e compartilhar feedback? Envie um e-mail para aemcs-headless-adopter@adobe.com da sua ID de email oficial para saber mais sobre o programa do adotador precoce.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Novos recursos na exibição do Administrador {#admin-view-new-features}
+### Novo recursos no Admin visualização {#admin-view-new-features}
 
-* WebM agora é um arquivo de saída compatível no perfil de processamento para vídeo.
+* O WebM agora é um arquivo de saída compatível no processamento de perfil para vídeo.
 * O MP4 agora é compatível com a integração nativa do AEM no Express (importação e exportação).
 
 ### Novos recursos na visualização de ativos {#assets-view-new-features}
 
-**Ativos do Publish para AEM e Dynamic Media**
+**Publicar ativos no AEM e no Dynamic Media**
 
-O Experience Manager Assets agora permite [publicar ativos no Experience Manager e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md) rapidamente usando o modo de exibição Assets sem alternar para o modo de exibição Admin. Você pode publicar ativos ao fazer upload, navegar e pesquisar ativos.
+O Experience Manager Assets agora permite que você [publique ativos no Experience Manager e no Dynamic Media](/help/assets/publish-assets-to-aem-and-dm.md) rapidamente usando a exibição do Assets sem alternar para a exibição do Administrador. Você pode publicar ativos ao fazer upload, navegar e pesquisar ativos.
 
-![verificar status da publicação1](/help/assets/assets/check-publish-status1.png)
+![verificar publicar status1](/help/assets/assets/check-publish-status1.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -104,47 +105,47 @@ O Experience Manager Assets agora permite [publicar ativos no Experience Manager
 
 -->
 
-### Novos recursos de pré-lançamento no AEM Forms {#forms-new-prerelease-features}
+### Novo recursos de pré-lançamento no AEM Forms {#forms-new-prerelease-features}
 
-#### Editor de regras visuais aprimorado para Forms adaptável baseado em componentes principais
+#### Aprimoramento do editor da regra visual para as Componente adaptativas principais baseadas em Forms
 
-Esta versão traz uma atualização significativa para o editor visual de regras para formulários adaptáveis com base em componentes principais. Agora você pode:
+Esta versão traz uma atualização significativa para o visual regra editor para formulários adaptáveis com base nos componentes principais. Agora você pode:
 
-* Crie regras no editor de Regras Visuais para [substituir mensagens de êxito/falha no envio de formulário padrão](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers).
+* Criar regras na Regra visual editor para [substituir as mensagens](/help/forms/create-and-use-custom-functions.md#use-case-override-form-submission-success-and-error-handlers) de sucesso/falha do envio de formulário padrão.
 
-* No Editor de regras do Forms adaptável, foi adicionada a capacidade de [selecionar diferentes tipos de campos para a operação WHEN](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when).
+* No editor Adaptive Forms Rule, foi adicionada a [capacidade de selecionar tipos diferentes de campos para a operação](/help/forms/rule-editor-core-components.md#allowed-multiple-fields-in-when) WHEN.
 
-* Um autor de formulário agora pode aplicar funções personalizadas a [pré-processar dados antes do envio](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server).
+* Um autor do formulário agora pode aplicar funções personalizadas para [pré-processar dados antes do envio](/help/forms/create-and-use-custom-functions.md#use-case-submit-altered-data-to-the-server).
 
-* Use a funcionalidade [**Salvar como Rascunho**](/help/forms/save-core-component-based-form-as-draft.md) para salvar formulários parcialmente concluídos para envio posterior. Isso é útil em cenários nos quais os usuários precisam interromper o preenchimento de um formulário e retornar a ele posteriormente.
+* Use a [**Salvar como Funcionalidade de rascunho**](/help/forms/save-core-component-based-form-as-draft.md) para salvar formulários parcialmente concluídos para envio posterior. Isso é útil em cenários em que os usuários precisam interromper o preenchimento de um formulário e voltar para ele mais tarde.
 
 
 
 ### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
-O programa de acesso antecipado do AEM Forms oferece uma oportunidade única para você obter acesso exclusivo a inovações de ponta antes de qualquer outra pessoa e ajudar a moldar seu desenvolvimento. O programa oferece acesso a várias inovações.
+O AEM Forms Programa de Acesso Antecipado programa oferece uma oportunidade única a você para obter acesso exclusivo a inovações de ponta antes de qualquer outra pessoa, e ajudar a moldar seu desenvolvimento. O programa oferece acesso a várias inovações.
 
-Estas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
+Este notas de versão lista as inovações entregues no lançamento atual. Para obter a lista completa das inovações disponíveis no Programa de Acesso Antecipado, consulte [AEM Forms documentação](/help/forms/early-access-ea-features.md) do Programa de Acesso Antecipado.
 
-#### Métodos aprimorados de proteção de bot
+#### Métodos de proteção bot aprimorados
 
 A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas soluções populares do CAPTCHA: Cloud Turnstile e hCaptcha. Isso adiciona ao já disponível Google reCAPTCHA, fornecendo aos usuários mais opções e flexibilidade na proteção de seus formulários contra bots e envios de spam.
 
-* **Borboleta da Nuvem**: este CAPTCHA sem atrito verifica os usuários através de um desafio simples que não requer interação explícita. Ele se integra perfeitamente aos seus formulários, melhorando a experiência do usuário.
-* **hCaptcha**: este CAPTCHA com foco na privacidade oferece uma alternativa simples com foco na privacidade de dados. O objetivo é obter um equilíbrio entre a segurança e a experiência do usuário.
-* **Google reCAPTCHA**: a AEM Forms continua a oferecer suporte ao reCAPTCHA v2 e ao reCAPTCHA Enterprise, oferecendo uma solução confiável e bem estabelecida.
+* **Cloudflare Turnstile**: Esse CAPTCHA sem atritos verifica os usuários por meio de um desafio simples que não requer interação explícita. Ele se integra perfeitamente aos seus formulários, melhorando o experiência do usuário.
+* **hCaptcha**: Este CAPTCHA focado na privacidade oferece uma alternativa usuário com um focalizar sobre privacidade de dados. Ele visa encontrar um equilíbrio entre segurança e experiência do usuário.
+* **Google reCAPTCHA**: AEM Forms continuam a oferecer suporte ao reCAPTCHA v2 e ao reCAPTCHA Enterprise, oferecendo uma solução confiável e bem estabelecida.
 
-Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
+Oferecendo várias opções de CAPTCHA, AEM Forms capacitá-lo a selecionar a solução que se alinha melhor às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Serviço do Forms
 
-O serviço Forms gera PDF forms interativos para a captura de dados. Ele também pode ser usado para importar ou exportar dados de e para um formulário PDF interativo existente e validar os dados enviados. Veja um detalhamento de suas funcionalidades:
+O serviço do Forms gera PDF forms interativo para captura de dados. Ele também pode ser usado para importar ou exportar dados de e para um formulário interativo existente do PDF e validar os dados enviados. Veja um detalhamento de suas funcionalidades:
 
-* **Renderização do Forms**: gere um formulário PDF interativo a partir de um modelo criado com o AEM Forms Designer e, opcionalmente, dados XML. Isso produz essencialmente um formulário PDF preenchível opcionalmente pré-preenchido com dados.
-* **Extração e Importação de Dados**: importe dados para um formulário PDF existente, bem como extraia dados de um formulário PDF preenchido. Os formatos de dados XDP e XML são compatíveis, e a importação para PDF forms não XFA (também conhecida como AcroForms) também é compatível com dados FDF e XFDF.
+* **Renderização do Forms**: gere um formulário interativo do PDF a partir de um modelo criado com o AEM Forms Designer e, opcionalmente, dados XML. Isso produz essencialmente um formulário preenchível do PDF opcionalmente pré-preenchido com dados.
+* **Extração e Importação de Dados**: importe dados para um formulário existente do PDF, bem como extraia dados de um formulário preenchido do PDF. Os formatos de dados XDP e XML são compatíveis, e a importação para PDF forms não XFA (também conhecida como AcroForms) também é compatível com dados FDF e XFDF.
 * **Validação de Dados**: valide os dados enviados, no formato XDP ou XML, em relação a um modelo criado com o AEM Forms Designer.
 
 >[!IMPORTANT]
@@ -154,42 +155,42 @@ O serviço Forms gera PDF forms interativos para a captura de dados. Ele também
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Suporte a credenciais de servidor para servidor do OAuth para integrações de AEM com outras soluções de Adobe {#S2S-OAuth-credentials}
+### Suporte a credenciais de servidor para servidor do OAuth para integrações da AEM com outras soluções da Adobe {#S2S-OAuth-credentials}
 
-O Adobe Developer Console é usado para gerar credenciais para acessar várias APIs. Um desses tipos de credenciais, as credenciais da Conta de serviço (JWT), foi descontinuado em favor das credenciais de servidor para servidor do OAuth, que a AEM Cloud Service agora oferece suporte para integrações com outras soluções de Adobe, como Adobe Analytics e Adobe Target.
+O Adobe Developer Console é usado para gerar credenciais para acessar várias APIs. Um desses tipos de credenciais, as credenciais da Conta de serviço (JWT), foi descontinuado em favor das credenciais de servidor para servidor do OAuth, que o AEM Cloud Service agora oferece suporte para integrações com outras soluções da Adobe, como Adobe Analytics e Adobe Target.
 
-[Leia sobre a descontinuação](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) e [saiba como usar a interface do autor do AEM](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) para configurar integrações com outras soluções de Adobe.
+[Leia sobre a descontinuação](/help/security/jwt-credentials-deprecation-in-adobe-developer-console.md) e [saiba como usar as interface de criação de AEM](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) para configurar integrações com outras Adobe Systems soluções.
 
-### Pico de tráfego em alertas de origem {#traffic-spike-origin}
+### Pico de tráfego nos alertas de origem {#traffic-spike-origin}
 
-[Receba notificações proativas](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert) por meio do Centro de Ações quando os padrões de tráfego na origem indicarem um ataque de DDoS, permitindo que você investigue e configure regras de filtro de tráfego.
+[Receba notificações proativas](/help/security/traffic-filter-rules-including-waf.md#traffic-spike-at-origin-alert) por meio do Centro de ações quando tráfego padrões no origem são indicativos de um ataque DDoS, permitindo que você investigue e configure tráfego regras de filtro.
 
 ### Novos recursos para RDEs {#RDE-new-features}
 
-Os [Ambientes de desenvolvimento rápido (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) permitem que os desenvolvedores implantem, revisem e testem rapidamente as alterações na nuvem. Vários novos recursos serão lançados durante o mês de junho. Também convidamos você a se envolver diretamente com a engenharia de Adobe no [canal RDE Discord](https://discord.com/channels/1131492224371277874/1245304281184079872).
+Os [Ambientes de desenvolvimento rápido (RDEs)](/help/implementing/developing/introduction/rapid-development-environments.md) permitem que os desenvolvedores implantem, revisem e testem rapidamente as alterações na nuvem. Vários novos recursos serão lançados durante o mês de junho. Também convidamos você a se envolver diretamente com a engenharia da Adobe no [canal RDE Discord](https://discord.com/channels/1131492224371277874/1245304281184079872).
 
 
 #### Suporte RDE para código front-end usando temas de site e modelos de site {#rde-frontend}
 
 [Os RDEs agora oferecem suporte ao código front-end](/help/implementing/developing/introduction/rapid-development-environments.md#deploying-themes-to-rde) com base em [temas de site](/help/sites-cloud/administering/site-creation/site-themes.md) e [modelos de site](/help/sites-cloud/administering/site-creation/site-templates.md), para participantes iniciais. Com RDEs, isso é feito usando uma diretiva de linha de comando, em vez de um [pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md).
 
-#### Logon aprimorado para RDEs {#rde-logging}
+#### Aprimoramento de fazendo logon para RDEs {#rde-logging}
 
-Ao depurar o código em um RDE, os desenvolvedores agora podem [configurar e transmitir logs de forma mais produtiva](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging), usando a linha de comando e sem modificar as propriedades OSGI no controle de versão. Os recursos incluem:
+Ao depurar o código em um RDE, os desenvolvedores agora [podem configurar e transmitir logs de forma](/help/implementing/developing/introduction/rapid-development-environments.md#rde-logging) mais produtiva, usando a linha de comando e sem modificar as propriedades OSGI no controle da versão. Os recursos incluem:
 
-* declaração de níveis de log em um nível por pacote ou classe
-* personalização do formato de saída de log
-* transmissão de vários logs em paralelo
+* declarando níveis de log em um por pacote ou nível de classe
+* como personalizar o formato de saída de log
+* transmissão de vários logs ao mesmo tempo
 
-#### Aprimoramentos da CLI do RDE {#rde-cli-enhancements}
+#### Aprimoramentos na CLI da RDE {#rde-cli-enhancements}
 
 A interface de linha de comando do RDE tem alguns novos recursos que melhoram a experiência do desenvolvedor:
 
-* [o comando de instalação é interativo](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), facilitando a escolha entre organizações, programas e ambientes. Agora também é possível substituir esses valores na linha de comando.
-* [modo silencioso](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) para uma saída menos detalhada.
-* [modo json](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) para saída útil quando invocado programaticamente.
+* [o comando de configuração é interativo](/help/implementing/developing/introduction/rapid-development-environments.md#installing-the-rde-command-line-tools-interactive), facilitando a escolha entre organizações, programas e ambientes. Agora também é possível substituir esses valores na linha de comando.
+* [modo](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) silencioso para uma saída menos detalhada.
+* [modo](/help/implementing/developing/introduction/rapid-development-environments.md#global-flags) json para saída útil quando invocado programaticamente.
 
-### Novas notificações da Central de Ações {#actions-center-notifications}
+### Notificações do centro de ações do Novo {#actions-center-notifications}
 
 O [Centro de Ações](/help/operations/actions-center.md) envia notificações por email quando ocorrem incidentes importantes, ou se notarmos algo sobre seu código ou configuração, onde você deve realizar uma ação proativa. Existem três novos tipos de notificações:
 
@@ -197,46 +198,46 @@ O [Centro de Ações](/help/operations/actions-center.md) envia notificações p
 * uso de um formato obsoleto de Mapeamento de usuário de serviço
 * um possível ataque de DDoS está em andamento
 
-### Programas de adoção antecipada {#foundation-early-adopter}
+### Programas de adoção antecipado {#foundation-early-adopter}
 
-Email **<aemcs-cdn-config-adopter@adobe.com>**, indicando em qual dos primeiros programas abaixo você está interessado.
+Email **<aemcs-cdn-config-adopter@adobe.com>**, indicando em quais programas de inicialização você está interessado.
 
-#### Limpar conteúdo na CDN com uma chave de API de autoatendimento (Early Adoter Program, Programa de adoção antecipada) {#purge-cdn}
+#### Limpe conteúdo no CDN com uma chave de API de autoatendimento (Programa de adoção precoce) {#purge-cdn}
 
-Registre uma chave de API de limpeza de CDN de forma automatizada e use-a para invalidar o conteúdo na CDN, seja globalmente ou para um ou mais recursos. [Saiba mais](/help/implementing/dispatcher/cdn-cache-purge.md).
-
-<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
-
-#### Criação de autoatendimento de X-AEM-Edge-Key para CDN gerenciado pelo cliente (BYOCDN) (Early Adoter Program) {#byocdn-keys}
-
-Anteriormente, um tíquete de suporte era necessário para gerar a X-AEM-Edge-Key necessária para a configuração de um CDN gerenciado pelo cliente. Isso agora pode ser feito de forma automatizada por meio de um arquivo de configuração implantado usando o pipeline de configuração, removendo qualquer atraso na integração de um novo ambiente. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
+Registre uma chave de API CDN limpeza de autoatendimento e use-a para invalidar conteúdo no CDN, globalmente ou para um ou mais recursos. [Saiba mais](/help/implementing/dispatcher/cdn-cache-purge.md).
 
 <!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-#### Redirecionamentos do lado do cliente (Programa de primeiros usuários) {#client-side-redirects-early-adopter}
+#### Criação de autoatendimento de X-AEM-Edge-Key para CDN gerenciados pelo cliente (BYOCDN) (Early Adopter Program) {#byocdn-keys}
 
-Configure os redirecionamentos do lado do cliente 301/302 no controle do código-fonte e implante na CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Observe que há vários outros recursos já disponíveis relacionados à [configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluindo transformações de solicitação e resposta, e roteamento de tráfego para sites fora do AEM.
+Anteriormente, era necessário um ticket de suporte para gerar o X-AEM-Edge-Key necessário para a configuração de um CDN gerenciado pelo cliente. Isso agora pode ser feito de maneira autoatendida por meio de um arquivo de configuração implantado usando o Pipeline de configuração, removendo qualquer atraso na integração de uma nova ambiente. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#CDN-HTTP-value).
 
-#### Alertas de regras de filtro de tráfego (Programa de adoção antecipada) {#traffic-filter-rules-alerts-early-adopter}
+<!-- Email **<aemcs-cdn-config-adopter@adobe.com>** with a request to be an early adopter. -->
 
-As [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras do WAF (Firewall de Aplicativo Web) opcionalmente licenciáveis, permitem que você configure qual tráfego deve ser permitido ou negado.
+#### Redirecionamentos do lado do servidor (Programa Dedonte Antecipado) {#server-side-redirects-early-adopter}
 
-Participe do programa de adoção antecipada para que você possa ser alertado sempre que as regras de filtro de tráfego forem acionadas. As notificações por email do Centro de ações manterão você informado quando ocorrerem determinadas condições de tráfego para que você possa tomar as medidas apropriadas.
+Configure 301/302 lado do servidor redireciona no controle de origem e implantar para o CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Observe que já existem vários outros recursos já disponíveis relacionados à [configuração](/help/implementing/dispatcher/cdn-configuring-traffic.md) CDN, incluindo transformações de solicitação e respostas e roteamento tráfego para sites off-AEM.
+
+#### Alertas de regras de Filtrar de tráfego (Programa de primeiros adotadores) {#traffic-filter-rules-alerts-early-adopter}
+
+As Regras](/help/security/traffic-filter-rules-including-waf.md) de Filtrar de Tráfego lançadas [recentemente, que incluem as regras de Firewall de Aplicação Web (WAF) que podem ser licenciadas, permite configurar quais tráfego devem ser permitidas ou negadas.
+
+Associar-se o programa de adotante inicial para que você possa ser alertado sempre que suas regras de filtro tráfego forem acionadas. As notificações por email do Centro de ações manterão você informado quando determinadas tráfego condições ocorrerem para que você possa tomar as medidas apropriadas.
 
 #### Usuários empresariais podem declarar redirecionamentos fora do Git (Early Adoter Program, Programa de adoção antecipada) {#apache-rewritemaps-early-adopter}
 
 Semelhante ao AEM 6.5, o Apache/Dispatcher assimilará mapas de regravação colocados em um local específico no repositório de publicação e os carregará, sem exigir uma execução de pipeline no nível da Web. Isso abre oportunidades para que um usuário empresarial declare redirecionamentos usando uma planilha ou uma interface do usuário, como a oferecida pelo ACS Commons Redirect Map Manager ou criada como parte de um aplicativo do cliente. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
-#### O Edge Side Includes (ESI) para Carregar Conteúdo Dinâmico (Early Adoter Program) {#esi-early-adopter}
+#### Edge Side Includes (ESI) para carregamento de conteúdo dinâmico (Programa de primeiros adotadores) {#esi-early-adopter}
 
-O CDN do Adobe Managed agora é compatível com o [ESI (Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para o assembly de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página de HTML geral na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+O Adobe Systems Managed CDN agora oferece [suporte a Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para conjunto de conteúdo web dinâmicos de nível de borda. Ao incluir trechos de ESI, você pode armazenar em cache as página HTML gerais no CDN com TTLs mais altos, enquanto, com mais frequência, a busca por origem seções menores que requerem atualizações de cadência mais altas (TTLs mais baixas). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
-## Guias do [!DNL Experience Manager] {#guides}
+## [!DNL Experience Manager] Guias {#guides}
 
-* **Publish um tópico ou seus elementos para um Fragmento de experiência**
-Agora, o Experience Manager Guides permite publicar um tópico ou seus elementos em um Fragmento de experiência. Um Fragmento de experiência é uma unidade de conteúdo modular que integra conteúdo e layout.  Fragmentos de experiência são instrumentais e podem ajudar você a criar experiências consistentes e envolventes.
-* **Capacidade de passar os metadados do ativo de tópico para saída de PDF nativo**
-Você pode adicionar os metadados do ativo do tópico enquanto gera a saída de PDF nativo. Esse recurso ajuda você a adicionar metadados específicos para diferentes tópicos, como o título do tópico e o autor, aos cabeçalhos e rodapés da página de tópico.
+* **Publish um tópico ou seus elementos para um fragmento** de experiência
+Agora, os Guias Experience Manager permitem publicar um tópico ou seus elementos a um Fragmento de experiência. Um fragmento de experiência é uma unidade de conteúdo modular que integra conteúdo e layout.  Os fragmentos de experiência são fundamentais e podem ajudá-lo a criar experiências consistentes e envolventes.
+* **Capacidade de passar os metadados do ativo de tópico para saída do PDF Nativo**
+Você pode adicionar os metadados do ativo de tópico ao gerar a saída do PDF nativo. Esse recurso ajuda você a adicionar metadados específicos para diferentes tópicos, como o título do tópico e o autor, aos cabeçalhos e rodapés da página de tópico.
 
 Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
@@ -250,5 +251,5 @@ Você pode encontrar uma lista completa de versões das ferramentas de migraçã
 
 ## Notas de versão da Experience Cloud {#experience-cloud}
 
-Você pode encontrar informações sobre lançamentos de outros aplicativos Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
-Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização de Produto Prioritária do Adobe](https://www.adobe.com/subscription/priority-product-update.html).
+Você pode encontrar informações sobre versões de outros aplicativos da Experience Cloud [aqui](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current).
+Para receber uma notificação por email mensal sobre atualizações nas notas de versão do Experience Cloud, assine a [Atualização prioritária de produto da Adobe](https://www.adobe.com/subscription/priority-product-update.html).

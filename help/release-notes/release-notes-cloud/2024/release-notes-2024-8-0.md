@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: dd1d4b8f-8331-4e97-a754-37e720974db6
-source-git-commit: 61b40acf4f51c16a694b7c3b13ee1c480670ee3f
+source-git-commit: 4b8086920bc3e3b9c5ed2a74934645fbc69acf71
 workflow-type: tm+mt
 source-wordcount: '1173'
 ht-degree: 15%
@@ -35,15 +35,15 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 ## Vídeo da versão {#release-video}
 
-Assista ao vídeo Visão geral da versão de agosto de 2024 que exibe um resumo dos recursos adicionados na versão 2024.8.0:
+Dê uma olhada no vídeo de visão geral da versão de agosto de 2024 para ver um resumo dos recursos adicionados na versão 2024.8.0:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3433381?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Novo recurso no Experience Manager Sites {#new-feature-sites}
+### Novo recurso na Sites de Experience Manager {#new-feature-sites}
 
-**Criação do AEM para o Edge Delivery Services**
+**criação de AEM para serviços de entrega de borda**
 
 A funcionalidade [herança](/help/sites-cloud/authoring/universal-editor/inheritance.md) dos sites existentes agora tem suporte, incluindo:
 
@@ -52,8 +52,8 @@ A funcionalidade [herança](/help/sites-cloud/authoring/universal-editor/inherit
 
 Além disso, os seguintes recursos de gerenciamento de página agora são compatíveis:
 
-* As [Marcas do AEM](/help/sites-cloud/authoring/sites-console/tags.md) podem ser exportadas como uma [taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md) para a Edge Delivery Services.
-* [Os modelos](/help/sites-cloud/authoring/universal-editor/templates.md) para o Edge Delivery Services serão lançados em breve.
+* [AEM Tags podem ser exportadas como uma [taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md) para os Serviços](/help/sites-cloud/authoring/sites-console/tags.md) de entrega de edge.
+* [Os modelos](/help/sites-cloud/authoring/universal-editor/templates.md) para o Edge Delivery Services serão disponibilizados em breve.
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
@@ -76,23 +76,23 @@ O Assets as a Cloud Service agora usa o widget mais recente do Firefly, que perm
 
 O Assets as a Cloud Service agora é compatível com documentos grandes da Photoshop (arquivos PSB), além do suporte existente a arquivos PSD.
 
-### Novos aprimoramentos na Content Hub {#content-hub-new-enhancements}
+### melhorias do Novo no Content Hub {#content-hub-new-enhancements}
 
-* Melhor manipulação de nomes de arquivo longos, fácil expansão do nome completo através de dica de ferramenta.
-* Miniaturas aprimoradas para melhor se ajustar às proporções de tamanho do conteúdo e abranger uma área maior do conteúdo.
-* Experiência personalizada de miniatura do AEM compatível com o content hub.
+* Melhor manuseio de nomes de arquivos longos, fácil expansão do nome completo por meio da dica de ferramenta.
+* Miniaturas aprimoradas para ajustar melhor conteúdo proporção e cobrir uma área maior de conteúdo.
+* Miniaturas personalizadas experiência de AEM compatíveis com conteúdo hub.
 * Melhorias na pesquisa de cores.
 * As melhorias nas configurações salvam a experiência.
-* Página de informações das coleções aprimorada para refletir o nome do criador.
+* Foram aprimoradas as informações página das coleções para refletir o nome do criador.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Novos recursos de pré-lançamento no AEM Forms {#forms-new-prerelease-features}
+### Novo recursos de pré-lançamento no AEM Forms {#forms-new-prerelease-features}
 
-#### Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável
+#### Automático salvar um rascunho dos Componentes principais baseados em Forms adaptativos
 
-Os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
+Agora os usuários podem se beneficiar de um recurso de salvamento automático que salva um formulário parcialmente concluído como um rascunho automaticamente. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
 
 
 ### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
@@ -103,13 +103,13 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 #### Assistente de IA do AEM Forms
 
-A IA gerativa para o Adaptive Forms traz um nível totalmente novo de potência e facilidade para seus processos de desenvolvimento de formulários. Ele permite que você construa formulários melhores mais rápido do que nunca.
+Ia generativa para Forms adaptável traz um novo nível de poder e facilidade aos processos de desenvolvimento de formulários. Ele permite que você build formulários melhores mais rápido do que nunca.
 
-![Assistente de IA de Geração, Forms Adaptável](/help/forms/assets/generative-ai-assistant.png)
+![Assistente de IA generativo, Forms adaptável](/help/forms/assets/generative-ai-assistant.png)
 
-Os recursos de IA gerativa disponíveis são:
+Os recursos de IA generativa no oferta são:
 
-* **Assistente de IA para consultas de produtos**: obtenha respostas instantâneas para suas perguntas relacionadas ao formulário do AEM. O assistente de IA atua como sua própria base de conhecimento pessoal, fornecendo orientação e recomendações relevantes diretamente na plataforma.
+* **Assistente de IA para consultas** de produto: obtenha respostas instantâneas para suas AEM perguntas relacionadas a formulários. O assistente de IA atua como seu próprio knowledge base pessoal, fornecendo orientações e recomendações insight diretamente na plataforma.
 
 * **Geração de formulário adaptável**: crie formulários completos sem esforço com Prompts do Generative AI. Nossa IA gerativa gera automaticamente formulários amigáveis que reduzem as quedas e personalizam a experiência.
 
@@ -117,7 +117,7 @@ Os recursos de IA gerativa disponíveis são:
 
 * **Alterando Layouts de Formulário**: experimente diferentes layouts e designs usando Solicitações de IA Gerativa. Experimente diferentes layouts, como visualizações com assistente ou em abas, para encontrar o ajuste perfeito para o seu formulário. Use os Prompts de IA gerativa para otimizar seus formulários para a agilidade móvel e criar formulários visualmente envolventes que os usuários adoram.
 
-* **Configurar Ação de Envio**: use os prompts da IA Gerativa para configurar facilmente uma ação de envio para o seu formulário. Escolha entre uma biblioteca de ações de envio pré-criadas ou entre uma lista de ações de envio personalizadas, criadas e implantadas pela sua própria equipe de desenvolvimento.
+* **Configure a ação** de envio: use prompts de IA generativos para configurar sem esforço uma ação de envio para o formulário. Escolha entre uma biblioteca de ações de envio pré-criadas ou entre uma lista de ações de envio personalizadas, criadas e implantadas pela sua própria equipe de desenvolvimento.
 
 >[!IMPORTANT]
 >
@@ -134,17 +134,17 @@ Email **<aemcs-cdn-config-adopter@adobe.com>**, indicando em qual dos primeiros 
 
 Proteja determinados recursos de conteúdo abrindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. Esse recurso destina-se principalmente a casos de uso de autenticação simples, como partes interessadas de negócios que revisam o conteúdo, em vez de servir como uma solução abrangente para os direitos de acesso do usuário final. A lista de nomes de usuário e senhas é gerenciada por meio de um arquivo de configuração no Git, que é implantado por meio do Pipeline de configuração, com uma referência às variáveis de ambiente do Cloud Manager do tipo secreto. [Saiba mais](/help/implementing/dispatcher/cdn-credentials-authentication.md#basic-auth).
 
-#### Redirecionamentos do lado do cliente (programa de primeiros usuários) {#client-side-redirects-early-adopter}
+#### Redirecionamentos do lado do servidor (programa de primeiros usuários) {#server-side-redirects-early-adopter}
 
-Configure os redirecionamentos do lado do cliente 301/302 no controle do código-fonte e implante na CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md#client-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Observe que há vários outros recursos já disponíveis relacionados à [configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluindo transformações de solicitação e resposta e o roteamento de tráfego para sites fora do AEM.
+Configure os redirecionamentos do lado do servidor 301/302 no controle do código-fonte e implante na CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md#server-side-redirectors).<!-- and join the early adopter program by emailing **<aemcs-cdn-config-adopter@adobe.com>**. --> Observe que há vários outros recursos já disponíveis relacionados à [configuração de CDN](/help/implementing/dispatcher/cdn-configuring-traffic.md), incluindo transformações de solicitação e resposta e o roteamento de tráfego para sites fora do AEM.
 
-#### Usuários empresariais podem declarar redirecionamentos fora do Git (Early Adoter Program, Programa de primeiros usuários) {#apache-rewritemaps-early-adopter}
+#### Empresas usuários podem declarar redirecionamentos fora do Git (Early Adopter Program) {#apache-rewritemaps-early-adopter}
 
-Semelhante ao AEM 6.5, o Apache/Dispatcher assimila mapas de regravação colocados em um local específico no repositório de publicação e os carrega, sem exigir uma execução de pipeline no nível da Web. Essa abordagem permite que os usuários empresariais declarem redirecionamentos usando uma planilha ou interface do usuário, como o ACS Commons Redirect Map Manager ou um aplicativo personalizado. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
+Semelhante ao AEM 6.5, o Apache/dispatcher assimilar mapas de reescrita colocados em um local específico no publicar repositório e carregue-os, sem exigir uma execução do pipeline de nível da Web. Essa abordagem permite que os usuários corporativos declarem redirecionamentos usando uma planilha ou uma interface, curtir o ACS Commons Redirect Map Manager ou uma aplicativo personalizada. <!-- Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information. -->
 
-#### O Edge Side Includes (ESI) para Carregar Conteúdo Dinâmico (Early Adoter Program) {#esi-early-adopter}
+#### Edge Side Includes (ESI) para carregamento de conteúdo dinâmico (Programa de primeiros adotadores) {#esi-early-adopter}
 
-A CDN Gerenciada pelo Adobe agora oferece suporte a [ESI (Edge Side Includes)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para o assembly de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página geral do HTML na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
+O Adobe Systems Managed CDN agora oferece [suporte a Edge Side Includes (ESI)](/help/implementing/dispatcher/edge-side-includes.md), uma linguagem de marcação para conjunto de conteúdo web dinâmicos de nível de borda. Ao incluir trechos ESI, você pode armazenar em cache a página geral do HTML na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). <!--Please reach out to **<aemcs-cdn-config-adopter@adobe.com>** for more information.-->
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
