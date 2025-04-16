@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: 085629bf-fb24-4511-af6c-bbbeedcb6b98
-source-git-commit: 7cc979148f6699cfbd4aaae228beb83527709fa1
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1740'
 ht-degree: 13%
@@ -41,9 +41,9 @@ Assista ao vídeo de Visão geral da versão de janeiro de 2025 que exibe um res
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-**Comentários no Editor de fragmento do conteúdo agora geralmente disponíveis**
+**Fragmento do conteúdo editor comentários agora disponíveis**
 
-Colabore facilmente com os colegas de trabalho ao criar fragmentos de conteúdo do AEM usando o serviço de comentários novo e modernizado no Editor de fragmentos de conteúdo do AEM.
+Colabore facilmente com colegas de trabalho ao criar AEM Fragmentos de conteúdo usando o novo e modernizado serviço de comentários no editor AEM Content Fragment.
 [Leia mais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring?#commenting-on-your-fragment).
 
 **Editor de fragmento do conteúdo e interfaces de usuário do administrador, suporte atualizado para a versão do AEM as a Cloud Service**
@@ -54,34 +54,34 @@ A versão mínima do AEM as a Cloud Service compatível com as novas interfaces 
 
 **Fragmentos de conteúdo aprimorados**
 
-[Referência de fragmento de conteúdo aprimorada com referências exclusivas baseadas em ID](/help/headless/graphql-api/uuid-reference-upgrade.md), ajudando a garantir que as consultas do GraphQL para fragmentos de conteúdo individuais possam permanecer estáveis, mesmo que o fragmento tenha sido movido para outro local. Isso agora é possível com queries &quot;ByID&quot;. Embora os caminhos possam mudar, possivelmente quebrando consultas &quot;ByPath&quot;, as UUIDs são estáveis. As novas IDs também podem ser retornadas como propriedades em qualquer query ou outra solicitação de API aplicável. Limitação atual (2025.1): as referências de página ainda não são compatíveis com IDs exclusivas. Se as páginas forem referenciadas em Fragmentos de conteúdo, esse recurso não deverá ser usado. A limitação está planejada para ser removida na próxima versão do AEM as a Cloud Service.
+[Referência de fragmento de conteúdo aprimorada com referências exclusivas baseadas em ID](/help/headless/graphql-api/uuid-reference-upgrade.md), ajudando a garantir que as consultas do GraphQL para fragmentos de conteúdo individuais possam permanecer estáveis, mesmo que o fragmento tenha sido movido para outro local. Isso agora é possível com queries &quot;ByID&quot;. Embora os caminhos possam mudar, potencialmente quebrando as consultas &quot;ByPath&quot;, as UUIDs são estáveis. As novas IDs também podem ser retornadas como propriedades em qualquer query ou em outras solicitação de API aplicáveis. Limitação atual (2025.1): as referências de página ainda não são compatíveis com IDs exclusivas. Se as páginas forem referenciadas em Fragmentos de conteúdo, esse recurso não deve ser usado. A limitação está planejada para ser removida na próxima versão do AEM as a Cloud Service.
 
 **OpenAPI REST do AEM para entrega de fragmentos de conteúdo**
 
-A [OpenAPI REST do AEM para Entrega de Fragmento de Conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md) está disponível agora para o AEM as a Cloud Service.
+A [OpenAPI REST do AEM para Entrega de Fragmento de Conteúdo](/help/headless/aem-content-fragment-delivery-with-openapi.md) está disponível agora para o AEM as a Cloud Service.
 
 ### Recursos obsoletos {#sites-deprecated}
 
-#### Editor SPA {#spa-editor}
+#### SPA Editor {#spa-editor}
 
-[O Editor de SPA](/help/implementing/developing/hybrid/introduction.md) foi descontinuado para novos projetos a partir da versão 2025.1.0. O Editor SPA permanece compatível com projetos existentes, mas não deve ser usado para novos projetos.
+[O editor](/help/implementing/developing/hybrid/introduction.md) do SPA foi descontinuado para novos projetos a partir da versão 2025.1.0. O editor do SPA continua suportado em projetos existentes, mas não deve ser usado para novos projetos.
 
-Os editores preferidos para gerenciar conteúdo headless no AEM agora são:
+Os editores preferidos para gerenciar conteúdo sem cabeça em AEM são agora:
 
-* [O Editor Universal](/help/edge/wysiwyg-authoring/authoring.md) para edição visual.
-* [O Editor de Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulário.
+* [O editor](/help/edge/wysiwyg-authoring/authoring.md) Universal para edição visual.
+* [O editor do fragmento de conteúdo](/help/assets/content-fragments/content-fragments-managing.md) para edição baseada em formulário.
 
-#### Recursos do PWA {#pwa-features}
+#### PWA Features {#pwa-features}
 
-[Os recursos do aplicativo web progressivo (PWA)](/help/sites-cloud/authoring/sites-console/enable-pwa.md) para AEM Sites foram descontinuados para novos projetos a partir da versão 2025.1.0. Esse recurso ainda é compatível com projetos existentes, mas não deve ser usado para novos projetos
+[The progressive web app (PWA) features](/help/sites-cloud/authoring/sites-console/enable-pwa.md) for AEM Sites are now deprecated for new projects starting with release 2025.1.0. This feature remains supported for existing projects, but should not be used for new projects
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Novos recursos no AEM Assets {#new-features-assets}
+### New features in AEM Assets {#new-features-assets}
 
 **Relatórios de entrega do Dynamic Media**
 
-Obtenha insights de entrega para ativos fornecidos pelo Dynamic Media, incluindo contagens de entrega no nível do ativo, detalhes do referenciador, caminhos de ativos no AEM Assets e IDs de ativos exclusivas. Gerar relatórios para todos os ativos no repositório do AEM Assets ou hierarquias de pastas específicas. Esses insights permitem medir o ROI dos ativos entregues, avaliar o desempenho do canal e tomar decisões informadas para o gerenciamento de ativos.
+Gain delivery insights for assets delivered through Dynamic Media, including asset-level delivery counts, referrer details, asset paths in AEM Assets, and unique asset IDs. Gerar relatórios para todos os ativos no repositório do AEM Assets ou hierarquias de pastas específicas. Esses insights permitem medir as ROI das ativos entregues, avaliar canal desempenho e tomar decisões informadas para as gerenciamento de ativos.
 
 ![representações dinâmicas](/help/assets/assets/referrer.png)
 
@@ -89,21 +89,21 @@ Obtenha insights de entrega para ativos fornecidos pelo Dynamic Media, incluindo
 
 [Suporte a várias legendas e faixas de áudio para vídeos no Dynamic Media](/help/assets/dynamic-media/video.md#about-msma) - Agora é possível adicionar facilmente várias legendas e faixas de áudio a um vídeo principal. Esse recurso significa que os vídeos estão acessíveis a um público-alvo global. Você pode personalizar um único vídeo principal publicado para um público-alvo global em vários idiomas e seguir as diretrizes de acessibilidade para diferentes regiões geográficas. Os autores também podem gerenciar as legendas e faixas de áudio em uma única guia na interface do usuário do.
 
-**Suporte a Dynamic Adaptive Streaming por HTTP**
+**Transmissão adaptável dinâmica sobre o suporte a HTTP**
 
 Lançamento de um novo suporte de protocolo (DASH, Dynamic Adaptive Streaming over HTTP) para a transmissão adaptável na entrega de vídeos do Dynamic Media (com CMAF habilitado):
 
-* A transmissão adaptável (DASH/HLS) garante uma melhor experiência de visualização para vídeos.
+* O streaming adaptável (DASH/HLS) garante uma melhor usuário experiência de exibição para vídeos.
 
 * DASH é o protocolo internacional padrão para transmissão de vídeo adaptável e é amplamente adotado no setor
 
 **Relações do ativo**
 
-A Exibição do Assets agora permite visualizar e editar relações de ativos em um painel de Detalhes de ativos simplificado. Adicione facilmente relacionamentos como Source e Derivação ao conteúdo para que os usuários possam encontrar de forma mais eficaz o conteúdo principal relevante.
+A Exibição do Assets agora permite visualizar e editar relações de ativos em um painel de Detalhes de ativos simplificado. Easily add relationships like Source and Derivative to content so that uses can more effectively find relevant hero content.
 
 **Reprocessar ativos**
 
-A visualização do Assets agora oferece suporte ao reprocessamento de ativos disponíveis em uma pasta. Você pode optar por usar a opção **Processo completo** ou usar opções avançadas, como representações de visualização padrão, metadados, fluxo de trabalho de pós-processamento e perfil de processamento.
+A visualização do Assets agora oferece suporte ao reprocessamento de ativos disponíveis em uma pasta. You can select to either use the **Full Process** option or use advanced options, such as, default preview renditions, metadata, post-processing workflow, and processing profile.
 
 ### Recursos de acesso antecipado no AEM Assets {#early-access-features-assets}
 
@@ -115,7 +115,7 @@ Legendas de vídeo geradas por IA no Adobe Dynamic Media usam inteligência arti
 
 ### Novos recursos no AEM Forms {#forms-new-features}
 
-* **Gerenciar Publicação**: você pode usar o fluxo de trabalho [Gerenciar Publicação](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option) para publicar ou desfazer a publicação de formulários entre ambientes, normalmente da instância de criação para as instâncias de publicação e visualização. Ele permite que os usuários publiquem, desfaçam a publicação ou agendem a publicação de conteúdo de maneira simplificada.
+* **Manage Publication**: You can use the [Manage Publication](/help/forms/manage-publication.md#publish-forms-using-the-manage-publication-option))workflow to publish or unpublish forms across environments, typically from the author instance to the publish and preview instances. Ele permite que os usuários publiquem, desfaçam a publicação ou agendem a publicação de conteúdo de maneira simplificada.
 
 * **[Salvar automaticamente um rascunho para os Componentes principais com base no Forms adaptável](/help/forms/save-core-component-based-form-as-draft.md)**: os usuários agora podem se beneficiar de um recurso de salvamento automático que salva automaticamente um formulário parcialmente preenchido como rascunho. Eles podem retornar mais tarde para terminar de preenchê-lo no mesmo dispositivo ou em outro. Esse recurso melhora as taxas de conversão para organizações ao reduzir o abandono de formulário, pois os usuários não precisam começar novamente o preenchimento do formulário desde o início.
 
@@ -136,9 +136,9 @@ O Forms adaptável permite usar modelos de email do HTML. Os templates de email 
 
 ![modelos de email do HTML](/help/forms/assets/html-email.png)
 
-#### Suporte ao armazenamento na nuvem aprimorado: upload direto do PDF para o armazenamento Azure Blob
+#### Suporte aprimorado ao armazenamento em nuvem: upload direto de PDF para armazenamento de Azure Blob
 
-As APIs de geração de documentos do AEM Forms agora oferecem suporte ao upload direto de documentos gerados do PDF para o Armazenamento de blobs do Azure. Esse aprimoramento simplifica o armazenamento e a recuperação, melhorando a eficiência e a integração com fluxos de trabalho em nuvem.
+AEM Forms geração de documento, as APIs agora suportam upload diretas de documentos PDF gerados para o armazenamento de Blob do Azure. Esse aprimoramento simplifica o armazenamento e a recuperação, melhorando a eficiência e a integração com nuvem workflows.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -150,7 +150,7 @@ O Java 21 **runtime** de maior desempenho será implantado automaticamente quand
 
 >[!IMPORTANT]
 >
-> O **tempo de execução** do Java 21 será implantado gradualmente em **todos** ambientes (além daqueles já criados com o Java 17 ou 21, que já têm o tempo de execução do Java 21), começando com sandboxes e dev/RDE em fevereiro e depois prepare/production em abril.
+> O tempo **de execução do Java 21** será gradualmente implantado em **todos os** ambientes (exceto aqueles já construídos com o Java 17 ou 21, que já possuem o tempo de execução do Java 21), começando com sandboxes e dev/RDE em fevereiro e depois estágio/produção em abril.
 
 ### Programas de sandbox oferecem suporte a pipelines de configuração {#sandbox-config-pipelines}
 
@@ -160,14 +160,14 @@ Os programas de sandbox agora oferecem suporte a pipelines de configuração, qu
 
 ### APIs baseadas em OpenAPI - Early Adoter Program {#open-apis-earlyadopter}
 
-Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas ao criar projetos do Adobe Developer Console.
+Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. Novo AEM como uma Cloud Service APIs seguir a especificação OpenAPI, com o objetivo de ser consistente, bem documentada e usuário amigável. As credenciais para endpoints que exigem autenticação são geradas pela criação Adobe Systems projetos do Console do desenvolvedor.
 
 Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra a configuração e o uso.
 
-Especificamente, os endpoints de API listados abaixo estão disponíveis como parte de um programa de adoção antecipada. Se estiver interessado, envie um email para [aem-apis@adobe.com](mailto:aem-apis@adobe.com) descrevendo como você pretende usá-los.
+Especificamente, os endpoints de API listados abaixo estão disponíveis como parte de um programa de adoção antecipada. Se estiver interessado, envie um email [aem-apis@adobe.com](mailto:aem-apis@adobe.com) descrevendo como você pretende usá-los.
 
 * [APIs de fragmentos de conteúdo do Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [APIs do Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
+* [Assets APIs](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
 * [APIs de Sites e Pastas do Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
 * [APIs de comunicações do Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
 
@@ -175,7 +175,7 @@ Especificamente, os endpoints de API listados abaixo estão disponíveis como pa
 
 A computação Edge aproxima o processamento de dados do navegador, o que traz benefícios, inclusive latência reduzida. A Adobe gostaria de saber se você acha essa tecnologia útil para o AEM Publish Delivery e para projetos Edge Delivery Services. Além disso, informe-nos sobre o que você planeja usar como entrada no roteiro de produtos. Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) com perguntas e comentários!
 
-### Novo AEM Developer Console (Beta público) {#aem-developer-console-beta}
+### Console do desenvolvedor do AEM Novo (beta público) {#aem-developer-console-beta}
 
 Experimente um [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) renovado, que oferece uma experiência mais interativa para depurar código em ambientes na nuvem.
 

@@ -5,9 +5,9 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d8e4fdc4f79e40a43a6845ab083dc231444b9c99
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '578'
 ht-degree: 25%
 
 ---
@@ -35,7 +35,7 @@ Este artigo se baseia nesses fundamentos para que você entenda como atualizar s
 
 O Adobe Experience Manager (AEM) as a Cloud Service oferece várias APIs para entrega de conteúdo estruturado a partir de fragmentos de conteúdo e do gerenciamento de fragmentos de conteúdo. Consulte as páginas individuais para obter mais detalhes sobre as APIs específicas.
 
-* OpenAPI REST do AEM para entrega de fragmentos de conteúdo
+* Entrega de fragmento de conteúdo do AEM com OpenAPI
    * Essa API cria respostas JSON para fornecer conteúdo estruturado de fragmentos de conteúdo no AEM.
    * Ele usa um caminho para um fragmento de conteúdo como endpoint.
    * Essa API é baseada em REST.
@@ -67,7 +67,7 @@ Você deve continuar a jornada headless do AEM revisando o documento [Como unir 
 
 * [APIs do Adobe Experience Manager as a Cloud Service](https://developer.adobe.com/experience-cloud/experience-manager-apis/)
 * [APIs do AEM para entrega e gerenciamento de conteúdo estruturado](/help/headless/apis-headless-and-content-fragments.md)
-* [OpenAPI REST do AEM para entrega de fragmentos de conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+* [Entrega de fragmento de conteúdo do AEM com OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
 * [API do AEM GraphQL para entrega de fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
 * [Fragmentos de conteúdo e OpenAPIs de modelos de fragmento de conteúdo](/help/headless/content-fragment-openapis.md)
 * [Suporte a fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)

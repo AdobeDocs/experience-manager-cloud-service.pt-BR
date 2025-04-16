@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: 3fd6482e-66f0-48ee-983c-4cb6b7742dcd
-source-git-commit: aafa51c246ee67f9fed014a39ecfb4605ac6152f
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 11%
@@ -57,7 +57,7 @@ Gerencie seus dados de planilha do Edge Delivery (por exemplo, redirecionamentos
 
 **OpenAPI REST do AEM para entrega de fragmentos de conteúdo**
 
-A [OpenAPI REST do AEM para Entrega de Fragmento de Conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md) está disponível agora para o AEM as a Cloud Service.
+A [OpenAPI REST do AEM para Entrega de Fragmento de Conteúdo](/help/headless/aem-content-fragment-delivery-with-openapi.md) está disponível agora para o AEM as a Cloud Service.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

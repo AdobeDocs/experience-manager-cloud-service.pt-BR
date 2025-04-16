@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 24ca1417c07747b310d3a33b018756862c076313
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '6146'
+source-wordcount: '6152'
 ht-degree: 62%
 
 ---
@@ -1122,7 +1122,7 @@ ht-degree: 62%
       + [Atualização dos fragmentos de conteúdo para referências UUID](/help/headless/graphql-api/uuid-reference-upgrade.md)
       + [Exemplo de consultas GraphQL](/help/headless/graphql-api/sample-queries.md)
       + [Solução de problemas de consultas do GraphQL](/help/headless/graphql-api/persisted-queries-troubleshoot.md)
-   + [OpenAPI REST do AEM para entrega de fragmentos de conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+   + [Entrega de fragmento de conteúdo do AEM com OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    + [Fragmentos de conteúdo e modelos OpenAPIs](/help/headless/content-fragment-openapis.md)
    + [Suporte a Fragmentos de conteúdo na API HTTP do Assets](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=pt-BR)
    + Segurança {#security}
@@ -1308,6 +1308,7 @@ ht-degree: 62%
       + Editor universal {#universal-editor}
          + [Introdução](/help/implementing/universal-editor/introduction.md)
          + [Casos de uso](/help/implementing/universal-editor/use-cases.md)
+         + [O Editor universal e o Editor de sites](/help/implementing/universal-editor/page-editor-universal-editor.md)
          + [Atributos e Tipos de Item](/help/implementing/universal-editor/attributes-types.md)
          + [Definição de componente](/help/implementing/universal-editor/component-definition.md)
          + [Definições de modelo, campos e tipos de componentes](/help/implementing/universal-editor/field-types.md)

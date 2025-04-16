@@ -1,38 +1,38 @@
 ---
-title: APIs de AEM para entrega de conteúdo estruturado e gerenciamento de fragmento de conteúdo
+title: APIs do AEM para entrega de conteúdo estruturado e gerenciamento de fragmento de conteúdo
 description: Saiba mais sobre as APIs disponíveis para Entrega de conteúdo estruturado e Gerenciamento de fragmento de conteúdo
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
-source-git-commit: 21599676916068f3529976410a93951b02f750b0
+exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
+source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
 
-
 # APIs do AEM para entrega e gerenciamento de conteúdo estruturado {#aem-apis-structured-content-delivery-and-management}
 
-O Adobe Experience Manager (AEM) as a Cloud Service várias APIs para a entrega de conteúdo estruturado do gerenciamento de Fragmentos de conteúdo e Fragmentos de conteúdo. Consulte as páginas individuais para obter mais detalhes sobre as APIs específicas.
+O Adobe Experience Manager (AEM) as a Cloud Service oferece várias APIs para entrega de conteúdo estruturado a partir de fragmentos de conteúdo e do gerenciamento de fragmentos de conteúdo. Consulte as páginas individuais para obter mais detalhes sobre as APIs específicas.
 
-* AEM [OpenAPI REST para Entrega de Fragmento de Conteúdo](/help/headless/aem-rest-openapi-content-fragment-delivery.md)
+* [Entrega de fragmento de conteúdo do AEM com OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md)
    * Essa API cria respostas JSON para fornecer conteúdo estruturado de fragmentos de conteúdo no AEM.
    * Ele usa um caminho para um fragmento de conteúdo como endpoint.
    * Essa API é baseada em REST.
    * Ele é otimizado para entrega de conteúdo, incluindo integração de CDN.
-* [AEM API do GraphQL para entrega de fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
+* [API do AEM GraphQL para entrega de fragmentos de conteúdo](/help/headless/graphql-api/content-fragments.md)
    * Essa API é baseada em esquemas. Os esquemas de API são representados por Modelos de fragmento de conteúdo, que definem a estrutura do conteúdo.
    * Essa API é baseada no GraphQL.
 * [Fragmentos de conteúdo e OpenAPIs de modelos de fragmento de conteúdo](/help/headless/content-fragment-openapis.md)
    * Essas APIs são destinadas ao gerenciamento de conteúdo estruturado.
-   * Os respectivos operadores de GET não são otimizados para a entrega de conteúdo.
+   * Os respectivos operadores do GET não estão otimizados para a entrega de conteúdo.
    * Essa API é baseada em REST.
 * [Suporte a fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
    * A API original da saída JSON para entrega de conteúdo estruturado no AEM.
       * Embora robusta e comprovada, essa API não fornece saída JSON *totalmente hidratada*. As referências são geradas apenas como caminhos, exigindo solicitações de API secundárias para recuperar mais conteúdo.
    * A API HTTP do Assets também pode ser usada para gerenciar os Fragmentos de conteúdo e os Modelos de fragmento de conteúdo (CRUD).
    * Essa API é baseada em REST.
-   * O suporte a fragmentos de conteúdo na API HTTP do Assets será descontinuado no futuro, pois está sendo sucedido pela API REST Edge Delivery Services JSON. A escala de tempo ainda não foi decidida.
+   * O suporte a fragmentos de conteúdo na API HTTP do Assets será descontinuado no futuro, pois está sendo sucedido pela API REST JSON do Edge Delivery Services. A escala de tempo ainda não foi decidida.
 
 <!--
 ## JSON vs HTML {#json-vs-HTML}
@@ -51,7 +51,7 @@ Key considerations include:
 
 ## REST vs GraphQL {#rest-vs-graphql}
 
-A API usada é uma decisão para os desenvolvedores - o AEM suporta ambos.
+The API used is a decision for the developers - AEM supports both.
 
 Muitas comparações estão disponíveis online, mas alguns destaques e benefícios do REST incluem:
 
@@ -61,9 +61,9 @@ Muitas comparações estão disponíveis online, mas alguns destaques e benefíc
 
    * Com simplicidade vem a familiaridade. Com o REST, não há perguntas organizacionais sobre quem é o proprietário das consultas e quem é o proprietário do aplicativo, enquanto essas perguntas podem surgir com o GraphQL.
 
-   * Com familiaridade (normalmente), existe uma ampla comunidade e um cenário de ferramentas. Não é uma desvantagem inerente do GraphQL, mas provavelmente será mais ampla e profunda para REST.
+   * With familiarity (typically) comes a broad community and tooling landscape. Not an inherent disadvantage of GraphQL, but likely to be broader and deeper for REST.
 
-   * A abordagem mais simples também pode facilitar a implementação da segurança. Com REST, a filtragem para determinar o conteúdo para renderizar tudo acontece no aplicativo cliente. Com o GraphQL, isso acontece em uma consulta baseada em esquema entre cliente e servidor.
+   * The simpler approach can also make the security implementation easier. With REST, the filtering to determine the content to render all happens in the client app. With GraphQL this happens in a schema-based query between client and server.
 
 * Flexibilidade
 
@@ -71,11 +71,11 @@ Muitas comparações estão disponíveis online, mas alguns destaques e benefíc
 
 * Armazenamento em cache
 
-   * As respostas JSON para solicitações REST `GET` são inerentemente armazenáveis em cache. As solicitações `POST` do GraphQL não podem ser armazenadas em cache, a menos que sejam feitas dessa forma; por exemplo, usando consultas AEM persistidas armazenadas no servidor e solicitadas com solicitações `GET` semelhantes a REST.
+   * JSON responses to REST `GET` requests are inherently cacheable. GraphQL `POST` requests are not cacheable, unless they are made so; for example, by using AEM Persisted Queries that are stored on the server and requested with REST-like `GET`requests.
 
-Os benefícios da GraphQL incluem:
+Benefits of GraphQL include:
 
-* Eficiência da entrega de conteúdo
+* Efficiency of content delivery
 
    * Foco
 
@@ -85,9 +85,9 @@ Os benefícios da GraphQL incluem:
 
       * Enquanto no REST cada solicitação de API é um endpoint, no GraphQL há apenas um endpoint comum e solicitações de conteúdo diferentes são expressas como consultas usando esse endpoint comum.
 
-* Prototipagem rápida
+* Rapid Prototyping
 
-   * Com o GraphQL, esse é um processo de uma etapa, reunido na query do GraphQL, e pode facilitar a criação de protótipos. O REST, por outro lado, é um processo de duas etapas:
+   * With GraphQL this is a one-step process, brought together in the GraphQL query, and can make prototyping easier. O REST, por outro lado, é um processo de duas etapas:
 
-      1. Buscar conteúdo com a API.
-      2. Na resposta JSON, determine o que usar para renderização no aplicativo do cliente.
+      1. Fetch content with API.
+      2. In the JSON response, determine what to use for rendering in the client app.
