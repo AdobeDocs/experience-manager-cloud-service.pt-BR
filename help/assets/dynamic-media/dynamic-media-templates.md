@@ -4,9 +4,9 @@ description: Saiba como criar  [!DNL Dynamic Media]  modelos usando um editor de
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 6223937acc317ea57a7e91c90bac36f1b1d4be67
+source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3026'
 ht-degree: 0%
 
 ---
@@ -87,8 +87,8 @@ Para criar um modelo [!DNL Dynamic Media], você deve ter:
 
 Execute as seguintes etapas para criar um modelo [!DNL Dynamic Media]:
 
-1. Navegue até [!DNL Assets View] e [crie uma pasta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) no **[!UICONTROL Assets]**. A árvore de pastas no **[!UICONTROL Assets]** é replicada no **[!UICONTROL Dynamic Media Assets]**. Use esta pasta do [!UICONTROL Dynamic Media Assets] para salvar seu modelo [!DNL Dynamic Media] mais tarde.
-1. Selecione o **[!UICONTROL Assets]** e o [carregar e publicar suas imagens no [!DNL AEM] e [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) para usá-las na criação do modelo.
+1. Navegue até o [!DNL Assets View] e [crie uma pasta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) no ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. A árvore de pastas no ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** é replicada no **[!UICONTROL Dynamic Media Assets]**. Salve seu modelo [!DNL Dynamic Media] nesta pasta do [!UICONTROL Dynamic Media Assets].
+1. Selecione o ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e o [carregar e publicar suas imagens no [!DNL AEM] and [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) para usá-las na criação do modelo.
 1. [Criar uma tela em branco](#create-a-canvas)
 1. [Adicionar imagens à tela](#add-images-to-the-canvas)
 1. [Adição de camadas de texto à tela de desenho](#add-text-to-the-canvas)
@@ -99,13 +99,15 @@ Execute as seguintes etapas para criar um modelo [!DNL Dynamic Media]:
 
 Execute estas etapas para criar uma tela em branco:
 
-1. Navegue até [!DNL Assets View] e selecione **[!UICONTROL Dynamic Media Assets]**, disponível no painel esquerdo.
+1. Navegue até [!DNL Assets View], selecione **[!UICONTROL Dynamic Media Assets]**, disponível no painel esquerdo, e navegue até a pasta para salvar o modelo nessa pasta.
 
    ![Modelos do Dynamic Media](/help/assets/assets/DM-Assets1.png)
 
-1. Selecione **[!UICONTROL Criar Modelo]** nesta página ou navegue até a pasta **[!UICONTROL Dynamic Media Assets]** e selecione **[!UICONTROL Criar Modelo]**. O modelo é salvo no local onde foi criado, na pasta raiz como **[!UICONTROL Dynamic Media Assets]** ou em uma pasta dentro da raiz. Após selecionar **[!UICONTROL Criar Modelo]**, a caixa de diálogo **[!UICONTROL Novo Modelo]** é exibida.
+1. Selecione **[!UICONTROL Criar Modelo]**. A caixa de diálogo **[!UICONTROL Novo Modelo]** é exibida.
    ![como criar modelos dinâmicos que podem ser personalizados em tempo real](/help/assets/assets/new-template.png)
-
+   >[!NOTE]
+   >
+   >  O modelo é salvo no local onde foi criado. Na página inicial do [!DNL Assets View], selecione **[!UICONTROL Dynamic Media Assets]** e clique em **[!UICONTROL Criar Modelo]** para salvar o modelo na pasta raiz do **[!UICONTROL Dynamic Media Assets]**.
 1. Especifique um nome de modelo, defina a largura e a altura da tela e clique em **[!UICONTROL Criar]**. Uma tela de desenho em branco é exibida com opções de menu em ambos os lados para ser usada na criação do modelo. Passe o mouse sobre as opções de menu para ver a dica de ferramenta.
    ![modelo personalizável em tempo real](/help/assets/assets/blank-canvas-page.png)
 
@@ -267,7 +269,7 @@ Execute estas etapas para visualizar e publicar o modelo e copiar o URL do deliv
    ![criando conteúdo em tempo real](/help/assets/assets/dm-templates-publish-status.png)
 Você também pode alternar **[!UICONTROL Incluir todos os parâmetros]** para editar todos os valores de parâmetros exibidos e ver as atualizações na visualização do modelo.
    <br>
-1. Para publicar o modelo na página de visualização, clique em **[!UICONTROL Publicar]** e confirme para publicar. A mensagem Publicação concluída é exibida e o status de publicação é atualizado para Publicado.
+1. Para publicar o modelo na página de visualização, clique em **[!UICONTROL Publicar]** e confirme para publicar. A mensagem **[!UICONTROL Publicação concluída]** é exibida e o status de publicação é atualizado para **[!UICONTROL Publicado]**.
 
 >[!NOTE]
 >
