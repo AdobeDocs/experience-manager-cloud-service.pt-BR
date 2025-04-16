@@ -4,9 +4,9 @@ description: Estas são as notas de versão do Universal Editor de 2025.04.04.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: e8e2563fc8536bd6ebd4239569c03b2287fc1fb6
+source-git-commit: a016213f4bfb7826113317b2a5c7ac9ef92474c1
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '126'
 ht-degree: 1%
 
 ---
@@ -23,6 +23,7 @@ Estas são as notas de versão da versão de 4 de abril de 2025 do Editor univer
 ## Novidades {#what-is-new}
 
 * **Dynamic Media com suporte a OpenAPI** - [O seletor de ativos](/help/assets/overview-asset-selector.md#repository-switcher) no Editor Universal agora oferece suporte a [Dynamic Media com OpenAPI e ativos remotos](/help/assets/integrate-remote-approved-assets-with-sites.md)
+* **Lista de permissões de IP** - O Editor Universal agora oferece suporte a [listas de permissões de IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) Você pode verificar os IPs do Universal Editor Service usando [este ponto de extremidade.](http://universal-editor-service.adobe.io/ip-ranges)
 
 ## Outras melhorias {#other-improvements}
 
