@@ -4,9 +4,9 @@ description: Saiba como criar  [!DNL Dynamic Media]  modelos usando um editor de
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 946f943dd02bb6832674ed7e37830ddeb592e548
+source-git-commit: 184149144d1f8d204241fcc477f937fa7c225895
 workflow-type: tm+mt
-source-wordcount: '3026'
+source-wordcount: '3106'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
     </tr>
 </table>
 
-Crie modelos personalizáveis em tempo real para seus banners e folhetos usando os modelos do [!DNL Dynamic Media], um editor de modelos do WYSIWYG. Use seu modelo [!DNL Dynamic Media] em aplicativos downstream. Um modelo [!DNL Dynamic Media] inclui camadas de imagem e texto. Adicione parâmetros às camadas de imagem e texto do modelo e use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) para reposicionar e redimensionar a camada e atualizar seu conteúdo em tempo real.
+Crie modelos personalizáveis em tempo real para seus banners e folhetos usando os modelos do [!DNL Dynamic Media], um editor de modelos do WYSIWYG. Publique seu modelo [!DNL Dynamic Media] e use-o nos aplicativos downstream. Um modelo [!DNL Dynamic Media] inclui camadas de imagem e texto. Adicione parâmetros às camadas de imagem e texto do modelo e use [[!DNL Dynamic Media] URLs](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/catalog-urls-dynamic-media) para reposicionar e redimensionar a camada e atualizar seu conteúdo em tempo real.
 
 Alguns dos principais recursos incluem:
 
@@ -88,7 +88,7 @@ Para criar um modelo [!DNL Dynamic Media], você deve ter:
 Execute as seguintes etapas para criar um modelo [!DNL Dynamic Media]:
 
 1. Navegue até o [!DNL Assets View] e [crie uma pasta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) no ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. A árvore de pastas no ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** é replicada no **[!UICONTROL Dynamic Media Assets]**. Salve seu modelo [!DNL Dynamic Media] nesta pasta do [!UICONTROL Dynamic Media Assets].
-1. Selecione o ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e o [carregar e publicar suas imagens no [!DNL AEM] and [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) para usá-las na criação do modelo.
+1. Selecione o ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e o [carregar e publicar suas imagens no [!DNL AEM] and [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) para usá-las na criação do modelo. A publicação de imagens é necessária para gerar o URL de entrega do modelo, que pode ser usado em aplicativos downstream.
 1. [Criar uma tela em branco](#create-a-canvas)
 1. [Adicionar imagens à tela](#add-images-to-the-canvas)
 1. [Adição de camadas de texto à tela de desenho](#add-text-to-the-canvas)
@@ -108,6 +108,7 @@ Execute estas etapas para criar uma tela em branco:
    >[!NOTE]
    >
    >  O modelo é salvo no local onde foi criado. Na página inicial do [!DNL Assets View], selecione **[!UICONTROL Dynamic Media Assets]** e clique em **[!UICONTROL Criar Modelo]** para salvar o modelo na pasta raiz do **[!UICONTROL Dynamic Media Assets]**.
+
 1. Especifique um nome de modelo, defina a largura e a altura da tela e clique em **[!UICONTROL Criar]**. Uma tela de desenho em branco é exibida com opções de menu em ambos os lados para ser usada na criação do modelo. Passe o mouse sobre as opções de menu para ver a dica de ferramenta.
    ![modelo personalizável em tempo real](/help/assets/assets/blank-canvas-page.png)
 
@@ -121,18 +122,18 @@ Execute estas etapas para criar uma tela em branco:
 * ![modelos personalizáveis](/help/assets/assets/add-text.svg): clique para adicionar textos à tela.
 * ![modelos personalizáveis](/help/assets/assets/show-layers-list.svg): clique para ver a lista de todas as camadas (imagem e texto) na tela. Cada imagem e texto adicionados à tela de desenho é representado como uma camada separada.
 
-**Opções de menu no painel esquerdo:** Use essas opções para ações comuns do editor, conforme mencionado abaixo.
+**Opções de menu no painel esquerdo:** Use essas opções para as seguintes ações comuns do editor.
 
-* ![Modelos DM](/help/assets/assets/layer-selector.svg): selecione uma camada.
-* ![modelos com suporte para personalização](/help/assets/assets/bring-forward.svg): clique para avançar uma camada selecionada ou pressione **Ctrl** + **]** (Windows) ou **Cmd** + **]** (Mac).
-* ![como criar um modelo que possa ser personalizado facilmente](/help/assets/assets/send-backward.svg): clique para voltar uma camada selecionada ou pressione **Ctrl** + **[** (Windows) ou **Cmd** + **[** (Mac).
-* ![crie um modelo que possa ser personalizado instantaneamente](/help/assets/assets/undo.svg): clique para desfazer a última ação ou pressione **Ctrl** + **Z** (Windows) ou **Cmd** + **Z** (Mac).
-* ![modelo para criar banners rapidamente](/help/assets/assets/redo.svg): clique para refazer a última ação ou pressione **Ctrl** + **Y** (Windows) ou **Cmd** + **Y** (Mac).
-* ![modelo para criar panfletos rapidamente](/help/assets/assets/zoom-in.svg): clique para ampliar a tela ou pressione **Ctrl** + **+** (Windows) ou Cmd + **+** (Mac).
-* ![modelo para criar banners rapidamente](/help/assets/assets/Zoom-out.svg): clique para reduzir a tela ou pressione **Ctrl** + **-** (Windows) ou **Cmd** + **-** (Mac).
+* ![Modelos DM](/help/assets/assets/layer-selector.svg): selecione ![Modelos DM](/help/assets/assets/layer-selector.svg) e clique em uma camada na tela para selecioná-la.
+* ![modelos com suporte para personalização](/help/assets/assets/bring-forward.svg): clique em ![modelos com suporte para personalização](/help/assets/assets/bring-forward.svg) ou use o atalho de teclado, **Ctrl** + **]** (Windows) ou **Cmd** + **]** (Mac) para avançar uma camada selecionada.
+* ![como criar um modelo que possa ser personalizado facilmente](/help/assets/assets/send-backward.svg): clique em ![como criar um modelo que possa ser personalizado facilmente](/help/assets/assets/send-backward.svg) ou use o atalho de teclado, **Ctrl** + **[** (Windows) ou **Cmd** + **[** (Mac) para voltar uma camada selecionada.
+* ![crie um modelo que possa ser personalizado instantaneamente](/help/assets/assets/undo.svg): clique em ![criar um modelo que possa ser personalizado instantaneamente](/help/assets/assets/undo.svg) ou use o atalho de teclado, **Ctrl** + **Z** (Windows) ou **Cmd** + **Z** (Mac) para desfazer a última ação.
+* ![modelo para criar banners rapidamente](/help/assets/assets/redo.svg): clique em ![modelo para criar banners rapidamente](/help/assets/assets/redo.svg) ou use o atalho de teclado, **Ctrl** + **Y** (Windows) ou **Cmd** + **Y** (Mac) para refazer a última ação.
+* ![modelo para criar panfletos rapidamente](/help/assets/assets/zoom-in.svg): clique em ![modelo para criar panfletos rapidamente](/help/assets/assets/zoom-in.svg) ou use o atalho de teclado, **Ctrl** + **+** (Windows) ou **Cmd** + **+** (Mac) para ampliar a tela.
+* ![modelo para criar banners rapidamente](/help/assets/assets/Zoom-out.svg): clique ![modelo para criar banners rapidamente](/help/assets/assets/Zoom-out.svg) ou use o atalho de teclado, **Ctrl** + **-** (Windows) ou **Cmd** + **-** (Mac) para reduzir a tela.
 * Pressione **Backspace** ou **delete** para excluir a camada selecionada se nenhum texto ou propriedade estiver sendo editado.
 
-Clique em ![modelo para criar panfletos rapidamente](/help/assets/assets/show-layers-list.svg) **>** mais opções (![](/help/assets/assets/three-dots.svg)) na camada Tela de Pintura para editar as dimensões da tela de desenho a qualquer momento durante a criação do modelo.
+Clique em ![modelo para criar panfletos rapidamente](/help/assets/assets/show-layers-list.svg) e selecione mais opções (![](/help/assets/assets/three-dots.svg)) na camada Tela de Pintura para editar as dimensões da tela de desenho a qualquer momento durante a criação do modelo.
 ![](/help/assets/assets/edit-canvas1.png)
 
 >[!NOTE]
@@ -143,7 +144,7 @@ Clique em ![modelo para criar panfletos rapidamente](/help/assets/assets/show-la
 
 Execute estas etapas para adicionar imagens à tela:
 
-1. Clique em ![criar um banner rapidamente](/help/assets/assets/add-image.svg) para exibir o painel [Seletor de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). O painel exibe as imagens na sua instância do AEM Assets que são sincronizadas com o [!DNL Dynamic Media].
+1. Clique em ![criar um banner rapidamente](/help/assets/assets/add-image.svg) para abrir o painel [Seletor de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector). O painel exibe as imagens na sua instância do AEM Assets que são sincronizadas com o [!DNL Dynamic Media].
 1. Navegue pelo painel ou use palavras-chave na barra de pesquisa para localizar uma imagem específica.
 1. Arraste e solte uma imagem na tela para usá-la. Consulte o [**[!UICONTROL Painel Propriedades]**](#reposition-resize-delete-a-layer) para redimensionar ou reposicionar uma camada na tela de desenho.
    ![criar um banner em segundos](/help/assets/assets/add-image-to-canvas.png)
