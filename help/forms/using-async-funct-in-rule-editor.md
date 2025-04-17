@@ -4,13 +4,13 @@ description: Chamadas de função assíncronas no editor de regras visual
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: f6e1de0c2cc2c056b3bfcea6ce5d7aaed041f6f8
+exl-id: a240ba26-a6d8-4643-8acb-1d8812dac61f
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1409'
 ht-degree: 0%
 
 ---
-
 
 # Uso de funções assíncronas em um Formulário adaptável com base nos Componentes principais
 
@@ -38,8 +38,6 @@ Por outro lado, com uma abordagem assíncrona, os usuários podem carregar image
 * [Saída de função](#how-to-use-function-output-rule-type)
 
 ## Como usar o tipo de regra Chamada de função assíncrona?
-
-<span class="preview"> Este é um recurso de pré-lançamento acessível através do nosso [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
 
 Você pode gravar as [funções personalizadas](/help/forms/custom-function-core-component-create-function.md) para operações assíncronas e configurar as funções assíncronas usando o tipo de regra **[!UICONTROL Chamada de Função Assíncrona]** no editor de regras.
 
@@ -217,7 +215,7 @@ Para ver seu funcionamento, vamos adicionar um botão e criar uma regra para o b
 
 ![criando regra para função assíncrona](/help/forms/assets/rule-for-async-funct.png){width=50%}
 
-Consulte a captura de tela da janela de console abaixo para demonstrar que, quando o usuário clica no botão `Fetch`, a função personalizada `callAsyncFunction` é invocada, o que, por sua vez, chama uma função assíncrona `asyncFunction`. Inspect na janela do console para exibir a resposta ao clique de botão:
+Consulte a captura de tela da janela de console abaixo para demonstrar que, quando o usuário clica no botão `Fetch`, a função personalizada `callAsyncFunction` é invocada, o que, por sua vez, chama uma função assíncrona `asyncFunction`. Inspecione a janela do console para exibir a resposta ao clique de botão:
 
 ![Janela de console](/help/forms/assets/async-custom-funct-console.png)
 

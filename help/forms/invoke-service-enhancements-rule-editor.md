@@ -5,17 +5,15 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 keywords: chame os aprimoramentos do serviço no VRE, preenchendo as opções suspensas usando invocar serviço, Defina o painel repetível usando a saída de invocar serviço, Defina o painel usando a saída de invocar serviço, Use o parâmetro de saída de invocar serviço para validar outro campo.
-source-git-commit: f77e0cd03a63200cb86fada780f2fecff5fadf94
+exl-id: 2ff64a01-acd8-42f2-aae3-baa605948cdd
+source-git-commit: 2cae8bb1050bc4538f4645d9f064b227fb947d75
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1566'
 ht-degree: 1%
 
 ---
 
-
 # Utilização de Chamar serviço no Editor de regras visuais para formulários com base em Componentes principais
-
-<span class="preview"> Este é um recurso de pré-lançamento acessível através do nosso [canal de pré-lançamento](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=pt-BR#new-features). </span>
 
 O Editor de Regras Visuais em um Formulário Adaptável oferece suporte ao recurso **Chamar Serviço**, que permite selecionar um serviço da lista de Modelos de Dados de Formulário (FDM) configurados para sua instância. Você pode mapear campos de formulário diretamente para os parâmetros de entrada do serviço. Para mapear campos de formulário para os parâmetros de saída, use a opção de carga do evento para o serviço de Modelo de dados de formulário especificado. Além disso, o editor de regras Visual permite criar regras para manipuladores de sucesso e falha para operações de **Chamar serviço** com base nas respostas de saída. Os manipuladores de êxito gerenciam a execução bem-sucedida da operação **Chamar Serviço**, enquanto os manipuladores de falha solucionam os erros que ocorrerem.
 
@@ -47,7 +45,7 @@ Quando você clica em **[!UICONTROL Adicionar Manipulador de Êxito]**, o editor
 
 Você pode adicionar várias regras para lidar com respostas bem-sucedidas para a operação **Invocar Serviço**:
 
-![Manipulador de sucesso múltiplo](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
+![Vários manipuladores de sucesso](/help/forms/assets/invoke-service-multiple-success-handlers.png){width=50%, height=50%}
 
 Da mesma forma, você pode adicionar regras para manipular a resposta de saída **Chamar Serviço** quando a operação não for bem-sucedida. A imagem abaixo exibe o editor de regras do **[!UICONTROL Manipulador de Falha de Serviço de Chamada]**:
 
@@ -67,7 +65,7 @@ Abaixo estão os pré-requisitos que você deve atender antes de usar **Chamar S
 
 ## Explorar o serviço de chamada por meio de diferentes casos de uso
 
-O **Invoke Service** do editor de regras visuais permite executar várias operações úteis. Você pode usá-lo para preencher opções suspensas, definir painéis simples ou que possam ser repetidos e validar campos de formulário, tudo com base na resposta de saída do **Chamar serviço**. Dessa forma, melhorando a flexibilidade e a interatividade de seus formulários.
+O **Invoke Service** do editor visual de regras permite executar várias operações úteis. Você pode usá-lo para preencher opções suspensas, definir painéis simples ou que possam ser repetidos e validar campos de formulário, tudo com base na resposta de saída do **Chamar serviço**. Dessa forma, melhorando a flexibilidade e a interatividade de seus formulários.
 
 A tabela abaixo descreve alguns cenários nos quais o **Chamar Serviço** pode ser usado:
 
@@ -242,4 +240,3 @@ Digite `102` na caixa de texto `Pet ID` e o botão **Enviar** ficará oculto.
 ## Recursos adicionais
 
 {{see-also-rule-editor}}
-
