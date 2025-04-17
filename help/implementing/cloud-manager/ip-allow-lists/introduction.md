@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 328ae6d1866a7089fb291d4872d27dc5fa1d4caa
+source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 25%
+source-wordcount: '423'
+ht-degree: 26%
 
 ---
 
@@ -36,11 +36,7 @@ Após adicionar, [Listas de permissões de IP podem ser aplicadas ou desaplicada
 >
 >Se nenhuma Lista de permissões IP for aplicada, por padrão, todos os endereços IP serão permitidos. Quando uma Lista de permissões IP é aplicada, nenhum endereço IP é permitido, exceto os endereços na Lista de permissões IP.
 
-## Limitações {#limitations}
-
-Antes de usar Listas de permissões IP, compreenda as seguintes limitações em funcionalidade, uso e efeito em outros recursos.
-
-### Limitações gerais de Listas de permissões de IP {#general}
+## Notas de uso {#usage-notes}
 
 * É possível adicionar no máximo 50 Listas de permissões IP ao programa.
 * É possível adicionar no máximo 50 endereços IP/CIDR a cada Lista de permissões IP.

@@ -5,9 +5,9 @@ exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 2573eb5f8a8ff21a8e30b94287b554885cd1cd89
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1185'
 ht-degree: 38%
 
 ---
@@ -42,7 +42,7 @@ Depois de [configurar o Pipeline de produção](/help/implementing/cloud-manager
 
 1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique no programa para o qual deseja implantar código.
 
-1. Na página **Visão geral**, na área de chamada para ação, clique em **Implantar**.
+1. Na página **Visão geral**, na área do call-to-action, clique em **Implantar**.
 
    ![CTA](assets/deploy-code1.png)
 
@@ -89,16 +89,16 @@ A fase **Teste de preparo** envolve as seguintes etapas:
 
 ### Fase de implantação em produção {#production-deployment}
 
-O processo de implantação nas topologias de produção é um pouco diferente para minimizar o impacto nos visitantes de um site AEM.
+O processo de implantação nas topologias de produção é um pouco diferente para minimizar o impacto nos visitantes de um site do AEM.
 
 As implantações em produção geralmente seguem as mesmas etapas descritas anteriormente, mas de maneira contínua. Essas etapas incluem o seguinte:
 
 1. Implante pacotes de AEM para o autor.
 1. Desanexar `dispatcher1` do balanceador de carga.
-1. Implante pacotes AEM para `publish1` e o pacote Dispatcher para `dispatcher1`; limpe o cache do Dispatcher.
+1. Implante os pacotes do AEM em `publish1` e o pacote do Dispatcher em `dispatcher1`; limpe o cache do Dispatcher.
 1. Coloque `dispatcher1` de volta no balanceador de carga.
 1. Quando `dispatcher1` estiver novamente em serviço, desconecte `dispatcher2` do balanceador de carga.
-1. Implante pacotes AEM para `publish2` e o pacote Dispatcher para `dispatcher2`; limpe o cache do Dispatcher.
+1. Implante os pacotes do AEM em `publish2` e o pacote do Dispatcher em `dispatcher2`; limpe o cache do Dispatcher.
 1. Coloque `dispatcher2` de volta no balanceador de carga.
 
 Esse processo continua até que a implantação tenha atingido todos os editores e Dispatchers na topologia.
@@ -134,7 +134,7 @@ Nessas circunstâncias, quando uma reexecução for possível, a página de stat
 >
 >Em uma reexecução, a etapa de compilação apresenta informações na interface que indicam que está copiando artefatos, não os recompilando.
 
-### Limitações {#limitations}
+### Notas de uso {#usage-notes}
 
 * A reexecução da etapa de implantação de produção só está disponível para a última execução.
 * A reexecução não está disponível para execuções de atualização por push. Se a última execução for uma execução de atualização por push, não será possível iniciar uma reexecução.

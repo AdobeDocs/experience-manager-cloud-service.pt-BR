@@ -4,9 +4,9 @@ description: Saiba como configurar o Cloud Manager para trabalhar com os seus re
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 7ce39020870943243e2d48aa66370f2cca9c2ac0
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '968'
 ht-degree: 34%
 
 ---
@@ -153,9 +153,7 @@ Repositórios privados validados podem ser associados a [pipelines de pilha com
 
 
 
-## Limitações {#limitations}
-
-Certas limitações se aplicam ao usar repositórios privados da GitHub Cloud com o Cloud Manager.
+## Notas de uso {#usage-notes}
 
 * Os pipelines de nível da Web e de configuração não são compatíveis com repositórios privados.
 * Nenhuma tag do Git será criada e enviada ao usar repositórios privados em pipelines de pilha completa de produção.

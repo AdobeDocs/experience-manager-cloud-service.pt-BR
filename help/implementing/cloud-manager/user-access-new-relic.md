@@ -5,10 +5,10 @@ exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3323da83584c4511b15145c0106031df4597891c
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 40%
+source-wordcount: '1820'
+ht-degree: 39%
 
 ---
 
@@ -169,9 +169,7 @@ Se você não receber um email do New Relic, faça o seguinte:
 * Se aplicável, [adicione o New Relic incluir na lista de permissões à sua pesquisa de email](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
 * Se nenhuma das sugestões ajudar, forneça feedback sobre o tíquete de suporte.
 
-## Limitações {#limitations}
-
-As seguintes limitações se aplicam à adição de usuários à New Relic One:
+## Notas de uso {#usage-notes}
 
 * É possível adicionar no máximo 30 usuários. Se o número máximo de usuários for atingido, remova alguns para poder adicionar novos.
 * Os usuários adicionados ao New Relic são do tipo **Básico**. Consulte a [documentação do New Relic para obter detalhes](https://docs.newrelic.com/docs/accounts/accounts-billing/new-relic-one-user-management/user-type/).
@@ -179,7 +177,7 @@ As seguintes limitações se aplicam à adição de usuários à New Relic One:
 
 >[!NOTE]
 >
->Se nenhuma atividade de **logon de usuário** for detectada em sua subconta do New Relic One por 30 dias ou mais, o agente APM será interrompido e os dados não serão enviados do AEM Cloud Service para o New Relic.  **Os dados não serão enviados novamente até que sua subconta seja reativada.**
+>Se nenhuma atividade de **logon de usuário** for detectada na sua subconta do New Relic One por 30 dias ou mais, o agente APM será interrompido. Os dados não são enviados do AEM Cloud Service para o New Relic. *Os dados não serão enviados novamente até que sua subconta seja reativada.*
 >
 >Siga as mesmas etapas na seção [Ativar a subconta do New Relic One](#activate-sub-account) deste documento para reativar a subconta do New Relic One.
 

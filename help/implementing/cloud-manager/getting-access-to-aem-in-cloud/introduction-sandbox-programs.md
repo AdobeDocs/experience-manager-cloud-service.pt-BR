@@ -5,9 +5,9 @@ exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 17306cf0877513d1412ffba311bd5d601edec062
+source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '503'
 ht-degree: 32%
 
 ---
@@ -27,17 +27,17 @@ Um programa de sandbox é um dos dois tipos de programas disponíveis no AEM Clo
 
 Os programas de sandbox incluem criação automática. Sempre que você [cria um programa de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md), o Cloud Manager automaticamente:
 
-* Adiciona AEM Sites, Assets e Edge Delivery Services como soluções padrão ao seu programa.
+* Adiciona o AEM Sites, o Assets e o Edge Delivery Services como soluções padrão ao seu programa.
 
   ![Selecionar soluções e complementos para uma sandbox](assets/sandbox-solutions-add-ons.png)
 
-* Configura um repositório Git de projeto com um projeto de amostra baseado no [Arquétipo de Projeto AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview).
+* Configura um repositório Git de projeto com um projeto de amostra baseado no [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview).
 * Cria um ambiente de desenvolvimento.
 * Cria um pipeline de não produção que é implantado no ambiente de desenvolvimento.
 
 Um programa de sandbox tem apenas um ambiente de desenvolvimento.
 
-## Limitações e condições {#limitations}
+## Notas e condições de uso {#usage-notes-conditions}
 
 Como não se destinam ao tráfego direto, os programas de sandbox têm determinadas limitações e condições de uso que os diferenciam dos programas de produção.
 
