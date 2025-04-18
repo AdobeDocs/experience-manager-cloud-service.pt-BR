@@ -4,9 +4,9 @@ description: Saiba como usar Ambientes de desenvolvimento rápido para iteraçõ
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: bd0c83098f19f8cf7cad41233f043c608be39a0c
+source-git-commit: 68937e844712ad639a495e87363d49a8bef25e05
 workflow-type: tm+mt
-source-wordcount: '5390'
+source-wordcount: '5392'
 ht-degree: 2%
 
 ---
@@ -81,18 +81,18 @@ Depois de ter adicionado um RDE para seu programa usando o Cloud Manager, você 
 
 >[!IMPORTANT]
 >
->Verifique se você tem a versão 20 do [Nó e NPM instalados](https://nodejs.org/en/download/) para que a CLI do Adobe I/O e os plug-ins relacionados funcionem corretamente.
+>Verifique se você tem a versão 20 do [Nó e NPM instalados](https://nodejs.org/en/download/) para que a CLI do Adobe I/O (AIO) e os plug-ins relacionados funcionem corretamente.
 
 
-1. Instale as ferramentas da CLI do Adobe I/O de acordo com este [procedimento](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
-1. Instale o plug-in RDE do AEM de ferramentas da CLI do Adobe I/O:
+1. Instale as ferramentas AIO CLI de acordo com este [procedimento](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+1. Instale o plug-in RDE do AEM de ferramentas da CLI AIO:
 
    ```
    aio plugins:install @adobe/aio-cli-plugin-aem-rde
    aio plugins:update
    ```
 
-1. Faça logon usando o cliente aio.
+1. Faça logon usando o cliente Adobe I/O (AIO).
 
    ```
    aio login
@@ -473,6 +473,60 @@ Logs:
 >
 >Se você criou o RDE antes de abril de 2023 e encontrou o `UNEXPECTED_API_ERROR` ao usar o recurso de front-end pela primeira vez, isso pode ser devido a uma configuração desatualizada. Para resolver esse problema, exclua o ambiente e crie um novo.
 
+### Verificar o status do RDE {#checking-rde-status}
+
+Você pode usar a CLI do RDE para verificar se o ambiente está pronto para ser implantado para, como quais implantações foram feitas por meio do plug-in RDE.
+
+Executando o seguinte:
+
+`aio aem:rde:status`
+
+Retorna com o seguinte:
+
+```
+Info for cm-p12345-e987654
+Environment: Ready
+- Bundles Author:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Bundles Publish:
+ com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
+- Configurations Author:
+ com.adobe.granite.demo.MyServlet
+- Configurations Publish:
+ com.adobe.granite.demo.MyServlet
+```
+
+Se o comando retornar uma observação sobre a implantação de instâncias, ainda será possível prosseguir e executar a próxima atualização, mas a última talvez ainda não esteja visível na instância.
+
+### Mostrar histórico de implantação {#show-deployment-history}
+
+Você pode verificar o histórico de implantações feitas no RDE executando:
+
+`aio aem:rde:history`
+
+Que retorna uma resposta na forma de:
+
+`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
+
+### Excluir do RDE {#deleting-from-rde}
+
+Você pode usar as ferramentas da CLI para excluir configurações e pacotes implantados anteriormente no RDE. Use o comando `status` para obter uma lista do que pode ser excluído, que inclui `bsn` para pacotes e `pid` para configurações a serem referenciadas no comando delete.
+
+Por exemplo, se `com.adobe.granite.demo.MyServlet.cfg.json` foi instalado, o `bsn` é apenas `com.adobe.granite.demo.MyServlet`, sem o sufixo **cfg.json**.
+
+Não há suporte para a exclusão de pacotes de conteúdo ou arquivos de conteúdo. Para removê-los, redefina o RDE, que o retorna ao estado padrão.
+
+Consulte o exemplo abaixo para obter mais detalhes:
+
+```
+aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
+#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
+#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
+```
+
+Para obter mais informações e demonstração, consulte o tutorial em vídeo [como usar comandos RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
+
+
 ## Implantar em um RDE a partir de provedores Git externos {#deploy-to-rde}
 
 >[!NOTE]
@@ -491,7 +545,7 @@ A implantação em RDEs de um repositório Git externo requer o seguinte:
 
 * Atualmente, a implantação no RDE é compatível apenas com pacotes de conteúdo e Dispatcher do AEM.
 * A implantação de outros tipos de pacotes (por exemplo, pacotes de aplicativos completos do AEM) ainda não é suportada.
-* Atualmente, a redefinição de um ambiente RDE usando um comentário não é compatível. Os clientes devem usar os comandos existentes da CLI da AIO, conforme [descrito aqui](/help/implementing/developing/introduction/rapid-development-environments.md).
+* Atualmente, a redefinição de um ambiente RDE usando um comentário não é compatível. Em vez disso, você deve usar o comando redefinir AIO CLI existente, como [descrito aqui](/help/implementing/developing/introduction/rapid-development-environments.md#reset-the-rde-command-line).
 
 **Como funciona**
 
@@ -553,58 +607,7 @@ A implantação em RDEs de um repositório Git externo requer o seguinte:
    ![Status de implantação do ambiente no Bitbucket](/help/implementing/developing/introduction/assets/rde-bitbucket-deployment-2.png)
 
 
-### Verificar o status do RDE {#checking-rde-status}
 
-Você pode usar a CLI do RDE para verificar se o ambiente está pronto para ser implantado para, como quais implantações foram feitas por meio do plug-in RDE.
-
-Executando o seguinte:
-
-`aio aem:rde:status`
-
-Retorna com o seguinte:
-
-```
-Info for cm-p12345-e987654
-Environment: Ready
-- Bundles Author:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Bundles Publish:
- com.adobe.granite.sample.demo-1.0.0.SNAPSHOT
-- Configurations Author:
- com.adobe.granite.demo.MyServlet
-- Configurations Publish:
- com.adobe.granite.demo.MyServlet
-```
-
-Se o comando retornar uma observação sobre a implantação de instâncias, ainda será possível prosseguir e executar a próxima atualização, mas a última talvez ainda não esteja visível na instância.
-
-### Mostrar histórico de implantação {#show-deployment-history}
-
-Você pode verificar o histórico de implantações feitas no RDE executando:
-
-`aio aem:rde:history`
-
-Que retorna uma resposta na forma de:
-
-`#1: deploy completed for content-package aem-guides-wknd.all-2.1.0.zip on author,publish - done by 029039A55D4DE16A0A494025@AdobeID at 2022-09-12T14:41:55.393Z`
-
-### Excluindo do RDE {#deleting-from-rde}
-
-Você pode usar as ferramentas da CLI para excluir configurações e pacotes implantados anteriormente no RDE. Use o comando `status` para obter uma lista do que pode ser excluído, que inclui `bsn` para pacotes e `pid` para configurações a serem referenciadas no comando delete.
-
-Por exemplo, se `com.adobe.granite.demo.MyServlet.cfg.json` foi instalado, o `bsn` é apenas `com.adobe.granite.demo.MyServlet`, sem o sufixo **cfg.json**.
-
-Não há suporte para a exclusão de pacotes de conteúdo ou arquivos de conteúdo. Para removê-los, redefina o RDE, que o retorna ao estado padrão.
-
-Consulte o exemplo abaixo para obter mais detalhes:
-
-```
-aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
-#13: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on author - done by karl at 2022-09-12T22:01:01.955Z
-#14: delete completed for osgi-config com.adobe.granite.csrf.impl.CSRFFilter on publish - done by karl at 2022-09-12T22:01:12.979Z
-```
-
-Para obter mais informações e demonstração, consulte o tutorial em vídeo [como usar comandos RDE (10:01)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/rde/how-to-use).
 
 ## Logs {#rde-logging}
 
