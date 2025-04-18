@@ -3,13 +3,13 @@ title: Gerar variações
 description: Saiba mais sobre como Gerar variações, acessível a partir de vários editores no AEM as a Cloud Service
 feature: Generate Variations
 role: Admin, Architect, Developer, User
-source-git-commit: 257fcd8df8bf216deec1fe96e64dd38e52f3ebe1
+exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1341'
 ht-degree: 1%
 
 ---
-
 
 # Gerar variações - Integrado nos editores do AEM {#generate-variations-integrated-in-aem-editors}
 
@@ -35,7 +35,7 @@ Você pode [acessar Gerar Variações](#access-generate-variations) dos seguinte
 
 >[!NOTE]
 >
->A versão independente de [Gerar Variações ainda pode ser acessada diretamente](/help/generative-ai/generate-variations.md).
+>É recomendável usar esta versão, pois embora a versão independente do [Gerar Variações ainda possa ser acessada diretamente](/help/generative-ai/generate-variations.md), ela será descontinuada no futuro.
 
 É possível:
 

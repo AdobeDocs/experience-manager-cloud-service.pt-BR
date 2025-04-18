@@ -4,9 +4,9 @@ description: Notas de versão para Gerar variações, acessível no AEM as a Clo
 exl-id: caf85bae-3cce-4083-ab6e-e2637ff5afce
 feature: Release Information
 role: Admin
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '284'
 ht-degree: 7%
 
 ---
@@ -33,7 +33,7 @@ Você pode [acessar Gerar Variações](/help/generative-ai/generate-variations-i
 
 >[!NOTE]
 >
->A versão anterior de [Gerar Variações ainda pode ser acessada diretamente](/help/generative-ai/generate-variations.md).
+>É recomendável usar a versão 3.0.0, pois embora a versão anterior do [Gerar variações ainda possa ser acessada diretamente](/help/generative-ai/generate-variations.md), ela será descontinuada no futuro.
 
 ### 2.2.0 {#release-notes-2-2-0}
 

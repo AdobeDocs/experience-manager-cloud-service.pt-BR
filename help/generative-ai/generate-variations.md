@@ -4,15 +4,20 @@ description: Saiba mais sobre como gerar variações, acessível no AEM as a Clo
 exl-id: 9114037f-37b9-4b2f-a714-10933f69b2c3
 feature: Generate Variations
 role: Admin, Architect, Developer
-source-git-commit: def1b808be7e90b4cba79ccbfa81da936be58c54
+source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3287'
 ht-degree: 1%
 
 ---
 
 
 # Gerar variações {#generate-variations}
+
+
+>[!NOTE]
+>
+>É recomendável que você acesse [Gerar variações integradas aos editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md), pois a versão descrita nesta página será descontinuada no futuro.
 
 Se estiver procurando uma maneira de otimizar seus canais digitais e acelerar a criação de conteúdo, você poderá usar a opção Gerar variações. Gerar variações usa a Inteligência artificial (AI) gerativa para criar variações de conteúdo com base em prompts; esses prompts são fornecidos pela Adobe ou criados e gerenciados pelos usuários. Depois de criar variações, você pode usar o conteúdo no seu site e também medir seu sucesso usando a funcionalidade [Experimentação](https://www.aem.live/docs/experimentation) do [Edge Delivery Services](/help/edge/overview.md).
 
@@ -25,10 +30,6 @@ Você pode [acessar Gerar variações](#access-generate-variations) de:
 >[!NOTE]
 >
 >Em todos os casos, para usar a opção Gerar variações, você deve garantir que os [pré-requisitos de acesso](#access-prerequisites) sejam atendidos.
-
->[!NOTE]
->
->Você também pode acessar [Gerar variações integradas aos editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md).
 
 É possível:
 
