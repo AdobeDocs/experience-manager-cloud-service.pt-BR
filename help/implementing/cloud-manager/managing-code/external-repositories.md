@@ -4,10 +4,10 @@ description: Saiba como adicionar um repositório externo no Cloud Manager. O Cl
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: 186c4cfc11bcab38b0b9b74143cabbd2af317a81
+source-git-commit: a01bda5218b7cba488c490b6c29e5f5a535416d5
 workflow-type: tm+mt
-source-wordcount: '2307'
-ht-degree: 22%
+source-wordcount: '1866'
+ht-degree: 27%
 
 ---
 
@@ -27,7 +27,6 @@ A configuração de um repositório externo no Cloud Manager consiste em três e
 1. Forneça um token de acesso ao repositório externo.
 1. Valide a propriedade do repositório GitHub privado.
 1. [Configure um webhook](#configure-webhook) para um repositório externo.
-
 
 
 ## Adicione um repositório externo {#add-ext-repo}
@@ -212,90 +211,5 @@ Os seguintes comportamentos se aplicam:
 * Verifique se o URL do Webhook inclui uma chave de API válida.
 * Verifique se os eventos do webhook estão configurados corretamente nas configurações do fornecedor do Git.
 * Se a validação de PR ou os acionadores de pipeline não estiverem funcionando, verifique se o Segredo do Webhook está atualizado no Cloud Manager e no fornecedor do Git.
-
-
-## Implantar em um ambiente de desenvolvimento rápido de provedores Git externos {#deploy-to-rde}
-
->[!NOTE]
->
->Esse recurso está disponível por meio do programa Early Adoter. Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para [CloudManager_BYOG@adobe.com](mailto:cloudmanager_byog@adobe.com) com seu endereço de email associado à sua Adobe ID. Inclua qual plataforma Git deseja usar e se você está em uma estrutura de repositório privado/público ou empresarial.
-
-A Cloud Manager oferece suporte à implantação de código em ambientes de desenvolvimento rápido (RDEs) diretamente de provedores Git externos, ao usar a [configuração BYOG (Bring Your Own Git)](/help/implementing/cloud-manager/managing-code/external-repositories.md).
-
-A implantação em RDEs de um repositório Git externo requer o seguinte:
-
-* O uso de um repositório Git externo integrado com o Cloud Manager (configuração BYOG).
-* Seu projeto deve ter um ou mais ambientes RDE provisionados.
-* Se você estiver usando o `github.com`, deverá revisar e aceitar a instalação atualizada do aplicativo GitHub para conceder as novas permissões necessárias.
-
-**Notas de uso**
-
-* Atualmente, a implantação no RDE é compatível apenas com pacotes de conteúdo e Dispatcher do AEM.
-* A implantação de outros tipos de pacotes (por exemplo, pacotes de aplicativos completos do AEM) ainda não é suportada.
-* Atualmente, a redefinição de um ambiente RDE usando um comentário não é compatível. Os clientes devem usar os comandos existentes da CLI da AIO, conforme [descrito aqui](/help/implementing/developing/introduction/rapid-development-environments.md).
-
-**Como funciona**
-
-1. **Mensagem de validação de qualidade do código.**
-
-   Quando uma solicitação de pull (PR) aciona uma execução de pipeline de qualidade de código, os resultados da validação indicam se a implantação pode prosseguir para um ambiente RDE.
-
-   Como se parece no GitHub Enterprise:
-   ![Mensagem de validação de qualidade do código no GitHub Enterprise](/help/implementing/cloud-manager/managing-code/assets/rde-github-enterprise-code-quality-validation-message.png)
-
-   Como ele aparece no GitLab:
-   ![Mensagem de validação de qualidade do código no GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-code-quality-validation-message.png)
-
-   Como se parece no Bitbucket:
-   ![Mensagem de validação de qualidade do código no Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-code-quality-validation-message.png)
-
-1. **Acione a implantação usando um comentário.**
-
-   Para iniciar a implantação, adicione um comentário à PR no seguinte formato: `deploy on rde-environment-<envName>`
-
-   ![Acione a implantação usando um comentário](/help/implementing/cloud-manager/managing-code/assets/rde-trigger-deployment-using-comment.png)
-
-   O `<envName>` deve corresponder ao nome de um ambiente RDE existente. Se o nome não for encontrado, um comentário será retornado indicando que o ambiente é inválido.
-
-   Se o status do ambiente não estiver pronto, você receberá o seguinte comentário:
-
-   ![Ambiente não pronto para implantação](/help/implementing/cloud-manager/managing-code/assets/rde-environment-not-ready.png)
-
-
-
-
-1. **Verificação de ambiente e implantação de artefato.**
-
-   Se o RDE estiver pronto, o Cloud Manager publica uma nova verificação na PR.
-
-   Como se parece no GitHub Enterprise:
-
-   ![Status do ambiente no GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-status-is-ready.png)
-
-   Como ele aparece no GitLab:
-
-   ![Status do ambiente no GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-1.png)
-
-   Como se parece no Bitbucket:
-
-   ![Status do ambiente no Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-1.png)
-
-
-1. **Mensagem de implantação bem-sucedida.**
-
-   Quando a implantação for concluída, o Cloud Manager publicará uma mensagem de sucesso resumindo os artefatos implantados no ambiente de destino.
-
-   Como se parece no GitHub Enterprise:
-
-   ![Status de implantação do ambiente no GitHub](/help/implementing/cloud-manager/managing-code/assets/rde-github-environment-deployed-artifacts.png)
-
-   Como ele aparece no GitLab:
-
-   ![Status de implantação do ambiente no GitLab](/help/implementing/cloud-manager/managing-code/assets/rde-gitlab-deployment-2.png)
-
-   Como se parece no Bitbucket:
-
-   ![Status de implantação do ambiente no Bitbucket](/help/implementing/cloud-manager/managing-code/assets/rde-bitbucket-deployment-2.png)
-
 
 
