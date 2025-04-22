@@ -4,9 +4,9 @@ description: Saiba como criar  [!DNL Dynamic Media]  modelos usando um editor de
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 95873c3079efe91aedb049252435487a7ae646c8
+source-git-commit: b877c4385d68778d31f0174aa1d3d87548c6016a
 workflow-type: tm+mt
-source-wordcount: '3191'
+source-wordcount: '3222'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,8 @@ Para criar um modelo [!DNL Dynamic Media], você deve ter:
 Execute as seguintes etapas para criar um modelo [!DNL Dynamic Media]:
 
 1. Navegue até o [!DNL Assets View] e [crie uma pasta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/add-delete-assets-view) no ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**. A árvore de pastas no ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets]** é replicada no **[!UICONTROL Dynamic Media Assets]**. Salve seu modelo [!DNL Dynamic Media] nesta pasta do [!UICONTROL Dynamic Media Assets].
-1. Selecione o ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e o [carregar e publicar suas imagens no [!DNL AEM] and [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) para usá-las na criação do modelo. A publicação de imagens é necessária para gerar o URL de entrega do modelo, após a criação do modelo, que pode ser usado em aplicativos downstream.
-1. [Execute estas etapas de carregamento e publicação de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) para carregar e publicar um arquivo de fonte simultaneamente no AEM e no Dynamic Media para usá-lo na criação do modelo. [!UICONTROL Adobe Sans F2] é a única fonte padrão disponível na camada de texto. [Os formatos de arquivo de fonte com suporte são: AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Certifique-se de [reprocessar](/help/assets/reprocessing-assets-view.md) as fontes existentes para usá-las na criação do modelo (Na página inicial do [!DNL Assets View], clique em ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**, navegue até o local do arquivo de fontes, selecione o arquivo de fontes, um de cada vez, e clique em ![Reprocessar](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocessar]**). Consulte [Fontes](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) para saber mais sobre fontes.
+1. Selecione o ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**e o [carregar e publicar suas imagens no [!DNL AEM] and [!DNL Dynamic Media] simultaneamente](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm#dynamic-media-publish-mode-set-to-upon-activation) para usá-las na criação do modelo. A publicação de imagens é necessária para gerar o URL de entrega do modelo, após a criação do modelo. O URL do delivery pode ser usado em aplicativos downstream.
+1. [Execute estas etapas de carregamento e publicação de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm?lang=en#dynamic-media-publish-mode-set-to-upon-activation) para carregar e publicar um arquivo de fonte no AEM e no Dynamic Media simultaneamente para usá-lo na criação do modelo. [!UICONTROL Adobe Sans F2] é a única fonte padrão disponível na camada de texto. [Os formatos de arquivo de fonte com suporte são: AFM, OTF, PFB, PFM, PhotoFont, TTC, TTF](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/upload-publish/uploading-files#supported-asset-file-formats). Certifique-se de [reprocessar](/help/assets/reprocessing-assets-view.md) as fontes existentes para usá-las na criação do modelo (Na página inicial do [!DNL Assets View], clique em ![Assets](/help/assets/assets/Asset-icon.svg)**[!UICONTROL Assets ]**, navegue até o local do arquivo de fontes, selecione o arquivo de fontes, um de cada vez, e clique em ![Reprocessar](/help/assets/assets/Refresh-docs.svg)**[!UICONTROL Reprocessar]**). Consulte [Fontes](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/support-files/fonts) para saber mais sobre fontes.
 1. [Criar uma tela em branco](#create-a-canvas)
 1. [Adicionar imagens à tela](#add-images-to-the-canvas)
 1. [Adição de camadas de texto à tela de desenho](#add-text-to-the-canvas)
@@ -159,7 +159,7 @@ Execute estas etapas para adicionar camadas de texto à tela de desenho:
 1. Selecione **[!UICONTROL Redimensionamento do Texto Inteligente]** no painel Propriedades para ajustar automaticamente o comprimento do texto e o tamanho da fonte para que se ajustem de forma ideal à área designada.
    ![melhores banners personalizáveis](/help/assets/assets/add-text-layer.png)
 
-Consulte o [**[!UICONTROL Painel Propriedades]**](#reposition-resize-delete-a-layer) para reposicionar, redimensionar, girar ou excluir a camada. Formate o texto para a fonte, o tamanho, a cor, o estilo e o alinhamento necessários (na camada) alterando os valores nos respectivos campos na seção **[!UICONTROL Texto]** do painel. O campo **[!UICONTROL Família da Fonte]** exibe as fontes existentes reprocessadas e as fontes recém-carregadas e publicadas. Consulte a [etapa 3 na seção Criar [!DNL Dynamic Media] modelo](#how-to-create-dynamic-media-template) acima para obter mais informações.
+Consulte o [**[!UICONTROL Painel Propriedades]**](#reposition-resize-delete-a-layer) para reposicionar, redimensionar, girar ou excluir a camada. Formate o texto para a fonte, o tamanho, a cor, o estilo e o alinhamento necessários (na camada) alterando os valores nos respectivos campos na seção **[!UICONTROL Texto]** do painel. O campo **[!UICONTROL Família da Fonte]** exibe a fonte padrão [!UICONTROL Adobe Sans F2], as fontes existentes reprocessadas e as fontes recém-carregadas e publicadas. Consulte a [etapa 3 na seção Criar [!DNL Dynamic Media] modelo](#how-to-create-dynamic-media-template) acima para obter mais informações.
 
 ### Editar ou excluir uma camada {#edit-or-delete-a-layer}
 
@@ -267,17 +267,19 @@ Execute estas etapas para visualizar e publicar o modelo e copiar o URL do deliv
    ![criando conteúdo em tempo real](/help/assets/assets/dm-templates-publish-status.png)
 Você também pode alternar **[!UICONTROL Incluir todos os parâmetros]** para editar todos os valores de parâmetros exibidos e ver as atualizações na visualização do modelo.
    <br>
-1. Para publicar o modelo na página de visualização, clique em **[!UICONTROL Publicar]** e confirme para publicar. A mensagem **[!UICONTROL Publicação concluída]** é exibida e o status de publicação é atualizado para **[!UICONTROL Publicado]**.
+1. Para publicar o modelo a partir da página de visualização, clique em **[!UICONTROL Publicar]** e confirme para publicar. Uma mensagem **[!UICONTROL Publicação concluída]** é exibida e o status de publicação é atualizado para **[!UICONTROL Publicado]**.
 
->[!NOTE]
->
->Para publicar o modelo, é necessário que as imagens do modelo sejam publicadas primeiro.
+   >[!NOTE]
+   >
+   >Para publicar o modelo, é necessário que as imagens do modelo sejam publicadas primeiro.
 
 ### Copiar o URL de entrega
 
 Os parâmetros selecionados na página **[!UICONTROL Visualização]** tornam-se os parâmetros de URL na URL de modelo.
 
-Para copiar o URL do modelo publicado exibido na pré-visualização:
+Verifique se as imagens no modelo estão publicadas no AEM e no Dynamic Media para gerar um URL de entrega do modelo publicado.
+
+Execute as seguintes etapas para copiar o URL de entrega do modelo:
 
 1. Clique em **[!UICONTROL Copiar URL]**. A caixa de diálogo **[!UICONTROL Copiar URL]** é exibida. Selecione e copie o URL exibido. O primeiro parâmetro na URL começa após um ponto de interrogação **([!UICONTROL ?])** e um par chave-valor começam com **[!UICONTROL $]** e terminam com **[!UICONTROL &amp;]**. A chave e o valor são separados por um sinal de igual **([!UICONTROL =])**, com a chave à esquerda e o valor à direita.
 1. Cole esse URL na guia do navegador e veja seu modelo em tempo real. Personalize o modelo em tempo real atualizando o valor do parâmetro necessário (valor da chave) diretamente na URL, conforme demonstrado na [etapa 2](#preview-and-publish-template-and-copy-template-deliver-url) da seção **Visualizar e Publicar**.
