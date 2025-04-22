@@ -4,9 +4,9 @@ description: Saiba mais sobre como Gerar variações, acessível a partir de vá
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 85489b9d2c774af2f82efe4cde406d6d33057d4e
+source-git-commit: 2d9137e170532824a3a9e489450021cfe2e361f0
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1355'
 ht-degree: 1%
 
 ---
@@ -60,6 +60,10 @@ Before using Generate Variations you are recommended to read the [Adobe Experien
 -->
 
 [O uso de Variações de Geração](#generative-action-usage) está ligado ao consumo de ações geradoras.
+
+>[!NOTE]
+>
+>Consulte a [Folha de Dados de Segurança para obter detalhes relacionados à Geração de Variação no AEM](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/aem-sites-generate-variations-security-fact-sheet.pdf).
 
 ## Visão geral {#overview}
 
