@@ -4,7 +4,10 @@ description: Saiba como criar blocos que podem ser usados para criação no WYSI
 feature: Edge Delivery Services
 role: User
 exl-id: f039c70a-e1a0-4fcc-8f42-dfa0f8bb3764
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%

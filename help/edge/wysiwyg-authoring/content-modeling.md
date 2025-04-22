@@ -1,10 +1,13 @@
 ---
-title: Modelagem de conteúdo para criação no WYSIWYG com projetos Edge Delivery Services
-description: Saiba como a modelagem de conteúdo funciona para a criação de WYSIWYG com projetos Edge Delivery Services e como modelar seu próprio conteúdo.
+title: Modelagem de conteúdo para criação no WYSIWYG com projetos do Edge Delivery Services
+description: Saiba como a modelagem de conteúdo funciona para a criação de WYSIWYG com projetos do Edge Delivery Services e como modelar seu próprio conteúdo.
 exl-id: e68b09c5-4778-4932-8c40-84693db892fd
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '2195'
 ht-degree: 0%
@@ -12,13 +15,13 @@ ht-degree: 0%
 ---
 
 
-# Modelagem de conteúdo para criação no WYSIWYG com projetos Edge Delivery Services {#content-modeling}
+# Modelagem de conteúdo para criação no WYSIWYG com projetos do Edge Delivery Services {#content-modeling}
 
-Saiba como a modelagem de conteúdo funciona para a criação de WYSIWYG com projetos Edge Delivery Services e como modelar seu próprio conteúdo.
+Saiba como a modelagem de conteúdo funciona para a criação de WYSIWYG com projetos do Edge Delivery Services e como modelar seu próprio conteúdo.
 
 ## Pré-requisitos {#prerequisites}
 
-Os projetos que usam a Criação de WYSIWYG com Edge Delivery Services herdam a maioria dos mecanismos de qualquer outro projeto Edge Delivery Services, independentemente da fonte de conteúdo ou do [método de criação](/help/edge/wysiwyg-authoring/authoring.md).
+Os projetos que usam a Criação de WYSIWYG com o Edge Delivery Services herdam a maioria dos mecanismos de qualquer outro projeto do Edge Delivery Services, independentemente da fonte de conteúdo ou do [método de criação](/help/edge/wysiwyg-authoring/authoring.md).
 
 Antes de começar a modelar o conteúdo para seu projeto, primeiro leia a documentação a seguir.
 
@@ -32,14 +35,14 @@ Antes de começar a modelar o conteúdo para seu projeto, primeiro leia a docume
 
 **O conteúdo padrão** é o conteúdo que um autor intuitivamente colocaria em uma página sem adicionar nenhuma semântica adicional. Isso inclui texto, cabeçalhos, links e imagens. Esse conteúdo é autoexplicativo em sua função e propósito.
 
-No AEM, esse conteúdo é implementado como componentes com modelos muito simples e predefinidos, que incluem tudo o que pode ser serializado no Markdown e no HTML.
+No AEM, esse conteúdo é implementado como componentes com modelos predefinidos muito simples, que incluem tudo o que pode ser serializado no Markdown e no HTML.
 
 * **Texto**: Rich text (incluindo elementos de lista e texto forte ou itálico)
 * **Título**: texto, tipo (h1-h6)
 * **Imagem**: Source, descrição
 * **Botão**: texto, título, url, tipo (padrão, primário, secundário)
 
-O modelo desses componentes faz parte da [Estrutura para criação do WYSIWYG com Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
+O modelo desses componentes faz parte da [Estrutura para a criação de WYSIWYG com o Edge Delivery Services](https://github.com/adobe-rnd/aem-boilerplate-xwalk/blob/main/component-models.json#L2-L112).
 
 ## Blocos {#blocks}
 
@@ -108,7 +111,7 @@ Também é necessário definir quais blocos existem e quais podem ser adicionado
 
 Para cada bloco, o desenvolvedor:
 
-* É necessário usar o tipo de recurso `core/franklin/components/block/v1/block`, a implementação genérica da lógica de bloqueio no AEM.
+* É necessário usar o tipo de recurso `core/franklin/components/block/v1/block`, a implementação genérica da lógica de bloco no AEM.
 * É necessário definir o nome do bloco, que será renderizado no cabeçalho da tabela do bloco.
    * O nome do bloco é usado para buscar o estilo e o script corretos para decorar o bloco.
 * Pode definir um [ID de modelo](/help/implementing/universal-editor/field-types.md#model-structure).
@@ -120,13 +123,13 @@ Todas essas informações são armazenadas no AEM quando um bloco é adicionado 
 
 >[!WARNING]
 >
->Embora possível, não é necessário ou recomendado implementar componentes personalizados do AEM. Os componentes para Edge Delivery Services fornecidos pelo AEM são suficientes e oferecem certos painéis de proteção para facilitar o desenvolvimento.
+>Embora possível, não é necessário ou recomendado implementar componentes personalizados do AEM. Os componentes para o Edge Delivery Services fornecidos pelo AEM são suficientes e oferecem determinados painéis de proteção para facilitar o desenvolvimento.
 >
 >Os componentes fornecidos pelo AEM renderizam uma marcação que pode ser consumida por [helix-html2md](https://github.com/adobe/helix-html2md) ao publicar no Edge Delivery Services e por [aem.js](https://github.com/adobe/aem-boilerplate/blob/main/scripts/aem.js) ao carregar uma página no Editor Universal. A marcação é o contrato estável entre o AEM e as outras partes do sistema e não permite personalizações. Por esse motivo, os projetos não devem alterar os componentes e não devem usar componentes personalizados.
 
 ### Estrutura de blocos {#block-structure}
 
-As propriedades dos blocos são [definidas nos modelos de componentes](#model-definition) e persistem como tal no AEM. As propriedades são renderizadas como células na estrutura semelhante à tabela do bloco.
+As propriedades dos blocos são [definidas nos modelos de componente](#model-definition) e persistem como tal no AEM. As propriedades são renderizadas como células na estrutura semelhante à tabela do bloco.
 
 #### Blocos simples {#simple}
 
@@ -322,11 +325,11 @@ No exemplo a seguir, um bloco aceita uma lista de ícones vinculados como filhos
 
 ### Criação de modelos de conteúdo semântico para blocos {#creating-content-models}
 
-Com a [mecânica da estrutura de blocos explicada](#block-structure), é possível criar um modelo de conteúdo que mapeie o conteúdo persistente do AEM de um para um para a camada de entrega.
+Com a [mecânica da estrutura de blocos explicada](#block-structure), é possível criar um modelo de conteúdo que mapeie o conteúdo persistente no AEM de um para um para o nível de entrega.
 
 No início de cada projeto, um modelo de conteúdo deve ser cuidadosamente considerado para cada bloco. Ele deve ser agnóstico em relação à fonte de conteúdo e à experiência de criação para permitir que os autores os alternem ou combinem ao reutilizar implementações e estilos de bloco. Mais detalhes e orientações gerais podem ser encontrados no [Modelo de David (take 2)](https://www.aem.live/docs/davidsmodel). Mais especificamente, a [coleção de blocos](/help/edge/developer/block-collection.md) contém um conjunto extenso de modelos de conteúdo para casos de uso específicos de padrões comuns de interface do usuário.
 
-Para a criação de WYSIWYG com Edge Delivery Services, isso levanta a questão de como fornecer um modelo atraente de conteúdo semântico quando as informações são criadas com formulários compostos por vários campos, em vez de editar a marcação semântica no contexto, como um rich text.
+Para a criação de WYSIWYG com o Edge Delivery Services, isso levanta a questão de como fornecer um modelo atraente de conteúdo semântico quando as informações são criadas com formulários compostos por vários campos, em vez de editar a marcação semântica no contexto, como um rich text.
 
 Para resolver esse problema, há três métodos que facilitam a criação de um modelo de conteúdo atraente:
 
@@ -336,7 +339,7 @@ Para resolver esse problema, há três métodos que facilitam a criação de um 
 
 >[!NOTE]
 >
->As implementações de bloco podem desconstruir o conteúdo e substituir o bloco por um DOM renderizado pelo lado do cliente. Embora isso seja possível e intuitivo para um desenvolvedor, não é a prática recomendada para os Edge Delivery Services.
+>As implementações de bloco podem desconstruir o conteúdo e substituir o bloco por um DOM renderizado pelo lado do cliente. Embora isso seja possível e intuitivo para um desenvolvedor, não é a prática recomendada para o Edge Delivery Services.
 
 #### Inferência de tipo {#type-inference}
 
@@ -463,7 +466,7 @@ _[adobe.com](https://www.adobe.com "Navigate to adobe.com")_
 
 Embora o [recolhimento de campo](#field-collapse) seja sobre a combinação de várias propriedades em um único elemento semântico, o agrupamento de elementos é sobre a concatenação de vários elementos semânticos em uma única célula. Isso é particularmente útil para casos de uso em que o autor deve ser restrito no tipo e no número de elementos que pode criar.
 
-Por exemplo, um componente de teaser pode permitir que o autor crie apenas um subtítulo, título e uma única descrição de parágrafo combinada com no máximo dois botões de chamada para ação. O agrupamento desses elementos produz uma marcação semântica que pode ser estilizada sem mais ações.
+Por exemplo, um componente de teaser pode permitir que o autor crie apenas um subtítulo, um título e uma única descrição de parágrafo combinada com no máximo dois botões call-to-action. O agrupamento desses elementos produz uma marcação semântica que pode ser estilizada sem mais ações.
 
 O agrupamento de elementos usa uma convenção de nomenclatura, em que o nome do grupo é separado de cada propriedade no grupo por um sublinhado. O recolhimento de campo das propriedades em um grupo funciona conforme descrito anteriormente.
 
@@ -534,7 +537,7 @@ O agrupamento de elementos usa uma convenção de nomenclatura, em que o nome do
 
 Da mesma forma que um desenvolvedor pode definir e modelar vários [blocos](#blocks), ele pode definir seções diferentes.
 
-O modelo de conteúdo do Edge Delivery Services permite deliberadamente apenas um único nível de aninhamento, ou seja, qualquer conteúdo ou bloco padrão contido em uma seção. Isso significa que, para ter componentes visuais mais complexos que possam conter outros componentes, eles precisam ser modelados como seções e combinados juntos usando o bloqueio automático do lado do cliente. Exemplos típicos disso são abas e seções recolhíveis, como acordeões.
+O modelo de conteúdo do Edge Delivery Services permite deliberadamente apenas um único nível de aninhamento, que é qualquer conteúdo ou bloco padrão contido em uma seção. Isso significa que, para ter componentes visuais mais complexos que possam conter outros componentes, eles precisam ser modelados como seções e combinados juntos usando o bloqueio automático do lado do cliente. Exemplos típicos disso são abas e seções recolhíveis, como acordeões.
 
 Uma seção pode ser definida da mesma forma que um bloco, mas com o tipo de recurso `core/franklin/components/section/v1/section`. As seções podem ter um nome e uma [ID de filtro](/help/implementing/universal-editor/filtering.md), que são usadas somente pelo [Editor Universal](/help/implementing/universal-editor/introduction.md), bem como uma [ID de modelo](/help/implementing/universal-editor/field-types.md#model-structure), que é usada para renderizar os metadados da seção. O modelo é, dessa forma, o modelo do bloco de metadados da seção, que será anexado automaticamente a uma seção como bloco de valor principal se não estiver vazio.
 
@@ -595,7 +598,7 @@ O exemplo a seguir define uma seção de guia, que pode ser usada para criar um 
 
 ## Metadados de página {#page-metadata}
 
-Os documentos podem ter um [bloco de metadados](https://www.aem.live/developer/block-collection/metadata) da página, que é usado para definir quais `<meta>` elementos são renderizados no `<head>` de uma página. As propriedades de página das páginas no AEM as a Cloud Service são mapeadas para aquelas que estão disponíveis prontas para uso para Edge Delivery Services, como `title`, `description`, `keywords`, etc.
+Os documentos podem ter um [bloco de metadados](https://www.aem.live/developer/block-collection/metadata) da página, que é usado para definir quais `<meta>` elementos são renderizados no `<head>` de uma página. As propriedades de página das páginas no AEM as a Cloud Service são mapeadas para aquelas que estão disponíveis prontas para uso para o Edge Delivery Services, como `title`, `description`, `keywords`, etc.
 
 Antes de explorar mais detalhadamente como definir seus próprios metadados, revise os documentos a seguir para entender o conceito de metadados da página primeiro.
 
@@ -637,13 +640,13 @@ Para fazer isso, crie um modelo de componente com a ID `page-metadata`.
 
 ## Próximas etapas {#next-steps}
 
-Agora que você sabe como modelar conteúdo, pode criar blocos para seus próprios Edge Delivery Services com o projeto de criação do WYSIWYG.
+Agora que você sabe como modelar conteúdo, pode criar blocos para seu próprio projeto de criação do Edge Delivery Services com WYSIWYG.
 
-Consulte o documento [Criação de blocos instrumentados para uso com o Editor universal](/help/edge/wysiwyg-authoring/create-block.md) para saber como criar blocos instrumentados para uso com o Editor universal na criação de projetos do WYSIWYG com Edge Delivery Services.
+Consulte o documento [Criação de blocos instrumentados para uso com o Editor universal](/help/edge/wysiwyg-authoring/create-block.md) para saber como criar blocos instrumentados para uso com o Editor universal na criação de WYSIWYG com projetos do Edge Delivery Services.
 
 Se você já estiver familiarizado com a criação de blocos, consulte o documento [Guia de Introdução ao Desenvolvedor para criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para que você possa começar a usar um novo site do Adobe Experience Manager usando o Edge Delivery Services e o Editor Universal para criação de conteúdo.
 
 >[!TIP]
 >
->Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service AEM como fonte de conteúdo, exiba [este webinário de GEMs do](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
+>Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
 

@@ -1,10 +1,13 @@
 ---
 title: Criação de blocos instrumentados para uso com o editor universal
-description: Saiba como criar blocos instrumentados para uso com o Editor universal na criação de WYSIWYG com projetos Edge Delivery Services.
+description: Saiba como criar blocos instrumentados para uso com o Editor universal na criação de WYSIWYG com projetos do Edge Delivery Services.
 exl-id: 65a5600a-8d16-4943-b3cd-fe2eee1b4abf
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 0%
@@ -14,20 +17,20 @@ ht-degree: 0%
 
 # Criação de blocos instrumentados para uso com o editor universal {#create-block}
 
-Saiba como criar blocos instrumentados para uso com o Editor universal na criação de WYSIWYG com projetos Edge Delivery Services.
+Saiba como criar blocos instrumentados para uso com o Editor universal na criação de WYSIWYG com projetos do Edge Delivery Services.
 
 ## Pré-requisitos {#prerequisites}
 
-Este guia fornece instruções passo a passo sobre como criar blocos instrumentados para o Editor universal na criação de WYSIWYG com projetos Edge Delivery Services. Ela abrange a adição de componentes, o carregamento de definições de componentes no Universal Editor, a publicação de páginas, a implementação de decoração e estilos de blocos, a introdução das alterações na produção e a verificação delas. Ao concluir este guia, você pode criar e implantar um novo bloco para seu próprio projeto.
+Este guia fornece instruções passo a passo sobre como criar blocos instrumentados para o Editor universal na criação de projetos do WYSIWYG com o Edge Delivery Services. Ela abrange a adição de componentes, o carregamento de definições de componentes no Universal Editor, a publicação de páginas, a implementação de decoração e estilos de blocos, a introdução das alterações na produção e a verificação delas. Ao concluir este guia, você pode criar e implantar um novo bloco para seu próprio projeto.
 
-Este guia requer necessariamente conhecimento existente sobre a criação do WYSIWYG com projetos Edge Delivery Services, bem como do Universal Editor. Antes de começar este guia, você já deve ter acesso aos Edge Delivery Services e estar familiarizado com as suas noções básicas, incluindo:
+Este guia requer necessariamente conhecimento existente sobre a criação de WYSIWYG com projetos Edge Delivery Services, bem como o Editor universal. Antes de começar este guia, você já deve ter acesso ao Edge Delivery Services e estar familiarizado com suas noções básicas, incluindo:
 
 * Você concluiu o [tutorial do Edge Delivery Service](/help/edge/developer/tutorial.md).
-* Você tem acesso a uma [sandbox da AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+* Você tem acesso a uma [sandbox do AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 * Você [habilitou o Editor Universal no mesmo ambiente de sandbox](/help/implementing/universal-editor/getting-started.md).
-* Você concluiu o [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+* Você concluiu o [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia do Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
-Este guia se baseia no trabalho realizado no [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
+Este guia se baseia no trabalho realizado no [Guia de Introdução do Desenvolvedor para a criação de WYSIWYG com o guia do Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md).
 
 ## Adicionar um novo bloco ao seu projeto {#add-block}
 
@@ -35,7 +38,7 @@ Neste guia, você criará um bloco para renderizar uma cotação memorável em s
 
 Para simplificar este exemplo, todas as alterações são feitas na ramificação `main` do repositório do projeto. É claro que, para seu projeto real, [você deve seguir as práticas recomendadas de desenvolvimento](https://www.aem.live/docs/dev-collab-and-good-practices) desenvolvendo em uma ramificação diferente e revisando todas as alterações por meio de uma solicitação de pull antes de mesclar com o `main`.
 
-A Adobe recomenda que você desenvolva blocos em uma abordagem de três fases:
+A Adobe recomenda desenvolver blocos em uma abordagem de três fases:
 
 1. Crie a definição e o modelo do bloco, revise-o e leve-o para produção.
 1. Crie conteúdo com o novo bloco.
@@ -45,7 +48,7 @@ O exemplo de bloco de citação a seguir segue essa abordagem.
 
 ### Criar Definição e Modelo de Bloco {#create-block-model}
 
-1. Clona localmente o projeto do GitHub que você criou no [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e o abre em um editor de sua escolha.
+1. Clona localmente o projeto do GitHub que você criou no [Guia de Introdução do Desenvolvedor para criação no WYSIWYG com o guia do Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) e o abre em um editor de sua escolha.
 
 * O código Microsoft é usado aqui para fins ilustrativos.
 
@@ -163,7 +166,7 @@ Agora que o bloco de cotação básico está definido e comprometido com o proje
 
 1. Toque ou clique em **Editar** na barra de ferramentas do console e o Editor universal será aberto.
 
-   * Para carregar a página, talvez seja necessário tocar ou clicar em **Entrar com o Adobe** para autenticar para AEM no Editor Universal.
+   * Para carregar a página, talvez seja necessário tocar ou clicar em **Entrar com o Adobe** para autenticar no AEM no Editor Universal.
 
 1. No Editor universal, selecione uma seção. No painel de propriedades, toque ou clique no ícone **Adicionar** e selecione o novo bloco **Cotação** no menu.
 
@@ -180,7 +183,7 @@ Agora que o bloco de cotação básico está definido e comprometido com o proje
 
    ![A página com o novo bloco de aspas na seção selecionada](assets/create-block/quote-added.png)
 
-1. Quando estiver satisfeito com o conteúdo da sua cotação, você poderá publicar a página tocando ou clicando no botão **Publish** na barra de ferramentas do Editor Universal.
+1. Quando estiver satisfeito com o conteúdo da sua cotação, você poderá publicar a página tocando ou clicando no botão **Publicar** na barra de ferramentas do Editor Universal.
 
 1. Verifique se o conteúdo foi publicado navegando até a página publicada. O link será semelhante a `https://<branch>--<repo>--<owner>.aem.page`
 
@@ -343,4 +346,4 @@ Consulte o documento [Modelagem de conteúdo para criação no WYSIWYG com proje
 
 >[!TIP]
 >
->Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service AEM como fonte de conteúdo, exiba [este webinário de GEMs do](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

@@ -4,7 +4,10 @@ description: Este guia colocará você em funcionamento com um novo site do Adob
 feature: Edge Delivery Services
 exl-id: a71184a7-c954-442e-b276-99edc6d2acd8
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 0%
@@ -21,42 +24,42 @@ Este guia colocará você em funcionamento com um novo site do Adobe Experience 
 Antes de começar este guia, você já deve estar familiarizado com as noções básicas do e ter acesso ao Edge Delivery Services, incluindo:
 
 * Você concluiu o [tutorial do Edge Delivery Service](/help/edge/developer/tutorial.md).
-* Você tem acesso a uma [sandbox da AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
+* Você tem acesso a uma [sandbox do AEM Cloud Service](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md).
 * Você [habilitou o Editor Universal no mesmo ambiente de sandbox](/help/implementing/universal-editor/getting-started.md).
 
-## Conceitos principais ao desenvolver para Edge Delivery Services {#core-concepts}
+## Conceitos principais ao desenvolver para o Edge Delivery Services {#core-concepts}
 
-O Edge Delivery Services é baseado em torno do conceito de blocos. O AEM vem com uma biblioteca abrangente de blocos predefinidos, que podem ser estendidos para atender às necessidades do seu projeto. O código para projetos Edge Delivery Services é gerenciado no GitHub.
+O Edge Delivery Services se baseia no conceito de blocos. O AEM vem com uma biblioteca abrangente de blocos predefinidos, que podem ser estendidos para atender às necessidades do seu projeto. O código para projetos do Edge Delivery Services é gerenciado no GitHub.
 
 ### Blocos {#blocks}
 
 Os blocos são a parte mais fundamental de uma página entregue pelo Edge Delivery Services. Um bloco encapsula o estilo e o código que direciona um componente lógico de uma página de conteúdo.
 
-O AEM fornece blocos padrão como parte do produto dentro da placa do projeto. Esses blocos incluem cabeçalho, texto, imagens, links, listas, etc.
+A AEM fornece blocos padrão como parte do produto na placa do projeto. Esses blocos incluem cabeçalho, texto, imagens, links, listas, etc.
 
 >[!TIP]
 >
->Consulte a [seção Build](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços da Edge Delivery.
+>Consulte a [seção Build](/help/edge/developer/block-collection.md) da documentação da Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços da Edge Delivery.
 
 ### Edge Delivery Services e GitHub {#github-edge}
 
 O Edge Delivery usa o GitHub para que você possa gerenciar e implantar o código diretamente do seu repositório GitHub.
 
-Seus autores podem criar conteúdo usando a Criação baseada em documento ou conteúdo no AEM com o Universal Editor. Os desenvolvedores podem personalizar a funcionalidade do site usando CSS e JavaScript no GitHub, independentemente de como os autores criam seu conteúdo.
+Seus autores podem criar conteúdo usando Criação baseada em documento ou conteúdo no AEM com o Editor universal. Os desenvolvedores podem personalizar a funcionalidade do site usando CSS e JavaScript no GitHub, independentemente de como os autores criam seu conteúdo.
 
 Os sites são criados automaticamente para cada uma de suas ramificações, da pré-visualização de conteúdo à produção. Todos os recursos que você coloca no repositório GitHub estão disponíveis no seu site sem um processo de criação.
 
 >[!TIP]
 >
->Consulte a [seção Build](/help/edge/developer/block-collection.md) da documentação do Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços da Edge Delivery.
+>Consulte a [seção Build](/help/edge/developer/block-collection.md) da documentação da Edge Delivery Services para obter mais detalhes sobre blocos e como desenvolver para serviços da Edge Delivery.
 
-## Introdução à criação e ao Edge Delivery Services do WYSIWYG {#getting-started}
+## Introdução à criação no WYSIWYG e no Edge Delivery Services {#getting-started}
 
 Depois de atender aos [pré-requisitos](#prerequisites) e ter optado por [usar o Editor Universal](#editor-choice), você poderá começar a usar o seu próprio projeto.
 
 ### Criar seu projeto do GitHub {#create-github-project}
 
-Primeiro, será necessário criar um novo projeto no GitHub, com base no modelo de Adobe.
+Primeiro, será necessário criar um novo projeto no GitHub, com base no modelo do Adobe.
 
 1. Navegue até [`https://github.com/adobe-rnd/aem-boilerplate-xwalk`](https://github.com/adobe-rnd/aem-boilerplate-xwalk) e clique em **Usar este modelo** e selecione **Criar um novo repositório**.
 
@@ -76,11 +79,11 @@ Primeiro, será necessário criar um novo projeto no GitHub, com base no modelo 
 
    ![Escolhendo a organização para sincronização de código](assets/edge-dev-getting-started/code-sync-org.png)
 
-1. Na página GitHub da Sincronização de Código AEM em **Acesso ao repositório**, selecione **Somente selecionar repositórios**, selecione o repositório criado na etapa anterior e clique em **Salvar**.
+1. Na página GitHub da Sincronização de Código do AEM em **Acesso ao repositório**, selecione **Somente selecionar repositórios**, selecione o repositório criado na etapa anterior e clique em **Salvar**.
 
    ![Concedendo acesso à Sincronização de Código AEM](assets/edge-dev-getting-started/grant-code-sync-acces.png)
 
-1. Depois que a Sincronização de código AEM estiver instalada, você receberá uma tela de confirmação. Retorne à guia do navegador do novo repositório.
+1. Depois que a Sincronização de código do AEM estiver instalada, você receberá uma tela de confirmação. Retorne à guia do navegador do novo repositório.
 
    ![Confirmação de instalação da Sincronização de Código](assets/edge-dev-getting-started/confirmation.png)
 
@@ -106,7 +109,7 @@ Primeiro, será necessário criar um novo projeto no GitHub, com base no modelo 
 1. O mapeamento padrão usará o nome do repositório. Atualize o mapeamento padrão conforme necessário para seu projeto com `/content/<site-name>/:/` e clique em **Confirmar alterações...**.
 
    * Forneça o seu próprio `<site-name>`. Você precisará dele em uma etapa posterior.
-   * Os mapeamentos informam ao Edge Delivery Services como mapear o conteúdo no repositório AEM para o URL do site.
+   * Os mapeamentos informam ao Edge Delivery Services como mapear o conteúdo no repositório do AEM para o URL do site.
 
    ![Atualizando paths.json](assets/edge-dev-getting-started/paths-update.png)
 
@@ -118,15 +121,15 @@ Primeiro, será necessário criar um novo projeto no GitHub, com base no modelo 
 >
 >Para obter mais informações sobre mapeamentos de caminho, consulte o documento [Mapeamento de Caminho para Edge Delivery Services](/help/edge/wysiwyg-authoring/path-mapping.md).
 
-### Criar e editar um novo site AEM {#create-aem-site}
+### Criar e editar um novo site do AEM {#create-aem-site}
 
-Agora que você tem um projeto GitHub, deve criar um novo site AEM que o projeto possa usar.
+Agora que você tem um projeto GitHub, deve criar um novo site do AEM que o projeto possa usar.
 
 >[!NOTE]
 >
 >Para editar o site usando o Editor universal, é necessário usar um navegador com base em Chromium.
 
-1. Baixe a criação mais recente do WYSIWYG com o modelo de site Edge Delivery Services do GitHub em [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
+1. Baixe a criação mais recente do WYSIWYG com o modelo de site do Edge Delivery Services do GitHub em [`https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases`](https://github.com/adobe-rnd/aem-boilerplate-xwalk/releases).
 
 1. Entre na sua instância de criação do AEM as a Cloud Service, navegue até o console Sites e clique em **Criar** > **Site a partir de modelo**.
 
@@ -136,7 +139,7 @@ Agora que você tem um projeto GitHub, deve criar um novo site AEM que o projeto
 
    ![Importando modelos](assets/edge-dev-getting-started/site-templates.png)
 
-1. Faça upload da criação do WYSIWYG com o modelo de site Edge Delivery Services que você baixou do GitHub.
+1. Faça upload da criação do WYSIWYG com o modelo de site do Edge Delivery Services que você baixou do GitHub.
 
    * O template deve ser carregado apenas uma vez. Depois de carregado, ele pode ser reutilizado para criar sites adicionais.
 
@@ -174,7 +177,7 @@ Quando terminar de editar o novo site usando o Editor universal, você poderá p
 
    ![Selecionando páginas para publicação](assets/edge-dev-getting-started/publishing.png)
 
-1. Toque ou clique em **Publish** na caixa de diálogo de confirmação para iniciar o processo.
+1. Toque ou clique em **Publicar** na caixa de diálogo de confirmação para iniciar o processo.
 
    ![Caixa de diálogo Publicar](assets/edge-dev-getting-started/publish-confirmation.png)
 
@@ -194,4 +197,4 @@ Consulte o guia [Criação de Blocos Instrumentados para uso com o Editor Univer
 
 >[!TIP]
 >
->Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service AEM como fonte de conteúdo, exiba [este webinário de GEMs do](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
