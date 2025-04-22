@@ -1,19 +1,19 @@
 ---
 title: Editor de páginas e Editor universal
-description: O Editor de páginas permanece compatível com o Adobe, mas o Editor universal traz possibilidades existentes para seus novos projetos.
+description: O Editor de páginas permanece suportado pelo Adobe, mas o Editor universal oferece possibilidades interessantes para seus novos projetos.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9fdc24600c9dd4ebf6a3d12462eb9bd387815360
+exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
+source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%
 
 ---
 
-
 # Editor de páginas e Editor universal {#page-editor-universal-editor}
 
-O Editor de páginas permanece compatível com o Adobe, mas o Editor universal traz possibilidades existentes para seus novos projetos.
+O Editor de páginas permanece suportado pelo Adobe, mas o Editor universal oferece possibilidades interessantes para seus novos projetos.
 
 ## Fundo {#background}
 
@@ -46,17 +46,17 @@ Como a lacuna de recursos entre os dois editores está diminuindo constantemente
 
 ### Persistência {#persistence}
 
-|  | Editor de página | Nota | Editor universal | Notas |
+|  | Editor de página | Notas | Editor universal | Notas |
 |---|---|---|---|---|
 | Editar componentes da página | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | Editando [Fragmentos de conteúdo](/help/assets/content-fragments/content-fragments.md) | [!BADGE Indisponível]{type=Negative} |  | [!BADGE Disponível]{type=Positive} | Inclusão da inserção de fragmentos novos e de reordenação |
 
 ### Recursos {#capabilities}
 
-|  | Editor de página | Nota | Editor universal | Notas |
+|  | Editor de página | Notas | Editor universal | Notas |
 |---|---|---|---|---|
 | Modelos de páginas | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | O Editor Universal é agnóstico em relação ao sistema de modelo usado. No entanto, o padrão de implementação típico favorece modelos definidos pelo desenvolvedor, já que as ferramentas de front-end modernas facilitam muito a definição e a manutenção da lógica do modelo diretamente no código. |
-| Edição do WYSIWYG | [!BADGE Disponível]{type=Positive} Limitado a Páginas |  | [!BADGE Disponível]{type=Positive} | Páginas de suporte e fragmentos de conteúdo |
+| Edição do WYSIWYG | [!BADGE Disponível]{type=Positive} | Limitado a páginas | [!BADGE Disponível]{type=Positive} | Páginas de suporte e fragmentos de conteúdo |
 | [Gerar Variações](/help/generative-ai/generate-variations.md) | [!BADGE Indisponível]{type=Negative} |  | [!BADGE Disponível]{type=Positive} | [Disponível como uma extensão](/help/implementing/universal-editor/extending.md) |
 | Inserir novo bloco | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | Reordenar bloco | [!BADGE Disponível]{type=Positive} | Possível com arrastar e soltar no contexto, mas não no painel lateral &quot;exibição em árvore&quot; | [!BADGE Disponível]{type=Positive} | Possível por meio do arrastar e soltar no painel lateral &quot;exibição em árvore&quot;, mas ainda não no contexto (planejado) |
