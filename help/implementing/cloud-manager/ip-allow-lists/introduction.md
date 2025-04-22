@@ -5,10 +5,10 @@ exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e7c38b4103c3de4b794da3a6dfa26c6204e1c0c6
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 26%
+source-wordcount: '515'
+ht-degree: 21%
 
 ---
 
@@ -77,3 +77,13 @@ Quando você [adicionar a Lista de permissões de IP](/help/implementing/cloud-m
 Para evitar a interrupção da execução do pipeline de front-end, verifique se essa Lista de permissões IP do Cloud Manager foi adicionada. Em seguida, aplique a lista ao ambiente de Autor *antes* de habilitar o pipeline.
 
 Consulte [Aplicar Lista de permissões de IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) e [Habilitar pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md) para obter mais informações.
+
+### O Editor Universal e as Listas de permissões de IP {#universal-editor}
+
+Se você pretende usar o Editor universal para criar seu conteúdo, é necessário adicionar os endereços IP que o Serviço do editor universal usa a uma Lista de permissões e aplicá-la.
+
+1. Recupere os endereços IP usados pelo Universal Editor Service do seguinte ponto de extremidade de API: `http://universal-editor-service.adobe.io/ip-ranges`.
+1. Crie uma lista de permissões com esses endereços IP, nomeando-a como `Universal Editor Service` ou similar.
+1. Aplicar a lista de permissões `Universal Editor Service`.
+
+A lista de endereços IP usados pelo Universal Editor Service está sujeita a alterações e você deve atualizar sua lista de permissões adequadamente.

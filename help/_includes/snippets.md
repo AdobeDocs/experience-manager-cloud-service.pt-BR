@@ -1,7 +1,7 @@
 ---
-source-git-commit: 92ad3ce6c880664e42fce761ab52b21b94a25a5c
+source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1459'
 ht-degree: 2%
 
 ---
@@ -187,20 +187,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 
 >[!IMPORTANT]
 >
->[O Editor Universal](/help/implementing/universal-editor/introduction.md) não é compatível com listas de permissões IP.
->
->Se quiser usar o Editor universal, as listas de permissões de IP não devem estar habilitadas.
-
-## Editor universal e Listas de permissões IP {#ue-ip-allow-lists}
-
->[!IMPORTANT]
->
->O Editor Universal não é compatível com [listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md).
->
->Se quiser usar o Editor universal, você deve:
->
->* Não habilitar Listas de permissões IP.
->* [Execute sua própria instância do Universal Editor Service](/help/implementing/universal-editor/local-dev.md).
+>Se você usar o [Editor Universal para criação de conteúdo](/help/implementing/universal-editor/introduction.md), também deverá [adicionar e aplicar uma lista de permissões com os endereços IP do Serviço do Editor Universal.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Trabalhar com o Dynamic Media {#work-with-dynamic-media}
 
