@@ -1,7 +1,7 @@
 ---
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: a3c3ee1b3c5944ca9f5178209adc2cc0b2e5f7ff
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1467'
 ht-degree: 2%
 
 ---
@@ -187,7 +187,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 
 >[!IMPORTANT]
 >
->Se você usar o [Editor Universal para criação de conteúdo](/help/implementing/universal-editor/introduction.md), também deverá [adicionar e aplicar uma lista de permissões com os endereços IP do Serviço do Editor Universal.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
+>Se você usar o [Editor Universal para criação de conteúdo](/help/implementing/universal-editor/introduction.md) e desejar usar também as [listas de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md), também deverá [adicionar e aplicar uma lista de permissões com os endereços IP do Serviço Editor Universal.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#univeral-editor)
 
 ## Trabalhar com o Dynamic Media {#work-with-dynamic-media}
 
