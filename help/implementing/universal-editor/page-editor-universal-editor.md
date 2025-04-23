@@ -1,10 +1,10 @@
 ---
 title: Editor de páginas e Editor universal
-description: O Editor de páginas permanece suportado pelo Adobe, mas o Editor universal oferece possibilidades interessantes para seus novos projetos.
+description: O Editor de páginas permanece compatível com o Adobe, mas o Editor universal traz possibilidades interessantes para seus novos projetos.
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 4956552ca93351a7b319bc808e0c5ec930bcbe28
+source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 3%
@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Editor de páginas e Editor universal {#page-editor-universal-editor}
 
-O Editor de páginas permanece suportado pelo Adobe, mas o Editor universal oferece possibilidades interessantes para seus novos projetos.
+O Editor de páginas permanece compatível com o Adobe, mas o Editor universal traz possibilidades interessantes para seus novos projetos.
 
 ## Fundo {#background}
 
