@@ -4,21 +4,15 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 3789904b4aa1ffa4a039e6b84af64f03f06a3206
+source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
 workflow-type: tm+mt
-source-wordcount: '6021'
+source-wordcount: '5993'
 ht-degree: 73%
 
 ---
 
 
 # API GraphQL do AEM para uso com Fragmentos de conteúdo {#graphql-api-for-use-with-content-fragments}
-
->[!IMPORTANT]
->
->Vários recursos da API do GraphQL para uso com fragmentos de conteúdo estão disponíveis por meio do Early Adoter Program.
->
->Para ver o status e saber como se candidatar caso esteja interessado, confira as [Notas de Versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Saiba como usar os Fragmentos de conteúdo no Adobe Experience Manager (AEM) as a Cloud Service com a API GraphQL do AEM, para entrega de conteúdo headless.
 
@@ -1187,7 +1181,7 @@ As limitações atuais são:
 * Se um ativo referenciado for removido do repositório remoto, isso resultará em uma referência quebrada ao ativo do fragmento de conteúdo.
 * Todos os Repositórios de ativos de entrega aos quais o usuário tem acesso estarão disponíveis para seleção, a lista disponível não pode ser limitada.
 * As instâncias do AEM e do Repositório de ativos remotos devem ter a mesma versão.
-* Nenhum metadado de ativo é exposto por meio da [API de Gerenciamento](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) e da [API de Entrega](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/sites/delivery/). É necessário usar a API de metadados do ativo para recuperar os detalhes dos metadados do ativo.
+* Nenhum metadado de ativo é exposto por meio da [API de Sites de Gerenciamento](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/) e da [Entrega de Fragmento de Conteúdo do AEM com OpenAPI](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/contentfragments/delivery/). É necessário usar a API de metadados do ativo para recuperar os detalhes dos metadados do ativo.
 
 ## GraphQL para AEM - resumo das extensões {#graphql-extensions}
 
