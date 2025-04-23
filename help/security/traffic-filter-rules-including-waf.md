@@ -4,9 +4,9 @@ description: Configuração das regras de filtro de tráfego, incluindo as regra
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: cdf15df0b8b288895db4db0032137c38994f4faf
+source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
 workflow-type: tm+mt
-source-wordcount: '4215'
+source-wordcount: '4278'
 ht-degree: 1%
 
 ---
@@ -184,7 +184,7 @@ Um Grupo de condições é composto por várias Condições simples e/ou de grup
 
 | **Propriedade** | **Tipo** | **Descrição** |
 |---|---|---|
-| reqProperty | `string` | Propriedade de solicitação.<br><br>Um de:<br><ul><li>`path`: Retorna o caminho completo de uma URL sem os parâmetros de consulta. (use `pathRaw` para a variante sem escape)</li><li>`url`: Retorna a URL completa, incluindo os parâmetros de consulta. (use `urlRaw` para a variante sem escape)</li><li>`queryString`: Retorna a parte da consulta de uma URL</li><li>`method`: retorna o método HTTP usado na solicitação.</li><li>`tier`: Retorna um de `author`, `preview` ou `publish`.</li><li>`domain`: retorna a propriedade de domínio (conforme definido no cabeçalho `Host`) em minúsculas</li><li>`clientIp`: Retorna o IP do cliente.</li><li>`forwardedDomain`: retorna o primeiro domínio definido no cabeçalho `X-Forwarded-Host` em minúsculas</li><li>`forwardedIp`: retorna o primeiro IP no cabeçalho `X-Forwarded-For`.</li><li>`clientCountry`: retorna um código de duas letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica o país em que o cliente está localizado.</li></ul> |
+| reqProperty | `string` | Propriedade de solicitação.<br><br>Um de:<br><ul><li>`path`: Retorna o caminho completo de uma URL sem os parâmetros de consulta. (use `pathRaw` para a variante sem escape)</li><li>`url`: Retorna a URL completa, incluindo os parâmetros de consulta. (use `urlRaw` para a variante sem escape)</li><li>`queryString`: Retorna a parte da consulta de uma URL</li><li>`method`: retorna o método HTTP usado na solicitação.</li><li>`tier`: Retorna um de `author`, `preview` ou `publish`.</li><li>`domain`: retorna a propriedade de domínio (conforme definido no cabeçalho `Host`) em minúsculas</li><li>`clientIp`: Retorna o IP do cliente.</li><li>`forwardedDomain`: retorna o primeiro domínio definido no cabeçalho `X-Forwarded-Host` em minúsculas</li><li>`forwardedIp`: retorna o primeiro IP no cabeçalho `X-Forwarded-For`.</li><li>`clientRegion`: Retorna o código de subdivisão do país que identifica a região em que o cliente está localizado, conforme descrito em [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2).</li><li>`clientCountry`: retorna um código de duas letras ([Símbolo de indicador regional](https://en.wikipedia.org/wiki/Regional_indicator_symbol)) que identifica o país em que o cliente está localizado.</li><li>`clientContinent`: Retorna um código de duas letras (AF, AN, AS, EU, NA, OC, SA) que identifica em qual continente o cliente está localizado.</li><li>`clientAsNumber`: Retorna o número [Sistema Autônomo](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) associado ao IP do cliente.</li><li>`clientAsName`: Retorna o nome associado ao número do Sistema Autônomo.</li></ul> |
 | reqHeader | `string` | Retorna o cabeçalho da solicitação com o nome especificado |
 | queryParam | `string` | Retorna o parâmetro de consulta com o nome especificado |
 | reqCookie | `string` | Retorna o cookie com o nome especificado |
@@ -569,7 +569,7 @@ As regras se comportam da seguinte maneira:
 
 * O nome de regra declarado pelo cliente de qualquer regra correspondente está listado no atributo `match`.
 * O atributo `action` determina se as regras bloqueiam, permitem ou registram em log.
-* Se o WAF estiver licenciado e habilitado, o atributo `waf` listará todos os sinalizadores do WAF (por exemplo, SQLI) que foram detectados. Isso é verdadeiro independentemente de os sinalizadores do WAF terem sido listados em alguma regra. Isso é para fornecer insight sobre novas regras em potencial a serem declaradas.
+* Se o WAF estiver licenciado e habilitado, o atributo `waf` listará todos os sinalizadores do WAF (por exemplo, SQLI) que foram detectados. Isso é verdadeiro independentemente de os sinalizadores do WAF terem sido listados em alguma regra. Isso é para fornecer o insight em novas regras em potencial a serem declaradas.
 * Se nenhuma regra declarada pelo cliente for correspondente e nenhuma regra waf for correspondente, a propriedade `rules` ficará em branco.
 
 Como observado anteriormente, as correspondências de regras do WAF só aparecem nos logs CDN para erros e passagens de CDN, não para ocorrências.
