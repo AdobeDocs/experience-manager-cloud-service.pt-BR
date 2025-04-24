@@ -5,10 +5,10 @@ role: User, Leader
 contentOwner: AG
 exl-id: 2459d482-828b-4410-810c-ac55ef0a2119
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: b7f8b4886372e2210ca8899260b3eb11b75ee798
+source-git-commit: 89c47db38bf26f8c5984278e49ad7727a8ec03e5
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 62%
+source-wordcount: '1700'
+ht-degree: 63%
 
 ---
 
@@ -214,10 +214,6 @@ Para definir o público alvo de aprovação:
 
 
    Para obter mais informações sobre as opções disponíveis, consulte [Destino de aprovação padrão e destinos de publicação para ativos aprovados](#default-approval-target-options-publish-destinations).
-
-   >[!NOTE]
-   >
-   >A definição de um target de aprovação é um recurso de disponibilidade limitada. Você pode ativá-lo ou desativá-lo criando um tíquete de suporte. Se o Dynamic Media com OpenAPI estiver ativado, ele será ativado por padrão.
 
    ![Status de aprovação](/help/assets/assets/approval-status-delivery.png)
 
