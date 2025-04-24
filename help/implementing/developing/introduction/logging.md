@@ -4,10 +4,10 @@ description: Saiba como usar o Logging para AEM as a Cloud Service a fim de conf
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 60bf6c6077ecfc6700ed9284834cf13e3772e25a
+source-git-commit: 7efbdecdddb66611cbde0dc23928a61044cc96d5
 workflow-type: tm+mt
-source-wordcount: '2364'
-ht-degree: 3%
+source-wordcount: '2377'
+ht-degree: 2%
 
 ---
 
@@ -411,7 +411,7 @@ Para definir o nível de log por ambiente, use a ramificação condicional aprop
 
 ```
 Define REWRITE_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define REWRITE_LOG_LEVEL warn
@@ -489,7 +489,7 @@ Para definir o nível de log por ambiente, use a ramificação condicional aprop
 
 ```
 Define DISP_LOG_LEVEL debug
-  
+
 <IfDefine ENVIRONMENT_STAGE>
   ...
   Define DISP_LOG_LEVEL warn
@@ -554,6 +554,7 @@ Os logs CDN são distintos dos outros logs no sentido de que seguem um formato j
 | *pop* | Centro de dados do servidor de cache CDN. |
 | *regras* | Os nomes de quaisquer [regras de filtro de tráfego](/help/security/traffic-filter-rules-including-waf.md) e sinalizadores WAF correspondentes, indicando também se a correspondência resultou em um bloqueio. Vazio se nenhuma regra for correspondente. |
 
+Os logs CDN podem ser estendidos com suas próprias propriedades usando [transformações de solicitação/resposta](/help/implementing/dispatcher/cdn-configuring-traffic.md#logproperty).
 
 ## Como acessar logs {#how-to-access-logs}
 
@@ -581,7 +582,7 @@ Os logs do AEM estão localizados na pasta `crx-quickstart/logs`, onde os seguin
 * Log de Solicitação HTTP do AEM: `request.log`
 * Log de Acesso HTTP do AEM: `access.log`
 
-Os logs da camada do Apache, incluindo o Dispatcher, estão no contêiner do Docker que contém o Dispatcher. Consulte a [documentação do Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/content-delivery/disp-overview.html) para obter informações sobre como iniciar o Dispatcher.
+Os logs da camada do Apache, incluindo o Dispatcher, estão no contêiner do Docker que contém o Dispatcher. Consulte a [documentação do Dispatcher](/help/implementing/dispatcher/disp-overview.md) para obter informações sobre como iniciar o Dispatcher.
 
 Para recuperar os logs:
 
