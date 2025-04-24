@@ -4,9 +4,9 @@ description: Saiba como criar  [!DNL Dynamic Media]  modelos usando um editor de
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: 5bdbd0c7273a1e8a650a87a7d0b0c9749f5e1030
+source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
 workflow-type: tm+mt
-source-wordcount: '3176'
+source-wordcount: '3165'
 ht-degree: 0%
 
 ---
@@ -322,8 +322,7 @@ Execute estas etapas para adicionar um link do CTA a uma camada:
 
    ![adicionar CTA](/help/assets/assets/add-cta.png)
 
-1. Clique em **[!UICONTROL Visualizar]** para visualizar seu modelo e ver seus parâmetros definidos.
-1. Clique em **[!UICONTROL Publicar]** e selecione **[!UICONTROL Sim]** para publicar seu modelo, se não tiver sido publicado anteriormente.
+1. Clique em **[!UICONTROL Visualizar]** e selecione **[!UICONTROL Publicar]** para publicar seu modelo, se não tiver sido publicado anteriormente.
 1. Navegue até a pasta onde este modelo está salvo, selecione este modelo e clique em ![página de detalhes](/help/assets/assets/details-page-icon.svg) **[!UICONTROL Detalhes]**.
 1. Clique em **[!UICONTROL Opções de Cópia]** e selecione **[!UICONTROL Copiar Código de Inserção]**. Certifique-se de publicar as imagens do modelo em [!DNL AEM and Dynamic Media] para copiar o código de inserção.
 
