@@ -4,9 +4,9 @@ description: Saiba como começar a usar a ferramenta Transferência de conteúdo
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 feature: Migration
 role: Admin
-source-git-commit: ccd96892ccce0ed896cd01978f07e2a556c18527
+source-git-commit: 4dcfc36167a40b59e251750bb112b073beddc52f
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1642'
 ht-degree: 14%
 
 ---
@@ -95,11 +95,13 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 
    A caixa de diálogo a seguir é apresentada. Observe que um conjunto de migração expirará após um período prolongado de inatividade. Depois que avisos forem exibidos no cartão do projeto e as linhas da tabela de trabalhos de migração por um período, o conjunto de migração expirará e seus dados não estarão mais disponíveis. Revise a [Expiração do Conjunto de Migração](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) para obter detalhes.
 
+   Durante a criação do conjunto de migração, você pode escolher a região geográfica na qual os dados temporários da migração serão armazenados.  É recomendável escolher a região mais próxima do ambiente de nuvem de destino para garantir o desempenho ideal durante as assimilações.  A região não pode ser alterada após a criação do conjunto de migração. Para usar uma região diferente, será necessário criar um novo conjunto de migração.
+
    ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
    >[!NOTE]
    >
-   >O nome deve seguir as mesmas convenções de um nó AEM, portanto, não pode conter nenhum destes caracteres: . / : [ ] | *
+   >O nome deve seguir as mesmas convenções de um nó AEM, portanto, não pode conter nenhum destes caracteres: `. / : [ ] | * &lt; > ^ ? { } % # &quot;nem símbolos ou emojis incomuns.
 
 1. Agora você deve ver sua lista de migração na exibição de lista. Selecione o símbolo de três pontos (**...**) para abrir o menu suspenso e selecione **Copiar chave de extração**. Essa chave é necessária durante a fase de Extração. Copie essa chave de Extração.
 
