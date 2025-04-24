@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Configuration,Dynamic Media
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 36ab36ba7e14962eba3947865545b8a3f29f6bbc
+source-git-commit: 2ca425f9a142432a5d3bcce8ce522c97e4c2cf2d
 workflow-type: tm+mt
-source-wordcount: '3625'
-ht-degree: 3%
+source-wordcount: '3721'
+ht-degree: 2%
 
 ---
 
@@ -19,6 +19,16 @@ ht-degree: 3%
 Se você usar o Adobe Experience Manager as a Cloud Service para ambientes diferentes, como desenvolvimento, armazenamento temporário e produção em tempo real, configure os Serviços de nuvem do Dynamic Media para cada um desses ambientes.
 
 Consulte também [Configurar uma conta alias de empresa do Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md)
+
+>[!IMPORTANT]
+>
+>**Não há suporte para Dynamic Media (Scene7) em ambientes de Segurança aprimorada**
+>
+>O Dynamic Media (Scene7) no AEM as a Cloud Service não está pronto para HIPAA e não pode ser usado em ambientes AEM onde a Segurança aprimorada esteja ativada.
+>
+>A partir da versão de abril de 2025 do AEM as a Cloud Service, uma restrição técnica impede que o Dynamic Media (Scene7) seja configurado em ambientes com Segurança aprimorada. Como resultado, o cartão **Configuração do Dynamic Media** em **Ferramentas** > **Serviços em nuvem** não está mais visível nesses ambientes.
+>
+>Além disso, os clientes que usam o AEM 6.5 devem estar cientes de que a pilha do Dynamic Media (Scene7) não está pronta para HIPAA.
 
 ## Diagrama de arquitetura do Dynamic Media {#architecture-diagram-of-dynamic-media}
 
@@ -95,10 +105,10 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Propriedade | Descrição |
    |---|---|
-   | Empresa | O nome da conta do Dynamic Media.<br>**Importante**: somente uma Configuração do Dynamic Media nos Serviços em Nuvem tem suporte em uma instância do Experience Manager; não adicione mais de uma configuração. Várias Configurações do Dynamic Media em uma instância do Experience Manager _não_ suportadas ou recomendadas pela Adobe.<!-- CQDOC-19579 and CQDOC-19612 --><br>Consulte também [Configurar uma conta alias de empresa do Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md). |
+   | Empresa | O nome da conta do Dynamic Media.<br>**Importante**: somente uma Configuração do Dynamic Media nos Serviços em Nuvem tem suporte em uma instância do Experience Manager; não adicione mais de uma configuração. A Adobe *não* oferece suporte ou recomenda configurar várias configurações do Dynamic Media em uma única instância do Experience Manager.<!-- CQDOC-19579 and CQDOC-19612 --><br>Consulte também [Configurar uma conta alias de empresa do Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md). |
    | Caminho da pasta raiz da empresa | Caminho da pasta raiz da sua empresa. |
-   | Publicação no Assets | Você pode escolher entre três opções a seguir:<br>**[!UICONTROL Imediatamente ]**- Quando os ativos são carregados, o sistema assimila os ativos e fornece a URL/Incorporar instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.<br>**[!UICONTROL Na ativação]** - Primeiro publique explicitamente o ativo antes de fornecer um link de URL/Incorporação.<br>**[!UICONTROL Publicação seletiva ]**- as Assets são publicadas automaticamente apenas para visualização segura. Eles também podem ser publicados explicitamente no Experience Manager as a Cloud Service sem publicação no DMS7 para entrega no domínio público. No futuro, essa opção pretende publicar ativos no Experience Manager as a Cloud Service e publicar ativos no Dynamic Media, mutuamente exclusivos entre si. Ou seja, você pode publicar ativos no DMS7 para usar recursos como Recorte inteligente ou representações dinâmicas. Ou você pode publicar ativos exclusivamente no Experience Manager as a Cloud Service para visualização; esses mesmos ativos não são publicados no DMS7 para entrega no domínio público. |
-   | Servidor de visualização seguro | Permite especificar o caminho do URL para o servidor de visualização de representações seguras. Ou seja, depois que as representações são geradas, o Experience Manager as a Cloud Service pode acessar e pré-visualizar com segurança as representações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância do Experience Manager as a Cloud Service).<br>A menos que você tenha uma organização especial para usar o servidor de sua própria empresa ou um servidor especial, a Adobe recomenda que você deixe essa configuração como especificada. |
+   | Publicação no Assets | Você pode escolher entre três opções a seguir:<br>**[!UICONTROL Imediatamente ]**- Quando os ativos são carregados, o sistema assimila os ativos e fornece a URL/Incorporar instantaneamente. Não há necessidade de intervenção do usuário para publicar ativos.<br>**[!UICONTROL Na ativação]** - Primeiro publique explicitamente o ativo antes de fornecer um link de URL/Incorporação.<br>**[!UICONTROL Publicação seletiva ]**- as Assets são publicadas automaticamente apenas para visualização segura. Eles também podem ser publicados explicitamente no Experience Manager as a Cloud Service sem publicação no DMS7 para entrega no domínio público. No futuro, essa opção pretende publicar ativos no Experience Manager as a Cloud Service e publicar ativos no Dynamic Media, mutuamente exclusivos entre si. Ou seja, você pode publicar ativos no DMS7 para usar recursos como Recorte inteligente ou representações dinâmicas. Ou você pode publicar ativos exclusivamente no Experience Manager as a Cloud Service para pré-visualização. Esses mesmos ativos não são publicados no DMS7 para entrega no domínio público. |
+   | Servidor de visualização seguro | Ele permite especificar o caminho do URL para o servidor de visualização de representações seguras. Ou seja, depois que as representações são geradas, o AEM as a Cloud Service pode acessar e pré-visualizar com segurança as representações remotas do Dynamic Media (nenhum binário é enviado de volta para a instância do Experience Manager as a Cloud Service).<br>A menos que você tenha uma organização especial para usar o servidor de sua própria empresa ou um servidor especial, a Adobe recomenda que você deixe essa configuração como especificada. |
    | Sincronizar todo o conteúdo | Selecionado por padrão. Desmarque essa opção se desejar incluir ou excluir seletivamente ativos da sincronização com o Dynamic Media. Desmarcar essa opção permite escolher entre os dois seguintes modos de sincronização do Dynamic Media:<br>**[!UICONTROL Modo de sincronização do Dynamic Media]**<br>**[!UICONTROL Habilitar por padrão ]**- A configuração é aplicada a todas as pastas por padrão, a menos que você marque uma pasta especificamente para exclusão. <!-- you can then deselect the folders that you do not want the configuration applied to.--><br>**[!UICONTROL Desabilitado por padrão]** - A configuração não é aplicada a nenhuma pasta até que você marque explicitamente uma pasta selecionada para sincronização com o Dynamic Media.<br>Para marcar uma pasta selecionada para sincronização com o Dynamic Media, selecione uma pasta de ativos e, na barra de ferramentas, selecione **[!UICONTROL Propriedades]**. Na guia **[!UICONTROL Detalhes]**, na lista suspensa **[!UICONTROL Modo de sincronização do Dynamic Media]**, escolha uma das três opções a seguir. Quando terminar, selecione **[!UICONTROL Salvar]**. _Lembre-se: estas três opções não estarão disponíveis se você tiver selecionado **Sincronizar todo o conteúdo**anteriormente._ Consulte também [Trabalhar com publicação seletiva no nível da pasta no Dynamic Media](/help/assets/dynamic-media/selective-publishing.md).<br>**[!UICONTROL Herdado ]**- Nenhum valor de sincronização explícito na pasta. Em vez disso, a pasta herda o valor de sincronização de uma de suas pastas ancestrais ou o modo padrão na configuração da nuvem. O status detalhado de herdado é exibido por meio de uma dica de ferramenta.<br>**[!UICONTROL Habilitar para subpastas]** - Incluir tudo nesta subárvore para sincronização com o Dynamic Media. As configurações específicas da pasta substituem o modo padrão na configuração da nuvem.<br>**[!UICONTROL Desabilitado para subpastas ]**- Exclua tudo nesta subárvore da sincronização com o Dynamic Media. |
 
    >[!NOTE]
@@ -120,7 +130,7 @@ To migrate any custom viewer presets and configurations that you have created fr
    >Essa notificação da Caixa de entrada informa se a configuração foi bem-sucedida ou não.
    > Consulte [Solucionar problemas de uma nova configuração do Dynamic Media](#troubleshoot-dm-config) e [Sua Caixa de Entrada](/help/sites-cloud/authoring/inbox.md) para obter mais informações.
 
-1. Para visualizar com segurança o conteúdo do Dynamic Media antes de sua publicação, o Experience Manager as a Cloud Service usa a validação baseada em token e, portanto, o Experience Manager Author visualiza o conteúdo do Dynamic Media por padrão. No entanto, você pode *incluir na lista de permissões* mais IPs para fornecer aos usuários acesso à visualização segura do conteúdo. Para configurar esta ação no Experience Manager as a Cloud Service, consulte [Configurar configuração de publicação do Dynamic Media para o servidor de imagens - guia Segurança](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
+1. Para visualizar o conteúdo do Dynamic Media com segurança antes de sua publicação, o Experience Manager as a Cloud Service usa a validação baseada em token e, portanto, o Experience Manager Author visualiza o conteúdo do Dynamic Media por padrão. No entanto, você pode *incluir na lista de permissões* mais IPs para fornecer aos usuários acesso seguro à pré-visualização de conteúdo. Para configurar essa ação no Experience Manager as a Cloud Service, consulte a [guia Configurar Configuração de Publicação do Dynamic Media para Servidor de Imagens - Segurança](/help/assets/dynamic-media/dm-publish-settings.md#security-tab). <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
 <!--
     * Open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. Your credentials and sign-in details were provided by Adobe at the time of provisioning. If you do not have this information, contact Adobe Customer Support.
@@ -265,7 +275,7 @@ Consulte [Configurar predefinições de imagem](/help/assets/dynamic-media/manag
 
 Para configurar as propriedades de cor padrão para ativar a correção de cores ao solicitar imagens:
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na sua conta usando as credenciais fornecidas durante o provisionamento.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started) e entre na sua conta usando as credenciais fornecidas durante o provisionamento.
 1. Vá para **[!UICONTROL Configuração > Configuração do Aplicativo]**.
 1. Expanda a área **[!UICONTROL Publicar configuração]** e selecione **[!UICONTROL Servidor de imagens]**. Defina **[!UICONTROL Publicar contexto]** como **[!UICONTROL Serviço de imagem]** ao definir padrões para instâncias de publicação.
 1. Role até a propriedade que você deve alterar, por exemplo, uma propriedade na área **[!UICONTROL Atributos de gerenciamento de cores]**.
@@ -292,7 +302,7 @@ Isso faria o seguinte:
 
 #### Editar tipos MIME para formatos compatíveis {#editing-mime-types-for-supported-formats}
 
-Você pode definir quais tipos de ativos são processados pelo Dynamic Media e personalizar os parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
+Você pode especificar os tipos de ativos que o Dynamic Media processa e personalizar os parâmetros avançados de processamento de ativos. Por exemplo, você pode especificar parâmetros de processamento de ativos para fazer o seguinte:
 
 * Converter um Adobe PDF em um ativo de eCatalog.
 * Converta um documento do Adobe Photoshop (.PSD) em um ativo de modelo de banner para personalização.
@@ -304,7 +314,7 @@ Consulte [Carregar ativos](/help/assets/add-assets.md).
 **Para editar tipos MIME para formatos com suporte:**
 
 1. Faça logon no Experience Manager as a Cloud Service como administrador do produto.
-1. No Experience Manager as a Cloud Service, selecione o logotipo do Experience Manager as a Cloud Service para acessar o console de navegação global e vá para **[!UICONTROL Geral > CRXDE Lite]**.
+1. No Experience Manager as a Cloud Service, selecione o logotipo Experience Manager as a Cloud Service para acessar o console de navegação global e vá para **[!UICONTROL Geral > CRXDE Lite]**.
 
    Se você não tiver acesso ao CRXDE Lite, consulte [Usando o CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
@@ -329,7 +339,7 @@ Consulte [Carregar ativos](/help/assets/add-assets.md).
 
 #### Adicionar tipos MIME para formatos não suportados {#adding-mime-types-for-unsupported-formats}
 
-Você pode adicionar tipos MIME personalizados para formatos não compatíveis com o Experience Manager Assets. Para garantir que qualquer novo nó adicionado no CRXDE Lite não seja excluído pelo Experience Manager, mova o tipo MIME antes de `image_`. Além disso, verifique se o valor habilitado está definido como **[!UICONTROL false]**.
+Você pode adicionar tipos MIME personalizados para formatos não compatíveis com o Experience Manager Assets. Para impedir que o Experience Manager exclua qualquer novo nó adicionado no CRXDE Lite, mova o tipo MIME para antes de `image_`. Além disso, verifique se o valor habilitado está definido como **[!UICONTROL false]**.
 
 **Para adicionar tipos MIME para formatos sem suporte:**
 
@@ -342,7 +352,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis c
 
    ![2019-08-02_16-17-29](assets/2019-08-02_16-17-29.png)
 
-1. Na página, role para baixo até o nome *Adobe CQ Scene7 Asset MIME type Service*, como visto na seguinte captura de tela. À direita do nome, selecione **[!UICONTROL Editar os valores de configuração]** (ícone de lápis).
+1. Na página, role para baixo até o nome *Adobe CQ Scene7 asset MIME type Service*, como visto na seguinte captura de tela. À direita do nome, selecione **[!UICONTROL Editar os valores de configuração]** (ícone de lápis).
 
    ![Editar os valores de configuração](assets/2019-08-02_16-44-56.png)
 
@@ -384,7 +394,7 @@ Você pode adicionar tipos MIME personalizados para formatos não compatíveis c
 
 ### (Opcional) Ajuste o desempenho do Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Para manter o Dynamic Media <!--(with `dynamicmedia_scene7` run mode)--> em execução sem problemas, a Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
+Para manter o Dynamic Media em perfeita execução, a Adobe recomenda as seguintes dicas de ajuste de desempenho/escalabilidade de sincronização:
 
 * [Atualize os parâmetros de Trabalho predefinidos para processamento de diferentes formatos de arquivo](#update-job-para).
 * [Atualizar as threads de trabalho predefinidas da Fila de fluxo de trabalho do Granite (ativos de vídeo)](#update-granite-workflow-queue-worker-threads-video)
@@ -415,7 +425,7 @@ Consulte também [Adicionando tipos MIME para formatos sem suporte](#adding-mime
 
 #### Atualizar as threads de trabalho predefinidas da Fila de fluxo de trabalho do Granite (ativos de vídeo) {#update-granite-workflow-queue-worker-threads-video}
 
-A fila de Fluxo de trabalho do Granite é usada para fluxos de trabalho não transitórios. No Dynamic Media, ele era usado para processar vídeo com o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]**.
+A fila de Fluxo de trabalho do Granite é usada para fluxos de trabalho não transitórios. No Dynamic Media, ele é usado para processar vídeo com o fluxo de trabalho **[!UICONTROL Codificação de vídeo do Dynamic Media]**.
 
 >[!NOTE]
 >
@@ -460,7 +470,7 @@ A fila de Fluxo de trabalho de Trânsito do Granite é usada para o fluxo de tra
 
 1. No campo **[!UICONTROL Máximo de trabalhos paralelos]**, altere o número para o valor desejado.
 
-   Você pode aumentar o **[!UICONTROL Máximo de Trabalhos Paralelos]** para oferecer suporte adequado ao carregamento pesado de arquivos para o Dynamic Media. O valor exato depende da capacidade do hardware. Em determinados cenários, como uma migração inicial ou um upload em massa único, você pode usar um valor grande. No entanto, esteja ciente de que usar um valor alto (como o dobro do número de núcleos) pode ter efeitos negativos em outras atividades simultâneas. Dessa forma, teste e ajuste o valor com base em seu caso de uso específico.
+   Você pode aumentar o **[!UICONTROL Máximo de Trabalhos Paralelos]** para dar suporte ao carregamento pesado adequado de arquivos para o Dynamic Media. O valor exato depende da capacidade do hardware. Em determinados cenários, como uma migração inicial ou um upload em massa único, você pode usar um valor grande. No entanto, esteja ciente de que usar um valor alto (como o dobro do número de núcleos) pode ter efeitos negativos em outras atividades simultâneas. Dessa forma, teste e ajuste o valor com base em seu caso de uso específico.
 
 <!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
@@ -485,7 +495,7 @@ A configuração Fazer upload de conexão do Dynamic Media Classic (Scene7) sinc
 
    A configuração **[!UICONTROL Número de conexões]** controla o número máximo de conexões HTTP permitidas para o carregamento do Experience Manager para o Dynamic Media. Normalmente, o valor predefinido de dez conexões é suficiente.
 
-   A configuração **[!UICONTROL Tempo limite do trabalho ativo]** determina o tempo de espera para que os ativos carregados do Dynamic Media sejam publicados no servidor de entrega. Esse valor é de 2100 segundos ou 35 minutos por padrão.
+   A configuração **[!UICONTROL Tempo limite do trabalho ativo]** define quanto tempo o sistema aguarda até que o servidor de entrega publique os ativos carregados do Dynamic Media. Esse valor é de 2100 segundos ou 35 minutos por padrão.
 
    Para a maioria dos casos de uso, a configuração de 2100 é suficiente.
 
