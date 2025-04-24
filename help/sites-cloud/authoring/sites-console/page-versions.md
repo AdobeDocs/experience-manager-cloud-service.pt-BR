@@ -5,10 +5,10 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
 workflow-type: tm+mt
-source-wordcount: '1516'
-ht-degree: 97%
+source-wordcount: '1574'
+ht-degree: 93%
 
 ---
 
@@ -25,6 +25,13 @@ O controle de versão cria um “instantâneo” de uma página em um momento es
 * Comparar a versão atual da página com uma versão anterior.
    * As diferenças no texto e nas imagens são destacadas.
 * O Timewarp usa as versões de página para determinar o estado do ambiente de publicação.
+
+>[!NOTE]
+>
+>Somente o conteúdo tem versão no repositório do AEM. Os recursos dinâmicos, como código, CSS e JavaScript, não têm controle de versão.
+>
+>* Ao visualizar versões, o conteúdo é exibido com o código atual, CSS e JavaScript do repositório.
+>* Ao restaurar versões, somente o conteúdo é restaurado e o código atual, CSS e JavaScript do repositório são aplicados a ele.
 
 ## Criar uma nova versão   {#creating-a-new-version}
 
