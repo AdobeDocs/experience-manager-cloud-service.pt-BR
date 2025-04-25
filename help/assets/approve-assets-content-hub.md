@@ -2,10 +2,10 @@
 title: Aprovar ativos para o Content Hub
 description: Saiba como aprovar ativos no Assets as a Cloud Service para disponibilizá-los no Content Hub.
 exl-id: fc849028-ab56-4388-b8d6-e36cac8f868f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: ba73cc52c337d16a2cd33438eb568adcabd492dd
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 2%
+source-wordcount: '1276'
+ht-degree: 6%
 
 ---
 
@@ -31,19 +31,19 @@ ht-degree: 2%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -74,7 +74,7 @@ Os ativos marcados como `approved` no Assets as a Cloud Service estão automatic
 
 >[!NOTE]
 >
-O Assets as a Cloud Service e o Content Hub devem usar a mesma organização para que os ativos sejam exibidos no Content Hub.
+>O Assets as a Cloud Service e o Content Hub devem usar a mesma organização para que os ativos sejam exibidos no Content Hub.
 
 Para definir o status do ativo como `approved` usando o modo de exibição Assets no AEM as a Cloud Service:
 
@@ -98,6 +98,52 @@ Para aprovar ativos em massa em uma pasta na exibição do Assets:
 1. Selecione **[!UICONTROL Aprovado]** no campo **[!UICONTROL Status]**, disponível na seção [!UICONTROL Propriedades] do painel direito.
 
 1. Clique em **[!UICONTROL Salvar]**.
+
+## Definir público alvo de aprovação {#set-approval-target}
+
+A exibição do Assets permite publicar ativos aprovados no Dynamic Media com recursos OpenAPI, Content Hub ou ambos com base no valor definido no campo **Destino de aprovação**, disponível na página Detalhes do ativo.
+
+Para definir o público alvo de aprovação:
+
+1. Selecione o ativo e clique em **[!UICONTROL Detalhes]** na barra de ferramentas.
+
+1. Na guia **[!UICONTROL Básico]**, selecione o status do ativo na lista suspensa **[!UICONTROL Status]**. Os valores possíveis incluem Aprovado, Rejeitado e Sem status (padrão).
+
+1. Se você selecionar **Aprovado** na etapa 2, selecione um destino de aprovação. Os valores possíveis incluem Delivery e Content Hub.
+
+   * **Delivery** é a opção padrão selecionada no menu suspenso e publica o ativo no [Dynamic Media com OpenAPI](/help/assets/dynamic-media-open-apis-overview.md) e no [Content Hub](/help/assets/product-overview.md), se ambos estiverem habilitados para Experience Manager Assets.
+
+   * Selecionar **Content Hub** publica o ativo apenas no Content Hub. O Content Hub é exibido como uma opção somente se estiver ativado para o Experience Manager Assets.
+
+   * Se você não selecionar uma opção na lista suspensa, a opção padrão ativada para o ambiente do AEM as a Cloud Service será aplicada automaticamente ao ativo.
+
+
+   Para obter mais informações sobre as opções disponíveis, consulte [Destino de aprovação padrão e destinos de publicação para ativos aprovados](#default-approval-target-options-publish-destinations).
+
+   >[!NOTE]
+   >
+   >A definição de um target de aprovação é um recurso de disponibilidade limitada. Você pode ativá-lo ou desativá-lo criando um tíquete de suporte. Se o Dynamic Media com OpenAPI estiver ativado, ele será ativado por padrão.
+
+   ![Status de aprovação](/help/assets/assets/approval-status-delivery.png)
+
+1. Especifique outras propriedades do ativo e clique em **[!UICONTROL Salvar]**.
+
+Alguns pontos adicionais a serem observados incluem:
+
+* Quando você não estiver usando o formulário de metadados padrão e não puder exibir o campo **[!UICONTROL Destino da Aprovação]**, [edite o formulário de metadados](/help/assets/metadata-assets-view.md#metadata-forms) para arrastar o campo **[!UICONTROL Aprovação para]** dos componentes disponíveis para o formulário de metadados e clique em **[!UICONTROL Salvar]**.
+
+* Ao selecionar o público alvo de aprovação como `Content Hub` usando a exibição do Assets, os ativos são disponibilizados no Content Hub para os usuários que fazem parte da mesma organização.
+
+### Destino de aprovação padrão e destinos de publicação para ativos aprovados {#default-approval-target-options-publish-destinations}
+
+A tabela a seguir ilustra os pré-requisitos para exibição da lista suspensa `Approval Target` e do público alvo de aprovação padrão com base na habilitação do DM com OpenAPI e Content Hub no seu ambiente AEM as a Cloud Service:
+
+| Dynamic Media com OpenAPI | Centro de conteúdo | A lista suspensa Approval Target é exibida? | Público alvo de aprovação padrão para ativos aprovados | Destino de publicação |
+| --- | --- | --- | --- |---|
+| Habilitado | Habilitado | Sim | Entrega | Dynamic Media com OpenAPI e Content Hub |
+| Não habilitado | Habilitado | Sim | Centro de conteúdo | Centro de conteúdo |
+| Habilitado | Não habilitado | Sim | Entrega | Dynamic Media com OpenAPI |
+| Não habilitado | Não habilitado | Não | N/A | N/A |
 
 ## Automatizar aprovação de ativos recém-assimilados na exibição do administrador {#automate-approval-newly-ingested-assets}
 
@@ -135,7 +181,7 @@ Siga estas etapas para automatizar a aprovação de ativos recém-assimilados em
 
 >[!NOTE]
 > 
-Essa abordagem aprova os ativos recém-criados na pasta. Para ativos existentes na pasta, é necessário selecionar e aprovar manualmente.
+>Essa abordagem aprova os ativos recém-criados na pasta. Para ativos existentes na pasta, é necessário selecionar e aprovar manualmente.
 
 ## Gerenciar ativos carregados usando o Content Hub {#manage-assets-uploaded-using-content-hub}
 

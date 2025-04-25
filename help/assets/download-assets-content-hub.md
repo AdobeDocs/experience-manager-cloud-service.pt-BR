@@ -3,10 +3,10 @@ title: Baixar ativos da Content Hub
 description: Saiba como baixar ativos no portal Content Hub
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: e108d25f3cdc025e0fbe8010854f245f62786baf
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 0%
+source-wordcount: '938'
+ht-degree: 2%
 
 ---
 
@@ -32,19 +32,19 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -74,8 +74,8 @@ Para baixar um ativo e suas representações, execute as seguintes etapas:
 
    >[!NOTE]
    >
-   * As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [Configuração](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   * É possível baixar todas as [representações de corte estáticas, dinâmicas e inteligentes](#types-of-renditions) ao baixar um ativo.
+   >* As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [Configuração](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* É possível baixar todas as [representações de corte estáticas, dinâmicas e inteligentes](#types-of-renditions) ao baixar um ativo.
 
 1. Selecione uma ou mais representações e clique em **[!UICONTROL Baixar]**.
 
@@ -86,7 +86,7 @@ Se você estiver baixando um ativo licenciado, selecione **[!UICONTROL Eu li e a
 
 >[!NOTE]
 >
-Os usuários com acesso ao [Dynamic Media com recursos de API aberta](/help/assets/dynamic-media-open-apis-overview.md) podem exibir e baixar representações de corte dinâmico e inteligente.
+> Os usuários com acesso ao [Dynamic Media com recursos de API aberta](/help/assets/dynamic-media-open-apis-overview.md) podem exibir e baixar representações de corte dinâmico e inteligente.
 
 ## Baixar vários ativos e suas representações {#download-multiple-assets-renditions}
 
@@ -103,8 +103,8 @@ Para baixar vários ativos e suas representações, execute as seguintes etapas:
 
      >[!NOTE]
      >
-     * As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [Configuração](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-     * Você só pode baixar [representações estáticas](#types-of-renditions) ao baixar vários ativos.
+     >* As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [Configuração](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+     >* Você só pode baixar [representações estáticas](#types-of-renditions) ao baixar vários ativos.
 
    Se algum dos ativos selecionados for um ativo licenciado, clique na licença do ativo no painel esquerdo para ver sua visualização, o que permite selecionar **[!UICONTROL Li e aceitei os termos e condições mencionados acima]** e depois clique em **[!UICONTROL Baixar]**. A visualização da licença é exibida somente se o ativo for aprovado usando o ambiente de criação do Assets as a Cloud Service. Para obter mais informações, consulte [Gerenciar ativos licenciados no Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
@@ -153,17 +153,35 @@ Saiba mais sobre [exibir e gerenciar representações no Experience Manager Asse
 
 * [Representações estáticas](/help/assets/renditions.md#static-renditions): representações estáticas são versões pré-criadas de ativos digitais, normalmente geradas durante a assimilação ou modificação do ativo. Eles são otimizados para usos e plataformas específicas, como miniaturas da Web, formatos amigáveis para dispositivos móveis para designs responsivos ou arquivos de alta resolução para impressão, proporcionando uma experiência simplificada e consistente.
 
-* [Representações dinâmicas](/help/assets/renditions.md#dynamic-renditions): as representações dinâmicas são versões personalizadas em tempo real de ativos para executar várias ações, como redimensionar imagens para diferentes resoluções de dispositivo ou recortar para ajustar várias taxas de proporção. Essas representações permitem oferecer experiências personalizadas e otimizadas para requisitos mais amplos. Representações dinâmicas de ativos são criadas no ambiente de autor [!DNL Adobe Experience Manager Assets].
+* [Representações dinâmicas](/help/assets/renditions.md#dynamic-renditions): as representações dinâmicas são versões personalizadas em tempo real de ativos para executar várias ações, como redimensionar imagens para diferentes resoluções de dispositivo ou recortar para ajustar várias taxas de proporção. Essas representações permitem oferecer experiências personalizadas e otimizadas para requisitos mais amplos. Representações dinâmicas de ativos são criadas no ambiente de autor [!DNL Adobe Experience Manager Assets]. Para obter informações sobre as etapas necessárias para habilitar representações dinâmicas, consulte [Habilitar representações dinâmicas](#enable-dynamic-media-renditions).
 
 * [Corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): o corte inteligente se concentra exclusivamente na parte essencial de um ativo durante o processo de corte. O Corte inteligente do Dynamic Media para aproveita a inteligência artificial fornecida pelo Adobe Sensei para rastrear o ponto de interesse, garantindo que nossos ativos tenham a melhor aparência em todos os tamanhos de tela. O recorte inteligente [!DNL Adobe Experience Manager] exibe a largura e a altura das representações de um ativo junto com o título. Veja mais em [usando o Recorte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
+  As representações de Recorte inteligente são exibidas e estão disponíveis para download somente se você tiver acesso ao [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). As representações de Recorte inteligente estão disponíveis somente para ativos de imagem.
+
   ![Tipos de representações](/help/assets/assets/renditions-types.png)
 
+### Ativar representações dinâmicas {#enable-dynamic-media-renditions}
 
->[!NOTE]
-> 
-* O recurso de representações de corte dinâmico e inteligente está na fase inicial de Adoção. Para obter acesso ao recurso, [crie e envie um caso de Suporte ao Cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
-* Os clientes recém-integrados nos [serviços de API aberta do Dynamic Media](/help/assets/dynamic-media-open-apis-overview.md) devem revisar suas predefinições de imagens existentes para aprovação.
+Para ativar representações dinâmicas:
+
+1. Verifique se você tem acesso ao [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md).
+
+   Depois de ter acesso ao Dynamic Media com recursos OpenAPI, todos os ativos marcados como `Approved` estarão disponíveis para entrega pública usando o Dynamic Media.
+
+1. Defina o [destino de aprovação do ativo](/help/assets/approve-assets-content-hub.md#set-approval-target) como Content Hub para aprovar ativos somente para o Content Hub.
+
+1. Habilite a opção de alternância **[!UICONTROL Habilitar disponibilidade de representações]**, disponível na guia **[!UICONTROL Representações]** da Interface do Usuário [Configuração](/help/assets/configure-content-hub-ui-options.md#access-configuration-options-content-hub).
+
+1. Salve novamente as predefinições de imagem existentes para disponibilizá-las no Content Hub. Ela é aplicável somente se você tiver integrado recentemente ao Dynamic Media com OpenAPI.
+
+   Para salvar novamente as predefinições de imagens existentes, navegue até Admin view e selecione **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Predefinições de Imagens]**. Selecione uma predefinição, clique em **[!UICONTROL Editar]** e em **[!UICONTROL Salvar]**.
+
+
+
+   >[!NOTE]
+   > 
+   > As representações dinâmicas estão disponíveis somente para ativos de imagem.
 
 
 
