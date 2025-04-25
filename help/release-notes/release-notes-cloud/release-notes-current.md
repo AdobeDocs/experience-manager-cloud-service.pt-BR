@@ -5,10 +5,10 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: bbf66195593032eb2ccf073ec78685c9d9726235
+source-git-commit: 32aaabb3f47d2352245ab69f68a6ac98b9828449
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 14%
+source-wordcount: '1713'
+ht-degree: 9%
 
 ---
 
@@ -28,7 +28,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 
 ## Data de lançamento {#release-date}
 
-A data de lançamento da versão atual (2025.3.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 27 de março de 2025. O próximo lançamento de recursos (2025.4.0) está planejado para sexta-feira, 24 de abril de 2025.
+A data de lançamento da versão atual (2025.4.0) do [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] é sexta-feira, 24 de abril de 2025. O próximo lançamento de recursos (2025.5.0) está planejado para sexta-feira, 29 de maio de 2025.
 
 ## Notas da versão de manutenção {#maintenance}
 
@@ -44,31 +44,62 @@ Have a look at the February 2025 Release Overview video for a summary of the fea
 
 -->
 
+## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
+
+### Novos recursos no Experience Manager Sites {#enhancements-sites}
+
+**Nova interface do Administrador do modelo de fragmento de conteúdo**
+
+Completando ainda mais a lista de novas interfaces de usuário do lado do cliente ao trabalhar com Fragmentos de conteúdo do AEM, uma nova interface de administrador agora está disponível para modelos de fragmento de conteúdo. A nova interface do usuário fornece uma exibição de lista limpa e moderna que permite pesquisar modelos com filtros e que mostra as tags de modelo e quais fragmentos de conteúdo existem com base em um determinado modelo. A documentação pode ser encontrada [aqui](/help/sites-cloud/administering/content-fragments/managing-content-fragment-models.md).
+
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Novos recursos no Dynamic Media {#new-features-dynamic-media}
+### Dynamic Media (Scene7) {#dynamic-media-scene7}
 
-**Suporte a formulários longos para vídeos entregues com o Dynamic Media com API aberta**
+**Não há suporte para Dynamic Media (Scene7) em ambientes de Segurança aprimorada**
 
-O Dynamic Media com OpenAPI agora é compatível com vídeos de formulários longos. Os vídeos de formato longo podem suportar até 50 GB e 2 horas.
+O Dynamic Media (Scene7) no AEM as a Cloud Service não está pronto para HIPAA e não pode ser usado em ambientes AEM onde a Segurança aprimorada esteja ativada.
 
-### Dynamic Media Classic {#dmc}
+A partir da versão de abril de 2025 do AEM as a Cloud Service, uma restrição técnica impede que o Dynamic Media (Scene7) seja configurado em ambientes com Segurança aprimorada. Como resultado, o cartão **Configuração do Dynamic Media** em **Ferramentas** > **Serviços em nuvem** não está mais visível nesses ambientes.
 
-<!-- CARRY OVER TO APRIL 2025 RELEASE NOTES -->
+Além disso, os clientes que usam o AEM 6.5 devem estar cientes de que a pilha do Dynamic Media (Scene7) não está pronta para HIPAA.
 
-The Bandwidth tab in the Dynamic Media Classic reporting dashboard is no longer supported as of April 2025.
+### Dynamic Media Classic {#dynamic-media-classic}
 
-See [Bandwidth and Storage, Types of reports](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+**Relatório**
+
+A guia Largura de banda no painel de relatórios do Dynamic Media Classic não é mais compatível desde abril de 2025.
+
+Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 
-## Novos recursos na visualização de ativos {#new-features-assets-view}
+## Novos recursos no Assets View {#new-features-assets-view}
 
+**Relações do ativo**
 
-**Suporte para marcas raiz**
+A Exibição do Assets agora permite visualizar e editar relações de ativos em um painel de Detalhes de ativos simplificado. Adicione facilmente relacionamentos como Source e Derivação ao conteúdo para que os usuários possam encontrar de forma mais eficaz o conteúdo principal relevante.
 
-O AEM Assets agora oferece suporte ao mapeamento de uma propriedade de tag em um formulário de metadados para metadados personalizados. Além disso, como administrador, você pode restringir a disponibilidade de tags aos usuários, restringindo o acesso a uma tag raiz específica e às tags existentes na tag raiz.
+![Exemplo de relação do Assets](/help/assets/assets/asset-relations-example.png)
+
+**Comparar versões de um ativo**
+
+Agora é possível selecionar e comparar rapidamente qualquer versão de um ativo com a versão mais recente usando a visualização do Assets.
+
+![comparar versões do ativo](/help/assets/assets/version-compare2.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Recursos de pré-lançamento
+
+* [Editor universal - Fragmentos de formulário](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): o Editor universal agora permite criar e reutilizar fragmentos de formulário do Forms adaptável. Esses fragmentos são seções de formulário reutilizáveis (por exemplo, detalhes de contato, campos de consentimento) que podem ser criadas uma vez e aplicadas em vários formulários. Esse recurso simplifica a criação de formulários, garante a consistência e melhora a eficiência da criação.
+
+* [Biblioteca de documentos do SharePoint - Salvar anexos com nomes de arquivo originais](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): agora há a opção de salvar anexos de formulário usando seus nomes de arquivo originais ao armazená-los em uma Biblioteca de Documentos do SharePoint. Esse aprimoramento simplifica a identificação e o gerenciamento de arquivos carregados.
+
+* **Editor de regras**:
+   * [Condição Binária com Evento de Clique na Cláusula &quot;When&quot;](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): o Editor de Regras agora permite combinar um evento de clique de botão (_É Clicado_) com outras condições na cláusula &quot;When&quot;. Isso permite um controle mais preciso sobre a execução da regra com base na interação do usuário e outros fatores. Observação: ao usar várias condições, o evento de clique deve ser a primeira condição listada.
+   * [Condições de Validação para Campos e Painéis](/help/forms/rule-editor-core-components-usecases.md): o Editor de Regras agora inclui condições _IsValid_ e _IsNotValid_. Isso permite verificar o status de validação de campos específicos ou painéis inteiros (incluindo layouts como Guias horizontais, Guias verticais, Acordeões e Assistentes), facilitando a navegação aprimorada do formulário e a experiência do usuário com base nos resultados da validação.
+* **Gerenciamento de Escopo aprimorado para Listas do SharePoint**: os sites do SharePoint agora oferecem suporte a todos os caminhos gerenciados, por exemplo, /sites e /team. Esse aprimoramento permite uma integração mais ampla em várias estruturas de site do SharePoint, oferecendo maior flexibilidade na conexão com o conteúdo organizacional.
+* **Suporte para Salvar Documento de Registro na Lista do SharePoint**: o Forms criado usando um Modelo de Dados de Formulário (FDM) baseado em Lista do SharePoint agora pode salvar o Documento de Registro (DoR) nas Listas do SharePoint configurando a propriedade do campo Documento de Referência de Associação de Registro. Esse aprimoramento permite a integração perfeita de dados e documentos de formulário compatíveis com o armazenamento da SharePoint.
 
 ### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
@@ -76,29 +107,77 @@ O programa de acesso antecipado da AEM Forms oferece uma oportunidade única par
 
 Estas notas de versão listam as inovações fornecidas na versão atual. Para obter a lista completa de inovações disponíveis no Programa de Acesso Antecipado, consulte a [documentação do Programa de Acesso Antecipado do AEM Forms](/help/forms/early-access-ea-features.md).
 
-#### Modelos de email do HTML no Adaptive Forms
+#### Integração do Adobe Experience Platform (AEP) com o Forms
 
-O Adaptive Forms permite usar [modelos de email do HTML](/help/forms/html-email-templates-in-adaptive-forms.md). Os templates de email do HTML permitem enviar emails avançados, personalizados e visualmente atraentes quando um formulário é enviado. Esses emails podem ser personalizados com dados de formulário e aprimorados usando várias tags de email, como imagens e links. Com o Adaptive Forms, você pode fazer upload de um arquivo contendo um modelo do HTML ou usar um editor de texto simples para criar esses modelos.
+Os recursos de integração entre o Forms e o AEP agora estão disponíveis para os primeiros usuários.
 
-![modelos de email do HTML](/help/forms/assets/html-email.png)
+## Complemento CIF {#cloud-services-cif}
 
-#### Suporte ao armazenamento na nuvem aprimorado: upload direto do PDF para o armazenamento Azure Blob
+### Aprimoramentos {#enhancements-cif}
 
-AEM Forms Document Generation APIs now let you [directly upload generated PDF documents](/help/forms/early-access-ea-features.md#doc-generation-api) to Azure Blob Storage. Esse aprimoramento simplifica o armazenamento e a recuperação, melhorando a eficiência e a integração com fluxos de trabalho em nuvem.
+* Adição da seleção de variante de produto para o tipo de dados de referência de produto CIF
+* [Experimental]: JSON+LD em Componentes Principais do CIF em PDPs
+* [Experimental]: a capacidade do CIF de limpar o cache
+
+### Correções de erros {#bug-fixes-cif}
+
+* Corrigir problema de pesquisa no campo do produto
+* O formato de URL do produto não está funcionando como esperado para #variant_sku
+* Não é possível adicionar mais de 20 SKUs ao componente de lista de produtos
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Suporte ao Java 21 {#java21}
+### APIs baseadas em OpenAPI {#open-apis}
+
+Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas pela criação de projetos do Adobe Developer Console e oferecem suporte a OAuth de servidor para servidor, aplicativo da Web e aplicativo de página única (SPA).
+
+[Consulte a lista completa](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) de APIs baseadas em OpenAPI, [saiba mais](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustre a configuração e o uso.
+
+Assista a este vídeo para saber como configurar uma API autenticada para uso posterior:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
+
+### Aprimoramentos relacionados à configuração do CDN {#cdn-enhancements}
+
+A CDN gerenciada pela Adobe oferece opções de configuração flexíveis, conforme descrito no [artigo sobre Pipeline de configuração](/help/operations/config-pipeline.md#configurations). Estes são alguns recursos recentes:
+
+#### Incluir propriedades adicionais em logs CDN {#props-in-cdnlogs}
+
+Útil para cenários que incluem depuração e análise de dados, você pode incluir mais informações nos logs de CDN, além das propriedades padrão, definindo a ação `logProperty` nas [transformações de solicitação e resposta](/help/implementing/dispatcher/cdn-configuring-traffic.md#request-transformations).
+
+#### Propriedades da Região, Continente e Organização como Condições de Correspondência {#matching-conditions}
+
+Agora, as regras de CDN podem corresponder com base na região, no continente e na organização para casos de uso, incluindo o bloqueio de tráfego e redirecionamentos. `clientRegion` e `clientContinent` aumentam a correspondência dos `clientCountry` já suportados com base na geografia, enquanto `clientAsName` e `clientAsNumber` correspondem aos Sistemas Autônomos para identificar grandes ISPs, empresas ou provedores de nuvem. Saiba mais sobre estas [propriedades de solicitação recém-expostas](/help/security/traffic-filter-rules-including-waf.md#condition-structure).
+
+#### Definir valor do cookie {#cookie-attributes}
+
+Você pode definir atributos de cookie em [transformações de resposta](/help/implementing/dispatcher/cdn-configuring-traffic.md#response-transformations).
+
+### Suporte a Java 21 {#java21}
 
 A partir da versão de janeiro, você pode criar código com o Java 21 e Java 17. Você obtém acesso a novos recursos, como correspondência de padrões, classes lacradas e várias melhorias de desempenho. Para obter as etapas de configuração, incluindo a atualização das versões do projeto e da biblioteca Maven, consulte o artigo [Ambiente de compilação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#using-java-support).
 
-O Java 21 **runtime** de maior desempenho é implantado automaticamente quando uma compilação Java 17 ou 21 é detectada. However, Adobe also recommends opting into the Java 21 runtime for environments built with Java 11, by emailing [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Saiba mais sobre [requisitos de tempo de execução do Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
+O Java 21 **runtime** de maior desempenho é implantado automaticamente quando uma compilação Java 17 ou 21 é detectada. No entanto, a Adobe também recomenda aceitar o tempo de execução do Java 21 para ambientes criados com o Java 11, enviando um email para [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com). Saiba mais sobre [requisitos de tempo de execução do Java 21](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#runtime-requirements).
 
 >[!IMPORTANT]
 >
 > O Java 21 **runtime** foi implantado em seus ambientes dev/RDE em fevereiro; ele será aplicado em seus ambientes de preparo/produção em **28 e 29**. Observe que o **código de construção** com Java 21 (ou Java 17) é independente do tempo de execução do Java 21 — você deve tomar etapas explicitamente para criar o código com Java 21 (ou Java 17).
 
-### Encaminhamento de logs do AEM para mais destinos - Programa Beta {#log-forwarding-earlyadopter}
+### Imposição da política de configuração de log do AEM {#logconfig-policy}
+
+Para garantir o monitoramento eficaz dos ambientes do cliente, os registros Java da AEM devem manter um formato consistente e não devem ser substituídos por configurações personalizadas. A saída do registro deve permanecer direcionada aos arquivos padrão. Para o código de produto do AEM, os níveis de log padrão devem ser preservados. No entanto, é aceitável ajustar os níveis de log para o código desenvolvido pelo cliente.
+
+Para esse fim, as alterações não devem ser feitas às seguintes propriedades OSGi:
+* **Configuração do Log do Apache Sling** (PID: `org.apache.sling.commons.log.LogManager`) — *todas as propriedades*
+* **Configuração do Agente de Log do Apache Sling** (PID de Fábrica: `org.apache.sling.commons.log.LogManager.factory.config`):
+   * `org.apache.sling.commons.log.file`
+   * `org.apache.sling.commons.log.pattern`
+
+Em meados de maio, a AEM aplicará uma política em que qualquer modificação personalizada nessas propriedades será ignorada. Revise e ajuste seus processos downstream de acordo. Por exemplo, se você usar o recurso de encaminhamento de logs:
+* Se o destino de registro esperar um formato de registro personalizado (não padrão), talvez seja necessário atualizar as regras de assimilação.
+* Se as alterações nos níveis de log reduzirem a verbosidade do log, esteja ciente de que os níveis de log padrão podem resultar em um aumento significativo no volume de log.
+
+### Encaminhamento de logs do AEM para mais destinos - programa Beta {#log-forwarding-earlyadopter}
 
 Agora na versão beta, você pode encaminhar logs do AEM para o New Relic (usando HTTPS), Amazon S3 e Sumo Logic. Observe que os logs do AEM (incluindo o Apache/Dispatcher) são compatíveis, mas não os logs CDN. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para acesso.
 
@@ -113,7 +192,7 @@ A computação Edge aproxima o processamento de dados do navegador, o que traz b
 Alguns casos de uso possíveis:
 
 * Autenticação com um IdP para portar o acesso ao conteúdo
-* Renderização de conteúdo dinâmico (personalizado, localizado) com base na geolocalização, tipo de dispositivo, atributos do usuário etc.
+* O Personalization renderiza conteúdo dinâmico com base na geolocalização, tipo de dispositivo, atributos do usuário etc.
 * Manipulação avançada de imagem
 * Middleware entre a CDN e uma origem
 * Uma camada entre o navegador e uma API de terceiros, talvez para reformatar a resposta da API
@@ -121,31 +200,9 @@ Alguns casos de uso possíveis:
 
 Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@adobe.com) com perguntas e comentários!
 
-### APIs baseadas em OpenAPI - Early Adoter Program {#open-apis-earlyadopter}
-
-Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas ao criar projetos do Adobe Developer Console.
-
-Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustra a configuração e o uso.
-
-Especificamente, os endpoints de API listados abaixo estão disponíveis como parte de um programa de adoção antecipada. Se estiver interessado, envie um email para [aem-apis@adobe.com](mailto:aem-apis@adobe.com) descrevendo como você pretende usá-los.
-
-* [APIs de fragmentos de conteúdo do Sites](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/sites/)
-* [APIs do Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/assets/author/)
-* [APIs de Sites e Pastas do Assets](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/folders/)
-* [APIs de comunicações do Forms](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/document/)
-
-### Novo AEM Developer Console (Beta público) {#aem-developer-console-beta}
-
-Experimente um [AEM Developer Console](/help/implementing/developing/introduction/aem-developer-console.md) renovado, que oferece uma experiência mais interativa para depurar código em ambientes na nuvem.
-
-Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Disponível* no Developer Console do AEM atual. A Adobe agradece o feedback, que você pode enviar por email para [aemcs-new-devconsole-ui-beta@adobe.com](mailto:aemcs-new-devconsole-ui-beta@adobe.com)
-
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0).
-
-<!-- THE FOLLOWING URL WAS USED ABOVE BUT IT WAS 404. IT WAS REPLACED WITH THE URL ABOVE 
-(https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2024-releases/2410-release/2410-0-release/whats-new-2024-10-0). -->
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
