@@ -4,9 +4,9 @@ description: Aproveite o Centro de ações para agir de forma conveniente em inc
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 821dd9f172ea286a7a3de74cf8dec8001e9afee9
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1133'
 ht-degree: 47%
 
 ---
@@ -30,7 +30,7 @@ No Centro de ações, é possível selecionar um programa e ambiente específico
 
 ## Configuração {#configuration}
 
-Para configurar as notificações por email da Central de Ações de recebimento, crie os Perfis de Produto conforme descrito em [Perfis de Notificação](/help/journey-onboarding/notification-profiles.md), ou seja, Notificação de Incidente - Cloud Service e Notificação Pró-ativa - Cloud Service. Além disso, atribua a esses perfis as Adobe IDs adequadas da sua organização. Isso permite que um administrador determine quais usuários se qualificam para receber essas notificações por email.
+Para configurar as notificações por email da Central de Ações de recebimento, crie os Perfis de Produto conforme descrito em [Perfis de Notificação](/help/journey-onboarding/notification-profiles.md), ou seja, Notificação de Incidente - Cloud Service e Notificação Proativa - Cloud Service. Além disso, atribua a esses perfis as Adobe IDs adequadas da sua organização. Isso permite que um administrador determine quais usuários se qualificam para receber essas notificações por email.
 
 >[!NOTE]
 >As notificações por email do Centro de ações funcionam no nível da organização para que os assinantes recebam notificações de todos os programas e dos ambientes incluídos nesses programas.
@@ -47,7 +47,7 @@ No Centro de ações, é possível ver uma lista de outras notificações recent
 
 ![Lista de notificações](/help/operations/assets/notification-list.png)
 
-Na maioria dos casos, a janela pop-up deve fornecer todo o contexto necessário para resolver o problema. No entanto, se houver dúvidas sobre o Suporte para Adobe, você poderá clicar no link **Contatar Suporte** na janela pop-up. Isso exibirá um formulário, no qual é possível descrever a dúvida e enviá-la para criar um tíquete de suporte, que também incluirá uma referência à notificação específica para que um engenheiro de suporte da Adobe tenha o contexto relevante.
+Na maioria dos casos, a janela pop-up deve fornecer todo o contexto necessário para resolver o problema. No entanto, se houver dúvidas sobre o Suporte da Adobe, você poderá clicar no link **Contatar Suporte** na janela pop-up. Isso exibirá um formulário, no qual é possível descrever a dúvida e enviá-la para criar um tíquete de suporte, que também incluirá uma referência à notificação específica para que um engenheiro de suporte da Adobe tenha o contexto relevante.
 
 ![Entrar em contato com o suporte 1](/help/operations/assets/contact-support1.png)
 
@@ -65,7 +65,7 @@ O AEM as a Cloud Service possui vários tipos de notificações, mas apenas um s
 |---------------------------------|-----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | Incidentes operacionais | Incidentes críticos que exigem ação imediata | Usuário atribuído ao perfil de produto “Notificação de incidente - Cloud Service” | X |
 | Recomendações proativas | Otimizações que devem ser planejadas | Usuário atribuído ao perfil de produto “Notificação proativa - Cloud Service” | X |
-| Status do pipeline do Cloud Manager | Informações sobre o estado dos seus pipelines | Usuário com funções de Proprietário da empresa, Gerente de programas ou Gerente de implantação, caixa de seleção &quot;Outros&quot; marcada em [Preferências de Experience Cloud](https://experience.adobe.com/preferences), consulte [Notificações](/help/implementing/cloud-manager/notifications.md). |                           |
+| Status do pipeline do Cloud Manager | Informações sobre o estado dos seus pipelines | Usuário com funções de Proprietário da empresa, Gerente de programas ou Gerente de implantação, caixa de seleção &quot;Outros&quot; marcada nas [Preferências da Experience Cloud](https://experience.adobe.com/preferences), consulte [Notificações](/help/implementing/cloud-manager/notifications.md). |                           |
 
 ## Tipos de notificação compatíveis {#supported-notification-types}
 
@@ -75,16 +75,17 @@ A tabela a seguir lista os tipos de notificação atualmente aceitos no Centro d
 |---------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Fila de replicação bloqueada | Incidente | Desbloqueie a fila seguindo as instruções da [Documentação de replicação](/help/operations/replication.md#troubleshooting) |
 | Consulta GraphQL persistente inválida | Incidente | Corrija a consulta inválida do GraphQL fazendo referência à [documentação de solução de problemas de consultas persistidas do GraphQL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/persisted-queries-troubleshoot.html) |
-| Pico de tráfego na origem | Incidente | Protect sua origem configurando regras de filtro de tráfego de limite de taxa que acionam limites inferiores ao alerta de pico de tráfego padrão na origem.  Consulte a seção [Bloqueando ataques DeS e DeS usando regras de tráfego](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) da documentação Regras de filtro de tráfego, que faz referência a um tutorial. |
+| Pico de tráfego na origem | Incidente | Proteja sua origem configurando regras de filtro de tráfego de limite de taxa que acionam limites menores que o alerta de pico de tráfego padrão na origem.  Consulte a seção [Bloqueando ataques DeS e DeS usando regras de tráfego](/help/security/traffic-filter-rules-including-waf.md#blocking-dos-and-ddos-attacks-using-traffic-filter-rules) da documentação Regras de filtro de tráfego, que faz referência a um tutorial. |
 | Regras de Filtros de Tráfego CDN acionadas | Incidente | Se a regra de filtro de tráfego correspondente refletir um ataque e seu site não estiver bloqueando esse tráfego, proteja seu site configurando uma regra de filtro de tráfego no modo de bloqueio. Consulte a seção [Protegendo sites com regras de filtro de tráfego (incluindo regras do WAF)](/help/security/traffic-filter-rules-including-waf.md#tutorial-protecting-websites) da documentação Regras de filtro de tráfego, que faz referência a um tutorial. |
-| Erros de encaminhamento do log do Splunk | Incidente | Verifique se o endpoint do Splunk funciona e está acessível no ambiente do AEM Cloud Service. Para obter mais informações sobre o encaminhamento de logs, consulte a [documentação de encaminhamento de logs do Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs). Se precisar de ajuda para solucionar problemas ou se precisar fazer alterações na configuração de registro, aumente o tíquete de suporte com o Adobe. |
+| Erros de encaminhamento do log do Splunk | Incidente | Verifique se o endpoint do Splunk está funcionando e pode ser acessado no ambiente do AEM Cloud Service. Para obter mais informações sobre o encaminhamento de logs, consulte a [documentação de encaminhamento de logs do Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs). Se precisar de ajuda para solucionar problemas ou de alterações na configuração de registro, crie um tíquete de suporte no Adobe. |
 | As páginas contêm um grande número de nós | Proativa | Reduza o número total de nós em uma página. Consulte a [Documentação de complexidade da página](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/pcx) | |
 | Grande número de instâncias de fluxo de trabalho em execução | Proativa | Encerre workflows em execução que não são mais necessários. Saiba como [configurar um trabalho de limpeza](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance) |               |
 | Certificado S2S a expirar | Proativa | Saiba como atualizar uma credencial na documentação [Geração de tokens de acesso para APIs do lado do servidor](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) | Contagem Alta de Conexões | Proativa | Saiba mais sobre o pool de conexões no [Pool de Conexões juntamente com a documentação avançada de rede](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |
 | Mapeamento de usuário de serviço obsoleto | Proativa | Saiba como usar o formato de Mapeamento de usuário do Sling Service mais recente, conforme indicado em [Práticas recomendadas para o Mapeamento de usuário do Sling Service e Definição de usuário do serviço](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/best-practices-for-sling-service-user-mapping-and-service-user-definition) |
 | Contagem Alta de Conexões | Proativa | Saiba mais sobre o pool de conexões na [Documentação avançada de rede](/help/security/configuring-advanced-networking.md#connection-pooling-advanced-networking) |  |
-| Usuários adicionados diretamente ao grupo personalizado | Proativa | Os usuários precisam ser adicionados aos Grupos IMS relevantes e esses Grupos IMS precisam ser adicionados como membros de grupos AEM. Alinhar com as [Práticas recomendadas do IMS](/help/security/ims-support.md) | |
+| Usuários adicionados diretamente ao grupo personalizado | Proativa | Os usuários precisam ser adicionados aos Grupos IMS relevantes e esses grupos IMS precisam ser adicionados como membros de grupos AEM. Alinhar com as [Práticas recomendadas do IMS](/help/security/ims-support.md) | |
 | Conteúdo JCR ausente | Proativa | Adicione o nó ausente Conteúdo JCR. Consulte a [documentação do Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
 | Fluxos de trabalho concluídos não removidos | Proativa | Minimize o número de instâncias de fluxo de trabalho e melhore o desempenho removendo as instâncias de fluxo de trabalho que têm mais de 90 dias. Saiba como [configurar tarefas de manutenção](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/maintenance) | |
 | Tipo de recurso Sling ausente na página | Proativa | Adicione o nó ausente do tipo de recurso Sling. Consulte a [documentação do Assets Content Validator](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/acv) | |
-| Consulta lenta | Proativa | Corrija consultas lentas definindo definições de índice corretas, conforme sugerido pela [Folha de características da consulta JCQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) |
+| Consulta lenta | Proativa | Corrija consultas lentas definindo definições de índice corretas, conforme sugerido pela [Folha de características da consulta JCQ](https://experienceleague.adobe.com/docs/experience-manager-65/assets/JCR_query_cheatsheet-v1.1.pdf) | |
+| Consulta sem Índice | Proativa | Evite executar uma consulta que não use um índice - [vincular à Documentação de indexação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/operations/indexing) |
