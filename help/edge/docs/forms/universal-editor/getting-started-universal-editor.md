@@ -4,7 +4,7 @@ description: Este tutorial ajuda você a começar a usar um novo projeto do Adob
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 24a23d98-1819-4d6b-b823-3f1ccb66dbd8
-source-git-commit: 3db311812f6c4521baf1364523a0e0b1134fee65
+source-git-commit: 2b936b2495eb63defdb184320ae866bbecbe7546
 workflow-type: tm+mt
 source-wordcount: '1857'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Na era digital de hoje, formulários amigáveis são essenciais para todas as or
 
 O AEM Forms fornece um bloco, conhecido como Bloco adaptável do Forms, para ajudar você a criar facilmente o Edge Delivery Services Forms para capturar e armazenar dados. Você pode [criar um novo Projeto do AEM pré-configurado com o Bloco do Adaptive Forms](#create-a-new-aem-project-pre-configured-with-adaptive-forms-block) ou [adicionar o Bloco do Adaptive Forms a um Projeto do AEM existente](#add-adaptive-forms-block-to-your-existing-aem-project).
 
-![Fluxo De Trabalho Do Repositório Github](/help/edge/assets/repo-workflow.png){width="50%" align="center" height="50%"}
+![Fluxo De Trabalho Do Repositório Github](/help/edge/assets/repo-workflow.png){width=auto}
 
 Este tutorial o orienta por meio da criação, visualização e publicação de seu próprio formulário com um projeto do Adobe Experience Manager Site novo ou existente usando a criação do WYSIWYG no Universal Editor.
 

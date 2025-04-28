@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8191e113-f768-4b1e-a191-e3c722f19054
-source-git-commit: e5f22d925f9b9ec3a5f80f9506353e42e8879da3
+source-git-commit: e10451553692b6ad957421783e176409b36b642b
 workflow-type: tm+mt
-source-wordcount: '1384'
+source-wordcount: '1561'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,22 @@ ht-degree: 0%
 
 O artigo fornece exemplos detalhados de um Editor de regras para um Formulário adaptável com base em componentes principais, fornecendo insights sobre sua implementação adequada para diferentes cenários. O editor de regras permite que os desenvolvedores definam e gerenciem a lógica que controla o comportamento dos formulários.
 Agora, vamos discutir as diferentes implementações de um editor de regras.
+
+## Defina o foco para outro painel ao clicar no botão se o primeiro painel for válido
+
+<span class="preview"> É um recurso de pré-lançamento acessível através do nosso [canal de pré-lançamento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features). </span>
+
+O editor de regras permite validar os layouts de um painel, como Guias horizontais, Guias verticais, Acordeões ou Assistente para clicar no botão e definir o foco como um objeto de formulário em outro painel. Você pode usar essa funcionalidade para melhorar a navegação do formulário e a experiência do usuário.
+
+Imagine um formulário de aplicativo de várias etapas usando um layout de Assistente. Você deve concluir o painel `Personal Information` antes de passar para `Employment Details`. Ao clicar no botão `Next`, o editor de regras valida o painel `Personal Information`. Se todos os campos obrigatórios forem preenchidos corretamente, o formulário automaticamente mudará o foco para o painel `Employment Details`. Caso contrário, exibirá uma mensagem de erro solicitando que os usuários preencham os campos ausentes.
+
+É possível criar uma regra no botão `Next` para validar o primeiro painel:
+
+![Regra do botão Avançar](/help/forms/assets/next-rule.png){width=50%}
+
+Ao clicar no botão **Avançar**, o painel **Informações Pessoais** é validado. Se os detalhes inseridos estiverem corretos, o foco será deslocado para o painel **Segurança da Conta**; caso contrário, uma mensagem de erro solicitará que você preencha os detalhes ausentes.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3457767)
 
 
 ## Navegar entre painéis usando o botão
@@ -36,7 +52,7 @@ Quando o botão `Next` é clicado, o foco é movido para o painel subsequente no
 
 Da mesma forma, é possível criar uma regra para o botão `Previous` para deslocar o foco para o painel anterior.
 
-![Regra anterior do painel](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
+![Regra de painel anterior](/help/forms/assets/rule-editor-navigate-in-panel-previous.png){width=50%}
 
 ## Simplificar cálculos complexos em painéis repetíveis com funções
 
@@ -122,7 +138,7 @@ Em um formulário de solicitação de empréstimo, você deseja registrar se o c
 
 * Um botão de opção, **[!UICONTROL Você já é cliente do Geometrixx?]**, que fornece as opções [!UICONTROL Sim] e [!UICONTROL Não]. O valor de Sim é **0** e Não é **1**.
 
-* Geometrixx Um campo de texto, **[!UICONTROL ID do cliente]**, para especificar a ID do cliente.
+* Um campo de texto, **[!UICONTROL ID do cliente do Geometrixx]**, para especificar a ID do cliente.
 
 Quando você escreve uma regra Quando no botão de opção para implementar esse comportamento, a regra é exibida da seguinte maneira no editor visual de regras.
 
