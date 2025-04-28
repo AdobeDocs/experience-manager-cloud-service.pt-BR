@@ -1,24 +1,24 @@
 ---
-title: Quais são os vários tipos e eventos de operadores disponíveis em regra editor de um formulário adaptável com base nos componentes principais?
-description: A Forms adaptável regra editor oferece suporte a vários tipos e eventos de operadores.
+title: Quais são os vários tipos de operadores e eventos disponíveis no editor de regras de um formulário adaptável com base nos componentes principais?
+description: O editor de regras do Forms adaptável é compatível com vários tipos de operadores e eventos.
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: ac85ff04-25dc-4566-a986-90ae374bf383
-source-git-commit: dab2b94d1e456622f061741ba1b5192c9163c295
+source-git-commit: 321116ce8d6da53c431f68f437cbf7c0050a47e8
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2333'
 ht-degree: 0%
 
 ---
 
-# Tipos de operadores e eventos no editor de regras de um Formulário adaptável com base nos Componentes principais
+# Tipos e eventos de operador em regra editor de um formulário adaptável com base nos componentes principais
 
 No AEM Forms as a Cloud, o editor de regras inclui vários tipos de operadores e eventos que permitem definir e executar condições e ações complexas com facilidade.
 
 Os tipos de operador disponíveis no editor de regras de um Formulário adaptável fornecem uma estrutura robusta para a construção de condições precisas. Eles permitem manipular dados, realizar cálculos e combinar várias condições de maneira lógica e coerente. Independentemente de você estar comparando valores, executando operações aritméticas ou manipulando strings, esses operadores garantem que suas regras sejam flexíveis e poderosas.
 
-Os eventos no editor de regras atuam como acionadores que ativam as regras. Elas definem as ações específicas que ocorrem quando determinadas condições são atendidas. Ao aproveitar diferentes tipos de eventos, é possível automatizar as respostas a uma ampla gama de cenários, por exemplo, usuário interações, horários agendados, alterações nos dados e estados do sistema. Com a capacidade de especificar esses acionadores, você pode criar regras dinâmicas e responsivo que atendam a seus requisitos específicos.
+Os eventos no editor de regras atuam como acionadores que ativam as regras. Eles definem as ações específicas que ocorrem quando determinadas condições são atendidas. Aproveitando diferentes tipos de eventos, você pode automatizar respostas para uma grande variedade de cenários, por exemplo, interações de usuário, horários agendados, alterações nos dados e estados do sistema. Com a capacidade de especificar esses acionadores, você pode criar regras dinâmicas e responsivas que atendam aos seus requisitos específicos.
 
 Ao entender e usar os tipos de operadores e eventos disponíveis, é possível explorar todo o potencial do editor de regras, o que permite criar regras eficientes e eficazes que atendam às suas necessidades exclusivas e melhorem a funcionalidade geral do sistema.
 
@@ -26,17 +26,21 @@ Ao entender e usar os tipos de operadores e eventos disponíveis, é possível e
 
 O editor de regras fornece os seguintes operadores lógicos e eventos com os quais você pode criar regras.
 
-* **É Igual A**
-* **Não É Igual A**
-* **Começa com**
-* **Termina com**
-* **Contém**
-* **Não contém**
-* **Está Vazio**
-* **Não Está Vazio**
-* **Selecionado:** Retorna verdadeiro quando o usuário seleciona uma opção específica para uma caixa de seleção, lista suspensa, botão de opção.
-* **Inicializado (evento):** Retorna verdadeiro quando um objeto de formulário é renderizado no navegador.
-* **Está Alterado (evento):** Retorna verdadeiro quando o usuário altera o valor inserido ou a opção selecionada para um objeto de formulário.
+* **É Igual a** - Verifica se um objeto de formulário corresponde a um valor especificado.
+* **Não É Igual a** - Verifica se um objeto de formulário não corresponde a um valor especificado.
+* **Inicia com** - Verifica se um objeto de formulário começa com uma string especificada.
+* **Termina com** - Verifica se um objeto de formulário termina com uma string especificada.
+* **Contém** – Verifica se o objeto de formulário inclui uma subsequência de caracteres especificada.
+* **Não contém** - Verifica se o objeto de formulário não inclui uma subsequência de caracteres especificada.
+* **Está vazio** - Verifica se um objeto de formulário está vazio ou não é fornecido.
+* **Não Está Vazio** - Verifica se um objeto de formulário está presente e não está vazio.
+* **Selecionado** - Retorna verdadeiro quando um usuário seleciona uma caixa de seleção, uma lista suspensa ou uma opção de botão de opção específica.
+* **Está Inicializado (evento)** - Retorna verdadeiro quando um objeto de formulário é renderizado no navegador.
+* **Is Changed (event)** - Retorna verdadeiro quando um usuário modifica o valor ou a seleção de um objeto de formulário.
+* **É Clicado (evento)** - Retorna verdadeiro quando um usuário clica em um objeto de formulário, por exemplo, um botão. Um usuário pode [adicionar várias condições ao clique no botão](/help/forms/rule-editor-core-components-usecases.md#set-focus-to-another-panel-on-button-click-if-the-first-panel-is-valid).
+* **É válido** - Verifica se um objeto de formulário atende aos critérios de validação.
+* **Não é Válido** - Verifica se um objeto de formulário falha nos critérios de validação.
+
 
 <!--
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
@@ -83,17 +87,17 @@ Ao escrever uma regra Quando, é possível acionar a ação Limpar valor de. Lim
 
 >[!NOTE]
 >
-> Quando o tipo de regra suporta apenas instruções then-else de nível único.
+> Quando o tipo de regra suporta apenas declarações de nível único e outras.
 
 ##### Vários campos permitidos em [!UICONTROL Quando] {#allowed-multiple-fields}
 
 Na condição **Quando** , você tem a opção de adicionar outros campos além do campo ao qual a regra é aplicada.
 
-Por exemplo, ao usar o tipo Quando regra, é possível avaliar uma condição em diferentes objetos de formulário e executar a ação:
+Por exemplo, usando o tipo de regra Quando, é possível avaliar uma condição em diferentes objetos de formulário e executar a ação:
 
 Quando:
 
-(Objeto Uma Condição 1)
+(Objeto A Condição 1)
 
 E/OU
 
@@ -112,6 +116,10 @@ _
 * Verifique se o componente principal [está definido como versão 3.0.14 ou posterior](https://github.com/adobe/aem-core-forms-components) para usar este recurso no editor de regras.
 * Se as regras forem aplicadas a campos diferentes na condição When, a regra será acionada mesmo se apenas um desses campos for alterado.
 * Você só pode adicionar vários campos na condição **When** para uma regra **AND**. Não é possível para uma regra **OR**.
+
+>[!NOTE]
+>
+> Para adicionar várias condições que incluem um clique de botão, verifique se o evento de clique de botão é colocado como a primeira condição. Por exemplo, `When button is clicked AND text input equals '5'` é válido, enquanto `When text input equals '5' AND button is clicked` não é suportado.
 
 <!--
 * It is not possible to add multiple fields in the When condition while applying rules to a button.
@@ -133,9 +141,9 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 Se os vários campos permitidos no recurso Quando condição encontrarem problemas, siga as etapas de solução de problemas como:
 
 1. Abra o formulário no modo de edição.
-1. Abra a navegador conteúdo e selecione o **[!UICONTROL componente Contêiner]** de guia do formulário adaptável.
-1. Clique no ícone propriedades do Guia do Guia de propriedades ![](/help/forms/assets/configure-icon.svg) do Guia. A caixa de diálogo Contêiner de formulário adaptável é aberta.
-1. Clique Concluído e salve a caixa de diálogo novamente.
+1. Abra o Navegador de conteúdo e selecione o componente **[!UICONTROL Contêiner do Guia]** do seu Formulário adaptável.
+1. Clique no ícone de propriedades do Guia Contêiner ![Propriedades do Guia](/help/forms/assets/configure-icon.svg). A caixa de diálogo Contêiner de formulário adaptável é aberta.
+1. Clique em Concluído e salve a caixa de diálogo novamente.
 
 **[!UICONTROL Ocultar]** oculta o objeto especificado.
 
@@ -145,17 +153,17 @@ Se os vários campos permitidos no recurso Quando condição encontrarem problem
 
 **[!UICONTROL Desabilitar]** Desabilita o objeto especificado.
 
-**[!UICONTROL Chamar serviço]** Chama um serviço configurado em um modelo de dados de formulário (FDM). Quando você escolhe a operação Chamar Serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) no instância [!DNL Experience Manager] . Ao escolher um serviço de Modelo de dados de formulário, mais campos aparecem onde é possível mapear objetos de formulário com parâmetros de entrada para o serviço especificado. É possível mapear os parâmetros de saída por meio da opção de carga evento para o serviço especificado. Você também pode criar regras para lidar com respostas de sucesso e falha da operação Chamar serviço usando o editor de regras.
+**[!UICONTROL Chamar serviço]** Chama um serviço configurado em um modelo de dados de formulário (FDM). Quando você escolhe a operação Chamar Serviço, um campo é exibido. Ao tocar no campo, ele exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) na instância [!DNL Experience Manager]. Ao escolher um serviço de modelo de dados de formulário, mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada para o serviço especificado. Você pode mapear os parâmetros de saída por meio da opção de carga útil do evento para o serviço especificado. Você também pode criar regras para lidar com respostas de sucesso e falha da operação Chamar serviço usando o editor de regras.
 
 >[!NOTE]
 >
-> Para saber mais sobre o serviço Chamar, [clique aqui](/help/forms/invoke-service-enhancements-rule-editor.md).
+> Para saber mais sobre o serviço Invoke, [clique aqui](/help/forms/invoke-service-enhancements-rule-editor.md).
 
-Consulte a regra de exemplo para chamar os serviços do Modelo de dados de formulário (FDM).
+Consulte o exemplo regra para invocar serviços do Modelo de dados de formulário (FDM).
 
-Além do serviço de modelo de dados de formulário, você pode especificar um URL WSDL direto para chamar um serviço Web. No entanto, um serviço de modelo de dados de formulário tem muitos benefícios e a abordagem recomendada para chamar um serviço.
+Além do serviço modelo de dados de formulário, você pode especificar um URL WSDL direto para chamar um serviço da Web. No entanto, um serviço de Modelo de dados de formulário tem muitos benefícios e a abordagem recomendada para invocar um serviço.
 
-Para obter mais informações sobre como configurar serviços no modelo de dados de formulário (FDM), consulte [[!DNL Experience Manager Forms] Integração de Dados](data-integration.md).
+Para obter mais informações sobre como configurar serviços no modelo de dados de formulário (FDM), consulte [[!DNL Experience Manager Forms] Integração](data-integration.md) de dados.
 
 **[!UICONTROL Defina o valor de]** Computes e defina o valor do objeto especificado. Você pode definir o valor do objeto como uma string, o valor de outro objeto, o valor calculado usando uma expressão matemática ou função, o valor de uma propriedade de um objeto ou o valor de saída de um serviço de Modelo de Dados de Formulário configurado. Quando você escolhe a opção de serviço Web, ela exibe todos os serviços configurados em todos os modelos de dados de formulário (FDM) na sua instância [!DNL Experience Manager]. Ao escolher um serviço de modelo de dados de formulário, mais campos são exibidos onde você pode mapear objetos de formulário com parâmetros de entrada e saída para o serviço especificado.
 
@@ -230,9 +238,9 @@ Quando (opcional):
 
 O exemplo a seguir seleciona o valor de `Question2` como `True` e define o valor de `Result` como `correct`.
 
-![Definir valor-serviço da Web](assets/set-value-web-service.png)
+![Serviço-Web-valor-definição](assets/set-value-web-service.png)
 
-Exemplo de Definir Valor regra usando o serviço de modelo de dados de formulário.
+Exemplo de regra Definir valor usando o serviço de Modelo de dados de formulário.
 
 #### [!UICONTROL Programa] {#show}
 
@@ -252,9 +260,9 @@ Uma regra típica de exibição está estruturada da seguinte maneira:
 
 #### [!UICONTROL Ocultar] {#hide}
 
-Semelhante ao tipo de regra Mostrar, você pode usar o tipo de regra **[!UICONTROL Ocultar]** para mostrar ou ocultar um objeto de formulário com base no fato de uma condição ser atendida ou não. O tipo Ocultar regra também aciona a ação Exibir caso a condição não esteja satisfeita ou retorne `False`.
+Semelhante ao tipo de regra Mostrar, você pode usar o tipo de regra **[!UICONTROL Ocultar]** para mostrar ou ocultar um objeto de formulário com base no fato de uma condição ser atendida ou não. O tipo de regra Ocultar também aciona a ação Mostrar caso a condição não seja atendida ou retorne `False`.
 
-Um regra Ocultar típico está estruturado da seguinte maneira:
+Uma regra típica de Ocultar está estruturada da seguinte maneira:
 
 `Hide Object A;`
 
@@ -268,9 +276,9 @@ Um regra Ocultar típico está estruturado da seguinte maneira:
 
 #### [!UICONTROL Habilitar] {#enable}
 
-O tipo de regra **[!UICONTROL Habilitar]** permite habilitar ou desabilitar um objeto de formulário com base no fato de uma condição ser atendida ou não. O tipo de regra Habilitar também aciona a ação Desabilitar caso a condição não seja atendida ou retorne `False`.
+O **[!UICONTROL tipo Ativar]** regra permite ativar ou desativar um objeto de formulário com base na satisfação ou não de uma condição. O tipo Habilitar regra também aciona a ação Desativar caso a condição não seja atendida ou retorne `False`.
 
-Uma regra Enable típica é estruturada da seguinte maneira:
+Um regra de Ativação típico está estruturado da seguinte maneira:
 
 `Enable Object A;`
 
@@ -346,9 +354,9 @@ Para obter mais detalhes sobre como criar uma regra para navegar em um painel, [
 
 <span class="preview"> É um recurso de pré-lançamento acessível através do nosso [canal de pré-lançamento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features). </span>
 
-O tipo de regra **[!UICONTROL Chamada de função assíncrona]** permite que você execute funções assíncronas. Ela permite iniciar uma chamada de função que opera independentemente do thread de execução principal, permitindo que outros processos continuem em execução sem esperar a conclusão da função assíncrona.
+A **[!UICONTROL chamada]** de Função assíncrona regra tipo permite executar funções assíncronas. Ele permite iniciar uma chamada de função que opera independentemente do encadeamento de execução principal, permitindo que outros processos continuem em execução sem esperar a conclusão da função assíncrona.
 
-Uma regra de chamada de Função assíncrona típica para executar uma função assíncrona está estruturada da seguinte maneira:
+Uma chamada típica de Função assíncrona regra para executar uma função assíncrona é estruturada da seguinte maneira:
 
 `When:`
 

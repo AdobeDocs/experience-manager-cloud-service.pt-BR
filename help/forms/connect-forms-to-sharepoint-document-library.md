@@ -4,13 +4,13 @@ Description: This article explains how to send data from your Adaptive Form to a
 keywords: Como conectar a biblioteca de documentos do SharePoint para um formulário adaptável, Enviar para o SharePoint, Criar uma configuração da biblioteca de documentos do SharePoint, Usar a ação de envio Enviar para o SharePoint em um formulário adaptável, Biblioteca de documentos do SharePoint do modelo de dados do AEM Forms, Biblioteca de documentos do SharePoint do modelo de dados do Forms, Integrar o modelo de dados do Forms à biblioteca de documentos do SharePoint
 feature: Adaptive Forms, Core Components
 role: User, Developer
-source-git-commit: 55e8f142e242f5f4010653a155a241ffcf801470
+exl-id: a00b4a93-2324-4c2a-824f-49146dc057b0
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
-
 
 # Conecte um formulário adaptável à Biblioteca de documentos Microsoft® SharePoint {#connect-af-sharepoint-doc-library}
 
@@ -75,8 +75,14 @@ Você pode usar a configuração criada da Biblioteca de documentos da SharePoin
 1. Selecione a **[!UICONTROL Configuração de Armazenamento]**, onde você deseja salvar seus dados.
 1. Clique em **[!UICONTROL Salvar]** para salvar as configurações de Envio.
 
-Ao enviar o formulário, os dados são salvos no Armazenamento da Biblioteca de Documentos do Microsoft® Sharepoint especificado.
-A estrutura de pasta para salvar dados é `/folder_name/form_name/year/month/date/submission_id/data`.
+>[!NOTE]
+>
+> Ao enviar o formulário, os dados são salvos no Armazenamento da Biblioteca de Documentos do Microsoft® Sharepoint especificado. A estrutura de pasta para salvar dados é `/folder_name/form_name/year/month/date/submission_id/data`.
+
+>[!NOTE]
+>
+> Os anexos também são armazenados no diretório `/folder_name/form_name/year/month/date/submission_id/data`. No entanto, se você selecionar **Salvar anexos com nome original**, os anexos serão armazenados na pasta usando seus nomes de arquivo originais.
+> ![imagem](/help/forms/assets/sp-doc-attachment-af2.png){height=50%,width=50%}
 
 ## Artigos relacionados
 

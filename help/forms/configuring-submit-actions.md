@@ -4,9 +4,9 @@ description: Um Formulário adaptável fornece várias Ações de envio. Uma Aç
 feature: Adaptive Forms, Foundation Components
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 role: User, Developer
-source-git-commit: db0487ab11f48690cb36b410b895324e0d4cf684
+source-git-commit: 1dddba99c5871d01bf51c335747363af1889738d
 workflow-type: tm+mt
-source-wordcount: '3929'
+source-wordcount: '3957'
 ht-degree: 2%
 
 ---
@@ -19,14 +19,14 @@ ht-degree: 2%
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Componentes de base) | Este artigo |
 
-**Aplica-se a**: ✔️ componentes de base do formulário adaptável. [Componentes principais do formulário adaptável](/help/forms/configure-submit-actions-core-components.md). A Adobe recomenda usar os Componentes principais para [adicionar o Adaptive Forms a uma Página do AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) ou para [criar o Adaptive Forms](creating-adaptive-form-core-components.md) independente.
+**Aplica-se a**: ✔️ componentes de base do formulário adaptável. [Componentes principais do formulário adaptável](/help/forms/configure-submit-actions-core-components.md). A Adobe recomenda usar os Componentes principais para [adicionar o Adaptive Forms a uma Página do AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) ou para [criar um Adaptive Forms](creating-adaptive-form-core-components.md) independente.
 
 Uma Ação de Envio é acionada quando um usuário clica no botão **[!UICONTROL Enviar]** em um Formulário adaptável. O Forms as a Cloud Service fornece as seguintes ações de envio prontas para uso.
 
 * [Enviar para endpoint REST](#submit-to-rest-endpoint)
 * [Enviar e-mail](#send-email)
 * [Enviar usando o Modo de dados de formulário (FDM)l](#submit-using-form-data-model)
-* [Chamar um fluxo de trabalho de AEM](#invoke-an-aem-workflow)
+* [Chamar um fluxo de trabalho do AEM](#invoke-an-aem-workflow)
 * [Enviar para o SharePoint](#submit-to-sharedrive)
 * [Enviar para o OneDrive](#submit-to-onedrive)
 * [Enviar para o Armazenamento de blob do Azure](#azure-blob-storage)
@@ -67,7 +67,7 @@ Use a ação **[!UICONTROL Enviar para o Ponto de Extremidade REST]** para posta
 
 Para publicar dados em um servidor interno, forneça o caminho do recurso. Os dados são publicados no caminho do recurso. Por exemplo, /content/restEndPoint. Para essas solicitações de publicação, as informações de autenticação da solicitação de envio são usadas.
 
-Para publicar dados em um servidor externo, forneça um URL. O formato da URL é `https://host:port/path_to_rest_end_point`. Configure o caminho para lidar com a solicitação POST de forma anônima.
+Para publicar dados em um servidor externo, forneça um URL. O formato da URL é `https://host:port/path_to_rest_end_point`. Certifique-se de configurar o caminho para lidar com a solicitação POST de forma anônima.
 
 ![Mapeamento para valores de campo passados como parâmetros da Página de Agradecimento](assets/post-enabled-actionconfig.png)
 
@@ -92,7 +92,7 @@ Como mostrado na imagem abaixo, `param1` e `param2` são passados como parâmetr
 
 ![Configurando Ação De Envio De Ponto De Extremidade Rest](assets/action-config.png)
 
-Você também pode **[!UICONTROL Habilitar a solicitação POST]** e fornecer uma URL para publicar a solicitação. Para enviar dados ao servidor AEM que hospeda o formulário, use um caminho relativo correspondente ao caminho raiz do servidor AEM. Por exemplo, `/content/forms/af/SampleForm.html`. Para enviar dados para qualquer outro servidor, use o caminho absoluto.
+Você também pode **[!UICONTROL Habilitar a solicitação POST]** e fornecer uma URL para publicar a solicitação. Para enviar dados ao servidor do AEM que hospeda o formulário, use um caminho relativo correspondente ao caminho raiz do servidor do AEM. Por exemplo, `/content/forms/af/SampleForm.html`. Para enviar dados para qualquer outro servidor, use o caminho absoluto.
 
 >[!NOTE]
 >
@@ -153,9 +153,9 @@ The **Forms Portal Submit Action** option makes form data available through an [
 
 For more information about the Forms Portal and Submit Action, see [Drafts and submissions component](draft-submission-component.md). -->
 
-## Chamar um fluxo de trabalho de AEM {#invoke-an-aem-workflow}
+## Chamar um fluxo de trabalho do AEM {#invoke-an-aem-workflow}
 
-A Ação de Envio **[!UICONTROL Chamar um Fluxo de Trabalho de AEM]** associa um Formulário Adaptável a um [Fluxo de Trabalho de AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). Quando um formulário é enviado, o fluxo de trabalho associado é iniciado automaticamente na instância do Autor. Você pode salvar o arquivo de dados, os anexos e o Documento de registro no local da carga útil do fluxo de trabalho ou em uma variável. Se o workflow estiver marcado para armazenamento de dados externo e configurado para um armazenamento de dados externo, então somente a opção de variável estará disponível. É possível selecionar na lista de variáveis disponíveis para o modelo de fluxo de trabalho. Se o workflow estiver marcado para armazenamento de dados externo em um estágio posterior e não no momento da criação do workflow, verifique se as configurações de variável necessárias estão em vigor.
+A Ação de Envio **[!UICONTROL Chamar um Fluxo de Trabalho do AEM]** associa um Formulário Adaptável a um [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). Quando um formulário é enviado, o fluxo de trabalho associado é iniciado automaticamente na instância do Autor. Você pode salvar o arquivo de dados, os anexos e o Documento de registro no local da carga útil do fluxo de trabalho ou em uma variável. Se o workflow estiver marcado para armazenamento de dados externo e configurado para um armazenamento de dados externo, então somente a opção de variável estará disponível. É possível selecionar na lista de variáveis disponíveis para o modelo de fluxo de trabalho. Se o workflow estiver marcado para armazenamento de dados externo em um estágio posterior e não no momento da criação do workflow, verifique se as configurações de variável necessárias estão em vigor.
 
 A ação enviar coloca o seguinte no local da carga do fluxo de trabalho, ou a variável se o fluxo de trabalho estiver marcado para armazenamento de dados externo:
 
@@ -165,9 +165,9 @@ A ação enviar coloca o seguinte no local da carga do fluxo de trabalho, ou a v
 
 * **Documento de Registro**: contém o Documento de Registro gerado para o Formulário Adaptável. Você pode usar a opção **[!UICONTROL Caminho do Documento de Registro]** para especificar o nome do arquivo do Documento de Registro e o caminho do arquivo relativo à carga útil. Por exemplo, o caminho `/addresschange/DoR.pdf` cria uma pasta chamada `addresschange` relativa à carga e coloca a `DoR.pdf` relativa à carga. Você também pode especificar apenas `DoR.pdf` para salvar apenas o documento de registro sem criar uma hierarquia de pastas. Se o workflow estiver marcado para armazenamento de dados externo, use a opção variable e selecione a variável na lista de variáveis disponíveis para o modelo de workflow.
 
-Antes de usar a ação enviar **[!UICONTROL Invocar um fluxo de trabalho de AEM]**, configure o seguinte para a configuração do **[!UICONTROL serviço de configurações do AEM]**:
+Antes de usar a ação enviar **[!UICONTROL Chamar um fluxo de trabalho do AEM]**, configure o seguinte para a configuração do **[!UICONTROL serviço de configurações do AEM DS]**:
 
-* **[!UICONTROL URL do Servidor de Processamento]**: o Servidor de Processamento é o servidor onde o Fluxo de Trabalho do Forms ou AEM é disparado. Pode ser o mesmo que o URL da instância do autor do AEM ou outro servidor.
+* **[!UICONTROL URL do Servidor de Processamento]**: o Servidor de Processamento é o servidor onde o Fluxo de Trabalho do Forms ou do AEM é disparado. Pode ser o mesmo que o URL da instância do autor do AEM ou outro servidor.
 
 * **[!UICONTROL Nome de Usuário do Servidor de Processamento]**: nome de usuário do usuário do fluxo de trabalho
 
@@ -193,7 +193,7 @@ Para usar a Ação Enviar **[!UICONTROL Enviar para a Biblioteca de Documentos d
 
 Para conectar o AEM Forms ao seu Microsoft® Sharepoint Document Library Storage:
 
-1. Vá para sua instância do **AEM Forms Author** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**.
+1. Vá para sua instância do **AEM Forms Author** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Após selecionar o **[!UICONTROL Microsoft® SharePoint]**, você será redirecionado para o **[!UICONTROL Navegador SharePoint]**.
 1. Selecione um **Contêiner de Configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
 1. Clique em **[!UICONTROL Criar]** > **[!UICONTROL Biblioteca de Documentos da SharePoint]** na lista suspensa. O assistente de configuração do SharePoint é exibido.
@@ -232,12 +232,17 @@ Você pode usar a configuração criada da Biblioteca de documentos da SharePoin
    > * Se nenhum [!UICONTROL Contêiner de Configuração] for selecionado, as pastas de [!UICONTROL Configuração de Armazenamento] globais serão exibidas na janela de propriedades da Ação de Envio.
 
 1. Selecione **Enviar Ação** como **[!UICONTROL Enviar para o SharePoint]**.
-   ![GIF do Sharepoint](/help/forms/assets/sharedrive-video.gif)
+   ![Sharepoint GIF](/help/forms/assets/sharedrive-video.gif)
 1. Selecione a **[!UICONTROL Configuração de Armazenamento]**, onde você deseja salvar seus dados.
 1. Clique em **[!UICONTROL Salvar]** para salvar as configurações de Envio.
 
 Ao enviar o formulário, os dados são salvos no Armazenamento da Biblioteca de Documentos do Microsoft® Sharepoint especificado.
 A estrutura de pasta para salvar dados é `/folder_name/form_name/year/month/date/submission_id/data`.
+
+>[!NOTE]
+>
+> Os anexos também são armazenados no diretório `/folder_name/form_name/year/month/date/submission_id/data`. No entanto, se você selecionar **Salvar anexos com nome original**, os anexos serão armazenados na pasta usando seus nomes de arquivo originais.
+> ![imagem](/help/forms/assets/sp-doc-attachment-af1.png){height=50%,width=50%}
 
 ### Conectar um formulário adaptável à lista Microsoft® SharePoint {#connect-af-sharepoint-list}
 
@@ -252,7 +257,7 @@ Para usar a ação enviar [!UICONTROL Enviar para a Lista do SharePoint] em um f
 
 Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 
-1. Vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® SharePoint]**.
+1. Vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Serviços na Nuvem]** > **[!UICONTROL Microsoft® SharePoint]**.
 1. Selecione um **Contêiner de Configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
 1. Clique em **[!UICONTROL Criar]** > **[!UICONTROL Lista do SharePoint]** na lista suspensa. O assistente de configuração do SharePoint é exibido.
 1. Especifique o **[!UICONTROL Título]**, **[!UICONTROL ID do Cliente]**, **[!UICONTROL Segredo do Cliente]** e **[!UICONTROL URL do OAuth]**. Para obter informações sobre como recuperar a ID do cliente, o Segredo do cliente e a ID do locatário para a URL do OAuth, consulte a [Documentação da Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
@@ -274,7 +279,7 @@ Para conectar o AEM Forms à sua lista do Microsoft® Sharepoint:
 
 Você pode usar a configuração da Lista do SharePoint criada em um Formulário adaptável para salvar dados ou o Documento de registro gerado em uma Lista do SharePoint. Execute as seguintes etapas para usar uma configuração de armazenamento de Lista do SharePoint em um Formulário adaptável como:
 
-1. [Criar um modelo de dados de formulário (FDM) usando a configuração da Lista do Microsoft® SharePoint](/help/forms/create-form-data-models.md)
+1. [Criar um modelo de dados de formulário (FDM) usando o Microsoft](/help/forms/create-form-data-models.md)
 1. [Configurar o Modelo de dados de formulário (FDM) para recuperar e enviar dados](/help/forms/work-with-form-data-model.md#configure-services)
 1. [Criação de um Formulário adaptável](/help/forms/creating-adaptive-form.md)
 1. [Configurar a ação Enviar usando um Modelo de dados de formulário (FDM)](/help/forms/configuring-submit-actions.md#submit-using-form-data-model)
@@ -302,7 +307,7 @@ Microsoft® OneDrive configurado.
 
 Para conectar o AEM Forms ao seu Microsoft® OneDrive Storage:
 
-1. Vá para sua instância do **AEM Forms Author** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft® OneDrive]**.
+1. Vá para sua **instância do AEM Forms Author** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Microsoft® OneDrive]**.
 1. Depois de selecionar o **[!UICONTROL Microsoft® OneDrive]**, você será redirecionado para o **[!UICONTROL OneDrive Browser]**.
 1. Selecione um **Contêiner de Configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
 1. Clique em **[!UICONTROL Criar]**. O assistente de configuração do OneDrive é exibido.
@@ -341,7 +346,7 @@ Você pode usar a configuração de armazenamento do OneDrive criada em um Formu
    > * Se nenhum [!UICONTROL Contêiner de Configuração] for selecionado, as pastas de [!UICONTROL Configuração de Armazenamento] globais serão exibidas na janela de propriedades da Ação de Envio.
 
 1. Selecione **Enviar Ação** como **[!UICONTROL Enviar para o OneDrive]**.
-   ![GIF do OneDrive](/help/forms/assets/onedrive-video.gif)
+   ![OneDrive GIF](/help/forms/assets/onedrive-video.gif)
 1. Selecione a **[!UICONTROL Configuração de Armazenamento]**, onde você deseja salvar seus dados.
 1. Clique em **[!UICONTROL Salvar]** para salvar as configurações de Envio.
 
@@ -358,7 +363,7 @@ A Ação de envio **[!UICONTROL Enviar para o Armazenamento de Blobs do Azure]**
 ### Criar um contêiner de armazenamento do Azure Blob {#create-azure-configuration}
 
 Para conectar o AEM Forms aos seus contêineres de Armazenamento do Azure:
-1. Vá para sua instância do **AEM Forms Author** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Armazenamento do Azure]**.
+1. Vá para sua instância do **AEM Forms Author** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Armazenamento do Azure]**.
 1. Depois de selecionar o **[!UICONTROL Armazenamento do Azure]**, você será redirecionado para o **[!UICONTROL Navegador de Armazenamento do Azure]**.
 1. Selecione um **Contêiner de Configuração**. A configuração é armazenada no Contêiner de configuração selecionado.
 1. Clique em **[!UICONTROL Criar]**. O assistente Criar configuração de armazenamento do Azure é exibido.
@@ -392,7 +397,7 @@ Você pode usar a configuração do contêiner de Armazenamento do Azure criada 
 Ao enviar o formulário, os dados são salvos na configuração especificada do contêiner de Armazenamento do Azure.
 A estrutura de pasta para salvar dados é `/configuration_container/form_name/year/month/date/submission_id/data`.
 
-Para definir valores de uma configuração, [Gere Configurações OSGi usando o SDK do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) na instância do Cloud Service.
+Para definir valores de uma configuração, [Gere Configurações OSGi usando o AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) na sua instância do Cloud Service.
 
 
 ## Enviar para o Power Automate {#microsoft-power-automate}
@@ -404,7 +409,7 @@ Você pode configurar um Formulário adaptável para executar um fluxo da nuvem 
 * Realizar cálculos complexos em dados capturados
 * Salve os dados do Forms adaptável em sistemas de armazenamento em uma programação predefinida
 
-O editor Forms adaptável fornece a **ação de envio Chamar um fluxo do Microsoft® Power Automate** para enviar dados de formulários adaptáveis, anexos e Documentos de Registro para o fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua as a Cloud Service do Forms com o Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
+O editor Forms adaptável fornece a **ação de envio Chamar um fluxo do Microsoft® Power Automate** para enviar dados de formulários adaptáveis, anexos e Documentos de Registro para o fluxo da nuvem do Power Automate. Para usar a ação Enviar para enviar dados capturados para o Microsoft® Power Automate, [Conecte sua instância do Forms as a Cloud Service com o Microsoft® Power Automate](forms-microsoft-power-automate-integration.md)
 
 Após uma configuração bem-sucedida, use a ação de envio [Chamar um fluxo do Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#use-the-invoke-a-microsoft&reg;-power-automate-flow-submit-action-to-send-data-to-a-power-automate-flow-use-the-invoke-microsoft-power-automate-flow-submit-action) para enviar dados a um Fluxo do Power Automate.
 
@@ -450,7 +455,7 @@ Se o usuário final ignorar essas validações e enviar os formulários, o servi
 
 >[!NOTE]
 >
->A validação do lado do servidor valida o modelo de formulário. É recomendável criar uma biblioteca do cliente separada para validações e não misturá-la com outras coisas, como estilo de HTML e manipulação de DOM na mesma biblioteca do cliente.
+>A validação do lado do servidor valida o modelo de formulário. É recomendável criar uma biblioteca do cliente separada para validações e não misturá-la com outras coisas, como o estilo do HTML e a manipulação de DOM na mesma biblioteca do cliente.
 
 ### Suporte a funções personalizadas em expressões de validação {#supporting-custom-functions-in-validation-expressions-br}
 
@@ -464,7 +469,7 @@ O autor pode configurar a biblioteca JavaScript personalizada por formulário ad
 
 ## Tratamento de erros na ação enviar {#error-handling-on-submit-action}
 
-Como parte das diretrizes de segurança e proteção contra AEM, configure páginas de erro personalizadas como 400.jsp, 404.jsp e 500.jsp. Esses manipuladores são chamados quando ao enviar um formulário 400, 404 ou 500 erros são exibidos. Os manipuladores também são chamados quando esses códigos de erro são acionados no nó do Publish. Você também pode criar páginas JSP para outros códigos de erro HTTP.
+Como parte das diretrizes de segurança e proteção do AEM, configure páginas de erro personalizadas como 400.jsp, 404.jsp e 500.jsp. Esses manipuladores são chamados quando ao enviar um formulário 400, 404 ou 500 erros são exibidos. Os manipuladores também são chamados quando esses códigos de erro são acionados no nó Publicar. Você também pode criar páginas JSP para outros códigos de erro HTTP.
 
 Quando você preenche um modelo de dados de formulário (FDM) ou um formulário adaptável baseado em esquema com reclamação de dados XML ou JSON para um esquema cujos dados não contêm as tags `<afData>`, `<afBoundData>` e `</afUnboundData>`, os dados de campos não vinculados do formulário adaptável são perdidos. O esquema pode ser um esquema XML, esquema JSON ou um Modelo de dados de formulário (FDM). Campos não limitados são campos de Formulário adaptável sem a propriedade `bindref`.
 

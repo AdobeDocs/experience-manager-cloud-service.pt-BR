@@ -4,9 +4,9 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) para
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3152'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Visão geral {#overview}
 
-Quando um formulário é preenchido ou enviado, você pode manter um registro do formulário, impresso ou no formato do documento. Esse registro é chamado de Documento de registro (DoR). É uma cópia do formulário enviado que pode ser impressa. Você também pode consultar o documento de registro para as informações que os clientes preencheram em uma data posterior ou usar o documento de registro para arquivar formulários e conteúdo juntos no formato PDF.
+Quando um formulário é preenchido ou enviado, você pode manter um registro do formulário, impresso ou no formato do documento. Esse registro é chamado de Documento de registro (DoR). É uma cópia do formulário enviado que pode ser impressa. Você também pode consultar o documento de registro para as informações que os clientes preencheram em uma data posterior ou usar o Documento de registro para arquivar formulários e conteúdo juntos no Formato PDF.
 
 ![Documento de registro](assets/document-of-record.png)
 
@@ -24,7 +24,7 @@ Para criar um documento de registro, um modelo baseado em XFA ou acroforma é me
 É possível:
 
 * [Gerar um documento de registro baseado em XFA](#generate-an-XFA-based-document-of-record)
-* [Gerar um documento de registro baseado em acroforma (PDF do Acrobat Form)](#generate-an-Acroform-based-document-of-record)
+* [Gerar um documento de registro baseado em acroforma (Acrobat Form PDF)](#generate-an-Acroform-based-document-of-record)
 * [Gerar automaticamente um documento de registro](#auto-generate-a-document-of-record)
 
 ## Antes de começar {#components-to-automatically-generate-a-document-of-record}
@@ -50,13 +50,13 @@ O formulário adaptável agora está configurado para usar um arquivo XDP como m
 
 ## Gerar um documento de registro baseado em acroforma {#generate-an-Acroform-based-document-of-record}
 
-Carregue seu PDF Adobe Acrobat (Acroform) na instância do AEM Forms. Execute as seguintes etapas para configurar um Formulário adaptável para usar o Adobe Acrobat PDF (AcroForm) como modelo para o Documento de registro:
+Faça upload do Adobe Acrobat PDF (Acrobat) na sua instância do AEM Forms. Execute as seguintes etapas para configurar um Formulário adaptável para usar o Adobe Acrobat PDF (AcroForm) como modelo para o Documento de registro:
 
 1. Na instância do autor do Experience Manager, clique em **[!UICONTROL Forms]** > **[!UICONTROL Forms e Documentos].**
 1. Selecione um Formulário ou **[!UICONTROL Criar um Formulário Adaptável]** e clique em **[!UICONTROL Propriedades]**.
 1. Na janela Propriedades, selecione **[!UICONTROL Modelo de formulário]**.
 1. Na guia **[!UICONTROL Modelo de Formulário]**, no menu suspenso **[!UICONTROL Selecionar de]**, selecione **[!UICONTROL Modelo de Dados de Formulário]**, **[!UICONTROL Esquema]** ou **[!UICONTROL Nenhum]**. Você também pode selecionar um modelo de formulário ao criar um formulário.
-1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Associar Modelo de Formulário como Documento de Modelo de Registro**. Ao selecionar essa opção, todas as PDF de Acrobat (Acroform) disponíveis em sua máquina são exibidas. Selecione o Acrobat que deseja usar.
+1. Na seção Document of Record Template Configuration da guia Form Model, selecione **Associar Modelo de Formulário como Documento de Modelo de Registro**. Ao selecionar essa opção, todos os PDF do Acrobat (Acroform) disponíveis em sua máquina são exibidos. Selecione o Acrobat que deseja usar.
 1. Clique em **[!UICONTROL Concluído]**
 
 O formulário adaptável agora está configurado para usar um acroforma como modelo para o documento de registro. A próxima etapa é [vincular componentes do Formulário adaptável com campos de modelo correspondentes](#bind-adaptive-form-components-with-template-fields).
@@ -99,10 +99,13 @@ Vincule campos de formulário adaptável a campos de modelo para exibir dados de
 In the following video, Adaptive Form components are bound with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-Você pode usar ações de envio como &quot;Enviar email&quot;, &quot;Chamar um fluxo de trabalho do AEM&quot;, &quot;Chamar um fluxo do Power Automate&quot; e outras [Ações de envio](configuring-submit-actions.md) para receber um Documento de Registro.
+Você pode usar ações de envio como &quot;Enviar Email&quot;, &quot;Chamar um fluxo de trabalho do AEM&quot;, &quot;Chamar um fluxo do Power Automate&quot; e outras [Ações de Envio](configuring-submit-actions.md) para receber um Documento de Registro.
 ![Ações de envio de imagem](/help/forms/assets/submit-actions-img.png)
 
 
+>[!NOTE]
+>
+> Você pode salvar o documento de registro para qualquer modelo de dados de formulário usando a propriedade **[!UICONTROL campo Referência de associação de documento de registro]**.
 
 ## Atualizações incrementais no documento de modelo de registro {#document-of-record-template-incremental-updates}
 
@@ -326,12 +329,12 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
    1. **Propriedades básicas**:
       * **Modelo**: se quiser selecionar um modelo personalizado, procure e selecione um XDP no servidor [!DNL AEM Forms]. Se quiser usar um modelo que não esteja disponível no servidor [!DNL AEM Forms], primeiro carregue o XDP no servidor [!DNL AEM Forms].
-      * **Cor de Ênfase**: a cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no documento de PDF de registro.
-      * **Família de Fontes**: Família de fontes do texto no documento de PDF de registro.
+      * **Cor de Ênfase**: a cor na qual o texto do cabeçalho e as linhas separadoras são renderizados no documento de registro PDF.
+      * **Família de Fontes**: Família de fontes do texto no documento de registro do PDF.
 
         >[!NOTE]
         >
-        > O AEM Forms oferece uma variedade de fontes integradas que se integram perfeitamente com arquivos PDF. Para ver a lista de fontes com suporte, [clique aqui](/help/forms/supported-out-of-the-box-fonts.md).
+        > O AEM Forms oferece uma variedade de fontes integradas que se integram perfeitamente aos arquivos PDF. Para ver a lista de fontes com suporte, [clique aqui](/help/forms/supported-out-of-the-box-fonts.md).
 
       * **Incluir objetos de formulário que não estão associados ao modelo de dados**: a configuração da propriedade inclui campos não associados do Formulário adaptável baseado em esquema no Documento de Registro.
 
@@ -381,7 +384,7 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
 ## Layouts de tabela e coluna para painéis no documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 
-O formulário adaptável pode ser longo, com vários campos de formulário. Talvez você não queira salvar um Documento de registro como uma cópia exata do Formulário adaptável. Agora é possível escolher um layout de tabela ou coluna para salvar um ou mais painéis do Formulário adaptável no documento de PDF de registro.
+O formulário adaptável pode ser longo, com vários campos de formulário. Talvez você não queira salvar um Documento de registro como uma cópia exata do Formulário adaptável. Agora é possível escolher um layout de tabela ou coluna para salvar um ou mais painéis do Formulário adaptável no Documento de registro do PDF.
 
 Antes de gerar um documento de registro, nas configurações de um painel, selecione Layout do documento de registro para esse painel como Tabela ou Coluna. Os campos no painel são organizados de acordo no documento de registro.
 
