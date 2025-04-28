@@ -4,7 +4,7 @@ description: Saiba como criar  [!DNL Dynamic Media]  modelos usando um editor de
 hide: true
 role: User
 exl-id: 07de648e-4ae2-4524-8e05-3cf10bb6006d
-source-git-commit: f3dea4724f757090a504c3144e17fca7075acc52
+source-git-commit: e1c571c4798152732d78b8a2c823d5da9664cb9e
 workflow-type: tm+mt
 source-wordcount: '3165'
 ht-degree: 0%
@@ -72,6 +72,9 @@ Alguns dos principais benefícios dos modelos [!DNL Dynamic Media] incluem:
 >[!NOTE]
 >
 >Os clientes com assinaturas do SKU de Segurança Aprimorada não podem usar nenhum recurso do [!DNL Dynamic Media], incluindo Modelos do [!DNL Dynamic Media], nesse programa dos Serviços em Nuvem.
+
+Saiba como criar um modelo [!DNL Dynamic Media] passo a passo neste vídeo.
+>[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Antes de começar{#prerequisites-for-dynamic-media-wysiwyg-template}
 
@@ -284,9 +287,6 @@ Execute as seguintes etapas para copiar o URL de entrega do modelo:
 1. Clique em **[!UICONTROL Copiar URL]**. A caixa de diálogo **[!UICONTROL Copiar URL]** é exibida. Selecione e copie o URL exibido. O primeiro parâmetro na URL começa após um ponto de interrogação **([!UICONTROL ?])** e um par chave-valor começam com **[!UICONTROL $]** e terminam com **[!UICONTROL &amp;]**. A chave e o valor são separados por um sinal de igual **([!UICONTROL =])**, com a chave à esquerda e o valor à direita.
 1. Cole esse URL na guia do navegador e veja seu modelo em tempo real. Personalize o modelo em tempo real atualizando o valor do parâmetro necessário (valor da chave) diretamente na URL, conforme demonstrado na [etapa 2](#preview-and-publish-template-and-copy-template-deliver-url) da seção **Visualizar e Publicar**.
 1. Use este URL para um merchandising rápido de seus produtos ou serviços. Você pode compartilhar esse URL com seus clientes ou integrá-lo ao seu site ou a qualquer aplicativo downstream de terceiros para exibir o banner e fazer atualizações em tempo real nele para refletir as ofertas em andamento.
-
-Saiba como criar um modelo [!DNL Dynamic Media] passo a passo neste vídeo.
->[!VIDEO](https://video.tv.adobe.com/v/3443281)
 
 ## Faça atualizações em tempo real no modelo a partir do URL{#update-the-template-from-the-url}
 
