@@ -4,10 +4,10 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d0a037090e4b31f18deb0a9bd3238cab0a8d185e
+source-git-commit: 3583c8dad2ad8dce941845003dbf850ea0b8ad2a
 workflow-type: tm+mt
-source-wordcount: '1526'
-ht-degree: 9%
+source-wordcount: '1500'
+ht-degree: 8%
 
 ---
 
@@ -703,12 +703,7 @@ Um tipo de componente de referência permite uma referência a outro objeto de d
 
 #### Texto formatado {#rich-text}
 
-Rich text permite entrada de rich text com várias linhas. Ela oferece tipos de validação adicionais.
-
-| Tipo de validação | Tipo de valor | Descrição | Obrigatório |
-|---|---|---|---|
-| `maxSize` | `number` | Número máximo de caracteres permitido | Não |
-| `customErrorMsg` | `string` | Mensagem que será exibida se `maxSize` for excedido | Não |
+Rich text permite entrada de rich text com várias linhas.
 
 >[!BEGINTABS]
 
@@ -723,26 +718,6 @@ Rich text permite entrada de rich text com várias linhas. Ela oferece tipos de 
       "name": "rte",
       "label": "Rich Text",
       "valueType": "string"
-    }
-  ]
-}
-```
-
->[!TAB Amostra 2]
-
-```json
-{
-  "id": "another-richtext",
-  "fields": [
-    {
-      "component": "richtext",
-      "name": "rte",
-      "label": "Rich Text",
-      "valueType": "string",
-      "validation": {
-        "maxSize": 1000,
-        "customErrorMsg": "That's about as funny as a screen door on a battleship."
-      }
     }
   ]
 }
