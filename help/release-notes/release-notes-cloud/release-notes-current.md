@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 05c34d45e27a8ef22c1ebca72d362529669339fa
+source-git-commit: 31fac8e421e58146977222d699bac1c7cf3ee4e5
 workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 9%
@@ -98,8 +98,8 @@ Agora é possível selecionar e comparar rapidamente qualquer versão de um ativ
 * **Editor de regras**:
    * [Condição Binária com Evento de Clique na Cláusula &quot;When&quot;](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): o Editor de Regras agora permite combinar um evento de clique de botão (_É Clicado_) com outras condições na cláusula &quot;When&quot;. Isso permite um controle mais preciso sobre a execução da regra com base na interação do usuário e outros fatores. Observação: ao usar várias condições, o evento de clique deve ser a primeira condição listada.
    * [Condições de Validação para Campos e Painéis](/help/forms/rule-editor-core-components-usecases.md): o Editor de Regras agora inclui condições _IsValid_ e _IsNotValid_. Isso permite verificar o status de validação de campos específicos ou painéis inteiros (incluindo layouts como Guias horizontais, Guias verticais, Acordeões e Assistentes), facilitando a navegação aprimorada do formulário e a experiência do usuário com base nos resultados da validação.
-* **Gerenciamento de Escopo aprimorado para Listas do SharePoint**: os sites do SharePoint agora oferecem suporte a todos os caminhos gerenciados, por exemplo, /sites e /team. Esse aprimoramento permite uma integração mais ampla em várias estruturas de site do SharePoint, oferecendo maior flexibilidade na conexão com o conteúdo organizacional.
-* **Suporte para Salvar Documento de Registro na Lista do SharePoint**: o Forms criado usando um Modelo de Dados de Formulário (FDM) baseado em Lista do SharePoint agora pode salvar o Documento de Registro (DoR) nas Listas do SharePoint configurando a propriedade do campo Documento de Referência de Associação de Registro. Esse aprimoramento permite a integração perfeita de dados e documentos de formulário compatíveis com o armazenamento da SharePoint.
+* [Gerenciamento de Escopo aprimorado para Listas do SharePoint](/help/forms/connect-forms-to-sharepoint-list.md): os sites do SharePoint agora oferecem suporte a todos os caminhos gerenciados, por exemplo, /sites e /team. Esse aprimoramento permite uma integração mais ampla em várias estruturas de site do SharePoint, oferecendo maior flexibilidade na conexão com o conteúdo organizacional.
+* [Suporte para Salvar Documento de Registro na Lista do SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): o Forms criado usando um Modelo de Dados de Formulário (FDM) baseado em Lista do SharePoint agora pode salvar o Documento de Registro (DoR) nas Listas do SharePoint configurando a propriedade do campo Documento de Referência de Associação de Registro. Esse aprimoramento permite a integração perfeita de dados e documentos de formulário compatíveis com o armazenamento da SharePoint.
 
 ### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
