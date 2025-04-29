@@ -3,20 +3,15 @@ title: Atualizar os fragmentos de conteúdo para referências UUID
 description: Saiba como atualizar seus fragmentos de conteúdo para obter referências UUID otimizadas no Adobe Experience Manager as a Cloud Service para entrega de conteúdo headless.
 feature: Headless, Content Fragments,GraphQL API
 role: Admin, Developer
-source-git-commit: 5aa04f3b042f8e9f9af97148ceab0288ff210238
+exl-id: 004d1340-8e3a-4e9a-82dc-fa013cea45a7
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1123'
 ht-degree: 2%
 
 ---
 
 # Atualizar os fragmentos de conteúdo para referências UUID {#upgrade-content-fragments-for-UUID-references}
-
->[!IMPORTANT]
->
->Vários recursos da API do GraphQL para uso com fragmentos de conteúdo estão disponíveis por meio do Early Adoter Program.
->
->Para ver o status e saber como se candidatar caso esteja interessado, confira as [Notas de Versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 Para otimizar a estabilidade dos filtros do GraphQL, você pode atualizar as referências de conteúdo e fragmento nos fragmentos de conteúdo para que elas usem identificadores universalmente exclusivos (UUID).
 
@@ -122,12 +117,12 @@ A atualização de conteúdo pode ser gerenciada usando o ponto de extremidade: 
 | ação | `start` | |
 | serviceTypeId | `uuidUpgradeService` | A ID do tipo de serviço (valor fixo, predefinido). |
 |  segmentSize | `1000` | O número de fragmentos de conteúdo ou modelos que serão atualizados em um segmento (lote). |
-| basePath | `/conf` | Especifique:<ul><li>a raiz `/conf` para atualizar todas as configurações de AEM</li><li>um caminho de configuração do AEM selecionado. para o qual a atualização de conteúdo é executada<br>Por exemplo: `/conf/wknd-shared` atualiza somente o único locatário `wknd-shared`</li></ul> |
+| basePath | `/conf` | Especifique:<ul><li>a raiz `/conf` para atualizar todas as configurações do AEM</li><li>um caminho de configuração do AEM selecionado. para o qual a atualização de conteúdo é executada<br>Por exemplo: `/conf/wknd-shared` atualiza somente o único locatário `wknd-shared`</li></ul> |
 | intervalo | `10` | Intervalo em segundos, após o qual o próximo segmento de fragmentos de conteúdo ou modelos é atualizado. |
-| modo | `replicate`, `noReplicate` | <ul><li>`replicate`: replica o mesmo trabalho em todas as instâncias do AEM Publish</li><li>`noReplicate`: executa o trabalho somente em instâncias do Autor AEM</li></ul> |
+| modo | `replicate`, `noReplicate` | <ul><li>`replicate`: replica o mesmo trabalho em todas as instâncias de publicação do AEM</li><li>`noReplicate`: executa o trabalho somente em instâncias do AEM Author</li></ul> |
 | dryRun |  `true`, `false` | <ul><li>`false`: simular a atualização de conteúdo, sem salvar as alterações de conteúdo</li><li>`true`: faça a atualização do conteúdo e salve as alterações</li></ul> |
 | **Detalhes da resposta** | **Valor** | |
-| jobId | `UUID` |  A ID do trabalho que executa a atualização de conteúdo.<ul><li>Essa ID é necessária em todas as chamadas subsequentes relacionadas a essa execução.</li><li>Se o valor de `mode` estiver definido como `replicate`, a execução em instâncias do AEM Publish também precisará estar sob o mesmo `jobId`.</li></ul> |
+| jobId | `UUID` |  A ID do trabalho que executa a atualização de conteúdo.<ul><li>Essa ID é necessária em todas as chamadas subsequentes relacionadas a essa execução.</li><li>Se o valor `mode` estiver definido como `replicate`, a execução nas instâncias de Publicação do AEM também precisará estar sob o mesmo `jobId`.</li></ul> |
 | parâmetros | Os parâmetros de atualização de conteúdo | Isso inclui os parâmetros iniciais fornecidos para iniciar a atualização de conteúdo e alguns padrões internos. |
 
 
@@ -267,7 +262,7 @@ Content-Length: 1116
 
 +++Arquivos de log de exemplo
 
-Além do status de uma atualização de conteúdo em execução obtida do endpoint HTTP, os logs de AEM fornecem informações detalhadas sobre o progresso no nível de conteúdo. Por exemplo:
+Além do status de uma atualização de conteúdo em execução obtida do endpoint HTTP, os logs do AEM fornecem informações detalhadas sobre o progresso no nível de conteúdo. Por exemplo:
 
 ```xml
 #Successful model upgrade

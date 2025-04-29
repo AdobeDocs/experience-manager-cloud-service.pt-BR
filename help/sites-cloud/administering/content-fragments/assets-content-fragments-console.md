@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 865e1fa8-2956-45cf-9dd7-034d491808fe
 solution: Experience Manager Sites
-source-git-commit: 175a7c069f57069b7a5ff1f0e5785147d9a4f6c9
+source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 5%
+source-wordcount: '247'
+ht-degree: 6%
 
 ---
 
@@ -17,12 +17,6 @@ ht-degree: 5%
 Por padrão, o [console de Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console) do Adobe Experience Manager as a Cloud Service apresenta os [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md).
 
 Entretanto, você também pode exibir e gerenciar todos os outros tipos de **Assets** neste **Console de Fragmentos de Conteúdo**.
-
->[!IMPORTANT]
->
->Vários recursos do Console de fragmentos de conteúdo estão disponíveis por meio do Programa de primeiros usuários.
->
->Para ver o status e saber como se candidatar caso esteja interessado, confira as [Notas de Versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 >[!NOTE]
 >
