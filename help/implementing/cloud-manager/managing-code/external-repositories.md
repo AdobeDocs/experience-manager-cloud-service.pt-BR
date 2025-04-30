@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Primeiros usuários" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: ad74d7a68bfb1be9e72cc7faec4808c36fa0af03
+source-git-commit: 46d3c18f04f8cfb3daef48688f9fbe197fa0ea9a
 workflow-type: tm+mt
-source-wordcount: '1871'
+source-wordcount: '1872'
 ht-degree: 26%
 
 ---
@@ -22,7 +22,7 @@ Saiba como adicionar um repositório externo no Cloud Manager. O Cloud Manager o
 
 ## Configurar um repositório externo
 
-A configuração de um repositório externo no Cloud Manager consiste em três etapas:
+A configuração de um repositório externo no Cloud Manager consiste nas seguintes etapas:
 
 1. [Adicionar um repositório externo](#add-external-repo) a um programa selecionado.
 1. Forneça um token de acesso ao repositório externo.
