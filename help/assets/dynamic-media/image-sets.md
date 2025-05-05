@@ -243,6 +243,7 @@ No entanto, conjuntos criados usando predefinições de conjunto de lotes, *não
    * Para reordenar ativos, arraste uma imagem para um novo local (selecione o ícone reordenar para mover itens).
    * Para classificar itens em ordem crescente ou decrescente, clique no cabeçalho da coluna.
    * Para adicionar ou atualizar um ativo existente, clique em **[!UICONTROL Adicionar ativo]**. Navegue até um ativo, selecione-o e, em seguida, selecione **[!UICONTROL Selecionar]** próximo ao canto superior direito da página.
+
      >[!NOTE]
      >
      >Se você excluir a imagem que o Experience Manager usa para a miniatura substituindo-a por outra imagem, o ativo original ainda será exibido.

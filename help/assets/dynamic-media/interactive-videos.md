@@ -233,7 +233,7 @@ Opcionalmente, é possível criar sua própria predefinição personalizada do v
 
 Uma predefinição do visualizador de Vídeo interativo renderiza corretamente o vídeo e todos os segmentos de linha do tempo adicionados. Ela também usa um exemplo de Quickview padrão ao selecionar uma miniatura de produto no modo de Visualização, para que você possa testar a interatividade antes de publicar.
 
-Após salvar a predefinição do visualizador, seu estado é automaticamente definido como **Ativado **in na página Predefinições do visualizador. Esse estado significa que está visível no componente do Dynamic Media e sempre que você visualiza um vídeo com ele. Certifique-se de publicar manualmente a nova predefinição do visualizador.
+Após salvar a predefinição do visualizador, seu estado é automaticamente definido como **Ativado &#x200B;** in na página Predefinições do visualizador. Esse estado significa que está visível no componente do Dynamic Media e sempre que você visualiza um vídeo com ele. Certifique-se de publicar manualmente a nova predefinição do visualizador.
 
 Consulte [Criar uma Predefinição do Visualizador](/help/assets/dynamic-media/managing-viewer-presets.md#creating-a-new-viewer-preset) para criar sua própria predefinição do visualizador de Vídeo Interativo.
 
@@ -657,27 +657,27 @@ O processo de construção do URL do Quickview é oposto ao processo de identifi
   <tbody>
   <tr>
     <td><p>SKU única, encontrada na sequência de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td>SKU única, encontrada no caminho do URL</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
     <td><p>SKU e ID de categoria na cadeia de caracteres de consulta</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   </tbody>
 </table>

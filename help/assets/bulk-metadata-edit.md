@@ -1,6 +1,6 @@
 ---
 title: Edição de metadados em massa em  [!DNL Assets View]
-description: Saiba como atualizar um conjunto predefinido de campos de metadados padrão para vários ativos disponíveis no [DNL! Visualização do Assets] simultaneamente.
+description: Saiba como atualizar um conjunto predefinido de campos de metadados padrão para vários ativos disponíveis no [!DNL ! Visualização do Assets] simultaneamente.
 exl-id: f5fee1b3-2855-4010-ae4a-216beb20920d
 source-git-commit: 19c5155363ef3f5083d36af880727a33c7224e84
 workflow-type: tm+mt
@@ -65,6 +65,7 @@ Execute essas etapas para editar os metadados de vários ativos em massa de uma 
    * **[!UICONTROL Palavras-chave]:** adicione termos específicos ou cadeias de texto que forneçam informações de alto nível sobre os ativos para aprimorar sua descoberta. Adicione uma palavra-chave e pressione **Enter** ou **return** para adicionar outra palavra-chave à lista.
    * **[!UICONTROL Marcas]:** Clique em ![editar metadados em massa](/help/assets/assets/tags-icon.svg) para selecionar marcas nas opções disponíveis. As tags fornecem informações mais específicas sobre os ativos e melhoram sua descoberta. As marcas já aplicadas aos ativos selecionados são exibidas no painel **[!UICONTROL Propriedades]**. Se não conseguir encontrar as tags relevantes, crie-as e atribua aos ativos selecionados. Consulte [Gerenciar tags em [!DNL Assets view]](/help/assets/tagging-management-assets-view.md) para obter detalhes sobre como criar e atribuir tags a ativos.
    * Clique em **[!UICONTROL Salvar]** para aplicar as atualizações de metadados acima aos ativos selecionados. Depois de salvas, as **[!UICONTROL Palavras-chave]** e as **[!UICONTROL Marcas]** são anexadas, enquanto os detalhes atualizados do **[!UICONTROL Status]**, da **[!UICONTROL Data de vencimento]** e do **[!UICONTROL Autor]** substituem os detalhes existentes.
+
      ![save-bulk-metadata-edit-properties](/help/assets/assets/save-bulk-metadata-edit-properties2.png)
 
      >[!NOTE]

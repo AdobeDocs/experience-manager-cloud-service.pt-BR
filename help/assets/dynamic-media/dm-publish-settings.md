@@ -58,7 +58,7 @@ Consulte também [Opcional - Configuração e definição das definições do Dy
    * Guia [Atributos de gerenciamento de cores](#color-management-attributes-tab)
 
    ![Página de configuração de publicação do Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
-   *Página de configuração de publicação do Dynamic Media, com a guia **[!UICONTROL Atributos da solicitação]**selecionada.*<br><br>
+   *Página de configuração de publicação do Dynamic Media, com a guia **[!UICONTROL Atributos da solicitação]**&#x200B;selecionada.*<br><br>
 
 1. Quando terminar, próximo ao canto superior direito da página, selecione **[!UICONTROL Salvar]**.
 

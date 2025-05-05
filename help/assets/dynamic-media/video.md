@@ -60,6 +60,7 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
    * Pré-visualizar e publicar ativos de vídeo
 
       * Visualize o vídeo de origem e as representações codificadas do vídeo, juntamente com suas miniaturas associadas:
+
         [Visualizar vídeos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) ou [Visualizar ativos](/help/assets/dynamic-media/previewing-assets.md)
         [Gerenciar representações de vídeo](/help/assets/manage-digital-assets.md#managing-renditions)
 
@@ -69,6 +70,7 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
    * Trabalhar com metadados de vídeo
 
       * Edite as propriedades do vídeo, como título, descrição, tags e campos de metadados personalizados:
+
         [Editar propriedades do vídeo](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gerenciar metadados para ativos digitais](/help/assets/manage-metadata.md)
@@ -93,9 +95,11 @@ A descrição do fluxo de trabalho passo a passo a seguir foi projetada para aju
    * Se você estiver usando um sistema WCM de terceiros, é possível vincular ou incorporar vídeos às suas páginas da Web.
 
       * Integrar vídeo usando o URL:
+
         [Vincular URLs ao aplicativo Web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Integrar vídeo usando o código integrado em uma página da Web:
+
         [Incorporar o visualizador de vídeo em uma página da Web](/help/assets/dynamic-media/embed-code.md).
 
    * [Gerar relatórios de vídeo](#viewing-video-reports).

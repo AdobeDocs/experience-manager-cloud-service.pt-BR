@@ -79,4 +79,4 @@ A verificação de DNS pode levar algumas horas para ser processada devido a atr
 
 >[!NOTE]
 >
-Adicione o domínio personalizado à lista de URLs de redirecionamento permitidos. A lista está no cliente IMS para o seletor de ativos.<br>Coordene com a respectiva equipe do Adobe para executar esta tarefa fornecendo a cadeia de caracteres de domínio personalizada.
+>Adicione o domínio personalizado à lista de URLs de redirecionamento permitidos. A lista está no cliente IMS para o seletor de ativos.<br>Coordene com a respectiva equipe do Adobe para executar esta tarefa fornecendo a cadeia de caracteres de domínio personalizada.

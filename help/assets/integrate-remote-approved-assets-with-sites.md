@@ -77,6 +77,7 @@ O suporte a ativos remotos usando o Dynamic Media com recursos OpenAPI exige:
 * Configure as [variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md#add-variables) a seguir para o AEM as a Cloud Service:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX` refere-se à ID do programa <br>
      `eYYYY` refere-se à ID de ambiente
 
@@ -161,7 +162,7 @@ Siga as etapas abaixo para usar ativos remotos no Fragmento de conteúdo do AEM 
 
    >[!NOTE]
    >
-   Se você não tiver o modelo de Fragmento de conteúdo do AEM, talvez precise [criar um](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
+   >Se você não tiver o modelo de Fragmento de conteúdo do AEM, talvez precise [criar um](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
 
 1. Clique no ícone de ![marca de seleção](/help/assets/assets/do-not-localize/checkmark-icon.svg) ao lado do componente de texto.
 1. Selecione **[!UICONTROL Remoto]** para buscar o ativo do DAM Remoto. <br>

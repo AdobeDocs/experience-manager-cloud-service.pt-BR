@@ -219,7 +219,7 @@ O GuideBridge é uma coleção de APIs que pode ser usada para interagir com o A
 
 * Para redefinir campos de formulário, você pode acionar a API `guideBridge.reset()` na expressão de clique de um botão. Da mesma forma, há uma API de envio que pode ser chamada como uma expressão de clique `guideBridge.submit()`**.**
 
-* Você pode usar a API `setFocus()` para definir o foco em vários campos ou painéis (para foco do painel, ele é definido automaticamente como o primeiro campo). O `setFocus()`fornece uma grande variedade de opções de navegação, como navegação entre painéis, travessia anterior/seguinte, definição do foco para um campo específico e muito mais. Por exemplo, para mover para o próximo painel, você pode usar: `guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;).
+* Você pode usar a API `setFocus()` para definir o foco em vários campos ou painéis (para foco do painel, ele é definido automaticamente como o primeiro campo). O `setFocus()`fornece uma grande variedade de opções de navegação, como navegação entre painéis, travessia anterior/seguinte, definição do foco para um campo específico e muito mais. Por exemplo, para mover para o próximo painel, você pode usar: &grave;guideBridge.setFocus(this.panel.somExpression, &#39;nextItem&#39;).
 
 * Para validar um Formulário adaptável ou seus painéis específicos, use `guideBridge.validate(errorList, somExpression).`
 

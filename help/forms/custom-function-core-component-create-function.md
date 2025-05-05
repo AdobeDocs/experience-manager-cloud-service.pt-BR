@@ -109,6 +109,7 @@ Adicione o seguinte à pasta da biblioteca do cliente adicionada:
          #base=js
        function.js
    ```
+
 1. Na pasta `js`, adicione o arquivo javascript como `function.js`, o que inclui as funções personalizadas:
 
    ```javascript
@@ -133,6 +134,7 @@ Adicione o seguinte à pasta da biblioteca do cliente adicionada:
     return age;
     }
    ```
+
 1. Salve os arquivos.
 
 ![estrutura de pasta de função personalizada](/help/forms/assets/custom-function-added-files.png)

@@ -36,6 +36,7 @@ Consulte o artigo [Edição de um AEM externo no SPA](editing-external-spa.md) p
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
+
      ![exemplo de propriedade de pontos de entrada](assets/asset-manifest-entrypoints.png)
 * O aplicativo deve ser capaz de inicializar em um `<div id="root"></div>` sob o elemento `body`. Se uma marcação diferente for esperada para o aplicativo instanciar, ela deverá ser ajustada adequadamente nos scripts HTL do componente proxy que tem um `sling:resourceSuperType="spa-project-core/components/remotepage`.
 

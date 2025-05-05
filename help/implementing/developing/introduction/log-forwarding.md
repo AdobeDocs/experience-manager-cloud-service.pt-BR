@@ -116,14 +116,14 @@ Outro cenário é desativar o encaminhamento dos logs CDN ou AEM (incluindo o Ap
 Algumas organizações escolhem restringir qual tráfego pode ser recebido pelos destinos de registro, outras podem exigir o uso de portas diferentes de HTTPS (443).  Nesse caso, a [Rede Avançada](/help/security/configuring-advanced-networking.md) precisará ser configurada antes da implantação da configuração de encaminhamento de log.
 
 Use a tabela abaixo para ver quais são os requisitos para a configuração avançada de rede e registro com base no fato de você estar usando ou não a porta 443 e se você precisa ou não que seus registros apareçam a partir de um endereço IP fixo.
-<html>
-<style>
-table, th, td {
+&lt;html>
+&lt;style>
+table, th, td &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -155,7 +155,7 @@ table, th, td {
       <td>Sim</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >O fato de seus registros serem exibidos a partir de um único endereço IP é determinado pela sua escolha de configuração avançada de rede.  A saída dedicada deve ser usada para facilitar isso.

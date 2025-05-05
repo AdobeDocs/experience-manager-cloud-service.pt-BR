@@ -206,6 +206,7 @@ Para adicionar o estilo de um componente no arquivo CSS:
    float: right;
    }
    ```
+
 1. Salve as alterações.
 
 ### Implantar os arquivos e criar o projeto

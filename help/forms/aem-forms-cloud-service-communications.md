@@ -43,7 +43,7 @@ Uma operação síncrona é um processo de geração de documentos de maneira li
 
 As operações de API de locatário único oferecem suporte a dois tipos de autenticação:
 
-* **Autenticação básica**: a autenticação básica é um esquema de autenticação simples incorporado ao protocolo HTTP. O cliente envia solicitações HTTP com o cabeçalho de Autorização que contém a palavra Básico seguida por um espaço e uma string codificada em base64 username:password. Por exemplo, para autorizar como administrador / administrador, o cliente envia o nome de usuário ] da cadeia de caracteres codificada em [base64 Básico: [senha da cadeia de caracteres codificada em base64].
+* **Autenticação básica**: a autenticação básica é um esquema de autenticação simples incorporado ao protocolo HTTP. O cliente envia solicitações HTTP com o cabeçalho de Autorização que contém a palavra Básico seguida por um espaço e uma string codificada em base64 username:password. Por exemplo, para autorizar como administrador / administrador, o cliente envia o nome de usuário &rbrack; da cadeia de caracteres codificada em &lbrack;base64 Básico: [senha da cadeia de caracteres codificada em base64].
 
 * **Autenticação baseada em token:** a autenticação baseada em token usa um token de acesso (token de autenticação de portador) para fazer solicitações ao Experience Manager as a Cloud Service. O AEM Forms as a Cloud Service fornece APIs para recuperar com segurança o token de acesso. Para recuperar e usar o token para autenticar uma solicitação:
 

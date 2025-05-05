@@ -87,7 +87,7 @@ O desenvolvimento local com o SDK do AEM economiza tempo e simplifica o processo
    1. Adicionar o arquivo de complemento (.far) do AEM Forms à pasta `AEM SDK/crx-quickstart/install`,
    1. Reinicie o SDK do AEM.
 
-+++
+   +++
 
 1. [Configurar permissões de usuário](/help/forms/setup-local-development-environment.md#configure-users-and-permissions): crie usuários com permissões de desenvolvimento, criação e outras e adicione esses usuários a grupos de formulários predefinidos.
 
@@ -116,7 +116,7 @@ O desenvolvimento local com o SDK do AEM economiza tempo e simplifica o processo
 
    Depois de implantar o projeto AEM, você pode ver os modelos adaptáveis do Forms no seu ambiente.
 
-+++
+   +++
 
 
 Para obter instruções detalhadas e um guia passo a passo sobre como configurar o ambiente de desenvolvimento local do AEM Forms, consulte o artigo [configurar ambiente de desenvolvimento local do AEM Forms](/help/forms/setup-local-development-environment.md).

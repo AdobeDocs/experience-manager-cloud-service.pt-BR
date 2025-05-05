@@ -394,7 +394,7 @@ Os formatos de parágrafo são disponibilizados para seleção por:
 
 >[!CAUTION]
 >
-Se você definir formatos personalizados, os formatos padrão (`<p>`, `<h1>`, `<h2>` e `<h3>`) serão removidos. Recrie o formato `<p>`, pois ele é o formato padrão.
+>Se você definir formatos personalizados, os formatos padrão (`<p>`, `<h1>`, `<h2>` e `<h3>`) serão removidos. Recrie o formato `<p>`, pois ele é o formato padrão.
 
 ## Configurar caracteres especiais {#spchar}
 
@@ -404,7 +404,7 @@ Em uma instalação padrão do [!DNL Experience Manager], quando o plug-in `misc
 
 >[!CAUTION]
 >
-A adição de caracteres especiais substitui a seleção padrão. Se necessário, redefina esses caracteres na sua seleção.
+>A adição de caracteres especiais substitui a seleção padrão. Se necessário, redefina esses caracteres na sua seleção.
 
 ### Definir um caractere único {#definesinglechar}
 
@@ -455,10 +455,12 @@ No CRXDE, depois que a propriedade é salva, o caractere representado é exibido
 1. Nesse nó (nomeado de acordo com o intervalo de caracteres especiais), adicione as duas propriedades a seguir:
 
    * **Nome** `rangeStart`
+
      **Tipo** `Long`
      **Value** a representação [Unicode](https://unicode.org/) (decimal) do primeiro caractere no intervalo
 
    * **Nome** `rangeEnd`
+
      **Tipo** `Long`
      **Valor** a representação (decimal) [Unicode](https://unicode.org/) do último caractere no intervalo
 
@@ -478,11 +480,11 @@ Normalmente, os estilos são aplicados em texto, mas um conjunto separado de est
 
 >[!NOTE]
 >
-É possível definir estilos para tabelas e células somente para a interface clássica.
+>É possível definir estilos para tabelas e células somente para a interface clássica.
 
 >[!NOTE]
 >
-Copiar e colar tabelas no componente de RTE ou a partir dele depende do navegador. Ele não é compatível imediatamente com todos os navegadores. É possível obter resultados variados dependendo da estrutura da tabela e do navegador. Por exemplo, ao copiar e colar uma tabela em um componente do RTE no Mozilla Firefox na interface clássica e na interface para toque, o layout da tabela não é preservado.
+>Copiar e colar tabelas no componente de RTE ou a partir dele depende do navegador. Ele não é compatível imediatamente com todos os navegadores. É possível obter resultados variados dependendo da estrutura da tabela e do navegador. Por exemplo, ao copiar e colar uma tabela em um componente do RTE no Mozilla Firefox na interface clássica e na interface para toque, o layout da tabela não é preservado.
 
 1. No componente, navegue até o nó `<rtePlugins-node>/table`. Crie os nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 1. Crie a propriedade `features` no nó `table`:
@@ -493,13 +495,13 @@ Copiar e colar tabelas no componente de RTE ou a partir dele depende do navegado
 
    >[!NOTE]
    >
-   Se você não quiser habilitar todos os recursos de tabela, poderá criar a propriedade `features` como:
+   >Se você não quiser habilitar todos os recursos de tabela, poderá criar a propriedade `features` como:
    >
-   * **Tipo** `String[]`
+   >* **Tipo** `String[]`
    >
-   * **Valor**(s) um ou ambos, conforme necessário:
-   * `table` para permitir a edição das propriedades da tabela; incluindo os estilos.
-   * `cellprops` para permitir a edição das propriedades da célula, incluindo os estilos.
+   >* **Valor**(s) um ou ambos, conforme necessário:
+   >* `table` para permitir a edição das propriedades da tabela; incluindo os estilos.
+   >* `cellprops` para permitir a edição das propriedades da célula, incluindo os estilos.
 
 1. Defina o local das folhas de estilos CSS para referenciá-las. Consulte [Especificar o local da folha de estilos](#locationofstylesheet), pois é o mesmo que ao definir [estilos para texto](#textstyles). O local pode ser definido se você tiver definido outros estilos.
 1. No nó `table`, crie os seguintes nós, conforme necessário:
@@ -561,7 +563,7 @@ Quando o plug-in de verificação ortográfica é ativado, o RTE usa dicionário
 
 >[!NOTE]
 >
-A mensagem &quot;Falha na verificação ortográfica.&quot; é visto se for tentada uma verificação para um idioma que não está instalado.
+>A mensagem &quot;Falha na verificação ortográfica.&quot; é visto se for tentada uma verificação para um idioma que não está instalado.
 
 Uma instalação de Experience Manager padrão inclui os dicionários para:
 
@@ -570,7 +572,7 @@ Uma instalação de Experience Manager padrão inclui os dicionários para:
 
 >[!NOTE]
 >
-Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos ReadMe apropriados. Não modifique os arquivos.
+>Os dicionários padrão estão localizados em `/libs/cq/spellchecker/dictionaries`, juntamente com os arquivos ReadMe apropriados. Não modifique os arquivos.
 
 Para adicionar mais dicionários, se necessário, siga estas etapas.
 
@@ -579,18 +581,18 @@ Para adicionar mais dicionários, se necessário, siga estas etapas.
 
    >[!CAUTION]
    >
-   Somente dicionários no formato `MySpell` para OpenOffice.org v2.0.1 ou anterior são suportados. Como os dicionários agora são arquivos mortos, é recomendável verificar o arquivo após baixá-lo.
+   >Somente dicionários no formato `MySpell` para OpenOffice.org v2.0.1 ou anterior são suportados. Como os dicionários agora são arquivos mortos, é recomendável verificar o arquivo após baixá-lo.
 
 1. Localize os arquivos .aff e .dic. Mantenha o nome do arquivo em minúsculas. Por exemplo, `de_de.aff` e `de_de.dic`.
 1. Carregue os arquivos .aff e .dic no repositório em `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
 >
-O verificador ortográfico RTE está disponível sob demanda. Ele não é executado automaticamente quando você começa a digitar o texto.
+>O verificador ortográfico RTE está disponível sob demanda. Ele não é executado automaticamente quando você começa a digitar o texto.
 >
-Para executar o verificador ortográfico, selecione o botão Verificador ortográfico na barra de ferramentas. O RTE verifica a ortografia das palavras e destaca palavras com erro de ortografia.
+>Para executar o verificador ortográfico, selecione o botão Verificador ortográfico na barra de ferramentas. O RTE verifica a ortografia das palavras e destaca palavras com erro de ortografia.
 >
-Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto será alterado e as palavras com erro de ortografia não serão mais destacadas. Para executar o verificador ortográfico, selecione o botão Verificador ortográfico novamente.
+>Se você incorporar qualquer alteração sugerida pelo verificador ortográfico, o estado do texto será alterado e as palavras com erro de ortografia não serão mais destacadas. Para executar o verificador ortográfico, selecione o botão Verificador ortográfico novamente.
 
 ## Configurar o tamanho do histórico das ações desfazer e refazer {#undohistory}
 
@@ -626,7 +628,7 @@ Quando o recuo está habilitado (padrão), você pode definir o tamanho do recuo
 
 >[!NOTE]
 >
-Este tamanho de recuo é aplicado somente a parágrafos (blocos) de texto; não afeta o recuo de listas reais.
+>Este tamanho de recuo é aplicado somente a parágrafos (blocos) de texto; não afeta o recuo de listas reais.
 
 1. No componente, navegue até o nó `<rtePlugins-node>/lists`. Crie esses nós se eles não existirem. Para obter mais detalhes, consulte [ativar um plug-in](#activateplugin).
 1. No nó `lists`, crie o parâmetro `identSize`:
@@ -659,13 +661,13 @@ Ao adicionar links em [!DNL Experience Manager], você pode definir os estilos d
 
    >[!NOTE]
    >
-   O nó `../items/text` tem a propriedade:
+   >O nó `../items/text` tem a propriedade:
    >
-   * **Nome** `xtype`
-   * **Tipo** `String`
-   * **Valor** `richtext`
+   >* **Nome** `xtype`
+   >* **Tipo** `String`
+   >* **Valor** `richtext`
    >
-   O local do nó `../items/text` pode variar, dependendo da estrutura da caixa de diálogo. Dois exemplos são `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
+   >O local do nó `../items/text` pode variar, dependendo da estrutura da caixa de diálogo. Dois exemplos são `/apps/myProject>/components/text/dialog/items/text` e `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Em `htmlRules`, crie um nó.
 

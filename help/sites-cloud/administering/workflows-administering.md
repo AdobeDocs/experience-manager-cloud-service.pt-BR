@@ -33,17 +33,21 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 1. **Fluxos de trabalho em execução** mostra o número de fluxos de trabalho em execução e o status deles. por exemplo, nas imagens fornecidas, são mostrados o número de **fluxos de trabalho em execução** e o **status** da instância do AEM:
 
    * **Status: íntegro**
+
      ![status-healthy](/help/sites-cloud/administering/assets/status-healthy.png)
 
    * **Status: não íntegro**
+
      ![status-unhealthy](/help/sites-cloud/administering/assets/status-unhealthy.png)
 
 1. Para obter os **detalhes do status** de instâncias de fluxo de trabalho, clique em **Detalhes** e as seguintes informações serão exibidas: **número de instâncias de fluxos de trabalho em execução**, **instâncias de fluxos de trabalho concluídos**, **instâncias de fluxos de trabalho interrompidos**, **instâncias de fluxos de trabalho com falha**, entre outros. por exemplo, abaixo estão as imagens fornecidas que mostram os **Detalhes do status** com:
 
    * **Detalhes do status: Íntegro**
+
      ![status-details-healthy](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
    * **Detalhes do status: não íntegro**
+
      ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -112,7 +116,7 @@ Há vários consoles disponíveis para administrar seus fluxos de trabalho. Use 
 Quando um fluxo de trabalho falha, o AEM fornece o console **Falhas**, que permite investigar e tomar as medidas apropriadas após tratar a causa original:
 
 * **Detalhes da falha**
-Abre uma janela para mostrar a **Mensagem de Falha**, **Etapa e **Pilha de Falhas**.
+Abre uma janela para mostrar a **Mensagem de Falha**, **Etapa e &#x200B;** Pilha de Falhas**.
 
 * **Abrir histórico**
 Mostra detalhes do histórico do fluxo de trabalho.

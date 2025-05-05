@@ -77,7 +77,7 @@ A sequência para obter um serviço `Session/ResourceResolver` funciona da segui
 
 1. Obtenha nomes principais de `ServiceUserMapper` => logon de repositório de pré-autenticação conforme descrito abaixo
 1. Recuperar ID de usuário de `ServiceUserMapper`
-1. Verificar 1ServiceUserConfiguration` obsoleto para a id do usuário atual
+1. Verificar 1ServiceUserConfiguration&grave; obsoleto para a id do usuário atual
 1. Logon padrão do serviço Sling com a ID de usuário (por exemplo, uma sequência de `createAdministrativeSession` e representação da ID de usuário do serviço)
 
 O novo mapeamento com nomes principais resulta no seguinte logon de repositório simplificado:

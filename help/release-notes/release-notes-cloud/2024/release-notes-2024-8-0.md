@@ -52,7 +52,7 @@ A funcionalidade [herança](/help/sites-cloud/authoring/universal-editor/inherit
 
 Além disso, os seguintes recursos de gerenciamento de página agora são compatíveis:
 
-* [AEM Tags podem ser exportadas como uma [taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md) para os Serviços](/help/sites-cloud/authoring/sites-console/tags.md) de entrega de edge.
+* [&#128279;](/help/sites-cloud/authoring/sites-console/tags.md)AEM Tags podem ser exportadas como uma [taxonomia](/help/edge/wysiwyg-authoring/taxonomy.md) para os Serviços de entrega de edge.
 * [Os modelos](/help/sites-cloud/authoring/universal-editor/templates.md) para o Edge Delivery Services serão disponibilizados em breve.
 
 ### Programa de adoção antecipada {#sites-early-adopter}

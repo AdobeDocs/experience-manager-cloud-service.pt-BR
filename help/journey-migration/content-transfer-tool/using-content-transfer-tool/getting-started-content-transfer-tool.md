@@ -101,7 +101,7 @@ A seção a seguir se aplica à nova versão da ferramenta Transferência de con
 
    >[!NOTE]
    >
-   >O nome deve seguir as mesmas convenções de um nó AEM, portanto, não pode conter nenhum destes caracteres: `. / : [ ] | * &lt; > ^ ? { } % # &quot;nem símbolos ou emojis incomuns.
+   >O nome deve seguir as mesmas convenções de um nó AEM, portanto, não pode conter nenhum destes caracteres: &grave;. / : [ ] | * &lt; > ^ ? { } % # &quot;nem símbolos ou emojis incomuns.
 
 1. Agora você deve ver sua lista de migração na exibição de lista. Selecione o símbolo de três pontos (**...**) para abrir o menu suspenso e selecione **Copiar chave de extração**. Essa chave é necessária durante a fase de Extração. Copie essa chave de Extração.
 
@@ -148,6 +148,7 @@ Para preencher o conjunto de migração criado no Cloud Acceleration Manager, in
       >A partir da versão CTT (3.0.24), novos recursos foram incluídos na ferramenta Transferência de conteúdo, aprimorando o processo de inclusão e exclusão de caminhos. Anteriormente, os caminhos precisavam ser selecionados um por um, o que era tedioso e demorado. Agora, os usuários podem incluir caminhos diretamente da interface do usuário ou fazer upload de um arquivo CSV de acordo com suas preferências.
 
    1. **Caminhos a serem incluídos**: use o navegador de caminhos para selecionar os caminhos que precisam ser migrados. O seletor de caminhos aceita a entrada digitando ou selecionando. Os usuários podem selecionar apenas uma opção para incluir caminhos: na interface ou fazendo upload de um arquivo CSV.
+
       >[!IMPORTANT]
       >Os seguintes caminhos estão restritos ao criar um conjunto de migração:
       >* `/apps`

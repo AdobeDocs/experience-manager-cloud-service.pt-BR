@@ -220,7 +220,7 @@ Configure 301/302 lado do servidor redireciona no controle de origem e implantar
 
 #### Alertas de regras de Filtrar de tráfego (Programa de primeiros adotadores) {#traffic-filter-rules-alerts-early-adopter}
 
-As Regras](/help/security/traffic-filter-rules-including-waf.md) de Filtrar de Tráfego lançadas [recentemente, que incluem as regras de Firewall de Aplicação Web (WAF) que podem ser licenciadas, permite configurar quais tráfego devem ser permitidas ou negadas.
+As Regras[&#128279;](/help/security/traffic-filter-rules-including-waf.md) de Filtrar de Tráfego lançadas recentemente, que incluem as regras de Firewall de Aplicação Web (WAF) que podem ser licenciadas, permite configurar quais tráfego devem ser permitidas ou negadas.
 
 Associar-se o programa de adotante inicial para que você possa ser alertado sempre que suas regras de filtro tráfego forem acionadas. As notificações por email do Centro de ações manterão você informado quando determinadas tráfego condições ocorrerem para que você possa tomar as medidas apropriadas.
 

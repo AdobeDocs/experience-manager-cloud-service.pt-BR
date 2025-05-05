@@ -52,8 +52,10 @@ Para configurar o Turnstile para AEM Forms, você precisa obter a [Chave de site
 
 1. Configure o Cloud Service:
    1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** e selecione **[!UICONTROL Turnstile]**.
+
       ![Borboleta na interface do usuário](assets/turnstile-in-ui.png)
    1. Selecione um Contêiner de configuração, criado ou atualizado, conforme descrito na seção anterior. Selecione **[!UICONTROL Criar]**.
+
       ![Estrutura de configuração](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Tipo de Widget]** como gerenciado, o tipo de widget pode ser alterado, o que depende da chave obtida no pré-requisito, **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do Site]** e **[!UICONTROL Chave Secreta]** para o serviço de Borracha [obtida no pré-requisito](#prerequisite). Selecione **[!UICONTROL Criar]**.
 

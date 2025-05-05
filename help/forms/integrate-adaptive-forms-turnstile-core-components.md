@@ -55,8 +55,10 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
 
 1. Configure o Cloud Service:
    1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** e clique em **[!UICONTROL Girar]**.
+
       ![Borboleta na interface do usuário](assets/turnstile-in-ui.png)
    1. Selecione um Contêiner de configuração, criado ou atualizado, conforme descrito na seção anterior. Selecione **[!UICONTROL Criar]**.
+
       ![Estrutura de configuração](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Tipo de Widget]** como gerenciado, não interativo ou invisível. Para saber mais sobre o Tipo de Widget, visite [Widget de Turnstile](https://developers.cloudflare.com/turnstile/concepts/widget/).
    1. Especifique **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do Site]** e **[!UICONTROL Chave Secreta]** para o serviço de Borracha [obtido no pré-requisito](#prerequisite).

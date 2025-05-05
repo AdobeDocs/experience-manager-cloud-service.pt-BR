@@ -84,6 +84,7 @@ Na interface de usuário da **Configuração de tradução**, há várias opçõ
    1. Selecione **Adicionar**.
    1. Repita essas etapas para todos os campos que devem ser traduzidos.
    1. Selecione **Salvar**.
+
       ![Adicionar propriedade](assets/add-property.png)
 
 Agora, você configurou as regras de tradução.

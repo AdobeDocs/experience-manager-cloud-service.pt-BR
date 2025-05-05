@@ -168,6 +168,7 @@ Você pode criar uma função personalizada com ou sem comentários jsdoc.
             // code to be executed
         }
 ```
+
 Se o usuário não adicionar anotações do JavaScript à função personalizada, ela será listada no editor de regras pelo nome da função. No entanto, é recomendável incluir anotações do JavaScript para melhorar a legibilidade das funções personalizadas.
 
 ### Função de seta com anotações ou comentários obrigatórios do JavaScript

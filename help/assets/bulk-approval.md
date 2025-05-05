@@ -89,7 +89,7 @@ Depois que o revisor concluir a revisão (aprovar ou rejeitar ativos), você rec
 
    ![nome_da_revisão](assets/review_name.png)
 
-1. Selecione **[!UICONTROL Enviar]** e Concluído ]**para fechar a mensagem de confirmação.**[!UICONTROL  Uma notificação para a nova tarefa é enviada ao aprovador.
+1. Selecione **[!UICONTROL Enviar]** e Concluído **para fechar a mensagem de confirmação.** Uma notificação para a nova tarefa é enviada ao aprovador.
 1. Faça logon em [!DNL Experience Manager Assets] como um Aprovador e navegue até a interface do usuário do Assets. Para aprovar ativos, selecione o ícone **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 
    ![notificação](assets/notification.png)
@@ -133,7 +133,7 @@ Depois que o revisor concluir a revisão (aprovar ou rejeitar ativos), você rec
 
    ![coleção_de_detalhes_da_tarefa](assets/task_details-collection.png)
 
-1. Selecione **[!UICONTROL Enviar]** e Concluído ]**para fechar a mensagem de confirmação.**[!UICONTROL  Uma notificação para a nova tarefa é enviada ao aprovador.
+1. Selecione **[!UICONTROL Enviar]** e Concluído **para fechar a mensagem de confirmação.** Uma notificação para a nova tarefa é enviada ao aprovador.
 1. Faça logon em [!DNL Experience Manager Assets] como um Aprovador e navegue até o console Assets. Para aprovar ativos, selecione o ícone **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 1. Na página **[!UICONTROL Tarefa de Revisão]**, examine os detalhes da tarefa de revisão e selecione **[!UICONTROL Revisar]**.
 1. Todos os ativos na coleção estão visíveis na página de revisão. Selecione os ativos e o ícone **[!UICONTROL Aprovar/Rejeitar]** para aprovar ou rejeitar ativos, conforme apropriado.

@@ -42,7 +42,7 @@ O console [Componentes](/help/sites-cloud/authoring/components-console.md) forne
 
 ## Componentes principais  {#core-components}
 
-Os ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)Componentes principais[ oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
+Os [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)Componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
 
 Eles são criados usando as práticas recomendadas para o AEM e são a base da experiência de criação do AEM. Os componentes principais podem ser facilmente estendidos pelos desenvolvedores para atender às necessidades específicas do projeto.
 

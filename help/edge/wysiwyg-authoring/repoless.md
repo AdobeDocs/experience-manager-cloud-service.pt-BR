@@ -94,6 +94,7 @@ Depois de receber o token de acesso, ele poderá ser passado no cabeçalho de so
        }
    }'
    ```
+
 1. Valide se a configuração pública foi definida e está disponível com um comando cURL semelhante ao seguinte.
 
    ```text

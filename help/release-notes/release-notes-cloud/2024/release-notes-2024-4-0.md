@@ -192,7 +192,7 @@ Configure 301/302 lado do servidor redireciona no controle de origem e implantar
 
 #### Alertas de regras de Filtrar de tráfego (Programa de primeiros adotadores) {#traffic-filter-rules-alerts-early-adopter}
 
-As Regras](/help/security/traffic-filter-rules-including-waf.md) de Filtrar de Tráfego lançadas [recentemente, que incluem as regras de Firewall de Aplicação Web (WAF) que podem ser licenciadas, permite configurar quais tráfego devem ser permitidas ou negadas.
+As Regras[&#128279;](/help/security/traffic-filter-rules-including-waf.md) de Filtrar de Tráfego lançadas recentemente, que incluem as regras de Firewall de Aplicação Web (WAF) que podem ser licenciadas, permite configurar quais tráfego devem ser permitidas ou negadas.
 
 Agora você pode enviar por email **<aemcs-cdn-config-adopter@adobe.com>** para participar da programa de adotante inicial para que você possa ser alertado sempre que suas regras de filtro tráfego forem acionadas. As notificações por email do Centro de ações manterão você informado quando determinadas tráfego condições ocorrerem para que você possa tomar as medidas apropriadas.
 
@@ -206,7 +206,7 @@ O Adobe Managed CDN agora é compatível com o Edge Side Includes (ESI), uma lin
 
 #### Suporte RDE para código de front-end usando temas de site e modelos de site (programa de adoção antecipada) {#rde-frontend-early-adopter}
 
-[Os RDEs (Rapid Development Environments)](/help/implementing/developing/introduction/rapid-development-environments.md) agora são compatíveis com o código front-end com base em [modelos](/help/sites-cloud/administering/site-creation/site-templates.md) de temas](/help/sites-cloud/administering/site-creation/site-themes.md) de site e [de sites, para adotantes antecipados. Com RDEs, isso é feito usando uma diretiva de linha de comando, em vez de um [pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Entre em contato para **<aemcs-rde-support@adobe.com>** experimentá-lo e fornecer feedback.
+[Os RDEs (Rapid Development Environments)](/help/implementing/developing/introduction/rapid-development-environments.md) agora são compatíveis com o código front-end com base em [modelos](/help/sites-cloud/administering/site-creation/site-templates.md) de temas[&#128279;](/help/sites-cloud/administering/site-creation/site-themes.md) de site e de sites, para adotantes antecipados. Com RDEs, isso é feito usando uma diretiva de linha de comando, em vez de um [pipeline de front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md). Entre em contato para **<aemcs-rde-support@adobe.com>** experimentá-lo e fornecer feedback.
 
 #### Melhoria no registro para RDEs (Early Adoter Program, programa de adoção antecipada) {#rde-logging-early-adopter}
 

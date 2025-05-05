@@ -39,7 +39,7 @@ Você pode baixar a documentação de referência da API Java™ de [!DNL Maven 
    1. Abra o arquivo index.html para exibir a documentação de referência da API.
 
 * **Onde posso obter a referência de API [!DNL JavaScript™] para o Adaptive Forms?**
-Você pode baixar a documentação de referência da API [!DNL JavaScript™] em [!DNL  Maven Central Repository]. Para baixar:
+Você pode baixar a documentação de referência da API [!DNL JavaScript™] em [!DNL &#x200B; Maven Central Repository]. Para baixar:
    1. Abrir [[!DNL Maven Central Repository]](https://mvnrepository.com/artifact/com.adobe.aem/aem-forms-sdk-api).
    1. Localize e abra uma página contendo a versão mais recente do SDK do [!DNL Experience Manager Forms].
    1. Clique na opção Exibir tudo para exibir todos os arquivos.

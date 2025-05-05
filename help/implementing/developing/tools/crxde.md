@@ -91,7 +91,7 @@ As permissões são divididas nas seguintes categorias.
 
 >[!NOTE]
 >
-Para ver as informações de controle de acesso, o usuário conectado ao CRXDE Lite deve ter direitos de leitura das entradas de ACL.
+>Para ver as informações de controle de acesso, o usuário conectado ao CRXDE Lite deve ter direitos de leitura das entradas de ACL.
 
 ### Guia Replicação {#replication-tab}
 
@@ -192,9 +192,9 @@ Agora você pode adaptar o nó às suas necessidades modificando propriedades ou
 
 >[!NOTE]
 >
-A maioria das operações de edição, incluindo **Criar Nó**, mantém todas as alterações na memória e só as armazena no repositório após salvar (usando o [**Botão Salvar Tudo**](#save-all-button)). No entanto, algumas operações, como mover, são automaticamente mantidas.
+>A maioria das operações de edição, incluindo **Criar Nó**, mantém todas as alterações na memória e só as armazena no repositório após salvar (usando o [**Botão Salvar Tudo**](#save-all-button)). No entanto, algumas operações, como mover, são automaticamente mantidas.
 >
-A validação relacionada à permissão do nó criado pelo tipo de nó do nó principal também é realizada pelo repositório ao salvar as alterações. Se você receber uma mensagem de erro ao salvar um nó, verifique se a estrutura do conteúdo é válida (por exemplo, não é possível criar um nó `nt:unstructured` como filho do nó `nt:folder`).
+>A validação relacionada à permissão do nó criado pelo tipo de nó do nó principal também é realizada pelo repositório ao salvar as alterações. Se você receber uma mensagem de erro ao salvar um nó, verifique se a estrutura do conteúdo é válida (por exemplo, não é possível criar um nó `nt:unstructured` como filho do nó `nt:folder`).
 
 ## Criação de uma propriedade {#creating-a-property}
 

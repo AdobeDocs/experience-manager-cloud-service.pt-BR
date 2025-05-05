@@ -26,8 +26,8 @@ Normalmente, esses cabeçalhos de cache são definidos nas configurações do AE
 
 A chave de cache para recursos CDN contém o URL de solicitação completo, incluindo parâmetros de consulta, de modo que cada parâmetro de consulta diferente produzirá uma entrada de cache diferente. Considere remover parâmetros de consulta indesejados; [veja abaixo](#marketing-parameters) para melhorar a taxa de acertos do cache.
 
-As respostas de origem que contêm `private`, `no-cache` ou `no-store` em `Cache-Control` não são armazenadas em cache pelo CDN da AEM as a Cloud Service (consulte [Como desabilitar o armazenamento em cache do CDN
-](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching) para obter mais detalhes).  Além disso, as respostas que estão definindo cookies, ou seja, têm um cabeçalho de resposta `Set-Cookie`, não são armazenadas em cache pelo CDN.
+As respostas de origem que contêm `private`, `no-cache` ou `no-store` em `Cache-Control` não são armazenadas em cache pelo CDN da AEM as a Cloud Service (consulte [&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/disable-caching)Como desabilitar o armazenamento em cache do CDN
+ para obter mais detalhes).  Além disso, as respostas que estão definindo cookies, ou seja, têm um cabeçalho de resposta `Set-Cookie`, não são armazenadas em cache pelo CDN.
 
 ### HTML/Text {#html-text}
 

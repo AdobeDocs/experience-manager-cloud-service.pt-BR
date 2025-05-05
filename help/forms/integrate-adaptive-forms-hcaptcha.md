@@ -55,8 +55,10 @@ Para configurar o hCaptcha® com AEM Forms, você precisa obter a [chave do site
 
 1. Configure o Cloud Service:
    1. Na instância do autor do AEM, vá para ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]** e selecione **[!UICONTROL hCaptcha®]**.
+
       ![hCaptcha® na interface do usuário](assets/hcaptcha-in-ui.png)
    1. Selecione um Contêiner de configuração, criado ou atualizado, conforme descrito na seção anterior. Selecione **[!UICONTROL Criar]**.
+
       ![Captcha de Configuração®](assets/config-hcaptcha.png)
    1. Especifique **[!UICONTROL Título]**, **[!UICONTROL Nome]**, **[!UICONTROL Chave do Site]** e **[!UICONTROL Chave Secreta]** para o serviço hCaptcha® [obtido no pré-requisito](#prerequisite). Selecione **[!UICONTROL Criar]**.
 

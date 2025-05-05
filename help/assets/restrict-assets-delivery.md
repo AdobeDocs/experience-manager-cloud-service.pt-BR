@@ -74,7 +74,7 @@ Você pode restringir a entrega de ativos em [!DNL Experience Manager] com base 
 
 >[!NOTE]
 >
-No momento, esse recurso não é de autoatendimento. Para restringir a entrega de ativos para IMS [Usuários](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) e [Grupos](https://helpx.adobe.com/in/enterprise/using/user-groups.html), entre em contato com a equipe de Suporte Enterprise para obter orientação sobre como recuperar as informações necessárias para restringir o acesso no portal [Adobe Admin Console](https://adminconsole.adobe.com/) e como configurar o acesso no serviço de autor do AEM as a Cloud Service.
+>No momento, esse recurso não é de autoatendimento. Para restringir a entrega de ativos para IMS [Usuários](https://helpx.adobe.com/in/enterprise/using/manage-directory-users.html) e [Grupos](https://helpx.adobe.com/in/enterprise/using/user-groups.html), entre em contato com a equipe de Suporte Enterprise para obter orientação sobre como recuperar as informações necessárias para restringir o acesso no portal [Adobe Admin Console](https://adminconsole.adobe.com/) e como configurar o acesso no serviço de autor do AEM as a Cloud Service.
 
 ### Restringir a entrega de ativos usando data e hora de ativação e desativação {#restrict-delivery-assets-date-time}
 
@@ -122,7 +122,7 @@ Nos serviços de autor do AEM Cloud Service, bem como no Seletor de ativos, o To
 
 >[!NOTE]
 >
-Para obter mais informações sobre como habilitar a autenticação IMS em integrações baseadas no Seletor de ativos da AEM, entre em contato com o Suporte corporativo
+>Para obter mais informações sobre como habilitar a autenticação IMS em integrações baseadas no Seletor de ativos da AEM, entre em contato com o Suporte corporativo
 
 1. Para experiências não baseadas no Seletor de ativos, o AEM as a Cloud Service e o Dynamic Media com recursos OpenAPI atualmente oferecem suporte a integrações de api no lado do servidor e podem gerar tokens de portador IMS.
    * Siga as instruções [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis#the-server-to-server-flow) para executar integrações de API de serviço para servidor que possam recuperar os tokens do Portador IMS por meio do [AEM as a Cloud Service Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines#crxde-lite-and-developer-console)

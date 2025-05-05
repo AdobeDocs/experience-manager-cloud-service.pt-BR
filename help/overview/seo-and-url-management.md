@@ -48,6 +48,7 @@ Estas são algumas dicas gerais sobre como criar os URLs para SEO:
    * Ao usar seletores em uma página, os seletores que fornecem valor semântico são preferenciais.
    * Se um humano não conseguir ler o URL, um mecanismo de pesquisa também não poderá.
    * Por exemplo:
+
      `mybrand.com/products/product-detail.product-category.product-name.html`
 é preferível a `mybrand.com/products/product-detail.1234.html`
 
@@ -252,6 +253,7 @@ No entanto, há também uma maneira mais simples de gerenciar isso:
    Usando o console da Web (por exemplo, localhost:4502/system/console/configMgr), você pode configurar o Sling Resource Resolver:
 
    * **Apache Sling Resource Resolver Factory**
+
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
    É recomendável criar os mapeamentos necessários para encurtar URLs como expressões regulares e, em seguida, definir essas configurações em um nó OsgiConfignode, `config.publish`, incluído na sua versão.

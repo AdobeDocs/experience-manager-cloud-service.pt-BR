@@ -143,7 +143,7 @@ Um **Contêiner de layout** é um sistema de parágrafos que:
 
 >[!NOTE]
 >
->Se ainda não estiver disponível, o **Contêiner de layout** deve ser ativado explicitamente para um sistema/página de parágrafo](/help/sites-cloud/administering/responsive-layout.md).[
+>Se ainda não estiver disponível, o **Contêiner de layout** deve ser ativado explicitamente para um sistema/página de parágrafo[&#128279;](/help/sites-cloud/administering/responsive-layout.md).
 
 1. O **Contêiner de layout** está disponível como um componente padrão no [Navegador de componentes](/help/sites-cloud/authoring/page-editor/editor-side-panel.md#components-browser). Aqui, você pode arrastá-lo até o local desejado na página, onde poderá ver o espaço reservado **Arrastar componentes aqui**.
 1. Em seguida, você pode adicionar componentes ao container de layout. Esses componentes conterão o conteúdo real:

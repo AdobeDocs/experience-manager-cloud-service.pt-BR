@@ -81,13 +81,13 @@ Se você precisar exibir a propriedade para a qual o campo **[!UICONTROL Status 
 
    >[!NOTE]
    >
-   Ao selecionar o público alvo de aprovação como Content Hub usando a exibição do Assets, os ativos são disponibilizados no Content Hub para os usuários que fazem parte da mesma organização. Ao selecionar o público alvo de aprovação como Entrega, os ativos ficam disponíveis para todos os usuários.
+   >Ao selecionar o público alvo de aprovação como Content Hub usando a exibição do Assets, os ativos são disponibilizados no Content Hub para os usuários que fazem parte da mesma organização. Ao selecionar o público alvo de aprovação como Entrega, os ativos ficam disponíveis para todos os usuários.
 
 1. Clique em **[!UICONTROL Salvar]**.
 
 >[!NOTE]
 >
-Se os ativos ou pastas tiverem um esquema padrão diferente, certifique-se de fazer essa atualização nesse esquema específico.
+>Se os ativos ou pastas tiverem um esquema padrão diferente, certifique-se de fazer essa atualização nesse esquema específico.
 
 ## Aprovar ativos {#approve-assets}
 
@@ -112,7 +112,7 @@ Simplifique o fluxo de trabalho aprovando rapidamente vários ativos de uma só 
 1. Navegue até **[!UICONTROL Ferramentas]** > **[!UICONTROL Assets]** > **[!UICONTROL Perfis de Metadados]**.
 1. Clique em **[!UICONTROL Criar]** no lado superior direito da página.
 1. Adicione um título de Perfil e clique em **[!UICONTROL Criar]**. O perfil de metadados foi criado com sucesso.
-1. Selecione o perfil de metadados recém-criado e clique em **[!UICONTROL Editar _(e)_]**. <br>O formulário **[!UICONTROL Editar Perfil de Metadados]**é aberto com a guia **[!UICONTROL Básico]**realçada.
+1. Selecione o perfil de metadados recém-criado e clique em **[!UICONTROL Editar _(e)_]**. <br>O formulário **[!UICONTROL Editar Perfil de Metadados]**&#x200B;é aberto com a guia **[!UICONTROL Básico]**&#x200B;realçada.
 1. Arraste e solte um **[!UICONTROL Campo de Texto de Linha Única]** da seção **[!UICONTROL Criar Formulário]** no lado direito para a seção Metadados no formulário.
 1. Clique no campo recém-adicionado e faça as seguintes atualizações no painel **[!UICONTROL Configurações]**:
    1. Altere o **[!UICONTROL Rótulo do campo]** para _Assets Aprovado_.
@@ -127,7 +127,7 @@ Simplifique o fluxo de trabalho aprovando rapidamente vários ativos de uma só 
 
    >[!NOTE]
    >
-   Ao selecionar o público alvo de aprovação como Content Hub usando a exibição do Assets, os ativos são disponibilizados no Content Hub para os usuários que fazem parte da mesma organização. Ao selecionar o público alvo de aprovação como Entrega, os ativos ficam disponíveis para todos os usuários.
+   >Ao selecionar o público alvo de aprovação como Content Hub usando a exibição do Assets, os ativos são disponibilizados no Content Hub para os usuários que fazem parte da mesma organização. Ao selecionar o público alvo de aprovação como Entrega, os ativos ficam disponíveis para todos os usuários.
 1. Clique em **[!UICONTROL Salvar]**.
 1. Na página **[!UICONTROL Perfis de metadados]**, selecione o perfil de metadados recém-criado.
 1. Clique em **[!UICONTROL Aplicar perfil de metadados às pastas]** na barra de ações superior.
@@ -138,7 +138,7 @@ Simplifique o fluxo de trabalho aprovando rapidamente vários ativos de uma só 
 
 >[!NOTE]
 > 
-Essa abordagem aprova os ativos recém-criados na pasta. Para ativos existentes na pasta, é necessário selecionar e aprovar manualmente. <br> Como alternativa, você pode usar a opção **[!UICONTROL Reprocessar]** para aplicar as alterações do perfil de metadados aos ativos mais antigos.
+>Essa abordagem aprova os ativos recém-criados na pasta. Para ativos existentes na pasta, é necessário selecionar e aprovar manualmente. <br> Como alternativa, você pode usar a opção **[!UICONTROL Reprocessar]** para aplicar as alterações do perfil de metadados aos ativos mais antigos.
 
 Da mesma forma, para aprovar ativos em massa em uma pasta na exibição do Assets:
 
@@ -157,7 +157,7 @@ Da mesma forma, para aprovar ativos em massa em uma pasta na exibição do Asset
 
    >[!NOTE]
    >
-   Se você selecionar o público alvo de aprovação como `Content Hub` usando a exibição do Assets em uma organização, os ativos serão disponibilizados no Content Hub para os usuários que fazem parte da mesma organização.
+   >Se você selecionar o público alvo de aprovação como `Content Hub` usando a exibição do Assets em uma organização, os ativos serão disponibilizados no Content Hub para os usuários que fazem parte da mesma organização.
 
 1. Clique em **[!UICONTROL Salvar]**.
 
@@ -178,6 +178,6 @@ Para copiar o URL de entrega de um ativo aprovado no repositório:
 
    >[!NOTE]
    >
-   A opção para copiar o URL de entrega para ativos aprovados está disponível apenas na visualização Assets.
+   >A opção para copiar o URL de entrega para ativos aprovados está disponível apenas na visualização Assets.
 
 Para obter informações sobre outras representações exibidas no painel Dynamic Media, consulte [Exibir e baixar representações do Dynamic Media](/help/assets/renditions.md#view-download-dm-renditions).

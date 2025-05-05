@@ -28,6 +28,7 @@ Com os lançamentos, você pode:
 * Editor de páginas:
 
    * Selecione **Navegar** para abrir a estrutura do lançamento no console:
+
      ![Navegar no lançamento a partir do editor de páginas](/help/sites-cloud/authoring/assets/launches-navigate-page-editor.png)
 
      >[!NOTE]

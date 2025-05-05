@@ -203,7 +203,7 @@ Agora você pode enviar um email a **<aemcs-cdn-config-adopter@adobe.com>** para
 
 #### Configuração da CDN (Early Adoter Program) {#cdn-config-early-adopter}
 
-Além das Regras](/help/security/traffic-filter-rules-including-waf.md) de Filtrar de Tráfego recém-lançadas[, que incluem as regras de Firewall de Aplicação Web (WAF) opcionalmente licenciadas, há uma oportunidade de usar o Pipeline de configuração para declarar e implantar outros tipos de configuração CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md) e junte-se ao programa do adotador antecipado enviando por e-mail **<aemcs-cdn-config-adopter@adobe.com>** para obter acesso a:
+Além das Regras[&#128279;](/help/security/traffic-filter-rules-including-waf.md) de Filtrar de Tráfego recém-lançadas, que incluem as regras de Firewall de Aplicação Web (WAF) opcionalmente licenciadas, há uma oportunidade de usar o Pipeline de configuração para declarar e implantar outros tipos de configuração CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md) e junte-se ao programa do adotador antecipado enviando por e-mail **<aemcs-cdn-config-adopter@adobe.com>** para obter acesso a:
 
 * Redirecionamentos do lado do servidor 301/302
 * solicitações de proxy na borda para origens arbitrárias (como aplicativos não-AEM)

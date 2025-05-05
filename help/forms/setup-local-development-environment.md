@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Configurar ambiente de desenvolvimento local para o AEM Forms {#overview}
 
-Ao configurar um ambiente do [!DNL  Adobe Experience Manager Forms] as a [!DNL  Cloud Service], você configura ambientes de desenvolvimento, de preparo e de produção na nuvem. Além disso, também é possível definir e configurar um ambiente de desenvolvimento local.
+Ao configurar um ambiente do [!DNL &#x200B; Adobe Experience Manager Forms] as a [!DNL &#x200B; Cloud Service], você configura ambientes de desenvolvimento, de preparo e de produção na nuvem. Além disso, também é possível definir e configurar um ambiente de desenvolvimento local.
 
 Você pode usar o ambiente de desenvolvimento local para executar as seguintes ações sem fazer logon no ambiente de desenvolvimento da nuvem:
 

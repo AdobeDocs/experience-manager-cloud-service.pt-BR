@@ -215,6 +215,7 @@ Se você tiver muitos segmentos, eles podem se tornar difíceis de gerenciar com
 1. A pasta aparecerá na lista de segmentos.
    * A forma como você classifica as colunas afetará onde a nova pasta aparece na lista.
    * Você pode selecionar os cabeçalhos de coluna para ajustar sua classificação.
+
      ![A nova pasta](../assets/contexthub-folder.png)
 
 ### Modificar pastas existentes {#modify-folders}

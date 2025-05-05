@@ -223,15 +223,15 @@ As substituições de URL também podem ser obtidas usando o servidor HTTP do AE
 
 Como mencionado antes de selecionar um dos formatos padrão disponíveis, ou mesmo implementar um formato personalizado, depende muito das necessidades e dos requisitos de uma loja. As sugestões a seguir podem ajudar a tomar uma decisão instruída.
 
-_**Use um formato de URL da página do produto que contenha o SKU.**_
+_&#x200B;**Use um formato de URL da página do produto que contenha o SKU.**&#x200B;_
 
 Os Componentes principais do CIF usam o SKU como identificador principal em todos os componentes. Se o formato do URL da página do produto não contiver o SKU, uma consulta do GraphQL será necessária para resolvê-lo. Essa resolução pode afetar o tempo até o primeiro byte. Além disso, pode ser desejável que os compradores possam encontrar produtos por SKU usando mecanismos de pesquisa.
 
-_**Use um formato de URL da página do produto que contenha o contexto da categoria.**_
+_&#x200B;**Use um formato de URL da página do produto que contenha o contexto da categoria.**&#x200B;_
 
 Alguns recursos do Provedor de URL da CIF só estão disponíveis ao usar formatos de URL de produto, que codificam o contexto da categoria, como a categoria `url_key` ou a categoria `url_path`. Mesmo que esses recursos não sejam necessários para uma nova loja, usar um desses formatos de URL no início ajuda a reduzir os esforços de migração no futuro.
 
-_**Equilíbrio entre comprimento de URL e informações codificadas.**_
+_&#x200B;**Equilíbrio entre comprimento de URL e informações codificadas.**&#x200B;_
 
 Dependendo do tamanho do catálogo, em particular o tamanho e a profundidade da árvore de categorias, pode não ser razoável codificar o `url_path` completo das categorias na URL. Nesse caso, o comprimento do URL poderia ser reduzido incluindo apenas o `url_key` da categoria. Este método dá suporte à maioria dos recursos disponíveis ao usar a categoria `url_path`.
 

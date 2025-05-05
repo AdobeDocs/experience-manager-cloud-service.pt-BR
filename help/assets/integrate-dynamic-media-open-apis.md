@@ -67,6 +67,6 @@ O Seletor de ativos de micro front-end do Adobe fornece uma interface que se int
 
 >[!MORELIKETHIS]
 >
-* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
-* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
-* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)
+>* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
+>* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
+>* [Personalização do Seletor de ativos](/help/assets/asset-selector-customization.md)

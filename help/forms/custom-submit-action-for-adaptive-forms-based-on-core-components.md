@@ -44,6 +44,7 @@ O diagrama abaixo descreve as etapas para criar uma ação de envio personalizad
    ```
    git clone https://git.cloudmanager.adobe.com/<organization-name>/<app-id>/
    ```
+
    **Onde encontrar essas informações?**
 
    Para obter instruções passo a passo sobre como localizar esses detalhes, consulte o artigo da Adobe Experience League &quot;[Acessando o Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git)&quot;.
@@ -67,6 +68,7 @@ O diagrama abaixo descreve as etapas para criar uma ação de envio personalizad
    ```
    /ui.apps/src/main/content/jcr_root/apps/<app-id>/
    ```
+
    **Importante**: substitua `<app-id>` pela ID do aplicativo real.
 
 1. Crie uma nova pasta para sua ação de envio personalizada e dê a ela o nome de sua escolha. Por exemplo, nomeie a pasta como `customsubmitaction`.
@@ -79,7 +81,7 @@ O diagrama abaixo descreve as etapas para criar uma ação de envio personalizad
 
    `/ui.apps/src/main/content/jcr_root/apps/<app-id>/customsubmitaction/`
 
-   `Important`: Substituir <app-id> com a ID real do aplicativo.
+   `Important`: Substituir &lt;app-id> com a ID real do aplicativo.
 
 1. Criar novo arquivo de configuração.
 Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
@@ -117,6 +119,7 @@ Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
    ```
    <filter root="/apps/<app-id>/[customsubmitaction-folder]"/>
    ```
+
    Por exemplo, adicione a seguinte linha de código para adicionar a pasta `customsubmitaction` no arquivo `filter.xml`:
 
    ```
@@ -131,7 +134,7 @@ Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
 
 1. Navegue até o seguinte diretório no `[AEMaaCS project directory]`:
    `/core/src/main/java/com/<app-id>/core/service/`
-   `Important`: Substituir <app-id> com a ID real do aplicativo.
+   `Important`: Substituir &lt;app-id> com a ID real do aplicativo.
 1. Criar novo arquivo Java para implementar o serviço para a ação de envio adicionada. Por exemplo, adicione o novo arquivo Java como `CustomSubmitService.java`.
 
    ![Pasta de Ação de Envio Personalizada](/help/forms/assets/custom-submit-action-custom-submit-folder.png)
@@ -198,6 +201,7 @@ Na pasta `customsubmitaction`, crie um novo arquivo chamado `.content.xml`.
       ```
       mvn -PautoInstallPackage clean install
       ```
+
       ![Implantação local](/help/forms/assets/custom-submit-action-local-deployment.png)
 
 **Implantar o código para o ambiente Cloud Service**

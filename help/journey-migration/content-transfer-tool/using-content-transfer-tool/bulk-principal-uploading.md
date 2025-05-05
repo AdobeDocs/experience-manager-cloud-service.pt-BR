@@ -54,6 +54,7 @@ Para usar a funcionalidade de upload de grupo em massa do Admin Console depois d
       * _Nome do Grupo de Usuários_ - O nome do grupo é obrigatório e pode conter no máximo 255 caracteres.  Esse nome de grupo deve ser o mesmo no IMS e no AEM
       * _Descrição_ - Este campo é opcional e pode conter no máximo 255 caracteres
       * _Administradores do grupo de usuários_ - Pelo menos um administrador de grupo deve ser incluído neste campo. Vários administradores podem ser atribuídos separando cada administrador com uma vírgula e colocando a lista entre aspas. A entrada para cada administrador deve incluir o tipo de identidade do usuário, seguido por um hífen e, em seguida, o endereço de email.  Por exemplo
+
         `"Adobe ID-myAdmin@example.com,Adobe ID-myOtherAdmin@example.com"`. Não inclua um espaço após a vírgula que separa os administradores. Não é possível incluir usuários (como administradores) que não façam parte da organização no Admin Console
       * _Perfis de produto atribuídos_ - Este campo é opcional. É possível atribuir vários perfis de produto separando cada perfil com uma vírgula e colocando a lista entre aspas. No entanto, os perfis de produto incluídos já devem estar configurados para a organização. Certifique-se de especificar o nome do Perfil do produto, e não o nome do produto.  A associação de Perfis de produto atribuídos a um grupo será herdada por todos os usuários colocados nesse grupo.  Para localizar um perfil de produto:
 

@@ -322,6 +322,7 @@ Se uma propriedade OSGi exigir valores diferentes para autor e publicação:
 * Separe as pastas OSGi `config.author` e `config.publish`, conforme descrito na [seção Resolução do Modo de Execução](#runmode-resolution).
 * Há duas opções para criar os nomes de variáveis independentes que devem ser usadas:
    * a primeira opção, que é recomendada: em todas as pastas OSGi (como `config.author` e `config.publish`) declaradas para definir valores diferentes, use o mesmo nome de variável. Por exemplo
+
      `$[env:ENV_VAR_NAME;default=<value>]`, onde o padrão corresponde ao valor padrão para essa camada (autor ou publicação). Ao definir a variável de ambiente por meio da [API do Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou por meio de um cliente, diferencie as camadas usando o parâmetro &quot;service&quot;, conforme descrito na [documentação de referência da API do Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/). O parâmetro &quot;service&quot; vinculará o valor da variável ao nível OSGi apropriado. Pode ser &quot;autor&quot; ou &quot;publicar&quot; ou &quot;pré-visualização&quot;.
    * a segunda opção, que é declarar variáveis distintas usando um prefixo como `author_<samevariablename>` e `publish_<samevariablename>`
 
@@ -348,11 +349,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -362,11 +363,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -391,11 +392,11 @@ config.stage
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -405,11 +406,11 @@ config.prod
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val2",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -419,11 +420,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -448,11 +449,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -462,11 +463,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -489,11 +490,11 @@ config
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>
@@ -503,11 +504,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ 
+&lbrace; 
  "my_var1": "$[env:my_var1;default=val1]"
  "my_var2": "abc",
  "my_var3": 500
-}
+&rbrace;
 </pre>
 </td>
 </tr>

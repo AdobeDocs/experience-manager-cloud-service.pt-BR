@@ -17,7 +17,7 @@ Conheça as etapas para habilitar a experiência completa do AEM Screens as a Cl
 
 >[!NOTE]
 >
->A demonstração do AEM Screens precisa que o complemento Screens seja adicionado ao programa do Cloud Manager. Saiba como adicionar o Screens como um complemento a um novo programa no Cloud Manager](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md).[
+>A demonstração do AEM Screens precisa que o complemento Screens seja adicionado ao programa do Cloud Manager. Saiba como adicionar o Screens como um complemento a um novo programa no Cloud Manager[&#128279;](/help/screens-cloud/onboarding-screens-cloud/add-on-new-program-screens-cloud.md).
 
 ## A história até agora {#story-so-far}
 

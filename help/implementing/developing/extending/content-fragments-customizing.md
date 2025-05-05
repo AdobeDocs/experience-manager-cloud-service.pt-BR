@@ -63,6 +63,7 @@ Os fragmentos de conteúdo, com base em um modelo de fragmento de conteúdo, sã
 * Todo o conteúdo é armazenado no nó `jcr:content/data` do ativo:
 
    * Os dados do elemento são armazenados no subnó principal:
+
      `jcr:content/data/master`
 
    * As variações são armazenadas em um subnó que carrega o nome da variação:

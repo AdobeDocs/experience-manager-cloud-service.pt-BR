@@ -1,5 +1,5 @@
 ---
-description: Em alguns casos, é útil aplicar cabeçalhos HTTP de resposta personalizados a recursos, por exemplo, para permitir o CORS. Se quiser especificar cabeçalhos, crie uma Pasta de trabalho do Excel ou uma Pasta de trabalho do Google Sheets na pasta `/.helix` do seu site no Sharepoint ou no Google Drive chamada `headers.xlsx` no SharePoint ou `headers` no Google Drive.
+description: Em alguns casos, é útil aplicar cabeçalhos HTTP de resposta personalizados a recursos, por exemplo, para permitir o CORS. Se quiser especificar cabeçalhos, crie uma Pasta de trabalho do Excel ou uma Pasta de trabalho do Google Sheets na pasta &grave;/.helix&grave; do seu site no Sharepoint ou no Google Drive chamada &grave;headers.xlsx&grave; no SharePoint ou &grave;headers&grave; no Google Drive.
 title: Cabeçalhos de resposta HTTP personalizados
 feature: Edge Delivery Services
 exl-id: ae386f02-05fd-4a6a-8285-58f207fed7bc
