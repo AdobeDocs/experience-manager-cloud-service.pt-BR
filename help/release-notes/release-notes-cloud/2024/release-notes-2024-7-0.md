@@ -37,7 +37,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo Visão geral da versão de julho de 2024 para ver um resumo dos recursos adicionados na versão 2024.7.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3431707?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3432546?quality=12&captions=por_br)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 

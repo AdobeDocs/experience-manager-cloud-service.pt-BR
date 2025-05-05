@@ -32,7 +32,7 @@ Não se preocupe se você não estiver familiarizado com todos os termos usados 
 
 Este vídeo resume o processo de integração definido nesta jornada e serve como uma visão geral das opções. Todos os tópicos do vídeo são apresentados em detalhes na jornada.
 
->[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3431501/?quality=12&learn=on&captions=por_br)
 
 ## Seu contrato {#contract}
 

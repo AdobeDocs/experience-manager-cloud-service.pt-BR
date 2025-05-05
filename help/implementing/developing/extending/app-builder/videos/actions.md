@@ -22,22 +22,22 @@ ht-degree: 0%
 
 Saiba mais sobre o Adobe I/O Runtime, as ações e como criar ações.
 
->[!VIDEO](https://video.tv.adobe.com/v/339192/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343437/?quality=12&learn=on&captions=por_br)
 
 ## Ativação, sequência, acionadores e regras
 
 Saiba como as ações relacionadas a ativações, ações da Web, acionadores e regras.
 
->[!VIDEO](https://video.tv.adobe.com/v/339193/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343443/?quality=12&learn=on&captions=por_br)
 
 ## Ações em aplicativos do App Builder
 
 Saiba como criar ações que podem ser usadas como aplicativos do App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339194/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343440/?quality=12&learn=on&captions=por_br)
 
 ## Criar uma ação
 
 Saiba como criar uma ação do App Builder.
 
->[!VIDEO](https://video.tv.adobe.com/v/339195/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343446/?quality=12&learn=on&captions=por_br)
