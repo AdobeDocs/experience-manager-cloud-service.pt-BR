@@ -36,7 +36,7 @@ As tags oferecem recursos robustos para organização e gerenciamento de conteú
    * Essas taxonomias são globais por todo o AEM.
 * As tags podem ser aplicadas por autores e usadas por visitantes do site.
 * Independentemente do criador, todas as formas de tags são disponibilizadas para seleção, tanto ao atribuir a uma página quanto ao pesquisar.
-* As marcas são usadas pelo [Componente de Lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) para gerar listas dinâmicas com base nas marcas selecionadas.
+* As marcas são usadas pelo [Componente de Lista](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=pt-BR) para gerar listas dinâmicas com base nas marcas selecionadas.
 
 ## Requisitos da tag {#requirements}
 

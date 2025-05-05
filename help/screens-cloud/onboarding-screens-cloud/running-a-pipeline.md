@@ -16,7 +16,7 @@ ht-degree: 4%
 Esta seção descreve como executar o pipeline e implantar seu código para o programa no Cloud Manager.
 
 >[!NOTE]
->Consulte [Configurando o pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) e [Implantar código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) para saber como executar o pipeline para o seu programa no Cloud Manager.
+>Consulte [Configurando o pipeline de CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=pt-BR) e [Implantar código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=pt-BR) para saber como executar o pipeline para o seu programa no Cloud Manager.
 
 ## Objetivo {#objective}
 
@@ -37,14 +37,14 @@ A seção a seguir descreve como configurar o pipeline de CI/CD e implantar seu 
 1. Selecione suas opções no assistente do **Pipeline de Instalação**. Clique em **Salvar**.
 
    >[!NOTE]
-   >Para saber mais sobre as opções no assistente de Configuração de pipeline, consulte [Definindo as configurações de pipeline do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html) para obter mais detalhes.
+   >Para saber mais sobre as opções no assistente de Configuração de pipeline, consulte [Definindo as configurações de pipeline do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=pt-BR) para obter mais detalhes.
 
    ![imagem](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Após a conclusão da configuração do pipeline, o cartão de chamada para ação é atualizado.
 
    >[!NOTE]
-   >Para saber mais sobre os estágios na implantação no Cloud Manager, consulte [Implantando seu Código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html) para obter mais detalhes.
+   >Para saber mais sobre os estágios na implantação no Cloud Manager, consulte [Implantando seu Código](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=pt-BR) para obter mais detalhes.
 
    ![imagem](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

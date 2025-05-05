@@ -63,4 +63,4 @@ Esse cenário invoca a API do Analytics por meio de chamadas REST de um serviço
 Os eventos do Analytics são armazenados offline no indexedDB e, posteriormente, fragmentados e enviados para a nuvem.
 
 >[!NOTE]
->Para saber mais sobre o Sequenciamento e o Modelo de Dados Padrão para Eventos, consulte [Configuração do Adobe Analytics para AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html) para obter detalhes.
+>Para saber mais sobre o Sequenciamento e o Modelo de Dados Padrão para Eventos, consulte [Configuração do Adobe Analytics para AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/administering/analytics-integration/configuring-adobe-analytics-aem-screens.html?lang=pt-BR) para obter detalhes.

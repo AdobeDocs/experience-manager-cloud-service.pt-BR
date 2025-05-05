@@ -46,7 +46,7 @@ Ao se concentrar no valor para seus autores, o projeto Edge Delivery Services po
 
 ## Ferramentas de criação flexíveis para seus criadores de conteúdo {#overview}
 
-O Edge Delivery Services é um conjunto de serviços combináveis que permite um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Você pode usar o [gerenciamento de conteúdo AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/author-publish) e a criação do WYSIWYG usando o [Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md) e a [criação baseada em documento](https://www.aem.live/docs/authoring).
+O Edge Delivery Services é um conjunto de serviços combináveis que permite um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Você pode usar o [gerenciamento de conteúdo AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/author-publish) e a criação do WYSIWYG usando o [Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md) e a [criação baseada em documento](https://www.aem.live/docs/authoring).
 
 O diagrama a seguir ilustra como você pode editar conteúdo no Microsoft Word (criação baseada em documento) e publicar no Edge Delivery Services. Ele também mostra a edição do WYSIWYG usando o Editor universal.
 
@@ -104,7 +104,7 @@ Os Edge Delivery Services fazem parte do Adobe Experience Manager. Dessa forma, 
 
 Consulte o [Guia de Introdução do Desenvolvedor para WYSIWYG com Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para saber como iniciar seu próprio projeto para ser autor com AEM e Edge Delivery Services.
 
-Você também pode usar Edge Delivery Services com o [Adobe Target](https://www.aem.live/developer/target-integration), o [Monitoramento de Uso Real (RUM)](https://www.aem.live/developer/rum) para diagnosticar o uso e o desempenho de seus sites e o [Launch](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home).
+Você também pode usar Edge Delivery Services com o [Adobe Target](https://www.aem.live/developer/target-integration), o [Monitoramento de Uso Real (RUM)](https://www.aem.live/developer/rum) para diagnosticar o uso e o desempenho de seus sites e o [Launch](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/home).
 
 ## Introdução aos Edge Delivery Services. {#getting-started}
 

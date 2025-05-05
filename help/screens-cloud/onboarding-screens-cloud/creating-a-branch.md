@@ -16,7 +16,7 @@ ht-degree: 4%
 Esta seção descreve como criar uma ramificação para seu programa no Cloud Manager.
 
 >[!NOTE]
->Consulte [Usar o Assistente no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html) para saber como criar um projeto de aplicativo AEM no Cloud Manager usando o assistente.
+>Consulte [Usar o Assistente no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/using-the-wizard.html?lang=pt-BR) para saber como criar um projeto de aplicativo AEM no Cloud Manager usando o assistente.
 
 ## Objetivo {#objective}
 

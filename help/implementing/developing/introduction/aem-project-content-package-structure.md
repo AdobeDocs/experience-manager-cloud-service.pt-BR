@@ -72,7 +72,7 @@ A estrutura de implantação de aplicativo recomendada é a seguinte:
       + `/apps/settings`
    + ACLs (permissões)
       + Qualquer `rep:policy` para qualquer caminho em `/apps`
-   + [Scripts agrupados pré-compilados](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [Scripts agrupados pré-compilados](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html?lang=pt-BR)
 
 >[!NOTE]
 >

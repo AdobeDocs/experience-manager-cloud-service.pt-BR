@@ -36,7 +36,7 @@ O Verificador de links valida [links internos](#internal) e [links externos.](#e
 Links internos são links para outro conteúdo no repositório do AEM. Links internos podem ser adicionados usando o seletor de caminho, o editor de rich text ou usando um componente personalizado. Por exemplo:
 
 * Você cria a página `/content/wknd/us/en/adventures/ski-touring`
-* Esta página contém um link para `/content/wknd/us/en/adventures/extreme-ironing` em um componente de Texto [.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* Esta página contém um link para `/content/wknd/us/en/adventures/extreme-ironing` em um componente de Texto [.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/wcm-components/text)
 
 Os links internos são validados assim que o autor de conteúdo adiciona esse link a uma página. Se o link se tornar inválido:
 
@@ -52,7 +52,7 @@ Os links internos são validados assim que o autor de conteúdo adiciona esse li
 Links externos são links para conteúdo fora do repositório do AEM. Links externos podem ser adicionados usando o editor de rich text ou usando um componente personalizado. Por exemplo:
 
 * Você cria a página `/content/wknd/us/en/adventures/ski-touring`
-* Esta página contém um link para `https://bunwarmerthermalunderwear.com` em um componente de Texto [.](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* Esta página contém um link para `https://bunwarmerthermalunderwear.com` em um componente de Texto [.](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/wcm-components/text)
 
 Os links externos são validados para sintaxe e por meio da verificação de sua disponibilidade. Essa verificação é feita de forma assíncrona em um intervalo configurável. Se o Verificador de links encontrar um link externo inválido:
 

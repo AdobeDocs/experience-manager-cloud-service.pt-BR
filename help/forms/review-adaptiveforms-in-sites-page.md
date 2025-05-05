@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Criar e gerenciar revisões para um Formulário adaptável {#review-step-forms-aem-sites-page}
 
-Usando a [Etapa de atribuição](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html#assign-task-step) do fluxo de trabalho do AEM, o revisor revisa o formulário enviado e executa a ação nele. Para revisar o formulário enviado usando a etapa Atribuir tarefa, siga estas etapas:
+Usando a [Etapa de atribuição](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=pt-BR#assign-task-step) do fluxo de trabalho do AEM, o revisor revisa o formulário enviado e executa a ação nele. Para revisar o formulário enviado usando a etapa Atribuir tarefa, siga estas etapas:
 
 1. [Criar um fluxo de trabalho do AEM](#create-an-aem-workflow)
 1. [Configurar a ação de envio do contêiner de Formulário adaptável](#configure-submit-action)
@@ -46,7 +46,7 @@ Agora, configure a ação Enviar de um componente de Contêiner de formulário a
 
 1. Vá para a página do site.
 1. Selecione ![settings_icon](assets/settings_icon.png) de um contêiner de Formulário adaptável. A caixa de diálogo **[!UICONTROL Contêiner de formulário adaptável]** é aberta.
-1. Abra a guia **[!UICONTROL Envio]** e especifique **[!UICONTROL Enviar Ação]** para [Invocar um fluxo de trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#invoke-an-aem-workflow)
+1. Abra a guia **[!UICONTROL Envio]** e especifique **[!UICONTROL Enviar Ação]** para [Invocar um fluxo de trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=pt-BR#invoke-an-aem-workflow)
 
 1. Clique em [Concluído] para salvar as configurações.
 

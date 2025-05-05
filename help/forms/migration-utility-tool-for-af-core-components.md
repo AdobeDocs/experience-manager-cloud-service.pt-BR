@@ -165,5 +165,5 @@ Agora é possível ver que o Formulário adaptável incorporado aos Componentes 
 
 ## Práticas recomendadas {#best-practices}
 
-* Certifique-se de que os formulários baseados em Componentes de Base usem apenas os componentes que tenham um [Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalente disponível. Nos casos em que você usa Componentes de base que não têm um Componente principal equivalente, o Componente de base não é convertido. Como resultado, não funciona corretamente ao criar um formulário
+* Certifique-se de que os formulários baseados em Componentes de Base usem apenas os componentes que tenham um [Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction#available-components-a-breakdown-by-component-type) equivalente disponível. Nos casos em que você usa Componentes de base que não têm um Componente principal equivalente, o Componente de base não é convertido. Como resultado, não funciona corretamente ao criar um formulário
 * Verifique se as regras para converter os Componentes de base em Componentes principais estão formatadas em XML.

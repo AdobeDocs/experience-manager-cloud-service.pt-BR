@@ -54,5 +54,5 @@ Há diferentes tipos de usuários com habilidades variadas que trabalham com o A
 
    Barra de ferramentas Componentes conforme visível para um usuário sem acesso ao editor de regras
 
-   Para obter instruções sobre como adicionar usuários a grupos, consulte [Administração e Segurança do Usuário](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+   Para obter instruções sobre como adicionar usuários a grupos, consulte [Administração e Segurança do Usuário](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR).
 

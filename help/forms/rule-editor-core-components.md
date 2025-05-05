@@ -19,7 +19,7 @@ ht-degree: 4%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componentes principais) | Este artigo |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/rule-editor.md) |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=pt-BR) |
 
 Em um Formulário adaptável baseado em Componentes principais, o recurso do editor de regras permite que usuários empresariais e desenvolvedores gravem regras para objetos de Formulário adaptável. Essas regras definem as ações a serem acionadas nos objetos de formulário com base nas condições predefinidas, entradas do usuário e ações do usuário no formulário. Esse recurso ajuda a simplificar ainda mais a experiência de preenchimento de formulário, garantindo precisão e velocidade.
 

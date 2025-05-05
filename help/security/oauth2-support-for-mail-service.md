@@ -150,7 +150,7 @@ Antes de continuar a configurar o OAuth no lado do AEM, valide o accessToken e o
    * `email`
    * `profile`
 1. Criar um arquivo de propriedade OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp.host` e `smtp.port` refletem a configuração avançada de rede, conforme descrito na seção [Tutorial do serviço de email](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
+em `/apps/<my-project>/osgiconfig/config` com a sintaxe abaixo. Os valores `smtp.host` e `smtp.port` refletem a configuração avançada de rede, conforme descrito na seção [Tutorial do serviço de email](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/networking/examples/email-service).
 
    ```
    {

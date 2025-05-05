@@ -31,7 +31,7 @@ O suporte para integração com o AEM as a Cloud Service depende da versão do C
 |---|---|
 | [Campaign Classic v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=pt-BR) | Não compatível |
 | [Campaign v8 (console do cliente)](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=pt-BR) | Não compatível |
-| Interface do Campaign Web | Compatível. [Saiba mais](https://experienceleague.adobe.com/en/docs/campaign/campaign-v8/connect/ac-aem) |
+| Interface do Campaign Web | Compatível. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/campaign/campaign-v8/connect/ac-aem) |
 
 ## Integração com o Adobe Campaign Standard {#acs}
 

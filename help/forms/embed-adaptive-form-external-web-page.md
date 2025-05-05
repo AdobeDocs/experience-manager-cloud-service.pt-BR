@@ -16,7 +16,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-external-web-page.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 Você pode [incorporar formulários adaptáveis em uma página do AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md) ou uma página da Web hospedada fora do AEM. O formulário adaptável incorporado é totalmente funcional e os usuários podem preencher e enviar o formulário sem sair da página. Ele ajuda o usuário a permanecer no contexto de outros elementos na página da Web e interagir simultaneamente com o formulário.
@@ -159,8 +159,8 @@ Ao incorporar um formulário adaptável em uma página da Web, considere as segu
 
 * Certifique-se de que as regras de estilo definidas no CSS da página da Web não estejam em conflito com o CSS do objeto de formulário. Para evitar os conflitos, você pode reutilizar o CSS da página da Web no tema de formulário adaptável usando a biblioteca do cliente AEM. Para obter informações sobre como usar a biblioteca do cliente em temas de formulário adaptável, consulte [Temas no AEM Forms](/help/forms/themes.md).
 * Faça com que o container do formulário na página da Web use toda a largura da janela. Ela garante que as regras CSS configuradas para dispositivos móveis funcionem sem alterações. Se o contêiner de formulário não ocupa toda a largura da janela, você deve gravar CSS personalizado para fazer o formulário se adaptar a diferentes dispositivos móveis.
-* Use a API `[getData](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` para obter a representação XML ou JSON dos dados de formulário no cliente.
-* Use a API `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` para descarregar o formulário adaptável do DOM do HTML.
+* Use a API `[getData](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` para obter a representação XML ou JSON dos dados de formulário no cliente.
+* Use a API `[unloadAdaptiveForm](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/GuideBridge.html)` para descarregar o formulário adaptável do DOM do HTML.
 * Configurar o cabeçalho access-control-origin ao enviar uma resposta de um servidor AEM.
 
 ## Permitir que o AEM Forms forneça formulários adaptáveis a um site entre domínios {#cross-site}

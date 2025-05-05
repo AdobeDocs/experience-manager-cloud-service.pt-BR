@@ -21,7 +21,7 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -186,7 +186,7 @@ Embora tabelas e linhas suportem apenas expressões de visibilidade para control
 
 A expressão de visibilidade de uma tabela ou linha pode ser definida na guia de propriedades Painel da caixa de diálogo Editar componente correspondente. As expressões de uma célula podem ser definidas na guia Script da caixa de diálogo Editar componente.
 
-Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+Para obter a lista completa de classes de formulários adaptáveis, eventos, objetos e APIs públicas, consulte [Referência da API da biblioteca JavaScript para formulários adaptáveis](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
 
 ## Layouts móveis {#mobile-layouts}
 

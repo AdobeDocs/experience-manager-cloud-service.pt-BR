@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2022 ou 2023.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 #### Criar formulários adaptáveis usando o Editor universal
 
-Aproveite o [Editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) do Adobe Experience Manager para criar formulários adaptáveis usando a criação de arrastar e soltar do WYSIWYG, para experiências de inscrição headless e headful, entregues pelo Serviço Edge Delivery. Os autores de formulários adaptáveis podem criar e iniciar facilmente experimentos para variações dos formulários nas páginas da Web. Essa capacidade permite que eles determinem as experiências de melhor desempenho para os usuários finais.
+Aproveite o [Editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction) do Adobe Experience Manager para criar formulários adaptáveis usando a criação de arrastar e soltar do WYSIWYG, para experiências de inscrição headless e headful, entregues pelo Serviço Edge Delivery. Os autores de formulários adaptáveis podem criar e iniciar facilmente experimentos para variações dos formulários nas páginas da Web. Essa capacidade permite que eles determinem as experiências de melhor desempenho para os usuários finais.
 
 >[!IMPORTANT]
 >
@@ -190,7 +190,7 @@ O Centro de ações envia uma notificação proativa quando um recurso Sling aus
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

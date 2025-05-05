@@ -28,7 +28,7 @@ Os ativos do Dynamic Media são armazenados em cache pela CDN (Content Delivery 
 
 **Para invalidar o cache da CDN por meio do Dynamic Media Classic:**
 
-1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) e entre na sua conta.
+1. Abra o [aplicativo de desktop do Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=pt-BR#getting-started) e entre na sua conta.
 
    Suas credenciais e detalhes de logon foram fornecidos pela Adobe no momento do provisionamento. Se você não tiver essas informações, entre em contato com o Suporte ao cliente.
 

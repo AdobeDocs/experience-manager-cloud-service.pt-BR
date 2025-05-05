@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html?lang=pt-BR) |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/layout-capabilities-adaptive-forms-core-components.md) |
 | AEM as a Cloud Service (Componentes de base) | Este artigo |
 

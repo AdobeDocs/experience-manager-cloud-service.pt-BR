@@ -70,7 +70,7 @@ Para integrar o AEM Forms ao serviço de Borboleta, execute as seguintes etapas:
    >
    > Os usuários não precisam modificar o URL de validação do JavaScript do lado do cliente e o URL de validação do lado do servidor, pois já estão pré-preenchidos para validação do módulo de montagem.
 
-   Após configurar o serviço Captcha com estrutura de rotação, ele estará disponível para uso em um [Formulário adaptável com base nos Componentes principais](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction).
+   Após configurar o serviço Captcha com estrutura de rotação, ele estará disponível para uso em um [Formulário adaptável com base nos Componentes principais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction).
 
 ## Usar a estrutura giratória em um formulário adaptável {#using-turnstile-core-components}
 

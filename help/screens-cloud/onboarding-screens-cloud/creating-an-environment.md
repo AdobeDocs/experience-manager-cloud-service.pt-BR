@@ -16,7 +16,7 @@ ht-degree: 4%
 Esta seção descreve como criar um ambiente para seu programa no Cloud Manager.
 
 >[!NOTE]
->Consulte [Gerenciamento de ambientes no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) para saber como o usuário pode criar um ambiente.
+>Consulte [Gerenciamento de ambientes no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR) para saber como o usuário pode criar um ambiente.
 
 ## Objetivo {#objective}
 

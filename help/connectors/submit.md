@@ -22,7 +22,7 @@ Em soluções anteriores do AEM, o [Gerenciador de pacotes](/help/implementing/d
 Há várias opções de como os pacotes podem ser incluídos em um projeto:
 
 1. Repositório público do parceiro — um parceiro hospedaria o pacote de conteúdo em um repositório do Maven acessível publicamente
-1. Repositório protegido por senha do parceiro — um parceiro hospedaria o pacote de conteúdo em um repositório do Maven protegido por senha. Consulte [repositórios do Maven protegidos por senha](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html#password-protected-maven-repositories) para obter instruções.
+1. Repositório protegido por senha do parceiro — um parceiro hospedaria o pacote de conteúdo em um repositório do Maven protegido por senha. Consulte [repositórios do Maven protegidos por senha](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/create-application-project/setting-up-project.html?lang=pt-BR#password-protected-maven-repositories) para obter instruções.
 1. Artefato embutido — nesse caso, o pacote do conector é incluído localmente no projeto do Maven do cliente.
 
 Independentemente de onde eles estejam hospedados, os pacotes devem ser referenciados como dependências no arquivo pom.xml, conforme fornecido pelo fornecedor.

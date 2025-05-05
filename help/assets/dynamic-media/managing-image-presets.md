@@ -297,7 +297,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
     </ul>
     <div>
       A nitidez é descrita em
-     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Usando nitidez de imagem com vídeo do Experience Manager Dynamic Media</a>, no tópico da Ajuda <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Nitidez de uma imagem</a> online e em <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf">Práticas recomendadas para nitidez de imagens no Dynamic Media Classic</a> baixáveis do PDF.
+     <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media">Usando nitidez de imagem com vídeo do Experience Manager Dynamic Media</a>, no tópico da Ajuda <a href="https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/master-files/sharpening-image#master-files">Nitidez de uma imagem</a> online e em <a href="https://experienceleague.adobe.com/docs/dynamic-media-classic/assets/s7_sharpening_images.pdf?lang=pt-BR">Práticas recomendadas para nitidez de imagens no Dynamic Media Classic</a> baixáveis do PDF.
     </div> </td>
   </tr>
   <tr>
@@ -317,7 +317,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
   </tr>
   <tr>
    <td><strong>Modificador de imagem</strong></td>
-   <td><p>Além das configurações de imagem comuns disponíveis na interface, o Dynamic Media oferece suporte a várias modificações de imagem avançadas que você pode especificar no campo <strong>Modificadores de imagem</strong>. Estes parâmetros são definidos na <a href="https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">referência de comando do Protocolo do Servidor de Imagens</a>.</p> <p>Importante: a seguinte funcionalidade listada na API não é compatível:</p>
+   <td><p>Além das configurações de imagem comuns disponíveis na interface, o Dynamic Media oferece suporte a várias modificações de imagem avançadas que você pode especificar no campo <strong>Modificadores de imagem</strong>. Estes parâmetros são definidos na <a href="https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/syntax-and-features/image-serving-http/c-command-overview">referência de comando do Protocolo do Servidor de Imagens</a>.</p> <p>Importante: a seguinte funcionalidade listada na API não é compatível:</p>
     <ul>
      <li>Modelos básicos e comandos de renderização de texto: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> e <code>textPs=</code></li>
      <li>Comandos de localização: <code>locale=</code> e <code>req=xlate</code></li>
@@ -334,7 +334,7 @@ Ao criar ou editar Predefinições de imagem, você tem as opções descritas ne
 
 ### Definir opções de Predefinição de imagem com modificadores de imagem {#defining-image-preset-options-with-image-modifiers}
 
-Além das opções disponíveis nas guias Básico e Avançado, é possível definir modificadores de imagem para oferecer mais opções ao definir Predefinições de imagem. A Renderização de Imagens depende da API de Renderização de Imagens do Dynamic Media e é definida em detalhes na [Referência do Protocolo HTTP](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
+Além das opções disponíveis nas guias Básico e Avançado, é possível definir modificadores de imagem para oferecer mais opções ao definir Predefinições de imagem. A Renderização de Imagens depende da API de Renderização de Imagens do Dynamic Media e é definida em detalhes na [Referência do Protocolo HTTP](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-rendering-api/http-protocol-reference/c-ir-introduction#image-rendering-api).
 
 A seguir estão alguns exemplos básicos do que você pode fazer com modificadores de imagem.
 
@@ -342,7 +342,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 >
 >Alguns modificadores de imagem [não podem ser usados no Experience Manager](#advanced-tab-options).
 
-* [op_invert](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - Inverte cada componente de cor para um efeito de imagem negativo.
+* [op_invert](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert) - Inverte cada componente de cor para um efeito de imagem negativo.
 
   ```xml {.line-numbers}
   &op_invert=1
@@ -350,7 +350,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - Aplica um filtro de desfoque à imagem.
+* [op_blur](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur) - Aplica um filtro de desfoque à imagem.
 
   ```xml {.line-numbers}
   &op_blur=7
@@ -366,7 +366,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - Diminui ou aumenta o brilho.
+* [op_brightness](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness) - Diminui ou aumenta o brilho.
 
   ```xml {.line-numbers}
   &op_brightness=58
@@ -374,7 +374,7 @@ A seguir estão alguns exemplos básicos do que você pode fazer com modificador
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - Ajusta a opacidade da imagem. Permite diminuir a opacidade do primeiro plano.
+* [opac](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac) - Ajusta a opacidade da imagem. Permite diminuir a opacidade do primeiro plano.
 
   ```xml {.line-numbers}
   opac=29

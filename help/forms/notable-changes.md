@@ -29,17 +29,17 @@ O Adobe Experience Manager Forms as a Cloud Service traz algumas alterações no
 
 * O serviço fornece um SDK para desenvolver e testar o código personalizado em um ambiente local (máquina local) antes de implantar o código em um Cloud Service. Os desenvolvedores desenvolvem e testam componentes personalizados, temas, aplicativos de fluxos de trabalho, configurações, modelos e muito mais usando o SDK em suas máquinas locais. Depois de testar o código personalizado no ambiente de desenvolvimento local, eles implantam o código personalizado em um [ambiente de desenvolvimento ou preparo do Forms CS](/help/implementing/cloud-manager/deploy-code.md) para testes adicionais antes de promovê-lo para um ambiente de produção.
 
-* Os desenvolvedores mantêm o código do Cloud Service e do ambiente de desenvolvimento local em um [repositório Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html) comum. Um repositório Git, com base no Arquétipo AEM, é criado automaticamente ao criar um programa do AEM as a Cloud Service.
+* Os desenvolvedores mantêm o código do Cloud Service e do ambiente de desenvolvimento local em um [repositório Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html?lang=pt-BR) comum. Um repositório Git, com base no Arquétipo AEM, é criado automaticamente ao criar um programa do AEM as a Cloud Service.
 
   ![criação automática de repositório Git no programa AEM as a cloud service](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
-* O fluxo de desenvolvimento do Forms se as a Cloud Service ao Arquétipo AEM do AEM Cloud Service. No entanto, há algumas alterações necessárias para que os projetos do Adobe Experience Manager Maven sejam compatíveis com o AEM Cloud Service. Em um alto nível, o AEM requer uma separação de conteúdo e código em subpacotes discretos para respeitar a divisão entre conteúdo mutável e imutável. Use a [ferramenta Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html) para reestruturar pacotes de projetos existentes separando o conteúdo e o código em pacotes discretos para que sejam compatíveis com a estrutura do projeto definida para o Adobe Experience Manager as a Cloud Service.
+* O fluxo de desenvolvimento do Forms se as a Cloud Service ao Arquétipo AEM do AEM Cloud Service. No entanto, há algumas alterações necessárias para que os projetos do Adobe Experience Manager Maven sejam compatíveis com o AEM Cloud Service. Em um alto nível, o AEM requer uma separação de conteúdo e código em subpacotes discretos para respeitar a divisão entre conteúdo mutável e imutável. Use a [ferramenta Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=pt-BR) para reestruturar pacotes de projetos existentes separando o conteúdo e o código em pacotes discretos para que sejam compatíveis com a estrutura do projeto definida para o Adobe Experience Manager as a Cloud Service.
 
 * Antes de usar seus pacotes de clientes com o Forms as a Cloud Service, recompile seu código personalizado com a versão mais recente do adobe-aemfd-docmanager.
 
 * Use o [utilitário de migração as a Cloud Service do AEM Forms](/help/forms/migrate-to-forms-as-a-cloud-service.md) para preparar e migrar suas configurações de Forms AEM adaptável, temas, modelos e nuvem do <!-- AEM 6.3 Forms--> 6.4 Forms AEM no OSGi e do 6.5 Forms no OSGi para o [!DNL AEM] as a Cloud Service. Use o [repositório Git do seu programa](/help/implementing/cloud-manager/managing-code/managing-repositories.md) para importar modelos de Formulário adaptável existentes.
 
-* Por padrão, o email suporta apenas protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) para habilitar as portas para enviar emails e habilitar o protocolo SMTP para o seu ambiente.
+* Por padrão, o email suporta apenas protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email) para habilitar as portas para enviar emails e habilitar o protocolo SMTP para o seu ambiente.
 
 ## Localização
 
@@ -56,11 +56,11 @@ O Adobe Experience Manager Forms as a Cloud Service traz algumas alterações no
 
 <!--* **Prefill Service:** By default, the prefill service merges data with an Adaptive Form at client as opposed to merging data on Server in AEM 6.5 Forms. The feature helps improve the time required to prefill an Adaptive Form. You can always configure to run the merge action on the Adobe Experience Manager Forms Server.-->
 
-* **Serviço de Preenchimento Prévio:** O serviço de Preenchimento Prévio busca dados do servidor e mescla para preencher previamente o Forms Adaptável no lado do cliente. Este recurso ajuda a melhorar o tempo necessário para preencher um Formulário adaptável. Você sempre pode configurar o [serviço de preenchimento prévio](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html) para executar a ação de mesclagem no Adobe Experience Manager Forms Server.
+* **Serviço de Preenchimento Prévio:** O serviço de Preenchimento Prévio busca dados do servidor e mescla para preencher previamente o Forms Adaptável no lado do cliente. Este recurso ajuda a melhorar o tempo necessário para preencher um Formulário adaptável. Você sempre pode configurar o [serviço de preenchimento prévio](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/prefill-service-adaptive-forms-article-use.html?lang=pt-BR) para executar a ação de mesclagem no Adobe Experience Manager Forms Server.
 
 * **Ações de envio:** A ação de envio **Email** fornece opções para enviar anexos e anexar Documento de Registro (DoR) com o email. Você pode usá-lo no lugar da ação **Enviar email como PDF** disponível no AEM 6.5 Forms.
 
-* **Serviço do Automated forms conversion**: o serviço não fornece um metamodelo para o Serviço do Automated forms conversion. Você pode [baixá-lo da documentação do Automated forms conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model).
+* **Serviço do Automated forms conversion**: o serviço não fornece um metamodelo para o Serviço do Automated forms conversion. Você pode [baixá-lo da documentação do Automated forms conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=pt-BR#default-meta-model).
 
 * **Forms Adaptável Baseado em XSD:** Você pode usar o modelo XDP para criar um modelo para Documento para Registro. O serviço não é compatível com o Adaptive Forms baseado em XFA
 
@@ -82,7 +82,7 @@ O Forms as a Cloud Service APIs RESTful de Geração e Manipulação de document
 
    * As operações que dependem de serviços de documentos ou aplicativos não estão disponíveis. Por exemplo, Microsoft® Word para PDF, Microsoft® Excel para PDF e HTML para PDF, PostScript (PS) para PDF e XDP para PDF forms não são suportados. Essas operações dependem do Microsoft® Office, Adobe Acrobat, Adobe Distiller, Forms Document Service, respectivamente.
 
-   * Converta documentos que não estejam no formato PDF em um formato PDF antes de usá-los com APIs de Manipulação de documentos de comunicações. Por exemplo, se seus documentos estiverem no formato Microsoft® Office, HTML, PostScript (PS), XDP, converta esses documentos no formato PDF antes de usá-los com documentos PDF. Você pode usar o serviço [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html) para essas conversões.
+   * Converta documentos que não estejam no formato PDF em um formato PDF antes de usá-los com APIs de Manipulação de documentos de comunicações. Por exemplo, se seus documentos estiverem no formato Microsoft® Office, HTML, PostScript (PS), XDP, converta esses documentos no formato PDF antes de usá-los com documentos PDF. Você pode usar o serviço [ConvertPDF](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/using-convertpdf-service.html?lang=pt-BR) para essas conversões.
 
    * Você pode usar um ambiente de Forms AEM 6.5 para Assinatura digital, Criptografia, Extensão Reader, Enviar para impressora, Converter PDF e Serviço Forms com código de barras.
 
@@ -111,7 +111,7 @@ O Forms as a Cloud Service APIs RESTful de Geração e Manipulação de document
 
    * renderize seus formulários baseados em XDP como HTML5 Forms. O serviço não oferece suporte ao HTML5 Forms.
 
-   * capture dados offline e sincronize-os na próxima vez que voltar online com o aplicativo [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html).
+   * capture dados offline e sincronize-os na próxima vez que voltar online com o aplicativo [AEM Forms Workspace](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html?lang=pt-BR).
 
 ## Comunicações interativas
 

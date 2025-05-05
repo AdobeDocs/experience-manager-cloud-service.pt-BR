@@ -27,7 +27,7 @@ A data de lançamento do Cloud Acceleration Manager é 25 de outubro de 2021.
 
 ### Novidades {#what-is-new-cam}
 
-O Cloud Acceleration Manager agora oferece aos usuários a capacidade de visualizar relatórios históricos do BPA em um relatório de linha de tendências. Com esse relatório, os usuários podem visualizar o progresso que estão fazendo em uma representação gráfica fácil de consumir. Consulte [Usando Exibir Linha de Tendência](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#trendline-view-cam) para obter mais detalhes.
+O Cloud Acceleration Manager agora oferece aos usuários a capacidade de visualizar relatórios históricos do BPA em um relatório de linha de tendências. Com esse relatório, os usuários podem visualizar o progresso que estão fazendo em uma representação gráfica fácil de consumir. Consulte [Usando Exibir Linha de Tendência](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=pt-BR#trendline-view-cam) para obter mais detalhes.
 
 ### Data de lançamento {#release-date-october-cam}
 
@@ -35,7 +35,7 @@ A data de lançamento do Cloud Acceleration Manager é 4 de outubro de 2021.
 
 ### Novidades {#what-is-new-cam-oct}
 
-O Cloud Acceleration Manager agora oferece aos usuários a capacidade de visualizar os relatórios do BPA em uma visualização imprimível, permitindo uma impressão simples ou impressão em PDF para facilitar o compartilhamento. Consulte as Etapas 6 e 7 em [Usando o Cartão de Análise de Práticas Recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html#best-practices-analysis).
+O Cloud Acceleration Manager agora oferece aos usuários a capacidade de visualizar os relatórios do BPA em uma visualização imprimível, permitindo uma impressão simples ou impressão em PDF para facilitar o compartilhamento. Consulte as Etapas 6 e 7 em [Usando o Cartão de Análise de Práticas Recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=pt-BR#best-practices-analysis).
 
 
 ## Ferramenta Transferência de conteúdo {#ctt-release}
@@ -46,7 +46,7 @@ A data de lançamento da ferramenta de Transferência de conteúdo v1.6.0 é 4 d
 
 ### Novidades {#what-is-new-ctt-oct}
 
-* Ferramenta de Mapeamento de usuário aprimorada com uma experiência do usuário simplificada, incluindo os seguintes recursos listados abaixo. Para obter mais detalhes, consulte [Usando a Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html).
+* Ferramenta de Mapeamento de usuário aprimorada com uma experiência do usuário simplificada, incluindo os seguintes recursos listados abaixo. Para obter mais detalhes, consulte [Usando a Ferramenta de Mapeamento de Usuário](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=pt-BR).
    * Testar conexão com a API de gerenciamento de usuários antes de executar o mapeamento de usuários
    * Ignorar erros normalmente e continuar com a atividade Mapeamento de usuário
    * O Mapeamento de usuários não falhará mais se o **Token de Acesso** expirar após 24 horas. O Mapeamento de usuário pode ser executado novamente de onde parou pela última vez.

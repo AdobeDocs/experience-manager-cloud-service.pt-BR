@@ -23,7 +23,7 @@ O serviço de Autor é onde os usuários internos criam, gerenciam e publicam co
 
 Como prática recomendada, as permissões devem ser definidas em Grupos no AEM. Também conhecidos como grupos locais, esses grupos podem ser gerenciados no ambiente de autor do AEM.
 
-A maneira mais fácil de gerenciar a associação de grupo é usar grupos do Identity Management System (IMS) da Adobe e atribuir [grupos IMS para grupos AEM locais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html#managing-permissions-in-aem).
+A maneira mais fácil de gerenciar a associação de grupo é usar grupos do Identity Management System (IMS) da Adobe e atribuir [grupos IMS para grupos AEM locais](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=pt-BR#managing-permissions-in-aem).
 
 ![Fluxo de permissão do Admin console](assets/admin-console-aem-group-permissions.png)
 

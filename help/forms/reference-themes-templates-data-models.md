@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | Aplica-se a | Link do artigo |
 | -------- | ---------------------------- |
-| Formulário adaptável com base nos Componentes principais | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) |
+| Formulário adaptável com base nos Componentes principais | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=pt-BR) |
 | Formulário adaptável baseado em componentes de base | Este artigo |
 
 >[!NOTE]
@@ -129,7 +129,7 @@ Você pode obter o seguinte Modelo de Dados de Formulário (FDM) instalando o [p
 * Microsoft® Dynamics 365
 * Salesforce
 
-Para obter informações sobre como usar esses modelos, consulte [Configurar o Microsoft Dynamics 365 e o Salesforce Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Para obter informações sobre como usar esses modelos, consulte [Configurar o Microsoft Dynamics 365 e o Salesforce Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=pt-BR#configure-dynamics-cloud-service)
 
 
 ## Consulte também {#see-also}

@@ -50,7 +50,7 @@ Agora que você sabe que funções são necessárias, examine o gráfico abaixo 
 
 ![Revisar funções para implementação](assets/team_involvement.png)
 
-**Revise esta lista com sua equipe de implementação** e certifique-se de ter pessoas com qualificações relevantes em cada função. Membros da equipe menos familiarizados com a Adobe Experience Cloud podem usar os recursos de aprendizagem da [Experience League](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager) para obter certificação por meio do [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+**Revise esta lista com sua equipe de implementação** e certifique-se de ter pessoas com qualificações relevantes em cada função. Membros da equipe menos familiarizados com a Adobe Experience Cloud podem usar os recursos de aprendizagem da [Experience League](https://experienceleague.adobe.com/pt-br?lang=pt-BR#recommended/solutions/experience-manager) para obter certificação por meio do [Adobe Digital Learning](https://learning.adobe.com/certification.html).
 
 ## **Funções principais para o Experience Manager Assets do AEM**
 
@@ -79,4 +79,4 @@ Agora que você sabe que funções são necessárias, examine o gráfico abaixo 
 
 >[!TIP]
 >
-> Saiba mais sobre a Adobe Experience Cloud e use os recursos da [Experience League](https://experienceleague.adobe.com/?lang=pt-BR#recommended/solutions/experience-manager) e obtenha a certificação por meio da [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+> Saiba mais sobre a Adobe Experience Cloud e use os recursos da [Experience League](https://experienceleague.adobe.com/pt-br?lang=pt-BR#recommended/solutions/experience-manager) e obtenha a certificação por meio da [Adobe Digital Learning](https://learning.adobe.com/certification.html).

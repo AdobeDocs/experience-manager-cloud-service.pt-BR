@@ -31,7 +31,7 @@ Todas as variações de limpeza compartilham o seguinte:
 >[!CAUTION]
 >A limpeza do cache CDN, especialmente com o sinalizador de hardware, aumentará o tráfego na origem e poderá causar uma interrupção quando não for executada corretamente.
 
-Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
+Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
 
 ## Limpeza de URL único {#single-purge}
 

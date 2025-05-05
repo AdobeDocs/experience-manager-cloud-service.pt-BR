@@ -135,7 +135,7 @@ Você pode acionar uma replicação em árvore ao escolher **Ferramentas - Fluxo
 
 Não chame o modelo original. Em vez disso, primeiro copie o modelo e chame essa cópia.
 
-Como todos os fluxos de trabalho, também é possível chamá-lo por meio da API. Para obter mais informações, consulte [Interação programática com fluxos de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html#extending-aem).
+Como todos os fluxos de trabalho, também é possível chamá-lo por meio da API. Para obter mais informações, consulte [Interação programática com fluxos de trabalho](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=pt-BR#extending-aem).
 
 Como alternativa, você pode criar um Modelo de Fluxo de Trabalho que use a etapa de processo `Publish Content Tree`.
 

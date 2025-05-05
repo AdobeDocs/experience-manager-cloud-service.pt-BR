@@ -53,7 +53,7 @@ ht-degree: 8%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 Usando o Adobe Experience Manager Assets, você pode definir fluxos de trabalho de revisão ad hoc para ativos que estão em uma pasta ou coleção. Você pode compartilhá-lo com revisores ou parceiros criativos para buscar seus comentários. Você pode associar um fluxo de trabalho de revisão a um projeto ou criar uma tarefa de revisão independente.

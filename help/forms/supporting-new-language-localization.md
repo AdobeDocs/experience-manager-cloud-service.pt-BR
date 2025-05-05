@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html?lang=pt-BR) |
 | Componentes principais | [Clique aqui](supporting-new-language-localization-core-components.md) |
 | Componentes de fundação | Este artigo |
 
@@ -56,7 +56,7 @@ Para adicionar suporte para um novo local no tempo de execução do Adaptive For
 #### 1. Clonar o repositório {#clone-the-repository}
 
 1. Na linha de comando, navegue até o local em que deseja clonar o repositório Cloud Service do Forms.
-1. Execute o comando que você [recuperou do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git). É semelhante a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Execute o comando que você [recuperou do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git). É semelhante a `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
 1. Use o nome de usuário e a senha do Git para clonar o repositório.
 1. Abra a pasta clonada do repositório de Cloud Service do Forms no editor de sua preferência.
 
@@ -115,11 +115,11 @@ Execute esta etapa somente se o `<locale>` que você está adicionando não esti
    <filter root="/etc/languages"/>
    ```
 
-Antes de confirmar as alterações no repositório Git AEM, é necessário acessar as [informações do repositório Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+Antes de confirmar as alterações no repositório Git AEM, é necessário acessar as [informações do repositório Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#accessing-git).
 
 #### 5. Confirme as alterações no repositório e implante o pipeline {#commit-changes-in-repo-deploy-pipeline}
 
-Confirme as alterações no repositório GIT após adicionar um suporte de localidade. Implante seu código usando o pipeline de pilha completa. Saiba [como configurar um pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) para adicionar um novo suporte de localidade.
+Confirme as alterações no repositório GIT após adicionar um suporte de localidade. Implante seu código usando o pipeline de pilha completa. Saiba [como configurar um pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=pt-BR#setup-pipeline) para adicionar um novo suporte de localidade.
 Quando o pipeline estiver concluído, o local recém-adicionado aparecerá no ambiente AEM.
 
 ### Usar local adicionado no Adaptive Forms {#use-added-locale-in-af}

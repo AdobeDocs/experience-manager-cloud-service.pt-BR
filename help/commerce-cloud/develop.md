@@ -22,7 +22,7 @@ O desenvolvimento de projetos do AEM Commerce, com base no Commerce integration 
 
 - [Estrutura de projetos do AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure.html?lang=pt-BR)
 - [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=pt-BR)
-- [Diretrizes de desenvolvimento do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html)
+- [Diretrizes de desenvolvimento do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR)
 
 ## Desenvolvimento local com o AEM as a Cloud Service SDK {#local}
 
@@ -38,7 +38,7 @@ O complemento CIF é fornecido como um arquivo de recursos Sling. O arquivo zip 
 
 Devem ser instalados:
 
-- [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [SDK do AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=pt-BR#download-the-aem-as-a-cloud-service-sdk)
 - [Java™ 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 ou mais recente)
 - [Node.js v10+](https://nodejs.org/en)
@@ -85,7 +85,7 @@ Para o desenvolvimento local do complemento CIF usando o AEM as a Cloud Service,
 
    Essa variável é usada pelo AEM para se conectar ao sistema de comércio. Além disso, o complemento CIF inclui um proxy reverso local para disponibilizar o endpoint do Commerce GraphQL localmente. Esse proxy é usado pelas ferramentas de criação do CIF (console do produto e seletores) e para os componentes do lado do cliente do CIF que fazem chamadas diretas de GraphQL.
 
-   Essa variável também deve ser configurada para o ambiente do AEM as a Cloud Service. Para obter mais informações sobre variáveis, consulte [Configurar OSGi para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
+   Essa variável também deve ser configurada para o ambiente do AEM as a Cloud Service. Para obter mais informações sobre variáveis, consulte [Configurar OSGi para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR#local-development).
 
 1. (Opcional) Para ativar recursos de catálogo em etapas, você deve criar um token de integração para sua instância do Adobe Commerce. Siga as etapas em [Introdução](./getting-started.md#staging) para criar o token.
 
@@ -95,7 +95,7 @@ Para o desenvolvimento local do complemento CIF usando o AEM as a Cloud Service,
    Authorization: Bearer <Access Token>
    ```
 
-   Para obter mais informações sobre segredos, consulte [Configuração de OSGi para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html#local-development).
+   Para obter mais informações sobre segredos, consulte [Configuração de OSGi para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR#local-development).
 
 1. Inicie o SDK do AEM as a Cloud Service
 

@@ -25,9 +25,9 @@ Os dados por etapas do produto incluem qualquer mutação no futuro, como novas 
 
 ## Configuração {#configuration}
 
-Os catálogos de produtos devem ser configurados no AEM. Consulte [configurando armazenamento e catálogos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html#catalog) para obter mais informações.
+Os catálogos de produtos devem ser configurados no AEM. Consulte [configurando armazenamento e catálogos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=pt-BR#catalog) para obter mais informações.
 
-A habilitação de recursos de catálogo em etapas requer autenticação. Consulte [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html) para obter mais informações.
+A habilitação de recursos de catálogo em etapas requer autenticação. Consulte [Introdução](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=pt-BR) para obter mais informações.
 
 >[!NOTE]
 >

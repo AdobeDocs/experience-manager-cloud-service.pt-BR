@@ -53,7 +53,7 @@ Siga as etapas abaixo para acessar a Fase de preparação:
    1. Navegue até o portal [Distribuição de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?fulltext=best*) e baixe o Analisador de práticas recomendadas como um arquivo zip.
 
       >[!NOTE]
-      >Revise [Usando o Analisador de Práticas Recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html#imp-considerations) para saber como executar o BPA.
+      >Revise [Usando o Analisador de Práticas Recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=pt-BR#imp-considerations) para saber como executar o BPA.
 
 1. No CAM, clique em **Obter chave de carregamento**, para que você possa obter a chave usada para configurar seu sistema para carregar automaticamente relatórios do BPA diretamente para o CAM.
 
@@ -161,7 +161,7 @@ Você pode filtrar o relatório com base na importância, no subtipo ou na conta
 ![Filtros de relatório](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Consulte [Interpretando o Relatório do Analisador de Práticas Recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html) para saber mais sobre categorias de descobertas e níveis de importância.
+>Consulte [Interpretando o Relatório do Analisador de Práticas Recomendadas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=pt-BR) para saber mais sobre categorias de descobertas e níveis de importância.
 
 #### Avaliação de práticas recomendadas {#best-practices-assessment}
 
@@ -222,4 +222,4 @@ A opção Avaliação da complexidade da migração fornece uma avaliação da c
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como fazer logon no Cloud Acceleration Manager e criar um projeto, você está pronto para revisar a próxima etapa da [Fase de implementação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html).
+Depois de saber como fazer logon no Cloud Acceleration Manager e criar um projeto, você está pronto para revisar a próxima etapa da [Fase de implementação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=pt-BR).

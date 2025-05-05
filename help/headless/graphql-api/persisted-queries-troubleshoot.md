@@ -48,7 +48,7 @@ O padrão deve ser `/graphql/execute.json/thePath`.
 
 Nesse caso, a consulta retorna o código de erro `405`.
 
-Esse erro não é específico do GraphQL. Consulte o artigo da Base de Dados de Conhecimento [Erro 405 Não Permitido](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-20824).
+Esse erro não é específico do GraphQL. Consulte o artigo da Base de Dados de Conhecimento [Erro 405 Não Permitido](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-20824).
 
 ## Bloqueado pelo Dispatcher {#blocked-dispatcher}
 

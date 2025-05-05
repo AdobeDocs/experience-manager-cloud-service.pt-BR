@@ -27,7 +27,7 @@ O Adobe Experience Manager inclui mais de 100 comandos de entrega de imagem do D
 **Imagens inteligentes:**
 
 * A ativação da Imagem inteligente no Dynamic Media permite a otimização automática do formato, do tamanho e da qualidade da imagem com base nos recursos do navegador do cliente.
-Quer saber mais? Vá para [Smart Imaging](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
+Quer saber mais? Vá para [Smart Imaging](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/imaging-faq).
 * Ele melhora o desempenho do delivery de imagens ajustando dinamicamente esses parâmetros.
 * Você pode avaliar o Smart Imaging usando a ferramenta de autoavaliação [Snapshot](https://snapshot.scene7.com/).
 
@@ -87,7 +87,7 @@ A nitidez de imagem é o aspecto mais complexo de controlar imagens no seu site 
 
 * White paper de práticas recomendadas [As práticas recomendadas de qualidade e nitidez de imagens da Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) também se aplicam ao Experience Manager.
 
-* Assista [Usar nitidez de imagem com o Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+* Assista [Usar nitidez de imagem com o Experience Manager - Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
 Com o Experience Manager, você pode ajustar a nitidez de imagens na assimilação, no delivery ou em ambos. No entanto, geralmente é melhor ajustar a nitidez de imagens usando apenas um método ou outro, mas não ambos. A nitidez de imagens no delivery, em um URL, normalmente fornece os melhores resultados.
 
@@ -111,7 +111,7 @@ Há dois métodos de nitidez de imagem que podem ser usados:
 
       * White paper de práticas recomendadas [As práticas recomendadas de qualidade e nitidez de imagens da Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) também se aplicam ao Experience Manager.
 
-      * Assista [Usar nitidez de imagem com o Experience Manager - Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
+      * Assista [Usar nitidez de imagem com o Experience Manager - Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-image-sharpening-feature-video-use#dynamic-media).
 
       * O Experience Manager também permite controlar um quarto parâmetro: monocromático (0,1). Esse parâmetro determina se a máscara de nitidez é aplicada separadamente a cada componente de cor usando o valor 0 ou ao brilho/intensidade da imagem usando o valor 1.
 

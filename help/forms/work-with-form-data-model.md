@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 
@@ -196,7 +196,7 @@ Use o atributo de solicitação para recuperar as propriedades associadas da fon
 
 1. Selecione **[!UICONTROL Solicitar Atributo]** no menu suspenso **[!UICONTROL Associando a]** e insira o nome do atributo no campo **[!UICONTROL Valor de Associação]**.
 
-1. Crie uma [sobreposição](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=en#developing) para o head.jsp. Para criar a sobreposição, abra o CRX DE e copie o arquivo `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` para `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. Crie uma [sobreposição](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/overlays.html?lang=pt-BR#developing) para o head.jsp. Para criar a sobreposição, abra o CRX DE e copie o arquivo `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` para `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
    >[!NOTE]
    >

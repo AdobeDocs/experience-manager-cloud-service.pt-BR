@@ -15,7 +15,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html?lang=pt-BR) |
 | AEM as a Cloud Service (Componentes principais) | [Clique aqui](/help/forms/configure-submit-actions-core-components.md) |
 | AEM as a Cloud Service (Componentes de base) | Este artigo |
 
@@ -120,7 +120,7 @@ Você pode usar a Ação Enviar **[!UICONTROL Email]** para enviar um email para
 >[!NOTE]
 >
 > * Todos os campos de formulário devem ter nomes de elementos diferentes, mesmo que os campos sejam colocados em painéis diferentes de um formulário adaptável.
-> * O AEM as a Cloud Service exige que o email de saída seja criptografado. Por padrão, o email de saída é desativado. Para ativá-lo, envie um tíquete de suporte para [Solicitando Acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
+> * O AEM as a Cloud Service exige que o email de saída seja criptografado. Por padrão, o email de saída é desativado. Para ativá-lo, envie um tíquete de suporte para [Solicitando Acesso](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email).
 
 Também é possível incluir anexos e um Documento de registro (DoR) no email. Para habilitar a opção **[!UICONTROL Anexar documento de registro]**, configure o formulário adaptável para gerar um Documento de registro (DoR). Você pode ativar a opção para gerar um Documento de registro a partir das propriedades do Formulário adaptável.
 
@@ -155,7 +155,7 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## Chamar um fluxo de trabalho do AEM {#invoke-an-aem-workflow}
 
-A Ação de Envio **[!UICONTROL Chamar um Fluxo de Trabalho do AEM]** associa um Formulário Adaptável a um [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem). Quando um formulário é enviado, o fluxo de trabalho associado é iniciado automaticamente na instância do Autor. Você pode salvar o arquivo de dados, os anexos e o Documento de registro no local da carga útil do fluxo de trabalho ou em uma variável. Se o workflow estiver marcado para armazenamento de dados externo e configurado para um armazenamento de dados externo, então somente a opção de variável estará disponível. É possível selecionar na lista de variáveis disponíveis para o modelo de fluxo de trabalho. Se o workflow estiver marcado para armazenamento de dados externo em um estágio posterior e não no momento da criação do workflow, verifique se as configurações de variável necessárias estão em vigor.
+A Ação de Envio **[!UICONTROL Chamar um Fluxo de Trabalho do AEM]** associa um Formulário Adaptável a um [Fluxo de Trabalho do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem). Quando um formulário é enviado, o fluxo de trabalho associado é iniciado automaticamente na instância do Autor. Você pode salvar o arquivo de dados, os anexos e o Documento de registro no local da carga útil do fluxo de trabalho ou em uma variável. Se o workflow estiver marcado para armazenamento de dados externo e configurado para um armazenamento de dados externo, então somente a opção de variável estará disponível. É possível selecionar na lista de variáveis disponíveis para o modelo de fluxo de trabalho. Se o workflow estiver marcado para armazenamento de dados externo em um estágio posterior e não no momento da criação do workflow, verifique se as configurações de variável necessárias estão em vigor.
 
 A ação enviar coloca o seguinte no local da carga do fluxo de trabalho, ou a variável se o fluxo de trabalho estiver marcado para armazenamento de dados externo:
 
@@ -397,7 +397,7 @@ Você pode usar a configuração do contêiner de Armazenamento do Azure criada 
 Ao enviar o formulário, os dados são salvos na configuração especificada do contêiner de Armazenamento do Azure.
 A estrutura de pasta para salvar dados é `/configuration_container/form_name/year/month/date/submission_id/data`.
 
-Para definir valores de uma configuração, [Gere Configurações OSGi usando o AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) na sua instância do Cloud Service.
+Para definir valores de uma configuração, [Gere Configurações OSGi usando o AEM SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=pt-BR#generating-osgi-configurations-using-the-aem-sdk-quickstart) e [implante a configuração](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=pt-BR#deployment-process) na sua instância do Cloud Service.
 
 
 ## Enviar para o Power Automate {#microsoft-power-automate}

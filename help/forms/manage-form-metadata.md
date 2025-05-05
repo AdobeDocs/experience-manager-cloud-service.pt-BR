@@ -20,7 +20,7 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/manage-form-metadata.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 Os metadados facilitam a categorização e a organização de ativos e ajudam os usuários que procuram um ativo específico.

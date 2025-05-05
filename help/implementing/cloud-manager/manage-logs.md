@@ -101,5 +101,5 @@ Consulte os seguintes recursos adicionais para saber mais sobre a API do Cloud M
 
 Consulte os seguintes recursos adicionais para saber mais sobre arquivos de log no AEM as a Cloud Service:
 
-* [Arquivos de log AEM da nuvem 5](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html)
+* [Arquivos de log AEM da nuvem 5](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/cloud-5/cloud5-aem-log-files.html?lang=pt-BR)
 * [Depurando o AEM as a Cloud Service usando logs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/logs.html?lang=pt-BR)

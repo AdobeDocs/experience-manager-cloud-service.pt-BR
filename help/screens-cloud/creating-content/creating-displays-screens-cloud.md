@@ -135,4 +135,4 @@ Todas as operações de pastas podem ser acessadas pela barra de ação de sele�
 
 ## O que vem a seguir {#whats-next}
 
-Agora que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar a as a Cloud Service jornada do Screens revisando o documento [Atribuição de canal a uma exibição no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html).
+Agora que você aprendeu a criar e gerenciar exibições para o seu projeto, deve continuar a as a Cloud Service jornada do Screens revisando o documento [Atribuição de canal a uma exibição no Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/assigning-channels-to-display.html?lang=pt-BR).

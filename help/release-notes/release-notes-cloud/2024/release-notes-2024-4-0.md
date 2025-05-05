@@ -256,7 +256,7 @@ Desfrute de benefícios como acesso mais rápido a arquivos relevantes e uma int
 
 *Use o filtros rápido para pesquisa para arquivos DITA e não DITA.*
 
-Saiba mais sobre o **recurso Filtrar Search** na [seção Painel](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) esquerdo.
+Saiba mais sobre o **recurso Filtrar Search** na [seção Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-features#id2051EA0M0HS) esquerdo.
 
 ### Melhorias nos conectores do Origem de dados
 
@@ -284,9 +284,9 @@ Esse recurso ajuda você a usar os dados armazenados em seus arquivos JSON e reu
 #### Configurar vários URLs de recursos para um conector criar trechos de conteúdo ou tópicos
 
 Como administrador, você pode configurar vários URLs de recursos para alguns conectores, como Cliente REST genérico, Salsify, Akeneo e placas DevOps (ADO) do Microsoft Azure.
-Em seguida, como autor, conecte-se às fontes de dados para criar trechos de conteúdo ou tópicos usando os geradores. Esse recurso é útil, pois você não precisa criar um fonte de dados para cada URL. Ajuda a obter dados rapidamente de qualquer um dos recursos para um determinado fonte de dados em um único snippet ou tópico em conteúdo. Exibir mais detalhes sobre os conectores fonte de dados e como [configurar um conector fonte de dados a partir da interface](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools) do usuário. Aprenda a [usar dados do seu fonte de dados](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
+Em seguida, como autor, conecte-se às fontes de dados para criar trechos de conteúdo ou tópicos usando os geradores. Esse recurso é útil, pois você não precisa criar um fonte de dados para cada URL. Ajuda a obter dados rapidamente de qualquer um dos recursos para um determinado fonte de dados em um único snippet ou tópico em conteúdo. Exibir mais detalhes sobre os conectores fonte de dados e como [configurar um conector fonte de dados a partir da interface](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/install-guide/cs-ig/web-editor-configs-cs/conf-data-source-connector-tools) do usuário. Aprenda a [usar dados do seu fonte de dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/user-guide/author-content/create-preview-topics/author-content-aem-guides/work-with-web-editor/web-editor-content-snippet).
 
-Para obter mais informações sobre os novos recursos e aprimoramentos, visualização [informações sobre as versões dos Guias](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) de Experience Manager.
+Para obter mais informações sobre os novos recursos e aprimoramentos, visualização [informações sobre as versões dos Guias](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap) de Experience Manager.
 
 ## Cloud Manager {#cloud-manager}
 

@@ -16,4 +16,4 @@ ht-degree: 7%
 
 A partir de 31 de janeiro de 2017, o suporte para a plataforma de visualizador de Flashes será oficialmente encerrado.
 
-Consulte o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html) para obter os visualizadores mais recentes compatíveis.
+Consulte o [Guia de Referência de Visualizadores do Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=pt-BR) para obter os visualizadores mais recentes compatíveis.

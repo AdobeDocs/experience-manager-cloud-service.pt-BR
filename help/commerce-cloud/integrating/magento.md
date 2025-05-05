@@ -54,5 +54,5 @@ Nos projetos, os Componentes principais do CIF e os componentes do projeto perso
 
 ## Pesquisar {#search}
 
-O CIF fornece um [Componente principal de pesquisa](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) pronto para uso, que é uma experiência de pesquisa renderizada no lado do servidor com base na [API do Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/). Os clientes do Commerce têm a opção de usar o [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=en). Siga este [link](/help/commerce-cloud/integrating/live-search-plp.md) para saber mais sobre a integração CIF - Live Search.
+O CIF fornece um [Componente principal de pesquisa](https://www.aemcomponents.dev/content/core-components-examples/library/commerce/search.html) pronto para uso, que é uma experiência de pesquisa renderizada no lado do servidor com base na [API do Commerce GraphQL](https://developer.adobe.com/commerce/webapi/graphql/). Os clientes do Commerce têm a opção de usar o [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=pt-BR). Siga este [link](/help/commerce-cloud/integrating/live-search-plp.md) para saber mais sobre a integração CIF - Live Search.
 

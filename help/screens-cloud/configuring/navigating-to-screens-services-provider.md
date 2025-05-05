@@ -49,11 +49,11 @@ Siga as etapas abaixo para configurar o Provedor de Serviços Screens:
 1. Clique em **Salvar** para se conectar ao provedor de conteúdo do Screens.
 
 1. Caso tenha configurado a instância de publicação AEM para permitir o acesso somente a endereços IP confiáveis pelo recurso de Inclui na lista de permissões IP da Cloud Manager, será necessário configurar um cabeçalho com um valor principal na caixa de diálogo de configurações, conforme mostrado abaixo.
-Os IPs que precisam ser colocados na lista de permissões também precisam ser movidos para o arquivo de configuração e precisam ser [desaplicados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) das configurações do Cloud Manager.
+Os IPs que precisam ser colocados na lista de permissões também precisam ser movidos para o arquivo de configuração e precisam ser [desaplicados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/ip-allow-lists/apply-allow-list) das configurações do Cloud Manager.
 
    ![imagem](/help/screens-cloud/assets/configure/configure-screens20b.png)
-A mesma chave precisa ser configurada na configuração do CDN do AEM.  É recomendável não colocar o valor do cabeçalho diretamente no GITHub e usar uma [referência secreta](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets).
-Um exemplo de [configuração de CDN](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) é fornecido abaixo:
+A mesma chave precisa ser configurada na configuração do CDN do AEM.  É recomendável não colocar o valor do cabeçalho diretamente no GITHub e usar uma [referência secreta](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication#rotating-secrets).
+Um exemplo de [configuração de CDN](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/security/traffic-filter-rules-including-waf) é fornecido abaixo:
 
    ```kind: "CDN"
        version: "1"
@@ -98,4 +98,4 @@ Um exemplo de [configuração de CDN](https://experienceleague.adobe.com/en/docs
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como configurar o Provedor de Serviços Screens, navegue até [Usando o Provedor de Conteúdo Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) para obter mais detalhes.
+Depois de saber como configurar o Provedor de Serviços Screens, navegue até [Usando o Provedor de Conteúdo Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=pt-BR#screens-content-provider) para obter mais detalhes.

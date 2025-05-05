@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html?lang=pt-BR) |
 | AEM as a Cloud Service (Componentes principais) | Este artigo |
 
 O Forms Portal fornece uma maneira eficiente de exibir e listar o Adaptive Forms em uma página do AEM Sites. É útil para organizações que exigem uma plataforma apresentarem sistematicamente vários formulários aos usuários.

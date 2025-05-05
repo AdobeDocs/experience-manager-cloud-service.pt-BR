@@ -346,4 +346,4 @@ Consulte o documento [Modelagem de conteúdo para criação no WYSIWYG com proje
 
 >[!TIP]
 >
->Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).
+>Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM](https://experienceleague.adobe.com/pt-br/docs/events/experience-manager-gems-recordings/gems2024/aem-authoring-and-edge-delivery).

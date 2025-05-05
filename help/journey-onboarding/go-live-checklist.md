@@ -26,7 +26,7 @@ Revise esta lista de atividades para garantir que você execute uma ativação t
 * Faça a complementação do conteúdo final.
 * Validar configurações do Dispatcher.
    * Usar um validador local do Dispatcher que facilite a configuração, validação e simulação do Dispatcher localmente
-      * [Configurar as ferramentas locais do Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools#prerequisites).
+      * [Configurar as ferramentas locais do Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools#prerequisites).
    * Analise cuidadosamente a configuração do host virtual.
       * A solução mais fácil (e padrão) é incluir `ServerAlias *` em seu arquivo de host virtual no `/dispatcher/src/conf.d/available_vhostsfolder`. Isso permite que os aliases de host usados pelos testes funcionais do produto, a invalidação do cache do Dispatcher e os clones funcionem.
       * No entanto, se `ServerAlias *` não for aceitável, pelo menos as `ServerAlias` entradas a seguir deverão ser permitidas além de seus domínios personalizados:

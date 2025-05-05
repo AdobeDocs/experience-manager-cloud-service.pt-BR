@@ -93,7 +93,7 @@ Essa configuração do mundo real pode ser usada como um blueprint e personaliza
 
 >[!TIP]
 >
->Consulte [Trabalhar com vários repositórios Git da Source](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) para saber mais sobre essa configuração.
+>Consulte [Trabalhar com vários repositórios Git da Source](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/managing-code/multiple-git-repos#managing-code) para saber mais sobre essa configuração.
 
 ### Considerações para uma configuração de várias equipes {#considerations}
 

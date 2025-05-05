@@ -40,7 +40,7 @@ O endpoint é configurado e atualizado por meio da interface do usuário do Clou
 
 ## Implantação do projeto CIF Venia
 
-Projeto disponível no [Repositório Git do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) e implantação feita via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html)
+Projeto disponível no [Repositório Git do Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html?lang=pt-BR) e implantação feita via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=pt-BR)
 
 **Versões anteriores do CIF**
 

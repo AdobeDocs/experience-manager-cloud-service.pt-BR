@@ -21,7 +21,7 @@ Os cenários incluem:
 * Uma página do HTML renomeada.
 * Otimização de SEO.
 
-A AEM as a Cloud Service oferece [várias abordagens](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection) para implementar redirecionamentos do lado do servidor, mas a estratégia descrita neste artigo, redirecionamentos sem pipeline, é uma boa escolha quando:
+A AEM as a Cloud Service oferece [várias abordagens](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/administration/url-redirection) para implementar redirecionamentos do lado do servidor, mas a estratégia descrita neste artigo, redirecionamentos sem pipeline, é uma boa escolha quando:
 
 * As pessoas que mantêm os redirecionamentos são usuários empresariais, que não têm o acesso necessário para confirmar alterações de arquivo no controle de origem ou a possibilidade de executar um pipeline de configuração no nível da Web do Cloud Manager.
 * O número de redirecionamentos varia de alguns a dezenas de milhares.
@@ -40,7 +40,7 @@ O núcleo desse recurso é a capacidade do AEM Apache/Dispatcher de carregar (ou
 >[!NOTE]
 > O uso deste recurso do Gerenciador de Mapa de Redirecionamento requer o ACS Commons versão **6.7.0 ou superior**, enquanto o uso do Gerenciador de Redirecionamento requer versão **6.10.0 ou superior**.
 
-Para obter um guia detalhado de implementação passo a passo, consulte o tutorial [Implementando redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects).
+Para obter um guia detalhado de implementação passo a passo, consulte o tutorial [Implementando redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects).
 
 ## O mapa de regravação {#rewrite-map}
 
@@ -87,5 +87,5 @@ Lembre-se do seguinte:
 
 ## Tutoriais {#tutorials}
 
-1. [Implementando redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
-1. [redirecionamentos de URL](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/administration/url-redirection)
+1. [Implementando redirecionamentos de URL sem pipeline](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/administration/implementing-pipeline-free-url-redirects)
+1. [redirecionamentos de URL](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/administration/url-redirection)

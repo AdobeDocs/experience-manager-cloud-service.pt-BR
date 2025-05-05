@@ -43,8 +43,8 @@ Assista ao vídeo de visão geral da versão de junho de 2023 para ver um resumo
 
 ![Visualizar no Console de Fragmentos de Conteúdo](/help/assets/content-fragments-console-preview.png)
 
-* As imagens agora podem ser otimizadas dinamicamente para entrega na Web com cenários headless usando o AEM GraphQL. [Variáveis de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html#query-variables) podem ser definidas em consultas de GraphQL para permitir que aplicativos clientes dissociados solicitem imagens otimizadas do AEM.
-* As tags das [variações de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html) agora podem ser exportadas em JSON usando a API de entrega de conteúdo do AEM GraphQL.
+* As imagens agora podem ser otimizadas dinamicamente para entrega na Web com cenários headless usando o AEM GraphQL. [Variáveis de consulta](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=pt-BR#query-variables) podem ser definidas em consultas de GraphQL para permitir que aplicativos clientes dissociados solicitem imagens otimizadas do AEM.
+* As tags das [variações de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=pt-BR) agora podem ser exportadas em JSON usando a API de entrega de conteúdo do AEM GraphQL.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -70,7 +70,7 @@ O [!DNL Experience Manager Assets] agora gera [visualizações de miniaturas par
 
 **Dynamic Media: atualização de campos relacionados ao Corte inteligente no perfil de imagem**
 
-A interface foi atualizada para que alguns campos relacionados ao Corte inteligente de um perfil de imagem reflitam as diretrizes atuais de definição de um Corte inteligente. Consulte [Opções de corte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html#crop-options).
+A interface foi atualizada para que alguns campos relacionados ao Corte inteligente de um perfil de imagem reflitam as diretrizes atuais de definição de um Corte inteligente. Consulte [Opções de corte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/image-profiles.html?lang=pt-BR#crop-options).
 
 ### Novos recursos na visualização de ativos {#assets-view-features}
 
@@ -128,7 +128,7 @@ A visualização de arquivos agora permite [adicionar componentes de propriedade
 
 * [Métodos de autenticação aprimorados para o Modelo de Dados de Formulário](/help/forms/configure-data-sources.md): experimente maior segurança com a introdução da autenticação baseada em Credenciais de Cliente para conectar o AEM Forms a fontes de dados compatíveis. Esse aprimoramento elimina a necessidade de representação ou logon de usuário, reforçando a proteção de seus dados.
 
-* [Forms adaptável com seções que podem ser repetidas](/help/forms/create-forms-repeatable-sections.md): agora você pode criar componentes de [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) e [Guias horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) em um Formulário adaptável baseado em Componentes principais para criar seções que podem ser repetidas.
+* [Forms adaptável com seções que podem ser repetidas](/help/forms/create-forms-repeatable-sections.md): agora você pode criar componentes de [Acordeão](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html?lang=pt-BR), [Assistente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html?lang=pt-br), [Painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) e [Guias horizontais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html?lang=pt-br) em um Formulário adaptável baseado em Componentes principais para criar seções que podem ser repetidas.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 

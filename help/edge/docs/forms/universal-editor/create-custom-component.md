@@ -104,7 +104,7 @@ O arquivo `_range.json`, após adicionar a definição do componente, é o segui
 
 >[!NOTE]
 >
-> Todos os componentes relacionados ao formulário seguem a mesma abordagem que o Sites ao adicionar blocos ao Universal Editor. Consulte o artigo [Criação de blocos instrumentados para uso com o Editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obter mais informações.
+> Todos os componentes relacionados ao formulário seguem a mesma abordagem que o Sites ao adicionar blocos ao Universal Editor. Consulte o artigo [Criação de blocos instrumentados para uso com o Editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obter mais informações.
 
 ### 2. Definir as propriedades do componente personalizado para criação
 
@@ -161,7 +161,7 @@ O componente personalizado inclui um modelo de componente que especifica quais p
 
    >[!NOTE]
    >
-   > Para adicionar um novo campo à caixa de diálogo **Propriedade** de um componente personalizado, siga o [esquema definido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
+   > Para adicionar um novo campo à caixa de diálogo **Propriedade** de um componente personalizado, siga o [esquema definido](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
 
    Você também pode [adicionar propriedades personalizadas](#adding-custom-properties-for-your-custom-component) a um componente personalizado para estender sua funcionalidade.
 

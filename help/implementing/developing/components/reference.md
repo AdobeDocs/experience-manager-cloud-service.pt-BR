@@ -65,8 +65,8 @@ Esta filosofia é suportada pelo [HTL](https://experienceleague.adobe.com/docs/e
 
 Essa lógica (opcional) pode ser implementada de diferentes maneiras e é invocada do HTL com comandos específicos:
 
-* Usando Java - [A API de uso Java do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html) permite que um arquivo de HTL acesse métodos de ajuda em uma classe de Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
-* Usando o JavaScript - [A API de uso do HTL JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html) permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript. Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
+* Usando Java - [A API de uso Java do HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=pt-BR) permite que um arquivo de HTL acesse métodos de ajuda em uma classe de Java personalizada. Isso permite usar o código Java para implementar a lógica de seleção e configuração do conteúdo do componente.
+* Usando o JavaScript - [A API de uso do HTL JavaScript](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=pt-BR) permite que um arquivo HTL acesse o código de ajuda gravado no JavaScript. Isso permite usar o código JavaScript para implementar a lógica de seleção e configuração do conteúdo do componente.
 * Uso de bibliotecas do lado do cliente - sites modernos dependem muito do processamento do lado do cliente orientado por código JavaScript e CSS complexo. Consulte o documento [Usando Bibliotecas do Lado do Cliente no AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md) para obter mais informações.
 
 ## Estrutura do componente {#structure}

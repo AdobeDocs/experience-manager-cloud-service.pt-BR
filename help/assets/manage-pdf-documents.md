@@ -84,7 +84,7 @@ O visualizador nativo da PDF Doc Cloud tem os seguintes componentes no AEM Asset
 
 O Adobe Experience Manager Assets permite visualizar um documento do PDF com várias páginas. Para visualizar várias páginas de um documento do PDF, considere as seguintes etapas:
 
-1. Siga as etapas para [carregar ativos no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
+1. Siga as etapas para [carregar ativos no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=pt-BR).
 1. Procure o documento do PDF que você deseja carregar e visualizar.
 1. Abra o documento.
 1. O visualizador de documentos do PDF é carregado por padrão. Você também pode selecionar a representação do PDF no painel de representação.
@@ -163,7 +163,7 @@ Além dos documentos do PDF, você também pode visualizar várias páginas de d
 
 Para a visualização de várias páginas de outros formatos de documento compatíveis, execute as seguintes etapas:
 
-1. Siga as etapas para [carregar ativos no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=en).
+1. Siga as etapas para [carregar ativos no AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/add-assets.html?lang=pt-BR).
 1. Procure o documento que você deseja carregar e visualizar.
 1. Abra o documento.
 1. Selecione PDF na seção estática do painel esquerdo. O painel direito mostra a pré-visualização de várias páginas de um ativo. Selecione miniatura, no painel esquerdo, para escolher a página que deseja visualizar.

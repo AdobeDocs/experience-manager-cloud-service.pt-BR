@@ -60,7 +60,7 @@ Os grupos de usuários permitem associar diferentes conjuntos de revisores de en
 Antes de executar as etapas a seguir, consulte [Pré-requisito](adding-reviewers-form.md#prerequisite).
 
 Para criar um grupo e adicionar membros a ele, navegue até **Ferramentas** > **Operações** > **Segurança** > **Grupos**.
-Para obter mais informações, consulte [Serviços e Administração de Usuários](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html).
+Para obter mais informações, consulte [Serviços e Administração de Usuários](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=pt-BR).
 Adicione o grupo que você cria como membro do grupo de usuários predefinido: **forms-submit-reviewers**. Este grupo de usuários é fornecido com [!DNL AEM Forms] e garante que os usuários sejam adicionados como revisores de envio.
 
 Para associar grupos de usuários a um Formulário adaptável:

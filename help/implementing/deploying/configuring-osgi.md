@@ -48,7 +48,7 @@ seguindo o formato de configuração OSGi `cfg.json`.
 
 >[!NOTE]
 >
->As configurações de OSGi não são armazenadas em /apps como instâncias típicas do AEM na nuvem. Elas são armazenadas em um local externo. Faça check-in do Cloud Manager [Developer Console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) para ver as configurações de OSGi.
+>As configurações de OSGi não são armazenadas em /apps como instâncias típicas do AEM na nuvem. Elas são armazenadas em um local externo. Faça check-in do Cloud Manager [Developer Console](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console#configurations) para ver as configurações de OSGi.
 
 ## Resolução do modo de execução {#runmode-resolution}
 
@@ -84,7 +84,7 @@ Os modos de execução do AEM as a Cloud Service são bem definidos com base no 
 
 Os valores de configuração OSGi especificados pelo modo de execução podem ser verificados por:
 
-1. Abrindo o AEM como um ambiente Cloud Service no [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html)
+1. Abrindo o AEM como um ambiente Cloud Service no [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=pt-BR)
 1. Selecionando a(s) camada(s) de serviço a ser(em) inspecionada(s), usando a lista suspensa __Pod__
 1. Selecionando a guia __Status__
 1. Selecionando __Configurações__ da lista suspensa __Despejo de Status__

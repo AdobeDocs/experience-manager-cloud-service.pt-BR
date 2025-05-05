@@ -17,11 +17,11 @@ As APIs mais recentes do AEM as a Cloud Service seguem a especificação da Open
 
 >[!NOTE]
 >
-> Um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) é um recurso recomendado para aprender a configurar e chamar as APIs do AEM baseadas em OpenAPI.
+> Um [tutorial completo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) é um recurso recomendado para aprender a configurar e chamar as APIs do AEM baseadas em OpenAPI.
 
 Para endpoints que exigem autenticação, a abordagem de autenticação é diferente com base no endpoint, mas pode usar OAuth de servidor para servidor, OAuth Web App ou OAuth Single Page App (SPA). As credenciais são configuradas por meio de projetos em [Adobe Developer Console](https://developer.adobe.com/developer-console/).
 
-Casos de uso comuns de API envolvem integrações com sistemas, como um CRM ou PIM, em que as APIs do AEM são chamadas para recuperar ou persistir dados. Como parte da implementação da integração, os aplicativos podem assinar [eventos emitidos pela AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-eventing/overview), o que pode acionar a lógica de negócios no Adobe App Builder ou em outra infraestrutura.
+Casos de uso comuns de API envolvem integrações com sistemas, como um CRM ou PIM, em que as APIs do AEM são chamadas para recuperar ou persistir dados. Como parte da implementação da integração, os aplicativos podem assinar [eventos emitidos pela AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-eventing/overview), o que pode acionar a lógica de negócios no Adobe App Builder ou em outra infraestrutura.
 
 Este documento serve como uma visão geral, mas uma documentação mais detalhada está disponível nas seguintes páginas:
 
@@ -29,11 +29,11 @@ Este documento serve como uma visão geral, mas uma documentação mais detalhad
 
 * [Guias](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/) informativos, incluindo [conceitos e sintaxe de API](https://developer.adobe.com/experience-cloud/experience-manager-apis/guides/how-to/).
 
-* Um tutorial de nível superior descrevendo [abordagens de autenticação](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) e outros conceitos.
+* Um tutorial de nível superior descrevendo [abordagens de autenticação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/openapis/overview#authentication-support) e outros conceitos.
 
-* Um tutorial em vídeo focado em [como configurar as APIs baseadas em OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+* Um tutorial em vídeo focado em [como configurar as APIs baseadas em OpenAPI](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
-* [Tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) sobre a configuração e a chamada de OpenAPIs com a estratégia de autenticação de servidor para servidor. Tutoriais semelhantes também podem ser encontrados para as abordagens de autenticação de Aplicativo de página única e Aplicativo da Web.
+* [Tutorial completo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) sobre a configuração e a chamada de OpenAPIs com a estratégia de autenticação de servidor para servidor. Tutoriais semelhantes também podem ser encontrados para as abordagens de autenticação de Aplicativo de página única e Aplicativo da Web.
 
 ## Configuração do acesso à API {#configuring-api-access}
 
@@ -45,7 +45,7 @@ Algumas APIs do AEM baseadas em OpenAPI precisam de autenticação, o que requer
 1. Configure o projeto ADC. Isso gera credenciais que serão usadas posteriormente para trocar por um token de portador ao invocar a API.
 1. Configure a instância do AEM para habilitar a comunicação do Projeto ADC. Isso envolve o registro da ID do cliente com o ambiente configurando e implantando um arquivo YAML, conforme descrito na seção [Registrando uma ID do cliente](#registering-a-client-id) abaixo.
 
-Para obter instruções detalhadas, consulte o [Tutorial Configurar APIs baseadas em OpenAPI](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
+Para obter instruções detalhadas, consulte o [Tutorial Configurar APIs baseadas em OpenAPI](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/openapis/setup).
 
 ### Registrar uma ID do cliente {#registering-a-client-id}
 

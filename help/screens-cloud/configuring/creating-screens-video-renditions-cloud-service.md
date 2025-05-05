@@ -27,7 +27,7 @@ Siga as etapas abaixo para criar representações de vídeo no Screens as a Clou
 1. Navegue até o canal no Provedor de conteúdo do Screens.
 
    >[!NOTE]
-   >Consulte [Usando o Provedor de Conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html#screens-content-provider) para obter mais detalhes.
+   >Consulte [Usando o Provedor de Conteúdo do Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=pt-BR#screens-content-provider) para obter mais detalhes.
 
 1. Clique na seção Ferramentas na barra de navegação à esquerda, clique em **Assets** e em **Processando Perfis**.
 

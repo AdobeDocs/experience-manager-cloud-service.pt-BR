@@ -76,7 +76,7 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.1.0 é 14 
 
 ### Novidades do [!DNL Code Refactoring Tools] {#what-is-new-crt}
 
-* Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui correções de erros para o AEM Dispatcher Converter e o Repository Modernizer, além de oferecer suporte a um novo utilitário: Conversor de índice. Consulte [Experiência unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html#benefits) para saber mais sobre este plug-in.
+* Nova versão do plug-in AIO-CLI lançada. A versão mais recente deste plug-in inclui correções de erros para o AEM Dispatcher Converter e o Repository Modernizer, além de oferecer suporte a um novo utilitário: Conversor de índice. Consulte [Experiência unificada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=pt-BR#benefits) para saber mais sobre este plug-in.
 
 * O Conversor de índice é um utilitário que pode ser usado para transformar as Definições de índice OAK personalizadas de um cliente em Definições de índice OAK compatíveis com AEM as a Cloud Service. Consulte [Conversor de Índice](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) para obter mais detalhes.
 
@@ -90,7 +90,7 @@ A data de lançamento do Cloud Manager no AEM as a Cloud Service 2021.1.0 é 14 
 
 ### Novidades {#what-is-new-foundation}
 
-* Chamadas de API autenticadas de servidor para servidor - gere os tokens de acesso apropriados para fazer chamadas de API autenticadas de servidor para servidor entre os aplicativos externos e os ambientes do AEM as a Cloud Service. Saiba mais lendo [a documentação](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultando o [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html#authentication).
+* Chamadas de API autenticadas de servidor para servidor - gere os tokens de acesso apropriados para fazer chamadas de API autenticadas de servidor para servidor entre os aplicativos externos e os ambientes do AEM as a Cloud Service. Saiba mais lendo [a documentação](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultando o [tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=pt-BR#authentication).
 
 ### Analisadores de build do SDK {#sdk-build-analyzers}
 
@@ -111,6 +111,6 @@ A data de lançamento da ferramenta de transferência de conteúdo v1.2.2 é 1º
 
 ### Novidades do [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
-* Novo recurso e interface adicionados à Ferramenta de transferência de conteúdo - Ferramenta de mapeamento do usuário. Esse recurso mapeia automaticamente usuários e grupos existentes para suas IDs de sistema do Adobe Identity Management como parte da atividade de migração de conteúdo. Consulte [Usar a ferramenta de Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html) para obter mais detalhes.
+* Novo recurso e interface adicionados à Ferramenta de transferência de conteúdo - Ferramenta de mapeamento do usuário. Esse recurso mapeia automaticamente usuários e grupos existentes para suas IDs de sistema do Adobe Identity Management como parte da atividade de migração de conteúdo. Consulte [Usar a ferramenta de Mapeamento de usuários](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=pt-BR) para obter mais detalhes.
 * A Ferramenta de transferência de conteúdo agora migra todos os grupos e usuários referenciados no conjunto de migração, incluindo filhos.
 * Os usuários podem selecionar determinados caminhos em `/etc` ao criar conjuntos de migração.

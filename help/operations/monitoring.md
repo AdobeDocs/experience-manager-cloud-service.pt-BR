@@ -37,7 +37,7 @@ Com o Monitoramento personalizado, os clientes podem, opcionalmente, fornecer at
 
 >[!NOTE]
 >
-> Essa funcionalidade só é oferecida para ambientes de produção e clientes com o [Suporte na nuvem avançado](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons). Em caso de dúvidas, entre em contato com a equipe de conta do Adobe.
+> Essa funcionalidade só é oferecida para ambientes de produção e clientes com o [Suporte na nuvem avançado](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html?lang=pt-BR#support-add-ons). Em caso de dúvidas, entre em contato com a equipe de conta do Adobe.
 
 ## Monitoramento do módulo interno {#module-monitoring}
 
@@ -55,10 +55,10 @@ Verificações adicionais são adicionadas aos ambientes provisionados para o Fo
 
 ## Observabilidade do cliente {#customer-observability}
 
-Os clientes podem usar o conjunto [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html) que fornece dados de desempenho em tempo real coletados e mapeados para análise e solução de problemas. Usando o conjunto de monitoramento, os clientes podem observar diretamente várias métricas, como: métricas de desempenho JVM, tempo de transação para Java™, chamadas externas em segundo plano e chamadas de banco de dados.
+Os clientes podem usar o conjunto [New Relic Application Performance Monitoring](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=pt-BR) que fornece dados de desempenho em tempo real coletados e mapeados para análise e solução de problemas. Usando o conjunto de monitoramento, os clientes podem observar diretamente várias métricas, como: métricas de desempenho JVM, tempo de transação para Java™, chamadas externas em segundo plano e chamadas de banco de dados.
 
 ## Recursos adicionais {#resources}
 
-* [Monitoramento do Desempenho de Aplicativos do New Relic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html)
-* [Logs para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html)
-* [Monitoramento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html)
+* [Monitoramento do Desempenho de Aplicativos do New Relic](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/user-access-new-relic.html?lang=pt-BR)
+* [Logs para AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/logging.html?lang=pt-BR)
+* [Monitoramento de ambientes](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/monitoring-environments.html?lang=pt-BR)

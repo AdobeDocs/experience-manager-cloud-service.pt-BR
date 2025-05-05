@@ -88,7 +88,7 @@ Assista ao vídeo de Visão geral da versão de outubro de 2023 que exibe um res
 
 [Filtre o tráfego na CDN Gerenciada por Adobe](/help/security/traffic-filter-rules-including-waf.md) declarando regras que correspondam ao tráfego do site por propriedades, incluindo URL, endereço IP e agente de usuário — ou defina limites de taxa de tráfego personalizados para proteger contra ataques de DoS. Os clientes também podem licenciar um conjunto de regras avançadas do Web Application Firewall (WAF) para obter proteção extra contra ameaças sofisticadas de sites.
 
-Recomendamos que você se familiarize com as regras de filtro de tráfego [experimentando um tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html)! Ele orienta você na configuração de um novo Pipeline de configuração do Cloud Manager, declarando regras em um arquivo de configuração e analisando logs de CDN para tráfego mal-intencionado.
+Recomendamos que você se familiarize com as regras de filtro de tráfego [experimentando um tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview.html?lang=pt-BR)! Ele orienta você na configuração de um novo Pipeline de configuração do Cloud Manager, declarando regras em um arquivo de configuração e analisando logs de CDN para tráfego mal-intencionado.
 
 As regras de filtro de tráfego estão disponíveis agora em ambientes de desenvolvimento, com uma implantação gradual para ambientes de preparo e produção em novembro. Você pode solicitar acesso antecipado no estágio e na produção enviando um email para **aemcs-waf-adopter@adobe.com**.
 

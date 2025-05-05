@@ -21,7 +21,7 @@ ht-degree: 85%
 
 >[!TIP]
 >
->Consulte [Configuração do acesso ao AEM para administradores](https://experienceleague.adobe.com/?recommended=ExperienceManager-A-1-2020.1.aem&amp;lang=pt-BR) para obter uma introdução sobre como os usuários se autenticam usando o Adobe IMS para o AEM as a Cloud Service. Saiba também como usuários do Adobe IMS, grupos de usuários e perfis de produtos são usados para controlar o acesso ao AEM e seus recursos e funcionalidades. Adobe ID necessário.
+>Consulte [Configuração do acesso ao AEM para administradores](https://experienceleague.adobe.com/?lang=pt-br&recommended=ExperienceManager-A-1-2020.1.aem&amp;lang=pt-BR) para obter uma introdução sobre como os usuários se autenticam usando o Adobe IMS para o AEM as a Cloud Service. Saiba também como usuários do Adobe IMS, grupos de usuários e perfis de produtos são usados para controlar o acesso ao AEM e seus recursos e funcionalidades. Adobe ID necessário.
 
 ## Destaques principais {#key-highlights}
 
@@ -217,7 +217,7 @@ Para acessar o Cloud Manager ou os ambientes do AEM as a Cloud Service, é neces
 Consulte Definições de função se quiser saber mais sobre funções para usuários que controlam a disponibilidade de recursos específicos no Cloud Manager.
 
 >[!NOTE]
->O Cloud Manager tem funções pré-configuradas com permissões apropriadas. Para saber mais sobre cada uma das funções com permissões específicas, tarefas pré-configuradas ou permissões associadas a cada função, consulte [Permissões baseadas em funções](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions).
+>O Cloud Manager tem funções pré-configuradas com permissões apropriadas. Para saber mais sobre cada uma das funções com permissões específicas, tarefas pré-configuradas ou permissões associadas a cada função, consulte [Permissões baseadas em funções](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions).
 
 **Etapas para adicionar um usuário**
 

@@ -103,4 +103,4 @@ Siga as etapas abaixo para excluir seu projeto:
 
 ## O que vem a seguir {#whats-next}
 
-Depois de saber como fazer logon no Cloud Acceleration Manager e criar um projeto, você estará pronto para revisar a próxima etapa da [Fase de preparação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html).
+Depois de saber como fazer logon no Cloud Acceleration Manager e criar um projeto, você estará pronto para revisar a próxima etapa da [Fase de preparação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=pt-BR).

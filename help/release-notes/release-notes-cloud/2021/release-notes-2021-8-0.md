@@ -62,11 +62,11 @@ Assista ao vídeo [Visão geral da versão de agosto de 2021](https://video.tv.a
 
 ### Novidades do [!DNL Forms] {#what-is-new-forms}
 
-* O serviço Automated forms conversion pode [converter PDF forms em italiano e português](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) para o Adaptive Forms.
+* O serviço Automated forms conversion pode [converter PDF forms em italiano e português](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=pt-BR&#language-specific-meta-model) para o Adaptive Forms.
 
 * **Documento de Registro baseado em acroforma**: o AEM Forms as a Cloud Service suporta o uso do [PDF de Formulário Adobe Acrobat (PDF de acroforma)](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-br) como um modelo para Documento de Registro além do modelo de formulário baseado em XFA.
 
-* **Conector do armazenamento de dados do Microsoft® Azure**: agora é possível [conectar o Modelo de dados do formulário ao Armazenamento do Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft® Azure como um BLOB.
+* **Conector do armazenamento de dados do Microsoft® Azure**: agora é possível [conectar o Modelo de dados do formulário ao Armazenamento do Microsoft® Azure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-azure-storage.html?lang=pt-BR). Ele permite recuperar e armazenar dados de formulário adaptáveis para o Armazenamento do Microsoft® Azure como um BLOB.
 
 ### Novos recursos disponíveis no canal de pré-lançamento do [!DNL Forms] {#prerelease-features-forms}
 

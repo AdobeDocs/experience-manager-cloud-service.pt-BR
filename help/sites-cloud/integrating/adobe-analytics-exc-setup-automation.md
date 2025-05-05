@@ -51,7 +51,7 @@ O ambiente agora deve estar pronto para a automação de configuração da Exper
 1. Selecione o botão **Integrar o Analytics**.
 1. Na caixa de diálogo resultante, forneça um nome para a **ID do conjunto de relatórios**.
 
-   Esta cadeia de caracteres é usada para criar um [ID do Conjunto de Relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html) no Adobe Analytics como o armazenamento de dados para os dados analíticos do site AEM selecionado. A string fornecida tem anexada os identificadores de ambiente e de nível para garantir a exclusividade.
+   Esta cadeia de caracteres é usada para criar um [ID do Conjunto de Relatórios](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=pt-BR) no Adobe Analytics como o armazenamento de dados para os dados analíticos do site AEM selecionado. A string fornecida tem anexada os identificadores de ambiente e de nível para garantir a exclusividade.
 
 1. Atualize a página e o painel e selecione **Verificar Status da Integração** para verificar o status da automação.
 

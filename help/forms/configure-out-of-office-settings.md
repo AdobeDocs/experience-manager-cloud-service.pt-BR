@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 Se você planeja ficar fora do escritório, é possível especificar o que acontece com os itens atribuídos a você nesse período.
