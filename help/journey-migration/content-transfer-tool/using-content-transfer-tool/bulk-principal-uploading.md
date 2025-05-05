@@ -1,20 +1,20 @@
 ---
 title: Upload em massa de entidades de segurança para o IMS após o uso da CTT
-description: Visão geral dos arquivos de Upload em massa para grupos e usuários e como usá-los no Admin Console para criar grupos e usuários no IMS.
+description: Visão geral dos arquivos de upload em massa para grupos e usuários e como usá-los no Admin Console para criar grupos e usuários no IMS.
 exl-id: 43ebd6f1-1492-461a-8d9b-2b55dcde9052
 source-git-commit: b9c739a03b358de7c011e50ddbdd609c90f86b6f
 workflow-type: tm+mt
 source-wordcount: '2384'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
-# Upload em massa de principais para IMS após o uso de CTT {#bulk-principal-uploading}
+# Upload em massa de principais para IMS após o uso da CTT {#bulk-principal-uploading}
 
 >[!CONTEXTUALHELP]
 >id="bulk-principal-uploading"
 >title="Upload em massa de principais"
->abstract="Visão geral dos arquivos de Upload em massa para grupos e usuários e como usá-los no Admin Console para criar grupos e usuários no IMS."
+>abstract="Visão geral dos arquivos de upload em massa para grupos e usuários e como usá-los no Admin Console para criar grupos e usuários no IMS."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/journey/admin-console" text="Documentação do Admin Console do AEM"
 >additional-url="https://adminconsole.adobe.com/" text="Admin Console do AEM"
 
