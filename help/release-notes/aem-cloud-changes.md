@@ -13,13 +13,13 @@ ht-degree: 45%
 
 # Alterações importantes no Adobe Experience Manager as a Cloud Service {#notable-changes-aem-cloud}
 
-O Cloud Service Adobe Experience Manager (AEM) traz muitos novos recursos e possibilidades para gerenciar seus projetos do AEM. No entanto, existem algumas diferenças entre o AEM Sites no local ou no Adobe Managed Service, em comparação ao AEM Cloud Service. Este documento destaca as diferenças importantes.
+O Adobe Experience Manager (AEM) Cloud Service oferece muitos novos recursos e possibilidades para gerenciar os projetos do AEM. No entanto, existem algumas diferenças entre o AEM Sites no local ou no Adobe Managed Service, em comparação ao AEM Cloud Service. Este documento destaca as diferenças importantes.
 
 >[!CONTEXTUALHELP]
 >id="aem_cloud_notable_changes"
 >title="Alterações importantes no AEM as a Cloud Service"
 >abstract="Nesta guia, é possível acessar conteúdos que ajudarão você a entender as diferenças entre o uso local do AEM, e por meio do Adobe Managed Services, em comparação com o AEM as a Cloud Service."
->additional-url="https://video.tv.adobe.com/v/346178?captions=por_br" text="Evolução do AEM as a Cloud Service"
+>additional-url="https://video.tv.adobe.com/v/330543" text="Evolução do AEM as a Cloud Service"
 
 
 >[!NOTE]
@@ -81,7 +81,7 @@ Além das alterações na pasta `/home` no nível de publicação, alterações 
 
 ## Modos de execução personalizados não são permitidos {#custom-runmodes}
 
-Modos de execução adicionais ou personalizados não são possíveis no AEM Cloud Service. Para obter uma lista de modos de execução fornecidos prontos para o AEM Cloud Service, consulte [Implantação no AEM as a Cloud Service](/help/implementing/deploying/overview.md#runmodes).
+Modos de execução adicionais ou personalizados não são possíveis no AEM Cloud Service. Para obter uma lista de modos de execução fornecidos prontos para o AEM Cloud Service, consulte [Implantação do AEM as a Cloud Service](/help/implementing/deploying/overview.md#runmodes).
 
 ## Remoção dos agentes de replicação e alterações relacionadas {#replication-agents}
 
@@ -89,7 +89,7 @@ No AEM Cloud Service, o conteúdo é publicado usando a [Distribuição de conte
 
 * Fluxos de trabalho personalizados que enviam conteúdo para agentes de replicação dos servidores de visualização, por exemplo.
 * Personalização dos agentes de replicação para transformar conteúdo.
-* Usar a Replicação reversa para devolver o conteúdo do Publish ao autor.
+* Usar a Replicação reversa para devolver o conteúdo da Publicação para o Autor.
 
 Além disso, os botões Pausar e Desativar são removidos do console de administração do agente de replicação.
 
@@ -99,7 +99,7 @@ A interface clássica do usuário não está mais disponível no AEM Cloud Servi
 
 ## Entrega do lado da publicação {#publish-side-delivery}
 
-A aceleração HTTP, incluindo o CDN e o gerenciamento de tráfego para os serviços do Author e do Publish, é fornecida por padrão no AEM Cloud Service.
+A aceleração HTTP, incluindo o CDN e o gerenciamento de tráfego para os serviços de Autor e Publicação, é fornecida por padrão no AEM Cloud Service.
 
 Para projetos em transição do AMS ou de uma instalação local, a Adobe recomenda usar a CDN integrada, pois os recursos do AEM Cloud Service são otimizados para a CDN fornecida.
 
