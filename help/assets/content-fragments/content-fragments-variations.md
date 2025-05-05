@@ -5,10 +5,10 @@ exl-id: af05aae6-d535-4007-ba81-7f41213ff152
 feature: Content Fragments
 role: User
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '2518'
-ht-degree: 51%
+source-wordcount: '2530'
+ht-degree: 50%
 
 ---
 
@@ -20,7 +20,11 @@ ht-degree: 51%
 >
 >Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
 >
->Há dois editores para a criação de fragmentos de conteúdo; embora a funcionalidade básica seja a mesma, há algumas diferenças. Esta seção abrange o editor original, acessado principalmente do console **Assets**. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes do novo editor (acessado principalmente do console **Fragmentos de conteúdo**).
+>Existem dois editores para a criação de fragmentos de conteúdo: o novo editor e o editor original. O novo editor é o padrão. Embora a funcionalidade básica seja a mesma, há algumas diferenças.
+>
+>Esta seção aborda o editor original. Isto é [aberto pelo novo editor](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor).
+>
+>Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes completos sobre o novo editor.
 
 Na guia **Variações**, é possível fazer o seguinte:
 
@@ -47,7 +51,7 @@ Executar uma variedade de outras ações, dependendo do tipo de dados que está 
 
 ## Criação de conteúdo {#authoring-your-content}
 
-Ao abrir o fragmento de conteúdo para edição, a guia **Variações** é aberta por padrão. Aqui é possível criar conteúdo para o principal ou quaisquer variações que você possua. O fragmento estruturado contém campos de vários tipos de dados que foram definidos no modelo de conteúdo.
+Ao abrir o fragmento de conteúdo para edição no editor original, a guia **Variações** é aberta por padrão. Aqui é possível criar conteúdo para o principal ou quaisquer variações que você possua. O fragmento estruturado contém campos de vários tipos de dados que foram definidos no modelo de conteúdo.
 
 Por exemplo:
 

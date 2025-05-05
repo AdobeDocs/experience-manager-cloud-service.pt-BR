@@ -5,10 +5,10 @@ exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 feature: Content Fragments
 role: User, Admin
 solution: Experience Manager Sites
-source-git-commit: 715283a9b7c7930ba11063475dbc19f71baacb05
+source-git-commit: 74e2f015d6bcb36505c2dc6471bb68d69d98db99
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 65%
+source-wordcount: '1925'
+ht-degree: 63%
 
 ---
 
@@ -37,11 +37,19 @@ O [Editor de fragmentos de conteúdo](#opening-the-fragment-editor) fornece vár
 
 >[!NOTE]
 >
->Os Fragmentos de conteúdo são um recurso do Sites, mas são armazenados como **Assets**.
+>Os fragmentos de conteúdo são um recurso do **Sites**, mas são armazenados como **Assets**.
 >
->Agora eles são gerenciados principalmente com o console **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, embora ainda possam ser gerenciados no console **Assets**. Esta seção aborda o gerenciamento do console **Assets**.
+>Eles são gerenciados principalmente com o console **[Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md#content-fragments-console)**, embora ainda possam ser gerenciados no console **[Assets](/help/assets/content-fragments/content-fragments-managing.md)**.
 >
->Há dois editores para a criação de fragmentos de conteúdo; embora a funcionalidade básica seja a mesma, há algumas diferenças. Esta seção abrange o editor original, acessado principalmente do console **Assets**. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes do novo editor (acessado principalmente do console **Fragmentos de conteúdo**). Ambos os editores têm um botão de alternância na barra de ferramentas superior para fornecer acesso rápido ao outro editor.
+>Existem dois editores para a criação de fragmentos de conteúdo: o novo editor e o editor original. O novo editor é o padrão. Embora a funcionalidade básica seja a mesma, há algumas diferenças.
+>
+>Esta seção aborda o editor original.
+>
+>O editor padrão de [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md) é o novo editor, acessado do console **Fragmentos de conteúdo** e do console **Assets**. Consulte a documentação do Sites, [Fragmentos de conteúdo - Criação](/help/sites-cloud/administering/content-fragments/authoring.md), para obter detalhes sobre o novo editor.
+>
+>Para usar o [editor original](/help/assets/content-fragments/content-fragments-variations.md), abra o novo editor e desative a opção **Novo Editor**.
+>
+>Ambos os editores têm um botão de alternância na barra de ferramentas superior para fornecer acesso rápido ao outro editor.
 
 ## Criação de fragmentos de conteúdo {#creating-content-fragments}
 
@@ -132,23 +140,23 @@ Selecione o fragmento para revelar a barra de ferramentas com ações aplicávei
 
 ## Abrir o editor de fragmentos {#opening-the-fragment-editor}
 
-Para abrir o fragmento para edição:
+Para abrir o fragmento para edição no editor original:
 
 >[!CAUTION]
 >
 >Para editar um fragmento de conteúdo, você precisa [das permissões apropriadas](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Entre em contato com o(a) administrador(a) do sistema em caso de problemas.
 
-1. Use o console **Assets** para navegar até o local do fragmento de conteúdo.
-1. Abra o fragmento para edição ao:
+1. Navegue até o local do fragmento de conteúdo.
 
-   * Clicar/tocar no link do fragmento ou fragmento (depende da exibição do console).
-   * Selecionando o fragmento e, em seguida, **Editar** na barra de ferramentas.
+1. Abra o fragmento para edição.
 
-1. O editor de fragmento é aberto. Faça as alterações necessárias:
+1. O fragmento é aberto no novo editor. Desative a opção **Novo Editor** (canto superior direito) para abrir o editor original:
 
    ![Editor de fragmento](assets/cfm-managing-03.png)
 
-1. Depois de fazer as alterações, clique em **Salvar**, **Salvar e fechar** ou **Fechar**, conforme necessário.
+1. Faça as alterações necessárias.
+
+1. Quando estiver pronto, use **Salvar**, **Salvar e fechar** ou **Fechar**, conforme necessário.
 
    >[!NOTE]
    >
