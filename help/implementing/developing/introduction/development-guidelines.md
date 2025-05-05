@@ -17,7 +17,7 @@ ht-degree: 4%
 >id="development_guidelines"
 >title="Diretrizes de desenvolvimento do AEM as a Cloud Service"
 >abstract="Conheça as diretrizes para desenvolvimento no AEM as a Cloud Service e as principais diferenças em relação ao AEM local e ao AEM no AMS."
->additional-url="https://video.tv.adobe.com/v/330555/" text="Demonstração da estrutura do pacote"
+>additional-url="https://video.tv.adobe.com/v/345906?captions=por_br" text="Demonstração da estrutura do pacote"
 
 Este documento apresenta diretrizes para desenvolvimento no AEM as a Cloud Service e sobre maneiras importantes de diferir do AEM no local e do AEM no AMS.
 
