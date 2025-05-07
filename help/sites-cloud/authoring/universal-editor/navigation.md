@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1729'
 ht-degree: 25%
 
 ---
@@ -219,9 +219,9 @@ Por exemplo, a capacidade de desfazer a publicação de uma página (ou seja, re
 
 O Universal Editor oferece uma experiência de criação personalizável e extensível. Se você vir botões adicionais na barra de ferramentas, o Editor universal foi estendido.
 
-* Para obter detalhes sobre como uma extensão individual funciona, [consulte a documentação de criação do Editor Universal.](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
-* Para obter detalhes sobre as possibilidades de extensão, consulte a [Extensão do Editor Universal](/help/implementing/universal-editor/extending.md).
-* Para obter detalhes sobre como instalar uma extensão individual, consulte a [documentação do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Para obter detalhes sobre como uma extensão individual funciona, [consulte a documentação de criação do Editor Universal.](/help/sites-cloud/authoring/universal-editor/authoring.md#toolbar-options)
+* Para obter detalhes sobre as possibilidades de extensão, consulte a [Extensão do Editor Universal.](/help/implementing/universal-editor/extending.md)
+* Para obter detalhes sobre como instalar uma extensão individual, consulte a [documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ### O editor {#editor}
 
@@ -236,6 +236,8 @@ Se o editor estiver no [modo de visualização](#preview-mode), o conteúdo ser�
 O painel de propriedades está sempre presente no lado direito do editor. Dependendo do modo, podem ser exibidos detalhes de um componente selecionado no conteúdo ou na hierarquia do conteúdo da página.
 
 ![O painel de propriedades](assets/properties-rail.png)
+
+Dependendo da configuração do seu programa, ele também pode apresentar [recursos adicionais que foram habilitados como extensões pelo seu administrador.](#additional-properties-panel-buttons)
 
 #### Modo de propriedades {#properties-mode}
 
@@ -315,12 +317,13 @@ Tocar ou clicar no botão Excluir [exclui o componente](/help/sites-cloud/author
 >
 >Use a tecla de atalho `Shift+Backspace` para excluir um componente selecionado de um contêiner.
 
-## Recursos adicionais {#additional-features}
+#### Botões adicionais {#additional-properties-panel-buttons}
 
-O Editor universal oferece uma experiência de criação personalizável e extensível. Se você vir botões ou opções adicionais no painel de propriedades ou na barra de ferramentas, o Editor universal foi estendido.
+O Universal Editor oferece uma experiência de criação personalizável e extensível. Se você vir botões adicionais no painel de propriedades, o Editor universal foi estendido.
 
-* Para obter detalhes sobre as possibilidades de extensão, consulte o [Personalizando e estendendo o Editor Universal](/help/implementing/universal-editor/customizing.md).
-* Para obter detalhes sobre como uma extensão individual funciona, consulte a [documentação do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Para obter detalhes sobre como uma extensão individual funciona, [consulte a documentação de criação do Editor Universal.](/help/sites-cloud/authoring/universal-editor/authoring.md#properties-panel-options)
+* Para obter detalhes sobre as possibilidades de extensão, consulte a [Extensão do Editor Universal.](/help/implementing/universal-editor/extending.md)
+* Para obter detalhes sobre como instalar uma extensão individual, consulte a [documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/)
 
 ## Próximas etapas {#next-steps}
 

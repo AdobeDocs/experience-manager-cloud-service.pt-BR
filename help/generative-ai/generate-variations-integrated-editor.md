@@ -4,9 +4,9 @@ description: Saiba mais sobre como Gerar variações, acessível a partir de vá
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: 056ad9a00ad725d2c10a17a5feff06126eb3c30b
+source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
 workflow-type: tm+mt
-source-wordcount: '1372'
+source-wordcount: '1401'
 ht-degree: 1%
 
 ---
@@ -172,7 +172,7 @@ O gerenciamento de uso depende da ação tomada:
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/aem-cloud-service.html) para obter mais detalhes sobre direitos básicos e entrar em contato com a equipe de conta se desejar adquirir ações mais geradoras.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descrição do produto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obter mais detalhes sobre direitos básicos e entrar em contato com a equipe de conta se desejar adquirir ações mais geradoras.
 
 ## Acessar Gerar Variações {#access-generate-variations}
 
@@ -313,7 +313,10 @@ Para usar a opção Gerar variações no Sidekick (do Edge Delivery Services), i
 
 ### Acesso pelo Editor universal do AEM {#access-aem-universal-editor}
 
-O acesso do [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) foi implementado como uma extensão. Consulte o [Extension Manager no AEM Experience Manager](https://developer.adobe.com/uix/docs/extension-manager/) para obter mais detalhes.
+O acesso do [AEM Universal Editor](/help/sites-cloud/authoring/universal-editor/authoring.md) foi implementado como uma extensão.
+
+* Para obter detalhes sobre como acessar Gerar Variações do Universal Editor, consulte o documento [Criação de Conteúdo com o Universal Editor.](/help/sites-cloud/authoring/universal-editor/authoring.md#generate-variations)
+* Para obter detalhes sobre como habilitar a extensão, consulte o documento [Extension Manager no AEM Experience Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
 ### Acessar o pelo editor de fragmento de conteúdo do AEM {#access-aem-content-fragment-editor}
 
@@ -325,9 +328,9 @@ Para obter mais informações, você também pode ler:
 
 * [Gerar variações GenAI no GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Experimentação do Edge Delivery Services](https://www.aem.live/docs/experimentation)
-* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai)
+* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai#aem)
+   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
 
 ## Histórico da versão {#release-history}
 

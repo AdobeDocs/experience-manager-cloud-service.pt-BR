@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
+source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
 workflow-type: tm+mt
-source-wordcount: '2133'
-ht-degree: 11%
+source-wordcount: '2222'
+ht-degree: 10%
 
 ---
 
@@ -178,14 +178,6 @@ Os componentes são reordenados na árvore de conteúdo e no editor.
 >
 >Os componentes só poderão ser movidos entre contêineres se o [filtro de componente](/help/implementing/universal-editor/filtering.md) dos contêineres de destino permitir o componente selecionado.
 
-### Criar variações usando GenAI com Gerar variações {#generate-variations-ai}
-
-Use as Variações gerativas para aproveitar a IA gerativa para acelerar a criação de conteúdo.
-
-Abra o Editor Universal para localizar o ponto de entrada para Gerar Variações.
-
-Consulte [Gerar variações - Integrado em editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md) para saber mais.
-
 ## Visualização de conteúdo {#previewing-content}
 
 Ao terminar de editar o conteúdo, você geralmente deseja navegar por ele e observar como ele é exibido em outras páginas. No [modo de visualização](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode), é possível clicar em links e navegar pelo conteúdo, como um leitor faria. O conteúdo é renderizado no editor como seria publicado.
@@ -202,8 +194,7 @@ Se a **Extensão MSM (Gerenciamento de vários sites) do AEM** estiver habilitad
 
 Para obter mais detalhes sobre como a herança funciona usando o Editor Universal, consulte [Herança de conteúdo no Editor Universal](/help/sites-cloud/authoring/universal-editor/inheritance.md).
 
-
-## Opções opcionais da barra de ferramentas{#toolbar-options}
+## Recursos opcionais da barra de ferramentas {#toolbar-options}
 
 Recursos adicionais estão disponíveis como extensões para o Universal Editor para ajudá-lo a gerenciar ainda mais suas páginas e conteúdo. [Essas extensões devem ser habilitadas em seu programa por um administrador](/help/implementing/universal-editor/extending.md) para que você possa vê-las como um autor de conteúdo na [barra de ferramentas do Editor Universal.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
 
@@ -305,6 +296,20 @@ A **Extensão de Logon de Desenvolvimento do AEM Universal Editor** é útil par
 Toque ou clique no ícone **Logon do Desenvolvedor** na barra de ferramentas do Editor Universal para fornecer suas credenciais de logon locais para entrar no AEM SDK local.
 
 ![Modal de logon do desenvolvedor](assets/developer-login.png)
+
+Para obter informações sobre como habilitar esta extensão, [consulte a documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+## Recursos opcionais do painel Propriedades {#properties-panel-options}
+
+Recursos adicionais estão disponíveis como extensões para o Universal Editor para ajudar você a gerenciar ainda mais o conteúdo da página. [Essas extensões devem ser habilitadas em seu programa por um administrador](/help/implementing/universal-editor/extending.md) para que você possa vê-las como um autor de conteúdo no [painel de propriedades do Universal Editor.](/help/sites-cloud/authoring/universal-editor/navigation.md#properties-rail)
+
+### Gerar variações {#generate-variations}
+
+A extensão **Gerar variações** permite usar a inteligência artificial geradora (AI) para criar variações para o seu conteúdo diretamente no painel de propriedades.
+
+![Ícone Gerar variações](assets/generate-variations-icon.png)
+
+Toque ou clique no ícone **Gerar Variações** no painel de propriedades do Universal Editor para receber recomendações e criar variações. Consulte o documento [Gerar variações - Integrado em editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md) para obter mais detalhes sobre como funciona a geração de variações.
 
 Para obter informações sobre como habilitar esta extensão, [consulte a documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
 
