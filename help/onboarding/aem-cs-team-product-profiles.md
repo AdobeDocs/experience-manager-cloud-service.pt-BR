@@ -4,10 +4,10 @@ description: Descubra como os perfis de produto e de equipe do AEM as a Cloud Se
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 86bb2e020a003fd418f8b1cf7bdf55987a2eaf3d
+source-git-commit: b9cc5450effb70afcb67725fe38826646d947da9
 workflow-type: tm+mt
-source-wordcount: '2062'
-ht-degree: 24%
+source-wordcount: '2124'
+ht-degree: 23%
 
 ---
 
@@ -143,11 +143,10 @@ A tabela a seguir descreve uma lista dos Perfis de produto possíveis abaixo de 
         <td>Usuários do AEM Assets Collaborator</td>
         <td>
         <ul>
-                <li>Destina-se ao acesso somente leitura ao DAM. Os usuários neste perfil de produto serão membros do grupo "Colaboradores" do AEM criado automaticamente no AEM.
+                <li>Trabalhe com ativos do Experience Manager por meio de integrações da Assets disponíveis para sua organização em outros produtos da Adobe e aplicativos que não sejam da Adobe.
                 </li>
-                <li>
-                Além disso, fornece os direitos do Adobe Express para criar variações de ativos.
-                </li>
+                <li>Crie e edite ativos usando o Adobe Express e o Firefly integrados, aproveitando modelos projetados profissionalmente, kits de marca, ativos do Adobe Stock e assim por diante.</li>
+                <li>Acesse e aproveite os ativos aprovados da sua organização usando o portal AEM Assets Content Hub.</li>
           <ul>
     </tr>
     <tr>
@@ -156,11 +155,11 @@ A tabela a seguir descreve uma lista dos Perfis de produto possíveis abaixo de 
         <td>Usuários avançados do AEM Assets</td>
 <td>
         <ul>
-                <li>Destina-se ao acesso somente leitura ao DAM. Os usuários neste perfil de produto serão membros do grupo "Colaboradores" do AEM criado automaticamente no AEM.
+                <li>Acesse todos os recursos do AEM Assets, incluindo o gerenciamento de ativos, metadados e a governança e a automação gerais em torno de ativos digitais.</li>
+                <li>Trabalhe com ativos do Experience Manager por meio de integrações da Assets disponíveis para sua organização em outros produtos da Adobe e aplicativos que não sejam da Adobe.
                 </li>
-                <li>
-                Além disso, fornece os direitos do Adobe Express para criar variações de ativos.
-                </li>
+                <li>Crie e edite ativos usando o Adobe Express e o Firefly integrados, aproveitando modelos projetados profissionalmente, kits de marca, ativos do Adobe Stock e assim por diante.</li>
+                <li>Acesse e aproveite os ativos aprovados da sua organização usando o portal AEM Assets Content Hub.</li>
           <ul>
 </td>
     </tr>
