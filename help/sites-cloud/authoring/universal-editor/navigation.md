@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: eddccf5a9d5c6be8d07120ea2f9e36007f7f909f
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 26%
+source-wordcount: '1698'
+ht-degree: 25%
 
 ---
 
@@ -117,6 +117,8 @@ Clique no ícone que representa seu usuário para acessar as configurações de 
 
 A barra de ferramentas do Editor Universal está sempre presente na parte superior da tela logo abaixo [do cabeçalho do Experience Cloud](#experience-cloud-header). Ele fornece acesso rápido para navegar para outra página para editar e publicar a página atual.
 
+Dependendo da configuração do seu programa, ele também pode apresentar [recursos adicionais que foram habilitados como extensões pelo seu administrador.](#additional-toolbar-buttons)
+
 ![A barra de ferramentas do Editor Universal](assets/universal-editor-toolbar.png)
 
 #### O Botão Início {#home-button}
@@ -217,8 +219,9 @@ Por exemplo, a capacidade de desfazer a publicação de uma página (ou seja, re
 
 O Universal Editor oferece uma experiência de criação personalizável e extensível. Se você vir botões adicionais na barra de ferramentas, o Editor universal foi estendido.
 
+* Para obter detalhes sobre como uma extensão individual funciona, [consulte a documentação de criação do Editor Universal.](/help/sites-cloud/authoring/universal-editor/authoring.md#managing-page-content)
 * Para obter detalhes sobre as possibilidades de extensão, consulte a [Extensão do Editor Universal](/help/implementing/universal-editor/extending.md).
-* Para obter detalhes sobre como uma extensão individual funciona, consulte a [documentação do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
+* Para obter detalhes sobre como instalar uma extensão individual, consulte a [documentação do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/).
 
 ### O editor {#editor}
 

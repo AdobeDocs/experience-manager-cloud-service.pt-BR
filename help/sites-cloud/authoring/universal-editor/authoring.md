@@ -5,10 +5,10 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: da14ed18b786c1f19d76926ed027d13a53275af3
+source-git-commit: a2039c99cd1c7e163086ba20af3b41b48fa93683
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 17%
+source-wordcount: '2133'
+ht-degree: 11%
 
 ---
 
@@ -192,6 +192,122 @@ Ao terminar de editar o conteúdo, você geralmente deseja navegar por ele e obs
 
 No modo de visualização, tocar ou clicar em um conteúdo reage como faria com um leitor do conteúdo. Se quiser selecionar o conteúdo para edição, desative o [modo de visualização](/help/sites-cloud/authoring/universal-editor/navigation.md#preview-mode).
 
+## Editar herança de componente {#inheritance}
+
+Herança é o mecanismo no qual o conteúdo pode ser vinculado de modo que a alteração de um altere automaticamente o outro.
+
+Usando o Editor universal, você pode cancelar a herança de conteúdo simplesmente atualizando o conteúdo. O editor desativa automaticamente a herança de todas as alterações feitas pelos autores nessa página, garantindo que o conteúdo modificado seja retido quando as atualizações forem sincronizadas do blueprint.
+
+Se a **Extensão MSM (Gerenciamento de vários sites) do AEM** estiver habilitada para o seu programa, você terá [opções adicionais de barra de ferramentas](#inheritance-extension) para exibir e alterar o status de herança de um componente individual no Editor Universal.
+
+Para obter mais detalhes sobre como a herança funciona usando o Editor Universal, consulte [Herança de conteúdo no Editor Universal](/help/sites-cloud/authoring/universal-editor/inheritance.md).
+
+
+## Opções opcionais da barra de ferramentas{#toolbar-options}
+
+Recursos adicionais estão disponíveis como extensões para o Universal Editor para ajudá-lo a gerenciar ainda mais suas páginas e conteúdo. [Essas extensões devem ser habilitadas em seu programa por um administrador](/help/implementing/universal-editor/extending.md) para que você possa vê-las como um autor de conteúdo na [barra de ferramentas do Editor Universal.](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar)
+
+### Herança {#inheritance-extension}
+
+A **Extensão MSM (Gerenciamento de vários sites) do AEM** exibe o status de herança atual do componente selecionado e permite [interromper ou restabelecer a herança.](/help/sites-cloud/authoring/universal-editor/inheritance.md)
+
+O ícone **Herança Instalada** na barra de ferramentas do Editor Universal mostra que a herança ainda está ativa para o componente selecionado.
+
+![Ícone de Herança instalada](assets/inheritance-installed-icon.png)
+
+Toque ou clique no ícone para interromper a herança do componente selecionado. A herança é automaticamente interrompida se você editar o componente.
+
+O ícone **Herança Interrompida** mostra que a herança foi interrompida para o componente selecionado.
+
+![Ícone de herança corrompida](assets/inheritance-broken-icon.png)
+
+Toque ou clique no ícone para restaurar a herança do componente selecionado. Será necessário recarregar a página para atualizar o conteúdo para mostrar o conteúdo herdado.
+
+Para obter informações sobre como habilitar esta extensão, [consulte a documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>Os ícones **Herança Instalada** e **Herança Interrompida** são exibidos somente quando um componente é selecionado e a página é baseada em um blueprint.
+
+>[!NOTE]
+>
+>A **Extensão MSM (Gerenciamento de vários sites) do AEM** funciona somente para páginas, não para Fragmentos de conteúdo.
+
+### Acesso às propriedades da página {#page-properties}
+
+A **Extensão de Propriedades da Página do AEM** permite acesso rápido à [janela de Propriedades da Página](/help/sites-cloud/authoring/sites-console/page-properties.md) da página que está sendo editada no momento.
+
+![Ícone de propriedades de página](assets/page-properties-icon.png)
+
+Toque ou clique no ícone **Propriedades da página** na barra de ferramentas do Editor Universal para abrir as propriedades da página em uma nova guia do navegador.
+
+Para obter informações sobre como habilitar esta extensão, [consulte a documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>A **Extensão de Propriedades de Página do AEM** funciona somente para páginas, não para Fragmentos de Conteúdo.
+
+### Acessar o console Sites {#sites-console}
+
+A **Extensão de Administrador de Site do AEM** permite acesso rápido à página que está sendo editada no [Console de Sites do AEM](/help/sites-cloud/authoring/sites-console/introduction.md), permitindo navegar na árvore do site ou executar ações no nível da página no console.
+
+![Ícone Abrir no administrador do site](assets/open-in-site-admin-icon.png)
+
+Toque ou clique no ícone para abrir o Console de sites em uma nova guia do navegador, navegada para a página atualmente no editor.
+
+Para obter informações sobre como habilitar esta extensão, [consulte a documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### Bloquear e desbloquear páginas {#locking-pages}
+
+A **Extensão de Bloqueio de Página do AEM** exibe o status de bloqueio atual da página no editor e permite [bloquear ou desbloquear a página.](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page)
+
+O ícone **Desbloqueado** na barra de ferramentas do Editor Universal mostra que a página atualmente no editor não está bloqueada.
+
+![Ícone desbloqueado](assets/unlocked-icon.png)
+
+Toque ou clique no ícone para bloquear a página.
+
+O ícone **Bloqueado** na barra de ferramentas do Editor Universal mostra que a página atualmente no editor está bloqueada. Passe o mouse sobre o ícone para obter uma dica de ferramenta que indica o usuário que bloqueou a página.
+
+![Ícone Bloqueado](assets/locked-icon.png)
+
+Toque ou clique no ícone para desbloquear a página se você for o usuário que a bloqueou.
+
+Para obter informações sobre como habilitar esta extensão, [consulte a documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+>[!NOTE]
+>
+>A **Extensão de Bloqueio de Página do AEM** funciona somente para páginas, não para Fragmentos de Conteúdo.
+
+### Fluxos de trabalhos {#workflows}
+
+A **Extensão de Fluxos de Trabalho do AEM** permite [iniciar um fluxo de trabalho](/help/sites-cloud/authoring/workflows/overview.md) na página atualmente no editor.
+
+![Ícone de fluxos de trabalho](assets/workflows-icon.png)
+
+Toque ou clique no ícone **Fluxos de trabalho** na barra de ferramentas do Editor Universal para abrir o modal **Iniciar um fluxo de trabalho**. A janela lista o conteúdo possível ao qual você pode aplicar um workflow.
+
+![Iniciar um modal de fluxo de trabalho](assets/start-a-workflow.png)
+
+1. Na lista suspensa **Modelo de Fluxo de Trabalho**, selecione o fluxo de trabalho a ser aplicado.
+1. Forneça uma descrição para o fluxo de trabalho no campo **Nome**.
+1. Na lista **Conteúdo a ser incluído no fluxo de trabalho**, use as caixas de seleção para definir qual conteúdo incluir no fluxo de trabalho.
+1. Toque ou clique em **Iniciar Fluxo de Trabalho** para iniciar o fluxo de trabalho ou **Fechar** para anular.
+
+Para obter informações sobre como habilitar esta extensão, [consulte a documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
+### Logon do desenvolvedor {#developer-login}
+
+A **Extensão de Logon de Desenvolvimento do AEM Universal Editor** é útil para desenvolvedores que estão desenvolvendo localmente, permitindo uma maneira conveniente de autenticar em um AEM SDK local para fins de teste.
+
+![Ícone de logon do desenvolvedor](assets/developer-login-icon.png)
+
+Toque ou clique no ícone **Logon do Desenvolvedor** na barra de ferramentas do Editor Universal para fornecer suas credenciais de logon locais para entrar no AEM SDK local.
+
+![Modal de logon do desenvolvedor](assets/developer-login.png)
+
+Para obter informações sobre como habilitar esta extensão, [consulte a documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/)
+
 ## Recursos adicionais {#additional-resources}
 
 Para saber como publicar conteúdo com o editor universal, consulte este documento.
@@ -205,11 +321,3 @@ Para saber mais sobre os detalhes técnicos do Universal Editor, consulte estes 
 * [Arquitetura do Editor universal](/help/implementing/universal-editor/architecture.md): saiba mais sobre a arquitetura do Editor universal e como os dados fluem entre seus serviços e camadas.
 * [Atributos e tipos](/help/implementing/universal-editor/attributes-types.md): saiba mais sobre os atributos e tipos de dados exigidos pelo Editor universal.
 * [Autenticação do Editor universal](/help/implementing/universal-editor/authentication.md): saiba como funciona a autenticação do Editor universal.
-
-## Editar herança de componente {#inheritance}
-
-Herança é o mecanismo no qual o conteúdo pode ser vinculado de modo que a alteração de um altere automaticamente o outro.
-
-Usando o Editor universal, você pode cancelar a herança de conteúdo simplesmente atualizando o conteúdo. O editor desativa automaticamente a herança de todas as alterações feitas pelos autores nessa página, garantindo que o conteúdo modificado seja retido quando as atualizações forem sincronizadas do blueprint.
-
-Para obter mais detalhes sobre como a herança funciona usando o Editor Universal, consulte [Herança de conteúdo no Editor Universal](/help/sites-cloud/authoring/universal-editor/inheritance.md).

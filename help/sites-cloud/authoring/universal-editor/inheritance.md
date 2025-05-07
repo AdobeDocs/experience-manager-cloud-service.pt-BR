@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 2a1b87c2-29b9-4689-9a15-e17942439160
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 20f57e2b1b502f48f54e8a03d35a231d0c905739
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '528'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Saiba como o Editor universal oferece suporte à herança de conteúdo para o Ge
 
 >[!NOTE]
 >
->Esse recurso só está disponível para conteúdo armazenado no repositório AEM.
+>Esse recurso só está disponível para conteúdo armazenado no repositório do AEM.
 
 ## Caso de uso {#use-case}
 
@@ -44,17 +44,25 @@ Quando uma página faz parte do MSM ou de uma Inicialização e o conteúdo é e
 
 O autor não precisa clicar em um botão ou executar outras etapas para desativar a herança antes de fazer edições locais. Assim que uma alteração é feita, a herança é cancelada implicitamente. Este fluxo de trabalho está em contraste com o [Editor de páginas](/help/sites-cloud/authoring/page-editor/edit-content.md#inherited-components).
 
+A herança pode ser revertida para toda a página por meio de:
+
+* [Console de Visão Geral da Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
+* [Iniciar console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
+* Usando o botão **Redefinir** na guia **Live Copy** da [janela de propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md).
+
 O Editor Universal não afeta o mecanismo subjacente de herança. Para obter mais detalhes sobre como a herança funciona, consulte a documentação a seguir.
 
 * [Gerenciamento de vários sites (MSM)](/help/sites-cloud/administering/msm/overview.md)
 * [Lançamentos](/help/sites-cloud/authoring/launches/overview.md)
 
+### Extensão MSM (Multi-Site-Management, gerenciamento de vários sites) do AEM {#msm-extension}
+
+Se instalada, a **Extensão MSM (Gerenciamento de vários sites) do AEM** exibe o status de herança atual do componente selecionado e permite quebrar ou restabelecer a herança no nível do componente.
+
+Consulte a [documentação de criação para obter mais informações.](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)
+
 ## Limitações {#limitations}
 
-* Os autores não podem reverter a herança de componentes únicos.
-   * A herança só pode ser revertida para toda a página através do
-      * [Console de Visão Geral da Live Copy](/help/sites-cloud/administering/msm/live-copy-overview.md)
-      * [Iniciar console](/help/sites-cloud/authoring/launches/overview.md#the-launches-console)
-      * Usando o botão **Redefinir** na guia **Live Copy** da [janela de propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md).
-* Os autores não têm feedback visual para ver quais componentes têm sua herança desabilitada e quais ainda a têm preservada.
+* Para reverter a herança de componentes únicos, a **Extensão MSM (Gerenciamento de Vários Sites) do AEM** deve estar habilitada.
+* Para que o feedback visual veja quais componentes têm sua herança desabilitada e quais ainda a preservam, a **Extensão MSM (Gerenciamento de Vários Sites) do AEM** deve estar habilitada.
 * No momento, esses recursos estão limitados a componentes em páginas e ainda não se aplicam a [Fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/overview.md), apesar de também terem recursos do MSM e do Launch.
