@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: e25e337e4b71ed6c0d15bddcb306be243d970501
+source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 23%
+ht-degree: 26%
 
 ---
 
@@ -19,7 +19,7 @@ O Cloud Manager fornece um painel para facilitar a visualização dos direitos d
 
 >[!IMPORTANT]
 >
->O Painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no Painel de licenças.
+>O Painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no Painel de licenças.
 >
 >Para determinar o tipo de serviço que seu programa tem (AMS ou AEMaaCS), consulte [Navegação na interface do Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -100,7 +100,7 @@ The right side of the window presents an area chart showing the usage broken dow
 
 ## Perguntas frequentes {#faq}
 
-+++**O que é uma solicitação de conteúdo?**{#what-is-a-content-request}
+### O que é uma solicitação de conteúdo?{#what-is-a-content-request}
 
 Uma solicitação de conteúdo é qualquer solicitação direcionada ao AEM Sites ou a um sistema de cache fornecido pelo cliente, como uma rede de entrega de conteúdo. Ele recupera conteúdo ou dados no formato HTML para exibições de página. Ou no formato JSON para chamadas de API.
 
@@ -109,29 +109,25 @@ Uma solicitação de conteúdo é contabilizada para cada exibição de página 
 As solicitações de conteúdo excluem solicitações ou atividades iniciadas pela Adobe ou em nome dela com o único objetivo de fornecer produtos e serviços. O tráfego de agente de usuário identificado pela Adobe como bots, crawlers e spiders relacionados a mecanismos de pesquisa comuns e serviços de redes sociais também são excluídos.
 
 Consulte também [Entender as solicitações de conteúdo do Cloud Service](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**Como o Adobe Experience Manager mede as solicitações de conteúdo?**{#how-are-content-requests-measured}
+### Como o Adobe Experience Manager mede as solicitações de conteúdo?{#how-are-content-requests-measured}
 
 As solicitações de conteúdo são rastreadas nos servidores de borda do AEM as a Cloud Service. O tráfego de origem não é contabilizado nas solicitações de conteúdo. O CDN incorporado ao AEM as a Cloud Service rastreia solicitações HTML e JSON válidas.
 
 O AEM também tem regras em vigor para excluir bots conhecidos, incluindo serviços conhecidos que acessam o site regularmente para atualizar seu índice de pesquisa ou serviço.
 
 Consulte também [Compreender as solicitações de conteúdo do Cloud Service](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**Por que meu relatório do Analytics mostra resultados diferentes das solicitações de conteúdo do AEM?**{#why-are-reports-different}
+### Por que meu relatório do Analytics mostra resultados diferentes das solicitações de conteúdo do AEM?{#why-are-reports-different}
 
 As solicitações de conteúdo podem ter variações entre as ferramentas de relatório de Analytics de uma organização. Para obter mais informações, consulte [Entendendo as solicitações de conteúdo do Cloud Service](/help/implementing/cloud-manager/content-requests.md).
-+++
 
-+++**E se eu quiser saber mais sobre o volume de solicitações de conteúdo?**{#current-request-volumes}
+### E se eu quiser saber mais sobre o volume de solicitação de conteúdo?{#current-request-volumes}
 
 Se você quiser obter insights adicionais sobre o volume de solicitação de conteúdo mostrado no Painel de licenças, a equipe do Adobe pode fornecer um relatório que mostra os principais responsáveis pelo volume das solicitações de conteúdo. Entre em contato com a equipe da Adobe ou com o Suporte ao cliente da Adobe para solicitar um relatório de uso principal.
-+++
 
-+++**E se eu estiver usando meu próprio CDN?**{#using-own-cdn}
+### E se eu estiver usando meu próprio CDN?{#using-own-cdn}
 
 O painel de Licenças mostra apenas os dados rastreados pelo Cloud Service CDN. Se você optar por Trazer seu próprio CDN (BYOCDN), relate o volume de solicitações de conteúdo à Adobe anualmente, conforme declarado em seu contrato.
-+++
+
 
