@@ -5,9 +5,9 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 83def24319831c3f14f396f2f6b92b053a9d46a9
+source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1595'
 ht-degree: 27%
 
 ---
@@ -84,7 +84,7 @@ Para definir o JDK de execução do Maven, crie um arquivo chamado `.cloudmanage
 
 #### Pré-requisitos para migrar para a criação com Java 21 ou Java 17 {#prereq-for-building}
 
-Para migrar para a criação com Java 21 ou Java 17, primeiro atualize para a versão mais recente do SonarQube. Para obter detalhes, consulte as [Notas de versão para Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/current.md#what-is-new).
+Para construir com o Java 21 ou Java 17, o Cloud Manager agora usa o SonarQube 9.9, que é compatível com essas versões do Java. Essa alteração foi introduzida na versão 2025.1.0 do Cloud Manager. Nenhuma ação do cliente é necessária para atualizar o SonarQube. Para obter mais detalhes e entender a alteração, consulte as [Notas de versão para Cloud Manager 2025.1.0](/help/implementing/cloud-manager/release-notes/2025/2025-1-0.md).
 
 Ao migrar seu aplicativo para uma nova versão de build e versão de tempo de execução do Java, teste completamente nos ambientes de desenvolvimento e preparo antes de implantar na produção.
 
