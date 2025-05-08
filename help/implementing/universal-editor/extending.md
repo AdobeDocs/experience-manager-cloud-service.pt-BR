@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para estender os recursos d
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 2f487fa5-57a7-477a-ad68-590e6cc12f4e
-source-git-commit: 36a27d7fb36c9832b78c13d7544a43df2cbd0fa0
+source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Saiba mais sobre as diferentes opções para estender os recursos do Universal E
 
 ## Extensões  {#extensions}
 
-Como um serviço do Adobe Experience Cloud, a interface do usuário do Editor universal pode ser estendida usando o App Builder e o Experience Manager. O Adobe oferece muitas extensões prontas que você pode usar para o seu projeto.
+Como um serviço do Adobe Experience Cloud, a interface do usuário do Editor universal pode ser estendida usando o App Builder e o Experience Manager. A Adobe oferece muitas extensões prontas disponíveis por meio da [Extension Manager](https://experience.adobe.com/aem/extension-manager) que você pode usar para o seu projeto.
 
 * **[Extensão MSM (Gerenciamento de Vários Sites) do AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#inheritance)**: Interromper ou restabelecer a herança no nível do componente
 * **[Extensão de Propriedades de Página do AEM](/help/sites-cloud/authoring/universal-editor/authoring.md#page-properties)**: acessar a janela de propriedades de página da página no Editor Universal
@@ -37,6 +37,8 @@ Como um serviço do Adobe Experience Cloud, a interface do usuário do Editor un
 * **[Exportar fragmentos de conteúdo para o Adobe Target](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/exporting-content-fragment-to-adobe-target/)**: exportar fragmentos de conteúdo criados no Adobe Experience Manager as a Cloud Service para o Adobe Target para serem usados como ofertas em atividades do Target, para testar e personalizar experiências em escala.
 * **[Fluxos de trabalho de fragmento de conteúdo](https://developer.adobe.com/uix/docs/extension-manager/extension-developed-by-adobe/content-fragments-workflows/)**: inicie um fluxo de trabalho do AEM para fragmentos de conteúdo selecionados.
 
+Para obter informações sobre como habilitar essas extensões, [consulte a documentação do Extension Manager.](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions)
+
 ## Extensão da interface {#extending-ui}
 
 As extensões da interface do usuário do Universal Editor são aplicativos do JavaScript criados com o Adobe App Builder. Usando essas mesmas ferramentas, você também pode adicionar seus próprios botões e ações ao menu de cabeçalho e ao painel de propriedades, bem como criar seus próprios eventos para o Editor universal.
@@ -49,7 +51,7 @@ Se quiser explorar as possibilidades de criar suas próprias extensões, consult
 
 >[!TIP]
 >
->Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
+>Se preferir aprender por exemplo, consulte o [tutorial de extensibilidade da interface do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/developing/extensibility/ui/overview). Embora se concentre na extensão do console de Fragmentos de conteúdo, os conceitos para implementar uma extensão de interface no Editor universal são os mesmos.
 
 [Usando o Extension Manager no AEM Sites](https://developer.adobe.com/uix/docs/extension-manager/), você pode habilitar ou desabilitar suas extensões por instância, acessar extensões primárias do Adobe, inclusive as do Universal Editor, e muito mais.
 
