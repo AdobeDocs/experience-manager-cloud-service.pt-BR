@@ -4,7 +4,7 @@ description: Saiba como obter acesso ao Editor universal e começar a instrument
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 722d9a14ccac2f9f1c6dd32455935bafc4897a68
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 37%
@@ -178,6 +178,8 @@ As variáveis a seguir estão disponíveis para definir seus mapeamentos no camp
 Seu aplicativo agora está pronto para utilizar o Editor universal.
 
 Consulte [Criação de conteúdo com o Editor universal](/help/sites-cloud/authoring/universal-editor/authoring.md) para ver como é fácil e intuitivo criar conteúdo utilizando o Editor universal.
+
+{{ue-headless-auth}}
 
 ## Recursos adicionais {#additional-resources}
 

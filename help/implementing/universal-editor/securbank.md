@@ -4,7 +4,7 @@ description: Saiba mais sobre o Universal Editor com experiência prática usand
 exl-id: 97e1395f-b51e-4cee-b1d0-2466a08f96af
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Você precisará de um novo programa Cloud Manager, no qual poderá instalar o S
    * Use as opções padrão ao selecionar **Soluções e Complementos**.
    * Para obter detalhes sobre como criar um programa de sandbox, consulte o documento [Criação de programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md).
 
-### Clone o repositório Git do programa e atualize-o com o conteúdo do projeto AEM do SecurBank. {#clone-and-update}
+### Clonar o repositório Git do programa e atualizar com o conteúdo do projeto AEM do SecurBank. {#clone-and-update}
 
 1. Depois que o programa for criado, abra-o e, na guia **Repositórios**, toque ou clique no botão **Acessar informações do repositório** para abrir a caixa de diálogo **Informações do repositório** e exibir as credenciais necessárias para acessar o repositório Git do ambiente de sandbox.
 
@@ -54,7 +54,7 @@ Você precisará de um novo programa Cloud Manager, no qual poderá instalar o S
 
 1. Localize a pasta do clone local, abra-a e exclua todo o conteúdo exceto os arquivos ocultos/pontos.
 
-1. Recupere o código de projeto AEM do SecurBank mais recente do GitHub em [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) clicando em **Código** e depois em **Baixar ZIP** na lista suspensa.
+1. Recupere o código de projeto do SecurBank AEM mais recente do GitHub em [`https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank`](https://github.com/Adobe-Marketing-Cloud/summit-2024-l425-securbank) clicando em **Código** e depois em **Baixar ZIP** na lista suspensa.
 
 1. Descompacte o conteúdo do arquivo zip em seu sistema de arquivos local e mova-o para a pasta agora vazia do clone local do programa sandbox.
 
@@ -137,3 +137,6 @@ Parabéns! Agora você deve ver o aplicativo SecurBank sendo executado com suces
 Se o conteúdo ainda não for exibido, verifique se o pipeline **Implantar no Desenvolvimento** que você executou foi concluído com êxito.
 
 ![Aplicativo SecurBank no navegador](assets/securbank.png)
+
+{{ue-headless-auth}}
+
