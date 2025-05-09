@@ -5,9 +5,9 @@ contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin, Developer, User
 feature: Adaptive Forms, Core Components
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: 052f8425c3c7bc2c12882af4f7b88d559ea34fb3
 workflow-type: tm+mt
-source-wordcount: '1595'
+source-wordcount: '1551'
 ht-degree: 0%
 
 ---
@@ -56,16 +56,16 @@ O vídeo abaixo fornece um guia passo a passo sobre os pré-requisitos (como cri
 Antes de configurar o Conector do AEP no AEM Forms, verifique se você concluiu o seguinte no Adobe Experience Platform:
 
 1. Configuração do esquema
-   * [Criar um esquema XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/create-schema-ui)
-   * [Habilitar esquema para criação de perfil](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
-   * [Definir campo de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Criar um esquema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui)
+   * [Habilitar esquema para criação de perfil](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
+   * [Definir campo de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#profile)
 
 2. Configuração de dados
-   * [Criar um conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
-   * [Configurar conexão de streaming](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (Você precisa da URL do ponto de extremidade de streaming mais tarde; anote-a agora.)
+   * [Criar um conjunto de dados](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets)
+   * [Configurar conexão de streaming](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/create-streaming-connection) (Você precisa da URL do ponto de extremidade de streaming mais tarde; anote-a agora.)
 
 3. Autenticação
-   * [Gerar credenciais de API](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (ID do cliente e Segredo do cliente) da Adobe Developer Console
+   * [Gerar credenciais de API](https://experienceleague.adobe.com/en/docs/experience-platform/landing/platform-apis/api-authentication#generate-credentials) (ID do cliente e Segredo do cliente) da Adobe Developer Console
 
 
 ## Etapas da implementação
@@ -146,20 +146,21 @@ Antes de configurar o Conector do AEP no AEM Forms, verifique se você concluiu 
 
 ### Perguntas gerais {#general-questions}
 
-**P: Posso usar este conector com qualquer versão do AEM Forms?**
-R: Não, essa integração só está disponível para o AEM Forms as a Cloud Service no programa Acesso antecipado.
+**P: &quot;Este conector está disponível com várias ofertas do AEM Forms?**
+R: Não, essa integração só está disponível para o AEM Forms as a Cloud Service e está no programa Acesso antecipado.
 
 **P: Esse conector funciona com os Componentes principais adaptáveis do Forms e os Componentes de base?**
-R: Esse conector funciona melhor com os Componentes principais do Adaptive Forms, que é a abordagem recomendada para todos os novos formulários.
+R: Esse conector funciona com os Componentes principais adaptáveis do Forms e os Componentes principais adaptáveis do Forms.
 
 **P: Posso enviar dados para vários conjuntos de dados do AEP a partir de um único formulário?**
-R: Atualmente, cada formulário pode enviar somente para um conjunto de dados. Para envios de vários conjuntos de dados, seria necessário criar fluxos de trabalho personalizados.
+R: Atualmente, cada formulário pode enviar somente para um conjunto de dados.
 
 **P: Há um limite para quantos envios de formulários podem ser processados?**
-R: Os envios de formulários estão sujeitos às cotas de assimilação de streaming do AEP e limites de taxa.
+R: Os envios de formulários estão sujeitos à sua assimilação de streaming do AEP [cotas e limites de taxa](https://experienceleague.adobe.com/en/docs/experience-platform/data-lifecycle/api/quota).
 
-**P: Os anexos de formulário podem ser enviados para a AEP?**
-R: Não, os anexos de formulário não podem ser enviados diretamente para o AEP. Você precisaria armazenar anexos separadamente e enviar metadados somente para a AEP.
+<!-- >
+**Q: Can form attachments be sent to AEP?**
+A: No, form attachments cannot be directly sent to AEP. You would need to store attachments separately and only send metadata to AEP. -->
 
 ### Perguntas sobre implementação {#implementation-questions}
 
@@ -193,10 +194,10 @@ Para começar a usar essa integração:
 ## Recursos relacionados {#related-resources}
 
 * [Documentação do AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/home.html?lang=pt-BR)
-* [Documentação do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=pt-BR)
-* [Visão geral do sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR)
-* [Assimilação de streaming no Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=pt-BR)
-* [Visão geral do Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR)
+* [Documentação do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [Visão geral do sistema XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [Assimilação de streaming no Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+* [Visão geral do Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [Recursos de acesso antecipado do AEM Forms](/help/forms/early-access-ea-features.md)
 * [Criação de Forms adaptável com componentes principais](/help/forms/creating-adaptive-form-core-components.md)
 * [Utilização de modelos de dados de formulário no AEM Forms](/help/forms/using-form-data-model.md)
