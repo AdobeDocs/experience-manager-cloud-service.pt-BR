@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8b15b203d0d6a5947a80c9bd217c7fdcdb8f494c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 14%
@@ -43,7 +43,7 @@ Saiba mais sobre os tipos de programas no documento [Noções sobre Programas e 
 1. Na caixa de listagem **Soluções e complementos**, selecione uma ou mais soluções para incluir no programa.
 
    * Clique na divisa à esquerda do nome da solução para exibir os complementos opcionais disponíveis que você deseja incluir na solução selecionada.
-   * As soluções **Sites**, **Assets** e **Edge Deliver Services** são sempre selecionadas por padrão quando você cria um programa de sandbox. Não é possível desmarcá-los.
+   * As soluções do **Sites**, **Assets** e **Edge Delivery Services** são sempre selecionadas por padrão quando você cria um programa de sandbox. Não é possível desmarcá-los.
 
    ![Selecionar soluções e complementos para uma sandbox](assets/sandbox-solutions-add-ons.png)
 
@@ -67,11 +67,11 @@ Depois que um novo programa de sandbox terminar de ser criado, você poderá vis
    >
    >Para saber mais sobre como acessar e gerenciar o repositório Git, consulte [Acessar o Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
-1. Depois que o ambiente de desenvolvimento for criado, você poderá clicar em **Acessar AEM** e entrar no AEM.
+1. Depois que o ambiente de desenvolvimento for criado, você poderá clicar em **Acessar o AEM** e entrar no AEM.
 
    ![Link Acessar o AEM](assets/create-program5.png)
 
-1. Quando a implantação em desenvolvimento do pipeline de não produção for concluída, o assistente na chamada para ação o orientará a acessar o ambiente de desenvolvimento do AEM ou implantar o código no ambiente de desenvolvimento.
+1. Quando a implantação em desenvolvimento do pipeline de não produção for concluída, o assistente no call-to-action o orientará a acessar o ambiente de desenvolvimento do AEM ou implantar o código no ambiente de desenvolvimento.
 
    ![Implantar a sandbox](assets/create-program-setup-deploy.png)
 

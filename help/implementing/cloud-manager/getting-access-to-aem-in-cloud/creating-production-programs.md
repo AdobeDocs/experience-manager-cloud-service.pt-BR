@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: cb9707e4f53e32ed6e5aec244b1ef2240fcf376c
+source-git-commit: 87836c7f28c9e3c8269fac073f46c53ce73fecfa
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 11%
@@ -50,7 +50,7 @@ Consulte [Opções adicionais do programa de produção](#options).
 
    * Se você não tiver certeza se precisa de um ou mais programas para as várias soluções disponíveis, selecione o mais interessante. Você pode ativar soluções adicionais ao [editar o programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/editing-programs.md) depois. Consulte a [Introdução ao documento Programas de produção](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md) para obter mais recomendações de configuração do programa.
    * Pelo menos uma solução é necessária para a criação do programa.
-   * Selecione **Edge Deliver Services** para obter uma solução de CDN totalmente gerenciada que otimize experiências digitais. Consulte [Sobre como usar o Edge Delivery Services para entregar seu projeto do Cloud Manager](#edge-overview)
+   * Selecione **Edge Delivery Services** para obter uma solução de CDN totalmente gerenciada que otimize experiências digitais. Consulte [Sobre como usar o Edge Delivery Services para entregar seu projeto do Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
    * Se você selecionou a opção **[Habilitar Segurança Aprimorada](#security)**, será possível selecionar somente as soluções para as quais houver direitos HIPAA disponíveis.
 
      ![Selecionar soluções](/help/implementing/cloud-manager/assets/add-production-program-with-edge.png)
@@ -128,7 +128,7 @@ Além dos direitos necessários, o uso dos programas do SLA para Sites ou Forms 
 
 1. Selecione **Visão geral do programa** para navegar até a página **Visão geral**.
 
-1. O principal cartão de chamada à ação na página de visão geral orienta você pela criação de um ambiente, um pipeline de não produção e, finalmente, um pipeline de produção.
+1. O cartão principal do call-to-action na página de visão geral orienta você pela criação de um ambiente, um pipeline de não produção e, finalmente, um pipeline de produção.
 
    ![Visão geral do programa](assets/set-up-prod5.png)
 

@@ -5,9 +5,9 @@ exl-id: 3666328a-79a7-4dd7-b952-38bb60f0967d
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bd207a7c3e9e5e52202456fa95dd31293639725f
+source-git-commit: 23ee3857bb0440ba9f386002b859217d0b5f8f37
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1476'
 ht-degree: 2%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 2%
 As solicitações de conteúdo incluem solicitações enviadas ao AEM Sites. Essas solicitações podem ser roteadas por meio do Edge Delivery Services ou de sistemas de cache fornecidos pelo cliente, como uma Rede de entrega de conteúdo (CDN). Essas solicitações fornecem dados estruturados no formato HTML ou JSON e oferecem suporte a exibições de página (por exemplo, páginas e Fragmentos de experiência) ou retornos JSON por meio de APIs de forma headless.
 
 O sistema conta as solicitações de conteúdo quando um usuário visualiza uma página usando o HTML ou JSON. Ele mede a solicitação no ponto em que o primeiro sistema de cache a recebe. Certas solicitações HTTP são incluídas ou excluídas para fins de contagem de solicitações de conteúdo. Veja a lista completa de HTTP [solicitações de conteúdo incluídas](#included-content-requests) e [solicitações de conteúdo excluídas](#excluded-content-request).
+
+>[!NOTE]
+>
+>Os dados mostrados na exibição Solicitações de conteúdo são atualizados a cada 24 horas.
 
 ## Sobre solicitações de conteúdo do Cloud Service {#understanding-cloud-service-content-requests}
 
