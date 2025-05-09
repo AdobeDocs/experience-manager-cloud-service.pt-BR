@@ -4,10 +4,10 @@ description: Saiba mais sobre os principais aspectos do Assets Ultimate, como be
 feature: Asset Management
 role: User, Admin
 exl-id: 3ae96cd2-e0ac-43a5-a0bf-bebb1a028b10
-source-git-commit: c82f84fe99d8a196adebe504fef78ed8f0b747a9
+source-git-commit: ccd2334528ed7309c271d069209adec333de356c
 workflow-type: tm+mt
-source-wordcount: '869'
-ht-degree: 2%
+source-wordcount: '902'
+ht-degree: 4%
 
 ---
 
@@ -28,21 +28,21 @@ ht-degree: 2%
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
         </td>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -138,6 +138,6 @@ A tabela a seguir resume os tipos de usuários disponíveis do AEM Assets, os pr
 | AEM > Instância do autor de produção > Administradores do AEM | − | − | − | ✓ |
 | **Mais informações** | Consulte [Habilitar Content Hub](/help/assets/enable-assets-ultimate.md##enable-assets-ultimate-new-users) | Consulte [Usuários Integrados do Collaborator](/help/assets/enable-assets-ultimate.md#onboard-collaborator-users) | Consulte [Usuários avançados integrados](/help/assets/enable-assets-ultimate.md#onboard-power-users) | - |
 
-Para obter informações sobre como começar a usar o Assets Ultimate, consulte [Habilitar o AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md).
+Para obter informações sobre como começar a usar o Assets Ultimate, consulte [Habilitar o AEM Assets Ultimate](/help/assets/enable-assets-ultimate.md). Se os usuários existentes do AEM Assets tiverem dúvidas sobre quando você pode atualizar para o Assets Ultimate, entre em contato com o representante de conta da Adobe. Você também pode ver [Habilitar o Assets Ultimate para clientes existentes](/help/assets/enable-assets-ultimate.md#enable-assets-ultimate-existing-customers) para obter mais informações.
 
 O AEM Assets também fornece um DAM mais leve para clientes que não têm requisitos avançados, como extensibilidade da interface, automação orientada por API e implantação de código personalizado. Para obter mais informações, consulte [AEM Assets Prime](/help/assets/assets-prime.md).
