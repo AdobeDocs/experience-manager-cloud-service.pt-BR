@@ -1,7 +1,7 @@
 ---
-source-git-commit: c4dcb1cecb756f746ecb856fcfd65d73833a5ee0
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1523'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 * [Criar um formulário adaptável do AEM](/help/forms/creating-adaptive-form-core-components.md)
 * [Adicionar um formulário adaptável do AEM à página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Aplicar temas a um formulário adaptável do AEM](/help/forms/using-themes-in-core-components.md)
-* [Adicionar componentes a um Formulário adaptável do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
+* [Adicionar componentes a um Formulário adaptável do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#components)
 * [Usar CAPTCHA em um formulário adaptável do AEM](/help/forms/captcha-adaptive-forms-core-components.md)
 * [Gerar uma versão do PDF (DoR) de um formulário adaptável do AEM](/help/forms/generate-document-of-record-core-components.md)
 * [Traduzir um formulário adaptável do AEM](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
@@ -30,7 +30,7 @@ ht-degree: 2%
 * [Conectar o formulário adaptável ao Salesforce](/help/forms/aem-forms-salesforce-integration.md)
 * [Usar o Adobe Sign em um formulário adaptável do AEM](/help/forms/working-with-adobe-sign.md)
 * [Adicionar uma nova localidade para um Formulário adaptável](/help/forms/supporting-new-language-localization-core-components.md)
-* [Enviar dados do Formulário adaptável a um banco de dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
+* [Enviar dados do Formulário adaptável a um banco de dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration)
 * [Enviar dados do formulário adaptável para um endpoint REST](/help/forms/configure-submit-actions-core-components.md#submit-to-rest-endpoint)
 * [Enviar dados do formulário adaptável para o fluxo de trabalho do AEM](/help/forms/configure-submit-actions-core-components.md#invoke-an-aem-workflow)
 * [Use o Forms Portal para listar o AEM Adaptive Forms em um site do AEM](/help/forms/configure-forms-portal.md)
@@ -203,16 +203,16 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 >
 >* Siga as [Práticas recomendadas do Dynamic Media](/help/assets/dynamic-media/dm-best-practices.md) para obter o máximo de valor.
 >
->* Experimente os recursos de imagem do Dynamic Media com a [ferramenta de Instantâneo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
+>* Experimente os recursos de imagem do Dynamic Media com a [ferramenta de Instantâneo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot).
 >
->* Garanta uma reprodução de vídeo sem problemas com o [vídeo adaptável](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
+>* Garanta uma reprodução de vídeo sem problemas com o [vídeo adaptável](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-dash).
 >
->* Recorte automático de [imagens com Recorte Inteligente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+>* Recorte automático de [imagens com Recorte Inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 >
->* Recorte automático de [vídeos com Recorte Inteligente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
+>* Recorte automático de [vídeos com Recorte Inteligente](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/video/dynamic-media-smart-crop-video).
 >
->* Forneça uma [experiência interativa baseada em 3D](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
->* Outro [banco de recursos do Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
+>* Forneça uma [experiência interativa baseada em 3D](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/3d/dynamic-media-3d-feature-video).
+>* Outro [banco de recursos do Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-overview-feature-video-use).
 
 ## Registrar um tíquete de suporte {#support-ticket}
 
@@ -222,7 +222,7 @@ Para registrar um tíquete de suporte, primeiro registre o site do Edge Delivery
 
 **Para registrar um tíquete de suporte:**
 
-1. [Siga o processo de suporte padrão](https://experienceleague.adobe.com/pt-br?support-tab=home&amp;lang=pt-BR#support) e crie um tíquete.
+1. [Siga o processo de suporte padrão](https://experienceleague.adobe.com/?support-tab=home&amp;lang=pt-BR#support) e crie um tíquete.
 1. Adicionar **Edge Delivery** no título do tíquete.
 1. Na descrição, forneça os seguintes detalhes além da descrição do problema:
 
@@ -265,3 +265,11 @@ Para registrar um tíquete de suporte, primeiro registre o site do Edge Delivery
 >[!NOTE]
 >
 >Se você estiver usando o Editor universal em um caso de uso headless, o aplicativo headless deverá gerenciar sua própria autenticação.
+
+## Descontinuação do PWA {#pwa-deprecation}
+
+>[!IMPORTANT]
+>
+>Os recursos do aplicativo web progressivo (PWA) para o AEM Sites [foram descontinuados](/help/release-notes/release-notes-cloud/2025/release-notes-2025-1-0.md#pwa-features).
+>
+>Projetos existentes que usam esse recurso continuarão sendo suportados, mas novos projetos não devem usar esse recurso.

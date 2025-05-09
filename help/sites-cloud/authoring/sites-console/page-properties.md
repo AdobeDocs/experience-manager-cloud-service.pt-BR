@@ -5,10 +5,10 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 8d4d60a2105915108393cc295949491e59e5fc2b
+source-git-commit: 8d31907392e09bc5b3c669b8f8f23d6a2a26ced4
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 87%
+source-wordcount: '2454'
+ht-degree: 82%
 
 ---
 
@@ -43,7 +43,7 @@ As propriedades são distribuídas por várias guias.
    * **Descrição da marca**
 
       * **Sobrepor**: marque essa opção para definir a descrição da marca nesta página.
-         * O valor é herdado por todas as páginas secundárias, a menos que elas também tenham seus valores de **Sobreposição** definidos.
+         * O valor é herdado por todas as páginas filhas, a menos que elas também tenham seus valores de **Sobreposição** definidos.
       * **Substituir valor** - o texto da descrição da marca a ser anexado ao título da página.
          * O valor é anexado ao título da página após um caractere de barra vertical, como &quot;Cycling Tuscany | Sempre pronto para a WKND&quot;
 
@@ -226,7 +226,7 @@ Essa guia só fica visível para páginas configuradas como Live Copies. Assim c
 
 * **Configuração**
 
-   * **Herança da Live Copy** - quando marcado, a configuração da Live Copy terá efeito em todas as páginas secundárias
+   * **Herança da Live Copy** - quando marcado, a configuração da Live Copy terá efeito em todas as páginas filhas
    * **Herdar configurações de implantação da principal** - se marcado, a configuração de implantação é herdada da página principal
    * **Escolher configuração de implantação**: define as circunstâncias em que as modificações são propagadas a partir do Blueprint e só estão disponíveis quando **Herdar configurações de implantação da página principal** não está selecionado
 
@@ -242,7 +242,9 @@ Por meio de uma configuração simples, um autor de conteúdo agora pode ativar 
 
 >[!NOTE]
 >
->Consulte [Habilitando Recursos Progressivos do Aplicativo Web](/help/sites-cloud/authoring/sites-console/enable-pwa.md).
+>Consulte [Habilitar Recursos Progressivos do Aplicativo Web](/help/sites-cloud/authoring/sites-console/enable-pwa.md) para obter mais detalhes.
+
+{{pwa-deprecation}}
 
 * **Configurar experiência instalável**
 
@@ -337,3 +339,35 @@ Depois de entrar na edição de itens em massa é possível:
       * Os novos valores são aplicados a todas as páginas selecionadas ao clicar em **Concluído**.
       * Quando o campo tem vários valores (por exemplo, Tags), você pode anexar um novo valor ou remover um valor comum.
    * Os campos que são comuns, mas têm valores diferentes em várias páginas, são indicados com um valor especial, como o texto `<Mixed Entries>`.
+
+## Herança da propriedade {#inheritance}
+
+Se a página for baseada em um blueprint ou herdar conteúdo de outra página, a herança será refletida na janela **Propriedades da página** do campo individual.
+
+![Propriedades herdadas](assets/property-inhertiance.png)
+
+As propriedades herdadas não podem ser editadas. Toque ou clique no ícone **Cancelar herança** ao lado de um campo específico para interromper sua herança.
+
+![Cancelar herança](assets/cancel-inheritance.png)
+
+Confirme o cancelamento no modal **Cancelar herança**.
+
+![Cancelar modal de confirmação da herança](assets/cancel-inheriance-confirmation.png)
+
+Quando a herança é cancelada para um campo, ele se torna editável.
+
+![Herança cancelada](assets/property-inheritance-broken.png)
+
+Para restabelecer a herança, toque ou clique no ícone **Reverter herança** ao lado do campo.
+
+![Reverter herança](assets/revert-inheritance.png)
+
+Confirme a reversão no modal **Reverter herança**.
+
+![Reverter modal de confirmação de herança](assets/revert-inhertiance-confirmation.png)
+
+Selecione **Sincronizar página após reverter a herança** para atualizar o campo com os valores mais recentes no blueprint. Caso contrário, os valores serão atualizados na próxima vez que o Live Copy for sincronizado.
+
+>[!TIP]
+>
+>Para obter mais informações sobre herança, consulte o documento [Gerenciador de vários sites e Tradução](/help/sites-cloud/administering/msm-and-translation.md)
