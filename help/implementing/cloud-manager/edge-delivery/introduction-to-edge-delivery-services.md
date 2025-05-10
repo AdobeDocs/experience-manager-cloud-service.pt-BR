@@ -4,7 +4,7 @@ description: Saiba como entregar seus projetos do Cloud Manager usando o Edge De
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 086aaf323291279d0782c71982baa1a5867784a1
+source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 3%
@@ -30,7 +30,7 @@ O Cloud Manager no AEM as a Cloud Service permite que você ative o Serviço Edg
 
 ## Sobre o Edge Delivery Services no Cloud Manager {#edge-in-cloud-manager}
 
-Se você tiver licenciado o Edge Delivery Services como parte da Adobe Experience Manager Sites, poderá integrar seu site com o Edge Delivery Services diretamente na Cloud Manager e ativar o [usando uma experiência guiada de autoatendimento](/help/implementing/cloud-manager/managing-code/private-repositories.md).
+Se você tiver licenciado o Edge Delivery Services como parte da Adobe Experience Manager Sites, poderá integrar seu site com o Edge Delivery Services diretamente na Cloud Manager e ativar o [usando uma experiência guiada de autoatendimento](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 Além disso, você pode acessar uma experiência unificada para gerenciar todas as propriedades do AEM, garantindo a consistência entre os fluxos de trabalho principais. Esses workflows incluem gerenciamento de nome de domínio, gerenciamento de certificado SSL e mapeamentos CDN.
 
@@ -83,7 +83,7 @@ A **lista de tarefas do Edge Delivery** no Cloud Manager é uma lista de verific
 | 7 | Configurar validação por push | Consulte [Configurar validação por push para um site do Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Publicação | Consulte a [Lista de verificação de ativação](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441566?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registrar um tíquete de suporte {#eds-support-ticket}
 
