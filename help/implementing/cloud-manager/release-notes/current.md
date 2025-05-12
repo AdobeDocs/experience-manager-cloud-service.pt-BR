@@ -4,9 +4,9 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.5.0 no Adobe E
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: effa19a98d59993e330e925fb933a436ff9d20d7
+source-git-commit: 6b18623cc940856383009cd6b4ba011515c12ab5
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '780'
 ht-degree: 12%
 
 ---
@@ -40,7 +40,7 @@ A configuração da fonte de conteúdo difere entre a Helix 4 e a Helix 5 da seg
 
 Este artigo fornece etapas de configuração abrangentes, exemplos e instruções de validação para ambas as versões.
 
-B **antes de começar**
+**Antes de começar**
 
 Se você usar o [Edge Delivery com um clique no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), seu site será a Helix 5 com um único repositório. Siga as instruções da Helix 5 e use a versão do Helix 4 YAML fornecida como um fallback.
 
@@ -131,7 +131,7 @@ Use a API do Serviço de configuração.
 1. Autentique por meio de uma chave de API ou token de acesso.
 1. Fazer a seguinte chamada de API `PUT`:
 
-   ```bash
+   ```bash {.line-numbering}
    PUT /api/{program}/{programId}/site/{siteId}
    Content-Type: application/json
    
