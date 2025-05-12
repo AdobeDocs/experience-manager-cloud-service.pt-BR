@@ -1,12 +1,12 @@
 ---
 title: Criação de um ambiente
-description: Esta página descreve a criação de um ambiente no Cloud Manager para Screens as a Cloud Service.
+description: Esta página descreve a criação de um ambiente no Cloud Manager para o Screens as a Cloud Service.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 feature: Screens Deployments
 role: Admin, Developer, User
-source-git-commit: f9ba9fefc61876a60567a40000ed6303740032e1
+source-git-commit: 66cb3b49836d9bb52d7955edcf1f0b7f87b22802
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '193'
 ht-degree: 4%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 4%
 Esta seção descreve como criar um ambiente para seu programa no Cloud Manager.
 
 >[!NOTE]
->Consulte [Gerenciamento de ambientes no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=pt-BR) para saber como o usuário pode criar um ambiente.
+>Consulte [Gerenciamento de ambientes no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html) para saber como o usuário pode criar um ambiente.
 
 ## Objetivo {#objective}
 
 A seção a seguir descreve como criar um ambiente para seu programa no Cloud Manager.
 
-## Etapas para criar um ambiente para seu projeto do Screens no Cloud Manager {#steps-branch-creation}
+## Etapas para criar um Ambiente para seu projeto no Cloud Manager {#steps-branch-creation}
 
-Depois que a criação do projeto for concluída com êxito, você poderá ver a atualização do cartão de chamada para ação na página Visão geral do Cloud Manager.
+Depois que a criação do projeto for concluída com êxito, você poderá ver a atualização do cartão do call-to-action na página Visão geral da Cloud Manager.
 
 1. Navegue até o Cloud Manager e selecione o ícone para acessar a página **Visão geral** do Cloud Manager.
 
@@ -36,7 +36,7 @@ Depois que a criação do projeto for concluída com êxito, você poderá ver a
 
    ![imagem](/help/screens-cloud/assets/onboarding/add-environ2.png)
 
-1. Depois que a adição de um ambiente é concluída, o cartão de chamada para ação é atualizado, conforme mostrado na figura abaixo.
+1. Após a conclusão da adição de um ambiente, a placa call-to-action é atualizada, conforme mostrado na figura abaixo.
 
    ![imagem](/help/screens-cloud/assets/onboarding/add-environ3a.png)
 
