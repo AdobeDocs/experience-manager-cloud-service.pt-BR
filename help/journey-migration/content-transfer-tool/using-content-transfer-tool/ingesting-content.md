@@ -4,21 +4,21 @@ description: Saiba como usar o Cloud Acceleration Manager para assimilar conteú
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 feature: Migration
 role: Admin
-source-git-commit: 01c2bda6b688bb85a214991f7594585f87850ec2
+source-git-commit: 30386a3117f241d81eed5e55f6c6e97bbe4084f8
 workflow-type: tm+mt
-source-wordcount: '3441'
-ht-degree: 12%
+source-wordcount: '3467'
+ht-degree: 11%
 
 ---
 
 # Assimilar conteúdo no Cloud Service {#ingesting-content}
 
-## Processo de assimilação no Cloud Acceleration Manager {#ingestion-process}
+## Processo de ingestão no Cloud Acceleration Manager {#ingestion-process}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion"
->title="Assimilação de conteúdo"
->abstract="Assimilação refere-se à assimilação de conteúdo do conjunto de migração na instância de destino do Cloud Service. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
+>title="Ingestão de conteúdo"
+>abstract="Ingestão refere-se à ingestão de conteúdo do conjunto de migração na instância de destino do Cloud Service. A ferramenta Transferência de conteúdo tem um recurso que oferece suporte a atualizações complementares de conteúdo diferencial, com o qual é possível transferir somente as alterações feitas desde a atividade de transferência de conteúdo anterior."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content#top-up-extraction-process" text="Extração complementar"
 
 Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud Acceleration Manager:
@@ -76,8 +76,8 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_estimate"
->title="Duração estimada da assimilação"
->abstract="Uma duração aproximada de uma assimilação específica pode ser exibida para fornecer uma noção geral de quanto tempo ela levará. Sua precisão é limitada."
+>title="Duração estimada da ingestão"
+>abstract="Uma duração aproximada de uma ingestão específica pode ser exibida para fornecer uma noção geral de quanto tempo ela levará. Sua precisão é limitada."
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets/estimate.png)
 
@@ -98,7 +98,7 @@ Siga as etapas abaixo para assimilar seu conjunto de migração usando o Cloud A
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestão complementar"
->abstract="Use o recurso complementar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da assimilação, verifique os logs em busca de erros ou avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
+>abstract="Use o recurso complementar para mover o conteúdo modificado desde a atividade de transferência de conteúdo anterior. Após a conclusão da ingestão, verifique os logs em busca de erros ou avisos. Todos os erros devem ser resolvidos imediatamente, seja resolvendo os problemas relatados ou entrando em contato com o Atendimento ao cliente da Adobe."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs" text="Exibir logs"
 
 A ferramenta Transferência de conteúdo tem um recurso que permite a extração de conteúdo diferencial executando um *complemento* do conjunto de migração. Isso permite que o conjunto de migração seja modificado para incluir somente o conteúdo que foi alterado desde a extração anterior, sem precisar extrair todo o conteúdo novamente.
@@ -116,8 +116,8 @@ Comece criando uma tarefa de assimilação e verifique se **Apagar** está desat
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_troubleshooting"
->title="Solução de problemas de assimilação de conteúdo"
->abstract="Consulte os logs de assimilação e a documentação para descobrir os motivos comuns pelos quais uma assimilação pode falhar e uma maneira de corrigir o problema. Depois de corrigida, a assimilação pode ser executada novamente."
+>title="Solução de problemas de ingestão de conteúdo"
+>abstract="Consulte os logs de ingestão e a documentação para descobrir os motivos comuns pelos quais uma ingestão pode falhar e uma maneira de corrigir o problema. Depois de corrigida, a ingestão pode ser executada novamente."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers" text="Validar transferências de conteúdo"
 
 ### O CAM não consegue recuperar o token de migração {#cam-unable-to-retrieve-the-migration-token}
@@ -151,13 +151,13 @@ Esta mensagem indica que o Cloud Acceleration Manager não conseguiu acessar o s
 > O campo &quot;Token de migração&quot; é exibido porque, em alguns casos, a recuperação desse token é o que realmente não é permitido. Ao permitir que seja fornecido manualmente, ele pode permitir que o usuário inicie a assimilação rapidamente, sem nenhuma ajuda adicional. Se o token for fornecido e a mensagem ainda for exibida, a recuperação do token não foi o problema.
 
 * A AEM as a Cloud Service mantém o estado do ambiente e, ocasionalmente, deve reiniciar o serviço de migração por vários motivos normais. Se esse serviço estiver sendo reiniciado, ele não poderá ser acessado, mas estará disponível no futuro.
-* É possível que outro processo esteja sendo executado na instância. Por exemplo, se as [Atualizações de versão do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) estiverem aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
+* É possível que outro processo esteja sendo executado na instância. Por exemplo, se as [Atualizações de versão do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) estiverem aplicando uma atualização, o sistema pode estar ocupado e o serviço de migração pode ficar indisponível regularmente. Quando esse processo estiver concluído, o início da assimilação poderá ser tentado novamente.
 * Se uma [Inclui na lista de permissões de IP ](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) tiver sido aplicada por meio do Cloud Manager, ela impedirá que o Cloud Acceleration Manager acesse o serviço de migração. Um endereço IP não pode ser adicionado para assimilações porque seu endereço é dinâmico. Atualmente, a única solução é desativar a inclui na lista de permissões de IP durante o processo de assimilação e indexação.
 * Pode haver outros motivos que precisem de investigação. Se a assimilação ou indexação continuar a falhar, entre em contato com o Atendimento ao cliente da Adobe.
 
 ### Atualizações e assimilações de versão do AEM {#aem-version-updates-and-ingestions}
 
-[As Atualizações de Versão do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) são aplicadas automaticamente aos ambientes para mantê-los atualizados com a versão mais recente do AEM as a Cloud Service. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente.
+[As Atualizações de Versão do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/deploying/aem-version-updates) são aplicadas automaticamente aos ambientes para mantê-los atualizados com a versão mais recente do AEM as a Cloud Service. Se a atualização for acionada quando uma assimilação for executada, poderá causar resultados imprevisíveis, incluindo a corrupção do ambiente.
 
 Se as &quot;Atualizações de versão do AEM&quot; estiverem integradas no programa de destino, o processo de assimilação tentará desativar sua fila antes de ser iniciado. Quando a assimilação é concluída, o estado do atualizador de versão retorna ao estado em que estava antes de as assimilações começarem.
 
@@ -173,12 +173,12 @@ Se &quot;Atualizações de versão do AEM&quot; estiver ativo (ou seja, as atual
 
 ![imagem](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_active.png)
 
-### Falha de assimilação devido ao Ambiente de nuvem não estar no estado pronto {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
+### Falha de ingestão devido ao Ambiente de nuvem não estar no estado pronto {#ingestion-failure-due-to-cloud-environment-not-in-ready-state}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_cloud_environment_not_in_ready_state"
 >title="O Ambiente de nuvem não está no estado pronto"
->abstract="Em casos raros, o ambiente de nuvem de destino pode estar enfrentando problemas inesperados, o que causará a falha da assimilação."
+>abstract="Em casos raros, o ambiente de nuvem de destino pode estar enfrentando problemas inesperados, o que causará a falha da ingestão."
 
 Em casos raros, o ambiente Cloud Service de destino da assimilação pode estar com problemas inesperados. Como resultado, a assimilação falhará, pois o ambiente não está no estado pronto esperado. Verifique o log de assimilação para revelar mais detalhes do estado de erro encontrado.
 
@@ -239,18 +239,18 @@ Essa é uma restrição MongoDB.
 
 Consulte a observação `Node property value in MongoDB` em [Pré-requisitos da Ferramenta de Transferência de Conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md) para obter mais informações e um link para uma ferramenta Oak que possa ajudar a encontrar todos os nós grandes. Depois que todos os nós com tamanhos grandes forem corrigidos, execute a extração e a assimilação novamente.
 
-Para evitar possivelmente essa restrição, execute o [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) na instância do AEM de origem e revise as descobertas apresentadas, especialmente o padrão [&quot;Estrutura de Repositório Sem Suporte&quot; (URS)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-pattern-detection/table-of-contents/urs).
+Para evitar possivelmente essa restrição, execute o [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) na instância do AEM de origem e revise as descobertas apresentadas, especialmente o padrão [&quot;Estrutura de Repositório Sem Suporte&quot; (URS)](https://experienceleague.adobe.com/en/docs/experience-manager-pattern-detection/table-of-contents/urs).
 
 >[!NOTE]
 >
 >O [Analisador de Práticas Recomendadas](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md) versão 2.1.50+ informará sobre nós grandes que contêm caracteres unicode que excedem o tamanho máximo. Verifique se você está executando a versão mais recente. As versões do BPA anteriores à versão 2.1.50 não identificarão e relatarão esses nós grandes e precisarão ser descobertas separadamente usando a ferramenta de pré-requisito do Oak mencionada acima.
 
-### Falha de assimilação devido a erros intermitentes inesperados {#ingestion-failure-due-to-unexpected-intermittent-errors}
+### Falha de ingestão devido a erros intermitentes inesperados {#ingestion-failure-due-to-unexpected-intermittent-errors}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_cam_ingestion_troubleshooting_intermittent_errors"
 >title="Erros intermitentes inesperados"
->abstract="Às vezes, erros intermitentes e inesperados do serviço downstream podem ocorrer e, infelizmente, o único recurso é simplesmente repetir a assimilação."
+>abstract="Às vezes, erros intermitentes e inesperados do serviço downstream podem ocorrer e, infelizmente, o único recurso é simplesmente repetir a ingestão."
 
 Às vezes, questões intermitentes inesperadas podem se prestar a assimilações fracassadas, onde infelizmente o único recurso é tentar novamente a assimilação. Investigue o log de assimilação para descobrir a causa da falha e ver se ele está alinhado a qualquer um dos erros listados abaixo, onde uma nova tentativa deve ser feita.
 
@@ -259,6 +259,7 @@ Para evitar possivelmente essa restrição, execute o [Analisador de Práticas R
 * `Atlas prescale timeout error` - A fase de assimilação tentará dimensionar previamente o banco de dados de nuvem de destino para um tamanho adequado que se alinhe ao tamanho do conteúdo do conjunto de migração que está sendo assimilado. Raramente, essa operação não é concluída dentro do período esperado.
 * `Exhausted mongo restore retries` - As tentativas de restaurar um despejo local do conteúdo do conjunto de migração assimilado para o banco de dados de nuvem se esgotaram. Isso indica um problema geral de integridade/rede com o MongoDB, que muitas vezes se cura após alguns minutos.
 * `Mongo network error` - Às vezes, estabelecer uma conexão com MongoDB pode falhar, fazendo com que o processo de assimilação saia antes e relate-o como falho. Uma simples tentativa de assimilação deve ser feita.
+* `Mongo server selection error` - Este é um erro raro de tempo limite do lado do cliente mongo que pode ocorrer por vários motivos subjacentes. Uma nova tentativa provavelmente corrigirá o problema.
 
 ### Ingestão cancelada {#ingestion-rescinded}
 
