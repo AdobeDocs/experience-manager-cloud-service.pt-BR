@@ -4,10 +4,10 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.5.0 no Adobe E
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: f9f4226bff8a0772878c144773eb8ff841a0a8d0
+source-git-commit: 3db5ee2852fadc9c86b3a7979ce40296bbaca858
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 12%
+source-wordcount: '1038'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +42,7 @@ Este artigo fornece etapas de configuração abrangentes, exemplos e instruçõe
 
 **Antes de começar**
 
-Se você usar o [Edge Delivery com um clique no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), seu site será a Helix 5 com um único repositório. Siga as instruções da Helix 5 e use a versão de instruções da Helix 4 YAML fornecida como um fallback.
+Se você usar o [Edge Delivery com um clique no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md##one-click-edge-delivery-site), seu site será a Helix 5 com um único repositório. Siga as instruções da Helix 5 e use a versão da Helix 4 YAML fornecida das instruções como um fallback.
 
 **Determinar sua versão da Helix**
 
@@ -60,7 +60,7 @@ mountpoints:
   /: https://drive.google.com/drive/folders/your-folder-id
 ```
 
-Este exemplo é apenas ilustrativo. O URL real deve apontar para sua fonte de conteúdo, como uma pasta específica do Google Drive, diretório do SharePoint ou caminho do AEM.
+Este exemplo é apenas ilustrativo. O URL real deve apontar para sua fonte de conteúdo, como uma pasta do Google Drive, um diretório do SharePoint ou um caminho do AEM.
 
 **Para configurar a fonte de conteúdo para a Helix 4:**
 
@@ -190,6 +190,16 @@ Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing
 ![Caixa de diálogo Adicionar repositório](/help/implementing/cloud-manager/release-notes/assets/azure-repo.png)
 
 Se tiver interesse em testar esse novo recurso e compartilhar o seu feedback, envie um email para [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) do seu endereço de email associado à sua Adobe ID. Inclua qual plataforma Git deseja usar e se você está em uma estrutura de repositório privado/público ou empresarial.
+
+#### Perguntas frequentes sobre o Bring Your Own Git
+
+| Pergunta | Resposta |
+|---|---|
+| *Como um projeto pode voltar para o repositório Git gerenciado pela Adobe, se necessário?* | É simples voltar atrás. [Atualize os pipelines](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) para apontar para o repositório do Adobe e remover o repositório externo se ele não for mais necessário. |
+| *É possível configurar repositórios diferentes para ambientes diferentes (por exemplo, não produção versus produção) para permitir testes em não produção primeiro?* | Sim, repositórios diferentes podem ser configurados para ambientes separados. Por exemplo, o pipeline de desenvolvimento ou qualidade do código pode apontar para um repositório externo enquanto o pipeline de produção permanece conectado ao repositório do Adobe. Verifique se o trabalho de sincronização entre os dois repositórios permanece ativo durante essa configuração. |
+| *As configurações existentes, como listas de permissões IP, continuam a funcionar?* | Sim, as listas de permissões IP existentes continuam a funcionar normalmente. No entanto, se o repositório Git externo estiver protegido por um firewall, os [endereços IP Adobe necessários deverão ser adicionados à lista de permissões](/help/implementing/cloud-manager/ip-allow-lists/introduction.md). |
+| *Todos os URLs de repositório do GitLab funcionam? A URL de repositório em uso segue o formato `https://gitlab_dedicated_url.com/path/repo-name.git`, que difere do exemplo na documentação.* | Sim, qualquer repositório do GitLab com suporte para API V3 ou V4 tem suporte, incluindo URLs do GitLab auto-hospedados como o descrito em [Adicionar repositórios externos no Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
+
 
 <!--
 ## Bug fixes
