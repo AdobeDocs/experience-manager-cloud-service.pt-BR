@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 158b808c2f97bea52d285d4f2611c6e297375ca1
+source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1553'
 ht-degree: 7%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 20783, lançada publicamente em quarta-feira, 13 de maio de 2025. A versão de manutenção anterior era 20626.
 
-A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-20783}
 
@@ -33,9 +33,8 @@ A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos 
 * SITES-27775: Pesquisa de referência otimizada durante a publicação.
 * SITES-30885: processamento JSON otimizado em consultas persistentes.
 * SITES-25433: Edge Delivery com editor universal: suporte à renderização de página inteira ao comparar versões antigas.
-* SITES-27792: Edge Delivery com Universal Editor: mova a configuração do EDS totalmente para a configuração da CA.
+* SITES-27792: Edge Delivery com Universal Editor: adicionar modelo específico para configurações de serviço do Edge Delivery
 * SITES-19754: Edge Delivery com Universal Editor: mensagem de erro convincente quando a configuração é interrompida.
-* SITES-30267: Edge Delivery com Universal Editor: Sheet V2 (Early Access).
 * SITES-30328: Edge Delivery com editor universal: visualização do suporte ao Sidekick.
 * SITES-23499: Edge Delivery com Universal Editor: permite que vários campos sejam usados para opções de bloco.
 * SITES-29987: Adicione a capacidade de definir `previewUrlPattern` ao criar modelos de fragmento de conteúdo.
