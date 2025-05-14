@@ -4,7 +4,10 @@ description: Saiba mais sobre considerações importantes ao decidir como você 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: a75e7051-e5ec-4d2a-848a-a66989e2f30b
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+index: false
+hide: true
+hidefromtoc: true
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -17,14 +20,14 @@ Saiba mais sobre considerações importantes ao decidir como você cria seu cont
 
 ## Visão geral das considerações {#overview}
 
-A flexibilidade do AEM garante que suas necessidades de criação sejam atendidas, independentemente da escolha de criação baseada em documento ou criação no WYSIWYG. Lembre-se dos fatos a seguir ao iniciar suas considerações.
+A flexibilidade do AEM garante que suas necessidades de criação sejam cobertas, independentemente da escolha entre criação baseada em documento ou criação no WYSIWYG. Lembre-se dos fatos a seguir ao iniciar suas considerações.
 
-* **Sempre envolva seus autores de conteúdo na decisão.** - Seus autores de conteúdo são seus especialistas e seu insight é vital.
+* **Sempre envolva seus autores de conteúdo na decisão.** - Seus autores de conteúdo são seus especialistas e sua insight é essencial.
 * **Vários métodos de criação podem ser implementados.** - Embora a Adobe recomende começar de forma simples e escalonar a complexidade conforme a necessidade surgir, vários métodos de criação podem trabalhar juntos em um único projeto.
-* **Você sempre pode alterar seu método de criação depois do fato.** - O que quer que você decida que não está preso. A mudança de um método para outro é direta com o auxílio de ferramentas de migração automatizadas Adobe.
-* **Você não deve decidir antes da implementação, mas como parte da implementação.** - O AEM é um produto unificado, portanto, essa decisão importante não precisa fazer parte das negociações de contrato. Quando você compra AEM, você tem todos eles. Em vez disso, essa é uma decisão durante a implementação.
+* **Você sempre pode alterar seu método de criação depois do fato.** - O que quer que você decida que não está preso. A mudança de um método para outro é direta com a assistência das ferramentas de migração automatizada da Adobe.
+* **Você não deve decidir antes da implementação, mas como parte da implementação.** - O AEM é um produto unificado, portanto, essa decisão importante não precisa fazer parte das negociações de contrato. Quando você compra o AEM, você obtém todos eles. Em vez disso, essa é uma decisão durante a implementação.
 
-O Adobe pode ajudar você a determinar qual método (ou métodos) melhor se adapta aos seus requisitos como parte da implementação.
+O Adobe pode ajudá-lo a determinar qual método (ou métodos) melhor se adapta aos seus requisitos como parte da implementação.
 
 ## Um único tamanho não serve para tudo {#one-size}
 
@@ -36,7 +39,7 @@ Projetos diferentes podem ter casos de uso diferentes (e vários).
 
 ![Casos de uso](assets/use-cases.png)
 
-O Adobe entende isso e, portanto, não oferece uma abordagem única para todos. O AEM é a sua solução única que oferece diferentes abordagens para a entrega de conteúdo, bem como para a criação de conteúdo que melhor se adapta às suas necessidades.
+A Adobe entende isso e, portanto, não oferece uma abordagem única para todos. O AEM é a sua solução única que oferece diferentes abordagens para a entrega de conteúdo, bem como para a criação de conteúdo que melhor se adapta às suas necessidades.
 
 Para determinar a melhor abordagem, você precisa considerar quatro itens.
 
@@ -47,14 +50,14 @@ Para determinar a melhor abordagem, você precisa considerar quatro itens.
 
 ## Preferências de entrega de conteúdo {#content-delivery}
 
-Sua primeira consideração deve ser como você deseja fornecer seu conteúdo. O Edge Delivery Services oferece sites com velocidade surpreendente, mas talvez seu foco seja a entrega headless. A árvore decisória a seguir pode ajudá-lo a considerar suas opções.
+Sua primeira consideração deve ser como você deseja fornecer seu conteúdo. O Edge Delivery Services oferece sites ultrarrápidos, mas talvez seu foco seja a entrega headless. A árvore decisória a seguir pode ajudá-lo a considerar suas opções.
 
 ![Árvore de decisão de entrega de conteúdo](assets/content-delivery-decision-tree.png)
 
 Isso pode ajudá-lo a decidir se precisa de:
 
-* [AEM como um CMS headless](/help/headless/introduction.md) usando o Editor de fragmento de conteúdo e/ou o Editor universal.
-* AEM Edge Delivery Services usando a [edição baseada em documento](/help/edge/docs/authoring.md) ou a [criação do WYSIWYG com o Editor Universal](/help/edge/wysiwyg-authoring/authoring.md).
+* [AEM as a headless CMS](/help/headless/introduction.md) usando o Editor de fragmento de conteúdo e/ou o Editor universal.
+* AEM Edge Delivery Services usando a [edição baseada em documento](/help/edge/docs/authoring.md) ou a [criação de WYSIWYG com o Editor Universal](/help/edge/wysiwyg-authoring/authoring.md).
 
 ## Preferências de criação de conteúdo {#content-authoring}
 

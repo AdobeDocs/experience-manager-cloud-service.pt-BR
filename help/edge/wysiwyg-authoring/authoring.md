@@ -7,7 +7,7 @@ role: User
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+source-git-commit: e57610e4c5e498ddfdbaa0ba39c9197ecfb5d177
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
@@ -59,4 +59,4 @@ Consulte o [Guia de Introdução do Desenvolvedor para Criação no WYSIWYG com 
 
 A criação no WYSIWYG é uma ferramenta poderosa e intuitiva para autores de conteúdo. No entanto, há vários casos de uso de criação diferentes, que é o motivo pelo qual o AEM oferece soluções de criação adicionais.
 
-Consulte o documento [Escolhendo um método de criação](/help/edge/authoring-methods.md) para saber mais sobre as soluções de criação que a AEM oferece, incluindo criação baseada em documento e headless.
+Consulte o documento [Visão geral do Edge Delivery Services](/help/edge/overview.md#authoring-method) para saber mais sobre as soluções de criação que a AEM oferece, incluindo criação baseada em documento e headless.
