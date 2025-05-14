@@ -1,33 +1,21 @@
 ---
-title: Criar um site do Edge Delivery no Cloud Manager
+title: Crie um site do Edge Delivery no Cloud Manager com um clique
 description: Saiba como criar um site do Edge Delivery rapidamente no Cloud Manager com apenas um clique.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0e30cf827e764a356dde304df3124d0be3d2e58b
+exl-id: 292bf0b4-990b-4980-b971-91b8aedde3de
+source-git-commit: 59743546b5e057599f60a76d3087d7c5b6423b2e
 workflow-type: tm+mt
-source-wordcount: '1101'
-ht-degree: 1%
+source-wordcount: '945'
+ht-degree: 0%
 
 ---
-
 
 # Sobre a criação de um site do Edge Delivery no Cloud Manager {#about-one-click-edge-delivery-site}
 
 O recurso Criar um site do Edge Delivery foi projetado para ajudar a automatizar a integração e a implantação de sites do Edge Delivery no Cloud Manager. Ele simplifica bastante o processo, fazendo você clicar em um único botão. Esse clique único provisiona a infraestrutura necessária, integra-se ao GitHub para controle de versão e configura o armazenamento de documentos e ativos no Google Drive.
 
 Essa automação ajuda a reduzir o esforço manual necessário para configurar o site inicial. Ele garante fluxos de trabalho perfeitos, escalabilidade e melhora o desempenho de suas equipes quando se trata de gerenciar conteúdo na borda.
-
-## Principais conceitos {#key-concepts}
-
-Principais conceitos ao criar um site do Edge Delivery no Cloud Manager com um clique.
-
-| Conceito principal | Descrição |
-| --- | --- |
-| Implantação automatizada do Edge | <ul><li>Os usuários podem criar e configurar sites do Edge Delivery instantaneamente.</li><li>Ao usar a integração do Cloud Manager com o fluxo de trabalho de CI/CD, ele reduz ou elimina a necessidade de processos de integração manuais.</li><li>Integrado ao Cloud Manager para fluxos de trabalho de CI/CD ininterruptos.</li></ul> |
-| Integração com o Cloud Manager | <ul><li>Usa a interface do usuário do Cloud Manager para acionar o processo Edge Delivery com um clique.</li><li>Fornecer acesso à criação e implantação automatizadas do repositório.</li></ul> |
-| Controle de versão baseado no GitHub | <ul><li>Cria um repositório GitHub em uma organização usando modelos padronizados predefinidos para padronizar implantações.</li><li>Links com AEM Bot para atualizações de conteúdo.</li></ul> |
-| Integração de armazenamento de documentos e ativos | <ul><li>Gera uma pasta do Google Drive para armazenamento.<li>Instala o aplicativo de sincronização de código do AEM no repositório, garantindo sincronização e implantação ininterruptas.</li></li><li>Os colaboradores podem gerenciar documentos facilmente.</li></ul> |
-| Segurança e escalabilidade | <ul><li>Garante a conformidade com os padrões de segurança corporativa.</li><li>Suporta vários sites do Edge Delivery em diferentes locatários da Cloud Manager.</li></ul> |
 
 <!-- >
 ## Practical use cases {#use-cases}
@@ -80,7 +68,3 @@ Quando o provisionamento e a validação do site são concluídos pelo Cloud Man
    | Visualizar um site publicado | <ul><li>Na caixa de listagem **Sites do Edge Delivery**, no cabeçalho de coluna **Nome do site**, clique na URL do site que você acabou de criar e publicar.<br>Na barra de Endereços de URL do seu navegador, observe que a URL do site termina com `.page`, indicando que você está visualizando uma visualização do site.</li><li>Para ver o site ativo, altere manualmente `.page` para `.live` na barra de Endereços de URL.</li></ul> |
    | Conceda aos usuários acesso ao repositório de conteúdo no Google Drive | <ul><li> Na caixa de listagem **Sites do Edge Delivery**, na extremidade direita do nome do site, clique em ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para abrir o menu suspenso.</li><li>Clique em ![Ícone Adicionar usuários](https://spectrum.adobe.com/static/icons/workflow_18/Smock_UsersAdd_18_N.svg) **Obter acesso ao repositório de conteúdo** no menu suspenso.</li><li>Na caixa de diálogo **Adicionar colaboradores ao site**, digite o endereço de email de um colaborador e clique em ![Ícone de marca de seleção](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continue adicionando emails do colaborador, conforme necessário.</li><li>Quando terminar, clique em **Adicionar colaboradores**.</li><li>Para compartilhar o link com seus colaboradores de conteúdo, na caixa de diálogo **Collaboration adicionado com êxito**, clique em **OK**.</li><li>Na caixa de diálogo Collaboration adicionada com êxito, clique em ![Ícone Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o link e compartilhá-lo com seus colaboradores.<br>Antes de compartilhar o link, confirme se os colaboradores estão conectados com o endereço de email associado à sua conta IMS. Se a conta de email IMS não estiver disponível, ele deverá usar o endereço de email adicionado como colaborador. Isso garante que os colaboradores possam acessar o link e ver o conteúdo a ser editado ou atualizado no Google Drive.</li><li>Quando terminar a edição, clique em **Publicar site** no Cloud Manager, conforme descrito acima.<br>Ou visualize as alterações feitas, conforme descrito acima.</li></ul> |
    | Conceda aos usuários acesso ao repositório básico no GitHub | <ul><li> Na caixa de listagem **Sites do Edge Delivery**, na extremidade direita do nome do site, clique em ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para abrir o menu suspenso.</li><li>Clique em ![Ícone do código](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) **Obter acesso ao repositório base** no menu suspenso.</li><li>Na caixa de diálogo **Acessar o repositório base do seu site**, digite o nome de usuário do GitHub de um colaborador e clique em ![Ícone de marca de seleção](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Checkmark_18_N.svg).</li><li>Continue adicionando nomes de usuário do GitHub, conforme necessário.</li><li>Quando terminar, clique em **Adicionar colaboradores**.</li>Os usuários devem conceder acesso a seu próprio nome de usuário do GitHub para visualizar o repositório. |
-
-
-
-
