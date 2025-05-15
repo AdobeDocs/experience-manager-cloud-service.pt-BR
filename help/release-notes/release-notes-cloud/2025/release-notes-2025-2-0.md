@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: 3e0afac8f2f81f9ceae1cbfa456f1e747f2bdb06
+source-git-commit: 7eabd6199467d4e42f6bf7914de0d7ba7a3f9733
 workflow-type: tm+mt
 source-wordcount: '1524'
 ht-degree: 12%
@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Continuaremos ativando o novo Editor de fragmento de conteúdo com base na inter
 
 **API HTTP de tradução**
 
-A API REST HTTP do AEM Translation que está no modo de adoção inicial há algum tempo está disponível. A documentação pode ser encontrada [aqui](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/experimental/translation/). A API permite automatizar as etapas necessárias no processo de gerenciamento de tradução de conteúdo no AEM.
+A API REST HTTP do AEM Translation que está no modo de adoção inicial há algum tempo está disponível. A documentação pode ser encontrada [aqui.](https://developer.adobe.com/experience-cloud/experience-manager-apis/api/stable/translation/) A API permite automatizar as etapas necessárias no processo de gerenciamento de tradução para conteúdo no AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -141,7 +141,7 @@ Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@a
 
 Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas ao criar projetos do Adobe Developer Console.
 
-Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra a configuração e o uso.
+Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra a configuração e o uso.
 
 Especificamente, os endpoints de API listados abaixo estão disponíveis como parte de um programa de adoção antecipada. Se estiver interessado, envie um email para [aem-apis@adobe.com](mailto:aem-apis@adobe.com) descrevendo como você pretende usá-los.
 
