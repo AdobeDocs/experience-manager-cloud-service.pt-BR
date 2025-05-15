@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d3a935a061831befaebd2ce25c00f8bf10522f6c
+source-git-commit: 088d470333d8f5a26f1a938380028541a1e945a1
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 7%
+source-wordcount: '1750'
+ht-degree: 6%
 
 ---
 
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 20783, lançada publicamente em quarta-feira, 13 de maio de 2025. A versão de manutenção anterior era 20626.
 
-A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-20783}
 
@@ -30,6 +30,7 @@ A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos 
 * FORMS-19125: o editor de Formulário adaptável dos Componentes principais é aprimorado para oferecer suporte ao mapeamento automático de fragmentos de Formulário adaptável disponíveis quando uma seção correspondente da árvore de fonte de dados é colocada na tela de formulário. Isso traz um recurso essencial de produtividade do editor de base para os componentes principais.
 * FORMS-17887: O AEM Forms agora oferece a capacidade de gerar documentos no formato AFP (Advanced Function Presentation) por meio de seu serviço de saída. Esse aprimoramento atende às necessidades do cliente para ambientes de impressão de alta velocidade e alto volume que normalmente usam o AFP.
 * FORMS-15089: o AEM Forms introduziu o recurso para que um formulário tenha versões a serem publicadas de forma que todos os fragmentos que o constituem sejam incorporados (incorporados) a essa versão publicada específica. Isso garante uma representação exata e independente do formulário, conforme ele era exibido no momento da publicação, o que pode ser essencial para fins de arquivamento, legais ou de conformidade.
+* FORMS-17107: o AEM Forms agora oferece análise de função personalizada aprimorada do lado do cliente. Isso inclui suporte para recursos modernos do JavaScript (ECMAScript ES10+), como encadeamento opcional, e introduz a capacidade de usar importações estáticas em scripts de função personalizados. Isso permite que os desenvolvedores organizem melhor o código, utilizem módulos ESM e removam limitações anteriores encontradas com funções personalizadas no Adaptive Forms v2 e Edge Delivery Services, especialmente para usuários que anteriormente precisavam de soluções alternativas para esses recursos.
 * SITES-27775: Pesquisa de referência otimizada durante a publicação.
 * SITES-30885: processamento JSON otimizado em consultas persistentes.
 * SITES-25433: Edge Delivery com editor universal: suporte à renderização de página inteira ao comparar versões antigas.
@@ -70,6 +71,8 @@ A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos 
 * FORMS-19629: o analisador de esquema JSON está produzindo resultados inválidos ou interpretando incorretamente determinados esquemas JSON fornecidos pelo cliente. Esse problema pode afetar negativamente as funcionalidades que dependem da análise de esquema correta, como o mapeamento automático de fragmentos.
 * FORMS-19380: a introdução do suporte ao controle de versão para o Componente principal Adaptive Forms tem recursos de controle de versão ativados involuntariamente para vários outros tipos de ativos (por exemplo, Foundation Forms, arquivos do PDF, Temas, FDM) sem design ou teste específicos para esses tipos de ativos. Este efeito colateral não intencional está sob investigação.
 * FORMS-17707: o conector do AEP (Adobe Experience Platform) não está funcionando corretamente quando configurado para se conectar a ambientes de &quot;preparo&quot; da plataforma AEP.
+FORMS-18526: ao copiar uma regra que tem condições baseadas em vários campos, um campo referenciado nas condições ou ações da regra (que não é o campo principal que aciona a regra) não é atualizado para fazer referência correta ao novo campo para o qual a regra está sendo copiada. Em vez disso, ele continua fazendo referência ao campo de origem original de onde a regra foi copiada.
+FORMS-18474: uma regra criada para definir o foco em um painel ou componente específico quando o valor de um campo específico é alterado (por exemplo, campo &quot;A&quot;) acionado incorretamente por uma alteração em qualquer campo do formulário. Por exemplo, se o campo &quot;B&quot; for modificado, o foco ainda será definido para o painel designado, mesmo que a regra tenha sido configurada apenas para alterações no campo &quot;A&quot;.
 * GRANITE-58276: os ciclos de dependência OSGi impedem que a fábrica do mecanismo de script HTL funcione corretamente.
 * OAK-11673: aumento do CPU Oak-segment-azure v12 causado por refreshLease.
 * SITES-30752: Não use cabeçalhos `If-modified-since`/`last-modified` ao gerar resposta de consulta persistente.
@@ -90,7 +93,7 @@ A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos 
 * SITES-30728: OnTime/OffTime não publica/desfaz a publicação conforme esperado quando configurado nas propriedades do ativo.
 * SITES-29789: alteração de link de componente em páginas raiz copiadas no AEM.
 * SITES-29191: Não é possível adicionar mais de 20 SKUs ao componente de lista de produtos.
-* SITES-30372: O Recorte inteligente não funciona no componente principal da Imagem (V2) do AEM.
+* SITES-30372: O Recorte inteligente não funciona no componente principal Imagem (V2) do AEM.
 * SITES-28693: o componente de Teaser renderiza o HTML corrompido quando o título está vazio.
 * SITES-28668: não é possível promover a inicialização com LaunchPromotionParameters.
 * SITES-31005: Aprimore a interface do trabalho de implantação para mostrar ao cliente o progresso.
