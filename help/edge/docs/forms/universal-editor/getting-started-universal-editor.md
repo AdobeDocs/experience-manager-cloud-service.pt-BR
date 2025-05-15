@@ -71,6 +71,7 @@ O modelo do AEM Forms Boilerplate inicia rapidamente com um projeto do AEM pré-
       ![abrir arquivo fstab.yaml](/help/edge/docs/forms/assets/open-fstab.png)
 
    1. Edite o arquivo **fstab.yaml** para atualizar o ponto de montagem do seu projeto. Substitua o URL pelo URL da sua instância de criação do AEM as a Cloud Service.
+
       `https://<aem-author>/bin/franklin.delivery/<owner>/<repository>/main`
 
       ![editar arquivo fstab.yaml](/help/edge/docs/forms/assets/edit-fstab-file.png)
@@ -344,7 +345,7 @@ Você pode configurar um ambiente de desenvolvimento do AEM local para desenvolv
        npm install -g @adobe/aem-cli
    ```
 
-1. **Clonar seu projeto do GitHub**: clone seu repositório de projetos do AEM do GitHub usando o seguinte comando, substituindo <owner> com o proprietário do repositório e <repo> com o nome do repositório:
+1. **Clonar seu projeto do GitHub**: clone seu repositório de projetos do AEM do GitHub usando o seguinte comando, substituindo &lt;owner> com o proprietário do repositório e &lt;repo> com o nome do repositório:
 
    ```
    git clone https://github.com/<owner>/<repo>
