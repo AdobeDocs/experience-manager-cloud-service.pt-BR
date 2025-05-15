@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: f0d60086-e92e-4492-ad50-bef84fed2a82
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: bcf0940d3365ecde6788772d28d32f22f367816d
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 2%
@@ -81,12 +81,12 @@ Conclua o assistente como faria para qualquer outra página e crie sua nova pág
 
 Os modelos de página definem apenas o conteúdo inicial das páginas. As páginas são totalmente editáveis com o Universal Editor.
 
-* As páginas criadas a partir de modelos de páginas são cópias independentes do modelo.
+* As páginas criadas a partir de modelos de página são cópias independentes do modelo.
 * Se o modelo for alterado, as páginas existentes baseadas nesse modelo não serão alteradas.
 * O autor de conteúdo pode modificar e atualizar o conteúdo da página resultante conforme necessário, sem restrições do modelo.
 
 ## Modelos editáveis {#editable-templates}
 
-As páginas criadas com o [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) também podem ser baseadas em modelos. Os modelos usados para criar páginas para o Editor Universal e o Editor de Páginas usam os [modelos editáveis](/help/implementing/developing/components/templates.md) do AEM.
+As páginas criadas com o [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) também podem ser baseadas em modelos. Os modelos usados para criar páginas para o Editor Universal e o Editor de Páginas usam os [modelos editáveis](/help/implementing/developing/components/templates.md) da AEM.
 
 Os modelos usados para criar páginas editáveis com o Editor de páginas usam todos os recursos dos modelos editáveis. Os modelos usados para criar páginas editáveis com o Editor universal usam somente o recurso de conteúdo inicial.
