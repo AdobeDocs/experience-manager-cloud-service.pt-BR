@@ -4,7 +4,7 @@ description: Saiba como entregar seus projetos do Cloud Manager usando o Edge De
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 54ea92b53d97be314dcef1ed3afbde35b16f9949
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 3%
@@ -79,11 +79,11 @@ A **lista de tarefas do Edge Delivery** no Cloud Manager é uma lista de verific
 | 3 | Adicionar site do Edge Delivery OU <br>Criar site agora | Consulte [Adicionar um site do Edge Delivery](#eds-add-site).<br>Consulte [Criar um site do Edge Delivery no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/create-edge-delivery-site.md). |
 | 4 | Adicionar domínio | Consulte [Adicionar um nome de domínio personalizado](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md). |
 | 5 | Adicionar certificado SSL | Consulte [Adicionar certificado SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md). |
-| 6 | Configurar o CDN do site do Edge Delivery | Consulte [Adicionar uma configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md). |
+| 6 | Configurar o CDN do site do Edge Delivery | Consulte [Adicionar um mapeamento de domínio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md). |
 | 7 | Configurar validação por push | Consulte [Configurar validação por push para um site do Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Publicação | Consulte a [Lista de verificação de ativação](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441566?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registrar um tíquete de suporte {#eds-support-ticket}
 

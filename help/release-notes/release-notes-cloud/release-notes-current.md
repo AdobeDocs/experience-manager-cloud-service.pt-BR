@@ -5,7 +5,7 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 31fac8e421e58146977222d699bac1c7cf3ee4e5
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1713'
 ht-degree: 9%
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -70,7 +70,7 @@ Além disso, os clientes que usam o AEM 6.5 devem estar cientes de que a pilha d
 
 A guia Largura de banda no painel de relatórios do Dynamic Media Classic não é mais compatível desde abril de 2025.
 
-Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 
 ## Novos recursos no Assets View {#new-features-assets-view}
@@ -131,13 +131,13 @@ Os recursos de integração entre o Forms e o AEP agora estão disponíveis para
 
 Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas pela criação de projetos do Adobe Developer Console e oferecem suporte a OAuth de servidor para servidor, aplicativo da Web e aplicativo de página única (SPA).
 
-[Consulte a lista completa](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) de APIs baseadas em OpenAPI, [saiba mais](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustre a configuração e o uso.
+[Consulte a lista completa](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) de APIs baseadas em OpenAPI, [saiba mais](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustre a configuração e o uso.
 
 Assista a este vídeo para saber como configurar uma API autenticada para uso posterior:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3457510?quality=12&learn=on)
 
-### Aprimoramentos relacionados à configuração do CDN {#cdn-enhancements}
+### Aprimoramentos relacionados ao mapeamento de domínio {#cdn-enhancements}
 
 A CDN gerenciada pela Adobe oferece opções de configuração flexíveis, conforme descrito no [artigo sobre Pipeline de configuração](/help/operations/config-pipeline.md#configurations). Estes são alguns recursos recentes:
 
@@ -202,7 +202,7 @@ Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@a
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

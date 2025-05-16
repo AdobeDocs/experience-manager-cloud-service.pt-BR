@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: b3816929-2c0a-4d6a-b583-c928d2182ecd
 feature: Release Information
 role: Admin
-source-git-commit: 7f63f66cb1753fc32996e4672214eccc33ca8d92
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '2293'
 ht-degree: 8%
@@ -37,7 +37,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo Visão geral da versão de março de 2024 que exibe um resumo dos recursos adicionados na versão 2024.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450364?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3428342?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -49,7 +49,7 @@ O AEM Sites agora pode ser usado como uma fonte de conteúdo para o Edge Deliver
 
 ![Criação no AEM](/help/edge/assets/universal_editor_edge_delivery_services.png)
 
-Para obter mais informações, consulte a [documentação](/help/edge/overview.md) e assista ao [AEM Gems - Introdução à criação no AEM e no Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694?profile.language=pt#M43905)
+Para obter mais informações, consulte a [documentação](/help/edge/overview.md) e assista ao [AEM Gems - Introdução à criação no AEM e no Edge Delivery Services](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-gems-getting-started-with-aem-authoring-and-edge-delivery/m-p/652694#M43905)
 
 **Editor Universal para Implementações Headless**
 
@@ -67,11 +67,11 @@ Agora os desenvolvedores podem interagir programaticamente com os Fragmentos de 
 
 O suporte ao Gerenciamento multisite foi estendido para estruturas de pastas que armazenam fragmentos de experiência, permitindo que os usuários implantem uma estrutura de conteúdo completa com fragmentos de experiência.
 
-**Comparar versões de fragmentos do conteúdo**
+**Comparar versões de fragmentos de conteúdo**
 
-O novo fragmento de conteúdo editor agora permite que conteúdo autores comparem e visualização diferenças entre a versão atual de um fragmento de conteúdo e uma versão anterior.
+O novo Editor de fragmento de conteúdo agora permite que os autores de conteúdo comparem e visualizem diferenças entre a versão atual de um fragmento de conteúdo e uma versão anterior.
 
-### Programa de primeiros adotantes {#sites-early-adopter}
+### Programa de adoção antecipada {#sites-early-adopter}
 
 **Gerar Variações**
 
@@ -91,7 +91,7 @@ Interessado em experimentar o recurso e compartilhar feedback? Envie um email pa
 
 **Integração nativa com o Adobe Express**
 
-O AEM Assets se integra nativamente ao Adobe Express, o que permite acessar diretamente os ativos armazenados no AEM Assets na interface do usuário do Adobe Express. É possível colocar conteúdo gerenciadas em Ativos AEM na tela do Express e salvar conteúdo novas ou editadas em uma repositório de Ativos AEM.
+O AEM Assets se integra nativamente ao Adobe Express, o que permite acessar diretamente os ativos armazenados no AEM Assets na interface do usuário do Adobe Express. Você pode colocar o conteúdo gerenciado no AEM Assets na tela Express e depois salvar o conteúdo novo ou editado em um repositório do AEM Assets.
 
 ![Incluir ativos do complemento Assets](/help/assets/assets/adobe-express-native-integration.png)
 
@@ -118,22 +118,22 @@ O Assets Essentials permite que os administradores gerenciem níveis de acesso p
 
 * **[Adobe Experience Manager Forms Edge Delivery Services](/help/edge/docs/forms/overview.md)**: o Edge Delivery Services para AEM Forms é um conjunto combinável de serviços que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar, publicar e iniciar novos formulários rapidamente. Esses serviços oferecem experiências de formulários excepcionais e de alto impacto que impulsionam o engajamento e as conversões. Essas experiências de formulários são fáceis de criar e desenvolver.
 
-  ![Recursos Forms EDS](/help/edge/assets/eds-forms-features.png)
+  ![Recursos Do EDS Forms](/help/edge/assets/eds-forms-features.png)
 
-Estes serviços permitem:
+Esses serviços permitem:
 
 * Trabalhe com várias fontes de conteúdo no mesmo site de formulários e use suas ferramentas de criação preferidas, como o Microsoft Excel, o Google Sheets ou o Adaptive Forms Editor.
 * Ofereça experiências de Inscrição digital que carregam e renderizam de forma rápida e contínua, monitorando o desempenho de seus formulários por meio do monitoramento de uso real (RUM).
 * Use HTML simples, CSS moderno e JavaScript padrão para criar experiências excepcionais, evitando a curva de aprendizado íngreme de uma estrutura específica.
 
 
-### Novo recursos no Pré-lançamento para AEM Forms {#forms-pre-release}
+### Novos recursos no Pré-lançamento do AEM Forms {#forms-pre-release}
 
-* **Aprimoramento da editor de regra visual para as principais Componente baseadas em Forms** adaptativas: esta versão traz uma atualização significativa para as regra visuais editor para formulários adaptáveis com base nos componentes principais. Esta versão traz uma atualização significativa para o visual regra editor para formulários adaptáveis com base nos componentes principais. Esta atualização foca na simplificação das interações com funções personalizadas, capacitando você a build formulários mais robustos e eficientes.
+* **Editor de regras visuais aprimorado para Forms adaptável baseado em componentes principais**: esta versão traz uma atualização significativa para o editor de regras visuais no que se refere a formulários adaptáveis baseados em componentes principais. Esta versão traz uma atualização significativa para o editor visual de regras para formulários adaptáveis com base em componentes principais. Essa atualização se concentra em simplificar as interações com funções personalizadas, permitindo que você crie formulários mais robustos e eficientes.
 
-  Agora você pode simplificar as interações de função personalizadas ao:
+  Agora é possível simplificar as interações de funções personalizadas ao:
 
-   * Aproveitar novos anotações para fornecer definições de função mais claras.
+   * Uso de novas anotações para fornecer definições de função mais claras.
    * Uso de mecanismos de armazenamento em cache para funções personalizadas, resultando em um desempenho de formulário mais rápido.
    * Trabalhar perfeitamente com objetos globais dentro de funções personalizadas.
    * Definição e utilização de parâmetros opcionais em funções personalizadas.
@@ -168,11 +168,11 @@ Estes serviços permitem:
    * O botão OK/marca de seleção agora indica visualmente quando está inativo.
 
   **Feedback de Assinatura para Leitores de Tela:**
-   * Quando uma assinatura é digitada, os usuários do leitor de tela podem ouvir o texto usado para criar a assinatura.
+   * Quando uma assinatura é digitada, os usuários de leitores de tela podem ouvir o texto usado para criar a assinatura.
 
-Esta atualização garante uma experiência mais inclusiva para os usuários portadores de deficiências, melhorando a navegação, a clareza e o feedback sobre o componente de Assinatura do Scribble.
+Essa atualização garante uma experiência mais inclusiva para usuários portadores de deficiências, melhorando a navegação, a clareza e o feedback do componente Assinatura Escrita.
 
-### Programa de primeiros adotantes {#forms-early-adopter}
+### Programa de adoção antecipada {#forms-early-adopter}
 
 * **[Enviar um Formulário adaptável para o Cenário do Adobe Workfront Fusion](/help/forms/submit-adaptive-form-to-workfront-fusion.md)**: o Forms as a Cloud Service oferece uma opção pronta para uso para conectar facilmente um Formulário adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
 
@@ -201,21 +201,21 @@ As [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-
 
 Agora você pode enviar um email a **<aemcs-cdn-config-adopter@adobe.com>** para ingressar no programa de adoção antecipada, para que possa ser alertado sempre que suas regras de filtro de tráfego forem acionadas. As notificações por email do Centro de ações manterão você informado quando ocorrerem determinadas condições de tráfego para que você possa tomar as medidas apropriadas.
 
-#### Configuração da CDN (Early Adoter Program) {#cdn-config-early-adopter}
+#### Mapeamento de domínio (Early Adoter Program) {#cdn-config-early-adopter}
 
-Além das Regras[&#128279;](/help/security/traffic-filter-rules-including-waf.md) de Filtrar de Tráfego recém-lançadas, que incluem as regras de Firewall de Aplicação Web (WAF) opcionalmente licenciadas, há uma oportunidade de usar o Pipeline de configuração para declarar e implantar outros tipos de configuração CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md) e junte-se ao programa do adotador antecipado enviando por e-mail **<aemcs-cdn-config-adopter@adobe.com>** para obter acesso a:
+Além das [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, que incluem as regras do Firewall de Aplicativo Web (WAF) opcionalmente licenciáveis, há uma oportunidade de usar o Pipeline de Configuração para declarar e implantar outros tipos de configuração CDN. [Saiba mais](/help/implementing/dispatcher/cdn-configuring-traffic.md) e participe do programa de adoção antecipada enviando um email para **<aemcs-cdn-config-adopter@adobe.com>** para obter acesso a:
 
 * Redirecionamentos do lado do servidor 301/302
 * solicitações de proxy na borda para origens arbitrárias (como aplicativos não-AEM)
 * Transformações de URL
 * definindo ou modificando cabeçalhos de solicitação ou resposta
-* páginas de erro personalizadas quando o CDN não consegue acessar AEM
+* páginas de erro personalizadas quando o CDN não consegue acessar o AEM
 
-#### Apache/Dispatcher Assimilação de mapas de reescrita em tempo de execução (Programa de primeiros adotantes) {#apache-rewritemaps-early-adopter}
+#### Assimilação de mapas de regravação no tempo de execução do Apache/Dispatcher (Programa de adoção antecipada) {#apache-rewritemaps-early-adopter}
 
-Semelhante ao AEM 6.5, o Apache/dispatcher assimilar mapas de reescrita colocados em um local específico no publicar repositório e os carregará, sem exigir uma execução de pipeline de nível da Web. Isso abre oportunidades para uma usuário empresarial declarar redirecionamentos usando uma interface, como a oferecida pelo AcS Commons Redirect Map Manager. Entre em contato para **<aemcs-cdn-config-adopter@adobe.com>** obter mais informações.
+Semelhante ao AEM 6.5, o Apache/Dispatcher assimilará mapas de regravação colocados em um local específico no repositório de publicação e os carregará, sem exigir uma execução de pipeline no nível da Web. Isso abre oportunidades para que um usuário empresarial declare redirecionamentos usando uma interface do usuário, como a oferecida pelo ACS Commons Redirect Map Manager. Contate **<aemcs-cdn-config-adopter@adobe.com>** para obter mais informações.
 
-#### Edge Side Includes (ESI) para carregamento de conteúdo dinâmico (Programa de primeiros adotadores) {#esi-early-adopter}
+#### O Edge Side Includes (ESI) para Carregar Conteúdo Dinâmico (Early Adoter Program) {#esi-early-adopter}
 
 O Adobe Managed CDN agora é compatível com o Edge Side Includes (ESI), uma linguagem de marcação para a compilação de conteúdo dinâmico da Web no nível da borda. Ao incluir trechos ESI, você pode armazenar em cache a página geral do HTML na CDN com TTLs mais altos, enquanto busca com mais frequência a partir da origem as seções menores que exigem atualizações de cadência mais altas (TTLs mais baixos). Contate **<aemcs-cdn-config-adopter@adobe.com>** para obter mais informações.
 

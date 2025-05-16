@@ -5,7 +5,7 @@ exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: bf903736e256bb9275bad6c0271b31b8dbdec625
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1021'
 ht-degree: 2%
@@ -19,7 +19,7 @@ Saiba como adicionar seu próprio certificado SSL ou e o certificado DV (Valida�
 
 >[!NOTE]
 >
->Se você usar um certificado SSL gerenciado pelo cliente (OV/EV) e um provedor de CDN gerenciado pelo cliente, poderá ignorar a adição de um certificado SSL e ir diretamente para [Adicionar uma configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md) quando estiver pronto.
+>Se você usar um certificado SSL gerenciado pelo cliente (OV/EV) e um provedor CDN gerenciado pelo cliente, poderá ignorar a adição de um certificado SSL e ir diretamente para [Adicionar um Mapeamento de Domínio](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md) quando estiver pronto.
 
 O provisionamento de um certificado pode levar vários dias. Portanto, a Adobe aconselha provisionar seu próprio certificado com bastante antecedência em relação a qualquer prazo ou data de ativação para evitar atrasos.
 
@@ -85,7 +85,7 @@ Precisa de ajuda para escolher se deseja usar um certificado SSL gerenciado pela
 
 Agora você adicionou um certificado SSL DV gerenciado pela Adobe em funcionamento para o seu projeto. Essa etapa geralmente é a primeira a configurar um nome de domínio personalizado.
 
-Agora você está pronto para adicionar uma [configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
+Agora você está pronto para adicionar uma [configuração de CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
 ## Adicionar um certificado SSL gerenciado pelo cliente (OV/ED) {#add-customer-managed-ssl-cert}
 
@@ -132,7 +132,7 @@ Este campo é apenas para fins informativos e pode ser qualquer nome que o ajude
 
 Agora você adicionou um certificado SSL de trabalho ao projeto. Essa etapa geralmente é a primeira a configurar um nome de domínio personalizado.
 
-Agora você está pronto para adicionar uma [configuração de CDN](/help/implementing/cloud-manager/cdn-configurations/add-cdn-config.md).
+Agora você está pronto para adicionar uma [configuração de CDN](/help/implementing/cloud-manager/domain-mappings/add-domain-mapping.md).
 
 
 

@@ -4,7 +4,7 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 exl-id: 19cff082-80aa-445c-9462-5e319b7fe0e9
 feature: Release Information
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 16%
@@ -53,7 +53,7 @@ Interessado em experimentar o recurso e compartilhar feedback? Envie um email pa
 
 ### Novos recursos na exibição do Assets {#assets-view-features}
 
-* **Editor de Adobe Express incorporado no AEM Assets**: os usuários com acesso ao Express agora têm ferramentas integradas de edição e criação de imagens do Adobe Express e do Adobe Firefly disponíveis diretamente no AEM Assets para melhorar a reutilização do conteúdo e acelerar a velocidade do conteúdo.
+* **Editor do Adobe Express incorporado no AEM Assets**: os usuários com acesso ao Express agora têm ferramentas integradas de edição e criação de imagens do Adobe Express e do Adobe Firefly disponíveis diretamente no AEM Assets para melhorar a reutilização do conteúdo e acelerar a velocidade do conteúdo.
 
   ![Atribuir formulário de metadados a uma pasta](/help/assets/assets/adobe-express-aem-assets.png)
 
@@ -82,13 +82,13 @@ Interessado em experimentar o recurso e compartilhar feedback? Envie um email pa
 
 ### Novos Recursos em [!DNL Experience Manager Forms] {#forms-features}
 
-* **[Componente de caixa de seleção](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=pt-BR)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de caixa de seleção. Permite que os usuários façam escolhas binárias, selecionando ou desmarcando uma opção específica. Normalmente, ela aparece como uma pequena caixa que pode ser clicada ou tocada para alternar entre dois estados: marcado e desmarcado. A caixa de seleção é um elemento de formulário comum usado para apresentar uma opção sim/não ou verdadeira/falsa.
+* **[Componente de caixa de seleção](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**: o Forms adaptável baseado em Componentes principais agora pode incluir um componente de caixa de seleção. Permite que os usuários façam escolhas binárias, selecionando ou desmarcando uma opção específica. Normalmente, ela aparece como uma pequena caixa que pode ser clicada ou tocada para alternar entre dois estados: marcado e desmarcado. A caixa de seleção é um elemento de formulário comum usado para apresentar uma opção sim/não ou verdadeira/falsa.
 
-* **[Componente de Termos e Condições](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=pt-BR)**: o Forms Adaptável baseado em Componentes Principais agora pode incluir um componente de Termos e Condições. Ele permite que os autores de formulários introduzam uma seção específica no formulário em que os usuários recebem os termos, condições ou contratos legais associados ao uso de um serviço, produto ou plataforma. Esse componente foi projetado para informar os usuários sobre as regras, regulamentos e obrigações aos quais eles estão concordando ao enviar o formulário.
+* **[Componente de Termos e Condições](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**: o Forms Adaptável baseado em Componentes Principais agora pode incluir um componente de Termos e Condições. Ele permite que os autores de formulários introduzam uma seção específica no formulário em que os usuários recebem os termos, condições ou contratos legais associados ao uso de um serviço, produto ou plataforma. Esse componente foi projetado para informar os usuários sobre as regras, regulamentos e obrigações aos quais eles estão concordando ao enviar o formulário.
 
   ![Caixa de seleção, Termos e condições e componentes da guia Vertical](/help/forms/assets/forms-components.png)
 
-* **[Componente de guias verticais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=pt-BR)**: o Forms adaptável baseado em Componentes principais agora pode organizar o conteúdo do formulário em uma lista vertical de guias, fornecendo um layout estruturado e navegável. O uso de guias verticais em um formulário pode aprimorar a experiência geral do usuário simplificando a navegação e melhorando a organização do conteúdo do formulário, especialmente em situações em que um formulário contém várias seções ou informações complexas.
+* **[Componente de guias verticais](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**: o Forms adaptável baseado em Componentes principais agora pode organizar o conteúdo do formulário em uma lista vertical de guias, fornecendo um layout estruturado e navegável. O uso de guias verticais em um formulário pode aprimorar a experiência geral do usuário simplificando a navegação e melhorando a organização do conteúdo do formulário, especialmente em situações em que um formulário contém várias seções ou informações complexas.
 
 
 
@@ -104,27 +104,27 @@ Interessado em experimentar o recurso e compartilhar feedback? Envie um email pa
 
 ### Programa de adoção antecipada {#forms-early-adopter}
 
-* **Enviar um Formulário Adaptável para o Adobe Workfront Fusion Scenario**: o Forms as a Cloud Service opções prontas para uso para conectar facilmente um Formulário Adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
+* **Enviar um Formulário Adaptável para o Cenário do Adobe Workfront Fusion**: o Forms as a Cloud Service oferece opções predefinidas para conectar facilmente um Formulário Adaptável ao Adobe Workfront. Isso simplifica o processo de envio de um Formulário adaptável para um cenário do Adobe Workfront, permitindo acionar um cenário do Workfront Fusion no envio de um Formulário adaptável.
 
 * **Suporte de idiomas da direita para a esquerda**: o Forms adaptável integrado aos Componentes principais agora pode ser apresentado em um idioma da direita para a esquerda (RTL), como árabe, persa e urdu. As línguas RTL são faladas por mais de 2 bilhões de pessoas em todo o mundo. Usar um formulário em linguagem RTL permite estender o alcance dos formulários adaptáveis para atender a esses públicos diversos e aproveitar os mercados de RTL. Em algumas regiões, também é um mandato legal fornecer formulários no idioma local. Ao acomodar idiomas locais, você não só abre portas para um público mais amplo, como também garante a conformidade com as leis e regulamentos relevantes.
 
   ![Suporte de idioma da direita para a esquerda](/help/forms/assets/right-to-left-language-support.png)
 
-* **[Protect seus documentos com as APIs DocAssurance (Parte das APIs de Comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: As APIs DocAssurance permitem proteger informações confidenciais ao assinar e criptografar os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
+* **[Proteja seus documentos com as APIs do DocAssurance (Parte das APIs de Comunicação)](/help/forms/aem-forms-cloud-service-communications-introduction.md#document-assurance-doc-assurance)**: as APIs do DocAssurance permitem proteger informações confidenciais ao assinar e criptografar os documentos. Por meio da criptografia, o conteúdo de um documento é transformado em um formato ilegível, garantindo que somente usuários autorizados possam ter acesso. Essa camada fortificada de proteção não apenas protege dados valiosos de olhos não autorizados, mas também proporciona tranquilidade. As APIs de assinatura permitem que sua organização proteja a segurança e a privacidade dos documentos do Adobe PDF que distribui e recebe. Esse serviço usa assinaturas digitais e certificação para garantir que somente os recipients desejados possam alterar os documentos.
 
   Você pode escrever para `aem-forms-ea@adobe.com` a partir de sua ID de email oficial para participar do programa de adoção antecipada e solicitar acesso ao recurso.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Agora as regras de filtro de tráfego do WAF podem ser licenciadas {#cdn-waf-license}
+### Agora As Regras De Filtro De Tráfego Do WAF Podem Ser Licenciadas {#cdn-waf-license}
 
 As Regras de filtro de tráfego foram lançadas em outubro e incluíram uma observação de que a categoria especial de regras do Web Application Firewall (WAF) estaria disponível no final deste ano para complementar as regras já disponíveis para clientes do Sites e do Forms. Como atualização, a oferta de Proteção WAF-DDoS agora pode ser licenciada.
 
 Depois de licenciadas, essas regras avançadas do WAF podem ser implantadas na CDN usando o Cloud Manager Configuration Pipeline para adicionar uma camada extra de proteção contra ataques da Web.
 
-Leia sobre [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md), incluindo WAF. Fale com a sua equipe de conta AEM sobre o licenciamento da Proteção WAF-DDoS ou Segurança aprimorada.
+Leia sobre [Regras de Filtro de Tráfego](/help/security/traffic-filter-rules-including-waf.md), incluindo o WAF. Fale com a equipe de conta da AEM sobre o licenciamento da Proteção WAF-DDoS ou Segurança aprimorada.
 
-### Programa de adoção antecipada da configuração da CDN {#cdn-config-early-adopter}
+### Programa de Primeiros usuários do mapeamento de domínio {#cdn-config-early-adopter}
 
 Além das [Regras de Filtro de Tráfego (incluindo o WAF)](/help/security/traffic-filter-rules-including-waf.md) recém-lançadas, há uma oportunidade de usar o Pipeline de Configuração para declarar e implantar outros tipos de configuração de CDN. Adoraríamos saber sobre seus casos de uso, incluindo:
 * Redirecionamentos do lado do cliente 301/302
@@ -149,4 +149,4 @@ Você pode encontrar uma lista completa de versões das ferramentas de migraçã
 
 * Não é possível enviar o Forms adaptável com base nos Componentes principais. O problema ocorre para o Forms adaptável criado usando os Componentes principais versões 2.0.38 - 2.0.60.
 
-  Para resolver o problema. você pode migrar para os Componentes principais do formulário adaptável versão 2.0.62 ou posterior. Para definir uma versão dos Componentes principais do Forms Adaptive para seu ambiente, [defina versões do componente core.forms.components.version, core.forms.components.af.version e core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) dependem do seu projeto baseado no repositório as a Cloud Service AEM do Forms ou no Arquétipo do e [implante as alterações no seu ambiente as a Cloud Service do Forms](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Você pode encontrar a versão mais recente das dependências dos Componentes principais do Forms adaptável em [Repositório Git dos Componentes principais do Forms adaptável](https://github.com/adobe/aem-core-forms-components#system-requirements).
+  Para resolver o problema. você pode migrar para os Componentes principais do formulário adaptável versão 2.0.62 ou posterior. Para definir uma versão dos Componentes principais do Forms Adaptive para seu ambiente, [defina versões do componente core.forms.components.version, core.forms.components.af.version e core.wcm.components.version](/help/forms/enable-adaptive-forms-core-components.md#2-add-adaptive-forms-core-components-dependencies-to-your-git-repository) dependências no repositório do Forms as a Cloud Service ou no projeto baseado no AEM Archetype e [implante as alterações no ambiente do Forms as a Cloud Service](/help/forms/enable-adaptive-forms-core-components.md#build-and-deploy-updated-code-on-an-aem-forms-as-a-cloud-service-environment). Você pode encontrar a versão mais recente das dependências dos Componentes principais do Forms adaptável em [Repositório Git dos Componentes principais do Forms adaptável](https://github.com/adobe/aem-core-forms-components#system-requirements).
