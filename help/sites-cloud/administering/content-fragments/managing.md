@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: bcaa9f06-b15d-4790-bc4c-65db6a2d5e56
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: c6ba1c2bcf7db8c406350c81c51639dc5bc8843f
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2567'
 ht-degree: 41%
 
 ---
@@ -166,14 +166,14 @@ Selecionar um fragmento específico abre uma barra de ferramentas focada nas aç
 ![Console de fragmentos de conteúdo - Barra de ferramentas de um fragmento selecionado](assets/cf-managing-console-fragment-toolbar.png)
 
 * **[Abrir em novo Editor](#editing-the-content-of-your-fragment)**
-* **[Abrir](/help/assets/content-fragments/content-fragments-variations.md)** (no editor original)
 * **[Publicar](#publishing-and-previewing-a-fragment)** (e **[Desfazer publicação](#unpublishing-a-fragment)**)
 * **[Gerenciar Marcas](#manage-tags)**
-* **[Copiar](/help/assets/manage-digital-assets.md)**
-* **[Mover](/help/assets/manage-digital-assets.md)**
-* **[Renomeie](/help/assets/manage-digital-assets.md)**
-* **[Excluir](#deleting-a-fragment)**
+* **Copiar**
 * **[Substituir](#find-and-replace)**
+* **Mover**
+* **Renomear**
+* **[Excluir](#deleting-a-fragment)** (disponível somente para fragmentos não publicados)
+
 
 >[!NOTE]
 >
