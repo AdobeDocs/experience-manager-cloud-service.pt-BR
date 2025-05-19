@@ -4,9 +4,9 @@ description: Saiba mais sobre como Gerar variações, acessível a partir de vá
 feature: Generate Variations
 role: Admin, Architect, Developer, User
 exl-id: d380ddd6-43f9-4bbf-8167-a6a472b9fc01
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
+source-git-commit: 743f9c43b90a6ad9c9fd41f4089680da44a9c8ff
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1409'
 ht-degree: 1%
 
 ---
@@ -172,7 +172,7 @@ O gerenciamento de uso depende da ação tomada:
 
   >[!NOTE]
   >
-  >Consulte [Adobe Experience Manager: Cloud Service | Descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/aem-cloud-service.html) para obter mais detalhes sobre direitos básicos e entrar em contato com a equipe de conta se desejar adquirir ações mais geradoras.
+  >Consulte [Adobe Experience Manager: Cloud Service | Descrição do produto](https://helpx.adobe.com/legal/product-descriptions/aem-cloud-service.html) para obter mais detalhes sobre direitos básicos e entrar em contato com a equipe de conta se desejar adquirir ações mais geradoras.
 
 ## Acessar Gerar Variações {#access-generate-variations}
 
@@ -328,9 +328,11 @@ Para obter mais informações, você também pode ler:
 
 * [Gerar variações GenAI no GitHub](https://github.com/adobe/aem-genai-assistant#setting-up-aem-genai-assistant)
 * [Experimentação do Edge Delivery Services](https://www.aem.live/docs/experimentation)
-* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai)
+* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
 
-   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/generative-ai#aem)
+   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
+
+* [Gerar página de aterrissagem de variações no Experience Cloud](https://experience.adobe.com/solutions/aem-sites-genai-aem-genai-variations-mfe/static-assets/resources/ga.html)
 
 ## Histórico da versão {#release-history}
 
