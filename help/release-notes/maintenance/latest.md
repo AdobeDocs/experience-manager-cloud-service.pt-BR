@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6493c48797c09fa4598c2c0ff86c9cc1fafa758c
+source-git-commit: 53a2dd005de075c0f1e4bf83675995608e5f785d
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1482'
 ht-degree: 7%
 
 ---
@@ -16,13 +16,17 @@ ht-degree: 7%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 20783 {#20783}
+## Versão 20936 {#20936}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 20783, lançada publicamente em quarta-feira, 13 de maio de 2025. A versão de manutenção anterior era 20626.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 20936, lançada publicamente em terça-feira, 19 de maio de 2025. A versão de manutenção anterior era 20626.
 
-A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-20783}
+>[!NOTE]
+>
+>A versão 20783 foi tornada privada em 19 de maio e foi substituída pela versão 20936.
+
+### Aprimoramentos {#enhancements-20936}
 
 * FORMS-19125: o editor de Formulário adaptável dos Componentes principais é aprimorado para oferecer suporte ao mapeamento automático de fragmentos de Formulário adaptável disponíveis quando uma seção correspondente da árvore de fonte de dados é colocada na tela de formulário. Isso traz um recurso essencial de produtividade do editor de base para os componentes principais.
 * FORMS-17107: o AEM Forms agora oferece análise de função personalizada aprimorada do lado do cliente. Isso inclui suporte para recursos modernos do JavaScript (ECMAScript ES10+), como encadeamento opcional, e introduz a capacidade de usar importações estáticas em scripts de função personalizados. Isso permite que os desenvolvedores organizem melhor o código, utilizem módulos ESM e removam limitações anteriores encontradas com funções personalizadas no Adaptive Forms com base nos Componentes principais e no Edge Delivery Services, especialmente para usuários que anteriormente precisavam de soluções alternativas para esses recursos.
@@ -46,7 +50,7 @@ A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos 
 * SITES-26711: os links para campos de texto do RTE não são atualizados para apontar para a live copy na implantação do MSM.
 * SITES-25976: os links dentro dos Fragmentos de experiência não se adaptam após a implantação do MSM.
 
-### Problemas corrigidos {#fixed-issues-20783}
+### Problemas corrigidos {#fixed-issues-20936}
 
 * ASSETS-50994: Tráfego de entrada bloqueado em AemRequestEventFilter.
 * CQ-4358591: Projetos ausentes para alguns idiomas quando cópias de idioma são criadas do painel de referência de sites com a opção &quot;Criar projetos de tradução&quot;.
@@ -92,21 +96,22 @@ A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos 
 * SITES-31020: melhore a interface do usuário para criar trabalhos de Live Copy para mostrar ao cliente o progresso.
 * SITES-29816: erro &quot;Recurso não encontrado&quot; ao criar a Live Copy do fragmento de experiência.
 * SITES-29363: o botão Redefinir live copy não está funcionando para a hierarquia de conteúdo da live copy aninhada.
+* SITES-31467: Erros JS de `contexthub.authoring-hook.js` no editor de páginas.
 * SKYOPS-106509: Adicione sinalizadores complementares de abertura para suportar o acesso reflexivo GSON no Java 21.
 
-### Problemas conhecidos {#known-issues-20783}
+### Problemas conhecidos {#known-issues-20936}
 
-Nenhum.
+* SITES-28030: a opção Iniciar destino não aparece ao selecionar a opção de direcionamento.
 
-### Recursos e APIs obsoletos {#deprecated-20783}
+### Recursos e APIs obsoletos {#deprecated-20936}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-20783}
+### Correções de segurança {#security-20936}
 
 A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 19 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-20783}
+### Tecnologias integradas {#embedded-tech-20936}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
