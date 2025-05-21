@@ -4,9 +4,9 @@ description: Saiba mais sobre a entrega de fragmentos de conteúdo do AEM com Op
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
+source-git-commit: 7f7ed3adcbd01f688f48f3ba4a0c25293b8b1551
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 No Adobe Experience Manager (AEM) as a Cloud Service, a API aberta do AEM para entrega de fragmentos de conteúdo:
 
-* é uma API REST HTTP no [AEM Edge Delivery Services](/help/edge/overview.md), projetada para fornecer conteúdo estruturado de Fragmentos de conteúdo no formato JSON
+* é uma OpenAPI otimizada para entrega ao vivo de fragmentos de conteúdo do AEM no formato JSON
 * O oferece uma integração moderna de CDN que permite a invalidação de conteúdo ativo
 * O se concentra na entrega de conteúdo (desempenho, escalabilidade, integração de CDN, controle e saída JSON otimizados)
 * inclui a capacidade de hidratar o JSON para fragmentos e ativos referenciados
