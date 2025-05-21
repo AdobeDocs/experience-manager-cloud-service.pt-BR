@@ -1,11 +1,12 @@
 ---
 title: Configurar o conteúdo do Source
-description: Saiba como configurar a fonte de conteúdo para seu site do Edge Delivery usando fstab.yaml no Helix 4 ou a interface do usuário do Edge Delivery Services (ou a API de serviço de configuração) no Helix 5.
+description: Saiba como configurar a fonte de conteúdo para seu site do Edge Delivery usando fstab.yaml no Helix 4 ou o assistente guiado no Cloud Manager (ou a API de Serviço de configuração) no Helix 5.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 8696cf8a7e7cfc439450b34fa6fda10b38cd415e
+exl-id: f82eafc0-03d0-4c69-9b28-e769a012531b
+source-git-commit: 56ab7a402a2fa7bdcf30bd66045b04e9314bed64
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ Se você usar o [Edge Delivery com um clique no Cloud Manager](/help/implementin
 **Determinar sua versão da Helix**
 
 * Helix 4 - Seu projeto inclui um arquivo `fstab.yaml`.
-* Hélice 5 - Seu projeto *não* usa `fstab.yaml` e foi configurado por meio da [interface do usuário do Edge Delivery Services](#config-helix5) ou da API.
+* Hélice 5 - Seu projeto *não* usa `fstab.yaml` e foi configurado por meio do [Cloud Manager usando o assistente guiado](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md) ou a API.
 
 Confirme por meio dos metadados do repositório ou consulte o administrador se ainda não tiver certeza.
 
