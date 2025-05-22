@@ -3,9 +3,9 @@ title: IA gerativa no AEM as a Cloud Service
 description: Saiba mais sobre IA gerativa no Adobe Experience Manager as a Cloud Service
 feature: Generative AI
 role: Admin, Architect, Developer, User
-source-git-commit: 137f39e4706ee431e1773024595887e3f0aa34e5
+source-git-commit: 2eb6e9e06df282b28f7f977ce51accf5d686245b
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,7 @@ A IA gerativa é usada em todo o AEM:
 ## Informações adicionais {#further-information}
 
 * [Visão geral da IA do Adobe](https://www.adobe.com/ai/overview.html)
+
+* [IA de geração em produtos da Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai)
+
+   * [IA de geração em produtos da Experience Cloud - Adobe Experience Manager](https://experienceleague.adobe.com/en/docs/core-services/interface/features/generative-ai#aem)
