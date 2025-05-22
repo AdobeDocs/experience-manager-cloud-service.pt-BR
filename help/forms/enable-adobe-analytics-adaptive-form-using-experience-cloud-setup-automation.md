@@ -1,25 +1,30 @@
 ---
 title: Como habilitar o Adobe Analytics para uma análise de rastreamento rápido de um Formulário adaptável?
-description: A Automação de configuração do Experience Cloud ajuda a conectar o Adobe Analytics a um Formulário adaptável para obter uma análise de rastreamento rápida e insights sobre as interações e o envolvimento do visitante.
+description: A Automação de configuração do Experience Cloud ajuda a conectar o Adobe Analytics a um formulário adaptável para obter uma análise de rastreamento rápida e insights sobre as interações e o envolvimento do visitante.
 keywords: Ativar o Adobe Analytics para um formulário adaptável usando a Automação de configuração do Experience Cloud, Ativar o Adobe Analytics no Forms, Adobe Analytics no Adaptive Forms, integração do Forms Analytics, Forms e Adobe Analytics
 feature: Adaptive Forms
 role: Admin, User
 exl-id: 0e1aa040-08b4-4c1a-b247-ad6fff410187
-source-git-commit: a23576b5dc6d78a29fe19cd23f3c4788f2bee23e
+source-git-commit: a58f7e8de662255e3fce1c168b2293a72a9863df
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1597'
 ht-degree: 2%
 
 ---
 
-# Ativar o Adobe Analytics para um formulário adaptável usando a automação de configuração do Experience Cloud {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+# (Obsoleto) Ativar o Adobe Analytics para um formulário adaptável usando a Automação de configuração do Experience Cloud {#integrate-adobe-analytics-to-aem-forms-with-experience-cloud-setup-automation}
+
+>[!CAUTION]
+>
+>A funcionalidade de Automação de configuração do Experience Cloud está obsoleta.
+
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | Este artigo |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
 
-A Automação de configuração do Experience Cloud ajuda a conectar o Adobe Analytics ao Adaptive Forms, o que auxilia na análise rápida da interação do usuário com seus formulários e oferece insights sobre as interações e o envolvimento do visitante. A Automação de configuração do Experience Cloud também ajuda a monitorar o desempenho do formulário, o que envolve a avaliação de métricas como tempo de conclusão e pontos de devolução. Essa análise ajuda a otimizar formulários para obter uma melhor experiência do usuário, ao mesmo tempo em que distingue o comportamento do usuário com base no status de logon, por exemplo, usuários anônimos, para identificar tendências e padrões gerais.
+A Automação de configuração do Experience Cloud ajuda a conectar o Adobe Analytics ao Adaptive Forms, o que auxilia na análise rápida da interação do usuário com seus formulários e oferece insights sobre as interações e o envolvimento do visitante. A Automação de configuração do Experience Cloud também ajuda a monitorar o desempenho do formulário, o que envolve a avaliação de métricas como tempos de conclusão e pontos de devolução. Essa análise ajuda a otimizar formulários para obter uma melhor experiência do usuário, ao mesmo tempo em que distingue o comportamento do usuário com base no status de logon, por exemplo, usuários anônimos, para identificar tendências e padrões gerais.
 
 ## Vantagens da integração do Adobe Analytics com o Adaptive Forms {#advantages-of-integrating-adobe-analytics-with-aem-forms}
 
@@ -58,11 +63,11 @@ Para obter informações detalhadas sobre cada métrica, visite [Exibir e entend
 Analytics, Data Collection (Formerly Adobe Launch), and Experience Manager (experience.adobe.com)
 -->
 
-A Automação da Instalação do Experience Cloud exige uma **licença do Adobe Analytics**, **coleta de dados (antigo Adobe Launch)** para gerenciar scripts de rastreamento e **licença do Experience Manager Forms** para agregação de dados simplificada e geração de insights.
+A Automação de Instalação do Experience Cloud exige uma **licença do Adobe Analytics**, **coleta de dados (antigo Adobe Launch)** para gerenciar scripts de rastreamento, e **licença do Experience Manager Forms** para agregação de dados simplificada e geração de insight.
 
 Se você tiver uma licença ativa para o **Adobe Analytics** e o **Experience Manager Forms** e integração com a **Coleção de dados (antigo Adobe Launch)**, deverá verificar a disponibilidade no console do desenvolvedor.
 
-Para verificar se os itens mencionados acima estão disponíveis para o seu ambiente as a Cloud Service do Forms, visite o [console do desenvolvedor](https://developer.adobe.com/console/projects), navegue até o projeto e pesquise seu projeto com a ID do programa - ID do ambiente, por exemplo, para o ambiente com a URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, a ID do programa - ID do ambiente é `p45913-e175111`. Verifique se Experience Cloud Setup Automation, Adobe Analytics e Experience Platform Launch API estão listados. Se estiverem listados, você poderá ativar o Adobe Analytics para obter uma análise de rastreamento rápido do seu Forms adaptável.
+Para verificar se os itens mencionados acima estão disponíveis para o seu ambiente do Forms as a Cloud Service, visite o [console do desenvolvedor](https://developer.adobe.com/console/projects), navegue até o projeto e pesquise seu projeto com a ID do programa - ID do ambiente, por exemplo, para o ambiente com a URL `https://author-p45913-e175111-cmstg.adobeaemcloud.com/index.html`, a ID do programa - ID do ambiente é `p45913-e175111`. Verifique se a Automação de configuração do Experience Cloud, o Adobe Analytics e a API do Experience Platform Launch estão listados. Se estiverem listados, você poderá ativar o Adobe Analytics para obter uma análise de rastreamento rápido do seu Forms adaptável.
 
 ![Integração de Pré-requisito do Forms Analytics](assets/analytics-aem.png){width="100%"}
 
@@ -71,7 +76,7 @@ Para verificar se os itens mencionados acima estão disponíveis para o seu ambi
 > If you have an active licenses for Experience Cloud Setup Automation, Adobe Analytics, and Experience Platform Launch API, you should verify their availability within your developer console.
 -->
 
-<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html?lang=pt-BR)
+<!-- For more information about your available integrations, see [troubleshooting Adaptive Forms with Analytics Integration](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/view-understand-aem-forms-analytics-reports.html)
 -->
 
 ## Configurar Adobe Analytics {#configure-adobe-analytics}
@@ -109,7 +114,7 @@ Execute as etapas listadas abaixo para habilitar e configurar o Adobe Analytics 
 1. Na sua instância do AEM, vá para **[!UICONTROL Forms]** >> **[Forms e Documento]** e selecione seu **[!UICONTROL Formulário]**. Você verá que o Adobe Analytics está integrado ao seu formulário conforme mostrado na imagem abaixo.
 1. Agora você pode exibir seu [relatório de Adobe Analytics do formulário adaptável](#view-adobe-analytics-report).
 
-![Análise de AEM integrada](assets/analytics-aem-integrated.png){width="100%"}
+![AEM Analytics Integrado](assets/analytics-aem-integrated.png){width="100%"}
 
 
 ### Ativar o Adobe Analytics com Forms adaptável para componentes principais {#integrate-adobe-analytics-with-aem-forms-for-core-components}
@@ -147,7 +152,7 @@ Para conectar e habilitar o Analytics no Adaptive Forms para AEM Sites, você de
 
 ### Conectar o Adaptive Forms no Sites para ativar o Analytics {#Connect-analytics-to-adaptive-forms}
 
-Para conectar o Formulário adaptável em uma página do AEM Sites e habilitar o Analytics para uma análise de rastreamento rápido, inclua a biblioteca do cliente `customfooterlibs` na página do AEM Sites usando o Arquétipo AEM/Repositório Git e o pipeline de implantação.
+Para conectar o Formulário adaptável em uma página do AEM Sites e habilitar o Analytics para análises de rastreamento rápido, inclua a biblioteca do cliente `customfooterlibs` na página do AEM Sites usando o Arquétipo AEM/Repositório Git e o pipeline de implantação.
 
 1. Abra o projeto [Arquétipo do AEM Forms ou Repositório Git Clonado](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) em um editor de texto. Por exemplo, Visual Studio Code.
 
@@ -172,7 +177,7 @@ Para conectar o Formulário adaptável em uma página do AEM Sites e habilitar o
 
    O `customfooterlibs.html` é usado para o JavaScript.
 
-1. [Execute o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=pt-BR) para implantar as alterações.
+1. [Execute o pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) para implantar as alterações.
 
 ### Ativar regras do Form Analytics para o Forms no Sites {#bind-forms-analytics-rules-to-forms-in-sites}
 
