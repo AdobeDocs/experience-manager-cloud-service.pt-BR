@@ -42,7 +42,7 @@ O serviço de Telemetria Operacional foi projetado para minimizar a coleta de da
 * O nome de host do site que está sendo visitado, por exemplo: `experienceleague.adobe.com`
 * O tipo amplo de agente de usuário e sistema operacional que é usado para exibir a página, como: `desktop:windows` ou `mobile:ios`
 * A hora da coleta de dados, como: `2021-06-26 06:00:02.596000 UTC (in order to preserve privacy, we round all minutes to the previous hour, so that only seconds and milliseconds are tracked)`
-* A URL da página que está sendo visitada, por exemplo: `https://experienceleague.adobe.com/docs`
+* A URL da página que está sendo visitada, por exemplo: `https://experienceleague.adobe.com/docs?lang=pt-BR`
 * O URL referenciador (o URL da página que se vinculou à página atual, se o usuário seguiu um link)
 * Uma ID gerada aleatoriamente da exibição de página, em um formato semelhante a: `2Ac6`
 * O peso ou o inverso da taxa de amostragem, como: `100`. Significa que somente uma em cada cem exibições de página é registrada
