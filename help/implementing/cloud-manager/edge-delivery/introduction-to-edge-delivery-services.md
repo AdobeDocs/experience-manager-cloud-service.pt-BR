@@ -4,9 +4,9 @@ description: Saiba como entregar seus projetos do Cloud Manager usando o Edge De
 exl-id: f33bd6f0-62fc-4ecc-b8d2-65d1f1c44d82
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 4e79e7f3e4d4b1cc0413fa9e599b181d23ced635
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '798'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 O Edge Delivery Services é um conjunto combinável de serviços que permite um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Essa capacidade permite fazer o seguinte:
 
 * Crie sites rápidos com um Lighthouse Score perfeito.
-* Monitore continuamente o desempenho por meio do RUM (Monitoramento de uso real).
+* Monitore continuamente o desempenho por meio da Telemetria Operacional.
 * Aumente a eficiência da criação desvinculando as fontes de conteúdo.
 
 Você pode usar a gestão de conteúdo do AEM e a criação do WYSIWYG usando o Editor universal e a criação baseada em documento.
@@ -86,7 +86,7 @@ A **lista de tarefas do Edge Delivery** no Cloud Manager é uma lista de verific
 | 7 | Configurar validação por push | Consulte [Configurar validação por push para um site do Edge Delivery](/help/implementing/cloud-manager/edge-delivery/cdn-setup-push-invalidation.md). |
 | 8 | Publicação | Consulte a [Lista de verificação de ativação](/help/edge/docs/go-live-checklist.md). |
 
->[!VIDEO](https://video.tv.adobe.com/v/3441566?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3428020?learn=on)
 
 ## Registrar um tíquete de suporte {#eds-support-ticket}
 

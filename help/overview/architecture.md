@@ -4,9 +4,9 @@ description: Introdução à arquitetura do Adobe Experience Manager as a Cloud 
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2712'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 >id="intro_aem_cloudservice_architecture"
 >title="Introdução à arquitetura do AEM as a Cloud Service"
 >abstract="Nesta guia, é possível visualizar a nova arquitetura do AEM as a Cloud Service e compreender as alterações. O AEM virou uma arquitetura dinâmica com um número variável de imagens, portanto é importante reservar um tempo para entender a arquitetura da nuvem."
->additional-url="https://video.tv.adobe.com/v/346185?captions=por_br" text="Visão geral da arquitetura"
+>additional-url="https://video.tv.adobe.com/v/330542/" text="Visão geral da arquitetura"
 
 O Adobe Experience Manager (AEM) as a Cloud Service oferece um conjunto de serviços combináveis para a criação e o gerenciamento de experiências de alto impacto.
 
@@ -138,7 +138,7 @@ Há outros serviços adjacentes:
 * O serviço de dados:
    * É responsável por expor os dados do cliente, como métricas de licenciamento (por exemplo, Solicitações de conteúdo, Armazenamento, Usuários) ou relatórios de uso (como o número de uploads, downloads).
    * Os dados do cliente podem ser expostos por meio de APIs e nas interfaces de usuário do produto (como o Cloud Manager).
-* O serviço de Métrica do usuário real (RUM):
+* O serviço de Telemetria Operacional:
    * É responsável por coletar as métricas principais de uma experiência do cliente (como exibições de página, sinais vitais da Web principais, eventos de conversão) e responder a consultas associadas (por exemplo, exibições de página principais de um determinado domínio nos últimos sete dias).
 * O serviço Assets Compute:
    * É responsável pelo processamento de imagens, vídeos e documentos carregados; por exemplo, arquivos PDF e Adobe Photoshop. O processamento pode usar o Adobe Sensei para extrair metadados de imagem e vídeo (como tags descritivas ou tons de cores primários) e gerar representações (como tamanhos ou formatos diferentes), com acesso a APIs como as APIs do Adobe Photoshop e do Adobe Lightroom.
@@ -239,4 +239,4 @@ A arquitetura mais recente do AEM as a Cloud Service apresenta algumas mudanças
 * Edge Delivery Services:
    * [Visão geral do AEM as a Cloud Service - com o Edge Delivery Services](/help/edge/overview.md)
    * [Utilização do Edge Delivery Services](/help/edge/using.md)
-   * [Explore a arquitetura subjacente e as partes importantes do AEM as a Cloud Service com o Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html?lang=pt-BR)
+   * [Explore a arquitetura subjacente e as partes importantes do AEM as a Cloud Service com o Edge Delivery Services](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/introduction/architecture.html)

@@ -4,9 +4,9 @@ description: Edge Delivery Services para AEM Forms
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: 4a8153ffbdbc4da401089ca0a6ef608dc2c53b22
+source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -14,65 +14,65 @@ ht-degree: 0%
 # Edge Delivery Services para AEM Forms
 
 
-O Edge Delivery Services para AEM Forms é um conjunto de serviços combináveis que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar, publicar e lançar novos formulários rapidamente. Esses serviços oferecem experiências de formulários excepcionais e de alto impacto que impulsionam o engajamento e as conversões. Essas experiências de formulários são fáceis de criar e desenvolver.
+O Edge Delivery Services for AEM Forms é um conjunto combinável de serviços que permite um ambiente de desenvolvimento rápido, em que os autores podem atualizar, publicar e lançar novos formulários rapidamente. Esses serviços oferecem experiências de formulários excepcionais e de alto impacto que impulsionam o engajamento e as conversões. Essas experiências de formulários são fáceis de criar e desenvolver.
 
 Esses serviços permitem:
 
-* **Crie experiências de inscrição com ferramentas de sua escolha:** Aumente a eficiência da criação dissociando as fontes de conteúdo. Você pode usar a Criação baseada em documento (Microsoft SharePoint ou Google Drive), a Criação WYSIWYG (Editor universal ou Editor adaptável do Forms) imediatamente. Você pode trabalhar com várias fontes de conteúdo no mesmo site de formulários e usar suas ferramentas de criação preferidas, como o Microsoft Excel, Google Sheets, Universal Editor ou Adaptive Forms Editor.
+* **Crie experiências de inscrição com ferramentas de sua escolha:** Aumente a eficiência da criação dissociando as fontes de conteúdo. Você pode usar a Criação baseada em documento (Microsoft SharePoint ou Google Drive), a Criação no WYSIWYG (Universal Editor ou Adaptive Forms Editor) prontas para uso. Você pode trabalhar com várias fontes de conteúdo no mesmo site de formulários e usar suas ferramentas de criação preferidas, como o Microsoft Excel, Google Sheets, Universal Editor ou Adaptive Forms Editor.
 
-* **Ofereça experiências excepcionais de Inscrição Digital:** ofereça experiências de Inscrição Digital que carregam e renderizam de forma rápida e contínua, monitorando o desempenho de seus formulários por meio do monitoramento de uso real (RUM). Tempos de carregamento mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de conclusão e conversão de formulários.
+* **Ofereça experiências excepcionais de Inscrição Digital:** forneça experiências de Inscrição Digital que são carregadas e renderizadas de forma rápida e contínua, monitorando o desempenho de seus formulários por meio da Telemetria Operacional. Tempos de carregamento mais rápidos e experiência otimizada do usuário contribuem para taxas mais altas de conclusão e conversão de formulários.
 
-* **Usar conjunto de ferramentas compatível com o desenvolvedor:** Edge Delivery Services para AEM Forms
-O usa o HTML simples, o CSS moderno e o JavaScript padrão para criar experiências excepcionais, evitando a curva de aprendizado íngreme de uma estrutura específica. Um desenvolvedor com habilidades básicas de desenvolvimento na Web pode personalizar e criar facilmente componentes e experiências de formulários. Não há necessidade de aguardar a execução de um pipeline. Basta fazer o check-in do código no GitHub e suas alterações estarão ativas.
+* **Usar conjunto de ferramentas compatível com o desenvolvedor:** Edge Delivery Services for AEM Forms
+O usa o HTML simples, o CSS moderno e o JavaScript padrão para criar experiências excepcionais, evitando a curva de aprendizado acentuada de uma estrutura específica. Um desenvolvedor com habilidades básicas de desenvolvimento na Web pode personalizar e criar facilmente componentes e experiências de formulários. Não há necessidade de aguardar a execução de um pipeline. Basta fazer o check-in do código no GitHub e suas alterações estarão ativas.
 
 ## Visão geral do Edge Delivery Services para AEM Forms {#edge-overview}
 
-O Edge Delivery Services para AEM Forms permite um alto grau de flexibilidade na forma como você cria formulários no seu site. Você pode criar conteúdo e formulários com a [Criação WYSIWYG](/help/forms/creating-adaptive-form-core-components.md) e a [Criação baseada em documento](/help/edge/docs/forms/create-forms.md). Edge Delivery Services para AEM Forms
-forneça um bloco de formulários, conhecido como [Bloco de Forms adaptável](/help/edge/docs/forms/create-forms.md), para adicionar um formulário ao seu site Edge Delivery Services.
+O Edge Delivery Services para AEM Forms permite um alto grau de flexibilidade na maneira como você cria formulários no seu site. Você pode criar conteúdo e formulários com a [Criação no WYSIWYG](/help/forms/creating-adaptive-form-core-components.md) e a [Criação baseada em documentos](/help/edge/docs/forms/create-forms.md). Edge Delivery Services para AEM Forms
+forneça um bloco de formulários, conhecido como [Bloco de Forms adaptável](/help/edge/docs/forms/create-forms.md), para adicionar um formulário ao seu site do Edge Delivery Services.
 
 Por exemplo, você cria formulários diretamente no Microsoft Excel ou no Google Sheets e essas planilhas são transformadas em formulários para seu site. Qualquer novo formulário ou conteúdo de formulário, como um novo campo de formulário, fica disponível instantaneamente em seu site sem exigir um processo de recriação.
 
-O diagrama a seguir ilustra como você pode editar formulários no Microsoft Excel ou no Google Sheets (Criação baseada em documento) e publicar no Edge Delivery Services. Ela também mostra o método de publicação AEM usando a criação WYSIWYG (editor universal ou editor adaptável do Forms).
+O diagrama a seguir ilustra como você pode editar formulários no Microsoft Excel ou no Google Sheets (Criação baseada em documento) e publicar no Edge Delivery Services. Ela também mostra o método de publicação do AEM usando a Criação no WYSIWYG (Editor universal ou Editor Forms adaptável).
 
-![Publish para Edge Delivery Services e AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
+![Publicar no Edge Delivery Services e no AEM](/help/edge/docs/forms/assets/AEM-forms-with-EDS-publishing.png)
 
-O Edge Delivery Services para AEM Forms usa o GitHub para que os clientes possam gerenciar e implantar código diretamente do repositório do GitHub. Por exemplo, você pode escrever formulários no [Google Sheets](/help/edge/docs/forms/create-forms.md) ou no [Microsoft Excel](/help/edge/docs/forms/create-forms.md) e os componentes de seus formulários podem ser desenvolvidos usando CSS e JavaScript em um repositório GitHub.
+O Edge Delivery Services para AEM Forms usa o GitHub para que os clientes possam gerenciar e implantar o código diretamente do repositório do GitHub. Por exemplo, você pode escrever formulários no [Google Sheets](/help/edge/docs/forms/create-forms.md) ou no [Microsoft Excel](/help/edge/docs/forms/create-forms.md) e os componentes de seus formulários podem ser desenvolvidos usando CSS e JavaScript em um repositório GitHub.
 
 Quando os formulários estiverem prontos, você poderá usar o [AEM Sidekick](/help/edge/docs/forms/tutorial.md#preview-and-publish-your-content), uma extensão do navegador Chrome, para visualizar e publicar atualizações de conteúdo.
 
-![Instalar AEM Sidekick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
+![Instalar o AEM Sidekick](/help/edge/assets/aem-sidekick-preview-publish-forms.png)
 
-A escolha entre a [Criação baseada em documento](#document-based-authoring-features) e a [Criação WYSIWYG](#wysiwyg-authoring-features) depende de seus requisitos específicos:
+A escolha entre a [Criação baseada em documento](#document-based-authoring-features) e a [Criação do WYSIWYG](#wysiwyg-authoring-features) depende de seus requisitos específicos:
 
 * Para formulários simples que apenas coletam informações básicas com alguns campos (pense em contatar-nos formulários, formulários de geração de clientes potenciais ou formulários de solicitação de serviço), e onde você precisar de conectividade rápida de dados usando uma planilha, a [Criação baseada em documento](#document-based-authoring-features) é uma boa opção. Você pode criar esses formulários da mesma forma que criaria um documento no Google Sheets ou no Microsoft Excel.
 
-* Para formulários complexos, como formulários que exigem vários painéis, regras complexas e lógica de negócios, manipulação de dados, integração com sistemas externos ou fluxos de trabalho simplificados usando recursos de AEM, a [Criação WYSIWYG](#wysiwyg-authoring-features) é uma opção melhor.
+* Para formulários complexos, como formulários que exigem vários painéis, regras complexas e lógica de negócios, manipulação de dados, integração com sistemas externos ou fluxos de trabalho simplificados usando recursos do AEM, a [Criação do WYSIWYG](#wysiwyg-authoring-features) é uma opção melhor.
 
 
-### Principais recursos de criação com base em documento e criação WYSIWYG
+### Principais recursos de criação com base em documento e criação no WYSIWYG
 
-A Criação baseada em documento oferece um conjunto básico de recursos, e a Criação WYSIWYG desbloqueia recursos adicionais, além da Criação baseada em documento, permitindo que você crie formulários mais complexos e interativos. Os principais recursos da Criação baseada em documento e da Criação WYSIWYG são:
+A Criação baseada em documento oferece um conjunto básico de recursos, e a Criação no WYSIWYG desbloqueia recursos adicionais, além da Criação baseada em documento, permitindo que você crie formulários mais complexos e interativos. Os principais recursos da Criação com base em documento e da Criação no WYSIWYG são:
 
 #### Recursos de criação com base em documento
 
 A Criação baseada em documento permite criar formulários usando ferramentas familiares, como o Microsoft Excel ou o Google Sheets. Esses formulários oferecem as seguintes funcionalidades:
 
 * Componentes acessíveis para uma experiência simples.
-* Estrutura de HTML padronizada para renderização consistente.
+* Estrutura padrão do HTML para renderização consistente.
 * Regras e validações para garantir a precisão dos dados.
 * Opções de anexo de arquivo para coleta de informações adicionais.
 * Integração do Google reCAPTCHA para proteção contra spam.
 * Capacidade de criar componentes de formulário personalizados para necessidades específicas.
 * Envie dados de formulário diretamente para o Microsoft Excel ou o Google Sheets ou endereços de email.
-* Monitore o desempenho de seus formulários por meio do monitoramento de uso real (RUM)
+* Monitorar o desempenho de formulários por meio da Telemetria Operacional
 
-#### Recursos de criação WYSIWYG
+#### Recursos de criação do WYSIWYG
 
-A Criação WYSIWYG fornece interfaces WYSIWYG (Universal Editor e Adaptive Forms Editor) para a criação de formulários e oferece todos os recursos da Criação baseada em documento, além de uma grande variedade de recursos adicionais:
+A Criação no WYSIWYG fornece interfaces do WYSIWYG (Universal Editor e Adaptive Forms Editor) para a criação de formulários e oferece todos os recursos da Criação baseada em documentos, além de uma grande variedade de recursos adicionais:
 
 * Editor de regras avançado para criar lógica complexa.
 * Extensibilidade do lado do servidor para funcionalidades personalizadas.
-* Experiência de edição WYSIWYG para facilitar a criação e a visualização de formulários.
+* Experiência de edição do WYSIWYG para facilitar a criação e a visualização de formulários.
 * Funcionalidade de documento de registro para criar arquivos à prova de violação de dados enviados.
 * Integração com o Adobe Sign para assinaturas eletrônicas.
 * Integração com o Adobe Workfront Fusion para acionar cenários do Adobe Workfront Fusion no envio do formulário.
@@ -82,29 +82,29 @@ A Criação WYSIWYG fornece interfaces WYSIWYG (Universal Editor e Adaptive Form
 
 Os recursos acima também estão disponíveis por meio do Editor Forms adaptável.
 
-Basicamente, a criação WYSIWYG (Universal Editor e [Adaptive Forms Editor](/help/forms/creating-adaptive-form-core-components.md)) se baseia na [criação baseada em documentos](/help/edge/docs/forms/create-forms.md), fornecendo um kit de ferramentas mais avançado para criar e gerenciar formulários complexos.
+Basicamente, a criação do WYSIWYG (Universal Editor e [Adaptive Forms Editor](/help/forms/creating-adaptive-form-core-components.md)) baseia-se na [criação baseada em documentos](/help/edge/docs/forms/create-forms.md), fornecendo um kit de ferramentas mais avançado para criar e gerenciar formulários complexos.
 
 >[!NOTE]
 >
 >
-> O recurso de criação WYSIWYG está disponível no programa dos primeiros usuários. Caso esteja interessado, envie um email rápido do seu endereço comercial para aem-forms-ea@adobe.com para solicitar acesso ao recurso.
+> O recurso de criação do WYSIWYG está disponível no programa dos primeiros usuários. Caso esteja interessado, envie um email rápido do seu endereço comercial para aem-forms-ea@adobe.com para solicitar acesso ao recurso.
 
 ### Edge Delivery Services para AEM Forms
 
 : criação, publicação e envio do Forms
 
-Os diagramas a seguir ilustram o processo de criação, publicação e envio de formulários usando a Criação baseada em documento e a Criação WYSIWYG.
+Os diagramas a seguir ilustram o processo de criação, publicação e envio de formulários usando a Criação baseada em documento e a Criação no WYSIWYG.
 
 ![Criação baseada em documento](/help/edge/assets/document-based-authoring-workflow.png)
 
-![Criação WYSIWYG](/help/edge/assets/wysiwyg-authoring-workflow.png)
+![Criação no WYSIWYG](/help/edge/assets/wysiwyg-authoring-workflow.png)
 
 ## Começar a criar formulários
 
-* [Introdução aos Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
+* [Introdução ao Edge Delivery Services para AEM Forms](/help/edge/docs/forms/tutorial.md)
 * [Criar um formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/create-forms.md)
 * [Configure seus arquivos do Google Sheets ou do Microsoft Excel para começar a aceitar dados&#x200B;](/help/edge/docs/forms/submit-forms.md)
-* [Publish seu formulário e comece a coletar dados](/help/edge/docs/forms/publish-forms.md)
+* [Publicar seu formulário e começar a coletar dados](/help/edge/docs/forms/publish-forms.md)
 * [Personalize a aparência de seus formulários&#x200B;](/help/edge/docs/forms/style-theme-forms.md)
 * [Adicionar seções repetíveis a um formulário&#x200B;](/help/edge/docs/forms/repeatable-forms.md)
 * [Mostrar uma mensagem de agradecimento personalizada após o envio do formulário&#x200B;](/help/edge/docs/forms/thank-you-page-form.md)

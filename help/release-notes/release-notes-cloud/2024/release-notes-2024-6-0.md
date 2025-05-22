@@ -4,9 +4,9 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: 4033abf4-7094-4ce4-ba93-c936062667e3
-source-git-commit: 650014d0c093b9e7c1947a8fe870a5452f3083e5
+source-git-commit: 0f5fc5469034139a45ec0fe7e30319012af97301
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1967'
 ht-degree: 10%
 
 ---
@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2022 ou 2023.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -43,9 +43,9 @@ Assista ao vídeo de visão geral da versão de junho de 2024 para ver um resumo
 
 ### Novo recurso no Experience Manager Sites {#new-feature-sites}
 
-**Serviço de Dados de Monitoramento de Uso Real (RUM)** {#real-use-monitoring}
+**Serviço de Dados de Telemetria Operacional** {#real-use-monitoring}
 
-O [Serviço de Dados de Monitoramento de Uso Real (RUM)](/help/sites-cloud/administering/real-use-monitoring-for-aem-as-a-cloud-service.md) agora está disponível, habilitando a coleta de dados do cliente para o AEM as a Cloud Service. Esse serviço oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. Ele oferece aos clientes insights avançados sobre o tráfego e o desempenho da página, apresentando uma oportunidade valiosa para entender e aprimorar o desempenho da página.
+O [Serviço de Telemetria Operacional](/help/sites-cloud/administering/operational-telemetry-for-aem-as-a-cloud-service.md) agora está disponível, permitindo a coleta de dados do lado do cliente para o AEM as a Cloud Service. Esse serviço oferece um reflexo mais preciso das interações do usuário, garantindo uma medida confiável do engajamento do site. Ele oferece aos clientes insights avançados sobre o tráfego e o desempenho da página, apresentando uma oportunidade valiosa para entender e aprimorar o desempenho da página.
 
 ### Programa de adoção antecipada {#sites-early-adopter}
 
@@ -145,7 +145,7 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? A documentação do Adobe fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? A documentação do Adobe fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 
 ### Serviço do Forms
@@ -231,7 +231,7 @@ A CDN Gerenciada pelo Adobe agora oferece suporte a [ESI (Edge Side Includes)](/
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 
