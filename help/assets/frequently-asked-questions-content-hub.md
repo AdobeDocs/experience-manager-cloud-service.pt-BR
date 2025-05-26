@@ -2,10 +2,10 @@
 title: Perguntas frequentes sobre o Content Hub
 description: Obtenha respostas para algumas das perguntas mais frequentes do Content Hub.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 95c643151e4828fa2eae0725dc1081aeeabc42fb
 workflow-type: tm+mt
-source-wordcount: '1140'
-ht-degree: 0%
+source-wordcount: '1367'
+ht-degree: 1%
 
 ---
 
@@ -31,19 +31,19 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -111,9 +111,23 @@ Você pode encontrar rapidamente ativos carregados usando o Content Hub no ambie
 
 1. Classificando ativos usando o campo **[!UICONTROL Data de modificação]**.
 
-## Por que não exibo a opção editar usando o Adobe Express no meu cartão de ativos para poder remixar ativos e criar novas variações? {#edit-using-express-not-available}
+## Por que não vejo a opção Editar usando o Adobe Express no meu cartão de ativos para remixar ativos e criar novas variações? {#edit-using-express-not-available}
 
-Para exibir a edição usando a opção Adobe Express no cartão de ativos, você deve ter direitos de Adobe Express, além de privilégios para [usuários do Content Hub com direitos de remixar ativos para novas variações](#onboard-content-hub-users-add-assets). O Adobe Express deve ser implantado na mesma organização no Adobe Admin Console, onde o Adobe Experience Manager é implantado.
+Para exibir a opção **Editar usando o Adobe Express** no cartão de ativos, o usuário deve ter o direito Adobe Express Enterprise ou Teams (consulte [planos](https://www.adobe.com/express/pricing)), além de privilégios para [usuários do Content Hub com direitos de remixar ativos para novas variações](#onboard-content-hub-users-add-assets).
+
+Existem algumas configurações de como os usuários são atribuídos ao [!DNL Content Hub] e [!DNL Adobe Express]:
+
+1. A organização tem a licença [Assets Ultimate](/help/assets/assets-ultimate-overview.md) ou [Assets Prime](/help/assets/assets-prime.md), e o usuário está atribuído a um dos perfis do Experience Manager no Admin Console que incluem o direito ao Adobe Express (usuário colaborador ou avançado). A integração funciona sem nenhuma configuração adicional.
+
+1. [!DNL Adobe Express] está implantado no mesmo [!DNL Adobe Admin Console] que [!DNL Experience Manager Assets] com [!DNL Content Hub]. A integração funciona sem nenhuma configuração adicional.
+
+1. [!DNL Adobe Express] está implantado em um [!DNL Adobe Admin Console] diferente de [!DNL Experience Manager Assets] com [!DNL Content Hub]. Nesse caso, o administrador [!DNL Assets] pode configurar a integração (consulte [documentação](/help/assets/connect-assets-with-creative-cloud.md)) para que ela funcione.
+
+   >[!NOTE]
+   >
+   >O usuário atribuído aos perfis de produto Express e Assets em dois Consoles do Administrador precisa ter o mesmo endereço de email e usar uma conta corporativa **Enterprise ou School**, e não a conta **Personal**. A configuração ideal é ter ambos os Admin Consoles configurados como **Federated ID** com uma relação de confiança configurada entre eles, para que o usuário tenha uma experiência de logon único contínua. Alguns dos planos do Express (por exemplo, Equipes do Express) não oferecem suporte ao Federated ID/logon único.
+
+Além dos direitos de produto corretos, a integração do Adobe Express no Content Hub exige que o usuário atribuído tenha pelo menos [!UICONTROL Pode editar] permissões no ambiente de criação do Assets que viabiliza o Content Hub, em pelo menos **[#UICONTROL /content/dam/hydroated-assets/]** hierarquia de pastas, onde os usuários do Content Hub podem salvar o conteúdo criado com o Express. Consulte [Gerenciamento de permissões](/help/security/touch-ui-principal-view.md) no modo de exibição de Administração (Interface para toque) ou um [gerenciamento de permissões simplificado no modo de exibição de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Posso configurar o Content Hub para que as diretrizes de marca da minha organização sejam exibidas como um link na página inicial? {#content-hub-setup-brand-guidelines}
 
