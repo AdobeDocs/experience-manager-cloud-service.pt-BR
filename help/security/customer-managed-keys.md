@@ -6,30 +6,30 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 100ddbf2-9c63-406f-a78d-22862501a085
-source-git-commit: 18fe0125351c635c226bebf0f309710634230e64
+source-git-commit: eb38369ee918851a9f792af811bafff9b2e49a53
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
 
 # Configuração de chaves gerenciadas pelo cliente para AEM as a Cloud Service {#cusomer-managed-keys-for-aem-as-a-cloud-service}
 
-Atualmente, a AEM as a Cloud Service armazena dados do cliente no Armazenamento Azure Blob e no MongoDB, utilizando chaves de criptografia gerenciadas por provedor por padrão para proteger os dados. Embora essa configuração atenda às necessidades de segurança de muitas organizações, as empresas de setores regulamentados ou que exigem soberania aprimorada de dados podem buscar maior controle sobre suas práticas de criptografia. Para organizações que priorizam a segurança de dados, a conformidade e a capacidade de gerenciar suas chaves de criptografia, a solução CMK (Customer-Managed Keys, chaves gerenciadas pelo cliente) oferece um aprimoramento essencial.
+Atualmente, a AEM as a Cloud Service armazena dados do cliente no Armazenamento Azure Blob e no MongoDB, utilizando chaves de criptografia gerenciadas por provedor por padrão para proteger os dados. Embora essa configuração atenda às necessidades de segurança de muitas organizações, as empresas de setores regulamentados ou que precisem de segurança de dados aprimorada podem buscar maior controle sobre suas práticas de criptografia. Para organizações que priorizam a segurança de dados, a conformidade e a capacidade de gerenciar suas chaves de criptografia, a solução CMK (Customer-Managed Keys, chaves gerenciadas pelo cliente) oferece um aprimoramento essencial.
 
 ## O problema que está sendo resolvido {#the-problem-being-solved}
 
-Chaves gerenciadas pelo provedor podem criar preocupações para empresas em setores como financeiro, saúde e governo, onde normas rigorosas exigem controle abrangente sobre a segurança dos dados. Sem controle sobre o gerenciamento de chaves, as organizações enfrentam desafios para atender aos requisitos de conformidade, implementar políticas personalizadas de segurança e garantir a total soberania dos dados.
+Chaves gerenciadas pelo provedor podem criar preocupações para empresas que exigem privacidade e integridade adicionais. Sem controle sobre o gerenciamento de chaves, as organizações enfrentam desafios para atender aos requisitos de conformidade, implementar políticas personalizadas de segurança e garantir a segurança completa dos dados.
 
-A introdução do CMK (Customer-Managed Keys, chaves gerenciadas pelo cliente) soluciona essas preocupações ao capacitar os clientes de AEM com controle total sobre suas chaves de criptografia. Ao autenticar por meio da Microsoft Entra ID (antigo Azure Ative Diretory), o AEM CS se conecta com segurança ao Cofre de Chaves do Azure do cliente, permitindo que eles gerenciem o ciclo de vida de suas chaves de criptografia — abrangendo criação, rotação e revogação de chaves.
+A introdução do CMK (Customer-Managed Keys, chaves gerenciadas pelo cliente) resolve essas preocupações, pois capacita os clientes da AEM com controle total sobre suas chaves de criptografia. Ao autenticar por meio da Microsoft Entra ID (antigo Azure Ative Diretory), o AEM CS se conecta com segurança ao Cofre de Chaves do Azure do cliente, permitindo que eles gerenciem o ciclo de vida de suas chaves de criptografia — abrangendo criação, rotação e revogação de chaves.
 
 A CMK oferece várias vantagens:
 
-* **Segurança aprimorada:** os clientes podem garantir que suas práticas de criptografia atendam a requisitos específicos de segurança, dando-lhes tranquilidade sobre a proteção de dados.
-* **Flexibilidade de conformidade:** com controle total sobre o ciclo de vida da chave, as empresas podem se adaptar facilmente a padrões normativos em evolução, como GDPR, HIPAA ou CCPA, garantindo que sua postura de conformidade permaneça forte.
-* **Integração perfeita:** a solução CMK integra-se diretamente ao Armazenamento Azure Blob e ao MongoDB no AEM CS, garantindo que não haja interrupção das operações de armazenamento ou da usabilidade e, ao mesmo tempo, fornecendo aos clientes recursos avançados de criptografia.
+* **Controlar Criptografia de Dados e Aplicativos:** aumente a segurança com o controle direto do aplicativo AEM e das chaves criptográficas de dados.
+* **Aumentar a Confidencialidade e a Integridade:** reduza a probabilidade de acesso inadvertido e divulgação de dados confidenciais ou proprietários com o gerenciamento completo de criptografia.
+* **Suporte ao Cofre de Chaves do Azure:** O uso do Cofre de Chaves do Azure permite o armazenamento de chaves, o processamento de operações de segredos e a execução de rotações de chaves.
 
-Com a adoção do CMK, os clientes podem aumentar o controle sobre suas práticas de segurança e criptografia de dados, aprimorando a conformidade e reduzindo riscos, tudo isso enquanto continuam desfrutando da escalabilidade e flexibilidade do AEM CS.
+Com a adoção do CMK, os clientes podem aumentar o controle sobre suas práticas de segurança e criptografia de dados, aprimorando a segurança e reduzindo riscos, tudo isso enquanto continuam a aproveitar a escalabilidade e a flexibilidade do AEM CS.
 
 O AEM as a Cloud Service permite trazer suas próprias chaves de criptografia para criptografar dados em repouso. Este guia fornece etapas para configurar uma chave gerenciada pelo cliente (CMK) no Cofre de Chaves do Azure para AEM as a Cloud Service.
 
@@ -43,10 +43,10 @@ Você também será guiado pelas seguintes etapas para criar e configurar a infr
 1. Obter uma ID de aplicativo do Adobe
 1. Criar um novo grupo de recursos
 1. Criar um cofre de chaves
-1. Conceder acesso de Adobe ao cofre de chaves
+1. Conceder acesso à chave do cofre à Adobe
 1. Criar uma chave de criptografia
 
-Você precisará compartilhar o URL do cofre de chaves, o nome da chave de criptografia e as informações sobre o cofre de chaves com o Adobe.
+Você precisará compartilhar o URL do cofre de chaves, o nome da chave de criptografia e as informações sobre o cofre de chaves com a Adobe.
 
 ## Configurar o ambiente {#setup-your-environment}
 
@@ -60,7 +60,7 @@ Antes de continuar com o restante deste guia, faça login na CLI com `az login`.
 
 ## Obter uma ID de aplicativo do Adobe {#obtain-an-application-id-from-adobe}
 
-O Adobe fornecerá uma ID do aplicativo Entra necessária no restante deste guia. Se você ainda não tiver uma ID do aplicativo, entre em contato com o Adobe para obter uma.
+A Adobe fornecerá uma ID do aplicativo Entra necessária no restante deste guia. Se você ainda não tiver uma ID do aplicativo, entre em contato com a Adobe para obter uma.
 
 ## Criar um novo grupo de recursos {#create-a-new-resource-group}
 
@@ -103,11 +103,11 @@ az keyvault create `
   --public-network-access Enabled
 ```
 
-## Conceder acesso de Adobe ao Cofre da Chave {#grant-adone-access-to-the-key-vault}
+## Conceder acesso à Adobe para o Cofre da Chave {#grant-adobe-access-to-the-key-vault}
 
-Nesta etapa, você permitirá que o Adobe acesse seu cofre de chaves por meio de um aplicativo Entra. A ID do aplicativo Entra já deve ter sido fornecida pelo Adobe.
+Nesta etapa, você permitirá que o Adobe acesse seu cofre de chaves por meio de um aplicativo Entra. A ID do aplicativo Entra já deve ter sido fornecida pela Adobe.
 
-Primeiro, você deve criar uma entidade de serviço anexada ao aplicativo Entra e atribuir a ela as funções **Reader do Cofre de Chaves** e **Usuário da Criptografia do Cofre de Chaves**. As funções estão limitadas ao cofre de chaves criado neste guia.
+Primeiro, você deve criar uma entidade de serviço anexada ao aplicativo Entra e atribuir a ela as funções **Cofre de Chaves Reader** e **Usuário de Criptografia do Cofre de Chaves**. As funções estão limitadas ao cofre de chaves criado neste guia.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -147,7 +147,7 @@ az keyvault key create --vault-name $keyVaultName --name $keyName
 
 ## Compartilhar as informações do Cofre de Chaves {#share-the-key-vault-information}
 
-Neste ponto, você está pronto. Você só precisa compartilhar algumas informações necessárias com o Adobe, que cuidará da configuração do seu ambiente para você.
+Neste ponto, você está pronto. Você só precisa compartilhar algumas informações necessárias com a Adobe, que cuidará da configuração do seu ambiente para você.
 
 ```powershell
 # Reuse this information from the previous steps.
@@ -177,7 +177,7 @@ Se você decidir revogar o acesso da Platform aos seus dados, poderá fazê-lo r
 
 ## Próximas etapas {#next-steps}
 
-Adobe de contato e compartilhamento:
+Entre em contato com a Adobe e compartilhe:
 
 * O URL do cofre de chaves. Você a recuperou nesta etapa e a salvou na variável `$keyVaultUri`.
 * O nome da chave de criptografia. Você criou a chave em uma etapa anterior e a salvou na variável `$keyName`.
@@ -198,6 +198,6 @@ Notify the Adobe Engineer once this process is complete and the Private Endpoint
 
 ## Chaves gerenciadas pelo cliente no Private Beta {#customer-managed-keys-in-private-beta}
 
-A equipe de engenharia da Adobe está trabalhando atualmente em uma implementação aprimorada do CMK aproveitando o Link privado do Azure. A nova implementação permitirá o compartilhamento da chave por meio do backbone do Azure graças a uma conexão direta de Link privado entre o locatário do Adobe e o Cofre da Chave.
+A equipe de engenharia da Adobe está trabalhando atualmente em uma implementação aprimorada do CMK aproveitando o Link privado do Azure. A nova implementação permitirá o compartilhamento da chave por meio do backbone do Azure graças a uma conexão direta de Link privado entre o locatário da Adobe e o Cofre de chaves.
 
-Essa implementação aprimorada está atualmente na Private Beta e pode ser ativada para clientes selecionados que concordam em assinar o programa da Private Beta e trabalhar em conjunto com a Engenharia de Adobe. Se você estiver interessado no Private Beta para CMK usando Private Link, entre em contato com a Adobe para obter mais informações.
+Essa implementação aprimorada está atualmente na Private Beta e pode ser ativada para clientes selecionados que concordam em assinar o programa da Private Beta e trabalhar em conjunto com a engenharia da Adobe. Se você estiver interessado no Private Beta para CMK usando o Link privado, entre em contato com a Adobe para obter mais informações.
