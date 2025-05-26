@@ -5,10 +5,10 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: b93bcb5d26a63babf0b81c92a4fd85d358bfbea7
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 75%
+source-wordcount: '306'
+ht-degree: 65%
 
 ---
 
@@ -19,11 +19,15 @@ O AEM oferece um serviço de visualização do Sites que permite que desenvolved
 
 Ele facilita a visualização de experiências de página que de outra forma não estariam visíveis no ambiente do autor, como transições de página e demais conteúdos disponíveis somente do lado da publicação.
 
+>[!IMPORTANT]
+>
+>O acesso ao ambiente de Pré-visualização requer a configuração de um arquivo de inclui na lista de permissões IP. Para obter detalhes, consulte [Acessar o serviço de visualização](/help/implementing/cloud-manager/manage-environments.md#access-preview-service#access-preview-service).
+>
+>Para obter mais detalhes sobre todos os ambientes, consulte [Gerenciar Ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
 >[!NOTE]
 >
->Como o conteúdo é *publicado* no ambiente de visualização, ele é acessível por URL (portanto, não precisa de acesso ao AEM).
-
-Para obter mais detalhes sobre os ambientes de visualização, consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Como o conteúdo é *publicado* no ambiente de visualização, ele é acessível por URL.
 
 ## Publicar conteúdo na visualização {#publishing-content-to-preview}
 
@@ -48,7 +52,7 @@ Como alternativa ao uso dos URLs exibidos no assistente para ver o conteúdo da 
 https://preview-p<programID>-e>environmentID>.adobeaemcloud.com/<pathtopage>.html
 ```
 
-Consulte o documento [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais informações sobre como recuperar os URLs de seus ambientes.
+Consulte [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md) para obter mais informações sobre como recuperar as URLs de seus ambientes.
 
 O conteúdo também pode ser publicado para visualização usando uma [árvore de fluxo de trabalho de conteúdo de publicação](/help/operations/replication.md#publish-content-tree-workflow) com o parâmetro `agentId` definido como `preview` ou usando a [API de replicação](/help/operations/replication.md#replication-api) com um `AgentFilter` configurado para visualização.
 
