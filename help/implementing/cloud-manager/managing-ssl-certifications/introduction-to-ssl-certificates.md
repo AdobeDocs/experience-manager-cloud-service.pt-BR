@@ -5,10 +5,10 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: a91b15836d0ca0308fbc860ec57aacda908f610d
+source-git-commit: b0c8769b5941ed772a91cf189e8c7355d1db766b
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 18%
+source-wordcount: '1160'
+ht-degree: 17%
 
 ---
 
@@ -58,6 +58,10 @@ Ambos os modelos oferecem os seguintes recursos gerais para gerenciar seus certi
 Os certificados DV são o nível mais básico da certificação SSL e são frequentemente usados para fins de teste ou para proteger sites com criptografia básica. Os certificados DV estão disponíveis em [programas de produção e programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 Após a criação do certificado DV, o Adobe o renova automaticamente a cada três meses, a menos que ele seja excluído.
+
+>[!IMPORTANT]
+>
+>Se seu ambiente usar certificados SSL (DV) com uma validação baseada em CNAME, esteja ciente de que a remoção do registro CNAME antes da renovação automática do certificado pode causar falha na renovação. A remoção pode resultar na expiração do certificado e na interrupção do serviço. Para evitar esse problema, verifique se o registro CNAME permanece em vigor durante o processo de renovação completo. O processo de renovação depende da presença do registro CNAME para a validação da propriedade do domínio.
 
 ### Certificados SSL gerenciados pelo cliente (OV/EV) {#customer-managed}
 
