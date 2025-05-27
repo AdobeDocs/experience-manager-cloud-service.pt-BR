@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21005, lançada publicamente em quarta-feira, 27 de maio de 2025. A versão de manutenção anterior era 20626.
 
-A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-21005}
 
@@ -47,7 +47,7 @@ A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos 
 * GUIDES-26434: A publicação no PDF nativo continua indefinidamente, se o conteúdo DITA tiver um link da Web sem ter o escopo `external`.
 * GUIDES-26516: A publicação de PDFs nativos e sites do AEM é interrompida e colocada em fila quando há erros no conteúdo.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conhecidos {#known-issues-21005}
 
