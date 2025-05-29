@@ -3,10 +3,10 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: f78d0242a3cf681ab827c785b6f02565887f392d
+source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
 workflow-type: tm+mt
-source-wordcount: '1422'
-ht-degree: 33%
+source-wordcount: '1598'
+ht-degree: 29%
 
 ---
 
@@ -203,6 +203,46 @@ O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
 * ![exibição de galeria](assets/do-not-localize/gallery-view.png) [!UICONTROL **exibição de galeria**] A exibição de galeria exibe arquivos ou pastas em uma lista horizontal bloqueada no centro.
 * ![exibição em cascata](assets/do-not-localize/waterfall-view.png) [!UICONTROL **Cascata** exibição] A exibição em cascata exibe arquivos ou pastas no formato de uma Bridge.
 
+### Detalhes e metadados do ativo {#asset-details-and-metadata}
+
+A página Detalhes do ativo fornece uma visualização abrangente de um ativo específico, consolidando todas as informações principais em um único local. Ele inclui uma visão geral com o nome, o formato de arquivo, o status e uma breve descrição, além de uma visualização ou miniatura para facilitar a identificação visual. Também inclui metadados de um ativo, como data de criação, autor, tamanho, esquema de cores e assim por diante. Esses atributos ajudam na pesquisa, filtragem e classificação eficientes de um ativo. O painel de detalhes do ativo está disponível no painel e na exibição modal do Seletor de ativos. Na exibição do painel, é necessário habilitar e configurar a propriedade `onDrop` para retornar um ativo. Como alternativa, na exibição modal, a propriedade `handleSelection` retorna um ativo. Consulte [Propriedades do seletor de ativos](asset-selector-properties.md).
+
+Para exibir detalhes de um ativo e metadados, execute as etapas abaixo:
+
+1. Abra o MFE do Seletor de ativos e navegue até um ativo.
+1. Passe o mouse sobre o ativo e clique no ![ícone de informações](/help/assets/assets/info-icon-solid-black.svg).
+1. Acesse a guia **[!UICONTROL Informações]** para ver os detalhes do ativo. <!--Otherwise, go to the **[Renditions](#asset-renditions)** tab to see renditions of an asset.-->
+
+Para personalizar o painel de exibição de detalhes de um ativo, consulte [Personalizar informações na exibição modal](asset-selector-customization.md#customize-info-in-modal-view).
+
+![Detalhes do ativo](assets/asset-details.png)
+
+<!--
+
+#### Asset renditions {#asset-renditions}
+
+Renditions in Adobe Experience Manager (AEM) are customized versions of digital assets, such as images, designed for different devices and platforms to ensure optimal performance. See [Dynamic Media renditions](/help/assets/renditions.md#dynamic-media-renditions).
+
+>[!NOTE]
+>
+>* Prerequisites to [Dynamic Media with OpenAPI Capabilities renditions](/help/assets/renditions.md##prereqs-dm-with-openapi-renditions).
+>* Renditions tab in the details panel of an asset shows up if `featureSet`  props is set to `['detail-panel', 'dm-renditions']`.
+>* An asset should be approved to see Dynamic Media with OpenAPI renditions and/or ensure processing/publishing of the asset to Dynamic Media is complete (for images only).
+
+![Asset details dynamic media renditions](assets/asset-details-dm-renditions.png)
+
+For assets that are approved and have renditions enabled, you see the **Dynamic Media with Open API** badge. 
+
+![Dynamic Media Open API stamp](assets/dm-open-api-stamp.png)
+
+Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI capabilities](integrate-asset-selector-dynamic-media-open-api.md##interface-dynamic-media-open-api).
+
+##### Add modifiers {#modifiers-dm-media-renditions}
+
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+
+-->
+
 ## Saiba mais sobre os principais recursos {#key-capabilities-asset-selector}
 
 <table>
@@ -216,39 +256,39 @@ O Seletor de ativos permite exibir o ativo em quatro exibições diferentes:
      </td>
     <td>
         <img src="assets/with-adobe-app.gif" width="70px" height="70px" alt="Integrar o Seletor de ativos ao gráfico de aplicativos do Adobe"><br/>
-        <a href="integrate-asset-selector.md">Integrar o Seletor de ativos aos aplicativos da Adobe</a>
+        <a href="integrate-asset-selector-adobe-app.md">Integrar o Seletor de ativos aos aplicativos da Adobe</a>
         <p>
         <em>Saiba como integrar o Seletor de ativos a vários aplicativos da Adobe.</em>
         </p>
     </td>
     <td>
         <img src="assets/third-party-app.gif" width="70px" height="70px" alt="Integrar gráfico do Seletor de ativos"><br/>
-        <a href="integrate-asset-selector.md">Integrar o Seletor de ativos a aplicativos de terceiros</a>
+        <a href="integrate-asset-selector-non-adobe-app.md">Integrar o Seletor de ativos a aplicativos de terceiros</a>
         <p>
         <em>Descarte os recursos para integrar o Seletor de Ativos a aplicativos que não sejam da Adobe.</em>
         </p>
     </td>
     <td>
         <img src="assets/with-dynamic-media-open-api.gif" width="70px" height="70px" alt="Integrar gráfico do Seletor de ativos"><br/>
-        <a href="integrate-asset-selector.md">Integrar o Seletor de ativos às APIs abertas do Dynamic Media</a>
+        <a href="integrate-asset-selector-dynamic-media-open-api.md">Integrar o Seletor de ativos às APIs abertas do Dynamic Media</a>
         <p>
         <em>Saiba como integrar o Seletor de ativos às APIs abertas do Dynamic Media.</em>
         </p>
      </td>
      <td>
-        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Gráfico de propriedades do Seletor de ativos"><br/>
-        <a href="asset-selector-customization.md">Propriedades do seletor de ativos</a>
+        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Gráfico de exemplos do Seletor de ativos"><br/>
+        <a href="asset-selector-properties.md">Propriedades do seletor de ativos</a>
         <p>
-        <em>Saiba mais sobre as noções básicas de personalização de vários componentes do Seletor de ativos, como filtros, seleção de ativos, ativos expirados e muito mais. </em>
+        <em>Entenda o uso de propriedades de maneira prática. </em>
         </p>
     </td>
 </tr>
 <tr>
     <td>
-        <img src="assets/asset-selector-properties.gif" width="70px" height="70px" alt="Gráfico de exemplos do Seletor de ativos"><br/>
-        <a href="asset-selector-customization.md">Exemplos de seletores de ativos</a>
+        <img src="assets/asset-selector-examples.gif" width="70px" height="70px" alt="Gráfico de propriedades do Seletor de ativos"><br/>
+        <a href="asset-selector-examples.md">Exemplos de seletores de ativos</a>
         <p>
-        <em>Entenda o uso de propriedades de maneira prática. </em>
+        <em>Saiba mais sobre as noções básicas de personalização de vários componentes do Seletor de ativos, como filtros, seleção de ativos, ativos expirados e muito mais. </em>
         </p>
     </td>
     <td>

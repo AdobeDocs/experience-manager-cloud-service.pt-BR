@@ -1,12 +1,12 @@
 ---
-title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Integrar o Seletor de ativos usando o Vanilla JS
 description: Integrar o seletor de ativos a vários aplicativos da Adobe, que não sejam da Adobe e de terceiros.
 role: Admin, User
 exl-id: 1c0051a3-549c-4783-9fc1-594f424a70c3
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 37%
+source-wordcount: '225'
+ht-degree: 45%
 
 ---
 
@@ -32,19 +32,19 @@ ht-degree: 37%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>

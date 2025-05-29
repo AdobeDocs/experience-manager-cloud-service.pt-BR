@@ -1,12 +1,12 @@
 ---
-title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
-description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
+title: Coleções do seletor de ativos
+description: Trabalhar com coleções do seletor de ativos.
 role: Admin,User
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 8%
+source-wordcount: '495'
+ht-degree: 7%
 
 ---
 
@@ -32,19 +32,19 @@ ht-degree: 8%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -70,7 +70,7 @@ Além disso, também é possível personalizar a seleção de ativos na guia Col
 
 ## Exibir coleções {#view-collections}
 
-O Seletor de ativos permite exibir coleções em uma exibição de lista ![1&rbrace; ou em uma exibição de grade 3&rbrace;. ](assets/do-not-localize/list-view.png)![](assets/do-not-localize/grid-view.png) Consulte [tipos de exibição no Seletor de ativos](overview-asset-selector.md#types-of-view).
+O Seletor de ativos permite exibir coleções em uma exibição de lista ![1} ou em uma exibição de grade ![3}. ](assets/do-not-localize/list-view.png)](assets/do-not-localize/grid-view.png) Consulte [tipos de exibição no Seletor de ativos](overview-asset-selector.md#types-of-view).
 
 ## Arraste e solte ativos na coleção {#collection-drag-and-drop}
 

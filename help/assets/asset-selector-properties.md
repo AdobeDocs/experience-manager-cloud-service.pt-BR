@@ -1,12 +1,12 @@
 ---
-title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]
+title: Propriedades do Seletor de ativos para personalização
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 97a432270c0063d16f2144d76beb437f7af2895a
+source-git-commit: 89a7346f5b6bc1d65524c5ead935aa4a2a764ebb
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 41%
+source-wordcount: '1403'
+ht-degree: 38%
 
 ---
 
@@ -58,7 +58,7 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *imsToken* | String | Não | | Token de portador IMS usado para autenticação. `imsToken` é necessário se você estiver usando um aplicativo [!DNL Adobe] para a integração. |
 | *apiKey* | String | Não | | Chave de API usada para acessar o serviço de Descoberta do AEM. `apiKey` é necessário se você estiver usando uma integração de aplicativos [!DNL Adobe]. |
 | *filterSchema* | Matriz | Não | | Modelo usado para configurar propriedades de filtro. Isso é útil quando quiser limitar determinadas opções de filtro no Seletor de ativos. |
-| *filterFormProps* | Objeto | Não | | Especifique as propriedades de filtro que precisam ser usadas para refinar sua pesquisa. Para! exemplo, tipo MIME JPG, PNG, GIF. |
+| *Propriedades de Formulário de Filtro* | Objeto | Não | | Especifique as propriedades de filtro que precisam ser usadas para refinar sua pesquisa. Para! exemplo, tipo MIME JPG, PNG, GIF. |
 | *selectedAssets* | Matriz `<Object>` | Não |                 | Especifique os ativos selecionados quando o Seletor de ativos for renderizado. É necessária uma matriz de objetos que contenha uma propriedade de id dos ativos. Por exemplo, `[{id: 'urn:234}, {id: 'urn:555'}]` Um ativo deve estar disponível no diretório atual. Se precisar usar um diretório diferente, forneça um valor para a propriedade `path` também. |
 | *acvConfig* | Objeto | Não | | A propriedade Exibição da coleção do ativo que contém o objeto com a configuração personalizada para substituir os padrões. Além disso, essa propriedade é usada com a propriedade `rail` para habilitar a exibição do painel do visualizador de ativos. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Não |                 | Se as traduções OOTB forem insuficientes para as necessidades do aplicativo, você poderá expor uma interface pela qual poderá passar seus próprios valores localizados e personalizados pela prop `i18nSymbols`. Transmitir um valor por meio dessa interface substitui as traduções padrão fornecidas e, em vez disso, usa suas próprias traduções. Para executar a substituição, deverá transmitir um objeto [Descritor de mensagem](https://formatjs.io/docs/react-intl/api/#message-descriptor) à chave de `i18nSymbols` que deseja substituir. |
@@ -66,7 +66,7 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *repositoryId* | String | Não | &#39;&#39; | Repositório de onde o Seletor de ativos carrega o conteúdo. |
 | *additionalAemSolutions* | `Array<string>` | Não | [ ] | Ele permite adicionar uma lista de repositórios AEM adicionais. Se nenhuma informação for fornecida nessa propriedade, somente a biblioteca de mídia ou os repositórios do AEM Assets serão considerados. |
 | *hideTreeNav* | Booleano | Não |  | Especifica se deve mostrar ou ocultar a barra lateral de navegação da árvore de ativos. Usada apenas na exibição modal e, portanto, não há efeito dessa propriedade na exibição de painel. |
-| *onDrop* | Função | Não | | A propriedade permite a funcionalidade soltar de um ativo. |
+| *onDrop* | Função | Não | | A funcionalidade ao soltar é usada para arrastar um ativo e soltar em uma área designada para soltar. Ela permite interfaces de usuário interativas, nas quais os ativos podem ser movidos e processados sem interrupções. |
 | *dropOptions* | `{allowList?: Object}` | Não | | Configura as opções de soltar usando “allowList”. |
 | *colorScheme* | String | Não | | Configure o tema (`light` ou `dark`) do Seletor de ativos. |
 | *Tema* | String | Não | Padrão | Aplique o tema ao aplicativo Seletor de Ativos entre `default` e `express`. Também aceita `@react-spectrum/theme-express`. |
@@ -94,11 +94,20 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *onFilesChange* | Função | Não | | É uma função de retorno de chamada usada para mostrar o comportamento de upload quando um arquivo é alterado. Ele passa a nova matriz de arquivos pendentes para upload e o tipo de origem do upload. O tipo de Source pode ser nulo em caso de erro. A sintaxe é `(newFiles: File[], uploadType: UploadType) => void` |
 | *uploadingPlaceholder* | String | | | É uma imagem de espaço reservado que substitui o formulário de metadados quando um upload do ativo é iniciado. A sintaxe é `{ href: string; alt: string; } ` |
 | *uploadConfig* | Objeto | | | É um objeto que contém a configuração personalizada para o upload. |
-| *featureSet* | Matriz | String | | A propriedade `featureSet:[ ]` é usada para habilitar ou desabilitar uma funcionalidade específica no aplicativo Seletor de ativos. Para ativar o componente ou um recurso, passe um valor de string na matriz ou deixe a matriz vazia para desativar esse componente. Por exemplo, se você deseja habilitar a funcionalidade de carregamento no Seletor de ativos, use a sintaxe `featureSet:[0:"upload"]`. |
+| *featureSet* | Matriz | String | | A propriedade `featureSet:[ ]` é usada para habilitar ou desabilitar uma funcionalidade específica no aplicativo Seletor de ativos. Para ativar o componente ou um recurso, passe um valor de string na matriz ou deixe a matriz vazia para desativar esse componente.  Por exemplo, se você deseja habilitar a funcionalidade de carregamento no Seletor de ativos, use a sintaxe `featureSet:[0:"upload"]`. Da mesma forma, você pode usar `featureSet:[0:"collections"]` para habilitar coleções no Seletor de ativos. Além disso, use o `featureSet:[0:"detail-panel"]` para habilitar o [painel de detalhes](overview-asset-selector.md#asset-details-and-metadata) de um ativo. Para usar esses recursos juntos, a sintaxe é `featureSet:["upload", "collections", "detail-panel"]`. |
 
 <!--
+| *selectedRendition* | Object | | | This property allows users to define and control which renditions of an asset are displayed when the panel is accessed. This customization enhances user experience by filtering out unnecessary renditions and showcasing only the most relevant renditions. For example, `CopyUrlHref` allows you to use Dynamic Media renditions in your Asset Selector application (delivery URL). |
+| *featureSet* | Array | String | | The `featureSet:[ ]` property is used to enable or disable a particular functionaly in the Asset Selector application. To enable the component or a feature, you can pass a string value in the array or leave the array empty to disable that component. For example, you want to enable upload functionality in the Asset Selector, use the syntax `featureSet:[0:"upload"]`. Similarly, you can use `featureSet:[0:"collections"]` to enable collections in the Asset Selector. Addidionally, use `featureSet:[0:"detail-panel"]` to enable [details panel](overview-asset-selector.md#asset-details-and-metadata) of an asset. Also, `featureSet:[0:"dm-renditions"]` to show Dynamic Media renditions of an asset.|
 | *rootPath* | String | No | /content/dam/ | Folder path from which Asset Selector displays your assets. `rootPath` can also be used in the form of encapsulation. For example, given the following path, `/content/dam/marketing/subfolder/`, Asset Selector does not allow you to traverse through any parent folder, but only displays the children folders. |
 | *path* | String | No | | Path that is used to navigate to a specific directory of assets when the Asset Selector is rendered. |
 | *expirationDate* | Function | No | | This function is used to set the usability period of an asset. |
 | *disableDefaultBehaviour* | Boolean | No | False | It is a function that is used to enable or disable the selection of an expired asset. You can customize the default behavior of an asset that is set to expire. See [customize expired assets](/help/assets/asset-selector-customization.md#customize-expired-assets). |
 -->
+
+>[!MORELIKETHIS]
+>
+>* [Personalizações do Seletor de ativos](/help/assets/asset-selector-customization.md)
+>* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
+>* [Integrar o Seletor de ativos ao Dynamic Media com recursos OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Integrar o Seletor de ativos a aplicativos de terceiros](/help/assets/integrate-asset-selector-non-adobe-app.md)

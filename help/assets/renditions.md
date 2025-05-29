@@ -4,10 +4,10 @@ description: Saiba como o AEM Assets e o Dynamic Media simplificam o gerenciamen
 exl-id: 006dc493-c400-4d0f-b314-c1978582b7fb
 feature: Renditions
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: b6c753ec581a80991f0f79134bec019c3ad6d1d0
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -33,19 +33,19 @@ ht-degree: 0%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -86,7 +86,7 @@ Essas representações permitem que as organizações entreguem experiências pe
    * [Predefinições de imagem](/help/assets/dynamic-media/managing-image-presets.md)
 
   Você pode [alternar o modo de exibição](/help/assets/assets-view-introduction.md#how-to-access-assets-view) posteriormente para visualizar representações dinâmicas no modo de exibição do Assets.
-* Publique ativos no Dynamic Media para disponibilizar representações do Dynamic Media na visualização do Assets. Para obter mais informações, consulte [Publicar Assets no AEM e Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
+* Publique ativos no Dynamic Media para disponibilizar representações do Dynamic Media na visualização do Assets. Para obter mais informações, consulte [Publicar Assets no AEM e Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/publish-assets-to-aem-and-dm).
 
 
 ### Exibir e baixar representações do Dynamic Media {#view-download-dm-renditions}
@@ -115,7 +115,7 @@ Para exibir ou baixar representações dinâmicas de imagens no Experience Manag
 
 ## Representações do Dynamic Media com recursos OpenAPI {#dm-with-openapi-renditions}
 
-### Antes de começar
+### Antes de começar {#prereqs-dm-with-openapi-renditions}
 
 * Você deve ser um usuário licenciado do AEM Dynamic Media.
 * O Assets deve ser aprovado para exibir representações do Dynamic Media com recursos OpenAPI. Para obter mais informações, consulte [Aprovar ativos no Experience Manager](/help/assets/approve-assets.md#copy-delivery-url-approved-assets)
