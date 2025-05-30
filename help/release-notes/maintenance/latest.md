@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: e1fa4b3bcb04ab3e834b34f507f1350fb536b513
+source-git-commit: 6884e33a922a7147e3a6a3f3ddb3dd3b2da85fbf
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '562'
 ht-degree: 20%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21005, lançada publicamente em quarta-feira, 27 de maio de 2025. A versão de manutenção anterior era 20626.
 
-A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-21005}
 
@@ -47,7 +47,7 @@ A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos 
 * GUIDES-26434: A publicação no PDF nativo continua indefinidamente, se o conteúdo DITA tiver um link da Web sem ter o escopo `external`.
 * GUIDES-26516: A publicação de PDFs nativos e sites do AEM é interrompida e colocada em fila quando há erros no conteúdo.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conhecidos {#known-issues-21005}
 
@@ -58,6 +58,7 @@ Nenhum.
 * GRANITE-54164: `org.apache.jackrabbit.oak.plugins.blob` removido da API pública.
 * GRANITE-54280: `org.apache.jackrabbit.oak.cache` removido da API pública.
 * GRANITE-58332: `org.apache.jackrabbit.oak.plugins.memory` obsoleto na API pública.
+* O compactador YUI para javascript foi descontinuado.
 * A funcionalidade [Automação de Instalação do Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) foi descontinuada.
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
