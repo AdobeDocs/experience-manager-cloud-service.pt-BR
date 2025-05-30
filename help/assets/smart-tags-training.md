@@ -118,7 +118,7 @@ Verifique se as imagens no conjunto de treinamento estão em conformidade com as
 >[!NOTE]
 >
 >É possível usar as mesmas imagens para treinar modelos de tags diferentes. No entanto, não associe uma imagem a mais de uma tag em um modelo de tag. É possível marcar a mesma imagem com tags diferentes pertencentes a modelos de tags diferentes.
->>Não é possível desfazer o treinamento. As diretrizes acima devem ajudá-lo a escolher boas imagens para treinar.
+>&#x200B;>Não é possível desfazer o treinamento. As diretrizes acima devem ajudá-lo a escolher boas imagens para treinar.
 
 ## Treine o modelo para suas tags personalizadas {#train-model}
 
@@ -161,7 +161,7 @@ Para verificar se o serviço de Tags inteligentes é treinado em suas tags no co
 >[!NOTE]
 >
 >E se eu desejar transferir o treinamento de Tags inteligentes de uma instância para outra por meio de uma exportação?
->>Não é necessário exportar o treinamento de Tags inteligentes se o ambiente pertencer à mesma Organização IMS. Ele é compartilhado automaticamente. Se o ambiente estiver entre organizações IMS, não há como compartilhar ou exportar o treinamento de Tags inteligentes.
+>&#x200B;>Não é necessário exportar o treinamento de Tags inteligentes se o ambiente pertencer à mesma Organização IMS. Ele é compartilhado automaticamente. Se o ambiente estiver entre organizações IMS, não há como compartilhar ou exportar o treinamento de Tags inteligentes.
 
 ## Limitações e práticas recomendadas relacionadas às tags inteligentes {#limitations-smart-tags-training}
 
@@ -172,4 +172,4 @@ Para verificar se o serviço de Tags inteligentes é treinado em suas tags no co
 >[!NOTE]
 >
 >A capacidade das Tags inteligentes de treinar em suas tags e aplicá-las em outras imagens depende da qualidade de imagens usadas para treinamento.
->>Para obter melhores resultados, a Adobe recomenda usar imagens visualmente semelhantes para treinar o serviço para cada tag.
+>&#x200B;>Para obter melhores resultados, a Adobe recomenda usar imagens visualmente semelhantes para treinar o serviço para cada tag.
