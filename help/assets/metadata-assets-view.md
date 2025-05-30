@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 6d729c8e7f84dccce9c11f1ca13553763d0547f8
+source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
 workflow-type: tm+mt
-source-wordcount: '2124'
-ht-degree: 77%
+source-wordcount: '2448'
+ht-degree: 75%
 
 ---
 
@@ -34,19 +34,19 @@ ht-degree: 77%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -219,21 +219,21 @@ Siga as etapas abaixo para usar o componente Link no formulário de metadados:
 1. Clique em **[!UICONTROL Salvar]** para salvar as alterações.
 
 
-### Trabalhar com o componente Tags no formulário de metadados {#tag-component-metadata-form}
+### Trabalhar com o componente de tags no formulário de metadados {#tag-component-metadata-form}
 
-O elemento raiz representa a estrutura em árvore das tags que podem ser associadas aos ativos, ajudando a identificar o ativo com base na tag atribuída a ele. Além disso, é possível restringir o acesso de uma taxonomia específica ao configurar o formulário de metadados no editor de metadados.
+O elemento raiz representa a estrutura em árvore das tags que podem ser associadas aos ativos, ajudando a identificar o ativo com base na tag atribuída a ele. Além disso, é possível restringir o acesso de uma taxonomia específica por meio da configuração do formulário de metadados no editor de metadados.
 
-#### Configuração do componente de Tags {#tags-component-configuration}
+#### Configuração do componente de tags {#tags-component-configuration}
 
-Configure o componente de tags executando as seguintes etapas:
+Siga estas etapas para configurar o componente de tags:
 
-1. Vá para o editor de metadados, navegue até **[!UICONTROL Marcas]** e coloque-o na tela.
-1. Renomeie o componente na tela. Para fazer isso, vá para **[!UICONTROL Rótulo]** sob a [!UICONTROL propriedade de Metadados] no painel de configurações e adicione o texto para sua identificação.
-1. Em [!UICONTROL Propriedade de metadados], no painel de configurações, procure a propriedade de metadados que deseja atribuir ao componente.
-1. Clique em **[!UICONTROL Restringir à taxonomia específica]** para restringir o caminho raiz da taxonomia. Para fazer isso, navegue pelas tags e escolha a taxonomia para o caminho específico.
+1. Acesse o editor de metadados, navegue até o componente **[!UICONTROL Tags]** e coloque-o na tela.
+1. Renomeie o componente na tela. Para isso, acesse **[!UICONTROL Rótulo]** na propriedade de [!UICONTROL Metadados] do painel de configurações e adicione o texto para identificá-lo.
+1. Na [!UICONTROL propriedade de Metadados] do painel de configurações, procure a propriedade de metadados que deseja atribuir ao componente.
+1. Clique em **[!UICONTROL Restringir a uma taxonomia específica]** para restringir o caminho raiz da taxonomia. Para isso, navegue pelas tags e escolha a taxonomia correspondente ao caminho específico.
 1. Clique em **[!UICONTROL Salvar]** para salvar as alterações.
 
-   ![Configuração de marcas raiz](assets/root-tag-config.png)
+   ![Configuração de tags raiz](assets/root-tag-config.png)
 
 1. [Atribuir formulário de metadados a pastas](#assign-metadata-form-folder).
 
@@ -249,7 +249,34 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 1. Click **[!UICONTROL Assign]**.
 -->
 
-Para visualizar as tags raiz configuradas, vá para a página de detalhes do ativo na qual o mapeamento entre o formulário de metadados e as tags raiz é executado.
+Para visualizar as tags raiz configuradas, acesse a página de detalhes do ativo na qual o mapeamento entre o formulário de metadados e as tags raiz é executado.
+
+## Aprimoramento da descoberta de conteúdo com tags inteligentes geradas por IA {#ai-smart-tags}
+
+Em vez de depender da entrada manual, a IA atribui tags descritivas automaticamente a ativos digitais. Essas tags geradas por IA melhoram a qualidade dos metadados, tornando os ativos mais fáceis de pesquisar, categorizar e recomendar. Essa abordagem não só aumenta a eficiência eliminando a marcação manual, mas também garante a consistência e a escalabilidade em grandes volumes de conteúdo digital. Por exemplo, se o ativo for uma imagem, a IA pode identificar objetos, cenas, emoções ou até mesmo logotipos de marca nele e gerar tags relevantes, como &quot;pôr do sol&quot;, &quot;praia&quot;, &quot;férias&quot; ou &quot;sorrir&quot;. O conteúdo gerado por IA pode aprimorar a pesquisa de ativos aproveitando técnicas de pesquisa semântica e léxica. Veja mais [Pesquisar Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
+
+![Marcas inteligentes aprimoradas](assets/enhanced-smart-tags.png)
+
+### Uso de tags inteligentes geradas por IA {#using-ai-generated-smart-tags}
+
+<!--[!NOTE]
+>
+>The enhanced smart tags capability is available only for the newly uploaded assets.
+-->
+
+Para usar o recurso aprimorado de tags inteligentes, execute as seguintes etapas:
+
+1. Na interface [!DNL Experience Manager], vá para a pasta desejada e clique em **[!UICONTROL Adicionar Assets]**. <!--Alternatively, to update enhanced smart tags in an existing content, click **[!UICONTROL reprocess]**.--> Os formatos de arquivo de imagem compatíveis são `png`, `jpg`, `jpeg`,`psd`, `tiff`, `gif`, `webp`, `crw`, `cr2`, `3fr`, `nef`, `arw` e `bmp`.
+
+1. Espere até que o ativo recém-carregado seja processado. Depois de concluído, acesse os detalhes do ativo.
+
+1. Vá para a guia **[!UICONTROL Gerado por IA]**. Se a versão [!DNL Experience Manager] for incompatível ou não for atualizada, essa guia não estará visível. A versão mínima do AEM necessária é `20626`. Os seguintes campos estão lá:
+
+   * **[!UICONTROL Título gerado]:** o título fornece um título claro e conciso que captura a ideia principal de um ativo carregado, facilitando sua compreensão rápida. Ao adicionar um ativo, se você fornecer um título (em `dc:title`), ele será exibido na exibição de navegação dos ativos. Se deixado em branco, um título gerado pela IA será atribuído automaticamente.
+   * **[!UICONTROL Descrição gerada]:** A descrição fornece um resumo breve, mas informativo, sobre o que o ativo trata, ajudando os usuários e o módulo de pesquisa a compreender rapidamente sua relevância.
+   * **[!UICONTROL Palavras-chave geradas]:** são termos direcionados que representam os principais temas de um ativo, auxiliando na marcação e filtragem de conteúdo.
+
+1. [Opcional] Você pode adicionar outras marcas ou criar as suas próprias se achar que estão faltando marcas relevantes. Para fazer isso, escreva suas marcas no campo **[!UICONTROL Palavras-chave geradas]** e clique em **[!UICONTROL Salvar]**.
 
 ## Próximas etapas {#next-steps}
 
@@ -259,7 +286,7 @@ Para visualizar as tags raiz configuradas, vá para a página de detalhes do ati
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&amp;lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&amp;lang=pt-BR#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
