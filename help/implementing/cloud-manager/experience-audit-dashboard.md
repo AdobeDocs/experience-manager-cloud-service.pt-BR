@@ -5,9 +5,9 @@ exl-id: 6d33c3c5-258c-4c9c-90c2-d566eaeb14c0
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: d4b579e817831945f46b06d9c271c8e671958bed
+source-git-commit: eea0ac03cf2da9cd8508b6df9242dfe67b67c9f9
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1529'
 ht-degree: 8%
 
 ---
@@ -15,14 +15,15 @@ ht-degree: 8%
 
 # Painel de auditoria de experiência {#experience-audit-dashboard}
 
-Descubra como a Auditoria de experiência valida seu processo de implantação, garantindo que as alterações atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO. Ele fornece uma interface de painel clara e informativa para rastrear essas métricas.
+<!-- Engineer architect over this feature was Bogdan Anton; scrum master Alexandru Nica -->
+
+Descubra como a Auditoria de experiência valida seu processo de implantação, garantindo que as alterações atendam aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO (Otimização do mecanismo de pesquisa). Ele fornece uma interface de painel clara e informativa para rastrear essas métricas.
 
 ## Visão geral {#overview}
 
 A Auditoria de experiência valida o processo de implantação e ajuda a garantir que as alterações sejam implantadas:
 
-1. Atenda aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO (Otimização do mecanismo de pesquisa).
-
+1. Atenda aos padrões básicos de desempenho, acessibilidade, práticas recomendadas e SEO.
 1. Não introduza regressões.
 
 A Auditoria de experiência no Cloud Manager garante que a experiência do usuário no site seja do mais alto padrão.
@@ -35,9 +36,9 @@ A Auditoria de experiência é disponibilizada pelo [Google Lighthouse](https://
 
 A Auditoria de experiência está disponível para o Cloud Manager:
 
-* (Padrão) Pipelines de produção de sites
-* (Opcional) Desenvolvimento de pipelines de pilha completa
-* (Opcional) Desenvolvimento de pipelines de front-end
+* (Padrão) Pipelines de produção de sites.
+* (Opcional) Desenvolvimento de pipelines de pilha completa.
+* (Opcional) Desenvolvimento de pipelines de front-end.
 
 Consulte a [seção Configuração](#configuration) para obter mais informações sobre como configurar a auditoria para os ambientes opcionais.
 
@@ -49,9 +50,9 @@ A Auditoria de experiência está disponível por padrão para pipelines de prod
 
 1. Dependendo do tipo de pipeline que você deseja configurar, siga um destes procedimentos:
 
-   * Adicione um novo [pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para definir os caminhos que você deseja que a auditoria avalie.
-   * Adicione um novo [pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md), se desejar habilitar a auditoria em um pipeline de front-end ou de pilha completa de desenvolvimento.
-   * Ou você pode [editar um pipeline existente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e atualizar as opções existentes.
+   * [Adicione um pipeline de produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) para definir os caminhos que você deseja que a auditoria avalie.
+   * [Adicione um pipeline de não produção](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) se desejar habilitar a auditoria em um pipeline de front-end ou de pilha completa de desenvolvimento.
+   * [Editar um pipeline existente](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md) e atualizar as opções existentes.
 
 1. Para usar o Experience Audit ao adicionar ou editar um pipeline de não produção, marque a caixa de seleção **Auditoria de experiência**. Você pode encontrar essa opção na guia **Código Source**.
 
@@ -80,7 +81,7 @@ A Auditoria de experiência está disponível por padrão para pipelines de prod
 
 ## Resultados da auditoria de experiência {#results}
 
-Os resultados da Auditoria de Experiência são apresentados na fase **Teste de preparo** do pipeline de produção através da [página de execução do pipeline de produção](/help/implementing/cloud-manager/deploy-code.md).
+Os resultados da Auditoria de Experiência são apresentados na fase **Teste de preparo** do pipeline de produção por meio da [página de execução do pipeline de produção](/help/implementing/cloud-manager/deploy-code.md).
 
 ![Painel no pipeline](assets/experience-audit-dashboard.png)
 
@@ -148,7 +149,7 @@ Ao mover o mouse sobre o gráfico, uma dica de ferramenta exibe os valores das c
 
 ![Detalhes da tendência](assets/experience-audit-trend-details.png)
 
-Se você clicar no gráfico em um ponto no tempo, um popover será aberto com detalhes dessa verificação. Clique em **abrir verificação de auditoria de experiência** para carregar os resultados da verificação na seção **[Resultados da verificação de Auditoria de Experiência](#scan-results)**.
+Se você clicar no gráfico em um ponto no tempo, uma janela pop-up será aberta com detalhes dessa verificação. Clique em **abrir verificação de auditoria de experiência** para carregar os resultados da verificação na seção **[Resultados da verificação de Auditoria de Experiência](#scan-results)**.
 
 ![Selecionar verificação diferente](assets/experience-audit-open-scan.png)
 
