@@ -5,7 +5,7 @@ exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 3ecb3f0f49160536ba9abd1261477b0985a03c07
+source-git-commit: 68da11037cb3572a6f869fe8bd6a898e0aad87ec
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 16%
@@ -56,9 +56,9 @@ A Cloud Manager verifica a propriedade do domínio por meio do certificado SSL g
 | A exclusão falhou | A exclusão de um nome de domínio personalizado falhou e deve ser repetida.<br>Consulte [Gerenciar nomes de domínio personalizados](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) para saber mais. |
 
 
-## Erros de nome de domínio {#domain-error}
+## Erro de nome de domínio {#domain-error}
 
-A seguir estão alguns erros comuns de verificação de nome de domínio e suas resoluções típicas.
+Veja a seguir um erro comum de verificação de nome de domínio e sua resolução típica.
 
 ### Erro de domínio não instalado {#domain-not-installed}
 
