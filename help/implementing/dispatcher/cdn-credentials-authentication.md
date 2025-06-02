@@ -4,9 +4,9 @@ description: Saiba como configurar credenciais e autenticação de CDN declarand
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Configurando Credenciais e Autenticação da CDN {#cdn-credentials-authentication}
 
-A CDN fornecida por Adobe tem vários recursos e serviços, alguns dos quais dependem de credenciais e autenticação para garantir um nível apropriado de segurança corporativa. Ao declarar regras em um arquivo de configuração implantado com o uso do [pipeline de configuração](/help/operations/config-pipeline.md) do Cloud Manager, os clientes podem configurar, por autoatendimento, o seguinte:
+A CDN fornecida pela Adobe tem vários recursos e serviços, alguns dos quais dependem de credenciais e autenticação para garantir um nível apropriado de segurança corporativa. Ao declarar regras em um arquivo de configuração implantado com o uso do [pipeline de configuração](/help/operations/config-pipeline.md) do Cloud Manager, os clientes podem configurar, por autoatendimento, o seguinte:
 
-* O valor do cabeçalho HTTP X-AEM-Edge-Key usado pelo CDN Adobe para validar solicitações provenientes de um CDN gerenciado pelo Cliente.
+* O valor do cabeçalho HTTP X-AEM-Edge-Key usado pela CDN da Adobe para validar solicitações provenientes de um CDN gerenciado pelo Cliente.
 * O token de API usado para limpar recursos no cache do CDN.
 * Uma lista de combinações de nome de usuário/senha que podem acessar conteúdo restrito, enviando um formulário de Autenticação básica.
 
@@ -24,11 +24,17 @@ Cada uma dessas opções, incluindo a sintaxe de configuração, é descrita em 
 
 Há uma seção sobre como [girar chaves](#rotating-secrets), o que é uma boa prática de segurança.
 
+>[!NOTE]
+> Segredos definidos como variáveis de ambiente devem ser considerados imutáveis. Em vez de alterar o valor, você deve criar um novo segredo com um novo nome e fazer referência a esse segredo na configuração. Não fazer isso resultará na atualização não confiável dos segredos.
+
+>[!WARNING]
+>Não remova as variáveis de ambiente referenciadas na sua configuração de CDN. Isso pode causar falhas na atualização da configuração do CDN (por exemplo, atualização de regras ou domínios e certificados personalizados).
+
 ## Valor do cabeçalho HTTP da CDN gerenciada pelo cliente {#CDN-HTTP-value}
 
 Conforme descrito na página [CDN no AEM as a Cloud Service](/help/implementing/dispatcher/cdn.md#point-to-point-CDN), os clientes podem optar por rotear o tráfego por meio de sua própria CDN, que é chamada de CDN do cliente (também chamada às vezes de BYOCDN).
 
-Como parte da configuração, o CDN do Adobe e o CDN do cliente devem concordar com um valor do Cabeçalho HTTP `X-AEM-Edge-Key`. Esse valor é definido em cada solicitação no CDN do cliente, antes de ser roteado para o CDN do Adobe, que então valida se o valor está conforme o esperado, para que possa confiar em outros cabeçalhos HTTP, incluindo aqueles que ajudam a rotear a solicitação para a origem AEM apropriada.
+Como parte da configuração, a CDN da Adobe e a CDN do cliente devem concordar com um valor do Cabeçalho HTTP `X-AEM-Edge-Key`. Esse valor é definido em cada solicitação no CDN do cliente, antes de ser roteado para o CDN da Adobe, que então valida se o valor está conforme o esperado, para que possa confiar em outros cabeçalhos HTTP, incluindo aqueles que ajudam a rotear a solicitação para a origem apropriada do AEM.
 
 O valor *X-AEM-Edge-Key* é referenciado pelas propriedades `edgeKey1` e `edgeKey2` em um arquivo chamado `cdn.yaml` ou similar, em algum lugar sob uma pasta `config` de nível superior. Leia [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#folder-structure) para obter detalhes sobre a estrutura de pastas e como implantar a configuração.  A sintaxe é descrita no exemplo abaixo.
 
@@ -59,7 +65,7 @@ data:
 
 Consulte [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição das propriedades acima do nó `data`. O valor da propriedade `kind` deve ser *CDN* e a propriedade `version` deve ser definida como `1`.
 
-Consulte a etapa do tutorial [Configurar e implantar regra CDN de validação de cabeçalho HTTP](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obter mais detalhes.
+Consulte a etapa do tutorial [Configurar e implantar regra CDN de validação de cabeçalho HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obter mais detalhes.
 
 As propriedades adicionais incluem:
 
@@ -81,7 +87,7 @@ As propriedades adicionais incluem:
 
 ### Migração segura para reduzir o risco de tráfego bloqueado {#migrating-safely}
 
-Se o site já estiver ativo, tenha cuidado ao migrar para o CDN gerenciado pelo cliente, pois uma configuração incorreta pode bloquear o tráfego público; isso ocorre porque somente as solicitações com o valor esperado do cabeçalho X-AEM-Edge-Key serão aceitas pelo CDN Adobe. Uma abordagem é recomendada quando uma condição adicional é temporariamente incluída na regra de autenticação, o que faz com que ela bloqueie a solicitação somente se um cabeçalho de teste for incluído ou se um caminho for correspondido:
+Se seu site já estiver ativo, tenha cuidado ao migrar para o CDN gerenciado pelo cliente, pois uma configuração incorreta pode bloquear o tráfego público; isso ocorre porque somente as solicitações com o valor do cabeçalho X-AEM-Edge-Key esperado serão aceitas pelo CDN da Adobe. Uma abordagem é recomendada quando uma condição adicional é temporariamente incluída na regra de autenticação, o que faz com que ela bloqueie a solicitação somente se um cabeçalho de teste for incluído ou se um caminho for correspondido:
 
 ```
     - name: edge-auth-rule
@@ -158,11 +164,11 @@ As propriedades adicionais incluem:
 >[!NOTE]
 >A Chave de Limpeza deve ser configurada como uma [Variável de Ambiente Cloud Manager do tipo secreto](/help/operations/config-pipeline.md#secret-env-vars), antes da implantação da configuração que faz referência a ela. É recomendável usar uma chave aleatória exclusiva com comprimento mínimo de 32 bytes; por exemplo, a biblioteca criptográfica Open SSL pode gerar uma chave aleatória executando o comando openssl rand -hex 32
 
-Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
+Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
 
 ## Autenticação básica {#basic-auth}
 
-Protect determinados recursos de conteúdo, exibindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. Esse recurso destina-se principalmente a casos de uso de autenticação simples, como a análise de conteúdo pelas partes interessadas, e não como uma solução completa para os direitos de acesso do usuário final.
+Proteja determinados recursos de conteúdo abrindo uma caixa de diálogo de autenticação básica que requer um nome de usuário e senha. Esse recurso destina-se principalmente a casos de uso de autenticação simples, como a análise de conteúdo pelas partes interessadas, e não como uma solução completa para os direitos de acesso do usuário final.
 
 O usuário final terá uma caixa de diálogo de autenticação básica surgindo da seguinte maneira:
 
@@ -216,7 +222,9 @@ Além disso, a sintaxe inclui:
 
 ## Rotação de segredos {#rotating-secrets}
 
-1. É uma boa prática de segurança alterar ocasionalmente as credenciais. Isso pode ser feito conforme exemplificado abaixo, usando o exemplo de uma chave de borda, embora a mesma estratégia seja usada para chaves de limpeza.
+É uma boa prática de segurança alterar as credenciais regularmente. Lembre-se de que as variáveis de ambiente não devem ser alteradas diretamente. Em vez disso, crie um novo segredo e faça referência ao novo nome na configuração.
+
+Esse caso de uso é exemplificado abaixo, usando o exemplo de uma chave de borda, embora a mesma estratégia também possa ser usada para chaves de limpeza.
 
 1. Inicialmente, apenas `edgeKey1` foi definido, neste caso referenciado como `${{CDN_EDGEKEY_052824}}`, que, como uma convenção recomendada, reflete a data em que foi criado.
 
@@ -227,7 +235,6 @@ Além disso, a sintaxe inclui:
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. Quando for a hora de girar a chave, crie um novo segredo do Cloud Manager, por exemplo `${{CDN_EDGEKEY_041425}}`.
 1. Na configuração, faça referência a ele a partir de `edgeKey2` e implante.
 
@@ -249,7 +256,6 @@ Além disso, a sintaxe inclui:
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. Exclua a referência secreta antiga (`${{CDN_EDGEKEY_052824}}`) da Cloud Manager e implante.
 
 1. Quando estiver pronto para a próxima rotação, siga o mesmo procedimento. No entanto, dessa vez, você adicionará `edgeKey1` à configuração, fazendo referência a um novo segredo do ambiente do Cloud Manager chamado, por exemplo, `${{CDN_EDGEKEY_031426}}`.
@@ -262,3 +268,47 @@ Além disso, a sintaxe inclui:
          edgeKey2: ${{CDN_EDGEKEY_041425}}
          edgeKey1: ${{CDN_EDGEKEY_031426}}
    ```
+
+Ao girar segredos definidos em cabeçalhos de solicitação, por exemplo, para autenticação em um back-end, é recomendável fazer a rotação em duas etapas para garantir que o valor do cabeçalho seja alternado sem intervalos temporários.
+
+1. Configuração inicial antes da rotação. Nesse estado, a chave antiga é enviada para o back-end.
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+   ```
+
+1. Introduza a nova chave `API_KEY_2` definindo o mesmo cabeçalho duas vezes (a nova chave deve ser definida após a chave antiga). Depois de implantar isso, você verá a nova chave no back-end.
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_1}}
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+1. Remova a chave antiga `API_KEY_1` da configuração. Depois de implantar isso, você verá a nova chave no back-end e é seguro remover a variável de ambiente da chave antiga.
+
+
+   ```
+   requestTransformations:
+     rules:
+       - name: set-api-key-header
+         actions:
+           - type: set
+             reqHeader: x-api-key
+             value ${{API_KEY_2}}
+   ```
+
+
