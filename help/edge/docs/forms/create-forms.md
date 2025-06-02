@@ -4,9 +4,9 @@ description: Introdução ao Edge Delivery Services para AEM Forms. Formas perfe
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0cf881a2-3784-45eb-afe8-3435e5e95cf4
-source-git-commit: efd4fbb38724632865d87b80827611899e2c6d1f
+source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -81,6 +81,10 @@ Para continuar com a criação do formulário:
 1. Abra a planilha criada e renomeie a planilha padrão como &quot;shared-aem&quot;.
 
    ![renomear planilha padrão como &quot;padrão compartilhado&quot;](/help/edge/assets/rename-sheet-to-shared-default.png)
+
+   >[!IMPORTANT]
+   >
+   >**A planilha na qual o formulário foi criado tem restrições sobre o nome que pode ser dado a ele. Somente `helix-default` e `shared-aem` podem ser usados como nomes de planilha.**
 
 1. Para adicionar os campos de formulário, insira linhas e cabeçalhos de coluna na planilha &quot;shared-aem&quot;. Cada linha deve representar um [campo de formulário](/help/edge/docs/forms/form-components.md#available-components), com cabeçalhos de coluna definindo o campo correspondente [propriedades](/help/edge/docs/forms/form-components.md#components-properties).
 
