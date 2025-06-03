@@ -7,7 +7,7 @@ role: Admin, Architect, Developer
 hide: false
 hidefromtoc: true
 exl-id: 6cdf7f65-7112-420a-90c1-564f0ef8ceaf
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 1%
@@ -49,7 +49,7 @@ O escopo atual do Assistente de IA se concentra em abordar questões de conhecim
 
 ## Assistente de IA para o AEM Forms (Forms Experience Builder) {#ai-forms-builder}
 
-Além do Assistente de IA geral para conhecimento do produto, a AEM oferece um **Assistente de IA especializado para AEM Forms (Forms Experience Builder)**. Este assistente aprimorado pode ajudar você a criar e configurar formulários por meio de prompts de linguagem natural e responder a perguntas específicas de formulários.
+Além do Assistente de IA geral para conhecimento do produto, a AEM oferece um **[Assistente de IA especializado para AEM Forms (Forms Experience Builder)](/help/edge/docs/forms/forms-ai-assistant.md)**. Este assistente aprimorado pode ajudar você a criar e configurar formulários por meio de prompts de linguagem natural e responder a perguntas específicas de formulários.
 
 ### Principais recursos
 
@@ -76,7 +76,7 @@ O Assistente de IA do AEM Forms está disponível em:
 >
 > O Assistente de IA para o AEM Forms (Forms Experience Builder) está disponível no programa dos primeiros usuários. Envie um email de seu endereço comercial para [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com) para solicitar acesso.
 
-Para saber mais sobre como usar o Assistente de IA para AEM Forms, incluindo exemplos detalhados e práticas recomendadas, consulte a documentação do Assistente de IA para AEM Forms.
+Para saber mais sobre como usar o Assistente de IA para AEM Forms, incluindo exemplos detalhados e práticas recomendadas, consulte a documentação do [Assistente de IA para AEM Forms](/help/edge/docs/forms/forms-ai-assistant.md).
 
 ### Exemplo de casos de uso
 

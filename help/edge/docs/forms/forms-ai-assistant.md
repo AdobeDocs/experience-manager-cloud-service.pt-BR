@@ -5,9 +5,9 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 2db966405b5326d735083a66b2625d6d973ad7db
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2354'
 ht-degree: 1%
 
 ---
@@ -232,6 +232,69 @@ Sua contribuição é inestimável para o aprimoramento contínuo do Assistente 
 - **Fornecer Comentários:** Use o comando ou botão **&quot;Fornecer Comentários&quot;** interno na interface do Assistente de IA para compartilhar suas experiências, relatar problemas ou sugerir melhorias. (por exemplo, você pode digitar `/feedback` ou procurar por um ícone de feedback).
 - **Suporte Oficial** Para questões críticas ou assistência adicional, entre em contato com os canais oficiais de suporte da Adobe ou com os contatos de suporte designados de sua organização.
 
+
+
+## Trabalhar com anexos
+
+O Assistente de IA oferece suporte a anexos de arquivo para aprimorar a criação e a experiência de configuração de formulários. Você pode anexar vários tipos de arquivos para fornecer contexto visual, referências de design ou formulários existentes para conversão.
+
+### Tipos de anexo suportados
+
+| Tipo de arquivo | Casos de uso | Comandos Que Suportam Anexos | Exemplos |
+|-----------|-----------|-----------------------------------|----------|
+| **Imagens** (PNG, JPG, JPEG, GIF) | Referências de layout de formulário, modelos de interface do usuário, digitalizações de formulário em papel | /create-form, /add-form, /create-panel, /add-panel, /update-field | Carregue uma captura de tela do layout desejado |
+| **Arquivos PDF** | Formulários existentes para conversão, especificações de design | /create-form, /add-form, /create-panel, /add-panel | Converter formulários de aplicativo do PDF |
+| **Arquivos Figma** | Referências de sistema de design, protótipos de interface do usuário | /create-form, /add-form, /create-panel | Importar quadros de design Figma |
+| **Arquivos de Design** (Esboço, exportações do Adobe XD) | Referências de design visual | /create-form, /add-form, /create-panel | Componentes do sistema de design de referência |
+
+### Como usar anexos
+
+1. **Anexar Antes ou Com Seu Comando:**
+
+   - Clique no ícone de anexo na interface do Assistente de IA
+   - Selecione o(s) arquivo(s) do dispositivo
+   - Digite seu comando referenciando o arquivo anexado
+
+2. **Referenciar Anexos em Comandos:**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **Vários anexos:**
+
+   - É possível anexar vários arquivos para comparação ou referência
+   - Especifique qual anexo usar: &quot;usando a primeira imagem anexada&quot; ou &quot;com base no arquivo do PDF&quot;
+
+### Práticas recomendadas do anexo
+
+- **Imagens claras e de alta qualidade:** verifique se as imagens carregadas estão claras e legíveis para melhorar a análise de IA
+- **Nomes de arquivo relevantes:** Use nomes de arquivo descritivos para ajudar a IA a entender o contexto
+- **Foco único:** cada anexo deve se concentrar em um aspecto específico (layout, design de campo etc.)
+- **Formatos com Suporte:** Use os formatos comuns (PNG, JPG, PDF) para obter a melhor compatibilidade
+- **Tamanho do Arquivo:** Mantenha os anexos abaixo de 10 MB para obter a velocidade de processamento ideal
+
+### Exemplo de fluxos de trabalho de anexo
+
+**Convertendo um Formulário em Papel:**
+
+1. Digitalize ou fotografe claramente o formulário em papel
+2. Fazer upload do arquivo de imagem
+3. Usar comando: `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**Correspondência a um Sistema de Design:**
+
+1. Exportar ou capturar tela de componentes de design relevantes
+2. Anexar a referência de design
+3. Usar comando: `/create-panel following the visual style and layout shown in the attached design`
+
+**Referência de Estilo de Campo:**
+
+1. Anexe a captura de tela da aparência de campo desejada
+2. Usar comando: `/update-field @email to match the styling and layout shown in the attached image`
 
 ## Conteúdo relacionado
 
