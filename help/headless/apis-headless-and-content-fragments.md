@@ -4,9 +4,9 @@ description: Saiba mais sobre as APIs disponíveis para Entrega de conteúdo est
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,24 +34,9 @@ O Adobe Experience Manager (AEM) as a Cloud Service oferece várias APIs para en
    * Essa API é baseada em REST.
    * O suporte a fragmentos de conteúdo na API HTTP do Assets será descontinuado no futuro, pois está sendo sucedido pela API REST JSON do Edge Delivery Services. A escala de tempo ainda não foi decidida.
 
-<!--
-## JSON vs HTML {#json-vs-HTML}
-
-The content delivery format used is driven by frontend implementation. Unstructured content/HTML for full-stack implementations, structured content/JSON for headless implementations, or a combination of both in hybrid implementations. 
-
-Key considerations include:
-
-* Definition
-  * JSON (JavaScript Object Notation) - used to represent, access and process structured data. 
-  * HTML (HyperText Markup Language) - a markup language of tags and elements in a hierarchical structure.
-* Primary Purpose
-  * JSON is often used for transferring structure content between the server and client app.
-  * HTML is the standard markup language for creating and rendering web pages in a browser.
--->
-
 ## REST vs GraphQL {#rest-vs-graphql}
 
-The API used is a decision for the developers - AEM supports both.
+A API usada é uma decisão para os desenvolvedores. O AEM oferece suporte a ambos.
 
 Muitas comparações estão disponíveis online, mas alguns destaques e benefícios do REST incluem:
 
@@ -61,9 +46,9 @@ Muitas comparações estão disponíveis online, mas alguns destaques e benefíc
 
    * Com simplicidade vem a familiaridade. Com o REST, não há perguntas organizacionais sobre quem é o proprietário das consultas e quem é o proprietário do aplicativo, enquanto essas perguntas podem surgir com o GraphQL.
 
-   * With familiarity (typically) comes a broad community and tooling landscape. Not an inherent disadvantage of GraphQL, but likely to be broader and deeper for REST.
+   * Com familiaridade (normalmente), existe uma ampla comunidade e um cenário de ferramentas. Não é uma desvantagem inerente do GraphQL, mas provavelmente será mais ampla e profunda para REST.
 
-   * The simpler approach can also make the security implementation easier. With REST, the filtering to determine the content to render all happens in the client app. With GraphQL this happens in a schema-based query between client and server.
+   * A abordagem mais simples também pode facilitar a implementação da segurança. Com REST, a filtragem para determinar o conteúdo para renderizar tudo acontece no aplicativo cliente. Com o GraphQL, isso acontece em uma consulta baseada em esquema entre cliente e servidor.
 
 * Flexibilidade
 
@@ -71,11 +56,11 @@ Muitas comparações estão disponíveis online, mas alguns destaques e benefíc
 
 * Armazenamento em cache
 
-   * JSON responses to REST `GET` requests are inherently cacheable. GraphQL `POST` requests are not cacheable, unless they are made so; for example, by using AEM Persisted Queries that are stored on the server and requested with REST-like `GET`requests.
+   * As respostas JSON para solicitações REST `GET` são inerentemente armazenáveis em cache. As solicitações do GraphQL `POST` não podem ser armazenadas em cache, a menos que sejam feitas assim; por exemplo, usando as Consultas AEM persistidas armazenadas no servidor e solicitadas com solicitações `GET` semelhantes a REST.
 
-Benefits of GraphQL include:
+Os benefícios da GraphQL incluem:
 
-* Efficiency of content delivery
+* Eficiência da entrega de conteúdo
 
    * Foco
 
@@ -85,9 +70,9 @@ Benefits of GraphQL include:
 
       * Enquanto no REST cada solicitação de API é um endpoint, no GraphQL há apenas um endpoint comum e solicitações de conteúdo diferentes são expressas como consultas usando esse endpoint comum.
 
-* Rapid Prototyping
+* Prototipagem rápida
 
-   * With GraphQL this is a one-step process, brought together in the GraphQL query, and can make prototyping easier. O REST, por outro lado, é um processo de duas etapas:
+   * Com o GraphQL, esse é um processo de uma etapa, reunido na query do GraphQL, e pode facilitar a criação de protótipos. O REST, por outro lado, é um processo de duas etapas:
 
-      1. Fetch content with API.
-      2. In the JSON response, determine what to use for rendering in the client app.
+      1. Buscar conteúdo com a API.
+      2. Na resposta JSON, determine o que usar para renderização no aplicativo do cliente.
