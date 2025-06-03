@@ -5,10 +5,10 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f102cdbab6b38ffabc370691e507754227b91f4e
+source-git-commit: 1df836c55e7276cf05a84e5512220b51de7131a8
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 27%
+source-wordcount: '1547'
+ht-degree: 28%
 
 ---
 
@@ -103,9 +103,7 @@ Os seguintes recursos podem não funcionar corretamente quando implantados no te
 
 #### Requisitos de tempo de execução {#runtime-requirements}
 
-O tempo de execução do Java 21 é usado para builds com Java 21 e Java 17, e será aplicado gradualmente às builds do Java 11 também (consulte a Observação abaixo). Um ambiente deve estar na versão 17098 ou mais recente do AEM para receber a atualização do Java 21. Para garantir a compatibilidade, os seguintes ajustes são necessários.
-
-As atualizações de biblioteca podem ser aplicadas a qualquer momento, pois permanecem compatíveis com versões Java mais antigas.
+O tempo de execução do Java 21 foi aplicado a todos os ambientes elegíveis, que são ambientes no AEM versão 17098 ou posterior que atendem aos critérios abaixo. Se um ambiente não atender aos critérios, é importante fazer ajustes para garantir desempenho, disponibilidade e segurança.
 
 * **Versão mínima do ASM:**
 Atualize o uso do pacote Java`org.objectweb.asm`, geralmente incluído nos artefatos `org.ow2.asm.*`, para a versão 9.5 ou superior para garantir o suporte para tempos de execução JVM mais recentes.
@@ -127,8 +125,7 @@ Ao executar o AEM localmente com o Java 21, os scripts de inicialização (`crx-
 
 >[!IMPORTANT]
 >
->Quando `.cloudmanager/java-version` está definido como `21` ou `17`, o tempo de execução do Java 21 é implantado. O tempo de execução do Java 21 está programado para implantação gradual em todos os ambientes (não apenas aqueles ambientes cujo código é construído com o Java 11) a partir de terça-feira, 4 de fevereiro de 2025. As implantações começam com sandboxes e ambientes de desenvolvimento, seguidas por todos os ambientes de produção em abril de 2025. Os clientes que desejam adotar o Java 21 runtime *previous* podem entrar em contato com a Adobe em [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com).
-
+>Se um ambiente ainda não tiver sido atualizado automaticamente para o tempo de execução do Java 21, você poderá acioná-lo criando com o Java 17 ou 21. Isso é feito configurando `.cloudmanager/java-version` como `21` ou `17`. Entre em contato com a Adobe em [aemcs-java-adopter@adobe.com](mailto:aemcs-java-adopter@adobe.com) em caso de dúvidas.
 
 #### Requisitos de tempo de criação {#build-time-reqs}
 
