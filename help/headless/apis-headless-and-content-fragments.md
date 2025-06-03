@@ -4,9 +4,9 @@ description: Saiba mais sobre as APIs disponíveis para Entrega de conteúdo est
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: e427bd34867974c663e67a2124f257cd12e946ae
+source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,10 @@ O Adobe Experience Manager (AEM) as a Cloud Service oferece várias APIs para en
    * Essas APIs são destinadas ao gerenciamento de conteúdo estruturado.
    * Os respectivos operadores do GET não estão otimizados para a entrega de conteúdo.
    * Essa API é baseada em REST.
-* [Suporte a fragmentos de conteúdo na API HTTP do AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
-   * A API original da saída JSON para entrega de conteúdo estruturado no AEM.
-      * Embora robusta e comprovada, essa API não fornece saída JSON *totalmente hidratada*. As referências são geradas apenas como caminhos, exigindo solicitações de API secundárias para recuperar mais conteúdo.
-   * A API HTTP do Assets também pode ser usada para gerenciar os Fragmentos de conteúdo e os Modelos de fragmento de conteúdo (CRUD).
-   * Essa API é baseada em REST.
-   * O suporte a fragmentos de conteúdo na API HTTP do Assets será descontinuado no futuro, pois está sendo sucedido pela API REST JSON do Edge Delivery Services. A escala de tempo ainda não foi decidida.
+
+>[!NOTE]
+>
+>O [Suporte a Fragmento de Conteúdo na API HTTP do Assets](/help/assets/content-fragments/assets-api-content-fragments.md) agora está [obsoleto](/help/release-notes/deprecated-removed-features.md). Ele foi substituído por [Entrega de fragmento de conteúdo com OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md), juntamente com [Fragmentos de conteúdo e OpenAPIs de gerenciamento de modelos de fragmento de conteúdo](/help/headless/content-fragment-openapis.md).
 
 ## REST vs GraphQL {#rest-vs-graphql}
 

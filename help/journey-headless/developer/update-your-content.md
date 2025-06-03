@@ -5,10 +5,10 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 solution: Experience Manager
 feature: Headless, Content Fragments, GraphQL API
 role: Admin, Architect, Developer
-source-git-commit: d9db32110e1e0aaa5bdc20bd6b4bff6da6a3a3a3
+source-git-commit: 04d1f4f312c9cd256430a2134b308e45dde2c4d7
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 25%
+source-wordcount: '505'
+ht-degree: 29%
 
 ---
 
@@ -47,12 +47,10 @@ O Adobe Experience Manager (AEM) as a Cloud Service oferece várias APIs para en
    * Essas APIs são destinadas ao gerenciamento de conteúdo estruturado.
    * Os respectivos operadores do GET não estão otimizados para a entrega de conteúdo.
    * Essa API é baseada em REST.
-* Suporte a fragmentos de conteúdo na API HTTP do AEM Assets
-   * A API original da saída JSON para entrega de conteúdo estruturado no AEM.
-      * Embora robusta e comprovada, essa API não fornece saída JSON *totalmente hidratada*. As referências são geradas apenas como caminhos, exigindo solicitações de API secundárias para recuperar mais conteúdo.
-   * A API HTTP do Assets também pode ser usada para gerenciar os Fragmentos de conteúdo e os Modelos de fragmento de conteúdo (CRUD).
-   * Essa API é baseada em REST.
-   * O suporte a fragmentos de conteúdo na API HTTP do Assets será descontinuado no futuro, pois está sendo sucedido pela API REST JSON do Edge Delivery Services. A escala de tempo ainda não foi decidida.
+
+>[!NOTE]
+>
+>O [Suporte a Fragmento de Conteúdo na API HTTP do Assets](/help/assets/content-fragments/assets-api-content-fragments.md) agora está [obsoleto](/help/release-notes/deprecated-removed-features.md). Foi substituído por [Entrega de fragmento de conteúdo com OpenAPI](/help/headless/aem-content-fragment-delivery-with-openapi.md), juntamente com [Fragmentos de conteúdo e OpenAPIs de gerenciamento de modelos de fragmento de conteúdo](/help/headless/content-fragment-openapis.md).
 
 ## O que vem a seguir {#whats-next}
 
