@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: 8ab5b15f-cefc-45bf-a388-928e8cc8c603
 solution: Experience Manager Sites
-source-git-commit: fdfe0291ca190cfddf3bed363a8c2271a65593a1
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2280'
 ht-degree: 36%
 
 ---
@@ -64,9 +64,9 @@ O modelo de fragmento de conteúdo define efetivamente a estrutura dos fragmento
 
         >[!CAUTION]
         >
-        >Ao atualizar manualmente a propriedade **Nome da Propriedade** para um tipo de dados, os nomes devem conter *somente* A-Z, a-z, 0-9 e um sublinhado &quot;_&quot; como caractere especial.
+        Ao atualizar manualmente a propriedade **Nome da Propriedade** para um tipo de dados, os nomes devem conter *somente* A-Z, a-z, 0-9 e um sublinhado &quot;_&quot; como caractere especial.
         >
-        >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
+        Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
      Por exemplo:
 
@@ -98,9 +98,9 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
 
   >[!NOTE]
   >
-  >Se a área de texto é Rich Text, Texto sem formatação ou Markdown, é definida no modelo pela propriedade **Tipo padrão**.
+  Se a área de texto é Rich Text, Texto sem formatação ou Markdown, é definida no modelo pela propriedade **Tipo padrão**.
   >
-  >Este formato não pode ser alterado do [editor de Fragmento de Conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md), mas somente do Modelo.
+  Este formato não pode ser alterado do [editor de Fragmento de Conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md), mas somente do Modelo.
 
 * **Número**
    * Adicionar um campo numérico
@@ -125,6 +125,7 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
       * Crie um novo Fragmento de conteúdo, com base no modelo apropriado
       * Criar novas instâncias do campo
    * A referência especifica o caminho para o recurso referenciado; por exemplo `/content/dam/path/to/resource`
+
 * **Referência de fragmento (UUID)**
    * Faz referência a outros fragmentos de conteúdo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
    * O tipo de dados pode ser configurado para permitir que os autores de fragmento:
@@ -134,17 +135,26 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
    * No editor, a referência especifica o caminho para o recurso referenciado; internamente, a referência é mantida como uma ID universalmente exclusiva (UUID) que faz referência ao recurso
       * Não é necessário conhecer a UUID; no editor de fragmentos, é possível navegar até o fragmento necessário
 
+  >[!NOTE]
+  >
+  Os UUIDs são específicos do repositório. Se você usar a [Ferramenta de cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) para copiar fragmentos de conteúdo, as UUIDs serão recalculadas no ambiente de destino.
+
 * **Referência de conteúdo**
    * Faz referência a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
    * Se uma imagem for referenciada, você pode optar por mostrar uma miniatura
    * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
    * A referência especifica o caminho para o recurso referenciado; por exemplo `/content/dam/path/to/resource`
+
 * **Referência de conteúdo (UUID)**
    * Faz referência a outros conteúdos, de qualquer tipo; pode ser usado para [criar conteúdo aninhado](#using-references-to-form-nested-content)
    * Se uma imagem for referenciada, você pode optar por mostrar uma miniatura
    * O campo pode ser configurado para permitir que os autores de fragmento criem novas instâncias do campo
    * No editor, a referência especifica o caminho para o recurso referenciado; internamente, a referência é mantida como uma ID universalmente exclusiva (UUID) que faz referência ao recurso
       * Não é necessário conhecer a UUID; no editor de fragmentos, é possível navegar até o recurso de ativo necessário
+
+  >[!NOTE]
+  >
+  Os UUIDs são específicos do repositório. Se você usar a [Ferramenta de cópia de conteúdo](/help/implementing/developing/tools/content-copy.md) para copiar fragmentos de conteúdo, as UUIDs serão recalculadas no ambiente de destino.
 
 * **Objeto JSON**
    * Permite que o autor do Fragmento de conteúdo insira a sintaxe JSON nos elementos correspondentes de um fragmento.
@@ -159,7 +169,7 @@ Uma variedade de tipos de dados está disponível para a definição do seu mode
 
      >[!NOTE]
      >
-     >Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.
+     Esse tipo de dados é usado apenas para formatação e é ignorado pelo esquema GraphQL do AEM.
 
 ## Propriedades (Tipos de dados) {#properties}
 
@@ -171,7 +181,7 @@ Muitas propriedades são autoexplicativas. Para certas propriedades, os detalhes
 
   >[!CAUTION]
   >
-  >Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
+  Se os modelos criados em versões anteriores do AEM contiverem caracteres ilegais, remova ou atualize esses caracteres.
 
 * **Renderizar como**
 
@@ -202,11 +212,11 @@ O conteúdo (para o campo específico) deve ser exclusivo em todos os fragmentos
 
   >[!NOTE]
   >
-  >A exclusividade é assegurada por raiz de idioma.
+  A exclusividade é assegurada por raiz de idioma.
 
   >[!NOTE]
   >
-  >As variações podem ter o mesmo valor *exclusivo* como variações do mesmo fragmento, mas não o mesmo valor usado em qualquer variação de outros fragmentos.
+  As variações podem ter o mesmo valor *exclusivo* como variações do mesmo fragmento, mas não o mesmo valor usado em qualquer variação de outros fragmentos.
 
 * Consulte **[Referência de conteúdo](#content-reference)** para obter mais detalhes sobre esse tipo de dados específico e suas propriedades.
 
@@ -262,28 +272,28 @@ Os fragmentos de conteúdo podem formar conteúdo aninhado, usando um dos seguin
 
      >[!NOTE]
      >
-     >Este método é especialmente interessante quando você está usando a [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+     Este método é especialmente interessante quando você está usando a [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
    * Pode ser configurado para uma ou várias referências (no fragmento resultante).
 
 >[!NOTE]
 >
->Consulte [Atualizar os fragmentos de conteúdo para referências UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) para obter mais informações sobre a referência de conteúdo/fragmento e a referência de conteúdo/fragmento (UUID), além de atualizar para os tipos de dados baseados em UUID.
+Consulte [Atualizar os fragmentos de conteúdo para referências UUID](/help/headless/graphql-api/uuid-reference-upgrade.md) para obter mais informações sobre a referência de conteúdo/fragmento e a referência de conteúdo/fragmento (UUID), além de atualizar para os tipos de dados baseados em UUID.
 
 >[!NOTE]
 >
->O AEM tem proteção de recorrência para:
+O AEM tem proteção de recorrência para:
 >
->* Referências de conteúdo
->Isso impede que o usuário adicione uma referência ao fragmento atual e pode levar a uma caixa de diálogo vazia do seletor de Referência de fragmento.
+* Referências de conteúdo
+Isso impede que o usuário adicione uma referência ao fragmento atual e pode levar a uma caixa de diálogo vazia do seletor de Referência de fragmento.
 >
->* Referências de fragmento no GraphQL
->Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
+* Referências de fragmento no GraphQL
+Se você criar uma consulta profunda que retorna vários Fragmentos de conteúdo referenciados entre si, ela retornará um valor nulo na primeira ocorrência.
 
 >[!CAUTION]
 >
->Se você estiver consultando vários fragmentos referenciados, não é recomendável que os vários modelos de fragmento tenham nomes de campo com o mesmo nome, mas tipos diferentes.
+Se você estiver consultando vários fragmentos referenciados, não é recomendável que os vários modelos de fragmento tenham nomes de campo com o mesmo nome, mas tipos diferentes.
 >
->Para obter mais detalhes, consulte a [API do AEM GraphQL para uso com Fragmentos de conteúdo - Limitações](/help/headless/graphql-api/content-fragments.md#limitations)
+Para obter mais detalhes, consulte a [API do AEM GraphQL para uso com Fragmentos de conteúdo - Limitações](/help/headless/graphql-api/content-fragments.md#limitations)
 
 ### Referência de conteúdo {#content-reference}
 
@@ -294,16 +304,16 @@ Além das propriedades padrão, é possível especificar:
 * O **Caminho Raiz**, que especifica ou representa onde armazenar qualquer conteúdo referenciado
   >[!NOTE]
   >
-  >Isso é obrigatório se você quiser fazer upload diretamente e fazer referência a imagens nesse campo ao usar o editor de fragmentos de conteúdo.
+  Isso é obrigatório se você quiser fazer upload diretamente e fazer referência a imagens nesse campo ao usar o editor de fragmentos de conteúdo.
   >
-  >Consulte [Referenciar imagens](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) para obter mais detalhes.
+  Consulte [Referenciar imagens](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) para obter mais detalhes.
 
 * Os tipos de conteúdo que podem ser referenciados
   >[!NOTE]
   >
-  >Eles devem incluir **Imagem** se você quiser carregar e fazer referência diretamente a imagens nesse campo ao usar o editor de Fragmento de conteúdo.
+  Eles devem incluir **Imagem** se você quiser carregar e fazer referência diretamente a imagens nesse campo ao usar o editor de Fragmento de conteúdo.
   >
-  >Consulte [Referenciar imagens](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) para obter mais detalhes.
+  Consulte [Referenciar imagens](/help/sites-cloud/administering/content-fragments/authoring.md#reference-images) para obter mais detalhes.
 
 * Limitações para tamanhos de arquivo
 * Se uma imagem for referenciada:
@@ -337,7 +347,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->As Referências de fragmento são de especial interesse para [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
+As Referências de fragmento são de especial interesse para [Entrega de conteúdo headless usando fragmentos de conteúdo com o GraphQL](/help/sites-cloud/administering/content-fragments/content-delivery-with-graphql.md).
 
 Além das propriedades padrão, você pode definir:
 
@@ -363,6 +373,6 @@ Especifica ou representa um caminho raiz para qualquer fragmento referenciado.
 
 >[!NOTE]
 >
->Um mecanismo de proteção contra recorrências está em vigor. Ele proíbe que o usuário selecione o fragmento de conteúdo atual na referência do fragmento e pode levar a uma caixa de diálogo vazia do seletor de referência de fragmento.
+Um mecanismo de proteção contra recorrências está em vigor. Ele proíbe que o usuário selecione o fragmento de conteúdo atual na referência do fragmento e pode levar a uma caixa de diálogo vazia do seletor de referência de fragmento.
 >
->Também há proteção de recorrência para referências de fragmento no GraphQL. Se você criar uma consulta profunda em dois Fragmentos de conteúdo que fazem referência um ao outro, ela retornará um valor nulo.
+Também há proteção de recorrência para referências de fragmento no GraphQL. Se você criar uma consulta profunda em dois Fragmentos de conteúdo que fazem referência um ao outro, ela retornará um valor nulo.

@@ -4,10 +4,10 @@ description: A ferramenta de cópia de conteúdo permite que os usuários copiem
 exl-id: 5883e4bc-9861-498e-bd35-32ff03d901cc
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: fef97af53726d45cae36e2c9c6a5d82aa2f872c2
+source-git-commit: cf2f64dec2ff39ea237dd092b3049bf9b8cd40e7
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 36%
+source-wordcount: '1321'
+ht-degree: 35%
 
 ---
 
@@ -38,7 +38,7 @@ Ao copiar o conteúdo, o ambiente de origem é a fonte de verdade.
 
 Para usar a ferramenta de cópia de conteúdo, determinadas permissões são necessárias nos ambientes de origem e de destino.
 
-| Recurso de cópia de conteúdo | Grupo de administradores AEM | Função de gerente de implantação |
+| Recurso de cópia de conteúdo | Grupo de administradores do AEM | Função de gerente de implantação |
 |---|---|---|
 | Criar e modificar [conjuntos de conteúdo](#create-content-set) | Não obrigatório | Obrigatório |
 | Iniciar ou cancelar o [processo de cópia de conteúdo](#copy-content) | Obrigatório | Obrigatório |
@@ -200,3 +200,4 @@ A ferramenta de cópia de conteúdo tem as seguintes limitações.
 * A ferramenta de cópia de conteúdo não tem recurso de controle de versão e não pode detectar automaticamente o conteúdo modificado ou criado no ambiente de origem em um conjunto de conteúdo desde a última operação de cópia de conteúdo.
    * Se quiser atualizar o ambiente de destino somente com alterações de conteúdo, você deverá criar um conjunto de conteúdo desde a última operação de cópia de conteúdo. Em seguida, especifique os caminhos na instância de origem em que as alterações foram feitas desde a última operação de cópia de conteúdo.
 * As informações da versão não são incluídas em uma cópia de conteúdo.
+* [Os modelos de fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/content-fragment-models.md#data-types) podem especificar campos de referência baseados em IDs universalmente exclusivas (UUID). Esses UUIDs são específicos do repositório, portanto, a ferramenta de cópia de conteúdo recalculará esses UUIDs no ambiente de destino ao copiar os fragmentos de conteúdo.
