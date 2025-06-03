@@ -4,12 +4,13 @@ description: Saiba mais sobre as APIs disponíveis para Entrega de conteúdo est
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: 95aecd30-566a-42a9-b97a-7efe45fd389c
-source-git-commit: 243adc6f6428cea23c04ca788bd8ad0bda7e4501
+source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 0%
 
 ---
+
 
 # APIs do AEM para entrega e gerenciamento de conteúdo estruturado {#aem-apis-structured-content-delivery-and-management}
 
