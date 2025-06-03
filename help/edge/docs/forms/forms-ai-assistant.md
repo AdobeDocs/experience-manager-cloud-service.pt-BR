@@ -5,22 +5,26 @@ feature: Edge Delivery Services
 hide: true
 hidefromtoc: true
 role: Admin, Architect, Developer
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '2061'
 ht-degree: 1%
 
 ---
+
 
 # Assistente de IA para o AEM Forms (Forms Experience Builder)
 
 >[!NOTE]
 >
 >
-> O recurso Assistente de IA para o AEM Forms (Forms Experience Builder) está disponível no programa dos primeiros usuários. Caso esteja interessado, envie um email rápido do seu endereço comercial para mailto:aem-forms-ea@adobe.com para solicitar acesso ao recurso.
+> O recurso Assistente de IA para o AEM Forms (Forms Experience Builder) está disponível no **programa de usuários iniciais**. Caso esteja interessado, envie um email rápido do seu endereço comercial para mailto:aem-forms-ea@adobe.com para solicitar acesso ao recurso.
 
+>[!IMPORTANT]
+>
+> **Documentação sujeita a alterações**: esta documentação está sendo testada no momento em relação ao produto e está sujeita a atualizações e revisões. Os recursos, comandos e exemplos podem mudar à medida que o Assistente de IA do AEM Forms continua a evoluir durante o programa que adotou precocemente.
 
-O Assistente de IA para o AEM Forms (Forms Experience Builder) aprimora sua experiência de criação simplificando tarefas comuns de criação de formulários por meio de prompts de linguagem natural. Disponível no Forms Manager, no Editor Forms adaptável e no Editor universal, ele permite que você crie de maneira mais inteligente e rápida, oferecendo suporte às ações de criação e configuração. Este guia ajudará você a começar e aproveitar ao máximo seus recursos.
+O Assistente de IA para o AEM Forms (Forms Experience Builder) aprimora sua experiência de criação simplificando tarefas comuns de criação de formulários por meio de prompts de linguagem natural. Disponível na interface de gerenciamento do Forms, no Editor Forms adaptável e no Editor universal, ele permite que você crie de forma mais inteligente e rápida, oferecendo suporte às ações de criação e configuração. Este guia ajudará você a começar e aproveitar ao máximo seus recursos.
 
 ## Introdução
 
@@ -30,7 +34,7 @@ Antes de se aprofundar, abordemos as noções básicas de acesso e interação c
 
 Você pode acessar o Assistente de IA em três locais diferentes no AEM Forms:
 
-1. **Gerenciador do Forms**
+1. **Interface de Gerenciamento do Forms**
    - Navegue até: Adobe Experience Manager > Forms > Forms e documentos
    - Procure o ícone do Assistente do AI no lado esquerdo da interface
    - Clique no ícone para abrir o painel Assistente de IA
@@ -57,6 +61,7 @@ O Assistente de IA adapta sua funcionalidade com base na localização e tarefa 
 - Basta digitar a solicitação em linguagem natural.
 - Use `/` para exibir uma lista de comandos ou ações rápidas disponíveis.
 - Referencie campos de formulário específicos usando `@fieldName` (por exemplo, `@firstName`, `@emailAddress`) quando desejar que o assistente configure ou atualize esse campo específico.
+- Você pode fazer upload de imagens, PDFs, arquivos Figma ou outros ativos de design para ajudar o Assistente de IA a entender melhor seus requisitos.
 
 
 ### Início rápido
@@ -72,13 +77,13 @@ Este vídeo aborda o lançamento do assistente em todos os ambientes, a interaç
 
 | Comando | Descrição | Propósito | Contexto de uso | Exemplos | Principais recursos |
 |---------|-------------|---------|---------------|----------|--------------|
-| /create-form | Inicie um novo formulário no Forms Manager ou no Forms Editor | Inicia a criação de um formulário completamente novo do zero | Forms Manager, Editor Forms adaptável | /create-form pesquisa de feedback do cliente | Fornece opções para a estrutura de formulários e cria o formulário |
-| /add-form | Adicionar um novo formulário no Editor Universal | Adiciona um novo bloco de formulário ou componente no Universal Editor | Editor universal para Edge Delivery Services | /add-form formulário de contato com nome e email | Insere blocos de formulário, funciona com edição baseada em blocos |
+| /create-form | Inicie um novo formulário na interface do usuário do Forms Management ou no Forms Editor | Inicia a criação de um formulário completamente novo do zero | Interface do usuário de gerenciamento do Forms, Editor adaptável do Forms | /create-form pesquisa de feedback de clientes com base no PDF anexado | Fornece opções para a estrutura de formulários e cria o formulário. **Dá suporte a anexos** para referências de design |
+| /add-form | Adicionar um novo formulário no Editor Universal | Adiciona um novo bloco de formulário ou componente no Universal Editor | Editor universal para Edge Delivery Services | /add-form formulário de contato com nome e email | Insere blocos de formulário, funciona com edição baseada em blocos. **Suporta anexos** para orientação de layout |
 | /update-layout | Alterar o layout do formulário para design responsivo de acordeão, baseado em guia, assistente ou página única | Modifica o layout estrutural geral e o padrão de navegação | Todos os ambientes de edição | Assistente /update-layout com 3 etapas | Opções responsivas de acordeão, guias, assistente e página única |
-| /update-field | Modificar propriedades e configuração de campos de formulário existentes | Altera atributos de campo como rótulos, validação, formatação e comportamento | Todos os ambientes de edição | /update-field @email a ser exigido com validação | Rótulos, regras de validação, tipos de campo, padrões, visibilidade |
+| /update-field | Modificar propriedades e configuração de campos de formulário existentes | Altera atributos de campo como rótulos, validação, formatação e comportamento | Todos os ambientes de edição | /update-field @email a ser exigido com validação | Rótulos, regras de validação, tipos de campo, padrões, visibilidade. **Oferece suporte a anexos** para exemplos de design de campo |
 | /create-rule | Criar comportamento dinâmico e lógica condicional para formulários | Implementa lógica de negócios, cálculos, interações condicionais | Todos os ambientes de edição | /create-rule mostrar @spouseName se @maritalStatus for igual a &quot;Casado&quot; | Visibilidade condicional, cálculos, validação, definição de valor |
-| /create-panel | Criar um novo painel (contêiner para agrupar campos relacionados) | Adiciona contêineres estruturais para organizar campos de formulário logicamente | Todos os ambientes de edição | /create-panel Informações pessoais com nome, email, telefone | Agrupamento de campos, títulos, opções de layout, seções que podem ser recolhidas |
-| /add-panel | Conversão de uma imagem para o painel de formulário no Editor universal | Usa IA para analisar imagens carregadas e converter em painéis de formulários estruturados | Editor universal | /add-panel da imagem de formulário carregada | Reconhecimento de imagem, conversão de visual em funcional, preservação de layout |
+| /create-panel | Criar um novo painel (contêiner para agrupar campos relacionados) | Adiciona contêineres estruturais para organizar campos de formulário logicamente | Todos os ambientes de edição | /create-panel Informações pessoais com nome, email, telefone | Agrupamento de campos, títulos, opções de layout, seções que podem ser recolhidas. **Suporta anexos** para referências de layout de painel |
+| /add-panel | Conversão de uma imagem para o painel de formulário no Editor universal | Usa IA para analisar imagens carregadas e converter em painéis de formulários estruturados | Editor universal | /add-panel da imagem de formulário carregada | Reconhecimento de imagem, conversão de visual em funcional, preservação de layout. **Requer anexos** para análise de imagem |
 | /configure-submit | Configurar ações de envio de formulário e manipulação de dados | Define o que acontece quando os usuários enviam o formulário preenchido | Todos os ambientes de edição | /configure-submit para enviar email a `support@company.com` | Email, API REST, fluxos de trabalho, planilhas, bancos de dados, Power Automate |
 | /help | Acessar a assistência e a documentação no Assistente de IA | Fornece ajuda contextual, orientação e respostas sobre o AEM Forms | Todos os ambientes de edição | /help como criar formulários com várias etapas? | Explicações de recursos, guias, práticas recomendadas, solução de problemas |
 
@@ -107,7 +112,7 @@ Este vídeo aborda o lançamento do assistente em todos os ambientes, a interaç
 
 | Ambiente | Comandos disponíveis | Recursos especiais |
 |-------------|-------------------|------------------|
-| Gerenciador do Forms | /create-form, /help | Criação e gerenciamento de nível de formulário |
+| Interface de gerenciamento do Forms | /create-form, /help | Criação e gerenciamento de nível de formulário |
 | Editor adaptável do Forms e editor universal | Todos os comandos | Conjunto completo de recursos, configuração detalhada |
 
 
@@ -142,17 +147,17 @@ O Assistente de IA entende uma grande variedade de comandos. Aqui estão alguns 
 
 | Categoria de recurso | Descrição | Exemplo de Prompts |
 | ------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Criação de formulário** | Inicie um novo formulário do zero ou com base em uma descrição. | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.` |
-| **Importar Design** | Converta um design existente (imagem, Figma, PDF) em um formulário do AEM. | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.` |
-| **Adicionando componentes e painéis** | Adicione vários campos de formulário e contêineres estruturais (painéis). | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` |
-| **Ajustes de layout** | Modifique a estrutura e a aparência do layout do formulário. | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.` |
+| **Criação de formulário** | Inicie um novo formulário do zero ou com base em uma descrição. | `Create a new form titled 'Employee Onboarding'.` <br> `Generate a customer feedback form with fields for name, email, rating (1-5 stars), and comments.` <br> `Start a simple contact form with name, email, and message fields.` <br> `Design a multi-page registration form for an event.` <br> `Create a form based on the attached PDF template.` |
+| **Importar Design** | Converta um design existente (imagem, Figma, PDF) em um formulário do AEM. | `Import the form design from this uploaded PDF file.` <br> `Convert the uploaded Figma design into an adaptive form, focusing on the 'User Profile' frame.` <br> `Use this JPEG image of our old paper form to create a new digital version.` <br> `Create a form based on the layout of the attached PNG.` <br> `Recreate the form shown in the attached screenshot with modern styling.` |
+| **Adicionando componentes e painéis** | Adicione vários campos de formulário e contêineres estruturais (painéis). | `Add a text input field for 'First Name'.` <br> `Add a 'Personal Details' panel with fields for full name, date of birth, and phone number.` <br> `Insert a checkbox group for 'Interests' with options: Technology, Sports, Music.` <br> `Add a file upload component for 'Resume'.` <br> `Create a repeatable panel named 'WorkExperience' with fields for company, title, and dates.` <br> `Add a panel matching the layout shown in the attached design mockup.` |
+| **Ajustes de layout** | Modifique a estrutura e a aparência do layout do formulário. | `Change the 'Personal Details' panel to a two-column layout.` <br> `Set the overall form layout to a wizard (multi-step) navigation.` <br> `Make the header section span the full width of the form.` <br> `Adjust the spacing between fields in the 'Address' panel to be compact.` <br> `Align all field labels to the left.` <br> `Update the form layout to match the attached wireframe.` |
 | **Lógica e criação da regra** | Implementar comportamento dinâmico, cálculos e visibilidade condicional. | `Make the 'Spouse Name' field visible only if 'Marital Status' is selected as 'Married'.` <br> `Calculate the 'Total Amount' by multiplying @quantity and @price.` <br> `Enable the submit button only when the @termsAndConditions checkbox is checked.` <br> `Set the value of @countryCode to '+1' if @country is 'United States'.` <br> `If @age is less than 18, show a message 'Must be 18 or older'.` |
-| **Atualização de Propriedades do Campo** | Modifique atributos de campos de formulário específicos, como rótulos, espaços reservados etc. | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` |
+| **Atualização de Propriedades do Campo** | Modifique atributos de campos de formulário específicos, como rótulos, espaços reservados etc. | `Change the label of @email to 'Primary Email Address'.` <br> `Set the @comment field to be a multi-line text area.` <br> `Make the @phoneNumber field mandatory.` <br> `Add placeholder text 'Enter your ZIP code' to the @zipCode field.` <br> `Change the @country field to a dropdown and populate it with: USA, Canada, UK, Germany.` <br> `Update the help description for @password to 'Must include an uppercase letter, a number, and be at least 8 characters long.'` <br> `Set the maximum length of the @username field to 15 characters.` <br> `Configure the @dateOfBirth field to use a date picker.` <br> `Style the @email field to match the design shown in the attached image.` |
 | **Enviar Ações** | Defina o que acontece quando um usuário envia o formulário. | `Configure the form to submit data to the REST endpoint /api/v2/application-submit.` <br> `Set up an email submission to hr@example.com and sales@example.com on successful submission.` <br> `Trigger an AEM workflow named 'NewLeadProcessing' when this form is submitted.` <br> `On submit, redirect the user to a thank you page at /content/thankyou.html.` |
-| **Tema** | Aplique temas existentes do AEM Forms para estilizar o formulário. | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.` |
+| **Tema** | Aplique temas existentes do AEM Forms para estilizar o formulário. | `Apply the 'Modern Business' theme to this form.` <br> `Switch to the 'Accessible Dark' theme.` <br> `Revert to the default canvas theme.` <br> `Apply styling that matches the brand guidelines shown in the attached style guide.` |
 | **Navegação e estrutura** | Adicione elementos de navegação ou reorganize partes do formulário. | `Add a 'Next' button to the current panel and a 'Previous' button to the next panel.` <br> `Create a Table of Contents based on the form's panels.` <br> `Move the 'Address' panel to be before the 'Contact Information' panel.` |
 | **Validação** | Definir regras de validação específicas para campos. | `Set a regex pattern for the @employeeID field to be 'EMP\d{5}'.` <br> `Ensure the @age field only accepts numeric values between 18 and 99.` <br> `Validate the @email field to ensure it is a valid email format.` |
-| **Plano de Revisão** (Editor Universal) | Visualize as alterações propostas pelo assistente antes da execução. | `Add a contact form with fields for name, email, subject, and message.` (O assistente mostrará um plano de componentes e propriedades que ele criará, depois você clicará em &quot;Aplicar&quot;). |
+| **Plano de Revisão** (Editor Universal) | Visualize as alterações propostas pelo assistente antes da execução. | `Add a contact form with fields for name, email, subject, and message.` (O assistente mostrará um plano de componentes e propriedades que ele criará, depois você clicará em &quot;Aplicar&quot;). <br> `Create a form based on the attached design file.` (O assistente analisará o anexo e mostrará um plano detalhado antes da implementação). |
 
 ## Práticas recomendadas para resultados ideais
 
@@ -184,7 +189,7 @@ Faça perguntas para o assistente como:
 
 ### Como solicitar ajuda:
 
-1. Abra o Assistente de IA no Forms Manager ou no Editor Forms adaptável.
+1. Abra o Assistente de IA na interface do usuário do Forms Management ou no Editor adaptável do Forms.
 2. Digite a pergunta em linguagem natural (por exemplo, &quot;Como adicionar um painel repetível?&quot;).
 3. O assistente responderá com:
    - Instruções detalhadas.
@@ -201,7 +206,7 @@ Faça perguntas para o assistente como:
 ## Solução de problemas comuns
 
 - **Assistente Não Está Respondendo:**
-   - Verifique se você está trabalhando ativamente em um ambiente compatível (Forms Manager, Editor adaptável do Forms ou Editor universal).
+   - Verifique se você está trabalhando ativamente em um ambiente compatível (Forms Management UI, Adaptive Forms Editor ou Universal Editor).
    - Verifique sua conexão com a Internet.
    - Tente fechar e reabrir o painel do Assistente de IA.
 
@@ -231,3 +236,65 @@ Sua contribuição é inestimável para o aprimoramento contínuo do Assistente 
 ## Conteúdo relacionado
 
 [Assistente do AEM Forms AI - Biblioteca de prompts](/help/edge/docs/forms/ai-assistant-prompt-library.md)
+
+## Trabalhar com anexos
+
+O Assistente de IA oferece suporte a anexos de arquivo para aprimorar a criação e a experiência de configuração de formulários. Você pode anexar vários tipos de arquivos para fornecer contexto visual, referências de design ou formulários existentes para conversão.
+
+### Tipos de anexo suportados
+
+| Tipo de arquivo | Casos de uso | Comandos Que Suportam Anexos | Exemplos |
+|-----------|-----------|-----------------------------------|----------|
+| **Imagens** (PNG, JPG, JPEG, GIF) | Referências de layout de formulário, modelos de interface do usuário, digitalizações de formulário em papel | /create-form, /add-form, /create-panel, /add-panel, /update-field | Carregue uma captura de tela do layout desejado |
+| **Arquivos PDF** | Formulários existentes para conversão, especificações de design | /create-form, /add-form, /create-panel, /add-panel | Converter formulários de aplicativo do PDF |
+| **Arquivos Figma** | Referências de sistema de design, protótipos de interface do usuário | /create-form, /add-form, /create-panel | Importar quadros de design Figma |
+| **Arquivos de Design** (Esboço, exportações do Adobe XD) | Referências de design visual | /create-form, /add-form, /create-panel | Componentes do sistema de design de referência |
+
+### Como usar anexos
+
+1. **Anexar Antes ou Com Seu Comando:**
+
+   - Clique no ícone de anexo na interface do Assistente de IA
+   - Selecione o(s) arquivo(s) do dispositivo
+   - Digite seu comando referenciando o arquivo anexado
+
+2. **Referenciar Anexos em Comandos:**
+
+   ```
+   /create-form based on the attached PDF application form
+   /add-panel using the layout shown in the uploaded image
+   /create-panel following the design in the attached Figma file
+   /update-field @email to match the style in the attached screenshot
+   ```
+
+3. **Vários anexos:**
+
+   - É possível anexar vários arquivos para comparação ou referência
+   - Especifique qual anexo usar: &quot;usando a primeira imagem anexada&quot; ou &quot;com base no arquivo do PDF&quot;
+
+### Práticas recomendadas do anexo
+
+- **Imagens claras e de alta qualidade:** verifique se as imagens carregadas estão claras e legíveis para melhorar a análise de IA
+- **Nomes de arquivo relevantes:** Use nomes de arquivo descritivos para ajudar a IA a entender o contexto
+- **Foco único:** cada anexo deve se concentrar em um aspecto específico (layout, design de campo etc.)
+- **Formatos com Suporte:** Use os formatos comuns (PNG, JPG, PDF) para obter a melhor compatibilidade
+- **Tamanho do Arquivo:** Mantenha os anexos abaixo de 10 MB para obter a velocidade de processamento ideal
+
+### Exemplo de fluxos de trabalho de anexo
+
+**Convertendo um Formulário em Papel:**
+
+1. Digitalize ou fotografe claramente o formulário em papel
+2. Fazer upload do arquivo de imagem
+3. Usar comando: `/create-form based on the attached form image, converting all fields to digital equivalents`
+
+**Correspondência a um Sistema de Design:**
+
+1. Exportar ou capturar tela de componentes de design relevantes
+2. Anexar a referência de design
+3. Usar comando: `/create-panel following the visual style and layout shown in the attached design`
+
+**Referência de Estilo de Campo:**
+
+1. Anexe a captura de tela da aparência de campo desejada
+2. Usar comando: `/update-field @email to match the styling and layout shown in the attached image`
