@@ -17,7 +17,7 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_upload"
 >title="Download"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html?lang=pt-BR" text="Release Notes"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current.html" text="Release Notes"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Software Distribution Portal"
 
 -->
@@ -35,7 +35,7 @@ Use a Ferramenta de refatoração para migrar seu código e obter compatibilidad
 
    ![imagem](/help/journey-migration/refactoring-tools/assets/rscam2.png)
 
-&#x200B;---
+---
 
 ## Upload do código do Source {#uploading}
 
@@ -72,7 +72,7 @@ Quando os clientes acessam as **Ferramentas de refatoração** pela primeira vez
 >[!NOTE]
 >Os trabalhos de refatoração só poderão ser executados se o upload do código-fonte for bem-sucedido.
 
-&#x200B;---
+---
 
 ## Trabalhos de refatoração {#refactoring-jobs}
 
@@ -91,7 +91,7 @@ Ao clicar na guia **Trabalho de Refatoração**, você verá uma lista de trabal
 >[!NOTE]
 >Você pode acionar trabalhos individuais de refatoração ou executar todas as ferramentas disponíveis de uma só vez usando a opção **Todas as ferramentas em conjunto**.
 
-&#x200B;---
+---
 
 ### &#x200B;2. Status da tarefa
 

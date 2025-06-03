@@ -22,7 +22,7 @@ As **Ferramentas de Refatoração** simplificam o processo de atualização de p
 
 Anteriormente disponível apenas como utilitários CLI, as Ferramentas de refatoração agora fornecem uma interface unificada com recursos como inspeção automatizada, geração de configuração e execução de tarefas — reduzindo a sobrecarga manual e melhorando a visibilidade.
 
-&#x200B;---
+---
 
 ## Fluxo de Trabalho de Inspeção {#inspection-workflow}
 
@@ -34,7 +34,7 @@ O **Fluxo de Trabalho de Inspeção** simplifica o processo de preparação para
 * **Geração de Configuração** - As ferramentas inspecionam o código-fonte carregado e geram as configurações necessárias.
 * **Envio de carga** - Essas configurações são passadas diretamente para as ferramentas selecionadas para execução.
 
-&#x200B;---
+---
 
 ## Ferramentas de refatoração disponíveis
 
@@ -46,7 +46,7 @@ O **Modernizador de repositório** reestrutura o layout e o conteúdo do reposit
 
 O **Transformador de código** usa reconhecimento de padrão inteligente e análise orientada por IA para detectar e atualizar segmentos de código incompatíveis com o AEMaaCS. Essa ferramenta simplifica o esforço de migração e reduz as alterações manuais de código.
 
-&#x200B;---
+---
 
 ## Refatorando Fases do Fluxo de Trabalho {#phases-in-refactoring-tools}
 
@@ -60,7 +60,7 @@ As Ferramentas de refatoração seguem um processo estruturado de duas fases:
 >[!NOTE]
 >Durante o processo de inspeção, o upload de outro projeto não é permitido.
 
-&#x200B;---
+---
 
 ### Fase 2: Acionar um trabalho de refatoração
 
