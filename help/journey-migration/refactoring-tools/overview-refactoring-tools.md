@@ -1,28 +1,29 @@
 ---
-title: Introdução às ferramentas de refatoração
+title: Visão geral das ferramentas de refatoração
 description: Saiba como começar a usar as Ferramentas de refatoração do AEM
-exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: fa65b489d54d5333811145a1875a8f6fc89317bc
+source-git-commit: a77dfef8dce9f4ed549135087f7b63f6d46a4ea1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 2%
+source-wordcount: '338'
+ht-degree: 1%
 
 ---
 
 
+<!-- Alexandru: temporarily commeting this out, since it breaks validation
+
 >[!CONTEXTUALHELP]
 >id="aemcloud_rs_overview"
->title="Visão geral"
->abstract="As Ferramentas de refatoração são uma solução desenvolvida pela Adobe para ajudar a refatorar projetos existentes do AEM para compatibilidade com o AEM as a Cloud Service. As ferramentas são executadas por meio do Cloud Acceleration Manager (CAM) e automatizam as principais tarefas de modernização."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=pt-BR" text="Diretrizes e práticas recomendadas"
+>title="Overview"
+>abstract="Refactoring Tools is a solution developed by Adobe to help refactor existing AEM projects for compatibility with AEM as a Cloud Service. The tools are executed via Cloud Acceleration Manager (CAM) and automate key modernization tasks."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html" text="Guidelines and Best Practices"
 
-# Introdução às ferramentas de refatoração {#getting-started-refactoring-tools}
+-->
+
+# Visão geral das ferramentas de refatoração {#refactoring-tools-overview}
 
 As **Ferramentas de Refatoração** simplificam o processo de atualização de projetos existentes do AEM para serem compatíveis com o **AEM as a Cloud Service (AEMaaCS)**. Essas ferramentas automatizam tarefas comuns de refatoração e modernização e são integradas ao **Cloud Acceleration Manager (CAM)** para proporcionar uma experiência contínua.
 
 Anteriormente disponível apenas como utilitários CLI, as Ferramentas de refatoração agora fornecem uma interface unificada com recursos como inspeção automatizada, geração de configuração e execução de tarefas — reduzindo a sobrecarga manual e melhorando a visibilidade.
-
-&#x200B;---
 
 ## Fluxo de Trabalho de Inspeção {#inspection-workflow}
 
@@ -34,8 +35,6 @@ O **Fluxo de Trabalho de Inspeção** simplifica o processo de preparação para
 * **Geração de Configuração** - As ferramentas inspecionam o código-fonte carregado e geram as configurações necessárias.
 * **Envio de carga** - Essas configurações são passadas diretamente para as ferramentas selecionadas para execução.
 
-&#x200B;---
-
 ## Ferramentas de refatoração disponíveis
 
 ### Modernizador de repositório {#repo-modernizer}
@@ -45,8 +44,6 @@ O **Modernizador de repositório** reestrutura o layout e o conteúdo do reposit
 ### Transformador de código {#code-transformer}
 
 O **Transformador de código** usa reconhecimento de padrão inteligente e análise orientada por IA para detectar e atualizar segmentos de código incompatíveis com o AEMaaCS. Essa ferramenta simplifica o esforço de migração e reduz as alterações manuais de código.
-
-&#x200B;---
 
 ## Refatorando Fases do Fluxo de Trabalho {#phases-in-refactoring-tools}
 
@@ -59,8 +56,6 @@ As Ferramentas de refatoração seguem um processo estruturado de duas fases:
 
 >[!NOTE]
 >Durante o processo de inspeção, o upload de outro projeto não é permitido.
-
-&#x200B;---
 
 ### Fase 2: Acionar um trabalho de refatoração
 
