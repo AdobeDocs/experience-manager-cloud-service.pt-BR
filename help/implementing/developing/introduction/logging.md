@@ -4,9 +4,9 @@ description: Saiba como usar o Logging para AEM as a Cloud Service a fim de conf
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 feature: Log Files, Developing
 role: Admin, Architect, Developer
-source-git-commit: 783210b4b72cf6efbdb4cf8c8cab08dbcd3004c6
+source-git-commit: 5c32a088cf7e334ba6497a595b5176e5389ce9ed
 workflow-type: tm+mt
-source-wordcount: '2540'
+source-wordcount: '2556'
 ht-degree: 2%
 
 ---
@@ -158,8 +158,8 @@ Configure o log Java para pacotes Java personalizados por meio de configuraçõe
 A alteração de outras propriedades de configuração OSGi do LogManager pode resultar em problemas de disponibilidade no AEM as a Cloud Service.
 
 Conforme observado em uma seção anterior, para garantir o monitoramento eficaz dos ambientes do cliente:
-* Os logs Java do código de produto do AEM devem preservar o nível de log padrão &quot;INFO&quot; e não devem ser substituídos por configurações personalizadas.
-* É aceitável definir os níveis de log como DEBUG para o código do produto, mas usá-lo com moderação para evitar a degradação do desempenho e restaurar INFO quando não for mais necessário.
+* O nível de log da configuração de log padrão do AEM (Configuração de log do Apache Sling) não deve ser modificado de seu valor padrão de &quot;INFO&quot;.
+* É aceitável definir os níveis de log como DEBUG para pacotes individuais de código de produto (usando instâncias da fábrica de configuração OSGi &quot;Configuração do Apache Sling Logging Logger&quot;), mas usá-lo com moderação para evitar a degradação do desempenho e restaurar de volta para INFO quando não for mais necessário.
 * É aceitável ajustar os níveis de log para o código desenvolvido pelo cliente.
 * Todos os registros — tanto para código de produto do AEM quanto para código desenvolvido pelo cliente — devem manter o formato de registro padrão.
 * A saída do log deve permanecer direcionada ao arquivo padrão &quot;logs/error.log&quot;.
