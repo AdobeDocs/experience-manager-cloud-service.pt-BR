@@ -82,8 +82,8 @@ Se a caixa de diálogo **[!UICONTROL Baixar ativos]** exibir licenças de ativos
 
    >[!NOTE]
    >
-   >* As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [!UICONTROL [Configuração]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Os usuários com acesso ao [!DNL [Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) podem exibir e baixar representações de corte dinâmico e inteligente.
+   >* As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [[!UICONTROL [Configuração]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Os usuários com acesso ao [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) podem exibir e baixar representações de corte dinâmico e inteligente.
    >* A visualização da licença é exibida somente se o ativo for aprovado usando o ambiente de criação do [!DNL Assets as a Cloud Service]. Para obter mais informações, consulte [Gerenciar ativos licenciados no Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
