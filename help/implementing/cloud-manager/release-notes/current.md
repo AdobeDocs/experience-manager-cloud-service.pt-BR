@@ -4,9 +4,9 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.6.0 no Adobe E
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
+source-git-commit: 6365b1c4109c2f2a77fbc332d11e1a8906d2cc6d
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '958'
 ht-degree: 10%
 
 ---
@@ -27,7 +27,7 @@ A próxima versão está planejada para sexta-feira, 10 de julho de 2025.
 
 ## Novidades {#what-is-new}
 
-* O painel de licenças do **(UI) agora inclui a licença do Edge Delivery Services**
+* **O painel de licenças agora inclui uma licença do Edge Delivery Services**
 
   O uso de licença da Edge Delivery Services agora é exibido no painel de Licenças, fornecendo uma visibilidade mais clara de seus direitos e status. <!-- CMGR-67686 -->
 
@@ -35,7 +35,7 @@ A próxima versão está planejada para sexta-feira, 10 de julho de 2025.
 
   Consulte [Painel de licenças](/help/implementing/cloud-manager/license-dashboard.md).
 
-* Configuração do site Edge Delivery **(UI) atualizada**
+* **Configuração de site do Edge Delivery atualizada**
 
   Simplificou o fluxo para adicionar um site Edge Delivery solicitando a **Edge Delivery Origin** em vez da **URL do Repositório**, tornando a integração e a configuração mais rápidas e intuitivas <!-- CMGR-67686 -->
 
@@ -43,7 +43,7 @@ A próxima versão está planejada para sexta-feira, 10 de julho de 2025.
 
   Consulte [Adicionar um site do Edge Delivery](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md).
 
-* **(UI) Favoritos do pipeline**
+* **Favoritos do pipeline**
 
   Nesta versão, o Cloud Manager apresenta a capacidade de fixar pipelines favoritos, permitindo que você marque pipelines específicos como favoritos para que eles apareçam no topo da lista na página **Pipelines**. Esse aprimoramento facilita a localização e a execução de pipelines acessados com frequência. <!-- CMGR-68293 -->
 
@@ -111,7 +111,7 @@ Se tiver interesse em testar esse novo recurso e compartilhar o seu feedback, en
 
 Os Pipelines de configuração agora são compatíveis com sites criados com o Edge Delivery Services, expandindo esse recurso além dos ambientes do Cloud Service. Você pode usar **Pipelines de configuração** para gerenciar configurações como regras de filtragem de tráfego e configurações do Firewall do Aplicativo Web (WAF), quando aplicável. Consulte [Configurações com Suporte](/help/operations/config-pipeline.md#configurations).
 
-![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**&#x200B;cartão.*
+![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**cartão.*
 
 ![Caixa de diálogo Adicionar pipeline do Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Caixa de diálogo Adicionar pipeline do Edge Delivery.*
 
