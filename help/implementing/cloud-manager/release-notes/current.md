@@ -4,9 +4,9 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.6.0 no Adobe E
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 9e2be3cabe0a93e6e357ceb5ecf4950c25d034d0
+source-git-commit: 2d0153d9a7c18097266d94575c2a61e471ccd536
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '961'
 ht-degree: 10%
 
 ---
@@ -61,7 +61,7 @@ As seguintes oportunidades de adoção antecipada estão disponíveis no momento
 
 ### Gerenciar tokens de acesso{#manage-access-tokens}
 
-Use o recurso **Gerenciar tokens de acesso** no Cloud Manager para exibir, renomear e excluir tokens de acesso associados a repositórios externos do Bring Your Own Git, como GitHub Enterprise, GitLab, Bitbucket e Azure DevOps.
+Use **Gerenciar tokens de acesso** no Cloud Manager para exibir, renomear e excluir tokens de acesso associados a repositórios externos do Bring Your Own Git, como GitHub Enterprise, GitLab, Bitbucket e Azure DevOps.
 
 Consulte [Gerenciar tokens de acesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
 
@@ -111,7 +111,7 @@ Se tiver interesse em testar esse novo recurso e compartilhar o seu feedback, en
 
 Os Pipelines de configuração agora são compatíveis com sites criados com o Edge Delivery Services, expandindo esse recurso além dos ambientes do Cloud Service. Você pode usar **Pipelines de configuração** para gerenciar configurações como regras de filtragem de tráfego e configurações do Firewall do Aplicativo Web (WAF), quando aplicável. Consulte [Configurações com Suporte](/help/operations/config-pipeline.md#configurations).
 
-![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**&#x200B;cartão.*
+![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**cartão.*
 
 ![Caixa de diálogo Adicionar pipeline do Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Caixa de diálogo Adicionar pipeline do Edge Delivery.*
 
