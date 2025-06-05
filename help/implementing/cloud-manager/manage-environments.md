@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 1683d53491e06ebe2dfcc96184ce251539ecf732
+source-git-commit: f75bcd7e311980c3d1f9075be73d5f2896f76a2d
 workflow-type: tm+mt
-source-wordcount: '2374'
-ht-degree: 38%
+source-wordcount: '2430'
+ht-degree: 36%
 
 ---
 
@@ -26,8 +26,13 @@ Um usuário com as permissões necessárias pode criar os tipos de ambientes des
 | **Produção + Preparo** | Os ambientes de produção e de preparo estão disponíveis como um par e são usados para fins de produção e teste, respectivamente. Realizar testes de desempenho e segurança no ambiente de preparo. Ele tem o mesmo tamanho da produção. |
 | **Desenvolvimento** | Um ambiente de desenvolvimento pode ser criado para fins de desenvolvimento e teste e pode ser associado apenas a pipelines de não produção. Os ambientes de desenvolvimento não têm o mesmo tamanho que os de preparo e produção e não devem ser usados para realizar testes de desempenho e segurança. |
 | **Desenvolvimento rápido** | Um ambiente de desenvolvimento rápido (RDE) permite que os desenvolvedores implantem e revisem alterações rapidamente. Essa capacidade reduz o tempo necessário para testar recursos que já foram validados em um ambiente de desenvolvimento local. Consulte [a documentação de ambientes de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md) para obter detalhes sobre como usar um RDE. |
+| **Ambiente de teste especializado** | Os ambientes de teste especializados fornecem um espaço dedicado para validar recursos em condições próximas da produção, ideal para testes de tensão e verificações avançadas antes da implantação. Consulte [Adicionar um ambiente de teste especializado](/help/implementing/cloud-manager/specialized-test-environment.md) |
 
-Os recursos de ambientes individuais dependem das soluções que foram habilitadas no [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) do ambiente.
+>[!NOTE]
+>
+>O recurso **Ambiente de teste especializado** está disponível no momento somente por meio do programa de adoção antecipada. Para se inscrever como pioneiro, consulte [Ambiente de teste especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+
+Os recursos de ambientes individuais dependem das soluções habilitadas no [programa](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) do ambiente.
 
 * [Sites](/help/overview/introduction.md)
 * [Assets](/help/assets/overview.md)
@@ -105,7 +110,7 @@ Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-n
 
 ### Editar várias regiões de publicação {#edit-regions}
 
-Se não tiver especificado nenhuma região adicional previamente, é possível fazer isso após a criação dos ambientes, caso possua os direitos necessários.
+Inicialmente, se você não tiver especificado regiões adicionais, poderá fazer isso depois que o ambiente for criado e você tiver os direitos necessários.
 
 Você também pode remover regiões de publicação adicionais. No entanto, você só pode adicionar ou remover regiões em uma transação. Se precisar adicionar uma região e remover outra, primeiro adicione, salve a alteração e depois remova (ou vice-versa).
 
@@ -176,7 +181,7 @@ Um usuário com as permissões necessárias deve concluir as etapas a seguir ant
 
 Depois que o acesso ao serviço de visualização é desbloqueado, o ícone de bloqueio na frente do nome do serviço de visualização não é mais exibido.
 
-Após a ativação, é possível publicar conteúdo no serviço de visualização usando a interface de usuário **`Manage Publication`** dentro do AEM. Consulte [Visualizar conteúdo](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obter mais detalhes.
+Após a ativação, é possível publicar conteúdo no serviço de visualização usando a interface de usuário **`Manage Publication`** no AEM. Consulte [Visualizar conteúdo](/help/sites-cloud/authoring/sites-console/previewing-content.md) para obter mais detalhes.
 
 >[!NOTE]
 >
@@ -223,7 +228,7 @@ No entanto, as atualizações para ambientes em programas de sandbox são gerenc
 
 Os pipelines são a única maneira de [implantar código nos ambientes do AEM as a Cloud Service](deploy-code.md). Por esse motivo, cada pipeline está associado a uma versão específica do AEM.
 
-Quando o Cloud Manager detecta uma versão de AEM mais recente do que a implantada pela última vez no pipeline, ele exibe o status **Atualização disponível** para o ambiente.
+Quando o Cloud Manager detecta uma versão do AEM mais recente do que a implantada pela última vez no pipeline, ele exibe o status **Atualização disponível** para o ambiente.
 
 O processo de atualização é, portanto, um processo de duas etapas:
 
@@ -282,7 +287,7 @@ Selecione **Gerenciar acesso** no menu de reticências do ambiente no cartão **
 
 >[!TIP]
 >
->Consulte [Perfis de produto e de equipe da AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) para saber como os perfis de produto e de equipe da AEM as a Cloud Service podem conceder e limitar o acesso às soluções de Adobe licenciadas.
+>Consulte [Perfis de produto e de equipe do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) para saber como os perfis de produto e de equipe do AEM as a Cloud Service podem conceder e limitar o acesso às suas soluções licenciadas da Adobe.
 
 ## Acesse o console do Desenvolvedor {#accessing-developer-console}
 
@@ -294,11 +299,11 @@ Uma nova guia é aberta no navegador com a página de logon do **Developer Conso
 
 Somente um usuário com a função **Desenvolvedor** terá acesso ao **Developer Console**. No entanto, para programas de sandbox, qualquer usuário com acesso ao programa de sandbox tem acesso ao **Developer Console**.
 
-Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
+Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
 
 Esta opção também está disponível na guia **Ambiente** da janela **Visão geral** ao clicar no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de um ambiente individual.
 
-## Logon local {#login-locally}
+## Fazer logon localmente {#login-locally}
 
 1. Siga uma das seguintes opções:
 

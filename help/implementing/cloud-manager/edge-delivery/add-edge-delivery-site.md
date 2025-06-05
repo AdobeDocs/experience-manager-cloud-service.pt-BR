@@ -4,9 +4,9 @@ description: Saiba como adicionar um site do Edge Delivery ao seu programa de pr
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 17e842c9-599a-4877-9834-1e7220f508a8
-source-git-commit: a7e8e340355d85236a0997b28e0a04296b2ef5b4
+source-git-commit: 88c1712e2021eda2ea66304c65f6d96a1a8155be
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '521'
 ht-degree: 3%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 3%
 >[!IMPORTANT]
 >
 >Saiba por que você deve integrar seu site do Edge Delivery Services ao Cloud Manager.
->Consulte [Vantagens de usar o caminho recomendado pela Adobe para o Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
+>>Consulte [Vantagens de usar o caminho recomendado pela Adobe para o Edge Delivery Services](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md#recommended-path-eds).
 
 **Para adicionar um site do Edge Delivery ao Cloud Manager:**
 
@@ -40,7 +40,7 @@ Próximo ao canto superior direito da página, clique em **Adicionar site**.
    | Campo de texto | Descrição |
    | - | --- |
    | Nome do site | Insira o nome do site do Edge Delivery que você está adicionando.<br>O nome serve como um identificador exclusivo para o site no Cloud Manager. |
-   | URL do repositório | Insira o repositório Git onde o código do site está armazenado.<br>Este campo permite que o Cloud Manager extraia o código desse repositório durante o processo de implantação. |
+   | Origem do Edge Delivery | Esse valor especifica o caminho do URL para a fonte de conteúdo do site no Edge Delivery Services. Ele também vincula o Cloud Manager ao seu site ativo.<br>A URL normalmente inclui a *ramificação*, o *projeto* e o *locatário*, como no exemplo a seguir (somente para fins de ilustração):<br>`https://main--projectname--tenant.aem.live` |
    | Descrição do site (opcional) | Insira uma breve descrição do site do Edge Delivery que você está adicionando.<br>Uma descrição ajuda a identificar e diferenciar o site, facilitando o gerenciamento e o reconhecimento entre outros sites adicionados. |
 
 1. No canto inferior direito da caixa de diálogo, clique em **Adicionar**.

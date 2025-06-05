@@ -3,50 +3,85 @@ title: Gerenciar coleções no Content Hub
 description: Saiba como gerenciar coleções no Content Hub
 role: User
 exl-id: ea74456c-f980-4a02-b26b-d7c46dac6aee
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 6bc838ff76edda3e03cbde8da4a28f65cba3b36a
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 3%
+source-wordcount: '1055'
+ht-degree: 4%
 
 ---
 
 # Gerenciar coleções em [!DNL Content Hub] {#manage-collections}
 
 <table>
+
     <tr>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
+
         </td>
+
         <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
+
         </td>
+
           <td>
+
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
+
         </td>
+
     </tr>
+
     <tr>
+
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
+
         </td>
+
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
+
         </td>
+
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
+
         </td>
+
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
+
         </td>
+
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
+
         </td>
+
     </tr>
+
 </table>
 
 <!-- ![Manage collections](assets/manage-collections.jpg) -->
@@ -77,15 +112,37 @@ Ele ajuda os usuários a acessar e gerenciar facilmente os diversos ativos dispo
 
 ## Criar coleções{#create-collections}
 
-Você pode [criar uma nova coleção](#create-new-collection) ou [adicionar ativos a uma coleção existente](#add-assets-to-existing-collection).
+Você pode optar por [criar uma nova coleção](#create-new-collection) ou [adicionar ativos a uma coleção existente](#add-assets-to-existing-collection) ao gerenciar a governança.
 
 ### Criar uma nova coleção{#create-new-collection}
 
-Selecione os ativos que você precisa adicionar a uma coleção e clique em **[!UICONTROL Adicionar à coleção]**.
+Execute as etapas abaixo para controlar o acesso ao criar coleções:
 
-![Criar coleção](assets/add-assets-collection.jpg)
+1. Vá para a guia **[!DNL Collections]** e clique em **[!UICONTROL Criar Coleção]**. A janela Nova coleção é exibida.
 
-Para criar uma nova coleção, navegue até a guia **[!UICONTROL Coleções]** e clique em **[!UICONTROL Criar nova coleção]**. Insira o **[!UICONTROL Título]** e forneça uma **[!UICONTROL Descrição]** opcional para os ativos. Clique em **[!UICONTROL Criar]**.
+1. Adicionar **[!UICONTROL Título]** e **[!UICONTROL Descrição]** à coleção.
+
+   ![permissões de coleção](assets/collection-permissions.png)
+
+1. Em **[!UICONTROL Quem pode acessar]** lista suspensa > selecione o tipo de controle de acesso. As opções disponíveis são as seguintes:
+
+   | Método de acesso | Tipo de acesso | Descrição |
+   |---|---|---|
+   | **Somente você e administradores podem acessar** | Privado | Somente o Criador e os administradores podem editar e acessar essa coleção. |
+   | **Qualquer pessoa pode acessar** | Público | Todos podem acessar esta coleção, mas somente o criador e os administradores podem editar. |
+   | **Qualquer pessoa pode acessar e editar** | Público | Esta coleção está aberta a todos, com permissões de acesso total e edição concedidas sem restrições. |
+
+1. Clique em **[!UICONTROL Criar]**. Depois de concluído, você pode [adicionar ativos à coleção](#add-assets-to-existing-collection).
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463336)
+
+>[!NOTE]
+>
+>A governança de coleções é um recurso de disponibilidade limitada. Você pode ativá-lo criando um tíquete de suporte. Depois de habilitado, você precisa [Configurar Coleções no Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).
+
+<!--To create a new collection, navigate to the **[!UICONTROL Collections]** tab and click **[!UICONTROL Create new collection]**. Enter the **[!UICONTROL Title]** and provide an optional **[!UICONTROL Description]** for the assets. Click **[!UICONTROL Create]**.
+![Create collection](assets/add-assets-collection.jpg)          
+-->
 
 ### Adicionar ativos a uma coleção existente{#add-assets-to-existing-collection}
 
@@ -97,9 +154,30 @@ Escolha a coleção à qual você precisa adicionar o ativo. Também é possíve
 
 ## Exibir coleções{#view-collections}
 
-Navegue até a guia **[!UICONTROL Coleções]** e procure o nome da coleção. Para exibir a lista de ativos disponíveis em uma coleção, clique no nome da coleção. Também é possível aplicar filtros em uma coleção para restringir os resultados do ativo.
+Navegue até a guia **[!UICONTROL Coleções]** e procure o nome da coleção. Você pode usar filtros para refinar os resultados da pesquisa selecionando critérios específicos, ajudando você a encontrar rapidamente as coleções mais relevantes.
 
-Clique no ativo que você precisa visualizar em uma coleção. [!DNL Content Hub] exibe a exibição detalhada do ativo. [Ver detalhes do ativo](asset-properties-content-hub.md).
+Para exibir a lista de ativos disponíveis em uma coleção, clique no nome da coleção. Também é possível aplicar filtros em uma coleção para restringir os resultados do ativo. Clique no ativo que você precisa visualizar em uma coleção. [!DNL Content Hub] exibe a exibição detalhada do ativo. [Ver detalhes do ativo](asset-properties-content-hub.md).
+
+### Filtrar exibição de coleções {#filter-collections-view}
+
+O Content Hub permite filtrar a exibição de coleções para encontrar facilmente exatamente o que você está procurando, restringindo as opções com base em suas preferências. Verifique a [configuração de Coleções no Content Hub](configure-content-hub-ui-options.md#configure-collections-content-hub).
+
+Para filtrar a exibição de coleções, vá para a guia **[!DNL Collections]** e navegue até o menu suspenso Coleções. Escolha entre as seguintes opções:
+
+* **[!UICONTROL Todas as coleções]:** selecione essa opção para exibir todas as coleções que são privadas e compartilhadas com você.
+* **[!UICONTROL Somente eu]:** selecione esta opção para exibir as coleções que são acessíveis a você.
+* **[!UICONTROL Qualquer pessoa pode visualizar]:** Essa opção permite que você filtre coleções que podem ser acessadas por todos, mas que só podem ser editadas pelo criador.
+* **[!UICONTROL Qualquer pessoa pode editar]:** Selecione esta opção para filtrar coleções que possam ser acessadas e editadas por todos.
+
+  ![exibição de coleções de filtro](assets/filter-collection-view.png)
+
+Além disso, para filtrar a exibição de coleções com base nas permissões de acesso, vá para a guia **[!DNL Collections]** e navegue até uma das seguintes opções:
+
+* **[!UICONTROL Criado por qualquer pessoa]:** este filtro restringe você a visualizar coleções criadas por qualquer usuário.
+
+* **[!UICONTROL Criado por mim]:** este filtro restringe você a exibir coleções criadas por você.
+
+  ![exibição de coleções de filtro](assets/filter-collection-view1.png)
 
 <!--
 ![Asset details](assets/view-collection.jpg)
@@ -119,7 +197,7 @@ Clique no ativo que você precisa visualizar em uma coleção. [!DNL Content Hub
 Para baixar os ativos disponíveis em uma coleção, navegue até a guia **[!UICONTROL Coleções]**.\
 Clique no ícone ![baixar](assets/download-icon.svg) no cartão de coleção.
 
-![Guia Coleção](assets/download-collection.jpg)
+![Guia Coleção](assets/download-collection.png)
 
 Todos os ativos na coleção são baixados.
 
@@ -129,7 +207,9 @@ Saiba como [baixar um ativo do [!DNL Content Hub]](download-assets-content-hub.m
 
 ## Compartilhar ativos disponíveis em uma coleção {#share-assets-available-within-collection}
 
-Você também pode compartilhar os ativos disponíveis em uma coleção. Navegue até a guia **[!UICONTROL Coleções]**. Selecione o ícone ![compartilhar](assets/share.svg) no cartão de coleção. O link de compartilhamento é copiado. Você pode compartilhar o link copiado com o recipient. Saiba mais sobre o [compartilhamento de ativos no [!DNL Content Hub]](share-assets-content-hub.md).
+Você também pode compartilhar os ativos disponíveis em uma coleção. [habilite o compartilhamento de link público no Content Hub](configure-content-hub-ui-options.md#enable-public-link-sharing). Navegue até a guia **[!UICONTROL Coleções]**. Selecione o ícone ![compartilhar](assets/share.svg) no cartão de coleção. O link de compartilhamento é copiado. Você pode compartilhar o link copiado com o recipient. Saiba mais sobre o [compartilhamento de ativos no [!DNL Content Hub]](share-assets-content-hub.md).
+
+Ao compartilhar coleções no Content Hub, é possível definir o escopo de acesso e as ações que os recipients podem executar em recursos digitais no sistema. O Content Hub Collections fornece ferramentas de governança abrangentes para um gerenciamento eficiente de ativos, incluindo permissões de compartilhamento personalizáveis e recursos de colaboração. Do acesso somente leitura ao controle administrativo completo, essas configurações suportam controle fino sobre a distribuição de ativos.
 
 ## Editar detalhes de uma coleção {#edit-details-of-collection}
 
@@ -149,3 +229,6 @@ Os ativos selecionados foram removidos com êxito da coleção.
 ## Excluir uma coleção{#delete-collection}
 
 Para excluir uma coleção, navegue até a guia **[!UICONTROL Coleções]** e clique na coleção que você precisa excluir. Clique no ícone ![remover](assets/remove-icon.svg) para excluir a coleção.
+
+
+

@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Primeiros usuários" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: d0cf86d429c7374ad12f6eeb9f287b0ace3406ec
+source-git-commit: e881c3d8af7127e030aa9a0a2c163eaf04870c2b
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2079'
 ht-degree: 22%
 
 ---
@@ -20,10 +20,11 @@ Os clientes agora também podem integrar seus repositórios Git do Azure DevOps 
 
 * Para usuários do Edge Delivery Services, o repositório integrado pode ser usado para sincronizar e implantar o código do site.
 * Para usuários do AEM as a Cloud Service e do Adobe Managed Services (AMS), o repositório pode ser vinculado a pipelines de pilha completa e de front-end.
-&#39;
+
 >[!NOTE]
 >
 >Os recursos descritos neste artigo só estão disponíveis por meio do programa de adoção antecipada. Para obter mais detalhes e se inscrever como participante antecipado, consulte [Traga seu próprio Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+
 
 ## Configurar um repositório externo
 
@@ -83,13 +84,16 @@ A configuração de um repositório externo no Cloud Manager consiste nas seguin
    | | **Tipo de repositório: Bitbucket**<ul><li>No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso do repositório usando a [documentação do Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Permissões necessárias para o PAT (token de acesso pessoal) do Bitbucket<br>Essas permissões permitem que o Cloud Manager acesse o conteúdo do repositório, gerencie solicitações de pull e configure ou reaja a eventos de webhook.<br>Ao criar a senha de aplicativo no Bitbucket, verifique se ela inclui as seguintes permissões de senha de aplicativo necessárias:<ul><li>Repositório (somente leitura)<li>Solicitações de pull (leitura e gravação)<li>Webhooks (leitura e gravação)</li></li></ul></li></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
    | | **Tipo de repositório: Azure DevOps**<ul><li>No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso do repositório usando a [documentação do Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows).<li>Permissões necessárias para o PAT (Token de acesso pessoal) do Azure DevOps.<br>Essas permissões permitem que o Cloud Manager acesse o conteúdo do repositório, gerencie solicitações de pull e configure ou reaja a eventos de webhook.<br>Ao criar a senha de aplicativo no Azure DevOps, verifique se ela inclui as seguintes permissões de senha de aplicativo necessárias:<ul><li>Repositório (somente leitura)</li></ul></li></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
 
+   Consulte também [Gerenciar tokens de acesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
    >[!IMPORTANT]
    >
    >O recurso **Adicionar novo Token de Acesso** está atualmente na fase de Adoção Antecipada. Funcionalidades adicionais estão sendo planejadas. Como resultado, as permissões necessárias para tokens de acesso podem mudar. Além disso, a interface de usuário para gerenciamento de tokens pode ser atualizada, possivelmente incluindo recursos como datas de expiração de tokens. E verificações automatizadas para garantir que os tokens vinculados aos repositórios permaneçam válidos.
 
 1. Clique em **Validar**.
 
-Após a validação, o repositório externo estará pronto para ser usado e vinculado a um pipeline.
+   Após a validação, o repositório externo estará pronto para ser usado e vinculado a um pipeline.
+
 
 ## Vincular um repositório externo validado a um pipeline {#validate-ext-repo}
 
@@ -113,6 +117,7 @@ Após a validação, o repositório externo estará pronto para ser usado e vinc
 >[!TIP]
 >
 >Para obter detalhes sobre como gerenciar repositórios no Cloud Manager, consulte [Repositórios do Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md).
+
 
 ## Configurar um webhook para um repositório externo {#configure-webhook}
 
@@ -172,6 +177,7 @@ Cole o segredo em um arquivo de texto simples. O segredo copiado é necessário 
    | GitLab | Esses eventos de webhook permitem que o Cloud Manager acione pipelines quando o código é enviado por push ou uma solicitação de mesclagem é enviada. Eles também rastreiam comentários relacionados à validação da solicitação de pull (por meio de eventos de observação).<br>Verifique se o webhook está configurado para ser acionado nos seguintes eventos necessários do webhook<ul><li>Eventos de push<li>Mesclar eventos de solicitação<li>Anotar eventos</li></li></li></ul></ul></ul> |
    | Bitbucket | Esses eventos garantem que o Cloud Manager possa validar solicitações de pull, responder a envios por código e interagir com comentários para coordenação de pipeline.<br>Verifique se o webhook está configurado para ser acionado nos seguintes eventos necessários do webhook<ul><li>Solicitação de pull: criada<li>Solicitação de pull: atualizada<li>Solicitações de pull: mescladas<li>Solicitação de pull: comentário<li>Repositório: push</li></li></li></ul></ul></ul> |
    | Azure DevOps | Esses eventos garantem que o Cloud Manager possa validar solicitações de pull, responder a envios por código e interagir com comentários para coordenação de pipeline.<br>Verifique se o webhook está configurado para ser acionado nos seguintes eventos necessários do webhook<ul><li>Repositório: push</li></li></ul></ul></ul> |
+
 
 ### Validação de pull requests com webhooks
 

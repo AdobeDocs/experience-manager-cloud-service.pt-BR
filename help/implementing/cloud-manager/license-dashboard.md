@@ -5,21 +5,21 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6b3e2b960869786427a22d077216aa75a5ca0717
+source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 26%
+source-wordcount: '909'
+ht-degree: 24%
 
 ---
 
 
 # Painel de licenças {#license-dashboard}
 
-O Cloud Manager fornece um painel para facilitar a visualização dos direitos de produto do AEMaaCS disponíveis para sua organização ou locatário.
+O Cloud Manager fornece um painel para facilitar a visualização dos direitos de produto do Adobe Experience Manager as a Cloud Service (AEMaaCS) disponíveis para sua organização ou locatário.
 
 >[!IMPORTANT]
 >
->O Painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no Painel de licenças.
+>O Painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no Painel de licenças.
 >
 >Para determinar o tipo de serviço que seu programa tem (AMS ou AEMaaCS), consulte [Navegação na interface do Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -41,7 +41,10 @@ O painel de licenças da Cloud Manager fornece acesso fácil aos direitos da sol
 
 O painel é dividido em três seções que mostram:
 
-* **Soluções** - Quais soluções você licenciou.
+* **Soluções** - Quais soluções você licenciou. Por exemplo, Sites, Edge Delivery Services e Assets, entre outros.
+
+  ![Lista de soluções](assets/solutions.png)
+
 * **Complementos** - Quais complementos estão disponíveis para suas soluções licenciadas.
 * **Outros direitos** - Que ambiente de sandbox e desenvolvimento e outros direitos podem ser consumidos em seu locatário.
 

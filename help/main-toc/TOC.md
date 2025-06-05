@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 4b5d2213750ea1b96f7315a8b8b426a97b3041f3
+source-git-commit: 1b569e7e14cd27a8963e230fba5bcdc55f2bcdf6
 workflow-type: tm+mt
-source-wordcount: '6211'
+source-wordcount: '6235'
 ht-degree: 62%
 
 ---
@@ -123,6 +123,7 @@ ht-degree: 62%
    + Notas de versão do Cloud Manager {#cloud-manager}
       + [Atual](/help/implementing/cloud-manager/release-notes/current.md)
       + 2025 {#2025}
+         + [2025.5.0](/help/implementing/cloud-manager/release-notes/2025/2025-5-0.md)
          + [2025.4.0](/help/implementing/cloud-manager/release-notes/2025/2025-4-0.md)
          + [2025.3.0](/help/implementing/cloud-manager/release-notes/2025/2025-3-0.md)
          + [2025.2.0](/help/implementing/cloud-manager/release-notes/2025/2025-2-0.md)
@@ -316,7 +317,7 @@ ht-degree: 62%
       + Transformador de conteúdo {#content-transformer}
          + [Visão geral](/help/journey-migration/content-transformer/overview.md)
          + [Usar o transformador de conteúdo](/help/journey-migration/content-transformer/using.md)
-      + Ferramenta Transferência de conteúdo {#content-transfer-tool}
+      + Ferramenta de transferência de conteúdo {#content-transfer-tool}
          + [Visão geral](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Pré-requisitos para a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
          + [Diretrizes e práticas recomendadas para usar a ferramenta Transferência de conteúdo](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
@@ -691,12 +692,13 @@ ht-degree: 62%
       + [Extensibilidade da interface de usuário do AEM Assets View](/help/assets/aem-assets-view-ui-extensibility.md)
    + Centro de conteúdo {#content-hub}
       + [Visão geral](/help/assets/product-overview.md)
-      + [Implantar o Content Hub](/help/assets/deploy-content-hub.md)
+      + [Implantar o Centro de conteúdo](/help/assets/deploy-content-hub.md)
       + [Fazer upload ou importar ativos aprovados pela marca para o Content Hub](/help/assets/upload-brand-approved-assets.md)
       + [Configurar a interface do usuário do Centro de conteúdo](/help/assets/configure-content-hub-ui-options.md)
       + [Aprovar ativos para o Content Hub](/help/assets/approve-assets-content-hub.md)
       + [Pesquisar ativos no Content Hub](/help/assets/search-assets-content-hub.md)
       + [Propriedades do ativo](/help/assets/asset-properties-content-hub.md)
+      + [Controle de acesso baseado em atributos](/help/assets/attribute-based-access-control.md)
       + [Compartilhar ativos na Content Hub](/help/assets/share-assets-content-hub.md)
       + [Baixar ativos usando o Content Hub](/help/assets/download-assets-content-hub.md)
       + [Gerenciar o Assets licenciado no Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md)
@@ -993,12 +995,14 @@ ht-degree: 62%
          + [Opções de armazenamento em cache](/help/commerce-cloud/configuring/caching.md)
          + [Cabeçalhos HTTP personalizados](/help/commerce-cloud/configuring/custom-http-headers.md)
          + [Configuração do carrinho de compras e do Dispatcher](/help/commerce-cloud/configuring/shopping-cart-dispatcher.md)
-      + Desenvolvimento {#developing}
+         + [Component &amp; GraphQL Clear Cache](/help/commerce-cloud/configuring/clear-cache.md)
+      + Desenvolver {#developing}
          + [Desenvolver com o SDK do AEM Cloud Service](/help/commerce-cloud/develop.md)
          + [Alterar estilo de componentes da CIF](/help/commerce-cloud/customizing/style-cif-component.md)
          + [Personalizar componentes da CIF](/help/commerce-cloud/customizing/customize-cif-components.md)
          + [Usar seletores de catálogo da CIF](/help/commerce-cloud/customizing/use-cif-pickers.md)
          + [Atributos personalizados para o Carrossel de produtos do CIF](/help/commerce-cloud/customizing/product-carousel.md)
+         + [Metadados JSON-LD](/help/commerce-cloud/customizing/json-ld.md)
    + [PWA Studio do Adobe Commerce](/help/commerce-cloud/pwa-studio/getting-started.md)
    + [Migração](/help/commerce-cloud/migration.md)
    + [Perguntas frequentes](/help/commerce-cloud/faq.md)
@@ -1105,14 +1109,14 @@ ht-degree: 62%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação  {#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1171,7 +1175,7 @@ ht-degree: 62%
          + [Noções básicas de criação para headless com AEM](/help/journey-headless/author/basics.md)
          + [Saiba mais sobre como usar referências em Fragmentos de conteúdo](/help/journey-headless/author/references.md)
          + [Saiba mais sobre como definir metadados e marcação para fragmentos de conteúdo](/help/journey-headless/author/metadata-tagging.md)
-+ IA gerativa {#generative-ai}
++ IA generativa {#generative-ai}
    + [IA gerativa no AEM as a Cloud Service](/help/generative-ai/generative-ai-in-aem.md)
    + [Gerar variações - Integrado nos editores do AEM](/help/generative-ai/generate-variations-integrated-editor.md)
    + [Gerar variações](/help/generative-ai/generate-variations.md)
@@ -1196,12 +1200,14 @@ ht-degree: 62%
          + [Configuração do projeto](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md)
          + [Ambiente de criação](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md)
       + [Gerenciamento de ambientes](/help/implementing/cloud-manager/manage-environments.md)
+      + [Ambientes De Teste Especializados (Adoção Antecipada)](/help/implementing/cloud-manager/specialized-test-environment.md)
       + Gerenciar o código {#managing-code}
          + [Manuseio da versão do projeto do Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
          + [Gerenciar repositórios no Cloud Manager](/help/implementing/cloud-manager/managing-code/managing-repositories.md)
          + [Adicionar um repositório da Adobe](/help/implementing/cloud-manager/managing-code/adobe-repositories.md)
          + [Adicionar um repositório privado](/help/implementing/cloud-manager/managing-code/private-repositories.md)
          + [Adicionar um repositório externo (usuários iniciais)](/help/implementing/cloud-manager/managing-code/external-repositories.md)
+         + [Gerenciar tokens de acesso de repositórios externos (Usuário inicial)](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
          + [Acessar repositórios](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
          + [Suporte ao submódulo Git](/help/implementing/cloud-manager/managing-code/git-submodules.md)
          + [Usar o Git com o Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md)
@@ -1232,7 +1238,7 @@ ht-degree: 62%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
@@ -1401,7 +1407,7 @@ ht-degree: 62%
       + [Configurar o RTE para criar sites acessíveis](/help/implementing/developing/extending/rte-accessible-content.md)
       + [Extensão da criação de páginas](/help/implementing/developing/extending/page-authoring.md)
       + [Extensão de Consoles](/help/implementing/developing/extending/consoles.md)
-      + [Extensão das propriedades da página](/help/implementing/developing/extending/page-properties.md)
+      + [Estender propriedades da página](/help/implementing/developing/extending/page-properties.md)
       + [Extensão do Editor de itens em massa](/help/implementing/developing/extending/bulk-editor.md)
       + [Extensão do MSM](/help/implementing/developing/extending/msm.md)
       + Internacionalização{#internationalization}

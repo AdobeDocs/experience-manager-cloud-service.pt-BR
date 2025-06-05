@@ -6,10 +6,10 @@ exl-id: 4aff5a84-134a-43fa-8de8-8d564f4edd16
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: fdf28905b16b4cc5c6947b8b216940b0c43b2a6a
+source-git-commit: 4ddca61044d7923db9fd08b96cb18cedfd71cf70
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 29%
+source-wordcount: '1493'
+ht-degree: 27%
 
 ---
 
@@ -59,6 +59,19 @@ Se um pipeline estiver em execução, clique em ![Informações - ícone de míd
 Você também pode clicar em ![Reticências - Mais ícone](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) ao lado do pipeline para realizar ações adicionais apropriadas ao estado do pipeline, como [editá-lo](#editing-pipelines) ou [cancelar a execução](#cancel).
 
 ![Ações de pipeline](/help/implementing/cloud-manager/assets/configure-pipeline/pipeline-actions.png)
+
+### Marcar favoritos do pipeline{#pipeline-favorites}
+
+Você pode marcar pipelines específicos como favoritos para que eles apareçam no topo da lista na página **Pipelines**. Essa capacidade facilita a localização e a execução de pipelines acessados com frequência.
+
+**Para marcar os favoritos do pipeline:**
+
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, selecione o programa.
+1. Na página **Visão geral do programa**, clique na guia ![Pipeline - ícone do fluxo de trabalho](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Pipelines**.
+1. Na página Pipelines, à esquerda de um nome e tipo de pipeline, clique em ![Ícone de estrutura de tópicos de estrelas para o pipeline desmarcado](https://spectrum.adobe.com/static/icons/workflow_18/Smock_StarOutline_18_N.svg) para adicioná-lo à lista de favoritos.
+Como alternativa, clique em ![Ícone de estrela para um pipeline favorito](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Star_18_N.svg) para remover o pipeline da sua lista de favoritos.
+
 
 ## Página Atividade {#activity}
 
@@ -209,3 +222,4 @@ Como alternativa, você pode cancelar um pipeline na página de detalhes do pipe
    ![Cancelar detalhes do pipeline](/help/implementing/cloud-manager/assets/cancel-pipeline-details.png)
 
 1. Clique em **Cancelar**.
+

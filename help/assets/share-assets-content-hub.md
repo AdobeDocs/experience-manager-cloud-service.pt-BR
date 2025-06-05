@@ -3,10 +3,10 @@ title: Compartilhar Assets em  [!DNL the Content Hub]
 description: Compartilhar Assets em  [!DNL the Content Hub]
 role: User
 exl-id: 5284d229-1596-40bf-aa5f-af4b6500ebdf
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 0e66b355d09e2fd2c4c8a5ddacc9b2d033b41bf2
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 1%
+source-wordcount: '486'
+ht-degree: 5%
 
 ---
 
@@ -32,19 +32,19 @@ ht-degree: 1%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -57,50 +57,47 @@ ht-degree: 1%
 >
 >[!BADGE PDF do Guia do Content Hub]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/content-hub.pdf"}
 
-O compartilhamento de ativos por meio de um link é uma maneira conveniente de disponibilizar os recursos para [!DNL the Content Hub] usuários. A funcionalidade permite que usuários autorizados acessem e baixem os ativos compartilhados com eles. Ao baixar ativos de um link compartilhado, o [!DNL the Content Hub] usa um serviço assíncrono que oferece download mais rápido e ininterrupto.
+Crie um link para ativos selecionados para compartilhá-los facilmente com outras pessoas. Como usuário autorizado do [!DNL Content Hub], selecione um ou mais ativos disponíveis no ambiente [!DNL Content Hub], gere um link e envie-o para outros usuários públicos ou privados.
 
 ## Pré-requisitos {#prerequisites}
 
-[Usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) podem executar as ações mencionadas neste artigo.
+[Os usuários do Content Hub](deploy-content-hub.md#onboard-content-hub-users) podem criar um link para os ativos selecionados e compartilhá-lo com outros usuários.
 
-## Compartilhar um único ativo {#share-a-single-asset}
+## Compartilhar ativos {#share-assets}
 
-Você pode compartilhar um único ativo executando as seguintes etapas:
+Para compartilhar um ou mais ativos com usuários privados ou públicos, execute as seguintes etapas:
+1. Navegue até a página inicial do [!DNL Content Hub], selecione um ou mais ativos e clique em ![Compartilhar](/help/assets/assets/share.svg) **[!UICONTROL Compartilhar]** para exibir um único ativo selecionado ou uma lista de vários ativos selecionados na caixa de diálogo **[!UICONTROL Compartilhar ativos]**.
+Você também pode selecionar e compartilhar ativos disponíveis em ![coleções](/help/assets/assets/Smock_Collection_18_N.svg) **[!UICONTROL Coleções]**.
+1. Exiba um ativo ou revise a lista de ativos disponíveis na caixa de diálogo **[!UICONTROL Compartilhar ativos]**. Clique em ![desmarcar](/help/assets/assets/Close.svg) ao lado de um ativo para desmarcá-lo da lista.
+1. Selecione um **[!UICONTROL período de expiração]** e clique em **[!UICONTROL Gerar link privado]** para gerar um link para compartilhar com usuários privados. Os usuários privados fazem logon no ambiente [!DNL Content Hub] para acessar a página de ativos compartilhados.
+   ![link privado e público](/help/assets/assets/private-and-public-link.png)
+Habilite o **[!UICONTROL Link Público]**, selecione um **[!UICONTROL período de expiração]** e clique em **[!UICONTROL Gerar Link Público]** para gerar um link a ser compartilhado com usuários públicos. Usuários públicos, como convidados, acessam a página de ativos compartilhados sem entrar no [!DNL Content Hub].
+   ![link privado e público](/help/assets/assets/public-and-private-link.png)
 
-1. Selecione um ativo e clique no ícone ![compartilhar](assets/share.svg) para compartilhar um ativo.
+   >[!NOTE]
+   > 
+   > [Habilite o compartilhamento de link público na página de configuração](/help/assets/configure-content-hub-ui-options.md#enable-public-link-sharing) para exibir a opção **[!UICONTROL Link público]** na caixa de diálogo **[!UICONTROL Compartilhar ativos]**.
 
-   ![Compartilhando um único ativo](assets/sharing-single-asset.png)
+## Compartilhar um ativo da página de visualização {#share-asset-from-preview-page}
 
-1. Use o campo **[!UICONTROL Expiration]** para especificar uma data de expiração para o link. Selecione uma das opções disponíveis, como 24 horas, 1 semana, 30 dias, 90 dias, 1 ano ou especifique uma data personalizada.
+Execute as seguintes etapas para compartilhar um ativo ao pré-visualizá-lo:
 
-1. Clique em **[!UICONTROL Copiar link de compartilhamento]**. Em seguida, você pode compartilhar o link copiado com o recipient.
-
-## Compartilhar vários ativos {#share-multiple-assets}
-
-O [!DNL The Content Hub] permite compartilhar vários ativos por meio de um link compartilhado. Execute as seguintes etapas:
-
-1. Selecione os ativos que você precisa compartilhar com o recipient autorizado. Você pode selecionar vários ativos um por um ou clicar em **[!UICONTROL Selecionar todos]** para selecionar todos os ativos disponíveis de uma só vez. A opção **[!UICONTROL Selecionar tudo]** é exibida somente quando você seleciona pelo menos um ativo.
-
-1. Clique no ícone ![compartilhar](assets/share.svg).
-
-   ![Compartilhamento de vários ativos](assets/sharing-multiple-assets.png)
-
-1. Na seção de visualização, também é possível excluir ativos de acordo com suas necessidades. Use o campo **[!UICONTROL Expiration]** para especificar uma data de expiração para o link. Selecione uma das opções disponíveis, como 24 horas, 1 semana, 30 dias, 90 dias, 1 ano ou especifique uma data personalizada.
-
-1. Clique em **[!UICONTROL Copiar link de compartilhamento]**. Em seguida, você pode compartilhar o link copiado com o recipient.
-
-## Visualizar e compartilhar ativos {#preview-assets}
-
-Você pode visualizar como é a aparência de um ativo digital que você compartilhará antes de compartilhá-lo com um recipient de link. Clique no ativo que precisa visualizar. O [!DNL Content Hub] exibe a [exibição detalhada do ativo](asset-properties-content-hub.md).
-
-Clique no ícone ![compartilhar](assets/share.svg) para compartilhar um ativo. Use o campo **[!UICONTROL Expiration]** para especificar uma data de expiração para o link. Selecione uma das opções disponíveis, como 24 horas, 1 semana, 30 dias, 90 dias, 1 ano ou especifique uma data personalizada. Clique em **[!UICONTROL Copiar link de compartilhamento]**. Em seguida, você pode compartilhar o link copiado com o recipient.
-
-![Visualizar ativos no Content Hub](assets/preview-assets-content-hub.png)
+1. Navegue até a página inicial do [!DNL Content Hub] e clique na miniatura do ativo para visualizar o ativo e exibir as opções de menu no painel direito da caixa de diálogo.
+1. Selecione ![compartilhar](/help/assets/assets/share.svg) para exibir o painel **[!UICONTROL Compartilhar]**.
+   ![compartilhar ativo ao visualizá-lo](/help/assets/assets/share-assets-from-share-panel.png)
+1. Siga a etapa 3 na seção [compartilhar ativos](#share-assets) para gerar e compartilhar o link de ativos (Privado ou público) neste painel **[!UICONTROL Compartilhar]**.
 
 ## Acessar os ativos compartilhados {#access-shared-assets}
 
-Após compartilhar o link para os ativos, os recipients autorizados podem clicar no link para visualizar ou baixar os ativos compartilhados em um navegador da Web.
+Acesse a página de ativos compartilhados por meio do link e faça o seguinte:
 
-Clique no link compartilhado e no ícone de download disponível no cartão de ativos para baixar um ativo.  Você também pode selecionar vários ativos e clicar em **[!UICONTROL Baixar]**. <!--You can either download original assets or Original+Renditions of an asset.--> O [!DNL The Content Hub] baixa cada ativo um por um para o sistema de arquivos local.
+* Selecione um ou mais ativos e clique em ![Baixar](/help/assets/assets/download-icon.svg) **[!UICONTROL Baixar]** para selecionar as representações **[!UICONTROL Original]**, **[!UICONTROL Estático]** ou ambas das opções de download disponíveis.
+  ![](/help/assets/assets/download-shared-assets.png)
+* Clique na miniatura do ativo para ver os metadados do ativo.
+* Na página de ativos compartilhados ([acessada por meio de um link privado](#share-assets)), clique em uma miniatura de ativo e selecione ![baixar](/help/assets/assets/download-icon.svg) para selecionar e exibir as representações dinâmicas disponíveis do ativo no painel **[!UICONTROL Baixar]** antes de selecioná-las e baixá-las.
+  ![](/help/assets/assets/download-renditions-shared-assets-page.png)
 
-![Acessar Links Compartilhados](assets/content-hub-access-shared-links.png)
+
+
+
+
