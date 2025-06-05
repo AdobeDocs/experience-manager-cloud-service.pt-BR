@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->>O recurso descrito neste artigo só está disponível por meio do programa de adoção antecipada. Para se inscrever como pioneiro, consulte [Ambiente de teste especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
+>&#x200B;>O recurso descrito neste artigo só está disponível por meio do programa de adoção antecipada. Para se inscrever como pioneiro, consulte [Ambiente de teste especializado](/help/implementing/cloud-manager/release-notes/current.md#specialized-test-environment).
 
 O ambiente de teste especializado, ou DevXL, é um novo tipo de ambiente do Cloud Manager que você pode criar. Ele foi projetado para atender a casos de uso avançados, como testes de aceitação de usuários (UAT) e validação de desempenho. Diferentemente dos ambientes tradicionais de desenvolvimento, desenvolvimento rápido ou preparo, os ambientes DevXL operam fora do pipeline de implantação de produção. Dessa forma, eles oferecem maior flexibilidade e, ao mesmo tempo, mantêm um isolamento rigoroso para impedir a interferência nos workflows de produção.
 
