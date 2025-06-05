@@ -2,10 +2,10 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: c27c78cbe21c9a02c4075ca7eade9853082fe211
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 11%
+source-wordcount: '1987'
+ht-degree: 10%
 
 ---
 
@@ -31,19 +31,19 @@ ht-degree: 11%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -213,25 +213,37 @@ Os administradores podem definir os campos de metadados que são pesquisados qua
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações para que a nova propriedade de metadados seja exibida na lista de campos de metadados.
 
 Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade de metadados disponível, para editar a propriedade ou clicar no ícone excluir para excluir qualquer propriedade existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
-
 ![Pesquisa de Interface do Usuário de Configuração no Content Hub](assets/configuration-ui-metadata-search.png)
-
 
 ### Identidade visual {#configure-branding-content-hub}
 
-Os administradores também podem personalizar o título e o texto do corpo no banner do portal do Content Hub, de acordo com seus requisitos de marca. Para desabilitá-la, siga estas etapas:
+Como administrador, personalize o portal do [!DNL Content Hub] para atender aos requisitos de marca. Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, use as seções **[!UICONTROL Banner]**, **[!UICONTROL Cores]** e **[!UICONTROL Imagem do banner]** para executar as seguintes personalizações:
 
-1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Identidade Visual]**.
+1. [Alterar a imagem do banner da seção [!UICONTROL Imagem do banner]](#Change-the-banner-image)
+1. [Atualize o título e o texto do corpo no banner e altere a cor do texto da seção [!UICONTROL Banner]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
+1. [Altere as cores primária e secundária da seção [!UICONTROL Cores] para aplicar um esquema de cores que se alinhe ao tema da sua marca](#Change-the-primary-and-secondary-color)
 
-1. Especifique o texto no **[!UICONTROL Texto do título no banner]** e **[!UICONTROL Texto do corpo nos campos do banner]**.
+Selecione a opção **[!UICONTROL Redefinir Padrões]** para reverter suas alterações e restaurar o tema padrão.
 
-1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações.
+#### Alterar a imagem do banner{#Change-the-banner-image}
 
-![Marca da interface do usuário de configuração no Content Hub](assets/configuration-ui-branding.png)
+Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, execute as seguintes etapas para alterar a imagem do banner da sua implantação do [!DNL Content Hub]:
 
-As atualizações de marca ativadas na interface do usuário de configuração são exibidas no banner do portal do Content Hub:
+1. Clique em ![selecionar imagem](/help/assets/assets/Browse.svg) **[!UICONTROL Selecionar da galeria]** para selecionar uma imagem de banner usando a caixa de diálogo do seletor de ativos. O seletor de ativos exibe somente imagens aprovadas.
+1. Selecione a imagem, clique em **[!UICONTROL Selecionar]** e em **[!UICONTROL Salvar]** para exibi-la como a imagem de banner da sua implantação do [!DNL Content Hub].
 
-![Marca da interface do usuário de configuração no Content Hub](assets/configuration-ui-branding-updates.png)
+#### Adicionar título e texto de corpo ao banner e alterar a cor do texto{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
+
+Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, use os respectivos campos na seção **[!UICONTROL Banner]** para adicionar títulos e textos de corpo ao seu banner.
+Clique na caixa quadrada ao lado da **[!UICONTROL Cor do texto do banner]** para selecionar uma cor de texto no seletor de cores para o texto do banner ou especifique o código hexadecimal da cor no campo ao lado da caixa quadrada do seletor de cores.
+
+#### Alterar as cores primária e secundária{#Change-the-primary-and-secondary-color}
+
+Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, use a seção **[!UICONTROL Cores]** para definir as cores primária e secundária, selecionando-as com o seletor de cores ou definindo o código hexadecimal da cor. Essas cores definem as cores do plano de fundo, do texto e dos ícones dos elementos da interface do usuário para alinhar a interface do usuário do [!DNL Content Hub] com o tema da sua marca.
+
+**[!UICONTROL Cor primária]:** O esquema de cores primário se aplica a ações de seleção, elementos interativos, como caixas de seleção, barras de pesquisa e opções de alternância entre [!DNL Content Hub], incluindo a página inicial [!DNL Content Hub] e a página [!UICONTROL Configuração]. Também se aplica às opções de ação disponíveis nas interfaces [!DNL Content Hub] principais, como as opções disponíveis nas páginas **[!UICONTROL Todas as Assets]** e **[!UICONTROL Coleções]**.
+
+**[!UICONTROL Cor secundária]:** Na página inicial [!DNL Content Hub], o esquema de cor secundário aplica-se às opções de interface do usuário e aos campos de entrada disponíveis nas caixas de diálogo. Ela se aplica a todas as opções de menu de configuração disponíveis na página [!UICONTROL Configuração], exceto ações de seleção, caixas de seleção, barras de pesquisa e opções de alternância.
 
 ### Ativos expirados{#expired-assets-content-hub}
 
@@ -261,7 +273,7 @@ Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também
 
 ### Representações {#renditions-content-hub}
 
-As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para desabilitá-la, siga estas etapas:
 
