@@ -4,9 +4,9 @@ description: Saiba como ativar e verificar o recurso de cache limpo no AEM CIF.
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: f6d3ffd80e84f7c1d56fe24a395c9998ec209908
+source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '881'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 2%
 # Component &amp; GraphQL Clear Cache {#clear-cache}
 
 Este documento fornece um guia abrangente sobre como ativar e verificar o recurso de cache limpo no AEM CIF.
+
+>[!NOTE]
+>
+> Este recurso é experimental.
 
 ## Ativação do recurso Limpar cache na configuração do CIF {#enable-clear-cache}
 
@@ -27,10 +31,9 @@ Por padrão, o recurso de cache limpo é desativado na configuração do CIF. Pa
 * Habilite o ouvinte a limpar o cache de cada instância do AEM (publicar e criar) adicionando a configuração `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` no seu projeto, como mostrado [aqui](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * A configuração deve ser ativada para as instâncias do autor e de publicação.
    * Habilitar o cache do Dispatcher (Opcional): é possível habilitar a configuração limpar cache do dispatcher definindo a propriedade `enableDispatcherCacheInvalidation` como true na configuração acima. Isso fornece funcionalidade para limpar o cache do dispatcher.
-
-  >[!NOTE]
-  >
-  > Isso só funciona com instâncias de publicação.
+     >[!NOTE]
+     >
+     > Isso só funciona com instâncias de publicação.
 
    * Além disso, certifique-se de fornecer o padrão correspondente que se adapta às necessidades de produto, categoria e página do CMS ao arquivo de configuração acima para removê-lo do cache do dispatcher.
 
@@ -60,7 +63,6 @@ Agora, para verificar se os caches estão sendo limpos corretamente:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
 Se tudo correr bem, as novas mudanças serão refletidas em todas as instâncias. Se as alterações não forem refletidas para a instância de publicação, verifique na janela privada as páginas PLP e PDP correspondentes.
 
 >[!NOTE]
@@ -98,7 +100,6 @@ Esta tabela mostra a propriedade obrigatória que precisa ser passada em cada ch
 | Propriedade | Valor | Tipo (Matriz/String/Booleano) | Isso limpará o cache do dispatcher? | Comentar |
 |------------------------------|-------------------|---|---|---|
 | `storePath` | Valor correspondente do caminho do site de onde o cache precisa ser removido (Exemplo: `/content/venia/us/en` como referência com o projeto venia). | String | Sim | Isto precisa ser fornecido com a combinação de `invalidateType.` |
-
 
 ### Solicitação de API de exemplo
 
