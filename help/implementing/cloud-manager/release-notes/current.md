@@ -4,9 +4,9 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.6.0 no Adobe E
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 58514d9f55eaaa35801380648831ad6d13cf1529
+source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '954'
 ht-degree: 10%
 
 ---
@@ -59,15 +59,6 @@ Participe do Programa de primeiros usuários da Cloud Manager para obter acesso 
 As seguintes oportunidades de adoção antecipada estão disponíveis no momento:
 
 
-### Gerenciar tokens de acesso{#manage-access-tokens}
-
-Use **Gerenciar tokens de acesso** no Cloud Manager para exibir, renomear e excluir tokens de acesso associados a repositórios externos do Bring Your Own Git, como GitHub Enterprise, GitLab, Bitbucket e Azure DevOps.
-
-Consulte [Gerenciar tokens de acesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md)
-
-Se você estiver interessado em testar esse novo recurso e compartilhar seus comentários, envie um email para do seu endereço de email associado à sua Adobe ID.
-
-
 ### Ambiente de testes especializados {#specialized-test-environment}
 
 O Cloud Manager agora oferece suporte à adição de um novo tipo de ambiente chamado **Ambiente de teste especializado**. O ambiente foi projetado para ajudar as equipes a validar recursos em condições próximas da produção antes de entrar em funcionamento. Este tipo de ambiente é diferente dos ambientes *Produção + Preparo*, *Desenvolvimento* ou *Desenvolvimento rápido* e oferece um espaço focalizado para execução de cenários de validação avançados.
@@ -79,7 +70,7 @@ Consulte [Adicionar um ambiente de teste especializado](/help/implementing/cloud
 Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para [grp-earlyadopter_cs_advtestenvironment@adobe.com](mailto:grp-earlyadopter_cs_advtestenvironment@adobe.com) com seu endereço de email associado à sua Adobe ID.
 
 
-### Traga seu próprio Git - agora com suporte para Azure DevOps {#gitlab-bitbucket-azure-vsts}
+### Traga seu próprio Git (BYOG) - agora com suporte para Azure DevOps {#gitlab-bitbucket-azure-vsts}
 
 <!-- BOTH CS & AMS -->
 
@@ -97,7 +88,7 @@ Consulte [Adicionar repositórios externos no Cloud Manager](/help/implementing
 Se tiver interesse em testar esse novo recurso e compartilhar o seu feedback, envie um email para [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) do seu endereço de email associado à sua Adobe ID. Inclua qual plataforma Git deseja usar e se você está em uma estrutura de repositório privado/público ou empresarial.
 
 
-#### Perguntas frequentes sobre o Bring Your Own Git
+**Perguntas frequentes sobre o BYOG**
 
 | Pergunta | Resposta |
 |---|---|
@@ -107,11 +98,20 @@ Se tiver interesse em testar esse novo recurso e compartilhar o seu feedback, en
 | *Todos os URLs de repositório do GitLab funcionam? A URL de repositório em uso segue o formato `https://gitlab_dedicated_url.com/path/repo-name.git`, que difere do exemplo na documentação.* | Sim, qualquer repositório do GitLab com suporte para API V3 ou V4 tem suporte, incluindo URLs do GitLab auto-hospedados como o descrito em [Adicionar repositórios externos no Cloud Manager](/help/implementing/cloud-manager/managing-code/external-repositories.md) (`https://git-vendor-name.com/org-name/repo-name.git`). |
 
 
+#### Gerenciar tokens de acesso{#manage-access-tokens}
+
+Use **Gerenciar Tokens de Acesso** no Cloud Manager para exibir, renomear e excluir tokens de acesso associados a repositórios BYOG externos, como GitHub Enterprise, GitLab, Bitbucket e Azure DevOps.
+
+Consulte [Gerenciar Tokens de Acesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
+
+Se você estiver interessado em testar este novo recurso e compartilhar seus comentários, envie um email para [Grp-CloudManager_BYOG@adobe.com](mailto:grp-cloudmanager_byog@adobe.com) com seu endereço de email associado à sua Adobe ID.
+
+
 ### Adicionar pipeline de configuração do Edge Delivery {#add-eds-pipeline}
 
 Os Pipelines de configuração agora são compatíveis com sites criados com o Edge Delivery Services, expandindo esse recurso além dos ambientes do Cloud Service. Você pode usar **Pipelines de configuração** para gerenciar configurações como regras de filtragem de tráfego e configurações do Firewall do Aplicativo Web (WAF), quando aplicável. Consulte [Configurações com Suporte](/help/operations/config-pipeline.md#configurations).
 
-![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**&#x200B;cartão.*
+![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**cartão.*
 
 ![Caixa de diálogo Adicionar pipeline do Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Caixa de diálogo Adicionar pipeline do Edge Delivery.*
 
