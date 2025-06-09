@@ -4,10 +4,10 @@ description: Saiba mais sobre o recurso de Extensibilidade da Interface do Usuá
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 969860593670ce490cc688a92c349addb952b3b4
+source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 0%
+source-wordcount: '633'
+ht-degree: 3%
 
 ---
 
@@ -28,21 +28,21 @@ ht-degree: 0%
             <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
         </td>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -56,7 +56,7 @@ Você pode adicionar suas extensões no nível do **Ativo**, **Pasta** e **Cole�
 > * Para obter acesso à extensibilidade da interface do usuário do [!DNL Assets view], [crie e envie um [!DNL Adobe] caso de Suporte ao Cliente](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 > * Você pode fornecer comentários sobre a documentação, expandindo as **[!UICONTROL Opções de Comentários Detalhados]** e clicando em **[!UICONTROL Relatar um problema]**.
 
-## <a id="1"></a> Acessar o Modo de Exibição do Assets{#add-UI-Extensibility-in-AEM-Assets-View}
+## <a id="1"></a> Acessar a Exibição do Assets{#add-UI-Extensibility-in-AEM-Assets-View}
 
 Siga as etapas mencionadas na imagem abaixo para acessar o [!DNL Assets View]:
 ![access-assets-view-ui](/help/assets/assets/access-assets-view.jpg)
@@ -85,3 +85,11 @@ Atenda aos seguintes requisitos para começar a adicionar o componente de extens
 1. Configure seu ambiente local e crie sua primeira extensão de interface do usuário para ter uma experiência direta do processo de desenvolvimento de extensões de interface do usuário no [!DNL Assets View]. Consulte [Exibir Desenvolvimento de Extensão passo a passo do AEM Assets](https://developer.adobe.com/uix/docs/services/aem-assets-view/extension-development/) para obter mais detalhes.
 1. Configure seu aplicativo usando a CLI da AIO para gerar a estrutura básica de extensão e o código necessário. Consulte [geração de código para [!DNL AEM Assets View]](https://developer.adobe.com/uix/docs/services/aem-assets-view/code-generation/) para obter informações detalhadas.
 1. Teste suas extensões localmente para garantir que elas funcionem conforme o esperado antes da implantação. Execute sua extensão em um ambiente totalmente isolado ou com isolamento parcial e conecte sua extensão à produção [!DNL AEM Assets View] para teste. Consulte [Solução de problemas - [!DNL AEM Assets View] extensibilidade](https://developer.adobe.com/uix/docs/services/aem-assets-view/debug/) para obter informações detalhadas.
+
+## Personalizar ações rápidas e a barra de ações na exibição do Assets {#customize-quick-actions-and-actions-bar}
+
+É possível personalizar as ações exibidas ao selecionar um ou mais ativos (Barra de ações) na exibição do Assets. A visualização Assets também permite personalizar as ações exibidas ao clicar em Mais opções (...) no cartão de ativos. Para obter mais informações, consulte [Exibição de Navegação](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/browse-view/).
+
+## Abrir caixas de diálogo personalizadas na exibição do Assets {#open-custom-dialogs-assets-view}
+
+A visualização Assets também permite abrir caixas de diálogo personalizadas com texto de sua escolha. Também é possível adicionar links ao texto. Para obter mais informações, consulte [API modal](https://developer.adobe.com/uix/docs/services/aem-assets-view/api/commons/#modal-api).
