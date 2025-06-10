@@ -4,10 +4,10 @@ description: Saiba como usar o canal de pré-lançamento para visualizar os recu
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 94%
+source-wordcount: '889'
+ht-degree: 55%
 
 ---
 
@@ -18,78 +18,43 @@ Saiba como usar o canal de pré-lançamento para visualizar os recursos futuros 
 
 ## Introdução {#introduction}
 
-A Adobe Experience Manager as a Cloud Service fornece novos recursos regularmente, de acordo com o [roteiro de versões do Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service).
+O Adobe Experience Manager as a Cloud Service fornece novos recursos regularmente. A lista de recursos novos e futuros para uma determinada versão de recurso está publicada nas [notas de versão.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
-Para se familiarizar com os recursos que estão programados para entrar em operação na versão seguinte, você pode se inscrever no canal de pré-lançamento, que pode ser acessado pela configuração de seus ambientes de desenvolvimento ou de qualquer ambiente de sandbox. Você pode visualizar as alterações acessíveis por meio da interface do AEM e desenvolver o código com base nas novas APIs de pré-lançamento.
+Os recursos futuros geralmente são disponibilizados de uma das duas formas a seguir:
 
-A lista de recursos de pré-lançamento de um determinado recurso é publicada nas [notas de versão](/help/release-notes/release-notes-cloud/release-notes-current.md).
+* Como parte de um programa de primeiros usuários
+* Como parte do canal de pré-lançamento
 
-## Versões do AEM as a Cloud Service {#releases}
+Este documento descreve como ativar o canal de pré-lançamento. O canal de pré-lançamento fornece acesso aos recursos anteriores que serão introduzidos em uma versão futura do AEM. Isso dá a você a chance de validar novos recursos e planejar sua adoção antes da versão futura. Consulte o documento [Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md) para obter detalhes sobre o cronograma de lançamento do AEM.
 
-O AEM as a Cloud Service tem dois tipos de versões.
+## Ative o canal de pré-lançamento para acessar e tentar os recursos futuros {#enable-prerelease}
 
-* Os **lançamentos de recursos** adicionam recursos e funcionalidades ao AEM as a Cloud Service após a ativação
-* **Versões de manutenção** adicionam atualizações de segurança, aprimoramentos de desempenho e correções de erros, e são aplicadas com frequência.
+O canal de pré-lançamento pode ser ativado em qualquer ambiente de desenvolvimento ou sandbox. O canal de pré-lançamento não pode ser habilitado em ambientes de preparo ou produção.
 
-Esse padrão garante uma atualização contínua de versões sem interrupção do serviço.
-
-O canal de pré-lançamento permite visualizar os recursos programados para a próxima versão de recursos, a fim de avaliar a funcionalidade futura e planejar sua possível implementação em projetos. Ele permite que você planeje com antecedência a próxima versão do recurso.
-
-Por exemplo, se for o mês de maio e você estiver inscrito no canal de pré-lançamento, será possível avaliar os recursos da próxima versão de junho.
-
-![Gráfico de cronograma de pré-lançamento](assets/prerelease-cadence.png)
-
-O pré-lançamento oferece uma visão antecipada do próximo mês de lançamento de recursos do AEMaaCS, permitindo avaliar o impacto dos novos recursos em seus projetos e personalizações e planejar a implementação de tais recursos, testes e treinamento de usuários.
-
-Aproveitar de forma eficaz o canal de pré-lançamento é um processo de quatro etapas.
-
-1. [Marcar o seu calendário](#mark-calendars)
-1. [Revisar as notas de versão](#release-notes)
-1. [Acessar e experimentar os novos recursos](#new-features)
-1. [Treinar seus usuários](#train-users)
-
-## Marcar o seu calendário {#mark-calendars}
-
-As versões de recursos estão agendadas com bastante antecedência, e as datas de ativação das versões de recursos estão publicadas no [Adobe Experience League](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=pt-BR#aem-as-cloud-service).
-
-Anote as datas de lançamento para que você possa reservar um tempo para revisar e testar os recursos futuros.
-
-## Revisar as notas de versão {#release-notes}
-
-Depois de marcar as datas de lançamento no seu calendário, verifique o site da [Adobe Experience League](/help/release-notes/release-notes-cloud/release-notes-current.md) no dia do lançamento para obter as notas de versão mais recentes.
-
-Cada versão é acompanhada de notas de versão que documentam não apenas as novidades dessa versão, mas também os recursos disponíveis na avaliação de pré-lançamento. Conheça as novidades com antecedência e planeje a adoção dos recursos mais recentes do AEMaaCS.
-
-Você também pode [verificar os problemas conhecidos](/help/release-notes/maintenance/latest.md) que são publicados em todas as versões para estar ciente de quaisquer problemas técnicos que possam representar um desafio para a avaliação ou possível adoção de novos recursos.
-
-## Ative o canal de pré-lançamento para acessar e experimentar novos recursos {#new-features}
-
-O canal de pré-lançamento pode ser ativado em qualquer ambiente de desenvolvimento ou sandbox. O pré-lançamento não pode ser habilitado em ambientes de preparo ou produção.
-
-Os recursos de pré-lançamento podem ser vistos de diferentes maneiras:
+O canal de pré-lançamento pode ser acessado de duas maneiras diferentes:
 
 * [Ambientes de nuvem](#cloud-environments)
 * [SDK local](#local-sdk)
 
 ### Ambientes em nuvem {#cloud-environments}
 
-Para atualizar um ambiente de nuvem para usar o pré-lançamento, você deve adicionar uma nova variável de ambiente. Você pode fazer isso usando a interface do Cloud Manager ou através da CLI.
+Para atualizar um ambiente de nuvem para usar o canal de pré-lançamento, é necessário adicionar uma nova variável de ambiente. Você pode fazer isso usando a interface do Cloud Manager ou através da CLI.
 
 #### Adicionar variável de ambiente usando a interface {#add-with-ui}
 
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. Navegue até o programa em que deseja ativar o pré-lançamento.
+1. Navegue até o programa em que deseja ativar o canal de pré-lançamento.
 
-1. Selecione o ambiente em que deseja ativar o pré-lançamento e acesse suas configurações em **Programa** > **Ambiente** > **Configuração do ambiente**.
+1. Selecione o ambiente em que deseja habilitar o canal de pré-lançamento e acessar sua configuração via **Programa** > **Ambiente** > **Configuração do Ambiente**.
 
-1. Adicionar uma nova [variável de ambiente](../implementing/cloud-manager/environment-variables.md)
+1. Adicionar uma nova [variável de ambiente](/help/implementing/cloud-manager/environment-variables.md)
 
    | Nome | Valor | Serviço aplicado | Tipo |
    |------|-------|-----------------|------|
    | `AEM_RELEASE_CHANNEL` | `prerelease` | Todos | Variável |
 
-1. Salve as alterações e o ambiente será atualizado com as opções do recurso de pré-lançamento ativadas.
+1. Salve as alterações e o ambiente será atualizado com o canal de pré-lançamento ativado.
 
    ![Nova variável de ambiente](assets/env-configuration-prerelease.png)
 
@@ -116,15 +81,15 @@ Você também pode usar a API e a CLI do Cloud Manager para atualizar as variáv
   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
   ```
 
-A variável pode ser excluída ou retornada a um valor diferente se você desejar que o ambiente seja restaurado ao comportamento do canal padrão (que não seja o de pré-lançamento)
+A variável pode ser excluída se você quiser restaurar o ambiente para o comportamento padrão (canal de não pré-lançamento).
 
 ### SDK local {#local-sdk}
 
-Você pode ver novos recursos no console Sites no Quickstart do SDK local e programar usando as novas APIs de pré-lançamento, configurando o seu projeto Maven para fazer referência à `API Jar` de pré-lançamento localizada na Maven Central. Você também pode ver esses recursos de pré-lançamento no seu ambiente de desenvolvimento local, iniciando o Quickstart do SDK tradicional no modo de pré-lançamento.
+Você pode acessar recursos futuros no canal de pré-lançamento em sua SDK Quickstart local e codificar em relação às novas APIs, configurando seu projeto Maven para fazer referência ao canal de pré-lançamento `API Jar`, localizado na Maven Central. Você também pode ver o acesso ao canal de pré-lançamento em seu ambiente de desenvolvimento local, iniciando o Quickstart SDK normal no modo de pré-lançamento.
 
 #### Iniciar o Quickstart do SDK no modo de pré-lançamento {#prerelease-mode}
 
-1. Baixe o SDK no portal de distribuição de softwares e instale como descrito em [Acesso ao SDK do AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+1. Baixe o SDK da distribuição e instalação do software conforme descrito em [Acessando o AEM as a Cloud Service SDK.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 1. Ao iniciar o Quickstart do SDK, inclua o argumento `-r prerelease`.
 
 O valor é aderente, assim, ele só pode ser selecionado na primeira inicialização. Reinstale o SDK para alterar a opção de linha de comando.
@@ -181,7 +146,7 @@ Javadocs são publicados no Maven Central.
 
 1. Implante no servidor local.
 
-1. Se ele funcionar conforme esperado localmente, confirme o código em uma ramificação de desenvolvimento e use um pipeline de não produção do Cloud Manager para implantar em um ambiente que assine o canal de pré-lançamento.
+1. Se ele funcionar conforme esperado localmente, confirme o código em uma ramificação de desenvolvimento e use um pipeline de não produção do Cloud Manager para implantar em um ambiente [que tenha o canal de pré-lançamento habilitado.](#cloud-environments)
 
 >[!CAUTION]
 > 
@@ -189,22 +154,12 @@ Javadocs são publicados no Maven Central.
 
 O [plug-in Maven Build Analyzer do SDK do AEM CS v1.0 e superior](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=pt-BR#developing) detectará se a API de pré-lançamento é usada em um projeto inspecionando as dependências. Se o analisador a encontrar, ele usará a API de pré-lançamento do SDK para analisar o projeto.
 
-## Treinar seus usuários {#train-users}
-
-Após testar os novos recursos no canal de pré-lançamento e decidir usá-los em seus projetos, é necessário treinar os usuários.
-
-A Adobe Experience League oferece muitos recursos de aprendizado para o AEMaaCS.
-
-* [A documentação do AEMaaCS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=pt-BR)
-* [Tutoriais](https://experienceleague.adobe.com/docs/experience-manager-learn/aem-tutorials/overview.html?lang=pt-BR)
-* [O vídeo de visão geral da versão mensal](/help/release-notes/release-notes-cloud/release-notes-current.md#release-video) nas notas de versão
-
 ## Considerações {#considerations}
 
 Há alguns detalhes que devem ser observados ao usar o canal de pré-lançamento.
 
 * O canal de pré-lançamento não contém necessariamente todos os novos recursos a serem implementados na próxima versão.
 * Os recursos no pré-lançamento são submetidos a uma garantia de qualidade rigorosa e se destinam a ser completos em recursos, e não de qualidade beta. Caso detecte problemas, reporte-os, como faria se suspeitasse de erros em recursos em uma versão comum do AEM.
-* Para determinar se um ambiente está configurado para o canal de pré-lançamento, vá até a página **Sobre** do console do AEM e verifique se o número da versão do AEM inclui um sufixo de *pré-lançamento*, como ```Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE```.
+* Para determinar se um ambiente está configurado para o canal de pré-lançamento, vá até a página **Sobre** do console do AEM e verifique se o número de versão do AEM inclui um sufixo `PRERELEASE`, como `Adobe Experience Manager 2021.4.5226.20210427T070726Z-210429-PRERELEASE`.
 
 ![Sobre](/help/release-notes/assets/about.png)
