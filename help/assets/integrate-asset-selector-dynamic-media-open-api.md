@@ -3,9 +3,9 @@ title: Integrar o Seletor de ativos à API aberta do Dynamic Media
 description: Integrar o seletor de ativos a vários aplicativos da Adobe, que não sejam da Adobe e de terceiros.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 48a456039986abf07617d0828fbf95bf7661f6d6
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '949'
 ht-degree: 3%
 
 ---
@@ -206,6 +206,10 @@ Após a integração com o Seletor de ativos de microfront-end do Adobe, é poss
 * **F**: [Classificando em ordem crescente ou decrescente](#sorting)
 * **G**: Cancelar Seleção
 * **H**: selecionar um ou vários ativos
+
+>[!NOTE]
+>
+>As pastas são compatíveis somente ao se conectar ao repositório do autor, e não ao Dynamic Media com o repositório OpenAPI.
 
 >[!MORELIKETHIS]
 >
