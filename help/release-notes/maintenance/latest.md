@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 6884e33a922a7147e3a6a3f3ddb3dd3b2da85fbf
+source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 20%
+source-wordcount: '380'
+ht-degree: 29%
 
 ---
 
@@ -16,82 +16,45 @@ ht-degree: 20%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 21005 {#21005}
+## Versão 21193 {#21193}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21005, lançada publicamente em quarta-feira, 27 de maio de 2025. A versão de manutenção anterior era 20626.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21193, lançada para o público em quarta-feira, 10 de junho de 2025. A versão de manutenção anterior era 21005.
 
-A ativação de recursos do 2025.5.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.6.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-21005}
+### Aprimoramentos {#enhancements-21193}
 
-* GRANITE-58927: melhorias no botão Pesquisa semântica.
-* GRANITE-58800: Atualização das coleções do Apache Commons para a versão 4.5.0.
-* GRANITE-58866: atualização do Oak para 1.80.0.
-* SKYOPS-106509: Compatibilidade de GSON aprimorada por meio do acesso reflexivo no Java 21.
-* SKYOPS-107761: Atualização do Exportador Sling Models Jackson para 1.1.6.
-* SKYOPS-107813: Atualização para Sling ResourceResolver 1.12.8.
+* ASSETS-51245: desempenho aprimorado para listagens de pastas grandes na interface para toque.
+* ASSETS-51686: melhorias no trabalho de operações em massa, incluindo cancelamento de trabalho mais fácil, registro aprimorado, downloads de auditoria para resultados grandes.
+* CQ-4360131: resposta de erro aprimorada para endpoints OpenAPI, permitindo que os clientes da API recebam informações de erro estruturadas corretas.
 
-### Problemas corrigidos {#fixed-issues-21005}
+### Problemas corrigidos {#fixed-issues-21193}
 
-* CNTBF-443: propriedade `EVENT_JOB_TOPIC` SearchSlingJob corrigida.
-* GRANITE-57853: corrigidos problemas de alinhamento suspenso na interface do usuário.
-* GRANITE-58107: correção de erros 404 na publicação ao desativar a afinidade de pod baseada em usuário no manipulador OAuth.
-* GRANITE-58276, SLING-12755: correção dos ciclos de dependência OSGi que poderiam impedir que a fábrica do mecanismo de script HTL fosse iniciada corretamente, causando erros intermitentes de renderização do lado do servidor.
-* SKYOPS-105151: NPE corrigido ao acessar a lista de pacotes.
-* SKYOPS-83910, SKYOPS-82371 - Correção de problemas de simultaneidade de compilação JSP.
+* ASSETS-41007: os ativos excluídos podem permanecer visíveis no Content Hub.
+* ASSETS-50994: AemRequestEventFilter causando contenção excessiva de thread do Jetty.
+* ASSETS-50155: eventos de alteração de metadados duplicados acionados.
+* ASSETS-50716: A classificação por título na exibição de lista do Assets não funciona como esperado.
+* ASSETS-50820: certifique-se de que solicitações inválidas da API de relações de ativos sejam rejeitadas corretamente com um erro 400.
+* ASSETS-50562: a API de upload de ativos deve criar a versão por comportamento padrão em conflito de nomes.
+* ASSETS-50992: O endpoint da API do Assets initiateUpload.json deve retornar o tipo de conteúdo de &quot;application/json&quot;.
+* ASSETS-51322: Remoção e expiração automáticas de barricadas assíncronas que permanecem persistentes indefinidamente após uma falha de trabalho.
+* ASSETS-51809: o editor de CSV não mostrou alterações salvas recentemente devido ao armazenamento em cache do navegador.
+* SITES-31678: Fragmentos de experiência (XF) com referências sensíveis ao contexto não resolveram a raiz de idioma correta na API de publicação XF.
 
-#### Guias do AEM {#guides}
 
-* GUIDES-26919 : Ao abrir um mapa DITA com o Unified Shell ativado, o editor é atualizado intermitentemente.
-* GUIDES-26282: Falha ao fechar conexões de sessão JCR ao atualizar ou criar tópicos resulta em vazamentos de memória e tempo de inatividade do serviço.
-* GUIDES-26434: A publicação no PDF nativo continua indefinidamente, se o conteúdo DITA tiver um link da Web sem ter o escopo `external`.
-* GUIDES-26516: A publicação de PDFs nativos e sites do AEM é interrompida e colocada em fila quando há erros no conteúdo.
-
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
-
-### Problemas conhecidos {#known-issues-21005}
+### Problemas conhecidos {#known-issues-21193}
 
 Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-21005}
-
-* GRANITE-54164: `org.apache.jackrabbit.oak.plugins.blob` removido da API pública.
-* GRANITE-54280: `org.apache.jackrabbit.oak.cache` removido da API pública.
-* GRANITE-58332: `org.apache.jackrabbit.oak.plugins.memory` obsoleto na API pública.
-* O compactador YUI para javascript foi descontinuado.
-* A funcionalidade [Automação de Instalação do Experience Cloud](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md) foi descontinuada.
+### Recursos e APIs obsoletos {#deprecated-21193}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-21005}
+### Correções de segurança {#security-21193}
 
-A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda cinco vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
+A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda duas vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Aviso de mudança {#change-notice-21005}
-
-* Esta versão inclui as seguintes novas versões do índice de produtos:
-   * **damAssetLucene-12**
-
-As versões personalizadas das versões de índice anteriores serão mescladas automaticamente com a nova versão do índice do produto. Aplique mais atualizações personalizadas à versão mesclada.
-
-#### Atualizar aem-cloud-testing-clients {#update-aem-cloud-testing-clients-21005}
-
-As próximas alterações exigirão que a biblioteca [aem-cloud-testing-clients](https://github.com/adobe/aem-testing-clients) usada em seus testes funcionais personalizados seja atualizada para pelo menos a versão **1.2.1** (Recomendado: versão mais recente 1.2.9)
-
-Verifique se sua dependência em `it.tests/pom.xml` foi atualizada.
-
-```xml
-<dependency>
-   <groupId>com.adobe.cq</groupId>
-   <artifactId>aem-cloud-testing-clients</artifactId>
-   <version>1.2.9</version>
-</dependency>
-```
-
-Essa alteração precisa ser executada antes de 15 de junho de 2025.
-Falha ao atualizar a biblioteca de dependências resultará em falhas de pipeline na etapa &quot;Teste funcional personalizado&quot;.
-
-### Tecnologias integradas {#embedded-tech-21005}
+### Tecnologias integradas {#embedded-tech-21193}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
