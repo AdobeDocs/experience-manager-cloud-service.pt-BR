@@ -5,10 +5,10 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: c6d03117494d913e5b93edde9d7b38544e566c8a
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '1729'
-ht-degree: 25%
+source-wordcount: '1756'
+ht-degree: 24%
 
 ---
 
@@ -183,9 +183,9 @@ No modo de visualização, a página é renderizada no editor da maneira como se
 >
 >Use a tecla de atalho `p` para alternar de e para o modo de visualização.
 
-#### Abrir visualização do aplicativo {#open-app-preview}
+#### Abrir página {#open-page}
 
-Selecione o ícone abrir visualização do aplicativo para abrir a página que você está editando atualmente em sua própria guia do navegador, livre do editor para visualizar seu conteúdo.
+Selecione o ícone abrir página para abrir a página que você está editando atualmente em sua própria guia do navegador, livre do editor para visualizar seu conteúdo.
 
 ![Abrir visualização do aplicativo](assets/open-app-preview.png)
 
@@ -197,6 +197,10 @@ Selecione o ícone abrir visualização do aplicativo para abrir a página que v
 >
 >A URL de visualização do seu aplicativo [pode ser personalizada](/help/implementing/universal-editor/customizing.md#custom-preview-urls).
 
+>[!NOTE]
+>
+>O botão Abrir página [pode ser desabilitado](/help/implementing/universal-editor/customizing.md#open-page) e, portanto, pode não aparecer no seu editor.
+
 #### Publicação {#publish}
 
 Selecione o botão publicar para poder publicar as alterações no conteúdo em tempo real para consumo pelos leitores ou em um ambiente de pré-visualização para revisão.
@@ -206,6 +210,10 @@ Selecione o botão publicar para poder publicar as alterações no conteúdo em 
 >[!TIP]
 >
 >Consulte o documento [Publicando Conteúdo com o Universal Editor](publishing.md) para obter mais informações sobre a publicação com o Universal Editor.
+
+>[!NOTE]
+>
+>O botão de publicação [pode ser desabilitado](/help/implementing/universal-editor/customizing.md#disable-publish) e, portanto, pode não aparecer no seu editor.
 
 #### Reticências {#ellipsis}
 

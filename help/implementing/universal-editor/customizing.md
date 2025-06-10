@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para personalizar o Editor 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 98879fe30482e042da05a390e75d11c0adf7dba9
+source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,14 @@ A opção **Visualizar** na janela de publicação pode, portanto, ser totalment
 
 ```html
 <meta name="urn:adobe:aue:config:disable" content="publish-preview"/>
+```
+
+## Desativar a página aberta {#open-page}
+
+O botão **Abrir Página** pode ser totalmente suprimido em um aplicativo adicionando os seguintes metadados.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
 
 ## Componentes de filtragem {#filtering-components}
@@ -87,7 +95,7 @@ As condições podem ser definidas usando o [esquema JsonLogic](https://jsonlogi
 
 ## URLs de visualização personalizados {#custom-preview-urls}
 
-Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Isso é particularmente útil para aplicativos com requisitos de visualização específicos, como os [que usam o Edge Delivery Services com criação no WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 

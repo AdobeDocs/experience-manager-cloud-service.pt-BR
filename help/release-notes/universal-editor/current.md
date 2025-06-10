@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2025.04.04
-description: Estas são as notas de versão do Universal Editor de 2025.04.04.
+title: Notas de versão do Universal Editor 2025.05.21
+description: Estas são as notas de versão do Universal Editor de 2025.05.21.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 593b8c704c5b016bb55ae6a25420b577044b4126
+source-git-commit: 34b83022f3bcc8b6111b83fee207b337f6d4fed2
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 1%
+source-wordcount: '72'
+ht-degree: 2%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.04.04 {#release-notes}
+# Notas de versão do Universal Editor 2025.05.21 {#release-notes}
 
-Estas são as notas de versão da versão de 4 de abril de 2025 do Editor universal.
+Estas são as notas de versão do Universal Editor de 21 de maio de 2025.
 
 >[!TIP]
 >
@@ -22,11 +22,4 @@ Estas são as notas de versão da versão de 4 de abril de 2025 do Editor univer
 
 ## Novidades {#what-is-new}
 
-* **Dynamic Media com suporte a OpenAPI** - [O seletor de ativos](/help/assets/overview-asset-selector.md#repository-switcher) no Editor Universal agora oferece suporte a [Dynamic Media com OpenAPI e ativos remotos](/help/assets/integrate-remote-approved-assets-with-sites.md)
-* **Lista de permissões de IP** - O Editor Universal agora oferece suporte a [listas de permissões de IP.](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#universal-editor) Você pode verificar os IPs do Universal Editor Service usando [este ponto de extremidade.](http://universal-editor-service.adobe.io/ip-ranges)
-
-## Outras melhorias {#other-improvements}
-
-* O contexto de remoção de layout foi corrigido.
-* Foram feitos aprimoramentos no teste e2e.
-* Atualizações de dependência e limpeza de código foram executadas.
+* **Botão Desabilitar página aberta** - O botão Abrir página [ agora pode ser desabilitado.](/help/implementing/universal-editor/customizing.md#open-page)
