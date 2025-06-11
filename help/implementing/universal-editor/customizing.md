@@ -107,7 +107,7 @@ As condições podem ser definidas usando o [esquema JsonLogic](https://jsonlogi
 
 ## URLs de visualização personalizados {#custom-preview-urls}
 
-Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Isso é particularmente útil para aplicativos com requisitos de visualização específicos, como os [que usam o Edge Delivery Services com criação no WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
