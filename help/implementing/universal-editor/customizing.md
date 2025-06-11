@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para personalizar o Editor 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,18 @@ O botão **Abrir Página** pode ser totalmente suprimido em um aplicativo adicio
 ```html
 <meta name="urn:adobe:aue:config:disable" content="header-open-page" />
 ```
+
+## Desabilitação do Botão Duplicar {#duplicate-button}
+
+Determinados fluxos de trabalho de criação podem precisar limitar a capacidade do autor de conteúdo de duplicar componentes. Você pode desabilitar o [ícone de duplicação](/help/sites-cloud/authoring/universal-editor/navigation.md#duplicate) adicionando os seguintes metadados.
+
+```html
+<meta name="urn:adobe:aue:config:disable" content="duplicate"/>
+```
+
+## Alterando seu endpoint {#custom-endpoint}
+
+Se você não quiser usar o Universal Editor Service, que é hospedado pela Adobe, mas sua própria versão hospedada, poderá defini-lo em uma meta tag. Consulte o documento [Introdução ao Editor Universal no AEM](/help/implementing/universal-editor/getting-started.md##configuration-settings) para obter detalhes.
 
 ## Componentes de filtragem {#filtering-components}
 
@@ -95,7 +107,7 @@ As condições podem ser definidas usando o [esquema JsonLogic](https://jsonlogi
 
 ## URLs de visualização personalizados {#custom-preview-urls}
 
-Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Isso é particularmente útil para aplicativos com requisitos de visualização específicos, como os [que usam o Edge Delivery Services com criação no WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
 
