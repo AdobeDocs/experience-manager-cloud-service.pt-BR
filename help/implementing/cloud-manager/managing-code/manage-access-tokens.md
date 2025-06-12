@@ -3,9 +3,9 @@ title: Gerenciar tokens de acesso de repositórios externos no Cloud Manager
 description: Saiba como visualizar, editar e excluir tokens de acesso usados para Trazer seu próprio Git para o AEM Cloud Manager.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Primeiros usuários" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
+badge: label="Beta privado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 9f9f931a233320014675c6aac86a2cc65f6909c6
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Consulte também [Adicionar repositórios externos no Cloud Manager](/help/imple
 
 >[!NOTE]
 >
->Os recursos descritos neste artigo só estão disponíveis por meio do programa de adoção antecipada. Para obter mais detalhes e se inscrever como participante antecipado, consulte [Traga seu próprio Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>Os recursos descritos neste artigo só estão disponíveis por meio do programa beta privado. Para obter mais detalhes e para se inscrever no beta privado, consulte [Traga seu próprio Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
 ## Exibir tokens de acesso {#view-access-tokens}
 

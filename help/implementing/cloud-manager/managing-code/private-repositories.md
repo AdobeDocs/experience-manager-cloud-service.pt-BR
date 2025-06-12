@@ -4,7 +4,7 @@ description: Saiba como configurar o Cloud Manager para trabalhar com os seus re
 exl-id: 5232bbf5-17a5-4567-add7-cffde531abda
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 34%
@@ -23,7 +23,7 @@ Ao configurar o Cloud Manager para integrar com sua Nuvem privada do GitHub (rep
 >* Repositórios do GitLab (versões `gitlab.com` e auto-hospedadas do GitLab)
 >* Repositórios Bitbucket (o `bitbucket.org` e o Servidor de Bitbucket, a versão auto-hospedada do BitBucket)
 >
->Consulte [Adicionar repositórios externos na Cloud Manager - Beta limitado](/help/implementing/cloud-manager/managing-code/external-repositories.md).
+>Consulte [Adicionar repositórios externos no Cloud Manager - beta privado](/help/implementing/cloud-manager/managing-code/external-repositories.md).
 
 <!-- CONSIDER ADDING MORE DETAIL... THE WHY. Some key points about this capability include the following:
 

@@ -3,11 +3,11 @@ title: Adicionar repositórios externos no Cloud Manager
 description: Saiba como adicionar um repositório externo no Cloud Manager. O Cloud Manager oferece suporte à integração com repositórios GitHub Enterprise, GitLab, Bitbucket e Azure DevOps.
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-badge: label="Primeiros usuários" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
+badge: label="Beta privado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: aebda813-2eb0-4c67-8353-6f8c7c72656c
-source-git-commit: e881c3d8af7127e030aa9a0a2c163eaf04870c2b
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2077'
 ht-degree: 22%
 
 ---
@@ -23,7 +23,7 @@ Os clientes agora também podem integrar seus repositórios Git do Azure DevOps 
 
 >[!NOTE]
 >
->Os recursos descritos neste artigo só estão disponíveis por meio do programa de adoção antecipada. Para obter mais detalhes e se inscrever como participante antecipado, consulte [Traga seu próprio Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
+>Os recursos descritos neste artigo só estão disponíveis por meio do programa beta privado. Para obter mais detalhes e para se inscrever no beta privado, consulte [Traga seu próprio Git](/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket).
 
 
 ## Configurar um repositório externo
@@ -82,13 +82,13 @@ A configuração de um repositório externo no Cloud Manager consiste nas seguin
    | **Adicionar novo token de acesso** | **Tipo de repositório: GitHub Enterprise**<br><ul><li> No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso pessoal seguindo as instruções na [documentação do GitHub](https://docs.github.com/en/enterprise-server@3.14/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).<li>Permissões necessárias para o GitHub Enterprise Personal Access Token (PAT)<br>Essas permissões garantem que o Cloud Manager possa validar solicitações de pull, gerenciar verificações de status de confirmação e acessar detalhes do repositório necessários.<br>Ao gerar o PAT no GitHub Enterprise, verifique se ele inclui as seguintes permissões de repositório:<ul><li>Solicitação de pull (leitura e gravação)<li>Status de confirmação (leitura e gravação)<li>Metadados do repositório (somente leitura)</li></li></ul></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
    | | **Tipo de repositório: GitLab**<ul><li>No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso pessoal seguindo a instrução na [documentação do GitLab](https://docs.gitlab.com/user/profile/personal_access_tokens/).<li>Permissões necessárias para o GitLab Personal Access Token (PAT)<br>Esses escopos permitem que o Cloud Manager acesse dados do repositório e informações do usuário, conforme necessário, para validação e integração com webhook.<br>Ao gerar o PAT no GitLab, certifique-se de que ele inclua os seguintes escopos de token:<ul><li>api<li>read_user</li></li></ul></li></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
    | | **Tipo de repositório: Bitbucket**<ul><li>No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso do repositório usando a [documentação do Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/create-a-repository-access-token/).<li>Permissões necessárias para o PAT (token de acesso pessoal) do Bitbucket<br>Essas permissões permitem que o Cloud Manager acesse o conteúdo do repositório, gerencie solicitações de pull e configure ou reaja a eventos de webhook.<br>Ao criar a senha de aplicativo no Bitbucket, verifique se ela inclui as seguintes permissões de senha de aplicativo necessárias:<ul><li>Repositório (somente leitura)<li>Solicitações de pull (leitura e gravação)<li>Webhooks (leitura e gravação)</li></li></ul></li></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
-   | | **Tipo de repositório: Azure DevOps**<ul><li>No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso do repositório usando a [documentação do Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&amp;tabs=Windows).<li>Permissões necessárias para o PAT (Token de acesso pessoal) do Azure DevOps.<br>Essas permissões permitem que o Cloud Manager acesse o conteúdo do repositório, gerencie solicitações de pull e configure ou reaja a eventos de webhook.<br>Ao criar a senha de aplicativo no Azure DevOps, verifique se ela inclui as seguintes permissões de senha de aplicativo necessárias:<ul><li>Repositório (somente leitura)</li></ul></li></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
+   | | **Tipo de repositório: Azure DevOps**<ul><li>No campo de texto **Nome do token**, digite um nome para o token de acesso que você está criando.<li>Crie um token de acesso do repositório usando a [documentação do Azure DevOps](https://learn.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows).<li>Permissões necessárias para o PAT (Token de acesso pessoal) do Azure DevOps.<br>Essas permissões permitem que o Cloud Manager acesse o conteúdo do repositório, gerencie solicitações de pull e configure ou reaja a eventos de webhook.<br>Ao criar a senha de aplicativo no Azure DevOps, verifique se ela inclui as seguintes permissões de senha de aplicativo necessárias:<ul><li>Repositório (somente leitura)</li></ul></li></li></ul></ul></ul><ul><li>No campo **Token de acesso**, cole o token que acabou de criar. |
 
    Consulte também [Gerenciar tokens de acesso](/help/implementing/cloud-manager/managing-code/manage-access-tokens.md).
 
    >[!IMPORTANT]
    >
-   >O recurso **Adicionar novo Token de Acesso** está atualmente na fase de Adoção Antecipada. Funcionalidades adicionais estão sendo planejadas. Como resultado, as permissões necessárias para tokens de acesso podem mudar. Além disso, a interface de usuário para gerenciamento de tokens pode ser atualizada, possivelmente incluindo recursos como datas de expiração de tokens. E verificações automatizadas para garantir que os tokens vinculados aos repositórios permaneçam válidos.
+   >O recurso **Adicionar novo Token de Acesso** está atualmente na versão beta privada. Funcionalidades adicionais estão sendo planejadas. Como resultado, as permissões necessárias para tokens de acesso podem mudar. Além disso, a interface de usuário para gerenciamento de tokens pode ser atualizada, possivelmente incluindo recursos como datas de expiração de tokens. E verificações automatizadas para garantir que os tokens vinculados aos repositórios permaneçam válidos.
 
 1. Clique em **Validar**.
 

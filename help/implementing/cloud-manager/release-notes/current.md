@@ -4,7 +4,7 @@ description: Saiba mais sobre o lançamento do Cloud Manager 2025.6.0 no Adobe E
 feature: Release Information
 role: Admin
 exl-id: 24d9fc6f-462d-417b-a728-c18157b23bbe
-source-git-commit: 52c8745d3a3cc4bc41003a258a85a817e7ccb48b
+source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 10%
@@ -52,11 +52,11 @@ A próxima versão está planejada para sexta-feira, 10 de julho de 2025.
   Consulte [Marcar favoritos do pipeline](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#pipeline-favorites).
 
 
-## Programa de adoção antecipada {#early-adoption}
+## Programa beta privado {#private-beta-program}
 
-Participe do Programa de primeiros usuários da Cloud Manager para obter acesso exclusivo a recursos futuros antes do lançamento geral.
+Participe do Programa Beta privado da Cloud Manager para obter acesso exclusivo a recursos futuros antes de seu lançamento geral.
 
-As seguintes oportunidades de adoção antecipada estão disponíveis no momento:
+As seguintes oportunidades de beta privado estão disponíveis no momento:
 
 
 ### Ambiente de testes especializados {#specialized-test-environment}
@@ -111,7 +111,7 @@ Se você estiver interessado em testar este novo recurso e compartilhar seus com
 
 Os Pipelines de configuração agora são compatíveis com sites criados com o Edge Delivery Services, expandindo esse recurso além dos ambientes do Cloud Service. Você pode usar **Pipelines de configuração** para gerenciar configurações como regras de filtragem de tráfego e configurações do Firewall do Aplicativo Web (WAF), quando aplicável. Consulte [Configurações com Suporte](/help/operations/config-pipeline.md#configurations).
 
-![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**&#x200B;cartão.*
+![Adicionar pipeline do Edge Delivery na lista suspensa Adicionar pipeline](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add.png) *Adicionar um pipeline do Edge Delivery da página **Visão geral do programa**,**Pipelines**cartão.*
 
 ![Caixa de diálogo Adicionar pipeline do Edge Delivery](/help/implementing/cloud-manager/release-notes/assets/edge-delivery-pipeline-add-dialogbox.png) *Caixa de diálogo Adicionar pipeline do Edge Delivery.*
 
