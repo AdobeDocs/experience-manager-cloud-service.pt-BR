@@ -28,9 +28,9 @@ Este documento descreve as etapas recomendadas para fazer upload de um SPA indep
 Os pré-requisitos são simples.
 
 * Verifique se uma instância do AEM está sendo executada localmente.
-* Crie um projeto básico de SPA do AEM usando o [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
+* Crie um projeto básico de SPA do AEM usando o [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR&#available-properties).
    * O Forms é a base do projeto do AEM, que é atualizado para incluir o SPA externo.
-   * Para as amostras neste documento, o Adobe está usando o ponto de partida do [projeto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
+   * Para as amostras neste documento, o Adobe está usando o ponto de partida do [projeto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR#spa-editor).
 * Tenha em mãos o SPA externo React funcional que deseja integrar.
 
 ## Fazer upload de SPA para projeto do AEM {#upload-spa-to-aem-project}
