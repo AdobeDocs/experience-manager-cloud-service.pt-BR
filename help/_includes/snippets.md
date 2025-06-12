@@ -169,11 +169,11 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 >[!IMPORTANT]
 >
 >O pipeline de front-end requer que a seguinte Lista de permissões de IP seja adicionada ao Cloud Manager antecipadamente.
->>Se necessário, [adicione a Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando o bloco de endereços abaixo. Cada endereço é separado por vírgula. Cole o bloco no campo **Endereço IP/CIDR** da caixa de diálogo **Adicionar Lista de permissões IP**. Coloque o cursor logo após a primeira vírgula na lista de endereços e pressione **Enter**. Salve a lista.
->>Para evitar a interrupção da execução do pipeline de front-end, verifique se esta Lista de permissões de IP foi adicionada ao Cloud Manager *antes* de habilitar o pipeline.
+>&#x200B;>Se necessário, [adicione a Lista de permissões IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) copiando o bloco de endereços abaixo. Cada endereço é separado por vírgula. Cole o bloco no campo **Endereço IP/CIDR** da caixa de diálogo **Adicionar Lista de permissões IP**. Coloque o cursor logo após a primeira vírgula na lista de endereços e pressione **Enter**. Salve a lista.
+>&#x200B;>Para evitar a interrupção da execução do pipeline de front-end, verifique se esta Lista de permissões de IP foi adicionada ao Cloud Manager *antes* de habilitar o pipeline.
 >
 >**Lista de permissões IP Cloud Manager**
->>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
+>&#x200B;>52.254.106.192/28,20.186.185.181,52.254.106.240/28,52.254.107.128/28,52.254.105.192/28,52.254.106.176/28,20.186.185.227,52.254.106.144/28,52.254.107.64/28,20.186.185.239,20.22.83.112,52.254.107.80/28,52.254.107.144/28,52.254.106.224/28,20.14.241.153,52.254.107.0/28,52.254.107.32/28,52.254.106.208/28,40.70.154.136/29,52.254.106.160/28,52.254.107.16/28,52.254.106.0/28,4.152.211.251
 >   
 
 ## Adicionar uma Lista de permissões IP do Cloud Manager e pipelines de front-end {#add-cm-allowlist-frontend-pipeline}
@@ -181,7 +181,7 @@ A tabela a seguir demonstra a diferença entre os recursos disponíveis nos Comp
 >[!IMPORTANT]
 >
 >Se você usar ou pretende usar o pipeline de front-end para desenvolver sites, a Lista de permissões de IP do Cloud Manager deverá ser adicionada com antecedência.
->>Consulte [Uso da Lista de permissões IP do Cloud Manager com o pipeline de front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
+>&#x200B;>Consulte [Uso da Lista de permissões IP do Cloud Manager com o pipeline de front-end](/help/implementing/cloud-manager/ip-allow-lists/introduction.md#allowlists-frontend-pipeline).
 
 ## LISTAS DE PERMISSÕES de IP e o editor universal {#ip-allow-lists-ue}
 
