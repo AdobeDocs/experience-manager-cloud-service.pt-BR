@@ -5,9 +5,9 @@ mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 feature: Release Information
 role: Admin
-source-git-commit: 5e90d3fb650106f31630c0297e55b4e9da201ba5
+source-git-commit: 75816f35a8bca8356e17b13341c2ddbd850f8eff
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2077'
 ht-degree: 7%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas da versão de recurso atual (mais recente) 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
 
->[!VIDEO](https://video.tv.adobe.com/v/3440925?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3440920?quality=12)
 
 -->
 
@@ -112,9 +112,9 @@ Acesse todas as suas [representações predefinidas do Dynamic Media e cortes in
 
 **Integração nativa do Dynamic Media com o AJO B2C&#x200B;**
 
-[Integração nativa do Experience Manager (AEM) Dynamic Media com o Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/aem-dynamic), permitindo que os profissionais de marketing incorporem facilmente os ativos do AEM Dynamic Media (representação e modelo DM) ao conteúdo do AJO e entreguem atualizações em tempo real e experiências hiperpersonalizadas em todos os canais.
+[Integração nativa do Experience Manager (AEM) Dynamic Media com o Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), permitindo que os profissionais de marketing incorporem facilmente os ativos do AEM Dynamic Media (representação e modelo DM) ao conteúdo do AJO e entreguem atualizações em tempo real e experiências hiperpersonalizadas em todos os canais.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463787/?learn=on&enablevpops=&autoplay=true&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -201,7 +201,7 @@ Revise e atualize todos os processos downstream que dependem do comportamento de
 
 ### Limpeza padrão de versões anteriores e logs de auditoria {#mt-defaults}
 
-Atualmente, as versões de conteúdo e logs de auditoria têm suas *tarefas de manutenção de limpeza* associadas desabilitadas por padrão e, portanto, nenhum dado é removido, a menos que seja configurado explicitamente por meio de suas respectivas propriedades OSGi.
+Atualmente, as versões de conteúdo e logs de auditoria têm suas *tarefas de manutenção de limpeza* associadas desabilitadas por padrão e, portanto, nenhum dado é removido, a menos que seja configurado explicitamente.
 
 No entanto, para otimizar o desempenho do repositório, a partir de **final de junho de 2025**, a limpeza será habilitada por padrão, seguindo estas diretrizes:
 
@@ -263,7 +263,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

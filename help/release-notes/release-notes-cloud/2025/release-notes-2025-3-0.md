@@ -3,10 +3,11 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.3.0.
 feature: Release Information
 role: Admin
-source-git-commit: b1a551aeebd0b3c5cf8111bf30341bd4ac41536f
+exl-id: b9353092-88a0-477c-85f4-f916a4b8ba8f
+source-git-commit: 420b02e8398a433d0ff93ed0f60e01560ae786b8
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 15%
+source-wordcount: '1123'
+ht-degree: 16%
 
 ---
 
@@ -18,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -32,15 +33,11 @@ A data de lançamento da versão atual (2025.3.0) do [!DNL Adobe Experience Mana
 
 Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-notes/maintenance/latest.md).
 
-<!-- 
+## Vídeo da versão {#release-video}
 
-## Release Video {#release-video}
+Assista ao vídeo Visão geral da versão de março de 2025 que exibe um resumo dos recursos adicionados na versão 2025.3.0:
 
-Have a look at the February 2025 Release Overview video for a summary of the features added in the 2025.2.0 release:
-
->[!VIDEO](https://video.tv.adobe.com/v/3440925?quality=12&captions=por_br)
-
--->
+>[!VIDEO](https://video.tv.adobe.com/v/3463860?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -56,7 +53,7 @@ O Dynamic Media com OpenAPI agora é compatível com vídeos de formulários lon
 
 A guia Largura de banda no painel de relatórios do Dynamic Media Classic não é mais compatível desde abril de 2025.
 
-Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 
 ## Novos recursos na visualização de ativos {#new-features-assets-view}
@@ -123,7 +120,7 @@ Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@a
 
 Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas ao criar projetos do Adobe Developer Console.
 
-Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustra a configuração e o uso.
+Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustra a configuração e o uso.
 
 Especificamente, os endpoints de API listados abaixo estão disponíveis como parte de um programa de adoção antecipada. Se estiver interessado, envie um email para [aem-apis@adobe.com](mailto:aem-apis@adobe.com) descrevendo como você pretende usá-los.
 
@@ -140,7 +137,7 @@ Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Di
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0).
 
 ## Cloud Manager {#cloud-manager}
 
