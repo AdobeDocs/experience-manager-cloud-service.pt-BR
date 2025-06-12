@@ -5,10 +5,10 @@ role: User, Leader, Admin, Architect, Developer
 contentOwner: AG
 exl-id: 7264e8d1-fc8f-4eb3-93a9-a6066ca3f851
 feature: Metadata
-source-git-commit: 932f4b864e179760c9f4cbcf5ce1ea74764df5c4
+source-git-commit: 1b27ddd6e63c55442550145466ae21d1d03d6463
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 75%
+source-wordcount: '2499'
+ht-degree: 73%
 
 ---
 
@@ -251,13 +251,25 @@ See [Assign metadata form to folders](#assign-metadata-form-folder). Follow the 
 
 Para visualizar as tags raiz configuradas, acesse a página de detalhes do ativo na qual o mapeamento entre o formulário de metadados e as tags raiz é executado.
 
-## Aprimoramento da descoberta de conteúdo com tags inteligentes geradas por IA {#ai-smart-tags}
+## Aprimoramento da descoberta de conteúdo com metadados gerados por IA {#ai-smart-tags}
 
 Em vez de depender da entrada manual, a IA atribui tags descritivas automaticamente a ativos digitais. Essas tags geradas por IA melhoram a qualidade dos metadados, tornando os ativos mais fáceis de pesquisar, categorizar e recomendar. Essa abordagem não só aumenta a eficiência eliminando a marcação manual, mas também garante a consistência e a escalabilidade em grandes volumes de conteúdo digital. Por exemplo, se o ativo for uma imagem, a IA pode identificar objetos, cenas, emoções ou até mesmo logotipos de marca nele e gerar tags relevantes, como &quot;pôr do sol&quot;, &quot;praia&quot;, &quot;férias&quot; ou &quot;sorrir&quot;. O conteúdo gerado por IA pode aprimorar a pesquisa de ativos aproveitando técnicas de pesquisa semântica e léxica. Veja mais [Pesquisar Assets](search-assets-view.md). <!--If the asset is a document, AI reads and interprets the text to assign meaningful keywords that summarize its content—such as "climate change," "policy," or "renewable energy.-->
 
-![Marcas inteligentes aprimoradas](assets/enhanced-smart-tags.png)
+![Metadados gerados pela IA](/help/assets/assets/enhanced-smart-tags.png)
 
-### Uso de tags inteligentes geradas por IA {#using-ai-generated-smart-tags}
+### Como ativar metadados gerados por IA? {#enable-ai-generated-metadata}
+
+Para ativar os metadados gerados por IA:
+
+* A versão mínima necessária do AEM é `20626`.
+
+* Você deve assinar um contrato GenAI Rider. Para obter mais informações, entre em contato com o representante da Adobe.
+
+  >[!IMPORTANT]
+  >
+  > O título gerado pela IA de um ativo é exibido no cartão de Ativo somente quando você não define o título do ativo. Ele não substitui o título do ativo especificado por você.
+
+### Uso de metadados gerados por IA {#using-ai-generated-smart-tags}
 
 <!--[!NOTE]
 >
@@ -270,7 +282,7 @@ Para usar o recurso aprimorado de tags inteligentes, execute as seguintes etapas
 
 1. Espere até que o ativo recém-carregado seja processado. Depois de concluído, acesse os detalhes do ativo.
 
-1. Vá para a guia **[!UICONTROL Gerado por IA]**. Se a versão [!DNL Experience Manager] for incompatível ou não for atualizada, essa guia não estará visível. A versão mínima do AEM necessária é `20626`. Os seguintes campos estão lá:
+1. Vá para a guia **[!UICONTROL Gerado por IA]**. Se a versão [!DNL Experience Manager] for incompatível ou não for atualizada, essa guia não estará visível.  Os seguintes campos estão lá:
 
    * **[!UICONTROL Título gerado]:** o título fornece um título claro e conciso que captura a ideia principal de um ativo carregado, facilitando sua compreensão rápida. Ao adicionar um ativo, se você fornecer um título (em `dc:title`), ele será exibido na exibição de navegação dos ativos. Se deixado em branco, um título gerado pela IA será atribuído automaticamente.
    * **[!UICONTROL Descrição gerada]:** A descrição fornece um resumo breve, mas informativo, sobre o que o ativo trata, ajudando os usuários e o módulo de pesquisa a compreender rapidamente sua relevância.
@@ -286,7 +298,7 @@ Para usar o recurso aprimorado de tags inteligentes, execute as seguintes etapas
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&amp;lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)
 
 <!-- TBD: Cannot create a form using the second option. Documenting only the first option for now.
 To reuse an existing form to create a form, do one of these:
