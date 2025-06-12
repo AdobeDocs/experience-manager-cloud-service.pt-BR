@@ -1,39 +1,41 @@
 ---
 title: Edição de um SPA externo no AEM
-description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância AEM, adicionar seções editáveis de conteúdo e ativar a criação.
+description: Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância do AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: a69658d5657f4e1a4feed20cf7eda5e9899aaa3d
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '2370'
 ht-degree: 1%
 
 ---
 
+
 # Edição de um SPA externo no AEM {#editing-external-spa-within-aem}
 
-Ao decidir [que nível de integração](/help/implementing/developing/headful-headless.md) você gostaria de ter entre o SPA externo e o AEM, considere que você deve ser capaz de editar e visualizar o SPA dentro do AEM, com frequência.
+Ao decidir [que nível de integração](/help/implementing/developing/headful-headless.md) você gostaria de ter entre seu SPA externo e o AEM, considere que você deve ser capaz de editar e visualizar o SPA no AEM, com frequência.
 
 {{ue-over-spa}}
 
 ## Visão geral {#overview}
 
-Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância AEM, adicionar seções editáveis de conteúdo e ativar a criação.
+Este documento descreve as etapas recomendadas para fazer upload de um SPA independente em uma instância do AEM, adicionar seções editáveis de conteúdo e ativar a criação.
 
 ## Pré-requisitos {#prerequisites}
 
 Os pré-requisitos são simples.
 
 * Verifique se uma instância do AEM está sendo executada localmente.
-* AEM Criar um projeto SPA base usando o [Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR&#available-properties).
-   * Forms é a base do projeto AEM, que é atualizado para incluir o SPA externo.
-   * Para as amostras neste documento, o Adobe está usando o ponto de partida do [projeto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR#spa-editor).
-* Tenha em mãos o SPA React externo e funcional que você deseja integrar.
+* Crie um projeto básico de SPA do AEM usando o [Arquétipo de Projetos AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
+   * O Forms é a base do projeto do AEM, que é atualizado para incluir o SPA externo.
+   * Para as amostras neste documento, o Adobe está usando o ponto de partida do [projeto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
+* Tenha em mãos o SPA externo React funcional que deseja integrar.
 
-## Fazer upload do AEM para o projeto SPA {#upload-spa-to-aem-project}
+## Fazer upload de SPA para projeto do AEM {#upload-spa-to-aem-project}
 
-Primeiro, você deve carregar o SPA externo para seu projeto AEM.
+Primeiro, carregue o SPA externo no seu projeto do AEM.
 
 1. Substitua `src` na pasta do projeto `/ui.frontend` pela pasta `src` do aplicativo React.
 1. Inclua qualquer dependência adicional no `package.json` do aplicativo no arquivo `/ui.frontend/package.json`.
@@ -43,11 +45,11 @@ Primeiro, você deve carregar o SPA externo para seu projeto AEM.
 
 ## Configurar o SPA remoto {#configure-remote-spa}
 
-Agora que o SPA externo é parte do projeto AEM, ele deve ser configurado dentro do AEM.
+Agora que o SPA externo faz parte do projeto do AEM, ele deve ser configurado no AEM.
 
-### Incluir pacotes de SDK do Adobe SPA {#include-spa-sdk-packages}
+### Incluir pacotes Adobe SPA SDK {#include-spa-sdk-packages}
 
-AEM Para aproveitar os recursos do SPA, há dependências nos três pacotes a seguir.
+Para aproveitar os recursos de SPA do AEM, há dependências nos três pacotes a seguir.
 
 * [`@adobe/aem-react-editable-components`](https://github.com/adobe/aem-react-editable-components)
 * [`@adobe/aem-spa-component-mapping`](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
@@ -83,9 +85,9 @@ O `initializationAsync` pode, opcionalmente, aceitar um objeto `options` como pa
 * `modelClient` - Permite fornecer um cliente personalizado responsável por buscar o modelo.
 * `model` - Um objeto `model` passado como parâmetro normalmente preenchido ao usar SSR.
 
-### Componentes de folha autoráveis do AEM {#authorable-leaf-components}
+### Componentes de folha possíveis do AEM {#authorable-leaf-components}
 
-1. Crie/identifique um componente do AEM para o qual um componente autorável do React é criado. Neste exemplo, ele está usando o componente de texto do projeto WKND.
+1. Criar/identificar um componente do AEM para o qual um componente do React autorável é criado. Neste exemplo, ele está usando o componente de texto do projeto WKND.
 
    ![Componente de texto WKND](assets/external-spa-text-component.png)
 
@@ -93,21 +95,21 @@ O `initializationAsync` pode, opcionalmente, aceitar um objeto `options` como pa
 
    ![Text.js](assets/external-spa-textjs.png)
 
-1. Crie um objeto de configuração para especificar os atributos necessários para habilitar a edição do AEM.
+1. Crie um objeto de configuração para especificar os atributos necessários para habilitar a edição no AEM.
 
    ![Criar objeto de configuração](assets/external-spa-config-object.png)
 
-   * `resourceType` é obrigatório mapear o componente React ao componente AEM e habilitar a edição ao abri-lo no Editor AEM.
+   * `resourceType` é obrigatório mapear o componente React ao componente AEM e habilitar a edição ao abri-lo no Editor do AEM.
 
 1. Use a função wrapper `withMappable`.
 
    ![Usar com Mapeável](assets/external-spa-withmappable.png)
 
-   Essa função de wrapper mapeia o componente React para o AEM `resourceType` especificado na configuração e habilita recursos de edição quando abertos no Editor de AEM. Para componentes independentes, ela também busca o conteúdo do modelo para o nó específico.
+   Esta função de wrapper mapeia o componente React para o AEM `resourceType` especificado na configuração e habilita recursos de edição quando aberto no Editor do AEM. Para componentes independentes, ela também busca o conteúdo do modelo para o nó específico.
 
    >[!NOTE]
    >
-   >Neste exemplo, há versões separadas do componente: AEM encapsulado e componentes React não encapsulados. A versão encapsulada deve ser usada ao usar explicitamente o componente. Quando o componente é parte de uma página, você pode continuar usando o componente padrão, como feito atualmente no editor de SPA.
+   >Neste exemplo, há versões separadas do componente: componentes React encapsulados e desencapsulados do AEM. A versão encapsulada deve ser usada ao usar explicitamente o componente. Quando o componente é parte de uma página, você pode continuar usando o componente padrão, como atualmente feito no editor de SPA.
 
 1. Renderizar conteúdo no componente.
 
@@ -157,7 +159,7 @@ O `initializationAsync` pode, opcionalmente, aceitar um objeto `options` como pa
 
 Depois que os componentes autoráveis do React forem criados, você poderá usá-los em todo o aplicativo.
 
-Vamos ver um exemplo de página em que você deve adicionar um texto do projeto SPA WKND. Neste exemplo, você deseja exibir o texto &quot;Olá, mundo!&quot; em `/content/wknd-spa-react/us/en/home.html`.
+Vejamos um exemplo de página em que você deve adicionar um texto do projeto WKND SPA. Neste exemplo, você deseja exibir o texto &quot;Olá, mundo!&quot; em `/content/wknd-spa-react/us/en/home.html`.
 
 1. Determine o caminho do nó a ser exibido.
 
@@ -175,7 +177,7 @@ Vamos ver um exemplo de página em que você deve adicionar um texto do projeto 
 
 #### Verificar edição de conteúdo de texto no AEM {#verify-text-edit}
 
-Agora, teste o componente na instância AEM em execução.
+Agora teste o componente na instância do AEM em execução.
 
 1. Execute o seguinte comando Maven no diretório `aem-guides-wknd-spa` para poder compilar e implantar o projeto no AEM.
 
@@ -183,18 +185,18 @@ Agora, teste o componente na instância AEM em execução.
 mvn clean install -PautoInstallSinglePackage
 ```
 
-1. Na instância do AEM, navegue até `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`.
+1. Na sua instância do AEM, navegue até `http://<host>:<port>/editor.html/content/wknd-spa-react/us/en/home.html`.
 
 ![Editando o SPA no AEM](assets/external-spa-edit-aem.png)
 
 O componente `AEMText` agora pode ser criado no AEM.
 
-### Páginas para autoria do AEM {#aem-authorable-pages}
+### Páginas possíveis do AEM {#aem-authorable-pages}
 
 1. Identifique uma página a ser adicionada para criação no SPA. Este exemplo usa `/content/wknd-spa-react/us/en/home.html`.
 1. Crie um arquivo (por exemplo, `Page.js`) para o componente de Página que pode ser criado. use o Componente de Página fornecido em `@adobe/cq-react-editable-components`.
-1. Repita a etapa quatro na seção [Componentes de folha autoráveis para AEM](#authorable-leaf-components). Use a função wrapper `withMappable` no componente.
-1. Como foi feito anteriormente, aplique `MapTo` aos tipos de recursos AEM para todos os componentes filhos na página.
+1. Repita a etapa quatro na seção [componentes de folha autoráveis do AEM](#authorable-leaf-components). Use a função wrapper `withMappable` no componente.
+1. Como foi feito anteriormente, aplique `MapTo` aos tipos de recursos do AEM para todos os componentes filhos na página.
 
    ```javascript
    import { Page, MapTo, withMappable } from '@adobe/aem-react-editable-components';
@@ -209,7 +211,7 @@ O componente `AEMText` agora pode ser criado no AEM.
    >
    >Neste exemplo, o componente de texto React não encapsulado é usado em vez do `AEMText` encapsulado criado anteriormente. O motivo é que, quando o componente faz parte de uma página/contêiner e não é independente, o contêiner cuida do mapeamento recursivo do componente. E ativar os recursos de criação e o invólucro adicional não é necessário para cada criança.
 
-1. Para adicionar uma página para criação no SPA, siga as mesmas etapas da seção [Adicionar componentes para criação à página](#add-authorable-component-to-page). Aqui, você pode ignorar a propriedade `itemPath`.
+1. Para adicionar uma página para criação no SPA, siga as mesmas etapas na seção [Adicionar componentes para criação à página](#add-authorable-component-to-page). Aqui, você pode ignorar a propriedade `itemPath`.
 
 #### Verificar conteúdo da página no AEM {#verify-page-content}
 
@@ -217,11 +219,11 @@ Para verificar se a página pode ser editada, siga as mesmas etapas na seção [
 
 ![Editando uma página no AEM](assets/external-spa-edit-page.png)
 
-Agora a página pode ser editada no AEM com um contêiner de layout e um componente de Texto filho.
+A página agora pode ser editada no AEM com um contêiner de layout e um componente de Texto filho.
 
 ### Componentes da folha virtual {#virtual-leaf-components}
 
-Nos exemplos anteriores, você adicionou componentes ao SPA com conteúdo existente de AEM. No entanto, há casos em que o conteúdo ainda não foi criado no AEM, mas deve ser adicionado posteriormente pelo autor de conteúdo. Para acomodar esse cenário, o desenvolvedor de front-end pode adicionar componentes nos locais apropriados no SPA. Esses componentes exibem espaços reservados quando abertos no editor no AEM. Depois que o conteúdo é adicionado nesses espaços reservados pelo autor de conteúdo, os nós são criados na estrutura JCR e o conteúdo é mantido. O componente criado permite o mesmo conjunto de operações que os componentes folha independentes.
+Nos exemplos anteriores, você adicionou componentes ao SPA com conteúdo existente do AEM. No entanto, há casos em que o conteúdo ainda não foi criado no AEM, mas deve ser adicionado posteriormente pelo autor de conteúdo. Para acomodar esse cenário, o desenvolvedor de front-end pode adicionar componentes nos locais apropriados no SPA. Esses componentes exibem espaços reservados quando abertos no editor no AEM. Depois que o conteúdo é adicionado nesses espaços reservados pelo autor de conteúdo, os nós são criados na estrutura JCR e o conteúdo é mantido. O componente criado permite o mesmo conjunto de operações que os componentes folha independentes.
 
 Neste exemplo, você está reutilizando o componente `AEMText` criado anteriormente. Você deseja que um novo texto seja adicionado abaixo do componente de texto existente na página inicial da WKND. A adição de componentes é a mesma para componentes de folha normais. No entanto, o `itemPath` pode ser atualizado para o caminho em que o novo componente deve ser adicionado.
 
@@ -293,14 +295,14 @@ Mais componentes e conteúdo podem ser adicionados ao contêiner agora, conforme
 Há vários requisitos para adicionar contêineres virtuais e algumas limitações.
 
 * A política para determinar quais componentes podem ser adicionados é herdada do container principal.
-* O pai imediato do contêiner a ser criado deve existir no AEM.
+* O pai imediato do container a ser criado deve existir no AEM.
    * Se o contêiner `root/responsivegrid` existir no contêiner AEM, um novo contêiner poderá ser criado fornecendo o caminho `root/responsivegrid/newContainer`.
    * No entanto, `root/responsivegrid/newContainer/secondNewContainer` não é possível.
 * Somente um novo nível de componente pode ser criado de cada vez.
 
 ## Personalizações adicionais {#additional-customizations}
 
-Se você seguiu os exemplos anteriores, seu SPA externo agora é editável dentro do AEM. No entanto, há aspectos adicionais do SPA externo que você pode personalizar ainda mais.
+Se você seguiu os exemplos anteriores, seu SPA externo agora é editável no AEM. No entanto, há aspectos adicionais do SPA externo que você pode personalizar ainda mais.
 
 ### ID do nó raiz {#root-node-id}
 
@@ -316,7 +318,7 @@ Por exemplo, suponha que você tenha um SPA no qual o aplicativo é renderizado 
 
    ![O index.html do aplicativo](assets/external-spa-index.png)
 
-1. No corpo do componente da página do aplicativo AEM, por meio de duas etapas:
+1. No corpo do componente de página do aplicativo AEM por meio de duas etapas:
 
    1. Crie um `body.html` para o componente de página.
 
@@ -326,19 +328,19 @@ Por exemplo, suponha que você tenha um SPA no qual o aplicativo é renderizado 
 
    ![Adicionar o elemento raiz a body.html](assets/external-spa-add-root.png)
 
-### Edição de um SPA React com Roteamento {#editing-react-spa-with-routing}
+### Edição de um SPA do React com Roteamento {#editing-react-spa-with-routing}
 
-Se o aplicativo externo SPA React tiver várias páginas, [ele poderá usar o roteamento para determinar a página/componente a ser renderizado](/help/implementing/developing/hybrid/routing.md). O caso de uso básico é corresponder o URL ativo no momento com o caminho fornecido para uma rota. Para habilitar a edição nesses aplicativos habilitados para roteamento, o caminho no qual corresponder deve ser transformado para acomodar informações específicas do AEM.
+Se o aplicativo SPA externo do React tiver várias páginas, [ele poderá usar o roteamento para determinar a página/componente a ser renderizado](/help/implementing/developing/hybrid/routing.md). O caso de uso básico é corresponder o URL ativo no momento com o caminho fornecido para uma rota. Para habilitar a edição nesses aplicativos habilitados para roteamento, o caminho a ser correspondido deve ser transformado para acomodar as informações específicas do AEM.
 
 No exemplo a seguir, você tem um aplicativo simples do React com duas páginas. A página a ser renderizada é determinada pela correspondência do caminho fornecido ao roteador com o URL ativo. Por exemplo, se você estiver em `mydomain.com/test`, `TestPage` é renderizado.
 
 ![Roteamento em um SPA externo](assets/external-spa-routing.png)
 
-Para habilitar a edição no AEM para este exemplo SPA, as seguintes etapas são necessárias.
+Para habilitar a edição no AEM para este exemplo de SPA, as seguintes etapas são necessárias.
 
-1. Identifique o nível que atuaria como raiz no AEM.
+1. Identifique o nível que atuaria como a raiz no AEM.
 
-   * Para sua amostra, considere wknd-spa-response/us/en como a raiz do SPA. Essa raiz significa que tudo antes desse caminho é somente páginas/conteúdo AEM.
+   * Para sua amostra, considere wknd-spa-react/us/en como a raiz do SPA. Essa raiz significa que tudo antes desse caminho é somente páginas/conteúdo do AEM.
 
 1. Crie uma página no nível necessário.
 
@@ -351,29 +353,29 @@ Para habilitar a edição no AEM para este exemplo SPA, as seguintes etapas são
 
    ![Auxiliar de roteamento](assets/external-spa-router-helper.png)
 
-   * O auxiliar `toAEMPath` fornecido por `@adobe/cq-spa-page-model-manager` pode ser usado. Ele transforma o caminho fornecido para roteamento para incluir partes específicas do AEM quando o aplicativo está aberto em uma instância AEM. Ele aceita três parâmetros:
+   * O auxiliar `toAEMPath` fornecido por `@adobe/cq-spa-page-model-manager` pode ser usado. Ele transforma o caminho fornecido para roteamento para incluir partes específicas do AEM quando o aplicativo estiver aberto em uma instância do AEM. Ele aceita três parâmetros:
       * O caminho necessário para roteamento
-      * O URL de origem da instância do AEM em que o SPA é editado
-      * A raiz do projeto no AEM conforme determinado na primeira etapa
+      * O URL de origem da instância do AEM onde o SPA é editado
+      * A raiz do projeto no AEM, conforme determinado na primeira etapa
 
    * Esses valores podem ser definidos como variáveis de ambiente para obter mais flexibilidade.
 
 1. Verifique a edição da página no AEM.
 
-   * Implante o projeto para AEM e navegue até a página `test` criada. O conteúdo da página agora é renderizado e os componentes de AEM são editáveis.
+   * Implante o projeto no AEM e navegue até a página `test` criada. O conteúdo da página agora é renderizado e os componentes do AEM são editáveis.
 
 ## Limitações da estrutura {#framework-limitations}
 
-O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [webpack-manifest-plugin no GitHub](https://github.com/shellscape/webpack-manifest-plugin). O componente RemotePage, no entanto, só foi testado para funcionar com a estrutura React (e Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
+O componente RemotePage espera que a implementação forneça um manifesto de ativo como o [webpack-manifest-plugin no GitHub](https://github.com/shellscape/webpack-manifest-plugin). No entanto, o componente RemotePage só foi testado para funcionar com a estrutura React (e o Next.js por meio do componente remote-page-next) e, portanto, não oferece suporte ao carregamento remoto de aplicativos de outras estruturas, como o Angular.
 
 ## Recursos adicionais {#additional-resources}
 
-O material de referência a seguir pode ser útil para entender o SPA no contexto do AEM.
+O material de referência a seguir pode ser útil para entender os SPAs no contexto do AEM.
 
 * [Headful e Headless no AEM](/help/implementing/developing/headful-headless.md)
-* [O Arquétipo de Projeto AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR)
+* [O Arquétipo de Projetos AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/developing/archetype/overview)
 * [O projeto WKND SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=pt-BR)
-* [Introdução ao SPA no AEM usando o React](/help/implementing/developing/hybrid/getting-started-react.md)
+* [Introdução a SPAs no AEM usando o React](/help/implementing/developing/hybrid/getting-started-react.md)
 * [Materiais de referência de SPA (referências de API)](/help/implementing/developing/hybrid/reference-materials.md)
-* [Blueprint SPA e PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
+* [Blueprint do SPA e PageModelManager](/help/implementing/developing/hybrid/blueprint.md#pagemodelmanager)
 * [Roteamento de modelo SPA](/help/implementing/developing/hybrid/routing.md)

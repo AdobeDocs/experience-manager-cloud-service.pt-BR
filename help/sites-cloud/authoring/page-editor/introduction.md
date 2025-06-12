@@ -1,20 +1,20 @@
 ---
-title: O editor de páginas AEM
-description: O editor de página AEM é uma ferramenta poderosa para criar conteúdo.
+title: O editor de páginas do AEM
+description: O editor de página do AEM é uma ferramenta avançada de criação de conteúdo.
 exl-id: da7d5933-f6c9-4937-a483-ec4352fba86b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 39%
 
 ---
 
-# O editor de páginas AEM {#editing-page-content}
+# O editor de páginas do AEM {#editing-page-content}
 
-Depois que a página é criada no console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), você pode editar o conteúdo da página usando o editor de páginas AEM, uma ferramenta avançada de criação de conteúdo.
+Depois que a página é criada no console do [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md), você pode editar o conteúdo da página usando o editor de páginas do AEM, uma ferramenta avançada de criação de conteúdo.
 
 >[!NOTE]
 >
@@ -23,6 +23,8 @@ Depois que a página é criada no console [**Sites**](/help/sites-cloud/authorin
 >[!NOTE]
 >
 >Sua conta precisa de direitos de acesso apropriados e permissões para editar páginas. Entre em contato com o administrador do sistema se você não tiver permissões.
+
+{{traditional-aem}}
 
 ## Orientação {#orientation}
 
@@ -146,7 +148,7 @@ O editor é onde você faz as alterações diretamente no conteúdo da página. 
 
 Agora que você entende o editor de página, está pronto para editar seu conteúdo.
 
-Consulte o documento [Editando Conteúdo com o Editor de Páginas AEM](/help/sites-cloud/authoring/page-editor/edit-content.md) para obter mais informações.
+Consulte o documento [Editando Conteúdo com o Editor de Páginas do AEM](/help/sites-cloud/authoring/page-editor/edit-content.md) para obter mais informações.
 
 ## Notificação de status {#status-notification}
 
@@ -216,7 +218,7 @@ A opção **Exibir como publicado** está disponível no menu [Informações da 
 
 ## Bloquear e desbloquear uma página {#locking-unlocking}
 
-O AEM permite bloquear uma página para que mais ninguém edite o conteúdo. O bloqueio é útil ao fazer várias edições em uma página específica ou quando é necessário congelar uma página por pouco tempo.
+O AEM permite bloquear uma página para que ninguém mais possa editar o conteúdo. O bloqueio é útil ao fazer várias edições em uma página específica ou quando é necessário congelar uma página por pouco tempo.
 
 1. Selecione o ícone de **Informações da página** para abrir o menu.
 1. Selecione a opção **Bloquear página**.

@@ -5,7 +5,7 @@ exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '874'
 ht-degree: 71%
@@ -14,13 +14,15 @@ ht-degree: 71%
 
 # Recuperar informações de acesso do repositório Git {#retrieve-access}
 
+{{traditional-aem}}
+
 Saiba como o desenvolvedor de front-end usa o Cloud Manager para acessar informações do repositório Git.
 
 ## A história até agora {#story-so-far}
 
 Se você for um desenvolvedor de front-end responsável apenas pela personalização do tema do site, não precisará de conhecimento sobre como o AEM foi configurado e poderá pular para a seção [Objetivo](#objective) deste documento.
 
-Se você também desempenha a função de administrador do Cloud Manager ou AEM e desenvolvedor de front-end, aprendeu no documento anterior da jornada de Criação rápida de sites do AEM, [Conceder acesso ao desenvolvedor de front-end](grant-access.md), como integrar o desenvolvedor de front-end para que ele tenha acesso ao repositório Git, e agora você deve saber:
+Se você também desempenha a função de administrador e desenvolvedor de front-end do Cloud Manager ou do AEM, aprendeu no documento anterior da jornada de Criação rápida de sites do AEM, [Conceder acesso ao desenvolvedor de front-end](grant-access.md), como integrar o desenvolvedor de front-end para que ele tenha acesso ao repositório Git, e agora você deve saber:
 
 * Como adicionar um desenvolvedor front-end como usuário.
 * Como conceder as funções necessárias ao desenvolvedor front-end.
@@ -114,7 +116,7 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Entender, em nível superior, o que é o Cloud Manager.
 * Recuperar suas credenciais para acessar o Git do AEM e poder confirmar as personalizações.
 
-Desenvolva esse conhecimento e prossiga com sua jornada de Criação Rápida de Sites de AEM revisando a seguir o documento [Personalizar o Tema do Site](customize-theme.md), onde você aprenderá como o tema do site é criado, como personalizá-lo e como testá-lo usando conteúdo dinâmico de AEM.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites do AEM revisando a seguir o documento [Personalizar o tema do site](customize-theme.md), onde você aprenderá como o tema do site é criado, como personalizá-lo e como testá-lo usando conteúdo dinâmico do AEM.
 
 ## Recursos adicionais {#additional-resources}
 

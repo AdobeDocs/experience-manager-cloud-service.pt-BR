@@ -5,7 +5,7 @@ exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '1113'
 ht-degree: 88%
@@ -13,6 +13,8 @@ ht-degree: 88%
 ---
 
 # Entenda o Cloud Manager e o fluxo de trabalho de Criação rápida de sites {#understand-cloud-manager}
+
+{{traditional-aem}}
 
 Saiba mais sobre o Cloud Manager e como ele se vincula ao novo processo de criação rápida de sites.
 
@@ -122,7 +124,7 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Entenda como o AEM Sites e o Cloud Manager trabalham juntos para facilitar o desenvolvimento de front-end
 * Veja como a etapa de personalização de front-end é totalmente dissociada do AEM e não requer conhecimento sobre ele.
 
-Desenvolva esse conhecimento e prossiga com sua jornada de Criação Rápida de Sites de AEM revisando a seguir o documento [Criar Site a partir de Modelo](create-site.md), onde você aprenderá a criar rapidamente um novo site de AEM usando um modelo.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites do AEM, revisando a seguir o documento [Criar site a partir de modelo](create-site.md), onde você aprende a criar rapidamente um novo site do AEM usando um modelo.
 
 ## Recursos adicionais {#additional-resources}
 

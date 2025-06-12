@@ -3,10 +3,11 @@ title: Descontinuação do Editor SPA
 description: Embora o Editor de SPA continue sendo compatível com o Adobe, saiba o que sua desativação significa para o seu projeto e quais opções você tem para projetos futuros.
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 7bff178eabdf7e0d89e7195be6ca109db19ee655
+exl-id: 58b1bb4a-33df-46df-8743-a56cefc5a60a
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '914'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -32,7 +33,7 @@ A desativação significa que os seguintes SDKs estão agora no congelamento de 
 * [Núcleo do projeto do AEM SPA](https://github.com/adobe/aem-spa-project-core)
 * [Gerenciador de Modelos de Página SPA do AEM](https://github.com/adobe/aem-spa-page-model-manager)
 * [Mapeamento de componentes do SPA do AEM](https://github.com/adobe/aem-spa-component-mapping)
-* [Componentes editáveis do AEM SPA React](https://github.com/adobe/aem-react-editable-components)
+* [Componentes editáveis do editor de SPA do AEM](https://github.com/adobe/aem-react-editable-components)
    * [Componentes principais do AEM React](https://github.com/adobe/aem-react-core-wcm-components)
    * [Base dos Componentes Principais do AEM React](https://github.com/adobe/aem-react-core-wcm-components-base)
    * [Componentes principais do AEM React SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
@@ -50,7 +51,7 @@ O substituto mais adequado para o Editor de SPA depende das necessidades dos pro
 
 * **[O Editor Universal](/help/edge/wysiwyg-authoring/authoring.md)** é a melhor substituição direta para o Editor SPA.
    * O Editor universal também é um editor visual e foi projetado especificamente para implementações dissociadas, incorporando toda a experiência do Adobe no Editor SPA.
-   * O Universal Editor também foi [lançado para o AEM 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (com a versão 2024.11.05 do AEM 6.5) e, portanto, é compatível com AMS e casos de uso no local, além do Cloud Services.
+   * O Universal Editor também foi [lançado para o AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/developing/headless/universal-editor/introduction) (com a versão 2024.11.05 do AEM 6.5) e, portanto, é compatível com AMS e casos de uso no local, além do Cloud Services.
 * **[O Editor de Fragmento de Conteúdo](/help/assets/content-fragments/content-fragments-managing.md)** é uma alternativa para aqueles que preferem um editor baseado em formulário.
    * O Editor de fragmento de conteúdo é mais adequado quando o conteúdo é estruturado como fragmentos de conteúdo do que como páginas.
 

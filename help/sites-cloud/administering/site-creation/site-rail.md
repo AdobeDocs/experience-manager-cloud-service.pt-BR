@@ -5,7 +5,7 @@ feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 31%
@@ -14,6 +14,8 @@ ht-degree: 31%
 
 
 # Usar o painel Site para gerenciar o tema do site {#site-panel}
+
+{{traditional-aem}}
 
 Conheça os recursos avançados do painel Site para ajudá-lo a personalizar e gerenciar facilmente o tema do site.
 
@@ -34,7 +36,7 @@ O painel Site é usado para gerenciar informações relacionadas ao tema e ao mo
 
 ## Baixar fontes de tema {#downloading-theme-sources}
 
-Ao criar um site no AEM com base em um [modelo de site](site-templates.md), você pode baixar seu [tema de site](site-themes.md) usando o painel Site.
+Ao criar um site no AEM com base em um [modelo de site](site-templates.md), você pode baixar o [tema do site](site-themes.md) usando o painel Site.
 
 Com o painel Site sendo exibido no console de sites, selecione a raiz do site para revelar informações de tema sobre ele.
 

@@ -4,12 +4,14 @@ description: Para aplicativos de página única no AEM, o aplicativo é respons�
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
 
 ---
+
 
 # Roteamento de modelo SPA{#spa-model-routing}
 
@@ -19,15 +21,15 @@ Para aplicativos de página única no AEM, o aplicativo é responsável pelo rot
 
 ## Roteamento do projeto {#project-routing}
 
-O aplicativo é o proprietário do roteamento e é implementado pelos desenvolvedores de front-end do projeto. Este documento descreve o roteamento específico para o modelo retornado pelo servidor AEM. A estrutura de dados do modelo de página expõe o URL do recurso subjacente. O projeto de front-end pode usar qualquer biblioteca personalizada ou de terceiros fornecendo funcionalidades de roteamento. Quando uma rota espera um fragmento de modelo, é possível fazer uma chamada para a função `PageModelManager.getData()`. Quando uma rota de modelo é alterada, um evento deve ser acionado para avisar as bibliotecas de escuta, como o Editor de páginas.
+O aplicativo é o proprietário do roteamento e é implementado pelos desenvolvedores de front-end do projeto. Este documento descreve o roteamento específico para o modelo retornado pelo servidor do AEM. A estrutura de dados do modelo de página expõe o URL do recurso subjacente. O projeto de front-end pode usar qualquer biblioteca personalizada ou de terceiros fornecendo funcionalidades de roteamento. Quando uma rota espera um fragmento de modelo, é possível fazer uma chamada para a função `PageModelManager.getData()`. Quando uma rota de modelo é alterada, um evento deve ser acionado para avisar as bibliotecas de escuta, como o Editor de páginas.
 
 ## Arquitetura {#architecture}
 
-Para obter uma descrição detalhada, consulte a seção [PageModelManager](blueprint.md#pagemodelmanager) do documento Blueprint do SPA.
+Para obter uma descrição detalhada, consulte a seção [PageModelManager](blueprint.md#pagemodelmanager) do documento do SPA Blueprint.
 
 ## RoteadorModelo {#modelrouter}
 
-O `ModelRouter`, quando habilitado, encapsula as funções `pushState` e `replaceState` da API do Histórico de HTML5 para garantir que determinado fragmento de modelo seja buscado previamente e esteja acessível. Em seguida, notifica o componente de front-end registrado de que o modelo foi modificado.
+O `ModelRouter`, quando habilitado, encapsula as funções `pushState` e `replaceState` da API do Histórico do HTML5 para garantir que determinado fragmento de modelo seja buscado previamente e esteja acessível. Em seguida, notifica o componente de front-end registrado de que o modelo foi modificado.
 
 ## Roteiro de Modelo Manual vs. Automático {#manual-vs-automatic-model-routing}
 
@@ -39,7 +41,7 @@ O `ModelRouter` automatiza a busca de fragmentos do modelo. Mas, como qualquer f
 
 ## Contrato de Encaminhamento {#routing-contract}
 
-A implementação atual baseia-se no pressuposto de que o projeto SPA usa a API de Histórico HTML5 para roteamento para as diferentes páginas de aplicativos.
+A implementação atual é baseada no pressuposto de que o projeto de SPA usa a API de histórico do HTML5 para roteamento para diferentes páginas de aplicativos.
 
 ### Configuração {#configuration}
 

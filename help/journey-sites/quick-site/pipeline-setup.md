@@ -5,7 +5,7 @@ exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 79%
@@ -13,6 +13,8 @@ ht-degree: 79%
 ---
 
 # Configurar o seu pipeline {#set-up-your-pipeline}
+
+{{traditional-aem}}
 
 Crie um pipeline de front-end para gerenciar a personalização do tema do seu site.
 
@@ -114,7 +116,7 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Entender o que é um pipeline de front-end.
 * Saber como configurar um pipeline de front-end no Cloud Manager.
 
-Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites de AEM revisando a seguir o documento [Conceder acesso ao desenvolvedor de front-end](grant-access.md), onde você integrará os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao seu repositório Git e pipeline do site de AEM.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites do AEM, revisando a seguir o documento [Conceder acesso ao desenvolvedor de front-end](grant-access.md), onde você integrará os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao seu repositório e pipeline de Git do site do AEM.
 
 ## Recursos adicionais {#additional-resources}
 

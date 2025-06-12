@@ -1,11 +1,11 @@
 ---
 title: Organizar páginas
-description: Saiba como organizar seu site com AEM.
+description: Saiba como organizar seu site com o AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 67%
@@ -15,13 +15,11 @@ ht-degree: 67%
 
 # Organizar páginas {#creating-and-organizing-pages}
 
-Saiba como organizar seu site com AEM. Assim que você entender como precisa organizar suas páginas, poderá [criar novas páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) e [gerenciar páginas existentes](/help/sites-cloud/authoring/sites-console/managing-pages.md).
-
-{{edge-delivery-authoring}}
+Saiba como organizar seu site com o AEM. Assim que você entender como precisa organizar suas páginas, poderá [criar novas páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) e [gerenciar páginas existentes](/help/sites-cloud/authoring/sites-console/managing-pages.md).
 
 ## Organizar seu site {#organizing-your-site}
 
-Como autor, você precisa organizar seu site dentro do AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
+Como autor, você precisa organizar seu site no AEM. Isso envolve criar e nomear suas páginas de conteúdo de modo que:
 
 * Você pode encontrá-las facilmente no ambiente de criação
 * Os visitantes do seu site possam navegar facilmente por elas no ambiente de publicação
@@ -77,7 +75,7 @@ O **Título** da página e o **Nome** podem ser criados separadamente, mas estã
 >
 >Lembre-se também de que alguns navegadores (por exemplo, versões mais antigas do IE) só podem aceitar URLs com um limite de comprimento, por isso também há um motivo técnico para manter os nomes de página curtos.
 
-Ao criar uma página, AEM [valida o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
+Ao criar uma página, o AEM [valida o nome da página de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
 
 Os caracteres mínimos permitidos são:
 
@@ -95,7 +93,7 @@ Detalhes completos sobre todos os caracteres permitidos podem ser encontrados na
 
 ### Título {#title}
 
-Se você fornecer apenas uma página **Título** ao criar uma página, o AEM derivará a página **Nome** desta cadeia de caracteres e [validará o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
+Se você fornecer apenas uma página **Título** ao criar uma página, a AEM derivará a página **Nome** desta cadeia de caracteres e [validará o nome de acordo com as convenções](/help/implementing/developing/introduction/naming-conventions.md) impostas pelo AEM e JCR.
 
 Um campo de **Título** contendo caracteres inválidos é aceito, mas o nome derivado terá os caracteres inválidos substituídos. Por exemplo:
 
@@ -130,7 +128,7 @@ O AEM vem com vários modelos prontos para uso. Os modelos disponíveis dependem
 
 ## Componentes {#components}
 
-[Componentes](/help/implementing/developing/components/overview.md) são os elementos fornecidos pelo AEM para que você possa adicionar tipos específicos de conteúdo. O AEM vem com uma variedade de componentes prontos para uso, chamados [de Componentes principais](/help/implementing/developing/components/overview.md#core-components), que fornecem funcionalidade abrangente. Alguns exemplos dos componentes são:
+[Componentes](/help/implementing/developing/components/overview.md) são os elementos fornecidos pelo AEM para que você possa adicionar tipos específicos de conteúdo. O AEM vem com vários componentes prontos para uso, chamados [de Componentes principais](/help/implementing/developing/components/overview.md#core-components), que fornecem funcionalidade abrangente. Alguns exemplos dos componentes são:
 
 * Texto
 * Imagem

@@ -5,7 +5,7 @@ exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 81%
@@ -14,11 +14,13 @@ ht-degree: 81%
 
 # Personalizar o tema do site {#customize-the-site-theme}
 
+{{traditional-aem}}
+
 Saiba como o tema do site é criado, como personalizar e como testar usando conteúdo dinâmico do AEM.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de Criação rápida de site do AEM, [Recuperar informações de acesso do repositório Git](retrieve-access.md), você aprendeu como o desenvolvedor de front-end usa o Cloud Manager para acessar as informações do repositório Git; agora, você deve:
+No documento anterior da jornada de Criação rápida de sites do AEM, [Recuperar informações de acesso do repositório Git](retrieve-access.md), você aprendeu como o desenvolvedor de front-end usa o Cloud Manager para acessar as informações do repositório Git; agora, você deverá:
 
 * Entender, em nível superior, o que é o Cloud Manager.
 * Recuperar suas credenciais para acessar o Git do AEM e poder confirmar as personalizações.
@@ -138,7 +140,7 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Compreender como testar as personalizações de tema usando conteúdo real do AEM por meio de um proxy local.
 * Saber como confirmar as alterações no repositório Git do AEM.
 
-Desenvolva esse conhecimento e prossiga com sua jornada de Criação Rápida de Sites de AEM revisando a seguir o documento [Implante Seu Tema Personalizado](deploy-theme.md), onde você aprenderá a implantar o tema usando o pipeline de front-end.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites do AEM, revisando a seguir o documento [Implante seu tema personalizado](deploy-theme.md), onde você aprenderá a implantar o tema usando o pipeline de front-end.
 
 ## Recursos adicionais {#additional-resources}
 

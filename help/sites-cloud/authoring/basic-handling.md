@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 9a700e9eb3116252f42bb08db9dadc0e8a6adbf7
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 61%
@@ -19,9 +19,7 @@ Este documento foi projetado para fornecer uma visão geral do manuseio básico 
 
 >[!TIP]
 >
->Atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar o console de sites](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) e [o editor de páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
-
-{{edge-delivery-authoring}}
+>Os atalhos de teclado estão disponíveis em todo o AEM. Principalmente ao [usar o console de sites](/help/sites-cloud/authoring/sites-console/keyboard-shortcuts.md) e [o editor de páginas](/help/sites-cloud/authoring/page-editor/keyboard-shortcuts.md).
 
 ## Uma interface de usuário habilitada para toque {#a-touch-enabled-ui}
 
@@ -37,7 +35,7 @@ Para obter uma boa compreensão do uso básico do AEM, este documento se baseia 
 
 ## Navegação do produto   {#product-navigation}
 
-Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Reserve um minuto para fazer uma seleção e obter uma boa visão geral do tratamento básico do AEM.
+Sempre que um usuário acessa um console pela primeira vez, um tutorial de navegação de produto é iniciado. Reserve um minuto para acessar para obter uma boa visão geral do manuseio básico do AEM.
 
 ![Tutorial de navegação](assets/basic-handling-tutorial.png)
 
@@ -102,7 +100,7 @@ O cabeçalho está sempre presente na parte superior da tela. Embora a maioria d
 
 * Sua organização IMS - selecione para alterar se necessário.
 
-* [Soluções](https://www.adobe.com/br/experience-cloud.html) - Selecione esta opção para acessar suas outras soluções de Adobe.
+* [Soluções](https://www.adobe.com/br/experience-cloud.html) - Selecione esta opção para acessar suas outras soluções da Adobe.
 
   ![Botão Soluções](/help/sites-cloud/authoring/assets/basic-handling-solutions.png)
 
@@ -130,7 +128,7 @@ Há vários recursos de ajuda disponíveis e algumas maneiras de acessá-los.
 
   ![Ícone da ajuda](assets/basic-handling-help.png)
 
-* **Console** - Na primeira vez que você navega pelo sistema, [uma série de slides apresenta a navegação por AEM](#product-navigation).
+* **Console** - Na primeira vez que você navega pelo sistema, [uma série de slides apresenta a navegação no AEM](#product-navigation).
 
   ![Tutorial](assets/basic-handling-console-tutorial.png)
 

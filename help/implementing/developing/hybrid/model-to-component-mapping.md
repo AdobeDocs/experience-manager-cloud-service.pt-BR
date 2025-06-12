@@ -1,25 +1,27 @@
 ---
-title: Modelo dinâmico para mapeamento de componentes para SPA
-description: Este artigo descreve como ocorre o modelo dinâmico para o mapeamento de componentes no JavaScript SPA SDK para AEM.
+title: Modelo dinâmico para mapeamento de componentes para SPAs
+description: Este artigo descreve como o modelo dinâmico para mapeamento de componentes ocorre no JavaScript SPA SDK for AEM.
 exl-id: 3a7b3f26-4a09-40c1-af03-bb8408a68e57
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: e06766160009eaa1bbc41bbf7cfad967a5195e71
+index: false
+source-git-commit: 7a9d947761b0473f5ddac3c4d19dfe5bed5b97fe
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
 
 ---
 
-# Modelo dinâmico para mapeamento de componentes para SPA {#dynamic-model-to-component-mapping-for-spas}
 
-Este documento descreve como ocorre o modelo dinâmico para mapeamento de componentes no JavaScript SPA SDK para AEM.
+# Modelo dinâmico para mapeamento de componentes para SPAs {#dynamic-model-to-component-mapping-for-spas}
+
+Este documento descreve como o modelo dinâmico para mapeamento de componentes ocorre no JavaScript SPA SDK for AEM.
 
 {{ue-over-spa}}
 
 ## Módulo ComponentMapping {#componentmapping-module}
 
-O módulo `ComponentMapping` é fornecido como um pacote NPM para o projeto front-end. Ele armazena componentes de front-end e fornece uma maneira para o Aplicativo de página única mapear componentes de front-end para tipos de recursos de AEM. O módulo permite uma resolução dinâmica de componentes ao analisar o modelo JSON do aplicativo.
+O módulo `ComponentMapping` é fornecido como um pacote NPM para o projeto front-end. Ele armazena componentes de front-end e fornece uma maneira para o Aplicativo de página única mapear componentes de front-end para tipos de recursos do AEM. O módulo permite uma resolução dinâmica de componentes ao analisar o modelo JSON do aplicativo.
 
 Cada item presente no modelo contém um campo `:type` que expõe um tipo de recurso AEM. Quando montado, o componente de front-end pode ser renderizado usando o fragmento de modelo que recebeu das bibliotecas subjacentes.
 

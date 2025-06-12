@@ -5,7 +5,7 @@ exl-id: fe065972-39db-4074-a802-85895c701efd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 82%
@@ -13,6 +13,8 @@ ht-degree: 82%
 ---
 
 # Implantar um tema personalizado {#deploy-your-customized-theme}
+
+{{traditional-aem}}
 
 Saiba como implantar o tema do site usando o pipeline.
 
@@ -115,7 +117,7 @@ Veja a seguir alguns recursos adicionais que explicam melhor alguns conceitos me
 * [Tema de site do AEM](https://github.com/adobe/aem-site-template-standard-theme-e2e) - este é o repositório GitHub do tema de site do AEM.
 * [npm](https://www.npmjs.com) - temas do AEM usados para criar sites rapidamente se baseiam em npm.
 * [webpack](https://webpack.js.org) - temas do AEM usados para criar sites rapidamente dependem do webpack.
-* [Organizando páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Este guia detalha como organizar páginas do seu site AEM.
+* [Organizando páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Este guia detalha como organizar páginas do site do AEM.
 * [Criando Páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Este guia detalha como adicionar novas páginas ao site.
 * [Gerenciando Páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Este guia detalha como gerenciar as páginas do site, incluindo movimentação, cópia e exclusão.
 * [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md) - Os pacotes permitem a importação e exportação de conteúdo do repositório. Este documento explica como trabalhar com pacotes no AEM 6.5, o que também se aplica ao AEMaaCS.

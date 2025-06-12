@@ -5,7 +5,7 @@ exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '776'
 ht-degree: 74%
@@ -14,11 +14,13 @@ ht-degree: 74%
 
 # Conceder acesso ao desenvolvedor de front-end {#grant-fed-access}
 
+{{traditional-aem}}
+
 Integre os desenvolvedores de front-end no Cloud Manager para que eles tenham acesso ao repositório do Git e pipeline de site do AEM.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de Criação rápida de sites do AEM, [Configurar o pipeline](pipeline-setup.md), você aprendeu a criar um pipeline de front-end para gerenciar a personalização do tema do site, e agora deverá:
+No documento anterior da jornada de Criação rápida de sites do AEM, [Configurar o pipeline](pipeline-setup.md), você aprendeu a criar um pipeline de front-end para gerenciar a personalização do tema do site; agora, você deverá:
 
 * Entender o que é um pipeline de front-end.
 * Saber como configurar um pipeline de front-end no Cloud Manager.
@@ -101,7 +103,7 @@ Agora que concluiu esta parte da jornada de criação rápida de site do AEM, vo
 * Como adicionar um desenvolvedor front-end como usuário.
 * Como conceder as funções necessárias ao desenvolvedor front-end.
 
-Aplique esse conhecimento e prossiga com sua jornada de Criação rápida de sites de AEM revisando o documento [Recuperar informações de acesso do repositório Git](retrieve-access.md), que alterna a perspectiva exclusivamente para o desenvolvedor de front-end e explica como ele usa o Cloud Manager para acessar as informações do repositório Git.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites do AEM, revisando a seguir o documento [Recuperar informações de acesso do repositório Git](retrieve-access.md), que alterna a perspectiva exclusivamente para o desenvolvedor de front-end e explica como ele usa o Cloud Manager para acessar as informações do repositório Git.
 
 ## Recursos adicionais {#additional-resources}
 

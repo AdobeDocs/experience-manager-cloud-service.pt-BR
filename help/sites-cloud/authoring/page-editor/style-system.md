@@ -5,20 +5,27 @@ exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d2cd112de034ca6ea22590245fb480622acf258a
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 85%
+source-wordcount: '1338'
+ht-degree: 83%
 
 ---
 
-# Sistema de estilos{#style-system}
+
+# Sistema de estilos {#style-system}
 
 O sistema de estilos permite ao autor do modelo definir classes de estilo na política de conteúdo de um componente para que autores de conteúdo possam selecioná-las ao editarem o componente em uma página. Esses estilos podem ser variações visuais alternativas de um componente, tornando esse componente mais flexível.
 
 Isso elimina a necessidade de desenvolver um componente personalizado para cada estilo ou personalizar a caixa de diálogo do componente para habilitar essa funcionalidade de estilo. Isso resulta em mais componentes reutilizáveis que podem ser adaptados de forma rápida e fácil às necessidades de autores(as) de conteúdo sem nenhum desenvolvimento de back-end do AEM.
 
-## Caso de uso  {#use-case}
+>[!NOTE]
+>
+>O Sistema de estilos se aplica somente às páginas criadas com o Editor de páginas.
+>
+>As Páginas de Estilo criadas com o [Editor Universal](/help/implementing/universal-editor/introduction.md) e fornecidas com o [Edge Delivery Services](/help/edge/overview.md) podem ser inteiramente criadas por meio de seu projeto GitHub.
+
+## Caso de uso {#use-case}
 
 Os autores de modelo não precisam apenas da capacidade de configurar como os componentes funcionam para os autores de conteúdo, mas também de configurar várias variações visuais alternativas de um componente.
 
@@ -49,7 +56,7 @@ O uso do Sistema de estilos geralmente funciona da seguinte maneira.
 
 1. O autor da página do AEM pode escolher os estilos criados no editor de páginas no menu de estilo da barra de ferramentas do componente.
 
-Somente as três últimas etapas são realmente realizadas no AEM. Isso significa que todo o desenvolvimento de CSS e JavaScript necessários pode ser feito sem o AEM.
+Somente as três últimas etapas são realizadas no AEM. Isso significa que todo o desenvolvimento de CSS e JavaScript necessários pode ser feito sem o AEM.
 
 Na verdade, a implementação de estilos requer apenas a implantação no AEM e a seleção dos componentes dos modelos desejados.
 
@@ -123,7 +130,7 @@ Para que um componente funcione com o sistema de estilos do AEM e mostre a guia 
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+>Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio da [Mesclagem de recursos do Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 Com o componente configurado, os estilos configurados pelos(as) autores(as) da página são inseridos automaticamente pelo AEM no elemento de decoração que o AEM envolve automaticamente em torno de cada componente editável. O componente em si não precisa fazer mais nada para que isso aconteça.
 
@@ -137,7 +144,7 @@ A guia Editar pode ser incluída de maneira semelhante na guia Design:
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
 >[!NOTE]
->Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
+>Essa configuração aplica [sobreposições](/help/implementing/developing/introduction/overlays.md) por meio do [Mesclagem de recursos do Sling](/help/implementing/developing/introduction/sling-resource-merger.md).
 
 >[!NOTE]
 >

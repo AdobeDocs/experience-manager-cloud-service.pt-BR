@@ -1,11 +1,11 @@
 ---
 title: Criar site a partir de modelo
-description: Saiba como criar rapidamente um site de AEM usando um modelo de site.
+description: Saiba como criar rapidamente um site do AEM usando um modelo de site.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
 solution: Experience Manager Sites
 feature: Developing
 role: Admin, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
 workflow-type: tm+mt
 source-wordcount: '1485'
 ht-degree: 67%
@@ -14,7 +14,9 @@ ht-degree: 67%
 
 # Criar site a partir de modelo {#create-site-from-template}
 
-Saiba como criar rapidamente um site de AEM usando um modelo de site.
+{{traditional-aem}}
+
+Saiba como criar rapidamente um site do AEM usando um modelo de site.
 
 ## A história até agora {#story-so-far}
 
@@ -27,7 +29,7 @@ Este artigo se baseia nesses fundamentos para que você possa executar a primeir
 
 ## Objetivo {#objective}
 
-Este documento ajuda você a entender como criar rapidamente um site de AEM usando um modelo de site. Depois de ler esse documento, você deverá:
+Este documento ajuda você a entender como criar rapidamente um site do AEM usando um modelo de site. Depois de ler esse documento, você deverá:
 
 * Entenda como obter modelos de site do AEM.
 * Saiba como criar um site usando um modelo.
@@ -54,7 +56,7 @@ Os modelos são eficientes porque são reutilizáveis para que os autores de con
 
 ## Obter um modelo de site {#obtaining-template}
 
-A maneira mais simples de começar é [baixar a versão mais recente do Modelo de Site Padrão de AEM do repositório do GitHub](https://github.com/adobe/aem-site-template-standard/releases).
+A maneira mais simples de começar é [baixar a versão mais recente do Modelo de Site Padrão do AEM do repositório do GitHub](https://github.com/adobe/aem-site-template-standard/releases).
 
 Após o download, você pode carregá-lo no ambiente do AEM como faria com qualquer outro pacote. Consulte a [seção Recursos adicionais](#additional-resources) para obter detalhes sobre como trabalhar com pacotes se precisar de mais informações sobre este tópico.
 
@@ -150,7 +152,7 @@ Agora você tem uma cópia dos arquivos da fonte do tema nos arquivos baixados.
 
 Para que o desenvolvedor de front-end visualize as personalizações usando o conteúdo real do AEM do site, é necessário configurar um usuário proxy.
 
-1. No AEM da navegação principal, vá para **Ferramentas** > **Segurança** > **Usuários**.
+1. Na navegação principal do AEM, vá para **Ferramentas** > **Segurança** > **Usuários**.
 1. No console de gerenciamento de usuários, selecione **Criar**.
 
    ![Console de gerenciamento de usuários](assets/user-management-console.png)
@@ -177,14 +179,14 @@ Agora que concluiu esta parte da jornada de Criação rápida de sites do AEM, v
 * Saiba como criar um site usando um modelo.
 * Veja como baixar o modelo do seu novo site para fornecer ao desenvolvedor de front-end.
 
-Desenvolva esse conhecimento e prossiga com sua jornada de Criação Rápida de Sites de AEM revisando a seguir o documento [Configurar o Pipeline](pipeline-setup.md), onde você criará um pipeline de front-end para gerenciar a personalização do tema do site.
+Desenvolva esse conhecimento e prossiga com sua jornada de Criação rápida de sites do AEM, revisando a seguir o documento [Configurar o pipeline](pipeline-setup.md), onde você criará um pipeline de front-end para gerenciar a personalização do tema do site.
 
 ## Recursos adicionais {#additional-resources}
 
 Embora seja recomendável seguir para a próxima parte da jornada de Criação rápida de sites revisando o documento [Configurar o pipeline](pipeline-setup.md), os recursos opcionais a seguir fornecerão uma melhor explicação dos conceitos mencionados neste documento. Porém, eles não são obrigatórios para continuar na jornada.
 
 * [Modelo de site padrão do AEM](https://github.com/adobe/aem-site-template-standard) - Este é o repositório GitHub do modelo de site padrão do AEM.
-* [Organizando Páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Este guia detalha como organizar as páginas do seu Site AEM.
+* [Organizando páginas](/help/sites-cloud/authoring/sites-console/organizing-pages.md) - Este guia detalha como organizar as páginas do seu site do AEM.
 * [Criando Páginas](/help/sites-cloud/authoring/sites-console/creating-pages.md) - Este guia detalha como adicionar novas páginas ao site.
 * [Gerenciando Páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md) - Este guia detalha como gerenciar as páginas do site, incluindo movimentação, cópia e exclusão.
 * [Como trabalhar com pacotes](/help/implementing/developing/tools/package-manager.md) - Os pacotes permitem a importação e exportação de conteúdo do repositório. Este documento explica como trabalhar com pacotes no AEM 6.5, o que também se aplica ao AEMaaCS.

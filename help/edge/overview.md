@@ -4,9 +4,9 @@ description: Entenda como o AEM as a Cloud Service pode se beneficiar do desempe
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 8be0a9894bb5b3a138c0ec40a437d6c8e4bc7e25
+source-git-commit: ad9592c705c7b26292a29b43997edadfa01ccb65
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1321'
 ht-degree: 1%
 
 ---
@@ -21,6 +21,12 @@ Ao usar o Edge Delivery Services, você pode:
 * Crie sites rápidos com uma pontuação Lighthouse perfeita e monitore continuamente o desempenho do site por meio da Telemetria operacional.
 * Aumente a eficiência da criação desvinculando as fontes de conteúdo. Pronto para uso, você pode usar a criação do AEM com o Editor universal e a criação baseada em documento. Dessa forma, você pode trabalhar com várias fontes de conteúdo no mesmo site.
 * Use uma estrutura de experimentação integrada que permita a criação rápida de testes, a execução sem impacto no desempenho e a liberação rápida para a produção de um vencedor de testes.
+
+>[!TIP]
+>
+>**Deseja colocar as mãos na prática imediatamente?**
+>
+>Se você quiser colocar as mãos na prática imediatamente, poderá iniciar seu próprio projeto do Edge Delivery Services com a criação do AEM em menos de 30 minutos [conferindo o tutorial no aem.live.](https://www.aem.live/developer/ue-tutorial)
 
 ## Reação ágil às necessidades dos negócios {#agile-reaction}
 
@@ -54,6 +60,22 @@ O diagrama a seguir ilustra como você pode editar conteúdo no Microsoft Word (
 
 O Edge Delivery Services usa o GitHub para que você possa gerenciar e implantar o código diretamente do seu repositório GitHub. O novo conteúdo é adicionado instantaneamente, sem um processo de reconstrução.
 
+### Criação no AEM com o editor universal{#wysiwyg-authoring}
+
+O Editor universal é um local personalizado com tudo o que você vê é o que você obtém (WYSIWYG) para editar conteúdo em tempo real e em contexto com uma visualização visual.
+
+* Com a criação do AEM com o Editor universal, você aumenta a eficiência do autor, seja headless ou headful.
+* Você pode aproveitar os recursos abrangentes de gerenciamento de conteúdo do AEM, incluindo fluxo de trabalho e governança.
+* Aproveite vários pontos de extensão para dar suporte a seus próprios processos e integrações.
+* A funcionalidade do site pode ser desenvolvida usando CSS e JavaScript no GitHub.
+
+![Criação do AEM com o Editor Universal](assets/wysiwyg-authoring.png)
+
+Introdução à criação do AEM com o Editor universal e o Edge Delivery Services:
+
+* Para obter uma visão geral da criação do AEM com o Universal Editor, consulte o documento [Criação com o AEM para Edge Delivery Services](https://www.aem.live/docs/aem-authoring) na documentação aem.live.
+* Para obter uma visão geral do desenvolvedor, consulte o documento [Introdução - Tutorial do desenvolvedor do Universal Editor](https://www.aem.live/developer/ue-tutorial) na documentação do aem.live.
+
 ### Criação baseada em documento {#document-based}
 
 Com a criação baseada em documentos, é possível usar o conteúdo diretamente do Microsoft Word ou Google Docs, de modo que essas fontes se tornem páginas no site. Cabeçalhos, listas, imagens e elementos de fonte podem ser transferidos da origem inicial para o site.
@@ -71,22 +93,6 @@ Leitura adicional na documentação de criação baseada em documento:
 * Para entender como criar e publicar conteúdo usando o Edge Delivery, consulte a [seção Publicar da documentação do aem.live.](https://www.aem.live/docs/authoring)
 * Para entender como iniciar corretamente o projeto do seu site, consulte a [seção Launch da documentação aem.live](https://www.aem.live/docs/#launch)
 
-### Criação no AEM com o editor universal{#wysiwyg-authoring}
-
-O Editor universal é um local personalizado com tudo o que você vê é o que você obtém (WYSIWYG) para editar conteúdo em tempo real e em contexto com uma visualização visual.
-
-* Com a criação do AEM com o Editor universal, você aumenta a eficiência do autor, seja headless ou headful.
-* Você pode aproveitar os recursos abrangentes de gerenciamento de conteúdo do AEM, incluindo fluxo de trabalho e governança.
-* Aproveite vários pontos de extensão para dar suporte a seus próprios processos e integrações.
-* A funcionalidade do site pode ser desenvolvida usando CSS e JavaScript no GitHub.
-
-![Criação do AEM com o Editor Universal](assets/wysiwyg-authoring.png)
-
-Introdução à criação do AEM com o Editor universal e o Edge Delivery Services:
-
-* Para obter uma visão geral da criação do AEM com o Universal Editor, consulte o documento [Criação com o AEM para Edge Delivery Services](https://www.aem.live/docs/aem-authoring) na documentação aem.live.
-* Para obter uma visão geral do desenvolvedor, consulte o documento [Introdução - Tutorial do desenvolvedor do Universal Editor](https://www.aem.live/developer/ue-tutorial) na documentação do aem.live.
-
 ### Decidindo sobre seu método de criação {#authoring-method}
 
 A flexibilidade da AEM garante que suas necessidades de criação sejam atendidas. O Adobe pode ajudá-lo a determinar qual método (ou métodos) melhor atende às suas necessidades.
@@ -102,7 +108,7 @@ O Edge Delivery Services faz parte do Adobe Experience Manager. Dessa forma, o E
 
 Consulte o documento [Introdução - Tutorial do desenvolvedor do Universal Editor](https://www.aem.live/developer/ue-tutorial) na documentação do aem.live para saber como iniciar seu próprio projeto para criar com o AEM e o Edge Delivery Services.
 
-Você também pode usar o Edge Delivery Services com o [Adobe Target](https://www.aem.live/developer/target-integration), a [Telemetria Operacional](https://www.aem.live/developer/rum) para diagnosticar o uso e o desempenho de seus sites e o [Launch.](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/home)
+Você também pode usar o Edge Delivery Services com o [Adobe Target](https://www.aem.live/developer/target-integration), a [Telemetria Operacional](https://www.aem.live/developer/rum) para diagnosticar o uso e o desempenho de seus sites e o [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Obtendo ajuda do Adobe {#getting-help}
 
