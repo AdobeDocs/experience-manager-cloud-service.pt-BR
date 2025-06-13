@@ -4,9 +4,9 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: b893663d-35f1-43ae-a029-4c249b117f2d
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 403ffbede5438131d0b0e770215b990e2d16c018
 workflow-type: tm+mt
-source-wordcount: '1523'
+source-wordcount: '1527'
 ht-degree: 12%
 
 ---
@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Os Assets armazenados em diferentes Programas AEM as a Cloud Service que não Fr
 
 **Implantação do editor de fragmento de conteúdo**
 
-Continuaremos ativando o novo Editor de fragmento de conteúdo com base na interface do usuário do Spectrum no AEM as a Cloud Service. Depois de se tornar o padrão para todos os ambientes do Cloud Service Developer em novembro de 2024, ele será definido como padrão para todos os ambientes de preparo em 1º de abril de 2025 e para todos os ambientes de produção em 1º de maio de 2025. Em todos os casos, os usuários ainda terão a opção de reverter para o Editor de fragmento de conteúdo tradicional na interface para toque do AEM.
+Continuaremos habilitando o novo [Editor de Fragmento de Conteúdo](/help/sites-cloud/administering/content-fragments/authoring.md) no AEM as a Cloud Service, usando o [Shell Unificado](/help/overview/aem-cloud-service-on-unified-shell.md) (usando a Interface do Usuário do Espectro). Depois de se tornar o padrão para todos os ambientes do Cloud Service Developer em novembro de 2024, ele será definido como padrão para todos os ambientes de preparo em 1º de abril de 2025 e para todos os ambientes de produção em 1º de maio de 2025. Em todos os casos, os usuários ainda terão a opção de reverter para o Editor de fragmento de conteúdo tradicional na interface para toque do AEM.
 
 **API HTTP de tradução**
 
@@ -141,7 +141,7 @@ Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@a
 
 Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas ao criar projetos do Adobe Developer Console.
 
-Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra a configuração e o uso.
+Saiba mais sobre as [APIs do AEM baseadas em OpenAPI](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/invoke-openapi-based-aem-apis) que ilustra a configuração e o uso.
 
 Especificamente, os endpoints de API listados abaixo estão disponíveis como parte de um programa de adoção antecipada. Se estiver interessado, envie um email para [aem-apis@adobe.com](mailto:aem-apis@adobe.com) descrevendo como você pretende usá-los.
 
@@ -158,7 +158,7 @@ Qualquer pessoa pode acessar o beta público clicando no botão *Novo Console Di
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/release-notes/cloud-release-notes/2025-releases/2502-release/whats-new-2025-02-0).
 
 ## Cloud Manager {#cloud-manager}
 

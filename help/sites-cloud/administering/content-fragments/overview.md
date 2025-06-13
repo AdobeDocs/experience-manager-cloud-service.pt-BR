@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User, Developer, Architect
 exl-id: ce9cb811-57d2-4a57-a360-f56e07df1b1a
 solution: Experience Manager Sites
-source-git-commit: 3950df27533bf545d33da39a9f5fe9819820134a
+source-git-commit: e9491b732556cc018f24ac7e7e2040c26b330dc0
 workflow-type: tm+mt
-source-wordcount: '1987'
+source-wordcount: '2014'
 ht-degree: 35%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 35%
 # Uma visão geral do trabalho com fragmentos de conteúdo {#overview-working-with-content-fragments}
 
 Com o Adobe Experience Manager (AEM) as a Cloud Service, os fragmentos de conteúdo permitem projetar, criar, preparar e publicar conteúdo independente de página. Eles permitem preparar conteúdo pronto para uso em vários locais e em vários canais, ideal para [entrega headless](/help/headless/what-is-headless.md) e [criação de página](/help/sites-cloud/authoring/fragments/content-fragments.md).
+
+>[!IMPORTANT]
+>
+>Muitos recursos descritos nesta seção estão *somente* disponíveis no [Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md); portanto, o *online* Adobe Experience Manager (AEM) as a Cloud Service, não é uma instância local.
 
 >[!IMPORTANT]
 >
