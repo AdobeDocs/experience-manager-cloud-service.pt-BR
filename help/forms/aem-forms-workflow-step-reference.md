@@ -3,29 +3,29 @@ title: Quais etapas de fluxo de trabalho estão disponíveis para o AEM Forms Cl
 description: Fluxos de trabalho centrados no Forms permitem criar rapidamente fluxos de trabalho adaptáveis baseados no Forms. Você pode usar o Adobe Sign para assinar documentos eletronicamente, criar processos de negócios baseados em formulários, recuperar e enviar dados para várias fontes de dados e enviar notificações por email
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-keywords: Usar fluxos de trabalho de AEM, usando etapas atribuir tarefa, converter em PDF/A etapa, Gerar documento da etapa gravada, usar fluxos de trabalho, etapa Assinar documento, etapa Gerar saída impressa, Gerar saída de PDF não interativa
+keywords: Usar workflows do AEM, usando etapas atribuir tarefa, converter para etapa PDF/A, Gerar documento da etapa registrada, usar workflows, etapa Assinar documento, etapa Gerar saída impressa, Gerar saída não interativa do PDF
 feature: Adaptive Forms, Workflow
 role: Admin, User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '7379'
+source-wordcount: '7370'
 ht-degree: 0%
 
 ---
 
 
-# Usar workflows AEM centrados na Forms - referência de etapa para automatizar processos de negócios {#forms-centric-workflow-on-osgi-step-reference}
+# Usar fluxos de trabalho do AEM centrados na Forms - referência de etapa para automatizar processos de negócios {#forms-centric-workflow-on-osgi-step-reference}
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html) |
 | AEM as a Cloud Service | Este artigo |
 
-Você usa modelos de fluxo de trabalho. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para atingir a lógica de negócios](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=pt-BR#extending-aem).
+Você usa modelos de fluxo de trabalho. Um modelo ajuda a definir e executar uma série de etapas. Você também pode definir propriedades do modelo, como se o fluxo de trabalho é transitório ou usa vários recursos. Você pode [incluir várias etapas do fluxo de trabalho do AEM em um modelo para obter a lógica de negócios](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=en#extending-aem).
 
 ## Etapas centradas no Forms {#forms-workflow-steps}
 
-As etapas de fluxo de trabalho centradas no Forms executam operações específicas do AEM Forms em um fluxo de trabalho do AEM. Forms Essas etapas permitem criar rapidamente um fluxo de trabalho adaptável baseado em Forms no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos comerciais internos e entre firewalls. Também é possível usar as etapas Forms Workflow para:
+As etapas de fluxo de trabalho centradas no Forms executam operações específicas do AEM Forms em um fluxo de trabalho do AEM. Forms Essas etapas permitem criar rapidamente um fluxo de trabalho adaptável baseado em Forms no OSGi. Esses workflows podem ser usados para desenvolver workflows básicos de revisão e aprovação, processos comerciais internos e entre firewalls. Também é possível usar as etapas do Forms Workflow para:
 
 * Crie processos de negócios, fluxos de trabalho pós-envio e fluxos de trabalho de back-end para gerenciar processos de inscrição.
 
@@ -41,11 +41,11 @@ As etapas de fluxo de trabalho centradas no Forms executam operações específi
 
 >[!NOTE]
 >
->Se o modelo de fluxo de trabalho estiver marcado para um armazenamento externo, para todas as etapas de Forms Workflow, será possível selecionar apenas a opção de variável para armazenar ou recuperar arquivos de dados e anexos.
+>Se o modelo de fluxo de trabalho estiver marcado para um armazenamento externo, para todas as etapas do Forms Workflow, será possível selecionar apenas a opção de variável para armazenar ou recuperar arquivos de dados e anexos.
 
 ## Atribuir etapa de tarefa {#assign-task-step}
 
-A etapa de atribuição de tarefa cria um item de trabalho e o atribui a um usuário ou grupo. Junto com a atribuição da tarefa, o componente também especifica o Formulário adaptável ou PDF não interativo para a tarefa. O Formulário adaptável é necessário para aceitar entradas de usuários e PDF não interativo, ou um Formulário adaptável somente leitura é usado para workflows somente para revisão.
+A etapa de atribuição de tarefa cria um item de trabalho e o atribui a um usuário ou grupo. Junto com a atribuição da tarefa, o componente também especifica o Formulário adaptável ou o PDF não interativo para a tarefa. O Formulário adaptável é necessário para aceitar entradas de usuários e PDF não interativos ou um Formulário adaptável somente leitura é usado para workflows somente revisão.
 
 Você também pode usar o componente para controlar o comportamento da tarefa. Por exemplo, criar um Documento de registro automático, atribuir a tarefa a um usuário ou grupo específico, especificar o caminho dos dados enviados, especificar o caminho dos dados a serem pré-preenchidos e especificar ações padrão. A etapa Atribuir tarefa tem as seguintes propriedades:
 
@@ -62,7 +62,7 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 * **[!UICONTROL Tempo limite após a Data de Conclusão]**: selecione essa opção para habilitar o campo de seleção Manipulador de Tempo Limite.
 * **[!UICONTROL Manipulador de tempo limite]**: selecione o script a ser executado quando a etapa de atribuição de tarefa ultrapassar a data de vencimento. Os scripts colocados no repositório CRX em [apps]/fd/dashboard/scripts/timeoutHandler estão disponíveis para seleção. O caminho especificado não existe no repositório crx. Um administrador cria o caminho antes de usá-lo.
 * **[!UICONTROL Realçar a ação e o comentário da última tarefa em Detalhes da Tarefa]**: selecione essa opção para exibir a última ação realizada e o comentário recebido na seção de detalhes da tarefa de uma tarefa.
-* **[!UICONTROL Tipo]**: escolha o tipo de documento a ser preenchido quando o fluxo de trabalho for iniciado. Você pode escolher um Formulário adaptável, Formulário adaptável somente leitura, um documento PDF não interativo.
+* **[!UICONTROL Tipo]**: escolha o tipo de documento a ser preenchido quando o fluxo de trabalho for iniciado. Você pode escolher um Formulário adaptável, Formulário adaptável somente leitura, um documento não interativo do PDF.
 
 <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
 
@@ -81,8 +81,8 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 -->
 
 * **[!UICONTROL Caminho do formulário adaptável]**: especifique o caminho do formulário adaptável. Você pode usar o formulário adaptável enviado ao fluxo de trabalho, disponível em um caminho absoluto ou recuperar o formulário adaptável de um caminho armazenado em uma variável do tipo de dados da cadeia de caracteres.
-* **[!UICONTROL Selecione o PDF de entrada usando]**: especifique o caminho de um documento PDF não interativo. O campo está disponível ao escolher um documento PDF não interativo no campo Tipo. Você pode selecionar o PDF de entrada usando o caminho relativo à carga útil, salvo em um caminho absoluto ou usando uma variável do tipo de dados Documento. Por exemplo, [Payload_Diretory]/Workflow/PDF/credit-card.pdf. O caminho não existe no repositório crx. Um administrador cria o caminho antes de usá-lo. Você precisa de uma opção Documento de registro ativada ou de um modelo de formulário do Adaptive Forms para usar a opção Caminho do PDF.
-* **[!UICONTROL Para tarefas concluídas, renderize o Formulário Adaptável como]**: quando uma tarefa é marcada como concluída, você pode renderizar o Formulário Adaptável como um Formulário Adaptável somente leitura ou um documento PDF. Você precisa de uma opção Documento de registro ativada ou modelo de formulário baseado no Forms adaptável para renderizar o Formulário adaptável como Documento de registro.
+* **[!UICONTROL Selecione o PDF de entrada usando]**: especifique o caminho de um documento PDF não interativo. O campo está disponível ao escolher um documento PDF não interativo no campo Tipo. Você pode selecionar o PDF de entrada usando o caminho relativo à carga útil, salvo em um caminho absoluto ou usando uma variável do tipo de dados Documento. Por exemplo, [Payload_Diretory]/Workflow/PDF/credit-card.pdf. O caminho não existe no repositório crx. Um administrador cria o caminho antes de usá-lo. Você precisa de uma opção Documento de registro ativada ou de um modelo de formulário baseado no Forms adaptável para usar a opção Caminho do PDF.
+* **[!UICONTROL Para tarefas concluídas, renderize o Formulário Adaptável como]**: quando uma tarefa é marcada como concluída, você pode renderizar o Formulário Adaptável como um Formulário Adaptável somente leitura ou um documento do PDF. Você precisa de uma opção Documento de registro ativada ou modelo de formulário baseado no Forms adaptável para renderizar o Formulário adaptável como Documento de registro.
 * **[!UICONTROL Pré-preenchido]**: os seguintes campos listados abaixo servem como entradas para a tarefa:
 
    * **[!UICONTROL Selecione o arquivo de dados de entrada usando]**: Caminho do arquivo de dados de entrada (.json, .xml, .doc ou modelo de dados de formulário (FDM)). Você pode recuperar o arquivo de dados de entrada usando um caminho relativo à carga útil ou recuperar o arquivo armazenado em uma variável do tipo de dados Documento, XML ou JSON. Por exemplo, o arquivo contém os dados enviados para o formulário por meio de um aplicativo Caixa de entrada AEM. Um exemplo de caminho é [Payload_Diretory]/workflow/data.
@@ -120,8 +120,8 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
     
     -->
 
-* **[!UICONTROL Atribuído]** > **[!UICONTROL Opções de atribuição]**: especifique o método para atribuir a tarefa a um usuário. Você pode atribuir dinamicamente a tarefa a um usuário ou grupo usando o script Seletor de participante ou atribuir a tarefa a um usuário ou grupo AEM específico.
-* **[!UICONTROL Seletor de participantes]**: a opção estará disponível quando a opção **[!UICONTROL Dinamicamente para um usuário ou grupo]** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Atribuir dinamicamente um fluxo de trabalho aos usuários](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) e [Criar uma etapa personalizada de Participante Dinâmico do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=pt-BR&amp;CID=RedirectAEMCommunityKautuk).
+* **[!UICONTROL Atribuído]** > **[!UICONTROL Opções de atribuição]**: especifique o método para atribuir a tarefa a um usuário. Você pode atribuir a tarefa dinamicamente a um usuário ou grupo usando o script Seletor de participante ou atribuir a tarefa a um usuário ou grupo específico da AEM.
+* **[!UICONTROL Seletor de participantes]**: a opção estará disponível quando a opção **[!UICONTROL Dinamicamente para um usuário ou grupo]** estiver selecionada no campo Opções de atribuição. Você pode usar um ECMAScript ou um serviço para selecionar dinamicamente um usuário ou grupo. Para obter mais informações, consulte [Criação de uma etapa personalizada de Participante dinâmico do Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk).
 
 * **[!UICONTROL Participantes]**: o campo está disponível quando a opção **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** é selecionada no campo **[!UICONTROL Seletor de Participantes]**. O campo permite selecionar usuários ou grupos para a opção RandomParticipantChooser.
 
@@ -137,9 +137,9 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 * **[!UICONTROL Endereço de email do destinatário]**: você pode armazenar um endereço de email em uma variável, usar um literal para especificar um endereço de email permanente ou usar o endereço de email padrão do destinatário especificado no perfil do destinatário. Você pode usar o literal ou uma variável para especificar o endereço de email de um grupo. A opção de variável é útil para recuperar e usar dinamicamente um endereço de email. A opção **[!UICONTROL Usar endereço de email padrão do destinatário]** é somente para um único destinatário. Nesse caso, o endereço de email armazenado no perfil de usuário designado é usado.
 
 * **[!UICONTROL Modelo de email do HTML]**: selecione o modelo de email para o email de notificação. Para editar um modelo, modifique o arquivo localizado em /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt no repositório crx.
-* **[!UICONTROL Permitir delegação para]**: a Caixa de Entrada AEM fornece uma opção ao usuário conectado para delegar o fluxo de trabalho atribuído a outro usuário. Você tem permissão para delegar no mesmo grupo ou para o usuário de workflow de outro grupo. Se a tarefa for atribuída a um único usuário e a opção **[!UICONTROL permitir delegação a membros do grupo do destinatário]** for selecionada, não será possível delegar a tarefa a outro usuário ou grupo.
-* **[!UICONTROL Configurações de Compartilhamento]**: a Caixa de Entrada AEM fornece opções para compartilhar uma única tarefa ou todas as tarefas da caixa de entrada com outro usuário:
-   * Quando a opção **[!UICONTROL Permitir que o destinatário compartilhe explicitamente na caixa de entrada]** é selecionada, o usuário pode selecionar a tarefa na Caixa de Entrada AEM e compartilhá-la com outro usuário AEM.
+* **[!UICONTROL Permitir delegação para]**: a Caixa de Entrada do AEM fornece uma opção ao usuário conectado para delegar o fluxo de trabalho atribuído a outro usuário. Você tem permissão para delegar no mesmo grupo ou para o usuário de workflow de outro grupo. Se a tarefa for atribuída a um único usuário e a opção **[!UICONTROL permitir delegação a membros do grupo do destinatário]** for selecionada, não será possível delegar a tarefa a outro usuário ou grupo.
+* **[!UICONTROL Configurações de Compartilhamento]**: a Caixa de Entrada do AEM fornece opções para compartilhar uma única tarefa ou todas as tarefas da caixa de entrada com outro usuário:
+   * Quando a opção **[!UICONTROL Permitir que o destinatário compartilhe explicitamente na caixa de entrada]** é selecionada, o usuário pode selecionar a tarefa na Caixa de Entrada do AEM e compartilhá-la com outro usuário do AEM.
    * Quando a opção **[!UICONTROL Permitir que o destinatário compartilhe através do compartilhamento da caixa de entrada]** estiver selecionada e os usuários compartilharem seus itens da Caixa de Entrada ou permitir que outros usuários acessem seus itens da Caixa de Entrada, somente as tarefas com a opção mencionada anteriormente habilitada serão compartilhadas com outros usuários.
    * Quando a opção **[!UICONTROL Permitir que o destinatário autorize usando as configurações &#39;Ausente&#39;]** está selecionada. O responsável pode habilitar a opção para delegar a tarefa a outros usuários junto com outras opções de Ausência Temporária. Quaisquer novas tarefas atribuídas ao usuário ausente do escritório são automaticamente delegadas (atribuídas) aos usuários mencionados nas configurações ausentes do escritório.
 
@@ -147,16 +147,16 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 * **[!UICONTROL Ações]** > **[!UICONTROL Ações padrão]**: as ações Enviar, Salvar e Redefinir prontas para uso estão disponíveis. Todas as ações padrão são ativadas, por padrão.
 * **[!UICONTROL Variável de rota]**: nome da variável de rota. A variável de rota captura as ações personalizadas que um usuário seleciona na Caixa de entrada do AEM.
-* **[!UICONTROL Rotas]**: uma tarefa pode ramificar para rotas diferentes. Quando selecionado na Caixa de entrada do AEM, o roteiro retorna um valor e o workflow ramifica com base no roteiro selecionado. Você pode armazenar rotas em uma variável de matriz de tipos de dados String ou selecionar **[!UICONTROL Literal]** para adicionar rotas manualmente.
+* **[!UICONTROL Rotas]**: uma tarefa pode ramificar para rotas diferentes. Quando selecionado na Caixa de entrada do AEM, o roteiro retorna um valor e o fluxo de trabalho é ramificado com base no roteiro selecionado. Você pode armazenar rotas em uma variável de matriz de tipos de dados String ou selecionar **[!UICONTROL Literal]** para adicionar rotas manualmente.
 
 * **[!UICONTROL Título da Rota]**: especifique o título da rota. Ele é exibido na Caixa de entrada do AEM.
-* **[!UICONTROL Ícone Coral]**: especifique um atributo HTML de um ícone coral. A biblioteca CorelUI do Adobe fornece um vasto conjunto de ícones de primeiro toque. Você pode escolher e usar um ícone para a rota. Ele é exibido junto com o título na Caixa de entrada do AEM. Se você armazenar as rotas em uma variável, elas usarão um ícone de coral &quot;Tags&quot; padrão.
-* **[!UICONTROL Permitir que o destinatário adicione o comentário]**: selecione esta opção para habilitar comentários para a tarefa. Um signatário pode adicionar os comentários de dentro da Caixa de entrada AEM no momento do envio da tarefa.
+* **[!UICONTROL Ícone Coral]**: especifique um atributo HTML de um ícone coral. A biblioteca Adobe CorelUI fornece um vasto conjunto de ícones de primeiro toque. Você pode escolher e usar um ícone para a rota. Ele é exibido junto com o título na Caixa de entrada do AEM. Se você armazenar as rotas em uma variável, elas usarão um ícone de coral &quot;Tags&quot; padrão.
+* **[!UICONTROL Permitir que o destinatário adicione o comentário]**: selecione esta opção para habilitar comentários para a tarefa. Um signatário pode adicionar os comentários de dentro da Caixa de entrada do AEM no momento do envio da tarefa.
 * **[!UICONTROL Salvar comentário na variável]**: salve o comentário em uma variável do tipo de dados String. Esta opção é exibida somente se você marcar a caixa de seleção **[!UICONTROL Permitir ao signatário adicionar comentário]**.
 
-* **[!UICONTROL Permitir que o destinatário adicione anexos à tarefa]**: selecione esta opção para habilitar anexos para a tarefa. Um destinatário pode adicionar os anexos da Caixa de entrada AEM no momento do envio da tarefa. Você também pode limitar o tamanho máximo **[!UICONTROL (Tamanho Máximo do Arquivo)]** de um anexo. O tamanho padrão é 2 MB.
+* **[!UICONTROL Permitir que o destinatário adicione anexos à tarefa]**: selecione esta opção para habilitar anexos para a tarefa. Um destinatário pode adicionar os anexos da Caixa de entrada do AEM no momento do envio da tarefa. Você também pode limitar o tamanho máximo **[!UICONTROL (Tamanho Máximo do Arquivo)]** de um anexo. O tamanho padrão é 2 MB.
 
-* **[!UICONTROL Salvar anexos de saída da tarefa usando]**: especifique o local da pasta de anexos. Você pode salvar anexos de saída da tarefa usando um caminho relativo à carga útil ou em uma variável de uma matriz de tipos de dados de documento. Esta opção é exibida somente se você marcar a caixa de seleção **[!UICONTROL Permitir ao signatário adicionar anexos à tarefa]** e selecionar **[!UICONTROL Formulário adaptável]**, **[!UICONTROL Formulário adaptável somente leitura]** ou **[!UICONTROL Documento de PDF não interativo]** na lista suspensa **[!UICONTROL Tipo]**, na guia **[!UICONTROL Formulário/Documento]**.
+* **[!UICONTROL Salvar anexos de saída da tarefa usando]**: especifique o local da pasta de anexos. Você pode salvar anexos de saída da tarefa usando um caminho relativo à carga útil ou em uma variável de uma matriz de tipos de dados de documento. Esta opção é exibida somente se você marcar a caixa de seleção **[!UICONTROL Permitir ao signatário adicionar anexos à tarefa]** e selecionar **[!UICONTROL Formulário adaptável]**, **[!UICONTROL Formulário adaptável somente leitura]** ou **[!UICONTROL Documento PDF não interativo]** na lista suspensa **[!UICONTROL Tipo]** na guia **[!UICONTROL Formulário/Documento]**.
 
 * **[!UICONTROL Usar metadados personalizados]**: selecione esta opção para habilitar o campo de metadados personalizado. Os metadados personalizados são usados em modelos de email.
 * **[!UICONTROL Metadados personalizados]**: selecione um metadado personalizado para os modelos de email. Os metadados personalizados estão disponíveis no repositório crx em apps/fd/dashboard/scripts/metadataScripts. O caminho especificado não existe no repositório crx. Um administrador cria o caminho antes de usá-lo. Você também pode usar um serviço para os metadados personalizados. Você também pode estender a interface `WorkitemUserMetadataService` para fornecer metadados personalizados.
@@ -166,30 +166,30 @@ Você também pode usar o componente para controlar o comportamento da tarefa. P
 
 >[!NOTE]
 >
->As opções para salvar a etapa Atribuir tarefa como rascunho e recuperar o histórico da etapa Atribuir tarefa são desativadas ao configurar um modelo de fluxo de trabalho AEM para armazenamento de dados externo. Além disso, na Caixa de entrada, a opção para salvar está desativada.
+>As opções para salvar a etapa Atribuir tarefa como rascunho e recuperar o histórico da etapa Atribuir tarefa são desativadas ao configurar um modelo de fluxo de trabalho do AEM para armazenamento de dados externo. Além disso, na Caixa de entrada, a opção para salvar está desativada.
 
-## Converter em etapa PDF/A {#convert-pdfa}
+## Converter em etapa do PDF/A {#convert-pdfa}
 
-PDF/A é um formato de arquivo que permite preservar o conteúdo do documento a longo prazo, incorporando as fontes e descompactando o arquivo. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Você pode usar a etapa ***Converter em PDF/A*** em um fluxo de trabalho AEM para converter seus documentos PDF para o formato PDF/A.
+O PDF/A é um formato de arquivo que permite preservar o conteúdo do documento a longo prazo, incorporando as fontes e descompactando o arquivo. Como resultado, um documento PDF/A geralmente é maior do que um documento PDF padrão. Você pode usar a etapa ***Converter em PDF/A*** em um fluxo de trabalho do AEM para converter documentos do PDF para o formato PDF/A.
 
-A etapa converter em PDF/A tem as seguintes propriedades:
+A etapa Converter em PDF/A tem as seguintes propriedades:
 
 **[!UICONTROL Documento de Entrada]**: o documento de entrada pode ser relativo à carga útil, ter um caminho absoluto, pode ser fornecido como uma carga útil ou armazenado em uma variável do tipo de dados Documento.
 
-**[!UICONTROL Opções de Conversão]**: Usando esta propriedade, as configurações para converter documentos PDF em documentos PDF/A são especificadas. Várias opções disponíveis nessa guia são:
-* **[!UICONTROL Conformidade]**: especifica o padrão com o qual o PDF/documento de saída deve estar em conformidade. Ele suporta diferentes padrões de PDF, como PDF/A-1b, PDF/A-2b ou PDF/A-3b.
+**[!UICONTROL Opções de Conversão]**: usando esta propriedade, as configurações para converter documentos do PDF em documentos do PDF/A são especificadas. Várias opções disponíveis nessa guia são:
+* **[!UICONTROL Conformidade]**: especifica o padrão com o qual o documento PDF/A de saída deve estar em conformidade. Ela é compatível com diferentes padrões da PDF, como PDF/A-1b, PDF/A-2b ou PDF/A-3b.
 * **[!UICONTROL Nível de Resultado]**: especifica o nível de resultado como PassFail, Summary ou Detailed para a saída de conversão.
 * **[!UICONTROL Espaço de cor]**: especifica o espaço de cor predefinido como S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED ou SWOP, que pode ser usado para arquivos PDF/A de saída.
-* **[!UICONTROL Conteúdo Opcional]**: permitir que objetos gráficos e/ou anotações específicos sejam visíveis no PDF de saída/documento A, somente quando um conjunto especificado de critérios for atendido.
+* **[!UICONTROL Conteúdo Opcional]**: permitir que objetos gráficos e/ou anotações específicos sejam visíveis no documento PDF/A de saída, somente quando um conjunto especificado de critérios for atendido.
 
 **[!UICONTROL Documentos de saída]**: especifica o local para salvar o arquivo de saída. O arquivo de saída pode ser salvo em um local relativo à carga útil, substitui a carga útil, se a carga útil for um arquivo ou em uma variável do tipo de dados Documento.
 
 
 ## Etapa Enviar email {#send-email-step}
 
-Use a etapa do email para enviar um email, por exemplo, um email com um Documento de Registro, um link de um Formulário Adaptável <!-- , link of an interactive communication--> ou um documento PDF anexado. A etapa Enviar email oferece suporte a [HTML email](https://en.wikipedia.org/wiki/HTML_email). Os emails de HTML são responsivos e se adaptam ao cliente de email dos recipients e ao tamanho da tela. Você pode usar um template de email HTML para definir a aparência, o esquema de cores e o comportamento do email.
+Use a etapa do email para enviar um email, por exemplo, um email com um Documento de Registro, um link de um Formulário Adaptável <!-- , link of an interactive communication--> ou um documento do PDF anexado. A etapa Enviar Email oferece suporte a [email do HTML](https://en.wikipedia.org/wiki/HTML_email). Os emails do HTML são responsivos e se adaptam ao cliente de email dos recipients e ao tamanho da tela. Você pode usar um modelo de email do HTML para definir a aparência, o esquema de cores e o comportamento do email.
 
-A etapa de email usa o Day CQ Mail Service para enviar emails. Antes de usar a etapa de email, verifique se o serviço de email está configurado. Por padrão, o email suporta somente os protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email) para habilitar as portas para enviar emails e habilitar o protocolo SMTP para o seu ambiente. A restrição ajuda a melhorar a segurança da plataforma.
+A etapa de email usa o Day CQ Mail Service para enviar emails. Antes de usar a etapa de email, verifique se o serviço de email está configurado. Por padrão, o email suporta somente os protocolos HTTP e HTTPs. [Contate a equipe de suporte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) para habilitar as portas para enviar emails e habilitar o protocolo SMTP para o seu ambiente. A restrição ajuda a melhorar a segurança da plataforma.
 
 A etapa de email tem as seguintes propriedades:
 
@@ -203,7 +203,7 @@ A etapa de email tem as seguintes propriedades:
 * **[!UICONTROL Recuperar metadados de Fluxo de Trabalho]** - Recupere o assunto de uma propriedade de metadados.
 * **[!UICONTROL Variável]** - Recupera o assunto do valor armazenado em uma variável do tipo de dados string.
 
-**[!UICONTROL Modelo de email do HTML]**: modelo de HTML para o email. Você pode especificar variáveis em um template de email. A etapa Email extrai e exibe todas as variáveis incluídas em um modelo para entradas.
+**[!UICONTROL Modelo de email do HTML]**: modelo do HTML para o email. Você pode especificar variáveis em um template de email. A etapa Email extrai e exibe todas as variáveis incluídas em um modelo para entradas.
 
 **[!UICONTROL Metadados do modelo de email]**: o valor das variáveis do modelo de email pode ser um valor especificado pelo usuário, o caminho de um ativo no autor ou no servidor de publicação, imagem ou uma propriedade de metadados de fluxo de trabalho.
 
@@ -229,7 +229,7 @@ Selecione a opção **[!UICONTROL Variável]** para recuperar o anexo de arquivo
 
 ## Etapa Gerar documento de registro {#generate-document-of-record-step}
 
-Quando um formulário é preenchido ou enviado, você pode manter um registro do formulário, impresso ou no formato do documento. Esse registro é chamado de Documento de registro (DoR). Você pode usar a etapa Gerar documento de registro para criar uma versão de PDF somente leitura ou interativa de um formulário adaptável. A versão do PDF contém informações preenchidas no formulário junto com o layout do Formulário adaptável.
+Quando um formulário é preenchido ou enviado, você pode manter um registro do formulário, impresso ou no formato do documento. Esse registro é chamado de Documento de registro (DoR). Você pode usar a etapa Gerar documento de registro para criar uma versão somente leitura ou interativa do PDF de um formulário adaptável. A versão do PDF contém informações preenchidas no formulário junto com o layout do Formulário adaptável.
 
 A etapa Documento de registro tem as seguintes propriedades:
 
@@ -390,7 +390,7 @@ A etapa Assinar documento tem as seguintes propriedades:
 
 * **[!UICONTROL Localidade]**: especifique o idioma para as opções de email e verificação. Você pode armazenar a localidade em uma variável do tipo de dados String ou selecionar **[!UICONTROL Literal]** para escolher a localidade na lista de opções disponíveis. Você deve definir o código do local ao armazenar o valor do local em uma variável. Por exemplo, especifique **[!UICONTROL en_US]** para inglês e **[!UICONTROL fr_FR]** para francês.
 
-* **[!UICONTROL Configuração da nuvem do Adobe Sign]**: escolha uma configuração da nuvem [!DNL Adobe Sign]. Se você não tiver configurado o [!DNL Adobe Sign] para [!DNL AEM Forms], consulte [Integrar o Adobe Sign com o  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+* **[!UICONTROL Configuração da nuvem do Adobe Sign]**: escolha uma configuração da nuvem [!DNL Adobe Sign]. Se você não tiver configurado o [!DNL Adobe Sign] para [!DNL AEM Forms], consulte [Integrar o Adobe Sign com [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
 
 * **[!UICONTROL Selecione o Documento a ser assinado usando]**: você pode escolher um documento de um local relativo à carga útil, usar a carga útil como o documento, especificar um caminho absoluto do documento ou recuperar o documento armazenado em uma variável do tipo de dados Documento.
 * **[!UICONTROL Dias até o prazo]**: um documento está marcado como vencido (ultrapassou o prazo) depois que não há nenhuma atividade na tarefa para o número de dias especificado no campo **[!UICONTROL Dias até o prazo]**. O número de dias é contado depois que a documentação é atribuída a um usuário para assinatura.
@@ -566,9 +566,9 @@ Digite o código de localidade na caixa literal ou selecione uma variável de ca
    * **[!UICONTROL Edge curto duplex]**: use impressão frente e verso e impressão usando paginação de borda curta.
    * **[!UICONTROL Simplex]**: usar impressão em frente e verso.
 
-## Etapa Gerar saída de PDF não interativa   {#generatePDFdocuments}
+## Etapa Gerar saída do PDF não interativa   {#generatePDFdocuments}
 
-1. Arraste o workflow Gerar saída de PDF não interativa para a guia Forms Workflow no Sidekick.
+1. Arraste o workflow Gerar saída do PDF não interativa para a guia Forms Workflow no Sidekick.
 1. Clique duas vezes na etapa de fluxo de trabalho adicionada para editar o componente.
 1. Na caixa de diálogo Editar componente, configure documentos de entrada, documentos de saída e parâmetros adicionais e clique em **[!UICONTROL OK]**.
 
@@ -580,20 +580,20 @@ Digite o código de localidade na caixa literal ou selecione uma variável de ca
 
 ### Documento de saída {#output-document}
 
-**Documento de saída**: especifica o nome do formulário de PDF gerado.
+**Documento de saída**: especifica o nome do formulário PDF gerado.
 
 ### Parâmetros adicionais {#additional-parameters-1}
 
 * **Raiz de Conteúdo**: especifica o caminho para a pasta no repositório onde os fragmentos ou imagens usados no modelo XDP de entrada são armazenados.
-* **Localidade**: especifica a localidade padrão para o formulário de PDF gerado.
-* **Versão do Acrobat**: especifica a versão do Acrobat de destino para o formulário de PDF gerado.
-* **PDF linearizado**: especifica se o PDF gerado deve ser otimizado para exibição na Web.
-* **PDF marcado**: especifica se o PDF gerado deve ficar acessível.
+* **Localidade**: especifica a localidade padrão para o formulário PDF gerado.
+* **Versão do Acrobat**: especifica a versão do Acrobat de destino para o formulário do PDF gerado.
+* **PDF linearizada**: especifica se o PDF gerado deve ser otimizado para exibição na Web.
+* **PDF Marcado**: especifica se o PDF gerado deve ficar acessível.
 * **Documento XCI**: especifica o caminho para o arquivo XCI.
 
 ## Consulte também {#see-also}
 
-* [Variáveis em fluxos de trabalho AEM centrados no Forms](/help/forms/variable-in-aem-workflows.md)
+* [Variáveis em fluxos de trabalho do AEM centrados no Forms](/help/forms/variable-in-aem-workflows.md)
 * [Definir configuração de Ausência Temporária](/help/forms/configure-out-of-office-settings.md)
 
 <!--

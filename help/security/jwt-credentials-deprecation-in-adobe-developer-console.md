@@ -4,7 +4,7 @@ description: Saiba mais sobre o impacto da descontinuação de credenciais JWT n
 exl-id: 7c811081-484c-41f7-a289-4e9a10a837b3
 feature: Security
 role: Admin
-source-git-commit: 957dedd81d14e921aa8a64de80ef21fd11f713ab
+source-git-commit: 5db419e674ceb3c861f53a19e7b852c89ebd3702
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Clientes do AEM 6.5 devem consultar [a documentação comparável do AEM 6.5](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console) para obter mais informações.
+>Os clientes do AEM 6.5 devem consultar [a documentação comparável do AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/jwt-credentials-deprecation-in-adobe-developer-console) para obter mais informações.
 
 Os clientes do Adobe usam o [Adobe Developer Console](https://developer.adobe.com/console) para gerar credenciais que habilitam o acesso a várias APIs. Os clientes selecionam entre vários tipos de credenciais, que variam de servidor para servidor do OAuth a aplicativo de página única. Um desses tipos de credenciais, as credenciais da Conta de serviço (JWT), foi descontinuado em favor das credenciais de Servidor para Servidor do OAuth. As novas credenciais da Conta de serviço (JWT) não podem ser criadas em ou após 3 de junho de 2024, e as credenciais do JWT existentes não funcionarão em ou após 30 de junho de 2025. Você pode [ler sobre a descontinuação](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
@@ -23,7 +23,7 @@ Este artigo fornece contexto adicional sobre como o AEM as a Cloud Service deve 
 
 O principal argumento é que o AEM agora oferece suporte às novas credenciais OAuth de servidor para servidor para o AEM as a Cloud Service. Você pode ter recebido um email com instruções para migrar suas credenciais do JWT e essa migração pode ser feita agora.
 
-As seções abaixo listam os cenários em que os clientes devem (ou em alguns casos não) substituir suas credenciais da Conta de serviço (JWT) por credenciais de Servidor para Servidor OAuth, agora que o AEM oferece suporte a eles. [Leia como](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/#migration-overview) migrar as credenciais.
+As seções abaixo listam os cenários em que os clientes devem (ou em alguns casos não) substituir suas credenciais da Conta de serviço (JWT) por credenciais de Servidor para Servidor do OAuth, agora que a AEM oferece suporte a eles. [Leia como](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration#migration-overview) migrar as credenciais.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ As seções abaixo listam os cenários em que os clientes devem (ou em alguns ca
 
 **Versões relevantes do AEM**: AEM as a Cloud Service
 
-Os clientes do AEM usam o AEM para configurar integrações com muitas outras soluções de Adobe. Por exemplo, Adobe Target, Adobe Analytics e outros.
+Os clientes da AEM usam o AEM para configurar integrações com muitas outras soluções da Adobe. Por exemplo, Adobe Target, Adobe Analytics e outros.
 
 Consulte [Configuração de integrações IMS para AEM as a Cloud Service](/help/security/setting-up-ims-integrations-for-aem-as-a-cloud-service.md) para obter detalhes sobre como:
 
@@ -52,11 +52,11 @@ Os clientes criam projetos do Adobe Developer Console para que possam invocar [A
 
 ## Projetos gerados automaticamente {#autogen-projects}
 
-**Ação**: não migrar porque o Adobe migrará em seu nome.
+**Ação**: não migre porque o Adobe migrará em seu nome.
 
 **Versões relevantes do AEM**: AEM as a Cloud Service.
 
-Quando o Cloud Manager provisiona ambientes do AEM as a Cloud Service, ele gera automaticamente um projeto do Adobe Developer Console com credenciais JWT. Esse projeto está marcado como somente leitura, como ilustrado na captura de tela abaixo. Os clientes não podem e não devem tentar migrar esses projetos para credenciais de servidor para servidor do OAuth. Em vez disso, o Adobe migrará esses projetos por conta própria, antes que as credenciais deixem de ser utilizáveis.
+Quando o Cloud Manager provisiona ambientes do AEM as a Cloud Service, ele gera automaticamente um projeto do Adobe Developer Console com credenciais JWT. Esse projeto está marcado como somente leitura, como ilustrado na captura de tela abaixo. Os clientes não podem e não devem tentar migrar esses projetos para credenciais de servidor para servidor do OAuth. Em vez disso, o Adobe migrará esses projetos por conta própria antes que as credenciais deixem de ser utilizáveis.
 
 ![Projetos gerados automaticamente](/help/security/assets/jwt-deprecation-autogen-projects.png)
 
@@ -72,22 +72,22 @@ Navegue até o Adobe Developer Console | seção Projetos.  Os projetos gerados 
 
 **E se encontrarmos problemas com nossos projetos gerados automaticamente?**
 
-Entre em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+Entre em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 
 **Devo migrar nossos projetos gerados automaticamente?**
 
-Nenhuma ação é necessária, pois o Adobe migrará gerado automaticamente em seu nome para ambientes com AEM versão 17258 (agosto de 2024) e superior.
+Nenhuma ação é necessária, pois o Adobe migrará a gerada automaticamente em seu nome para ambientes com o AEM versão 17258 (agosto de 2024) e superior.
 
 **Quais são as linhas de tempo para migração de projetos gerados automaticamente?**
 
-O Adobe iniciará uma abordagem de migração em fases no primeiro trimestre de 2025, começando com ambientes de desenvolvimento.
+A Adobe iniciará uma abordagem de migração em fases no primeiro trimestre de 2025, começando com ambientes de desenvolvimento.
 
-**Como nossa instância do AEM as a Cloud Service será afetada se tivermos uma versão do AEM mais antiga que a versão do AEM 17258 (24 de agosto)?**
+**Como nossa instância do AEM as a Cloud Service será afetada se tivermos uma versão do AEM mais antiga que a versão do AEM 17258 (agosto de 24)?**
 
 As integrações de projeto geradas automaticamente deixarão de funcionar se não forem migradas para o OAuth até junho de 2025.
 
-Para garantir uma transição sem problemas, os clientes devem entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) imediatamente e iniciar o processo de atualização para a [versão mais recente do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Isso proporcionará tempo suficiente para testes de regressão e permitirá que o Adobe gerencie a migração de projetos com eficiência.
+Para garantir uma transição suave, os clientes devem entrar em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) imediatamente e iniciar o processo de atualização para a [Versão mais recente do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Isso proporcionará tempo suficiente para testes de regressão e permitirá que a Adobe gerencie a migração de projetos com eficiência.
 
-**Posso atualizar para uma versão do OAuth com suporte sem atualizar minha versão do AEM as a Cloud Service AEM?**
+**É possível atualizar para uma versão do OAuth com suporte sem atualizar minha Versão do AEM as a Cloud Service AEM?**
 
-Não. Para garantir uma transição sem problemas, os clientes devem entrar em contato com o [Atendimento ao cliente do Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) imediatamente e iniciar o processo de atualização para a [versão mais recente do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Isso proporcionará tempo suficiente para testes de regressão e permitirá que o Adobe gerencie a migração de projetos com eficiência.
+Não. Para garantir uma transição suave, os clientes devem entrar em contato com o [Atendimento ao cliente da Adobe](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html) imediatamente e iniciar o processo de atualização para a [Versão mais recente do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/maintenance/latest). Isso proporcionará tempo suficiente para testes de regressão e permitirá que a Adobe gerencie a migração de projetos com eficiência.

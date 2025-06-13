@@ -7,7 +7,7 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: 747203ccd3c7e428e2afe27c56e47c3ec18699f6
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1286'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Este artigo |
 
 O AEM Forms é compatível com funções personalizadas, permitindo que os usuários definam funções do JavaScript para implementar regras de negócios complexas. Essas funções personalizadas estendem os recursos dos formulários facilitando a manipulação e o processamento dos dados inseridos para atender a requisitos especificados. Eles permitem a alteração dinâmica do comportamento do formulário com base em critérios predefinidos. As funções personalizadas também permitem que os desenvolvedores apliquem uma lógica de validação complexa, executem cálculos dinâmicos e controlem a exibição ou o comportamento de elementos de formulário com base em interações do usuário ou critérios predefinidos.
@@ -168,7 +168,6 @@ Você pode criar uma função personalizada com ou sem comentários jsdoc.
             // code to be executed
         }
 ```
-
 Se o usuário não adicionar anotações do JavaScript à função personalizada, ela será listada no editor de regras pelo nome da função. No entanto, é recomendável incluir anotações do JavaScript para melhorar a legibilidade das funções personalizadas.
 
 ### Função de seta com anotações ou comentários obrigatórios do JavaScript

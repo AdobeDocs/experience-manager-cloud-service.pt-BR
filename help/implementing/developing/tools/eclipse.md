@@ -1,10 +1,10 @@
 ---
 title: Ferramentas de desenvolvedor do AEM para Eclipse
-description: Saiba como usar as Ferramentas de desenvolvedor do AEM para Eclipse, um plug-in do Eclipse baseado no plug-in Eclipse para Apache Sling.
+description: Saiba como usar as Ferramentas de desenvolvedor do AEM para Eclipse, um plug-in Eclipse baseado no plug-in Eclipse para Apache Sling.
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '1138'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Ferramentas de desenvolvedor do AEM para Eclipse{#aem-developer-tools-for-eclipse}
 
-Experience Manager ![Ferramentas do desenvolvedor para o logotipo do Eclipse](assets/eclipse-logo.png)
+![Ferramentas para desenvolvedores do Experience Manager para o logotipo Eclipse](assets/eclipse-logo.png)
 
 ## Visão geral {#overview}
 
@@ -21,18 +21,18 @@ As _Ferramentas para desenvolvedores do Experience Manager para Eclipse_ são um
 
 Ele oferece vários recursos que facilitam o desenvolvimento do AEM:
 
-* Integração perfeita com instâncias de AEM por meio do Eclipse Server Connector
+* Integração perfeita com instâncias do AEM por meio do Eclipse Server Connector
 * Sincronização para conteúdo e pacotes OSGi
 * Suporte à depuração com recurso de troca a quente de código
-* Bootstrap simples de projetos AEM por meio de um Assistente de criação de projeto específico
+* Bootstrap simples de projetos do AEM por meio de um assistente de criação de projeto específico
 * Fácil edição das propriedades do JCR
 
 ## Requisitos {#requirements}
 
-Antes de usar as ferramentas de desenvolvedor do AEM, é necessário:
+Antes de usar as Ferramentas do desenvolvedor do AEM, é necessário:
 
 * Baixe e instale o [Eclipse IDE para desenvolvedores Enterprise Java™](https://www.eclipse.org/downloads/packages/).
-* Configure a instalação do eclipse para garantir que você tenha pelo menos 1 GB de memória heap, editando o arquivo de configuração `eclipse.ini` conforme descrito nas [Perguntas frequentes sobre o Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse).
+* Configure a instalação do eclipse para garantir que você tenha pelo menos 1 GB de memória heap, editando o arquivo de configuração `eclipse.ini` conforme descrito nas [Perguntas frequentes sobre o Eclipse.](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)
 
 >[!NOTE]
 >
@@ -60,11 +60,11 @@ Quando tiver atendido aos [requisitos](#requirements) acima, você poderá insta
 1. Aceite os contratos de licença e clique em **Concluir**.
 1. Clique em **RestartNow** para reiniciar o Eclipse.
 
-## A perspectiva do AEM {#the-aem-perspective}
+## A perspectiva da AEM {#the-aem-perspective}
 
 No Eclipse, uma Perspectiva determina as ações e visualizações disponíveis em uma janela e permite a interação orientada a tarefas com recursos no Eclipse. Para obter mais detalhes sobre Perspectiva, consulte a [documentação do Eclipse](https://help.eclipse.org/latest/index.jsp).
 
-As _Ferramentas de Desenvolvimento do Experience Manager para Eclipse_ fornecem uma Perspectiva AEM que oferece controle total sobre seus projetos e instâncias do AEM. Para abrir a perspectiva do AEM:
+As _Ferramentas de desenvolvimento do Experience Manager para Eclipse_ fornecem uma Perspectiva do AEM que oferece controle total sobre seus Projetos e instâncias do AEM. Para abrir a Perspectiva do AEM:
 
 1. Na barra de menus do Eclipse, selecione **Janela** > **Perspectiva** > **Abrir Perspectiva** > **Outras**.
 1. Selecione **AEM** no diálogo e clique em **Abrir**.
@@ -73,11 +73,11 @@ As _Ferramentas de Desenvolvimento do Experience Manager para Eclipse_ fornecem 
 
 ## Exemplo de projeto de vários módulos {#sample-multi-module-project}
 
-Experience Manager As _Ferramentas do desenvolvedor para Eclipse_ vêm com uma amostra de projeto de vários módulos que ajuda você a se familiarizar rapidamente com a configuração de um projeto no Eclipse. Ele também serve como um guia de práticas recomendadas para vários recursos do AEM. [Saiba mais sobre o Arquétipo de Projeto](https://github.com/adobe/aem-project-archetype).
+As _Ferramentas de desenvolvedor do Experience Manager para Eclipse_ vêm com uma amostra de projeto de vários módulos que ajuda você a se familiarizar rapidamente com a configuração de um projeto no Eclipse. Ele também serve como um guia de práticas recomendadas para vários recursos do AEM. [Saiba mais sobre o Arquétipo de Projeto](https://github.com/adobe/aem-project-archetype).
 
 Siga estas etapas para criar o projeto de amostra:
 
-1. No menu **Arquivo** > **Novo** > **Projeto**, navegue até a seção **AEM** e selecione **Projeto de vários módulos de amostra do AEM**.
+1. No menu **Arquivo** > **Novo** > **Projeto**, navegue até a seção **AEM** e selecione **Projeto de vários módulos de exemplo do AEM**.
 
    ![Projeto de vários módulos de amostra do AEM](assets/aem-sample-project.png)
 
@@ -106,13 +106,13 @@ Siga estas etapas para criar o projeto de amostra:
 
 1. Em seguida, você configura um servidor AEM ao qual o Eclipse se conecta.
 
-   Para usar o recurso do depurador, você precisa ter iniciado o AEM no modo de depuração, o que pode ser obtido ao adicionar o seguinte à linha de comando:
+   Para usar o recurso do depurador, é necessário iniciar o AEM no modo de depuração, o que pode ser obtido ao adicionar o seguinte à linha de comando:
 
    ```text
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
    ```
 
-   ![Conectar-se ao servidor AEM](assets/connect-server.png)
+   ![Conectar-se ao servidor do AEM](assets/connect-server.png)
 
 1. Clique em **Concluir**. A estrutura do projeto é criada.
 
@@ -192,7 +192,7 @@ Você pode usar o recurso **Novo Projeto** para criar a estrutura correta para v
 1. Certifique-se de salvar todas as alterações. Agora você pode sincronizar esse novo conteúdo para sua instância do AEM.
 
 1. No painel Servidores, verifique se a conexão foi iniciada e, se não, inicie-a.
-1. Clique no ícone **Limpar e Publish**.
+1. Clique no ícone **Limpar e publicar**.
 
 Depois de concluído, o pacote deve estar em execução na instância e, ao salvar, qualquer alteração é sincronizada automaticamente com a instância.
 
@@ -218,7 +218,7 @@ O Eclipse baixa as dependências necessárias. Isso pode demorar um pouco.
 
 A ferramenta oficial do Apache Sling IDE para o site do Eclipse fornece informações úteis:
 
-* A [**Ferramenta Apache Sling IDE para Eclipse** Guia do Usuário](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentação orienta você pelos conceitos gerais, integração de servidor e recursos de implantação compatíveis com as Ferramentas de Desenvolvimento AEM.
+* A [**Ferramenta Apache Sling IDE para Eclipse** Guia do Usuário](https://sling.apache.org/documentation/development/ide-tooling.html), esta documentação orienta você pelos conceitos gerais, integração de servidor e recursos de implantação compatíveis com as Ferramentas de Desenvolvimento do AEM.
 * A [seção Solução de problemas](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * A [lista de problemas conhecidos](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 

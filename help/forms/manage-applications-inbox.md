@@ -1,6 +1,6 @@
 ---
-title: Como faço para gerenciar formulários, aplicativos e tarefas na Caixa de Entrada do AEM?
-description: A Caixa de entrada AEM permite iniciar fluxos de trabalho centrados no Forms enviando aplicativos e gerenciando tarefas.
+title: Como faço para gerenciar formulários, aplicativos e tarefas na Caixa de entrada do AEM?
+description: A Caixa de entrada do AEM permite iniciar fluxos de trabalho centrados no Forms enviando aplicativos e gerenciando tarefas.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
@@ -9,27 +9,27 @@ feature: Adaptive Forms
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 937bd4653e454beea3111cfc7ef7b4bbc1ace193
+exl-id: 92130660-9942-426f-ae2f-4f3300f9735c
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '1084'
+source-wordcount: '1083'
 ht-degree: 2%
 
 ---
 
+# Gerenciar aplicativos e tarefas do Forms na Caixa de entrada do AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
 
-# Gerenciar aplicativos e tarefas do Forms na Caixa de entrada AEM{#manage-forms-applications-and-tasks-in-aem-inbox}
+Uma das muitas maneiras de iniciar ou acionar um fluxo de trabalho centrado no Forms é por meio de aplicativos na Caixa de entrada do AEM. É necessário criar um aplicativo de fluxo de trabalho para disponibilizar um Forms Workflow como um aplicativo na Caixa de entrada. Para obter mais informações sobre o aplicativo de fluxo de trabalho e outras maneiras de iniciar fluxos de trabalho do Forms, consulte [Iniciar um fluxo de trabalho centrado no Forms no OSGi](aem-forms-workflow.md#launch).
 
-Uma das muitas maneiras de iniciar ou acionar um fluxo de trabalho centrado no Forms é por meio de aplicativos na Caixa de entrada AEM. É necessário criar um aplicativo de fluxo de trabalho para disponibilizar um Forms Workflow como um aplicativo na Caixa de entrada. Para obter mais informações sobre o aplicativo de fluxo de trabalho e outras maneiras de iniciar fluxos de trabalho do Forms, consulte [Iniciar um fluxo de trabalho centrado no Forms no OSGi](aem-forms-workflow.md#launch).
+Além disso, a Caixa de entrada do AEM consolida notificações e tarefas de vários componentes do AEM, incluindo workflows da Forms. Quando uma Forms Workflow contendo uma etapa Atribuir tarefa é acionada, o aplicativo associado é listado como uma tarefa na Caixa de entrada do destinatário. Se o destinatário for um grupo, a tarefa aparecerá na Caixa de entrada de todos os membros do grupo até que um indivíduo reclame ou delegue a tarefa.
 
-Além disso, a Caixa de entrada do AEM consolida notificações e tarefas de vários componentes do AEM, incluindo workflows da Forms. Quando um Forms Workflow contendo uma etapa Atribuir tarefa é acionado, o aplicativo associado é listado como uma tarefa na Caixa de entrada do destinatário. Se o destinatário for um grupo, a tarefa aparecerá na Caixa de entrada de todos os membros do grupo até que um indivíduo reclame ou delegue a tarefa.
-
-A interface do usuário da Caixa de entrada fornece exibições de lista e calendário para exibir tarefas. Você também pode definir as configurações de exibição. Você pode filtrar tarefas com base em vários parâmetros. Para obter mais informações sobre exibição e filtros, consulte [Sua Caixa de Entrada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html?lang=pt-BR#inbox-in-the-header).
+A interface do usuário da Caixa de entrada fornece exibições de lista e calendário para exibir tarefas. Você também pode definir as configurações de exibição. Você pode filtrar tarefas com base em vários parâmetros. Para obter mais informações sobre exibição e filtros, consulte [Sua Caixa de Entrada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/getting-started/inbox.html#inbox-in-the-header).
 
 Em resumo, a Caixa de entrada permite criar um aplicativo e gerenciar tarefas atribuídas.
 
 >[!NOTE]
 >
->Você deve ser membro do grupo [!DNL workflow-users] para usar a Caixa de Entrada do AEM.
+>Você deve ser membro do grupo [!DNL workflow-users] para poder usar a Caixa de Entrada do AEM.
 
 ## Criar aplicativo {#create-application}
 
@@ -61,7 +61,7 @@ As tarefas atribuídas a um grupo aparecem na Caixa de Entrada de todos os membr
 
 ### Exibir detalhes e executar ações em tarefas {#view-details-and-perform-actions-on-tasks}
 
-Ao abrir uma tarefa, você pode exibir os detalhes da tarefa e executar as ações disponíveis. As ações disponíveis para uma tarefa são definidas na etapa Atribuir tarefa do Forms Workflow associado.
+Ao abrir uma tarefa, você pode exibir os detalhes da tarefa e executar as ações disponíveis. As ações disponíveis para uma tarefa são definidas na etapa Atribuir tarefa da Forms Workflow associada.
 
 1. Selecione para selecionar a miniatura da tarefa. As opções para abrir ou delegar a tarefa selecionada aparecem na parte superior.
 1. Selecione **Abrir** para exibir os detalhes da tarefa e as ações disponíveis. A visualização detalhada da tarefa é aberta. Nesta exibição, é possível exibir detalhes da tarefa e agir em uma tarefa.
@@ -81,7 +81,7 @@ A exibição de tarefa detalhada compreende as seguintes seções:
 
 #### Detalhes da tarefa {#task-details}
 
-A seção Detalhes da Tarefa exibe informações sobre a tarefa. As informações exibidas dependem das definições de configuração da [etapa Atribuir tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=pt-BR#extending-aem) no fluxo de trabalho. O exemplo acima exibe a descrição, o status, a data de início e o workflow usado para a tarefa. Também permite anexar um arquivo à tarefa.
+A seção Detalhes da Tarefa exibe informações sobre a tarefa. As informações exibidas dependem das definições de configuração da [etapa Atribuir tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) no fluxo de trabalho. O exemplo acima exibe a descrição, o status, a data de início e o workflow usado para a tarefa. Também permite anexar um arquivo à tarefa.
 
 #### Formulário {#form}
 
@@ -89,7 +89,7 @@ A guia Form na área de conteúdo principal exibe o formulário enviado e os ane
 
 #### Detalhes do fluxo de trabalho {#workflow-details}
 
-A guia Detalhes do fluxo de trabalho na parte superior mostra o progresso da tarefa em vários estágios no fluxo de trabalho. Ela mostra os estágios concluídos, atuais e pendentes da tarefa. Os estágios de um fluxo de trabalho são definidos na [etapa Atribuir tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=pt-BR#extending-aem) do fluxo de trabalho associado.
+A guia Detalhes do fluxo de trabalho na parte superior mostra o progresso da tarefa em vários estágios no fluxo de trabalho. Ela mostra os estágios concluídos, atuais e pendentes da tarefa. Os estágios de um fluxo de trabalho são definidos na [etapa Atribuir tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem) do fluxo de trabalho associado.
 
 Além disso, a guia exibe o histórico da tarefa para cada estágio concluído no workflow. Você pode selecionar **[!UICONTROL Exibir Detalhes]** para um estágio concluído para saber detalhes sobre esse estágio. Ele exibe comentários, anexos de formulário e tarefa, status, datas de início e término e assim por diante, sobre a tarefa.
 
@@ -97,7 +97,7 @@ Além disso, a guia exibe o histórico da tarefa para cada estágio concluído n
 
 #### Barra de ferramentas Ações {#actions-toolbar}
 
-A barra de ferramentas Ações mostra todas as opções disponíveis para a tarefa. Enquanto Salvar, Redefinir e Delegar são ações padrão, outras ações disponíveis são configuradas na [etapa Atribuir tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=pt-BR#extending-aem). No exemplo acima, Aprovar e Rejeitar são configurados no workflow.
+A barra de ferramentas Ações mostra todas as opções disponíveis para a tarefa. Enquanto Salvar, Redefinir e Delegar são ações padrão, outras ações disponíveis são configuradas na [etapa Atribuir tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem). No exemplo acima, Aprovar e Rejeitar são configurados no workflow.
 
 À medida que você age na tarefa, ela continua mais no fluxo de trabalho.
 
@@ -105,14 +105,14 @@ A barra de ferramentas Ações mostra todas as opções disponíveis para a tare
 
 A Caixa de entrada do AEM exibe somente tarefas ativas. Tarefas concluídas não aparecem na lista. No entanto, você pode usar filtros da Caixa de entrada para filtrar tarefas com base em vários parâmetros, como tipo de tarefa, status, datas de início e término. Para exibir tarefas concluídas:
 
-1. Na Caixa de Entrada do AEM, selecione ![alternar-painel-lateral1](assets/toggle-side-panel1.png) para abrir o seletor de filtros.
+1. Na Caixa de Entrada do AEM, selecione ![ativar/desativar painel lateral1](assets/toggle-side-panel1.png) para abrir o seletor de filtros.
 1. Selecione a opção **[!UICONTROL Status da tarefa]** e selecione **[!UICONTROL Concluído]**. Todas as tarefas concluídas são exibidas.
 
    ![filtro](assets/filter.png)
 
 1. Selecione uma tarefa e clique em **[!UICONTROL Abrir]**.
 
-A tarefa é aberta para exibir o documento ou o Formulário adaptável associado à tarefa. Para o Formulário adaptável, a tarefa exibe o Formulário adaptável somente leitura ou seu Documento de registro de PDF, conforme configurado na guia Formulário/Documento da [etapa de fluxo de trabalho Atribuir tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=pt-BR#extending-aem).
+A tarefa é aberta para exibir o documento ou o Formulário adaptável associado à tarefa. Para o Formulário adaptável, a tarefa exibe o Formulário adaptável somente leitura ou seu Documento de registro do PDF, conforme configurado na guia Formulário/Documento da [etapa de fluxo de trabalho Atribuir tarefa](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html#extending-aem).
 
 A seção de detalhes da tarefa exibe informações como ação tomada, status da tarefa, data inicial e data final.
 
@@ -124,9 +124,9 @@ A guia **[!UICONTROL Detalhes do Fluxo de Trabalho]** mostra cada etapa do fluxo
 
 ## Resolução de problemas {#troubleshooting-workflows}
 
-### Não é possível exibir itens relacionados ao fluxo de trabalho do AEM na Caixa de entrada AEM {#unable-to-see-aem-worklow-items}
+### Não é possível exibir itens relacionados ao fluxo de trabalho do AEM na Caixa de entrada do AEM {#unable-to-see-aem-worklow-items}
 
-Um proprietário de modelo de fluxo de trabalho não pode exibir itens relacionados ao Fluxo de trabalho do AEM na Caixa de Entrada do AEM. Para resolver o problema, adicione os índices listados abaixo ao repositório AEM e recrie o índice.
+Um proprietário de modelo de fluxo de trabalho não pode exibir itens relacionados ao Fluxo de trabalho do AEM na Caixa de entrada do AEM. Para resolver o problema, adicione os índices listados abaixo ao repositório do AEM e recrie o índice.
 
 1. Use um dos métodos a seguir para adicionar índices:
 
@@ -141,7 +141,7 @@ Um proprietário de modelo de fluxo de trabalho não pode exibir itens relaciona
      | allowExplicitSharing | allowExplicitSharing | BOOLEANO |
 
 
-   * Implante os índices por meio de um pacote AEM. Você pode usar um projeto [Arquétipo AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) para criar um pacote AEM implantável. Use o seguinte código de amostra para adicionar índices a um projeto do Arquétipo AEM:
+   * Implante os índices por meio de um pacote do AEM. Você pode usar um projeto do [Arquétipo do AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=pt-BR) para criar um pacote do AEM implantável. Use o código de amostra a seguir para adicionar índices a um projeto do Arquétipo do AEM:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -151,7 +151,6 @@ Um proprietário de modelo de fluxo de trabalho não pode exibir itens relaciona
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Crie um Índice de Propriedade e defina-o como verdadeiro](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=pt-BR#the-property-index).
+1. [Crie um Índice de Propriedade e defina-o como verdadeiro](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=en#the-property-index).
 
-1. Após configurar índices no CRX DE ou implantar por meio de um pacote, [reindexe o repositório](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
-
+1. Depois de configurar índices no CRX DE ou implantar por meio de um pacote, reindexe o repositório.

@@ -7,9 +7,9 @@ role: Admin, Architect, Developer
 index: false
 hide: true
 hidefromtoc: true
-source-git-commit: 17c14a78c2cfa262e25c6196fa73c6c4b17e200a
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2160'
 ht-degree: 0%
 
 ---
@@ -596,7 +596,7 @@ O exemplo a seguir define uma seção de guia, que pode ser usada para criar um 
 }
 ```
 
-## Metadados de página {#page-metadata}
+## Metadados das páginas {#page-metadata}
 
 Os documentos podem ter um [bloco de metadados](https://www.aem.live/developer/block-collection/metadata) da página, que é usado para definir quais `<meta>` elementos são renderizados no `<head>` de uma página. As propriedades de página das páginas no AEM as a Cloud Service são mapeadas para aquelas que estão disponíveis prontas para uso para o Edge Delivery Services, como `title`, `description`, `keywords`, etc.
 
@@ -645,8 +645,3 @@ Agora que você sabe como modelar conteúdo, pode criar blocos para seu próprio
 Consulte o documento [Criação de blocos instrumentados para uso com o Editor universal](/help/edge/wysiwyg-authoring/create-block.md) para saber como criar blocos instrumentados para uso com o Editor universal na criação de WYSIWYG com projetos do Edge Delivery Services.
 
 Se você já estiver familiarizado com a criação de blocos, consulte o documento [Guia de Introdução ao Desenvolvedor para criação no WYSIWYG com o Edge Delivery Services](/help/edge/wysiwyg-authoring/edge-dev-getting-started.md) para que você possa começar a usar um novo site do Adobe Experience Manager usando o Edge Delivery Services e o Editor Universal para criação de conteúdo.
-
->[!TIP]
->
->Para obter uma apresentação completa da criação de um novo projeto do Edge Delivery Services habilitado para criação no WYSIWYG com o AEM as a Cloud Service como fonte de conteúdo, exiba [este webinário de GEMs do AEM](https://experienceleague.adobe.com/en/docs/events/experience-manager-gems-recordings/gems2024/wysiwyg-authoring-and-edge-delivery).
-

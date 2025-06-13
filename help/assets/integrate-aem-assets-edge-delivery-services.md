@@ -3,7 +3,7 @@ title: Integrar  [!DNL AEM Assets] ao criar conteúdo para [!DNL Edge Delivery S
 description: Saiba como integrar o [!DNL AEM Assets] com [!DNL Edge Delivery Services]. This integration enables you to integrate [!DNL AEM Assets] com [!DNL Microsoft Word] e [!DNL Google Docs], integrate [!DNL AEM Assets] com [!DNL Universal Editor], integrate [!DNL Dynamic Media] com [!DNL Edge Delivery Services], integrate [!DNL Dynamic Media with OpenAPI capabilities] com [!DNL Universal Editor] e integrar [!DNL Dynamic Media with OpenAPI capabilities] com [!DNL Microsoft Word] e [!DNL Google Docs].
 tags: AEM Assets, Edge Delivery Services, Dynamic Media, Dynamic Media with OpenAPI capabilities, Universal Editor, Edge Delivery Services with Universal Editor
 exl-id: e58db2ce-a55a-49b3-ae8e-709b5ea8d095
-source-git-commit: fecaefbb6a02e944be38c3dfaa3baea5691219cd
+source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 3%
@@ -49,7 +49,7 @@ ht-degree: 3%
 
 ![Integração do AEM Assets com o editor universal](/help/assets/assets/EDS2.png)
 
-[[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/overview) é um conjunto de serviços combináveis que permite um alto grau de flexibilidade na maneira como você cria e entrega conteúdo no seu site. Você pode usar a [criação do gerenciamento de conteúdo do AEM](/help/sites-cloud/authoring/author-publish.md) e a [criação do WYSIWYG [!DNL Universal Editor] bem como a Criação baseada em documento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
+[[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/overview) é um conjunto de serviços combináveis que permite um alto grau de flexibilidade na maneira como você cria e entrega conteúdo no seu site. Você pode usar a [criação do gerenciamento de conteúdo do AEM](/help/sites-cloud/authoring/author-publish.md) e a [criação do WYSIWYG [!DNL Universal Editor] bem como a Criação baseada em documento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
 É possível editar conteúdo em:
 
@@ -113,7 +113,7 @@ Assista a este vídeo para saber como fornecer ativos em seu conteúdo usando o 
 
 ## Site de exemplo [!DNL Edge Delivery Services]{#dynamic-media-with-google-docs-and-ms-word}
 
-Consulte [WKND Travel](http://bit.ly/3DExLnf), um site que é construído usando os recursos de Criação baseada em documentos do [!DNL Edge Delivery Services]. O conteúdo do site foi criado no [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) e o [!DNL Dynamic Media with OpenAPI capabilities] é usado para entregar ativos no conteúdo. Após a criação, o conteúdo é publicado diretamente do documento. Explore este [repositório Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) para saber sobre todos os arquivos, pastas, configurações, estilos do site e códigos de funcionalidade essenciais usados para criar a configuração de Criação Baseada em Documento para este site [!DNL Edge Delivery Services (EDS)].
+Consulte [WKND Travel](https://aem-dynamicmedia-demo--dm--hlxsites.aem.live/travel-hospitality/wknd-trvl-home), um site que é construído usando os recursos de Criação baseada em documentos do [!DNL Edge Delivery Services]. O conteúdo do site foi criado no [Google Docs](https://drive.google.com/drive/folders/1HCCHRWp4HJIXW_cUv5cRDQ5DzzqiZsXT) e o [!DNL Dynamic Media with OpenAPI capabilities] é usado para entregar ativos no conteúdo. Após a criação, o conteúdo é publicado diretamente do documento. Explore este [repositório Git](https://github.com/hlxsites/franklin-assets-selector/tree/aem-dynamicmedia-demo/blocks) para saber sobre todos os arquivos, pastas, configurações, estilos do site e códigos de funcionalidade essenciais usados para criar a configuração de Criação Baseada em Documento para este site [!DNL Edge Delivery Services (EDS)].
 
 ## Integrando [!DNL AEM Assets] com fluxos de criação baseados em [!DNL Universal Editor] para [!DNL Edge Delivery Services] {#integrate-aem-assets-with-universal-editor-UE}
 

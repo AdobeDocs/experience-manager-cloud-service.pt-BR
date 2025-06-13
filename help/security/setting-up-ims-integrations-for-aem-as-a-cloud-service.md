@@ -4,7 +4,7 @@ description: Saiba como configurar integrações do IMS para o AEM as a Cloud Se
 exl-id: 72fb1ea1-355c-4faa-a733-77bc7de75ed5
 feature: Security
 role: Admin
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: 00a05b3bdc1a689947c1507847da99b54c94dcac
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 1%
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->As configurações JWT provisionadas automaticamente não devem ser migradas manualmente, pois serão tratadas automaticamente pelo Adobe.
+>As configurações do JWT provisionadas automaticamente não devem ser migradas manualmente, pois serão tratadas automaticamente pelo Adobe.
 
-O Adobe Experience Manager (AEM) as a Cloud Service pode ser integrado a muitas outras soluções de Adobe. Por exemplo, Adobe Target, Adobe Analytics e outros.
+O Adobe Experience Manager (AEM) as a Cloud Service pode ser integrado a muitas outras soluções da Adobe. Por exemplo, Adobe Target, Adobe Analytics e outros.
 
 As integrações usam uma integração IMS, configurada com S2S OAuth.
 
@@ -49,7 +49,7 @@ Para obter detalhes sobre como fazer isso, consulte a documentação do Develope
 
 * Criação de uma nova credencial OAuth:
 
-   * [Guia de implementação de credenciais de servidor para servidor do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [Guia de implementação de credenciais de servidor para servidor do OAuth](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * Migrar uma credencial JWT existente para uma credencial OAuth:
 
@@ -67,7 +67,7 @@ Para criar uma nova Integração do Adobe IMS usando o OAuth:
 
 1. Selecione **Criar**.
 
-1. Conclua a configuração com base nos detalhes da [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/). Por exemplo:
+1. Conclua a configuração com base nos detalhes da [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation). Por exemplo:
 
    ![Criar configuração OAuth](assets/ims-create-oauth-configuration.png)
 
