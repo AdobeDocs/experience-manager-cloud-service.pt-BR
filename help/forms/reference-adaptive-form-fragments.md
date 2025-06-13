@@ -34,7 +34,7 @@ Para autores de Forms adaptáveis, os fragmentos de referência são fornecidos 
 * Termos e condições
 * Termos e condições com assinatura
 
-Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e documentos. Para instalar um pacote, consulte [Implantação de Pacotes de Conteúdo via Cloud Manager e Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#deploying-content-packages-via-cloud-manager-and-package-manager) e [Como Trabalhar com Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html).
+Quando você instala o pacote, uma pasta Fragmentos de referência contendo fragmentos de referência é criada em Forms e documentos. Para instalar um pacote, consulte [Implantação de Pacotes de Conteúdo via Cloud Manager e Gerenciador de Pacotes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#deploying-content-packages-via-cloud-manager-and-package-manager) e [Como Trabalhar com Pacotes](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=pt-BR).
 
 ![Todos os fragmentos listados](assets/ootb-frags.png)
 

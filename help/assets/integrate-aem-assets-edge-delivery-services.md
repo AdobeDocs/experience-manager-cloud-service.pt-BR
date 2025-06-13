@@ -49,7 +49,7 @@ ht-degree: 3%
 
 ![Integração do AEM Assets com o editor universal](/help/assets/assets/EDS2.png)
 
-[[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/overview) é um conjunto de serviços combináveis que permite um alto grau de flexibilidade na maneira como você cria e entrega conteúdo no seu site. Você pode usar a [criação do gerenciamento de conteúdo do AEM](/help/sites-cloud/authoring/author-publish.md) e a [criação do WYSIWYG [!DNL Universal Editor] bem como a Criação baseada em documento](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
+[[!DNL Edge Delivery Services]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/overview) é um conjunto de serviços combináveis que permite um alto grau de flexibilidade na maneira como você cria e entrega conteúdo no seu site. Você pode usar a [criação do gerenciamento de conteúdo do AEM](/help/sites-cloud/authoring/author-publish.md) e a [criação do WYSIWYG [!DNL Universal Editor] bem como a Criação baseada em documento](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/authoring).
 
 É possível editar conteúdo em:
 
