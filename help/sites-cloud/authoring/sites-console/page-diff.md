@@ -5,10 +5,10 @@ exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 90f7f6209df5f837583a7225940a5984551f6622
+source-git-commit: ae1dedc3d0533205decc08d396c5a844c4525ba2
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 89%
+source-wordcount: '635'
+ht-degree: 85%
 
 ---
 
@@ -90,6 +90,7 @@ Você também pode optar por fechar a visualização em tela cheia clicando no �
 
 Há algumas situações em que o recurso de diferencial de páginas pode não detectar uma diferença conforme esperado.
 
+* Ao comparar páginas criadas para uso com o [Edge Delivery Services](/help/edge/overview.md), as páginas serão exibidas lado a lado para facilitar a comparação, mas as diferenças não serão destacadas.
 * Ao comparar versões e inicializações, o diferencial não leva em conta componentes dinâmicos como navegações estruturais, menus, listas de produtos ou logotipos (componentes que dependem da estrutura do site para renderizar seu conteúdo).
 * Para versões, o diferencial não recria a política de controle de acesso e as relações com a Live Copy.
 * Se uma página for movida, não será mais possível fazer uma comparação com nenhuma versão feita antes da movimentação.
