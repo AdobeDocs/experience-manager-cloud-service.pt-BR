@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 6976f0c9926fb4cb64b0b2d7f8d2daf004c6b936
+source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1782'
 ht-degree: 24%
 
 ---
@@ -269,7 +269,8 @@ No modo de árvore de conteúdo, o painel mostra a hierarquia do conteúdo da p�
 
 ![Modo de árvore de conteúdo](assets/content-tree-mode.png)
 
-Ao selecionar um item na árvore de conteúdo, o editor rola até esse conteúdo e o seleciona.
+* Ao selecionar um item na árvore de conteúdo, o editor rola até esse conteúdo e o seleciona.
+* Ao clicar duas vezes em um item na árvore de conteúdo, o editor rola até esse conteúdo e o seleciona e também abre as propriedades associadas no modo de propriedades [.](#properties-mode)
 
 ![Árvore de conteúdo](assets/content-tree.png)
 
