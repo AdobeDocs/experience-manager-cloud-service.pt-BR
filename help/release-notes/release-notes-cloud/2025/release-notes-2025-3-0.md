@@ -37,7 +37,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo Visão geral da versão de março de 2025 que exibe um resumo dos recursos adicionados na versão 2025.3.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3463860?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3463881?quality=12&captions=por_br)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
