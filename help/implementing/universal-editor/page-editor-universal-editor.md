@@ -4,9 +4,9 @@ description: O Editor de páginas permanece compatível com o Adobe, mas o Edito
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: f21e21b0f7239ec9112d65b94b372344c4a07566
+source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1069'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ Como a lacuna de recursos entre os dois editores está diminuindo constantemente
 
 |  | Editor de página | Notas | Editor universal | Notas |
 |---|---|---|---|---|
-| [Entrega clássica do AEM](/help/sites-cloud/authoring/author-publish.md) | [!BADGE Disponível]{type=Positive} | Recomendado para uso com os Componentes principais | [!BADGE Indisponível]{type=Negative} | As páginas do AEM clássico normalmente dependem de vários recursos específicos do Editor de páginas que são difíceis de replicar como estão com o Universal Editor. |
+| [Publicar Entrega](/help/sites-cloud/authoring/author-publish.md) | [!BADGE Disponível]{type=Positive} | Recomendado para uso com os Componentes principais e projetos tradicionais do AEM | [!BADGE Indisponível]{type=Negative} | As páginas tradicionais do AEM normalmente dependem de vários recursos específicos do Editor de páginas que são difíceis de replicar como estão com o Universal Editor. |
 | [Edge Delivery](/help/edge/overview.md) | [!BADGE Indisponível]{type=Negative} |  | [!BADGE Disponível]{type=Positive} |  |
 | [Entrega headless](/help/headless/introduction.md) | [!BADGE Parcialmente Disponível]{type=Caution} | Somente com [o Editor de SPA](/help/implementing/developing/hybrid/introduction.md), que foi [descontinuado](/help/implementing/developing/hybrid/spa-editor-deprecation.md) em favor do Editor Universal | [!BADGE Disponível]{type=Positive} | O Editor universal permite que os desenvolvedores tragam seu próprio aplicativo web sem impor requisitos de estrutura específicos ou restrições de implementação. |
 
@@ -57,7 +57,7 @@ Como a lacuna de recursos entre os dois editores está diminuindo constantemente
 |---|---|---|---|---|
 | Modelos de páginas | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | O Editor Universal é agnóstico em relação ao sistema de modelo usado. No entanto, o padrão de implementação típico favorece modelos definidos pelo desenvolvedor, já que as ferramentas de front-end modernas facilitam muito a definição e a manutenção da lógica do modelo diretamente no código. |
 | Edição do WYSIWYG | [!BADGE Disponível]{type=Positive} | Limitado a páginas | [!BADGE Disponível]{type=Positive} | Páginas de suporte e fragmentos de conteúdo |
-| [Gerar Variações](/help/generative-ai/generate-variations.md) | [!BADGE Indisponível]{type=Negative} |  | [!BADGE Disponível]{type=Positive} | [Disponível como uma extensão](/help/implementing/universal-editor/extending.md) |
+| [Gerar variações](/help/generative-ai/generate-variations.md) | [!BADGE Indisponível]{type=Negative} |  | [!BADGE Disponível]{type=Positive} | [Disponível como uma extensão](/help/implementing/universal-editor/extending.md) |
 | Inserir novo bloco | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | Reordenar bloco | [!BADGE Disponível]{type=Positive} | Possível com arrastar e soltar no contexto, mas não no painel lateral &quot;exibição em árvore&quot; | [!BADGE Disponível]{type=Positive} | Possível por meio do arrastar e soltar no painel lateral &quot;exibição em árvore&quot;, mas ainda não no contexto (planejado) |
 | Recortar/Copiar-Colar bloco | [!BADGE Disponível]{type=Positive} |  | [!BADGE Indisponível]{type=Negative} | Planejado |
@@ -67,7 +67,7 @@ Como a lacuna de recursos entre os dois editores está diminuindo constantemente
 | Publicar (também para visualização) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | [Iniciar fluxo de trabalho](/help/sites-cloud/authoring/workflows/overview.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Disponível como uma extensão |
 | Comentando | [!BADGE Disponível]{type=Positive} | Usando [anotações](/help/sites-cloud/authoring/page-editor/annotations.md) | [!BADGE Indisponível]{type=Negative} | Planejado |
-| Integração do Workfront | [!BADGE Indisponível]{type=Negative} |  | [!BADGE Disponível]{type=Positive} | Disponível como uma extensão |
+| Integração com o Workfront | [!BADGE Indisponível]{type=Negative} |  | [!BADGE Disponível]{type=Positive} | Disponível como uma extensão |
 | [MSM e inicializações](/help/sites-cloud/administering/msm-and-translation.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Disponível para páginas como uma extensão |
 | Experimentação e personalização | [!BADGE Disponível]{type=Positive} | Usando o [Modo de destino](/help/sites-cloud/authoring/personalization/targeted-content.md) | [!BADGE Disponível]{type=Positive} | Disponível como uma extensão para o Edge Delivery Services |
 | Árvore de conteúdo | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Também permite reordenar dentro da árvore |
@@ -103,6 +103,6 @@ Não há caminho de migração direto do Editor de páginas para o Editor univer
    * Isso afeta muitas áreas das caixas de diálogo, como widgets personalizados, validação de campo, regras de mostrar/ocultar e personalizações baseadas em modelo.
       * Embora esses recursos ainda sejam possíveis, o Editor universal os resolve por meio de configuração, em vez de implantar JavaScript personalizado em caixas de diálogo.
 
-Embora o Editor universal possa tecnicamente habilitar a edição de páginas clássicas do AEM (por exemplo, criadas com os Componentes principais), esses sites normalmente dependem de vários recursos específicos do Editor de páginas, como o Sistema de estilos, Grade responsiva, Modelos editáveis e Javascript personalizado nas caixas de diálogo.
+Embora o Editor universal possa tecnicamente habilitar a edição de páginas para projetos tradicionais do AEM (por exemplo, criados com os Componentes principais), esses sites normalmente dependem de vários recursos específicos do Editor de páginas, como o Sistema de estilos, Grade responsiva, Modelos editáveis e Javascript personalizado nas caixas de diálogo.
 
 Como o Editor universal segue uma abordagem mais simplificada e moderna que não oferece suporte a esses recursos herdados, a migração desses sites exigiria uma refatoração significativa. Por esse motivo, **migrar sites do Editor de páginas para o Editor universal é recomendado somente para projetos em transição para o Edge Delivery Services.**
