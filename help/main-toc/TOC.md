@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: c31b7afe4e563bd0de7aa481f6a90cd8eada0f1e
+source-git-commit: db545a7bef1b23caf735445abb7efab42d307913
 workflow-type: tm+mt
-source-wordcount: '6239'
-ht-degree: 62%
+source-wordcount: '6253'
+ht-degree: 61%
 
 ---
 
@@ -353,7 +353,7 @@ ht-degree: 62%
 + Sites {#sites}
    + [Alterações importantes do AEM Sites no AEM Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
    + [Sites e Edge Delivery Services](/help/sites-cloud/sites-and-edge.md)
-   + Criação   {#authoring}
+   + Criação {#authoring}
       + [Guia de início rápido para a criação de páginas](/help/sites-cloud/authoring/quick-start.md)
       + [Manuseio básico](/help/sites-cloud/authoring/basic-handling.md)
       + [Criação e publicação](/help/sites-cloud/authoring/author-publish.md)
@@ -396,7 +396,7 @@ ht-degree: 62%
          + [Desfazer Limitações de Refazer](/help/sites-cloud/authoring/page-editor/undo-redo.md)
       + Editor universal {#universal-editor}
          + [Navegação](/help/sites-cloud/authoring/universal-editor/navigation.md)
-         + [Criação  ](/help/sites-cloud/authoring/universal-editor/authoring.md)
+         + [Criação](/help/sites-cloud/authoring/universal-editor/authoring.md)
          + [Publicação](/help/sites-cloud/authoring/universal-editor/publishing.md)
          + [Herança](/help/sites-cloud/authoring/universal-editor/inheritance.md)
          + [Modelos de páginas](/help/sites-cloud/authoring/universal-editor/templates.md)
@@ -514,7 +514,6 @@ ht-degree: 62%
    + [Ativar o Assets as a Cloud Service Ultimate](/help/assets/enable-assets-ultimate.md)
    + [Assets as a Cloud Service Prime](/help/assets/assets-prime.md)
    + [Usuários do Assets Collaborator](/help/assets/assets-collaborator-users.md)
-   + [Integrar o AEM Assets ao criar conteúdo para o Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
    + Gerenciar ativos digitais {#manage}
       + Seletor de ativos de micro front-end {#asset-selector}
          + [Visão geral do Seletor de ativos](/help/assets/overview-asset-selector.md)
@@ -710,6 +709,9 @@ ht-degree: 62%
    + Práticas recomendadas{#best-practices}
       + [Pesquisar práticas recomendadas](/help/assets/search-best-practices.md)
       + [Gerenciamento de metadados e práticas recomendadas](/help/assets/metadata-best-practices.md)
+
+   + Integração com o Figma {#integration-figma}
+      + [Integração nativa com o Figma](/help/assets/Integrate-aem-assets-with-figma.md)
    + Integração com o Adobe Workfront {#integrations}
       + [Integrações com [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configurar o mapeamento de metadados de ativos](/help/assets/configure-asset-metadata-mapping.md)
@@ -721,6 +723,8 @@ ht-degree: 62%
       + [Integração nativa com o Adobe Express](/help/assets/native-integration-adobe-express.md)
    + Integração com o Creative Cloud {#integration-creative-cloud}
       + [Conectar o AEM Assets ao Creative Cloud](/help/assets/connect-assets-with-creative-cloud.md)
+   + Integrar o AEM Assets com o Edge Delivery Services {#integrate-aem-assets-edge-delivery-services}
+      + [Integrar o AEM Assets ao criar conteúdo para o Edge Delivery Services](/help/assets/integrate-aem-assets-edge-delivery-services.md)
 + Forms {#forms}
    + Visão geral {#forms-overview}
       + [Introdução](/help/forms/home.md)
@@ -983,7 +987,7 @@ ht-degree: 62%
       + [Experience Platform](/help/commerce-cloud/integrating/aep.md)
    + AEM Storefront {#storefront}
       + [Introdução](/help/commerce-cloud/getting-started.md)
-      + Criação   {#authoring}
+      + Criação {#authoring}
          + [Experiências comerciais](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
          + [Cockpit do produto](/help/commerce-cloud/authoring/product-cockpit.md)
          + [Uso de vários modelos](/help/commerce-cloud/authoring/multi-template-usage.md)
@@ -1028,7 +1032,7 @@ ht-degree: 62%
       + [Configuração da autenticação do site](/help/edge/wysiwyg-authoring/site-authentication.md)
       + [Recursos de Sites WIP](/help/edge/wysiwyg-authoring/wip-features.md)
    + Criação baseada em documento {#document-authoring}
-      + [Criação  ](/help/edge/docs/authoring.md)
+      + [Criação](/help/edge/docs/authoring.md)
       + [Metadados em massa](/help/edge/docs/bulk-metadata.md)
       + [Espaços reservados](/help/edge/docs/placeholders.md)
       + [Mapa do site](/help/edge/developer/sitemap.md)
@@ -1110,14 +1114,14 @@ ht-degree: 62%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
-      + Criação  {#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
+      + Criação{#authoring}
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1239,7 +1243,7 @@ ht-degree: 62%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
