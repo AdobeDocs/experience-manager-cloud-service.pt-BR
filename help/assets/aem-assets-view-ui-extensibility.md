@@ -4,10 +4,10 @@ description: Saiba mais sobre o recurso de Extensibilidade da Interface do Usuá
 feature: App Builder
 role: User, Developer
 exl-id: a11f7043-17cf-4331-b76c-d3db099c2411
-source-git-commit: 50477660e50db13cd279a56a1f1b3ddc118a0aad
+source-git-commit: a03e6cf842f95f8799f23ed5c7e3b563b092b4e5
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 3%
+source-wordcount: '641'
+ht-degree: 2%
 
 ---
 
@@ -73,7 +73,7 @@ Atenda aos seguintes requisitos para começar a adicionar o componente de extens
 * [Acesso a [!DNL Assets View]](#1).
 * Acesso a [[!DNL Adobe app builder]](https://developer.adobe.com/app-builder/docs/overview/).
 * Direito ao desenvolvedor da função de administrador do sistema na organização. Consulte [esta documentação](https://developer.adobe.com/uix/docs/guides/get-access/) para obter mais informações.
-* [!DNL Adobe IO command line tool (AIO CLI)] está instalado em seus computadores locais. Essa ferramenta é essencial para criar e implantar projetos de extensão. Consulte [esta documentação](https://developer.adobe.com/app-builder/docs/getting_started/#local-environment-set-up) para obter mais informações.
+* [!DNL Adobe IO command line tool (AIO CLI)] está instalado em seus computadores locais. Essa ferramenta é essencial para criar e implantar projetos de extensão. Consulte [Criar o Primeiro Aplicativo App Builder](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app#local-environment-set-up) (requer autenticação para acesso) para obter mais informações.
 * Boa compreensão das tecnologias do [!DNL JavaScript], [!DNL Node.js] e [!DNL React].
 
 ## Adicionar o componente de extensibilidade da interface do usuário a [!DNL Assets View] {#ui-extensibility-in-assets-view}
