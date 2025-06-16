@@ -1,9 +1,9 @@
 ---
 title: Solução de problemas de erros 403 proibidos no envio do formulário do Edge Delivery Services
 description: Saiba como diagnosticar e resolver erros 403 proibidos ao enviar formulários do Edge Delivery Services para o AEM Publish. Este guia aborda causas comuns, incluindo CORS, regras do Dispatcher e problemas de Filtro de referenciador.
-feature: Edge Delivery Services, Forms
+feature: Edge Delivery Services
 role: Admin, Developer
-source-git-commit: d3ade6ee9216b44b55d6808d8acffe83f1e263c9
+source-git-commit: 3130a6fa8a8b244707f6578034ab274f6038ced6
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 2%
@@ -75,7 +75,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 >
 >Substitua `main--abc--adobe.aem.live` e `main--abc1--adobe.aem.live` pelos domínios de site reais. Cada site hospedado no mesmo repositório requer uma entrada de configuração do CORS separada.
 
-Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
+Para obter a configuração detalhada do CORS, consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors).
 
 ### &#x200B;2. Regras do Dispatcher
 
@@ -262,8 +262,8 @@ Com as arquiteturas Helix-5 e repless, siga estas diretrizes:
 ## Recursos adicionais
 
 - [Configuração de filtro referenciador com AEM Headless](/help/headless/deployment/referrer-filter.md)
-- [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
-- [Noções Básicas Sobre Compartilhamento De Recursos Entre Origens](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
+- [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors)
+- [Noções Básicas Sobre Compartilhamento De Recursos Entre Origens](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing)
 - [Documentação do Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/publish-forms.md)
 
 ## Tópicos relacionados
