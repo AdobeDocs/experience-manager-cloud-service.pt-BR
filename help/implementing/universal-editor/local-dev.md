@@ -4,7 +4,7 @@ description: Saiba como executar seu próprio Universal Editor Service para dese
 exl-id: ba1bf015-7768-4129-8372-adfb86e5a120
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 300dc71969e8e1da32d4f86f0a987b7e2777ccf5
+source-git-commit: 5435f776e38abf5245c58985e747ce05443f3c2a
 workflow-type: tm+mt
 source-wordcount: '950'
 ht-degree: 2%
@@ -156,7 +156,7 @@ Depois de definido, você deve ver todas as chamadas de atualização de conteú
 
 ## Editar uma página com o serviço do Editor universal local {#editing}
 
-Com o [Serviço do Editor Universal sendo executado localmente](#running-ue) e sua [página de conteúdo instrumentada para usar o serviço local](#using-loca-ue), agora você pode iniciar o editor.
+Com o [Serviço do Editor Universal sendo executado localmente](#running-ue) e sua [página de conteúdo instrumentada para usar o serviço local](/help/implementing/universal-editor/getting-started.md), agora você pode iniciar o editor.
 
 1. Abra o navegador no `https://localhost:8000/ping`.
 1. Direcione o navegador para aceitar [seu certificado autoassinado](#ue-https).
