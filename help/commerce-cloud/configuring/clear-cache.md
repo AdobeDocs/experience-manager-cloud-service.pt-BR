@@ -4,9 +4,9 @@ description: Saiba como ativar e verificar o recurso de cache limpo no AEM CIF.
 feature: Commerce Integration Framework
 role: Admin
 exl-id: f89c07c7-631f-41a4-b5b9-0f629ffc36f0
-source-git-commit: 27d8b5f6f358176c828d01f2ff51886d0433017c
+source-git-commit: fb8b2645c0401d1358c7751db03a138dc2de2664
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -31,14 +31,13 @@ Por padrão, o recurso de cache limpo é desativado na configuração do CIF. Pa
 * Habilite o ouvinte a limpar o cache de cada instância do AEM (publicar e criar) adicionando a configuração `com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json` no seu projeto, como mostrado [aqui](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.core.cacheinvalidation.internal.InvalidateCacheSupport.cfg.json).
    * A configuração deve ser ativada para as instâncias do autor e de publicação.
    * Habilitar o cache do Dispatcher (Opcional): é possível habilitar a configuração limpar cache do dispatcher definindo a propriedade `enableDispatcherCacheInvalidation` como true na configuração acima. Isso fornece funcionalidade para limpar o cache do dispatcher.
-
      >[!NOTE]
      >
      > Isso só funciona com instâncias de publicação.
 
    * Além disso, certifique-se de fornecer o padrão correspondente que se adapta às necessidades de produto, categoria e página do CMS ao arquivo de configuração acima para removê-lo do cache do dispatcher.
 
-* Para melhorar o desempenho das consultas SQL para encontrar a página correspondente relacionada ao produto e à categoria, adicione o índice correspondente em seu projeto (recomendado). Para obter mais informações, consulte [CIFCacheInvalidationSupport/]&#x200B;(link https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
+* Para melhorar o desempenho das consultas SQL para encontrar a página correspondente relacionada ao produto e à categoria, adicione o índice correspondente em seu projeto (recomendado). Para obter mais informações, consulte [CIFCacheInvalidationSupport](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.apps/src/main/content/jcr_root/_oak_index/cifCacheInvalidationSupport/.content.xml).
 
 ## Verificando o Recurso Limpar Cache {#verify-clear-cache}
 
@@ -64,8 +63,7 @@ Agora, para verificar se os caches estão sendo limpos corretamente:
        "storePath": "/content/venia/us/en", // Mandatory : Needs to be given to know for which site we are removing the clear cache.
    }'
    ```
-
-Se tudo correr bem, as novas mudanças serão refletidas em todas as instâncias. Se as alterações não forem refletidas para a instância de publicação, verifique na janela privada as páginas PLP e PDP correspondentes.
+Se tudo correr bem, as novas mudanças serão refletidas em todas as instâncias. Se as alterações não estiverem visíveis na instância de publicação, tente acessar as páginas PLP e PDP relevantes em uma janela do navegador privada/incógnita.
 
 >[!NOTE]
 >
