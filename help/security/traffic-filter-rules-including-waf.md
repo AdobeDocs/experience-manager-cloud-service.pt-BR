@@ -4,9 +4,9 @@ description: Configuração das regras de filtro de tráfego, incluindo as regra
 exl-id: 6a0248ad-1dee-4a3c-91e4-ddbabb28645c
 feature: Security
 role: Admin
-source-git-commit: 20d4ea369676baad28c43246fe399e2e2f4b1db7
+source-git-commit: 70ba91e83ce2395e748ff8bdbecfc4d4fc04250b
 workflow-type: tm+mt
-source-wordcount: '4278'
+source-wordcount: '4262'
 ht-degree: 1%
 
 ---
@@ -49,8 +49,6 @@ Este artigo está organizado nas seguintes seções:
 * **Regras de Início Recomendadas:** Um conjunto de regras para começar a usar.
 * **Tutorial:** conhecimento prático sobre o recurso, incluindo como usar ferramentas do painel para declarar as regras certas.
 
-A Adobe convida você a fornecer feedback ou fazer perguntas sobre as regras de filtro de tráfego enviando um email para **aemcs-waf-adopter@adobe.com**.
-
 ## Visão geral da proteção de tráfego {#traffic-protection-overview}
 
 No cenário digital atual, o tráfego mal-intencionado é uma ameaça constante. A Adobe reconhece a gravidade do risco e oferece várias abordagens para proteger os aplicativos do cliente e mitigar os ataques quando eles ocorrem.
@@ -61,7 +59,7 @@ Por padrão, o Adobe toma medidas para evitar a degradação do desempenho devid
 
 Os clientes podem tomar medidas proativas para atenuar os ataques à camada do aplicativo (camada 7), configurando regras em várias camadas do fluxo de entrega de conteúdo.
 
-Por exemplo, na camada do Apache, os clientes podem configurar o [módulo do Dispatcher](https://experienceleague.adobe.com/pt-br/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou o [ModSecurity](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) para limitar o acesso a determinado conteúdo.
+Por exemplo, na camada do Apache, os clientes podem configurar o [módulo do Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration#configuring-access-to-content-filter) ou o [ModSecurity](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/modsecurity-crs-dos-attack-protection) para limitar o acesso a determinado conteúdo.
 
 Como este artigo descreve, as regras de filtro de tráfego podem ser implantadas na CDN Gerenciada pela Adobe, usando os [pipelines de configuração](/help/operations/config-pipeline.md) da Cloud Manager. Além das regras de filtro de tráfego baseadas em propriedades como endereço IP, caminho e cabeçalhos ou regras baseadas na definição de limites de taxa, os clientes também podem licenciar uma subcategoria poderosa de regras de filtro de tráfego chamada regras de WAF.
 
@@ -750,9 +748,9 @@ data:
 
 Dois tutoriais estão disponíveis.
 
-### Proteção de sites com regras de filtro de tráfego (incluindo regras do WAF) {#tutorial-protecting-websites}
+### Proteger sites com regras de filtro de tráfego (incluindo regras do WAF) {#tutorial-protecting-websites}
 
-[Use um tutorial](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) para obter conhecimento e experiência gerais e práticos sobre as regras de filtro de tráfego, incluindo as regras do WAF.
+[Use um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/traffic-filter-and-waf-rules/overview) para obter conhecimento e experiência gerais e práticos sobre as regras de filtro de tráfego, incluindo as regras do WAF.
 
 O tutorial o guiará por:
 
@@ -762,9 +760,9 @@ O tutorial o guiará por:
 * Análise de resultados com ferramentas de painel
 * Práticas recomendadas
 
-### Bloqueio de ataques de DoS e DDoS usando regras de filtro de tráfego {#tutorial-blocking-DDoS-with-rules}
+### Bloquear ataques de DoS e DDoS por meio de regras de filtro de tráfego {#tutorial-blocking-DDoS-with-rules}
 
-[Saiba mais sobre como bloquear](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) ataques de DoS (Negação de Serviço) e de DDoS (Negação de Serviço Distribuída) usando regras de filtro de limite de taxa e outras estratégias.
+[Saiba mais sobre como bloquear](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/security/blocking-dos-attack-using-traffic-filter-rules) ataques de DoS (Negação de Serviço) e de DDoS (Negação de Serviço Distribuída) usando regras de filtro de limite de taxa e outras estratégias.
 
 O tutorial o guiará por:
 
