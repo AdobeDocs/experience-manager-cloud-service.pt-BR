@@ -1,22 +1,30 @@
 ---
-title: Lançamentos
-description: Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura. Eles permitem fazer alterações prontas para publicação futura, enquanto mantém suas páginas atuais
+title: Lançamentos para páginas
+description: Saiba como usar Inicializações para páginas no Adobe Experience Manager as a Cloud Service. Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura, mantendo as páginas atuais.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 9ddda040eda85b29c86a4940cb656f26073b0f12
+source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 83%
+source-wordcount: '995'
+ht-degree: 74%
 
 ---
 
-# Lançamentos {#launches}
+# Lançamentos para páginas {#launches-for-pages}
 
-Os lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura.
+No Adobe Experience Manager (AEM) as a Cloud Service, os Lançamentos permitem desenvolver conteúdo com eficiência para uma versão futura.
 
-Uma *Inicialização* é criada para permitir que você faça alterações na preparação de uma publicação futura, ao mesmo tempo em que mantém suas páginas atuais. Isso significa que você está editando duas versões ao mesmo tempo: páginas publicadas no momento e uma versão dessas páginas a serem publicadas posteriormente. Quando essa hora chegar, você poderá substituir as páginas originais e publicar a nova versão.
+Uma *Inicialização* é criada para permitir que você faça alterações na preparação de uma publicação futura, ao mesmo tempo em que mantém o conteúdo atual. Para páginas do AEM, isso significa que você está editando duas versões ao mesmo tempo: páginas publicadas no momento e uma versão dessas páginas a serem publicadas posteriormente. Quando essa hora chegar, você poderá substituir as páginas originais e publicar as novas versões.
+
+<!--
+>[!NOTE]
+>
+>Launches are also available for Content Fragments. The basic concepts are the same, but there are differences in how to manage them in AEM. 
+>
+>For full details see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 Você cria uma *Inicialização* e, depois de editar e atualizar as páginas da *Inicialização*, *promove* de volta para a *Source*. Você pode então ativar estas *páginas do Source* (nível superior). A promoção duplica o conteúdo do lançamento de volta às páginas de origem e pode ser feita manual ou automaticamente (dependendo dos campos definidos ao criar e editar o lançamento).
 
@@ -28,7 +36,7 @@ Por exemplo, as páginas de produtos sazonais da loja online são atualizadas tr
 Também é possível:
 
 * Navegar pelo conteúdo na ramificação de lançamento; adicionar ou remover páginas, conforme necessário.
-* Visualize como será o conteúdo publicado em uma data/hora específica no futuro.
+* Visualize como será o conteúdo publicado em uma data específica no futuro.
 
 Quando o próximo trimestre chegar, você promoverá as páginas de lançamento para poder publicar as páginas de origem (mantendo o conteúdo atualizado). É possível promover todas as páginas ou apenas aquelas que você modificou.
 
@@ -67,7 +75,7 @@ Eles permitem:
       * Publicar o conteúdo das páginas de origem (após promover de volta).
       * Promover todas as páginas ou somente as páginas modificadas.
    * Automaticamente - isso envolve o seguinte:
-      * O campo **Data de lançamento** (**Data de ativação**):**&#x200B;** pode ser definida ao criar ou editar um lançamento.
+      * O campo **Data de lançamento** (**Data de ativação**):**** pode ser definida ao criar ou editar um lançamento.
       * O sinalizador **Pronto para produção** : só pode ser definido ao editar um lançamento.
       * Se o sinalizador **Pronto para produção** estiver definido, a inicialização será executada automaticamente nas páginas de produção na **Data** do **Lançamento**(**Data de ativação**) especificada. Após a promoção, as páginas de produção são publicadas automaticamente.\
         Se nenhuma data tiver sido definida, o sinalizador não terá efeito.
@@ -106,6 +114,12 @@ Eles permitem:
    ![Ações para executar em lançamentos no console do Sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
 ## O console de lançamentos {#the-launches-console}
+
+>[!NOTE]
+>
+>Este console é somente para Inicializações de páginas.
+>
+>Para gerenciar os fragmentos de conteúdo, consulte [Inicializações para fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
 
 O console Lançamentos fornece uma visão geral dos lançamentos e permite que você atue de acordo com os listados.
 
