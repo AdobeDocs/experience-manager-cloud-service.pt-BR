@@ -5,10 +5,10 @@ exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 solution: Experience Manager Sites
 feature: Authoring, Launches
 role: User
-source-git-commit: 4c75904958f7faf91173cb8a37d5be5b3048cfae
+source-git-commit: 3859393b94680ac1c786bfe31950e6073650167f
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 74%
+source-wordcount: '977'
+ht-degree: 76%
 
 ---
 
@@ -75,7 +75,7 @@ Eles permitem:
       * Publicar o conteúdo das páginas de origem (após promover de volta).
       * Promover todas as páginas ou somente as páginas modificadas.
    * Automaticamente - isso envolve o seguinte:
-      * O campo **Data de lançamento** (**Data de ativação**):**&#x200B;** pode ser definida ao criar ou editar um lançamento.
+      * O campo **Data de lançamento** (**Data de ativação**):**** pode ser definida ao criar ou editar um lançamento.
       * O sinalizador **Pronto para produção** : só pode ser definido ao editar um lançamento.
       * Se o sinalizador **Pronto para produção** estiver definido, a inicialização será executada automaticamente nas páginas de produção na **Data** do **Lançamento**(**Data de ativação**) especificada. Após a promoção, as páginas de produção são publicadas automaticamente.\
         Se nenhuma data tiver sido definida, o sinalizador não terá efeito.
@@ -115,11 +115,13 @@ Eles permitem:
 
 ## O console de lançamentos {#the-launches-console}
 
+<!--
 >[!NOTE]
 >
->Este console é somente para Inicializações de páginas.
+>This console is only for Launches for Pages. 
 >
->Para gerenciar os fragmentos de conteúdo, consulte [Inicializações para fragmentos de conteúdo](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+>To manage your Content Fragments see [Launches for Content Fragments](/help/sites-cloud/administering/content-fragments/launches-for-content-fragments.md).
+-->
 
 O console Lançamentos fornece uma visão geral dos lançamentos e permite que você atue de acordo com os listados.
 
