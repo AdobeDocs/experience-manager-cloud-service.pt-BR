@@ -4,9 +4,9 @@ description: Saiba como usar o CDN gerenciado pela AEM e como apontar seu própr
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 role: Admin
-source-git-commit: 603602dc70f9d7cdf78b91b39e3b7ff5090a6bc0
+source-git-commit: 62af306bbf645c4d70d0f07f95aa90e4d53e20f8
 workflow-type: tm+mt
-source-wordcount: '1729'
+source-wordcount: '1744'
 ht-degree: 9%
 
 ---
@@ -78,10 +78,10 @@ Para casos de uso de autenticação simples, incluindo participantes de negócio
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="A CDN do cliente aponta para a CDN gerenciada pelo AEM"
+>title="O CDN do cliente (ou proxy) aponta para o CDN gerenciado pela AEM"
 >abstract="O AEM as a Cloud Service oferece uma opção para os clientes usarem sua CDN existente. Para o nível de publicação, os clientes têm a opção de apontar para ela a partir de sua própria CDN, a qual precisarão gerenciar. Isso será permitido caso a caso, com base no cumprimento de certos pré-requisitos, incluindo, entre outros, uma integração herdada do cliente com seu fornecedor de CDN que seja difícil de abandonar."
 
-Se um cliente precisar usar sua CDN existente, ele poderá gerenciá-la e apontá-la para a CDN gerenciada pela AEM, desde que:
+Se um cliente precisar usar sua CDN existente (ou qualquer tipo de proxy reverso, por exemplo, um balanceador de carga ou um WAF), ele poderá gerenciá-la e apontá-la para a CDN gerenciada pela AEM, desde que:
 
 * O cliente deve ter uma CDN existente que seria onerosa para substituir.
 * O cliente deve gerenciá-lo.
