@@ -1,28 +1,35 @@
 ---
-title: Publicar páginas
-description: Saiba como publicar e desfazer a publicação de suas páginas usando vários mecanismos no AEM.
+title: Publicar páginas por meio do console Sites
+description: Saiba como publicar e desfazer a publicação de suas páginas usando o Console Sites.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: c738a123eccbb9b8c011f75ac60d79aba7a2a2d8
+source-git-commit: 5ad91a32d705ef61e8b9799bf7fb1e136bb8bfa0
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 75%
+source-wordcount: '1635'
+ht-degree: 73%
 
 ---
 
-# Publicar páginas {#publishing-pages}
+
+# Publicar páginas por meio do console Sites {#publishing-pages}
 
 Após criar e revisar seu conteúdo no ambiente do autor, o objetivo é [disponibilizá-lo em seu site público](/help/sites-cloud/authoring/author-publish.md) (seu ambiente de publicação).
 
 Isso é chamado de publicação de uma página. Quando você deseja remover uma página do ambiente de publicação, este é o processo de desfazer a publicação. Ao publicar e desfazer a publicação, a página permanece disponível no ambiente do autor para mais alterações até que você a exclua.
 
-Você pode publicar/desfazer a publicação de uma página imediatamente ou em uma data/hora predefinida posteriormente.
+Você pode usar o console [**Sites**](/help/sites-cloud/authoring/sites-console/introduction.md) para publicar/desfazer a publicação de uma página imediatamente ou em uma data/hora predefinida no futuro.
 
->[!NOTE]
+>[!TIP]
 >
->A publicação de um [Fragmento de experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md) segue basicamente o mesmo procedimento de publicação de uma página, mas a partir do console ou do editor de Fragmentos de experiência.
+>Você pode publicar de locais diferentes do console Sites.
+>
+>* [No Editor de Página](/help/sites-cloud/authoring/page-editor/publishing.md)
+>* [Do Editor Universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
+>* [No console ou editor de Fragmento de Experiência](/help/sites-cloud/authoring/fragments/experience-fragments.md)
+>
+>A publicação a partir desses locais oferece opções diferentes, mas segue procedimentos semelhantes e ideias gerais descritas aqui.
 
 ## Terminologia {#terminology}
 
@@ -38,14 +45,6 @@ Você pode publicar/desfazer a publicação de uma página imediatamente ou em u
    * Esses são os termos técnicos que descrevem a movimentação de dados (por exemplo, conteúdo da página, arquivos, código, comentários do usuário) de um serviço para outro ao publicar uma página (por exemplo, do autor para a pré-visualização).
    * Esses termos são usados principalmente pelos desenvolvedores.
 
-## Publicar páginas {#publishing-pages-1}
-
-Dependendo do seu local, é possível publicar:
-
-* [No editor de páginas](#publishing-from-the-page-editor)
-* [No ](#publishing-from-the-sites-console)
-* [No Editor universal](/help/sites-cloud/authoring/universal-editor/publishing.md)
-
 >[!NOTE]
 >
 >Se você não tiver os privilégios necessários para publicar uma página específica:
@@ -60,50 +59,17 @@ Dependendo do seu local, é possível publicar:
 >
 >A ordem das páginas não é garantida:
 >
->* se apenas as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal)
->* se as páginas pai e filho forem publicadas em ações separadas
+>* Se apenas as páginas secundárias forem selecionadas para publicação (já que as informações da ordem são mantidas na página principal)
+>* Se as páginas principal e secundária forem publicadas em ações separadas
 
-### Publicação por meio do Editor de páginas {#publishing-from-the-page-editor}
-
-Se você estiver editando uma página no [editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md), ela poderá ser publicada diretamente do editor.
-
-1. Selecione o ícone **Informações da página** para abrir o menu e depois a opção **Publicar página**.
-
-   ![Publicação de uma página por meio das opções de página](/help/sites-cloud/authoring/assets/publishing-page-options.png)
-
-1. Se a página tiver referências que precisam de publicação:
-
-   * A página é publicada diretamente se não houver referências a serem publicadas.
-   * Se a página tiver referências que precisem ser publicadas, elas serão listadas no assistente de **Publicação**, onde você poderá:
-      * Especifique quais dos ativos, ou tags etc., você deseja publicar junto com a página. Em seguida, use **Publicar** para concluir o processo.
-      * Usar a opção **Cancelar** para suspender a ação.
-
-   ![Publicação de referências com a página](/help/sites-cloud/authoring/assets/publishing-references.png)
-
-1. Se você selecionar **Publicar**, replicará a página no ambiente de publicação. No editor de páginas, será mostrado um banner de informações confirmando a ação de publicação.
-
-   ![Banner de informações do status de publicação](/help/sites-cloud/authoring/assets/publishing-info.png)
-
-   Ao visualizar a mesma página no console, o status da publicação atualizada estará visível.
-
-   ![Status de publicação da página na exibição de coluna no console Sites](/help/sites-cloud/authoring/assets/publishing-status-console-column.png)
-
->[!NOTE]
->
->A publicação por meio do editor de páginas é um processo superficial, ou seja, somente as páginas selecionadas são publicadas, sem incluir páginas filhas.
-
->[!NOTE]
->
->Páginas acessadas por [aliases](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) no editor não podem ser publicadas. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
-
-### Publicação por meio do Console do site {#publishing-from-the-sites-console}
+## Publicar páginas por meio do console Sites {#publishing-from-the-sites-console}
 
 No console **Sites**, há duas opções para publicação:
 
 * [Publicação rápida   ](#quick-publish)
 * [Gerenciar publicação   ](#manage-publication)
 
-#### Publicação rápida    {#quick-publish}
+### Publicação rápida    {#quick-publish}
 
 A **Publicação rápida** serve para casos simples e publica as páginas selecionadas imediatamente, sem qualquer outra interação. Por esse motivo, qualquer referências que ainda não tiver sido publicada, será automaticamente.
 
@@ -121,9 +87,9 @@ Para publicar uma página com a Publicação rápida:
 
 >[!NOTE]
 >
->A Publicação rápida é uma publicação superficial, ou seja, somente a(s) página(s) selecionada(s) é(são) publicada(s), mas qualquer página secundária que houver não será.
+>A Publicação rápida é uma publicação superficial, ou seja, somente a(s) página(s) selecionada(s) é(são) publicada(s), mas qualquer página filha que houver não será.
 
-#### Gerenciar publicação    {#manage-publication}
+### Gerenciar publicação    {#manage-publication}
 
 **Gerenciar Publicação** oferece mais opções do que **Publicação Rápida**, permitindo a inclusão de páginas secundárias, a personalização das referências, a publicação em um serviço de visualização (se disponível), o início de qualquer fluxo de trabalho aplicável e a opção de publicação em uma data posterior.
 
@@ -149,13 +115,13 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
      Publicar mais tarde inicia um fluxo de trabalho para publicar a(s) página(s) selecionada(s) no horário especificado. Por outro lado, desfazer a publicação mais tarde inicia um fluxo de trabalho para desfazer a publicação da(s) página(s) selecionada(s) no horário especificado.
 
-     >[!NOTE]
+     >[!TIP]
      >
      >Caso deseje cancelar a publicação/desfazer a publicação mais tarde, acesse o [Console do Fluxo de trabalhos](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) para encerrar o fluxo de trabalho correspondente.
 
-     >[!NOTE]
+     >[!TIP]
      >
-     >O agendamento de conteúdo para publicação não é o mesmo que [**Momento da ativação** e **Momento da desativação**, disponíveis nas propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md#basic), mas pode ser usado em circunstâncias semelhantes.
+     >O agendamento de conteúdo para publicação replica o conteúdo e respeita os workflows de publicação. Se quiser ocultar temporariamente o conteúdo já publicado sem desfazer a publicação, considere o [**Momento da ativação** e o **Momento da desativação** disponíveis nas propriedades da página.](/help/sites-cloud/authoring/sites-console/page-properties.md#basic)
 
    ![Gerenciar opções de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
@@ -193,20 +159,20 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
    ![Gerenciar publicação seleção de páginas](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-   **Incluir secundárias**
+   **Incluir filhos**
 
    >[!NOTE]
    >
    >Consulte [Publicar e desfazer publicação de uma árvore](#publishing-and-unpublishing-a-tree)
 
-   Clicar em **Incluir secundárias** abre uma caixa de diálogo que permite:
+   Clicar em **Incluir filhos** abre uma caixa de diálogo que permite:
 
-   * **Incluir secundárias**
-   * **Incluir somente secundárias imediatas**
+   * **Incluir filhos**
+   * **Incluir somente filhos imediatos**
    * **Incluir somente as páginas modificadas**
    * **Incluir somente páginas já publicadas**
 
-   Ative as opções necessárias e confirme com **OK** para adicionar as páginas secundárias à lista de páginas a serem publicadas ou não, com base nas opções de seleção. Clique em **Cancelar** para cancelar a seleção e retornar ao assistente.
+   Ative as opções necessárias e confirme com **OK** para adicionar as páginas filhas à lista de páginas a serem publicadas ou não, com base nas opções de seleção. Clique em **Cancelar** para cancelar a seleção e retornar ao assistente.
 
    ![Gerenciar publicação incluindo filhos](/help/sites-cloud/authoring/assets/publishing-include-children.png)
 
@@ -230,26 +196,9 @@ Para publicar ou desfazer a publicação de uma página usando Gerenciar publica
 
 1. Clique em **Publicar** ou **Publicar mais tarde** para concluir a publicação.
 
-
-
 ## Desfazer a publicação de páginas {#unpublishing-pages}
 
-Desfazer a publicação de uma página fará com que ela seja removida do seu ambiente de publicação ou [pré-visualização](/help/sites-cloud/authoring/sites-console/previewing-content.md), deixando de estar disponível aos seus leitores.
-
-De uma [maneira semelhante à publicação](#publishing-pages), uma ou mais páginas podem ter a publicação desfeita do destino desejado:
-
-* [No editor de páginas](#unpublishing-from-the-editor)
-* [Do console do Sites](#unpublishing-from-the-console)
-
-### Desfazer a publicação por meio do editor    {#unpublishing-from-the-editor}
-
-Ao editar uma página, se quiser desfazer a publicação, selecione **Desfazer a publicação da página** no menu **Informações da página**, da mesma forma que faria para [publicar a página](#publishing-from-the-editor).
-
->[!NOTE]
->
->Páginas acessadas por [aliases](/help/sites-cloud/authoring/sites-console/page-properties.md#advanced) no editor não podem ter a publicação desfeita. As opções de publicação no editor só estão disponíveis para páginas acessadas por meio de seus caminhos reais.
-
-### Desfazer a publicação por meio do Console  {#unpublishing-from-the-console}
+Desfazer a publicação de uma página fará com que ela seja removida do seu ambiente de publicação ou [visualização](/help/sites-cloud/authoring/sites-console/previewing-content.md), deixando de estar disponível aos seus leitores.
 
 Da mesma forma que você [usa a opção Gerenciar publicação para publicar](#manage-publication), também pode usá-la para desfazer a publicação.
 
@@ -279,20 +228,20 @@ Quando você tiver inserido ou atualizado um número considerável de páginas d
 
 1. No console Sites, selecione a página raiz da árvore que deseja publicar ou desfazer a publicação e selecione **Gerenciar Publicação**.
 1. O assistente para **Gerenciar publicação** é iniciado. Escolha publicar ou desfazer a publicação e quando isso deve ocorrer e selecione **Próximo** para continuar.
-1. Na etapa **Escopo**, selecione a página raiz e selecione **Incluir tarefas derivadas**.
+1. Na etapa **Escopo**, selecione a página raiz e selecione **Incluir filhas**.
 
    ![Gerenciar páginas de seleção de publicação](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
-1. Na caixa de diálogo **Incluir secundárias**:
+1. Na caixa de diálogo **Incluir filhos**:
 
-   * selecione **Incluir secundárias**
-   * desmarque **Incluir somente secundárias imediatas**
+   * selecione **Incluir filhos**
+   * desmarque **Incluir somente filhos imediatos**
    * desmarque **Incluir somente páginas já publicadas**
    * configure **Incluir somente as páginas modificadas** como obrigatório
 
    Essas opções são selecionadas por padrão e, portanto, você deve se lembrar de configurá-las. Confirme a seleção com **OK** para adicionar o conteúdo à publicação ou ao cancelamento da publicação.
 
-   ![Inclusão de secundárias para publicação em árvore](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
+   ![Inclusão de filhos para publicação em árvore](/help/sites-cloud/authoring/assets/publishing-include-children-tree.png)
 
 1. No assistente do **Gerenciar publicação**, é possível personalizar ainda mais a seleção adicionando outras páginas ou removendo as selecionadas.
 

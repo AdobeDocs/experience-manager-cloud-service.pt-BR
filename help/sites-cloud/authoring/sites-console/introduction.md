@@ -1,11 +1,11 @@
 ---
 title: O console Sites
-description: Saiba como usar o console Sites para gerenciar e organizar suas páginas de AEM.
+description: Saiba como usar o console Sites para gerenciar e organizar suas páginas do AEM.
 exl-id: b666e62a-c3dc-4be3-8932-d5fe67b178d6
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 44%
@@ -14,7 +14,7 @@ ht-degree: 44%
 
 # O console Sites {#sites-console}
 
-Saiba como usar o console **Sites** para gerenciar e organizar suas páginas de AEM.
+Saiba como usar o console **Sites** para gerenciar e organizar suas páginas do AEM.
 
 ## Orientação {#orientation}
 
@@ -85,7 +85,7 @@ Depois de clicadas, as opções exibidas são apropriadas ao console/contexto. O
 * [Site](/help/sites-cloud/administering/site-creation/create-site.md)
 * [Live Copy](/help/sites-cloud/administering/msm/overview.md)
 * [Iniciar](/help/sites-cloud/authoring/launches/overview.md)
-* [Cópia de idioma](/help/sites-cloud/administering/translation/overview.md)
+* [Cópia no idioma de destino](/help/sites-cloud/administering/translation/overview.md)
 * [Relatório CSV](/help/sites-cloud/authoring/sites-console/csv-export.md)
 
 Consulte os links para esses recursos para obter detalhes sobre como eles funcionam.
@@ -98,7 +98,7 @@ O console do **Sites** oferece três exibições diferentes da sua hierarquia de
 * [Exibição de cartão](#card-view)
 * [Exibição de lista](#list-view)
 
-O ícone **Exibir** na extremidade direita da barra de ferramentas do AEM indica a exibição atual selecionada.
+O ícone **Exibir** na extremidade direita da barra de ferramentas do AEM indica o modo de exibição atual selecionado.
 
 Tocar ou clicar nele permite selecionar uma exibição diferente.
 
@@ -144,12 +144,12 @@ A exibição de coluna permite a navegação visual de uma árvore de conteúdo 
 
 ![Exibição de coluna](assets/sites-console-column-view.png)
 
-Selecionar um recurso na coluna mais à esquerda exibirá os recursos secundários em uma coluna à direita. Selecionar um recurso na coluna à direita exibirá os recursos secundários em outra coluna à direita e assim por diante.
+Selecionar um recurso na coluna mais à esquerda exibirá os recursos filhos em uma coluna à direita. Selecionar um recurso na coluna à direita exibirá os recursos filhos em outra coluna à direita e assim por diante.
 
 * É possível navegar para cima e para baixo na árvore tocando ou clicando no nome do recurso ou na divisa à direita do nome do recurso.
 
    * O nome e a divisa do recurso são realçados quando tocados ou clicados.
-   * Os secundários do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
+   * Os filhos do recurso clicado/tocado são exibidos na coluna à direita do recurso clicado/tocado.
    * Se você selecionar um nome de recurso que não tenha filhos, seus detalhes serão exibidos na coluna final.
 
 * Tocar ou clicar na miniatura seleciona o recurso.
@@ -236,13 +236,13 @@ A barra de ferramentas Ações só aparece quando um recurso é selecionado no c
 
 * [**Criar**](#create-action) - Criar novo conteúdo ou ações relacionadas a conteúdo
 * **Editar** - Dependendo de como a página selecionada foi criada, a ação **Editar** abrirá o editor apropriado.
-   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas criadas com o Editor de Páginas AEM
+   * [Editor de páginas](/help/sites-cloud/authoring/page-editor/introduction.md) - Para páginas criadas com o Editor de páginas do AEM
    * [Editor Universal](/help/sites-cloud/authoring/universal-editor/authoring.md) - Para páginas criadas com o Editor Universal
-* [**Propriedades**](/help/sites-cloud/authoring/sites-console/page-properties.md) - Abre a janela de propriedades da página
+* [**Propriedades**](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) - Abre a janela de propriedades da página
 * [**Bloquear**](/help/sites-cloud/authoring/sites-console/managing-pages.md#locking-a-page) - Bloquear uma página para impedir que outras pessoas a alterem
 * [**Copiar**](/help/sites-cloud/authoring/sites-console/managing-pages.md#copying-and-pasting-a-page) - Copiar uma página
 * [**Mover**](/help/sites-cloud/authoring/sites-console/managing-pages.md#moving-or-renaming-a-page) - Mover ou renomear uma página
-* [**Publish rápido**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publish uma ou mais páginas imediatamente
+* [**Publicação rápida**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#quick-publish) - Publicar uma ou mais páginas imediatamente
 * [**Gerenciar publicação**](/help/sites-cloud/authoring/sites-console/publishing-pages.md#manage-publication) - Agende uma ou mais páginas para publicação
 * [**Restaurar**](/help/sites-cloud/authoring/sites-console/page-versions.md#restore-version) - Restaura uma versão de uma página ou árvore de páginas
 * [**Excluir**](/help/sites-cloud/authoring/sites-console/managing-pages.md#deleting-a-page) - Excluir uma ou mais páginas

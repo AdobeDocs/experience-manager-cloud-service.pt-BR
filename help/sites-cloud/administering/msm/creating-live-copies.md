@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
 solution: Experience Manager Sites
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '4270'
 ht-degree: 94%
@@ -27,8 +27,8 @@ Uma configuração de blueprint identifica um site existente que você deseja us
 Ao criar uma configuração de blueprint, você seleciona um modelo que define a estrutura interna do blueprint. O modelo de blueprint padrão presume que o site de origem tem as seguintes características:
 
 * O site tem uma página raiz.
-* As páginas secundárias diretas da raiz são ramificações de idioma do site. Ao criar uma Live Copy, os idiomas são apresentados como conteúdo opcional a ser incluído na cópia.
-* A raiz de cada ramificação de idioma tem uma ou mais páginas secundárias. Ao criar uma Live Copy, as páginas secundárias são apresentadas para que você possa incluí-las na Live Copy.
+* As páginas filhas diretas da raiz são ramificações de idioma do site. Ao criar uma Live Copy, os idiomas são apresentados como conteúdo opcional a ser incluído na cópia.
+* A raiz de cada ramificação de idioma tem uma ou mais páginas filhas. Ao criar uma Live Copy, as páginas filhas são apresentadas para que você possa incluí-las na Live Copy.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Há várias maneiras de criar uma Live Copy.
 
 É possível criar uma Live Copy de qualquer página ou ramificação. Ao criar a Live Copy, é possível especificar as configurações de implantação a serem usadas para sincronizar o conteúdo:
 
-* As configurações de implantação selecionadas se aplicam à página Live Copy e suas páginas secundárias.
+* As configurações de implantação selecionadas se aplicam à página Live Copy e suas páginas filhas.
 * Se você não especificar nenhuma configuração de implantação, o MSM determinará quais configurações de implantação usar. Consulte [Especificação da configuração de implantação a ser usada](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use).
 
 É possível criar uma Live Copy de qualquer página:
@@ -155,7 +155,7 @@ Se omitir algumas ramificações de idioma da Live Copy, você poderá adicioná
 Ao criar o site, forneça valores para as seguintes propriedades:
 
 * **Idiomas iniciais**: as ramificações de idioma da origem do blueprint a serem incluídas na Live Copy.
-* **Capítulos iniciais**: as páginas secundárias das ramificações de idioma do blueprint a serem incluídas na Live Copy.
+* **Capítulos iniciais**: as páginas filhas das ramificações de idioma do blueprint a serem incluídas na Live Copy.
 * **Caminho de destino**: o local da página raiz do site Live Copy.
 * **Título**: o título da página raiz do site Live Copy.
 * **Nome**: (opcional) o nome do nó JCR que armazena a página raiz da Live Copy (o valor padrão é baseado no título).
@@ -212,7 +212,7 @@ Para exibir as propriedades:
 
 ### Visualizar as Live Copies de uma página de blueprint {#seeing-the-live-copies-of-a-blueprint-page}
 
-As páginas de blueprint (referenciadas em uma configuração de blueprint) fornecem uma lista das páginas Live Copy que usam a página atual (blueprint) como origem. Use esta lista para monitorar as Live Copies. A lista é exibida na guia **Blueprint** das [propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md).
+As páginas de blueprint (referenciadas em uma configuração de blueprint) fornecem uma lista das páginas Live Copy que usam a página atual (blueprint) como origem. Use esta lista para monitorar as Live Copies. A lista é exibida na guia **Blueprint** das propriedades da [página.](/help/sites-cloud/authoring/sites-console/page-properties.md)
 
 ![Guia Blueprint das propriedades da página](../assets/live-copy-blueprint-tab.png)
 
@@ -356,7 +356,7 @@ Quando a página de Live Copy é sincronizada com a página de origem, os compon
 
 ### Suspender a herança de uma página {#suspending-inheritance-for-a-page}
 
-Ao criar uma Live Copy, a configuração da Live Copy é salva na página raiz das páginas copiadas. Todas as páginas secundárias da página raiz herdam as configurações da Live Copy. Os componentes nas páginas da Live Copy também herdam a configuração da Live Copy.
+Ao criar uma Live Copy, a configuração da Live Copy é salva na página raiz das páginas copiadas. Todas as páginas filhas da página raiz herdam as configurações da Live Copy. Os componentes nas páginas da Live Copy também herdam a configuração da Live Copy.
 
 Você pode suspender a herança da Live Copy de uma página de Live Copy para poder alterar as propriedades e os componentes da página. Ao suspender a herança, as propriedades e os componentes da página não são mais sincronizados com a origem.
 
@@ -386,9 +386,9 @@ A [ação Suspender também está disponível na visão geral da Live Copy](live
 1. Selecione a opção apropriada de:
 
    * **Suspender**
-   * **Suspender com secundários**
+   * **Suspender com filhos**
 
-   ![Suspender com secundários](../assets/suspend-with-children.png)
+   ![Suspender com filhos](../assets/suspend-with-children.png)
 
 1. Confirme a ação **Suspender** na caixa de diálogo **Suspender Live Copy**:
 
@@ -430,19 +430,19 @@ A [ação Retomar também está disponível na visão geral da Live Copy](live-c
 
 ### Alterar a profundidade da herança (superficial/profunda) {#changing-inheritance-depth-shallow-deep}
 
-Em uma Live Copy já existente, é possível alterar a profundidade de uma página, ou seja, se as páginas secundárias serão incluídas.
+Em uma Live Copy já existente, é possível alterar a profundidade de uma página, ou seja, se as páginas filhas serão incluídas.
 
 * Alternar para uma Live Copy superficial:
 
    * Terá efeito imediato e não será reversível.
 
-   * Desconecta explicitamente as páginas secundárias da Live Copy. Modificações posteriores nas páginas secundárias não podem ser preservadas, caso desfeitas.
+   * Desconecta explicitamente as páginas filhas da Live Copy. Modificações posteriores nas páginas filhas não podem ser preservadas, caso desfeitas.
 
    * Removerá qualquer `LiveRelationships` descendente, mesmo que haja `LiveCopies` aninhadas.
 
 * Alternar para uma Live Copy profunda:
 
-   * Deixa as páginas secundárias intactas.
+   * Deixa as páginas filhas intactas.
    * Para ver o efeito da alteração, é possível fazer uma implantação. Qualquer modificação de conteúdo é aplicada de acordo com a configuração de implantação.
 
 * Alternar para uma Live Copy superficial e, em seguida, de volta para uma profunda:
@@ -455,8 +455,8 @@ Para especificar ou alterar a profundidade:
 1. Selecione a guia **Live Copy**.
 1. Na seção **Configuração**, defina ou limpe a opção **Herança da Live Copy** dependendo se as páginas filhas estão incluídas:
 
-   * Marcado — uma Live Copy profunda (as páginas secundárias estão incluídas)
-   * Desmarcado — uma Live Copy superficial (páginas secundárias são excluídas)
+   * Marcado — uma Live Copy profunda (as páginas filhas estão incluídas)
+   * Desmarcado — uma Live Copy superficial (páginas filhas são excluídas)
 
    >[!CAUTION]
    >

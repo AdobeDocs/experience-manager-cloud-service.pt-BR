@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 89%
@@ -30,7 +30,7 @@ Os componentes estão disponíveis na guia **Componentes** do painel lateral do 
 
 Você pode selecionar um componente e arrastá-lo até o local desejado na página. A partir daí é possível editá-lo usando:
 
-* [Configurar propriedades](/help/sites-cloud/authoring/sites-console/page-properties.md)
+* [Configurar propriedades](/help/sites-cloud/authoring/sites-console/edit-page-properties.md)
 * [Editar conteúdo](/help/sites-cloud/authoring/page-editor/edit-content.md)
 * [Editar conteúdo - Modo de tela cheia](/help/sites-cloud/authoring/page-editor/edit-content.md#edit-content-full-screen-mode)
 
@@ -42,11 +42,11 @@ O console [Componentes](/help/sites-cloud/authoring/components-console.md) forne
 
 ## Componentes principais  {#core-components}
 
-Os [&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=pt-BR)Componentes principais oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
+Os ](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/introduction)Componentes principais[ oferecem funcionalidade de criação flexível e repleta de recursos, que fornecem tipos de conteúdo essenciais para criar páginas.
 
-Eles são criados usando as práticas recomendadas para o AEM e são a base da experiência de criação do AEM. Os componentes principais podem ser facilmente estendidos pelos desenvolvedores para atender às necessidades específicas do projeto.
+Eles são criados usando as práticas recomendadas do AEM e são a base da experiência de criação do AEM. Os componentes principais podem ser facilmente estendidos pelos desenvolvedores para atender às necessidades específicas do projeto.
 
-Junto com os Componentes principais do WCM, você também pode usar os [Componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=pt-BR#features). Esses Componentes principais fornecem métodos padrão e mais fáceis de [criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
+Junto com os Componentes principais do WCM, você também pode usar os [Componentes principais de formulários adaptáveis](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features). Esses Componentes principais fornecem métodos padrão e mais fáceis de [criar ou adicionar formulários a uma página do AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md).
 
 ### Configuração de modelos {#configuring-templates}
 

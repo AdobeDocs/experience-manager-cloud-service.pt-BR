@@ -4,7 +4,7 @@ description: O Editor de páginas permanece compatível com o Adobe, mas o Edito
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: 0a13fb52-623e-4aff-b254-186d8d117e4d
-source-git-commit: 9da4c90c56b7a82a41604173100ad6503a4a06d0
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 3%
@@ -73,7 +73,7 @@ Como a lacuna de recursos entre os dois editores está diminuindo constantemente
 | Árvore de conteúdo | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Também permite reordenar dentro da árvore |
 | Simulação de dispositivo | [!BADGE Disponível]{type=Positive} | [Dispositivos configurados podem ser simulados](/help/sites-cloud/administering/responsive-layout.md), mas o usuário não pode inserir manualmente dimensões de tela diferentes para simular. | [!BADGE Disponível]{type=Positive} | [Qualquer dimensão de tela a ser simulada pode ser inserida manualmente](/help/sites-cloud/authoring/universal-editor/navigation.md#emulator), mas os pontos de interrupção padrão não podem ser configurados. |
 | [Bloqueio de páginas](/help/sites-cloud/authoring/sites-console/managing-pages.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Respeita o status de bloqueio definido no Console Sites com a extensão disponível para bloquear/desbloquear páginas do editor |
-| [Propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Disponível pelo Administrador do site, com extensão para também acessar as propriedades das páginas do editor |
+| [Propriedades da página](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} | Disponível pelo Administrador do site, com extensão para também acessar as propriedades das páginas do editor |
 | Propriedades de vários campos | [!BADGE Disponível]{type=Positive} |  | [!BADGE Indisponível]{type=Negative} | Planejado |
 | [DAM remoto](/help/assets/dynamic-media-open-apis-overview.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |
 | [Controle de versão da página](/help/sites-cloud/authoring/sites-console/page-versions.md) | [!BADGE Disponível]{type=Positive} |  | [!BADGE Disponível]{type=Positive} |  |

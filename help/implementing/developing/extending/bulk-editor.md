@@ -4,16 +4,16 @@ description: Saiba como configurar a edição em massa para editar as propriedad
 exl-id: 0d10c6b9-8643-479d-adc1-4066d227e83d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 646ca4f4a441bf1565558002dcd6f96d3e228563
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Configuração da edição de itens em massa das propriedades da página {#configuring-bulk-editing-of-page-properties}
 
-[A edição em massa das propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md#from-the-sites-console-multiple-pages) permite editar as propriedades de várias páginas de uma só vez.
+[A edição em massa das propriedades da página](/help/sites-cloud/authoring/sites-console/edit-page-properties.md#from-the-sites-console-multiple-pages) permite editar as propriedades de várias páginas de uma só vez.
 
 ## Considerações {#considerations}
 
@@ -42,7 +42,7 @@ Essas etapas usam o `/apps/core/wcm/components/page/v1/page` do [conteúdo de am
 1. Defina a seguinte propriedade no nó do campo:
 
    * **Nome**: `allowBulkEdit`
-   * **Tipo**: `Boolean`
+   * **Tipo**: `Boolean`
    * **Valor**: `true`
 
 1. Selecione **Salvar tudo** para manter suas atualizações.

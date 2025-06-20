@@ -5,7 +5,7 @@ solution: Experience Manager Sites
 feature: Administering
 role: User
 exl-id: d11d7176-dd35-4855-9dcd-dd40ff096510
-source-git-commit: 7201cc90c0f698454d8ccda0eb83e433a330c1eb
+source-git-commit: 3238b11cdd891cf18048199d4103397e3af75edf
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 1%
@@ -73,7 +73,7 @@ Se um autor iniciar em um modelo criado com o editor de modelo que já foi ativa
 
 ## Propriedades {#properties}
 
-Você pode editar as [propriedades do modelo](/help/sites-cloud/authoring/page-editor/templates.md) da mesma forma que pode [editar as propriedades da página](/help/sites-cloud/authoring/sites-console/page-properties.md).As propriedades do modelo incluem:
+Você pode editar as [propriedades do modelo](/help/sites-cloud/authoring/page-editor/templates.md) da mesma forma que pode [editar as propriedades da página.As propriedades do modelo ](/help/sites-cloud/authoring/sites-console/edit-page-properties.md) incluem:
 
 * Título do modelo
 * Descrição
