@@ -5,9 +5,9 @@ exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: da192447ddc6edbca339c9a985f95dc063183cd3
 workflow-type: tm+mt
-source-wordcount: '13685'
+source-wordcount: '13672'
 ht-degree: 92%
 
 ---
@@ -184,7 +184,7 @@ Inserir multimídia em suas páginas da Web do AEM é semelhante à inserção d
 
 #### Propósito - Legendas (pré-gravadas) (1.2.2) {#purpose-captions-prerecorded}
 
-Indivíduos surdos ou com deficiência auditiva não conseguirão ou terão grande dificuldade em acessar um conteúdo de áudio. As legendas são equivalentes em texto para áudio falado e não falado, exibidas na tela no momento adequado durante o vídeo. Elas permitem que os indivíduos que não conseguem ouvir o áudio entendam o que está acontecendo.
+Os indivíduos surdos ou com deficiência auditiva não conseguem ou têm grande dificuldade para acessar o conteúdo de áudio. As legendas são equivalentes em texto para áudio falado e não falado, exibidas na tela no momento adequado durante o vídeo. Elas permitem que os indivíduos que não conseguem ouvir o áudio entendam o que está acontecendo.
 
 #### Como cumprir - Legendas (pré-gravadas) (1.2.2) {#how-to-meet-captions-prerecorded}
 
@@ -201,13 +201,13 @@ Se você precisar usar legendas abertas, incorpore o texto à faixa de vídeo. I
 
 #### Mais informações - Legendas (pré-gravadas) (1.2.2) {#more-information-captions-prerecorded}
 
-* [Noções sobre o Critério de Sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html).
-* [Como cumprir o Critério de sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded).
+* [Noções sobre o Critério de sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
+* [Como cumprir o Critério de sucesso 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-c
-* [W3C: Multimídia sincronizada](https://www.w3.org/AudioVideo/).
-* [Legendas, transcrições e descrições de áudio - pelo WebAIM](https://webaim.org/techniques/captions/).
-—>
+<!--
+* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/).
+* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
+-->
 
 ### Descrição de áudio ou alternativa de mídia (pré-gravada) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
@@ -502,7 +502,7 @@ Se a cor for usada como uma indicação para fornecer as informações, você de
 
 #### Propósito - Controle de áudio (1.4.2) {#purpose-audio-control}
 
-Os indivíduos que usam software de leitura de tela podem achar difícil ouvir a saída da fala se houver outra reprodução de áudio ao mesmo tempo. Essa dificuldade é exacerbada quando a saída de voz do leitor de tela é baseada em software (como a maioria é hoje) e é regulada pelo mesmo controle de volume do som. Além disso, algumas pessoas com deficiências cognitivas e neurodivergentes podem ter sensibilidade ao som. Para essas pessoas, a incapacidade de alterar o volume do conteúdo de áudio é um fator bastante incômodo.
+As pessoas que usam software de leitura de tela podem achar difícil ouvir a saída da fala se houver outra reprodução de áudio ao mesmo tempo. Essa dificuldade é exacerbada quando a saída de voz do leitor de tela é baseada em software (como a maioria é hoje) e é regulada pelo mesmo controle de volume do som. Além disso, algumas pessoas com deficiências cognitivas e neurodivergentes podem ter sensibilidade ao som. Para essas pessoas, a incapacidade de alterar o volume do conteúdo de áudio é um fator bastante incômodo.
 
 Portanto, é importante que o usuário possa desligar o som de fundo.
 
@@ -638,7 +638,7 @@ Isso garante que os usuários possam acessar toda a funcionalidade usando um tec
 
 #### Propósito - Teclado (2.1.1) {#purpose-keyboard}
 
-O objetivo desse Critério de sucesso é garantir que, sempre que possível, o conteúdo possa ser operado por meio de um teclado ou a interface de teclado (para que um teclado alternativo possa ser usado). Quando o conteúdo pode ser operado por meio de um teclado ou teclado alternativo, ele é operável por pessoas sem visão (que não podem usar dispositivos como mouses, pois exigem coordenação entre olho e mão), bem como por pessoas que precisam usar teclados alternativos ou dispositivos de entrada que atuam como emuladores de teclado. Os emuladores de teclado incluem software de entrada de fala, software “sip-and-puff”, teclados virtuais, software de digitalização e uma variedade de tecnologias assistivas e teclados alternativos. Os indivíduos com baixa visão também podem ter dificuldade em rastrear um ponteiro e consideram o uso do software muito mais fácil (ou apenas possível) se puderem controlá-lo pelo teclado.
+O objetivo desse Critério de sucesso é garantir que, sempre que possível, o conteúdo possa ser operado por meio de um teclado ou a interface de teclado (para que um teclado alternativo possa ser usado). Quando o conteúdo pode ser operado por meio de um teclado ou teclado alternativo, ele é operável por pessoas sem visão (que não podem usar dispositivos como mouses, pois exigem coordenação entre olho e mão), bem como por pessoas que precisam usar teclados alternativos ou dispositivos de entrada que atuam como emuladores de teclado. Os emuladores de teclado incluem software de entrada de fala, software “sip-and-puff”, teclados virtuais, software de digitalização e uma variedade de tecnologias assistivas e teclados alternativos. As pessoas com baixa visão também podem ter dificuldade em rastrear um ponteiro e consideram o uso do software muito mais fácil (ou apenas possível) se puderem controlá-lo pelo teclado.
 
 #### Como cumprir - Teclado (2.1.1) {#how-to-meet-keyboard}
 
@@ -832,7 +832,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 2.4.3](https://www
 
 #### Finalidade - Finalidade do link (Em contexto) (2.4.4)       {#purpose-link-purpose-in-context}
 
-Para todos os usuários, independentemente de deficiências, é essencial indicar claramente a direção de um link por meio de um texto de link apropriado. Isso ajuda os usuários a decidir se querem ou não seguir um link. Para usuários com visão, um texto de link significativo é útil quando há vários links em uma página (principalmente se a página contiver muito texto), já que isso fornece uma indicação mais clara da funcionalidade da página de destino. Os usuários de algumas tecnologias de assistência, que podem gerar uma lista de todos os links em uma única página, poderão entender mais facilmente o texto do link fora do contexto se o texto do link for exclusivo e informativo. No entanto, indivíduos com deficiências cognitivas poderão se confundir se um link não fornecer informações suficientes para descrever com precisão onde o link os levará.
+Para todos os usuários, independentemente de deficiências, é essencial indicar claramente a direção de um link por meio de um texto de link apropriado. Isso ajuda os usuários a decidir se querem ou não seguir um link. Para usuários com visão, um texto de link significativo é útil quando há vários links em uma página (principalmente se a página contiver muito texto), já que isso fornece uma indicação mais clara da funcionalidade da página de destino. Os usuários de algumas tecnologias de assistência, que podem gerar uma lista de todos os links em uma única página, poderão entender mais facilmente o texto do link fora do contexto se o texto do link for exclusivo e informativo. No entanto, pessoas com deficiências cognitivas poderão se confundir se um link não fornecer informações suficientes para descrever com precisão onde o link os levará.
 
 #### Como cumprir - Finalidade do link (Em contexto) (2.4.4)       {#how-to-meet-link-purpose-in-context}
 
@@ -1099,7 +1099,7 @@ Siga as orientações em [Como cumprir o Critério de sucesso 3.2.2](https://www
 
 #### Propósito - Navegação consistente (3.2.3) {#purpose-consistent-navigation}
 
-O propósito deste Critério de sucesso é incentivar o uso de apresentação e layout consistentes para usuários que interagem com conteúdo repetido em um conjunto de páginas da Web e precisam localizar informações ou funcionalidades específicas mais de uma vez. Os indivíduos com pouca visão que usam ampliação de tela para exibir uma pequena parte da tela por vez geralmente usam dicas visuais e limites de página para localizar rapidamente o conteúdo repetido. Apresentar conteúdo repetido na mesma ordem também é importante para os usuários visuais que usam memória espacial ou dicas visuais no design para localizar conteúdo repetido.
+O propósito deste Critério de sucesso é incentivar o uso de apresentação e layout consistentes para usuários que interagem com conteúdo repetido em um conjunto de páginas da Web e precisam localizar informações ou funcionalidades específicas mais de uma vez. As pessoas com pouca visão que usam ampliação de tela para exibir uma pequena parte da tela por vez geralmente usam dicas visuais e limites de página para localizar rapidamente o conteúdo repetido. Apresentar conteúdo repetido na mesma ordem também é importante para os usuários visuais que usam memória espacial ou dicas visuais no design para localizar conteúdo repetido.
 
 É importante observar que utilizar a frase &quot;mesma ordem&quot; nesta seção não significa que os menus de subnavegação não possam ser usados ou que blocos de navegação secundária ou estrutura de página não possam ser usados. Em vez disso, este Critério de sucesso destina-se a ajudar os usuários que interagem com conteúdo repetido em várias páginas da Web a prever a localização do conteúdo que estão procurando e localizá-lo mais rapidamente quando o encontrarem novamente.
 
