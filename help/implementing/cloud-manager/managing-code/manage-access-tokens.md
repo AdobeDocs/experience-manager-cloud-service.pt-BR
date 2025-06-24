@@ -5,9 +5,9 @@ feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 badge: label="Beta privado" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#manage-access-tokens"
 exl-id: bc9f392c-61f5-4d39-972b-4c6c8f9bab4a
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: 52e05be90dc1a4997c6b65306bc646d03456c971
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '403'
 ht-degree: 3%
 
 ---
@@ -45,11 +45,9 @@ Consulte também [Adicionar repositórios externos no Cloud Manager](/help/imple
 1. Na caixa de diálogo **Gerenciar Tokens de Acesso**, à direita de um nome de token, clique em ![Ícone Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg).
 1. Na caixa de diálogo **Editar Token de Acesso**, atualize o **Nome do Token** ou o valor do **Token de Acesso**, ou ambos.
 
-   Se o **Token de acesso** estiver em uso no momento, uma notificação será exibida avisando que todos os repositórios associados são revalidados automaticamente após a atualização.
-
    ![Caixa de diálogo Editar Token de Acesso](/help/implementing/cloud-manager/managing-code/assets/access-tokens-edit.png)
 
-1. Se o token estiver em uso, uma notificação avisará que todos os repositórios associados são revalidados automaticamente.
+1. Se o **Token de acesso** estiver em uso no momento, uma notificação será exibida avisando que todos os repositórios associados são revalidados automaticamente após a atualização.
 
 1. Clique em **Atualizar** para salvar as alterações.
 
