@@ -3,9 +3,9 @@ title: Seletor de ativos para [!DNL Adobe Experience Manager] as a [!DNL Cloud S
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: 62b0b857-068f-45b7-9018-9c59fde01dc3
-source-git-commit: fb1e73b24e0717998a69132cc8f196193c87bab4
+source-git-commit: 52e7e58aaee8b153c828f65c720ba9e38428ad36
 workflow-type: tm+mt
-source-wordcount: '1598'
+source-wordcount: '1608'
 ht-degree: 29%
 
 ---
@@ -239,7 +239,7 @@ Additionally, see [Asset Selector user interface for Dynamic Media with OpenAPI 
 
 ##### Add modifiers {#modifiers-dm-media-renditions}
 
-Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
+Beyond the common image settings available in the UI, Dynamic Media supports numerous advanced image modifications that you can specify in the Image Modifiers field. See [Defining image preset options with Image Modifiers](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/dynamic/managing-image-presets#defining-image-preset-options-with-image-modifiers).
 
 -->
 
@@ -323,3 +323,4 @@ Beyond the common image settings available in the UI, Dynamic Media supports num
 >* [Integrar o Seletor de ativos a vários aplicativos](/help/assets/integrate-asset-selector.md)
 >* [Propriedades do Seletor de ativos](/help/assets/asset-selector-properties.md)
 >* [Integrar o Seletor de ativos ao Dynamic Media com recursos OpenAPI](/help/assets/integrate-asset-selector-dynamic-media-open-api.md)
+>* [Visualizações de Produto viabilizadas pela Integração do AEM Assets para o Commerce](https://experienceleague.adobe.com/en/docs/commerce/product-visuals/overview)
