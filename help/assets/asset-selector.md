@@ -5,7 +5,7 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: f171bbeaf01e2d9be3a8f3b5172919a5e8ca7d97
 workflow-type: tm+mt
 source-wordcount: '5418'
 ht-degree: 30%
@@ -476,7 +476,7 @@ Todos os ativos selecionados são carregados pela função `handleSelection` que
 | Objeto | JSON |
 |---|---|
 | Host | `assetJsonObj["repo:repositoryId"]` |
-| Raiz da API | `/adobe/dynamicmedia/deliver` |
+| Raiz da API | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | formato | `.jpg` |

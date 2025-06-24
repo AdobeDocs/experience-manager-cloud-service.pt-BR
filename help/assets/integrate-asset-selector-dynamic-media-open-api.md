@@ -3,10 +3,10 @@ title: Integrar o Seletor de ativos à API aberta do Dynamic Media
 description: Integrar o seletor de ativos a vários aplicativos da Adobe, que não sejam da Adobe e de terceiros.
 role: Admin, User
 exl-id: b01097f3-982f-4b2d-85e5-92efabe7094d
-source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
+source-git-commit: f171bbeaf01e2d9be3a8f3b5172919a5e8ca7d97
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 3%
+source-wordcount: '982'
+ht-degree: 2%
 
 ---
 
@@ -97,7 +97,7 @@ Todos os ativos selecionados são carregados pela função `handleSelection` que
 | Objeto | JSON |
 |---|---|
 | Host | `assetJsonObj["repo:repositoryId"]` |
-| Raiz da API | `/adobe/dynamicmedia/deliver` |
+| Raiz da API | `/adobe/assets` |
 | asset-id | `assetJsonObj["repo:assetId"]` |
 | seo-name | `assetJsonObj["repo:name"].split(".").slice(0,-1).join(".")` |
 | formato | `.jpg` |
@@ -105,16 +105,17 @@ Todos os ativos selecionados são carregados pela função `handleSelection` que
 #### Especificação da API de entrega de ativos aprovada {#approved-assets-delivery-api-specification}
 
 Formato de URL:
-`https://<delivery-api-host>/adobe/assets/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Onde,
 
 * O host é `https://delivery-pxxxxx-exxxxxx.adobe.com`
 * A raiz da API é `"/adobe/assets"`
 * `<asset-id>` é o identificador do ativo
+* `as` é a parte constante da especificação da API aberta indicando como o ativo deve ser referido
 * `<seo-name>` é o nome de um ativo
 * `<format>` é o formato de saída
-* `<image modification query parameters>` como suporte pela especificação da API de entrega dos ativos aprovados
+* `<image modification query parameters>` conforme suportado pela especificação da API de entrega dos ativos aprovados
 
 #### API de entrega de representação original de ativos aprovados {#approved-assets-delivery-api}
 
@@ -168,7 +169,7 @@ Na captura de tela acima, o URL de entrega da representação original do PDF pr
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/DragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -199,12 +200,12 @@ Após a integração com o Seletor de ativos de microfront-end do Adobe, é poss
 
 ![Dynamic Media com interface de recursos OpenAPI](assets/polaris-ui.png)
 
-* **A**: [Ocultar/Mostrar painel](#hide-show-panel)
-* **B**: [Assets](#repository)
-* **C**: [Classificação](#sorting)
-* **D**: [Filtros](#filters)
-* **E**: [Barra de pesquisa](#search-bar)
-* **F**: [Classificando em ordem crescente ou decrescente](#sorting)
+* **A**: Ocultar/Mostrar painel
+* **B**: Assets
+* **C**: Classificando
+* **D**: Filtros
+* **E**: barra de pesquisa
+* **F**: Classificando em ordem crescente ou decrescente
 * **G**: Cancelar Seleção
 * **H**: selecionar um ou vários ativos
 
