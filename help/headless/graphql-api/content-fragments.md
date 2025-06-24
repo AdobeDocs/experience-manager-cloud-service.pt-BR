@@ -4,9 +4,9 @@ description: Saiba como usar os Fragmentos de conteúdo no Adobe Experience Mana
 feature: Headless, Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 role: Admin, Developer
-source-git-commit: 4f58a52c5ccc8178e768f9072e7b2047cbe3fb20
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '5981'
 ht-degree: 73%
 
 ---
@@ -375,7 +375,7 @@ Para consultar metadados:
 >[!NOTE]
 >
 >**Diferença entre metadados normais e de matriz**
->Lembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
+>>Lembre-se que `StringMetadata` e `StringArrayMetadata` se referem ao que é armazenado no repositório, não a como você os recupera.
 >
 >Por exemplo, ao chamar o campo `stringMetadata`, você receberia uma matriz de todos os metadados que foram armazenados no repositório como um `String`; e ao chamar `stringArrayMetadata`, você receberia uma matriz de todos os metadados que foram armazenados no repositório como `String[]`.
 
@@ -795,7 +795,6 @@ A estrutura e a sintaxe são:
 * `flip`: uma lista discriminada de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
 * `quality`: um número inteiro entre 1 e 100 que indica a porcentagem da qualidade da imagem
 * `width`: um número inteiro que define a largura da imagem de saída, mas ignorado pelo gerador de imagens
-* `preferWebp`: um booleano que indica se há preferência pelo formato WEBP (o valor padrão é false)
 
 A transformação do URL está disponível para todos os tipos de consulta: por caminho, lista ou paginação.
 
@@ -823,7 +822,6 @@ Veja a seguir um exemplo de consulta com um conjunto completo de parâmetros:
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -862,7 +860,6 @@ query ($seoName: String!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {
@@ -901,7 +898,6 @@ query ($seoName: String!, $format: AssetTransformFormat!) {
       flip:HORIZONTAL_AND_VERTICAL
       quality:55
       width:123
-      preferWebp:true
     }
   ) {
     items {

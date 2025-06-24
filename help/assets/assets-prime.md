@@ -4,10 +4,10 @@ description: Saiba mais sobre os principais aspectos do Assets Prime, como benef
 feature: Asset Management
 role: User, Admin
 exl-id: 012f94c5-b1c3-4799-8eaf-af68d06c036f
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 1%
+source-wordcount: '1150'
+ht-degree: 3%
 
 ---
 
@@ -33,19 +33,19 @@ ht-degree: 1%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -72,7 +72,7 @@ O Assets as a Cloud Service Prime inclui um DAM leve que permite executar vário
 
   >[!NOTE]
   >
-  >O Dynamic Media com recursos de OpenAPI, que fornecem acesso a modificadores básicos de imagem como girar, recortar (manual apenas - sem recorte inteligente), virar, dimensionar, preferwebp, altura, largura, qualidade, formato e transmissão de vídeo adaptável, também está disponível com o Assets Prime. Entre em contato com a equipe de conta da Adobe para saber mais.
+  >O Dynamic Media com recursos de OpenAPI, que fornecem acesso a modificadores básicos de imagem como girar, cortar (manual apenas - sem recorte inteligente), virar, altura, largura, qualidade, formato e transmissão de vídeo adaptável, também está disponível com o Assets Prime. Entre em contato com a equipe de conta da Adobe para saber mais.
 
 1. [Criar um novo programa](/help/journey-onboarding/create-program.md).
 

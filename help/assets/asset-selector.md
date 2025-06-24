@@ -5,9 +5,9 @@ contentOwner: KK
 feature: Selectors
 role: Admin,User
 exl-id: 5f962162-ad6f-4888-8b39-bf5632f4f298
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 47afd8f95eee2815f82c429e9800e1e533210a47
 workflow-type: tm+mt
-source-wordcount: '5385'
+source-wordcount: '5418'
 ht-degree: 30%
 
 ---
@@ -34,19 +34,19 @@ ht-degree: 30%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
@@ -484,25 +484,27 @@ Todos os ativos selecionados são carregados pela função `handleSelection` que
 **Especificação da API de entrega de ativos aprovada**
 
 Formato de URL:
-`https://<delivery-api-host>/adobe/dynamicmedia/deliver/<asset-id>/<seo-name>.<format>?<image-modification-query-parameters>`
+`https://<delivery-api-host>/adobe/assets/<asset-id>/as/<seo-name>.<format>?<image-modification-query-parameters>`
 
 Onde,
 
 * O host é `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* A raiz da API é `"/adobe/dynamicmedia/deliver"`
+* A raiz da API é `"/adobe/assets"`
 * `<asset-id>` é o identificador do ativo
+* `as` é a parte constante da especificação da API aberta indicando como o ativo deve ser referido
 * `<seo-name>` é o nome de um ativo
 * `<format>` é o formato de saída
 * `<image modification query parameters>` como suporte pela especificação da API de entrega dos ativos aprovados
 
-**API de entrega de ativos aprovada**
+**API de entrega de representação original de ativos aprovados**
 
 O URL do delivery dinâmico possui a seguinte sintaxe:
-`https://<delivery-api-host>/adobe/assets/deliver/<asset-id>/<seo-name>`, onde,
+`https://<delivery-api-host>/adobe/assets/<asset-id>/original/as/<seo-name>`, onde,
 
 * O host é `https://delivery-pxxxxx-exxxxxx.adobe.com`
-* A raiz da API para Entrega de Representação Original é `"/adobe/assets/deliver"`
+* A raiz da API para Entrega de Representação Original é `"/adobe/assets"`
 * `<asset-id>` é um identificador de ativo
+* `/original/as` é a parte constante da especificação de API aberta indicando como a representação original deve ser chamada
 * `<seo-name>`é o nome do ativo que pode ou não ter uma extensão
 
 +++
@@ -533,12 +535,12 @@ Depois que um pdf é selecionado no sidekick, o contexto de seleção oferece as
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/as/algorithm design.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
 
-Na captura de tela acima, o URL de entrega da representação original do PDF precisará ser incorporado à experiência do Target, se o PDF for necessário, e não sua miniatura. Por exemplo, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf?accept-experimental=1`
+Na captura de tela acima, o URL de entrega da representação original do PDF precisará ser incorporado à experiência do Target, se o PDF for necessário, e não sua miniatura. Por exemplo, `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:8560f3a1-d9cf-429d-a8b8-d81084a42d41/original/as/algorithm design.pdf`
 
 * **Vídeo:** Você pode usar a URL do player de vídeo para os ativos do tipo vídeo que usam um iFrame inserido. Você pode usar as seguintes representações de matriz na experiência do target:
   <!--![Video dynamic delivery url](image.png)-->
@@ -547,7 +549,7 @@ Na captura de tela acima, o URL de entrega da representação original do PDF pr
   { 
       "height": 319, 
       "width": 319, 
-      "href": "https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?accept-experimental=1&width=319&height=319&preferwebp=true", 
+      "href": "https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/as/asDragDrop.2.jpg?width=319&height=319", 
       "type": "image/webp" 
   } 
   ```
@@ -556,7 +558,7 @@ Na captura de tela acima, o URL de entrega da representação original do PDF pr
 
   O trecho de código na captura de tela acima é um exemplo de um ativo de vídeo. Inclui a matriz de links de representações. O `selection[5]` no trecho é o exemplo de miniatura de imagem que pode ser usada como o espaço reservado da miniatura de vídeo na experiência de destino. O `selection[5]` na matriz das representações é para o reprodutor de vídeo. Ele serve uma HTML e pode ser definido como `src` do iframe. Suporta transmissão adaptável de taxa de bits, que é a entrega do vídeo otimizada para a Web.
 
-  No exemplo acima, a URL do reprodutor de vídeo é `https://delivery-pxxxxx-exxxxx-cmstg.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play?accept-experimental=1`
+  No exemplo acima, a URL do reprodutor de vídeo é `https://delivery-pxxxxx-exxxxx.adobeaemcloud.com/adobe/assets/urn:aaid:aem:2fdef732-a452-45a8-b58b-09df1a5173cd/play`
 
 +++**Interface de usuário do Seletor de ativos para Dynamic Media com recursos OpenAPI**
 
