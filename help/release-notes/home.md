@@ -4,9 +4,9 @@ description: Notas de versão do Adobe Experience Manager (AEM) as a Cloud Servi
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 feature: Release Information
 role: Admin
-source-git-commit: 3d25a9279433e5bf6cc2b2e552ae6266a811c88b
+source-git-commit: 4b729f7d06ff3ef546dee2a67065cced7e5bb3fa
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '630'
 ht-degree: 42%
 
 ---
@@ -67,12 +67,12 @@ Você também pode [verificar os problemas conhecidos](/help/release-notes/maint
 
 Os recursos futuros geralmente são disponibilizados de uma das duas formas a seguir:
 
-* Como parte de um programa de primeiros usuários
+* Como parte de um programa Alpha, Beta ou de disponibilidade limitada
 * Como parte do canal de pré-lançamento
 
 Como um recurso futuro será disponibilizado será detalhado nas [notas de versão.](#release-notes)
 
-* Se fizer parte de um programa de adoção antecipada, geralmente será necessário entrar em contato com a Adobe para ativá-lo, conforme detalhado nas notas de versão.
+* Se fizer parte de um programa Alpha, Beta ou de Disponibilidade limitada, geralmente é necessário entrar em contato com a Adobe para ativá-lo, conforme detalhado nas notas de versão.
 * Se fizer parte do canal de pré-lançamento, você precisará [habilitar o canal de pré-lançamento em um ambiente de desenvolvimento ou de sandbox.](/help/release-notes/prerelease.md)
 
 ## Treinar seus usuários {#train-users}

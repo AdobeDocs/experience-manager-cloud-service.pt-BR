@@ -4,9 +4,9 @@ description: Saiba como usar o canal de pré-lançamento para visualizar os recu
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 feature: Release Information
 role: Admin
-source-git-commit: 36da09746f02daad82875329b0aa53ee4eb7c074
+source-git-commit: e6567c965a026967e7a5baa67050eb5615979531
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '893'
 ht-degree: 55%
 
 ---
@@ -22,7 +22,7 @@ O Adobe Experience Manager as a Cloud Service fornece novos recursos regularment
 
 Os recursos futuros geralmente são disponibilizados de uma das duas formas a seguir:
 
-* Como parte de um programa de primeiros usuários
+* Como parte de um programa Alpha, Beta ou de disponibilidade limitada
 * Como parte do canal de pré-lançamento
 
 Este documento descreve como ativar o canal de pré-lançamento. O canal de pré-lançamento fornece acesso aos recursos anteriores que serão introduzidos em uma versão futura do AEM. Isso dá a você a chance de validar novos recursos e planejar sua adoção antes da versão futura. Consulte o documento [Notas de versão do Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/home.md) para obter detalhes sobre o cronograma de lançamento do AEM.
