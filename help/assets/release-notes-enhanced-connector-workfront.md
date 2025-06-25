@@ -4,10 +4,10 @@ description: Notas de versão para  [!DNL Workfront for Experience Manager enhan
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 feature: Release Information
 role: Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: cb06380e4d3977f4f70a6444923cda2b0566d173
 workflow-type: tm+mt
-source-wordcount: '1724'
-ht-degree: 1%
+source-wordcount: '1761'
+ht-degree: 3%
 
 ---
 
@@ -33,36 +33,40 @@ ht-degree: 1%
     </tr>
     <tr>
         <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
+            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
         </td>
         <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
+            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
         </td>
         <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
+            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
         </td>
         <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
+            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
         </td>
         <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
+            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
         </td>
     </tr>
 </table>
 
 A seção a seguir descreve as Notas de Versão gerais do [!DNL Workfront for Experience Manager enhanced connector].
 
-A data de lançamento da versão mais recente 1.9.20 do [!DNL Workfront for Experience Manager enhanced connector] é 6 de setembro de 2024.
+A data de lançamento da versão mais recente 1.9.21 do [!DNL Workfront for Experience Manager enhanced connector] é 25 de junho de 2025.
 
 ## Destaques da versão {#release-highlights}
 
-A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] inclui a seguinte correção de erro:
+A versão mais recente do [!DNL Workfront for Experience Manager enhanced connector] inclui os seguintes aprimoramentos e correções de erros:
 
-* O tipo MIME é perdido durante o upload e a criação de uma nova versão de um ativo existente.
+* Melhoria no registro de solicitações de API para evitar registros falsos positivos de falhas de autenticação.
+
+* Correção de vazamento de conexão nas chamadas de API do Workfront.
+
+* Suporte ao Workfront Enhanced Connector com 6.5 LTS para versões Java 17 e Java 21.
 
 >[!NOTE]
 >
->O AEM 6.4 chegou ao fim do suporte estendido. Consulte nossos [períodos de suporte técnico](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões [aqui](https://experienceleague.adobe.com/docs/?lang=pt-BR) compatíveis.
+>O AEM 6.4 chegou ao fim do suporte estendido. Consulte nossos [períodos de suporte técnico](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões [aqui](https://experienceleague.adobe.com/docs/?lang=en) compatíveis.
 
 >[!IMPORTANT]
 >
@@ -75,6 +79,10 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 * Quando você usa a experiência clássica do Workfront, a opção **[!UICONTROL Enviar para]**, disponível na lista suspensa **[!UICONTROL Mais]**, não permite selecionar o destino no Experience Manager. A opção **[!UICONTROL Enviar para]** funciona corretamente usando a lista suspensa **[!UICONTROL Ações de Documento]**. A opção **[!UICONTROL Enviar para]** funciona corretamente nas listas suspensas **[!UICONTROL Mais]** e **[!UICONTROL Ações de Documentos]**, disponíveis na nova experiência do Workfront.
 
 ## Versões anteriores {#previous-releases}
+
+### Versão de setembro de 2024 {#september-2024-release}
+
+* O tipo MIME é perdido durante o upload e a criação de uma nova versão de um ativo existente.
 
 ### Versão de abril de 2024 {#april-2024-release}
 
@@ -94,9 +102,9 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 ### Versão de janeiro de 2024 {#january-2024-release}
 
-* A configuração [!DNL Workfront] em [!DNL CRX DE] atualmente não armazena `project ID`, causando erros ao aplicar a permissão somente leitura. Saiba como [configurar permissões](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=pt-BR#linked-folders).
+* A configuração [!DNL Workfront] em [!DNL CRX DE] atualmente não armazena `project ID`, causando erros ao aplicar a permissão somente leitura. Saiba como [configurar permissões](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
 
-* Nenhuma documentação pública sobre como adicionar uma propriedade personalizada à definição de índice pronta para uso. Saiba mais sobre [adição de propriedade personalizada](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=pt-BR#metadata-schema-mapping).
+* Nenhuma documentação pública sobre como adicionar uma propriedade personalizada à definição de índice pronta para uso. Saiba mais sobre [adição de propriedade personalizada](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
 
 * A exclusão de configurações de conexão no conector aprimorado afeta significativamente as assinaturas de eventos e outras configurações salvas, fazendo com que elas apontem para um URL antigo.
 
@@ -299,4 +307,4 @@ A versão 1.9.1 do [!DNL Workfront for Experience Manager enhanced connector] in
 
 >[!MORELIKETHIS]
 >
->* [Integrar [!DNL Workfront for Experience Manager enhanced connector] ao Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=pt-BR)
+>* [Integrar [!DNL Workfront for Experience Manager enhanced connector] ao Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
