@@ -4,9 +4,9 @@ description: Saiba como configurar credenciais e autenticação de CDN declarand
 feature: Dispatcher
 exl-id: a5a18c41-17bf-4683-9a10-f0387762889b
 role: Admin
-source-git-commit: ab855192e4b60b25284b19cc0e3a8e9da5a7409c
+source-git-commit: bfe0538660474d445a60fa1c8174d7a690b1dc4c
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1939'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ data:
 
 Consulte [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#common-syntax) para obter uma descrição das propriedades acima do nó `data`. O valor da propriedade `kind` deve ser *CDN* e a propriedade `version` deve ser definida como `1`.
 
-Consulte a etapa do tutorial [Configurar e implantar regra CDN de validação de cabeçalho HTTP](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obter mais detalhes.
+Consulte a etapa do tutorial [Configurar e implantar regra CDN de validação de cabeçalho HTTP](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/content-delivery/custom-domain-names-with-customer-managed-cdn#configure-and-deploy-http-header-validation-cdn-rule) para obter mais detalhes.
 
 As propriedades adicionais incluem:
 
@@ -119,6 +119,29 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-H
 
 Após um teste bem-sucedido, a condição adicional pode ser removida e a configuração reimplantada.
 
+### Processo de migração se o Suporte da Adobe tiver gerado anteriormente o valor do Cabeçalho HTTP `X-AEM-Edge-Key` {#migrating-legacy}
+
+>[!NOTE]
+>Antes de prosseguir com a migração, agende uma migração de teste no ambiente de preparo para verificar a estratégia.
+
+>[!WARNING]
+> Não altere a chave na CDN gerenciada pelo cliente até a etapa 4.
+
+Anteriormente, o processo de integração com um CDN gerenciado pelo cliente envolvia clientes que solicitavam um valor de cabeçalho HTTP X-AEM-Edge-Key do suporte da Adobe, em vez de definir o valor sozinhos. Para migrar para a abordagem de autoatendimento mais recente, em que você define seus próprios valores de chave de borda, siga estas etapas para garantir uma transição suave sem tempo de inatividade:
+
+1. Defina a configuração da CDN com os segredos novos (gerados pelo cliente) e antigos (gerados pela Adobe) especificados como `edgeKey1` e `edgeKey2`. Esta é uma variação da documentação de [segredos em rotação](/help/implementing/dispatcher/cdn-credentials-authentication.md#rotating-secrets).
+
+2. Implante os segredos e a configuração do CDN de autoatendimento. Nesse ponto do processo, o segredo antigo definido pela Adobe ainda deve permanecer como o valor X-AEM-Edge-Key transmitido pela CDN gerenciada pelo cliente.
+
+3. Entre em contato com o Suporte da Adobe, solicitando que o Adobe alterne para usar a configuração de autoatendimento, especificando que você já a implantou.
+
+4. Depois que a Adobe confirmar que executou essa ação, configure sua CDN gerenciada pelo cliente para usar a nova chave definida pelo cliente para o valor do Cabeçalho HTTP `X-AEM-Edge-Key`.
+
+5. Remova a chave antiga da configuração do CDN e implante o pipeline de configuração novamente.
+
+>[!WARNING]
+>Se você não tiver o fallback com ambas as chaves configuradas simultaneamente, isso poderá causar tempo de inatividade durante a migração.
+
 ## Limpar token de API {#purge-API-token}
 
 Os clientes podem [limpar o cache da CDN](/help/implementing/dispatcher/cdn-cache-purge.md) usando um token de API de limpeza declarado. O token é declarado em um arquivo chamado `cdn.yaml` ou similar, em algum lugar sob uma pasta `config` de nível superior. Leia [Usando Pipelines de Configuração](/help/operations/config-pipeline.md#folder-structure) para obter detalhes sobre a estrutura de pastas e como implantar a configuração.
@@ -164,7 +187,7 @@ As propriedades adicionais incluem:
 >[!NOTE]
 >A Chave de Limpeza deve ser configurada como uma [Variável de Ambiente Cloud Manager do tipo secreto](/help/operations/config-pipeline.md#secret-env-vars), antes da implantação da configuração que faz referência a ela. É recomendável usar uma chave aleatória exclusiva com comprimento mínimo de 32 bytes; por exemplo, a biblioteca criptográfica Open SSL pode gerar uma chave aleatória executando o comando openssl rand -hex 32
 
-Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
+Você pode fazer referência a [um tutorial](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/caching/how-to/purge-cache) focado na configuração de chaves de limpeza e na execução da limpeza do cache do CDN.
 
 ## Autenticação básica {#basic-auth}
 
@@ -235,7 +258,6 @@ Esse caso de uso é exemplificado abaixo, usando o exemplo de uma chave de borda
          type: edge
          edgeKey1: ${{CDN_EDGEKEY_052824}}
    ```
-
 1. Quando for a hora de girar a chave, crie um novo segredo do Cloud Manager, por exemplo `${{CDN_EDGEKEY_041425}}`.
 1. Na configuração, faça referência a ele a partir de `edgeKey2` e implante.
 
@@ -257,7 +279,6 @@ Esse caso de uso é exemplificado abaixo, usando o exemplo de uma chave de borda
          type: edge
          edgeKey2: ${{CDN_EDGEKEY_041425}}
    ```
-
 1. Exclua a referência secreta antiga (`${{CDN_EDGEKEY_052824}}`) da Cloud Manager e implante.
 
 1. Quando estiver pronto para a próxima rotação, siga o mesmo procedimento. No entanto, dessa vez, você adicionará `edgeKey1` à configuração, fazendo referência a um novo segredo do ambiente do Cloud Manager chamado, por exemplo, `${{CDN_EDGEKEY_031426}}`.
