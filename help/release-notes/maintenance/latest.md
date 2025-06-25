@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: d3cdc3d69c0002c5b124150050f905123457331c
+source-git-commit: 7ae30d2053a17c2855c66b265c831ea27d19d535
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 29%
+source-wordcount: '1496'
+ht-degree: 7%
 
 ---
 
@@ -16,45 +16,132 @@ ht-degree: 29%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 21193 {#21193}
+## Versão 21331 {#21331}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21193, lançada para o público em quarta-feira, 10 de junho de 2025. A versão de manutenção anterior era 21005.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21331, lançada para o público em quarta-feira, 24 de junho de 2025. A versão de manutenção anterior era 21193.
 
-A ativação de recursos do 2025.6.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-### Aprimoramentos {#enhancements-21193}
+### Aprimoramentos {#enhancements-21331}
 
-* ASSETS-51245: desempenho aprimorado para listagens de pastas grandes na interface para toque.
-* ASSETS-51686: melhorias no trabalho de operações em massa, incluindo cancelamento de trabalho mais fácil, registro aprimorado, downloads de auditoria para resultados grandes.
-* CQ-4360131: resposta de erro aprimorada para endpoints OpenAPI, permitindo que os clientes da API recebam informações de erro estruturadas corretas.
+* CQ-4356522: otimização `WorkflowResourceStatusProvider`.
+* FORMS-16458: interface para escolher propriedades de fonte (fonte).
+* FORMS-17707: o conector AEP não funciona no estágio da plataforma AEP.
+* FORMS-19125: Suporte ao mapeamento de fragmento automático no editor de AF.
+* FORMS-19336: Pesquisa adicionada à Árvore do Data Source no editor de AF.
+* FORMS-19417: Suporte a botões de opção na Exibição de Hierarquia.
+* FORMS-19603: Página principal de suporte e página de design em Editor de regras.
+* SITES-10575: &quot;O carregador de filtro de bloomfilter do MSM Blueprint&quot; tenta carregar mais de 100.000 linhas.
+* SITES-14542: renomear/mover uma página de origem de live copy deve acionar a publicação da página de live copy renomeada/movida caso ela tenha sido publicada anteriormente.
+* SITES-19754: Edge Delivery com Universal Editor: adiciona uma mensagem de erro legível quando a integração tiver problemas.
+* SITES-23499: Edge Delivery com editor universal: adicione suporte para vários campos a serem usados para opções de bloco.
+* SITES-23518: Edge Delivery com editor universal: adicione suporte para representações de ativos específicas do Edge Delivery.
+* SITES-25913: API Rest de fragmentos de conteúdo: validação de recursos em caixa de tempo antes de iniciar o fluxo de trabalho de publicação.
+* SITES-25976: os links dentro dos Fragmentos de experiência não se adaptam após a implantação do MSM.
+* SITES-26271: API Rest de fragmentos de conteúdo: alterne para BFS Traversal para o endpoint do GET Variation.
+* SITES-27486: Editor universal - Integração do AEM.
+* SITES-27775: Pesquisa de referência otimizada durante a publicação (carregamento lento de metadados).
+* SITES-27782: Edge Delivery com Universal Editor: adicione uma implementação editor-assinante específica para publicar conteúdo no Edge Delivery (acesso antecipado).
+* SITES-27792: Edge Delivery com editor universal: adicionar modelo dedicado de configuração do serviço Edge Delivery.
+* SITES-28683: permitir pesquisas de MSM LiveRelationship para ignorar o status avançado.
+* SITES-29930: API REST de fragmentos de conteúdo: adicione métricas para o fluxo de trabalho de publicação do fragmento de conteúdo.
+* SITES-29986: API Rest de fragmentos de conteúdo: suporte à nomenclatura técnica do modelo CF.
+* SITES-30088: API Rest de fragmentos de conteúdo: CF Publish - ignora a recuperação de referências quando filterReferencesByStatus está vazio.
+* SITES-30328: Edge Delivery com editor universal: adicione suporte para visualização do Sidekick.
+* SITES-30445: API Rest de fragmentos de conteúdo: Esquema da interface do usuário do modelo CF: adicione uma opção para controlar o estado inicial do recolhível.
+* SITES-30604: API Rest dos fragmentos de conteúdo: suporte à adoção do esquema de metadados do modelo na nova interface do usuário.
+* SITES-30885: processamento JSON otimizado em consultas persistentes.
+* SITES-30886: API Rest de fragmentos de conteúdo: fluxos de trabalho do GET para endpoint de fragmento de conteúdo com base em uuids de fragmento armazenadas nos metadados do fluxo de trabalho.
+* SITES-31005: melhore a interface do trabalho de implantação para mostrar o progresso.
+* SITES-31020: melhore a interface do usuário para criar trabalhos de Live Copy para mostrar o progresso.
+* SITES-31472: excluir o Launch pode fazer com que o repositório seja pausado se a inicialização for maciça.
+* SITES-31677: o espaço de trabalho personalizado oferece suporte à exportação do fragmento de conteúdo do AEM para o Target.
+* SITES-31782: API Rest de fragmentos de conteúdo: adicione uma descrição para ativos locais.
+* SITES-32175: permite confirmações intermediárias para a criação da Live Copy e a implantação da página do MSM.
+* SITES-5358: API Rest de fragmentos de conteúdo: Copiar CFs com filhos.
 
-### Problemas corrigidos {#fixed-issues-21193}
+### Problemas corrigidos {#fixed-issues-21331}
 
-* ASSETS-41007: os ativos excluídos podem permanecer visíveis no Content Hub.
-* ASSETS-50994: AemRequestEventFilter causando contenção excessiva de thread do Jetty.
-* ASSETS-50155: eventos de alteração de metadados duplicados acionados.
-* ASSETS-50716: A classificação por título na exibição de lista do Assets não funciona como esperado.
-* ASSETS-50820: certifique-se de que solicitações inválidas da API de relações de ativos sejam rejeitadas corretamente com um erro 400.
-* ASSETS-50562: a API de upload de ativos deve criar a versão por comportamento padrão em conflito de nomes.
-* ASSETS-50992: O endpoint da API do Assets initiateUpload.json deve retornar o tipo de conteúdo de &quot;application/json&quot;.
-* ASSETS-51322: Remoção e expiração automáticas de barricadas assíncronas que permanecem persistentes indefinidamente após uma falha de trabalho.
-* ASSETS-51809: o editor de CSV não mostrou alterações salvas recentemente devido ao armazenamento em cache do navegador.
-* SITES-31678: Fragmentos de experiência (XF) com referências sensíveis ao contexto não resolveram a raiz de idioma correta na API de publicação XF.
+* CQ-4359756: as regras de tradução agora incluem propriedades de filtro no nível do componente.
+* CQ-4359826: resolve o status inconsistente no painel de referência do fragmento de conteúdo.
+* CQ-4359866: a classe LanguageUtils agora oferece suporte a teste de unidade sem adicionar dependência adicional.
+* FORMS-13990: APIs de serviço do Forms: Geração de documento : o campo de dados quando deixado em branco após ser selecionado fornece 200 quando esperado é 400.
+* FORMS-14309: APIs de serviço do Forms : Extrair retificação de código de resposta de dados.
+* FORMS-18526: quando uma regra com vários campos em condições é copiada, o campo fixo não é alterado.
+* FORMS-18977: O serviço DOR não está transmitindo o Título do documento.
+* FORMS-19047: Traduções ausentes após a publicação de um formulário adaptável no AEM Forms no SP22.
+* FORMS-19234: Não é possível usar o recurso de linha do tempo de PDFs em formulários do AEM.
+* FORMS-19628: no DOR gerado automaticamente, a exclusão do título do painel aninhado também oculta o título do painel raiz.
+* FORMS-19651: Corrigir a regra quando um botão clicado é usado em condição binária e também o mesmo botão é usado na instrução then.
+* FORMS-19808: FormsPortal - Os rascunhos não podem ser obtidos quando o carregamento lento está habilitado.
+* FORMS-19887: a propriedade Access não funciona na Visualização do HTML5.
+* SITES-15452: elementos únicos do CF não devem ser verificados em relação a suas cópias no lançamento.
+* SITES-24492: a lista de tabelas ARIA não tem nome acessível.
+* SITES-24623: API Rest de fragmentos de conteúdo: corrija a incompatibilidade de ETag entre endpoints para o mesmo CF.
+* SITES-24668: A funcionalidade do Painel de referências é interrompida quando o zoom é aumentado para 400%.
+* SITES-24678: a mensagem de status do painel de referências não é anunciada pelo leitor de tela.
+* SITES-24697: o estado de carregamento do modelo de imagem não é anunciado pelo leitor de tela.
+* SITES-24708: a funcionalidade do painel Filtros é interrompida quando o zoom é aumentado para 400%.
+* SITES-25235: a mensagem de carregamento de conteúdo do trilho de filtro não é anunciada pelo leitor de tela.
+* SITES-25254: a barra de rolagem horizontal aparece no modal do Carrossel quando o conteúdo é exibido em 320px.
+* SITES-25433: Edge Delivery com Universal Editor: corrija a renderização de versões de página para estruturas de site em vários idiomas.
+* SITES-26890: Ao usar o teclado, o foco do teclado &quot;Cabeçalhos de tabela&quot; do escopo não fica visível na página Gerenciar publicação.
+* SITES-29075: a visão geral da Live Copy não funciona em sites de alto volume.
+* SITES-29514: Edge Delivery com Universal Editor: tornar o URL do GitHub/Projeto obrigatório ao criar um novo site.
+* SITES-29691: não é possível mover a página em casos específicos relacionados a inicializações.
+* SITES-29745: API rest de fragmentos de conteúdo: implementar hidratação de variações de referências na travessia BFS.
+* SITES-29748: Corrija as condições de renderização para mostrar as ações de gerenciamento de publicação/publicação rápida dentro do editor do CF.
+* SITES-29789: problema de alteração de link de componente em páginas raiz copiadas.
+* SITES-29987: API Rest de fragmentos de conteúdo: Criar e editar modelo de fragmento de conteúdo não é compatível com `previewUrlPattern`.
+* SITES-30140: problema de janela dupla ao criar referência de fragmento de conteúdo.
+* SITES-30260: API Rest de fragmentos de conteúdo: erro para atualizar/excluir CF usando ETag mais recente.
+* SITES-30327: API Rest de fragmentos de conteúdo: a publicação de CFs sem permissões cria fluxos de trabalho separados para cada recurso de carga.
+* SITES-30333: leia metadados de ativos do jcr para evitar problemas de análise de xmp.
+* SITES-30353: DataFetchingExceptions do GraphQL para o campo &quot;src&quot; nos fragmentos de conteúdo do AEM.
+* SITES-30377: Edge Delivery com editor universal: Limpar org- e nomes de site.
+* SITES-30386: Edge Delivery com Universal Editor: remover duplicado, UE herdado `cors.js`.
+* SITES-30583: API Rest de fragmentos de conteúdo: ferramenta Localizar e substituir alterando todos os caracteres para letras minúsculas.
+* SITES-30585: API Rest de fragmentos de conteúdo: `previewUrlPattern` não definida na criação de CFMs com referências.
+* SITES-30634: o texto alternativo e o alinhamento da imagem RTE não funcionam de forma consistente.
+* SITES-30660: Problema de conformidade ADA com o componente AEM personalizado.
+* SITES-30695: Edge Delivery com Universal Editor: aumente a classificação do pipeline de reescrita para não interferir no código personalizado.
+* SITES-30727: não é possível arrastar e soltar componentes no Editor de autor de produção.
+* SITES-30752: Não use cabeçalhos `If-modified-since`/`last-modified` ao gerar resposta de consulta persistente.
+* SITES-30871: DOM é atualizado depois que o ouvinte de edição é acionado.
+* SITES-30877: status de implantação da página secundária incorreto.
+* SITES-30899: a opção &quot;Posteriormente&quot; de implantação permite continuar sem data selecionada.
+* SITES-30947: Exceção de ponteiro nulo devido à falta da propriedade &quot;behavior&quot; no blueprint durante a implantação.
+* SITES-31157: API rest de fragmentos de conteúdo: falha de patch é um caso específico.
+* SITES-31272: Não é possível criar a cópia de idioma do Assets por meio de PageManager.copy.
+* SITES-31327: API Rest de fragmentos de conteúdo: remova a validação ETag na solicitação de fragmento do GET.
+* SITES-31387: erro do JavaScript &quot;ns.ui.alert não é uma função&quot; ao reativar a herança de componentes fantasmas.
+* SITES-31455: API Rest de fragmentos de conteúdo: corrija a incompatibilidade de ETag entre endpoints do mesmo modelo de fragmento de conteúdo.
+* SITES-31459: API Rest de fragmentos de conteúdo: A Live Copy do CF não pode ser editada quando há um campo de referência de conteúdo.
+* SITES-31467: js-errors de contexthub.authoring-hook.js no editor de páginas.
+* SITES-31594: API Rest de fragmentos de conteúdo: erro `extractMetadataSchemaFieldLabel`.
+* SITES-31621: Edge Delivery com Universal Editor: remova a linha vazia das Planilhas que são Live Copies.
+* SITES-31676: a criação ou exclusão de componentes deixa um espaço em branco na parte inferior da página.
+* SITES-31822: Rótulo da caixa de seleção ClassicUI ausente e codificado no HTML.
+* SITES-31857: A criação do CF falha em pastas com aspas simples.
+* SITES-31888: a exclusão de fragmentos de conteúdo falha ao se propagar para Pré-visualização.
+* SITES-31922: API Rest de fragmentos de conteúdo: as referências de página não são retornadas pelo endpoint referencedBy.
+* SITES-31987: não mostrar previewURLs de fragmentos de conteúdo ao publicá-los para visualização.
+* SITES-32095: falha na atualização automática do ouvinte de eventos after childdelete na Live Copy.
+* SITES-32237: Edge Delivery com Universal Editor: corrija a renderização de componentes de texto vazios/malformados.
 
-
-### Problemas conhecidos {#known-issues-21193}
+### Problemas conhecidos {#known-issues-21331}
 
 Nenhum.
 
-### Recursos e APIs obsoletos {#deprecated-21193}
+### Recursos e APIs obsoletos {#deprecated-21331}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-21193}
+### Correções de segurança {#security-21331}
 
-A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda duas vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
+A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda 21 vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
 
-### Tecnologias integradas {#embedded-tech-21193}
+### Tecnologias integradas {#embedded-tech-21331}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
