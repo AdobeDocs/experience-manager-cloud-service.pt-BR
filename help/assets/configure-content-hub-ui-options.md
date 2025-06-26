@@ -2,9 +2,9 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: b12c650719ac6bcaed1e6181688e89df482132ad
+source-git-commit: fd45c1aadbbab7475becb94f9df27bbd5a1c165b
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2121'
 ht-degree: 10%
 
 ---
@@ -113,7 +113,9 @@ Como administrador, gerencie as seguintes opções de configuração para seus u
 
 * [Links personalizados](#configure-custom-links-content-hub)
 
-* [Coleções e compartilhamento](#configure-collections-sharing-content-hub)
+* [Coleções e compartilhamento](#configure-collections-content-hub)
+
+<!--* [Enable public link sharing](#enable-public-link-sharing)-->
 
 ### Importar {#configure-import-options-content-hub}
 
@@ -275,7 +277,7 @@ Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também
 
 ### Representações {#renditions-content-hub}
 
-As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para desabilitá-la, siga estas etapas:
 
@@ -311,21 +313,33 @@ O link personalizado é exibido como uma nova guia ao lado da guia Insights na p
 
 ![Guias de Links Personalizados da Interface do Usuário de Configuração no Content Hub](assets/configuration-ui-custom-link-tab.png)
 
-### Coleções e compartilhamento {#configure-collections-sharing-content-hub}
+### Coleções e compartilhamento {#configure-collections-content-hub}
 
-Os administradores podem definir permissões de usuário ao criar coleções e permitir que os usuários do Content Hub gerem um link público. Para ativar essas configurações, siga estas etapas:
+Os administradores podem definir permissões de usuário ao criar coleções. Para ativar essas configurações, siga estas etapas:
 
-1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Coleções e compartilhamento]**.
+1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Coleções]**.
 
-1. Habilite a opção **[!UICONTROL Coleções Somente Leitura]** para permitir coleções acessíveis a todos, mas editáveis somente pelo criador e administrador.
+1. Habilite o botão de alternância **[!UICONTROL Habilitar Link Público]** para permitir a criação de links públicos que os usuários externos podem usar para acessar e baixar ativos sem fazer logon na Content Hub.
 
-1. Habilite a opção **[!UICONTROL Coleções Públicas]** para permitir coleções que sejam acessíveis e editáveis por todos.
+1. Habilite a opção **[!UICONTROL Exibir Somente Coleções]** para permitir coleções que sejam acessíveis a todos, mas editáveis apenas pelo criador e administrador.
 
-1. Habilite o botão de alternância **[!UICONTROL Habilitar Link Público]** para permitir que os usuários do Content Hub gerem um link público.
+1. Habilite a opção **[!UICONTROL Coleções Públicas]** para permitir coleções que sejam acessíveis e editáveis por todos. Se as opções de alternância **[!UICONTROL Exibir Somente Coleções]** e **[!UICONTROL Coleções Públicas]** estiverem desabilitadas, por padrão, os usuários não administradores poderão criar somente coleções privadas.
 
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações.
 
-   ![Guia Coleções de configurações no Content Hub](assets/collections-link-sharing.png)
+   ![Guia Coleções de configurações no Content Hub](assets/collections-and-sharing.png)
 
+<!--
+### Enable public link sharing {#enable-public-link-sharing}
 
-   Para obter mais informações sobre coleções e compartilhamento de ativos, consulte [Gerenciar coleções na Content Hub](/help/assets/collections-content-hub.md) e [Compartilhamento de ativos no [!DNL Content Hub]](share-assets-content-hub.md).
+Enable the following setting on the Configurations user interface to allow Content Hub users to generate a public link:
+
+1. On the [Configurations](#access-configuration-options-content-hub) user interface, click **[!UICONTROL Collections and Sharing]**.
+
+1. Enable the **[!UICONTROL Enable Public Link]** toggle and click **[!UICONTROL Save]** to apply the changes.
+
+    ![Enable public link sharing in Content Hub](assets/enable-public-link-sharing-tab.png)
+
+-->
+
+Saiba mais sobre o [compartilhamento de ativos no [!DNL Content Hub]](share-assets-content-hub.md).
