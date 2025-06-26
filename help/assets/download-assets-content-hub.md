@@ -3,7 +3,7 @@ title: Baixar ativos da Content Hub
 description: Saiba como baixar um ou vários ativos e suas representações no portal do Content Hub.
 role: User
 exl-id: 96d4ffba-4e3e-4496-9da2-6eb36be8331f
-source-git-commit: 809c0e780959340964933b13c8a347157f1dc17e
+source-git-commit: 9636fbf2ca78f001e08ef281f3d7ea3bfc212387
 workflow-type: tm+mt
 source-wordcount: '888'
 ht-degree: 2%
@@ -82,8 +82,8 @@ Se a caixa de diálogo **[!UICONTROL Baixar ativos]** exibir licenças de ativos
 
    >[!NOTE]
    >
-   >* As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [[!UICONTROL [Configuração]]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
-   >* Os usuários com acesso ao [[!DNL [Dynamic Media with Open API capabilities]]](/help/assets/dynamic-media-open-apis-overview.md) podem exibir e baixar representações de corte dinâmico e inteligente.
+   >* As representações serão exibidas somente se sua visibilidade for habilitada usando a Interface do Usuário [[!UICONTROL Configuração]](/help/assets/configure-content-hub-ui-options.md#renditions-content-hub).
+   >* Os usuários com acesso ao [[!DNL Dynamic Media with Open API capabilities]](/help/assets/dynamic-media-open-apis-overview.md) podem exibir e baixar representações de corte dinâmico e inteligente.
    >* A visualização da licença é exibida somente se o ativo for aprovado usando o ambiente de criação do [!DNL Assets as a Cloud Service]. Para obter mais informações, consulte [Gerenciar ativos licenciados no Content Hub](/help/assets/manage-licensed-assets-on-content-hub.md).
 
 <!--
@@ -179,7 +179,7 @@ Saiba mais sobre [exibir e gerenciar representações em [!DNL Experience Manage
 
 * [Representações dinâmicas](/help/assets/renditions.md#dynamic-renditions): as representações dinâmicas são versões personalizadas em tempo real de ativos para executar várias ações, como redimensionar imagens para diferentes resoluções de dispositivo ou recortar para ajustar várias taxas de proporção. Essas representações permitem oferecer experiências personalizadas e otimizadas para requisitos mais amplos. Representações dinâmicas de ativos são criadas no ambiente de autor [!DNL Adobe Experience Manager Assets]. Para obter informações sobre as etapas necessárias para habilitar representações dinâmicas, consulte [Habilitar representações dinâmicas](#enable-dynamic-media-renditions).
 
-* [Corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): o corte inteligente se concentra exclusivamente na parte essencial de um ativo durante o processo de corte. O Corte inteligente do Dynamic Media aproveita a inteligência artificial fornecida pelo Adobe Sensei para rastrear o ponto de interesse, garantindo que nossos ativos tenham melhor aparência em todos os tamanhos de tela. O recorte inteligente [!DNL Adobe Experience Manager] exibe a largura e a altura das representações de um ativo junto com o título. Veja mais em [usando o Recorte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
+* [Corte inteligente](/help/assets/dynamic-media/image-profiles.md#creating-image-profiles): o corte inteligente se concentra exclusivamente na parte essencial de um ativo durante o processo de corte. O Corte inteligente do Dynamic Media aproveita a inteligência artificial fornecida pelo Adobe Sensei para rastrear o ponto de interesse, garantindo que nossos ativos tenham melhor aparência em todos os tamanhos de tela. O recorte inteligente [!DNL Adobe Experience Manager] exibe a largura e a altura das representações de um ativo junto com o título. Veja mais em [usando o Recorte inteligente com o AEM Assets Dynamic Media](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use).
 
   As representações de Recorte inteligente são exibidas e estão disponíveis para download somente se você tiver acesso ao [Dynamic Media com recursos OpenAPI](/help/assets/dynamic-media-open-apis-overview.md). As representações de Recorte inteligente estão disponíveis somente para ativos de imagem.
 
