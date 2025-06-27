@@ -4,9 +4,9 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 9327bc51ba170971bde8ce8e338c9a42ac5cbe82
+source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1542'
 ht-degree: 8%
 
 ---
@@ -91,7 +91,7 @@ Um objeto de campo tem a seguinte definição de tipo.
 | Configuração | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|
 | `component` | `ComponentType` | Renderizador do componente | Sim |
-| `name` | `string` | Propriedade em que os dados devem ser mantidos | Sim |
+| `name` | `string` | Propriedade [ou caminho](#nesting) onde os dados devem ser mantidos | Sim |
 | `label` | `FieldLabel` | Rótulo do campo | Sim |
 | `description` | `FieldDescription` | Descrição do campo | Não |
 | `placeholder` | `string` | Espaço reservado para o campo | Não |
@@ -104,6 +104,14 @@ Um objeto de campo tem a seguinte definição de tipo.
 | `multi` | `boolean` | O campo é um campo múltiplo? | Não |
 | `validation` | `ValidationType` | Regra ou regras de validação para o campo | Não |
 | `raw` | `unknown` | Dados brutos que podem ser usados pelo componente | Não |
+
+### Nome Campo e aninhamento {#nesting}
+
+O campo `name` pode apontar diretamente para uma propriedade do recurso atual ou, no caso de componentes em `cq:Pages`, também pode usar um caminho para uma propriedade aninhada. Por exemplo:
+
+```json
+"name": "teaser/image/fileReference"
+```
 
 ### Tipos de componentes {#component-types}
 
@@ -281,7 +289,7 @@ Semelhante a um booleano, um tipo de componente Grupo de caixas de seleção per
 
 #### Contêiner {#container}
 
-Um tipo de componente de contêiner permite o agrupamento de componentes. Ela oferece uma configuração adicional.
+Um tipo de componente de contêiner permite o agrupamento de componentes, incluindo suporte a vários campos. Ela oferece uma configuração adicional.
 
 | Configuração | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|
@@ -324,7 +332,36 @@ Um tipo de componente de contêiner permite o agrupamento de componentes. Ela of
 
 ![Captura de tela do tipo de componente de contêiner](assets/component-types/container.png)
 
+>[!TAB Suporte a vários campos]
+
+```json
+{
+  "component": "container",
+  "name": "test",
+  "label": "Multi Text",
+  "multi": true,
+  "fields": [
+    {
+      "component": "reference",
+      "name": "image",
+      "value": "",
+      "label": "Sample Image",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "alt",
+      "value": "",
+      "label": "Alt Text",
+      "valueType": "string"
+    }
+  ]
+}
+```
+
 >[!ENDTABS]
+
+
 
 #### Fragmento de conteúdo {#content-fragment}
 
