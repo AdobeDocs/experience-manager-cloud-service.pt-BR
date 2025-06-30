@@ -46,6 +46,7 @@ Como administrador, execute as seguintes etapas para importar os formulários de
 
    * Clique no cabeçalho da coluna para classificar a tabela por [!UICONTROL Nome], [!UICONTROL Modificado] ou [!UICONTROL Autor].
    * Selecione o formulário importado e clique em **[!UICONTROL Remover da(s) pasta(s)]**. Em seguida, verifique o nome da pasta no caminho da pasta para confirmar se a pasta está corretamente transferida.
+
      ![verificar página de formulários de metadados](/help/assets/assets/confirm-ported-folder.png)
    * Selecione o formulário importado e clique em **[!UICONTROL Editar]** para exibir todas as configurações compatíveis do formulário de metadados. Consulte [Configurar Forms de Metadados](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) para obter mais informações sobre os formulários de metadados, seus componentes e campos.
 

@@ -32,8 +32,8 @@ Se fizer modificações subsequentes no ativo, pasta ou coleção original no AE
 >[!NOTE]
 >
 >A Adobe recomenda uma publicação escalonada, de preferência durante horários que não sejam de pico, para que o autor do AEM não ocupe recursos excessivos.
->>O Assets deve ser publicado em lotes. A recomendação para o tamanho do lote é de 15K.
->> Para [!DNL Experience Manager Assets] as a [!DNL Cloud Service], a taxa de transferência observada em condições de laboratório é de 1000 ativos por hora. A taxa é observada com um tamanho médio de ativos de 10 MB.
+>&#x200B;>O Assets deve ser publicado em lotes. A recomendação para o tamanho do lote é de 15K.
+>&#x200B;> Para [!DNL Experience Manager Assets] as a [!DNL Cloud Service], a taxa de transferência observada em condições de laboratório é de 1000 ativos por hora. A taxa é observada com um tamanho médio de ativos de 10 MB.
 
 ## Publicar ativos no Brand Portal {#publish-assets-to-bp}
 
@@ -93,12 +93,12 @@ Para agendar a publicação dos ativos no Brand Portal para uma data ou hora pos
 >
 > * A parte de usuários existente do grupo Usuários DAM tem acesso de leitura no caminho &quot;/conf/global/settings/cloudconfigs/mediaportal&quot;
 > * Os novos usuários (ou usuários não administradores) exigem os seguintes direitos para publicar no brand portal.
->   > Caminhos:
->   > `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
->   >`/libs : jcr:read`
->   >`/conf : jcr:read`
->   >`/content : jcr:read, crx:replicate`
->   >`/content/dam/ : jcr:read,modify, crx:replicate`
+>   &#x200B;> Caminhos:
+>   &#x200B;> `"/conf/global/settings/cloudconfigs/mediaportal" : jcr:read `
+>   &#x200B;>`/libs : jcr:read`
+>   &#x200B;>`/conf : jcr:read`
+>   &#x200B;>`/content : jcr:read, crx:replicate`
+>   &#x200B;>`/content/dam/ : jcr:read,modify, crx:replicate`
 
 ## Publicar pastas no Brand Portal {#publish-folders-to-brand-portal}
 

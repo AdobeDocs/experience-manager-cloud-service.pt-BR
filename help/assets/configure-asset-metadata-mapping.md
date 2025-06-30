@@ -91,6 +91,7 @@ Para configurar o mapeamento de metadados usando um novo formulário de metadado
    1. Especifique `Project Name` no campo **[!UICONTROL Rótulo do campo]**.
 
    1. Especifique `./jcr:content/metadata/wm:projectName` no campo **[!UICONTROL Mapear para propriedade]**. Como diretriz, use o seguinte modelo para definir os mapeamentos de campo no Experience Manager Assets:
+
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Ao configurar mapeamentos no Workfront, você mapeou o campo do Experience Manager Assets `wm:projectName` para o campo Projeto > Nomear Workfront.

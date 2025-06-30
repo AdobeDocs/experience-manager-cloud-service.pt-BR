@@ -60,7 +60,7 @@ Execute estas etapas para habilitar o [!DNL Dynamic Media with OpenAPI] para o s
 
 1. Clique em **[!UICONTROL Ativar]** na caixa de diálogo de confirmação para iniciar o processo de ativação [!DNL Dynamic Media with OpenAPI]. Após a ativação bem-sucedida, o Cloud Manager exibe as seguintes atualizações de status:
    1. **[!UICONTROL Estágio do ambiente]**: **[!UICONTROL Em execução]**
-   1. ![DM ativado](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  Os recursos OpenAPI estão ativados ]**
+   1. ![DM ativado](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; Os recursos OpenAPI estão ativados &#x200B;]**
 
       ![ativação bem-sucedida](/help/assets/assets/activation-successful.png){width="700" align="left"}
 
@@ -69,7 +69,7 @@ Execute estas etapas para habilitar o [!DNL Dynamic Media with OpenAPI] para o s
 Se a ativação falhar, o Cloud Manager exibirá as seguintes atualizações de status:
 
 * **[!UICONTROL Estágio do ambiente]**: **[!UICONTROL Falha no DM com OpenAPI]**
-* ![DM ativado](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media ]**:**[!UICONTROL  Falha ao ativar os recursos OpenAPI ]**
+* ![DM ativado](/help/assets/assets/Images_icon.svg)**[!UICONTROL Dynamic Media &#x200B;]**:**[!UICONTROL &#x200B; Falha ao ativar os recursos OpenAPI &#x200B;]**
 
   ![repetir ativação](/help/assets/assets/retry-dm-openapi-failed-activation.png){width="700" align="left"}
 

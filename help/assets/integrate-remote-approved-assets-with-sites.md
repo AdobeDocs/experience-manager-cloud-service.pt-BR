@@ -34,6 +34,7 @@ O suporte a ativos remotos usando o Dynamic Media com recursos OpenAPI exige:
 * Configure as [variáveis de ambiente](/help/implementing/cloud-manager/environment-variables.md#add-variables) a seguir para o AEM as a Cloud Service:
 
    * ASSET_DELIVERY_REPOSITORY_ID= &quot;delivery-pxxxxx-eyyyyy.adobeaemcloud.com&quot; <br>
+
      `pXXXX` refere-se à ID do programa <br>
      `eYYYY` refere-se à ID de ambiente
 

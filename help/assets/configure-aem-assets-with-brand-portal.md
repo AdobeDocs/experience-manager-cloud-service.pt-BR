@@ -201,7 +201,7 @@ Along with the automation workflow to activate Brand Portal on Experience Manage
 >[!NOTE]
 >
 > Não é possível criar novas credenciais JWT a partir de junho de 2024. De agora em diante, somente as credenciais do OAuth são criadas.
-> > Veja mais [criando uma configuração OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
+> &#x200B;> Veja mais [criando uma configuração OAuth](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service#creating-oauth-configuration:~:text=For%20example%3A-,Creating%20an%20OAuth%20configuration,-To%20create%20a).
 
 A seção a seguir descreve como configurar manualmente o Experience Manager Assets as a [!DNL Cloud Service] com o Brand Portal usando o Adobe Developer Console.
 

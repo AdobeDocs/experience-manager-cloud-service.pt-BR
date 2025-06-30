@@ -52,7 +52,7 @@ Antes de instalar o conector, siga estas etapas de pré-instalação:
    >
    >    ```
    >    dscacheutil -q host -a name p{PROGRAM_ID}.external.adobeaemcloud.com
-   >
+   >    
    >    ```
 
 1. Verifique se as sobreposições a seguir não existem no repositório [!DNL Experience Manager]. Se você tiver sobreposições pré-existentes nesses caminhos, será necessário remover as sobreposições ou mesclar o delta de alterações entre os dois:
