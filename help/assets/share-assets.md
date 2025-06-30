@@ -15,7 +15,7 @@ ht-degree: 3%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/link-sharing.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 O [!DNL Adobe Experience Manager Assets] permite que você compartilhe ativos, pastas e coleções com membros de sua organização e entidades externas, incluindo parceiros e fornecedores. Use os métodos a seguir para compartilhar ativos de [!DNL Experience Manager Assets] como [!DNL Cloud Service]:
@@ -24,7 +24,7 @@ O [!DNL Adobe Experience Manager Assets] permite que você compartilhe ativos, p
 * [Baixe ativos](/help/assets/download-assets-from-aem.md) e compartilhe separadamente.
 * Compartilhe usando o [[!DNL Experience Manager] aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR).
 * Compartilhar usando [[!DNL Adobe Asset Link]](https://www.adobe.com/br/creativecloud/business/enterprise/adobe-asset-link.html).
-* Compartilhar usando [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html).
+* Compartilhar usando [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=pt-BR).
 
 ## Pré-requisitos {#prerequisites}
 
@@ -50,7 +50,7 @@ Você precisa de privilégios de Administrador para [definir configurações par
 1. Botão **[!UICONTROL Compartilhar link]** na barra de ações:
    * Todos os usuários com permissões `jcr:modifyAccessControl` podem exibir a opção [!UICONTROL Compartilhamento de links]. É visível para todos os administradores por padrão. O botão [!UICONTROL Compartilhamento de links] está visível para todos, por padrão. Você pode configurar o para exibir essa opção somente para os grupos definidos ou também pode negar essa opção para grupos específicos. Selecione `Allow only for groups` se quiser permitir que grupos específicos exibam a opção `Share Link`. Selecione `Deny from groups` para negar a opção `Share Link` a grupos específicos. Depois de selecionar qualquer uma dessas opções, especifique os nomes de grupo usando o campo `Select Groups` para adicionar os nomes de grupo que você precisa permitir ou negar.
 
-Para configurações relacionadas à Configuração de email, visite [Documentação do Serviço de Email](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html)
+Para configurações relacionadas à Configuração de email, visite [Documentação do Serviço de Email](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=pt-BR)
 
 ![Configurar Serviço de Email](/help/assets/assets/config-email-service.png)
 
@@ -247,7 +247,7 @@ Os usuários podem baixar os ativos necessários e compartilhá-los fora do [!DN
 
 Os profissionais de marketing e usuários de linha de negócios podem compartilhar facilmente ativos aprovados com seus profissionais de criação usando o,
 
-* **Aplicativo de desktop do Experience Manager**: o aplicativo funciona no Windows e no Mac. Consulte [visão geral do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR). Para saber como qualquer usuário autorizado do desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets). Os usuários de desktop podem criar ativos e compartilhá-los com seus homólogos que são usuários do Experience Manager, por exemplo, fazendo upload de novas imagens. Consulte [carregar ativos usando um aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem).
+* **Aplicativo de desktop do Experience Manager**: o aplicativo funciona no Windows e no Mac. Consulte [visão geral do aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=pt-BR). Para saber como qualquer usuário autorizado do desktop pode acessar facilmente os ativos compartilhados, consulte [procurar, pesquisar e visualizar ativos](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#browse-search-preview-assets). Os usuários de desktop podem criar ativos e compartilhá-los com seus homólogos que são usuários do Experience Manager, por exemplo, fazendo upload de novas imagens. Consulte [carregar ativos usando um aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link**: os profissionais de criação podem pesquisar e usar ativos diretamente do [!DNL Adobe InDesign], [!DNL Adobe Illustrator] e [!DNL Adobe Photoshop].
 
@@ -296,7 +296,7 @@ Add content or link about how to configure sharing via BP, DA, AAL, etc.
 
 ### Habilitar ações de desktop para usar com o aplicativo de desktop {#desktop-actions}
 
-A partir da interface de usuário do [!DNL Assets] em um navegador, você pode explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas de ações de área de trabalho e, para habilitá-las, consulte [habilitar ações de área de trabalho na [!DNL Assets] interface da Web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2).
+A partir da interface de usuário do [!DNL Assets] em um navegador, você pode explorar os locais dos ativos ou fazer check-out e abrir o ativo para edição no aplicativo de desktop. Essas opções são chamadas de ações de área de trabalho e, para habilitá-las, consulte [habilitar ações de área de trabalho na [!DNL Assets] interface da Web](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#desktopactions-v2).
 
 ![Habilitar ações da área de trabalho para usar como atalho ao trabalhar com o aplicativo da área de trabalho](assets/enable_desktop_actions.png)
 

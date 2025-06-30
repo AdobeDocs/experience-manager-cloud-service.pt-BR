@@ -16,7 +16,7 @@ ht-degree: 5%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 Os ativos digitais são frequentemente associados a uma licença que especifica os termos e a duração do uso. Usando a plataforma [!DNL Experience Manager], você pode gerenciar com eficiência as informações de expiração de ativos e de licenciamento.

@@ -15,7 +15,7 @@ ht-degree: 19%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 Uma implantação corporativa do Adobe Experience Manager Assets tem a capacidade de armazenar muitos ativos. Às vezes, encontrar o ativo certo pode ser trabalhoso e demorado se você usar apenas os recursos de pesquisa genéricos do Experience Manager.

@@ -16,7 +16,7 @@ ht-degree: 21%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 Um Perfil de metadados permite aplicar metadados padrão a ativos em uma pasta. Crie um Perfil de metadados e aplique-o a uma pasta. Qualquer ativo que você fizer upload posteriormente para a pasta herdará os metadados padrão configurados no Perfil de metadados.

@@ -13,7 +13,7 @@ ht-degree: 11%
 
 O gerenciamento eficaz de ativos digitais é fundamental para fornecer experiências de marca envolventes e consistentes em várias plataformas online. O Dynamic Media com recursos de OpenAPI aprimora o gerenciamento de ativos digitais, permitindo uma integração perfeita entre o AEM Sites e o AEM Assets as a Cloud Service. Esse recurso inovador permite compartilhar e gerenciar facilmente diferentes tipos de ativos digitais aprovados em vários ambientes do AEM, simplificando os fluxos de trabalho para autores de sites e editores de conteúdo.
 
-O Dynamic Media com recursos OpenAPI permite que os autores de sites usem ativos do DAM remoto diretamente no Editor de páginas do AEM e [Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html), simplificando os processos de criação e gerenciamento de conteúdo.
+O Dynamic Media com recursos OpenAPI permite que os autores de sites usem ativos do DAM remoto diretamente no Editor de páginas do AEM e [Fragmento de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments.html?lang=pt-BR), simplificando os processos de criação e gerenciamento de conteúdo.
 
 Os usuários podem conectar várias instâncias do AEM Sites, sem restrições quanto ao número máximo, a uma implantação remota do DAM, uma vantagem notável sobre o recurso [Assets conectado](use-assets-across-connected-assets-instances.md).
 
@@ -42,7 +42,7 @@ O suporte a ativos remotos usando o Dynamic Media com recursos OpenAPI exige:
 
    * ASSET_DELIVERY_IMS_CLIENT= [IMSClientId]: é necessário enviar um tíquete de suporte do Adobe para obter a ID do Cliente IMS.
 
-     ou defina as [configurações do OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html) para o AEM 6.5 na instância do AEM Sites seguindo estas etapas:
+     ou defina as [configurações do OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/configuring/configuring-osgi.html?lang=pt-BR) para o AEM 6.5 na instância do AEM Sites seguindo estas etapas:
 
    1. Entre no console e clique em **[!UICONTROL OSGi] >** ou
 usar a URL direta; por exemplo: `https://localhost:4502/system/console/configMgr`
@@ -63,7 +63,7 @@ onde `pXXXX` refere-se à ID do programa
 
       ![A janela de configuração OSGi do Dynamic Media de última geração](/help/assets/assets/remote-assets-osgi.png)
 
-  Saiba mais sobre [Autenticação IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html).
+  Saiba mais sobre [Autenticação IMS](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/ims-config-and-admin-console.html?lang=pt-BR).
 
   Para obter detalhes sobre como configurar o OSGi, consulte os seguintes documentos:
 
@@ -119,7 +119,7 @@ Siga as etapas abaixo para usar ativos remotos no Fragmento de conteúdo do AEM 
 
    >[!NOTE]
    >
-   >Se você não tiver o modelo de Fragmento de conteúdo do AEM, talvez precise [criar um](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=en).
+   >Se você não tiver o modelo de Fragmento de conteúdo do AEM, talvez precise [criar um](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/content-fragments/content-fragments-models.html?lang=pt-BR).
 
 1. Clique no ícone de ![marca de seleção](/help/assets/assets/do-not-localize/checkmark-icon.svg) ao lado do componente de texto.
 1. Selecione **[!UICONTROL Remoto]** para buscar o ativo do DAM Remoto. <br>

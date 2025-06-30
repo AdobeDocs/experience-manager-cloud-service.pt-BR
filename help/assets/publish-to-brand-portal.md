@@ -160,7 +160,7 @@ Para agendar a publicação das pastas de ativos para uma data ou hora posterior
 
 1. Alterne para o Modo de exibição de lista ![Modo de exibição de lista](assets/list-view.svg) para ver o status de publicação atual do ativo.
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![status do relatório gerado](assets/report-status.JPG)
 
@@ -258,11 +258,11 @@ Veja a seguir as etapas para cancelar a publicação de uma coleção:
 
 Além do que foi descrito acima, você também pode publicar esquemas de metadados, predefinições de imagens, aspectos de pesquisa e tags do AEM Assets para o Brand Portal.
 
-* [Publicar predefinições, esquemas e aspectos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
-* [Publicar marcações no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)
+* [Publicar predefinições, esquemas e aspectos no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html?lang=pt-BR)
+* [Publicar marcações no Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html?lang=pt-BR)
 
 
-Consulte a [documentação do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) para obter mais informações.
+Consulte a [documentação do Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=pt-BR) para obter mais informações.
 
 
 <!--

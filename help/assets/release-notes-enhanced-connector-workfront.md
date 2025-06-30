@@ -29,7 +29,7 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 >[!NOTE]
 >
->O AEM 6.4 chegou ao fim do suporte estendido. Consulte nossos [períodos de suporte técnico](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões [aqui](https://experienceleague.adobe.com/docs/?lang=en) compatíveis.
+>O AEM 6.4 chegou ao fim do suporte estendido. Consulte nossos [períodos de suporte técnico](https://helpx.adobe.com/br/support/programs/eol-matrix.html). Encontre as versões [aqui](https://experienceleague.adobe.com/docs/?lang=pt-BR) compatíveis.
 
 >[!IMPORTANT]
 >
@@ -65,9 +65,9 @@ A versão mais recente do [!DNL Workfront for Experience Manager enhanced connec
 
 ### Versão de janeiro de 2024 {#january-2024-release}
 
-* A configuração [!DNL Workfront] em [!DNL CRX DE] atualmente não armazena `project ID`, causando erros ao aplicar a permissão somente leitura. Saiba como [configurar permissões](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#linked-folders).
+* A configuração [!DNL Workfront] em [!DNL CRX DE] atualmente não armazena `project ID`, causando erros ao aplicar a permissão somente leitura. Saiba como [configurar permissões](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=pt-BR#linked-folders).
 
-* Nenhuma documentação pública sobre como adicionar uma propriedade personalizada à definição de índice pronta para uso. Saiba mais sobre [adição de propriedade personalizada](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html#metadata-schema-mapping).
+* Nenhuma documentação pública sobre como adicionar uma propriedade personalizada à definição de índice pronta para uso. Saiba mais sobre [adição de propriedade personalizada](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/integrations/workfront-connector-configure.html?lang=pt-BR#metadata-schema-mapping).
 
 * A exclusão de configurações de conexão no conector aprimorado afeta significativamente as assinaturas de eventos e outras configurações salvas, fazendo com que elas apontem para um URL antigo.
 
@@ -270,4 +270,4 @@ A versão 1.9.1 do [!DNL Workfront for Experience Manager enhanced connector] in
 
 >[!MORELIKETHIS]
 >
->* [Integrar [!DNL Workfront for Experience Manager enhanced connector] ao Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
+>* [Integrar [!DNL Workfront for Experience Manager enhanced connector] ao Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=pt-BR)

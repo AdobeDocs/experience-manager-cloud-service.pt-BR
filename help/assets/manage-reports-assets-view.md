@@ -141,7 +141,7 @@ Obtenha insights de entrega para ativos entregues com o Dynamic Media, com conta
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Pré-requisitos {#prereqs-dynamic-media-delivery-reports}

@@ -16,7 +16,7 @@ ht-degree: 8%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 Os relatórios de ativos permitem avaliar a utilidade da implantação do [!DNL Adobe Experience Manager Assets]. Com o [!DNL Assets], você pode gerar vários relatórios para seus ativos digitais. Os relatórios fornecem informações úteis sobre o uso do sistema, como os usuários interagem com os ativos e quais ativos são <!-- downloaded and --> compartilhados.
@@ -66,7 +66,7 @@ Os administradores do [!DNL Adobe Experience Manager] podem facilmente gerar e p
 
    >[!NOTE]
    >
-   >Atribua a si mesmo um **perfil de produto Administrador do AEM** para criar um relatório de **Download**. Consulte [Atribuir Perfis de Produto do AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para se habilitar a um perfil de produto de Administrador do AEM.
+   >Atribua a si mesmo um **perfil de produto Administrador do AEM** para criar um relatório de **Download**. Consulte [Atribuir Perfis de Produto do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem) para se habilitar a um perfil de produto de Administrador do AEM.
 
    ![Selecionar tipo de relatório](assets/choose_report.png)
 

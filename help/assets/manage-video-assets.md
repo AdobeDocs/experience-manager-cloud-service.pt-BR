@@ -16,7 +16,7 @@ ht-degree: 6%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=en) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-video-assets.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 O formato de vídeo é uma parte essencial dos ativos digitais de uma organização. O [!DNL Adobe Experience Manager] oferece ofertas e recursos completos para gerenciar todo o ciclo de vida dos ativos de vídeo após sua criação.
@@ -410,7 +410,7 @@ Agora você associa as tags adicionadas anteriormente aos ativos de vídeo. Esse
 1. No canto superior direito da página de propriedades do vídeo, selecione **[!UICONTROL Salvar e fechar]**.
 1. Na barra de ferramentas, selecione **[!UICONTROL Publicação rápida]**.
 
-   Consulte também [Usar o Gerenciamento de Publicação com o Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html#page-authoring).
+   Consulte também [Usar o Gerenciamento de Publicação com o Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=pt-BR#page-authoring).
 
    Como opção, verifique o vídeo publicado no canal do YouTube.
 

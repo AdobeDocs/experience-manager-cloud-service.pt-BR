@@ -268,7 +268,7 @@ Isso leva você à coleção de ativos com cores e metadados semelhantes.
 
 ## Aspectos da pesquisa personalizada {#custom-search-facets}
 
-Os aspectos de pesquisa no Adobe Experience Manager permitem pesquisar ativos de várias maneiras, em vez de em uma única ordem pré-determinada ou taxonômica. Você pode personalizar os aspectos de pesquisa e adicionar predicados de acordo com sua necessidade. Leia [Aspectos da Pesquisa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en#) para obter o guia passo a passo sobre como adicionar um predicado personalizado.
+Os aspectos de pesquisa no Adobe Experience Manager permitem pesquisar ativos de várias maneiras, em vez de em uma única ordem pré-determinada ou taxonômica. Você pode personalizar os aspectos de pesquisa e adicionar predicados de acordo com sua necessidade. Leia [Aspectos da Pesquisa](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=pt-BR#) para obter o guia passo a passo sobre como adicionar um predicado personalizado.
 
 <!--**Scenario 10: Search assets based on Sku ID**
 to be added later
@@ -316,7 +316,7 @@ The newly added assets are not indexed.
     </tr>
     <tr>
         <td> Aspectos personalizados </td>
-        <td> Você pode adicionar <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en">aspectos de pesquisa personalizados de acordo com o requisito.</td>
+        <td> Você pode adicionar <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=pt-BR">aspectos de pesquisa personalizados de acordo com o requisito.</td>
         <td> Os aspectos personalizados são parcialmente compatíveis com a visualização do Assets. Os aspectos suportados são:
             <ul>
             <li> Tags previstas
@@ -430,5 +430,5 @@ The newly added assets are not indexed.
 
 >[!MORELIKETHIS]
 >
->* [Pesquisar ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en)
->* [Pesquisar aspectos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en)
+>* [Pesquisar ativos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=pt-BR)
+>* [Pesquisar aspectos](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=pt-BR)

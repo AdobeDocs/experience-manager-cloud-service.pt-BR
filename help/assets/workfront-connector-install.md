@@ -15,7 +15,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html?lang=pt-BR) |
 | AEM as a Cloud Service | Este artigo |
 
 Um usuário com acesso de administrador no [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] instala o conector aprimorado. Antes de instalar, verifique o suporte à plataforma e outros [pré-requisitos para o conector](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience).
@@ -38,9 +38,9 @@ Antes de instalar o conector, siga estas etapas de pré-instalação:
 
 1. Se o programa AEM as a Cloud Service tiver configurado a Rede avançada e ativado a lista de permissões de IP, será necessário adicionar os IPs da Workfront a essa lista de permissões para permitir Assinaturas de eventos e várias chamadas de API para passar para o AEM.
 
-   * [IPs de Cluster do Workfront](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=en#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Para conhecer o cluster IP em [!DNL Workfront], navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Sistema]** > **[!UICONTROL Informações do cliente]**.
+   * [IPs de Cluster do Workfront](https://experienceleague.adobe.com/docs/workfront/using/administration-and-setup/get-started-administration/configure-your-firewall.html?lang=pt-BR#ip-addresses-to-allow-for-clusters-1-2-3-5-7-8-and-9). Para conhecer o cluster IP em [!DNL Workfront], navegue até **[!UICONTROL Configuração]** > **[!UICONTROL Sistema]** > **[!UICONTROL Informações do cliente]**.
 
-   * [APIs de Assinatura de Eventos da Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html)
+   * [APIs de Assinatura de Eventos da Workfront](https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-api/event-subscriptions/event-subs-api.html?lang=pt-BR)
 
    >[!IMPORTANT]
    >
@@ -66,14 +66,14 @@ Antes de instalar o conector, siga estas etapas de pré-instalação:
 
 1. Esta instalação requer que o conhecimento defina um projeto Maven em [!DNL Experience Manager] como [!DNL Cloud Service]. Use os seguintes recursos para entender como incluir um pacote de terceiros em seu projeto Maven:
 
-   * [Incluir pacote de terceiros em seu projeto Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party).
-   * [Implantar com [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html).
+   * [Incluir pacote de terceiros em seu projeto Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=pt-BR#including-third-party).
+   * [Implantar com [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=pt-BR).
 
 Para instalar o complemento no [!DNL Experience Manager] como [!DNL Cloud Service], siga estas etapas:
 
 1. Baixe o conector aprimorado da [Distribuição de Software da Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
-1. [Acesse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) e clone seu repositório do AEM as a Cloud Service da Cloud Manager.
+1. [Acesse](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=pt-BR) e clone seu repositório do AEM as a Cloud Service da Cloud Manager.
 
 1. Abra o repositório do AEM as a Cloud Service clonado usando um IDE de sua escolha.
 
@@ -136,7 +136,7 @@ Para instalar o complemento no [!DNL Experience Manager] como [!DNL Cloud Servic
 
 1. Enviar as alterações para o repositório.
 
-1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=pt-BR).
 
 1. Para criar uma configuração de usuário do sistema, crie `wf-workfront-users` no Grupo de Usuários [!DNL Experience Manager] e atribua a permissão `jcr:all` a `/content/dam`. Um usuário do sistema `workfront-tools` é criado automaticamente e as permissões necessárias são gerenciadas automaticamente. Todos os usuários de [!DNL Workfront] que usam o conector aprimorado são adicionados automaticamente como parte desse grupo.
 
