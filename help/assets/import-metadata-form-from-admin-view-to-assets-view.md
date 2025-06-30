@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Metadata
 role: User, Admin
 exl-id: 5fb4fe97-486a-4a91-af60-a7182efcc2f9
-source-git-commit: fdd74e4d9b74600fd462e951046abfb1bb8e203b
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 3%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
 # Importar formulários de metadados de [!DNL Admin View] para [!DNL Assets View] {#import-metadata-forms-from-admin-view-to-assets-view}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
-        </td>
-    </tr>
-</table>
 
 [!DNL Adobe Experience Manager Assets] permite importar formulários de metadados e suas associações de pastas de [!DNL Admin View] para [!DNL Assets View].
 
@@ -83,9 +46,8 @@ Como administrador, execute as seguintes etapas para importar os formulários de
 
    * Clique no cabeçalho da coluna para classificar a tabela por [!UICONTROL Nome], [!UICONTROL Modificado] ou [!UICONTROL Autor].
    * Selecione o formulário importado e clique em **[!UICONTROL Remover da(s) pasta(s)]**. Em seguida, verifique o nome da pasta no caminho da pasta para confirmar se a pasta está corretamente transferida.
-
      ![verificar página de formulários de metadados](/help/assets/assets/confirm-ported-folder.png)
-   * Selecione o formulário importado e clique em **[!UICONTROL Editar]** para exibir todas as configurações compatíveis do formulário de metadados. Consulte [Configurar Forms de Metadados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) para obter mais informações sobre os formulários de metadados, seus componentes e campos.
+   * Selecione o formulário importado e clique em **[!UICONTROL Editar]** para exibir todas as configurações compatíveis do formulário de metadados. Consulte [Configurar Forms de Metadados](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata#metadata-forms) para obter mais informações sobre os formulários de metadados, seus componentes e campos.
 
    ![verificar página de formulários de metadados](/help/assets/assets/verify-metadata-forms-page.png)
 
@@ -94,8 +56,8 @@ Como administrador, execute as seguintes etapas para importar os formulários de
 Após importar os formulários de metadados de [!DNL Admin View] para [!DNL Assets View], siga estas etapas para verificar a importação:
 
 1. Navegue até qualquer uma das pastas associadas do formulário de metadados importado.
-1. Navegue até uma [página de detalhes do ativo](/help/assets/navigate-assets-view.md#preview-assets) e verifique se os componentes de metadados, campos de componentes e valores de campo compatíveis estão sincronizados a partir de [!DNL Admin View]. Consulte o artigo [Metadados no Assets Essentials](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/metadata) para obter mais informações sobre componentes de metadados, campos de componentes e valores de campos.
+1. Navegue até uma [página de detalhes do ativo](/help/assets/navigate-assets-view.md#preview-assets) e verifique se os componentes de metadados, campos de componentes e valores de campo compatíveis estão sincronizados a partir de [!DNL Admin View]. Consulte o artigo [Metadados no Assets Essentials](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/metadata) para obter mais informações sobre componentes de metadados, campos de componentes e valores de campos.
 
    >[!NOTE]
    >
-   > Na [[!DNL Assets View] página de detalhes](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) ou na [[!DNL Admin View] página de propriedades](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/assets/administer/metadata-schemas), as alterações nos valores de propriedades de metadados são sincronizadas automaticamente entre as duas interfaces. No entanto, as alterações estruturais no formulário, como adicionar ou remover campos ou outras modificações, não são sincronizadas.
+   > Na [[!DNL Assets View] página de detalhes](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/metadata-assets-view#metadata-forms) ou na [[!DNL Admin View] página de propriedades](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/metadata-schemas), as alterações nos valores de propriedades de metadados são sincronizadas automaticamente entre as duas interfaces. No entanto, as alterações estruturais no formulário, como adicionar ou remover campos ou outras modificações, não são sincronizadas.

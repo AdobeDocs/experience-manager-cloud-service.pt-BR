@@ -5,53 +5,16 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Architect, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 93%
+source-wordcount: '837'
+ht-degree: 99%
 
 ---
 
-# Visão geral da assimilação e processamento de ativos com microsserviços de ativos {#asset-microservices-overview}
+# Visão geral da ingestão e processamento de ativos com microsserviços de ativos {#asset-microservices-overview}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
-
-O Adobe Experience Manager as a [!DNL Cloud Service] fornece um método nativo da nuvem para usar os aplicativos e os recursos do Experience Manager. Um dos principais elementos dessa nova arquitetura é a assimilação e processamento de ativos, possibilitadas por microsserviços de ativos. Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microsserviços de ativos nativos da nuvem são:
+O Adobe Experience Manager as a [!DNL Cloud Service] fornece um método nativo da nuvem para usar os aplicativos e os recursos do Experience Manager. Um dos principais elementos dessa nova arquitetura é a ingestão e processamento de ativos, possibilitadas por microsserviços de ativos. Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microsserviços de ativos nativos da nuvem são:
 
 * Arquitetura escalável que permite um processamento contínuo de operações com uso intenso de recursos.
 * Indexação e extrações de texto eficientes que não afetam o desempenho de seus ambientes do Experience Manager.
@@ -66,16 +29,16 @@ Os microsserviços de ativos ajudam a evitar a necessidade de ferramentas e mét
 
 ## Arquitetura de alto nível {#asset-microservices-architecture}
 
-Um diagrama de arquitetura de alto nível descreve os principais elementos da assimilação, do processamento e do fluxo dos ativos no sistema.
+Um diagrama de arquitetura de alto nível descreve os principais elementos da ingestão, do processamento e do fluxo dos ativos no sistema.
 
 <!-- Proposed DRAFT diagram for asset microservices overview - see section "Asset processing - high-level diagram" in the PPTX deck
 
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
-![Assimilação e processamento de ativos com microsserviços de ativos](assets/asset-microservices-overview.png "Assimilação e processamento de ativos com microsserviços de ativos")
+![Ingestão e processamento de ativos com microsserviços de ativos](assets/asset-microservices-overview.png "Ingestão e processamento de ativos com microsserviços de ativos")
 
-As principais etapas da assimilação e do processamento usando microsserviços de ativos são:
+As principais etapas da ingestão e do processamento usando microsserviços de ativos são:
 
 * Os clientes, como navegadores da web ou o Adobe Asset Link, enviam uma solicitação de upload para o [!DNL Experience Manager] e iniciam o upload do binário diretamente para o armazenamento binário na nuvem.
 * Quando o upload direto do binário é concluído, o cliente notifica o [!DNL Experience Manager].
@@ -84,9 +47,9 @@ As principais etapas da assimilação e do processamento usando microsserviços 
 * Os resultados do processamento, como as representações, são armazenados no armazenamento binário na nuvem.
 * O Experience Manager é notificado de que o processamento foi concluído e é apontado diretamente para os binários gerados (representações). As representações geradas estão disponíveis no [!DNL Experience Manager] para o ativo carregado.
 
-Esse é o fluxo básico de assimilação e processamento de ativos. Se configurado, o Experience Manager também pode iniciar o modelo de fluxo de trabalho personalizado para fazer o pós-processamento do ativo. Por exemplo, execute etapas personalizadas específicas para seu ambiente, como buscar informações de um sistema empresarial e adicioná-las nas propriedades do ativo.
+Esse é o fluxo básico de ingestão e processamento de ativos. Se configurado, o Experience Manager também pode iniciar o modelo de fluxo de trabalho personalizado para fazer o pós-processamento do ativo. Por exemplo, execute etapas personalizadas específicas para seu ambiente, como buscar informações de um sistema empresarial e adicioná-las nas propriedades do ativo.
 
-O fluxo de assimilação e processamento são conceitos fundamentais da arquitetura dos microsserviços de ativos do Experience Manager.
+O fluxo de ingestão e processamento são conceitos fundamentais da arquitetura dos microsserviços de ativos do Experience Manager.
 
 * **Acesso direto ao binário**: os ativos são transportados (e carregados) para o armazenamento binário na nuvem após serem configurados para ambientes do Experience Manager; em seguida, o [!DNL Experience Manager], os microsserviços de ativos e, por fim, os clientes obtêm acesso direto a eles para realizar seu trabalho. Isso minimiza a carga em redes e a duplicação de binários armazenados
 * **Processamento externo**: o processamento de ativos é feito fora do ambiente do [!DNL Experience Manager], e seus recursos são salvos (CPU, memória) para fornecer as principais funcionalidades do Gerenciamento de ativos digitais (DAM) e permitir o trabalho interativo com o sistema para usuários finais

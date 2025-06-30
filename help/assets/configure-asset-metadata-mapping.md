@@ -4,51 +4,14 @@ description: Mapeie os campos de metadados de ativos entre os aplicativos Adobe 
 exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
 feature: Metadata, Workfront Integrations and Apps
 role: User, Admin
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1012'
 ht-degree: 4%
 
 ---
 
 # Configurar o mapeamento de metadados de ativos entre o Adobe Workfront e o Experience Manager Assets {#asset-metadata-mapping-workfront-aem-assets}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 Você pode mapear os campos de metadados de ativos entre os aplicativos Adobe Workfront e Experience Manager as a Cloud Service. Como resultado do mapeamento de campos de metadados, ao enviar um ativo do Workfront para o Experience Manager Assets, você pode visualizar os metadados do ativo mapeados no Experience Manager Assets.
 
@@ -68,7 +31,7 @@ Uma imagem `add-users-workfront.png` existe no projeto `Metadata Syncs` no aplic
 
 * Um acesso de administrador aos aplicativos Workfront e Experience Manager Assets as a Cloud Service.
 
-* Uma integração entre os [aplicativos Workfront e Experience Manager Assets as a Cloud Service](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&amp;_LANG=enus).
+* Uma integração entre os [aplicativos Workfront e Experience Manager Assets as a Cloud Service](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&topicId=Content%2FDocuments%2FAdobe_Workfront_for_Experience_Manager_Assets_Essentials%2Fsetup-asset-essentials.htm&_LANG=enus).
 
 ## Configurar o mapeamento de metadados no Workfront {#set-up-metadata-mapping}
 
@@ -128,7 +91,6 @@ Para configurar o mapeamento de metadados usando um novo formulário de metadado
    1. Especifique `Project Name` no campo **[!UICONTROL Rótulo do campo]**.
 
    1. Especifique `./jcr:content/metadata/wm:projectName` no campo **[!UICONTROL Mapear para propriedade]**. Como diretriz, use o seguinte modelo para definir os mapeamentos de campo no Experience Manager Assets:
-
       `./jcr:content/metadata/<mapping defined for the field in workfront>`.
 
       Ao configurar mapeamentos no Workfront, você mapeou o campo do Experience Manager Assets `wm:projectName` para o campo Projeto > Nomear Workfront.

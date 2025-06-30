@@ -5,51 +5,14 @@ contentOwner: AG
 feature: Upload, Asset Processing, Publishing, Asset Compute Microservices
 role: User, Admin
 exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
-source-git-commit: 1d8136b761528fe927b467320ebc7363de0d8a37
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '801'
 ht-degree: 4%
 
 ---
 
 # Gerar variações de ativos usando a integração do [!DNL Adobe Creative Cloud] {#content-automation}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 O complemento de automação de conteúdo integra o [!DNL Adobe Experience Manager Assets] como APIs do [!DNL Cloud Service] e do [!DNL Adobe Creative Cloud] para processar seus ativos de forma criativa e em escala. O [!DNL Experience Manager] usa os [microsserviços de ativos](/help/assets/asset-microservices-overview.md) baseados na nuvem para usar os recursos do [!DNL Adobe Creative Cloud] e automatizar a criação de ativos e o manuseio de mídia.
 
@@ -97,7 +60,7 @@ Para ativar o complemento de Automatização de Conteúdo para o programa AEM as
 1. Clique em **[!UICONTROL Continuar]**.
 1. Expanda **[!UICONTROL Assets]** e selecione **[!UICONTROL Automação de Conteúdo]**.
 1. Clique em **[!UICONTROL Criar]**.
-1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=pt-BR).
+1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 Se você precisar adicionar um complemento de Automação de conteúdo a um programa existente do AEM as a Cloud Service no Cloud Manager:
 
@@ -107,7 +70,7 @@ Se você precisar adicionar um complemento de Automação de conteúdo a um prog
 
 1. Expanda **[!UICONTROL Assets]** e selecione **[!UICONTROL Automação de Conteúdo]**.
 1. Clique em **[!UICONTROL Atualizar]**.
-1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=pt-BR).
+1. Execute o pipeline para [implantar as alterações no Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 ## Use um perfil de processamento para editar seus ativos criativos em massa {#process-assets}
 

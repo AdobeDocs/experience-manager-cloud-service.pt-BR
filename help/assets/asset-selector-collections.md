@@ -3,51 +3,14 @@ title: Coleções do seletor de ativos
 description: Trabalhar com coleções do seletor de ativos.
 role: Admin,User
 exl-id: 1687e7d5-eb7e-4eb7-8747-e5dc6afacd5b
-source-git-commit: 08fc43bc8edeea91bfeb01f053d435e136658e7f
+source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 7%
+source-wordcount: '449'
+ht-degree: 4%
 
 ---
 
 # Coleções do seletor de ativos {#asset-selector-collections}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Práticas recomendadas de pesquisa</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas para metadados</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Centro de conteúdo</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos da OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>Documentação do AEM Assets para desenvolvedores</b></a>
-        </td>
-    </tr>
-</table>
 
 Uma coleção é um conjunto de ativos, pastas ou outras coleções no Seletor de ativos. Use coleções para compartilhar ativos entre usuários. Diferente de pastas, uma coleção pode incluir ativos de locais diferentes.
 
@@ -70,7 +33,7 @@ Além disso, também é possível personalizar a seleção de ativos na guia Col
 
 ## Exibir coleções {#view-collections}
 
-O Seletor de ativos permite exibir coleções em uma exibição de lista ![1&rbrace; ou em uma exibição de grade 3&rbrace;. ](assets/do-not-localize/list-view.png)![](assets/do-not-localize/grid-view.png) Consulte [tipos de exibição no Seletor de ativos](overview-asset-selector.md#types-of-view).
+O Seletor de ativos permite exibir coleções em uma exibição de lista ![1} ou em uma exibição de grade ![3}. ](assets/do-not-localize/list-view.png)](assets/do-not-localize/grid-view.png) Consulte [tipos de exibição no Seletor de ativos](overview-asset-selector.md#types-of-view).
 
 ## Arraste e solte ativos na coleção {#collection-drag-and-drop}
 

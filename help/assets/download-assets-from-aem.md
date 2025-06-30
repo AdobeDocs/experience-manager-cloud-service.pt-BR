@@ -5,55 +5,18 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1382'
-ht-degree: 3%
+source-wordcount: '1336'
+ht-degree: 4%
 
 ---
 
 # Baixar ativos de [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
-
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/download-assets-from-aem.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 É possível baixar ativos, incluindo representações estáticas e dinâmicas. Como alternativa, você pode enviar emails com links para ativos diretamente do [!DNL Adobe Experience Manager Assets]. Os ativos baixados são incluídos em um arquivo ZIP. <!-- The compressed ZIP file has a maximum file size of 1 GB for the export job. A maximum of 500 total assets per export job are allowed. -->
@@ -72,8 +35,8 @@ Você pode baixar ativos do Experience Manager usando os seguintes métodos:
 
 * [Interface do usuário do Experience Manager](#download-assets)
 * [Comuns de compartilhamento de ativos](https://adobe-marketing-cloud.github.io/asset-share-commons/)
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=pt-BR)
-* [Aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR#download-assets)
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+* [Aplicativo de desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)
 
 ## Baixar ativos usando a interface [!DNL Experience Manager] {#download-assets}
 
@@ -92,7 +55,7 @@ Os downloads assíncronos são acionados em qualquer um dos seguintes casos:
 * Se o tamanho do download for superior a 100 MB
 * Se o download levar mais de 30 segundos para se preparar
 
-Enquanto o download assíncrono é executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. Além das notificações da caixa de entrada do Experience Manager, o Experience Manager pode enviar emails para notificar o usuário na conclusão do processo de download. Para habilitar este recurso, os administradores podem configurar o serviço de email [configurando uma conexão de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=pt-BR#sending-email).
+Enquanto o download assíncrono é executado no back-end, o usuário pode continuar a explorar e trabalhar mais no Experience Manager. Além das notificações da caixa de entrada do Experience Manager, o Experience Manager pode enviar emails para notificar o usuário na conclusão do processo de download. Para habilitar este recurso, os administradores podem configurar o serviço de email [configurando uma conexão de servidor SMTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
 Depois que o serviço de email é configurado, os administradores e usuários podem ativar notificações por email na interface do Experience Manager.
 
@@ -165,7 +128,7 @@ Para permitir o download de ativos do seu DAM, ao usar algo como o Asset Share C
 
 Se você não precisar da funcionalidade de download, desative o servlet para evitar riscos semelhantes ao DoS. O `Asset Download Servlet` pode ser desativado em instâncias de autor e publicação [!DNL Experience Manager] ao atualizar a configuração do Dispatcher para bloquear qualquer solicitação de download de ativos. O servlet também pode ser desativado manualmente por meio do console OSGi diretamente.
 
-1. Para bloquear solicitações de download de ativos por meio de uma configuração do Dispatcher, edite a configuração `dispatcher.any` e adicione uma nova regra à [seção de filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=pt-BR#configuring).
+1. Para bloquear solicitações de download de ativos por meio de uma configuração do Dispatcher, edite a configuração `dispatcher.any` e adicione uma nova regra à [seção de filtro](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
@@ -176,7 +139,7 @@ Para habilitar o serviço `OnOffTimeAssetAccessFilter`, é necessário criar uma
 1. No código do projeto no Git, crie um arquivo de configuração em `/apps/system/config/com.day.cq.dam.core.impl.servlet.OnOffTimeAssetAccessFilter.cfg.json`. O arquivo deve conter `{}` como conteúdo, o que significa uma configuração OSGi vazia para o componente OSGi correspondente. Essa ação ativa o serviço.
 1. Implante seu código, incluindo esta nova configuração, através de [!DNL Cloud Manager].
 1. Depois de implantados, as representações e os metadados ficam acessíveis de acordo com as configurações de tempo de ativação/desativação dos ativos. Se a data ou a hora atual for anterior à hora de ativação ou posterior à hora de desativação, uma mensagem de erro será exibida.
-Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, consulte este [guia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=pt-BR).
+Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, consulte este [guia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=en).
 
 ## Dicas e limitações {#tips-limitations}
 
@@ -200,5 +163,5 @@ Para obter mais detalhes sobre como adicionar uma configuração OSGi vazia, con
 >[!MORELIKETHIS]
 >
 >* [Baixar ativos protegidos por DRM](drm.md)
->* [Baixar ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=pt-BR)
+>* [Baixar ativos usando o aplicativo de desktop Experience Manager no Win ou no Mac desktop](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
 >* [Baixe ativos usando o Adobe Assets Link nos aplicativos Adobe Creative Cloud compatíveis](https://helpx.adobe.com/br/enterprise/using/manage-assets-using-adobe-asset-link.html)

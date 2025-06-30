@@ -4,51 +4,14 @@ description: Saiba como importar ativos em massa usando a nova interface do Asse
 exl-id: 10f9d679-7579-4650-9379-bc8287cb2ff1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1927'
-ht-degree: 85%
+source-wordcount: '1881'
+ht-degree: 87%
 
 ---
 
 # Importação de ativos em massa usando a visualização do Assets  {#bulk-import-assets-view}
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 A Importação em massa na visualização do AEM Assets fornece a capacidade de importar um grande número de ativos de uma fonte de dados para o AEM Assets. Não é mais necessário fazer upload de ativos ou pastas individuais para o AEM Assets.
 
@@ -180,11 +143,11 @@ Execute as seguintes etapas para criar uma configuração de importação em mas
    >Dependendo das regras de segurança da organização, talvez seja necessário o consentimento do administrador para que esse aplicativo se conecte à ferramenta Importação em massa. Se isso for necessário, o administrador precisará fornecer consentimento antes que a configuração de importação em massa possa ser salva.
 
 1. Defina um local no DAM onde os ativos devem ser importados usando o campo **[!UICONTROL Pasta de destino do Assets]**. Por exemplo, `/content/dam/imported_assets`.
-1. (Opcional) Na seção **[!UICONTROL Escolher filtros]**, forneça o tamanho mínimo de arquivo dos ativos em MB para incluí-los no processo de assimilação no campo **[!UICONTROL Filtrar por tamanho mínimo]**.
-1. (Opcional) Forneça o tamanho máximo de arquivo dos ativos em MB para incluí-los no processo de assimilação no campo **[!UICONTROL Filtrar por tamanho máximo]**.
-1. (Opcional) Selecione os tipos MIME a serem incluídos no processo de assimilação usando o campo **[!UICONTROL Incluir tipo MIME]**. É possível selecionar vários tipos MIME nesse campo. Se não definir um valor, todos os tipos MIME serão incluídos no processo de assimilação.
+1. (Opcional) Na seção **[!UICONTROL Escolher filtros]**, forneça o tamanho mínimo de arquivo dos ativos em MB para incluí-los no processo de ingestão no campo **[!UICONTROL Filtrar por tamanho mínimo]**.
+1. (Opcional) Forneça o tamanho máximo de arquivo dos ativos em MB para incluí-los no processo de ingestão no campo **[!UICONTROL Filtrar por tamanho máximo]**.
+1. (Opcional) Selecione os tipos MIME a serem incluídos no processo de ingestão usando o campo **[!UICONTROL Incluir tipo MIME]**. É possível selecionar vários tipos MIME nesse campo. Se não definir um valor, todos os tipos MIME serão incluídos no processo de ingestão.
 
-1. (Opcional) Selecione os tipos MIME a serem excluídos no processo de assimilação usando o campo **[!UICONTROL Excluir tipo MIME]**. É possível selecionar vários tipos MIME nesse campo. Se não definir um valor, todos os tipos MIME serão incluídos no processo de assimilação.
+1. (Opcional) Selecione os tipos MIME a serem excluídos no processo de ingestão usando o campo **[!UICONTROL Excluir tipo MIME]**. É possível selecionar vários tipos MIME nesse campo. Se não definir um valor, todos os tipos MIME serão incluídos no processo de ingestão.
 
    ![Filtros de importação em massa](assets/bulk-import-location.png)
 
@@ -223,9 +186,9 @@ Para editar os detalhes da configuração, clique no ![Ícone mais](assets/do-no
 
 Para agendar uma importação em massa única ou recorrente, execute as seguintes etapas:
 
-1. Clique no ![Ícone mais](assets/do-not-localize/more-icon.svg) correspondente ao nome da configuração disponível na guia **[!UICONTROL Importações executadas]** ou **[!UICONTROL Importações salvas]** e clique em **[!UICONTROL Agendar]**. Também é possível reagendar uma importação navegando até a guia **[!UICONTROL Importações programadas]** e clicando em **[!UICONTROL Programar]**.
+1. Clique no ![Ícone mais](assets/do-not-localize/more-icon.svg) correspondente ao nome da configuração disponível na guia **[!UICONTROL Importações executadas]** ou **[!UICONTROL Importações salvas]** e clique em **[!UICONTROL Agendar]**. Também é possível reagendar uma importação navegando até a guia **[!UICONTROL Importações agendadas]** e clicando em **[!UICONTROL Agendar]**.
 
-1. Defina uma assimilação única ou agende uma programação por hora, dia ou semana. Clique em **[!UICONTROL Enviar]**.
+1. Defina uma ingestão única ou agende uma programação por hora, dia ou semana. Clique em **[!UICONTROL Enviar]**.
 
    ![Agendamento de configurações de importação em massa](assets/bulk-import-schedule.png)
 
@@ -257,7 +220,7 @@ Também é possível visualizar os ativos que foram importados na pasta de desti
 
 ## Exclusão de uma configuração de importação em massa {#delete-bulk-import-configuration}
 
-Clique no ![Ícone mais](assets/do-not-localize/more-icon.svg) correspondente ao nome da configuração existente nas guias **[!UICONTROL Importações executadas]**, **[!UICONTROL Importações agendadas]** ou **[!UICONTROL Importações salvas]** e clique em **[!UICONTROL Excluir]** para excluir a configuração de importação em massa.
+Clique no ![ícone Mais](assets/do-not-localize/more-icon.svg) correspondente ao nome da configuração existente nas guias **[!UICONTROL Importações executadas]**, **[!UICONTROL Importações agendadas]** ou **[!UICONTROL Importações salvas]** e clique em **[!UICONTROL Excluir]** para excluir a configuração de importação em massa.
 
 ## Navegue até os ativos após a execução de uma importação em massa {#view-assets-after-bulk-import}
 

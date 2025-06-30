@@ -5,10 +5,10 @@ contentOwner: AK
 feature: Asset Management
 role: User, Leader, Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '973'
-ht-degree: 73%
+source-wordcount: '927'
+ht-degree: 77%
 
 ---
 
@@ -17,46 +17,9 @@ ht-degree: 73%
 
 <!-- Need review information from gklebus -->
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
-
 O Adobe Experience Manager Assets as a [!DNL Cloud Service] oferece uma solução PaaS nativa em nuvem para que as empresas não somente executem suas operações de Gerenciamento de ativos digitais e Mídia dinâmica com velocidade e impacto, como também usem recursos inteligentes de próxima geração, como IA/ML, de dentro de um sistema que está sempre atualizado, disponível e aprendendo.
 
-A assimilação simultânea de muitos ativos ou ativos complexos é uma tarefa que consome muitos recursos em uma instância do autor do Experience Manager. A instância principal consome recursos consideráveis de CPU, memória e I/O quando os ativos são adicionados, processados ou até mesmo migrados. Esses problemas de desempenho afetam a criação e a experiência de navegação dos usuários finais.
+A ingestão simultânea de muitos ativos ou ativos complexos é uma tarefa que consome muitos recursos em uma instância do autor do Experience Manager. A instância principal consome recursos consideráveis de CPU, memória e I/O quando os ativos são adicionados, processados ou até mesmo migrados. Esses problemas de desempenho afetam a criação e a experiência de navegação dos usuários finais.
 
 As empresas exigem suporte para uma grande variedade de formatos de arquivo e resoluções de conteúdo para uso em multidispositivos, geografia cruzada e multilíngue. Os requisitos de processamento e armazenamento de ativos exigem recursos e capacidades que podem sobrecarregar uma solução tradicional. Por vezes, as limitações técnicas do processamento de ativos não produzem os resultados desejados e, em outras ocasiões, o custo de armazenamento constitui um entrave às margens de lucro.
 
@@ -99,7 +62,7 @@ Integre o AEM Assets com a Criação baseada em documento para o Edge Delivery S
 
 ## Integração com o Adobe Journey Optimizer {#integration-with-ajo}
 
-O [Adobe Journey Optimizer](https://business.adobe.com/br/products/journey-optimizer/adobe-journey-optimizer.html) simplifica o gerenciamento de jornadas para que os clientes forneçam campanhas omnicanais com insights e decisões inteligentes. Ao criar mensagens usando o Journey Optimizer, você pode acessar o repositório do Assets as a Cloud Service diretamente de dentro da interface do Journey Optimizer. Os usuários obtêm acesso aos ativos usando a interface incorporada do Experience Manager Assets. Para obter mais informações, consulte [Criar e gerenciar ativos com o Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html?lang=pt-BR).
+O [Adobe Journey Optimizer](https://business.adobe.com/br/products/journey-optimizer/adobe-journey-optimizer.html) simplifica o gerenciamento de jornadas para que os clientes forneçam campanhas omnicanais com insights e decisões inteligentes. Ao criar mensagens usando o Journey Optimizer, você pode acessar o repositório do Assets as a Cloud Service diretamente de dentro da interface do Journey Optimizer. Os usuários obtêm acesso aos ativos usando a interface incorporada do Experience Manager Assets. Para obter mais informações, consulte [Criar e gerenciar ativos com o Experience Manager Assets](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/assets-images/assets.html).
 
 ## Novos recursos do Assets {#whats-new-assets}
 

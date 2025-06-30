@@ -3,50 +3,13 @@ title: Filtros de pesquisa personalizados
 description: Saiba como personalizar o formulário de filtros de pesquisa
 role: User, Leader, Developer
 exl-id: 383e8165-439e-447b-a19d-d5446238a13f
-source-git-commit: 5d155ab940da84561ea52396e410b0cc15395310
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 12%
+source-wordcount: '1294'
+ht-degree: 13%
 
 ---
 
-
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
 
 # Personalizar filtros de pesquisa {#customize-search-filters}
 
@@ -339,7 +302,7 @@ Os filtros pré-configurados são configurações predefinidas que permitem usá
         </td>
     </tr>
     <tr>
-        <td>Data de vencimento</td>
+        <td>Data de expiração</td>
         <td>Filtrar ativos especificando um intervalo de datas após o qual os ativos não são mais válidos ou necessários. </td>
         <td>
             <ul>
@@ -351,7 +314,7 @@ Os filtros pré-configurados são configurações predefinidas que permitem usá
         </td>
     </tr>
     <tr>
-        <td>Tags (Taxonomia)</td>
+        <td>Tags (taxonomia)</td>
         <td>Trata-se de um sistema de organização e classificação de ativos digitais através da utilização de etiquetas, que cria essencialmente uma estrutura hierárquica de palavras-chave que permite aos utilizadores pesquisar e encontrar facilmente conteúdo relevante mediante a aplicação de etiquetas específicas a cada ativo; </td>
         <td>
             <ul>

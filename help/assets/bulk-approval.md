@@ -5,55 +5,18 @@ contentOwner: AG
 feature: Collections, Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
-source-git-commit: 188f60887a1904fbe4c69f644f6751ca7c9f1cc3
+source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 8%
+source-wordcount: '820'
+ht-degree: 9%
 
 ---
 
 # Revisar ativos em pastas e coleções {#review-folder-assets-and-collections}
 
-<table>
-    <tr>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/dm-prime-ultimate.md"><b>Dynamic Media Prime e Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/assets-ultimate-overview.md"><b>AEM Assets Ultimate</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Nova</i></sup> <a href="/help/assets/integrate-aem-assets-edge-delivery-services.md"><b>integração do AEM Assets com o Edge Delivery Services</b></a>
-        </td>
-        <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/aem-assets-view-ui-extensibility.md"><b>Extensibilidade da Interface do Usuário</b></a>
-        </td>
-          <td>
-            <sup style= "background-color:#008000; color:#FFFFFF; font-weight:bold"><i>Novo</i></sup> <a href="/help/assets/dynamic-media/enable-dynamic-media-prime-and-ultimate.md"><b>Habilitar o Dynamic Media Prime e o Ultimate</b></a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a href="/help/assets/search-best-practices.md"><b>Pesquisar Práticas Recomendadas</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/metadata-best-practices.md"><b>Práticas recomendadas de metadados</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/product-overview.md"><b>Content Hub</b></a>
-        </td>
-        <td>
-            <a href="/help/assets/dynamic-media-open-apis-overview.md"><b>Dynamic Media com recursos OpenAPI</b></a>
-        </td>
-        <td>
-            <a href="https://developer.adobe.com/experience-cloud/experience-manager-apis/"><b>documentação para desenvolvedores do AEM Assets</b></a>
-        </td>
-    </tr>
-</table>
-
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/bulk-approval.html?lang=en) |
 | AEM as a Cloud Service | Este artigo |
 
 Usando o Adobe Experience Manager Assets, você pode definir fluxos de trabalho de revisão ad hoc para ativos que estão em uma pasta ou coleção. Você pode compartilhá-lo com revisores ou parceiros criativos para buscar seus comentários. Você pode associar um fluxo de trabalho de revisão a um projeto ou criar uma tarefa de revisão independente.
@@ -89,7 +52,7 @@ Depois que o revisor concluir a revisão (aprovar ou rejeitar ativos), você rec
 
    ![nome_da_revisão](assets/review_name.png)
 
-1. Selecione **[!UICONTROL Enviar]** e Concluído **para fechar a mensagem de confirmação.** Uma notificação para a nova tarefa é enviada ao aprovador.
+1. Selecione **[!UICONTROL Enviar]** e Concluído ]**para fechar a mensagem de confirmação.**[!UICONTROL  Uma notificação para a nova tarefa é enviada ao aprovador.
 1. Faça logon em [!DNL Experience Manager Assets] como um Aprovador e navegue até a interface do usuário do Assets. Para aprovar ativos, selecione o ícone **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 
    ![notificação](assets/notification.png)
@@ -133,7 +96,7 @@ Depois que o revisor concluir a revisão (aprovar ou rejeitar ativos), você rec
 
    ![coleção_de_detalhes_da_tarefa](assets/task_details-collection.png)
 
-1. Selecione **[!UICONTROL Enviar]** e Concluído **para fechar a mensagem de confirmação.** Uma notificação para a nova tarefa é enviada ao aprovador.
+1. Selecione **[!UICONTROL Enviar]** e Concluído ]**para fechar a mensagem de confirmação.**[!UICONTROL  Uma notificação para a nova tarefa é enviada ao aprovador.
 1. Faça logon em [!DNL Experience Manager Assets] como um Aprovador e navegue até o console Assets. Para aprovar ativos, selecione o ícone **[!UICONTROL Notificações]** e selecione a tarefa de revisão na lista.
 1. Na página **[!UICONTROL Tarefa de Revisão]**, examine os detalhes da tarefa de revisão e selecione **[!UICONTROL Revisar]**.
 1. Todos os ativos na coleção estão visíveis na página de revisão. Selecione os ativos e o ícone **[!UICONTROL Aprovar/Rejeitar]** para aprovar ou rejeitar ativos, conforme apropriado.
