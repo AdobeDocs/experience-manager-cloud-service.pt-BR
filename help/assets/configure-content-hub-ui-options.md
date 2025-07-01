@@ -2,10 +2,10 @@
 title: Configurar a interface do usuário do Centro de conteúdo
 description: Configurar a interface do usuário do Centro de conteúdo
 exl-id: e9e22862-9bcd-459a-bcf4-7f376a0b329a
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: a60b0e8ccba2680b0f053f3349adca21b65c3045
 workflow-type: tm+mt
-source-wordcount: '2047'
-ht-degree: 9%
+source-wordcount: '2089'
+ht-degree: 8%
 
 ---
 
@@ -96,11 +96,10 @@ Clique na opção **[!UICONTROL Aprovação automática]** se precisar que todos
 
 Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
 
-![Detalhes do carregamento da interface de configuração no Content Hub](assets/configuration-ui-upload-details.png)
+![Detalhes do carregamento da interface de configuração no Content Hub](/help/assets/assets/import-content-hub.png)
 
 Metadados ativados na interface do usuário de configuração são exibidos na página de upload de ativos:
-
-![Carregar metadados no Content Hub](assets/configuration-ui-add-assets.png)
+![Carregar metadados no Content Hub](assets/add-assets-for-approval.png)
 
 ### Filtros {#configure-filters-content-hub}
 
@@ -120,12 +119,10 @@ O Content Hub permite que os administradores configurem filtros que são exibido
    >O novo filtro é exibido na página Pesquisar somente se houver pelo menos um ativo no repositório que corresponda aos critérios do filtro.
 
 Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada filtro disponível, para editar os rótulos ou clicar no ícone excluir para excluir qualquer filtro existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
-
-![Filtros de configuração de interface do usuário no Content Hub](assets/configuration-ui-filters.png)
+![Filtros de configuração de interface do usuário no Content Hub](assets/configuration-filter.png)
 
 Os filtros ativados na Interface do Usuário de Configuração são exibidos na página Pesquisar:
-
-![Pesquisar no Content Hub](assets/filters-for-search.png)
+![Pesquisar no Content Hub](assets/content-hub-filters.png)
 
 
 ### Detalhes do ativo {#configure-asset-details-content-hub}
@@ -143,24 +140,23 @@ Você também pode configurar as propriedades de ativos exibidas para cada ativo
 
 Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade disponível, para editar os rótulos ou clicar no ícone excluir para excluir qualquer detalhe de ativo existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
 
-![Detalhes do ativo da interface do usuário de configuração no Content Hub](assets/configuration-ui-asset-details.png)
+![Detalhes do ativo da interface do usuário de configuração no Content Hub](assets/configuration-asset-details.png)
 
 As propriedades ativadas na Interface do Usuário da Configuração são exibidas na página Detalhes do ativo:
 
-![Propriedades do ativo no Content Hub](assets/config-ui-asset-properties.png)
+![Propriedades do ativo no Content Hub](assets/asset-details-page-content-hub.png)
 
 ### Cartão de ativos {#asset-card}
 
-Você também pode configurar os campos de metadados principais que precisam ser exibidos no **Cartão de ativos** até um máximo de 6 campos. Para desabilitá-la, siga estas etapas:
-
-![Metadados-chave no Cartão de Ativo](/help/assets/assets/asset-card-key-metadata.png)
+Você também pode configurar as propriedades dos metadados principais que precisam ser exibidos no **Cartão de ativos** até um máximo de 6 campos.
+![Metadados-chave no Cartão de Ativo](/help/assets/assets/asset-card-metadata.png)
+Execute as seguintes etapas para configurar as propriedades de metadados e exibi-las no **[!UICONTROL Cartão de ativos]**:
 
 1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **Cartão de ativos**.
 2. Clique em **Adicionar metadados**. A caixa de diálogo **Adicionar metadados do cartão de ativos** é exibida.
 3. Especifique o nome dos metadados no campo **Rótulo** e selecione uma propriedade de metadados no campo **Metadados**.
 4. Clique em **Confirmar** e em **Salvar** para aplicar as alterações de forma que a nova propriedade seja exibida na página de detalhes do ativo.
-   ![cartão de ativos](/help/assets/assets/asset-card.png)
-
+   ![cartão de ativos](/help/assets/assets/configuration-asset-card.png)
 Da mesma forma, clique em ![editar](/help/assets/assets/edit-content-hub.svg) que está disponível ao lado de cada propriedade disponível, para fazer as modificações necessárias ou clique em ![excluir](/help/assets/assets/delete-content-hub.svg) para excluir qualquer propriedade de metadados existente. Clique em **Salvar** depois de fazer todas as modificações para aplicar as alterações.
 
 ### Pesquisar {#configure-metadata-search-content-hub}
@@ -174,11 +170,13 @@ Os administradores podem definir os campos de metadados que são pesquisados qua
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações para que a nova propriedade de metadados seja exibida na lista de campos de metadados.
 
 Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada propriedade de metadados disponível, para editar a propriedade ou clicar no ícone excluir para excluir qualquer propriedade existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
-![Pesquisa de Interface do Usuário de Configuração no Content Hub](assets/configuration-ui-metadata-search.png)
+![Pesquisa de Interface do Usuário de Configuração no Content Hub](assets/configuration-search.png)
 
 ### Identidade visual {#configure-branding-content-hub}
 
-Como administrador, personalize o portal do [!DNL Content Hub] para atender aos requisitos de marca. Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, use as seções **[!UICONTROL Banner]**, **[!UICONTROL Cores]** e **[!UICONTROL Imagem do banner]** para executar as seguintes personalizações:
+Como administrador, personalize o portal do [!DNL Content Hub] para atender aos requisitos de marca.
+![redefinir padrão](/help/assets/assets/reset-default-content-hub.png)
+Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, use o **[!UICONTROL Banner]**, **[!UICONTROL Cores]** e **[!UICONTROL Imagem do banner]** para executar as seguintes personalizações:
 
 1. [Alterar a imagem do banner da seção [!UICONTROL Imagem do banner]](#Change-the-banner-image)
 1. [Atualize o título e o texto do corpo no banner e altere a cor do texto da seção [!UICONTROL Banner]](#Add-title-and-body-text-to-your-banner-and-change-the-text-color)
@@ -192,21 +190,23 @@ Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]
 
 1. Clique em ![selecionar imagem](/help/assets/assets/Browse.svg) **[!UICONTROL Selecionar da galeria]** para selecionar uma imagem de banner usando a caixa de diálogo do seletor de ativos. O seletor de ativos exibe somente imagens aprovadas.
 1. Selecione a imagem, clique em **[!UICONTROL Selecionar]** e em **[!UICONTROL Salvar]** para exibi-la como a imagem de banner da sua implantação do [!DNL Content Hub].
+   ![imagem do banner](/help/assets/assets/banner-image-content-hub.png)
 
 #### Adicionar título e texto de corpo ao banner e alterar a cor do texto{#Add-title-and-body-text-to-your-banner-and-change-the-text-color}
 
 Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, use os respectivos campos na seção **[!UICONTROL Banner]** para adicionar títulos e textos de corpo ao seu banner.
 Clique na caixa quadrada ao lado da **[!UICONTROL Cor do texto do banner]** para selecionar uma cor de texto no seletor de cores para o texto do banner ou especifique o código hexadecimal da cor no campo ao lado da caixa quadrada do seletor de cores.
+![hub de conteúdo de texto do banner](/help/assets/assets/banner-text-content-hub.png)
 
 #### Alterar as cores primária e secundária{#Change-the-primary-and-secondary-color}
 
 Na página ![Marcas](/help/assets/assets/ColorPalette.svg) **[!UICONTROL Marcas]**, use a seção **[!UICONTROL Cores]** para definir as cores primária e secundária, selecionando-as com o seletor de cores ou definindo o código hexadecimal da cor. Essas cores definem as cores do plano de fundo, do texto e dos ícones dos elementos da interface do usuário para alinhar a interface do usuário do [!DNL Content Hub] com o tema da sua marca.
-
+![cores primária e secundária](/help/assets/assets/primary-secondary-color-content-hub.png)
 **[!UICONTROL Cor primária]:** O esquema de cores primário se aplica a ações de seleção, elementos interativos, como caixas de seleção, barras de pesquisa e opções de alternância entre [!DNL Content Hub], incluindo a página inicial [!DNL Content Hub] e a página [!UICONTROL Configuração]. Também se aplica às opções de ação disponíveis nas interfaces [!DNL Content Hub] principais, como as opções disponíveis nas páginas **[!UICONTROL Todas as Assets]** e **[!UICONTROL Coleções]**.
 
 **[!UICONTROL Cor secundária]:** Na página inicial [!DNL Content Hub], o esquema de cor secundário aplica-se às opções de interface do usuário e aos campos de entrada disponíveis nas caixas de diálogo. Ela se aplica a todas as opções de menu de configuração disponíveis na página [!UICONTROL Configuração], exceto ações de seleção, caixas de seleção, barras de pesquisa e opções de alternância.
 
-### Ativos expirados{#expired-assets-content-hub}
+### Visibilidade do ativo{#asset-visibility-content-hub}
 
 Os administradores podem controlar se precisam que os ativos expirados estejam visíveis no Content Hub. Se os ativos expirados se tornarem visíveis, eles também poderão definir se os usuários podem baixá-los.
 
@@ -214,15 +214,15 @@ Por padrão, os ativos expirados não são exibidos no Content Hub.
 
 Para desabilitá-la, siga estas etapas:
 
-1. Na interface do usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Assets Expirado]**.
+1. Na interface de usuário [Configurações](#access-configuration-options-content-hub), clique em **[!UICONTROL Visibilidade de ativos]**.
 
 1. Na seção **[!UICONTROL Visível]**, habilite o botão **[!UICONTROL Permitir que usuários exibam ativos expirados]** para tornar todos os ativos expirados visíveis no Content Hub.
 
 1. Depois de habilitar a visibilidade dos ativos, você pode habilitar ou desabilitar a capacidade de baixar ativos expirados usando a opção **[!UICONTROL Permitir que os usuários baixem ativos expirados]**.
-
+1. Habilite a opção **[!UICONTROL Permitir que os usuários vejam ativos aprovados para entrega]** para exibir todos os ativos aprovados para entrega no Content Hub.
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações.
 
-   ![Ativos expirados no Content Hub](assets/expired-assets-content-hub.png)
+   ![Ativos expirados no Content Hub](assets/asset-visibility-content-hub.png)
 
 Depois de ativar a visibilidade dos ativos, você pode visualizá-los no Content Hub, conforme mostrado na imagem a seguir:
 
@@ -234,7 +234,7 @@ Se a visibilidade dos ativos expirados estiver habilitada, a Content Hub também
 
 ### Representações {#renditions-content-hub}
 
-As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
+As representações são versões personalizadas de ativos digitais, como imagens, documentos etc., projetadas para diferentes dispositivos e plataformas para garantir um desempenho ideal. Veja mais sobre [execuções no Adobe Experience Manager Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/renditions).
 
 Para desabilitá-la, siga estas etapas:
 
@@ -244,7 +244,7 @@ Na interface de usuário [Configurações](#access-configuration-options-content
 
 * Habilite ou desabilite **[!UICONTROL Permitir que os usuários baixem ativos originais]** para controlar a disponibilidade para baixar ativos originais.
 
-  ![Configurar representações no Content Hub](assets/config-renditions.png)
+  ![Configurar representações no Content Hub](assets/configuration-renditions.png)
 
 Para obter informações sobre como exibir e baixar representações no Content Hub, consulte [baixar ativos no Content Hub](/help/assets/download-assets-content-hub.md).
 
@@ -263,11 +263,9 @@ Você também pode adicionar guias personalizadas além das guias padrão **[!UI
 1. Clique em **[!UICONTROL Salvar]** para aplicar as alterações.
 
 Da mesma forma, você pode clicar no ![ícone Editar](assets/do-not-localize/edit_icon.svg), disponível ao lado de cada URL, para editar os links ou clicar no ícone excluir para excluir qualquer URL existente. Clique em **[!UICONTROL Salvar]** depois de fazer todas as modificações para aplicar as alterações.
-
-![Links Personalizados da Interface do Usuário de Configuração no Content Hub](assets/configuration-ui-custom-links.png)
+![Links Personalizados da Interface do Usuário de Configuração no Content Hub](assets/configuration-custom-links.png)
 
 O link personalizado é exibido como uma nova guia ao lado da guia Insights na página inicial do Content Hub.
-
 ![Guias de Links Personalizados da Interface do Usuário de Configuração no Content Hub](assets/configuration-ui-custom-link-tab.png)
 
 ### Coleções e compartilhamento {#configure-collections-content-hub}
