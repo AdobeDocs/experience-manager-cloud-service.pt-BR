@@ -4,9 +4,9 @@ description: Saiba mais sobre a entrega de fragmentos de conteúdo do AEM com Op
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 1995c84bb669fd52ecd53c7e695acc518a5226e8
+source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -76,9 +76,11 @@ As [origens permitidas do CORS](/help/headless/deployment/cross-origin-resource-
 
 As origens permitidas do CORS definidas no lado da configuração do dispatcher, especificamente para o GraphQL, não são consideradas por essa API.
 
-<!-- 
-## API Rate Limits {#api-rate-limits}
--->
+## Limites de taxa de API {#api-rate-limits}
+
+A API permite novas solicitações a uma taxa de até 200 solicitações por segundo, por ambiente.
+
+Quando esse limite é excedido, a API começa a enviar erros 429. Esses erros devem ser tratados por qualquer aplicativo cliente e as solicitações com falha devem ser repetidas após uma nova tentativa de backoff exponencial.
 
 <!-- 
 ## Limitations {#limitations}
