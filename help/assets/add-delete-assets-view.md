@@ -4,10 +4,10 @@ description: Faça upload de ativos para o [!DNL Assets view], visualize o statu
 role: User
 exl-id: 01af3b66-dba8-4b09-aadf-ba4ae09b824f
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Para adicionar novos ativos para trabalhar, faça upload de alguns ativos do seu
 Você pode usar os seguintes métodos para fazer upload de um ou mais ativos ou de uma pasta que contém ativos:
 
 * Arraste ativos ou pastas na interface e siga as instruções na tela.
-* Clique em **[!UICONTROL Adicionar ativos]** na barra de ferramentas e adicione alguns arquivos à caixa de diálogo de upload.
+* Clique na opção **[!UICONTROL Adicionar Assets]** da barra de ferramentas e adicione alguns arquivos à caixa de diálogo de carregamento.
 
 <!-- TBD: Update this GIF
 ![Asset and nested folder upload demo](assets/do-not-localize/upload-assets.gif) -->
@@ -108,4 +108,4 @@ Os usuários podem excluir ativos ou pastas individuais que não são mais neces
 
 * Forneça feedback sobre a documentação usando as opções [!UICONTROL Editar esta página] ![editar a página](assets/do-not-localize/edit-page.png) ou [!UICONTROL Registrar um problema] ![criar um problema do GitHub](assets/do-not-localize/github-issue.png) disponíveis na barra lateral direita
 
-* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/pt-br?support-solution=General&lang=pt-BR#support)
+* Entre em contato com o [Atendimento ao cliente](https://experienceleague.adobe.com/?support-solution=General&lang=pt-BR#support)

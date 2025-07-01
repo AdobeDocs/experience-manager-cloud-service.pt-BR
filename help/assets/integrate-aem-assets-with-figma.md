@@ -4,12 +4,13 @@ description: Saiba como integrar o [!DNL AEM Assets] com o [!DNL Figma] para ace
 hide: false
 role: User
 exl-id: 530561ca-497b-4331-a014-72c561e1ca84
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: 3603a98dfee62db49f3201c8d75aa8eee4909cc1
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
 
 ---
+
 
 # Integrar [!DNL AEM Assets] a [!DNL Figma]{#integrate-aem-assets-with-figma}
 
@@ -33,13 +34,13 @@ Como alternativa, acesse o [[!DNL Adobe Experience Manager (AEM) Assets Connecto
 
 >[!NOTE]
 >
-> [Contate o Suporte da Adobe](https://helpx.adobe.com/br/contact.html) para obter ajuda se você vir uma mensagem de **[!UICONTROL Erro de Rede]** depois de fazer logon no ambiente [!DNL AEM].
+> [Contate o Suporte da Adobe](https://helpx.adobe.com/contact.html) para obter ajuda se você vir uma mensagem de **[!UICONTROL Erro de Rede]** depois de fazer logon no ambiente [!DNL AEM].
 
 ## Importar [!DNL AEM] ativos para a tela [!DNL Figma]{#import-aem-assets-into-figma-workflow}
 
-[Acesse o [!UICONTROL painel &#x200B;] do Assets do Adobe Experience Manager (AEM)](#access-aem-assets-connector) na interface de design do [!DNL Figma] e faça o seguinte:
+[Acesse o [!UICONTROL painel ] do Assets do Adobe Experience Manager (AEM)](#access-aem-assets-connector) na interface de design do [!DNL Figma] e faça o seguinte:
 
-1. Pesquise ativos no painel [!UICONTROL Conector do Assets do Adobe Experience Manager (AEM)]. Para obter mais informações, consulte [usando o Seletor de ativos](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
+1. Pesquise ativos no painel [!UICONTROL Conector do Assets do Adobe Experience Manager (AEM)]. Para obter mais informações, consulte [usando o Seletor de ativos](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector#using-asset-selector).
 
 1. Arraste e solte o ativo na tela ou selecione o ativo e clique em **[!UICONTROL Selecionar]** para trazer o ativo para a tela.
 
