@@ -4,9 +4,9 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 467e21aff1c2164be729598d03f30f6a9e90c8aa
+source-git-commit: 080a79cdc0e48a54570ea53618b1f0be164d5156
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1768'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21331, lançada para o público em quarta-feira, 24 de junho de 2025. A versão de manutenção anterior era 21193.
 
-A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-21331}
 
@@ -146,7 +146,7 @@ A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos 
 
 ### Problemas conhecidos {#known-issues-21331}
 
-Nenhum.
+* SITES-33177: Os estilos de seção armazenados como cadeias de caracteres separadas por vírgula são quebrados.
 
 ### Recursos e APIs obsoletos {#deprecated-21331}
 
