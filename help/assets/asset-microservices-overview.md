@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices, Asset Ingestion, Asset Processing
 role: Architect, Admin
 exl-id: 1e069b95-a018-40ec-be01-9a74ed883b77
-source-git-commit: 31c9e742d8bdf69c12788794670817864c9c027a
+source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 O Adobe Experience Manager as a [!DNL Cloud Service] fornece um método nativo da nuvem para usar os aplicativos e os recursos do Experience Manager. Um dos principais elementos dessa nova arquitetura é a ingestão e processamento de ativos, possibilitadas por microsserviços de ativos. Os microsserviços de ativos fornecem um processamento escalável e resiliente de ativos usando serviços em nuvem. A Adobe gerencia os serviços em nuvem para obter o tratamento ideal de diferentes tipos de ativos e opções de processamento. Os principais benefícios dos microsserviços de ativos nativos da nuvem são:
 
-* Arquitetura escalável que permite um processamento perfeito para operações que consomem muitos recursos.
+* Arquitetura escalável que permite um processamento contínuo de operações com uso intenso de recursos.
 * Indexação e extrações de texto eficientes que não afetam o desempenho de seus ambientes do Experience Manager.
 * Minimiza a necessidade de usar fluxos de trabalho para lidar com o processamento de ativos no ambiente do Experience Manager. Isso libera recursos, diminui a carga sobre o Experience Manager e fornece escalabilidade.
 * Maior resiliência no processamento de ativos. Possíveis problemas ao manipular arquivos atípicos, como arquivos corrompidos ou extremamente grandes, não afetam mais o desempenho da implantação.
