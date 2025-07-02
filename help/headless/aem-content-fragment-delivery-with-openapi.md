@@ -4,9 +4,9 @@ description: Saiba mais sobre a entrega de fragmentos de conteúdo do AEM com Op
 feature: Headless, Content Fragments, Edge Delivery Services
 role: Admin, Developer
 exl-id: b298db37-1033-4849-bc12-7db29fb77777
-source-git-commit: 28d0d6bdfd9e6f1c1483bed7c5e65df340e8b559
+source-git-commit: dd7d2b5553e4ecac7a9955e83da1cab077c74127
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ As origens permitidas do CORS definidas no lado da configuração do dispatcher,
 
 A API permite novas solicitações a uma taxa de até 200 solicitações por segundo, por ambiente.
 
-Quando esse limite é excedido, a API começa a enviar erros 429. Esses erros devem ser tratados por qualquer aplicativo cliente e as solicitações com falha devem ser repetidas após uma nova tentativa de backoff exponencial.
+Quando esse limite for excedido, a API começará a enviar [429 respostas de erro](https://www.rfc-editor.org/rfc/rfc6585#section-4). Esses erros devem ser tratados por qualquer aplicativo cliente e as solicitações com falha devem ser repetidas após uma nova tentativa de backoff exponencial. A resposta HTTP vem com um cabeçalho específico, `Retry-After`, que indica ao cliente quanto tempo ele precisa aguardar antes de enviar a solicitação novamente.
 
 <!-- 
 ## Limitations {#limitations}
