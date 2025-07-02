@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: df92b91e-f3b0-4a08-bd40-e99edc9a50a5
-source-git-commit: 88b9686a1ceec6729d9657d4bb6f458d9c411065
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -259,7 +259,7 @@ Consulte a ilustração da `console window` abaixo para demonstrar que, se o usu
 
 Você também pode inspecionar a janela do console para visualizar os dados enviados para o servidor:
 
-![Dados do Inspect na janela do console](/help/forms/assets/custom-function-submit-data-console-data.png)
+![Inspecionar dados na janela do console](/help/forms/assets/custom-function-submit-data-console-data.png)
 
 ## Substituir manipuladores de erros e de sucesso no envio do formulário
 
@@ -370,7 +370,7 @@ Consulte a ilustração abaixo para demonstrar que, quando o envio do formulári
 
 Para exibir o sucesso e a falha no envio de formulários de maneira padrão, as funções `Default submit Form Success Handler` e `Default submit Form Error Handler` estão disponíveis prontas para uso.
 
-Caso o manipulador de envio personalizado não seja executado conforme esperado em projetos ou formulários AEM existentes, consulte a seção [solução de problemas](#troubleshooting).
+Caso o manipulador de envio personalizado não seja executado conforme esperado em projetos ou formulários do AEM existentes, consulte a seção [solução de problemas](#troubleshooting).
 
 ## Executar ações em uma instância específica do painel repetível
 
@@ -513,13 +513,22 @@ Consulte o gif abaixo, que demonstra que, quando o botão `Delete Traveler` é c
 
 ![Excluir Painel](/help/forms/assets/custom-function-delete-panel.gif)
 
+## Problema conhecido
+
+* As funções personalizadas não suportam literais de expressão regular do JavaScript. O uso de literais regex em uma função personalizada resulta em erros durante a execução. Por exemplo:
+  `const pattern = /^abc$/;`
+
+  Para garantir a compatibilidade, use o construtor RegExp nas funções personalizadas.
+
+  `const pattern = new RegExp("^abc$");`
+Refatore expressões regulares para usar o construtor RegExp para garantir uma execução consistente e confiável.
 
 ## Resolução de problemas
 
-* Se o manipulador de envio personalizado não funcionar conforme esperado em projetos ou formulários AEM existentes, execute as seguintes etapas:
-   * Verifique se a versão dos [componentes principais foi atualizada para 3.0.18 e posterior](https://github.com/adobe/aem-core-forms-components). No entanto, para projetos e formulários AEM existentes, há etapas adicionais a seguir:
+* Se o manipulador de envio personalizado não funcionar conforme esperado em projetos ou formulários do AEM existentes, execute as seguintes etapas:
+   * Verifique se a versão dos [componentes principais foi atualizada para 3.0.18 e posterior](https://github.com/adobe/aem-core-forms-components). No entanto, para projetos e formulários existentes do AEM, há etapas adicionais a seguir:
 
-   * Para o projeto AEM, o usuário deve substituir todas as instâncias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implantar o projeto por meio do pipeline do Cloud Manager.
+   * Para o projeto do AEM, o usuário deve substituir todas as instâncias de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` e implantar o projeto por meio do pipeline do Cloud Manager.
 
    * Para formulários existentes, se os manipuladores de envio personalizados não estiverem funcionando corretamente, o usuário precisará abrir e salvar a regra `submitForm` no botão **Enviar** usando o Editor de Regras. Esta ação substitui a regra existente de `submitForm('custom:submitSuccess', 'custom:submitError')` por `submitForm()` no formulário.
 

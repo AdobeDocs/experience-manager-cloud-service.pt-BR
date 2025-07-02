@@ -7,9 +7,9 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 24607dd1-2d65-480b-a831-9071e20c473d
 role: User, Developer
-source-git-commit: fecbebde808c545a84889da5610a79c088f2f459
+source-git-commit: 5b5b44f8dffc01a75eda464cd7759cf03028c2c6
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1336'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/create-and-use-custom-functions-core-components) |
 | AEM as a Cloud Service | Este artigo |
 
 O AEM Forms é compatível com funções personalizadas, permitindo que os usuários definam funções do JavaScript para implementar regras de negócios complexas. Essas funções personalizadas estendem os recursos dos formulários facilitando a manipulação e o processamento dos dados inseridos para atender a requisitos especificados. Eles permitem a alteração dinâmica do comportamento do formulário com base em critérios predefinidos. As funções personalizadas também permitem que os desenvolvedores apliquem uma lógica de validação complexa, executem cálculos dinâmicos e controlem a exibição ou o comportamento de elementos de formulário com base em interações do usuário ou critérios predefinidos.
@@ -214,6 +214,16 @@ Para listar funções personalizadas no editor de regras de um Formulário adapt
 ```
 
 Se o usuário não adicionar anotações JavaScript à função personalizada, a função personalizada não será listada no editor de regras de um Formulário adaptável.
+
+## Problema conhecido
+
+* As funções personalizadas não suportam literais de expressão regular do JavaScript. O uso de literais regex em uma função personalizada resulta em erros durante a execução. Por exemplo:
+  `const pattern = /^abc$/;`
+
+  Para garantir a compatibilidade, use o construtor RegExp nas funções personalizadas.
+
+  `const pattern = new RegExp("^abc$");`
+Refatore expressões regulares para usar o construtor RegExp para garantir uma execução consistente e confiável.
 
 ## Próxima etapa
 
