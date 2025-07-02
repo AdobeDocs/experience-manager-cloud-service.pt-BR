@@ -78,7 +78,7 @@ Para casos de uso de autenticação simples, incluindo participantes de negócio
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
->title="O CDN do cliente (ou proxy) aponta para o CDN gerenciado pela AEM"
+>title="A CDN do cliente (ou proxy) aponta para a CDN gerenciada pelo AEM"
 >abstract="O AEM as a Cloud Service oferece uma opção para os clientes usarem sua CDN existente. Para o nível de publicação, os clientes têm a opção de apontar para ela a partir de sua própria CDN, a qual precisarão gerenciar. Isso será permitido caso a caso, com base no cumprimento de certos pré-requisitos, incluindo, entre outros, uma integração herdada do cliente com seu fornecedor de CDN que seja difícil de abandonar."
 
 Se um cliente precisar usar sua CDN existente (ou qualquer tipo de proxy reverso, por exemplo, um balanceador de carga ou um WAF), ele poderá gerenciá-la e apontá-la para a CDN gerenciada pela AEM, desde que:
