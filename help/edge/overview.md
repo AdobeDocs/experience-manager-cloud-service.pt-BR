@@ -4,7 +4,7 @@ description: Entenda como o AEM as a Cloud Service pode se beneficiar do desempe
 feature: Edge Delivery Services
 exl-id: 03a1aa93-d2e6-4175-9cf3-c7ae25c0d24e
 role: Admin, Architect, Developer
-source-git-commit: 207926d68f42f5b398841b92c0a8c72a3f852292
+source-git-commit: 9829709a4558a2d0fd479c7c0fed979ee43937ea
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 2%
@@ -53,7 +53,7 @@ Seja headless ou headful, você pode fornecer o conteúdo certo no formato certo
 
 O Edge Delivery Services é um conjunto combinável de serviços que permite um alto grau de flexibilidade na maneira como você cria conteúdo no seu site. Ele substitui o AEM Publish/Dispatcher e a maneira tradicional de criar experiências com os Componentes principais do AEM por uma solução SaaS de várias nuvens e uma abordagem de desenvolvimento de front-end puro.
 
-![Arquitetura do Edge Delivery](assets/AEM-with-EDS-architecture.png)
+![Arquitetura do Edge Delivery](assets/aem-with-eds-architecture.png)
 
 O Edge Delivery Services usa o GitHub para que você possa gerenciar e implantar o código diretamente do seu repositório GitHub. O novo conteúdo é adicionado instantaneamente, sem um processo de reconstrução.
 
@@ -90,7 +90,7 @@ Introdução ao uso da criação do AEM com o Universal Editor e o Edge Delivery
 
 O Edge Delivery Services faz parte do Adobe Experience Manager. Dessa forma, o Edge Delivery Services e o AEM Sites podem coexistir no mesmo domínio, que é um caso de uso comum para sites maiores. Além disso, suas páginas do AEM Sites podem consumir conteúdo do Edge Delivery Services sem problemas, e o contrário também é verdadeiro.
 
-Você também pode usar o Edge Delivery Services com o [Adobe Target](https://www.aem.live/developer/target-integration) e o [Launch.](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/home)
+Você também pode usar o Edge Delivery Services com o [Adobe Target](https://www.aem.live/developer/target-integration) e o [Launch.](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
 
 ## Obtendo ajuda do Adobe {#getting-help}
 
