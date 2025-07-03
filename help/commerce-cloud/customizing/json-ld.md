@@ -4,7 +4,8 @@ description: Saiba como ativar e verificar o recurso JSON+LD no AEM CIF.
 feature: Commerce Integration Framework
 role: Admin, Developer
 exl-id: 547d3721-e094-4a42-8a7c-27e4ef97ea9c
-source-git-commit: 6ee09ab274e26f6972a81e662b78030a71b3fc9b
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 2%
@@ -22,8 +23,8 @@ Este guia explica como ativar e verificar o recurso JSON+LD no AEM CIF.
 ## Ativar JSON+LD na configuração do CIF {#enabling}
 
 Por padrão, a caixa de seleção **Habilitar JSON+LD** não está visível na configuração do CIF. Para ativar esse recurso, o projeto deve incluir a configuração OSGi necessária, que permite que a caixa de seleção seja exibida. Essa configuração permite que os usuários alternem o suporte a scripts JSON+LD nas páginas de produtos.
-Para disponibilizar a caixa de seleção **Habilitar JSON+LD** na configuração do CIF, adicione a seguinte configuração OSGi ao seu projeto: &grave;
-com.adobe.cq.cif.components.models.JsonLdFeatureEnable&grave;.
+Para disponibilizar a caixa de seleção **Habilitar JSON+LD** na configuração do CIF, adicione a seguinte configuração OSGi ao seu projeto: `
+com.adobe.cq.cif.components.models.JsonLdFeatureEnable`.
 Para obter mais detalhes sobre como adicionar essa configuração, consulte [Adiciona configuração para Json-Ld](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.cif.components.models.JsonLdFeatureEnable.cfg.json) no repositório público aem-CIF-guides-venia.
 
 Depois que essa configuração for adicionada e implantada, a caixa de seleção ficará visível nas definições de configuração do CIF e aqui estão as etapas para habilitar o **JSON+LD**:

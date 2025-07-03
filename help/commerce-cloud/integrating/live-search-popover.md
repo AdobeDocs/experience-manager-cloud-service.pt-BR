@@ -4,7 +4,8 @@ description: Usando componentes do CIF para habilitar o componente Popover [!DNL
 exl-id: 9dac6693-fe87-4a47-a920-2cf788933499
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
@@ -14,11 +15,11 @@ ht-degree: 0%
 # Componente Popover CIF [!DNL Live Search] {#live-search-popover}
 
 O Popover [!DNL Live Search] é o elemento que contém os resultados [!DNL Live Search] à medida que você digita no campo de pesquisa.
-Este tópico descreve como integrar este componente ao seu site de AEM.
+Este tópico descreve como integrar este componente no site do AEM.
 
 ## Estrutura do arquivo {#file-strucure}
 
-Para ativar o componente CIF, os arquivos devem ser editados e criados.
+Para habilitar o componente CIF, os arquivos devem ser editados e criados.
 
 * ui.apps/src/main/content/jcr_root/apps/venia/components/commerce/searchbar/clientlibs/.content.xml
 

@@ -1,23 +1,24 @@
 ---
 title: Introdução à criação da CIF
-description: Introdução à criação de CIF.
+description: Introdução à criação do CIF.
 exl-id: 0bef4d8c-0ad3-4ec8-ab08-8c83203b3b68
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 2%
 
 ---
 
-# AEM Introdução à criação do CIF {#getting-started}
+# Introdução à criação no AEM CIF {#getting-started}
 
-Saiba mais sobre a criação do CIF no Adobe Experience Manager (AEM).
+Saiba mais sobre a criação no Adobe Experience Manager (AEM) CIF.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior deste Conteúdo de AEM e jornada do Commerce, [Saiba mais sobre o Conteúdo de AEM e o Commerce AEM](/help/commerce-cloud/introduction.md), você aprendeu a teoria básica e os conceitos de CMS headless e Conteúdo de e Commerce.
+No documento anterior deste Conteúdo do AEM e jornada do Commerce, [Saiba mais sobre o Conteúdo do AEM e o Commerce](/help/commerce-cloud/introduction.md), você aprendeu a teoria e os conceitos básicos de conteúdo do CMS e do AEM headless e do Commerce.
 
 Este artigo se baseia nesses fundamentos.
 
@@ -25,11 +26,11 @@ Este artigo se baseia nesses fundamentos.
 
 Este documento ajuda você a entender como usar o CIF para criação específica de conteúdo e Commerce. Depois de ler, você deverá:
 
-* Entenda os conceitos de criação de CIF usando o Editor de páginas no AEM
+* Entenda os conceitos de criação do CIF usando o Editor de páginas no AEM
 * Como acessar dados do catálogo de produtos no AEM usando seletores de produto e categoria
 * Como acessar dados de conteúdo e comércio usando o cockpit do produto e o AEM Omnisearch
 
-## Criação de CIF no Editor de páginas do AEM {#cif-authoring}
+## Criação de CIF no editor de páginas do AEM {#cif-authoring}
 
 O CIF estende o Editor de páginas no AEM com recursos para acessar os dados do produto em tempo real sem sair do contexto:
 
@@ -43,7 +44,7 @@ Os produtos podem ser soltos em componentes que oferecem suporte a quedas de pro
 
 ## Seletores de categoria e produto {#pickers}
 
-Se os dados de produto e categoria forem necessários em componentes de comércio ou diálogos de back-office do AEM, os autores do AEM poderão usar seletores que são elementos da interface do usuário para pesquisar e selecionar confortavelmente os dados do catálogo de produtos.
+Se os dados de produto e categoria forem necessários nos componentes de comércio ou nas caixas de diálogo de back-office do AEM, os autores do AEM poderão usar seletores que são elementos da interface do usuário para pesquisar e selecionar confortavelmente os dados do catálogo de produtos.
 
 ### Seletor de produtos
 
@@ -84,20 +85,20 @@ Você pode abrir as propriedades do produto clicando no ícone de propriedade. O
 Todas as propriedades do produto são somente leitura porque os dados são carregados em tempo real do back-end conectado. A alteração das propriedades do produto deve ser feita no sistema de back-end, que é o sistema de registro. A guia **Variantes** será exibida somente se o produto tiver variações. Clicar na guia exibe todas as variações com seus atributos.
 ![variantes de produtos da ferramenta cockpit](assets/cockpit-properties-variants.png)
 
-As guias restantes mostram todo o conteúdo de AEM associado ao produto. Essas guias são discutidas em um dos módulos a seguir.
+As guias restantes mostram todo o conteúdo do AEM associado ao produto. Essas guias são discutidas em um dos módulos a seguir.
 
 ## AEM Omnisearch {#omnisearch}
 
-Usar o Omnisearch é uma maneira fácil de encontrar conteúdo AEM usando a pesquisa de texto completo. O CIF amplia o Omnisearch com a pesquisa em texto completo de catálogos de produtos com seu conteúdo AEM associado.
+Usar o Omnisearch é uma maneira fácil de encontrar conteúdo do AEM usando a pesquisa de texto completo. O CIF amplia o Omnisearch com a pesquisa em texto completo de catálogos de produtos com seu conteúdo associado do AEM.
 ![item de menu de comércio](assets/omnisearch.png)
 
-O Omnisearch executa uma pesquisa de texto completo no back-end de comércio para encontrar todos os produtos relacionados. O resultado está listado em **Exibir Todos os Produtos**. O Omnisearch também pesquisa no AEM o conteúdo associado ao produto pesquisado. Os resultados estão listados nas respectivas categorias de AEM. Neste exemplo, um fragmento de conteúdo está relacionado ao produto.
+O Omnisearch executa uma pesquisa de texto completo no back-end de comércio para encontrar todos os produtos relacionados. O resultado está listado em **Exibir Todos os Produtos**. O Omnisearch também pesquisa no AEM o conteúdo associado ao produto pesquisado. Os resultados estão listados nas respectivas categorias do AEM. Neste exemplo, um fragmento de conteúdo está relacionado ao produto.
 
 ## O que vem a seguir {#what-is-next}
 
 Agora que concluiu esta parte da jornada, você deve:
 
-* Entenda os conceitos de criação de CIF usando o Editor de páginas
+* Entenda os conceitos de criação do CIF usando o Editor de páginas
 * Como acessar o catálogo de produtos no AEM usando seletores de produto e categoria
 * Como acessar dados de conteúdo e comércio usando o cockpit do produto e o AEM Omnisearch
 

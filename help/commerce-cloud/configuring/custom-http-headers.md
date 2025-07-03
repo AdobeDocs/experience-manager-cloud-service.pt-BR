@@ -1,10 +1,11 @@
 ---
 title: Cabeçalhos HTTP personalizados
-description: Saiba como configurar cabeçalhos HTTP personalizados que serão enviados para o mecanismo de comércio, juntamente com aqueles já enviados pelo CIF.
+description: Saiba como configurar cabeçalhos HTTP personalizados que seriam enviados para o mecanismo de comércio, juntamente com aqueles já enviados pelo CIF.
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 6719e0bcaa175081faa8ddf6803314bc478099d7
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '284'
 ht-degree: 3%
@@ -26,7 +27,7 @@ Para obter mais controle sobre o back-end, os autores podem configurar cabeçalh
 
 Para configurar os cabeçalhos HTTP personalizados, é necessário primeiro defini-los. Os cabeçalhos HTTP personalizados devem ser definidos primeiro adicionando-os à configuração do serviço `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` usando uma configuração OSGi.
 
-Você pode configurar os valores dos cabeçalhos HTTP na página Configuração de Cloud Service do seu projeto:
+Você pode configurar os valores dos cabeçalhos HTTP na página Configuração do Cloud Service do seu projeto:
 
 1. Acesse a página de configuração do Cloud Service em Ferramentas > Cloud Services > Configuração do CIF
 1. Abrir uma configuração existente ou criar uma

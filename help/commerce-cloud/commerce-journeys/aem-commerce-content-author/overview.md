@@ -4,7 +4,8 @@ description: Comece aqui uma jornada guiada pela criação do AEM Commerce
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 81%
@@ -27,7 +28,7 @@ Este guia aborda os tópicos mais importantes de criação do AEM Content and Co
 
 ## Jornadas de documentação do AEM {#documentation-journeys}
 
-[Uma Jornada de Documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema empresarial do começo ao fim, assumindo o mínimo de conhecimento prévio do tópico ou do AEM.
+[Uma Jornada de documentação](/help/journey-documentation/documentation-journeys.md) une vários tópicos e recursos diferentes e complicados, fornecendo uma narrativa que ajuda o leitor, que pode ser novo no AEM, a entender e resolver um problema comercial do começo ao fim, mesmo que ele tenha o mínimo de conhecimento prévio sobre o tópico ou sobre o AEM.
 
 As jornadas de documentação foram projetadas com base nas práticas recomendadas, informadas pela última pesquisa da Adobe, na experiência comprovada de implementação dos consultores da Adobe e no feedback de projetos de clientes.
 
@@ -43,7 +44,7 @@ As informações nesta jornada podem ser úteis para outros perfis, mas algumas 
 
 Muitos tópicos serão explorados nesta jornada. Os artigos a seguir fornecem conhecimento básico e links para documentação técnica detalhada.
 
-Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo no conteúdo AEM e no Commerce, a Adobe recomenda que comece do início e avance sequencialmente.
+Embora seja possível ir diretamente para uma parte específica da jornada, muitos conceitos baseiam-se em artigos anteriores. Portanto, se você é novo no AEM Content and Commerce, a Adobe recomenda começar do início e avançar sequencialmente.
 
 | # | Artigo | Descrição |
 |---|---|---|

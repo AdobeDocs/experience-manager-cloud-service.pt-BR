@@ -1,16 +1,18 @@
 ---
-title: Atributos personalizados para o carrossel de produtos CIF
-description: AEM Saiba como estender o componente Carrossel do produto CIF atualizando o Modelo Sling e personalizando a marcação.
+title: Atributos personalizados para o Carrossel de produtos do CIF
+description: Saiba como estender o componente Carrossel de produtos do AEM CIF atualizando o Modelo do Sling e personalizando a marcação.
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 594f0e6ec88851c86134be8d5d7f1719f74ddf4f
+exl-id: 758e0e13-c4d8-4d32-bcc9-91a36b3ffa98
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%
 
 ---
 
-# Atributos personalizados para o carrossel de produtos CIF {#product-carousel}
+# Atributos personalizados para o Carrossel de produtos do CIF {#product-carousel}
 
 ## Introdução {#intro}
 
@@ -30,7 +32,7 @@ O componente Carrossel de produtos é estendido por todo este tutorial. Como pri
 
 É possível estender a lógica de negócios do Carrossel de produtos implementando um Modelo do Sling:
 
-1. No IDE, navegue no módulo principal até `core/src/main/java/com/venia/core/models/commerce` e crie uma interface CustomCarousel que estenda a interface CIF ProductCarousel:
+1. No IDE, navegue no módulo principal até `core/src/main/java/com/venia/core/models/commerce` e crie uma interface CustomCarousel que estenda a interface ProductCarousel do CIF:
 
    ```
    package com.venia.core.models.commerce;
@@ -38,7 +40,6 @@ O componente Carrossel de produtos é estendido por todo este tutorial. Como pri
    public interface CustomCarousel extends ProductCarousel {
    }
    ```
-
 1. Em seguida, crie uma classe de implementação `CustomCarouselImpl.java` em `core/src/main/java/com/venia/core/models/commerce/CustomCarouselImpl.java`.
 O padrão de delegação para Modelos do Sling permite que `CustomCarouselImpl` faça referência ao modelo `ProductCarousel` por meio da propriedade `sling:resourceSuperType`:
 

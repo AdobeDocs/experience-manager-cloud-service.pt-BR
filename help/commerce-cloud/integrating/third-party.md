@@ -1,28 +1,29 @@
 ---
-title: Integração de AEM e Commerce de terceiros usando o Commerce integration framework
-description: Empresas corporativas podem precisar de soluções comerciais adicionais de terceiros para potencializar sua loja. O Commerce integration framework (CIF) pode ser usado em tais cenários de integração para conectar uma solução comercial de terceiros ao Adobe Experience Manager usando a I/O Runtime.
+title: Integração do AEM e de terceiros ao Commerce usando o Commerce integration framework
+description: Empresas corporativas podem precisar de soluções comerciais adicionais de terceiros para potencializar sua loja. O Commerce integration framework (CIF) pode ser usado nesses cenários de integração para conectar uma solução comercial de terceiros ao Adobe Experience Manager usando a I/O Runtime.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Integração de AEM e Commerce de terceiros usando o Commerce integration framework {#aem-third-party}
+# AEM e integração de terceiros com o Commerce por meio da estrutura de integração do Commerce {#aem-third-party}
 
-A integração de soluções que não sejam da Adobe Commerce é um cenário comum para o CIF. Soluções de terceiros com diferentes APIs e esquemas são conectadas por meio de uma camada de integração.
+A integração de soluções que não sejam da Adobe Commerce é um cenário comum do CIF. Soluções de terceiros com diferentes APIs e esquemas são conectadas por meio de uma camada de integração.
 
 ## Arquitetura {#architecture}
 
 Esta é a arquitetura geral:
 
-![Visão geral da arquitetura de terceiros/não-Magento do AEM](../assets//AEM_nonMagento_Architecture.png)
+![Visão geral da arquitetura de terceiros/não Magento do AEM](../assets//AEM_nonMagento_Architecture.png)
 
-A finalidade dessa camada de integração é mapear APIs e esquemas de terceiros em relação às APIs e esquemas compatíveis do Adobe Commerce GraphQL fora do Experience Manager. Graças a esse encapsulamento, a lógica de integração e os sistemas podem ser atualizados sem alterar o código dentro do Experience Manager.
+A finalidade dessa camada de integração é mapear APIs e esquemas de terceiros em relação às APIs e esquemas compatíveis do Adobe Commerce GraphQL fora da Experience Manager. Graças a esse encapsulamento, a lógica de integração e os sistemas podem ser atualizados sem alterar o código dentro da Experience Manager.
 
 ## Requisitos da solução para uma integração
 
@@ -36,13 +37,13 @@ Não há necessidade de implementar o esquema completo do GraphQL, apenas os obj
 
 ## Casos de uso de back-end
 
-A CIF amplia o Experience Manager com acesso ao catálogo de produtos em tempo real e ferramentas de gerenciamento de experiência do produto. Essa integração contínua permite que os autores acessem dados de comércio usando interfaces do usuário incorporadas sempre que necessário, sem sair do contexto do conteúdo.
+O CIF estende a Experience Manager com acesso ao catálogo de produtos em tempo real e ferramentas de gerenciamento de experiência do produto. Essa integração contínua permite que os autores acessem dados de comércio usando interfaces do usuário incorporadas sempre que necessário, sem sair do contexto do conteúdo.
 
 As integrações das APIs de catálogo de produtos são necessárias para desbloquear esses casos de uso.
 
 ## Casos de uso de front-end
 
-AEM [Os Componentes principais do CIF](https://github.com/adobe/aem-core-cif-components) recuperam e trocam dados por meio das APIs do Adobe Commerce compatíveis com CIF. Para reutilizar componentes, as respectivas APIs devem ser implementadas.
+Os [Componentes principais do AEM CIF](https://github.com/adobe/aem-core-cif-components) recuperam e trocam dados por meio das APIs do Adobe Commerce compatíveis com o CIF. Para reutilizar componentes, as respectivas APIs devem ser implementadas.
 
 A recomendação para componentes do lado do cliente de desempenho crítico é se comunicar diretamente com a solução de terceiros para evitar latência.
 

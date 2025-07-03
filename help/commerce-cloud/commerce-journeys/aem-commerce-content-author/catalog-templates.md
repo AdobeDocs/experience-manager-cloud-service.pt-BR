@@ -4,7 +4,8 @@ description: Saiba como gerenciar páginas e modelos do catálogo de produtos
 exl-id: 0d795d85-c865-40d5-941e-e02ee96fdd11
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
@@ -17,7 +18,7 @@ Saiba como gerenciar páginas e modelos do catálogo de produtos.
 
 ## A história até agora {#story-so-far}
 
-No documento anterior da jornada de criação do Conteúdo do AEM e do Commerce, [Introdução às noções básicas de criação do AEM CIF CIF](getting-started.md), você aprendeu as noções básicas de criação do.
+No documento anterior da jornada de criação do AEM Content and Commerce, [Introdução às noções básicas de criação do AEM CIF](getting-started.md), você aprendeu as noções básicas de criação do CIF.
 
 Este artigo se baseia nesses fundamentos.
 
@@ -33,7 +34,7 @@ Este documento ajuda você a entender como gerenciar páginas e modelos do catá
 
 A loja Venia vem com uma experiência típica de catálogo de produtos com navegação, aterrissagem, categoria (PLP) e páginas de detalhes do produto (PDP).
 
-AEM Páginas de catálogo são criadas dinamicamente usando um modelo de catálogo CIF e dados de produto em tempo real que são buscados no endpoint de comércio, quando necessário. Cada catálogo tem um modelo genérico para páginas de produto e categoria.
+Páginas de catálogo são criadas dinamicamente usando um modelo de catálogo do AEM CIF e dados de produto em tempo real que são buscados no endpoint de comércio, quando necessário. Cada catálogo tem um modelo genérico para páginas de produto e categoria.
 ![estrutura do catálogo](assets/catalog-structure.png)
 
 O componente de navegação mostra as páginas de conteúdo e catálogo. É possível mostrar a landing page do catálogo ou as categorias de primeiro nível na navegação. Passar o mouse sobre uma categoria mostrará categorias de segundo nível como uma segunda linha.
@@ -63,7 +64,7 @@ Os modelos podem ser editados abrindo diretamente a página de modelo ou alterna
 
 ### Modelos de Categoria ou Produto Específicos {#specific}
 
-O CIF é compatível com vários modelos com apenas alguns cliques. Para criar outro modelo, selecione o modelo genérico na respectiva categoria e crie uma página usando a ação **Criar**.
+O CIF suporta vários modelos com apenas alguns cliques. Para criar outro modelo, selecione o modelo genérico na respectiva categoria e crie uma página usando a ação **Criar**.
 
 ![criar página de modelo](assets/create-template-page.png)
 
@@ -109,11 +110,11 @@ Agora que concluiu esta parte da jornada, você deve:
 * como os modelos genéricos funcionam
 * criou um modelo individual
 
-Desenvolva esse conhecimento e prossiga com sua jornada revisando a seguir o documento [Gerenciar experiências de catálogo de produtos preparados](staged-catalog.md), onde você aprenderá a trabalhar com dados de produto preparados e inicializações de AEM.
+Desenvolva esse conhecimento e prossiga com sua jornada revisando a seguir o documento [Gerenciar experiências de catálogo de produtos em etapas](staged-catalog.md), onde você aprenderá a trabalhar com dados de produtos em etapas e inicializações do AEM.
 
 ## Recursos adicionais {#additional-resources}
 
 Embora seja recomendável seguir para a próxima parte da jornada revisando o documento [Gerenciar experiências de catálogo de produtos em etapas](staged-catalog.md), a seguir estão alguns recursos adicionais e opcionais que aprofundam alguns conceitos mencionados neste documento, mas não são necessários para continuar na jornada headless:
 
 * [Criação de várias categorias e páginas de produto](/help/commerce-cloud/authoring/multi-template-usage.md)
-* [Guia de migração para o Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Como migrar de uma versão antiga para o complemento AEM Commerce integration framework CIF ()
+* [Guia de migração para o Experience Manager Cloud Service](/help/commerce-cloud/migration.md) - Como migrar de uma versão antiga para o complemento AEM Commerce integration framework (CIF)

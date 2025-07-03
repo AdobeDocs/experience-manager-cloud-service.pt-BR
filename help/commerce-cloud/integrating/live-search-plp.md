@@ -1,25 +1,26 @@
 ---
 title: Componente CIF da página de listagem de produtos [!DNL Live Search]
-description: Usando componentes de CIF para habilitar o componente Página de Listagem de Produtos [!DNL Live Search] em um site de AEM
+description: Usando componentes do CIF para habilitar o componente  [!DNL Live Search] Página de Listagem de Produtos em um site do AEM
 exl-id: 7f2d9a43-a7cb-4d9d-a108-b016cd1ff81e
 feature: Commerce Integration Framework
 role: Admin
-source-git-commit: 0e328d013f3c5b9b965010e4e410b6fda2de042e
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
-# Componente de CIF do [!DNL Live Search] {#live-search-cif-component}
+# Componente do CIF [!DNL Live Search] {#live-search-cif-component}
 
 O Live Search for Adobe Commerce oferece uma experiência de pesquisa rápida, relevante e intuitiva sem custo adicional. O Live Search desenvolvido pela Adobe Sensei usa inteligência artificial e algoritmos de aprendizado de máquina para executar uma análise profunda dos dados agregados do visitante. Esses dados, quando combinados com seu catálogo do Adobe Commerce, resultam em experiências de compra relevantes e personalizadas.
 
-AEM Este tópico descreve como usar um componente CIF para implementar o widget Página de listagem de produtos (PLP) do [!DNL Live Search] no site do AEM.
+Este tópico descreve como usar um componente CIF do AEM para implementar o widget PLP (Página de listagem de produtos) do [!DNL Live Search] no seu site do AEM.
 
 ## Pré-requisitos {#prerequisites}
 
-Este tópico supõe que você tenha um [ambiente AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR) local configurado.
+Este tópico supõe que você tenha um [ambiente do AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=pt-BR) local configurado.
 
 O componente PLP requer que o [[!DNL Live Search] componente Popover CIF](live-search-popover.md) seja instalado. O widget PLP requer uma variável de sessão do navegador gerada pelo popover.
 

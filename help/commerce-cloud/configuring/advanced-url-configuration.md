@@ -11,7 +11,8 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
 role: Admin
-source-git-commit: 1bd36e584d956c5ae8da7b1d618e155da86a74f5
+index: false
+source-git-commit: 173b70aa6f9ad848d0f80923407bf07540987071
 workflow-type: tm+mt
 source-wordcount: '2059'
 ht-degree: 9%
@@ -22,11 +23,11 @@ ht-degree: 9%
 
 >[!NOTE]
 >
-> A Otimização do mecanismo de pesquisa (SEO) se tornou uma preocupação principal para muitos comerciantes. Como resultado, as preocupações com a SEO devem ser abordadas em muitos projetos no Adobe Experience Manager (AEM) as a Cloud Service. Consulte [Práticas recomendadas de gerenciamento de SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html?lang=pt-BR) para obter mais informações.
+> A Otimização do mecanismo de pesquisa (SEO) se tornou uma preocupação principal para muitos comerciantes. Como resultado, as preocupações com a SEO devem ser abordadas em muitos projetos no Adobe Experience Manager (AEM) as a Cloud Service. Consulte [Práticas recomendadas de gerenciamento de SEO e URL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/seo-and-url-management.html) para obter mais informações.
 
 Os [Componentes principais da CIF do AEM](https://github.com/adobe/aem-core-cif-components) fornecem configurações avançadas para personalizar os URLs das páginas de produto e categoria. Muitas implementações personalizam esses URLs para fins de otimização de mecanismo de pesquisa (SEO). O vídeo a seguir mostra detalhes sobre como configurar o serviço `UrlProvider` e os recursos do [Mapeamento do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) para personalizar os URLs das páginas de produto e categoria.
 
->[!VIDEO](https://video.tv.adobe.com/v/38585/?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
 
 ## Configuração {#configuration}
 
@@ -223,15 +224,15 @@ As substituições de URL também podem ser obtidas usando o servidor HTTP do AE
 
 Como mencionado antes de selecionar um dos formatos padrão disponíveis, ou mesmo implementar um formato personalizado, depende muito das necessidades e dos requisitos de uma loja. As sugestões a seguir podem ajudar a tomar uma decisão instruída.
 
-_&#x200B;**Use um formato de URL da página do produto que contenha o SKU.**&#x200B;_
+_**Use um formato de URL da página do produto que contenha o SKU.**_
 
 Os Componentes principais do CIF usam o SKU como identificador principal em todos os componentes. Se o formato do URL da página do produto não contiver o SKU, uma consulta do GraphQL será necessária para resolvê-lo. Essa resolução pode afetar o tempo até o primeiro byte. Além disso, pode ser desejável que os compradores possam encontrar produtos por SKU usando mecanismos de pesquisa.
 
-_&#x200B;**Use um formato de URL da página do produto que contenha o contexto da categoria.**&#x200B;_
+_**Use um formato de URL da página do produto que contenha o contexto da categoria.**_
 
 Alguns recursos do Provedor de URL da CIF só estão disponíveis ao usar formatos de URL de produto, que codificam o contexto da categoria, como a categoria `url_key` ou a categoria `url_path`. Mesmo que esses recursos não sejam necessários para uma nova loja, usar um desses formatos de URL no início ajuda a reduzir os esforços de migração no futuro.
 
-_&#x200B;**Equilíbrio entre comprimento de URL e informações codificadas.**&#x200B;_
+_**Equilíbrio entre comprimento de URL e informações codificadas.**_
 
 Dependendo do tamanho do catálogo, em particular o tamanho e a profundidade da árvore de categorias, pode não ser razoável codificar o `url_path` completo das categorias na URL. Nesse caso, o comprimento do URL poderia ser reduzido incluindo apenas o `url_key` da categoria. Este método dá suporte à maioria dos recursos disponíveis ao usar a categoria `url_path`.
 
@@ -256,5 +257,5 @@ O projeto da [loja de referência Venia](https://github.com/adobe/aem-cif-guides
 ## Recursos adicionais {#additional}
 
 * [Loja de referência Venia](https://github.com/adobe/aem-cif-guides-venia)
-* [Mapeamento de recursos do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=pt-BR)
+* [Mapeamento de recursos do AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html)
 * [Mapeamentos do Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
