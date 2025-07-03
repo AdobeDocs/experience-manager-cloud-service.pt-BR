@@ -49,7 +49,7 @@ Além disso, há suporte para propriedades de campo de caixa de diálogo padrão
 >[!CAUTION]
 >
 >O componente `cifproductfield` requer o clientlib `cif.shell.picker`. Para adicionar uma clientlib a uma caixa de diálogo, é possível usar a propriedade extraClientlibs.
->>[!CAUTION]
+>&#x200B;>[!CAUTION]
 >
 >A partir da versão 2.0.0 dos Componentes Principais do CIF, o suporte para `id` foi removido e substituído por `uid`. A Adobe recomenda usar `sku` ou `slug` como um identificador de produto. A Adobe continua a oferecer suporte ao `id` somente para projetos que usam os Componentes principais do CIF versão 1.x.
 
@@ -79,7 +79,7 @@ Além disso, há suporte para propriedades de campo de caixa de diálogo padrão
 >[!CAUTION]
 >
 >Igual ao componente `cifproductfield`, o componente `cifcategoryfield` também requer o clientlib `cif.shell.picker`. Para adicionar uma clientlib a uma caixa de diálogo, você pode usar a propriedade `extraClientlibs`. Consulte [Personalizar caixas de diálogo](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs) da documentação dos Componentes principais do AEM.
->>[!CAUTION]
+>&#x200B;>[!CAUTION]
 >
 >A partir da versão 2.0.0 dos Componentes Principais do CIF, o suporte para `id` foi removido e substituído por `uid`. A Adobe recomenda usar `uid` ou `urlPath` como identificador de categoria. A Adobe continua a oferecer suporte a `id` e `idAndUrlPath` somente para projetos que usam a versão 1.x dos Componentes principais do CIF.
 
