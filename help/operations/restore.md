@@ -4,9 +4,9 @@ description: Saiba como restaurar conteúdo do backup no AEM as a Cloud Service 
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1339'
 ht-degree: 49%
 
 ---
@@ -56,7 +56,7 @@ Por padrão, nenhum usuário terá permissão para executar restaurações de co
 
 1. Crie um perfil de produto com um nome expressivo que se refere à restauração do conteúdo.
 1. Forneça a permissão **Acesso ao Programa** no programa necessário.
-1. Forneça a permissão de **Restauração de Conteúdo** no ambiente necessário para todos os ambientes do programa, dependendo do seu caso de uso.
+1. Forneça a permissão **Criar Restauração do Ambiente** no ambiente necessário para todos os ambientes do programa, dependendo do seu caso de uso.
 1. Atribuir usuários a esse perfil de perfil.
 
 Para obter detalhes sobre o gerenciamento de permissões, consulte a documentação de [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md).
@@ -114,7 +114,7 @@ Quando a restauração for concluída com sucesso, o ambiente:
 
 ## Escolher o backup certo {#choosing-backup}
 
-O processo de restauração de autoatendimento do Cloud Manager restaura apenas o conteúdo para AEM. Por isso, você deve considerar cuidadosamente as alterações de código que foram feitas entre o ponto de restauração desejado e o horário atual, revisando o histórico de confirmações entre a ID de confirmação atual e a que está sendo restaurada.
+O processo de restauração de autoatendimento do Cloud Manager restaura apenas o conteúdo no AEM. Por isso, você deve considerar cuidadosamente as alterações de código que foram feitas entre o ponto de restauração desejado e o horário atual, revisando o histórico de confirmações entre a ID de confirmação atual e a que está sendo restaurada.
 
 Existem vários cenários.
 
