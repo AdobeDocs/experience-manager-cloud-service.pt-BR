@@ -1,20 +1,20 @@
 ---
-title: Editar conteúdo da página com o editor de páginas AEM
-description: O editor de página AEM é uma ferramenta poderosa para criar conteúdo.
+title: Editar conteúdo da página com o editor de páginas do AEM
+description: O editor de página do AEM é uma ferramenta avançada de criação de conteúdo.
 exl-id: eacfda02-ff53-42ed-b5b2-88be3879a5e9
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: 9a798be41cb3bcf08b6841d236379bf861ff5510
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1628'
 ht-degree: 34%
 
 ---
 
-# Editar conteúdo da página com o editor de páginas AEM {#edit-content}
+# Editar conteúdo da página com o editor de páginas do AEM {#edit-content}
 
-O editor de páginas AEM é uma ferramenta poderosa para criar o conteúdo de uma página. Saiba como usá-lo para arrastar e soltar conteúdo e editar conteúdo no local.
+O editor de páginas do AEM é uma ferramenta poderosa para criar o conteúdo de uma página. Saiba como usá-lo para arrastar e soltar conteúdo e editar conteúdo no local.
 
 ## Visão geral {#overview}
 
@@ -24,13 +24,17 @@ Há três ações básicas que você pode realizar no editor de páginas para ed
 1. [Adicionando novos ativos](#adding-asset) arrastando-os e soltando-os na página.
 1. [Editando componentes no local](#edit-in-place) que já existem na página.
 
-O editor de página do AEM fornece uma interface intuitiva para executar essas tarefas, além de fornecer acesso a recursos mais avançados.
+O editor de páginas do AEM fornece uma interface intuitiva para executar essas tarefas, além de fornecer acesso a recursos mais avançados.
 
 Além disso, o editor permite organizar o conteúdo existente na sua página, permitindo que você
 
 * [Mover componentes](#moving-components)
 * [Editar layout de componente](#editing-component-layout)
 * [Editar herança de componente](#inherited-components)
+
+>[!NOTE]
+>
+>A equipe do projeto pode personalizar o editor, se necessário. Consulte [Personalizando a criação de página](/help/implementing/developing/extending/page-authoring.md) para obter mais detalhes.
 
 ## Como adicionar componentes {#adding-components}
 
