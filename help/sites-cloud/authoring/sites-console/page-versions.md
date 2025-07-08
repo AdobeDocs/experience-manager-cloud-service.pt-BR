@@ -5,10 +5,10 @@ exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: b39c455c9bd4b50eb3777cd1a4bdbada48786d62
+source-git-commit: ebbf38563be65c28384276f7a0baa100f9f384b2
 workflow-type: tm+mt
-source-wordcount: '1574'
-ht-degree: 93%
+source-wordcount: '1620'
+ht-degree: 90%
 
 ---
 
@@ -123,7 +123,7 @@ Este método pode ser usado para restaurar versões de páginas especificadas na
    >
    >Se você tiver:
    >
-   >* selecionado uma página única que nunca teve páginas secundárias,
+   >* selecionado uma página única que nunca teve páginas filhas,
    >* ou se nenhuma das páginas na pasta tiver versões,
    >
    >A exibição fica vazia porque não há versões aplicáveis.
@@ -202,10 +202,6 @@ Para comparar uma versão anterior com a página atual:
 
 O Timewarp é um recursos criado para simular o estado *publicado* de uma página em ocasiões específicas no passado.
 
->[!TIP]
->
->[O Timewarp também pode ser usado com Inicializações para visualizar o futuro](/help/sites-cloud/authoring/launches/preview.md).
-
 Como a criação de conteúdo é um processo contínuo e colaborativo, o objetivo do Timewarp é permitir que autores(as) rastreiem o site publicado ao longo do tempo, para entender como o conteúdo mudou. Esse recurso usa as versões de página para determinar o estado do ambiente de publicação.
 
 Para usar este recurso:
@@ -214,6 +210,16 @@ Para usar este recurso:
 * Isso significa que a versão mostrada foi criada/ativada *antes* do momento selecionado no Timewarp.
 * Ao navegar para uma página que foi excluída, isso também será renderizado, desde que as versões antigas da página ainda estejam disponíveis no repositório.
 * Se nenhuma versão publicada for encontrada, o Timewarp reverterá para o estado atual da página no ambiente de criação (o objetivo é evitar um erro de página/404, que poderia impedir a navegação).
+
+>[!NOTE]
+>
+>O Timewarp funciona e deve ser usado para páginas do AEM — versões para histórico e inicializações para estados de conteúdo futuros.
+>
+>Não funciona em inicializações aninhadas ou quando fragmentos de experiência são usados.
+
+>[!TIP]
+>
+>[O Timewarp também pode ser usado com Inicializações para visualizar o futuro](/help/sites-cloud/authoring/launches/preview.md).
 
 ### Uso do Timewarp {#using-timewarp}
 
@@ -240,6 +246,7 @@ O Timewarp se esforça ao máximo para reproduzir uma página em um ponto seleci
 * **As versões removidas afetam o Timewarp** - se as versões forem removidas do repositório, o Timewarp não poderá mostrar a exibição correta.
 * **O Timewarp é somente leitura** - não é possível editar a versão antiga da página. Ela só está disponível para exibição. Se deseja restaurar a versão mais antiga, é necessário fazer isso manualmente usando a opção [Restaurar](#revert-to-a-version).
 * **O Timewarp é baseado no conteúdo da página**: se os elementos de renderização do site forem alterados, como código, CSS e ativos, a exibição será diferente da original. Esses itens não têm um controle de versão no repositório.
+* O Timewarp não funciona para inicializações aninhadas ou quando fragmentos de experiência são usados.
 
 >[!CAUTION]
 >
