@@ -4,9 +4,9 @@ description: Saiba mais sobre as diferentes opções para personalizar o Editor 
 exl-id: 8d6523c8-b266-4341-b301-316d5ec224d7
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: c2f1660552d32f3dae9418e7dfc2d4f1ab8cc3c3
+source-git-commit: 32b3a125d6370dd591252fde342843d5f9e33cf1
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -107,9 +107,7 @@ As condições podem ser definidas usando o [esquema JsonLogic](https://jsonlogi
 
 ## URLs de visualização personalizados {#custom-preview-urls}
 
-Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [&#128279;](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
-
-Isso é particularmente útil para aplicativos com requisitos de visualização específicos, como os [que usam o Edge Delivery Services com criação no WYSIWYG](/help/edge/wysiwyg-authoring/authoring.md).
+Você pode especificar uma URL de visualização personalizada por meio de uma metaconfiguração de `urn:adobe:aue:config:preview`, que será aberta ao clicar no botão **Abrir página** na barra de ferramentas superior direita do editor [](/help/sites-cloud/authoring/universal-editor/navigation.md#universal-editor-toolbar).
 
 Para fazer isso, basta incluir o URL de visualização desejado em uma meta tag do aplicativo instrumentado, como no exemplo a seguir.
 
