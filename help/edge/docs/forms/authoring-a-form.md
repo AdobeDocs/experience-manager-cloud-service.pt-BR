@@ -4,9 +4,11 @@ description: Saiba mais sobre as várias plataformas de criação de formulário
 feature: Edge Delivery Services, Adaptive Forms, Core Components
 role: User, Developer
 exl-id: bd9cb623-c272-4cdf-ad39-f97043f781a6
-source-git-commit: a2f85b844aaff1642340250c5d8a755c80b9373d
+hide: true
+hidefromToC: true
+source-git-commit: 1662d1c9458f05c2e511514ce8a04247da90eaf3
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1075'
 ht-degree: 1%
 
 ---
@@ -19,7 +21,7 @@ O Adobe Experience Manager (AEM) fornece uma plataforma flexível para a criaç�
 
 O AEM fornece várias opções de criação de formulários para criar formulários interativos e envolventes. Ao selecionar um ambiente de criação de formulário, considere os seguintes fatores:
 
-| ?? **Consideração** | ?? **O que perguntar** |
+| 📝 **Consideração** | 💡 **O que perguntar** |
 |----------------------|--------------------|
 | **Experiência do usuário** | Quem criará os formulários — desenvolvedores, usuários empresariais ou autores de conteúdo? |
 | **Complexidade do formulário** | O formulário precisa de regras avançadas, seções dinâmicas ou integrações? |
@@ -42,7 +44,7 @@ O AEM oferece suporte a vários métodos de criação, cada um adequado para dif
 * [Edge Delivery Services Forms](/help/edge/docs/forms/overview.md): o Edge Delivery Services Forms transforma a maneira como os formulários são criados, executados e processados. Ao utilizar o Edge Delivery Services, as organizações podem criar formulários digitais rápidos, seguros e altamente disponíveis, aprimorando a experiência do usuário e a eficiência operacional com um ambiente de desenvolvimento rápido. Você pode criar o Edge Delivery Services Forms de duas maneiras:
    * [Criação no WYSIWYG](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): use o Universal Editor para criar formulários visuais, do tipo arrastar-e-soltar, ideais para autores de conteúdo com conhecimento técnico limitado. O Forms criado com Universal Editor é fornecido usando o Edge Delivery Services para renderização rápida e leve.
    * [Criação com base em documento](/help/edge/docs/forms/tutorial.md): use ferramentas como o Microsoft Excel ou o Google Sheets para definir a estrutura e o conteúdo do formulário. Esse método é útil para usuários empresariais que preferem entradas orientadas por planilha. Normalmente, esses formulários são publicados por meio do Edge Delivery Services e são adequados para casos de uso leves e de alto volume.
-* [Criação headless](https://experienceleague.adobe.com/pt-br/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): use APIs para renderizar formulários como JSON para qualquer front-end, por exemplo, React, Angular, aplicativos móveis ou quiosques, sem depender do AEM. Atualmente, somente os Componentes principais são compatíveis com entrega headless. Os formulários headless são ideais para casos de uso omnicanal e são consumidos independentemente da renderização de página do AEM, tornando-os flexíveis para implantações front-end personalizadas.
+* [Criação headless](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/tutorial/build-engaging-forms-using-core-components-and-headless-adaptive-forms-aem-forms-cloud-service): use APIs para renderizar formulários como JSON para qualquer front-end, por exemplo, React, Angular, aplicativos móveis ou quiosques, sem depender do AEM. Atualmente, somente os Componentes principais são compatíveis com entrega headless. Os formulários headless são ideais para casos de uso omnicanal e são consumidos independentemente da renderização de página do AEM, tornando-os flexíveis para implantações front-end personalizadas.
 
 ### Análise comparativa de métodos de criação de formulários do AEM
 
@@ -74,33 +76,33 @@ A tabela a seguir fornece uma comparação detalhada dos principais recursos ent
 
 | **Recurso** | **Componentes de base** | **Componentes principais** | **Editor Universal (WYSIWYG)** | **Criação baseada em documento** | **Criação headless** |
 |-----------------------------------------|---------------------------|---------------------|-------------------------------|-----------------------------|------------------------|
-| **Composição Unificada com Sites** | ❌  | ✅  | ✅  | ❌  | ❌  |
-| **Incorporando Suporte a Formulários** | ✅  | ✅  | ✅  | ✅  | ✅  |
+| **Composição Unificada com Sites** | ❌ | ✅ | ✅ | ❌ | ❌ |
+| **Incorporando Suporte a Formulários** | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Regras (Comportamento Dinâmico)** | Editor de regras avançado com funções personalizadas | Editor de regras avançado com funções personalizadas | Editor de regras avançado com funções personalizadas | Limitado: Mostrar/ocultar, valor de computação, funções personalizadas | Limitado: requer implementação personalizada |
-| **Suporte ao Anexo** | ✅  | ✅  | ✅  | ℹ️ (Acesso antecipado) | ❌  |
+| **Suporte ao Anexo** | ✅ | ✅ | ✅ | ℹ️ (Acesso antecipado) | ❌ |
 | **Suporte ao CAPTCHA** | reCAPTCHA v2/Enterprise, hCaptcha (EA), Torniquete (EA) | reCAPTCHA v2/Enterprise, hCaptcha (EA) | reCAPTCHA Enterprise | reCAPTCHA Enterprise | Requer integração personalizada |
 | **Recursos de Envio** | Endpoint REST, Email, Modelo de dados de formulário (FDM), Chamar fluxo de trabalho do AEM, SharePoint, OneDrive, Armazenamento Azure Blob, Power Automate, Workfront Fusion (EA) | Endpoint REST, Email, Modelo de dados de formulário (FDM), Chamar fluxo de trabalho do AEM, SharePoint, OneDrive, Armazenamento Azure Blob, Power Automate, Workfront Fusion (EA) | Endpoint REST, Email, Modelo de dados de formulário (FDM), Chamar fluxo de trabalho do AEM, SharePoint, OneDrive, Armazenamento Azure Blob, Power Automate, Workfront Fusion (EA) | Somente planilha | Endpoints de API personalizados |
 | **Esquema de dados** | FDM, Personalizado | FDM, Personalizado | FDM, Personalizado | Personalizado | Personalizado |
-| **Preenchimento prévio** | ✅  | ✅  | ?? (por meio do Assistente) | ✅  | Implementação personalizada |
-| **Fragmentos** | ✅  | ✅  | ✅  | ✅  | ❌  |
-| **Editor de regras visuais** | ✅  | ✅  | ✅  | ❌  | ❌  |
-| **Localização** | ✅  | ✅  | ?? (pelo Sites) | ℹ️ (Excel - Manual, Função do Google Sheets) | Implementação personalizada |
-| **Esquema de Dados (Árvore de Dados)** | ✅  | ✅  | ?? (por meio da extensão da interface do usuário) | ❌  | Implementação personalizada |
-| **Suporte a modelos** | ✅  | ✅  | Somente conteúdo inicial, sem política | ❌  | Implementação personalizada |
-| **Portal** | ✅  | ✅  | ❌  | ❌  | ❌  |
-| **Criação de DoR** | ✅  | ✅  | ?? (via Derlina) | ❌  | ❌  |
-| **Geração do DoR** | ✅  | ✅  | ?? (FORMS-2475 Novo) | ❌  | ❌  |
-| **Tema** | ✅  | ✅  | ℹ️ (a nível do projeto) | ℹ️ (a nível do projeto) | Implementação personalizada |
-| **Componente personalizado** | ✅  | ✅  | ✅  | ✅  | ✅  |
-| **OOTB e funções personalizadas** | ✅  | ✅  | ✅  | ✅  | ✅  |
-| **Referência do fragmento** | ✅  | ❌  | ❌  | ❌  | ❌  |
-| **Assinar Integração** | ✅  | ❌  | ❌  | ❌  | ❌  |
-| **Suporte de RTL** | ❌  | ✅  | ??  | ??  | Implementação personalizada |
-| **Experimentação** | ❌  | ❌  | ✅  | ✅  | Implementação personalizada |
-| **Gerenciamento de tarefas via Workfront** | ❌  | ❌  | ✅  | ❌  | ❌  |
-| **Extensão do Personalization** | ❌  | ❌  | ??  | ❌  | Implementação personalizada |
-| **Personalização do editor** | ❌  | ❌  | ✔ (via Extensão da Interface do Usuário) | ❌  | Implementação personalizada |
-| **Enviar ação** | ✅  | ✅  | ✅  | Somente planilha | Implementação personalizada |
+| **Preenchimento prévio** | ✅ | ✅ | 💡 (via Assistente) | ✅ | Implementação personalizada |
+| **Fragmentos** | ✅ | ✅ | ✅ | ✅ | ❌ |
+| **Editor de regras visuais** | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **Localização** | ✅ | ✅ | 💡 (via Sites) | ℹ️ (Excel - Manual, Função do Google Sheets) | Implementação personalizada |
+| **Esquema de Dados (Árvore de Dados)** | ✅ | ✅ | 💡 (via Extensão da Interface do Usuário) | ❌ | Implementação personalizada |
+| **Suporte a modelos** | ✅ | ✅ | Somente conteúdo inicial, sem política | ❌ | Implementação personalizada |
+| **Portal** | ✅ | ✅ | ❌ | ❌ | ❌ |
+| **Criação de DoR** | ✅ | ✅ | 💡 (via Derlina) | ❌ | ❌ |
+| **Geração do DoR** | ✅ | ✅ | 💡 (FORMS-2475 Novo) | ❌ | ❌ |
+| **Tema** | ✅ | ✅ | ℹ️ (a nível do projeto) | ℹ️ (a nível do projeto) | Implementação personalizada |
+| **Componente personalizado** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **OOTB e funções personalizadas** | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Referência do fragmento** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Assinar Integração** | ✅ | ❌ | ❌ | ❌ | ❌ |
+| **Suporte de RTL** | ❌ | ✅ | 💡 | 💡 | Implementação personalizada |
+| **Experimentação** | ❌ | ❌ | ✅ | ✅ | Implementação personalizada |
+| **Gerenciamento de tarefas via Workfront** | ❌ | ❌ | ✅ | ❌ | ❌ |
+| **Extensão do Personalization** | ❌ | ❌ | 💡 | ❌ | Implementação personalizada |
+| **Personalização do editor** | ❌ | ❌ | ✅ (via Extensão da Interface do Usuário) | ❌ | Implementação personalizada |
+| **Enviar ação** | ✅ | ✅ | ✅ | Somente planilha | Implementação personalizada |
 
 
 ## Artigo relacionado
