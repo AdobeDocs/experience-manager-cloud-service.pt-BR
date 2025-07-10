@@ -151,7 +151,7 @@ Este diagrama mostra a Página de host que busca o formulário HTML no Form Sour
 
 ## Configuração do CORS para Forms incorporado
 
-[O CORS (Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) é um recurso de segurança do navegador. Se sua Página de Host (por exemplo, `site-a.com`) tentar buscar um formulário de um domínio diferente (por exemplo, `forms-site-b.com`), o navegador a bloqueará, a menos que `forms-site-b.com` permita explicitamente por meio de cabeçalhos CORS.
+[O CORS (Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) é um recurso de segurança do navegador. Se sua Página de Host (por exemplo, `site-a.com`) tentar buscar um formulário de um domínio diferente (por exemplo, `forms-site-b.com`), o navegador a bloqueará, a menos que `forms-site-b.com` permita explicitamente por meio de cabeçalhos CORS.
 
 Sem os cabeçalhos CORS corretos no **servidor do Form Source**, o navegador impede que a Página de Host carregue o formulário, e seu formulário inserido não seria exibido.
 
