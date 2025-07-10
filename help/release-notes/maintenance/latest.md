@@ -4,7 +4,7 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: ff500e08e31e53f5452eed6cfe06539cabe2ecdd
+source-git-commit: 17064d27dd34bbd5aad89f814481c29b0f6a7fe1
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 31%
@@ -18,9 +18,9 @@ A seção a seguir descreve as notas de versão técnicas para a versão de manu
 
 ## Versão 21484 {#21484}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21484, lançada publicamente em quarta-feira, 8 de julho de 2025. A versão de manutenção anterior era 21331.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21484, lançada publicamente em sexta-feira, 10 de julho de 2025. A versão de manutenção anterior era 21331.
 
-A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-21484}
 
@@ -38,7 +38,7 @@ Nenhum.
 * GUIDES-28104: A publicação de um mapa DITA com o atributo `chunk=to-content` cria nós JCR duplicados na nova saída do AEM Sites, resultando na estrutura de conteúdo redundante no AEM Sites.
 * GUIDES-29065, GUIDES-28793: problemas de desempenho, como tempos de carregamento mais longos e tempos limite intermitentes, são observados ao trabalhar com coleções grandes.
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ### Problemas conhecidos {#known-issues-21484}
 
