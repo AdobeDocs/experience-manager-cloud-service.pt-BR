@@ -5,10 +5,10 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 169de7971fba829b0d43e64d50a356439b6e57ca
+source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
 workflow-type: tm+mt
-source-wordcount: '2430'
-ht-degree: 36%
+source-wordcount: '2474'
+ht-degree: 35%
 
 ---
 
@@ -130,26 +130,29 @@ As alterações feitas no ambiente de produção também serão aplicadas no amb
 
 Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-networking.md) para o programa, é recomendável fazê-lo antes de adicionar outras regiões de publicação aos ambientes. Caso contrário, o tráfego das regiões de publicação adicionais passará pelo proxy da região principal.
 
-## Detalhes do ambiente de acesso {#viewing-environment}
+## Exibir detalhes de um ambiente {#viewing-environment}
 
+1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
-1. Para acessar os detalhes do Ambiente, siga um destes procedimentos:
+1. No console **[Meus Programas](/help/implementing/cloud-manager/navigation.md#my-programs)**, clique no programa para o qual deseja exibir detalhes de um ambiente.
 
-   * Na página **Visão geral**, no menu do lado esquerdo, clique em ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
+1. Liste todos os ambientes do programa seguindo um destes procedimentos:
 
-   ![Guia Ambientes](assets/environments-tab2.png)
+   * No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 
-   * No cartão **Ambientes**, clique no ![ícone Fluxo de trabalho](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Mostrar tudo**.
+   ![Guia Ambientes](assets/environments-1.png)
 
-     ![Mostrar todas as opções](assets/environment-showall.png)
+   * No menu do lado esquerdo, em **Programa**, clique em **Visão Geral** e, no cartão **Ambientes**, clique em ![ícone de Fluxo de Trabalho](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Mostrar Tudo**.
 
-   A página **Ambientes** é aberta e lista todos os ambientes do programa.
+     ![Mostrar todas as opções](assets/environments-2.png)
 
-   ![Guia Ambientes](assets/environments-tab2.png)
+   >[!NOTE]
+   >
+   >O cartão **Ambientes** lista apenas três ambientes. Clique em **Mostrar tudo** no cartão para ver *todos* os ambientes do programa.
 
 1. Na página Ambientes, siga um destes procedimentos:
 
-   * Clique em um ambiente na lista para revelar seus detalhes.
+   * Clique em um ambiente na lista para visualizar seus detalhes.
 
    ![Detalhes do ambiente](assets/environ-preview1.png)
 
@@ -157,9 +160,11 @@ Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-n
 
    ![Exibir detalhes do ambiente](assets/view-environment-details.png)
 
->[!NOTE]
->
->O cartão **Ambientes** lista apenas três ambientes. Clique em **Mostrar tudo** no cartão para ver todos os ambientes do programa.
+
+## Restaurar o conteúdo de um ambiente (Alpha) {#restore-environment}
+
+Consulte [Restauração de Conteúdo no AEM as a Cloud Service](/help/operations/restore.md).
+
 
 ### Acessar o serviço de visualização {#access-preview-service}
 
@@ -299,7 +304,7 @@ Uma nova guia é aberta no navegador com a página de logon do **Developer Conso
 
 Somente um usuário com a função **Desenvolvedor** terá acesso ao **Developer Console**. No entanto, para programas de sandbox, qualquer usuário com acesso ao programa de sandbox tem acesso ao **Developer Console**.
 
-Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
+Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
 
 Esta opção também está disponível na guia **Ambiente** da janela **Visão geral** ao clicar no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de um ambiente individual.
 

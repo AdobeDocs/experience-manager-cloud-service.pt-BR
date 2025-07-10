@@ -5,10 +5,10 @@ exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: 6c36e45dc5437f34b26732a34e9bda38deac56b1
+source-git-commit: b5987ce142a92fee8fff30fbe66d147cd68bdb21
 workflow-type: tm+mt
-source-wordcount: '909'
-ht-degree: 24%
+source-wordcount: '938'
+ht-degree: 23%
 
 ---
 
@@ -19,7 +19,7 @@ O Cloud Manager fornece um painel para facilitar a visualização dos direitos d
 
 >[!IMPORTANT]
 >
->O Painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no Painel de licenças.
+>O Painel de licenças se aplica somente aos programas do AEM as a Cloud Service. [Programas AMS](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/introduction) não estão incluídos no Painel de licenças.
 >
 >Para determinar o tipo de serviço que seu programa tem (AMS ou AEMaaCS), consulte [Navegação na interface do Cloud Manager](/help/implementing/cloud-manager/navigation.md#program-cards).
 
@@ -77,6 +77,8 @@ A janela **Detalhes de uso do Sites** apresenta gráficos que fornecem uma visã
 O lado esquerdo da janela apresenta um gráfico de pizza que mostra o detalhamento do contrato para o ano do contrato selecionado na lista suspensa **Exibir ano do contrato**.
 
 O lado direito da janela apresenta um gráfico de área que mostra o uso detalhado por programa ao longo do tempo para o ano do contrato selecionado. Um cursor do mouse revela um pop-up com detalhes por programa para o ponto no tempo selecionado.
+
+Próximo ao canto superior direito da página do painel, você pode clicar em **Baixar relatório** para exportar seus dados como um arquivo CSV. Este download simplifica a análise e o compartilhamento de tendências de uso.
 
 <!-- REMOVED AS PER CQDOC-21983
 ### Assets usage details {#assets-usage-details}

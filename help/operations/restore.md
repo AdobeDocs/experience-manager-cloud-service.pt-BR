@@ -4,17 +4,17 @@ description: Saiba como restaurar conteúdo do backup no AEM as a Cloud Service 
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: fee4921b7087fd64b2f65b086998aedde8aaafb0
+source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 49%
+source-wordcount: '1323'
+ht-degree: 26%
 
 ---
 
 
 # Restauração de conteúdo no AEM as a Cloud Service {#content-restore}
 
-Saiba como restaurar conteúdo do backup no AEM as a Cloud Service usando o Cloud Manager.
+Você pode restaurar o conteúdo do AEM as a Cloud Service a partir do backup usando o Cloud Manager.
 
 ## Visão geral {#overview}
 
@@ -24,7 +24,7 @@ O processo de restauração afeta apenas o conteúdo, deixando o código e a ver
 
 O Cloud Manager fornece dois tipos de backups, a partir dos quais você pode restaurar o conteúdo.
 
-* **Ponto no Tempo (PIT):** esse tipo restaura a partir de backups de sistema contínuos das últimas 24 horas, contadas a partir da hora atual.
+* **Ponto no Tempo (PIT):** essa opção restaura os backups contínuos capturados nas últimas 24 horas.
 * **Semana passada:** esse tipo restaura a partir de backups de sistema dos últimos sete dias, exceto as últimas 24 horas.
 
 Em ambos os casos, a versão do código personalizado e a versão do AEM permanecem inalteradas.
@@ -36,10 +36,10 @@ Em ambos os casos, a versão do código personalizado e a versão do AEM permane
 >[!WARNING]
 >
 >* Esse recurso só deve ser usado quando houver problemas graves com código ou conteúdo.
->* A restauração de um backup resultará na perda de dados recentes entre o momento do backup e o presente. O preparo também é restaurado para a versão antiga.
+>* A restauração de um backup exclui todos os dados adicionados após esse backup. O preparo também é revertido para a versão anterior.
 >* Antes de iniciar uma restauração de conteúdo, considere outras opções de restauração seletiva de conteúdo.
 
-## Opções de restauração de conteúdo seletivo {#selective-options}
+## Opções de restauração seletiva de conteúdo {#selective-options}
 
 Antes de restaurar para uma restauração completa do conteúdo, considere essas opções para restaurar seu conteúdo com mais facilidade.
 
@@ -52,77 +52,84 @@ Se nenhuma das opções acima funcionar e o conteúdo do caminho excluído for s
 
 ## Criar função de usuário {#user-role}
 
-Por padrão, nenhum usuário terá permissão para executar restaurações de conteúdo em ambientes de desenvolvimento, produção ou preparo. Para delegar essa permissão a usuários ou grupos específicos seguindo essas etapas gerais.
+Por padrão, nenhum usuário tem permissão para executar restaurações de conteúdo em ambientes de desenvolvimento, produção ou preparo. Para delegar essa permissão a usuários ou grupos específicos, use as seguintes etapas gerais.
 
 1. Crie um perfil de produto com um nome expressivo que se refere à restauração do conteúdo.
 1. Forneça a permissão **Acesso ao Programa** no programa necessário.
 1. Forneça a permissão **Criar Restauração do Ambiente** no ambiente necessário para todos os ambientes do programa, dependendo do seu caso de uso.
-1. Atribuir usuários a esse perfil de perfil.
+1. Atribua usuários a esse perfil.
 
-Para obter detalhes sobre o gerenciamento de permissões, consulte a documentação de [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md).
+Para obter detalhes sobre o gerenciamento de permissões, consulte [Permissões personalizadas](/help/implementing/cloud-manager/custom-permissions.md).
 
-## Restauração de conteúdo {#restoring-content}
-
-Primeiro, determine o intervalo de tempo do conteúdo que você deseja restaurar. Em seguida, para restaurar o conteúdo do ambiente a partir de um backup, execute essas etapas.
+## Restaurar o conteúdo de um ambiente {#restoring-content}
 
 >[!NOTE]
 >
 >Um usuário deve ter [permissões apropriadas](#user-role) para iniciar uma operação de restauração.
 
+**Para restaurar o conteúdo de um ambiente:**
+
 1. Faça logon no Cloud Manager, em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/), e selecione a organização apropriada.
 
 1. Clique no programa para o qual deseja iniciar uma restauração.
 
-1. Na página **Visão geral do programa**, no cartão **Ambientes**, clique no botão de reticências ao lado do ambiente para o qual deseja iniciar uma restauração e selecione **Restaurar conteúdo**.
+1. Liste todos os ambientes do programa seguindo um destes procedimentos:
 
-   ![Opção de restauração](assets/backup-option.png)
+   * No menu do lado esquerdo, em **Serviços**, clique em ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Ambientes**.
 
-   * Como alternativa, você pode navegar diretamente para a guia **Restaurar conteúdo** da página de detalhes de um ambiente específico.
+     ![Guia Ambientes](assets/environments-1.png)
 
-1. Na guia **Restaurar conteúdo** da página de detalhes do ambiente, selecione primeiro o período da restauração na lista suspensa **Tempo para restaurar**.
+   * No menu do lado esquerdo, em **Programa**, clique em **Visão Geral** e, no cartão **Ambientes**, clique em ![ícone de Fluxo de Trabalho](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Workflow_18_N.svg) **Mostrar Tudo**.
 
-   1. Se você selecionar **Últimas 24 horas**, o campo **Hora** ao lado permitirá que você especifique a hora exata a ser restaurada dentre as últimas 24 horas.
+     ![Mostrar todas as opções](assets/environments-2.png)
 
-      ![Últimas 24 horas](assets/backup-time.png)
+     >[!NOTE]
+     >
+     >O cartão **Ambientes** lista apenas três ambientes. Clique em **Mostrar tudo** no cartão para ver *todos* os ambientes do programa.
 
-   1. Se você selecionar **Semana passada**, o campo **Dia** ao lado permitirá selecionar uma data dentre os últimos sete dias, exceto as 24 horas anteriores.
+1. Na tabela Ambientes, à direita de um ambiente cujo conteúdo você deseja restaurar, clique em ![Ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Restaurar Conteúdo**.
 
-      ![Semana passada](assets/backup-date.png)
+   ![Opção Restaurar conteúdo do menu de reticências](/help/operations/assets/environments-ellipsis-menu.png)
+
+1. Na guia **Restaurar Conteúdo** da página suspensa do ambiente, na lista suspensa **Tempo para restaurar**, selecione o período de tempo da restauração.
+
+   ![Guia Restaurar Conteúdo de um ambiente](/help/operations/assets/environments-content-restore-tab.png)
+
+   * Se você escolheu **Últimas 24 horas**, no campo adjacente **Hora**, especifique a hora exata a ser restaurada dentre as últimas 24 horas.
+   * Se você escolheu **Semana passada**, no campo adjacente **Dia**, selecione uma data dentre os últimos sete dias, exceto as últimas 24 horas.
 
 1. Depois de selecionar uma data ou especificar uma hora, a seção **Backups disponíveis** abaixo mostra uma lista de backups disponíveis que podem ser restaurados
 
-   ![Backups disponíveis](assets/backup-available.png)
-
-1. Encontre o backup que deseja restaurar usando o ícone de informações para exibir informações sobre a versão do código e do AEM incluídas nesse backup e considere as implicações de uma restauração ao [escolher o backup](#choosing-the-right-backup).
+1. Clique no ![ícone de informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) ao lado de um backup para ver sua versão de código e a versão do AEM e pesar o impacto da restauração antes de selecionar um backup (consulte [Escolher o backup correto](#choosing-backup)).
 
    ![Informações de backup](assets/backup-info.png)
 
-   * O carimbo de data e hora exibido nas opções de restauração é baseado no fuso horário do computador do usuário.
+   O carimbo de data e hora exibido nas opções de restauração é baseado no fuso horário do computador do usuário.
 
-1. Clique no ícone **Restaurar** na extremidade direita da linha que representa o backup que você deseja restaurar para iniciar o processo de restauração.
+1. Na extremidade direita da linha que representa o backup que você deseja restaurar, clique em ![Girar CCW em negrito ou restaurar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_RotateCCWBold_18_N.svg) para iniciar o processo de restauração.
 
-1. Revise os detalhes na caixa de diálogo **Restaurar conteúdo** antes de confirmar sua solicitação clicando em **Restaurar**.
+1. Revise os detalhes na caixa de diálogo **Restaurar conteúdo** e clique em **Restaurar**.
 
    ![Confirmar restauração](assets/backup-restore.png)
 
-O processo de backup foi iniciado e você pode visualizar seu status na lista **[Atividade de Restauração](#restore-activity)**. O tempo necessário para a conclusão de uma operação de restauração depende do tamanho e do perfil do conteúdo que está sendo restaurado.
+O processo de backup é iniciado. Você pode exibir seu status na lista **[Atividades de Restauração](#restore-activity)**. O tempo necessário para a conclusão de uma operação de restauração depende do tamanho e do perfil do conteúdo que está sendo restaurado.
 
-Quando a restauração for concluída com sucesso, o ambiente:
+Quando a restauração é concluída com sucesso, o ambiente faz o seguinte:
 
-* Executará o mesmo código e versão do AEM do momento de início da operação de restauração.
-* Terá o mesmo conteúdo que estava disponível no carimbo de data e hora do instantâneo escolhido, com os índices recriados para corresponder ao código atual.
+* Executa o mesmo código e versão do AEM do momento de início da operação de restauração.
+* Ele tem o mesmo conteúdo que estava disponível no carimbo de data e hora do instantâneo escolhido, com os índices recriados para corresponder ao código atual.
 
-## Escolher o backup certo {#choosing-backup}
+## Escolha o backup correto {#choosing-backup}
 
-O processo de restauração de autoatendimento do Cloud Manager restaura apenas o conteúdo no AEM. Por isso, você deve considerar cuidadosamente as alterações de código que foram feitas entre o ponto de restauração desejado e o horário atual, revisando o histórico de confirmações entre a ID de confirmação atual e a que está sendo restaurada.
+O processo de restauração de autoatendimento do Cloud Manager restaura apenas o conteúdo no AEM. Por isso, você deve considerar cuidadosamente as alterações de código que foram feitas entre o ponto de restauração desejado e a hora atual. Revise o histórico de confirmações entre a ID de confirmação atual e a que está sendo restaurada.
 
 Existem vários cenários.
 
-* O código personalizado no ambiente e a restauração estão no mesmo repositório e na mesma ramificação.
-* O código personalizado no ambiente e a restauração estão no mesmo repositório, mas em uma ramificação diferente com uma confirmação em comum.
-* O código personalizado no ambiente e a restauração estão em repositórios diferentes.
-   * Nesse caso, uma ID de confirmação não será exibida.
-   * É recomendável clonar ambos os repositórios e usar uma ferramenta para comparar as ramificações.
+* O código personalizado do ambiente e a restauração estão no mesmo repositório e na mesma ramificação.
+* O código personalizado do ambiente e a restauração compartilham um repositório, usam uma ramificação separada e se originam de uma confirmação comum.
+* O código personalizado do ambiente e a restauração estão em repositórios diferentes.
+   * Nesse caso, uma ID de confirmação não é exibida.
+   * A Adobe recomenda clonar ambos os repositórios e usar uma ferramenta para comparar as ramificações.
 
 Além disso, lembre-se de que uma restauração pode fazer com que seus ambientes de produção e de preparo fiquem fora de sincronia. Você é responsável pelas consequências da restauração do conteúdo.
 
@@ -132,15 +139,15 @@ A lista **Atividade de Restauração** mostra o status das dez solicitações de
 
 ![Atividades de restauração](assets/backup-activity.png)
 
-Ao clicar no ícone de informações de um backup, é possível baixar logs desse backup e inspecionar os detalhes do código, incluindo as diferenças entre o instantâneo e os dados no momento em que a restauração foi iniciada.
+Ao clicar no ![ícone de Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Info_18_N.svg) para um backup, você pode baixar logs para esse backup e inspecionar os detalhes do código, incluindo as diferenças entre o instantâneo e os dados no momento em que a restauração foi iniciada.
 
 ## Backup externo {#offsite-backup}
 
 Os backups normais protegem contra o risco de exclusões acidentais ou falhas técnicas nos serviços em nuvem do AEM, mas riscos adicionais podem surgir da falha de uma região. Além da disponibilidade, o maior risco durante interrupções em uma região é a perda de dados.
 
-O AEM as a Cloud Service reduz esse risco para todos os ambientes de produção do AEM, copiando continuamente todo o conteúdo do AEM para uma região remota e disponibilizando-o para recuperação por um período de três meses. Esse recurso é conhecido como backup externo.
+A AEM as a Cloud Service reduz esse risco para todos os ambientes de produção do AEM. Ou seja, ele copia continuamente todo o conteúdo do AEM para uma região remota. Esse processo disponibiliza o conteúdo para recuperação por três meses. Esse recurso é conhecido como backup externo.
 
-A restauração dos serviços em nuvem do AEM para ambientes de preparo e produção a partir do backup externo é realizada pelo Serviço de engenharia de confiabilidade do AEM em caso de interrupções da região de dados.
+O AEM Service Reliability Engineering restaura ambientes de preparo e produção do AEM Cloud Service a partir de backups externos durante paralisações da região de dados.
 
 ## Limitações           {#limitations}
 
