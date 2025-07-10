@@ -3,13 +3,13 @@ title: Configurar ações de envio para o AEM Forms com o Edge Delivery Services
 description: Saiba como configurar ações de envio no AEM Forms usando o Edge Delivery Services. Escolha entre o Serviço de envio do Forms e a Ação de envio de publicação do AEM para lidar com os dados de formulário de maneira segura e eficiente.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 8f490054-f7b6-40e6-baa3-3de59d0ad290
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 0%
 
 ---
-
 
 # Configuração dos envios de formulários: para onde vão seus dados?
 
@@ -46,7 +46,6 @@ O [Serviço de Envio do Forms](/help/forms/forms-submission-service.md) é um po
     style ExcelSheet fill:#90ee90,stroke:#333
     style Email fill:#add8e6,stroke:#333
 ```-->
-
 ![Envio de Forms](/help/forms/assets/eds-fss.png)
 
 Este fluxograma mostra como o Serviço de Envio do Forms pega os dados enviados e os envia para uma planilha ou email configurado.
@@ -145,13 +144,12 @@ A página onde você deseja que o formulário apareça (vamos chamá-la de &quot
     style FetchForm fill:#fff2cc,stroke:#333
     style Submission fill:#f0fff0,stroke:#333
 ```-->
-
 ![Arquitetura de Formulário Inserida](/help/forms/assets/eds-embedded-form.png)
 Este diagrama mostra a Página de host que busca o formulário HTML no Form Source e o exibe. O envio usa o ponto de extremidade configurado do formulário original.
 
 ## Configuração do CORS para Forms incorporado
 
-[O CORS (Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) é um recurso de segurança do navegador. Se sua Página de Host (por exemplo, `site-a.com`) tentar buscar um formulário de um domínio diferente (por exemplo, `forms-site-b.com`), o navegador a bloqueará, a menos que `forms-site-b.com` permita explicitamente por meio de cabeçalhos CORS.
+[O CORS (Cross-Origin Resource Sharing)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) é um recurso de segurança do navegador. Se sua Página de Host (por exemplo, `site-a.com`) tentar buscar um formulário de um domínio diferente (por exemplo, `forms-site-b.com`), o navegador a bloqueará, a menos que `forms-site-b.com` permita explicitamente por meio de cabeçalhos CORS.
 
 Sem os cabeçalhos CORS corretos no **servidor do Form Source**, o navegador impede que a Página de Host carregue o formulário, e seu formulário inserido não seria exibido.
 

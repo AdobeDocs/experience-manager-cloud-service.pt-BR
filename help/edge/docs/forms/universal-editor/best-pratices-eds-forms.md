@@ -3,7 +3,8 @@ title: Práticas recomendadas para criação de Forms de alto desempenho
 description: Conheça as práticas recomendadas essenciais para criar formulários amigáveis, acessíveis e de alto desempenho usando o AEM Forms. Melhore a qualidade dos dados, a experiência do usuário e as taxas de sucesso de envio.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
-source-git-commit: bca160763fdd1e96f1350ac74eb76ff7c26ac00b
+exl-id: 67b6873b-bb93-4d38-963c-2ca65a1a644b
+source-git-commit: 75d8ea4f0913e690e3374d62c6e7dcc44ea74205
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -64,4 +65,4 @@ Este guia fornece uma visão geral do uso de formulários com o AEM Edge Deliver
 * [Criação baseada em documento com o Edge Delivery Services Forms](/help/edge/docs/forms/tutorial.md)
 * [Editor universal com o Edge Delivery Services Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
 * [Criação de Documentos (DA) e Incorporação de Conteúdo](https://www.aem.live/developer/da-tutorial)
-* [Serviço de envio de AEM Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
+* [Serviço de Envio do AEM Forms](/help/edge/docs/forms/configure-submission-action-for-eds-forms.md)
