@@ -1,20 +1,20 @@
 ---
-title: Notas de versão do Universal Editor 2025.06.19
-description: Estas são as notas de versão do Universal Editor de 2025.06.19.
+title: Notas de versão do Universal Editor 2025.07.09
+description: Estas são as notas de versão do Universal Editor de 2025.07.09.
 feature: Release Information
 role: Admin
 exl-id: d16ed78d-d5a3-45bf-a415-5951e60b53f9
-source-git-commit: 5ffae9e548ca952975b3ea805808e227102ec99f
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '368'
 ht-degree: 0%
 
 ---
 
 
-# Notas de versão do Universal Editor 2025.06.19 {#release-notes}
+# Notas de versão do Universal Editor 2025.07.09 {#release-notes}
 
-Estas são as notas de versão do editor universal de 19 de junho de 2025.
+Estas são as notas de versão da versão de 9 de julho de 2025 do Universal Editor.
 
 >[!TIP]
 >
@@ -22,29 +22,35 @@ Estas são as notas de versão do editor universal de 19 de junho de 2025.
 
 ## Novidades {#what-is-new}
 
-* **Suporte para vários campos no Painel de Propriedades** -
-  [O componente de contêiner](/help/implementing/universal-editor/field-types.md#container) agora pode ser usado para criar propriedades de vários campos.
-* **Suporte para propriedades aninhadas** - O campo [`name`](/help/implementing/universal-editor/field-types.md#nesting) agora oferece suporte a caminhos para habilitar o aninhamento de propriedades.
-* **Painel direito redimensionável** - O painel lateral agora pode ser redimensionado para ter uma melhor conta para conteúdo mais longo exibido no painel lateral.
+* [Ao clicar no botão da barra de ferramentas **Adicionar** nos contêineres](/help/sites-cloud/authoring/universal-editor/authoring.md#adding-components), se apenas um tipo de componente for permitido, ele será inserido imediatamente, sem a necessidade de seleção no menu suspenso.
+* [A opção de barra de ferramentas do cabeçalho de autenticação ](/help/sites-cloud/authoring/universal-editor/navigation.md#autentication-settings) foi colocada atrás de um botão de alternância de recurso, pois não é útil na maioria dos casos.
+* [Como o aninhamento de contêineres não é permitido para vários campos no painel de propriedades](/help/implementing/universal-editor/field-types.md#fields), a rotina de renderização agora filtra os contêineres aninhados da lista de campos para evitar aninhamento inválido.
 
 ## Recursos da adoção antecipada {#early-adopter}
 
-Para testar alguns recursos futuros, faça parte do programa de adoção antecipada da Adobe.
+Se você estiver interessado em testar esses recursos futuros e compartilhar seu feedback, envie um email para o Gerente de sucesso do cliente da Adobe a partir do endereço de email associado à sua Adobe ID.
 
-### **Desfazer/Refazer** {#undo-redo}
+### Novo RTE {#new-rte}
+
+O novo RTE do ProseMirror, com um seletor de páginas na caixa de diálogo de link, agora está disponível no painel direito.
+
+### Desfazer/Refazer {#undo-redo}
 
 Desfazer e refazer agora está disponível para autores de conteúdo do Universal Editor.
 
 * Isso inclui edições feitas em contexto, edições feitas por meio do painel Propriedades, bem como adição (ou duplicação), movimentação e exclusão de blocos.
 * Desfazer e refazer estão limitados à sessão atual do navegador.
 
-Se você estiver interessado em testar esse novo recurso e compartilhar seu feedback, envie um email para o Gerente de sucesso do cliente da Adobe a partir do endereço de email associado à sua Adobe ID.
-
 ## Outras melhorias {#other-improvements}
 
-* Foram corrigidos erros de colisão de chave de recurso ao mover blocos entre contêineres.
-* Correção de um problema que causava a falha da duplicação do último bloco de um container.
-* O menu suspenso Adicionar ação agora lista apenas componentes que têm um plug-in adequado definido no arquivo `component-definition.json`.
-* A data de modificação usada pela caixa de diálogo de publicação foi corrigida, onde, em algumas circunstâncias, as páginas não eram reconhecidas como modificadas e não eram republicadas.
-* Correção do comportamento de herança do MSM em que a edição de um contêiner cancelava a herança de nós filhos.
-* `fetchUrl` foi corrigido, restaurando blocos de movimentação de um contêiner para outro.
+* Foi corrigido um problema em que não era possível remover uma única referência de ativo ao editar por meio do painel de propriedades.
+* Correção de um problema em que o painel Propriedades era carregado indefinidamente porque as referências de ativos eram convertidas automaticamente em matrizes, causando um estado de carregamento infinito.
+   * Os valores de referência dos ativos agora são armazenados como estão, sem conversão automática em arrays.
+* Correção de um problema em que o painel Propriedades não exibia campos quando um modelo era definido, mas não continha conteúdo.
+   * Isso causava um estado de carregamento infinito para o painel Propriedades, para respostas vazias de detalhes, como Fragmentos de conteúdo vazios.
+* A configuração ESLint foi refatorada para compatibilidade com a versão 9, incluindo regras atualizadas e suporte a plug-in.
+
+## Desaprovações {#deprecations}
+
+* O componente `text-input` agora está oficialmente obsoleto.
+   * Em `model-definition.json`, use o componente de texto para criar entradas de texto para o painel Propriedades.

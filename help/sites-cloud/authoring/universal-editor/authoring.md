@@ -5,9 +5,9 @@ exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 9941c652a1509934662cdaae6d187d1a28a1cc31
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2252'
 ht-degree: 10%
 
 ---
@@ -129,6 +129,8 @@ Dependendo das necessidades do fluxo de trabalho, talvez você queira editar o F
 1. Em seguida, selecione o ícone adicionar no painel de propriedades.
 
    ![Selecione o ícone adicionar](assets/add-icon.png)
+
+1. Se mais de um componente for permitido para o contêiner, selecione aquele que deseja inserir na lista suspensa. Se somente um componente for permitido, ele será inserido automaticamente.
 
 O componente é inserido no container e pode ser editado no editor.
 

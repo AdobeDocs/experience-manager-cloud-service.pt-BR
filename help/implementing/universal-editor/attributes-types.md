@@ -4,10 +4,10 @@ description: Saiba mais sobre os atributos de dados e os tipos de item exigidos 
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 1a122fee45fadfb32239d9407aeac0a59b4b2470
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 44%
+source-wordcount: '554'
+ht-degree: 45%
 
 ---
 
@@ -52,6 +52,6 @@ Para que um aplicativo possa ser editado pelo Editor universal, ele deve ser ins
 * Não é necessário diretamente na tag em que o `data-aue-type` está definido.
 * Caso não esteja definido, o atributo `data-aue-resource` de um pai mais próximo será usado.
 
-`data-aue-prop` é obrigatório sempre que você quiser fazer uma edição em contexto, exceto para um contêiner em que é opcional (se o contêiner for um fragmento de conteúdo e a prop apontar para um campo de várias referências).
+`data-aue-prop` é obrigatório sempre que você quiser editar em contexto, exceto para um contêiner em que é opcional (se o contêiner for um fragmento de conteúdo e a prop apontar para um campo de várias referências).
 
 * O `data-aue-prop` é o atributo a ser atualizado para a chave primária de `data-aue-resource`.

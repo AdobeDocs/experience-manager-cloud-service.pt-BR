@@ -5,9 +5,9 @@ solution: Experience Manager Sites
 feature: Authoring
 role: User
 exl-id: 213ef604-1a09-41f1-b051-3d8254b8164f
-source-git-commit: 40f3f4652dbfce9bda65b8e69c349b9a8a563469
+source-git-commit: 597315a7d569ebd62243322c543627b7a3535a6b
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1820'
 ht-degree: 24%
 
 ---
@@ -154,6 +154,10 @@ A barra de localização mostra o endereço da página que você está editando.
 Selecione o ícone de configurações do cabeçalho de autenticação se precisar [definir um cabeçalho de autenticação personalizado para fins de desenvolvimento local](/help/implementing/universal-editor/developer-overview.md#auth-header).
 
 ![Botão de configurações do cabeçalho de autenticação](assets/authentication-header-settings.png)
+
+>[!NOTE]
+>
+>Esse botão fica oculto por padrão, pois tem valor limitado na maioria dos casos. Se você precisar, envie um email para o Gerente de sucesso do cliente da Adobe a partir do endereço de email associado à sua Adobe ID.
 
 #### Configurações do emulador {#emulator}
 

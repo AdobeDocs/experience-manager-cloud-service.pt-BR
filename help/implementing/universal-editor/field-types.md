@@ -4,9 +4,9 @@ description: Saiba mais sobre campos e os tipos de componentes que o Editor univ
 exl-id: cb4567b8-ebec-477c-b7b9-53f25b533192
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 584dba3fb28c54d19d8a4162a3879ff30f7fe352
+source-git-commit: 199ee7e11f6706773bd426c3d27236d6ea791a6c
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1568'
 ht-degree: 8%
 
 ---
@@ -101,7 +101,7 @@ Um objeto de campo tem a seguinte definição de tipo.
 | `readOnly` | `boolean` | O campo é somente leitura | Não |
 | `hidden` | `boolean` | O campo está oculto por padrão? | Não |
 | `condition` | `RulesLogic` | Regra para mostrar ou ocultar o campo com base em uma [condição](/help/implementing/universal-editor/customizing.md#conditionally-hide) | Não |
-| `multi` | `boolean` | O campo é um campo múltiplo? | Não |
+| `multi` | `boolean` | O campo é um campo múltiplo<br/>Observe que o aninhamento de contêineres não é permitido para campos múltiplos no painel de propriedades | Não |
 | `validation` | `ValidationType` | Regra ou regras de validação para o campo | Não |
 | `raw` | `unknown` | Dados brutos que podem ser usados pelo componente | Não |
 
@@ -289,7 +289,7 @@ Semelhante a um booleano, um tipo de componente Grupo de caixas de seleção per
 
 #### Contêiner {#container}
 
-Um tipo de componente de contêiner permite o agrupamento de componentes, incluindo suporte a vários campos. Ela oferece uma configuração adicional.
+Um tipo de componente de contêiner permite o agrupamento de componentes, incluindo suporte a vários campos. Ela oferece uma configuração adicional. Observe que o aninhamento de contêineres não é permitido para vários campos no painel de propriedades
 
 | Configuração | Tipo de valor | Descrição | Obrigatório |
 |---|---|---|---|
