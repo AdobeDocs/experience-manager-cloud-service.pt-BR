@@ -3,10 +3,11 @@ title: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 
 description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Service 2025.5.0.
 feature: Release Information
 role: Admin
-source-git-commit: df16d5c7ee666f563cf4bbc861df4210318f7f36
+exl-id: b7a21533-9db1-4111-814c-cab917041be4
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '2108'
-ht-degree: 9%
+source-wordcount: '2162'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -36,7 +37,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo de visão geral da versão de maio de 2025, que exibe um resumo dos recursos adicionados na versão 2025.5.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464355?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3464307?quality=12)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -105,15 +106,15 @@ Acesse todas as suas [representações predefinidas do Dynamic Media e cortes in
 
 **Integração nativa do Dynamic Media com o AJO B2C&#x200B;**
 
-[Integração nativa do Experience Manager (AEM) Dynamic Media com o Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/combine/aem-dynamic), permitindo que os profissionais de marketing incorporem facilmente os ativos do AEM Dynamic Media (representação e modelo DM) ao conteúdo do AJO e entreguem atualizações em tempo real e experiências hiperpersonalizadas em todos os canais.
+[Integração nativa do Experience Manager (AEM) Dynamic Media com o Journey Optimizer (AJO) B2C](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/combine/aem-dynamic), permitindo que os profissionais de marketing incorporem facilmente os ativos do AEM Dynamic Media (representação e modelo DM) ao conteúdo do AJO e entreguem atualizações em tempo real e experiências hiperpersonalizadas em todos os canais.
 
->[!VIDEO](https://video.tv.adobe.com/v/3463787/?learn=on&enablevpops=&autoplay=true&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3457695/?learn=on&enablevpops=&autoplay=true)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Recursos de pré-lançamento
 
-* [Editor universal - Fragmentos de formulário](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): o Editor universal agora permite criar e reutilizar fragmentos de formulário do Forms adaptável. Esses fragmentos são seções de formulário reutilizáveis (por exemplo, detalhes de contato, campos de consentimento) que podem ser criadas uma vez e aplicadas em vários formulários. Esse recurso simplifica a criação de formulários, garante a consistência e melhora a eficiência da criação.
+* [Editor Universal para Forms Forms Adaptável e Fragmentos de Formulário](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): o Editor Universal agora oferece suporte à criação de Fragmentos de Formulário Adaptáveis e Reutilizáveis. Os autores podem criar formulários visualmente, configurar ações de envio e adicionar a validação do reCAPTCHA, tudo em um ambiente de criação simplificado do WYSIWYG. Esse recurso acelera a criação de formulários, melhora a consistência e melhora a proteção contra spam e abuso automatizado.
 
 * [Biblioteca de documentos do SharePoint - Salvar anexos com nomes de arquivo originais](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): agora há a opção de salvar anexos de formulário usando seus nomes de arquivo originais ao armazená-los em uma Biblioteca de Documentos do SharePoint. Esse aprimoramento simplifica a identificação e o gerenciamento de arquivos carregados.
 
@@ -131,7 +132,7 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 #### Integração do Adobe Experience Platform (AEP) com o Forms
 
-Os recursos de integração entre o Forms e o AEP agora estão disponíveis para os primeiros usuários.
+* [Integração do AEM Forms com o Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): o AEM Forms ao Adobe Experience Platform Connector permite a integração perfeita entre o Adaptive Forms e o Adobe Experience Platform. Esse recurso permite que os dados do formulário sejam mapeados para esquemas XDM e enviados diretamente para a AEP em tempo real. Ele simplifica a captura de dados para casos de uso de personalização e ativação em soluções da Adobe Experience Cloud.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
@@ -256,7 +257,7 @@ Saiba mais na [documentação sobre encaminhamento de logs](/help/implementing/d
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

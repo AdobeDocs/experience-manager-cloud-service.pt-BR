@@ -4,17 +4,17 @@ description: O editor de regras adaptáveis do Forms ajuda os usuários a escrev
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner, Intermediate
-source-git-commit: 780c68f0c21ef94ff6a73ce991370100b1a88db9
+exl-id: b6ad377f-6697-4bc8-83bb-9e1bbea4cfd6
+source-git-commit: 7d5e9690d84d2389576eb85b2030271b76588488
 workflow-type: tm+mt
 source-wordcount: '2298'
 ht-degree: 0%
 
 ---
 
-
 # Interface do usuário do Editor de regras para o Forms adaptável com base nos Componentes principais
 
-A interface do usuário do Editor de regras para o Forms adaptável com base nos Componentes principais melhora o processo de criação de formulários no Adobe Experience Manager (AEM). Ele permite que usuários empresariais e desenvolvedores implementem comportamento dinâmico e lógica complexa em formulários, escrevendo regras que acionam ações com base em condições predefinidas, entradas de usuário e interações. Este recurso suporta funcionalidades modernas do JavaScript, incluindo recursos ES10, e oferece um editor visual intuitivo que simplifica o processo de escrita de regras.
+A interface do usuário do Editor de regras para o Forms adaptável com base nos Componentes principais melhora o processo de criação de formulários no Adobe Experience Manager (AEM). Ele permite que usuários empresariais e desenvolvedores implementem comportamento dinâmico e lógica complexa em formulários, escrevendo regras que acionam ações com base em condições predefinidas, entradas de usuário e interações. Esse recurso oferece suporte a funcionalidades modernas do JavaScript até ES2022 e oferece um editor visual intuitivo que simplifica o processo de redação de regras.
 O Editor de regras é fundamental para simplificar a experiência de preenchimento de formulários, garantindo precisão e eficiência. Ela permite a validação ou a redefinição de painéis e formulários, além da execução de funções personalizadas para calcular valores de objetos de formulário. Com suporte a condições aninhadas e a capacidade de chamar serviços de Modelo de dados de formulário, a interface do usuário do Editor de regras é um componente essencial para criar formulários responsivos, amigáveis e adaptáveis.
 
 ## Noções básicas sobre a interface do usuário do editor de regras {#understanding-the-rule-editor-user-interface}
@@ -238,7 +238,7 @@ Você pode escrever uma regra combinada para controlar a visibilidade do campo S
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/br/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -340,7 +340,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=pt-BR#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]

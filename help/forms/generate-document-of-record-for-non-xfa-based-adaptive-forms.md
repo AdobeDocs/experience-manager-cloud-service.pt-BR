@@ -4,9 +4,9 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) do A
 feature: Adaptive Forms, Foundation Components
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
 role: User, Developer
-source-git-commit: 76301ca614ae2256f5f8b00c41399298c761ee33
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '4170'
+source-wordcount: '4225'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 | Versão | Link do artigo |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
 | AEM as a Cloud Service | Este artigo |
 
 ## Visão geral {#overview}
@@ -234,7 +234,7 @@ A tabela a seguir descreve os componentes do formulário adaptável e os compone
   </tr>
   <tr>
    <td>Botão de redefinição</td>
-   <td>Botão Redefinir</td>
+   <td>Botão de redefinir</td>
    <td>falso</td>
    <td> </td>
   </tr>
@@ -251,7 +251,7 @@ A tabela a seguir descreve os componentes do formulário adaptável e os compone
    <td> </td>
   </tr>
   <tr>
-   <td>Anexo de arquivo</td>
+   <td>Arquivo em anexo</td>
    <td> </td>
    <td>falso</td>
    <td>Não disponível no documento de modelo de registro. Disponível somente no documento de registro por meio de anexos.</td>
@@ -395,6 +395,14 @@ Para localizar as informações de marca inseridas na guia Documento de registro
    ```
 
 1. Para salvar as alterações de identidade visual, selecione **[!UICONTROL Concluído]**.
+
+>[!NOTE]
+> 
+> Para exibir um título de formulário personalizado em seu Documento de Registro, edite o **Título de Formulário Personalizado** em **Propriedades do Documento de Registro** > **Propriedades da Página Mestra**. Este título personalizado:
+> 
+> * Aparece no cabeçalho do PDF gerado
+> * Aparece como o Título nas propriedades do documento do PDF
+> * Aparece como o Título da exibição inicial quando a PDF é aberta
 
 ## Suporte a documento de registro no editor de formulário adaptável {#dor-support-in-adaptiveform}
 

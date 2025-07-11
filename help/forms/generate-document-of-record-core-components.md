@@ -4,9 +4,9 @@ description: Saiba como gerar um modelo para um Documento de registro (DoR) para
 feature: Adaptive Forms, Core Components
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 role: User, Developer
-source-git-commit: 2637adfbac0e266abe5a023b9253e7e702884709
+source-git-commit: 2a780b6d1263fd70be6fc54fcc79282046f82fab
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3207'
 ht-degree: 1%
 
 ---
@@ -221,7 +221,7 @@ A tabela a seguir descreve os componentes do formulário adaptável e os compone
   </tr>
   <tr>
    <td>Botão de redefinição</td>
-   <td>Botão Redefinir</td>
+   <td>Botão de redefinir</td>
    <td>falso</td>
    <td> </td>
   </tr>
@@ -232,7 +232,7 @@ A tabela a seguir descreve os componentes do formulário adaptável e os compone
    <td> </td>
   </tr>
   <tr>
-   <td>Anexo de arquivo</td>
+   <td>Arquivo em anexo</td>
    <td> </td>
    <td>falso</td>
    <td>Não disponível no documento de modelo de registro. Disponível somente no documento de registro por meio de anexos.</td>
@@ -380,7 +380,13 @@ Para localizar as informações de marca inseridas na guia Documento de registro
 
 1. Para salvar as alterações de identidade visual, selecione **[!UICONTROL Concluído]**.
 
-
+>[!NOTE]
+> 
+> Para exibir um título de formulário personalizado em seu Documento de Registro, edite o **Título de Formulário Personalizado** em **Propriedades do Documento de Registro** > **Propriedades da Página Mestra**. Este título personalizado:
+> 
+> * Aparece no cabeçalho do PDF gerado
+> * Aparece como o Título nas propriedades do documento do PDF
+> * Aparece como o Título da exibição inicial quando a PDF é aberta
 
 ## Layouts de tabela e coluna para painéis no documento de registro {#table-and-column-layouts-for-panels-in-document-of-record}
 

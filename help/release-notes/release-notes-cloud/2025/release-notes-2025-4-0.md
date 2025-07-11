@@ -4,9 +4,9 @@ description: Notas de versão do  [!DNL Adobe Experience Manager]  as a Cloud Se
 feature: Release Information
 role: Admin
 exl-id: 48e09824-5c67-49d8-8896-358d679649fc
-source-git-commit: c1ff27a76309628f1fb7b816092172aca7c6a738
+source-git-commit: c8391e09b7e2888423187f48360423c52b18fe0a
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1828'
 ht-degree: 11%
 
 ---
@@ -19,7 +19,7 @@ A seção a seguir descreve as notas da versão de recursos do [!DNL Experience 
 >
 >A partir desta seção, você pode navegar até as notas das versões anteriores, como as de 2023 ou 2024.
 >
->Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
+>Dê uma olhada no [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para saber mais sobre as próximas ativações de recursos do [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Encontre as notas de versão de manutenção mais recentes [aqui](/help/release-
 
 Assista ao vídeo Visão geral da versão de abril de 2025 que exibe um resumo dos recursos adicionados na versão 2025.4.0:
 
->[!VIDEO](https://video.tv.adobe.com/v/3464007?quality=12&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3463991?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
@@ -65,7 +65,7 @@ Além disso, os clientes que usam o AEM 6.5 devem estar cientes de que a pilha d
 
 A guia Largura de banda no painel de relatórios do Dynamic Media Classic não é mais compatível desde abril de 2025.
 
-Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
+Consulte [Largura de Banda e Armazenamento, Tipos de relatórios](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/setup/administration-setup#types-of-reports).
 
 ## Novos recursos no Assets View {#new-features-assets-view}
 
@@ -81,19 +81,21 @@ Agora é possível selecionar e comparar rapidamente qualquer versão de um ativ
 
 ![comparar versões do ativo](/help/assets/assets/version-compare2.png)
 
+
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Recursos de pré-lançamento
 
-* [Editor universal - Fragmentos de formulário](/help/edge/docs/forms/universal-editor/creating-form-fragments.md): o Editor universal agora permite criar e reutilizar fragmentos de formulário do Forms adaptável. Esses fragmentos são seções de formulário reutilizáveis (por exemplo, detalhes de contato, campos de consentimento) que podem ser criadas uma vez e aplicadas em vários formulários. Esse recurso simplifica a criação de formulários, garante a consistência e melhora a eficiência da criação.
+* [Editor Universal para Forms Forms Adaptável e Fragmentos de Formulário](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md): o Editor Universal agora oferece suporte à criação de Fragmentos de Formulário Adaptáveis e Reutilizáveis. Os autores podem criar formulários visualmente, configurar ações de envio e adicionar a validação do reCAPTCHA, tudo em um ambiente de criação simplificado do WYSIWYG. Esse recurso acelera a criação de formulários, melhora a consistência e melhora a proteção contra spam e abuso automatizado.
 
 * [Biblioteca de documentos do SharePoint - Salvar anexos com nomes de arquivo originais](/help/forms/connect-forms-to-sharepoint-document-library.md#connect-an-adaptive-form-to-microsoft-sharepoint-document-library): agora há a opção de salvar anexos de formulário usando seus nomes de arquivo originais ao armazená-los em uma Biblioteca de Documentos do SharePoint. Esse aprimoramento simplifica a identificação e o gerenciamento de arquivos carregados.
 
 * **Editor de regras**:
    * [Condição Binária com Evento de Clique na Cláusula &quot;When&quot;](/help/forms/rule-editor-core-components-events-operators.md#available-operator-types-and-events-in-rule-editor): o Editor de Regras agora permite combinar um evento de clique de botão (_É Clicado_) com outras condições na cláusula &quot;When&quot;. Isso permite um controle mais preciso sobre a execução da regra com base na interação do usuário e outros fatores. Observação: ao usar várias condições, o evento de clique deve ser a primeira condição listada.
    * [Condições de Validação para Campos e Painéis](/help/forms/rule-editor-core-components-usecases.md): o Editor de Regras agora inclui condições _IsValid_ e _IsNotValid_. Isso permite verificar o status de validação de campos específicos ou painéis inteiros (incluindo layouts como Guias horizontais, Guias verticais, Acordeões e Assistentes), facilitando a navegação aprimorada do formulário e a experiência do usuário com base nos resultados da validação.
-* **Gerenciamento de Escopo aprimorado para Listas do SharePoint**: os sites do SharePoint agora oferecem suporte a todos os caminhos gerenciados, por exemplo, /sites e /team. Esse aprimoramento permite uma integração mais ampla em várias estruturas de site do SharePoint, oferecendo maior flexibilidade na conexão com o conteúdo organizacional.
-* **Suporte para Salvar Documento de Registro na Lista do SharePoint**: o Forms criado usando um Modelo de Dados de Formulário (FDM) baseado em Lista do SharePoint agora pode salvar o Documento de Registro (DoR) nas Listas do SharePoint configurando a propriedade do campo Documento de Referência de Associação de Registro. Esse aprimoramento permite a integração perfeita de dados e documentos de formulário compatíveis com o armazenamento da SharePoint.
+* [Gerenciamento de Escopo aprimorado para Listas do SharePoint](/help/forms/connect-forms-to-sharepoint-list.md): os sites do SharePoint agora oferecem suporte a todos os caminhos gerenciados, por exemplo, /sites e /team. Esse aprimoramento permite uma integração mais ampla em várias estruturas de site do SharePoint, oferecendo maior flexibilidade na conexão com o conteúdo organizacional.
+* [Suporte para Salvar Documento de Registro na Lista do SharePoint](/help/forms/generate-document-of-record-core-components.md#bind-adaptive-form-components-with-template-fields): o Forms criado usando um Modelo de Dados de Formulário (FDM) baseado em Lista do SharePoint agora pode salvar o Documento de Registro (DoR) nas Listas do SharePoint configurando a propriedade do campo Documento de Referência de Associação de Registro. Esse aprimoramento permite a integração perfeita de dados e documentos de formulário compatíveis com o armazenamento da SharePoint.
+* [Suporte a Mapeamento Automático para Fragmentos de Formulário Adaptáveis](/help/forms/adaptive-form-fragments-core-components.md#auto-mapping-support-for-fragments-in-an-adaptive-form): o Adaptive Forms agora oferece suporte à inserção automática de fragmentos correspondentes quando os objetos de esquema se alinham com uma estrutura de fragmento definida, simplificando a criação de formulários e promovendo a reutilização.
 
 ### Recursos de acesso antecipado no AEM Forms {#forms-new-early-access-features}
 
@@ -103,7 +105,7 @@ Estas notas de versão listam as inovações fornecidas na versão atual. Para o
 
 #### Integração do Adobe Experience Platform (AEP) com o Forms
 
-Os recursos de integração entre o Forms e o AEP agora estão disponíveis para os primeiros usuários.
+* [Integração do AEM Forms com o Adobe Experience Platform](/help/forms/aem-forms-aep-connector.md): o AEM Forms ao Adobe Experience Platform Connector permite a integração perfeita entre o Adaptive Forms e o Adobe Experience Platform. Esse recurso permite que os dados do formulário sejam mapeados para esquemas XDM e enviados diretamente para a AEP em tempo real. Ele simplifica a captura de dados para casos de uso de personalização e ativação em soluções da Adobe Experience Cloud.
 
 ## Complemento CIF {#cloud-services-cif}
 
@@ -125,7 +127,7 @@ Os recursos de integração entre o Forms e o AEP agora estão disponíveis para
 
 Os desenvolvedores podem integrar profundamente os recursos do AEM as Cloud Service em seus próprios aplicativos e ferramentas. As novas APIs do AEM as a Cloud Service seguem a especificação OpenAPI, com o objetivo de serem consistentes, bem documentadas e fáceis de usar. As credenciais para endpoints que exigem autenticação são geradas pela criação de projetos do Adobe Developer Console e oferecem suporte a OAuth de servidor para servidor, aplicativo da Web e aplicativo de página única (SPA).
 
-[Consulte a lista completa](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) de APIs baseadas em OpenAPI, [saiba mais](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustre a configuração e o uso.
+[Consulte a lista completa](https://developer.adobe.com/experience-cloud/experience-manager-apis/#openapi-based-apis) de APIs baseadas em OpenAPI, [saiba mais](/help/implementing/developing/open-api-based-apis.md) e experimente um [tutorial completo](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/aem-apis/openapis/invoke-api-using-oauth-s2s) que ilustre a configuração e o uso.
 
 Assista a este vídeo para saber como configurar uma API autenticada para uso posterior:
 
@@ -196,7 +198,7 @@ Email [aemcs-edgecompute-feedback@adobe.com](mailto:aemcs-edgecompute-feedback@a
 
 ## Guias do [!DNL Experience Manager] {#guides}
 
-Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+Você pode encontrar uma lista completa de recursos novos e aprimorados da versão mais recente do Adobe Experience Manager Guides [aqui](https://experienceleague.adobe.com/en/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
 
 ## Cloud Manager {#cloud-manager}
 

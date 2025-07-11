@@ -6,9 +6,9 @@ keywords: Adicionar fragmentos de formulário adaptável, Fragmentos de formulá
 feature: Adaptive Forms, Core Components
 exl-id: 3a9ad1b7-2f6f-4ca9-a1c9-549c4238c59e
 role: User, Developer
-source-git-commit: 2b76f1be2dda99c8638deb9633055e71312fbf1e
+source-git-commit: a99bd181a079713571fd659ec2a04207c5eeee90
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1479'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service (Componentes principais) | Este artigo |
 | AEM as a Cloud Service (Componentes de base) | [Clique aqui](/help/forms/adaptive-form-fragments.md) |
-| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html?lang=pt-BR) |
+| AEM 6.5 | [Clique aqui](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-form-fragments.html) |
 
 Embora cada formulário seja projetado para um propósito específico, há alguns segmentos comuns na maioria dos formulários, como o de fornecer detalhes pessoais, como nome e endereço, detalhes familiares e detalhes de renda. Os desenvolvedores de formulários são necessários para criar esses segmentos comuns sempre que um novo formulário for criado.
 
@@ -32,7 +32,7 @@ Você pode adicionar um fragmento várias vezes a um documento e usar as proprie
 
 >[!NOTE]
 >
-> Você pode personalizar facilmente a experiência do fragmento para usuários com a [Caixa de diálogo de Configuração e Caixa de diálogo de Design do componente de Fragmento de Formulário](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
+> Você pode personalizar facilmente a experiência do fragmento para usuários com a [Caixa de diálogo de Configuração e Caixa de diálogo de Design do componente de Fragmento de Formulário](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/adaptive-form-fragment).
 
 ## Criar um fragmento de formulário adaptável {#create-a-fragment}
 
@@ -119,15 +119,14 @@ Você pode usar um fragmento de formulário com base em nenhum e em esquema vár
 
 ![usando vários fragmentos no formulário adaptável](/help/forms/assets/using-multiple-fragment-af.gif)
 
-<!--
+## Suporte ao mapeamento automático para fragmentos em um Formulário adaptável
 
-## Auto mapping of fragments for data binding {#auto-mapping-of-fragments-for-data-binding}
+Ao criar um fragmento de formulário adaptável com base em uma definição de esquema JSON, ele pode ser reutilizado automaticamente em formulários criados a partir do mesmo esquema.
+Se você arrastar e soltar um objeto de esquema ou qualquer objeto aninhado que corresponda ao mapeamento de definição de esquema JSON de um fragmento de formulário adaptável, o objeto será substituído pelo fragmento de formulário adaptável correspondente. Em vez de adicionar um painel com campos individuais, o formulário insere o fragmento de formulário adaptável mapeado.
 
-When you create an Adaptive Form fragment using an XFA form template or XSD complex type and drag-drop the fragment to an Adaptive Form, the XFA fragment or the XSD complex type is automatically replaced by the corresponding Adaptive Form fragment whose fragment model root is mapped to the XFA fragment or XSD complex Type.
+![Arrastar e soltar um fragmento](/help/forms/assets/fragment.png)
 
-You can change the fragment asset and its bindings from the Edit component dialog.
-
-You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragment library in AEM content finder and provide the correct bind reference from the Edit component dialog of the Adaptive Form fragment panel. -->
+Você também pode arrastar e soltar um fragmento de formulário adaptável vinculado da biblioteca de fragmentos de formulário adaptável no localizador de conteúdo do AEM e fornecer a referência de vinculação correta na caixa de diálogo Editar componente do painel de fragmentos do formulário adaptável.
 
 ## Gerenciar fragmentos {#manage-fragments}
 
@@ -149,7 +148,7 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
   </tr>
    <tr>
    <td><p>Visualização</p> </td>
-   <td><p>Fornece opções para visualizar o fragmento como um HTML ou uma visualização personalizada mesclando dados de um arquivo XML com o fragmento. Para obter mais informações, consulte <a>Visualizando um formulário</a>.<br /> <br /> </p> </td>
+   <td><p>Fornece opções para visualizar o fragmento como uma HTML ou uma visualização personalizada mesclando dados de um arquivo XML com o fragmento. Para obter mais informações, consulte <a>Visualizando um formulário</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Download</p> </td>
@@ -164,7 +163,7 @@ You can also drag-drop a bound Adaptive Form fragment from Adaptive Form Fragmen
    <td><p>Gera um dicionário para localizar o fragmento selecionado. Para obter mais informações, consulte <a>Localizando Forms Adaptável</a>.<br /> <br /> </p> </td>
   </tr>
   <tr>
-   <td><p>Publish / Desfazer publicação</p> </td>
+   <td><p>Publicar/Desfazer publicação</p> </td>
    <td><p>Publica/cancela a publicação do fragmento selecionado.<br /> <br /> </p> </td>
   </tr>
   <tr>

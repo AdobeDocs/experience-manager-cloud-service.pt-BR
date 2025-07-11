@@ -5,10 +5,10 @@ Keywords: document generation, PDF manipulation, document security, batch proces
 feature: Adaptive Forms, APIs & Integrations, Document Services
 role: Admin, Developer, User
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: a5bbcd19b41b3aeff94f900da13e98de65651f8c
+source-git-commit: 8803896bf728524833a0dde004ddaa2e8b6bb103
 workflow-type: tm+mt
-source-wordcount: '2497'
-ht-degree: 33%
+source-wordcount: '2663'
+ht-degree: 27%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 33%
 
 > **Disponibilidade de Versão**
 >
-> * **AEM 6.5**: [Visão Geral dos Serviços de Documento da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html?lang=pt-BR)
+> * **AEM 6.5**: [Visão Geral dos Serviços de Documento da AEM](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-services/overview-aem-document-services.html)
 > * **AEM as a Cloud Service**: Este artigo
 
 ## Introdução
@@ -44,7 +44,7 @@ A [documentação de referência da API](https://developer.adobe.com/experience-
 
 ## Geração de documentos
 
-As APIs de geração de documentos de comunicações ajudam a combinar um modelo (XFA ou PDF) com dados do cliente (XML) para gerar documentos em formatos de PDF e impressão, como formatos PS, PCL, DPL, IPL e ZPL. Essas APIs utilizam modelos PDF e XFA com [Dados XML](communications-known-issues-limitations.md#form-data) para gerar um único documento por demanda ou vários documentos usando um trabalho em lote.
+As APIs de geração de documentos de comunicação ajudam a combinar um modelo (XFA ou PDF) com os dados do cliente (XML) para gerar documentos no PDF, AFP (Advanced Function Presentation) e formatos de impressão como formatos PS, PCL, DPL, IPL e ZPL. Essas APIs usam modelos PDF e XFA com [dados XML](communications-known-issues-limitations.md#form-data) para gerar um único documento sob demanda ou vários documentos usando um trabalho em lotes.
 
 Normalmente, você cria um modelo usando o [Designer](use-forms-designer.md) e usa as APIs de comunicações para mesclar dados com o modelo. Seu aplicativo pode enviar o documento de saída para uma impressora de rede, uma impressora local ou para um sistema de armazenamento para arquivamento. Um fluxo de trabalho típico personalizado e pronto para uso é semelhante ao seguinte:
 
@@ -54,14 +54,28 @@ Dependendo do caso de uso, também é possível disponibilizar esses documentos 
 
 ### Principais recursos de geração de documentos
 
-#### Criar documentos PDF {#create-pdf-documents}
+#### Criar documentos em formatos eletrônicos PDF/AFP
 
-Você pode usar as APIs de geração de documentos para criar um documento PDF baseado em um design de formulário e dados de formulário XML. A saída é um documento PDF não interativo. Ou seja, os usuários não podem inserir ou modificar os dados do formulário. Um fluxo de trabalho básico é mesclar dados de formulário XML a um design de formulário para criar um documento PDF. A ilustração a seguir mostra a mesclagem de um design de formulário e dados de formulário XML para produzir um documento PDF.
+Você pode usar as APIs de geração de documentos para criar um documento nos formatos PDF ou AFP com base em um design de formulário e dados de formulário XML. A saída é um documento não interativo. Ou seja, os usuários não podem inserir ou modificar os dados do formulário. Um fluxo de trabalho básico é mesclar dados de formulário XML com um design de formulário para criar um documento. A ilustração a seguir mostra a mesclagem de um design de formulário e dados de formulário XML para produzir um documento PDF.
 
-![Criar documentos PDF](assets/outPutPDF_popup.png)
-Figura: Fluxo de trabalho típico para criar um documento PDF
+![Criar documentos do PDF](assets/outPutPDF_popup.png)
+Figura: Fluxo de trabalho típico para criar um documento
 
-A API de geração de documento retorna o documento PDF gerado. Opcionalmente, também é possível carregar os PDFs gerados no Armazenamento de blobs do Azure.
+A tabela abaixo exibe a diferença entre os formatos AFP e PDF:
+
+| **Recurso** | **AFP (Apresentação de Função Avançada)** | **PDF (Formato de Documento Portátil)** |
+|---------------------------|--------------------------------------------------------------------|-------------------------------------------------------------|
+| **Finalidade** | Impressão e produção de grandes volumes de documentos transacionais | Compartilhamento e exibição de documentos de uso geral |
+| **Caso de uso** | Demonstrativos bancários, contas, faturas, documentos de seguro | E-books, formulários, relatórios, currículos, manuais |
+| **Plataforma de Origem** | Desenvolvido pela IBM | Desenvolvido pela Adobe |
+| **Estrutura** | Formato orientado por página com campos e objetos estruturados | Orientado a página, mas com layout fixo |
+| **Capacidade de edição** | Projetado para impressão em produção e raramente é editado | Pode ser editado com várias ferramentas, por exemplo, Adobe Acrobat |
+| **Tamanho e desempenho do arquivo** | Otimizado para desempenho em ambientes de impressão de alta velocidade | Pode ser maior e menos otimizado para saída em massa |
+| **Interatividade** | Mínimo para nenhum; páginas estáticas | Suporta elementos interativos como formulários, links, JavaScript |
+| **Controle de saída** | Controle refinado sobre o layout de impressoras | Layout visual otimizado para tela e impressão |
+| **Fontes e Elementos Gráficos** | Usa referências de fonte e recurso; requer renderizadores para interpretar | Incorpora fontes e imagens diretamente no arquivo |
+
+A API de geração de documento retorna o documento PDF ou o documento AFP gerado. Opcionalmente, também é possível carregar os PDFs gerados no Armazenamento de blobs do Azure.
 
 <span class="preview"> O carregamento dos PDFs gerados usando a API de geração de documentos para o recurso de Armazenamento Azure Blob está no [Programa Early Adoter](/help/forms/early-access-ea-features.md). Você pode escrever para aem-forms-ea@adobe.com a partir da sua ID de email oficial para ingressar no programa de adoção antecipada e solicitar acesso ao recurso. </span>
 
