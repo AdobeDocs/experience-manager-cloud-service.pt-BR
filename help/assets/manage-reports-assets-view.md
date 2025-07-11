@@ -6,10 +6,10 @@ feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 132f601e1bbeeea59dc6a14392a9f6c786b20682
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 85%
+source-wordcount: '1504'
+ht-degree: 86%
 
 ---
 
@@ -52,7 +52,6 @@ O ambiente de exibição do AEM Assets oferece recursos abrangentes de relatóri
    1. **Descrição:** adicione uma descrição opcional ao relatório.
    1. **Selecionar caminho de pasta:** selecione um caminho de pasta para gerar o relatório de ativos enviados e baixados nessa pasta específica. Por exemplo, se você precisar que o relatório de ativos seja enviado para uma pasta, especifique o caminho para essa pasta.
    1. **Selecionar intervalo de datas:** selecione o intervalo de datas para exibir a atividade de upload ou download na pasta.
-
    <br>
 
    >[!NOTE]
@@ -143,7 +142,7 @@ Obtenha insights de entrega para ativos entregues com o Dynamic Media, com conta
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Pré-requisitos {#prereqs-dynamic-media-delivery-reports}
@@ -205,7 +204,6 @@ Para agendar um relatório, siga as etapas abaixo:
    1. **Descrição**: adicione uma descrição opcional ao relatório.
    1. **Selecionar caminho de pasta:** selecione um caminho de pasta para gerar um relatório de ativos que serão enviados ou baixados dessa pasta específica no futuro.
    1. Botão **Agendar relatório:** ative-o para agendar o relatório para um momento posterior ou para que ocorra de forma recorrente.
-
       ![agendar relatório](/help/assets/assets/schedule-reports1.svg)
 
    1. **Escolha a frequência:** especifique o intervalo para gerar o relatório (por exemplo, diário, semanal, mensal, anual ou sem repetição) e defina a data e a hora para executar o relatório junto com a data final para recorrência. Para um relatório sem repetição, selecione o intervalo de datas do relatório de acordo com o tipo de atividade selecionado no ambiente do AEM. Por exemplo, se você precisar de um relatório de ativos baixados do dia 10 ao dia 29 (datas futuras) de um mês específico, selecione essas datas no campo **Selecionar intervalo de datas**.
@@ -249,11 +247,11 @@ Clique na opção **[!UICONTROL Insights]**, disponível no painel de navegaçã
 
 * **Carregamentos**: o número de ativos carregados para o ambiente de exibição do Assets nos últimos 30 dias ou 12 meses representados usando um gráfico de linhas.
   ![uploads-insights](/help/assets/assets/insights-uplods2.svg)
-  <!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.-->
+<!--* **Asset Count by Size**: The division of count of assets based on their range of various sizes from 0 MB to 100 GB.
 
-* **Uso de armazenamento**: o uso de armazenamento, em bytes, para o ambiente de exibição do Assets representado por um gráfico de barras.
-  ![uploads-insights](/help/assets/assets/insights-storage-usage1.svg)
-  <!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
+* **Storage usage**: The storage usage, in bytes, for the Assets view environment represented using a bar chart.
+![insights-uploads](/help/assets/assets/insights-storage-usage1.svg)
+<!--* **Delivery**: The graph depicts the count of assets as the delivery dates.-->
 
 <!--* **Asset Count by Asset Type**: Represents count of various MIME types of the available assets. For example, application/zip, image/png, video/mp4, application/postscripte.-->
 

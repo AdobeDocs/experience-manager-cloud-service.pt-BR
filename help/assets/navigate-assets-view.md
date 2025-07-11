@@ -4,10 +4,10 @@ description: Entenda a interface e a navegação no [!DNL Assets view].
 role: User
 exl-id: 1e71ea7d-fee7-4ed0-bb80-d537b57fc823
 feature: Asset Management, Publishing, Collaboration, Asset Processing
-source-git-commit: 79213bcfe5c5ccf7c60a31e6cb757f60a0ba87a7
+source-git-commit: 8aae8b2219e60f0a9220aa34b53bb3c8e19232c1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 72%
+source-wordcount: '980'
+ht-degree: 73%
 
 ---
 
@@ -40,11 +40,8 @@ Ao navegar pelos ativos de uma pasta, você pode usar a interface para exibir mi
 * **Visualizados recentemente**: lista de ativos que você visualizou recentemente. [!DNL Assets view] exibe somente os ativos que você visualiza. Ele não exibe os ativos que você percorre ao navegar pelos arquivos ou pastas do repositório.
 * [Coleções](/help/assets/manage-collections-assets-view.md): uma coleção é um conjunto de ativos, pastas ou outras coleções no modo de exibição Adobe Experience Manager Assets. Use coleções para compartilhar ativos entre usuários. Diferente de pastas, uma coleção pode incluir ativos de locais diferentes. Você pode compartilhar várias coleções com um usuário. Cada coleção contém referências a ativos. A integridade referencial dos ativos é mantida entre as coleções.
 
-<!--
+* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): no [!DNL Assets view], você pode visualizar insights em tempo real no seu painel. A visualização do Assets permite visualizar dados do seu ambiente da visualização do Assets em tempo real, por meio do painel Insights. Você pode visualizar métricas de evento em tempo real dos últimos 30 dias ou dos últimos 12 meses.
 
-* [Insights](/help/assets/manage-reports-assets-view.md#view-live-statistics): In [!DNL Assets view], you can view real-time insights on your dashboard. Assets view enables you to view real-time data for your Assets view environment with the Insights dashboard. You can view real-time event metrics during the last 30 days or for the last 12 months. 
-
--->
 * **Lixeira**: lista os ativos excluídos da pasta raiz **[!UICONTROL Ativos]**. É possível selecionar um ativo na pasta “Lixeira” e restaurá-lo para o local de origem ou excluí-lo permanentemente. Você pode especificar uma palavra-chave ou aplicar filtros, como status do ativo, tipo de arquivo, tipo de MIME, tamanho da imagem, criação de ativos, datas de modificação e expiração, bem como filtrar por ativos descartados pelo usuário atual. Também é possível aplicar filtros personalizados para pesquisar ativos apropriados na pasta Lixeira. Para obter mais informações sobre como usar filtros padrão e personalizados, consulte como [pesquisar ativos no Assets view](/help/assets/search-assets-view.md).
 * **Configurações**: você pode configurar várias opções de exibição do Assets usando **Configurações**, como Formulários de metadados, Relatórios e Gerenciamento de Taxonomia.
 
