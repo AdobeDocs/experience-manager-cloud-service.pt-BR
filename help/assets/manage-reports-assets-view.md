@@ -4,7 +4,9 @@ description: Acesse os dados na seção de relatórios da visualização do Asse
 exl-id: 26d0289e-445a-4b8e-a5a1-b02beedbc3f1
 feature: Asset Insights, Asset Reports
 role: User, Admin, Developer
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+hide: true
+hidefromtoc: true
+source-git-commit: 132f601e1bbeeea59dc6a14392a9f6c786b20682
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 85%
@@ -50,7 +52,6 @@ O ambiente de exibição do AEM Assets oferece recursos abrangentes de relatóri
    1. **Descrição:** adicione uma descrição opcional ao relatório.
    1. **Selecionar caminho de pasta:** selecione um caminho de pasta para gerar o relatório de ativos enviados e baixados nessa pasta específica. Por exemplo, se você precisar que o relatório de ativos seja enviado para uma pasta, especifique o caminho para essa pasta.
    1. **Selecionar intervalo de datas:** selecione o intervalo de datas para exibir a atividade de upload ou download na pasta.
-
    <br>
 
    >[!NOTE]
@@ -141,7 +142,7 @@ Obtenha insights de entrega para ativos entregues com o Dynamic Media, com conta
 <!--
 >[!NOTE]
 > 
->To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/br/enterprise/using/support-for-experience-cloud.html).
+>To get early access to the Dynamic Media Delivery Report on your Dynamic Media account, [create and submit an Adobe Customer Support case](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
 -->
 
 ### Pré-requisitos {#prereqs-dynamic-media-delivery-reports}
@@ -203,7 +204,6 @@ Para agendar um relatório, siga as etapas abaixo:
    1. **Descrição**: adicione uma descrição opcional ao relatório.
    1. **Selecionar caminho de pasta:** selecione um caminho de pasta para gerar um relatório de ativos que serão enviados ou baixados dessa pasta específica no futuro.
    1. Botão **Agendar relatório:** ative-o para agendar o relatório para um momento posterior ou para que ocorra de forma recorrente.
-
       ![agendar relatório](/help/assets/assets/schedule-reports1.svg)
 
    1. **Escolha a frequência:** especifique o intervalo para gerar o relatório (por exemplo, diário, semanal, mensal, anual ou sem repetição) e defina a data e a hora para executar o relatório junto com a data final para recorrência. Para um relatório sem repetição, selecione o intervalo de datas do relatório de acordo com o tipo de atividade selecionado no ambiente do AEM. Por exemplo, se você precisar de um relatório de ativos baixados do dia 10 ao dia 29 (datas futuras) de um mês específico, selecione essas datas no campo **Selecionar intervalo de datas**.
