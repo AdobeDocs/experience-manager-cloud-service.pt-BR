@@ -3,10 +3,10 @@ title: Carregar os ativos aprovados pela sua marca para  [!DNL Content Hub]
 description: Saiba como fazer upload dos ativos aprovados pela sua marca para o Content Hub
 role: User
 exl-id: f1be7cfc-1803-4c17-bb58-947104aa883c
-source-git-commit: 32fdbf9b4151c949b307d8bd587ade163682b2e5
+source-git-commit: dc0f6b5faf75fb7303611e3f25febe89b43a834d
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 5%
+source-wordcount: '761'
+ht-degree: 7%
 
 ---
 
@@ -61,21 +61,6 @@ Para adicionar ativos ao Content Hub, execute as seguintes etapas:
 1. Clique em **[!UICONTROL Carregar]** para carregar ativos para a Content Hub. A caixa de confirmação [!UICONTROL Detalhes da revisão] é exibida. Clique em [!UICONTROL Continuar].
 
 1. O Assets inicia o upload. Clique em [!UICONTROL Novo carregamento] para reiniciar o procedimento de carregamento. Clique em [!UICONTROL Concluído] para concluir o carregamento.
-
-Os administradores também podem configurar os campos obrigatórios e opcionais exibidos durante o upload de ativos, como nome da campanha, palavras-chave, canais e assim por diante. Para obter mais informações, consulte [Configurar a interface do usuário do Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
-
-
-## Adicionar ativos ao Content Hub a partir de fontes de dados do OneDrive ou da Dropbox {#add-assets-onedrive-dropbox}
-
-Para adicionar ativos ao Content Hub a partir de fontes de dados do OneDrive ou do Dropbox:
-
-1. Clique em **[!UICONTROL Adicionar Assets]** para exibir a caixa de diálogo **[!UICONTROL Adicionar ativos aprovados]**, que permite importar ativos do OneDrive ou do Dropbox.
-
-1. Clique em **[!UICONTROL OneDrive]** ou **[!UICONTROL Dropbox]** para iniciar o processo de importação. O Content Hub solicita que você faça logon em sua conta do OneDrive ou do Dropbox e exibe sua estrutura de pastas do OneDrive ou do Dropbox no painel esquerdo.
-
-1. Clique no ícone + adjacente ao arquivo ou ao nome da pasta para exibir o item na lista de Itens selecionados. Depois de selecionar todos os arquivos que precisam ser adicionados ao portal do Content Hub, repita as etapas de 3 a 6 de [Adicionar ativos ao Content Hub a partir do sistema de arquivos local](#add-assets-local-file-system) para concluir o processo de carregamento.
-
-   ![Carregar ativos do OneDrive ou do Dropbox para o Content Hub](assets/add-assets-onedrive-dropbox.png)
 
 Os administradores também podem configurar os campos obrigatórios e opcionais exibidos durante o upload de ativos, como nome da campanha, palavras-chave, canais e assim por diante. Para obter mais informações, consulte [Configurar a interface do usuário do Content Hub](configure-content-hub-ui-options.md#configure-upload-options-content-hub).
 

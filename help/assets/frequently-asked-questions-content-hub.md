@@ -2,9 +2,9 @@
 title: Perguntas frequentes sobre o Content Hub
 description: Obtenha respostas para algumas das perguntas mais frequentes do Centro de conteúdo.
 exl-id: 74b5c308-c1d3-4787-9f1f-f64cf09d298a
-source-git-commit: fb7ce7dbb58be9fef5ab087441457770828d73c8
+source-git-commit: 642440e1349eb94adb2f1875a0c5f36d0673d702
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1496'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ O Content Hub é um recurso que o Adobe fornece e mantém, e não tem nenhum có
 
 Há um programa de acesso antecipado ao Content Hub em programas de sandbox e seus ambientes de produção de autor. Para obter mais informações, consulte [Introdução aos programas de sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-sandbox-programs.md). Para saber mais sobre o programa de acesso antecipado, entre em contato com a equipe de conta da Adobe.
 
-O Content Hub ainda não está disponível para ambientes que não sejam de produção (preparo e desenvolvimento). A disponibilidade esperada para ambientes de preparo/desenvolvimento do Assets Ultimate é março de 2025.
+O Content Hub ainda não está disponível para ambientes que não sejam de produção (preparo e desenvolvimento). A disponibilidade esperada para ambientes de estágio/desenvolvimento do Assets Ultimate é março de 2025.
 
 ## Por que não vejo nenhum ativo depois de fazer logon no Content Hub? {#no-assets-in-content-hub}
 
@@ -84,7 +84,7 @@ Existem algumas configurações de como os usuários são atribuídos ao [!DNL C
    >
    >O usuário atribuído aos perfis de produto Express e Assets em dois Consoles do Administrador precisa ter o mesmo endereço de email e usar uma conta corporativa **Enterprise ou School**, e não a conta **Personal**. A configuração ideal é ter ambos os Admin Consoles configurados como **Federated ID** com uma relação de confiança configurada entre eles, para que o usuário tenha uma experiência de logon único contínua. Alguns dos planos do Express (por exemplo, Equipes do Express) não oferecem suporte ao Federated ID/logon único.
 
-Além dos direitos de produto corretos, a integração do Adobe Express no Content Hub exige que o usuário atribuído tenha pelo menos [!UICONTROL Pode editar] permissões no ambiente de criação do Assets que viabiliza o Content Hub, em pelo menos **[!UICONTROL # /content/dam/hydroated-assets/]** hierarquia de pastas, onde os usuários do Content Hub podem salvar o conteúdo criado com o Express. Consulte [Gerenciamento de permissões](/help/security/touch-ui-principal-view.md) no modo de exibição de Administração (Interface para toque) ou um [gerenciamento de permissões simplificado no modo de exibição de Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
+Além dos direitos de produto corretos, a integração do Adobe Express no Content Hub exige que o usuário atribuído tenha pelo menos [!UICONTROL Pode editar] permissões no ambiente de criação do Assets que viabiliza o Content Hub, em pelo menos **[#UICONTROL /content/dam/hydroated-assets/]** hierarquia de pastas, onde os usuários do Content Hub podem salvar o conteúdo criado com o Express. Consulte [Gerenciamento de permissões](/help/security/touch-ui-principal-view.md) no modo de exibição de Administração (Interface para toque) ou um [gerenciamento de permissões simplificado no modo de exibição de Assets](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/get-started-admins/folder-access/manage-permissions).
 
 ## Posso configurar o Content Hub para que as diretrizes de marca da minha organização sejam exibidas como um link na página inicial? {#content-hub-setup-brand-guidelines}
 
@@ -97,3 +97,42 @@ O Adobe oferece suporte à migração do Brand Portal para o Content Hub, que po
 ## Por que não consigo ver a opção Configurações/configurações do produto no Content Hub? {#ui-configuration-option-missing}
 
 Para acessar a [Interface do Usuário de Configuração](/help/assets/configure-content-hub-ui-options.md), você precisa ser um [Administrador do Content Hub](/help/assets/deploy-content-hub.md##onboard-content-hub-administrator). Se você estiver atribuído ao perfil de produto Administradores do AEM na instância do autor de produção no Adobe Admin Console e ainda não conseguir ver a opção de configuração, verifique se o perfil de produto Administradores do AEM não está renomeado. Consulte [Perfis de produto e de equipe do AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) para obter mais detalhes.
+
+## Como o Content Hub aborda as limitações do Brand Portal? {#content-hub-brand-portal-comparison}
+
+
+A tabela abaixo descreve as principais diferenças entre as duas soluções:
+
+| Área | Recurso | Centro de conteúdo | Brand Portal |
+|---|---|----|----|
+| Configuração da experiência de distribuição | Configurar metadados para filtros, detalhes do ativo e adicionar a página de ativos | ✓ | − |
+|  | Configurar links externos a partir do portal | ✓ | − |
+|  | Configurar mensagens do banner | ✓ | ✓ |
+|  | Configurar imagem de banner para identidade visual | ✓ | ✓ |
+|  | Configurar as cores primária e secundária para a interface do usuário de acordo com os requisitos de marca | ✓ | − |
+| Compartilhamento de ativos do DAM | Compartilhamento de ativos originais aprovados do DAM | ✓ | ✓ |
+|  | Alterações aprovadas no ativo sincronizadas automaticamente | ✓ | − |
+| Pesquisa e filtros | Filtros dinâmicos (opções são exibidas dinamicamente com base nos ativos exibidos) | ✓ | − |
+|  | Pesquisar histórico | ✓ | − |
+| Upload de ativo | Unidade local | ✓ | ✓ |
+|  | Adicionar metadados configuráveis ao carregar ativos | ✓ | − |
+| Download e representações | Baixar ativo original | ✓ | ✓ |
+|  | Compartilhar e baixar representações estáticas do DAM | ✓ | ✓ |
+|  | Baixar representações dinâmicas (predefinição e cortes inteligentes) | ✓ | ✓ |
+|  | Capacidade de restringir a exibição e o download de ativos expirados | ✓ | − |
+| Compartilhamento de link e coleções | Compartilhamento de links para usuários conectados | ✓ | ✓ |
+|  | Coleções públicas | ✓ | ✓ |
+|  | Pesquisar em coleções | ✓ | − |
+|  | Compartilhamento de link anônimo | ✓ | ✓ |
+|  | Coleções privadas | ✓ | ✓ |
+| Permissões | Permissões baseadas em ACL | − | ✓ |
+|  | Controle de acesso baseado em atributos | ✓ | − |
+| Integração expressa | Editar o Content Hub Assets no Adobe Express e salvar no DAM | ✓ | − |
+| Painéis e relatórios | Painel de insights | ✓ | − |
+| Extensibilidade da interface | Pontos de extensão personalizados na página de detalhes do ativo | Disponibilidade limitada | − |
+| Inovações em breve | Coleções favoritas por usuário | ✓ | − |
+|  | Coleções fixadas pelo administrador | ✓ | − |
+|  | Pesquisa semântica | ✓ | − |
+|  | Pesquisa localizada e exibição de metadados | ✓ | − |
+
+
