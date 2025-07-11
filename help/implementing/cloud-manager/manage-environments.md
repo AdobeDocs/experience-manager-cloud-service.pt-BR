@@ -5,9 +5,9 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3e7ce0c7f330ba92b57e36ea8fe5bb17b5998cb1
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2488'
 ht-degree: 35%
 
 ---
@@ -161,9 +161,13 @@ Se quiser provisionar uma [rede avançada](/help/security/configuring-advanced-n
    ![Exibir detalhes do ambiente](assets/view-environment-details.png)
 
 
-## Restaurar o conteúdo de um ambiente (Alpha) {#restore-environment}
+## Restaurar o conteúdo de um ambiente {#restore-environment}
 
-Consulte [Restauração de Conteúdo no AEM as a Cloud Service](/help/operations/restore.md).
+Consulte [Restaurar conteúdo no AEM as a Cloud Service](/help/operations/restore.md).
+
+## Restaurar código anterior implantado {#restore-previous-code-deployed}
+
+Consulte [Restaurar código anterior implantado no AEM as a Cloud Service](/help/operations/restore-previous-code-deployed.md).
 
 
 ### Acessar o serviço de visualização {#access-preview-service}
@@ -304,7 +308,7 @@ Uma nova guia é aberta no navegador com a página de logon do **Developer Conso
 
 Somente um usuário com a função **Desenvolvedor** terá acesso ao **Developer Console**. No entanto, para programas de sandbox, qualquer usuário com acesso ao programa de sandbox tem acesso ao **Developer Console**.
 
-Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
+Consulte [Hibernação e cancelamento da hibernação de ambientes de sandbox](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/programs/introduction-sandbox-programs#hibernation) para obter mais detalhes.
 
 Esta opção também está disponível na guia **Ambiente** da janela **Visão geral** ao clicar no ![ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) de um ambiente individual.
 

@@ -1,18 +1,18 @@
 ---
-title: Restauração de conteúdo no AEM as a Cloud Service
+title: Restaurar conteúdo no AEM as a Cloud Service
 description: Saiba como restaurar conteúdo do backup no AEM as a Cloud Service usando o Cloud Manager.
 exl-id: 921d0c5d-5c29-4614-ad4b-187b96518d1f
 feature: Operations
 role: Admin
-source-git-commit: f5dcf76b662e8bec9248ca11f133f9a82142d877
+source-git-commit: 3aff6beda8bcafc884c46ffdc55c530d581543e4
 workflow-type: tm+mt
-source-wordcount: '1323'
-ht-degree: 26%
+source-wordcount: '1359'
+ht-degree: 23%
 
 ---
 
 
-# Restauração de conteúdo no AEM as a Cloud Service {#content-restore}
+# Restaurar conteúdo no AEM as a Cloud Service {#content-restore}
 
 Você pode restaurar o conteúdo do AEM as a Cloud Service a partir do backup usando o Cloud Manager.
 
@@ -20,7 +20,7 @@ Você pode restaurar o conteúdo do AEM as a Cloud Service a partir do backup us
 
 O processo de restauração de autoatendimento do Cloud Manager copia dados de backups de sistema da Adobe e os restaura em seu ambiente original. Uma restauração é executada para retornar dados que foram perdidos, danificados ou acidentalmente excluídos à sua condição original.
 
-O processo de restauração afeta apenas o conteúdo, deixando o código e a versão do AEM inalterados. Você pode iniciar uma operação de restauração de ambientes individuais a qualquer momento.
+O processo de restauração afeta apenas o conteúdo, deixando o código e a versão do AEM inalterados. Você pode iniciar uma operação de restauração de ambientes individuais a qualquer momento. (Se você precisar restaurar o código-fonte implantado anteriormente de maneira fácil e rápida, sem precisar iniciar uma nova execução de pipeline, poderá usar [Restaurar o Código Anterior Implantado](/help/operations/restore-previous-code-deployed.md)).
 
 O Cloud Manager fornece dois tipos de backups, a partir dos quais você pode restaurar o conteúdo.
 
@@ -87,7 +87,7 @@ Para obter detalhes sobre o gerenciamento de permissões, consulte [Permissões 
      >
      >O cartão **Ambientes** lista apenas três ambientes. Clique em **Mostrar tudo** no cartão para ver *todos* os ambientes do programa.
 
-1. Na tabela Ambientes, à direita de um ambiente cujo conteúdo você deseja restaurar, clique em ![Ícone Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Restaurar Conteúdo**.
+1. Na tabela Ambientes, à direita de um ambiente cujo conteúdo você deseja restaurar, clique em ![Mais ícone ou ícone de menu de reticências](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) e em **Restaurar conteúdo**.
 
    ![Opção Restaurar conteúdo do menu de reticências](/help/operations/assets/environments-ellipsis-menu.png)
 
