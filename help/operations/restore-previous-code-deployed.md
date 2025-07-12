@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->>O recurso descrito neste artigo só está disponível por meio do programa alfa do adotante inicial. Para se inscrever para a versão alfa, consulte [Reversão de um clique para implantações de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>&#x200B;>O recurso descrito neste artigo só está disponível por meio do programa alfa do adotante inicial. Para se inscrever para a versão alfa, consulte [Reversão de um clique para implantações de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Use **Restaurar o código anterior implantado** para reverter um ambiente instantaneamente para sua última compilação bem-sucedida; não é necessária a execução do pipeline.
 
