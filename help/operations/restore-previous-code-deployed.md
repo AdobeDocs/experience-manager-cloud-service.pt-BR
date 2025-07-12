@@ -1,12 +1,12 @@
 ---
-title: Restaure o código Source anterior implantado no AEM as a Cloud Service
+title: Restaure o código Source anterior implantado
 description: Saiba como restaurar um ambiente para sua última compilação bem-sucedida &ndash; nenhuma execução de pipeline é necessária.
 feature: Operations
 role: Admin
 badge: label="Alfa" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
-source-git-commit: d5a740aa3133504f394933bc77a735f7d14230ba
+source-git-commit: ae90f527d398af40cf9e6963d2e27de3368f2e8f
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '523'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->&#x200B;>O recurso descrito neste artigo só está disponível por meio do programa alfa do adotante inicial. Para se inscrever para a versão alfa, consulte [Reversão de um clique para implantações de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
+>>O recurso descrito neste artigo só está disponível por meio do programa alfa do adotante inicial. Para se inscrever para a versão alfa, consulte [Reversão de um clique para implantações de pipeline](/help/implementing/cloud-manager/release-notes/current.md##one-click-rollback).
 
 Use **Restaurar o código anterior implantado** para reverter um ambiente instantaneamente para sua última compilação bem-sucedida; não é necessária a execução do pipeline.
 
