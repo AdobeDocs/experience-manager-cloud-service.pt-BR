@@ -39,7 +39,7 @@ Abaixo estão os pré-requisitos para usar o serviço de Envio do Forms:
 
 ## Configurar o serviço de envio do Forms
 
-Crie um novo projeto do AEM configurado com o Bloco de Forms adaptável. Consulte o artigo [Introdução - Tutorial do desenvolvedor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para saber como criar um novo projeto do AEM. Atualize o arquivo `fstab.yaml` em seu projeto. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o `forms@adobe.com`.
+Crie um novo projeto do AEM configurado com o Bloco de Forms adaptável. Consulte o artigo [Introdução - Tutorial do desenvolvedor](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para saber como criar um novo projeto do AEM. Atualize o arquivo `fstab.yaml` em seu projeto. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o `forms@adobe.com`.
 
 Você pode [configurar o Serviço de Envio do Forms manualmente](#configuring-the-forms-submission-service-manually) ou [configurar o Serviço de Envio do Forms usando a API](#configuring-the-forms-submission-service-using-api).
 
@@ -49,7 +49,7 @@ Você pode [configurar o Serviço de Envio do Forms manualmente](#configuring-th
 
 #### &#x200B;1. Criar um formulário usando uma definição de formulário
 
-Crie um formulário usando o Google Sheets ou o Microsoft Excel. Para saber como criar um formulário usando uma definição de formulário no Microsoft Excel ou no Google Sheets, [clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Crie um formulário usando o Google Sheets ou o Microsoft Excel. Para saber como criar um formulário usando uma definição de formulário no Microsoft Excel ou no Google Sheets, [clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 A captura de tela abaixo exibe a definição de formulário usada para criar o formulário:
 
@@ -61,7 +61,7 @@ A captura de tela abaixo exibe a definição de formulário usada para criar o f
 
 #### &#x200B;2. Ative a planilha para aceitar os dados.
 
-Depois de criar e visualizar o formulário, ative a planilha correspondente para começar a receber dados. adicione uma nova planilha como `incoming`. Você pode [habilitar manualmente a planilha para aceitar os dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
+Depois de criar e visualizar o formulário, ative a planilha correspondente para começar a receber dados. adicione uma nova planilha como `incoming`. Você pode [habilitar manualmente a planilha para aceitar os dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
 
 ![Planilha de entrada](/help/forms/assets/form-submission-incoming-sheet.png)
 
