@@ -66,7 +66,7 @@ export const submitBaseUrl = 'http://localhost:4503';
 
 ### Modificar a configuração do CORS
 
-Ajuste as **configurações do CORS** para permitir solicitações de envio de formulário de domínios do Edge Delivery. Consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) para obter detalhes.
+Ajuste as **configurações do CORS** para permitir solicitações de envio de formulário de domínios do Edge Delivery. Consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) para obter detalhes.
 
 **Exemplo de configuração do CORS:**
 
@@ -81,11 +81,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
 
-Para desenvolvimento local, consulte a [documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) para habilitar o CORS da sua **URL de host da interface de desenvolvimento**.
+Para desenvolvimento local, consulte a [documentação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) para habilitar o CORS da sua **URL de host da interface de desenvolvimento**.
 
 ### Configurar o filtro referenciador
 
-Configure o **Filtro do referenciador** no AEM Cloud Service via Cloud Manager. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) sobre como configurar o filtro referenciador em uma instância do AEM Cloud Service usando um gerenciador de nuvem.
+Configure o **Filtro do referenciador** no AEM Cloud Service via Cloud Manager. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) sobre como configurar o filtro referenciador em uma instância do AEM Cloud Service usando um gerenciador de nuvem.
 
 **Configuração JSON para o Filtro Referenciador:**
 

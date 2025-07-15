@@ -85,7 +85,7 @@ O layout do painel é útil para organizar campos relacionados de uma maneira qu
 
 **Comportamento responsivo:** Em telas menores, os painéis normalmente são empilhados verticalmente, mantendo seus agrupamentos distintos enquanto ajustam para uma largura mais estreita.
 
-Você pode usar o [componente do painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para adicionar o layout do painel em um formulário. Para obter instruções detalhadas sobre como configurar várias propriedades do componente do painel, consulte o artigo [componente do painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+Você pode usar o [componente do painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para adicionar o layout do painel em um formulário. Para obter instruções detalhadas sobre como configurar várias propriedades do componente do painel, consulte o artigo [componente do painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 ### Layout do assistente
 
@@ -97,7 +97,7 @@ O layout do assistente ajuda a simplificar um formulário complexo, dividindo-o 
 
 **Comportamento responsivo:** Em dispositivos móveis, o assistente mantém sua abordagem passo a passo, mas ajusta o conteúdo em cada etapa para caber na tela mais estreita, geralmente empilhando elementos que apareceriam lado a lado em telas maiores.
 
-Você pode usar o [componente de assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para adicionar o layout de assistente em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente do assistente, consulte o artigo [componente do assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+Você pode usar o [componente de assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para adicionar o layout de assistente em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente do assistente, consulte o artigo [componente do assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 ### Layout do acordeão
 
@@ -109,7 +109,7 @@ O layout do Accordion exibe o conteúdo em seções ou painéis que podem ser re
 
 **Comportamento responsivo:** Os acordeões funcionam particularmente bem em dispositivos móveis, pois conservam naturalmente o espaço vertical ao mostrar somente a seção de conteúdo expandida, tornando-os ideais para telas menores.
 
-Você pode usar o [componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para adicionar o layout acordeão em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente Acordeão, consulte o artigo [componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+Você pode usar o [componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para adicionar o layout acordeão em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente Acordeão, consulte o artigo [componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 ### Como escolher o layout correto?
 
