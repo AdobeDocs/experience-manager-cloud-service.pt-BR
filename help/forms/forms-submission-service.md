@@ -4,8 +4,10 @@ Description: Learn how to use forms submission service for submitting forms.
 Keywords: Use form submission service, Submit form using form submission service
 feature: Edge Delivery Services
 Role: User, Developer
+hide: true
+hidefromtoc: true
 exl-id: 12b4edba-b7a1-4432-a299-2f59b703d583
-source-git-commit: 67416999d068af6350748d610e7c1c7b1d991bc4
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 0%
@@ -37,7 +39,7 @@ Abaixo estão os pré-requisitos para usar o serviço de Envio do Forms:
 
 ## Configurar o serviço de envio do Forms
 
-Crie um novo projeto do AEM configurado com o Bloco de Forms adaptável. Consulte o artigo [Introdução - Tutorial do desenvolvedor](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para saber como criar um novo projeto do AEM. Atualize o arquivo `fstab.yaml` em seu projeto. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o `forms@adobe.com`.
+Crie um novo projeto do AEM configurado com o Bloco de Forms adaptável. Consulte o artigo [Introdução - Tutorial do desenvolvedor](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/tutorial) para saber como criar um novo projeto do AEM. Atualize o arquivo `fstab.yaml` em seu projeto. Substitua a referência existente pelo caminho para a pasta que você compartilhou com o `forms@adobe.com`.
 
 Você pode [configurar o Serviço de Envio do Forms manualmente](#configuring-the-forms-submission-service-manually) ou [configurar o Serviço de Envio do Forms usando a API](#configuring-the-forms-submission-service-using-api).
 
@@ -47,7 +49,7 @@ Você pode [configurar o Serviço de Envio do Forms manualmente](#configuring-th
 
 #### &#x200B;1. Criar um formulário usando uma definição de formulário
 
-Crie um formulário usando o Google Sheets ou o Microsoft Excel. Para saber como criar um formulário usando uma definição de formulário no Microsoft Excel ou no Google Sheets, [clique aqui](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
+Crie um formulário usando o Google Sheets ou o Microsoft Excel. Para saber como criar um formulário usando uma definição de formulário no Microsoft Excel ou no Google Sheets, [clique aqui](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/create-forms).
 
 A captura de tela abaixo exibe a definição de formulário usada para criar o formulário:
 
@@ -59,7 +61,7 @@ A captura de tela abaixo exibe a definição de formulário usada para criar o f
 
 #### &#x200B;2. Ative a planilha para aceitar os dados.
 
-Depois de criar e visualizar o formulário, ative a planilha correspondente para começar a receber dados. adicione uma nova planilha como `incoming`. Você pode [habilitar manualmente a planilha para aceitar os dados](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
+Depois de criar e visualizar o formulário, ative a planilha correspondente para começar a receber dados. adicione uma nova planilha como `incoming`. Você pode [habilitar manualmente a planilha para aceitar os dados](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/getting-started-edge-delivery-services-forms/submit-forms#manually-enable-the-spreadsheet-to-accept-data).
 
 ![Planilha de entrada](/help/forms/assets/form-submission-incoming-sheet.png)
 
@@ -157,8 +159,8 @@ Por exemplo, execute o comando abaixo no terminal ou no prompt de comando após 
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —header &quot;Content-Type: application/json&quot; \
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —data &#39;&lbrace;
-    &quot;data&quot;: &lbrace;
+    —data &#39;{
+    &quot;data&quot;: {
     &quot;startDate&quot;: &quot;2025-01-10&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destino&quot;: &quot;Austrália&quot;,
@@ -169,7 +171,7 @@ Por exemplo, execute o comando abaixo no terminal ou no prompt de comando após 
     &quot;idade&quot;: &quot;35&quot;,
     &quot;assinatura&quot;: nulo,
     &quot;email&quot;: &quot;mary@gmail.com&quot;
-    &rbrace;
+    }
     &#39;
     
     &quot;
@@ -181,7 +183,7 @@ Por exemplo, execute o comando abaixo no terminal ou no prompt de comando após 
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
     —header &quot;Content-Type: application/json&quot; ^
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; ^
-    —data &quot;&lbrace;\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
+    —data &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
     
     &quot;
 

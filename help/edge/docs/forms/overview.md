@@ -4,9 +4,9 @@ description: Crie e forneça formulários de alto desempenho no Adobe Experience
 feature: Edge Delivery Services
 exl-id: ecea1e05-d36b-4d63-af9d-c69dafd2f94f
 role: Admin, Architect, Developer
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -31,14 +31,11 @@ O usa o HTML simples, o CSS moderno e o JavaScript padrão para criar experiênc
 
 O Adobe Experience Manager (AEM) Edge Delivery Services (EDS) permite oferecer experiências da Web ultrarrápidas e altamente escaláveis. Este guia explica **como criar e publicar formulários para essas experiências**, com uma hierarquia de recomendação clara:
 
-1. **Editor Universal (UE) - a melhor opção para a maioria das equipes**
-2. **Criação Baseada em Documentos (Docs/Folhas) - Ideal para formulários simples e rápidos**
-3. **Criação de documentos (DA) - Use para inserir formulários em páginas criadas pelo DA**
+* **Editor Universal (UE) - a melhor opção para a maioria das equipes**
+* **Criação Baseada em Documentos (Docs/Folhas) - Ideal para formulários simples e rápidos**
+* **Criação de documentos (DA) - Use para inserir formulários em páginas criadas pelo DA**
 
 Ao final, você poderá escolher o método de criação correto, entender as opções de envio e seguir as próximas etapas para criar formulários prontos para produção.
-
-
-
 
 
 | Equipe e requisitos | Método recomendado | Por que |
@@ -54,7 +51,7 @@ Ao final, você poderá escolher o método de criação correto, entender as op�
 
 <span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
 
-O Universal Editor é uma ferramenta de criação visual, do tipo &quot;arrastar e soltar&quot;, para profissionais de marketing e designers que combina velocidade e eficiência de nível empresarial:
+O [Universal Editor](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) é uma ferramenta de criação visual, do tipo arrastar-e-soltar, para profissionais de marketing e designers que combina velocidade e poder de nível empresarial:
 
 * Edição em tempo real do WYSIWYG e visualizações de dispositivos.
 * Integração direta com ativos, workflows e modelos de dados de formulário (FDM) do AEM.
@@ -70,12 +67,12 @@ O Universal Editor é uma ferramenta de criação visual, do tipo &quot;arrastar
 * Capacidade de escolher entre várias ações de envio para manipular envios de formulários, incluindo o envio de dados para o Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e muitas outras fontes de dados.
 * Enviar usando o Serviço de envio do Forms (FSS) ou as ações de envio do AEM Publish
 
-> **Recomendação**: inicie todos os novos projetos de formulário com o Universal Editor, a menos que sua equipe seja 100% centrada em documentos e o formulário seja muito básico.
+**Recomendação**: inicie todos os novos projetos de formulário com o Universal Editor, a menos que sua equipe seja 100% centrada em documentos e o formulário seja muito básico.
 
 
 ### Criação baseada em documento (usando documentos do Microsoft ou folhas do Google)
 
-A Criação baseada em documento é mais adequada para criar formulários simples e de baixa complexidade usando ferramentas familiares, como o Microsoft Word, Google Docs ou Google Sheets. Esse método é ideal para equipes de conteúdo que exigem uma maneira rápida e direta de criar formulários.
+A [Criação baseada em documentos](/help/edge/docs/forms/tutorial.md) é mais adequada para criar formulários simples e de baixa complexidade usando ferramentas familiares, como o Microsoft Word, Google Docs ou Google Sheets. Esse método é ideal para equipes de conteúdo que exigem uma maneira rápida e direta de criar formulários.
 
 * Componentes acessíveis para uma experiência simples.
 * Estrutura padrão do HTML para renderização consistente.
@@ -116,9 +113,11 @@ O diagrama a seguir ilustra como você pode editar formulários no Microsoft Exc
 
 ## Próximas etapas
 
-1. **Iniciar com Editor Universal:** Consulte o [guia de introdução do Editor Universal](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md) para começar a criar formulários.
-1. **Usar Criação Baseada em Documento:** Para criar formulários com o Microsoft Excel ou o Google Sheets, siga o [Tutorial de Criação Baseada em Documento](/help/edge/docs/forms/tutorial.md).
-1. **Incorporar o Forms na Criação de Documentos:** Se você estiver criando páginas na Criação de Documentos, crie o formulário usando o **Editor Universal** (recomendado) ou a Criação Baseada em Documentos e incorpore o formulário a uma [página da](https://www.aem.live/developer/da-tutorial).
+* [Recursos e funcionalidades do Universal Editor para Edge Delivery Services para Forms](/help/edge/docs/forms/universal-editor/overview-universal-editor-for-edge-delivery-services-for-forms.md)
+* [Criar o primeiro formulário usando o Editor Universal](/help/edge/docs/forms/universal-editor/create-forms.md)
+* [Crie seu primeiro formulário usando o Google Sheets ou o Microsoft Excel](/help/edge/docs/forms/tutorial.md).
+* [Incorporar o Forms na Criação de Documentos (DA)](https://www.aem.live/developer/da-tutorial)
+
 
 Agora você está pronto para criar seu primeiro formulário de alto desempenho com o AEM Edge Delivery Services.
 
