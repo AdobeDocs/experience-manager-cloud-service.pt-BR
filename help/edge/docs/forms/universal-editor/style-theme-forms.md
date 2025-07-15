@@ -4,16 +4,16 @@ description: Personalize efetivamente o tema e o estilo do AEM Forms fornecido p
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1833'
 ht-degree: 0%
 
 ---
 
 # Personalizar a aparência dos formulários
 
-<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email com o nome da sua organização GitHub e o nome do repositório do seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
+<span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
 
 
 O Forms é fundamental para a interação do usuário em sites, permitindo que ele insira dados. Você pode usar as Folhas de estilo em cascata (CSS) para criar estilos de campos de um formulário, aprimorando a apresentação visual de seus formulários e melhorando a experiência do usuário.
@@ -142,7 +142,6 @@ Todos os campos de formulário, exceto os menus suspensos, grupos de opções e 
   }
   
 ```
-
 * `.{Type}-wrapper`: Direciona o elemento `div` externo com base em    o tipo de campo. Por exemplo, `.text-wrapper` é direcionado a todo o texto    campos.
 * `.field-{Name}`: Seleciona ainda mais o elemento com base no nome do campo específico. Por exemplo, `.field-first-name` é direcionado ao campo de texto &quot;Nome&quot;. Embora esse seletor possa ser usado para direcionar elementos com a classe field-{Name}, é importante ter cuidado. Nesse caso específico, não seria útil para estilizar campos de entrada, pois direcionaria não apenas a própria entrada, mas também os elementos de rótulo e descrição. É recomendável usar seletores mais específicos como os que você tem para direcionar campos de entrada de texto (entrada .text-wrapper).
 
@@ -220,7 +219,6 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
-
 * Direcionar o Wrapper: o primeiro seletor (`.drop-down-wrapper`) direciona o elemento wrapper externo, garantindo que os estilos se apliquem a todo o componente suspenso.
 * Layout Flexbox: O Flexbox organiza o rótulo, a lista suspensa e a descrição verticalmente para um layout limpo.
 * Estilo do rótulo: o rótulo se destaca com uma espessura de fonte mais ousada e uma pequena margem.
@@ -230,7 +228,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
-&#x200B;---
+---
 
 ### Grupos de opções
 
@@ -284,7 +282,6 @@ Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estr
     padding: 10px;
   }
 ```
-
 Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapper. Isso seria útil para aplicar estilos gerais a todo o grupo de rádio.
 
 * Rótulos do botão de opção de direcionamento
@@ -465,7 +462,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * O elemento fieldset atua como o contêiner do painel com o invólucro de painel de classe e classes adicionais para estilização com base no nome do painel (logon de campo).
-* O elemento da legenda (&lt;legend>) serve como o título do painel com o texto &quot;Informações de logon&quot; e o rótulo de campo da classe. O atributo data-visible=&quot;false&quot; pode ser usado com o JavaScript para controlar a visibilidade do título.
+* O elemento da legenda (<legend>) serve como o título do painel com o texto &quot;Informações de logon&quot; e o rótulo de campo da classe. O atributo data-visible=&quot;false&quot; pode ser usado com o JavaScript para controlar a visibilidade do título.
 * Dentro do conjunto de campos, vários.Os elementos {Type}-wrapper (.text-wrapper e .password-wrapper, neste caso) representam campos de formulário individuais dentro do painel.
 * Cada invólucro contém um rótulo, campo de entrada e descrição, semelhantes aos exemplos anteriores.
 
@@ -626,7 +623,6 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
-
 Este seletor estimula todos os invólucros de campo em um painel repetível, mantendo um espaçamento consistente entre os campos.
 
 * Direcionamento de campos específicos (em um painel):

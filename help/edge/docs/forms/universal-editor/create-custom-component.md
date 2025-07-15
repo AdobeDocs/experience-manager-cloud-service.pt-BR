@@ -4,16 +4,16 @@ description: Criar componentes personalizados para um formulário EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1841'
+source-wordcount: '1804'
 ht-degree: 0%
 
 ---
 
 # Criar componente personalizado na criação do WYSIWYG
 
-<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email com o nome da sua organização GitHub e o nome do repositório do seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
+<span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
 
 
 O Edge Delivery Services Forms oferece personalização, permitindo que desenvolvedores de front-end criem componentes de formulário personalizados. Esses componentes personalizados se integram perfeitamente à experiência de criação do WYSIWYG, permitindo que os autores de formulários os adicionem, configurem e gerenciem facilmente no editor de formulários. Com componentes personalizados, os autores podem aprimorar a funcionalidade e, ao mesmo tempo, garantir um processo de criação simples e intuitivo.
@@ -104,7 +104,7 @@ O arquivo `_range.json`, após adicionar a definição do componente, é o segui
 
 >[!NOTE]
 >
-> Todos os componentes relacionados ao formulário seguem a mesma abordagem que o Sites ao adicionar blocos ao Universal Editor. Consulte o artigo [Criação de blocos instrumentados para uso com o Editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obter mais informações.
+> Todos os componentes relacionados ao formulário seguem a mesma abordagem que o Sites ao adicionar blocos ao Universal Editor. Consulte o artigo [Criação de blocos instrumentados para uso com o Editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obter mais informações.
 
 ### &#x200B;2. Definir as propriedades do componente personalizado para criação
 
@@ -161,7 +161,7 @@ O componente personalizado inclui um modelo de componente que especifica quais p
 
    >[!NOTE]
    >
-   > Para adicionar um novo campo à caixa de diálogo **Propriedade** de um componente personalizado, siga o [esquema definido](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
+   > Para adicionar um novo campo à caixa de diálogo **Propriedade** de um componente personalizado, siga o [esquema definido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
 
    Você também pode [adicionar propriedades personalizadas](#adding-custom-properties-for-your-custom-component) a um componente personalizado para estender sua funcionalidade.
 
@@ -392,7 +392,6 @@ Você pode modificar componentes personalizados usando marcação predefinida, c
    float: right;
    }
    ```
-
    O código ajuda a definir o estilo e a aparência visual do componente personalizado.
 
 1. Para adicionar a funcionalidade, navegue até o arquivo `/blocks/form/components/range/range.js` e adicione a seguinte linha de código:

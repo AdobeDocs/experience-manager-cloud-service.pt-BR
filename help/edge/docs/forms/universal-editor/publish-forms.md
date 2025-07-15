@@ -4,16 +4,16 @@ description: Publique seus formulários do Edge Delivery Services de forma rápi
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ba1c608d-36e9-4ca1-b87b-0d1094d978db
-source-git-commit: e4a71d1a513bebed67b9571a483871dc16c36daa
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
 
 # Publicar o formulário adaptável no Edge Delivery Services
 
-<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email com o nome da sua organização GitHub e o nome do repositório do seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
+<span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
 
 
 Quando o formulário estiver finalizado e pronto para uso, você poderá publicá-lo para torná-lo acessível aos clientes para coleta e envio de dados. A publicação garante que o formulário esteja disponível no Edge Delivery, permitindo que os usuários interajam com ele facilmente. Esse processo permite que os clientes preencham e enviem o formulário em tempo real, garantindo uma captura de dados eficiente e processamento simplificado.
@@ -57,7 +57,6 @@ Modifique o `submitBaseUrl` no arquivo **constant.js** dentro do bloco de formul
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
-
 **Para Desenvolvimento Local:**
 
 ```js
@@ -66,7 +65,7 @@ export const submitBaseUrl = 'http://localhost:4503';
 
 ### Modificar a configuração do CORS
 
-Ajuste as **configurações do CORS** para permitir solicitações de envio de formulário de domínios do Edge Delivery. Consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) para obter detalhes.
+Ajuste as **configurações do CORS** para permitir solicitações de envio de formulário de domínios do Edge Delivery. Consulte o [Guia de Configuração do CORS](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/configurations/cors) para obter detalhes.
 
 **Exemplo de configuração do CORS:**
 
@@ -80,12 +79,11 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
-
-Para desenvolvimento local, consulte a [documentação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) para habilitar o CORS da sua **URL de host da interface de desenvolvimento**.
+Para desenvolvimento local, consulte a [documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) para habilitar o CORS da sua **URL de host da interface de desenvolvimento**.
 
 ### Configurar o filtro referenciador
 
-Configure o **Filtro do referenciador** no AEM Cloud Service via Cloud Manager. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) sobre como configurar o filtro referenciador em uma instância do AEM Cloud Service usando um gerenciador de nuvem.
+Configure o **Filtro do referenciador** no AEM Cloud Service via Cloud Manager. [Saiba mais](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing) sobre como configurar o filtro referenciador em uma instância do AEM Cloud Service usando um gerenciador de nuvem.
 
 **Configuração JSON para o Filtro Referenciador:**
 

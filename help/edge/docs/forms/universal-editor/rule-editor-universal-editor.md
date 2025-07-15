@@ -4,9 +4,9 @@ description: O editor de regras no Universal Editor permite adicionar comportame
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '2253'
+source-wordcount: '2216'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Introdução ao Editor de regras na Criação do WYSIWYG
 
-<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email com o nome da sua organização GitHub e o nome do repositório do seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
+<span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
 
 
 É possível adicionar um comportamento de formulário dinâmico usando o Editor de regras, que permite criar regras. Essas regras permitem visibilidade condicional de campo, automatizam cálculos com base na entrada do usuário e melhoram a experiência geral do usuário. Ao simplificar o processo de preenchimento de formulário, o Editor de regras ajuda a garantir precisão e eficiência.
@@ -278,7 +278,6 @@ Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferen
    * Selecione **[!UICONTROL Menos]** no campo **[!UICONTROL Selecionar Operador]**.
 
    * Selecione ou arraste e solte da guia Objeto do Forms o campo **[!UICONTROL Dedução Adicional]** no outro objeto **[!UICONTROL Soltar ou selecione aqui]**.
-
      ![Exemplo do Editor de Regras15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Selecione **[!UICONTROL Concluído]** para salvar a regra.
@@ -296,7 +295,6 @@ Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferen
    * Selecione **[!UICONTROL Multiplicado por]** no campo **[!UICONTROL Selecionar operador]**.
 
    * Selecione **Número** no campo **[!UICONTROL Selecionar Opção]** e insira o valor como `10` no campo **[!UICONTROL Inserir um Número]**.
-
      ![Exemplo do Editor de Regras18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Em seguida, selecione na área destacada ao redor do campo de expressão e selecione **[!UICONTROL Estender expressão]**.
    ![Exemplo do Editor de Regras19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![Adicionando Função personalizada](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Usar uma função personalizada no editor de regras

@@ -4,9 +4,9 @@ description: Este artigo explica como visualizar formulários usando diferentes 
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 0c7fb491-4bad-4202-a472-87e6e6d9ab40
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: 9ef4c5638c2275052ce69406f54dda3ea188b0ef
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1248'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Modo responsivo na criação do WYSIWYG
 
-<span class="preview"> Este recurso está disponível através do programa de acesso antecipado. Para solicitar acesso, envie um email com o nome da sua organização GitHub e o nome do repositório do seu endereço oficial para <a href="mailto:aem-forms-ea@adobe.com">aem-forms-ea@adobe.com</a>. Por exemplo, se a URL do repositório for https://github.com/adobe/abc, o nome da organização é adobe e o nome do repositório é abc.</span>
+<span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
 
 ## Introdução ao Responsive Forms
 
@@ -85,7 +85,7 @@ O layout do painel é útil para organizar campos relacionados de uma maneira qu
 
 **Comportamento responsivo:** Em telas menores, os painéis normalmente são empilhados verticalmente, mantendo seus agrupamentos distintos enquanto ajustam para uma largura mais estreita.
 
-Você pode usar o [componente do painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para adicionar o layout do painel em um formulário. Para obter instruções detalhadas sobre como configurar várias propriedades do componente do painel, consulte o artigo [componente do painel](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
+Você pode usar o [componente do painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel) para adicionar o layout do painel em um formulário. Para obter instruções detalhadas sobre como configurar várias propriedades do componente do painel, consulte o artigo [componente do painel](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel).
 
 ### Layout do assistente
 
@@ -97,7 +97,7 @@ O layout do assistente ajuda a simplificar um formulário complexo, dividindo-o 
 
 **Comportamento responsivo:** Em dispositivos móveis, o assistente mantém sua abordagem passo a passo, mas ajusta o conteúdo em cada etapa para caber na tela mais estreita, geralmente empilhando elementos que apareceriam lado a lado em telas maiores.
 
-Você pode usar o [componente de assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para adicionar o layout de assistente em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente do assistente, consulte o artigo [componente do assistente](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
+Você pode usar o [componente de assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard) para adicionar o layout de assistente em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente do assistente, consulte o artigo [componente do assistente](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard).
 
 ### Layout do acordeão
 
@@ -109,7 +109,7 @@ O layout do Accordion exibe o conteúdo em seções ou painéis que podem ser re
 
 **Comportamento responsivo:** Os acordeões funcionam particularmente bem em dispositivos móveis, pois conservam naturalmente o espaço vertical ao mostrar somente a seção de conteúdo expandida, tornando-os ideais para telas menores.
 
-Você pode usar o [componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para adicionar o layout acordeão em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente Acordeão, consulte o artigo [componente Acordeão](https://experienceleague.adobe.com/pt-br/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
+Você pode usar o [componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion) para adicionar o layout acordeão em um formulário. Para obter instruções detalhadas sobre como configurar as várias propriedades do componente Acordeão, consulte o artigo [componente Acordeão](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion).
 
 ### Como escolher o layout correto?
 
