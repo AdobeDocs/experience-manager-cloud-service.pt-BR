@@ -142,6 +142,7 @@ Todos os campos de formulário, exceto os menus suspensos, grupos de opções e 
   }
   
 ```
+
 * `.{Type}-wrapper`: Direciona o elemento `div` externo com base em    o tipo de campo. Por exemplo, `.text-wrapper` é direcionado a todo o texto    campos.
 * `.field-{Name}`: Seleciona ainda mais o elemento com base no nome do campo específico. Por exemplo, `.field-first-name` é direcionado ao campo de texto &quot;Nome&quot;. Embora esse seletor possa ser usado para direcionar elementos com a classe field-{Name}, é importante ter cuidado. Nesse caso específico, não seria útil para estilizar campos de entrada, pois direcionaria não apenas a própria entrada, mas também os elementos de rótulo e descrição. É recomendável usar seletores mais específicos como os que você tem para direcionar campos de entrada de texto (entrada .text-wrapper).
 
@@ -219,6 +220,7 @@ main .form form .drop-down-wrapper .field-label {
   font-weight: bold;
 }
 ```
+
 * Direcionar o Wrapper: o primeiro seletor (`.drop-down-wrapper`) direciona o elemento wrapper externo, garantindo que os estilos se apliquem a todo o componente suspenso.
 * Layout Flexbox: O Flexbox organiza o rótulo, a lista suspensa e a descrição verticalmente para um layout limpo.
 * Estilo do rótulo: o rótulo se destaca com uma espessura de fonte mais ousada e uma pequena margem.
@@ -228,7 +230,7 @@ main .form form .drop-down-wrapper .field-label {
 
 +++
 
----
+&#x200B;---
 
 ### Grupos de opções
 
@@ -282,6 +284,7 @@ Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estr
     padding: 10px;
   }
 ```
+
 Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapper. Isso seria útil para aplicar estilos gerais a todo o grupo de rádio.
 
 * Rótulos do botão de opção de direcionamento
@@ -462,7 +465,7 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 ```
 
 * O elemento fieldset atua como o contêiner do painel com o invólucro de painel de classe e classes adicionais para estilização com base no nome do painel (logon de campo).
-* O elemento da legenda (<legend>) serve como o título do painel com o texto &quot;Informações de logon&quot; e o rótulo de campo da classe. O atributo data-visible=&quot;false&quot; pode ser usado com o JavaScript para controlar a visibilidade do título.
+* O elemento da legenda (&lt;legend>) serve como o título do painel com o texto &quot;Informações de logon&quot; e o rótulo de campo da classe. O atributo data-visible=&quot;false&quot; pode ser usado com o JavaScript para controlar a visibilidade do título.
 * Dentro do conjunto de campos, vários.Os elementos {Type}-wrapper (.text-wrapper e .password-wrapper, neste caso) representam campos de formulário individuais dentro do painel.
 * Cada invólucro contém um rótulo, campo de entrada e descrição, semelhantes aos exemplos anteriores.
 
@@ -623,6 +626,7 @@ main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   margin-bottom: 10px;
 }
 ```
+
 Este seletor estimula todos os invólucros de campo em um painel repetível, mantendo um espaçamento consistente entre os campos.
 
 * Direcionamento de campos específicos (em um painel):

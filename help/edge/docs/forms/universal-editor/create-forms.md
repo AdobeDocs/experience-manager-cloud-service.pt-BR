@@ -79,6 +79,7 @@ Execute as seguintes etapas para escolher o modelo e criar o formulário:
 
    1. Especifique o **Nome** e o **Título**.
    1. Especifique a **URL do GitHub**. Por exemplo, se o repositório GitHub for nomeado como `edsforms`, ele estiver localizado na conta `wkndforms`, a URL será:
+
       `https://github.com/wkndforms/edsforms`
 
    ![Criar assistente de formulário](/help/edge/assets/create-form-wizard.png)
