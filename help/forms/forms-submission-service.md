@@ -159,8 +159,8 @@ Por exemplo, execute o comando abaixo no terminal ou no prompt de comando após 
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; \
     —header &quot;Content-Type: application/json&quot; \
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; \
-    —data &#39;{
-    &quot;data&quot;: {
+    —data &#39;&lbrace;
+    &quot;data&quot;: &lbrace;
     &quot;startDate&quot;: &quot;2025-01-10&quot;,
     &quot;endDate&quot;: &quot;2025-01-25&quot;,
     &quot;destino&quot;: &quot;Austrália&quot;,
@@ -171,7 +171,7 @@ Por exemplo, execute o comando abaixo no terminal ou no prompt de comando após 
     &quot;idade&quot;: &quot;35&quot;,
     &quot;assinatura&quot;: nulo,
     &quot;email&quot;: &quot;mary@gmail.com&quot;
-    }
+    &rbrace;
     &#39;
     
     &quot;
@@ -183,7 +183,7 @@ Por exemplo, execute o comando abaixo no terminal ou no prompt de comando após 
     curl -X POST &quot;https://forms.adobe.com/adobe/forms/af/submit/{id}&quot; ^
     —header &quot;Content-Type: application/json&quot; ^
     —header &quot;x-adobe-routing: tier=live,bucket=main—[site/repository]—[organization]&quot; ^
-    —data &quot;{\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
+    —data &quot;&lbrace;\&quot;data\&quot;: {\&quot;startDate\&quot;: \&quot;2025-01-10\&quot;, \&quot;endDate\&quot;: \&quot;2025-01-25\&quot;, \&quot;destination\&quot;: \&quot;Australia\&quot;, \&quot;class\&quot;: \&quot;First Class\&quot;, \&quot;budget\&quot;: \&quot;2000\&quot;, \&quot;amount\&quot;: \&quot;1000000\&quot;, \&quot;name\&quot;: \&quot;Joe\&quot;, \&quot;age\&quot;: \&quot;35\&quot;, \&quot;subscribe\&quot;: null, \&quot;email\&quot;: \&quot;mary@gmail.com\&quot;}&quot;
     
     &quot;
 
