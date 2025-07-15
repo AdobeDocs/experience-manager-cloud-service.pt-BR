@@ -4,10 +4,10 @@ description: Notas da versão de manutenção mais recentes do [!DNL Adobe Exper
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
 feature: Release Information
 role: Admin
-source-git-commit: 5d00bed4008c70e81f3a70d219ddc411ec8bdc59
+source-git-commit: bd0b4c993652b56657023ef7522d7d179ca994c4
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 29%
+source-wordcount: '214'
+ht-degree: 52%
 
 ---
 
@@ -16,43 +16,37 @@ ht-degree: 29%
 
 A seção a seguir descreve as notas de versão técnicas para a versão de manutenção atual do Experience Manager as a Cloud Service.
 
-## Versão 21484 {#21484}
+## Versão 21570 {#21570}
 
-Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21484, lançada publicamente em sexta-feira, 10 de julho de 2025. A versão de manutenção anterior era 21331.
+Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21570, lançada publicamente em quarta-feira, 15 de julho de 2025. A versão de manutenção anterior era 21484.
 
-A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+>[!NOTE]
+>
+>A [Versão 21484](/help/release-notes/maintenance/2025/2025-7-0.md#21484) tornou-se privada e foi substituída pela versão 21570.
 
-### Aprimoramentos {#enhancements-21484}
+A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
-Nenhum.
+### Aprimoramentos {#enhancements-21570}
 
-### Problemas corrigidos {#fixed-issues-21484}
+Nenhum
 
-Nenhum.
+### Problemas corrigidos {#fixed-issues-21570}
 
-#### Guias do AEM {#guides-21484}
+* SKYOPS-112722 - Correção de um problema que causava a falha da resolução de URLs personalizados
 
-* GUIDES-29781: Quando um comentário XML é adicionado a um elemento na exibição do Source, os espaços à esquerda e à direita em torno do comentário são perdidos ao alternar exibições.
-* GUIDES-29078: ao abrir um tópico na exibição Autor após a atualização de um navegador, as tags aplicadas anteriormente no painel Propriedades do arquivo não são mantidas e a adição de novas tags substitui as existentes, principalmente quando um grande número de tags está disponível para seleção.
-* GUIDES-28214: As tentativas de criar tarefas de revisão por meio do fluxo de trabalho do AEM falham consistentemente porque o nó de revisão não é criado.
-* GUIDES-28104: A publicação de um mapa DITA com o atributo `chunk=to-content` cria nós JCR duplicados na nova saída do AEM Sites, resultando na estrutura de conteúdo redundante no AEM Sites.
-* GUIDES-29065, GUIDES-28793: problemas de desempenho, como tempos de carregamento mais longos e tempos limite intermitentes, são observados ao trabalhar com coleções grandes.
+### Problemas conhecidos {#known-issues-21570}
 
-Para obter mais informações sobre recursos e problemas novos e aprimorados corrigidos nessa versão, exiba o [roteiro de versão do Experience Manager Guides](https://experienceleague.adobe.com/pt-br/docs/experience-manager-guides/using/release-info/aem-guides-releases-roadmap).
+* O AEM SDK relacionado possui uma ID de versão diferente (21575) e está disponível por meio do Portal de distribuição de software.
 
-### Problemas conhecidos {#known-issues-21484}
-
-* O SDK disponibilizado no Portal de distribuição de software tem problemas executados localmente. Continue usando o SDK anterior para testes locais.
-
-### Recursos e APIs obsoletos {#deprecated-21484}
+### Recursos e APIs obsoletos {#deprecated-21570}
 
 Os recursos e APIs obsoletos e removidos do AEM as a Cloud Service estão detalhados no documento [Recursos e APIs obsoletos e removidos](/help/release-notes/deprecated-removed-features.md).
 
-### Correções de segurança {#security-21484}
+### Correções de segurança {#security-21570}
 
-A AEM as a Cloud Service dedica-se a otimizar a segurança e o desempenho da sua plataforma. Esta versão de manutenção aborda cinco vulnerabilidades identificadas, reforçando nosso compromisso com a proteção robusta do sistema.
+Nenhum
 
-### Tecnologias integradas {#embedded-tech-21484}
+### Tecnologias integradas {#embedded-tech-21570}
 
 | Tecnologia | Versão | Link |
 |---|---|---|
