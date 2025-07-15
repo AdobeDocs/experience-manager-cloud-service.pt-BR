@@ -3,10 +3,10 @@ title: Propriedades do Seletor de ativos para personalização
 description: Use o Seletor de ativos para pesquisar, localizar e recuperar metadados e representações de ativos no aplicativo.
 role: Admin, User
 exl-id: cd5ec1de-36b0-48a5-95c9-9bd22fac9719
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 38%
+source-wordcount: '1420'
+ht-degree: 36%
 
 ---
 
@@ -47,16 +47,16 @@ Você pode usar as propriedades do Seletor de ativos para personalizar a forma c
 | *filterRepoList* | Função | Não |  | Você pode usar a função de retorno de chamada `filterRepoList` que chama o repositório do Experience Manager e retorna uma lista filtrada de repositórios. |
 | *OpçõesDeExpiração* | Função | | | Você pode usar entre as duas propriedades a seguir: **getExpiryStatus** que fornece o status de um ativo expirado. A função retorna `EXPIRED`, `EXPIRING_SOON` ou `NOT_EXPIRED` com base na data de expiração de um ativo fornecido. Consulte [personalizar ativos expirados](/help/assets/asset-selector-customization.md#customize-expired-assets). Além disso, você pode usar **allowSelectionAndDrag**, no qual o valor da função pode ser `true` ou `false`. Quando o valor é definido como `false`, o ativo expirado não pode ser selecionado ou arrastado na tela. |
 | *mostrarNotificação* | | Não | | Ele permite que o Seletor de ativos mostre uma mensagem em caixa de informações personalizada para o ativo expirado. |
-| *metadataSchema* | Matriz | Não | | Adicione uma matriz de campos fornecida para coletar metadados do usuário. Usando essa propriedade, também é possível usar metadados ocultos que são atribuídos a um ativo automaticamente, mas que não estão visíveis para o usuário. |
-| *onMetadataFormChange* | Função de retorno de chamada | Não | | Consiste em `property` e `value`. `Property` é igual a *mapToProperty* do campo passado de *metadataSchema* cujo valor está sendo atualizado. Por outro lado, `value` é igual ao novo valor fornecido como uma entrada. |
-| *targetUploadPath* | String |  | `"/content/dam"` | O caminho de upload de destino para os arquivos cujo padrão é a raiz do repositório de ativos. |
-| *hideUploadButton* | Booleano | | Falso | Ele garante se o botão de upload interno deve estar oculto ou não. |
-| *onUploadStart* | Função | Não |  | É uma função de retorno de chamada usada para transmitir a origem do upload entre o Dropbox, o OneDrive ou o local. A sintaxe é `(uploadInfo: UploadInfo) => void` |
-| *importSettings* | Função | | | Ela permite o suporte para importar ativos de origem de terceiros. `sourceTypes` usa uma matriz das fontes de importação que você deseja habilitar. As fontes compatíveis são Onedrive e Dropbox. A sintaxe é `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }` |
-| *onUploadComplete* | Função | Não | | É uma função de retorno de chamada usada para passar o status de upload de arquivo entre com êxito, com falha ou duplicado. A sintaxe é `(uploadStats: UploadStats) => void` |
-| *onFilesChange* | Função | Não | | É uma função de retorno de chamada usada para mostrar o comportamento de upload quando um arquivo é alterado. Ele passa a nova matriz de arquivos pendentes para upload e o tipo de origem do upload. O tipo de Source pode ser nulo em caso de erro. A sintaxe é `(newFiles: File[], uploadType: UploadType) => void` |
-| *uploadingPlaceholder* | String | | | É uma imagem de espaço reservado que substitui o formulário de metadados quando um upload do ativo é iniciado. A sintaxe é `{ href: string; alt: string; } ` |
-| *uploadConfig* | Objeto | | | É um objeto que contém a configuração personalizada para o upload. |
+| *uploadConfig* | Objeto | | | É um objeto que contém a configuração personalizada para o upload. Consulte [configuração de carregamento](#asset-selector-customization.md#upload-config) para ver a usabilidade. |
+| *metadataSchema* | Matriz | Não | | Esta propriedade está aninhada sob a propriedade `uploadConfig`. Adicione uma matriz de campos fornecida para coletar metadados do usuário. Usando essa propriedade, também é possível usar metadados ocultos que são atribuídos a um ativo automaticamente, mas que não estão visíveis para o usuário. |
+| *onMetadataFormChange* | Função de retorno de chamada | Não | | Esta propriedade está aninhada sob a propriedade `uploadConfig`. Consiste em `property` e `value`. `Property` é igual a *mapToProperty* do campo passado de *metadataSchema* cujo valor está sendo atualizado. Por outro lado, `value` é igual ao novo valor fornecido como uma entrada. |
+| *targetUploadPath* | String |  | `"/content/dam"` | Esta propriedade está aninhada sob a propriedade `uploadConfig`. O caminho de upload de destino para os arquivos cujo padrão é a raiz do repositório de ativos. |
+| *hideUploadButton* | Booleano | | Falso | Ele garante se o botão de upload interno deve estar oculto ou não. Esta propriedade está aninhada sob a propriedade `uploadConfig`. |
+| *onUploadStart* | Função | Não |  | É uma função de retorno de chamada usada para transmitir a origem do upload entre o Dropbox, o OneDrive ou o local. Sintaxe `(uploadInfo: UploadInfo) => void`. Esta propriedade está aninhada sob a propriedade `uploadConfig`. |
+| *importSettings* | Função | | | Ela permite o suporte para importar ativos de origem de terceiros. `sourceTypes` usa uma matriz das fontes de importação que você deseja habilitar. As fontes compatíveis são Onedrive e Dropbox. Sintaxe `{ sourceTypes?: ImportSourceType[]; apiKey?: string; }`. Além disso, esta propriedade está aninhada sob a propriedade `uploadConfig`. |
+| *onUploadComplete* | Função | Não | | É uma função de retorno de chamada usada para passar o status de upload de arquivo entre com êxito, com falha ou duplicado. Sintaxe `(uploadStats: UploadStats) => void`. Além disso, esta propriedade está aninhada sob a propriedade `uploadConfig`. |
+| *onFilesChange* | Função | Não | | Esta propriedade está aninhada sob a propriedade `uploadConfig`. É uma função de retorno de chamada usada para mostrar o comportamento de upload quando um arquivo é alterado. Ele passa a nova matriz de arquivos pendentes para upload e o tipo de origem do upload. O tipo de Source pode ser nulo em caso de erro. A sintaxe é `(newFiles: File[], uploadType: UploadType) => void` |
+| *uploadingPlaceholder* | String | | | É uma imagem de espaço reservado que substitui o formulário de metadados quando um upload do ativo é iniciado. A sintaxe é `{ href: string; alt: string; }`. Além disso, essa propriedade está aninhada na propriedade `uploadConfig`. |
 | *featureSet* | Matriz | String | | A propriedade `featureSet:[ ]` é usada para habilitar ou desabilitar uma funcionalidade específica no aplicativo Seletor de ativos. Para ativar o componente ou um recurso, passe um valor de string na matriz ou deixe a matriz vazia para desativar esse componente.  Por exemplo, se você deseja habilitar a funcionalidade de carregamento no Seletor de ativos, use a sintaxe `featureSet:[0:"upload"]`. Da mesma forma, você pode usar `featureSet:[0:"collections"]` para habilitar coleções no Seletor de ativos. Além disso, use o `featureSet:[0:"detail-panel"]` para habilitar o [painel de detalhes](overview-asset-selector.md#asset-details-and-metadata) de um ativo. Para usar esses recursos juntos, a sintaxe é `featureSet:["upload", "collections", "detail-panel"]`. |
 
 <!--

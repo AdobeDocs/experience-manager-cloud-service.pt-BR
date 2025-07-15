@@ -3,9 +3,9 @@ title: Personalizar o aplicativo Seletor de ativos
 description: Use funções para personalizar o Seletor de ativos no aplicativo.
 role: Admin, User
 exl-id: 0fd0a9f7-8c7a-4c21-9578-7c49409df609
-source-git-commit: 9c1104f449dc2ec625926925ef8c95976f1faf3d
+source-git-commit: c2ced432f3f0bd393bf5e8e7485c0e973c451b7a
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1261'
 ht-degree: 23%
 
 ---
@@ -408,9 +408,10 @@ const filterSchema = useMemo ((); => {
 
 ## Carregar no Seletor de ativos {#upload-in-asset-selector}
 
-Você pode fazer upload de arquivos ou pastas para o Seletor de ativos no seu sistema de arquivos local. Para carregar arquivos usando o sistema de arquivos local, geralmente é necessário usar um recurso de upload fornecido por um aplicativo de micro front-end do Seletor de ativos. Vários trechos de código necessários para invocar o upload no seletor de ativos envolvem:
+Você pode fazer upload de arquivos ou pastas para o Seletor de ativos no seu sistema de arquivos local. Para carregar arquivos usando o sistema de arquivos local, geralmente é necessário usar um recurso de upload fornecido por um aplicativo de micro front-end do Seletor de ativos. Os `upload` Vários trechos de código necessários para invocar o upload no seletor de ativos envolvem:
 
 * [Trecho básico do código do formulário para upload](#basic-upload)
+* [Fazer upload da configuração](#upload-config)
 * [Carregar com metadados](#upload-with-metadata)
 * [Upload personalizado](#customized-upload)
 * [Fazer upload usando fontes de terceiros](#upload-using-third-party-source)
@@ -449,6 +450,25 @@ export const UploadExample = () => {
     )
 }
 ```
+
+### Fazer upload da configuração {#upload-config}
+
+```
+uploadConfig: {
+        onUploadStart: action('onUploadStart'),
+        onUploadComplete: action('onUploadComplete'),
+        metadataSchema: [
+            {
+                mapToProperty: 'dam:assetStatus',
+                value: 'approved',
+                element: 'hidden',
+            },
+        ],
+        ... more properties
+     }, 
+```
+
+*Mais propriedades incluem `metadataSchema`, `onMetadataFormChange`, `targetUploadPath`, `hideUploadButton`, `onUploadStart`, `importSettings` `onUploadComplete`, `onFilesChange`,`uploadingPlaceholder`*. Consulte [Propriedades do Seletor de ativos](#asset-selector-properties.md) para obter mais informações.
 
 ### Carregar com metadados {#upload-with-metadata}
 
