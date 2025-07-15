@@ -5,36 +5,25 @@ feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 4d45e7ef626ad0b46f5323263cca791b14f9732f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 77%
+source-wordcount: '726'
+ht-degree: 52%
 
 ---
 
-# Criação de um site {#creating-site}
 
-{{traditional-aem}}
+# Criação de um site {#creating-site}
 
 Saiba como usar o AEM para criar um site usando modelos de site para definir o estilo e a estrutura de seu site.
 
 ## Visão geral {#overview}
 
-Antes que os autores de conteúdo possam criar páginas com conteúdo, o site deve ser criado primeiro. Isso geralmente é feito por um administrador do AEM que define a estrutura inicial do site. Usar modelos de site torna a criação de sites rápida e flexível.
-
-A ferramenta de Criação rápida de sites do AEM permite que não desenvolvedores criem um site do zero rapidamente usando modelos.
-
-Depois de criada, a ferramenta de Criação rápida de sites também permite a personalização rápida do tema e estilo do site do AEM (JavaScript, CSS e recursos estáticos). Isso permite que o desenvolvedor de front-end, que não precisa ter nenhum conhecimento sobre o AEM, funcione separadamente e em paralelo aos criadores de conteúdo. O administrador do AEM simplesmente baixa o tema do site e o fornece ao desenvolvedor de front-end, que o personaliza usando suas ferramentas favoritas e, em seguida, confirma as alterações no repositório de código do AEM, que é então implantado.
-
-Este documento se concentra na criação de sites usando a ferramenta de Criação rápida de sites. Se deseja ter uma visão geral do fluxo de trabalho de criação e personalização de sites, consulte a [Jornada de criação rápida de sites do AEM](/help/journey-sites/quick-site/overview.md)
+Antes que os autores de conteúdo possam criar páginas com conteúdo, o site deve ser criado primeiro. Isso geralmente é feito por um administrador do AEM que define a estrutura inicial do site. Usar modelos de site torna a criação de sites rápida e flexível para não desenvolvedores.
 
 ## Planejamento da estrutura do site {#structure}
 
-Reserve tempo para considerar a finalidade do site e o conteúdo planejado com bastante antecedência. Isso conduzirá a maneira como você desenha a estrutura do site. Uma boa estrutura de site oferece aos visitantes uma fácil navegação e descoberta de conteúdo, além de permitir o uso de vários recursos do AEM, como [gerenciamento de vários sites e tradução](/help/sites-cloud/administering/msm-and-translation.md).
-
->[!TIP]
->
->[O site de referência do WKND](https://wknd.site) fornece um exemplo de implementação de práticas recomendadas em um site totalmente funcional para uma marca de experiências externas. Explore-o para ver como um site do AEM bem construído é estruturado.
+Reserve tempo para considerar a finalidade do site e o conteúdo planejado com bastante antecedência. Isso conduzirá a maneira como você desenha a estrutura do site. Uma boa estrutura de site permite uma fácil navegação e descoberta de conteúdo pelos visitantes do site, além de oferecer suporte a vários recursos do AEM, como o [gerenciamento multisite e tradução.](/help/sites-cloud/administering/msm-and-translation.md)
 
 ## Modelos de site {#site-templates}
 
@@ -44,11 +33,15 @@ Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site,
 
 >[!TIP]
 >
->Para obter mais detalhes sobre modelos de site, consulte [Modelos de site](site-templates.md).
+>Para obter mais detalhes sobre modelos de site, consulte o documento [Modelos de Site.](site-templates.md)
 
 >[!NOTE]
 >
->O modelo de site não deve ser confundido com modelos de página. Os modelos de site definem a estrutura geral de um site. Um modelo de página define a estrutura e o conteúdo inicial de uma página individual.
+>O modelo de site não deve ser confundido com [modelos de página.](/help/sites-cloud/authoring/page-editor/templates.md) Os modelos de site definem a estrutura geral de um site. Um modelo de página define a estrutura e o conteúdo inicial de uma página individual.
+
+### Modelos de site fornecidos pela Adobe {#adobe-templates}
+
+{{adobe-templates}}
 
 ## Criação de um site {#create-site}
 
@@ -80,6 +73,11 @@ Os modelos de site geralmente contêm o conteúdo básico e a estrutura do site,
    * O nome do site se torna parte do URL.
    * O nome do site deve estar em conformidade com as [convenções de nomenclatura de páginas do AEM](/help/sites-cloud/authoring/sites-console/organizing-pages.md#page-name-restrictions-and-best-practices).
 
+1. Forneça detalhes adicionais do site, conforme exigido pelo modelo de site.
+
+   * Modelos diferentes podem exigir detalhes adicionais.
+   * Por exemplo, modelos para [projetos Edge Delivery Services](https://www.aem.live/developer/ue-tutorial) exigem o repositório GitHub do seu projeto.
+
 1. Selecione **Criar** e o site é criado a partir do modelo de site.
 
    ![Detalhes do novo site](../assets/create-site-details.png)
@@ -96,10 +94,10 @@ Os autores de conteúdo agora podem começar a criar!
 
 ## Personalização do site {#site-customization}
 
-Se o site exigir personalização além dos modelos disponíveis, você terá várias opções.
+Os modelos são úteis para configurar rapidamente a estrutura básica e o estilo de um site. No entanto, a maioria dos projetos exige estilo e personalização adicionais. Os modelos de site ajudam a dissociar o estilo do site para que os desenvolvedores de front-end não precisem de conhecimento do AEM para estilizar o site e possam
+trabalhar separadamente e em paralelo aos criadores de conteúdo. Dependendo do tipo de projeto, isso pode assumir duas formas.
 
-* Se a estrutura do site ou o conteúdo inicial precisar ser ajustado, [o modelo de site pode ser personalizado para atender às suas necessidades](site-templates.md).
-* Se o estilo do site precisar ser ajustado, [o tema do site pode ser baixado e personalizado](/help/journey-sites/quick-site/overview.md).
-* Se a funcionalidade do site precisar ser ajustada, [o site pode ser totalmente personalizado](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
-
-Qualquer personalização deve ser realizada com o apoio de uma equipe de desenvolvimento.
+* Para projetos com criação de página do AEM com o Universal Editor e entrega através de [entrega de borda](/help/edge/overview.md), todo o estilo é feito no projeto GitHub.
+   * Consulte o documento [Introdução - Tutorial do desenvolvedor do Universal Editor](https://www.aem.live/developer/ue-tutorial) para obter mais informações.
+* Para projetos com criação e entrega de página tradicional do AEM por meio de [entrega de publicação](/help/sites-cloud/authoring/author-publish.md), o administrador do AEM simplesmente baixa o tema do site e o fornece ao desenvolvedor front-end, que o personaliza usando suas ferramentas favoritas e, em seguida, confirma as alterações no repositório de código do AEM, que é então implantado.
+   * Consulte o documento [Jornada de Criação rápida de sites do AEM](/help/journey-sites/quick-site/overview.md) para obter mais informações.

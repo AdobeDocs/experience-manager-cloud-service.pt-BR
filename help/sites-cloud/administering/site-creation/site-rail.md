@@ -1,14 +1,14 @@
 ---
 title: Usar o painel Site para gerenciar o tema do site
-description: Conheça os recursos avançados do painel Site para ajudá-lo a personalizar e gerenciar facilmente o tema do site.
+description: Conheça os recursos avançados do painel Site para ajudá-lo a personalizar e gerenciar facilmente o tema do seu site para projetos de criação tradicionais do AEM com entrega de publicação.
 feature: Administering
 role: Admin
 exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
 solution: Experience Manager Sites
-source-git-commit: 34c2604c7dcc2a1b27f617fe2d88eeb7496b3456
+source-git-commit: 076005e1ed1ca3303ed5843a3f27e0d707df5022
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 31%
+source-wordcount: '607'
+ht-degree: 36%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 31%
 
 {{traditional-aem}}
 
-Conheça os recursos avançados do painel Site para ajudá-lo a personalizar e gerenciar facilmente o tema do site.
+Conheça os recursos avançados do painel Site para ajudá-lo a personalizar e gerenciar facilmente o tema do seu site para projetos de criação tradicionais do AEM com entrega de publicação.
 
 ## Visão geral {#overview}
 
-O painel Site permite gerenciar os recursos de tema e modelo do site. [Assim como outros painéis](/help/sites-cloud/authoring/sites-console/console-side-panel.md), como os painéis Árvore de Conteúdo, Referências ou Linha do Tempo, o painel Site é exibido mais à esquerda do console de sites, exibindo informações sobre o item selecionado. Ao contrário de outros painéis, o painel Site se aplica somente às raízes do Site.
+O painel Site permite gerenciar os recursos de tema e modelo do seu site para projetos de criação tradicionais do AEM com a entrega de publicação [.](/help/sites-cloud/authoring/author-publish.md) [Assim como outros painéis](/help/sites-cloud/authoring/sites-console/console-side-panel.md), como os painéis Árvore de Conteúdo, Referências ou Linha do Tempo, o painel Site é exibido mais à esquerda do console de sites, exibindo informações sobre o item selecionado. Ao contrário de outros painéis, o painel Site se aplica somente às raízes do Site.
 
 O painel Site é usado para gerenciar informações relacionadas ao tema e ao modelo do site, incluindo:
 
@@ -36,7 +36,7 @@ O painel Site é usado para gerenciar informações relacionadas ao tema e ao mo
 
 ## Baixar fontes de tema {#downloading-theme-sources}
 
-Ao criar um site no AEM com base em um [modelo de site](site-templates.md), você pode baixar o [tema do site](site-themes.md) usando o painel Site.
+Ao criar um site no AEM com base em um [modelo de site](site-templates.md), você pode baixar o [tema de site](site-themes.md) usando o painel Site.
 
 Com o painel Site sendo exibido no console de sites, selecione a raiz do site para revelar informações de tema sobre ele.
 
@@ -46,7 +46,7 @@ Selecione **Baixar Fontes de Tema** para baixar uma cópia local do tema do site
 
 ## Baixar recursos do modelo {#downloading-template-resources}
 
-[Modelos de site](site-templates.md) podem conter informações que vão além da estrutura de conteúdo do site e do [tema do site](site-themes.md). Por exemplo, os modelos de site podem conter designs de wireframe ou outros arquivos relacionados ao site.
+[Modelos de site](site-templates.md) podem conter informações que vão além da estrutura de conteúdo do site e do [tema do site.](site-themes.md) Por exemplo, os modelos de site podem conter designs de wireframe ou outros arquivos relacionados ao site.
 
 Se o site for baseado em um modelo de site, com o painel Site sendo exibido no console de sites, selecione a raiz do site para revelar informações de tema sobre ele, incluindo recursos adicionais.
 
@@ -86,4 +86,4 @@ Com o painel Site sendo exibido no console de sites, selecione a raiz do site pa
 
 ![Ativação do pipeline de front-end](/help/sites-cloud/administering/assets/enable-fep.png)
 
-Para obter mais informações, consulte o documento [Habilitando o pipeline de front-end](enable-front-end-pipeline.md).
+Para obter mais informações, consulte o documento [Ativação do pipeline de front-end.](enable-front-end-pipeline.md)
