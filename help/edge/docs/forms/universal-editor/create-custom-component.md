@@ -4,9 +4,9 @@ description: Criar componentes personalizados para um formulário EDS
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 2bbe3f95-d5d0-4dc7-a983-7a20c93e2906
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1773'
+source-wordcount: '1841'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Adicionar um componente personalizado no Editor universal significa disponibiliz
 
 Vamos ver um exemplo de criação de um novo componente personalizado chamado **intervalo**. O componente de Intervalo é exibido como uma linha reta e exibe valores como o valor mínimo, máximo ou selecionado.
 
-![Estilo do componente do intervalo](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
+![Uma representação visual de um componente de intervalo que mostra um controle deslizante com valores mínimo e máximo e um indicador de valor selecionado](/help/edge/docs/forms/universal-editor/assets/custom-component-range-style.png)
 
 No final deste artigo, você aprenderá a criar componentes personalizados do zero.
 
-### 1. Adição de estrutura para novo componente personalizado
+### &#x200B;1. Adição de estrutura para novo componente personalizado
 
 Antes de um componente personalizado poder ser usado, ele deve ser registrado para que o Editor universal o reconheça como uma opção disponível. Isso é feito por meio de uma definição de componente, que inclui um identificador exclusivo, propriedades padrão e a estrutura do componente.Execute as seguintes etapas para disponibilizar o componente personalizado para criação de formulário:
 
@@ -104,9 +104,9 @@ O arquivo `_range.json`, após adicionar a definição do componente, é o segui
 
 >[!NOTE]
 >
-> Todos os componentes relacionados ao formulário seguem a mesma abordagem que o Sites ao adicionar blocos ao Universal Editor. Consulte o artigo [Criação de blocos instrumentados para uso com o Editor universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obter mais informações.
+> Todos os componentes relacionados ao formulário seguem a mesma abordagem que o Sites ao adicionar blocos ao Universal Editor. Consulte o artigo [Criação de blocos instrumentados para uso com o Editor universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/wysiwyg-authoring/create-block) para obter mais informações.
 
-### 2. Definir as propriedades do componente personalizado para criação
+### &#x200B;2. Definir as propriedades do componente personalizado para criação
 
 O componente personalizado inclui um modelo de componente que especifica quais propriedades são configuráveis pelo autor do formulário. Essas propriedades aparecem na caixa de diálogo **Propriedades** do Editor Universal, permitindo que os autores ajustem configurações como rótulos, regras de validação, estilos e outros atributos. Para definir propriedades:
 
@@ -161,7 +161,7 @@ O componente personalizado inclui um modelo de componente que especifica quais p
 
    >[!NOTE]
    >
-   > Para adicionar um novo campo à caixa de diálogo **Propriedade** de um componente personalizado, siga o [esquema definido](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
+   > Para adicionar um novo campo à caixa de diálogo **Propriedade** de um componente personalizado, siga o [esquema definido](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/field-types#loading-model).
 
    Você também pode [adicionar propriedades personalizadas](#adding-custom-properties-for-your-custom-component) a um componente personalizado para estender sua funcionalidade.
 
@@ -253,7 +253,7 @@ Portanto, o arquivo `_range.json` final, após adicionar a definição do compon
 ![definição e modelo de componente](/help/edge/docs/forms/universal-editor/assets/custom-component-json-file.png)
 
 
-### 3. Tornar o componente personalizado visível na lista de componentes do WYSIWYG
+### &#x200B;3. Tornar o componente personalizado visível na lista de componentes do WYSIWYG
 
 Um filtro define em qual seção o componente personalizado pode ser usado no Universal Editor. Isso garante que o componente só possa ser usado em seções apropriadas, mantendo a estrutura e a usabilidade.
 
@@ -299,7 +299,7 @@ Para garantir que o componente personalizado apareça na lista de componentes di
 
 ![filtro de componente](/help/edge/docs/forms/universal-editor/assets/custom-component-form-file.png)
 
-### 4. Registrar o componente personalizado
+### &#x200B;4. Registrar o componente personalizado
 
 Para permitir que o bloco de formulário reconheça o componente personalizado e carregue suas propriedades definidas no modelo de componente durante a criação do formulário, adicione o valor `fd:viewType` da definição de componente ao arquivo `mappings.js`.
 Para registrar um componente:
@@ -324,15 +324,15 @@ const OOTBComponentDecorators = ['file-input',
 
 Depois de concluir as etapas acima, o componente personalizado aparece na lista de componentes do formulário no Editor universal. Em seguida, você pode arrastá-lo e soltá-lo na seção do formulário.
 
-![componente de intervalo](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
+![Captura de tela da paleta de componentes do Universal Editor mostrando o componente de intervalo personalizado disponível para arrastar e soltar em formulários](/help/edge/docs/forms/universal-editor/assets/custom-component-range.png)
 
 A captura de tela abaixo mostra as propriedades do componente `range` adicionadas ao modelo de componente, que especifica as propriedades que o autor do formulário pode configurar.:
 
-![Propriedades do componente de intervalo](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
+![Captura de tela do painel de propriedades do Editor Universal exibindo configurações configuráveis para o componente de intervalo, incluindo propriedades básicas, regras de validação e opções de estilo](/help/edge/docs/forms/universal-editor/assets/range-properties.png)
 
 Agora é possível definir o comportamento em tempo de execução do componente personalizado adicionando estilo e funcionalidade.
 
-### 5. Adicionar o comportamento do tempo de execução ao componente personalizado
+### &#x200B;5. Adicionar o comportamento do tempo de execução ao componente personalizado
 
 Você pode modificar componentes personalizados usando marcação predefinida, conforme explicado em [Estilo de campos de formulário](/help/edge/docs/forms/style-theme-forms.md). Isso pode ser feito com CSS personalizado (Folhas de estilo em cascata) e código personalizado para aprimorar a aparência do componente. Para adicionar o comportamento do tempo de execução do componente:
 
@@ -392,7 +392,6 @@ Você pode modificar componentes personalizados usando marcação predefinida, c
    float: right;
    }
    ```
-
    O código ajuda a definir o estilo e a aparência visual do componente personalizado.
 
 1. Para adicionar a funcionalidade, navegue até o arquivo `/blocks/form/components/range/range.js` e adicione a seguinte linha de código:
@@ -457,7 +456,7 @@ Você pode modificar componentes personalizados usando marcação predefinida, c
    Depois de incorporar o estilo e a funcionalidade personalizados, a aparência e o comportamento do componente de Intervalo são aprimorados. O design atualizado reflete os estilos aplicados, enquanto a funcionalidade adicionada garante uma experiência do usuário mais dinâmica e interativa.
 A captura de tela abaixo ilustra o componente de intervalo atualizado.
 
-![Estilo do componente do intervalo](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
+![O componente de intervalo final em ação que mostra um controle deslizante estilizado com exibição de bolha de valor e funcionalidade interativa no Editor Universal](/help/edge/docs/forms/universal-editor/assets/custom-component-range-1.png)
 
 ## Perguntas frequentes
 

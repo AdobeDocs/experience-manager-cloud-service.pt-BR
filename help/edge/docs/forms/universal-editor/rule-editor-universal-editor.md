@@ -4,9 +4,9 @@ description: O editor de regras no Universal Editor permite adicionar comportame
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: 846f56e1-3a98-4a69-b4f7-40ec99ceb348
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2253'
 ht-degree: 1%
 
 ---
@@ -188,7 +188,7 @@ Agora, vamos explorar como [gravar regras no Editor de regras](#write-rules).
 
 Para entender como escrever regras no Editor de regras visuais, considere um exemplo simples de um formulário de cálculo de imposto:
 
-![Exemplo do Editor de Regras](/help/edge/docs/forms/assets/rule-editor-1.png)
+![Captura de tela da interface do Editor de regras mostrando a criação de uma regra condicional com lógica Quando-Então para visibilidade do campo de formulário](/help/edge/docs/forms/assets/rule-editor-1.png)
 
 No formulário descrito acima, o usuário informa o salário bruto. Com base nessa entrada, o campo condicional é exibido e o imposto a pagar é calculado.
 
@@ -209,7 +209,7 @@ No formulário descrito acima, o usuário informa o salário bruto. Com base nes
 
 Para gravar regras, execute as seguintes etapas:
 
-### 1. Criar um formulário
+### &#x200B;1. Criar um formulário
 
 Para criar um formulário no Universal Editor:
 
@@ -223,9 +223,9 @@ Para criar um formulário no Universal Editor:
    * Enviar (Botão Enviar)
 1. Oculte o campo de formulário `Additional Deduction` abrindo seu `Properties`.
 
-   ![Exemplo do Editor de Regras](/help/edge/docs/forms/assets/rule-editor2.png)
+   ![Captura de tela de um formulário de cálculo de imposto com campos de entrada para salário bruto, estado civil e filhos dependentes, demonstrando a estrutura do formulário antes da aplicação das regras](/help/edge/docs/forms/assets/rule-editor2.png)
 
-### 2. Adicionar uma regra condicional para um campo de formulário
+### &#x200B;2. Adicionar uma regra condicional para um campo de formulário
 
 Depois de criar o formulário, escreva a primeira regra para mostrar o campo `Additional Deduction` somente se o salário bruto exceder $50.000. Para adicionar uma regra condicional:
 
@@ -261,7 +261,7 @@ A regra é exibida da seguinte maneira no Editor de regras:
 >
 > Como alternativa, você pode escrever uma regra Mostrar no campo Dedução Adicional, em vez de uma regra Quando no campo Salário Bruto, para implementar o mesmo comportamento.
 
-### 3. Adicionar regras de cálculo para os campos de formulário
+### &#x200B;3. Adicionar regras de cálculo para os campos de formulário
 
 Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferença entre `Gross Salary` e `Additional Deduction` (se aplicável). Para adicionar uma regra de cálculo ao campo **[!UICONTROL Receita Tributável]**, execute as seguintes etapas:
 
@@ -278,7 +278,6 @@ Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferen
    * Selecione **[!UICONTROL Menos]** no campo **[!UICONTROL Selecionar Operador]**.
 
    * Selecione ou arraste e solte da guia Objeto do Forms o campo **[!UICONTROL Dedução Adicional]** no outro objeto **[!UICONTROL Soltar ou selecione aqui]**.
-
      ![Exemplo do Editor de Regras15](/help/edge/docs/forms/assets/rule-editor18.png)
 
 1. Selecione **[!UICONTROL Concluído]** para salvar a regra.
@@ -296,7 +295,6 @@ Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferen
    * Selecione **[!UICONTROL Multiplicado por]** no campo **[!UICONTROL Selecionar operador]**.
 
    * Selecione **Número** no campo **[!UICONTROL Selecionar Opção]** e insira o valor como `10` no campo **[!UICONTROL Inserir um Número]**.
-
      ![Exemplo do Editor de Regras18](/help/edge/docs/forms/assets/rule-editor21.png)
 1. Em seguida, selecione na área destacada ao redor do campo de expressão e selecione **[!UICONTROL Estender expressão]**.
    ![Exemplo do Editor de Regras19](/help/edge/docs/forms/assets/rule-editor22.png)
@@ -304,7 +302,7 @@ Em seguida, escreva uma regra para calcular o `Taxable Income`, que é a diferen
    ![Exemplo do Editor de Regras20](/help/edge/docs/forms/assets/rule-editor23.png)
 1. Selecione **[!UICONTROL Concluído]** para salvar a regra.
 
-### 4. Pré-visualizar um formulário
+### &#x200B;4. Pré-visualizar um formulário
 
 Agora, ao visualizar o formulário e inserir o **Salário Bruto** como `60,000`, o campo **Dedução Adicional** será exibido e a **Renda Tributável** e o **Imposto a Pagar** serão calculados adequadamente.
 
@@ -362,7 +360,6 @@ function days(endDate, startDate) {
 // eslint-disable-next-line import/prefer-default-export
 export { getFullName, days };
 ```
-
 ![Adicionando Função personalizada](/help/edge/docs/forms/assets/create-custom-function.png)
 
 ### Usar uma função personalizada no editor de regras

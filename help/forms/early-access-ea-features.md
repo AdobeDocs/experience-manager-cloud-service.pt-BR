@@ -6,9 +6,9 @@ Role: developer, user, author
 exl-id: 6b3f853c-2a6d-4544-9cad-8a3fc1e1f3b9
 feature: Adaptive Forms
 role: Admin, Developer, User
-source-git-commit: 4144c726a6f8551df9497732c2ca95b8eec5c63a
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '2356'
+source-wordcount: '2219'
 ht-degree: 0%
 
 ---
@@ -72,21 +72,6 @@ Veja o que mais o Conversational Forms oferece:
 
 
 As Forms de conversa são mais do que apenas uma nova aparência - elas são um divisor de águas para a experiência do usuário.  Aumente o engajamento, reduza o abandono de formulários e torne a interação com seu site uma experiência mais agradável para todos.
-
-
-### Criação no WYSIWYG para Edge Delivery Services
-
-A Criação no WYSIWYG fornece interfaces do WYSIWYG (Universal Editor e Adaptive Forms Editor) para criar e publicar formulários adaptáveis no Edge Delivery Services. A Criação do WYSIWYG oferece todos os recursos da [Criação baseada em documento](/help/edge/docs/forms/overview.md#document-based-authoring-features), além de uma grande variedade de recursos adicionais:
-
-* Editor de regras avançado para criar lógica complexa.
-* Extensibilidade do lado do servidor para funcionalidades personalizadas.
-* Experiência de edição do WYSIWYG para facilitar a criação e a visualização de formulários.
-* Funcionalidade de documento de registro para criar arquivos à prova de violação de dados enviados.
-* Integração com o Adobe Sign para assinaturas eletrônicas.
-* Integração com várias fontes de dados para pré-preencher formulários e enviar dados.
-* Modelo de dados de formulário (FDM) para definir a estrutura de dados e as interações com várias fontes de dados.
-* Capacidade de escolher entre várias ações de envio para lidar com envios de formulários, incluindo o envio de dados para o Microsoft SharePoint, Microsoft OneDrive, Adobe Workfront Fusion, Salesforce, Microsoft Dynamics e muitas outras fontes de dados.
-
 
 ### Conector do AEM Forms para Marketo
 
@@ -195,7 +180,7 @@ A AEM Forms aprimorou seus recursos de segurança adicionando suporte para duas 
 
 Ao oferecer várias opções de CAPTCHA, a AEM Forms capacitou você a selecionar a solução que melhor se alinha às suas necessidades específicas.
 
-Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
+Pronto para integrar qualquer uma dessas soluções CAPTCHA ao Adaptive Forms? Nossa documentação fornece instruções detalhadas para cada: [Turnstile de Cloudflare](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-turnstile-core-components), [hCaptcha](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components) e [Google reCAPTCHA](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components).
 
 ### APIs Doc Assurance
 

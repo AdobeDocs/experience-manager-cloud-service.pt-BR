@@ -4,9 +4,9 @@ description: Saiba como criar fragmentos de formulário no Editor universal e ad
 feature: Edge Delivery Services
 role: Admin, User, Developer
 exl-id: 7b0d4c7f-f82f-407b-8e25-b725108f8455
-source-git-commit: 8dfcec0648f5b474113325b6cc6cffc754e21ec2
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1401'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ Para criar um fragmento de formulário no Universal Editor, execute as seguintes
 
    A captura de tela abaixo exibe o `contact fragment` criado no Editor Universal.
 
-   ![Fragmento do contato](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
+   ![Captura de tela de um fragmento de formulário de detalhes do contato concluído no Editor Universal, mostrando campos para nome, telefone, email e endereço que podem ser reutilizados em vários formulários](/help/edge/docs/forms/universal-editor/assets/contact-fragment.png)
 
    Depois de criar o fragmento, você pode [adicionar o fragmento criado no Edge Delivery Services Forms](#adding-form-fragments-in-forms).
 
@@ -140,7 +140,7 @@ Vamos criar um formulário `Employee Details` simples que inclua informações d
 
    O fragmento de formulário é adicionado por referência ao formulário e permanece em sincronia com o fragmento de formulário independente.
 
-   ![Fragmento no formulário](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
+   ![Captura de tela mostrando o fragmento de detalhes do contato integrado com êxito em um formulário de funcionário no Universal Editor, demonstrando como os fragmentos mantêm sua estrutura quando reutilizados](/help/edge/docs/forms/universal-editor/assets/fragment-in-form.png)
 
    Você pode visualizar o formulário para ver como ele aparece no modo **Visualização**.
 

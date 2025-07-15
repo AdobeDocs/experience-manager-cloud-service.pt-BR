@@ -4,9 +4,9 @@ description: Saiba como criar formulários com base em um modelo de dados de for
 feature: Edge Delivery Services, Form Data Model
 role: Admin, User
 exl-id: 9ce51223-57d0-47d8-8868-84b37d4e8e3e
-source-git-commit: 95998daf04ae579ca11896953903852e6140c3a4
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1271'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ A integração de formulários com um Modelo de dados de formulário (FDM) no Un
 
 * Se você não vir o ícone de **Fontes de Dados** na interface do Universal Editor ou a propriedade **Associar Referência** no painel de propriedades direito, habilite a extensão de **Fonte de Dados** no **Extension Manager**.
 
-  ![gerenciador de extensões](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
+  ![Captura de tela da interface do Universal Editor Extension Manager mostrando as extensões disponíveis, incluindo a extensão de Fontes de Dados que pode ser habilitada para integração de formulários](/help/edge/docs/forms/universal-editor/assets/extension-manager.png)
 
   Consulte o artigo [Destaques dos recursos do Extension Manager](https://developer.adobe.com/uix/docs/extension-manager/feature-highlights/#enablingdisabling-extensions) para saber como habilitar e desabilitar extensões no Universal Editor.
 
@@ -79,7 +79,7 @@ Ao criar um formulário baseado em esquema, ele é configurado automaticamente c
 
    Assim que você clicar em **[!UICONTROL Criar]**, o formulário será aberto no editor universal para criação.
 
-   ![crie o formulário](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
+   ![Captura de tela do Editor Universal mostrando um formulário baseado em esquema com campos de formulário pré-preenchidos e o Navegador de Conteúdo exibindo elementos de fonte de dados disponíveis](/help/edge/docs/forms/universal-editor/assets/schema-based-form-in-ue.png)
 
    O formulário é criado usando os elementos de dados da fonte de dados associada, com os campos de formulário com vinculação de dados pré-configurada.
 
@@ -131,7 +131,7 @@ Ao criar um formulário não baseado em esquema, nenhuma fonte de dados é confi
 
    Você também pode arrastar e soltar esses elementos para criar o Formulário adaptável. Ao clicar em **[!UICONTROL Adicionar]**, os elementos selecionados da guia **[!UICONTROL Fonte de Dados]** são adicionados ao formulário e uma marca de verificação é exibida na frente dos elementos adicionados.
 
-   ![Formulário de compilação](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
+   ![Captura de tela mostrando o Editor Universal com um formulário não de esquema sendo criado ao arrastar e soltar elementos de dados da guia Data Source na estrutura do formulário](/help/edge/docs/forms/universal-editor/assets/non-schema-form.png)
 
 Você pode adicionar associação de dados a um campo de formulário selecionando-o na propriedade **Referência de associação**. Por exemplo, vamos adicionar uma referência de associação de dados à caixa de texto **Id** que já está presente no formulário.
 Para selecionar a associação de dados para o campo de formulário da árvore da fonte de dados, execute as seguintes etapas:

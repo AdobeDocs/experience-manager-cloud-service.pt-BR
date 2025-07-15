@@ -4,9 +4,9 @@ description: Use o Universal Editor para Edge Delivery Services no Forms para cr
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: d711e0d1-a2fc-4aa6-af87-6e77a7bc5d2e
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1049'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Com o Editor universal, você pode criar rapidamente formulários responsivos e 
 
 Quer você esteja gerenciando uma renderização leve do lado do cliente, garantindo compatibilidade entre navegadores ou seguindo padrões de acessibilidade rigorosos, o Universal Editor oferece uma solução simplificada para criar e gerenciar formulários.
 
-![Editor universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
+![Editor Universal](/help/edge/docs/forms/universal-editor/assets/universal-editor.png){width=80%, align-center}
 
 ## Principais recursos do Universal Editor para Edge Delivery Services para Forms
 
@@ -45,7 +45,7 @@ Quer você esteja gerenciando uma renderização leve do lado do cliente, garant
 
 | ![Análise e Acompanhamento](/help/edge/docs/forms/universal-editor/assets/analyticsandtracking.svg) | ![Fragmentos de formulário](/help/edge/docs/forms/universal-editor/assets/form-fragments.svg) | ![Associação de Dados](/help/edge/docs/forms/universal-editor/assets/data-binding.svg) |
 |:-------------:|:-------------:|:-------------:|
-| [**Análise e Acompanhamento**](https://www.aem.live/developer/martech-integration) | **Fragmentos de formulário** (em breve) | **Ligação de Dados** (Em Breve) |
+| [**Análise e Acompanhamento**](https://www.aem.live/developer/martech-integration) | **Fragmentos de formulário** (em breve) | [**Associação de Dados**](/help/edge/docs/forms/universal-editor/integrate-forms-with-data-source.md) |
 | Obtenha insights sobre o comportamento do usuário, as interações de formulário e as taxas de envio com análises e rastreamento integrados para permitir a otimização de formulários orientados por dados. | Os fragmentos de formulário permitem a reutilização, permitindo que as seções usadas com frequência sejam criadas uma vez e reutilizadas em vários formulários, garantindo a consistência e reduzindo o esforço de manutenção. | A vinculação de dados permite conexões diretas entre campos de formulário e fontes de dados de back-end, oferecendo suporte a atualizações em tempo real e mapeamento de dados avançado. |
 
 | ![CAPTCHA](/help/edge/docs/forms/universal-editor/assets/captcha.svg) | ![Incorporando o Forms](/help/edge/docs/forms/universal-editor/assets/embedding-forms.svg) | ![Obrigado pela Configuração](/help/edge/docs/forms/universal-editor/assets/thank-you.svg) |
@@ -110,7 +110,7 @@ O Editor universal fornece os seguintes componentes de formulário prontos para 
       <td>Permite aos usuários selecionar várias opções de um grupo.</td>
     </tr>
     <tr>
-      <td><b>Seletor de data</b></td>
+      <td><b>Seletor de datas</b></td>
       <td>Permite que os usuários selecionem uma data usando uma interface de calendário.</td>
     </tr>
     <tr>
@@ -122,7 +122,7 @@ O Editor universal fornece os seguintes componentes de formulário prontos para 
       <td>Captura endereços de email com validação básica de formato.</td>
     </tr>
     <tr>
-      <td><b>Anexo de arquivo</b></td>
+      <td><b>Arquivo em anexo</b></td>
       <td>Permite o upload de documentos, imagens ou outros tipos de arquivos.</td>
     </tr>
     <tr>
@@ -154,11 +154,11 @@ O Editor universal fornece os seguintes componentes de formulário prontos para 
       <td>Permite que os usuários forneçam uma classificação baseada em estrelas.</td>
     </tr>
     <tr>
-      <td><b>Botão Redefinir</b></td>
+      <td><b>Botão de redefinir</b></td>
       <td>Redefine os campos de formulário para seu estado padrão.</td>
     </tr>
     <tr>
-      <td><b>Botão Enviar</b></td>
+      <td><b>Botão de enviar</b></td>
       <td>Aciona o envio do formulário e inicia fluxos de trabalho definidos.</td>
     </tr>
     <tr>
@@ -217,7 +217,7 @@ In-addtion to pre-built form components, the Universal editor also provides supp
 
 ## Integração
 
-Para ativar o Editor universal e seus recursos avançados, como o Editor de regras, escreva para nós em aem-forms-ea@adobe.com a partir da sua ID de e-mail oficial. A equipe do Adobe está aqui para ajudá-lo a transformar sua experiência de criação de formulários.
+<span class="preview"> Este é um recurso de pré-lançamento disponível através do nosso <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/release-notes/prerelease#new-features">canal de pré-lançamento</a>. </span>
 
 ## Perguntas frequentes
 

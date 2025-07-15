@@ -4,9 +4,9 @@ description: Personalize efetivamente o tema e o estilo do AEM Forms fornecido p
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: ac780399-34fe-457d-aaf4-b675656c024d
-source-git-commit: 9127c58a72dc4942312907f9e8f0cdcc8de9aa4b
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1876'
+source-wordcount: '1870'
 ht-degree: 0%
 
 ---
@@ -55,22 +55,24 @@ O bloco Forms adaptável oferece uma estrutura HTML padronizada, simplificando o
 * **Atualizar estilos padrão**: você pode modificar os estilos padrão de um formulário editando o `/blocks/form/form.css file`. Esse arquivo fornece um estilo abrangente para um formulário, compatível com formulários de assistente de várias etapas. Ela enfatiza o uso de variáveis CSS personalizadas para facilitar a personalização, a manutenção e o estilo uniforme em todos os formulários.
 
 * **Estilo CSS para o Forms**: para garantir que seus estilos sejam aplicados corretamente, envolva o CSS específico do formulário no seletor `main .form form`. Isso garante que seus estilos direcionem somente os elementos de formulário na área de conteúdo principal, evitando conflitos com outras partes do site.
-Exemplo:
+
+  Exemplo:
 
   ```css
-    main .form form input {
-        /* Add styles specific to input fields inside the form */
-    }
+  main .form form .{Type}-wrapper input {
+      /* Add styles specific to input fields inside the form */
+  }
   
-    main .form form button {
-        /* Add styles specific to buttons inside the form */
-    }
+  main .form form .{Type}-wrapper button {
+      /* Add styles specific to buttons inside the form */
+  }
   
-    main .form form label {
-        /* Add styles specific to labels inside the form */
-    }
-  
-## Estrutura dos componentes
+  main .form form .{Type}-wrapper label {
+      /* Add styles specific to labels inside the form */
+  }
+  ```
+
+## Estrutura de componentes
 
 O bloco adaptável do Forms oferece uma estrutura consistente do HTML para vários elementos de formulário, garantindo um estilo e gerenciamento mais fáceis. É possível manipular os componentes usando o CSS para fins de estilo.
 
@@ -81,15 +83,13 @@ Todos os campos de formulário, exceto os menus suspensos, grupos de opções e 
 +++ Estrutura HTML de componentes gerais
 
 ```HTML
-
   <div class="{Type}-wrapper field-{Name}   field-wrapper" data-required={Required}>
-     &lt;label for="{FieldId}" class="field-label">First   Name&lt;/label>
-     &lt;input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
+     <label for="{FieldId}" class="field-label">First   Name</label>
+     <input type="{Type}" placeholder="{Placeholder}"   maxlength="{Max}" id={FieldId}" name="{Name}"   aria-describedby="{FieldId}-description">
      <div class="field-description" aria-live="polite"  id="{FieldId}-description">
       Hint - First name should be minimum 3 characters  and a maximum of 10 characters.
      </div>
   </div>
-
 ```
 
 * Classes: o elemento div tem várias classes para direcionar elementos específicos e estilo. Você precisa das classes `{Type}-wrapper` ou `field-{Name}` para desenvolver um Seletor de CSS para estilizar um campo de formulário:
@@ -104,15 +104,13 @@ Todos os campos de formulário, exceto os menus suspensos, grupos de opções e 
 **Exemplo de estrutura HTML**
 
 ```HTML
-
 <div class="text-wrapper field-first-name field-wrapper" data-required="true">
-  &lt;label for="firstName" class="field-label">First Name&lt;/label>
-  &lt;input type="text" placeholder="Enter your first name" maxlength="50" id="firstName" name="firstName" aria-describedby="firstName-description">
+  <label for="firstName" class="field-label">First Name</label>
+  <input type="text" placeholder="Enter your first name" maxlength="50" id="firstName" name="firstName" aria-describedby="firstName-description">
   <div class="field-description" aria-live="polite" id="firstName-description">
     Please enter your legal first name.
   </div>
 </div>
-
 ```
 
 +++
@@ -120,29 +118,28 @@ Todos os campos de formulário, exceto os menus suspensos, grupos de opções e 
 +++ Seletor de CSS para Componentes gerais
 
 ```CSS
-
   
   /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper  &lbrace;
+  main .form form .{Type}-wrapper  {
     /* Add your styles here */
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 4px;
-  &rbrace;
+  }
   
   /* Target all input fields within any .{Type}-wrapper  */
-  main .form form .{Type}-wrapper input &lbrace;
+  main .form form .{Type}-wrapper input {
     /* Add your styles here */
     border: 1px solid #ccc;
     padding: 8px;
     border-radius: 4px;
-  &rbrace;
+  }
   
   /* Target any element with the class field-{Name}  */
-  main .form form .field-{Name} &lbrace;
+  main .form form .field-{Name} {
     /* Add your styles here */
     /* This could be used for styles specific to all elements with   field-{Name} class, not just inputs */
-  &rbrace;
+  }
   
 ```
 * `.{Type}-wrapper`: Direciona o elemento `div` externo com base em    o tipo de campo. Por exemplo, `.text-wrapper` é direcionado a todo o texto    campos.
@@ -151,22 +148,20 @@ Todos os campos de formulário, exceto os menus suspensos, grupos de opções e 
 **Exemplo de Seletores de CSS para Componentes Gerais**
 
 ```CSS
-
 /*Target all text input fields */
-main .form form .text-wrapper input &lbrace;
+main .form form .text-wrapper input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
   color: red;
-&rbrace;
+}
 
 /*Target all fields with name first-name*/
-main .form form .field-first-name input &lbrace;
+main .form form .field-first-name input {
   border: 1px solid #ccc;
   padding: 8px;
   border-radius: 4px;
-&rbrace;
-
+}
 ```
 
 +++
@@ -178,33 +173,29 @@ Para menus suspensos, o elemento `select` é usado em vez de um elemento `input`
 +++ Estrutura HTML do componente suspenso
 
 ```HTML
-
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
-   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - First name should be minimum 3 characters and a maximum of 10 characters.
    </div>
 </div>
-
 ```
 
 **Exemplo de estrutura do HTML**
 
 ```HTML
-
 <div class="drop-down-wrapper field-country field-wrapper" data-required="true">
-  &lt;label for="country" class="field-label">Country&lt;/label>
-  &lt;select id="country" name="country">
-    &lt;option value="">Select Country&lt;/option>
-    &lt;option value="US">United States&lt;/option>
-    &lt;option value="CA">Canada&lt;/option>
-  &lt;/select>
+  <label for="country" class="field-label">Country</label>
+  <select id="country" name="country">
+    <option value="">Select Country</option>
+    <option value="US">United States</option>
+    <option value="CA">Canada</option>
+  </select>
   <div class="field-description" aria-live="polite" id="country-description">
     Please select your country of residence.
   </div>
 </div>
-
 ```
 
 +++
@@ -214,21 +205,19 @@ Para menus suspensos, o elemento `select` é usado em vez de um elemento `input`
 O CSS a seguir lista alguns exemplos de Seletores de CSS para componentes suspensos.
 
 ```CSS
-
 /* Target the outer wrapper */
-main .form form .drop-down-wrapper &lbrace;
+main .form form .drop-down-wrapper {
   /* Add your styles here */
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
-&rbrace;
+}
 
 /* Style the label */
-main .form form .drop-down-wrapper .field-label &lbrace;
+main .form form .drop-down-wrapper .field-label {
   margin-bottom: 5px;
   font-weight: bold;
-&rbrace;
-
+}
 ```
 * Direcionar o Wrapper: o primeiro seletor (`.drop-down-wrapper`) direciona o elemento wrapper externo, garantindo que os estilos se apliquem a todo o componente suspenso.
 * Layout Flexbox: O Flexbox organiza o rótulo, a lista suspensa e a descrição verticalmente para um layout limpo.
@@ -248,41 +237,37 @@ Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estr
 +++ Estrutura HTML do grupo de rádio
 
 ```HTML
-
-&lt;fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
-   &lt;legend for="{FieldId}" class="field-label">....&lt;/legend>
+<fieldset class="radio-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
    <% for each radio in Group %>
    <div class="radio-wrapper field-{Name}">
-      &lt;input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
-      &lt;label for="{UniqueId}" class="field-label">...&lt;/label>
+      <input type="radio" value="" id="{UniqueId}" data-field-type="radio-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
    </div>
    <% end for %>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 **Exemplo de estrutura do HTML**
 
 ```HTML
-
-&lt;fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
-  &lt;legend for="color_preference" class="field-label">Favorite Color:&lt;/legend>
+<fieldset class="radio-group-wrapper field-color field-wrapper" id="color_preference" name="color_preference" data-required="true">
+  <legend for="color_preference" class="field-label">Favorite Color:</legend>
   <% for each radio in Group %>
     <div class="radio-wrapper field-color">
-      &lt;input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
-      &lt;label for="color_red" class="field-label">Red&lt;/label>
+      <input type="radio" value="red" id="color_red" data-field-type="radio-group" name="color_preference">
+      <label for="color_red" class="field-label">Red</label>
     </div>
     <div class="radio-wrapper field-color">
-      &lt;input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
-      &lt;label for="color_green" class="field-label">Green&lt;/label>
+      <input type="radio" value="green" id="color_green" data-field-type="radio-group" name="color_preference">
+      <label for="color_green" class="field-label">Green</label>
     </div>
     <div class="radio-wrapper field-color">
-      &lt;input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
-      &lt;label for="color_blue" class="field-label">Blue&lt;/label>
+      <input type="radio" value="blue" id="color_blue" data-field-type="radio-group" name="color_preference">
+      <label for="color_blue" class="field-label">Blue</label>
     </div>
   <% end for %>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 +++
@@ -292,34 +277,28 @@ Semelhante aos componentes suspensos, os grupos de rádio têm sua própria estr
 * Direcionamento do conjunto de campos
 
 ```CSS
-
-  main .form form .radio-group-wrapper &lbrace;
+  main .form form .radio-group-wrapper {
     border: 1px solid #ccc;
     padding: 10px;
-  &rbrace;
-
+  }
 ```
 Este seletor segmenta qualquer conjunto de campos com a classe radio-group-wrapper. Isso seria útil para aplicar estilos gerais a todo o grupo de rádio.
 
 * Rótulos do botão de opção de direcionamento
 
 ```CSS
-
-main .form form .radio-wrapper label &lbrace;
+main .form form .radio-wrapper label {
     font-weight: normal;
     margin-right: 10px;
-  &rbrace;
-
+  }
 ```
 
 * Direcionar todos os rótulos de botão de opção em um conjunto de campos específico com base em seu nome
 
 ```CSS
-
-main .form form .field-color .radio-wrapper label &lbrace;
+main .form form .field-color .radio-wrapper label {
   /* Your styles here */
-&rbrace;
-
+}
 ```
 
 +++
@@ -329,39 +308,35 @@ main .form form .field-color .radio-wrapper label &lbrace;
 +++ Estrutura HTML do grupo de caixas de seleção
 
 ```HTML
-
-&lt;fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
-   &lt;legend for="{FieldId}" class="field-label">....&lt;/legend>
+<fieldset class="checkbox-group-wrapper field-{Name} field-wrapper" id="{FieldId}" name="{Name}" data-required="{Required}">
+   <legend for="{FieldId}" class="field-label">....</legend>
    <% for each radio in Group %>
    <div class="radio-wrapper field-{Name}">
-      &lt;input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
-      &lt;label for="{UniqueId}" class="field-label">...&lt;/label>
+      <input type="checkbox" value="" id="{UniqueId}" data-field-type="checkbox-group" name="{FieldId}">
+      <label for="{UniqueId}" class="field-label">...</label>
    </div>
    <% end for %>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 **Exemplo de estrutura do HTML**
 
 ```HTML
-
-&lt;fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
-  &lt;legend for="topping_preference" class="field-label">Pizza Toppings:&lt;/legend>
+<fieldset class="checkbox-group-wrapper field-topping field-wrapper" id="topping_preference" name="topping_preference" data-required="false">
+  <legend for="topping_preference" class="field-label">Pizza Toppings:</legend>
   <div class="checkbox-wrapper field-topping">
-    &lt;input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
-    &lt;label for="topping_pepperoni" class="field-label">Pepperoni&lt;/label>
+    <input type="checkbox" value="pepperoni" id="topping_pepperoni" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_pepperoni" class="field-label">Pepperoni</label>
   </div>
   <div class="checkbox-wrapper field-topping">
-    &lt;input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
-    &lt;label for="topping_mushrooms" class="field-label">Mushrooms&lt;/label>
+    <input type="checkbox" value="mushrooms" id="topping_mushrooms" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_mushrooms" class="field-label">Mushrooms</label>
   </div>
   <div class="checkbox-wrapper field-topping">
-    &lt;input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
-    &lt;label for="topping_onions" class="field-label">Onions&lt;/label>
+    <input type="checkbox" value="onions" id="topping_onions" data-field-type="checkbox-group" name="topping_preference">
+    <label for="topping_onions" class="field-label">Onions</label>
   </div>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 +++
@@ -371,86 +346,78 @@ main .form form .field-color .radio-wrapper label &lbrace;
 * Direcionamento do invólucro externo: esses seletores segmentam os contêineres mais externos de grupos de opções e caixas de seleção, permitindo aplicar estilos gerais a toda a estrutura do grupo. Isso é útil para definir o espaçamento, alinhamento ou outras propriedades relacionadas ao layout.
 
 ```CSS
-
   
   /* Targets radio group wrappers */
-  main .form form .radio-group-wrapper &lbrace;
+  main .form form .radio-group-wrapper {
     margin-bottom: 20px; /* Adds space between radio groups */  
-  &rbrace;
+  }
 
   /* Targets checkbox group wrappers */
-  main .form form .checkbox-group-wrapper &lbrace;
+  main .form form .checkbox-group-wrapper {
     margin-bottom: 20px; /* Adds space between checkbox groups */
-  &rbrace;
-
+  }
 ```
 
 * Rótulos do grupo de direcionamento: esse seletor direciona o elemento `.field-label` aos invólucros do grupo de caixas de seleção e de rádio. Isso permite estilizar os rótulos especificamente para esses grupos, possivelmente fazendo com que eles se destaquem mais.
 
 ```CSS
-
 main .form form .radio-group-wrapper legend,
-main .form form .checkbox-group-wrapper legend &lbrace;
+main .form form .checkbox-group-wrapper legend {
   font-weight: bold; /* Makes the group label bold */
-&rbrace;
-
+}
 ```
 
 * Direcionamento de entradas e rótulos individuais: esses seletores fornecem controle mais granular sobre botões de opção individuais, caixas de seleção e seus rótulos associados. Você pode usá-los para ajustar o dimensionamento, o espaçamento ou aplicar estilos visuais mais distintos.
 
 ```CSS
-
 /* Styling radio buttons */
-main .form form .radio-group-wrapper input[type="radio"] &lbrace;
+main .form form .radio-group-wrapper input[type="radio"] {
   margin-right: 5px; /* Adds space between the input and its label */
-&rbrace;
+}
 
 /* Styling radio button labels */
-main .form form .radio-group-wrapper label &lbrace;
+main .form form .radio-group-wrapper label {
   font-size: 15px; /* Changes the label font size */
-&rbrace;
+}
 
 /* Styling checkboxes */
-main .form form .checkbox-group-wrapper input[type="checkbox"] &lbrace;
+main .form form .checkbox-group-wrapper input[type="checkbox"] {
   margin-right: 5px; /* Adds space between the input and its label */
-&rbrace;
+}
 
 /* Styling checkbox labels */
-main .form form .checkbox-group-wrapper label &lbrace;
+main .form form .checkbox-group-wrapper label {
   font-size: 15px; /* Changes the label font size */
-&rbrace;
-
+}
 ```
 
 * Personalização da aparência de botões de opção e caixas de seleção: essa técnica oculta a entrada padrão e usa pseudoelementos `:before` e `:after` para criar visuais personalizados que alteram a aparência com base no estado &quot;marcado&quot;.
 
 ```CSS
-
 /* Hide the default radio button or checkbox */
 main .form form .radio-group-wrapper input[type="radio"],
-main .form form .checkbox-group-wrapper input[type="checkbox"] &lbrace;
+main .form form .checkbox-group-wrapper input[type="checkbox"] {
   opacity: 0;
   position: absolute;
-&rbrace;
+}
 
 /* Create a custom radio button */
-main .form form .radio-group-wrapper input[type="radio"] + label::before &lbrace;
+main .form form .radio-group-wrapper input[type="radio"] + label::before {
   /* ... styles for custom radio button ... */
-&rbrace;
+}
 
-main .form form .radio-group-wrapper input[type="radio"]:checked + label::before &lbrace;
+main .form form .radio-group-wrapper input[type="radio"]:checked + label::before {
   /* ... styles for checked radio button ... */
-&rbrace;
+}
 
 /* Create a custom checkbox */
-main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before &lbrace;
+main .form form .checkbox-group-wrapper input[type="checkbox"] + label::before {
   /* ... styles for custom checkbox ... */
-&rbrace;
+}
 
-main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before &lbrace;
+main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::before {
   /* ... styles for checked checkbox ... */
-&rbrace;
-
+}
 ```
 
 +++
@@ -460,42 +427,38 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 +++ Estrutura HTML dos componentes do painel/contêiner
 
 ```HTML
-
-&lt;fieldset class="panel-wrapper field-{PanelName} field-wrapper">
-  &lt;legend for="{id}" class="field-label" data-visible="false">bannerComponent&lt;/legend>
+<fieldset class="panel-wrapper field-{PanelName} field-wrapper">
+  <legend for="{id}" class="field-label" data-visible="false">bannerComponent</legend>
   <div class="{Type}-wrapper field-{Name} field-wrapper">
-    &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
-    &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
+    <label for="{FieldId}" class="field-label">First Name</label>
+    <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
     <div class="field-description" aria-live="polite" id="{FieldId}-description">
       Hint - First name should be minimum 3 characters and a maximum of 10 characters.
     </div>
   </div>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 **Exemplo de estrutura do HTML**
 
 ```HTML
-
-&lt;fieldset class="panel-wrapper field-login field-wrapper">
-  &lt;legend for="login" class="field-label" data-visible="false">Login Information&lt;/legend>
+<fieldset class="panel-wrapper field-login field-wrapper">
+  <legend for="login" class="field-label" data-visible="false">Login Information</legend>
   <div class="text-wrapper field-username field-wrapper">
-    &lt;label for="username" class="field-label">Username&lt;/label>
-    &lt;input type="text" placeholder="Enter your username" maxlength="50" id="username" name="username">
+    <label for="username" class="field-label">Username</label>
+    <input type="text" placeholder="Enter your username" maxlength="50" id="username" name="username">
     <div class="field-description" aria-live="polite" id="username-description">
       Please enter your username or email address.
     </div>
   </div>
   <div class="password-wrapper field-password field-wrapper">
-    &lt;label for="password" class="field-label">Password&lt;/label>
-    &lt;input type="password" placeholder="Enter your password" maxlength="20" id="password" name="password">
+    <label for="password" class="field-label">Password</label>
+    <input type="password" placeholder="Enter your password" maxlength="20" id="password" name="password">
     <div class="field-description" aria-live="polite" id="password-description">
       Your password must be at least 8 characters long.
     </div>
   </div>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 * O elemento fieldset atua como o contêiner do painel com o invólucro de painel de classe e classes adicionais para estilização com base no nome do painel (logon de campo).
@@ -510,16 +473,14 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. Direcionamento do painel:
 
 ```CSS
-
   /* Target the entire panel container */
-  main .form form .panel-wrapper &lbrace;
+  main .form form .panel-wrapper {
     /* Add your styles here (e.g., border, padding, background color) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
- &rbrace;
-
+ }
 ```
 
 * O seletor `.panel-wrapper` estiliza todos os elementos com o invólucro de painel de classe, criando uma aparência consistente para todos os painéis.
@@ -527,17 +488,15 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. Direcionamento do título do painel:
 
 ```CSS
-
   /* Target the legend element (panel title) */
-  .panel-wrapper legend &lbrace;
+  .panel-wrapper legend {
     /* Add your styles here (e.g., font-weight, font-size) */
     font-weight: bold;
     font-size: 16px;
     padding-bottom: 5px;
     margin-bottom: 10px;
     border-bottom: 1px solid #ddd; /* Optional: create a separation line */
-  &rbrace;
-
+  }
 ```
 
 * O seletor `.panel-wrapper legend` estiliza o elemento de legenda dentro do painel, fazendo com que o título se destaque visualmente.
@@ -546,13 +505,11 @@ main .form form .checkbox-group-wrapper input[type="checkbox"]:checked + label::
 1. Direcionamento de campos individuais no painel:
 
 ```CSS
-
 /* Target all form field wrappers within a panel */
-main .form form .panel-wrapper .{Type}-wrapper &lbrace;
+main .form form .panel-wrapper .{Type}-wrapper {
   /* Add your styles here (e.g., margin) */
   margin-bottom: 10px;
-&rbrace;
-
+}
 ```
 
 * O seletor `.panel-wrapper .{Type}-wrapper` é direcionado a todos os invólucros com a classe `.{Type}-wrapper` dentro do painel, permitindo que você estilize o espaçamento entre os campos de formulário.
@@ -560,17 +517,15 @@ main .form form .panel-wrapper .{Type}-wrapper &lbrace;
 1. Direcionamento de campos específicos (opcional):
 
 ```CSS
-
   /* Target the username field wrapper */
-  main .form form .panel-wrapper .text-wrapper.field-username &lbrace;
+  main .form form .panel-wrapper .text-wrapper.field-username {
     /* Add your styles here (specific to username field) */
-  &rbrace;
+  }
 
   /* Target the password field wrapper */
-  main .form form .panel-wrapper .password-wrapper.field-password &lbrace;
+  main .form form .panel-wrapper .password-wrapper.field-password {
     /* Add your styles here (specific to password field) */
-  &rbrace;
-
+  }
 ```
 
 * Esses seletores opcionais permitem direcionar wrappers de campo específicos no painel para um estilo exclusivo, como realçar o campo de nome de usuário.
@@ -582,59 +537,55 @@ main .form form .panel-wrapper .{Type}-wrapper &lbrace;
 +++ Estrutura HTML de um painel repetível
 
 ```HTML
-
-&lt;fieldset class="panel-wrapper field-{PanelName} field-wrapper">
-  &lt;legend for="{id}" class="field-label" data-visible="false">bannerComponent&lt;/legend>
+<fieldset class="panel-wrapper field-{PanelName} field-wrapper">
+  <legend for="{id}" class="field-label" data-visible="false">bannerComponent</legend>
   <div class="{Type}-wrapper field-{Name} field-wrapper">
-    &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
-    &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
+    <label for="{FieldId}" class="field-label">First Name</label>
+    <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}">
     <div class="field-description" aria-live="polite" id="{FieldId}-description">
       Hint - First name should be minimum 3 characters and a maximum of 10 characters.
     </div>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 **Exemplo de estrutura do HTML**
 
 ```HTML
-
-&lt;fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
-  &lt;legend for="contact-1" class="field-label" data-visible="false">Contact Information&lt;/legend>
+<fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
+  <legend for="contact-1" class="field-label" data-visible="false">Contact Information</legend>
   <div class="text-wrapper field-name field-wrapper">
-    &lt;label for="name-1" class="field-label">Name&lt;/label>
-    &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name-1" name="contacts[0].name">
+    <label for="name-1" class="field-label">Name</label>
+    <input type="text" placeholder="Enter your name" maxlength="50" id="name-1" name="contacts[0].name">
     <div class="field-description" aria-live="polite" id="name-1-description">
       Please enter your full name.
     </div>
   </div>
   <div class="email-wrapper field-email field-wrapper">
-    &lt;label for="email-1" class="field-label">Email&lt;/label>
-    &lt;input type="email" placeholder="Enter your email address" maxlength="100" id="email-1" name="contacts[0].email">
+    <label for="email-1" class="field-label">Email</label>
+    <input type="email" placeholder="Enter your email address" maxlength="100" id="email-1" name="contacts[0].email">
     <div class="field-description" aria-live="polite" id="email-1-description">
       Please enter a valid email address.
     </div>
   </div>
-&lt;/fieldset>
+</fieldset>
 
-&lt;fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
-  &lt;legend for="contact-2" class="field-label" data-visible="false">Contact Information&lt;/legend>
+<fieldset class="panel-wrapper field-contact field-wrapper" data-repeatable="true">
+  <legend for="contact-2" class="field-label" data-visible="false">Contact Information</legend>
   <div class="text-wrapper field-name field-wrapper">
-    &lt;label for="name-2" class="field-label">Name&lt;/label>
-    &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name-2" name="contacts[1].name">
+    <label for="name-2" class="field-label">Name</label>
+    <input type="text" placeholder="Enter your name" maxlength="50" id="name-2" name="contacts[1].name">
     <div class="field-description" aria-live="polite" id="name-2-description">
       Please enter your full name.
     </div>
   </div>
   <div class="email-wrapper field-email field-wrapper">
-    &lt;label for="email-2" class="field-label">Email&lt;/label>
-    &lt;input type="email" placeholder="Enter your email address" maxlength="100" id="email-2" name="contacts[1].email">
+    <label for="email-2" class="field-label">Email</label>
+    <input type="email" placeholder="Enter your email address" maxlength="100" id="email-2" name="contacts[1].email">
     <div class="field-description" aria-live="polite" id="email-2-description">
       Please enter a valid email address.
     </div>
   </div>
-&lt;/fieldset>
-
+</fieldset>
 ```
 
 Cada painel tem a mesma estrutura que o exemplo de painel único, com atributos adicionais:
@@ -650,16 +601,14 @@ Cada painel tem a mesma estrutura que o exemplo de painel único, com atributos 
 * Direcionamento de todos os painéis repetíveis:
 
 ```CSS
-
   /* Target all panels with the repeatable attribute */
- main .form form .panel-wrapper[data-repeatable="true"] &lbrace;
+ main .form form .panel-wrapper[data-repeatable="true"] {
     /* Add your styles here (e.g., border, margin) */
     border: 1px solid #ccc;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 20px;
-  &rbrace;
-
+  }
 ```
 
 O seletor estimula todos os painéis que podem ser repetidos, garantindo uma aparência consistente.
@@ -668,27 +617,23 @@ O seletor estimula todos os painéis que podem ser repetidos, garantindo uma apa
 * Direcionamento de campos individuais em um painel:
 
 ```CSS
-
 /* Target all form field wrappers within a repeatable panel */
-main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper &lbrace;
+main .form form .panel-wrapper[data-repeatable="true"] .{Type}-wrapper {
   /* Add your styles here (e.g., margin) */
   margin-bottom: 10px;
-&rbrace;
-
+}
 ```
 Este seletor estimula todos os invólucros de campo em um painel repetível, mantendo um espaçamento consistente entre os campos.
 
 * Direcionamento de campos específicos (em um painel):
 
 ```CSS
-
 /* Target the name field wrapper within the first panel */
-main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name &lbrace;
+main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wrapper.field-name {
   /* Add your styles here (specific to first name field) */
-&rbrace;
+}
 
 /* Target all
-
 ```
 
 +++
@@ -698,44 +643,40 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 +++ Estrutura do HTML para anexo de arquivo
 
 ```HTML
-
 <div class="file-wrapper field-{FileName} field-wrapper">
-  &lt;legend for="{id}" class="field-label" data-visible="false"> File Attachment &lt;/legend>
+  <legend for="{id}" class="field-label" data-visible="false"> File Attachment </legend>
   <div class="file-drag-area">
     <div class="file-dragIcon"></div>
     <div class="file-dragText">Drag and Drop To Upload</div>
-    &lt;button class="file-attachButton" type="button">Attach&lt;/button>
-    &lt;input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="{id}" name="{FileName}" autocomplete="off" multiple="" required="required">
+    <button class="file-attachButton" type="button">Attach</button>
+    <input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="{id}" name="{FileName}" autocomplete="off" multiple="" required="required">
   </div>
   <div class="files-list">
     <div data-index="0" class="file-description">
       <span class="file-description-name">ClaimForm.pdf</span>
       <span class="file-description-size">26 kb</span>
-      &lt;button class="file-description-remove" type="button">&lt;/button>
+      <button class="file-description-remove" type="button"></button>
     </div>
   </div>
 </div>
-
 ```
 
 **Exemplo de estrutura do HTML**
 
 
 ```HTML
-
 <div class="file-wrapper field-claim_form field-wrapper">
-  &lt;legend for="claim_form" class="field-label" data-visible="false">File Attachment&lt;/legend>
+  <legend for="claim_form" class="field-label" data-visible="false">File Attachment</legend>
   <div class="file-drag-area">
     <div class="file-dragIcon"></div>
     <div class="file-dragText">Drag and Drop To Upload</div>
-    &lt;button class="file-attachButton" type="button">Attach&lt;/button>
+    <button class="file-attachButton" type="button">Attach</button>
   </div>
   <input type="file" accept="audio/*, video/*, image/*, text/*, application/pdf" id="claim_form"
          name="claim_form" autocomplete="off" multiple="" required="required" data-max-file-size="2MB">
   <div class="files-list">
     </div>
 </div>
-
 ```
 
 * O atributo de classe usa o nome fornecido para o anexo de arquivo (claim_form).
@@ -749,16 +690,14 @@ main .form form .panel-wrapper[data-repeatable="true"][data-index="0"] .text-wra
 * Direcionar todo o componente de anexo de arquivo:
 
 ```CSS
-
 /* Target the entire file attachment component */
-main .form form .file-wrapper &lbrace;
+main .form form .file-wrapper {
   /* Add your styles here (e.g., border, padding) */
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 4px;
   margin-bottom: 20px;
-&rbrace;
-
+}
 ```
 
 Este seletor estimula todo o componente de anexo do arquivo, incluindo a legenda, a área de arrastar, o campo de entrada e a lista.
@@ -766,36 +705,34 @@ Este seletor estimula todo o componente de anexo do arquivo, incluindo a legenda
 * Direcionamento de elementos específicos:
 
 ```CSS
-
 /* Target the drag and drop area */
-main .form form .file-wrapper .file-drag-area &lbrace;
+main .form form .file-wrapper .file-drag-area {
   /* Add your styles here (e.g., background color, border) */
   background-color: #f0f0f0;
   border: 1px dashed #ddd;
   padding: 10px;
   text-align: center;
-&rbrace;
+}
 
 /* Target the file input element */
-main .form form .file-wrapper input[type="file"] &lbrace;
+main .form form .file-wrapper input[type="file"] {
   /* Add your styles here (e.g., hide the default input) */
   display: none;
-&rbrace;
+}
 
 /* Target individual file descriptions within the list (populated dynamically) */
-main .form form .file-wrapper .files-list .file-description &lbrace;
+main .form form .file-wrapper .files-list .file-description {
   /* Add your styles here (e.g., margin, display) */
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
-&rbrace;
+}
 
 /* Target the file name within the description */
-main .form form .file-wrapper .files-list .file-description .file-description-name &lbrace;
+main .form form .file-wrapper .files-list .file-description .file-description-name {
   /* Add your styles here (e.g., font-weight) */
   font-weight: bold;
-&rbrace;
-
+}
 ```
 
 Esses seletores permitem estilizar várias partes do componente de anexo de arquivo individualmente. É possível ajustar os estilos para corresponder às suas preferências de design.
@@ -814,36 +751,32 @@ Você pode usar os Seletores de CSS para direcionar tipos de campo específicos 
 +++ Estrutura do HTML
 
 ```HTML
-
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
-   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id={FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - First name should be minimum 3 characters and a maximum of 10 characters.
    </div>
 </div>
-
 ```
 
 **Exemplo de estrutura do HTML**
 
 ```HTML
-
 <div class="text-wrapper field-name field-wrapper" data-required="true">
-  &lt;label for="name" class="field-label">Name&lt;/label>
-  &lt;input type="text" placeholder="Enter your name" maxlength="50" id="name" name="name">
+  <label for="name" class="field-label">Name</label>
+  <input type="text" placeholder="Enter your name" maxlength="50" id="name" name="name">
 </div>
 
 <div class="number-wrapper field-age field-wrapper" data-required="true">
-  &lt;label for="age" class="field-label">Age&lt;/label>
-  &lt;input type="number" placeholder="Enter your age" id="age" name="age">
+  <label for="age" class="field-label">Age</label>
+  <input type="number" placeholder="Enter your age" id="age" name="age">
 </div>
 
 <div class="email-wrapper field-email field-wrapper" data-required="true">
-  &lt;label for="email" class="field-label">Email Address&lt;/label>
-  &lt;input type="email" placeholder="Enter your email" id="email" name="email">
+  <label for="email" class="field-label">Email Address</label>
+  <input type="email" placeholder="Enter your email" id="email" name="email">
 </div>
-
 ```
 
 * Cada campo é colocado em um elemento `div` com várias classes:
@@ -860,18 +793,16 @@ Você pode usar os Seletores de CSS para direcionar tipos de campo específicos 
 +++ Exemplo de seletores CSS
 
 ```CSS
-
 /* Target all text input fields */
-main .form form .text-wrapper input &lbrace;
+main .form form .text-wrapper input {
   /* Add your styles here */
-&rbrace;
+}
 
 /* Target all number input fields */
-main .form form .number-wrapper input &lbrace;
+main .form form .number-wrapper input {
   /* Add your styles here */
   letter-spacing: 2px; /* Example for adding letter spacing to all number fields */
-&rbrace;
-
+}
 ```
 
 +++
@@ -883,29 +814,25 @@ Você também pode direcionar campos individuais por nome para aplicar estilos e
 +++ Estrutura do HTML
 
 ```HTML
-
 <div class="{Type}-wrapper field-{Name} field-wrapper" data-required={Required}>
-   &lt;label for="{FieldId}" class="field-label">First Name&lt;/label>
-   &lt;input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
+   <label for="{FieldId}" class="field-label">First Name</label>
+   <input type="{Type}" placeholder="{Placeholder}" maxlength="{Max}" id="{FieldId}" name="{Name}" aria-describedby="{FieldId}-description">
    <div class="field-description" aria-live="polite" id="{FieldId}-description">
     Hint - Enter the 6 digit number sent to your mobile number.
    </div>
 </div>
-
 ```
 
 **Exemplo de estrutura do HTML**
 
 ```HTML
-
 <div class="number-wrapper field-otp field-wrapper" data-required="true">
-  &lt;label for="otp" class="field-label">OTP&lt;/label>
-  &lt;input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp" aria-describedby="otp-description">
+  <label for="otp" class="field-label">OTP</label>
+  <input type="number" placeholder="Enter your OTP" maxlength="6" id="otp" name="otp" aria-describedby="otp-description">
   <div class="field-description" aria-live="polite" id="otp-description">
     Hint - Enter the 6 digit number sent to your mobile number.
    </div>
 </div>
-
 ```
 
 +++
@@ -913,11 +840,9 @@ Você também pode direcionar campos individuais por nome para aplicar estilos e
 +++ Exemplo de seletor de CSS
 
 ```CSS
-
-main .form form .field-otp input &lbrace;
+main .form form .field-otp input {
    letter-spacing: 2px
-&rbrace;
-
+}
 ```
 
 Este CSS destina-se a todos os elementos de entrada localizados em um elemento que tem a classe `field-otp`. A estrutura do HTML do seu formulário segue as convenções do Bloco de Forms adaptável, isso implica que há um container marcado com a classe &quot;field-otp&quot; que contém o campo com o nome &quot;otp&quot;.

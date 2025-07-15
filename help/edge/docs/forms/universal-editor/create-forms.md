@@ -4,9 +4,9 @@ description: Este artigo explica como criar o Forms adaptável selecionando um m
 feature: Edge Delivery Services
 role: User
 exl-id: 1eab3a3d-5726-4ff8-90b9-947026c17e22
-source-git-commit: e2ea802856a2fbab90d4ddb1ecf7280ce789d59c
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1687'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ Um diagrama de fluxo de decisão para orientar a configuração e a publicação
 
 Siga estas etapas para criar formulários no AEM e publicá-los no Edge Delivery Services:
 
-[1. Escolha um modelo e crie o formulário](#choose-a-template-and-create-the-form)
+[&#x200B;1. Escolha um modelo e crie o formulário](#choose-a-template-and-create-the-form)
 
-[2. Crie o formulário](#author-the-form)
+[&#x200B;2. Crie o formulário](#author-the-form)
 
-[3. Publicar um formulário](#publish-a-form)
+[&#x200B;3. Publicar um formulário](#publish-a-form)
 
 ### Escolha um modelo e crie o formulário
 
@@ -79,14 +79,13 @@ Execute as seguintes etapas para escolher o modelo e criar o formulário:
 
    1. Especifique o **Nome** e o **Título**.
    1. Especifique a **URL do GitHub**. Por exemplo, se o repositório GitHub for nomeado como `edsforms`, ele estiver localizado na conta `wkndforms`, a URL será:
-
       `https://github.com/wkndforms/edsforms`
 
    ![Criar assistente de formulário](/help/edge/assets/create-form-wizard.png)
 
    Ao clicar em **[!UICONTROL Criar]**, o formulário é aberto no Editor Universal para criação.
 
-   ![crie o formulário](/help/edge/assets/author-form.png)
+   ![Captura de tela do Editor universal mostrando um formulário sendo criado com a paleta de componentes à esquerda, a tela do formulário no centro e o painel de propriedades à direita](/help/edge/assets/author-form.png)
 1. Clique em **[!UICONTROL Criar]** para criar o formulário. Agora, você pode [criar o formulário usando o Editor Universal](#author-the-form).
 
 >[!TAB Modelo baseado em Componente Principal]
@@ -136,7 +135,7 @@ Execute as seguintes etapas para criar formulários usando o Editor universal pa
 
    A captura de tela abaixo exibe o `Registration Form` criado no Editor Universal:
 
-   ![contate-nos pelo formulário](/help/edge/assets/contact-us.png)
+   ![Captura de tela de um formulário de contato conosco preenchido no Editor Universal mostrando campos de formulário para nome, email, telefone e mensagem com estilo e layout adequados](/help/edge/assets/contact-us.png)
 
 >[!NOTE]
 >
@@ -220,7 +219,7 @@ Para acessar o formulário no Edge Delivery Services, é obrigatório publicá-l
 
 1. Publique o formulário clicando no botão **[!UICONTROL Publicar]** no canto superior direito do Editor Universal.
 
-![formulário de publicação](/help/edge/assets/publish-form.png)
+![Captura de tela do Editor Universal mostrando a caixa de diálogo de publicação com opções de publicação de formulário e botões de confirmação](/help/edge/assets/publish-form.png)
 
 >[!NOTE]
 >

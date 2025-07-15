@@ -4,14 +4,52 @@ description: Configurar as ações de envio para o formulário adaptável.
 feature: Edge Delivery Services
 role: Admin, Architect, Developer
 exl-id: beee9be7-8215-496b-9fb9-61fba000a055
-source-git-commit: 0c6f024594e1b1fd98174914d2c0714dffecb241
+source-git-commit: e1ead9342fadbdf82815f082d7194c9cdf6d799d
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 2%
+source-wordcount: '930'
+ht-degree: 1%
 
 ---
 
 # Ação de envio do formulário adaptável
+
+## Visão geral
+
+O envio de formulários é a etapa final crítica na jornada do usuário — é onde os dados coletados são processados e as ações são executadas. Este documento fornece um guia abrangente para configurar e gerenciar ações de envio para o Adaptive Forms no Universal Editor.
+
+### O que você vai aprender
+
+No final deste documento, você entenderá como:
+
+* Configurar diferentes tipos de ações de envio para seus formulários
+* Configurar envios de endpoint REST para integração com sistemas externos
+* Configurar envios de email para respostas de formulário
+* Implementar ações de envio personalizadas para necessidades comerciais específicas
+* Lidar com cenários de erro e validação de formulário durante o envio
+
+### Público-alvo
+
+Este guia foi projetado para:
+
+* **Desenvolvedores de formulários** implementando a lógica de envio
+* **Integradores de sistemas** conectando formulários a sistemas back-end
+* **Analistas de negócios** definindo fluxos de trabalho de formulário
+* **Arquitetos técnicos** projetando processos de envio de formulário
+
+### Ações de envio disponíveis
+
+O Universal Editor fornece dois tipos de ação de envio principais:
+
+1. **Enviar para ponto de extremidade REST** * Enviar dados de formulário para pontos de extremidade de API
+2. **Enviar Email** * Enviar respostas do formulário por email
+
+### Pré-requisitos
+
+Antes de configurar ações de envio, verifique se você tem:
+
+* Acesso ao Universal Editor
+* Permissões apropriadas para a configuração do formulário
+* Noções básicas do terminal de envio do target ou da configuração de email
 
 Uma ação enviar especifica o destino dos dados coletados por meio de um formulário adaptável. O processo de envio começa quando o usuário clica no botão **[!UICONTROL Enviar]** no formulário. O AEM Forms oferece dois tipos de ações de envio descritos abaixo e permite que você crie e use ações de envio personalizadas para atender às suas necessidades específicas. As ações de envio prontas para uso são:
 
@@ -42,7 +80,7 @@ Para configurar um endpoint REST:
 1. Especifique o URL do ponto de extremidade REST.
 1. Você também pode **Habilitar a solicitação POST** e fornecer uma URL para publicar a solicitação.
 
-![Habilitar solicitação de postagem para formulários adaptáveis](/help/forms/assets/enable-post-request-ue.png)
+![Captura de tela do painel de propriedades Editor Universal mostrando os campos de configuração de ponto de extremidade REST, incluindo a entrada de URL e a opção Habilitar solicitação POST para envio de formulário](/help/forms/assets/enable-post-request-ue.png)
 
 >[!NOTE]
 >
@@ -124,7 +162,7 @@ Para configurar uma ação de envio como um Email para o envio do formulário:
         * **Use External Template**: Enables the use of an external email template for formatting the email content. Provide the URL or path to the External template path to integrate a pre-designed email template hosted in your AEM Assets folder.
         * **Include Attachment**: Specifies whether the submitted form data should include an attachment submitted through the form in the email.
 
-    {width=50%,height=50%}![Enable post request for adaptive forms](/help/forms/assets/email-config-ue.png)
+    ![Screenshot of the Universal Editor email configuration panel showing fields for From, To, CC, BCC, Subject, and options for external templates and attachments](/help/forms/assets/email-config-ue.png)
 
 -->
 
