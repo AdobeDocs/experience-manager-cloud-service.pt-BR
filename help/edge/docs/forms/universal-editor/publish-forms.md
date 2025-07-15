@@ -57,6 +57,7 @@ Modifique o `submitBaseUrl` no arquivo **constant.js** dentro do bloco de formul
 ```js
 export const submitBaseUrl = 'https://publish-p120-e12.adobeaemcloud.com';
 ```
+
 **Para Desenvolvimento Local:**
 
 ```js
@@ -79,6 +80,7 @@ SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(http
 # Franklin Live
 SetEnvIfExpr "env('CORSProcessing') == 'true' && req_novary('Origin') =~ m#(https://.*\.hlx\.live$)#" CORSTrusted=true
 ```
+
 Para desenvolvimento local, consulte a [documentação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/headless/deployment/referrer-filter) para habilitar o CORS da sua **URL de host da interface de desenvolvimento**.
 
 ### Configurar o filtro referenciador
