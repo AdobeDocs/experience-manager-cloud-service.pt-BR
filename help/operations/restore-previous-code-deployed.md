@@ -5,9 +5,9 @@ feature: Operations
 role: Admin
 badge: label="Alfa" type="Positive" url="/help/implementing/cloud-manager/release-notes/current.md#gitlab-bitbucket"
 exl-id: 8f804f55-a66d-47ad-a48d-61b861cef4f7
-source-git-commit: 19e23785f2c4fbfa5a244864fe16500c1e7e128b
+source-git-commit: 72b80f411ee39674530c1c41349329604e127e1e
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '507'
 ht-degree: 3%
 
 ---
@@ -34,9 +34,8 @@ O recurso **Restaurar código anterior implantado** fica disponível somente qua
 * Sua organização está inscrita no programa Early Adoter e o sinalizador de recurso está ativado.
 * O programa é executado no AEM as a Cloud Service.
 * O ambiente escolhido é um ambiente `Development` (limite temporário do Alpha).
-* O último pipeline para esse ambiente foi concluído com êxito e executado há **menos de 10 dias**.
+* O último pipeline para esse ambiente foi concluído com êxito e executado há **menos de 30 dias**.
 * O status do ambiente é *Em execução* e nenhum pipeline está em andamento.
-* A versão do código-fonte de destino que você deseja restaurar foi implantada **em 30 dias**.
 
 Se alguma verificação falhar, o Cloud Manager abre a caixa de diálogo a seguir, que lista uma ou mais condições não atendidas e desabilita a **Confirmação**, impedindo a restauração.
 
