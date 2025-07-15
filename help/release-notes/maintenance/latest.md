@@ -24,7 +24,7 @@ Veja abaixo um resumo das melhorias contínuas da versão de manutenção 21570,
 >
 >A [Versão 21484](/help/release-notes/maintenance/2025/2025-7-0.md#21484) tornou-se privada e foi substituída pela versão 21570.
 
-A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
+A ativação de recursos do 2025.7.0 fornecerá o conjunto completo de recursos para esta versão de manutenção. Consulte o [Roteiro de versões do Experience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap) para obter mais informações.
 
 ### Aprimoramentos {#enhancements-21570}
 
