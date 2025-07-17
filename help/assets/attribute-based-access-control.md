@@ -2,9 +2,10 @@
 title: Controle de acesso baseado em atributos
 description: Saiba como habilitar o controle de acesso baseado em atributos para definir regras baseadas em metadados e definir o nível de acesso aos ativos disponíveis no Content Hub
 role: Admin
-source-git-commit: 49a70e1564a5b1de4ff16a40ccd8f06df53530e7
+exl-id: 05f54b05-40b8-4a6c-af8f-5c3f7a2089d4
+source-git-commit: ea1760a3076fa0e18dca38fe856ff0ef78b18f07
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -29,7 +30,18 @@ Alguns dos principais benefícios do controle de acesso baseado em atributos inc
 
 ## Como ativar o controle de acesso baseado em atributos? {#enable-attribute-based-access-control}
 
-A partir de agora, você não poderá criar regras de controle de acesso baseadas em atributos por conta própria usando a Interface do usuário do Content Hub. Crie um tíquete de suporte do Adobe para definir regras em uma planilha usando as diretrizes definidas neste artigo.
+A partir de agora, você não poderá criar regras de controle de acesso baseadas em atributos por conta própria usando a Interface do usuário do Content Hub.
+
+Clique em **Baixar planilha** para baixar e definir regras em uma planilha. Crie um tíquete de suporte do Adobe e forneça as regras definidas na planilha ao Adobe.
+
+[!BADGE Baixar Planilha]{type=Informative url="https://helpx.adobe.com/content/dam/help/en/experience-manager/aem-assets/ABAC_Get_Started_Template_Validator.xlsx"}
+
+
+Defina as regras na planilha usando as diretrizes definidas neste artigo.
+
+>[!IMPORTANT]
+>
+> Depois de definir as regras, navegue até a guia **Erros de Validação** da planilha e clique em **Executar Validações ABAC**. **Todas as validações transmitidas** confirmam que você pode fornecer as regras definidas para a Adobe.
 
 ## Exemplo de caso de uso de Controle de acesso baseado em atributo {#example-metadata-based-rules}
 
@@ -84,13 +96,3 @@ Isso permite escrever regras simples e expressivas, como: ALLOW if region = emea
 * Capture a intenção de negócios da regra no comentário, independentemente da condição ter sido gravada corretamente, pois a intenção nos ajuda a validar e corrigir a lógica, se necessário.
 
 * Os arquivos de licença do PDF, que são definidos para DRM, precisam estar visíveis para todos, para que os usuários possam vê-los ao baixar o ativo com a licença.
-
-
-
-
-
-
-
-
-
-
