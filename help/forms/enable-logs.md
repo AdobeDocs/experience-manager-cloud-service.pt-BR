@@ -172,9 +172,9 @@ Por exemplo:
 >[!NOTE]
 >
 >O nível de log padrão para cada categoria de log a (xfa), b (xfaView) e c (xfaPerf) é 2 (ERROR). Da mesma forma, para a configuração de log: 2-b6, os níveis de log para categorias diferentes são:
->>a (xfa): 2 (erro de nível padrão)
->>b (xfaView): 6 (TRACE especificado pelo usuário)
->>a (xfaPerf): 2 (ERRO de nível padrão)
+>&#x200B;>a (xfa): 2 (erro de nível padrão)
+>&#x200B;>b (xfaView): 6 (TRACE especificado pelo usuário)
+>&#x200B;>a (xfaPerf): 2 (ERRO de nível padrão)
 
 ### Habilitando o registro usando o Configuration Manager {#enabling-logging-using-configuration-manager}
 
