@@ -4,9 +4,9 @@ description: O AEM vem com um manipulador de erros padrão para lidar com erros 
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: de50d20dd4c17204ded1ff216d12520d04eafd04
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ O AEM vem com um manipulador de erros padrão para lidar com erros HTTP; por exe
 
 ![Mensagem de erro padrão](assets/error-message-standard.png)
 
-Para responder a erros, o AEM fornece um script `404.jsp` em `/libs/sling/servlet/errorhandler`.
+Para responder a erros, a AEM fornece um script `404.jsp` em `/libs/sling/servlet/errorhandler`.
 
 >[!TIP]
 >
@@ -28,6 +28,10 @@ Para responder a erros, o AEM fornece um script `404.jsp` em `/libs/sling/servle
 >Em uma instância de autor, o [Filtro de Depuração WCM do CQ](/help/implementing/deploying/configuring-osgi.md) está habilitado por padrão. Isso sempre resulta no código de resposta 200. O manipulador de erros padrão responde gravando o rastreamento de pilha completa na resposta.
 >
 >Em uma instância de publicação, o Filtro de Depuração CQ WCM está **sempre** desabilitado (mesmo se configurado como habilitado).
+
+>[!NOTE]
+>
+>Para obter mais informações sobre a manipulação de erros com o Dispatcher, consulte [Configurando Páginas de Erro da CDN](/help/implementing/dispatcher/cdn-error-pages.md).
 
 ## Como personalizar páginas mostradas pelo manipulador de erros {#how-to-customize-pages-shown-by-the-error-handler}
 
@@ -49,7 +53,7 @@ Você pode desenvolver seus próprios scripts para personalizar as páginas most
 
 >[!CAUTION]
 >
->O script `404.jsp` foi projetado especificamente para atender à autenticação AEM; especificamente, para permitir o logon do sistema no caso desses erros.
+>O script `404.jsp` foi projetado especificamente para atender à autenticação do AEM; especificamente, para permitir o logon do sistema no caso desses erros.
 >
 >Portanto, a substituição desse script deve ser feita com muito cuidado.
 
@@ -57,7 +61,7 @@ Você pode desenvolver seus próprios scripts para personalizar as páginas most
 
 O HTTP [500 Erro Interno do Servidor](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) indica um erro do lado do servidor, como o servidor ter encontrado uma condição inesperada que o impediu de atender à solicitação.
 
-Quando o processamento de solicitações resulta em uma exceção, a estrutura Apache Sling (na qual o AEM é integrado):
+Quando o processamento de solicitações resulta em uma exceção, a estrutura Apache Sling (na qual o AEM é construído):
 
 * Registra a exceção
 * E retorna no corpo da resposta:
@@ -73,7 +77,7 @@ Para tratar erros 500, o nome de arquivo do script do manipulador de erros deve 
 >[!NOTE]
 >
 >No AEM as Cloud Service, o CDN fornece uma página de erro genérica quando um erro 5XX é recebido do back-end. Para permitir a passagem da resposta real do back-end, é necessário adicionar o seguinte cabeçalho à resposta: `x-aem-error-pass: true`.
->Isso funciona somente para respostas provenientes do AEM ou da camada Apache/Dispatcher. Outros erros inesperados provenientes de camadas de infraestrutura intermediária ainda exibirão a página de erro genérico.
+>>Isso funciona somente para respostas provenientes do AEM ou da camada Apache/Dispatcher. Outros erros inesperados provenientes de camadas de infraestrutura intermediária ainda exibirão a página de erro genérico.
 
 >[!CAUTION]
 >
