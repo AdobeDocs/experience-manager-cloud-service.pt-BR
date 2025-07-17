@@ -77,7 +77,7 @@ Para tratar erros 500, o nome de arquivo do script do manipulador de erros deve 
 >[!NOTE]
 >
 >No AEM as Cloud Service, o CDN fornece uma página de erro genérica quando um erro 5XX é recebido do back-end. Para permitir a passagem da resposta real do back-end, é necessário adicionar o seguinte cabeçalho à resposta: `x-aem-error-pass: true`.
->>Isso funciona somente para respostas provenientes do AEM ou da camada Apache/Dispatcher. Outros erros inesperados provenientes de camadas de infraestrutura intermediária ainda exibirão a página de erro genérico.
+>&#x200B;>Isso funciona somente para respostas provenientes do AEM ou da camada Apache/Dispatcher. Outros erros inesperados provenientes de camadas de infraestrutura intermediária ainda exibirão a página de erro genérico.
 
 >[!CAUTION]
 >
