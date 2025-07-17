@@ -4,7 +4,7 @@ description: Saiba mais sobre os fundamentos e as práticas recomendadas da impl
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 role: Admin
-source-git-commit: 10580c1b045c86d76ab2b871ca3c0b7de6683044
+source-git-commit: d6c5c70e8b6565a20866d392900aef219d3fd09d
 workflow-type: tm+mt
 source-wordcount: '3440'
 ht-degree: 93%
@@ -17,7 +17,7 @@ ht-degree: 93%
 
 Os fundamentos do desenvolvimento de código são semelhantes no AEM as a Cloud Service em comparação às soluções locais do AEM e Managed Services. Desenvolvedores(as) criam o código e o testam localmente, e depois o enviam para ambientes remotos do AEM as a Cloud Service. O uso do Cloud Manager, que era uma ferramenta opcional de entrega de conteúdo do Managed Services, é obrigatório. Esta ferramenta de entrega é agora o único mecanismo para implantar código nos ambientes de desenvolvimento, preparo e produção do AEM as a Cloud Service. Para uma rápida validação e depuração de recursos antes da implantação desses ambientes mencionados, o código pode ser sincronizado de um ambiente local para um [ambiente de desenvolvimento rápido](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-A atualização da [versão do AEM](/help/implementing/deploying/aem-version-updates.md) é sempre um evento de implantação separado do envio de [código personalizado](#customer-releases). Vistas de outra maneira, as versões de código personalizado devem ser testadas em relação à versão do AEM que está em produção, pois esta será implantada primeiro. As atualizações de versão do AEM que ocorrem depois disso (que são frequentes e são aplicadas automaticamente) devem ser compatíveis com o código de cliente já implantado.
+A atualização da [versão do AEM](/help/implementing/deploying/aem-version-updates.md) é sempre um evento de implantação separado do envio de [código personalizado](#customer-releases). Vistas de outra maneira, as versões de código personalizado devem ser testadas em relação à versão do AEM que está em produção, pois esta será implantada primeiro. As atualizações de versão do AEM que ocorrem depois disso (que são frequentes e são aplicadas automaticamente), devem ser compatíveis com o código de cliente já implantado.
 
 O resto deste documento descreverá como os desenvolvedores devem adaptar suas práticas para que possam trabalhar com as atualizações da versão do AEM as a Cloud Service e as atualizações do cliente.
 
@@ -41,7 +41,7 @@ Para desenvolver um código personalizado para uma versão interna, a versão re
 
 O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar código no AEM as a Cloud Service:
 
->[!VIDEO](https://video.tv.adobe.com/v/33377?quality=9&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/30191?quality=9)
 
 <!--
 >[!NOTE]
@@ -56,8 +56,8 @@ O vídeo a seguir fornece uma visão geral de alto nível sobre como implantar c
 
 ![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
 
-Clientes implantam código personalizado em ambientes na nuvem por meio do Cloud Manager. O Cloud Manager transforma pacotes de conteúdo montados localmente em um artefato compatível com o modelo de recurso do Sling, que é a forma como um aplicativo do AEM as a Cloud Service é descrito ao ser executado em um ambiente na nuvem. Como resultado, ao examinar os pacotes do [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) em ambientes na nuvem, o nome incluirá “cp2fm” e os pacotes transformados terão todos os metadados removidos. Não é possível interagir com eles, o que significa que não podem ser baixados, replicados ou abertos. Para obter a documentação detalhada sobre o conversor, consulte [&#128279;](https://github.com/apache/sling-org-apache-sling-feature-cpconverter)
-sling-org-apache-sling-feature-cpconverter no GitHub.
+Clientes implantam código personalizado em ambientes na nuvem por meio do Cloud Manager. O Cloud Manager transforma pacotes de conteúdo montados localmente em um artefato compatível com o modelo de recurso do Sling, que é a forma como um aplicativo do AEM as a Cloud Service é descrito ao ser executado em um ambiente na nuvem. Como resultado, ao examinar os pacotes do [Gerenciador de pacotes](/help/implementing/developing/tools/package-manager.md) em ambientes na nuvem, o nome incluirá “cp2fm” e os pacotes transformados terão todos os metadados removidos. Não é possível interagir com eles, o que significa que não podem ser baixados, replicados ou abertos. Para obter a documentação detalhada sobre o conversor, consulte [
+sling-org-apache-sling-feature-cpconverter no GitHub](https://github.com/apache/sling-org-apache-sling-feature-cpconverter).
 
 Os pacotes de conteúdo criados para aplicativos do AEM as a Cloud Service devem ter uma separação clara entre conteúdo imutável e mutável, e o Cloud Manager só instalará o conteúdo mutável, além de exibir uma mensagem como esta:
 
@@ -152,7 +152,7 @@ Quando o Cloud Manager implanta o aplicativo, ele executa essas instruções, in
 Para criar instruções `repoinit`, siga o procedimento abaixo:
 
 1. Adicione a configuração OSGi para PID de fábrica `org.apache.sling.jcr.repoinit.RepositoryInitializer` em uma pasta de configuração do projeto. Use um nome descritivo para a configuração, como **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**.
-1. Adicione instruções `repoinit` à propriedade de script da configuração. A sintaxe e as opções estão documentadas na [Documentação do Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html). Observe que deve haver a criação explícita de uma pasta principal antes de suas pastas secundárias. Por exemplo, uma criação explícita de `/content` antes de `/content/myfolder`, antes de `/content/myfolder/mysubfolder`. Para ACLs configuradas em estruturas de baixo nível, é recomendável defini-las em um nível superior e trabalhar com uma restrição `rep:glob`. Por exemplo, `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
+1. Adicione instruções `repoinit` à propriedade de script da configuração. A sintaxe e as opções estão documentadas na [Documentação do Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html). Observe que deve haver a criação explícita de uma pasta pai antes de suas pastas filhas. Por exemplo, uma criação explícita de `/content` antes de `/content/myfolder`, antes de `/content/myfolder/mysubfolder`. Para ACLs configuradas em estruturas de baixo nível, é recomendável defini-las em um nível superior e trabalhar com uma restrição `rep:glob`. Por exemplo, `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. Valide no ambiente de desenvolvimento local no tempo de execução.
 
 <!-- last statement in step 2 to be clarified with Brian -->
@@ -279,7 +279,7 @@ Alterar os usuários do serviço ou as ACLs que acessam o conteúdo ou o código
 
 ### Alterações de índice {#index-changes}
 
-Se forem feitas alterações nos índices, é importante que a nova versão continue a usar seus índices até que seja encerrada, enquanto a versão antiga use seu próprio conjunto modificado de índices. O desenvolvedor deve seguir as técnicas de gerenciamento de índice descritas em [Pesquisa e indexação de conteúdo](/help/operations/indexing.md).
+Se forem feitas alterações nos índices, é importante que a versão antiga continue a usar seus índices até que seja encerrada, enquanto a nova versão usa seu próprio conjunto modificado de índices. O desenvolvedor deve seguir as técnicas de gerenciamento de índice descritas em [Pesquisa e indexação de conteúdo](/help/operations/indexing.md).
 
 ### Codificação conservadora para reversões {#conservative-coding-for-rollbacks}
 
