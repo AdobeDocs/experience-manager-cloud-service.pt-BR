@@ -4,10 +4,10 @@ description: Saiba mais sobre como encaminhar logs para fornecedores de registro
 exl-id: 27cdf2e7-192d-4cb2-be7f-8991a72f606d
 feature: Developing
 role: Admin, Architect, Developer
-source-git-commit: d25c4aa5801d1ef2b746fc207d9c64ddf381bb8e
+source-git-commit: 7094ac805e2b66813797fbbc7863870f18632cdc
 workflow-type: tm+mt
-source-wordcount: '2276'
-ht-degree: 0%
+source-wordcount: '2409'
+ht-degree: 2%
 
 ---
 
@@ -19,23 +19,107 @@ ht-degree: 0%
 
 Os clientes com uma licença de com um fornecedor de registro em log ou que hospedam um produto de registro em log podem ter registros do AEM (incluindo Apache/Dispatcher) e registros CDN encaminhados ao destino de registro associado. O AEM as a Cloud Service oferece suporte aos seguintes destinos de registro:
 
-* Amazon S3 (beta privado, consulte a observação abaixo)
-* Armazenamento Azure Blob
-* Datadog
-* Elasticsearch ou OpenSearch
-* HTTPS
-* Splunk
-* Sumo Logic (beta privado, consulte a observação abaixo)
+<html>
+<style>
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+th, td {
+  width: 5%;
+  max-width: 100%;
+  border: 1px solid black;
+  padding: 8px;
+  word-wrap: break-word;
+}
+</style>
+<table>
+  <tbody>
+    <tr>
+      <th>Tecnologia de registro</th>
+      <th>Private Beta*</th>
+      <th>AEM</th>
+      <th>Dispatcher</th>
+      <th>CDN</th>
+    </tr>
+    <tr>
+      <td>Amazon S3</td>
+      <td style="background-color: #ffb3b3;">Sim</td>
+      <td>Sim</td>
+      <td>Sim</td>
+      <td style="background-color: #ffb3b3;">Não</td>
+    </tr>
+    <tr>
+      <td>Armazenamento Azure Blob</td>
+      <td>Não</td>
+      <td>Sim</td>
+      <td>Sim</td>
+      <td>Sim</td>
+    </tr>
+    <tr>
+      <td>DataDog</td>
+      <td>Não</td>
+      <td>Sim</td>
+      <td>Sim</td>
+      <td>Sim</td>
+    </tr>
+    <tr>
+      <td>Dynatrace</td>
+      <td style="background-color: #ffb3b3;">Sim</td>
+      <td>Sim</td>
+      <td>Sim</td>
+      <td style="background-color: #ffb3b3;">Não</td>
+    </tr>
+    <tr>
+      <td>Elasticsearch<br>OpenSearch</td>
+      <td>Não</td>
+      <td>Sim</td>
+      <td>Sim</td>
+      <td>Sim</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>Não</td>
+      <td>Sim</td>
+      <td>Sim</td>
+      <td>Sim</td>
+    </tr>
+    <tr>
+      <td>New Relic</td>
+      <td style="background-color: #ffb3b3;">Sim</td>
+      <td>Sim</td>
+      <td>Sim</td>
+      <td style="background-color: #ffb3b3;">Não</td>
+    </tr>
+    <tr>
+      <td>Splunk</td>
+      <td>Não</td>
+      <td>Sim</td>
+      <td>Sim</td>
+      <td>Sim</td>
+    </tr>
+    <tr>
+      <td>Lógica Sumo</td>
+      <td style="background-color: #ffb3b3;">Sim</td>
+      <td>Sim</td>
+      <td>Sim</td>
+      <td style="background-color: #ffb3b3;">Não</td>
+    </tr>
+  </tbody>
+</table>
+</html>
+
+>[!NOTE]
+>
+> Para tecnologias na Private Beta, envie um email para [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
 
 O encaminhamento de logs é configurado de maneira automatizada declarando uma configuração no Git e pode ser implantado por meio de pipelines de configuração do Cloud Manager para tipos de ambiente de desenvolvimento, preparo e produção. O arquivo de configuração pode ser implantado em RDEs (Rapid Development Environments, ambientes de desenvolvimento rápido) usando ferramentas de linha de comando.
 
 Há uma opção para que os registros do AEM e Apache/Dispatcher sejam roteados por meio da infraestrutura de rede avançada da AEM, como IP de saída dedicado.
 
 Observe que a largura de banda da rede associada aos registros enviados ao destino de registro é considerada parte do uso de E/S da rede da organização.
-
->[!NOTE]
->
->O Amazon S3 e o Sumo Logic estão no Private Beta e são compatíveis apenas com logs do AEM (incluindo Apache/Dispatcher).  O New Relic sobre HTTPS também está na versão beta privada. Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
 
 ## Como este artigo está organizado {#how-organized}
 
@@ -49,7 +133,7 @@ Este artigo está organizado da seguinte maneira:
 
 ## Configurar {#setup}
 
-1. Crie um arquivo chamado `logForwarding.yaml`. Ele deve conter metadados, conforme descrito no [artigo sobre o pipeline de configuração](/help/operations/config-pipeline.md#common-syntax) (**kind** deve ser definido como `LogForwarding` e a versão definida como &quot;1&quot;), com uma configuração semelhante à seguinte (usamos o Splunk como exemplo).
+1. Crie um arquivo chamado `logForwarding.yaml`. Ele deve conter metadados, conforme descrito no artigo [Pipeline de Configuração](/help/operations/config-pipeline.md#common-syntax) (**kind** deve ser definido como `LogForwarding` e a versão definida como &quot;1&quot;), com uma configuração semelhante à seguinte (usamos o Splunk como exemplo).
 
    ```yaml
    kind: "LogForwarding"
@@ -116,14 +200,14 @@ Outro cenário é desativar o encaminhamento dos logs CDN ou AEM (incluindo o Ap
 Algumas organizações escolhem restringir qual tráfego pode ser recebido pelos destinos de registro, outras podem exigir o uso de portas diferentes de HTTPS (443).  Nesse caso, a [Rede Avançada](/help/security/configuring-advanced-networking.md) precisará ser configurada antes da implantação da configuração de encaminhamento de log.
 
 Use a tabela abaixo para ver quais são os requisitos para a configuração avançada de rede e registro com base no fato de você estar usando ou não a porta 443 e se você precisa ou não que seus registros apareçam a partir de um endereço IP fixo.
-&lt;html>
-&lt;style>
-table, th, td &lbrace;
+<html>
+<style>
+table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-&rbrace;
-&lt;/style>
+}
+</style>
 <table>
   <tbody>
     <tr>
@@ -133,7 +217,7 @@ table, th, td &lbrace;
       <th>Definição de Porta LogForwarding.yaml Necessária</th>
     </tr>
     <tr>
-      <td rowspan="2">HTTPS (443)</td>
+      <td rowspan="2" ro>HTTPS (443)</td>
       <td>Não</td>
       <td>Não</td>
       <td>Não</td>
@@ -155,7 +239,7 @@ table, th, td &lbrace;
       <td>Sim</td>
   </tbody>
 </table>
-&lt;/html>
+</html>
 
 >[!NOTE]
 >O fato de seus registros serem exibidos a partir de um único endereço IP é determinado pela sua escolha de configuração avançada de rede.  A saída dedicada deve ser usada para facilitar isso.
@@ -194,13 +278,17 @@ As configurações para os destinos de registro compatíveis estão listadas aba
 
 ### Amazon S3 {#amazons3}
 
+O encaminhamento de logs para o Amazon S3 é compatível com logs do AEM e do Dispatcher. Os logs CDN ainda não são compatíveis.
+
 >[!NOTE]
 >
->Registros gravados em S3 periodicamente, a cada 10 minutos para cada tipo de arquivo de registro.  Isso pode resultar em um atraso inicial para que os logs sejam gravados em S3 quando o recurso for alternado.  Mais informações sobre por que este comportamento existe podem ser encontradas [aqui](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
+>Registros gravados em S3 periodicamente, a cada 10 minutos para cada tipo de arquivo de registro.  Isso pode resultar em um atraso inicial para que os logs sejam gravados em S3 quando o recurso for alternado.  [Mais informações sobre este comportamento](https://docs.fluentbit.io/manual/pipeline/outputs/s3#differences-between-s3-and-other-fluent-bit-outputs).
 
 ```yaml
 kind: "LogForwarding"
 version: "1.0"
+metadata:
+  envTypes: ["dev"]
 data:
   awsS3:
     default:
@@ -211,7 +299,7 @@ data:
       secretAccessKey: "${{AWS_S3_SECRET_ACCESS_KEY}}"
 ```
 
-Para usar o S3 Log Forwarder, será necessário pré-configurar um usuário do AWS IAM com política apropriada para acessar seu bucket do S3.  Consulte [aqui](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) para saber como criar credenciais de usuário do IAM.
+Para usar o S3 Log Forwarder, será necessário pré-configurar um usuário do AWS IAM com política apropriada para acessar seu bucket do S3.  Consulte [Documentação de Usuário do AWS IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) para saber como criar credenciais de usuário do IAM.
 
 A política IAM deve permitir que o usuário use `s3:putObject`.  Por exemplo:
 
@@ -228,7 +316,7 @@ A política IAM deve permitir que o usuário use `s3:putObject`.  Por exemplo:
 }
 ```
 
-Consulte [aqui](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) para obter mais informações sobre a implementação da Política de bucket da AWS.
+Consulte a [Documentação da política de bucket do AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) para obter mais informações sobre como implementar o.
 
 ### Armazenamento Azure Blob {#azureblob}
 
@@ -319,7 +407,7 @@ data:
       
 ```
 
-Considerações:
+#### Considerações
 
 * Crie uma Chave de API sem nenhuma integração com um provedor de nuvem específico.
 * A propriedade das tags é opcional
@@ -345,7 +433,7 @@ data:
       pipeline: "ingest pipeline name"
 ```
 
-Considerações:
+#### Considerações
 
 * por padrão, a porta é 443. Opcionalmente, ele pode ser substituído por uma propriedade chamada `port`
 * Para credenciais, certifique-se de usar as credenciais de implantação, em vez das credenciais de conta. Estas são as credenciais geradas em uma tela que pode se parecer com esta imagem:
@@ -378,17 +466,10 @@ data:
       authHeaderValue: "${{HTTPS_LOG_FORWARDING_TOKEN}}"
 ```
 
-Considerações:
+#### Considerações
 
 * A cadeia de caracteres da URL deve incluir **https://** ou a validação falhará.
 * O URL pode incluir uma porta. Por exemplo, `https://example.com:8443/aem_logs/aem`. Se nenhuma porta for incluída na string do URL, a porta 443 (a porta HTTPS padrão) será considerada.
-
-#### API de log do New Relic {#newrelic-https}
-
-Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
-
->[!NOTE]
->A New Relic fornece endpoints específicos da região com base no local em que sua conta da New Relic é provisionada.  Consulte [aqui](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) para obter a documentação do New Relic.
 
 #### Logs HTTPS CDN {#https-cdn}
 
@@ -413,6 +494,52 @@ Também há uma propriedade chamada `Source-Type`, que é definida como um deste
 * aemhttpdaccess
 * aemhttpderror
 
+### API de log do New Relic {#newrelic-https}
+
+O encaminhamento de logs para o New Relic aproveita a API HTTPS do New Relic para assimilação.  Atualmente, ele só é compatível com logs do AEM e do Dispatcher; os logs CDN ainda não são compatíveis.
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    newRelic:
+      default:
+        enabled: true
+        uri: "https://log-api.newrelic.com/log/v1"
+        apiKey: "${{NR_API_KEY}}"
+```
+
+>[!NOTE]
+>O encaminhamento de logs para a New Relic só está disponível para contas da New Relic de propriedade do cliente.
+>
+>Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
+>
+>O New Relic fornece endpoints específicos da região com base no local em que sua conta do New Relic é provisionada.  Consulte a [documentação do New Relic](https://docs.newrelic.com/docs/logs/log-api/introduction-log-api/#endpoint) para obter mais informações.
+
+### API de log do Dynatrace {#dynatrace-https}
+
+O encaminhamento de logs para o Dynatrace aproveita a API HTTPS do Dynatrace para assimilação.  Atualmente, ele só é compatível com logs do AEM e do Dispatcher; os logs CDN ainda não são compatíveis.
+
+O atributo de escopo &quot;Logs de assimilação&quot; é necessário para o token.
+
+```yaml
+  kind: "LogForwarding"
+  version: "1"
+  metadata:
+    envTypes: ["dev"]
+  data:
+    dynatrace:
+      default:
+        enabled: true
+        environmentId: "${{DYNATRACE_ENVID}}"
+        token: "${{DYNATRACE_TOKEN}}"  
+```
+
+>[!NOTE]
+> Email [aemcs-logforwarding-beta@adobe.com](mailto:aemcs-logforwarding-beta@adobe.com) para solicitar acesso.
+
 ### Splunk {#splunk}
 
 ```yaml
@@ -429,7 +556,7 @@ data:
       index: "aemaacs"
 ```
 
-Considerações:
+#### Considerações
 
 * A porta padrão é 443. Opcionalmente, ele pode ser substituído por uma propriedade chamada `port`.
 * Dependendo do log específico, o campo sourcetype terá um dos seguintes valores: *aemaccess*, *aemerror*,
@@ -441,6 +568,8 @@ Considerações:
 > [Ao migrar](#legacy-migration) do encaminhamento de logs herdado para este modelo de autoatendimento, os valores do campo `sourcetype` enviados para o índice do Splunk podem ter sido alterados, portanto, ajuste-os adequadamente.
 
 ### Lógica Sumo {#sumologic}
+
+O encaminhamento de logs para o Sumo Logic é compatível com logs do AEM e do Dispatcher; os logs CDN ainda não são compatíveis.
 
 Ao configurar a Lógica de sumô para assimilação de dados, você verá um &quot;Endereço Source HTTP&quot; que fornece o host, o URI do receptor e a chave privada em uma única string.  Por exemplo:
 
