@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: Saiba como o Experience Manager as a Cloud Service funciona e o que o software pode fazer por você.
 breadcrumb-title: Guia do usuário
 user-guide-title: AEM as a Cloud Service
-source-git-commit: 37b20a97942f381b46ce36a6a3f72ac019bba5b7
+source-git-commit: 22aeedaaf4171ad295199a989e659b6bf5ce9834
 workflow-type: tm+mt
-source-wordcount: '6362'
-ht-degree: 61%
+source-wordcount: '6521'
+ht-degree: 59%
 
 ---
 
@@ -908,6 +908,35 @@ ht-degree: 61%
          + [Criar e gerenciar revisões para um Formulário adaptável](/help/forms/review-adaptiveforms-in-sites-page.md)
       + [Palavras-chave de formulários adaptáveis](/help/forms/adaptive-forms-keywords.md)
       + [Pré-visualização de um formulário](/help/forms/previewing-forms.md)
+   + Formulários HTML5 {#html5-forms}
+      + [Introdução aos formulários HTML5](/help/forms/introductionhtml5.md)
+      + [Introdução aos formulários HTML5](/help/forms/get-started.md)
+      + [Arquitetura dos formulários HTML5](/help/forms/html5-forms-architecture.md)
+      + [Diferenciação de recursos entre o HTML5 Forms e o PDF forms](/help/forms/feature-differentiation-html5-forms-pdf-forms.md)
+      + [Perguntas frequentes dos formulários HTML5](/help/forms/faqhtml5.md)
+      + [Criação de modelos de formulário para formulários HTML5](/help/forms/designing-form-template.md)
+      + [Práticas recomendadas para formulários HTML5](/help/forms/best-practices-for-html5-forms.md)
+      + [Criação de formulários acessíveis do HTML5](/help/forms/design-accessible-html5-forms.md)
+      + [Gerar visualização HTML5 de um formulário XDP](/help/forms/preview-xdp-forms-html.md)
+      + [Modelo de formulário de renderização para formulários HTML5](/help/forms/rendering-form-template.md)
+      + [Ativação de anexos para um formulário HTML5](/help/forms/enabling-attachments-html5-form.md)
+      + [Proxy do serviço HTML5 forms](/help/forms/service-proxy.md)
+      + [Otimização de formulários do HTML5](/help/forms/optimize-html5-forms.md)
+      + [Leitores de tela para formulários HTML5](/help/forms/screen-readers.md)
+      + [Criação de um perfil personalizado para formulários HTML5](/help/forms/custom-profile.md)
+      + [Idiomas da direita para a esquerda em formulários HTML5](/help/forms/right-left-languages.md)
+      + [Integração do Form Bridge com o portal personalizado para formulários do HTML5](/help/forms/integrate-form-bridge-forms-portal.md)
+      + [Criar aparências personalizadas em formulários HTML5](/help/forms/custom-widgets.md)
+      + [Alteração de estilos padrão de formulários HTML5](/help/forms/changing-default-styles.md)
+      + [Suporte a cláusula de imagem para formulários HTML5](/help/forms/picture-clause-support.md)
+      + [Criar tabelas complexas acessíveis em formulários HTML5](/help/forms/accessible-tables.md)
+      + [Criação de estilos CSS para formulários HTML5](/help/forms/css-styles.md)
+      + [Personalização de mensagens de erro para formulários HTML5](/help/forms/customzing-errors-html5-forms.md)
+      + [Salvamento de um formulário HTML5 como rascunho](/help/forms/saving-html5-form-draft.md)
+      + [Habilitar o registro para formulários HTML5](/help/forms/enable-logs.md)
+      + [Depuração de formulários do HTML5](/help/forms/debug.md)
+      + [Suporte a script para formulários HTML5](/help/forms/scripting-support.md)
+      + [Formulário definido no AEM Forms](/help/forms/formset-in-aem-forms.md)
    + Comunicação interativa {#interactive-communocation}
       + [Introdução à comunicação interativa](/help/forms/introduction-to-interactive-communication.md)
       + [Criar a primeira comunicação interativa](/help/forms/create-your-first-communication.md)
@@ -1131,14 +1160,14 @@ ht-degree: 61%
       + [Fragmento de conteúdo](/help/headless/setup/create-content-fragment.md)
       + [Endpoint GraphQL](/help/headless/setup/create-api-request.md)
    + Fragmentos de conteúdo {#content-fragments}
-      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html?lang=pt-BR)
-      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html?lang=pt-BR)
-      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html?lang=pt-BR)
+      + [Visão geral](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/overview.html)
+      + [Modelos de fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragment-models.html)
+      + [Gerenciamento dos fragmentos de conteúdo](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/managing.html)
       + Criação{#authoring}
-         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html?lang=pt-BR)
-         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html?lang=pt-BR)
-      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html?lang=pt-BR)
-      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html?lang=pt-BR)
+         + [Criação](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/authoring.html)
+         + [Editor do Markdown](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/markdown.html)
+      + [Árvore de estrutura](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/analysis.html)
+      + [Visualização JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-json-preview.html)
    + Seletor de fragmentos de conteúdo {#content-fragment-selector}
       + [Seletor de fragmentos de conteúdo de microfront-end - Visão geral](/help/headless/content-fragment-selector/overview.md)
       + [Seletor de fragmento de conteúdo — Propriedades relacionadas](/help/headless/content-fragment-selector/properties.md)
@@ -1260,7 +1289,7 @@ ht-degree: 61%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Dynatrace](/help/implementing/cloud-manager/dynatrace.md)
       + [Notificações](/help/implementing/cloud-manager/notifications.md)
-      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html?lang=pt-BR)
+      + [Rede avançada](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/configuring-advanced-networking.html)
       + Sites do Edge Delivery {#edge-delivery-sites}
          + [Introdução ao Edge Delivery Services no Cloud Manager](/help/implementing/cloud-manager/edge-delivery/introduction-to-edge-delivery-services.md)
          + [Adicionar um site do Edge Delivery ao Cloud Manager](/help/implementing/cloud-manager/edge-delivery/add-edge-delivery-site.md)
