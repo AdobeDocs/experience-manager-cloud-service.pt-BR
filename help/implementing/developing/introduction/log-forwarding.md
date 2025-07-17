@@ -19,22 +19,22 @@ ht-degree: 2%
 
 Os clientes com uma licença de com um fornecedor de registro em log ou que hospedam um produto de registro em log podem ter registros do AEM (incluindo Apache/Dispatcher) e registros CDN encaminhados ao destino de registro associado. O AEM as a Cloud Service oferece suporte aos seguintes destinos de registro:
 
-<html>
-<style>
-table {
+&lt;html>
+&lt;style>
+table &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
   table-layout: fixed;
-}
-th, td {
+&rbrace;
+th, td &lbrace;
   width: 5%;
   max-width: 100%;
   border: 1px solid black;
   padding: 8px;
   word-wrap: break-word;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -109,7 +109,7 @@ th, td {
     </tr>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >
@@ -200,14 +200,14 @@ Outro cenário é desativar o encaminhamento dos logs CDN ou AEM (incluindo o Ap
 Algumas organizações escolhem restringir qual tráfego pode ser recebido pelos destinos de registro, outras podem exigir o uso de portas diferentes de HTTPS (443).  Nesse caso, a [Rede Avançada](/help/security/configuring-advanced-networking.md) precisará ser configurada antes da implantação da configuração de encaminhamento de log.
 
 Use a tabela abaixo para ver quais são os requisitos para a configuração avançada de rede e registro com base no fato de você estar usando ou não a porta 443 e se você precisa ou não que seus registros apareçam a partir de um endereço IP fixo.
-<html>
-<style>
-table, th, td {
+&lt;html>
+&lt;style>
+table, th, td &lbrace;
   border: 1px solid black;
   border-collapse: collapse;
   text-align: center;
-}
-</style>
+&rbrace;
+&lt;/style>
 <table>
   <tbody>
     <tr>
@@ -239,7 +239,7 @@ table, th, td {
       <td>Sim</td>
   </tbody>
 </table>
-</html>
+&lt;/html>
 
 >[!NOTE]
 >O fato de seus registros serem exibidos a partir de um único endereço IP é determinado pela sua escolha de configuração avançada de rede.  A saída dedicada deve ser usada para facilitar isso.
