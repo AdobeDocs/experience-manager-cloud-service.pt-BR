@@ -5,9 +5,9 @@ exl-id: 7f2571d6-b847-4cce-8e94-94ba0d2e04a5
 solution: Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 45805d4baa8b93df2225b44152fee1457b421150
+source-git-commit: 18cbf1c963fa4f12b69a08859a7ca855f0ac601b
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '828'
 ht-degree: 23%
 
 ---
@@ -99,7 +99,7 @@ O modo de exibição **Referências** mostra uma lista de tipos de referências 
 
 Selecione o tipo de referência apropriado para obter mais informações. Em determinadas situações, outras ações estarão disponíveis ao selecionar uma referência específica, incluindo:
 
-* **Links de Entrada**, fornece uma lista de páginas que fazem referência direta à página selecionada, junto com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
+* **Links de Entrada**, fornece uma lista de páginas que fazem referência direta à página selecionada, juntamente com acesso direto a **Editar** uma dessas páginas ao selecionar um link específico.
    * Ela só mostra links estáticos, não links gerados dinamicamente, como links do componente Lista.
 * [Lançamentos](/help/sites-cloud/authoring/launches/overview.md), fornecem acesso a lançamentos relacionados
 * As [Live Copies](/help/sites-cloud/administering/msm/overview.md) exibem os caminhos de todas as live copies que são baseadas no recurso selecionado.
