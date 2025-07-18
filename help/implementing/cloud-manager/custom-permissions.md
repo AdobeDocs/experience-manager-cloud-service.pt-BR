@@ -5,9 +5,9 @@ exl-id: 167da985-7f19-45b3-90a3-884817907da2
 solution: Experience Manager
 feature: Security, Developing
 role: Admin, Architect, Developer
-source-git-commit: 0712ba8918696f4300089be24cad3e4125416c02
+source-git-commit: 0afd74120380c9ae3d02db9fb684189c2f19648f
 workflow-type: tm+mt
-source-wordcount: '1492'
+source-wordcount: '1490'
 ht-degree: 38%
 
 ---
@@ -48,7 +48,7 @@ Esta seção detalha essas etapas. Talvez seja útil consultar as sessões [Term
 
 ### Crie um novo perfil de produto {#create}
 
-Primeiro, crie um perfil de produto, antes de atribuir permissões personalizadas.
+Primeiro, crie um perfil de produto ao qual você pode atribuir permissões personalizadas.
 
 1. Faça logon no Cloud Manager em [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
@@ -174,7 +174,7 @@ Os itens de permissão se referem ao escopo no qual a permissão é aplicada. No
 
 | Tipo de item de permissão | Exemplo | Descrição |
 | --- | --- | --- |
-| Organização | organização:empresaA | Todos os recursos aplicáveis de uma organização. Um recurso pode ser um programa, ambiente ou pipeline. Se o usuário adicionar uma organização para qualquer permissão, todos os novos recursos dessa organização também possuirão essa permissão. |
+| Organização | organização:companyA | Todos os recursos aplicáveis de uma organização. Um recurso pode ser um programa, ambiente ou pipeline. Se o usuário adicionar uma organização para qualquer permissão, todos os novos recursos dessa organização também possuirão essa permissão. |
 | Programa | Programa A | Todos os recursos aplicáveis de um programa. |
 | Ambiente | Programa A : ambiente | Aplicável a um ambiente específico. |
 | Pipeline | Programa A : pipeline | Aplicável a um pipeline específico. |
